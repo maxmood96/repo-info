@@ -9952,7 +9952,7 @@ CMD ["jshell"]
 ## `eclipse-temurin:17`
 
 ```console
-$ docker pull eclipse-temurin@sha256:f006fc70091bcece220b94d627d35375c262f4a767cb275fac71d1161c912f66
+$ docker pull eclipse-temurin@sha256:7327c0564e28c01dc7813936670ad02f406943737ef81c8828381e015e3e013e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9967,14 +9967,14 @@ $ docker pull eclipse-temurin@sha256:f006fc70091bcece220b94d627d35375c262f4a767c
 ### `eclipse-temurin:17` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:cde35fb38134179745eadf45b61fb38758f02944f819587c6a294d369954dd4e
+$ docker pull eclipse-temurin@sha256:c3413278a8e5cdc1f23b6094a88a6d1b07b0f01e4de1181ba9225ed849ee2a79
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **241.3 MB (241318623 bytes)**  
+-	Total Size: **241.3 MB (241318651 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:115a8a4494742053d5f855f8f7d01de5ea2a00236e5e42f3b9923729f1bd5cb0`
+-	Image ID: `sha256:d371bef3c72373bb785c2cc3b8d0a032358e9f6ed903850ece79189d39a28636`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -9988,13 +9988,13 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales binutils     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
 # Wed, 22 Sep 2021 19:57:20 GMT
 ENV JAVA_VERSION=jdk-17+35
-# Thu, 23 Sep 2021 18:21:14 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='7a48159fca62b7f6afd58fb2e9712a3ef1494950212d4631e25598b45d9599b1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_s390x_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Thu, 23 Sep 2021 18:21:15 GMT
+# Fri, 24 Sep 2021 19:20:55 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        armhf|arm)          ESUM='77ef6aa6f665373e212097b937c22d0cad2add90e439ec0e90534a7ff0e8a6e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_arm_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='7a48159fca62b7f6afd58fb2e9712a3ef1494950212d4631e25598b45d9599b1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_s390x_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:20:55 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 23 Sep 2021 18:21:16 GMT
+# Fri, 24 Sep 2021 19:20:56 GMT
 RUN echo Verifying install ...     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Thu, 23 Sep 2021 18:21:16 GMT
+# Fri, 24 Sep 2021 19:20:57 GMT
 CMD ["jshell"]
 ```
 
@@ -10007,26 +10007,26 @@ CMD ["jshell"]
 		Last Modified: Tue, 31 Aug 2021 03:34:11 GMT  
 		Size: 19.8 MB (19775466 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2c6df8928ff50241437616f8c56d64eb7581fd65e4a174132177f8d80211f19`  
-		Last Modified: Thu, 23 Sep 2021 18:22:49 GMT  
-		Size: 193.0 MB (192972923 bytes)  
+	-	`sha256:edd792abf4d974cd0f20e4a9ef903718fd60c93ef3de4c593beb0bdf8a6937c8`  
+		Last Modified: Fri, 24 Sep 2021 19:23:42 GMT  
+		Size: 193.0 MB (192972951 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78fc0c941646c4623cde8b48cd5d49881ffc7e959c5ab94e0d4d4c9bed2a2cca`  
-		Last Modified: Thu, 23 Sep 2021 18:22:34 GMT  
+	-	`sha256:2873dd09179dc2ad22400f5d558a35c68a976609ea5712a89b55b0da92e45466`  
+		Last Modified: Fri, 24 Sep 2021 19:23:27 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:17` - linux; arm64 variant v8
 
 ```console
-$ docker pull eclipse-temurin@sha256:266849ac86414b046acf898902aaac26467df0788d34ab7009bb691ebd0bdc36
+$ docker pull eclipse-temurin@sha256:368f6600ca622b5f54eef5f9172cf7f6c2bfccd6cb1ec235fe6d54be654d8531
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **237.6 MB (237555750 bytes)**  
+-	Total Size: **237.6 MB (237555758 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ddf9d74f2fc221e60084da2e754940d0cd10b895edb12069565bc81802919ac1`
+-	Image ID: `sha256:9b4e06275ac52521d5c47fb88738ca082bc8969fc82086008794712f51bbc914`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -10040,13 +10040,13 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales binutils     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
 # Thu, 23 Sep 2021 21:50:15 GMT
 ENV JAVA_VERSION=jdk-17+35
-# Thu, 23 Sep 2021 21:50:23 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='7a48159fca62b7f6afd58fb2e9712a3ef1494950212d4631e25598b45d9599b1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_s390x_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Thu, 23 Sep 2021 21:50:24 GMT
+# Fri, 24 Sep 2021 19:41:03 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        armhf|arm)          ESUM='77ef6aa6f665373e212097b937c22d0cad2add90e439ec0e90534a7ff0e8a6e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_arm_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='7a48159fca62b7f6afd58fb2e9712a3ef1494950212d4631e25598b45d9599b1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_s390x_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:41:04 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 23 Sep 2021 21:50:25 GMT
+# Fri, 24 Sep 2021 19:41:04 GMT
 RUN echo Verifying install ...     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Thu, 23 Sep 2021 21:50:25 GMT
+# Fri, 24 Sep 2021 19:41:05 GMT
 CMD ["jshell"]
 ```
 
@@ -10059,13 +10059,13 @@ CMD ["jshell"]
 		Last Modified: Tue, 31 Aug 2021 02:29:31 GMT  
 		Size: 20.5 MB (20499296 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:efaaa7ed89622105c10ca68a59a24336bbad09d7ec03fdda55f1e970461d7921`  
-		Last Modified: Thu, 23 Sep 2021 21:53:05 GMT  
-		Size: 189.9 MB (189883195 bytes)  
+	-	`sha256:735bbbec53ce142d52faa97e79ac747256d8d8d4e46a43f97f781906b9eb1c02`  
+		Last Modified: Fri, 24 Sep 2021 19:44:39 GMT  
+		Size: 189.9 MB (189883202 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e7e3a5492d533958207d2b4aceaa8a76704c8d5322d8586be0972f87fe2e695`  
-		Last Modified: Thu, 23 Sep 2021 21:52:48 GMT  
-		Size: 160.0 B  
+	-	`sha256:221eb16619e5ee765f153fecce5cad441bc4759fdc20d8e5ccea033bc161bec8`  
+		Last Modified: Fri, 24 Sep 2021 19:44:21 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:17` - linux; ppc64le
@@ -10123,14 +10123,14 @@ CMD ["jshell"]
 ### `eclipse-temurin:17` - linux; s390x
 
 ```console
-$ docker pull eclipse-temurin@sha256:cf48d958120af874c1ee5b13c6ca60fef2d6fde44db16e3050d612c0326c9f6a
+$ docker pull eclipse-temurin@sha256:4d081388bc80284e2e82ab1453de7a9a7bdd64719fc8051e9ca8d2274f5e5b06
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **226.7 MB (226700592 bytes)**  
+-	Total Size: **226.7 MB (226700604 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2b1ffd9429e13fe3817d41fc52f9ed75e5020b22ea817506f7dbfb9869c1cca8`
+-	Image ID: `sha256:80d3365ef4d6a6e780ef9659df5cbfecf065c290b32a2d18373d49bcc604119c`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -10144,13 +10144,13 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales binutils     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
 # Thu, 23 Sep 2021 20:04:56 GMT
 ENV JAVA_VERSION=jdk-17+35
-# Thu, 23 Sep 2021 20:05:06 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='7a48159fca62b7f6afd58fb2e9712a3ef1494950212d4631e25598b45d9599b1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_s390x_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Thu, 23 Sep 2021 20:05:10 GMT
+# Fri, 24 Sep 2021 19:42:03 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        armhf|arm)          ESUM='77ef6aa6f665373e212097b937c22d0cad2add90e439ec0e90534a7ff0e8a6e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_arm_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='7a48159fca62b7f6afd58fb2e9712a3ef1494950212d4631e25598b45d9599b1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_s390x_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:42:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 23 Sep 2021 20:05:11 GMT
+# Fri, 24 Sep 2021 19:42:07 GMT
 RUN echo Verifying install ...     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Thu, 23 Sep 2021 20:05:11 GMT
+# Fri, 24 Sep 2021 19:42:07 GMT
 CMD ["jshell"]
 ```
 
@@ -10163,13 +10163,13 @@ CMD ["jshell"]
 		Last Modified: Tue, 31 Aug 2021 02:32:22 GMT  
 		Size: 19.2 MB (19237224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:891b7c52a86489dcd6e164c3049777acebf1aea8bd34a9064511a9b91e140288`  
-		Last Modified: Thu, 23 Sep 2021 20:06:21 GMT  
-		Size: 180.3 MB (180335738 bytes)  
+	-	`sha256:b1c8b5050642aae0f18488022076eff64886c10e06ce87594f3ec31ab69eae73`  
+		Last Modified: Fri, 24 Sep 2021 19:43:15 GMT  
+		Size: 180.3 MB (180335749 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc5371135aad4960942bcc726f19ac20d9207eeb6052335b10f027f1ba7eb48b`  
-		Last Modified: Thu, 23 Sep 2021 20:06:07 GMT  
-		Size: 160.0 B  
+	-	`sha256:d1c28a24fbc94f2c128004745ef81cd0e619c693a6b5444013a22587be980ed6`  
+		Last Modified: Fri, 24 Sep 2021 19:43:03 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:17` - windows version 10.0.17763.2183; amd64
@@ -10292,12 +10292,70 @@ CMD ["jshell"]
 
 ## `eclipse-temurin:17-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:e78a9657273fe6d06ab55c0ff65b53cc9f88b3b5e6a2dc791d66b0630cc4cfb9
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 1
+	-	linux; amd64
+
+### `eclipse-temurin:17-alpine` - linux; amd64
+
+```console
+$ docker pull eclipse-temurin@sha256:1153cafb5f012d1ddf61199bc2f74a9b177990c3ccba67ff283ab33751533d33
+```
+
+-	Docker Version: 20.10.7
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **195.1 MB (195113019 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a1aab206831a90b086506d69e1c00293290deac808b7b7ead76d1a4c52b4a55f`
+-	Default Command: `["jshell"]`
+
+```dockerfile
+# Fri, 27 Aug 2021 17:19:45 GMT
+ADD file:aad4290d27580cc1a094ffaf98c3ca2fc5d699fe695dfb8e6e9fac20f1129450 in / 
+# Fri, 27 Aug 2021 17:19:45 GMT
+CMD ["/bin/sh"]
+# Fri, 17 Sep 2021 21:41:38 GMT
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+# Fri, 24 Sep 2021 19:20:30 GMT
+RUN apk add --no-cache tzdata musl-locales musl-locales-lang     && rm -rf /var/cache/apk/*
+# Fri, 24 Sep 2021 19:20:30 GMT
+ENV JAVA_VERSION=jdk-17+35
+# Fri, 24 Sep 2021 19:20:42 GMT
+RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='03321e009cc5955d7dbabc9219434d63a5b390c223c8ecc303eb1741eb9036ef';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_alpine-linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p /opt/java/openjdk; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory /opt/java/openjdk 	      --strip-components 1 	      --no-same-owner 	  ;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:20:42 GMT
+ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Fri, 24 Sep 2021 19:20:43 GMT
+RUN echo Verifying install ...     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
+# Fri, 24 Sep 2021 19:20:43 GMT
+CMD ["jshell"]
+```
+
+-	Layers:
+	-	`sha256:a0d0a0d46f8b52473982a3c466318f479767577551a53ffc9074c9fa7035982e`  
+		Last Modified: Fri, 27 Aug 2021 17:20:13 GMT  
+		Size: 2.8 MB (2814446 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5491faa5141cd7b6b8bcb2f0546bc3268ca907c1a0835e91db57c666453bde3d`  
+		Last Modified: Fri, 24 Sep 2021 19:23:00 GMT  
+		Size: 408.6 KB (408594 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:07d8ba3cf6cc5919b2690d102b82a8a714e02f24905d150825a35da2f5068f0d`  
+		Last Modified: Fri, 24 Sep 2021 19:23:14 GMT  
+		Size: 191.9 MB (191889819 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1ff8ea996eda8bbfee06fdcbf6fe234e9b5f703caa6662ce40bc7ef309df521e`  
+		Last Modified: Fri, 24 Sep 2021 19:23:00 GMT  
+		Size: 160.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `eclipse-temurin:17-centos7`
 
 ```console
-$ docker pull eclipse-temurin@sha256:09b33fd90867ca38f9d38829de41ef9b6e901d55a4e77621ac9e02e170d203c6
+$ docker pull eclipse-temurin@sha256:57cee24d17c6c708a165a6f49020aed01ae21f77de2987edda88c4959f809aa6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10309,14 +10367,14 @@ $ docker pull eclipse-temurin@sha256:09b33fd90867ca38f9d38829de41ef9b6e901d55a4e
 ### `eclipse-temurin:17-centos7` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:e6075dc037cfb096f47c97bc6e4aeb70bf181c043680170b844e2eae317ffb3a
+$ docker pull eclipse-temurin@sha256:c6552db3738880ce5af5c9d1c472fef434937cb78124d367813678ef0f185f4f
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **281.8 MB (281776005 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f9ff65ce0d2b81f39148f577818429c011b6cd77d0b6b0f78ac5763b958ba2e`
+-	Image ID: `sha256:0509840502853e78d4ae23136a3abe07391920118e85ef0b56af9f2ab1d0a6e6`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -10332,13 +10390,13 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN yum install -y tzdata openssl curl ca-certificates fontconfig gzip tar binutils     && yum clean all
 # Wed, 22 Sep 2021 19:57:35 GMT
 ENV JAVA_VERSION=jdk-17+35
-# Thu, 23 Sep 2021 18:21:29 GMT
-RUN set -eux;     ARCH="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Thu, 23 Sep 2021 18:21:30 GMT
+# Fri, 24 Sep 2021 19:21:09 GMT
+RUN set -eux;     ARCH="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        armhf|arm)          ESUM='77ef6aa6f665373e212097b937c22d0cad2add90e439ec0e90534a7ff0e8a6e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_arm_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:21:10 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 23 Sep 2021 18:21:31 GMT
+# Fri, 24 Sep 2021 19:21:11 GMT
 RUN echo Verifying install ...     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Thu, 23 Sep 2021 18:21:31 GMT
+# Fri, 24 Sep 2021 19:21:11 GMT
 CMD ["jshell"]
 ```
 
@@ -10351,26 +10409,26 @@ CMD ["jshell"]
 		Last Modified: Wed, 15 Sep 2021 18:55:36 GMT  
 		Size: 12.7 MB (12704282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d49b2aa0b6e1c3c3236f159795e27d25ade1e4397f3eaf93536b26c9d9c7e032`  
-		Last Modified: Thu, 23 Sep 2021 18:23:18 GMT  
+	-	`sha256:1fec8e1694c3f5443b8cb45d16b77584d58a227c41c40b043cb200d194c87d26`  
+		Last Modified: Fri, 24 Sep 2021 19:24:09 GMT  
 		Size: 193.0 MB (192974405 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7abc9f6f5ece38d49443c6b4a22145970f7d0e6e1ddd43521f1ebabc42d98518`  
-		Last Modified: Thu, 23 Sep 2021 18:23:02 GMT  
+	-	`sha256:df943d3df6d52d317ca7d069c50061b29040a454196e5ac39601a567eb6a5795`  
+		Last Modified: Fri, 24 Sep 2021 19:23:55 GMT  
 		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:17-centos7` - linux; arm64 variant v8
 
 ```console
-$ docker pull eclipse-temurin@sha256:7c96a30ca82cc3963412cd55fe70c6764f14619dad5d4d4b48a3eaa8a40f35f5
+$ docker pull eclipse-temurin@sha256:dbd7c715732d2891ae541d87c4ba099242aed839b77eeb73d96d6fcd8d7fc40d
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **310.5 MB (310522434 bytes)**  
+-	Total Size: **310.5 MB (310522538 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0bc171fe6009d8ad4fca158c231b738175c1a64d298571333b14ca09b83af688`
+-	Image ID: `sha256:b30b550bd6d40a5ad65127b00ee503e9c14aa322b5bbb1a0ef5206f55fc28a54`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -10386,13 +10444,13 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN yum install -y tzdata openssl curl ca-certificates fontconfig gzip tar binutils     && yum clean all
 # Thu, 23 Sep 2021 21:50:33 GMT
 ENV JAVA_VERSION=jdk-17+35
-# Thu, 23 Sep 2021 21:50:47 GMT
-RUN set -eux;     ARCH="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Thu, 23 Sep 2021 21:50:48 GMT
+# Fri, 24 Sep 2021 19:41:33 GMT
+RUN set -eux;     ARCH="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        armhf|arm)          ESUM='77ef6aa6f665373e212097b937c22d0cad2add90e439ec0e90534a7ff0e8a6e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_arm_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:41:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 23 Sep 2021 21:50:49 GMT
+# Fri, 24 Sep 2021 19:41:34 GMT
 RUN echo Verifying install ...     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Thu, 23 Sep 2021 21:50:49 GMT
+# Fri, 24 Sep 2021 19:41:34 GMT
 CMD ["jshell"]
 ```
 
@@ -10405,13 +10463,13 @@ CMD ["jshell"]
 		Last Modified: Wed, 15 Sep 2021 18:02:38 GMT  
 		Size: 12.3 MB (12261663 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3372abf001e581fd837c84d53b3230fb9d138695c17c7feebc328760beacdc63`  
-		Last Modified: Thu, 23 Sep 2021 21:53:38 GMT  
-		Size: 189.9 MB (189885666 bytes)  
+	-	`sha256:4da8ac4890ed837c2100e58dfa8be03cf21bd441c7b348f14fe8864e8295b959`  
+		Last Modified: Fri, 24 Sep 2021 19:45:11 GMT  
+		Size: 189.9 MB (189885768 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f7d62a373a75dfaca36b2404c64233ad8bd1a8edcd463554728c3950ba8e32c3`  
-		Last Modified: Thu, 23 Sep 2021 21:53:20 GMT  
-		Size: 160.0 B  
+	-	`sha256:c65f331ef34e9e726e83a47e1b7720d25d71527c8811e05456d52e09e0e0b655`  
+		Last Modified: Fri, 24 Sep 2021 19:44:53 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:17-centos7` - linux; ppc64le
@@ -10471,7 +10529,7 @@ CMD ["jshell"]
 ## `eclipse-temurin:17-focal`
 
 ```console
-$ docker pull eclipse-temurin@sha256:8679bd0b5b0cb07a3847e44edb1ca39e5e32c30e05ea6e0fa6370b51fe32e6bd
+$ docker pull eclipse-temurin@sha256:8cbc90d9a10bac85032a9409049512dd7a34f40e28c5935f0f6d029734b3d7d9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10484,14 +10542,14 @@ $ docker pull eclipse-temurin@sha256:8679bd0b5b0cb07a3847e44edb1ca39e5e32c30e05e
 ### `eclipse-temurin:17-focal` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:cde35fb38134179745eadf45b61fb38758f02944f819587c6a294d369954dd4e
+$ docker pull eclipse-temurin@sha256:c3413278a8e5cdc1f23b6094a88a6d1b07b0f01e4de1181ba9225ed849ee2a79
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **241.3 MB (241318623 bytes)**  
+-	Total Size: **241.3 MB (241318651 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:115a8a4494742053d5f855f8f7d01de5ea2a00236e5e42f3b9923729f1bd5cb0`
+-	Image ID: `sha256:d371bef3c72373bb785c2cc3b8d0a032358e9f6ed903850ece79189d39a28636`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -10505,13 +10563,13 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales binutils     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
 # Wed, 22 Sep 2021 19:57:20 GMT
 ENV JAVA_VERSION=jdk-17+35
-# Thu, 23 Sep 2021 18:21:14 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='7a48159fca62b7f6afd58fb2e9712a3ef1494950212d4631e25598b45d9599b1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_s390x_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Thu, 23 Sep 2021 18:21:15 GMT
+# Fri, 24 Sep 2021 19:20:55 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        armhf|arm)          ESUM='77ef6aa6f665373e212097b937c22d0cad2add90e439ec0e90534a7ff0e8a6e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_arm_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='7a48159fca62b7f6afd58fb2e9712a3ef1494950212d4631e25598b45d9599b1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_s390x_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:20:55 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 23 Sep 2021 18:21:16 GMT
+# Fri, 24 Sep 2021 19:20:56 GMT
 RUN echo Verifying install ...     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Thu, 23 Sep 2021 18:21:16 GMT
+# Fri, 24 Sep 2021 19:20:57 GMT
 CMD ["jshell"]
 ```
 
@@ -10524,26 +10582,26 @@ CMD ["jshell"]
 		Last Modified: Tue, 31 Aug 2021 03:34:11 GMT  
 		Size: 19.8 MB (19775466 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2c6df8928ff50241437616f8c56d64eb7581fd65e4a174132177f8d80211f19`  
-		Last Modified: Thu, 23 Sep 2021 18:22:49 GMT  
-		Size: 193.0 MB (192972923 bytes)  
+	-	`sha256:edd792abf4d974cd0f20e4a9ef903718fd60c93ef3de4c593beb0bdf8a6937c8`  
+		Last Modified: Fri, 24 Sep 2021 19:23:42 GMT  
+		Size: 193.0 MB (192972951 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78fc0c941646c4623cde8b48cd5d49881ffc7e959c5ab94e0d4d4c9bed2a2cca`  
-		Last Modified: Thu, 23 Sep 2021 18:22:34 GMT  
+	-	`sha256:2873dd09179dc2ad22400f5d558a35c68a976609ea5712a89b55b0da92e45466`  
+		Last Modified: Fri, 24 Sep 2021 19:23:27 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:17-focal` - linux; arm64 variant v8
 
 ```console
-$ docker pull eclipse-temurin@sha256:266849ac86414b046acf898902aaac26467df0788d34ab7009bb691ebd0bdc36
+$ docker pull eclipse-temurin@sha256:368f6600ca622b5f54eef5f9172cf7f6c2bfccd6cb1ec235fe6d54be654d8531
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **237.6 MB (237555750 bytes)**  
+-	Total Size: **237.6 MB (237555758 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ddf9d74f2fc221e60084da2e754940d0cd10b895edb12069565bc81802919ac1`
+-	Image ID: `sha256:9b4e06275ac52521d5c47fb88738ca082bc8969fc82086008794712f51bbc914`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -10557,13 +10615,13 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales binutils     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
 # Thu, 23 Sep 2021 21:50:15 GMT
 ENV JAVA_VERSION=jdk-17+35
-# Thu, 23 Sep 2021 21:50:23 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='7a48159fca62b7f6afd58fb2e9712a3ef1494950212d4631e25598b45d9599b1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_s390x_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Thu, 23 Sep 2021 21:50:24 GMT
+# Fri, 24 Sep 2021 19:41:03 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        armhf|arm)          ESUM='77ef6aa6f665373e212097b937c22d0cad2add90e439ec0e90534a7ff0e8a6e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_arm_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='7a48159fca62b7f6afd58fb2e9712a3ef1494950212d4631e25598b45d9599b1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_s390x_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:41:04 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 23 Sep 2021 21:50:25 GMT
+# Fri, 24 Sep 2021 19:41:04 GMT
 RUN echo Verifying install ...     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Thu, 23 Sep 2021 21:50:25 GMT
+# Fri, 24 Sep 2021 19:41:05 GMT
 CMD ["jshell"]
 ```
 
@@ -10576,13 +10634,13 @@ CMD ["jshell"]
 		Last Modified: Tue, 31 Aug 2021 02:29:31 GMT  
 		Size: 20.5 MB (20499296 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:efaaa7ed89622105c10ca68a59a24336bbad09d7ec03fdda55f1e970461d7921`  
-		Last Modified: Thu, 23 Sep 2021 21:53:05 GMT  
-		Size: 189.9 MB (189883195 bytes)  
+	-	`sha256:735bbbec53ce142d52faa97e79ac747256d8d8d4e46a43f97f781906b9eb1c02`  
+		Last Modified: Fri, 24 Sep 2021 19:44:39 GMT  
+		Size: 189.9 MB (189883202 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e7e3a5492d533958207d2b4aceaa8a76704c8d5322d8586be0972f87fe2e695`  
-		Last Modified: Thu, 23 Sep 2021 21:52:48 GMT  
-		Size: 160.0 B  
+	-	`sha256:221eb16619e5ee765f153fecce5cad441bc4759fdc20d8e5ccea033bc161bec8`  
+		Last Modified: Fri, 24 Sep 2021 19:44:21 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:17-focal` - linux; ppc64le
@@ -10640,14 +10698,14 @@ CMD ["jshell"]
 ### `eclipse-temurin:17-focal` - linux; s390x
 
 ```console
-$ docker pull eclipse-temurin@sha256:cf48d958120af874c1ee5b13c6ca60fef2d6fde44db16e3050d612c0326c9f6a
+$ docker pull eclipse-temurin@sha256:4d081388bc80284e2e82ab1453de7a9a7bdd64719fc8051e9ca8d2274f5e5b06
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **226.7 MB (226700592 bytes)**  
+-	Total Size: **226.7 MB (226700604 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2b1ffd9429e13fe3817d41fc52f9ed75e5020b22ea817506f7dbfb9869c1cca8`
+-	Image ID: `sha256:80d3365ef4d6a6e780ef9659df5cbfecf065c290b32a2d18373d49bcc604119c`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -10661,13 +10719,13 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales binutils     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
 # Thu, 23 Sep 2021 20:04:56 GMT
 ENV JAVA_VERSION=jdk-17+35
-# Thu, 23 Sep 2021 20:05:06 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='7a48159fca62b7f6afd58fb2e9712a3ef1494950212d4631e25598b45d9599b1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_s390x_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Thu, 23 Sep 2021 20:05:10 GMT
+# Fri, 24 Sep 2021 19:42:03 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        armhf|arm)          ESUM='77ef6aa6f665373e212097b937c22d0cad2add90e439ec0e90534a7ff0e8a6e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_arm_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='7a48159fca62b7f6afd58fb2e9712a3ef1494950212d4631e25598b45d9599b1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_s390x_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:42:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 23 Sep 2021 20:05:11 GMT
+# Fri, 24 Sep 2021 19:42:07 GMT
 RUN echo Verifying install ...     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Thu, 23 Sep 2021 20:05:11 GMT
+# Fri, 24 Sep 2021 19:42:07 GMT
 CMD ["jshell"]
 ```
 
@@ -10680,19 +10738,19 @@ CMD ["jshell"]
 		Last Modified: Tue, 31 Aug 2021 02:32:22 GMT  
 		Size: 19.2 MB (19237224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:891b7c52a86489dcd6e164c3049777acebf1aea8bd34a9064511a9b91e140288`  
-		Last Modified: Thu, 23 Sep 2021 20:06:21 GMT  
-		Size: 180.3 MB (180335738 bytes)  
+	-	`sha256:b1c8b5050642aae0f18488022076eff64886c10e06ce87594f3ec31ab69eae73`  
+		Last Modified: Fri, 24 Sep 2021 19:43:15 GMT  
+		Size: 180.3 MB (180335749 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc5371135aad4960942bcc726f19ac20d9207eeb6052335b10f027f1ba7eb48b`  
-		Last Modified: Thu, 23 Sep 2021 20:06:07 GMT  
-		Size: 160.0 B  
+	-	`sha256:d1c28a24fbc94f2c128004745ef81cd0e619c693a6b5444013a22587be980ed6`  
+		Last Modified: Fri, 24 Sep 2021 19:43:03 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `eclipse-temurin:17-jdk`
 
 ```console
-$ docker pull eclipse-temurin@sha256:f006fc70091bcece220b94d627d35375c262f4a767cb275fac71d1161c912f66
+$ docker pull eclipse-temurin@sha256:7327c0564e28c01dc7813936670ad02f406943737ef81c8828381e015e3e013e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10707,14 +10765,14 @@ $ docker pull eclipse-temurin@sha256:f006fc70091bcece220b94d627d35375c262f4a767c
 ### `eclipse-temurin:17-jdk` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:cde35fb38134179745eadf45b61fb38758f02944f819587c6a294d369954dd4e
+$ docker pull eclipse-temurin@sha256:c3413278a8e5cdc1f23b6094a88a6d1b07b0f01e4de1181ba9225ed849ee2a79
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **241.3 MB (241318623 bytes)**  
+-	Total Size: **241.3 MB (241318651 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:115a8a4494742053d5f855f8f7d01de5ea2a00236e5e42f3b9923729f1bd5cb0`
+-	Image ID: `sha256:d371bef3c72373bb785c2cc3b8d0a032358e9f6ed903850ece79189d39a28636`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -10728,13 +10786,13 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales binutils     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
 # Wed, 22 Sep 2021 19:57:20 GMT
 ENV JAVA_VERSION=jdk-17+35
-# Thu, 23 Sep 2021 18:21:14 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='7a48159fca62b7f6afd58fb2e9712a3ef1494950212d4631e25598b45d9599b1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_s390x_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Thu, 23 Sep 2021 18:21:15 GMT
+# Fri, 24 Sep 2021 19:20:55 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        armhf|arm)          ESUM='77ef6aa6f665373e212097b937c22d0cad2add90e439ec0e90534a7ff0e8a6e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_arm_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='7a48159fca62b7f6afd58fb2e9712a3ef1494950212d4631e25598b45d9599b1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_s390x_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:20:55 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 23 Sep 2021 18:21:16 GMT
+# Fri, 24 Sep 2021 19:20:56 GMT
 RUN echo Verifying install ...     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Thu, 23 Sep 2021 18:21:16 GMT
+# Fri, 24 Sep 2021 19:20:57 GMT
 CMD ["jshell"]
 ```
 
@@ -10747,26 +10805,26 @@ CMD ["jshell"]
 		Last Modified: Tue, 31 Aug 2021 03:34:11 GMT  
 		Size: 19.8 MB (19775466 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2c6df8928ff50241437616f8c56d64eb7581fd65e4a174132177f8d80211f19`  
-		Last Modified: Thu, 23 Sep 2021 18:22:49 GMT  
-		Size: 193.0 MB (192972923 bytes)  
+	-	`sha256:edd792abf4d974cd0f20e4a9ef903718fd60c93ef3de4c593beb0bdf8a6937c8`  
+		Last Modified: Fri, 24 Sep 2021 19:23:42 GMT  
+		Size: 193.0 MB (192972951 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78fc0c941646c4623cde8b48cd5d49881ffc7e959c5ab94e0d4d4c9bed2a2cca`  
-		Last Modified: Thu, 23 Sep 2021 18:22:34 GMT  
+	-	`sha256:2873dd09179dc2ad22400f5d558a35c68a976609ea5712a89b55b0da92e45466`  
+		Last Modified: Fri, 24 Sep 2021 19:23:27 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:17-jdk` - linux; arm64 variant v8
 
 ```console
-$ docker pull eclipse-temurin@sha256:266849ac86414b046acf898902aaac26467df0788d34ab7009bb691ebd0bdc36
+$ docker pull eclipse-temurin@sha256:368f6600ca622b5f54eef5f9172cf7f6c2bfccd6cb1ec235fe6d54be654d8531
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **237.6 MB (237555750 bytes)**  
+-	Total Size: **237.6 MB (237555758 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ddf9d74f2fc221e60084da2e754940d0cd10b895edb12069565bc81802919ac1`
+-	Image ID: `sha256:9b4e06275ac52521d5c47fb88738ca082bc8969fc82086008794712f51bbc914`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -10780,13 +10838,13 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales binutils     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
 # Thu, 23 Sep 2021 21:50:15 GMT
 ENV JAVA_VERSION=jdk-17+35
-# Thu, 23 Sep 2021 21:50:23 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='7a48159fca62b7f6afd58fb2e9712a3ef1494950212d4631e25598b45d9599b1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_s390x_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Thu, 23 Sep 2021 21:50:24 GMT
+# Fri, 24 Sep 2021 19:41:03 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        armhf|arm)          ESUM='77ef6aa6f665373e212097b937c22d0cad2add90e439ec0e90534a7ff0e8a6e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_arm_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='7a48159fca62b7f6afd58fb2e9712a3ef1494950212d4631e25598b45d9599b1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_s390x_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:41:04 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 23 Sep 2021 21:50:25 GMT
+# Fri, 24 Sep 2021 19:41:04 GMT
 RUN echo Verifying install ...     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Thu, 23 Sep 2021 21:50:25 GMT
+# Fri, 24 Sep 2021 19:41:05 GMT
 CMD ["jshell"]
 ```
 
@@ -10799,13 +10857,13 @@ CMD ["jshell"]
 		Last Modified: Tue, 31 Aug 2021 02:29:31 GMT  
 		Size: 20.5 MB (20499296 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:efaaa7ed89622105c10ca68a59a24336bbad09d7ec03fdda55f1e970461d7921`  
-		Last Modified: Thu, 23 Sep 2021 21:53:05 GMT  
-		Size: 189.9 MB (189883195 bytes)  
+	-	`sha256:735bbbec53ce142d52faa97e79ac747256d8d8d4e46a43f97f781906b9eb1c02`  
+		Last Modified: Fri, 24 Sep 2021 19:44:39 GMT  
+		Size: 189.9 MB (189883202 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e7e3a5492d533958207d2b4aceaa8a76704c8d5322d8586be0972f87fe2e695`  
-		Last Modified: Thu, 23 Sep 2021 21:52:48 GMT  
-		Size: 160.0 B  
+	-	`sha256:221eb16619e5ee765f153fecce5cad441bc4759fdc20d8e5ccea033bc161bec8`  
+		Last Modified: Fri, 24 Sep 2021 19:44:21 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:17-jdk` - linux; ppc64le
@@ -10863,14 +10921,14 @@ CMD ["jshell"]
 ### `eclipse-temurin:17-jdk` - linux; s390x
 
 ```console
-$ docker pull eclipse-temurin@sha256:cf48d958120af874c1ee5b13c6ca60fef2d6fde44db16e3050d612c0326c9f6a
+$ docker pull eclipse-temurin@sha256:4d081388bc80284e2e82ab1453de7a9a7bdd64719fc8051e9ca8d2274f5e5b06
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **226.7 MB (226700592 bytes)**  
+-	Total Size: **226.7 MB (226700604 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2b1ffd9429e13fe3817d41fc52f9ed75e5020b22ea817506f7dbfb9869c1cca8`
+-	Image ID: `sha256:80d3365ef4d6a6e780ef9659df5cbfecf065c290b32a2d18373d49bcc604119c`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -10884,13 +10942,13 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales binutils     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
 # Thu, 23 Sep 2021 20:04:56 GMT
 ENV JAVA_VERSION=jdk-17+35
-# Thu, 23 Sep 2021 20:05:06 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='7a48159fca62b7f6afd58fb2e9712a3ef1494950212d4631e25598b45d9599b1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_s390x_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Thu, 23 Sep 2021 20:05:10 GMT
+# Fri, 24 Sep 2021 19:42:03 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        armhf|arm)          ESUM='77ef6aa6f665373e212097b937c22d0cad2add90e439ec0e90534a7ff0e8a6e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_arm_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='7a48159fca62b7f6afd58fb2e9712a3ef1494950212d4631e25598b45d9599b1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_s390x_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:42:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 23 Sep 2021 20:05:11 GMT
+# Fri, 24 Sep 2021 19:42:07 GMT
 RUN echo Verifying install ...     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Thu, 23 Sep 2021 20:05:11 GMT
+# Fri, 24 Sep 2021 19:42:07 GMT
 CMD ["jshell"]
 ```
 
@@ -10903,13 +10961,13 @@ CMD ["jshell"]
 		Last Modified: Tue, 31 Aug 2021 02:32:22 GMT  
 		Size: 19.2 MB (19237224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:891b7c52a86489dcd6e164c3049777acebf1aea8bd34a9064511a9b91e140288`  
-		Last Modified: Thu, 23 Sep 2021 20:06:21 GMT  
-		Size: 180.3 MB (180335738 bytes)  
+	-	`sha256:b1c8b5050642aae0f18488022076eff64886c10e06ce87594f3ec31ab69eae73`  
+		Last Modified: Fri, 24 Sep 2021 19:43:15 GMT  
+		Size: 180.3 MB (180335749 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc5371135aad4960942bcc726f19ac20d9207eeb6052335b10f027f1ba7eb48b`  
-		Last Modified: Thu, 23 Sep 2021 20:06:07 GMT  
-		Size: 160.0 B  
+	-	`sha256:d1c28a24fbc94f2c128004745ef81cd0e619c693a6b5444013a22587be980ed6`  
+		Last Modified: Fri, 24 Sep 2021 19:43:03 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:17-jdk` - windows version 10.0.17763.2183; amd64
@@ -11032,12 +11090,70 @@ CMD ["jshell"]
 
 ## `eclipse-temurin:17-jdk-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:e78a9657273fe6d06ab55c0ff65b53cc9f88b3b5e6a2dc791d66b0630cc4cfb9
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 1
+	-	linux; amd64
+
+### `eclipse-temurin:17-jdk-alpine` - linux; amd64
+
+```console
+$ docker pull eclipse-temurin@sha256:1153cafb5f012d1ddf61199bc2f74a9b177990c3ccba67ff283ab33751533d33
+```
+
+-	Docker Version: 20.10.7
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **195.1 MB (195113019 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a1aab206831a90b086506d69e1c00293290deac808b7b7ead76d1a4c52b4a55f`
+-	Default Command: `["jshell"]`
+
+```dockerfile
+# Fri, 27 Aug 2021 17:19:45 GMT
+ADD file:aad4290d27580cc1a094ffaf98c3ca2fc5d699fe695dfb8e6e9fac20f1129450 in / 
+# Fri, 27 Aug 2021 17:19:45 GMT
+CMD ["/bin/sh"]
+# Fri, 17 Sep 2021 21:41:38 GMT
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+# Fri, 24 Sep 2021 19:20:30 GMT
+RUN apk add --no-cache tzdata musl-locales musl-locales-lang     && rm -rf /var/cache/apk/*
+# Fri, 24 Sep 2021 19:20:30 GMT
+ENV JAVA_VERSION=jdk-17+35
+# Fri, 24 Sep 2021 19:20:42 GMT
+RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='03321e009cc5955d7dbabc9219434d63a5b390c223c8ecc303eb1741eb9036ef';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_alpine-linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p /opt/java/openjdk; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory /opt/java/openjdk 	      --strip-components 1 	      --no-same-owner 	  ;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:20:42 GMT
+ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Fri, 24 Sep 2021 19:20:43 GMT
+RUN echo Verifying install ...     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
+# Fri, 24 Sep 2021 19:20:43 GMT
+CMD ["jshell"]
+```
+
+-	Layers:
+	-	`sha256:a0d0a0d46f8b52473982a3c466318f479767577551a53ffc9074c9fa7035982e`  
+		Last Modified: Fri, 27 Aug 2021 17:20:13 GMT  
+		Size: 2.8 MB (2814446 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5491faa5141cd7b6b8bcb2f0546bc3268ca907c1a0835e91db57c666453bde3d`  
+		Last Modified: Fri, 24 Sep 2021 19:23:00 GMT  
+		Size: 408.6 KB (408594 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:07d8ba3cf6cc5919b2690d102b82a8a714e02f24905d150825a35da2f5068f0d`  
+		Last Modified: Fri, 24 Sep 2021 19:23:14 GMT  
+		Size: 191.9 MB (191889819 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1ff8ea996eda8bbfee06fdcbf6fe234e9b5f703caa6662ce40bc7ef309df521e`  
+		Last Modified: Fri, 24 Sep 2021 19:23:00 GMT  
+		Size: 160.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `eclipse-temurin:17-jdk-centos7`
 
 ```console
-$ docker pull eclipse-temurin@sha256:09b33fd90867ca38f9d38829de41ef9b6e901d55a4e77621ac9e02e170d203c6
+$ docker pull eclipse-temurin@sha256:57cee24d17c6c708a165a6f49020aed01ae21f77de2987edda88c4959f809aa6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11049,14 +11165,14 @@ $ docker pull eclipse-temurin@sha256:09b33fd90867ca38f9d38829de41ef9b6e901d55a4e
 ### `eclipse-temurin:17-jdk-centos7` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:e6075dc037cfb096f47c97bc6e4aeb70bf181c043680170b844e2eae317ffb3a
+$ docker pull eclipse-temurin@sha256:c6552db3738880ce5af5c9d1c472fef434937cb78124d367813678ef0f185f4f
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **281.8 MB (281776005 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f9ff65ce0d2b81f39148f577818429c011b6cd77d0b6b0f78ac5763b958ba2e`
+-	Image ID: `sha256:0509840502853e78d4ae23136a3abe07391920118e85ef0b56af9f2ab1d0a6e6`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -11072,13 +11188,13 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN yum install -y tzdata openssl curl ca-certificates fontconfig gzip tar binutils     && yum clean all
 # Wed, 22 Sep 2021 19:57:35 GMT
 ENV JAVA_VERSION=jdk-17+35
-# Thu, 23 Sep 2021 18:21:29 GMT
-RUN set -eux;     ARCH="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Thu, 23 Sep 2021 18:21:30 GMT
+# Fri, 24 Sep 2021 19:21:09 GMT
+RUN set -eux;     ARCH="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        armhf|arm)          ESUM='77ef6aa6f665373e212097b937c22d0cad2add90e439ec0e90534a7ff0e8a6e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_arm_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:21:10 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 23 Sep 2021 18:21:31 GMT
+# Fri, 24 Sep 2021 19:21:11 GMT
 RUN echo Verifying install ...     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Thu, 23 Sep 2021 18:21:31 GMT
+# Fri, 24 Sep 2021 19:21:11 GMT
 CMD ["jshell"]
 ```
 
@@ -11091,26 +11207,26 @@ CMD ["jshell"]
 		Last Modified: Wed, 15 Sep 2021 18:55:36 GMT  
 		Size: 12.7 MB (12704282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d49b2aa0b6e1c3c3236f159795e27d25ade1e4397f3eaf93536b26c9d9c7e032`  
-		Last Modified: Thu, 23 Sep 2021 18:23:18 GMT  
+	-	`sha256:1fec8e1694c3f5443b8cb45d16b77584d58a227c41c40b043cb200d194c87d26`  
+		Last Modified: Fri, 24 Sep 2021 19:24:09 GMT  
 		Size: 193.0 MB (192974405 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7abc9f6f5ece38d49443c6b4a22145970f7d0e6e1ddd43521f1ebabc42d98518`  
-		Last Modified: Thu, 23 Sep 2021 18:23:02 GMT  
+	-	`sha256:df943d3df6d52d317ca7d069c50061b29040a454196e5ac39601a567eb6a5795`  
+		Last Modified: Fri, 24 Sep 2021 19:23:55 GMT  
 		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:17-jdk-centos7` - linux; arm64 variant v8
 
 ```console
-$ docker pull eclipse-temurin@sha256:7c96a30ca82cc3963412cd55fe70c6764f14619dad5d4d4b48a3eaa8a40f35f5
+$ docker pull eclipse-temurin@sha256:dbd7c715732d2891ae541d87c4ba099242aed839b77eeb73d96d6fcd8d7fc40d
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **310.5 MB (310522434 bytes)**  
+-	Total Size: **310.5 MB (310522538 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0bc171fe6009d8ad4fca158c231b738175c1a64d298571333b14ca09b83af688`
+-	Image ID: `sha256:b30b550bd6d40a5ad65127b00ee503e9c14aa322b5bbb1a0ef5206f55fc28a54`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -11126,13 +11242,13 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN yum install -y tzdata openssl curl ca-certificates fontconfig gzip tar binutils     && yum clean all
 # Thu, 23 Sep 2021 21:50:33 GMT
 ENV JAVA_VERSION=jdk-17+35
-# Thu, 23 Sep 2021 21:50:47 GMT
-RUN set -eux;     ARCH="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Thu, 23 Sep 2021 21:50:48 GMT
+# Fri, 24 Sep 2021 19:41:33 GMT
+RUN set -eux;     ARCH="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        armhf|arm)          ESUM='77ef6aa6f665373e212097b937c22d0cad2add90e439ec0e90534a7ff0e8a6e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_arm_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:41:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 23 Sep 2021 21:50:49 GMT
+# Fri, 24 Sep 2021 19:41:34 GMT
 RUN echo Verifying install ...     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Thu, 23 Sep 2021 21:50:49 GMT
+# Fri, 24 Sep 2021 19:41:34 GMT
 CMD ["jshell"]
 ```
 
@@ -11145,13 +11261,13 @@ CMD ["jshell"]
 		Last Modified: Wed, 15 Sep 2021 18:02:38 GMT  
 		Size: 12.3 MB (12261663 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3372abf001e581fd837c84d53b3230fb9d138695c17c7feebc328760beacdc63`  
-		Last Modified: Thu, 23 Sep 2021 21:53:38 GMT  
-		Size: 189.9 MB (189885666 bytes)  
+	-	`sha256:4da8ac4890ed837c2100e58dfa8be03cf21bd441c7b348f14fe8864e8295b959`  
+		Last Modified: Fri, 24 Sep 2021 19:45:11 GMT  
+		Size: 189.9 MB (189885768 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f7d62a373a75dfaca36b2404c64233ad8bd1a8edcd463554728c3950ba8e32c3`  
-		Last Modified: Thu, 23 Sep 2021 21:53:20 GMT  
-		Size: 160.0 B  
+	-	`sha256:c65f331ef34e9e726e83a47e1b7720d25d71527c8811e05456d52e09e0e0b655`  
+		Last Modified: Fri, 24 Sep 2021 19:44:53 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:17-jdk-centos7` - linux; ppc64le
@@ -11211,7 +11327,7 @@ CMD ["jshell"]
 ## `eclipse-temurin:17-jdk-focal`
 
 ```console
-$ docker pull eclipse-temurin@sha256:8679bd0b5b0cb07a3847e44edb1ca39e5e32c30e05ea6e0fa6370b51fe32e6bd
+$ docker pull eclipse-temurin@sha256:8cbc90d9a10bac85032a9409049512dd7a34f40e28c5935f0f6d029734b3d7d9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11224,14 +11340,14 @@ $ docker pull eclipse-temurin@sha256:8679bd0b5b0cb07a3847e44edb1ca39e5e32c30e05e
 ### `eclipse-temurin:17-jdk-focal` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:cde35fb38134179745eadf45b61fb38758f02944f819587c6a294d369954dd4e
+$ docker pull eclipse-temurin@sha256:c3413278a8e5cdc1f23b6094a88a6d1b07b0f01e4de1181ba9225ed849ee2a79
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **241.3 MB (241318623 bytes)**  
+-	Total Size: **241.3 MB (241318651 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:115a8a4494742053d5f855f8f7d01de5ea2a00236e5e42f3b9923729f1bd5cb0`
+-	Image ID: `sha256:d371bef3c72373bb785c2cc3b8d0a032358e9f6ed903850ece79189d39a28636`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -11245,13 +11361,13 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales binutils     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
 # Wed, 22 Sep 2021 19:57:20 GMT
 ENV JAVA_VERSION=jdk-17+35
-# Thu, 23 Sep 2021 18:21:14 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='7a48159fca62b7f6afd58fb2e9712a3ef1494950212d4631e25598b45d9599b1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_s390x_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Thu, 23 Sep 2021 18:21:15 GMT
+# Fri, 24 Sep 2021 19:20:55 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        armhf|arm)          ESUM='77ef6aa6f665373e212097b937c22d0cad2add90e439ec0e90534a7ff0e8a6e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_arm_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='7a48159fca62b7f6afd58fb2e9712a3ef1494950212d4631e25598b45d9599b1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_s390x_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:20:55 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 23 Sep 2021 18:21:16 GMT
+# Fri, 24 Sep 2021 19:20:56 GMT
 RUN echo Verifying install ...     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Thu, 23 Sep 2021 18:21:16 GMT
+# Fri, 24 Sep 2021 19:20:57 GMT
 CMD ["jshell"]
 ```
 
@@ -11264,26 +11380,26 @@ CMD ["jshell"]
 		Last Modified: Tue, 31 Aug 2021 03:34:11 GMT  
 		Size: 19.8 MB (19775466 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2c6df8928ff50241437616f8c56d64eb7581fd65e4a174132177f8d80211f19`  
-		Last Modified: Thu, 23 Sep 2021 18:22:49 GMT  
-		Size: 193.0 MB (192972923 bytes)  
+	-	`sha256:edd792abf4d974cd0f20e4a9ef903718fd60c93ef3de4c593beb0bdf8a6937c8`  
+		Last Modified: Fri, 24 Sep 2021 19:23:42 GMT  
+		Size: 193.0 MB (192972951 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78fc0c941646c4623cde8b48cd5d49881ffc7e959c5ab94e0d4d4c9bed2a2cca`  
-		Last Modified: Thu, 23 Sep 2021 18:22:34 GMT  
+	-	`sha256:2873dd09179dc2ad22400f5d558a35c68a976609ea5712a89b55b0da92e45466`  
+		Last Modified: Fri, 24 Sep 2021 19:23:27 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:17-jdk-focal` - linux; arm64 variant v8
 
 ```console
-$ docker pull eclipse-temurin@sha256:266849ac86414b046acf898902aaac26467df0788d34ab7009bb691ebd0bdc36
+$ docker pull eclipse-temurin@sha256:368f6600ca622b5f54eef5f9172cf7f6c2bfccd6cb1ec235fe6d54be654d8531
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **237.6 MB (237555750 bytes)**  
+-	Total Size: **237.6 MB (237555758 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ddf9d74f2fc221e60084da2e754940d0cd10b895edb12069565bc81802919ac1`
+-	Image ID: `sha256:9b4e06275ac52521d5c47fb88738ca082bc8969fc82086008794712f51bbc914`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -11297,13 +11413,13 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales binutils     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
 # Thu, 23 Sep 2021 21:50:15 GMT
 ENV JAVA_VERSION=jdk-17+35
-# Thu, 23 Sep 2021 21:50:23 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='7a48159fca62b7f6afd58fb2e9712a3ef1494950212d4631e25598b45d9599b1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_s390x_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Thu, 23 Sep 2021 21:50:24 GMT
+# Fri, 24 Sep 2021 19:41:03 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        armhf|arm)          ESUM='77ef6aa6f665373e212097b937c22d0cad2add90e439ec0e90534a7ff0e8a6e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_arm_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='7a48159fca62b7f6afd58fb2e9712a3ef1494950212d4631e25598b45d9599b1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_s390x_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:41:04 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 23 Sep 2021 21:50:25 GMT
+# Fri, 24 Sep 2021 19:41:04 GMT
 RUN echo Verifying install ...     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Thu, 23 Sep 2021 21:50:25 GMT
+# Fri, 24 Sep 2021 19:41:05 GMT
 CMD ["jshell"]
 ```
 
@@ -11316,13 +11432,13 @@ CMD ["jshell"]
 		Last Modified: Tue, 31 Aug 2021 02:29:31 GMT  
 		Size: 20.5 MB (20499296 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:efaaa7ed89622105c10ca68a59a24336bbad09d7ec03fdda55f1e970461d7921`  
-		Last Modified: Thu, 23 Sep 2021 21:53:05 GMT  
-		Size: 189.9 MB (189883195 bytes)  
+	-	`sha256:735bbbec53ce142d52faa97e79ac747256d8d8d4e46a43f97f781906b9eb1c02`  
+		Last Modified: Fri, 24 Sep 2021 19:44:39 GMT  
+		Size: 189.9 MB (189883202 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e7e3a5492d533958207d2b4aceaa8a76704c8d5322d8586be0972f87fe2e695`  
-		Last Modified: Thu, 23 Sep 2021 21:52:48 GMT  
-		Size: 160.0 B  
+	-	`sha256:221eb16619e5ee765f153fecce5cad441bc4759fdc20d8e5ccea033bc161bec8`  
+		Last Modified: Fri, 24 Sep 2021 19:44:21 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:17-jdk-focal` - linux; ppc64le
@@ -11380,14 +11496,14 @@ CMD ["jshell"]
 ### `eclipse-temurin:17-jdk-focal` - linux; s390x
 
 ```console
-$ docker pull eclipse-temurin@sha256:cf48d958120af874c1ee5b13c6ca60fef2d6fde44db16e3050d612c0326c9f6a
+$ docker pull eclipse-temurin@sha256:4d081388bc80284e2e82ab1453de7a9a7bdd64719fc8051e9ca8d2274f5e5b06
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **226.7 MB (226700592 bytes)**  
+-	Total Size: **226.7 MB (226700604 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2b1ffd9429e13fe3817d41fc52f9ed75e5020b22ea817506f7dbfb9869c1cca8`
+-	Image ID: `sha256:80d3365ef4d6a6e780ef9659df5cbfecf065c290b32a2d18373d49bcc604119c`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -11401,13 +11517,13 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales binutils     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
 # Thu, 23 Sep 2021 20:04:56 GMT
 ENV JAVA_VERSION=jdk-17+35
-# Thu, 23 Sep 2021 20:05:06 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='7a48159fca62b7f6afd58fb2e9712a3ef1494950212d4631e25598b45d9599b1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_s390x_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Thu, 23 Sep 2021 20:05:10 GMT
+# Fri, 24 Sep 2021 19:42:03 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        armhf|arm)          ESUM='77ef6aa6f665373e212097b937c22d0cad2add90e439ec0e90534a7ff0e8a6e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_arm_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='7a48159fca62b7f6afd58fb2e9712a3ef1494950212d4631e25598b45d9599b1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_s390x_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:42:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 23 Sep 2021 20:05:11 GMT
+# Fri, 24 Sep 2021 19:42:07 GMT
 RUN echo Verifying install ...     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Thu, 23 Sep 2021 20:05:11 GMT
+# Fri, 24 Sep 2021 19:42:07 GMT
 CMD ["jshell"]
 ```
 
@@ -11420,13 +11536,13 @@ CMD ["jshell"]
 		Last Modified: Tue, 31 Aug 2021 02:32:22 GMT  
 		Size: 19.2 MB (19237224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:891b7c52a86489dcd6e164c3049777acebf1aea8bd34a9064511a9b91e140288`  
-		Last Modified: Thu, 23 Sep 2021 20:06:21 GMT  
-		Size: 180.3 MB (180335738 bytes)  
+	-	`sha256:b1c8b5050642aae0f18488022076eff64886c10e06ce87594f3ec31ab69eae73`  
+		Last Modified: Fri, 24 Sep 2021 19:43:15 GMT  
+		Size: 180.3 MB (180335749 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc5371135aad4960942bcc726f19ac20d9207eeb6052335b10f027f1ba7eb48b`  
-		Last Modified: Thu, 23 Sep 2021 20:06:07 GMT  
-		Size: 160.0 B  
+	-	`sha256:d1c28a24fbc94f2c128004745ef81cd0e619c693a6b5444013a22587be980ed6`  
+		Last Modified: Fri, 24 Sep 2021 19:43:03 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `eclipse-temurin:17-jdk-nanoserver`
@@ -12318,7 +12434,7 @@ CMD ["jshell"]
 ## `eclipse-temurin:17_35-jdk`
 
 ```console
-$ docker pull eclipse-temurin@sha256:f006fc70091bcece220b94d627d35375c262f4a767cb275fac71d1161c912f66
+$ docker pull eclipse-temurin@sha256:7327c0564e28c01dc7813936670ad02f406943737ef81c8828381e015e3e013e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12333,14 +12449,14 @@ $ docker pull eclipse-temurin@sha256:f006fc70091bcece220b94d627d35375c262f4a767c
 ### `eclipse-temurin:17_35-jdk` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:cde35fb38134179745eadf45b61fb38758f02944f819587c6a294d369954dd4e
+$ docker pull eclipse-temurin@sha256:c3413278a8e5cdc1f23b6094a88a6d1b07b0f01e4de1181ba9225ed849ee2a79
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **241.3 MB (241318623 bytes)**  
+-	Total Size: **241.3 MB (241318651 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:115a8a4494742053d5f855f8f7d01de5ea2a00236e5e42f3b9923729f1bd5cb0`
+-	Image ID: `sha256:d371bef3c72373bb785c2cc3b8d0a032358e9f6ed903850ece79189d39a28636`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -12354,13 +12470,13 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales binutils     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
 # Wed, 22 Sep 2021 19:57:20 GMT
 ENV JAVA_VERSION=jdk-17+35
-# Thu, 23 Sep 2021 18:21:14 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='7a48159fca62b7f6afd58fb2e9712a3ef1494950212d4631e25598b45d9599b1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_s390x_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Thu, 23 Sep 2021 18:21:15 GMT
+# Fri, 24 Sep 2021 19:20:55 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        armhf|arm)          ESUM='77ef6aa6f665373e212097b937c22d0cad2add90e439ec0e90534a7ff0e8a6e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_arm_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='7a48159fca62b7f6afd58fb2e9712a3ef1494950212d4631e25598b45d9599b1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_s390x_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:20:55 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 23 Sep 2021 18:21:16 GMT
+# Fri, 24 Sep 2021 19:20:56 GMT
 RUN echo Verifying install ...     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Thu, 23 Sep 2021 18:21:16 GMT
+# Fri, 24 Sep 2021 19:20:57 GMT
 CMD ["jshell"]
 ```
 
@@ -12373,26 +12489,26 @@ CMD ["jshell"]
 		Last Modified: Tue, 31 Aug 2021 03:34:11 GMT  
 		Size: 19.8 MB (19775466 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2c6df8928ff50241437616f8c56d64eb7581fd65e4a174132177f8d80211f19`  
-		Last Modified: Thu, 23 Sep 2021 18:22:49 GMT  
-		Size: 193.0 MB (192972923 bytes)  
+	-	`sha256:edd792abf4d974cd0f20e4a9ef903718fd60c93ef3de4c593beb0bdf8a6937c8`  
+		Last Modified: Fri, 24 Sep 2021 19:23:42 GMT  
+		Size: 193.0 MB (192972951 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78fc0c941646c4623cde8b48cd5d49881ffc7e959c5ab94e0d4d4c9bed2a2cca`  
-		Last Modified: Thu, 23 Sep 2021 18:22:34 GMT  
+	-	`sha256:2873dd09179dc2ad22400f5d558a35c68a976609ea5712a89b55b0da92e45466`  
+		Last Modified: Fri, 24 Sep 2021 19:23:27 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:17_35-jdk` - linux; arm64 variant v8
 
 ```console
-$ docker pull eclipse-temurin@sha256:266849ac86414b046acf898902aaac26467df0788d34ab7009bb691ebd0bdc36
+$ docker pull eclipse-temurin@sha256:368f6600ca622b5f54eef5f9172cf7f6c2bfccd6cb1ec235fe6d54be654d8531
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **237.6 MB (237555750 bytes)**  
+-	Total Size: **237.6 MB (237555758 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ddf9d74f2fc221e60084da2e754940d0cd10b895edb12069565bc81802919ac1`
+-	Image ID: `sha256:9b4e06275ac52521d5c47fb88738ca082bc8969fc82086008794712f51bbc914`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -12406,13 +12522,13 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales binutils     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
 # Thu, 23 Sep 2021 21:50:15 GMT
 ENV JAVA_VERSION=jdk-17+35
-# Thu, 23 Sep 2021 21:50:23 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='7a48159fca62b7f6afd58fb2e9712a3ef1494950212d4631e25598b45d9599b1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_s390x_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Thu, 23 Sep 2021 21:50:24 GMT
+# Fri, 24 Sep 2021 19:41:03 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        armhf|arm)          ESUM='77ef6aa6f665373e212097b937c22d0cad2add90e439ec0e90534a7ff0e8a6e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_arm_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='7a48159fca62b7f6afd58fb2e9712a3ef1494950212d4631e25598b45d9599b1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_s390x_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:41:04 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 23 Sep 2021 21:50:25 GMT
+# Fri, 24 Sep 2021 19:41:04 GMT
 RUN echo Verifying install ...     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Thu, 23 Sep 2021 21:50:25 GMT
+# Fri, 24 Sep 2021 19:41:05 GMT
 CMD ["jshell"]
 ```
 
@@ -12425,13 +12541,13 @@ CMD ["jshell"]
 		Last Modified: Tue, 31 Aug 2021 02:29:31 GMT  
 		Size: 20.5 MB (20499296 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:efaaa7ed89622105c10ca68a59a24336bbad09d7ec03fdda55f1e970461d7921`  
-		Last Modified: Thu, 23 Sep 2021 21:53:05 GMT  
-		Size: 189.9 MB (189883195 bytes)  
+	-	`sha256:735bbbec53ce142d52faa97e79ac747256d8d8d4e46a43f97f781906b9eb1c02`  
+		Last Modified: Fri, 24 Sep 2021 19:44:39 GMT  
+		Size: 189.9 MB (189883202 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e7e3a5492d533958207d2b4aceaa8a76704c8d5322d8586be0972f87fe2e695`  
-		Last Modified: Thu, 23 Sep 2021 21:52:48 GMT  
-		Size: 160.0 B  
+	-	`sha256:221eb16619e5ee765f153fecce5cad441bc4759fdc20d8e5ccea033bc161bec8`  
+		Last Modified: Fri, 24 Sep 2021 19:44:21 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:17_35-jdk` - linux; ppc64le
@@ -12489,14 +12605,14 @@ CMD ["jshell"]
 ### `eclipse-temurin:17_35-jdk` - linux; s390x
 
 ```console
-$ docker pull eclipse-temurin@sha256:cf48d958120af874c1ee5b13c6ca60fef2d6fde44db16e3050d612c0326c9f6a
+$ docker pull eclipse-temurin@sha256:4d081388bc80284e2e82ab1453de7a9a7bdd64719fc8051e9ca8d2274f5e5b06
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **226.7 MB (226700592 bytes)**  
+-	Total Size: **226.7 MB (226700604 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2b1ffd9429e13fe3817d41fc52f9ed75e5020b22ea817506f7dbfb9869c1cca8`
+-	Image ID: `sha256:80d3365ef4d6a6e780ef9659df5cbfecf065c290b32a2d18373d49bcc604119c`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -12510,13 +12626,13 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales binutils     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
 # Thu, 23 Sep 2021 20:04:56 GMT
 ENV JAVA_VERSION=jdk-17+35
-# Thu, 23 Sep 2021 20:05:06 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='7a48159fca62b7f6afd58fb2e9712a3ef1494950212d4631e25598b45d9599b1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_s390x_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Thu, 23 Sep 2021 20:05:10 GMT
+# Fri, 24 Sep 2021 19:42:03 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        armhf|arm)          ESUM='77ef6aa6f665373e212097b937c22d0cad2add90e439ec0e90534a7ff0e8a6e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_arm_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='7a48159fca62b7f6afd58fb2e9712a3ef1494950212d4631e25598b45d9599b1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_s390x_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:42:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 23 Sep 2021 20:05:11 GMT
+# Fri, 24 Sep 2021 19:42:07 GMT
 RUN echo Verifying install ...     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Thu, 23 Sep 2021 20:05:11 GMT
+# Fri, 24 Sep 2021 19:42:07 GMT
 CMD ["jshell"]
 ```
 
@@ -12529,13 +12645,13 @@ CMD ["jshell"]
 		Last Modified: Tue, 31 Aug 2021 02:32:22 GMT  
 		Size: 19.2 MB (19237224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:891b7c52a86489dcd6e164c3049777acebf1aea8bd34a9064511a9b91e140288`  
-		Last Modified: Thu, 23 Sep 2021 20:06:21 GMT  
-		Size: 180.3 MB (180335738 bytes)  
+	-	`sha256:b1c8b5050642aae0f18488022076eff64886c10e06ce87594f3ec31ab69eae73`  
+		Last Modified: Fri, 24 Sep 2021 19:43:15 GMT  
+		Size: 180.3 MB (180335749 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc5371135aad4960942bcc726f19ac20d9207eeb6052335b10f027f1ba7eb48b`  
-		Last Modified: Thu, 23 Sep 2021 20:06:07 GMT  
-		Size: 160.0 B  
+	-	`sha256:d1c28a24fbc94f2c128004745ef81cd0e619c693a6b5444013a22587be980ed6`  
+		Last Modified: Fri, 24 Sep 2021 19:43:03 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:17_35-jdk` - windows version 10.0.17763.2183; amd64
@@ -12658,12 +12774,70 @@ CMD ["jshell"]
 
 ## `eclipse-temurin:17_35-jdk-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:e78a9657273fe6d06ab55c0ff65b53cc9f88b3b5e6a2dc791d66b0630cc4cfb9
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 1
+	-	linux; amd64
+
+### `eclipse-temurin:17_35-jdk-alpine` - linux; amd64
+
+```console
+$ docker pull eclipse-temurin@sha256:1153cafb5f012d1ddf61199bc2f74a9b177990c3ccba67ff283ab33751533d33
+```
+
+-	Docker Version: 20.10.7
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **195.1 MB (195113019 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a1aab206831a90b086506d69e1c00293290deac808b7b7ead76d1a4c52b4a55f`
+-	Default Command: `["jshell"]`
+
+```dockerfile
+# Fri, 27 Aug 2021 17:19:45 GMT
+ADD file:aad4290d27580cc1a094ffaf98c3ca2fc5d699fe695dfb8e6e9fac20f1129450 in / 
+# Fri, 27 Aug 2021 17:19:45 GMT
+CMD ["/bin/sh"]
+# Fri, 17 Sep 2021 21:41:38 GMT
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+# Fri, 24 Sep 2021 19:20:30 GMT
+RUN apk add --no-cache tzdata musl-locales musl-locales-lang     && rm -rf /var/cache/apk/*
+# Fri, 24 Sep 2021 19:20:30 GMT
+ENV JAVA_VERSION=jdk-17+35
+# Fri, 24 Sep 2021 19:20:42 GMT
+RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='03321e009cc5955d7dbabc9219434d63a5b390c223c8ecc303eb1741eb9036ef';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_alpine-linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p /opt/java/openjdk; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory /opt/java/openjdk 	      --strip-components 1 	      --no-same-owner 	  ;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:20:42 GMT
+ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Fri, 24 Sep 2021 19:20:43 GMT
+RUN echo Verifying install ...     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
+# Fri, 24 Sep 2021 19:20:43 GMT
+CMD ["jshell"]
+```
+
+-	Layers:
+	-	`sha256:a0d0a0d46f8b52473982a3c466318f479767577551a53ffc9074c9fa7035982e`  
+		Last Modified: Fri, 27 Aug 2021 17:20:13 GMT  
+		Size: 2.8 MB (2814446 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5491faa5141cd7b6b8bcb2f0546bc3268ca907c1a0835e91db57c666453bde3d`  
+		Last Modified: Fri, 24 Sep 2021 19:23:00 GMT  
+		Size: 408.6 KB (408594 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:07d8ba3cf6cc5919b2690d102b82a8a714e02f24905d150825a35da2f5068f0d`  
+		Last Modified: Fri, 24 Sep 2021 19:23:14 GMT  
+		Size: 191.9 MB (191889819 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1ff8ea996eda8bbfee06fdcbf6fe234e9b5f703caa6662ce40bc7ef309df521e`  
+		Last Modified: Fri, 24 Sep 2021 19:23:00 GMT  
+		Size: 160.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `eclipse-temurin:17_35-jdk-centos7`
 
 ```console
-$ docker pull eclipse-temurin@sha256:09b33fd90867ca38f9d38829de41ef9b6e901d55a4e77621ac9e02e170d203c6
+$ docker pull eclipse-temurin@sha256:57cee24d17c6c708a165a6f49020aed01ae21f77de2987edda88c4959f809aa6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12675,14 +12849,14 @@ $ docker pull eclipse-temurin@sha256:09b33fd90867ca38f9d38829de41ef9b6e901d55a4e
 ### `eclipse-temurin:17_35-jdk-centos7` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:e6075dc037cfb096f47c97bc6e4aeb70bf181c043680170b844e2eae317ffb3a
+$ docker pull eclipse-temurin@sha256:c6552db3738880ce5af5c9d1c472fef434937cb78124d367813678ef0f185f4f
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **281.8 MB (281776005 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f9ff65ce0d2b81f39148f577818429c011b6cd77d0b6b0f78ac5763b958ba2e`
+-	Image ID: `sha256:0509840502853e78d4ae23136a3abe07391920118e85ef0b56af9f2ab1d0a6e6`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -12698,13 +12872,13 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN yum install -y tzdata openssl curl ca-certificates fontconfig gzip tar binutils     && yum clean all
 # Wed, 22 Sep 2021 19:57:35 GMT
 ENV JAVA_VERSION=jdk-17+35
-# Thu, 23 Sep 2021 18:21:29 GMT
-RUN set -eux;     ARCH="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Thu, 23 Sep 2021 18:21:30 GMT
+# Fri, 24 Sep 2021 19:21:09 GMT
+RUN set -eux;     ARCH="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        armhf|arm)          ESUM='77ef6aa6f665373e212097b937c22d0cad2add90e439ec0e90534a7ff0e8a6e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_arm_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:21:10 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 23 Sep 2021 18:21:31 GMT
+# Fri, 24 Sep 2021 19:21:11 GMT
 RUN echo Verifying install ...     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Thu, 23 Sep 2021 18:21:31 GMT
+# Fri, 24 Sep 2021 19:21:11 GMT
 CMD ["jshell"]
 ```
 
@@ -12717,26 +12891,26 @@ CMD ["jshell"]
 		Last Modified: Wed, 15 Sep 2021 18:55:36 GMT  
 		Size: 12.7 MB (12704282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d49b2aa0b6e1c3c3236f159795e27d25ade1e4397f3eaf93536b26c9d9c7e032`  
-		Last Modified: Thu, 23 Sep 2021 18:23:18 GMT  
+	-	`sha256:1fec8e1694c3f5443b8cb45d16b77584d58a227c41c40b043cb200d194c87d26`  
+		Last Modified: Fri, 24 Sep 2021 19:24:09 GMT  
 		Size: 193.0 MB (192974405 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7abc9f6f5ece38d49443c6b4a22145970f7d0e6e1ddd43521f1ebabc42d98518`  
-		Last Modified: Thu, 23 Sep 2021 18:23:02 GMT  
+	-	`sha256:df943d3df6d52d317ca7d069c50061b29040a454196e5ac39601a567eb6a5795`  
+		Last Modified: Fri, 24 Sep 2021 19:23:55 GMT  
 		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:17_35-jdk-centos7` - linux; arm64 variant v8
 
 ```console
-$ docker pull eclipse-temurin@sha256:7c96a30ca82cc3963412cd55fe70c6764f14619dad5d4d4b48a3eaa8a40f35f5
+$ docker pull eclipse-temurin@sha256:dbd7c715732d2891ae541d87c4ba099242aed839b77eeb73d96d6fcd8d7fc40d
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **310.5 MB (310522434 bytes)**  
+-	Total Size: **310.5 MB (310522538 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0bc171fe6009d8ad4fca158c231b738175c1a64d298571333b14ca09b83af688`
+-	Image ID: `sha256:b30b550bd6d40a5ad65127b00ee503e9c14aa322b5bbb1a0ef5206f55fc28a54`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -12752,13 +12926,13 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN yum install -y tzdata openssl curl ca-certificates fontconfig gzip tar binutils     && yum clean all
 # Thu, 23 Sep 2021 21:50:33 GMT
 ENV JAVA_VERSION=jdk-17+35
-# Thu, 23 Sep 2021 21:50:47 GMT
-RUN set -eux;     ARCH="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Thu, 23 Sep 2021 21:50:48 GMT
+# Fri, 24 Sep 2021 19:41:33 GMT
+RUN set -eux;     ARCH="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        armhf|arm)          ESUM='77ef6aa6f665373e212097b937c22d0cad2add90e439ec0e90534a7ff0e8a6e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_arm_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:41:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 23 Sep 2021 21:50:49 GMT
+# Fri, 24 Sep 2021 19:41:34 GMT
 RUN echo Verifying install ...     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Thu, 23 Sep 2021 21:50:49 GMT
+# Fri, 24 Sep 2021 19:41:34 GMT
 CMD ["jshell"]
 ```
 
@@ -12771,13 +12945,13 @@ CMD ["jshell"]
 		Last Modified: Wed, 15 Sep 2021 18:02:38 GMT  
 		Size: 12.3 MB (12261663 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3372abf001e581fd837c84d53b3230fb9d138695c17c7feebc328760beacdc63`  
-		Last Modified: Thu, 23 Sep 2021 21:53:38 GMT  
-		Size: 189.9 MB (189885666 bytes)  
+	-	`sha256:4da8ac4890ed837c2100e58dfa8be03cf21bd441c7b348f14fe8864e8295b959`  
+		Last Modified: Fri, 24 Sep 2021 19:45:11 GMT  
+		Size: 189.9 MB (189885768 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f7d62a373a75dfaca36b2404c64233ad8bd1a8edcd463554728c3950ba8e32c3`  
-		Last Modified: Thu, 23 Sep 2021 21:53:20 GMT  
-		Size: 160.0 B  
+	-	`sha256:c65f331ef34e9e726e83a47e1b7720d25d71527c8811e05456d52e09e0e0b655`  
+		Last Modified: Fri, 24 Sep 2021 19:44:53 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:17_35-jdk-centos7` - linux; ppc64le
@@ -12837,7 +13011,7 @@ CMD ["jshell"]
 ## `eclipse-temurin:17_35-jdk-focal`
 
 ```console
-$ docker pull eclipse-temurin@sha256:8679bd0b5b0cb07a3847e44edb1ca39e5e32c30e05ea6e0fa6370b51fe32e6bd
+$ docker pull eclipse-temurin@sha256:8cbc90d9a10bac85032a9409049512dd7a34f40e28c5935f0f6d029734b3d7d9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12850,14 +13024,14 @@ $ docker pull eclipse-temurin@sha256:8679bd0b5b0cb07a3847e44edb1ca39e5e32c30e05e
 ### `eclipse-temurin:17_35-jdk-focal` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:cde35fb38134179745eadf45b61fb38758f02944f819587c6a294d369954dd4e
+$ docker pull eclipse-temurin@sha256:c3413278a8e5cdc1f23b6094a88a6d1b07b0f01e4de1181ba9225ed849ee2a79
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **241.3 MB (241318623 bytes)**  
+-	Total Size: **241.3 MB (241318651 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:115a8a4494742053d5f855f8f7d01de5ea2a00236e5e42f3b9923729f1bd5cb0`
+-	Image ID: `sha256:d371bef3c72373bb785c2cc3b8d0a032358e9f6ed903850ece79189d39a28636`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -12871,13 +13045,13 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales binutils     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
 # Wed, 22 Sep 2021 19:57:20 GMT
 ENV JAVA_VERSION=jdk-17+35
-# Thu, 23 Sep 2021 18:21:14 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='7a48159fca62b7f6afd58fb2e9712a3ef1494950212d4631e25598b45d9599b1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_s390x_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Thu, 23 Sep 2021 18:21:15 GMT
+# Fri, 24 Sep 2021 19:20:55 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        armhf|arm)          ESUM='77ef6aa6f665373e212097b937c22d0cad2add90e439ec0e90534a7ff0e8a6e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_arm_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='7a48159fca62b7f6afd58fb2e9712a3ef1494950212d4631e25598b45d9599b1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_s390x_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:20:55 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 23 Sep 2021 18:21:16 GMT
+# Fri, 24 Sep 2021 19:20:56 GMT
 RUN echo Verifying install ...     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Thu, 23 Sep 2021 18:21:16 GMT
+# Fri, 24 Sep 2021 19:20:57 GMT
 CMD ["jshell"]
 ```
 
@@ -12890,26 +13064,26 @@ CMD ["jshell"]
 		Last Modified: Tue, 31 Aug 2021 03:34:11 GMT  
 		Size: 19.8 MB (19775466 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2c6df8928ff50241437616f8c56d64eb7581fd65e4a174132177f8d80211f19`  
-		Last Modified: Thu, 23 Sep 2021 18:22:49 GMT  
-		Size: 193.0 MB (192972923 bytes)  
+	-	`sha256:edd792abf4d974cd0f20e4a9ef903718fd60c93ef3de4c593beb0bdf8a6937c8`  
+		Last Modified: Fri, 24 Sep 2021 19:23:42 GMT  
+		Size: 193.0 MB (192972951 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78fc0c941646c4623cde8b48cd5d49881ffc7e959c5ab94e0d4d4c9bed2a2cca`  
-		Last Modified: Thu, 23 Sep 2021 18:22:34 GMT  
+	-	`sha256:2873dd09179dc2ad22400f5d558a35c68a976609ea5712a89b55b0da92e45466`  
+		Last Modified: Fri, 24 Sep 2021 19:23:27 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:17_35-jdk-focal` - linux; arm64 variant v8
 
 ```console
-$ docker pull eclipse-temurin@sha256:266849ac86414b046acf898902aaac26467df0788d34ab7009bb691ebd0bdc36
+$ docker pull eclipse-temurin@sha256:368f6600ca622b5f54eef5f9172cf7f6c2bfccd6cb1ec235fe6d54be654d8531
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **237.6 MB (237555750 bytes)**  
+-	Total Size: **237.6 MB (237555758 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ddf9d74f2fc221e60084da2e754940d0cd10b895edb12069565bc81802919ac1`
+-	Image ID: `sha256:9b4e06275ac52521d5c47fb88738ca082bc8969fc82086008794712f51bbc914`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -12923,13 +13097,13 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales binutils     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
 # Thu, 23 Sep 2021 21:50:15 GMT
 ENV JAVA_VERSION=jdk-17+35
-# Thu, 23 Sep 2021 21:50:23 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='7a48159fca62b7f6afd58fb2e9712a3ef1494950212d4631e25598b45d9599b1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_s390x_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Thu, 23 Sep 2021 21:50:24 GMT
+# Fri, 24 Sep 2021 19:41:03 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        armhf|arm)          ESUM='77ef6aa6f665373e212097b937c22d0cad2add90e439ec0e90534a7ff0e8a6e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_arm_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='7a48159fca62b7f6afd58fb2e9712a3ef1494950212d4631e25598b45d9599b1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_s390x_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:41:04 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 23 Sep 2021 21:50:25 GMT
+# Fri, 24 Sep 2021 19:41:04 GMT
 RUN echo Verifying install ...     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Thu, 23 Sep 2021 21:50:25 GMT
+# Fri, 24 Sep 2021 19:41:05 GMT
 CMD ["jshell"]
 ```
 
@@ -12942,13 +13116,13 @@ CMD ["jshell"]
 		Last Modified: Tue, 31 Aug 2021 02:29:31 GMT  
 		Size: 20.5 MB (20499296 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:efaaa7ed89622105c10ca68a59a24336bbad09d7ec03fdda55f1e970461d7921`  
-		Last Modified: Thu, 23 Sep 2021 21:53:05 GMT  
-		Size: 189.9 MB (189883195 bytes)  
+	-	`sha256:735bbbec53ce142d52faa97e79ac747256d8d8d4e46a43f97f781906b9eb1c02`  
+		Last Modified: Fri, 24 Sep 2021 19:44:39 GMT  
+		Size: 189.9 MB (189883202 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e7e3a5492d533958207d2b4aceaa8a76704c8d5322d8586be0972f87fe2e695`  
-		Last Modified: Thu, 23 Sep 2021 21:52:48 GMT  
-		Size: 160.0 B  
+	-	`sha256:221eb16619e5ee765f153fecce5cad441bc4759fdc20d8e5ccea033bc161bec8`  
+		Last Modified: Fri, 24 Sep 2021 19:44:21 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:17_35-jdk-focal` - linux; ppc64le
@@ -13006,14 +13180,14 @@ CMD ["jshell"]
 ### `eclipse-temurin:17_35-jdk-focal` - linux; s390x
 
 ```console
-$ docker pull eclipse-temurin@sha256:cf48d958120af874c1ee5b13c6ca60fef2d6fde44db16e3050d612c0326c9f6a
+$ docker pull eclipse-temurin@sha256:4d081388bc80284e2e82ab1453de7a9a7bdd64719fc8051e9ca8d2274f5e5b06
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **226.7 MB (226700592 bytes)**  
+-	Total Size: **226.7 MB (226700604 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2b1ffd9429e13fe3817d41fc52f9ed75e5020b22ea817506f7dbfb9869c1cca8`
+-	Image ID: `sha256:80d3365ef4d6a6e780ef9659df5cbfecf065c290b32a2d18373d49bcc604119c`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -13027,13 +13201,13 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales binutils     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
 # Thu, 23 Sep 2021 20:04:56 GMT
 ENV JAVA_VERSION=jdk-17+35
-# Thu, 23 Sep 2021 20:05:06 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='7a48159fca62b7f6afd58fb2e9712a3ef1494950212d4631e25598b45d9599b1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_s390x_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Thu, 23 Sep 2021 20:05:10 GMT
+# Fri, 24 Sep 2021 19:42:03 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        armhf|arm)          ESUM='77ef6aa6f665373e212097b937c22d0cad2add90e439ec0e90534a7ff0e8a6e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_arm_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='7a48159fca62b7f6afd58fb2e9712a3ef1494950212d4631e25598b45d9599b1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_s390x_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:42:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 23 Sep 2021 20:05:11 GMT
+# Fri, 24 Sep 2021 19:42:07 GMT
 RUN echo Verifying install ...     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Thu, 23 Sep 2021 20:05:11 GMT
+# Fri, 24 Sep 2021 19:42:07 GMT
 CMD ["jshell"]
 ```
 
@@ -13046,13 +13220,13 @@ CMD ["jshell"]
 		Last Modified: Tue, 31 Aug 2021 02:32:22 GMT  
 		Size: 19.2 MB (19237224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:891b7c52a86489dcd6e164c3049777acebf1aea8bd34a9064511a9b91e140288`  
-		Last Modified: Thu, 23 Sep 2021 20:06:21 GMT  
-		Size: 180.3 MB (180335738 bytes)  
+	-	`sha256:b1c8b5050642aae0f18488022076eff64886c10e06ce87594f3ec31ab69eae73`  
+		Last Modified: Fri, 24 Sep 2021 19:43:15 GMT  
+		Size: 180.3 MB (180335749 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc5371135aad4960942bcc726f19ac20d9207eeb6052335b10f027f1ba7eb48b`  
-		Last Modified: Thu, 23 Sep 2021 20:06:07 GMT  
-		Size: 160.0 B  
+	-	`sha256:d1c28a24fbc94f2c128004745ef81cd0e619c693a6b5444013a22587be980ed6`  
+		Last Modified: Fri, 24 Sep 2021 19:43:03 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `eclipse-temurin:17_35-jdk-nanoserver`
@@ -13501,7 +13675,7 @@ CMD ["jshell"]
 ## `eclipse-temurin:8`
 
 ```console
-$ docker pull eclipse-temurin@sha256:340f59bc198bb6c3e8e5d45aea1e6320cb5e8710ec953c0c0815bf96d3974eca
+$ docker pull eclipse-temurin@sha256:57ab7c0b1f6419060fc726cf22a371a2f099ce0089ee9b9cf0decb91362458b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13515,14 +13689,14 @@ $ docker pull eclipse-temurin@sha256:340f59bc198bb6c3e8e5d45aea1e6320cb5e8710ec9
 ### `eclipse-temurin:8` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:5ed87c1b0fcc3b5559b39ba38803ee32572ed2fa9f703116d89743a0ee8fcc1f
+$ docker pull eclipse-temurin@sha256:602085917be434563a132e21506731d5eaafc2c6a7863cb0f48e6ac7dd1a4242
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **148.2 MB (148152285 bytes)**  
+-	Total Size: **148.2 MB (148152266 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6052c6418e3d7450e65522fc0e2eafd71719f4b9eb20a173b7b3a4f997bfe48a`
+-	Image ID: `sha256:ba7732523371837f0be5df8974cd0b58e418d0542415008ae802c730ceaefa0b`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -13536,11 +13710,11 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
 # Tue, 31 Aug 2021 03:31:24 GMT
 ENV JAVA_VERSION=jdk8u302-b08
-# Wed, 22 Sep 2021 19:55:57 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='f287cdc2a688c2df247ea0d8bfe2863645b73848e4e5c35b02a8a3d2d6b69551';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_hotspot_8u302b08.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='c2940f3772d4467a818a0221e80c2c720b6d427a886aaed37262e451ddbb0a56';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u302b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='cc13f274becf9dd5517b6be583632819dfd4dd81e524b5c1b4f406bdaf0e063a';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u302b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Wed, 22 Sep 2021 19:55:58 GMT
+# Fri, 24 Sep 2021 19:19:49 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='f287cdc2a688c2df247ea0d8bfe2863645b73848e4e5c35b02a8a3d2d6b69551';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_hotspot_8u302b08.tar.gz';          ;;        armhf|arm)          ESUM='666f159ab0a2dd09c776681eb7cecaf04dc17e35deb213e588fe4f00c2fcac24';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_arm_linux_hotspot_8u302b08.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='c2940f3772d4467a818a0221e80c2c720b6d427a886aaed37262e451ddbb0a56';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u302b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='cc13f274becf9dd5517b6be583632819dfd4dd81e524b5c1b4f406bdaf0e063a';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u302b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:19:50 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 22 Sep 2021 19:55:59 GMT
+# Fri, 24 Sep 2021 19:19:51 GMT
 RUN echo Verifying install ...     && echo javac -version && javac -version     && echo java -version && java -version     && echo Complete.
 ```
 
@@ -13553,26 +13727,26 @@ RUN echo Verifying install ...     && echo javac -version && javac -version     
 		Last Modified: Tue, 31 Aug 2021 03:33:27 GMT  
 		Size: 16.0 MB (16032853 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0667d47cd9f34ebcbfbdd7849a0eecda7f91d0a20149188a113601c2a9fbdfd`  
-		Last Modified: Wed, 22 Sep 2021 19:58:42 GMT  
-		Size: 103.5 MB (103549198 bytes)  
+	-	`sha256:086970aeec7ee97e936ce3215530765284d3e031f4096fce2a3e3579e89d1d0c`  
+		Last Modified: Fri, 24 Sep 2021 19:22:16 GMT  
+		Size: 103.5 MB (103549178 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dbe51b38cb62fc14adc3e4cad0a2a47b0594a1ede72e4dbf09b139cd74daaa1a`  
-		Last Modified: Wed, 22 Sep 2021 19:58:33 GMT  
-		Size: 160.0 B  
+	-	`sha256:8d5b6215d5dcee839670140e7e24834b85d166b80088e02a409dfef17648c7fc`  
+		Last Modified: Fri, 24 Sep 2021 19:22:07 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:8` - linux; arm64 variant v8
 
 ```console
-$ docker pull eclipse-temurin@sha256:86b6d5c3631ef59713071571a4efa0b24888a6a0e1581263c55afc7ac69d33a1
+$ docker pull eclipse-temurin@sha256:1974b572066174f795cfbf5ea1a6bd277b924707dfdc6650e20a0e98c0d0937f
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **145.8 MB (145772979 bytes)**  
+-	Total Size: **145.8 MB (145772905 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dbe58e93659483abe93975fd581f12f72ff134f12d3792e7ccd1156bf2488db3`
+-	Image ID: `sha256:2c4a84ef153630c4f405ec7d0c8635310ed4a7872a42fc21a35d7fab00bb4ed1`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -13586,11 +13760,11 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
 # Tue, 31 Aug 2021 02:25:34 GMT
 ENV JAVA_VERSION=jdk8u302-b08
-# Wed, 22 Sep 2021 19:39:42 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='f287cdc2a688c2df247ea0d8bfe2863645b73848e4e5c35b02a8a3d2d6b69551';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_hotspot_8u302b08.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='c2940f3772d4467a818a0221e80c2c720b6d427a886aaed37262e451ddbb0a56';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u302b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='cc13f274becf9dd5517b6be583632819dfd4dd81e524b5c1b4f406bdaf0e063a';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u302b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Wed, 22 Sep 2021 19:39:43 GMT
+# Fri, 24 Sep 2021 19:39:48 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='f287cdc2a688c2df247ea0d8bfe2863645b73848e4e5c35b02a8a3d2d6b69551';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_hotspot_8u302b08.tar.gz';          ;;        armhf|arm)          ESUM='666f159ab0a2dd09c776681eb7cecaf04dc17e35deb213e588fe4f00c2fcac24';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_arm_linux_hotspot_8u302b08.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='c2940f3772d4467a818a0221e80c2c720b6d427a886aaed37262e451ddbb0a56';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u302b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='cc13f274becf9dd5517b6be583632819dfd4dd81e524b5c1b4f406bdaf0e063a';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u302b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:39:49 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 22 Sep 2021 19:39:43 GMT
+# Fri, 24 Sep 2021 19:39:49 GMT
 RUN echo Verifying install ...     && echo javac -version && javac -version     && echo java -version && java -version     && echo Complete.
 ```
 
@@ -13603,12 +13777,12 @@ RUN echo Verifying install ...     && echo javac -version && javac -version     
 		Last Modified: Tue, 31 Aug 2021 02:28:37 GMT  
 		Size: 15.9 MB (15897608 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6dfbf21d02710aa8853ea2d7c979383cde13ce2a2ef61d394580af21d605d7cd`  
-		Last Modified: Wed, 22 Sep 2021 19:43:15 GMT  
-		Size: 102.7 MB (102702112 bytes)  
+	-	`sha256:2c201028be311e160b65927ce73b3938e427dd6673cb36632c30df6d7d24188e`  
+		Last Modified: Fri, 24 Sep 2021 19:43:22 GMT  
+		Size: 102.7 MB (102702038 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1a57164f47420cced707a7c1e172d0700764eaaaca1e0e9121265d3b20317e4`  
-		Last Modified: Wed, 22 Sep 2021 19:43:04 GMT  
+	-	`sha256:1ee108b6c044e81c9e3053d7b87e66f35d796f3d7a9e3873d392d0e96818797a`  
+		Last Modified: Fri, 24 Sep 2021 19:43:11 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -13771,7 +13945,7 @@ RUN Write-Host 'Verifying install ...';     Write-Host 'javac -version'; javac -
 ## `eclipse-temurin:8-centos7`
 
 ```console
-$ docker pull eclipse-temurin@sha256:fa8aba6577c67da9dd7c54b09eb44a4322cdcc7104cc9455f39fbf32efa14729
+$ docker pull eclipse-temurin@sha256:232d11115b6b4725da61dafc96a12d2b6e082bfea8fd202b44047cf76aade187
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13783,14 +13957,14 @@ $ docker pull eclipse-temurin@sha256:fa8aba6577c67da9dd7c54b09eb44a4322cdcc7104c
 ### `eclipse-temurin:8-centos7` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:3dc855092b82cc4d1bc9a681fb7db59ec7532ad27c850e14829d86ac43387384
+$ docker pull eclipse-temurin@sha256:38ee669e97652eeec49ee03feb2d3cc4ba56b49f972a1d10b8c8a7e9fde7fceb
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **192.4 MB (192354183 bytes)**  
+-	Total Size: **192.4 MB (192354181 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8699da364132968afacd916a9b61f03b5213369eaf191571c5553ff1d7a06297`
+-	Image ID: `sha256:6d2d93c320c56a83806ad903c87adb0f787d6d090a2474b12902c877d6554b8b`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -13806,11 +13980,11 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN yum install -y tzdata openssl curl ca-certificates fontconfig gzip tar     && yum clean all
 # Wed, 15 Sep 2021 18:51:48 GMT
 ENV JAVA_VERSION=jdk8u302-b08
-# Wed, 22 Sep 2021 19:56:09 GMT
-RUN set -eux;     ARCH="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')";     case "${ARCH}" in        aarch64|arm64)          ESUM='f287cdc2a688c2df247ea0d8bfe2863645b73848e4e5c35b02a8a3d2d6b69551';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_hotspot_8u302b08.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='c2940f3772d4467a818a0221e80c2c720b6d427a886aaed37262e451ddbb0a56';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u302b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='cc13f274becf9dd5517b6be583632819dfd4dd81e524b5c1b4f406bdaf0e063a';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u302b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Wed, 22 Sep 2021 19:56:09 GMT
+# Fri, 24 Sep 2021 19:20:01 GMT
+RUN set -eux;     ARCH="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')";     case "${ARCH}" in        aarch64|arm64)          ESUM='f287cdc2a688c2df247ea0d8bfe2863645b73848e4e5c35b02a8a3d2d6b69551';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_hotspot_8u302b08.tar.gz';          ;;        armhf|arm)          ESUM='666f159ab0a2dd09c776681eb7cecaf04dc17e35deb213e588fe4f00c2fcac24';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_arm_linux_hotspot_8u302b08.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='c2940f3772d4467a818a0221e80c2c720b6d427a886aaed37262e451ddbb0a56';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u302b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='cc13f274becf9dd5517b6be583632819dfd4dd81e524b5c1b4f406bdaf0e063a';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u302b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:20:01 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 22 Sep 2021 19:56:10 GMT
+# Fri, 24 Sep 2021 19:20:02 GMT
 RUN echo Verifying install ...     && echo javac -version && javac -version     && echo java -version && java -version     && echo Complete.
 ```
 
@@ -13823,26 +13997,26 @@ RUN echo Verifying install ...     && echo javac -version && javac -version     
 		Last Modified: Wed, 15 Sep 2021 18:54:13 GMT  
 		Size: 12.7 MB (12706445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5400c236ff1375d5e4aca12fc5571364f54bb469efbe06c2861f1094410be578`  
-		Last Modified: Wed, 22 Sep 2021 19:59:02 GMT  
+	-	`sha256:2c076e0909e147fad15d7ff1082587e966ff7b7b4123761a7c30fdaba22ea085`  
+		Last Modified: Fri, 24 Sep 2021 19:22:38 GMT  
 		Size: 103.6 MB (103550420 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6774c1d17ba4c78c982a051e131f97a579d96d9d59905150d789e89234e13fa`  
-		Last Modified: Wed, 22 Sep 2021 19:58:54 GMT  
-		Size: 161.0 B  
+	-	`sha256:4f2a49864b2eb8106ee5a06f727f5b739d018ad0895c1ae0a048b2104254b0d4`  
+		Last Modified: Fri, 24 Sep 2021 19:22:29 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:8-centos7` - linux; arm64 variant v8
 
 ```console
-$ docker pull eclipse-temurin@sha256:ced0d74ee626858b3c4b5b6f57f3b63b6f746ed2aa9a194f9e70c05abc5e7470
+$ docker pull eclipse-temurin@sha256:2e34291dbd5bdeb680c5dd9bffb28f426c039c207679fc98257b501372cb4b76
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **223.3 MB (223339142 bytes)**  
+-	Total Size: **223.3 MB (223339111 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2c531769921121e426cbe517424df2eab0d84f6fb3c5698898f92e3fcfd48c24`
+-	Image ID: `sha256:814a3d6d278c83deaaf57ca95b21115fd25ea27078b56a3745101554e144dbb7`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -13858,11 +14032,11 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN yum install -y tzdata openssl curl ca-certificates fontconfig gzip tar     && yum clean all
 # Wed, 15 Sep 2021 17:57:03 GMT
 ENV JAVA_VERSION=jdk8u302-b08
-# Wed, 22 Sep 2021 19:40:04 GMT
-RUN set -eux;     ARCH="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')";     case "${ARCH}" in        aarch64|arm64)          ESUM='f287cdc2a688c2df247ea0d8bfe2863645b73848e4e5c35b02a8a3d2d6b69551';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_hotspot_8u302b08.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='c2940f3772d4467a818a0221e80c2c720b6d427a886aaed37262e451ddbb0a56';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u302b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='cc13f274becf9dd5517b6be583632819dfd4dd81e524b5c1b4f406bdaf0e063a';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u302b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Wed, 22 Sep 2021 19:40:05 GMT
+# Fri, 24 Sep 2021 19:40:05 GMT
+RUN set -eux;     ARCH="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')";     case "${ARCH}" in        aarch64|arm64)          ESUM='f287cdc2a688c2df247ea0d8bfe2863645b73848e4e5c35b02a8a3d2d6b69551';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_hotspot_8u302b08.tar.gz';          ;;        armhf|arm)          ESUM='666f159ab0a2dd09c776681eb7cecaf04dc17e35deb213e588fe4f00c2fcac24';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_arm_linux_hotspot_8u302b08.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='c2940f3772d4467a818a0221e80c2c720b6d427a886aaed37262e451ddbb0a56';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u302b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='cc13f274becf9dd5517b6be583632819dfd4dd81e524b5c1b4f406bdaf0e063a';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u302b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:40:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 22 Sep 2021 19:40:06 GMT
+# Fri, 24 Sep 2021 19:40:06 GMT
 RUN echo Verifying install ...     && echo javac -version && javac -version     && echo java -version && java -version     && echo Complete.
 ```
 
@@ -13875,12 +14049,12 @@ RUN echo Verifying install ...     && echo javac -version && javac -version     
 		Last Modified: Wed, 15 Sep 2021 18:00:52 GMT  
 		Size: 12.3 MB (12258195 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:55bc198dabd85442591d6705a3a37307bc8091ba51e3e12e76d1618765c9f3f6`  
-		Last Modified: Wed, 22 Sep 2021 19:43:40 GMT  
-		Size: 102.7 MB (102705841 bytes)  
+	-	`sha256:fafe7189b540a1716888b7865aafacc12b5e2de9539ebe4c710d5493df5286f3`  
+		Last Modified: Fri, 24 Sep 2021 19:43:47 GMT  
+		Size: 102.7 MB (102705810 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e64c3d1cd855bf90d7dafa5e83ae4958e1440cfeaedb1c8ebe1459b062f76d62`  
-		Last Modified: Wed, 22 Sep 2021 19:43:30 GMT  
+	-	`sha256:43f96ca07feb479a24956aded948c6a9471c7bfab98f22d542cac86b9d97f4b8`  
+		Last Modified: Fri, 24 Sep 2021 19:43:36 GMT  
 		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -13939,7 +14113,7 @@ RUN echo Verifying install ...     && echo javac -version && javac -version     
 ## `eclipse-temurin:8-focal`
 
 ```console
-$ docker pull eclipse-temurin@sha256:c778eff585e7fe1712d4eabf159120cf8fabccf40dc28fd86c502607ad1e8349
+$ docker pull eclipse-temurin@sha256:90f18783220e3e9a83a392f3a5f189cd7edf4c46c2c74905ed381b99ae9fcb71
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13951,14 +14125,14 @@ $ docker pull eclipse-temurin@sha256:c778eff585e7fe1712d4eabf159120cf8fabccf40dc
 ### `eclipse-temurin:8-focal` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:5ed87c1b0fcc3b5559b39ba38803ee32572ed2fa9f703116d89743a0ee8fcc1f
+$ docker pull eclipse-temurin@sha256:602085917be434563a132e21506731d5eaafc2c6a7863cb0f48e6ac7dd1a4242
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **148.2 MB (148152285 bytes)**  
+-	Total Size: **148.2 MB (148152266 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6052c6418e3d7450e65522fc0e2eafd71719f4b9eb20a173b7b3a4f997bfe48a`
+-	Image ID: `sha256:ba7732523371837f0be5df8974cd0b58e418d0542415008ae802c730ceaefa0b`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -13972,11 +14146,11 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
 # Tue, 31 Aug 2021 03:31:24 GMT
 ENV JAVA_VERSION=jdk8u302-b08
-# Wed, 22 Sep 2021 19:55:57 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='f287cdc2a688c2df247ea0d8bfe2863645b73848e4e5c35b02a8a3d2d6b69551';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_hotspot_8u302b08.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='c2940f3772d4467a818a0221e80c2c720b6d427a886aaed37262e451ddbb0a56';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u302b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='cc13f274becf9dd5517b6be583632819dfd4dd81e524b5c1b4f406bdaf0e063a';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u302b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Wed, 22 Sep 2021 19:55:58 GMT
+# Fri, 24 Sep 2021 19:19:49 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='f287cdc2a688c2df247ea0d8bfe2863645b73848e4e5c35b02a8a3d2d6b69551';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_hotspot_8u302b08.tar.gz';          ;;        armhf|arm)          ESUM='666f159ab0a2dd09c776681eb7cecaf04dc17e35deb213e588fe4f00c2fcac24';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_arm_linux_hotspot_8u302b08.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='c2940f3772d4467a818a0221e80c2c720b6d427a886aaed37262e451ddbb0a56';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u302b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='cc13f274becf9dd5517b6be583632819dfd4dd81e524b5c1b4f406bdaf0e063a';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u302b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:19:50 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 22 Sep 2021 19:55:59 GMT
+# Fri, 24 Sep 2021 19:19:51 GMT
 RUN echo Verifying install ...     && echo javac -version && javac -version     && echo java -version && java -version     && echo Complete.
 ```
 
@@ -13989,26 +14163,26 @@ RUN echo Verifying install ...     && echo javac -version && javac -version     
 		Last Modified: Tue, 31 Aug 2021 03:33:27 GMT  
 		Size: 16.0 MB (16032853 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0667d47cd9f34ebcbfbdd7849a0eecda7f91d0a20149188a113601c2a9fbdfd`  
-		Last Modified: Wed, 22 Sep 2021 19:58:42 GMT  
-		Size: 103.5 MB (103549198 bytes)  
+	-	`sha256:086970aeec7ee97e936ce3215530765284d3e031f4096fce2a3e3579e89d1d0c`  
+		Last Modified: Fri, 24 Sep 2021 19:22:16 GMT  
+		Size: 103.5 MB (103549178 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dbe51b38cb62fc14adc3e4cad0a2a47b0594a1ede72e4dbf09b139cd74daaa1a`  
-		Last Modified: Wed, 22 Sep 2021 19:58:33 GMT  
-		Size: 160.0 B  
+	-	`sha256:8d5b6215d5dcee839670140e7e24834b85d166b80088e02a409dfef17648c7fc`  
+		Last Modified: Fri, 24 Sep 2021 19:22:07 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:8-focal` - linux; arm64 variant v8
 
 ```console
-$ docker pull eclipse-temurin@sha256:86b6d5c3631ef59713071571a4efa0b24888a6a0e1581263c55afc7ac69d33a1
+$ docker pull eclipse-temurin@sha256:1974b572066174f795cfbf5ea1a6bd277b924707dfdc6650e20a0e98c0d0937f
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **145.8 MB (145772979 bytes)**  
+-	Total Size: **145.8 MB (145772905 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dbe58e93659483abe93975fd581f12f72ff134f12d3792e7ccd1156bf2488db3`
+-	Image ID: `sha256:2c4a84ef153630c4f405ec7d0c8635310ed4a7872a42fc21a35d7fab00bb4ed1`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -14022,11 +14196,11 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
 # Tue, 31 Aug 2021 02:25:34 GMT
 ENV JAVA_VERSION=jdk8u302-b08
-# Wed, 22 Sep 2021 19:39:42 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='f287cdc2a688c2df247ea0d8bfe2863645b73848e4e5c35b02a8a3d2d6b69551';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_hotspot_8u302b08.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='c2940f3772d4467a818a0221e80c2c720b6d427a886aaed37262e451ddbb0a56';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u302b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='cc13f274becf9dd5517b6be583632819dfd4dd81e524b5c1b4f406bdaf0e063a';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u302b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Wed, 22 Sep 2021 19:39:43 GMT
+# Fri, 24 Sep 2021 19:39:48 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='f287cdc2a688c2df247ea0d8bfe2863645b73848e4e5c35b02a8a3d2d6b69551';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_hotspot_8u302b08.tar.gz';          ;;        armhf|arm)          ESUM='666f159ab0a2dd09c776681eb7cecaf04dc17e35deb213e588fe4f00c2fcac24';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_arm_linux_hotspot_8u302b08.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='c2940f3772d4467a818a0221e80c2c720b6d427a886aaed37262e451ddbb0a56';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u302b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='cc13f274becf9dd5517b6be583632819dfd4dd81e524b5c1b4f406bdaf0e063a';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u302b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:39:49 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 22 Sep 2021 19:39:43 GMT
+# Fri, 24 Sep 2021 19:39:49 GMT
 RUN echo Verifying install ...     && echo javac -version && javac -version     && echo java -version && java -version     && echo Complete.
 ```
 
@@ -14039,12 +14213,12 @@ RUN echo Verifying install ...     && echo javac -version && javac -version     
 		Last Modified: Tue, 31 Aug 2021 02:28:37 GMT  
 		Size: 15.9 MB (15897608 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6dfbf21d02710aa8853ea2d7c979383cde13ce2a2ef61d394580af21d605d7cd`  
-		Last Modified: Wed, 22 Sep 2021 19:43:15 GMT  
-		Size: 102.7 MB (102702112 bytes)  
+	-	`sha256:2c201028be311e160b65927ce73b3938e427dd6673cb36632c30df6d7d24188e`  
+		Last Modified: Fri, 24 Sep 2021 19:43:22 GMT  
+		Size: 102.7 MB (102702038 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1a57164f47420cced707a7c1e172d0700764eaaaca1e0e9121265d3b20317e4`  
-		Last Modified: Wed, 22 Sep 2021 19:43:04 GMT  
+	-	`sha256:1ee108b6c044e81c9e3053d7b87e66f35d796f3d7a9e3873d392d0e96818797a`  
+		Last Modified: Fri, 24 Sep 2021 19:43:11 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -14101,7 +14275,7 @@ RUN echo Verifying install ...     && echo javac -version && javac -version     
 ## `eclipse-temurin:8-jdk`
 
 ```console
-$ docker pull eclipse-temurin@sha256:340f59bc198bb6c3e8e5d45aea1e6320cb5e8710ec953c0c0815bf96d3974eca
+$ docker pull eclipse-temurin@sha256:57ab7c0b1f6419060fc726cf22a371a2f099ce0089ee9b9cf0decb91362458b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14115,14 +14289,14 @@ $ docker pull eclipse-temurin@sha256:340f59bc198bb6c3e8e5d45aea1e6320cb5e8710ec9
 ### `eclipse-temurin:8-jdk` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:5ed87c1b0fcc3b5559b39ba38803ee32572ed2fa9f703116d89743a0ee8fcc1f
+$ docker pull eclipse-temurin@sha256:602085917be434563a132e21506731d5eaafc2c6a7863cb0f48e6ac7dd1a4242
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **148.2 MB (148152285 bytes)**  
+-	Total Size: **148.2 MB (148152266 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6052c6418e3d7450e65522fc0e2eafd71719f4b9eb20a173b7b3a4f997bfe48a`
+-	Image ID: `sha256:ba7732523371837f0be5df8974cd0b58e418d0542415008ae802c730ceaefa0b`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -14136,11 +14310,11 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
 # Tue, 31 Aug 2021 03:31:24 GMT
 ENV JAVA_VERSION=jdk8u302-b08
-# Wed, 22 Sep 2021 19:55:57 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='f287cdc2a688c2df247ea0d8bfe2863645b73848e4e5c35b02a8a3d2d6b69551';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_hotspot_8u302b08.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='c2940f3772d4467a818a0221e80c2c720b6d427a886aaed37262e451ddbb0a56';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u302b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='cc13f274becf9dd5517b6be583632819dfd4dd81e524b5c1b4f406bdaf0e063a';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u302b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Wed, 22 Sep 2021 19:55:58 GMT
+# Fri, 24 Sep 2021 19:19:49 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='f287cdc2a688c2df247ea0d8bfe2863645b73848e4e5c35b02a8a3d2d6b69551';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_hotspot_8u302b08.tar.gz';          ;;        armhf|arm)          ESUM='666f159ab0a2dd09c776681eb7cecaf04dc17e35deb213e588fe4f00c2fcac24';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_arm_linux_hotspot_8u302b08.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='c2940f3772d4467a818a0221e80c2c720b6d427a886aaed37262e451ddbb0a56';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u302b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='cc13f274becf9dd5517b6be583632819dfd4dd81e524b5c1b4f406bdaf0e063a';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u302b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:19:50 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 22 Sep 2021 19:55:59 GMT
+# Fri, 24 Sep 2021 19:19:51 GMT
 RUN echo Verifying install ...     && echo javac -version && javac -version     && echo java -version && java -version     && echo Complete.
 ```
 
@@ -14153,26 +14327,26 @@ RUN echo Verifying install ...     && echo javac -version && javac -version     
 		Last Modified: Tue, 31 Aug 2021 03:33:27 GMT  
 		Size: 16.0 MB (16032853 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0667d47cd9f34ebcbfbdd7849a0eecda7f91d0a20149188a113601c2a9fbdfd`  
-		Last Modified: Wed, 22 Sep 2021 19:58:42 GMT  
-		Size: 103.5 MB (103549198 bytes)  
+	-	`sha256:086970aeec7ee97e936ce3215530765284d3e031f4096fce2a3e3579e89d1d0c`  
+		Last Modified: Fri, 24 Sep 2021 19:22:16 GMT  
+		Size: 103.5 MB (103549178 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dbe51b38cb62fc14adc3e4cad0a2a47b0594a1ede72e4dbf09b139cd74daaa1a`  
-		Last Modified: Wed, 22 Sep 2021 19:58:33 GMT  
-		Size: 160.0 B  
+	-	`sha256:8d5b6215d5dcee839670140e7e24834b85d166b80088e02a409dfef17648c7fc`  
+		Last Modified: Fri, 24 Sep 2021 19:22:07 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:8-jdk` - linux; arm64 variant v8
 
 ```console
-$ docker pull eclipse-temurin@sha256:86b6d5c3631ef59713071571a4efa0b24888a6a0e1581263c55afc7ac69d33a1
+$ docker pull eclipse-temurin@sha256:1974b572066174f795cfbf5ea1a6bd277b924707dfdc6650e20a0e98c0d0937f
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **145.8 MB (145772979 bytes)**  
+-	Total Size: **145.8 MB (145772905 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dbe58e93659483abe93975fd581f12f72ff134f12d3792e7ccd1156bf2488db3`
+-	Image ID: `sha256:2c4a84ef153630c4f405ec7d0c8635310ed4a7872a42fc21a35d7fab00bb4ed1`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -14186,11 +14360,11 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
 # Tue, 31 Aug 2021 02:25:34 GMT
 ENV JAVA_VERSION=jdk8u302-b08
-# Wed, 22 Sep 2021 19:39:42 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='f287cdc2a688c2df247ea0d8bfe2863645b73848e4e5c35b02a8a3d2d6b69551';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_hotspot_8u302b08.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='c2940f3772d4467a818a0221e80c2c720b6d427a886aaed37262e451ddbb0a56';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u302b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='cc13f274becf9dd5517b6be583632819dfd4dd81e524b5c1b4f406bdaf0e063a';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u302b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Wed, 22 Sep 2021 19:39:43 GMT
+# Fri, 24 Sep 2021 19:39:48 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='f287cdc2a688c2df247ea0d8bfe2863645b73848e4e5c35b02a8a3d2d6b69551';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_hotspot_8u302b08.tar.gz';          ;;        armhf|arm)          ESUM='666f159ab0a2dd09c776681eb7cecaf04dc17e35deb213e588fe4f00c2fcac24';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_arm_linux_hotspot_8u302b08.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='c2940f3772d4467a818a0221e80c2c720b6d427a886aaed37262e451ddbb0a56';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u302b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='cc13f274becf9dd5517b6be583632819dfd4dd81e524b5c1b4f406bdaf0e063a';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u302b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:39:49 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 22 Sep 2021 19:39:43 GMT
+# Fri, 24 Sep 2021 19:39:49 GMT
 RUN echo Verifying install ...     && echo javac -version && javac -version     && echo java -version && java -version     && echo Complete.
 ```
 
@@ -14203,12 +14377,12 @@ RUN echo Verifying install ...     && echo javac -version && javac -version     
 		Last Modified: Tue, 31 Aug 2021 02:28:37 GMT  
 		Size: 15.9 MB (15897608 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6dfbf21d02710aa8853ea2d7c979383cde13ce2a2ef61d394580af21d605d7cd`  
-		Last Modified: Wed, 22 Sep 2021 19:43:15 GMT  
-		Size: 102.7 MB (102702112 bytes)  
+	-	`sha256:2c201028be311e160b65927ce73b3938e427dd6673cb36632c30df6d7d24188e`  
+		Last Modified: Fri, 24 Sep 2021 19:43:22 GMT  
+		Size: 102.7 MB (102702038 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1a57164f47420cced707a7c1e172d0700764eaaaca1e0e9121265d3b20317e4`  
-		Last Modified: Wed, 22 Sep 2021 19:43:04 GMT  
+	-	`sha256:1ee108b6c044e81c9e3053d7b87e66f35d796f3d7a9e3873d392d0e96818797a`  
+		Last Modified: Fri, 24 Sep 2021 19:43:11 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -14371,7 +14545,7 @@ RUN Write-Host 'Verifying install ...';     Write-Host 'javac -version'; javac -
 ## `eclipse-temurin:8-jdk-centos7`
 
 ```console
-$ docker pull eclipse-temurin@sha256:fa8aba6577c67da9dd7c54b09eb44a4322cdcc7104cc9455f39fbf32efa14729
+$ docker pull eclipse-temurin@sha256:232d11115b6b4725da61dafc96a12d2b6e082bfea8fd202b44047cf76aade187
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14383,14 +14557,14 @@ $ docker pull eclipse-temurin@sha256:fa8aba6577c67da9dd7c54b09eb44a4322cdcc7104c
 ### `eclipse-temurin:8-jdk-centos7` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:3dc855092b82cc4d1bc9a681fb7db59ec7532ad27c850e14829d86ac43387384
+$ docker pull eclipse-temurin@sha256:38ee669e97652eeec49ee03feb2d3cc4ba56b49f972a1d10b8c8a7e9fde7fceb
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **192.4 MB (192354183 bytes)**  
+-	Total Size: **192.4 MB (192354181 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8699da364132968afacd916a9b61f03b5213369eaf191571c5553ff1d7a06297`
+-	Image ID: `sha256:6d2d93c320c56a83806ad903c87adb0f787d6d090a2474b12902c877d6554b8b`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -14406,11 +14580,11 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN yum install -y tzdata openssl curl ca-certificates fontconfig gzip tar     && yum clean all
 # Wed, 15 Sep 2021 18:51:48 GMT
 ENV JAVA_VERSION=jdk8u302-b08
-# Wed, 22 Sep 2021 19:56:09 GMT
-RUN set -eux;     ARCH="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')";     case "${ARCH}" in        aarch64|arm64)          ESUM='f287cdc2a688c2df247ea0d8bfe2863645b73848e4e5c35b02a8a3d2d6b69551';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_hotspot_8u302b08.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='c2940f3772d4467a818a0221e80c2c720b6d427a886aaed37262e451ddbb0a56';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u302b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='cc13f274becf9dd5517b6be583632819dfd4dd81e524b5c1b4f406bdaf0e063a';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u302b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Wed, 22 Sep 2021 19:56:09 GMT
+# Fri, 24 Sep 2021 19:20:01 GMT
+RUN set -eux;     ARCH="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')";     case "${ARCH}" in        aarch64|arm64)          ESUM='f287cdc2a688c2df247ea0d8bfe2863645b73848e4e5c35b02a8a3d2d6b69551';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_hotspot_8u302b08.tar.gz';          ;;        armhf|arm)          ESUM='666f159ab0a2dd09c776681eb7cecaf04dc17e35deb213e588fe4f00c2fcac24';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_arm_linux_hotspot_8u302b08.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='c2940f3772d4467a818a0221e80c2c720b6d427a886aaed37262e451ddbb0a56';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u302b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='cc13f274becf9dd5517b6be583632819dfd4dd81e524b5c1b4f406bdaf0e063a';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u302b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:20:01 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 22 Sep 2021 19:56:10 GMT
+# Fri, 24 Sep 2021 19:20:02 GMT
 RUN echo Verifying install ...     && echo javac -version && javac -version     && echo java -version && java -version     && echo Complete.
 ```
 
@@ -14423,26 +14597,26 @@ RUN echo Verifying install ...     && echo javac -version && javac -version     
 		Last Modified: Wed, 15 Sep 2021 18:54:13 GMT  
 		Size: 12.7 MB (12706445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5400c236ff1375d5e4aca12fc5571364f54bb469efbe06c2861f1094410be578`  
-		Last Modified: Wed, 22 Sep 2021 19:59:02 GMT  
+	-	`sha256:2c076e0909e147fad15d7ff1082587e966ff7b7b4123761a7c30fdaba22ea085`  
+		Last Modified: Fri, 24 Sep 2021 19:22:38 GMT  
 		Size: 103.6 MB (103550420 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6774c1d17ba4c78c982a051e131f97a579d96d9d59905150d789e89234e13fa`  
-		Last Modified: Wed, 22 Sep 2021 19:58:54 GMT  
-		Size: 161.0 B  
+	-	`sha256:4f2a49864b2eb8106ee5a06f727f5b739d018ad0895c1ae0a048b2104254b0d4`  
+		Last Modified: Fri, 24 Sep 2021 19:22:29 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:8-jdk-centos7` - linux; arm64 variant v8
 
 ```console
-$ docker pull eclipse-temurin@sha256:ced0d74ee626858b3c4b5b6f57f3b63b6f746ed2aa9a194f9e70c05abc5e7470
+$ docker pull eclipse-temurin@sha256:2e34291dbd5bdeb680c5dd9bffb28f426c039c207679fc98257b501372cb4b76
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **223.3 MB (223339142 bytes)**  
+-	Total Size: **223.3 MB (223339111 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2c531769921121e426cbe517424df2eab0d84f6fb3c5698898f92e3fcfd48c24`
+-	Image ID: `sha256:814a3d6d278c83deaaf57ca95b21115fd25ea27078b56a3745101554e144dbb7`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -14458,11 +14632,11 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN yum install -y tzdata openssl curl ca-certificates fontconfig gzip tar     && yum clean all
 # Wed, 15 Sep 2021 17:57:03 GMT
 ENV JAVA_VERSION=jdk8u302-b08
-# Wed, 22 Sep 2021 19:40:04 GMT
-RUN set -eux;     ARCH="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')";     case "${ARCH}" in        aarch64|arm64)          ESUM='f287cdc2a688c2df247ea0d8bfe2863645b73848e4e5c35b02a8a3d2d6b69551';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_hotspot_8u302b08.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='c2940f3772d4467a818a0221e80c2c720b6d427a886aaed37262e451ddbb0a56';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u302b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='cc13f274becf9dd5517b6be583632819dfd4dd81e524b5c1b4f406bdaf0e063a';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u302b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Wed, 22 Sep 2021 19:40:05 GMT
+# Fri, 24 Sep 2021 19:40:05 GMT
+RUN set -eux;     ARCH="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')";     case "${ARCH}" in        aarch64|arm64)          ESUM='f287cdc2a688c2df247ea0d8bfe2863645b73848e4e5c35b02a8a3d2d6b69551';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_hotspot_8u302b08.tar.gz';          ;;        armhf|arm)          ESUM='666f159ab0a2dd09c776681eb7cecaf04dc17e35deb213e588fe4f00c2fcac24';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_arm_linux_hotspot_8u302b08.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='c2940f3772d4467a818a0221e80c2c720b6d427a886aaed37262e451ddbb0a56';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u302b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='cc13f274becf9dd5517b6be583632819dfd4dd81e524b5c1b4f406bdaf0e063a';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u302b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:40:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 22 Sep 2021 19:40:06 GMT
+# Fri, 24 Sep 2021 19:40:06 GMT
 RUN echo Verifying install ...     && echo javac -version && javac -version     && echo java -version && java -version     && echo Complete.
 ```
 
@@ -14475,12 +14649,12 @@ RUN echo Verifying install ...     && echo javac -version && javac -version     
 		Last Modified: Wed, 15 Sep 2021 18:00:52 GMT  
 		Size: 12.3 MB (12258195 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:55bc198dabd85442591d6705a3a37307bc8091ba51e3e12e76d1618765c9f3f6`  
-		Last Modified: Wed, 22 Sep 2021 19:43:40 GMT  
-		Size: 102.7 MB (102705841 bytes)  
+	-	`sha256:fafe7189b540a1716888b7865aafacc12b5e2de9539ebe4c710d5493df5286f3`  
+		Last Modified: Fri, 24 Sep 2021 19:43:47 GMT  
+		Size: 102.7 MB (102705810 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e64c3d1cd855bf90d7dafa5e83ae4958e1440cfeaedb1c8ebe1459b062f76d62`  
-		Last Modified: Wed, 22 Sep 2021 19:43:30 GMT  
+	-	`sha256:43f96ca07feb479a24956aded948c6a9471c7bfab98f22d542cac86b9d97f4b8`  
+		Last Modified: Fri, 24 Sep 2021 19:43:36 GMT  
 		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -14539,7 +14713,7 @@ RUN echo Verifying install ...     && echo javac -version && javac -version     
 ## `eclipse-temurin:8-jdk-focal`
 
 ```console
-$ docker pull eclipse-temurin@sha256:c778eff585e7fe1712d4eabf159120cf8fabccf40dc28fd86c502607ad1e8349
+$ docker pull eclipse-temurin@sha256:90f18783220e3e9a83a392f3a5f189cd7edf4c46c2c74905ed381b99ae9fcb71
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14551,14 +14725,14 @@ $ docker pull eclipse-temurin@sha256:c778eff585e7fe1712d4eabf159120cf8fabccf40dc
 ### `eclipse-temurin:8-jdk-focal` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:5ed87c1b0fcc3b5559b39ba38803ee32572ed2fa9f703116d89743a0ee8fcc1f
+$ docker pull eclipse-temurin@sha256:602085917be434563a132e21506731d5eaafc2c6a7863cb0f48e6ac7dd1a4242
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **148.2 MB (148152285 bytes)**  
+-	Total Size: **148.2 MB (148152266 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6052c6418e3d7450e65522fc0e2eafd71719f4b9eb20a173b7b3a4f997bfe48a`
+-	Image ID: `sha256:ba7732523371837f0be5df8974cd0b58e418d0542415008ae802c730ceaefa0b`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -14572,11 +14746,11 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
 # Tue, 31 Aug 2021 03:31:24 GMT
 ENV JAVA_VERSION=jdk8u302-b08
-# Wed, 22 Sep 2021 19:55:57 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='f287cdc2a688c2df247ea0d8bfe2863645b73848e4e5c35b02a8a3d2d6b69551';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_hotspot_8u302b08.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='c2940f3772d4467a818a0221e80c2c720b6d427a886aaed37262e451ddbb0a56';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u302b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='cc13f274becf9dd5517b6be583632819dfd4dd81e524b5c1b4f406bdaf0e063a';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u302b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Wed, 22 Sep 2021 19:55:58 GMT
+# Fri, 24 Sep 2021 19:19:49 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='f287cdc2a688c2df247ea0d8bfe2863645b73848e4e5c35b02a8a3d2d6b69551';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_hotspot_8u302b08.tar.gz';          ;;        armhf|arm)          ESUM='666f159ab0a2dd09c776681eb7cecaf04dc17e35deb213e588fe4f00c2fcac24';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_arm_linux_hotspot_8u302b08.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='c2940f3772d4467a818a0221e80c2c720b6d427a886aaed37262e451ddbb0a56';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u302b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='cc13f274becf9dd5517b6be583632819dfd4dd81e524b5c1b4f406bdaf0e063a';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u302b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:19:50 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 22 Sep 2021 19:55:59 GMT
+# Fri, 24 Sep 2021 19:19:51 GMT
 RUN echo Verifying install ...     && echo javac -version && javac -version     && echo java -version && java -version     && echo Complete.
 ```
 
@@ -14589,26 +14763,26 @@ RUN echo Verifying install ...     && echo javac -version && javac -version     
 		Last Modified: Tue, 31 Aug 2021 03:33:27 GMT  
 		Size: 16.0 MB (16032853 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0667d47cd9f34ebcbfbdd7849a0eecda7f91d0a20149188a113601c2a9fbdfd`  
-		Last Modified: Wed, 22 Sep 2021 19:58:42 GMT  
-		Size: 103.5 MB (103549198 bytes)  
+	-	`sha256:086970aeec7ee97e936ce3215530765284d3e031f4096fce2a3e3579e89d1d0c`  
+		Last Modified: Fri, 24 Sep 2021 19:22:16 GMT  
+		Size: 103.5 MB (103549178 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dbe51b38cb62fc14adc3e4cad0a2a47b0594a1ede72e4dbf09b139cd74daaa1a`  
-		Last Modified: Wed, 22 Sep 2021 19:58:33 GMT  
-		Size: 160.0 B  
+	-	`sha256:8d5b6215d5dcee839670140e7e24834b85d166b80088e02a409dfef17648c7fc`  
+		Last Modified: Fri, 24 Sep 2021 19:22:07 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:8-jdk-focal` - linux; arm64 variant v8
 
 ```console
-$ docker pull eclipse-temurin@sha256:86b6d5c3631ef59713071571a4efa0b24888a6a0e1581263c55afc7ac69d33a1
+$ docker pull eclipse-temurin@sha256:1974b572066174f795cfbf5ea1a6bd277b924707dfdc6650e20a0e98c0d0937f
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **145.8 MB (145772979 bytes)**  
+-	Total Size: **145.8 MB (145772905 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dbe58e93659483abe93975fd581f12f72ff134f12d3792e7ccd1156bf2488db3`
+-	Image ID: `sha256:2c4a84ef153630c4f405ec7d0c8635310ed4a7872a42fc21a35d7fab00bb4ed1`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -14622,11 +14796,11 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
 # Tue, 31 Aug 2021 02:25:34 GMT
 ENV JAVA_VERSION=jdk8u302-b08
-# Wed, 22 Sep 2021 19:39:42 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='f287cdc2a688c2df247ea0d8bfe2863645b73848e4e5c35b02a8a3d2d6b69551';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_hotspot_8u302b08.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='c2940f3772d4467a818a0221e80c2c720b6d427a886aaed37262e451ddbb0a56';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u302b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='cc13f274becf9dd5517b6be583632819dfd4dd81e524b5c1b4f406bdaf0e063a';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u302b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Wed, 22 Sep 2021 19:39:43 GMT
+# Fri, 24 Sep 2021 19:39:48 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='f287cdc2a688c2df247ea0d8bfe2863645b73848e4e5c35b02a8a3d2d6b69551';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_hotspot_8u302b08.tar.gz';          ;;        armhf|arm)          ESUM='666f159ab0a2dd09c776681eb7cecaf04dc17e35deb213e588fe4f00c2fcac24';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_arm_linux_hotspot_8u302b08.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='c2940f3772d4467a818a0221e80c2c720b6d427a886aaed37262e451ddbb0a56';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u302b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='cc13f274becf9dd5517b6be583632819dfd4dd81e524b5c1b4f406bdaf0e063a';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u302b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:39:49 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 22 Sep 2021 19:39:43 GMT
+# Fri, 24 Sep 2021 19:39:49 GMT
 RUN echo Verifying install ...     && echo javac -version && javac -version     && echo java -version && java -version     && echo Complete.
 ```
 
@@ -14639,12 +14813,12 @@ RUN echo Verifying install ...     && echo javac -version && javac -version     
 		Last Modified: Tue, 31 Aug 2021 02:28:37 GMT  
 		Size: 15.9 MB (15897608 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6dfbf21d02710aa8853ea2d7c979383cde13ce2a2ef61d394580af21d605d7cd`  
-		Last Modified: Wed, 22 Sep 2021 19:43:15 GMT  
-		Size: 102.7 MB (102702112 bytes)  
+	-	`sha256:2c201028be311e160b65927ce73b3938e427dd6673cb36632c30df6d7d24188e`  
+		Last Modified: Fri, 24 Sep 2021 19:43:22 GMT  
+		Size: 102.7 MB (102702038 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1a57164f47420cced707a7c1e172d0700764eaaaca1e0e9121265d3b20317e4`  
-		Last Modified: Wed, 22 Sep 2021 19:43:04 GMT  
+	-	`sha256:1ee108b6c044e81c9e3053d7b87e66f35d796f3d7a9e3873d392d0e96818797a`  
+		Last Modified: Fri, 24 Sep 2021 19:43:11 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -16522,7 +16696,7 @@ RUN Write-Host 'Verifying install ...';     Write-Host 'javac -version'; javac -
 ## `eclipse-temurin:8u302-b08-jdk`
 
 ```console
-$ docker pull eclipse-temurin@sha256:340f59bc198bb6c3e8e5d45aea1e6320cb5e8710ec953c0c0815bf96d3974eca
+$ docker pull eclipse-temurin@sha256:57ab7c0b1f6419060fc726cf22a371a2f099ce0089ee9b9cf0decb91362458b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16536,14 +16710,14 @@ $ docker pull eclipse-temurin@sha256:340f59bc198bb6c3e8e5d45aea1e6320cb5e8710ec9
 ### `eclipse-temurin:8u302-b08-jdk` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:5ed87c1b0fcc3b5559b39ba38803ee32572ed2fa9f703116d89743a0ee8fcc1f
+$ docker pull eclipse-temurin@sha256:602085917be434563a132e21506731d5eaafc2c6a7863cb0f48e6ac7dd1a4242
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **148.2 MB (148152285 bytes)**  
+-	Total Size: **148.2 MB (148152266 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6052c6418e3d7450e65522fc0e2eafd71719f4b9eb20a173b7b3a4f997bfe48a`
+-	Image ID: `sha256:ba7732523371837f0be5df8974cd0b58e418d0542415008ae802c730ceaefa0b`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -16557,11 +16731,11 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
 # Tue, 31 Aug 2021 03:31:24 GMT
 ENV JAVA_VERSION=jdk8u302-b08
-# Wed, 22 Sep 2021 19:55:57 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='f287cdc2a688c2df247ea0d8bfe2863645b73848e4e5c35b02a8a3d2d6b69551';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_hotspot_8u302b08.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='c2940f3772d4467a818a0221e80c2c720b6d427a886aaed37262e451ddbb0a56';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u302b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='cc13f274becf9dd5517b6be583632819dfd4dd81e524b5c1b4f406bdaf0e063a';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u302b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Wed, 22 Sep 2021 19:55:58 GMT
+# Fri, 24 Sep 2021 19:19:49 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='f287cdc2a688c2df247ea0d8bfe2863645b73848e4e5c35b02a8a3d2d6b69551';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_hotspot_8u302b08.tar.gz';          ;;        armhf|arm)          ESUM='666f159ab0a2dd09c776681eb7cecaf04dc17e35deb213e588fe4f00c2fcac24';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_arm_linux_hotspot_8u302b08.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='c2940f3772d4467a818a0221e80c2c720b6d427a886aaed37262e451ddbb0a56';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u302b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='cc13f274becf9dd5517b6be583632819dfd4dd81e524b5c1b4f406bdaf0e063a';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u302b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:19:50 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 22 Sep 2021 19:55:59 GMT
+# Fri, 24 Sep 2021 19:19:51 GMT
 RUN echo Verifying install ...     && echo javac -version && javac -version     && echo java -version && java -version     && echo Complete.
 ```
 
@@ -16574,26 +16748,26 @@ RUN echo Verifying install ...     && echo javac -version && javac -version     
 		Last Modified: Tue, 31 Aug 2021 03:33:27 GMT  
 		Size: 16.0 MB (16032853 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0667d47cd9f34ebcbfbdd7849a0eecda7f91d0a20149188a113601c2a9fbdfd`  
-		Last Modified: Wed, 22 Sep 2021 19:58:42 GMT  
-		Size: 103.5 MB (103549198 bytes)  
+	-	`sha256:086970aeec7ee97e936ce3215530765284d3e031f4096fce2a3e3579e89d1d0c`  
+		Last Modified: Fri, 24 Sep 2021 19:22:16 GMT  
+		Size: 103.5 MB (103549178 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dbe51b38cb62fc14adc3e4cad0a2a47b0594a1ede72e4dbf09b139cd74daaa1a`  
-		Last Modified: Wed, 22 Sep 2021 19:58:33 GMT  
-		Size: 160.0 B  
+	-	`sha256:8d5b6215d5dcee839670140e7e24834b85d166b80088e02a409dfef17648c7fc`  
+		Last Modified: Fri, 24 Sep 2021 19:22:07 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:8u302-b08-jdk` - linux; arm64 variant v8
 
 ```console
-$ docker pull eclipse-temurin@sha256:86b6d5c3631ef59713071571a4efa0b24888a6a0e1581263c55afc7ac69d33a1
+$ docker pull eclipse-temurin@sha256:1974b572066174f795cfbf5ea1a6bd277b924707dfdc6650e20a0e98c0d0937f
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **145.8 MB (145772979 bytes)**  
+-	Total Size: **145.8 MB (145772905 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dbe58e93659483abe93975fd581f12f72ff134f12d3792e7ccd1156bf2488db3`
+-	Image ID: `sha256:2c4a84ef153630c4f405ec7d0c8635310ed4a7872a42fc21a35d7fab00bb4ed1`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -16607,11 +16781,11 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
 # Tue, 31 Aug 2021 02:25:34 GMT
 ENV JAVA_VERSION=jdk8u302-b08
-# Wed, 22 Sep 2021 19:39:42 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='f287cdc2a688c2df247ea0d8bfe2863645b73848e4e5c35b02a8a3d2d6b69551';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_hotspot_8u302b08.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='c2940f3772d4467a818a0221e80c2c720b6d427a886aaed37262e451ddbb0a56';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u302b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='cc13f274becf9dd5517b6be583632819dfd4dd81e524b5c1b4f406bdaf0e063a';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u302b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Wed, 22 Sep 2021 19:39:43 GMT
+# Fri, 24 Sep 2021 19:39:48 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='f287cdc2a688c2df247ea0d8bfe2863645b73848e4e5c35b02a8a3d2d6b69551';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_hotspot_8u302b08.tar.gz';          ;;        armhf|arm)          ESUM='666f159ab0a2dd09c776681eb7cecaf04dc17e35deb213e588fe4f00c2fcac24';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_arm_linux_hotspot_8u302b08.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='c2940f3772d4467a818a0221e80c2c720b6d427a886aaed37262e451ddbb0a56';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u302b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='cc13f274becf9dd5517b6be583632819dfd4dd81e524b5c1b4f406bdaf0e063a';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u302b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:39:49 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 22 Sep 2021 19:39:43 GMT
+# Fri, 24 Sep 2021 19:39:49 GMT
 RUN echo Verifying install ...     && echo javac -version && javac -version     && echo java -version && java -version     && echo Complete.
 ```
 
@@ -16624,12 +16798,12 @@ RUN echo Verifying install ...     && echo javac -version && javac -version     
 		Last Modified: Tue, 31 Aug 2021 02:28:37 GMT  
 		Size: 15.9 MB (15897608 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6dfbf21d02710aa8853ea2d7c979383cde13ce2a2ef61d394580af21d605d7cd`  
-		Last Modified: Wed, 22 Sep 2021 19:43:15 GMT  
-		Size: 102.7 MB (102702112 bytes)  
+	-	`sha256:2c201028be311e160b65927ce73b3938e427dd6673cb36632c30df6d7d24188e`  
+		Last Modified: Fri, 24 Sep 2021 19:43:22 GMT  
+		Size: 102.7 MB (102702038 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1a57164f47420cced707a7c1e172d0700764eaaaca1e0e9121265d3b20317e4`  
-		Last Modified: Wed, 22 Sep 2021 19:43:04 GMT  
+	-	`sha256:1ee108b6c044e81c9e3053d7b87e66f35d796f3d7a9e3873d392d0e96818797a`  
+		Last Modified: Fri, 24 Sep 2021 19:43:11 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -16792,7 +16966,7 @@ RUN Write-Host 'Verifying install ...';     Write-Host 'javac -version'; javac -
 ## `eclipse-temurin:8u302-b08-jdk-centos7`
 
 ```console
-$ docker pull eclipse-temurin@sha256:fa8aba6577c67da9dd7c54b09eb44a4322cdcc7104cc9455f39fbf32efa14729
+$ docker pull eclipse-temurin@sha256:232d11115b6b4725da61dafc96a12d2b6e082bfea8fd202b44047cf76aade187
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16804,14 +16978,14 @@ $ docker pull eclipse-temurin@sha256:fa8aba6577c67da9dd7c54b09eb44a4322cdcc7104c
 ### `eclipse-temurin:8u302-b08-jdk-centos7` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:3dc855092b82cc4d1bc9a681fb7db59ec7532ad27c850e14829d86ac43387384
+$ docker pull eclipse-temurin@sha256:38ee669e97652eeec49ee03feb2d3cc4ba56b49f972a1d10b8c8a7e9fde7fceb
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **192.4 MB (192354183 bytes)**  
+-	Total Size: **192.4 MB (192354181 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8699da364132968afacd916a9b61f03b5213369eaf191571c5553ff1d7a06297`
+-	Image ID: `sha256:6d2d93c320c56a83806ad903c87adb0f787d6d090a2474b12902c877d6554b8b`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -16827,11 +17001,11 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN yum install -y tzdata openssl curl ca-certificates fontconfig gzip tar     && yum clean all
 # Wed, 15 Sep 2021 18:51:48 GMT
 ENV JAVA_VERSION=jdk8u302-b08
-# Wed, 22 Sep 2021 19:56:09 GMT
-RUN set -eux;     ARCH="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')";     case "${ARCH}" in        aarch64|arm64)          ESUM='f287cdc2a688c2df247ea0d8bfe2863645b73848e4e5c35b02a8a3d2d6b69551';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_hotspot_8u302b08.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='c2940f3772d4467a818a0221e80c2c720b6d427a886aaed37262e451ddbb0a56';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u302b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='cc13f274becf9dd5517b6be583632819dfd4dd81e524b5c1b4f406bdaf0e063a';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u302b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Wed, 22 Sep 2021 19:56:09 GMT
+# Fri, 24 Sep 2021 19:20:01 GMT
+RUN set -eux;     ARCH="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')";     case "${ARCH}" in        aarch64|arm64)          ESUM='f287cdc2a688c2df247ea0d8bfe2863645b73848e4e5c35b02a8a3d2d6b69551';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_hotspot_8u302b08.tar.gz';          ;;        armhf|arm)          ESUM='666f159ab0a2dd09c776681eb7cecaf04dc17e35deb213e588fe4f00c2fcac24';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_arm_linux_hotspot_8u302b08.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='c2940f3772d4467a818a0221e80c2c720b6d427a886aaed37262e451ddbb0a56';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u302b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='cc13f274becf9dd5517b6be583632819dfd4dd81e524b5c1b4f406bdaf0e063a';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u302b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:20:01 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 22 Sep 2021 19:56:10 GMT
+# Fri, 24 Sep 2021 19:20:02 GMT
 RUN echo Verifying install ...     && echo javac -version && javac -version     && echo java -version && java -version     && echo Complete.
 ```
 
@@ -16844,26 +17018,26 @@ RUN echo Verifying install ...     && echo javac -version && javac -version     
 		Last Modified: Wed, 15 Sep 2021 18:54:13 GMT  
 		Size: 12.7 MB (12706445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5400c236ff1375d5e4aca12fc5571364f54bb469efbe06c2861f1094410be578`  
-		Last Modified: Wed, 22 Sep 2021 19:59:02 GMT  
+	-	`sha256:2c076e0909e147fad15d7ff1082587e966ff7b7b4123761a7c30fdaba22ea085`  
+		Last Modified: Fri, 24 Sep 2021 19:22:38 GMT  
 		Size: 103.6 MB (103550420 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6774c1d17ba4c78c982a051e131f97a579d96d9d59905150d789e89234e13fa`  
-		Last Modified: Wed, 22 Sep 2021 19:58:54 GMT  
-		Size: 161.0 B  
+	-	`sha256:4f2a49864b2eb8106ee5a06f727f5b739d018ad0895c1ae0a048b2104254b0d4`  
+		Last Modified: Fri, 24 Sep 2021 19:22:29 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:8u302-b08-jdk-centos7` - linux; arm64 variant v8
 
 ```console
-$ docker pull eclipse-temurin@sha256:ced0d74ee626858b3c4b5b6f57f3b63b6f746ed2aa9a194f9e70c05abc5e7470
+$ docker pull eclipse-temurin@sha256:2e34291dbd5bdeb680c5dd9bffb28f426c039c207679fc98257b501372cb4b76
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **223.3 MB (223339142 bytes)**  
+-	Total Size: **223.3 MB (223339111 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2c531769921121e426cbe517424df2eab0d84f6fb3c5698898f92e3fcfd48c24`
+-	Image ID: `sha256:814a3d6d278c83deaaf57ca95b21115fd25ea27078b56a3745101554e144dbb7`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -16879,11 +17053,11 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN yum install -y tzdata openssl curl ca-certificates fontconfig gzip tar     && yum clean all
 # Wed, 15 Sep 2021 17:57:03 GMT
 ENV JAVA_VERSION=jdk8u302-b08
-# Wed, 22 Sep 2021 19:40:04 GMT
-RUN set -eux;     ARCH="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')";     case "${ARCH}" in        aarch64|arm64)          ESUM='f287cdc2a688c2df247ea0d8bfe2863645b73848e4e5c35b02a8a3d2d6b69551';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_hotspot_8u302b08.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='c2940f3772d4467a818a0221e80c2c720b6d427a886aaed37262e451ddbb0a56';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u302b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='cc13f274becf9dd5517b6be583632819dfd4dd81e524b5c1b4f406bdaf0e063a';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u302b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Wed, 22 Sep 2021 19:40:05 GMT
+# Fri, 24 Sep 2021 19:40:05 GMT
+RUN set -eux;     ARCH="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')";     case "${ARCH}" in        aarch64|arm64)          ESUM='f287cdc2a688c2df247ea0d8bfe2863645b73848e4e5c35b02a8a3d2d6b69551';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_hotspot_8u302b08.tar.gz';          ;;        armhf|arm)          ESUM='666f159ab0a2dd09c776681eb7cecaf04dc17e35deb213e588fe4f00c2fcac24';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_arm_linux_hotspot_8u302b08.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='c2940f3772d4467a818a0221e80c2c720b6d427a886aaed37262e451ddbb0a56';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u302b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='cc13f274becf9dd5517b6be583632819dfd4dd81e524b5c1b4f406bdaf0e063a';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u302b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:40:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 22 Sep 2021 19:40:06 GMT
+# Fri, 24 Sep 2021 19:40:06 GMT
 RUN echo Verifying install ...     && echo javac -version && javac -version     && echo java -version && java -version     && echo Complete.
 ```
 
@@ -16896,12 +17070,12 @@ RUN echo Verifying install ...     && echo javac -version && javac -version     
 		Last Modified: Wed, 15 Sep 2021 18:00:52 GMT  
 		Size: 12.3 MB (12258195 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:55bc198dabd85442591d6705a3a37307bc8091ba51e3e12e76d1618765c9f3f6`  
-		Last Modified: Wed, 22 Sep 2021 19:43:40 GMT  
-		Size: 102.7 MB (102705841 bytes)  
+	-	`sha256:fafe7189b540a1716888b7865aafacc12b5e2de9539ebe4c710d5493df5286f3`  
+		Last Modified: Fri, 24 Sep 2021 19:43:47 GMT  
+		Size: 102.7 MB (102705810 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e64c3d1cd855bf90d7dafa5e83ae4958e1440cfeaedb1c8ebe1459b062f76d62`  
-		Last Modified: Wed, 22 Sep 2021 19:43:30 GMT  
+	-	`sha256:43f96ca07feb479a24956aded948c6a9471c7bfab98f22d542cac86b9d97f4b8`  
+		Last Modified: Fri, 24 Sep 2021 19:43:36 GMT  
 		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -16960,7 +17134,7 @@ RUN echo Verifying install ...     && echo javac -version && javac -version     
 ## `eclipse-temurin:8u302-b08-jdk-focal`
 
 ```console
-$ docker pull eclipse-temurin@sha256:c778eff585e7fe1712d4eabf159120cf8fabccf40dc28fd86c502607ad1e8349
+$ docker pull eclipse-temurin@sha256:90f18783220e3e9a83a392f3a5f189cd7edf4c46c2c74905ed381b99ae9fcb71
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16972,14 +17146,14 @@ $ docker pull eclipse-temurin@sha256:c778eff585e7fe1712d4eabf159120cf8fabccf40dc
 ### `eclipse-temurin:8u302-b08-jdk-focal` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:5ed87c1b0fcc3b5559b39ba38803ee32572ed2fa9f703116d89743a0ee8fcc1f
+$ docker pull eclipse-temurin@sha256:602085917be434563a132e21506731d5eaafc2c6a7863cb0f48e6ac7dd1a4242
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **148.2 MB (148152285 bytes)**  
+-	Total Size: **148.2 MB (148152266 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6052c6418e3d7450e65522fc0e2eafd71719f4b9eb20a173b7b3a4f997bfe48a`
+-	Image ID: `sha256:ba7732523371837f0be5df8974cd0b58e418d0542415008ae802c730ceaefa0b`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -16993,11 +17167,11 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
 # Tue, 31 Aug 2021 03:31:24 GMT
 ENV JAVA_VERSION=jdk8u302-b08
-# Wed, 22 Sep 2021 19:55:57 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='f287cdc2a688c2df247ea0d8bfe2863645b73848e4e5c35b02a8a3d2d6b69551';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_hotspot_8u302b08.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='c2940f3772d4467a818a0221e80c2c720b6d427a886aaed37262e451ddbb0a56';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u302b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='cc13f274becf9dd5517b6be583632819dfd4dd81e524b5c1b4f406bdaf0e063a';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u302b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Wed, 22 Sep 2021 19:55:58 GMT
+# Fri, 24 Sep 2021 19:19:49 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='f287cdc2a688c2df247ea0d8bfe2863645b73848e4e5c35b02a8a3d2d6b69551';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_hotspot_8u302b08.tar.gz';          ;;        armhf|arm)          ESUM='666f159ab0a2dd09c776681eb7cecaf04dc17e35deb213e588fe4f00c2fcac24';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_arm_linux_hotspot_8u302b08.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='c2940f3772d4467a818a0221e80c2c720b6d427a886aaed37262e451ddbb0a56';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u302b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='cc13f274becf9dd5517b6be583632819dfd4dd81e524b5c1b4f406bdaf0e063a';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u302b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:19:50 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 22 Sep 2021 19:55:59 GMT
+# Fri, 24 Sep 2021 19:19:51 GMT
 RUN echo Verifying install ...     && echo javac -version && javac -version     && echo java -version && java -version     && echo Complete.
 ```
 
@@ -17010,26 +17184,26 @@ RUN echo Verifying install ...     && echo javac -version && javac -version     
 		Last Modified: Tue, 31 Aug 2021 03:33:27 GMT  
 		Size: 16.0 MB (16032853 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0667d47cd9f34ebcbfbdd7849a0eecda7f91d0a20149188a113601c2a9fbdfd`  
-		Last Modified: Wed, 22 Sep 2021 19:58:42 GMT  
-		Size: 103.5 MB (103549198 bytes)  
+	-	`sha256:086970aeec7ee97e936ce3215530765284d3e031f4096fce2a3e3579e89d1d0c`  
+		Last Modified: Fri, 24 Sep 2021 19:22:16 GMT  
+		Size: 103.5 MB (103549178 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dbe51b38cb62fc14adc3e4cad0a2a47b0594a1ede72e4dbf09b139cd74daaa1a`  
-		Last Modified: Wed, 22 Sep 2021 19:58:33 GMT  
-		Size: 160.0 B  
+	-	`sha256:8d5b6215d5dcee839670140e7e24834b85d166b80088e02a409dfef17648c7fc`  
+		Last Modified: Fri, 24 Sep 2021 19:22:07 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:8u302-b08-jdk-focal` - linux; arm64 variant v8
 
 ```console
-$ docker pull eclipse-temurin@sha256:86b6d5c3631ef59713071571a4efa0b24888a6a0e1581263c55afc7ac69d33a1
+$ docker pull eclipse-temurin@sha256:1974b572066174f795cfbf5ea1a6bd277b924707dfdc6650e20a0e98c0d0937f
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **145.8 MB (145772979 bytes)**  
+-	Total Size: **145.8 MB (145772905 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dbe58e93659483abe93975fd581f12f72ff134f12d3792e7ccd1156bf2488db3`
+-	Image ID: `sha256:2c4a84ef153630c4f405ec7d0c8635310ed4a7872a42fc21a35d7fab00bb4ed1`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -17043,11 +17217,11 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
 # Tue, 31 Aug 2021 02:25:34 GMT
 ENV JAVA_VERSION=jdk8u302-b08
-# Wed, 22 Sep 2021 19:39:42 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='f287cdc2a688c2df247ea0d8bfe2863645b73848e4e5c35b02a8a3d2d6b69551';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_hotspot_8u302b08.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='c2940f3772d4467a818a0221e80c2c720b6d427a886aaed37262e451ddbb0a56';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u302b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='cc13f274becf9dd5517b6be583632819dfd4dd81e524b5c1b4f406bdaf0e063a';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u302b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Wed, 22 Sep 2021 19:39:43 GMT
+# Fri, 24 Sep 2021 19:39:48 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='f287cdc2a688c2df247ea0d8bfe2863645b73848e4e5c35b02a8a3d2d6b69551';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_aarch64_linux_hotspot_8u302b08.tar.gz';          ;;        armhf|arm)          ESUM='666f159ab0a2dd09c776681eb7cecaf04dc17e35deb213e588fe4f00c2fcac24';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_arm_linux_hotspot_8u302b08.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='c2940f3772d4467a818a0221e80c2c720b6d427a886aaed37262e451ddbb0a56';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u302b08.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='cc13f274becf9dd5517b6be583632819dfd4dd81e524b5c1b4f406bdaf0e063a';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u302b08.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:39:49 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 22 Sep 2021 19:39:43 GMT
+# Fri, 24 Sep 2021 19:39:49 GMT
 RUN echo Verifying install ...     && echo javac -version && javac -version     && echo java -version && java -version     && echo Complete.
 ```
 
@@ -17060,12 +17234,12 @@ RUN echo Verifying install ...     && echo javac -version && javac -version     
 		Last Modified: Tue, 31 Aug 2021 02:28:37 GMT  
 		Size: 15.9 MB (15897608 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6dfbf21d02710aa8853ea2d7c979383cde13ce2a2ef61d394580af21d605d7cd`  
-		Last Modified: Wed, 22 Sep 2021 19:43:15 GMT  
-		Size: 102.7 MB (102702112 bytes)  
+	-	`sha256:2c201028be311e160b65927ce73b3938e427dd6673cb36632c30df6d7d24188e`  
+		Last Modified: Fri, 24 Sep 2021 19:43:22 GMT  
+		Size: 102.7 MB (102702038 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1a57164f47420cced707a7c1e172d0700764eaaaca1e0e9121265d3b20317e4`  
-		Last Modified: Wed, 22 Sep 2021 19:43:04 GMT  
+	-	`sha256:1ee108b6c044e81c9e3053d7b87e66f35d796f3d7a9e3873d392d0e96818797a`  
+		Last Modified: Fri, 24 Sep 2021 19:43:11 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -18536,7 +18710,7 @@ RUN Write-Host 'Verifying install ...';     Write-Host 'java -version'; java -ve
 ## `eclipse-temurin:latest`
 
 ```console
-$ docker pull eclipse-temurin@sha256:f006fc70091bcece220b94d627d35375c262f4a767cb275fac71d1161c912f66
+$ docker pull eclipse-temurin@sha256:7327c0564e28c01dc7813936670ad02f406943737ef81c8828381e015e3e013e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -18551,14 +18725,14 @@ $ docker pull eclipse-temurin@sha256:f006fc70091bcece220b94d627d35375c262f4a767c
 ### `eclipse-temurin:latest` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:cde35fb38134179745eadf45b61fb38758f02944f819587c6a294d369954dd4e
+$ docker pull eclipse-temurin@sha256:c3413278a8e5cdc1f23b6094a88a6d1b07b0f01e4de1181ba9225ed849ee2a79
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **241.3 MB (241318623 bytes)**  
+-	Total Size: **241.3 MB (241318651 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:115a8a4494742053d5f855f8f7d01de5ea2a00236e5e42f3b9923729f1bd5cb0`
+-	Image ID: `sha256:d371bef3c72373bb785c2cc3b8d0a032358e9f6ed903850ece79189d39a28636`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -18572,13 +18746,13 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales binutils     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
 # Wed, 22 Sep 2021 19:57:20 GMT
 ENV JAVA_VERSION=jdk-17+35
-# Thu, 23 Sep 2021 18:21:14 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='7a48159fca62b7f6afd58fb2e9712a3ef1494950212d4631e25598b45d9599b1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_s390x_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Thu, 23 Sep 2021 18:21:15 GMT
+# Fri, 24 Sep 2021 19:20:55 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        armhf|arm)          ESUM='77ef6aa6f665373e212097b937c22d0cad2add90e439ec0e90534a7ff0e8a6e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_arm_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='7a48159fca62b7f6afd58fb2e9712a3ef1494950212d4631e25598b45d9599b1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_s390x_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:20:55 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 23 Sep 2021 18:21:16 GMT
+# Fri, 24 Sep 2021 19:20:56 GMT
 RUN echo Verifying install ...     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Thu, 23 Sep 2021 18:21:16 GMT
+# Fri, 24 Sep 2021 19:20:57 GMT
 CMD ["jshell"]
 ```
 
@@ -18591,26 +18765,26 @@ CMD ["jshell"]
 		Last Modified: Tue, 31 Aug 2021 03:34:11 GMT  
 		Size: 19.8 MB (19775466 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2c6df8928ff50241437616f8c56d64eb7581fd65e4a174132177f8d80211f19`  
-		Last Modified: Thu, 23 Sep 2021 18:22:49 GMT  
-		Size: 193.0 MB (192972923 bytes)  
+	-	`sha256:edd792abf4d974cd0f20e4a9ef903718fd60c93ef3de4c593beb0bdf8a6937c8`  
+		Last Modified: Fri, 24 Sep 2021 19:23:42 GMT  
+		Size: 193.0 MB (192972951 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78fc0c941646c4623cde8b48cd5d49881ffc7e959c5ab94e0d4d4c9bed2a2cca`  
-		Last Modified: Thu, 23 Sep 2021 18:22:34 GMT  
+	-	`sha256:2873dd09179dc2ad22400f5d558a35c68a976609ea5712a89b55b0da92e45466`  
+		Last Modified: Fri, 24 Sep 2021 19:23:27 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull eclipse-temurin@sha256:266849ac86414b046acf898902aaac26467df0788d34ab7009bb691ebd0bdc36
+$ docker pull eclipse-temurin@sha256:368f6600ca622b5f54eef5f9172cf7f6c2bfccd6cb1ec235fe6d54be654d8531
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **237.6 MB (237555750 bytes)**  
+-	Total Size: **237.6 MB (237555758 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ddf9d74f2fc221e60084da2e754940d0cd10b895edb12069565bc81802919ac1`
+-	Image ID: `sha256:9b4e06275ac52521d5c47fb88738ca082bc8969fc82086008794712f51bbc914`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -18624,13 +18798,13 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales binutils     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
 # Thu, 23 Sep 2021 21:50:15 GMT
 ENV JAVA_VERSION=jdk-17+35
-# Thu, 23 Sep 2021 21:50:23 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='7a48159fca62b7f6afd58fb2e9712a3ef1494950212d4631e25598b45d9599b1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_s390x_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Thu, 23 Sep 2021 21:50:24 GMT
+# Fri, 24 Sep 2021 19:41:03 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        armhf|arm)          ESUM='77ef6aa6f665373e212097b937c22d0cad2add90e439ec0e90534a7ff0e8a6e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_arm_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='7a48159fca62b7f6afd58fb2e9712a3ef1494950212d4631e25598b45d9599b1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_s390x_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:41:04 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 23 Sep 2021 21:50:25 GMT
+# Fri, 24 Sep 2021 19:41:04 GMT
 RUN echo Verifying install ...     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Thu, 23 Sep 2021 21:50:25 GMT
+# Fri, 24 Sep 2021 19:41:05 GMT
 CMD ["jshell"]
 ```
 
@@ -18643,13 +18817,13 @@ CMD ["jshell"]
 		Last Modified: Tue, 31 Aug 2021 02:29:31 GMT  
 		Size: 20.5 MB (20499296 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:efaaa7ed89622105c10ca68a59a24336bbad09d7ec03fdda55f1e970461d7921`  
-		Last Modified: Thu, 23 Sep 2021 21:53:05 GMT  
-		Size: 189.9 MB (189883195 bytes)  
+	-	`sha256:735bbbec53ce142d52faa97e79ac747256d8d8d4e46a43f97f781906b9eb1c02`  
+		Last Modified: Fri, 24 Sep 2021 19:44:39 GMT  
+		Size: 189.9 MB (189883202 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e7e3a5492d533958207d2b4aceaa8a76704c8d5322d8586be0972f87fe2e695`  
-		Last Modified: Thu, 23 Sep 2021 21:52:48 GMT  
-		Size: 160.0 B  
+	-	`sha256:221eb16619e5ee765f153fecce5cad441bc4759fdc20d8e5ccea033bc161bec8`  
+		Last Modified: Fri, 24 Sep 2021 19:44:21 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:latest` - linux; ppc64le
@@ -18707,14 +18881,14 @@ CMD ["jshell"]
 ### `eclipse-temurin:latest` - linux; s390x
 
 ```console
-$ docker pull eclipse-temurin@sha256:cf48d958120af874c1ee5b13c6ca60fef2d6fde44db16e3050d612c0326c9f6a
+$ docker pull eclipse-temurin@sha256:4d081388bc80284e2e82ab1453de7a9a7bdd64719fc8051e9ca8d2274f5e5b06
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **226.7 MB (226700592 bytes)**  
+-	Total Size: **226.7 MB (226700604 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2b1ffd9429e13fe3817d41fc52f9ed75e5020b22ea817506f7dbfb9869c1cca8`
+-	Image ID: `sha256:80d3365ef4d6a6e780ef9659df5cbfecf065c290b32a2d18373d49bcc604119c`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -18728,13 +18902,13 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales binutils     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
 # Thu, 23 Sep 2021 20:04:56 GMT
 ENV JAVA_VERSION=jdk-17+35
-# Thu, 23 Sep 2021 20:05:06 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='7a48159fca62b7f6afd58fb2e9712a3ef1494950212d4631e25598b45d9599b1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_s390x_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Thu, 23 Sep 2021 20:05:10 GMT
+# Fri, 24 Sep 2021 19:42:03 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='e08e6d8c84da28a2c49ccd511f8835c329fbdd8e4faff662c58fa24cca74021d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_aarch64_linux_hotspot_17_35.tar.gz';          ;;        armhf|arm)          ESUM='77ef6aa6f665373e212097b937c22d0cad2add90e439ec0e90534a7ff0e8a6e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_arm_linux_hotspot_17_35.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='2e58f76fd332b73f323e47c73d0a81b76739debab067e7a32ed6abd73fd64c57';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_ppc64le_linux_hotspot_17_35.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='7a48159fca62b7f6afd58fb2e9712a3ef1494950212d4631e25598b45d9599b1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_s390x_linux_hotspot_17_35.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Fri, 24 Sep 2021 19:42:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 23 Sep 2021 20:05:11 GMT
+# Fri, 24 Sep 2021 19:42:07 GMT
 RUN echo Verifying install ...     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Thu, 23 Sep 2021 20:05:11 GMT
+# Fri, 24 Sep 2021 19:42:07 GMT
 CMD ["jshell"]
 ```
 
@@ -18747,13 +18921,13 @@ CMD ["jshell"]
 		Last Modified: Tue, 31 Aug 2021 02:32:22 GMT  
 		Size: 19.2 MB (19237224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:891b7c52a86489dcd6e164c3049777acebf1aea8bd34a9064511a9b91e140288`  
-		Last Modified: Thu, 23 Sep 2021 20:06:21 GMT  
-		Size: 180.3 MB (180335738 bytes)  
+	-	`sha256:b1c8b5050642aae0f18488022076eff64886c10e06ce87594f3ec31ab69eae73`  
+		Last Modified: Fri, 24 Sep 2021 19:43:15 GMT  
+		Size: 180.3 MB (180335749 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc5371135aad4960942bcc726f19ac20d9207eeb6052335b10f027f1ba7eb48b`  
-		Last Modified: Thu, 23 Sep 2021 20:06:07 GMT  
-		Size: 160.0 B  
+	-	`sha256:d1c28a24fbc94f2c128004745ef81cd0e619c693a6b5444013a22587be980ed6`  
+		Last Modified: Fri, 24 Sep 2021 19:43:03 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:latest` - windows version 10.0.17763.2183; amd64
