@@ -1,7 +1,7 @@
 ## `xwiki:stable-postgres`
 
 ```console
-$ docker pull xwiki@sha256:fa2038e36ee847d8188f5a95d575881c565cb7b65575e59411becf0b3a1e91fa
+$ docker pull xwiki@sha256:be1608404a93277fb8a9229cbda245ad4c9b80a18c51599e30da19eceeffc0f5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -161,14 +161,14 @@ CMD ["xwiki"]
 ### `xwiki:stable-postgres` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:c7f47dcc874040f14f624db4f9d8aa33a1785cb95c8ca39986290f7a95f66ac8
+$ docker pull xwiki@sha256:67be1f3ae6865a2af00d0679c88cefea44bda48bceb1da613761f7519c128890
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **697.7 MB (697672444 bytes)**  
+-	Total Size: **697.6 MB (697644080 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:49ebf62be6861a82285d451b0c292accf206f15c6b1695173c753d4bc37db2f6`
+-	Image ID: `sha256:1a8120c0dee38a6aad972b950ba42f1aae81f827b4ef6f7ff87ae77e059dd287`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -223,29 +223,29 @@ CMD ["catalina.sh" "run"]
 MAINTAINER Vincent Massol <vincent@massol.net>
 # Thu, 16 Sep 2021 21:11:59 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps     libpostgresql-jdbc-java &&   rm -rf /var/lib/apt/lists/*
-# Thu, 16 Sep 2021 21:12:00 GMT
-ENV XWIKI_VERSION=13.7
-# Thu, 16 Sep 2021 21:12:00 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/13.7
-# Thu, 16 Sep 2021 21:12:01 GMT
-ENV XWIKI_DOWNLOAD_SHA256=33ebdd127ba25e71d374a1e0e2a64a88dd3a32ad42e6ac878659d926dcccf2e3
-# Thu, 16 Sep 2021 21:12:37 GMT
+# Wed, 29 Sep 2021 18:40:32 GMT
+ENV XWIKI_VERSION=13.8
+# Wed, 29 Sep 2021 18:40:32 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/13.8
+# Wed, 29 Sep 2021 18:40:32 GMT
+ENV XWIKI_DOWNLOAD_SHA256=893acafbe88ad863fffa8f29a33984366bba532e18cf421946320775e95ff12f
+# Wed, 29 Sep 2021 18:41:07 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Thu, 16 Sep 2021 21:12:38 GMT
+# Wed, 29 Sep 2021 18:41:09 GMT
 RUN cp /usr/share/java/postgresql-jdbc4.jar /usr/local/tomcat/webapps/ROOT/WEB-INF/lib/
-# Thu, 16 Sep 2021 21:12:38 GMT
+# Wed, 29 Sep 2021 18:41:09 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Thu, 16 Sep 2021 21:12:38 GMT
+# Wed, 29 Sep 2021 18:41:09 GMT
 COPY file:0ea4aba0ba32585cf3bff474898c52efb2cc5e16d470bc0badff3e2d86f04c8d in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Thu, 16 Sep 2021 21:12:39 GMT
+# Wed, 29 Sep 2021 18:41:10 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Thu, 16 Sep 2021 21:12:39 GMT
+# Wed, 29 Sep 2021 18:41:10 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Thu, 16 Sep 2021 21:12:40 GMT
+# Wed, 29 Sep 2021 18:41:10 GMT
 VOLUME [/usr/local/xwiki]
-# Thu, 16 Sep 2021 21:12:40 GMT
+# Wed, 29 Sep 2021 18:41:10 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 16 Sep 2021 21:12:40 GMT
+# Wed, 29 Sep 2021 18:41:11 GMT
 CMD ["xwiki"]
 ```
 
@@ -282,27 +282,27 @@ CMD ["xwiki"]
 		Last Modified: Thu, 16 Sep 2021 21:13:59 GMT  
 		Size: 164.4 MB (164385816 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:becbbd5b6658e8d8c8cf1c39d9e3f84f9ee56ff239b3d1fa8dfec983564d621e`  
-		Last Modified: Thu, 16 Sep 2021 21:13:56 GMT  
-		Size: 286.8 MB (286773792 bytes)  
+	-	`sha256:e1bd4df9badc96bc248fc8372ec2eb9116e26415fab4779ac52ebee84350ce98`  
+		Last Modified: Wed, 29 Sep 2021 18:43:55 GMT  
+		Size: 286.7 MB (286745440 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:763094ffc073e5d87969c4acbd6bfa0bde96995763664ed4fd0b4f7203dc3492`  
-		Last Modified: Thu, 16 Sep 2021 21:13:33 GMT  
-		Size: 795.4 KB (795417 bytes)  
+	-	`sha256:13a9b8d1f718e8db0013d0cef04b505f038f88a3f57cf9bb37a2f1dbe8796d9c`  
+		Last Modified: Wed, 29 Sep 2021 18:43:33 GMT  
+		Size: 795.4 KB (795418 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:890e5e1d034063a8b04a2b5b1e0bffc774f577145c8c4abf5c39c7caa103ed43`  
-		Last Modified: Thu, 16 Sep 2021 21:13:33 GMT  
-		Size: 1.3 KB (1344 bytes)  
+	-	`sha256:876422732e5138b3e34d9de476a673b3a9c4d4a6002ec6136d82d4b6e3437f0d`  
+		Last Modified: Wed, 29 Sep 2021 18:43:33 GMT  
+		Size: 1.3 KB (1343 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7206217aa5f65556012da8f9391560670bedf0827199e2ff9a8e77a5f7aa45dc`  
-		Last Modified: Thu, 16 Sep 2021 21:13:33 GMT  
+	-	`sha256:869e1a7120130a688bcf409cad53e416c3824675133b5b615530f56500b2d204`  
+		Last Modified: Wed, 29 Sep 2021 18:43:33 GMT  
 		Size: 2.5 KB (2465 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2e583a935210873bffe41708332b98160f0a7960c83f1de857ad94469d1eb22`  
-		Last Modified: Thu, 16 Sep 2021 21:13:33 GMT  
-		Size: 5.3 KB (5333 bytes)  
+	-	`sha256:18c98849a5605a0e07ac0f1245620daaa95649285c30c40b590b1f1e6b325adb`  
+		Last Modified: Wed, 29 Sep 2021 18:43:33 GMT  
+		Size: 5.3 KB (5321 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b4c380a37b216e872417309cfbe2b2d397438deebe1d22532edbe8ebe382f59`  
-		Last Modified: Thu, 16 Sep 2021 21:13:33 GMT  
+	-	`sha256:35d8292fdc721764ed995d0c637e11060c1721d1fc1a9e56f4b0eb1a36b9837e`  
+		Last Modified: Wed, 29 Sep 2021 18:43:33 GMT  
 		Size: 2.5 KB (2505 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
