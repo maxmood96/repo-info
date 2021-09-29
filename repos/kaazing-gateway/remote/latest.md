@@ -1,7 +1,7 @@
 ## `kaazing-gateway:latest`
 
 ```console
-$ docker pull kaazing-gateway@sha256:29b6450f77d0b70467a065eacab0aef0c9d4a7e6177009846927b7ff10473961
+$ docker pull kaazing-gateway@sha256:c2e4788a89516abd64194b048ced8fa0951f9a0621db7176c9723827641dfb5a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -108,95 +108,95 @@ CMD ["gateway.start"]
 ### `kaazing-gateway:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull kaazing-gateway@sha256:d8c6c63efb0e5f5ac52228a10c36707a13ace96d286afb4404085f04f3f1b755
+$ docker pull kaazing-gateway@sha256:2895c81073016895cf3aa40c990948b35a24e199cc99554ab774047c5c8bf0e7
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **133.0 MB (133020969 bytes)**  
+-	Total Size: **133.0 MB (133021938 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d65efbddf229a2df2f633cb8ab88832c7d3877b7a9e198db21eac03f839b879b`
+-	Image ID: `sha256:349b021cddb3a9693a8872c84d9e6e1ef9ac1c10f391ac75182081def56bef5f`
 -	Default Command: `["gateway.start"]`
 
 ```dockerfile
-# Fri, 03 Sep 2021 00:40:18 GMT
-ADD file:0b1ff9dcb90d6b787179d2e43ca534c39e0372227a3af198bab158a89fb2c966 in / 
-# Fri, 03 Sep 2021 00:40:19 GMT
+# Tue, 28 Sep 2021 01:40:26 GMT
+ADD file:08680140d1528c796f24dc7d0f5a83fa0ceb307a1d5da1e6ccef21471d975cd9 in / 
+# Tue, 28 Sep 2021 01:40:26 GMT
 CMD ["bash"]
-# Fri, 03 Sep 2021 04:32:14 GMT
+# Tue, 28 Sep 2021 02:15:58 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 03 Sep 2021 04:32:19 GMT
+# Tue, 28 Sep 2021 02:16:04 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Fri, 03 Sep 2021 10:51:40 GMT
+# Tue, 28 Sep 2021 05:50:09 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				fontconfig libfreetype6 				ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 03 Sep 2021 10:54:35 GMT
+# Tue, 28 Sep 2021 05:53:53 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Fri, 03 Sep 2021 10:54:36 GMT
+# Tue, 28 Sep 2021 05:53:54 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
-# Fri, 03 Sep 2021 10:54:36 GMT
+# Tue, 28 Sep 2021 05:53:54 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 03 Sep 2021 10:54:36 GMT
+# Tue, 28 Sep 2021 05:53:54 GMT
 ENV LANG=C.UTF-8
-# Fri, 03 Sep 2021 10:54:36 GMT
+# Tue, 28 Sep 2021 05:53:55 GMT
 ENV JAVA_VERSION=8u302
-# Fri, 03 Sep 2021 10:54:41 GMT
+# Tue, 28 Sep 2021 05:54:08 GMT
 RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jre_x64_linux_8u302b08.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jre_aarch64_linux_8u302b08.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -version
-# Sat, 04 Sep 2021 02:35:43 GMT
+# Wed, 29 Sep 2021 02:07:10 GMT
 MAINTAINER Kaazing Docker Maintainers, contact via github issues: https://github.com/kaazing/gateway.docker/issues
-# Sat, 04 Sep 2021 02:35:44 GMT
+# Wed, 29 Sep 2021 02:07:13 GMT
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys F8F4B66E022A4668E532DAC03AA0B82C385B4D59
-# Sat, 04 Sep 2021 02:35:45 GMT
+# Wed, 29 Sep 2021 02:07:14 GMT
 ENV KAAZING_GATEWAY_VERSION=5.6.0
-# Sat, 04 Sep 2021 02:35:45 GMT
+# Wed, 29 Sep 2021 02:07:14 GMT
 ENV KAAZING_GATEWAY_URL=https://oss.sonatype.org/content/repositories/releases/org/kaazing/gateway.distribution/5.6.0/gateway.distribution-5.6.0.tar.gz
-# Sat, 04 Sep 2021 02:35:45 GMT
+# Wed, 29 Sep 2021 02:07:14 GMT
 WORKDIR /kaazing-gateway
-# Sat, 04 Sep 2021 02:35:48 GMT
+# Wed, 29 Sep 2021 02:07:17 GMT
 RUN curl -fSL -o gateway.tar.gz $KAAZING_GATEWAY_URL 	&& curl -fSL -o gateway.tar.gz.asc ${KAAZING_GATEWAY_URL}.asc 	&& gpg --verify gateway.tar.gz.asc 	&& tar -xvf gateway.tar.gz --strip-components=1 	&& rm gateway.tar.gz*
-# Sat, 04 Sep 2021 02:35:48 GMT
+# Wed, 29 Sep 2021 02:07:17 GMT
 ENV GATEWAY_OPTS=-Xmx512m -Djava.security.egd=file:/dev/urandom
-# Sat, 04 Sep 2021 02:35:48 GMT
+# Wed, 29 Sep 2021 02:07:17 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/kaazing-gateway/bin
-# Sat, 04 Sep 2021 02:35:49 GMT
+# Wed, 29 Sep 2021 02:07:17 GMT
 EXPOSE 8000
-# Sat, 04 Sep 2021 02:35:49 GMT
+# Wed, 29 Sep 2021 02:07:17 GMT
 CMD ["gateway.start"]
 ```
 
 -	Layers:
-	-	`sha256:ffacddc51d82196acb1d49f2e3c13601fc16c61c995a860b450d23b000353ca1`  
-		Last Modified: Fri, 03 Sep 2021 00:48:17 GMT  
-		Size: 53.6 MB (53613054 bytes)  
+	-	`sha256:fa98001816c83c32d601f854ff21729167d2205310fcab15f8f9c26bdf6788d7`  
+		Last Modified: Tue, 28 Sep 2021 01:47:53 GMT  
+		Size: 53.6 MB (53613599 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f80252dfabbfc5bdf4862b9fa8d2de7110ac4a6f08bf30e6f574f6243d0c93d`  
-		Last Modified: Fri, 03 Sep 2021 04:40:56 GMT  
-		Size: 5.1 MB (5142543 bytes)  
+	-	`sha256:3b4e49121c0cc80005dda9ec19bc412bdadef800cf7dc4a832b8ff229a65f82a`  
+		Last Modified: Tue, 28 Sep 2021 02:24:39 GMT  
+		Size: 5.1 MB (5142706 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:138e2c18ad04e197e8431cfc2923456979d5b0cfb9c6549a62bcd3732d77bd03`  
-		Last Modified: Fri, 03 Sep 2021 04:40:56 GMT  
-		Size: 10.9 MB (10872696 bytes)  
+	-	`sha256:47ba7d1384865fdb5a3dfafbb1264e84d27ec4e80462b8bf358f141a8cf14b64`  
+		Last Modified: Tue, 28 Sep 2021 02:24:40 GMT  
+		Size: 10.9 MB (10872788 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43a57001d0fde6c8ddb9c29c60734a0bb80875425833e4890dfa80dc87809735`  
-		Last Modified: Fri, 03 Sep 2021 11:16:53 GMT  
-		Size: 5.6 MB (5647293 bytes)  
+	-	`sha256:20af62e5d8803a088959b3f90bd20b64c0a433339c1255c7002e44f006424395`  
+		Last Modified: Tue, 28 Sep 2021 06:16:28 GMT  
+		Size: 5.6 MB (5647377 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:73cfcb08baf48151efa83fb9a6ded570e26d3a60a860e2304277c038e0814961`  
-		Last Modified: Fri, 03 Sep 2021 11:21:08 GMT  
-		Size: 209.0 B  
+	-	`sha256:453f58cd641e9868bf310caa7d5601fb619e4c6a85ebe66e1896484f06b5c202`  
+		Last Modified: Tue, 28 Sep 2021 06:20:35 GMT  
+		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a98bea2d04ac6ea7d95be7db7d574d1730f7fa14276d79816f454111564c0f4e`  
-		Last Modified: Fri, 03 Sep 2021 11:21:13 GMT  
-		Size: 40.6 MB (40615370 bytes)  
+	-	`sha256:8c6d141afadabeb03e20759516888ad2f4af068577bdab8518864eb4902aa98c`  
+		Last Modified: Tue, 28 Sep 2021 06:20:41 GMT  
+		Size: 40.6 MB (40615446 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e9429318cec69dcbe03c1cc65b6c254157f738b7d2eb6ade738ec72ba097467`  
-		Last Modified: Sat, 04 Sep 2021 02:36:08 GMT  
-		Size: 2.7 KB (2666 bytes)  
+	-	`sha256:15f4ee9f3a50efa67bf9797e07c3037547ca72540b5c56504e5d9042a90a166f`  
+		Last Modified: Wed, 29 Sep 2021 02:07:36 GMT  
+		Size: 2.7 KB (2675 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:16ef3a9dbc38c4c8ff5020bb4c4548dd667a73e3f03c402114747ba4b56973d5`  
-		Last Modified: Sat, 04 Sep 2021 02:36:08 GMT  
+	-	`sha256:3a6070a127b6d73a822a6ad413c1ae309b4814f8ee3869e27acdf68fa32b23a0`  
+		Last Modified: Wed, 29 Sep 2021 02:07:36 GMT  
 		Size: 138.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:543b6b4e4751af3d23df6231157a7749881ce7cac2105619c561ab471eb8737d`  
-		Last Modified: Sat, 04 Sep 2021 02:36:10 GMT  
-		Size: 17.1 MB (17127000 bytes)  
+	-	`sha256:cc0145007d1ce333885bff8fe2575ea0b5d2417dc41b15f68b44735c97a50fe5`  
+		Last Modified: Wed, 29 Sep 2021 02:07:38 GMT  
+		Size: 17.1 MB (17126998 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
