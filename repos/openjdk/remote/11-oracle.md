@@ -1,7 +1,7 @@
 ## `openjdk:11-oracle`
 
 ```console
-$ docker pull openjdk@sha256:96a1cb23ad88efb4665f242287e058f8f8aee4bdf8759d74a317b591e78c2361
+$ docker pull openjdk@sha256:26d46ec18dc57bf4239ef94d65f1afbc42aa0ab05e270d374a524ab0dd6d89d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,49 +12,49 @@ $ docker pull openjdk@sha256:96a1cb23ad88efb4665f242287e058f8f8aee4bdf8759d74a31
 ### `openjdk:11-oracle` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:5d933ac2f8a3a5508629838643ad244727c4694a6f3c15a25cb1f0bfda621236
+$ docker pull openjdk@sha256:6275e7595820ebe29b326cb0896e51c10b42e0663974fe171ea267e4148b23f2
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **258.5 MB (258545830 bytes)**  
+-	Total Size: **258.5 MB (258468212 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cb2382db0e8df19def874e456f81559829473fa0d35a8fc347c5bfce8c37933a`
+-	Image ID: `sha256:8c56d1dcbf19bb8e779cd6e317f98bba73e8d1065924a6f014e271d9649fa7ed`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Thu, 12 Aug 2021 19:20:55 GMT
-ADD file:ab982d6f37710c434f7ef9650c722d3c6333906cbb9344bf91e79068088bcc69 in / 
-# Thu, 12 Aug 2021 19:20:56 GMT
+# Wed, 29 Sep 2021 16:28:05 GMT
+ADD file:99c665dc5bddb30b592aa86f66d1256f41b468201a93afe0c6164edb42c388c4 in / 
+# Wed, 29 Sep 2021 16:28:06 GMT
 CMD ["/bin/bash"]
-# Thu, 12 Aug 2021 19:37:56 GMT
+# Wed, 29 Sep 2021 16:53:34 GMT
 RUN set -eux; 	microdnf install 		gzip 		tar 				binutils 		freetype fontconfig 	; 	microdnf clean all
-# Thu, 12 Aug 2021 19:39:24 GMT
+# Wed, 29 Sep 2021 16:56:28 GMT
 ENV JAVA_HOME=/usr/java/openjdk-11
-# Thu, 12 Aug 2021 19:39:24 GMT
+# Wed, 29 Sep 2021 16:56:28 GMT
 ENV PATH=/usr/java/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 12 Aug 2021 19:39:24 GMT
+# Wed, 29 Sep 2021 16:56:28 GMT
 ENV LANG=C.UTF-8
-# Thu, 12 Aug 2021 19:39:24 GMT
+# Wed, 29 Sep 2021 16:56:28 GMT
 ENV JAVA_VERSION=11.0.12
-# Thu, 12 Aug 2021 19:39:40 GMT
+# Wed, 29 Sep 2021 16:56:46 GMT
 RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.12%2B7/OpenJDK11U-jdk_x64_linux_11.0.12_7.tar.gz'; 			;; 		'aarch64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.12%2B7/OpenJDK11U-jdk_aarch64_linux_11.0.12_7.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	curl -fL -o openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Thu, 12 Aug 2021 19:39:40 GMT
+# Wed, 29 Sep 2021 16:56:46 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:c67289558ae5eb060942db5bf46d182448587a87e21c680a0486b147d4b9a0b4`  
-		Last Modified: Thu, 12 Aug 2021 19:22:09 GMT  
-		Size: 42.2 MB (42158041 bytes)  
+	-	`sha256:6540cb32758bf3f150d56508f216b26487b14ac6fd20b1c92f1e1c8357730ea9`  
+		Last Modified: Wed, 29 Sep 2021 16:29:48 GMT  
+		Size: 42.0 MB (41963002 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:12787f1f3888c64bfc9e779a9705ecc45ae1a60b3757074b6f16cf1d8553cac8`  
-		Last Modified: Thu, 12 Aug 2021 19:43:29 GMT  
-		Size: 13.4 MB (13373335 bytes)  
+	-	`sha256:3acb1bb05d773c14486a356ac78716bf3e9e5b34aefb39b421cc776aea66e606`  
+		Last Modified: Wed, 29 Sep 2021 17:02:29 GMT  
+		Size: 13.5 MB (13490694 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:189aaaf75a9a2782d78ce4c220d458752036e9db830cea547563255b0ba33777`  
-		Last Modified: Thu, 12 Aug 2021 19:46:27 GMT  
-		Size: 203.0 MB (203014454 bytes)  
+	-	`sha256:8b1f168cdfb0b7589362bf3dac83d16cc97a187500fa5437490fab1f41190bab`  
+		Last Modified: Wed, 29 Sep 2021 17:07:24 GMT  
+		Size: 203.0 MB (203014516 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:11-oracle` - linux; arm64 variant v8
