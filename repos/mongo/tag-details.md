@@ -3614,7 +3614,7 @@ CMD ["mongod"]
 ## `mongo:4.2`
 
 ```console
-$ docker pull mongo@sha256:af9d8ba6207815d54fc164e664a40fccd5369c68f089bbf2dddabcf52337fe72
+$ docker pull mongo@sha256:714dd16c7f029ff0e600cdbca684f986b63dd77fcd1142613c80b9b196d37631
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3730,14 +3730,14 @@ CMD ["mongod"]
 ### `mongo:4.2` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:f9ebd8348456ca42a8f117592945170d996346f4fe0e4a6be0033fb8221475cb
+$ docker pull mongo@sha256:e13c368536b859f87d6b00b949a9f18c25368478376bee98624d2374044d9560
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **155.6 MB (155563549 bytes)**  
+-	Total Size: **155.6 MB (155608291 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9c9e0498fb136a58e043248d06513bcf8dd1ed49a1172126bb605a5566a1ff19`
+-	Image ID: `sha256:70a9dab211c595a23b91f2f91cdd52251c9304494c38982362eb931876e8d977`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
@@ -3770,21 +3770,21 @@ ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 ENV MONGO_MAJOR=4.2
 # Tue, 31 Aug 2021 03:18:06 GMT
 RUN echo "deb http://$MONGO_REPO/apt/ubuntu bionic/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 14 Sep 2021 01:54:01 GMT
-ENV MONGO_VERSION=4.2.16
-# Tue, 14 Sep 2021 01:54:16 GMT
+# Thu, 30 Sep 2021 21:44:37 GMT
+ENV MONGO_VERSION=4.2.17
+# Thu, 30 Sep 2021 21:44:53 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 14 Sep 2021 01:54:17 GMT
+# Thu, 30 Sep 2021 21:44:54 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 14 Sep 2021 01:54:17 GMT
+# Thu, 30 Sep 2021 21:44:54 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 14 Sep 2021 01:54:17 GMT
+# Thu, 30 Sep 2021 21:44:54 GMT
 COPY file:df3353d9b2c25ef83b499ecae7fd5d611adb4a9462a577435178acaad3c8c695 in /usr/local/bin/ 
-# Tue, 14 Sep 2021 01:54:18 GMT
+# Thu, 30 Sep 2021 21:44:55 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 14 Sep 2021 01:54:18 GMT
+# Thu, 30 Sep 2021 21:44:55 GMT
 EXPOSE 27017
-# Tue, 14 Sep 2021 01:54:18 GMT
+# Thu, 30 Sep 2021 21:44:55 GMT
 CMD ["mongod"]
 ```
 
@@ -3817,17 +3817,17 @@ CMD ["mongod"]
 		Last Modified: Tue, 31 Aug 2021 03:21:45 GMT  
 		Size: 234.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f4cf9cd53b20920dbb6b1a0d4ed37239f3232d7cfb02abc1720c6bb6078f2e81`  
-		Last Modified: Tue, 14 Sep 2021 01:56:02 GMT  
-		Size: 123.8 MB (123807382 bytes)  
+	-	`sha256:89b38211c58a393e7628f5893af271b3010d7aa6c51f86ae82798d37e790246d`  
+		Last Modified: Thu, 30 Sep 2021 21:46:11 GMT  
+		Size: 123.9 MB (123852123 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f98666cb98006622569948ce0a5c4da6507dad3f5744c9785506110d8aa4460`  
-		Last Modified: Tue, 14 Sep 2021 01:55:46 GMT  
-		Size: 170.0 B  
+	-	`sha256:6a65e768cca02cf9d057c7f201aa53614ccafa3c52007ac57b76de93606cec14`  
+		Last Modified: Thu, 30 Sep 2021 21:45:55 GMT  
+		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68266f65a41a7e3e84fc7fb892c77bd1869f002551375e9ded6ec55f32619013`  
-		Last Modified: Tue, 14 Sep 2021 01:55:46 GMT  
-		Size: 4.7 KB (4697 bytes)  
+	-	`sha256:c2a86237655949923d56729aa21bc25e964ecedb50da94e3e2b89fec451faf5f`  
+		Last Modified: Thu, 30 Sep 2021 21:45:54 GMT  
+		Size: 4.7 KB (4699 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:4.2` - windows version 10.0.17763.2183; amd64
@@ -3987,7 +3987,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:4.2-bionic`
 
 ```console
-$ docker pull mongo@sha256:7f5a38d806fd6617107b041e89f99659c45a916d01117c3b0339cf6ea47faef5
+$ docker pull mongo@sha256:ef4fa6592ccf9ab427db29af14154c3a363baea693aeca666a73be63997f89a0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4101,14 +4101,14 @@ CMD ["mongod"]
 ### `mongo:4.2-bionic` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:f9ebd8348456ca42a8f117592945170d996346f4fe0e4a6be0033fb8221475cb
+$ docker pull mongo@sha256:e13c368536b859f87d6b00b949a9f18c25368478376bee98624d2374044d9560
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **155.6 MB (155563549 bytes)**  
+-	Total Size: **155.6 MB (155608291 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9c9e0498fb136a58e043248d06513bcf8dd1ed49a1172126bb605a5566a1ff19`
+-	Image ID: `sha256:70a9dab211c595a23b91f2f91cdd52251c9304494c38982362eb931876e8d977`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
@@ -4141,21 +4141,21 @@ ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
 ENV MONGO_MAJOR=4.2
 # Tue, 31 Aug 2021 03:18:06 GMT
 RUN echo "deb http://$MONGO_REPO/apt/ubuntu bionic/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 14 Sep 2021 01:54:01 GMT
-ENV MONGO_VERSION=4.2.16
-# Tue, 14 Sep 2021 01:54:16 GMT
+# Thu, 30 Sep 2021 21:44:37 GMT
+ENV MONGO_VERSION=4.2.17
+# Thu, 30 Sep 2021 21:44:53 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 14 Sep 2021 01:54:17 GMT
+# Thu, 30 Sep 2021 21:44:54 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 14 Sep 2021 01:54:17 GMT
+# Thu, 30 Sep 2021 21:44:54 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 14 Sep 2021 01:54:17 GMT
+# Thu, 30 Sep 2021 21:44:54 GMT
 COPY file:df3353d9b2c25ef83b499ecae7fd5d611adb4a9462a577435178acaad3c8c695 in /usr/local/bin/ 
-# Tue, 14 Sep 2021 01:54:18 GMT
+# Thu, 30 Sep 2021 21:44:55 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 14 Sep 2021 01:54:18 GMT
+# Thu, 30 Sep 2021 21:44:55 GMT
 EXPOSE 27017
-# Tue, 14 Sep 2021 01:54:18 GMT
+# Thu, 30 Sep 2021 21:44:55 GMT
 CMD ["mongod"]
 ```
 
@@ -4188,17 +4188,17 @@ CMD ["mongod"]
 		Last Modified: Tue, 31 Aug 2021 03:21:45 GMT  
 		Size: 234.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f4cf9cd53b20920dbb6b1a0d4ed37239f3232d7cfb02abc1720c6bb6078f2e81`  
-		Last Modified: Tue, 14 Sep 2021 01:56:02 GMT  
-		Size: 123.8 MB (123807382 bytes)  
+	-	`sha256:89b38211c58a393e7628f5893af271b3010d7aa6c51f86ae82798d37e790246d`  
+		Last Modified: Thu, 30 Sep 2021 21:46:11 GMT  
+		Size: 123.9 MB (123852123 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f98666cb98006622569948ce0a5c4da6507dad3f5744c9785506110d8aa4460`  
-		Last Modified: Tue, 14 Sep 2021 01:55:46 GMT  
-		Size: 170.0 B  
+	-	`sha256:6a65e768cca02cf9d057c7f201aa53614ccafa3c52007ac57b76de93606cec14`  
+		Last Modified: Thu, 30 Sep 2021 21:45:55 GMT  
+		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68266f65a41a7e3e84fc7fb892c77bd1869f002551375e9ded6ec55f32619013`  
-		Last Modified: Tue, 14 Sep 2021 01:55:46 GMT  
-		Size: 4.7 KB (4697 bytes)  
+	-	`sha256:c2a86237655949923d56729aa21bc25e964ecedb50da94e3e2b89fec451faf5f`  
+		Last Modified: Thu, 30 Sep 2021 21:45:54 GMT  
+		Size: 4.7 KB (4699 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:4.2-nanoserver`
@@ -4742,31 +4742,274 @@ CMD ["mongod" "--bind_ip_all"]
 
 ## `mongo:4.2.17`
 
-**does not exist** (yet?)
+```console
+$ docker pull mongo@sha256:609a07dcbe81ac823886093545df24e66c7f7747b19f0e564848e5ab1753156b
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 1
+	-	linux; arm64 variant v8
+
+### `mongo:4.2.17` - linux; arm64 variant v8
+
+```console
+$ docker pull mongo@sha256:e13c368536b859f87d6b00b949a9f18c25368478376bee98624d2374044d9560
+```
+
+-	Docker Version: 20.10.7
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **155.6 MB (155608291 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:70a9dab211c595a23b91f2f91cdd52251c9304494c38982362eb931876e8d977`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["mongod"]`
+
+```dockerfile
+# Tue, 31 Aug 2021 01:40:36 GMT
+ADD file:27e3c8f7785fef80f6172954da7c3c73734c02b933dc19847e888542897d568f in / 
+# Tue, 31 Aug 2021 01:40:36 GMT
+CMD ["bash"]
+# Tue, 31 Aug 2021 03:17:35 GMT
+RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
+# Tue, 31 Aug 2021 03:17:43 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
+# Tue, 31 Aug 2021 03:17:43 GMT
+ENV GOSU_VERSION=1.12
+# Tue, 31 Aug 2021 03:17:44 GMT
+ENV JSYAML_VERSION=3.13.1
+# Tue, 31 Aug 2021 03:17:57 GMT
+RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
+# Tue, 31 Aug 2021 03:17:57 GMT
+RUN mkdir /docker-entrypoint-initdb.d
+# Tue, 31 Aug 2021 03:18:04 GMT
+RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- 'E162F504A20CDF15827F718D4B7C549A058F8B6B'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --export "$@" > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
+# Tue, 31 Aug 2021 03:18:04 GMT
+ARG MONGO_PACKAGE=mongodb-org
+# Tue, 31 Aug 2021 03:18:05 GMT
+ARG MONGO_REPO=repo.mongodb.org
+# Tue, 31 Aug 2021 03:18:05 GMT
+ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
+# Tue, 31 Aug 2021 03:18:05 GMT
+ENV MONGO_MAJOR=4.2
+# Tue, 31 Aug 2021 03:18:06 GMT
+RUN echo "deb http://$MONGO_REPO/apt/ubuntu bionic/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
+# Thu, 30 Sep 2021 21:44:37 GMT
+ENV MONGO_VERSION=4.2.17
+# Thu, 30 Sep 2021 21:44:53 GMT
+RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
+# Thu, 30 Sep 2021 21:44:54 GMT
+RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
+# Thu, 30 Sep 2021 21:44:54 GMT
+VOLUME [/data/db /data/configdb]
+# Thu, 30 Sep 2021 21:44:54 GMT
+COPY file:df3353d9b2c25ef83b499ecae7fd5d611adb4a9462a577435178acaad3c8c695 in /usr/local/bin/ 
+# Thu, 30 Sep 2021 21:44:55 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Thu, 30 Sep 2021 21:44:55 GMT
+EXPOSE 27017
+# Thu, 30 Sep 2021 21:44:55 GMT
+CMD ["mongod"]
+```
+
+-	Layers:
+	-	`sha256:4028d4a2ab035ee99388f4aa429a83fbaf8022de67206e9a5b69615c71069135`  
+		Last Modified: Tue, 31 Aug 2021 01:42:16 GMT  
+		Size: 23.7 MB (23730599 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c50584629502a7e958f30a1b7a78b174640d8ab4250e160a656bb90813ea2065`  
+		Last Modified: Tue, 31 Aug 2021 03:21:47 GMT  
+		Size: 1.9 KB (1885 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:de80265b7cf77954ff57613a60b888911ff3b1d482b362ffbb56973fc4cfeea8`  
+		Last Modified: Tue, 31 Aug 2021 03:21:48 GMT  
+		Size: 2.7 MB (2669706 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:325293ecfd3d62c4787b9211cb673edddaefa37d26dc6933ae52fe0932bc421c`  
+		Last Modified: Tue, 31 Aug 2021 03:21:48 GMT  
+		Size: 5.3 MB (5347293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5c77f99a86fe12cbd7e258659a9a214239e62a6e440e70b53577a5353adfa88a`  
+		Last Modified: Tue, 31 Aug 2021 03:21:47 GMT  
+		Size: 149.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2f81425690c941f1ab24ee0950d8fe01f06beafa2862e833d79ede5aee454245`  
+		Last Modified: Tue, 31 Aug 2021 03:21:45 GMT  
+		Size: 1.4 KB (1434 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e54a6b669ef71b90aa98948b1ffc52e54d227987388e30c608e0fe92c43dc5e7`  
+		Last Modified: Tue, 31 Aug 2021 03:21:45 GMT  
+		Size: 234.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:89b38211c58a393e7628f5893af271b3010d7aa6c51f86ae82798d37e790246d`  
+		Last Modified: Thu, 30 Sep 2021 21:46:11 GMT  
+		Size: 123.9 MB (123852123 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6a65e768cca02cf9d057c7f201aa53614ccafa3c52007ac57b76de93606cec14`  
+		Last Modified: Thu, 30 Sep 2021 21:45:55 GMT  
+		Size: 169.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c2a86237655949923d56729aa21bc25e964ecedb50da94e3e2b89fec451faf5f`  
+		Last Modified: Thu, 30 Sep 2021 21:45:54 GMT  
+		Size: 4.7 KB (4699 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:4.2.17-bionic`
 
-**does not exist** (yet?)
+```console
+$ docker pull mongo@sha256:609a07dcbe81ac823886093545df24e66c7f7747b19f0e564848e5ab1753156b
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 1
+	-	linux; arm64 variant v8
+
+### `mongo:4.2.17-bionic` - linux; arm64 variant v8
+
+```console
+$ docker pull mongo@sha256:e13c368536b859f87d6b00b949a9f18c25368478376bee98624d2374044d9560
+```
+
+-	Docker Version: 20.10.7
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **155.6 MB (155608291 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:70a9dab211c595a23b91f2f91cdd52251c9304494c38982362eb931876e8d977`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["mongod"]`
+
+```dockerfile
+# Tue, 31 Aug 2021 01:40:36 GMT
+ADD file:27e3c8f7785fef80f6172954da7c3c73734c02b933dc19847e888542897d568f in / 
+# Tue, 31 Aug 2021 01:40:36 GMT
+CMD ["bash"]
+# Tue, 31 Aug 2021 03:17:35 GMT
+RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
+# Tue, 31 Aug 2021 03:17:43 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
+# Tue, 31 Aug 2021 03:17:43 GMT
+ENV GOSU_VERSION=1.12
+# Tue, 31 Aug 2021 03:17:44 GMT
+ENV JSYAML_VERSION=3.13.1
+# Tue, 31 Aug 2021 03:17:57 GMT
+RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
+# Tue, 31 Aug 2021 03:17:57 GMT
+RUN mkdir /docker-entrypoint-initdb.d
+# Tue, 31 Aug 2021 03:18:04 GMT
+RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- 'E162F504A20CDF15827F718D4B7C549A058F8B6B'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --export "$@" > /etc/apt/trusted.gpg.d/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"; 	apt-key list
+# Tue, 31 Aug 2021 03:18:04 GMT
+ARG MONGO_PACKAGE=mongodb-org
+# Tue, 31 Aug 2021 03:18:05 GMT
+ARG MONGO_REPO=repo.mongodb.org
+# Tue, 31 Aug 2021 03:18:05 GMT
+ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
+# Tue, 31 Aug 2021 03:18:05 GMT
+ENV MONGO_MAJOR=4.2
+# Tue, 31 Aug 2021 03:18:06 GMT
+RUN echo "deb http://$MONGO_REPO/apt/ubuntu bionic/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
+# Thu, 30 Sep 2021 21:44:37 GMT
+ENV MONGO_VERSION=4.2.17
+# Thu, 30 Sep 2021 21:44:53 GMT
+RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
+# Thu, 30 Sep 2021 21:44:54 GMT
+RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
+# Thu, 30 Sep 2021 21:44:54 GMT
+VOLUME [/data/db /data/configdb]
+# Thu, 30 Sep 2021 21:44:54 GMT
+COPY file:df3353d9b2c25ef83b499ecae7fd5d611adb4a9462a577435178acaad3c8c695 in /usr/local/bin/ 
+# Thu, 30 Sep 2021 21:44:55 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Thu, 30 Sep 2021 21:44:55 GMT
+EXPOSE 27017
+# Thu, 30 Sep 2021 21:44:55 GMT
+CMD ["mongod"]
+```
+
+-	Layers:
+	-	`sha256:4028d4a2ab035ee99388f4aa429a83fbaf8022de67206e9a5b69615c71069135`  
+		Last Modified: Tue, 31 Aug 2021 01:42:16 GMT  
+		Size: 23.7 MB (23730599 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c50584629502a7e958f30a1b7a78b174640d8ab4250e160a656bb90813ea2065`  
+		Last Modified: Tue, 31 Aug 2021 03:21:47 GMT  
+		Size: 1.9 KB (1885 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:de80265b7cf77954ff57613a60b888911ff3b1d482b362ffbb56973fc4cfeea8`  
+		Last Modified: Tue, 31 Aug 2021 03:21:48 GMT  
+		Size: 2.7 MB (2669706 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:325293ecfd3d62c4787b9211cb673edddaefa37d26dc6933ae52fe0932bc421c`  
+		Last Modified: Tue, 31 Aug 2021 03:21:48 GMT  
+		Size: 5.3 MB (5347293 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5c77f99a86fe12cbd7e258659a9a214239e62a6e440e70b53577a5353adfa88a`  
+		Last Modified: Tue, 31 Aug 2021 03:21:47 GMT  
+		Size: 149.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2f81425690c941f1ab24ee0950d8fe01f06beafa2862e833d79ede5aee454245`  
+		Last Modified: Tue, 31 Aug 2021 03:21:45 GMT  
+		Size: 1.4 KB (1434 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e54a6b669ef71b90aa98948b1ffc52e54d227987388e30c608e0fe92c43dc5e7`  
+		Last Modified: Tue, 31 Aug 2021 03:21:45 GMT  
+		Size: 234.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:89b38211c58a393e7628f5893af271b3010d7aa6c51f86ae82798d37e790246d`  
+		Last Modified: Thu, 30 Sep 2021 21:46:11 GMT  
+		Size: 123.9 MB (123852123 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6a65e768cca02cf9d057c7f201aa53614ccafa3c52007ac57b76de93606cec14`  
+		Last Modified: Thu, 30 Sep 2021 21:45:55 GMT  
+		Size: 169.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c2a86237655949923d56729aa21bc25e964ecedb50da94e3e2b89fec451faf5f`  
+		Last Modified: Thu, 30 Sep 2021 21:45:54 GMT  
+		Size: 4.7 KB (4699 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:4.2.17-nanoserver`
 
-**does not exist** (yet?)
+```console
+$ docker pull mongo@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `mongo:4.2.17-nanoserver-1809`
 
-**does not exist** (yet?)
+```console
+$ docker pull mongo@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `mongo:4.2.17-windowsservercore`
 
-**does not exist** (yet?)
+```console
+$ docker pull mongo@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `mongo:4.2.17-windowsservercore-1809`
 
-**does not exist** (yet?)
+```console
+$ docker pull mongo@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `mongo:4.2.17-windowsservercore-ltsc2016`
 
-**does not exist** (yet?)
+```console
+$ docker pull mongo@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `mongo:4.4`
 
