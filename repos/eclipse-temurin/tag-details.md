@@ -43,9 +43,11 @@
 -	[`eclipse-temurin:11.0.12_7-jre-windowsservercore-1809`](#eclipse-temurin11012_7-jre-windowsservercore-1809)
 -	[`eclipse-temurin:11.0.12_7-jre-windowsservercore-ltsc2016`](#eclipse-temurin11012_7-jre-windowsservercore-ltsc2016)
 -	[`eclipse-temurin:16`](#eclipse-temurin16)
+-	[`eclipse-temurin:16-alpine`](#eclipse-temurin16-alpine)
 -	[`eclipse-temurin:16-centos7`](#eclipse-temurin16-centos7)
 -	[`eclipse-temurin:16-focal`](#eclipse-temurin16-focal)
 -	[`eclipse-temurin:16-jdk`](#eclipse-temurin16-jdk)
+-	[`eclipse-temurin:16-jdk-alpine`](#eclipse-temurin16-jdk-alpine)
 -	[`eclipse-temurin:16-jdk-centos7`](#eclipse-temurin16-jdk-centos7)
 -	[`eclipse-temurin:16-jdk-focal`](#eclipse-temurin16-jdk-focal)
 -	[`eclipse-temurin:16-jdk-nanoserver`](#eclipse-temurin16-jdk-nanoserver)
@@ -59,6 +61,7 @@
 -	[`eclipse-temurin:16-windowsservercore-1809`](#eclipse-temurin16-windowsservercore-1809)
 -	[`eclipse-temurin:16-windowsservercore-ltsc2016`](#eclipse-temurin16-windowsservercore-ltsc2016)
 -	[`eclipse-temurin:16.0.2_7-jdk`](#eclipse-temurin1602_7-jdk)
+-	[`eclipse-temurin:16.0.2_7-jdk-alpine`](#eclipse-temurin1602_7-jdk-alpine)
 -	[`eclipse-temurin:16.0.2_7-jdk-centos7`](#eclipse-temurin1602_7-jdk-centos7)
 -	[`eclipse-temurin:16.0.2_7-jdk-focal`](#eclipse-temurin1602_7-jdk-focal)
 -	[`eclipse-temurin:16.0.2_7-jdk-nanoserver`](#eclipse-temurin1602_7-jdk-nanoserver)
@@ -6753,6 +6756,10 @@ CMD ["jshell"]
 		Size: 1.3 KB (1280 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `eclipse-temurin:16-alpine`
+
+**does not exist** (yet?)
+
 ## `eclipse-temurin:16-centos7`
 
 ```console
@@ -7488,6 +7495,10 @@ CMD ["jshell"]
 		Last Modified: Wed, 15 Sep 2021 16:59:27 GMT  
 		Size: 1.3 KB (1280 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `eclipse-temurin:16-jdk-alpine`
+
+**does not exist** (yet?)
 
 ## `eclipse-temurin:16-jdk-centos7`
 
@@ -9110,6 +9121,10 @@ CMD ["jshell"]
 		Last Modified: Wed, 15 Sep 2021 16:59:27 GMT  
 		Size: 1.3 KB (1280 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `eclipse-temurin:16.0.2_7-jdk-alpine`
+
+**does not exist** (yet?)
 
 ## `eclipse-temurin:16.0.2_7-jdk-centos7`
 
