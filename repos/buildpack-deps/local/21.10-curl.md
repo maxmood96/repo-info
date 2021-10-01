@@ -226,13 +226,9 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ca-certificates=20210119build1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20210119build1.dsc' ca-certificates_20210119build1.dsc 1766 SHA512:f1c899115c920aa773d60434058b5dab1a15ade1cca41e0ff49bf57b6c2d2b7096d654fa3a44b7177c343ba08c722d634d6239cf552ee02edba4a1a8cf9208b6
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20210119build1.tar.xz' ca-certificates_20210119build1.tar.xz 232812 SHA512:019ad4500019668a61854f08b4880464b11150c51b792278af8978a4c2e9e5913e9922790c52a19254c99bfe21f4a02a36cab6804584627601c94f2428e7939b
-```
 
 ### `dpkg` source package: `cdebconf=0.256ubuntu3`
 
@@ -1686,14 +1682,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=248.3-1ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_248.3-1ubuntu3.dsc' systemd_248.3-1ubuntu3.dsc 5366 SHA512:f02589e153953a13b5ad855e1d89facd87a57153a2fb19add49973ac02c98323ed29afa2143f3cb54f24c92f17dc7511c85c55e15a9848c97963e5a6cadecc90
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_248.3.orig.tar.gz' systemd_248.3.orig.tar.gz 10320940 SHA512:8e7ff0d5e63cc933e4dc23f7e0bef9707fde90396605eb8822d34de90d7abe8fd37e5739e33b657868218aa7281147cc944c096c007324c3e6fb54d833a83485
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_248.3-1ubuntu3.debian.tar.xz' systemd_248.3-1ubuntu3.debian.tar.xz 204328 SHA512:202010b56a836956d908fdfc75d6b93afb28ea002ece1bbd5ae8f1d04039c59d99ea894db87496f8c7b10a1f3312bc31645caeb09002cb6ca4aa7d4c3f68342a
-```
 
 ### `dpkg` source package: `sysvinit=2.96-7ubuntu1`
 
@@ -1746,15 +1737,9 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2021a-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2021a-1ubuntu1.dsc' tzdata_2021a-1ubuntu1.dsc 2358 SHA512:d0de8ec0c949a976b6d657f1e2e4045296737b28a1e49de0bad6acd0af4027c7e10676b968ffc3d6ef0c8b62e2a5a6676cd95cbdcbfca2730ecac30e0837bfe4
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2021a.orig.tar.gz' tzdata_2021a.orig.tar.gz 411892 SHA512:7cdd762ec90ce12a30fa36b1d66d1ea82d9fa21e514e2b9c7fcbe2541514ee0fadf30843ff352c65512fb270857b51d1517b45e1232b89c6f954ba9ff1833bb3
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2021a.orig.tar.gz.asc' tzdata_2021a.orig.tar.gz.asc 833 SHA512:41532174622222fc5e8d733c4af2decfcd0ab3f56db946763d1731ae96873e31abcb31f9a7a442428c78ea21612318b05c99bcf4b9bf37d59f11d1dc914814e6
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2021a-1ubuntu1.debian.tar.xz' tzdata_2021a-1ubuntu1.debian.tar.xz 165180 SHA512:1e73ceed23d16f8a54a8ddcc0cb72eb675f585bfb0aecffdf03ae74ee95bff50da28bbcf9cbb40a42072d41937ebfa3b35b4ff4daf689e09ef3eecb55818b924
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2021.03.26`
 

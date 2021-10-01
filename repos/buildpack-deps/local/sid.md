@@ -3772,20 +3772,13 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `X11`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.14.6-2
-'http://deb.debian.org/debian/pool/main/l/linux/linux_5.14.6-2.dsc' linux_5.14.6-2.dsc 192376 SHA256:862c7d0a829a3dd4754408a030f6afd8e6f38d9c02e1dd85b904d8a1543bc48b
-'http://deb.debian.org/debian/pool/main/l/linux/linux_5.14.6.orig.tar.xz' linux_5.14.6.orig.tar.xz 126455248 SHA256:02d660fabdac16487124dee27e2858f437604b154d81459547dbbe43cd0db70d
-'http://deb.debian.org/debian/pool/main/l/linux/linux_5.14.6-2.debian.tar.xz' linux_5.14.6-2.debian.tar.xz 1405404 SHA256:a676f55ffab48eb1dac090e49fad517bc1a7b4e8ecbb6f45444b8a050df469bc
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/linux/5.14.6-2/
 
-- https://sources.debian.net/src/linux/5.14.6-2/ (for browsing the source)
-- https://sources.debian.net/src/linux/5.14.6-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/5.14.6-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=11.1.0`
 
