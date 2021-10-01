@@ -4,7 +4,7 @@
 
 - Image ID: `sha256:694c0488ccf0e075c80700ee1287ada32d4b17768df0a7604664e80e43857d93`
 - Created: `2021-09-28T01:23:38.064702598Z`
-- Virtual Size: ~ 55.32 Mb  
+- Virtual Size: ~ 55.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
