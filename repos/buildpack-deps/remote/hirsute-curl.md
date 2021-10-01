@@ -1,7 +1,7 @@
 ## `buildpack-deps:hirsute-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:ff1b1d9dc00dadeca39b39907fcd12af254500e39e8c65acf9ea9c60ecfbdf7b
+$ docker pull buildpack-deps@sha256:f7bdf47ab98ed09768b78c25fcfa176a74185394c6c2b4c003fd0265989c77b4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16,39 +16,39 @@ $ docker pull buildpack-deps@sha256:ff1b1d9dc00dadeca39b39907fcd12af254500e39e8c
 ### `buildpack-deps:hirsute-curl` - linux; amd64
 
 ```console
-$ docker pull buildpack-deps@sha256:38c9947bebf08bf338214a9539d13131ceceef2eb56a3a962fd487d03a4a48ab
+$ docker pull buildpack-deps@sha256:9061f7ef082ae113348351460f7c072b43192180e25e675fbde68bebab046851
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **40.8 MB (40796375 bytes)**  
+-	Total Size: **40.8 MB (40796247 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fd9b43ff77c32f2171be9117ae172526d0bbc561da8f7525f999efc126f5eb09`
+-	Image ID: `sha256:b3e96cc49ca9401fa96ae12c1ffb5e5c840591f3a502977d7bc750b9223e3a4d`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 31 Aug 2021 01:21:03 GMT
-ADD file:4ac73e113682ef48b7466c4f8765ca7fd54ae98228caa319438a76c35d762b1b in / 
-# Tue, 31 Aug 2021 01:21:04 GMT
+# Fri, 01 Oct 2021 02:23:53 GMT
+ADD file:3a18768000089a105cd4f288985d6249e8aee2c742a055a892a47aab413f25c0 in / 
+# Fri, 01 Oct 2021 02:23:53 GMT
 CMD ["bash"]
-# Tue, 31 Aug 2021 02:57:50 GMT
+# Fri, 01 Oct 2021 03:11:44 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 31 Aug 2021 02:58:06 GMT
+# Fri, 01 Oct 2021 03:12:00 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 ```
 
 -	Layers:
-	-	`sha256:d7e10407b4d96b1866d5b77b368ac8b2b9b3ef9b210bad0b4784407405121b92`  
-		Last Modified: Tue, 31 Aug 2021 01:22:35 GMT  
-		Size: 31.7 MB (31703609 bytes)  
+	-	`sha256:80d63867ecd7f5e4a966c8400729828e902773a9f03109a2ec69605ddc8045a9`  
+		Last Modified: Fri, 01 Oct 2021 02:25:36 GMT  
+		Size: 31.7 MB (31704296 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0f2bdc17338d4753c86d8e5520aadb12207bd763dac1f00aa8eb9042fcd88034`  
-		Last Modified: Tue, 31 Aug 2021 03:13:50 GMT  
-		Size: 5.4 MB (5430701 bytes)  
+	-	`sha256:69e61e03c60557bda70bf3cc9a2dd5562bdd9f66442dd9a5b33f393f7f610ca9`  
+		Last Modified: Fri, 01 Oct 2021 03:19:53 GMT  
+		Size: 5.4 MB (5429421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b03dd940109a3cc748ce9b671747e7089353d649088e88252f777dcf586a8963`  
-		Last Modified: Tue, 31 Aug 2021 03:13:50 GMT  
-		Size: 3.7 MB (3662065 bytes)  
+	-	`sha256:1701598239c3ba301af98cdbdc4c053cff70425e0102d03a0a0a660b68520b35`  
+		Last Modified: Fri, 01 Oct 2021 03:19:53 GMT  
+		Size: 3.7 MB (3662530 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:hirsute-curl` - linux; arm variant v7
@@ -92,39 +92,39 @@ RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get 
 ### `buildpack-deps:hirsute-curl` - linux; arm64 variant v8
 
 ```console
-$ docker pull buildpack-deps@sha256:1be6a6a353e2c9182de84c02a356036c8dde9815bb83505c0c329d064a55a6db
+$ docker pull buildpack-deps@sha256:e97fb51e07261b6a8213a306321408eaab25c98dd81802fa5c3466d01585e297
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.2 MB (39202658 bytes)**  
+-	Total Size: **39.2 MB (39213475 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a37e4fd97a4962d1b26f3ab8d4d4b3037cf0f744a21cd18626183658d36514b8`
+-	Image ID: `sha256:7ea936eb6321870111adf4892e07b9dd6a92b42c9be055e57c581219867d1d64`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 31 Aug 2021 01:40:53 GMT
-ADD file:93dcfc1791d96861438a84bfd38f5c0520353febfcc59bde5510c9e85eab2cf8 in / 
-# Tue, 31 Aug 2021 01:40:54 GMT
+# Fri, 01 Oct 2021 02:44:04 GMT
+ADD file:36081e580b6851b0f8a1176a307b99a673510dc87809a726cad514bd7f56d620 in / 
+# Fri, 01 Oct 2021 02:44:04 GMT
 CMD ["bash"]
-# Tue, 31 Aug 2021 02:11:52 GMT
+# Fri, 01 Oct 2021 03:18:37 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 31 Aug 2021 02:11:59 GMT
+# Fri, 01 Oct 2021 03:18:44 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 ```
 
 -	Layers:
-	-	`sha256:4fbd1b15195364f20d4b603e346a2b5c64ae93e9de90f5c1bd82a61e92851632`  
-		Last Modified: Tue, 31 Aug 2021 01:42:57 GMT  
-		Size: 30.2 MB (30162874 bytes)  
+	-	`sha256:e61beefb4313333ca27a602845cbf2a6f7cba9c176bb999f14a4bdcfb6a54148`  
+		Last Modified: Fri, 01 Oct 2021 02:46:09 GMT  
+		Size: 30.2 MB (30174163 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c0d54fbc3de08027791a7280c6d2d7f821165cc126fd0e08c6cba66c1d6fc122`  
-		Last Modified: Tue, 31 Aug 2021 02:20:51 GMT  
-		Size: 5.4 MB (5401544 bytes)  
+	-	`sha256:e22e5e9de7272c5e4544f153bf2aeeb8c118ac5a3ccdea10a7d6a6c996c3575c`  
+		Last Modified: Fri, 01 Oct 2021 03:26:27 GMT  
+		Size: 5.4 MB (5400844 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:25f7180cc8ab79571bbc48658748543060674d12cbbdf7683a598d89f6086677`  
-		Last Modified: Tue, 31 Aug 2021 02:20:50 GMT  
-		Size: 3.6 MB (3638240 bytes)  
+	-	`sha256:2c320e18b5848a613875caa1714ab609c4840c23b41f7eb20a8d3dc34193f53d`  
+		Last Modified: Fri, 01 Oct 2021 03:26:27 GMT  
+		Size: 3.6 MB (3638468 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:hirsute-curl` - linux; ppc64le
@@ -168,75 +168,75 @@ RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get 
 ### `buildpack-deps:hirsute-curl` - linux; riscv64
 
 ```console
-$ docker pull buildpack-deps@sha256:64c1efaa41585b95c9ae764b82ee6479920b3d19ee810a1fd0dc22c8a73f687c
+$ docker pull buildpack-deps@sha256:6f18fc0d3ddcc7a1fc4421df4e73d1bc7c8bfa9bcb096d4d55eef355576c40bc
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **35.3 MB (35266295 bytes)**  
+-	Total Size: **35.3 MB (35264377 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1affb32245af279b11f5c62e61f3660f196c615fed09a9a21d3a0e5c8fa2a41b`
+-	Image ID: `sha256:c01fdd529f701fb77c03d0bbb3433871ae8b6285adebd0a80f552a4b1421c913`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 31 Aug 2021 01:17:33 GMT
-ADD file:c9125fcbdad41a027e81c7fc0616e4698eefb4bf591e9c215748c44001492a71 in / 
-# Tue, 31 Aug 2021 01:17:35 GMT
+# Fri, 01 Oct 2021 01:16:46 GMT
+ADD file:3e74b3f99e917f6242f9460c55d6b1ed2c4e243bb9deeef85c260be1e6c3b3b7 in / 
+# Fri, 01 Oct 2021 01:16:47 GMT
 CMD ["bash"]
-# Tue, 31 Aug 2021 02:03:38 GMT
+# Fri, 01 Oct 2021 02:10:34 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 31 Aug 2021 02:04:20 GMT
+# Fri, 01 Oct 2021 02:11:17 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 ```
 
 -	Layers:
-	-	`sha256:de98d6361415ec89b2135480af53817e96bf60ae2c78c53dad37c447f0f7b040`  
-		Last Modified: Tue, 31 Aug 2021 01:33:15 GMT  
-		Size: 27.1 MB (27143365 bytes)  
+	-	`sha256:cfe1f0adec8bd7640ec8d5467a7a5553e6d58e6cb80adbbc101495501625dca9`  
+		Last Modified: Fri, 01 Oct 2021 01:40:30 GMT  
+		Size: 27.1 MB (27141881 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:225134e3c31562a8c1d476ee61f8672ab2a39bc9f6dd1aa9d2334027bacf22c0`  
-		Last Modified: Tue, 31 Aug 2021 02:44:14 GMT  
-		Size: 4.9 MB (4945167 bytes)  
+	-	`sha256:747535e5ca63ea5be385acb70aaca4311fe2b78f1e44463cbfce298800f9f33b`  
+		Last Modified: Fri, 01 Oct 2021 02:50:40 GMT  
+		Size: 4.9 MB (4944581 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e55ca77fa5925540bdc2a4cf61c8acfdf7fc0d169793ae57fd6e0b7a6465022d`  
-		Last Modified: Tue, 31 Aug 2021 02:44:11 GMT  
-		Size: 3.2 MB (3177763 bytes)  
+	-	`sha256:0facf6815c035133c1d22c89659eabcd14838fa24ff638d7a2f822c2d42d795a`  
+		Last Modified: Fri, 01 Oct 2021 02:50:37 GMT  
+		Size: 3.2 MB (3177915 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:hirsute-curl` - linux; s390x
 
 ```console
-$ docker pull buildpack-deps@sha256:a3a6241c11d52798f69cd608769182ec132e3c3557678a5b7d53de38c8cd7495
+$ docker pull buildpack-deps@sha256:d4fb0f8ba2a1371a25956f327c4583b4177f6a08669243e2cc644487ef42db54
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **42.5 MB (42478886 bytes)**  
+-	Total Size: **42.5 MB (42492521 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6c486f889ee86ee0e24365015f7d20301cd102b59e96a42c55b86db311ca2572`
+-	Image ID: `sha256:769764cfa8002921bd1badc5e585535ccf1ce621970e3950a8757da9733976e3`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 31 Aug 2021 01:42:38 GMT
-ADD file:ba5c2c420b69d0c125e25122344e156fa468282be3e91af99f6941eb676f308d in / 
-# Tue, 31 Aug 2021 01:42:41 GMT
+# Fri, 01 Oct 2021 01:42:40 GMT
+ADD file:fcf310d9f4d95ff5ed13b1e66aa2a62f163b9bcfc9e9fdbae5af11f19dd0bd85 in / 
+# Fri, 01 Oct 2021 01:42:42 GMT
 CMD ["bash"]
-# Tue, 31 Aug 2021 02:37:48 GMT
+# Fri, 01 Oct 2021 02:36:09 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 31 Aug 2021 02:37:54 GMT
+# Fri, 01 Oct 2021 02:36:13 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 ```
 
 -	Layers:
-	-	`sha256:2e7ad6541ebda77ecfec574e1268bb944ba28f14ca69dab7bad1d63702975176`  
-		Last Modified: Tue, 31 Aug 2021 01:44:29 GMT  
-		Size: 32.5 MB (32491578 bytes)  
+	-	`sha256:9e74faf81dfb98c642fd37930279e8a6538c4ce035807bab59ed0f1d0a0eb627`  
+		Last Modified: Fri, 01 Oct 2021 01:44:16 GMT  
+		Size: 32.5 MB (32505539 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d66e7ecd9588795e7cf09605e17fa940cd2b5566b310df2b484b60ba5faee036`  
-		Last Modified: Tue, 31 Aug 2021 02:46:51 GMT  
-		Size: 5.8 MB (5802191 bytes)  
+	-	`sha256:3a99a5951692580021e948472804dab0a010b074b1163b603e4f5cfda6382bf4`  
+		Last Modified: Fri, 01 Oct 2021 02:42:52 GMT  
+		Size: 5.8 MB (5801664 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:36acc9b914fe8f7ad986a1869bcd54799c01524d5a43634c1cff6407f77d9a14`  
-		Last Modified: Tue, 31 Aug 2021 02:46:51 GMT  
-		Size: 4.2 MB (4185117 bytes)  
+	-	`sha256:f0fa544ba88c98b23feadb6ad914d8da1debe080907cb082ad2b8d8046e6c5da`  
+		Last Modified: Fri, 01 Oct 2021 02:42:52 GMT  
+		Size: 4.2 MB (4185318 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
