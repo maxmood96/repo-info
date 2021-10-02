@@ -1,7 +1,7 @@
 ## `fedora:rawhide`
 
 ```console
-$ docker pull fedora@sha256:32849b7713f463432b7ddffef285f3464c5df386e1f686f1f974ff4ee940760d
+$ docker pull fedora@sha256:54e784e97c35b0ca0b15d230f259df7720916e7b5e178f55fcfcd5270b107da0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -75,14 +75,14 @@ CMD ["/bin/bash"]
 ### `fedora:rawhide` - linux; arm64 variant v8
 
 ```console
-$ docker pull fedora@sha256:8ff38f5db341b4322e14ca9ea7a5e78f62b42188926688f54b0501456c8a4d32
+$ docker pull fedora@sha256:70a53de4846bae8e7492afe31330cf0f4fe50f8a85aa8e2ad8f34f7fbaea6f59
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **65.5 MB (65473773 bytes)**  
+-	Total Size: **56.7 MB (56748942 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f1373194a928125016b1e0e08872b974c608e16a7070113669bf6524beeb7228`
+-	Image ID: `sha256:5d727c3aa20a79786820c4fd0e54806ab8e0510aedd8d95845f5898d39c8212b`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -90,16 +90,16 @@ $ docker pull fedora@sha256:8ff38f5db341b4322e14ca9ea7a5e78f62b42188926688f54b05
 LABEL maintainer=Clement Verna <cverna@fedoraproject.org>
 # Fri, 23 Jul 2021 01:33:02 GMT
 ENV DISTTAG=fRawhidecontainer FGC=fRawhide FBR=fRawhide
-# Fri, 23 Jul 2021 01:33:07 GMT
-ADD file:f73b3b52739eaeba7350f82df39731405eaad0d4e68d68dbe22f4b9f94703bf4 in / 
-# Fri, 23 Jul 2021 01:33:07 GMT
+# Fri, 01 Oct 2021 23:29:18 GMT
+ADD file:2029c4441926eef43114b03312616846ee4080b972dc772e89de8697be718100 in / 
+# Fri, 01 Oct 2021 23:29:19 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:5cc6411571192f63b9ac80c6771226bdd30fbaec9f49f93ba8b75f958bf7f1a8`  
-		Last Modified: Fri, 23 Jul 2021 01:34:40 GMT  
-		Size: 65.5 MB (65473773 bytes)  
+	-	`sha256:de84f0857d31b2d10226dd601e6d0b7d7cd2b6f249389043b5f9955ed64c2932`  
+		Last Modified: Fri, 01 Oct 2021 23:30:46 GMT  
+		Size: 56.7 MB (56748942 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `fedora:rawhide` - linux; ppc64le
