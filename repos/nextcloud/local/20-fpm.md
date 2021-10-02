@@ -1,10 +1,10 @@
-# `nextcloud:20.0.12-fpm`
+# `nextcloud:20.0.13-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b05d76037f64d0eb0071a85f96392eb684bccda765e35dab8a7309794bcce85e`
-- Created: `2021-09-24T05:54:42.987620252Z`
-- Virtual Size: ~ 879.98 Mb  
+- Image ID: `sha256:ff9771fbfc78e21c9a27d1a563049a3782bddfa806addc7b080f98b957d95546`
+- Created: `2021-10-01T02:28:23.183315759Z`
+- Virtual Size: ~ 863.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -24,7 +24,7 @@
   - `PHP_SHA256=ff7658ee2f6d8af05b48c21146af5f502e121def4e76e862df5ec9fa06e98734`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
-  - `NEXTCLOUD_VERSION=20.0.12`
+  - `NEXTCLOUD_VERSION=20.0.13`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2740,11 +2740,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.4.8+dfsg-2.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.4.8+dfsg-2.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=5.10.46-4`
+### `dpkg` source package: `linux=5.10.46-5`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.10.46-4`
+- `linux-libc-dev:amd64=5.10.46-5`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2760,17 +2760,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=5.10.46-4
-'http://deb.debian.org/debian/pool/main/l/linux/linux_5.10.46-4.dsc' linux_5.10.46-4.dsc 195000 SHA256:2ac8a8639f90b9fcf09131c359c74949e97df62c180f4eb97a6604ec2228dc15
-'http://deb.debian.org/debian/pool/main/l/linux/linux_5.10.46.orig.tar.xz' linux_5.10.46.orig.tar.xz 121572512 SHA256:bcd8edcbc6ed21d93dc138a754b1ac08329452c2ea509ae2a4071cd521da38a3
-'http://deb.debian.org/debian/pool/main/l/linux/linux_5.10.46-4.debian.tar.xz' linux_5.10.46-4.debian.tar.xz 4373312 SHA256:1c91aa76d70940b2caffc935e9427771c055aca5db87a3f374caa4dedf2bc4f2
+$ apt-get source -qq --print-uris linux=5.10.46-5
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.46-5.dsc' linux_5.10.46-5.dsc 195000 SHA256:faddec22b3f6d13ec8b86f54449307c424252abe4b155672b28501dafb26474f
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.46.orig.tar.xz' linux_5.10.46.orig.tar.xz 121572512 SHA256:bcd8edcbc6ed21d93dc138a754b1ac08329452c2ea509ae2a4071cd521da38a3
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.46-5.debian.tar.xz' linux_5.10.46-5.debian.tar.xz 4390148 SHA256:89b2f8dae10a1b167b2579eab73ddef07b713bb3dd96ed566538031466bf5c81
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/5.10.46-4/ (for browsing the source)
-- https://sources.debian.net/src/linux/5.10.46-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/5.10.46-4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/5.10.46-5/ (for browsing the source)
+- https://sources.debian.net/src/linux/5.10.46-5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/5.10.46-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=11.1.0`
 
