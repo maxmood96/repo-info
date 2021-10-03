@@ -1,7 +1,7 @@
 ## `adoptopenjdk:15-jre-hotspot`
 
 ```console
-$ docker pull adoptopenjdk@sha256:a39d579bda8d7e65842cc6882713957ae9e6cd5e427222f01487b694e8dd43c7
+$ docker pull adoptopenjdk@sha256:1771d90c0b4ac4137efedbba70d0b7bcf3155aaa9d154e47f3d897ca362c0095
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -61,45 +61,45 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 ### `adoptopenjdk:15-jre-hotspot` - linux; arm variant v7
 
 ```console
-$ docker pull adoptopenjdk@sha256:d8cecbf5d10993ab48a1c4c6d4e23f2d7c9b0bbb7aeb642ec0044520917c7c4b
+$ docker pull adoptopenjdk@sha256:6110bd2513765c1c3ed5503e60e7752b7b3bab7709eb9677d21cc45d0b22b11c
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **93.0 MB (92981354 bytes)**  
+-	Total Size: **93.0 MB (92975757 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:41cc420d02b3dd61841b13a744fbd4fcca3979bf1e2f36adb211c6edc99311aa`
+-	Image ID: `sha256:4f33b3f6bbb5d0375452f118c8a066bd8e1529b6c2ef52ced48f5f111283a82c`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 31 Aug 2021 01:40:52 GMT
-ADD file:f9dcf17ef0f45719dff5ed961907d78a1ea6671fecdb434536f3fc8cf15fbb3b in / 
-# Tue, 31 Aug 2021 01:40:53 GMT
+# Sat, 02 Oct 2021 05:58:58 GMT
+ADD file:17b7faea72ce285877ae2e83ecc15fc88de184361899edfcb561531ea121090b in / 
+# Sat, 02 Oct 2021 05:58:59 GMT
 CMD ["bash"]
-# Tue, 31 Aug 2021 02:51:20 GMT
+# Sat, 02 Oct 2021 23:26:18 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 31 Aug 2021 02:52:01 GMT
+# Sat, 02 Oct 2021 23:37:39 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 31 Aug 2021 02:54:13 GMT
+# Sat, 02 Oct 2021 23:39:40 GMT
 ENV JAVA_VERSION=jdk-15.0.2+7
-# Tue, 31 Aug 2021 02:55:12 GMT
+# Sat, 02 Oct 2021 23:40:32 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='1c1fc968d76004b0be0042027712835dcbe3570a6fc3a208157a4ab6adabbef2';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk15-binaries/releases/download/jdk-15.0.2%2B7/OpenJDK15U-jre_aarch64_linux_hotspot_15.0.2_7.tar.gz';          ;;        armhf|armv7l)          ESUM='304be224952dbea7000cda6223b2978b3eefdf2e3749032c3b381a213c8d9c5e';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk15-binaries/releases/download/jdk-15.0.2%2B7/OpenJDK15U-jre_arm_linux_hotspot_15.0.2_7.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='dc2480948ac3e6b192fb77c9d37227510f44482e52a330002d6e7497a62a7d67';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk15-binaries/releases/download/jdk-15.0.2%2B7/OpenJDK15U-jre_ppc64le_linux_hotspot_15.0.2_7.tar.gz';          ;;        s390x)          ESUM='93d81a245f70373a459fe4b1c99c8fb7f357de5c8a14a127f580704270037054';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk15-binaries/releases/download/jdk-15.0.2%2B7/OpenJDK15U-jre_s390x_linux_hotspot_15.0.2_7.tar.gz';          ;;        amd64|x86_64)          ESUM='31af7efdb1cc0ffd001bc145c3d255266889ad6b502133283ae8bf233d11334c';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk15-binaries/releases/download/jdk-15.0.2%2B7/OpenJDK15U-jre_x64_linux_hotspot_15.0.2_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Tue, 31 Aug 2021 02:55:13 GMT
+# Sat, 02 Oct 2021 23:40:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
 -	Layers:
-	-	`sha256:cccc98128e2b3db00394b4e59c3f674a52e4b861786d9fab388357a88fc428a2`  
-		Last Modified: Tue, 31 Aug 2021 01:44:57 GMT  
-		Size: 24.1 MB (24068823 bytes)  
+	-	`sha256:29a0bfee4452af9c258710b3049350eec1ed6ee85e33634a638e982934e59d83`  
+		Last Modified: Sat, 02 Oct 2021 06:03:00 GMT  
+		Size: 24.1 MB (24067218 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b915f774c910de28b940b41c37fc76946eb150ac0a4048d2d2cbc5b3b0983c26`  
-		Last Modified: Tue, 31 Aug 2021 02:59:59 GMT  
-		Size: 14.9 MB (14902564 bytes)  
+	-	`sha256:18110d4575fb4d6fc0f882483d001f57cf4cc83a308eacce1e903c788025fd10`  
+		Last Modified: Sat, 02 Oct 2021 23:45:17 GMT  
+		Size: 14.9 MB (14898568 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a5fc2dab28109f030b50292a7fffc8a04c54c0b6e28c3202aedd9eed775b020e`  
-		Last Modified: Tue, 31 Aug 2021 03:05:32 GMT  
-		Size: 54.0 MB (54009967 bytes)  
+	-	`sha256:bd296b3d78114d05d95a343f2bea71a116b52819a44de2cc8a767254f128e044`  
+		Last Modified: Sat, 02 Oct 2021 23:50:44 GMT  
+		Size: 54.0 MB (54009971 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:15-jre-hotspot` - linux; arm64 variant v8

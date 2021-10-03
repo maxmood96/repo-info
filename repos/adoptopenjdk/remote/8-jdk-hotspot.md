@@ -1,7 +1,7 @@
 ## `adoptopenjdk:8-jdk-hotspot`
 
 ```console
-$ docker pull adoptopenjdk@sha256:56b6a6aa3deef53468eac9fd1dc29d8c573f7e7adaf4737c110011b56c9e5b16
+$ docker pull adoptopenjdk@sha256:7430a53de97cc0526894931003ffcbefb7643b890d55a9f5f2f16dc74731fcd8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -61,45 +61,45 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 ### `adoptopenjdk:8-jdk-hotspot` - linux; arm variant v7
 
 ```console
-$ docker pull adoptopenjdk@sha256:cf794372ab151543cc7bacff05a4f28187825cbdc0697c52e29280a5c466230a
+$ docker pull adoptopenjdk@sha256:e81c03429e73aea028c4425a2775f96056c58ceeac929cd20addac878860c2e7
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **137.9 MB (137900912 bytes)**  
+-	Total Size: **137.9 MB (137895280 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2b351892b9cb0336b142966436911c26ba4c6f05e6f35b02ff54a42166392893`
+-	Image ID: `sha256:ebf56bc53240c6c70e0b49d2a7518fe86c3cf017fca97bb38fc5be68028cca1e`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 31 Aug 2021 01:40:52 GMT
-ADD file:f9dcf17ef0f45719dff5ed961907d78a1ea6671fecdb434536f3fc8cf15fbb3b in / 
-# Tue, 31 Aug 2021 01:40:53 GMT
+# Sat, 02 Oct 2021 05:58:58 GMT
+ADD file:17b7faea72ce285877ae2e83ecc15fc88de184361899edfcb561531ea121090b in / 
+# Sat, 02 Oct 2021 05:58:59 GMT
 CMD ["bash"]
-# Tue, 31 Aug 2021 02:51:20 GMT
+# Sat, 02 Oct 2021 23:26:18 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 31 Aug 2021 02:52:01 GMT
+# Sat, 02 Oct 2021 23:37:39 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 31 Aug 2021 02:52:02 GMT
+# Sat, 02 Oct 2021 23:37:40 GMT
 ENV JAVA_VERSION=jdk8u292-b10
-# Tue, 31 Aug 2021 02:52:20 GMT
+# Sat, 02 Oct 2021 23:37:54 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='a29edaf66221f7a51353d3f28e1ecf4221268848260417bc562d797e514082a8';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u292-b10/OpenJDK8U-jdk_aarch64_linux_hotspot_8u292b10.tar.gz';          ;;        armhf|armv7l)          ESUM='0de107b7df38314c1daab78571383b8b39fdc506790aaef5d870b3e70048881b';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u292-b10/OpenJDK8U-jdk_arm_linux_hotspot_8u292b10.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='7ecf00e57033296fd23201477a64dc13a1356b16a635907e104d079ddb544e4b';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u292-b10/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u292b10.tar.gz';          ;;        s390x)          ESUM='276a431c79b7e94bc1b1b4fd88523383ae2d635ea67114dfc8a6174267f8fb2c';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u292-b10/OpenJDK8U-jdk_s390x_linux_hotspot_8u292b10.tar.gz';          LIBFFI_SUM='05e456a2e8ad9f20db846ccb96c483235c3243e27025c3e8e8e358411fd48be9';          LIBFFI_URL='http://launchpadlibrarian.net/354371408/libffi6_3.2.1-8_s390x.deb';          curl -LfsSo /tmp/libffi6.deb ${LIBFFI_URL};          echo "${LIBFFI_SUM} /tmp/libffi6.deb" | sha256sum -c -;          apt-get install -y --no-install-recommends /tmp/libffi6.deb;          rm -rf /tmp/libffi6.deb;          ;;        amd64|x86_64)          ESUM='0949505fcf42a1765558048451bb2a22e84b3635b1a31dd6191780eeccaa4ada';          BINARY_URL='https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u292-b10/OpenJDK8U-jdk_x64_linux_hotspot_8u292b10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Tue, 31 Aug 2021 02:52:22 GMT
+# Sat, 02 Oct 2021 23:37:55 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
 -	Layers:
-	-	`sha256:cccc98128e2b3db00394b4e59c3f674a52e4b861786d9fab388357a88fc428a2`  
-		Last Modified: Tue, 31 Aug 2021 01:44:57 GMT  
-		Size: 24.1 MB (24068823 bytes)  
+	-	`sha256:29a0bfee4452af9c258710b3049350eec1ed6ee85e33634a638e982934e59d83`  
+		Last Modified: Sat, 02 Oct 2021 06:03:00 GMT  
+		Size: 24.1 MB (24067218 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b915f774c910de28b940b41c37fc76946eb150ac0a4048d2d2cbc5b3b0983c26`  
-		Last Modified: Tue, 31 Aug 2021 02:59:59 GMT  
-		Size: 14.9 MB (14902564 bytes)  
+	-	`sha256:18110d4575fb4d6fc0f882483d001f57cf4cc83a308eacce1e903c788025fd10`  
+		Last Modified: Sat, 02 Oct 2021 23:45:17 GMT  
+		Size: 14.9 MB (14898568 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:17560ee089171061b967300cef111b6f9092c6de9318d9ff2be11df33d23c2d0`  
-		Last Modified: Tue, 31 Aug 2021 03:00:31 GMT  
-		Size: 98.9 MB (98929525 bytes)  
+	-	`sha256:88d58eed27841323771d049746ec9b2f56adad73fba2a6a1280750ecf8274b61`  
+		Last Modified: Sat, 02 Oct 2021 23:45:50 GMT  
+		Size: 98.9 MB (98929494 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `adoptopenjdk:8-jdk-hotspot` - linux; arm64 variant v8
