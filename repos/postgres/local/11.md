@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9707222fa9669553386e5b1139751f2170c88e935708a7d803961f74ed181bea`
-- Created: `2021-09-28T17:32:03.741240614Z`
+- Image ID: `sha256:cb4bd6f05962970c26901da97c7a64f069e9bea54a31efdef1d0079a77c70af5`
+- Created: `2021-10-01T00:47:21.808119522Z`
 - Virtual Size: ~ 282.65 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -909,20 +909,13 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.15-1+deb9u2
-'http://security.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.15-1+deb9u2.dsc' krb5_1.15-1+deb9u2.dsc 3456 SHA256:8e5b510ef402e1e2df71959e3572c63ecc63781bbb1280047a61d95d6402ae34
-'http://security.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.15.orig.tar.gz' krb5_1.15.orig.tar.gz 9327157 SHA256:fd34752774c808ab4f6f864f935c49945f5a56b62240b1ad4ab1af7b4ded127c
-'http://security.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.15-1+deb9u2.debian.tar.xz' krb5_1.15-1+deb9u2.debian.tar.xz 145852 SHA256:b2c78df115be1b8758ce2ddaf5fe89eeaca192bc36d72a3c91bffa48c0cb1e62
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/krb5/1.15-1+deb9u2/
 
-- https://sources.debian.net/src/krb5/1.15-1+deb9u2/ (for browsing the source)
-- https://sources.debian.net/src/krb5/1.15-1+deb9u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/krb5/1.15-1+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libassuan=2.4.3-2`
 

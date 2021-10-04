@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d0e695b591c0c270399839df48abff2b88190775321e71c65d9c160e2101e3d3`
-- Created: `2021-09-28T17:32:51.891981496Z`
+- Image ID: `sha256:c9c678ec94d720511ad633c10b6a21bebb8c1881966a46101c929acd1b6eeea0`
+- Created: `2021-10-01T00:47:57.383813206Z`
 - Virtual Size: ~ 199.89 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -909,20 +909,13 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.15-1+deb9u2
-'http://security.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.15-1+deb9u2.dsc' krb5_1.15-1+deb9u2.dsc 3456 SHA256:8e5b510ef402e1e2df71959e3572c63ecc63781bbb1280047a61d95d6402ae34
-'http://security.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.15.orig.tar.gz' krb5_1.15.orig.tar.gz 9327157 SHA256:fd34752774c808ab4f6f864f935c49945f5a56b62240b1ad4ab1af7b4ded127c
-'http://security.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.15-1+deb9u2.debian.tar.xz' krb5_1.15-1+deb9u2.debian.tar.xz 145852 SHA256:b2c78df115be1b8758ce2ddaf5fe89eeaca192bc36d72a3c91bffa48c0cb1e62
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/krb5/1.15-1+deb9u2/
 
-- https://sources.debian.net/src/krb5/1.15-1+deb9u2/ (for browsing the source)
-- https://sources.debian.net/src/krb5/1.15-1+deb9u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/krb5/1.15-1+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libassuan=2.4.3-2`
 
@@ -1889,14 +1882,9 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-13=13.4-1.pgdg90+1
-'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-13/postgresql-13_13.4-1.pgdg90+1.dsc' postgresql-13_13.4-1.pgdg90+1.dsc 2618 SHA256:2b95e8b0f3af21ab006138fe10fffeb6ed9ad952b88bd759a49f2fe0b9aae955
-'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-13/postgresql-13_13.4.orig.tar.bz2' postgresql-13_13.4.orig.tar.bz2 21157443 SHA256:ea93e10390245f1ce461a54eb5f99a48d8cabd3a08ce4d652ec2169a357bc0cd
-'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-13/postgresql-13_13.4-1.pgdg90+1.debian.tar.xz' postgresql-13_13.4-1.pgdg90+1.debian.tar.xz 28052 SHA256:f06a94d7024a9495a4257087d55384be24a9b21bffa4096732fbd940bc9b07c1
-```
 
 ### `dpkg` source package: `postgresql-common=226.pgdg90+1`
 
@@ -1910,13 +1898,9 @@ Licenses: (parsed from: `/usr/share/doc/postgresql-client-common/copyright`, `/u
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-common=226.pgdg90+1
-'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-common/postgresql-common_226.pgdg90+1.dsc' postgresql-common_226.pgdg90+1.dsc 1583 SHA256:86a5cb0bff644fd8e03e6d37aac04fade5d0b553918bb57bc623089e2fa5ada8
-'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-common/postgresql-common_226.pgdg90+1.tar.xz' postgresql-common_226.pgdg90+1.tar.xz 229024 SHA256:e0b779f90d05ca312db6f2a17ed57a1ca9c7dc82afa2a57a7ab76320c87eaa62
-```
 
 ### `dpkg` source package: `readline=7.0-3`
 

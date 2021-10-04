@@ -1,10 +1,10 @@
-# `postgres:14rc1-alpine`
+# `postgres:14.0-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:db69b5fbfccfee090f7af8132d507d14d1e1468f7a694ad39115e8c1269f0a3f`
-- Created: `2021-09-23T23:56:03.636459732Z`
-- Virtual Size: ~ 195.33 Mb  
+- Image ID: `sha256:1686bd618d164a703b45769bca780340f8d00402e78faa1b376e15e74fb6ffe6`
+- Created: `2021-10-01T00:45:32.156400257Z`
+- Virtual Size: ~ 195.38 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,8 +13,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=en_US.utf8`
   - `PG_MAJOR=14`
-  - `PG_VERSION=14rc1`
-  - `PG_SHA256=586a816cb7811985f474eda0d4926fabd2378f0f6d5659d12fba421d38a07616`
+  - `PG_VERSION=14.0`
+  - `PG_SHA256=ee2ad79126a7375e9102c4db77c4acae6ae6ffe3e082403b88826d96d927a122`
   - `PGDATA=/var/lib/postgresql/data`
 
 ## `apk` (`.apk`-based packages)
@@ -532,16 +532,16 @@ MIT
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2021a-r0 description:
+tzdata-2021b-r0 description:
 Timezone data
 
-tzdata-2021a-r0 webpage:
+tzdata-2021b-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2021a-r0 installed size:
-3436 KiB
+tzdata-2021b-r0 installed size:
+3376 KiB
 
-tzdata-2021a-r0 license:
+tzdata-2021b-r0 license:
 Public-Domain
 
 ```

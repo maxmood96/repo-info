@@ -1,10 +1,10 @@
-# `postgres:13.4-alpine`
+# `postgres:14.0-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b8c450ae09036f6ee1af4c641f3df3199a7f8d80771056e42d8cf18ea4291018`
-- Created: `2021-08-27T23:02:30.410616203Z`
-- Virtual Size: ~ 191.50 Mb  
+- Image ID: `sha256:1686bd618d164a703b45769bca780340f8d00402e78faa1b376e15e74fb6ffe6`
+- Created: `2021-10-01T00:45:32.156400257Z`
+- Virtual Size: ~ 195.38 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -12,9 +12,9 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=en_US.utf8`
-  - `PG_MAJOR=13`
-  - `PG_VERSION=13.4`
-  - `PG_SHA256=ea93e10390245f1ce461a54eb5f99a48d8cabd3a08ce4d652ec2169a357bc0cd`
+  - `PG_MAJOR=14`
+  - `PG_VERSION=14.0`
+  - `PG_SHA256=ee2ad79126a7375e9102c4db77c4acae6ae6ffe3e082403b88826d96d927a122`
   - `PGDATA=/var/lib/postgresql/data`
 
 ## `apk` (`.apk`-based packages)
@@ -226,16 +226,16 @@ GPL-2.0-or-later LGPL-2.1-or-later
 ### `apk` package: `libgcrypt`
 
 ```console
-libgcrypt-1.9.3-r0 description:
+libgcrypt-1.9.4-r0 description:
 General purpose crypto library based on the code used in GnuPG
 
-libgcrypt-1.9.3-r0 webpage:
+libgcrypt-1.9.4-r0 webpage:
 https://www.gnupg.org/
 
-libgcrypt-1.9.3-r0 installed size:
+libgcrypt-1.9.4-r0 installed size:
 1220 KiB
 
-libgcrypt-1.9.3-r0 license:
+libgcrypt-1.9.4-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -373,6 +373,23 @@ llvm11-libs-11.1.0-r2 installed size:
 
 llvm11-libs-11.1.0-r2 license:
 Apache-2.0
+
+```
+
+### `apk` package: `lz4-libs`
+
+```console
+lz4-libs-1.9.3-r0 description:
+LZ4 is lossless compression algorithm with fast decoder @ multiple GB/s per core. (libraries)
+
+lz4-libs-1.9.3-r0 webpage:
+https://github.com/lz4/lz4
+
+lz4-libs-1.9.3-r0 installed size:
+216 KiB
+
+lz4-libs-1.9.3-r0 license:
+BSD-2-Clause GPL-2.0-only
 
 ```
 
@@ -515,16 +532,16 @@ MIT
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2021a-r0 description:
+tzdata-2021b-r0 description:
 Timezone data
 
-tzdata-2021a-r0 webpage:
+tzdata-2021b-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2021a-r0 installed size:
-3436 KiB
+tzdata-2021b-r0 installed size:
+3376 KiB
 
-tzdata-2021a-r0 license:
+tzdata-2021b-r0 license:
 Public-Domain
 
 ```
