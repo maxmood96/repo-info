@@ -4,7 +4,7 @@
 
 - Image ID: `sha256:f3c08e2860a22822ddb1209f56bba6bd7ccb65d99d1aec7148a10b95357ab2f9`
 - Created: `2021-09-28T01:25:47.892179338Z`
-- Virtual Size: ~ 124.76 Mb  
+- Virtual Size: ~ 124.75 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -582,20 +582,13 @@ Licenses: (parsed from: `/usr/share/doc/gcc-11-base/copyright`, `/usr/share/doc/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-11=11.2.0-7
-'http://deb.debian.org/debian/pool/main/g/gcc-11/gcc-11_11.2.0-7.dsc' gcc-11_11.2.0-7.dsc 27453 SHA256:d2e99ad4f3a192cf913ff45c79b733cb2a2172439304a53c97ce17178ba86427
-'http://deb.debian.org/debian/pool/main/g/gcc-11/gcc-11_11.2.0.orig.tar.gz' gcc-11_11.2.0.orig.tar.gz 83874319 SHA256:61bbc68194e52a9149a91571b5e1eb4db520017ed4bcdc021c175a1845605e47
-'http://deb.debian.org/debian/pool/main/g/gcc-11/gcc-11_11.2.0-7.debian.tar.xz' gcc-11_11.2.0-7.debian.tar.xz 1813484 SHA256:39ab3cd1f53f089d2532b4e5fa15e947f63bca947eab84527a8c60b8f2b0bca9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-11/11.2.0-7/
 
-- https://sources.debian.net/src/gcc-11/11.2.0-7/ (for browsing the source)
-- https://sources.debian.net/src/gcc-11/11.2.0-7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-11/11.2.0-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.32-4`
 
