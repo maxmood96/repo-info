@@ -14,7 +14,7 @@
 ## `bonita:2021.1`
 
 ```console
-$ docker pull bonita@sha256:4540a66faca5eddb09c489f1502da84c0a8e4cb53b3b33154af0493842a666e2
+$ docker pull bonita@sha256:fa573670c250828436bbdcf850dec5ec500b1fb1858c170bf0eaca00a14de817
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -246,117 +246,117 @@ CMD ["/opt/files/startup.sh"]
 ### `bonita:2021.1` - linux; ppc64le
 
 ```console
-$ docker pull bonita@sha256:2a6e551a5bd891abe055c5d3d9cdeaf51fd8d396f78c85cfb15615a6ea13d4e4
+$ docker pull bonita@sha256:ac1416c77bcac78a9298a94a94abbefde6a84f30d1c8c6ddb9d974813850e64d
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **233.9 MB (233852199 bytes)**  
+-	Total Size: **233.8 MB (233842751 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6637b1b076c10f7d06f93e4de13692ebd64c32e3798b8e5cd4279f111bd2e367`
+-	Image ID: `sha256:39f570d1f0ea23c7cb3e2af3d23faa36d28d1e857626b870b352bb5bed8d9921`
 -	Default Command: `["\/opt\/files\/startup.sh"]`
 
 ```dockerfile
-# Tue, 31 Aug 2021 02:10:11 GMT
-ADD file:32c084b07cf88f4b46c2c94d6e8634a245a8ea46f4c166fe98b49a7e3d44a700 in / 
-# Tue, 31 Aug 2021 02:10:18 GMT
+# Tue, 05 Oct 2021 11:07:29 GMT
+ADD file:fd96554dfb72307c3cf9292c343050a8b9f0848735b7555820f0068914ebd758 in / 
+# Tue, 05 Oct 2021 11:07:35 GMT
 CMD ["bash"]
-# Tue, 31 Aug 2021 03:12:17 GMT
+# Wed, 06 Oct 2021 17:43:30 GMT
 LABEL maintainer=Bonitasoft Runtime team <rd.engine@bonitasoft.com>
-# Tue, 31 Aug 2021 03:15:07 GMT
+# Wed, 06 Oct 2021 17:46:35 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends   curl   gnupg2   mysql-client-core-5.7   openjdk-11-jre-headless   postgresql-client   unzip   zip   && rm -rf /var/lib/apt/lists/*
-# Tue, 31 Aug 2021 03:15:18 GMT
+# Wed, 06 Oct 2021 17:46:47 GMT
 RUN mkdir /opt/custom-init.d/
-# Tue, 31 Aug 2021 03:15:28 GMT
+# Wed, 06 Oct 2021 17:46:58 GMT
 RUN groupadd -r bonita -g 1000   && useradd -u 1000 -r -g bonita -d /opt/bonita/ -s /sbin/nologin -c "Bonita User" bonita
-# Tue, 31 Aug 2021 03:15:51 GMT
+# Wed, 06 Oct 2021 17:47:20 GMT
 RUN (gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4   || gpg --keyserver ipv4.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4)   && curl -fsSL "https://github.com/tianon/gosu/releases/download/1.10/gosu-$(dpkg --print-architecture)" -o /usr/local/bin/gosu   && curl -fsSL "https://github.com/tianon/gosu/releases/download/1.10/gosu-$(dpkg --print-architecture).asc" -o /usr/local/bin/gosu.asc   && gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu   && rm /usr/local/bin/gosu.asc   && chmod +x /usr/local/bin/gosu
-# Tue, 31 Aug 2021 03:15:55 GMT
+# Wed, 06 Oct 2021 17:47:24 GMT
 ARG BONITA_VERSION
-# Tue, 31 Aug 2021 03:18:05 GMT
+# Wed, 06 Oct 2021 17:49:45 GMT
 ARG BRANDING_VERSION
-# Tue, 31 Aug 2021 03:18:09 GMT
+# Wed, 06 Oct 2021 17:49:48 GMT
 ARG BONITA_SHA256
-# Tue, 31 Aug 2021 03:18:12 GMT
+# Wed, 06 Oct 2021 17:49:51 GMT
 ARG BASE_URL
-# Tue, 31 Aug 2021 03:18:20 GMT
+# Wed, 06 Oct 2021 17:49:55 GMT
 ARG BONITA_URL
-# Tue, 31 Aug 2021 03:18:23 GMT
+# Wed, 06 Oct 2021 17:50:00 GMT
 ENV BONITA_VERSION=7.12.1
-# Tue, 31 Aug 2021 03:18:26 GMT
+# Wed, 06 Oct 2021 17:50:05 GMT
 ENV BRANDING_VERSION=2021.1
-# Tue, 31 Aug 2021 03:18:30 GMT
+# Wed, 06 Oct 2021 17:50:10 GMT
 ENV BONITA_SHA256=5342b18dd7f93bd3b2b64f8587504d0bf324f4f84d4259191b7291ee8f9ec693
-# Tue, 31 Aug 2021 03:18:34 GMT
+# Wed, 06 Oct 2021 17:50:17 GMT
 ENV ZIP_FILE=BonitaCommunity-2021.1.zip
-# Tue, 31 Aug 2021 03:18:40 GMT
+# Wed, 06 Oct 2021 17:50:21 GMT
 ENV BASE_URL=https://github.com/bonitasoft/bonita-platform-releases/releases/download
-# Tue, 31 Aug 2021 03:18:42 GMT
+# Wed, 06 Oct 2021 17:50:24 GMT
 ENV BONITA_URL=https://github.com/bonitasoft/bonita-platform-releases/releases/download/2021.1/BonitaCommunity-2021.1.zip
-# Tue, 31 Aug 2021 03:18:50 GMT
+# Wed, 06 Oct 2021 17:50:33 GMT
 RUN echo "Downloading Bonita from url: ${BONITA_URL}"
-# Tue, 31 Aug 2021 03:19:02 GMT
+# Wed, 06 Oct 2021 17:50:46 GMT
 RUN mkdir /opt/files
-# Tue, 31 Aug 2021 03:19:03 GMT
+# Wed, 06 Oct 2021 17:50:49 GMT
 COPY dir:ceba4393fbbad2e791e9b0a75d4a81330c328bd9f67f35ff002adea48d26a677 in /opt/files 
-# Tue, 31 Aug 2021 03:19:14 GMT
+# Wed, 06 Oct 2021 17:51:23 GMT
 RUN if [ -f "/opt/files/BonitaCommunity-${BRANDING_VERSION}.zip" ]; then echo "File already present in /opt/files"; else curl -fsSL ${BONITA_URL} -o /opt/files/BonitaCommunity-${BRANDING_VERSION}.zip; fi
-# Tue, 31 Aug 2021 03:19:26 GMT
+# Wed, 06 Oct 2021 17:51:49 GMT
 RUN sha256sum /opt/files/${ZIP_FILE}
-# Tue, 31 Aug 2021 03:19:37 GMT
+# Wed, 06 Oct 2021 17:52:20 GMT
 RUN echo "$BONITA_SHA256" /opt/files/${ZIP_FILE} | sha256sum -c -
-# Tue, 31 Aug 2021 03:19:46 GMT
+# Wed, 06 Oct 2021 17:52:34 GMT
 VOLUME [/opt/bonita]
-# Tue, 31 Aug 2021 03:19:49 GMT
+# Wed, 06 Oct 2021 17:52:38 GMT
 COPY dir:c3e962ef70138930cdc6c114f07b10cd87f0a7897e828b1cf0f64aa4e7f29ecb in /opt/templates 
-# Tue, 31 Aug 2021 03:19:57 GMT
+# Wed, 06 Oct 2021 17:52:43 GMT
 EXPOSE 8080
-# Tue, 31 Aug 2021 03:20:03 GMT
+# Wed, 06 Oct 2021 17:52:52 GMT
 CMD ["/opt/files/startup.sh"]
 ```
 
 -	Layers:
-	-	`sha256:b66177991333478fe4de9a7fc6ee8c546debb78334473278e085735e8a88072d`  
-		Last Modified: Tue, 31 Aug 2021 02:13:59 GMT  
-		Size: 30.4 MB (30437758 bytes)  
+	-	`sha256:db28fc1e594e5598e665c54ac1b7fd602d86dddaf8bb237a72303cec22a9185c`  
+		Last Modified: Tue, 05 Oct 2021 11:10:31 GMT  
+		Size: 30.4 MB (30432921 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a54978ae656d40037cfaec12659d83d17df3f111e5c260f8b00c5dc48967862b`  
-		Last Modified: Tue, 31 Aug 2021 03:21:33 GMT  
-		Size: 86.4 MB (86441451 bytes)  
+	-	`sha256:38b3edc21cfc352b7713634c746e33cbc4fa7e3ca0a6a30ff4b38e53392c9b32`  
+		Last Modified: Wed, 06 Oct 2021 17:54:27 GMT  
+		Size: 86.4 MB (86436862 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68cbe73f6d51a2d50268e599e7d89ba63e3c7ecaeebb9d94462603eade0789a5`  
-		Last Modified: Tue, 31 Aug 2021 03:21:18 GMT  
-		Size: 155.0 B  
+	-	`sha256:a018aca2fc40ed2d9ef571ad40cece30b4b96114ea033190abeebc6b26f1159a`  
+		Last Modified: Wed, 06 Oct 2021 17:54:13 GMT  
+		Size: 156.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad0555b6890c27c06b847697527af8c80b7ab11e7c04f51b2d34afa768079ee3`  
-		Last Modified: Tue, 31 Aug 2021 03:21:18 GMT  
-		Size: 1.9 KB (1886 bytes)  
+	-	`sha256:6b1a43207f8aeb2bffccebb563d56f146a642348a74c917fccedc5406ff7c048`  
+		Last Modified: Wed, 06 Oct 2021 17:54:13 GMT  
+		Size: 1.9 KB (1882 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2debdb88d2a487637f51a90eddc12512ef172a3f9b78ac28492b922aad94b55`  
-		Last Modified: Tue, 31 Aug 2021 03:21:15 GMT  
-		Size: 546.7 KB (546735 bytes)  
+	-	`sha256:944db579c4969b5a1590926d71763dcdeff12d81aa7bc74411ea87c3999aa9c9`  
+		Last Modified: Wed, 06 Oct 2021 17:54:11 GMT  
+		Size: 546.7 KB (546726 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f44a6dcceeb84150e152f7d2042a19418478b89434c18c29f816842761aebb84`  
-		Last Modified: Tue, 31 Aug 2021 03:21:46 GMT  
-		Size: 148.0 B  
+	-	`sha256:30bb1157a2d16356c3fe03471316decff49b6dc50796a886d2fb6537ec3c3b21`  
+		Last Modified: Wed, 06 Oct 2021 17:54:39 GMT  
+		Size: 146.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:709568a28e21e633e7c8714f0d7c15f5da8998019a55ab816fb0b6801fbfd65e`  
-		Last Modified: Tue, 31 Aug 2021 03:21:45 GMT  
-		Size: 6.9 KB (6947 bytes)  
+	-	`sha256:af3c397b4e693ea0a648aa5d5d11a1d68a1688c3894e594755a4c7b9ab141155`  
+		Last Modified: Wed, 06 Oct 2021 17:54:39 GMT  
+		Size: 6.9 KB (6944 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba285a6b98fd908e3b4653f4ad1e188d38918991721f88d13cdfc321aebca4f8`  
-		Last Modified: Tue, 31 Aug 2021 03:21:54 GMT  
-		Size: 116.4 MB (116415408 bytes)  
+	-	`sha256:dd833d0ae3726dfae569704a9b090ee2eb0dc552d22117765785b6bfbc7a682f`  
+		Last Modified: Wed, 06 Oct 2021 17:54:48 GMT  
+		Size: 116.4 MB (116415402 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21ef0f91abdc722f016ef5cf11495031666b723bca3aec839d977e7340f489dd`  
-		Last Modified: Tue, 31 Aug 2021 03:21:45 GMT  
-		Size: 1.7 KB (1711 bytes)  
+	-	`sha256:3c02458dc3f64372d814c185b974e07b342eec4c2dabd730f6e29a0f1e1b7d56`  
+		Last Modified: Wed, 06 Oct 2021 17:54:39 GMT  
+		Size: 1.7 KB (1712 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `bonita:7.10`
 
 ```console
-$ docker pull bonita@sha256:6a49dd868f4b92a17db6187993c1d7b1cbd04cf4c69e4e2e3e8c464588dbf74a
+$ docker pull bonita@sha256:04f52433910d9896bf00fc7c553bcc0a9ab78a3e65d296563238758aa954c43b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -564,105 +564,105 @@ CMD ["/opt/files/startup.sh"]
 ### `bonita:7.10` - linux; ppc64le
 
 ```console
-$ docker pull bonita@sha256:0ae6c6450c051c25e61270b1a58b8acdae9c5c0abd9f0bcb5d05b795864300b5
+$ docker pull bonita@sha256:18350d80a3c93bafb839352bc992ab1c5d8d049435cdb4d497fc379c4ea26f7a
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **240.3 MB (240327540 bytes)**  
+-	Total Size: **240.3 MB (240321853 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a1b74e981f8d30d34825dd3ce487e3d65a484c148b34f83c95cf71f7c9a5ecd7`
+-	Image ID: `sha256:094dfd3c01c50e2007786e32bea76ea7135af1aefb848759d3d03575ccddd367`
 -	Default Command: `["\/opt\/files\/startup.sh"]`
 
 ```dockerfile
-# Tue, 31 Aug 2021 02:10:11 GMT
-ADD file:32c084b07cf88f4b46c2c94d6e8634a245a8ea46f4c166fe98b49a7e3d44a700 in / 
-# Tue, 31 Aug 2021 02:10:18 GMT
+# Tue, 05 Oct 2021 11:07:29 GMT
+ADD file:fd96554dfb72307c3cf9292c343050a8b9f0848735b7555820f0068914ebd758 in / 
+# Tue, 05 Oct 2021 11:07:35 GMT
 CMD ["bash"]
-# Tue, 31 Aug 2021 03:03:49 GMT
+# Wed, 06 Oct 2021 17:35:02 GMT
 MAINTAINER Jérémy Jacquier-Roux <jeremy.jacquier-roux@bonitasoft.org>
-# Tue, 31 Aug 2021 03:09:22 GMT
+# Wed, 06 Oct 2021 17:40:20 GMT
 RUN apt-get update && apt-get install -y   curl   gnupg2   mysql-client-core-5.7   openjdk-11-jre-headless   postgresql-client   unzip   zip   && rm -rf /var/lib/apt/lists/*
-# Tue, 31 Aug 2021 03:09:44 GMT
+# Wed, 06 Oct 2021 17:40:36 GMT
 RUN mkdir /opt/custom-init.d/
-# Tue, 31 Aug 2021 03:09:56 GMT
+# Wed, 06 Oct 2021 17:40:49 GMT
 RUN groupadd -r bonita -g 1000   && useradd -u 1000 -r -g bonita -d /opt/bonita/ -s /sbin/nologin -c "Bonita User" bonita
-# Tue, 31 Aug 2021 03:10:16 GMT
+# Wed, 06 Oct 2021 17:41:11 GMT
 RUN (gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4   || gpg --keyserver ipv4.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4)   && curl -fsSL "https://github.com/tianon/gosu/releases/download/1.10/gosu-$(dpkg --print-architecture)" -o /usr/local/bin/gosu   && curl -fsSL "https://github.com/tianon/gosu/releases/download/1.10/gosu-$(dpkg --print-architecture).asc" -o /usr/local/bin/gosu.asc   && gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu   && rm /usr/local/bin/gosu.asc   && chmod +x /usr/local/bin/gosu
-# Tue, 31 Aug 2021 03:10:20 GMT
+# Wed, 06 Oct 2021 17:41:15 GMT
 ARG BONITA_VERSION
-# Tue, 31 Aug 2021 03:10:23 GMT
+# Wed, 06 Oct 2021 17:41:21 GMT
 ARG BONITA_SHA256
-# Tue, 31 Aug 2021 03:10:27 GMT
+# Wed, 06 Oct 2021 17:41:24 GMT
 ARG BASE_URL
-# Tue, 31 Aug 2021 03:10:31 GMT
+# Wed, 06 Oct 2021 17:41:28 GMT
 ARG BONITA_URL
-# Tue, 31 Aug 2021 03:10:33 GMT
+# Wed, 06 Oct 2021 17:41:32 GMT
 ENV BONITA_VERSION=7.10.6
-# Tue, 31 Aug 2021 03:10:38 GMT
+# Wed, 06 Oct 2021 17:41:36 GMT
 ENV BONITA_SHA256=aaf61a044e7a8d9ec95d2b5d0c315a6d01d9c93ba01d753fcb008e2cfbbb725f
-# Tue, 31 Aug 2021 03:10:42 GMT
+# Wed, 06 Oct 2021 17:41:39 GMT
 ENV BASE_URL=https://github.com/bonitasoft/bonita-platform-releases/releases/download
-# Tue, 31 Aug 2021 03:10:43 GMT
+# Wed, 06 Oct 2021 17:41:43 GMT
 ENV BONITA_URL=https://github.com/bonitasoft/bonita-platform-releases/releases/download/7.10.6/BonitaCommunity-7.10.6.zip
-# Tue, 31 Aug 2021 03:10:52 GMT
+# Wed, 06 Oct 2021 17:41:53 GMT
 RUN echo "Downloading Bonita from url: $BONITA_URL"
-# Tue, 31 Aug 2021 03:11:10 GMT
+# Wed, 06 Oct 2021 17:42:08 GMT
 RUN mkdir /opt/files   && curl -fsSL ${BONITA_URL} -o /opt/files/BonitaCommunity-${BONITA_VERSION}.zip
-# Tue, 31 Aug 2021 03:11:22 GMT
+# Wed, 06 Oct 2021 17:42:24 GMT
 RUN sha256sum /opt/files/BonitaCommunity-${BONITA_VERSION}.zip
-# Tue, 31 Aug 2021 03:11:34 GMT
+# Wed, 06 Oct 2021 17:42:39 GMT
 RUN echo "$BONITA_SHA256" /opt/files/BonitaCommunity-${BONITA_VERSION}.zip | sha256sum -c -
-# Tue, 31 Aug 2021 03:11:39 GMT
+# Wed, 06 Oct 2021 17:42:48 GMT
 VOLUME [/opt/bonita]
-# Tue, 31 Aug 2021 03:11:41 GMT
+# Wed, 06 Oct 2021 17:42:50 GMT
 COPY dir:46816633cc37ba9fd23af260c8c2384c15f3b4385b5752d6b42577967959f7f0 in /opt/files 
-# Tue, 31 Aug 2021 03:11:42 GMT
+# Wed, 06 Oct 2021 17:42:53 GMT
 COPY dir:157c135edc1215565cc6815861e1a1728bdf09f6cfceca03c1639b2262f1cd65 in /opt/templates 
-# Tue, 31 Aug 2021 03:11:48 GMT
+# Wed, 06 Oct 2021 17:43:02 GMT
 EXPOSE 8080
-# Tue, 31 Aug 2021 03:11:54 GMT
+# Wed, 06 Oct 2021 17:43:11 GMT
 CMD ["/opt/files/startup.sh"]
 ```
 
 -	Layers:
-	-	`sha256:b66177991333478fe4de9a7fc6ee8c546debb78334473278e085735e8a88072d`  
-		Last Modified: Tue, 31 Aug 2021 02:13:59 GMT  
-		Size: 30.4 MB (30437758 bytes)  
+	-	`sha256:db28fc1e594e5598e665c54ac1b7fd602d86dddaf8bb237a72303cec22a9185c`  
+		Last Modified: Tue, 05 Oct 2021 11:10:31 GMT  
+		Size: 30.4 MB (30432921 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7add44339faca2d4e791ed66e2cc50a15e7bda3647d29de7ae9628db9a1493fc`  
-		Last Modified: Tue, 31 Aug 2021 03:21:03 GMT  
-		Size: 111.4 MB (111357716 bytes)  
+	-	`sha256:bf943721da5fe16ad1526daf0d118662eed5a4ec81f67f0257b0f6d1cf97eb2f`  
+		Last Modified: Wed, 06 Oct 2021 17:53:59 GMT  
+		Size: 111.4 MB (111356872 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d3b827ba8115e75901e84e8190622e4d47dca42d7cdf1b1fe977bcb323235f9b`  
-		Last Modified: Tue, 31 Aug 2021 03:20:44 GMT  
-		Size: 155.0 B  
+	-	`sha256:473064e5c08806c79e4df7d11b68071ce1db1d722ee89a5b256daa61ce3bb40f`  
+		Last Modified: Wed, 06 Oct 2021 17:53:39 GMT  
+		Size: 156.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cffd233d9be9777560e7dd5ad2a212327772e2cc680c97b23a38e50f6efeb5f4`  
-		Last Modified: Tue, 31 Aug 2021 03:20:41 GMT  
-		Size: 1.9 KB (1920 bytes)  
+	-	`sha256:fb8dd0f4c928c5646499fa465ceaf38ff1911fb44a81965026406905dfad6948`  
+		Last Modified: Wed, 06 Oct 2021 17:53:37 GMT  
+		Size: 1.9 KB (1915 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f4db659952a332fe2eadf615eaaa663b32956a03131296c855ab00d086a49f9`  
-		Last Modified: Tue, 31 Aug 2021 03:20:41 GMT  
-		Size: 546.7 KB (546736 bytes)  
+	-	`sha256:5869439985c8c50c71fedbeb31eb7f9b4899dd900c4634eba26a95c9ecfa803d`  
+		Last Modified: Wed, 06 Oct 2021 17:53:37 GMT  
+		Size: 546.7 KB (546734 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:23195d1ede89cb6aa100ddfbc20aae90b9a811f215921fbf7bb9767d0f8d866c`  
-		Last Modified: Tue, 31 Aug 2021 03:20:49 GMT  
-		Size: 98.0 MB (97973956 bytes)  
+	-	`sha256:6898acb0d4fde24692123e5c02301e1b1d4719d1d2206b821000ace6fd8e4883`  
+		Last Modified: Wed, 06 Oct 2021 17:53:45 GMT  
+		Size: 98.0 MB (97973946 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a80c5bdf7ebccef54348c023d7cd195c4bb6c3dbe599a831c0d8cf4bada53f2`  
-		Last Modified: Tue, 31 Aug 2021 03:20:41 GMT  
-		Size: 7.7 KB (7652 bytes)  
+	-	`sha256:23c3f53c6ff1b856040014f3558d2382ad4f5452047c2c3ea86cb3d4478dc3b2`  
+		Last Modified: Wed, 06 Oct 2021 17:53:37 GMT  
+		Size: 7.7 KB (7655 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c942391fbaeac4398aa5af8f95bd135bc3f10263ed371efe463398c200793261`  
-		Last Modified: Tue, 31 Aug 2021 03:20:41 GMT  
-		Size: 1.6 KB (1647 bytes)  
+	-	`sha256:da379ca974c4beeb744fc90ef18ac60cc508728872b8a45957de3345963b1e1a`  
+		Last Modified: Wed, 06 Oct 2021 17:53:37 GMT  
+		Size: 1.7 KB (1654 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `bonita:7.10.6`
 
 ```console
-$ docker pull bonita@sha256:6a49dd868f4b92a17db6187993c1d7b1cbd04cf4c69e4e2e3e8c464588dbf74a
+$ docker pull bonita@sha256:04f52433910d9896bf00fc7c553bcc0a9ab78a3e65d296563238758aa954c43b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -870,105 +870,105 @@ CMD ["/opt/files/startup.sh"]
 ### `bonita:7.10.6` - linux; ppc64le
 
 ```console
-$ docker pull bonita@sha256:0ae6c6450c051c25e61270b1a58b8acdae9c5c0abd9f0bcb5d05b795864300b5
+$ docker pull bonita@sha256:18350d80a3c93bafb839352bc992ab1c5d8d049435cdb4d497fc379c4ea26f7a
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **240.3 MB (240327540 bytes)**  
+-	Total Size: **240.3 MB (240321853 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a1b74e981f8d30d34825dd3ce487e3d65a484c148b34f83c95cf71f7c9a5ecd7`
+-	Image ID: `sha256:094dfd3c01c50e2007786e32bea76ea7135af1aefb848759d3d03575ccddd367`
 -	Default Command: `["\/opt\/files\/startup.sh"]`
 
 ```dockerfile
-# Tue, 31 Aug 2021 02:10:11 GMT
-ADD file:32c084b07cf88f4b46c2c94d6e8634a245a8ea46f4c166fe98b49a7e3d44a700 in / 
-# Tue, 31 Aug 2021 02:10:18 GMT
+# Tue, 05 Oct 2021 11:07:29 GMT
+ADD file:fd96554dfb72307c3cf9292c343050a8b9f0848735b7555820f0068914ebd758 in / 
+# Tue, 05 Oct 2021 11:07:35 GMT
 CMD ["bash"]
-# Tue, 31 Aug 2021 03:03:49 GMT
+# Wed, 06 Oct 2021 17:35:02 GMT
 MAINTAINER Jérémy Jacquier-Roux <jeremy.jacquier-roux@bonitasoft.org>
-# Tue, 31 Aug 2021 03:09:22 GMT
+# Wed, 06 Oct 2021 17:40:20 GMT
 RUN apt-get update && apt-get install -y   curl   gnupg2   mysql-client-core-5.7   openjdk-11-jre-headless   postgresql-client   unzip   zip   && rm -rf /var/lib/apt/lists/*
-# Tue, 31 Aug 2021 03:09:44 GMT
+# Wed, 06 Oct 2021 17:40:36 GMT
 RUN mkdir /opt/custom-init.d/
-# Tue, 31 Aug 2021 03:09:56 GMT
+# Wed, 06 Oct 2021 17:40:49 GMT
 RUN groupadd -r bonita -g 1000   && useradd -u 1000 -r -g bonita -d /opt/bonita/ -s /sbin/nologin -c "Bonita User" bonita
-# Tue, 31 Aug 2021 03:10:16 GMT
+# Wed, 06 Oct 2021 17:41:11 GMT
 RUN (gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4   || gpg --keyserver ipv4.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4)   && curl -fsSL "https://github.com/tianon/gosu/releases/download/1.10/gosu-$(dpkg --print-architecture)" -o /usr/local/bin/gosu   && curl -fsSL "https://github.com/tianon/gosu/releases/download/1.10/gosu-$(dpkg --print-architecture).asc" -o /usr/local/bin/gosu.asc   && gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu   && rm /usr/local/bin/gosu.asc   && chmod +x /usr/local/bin/gosu
-# Tue, 31 Aug 2021 03:10:20 GMT
+# Wed, 06 Oct 2021 17:41:15 GMT
 ARG BONITA_VERSION
-# Tue, 31 Aug 2021 03:10:23 GMT
+# Wed, 06 Oct 2021 17:41:21 GMT
 ARG BONITA_SHA256
-# Tue, 31 Aug 2021 03:10:27 GMT
+# Wed, 06 Oct 2021 17:41:24 GMT
 ARG BASE_URL
-# Tue, 31 Aug 2021 03:10:31 GMT
+# Wed, 06 Oct 2021 17:41:28 GMT
 ARG BONITA_URL
-# Tue, 31 Aug 2021 03:10:33 GMT
+# Wed, 06 Oct 2021 17:41:32 GMT
 ENV BONITA_VERSION=7.10.6
-# Tue, 31 Aug 2021 03:10:38 GMT
+# Wed, 06 Oct 2021 17:41:36 GMT
 ENV BONITA_SHA256=aaf61a044e7a8d9ec95d2b5d0c315a6d01d9c93ba01d753fcb008e2cfbbb725f
-# Tue, 31 Aug 2021 03:10:42 GMT
+# Wed, 06 Oct 2021 17:41:39 GMT
 ENV BASE_URL=https://github.com/bonitasoft/bonita-platform-releases/releases/download
-# Tue, 31 Aug 2021 03:10:43 GMT
+# Wed, 06 Oct 2021 17:41:43 GMT
 ENV BONITA_URL=https://github.com/bonitasoft/bonita-platform-releases/releases/download/7.10.6/BonitaCommunity-7.10.6.zip
-# Tue, 31 Aug 2021 03:10:52 GMT
+# Wed, 06 Oct 2021 17:41:53 GMT
 RUN echo "Downloading Bonita from url: $BONITA_URL"
-# Tue, 31 Aug 2021 03:11:10 GMT
+# Wed, 06 Oct 2021 17:42:08 GMT
 RUN mkdir /opt/files   && curl -fsSL ${BONITA_URL} -o /opt/files/BonitaCommunity-${BONITA_VERSION}.zip
-# Tue, 31 Aug 2021 03:11:22 GMT
+# Wed, 06 Oct 2021 17:42:24 GMT
 RUN sha256sum /opt/files/BonitaCommunity-${BONITA_VERSION}.zip
-# Tue, 31 Aug 2021 03:11:34 GMT
+# Wed, 06 Oct 2021 17:42:39 GMT
 RUN echo "$BONITA_SHA256" /opt/files/BonitaCommunity-${BONITA_VERSION}.zip | sha256sum -c -
-# Tue, 31 Aug 2021 03:11:39 GMT
+# Wed, 06 Oct 2021 17:42:48 GMT
 VOLUME [/opt/bonita]
-# Tue, 31 Aug 2021 03:11:41 GMT
+# Wed, 06 Oct 2021 17:42:50 GMT
 COPY dir:46816633cc37ba9fd23af260c8c2384c15f3b4385b5752d6b42577967959f7f0 in /opt/files 
-# Tue, 31 Aug 2021 03:11:42 GMT
+# Wed, 06 Oct 2021 17:42:53 GMT
 COPY dir:157c135edc1215565cc6815861e1a1728bdf09f6cfceca03c1639b2262f1cd65 in /opt/templates 
-# Tue, 31 Aug 2021 03:11:48 GMT
+# Wed, 06 Oct 2021 17:43:02 GMT
 EXPOSE 8080
-# Tue, 31 Aug 2021 03:11:54 GMT
+# Wed, 06 Oct 2021 17:43:11 GMT
 CMD ["/opt/files/startup.sh"]
 ```
 
 -	Layers:
-	-	`sha256:b66177991333478fe4de9a7fc6ee8c546debb78334473278e085735e8a88072d`  
-		Last Modified: Tue, 31 Aug 2021 02:13:59 GMT  
-		Size: 30.4 MB (30437758 bytes)  
+	-	`sha256:db28fc1e594e5598e665c54ac1b7fd602d86dddaf8bb237a72303cec22a9185c`  
+		Last Modified: Tue, 05 Oct 2021 11:10:31 GMT  
+		Size: 30.4 MB (30432921 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7add44339faca2d4e791ed66e2cc50a15e7bda3647d29de7ae9628db9a1493fc`  
-		Last Modified: Tue, 31 Aug 2021 03:21:03 GMT  
-		Size: 111.4 MB (111357716 bytes)  
+	-	`sha256:bf943721da5fe16ad1526daf0d118662eed5a4ec81f67f0257b0f6d1cf97eb2f`  
+		Last Modified: Wed, 06 Oct 2021 17:53:59 GMT  
+		Size: 111.4 MB (111356872 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d3b827ba8115e75901e84e8190622e4d47dca42d7cdf1b1fe977bcb323235f9b`  
-		Last Modified: Tue, 31 Aug 2021 03:20:44 GMT  
-		Size: 155.0 B  
+	-	`sha256:473064e5c08806c79e4df7d11b68071ce1db1d722ee89a5b256daa61ce3bb40f`  
+		Last Modified: Wed, 06 Oct 2021 17:53:39 GMT  
+		Size: 156.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cffd233d9be9777560e7dd5ad2a212327772e2cc680c97b23a38e50f6efeb5f4`  
-		Last Modified: Tue, 31 Aug 2021 03:20:41 GMT  
-		Size: 1.9 KB (1920 bytes)  
+	-	`sha256:fb8dd0f4c928c5646499fa465ceaf38ff1911fb44a81965026406905dfad6948`  
+		Last Modified: Wed, 06 Oct 2021 17:53:37 GMT  
+		Size: 1.9 KB (1915 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f4db659952a332fe2eadf615eaaa663b32956a03131296c855ab00d086a49f9`  
-		Last Modified: Tue, 31 Aug 2021 03:20:41 GMT  
-		Size: 546.7 KB (546736 bytes)  
+	-	`sha256:5869439985c8c50c71fedbeb31eb7f9b4899dd900c4634eba26a95c9ecfa803d`  
+		Last Modified: Wed, 06 Oct 2021 17:53:37 GMT  
+		Size: 546.7 KB (546734 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:23195d1ede89cb6aa100ddfbc20aae90b9a811f215921fbf7bb9767d0f8d866c`  
-		Last Modified: Tue, 31 Aug 2021 03:20:49 GMT  
-		Size: 98.0 MB (97973956 bytes)  
+	-	`sha256:6898acb0d4fde24692123e5c02301e1b1d4719d1d2206b821000ace6fd8e4883`  
+		Last Modified: Wed, 06 Oct 2021 17:53:45 GMT  
+		Size: 98.0 MB (97973946 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a80c5bdf7ebccef54348c023d7cd195c4bb6c3dbe599a831c0d8cf4bada53f2`  
-		Last Modified: Tue, 31 Aug 2021 03:20:41 GMT  
-		Size: 7.7 KB (7652 bytes)  
+	-	`sha256:23c3f53c6ff1b856040014f3558d2382ad4f5452047c2c3ea86cb3d4478dc3b2`  
+		Last Modified: Wed, 06 Oct 2021 17:53:37 GMT  
+		Size: 7.7 KB (7655 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c942391fbaeac4398aa5af8f95bd135bc3f10263ed371efe463398c200793261`  
-		Last Modified: Tue, 31 Aug 2021 03:20:41 GMT  
-		Size: 1.6 KB (1647 bytes)  
+	-	`sha256:da379ca974c4beeb744fc90ef18ac60cc508728872b8a45957de3345963b1e1a`  
+		Last Modified: Wed, 06 Oct 2021 17:53:37 GMT  
+		Size: 1.7 KB (1654 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `bonita:7.11`
 
 ```console
-$ docker pull bonita@sha256:3a8866041d202cbaf62bd6a5a7cd70154df101cfe45901e6b4305d454671eace
+$ docker pull bonita@sha256:27382b807a43400dd7240b43d0679b74b2bb75dcc7835f54dbad2b7aace91754
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1192,113 +1192,113 @@ CMD ["/opt/files/startup.sh"]
 ### `bonita:7.11` - linux; ppc64le
 
 ```console
-$ docker pull bonita@sha256:aba9c3174ce3d2f36951dba013b6d3af8f231e695e07659ed37fe8be538f8582
+$ docker pull bonita@sha256:0701d5a2fdcc829fbb7bacbaa8f3de5b70a145abcac8762591fc6089858084de
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **230.8 MB (230784560 bytes)**  
+-	Total Size: **230.8 MB (230775119 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1f14dc7c890827eefb5f79f2d6153f6e19e26684f58e4212278aae56e2ae059b`
+-	Image ID: `sha256:018671c72fe4f5563be295013fda4aa9aeaf106c25a0fbabff379053949e078b`
 -	Default Command: `["\/opt\/files\/startup.sh"]`
 
 ```dockerfile
-# Tue, 31 Aug 2021 02:10:11 GMT
-ADD file:32c084b07cf88f4b46c2c94d6e8634a245a8ea46f4c166fe98b49a7e3d44a700 in / 
-# Tue, 31 Aug 2021 02:10:18 GMT
+# Tue, 05 Oct 2021 11:07:29 GMT
+ADD file:fd96554dfb72307c3cf9292c343050a8b9f0848735b7555820f0068914ebd758 in / 
+# Tue, 05 Oct 2021 11:07:35 GMT
 CMD ["bash"]
-# Tue, 31 Aug 2021 03:12:17 GMT
+# Wed, 06 Oct 2021 17:43:30 GMT
 LABEL maintainer=Bonitasoft Runtime team <rd.engine@bonitasoft.com>
-# Tue, 31 Aug 2021 03:15:07 GMT
+# Wed, 06 Oct 2021 17:46:35 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends   curl   gnupg2   mysql-client-core-5.7   openjdk-11-jre-headless   postgresql-client   unzip   zip   && rm -rf /var/lib/apt/lists/*
-# Tue, 31 Aug 2021 03:15:18 GMT
+# Wed, 06 Oct 2021 17:46:47 GMT
 RUN mkdir /opt/custom-init.d/
-# Tue, 31 Aug 2021 03:15:28 GMT
+# Wed, 06 Oct 2021 17:46:58 GMT
 RUN groupadd -r bonita -g 1000   && useradd -u 1000 -r -g bonita -d /opt/bonita/ -s /sbin/nologin -c "Bonita User" bonita
-# Tue, 31 Aug 2021 03:15:51 GMT
+# Wed, 06 Oct 2021 17:47:20 GMT
 RUN (gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4   || gpg --keyserver ipv4.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4)   && curl -fsSL "https://github.com/tianon/gosu/releases/download/1.10/gosu-$(dpkg --print-architecture)" -o /usr/local/bin/gosu   && curl -fsSL "https://github.com/tianon/gosu/releases/download/1.10/gosu-$(dpkg --print-architecture).asc" -o /usr/local/bin/gosu.asc   && gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu   && rm /usr/local/bin/gosu.asc   && chmod +x /usr/local/bin/gosu
-# Tue, 31 Aug 2021 03:15:55 GMT
+# Wed, 06 Oct 2021 17:47:24 GMT
 ARG BONITA_VERSION
-# Tue, 31 Aug 2021 03:16:01 GMT
+# Wed, 06 Oct 2021 17:47:28 GMT
 ARG BONITA_SHA256
-# Tue, 31 Aug 2021 03:16:07 GMT
+# Wed, 06 Oct 2021 17:47:31 GMT
 ARG BASE_URL
-# Tue, 31 Aug 2021 03:16:09 GMT
+# Wed, 06 Oct 2021 17:47:34 GMT
 ARG BONITA_URL
-# Tue, 31 Aug 2021 03:16:14 GMT
+# Wed, 06 Oct 2021 17:47:39 GMT
 ENV BONITA_VERSION=7.11.4
-# Tue, 31 Aug 2021 03:16:17 GMT
+# Wed, 06 Oct 2021 17:47:48 GMT
 ENV BONITA_SHA256=5366b61bd36567b1fc62e8cb1d40a78a613c18c0d6eb894e9c414f57269b7d18
-# Tue, 31 Aug 2021 03:16:20 GMT
+# Wed, 06 Oct 2021 17:47:54 GMT
 ENV ZIP_FILE=BonitaCommunity-7.11.4.zip
-# Tue, 31 Aug 2021 03:16:23 GMT
+# Wed, 06 Oct 2021 17:47:58 GMT
 ENV BASE_URL=https://github.com/bonitasoft/bonita-platform-releases/releases/download
-# Tue, 31 Aug 2021 03:16:26 GMT
+# Wed, 06 Oct 2021 17:48:03 GMT
 ENV BONITA_URL=https://github.com/bonitasoft/bonita-platform-releases/releases/download/7.11.4/BonitaCommunity-7.11.4.zip
-# Tue, 31 Aug 2021 03:16:37 GMT
+# Wed, 06 Oct 2021 17:48:14 GMT
 RUN echo "Downloading Bonita from url: ${BONITA_URL}"
-# Tue, 31 Aug 2021 03:16:46 GMT
+# Wed, 06 Oct 2021 17:48:25 GMT
 RUN mkdir /opt/files
-# Tue, 31 Aug 2021 03:16:48 GMT
+# Wed, 06 Oct 2021 17:48:26 GMT
 COPY dir:224f3f698a7c2ba0960fd1c61d1b42d86ab0dee604621557635c99e6a0a6ec2d in /opt/files 
-# Tue, 31 Aug 2021 03:17:03 GMT
+# Wed, 06 Oct 2021 17:48:37 GMT
 RUN if [ -f "/opt/files/BonitaCommunity-${BONITA_VERSION}.zip" ]; then echo "File already present in /opt/files"; else curl -fsSL ${BONITA_URL} -o /opt/files/BonitaCommunity-${BONITA_VERSION}.zip; fi
-# Tue, 31 Aug 2021 03:17:14 GMT
+# Wed, 06 Oct 2021 17:48:57 GMT
 RUN sha256sum /opt/files/${ZIP_FILE}
-# Tue, 31 Aug 2021 03:17:20 GMT
+# Wed, 06 Oct 2021 17:49:10 GMT
 RUN echo "$BONITA_SHA256" /opt/files/${ZIP_FILE} | sha256sum -c -
-# Tue, 31 Aug 2021 03:17:23 GMT
+# Wed, 06 Oct 2021 17:49:12 GMT
 VOLUME [/opt/bonita]
-# Tue, 31 Aug 2021 03:17:25 GMT
+# Wed, 06 Oct 2021 17:49:14 GMT
 COPY dir:c3e962ef70138930cdc6c114f07b10cd87f0a7897e828b1cf0f64aa4e7f29ecb in /opt/templates 
-# Tue, 31 Aug 2021 03:17:30 GMT
+# Wed, 06 Oct 2021 17:49:16 GMT
 EXPOSE 8080
-# Tue, 31 Aug 2021 03:17:34 GMT
+# Wed, 06 Oct 2021 17:49:25 GMT
 CMD ["/opt/files/startup.sh"]
 ```
 
 -	Layers:
-	-	`sha256:b66177991333478fe4de9a7fc6ee8c546debb78334473278e085735e8a88072d`  
-		Last Modified: Tue, 31 Aug 2021 02:13:59 GMT  
-		Size: 30.4 MB (30437758 bytes)  
+	-	`sha256:db28fc1e594e5598e665c54ac1b7fd602d86dddaf8bb237a72303cec22a9185c`  
+		Last Modified: Tue, 05 Oct 2021 11:10:31 GMT  
+		Size: 30.4 MB (30432921 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a54978ae656d40037cfaec12659d83d17df3f111e5c260f8b00c5dc48967862b`  
-		Last Modified: Tue, 31 Aug 2021 03:21:33 GMT  
-		Size: 86.4 MB (86441451 bytes)  
+	-	`sha256:38b3edc21cfc352b7713634c746e33cbc4fa7e3ca0a6a30ff4b38e53392c9b32`  
+		Last Modified: Wed, 06 Oct 2021 17:54:27 GMT  
+		Size: 86.4 MB (86436862 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68cbe73f6d51a2d50268e599e7d89ba63e3c7ecaeebb9d94462603eade0789a5`  
-		Last Modified: Tue, 31 Aug 2021 03:21:18 GMT  
-		Size: 155.0 B  
+	-	`sha256:a018aca2fc40ed2d9ef571ad40cece30b4b96114ea033190abeebc6b26f1159a`  
+		Last Modified: Wed, 06 Oct 2021 17:54:13 GMT  
+		Size: 156.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad0555b6890c27c06b847697527af8c80b7ab11e7c04f51b2d34afa768079ee3`  
-		Last Modified: Tue, 31 Aug 2021 03:21:18 GMT  
-		Size: 1.9 KB (1886 bytes)  
+	-	`sha256:6b1a43207f8aeb2bffccebb563d56f146a642348a74c917fccedc5406ff7c048`  
+		Last Modified: Wed, 06 Oct 2021 17:54:13 GMT  
+		Size: 1.9 KB (1882 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2debdb88d2a487637f51a90eddc12512ef172a3f9b78ac28492b922aad94b55`  
-		Last Modified: Tue, 31 Aug 2021 03:21:15 GMT  
-		Size: 546.7 KB (546735 bytes)  
+	-	`sha256:944db579c4969b5a1590926d71763dcdeff12d81aa7bc74411ea87c3999aa9c9`  
+		Last Modified: Wed, 06 Oct 2021 17:54:11 GMT  
+		Size: 546.7 KB (546726 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2455a524c6bc2143b839a7531d140e08fb9557b58b83bc39ab745f4f27b35ad4`  
-		Last Modified: Tue, 31 Aug 2021 03:21:15 GMT  
+	-	`sha256:836bafca5e14e9559f37720debdea93a01c8863316d746f560dc6c76de13114d`  
+		Last Modified: Wed, 06 Oct 2021 17:54:10 GMT  
 		Size: 148.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d3ffbec42c83b4a8072a5bdea66efb9e2835f9d5a967ec44332bbfbb1f043429`  
-		Last Modified: Tue, 31 Aug 2021 03:21:15 GMT  
-		Size: 6.9 KB (6891 bytes)  
+	-	`sha256:233a6a775023061666f06611263f38e2cc5956ccb007cea963d74e04e2a23b03`  
+		Last Modified: Wed, 06 Oct 2021 17:54:10 GMT  
+		Size: 6.9 KB (6886 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6976cb44c5c1e4ca88a4f5e3d5e8fd1361b495050ed551041f0b8f0236553410`  
-		Last Modified: Tue, 31 Aug 2021 03:21:25 GMT  
-		Size: 113.3 MB (113347827 bytes)  
+	-	`sha256:5515c62070531ed4fcaa8a2d06626755081cd163ed0fec62bb15edfcb9c1f804`  
+		Last Modified: Wed, 06 Oct 2021 17:54:18 GMT  
+		Size: 113.3 MB (113347830 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0c74acd6e8d186eb6f6bc7ce65cfbae0348073dce3ad27e6ca6dde039f27bc7`  
-		Last Modified: Tue, 31 Aug 2021 03:21:16 GMT  
-		Size: 1.7 KB (1709 bytes)  
+	-	`sha256:34d6c54f1c4218e5b76e7882f84c3f0595947848a2b0a1b84d6ae8fb3349275d`  
+		Last Modified: Wed, 06 Oct 2021 17:54:10 GMT  
+		Size: 1.7 KB (1708 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `bonita:7.11.4`
 
 ```console
-$ docker pull bonita@sha256:3a8866041d202cbaf62bd6a5a7cd70154df101cfe45901e6b4305d454671eace
+$ docker pull bonita@sha256:27382b807a43400dd7240b43d0679b74b2bb75dcc7835f54dbad2b7aace91754
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1522,113 +1522,113 @@ CMD ["/opt/files/startup.sh"]
 ### `bonita:7.11.4` - linux; ppc64le
 
 ```console
-$ docker pull bonita@sha256:aba9c3174ce3d2f36951dba013b6d3af8f231e695e07659ed37fe8be538f8582
+$ docker pull bonita@sha256:0701d5a2fdcc829fbb7bacbaa8f3de5b70a145abcac8762591fc6089858084de
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **230.8 MB (230784560 bytes)**  
+-	Total Size: **230.8 MB (230775119 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1f14dc7c890827eefb5f79f2d6153f6e19e26684f58e4212278aae56e2ae059b`
+-	Image ID: `sha256:018671c72fe4f5563be295013fda4aa9aeaf106c25a0fbabff379053949e078b`
 -	Default Command: `["\/opt\/files\/startup.sh"]`
 
 ```dockerfile
-# Tue, 31 Aug 2021 02:10:11 GMT
-ADD file:32c084b07cf88f4b46c2c94d6e8634a245a8ea46f4c166fe98b49a7e3d44a700 in / 
-# Tue, 31 Aug 2021 02:10:18 GMT
+# Tue, 05 Oct 2021 11:07:29 GMT
+ADD file:fd96554dfb72307c3cf9292c343050a8b9f0848735b7555820f0068914ebd758 in / 
+# Tue, 05 Oct 2021 11:07:35 GMT
 CMD ["bash"]
-# Tue, 31 Aug 2021 03:12:17 GMT
+# Wed, 06 Oct 2021 17:43:30 GMT
 LABEL maintainer=Bonitasoft Runtime team <rd.engine@bonitasoft.com>
-# Tue, 31 Aug 2021 03:15:07 GMT
+# Wed, 06 Oct 2021 17:46:35 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends   curl   gnupg2   mysql-client-core-5.7   openjdk-11-jre-headless   postgresql-client   unzip   zip   && rm -rf /var/lib/apt/lists/*
-# Tue, 31 Aug 2021 03:15:18 GMT
+# Wed, 06 Oct 2021 17:46:47 GMT
 RUN mkdir /opt/custom-init.d/
-# Tue, 31 Aug 2021 03:15:28 GMT
+# Wed, 06 Oct 2021 17:46:58 GMT
 RUN groupadd -r bonita -g 1000   && useradd -u 1000 -r -g bonita -d /opt/bonita/ -s /sbin/nologin -c "Bonita User" bonita
-# Tue, 31 Aug 2021 03:15:51 GMT
+# Wed, 06 Oct 2021 17:47:20 GMT
 RUN (gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4   || gpg --keyserver ipv4.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4)   && curl -fsSL "https://github.com/tianon/gosu/releases/download/1.10/gosu-$(dpkg --print-architecture)" -o /usr/local/bin/gosu   && curl -fsSL "https://github.com/tianon/gosu/releases/download/1.10/gosu-$(dpkg --print-architecture).asc" -o /usr/local/bin/gosu.asc   && gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu   && rm /usr/local/bin/gosu.asc   && chmod +x /usr/local/bin/gosu
-# Tue, 31 Aug 2021 03:15:55 GMT
+# Wed, 06 Oct 2021 17:47:24 GMT
 ARG BONITA_VERSION
-# Tue, 31 Aug 2021 03:16:01 GMT
+# Wed, 06 Oct 2021 17:47:28 GMT
 ARG BONITA_SHA256
-# Tue, 31 Aug 2021 03:16:07 GMT
+# Wed, 06 Oct 2021 17:47:31 GMT
 ARG BASE_URL
-# Tue, 31 Aug 2021 03:16:09 GMT
+# Wed, 06 Oct 2021 17:47:34 GMT
 ARG BONITA_URL
-# Tue, 31 Aug 2021 03:16:14 GMT
+# Wed, 06 Oct 2021 17:47:39 GMT
 ENV BONITA_VERSION=7.11.4
-# Tue, 31 Aug 2021 03:16:17 GMT
+# Wed, 06 Oct 2021 17:47:48 GMT
 ENV BONITA_SHA256=5366b61bd36567b1fc62e8cb1d40a78a613c18c0d6eb894e9c414f57269b7d18
-# Tue, 31 Aug 2021 03:16:20 GMT
+# Wed, 06 Oct 2021 17:47:54 GMT
 ENV ZIP_FILE=BonitaCommunity-7.11.4.zip
-# Tue, 31 Aug 2021 03:16:23 GMT
+# Wed, 06 Oct 2021 17:47:58 GMT
 ENV BASE_URL=https://github.com/bonitasoft/bonita-platform-releases/releases/download
-# Tue, 31 Aug 2021 03:16:26 GMT
+# Wed, 06 Oct 2021 17:48:03 GMT
 ENV BONITA_URL=https://github.com/bonitasoft/bonita-platform-releases/releases/download/7.11.4/BonitaCommunity-7.11.4.zip
-# Tue, 31 Aug 2021 03:16:37 GMT
+# Wed, 06 Oct 2021 17:48:14 GMT
 RUN echo "Downloading Bonita from url: ${BONITA_URL}"
-# Tue, 31 Aug 2021 03:16:46 GMT
+# Wed, 06 Oct 2021 17:48:25 GMT
 RUN mkdir /opt/files
-# Tue, 31 Aug 2021 03:16:48 GMT
+# Wed, 06 Oct 2021 17:48:26 GMT
 COPY dir:224f3f698a7c2ba0960fd1c61d1b42d86ab0dee604621557635c99e6a0a6ec2d in /opt/files 
-# Tue, 31 Aug 2021 03:17:03 GMT
+# Wed, 06 Oct 2021 17:48:37 GMT
 RUN if [ -f "/opt/files/BonitaCommunity-${BONITA_VERSION}.zip" ]; then echo "File already present in /opt/files"; else curl -fsSL ${BONITA_URL} -o /opt/files/BonitaCommunity-${BONITA_VERSION}.zip; fi
-# Tue, 31 Aug 2021 03:17:14 GMT
+# Wed, 06 Oct 2021 17:48:57 GMT
 RUN sha256sum /opt/files/${ZIP_FILE}
-# Tue, 31 Aug 2021 03:17:20 GMT
+# Wed, 06 Oct 2021 17:49:10 GMT
 RUN echo "$BONITA_SHA256" /opt/files/${ZIP_FILE} | sha256sum -c -
-# Tue, 31 Aug 2021 03:17:23 GMT
+# Wed, 06 Oct 2021 17:49:12 GMT
 VOLUME [/opt/bonita]
-# Tue, 31 Aug 2021 03:17:25 GMT
+# Wed, 06 Oct 2021 17:49:14 GMT
 COPY dir:c3e962ef70138930cdc6c114f07b10cd87f0a7897e828b1cf0f64aa4e7f29ecb in /opt/templates 
-# Tue, 31 Aug 2021 03:17:30 GMT
+# Wed, 06 Oct 2021 17:49:16 GMT
 EXPOSE 8080
-# Tue, 31 Aug 2021 03:17:34 GMT
+# Wed, 06 Oct 2021 17:49:25 GMT
 CMD ["/opt/files/startup.sh"]
 ```
 
 -	Layers:
-	-	`sha256:b66177991333478fe4de9a7fc6ee8c546debb78334473278e085735e8a88072d`  
-		Last Modified: Tue, 31 Aug 2021 02:13:59 GMT  
-		Size: 30.4 MB (30437758 bytes)  
+	-	`sha256:db28fc1e594e5598e665c54ac1b7fd602d86dddaf8bb237a72303cec22a9185c`  
+		Last Modified: Tue, 05 Oct 2021 11:10:31 GMT  
+		Size: 30.4 MB (30432921 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a54978ae656d40037cfaec12659d83d17df3f111e5c260f8b00c5dc48967862b`  
-		Last Modified: Tue, 31 Aug 2021 03:21:33 GMT  
-		Size: 86.4 MB (86441451 bytes)  
+	-	`sha256:38b3edc21cfc352b7713634c746e33cbc4fa7e3ca0a6a30ff4b38e53392c9b32`  
+		Last Modified: Wed, 06 Oct 2021 17:54:27 GMT  
+		Size: 86.4 MB (86436862 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68cbe73f6d51a2d50268e599e7d89ba63e3c7ecaeebb9d94462603eade0789a5`  
-		Last Modified: Tue, 31 Aug 2021 03:21:18 GMT  
-		Size: 155.0 B  
+	-	`sha256:a018aca2fc40ed2d9ef571ad40cece30b4b96114ea033190abeebc6b26f1159a`  
+		Last Modified: Wed, 06 Oct 2021 17:54:13 GMT  
+		Size: 156.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad0555b6890c27c06b847697527af8c80b7ab11e7c04f51b2d34afa768079ee3`  
-		Last Modified: Tue, 31 Aug 2021 03:21:18 GMT  
-		Size: 1.9 KB (1886 bytes)  
+	-	`sha256:6b1a43207f8aeb2bffccebb563d56f146a642348a74c917fccedc5406ff7c048`  
+		Last Modified: Wed, 06 Oct 2021 17:54:13 GMT  
+		Size: 1.9 KB (1882 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2debdb88d2a487637f51a90eddc12512ef172a3f9b78ac28492b922aad94b55`  
-		Last Modified: Tue, 31 Aug 2021 03:21:15 GMT  
-		Size: 546.7 KB (546735 bytes)  
+	-	`sha256:944db579c4969b5a1590926d71763dcdeff12d81aa7bc74411ea87c3999aa9c9`  
+		Last Modified: Wed, 06 Oct 2021 17:54:11 GMT  
+		Size: 546.7 KB (546726 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2455a524c6bc2143b839a7531d140e08fb9557b58b83bc39ab745f4f27b35ad4`  
-		Last Modified: Tue, 31 Aug 2021 03:21:15 GMT  
+	-	`sha256:836bafca5e14e9559f37720debdea93a01c8863316d746f560dc6c76de13114d`  
+		Last Modified: Wed, 06 Oct 2021 17:54:10 GMT  
 		Size: 148.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d3ffbec42c83b4a8072a5bdea66efb9e2835f9d5a967ec44332bbfbb1f043429`  
-		Last Modified: Tue, 31 Aug 2021 03:21:15 GMT  
-		Size: 6.9 KB (6891 bytes)  
+	-	`sha256:233a6a775023061666f06611263f38e2cc5956ccb007cea963d74e04e2a23b03`  
+		Last Modified: Wed, 06 Oct 2021 17:54:10 GMT  
+		Size: 6.9 KB (6886 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6976cb44c5c1e4ca88a4f5e3d5e8fd1361b495050ed551041f0b8f0236553410`  
-		Last Modified: Tue, 31 Aug 2021 03:21:25 GMT  
-		Size: 113.3 MB (113347827 bytes)  
+	-	`sha256:5515c62070531ed4fcaa8a2d06626755081cd163ed0fec62bb15edfcb9c1f804`  
+		Last Modified: Wed, 06 Oct 2021 17:54:18 GMT  
+		Size: 113.3 MB (113347830 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0c74acd6e8d186eb6f6bc7ce65cfbae0348073dce3ad27e6ca6dde039f27bc7`  
-		Last Modified: Tue, 31 Aug 2021 03:21:16 GMT  
-		Size: 1.7 KB (1709 bytes)  
+	-	`sha256:34d6c54f1c4218e5b76e7882f84c3f0595947848a2b0a1b84d6ae8fb3349275d`  
+		Last Modified: Wed, 06 Oct 2021 17:54:10 GMT  
+		Size: 1.7 KB (1708 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `bonita:7.12`
 
 ```console
-$ docker pull bonita@sha256:4540a66faca5eddb09c489f1502da84c0a8e4cb53b3b33154af0493842a666e2
+$ docker pull bonita@sha256:fa573670c250828436bbdcf850dec5ec500b1fb1858c170bf0eaca00a14de817
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1860,117 +1860,117 @@ CMD ["/opt/files/startup.sh"]
 ### `bonita:7.12` - linux; ppc64le
 
 ```console
-$ docker pull bonita@sha256:2a6e551a5bd891abe055c5d3d9cdeaf51fd8d396f78c85cfb15615a6ea13d4e4
+$ docker pull bonita@sha256:ac1416c77bcac78a9298a94a94abbefde6a84f30d1c8c6ddb9d974813850e64d
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **233.9 MB (233852199 bytes)**  
+-	Total Size: **233.8 MB (233842751 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6637b1b076c10f7d06f93e4de13692ebd64c32e3798b8e5cd4279f111bd2e367`
+-	Image ID: `sha256:39f570d1f0ea23c7cb3e2af3d23faa36d28d1e857626b870b352bb5bed8d9921`
 -	Default Command: `["\/opt\/files\/startup.sh"]`
 
 ```dockerfile
-# Tue, 31 Aug 2021 02:10:11 GMT
-ADD file:32c084b07cf88f4b46c2c94d6e8634a245a8ea46f4c166fe98b49a7e3d44a700 in / 
-# Tue, 31 Aug 2021 02:10:18 GMT
+# Tue, 05 Oct 2021 11:07:29 GMT
+ADD file:fd96554dfb72307c3cf9292c343050a8b9f0848735b7555820f0068914ebd758 in / 
+# Tue, 05 Oct 2021 11:07:35 GMT
 CMD ["bash"]
-# Tue, 31 Aug 2021 03:12:17 GMT
+# Wed, 06 Oct 2021 17:43:30 GMT
 LABEL maintainer=Bonitasoft Runtime team <rd.engine@bonitasoft.com>
-# Tue, 31 Aug 2021 03:15:07 GMT
+# Wed, 06 Oct 2021 17:46:35 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends   curl   gnupg2   mysql-client-core-5.7   openjdk-11-jre-headless   postgresql-client   unzip   zip   && rm -rf /var/lib/apt/lists/*
-# Tue, 31 Aug 2021 03:15:18 GMT
+# Wed, 06 Oct 2021 17:46:47 GMT
 RUN mkdir /opt/custom-init.d/
-# Tue, 31 Aug 2021 03:15:28 GMT
+# Wed, 06 Oct 2021 17:46:58 GMT
 RUN groupadd -r bonita -g 1000   && useradd -u 1000 -r -g bonita -d /opt/bonita/ -s /sbin/nologin -c "Bonita User" bonita
-# Tue, 31 Aug 2021 03:15:51 GMT
+# Wed, 06 Oct 2021 17:47:20 GMT
 RUN (gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4   || gpg --keyserver ipv4.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4)   && curl -fsSL "https://github.com/tianon/gosu/releases/download/1.10/gosu-$(dpkg --print-architecture)" -o /usr/local/bin/gosu   && curl -fsSL "https://github.com/tianon/gosu/releases/download/1.10/gosu-$(dpkg --print-architecture).asc" -o /usr/local/bin/gosu.asc   && gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu   && rm /usr/local/bin/gosu.asc   && chmod +x /usr/local/bin/gosu
-# Tue, 31 Aug 2021 03:15:55 GMT
+# Wed, 06 Oct 2021 17:47:24 GMT
 ARG BONITA_VERSION
-# Tue, 31 Aug 2021 03:18:05 GMT
+# Wed, 06 Oct 2021 17:49:45 GMT
 ARG BRANDING_VERSION
-# Tue, 31 Aug 2021 03:18:09 GMT
+# Wed, 06 Oct 2021 17:49:48 GMT
 ARG BONITA_SHA256
-# Tue, 31 Aug 2021 03:18:12 GMT
+# Wed, 06 Oct 2021 17:49:51 GMT
 ARG BASE_URL
-# Tue, 31 Aug 2021 03:18:20 GMT
+# Wed, 06 Oct 2021 17:49:55 GMT
 ARG BONITA_URL
-# Tue, 31 Aug 2021 03:18:23 GMT
+# Wed, 06 Oct 2021 17:50:00 GMT
 ENV BONITA_VERSION=7.12.1
-# Tue, 31 Aug 2021 03:18:26 GMT
+# Wed, 06 Oct 2021 17:50:05 GMT
 ENV BRANDING_VERSION=2021.1
-# Tue, 31 Aug 2021 03:18:30 GMT
+# Wed, 06 Oct 2021 17:50:10 GMT
 ENV BONITA_SHA256=5342b18dd7f93bd3b2b64f8587504d0bf324f4f84d4259191b7291ee8f9ec693
-# Tue, 31 Aug 2021 03:18:34 GMT
+# Wed, 06 Oct 2021 17:50:17 GMT
 ENV ZIP_FILE=BonitaCommunity-2021.1.zip
-# Tue, 31 Aug 2021 03:18:40 GMT
+# Wed, 06 Oct 2021 17:50:21 GMT
 ENV BASE_URL=https://github.com/bonitasoft/bonita-platform-releases/releases/download
-# Tue, 31 Aug 2021 03:18:42 GMT
+# Wed, 06 Oct 2021 17:50:24 GMT
 ENV BONITA_URL=https://github.com/bonitasoft/bonita-platform-releases/releases/download/2021.1/BonitaCommunity-2021.1.zip
-# Tue, 31 Aug 2021 03:18:50 GMT
+# Wed, 06 Oct 2021 17:50:33 GMT
 RUN echo "Downloading Bonita from url: ${BONITA_URL}"
-# Tue, 31 Aug 2021 03:19:02 GMT
+# Wed, 06 Oct 2021 17:50:46 GMT
 RUN mkdir /opt/files
-# Tue, 31 Aug 2021 03:19:03 GMT
+# Wed, 06 Oct 2021 17:50:49 GMT
 COPY dir:ceba4393fbbad2e791e9b0a75d4a81330c328bd9f67f35ff002adea48d26a677 in /opt/files 
-# Tue, 31 Aug 2021 03:19:14 GMT
+# Wed, 06 Oct 2021 17:51:23 GMT
 RUN if [ -f "/opt/files/BonitaCommunity-${BRANDING_VERSION}.zip" ]; then echo "File already present in /opt/files"; else curl -fsSL ${BONITA_URL} -o /opt/files/BonitaCommunity-${BRANDING_VERSION}.zip; fi
-# Tue, 31 Aug 2021 03:19:26 GMT
+# Wed, 06 Oct 2021 17:51:49 GMT
 RUN sha256sum /opt/files/${ZIP_FILE}
-# Tue, 31 Aug 2021 03:19:37 GMT
+# Wed, 06 Oct 2021 17:52:20 GMT
 RUN echo "$BONITA_SHA256" /opt/files/${ZIP_FILE} | sha256sum -c -
-# Tue, 31 Aug 2021 03:19:46 GMT
+# Wed, 06 Oct 2021 17:52:34 GMT
 VOLUME [/opt/bonita]
-# Tue, 31 Aug 2021 03:19:49 GMT
+# Wed, 06 Oct 2021 17:52:38 GMT
 COPY dir:c3e962ef70138930cdc6c114f07b10cd87f0a7897e828b1cf0f64aa4e7f29ecb in /opt/templates 
-# Tue, 31 Aug 2021 03:19:57 GMT
+# Wed, 06 Oct 2021 17:52:43 GMT
 EXPOSE 8080
-# Tue, 31 Aug 2021 03:20:03 GMT
+# Wed, 06 Oct 2021 17:52:52 GMT
 CMD ["/opt/files/startup.sh"]
 ```
 
 -	Layers:
-	-	`sha256:b66177991333478fe4de9a7fc6ee8c546debb78334473278e085735e8a88072d`  
-		Last Modified: Tue, 31 Aug 2021 02:13:59 GMT  
-		Size: 30.4 MB (30437758 bytes)  
+	-	`sha256:db28fc1e594e5598e665c54ac1b7fd602d86dddaf8bb237a72303cec22a9185c`  
+		Last Modified: Tue, 05 Oct 2021 11:10:31 GMT  
+		Size: 30.4 MB (30432921 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a54978ae656d40037cfaec12659d83d17df3f111e5c260f8b00c5dc48967862b`  
-		Last Modified: Tue, 31 Aug 2021 03:21:33 GMT  
-		Size: 86.4 MB (86441451 bytes)  
+	-	`sha256:38b3edc21cfc352b7713634c746e33cbc4fa7e3ca0a6a30ff4b38e53392c9b32`  
+		Last Modified: Wed, 06 Oct 2021 17:54:27 GMT  
+		Size: 86.4 MB (86436862 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68cbe73f6d51a2d50268e599e7d89ba63e3c7ecaeebb9d94462603eade0789a5`  
-		Last Modified: Tue, 31 Aug 2021 03:21:18 GMT  
-		Size: 155.0 B  
+	-	`sha256:a018aca2fc40ed2d9ef571ad40cece30b4b96114ea033190abeebc6b26f1159a`  
+		Last Modified: Wed, 06 Oct 2021 17:54:13 GMT  
+		Size: 156.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad0555b6890c27c06b847697527af8c80b7ab11e7c04f51b2d34afa768079ee3`  
-		Last Modified: Tue, 31 Aug 2021 03:21:18 GMT  
-		Size: 1.9 KB (1886 bytes)  
+	-	`sha256:6b1a43207f8aeb2bffccebb563d56f146a642348a74c917fccedc5406ff7c048`  
+		Last Modified: Wed, 06 Oct 2021 17:54:13 GMT  
+		Size: 1.9 KB (1882 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2debdb88d2a487637f51a90eddc12512ef172a3f9b78ac28492b922aad94b55`  
-		Last Modified: Tue, 31 Aug 2021 03:21:15 GMT  
-		Size: 546.7 KB (546735 bytes)  
+	-	`sha256:944db579c4969b5a1590926d71763dcdeff12d81aa7bc74411ea87c3999aa9c9`  
+		Last Modified: Wed, 06 Oct 2021 17:54:11 GMT  
+		Size: 546.7 KB (546726 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f44a6dcceeb84150e152f7d2042a19418478b89434c18c29f816842761aebb84`  
-		Last Modified: Tue, 31 Aug 2021 03:21:46 GMT  
-		Size: 148.0 B  
+	-	`sha256:30bb1157a2d16356c3fe03471316decff49b6dc50796a886d2fb6537ec3c3b21`  
+		Last Modified: Wed, 06 Oct 2021 17:54:39 GMT  
+		Size: 146.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:709568a28e21e633e7c8714f0d7c15f5da8998019a55ab816fb0b6801fbfd65e`  
-		Last Modified: Tue, 31 Aug 2021 03:21:45 GMT  
-		Size: 6.9 KB (6947 bytes)  
+	-	`sha256:af3c397b4e693ea0a648aa5d5d11a1d68a1688c3894e594755a4c7b9ab141155`  
+		Last Modified: Wed, 06 Oct 2021 17:54:39 GMT  
+		Size: 6.9 KB (6944 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba285a6b98fd908e3b4653f4ad1e188d38918991721f88d13cdfc321aebca4f8`  
-		Last Modified: Tue, 31 Aug 2021 03:21:54 GMT  
-		Size: 116.4 MB (116415408 bytes)  
+	-	`sha256:dd833d0ae3726dfae569704a9b090ee2eb0dc552d22117765785b6bfbc7a682f`  
+		Last Modified: Wed, 06 Oct 2021 17:54:48 GMT  
+		Size: 116.4 MB (116415402 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21ef0f91abdc722f016ef5cf11495031666b723bca3aec839d977e7340f489dd`  
-		Last Modified: Tue, 31 Aug 2021 03:21:45 GMT  
-		Size: 1.7 KB (1711 bytes)  
+	-	`sha256:3c02458dc3f64372d814c185b974e07b342eec4c2dabd730f6e29a0f1e1b7d56`  
+		Last Modified: Wed, 06 Oct 2021 17:54:39 GMT  
+		Size: 1.7 KB (1712 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `bonita:7.12.1`
 
 ```console
-$ docker pull bonita@sha256:4540a66faca5eddb09c489f1502da84c0a8e4cb53b3b33154af0493842a666e2
+$ docker pull bonita@sha256:fa573670c250828436bbdcf850dec5ec500b1fb1858c170bf0eaca00a14de817
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2202,117 +2202,117 @@ CMD ["/opt/files/startup.sh"]
 ### `bonita:7.12.1` - linux; ppc64le
 
 ```console
-$ docker pull bonita@sha256:2a6e551a5bd891abe055c5d3d9cdeaf51fd8d396f78c85cfb15615a6ea13d4e4
+$ docker pull bonita@sha256:ac1416c77bcac78a9298a94a94abbefde6a84f30d1c8c6ddb9d974813850e64d
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **233.9 MB (233852199 bytes)**  
+-	Total Size: **233.8 MB (233842751 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6637b1b076c10f7d06f93e4de13692ebd64c32e3798b8e5cd4279f111bd2e367`
+-	Image ID: `sha256:39f570d1f0ea23c7cb3e2af3d23faa36d28d1e857626b870b352bb5bed8d9921`
 -	Default Command: `["\/opt\/files\/startup.sh"]`
 
 ```dockerfile
-# Tue, 31 Aug 2021 02:10:11 GMT
-ADD file:32c084b07cf88f4b46c2c94d6e8634a245a8ea46f4c166fe98b49a7e3d44a700 in / 
-# Tue, 31 Aug 2021 02:10:18 GMT
+# Tue, 05 Oct 2021 11:07:29 GMT
+ADD file:fd96554dfb72307c3cf9292c343050a8b9f0848735b7555820f0068914ebd758 in / 
+# Tue, 05 Oct 2021 11:07:35 GMT
 CMD ["bash"]
-# Tue, 31 Aug 2021 03:12:17 GMT
+# Wed, 06 Oct 2021 17:43:30 GMT
 LABEL maintainer=Bonitasoft Runtime team <rd.engine@bonitasoft.com>
-# Tue, 31 Aug 2021 03:15:07 GMT
+# Wed, 06 Oct 2021 17:46:35 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends   curl   gnupg2   mysql-client-core-5.7   openjdk-11-jre-headless   postgresql-client   unzip   zip   && rm -rf /var/lib/apt/lists/*
-# Tue, 31 Aug 2021 03:15:18 GMT
+# Wed, 06 Oct 2021 17:46:47 GMT
 RUN mkdir /opt/custom-init.d/
-# Tue, 31 Aug 2021 03:15:28 GMT
+# Wed, 06 Oct 2021 17:46:58 GMT
 RUN groupadd -r bonita -g 1000   && useradd -u 1000 -r -g bonita -d /opt/bonita/ -s /sbin/nologin -c "Bonita User" bonita
-# Tue, 31 Aug 2021 03:15:51 GMT
+# Wed, 06 Oct 2021 17:47:20 GMT
 RUN (gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4   || gpg --keyserver ipv4.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4)   && curl -fsSL "https://github.com/tianon/gosu/releases/download/1.10/gosu-$(dpkg --print-architecture)" -o /usr/local/bin/gosu   && curl -fsSL "https://github.com/tianon/gosu/releases/download/1.10/gosu-$(dpkg --print-architecture).asc" -o /usr/local/bin/gosu.asc   && gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu   && rm /usr/local/bin/gosu.asc   && chmod +x /usr/local/bin/gosu
-# Tue, 31 Aug 2021 03:15:55 GMT
+# Wed, 06 Oct 2021 17:47:24 GMT
 ARG BONITA_VERSION
-# Tue, 31 Aug 2021 03:18:05 GMT
+# Wed, 06 Oct 2021 17:49:45 GMT
 ARG BRANDING_VERSION
-# Tue, 31 Aug 2021 03:18:09 GMT
+# Wed, 06 Oct 2021 17:49:48 GMT
 ARG BONITA_SHA256
-# Tue, 31 Aug 2021 03:18:12 GMT
+# Wed, 06 Oct 2021 17:49:51 GMT
 ARG BASE_URL
-# Tue, 31 Aug 2021 03:18:20 GMT
+# Wed, 06 Oct 2021 17:49:55 GMT
 ARG BONITA_URL
-# Tue, 31 Aug 2021 03:18:23 GMT
+# Wed, 06 Oct 2021 17:50:00 GMT
 ENV BONITA_VERSION=7.12.1
-# Tue, 31 Aug 2021 03:18:26 GMT
+# Wed, 06 Oct 2021 17:50:05 GMT
 ENV BRANDING_VERSION=2021.1
-# Tue, 31 Aug 2021 03:18:30 GMT
+# Wed, 06 Oct 2021 17:50:10 GMT
 ENV BONITA_SHA256=5342b18dd7f93bd3b2b64f8587504d0bf324f4f84d4259191b7291ee8f9ec693
-# Tue, 31 Aug 2021 03:18:34 GMT
+# Wed, 06 Oct 2021 17:50:17 GMT
 ENV ZIP_FILE=BonitaCommunity-2021.1.zip
-# Tue, 31 Aug 2021 03:18:40 GMT
+# Wed, 06 Oct 2021 17:50:21 GMT
 ENV BASE_URL=https://github.com/bonitasoft/bonita-platform-releases/releases/download
-# Tue, 31 Aug 2021 03:18:42 GMT
+# Wed, 06 Oct 2021 17:50:24 GMT
 ENV BONITA_URL=https://github.com/bonitasoft/bonita-platform-releases/releases/download/2021.1/BonitaCommunity-2021.1.zip
-# Tue, 31 Aug 2021 03:18:50 GMT
+# Wed, 06 Oct 2021 17:50:33 GMT
 RUN echo "Downloading Bonita from url: ${BONITA_URL}"
-# Tue, 31 Aug 2021 03:19:02 GMT
+# Wed, 06 Oct 2021 17:50:46 GMT
 RUN mkdir /opt/files
-# Tue, 31 Aug 2021 03:19:03 GMT
+# Wed, 06 Oct 2021 17:50:49 GMT
 COPY dir:ceba4393fbbad2e791e9b0a75d4a81330c328bd9f67f35ff002adea48d26a677 in /opt/files 
-# Tue, 31 Aug 2021 03:19:14 GMT
+# Wed, 06 Oct 2021 17:51:23 GMT
 RUN if [ -f "/opt/files/BonitaCommunity-${BRANDING_VERSION}.zip" ]; then echo "File already present in /opt/files"; else curl -fsSL ${BONITA_URL} -o /opt/files/BonitaCommunity-${BRANDING_VERSION}.zip; fi
-# Tue, 31 Aug 2021 03:19:26 GMT
+# Wed, 06 Oct 2021 17:51:49 GMT
 RUN sha256sum /opt/files/${ZIP_FILE}
-# Tue, 31 Aug 2021 03:19:37 GMT
+# Wed, 06 Oct 2021 17:52:20 GMT
 RUN echo "$BONITA_SHA256" /opt/files/${ZIP_FILE} | sha256sum -c -
-# Tue, 31 Aug 2021 03:19:46 GMT
+# Wed, 06 Oct 2021 17:52:34 GMT
 VOLUME [/opt/bonita]
-# Tue, 31 Aug 2021 03:19:49 GMT
+# Wed, 06 Oct 2021 17:52:38 GMT
 COPY dir:c3e962ef70138930cdc6c114f07b10cd87f0a7897e828b1cf0f64aa4e7f29ecb in /opt/templates 
-# Tue, 31 Aug 2021 03:19:57 GMT
+# Wed, 06 Oct 2021 17:52:43 GMT
 EXPOSE 8080
-# Tue, 31 Aug 2021 03:20:03 GMT
+# Wed, 06 Oct 2021 17:52:52 GMT
 CMD ["/opt/files/startup.sh"]
 ```
 
 -	Layers:
-	-	`sha256:b66177991333478fe4de9a7fc6ee8c546debb78334473278e085735e8a88072d`  
-		Last Modified: Tue, 31 Aug 2021 02:13:59 GMT  
-		Size: 30.4 MB (30437758 bytes)  
+	-	`sha256:db28fc1e594e5598e665c54ac1b7fd602d86dddaf8bb237a72303cec22a9185c`  
+		Last Modified: Tue, 05 Oct 2021 11:10:31 GMT  
+		Size: 30.4 MB (30432921 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a54978ae656d40037cfaec12659d83d17df3f111e5c260f8b00c5dc48967862b`  
-		Last Modified: Tue, 31 Aug 2021 03:21:33 GMT  
-		Size: 86.4 MB (86441451 bytes)  
+	-	`sha256:38b3edc21cfc352b7713634c746e33cbc4fa7e3ca0a6a30ff4b38e53392c9b32`  
+		Last Modified: Wed, 06 Oct 2021 17:54:27 GMT  
+		Size: 86.4 MB (86436862 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68cbe73f6d51a2d50268e599e7d89ba63e3c7ecaeebb9d94462603eade0789a5`  
-		Last Modified: Tue, 31 Aug 2021 03:21:18 GMT  
-		Size: 155.0 B  
+	-	`sha256:a018aca2fc40ed2d9ef571ad40cece30b4b96114ea033190abeebc6b26f1159a`  
+		Last Modified: Wed, 06 Oct 2021 17:54:13 GMT  
+		Size: 156.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad0555b6890c27c06b847697527af8c80b7ab11e7c04f51b2d34afa768079ee3`  
-		Last Modified: Tue, 31 Aug 2021 03:21:18 GMT  
-		Size: 1.9 KB (1886 bytes)  
+	-	`sha256:6b1a43207f8aeb2bffccebb563d56f146a642348a74c917fccedc5406ff7c048`  
+		Last Modified: Wed, 06 Oct 2021 17:54:13 GMT  
+		Size: 1.9 KB (1882 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2debdb88d2a487637f51a90eddc12512ef172a3f9b78ac28492b922aad94b55`  
-		Last Modified: Tue, 31 Aug 2021 03:21:15 GMT  
-		Size: 546.7 KB (546735 bytes)  
+	-	`sha256:944db579c4969b5a1590926d71763dcdeff12d81aa7bc74411ea87c3999aa9c9`  
+		Last Modified: Wed, 06 Oct 2021 17:54:11 GMT  
+		Size: 546.7 KB (546726 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f44a6dcceeb84150e152f7d2042a19418478b89434c18c29f816842761aebb84`  
-		Last Modified: Tue, 31 Aug 2021 03:21:46 GMT  
-		Size: 148.0 B  
+	-	`sha256:30bb1157a2d16356c3fe03471316decff49b6dc50796a886d2fb6537ec3c3b21`  
+		Last Modified: Wed, 06 Oct 2021 17:54:39 GMT  
+		Size: 146.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:709568a28e21e633e7c8714f0d7c15f5da8998019a55ab816fb0b6801fbfd65e`  
-		Last Modified: Tue, 31 Aug 2021 03:21:45 GMT  
-		Size: 6.9 KB (6947 bytes)  
+	-	`sha256:af3c397b4e693ea0a648aa5d5d11a1d68a1688c3894e594755a4c7b9ab141155`  
+		Last Modified: Wed, 06 Oct 2021 17:54:39 GMT  
+		Size: 6.9 KB (6944 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba285a6b98fd908e3b4653f4ad1e188d38918991721f88d13cdfc321aebca4f8`  
-		Last Modified: Tue, 31 Aug 2021 03:21:54 GMT  
-		Size: 116.4 MB (116415408 bytes)  
+	-	`sha256:dd833d0ae3726dfae569704a9b090ee2eb0dc552d22117765785b6bfbc7a682f`  
+		Last Modified: Wed, 06 Oct 2021 17:54:48 GMT  
+		Size: 116.4 MB (116415402 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21ef0f91abdc722f016ef5cf11495031666b723bca3aec839d977e7340f489dd`  
-		Last Modified: Tue, 31 Aug 2021 03:21:45 GMT  
-		Size: 1.7 KB (1711 bytes)  
+	-	`sha256:3c02458dc3f64372d814c185b974e07b342eec4c2dabd730f6e29a0f1e1b7d56`  
+		Last Modified: Wed, 06 Oct 2021 17:54:39 GMT  
+		Size: 1.7 KB (1712 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `bonita:latest`
 
 ```console
-$ docker pull bonita@sha256:4540a66faca5eddb09c489f1502da84c0a8e4cb53b3b33154af0493842a666e2
+$ docker pull bonita@sha256:fa573670c250828436bbdcf850dec5ec500b1fb1858c170bf0eaca00a14de817
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2544,109 +2544,109 @@ CMD ["/opt/files/startup.sh"]
 ### `bonita:latest` - linux; ppc64le
 
 ```console
-$ docker pull bonita@sha256:2a6e551a5bd891abe055c5d3d9cdeaf51fd8d396f78c85cfb15615a6ea13d4e4
+$ docker pull bonita@sha256:ac1416c77bcac78a9298a94a94abbefde6a84f30d1c8c6ddb9d974813850e64d
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **233.9 MB (233852199 bytes)**  
+-	Total Size: **233.8 MB (233842751 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6637b1b076c10f7d06f93e4de13692ebd64c32e3798b8e5cd4279f111bd2e367`
+-	Image ID: `sha256:39f570d1f0ea23c7cb3e2af3d23faa36d28d1e857626b870b352bb5bed8d9921`
 -	Default Command: `["\/opt\/files\/startup.sh"]`
 
 ```dockerfile
-# Tue, 31 Aug 2021 02:10:11 GMT
-ADD file:32c084b07cf88f4b46c2c94d6e8634a245a8ea46f4c166fe98b49a7e3d44a700 in / 
-# Tue, 31 Aug 2021 02:10:18 GMT
+# Tue, 05 Oct 2021 11:07:29 GMT
+ADD file:fd96554dfb72307c3cf9292c343050a8b9f0848735b7555820f0068914ebd758 in / 
+# Tue, 05 Oct 2021 11:07:35 GMT
 CMD ["bash"]
-# Tue, 31 Aug 2021 03:12:17 GMT
+# Wed, 06 Oct 2021 17:43:30 GMT
 LABEL maintainer=Bonitasoft Runtime team <rd.engine@bonitasoft.com>
-# Tue, 31 Aug 2021 03:15:07 GMT
+# Wed, 06 Oct 2021 17:46:35 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends   curl   gnupg2   mysql-client-core-5.7   openjdk-11-jre-headless   postgresql-client   unzip   zip   && rm -rf /var/lib/apt/lists/*
-# Tue, 31 Aug 2021 03:15:18 GMT
+# Wed, 06 Oct 2021 17:46:47 GMT
 RUN mkdir /opt/custom-init.d/
-# Tue, 31 Aug 2021 03:15:28 GMT
+# Wed, 06 Oct 2021 17:46:58 GMT
 RUN groupadd -r bonita -g 1000   && useradd -u 1000 -r -g bonita -d /opt/bonita/ -s /sbin/nologin -c "Bonita User" bonita
-# Tue, 31 Aug 2021 03:15:51 GMT
+# Wed, 06 Oct 2021 17:47:20 GMT
 RUN (gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4   || gpg --keyserver ipv4.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4)   && curl -fsSL "https://github.com/tianon/gosu/releases/download/1.10/gosu-$(dpkg --print-architecture)" -o /usr/local/bin/gosu   && curl -fsSL "https://github.com/tianon/gosu/releases/download/1.10/gosu-$(dpkg --print-architecture).asc" -o /usr/local/bin/gosu.asc   && gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu   && rm /usr/local/bin/gosu.asc   && chmod +x /usr/local/bin/gosu
-# Tue, 31 Aug 2021 03:15:55 GMT
+# Wed, 06 Oct 2021 17:47:24 GMT
 ARG BONITA_VERSION
-# Tue, 31 Aug 2021 03:18:05 GMT
+# Wed, 06 Oct 2021 17:49:45 GMT
 ARG BRANDING_VERSION
-# Tue, 31 Aug 2021 03:18:09 GMT
+# Wed, 06 Oct 2021 17:49:48 GMT
 ARG BONITA_SHA256
-# Tue, 31 Aug 2021 03:18:12 GMT
+# Wed, 06 Oct 2021 17:49:51 GMT
 ARG BASE_URL
-# Tue, 31 Aug 2021 03:18:20 GMT
+# Wed, 06 Oct 2021 17:49:55 GMT
 ARG BONITA_URL
-# Tue, 31 Aug 2021 03:18:23 GMT
+# Wed, 06 Oct 2021 17:50:00 GMT
 ENV BONITA_VERSION=7.12.1
-# Tue, 31 Aug 2021 03:18:26 GMT
+# Wed, 06 Oct 2021 17:50:05 GMT
 ENV BRANDING_VERSION=2021.1
-# Tue, 31 Aug 2021 03:18:30 GMT
+# Wed, 06 Oct 2021 17:50:10 GMT
 ENV BONITA_SHA256=5342b18dd7f93bd3b2b64f8587504d0bf324f4f84d4259191b7291ee8f9ec693
-# Tue, 31 Aug 2021 03:18:34 GMT
+# Wed, 06 Oct 2021 17:50:17 GMT
 ENV ZIP_FILE=BonitaCommunity-2021.1.zip
-# Tue, 31 Aug 2021 03:18:40 GMT
+# Wed, 06 Oct 2021 17:50:21 GMT
 ENV BASE_URL=https://github.com/bonitasoft/bonita-platform-releases/releases/download
-# Tue, 31 Aug 2021 03:18:42 GMT
+# Wed, 06 Oct 2021 17:50:24 GMT
 ENV BONITA_URL=https://github.com/bonitasoft/bonita-platform-releases/releases/download/2021.1/BonitaCommunity-2021.1.zip
-# Tue, 31 Aug 2021 03:18:50 GMT
+# Wed, 06 Oct 2021 17:50:33 GMT
 RUN echo "Downloading Bonita from url: ${BONITA_URL}"
-# Tue, 31 Aug 2021 03:19:02 GMT
+# Wed, 06 Oct 2021 17:50:46 GMT
 RUN mkdir /opt/files
-# Tue, 31 Aug 2021 03:19:03 GMT
+# Wed, 06 Oct 2021 17:50:49 GMT
 COPY dir:ceba4393fbbad2e791e9b0a75d4a81330c328bd9f67f35ff002adea48d26a677 in /opt/files 
-# Tue, 31 Aug 2021 03:19:14 GMT
+# Wed, 06 Oct 2021 17:51:23 GMT
 RUN if [ -f "/opt/files/BonitaCommunity-${BRANDING_VERSION}.zip" ]; then echo "File already present in /opt/files"; else curl -fsSL ${BONITA_URL} -o /opt/files/BonitaCommunity-${BRANDING_VERSION}.zip; fi
-# Tue, 31 Aug 2021 03:19:26 GMT
+# Wed, 06 Oct 2021 17:51:49 GMT
 RUN sha256sum /opt/files/${ZIP_FILE}
-# Tue, 31 Aug 2021 03:19:37 GMT
+# Wed, 06 Oct 2021 17:52:20 GMT
 RUN echo "$BONITA_SHA256" /opt/files/${ZIP_FILE} | sha256sum -c -
-# Tue, 31 Aug 2021 03:19:46 GMT
+# Wed, 06 Oct 2021 17:52:34 GMT
 VOLUME [/opt/bonita]
-# Tue, 31 Aug 2021 03:19:49 GMT
+# Wed, 06 Oct 2021 17:52:38 GMT
 COPY dir:c3e962ef70138930cdc6c114f07b10cd87f0a7897e828b1cf0f64aa4e7f29ecb in /opt/templates 
-# Tue, 31 Aug 2021 03:19:57 GMT
+# Wed, 06 Oct 2021 17:52:43 GMT
 EXPOSE 8080
-# Tue, 31 Aug 2021 03:20:03 GMT
+# Wed, 06 Oct 2021 17:52:52 GMT
 CMD ["/opt/files/startup.sh"]
 ```
 
 -	Layers:
-	-	`sha256:b66177991333478fe4de9a7fc6ee8c546debb78334473278e085735e8a88072d`  
-		Last Modified: Tue, 31 Aug 2021 02:13:59 GMT  
-		Size: 30.4 MB (30437758 bytes)  
+	-	`sha256:db28fc1e594e5598e665c54ac1b7fd602d86dddaf8bb237a72303cec22a9185c`  
+		Last Modified: Tue, 05 Oct 2021 11:10:31 GMT  
+		Size: 30.4 MB (30432921 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a54978ae656d40037cfaec12659d83d17df3f111e5c260f8b00c5dc48967862b`  
-		Last Modified: Tue, 31 Aug 2021 03:21:33 GMT  
-		Size: 86.4 MB (86441451 bytes)  
+	-	`sha256:38b3edc21cfc352b7713634c746e33cbc4fa7e3ca0a6a30ff4b38e53392c9b32`  
+		Last Modified: Wed, 06 Oct 2021 17:54:27 GMT  
+		Size: 86.4 MB (86436862 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68cbe73f6d51a2d50268e599e7d89ba63e3c7ecaeebb9d94462603eade0789a5`  
-		Last Modified: Tue, 31 Aug 2021 03:21:18 GMT  
-		Size: 155.0 B  
+	-	`sha256:a018aca2fc40ed2d9ef571ad40cece30b4b96114ea033190abeebc6b26f1159a`  
+		Last Modified: Wed, 06 Oct 2021 17:54:13 GMT  
+		Size: 156.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad0555b6890c27c06b847697527af8c80b7ab11e7c04f51b2d34afa768079ee3`  
-		Last Modified: Tue, 31 Aug 2021 03:21:18 GMT  
-		Size: 1.9 KB (1886 bytes)  
+	-	`sha256:6b1a43207f8aeb2bffccebb563d56f146a642348a74c917fccedc5406ff7c048`  
+		Last Modified: Wed, 06 Oct 2021 17:54:13 GMT  
+		Size: 1.9 KB (1882 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2debdb88d2a487637f51a90eddc12512ef172a3f9b78ac28492b922aad94b55`  
-		Last Modified: Tue, 31 Aug 2021 03:21:15 GMT  
-		Size: 546.7 KB (546735 bytes)  
+	-	`sha256:944db579c4969b5a1590926d71763dcdeff12d81aa7bc74411ea87c3999aa9c9`  
+		Last Modified: Wed, 06 Oct 2021 17:54:11 GMT  
+		Size: 546.7 KB (546726 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f44a6dcceeb84150e152f7d2042a19418478b89434c18c29f816842761aebb84`  
-		Last Modified: Tue, 31 Aug 2021 03:21:46 GMT  
-		Size: 148.0 B  
+	-	`sha256:30bb1157a2d16356c3fe03471316decff49b6dc50796a886d2fb6537ec3c3b21`  
+		Last Modified: Wed, 06 Oct 2021 17:54:39 GMT  
+		Size: 146.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:709568a28e21e633e7c8714f0d7c15f5da8998019a55ab816fb0b6801fbfd65e`  
-		Last Modified: Tue, 31 Aug 2021 03:21:45 GMT  
-		Size: 6.9 KB (6947 bytes)  
+	-	`sha256:af3c397b4e693ea0a648aa5d5d11a1d68a1688c3894e594755a4c7b9ab141155`  
+		Last Modified: Wed, 06 Oct 2021 17:54:39 GMT  
+		Size: 6.9 KB (6944 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba285a6b98fd908e3b4653f4ad1e188d38918991721f88d13cdfc321aebca4f8`  
-		Last Modified: Tue, 31 Aug 2021 03:21:54 GMT  
-		Size: 116.4 MB (116415408 bytes)  
+	-	`sha256:dd833d0ae3726dfae569704a9b090ee2eb0dc552d22117765785b6bfbc7a682f`  
+		Last Modified: Wed, 06 Oct 2021 17:54:48 GMT  
+		Size: 116.4 MB (116415402 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21ef0f91abdc722f016ef5cf11495031666b723bca3aec839d977e7340f489dd`  
-		Last Modified: Tue, 31 Aug 2021 03:21:45 GMT  
-		Size: 1.7 KB (1711 bytes)  
+	-	`sha256:3c02458dc3f64372d814c185b974e07b342eec4c2dabd730f6e29a0f1e1b7d56`  
+		Last Modified: Wed, 06 Oct 2021 17:54:39 GMT  
+		Size: 1.7 KB (1712 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
