@@ -1,10 +1,10 @@
-# `friendica:2021.07-fpm-alpine`
+# `friendica:2021.09-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a697057e5099f8e297c00a8f301cc8e29f6bf9a700315b114bd2cdf7dffa52e5`
-- Created: `2021-09-24T02:43:58.194520721Z`
-- Virtual Size: ~ 217.79 Mb  
+- Image ID: `sha256:fbd22cff11e5afea2c8a86498a3fcbf03eb5a67000fa7bb52ca1c22c9f437974`
+- Created: `2021-10-05T17:36:26.367802161Z`
+- Virtual Size: ~ 227.23 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -23,10 +23,10 @@
   - `PHP_ASC_URL=https://www.php.net/distributions/php-7.3.31.tar.xz.asc`
   - `PHP_SHA256=d1aa8f44595d01ac061ff340354d95e146d6152f70e799b44d6b8654fb45cbcc`
   - `GOSU_VERSION=1.14`
-  - `FRIENDICA_VERSION=2021.07`
-  - `FRIENDICA_ADDONS=2021.07`
-  - `FRIENDICA_DOWNLOAD_SHA256=d57ebb33ff733f0ad023ad63e8992d8f61cec06363b951d00f1452760eeeda12`
-  - `FRIENDICA_DOWNLOAD_ADDONS_SHA256=9752046c5af1003338a668683b24476cfb3f8dfeaef466703492a0883581c790`
+  - `FRIENDICA_VERSION=2021.09`
+  - `FRIENDICA_ADDONS=2021.09`
+  - `FRIENDICA_DOWNLOAD_SHA256=49cad34edf1b500b4623d0b92ba32265fe322aac9a3efb08fa234f600bfd817a`
+  - `FRIENDICA_DOWNLOAD_ADDONS_SHA256=1910e732b3ca3fc35e57835f217746d6e1fbed1f76d8da1c989742ac2237090d`
 
 ## `apk` (`.apk`-based packages)
 

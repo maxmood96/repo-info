@@ -1,9 +1,9 @@
-# `friendica:2021.09-dev-apache`
+# `friendica:2021.12-dev-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4b698a2aee3a223ee3b07083c9e80b52c2f115248af1d2fb6a26d52fc857efea`
-- Created: `2021-09-24T02:44:09.808214113Z`
+- Image ID: `sha256:03558f8b8c22a812fe09c302ac1444a52e04fe9f9cceb307a4225d74036982fa`
+- Created: `2021-09-29T13:15:11.005287615Z`
 - Virtual Size: ~ 496.07 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -25,8 +25,8 @@
   - `PHP_URL=https://www.php.net/distributions/php-7.3.31.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-7.3.31.tar.xz.asc`
   - `PHP_SHA256=d1aa8f44595d01ac061ff340354d95e146d6152f70e799b44d6b8654fb45cbcc`
-  - `FRIENDICA_VERSION=2021.09-dev`
-  - `FRIENDICA_ADDONS=2021.09-dev`
+  - `FRIENDICA_VERSION=2021.12-dev`
+  - `FRIENDICA_ADDONS=2021.12-dev`
 
 ## `dpkg` (`.deb`-based packages)
 

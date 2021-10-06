@@ -1,10 +1,10 @@
-# `friendica:2021.09-dev-fpm-alpine`
+# `friendica:2021.12-dev-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:86be1b0460487d2fbdd46d631d57c71f1e6c52c166dbcfb92939901e0bd1945e`
-- Created: `2021-09-24T02:44:28.35550343Z`
-- Virtual Size: ~ 123.32 Mb  
+- Image ID: `sha256:c4c170fd5b4e76a8fadee6230407e3ce0755068740128c56414fcaa5eb3edf96`
+- Created: `2021-09-27T19:26:21.719968432Z`
+- Virtual Size: ~ 123.40 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint-dev.sh"]`
@@ -23,8 +23,8 @@
   - `PHP_ASC_URL=https://www.php.net/distributions/php-7.3.31.tar.xz.asc`
   - `PHP_SHA256=d1aa8f44595d01ac061ff340354d95e146d6152f70e799b44d6b8654fb45cbcc`
   - `GOSU_VERSION=1.14`
-  - `FRIENDICA_VERSION=2021.09-dev`
-  - `FRIENDICA_ADDONS=2021.09-dev`
+  - `FRIENDICA_VERSION=2021.12-dev`
+  - `FRIENDICA_ADDONS=2021.12-dev`
 
 ## `apk` (`.apk`-based packages)
 
@@ -286,16 +286,16 @@ LGPL-3.0-or-later OR GPL-2.0-or-later
 ### `apk` package: `gnupg`
 
 ```console
-gnupg-2.2.27-r0 description:
+gnupg-2.2.31-r0 description:
 GNU Privacy Guard 2 - a PGP replacement tool
 
-gnupg-2.2.27-r0 webpage:
+gnupg-2.2.31-r0 webpage:
 https://www.gnupg.org/
 
-gnupg-2.2.27-r0 installed size:
-4424 KiB
+gnupg-2.2.31-r0 installed size:
+4496 KiB
 
-gnupg-2.2.27-r0 license:
+gnupg-2.2.31-r0 license:
 GPL-3.0-or-later
 
 ```
