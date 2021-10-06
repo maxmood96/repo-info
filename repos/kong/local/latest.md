@@ -1,10 +1,10 @@
-# `kong:2.5.1-alpine`
+# `kong:2.6.0-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1b6b5f34fa906a3f05a677ff10f9b67d4ba90965d41e0009df391962a6b8798c`
-- Created: `2021-09-15T23:20:19.44800438Z`
-- Virtual Size: ~ 141.55 Mb  
+- Image ID: `sha256:d5ef5ae48a052818b2567e65ab0e2e45332dea662fd20af66a49a04c6a5ab54e`
+- Created: `2021-10-05T17:41:55.635039605Z`
+- Virtual Size: ~ 141.63 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -12,9 +12,9 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `ASSET=ce`
-  - `KONG_VERSION=2.5.1`
-  - `KONG_AMD64_SHA=f3fc429372e473e8616cf6afc56543a151bd08ba2bc235176d671515f691f20b`
-  - `KONG_ARM64_SHA=e6d002b49aab10c1ae74cd533640eddc9e7f0ce30562cd7079d4b76d9eb70340`
+  - `KONG_VERSION=2.6.0`
+  - `KONG_AMD64_SHA=43fb5f27185e274e22b4a36b93b1b7e27afe94b9fd2efbe4ec69b8ed8a9e5902`
+  - `KONG_ARM64_SHA=a057eaa6d10ecf49443ec0cac6e1b70a62ee357a777e0e169c780e18fd5c5544`
 - Labels:
   - `maintainer=Kong <support@konghq.com>`
 
@@ -278,16 +278,16 @@ OpenSSL
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.79.0-r0 description:
+libcurl-7.79.1-r0 description:
 The multiprotocol file transfer library
 
-libcurl-7.79.0-r0 webpage:
+libcurl-7.79.1-r0 webpage:
 https://curl.se/
 
-libcurl-7.79.0-r0 installed size:
+libcurl-7.79.1-r0 installed size:
 500 KiB
 
-libcurl-7.79.0-r0 license:
+libcurl-7.79.1-r0 license:
 MIT
 
 ```
@@ -618,16 +618,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2021a-r0 description:
+tzdata-2021c-r0 description:
 Timezone data
 
-tzdata-2021a-r0 webpage:
+tzdata-2021c-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2021a-r0 installed size:
-3436 KiB
+tzdata-2021c-r0 installed size:
+3376 KiB
 
-tzdata-2021a-r0 license:
+tzdata-2021c-r0 license:
 Public-Domain
 
 ```
