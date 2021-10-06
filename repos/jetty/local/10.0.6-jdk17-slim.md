@@ -1,19 +1,19 @@
-# `jetty:10.0.6-jdk11-slim`
+# `jetty:10.0.6-jdk17-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8e17e3d6688f813efdfba006cee4cd643c734d27f78b8dbae0ade4ca55fe42d9`
-- Created: `2021-10-06T01:16:48.271147368Z`
-- Virtual Size: ~ 441.75 Mb  
+- Image ID: `sha256:674ad819dde5a92384fed80fc24c20a8faa18f3b41895d986e3e580cac1c883f`
+- Created: `2021-10-06T01:16:28.407058974Z`
+- Virtual Size: ~ 419.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["java","-jar","/usr/local/jetty/start.jar"]`
 - Environment:
-  - `PATH=/usr/local/jetty/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_HOME=/usr/local/openjdk-11`
+  - `PATH=/usr/local/jetty/bin:/usr/local/openjdk-17/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `JAVA_HOME=/usr/local/openjdk-17`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=11.0.12`
+  - `JAVA_VERSION=17`
   - `JETTY_VERSION=10.0.6`
   - `JETTY_HOME=/usr/local/jetty`
   - `JETTY_BASE=/var/lib/jetty`
