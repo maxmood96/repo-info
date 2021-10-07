@@ -5092,14 +5092,9 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.3.1-5ubuntu4.2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.3.1-5ubuntu4.2.dsc' pam_1.3.1-5ubuntu4.2.dsc 2707 SHA512:8c6c9d6b5162d830b01487eec200f80304519ac546714186efa662ec4705e0489a6f34b261f87d76ddeed0b78c9d4982047906ab40d6eca8370e8840b3cb9b6d
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.3.1.orig.tar.xz' pam_1.3.1.orig.tar.xz 912332 SHA512:6bc8e2a5b64686f0a23846221c5228c88418ba485b17c53b3a12f91262b5bb73566d6b6a5daa1f63bbae54310aee918b987e44a72ce809b4e7c668f0fadfe08e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.3.1-5ubuntu4.2.debian.tar.xz' pam_1.3.1-5ubuntu4.2.debian.tar.xz 172392 SHA512:1a48ae37bd9995e3783d4bbaaed1c086172b51bf91b9229879c578cd371b513c99947f4f4b2a0bc8b84b08d160487f24051ed271344f93cc0afd749787ab1dab
-```
 
 ### `dpkg` source package: `pango1.0=1.44.7-2ubuntu4`
 
@@ -5461,14 +5456,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.8-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.8=3.8.10-0ubuntu1~20.04
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.10-0ubuntu1~20.04.dsc' python3.8_3.8.10-0ubuntu1~20.04.dsc 3521 SHA512:be8d21d6cc9b8d5fe8a8df85370cebcc013b2e2deca5c867e6294bcecf3570d8c4aea7b56af6943156423e1e1a44595fd5be54a5a62ac9062b74234db30c430b
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.10.orig.tar.xz' python3.8_3.8.10.orig.tar.xz 18433456 SHA512:0be69705483ff9692e12048a96180e586f9d84c8d53066629f7fb2389585eb75c0f3506bb8182936e322508f58b71f4d8c6dfebbab9049b31b49da11d3b98e80
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.10-0ubuntu1~20.04.debian.tar.xz' python3.8_3.8.10-0ubuntu1~20.04.debian.tar.xz 210676 SHA512:2bdb7e1b32badd550abdd3ff1d6728fedf0772f01dface4e0f5da2a9e3456957b7ace47682ed4992cf97d17dc6861d91b7c0e2a5b4eedd90bf31330cd8a1dbe7
-```
 
 ### `dpkg` source package: `qhull=2015.2-4`
 

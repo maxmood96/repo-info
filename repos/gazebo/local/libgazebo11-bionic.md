@@ -779,13 +779,9 @@ Licenses: (parsed from: `/usr/share/doc/libdart6/copyright`, `/usr/share/doc/lib
 
 - `BSD-2-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dart6=6.10.0~osrf19~20210610~bionic~175596b511adb55d831c0c3401ef50e2cb96a6f3
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/d/dart6/dart6_6.10.0~osrf19~20210610~bionic~175596b511adb55d831c0c3401ef50e2cb96a6f3.tar.xz' dart6_6.10.0~osrf19~20210610~bionic~175596b511adb55d831c0c3401ef50e2cb96a6f3.tar.xz 10774228 SHA256:805d21715a664b44d7dffb27702380de6bc37c9c063677509e7172f9bb044768
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/d/dart6/dart6_6.10.0~osrf19~20210610~bionic~175596b511adb55d831c0c3401ef50e2cb96a6f3.dsc' dart6_6.10.0~osrf19~20210610~bionic~175596b511adb55d831c0c3401ef50e2cb96a6f3.dsc 4096 SHA256:70f31a9a4edf33db79a3daa476a603d8d2e46196d3c40b54d3e6af0dc506bd96
-```
 
 ### `dpkg` source package: `dash=0.5.8-2.10`
 
@@ -936,13 +932,9 @@ Licenses: (parsed from: `/usr/share/doc/distro-info-data/copyright`)
 
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris distro-info-data=0.37ubuntu0.11
-'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.37ubuntu0.11.dsc' distro-info-data_0.37ubuntu0.11.dsc 1762 SHA512:5ba9e581f879236e17cda5c0f8d418e67fa7b7dcb86494a45355983eee89218b9bbae25fb4dd7b4565e26249e206e1f57ce7a440d4d10d24e0ad48ae8730bd0e
-'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.37ubuntu0.11.tar.xz' distro-info-data_0.37ubuntu0.11.tar.xz 7320 SHA512:cc8fed12bd653d01ab4373f9b7c7cc83c4204b32b13de9622476bdb2068d7b3f89539e99374f4c76b643f3fa4f3fbc9ee24f3eea3696ff7538beb3d11729ca9e
-```
 
 ### `dpkg` source package: `double-conversion=2.0.1-4ubuntu1`
 
@@ -7276,14 +7268,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2021a-0ubuntu0.18.04
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2021a-0ubuntu0.18.04.dsc' tzdata_2021a-0ubuntu0.18.04.dsc 2122 SHA512:8fe939f272d2bffdac7e9c9239756a8ebe3e5675ef15d5561ddadc54e2a8f1a7e7fcd619bc0897c2b8af9363c2f05f8da07f5a847c4c606a0f12024bfa101b30
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2021a.orig.tar.gz' tzdata_2021a.orig.tar.gz 411892 SHA512:7cdd762ec90ce12a30fa36b1d66d1ea82d9fa21e514e2b9c7fcbe2541514ee0fadf30843ff352c65512fb270857b51d1517b45e1232b89c6f954ba9ff1833bb3
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2021a-0ubuntu0.18.04.debian.tar.xz' tzdata_2021a-0ubuntu0.18.04.debian.tar.xz 106356 SHA512:3d988f952d4f6ce3bf4bca1a41695acddc616e8b3cceb3a85de74371b4d0a096ba12c52782466b1c6db3bd8d7688018eb56c31f30d4650517bb1494b846cba04
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2018.09.18.1~18.04.2`
 
