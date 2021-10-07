@@ -1,22 +1,22 @@
-# `hylang:1.0a3-python3.9-bullseye`
+# `hylang:1.0a3-python3.10-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3aedb3126103530e6ae48320941adf529eafe9a35cf4204908a5df4a03f7a344`
-- Created: `2021-09-29T15:30:08.915691511Z`
-- Virtual Size: ~ 132.40 Mb  
+- Image ID: `sha256:1d2b7373c6e15c02ce27a278bd14be1514ebdef6e6a3034b799965e39f3f1af2`
+- Created: `2021-10-06T21:55:34.084071978Z`
+- Virtual Size: ~ 133.15 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `GPG_KEY=E3FF2839C048B25C084DEBE9B26995E310250568`
-  - `PYTHON_VERSION=3.9.7`
+  - `GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696D`
+  - `PYTHON_VERSION=3.10.0`
   - `PYTHON_PIP_VERSION=21.2.4`
   - `PYTHON_SETUPTOOLS_VERSION=57.5.0`
-  - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/c20b0cfd643cd4a19246ccf204e2997af70f6b21/public/get-pip.py`
-  - `PYTHON_GET_PIP_SHA256=fa6f3fb93cce234cd4e8dd2beb54a51ab9c247653b52855a48dd44e6b21ff28b`
+  - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/d781367b97acf0ece7e9e304bf281e99b618bf10/public/get-pip.py`
+  - `PYTHON_GET_PIP_SHA256=01249aa3e58ffb3e1686b7141b4e9aac4d398ef4ac3012ed9dff8dd9f685ffe0`
   - `HY_VERSION=1.0a3`
 
 ## `dpkg` (`.deb`-based packages)
