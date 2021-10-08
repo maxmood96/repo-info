@@ -5394,20 +5394,13 @@ Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`, `/usr/share/doc/lib
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.0.8-2+deb9u6
-'http://security.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.0.8-2+deb9u6.dsc' tiff_4.0.8-2+deb9u6.dsc 2344 SHA256:6a09a189d8d2e22f972b8187eddda0825dc581b4c6e3c0f9e47e74e99ed02c7d
-'http://security.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.0.8.orig.tar.gz' tiff_4.0.8.orig.tar.gz 2065574 SHA256:59d7a5a8ccd92059913f246877db95a2918e6c04fb9d43fd74e5c3390dac2910
-'http://security.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.0.8-2+deb9u6.debian.tar.xz' tiff_4.0.8-2+deb9u6.debian.tar.xz 37964 SHA256:a9e9edcae8e21c6ced701a4c1a79cdd143d4b5ee95acd629bc678b53c59147d6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tiff/4.0.8-2+deb9u6/
 
-- https://sources.debian.net/src/tiff/4.0.8-2+deb9u6/ (for browsing the source)
-- https://sources.debian.net/src/tiff/4.0.8-2+deb9u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tiff/4.0.8-2+deb9u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tzdata=2021a-0+deb9u1`
 
