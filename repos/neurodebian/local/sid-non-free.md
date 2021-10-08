@@ -1496,20 +1496,13 @@ Licenses: (parsed from: `/usr/share/doc/libzstd1/copyright`)
 - `GPL-2`
 - `zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libzstd=1.4.8+dfsg-2.1
-'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.4.8+dfsg-2.1.dsc' libzstd_1.4.8+dfsg-2.1.dsc 2274 SHA256:7c656b8cab7a560710358dddbd949b33b1ffcedd7cbef370132e4018b94e2e74
-'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.4.8+dfsg.orig.tar.xz' libzstd_1.4.8+dfsg.orig.tar.xz 1331996 SHA256:1e8ce5c4880a6d5bd8d3186e4186607dd19b64fc98a3877fc13aeefd566d67c5
-'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.4.8+dfsg-2.1.debian.tar.xz' libzstd_1.4.8+dfsg-2.1.debian.tar.xz 12224 SHA256:cba8544590e59303277e3af2bb260fed32723a1084c9f4928956deca2c80032c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libzstd/1.4.8+dfsg-2.1/
 
-- https://sources.debian.net/src/libzstd/1.4.8+dfsg-2.1/ (for browsing the source)
-- https://sources.debian.net/src/libzstd/1.4.8+dfsg-2.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libzstd/1.4.8+dfsg-2.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=11.1.0`
 
@@ -1777,21 +1770,13 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 - `permissive-like-automake-output`
 - `same-as-rest-of-p11kit`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris p11-kit=0.24.0-2
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.24.0-2.dsc' p11-kit_0.24.0-2.dsc 2407 SHA256:5b0718bfee4d2c65312a024e217f8cf3065d3cbaf65d991e1c0911e40466cada
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.24.0.orig.tar.xz' p11-kit_0.24.0.orig.tar.xz 834392 SHA256:81e6140584f635e4e956a1b93a32239acf3811ff5b2d3a5c6094e94e99d2c685
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.24.0.orig.tar.xz.asc' p11-kit_0.24.0.orig.tar.xz.asc 833 SHA256:f9996976ae08e48ac652d2aad3f0528a75f87eaa6c17cf076ec00e7ce2fbaeed
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.24.0-2.debian.tar.xz' p11-kit_0.24.0-2.debian.tar.xz 22716 SHA256:f99c2f3bc872b90cf13e6d6c2952b71564d470b6bfda6c3c08b5d18dc2d9fc75
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/p11-kit/0.24.0-2/
 
-- https://sources.debian.net/src/p11-kit/0.24.0-2/ (for browsing the source)
-- https://sources.debian.net/src/p11-kit/0.24.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/p11-kit/0.24.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pam=1.4.0-10`
 
