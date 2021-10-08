@@ -2,14 +2,14 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c2ca824c31465096e0a20e8f275fee54bde2eb7b467fbcb85c388007a9d70324`
-- Created: `2021-09-28T07:36:15.566916438Z`
-- Virtual Size: ~ 1.50 Gb  
+- Image ID: `sha256:0a0951ada49f823da16cd8656194c3de640a62254efaa610575399308a35e0bb`
+- Created: `2021-10-07T22:16:49.367499275Z`
+- Virtual Size: ~ 1.70 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["ghci"]`
 - Environment:
-  - `PATH=/root/.cabal/bin:/root/.local/bin:/opt/cabal/3.4/bin:/opt/ghc/9.0.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `PATH=/root/.cabal/bin:/root/.local/bin:/opt/ghc/9.0.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
 
 ## `dpkg` (`.deb`-based packages)
@@ -306,24 +306,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ca-certificates/20200601~deb10u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ca-certificates/20200601~deb10u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `cabal-install-3.4=3.4.0.0+git20210220.2.be18bb7-6~deb10`
-
-Binary Packages:
-
-- `cabal-install-3.4=3.4.0.0+git20210220.2.be18bb7-6~deb10`
-
-Licenses: (parsed from: `/usr/share/doc/cabal-install-3.4/copyright`)
-
-- `BSD-3-Clause`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris cabal-install-3.4=3.4.0.0+git20210220.2.be18bb7-6~deb10
-'http://downloads.haskell.org/debian/pool/main/c/cabal-install-3.4/cabal-install-3.4_3.4.0.0+git20210220.2.be18bb7-6~deb10.dsc' cabal-install-3.4_3.4.0.0+git20210220.2.be18bb7-6~deb10.dsc 1671 SHA256:66591b996b030d28f6a549dd304ad04d646f7e2f27ae2cb0b8b4e86cc03a0b2a
-'http://downloads.haskell.org/debian/pool/main/c/cabal-install-3.4/cabal-install-3.4_3.4.0.0+git20210220.2.be18bb7-6~deb10.tar.xz' cabal-install-3.4_3.4.0.0+git20210220.2.be18bb7-6~deb10.tar.xz 1712052 SHA256:fc0cbe0e609c3a03a05f7608bf4b49ffcdf82e739e3156ffc9e48197088937f8
-```
-
 ### `dpkg` source package: `cdebconf=0.249`
 
 Binary Packages:
@@ -586,9 +568,8 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `dpkg=1.19.7`
-- `libdpkg-perl=1.19.7`
 
-Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`, `/usr/share/doc/libdpkg-perl/copyright`)
+Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 
 - `BSD-2-clause`
 - `GPL-2`
@@ -823,25 +804,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gdbm/1.18.1-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gdbm/1.18.1-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ghc-9.0.1=9.0.1-10~deb10`
-
-Binary Packages:
-
-- `ghc-9.0.1=9.0.1-10~deb10`
-
-Licenses: (parsed from: `/usr/share/doc/ghc-9.0.1/copyright`)
-
-- `BSD-3-Clause`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris ghc-9.0.1=9.0.1-10~deb10
-'http://downloads.haskell.org/debian/pool/main/g/ghc-9.0.1/ghc-9.0.1_9.0.1-10~deb10.dsc' ghc-9.0.1_9.0.1-10~deb10.dsc 2111 SHA256:8182dfeeff661efaff782db09abcbf00172f5b4ec858ad501991d4043e2ad5a9
-'http://downloads.haskell.org/debian/pool/main/g/ghc-9.0.1/ghc-9.0.1_9.0.1.orig.tar.xz' ghc-9.0.1_9.0.1.orig.tar.xz 20782336 SHA256:a5230314e4065f9fcc371dfe519748fd85c825b279abf72a24e09b83578a35f9
-'http://downloads.haskell.org/debian/pool/main/g/ghc-9.0.1/ghc-9.0.1_9.0.1-10~deb10.debian.tar.xz' ghc-9.0.1_9.0.1-10~deb10.debian.tar.xz 10344 SHA256:542cd0c10ac88fd9a826ad96369220ff51406b5c1e099d4cd3582a49c2ded818
-```
-
 ### `dpkg` source package: `git=1:2.20.1-2+deb10u3`
 
 Binary Packages:
@@ -884,34 +846,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/git/1:2.20.1-2+deb10u3/ (for browsing the source)
 - https://sources.debian.net/src/git/1:2.20.1-2+deb10u3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/git/1:2.20.1-2+deb10u3/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `glib2.0=2.58.3-2+deb10u3`
-
-Binary Packages:
-
-- `libglib2.0-0:amd64=2.58.3-2+deb10u3`
-
-Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`)
-
-- `Apache-2.0`
-- `Expat`
-- `GPL-2+`
-- `LGPL`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris glib2.0=2.58.3-2+deb10u3
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.58.3-2+deb10u3.dsc' glib2.0_2.58.3-2+deb10u3.dsc 3444 SHA256:1e016740f39e61ef728f4e2536dc3e3645d37c6dc8369816f8507792563643d8
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.58.3.orig.tar.xz' glib2.0_2.58.3.orig.tar.xz 4863648 SHA256:8f43c31767e88a25da72b52a40f3301fefc49a665b56dc10ee7cc9565cbe7481
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.58.3-2+deb10u3.debian.tar.xz' glib2.0_2.58.3-2+deb10u3.debian.tar.xz 107124 SHA256:2749397b93fca317a7f47489390393dedda6ef3c9359488bbd475a698529cf7a
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/glib2.0/2.58.3-2+deb10u3/ (for browsing the source)
-- https://sources.debian.net/src/glib2.0/2.58.3-2+deb10u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glib2.0/2.58.3-2+deb10u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.28-10`
 
@@ -1508,9 +1442,10 @@ Other potentially useful URLs:
 
 Binary Packages:
 
+- `libffi-dev:amd64=3.2.1-9`
 - `libffi6:amd64=3.2.1-9`
 
-Licenses: (parsed from: `/usr/share/doc/libffi6/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libffi-dev/copyright`, `/usr/share/doc/libffi6/copyright`)
 
 - `GPL`
 
@@ -2533,31 +2468,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pinentry/1.1.0-2/ (for browsing the source)
 - https://sources.debian.net/src/pinentry/1.1.0-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pinentry/1.1.0-2/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `pkg-config=0.29-6`
-
-Binary Packages:
-
-- `pkg-config=0.29-6`
-
-Licenses: (parsed from: `/usr/share/doc/pkg-config/copyright`)
-
-- `GPL`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris pkg-config=0.29-6
-'http://deb.debian.org/debian/pool/main/p/pkg-config/pkg-config_0.29-6.dsc' pkg-config_0.29-6.dsc 1757 SHA256:a5f1a8f976f3d8ad579341ba73514eb3af9dbc6bad8d2b5828699ac24196624f
-'http://deb.debian.org/debian/pool/main/p/pkg-config/pkg-config_0.29.orig.tar.gz' pkg-config_0.29.orig.tar.gz 1973875 SHA256:c8507705d2a10c67f385d66ca2aae31e81770cc0734b4191eb8c489e864a006b
-'http://deb.debian.org/debian/pool/main/p/pkg-config/pkg-config_0.29-6.diff.gz' pkg-config_0.29-6.diff.gz 8145 SHA256:c06146d878fb7faa4ac3edb5e45188b184cc650a752384d5c1053f41edf590bc
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/pkg-config/0.29-6/ (for browsing the source)
-- https://sources.debian.net/src/pkg-config/0.29-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pkg-config/0.29-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=7.0-5`
 
