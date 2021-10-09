@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:22bab5d36dc4dd84bc9f8efb7bf4e8068709f7237ce9b678582b4863f6951317`
-- Created: `2021-10-01T08:31:34.935976582Z`
-- Virtual Size: ~ 495.81 Mb  
+- Image ID: `sha256:fa1501e2d24ab0a6ee2a6588488f7d54dcdd4b8a031940e383066d64e2cf5ec6`
+- Created: `2021-10-06T21:44:48.880067295Z`
+- Virtual Size: ~ 496.12 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["groovysh"]`
@@ -13,7 +13,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-11.0.11+9`
+  - `JAVA_VERSION=jdk-11.0.12+7`
   - `JAVA_HOME=/opt/java/openjdk`
   - `GROOVY_HOME=/opt/groovy`
   - `GROOVY_VERSION=3.0.9`
@@ -1862,14 +1862,9 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2021a-0ubuntu0.20.04
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2021a-0ubuntu0.20.04.dsc' tzdata_2021a-0ubuntu0.20.04.dsc 2141 SHA512:a7b3880ef4e18fda2325c5a4c6a5af4f00b03183c1d968be64d29016d03018d9f13a116290af97d6102c9b170e1fdfd1c356065e10d698f4bbaf177bf13d4cc3
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2021a.orig.tar.gz' tzdata_2021a.orig.tar.gz 411892 SHA512:7cdd762ec90ce12a30fa36b1d66d1ea82d9fa21e514e2b9c7fcbe2541514ee0fadf30843ff352c65512fb270857b51d1517b45e1232b89c6f954ba9ff1833bb3
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2021a-0ubuntu0.20.04.debian.tar.xz' tzdata_2021a-0ubuntu0.20.04.debian.tar.xz 166616 SHA512:6660c8062063897a08abf8832d214fa09983f6d9115f3bc92775596eff24dbeca9f7f3f628c30a51710155bfea88341694ab4a3115a3da48d0616bfbbcc82a66
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2020.02.11.4`
 

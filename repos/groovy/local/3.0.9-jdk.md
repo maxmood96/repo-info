@@ -1,10 +1,10 @@
-# `groovy:3.0.9-jdk8`
+# `groovy:3.0.9-jdk17`
 
 ## Docker Metadata
 
-- Image ID: `sha256:575443f59e2c17be57406aa45b8cc8de850254498ea5c9d984c66d186d4ef963`
-- Created: `2021-10-01T08:30:21.663408194Z`
-- Virtual Size: ~ 378.94 Mb  
+- Image ID: `sha256:dc879ac86fd7ced0b917600860fc6138a03c4bc3c0ab1b0f7b5f5eb2702758ea`
+- Created: `2021-10-06T21:45:30.491557846Z`
+- Virtual Size: ~ 517.65 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["groovysh"]`
@@ -13,7 +13,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk8u292-b10`
+  - `JAVA_VERSION=jdk-17+35`
   - `JAVA_HOME=/opt/java/openjdk`
   - `GROOVY_HOME=/opt/groovy`
   - `GROOVY_VERSION=3.0.9`
@@ -180,6 +180,32 @@ $ apt-get source -qq --print-uris bash=5.0-6ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.0-6ubuntu1.1.dsc' bash_5.0-6ubuntu1.1.dsc 2418 SHA512:283e6fa78ac1a13e6e3a70efa6f67817871b12c1fe099475dfe6b87fd9f2926406446fabb72a66d8546ad320976761ffe68867a1e90bd6a5f97c07e851df9933
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.0.orig.tar.xz' bash_5.0.orig.tar.xz 5554808 SHA512:f3a719997a8515bae7e84701afafc9b2cdd23c95d29533adb678000b08eba968450b93d5576c3cffbeccbdcd95b713db830e8efeda689258dcfe6f15f0c5dec4
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.0-6ubuntu1.1.debian.tar.xz' bash_5.0-6ubuntu1.1.debian.tar.xz 74356 SHA512:450eacea5316075107da9951356021091dfc96889057769590ae8505fa851a99d2f48ce300281b8a448c87e9573cfa2f68a04369ee97955be204e73fa2fd6385
+```
+
+### `dpkg` source package: `binutils=2.34-6ubuntu1.1`
+
+Binary Packages:
+
+- `binutils=2.34-6ubuntu1.1`
+- `binutils-common:amd64=2.34-6ubuntu1.1`
+- `binutils-x86-64-linux-gnu=2.34-6ubuntu1.1`
+- `libbinutils:amd64=2.34-6ubuntu1.1`
+- `libctf-nobfd0:amd64=2.34-6ubuntu1.1`
+- `libctf0:amd64=2.34-6ubuntu1.1`
+
+Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/binutils-common/copyright`, `/usr/share/doc/binutils-x86-64-linux-gnu/copyright`, `/usr/share/doc/libbinutils/copyright`, `/usr/share/doc/libctf-nobfd0/copyright`, `/usr/share/doc/libctf0/copyright`)
+
+- `GFDL`
+- `GPL`
+- `LGPL`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris binutils=2.34-6ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.34-6ubuntu1.1.dsc' binutils_2.34-6ubuntu1.1.dsc 8484 SHA512:9924c20bceaa25297b9048fd25631fe13cd445c6933c979fdae612682a0c8242f38b19b348bfa21f44435f6d1051d20299019cb505ff9b294f09874b16548ef9
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.34.orig.tar.xz' binutils_2.34.orig.tar.xz 21637796 SHA512:2c7976939dcf5e8c5b7374cccd39bfe803b1bec73c6abfa0eb17c24e1942574c6bdb874c66a092a82adc443182eacd8a5a8001c19a76101f0c7ba40c27de0bbd
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.34-6ubuntu1.1.debian.tar.xz' binutils_2.34-6ubuntu1.1.debian.tar.xz 156708 SHA512:5681e1af774cc10c958e297d5afde0c1374db99a4959c77d3d0b5f186f879065e95b9d80eaf8aee1be5b6e825a3bc1a930c19f921db6db87902028a2b2a4c9ef
 ```
 
 ### `dpkg` source package: `brotli=1.0.7-6ubuntu0.1`
@@ -1524,14 +1550,9 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.3.1-5ubuntu4.2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.3.1-5ubuntu4.2.dsc' pam_1.3.1-5ubuntu4.2.dsc 2707 SHA512:8c6c9d6b5162d830b01487eec200f80304519ac546714186efa662ec4705e0489a6f34b261f87d76ddeed0b78c9d4982047906ab40d6eca8370e8840b3cb9b6d
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.3.1.orig.tar.xz' pam_1.3.1.orig.tar.xz 912332 SHA512:6bc8e2a5b64686f0a23846221c5228c88418ba485b17c53b3a12f91262b5bb73566d6b6a5daa1f63bbae54310aee918b987e44a72ce809b4e7c668f0fadfe08e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.3.1-5ubuntu4.2.debian.tar.xz' pam_1.3.1-5ubuntu4.2.debian.tar.xz 172392 SHA512:1a48ae37bd9995e3783d4bbaaed1c086172b51bf91b9229879c578cd371b513c99947f4f4b2a0bc8b84b08d160487f24051ed271344f93cc0afd749787ab1dab
-```
 
 ### `dpkg` source package: `pcre2=10.34-7`
 
@@ -1867,14 +1888,9 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2021a-0ubuntu0.20.04
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2021a-0ubuntu0.20.04.dsc' tzdata_2021a-0ubuntu0.20.04.dsc 2141 SHA512:a7b3880ef4e18fda2325c5a4c6a5af4f00b03183c1d968be64d29016d03018d9f13a116290af97d6102c9b170e1fdfd1c356065e10d698f4bbaf177bf13d4cc3
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2021a.orig.tar.gz' tzdata_2021a.orig.tar.gz 411892 SHA512:7cdd762ec90ce12a30fa36b1d66d1ea82d9fa21e514e2b9c7fcbe2541514ee0fadf30843ff352c65512fb270857b51d1517b45e1232b89c6f954ba9ff1833bb3
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2021a-0ubuntu0.20.04.debian.tar.xz' tzdata_2021a-0ubuntu0.20.04.debian.tar.xz 166616 SHA512:6660c8062063897a08abf8832d214fa09983f6d9115f3bc92775596eff24dbeca9f7f3f628c30a51710155bfea88341694ab4a3115a3da48d0616bfbbcc82a66
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2020.02.11.4`
 
