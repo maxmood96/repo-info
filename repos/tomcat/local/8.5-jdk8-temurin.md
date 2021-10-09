@@ -1,10 +1,10 @@
-# `tomcat:8.5.71-jdk8-temurin-focal`
+# `tomcat:8.5.72-jdk8-temurin-focal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:05cc6c98273a327947de5ce69ff756bb88406eb8792f23d19cf645024b68ef25`
-- Created: `2021-10-01T09:15:46.803605174Z`
-- Virtual Size: ~ 339.70 Mb  
+- Image ID: `sha256:1a95b2f358dc579848c907cc0401ad2a1d22ac553bc316ffb11f5ea49ae64acc`
+- Created: `2021-10-07T20:42:51.295916804Z`
+- Virtual Size: ~ 339.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -20,8 +20,8 @@
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 5C3C5F3E314C866292F359A8F3AD5C94A67F707E 765908099ACF92702C7D949BFA0C35EA8AA299F1 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
   - `TOMCAT_MAJOR=8`
-  - `TOMCAT_VERSION=8.5.71`
-  - `TOMCAT_SHA512=292a3f856b0a8c1d11fd1ba252cabd94794201cda4f951dd0522764449bed90f2f43a4a667cd6d28ce13c3b2096736978d9df91709c168ba7133c51544446433`
+  - `TOMCAT_VERSION=8.5.72`
+  - `TOMCAT_SHA512=41d7eb83120f210d238d8653d729bfb2be32f3666e6c04e73607c05f066c4136b0719f8107cf66673333548c82dc5b9c0357e91fc0ac845e64f055b598f27049`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1469,14 +1469,9 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.3.1-5ubuntu4.2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.3.1-5ubuntu4.2.dsc' pam_1.3.1-5ubuntu4.2.dsc 2707 SHA512:8c6c9d6b5162d830b01487eec200f80304519ac546714186efa662ec4705e0489a6f34b261f87d76ddeed0b78c9d4982047906ab40d6eca8370e8840b3cb9b6d
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.3.1.orig.tar.xz' pam_1.3.1.orig.tar.xz 912332 SHA512:6bc8e2a5b64686f0a23846221c5228c88418ba485b17c53b3a12f91262b5bb73566d6b6a5daa1f63bbae54310aee918b987e44a72ce809b4e7c668f0fadfe08e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.3.1-5ubuntu4.2.debian.tar.xz' pam_1.3.1-5ubuntu4.2.debian.tar.xz 172392 SHA512:1a48ae37bd9995e3783d4bbaaed1c086172b51bf91b9229879c578cd371b513c99947f4f4b2a0bc8b84b08d160487f24051ed271344f93cc0afd749787ab1dab
-```
 
 ### `dpkg` source package: `pcre2=10.34-7`
 
@@ -1768,14 +1763,9 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2021a-0ubuntu0.20.04
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2021a-0ubuntu0.20.04.dsc' tzdata_2021a-0ubuntu0.20.04.dsc 2141 SHA512:a7b3880ef4e18fda2325c5a4c6a5af4f00b03183c1d968be64d29016d03018d9f13a116290af97d6102c9b170e1fdfd1c356065e10d698f4bbaf177bf13d4cc3
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2021a.orig.tar.gz' tzdata_2021a.orig.tar.gz 411892 SHA512:7cdd762ec90ce12a30fa36b1d66d1ea82d9fa21e514e2b9c7fcbe2541514ee0fadf30843ff352c65512fb270857b51d1517b45e1232b89c6f954ba9ff1833bb3
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2021a-0ubuntu0.20.04.debian.tar.xz' tzdata_2021a-0ubuntu0.20.04.debian.tar.xz 166616 SHA512:6660c8062063897a08abf8832d214fa09983f6d9115f3bc92775596eff24dbeca9f7f3f628c30a51710155bfea88341694ab4a3115a3da48d0616bfbbcc82a66
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2020.02.11.4`
 
