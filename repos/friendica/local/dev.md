@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:03558f8b8c22a812fe09c302ac1444a52e04fe9f9cceb307a4225d74036982fa`
-- Created: `2021-09-29T13:15:11.005287615Z`
-- Virtual Size: ~ 496.07 Mb  
+- Image ID: `sha256:fa8b03a7643f620f4555e368844d66e584968b8f7f6428d30ba0ca7be39fb444`
+- Created: `2021-10-07T21:28:06.347301504Z`
+- Virtual Size: ~ 496.06 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint-dev.sh"]`
@@ -110,20 +110,13 @@ Licenses: (parsed from: `/usr/share/doc/apache2/copyright`, `/usr/share/doc/apac
 - `PCRE`
 - `Zeus`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apache2=2.4.38-3+deb10u5
-'http://security.debian.org/debian-security/pool/updates/main/a/apache2/apache2_2.4.38-3+deb10u5.dsc' apache2_2.4.38-3+deb10u5.dsc 3263 SHA256:2a3f5dc0c310807d48d7ca0c772752c76cecaa5f0cba80e5ef0503e230d615b0
-'http://security.debian.org/debian-security/pool/updates/main/a/apache2/apache2_2.4.38.orig.tar.gz' apache2_2.4.38.orig.tar.gz 9187294 SHA256:38d0b73aa313c28065bf58faf64cec12bf7c7d5196146107df2ad07541aa26a6
-'http://security.debian.org/debian-security/pool/updates/main/a/apache2/apache2_2.4.38-3+deb10u5.debian.tar.xz' apache2_2.4.38-3+deb10u5.debian.tar.xz 1076000 SHA256:a553aa61e0a34e825681d4ed284cd0a4d1f73412b746591121a444d3514cd5e2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apache2/2.4.38-3+deb10u5/
 
-- https://sources.debian.net/src/apache2/2.4.38-3+deb10u5/ (for browsing the source)
-- https://sources.debian.net/src/apache2/2.4.38-3+deb10u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apache2/2.4.38-3+deb10u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apr-util=1.6.1-4`
 
