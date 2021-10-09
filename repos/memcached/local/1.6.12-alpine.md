@@ -1,18 +1,18 @@
-# `memcached:1.6.10-alpine`
+# `memcached:1.6.12-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ec200929117689b8cbba5a24fe5e892d7e4bfec5b654cef54958801a6ab9e92b`
-- Created: `2021-08-27T20:43:50.874937956Z`
-- Virtual Size: ~ 8.33 Mb  
+- Image ID: `sha256:384030248f97960936d548d0bcb76864781059a4225bafa7a144891ede511857`
+- Created: `2021-10-07T18:30:23.017090535Z`
+- Virtual Size: ~ 8.36 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["memcached"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `MEMCACHED_VERSION=1.6.10`
-  - `MEMCACHED_SHA1=cb5b9fe77a2a59cc6cc7103a415bc07df9ddc6ec`
+  - `MEMCACHED_VERSION=1.6.12`
+  - `MEMCACHED_SHA1=40d43e98f149e13e6c81eee813e6734f23413a01`
 
 ## `apk` (`.apk`-based packages)
 
