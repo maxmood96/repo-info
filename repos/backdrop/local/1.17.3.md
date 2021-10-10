@@ -110,20 +110,13 @@ Licenses: (parsed from: `/usr/share/doc/apache2/copyright`, `/usr/share/doc/apac
 - `PCRE`
 - `Zeus`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apache2=2.4.38-3+deb10u4
-'http://deb.debian.org/debian/pool/main/a/apache2/apache2_2.4.38-3+deb10u4.dsc' apache2_2.4.38-3+deb10u4.dsc 3263 SHA256:88ea8d599a4bdf6b08ef63871e5106128c09af3d8128a24b3f1a348051cb06da
-'http://deb.debian.org/debian/pool/main/a/apache2/apache2_2.4.38.orig.tar.gz' apache2_2.4.38.orig.tar.gz 9187294 SHA256:38d0b73aa313c28065bf58faf64cec12bf7c7d5196146107df2ad07541aa26a6
-'http://deb.debian.org/debian/pool/main/a/apache2/apache2_2.4.38-3+deb10u4.debian.tar.xz' apache2_2.4.38-3+deb10u4.debian.tar.xz 1074524 SHA256:de047a9a944bdb10cb6fa58512ed91a1af0a264e99bffa00adcced5b85641080
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apache2/2.4.38-3+deb10u4/
 
-- https://sources.debian.net/src/apache2/2.4.38-3+deb10u4/ (for browsing the source)
-- https://sources.debian.net/src/apache2/2.4.38-3+deb10u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apache2/2.4.38-3+deb10u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apr-util=1.6.1-4`
 
@@ -660,19 +653,13 @@ Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 
 - `BSD-2-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debconf=1.5.71
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.71.dsc' debconf_1.5.71.dsc 2047 SHA256:18580a7817060c492048fac9fe0c859b1f5ca07538decfb32b182948a15cab79
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.71.tar.xz' debconf_1.5.71.tar.xz 571272 SHA256:dc23f44775be0d2f52f18eaff4d2d47ef62ae50333df1b737248c8a2635ce433
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debconf/1.5.71/
 
-- https://sources.debian.net/src/debconf/1.5.71/ (for browsing the source)
-- https://sources.debian.net/src/debconf/1.5.71/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debconf/1.5.71/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debian-archive-keyring=2019.1`
 
@@ -1364,20 +1351,13 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.17-3+deb10u1
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.17-3+deb10u1.dsc' krb5_1.17-3+deb10u1.dsc 3573 SHA256:e9edb5d47d4f7dc345e01adc45f1d302f5f19012f8c38d234ef9b2c08bbef7cc
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.17.orig.tar.gz' krb5_1.17.orig.tar.gz 8761763 SHA256:5a6e2284a53de5702d3dc2be3b9339c963f9b5397d3fbbc53beb249380a781f5
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.17-3+deb10u1.debian.tar.xz' krb5_1.17-3+deb10u1.debian.tar.xz 100584 SHA256:396ecf9ec5b4ac91d2ce8527d7f6b2309e70fc5b14ea1158eb7e367c48e9c5ca
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/krb5/1.17-3+deb10u1/
 
-- https://sources.debian.net/src/krb5/1.17-3+deb10u1/ (for browsing the source)
-- https://sources.debian.net/src/krb5/1.17-3+deb10u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/krb5/1.17-3+deb10u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libbsd=0.9.1-2`
 
@@ -2269,21 +2249,13 @@ Licenses: (parsed from: `/usr/share/doc/libhogweed4/copyright`, `/usr/share/doc/
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nettle=3.4.1-1
-'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.4.1-1.dsc' nettle_3.4.1-1.dsc 2258 SHA256:829d6f504938a22a704042211fe351f2e27c52d3811f42c508e95421a9c634fb
-'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.4.1.orig.tar.gz' nettle_3.4.1.orig.tar.gz 1947053 SHA256:f941cf1535cd5d1819be5ccae5babef01f6db611f9b5a777bae9c7604b8a92ad
-'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.4.1.orig.tar.gz.asc' nettle_3.4.1.orig.tar.gz.asc 2476 SHA256:07b265366b46bc67950da3f34687235eaa85c45b326e42bb7c9b58830b651d28
-'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.4.1-1.debian.tar.xz' nettle_3.4.1-1.debian.tar.xz 19988 SHA256:0339933966853cc0c3b2a9721f44116ee31d136d9983d33275d1beb291c11edb
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nettle/3.4.1-1/
 
-- https://sources.debian.net/src/nettle/3.4.1-1/ (for browsing the source)
-- https://sources.debian.net/src/nettle/3.4.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nettle/3.4.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nghttp2=1.36.0-2+deb10u1`
 
