@@ -1,7 +1,7 @@
 ## `photon:latest`
 
 ```console
-$ docker pull photon@sha256:0a4bbd988b1b3f8a61a6364d68d4ba71e1b924066b37d7a0022023b7f188e57d
+$ docker pull photon@sha256:8c79f387b3c9648c0c148ad4280278a2fdafc55d03d64d35129d434c022bc5f7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,29 +12,29 @@ $ docker pull photon@sha256:0a4bbd988b1b3f8a61a6364d68d4ba71e1b924066b37d7a00220
 ### `photon:latest` - linux; amd64
 
 ```console
-$ docker pull photon@sha256:bf8386fc78687980e7a7075760c8ea7496be62ef0644c66e3cd3cbffa2b6b712
+$ docker pull photon@sha256:233fa8546c50dcd08c4df7b3c8905674d256b125d6e289b33a866e874818ad1e
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **16.0 MB (15971580 bytes)**  
+-	Total Size: **16.0 MB (15971632 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0cc42b8571fae499eb9b3315a407d91ac265ffd3307dc9931e0c63d2fe896cc7`
+-	Image ID: `sha256:9a45c88f37764a3220bb85452393b8deffba9467bf5328213524bbc559dde8dc`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Sat, 02 Oct 2021 00:20:45 GMT
-ADD file:a664c1e62a5272618a5894ec88e2ba95871882c0567ce8a84c4fc75530f7daad in / 
-# Sat, 02 Oct 2021 00:20:46 GMT
-LABEL name=Photon OS x86_64/4.0 Base Image vendor=VMware build-date=20211001
-# Sat, 02 Oct 2021 00:20:46 GMT
+# Mon, 11 Oct 2021 18:47:14 GMT
+ADD file:7b4ef9a17a41b9f21f3f8624934c135a83893950e9455b4dc762773df66aae36 in / 
+# Mon, 11 Oct 2021 18:47:14 GMT
+LABEL name=Photon OS x86_64/4.0 Base Image vendor=VMware build-date=20211009
+# Mon, 11 Oct 2021 18:47:15 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:1ca17a650be2a92afd2e9d4f70289672b13f34592e10ed45512264f1173071fa`  
-		Last Modified: Sat, 02 Oct 2021 00:21:56 GMT  
-		Size: 16.0 MB (15971580 bytes)  
+	-	`sha256:55de889bd7054c3431b5c9d1410084d436bf9381a304b7f95b7dc911401d5188`  
+		Last Modified: Mon, 11 Oct 2021 18:47:58 GMT  
+		Size: 16.0 MB (15971632 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `photon:latest` - linux; arm64 variant v8
