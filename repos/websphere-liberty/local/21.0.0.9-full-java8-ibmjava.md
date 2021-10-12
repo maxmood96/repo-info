@@ -4,7 +4,7 @@
 
 - Image ID: `sha256:40f1c032c3900c5bf6d96429e1dc792c442eb1b5e383e8e6322a6cd2fc85a7d2`
 - Created: `2021-10-01T07:18:28.242106012Z`
-- Virtual Size: ~ 613.06 Mb  
+- Virtual Size: ~ 613.07 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ibm/helpers/runtime/docker-server.sh"]`
