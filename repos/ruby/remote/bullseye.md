@@ -1,7 +1,7 @@
 ## `ruby:bullseye`
 
 ```console
-$ docker pull ruby@sha256:fed5fb82e652564ad0bedbc39436859dc2bf1a2b542eacc903cea38fe0fb1824
+$ docker pull ruby@sha256:b922b18f868d184bf51bf4e96842231824f6179e3f6927d619ce9be75b501a1c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -270,14 +270,14 @@ CMD ["irb"]
 ### `ruby:bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull ruby@sha256:150514f1220538b09654cce801811a4a247dcb0920dc5a069eb396aba13ce556
+$ docker pull ruby@sha256:c0ac8dfec4d5c9f690afed1bc413c49edac73b0b4f32c9cf072a8b53ca117f6f
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **342.2 MB (342158868 bytes)**  
+-	Total Size: **341.9 MB (341916787 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f27119e2482fbd904909e0fd64b3c0636144e183d10d9f770265fa3751be1bda`
+-	Image ID: `sha256:37e2f549e5ce36498d1efbfcd0ca5dff65e464e228d59244ac7d64c0aa18856d`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -293,27 +293,27 @@ RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get 
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 # Tue, 12 Oct 2021 02:11:18 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 12 Oct 2021 11:06:00 GMT
+# Wed, 13 Oct 2021 17:08:14 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	{ 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /usr/local/etc/gemrc
-# Tue, 12 Oct 2021 11:06:00 GMT
+# Wed, 13 Oct 2021 17:08:14 GMT
 ENV LANG=C.UTF-8
-# Tue, 12 Oct 2021 11:06:00 GMT
+# Wed, 13 Oct 2021 17:08:15 GMT
 ENV RUBY_MAJOR=3.0
-# Tue, 12 Oct 2021 11:06:01 GMT
+# Wed, 13 Oct 2021 17:08:16 GMT
 ENV RUBY_VERSION=3.0.2
-# Tue, 12 Oct 2021 11:06:01 GMT
+# Wed, 13 Oct 2021 17:08:17 GMT
 ENV RUBY_DOWNLOAD_SHA256=570e7773100f625599575f363831166d91d49a1ab97d3ab6495af44774155c40
-# Tue, 12 Oct 2021 11:08:12 GMT
+# Wed, 13 Oct 2021 17:09:58 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bison 		dpkg-dev 		libgdbm-dev 		ruby 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O ruby.tar.xz "https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		{ 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new; 	mv file.c.new file.c; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 	; 	make -j "$(nproc)"; 	make install; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| grep -vE '^/usr/local/lib/' 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version
-# Tue, 12 Oct 2021 11:08:13 GMT
+# Wed, 13 Oct 2021 17:09:59 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 12 Oct 2021 11:08:13 GMT
+# Wed, 13 Oct 2021 17:10:00 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 12 Oct 2021 11:08:13 GMT
+# Wed, 13 Oct 2021 17:10:01 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 12 Oct 2021 11:08:14 GMT
+# Wed, 13 Oct 2021 17:10:02 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME"
-# Tue, 12 Oct 2021 11:08:14 GMT
+# Wed, 13 Oct 2021 17:10:03 GMT
 CMD ["irb"]
 ```
 
@@ -338,17 +338,17 @@ CMD ["irb"]
 		Last Modified: Tue, 12 Oct 2021 02:19:57 GMT  
 		Size: 189.4 MB (189386094 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec26b33c5cfb131bd4fc19286c466c99c744c5df29c386a35bd14380d3b43709`  
-		Last Modified: Tue, 12 Oct 2021 11:36:45 GMT  
-		Size: 200.0 B  
+	-	`sha256:db65b6b697126f3698b41c891e67fe1664149dc268d87df4508455a949df25bd`  
+		Last Modified: Wed, 13 Oct 2021 17:45:58 GMT  
+		Size: 199.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:97438c3d19b30facba14e37d37e5b3296ce8ec8cb9c8a3a5b0bf8fdd0c017de9`  
-		Last Modified: Tue, 12 Oct 2021 11:36:48 GMT  
-		Size: 28.5 MB (28484885 bytes)  
+	-	`sha256:36f82fd1fdcc5452119a96fd81c49c47e2189b40a3451429fe44f47282e802b4`  
+		Last Modified: Wed, 13 Oct 2021 17:46:01 GMT  
+		Size: 28.2 MB (28242838 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc182b74e8558911a7ef5541694a565ceba3ed9769fceb8d4a344e4331fb26d9`  
-		Last Modified: Tue, 12 Oct 2021 11:36:45 GMT  
-		Size: 176.0 B  
+	-	`sha256:59deaea57df73235aadf23fd79c1655ca56bd2b74bcf11968c6a430bb590b818`  
+		Last Modified: Wed, 13 Oct 2021 17:45:59 GMT  
+		Size: 143.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ruby:bullseye` - linux; 386
