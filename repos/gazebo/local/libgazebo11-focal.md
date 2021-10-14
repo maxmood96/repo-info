@@ -2363,13 +2363,9 @@ Licenses: (parsed from: `/usr/share/doc/libignition-common3/copyright`, `/usr/sh
 - `Apache`
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ignition-common3=3.13.2-2~focal
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-common3/ignition-common3_3.13.2-2~focal.dsc' ignition-common3_3.13.2-2~focal.dsc 1891 SHA256:808064fed3dbc44f5c48c6432893fc4aca1fc8eee446d3be04db0de68d384337
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-common3/ignition-common3_3.13.2-2~focal.tar.xz' ignition-common3_3.13.2-2~focal.tar.xz 6720836 SHA256:fcbf2bbc7443a1d5db72d244ac6515d3afe399d3b91723ffda14abe73ab5cdd9
-```
 
 ### `dpkg` source package: `ignition-fuel-tools4=4.4.0-1~focal`
 
@@ -5418,14 +5414,9 @@ Licenses: (parsed from: `/usr/share/doc/libegl-mesa0/copyright`, `/usr/share/doc
 - `MLAA`
 - `SGI`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mesa=21.0.3-0ubuntu0.3~20.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_21.0.3-0ubuntu0.3~20.04.2.dsc' mesa_21.0.3-0ubuntu0.3~20.04.2.dsc 5523 SHA512:0c058337eb904d1d7c85ccfbcd661f6d34396d93bf9135e7f52942c984942f19035cef9d9a4d8f894621d0dc34be2d8644e0fcbe2f948a2efb25cd8ab59fee26
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_21.0.3.orig.tar.gz' mesa_21.0.3.orig.tar.gz 22634551 SHA512:bcd4cfdc624f2e8adedaaa71b0bbc506ef96e7b9122dbc4ef94bdd544ca13de5b02d2497ad9a646f46d5b290f689b927eb87272d36327f1a1f336c0bd67bb5af
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_21.0.3-0ubuntu0.3~20.04.2.diff.gz' mesa_21.0.3-0ubuntu0.3~20.04.2.diff.gz 117138 SHA512:8a8152bcc9d76f6bc6712d29d77929adf3020719dc6fd7bcfa431f4a5c678256fd1ee8ca7fc123c157da1fe165b4f822c91b97fa69a80198027a3fd9f7549307
-```
 
 ### `dpkg` source package: `mime-support=3.64ubuntu1`
 
