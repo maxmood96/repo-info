@@ -5833,14 +5833,9 @@ Licenses: (parsed from: `/usr/share/doc/libegl-mesa0/copyright`, `/usr/share/doc
 - `MLAA`
 - `SGI`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mesa=21.0.3-0ubuntu0.3~20.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_21.0.3-0ubuntu0.3~20.04.2.dsc' mesa_21.0.3-0ubuntu0.3~20.04.2.dsc 5523 SHA512:0c058337eb904d1d7c85ccfbcd661f6d34396d93bf9135e7f52942c984942f19035cef9d9a4d8f894621d0dc34be2d8644e0fcbe2f948a2efb25cd8ab59fee26
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_21.0.3.orig.tar.gz' mesa_21.0.3.orig.tar.gz 22634551 SHA512:bcd4cfdc624f2e8adedaaa71b0bbc506ef96e7b9122dbc4ef94bdd544ca13de5b02d2497ad9a646f46d5b290f689b927eb87272d36327f1a1f336c0bd67bb5af
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_21.0.3-0ubuntu0.3~20.04.2.diff.gz' mesa_21.0.3-0ubuntu0.3~20.04.2.diff.gz 117138 SHA512:8a8152bcc9d76f6bc6712d29d77929adf3020719dc6fd7bcfa431f4a5c678256fd1ee8ca7fc123c157da1fe165b4f822c91b97fa69a80198027a3fd9f7549307
-```
 
 ### `dpkg` source package: `mime-support=3.64ubuntu1`
 
