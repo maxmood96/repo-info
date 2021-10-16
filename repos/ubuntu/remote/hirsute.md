@@ -1,7 +1,7 @@
 ## `ubuntu:hirsute`
 
 ```console
-$ docker pull ubuntu@sha256:cc6f342e3aad515ae49ec9355d852bbba50c3d63e57786438ec36d8989b72f91
+$ docker pull ubuntu@sha256:26cd4ff32a9c031eaca3d6f589a7799f28b34a539e1bd81acbf1a6efeec4b1ce
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -68,20 +68,20 @@ CMD ["bash"]
 ### `ubuntu:hirsute` - linux; arm64 variant v8
 
 ```console
-$ docker pull ubuntu@sha256:eb35f49285e58e4baf77e7a5eedeac57f1fdfeb688126a1914e61cb5d19f1ae5
+$ docker pull ubuntu@sha256:a73237749396e2f7f30e11d41d4b42438f753420f87294e96f85ef079921dfbd
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **30.2 MB (30174163 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9083fe054c6965dc373db8b9863e89c31abd56aae8ad716c3830e5856c320d9e`
+-	Image ID: `sha256:f6c4934a995f0ac3d4b64d7b1d9910f6da1d5f80bfd11f7690ed82dd0d184313`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Fri, 01 Oct 2021 02:44:04 GMT
+# Sat, 16 Oct 2021 01:47:53 GMT
 ADD file:36081e580b6851b0f8a1176a307b99a673510dc87809a726cad514bd7f56d620 in / 
-# Fri, 01 Oct 2021 02:44:04 GMT
+# Sat, 16 Oct 2021 01:47:53 GMT
 CMD ["bash"]
 ```
 
