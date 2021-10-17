@@ -4,7 +4,7 @@
 
 - Image ID: `sha256:062977003ea314e7f36e43858f2d947140c868c9c2c81d87db183d2b8168f016`
 - Created: `2021-10-12T12:30:59.383799178Z`
-- Virtual Size: ~ 166.60 Mb  
+- Virtual Size: ~ 166.57 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["irssi"]`
