@@ -231,6 +231,62 @@
 -	[`openjdk:17-windowsservercore`](#openjdk17-windowsservercore)
 -	[`openjdk:17-windowsservercore-1809`](#openjdk17-windowsservercore-1809)
 -	[`openjdk:17-windowsservercore-ltsc2016`](#openjdk17-windowsservercore-ltsc2016)
+-	[`openjdk:17.0`](#openjdk170)
+-	[`openjdk:17.0-bullseye`](#openjdk170-bullseye)
+-	[`openjdk:17.0-buster`](#openjdk170-buster)
+-	[`openjdk:17.0-jdk`](#openjdk170-jdk)
+-	[`openjdk:17.0-jdk-bullseye`](#openjdk170-jdk-bullseye)
+-	[`openjdk:17.0-jdk-buster`](#openjdk170-jdk-buster)
+-	[`openjdk:17.0-jdk-nanoserver`](#openjdk170-jdk-nanoserver)
+-	[`openjdk:17.0-jdk-nanoserver-1809`](#openjdk170-jdk-nanoserver-1809)
+-	[`openjdk:17.0-jdk-oracle`](#openjdk170-jdk-oracle)
+-	[`openjdk:17.0-jdk-oraclelinux7`](#openjdk170-jdk-oraclelinux7)
+-	[`openjdk:17.0-jdk-oraclelinux8`](#openjdk170-jdk-oraclelinux8)
+-	[`openjdk:17.0-jdk-slim`](#openjdk170-jdk-slim)
+-	[`openjdk:17.0-jdk-slim-bullseye`](#openjdk170-jdk-slim-bullseye)
+-	[`openjdk:17.0-jdk-slim-buster`](#openjdk170-jdk-slim-buster)
+-	[`openjdk:17.0-jdk-windowsservercore`](#openjdk170-jdk-windowsservercore)
+-	[`openjdk:17.0-jdk-windowsservercore-1809`](#openjdk170-jdk-windowsservercore-1809)
+-	[`openjdk:17.0-jdk-windowsservercore-ltsc2016`](#openjdk170-jdk-windowsservercore-ltsc2016)
+-	[`openjdk:17.0-nanoserver`](#openjdk170-nanoserver)
+-	[`openjdk:17.0-nanoserver-1809`](#openjdk170-nanoserver-1809)
+-	[`openjdk:17.0-oracle`](#openjdk170-oracle)
+-	[`openjdk:17.0-oraclelinux7`](#openjdk170-oraclelinux7)
+-	[`openjdk:17.0-oraclelinux8`](#openjdk170-oraclelinux8)
+-	[`openjdk:17.0-slim`](#openjdk170-slim)
+-	[`openjdk:17.0-slim-bullseye`](#openjdk170-slim-bullseye)
+-	[`openjdk:17.0-slim-buster`](#openjdk170-slim-buster)
+-	[`openjdk:17.0-windowsservercore`](#openjdk170-windowsservercore)
+-	[`openjdk:17.0-windowsservercore-1809`](#openjdk170-windowsservercore-1809)
+-	[`openjdk:17.0-windowsservercore-ltsc2016`](#openjdk170-windowsservercore-ltsc2016)
+-	[`openjdk:17.0.1`](#openjdk1701)
+-	[`openjdk:17.0.1-bullseye`](#openjdk1701-bullseye)
+-	[`openjdk:17.0.1-buster`](#openjdk1701-buster)
+-	[`openjdk:17.0.1-jdk`](#openjdk1701-jdk)
+-	[`openjdk:17.0.1-jdk-bullseye`](#openjdk1701-jdk-bullseye)
+-	[`openjdk:17.0.1-jdk-buster`](#openjdk1701-jdk-buster)
+-	[`openjdk:17.0.1-jdk-nanoserver`](#openjdk1701-jdk-nanoserver)
+-	[`openjdk:17.0.1-jdk-nanoserver-1809`](#openjdk1701-jdk-nanoserver-1809)
+-	[`openjdk:17.0.1-jdk-oracle`](#openjdk1701-jdk-oracle)
+-	[`openjdk:17.0.1-jdk-oraclelinux7`](#openjdk1701-jdk-oraclelinux7)
+-	[`openjdk:17.0.1-jdk-oraclelinux8`](#openjdk1701-jdk-oraclelinux8)
+-	[`openjdk:17.0.1-jdk-slim`](#openjdk1701-jdk-slim)
+-	[`openjdk:17.0.1-jdk-slim-bullseye`](#openjdk1701-jdk-slim-bullseye)
+-	[`openjdk:17.0.1-jdk-slim-buster`](#openjdk1701-jdk-slim-buster)
+-	[`openjdk:17.0.1-jdk-windowsservercore`](#openjdk1701-jdk-windowsservercore)
+-	[`openjdk:17.0.1-jdk-windowsservercore-1809`](#openjdk1701-jdk-windowsservercore-1809)
+-	[`openjdk:17.0.1-jdk-windowsservercore-ltsc2016`](#openjdk1701-jdk-windowsservercore-ltsc2016)
+-	[`openjdk:17.0.1-nanoserver`](#openjdk1701-nanoserver)
+-	[`openjdk:17.0.1-nanoserver-1809`](#openjdk1701-nanoserver-1809)
+-	[`openjdk:17.0.1-oracle`](#openjdk1701-oracle)
+-	[`openjdk:17.0.1-oraclelinux7`](#openjdk1701-oraclelinux7)
+-	[`openjdk:17.0.1-oraclelinux8`](#openjdk1701-oraclelinux8)
+-	[`openjdk:17.0.1-slim`](#openjdk1701-slim)
+-	[`openjdk:17.0.1-slim-bullseye`](#openjdk1701-slim-bullseye)
+-	[`openjdk:17.0.1-slim-buster`](#openjdk1701-slim-buster)
+-	[`openjdk:17.0.1-windowsservercore`](#openjdk1701-windowsservercore)
+-	[`openjdk:17.0.1-windowsservercore-1809`](#openjdk1701-windowsservercore-1809)
+-	[`openjdk:17.0.1-windowsservercore-ltsc2016`](#openjdk1701-windowsservercore-ltsc2016)
 -	[`openjdk:18`](#openjdk18)
 -	[`openjdk:18-alpine`](#openjdk18-alpine)
 -	[`openjdk:18-alpine3.13`](#openjdk18-alpine313)
@@ -29414,6 +29470,510 @@ CMD ["jshell"]
 		Last Modified: Sat, 16 Oct 2021 00:40:45 GMT  
 		Size: 1.4 KB (1388 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:17.0`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0-bullseye`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0-buster`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0-jdk`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0-jdk-bullseye`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0-jdk-buster`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0-jdk-nanoserver`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0-jdk-nanoserver-1809`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0-jdk-oracle`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0-jdk-oraclelinux7`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0-jdk-oraclelinux8`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0-jdk-slim`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0-jdk-slim-bullseye`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0-jdk-slim-buster`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0-jdk-windowsservercore`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0-jdk-windowsservercore-1809`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0-jdk-windowsservercore-ltsc2016`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0-nanoserver`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0-nanoserver-1809`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0-oracle`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0-oraclelinux7`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0-oraclelinux8`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0-slim`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0-slim-bullseye`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0-slim-buster`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0-windowsservercore`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0-windowsservercore-1809`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0-windowsservercore-ltsc2016`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0.1`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0.1-bullseye`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0.1-buster`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0.1-jdk`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0.1-jdk-bullseye`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0.1-jdk-buster`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0.1-jdk-nanoserver`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0.1-jdk-nanoserver-1809`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0.1-jdk-oracle`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0.1-jdk-oraclelinux7`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0.1-jdk-oraclelinux8`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0.1-jdk-slim`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0.1-jdk-slim-bullseye`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0.1-jdk-slim-buster`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0.1-jdk-windowsservercore`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0.1-jdk-windowsservercore-1809`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0.1-jdk-windowsservercore-ltsc2016`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0.1-nanoserver`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0.1-nanoserver-1809`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0.1-oracle`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0.1-oraclelinux7`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0.1-oraclelinux8`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0.1-slim`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0.1-slim-bullseye`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0.1-slim-buster`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0.1-windowsservercore`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0.1-windowsservercore-1809`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `openjdk:17.0.1-windowsservercore-ltsc2016`
+
+```console
+$ docker pull openjdk@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `openjdk:18`
 
