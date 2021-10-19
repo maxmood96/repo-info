@@ -1,70 +1,68 @@
 ## `docker:rc-windowsservercore`
 
 ```console
-$ docker pull docker@sha256:b93c815cb85b0b33bda3995458689c458b48600f7bebf504ae7819c5f2bb0d81
+$ docker pull docker@sha256:d125ea7479d2d64ebfaf3c09e13c9a2779a138418349bc84d91ccd10ec86ca2b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.14393.1884; amd64
+	-	windows version 10.0.17763.2237; amd64
 
-### `docker:rc-windowsservercore` - windows version 10.0.14393.1884; amd64
+### `docker:rc-windowsservercore` - windows version 10.0.17763.2237; amd64
 
 ```console
-$ docker pull docker@sha256:ecb33e06762179b8a50fc3204702e18b0d5631710f3c5f51e865103eea6a4413
+$ docker pull docker@sha256:9af1a450bff542c3c59ca59c23baa4ac809b21689a52270f0a1ecb2b7b772b99
 ```
 
--	Docker Version: 17.06.1-ee-2
+-	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 GB (5372790933 bytes)**  
+-	Total Size: **2.7 GB (2737571068 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:03cd7d97ead7d0f7646b6c4466ae43a81295dbb77a1330ef15034c0a5df311fe`
+-	Image ID: `sha256:030ab72ca4bd277d8bcbd0c1d4724748ee32af45ec02e98bc29896baa85fa824`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
-# Tue, 13 Dec 2016 10:53:31 GMT
-RUN Apply image 10.0.14393.0
-# Mon, 13 Nov 2017 21:42:13 GMT
-RUN Install update 10.0.14393.1884
-# Wed, 15 Nov 2017 03:14:47 GMT
+# Thu, 07 May 2020 05:09:25 GMT
+RUN Apply image 1809-RTM-amd64
+# Thu, 07 Oct 2021 08:25:51 GMT
+RUN Install update 1809-amd64
+# Wed, 13 Oct 2021 12:02:56 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 15 Nov 2017 19:27:10 GMT
+# Thu, 14 Oct 2021 02:43:13 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Wed, 15 Nov 2017 19:27:11 GMT
-ENV DOCKER_CHANNEL=test
-# Wed, 15 Nov 2017 19:27:12 GMT
-ENV DOCKER_VERSION=17.11.0-ce-rc3
-# Wed, 15 Nov 2017 19:28:13 GMT
-RUN $url = ('https://download.docker.com/win/static/{0}/x86_64/docker-{1}.zip' -f $env:DOCKER_CHANNEL, $env:DOCKER_VERSION); 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
+# Mon, 18 Oct 2021 22:15:32 GMT
+ENV DOCKER_VERSION=20.10.10-rc1
+# Mon, 18 Oct 2021 22:15:33 GMT
+ENV DOCKER_URL=https://download.docker.com/win/static/test/x86_64/docker-20.10.10-rc1.zip
+# Mon, 18 Oct 2021 22:16:56 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
 ```
 
 -	Layers:
-	-	`sha256:3889bb8d808bbae6fa5a33e07093e65c31371bcf9e4c38c21be6b9af52ad1548`  
-		Last Modified: Tue, 18 Sep 2018 20:20:50 GMT  
-		Size: 4.1 GB (4069985900 bytes)  
+	-	`sha256:4612f6d0b889cad0ed0292fae3a0b0c8a9e49aff6dea8eb049b2386d9b07986f`  
+		Size: 1.7 GB (1718332879 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:ead9f4ead3c5a712cb213a5318f4a8bf3604bc16e16ce4f7cf0b66f7d2073282`  
-		Last Modified: Tue, 18 Sep 2018 00:42:16 GMT  
-		Size: 1.3 GB (1286993027 bytes)  
+	-	`sha256:c0698cf91ebd6bcfb319be6a50421b356d6a3dbbd213d9b2b9dca0f837d7a999`  
+		Size: 968.0 MB (967985917 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:a4bd6cd94ee2a374930b7554f113d83a6d2d7c4fc6059acd6f2f60e0f29d2f26`  
-		Last Modified: Wed, 15 Nov 2017 10:26:12 GMT  
-		Size: 1.2 KB (1195 bytes)  
+	-	`sha256:cc0c4e719f418d49c6a0fb87abd2e0e480c5b6fec1bacc3077cacfad9b4ab3e0`  
+		Last Modified: Wed, 13 Oct 2021 12:18:09 GMT  
+		Size: 1.4 KB (1399 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6a6bca6ca4a5af1b9ecee7c5d06eed25aaf7d650400c816faf8118c069fcdc6`  
-		Last Modified: Wed, 15 Nov 2017 19:30:54 GMT  
-		Size: 4.9 MB (4876193 bytes)  
+	-	`sha256:dd874ac08ee111fe2cf114d0c6cde1f454b67345e21ce092adcb65291fa3d020`  
+		Last Modified: Thu, 14 Oct 2021 02:44:58 GMT  
+		Size: 347.3 KB (347273 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5674b5976285ba892ab4f5b91e7a35ff744c5cf8dbb16ed3b48c2218b651af0`  
-		Last Modified: Wed, 15 Nov 2017 19:30:53 GMT  
-		Size: 1.2 KB (1202 bytes)  
+	-	`sha256:d97297e0fe24cb9a67e421adf497357c87598b28b5d697e6fd62149bad943f4e`  
+		Last Modified: Mon, 18 Oct 2021 22:17:44 GMT  
+		Size: 1.4 KB (1412 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f7e6c9be57254dd1dd8a2fe6f99bf9322b4fdb1bc8e76149adf4d0e3619786b`  
-		Last Modified: Wed, 15 Nov 2017 19:30:53 GMT  
-		Size: 1.2 KB (1196 bytes)  
+	-	`sha256:9537893fbe0e98b432dae141c797577571249c6087b8f5b15ccaf9405a53d927`  
+		Last Modified: Mon, 18 Oct 2021 22:17:44 GMT  
+		Size: 1.4 KB (1437 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:40a52471cc70e65173105c24345a376c017bf2459a5152685139bdca4ee598ff`  
-		Last Modified: Wed, 15 Nov 2017 19:30:56 GMT  
-		Size: 10.9 MB (10932220 bytes)  
+	-	`sha256:f7c906a419ea1de003ed54aa6fe1ba09760632f94009f04e08804a630b272c0c`  
+		Last Modified: Mon, 18 Oct 2021 22:17:56 GMT  
+		Size: 50.9 MB (50900751 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
