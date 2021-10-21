@@ -1,19 +1,19 @@
-# `clojure:openjdk-17-tools-deps-slim-buster`
+# `clojure:openjdk-16-tools-deps-slim-buster`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f3ec1e4373646a3248b9d639aebf7df6856bb83a4151590c46c713d563d4ee36`
-- Created: `2021-10-13T13:10:08.599954866Z`
-- Virtual Size: ~ 539.58 Mb  
+- Image ID: `sha256:c3fc0c6dcdd32a59ce57b7d6f6499f4947f939260f810ca9e659f23e96de3591`
+- Created: `2021-10-19T22:32:14.071455595Z`
+- Virtual Size: ~ 535.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["sh","-c","sleep 1 && exec clj"]`
 - Environment:
-  - `PATH=/usr/local/openjdk-17/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_HOME=/usr/local/openjdk-17`
+  - `PATH=/usr/local/openjdk-16/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `JAVA_HOME=/usr/local/openjdk-16`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=17`
-  - `CLOJURE_VERSION=1.10.3.967`
+  - `JAVA_VERSION=16.0.2`
+  - `CLOJURE_VERSION=1.10.3.986`
 
 ## `dpkg` (`.deb`-based packages)
 

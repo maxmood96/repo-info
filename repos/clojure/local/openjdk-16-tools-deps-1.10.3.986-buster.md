@@ -1,19 +1,19 @@
-# `clojure:openjdk-18-tools-deps-buster`
+# `clojure:openjdk-16-tools-deps-buster`
 
 ## Docker Metadata
 
-- Image ID: `sha256:32cdcbb30b3ee090f988a3e1a130c1b3cb5519337fbafa954d1b302292baf503`
-- Created: `2021-10-16T01:28:06.166760511Z`
-- Virtual Size: ~ 702.64 Mb  
+- Image ID: `sha256:061d531f6e34c4aa6917256c505212abcdb7e86bcf6d0f3279c7a23e9f61c909`
+- Created: `2021-10-19T22:32:30.507562772Z`
+- Virtual Size: ~ 697.78 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["sh","-c","sleep 1 && exec clj"]`
 - Environment:
-  - `PATH=/usr/local/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_HOME=/usr/local/openjdk-18`
+  - `PATH=/usr/local/openjdk-16/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `JAVA_HOME=/usr/local/openjdk-16`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=18-ea+19`
-  - `CLOJURE_VERSION=1.10.3.967`
+  - `JAVA_VERSION=16.0.2`
+  - `CLOJURE_VERSION=1.10.3.986`
 
 ## `dpkg` (`.deb`-based packages)
 
