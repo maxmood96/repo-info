@@ -1,7 +1,7 @@
 ## `tomee:8-jre-7.0.9-plume`
 
 ```console
-$ docker pull tomee@sha256:12b97cf7a0a592dd86d99e9b2ffa1a490ad2af766b2d5a0c70594d8980a112f5
+$ docker pull tomee@sha256:cdfb20550ec1af57682f1bb2f586b0950971c53155d6d12fc2596617b60171a3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull tomee@sha256:12b97cf7a0a592dd86d99e9b2ffa1a490ad2af766b2d5a0c70594
 ### `tomee:8-jre-7.0.9-plume` - linux; amd64
 
 ```console
-$ docker pull tomee@sha256:ad91205c8df7847aefa9f8a55f37619115eb79cbb6ab0e75fe853323536350d8
+$ docker pull tomee@sha256:c69a88fda63807dffcd36a7e19cff9b2873add42b6f57cb66c418289b28aaceb
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **181.1 MB (181109438 bytes)**  
+-	Total Size: **181.1 MB (181122897 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2c6622705778b4859899383c7345937b5775973f8cf552896fd546dc53239b5d`
+-	Image ID: `sha256:107cf9b90117e69c58e31d86c793fd4850cddf4f40c1cd8782d09d919fb6d8b4`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -40,29 +40,29 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 12 Oct 2021 16:36:58 GMT
 ENV LANG=C.UTF-8
-# Tue, 12 Oct 2021 16:36:58 GMT
-ENV JAVA_VERSION=8u302
-# Tue, 12 Oct 2021 16:37:05 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jre_x64_linux_8u302b08.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u302-b08/OpenJDK8U-jre_aarch64_linux_8u302b08.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -version
-# Wed, 13 Oct 2021 15:42:05 GMT
+# Thu, 21 Oct 2021 23:47:52 GMT
+ENV JAVA_VERSION=8u312
+# Thu, 21 Oct 2021 23:47:58 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u312-b07/OpenJDK8U-jre_x64_linux_8u312b07.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u312-b07/OpenJDK8U-jre_aarch64_linux_8u312b07.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -version
+# Fri, 22 Oct 2021 04:13:19 GMT
 ENV PATH=/usr/local/tomee/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 13 Oct 2021 15:42:05 GMT
+# Fri, 22 Oct 2021 04:13:20 GMT
 RUN mkdir -p /usr/local/tomee
-# Wed, 13 Oct 2021 15:42:06 GMT
+# Fri, 22 Oct 2021 04:13:20 GMT
 WORKDIR /usr/local/tomee
-# Wed, 13 Oct 2021 15:42:06 GMT
+# Fri, 22 Oct 2021 04:13:20 GMT
 ENV GPG_KEYS=223D3A74B068ECA354DC385CE126833F9CF64915     7A2744A8A9AAF063C23EB7868EBE7DBE8D050EEF     82D8419BA697F0E7FB85916EE91287822FDB81B1     9056B710F1E332780DE7AF34CBAEBE39A46C4CA1     A57DAF81C1B69921F4BA8723A8DE0A4DB863A7C1     B7574789F5018690043E6DD9C212662E12F3E1DD     B8B301E6105DF628076BD92C5483E55897ABD9B9     DBCCD103B8B24F86FFAAB025C8BB472CD297D428     F067B8140F5DD80E1D3B5D92318242FE9A0B1183     FAA603D58B1BA4EDF65896D0ED340E0E6D545F97     C92604B0DEC5C62CFF5801E73D4683C24EDC64D1     294A395FFDC9FCF25A7E2BFDCF6FC99C2CC77782
-# Wed, 13 Oct 2021 15:42:46 GMT
+# Fri, 22 Oct 2021 04:13:36 GMT
 RUN set -xe     && for key in $GPG_KEYS; do         gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||         gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||         gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;     done
-# Wed, 13 Oct 2021 15:42:47 GMT
+# Fri, 22 Oct 2021 04:13:36 GMT
 ENV TOMEE_VER=7.0.9
-# Wed, 13 Oct 2021 15:42:47 GMT
+# Fri, 22 Oct 2021 04:13:36 GMT
 ENV TOMEE_BUILD=plume
-# Wed, 13 Oct 2021 15:42:53 GMT
+# Fri, 22 Oct 2021 04:13:43 GMT
 RUN set -x 	&& curl -fSL https://dist.apache.org/repos/dist/release/tomee/tomee-${TOMEE_VER}/apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz.asc -o tomee.tar.gz.asc 	&& curl -fSL https://dist.apache.org/repos/dist/release/tomee/tomee-${TOMEE_VER}/apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz -o tomee.tar.gz 	&& gpg --batch --verify tomee.tar.gz.asc tomee.tar.gz 	&& tar -zxf tomee.tar.gz 	&& mv apache-tomee-${TOMEE_BUILD}-${TOMEE_VER}/* /usr/local/tomee 	&& rm -Rf apache-tomee-${TOMEE_BUILD}-${TOMEE_VER} 	&& rm bin/*.bat 	&& rm tomee.tar.gz*
-# Wed, 13 Oct 2021 15:42:54 GMT
+# Fri, 22 Oct 2021 04:13:43 GMT
 EXPOSE 8080
-# Wed, 13 Oct 2021 15:42:54 GMT
+# Fri, 22 Oct 2021 04:13:43 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -87,19 +87,19 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Tue, 12 Oct 2021 16:56:18 GMT  
 		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7471530a63ae5624808eb1ddc31e1f84a0c041ffb879f79f9c106ade1d41dd2a`  
-		Last Modified: Tue, 12 Oct 2021 16:56:24 GMT  
-		Size: 41.4 MB (41358598 bytes)  
+	-	`sha256:3b9b14f7678b3f0af9568b4869f0100eb02cc4d107d2436284db725c0aabda65`  
+		Last Modified: Fri, 22 Oct 2021 00:05:00 GMT  
+		Size: 41.4 MB (41372080 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9df364d6520fe2bf03b956d3f337f6fd16110af1d0038b79ba438dc1d635be62`  
-		Last Modified: Wed, 13 Oct 2021 15:48:19 GMT  
+	-	`sha256:ffd5a883b48624db1a8e66142041796a5c4eaf06f7cbb92b7aeb5a2c691350bf`  
+		Last Modified: Fri, 22 Oct 2021 04:17:44 GMT  
 		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:92ac144479351784d72dfeeaf2272ec8f199452a6c9628ea6165b29729868e36`  
-		Last Modified: Wed, 13 Oct 2021 15:48:19 GMT  
-		Size: 21.4 KB (21353 bytes)  
+	-	`sha256:04cdea8dfc39a484879b737d33f55fc85d51587b891b14b90bae61f7e7654fc2`  
+		Last Modified: Fri, 22 Oct 2021 04:17:44 GMT  
+		Size: 21.3 KB (21332 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b691749e1d2af4a52117430f780f11d2feb4f73fbca4425c7f415ac719bbf8a5`  
-		Last Modified: Wed, 13 Oct 2021 15:48:23 GMT  
-		Size: 63.1 MB (63132448 bytes)  
+	-	`sha256:ca0429a6d4a36c9f598d9c15ac2c23c9298feea93e19bbbe81a5648564693fa1`  
+		Last Modified: Fri, 22 Oct 2021 04:17:49 GMT  
+		Size: 63.1 MB (63132446 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
