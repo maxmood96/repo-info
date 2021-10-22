@@ -81,20 +81,13 @@ Licenses: (parsed from: `/usr/share/doc/libaom0/copyright`)
 - `ISC`
 - `public-domain-md5`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris aom=1.0.0.errata1-3
-'http://deb.debian.org/debian/pool/main/a/aom/aom_1.0.0.errata1-3.dsc' aom_1.0.0.errata1-3.dsc 2370 SHA256:0efd39fc5062efb53622ffd062186da4c964d805115d9648ebc75a55e1bddfdf
-'http://deb.debian.org/debian/pool/main/a/aom/aom_1.0.0.errata1.orig.tar.xz' aom_1.0.0.errata1.orig.tar.xz 1898808 SHA256:1dd501c622d871acf31fb942bd3b73a00883fc10f7c498fec97b22c858ca415f
-'http://deb.debian.org/debian/pool/main/a/aom/aom_1.0.0.errata1-3.debian.tar.xz' aom_1.0.0.errata1-3.debian.tar.xz 21120 SHA256:fc180608631a4bd9bf4c15af30d1b17b377ab0e926b9b4ded21aeb5849d6a1fe
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/aom/1.0.0.errata1-3/
 
-- https://sources.debian.net/src/aom/1.0.0.errata1-3/ (for browsing the source)
-- https://sources.debian.net/src/aom/1.0.0.errata1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/aom/1.0.0.errata1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apr-util=1.6.1-5`
 
@@ -1354,21 +1347,13 @@ Licenses: (parsed from: `/usr/share/doc/libgdbm-compat4/copyright`, `/usr/share/
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gdbm=1.21-1
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.21-1.dsc' gdbm_1.21-1.dsc 2607 SHA256:2ba0781b1a8bb7601b398f48f9de6491190dd2d20dedda89a86edfd1c2f6ac31
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.21.orig.tar.gz' gdbm_1.21.orig.tar.gz 1005982 SHA256:b0b7dbdefd798de7ddccdd8edf6693a30494f7789777838042991ef107339cc2
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.21.orig.tar.gz.asc' gdbm_1.21.orig.tar.gz.asc 181 SHA256:b459cbec82749063cfa213c5681a335387f4a9ec09d04d87a5d75f4a33849822
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.21-1.debian.tar.xz' gdbm_1.21-1.debian.tar.xz 18336 SHA256:9bae47beeed26b16b98bb54303d4f517db337f52e265f104a329babce4370360
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gdbm/1.21-1/
 
-- https://sources.debian.net/src/gdbm/1.21-1/ (for browsing the source)
-- https://sources.debian.net/src/gdbm/1.21-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gdbm/1.21-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gdk-pixbuf=2.42.6+dfsg-2`
 
@@ -5458,20 +5443,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.37.2-3
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.37.2-3.dsc' util-linux_2.37.2-3.dsc 4453 SHA256:ce3d6fc1d2fa2329c4dfbb69b87454a450834554032905eb776acf6a5c6e8273
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.37.2.orig.tar.xz' util-linux_2.37.2.orig.tar.xz 5621624 SHA256:6a0764c1aae7fb607ef8a6dd2c0f6c47d5e5fd27aa08820abaad9ec14e28e9d9
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.37.2-3.debian.tar.xz' util-linux_2.37.2-3.debian.tar.xz 96948 SHA256:b6ba987cdf3177963fe3e256b872e13165af8d70131334042cdc003e19cb609e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.37.2-3/
 
-- https://sources.debian.net/src/util-linux/2.37.2-3/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.37.2-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.37.2-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.21.2-1`
 
