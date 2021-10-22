@@ -1,7 +1,7 @@
 ## `convertigo:latest`
 
 ```console
-$ docker pull convertigo@sha256:ec1ea0d0b16399f0a53cc4befdff06f04f13ab16f710ea4bef421d7d2d6ab4a3
+$ docker pull convertigo@sha256:bd21d6ac291fd7259d25f9a094a0a0a19ed63dcb34f074959a98f42f381761e3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull convertigo@sha256:ec1ea0d0b16399f0a53cc4befdff06f04f13ab16f710ea4b
 ### `convertigo:latest` - linux; amd64
 
 ```console
-$ docker pull convertigo@sha256:858096c9cdabb346638df227438cd32030b03007353e073ce6a9070470d614a4
+$ docker pull convertigo@sha256:dee61c2380267082c1757bc073e1cb5a62c06e87dd1dd6ff69e1cdbf06d77d6d
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **437.3 MB (437254866 bytes)**  
+-	Total Size: **437.3 MB (437259508 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8440e3beb5d82f444aae9a97e9e1bd4b4eb47fb16c13a4761e48fe5a9d047d21`
+-	Image ID: `sha256:955e61c9685f6822af07fcd66d44b8e7285640c211c60eb86b7f541806adbd0c`
 -	Entrypoint: `["tini","--","\/docker-entrypoint.sh"]`
 -	Default Command: `["convertigo"]`
 
@@ -101,27 +101,27 @@ RUN export GNUPGHOME="$(mktemp -d)"   && ( gpg --batch --keyserver ha.pool.sks-k
 RUN useradd -s /bin/false -m convertigo     && mkdir -p /workspace/lib /workspace/classes     && chown -R convertigo:convertigo /workspace     && echo "convertigo ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/convertigo     && chmod 0440 /etc/sudoers.d/convertigo
 # Wed, 13 Oct 2021 16:52:23 GMT
 RUN sed -i.bak         -e '/protocol="AJP/d'         -e '/AprLifecycleListener/d'         -e '/JasperListener/d'         -e 's/port="8080"/port="28080" maxThreads="64000" relaxedQueryChars="{}[]|"/'         -e 's,</Host>,  <Valve className="org.apache.catalina.valves.RemoteIpValve" />\n      </Host>,'         conf/server.xml     && sed -i.bak         -e 's,<Context>,<Context sessionCookiePath="/">,'         -e 's,</Context>,<Manager pathname="" /><CookieProcessor sameSiteCookies="unset" /></Context>,'         conf/context.xml     && rm -rf webapps/* bin/*.bat conf/server.xml.bak /tmp/*     && mkdir webapps/ROOT     && chown -R convertigo:convertigo conf temp work logs     && chmod -w conf/*
-# Wed, 13 Oct 2021 16:52:23 GMT
-ENV CONVERTIGO_VERSION=7.9.5
-# Wed, 13 Oct 2021 16:52:23 GMT
-ENV CONVERTIGO_WAR_URL=https://github.com/convertigo/convertigo/releases/download/7.9.5/convertigo-7.9.5.war
-# Wed, 13 Oct 2021 16:52:23 GMT
+# Fri, 22 Oct 2021 18:51:21 GMT
+ENV CONVERTIGO_VERSION=7.9.6
+# Fri, 22 Oct 2021 18:51:21 GMT
+ENV CONVERTIGO_WAR_URL=https://github.com/convertigo/convertigo/releases/download/7.9.6/convertigo-7.9.6.war
+# Fri, 22 Oct 2021 18:51:22 GMT
 ENV CONVERTIGO_GPG_KEYS=6A7779BB78FE368DF74B708FD4DA8FBEB64BF75F
-# Wed, 13 Oct 2021 16:52:31 GMT
+# Fri, 22 Oct 2021 18:51:37 GMT
 RUN export GNUPGHOME="$(mktemp -d)"     && ( gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$CONVERTIGO_GPG_KEYS"     || gpg --batch --keyserver pgp.mit.edu --recv-keys "$CONVERTIGO_GPG_KEYS"     || gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$CONVERTIGO_GPG_KEYS"     || gpg --batch --keyserver keyserver.pgp.com --recv-keys "$CONVERTIGO_GPG_KEYS" )     && curl -fSL -o /tmp/convertigo.war $CONVERTIGO_WAR_URL     && curl -fSL -o /tmp/convertigo.war.asc $CONVERTIGO_WAR_URL.asc     && gpg --batch --verify /tmp/convertigo.war.asc /tmp/convertigo.war     && mkdir -p webapps/ROOT webapps/convertigo     && (cd webapps/convertigo         && unzip -q /tmp/convertigo.war         && (chmod -f a+x WEB-INF/xvnc/* || true)         && (test "$(dpkg --print-architecture)" != "i386" && rm -rf WEB-INF/xulrunner WEB-INF/xvnc WEB-INF/lib/swt_* || true)         && rm -rf /tmp/*)
-# Wed, 13 Oct 2021 16:52:31 GMT
+# Fri, 22 Oct 2021 18:51:37 GMT
 COPY file:394d5b837e94d77b6fb87e0ca8bd50995186aaed1c5f3ab5bc0b482f0f769cc3 in webapps/ROOT/index.html 
-# Wed, 13 Oct 2021 16:52:32 GMT
+# Fri, 22 Oct 2021 18:51:38 GMT
 COPY file:ba6487fa7ec71ffccfe3babd0fb02dea602edf66ffef39f9ab084bdb887562ab in / 
-# Wed, 13 Oct 2021 16:52:32 GMT
+# Fri, 22 Oct 2021 18:51:38 GMT
 WORKDIR /workspace
-# Wed, 13 Oct 2021 16:52:32 GMT
+# Fri, 22 Oct 2021 18:51:39 GMT
 VOLUME [/workspace]
-# Wed, 13 Oct 2021 16:52:32 GMT
+# Fri, 22 Oct 2021 18:51:39 GMT
 EXPOSE 28080
-# Wed, 13 Oct 2021 16:52:32 GMT
+# Fri, 22 Oct 2021 18:51:40 GMT
 ENTRYPOINT ["tini" "--" "/docker-entrypoint.sh"]
-# Wed, 13 Oct 2021 16:52:33 GMT
+# Fri, 22 Oct 2021 18:51:40 GMT
 CMD ["convertigo"]
 ```
 
@@ -178,15 +178,15 @@ CMD ["convertigo"]
 		Last Modified: Wed, 13 Oct 2021 16:52:47 GMT  
 		Size: 27.5 KB (27510 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:60b367374ded9461c297cc45598408035558627950ada724e2afbfde8ebc27c5`  
-		Last Modified: Wed, 13 Oct 2021 16:52:54 GMT  
-		Size: 97.0 MB (96976233 bytes)  
+	-	`sha256:acea0286906650512214195c73804dc02be6eb85281b5f824954e33d03faf8c5`  
+		Last Modified: Fri, 22 Oct 2021 18:52:03 GMT  
+		Size: 97.0 MB (96980875 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:878a8aa221ce4c9da6c562327cbbfe11c940e4141069cdb40f11082277bb6eb4`  
-		Last Modified: Wed, 13 Oct 2021 16:52:47 GMT  
+	-	`sha256:013c201ce81426068fda0857b78408afa6dc52f71809f3d8a04a5f6d26991fae`  
+		Last Modified: Fri, 22 Oct 2021 18:51:54 GMT  
 		Size: 454.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8ad2937bdcb63ff3c8106effc51f0fd5f49bec1a03798a4e7bc6ecc594761891`  
-		Last Modified: Wed, 13 Oct 2021 16:52:47 GMT  
+	-	`sha256:9582ee77a4bfcc7cdba3bcbc049ca127893af6a567f07ec9d9461c1163863327`  
+		Last Modified: Fri, 22 Oct 2021 18:51:54 GMT  
 		Size: 1.4 KB (1431 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
