@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5607694ccc6a2cb24cc97054a22ef26d2ab1d86fa07f0ec8568e1fc4fa40ccd3`
-- Created: `2021-10-12T19:32:28.796013784Z`
-- Virtual Size: ~ 484.23 Mb  
+- Image ID: `sha256:d40cd21fa67acdcc31c61f1e308f33ac6b5f0f938b6af8a9bb3f7f8fece62de7`
+- Created: `2021-10-21T19:59:21.599192993Z`
+- Virtual Size: ~ 482.26 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-entrypoint.sh"]`
@@ -15,8 +15,6 @@
   - `PHP_INI_DIR=/usr/local/etc/php`
   - `APACHE_CONFDIR=/etc/apache2`
   - `APACHE_ENVVARS=/etc/apache2/envvars`
-  - `PHP_EXTRA_BUILD_DEPS=apache2-dev`
-  - `PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2 --disable-cgi`
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
