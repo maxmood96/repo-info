@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:197619345e5731bae47ab6d758eb4e2db7ccdb0cfb37a5fd64a68e639a4a435d`
-- Created: `2021-09-24T05:10:03.547919056Z`
-- Virtual Size: ~ 93.31 Mb  
+- Image ID: `sha256:1e902cc48b5efdbe803d15654c0c4e51758bd960ea380c4cde52e99edd87cc16`
+- Created: `2021-10-21T18:10:23.242853185Z`
+- Virtual Size: ~ 92.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,15 +13,14 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `PHPIZE_DEPS=autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c`
   - `PHP_INI_DIR=/usr/local/etc/php`
-  - `PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data --disable-cgi`
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F`
-  - `PHP_VERSION=8.0.11`
-  - `PHP_URL=https://www.php.net/distributions/php-8.0.11.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.0.11.tar.xz.asc`
-  - `PHP_SHA256=e3e5f764ae57b31eb65244a45512f0b22d7bef05f2052b23989c053901552e16`
+  - `PHP_VERSION=8.0.12`
+  - `PHP_URL=https://www.php.net/distributions/php-8.0.12.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.0.12.tar.xz.asc`
+  - `PHP_SHA256=a501017b3b0fd3023223ea25d98e87369b782f8a82310c4033d7ea6a989fea0a`
 - Labels:
   - `org.opencontainers.image.authors=YOURLS`
   - `org.opencontainers.image.description=Your Own URL Shortener`
