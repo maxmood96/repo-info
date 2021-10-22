@@ -1,10 +1,10 @@
-# `openjdk:8u302-jdk-slim-buster`
+# `openjdk:8u312-jdk-slim-buster`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ee143e3bf9341dbe00289e907d81fe6690a811422a261cad36c17e897c5f792a`
-- Created: `2021-10-12T16:36:53.861447995Z`
-- Virtual Size: ~ 288.29 Mb  
+- Image ID: `sha256:b51b161987c75f233c3a7a8c23f6cc7f1c1d39a3ad174338c5b55689dc018dcc`
+- Created: `2021-10-21T23:47:49.33122443Z`
+- Virtual Size: ~ 288.33 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/local/openjdk-8`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=8u302`
+  - `JAVA_VERSION=8u312`
 
 ## `dpkg` (`.deb`-based packages)
 
