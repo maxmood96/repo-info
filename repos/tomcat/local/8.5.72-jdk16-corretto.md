@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:73b3f53da340d56bcccf8231df9d4538203331e03c699b64abe278bf090ce7d3`
-- Created: `2021-10-07T20:28:55.50028396Z`
-- Virtual Size: ~ 531.68 Mb  
+- Image ID: `sha256:3bcc0523f1638423293568831cae9353711de94ed1758656516efffcec850adb`
+- Created: `2021-10-22T00:43:53.863719664Z`
+- Virtual Size: ~ 512.16 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -22,16 +22,16 @@
 
 ## `rpm` (`.rpm`-based packages)
 
-### `rpm` package: `amazon-linux-extras-2.0.0-1.amzn2.noarch`
+### `rpm` package: `amazon-linux-extras-2.0.1-1.amzn2.noarch`
 
 Licenses (from `rpm --query`): GPLv2
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls amazon-linux-extras-2.0.0-1.amzn2.noarch
+$ yumdownloader --quiet --source --urls amazon-linux-extras-2.0.1-1.amzn2.noarch
 Enabling amzn2-core-source repository
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/a88b1d476bb977d660ebbc5023fc02440be6065bb71b453dd015110a37d5c1f1//../../../../../blobstore/67094641a11e9082fb8e43987b1940d79544840456eb649b721064011e975f07/amazon-linux-extras-2.0.0-1.amzn2.src.rpm
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/a88b1d476bb977d660ebbc5023fc02440be6065bb71b453dd015110a37d5c1f1//../../../../../blobstore/33255f7ce6624faa700abeb045a4534458b38aeac853d4b9c7c01eead702856a/amazon-linux-extras-2.0.1-1.amzn2.src.rpm
 ```
 
 ### `rpm` package: `apr-1.7.0-9.amzn2.x86_64`
@@ -310,16 +310,16 @@ Enabling amzn2-core-source repository
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/a88b1d476bb977d660ebbc5023fc02440be6065bb71b453dd015110a37d5c1f1//../../../../../blobstore/e2866f1817e24bcd350768bf85c8bbddde135513ced29ce315df75f311cf77cf/gdbm-1.13-6.amzn2.0.2.src.rpm
 ```
 
-### `rpm` package: `glib2-2.56.1-9.amzn2.0.1.x86_64`
+### `rpm` package: `glib2-2.56.1-9.amzn2.0.2.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls glib2-2.56.1-9.amzn2.0.1
+$ yumdownloader --quiet --source --urls glib2-2.56.1-9.amzn2.0.2
 Enabling amzn2-core-source repository
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/a88b1d476bb977d660ebbc5023fc02440be6065bb71b453dd015110a37d5c1f1//../../../../../blobstore/cb0ecca2450d0be36088eecda66fae5214c1ebb20644c87590a7cd2c53c77f45/glib2-2.56.1-9.amzn2.0.1.src.rpm
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/a88b1d476bb977d660ebbc5023fc02440be6065bb71b453dd015110a37d5c1f1//../../../../../blobstore/537aafe4cf68cea22ab5412acfe3a1febc5525de48f0bd82d10ea71e7e916899/glib2-2.56.1-9.amzn2.0.2.src.rpm
 ```
 
 ### `rpm` package: `glibc-2.26-55.amzn2.x86_64`
@@ -964,16 +964,16 @@ Enabling amzn2-core-source repository
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/a88b1d476bb977d660ebbc5023fc02440be6065bb71b453dd015110a37d5c1f1//../../../../../blobstore/099aba3afe1686cde8b52816e1cbe96b20439e14a6949a0414727d656a9ddcd9/openldap-2.4.44-23.amzn2.0.2.src.rpm
 ```
 
-### `rpm` package: `openssl-libs-1.0.2k-19.amzn2.0.7.x86_64`
+### `rpm` package: `openssl-libs-1.0.2k-19.amzn2.0.8.x86_64`
 
 Licenses (from `rpm --query`): OpenSSL
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls openssl-libs-1.0.2k-19.amzn2.0.7
+$ yumdownloader --quiet --source --urls openssl-libs-1.0.2k-19.amzn2.0.8
 Enabling amzn2-core-source repository
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/a88b1d476bb977d660ebbc5023fc02440be6065bb71b453dd015110a37d5c1f1//../../../../../blobstore/5f31c92c41f4f374c18e2bf2f6821da4fb2644d4cba4a2e90cc7d4ad34e94e6e/openssl-1.0.2k-19.amzn2.0.7.src.rpm
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/a88b1d476bb977d660ebbc5023fc02440be6065bb71b453dd015110a37d5c1f1//../../../../../blobstore/53c13a17939023b73642e0a6cb0d6e20cb2eeaa0c2302318dbdeb09d44044a0b/openssl-1.0.2k-19.amzn2.0.8.src.rpm
 ```
 
 ### `rpm` package: `openssl11-libs-1.1.1g-12.amzn2.0.4.x86_64`
