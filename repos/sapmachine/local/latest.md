@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:90902f79da9973a2558566e38ad2411a21c69ca3a1e99a5780ebc7d196215f44`
-- Created: `2021-10-16T02:10:28.207532817Z`
-- Virtual Size: ~ 432.35 Mb  
+- Image ID: `sha256:0ef0b1acc6a23b52243538eacec6093bcd877524dccba97b5c4d7c49d20c1cfa`
+- Created: `2021-10-22T19:14:31.811824038Z`
+- Virtual Size: ~ 432.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -1796,11 +1796,11 @@ $ apt-get source -qq --print-uris readline=8.0-4
 'http://archive.ubuntu.com/ubuntu/pool/main/r/readline/readline_8.0-4.debian.tar.xz' readline_8.0-4.debian.tar.xz 30408 SHA256:60ed18dab6d6b7fc998a263d917f06d9cce6e1ccd19cd8bf4a9d33c5350cf8d6
 ```
 
-### `dpkg` source package: `sapmachine-17-jdk=17`
+### `dpkg` source package: `sapmachine-17-jdk=17.0.1`
 
 Binary Packages:
 
-- `sapmachine-17-jdk=17`
+- `sapmachine-17-jdk=17.0.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
