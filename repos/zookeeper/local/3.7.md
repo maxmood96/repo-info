@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:043d5ff52cc5978ae2008c2612701f339915f1e207457c0febf825a0c9ec5dc2`
-- Created: `2021-10-13T15:32:26.043933119Z`
-- Virtual Size: ~ 277.84 Mb  
+- Image ID: `sha256:ab3f783cf9c4444d7af5cdcc1e45f003224992d49f3611284b4ec5df9cc7369e`
+- Created: `2021-10-22T04:47:35.327117061Z`
+- Virtual Size: ~ 277.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-zookeeper-3.7.0-bin/bin`
   - `JAVA_HOME=/usr/local/openjdk-11`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=11.0.12`
+  - `JAVA_VERSION=11.0.13`
   - `ZOO_CONF_DIR=/conf`
   - `ZOO_DATA_DIR=/data`
   - `ZOO_DATA_LOG_DIR=/datalog`
