@@ -78,19 +78,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.3.9
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.3.9.dsc' apt_2.3.9.dsc 2797 SHA256:d7bbed1070148c8dd5b3d3d6f65a1ec6c1acb8ec136d85ebdb011411f3b41b98
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.3.9.tar.xz' apt_2.3.9.tar.xz 2204328 SHA256:28597fe803a652f55f618dd7a44bd2fb2712dbd91c258dfa5981cb75356291e3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/2.3.9/
 
-- https://sources.debian.net/src/apt/2.3.9/ (for browsing the source)
-- https://sources.debian.net/src/apt/2.3.9/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/2.3.9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.1-1`
 
