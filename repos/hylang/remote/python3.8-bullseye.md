@@ -1,7 +1,7 @@
 ## `hylang:python3.8-bullseye`
 
 ```console
-$ docker pull hylang@sha256:1d6efeaa11c48bf007889fd77a1993fc71c5050e308c096a8d9b586896e8d0ae
+$ docker pull hylang@sha256:2cda8fb25ccb2435c1dd49cbcf04923de1d53faa8ea5a101a0cb3f2a7220fb1a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -174,14 +174,14 @@ CMD ["hy"]
 ### `hylang:python3.8-bullseye` - linux; arm variant v7
 
 ```console
-$ docker pull hylang@sha256:5087e55095ef0b1a657f216065fb0b89d8ef8f2908f919bcabf9de0001f8725e
+$ docker pull hylang@sha256:a9ddf1d5823cfda38f241f771ef934fff1e3fd7ebe50d6242d5a7cf06f9485d2
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **43.3 MB (43264813 bytes)**  
+-	Total Size: **43.3 MB (43264877 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b24e7f9f4cfd2804a9fb21f0aadc46df0841669cca2aa55dd7333f4f4f945c1a`
+-	Image ID: `sha256:0f7716a462b5fabba46e25e5b93f4239d50d6a9ec972efb11d0b5663bfae7774`
 -	Default Command: `["hy"]`
 
 ```dockerfile
@@ -207,19 +207,19 @@ RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s pyth
 ENV PYTHON_PIP_VERSION=21.2.4
 # Tue, 12 Oct 2021 16:06:06 GMT
 ENV PYTHON_SETUPTOOLS_VERSION=57.5.0
-# Tue, 12 Oct 2021 16:06:07 GMT
-ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/d781367b97acf0ece7e9e304bf281e99b618bf10/public/get-pip.py
-# Tue, 12 Oct 2021 16:06:07 GMT
-ENV PYTHON_GET_PIP_SHA256=01249aa3e58ffb3e1686b7141b4e9aac4d398ef4ac3012ed9dff8dd9f685ffe0
-# Tue, 12 Oct 2021 16:06:35 GMT
+# Wed, 27 Oct 2021 03:39:51 GMT
+ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/3cb8888cc2869620f57d5d2da64da38f516078c7/public/get-pip.py
+# Wed, 27 Oct 2021 03:39:51 GMT
+ENV PYTHON_GET_PIP_SHA256=c518250e91a70d7b20cceb15272209a4ded2a0c263ae5776f129e0d9b5674309
+# Wed, 27 Oct 2021 03:40:19 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum --check --strict -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Tue, 12 Oct 2021 16:06:35 GMT
+# Wed, 27 Oct 2021 03:40:20 GMT
 CMD ["python3"]
-# Wed, 13 Oct 2021 13:27:10 GMT
+# Thu, 28 Oct 2021 03:01:10 GMT
 ENV HY_VERSION=1.0a3
-# Wed, 13 Oct 2021 13:27:21 GMT
+# Thu, 28 Oct 2021 03:01:20 GMT
 RUN pip install --no-cache-dir "hy == $HY_VERSION"
-# Wed, 13 Oct 2021 13:27:21 GMT
+# Thu, 28 Oct 2021 03:01:21 GMT
 CMD ["hy"]
 ```
 
@@ -240,13 +240,13 @@ CMD ["hy"]
 		Last Modified: Tue, 12 Oct 2021 17:59:01 GMT  
 		Size: 234.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:130ddd5ff4b24cfbb5a20d86d26748214cab082af7ae1b80a00877cb15ac99f1`  
-		Last Modified: Tue, 12 Oct 2021 17:59:03 GMT  
-		Size: 2.6 MB (2640273 bytes)  
+	-	`sha256:663a8d71a8162042b8c5115d9b6e826921aafa5f64b6d97188cd34ebb255d6b7`  
+		Last Modified: Wed, 27 Oct 2021 04:03:48 GMT  
+		Size: 2.6 MB (2640290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:690d0a72c3d53fc92f40f6dd2f8b463f446acb247a0e02924de1113f60799ce6`  
-		Last Modified: Wed, 13 Oct 2021 13:37:11 GMT  
-		Size: 3.1 MB (3118769 bytes)  
+	-	`sha256:2581f823a5fac4fbb722e1d291a8e2640cd0e369f862099f2fc3864ab99f52a3`  
+		Last Modified: Thu, 28 Oct 2021 03:13:49 GMT  
+		Size: 3.1 MB (3118816 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `hylang:python3.8-bullseye` - linux; arm64 variant v8
