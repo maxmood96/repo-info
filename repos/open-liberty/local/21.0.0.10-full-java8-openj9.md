@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ca3179a9cc16720b472b1bc833061bb1f7799c5e0d8867c78fe659b34c569a06`
-- Created: `2021-10-25T22:28:57.504775299Z`
-- Virtual Size: ~ 515.33 Mb  
+- Image ID: `sha256:efc567f5a86f0ff688865bf5e4c29bd31a5863a22772c2e41384cb6e1cd6ae33`
+- Created: `2021-10-28T00:56:51.714412672Z`
+- Virtual Size: ~ 516.33 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ol/helpers/runtime/docker-server.sh"]`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk8u302-b08_openj9-0.27.0`
+  - `JAVA_VERSION=jdk8u312-b07_openj9-0.29.0`
   - `JAVA_HOME=/opt/java/openjdk`
   - `JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal`
   - `LOG_DIR=/logs`
@@ -1758,14 +1758,9 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2021a-2ubuntu0.20.04
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2021a-2ubuntu0.20.04.dsc' tzdata_2021a-2ubuntu0.20.04.dsc 2109 SHA512:351dbff383b8b8ff94895618a67f1f7b6ee8db04049267d9c60304a051cc26cc9645b40b64e3c81e392f7fdff5ebc9a6a902b7e7bab91dc7033d195af678ed30
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2021a.orig.tar.gz' tzdata_2021a.orig.tar.gz 411892 SHA512:7cdd762ec90ce12a30fa36b1d66d1ea82d9fa21e514e2b9c7fcbe2541514ee0fadf30843ff352c65512fb270857b51d1517b45e1232b89c6f954ba9ff1833bb3
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2021a-2ubuntu0.20.04.debian.tar.xz' tzdata_2021a-2ubuntu0.20.04.debian.tar.xz 169440 SHA512:b1976634658c92a3fbcf9acae2d19c5211051c96afcf7c99d10b991fa087885e7ce427ce77b111bbabca647af5901b0ce879d17e6fa331d593acba9c94b7bdf3
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2020.02.11.4`
 
