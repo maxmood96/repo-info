@@ -2,13 +2,13 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1ac05fcc114994cc795173389d8ca6d3429e3612bee60cd11f65db9f48b35cb2`
-- Created: `2021-09-17T21:46:22.215545152Z`
+- Image ID: `sha256:de4ae0e7b4a32eac24504e8f4c6f4ddf3699c065eedd1e2521a1e2af9a643cd9`
+- Created: `2021-10-26T19:33:15.998479228Z`
 - Virtual Size: ~ 693.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Entrypoint: `["bin/run.sh"]`
-- Command: `["bin/sonar.sh"]`
+- Entrypoint: `["/opt/sonarqube/bin/run.sh"]`
+- Command: `["/opt/sonarqube/bin/sonar.sh"]`
 - Environment:
   - `PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=en_US.UTF-8`
