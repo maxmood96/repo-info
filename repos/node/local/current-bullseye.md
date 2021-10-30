@@ -1,17 +1,17 @@
-# `node:16-bullseye`
+# `node:17`
 
 ## Docker Metadata
 
-- Image ID: `sha256:63a35283ee10627a6751d735f5d67cca5319aaa23e548fce81837d59d41f37b1`
-- Created: `2021-10-22T18:54:17.124951628Z`
-- Virtual Size: ~ 934.52 Mb  
+- Image ID: `sha256:7220633f01cdab3c20b7ded7f04e43e5b1ca95a5c5376a27e8fe41793d2dba6f`
+- Created: `2021-10-22T18:53:18.480510183Z`
+- Virtual Size: ~ 991.50 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=16.12.0`
+  - `NODE_VERSION=17.0.1`
   - `YARN_VERSION=1.22.15`
 
 ## `dpkg` (`.deb`-based packages)

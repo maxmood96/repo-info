@@ -1,17 +1,17 @@
-# `node:14`
+# `node:16-stretch`
 
 ## Docker Metadata
 
-- Image ID: `sha256:31421e72129c508a69ae6b4681101596908a091c9097591b73851fd4470264b7`
-- Created: `2021-10-22T18:55:45.667467508Z`
-- Virtual Size: ~ 944.07 Mb  
+- Image ID: `sha256:dc4dcf774ee722702aa99e236c1cbe938411f3881a4950602fd952cb892b5527`
+- Created: `2021-10-27T18:24:35.376060509Z`
+- Virtual Size: ~ 935.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=14.18.1`
+  - `NODE_VERSION=16.13.0`
   - `YARN_VERSION=1.22.15`
 
 ## `dpkg` (`.deb`-based packages)
@@ -5441,20 +5441,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2021a-0+deb9u1
-'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2021a-0+deb9u1.dsc' tzdata_2021a-0+deb9u1.dsc 2029 SHA256:cea5ffa909e7463a567405b6e8f997b16517b525d4d3a213f498d206dfff3204
-'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2021a.orig.tar.gz' tzdata_2021a.orig.tar.gz 411892 SHA256:39e7d2ba08c68cbaefc8de3227aab0dec2521be8042cf56855f7dc3a9fb14e08
-'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2021a-0+deb9u1.debian.tar.xz' tzdata_2021a-0+deb9u1.debian.tar.xz 103220 SHA256:4e8f5eab78b57e8bd6d1de652c1fc6bc63e08b29ccda795276d3ee293fb71bb8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2021a-0+deb9u1/
 
-- https://sources.debian.net/src/tzdata/2021a-0+deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2021a-0+deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2021a-0+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0036`
 
