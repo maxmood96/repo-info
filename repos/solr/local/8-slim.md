@@ -1,10 +1,10 @@
-# `solr:8.10.0-slim`
+# `solr:8.10.1-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:15a0c64676edbe8d7ebe42c1aded55b4872cac7e613d037b809c1fc24db5e188`
-- Created: `2021-10-22T03:38:57.376471728Z`
-- Virtual Size: ~ 489.08 Mb  
+- Image ID: `sha256:87b82f78800961ed0fd9aebeee87c1d53e31c78260a5387c675aa17e1e64edef`
+- Created: `2021-10-29T01:27:53.450612179Z`
+- Virtual Size: ~ 491.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -18,9 +18,9 @@
   - `SOLR_UID=8983`
   - `SOLR_GROUP=solr`
   - `SOLR_GID=8983`
-  - `SOLR_CLOSER_URL=http://www.apache.org/dyn/closer.lua?filename=lucene/solr/8.10.0/solr-8.10.0.tgz&action=download`
-  - `SOLR_DIST_URL=https://www.apache.org/dist/lucene/solr/8.10.0/solr-8.10.0.tgz`
-  - `SOLR_ARCHIVE_URL=https://archive.apache.org/dist/lucene/solr/8.10.0/solr-8.10.0.tgz`
+  - `SOLR_CLOSER_URL=http://www.apache.org/dyn/closer.lua?filename=lucene/solr/8.10.1/solr-8.10.1.tgz&action=download`
+  - `SOLR_DIST_URL=https://www.apache.org/dist/lucene/solr/8.10.1/solr-8.10.1.tgz`
+  - `SOLR_ARCHIVE_URL=https://archive.apache.org/dist/lucene/solr/8.10.1/solr-8.10.1.tgz`
   - `SOLR_INCLUDE=/etc/default/solr.in.sh`
   - `SOLR_HOME=/var/solr/data`
   - `SOLR_PID_DIR=/var/solr`
