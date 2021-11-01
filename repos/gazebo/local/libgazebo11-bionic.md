@@ -1479,14 +1479,9 @@ Licenses: (parsed from: `/usr/share/doc/gazebo11/copyright`, `/usr/share/doc/gaz
 - `LGPL-3+`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gazebo11=11.8.1-1~bionic
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/g/gazebo11/gazebo11_11.8.1-1~bionic.dsc' gazebo11_11.8.1-1~bionic.dsc 2354 SHA256:f718248030bdc275131295e46ed2f3b2cbdc25e988a66b218fb5d1a9f091930d
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/g/gazebo11/gazebo11_11.8.1.orig.tar.bz2' gazebo11_11.8.1.orig.tar.bz2 56403987 SHA256:162163f640ccaed319ffd0adb1d766fc7190259f1f3ce507f7d4d86794c87a35
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/g/gazebo11/gazebo11_11.8.1-1~bionic.debian.tar.xz' gazebo11_11.8.1-1~bionic.debian.tar.xz 6780 SHA256:d74ef9d6caad00f64ba045ef5039d30b8812a9dbb89d4098bd39336a1d7f737a
-```
 
 ### `dpkg` source package: `gcc-6=6.5.0-2ubuntu1~18.04`
 
@@ -2224,14 +2219,9 @@ Licenses: (parsed from: `/usr/share/doc/libignition-msgs5/copyright`, `/usr/shar
 - `Apache`
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ignition-msgs5=5.8.0-1~bionic
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-msgs5/ignition-msgs5_5.8.0-1~bionic.dsc' ignition-msgs5_5.8.0-1~bionic.dsc 1309 SHA256:50487afba49f996227fd9ffae0744dc2a0a84495fc2b12b9f0d44b842377fb48
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-msgs5/ignition-msgs5_5.8.0.orig.tar.bz2' ignition-msgs5_5.8.0.orig.tar.bz2 260746 SHA256:29d89ffefa30e21bbe41d1d250f5622f7bd9ddf14dfc679e386bcac9930418c2
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-msgs5/ignition-msgs5_5.8.0-1~bionic.debian.tar.xz' ignition-msgs5_5.8.0-1~bionic.debian.tar.xz 2484 SHA256:c9b1931ec930a5077d965309706d62cf5f4788276a0b921c1639554c698aad22
-```
 
 ### `dpkg` source package: `ignition-tools=1.3.0-1~bionic`
 
