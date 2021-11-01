@@ -1,9 +1,9 @@
-# `swift:5.5.0-amazonlinux2`
+# `swift:5.5.1-amazonlinux2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:bad83cdc3df6d2488e302e396928d5a36e75a7dfb4a20e800a2a71051fa10f85`
-- Created: `2021-10-21T23:00:08.955180555Z`
+- Image ID: `sha256:fa4b9a020db89bf1efce15016035b3555402fd98089b361bf13f12766517ad83`
+- Created: `2021-10-28T23:53:31.785636489Z`
 - Virtual Size: ~ 2.69 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,12 +12,12 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561`
   - `SWIFT_PLATFORM=amazonlinux2`
-  - `SWIFT_BRANCH=swift-5.5-release`
-  - `SWIFT_VERSION=swift-5.5-RELEASE`
-  - `SWIFT_WEBROOT=https://swift.org/builds/`
+  - `SWIFT_BRANCH=swift-5.5.1-release`
+  - `SWIFT_VERSION=swift-5.5.1-RELEASE`
+  - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `description=Docker Container for the Swift programming language`
-  - `maintainer=Swift Infrastructure <swift-infrastructure@swift.org>`
+  - `maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>`
 
 ## `rpm` (`.rpm`-based packages)
 

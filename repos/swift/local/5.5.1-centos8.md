@@ -1,10 +1,10 @@
-# `swift:5.5.0-centos8`
+# `swift:5.5.1-centos8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:22aa739239a31de1f4e413f674c45de091218f87a4b7500cc70bba841a46573b`
-- Created: `2021-09-21T19:45:41.419956733Z`
-- Virtual Size: ~ 2.50 Gb  
+- Image ID: `sha256:af5818072ce2fd2e3dcd0d868ed44b6bb3c51151cc4c8df7841a3826552eb651`
+- Created: `2021-10-28T23:56:01.311570468Z`
+- Virtual Size: ~ 2.51 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -12,12 +12,12 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561`
   - `SWIFT_PLATFORM=centos8`
-  - `SWIFT_BRANCH=swift-5.5-release`
-  - `SWIFT_VERSION=swift-5.5-RELEASE`
-  - `SWIFT_WEBROOT=https://swift.org/builds/`
+  - `SWIFT_BRANCH=swift-5.5.1-release`
+  - `SWIFT_VERSION=swift-5.5.1-RELEASE`
+  - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `description=Docker Container for the Swift programming language`
-  - `maintainer=Swift Infrastructure <swift-infrastructure@swift.org>`
+  - `maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>`
   - `org.label-schema.build-date=20210915`
   - `org.label-schema.license=GPLv2`
   - `org.label-schema.name=CentOS Base Image`
