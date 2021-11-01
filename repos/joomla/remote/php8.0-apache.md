@@ -1,7 +1,7 @@
 ## `joomla:php8.0-apache`
 
 ```console
-$ docker pull joomla@sha256:05a7e0b4e6995429e7452b8cd7acc4b1395a63aa8be371081453145744543540
+$ docker pull joomla@sha256:2d3e4842da741767a9bebcf6d27c6ba9f3b60a277ad8058fb667d35864a6924d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -543,14 +543,14 @@ CMD ["apache2-foreground"]
 ### `joomla:php8.0-apache` - linux; arm64 variant v8
 
 ```console
-$ docker pull joomla@sha256:7f01cf8c856ab77e6039b2c335902332f5cbb7b6ad43e34a111c87ed90deabca
+$ docker pull joomla@sha256:5c6dae61df9bdf32c9e8ce54168a82180df0e62a1033fc8c4a4aee5e2e300822
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **184.9 MB (184910640 bytes)**  
+-	Total Size: **185.1 MB (185072022 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad711d1862f9b2f470877e8641b2ade6fcef385d4d24bd7480c9e690f8765269`
+-	Image ID: `sha256:fd0a1d216da7c150f72588faae661da8c1073246091120ffb1814fd24655c920`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -621,23 +621,23 @@ LABEL maintainer=Llewellyn van der Merwe <llewellyn.van-der-merwe@community.joom
 ENV JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1
 # Thu, 21 Oct 2021 17:54:31 GMT
 RUN a2enmod rewrite
-# Thu, 21 Oct 2021 17:55:54 GMT
-RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libbz2-dev 		libgmp-dev 		libjpeg-dev 		libldap2-dev 		libmcrypt-dev 		libmemcached-dev 		libpng-dev 		libpq-dev 		libzip-dev 	; 		docker-php-ext-configure gd --with-jpeg; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch"; 	docker-php-ext-install -j "$(nproc)" 		bz2 		gd 		gmp 		ldap 		mysqli 		pdo_mysql 		pdo_pgsql 		pgsql 		zip 	; 		pecl install APCu-5.1.21; 	pecl install memcached-3.1.5; 	pecl install redis-5.3.4; 		docker-php-ext-enable 		apcu 		memcached 		redis 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { print $3 }' 		| sort -u 		| xargs -r dpkg-query -S 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*
-# Thu, 21 Oct 2021 17:55:55 GMT
+# Mon, 01 Nov 2021 21:52:36 GMT
+RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libbz2-dev 		libgmp-dev 		libicu-dev 		libjpeg-dev 		libldap2-dev 		libmcrypt-dev 		libmemcached-dev 		libpng-dev 		libpq-dev 		libzip-dev 	; 		docker-php-ext-configure gd --with-jpeg; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch"; 	docker-php-ext-install -j "$(nproc)" 		bz2 		gd 		gmp 		intl 		ldap 		mysqli 		pdo_mysql 		pdo_pgsql 		pgsql 		zip 	; 		pecl install APCu-5.1.21; 	pecl install memcached-3.1.5; 	pecl install redis-5.3.4; 		docker-php-ext-enable 		apcu 		memcached 		redis 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { print $3 }' 		| sort -u 		| xargs -r dpkg-query -S 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*
+# Mon, 01 Nov 2021 21:52:37 GMT
 VOLUME [/var/www/html]
-# Tue, 26 Oct 2021 19:40:39 GMT
+# Mon, 01 Nov 2021 21:52:38 GMT
 ENV JOOMLA_VERSION=4.0.4
-# Tue, 26 Oct 2021 19:40:39 GMT
+# Mon, 01 Nov 2021 21:52:39 GMT
 ENV JOOMLA_SHA512=56dc516fd4596c1f728cf3503d7427dfc755d4b23ad5c170e2ee11d2a1d9e38484b3fa5cb337f8ce9ad8b5108386644d915afda3d3eae0d418dae9bd1d774eb3
-# Tue, 26 Oct 2021 19:40:46 GMT
+# Mon, 01 Nov 2021 21:52:46 GMT
 RUN set -ex; 	curl -o joomla.tar.bz2 -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.tar.bz2; 	echo "$JOOMLA_SHA512 *joomla.tar.bz2" | sha512sum -c -; 	mkdir /usr/src/joomla; 	tar -xf joomla.tar.bz2 -C /usr/src/joomla; 	rm joomla.tar.bz2; 	chown -R www-data:www-data /usr/src/joomla
-# Tue, 26 Oct 2021 19:40:47 GMT
+# Mon, 01 Nov 2021 21:52:47 GMT
 COPY file:f6b7a1c96cc89593a2b9ce4c68af350ae02f2e0c654cd5e842ff6c03641d470e in /entrypoint.sh 
-# Tue, 26 Oct 2021 19:40:48 GMT
+# Mon, 01 Nov 2021 21:52:48 GMT
 COPY file:5a85d779aaae74cfa3ab6228df0f24236d4d5ad9097e2a1b277e3daea0d6d3dc in /makedb.php 
-# Tue, 26 Oct 2021 19:40:49 GMT
+# Mon, 01 Nov 2021 21:52:49 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 26 Oct 2021 19:40:49 GMT
+# Mon, 01 Nov 2021 21:52:50 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -698,20 +698,20 @@ CMD ["apache2-foreground"]
 		Last Modified: Thu, 21 Oct 2021 18:10:19 GMT  
 		Size: 309.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:41030b0f1e89701da79f92911e71b4fe434defbb5090d35db67918d025bc78f6`  
-		Last Modified: Thu, 21 Oct 2021 18:10:20 GMT  
-		Size: 2.7 MB (2657042 bytes)  
+	-	`sha256:e14b75e0b3ff6c69bb303145b6253e546efb86376a3b5c750a9f89d2b67da9f2`  
+		Last Modified: Mon, 01 Nov 2021 22:00:52 GMT  
+		Size: 2.8 MB (2817746 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:454f611dfe87c9c97e0acfe0082c6a5190d78b9c98265a72392029079174fed6`  
-		Last Modified: Tue, 26 Oct 2021 19:46:04 GMT  
-		Size: 21.6 MB (21566247 bytes)  
+	-	`sha256:2d9eac4618eeb20e7000de39ac333a32b290f7afdc3347d3cb3c9e9ed19a00c7`  
+		Last Modified: Mon, 01 Nov 2021 22:00:56 GMT  
+		Size: 21.6 MB (21566924 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f6f8e89974d75d7224cbd2c87da07d9faa048d51f743a5658959a36438399e2`  
-		Last Modified: Tue, 26 Oct 2021 19:46:00 GMT  
-		Size: 1.2 KB (1200 bytes)  
+	-	`sha256:df5205dadedbc932d657fb2f546d07443e0d2898b9bc21abb6eff8ed609af6c7`  
+		Last Modified: Mon, 01 Nov 2021 22:00:52 GMT  
+		Size: 1.2 KB (1201 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf8bf2f4a071dd566f260fe566b0e6f07cc3c27fcdc6eda3835b538d2182b251`  
-		Last Modified: Tue, 26 Oct 2021 19:46:00 GMT  
+	-	`sha256:a91cdefb4633644b570bcf85c50a0182b106775d2235828da8f098e7b1cd810a`  
+		Last Modified: Mon, 01 Nov 2021 22:00:52 GMT  
 		Size: 615.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -1243,14 +1243,14 @@ CMD ["apache2-foreground"]
 ### `joomla:php8.0-apache` - linux; s390x
 
 ```console
-$ docker pull joomla@sha256:3e3716a5d53237823e0c4a5aea15968dd9bcebf929a82aa6fc42a3f6b7e7553b
+$ docker pull joomla@sha256:40f9696b99c72ed0d62fa7bb72a1748f3c82799b4b54c4704acf90d159a9725d
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **169.3 MB (169267385 bytes)**  
+-	Total Size: **169.4 MB (169428594 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:14d9de70bd411c782b312b461dfa6c70a231551a37e85eede48fbfef17b4e50a`
+-	Image ID: `sha256:862642dabbf9d8d392ead018c829220a4ac16ebe88fc91fad64ea2c53bb3af08`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -1321,23 +1321,23 @@ LABEL maintainer=Llewellyn van der Merwe <llewellyn.van-der-merwe@community.joom
 ENV JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1
 # Thu, 21 Oct 2021 17:24:57 GMT
 RUN a2enmod rewrite
-# Thu, 21 Oct 2021 17:25:50 GMT
-RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libbz2-dev 		libgmp-dev 		libjpeg-dev 		libldap2-dev 		libmcrypt-dev 		libmemcached-dev 		libpng-dev 		libpq-dev 		libzip-dev 	; 		docker-php-ext-configure gd --with-jpeg; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch"; 	docker-php-ext-install -j "$(nproc)" 		bz2 		gd 		gmp 		ldap 		mysqli 		pdo_mysql 		pdo_pgsql 		pgsql 		zip 	; 		pecl install APCu-5.1.21; 	pecl install memcached-3.1.5; 	pecl install redis-5.3.4; 		docker-php-ext-enable 		apcu 		memcached 		redis 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { print $3 }' 		| sort -u 		| xargs -r dpkg-query -S 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*
-# Thu, 21 Oct 2021 17:25:51 GMT
+# Mon, 01 Nov 2021 21:48:18 GMT
+RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libbz2-dev 		libgmp-dev 		libicu-dev 		libjpeg-dev 		libldap2-dev 		libmcrypt-dev 		libmemcached-dev 		libpng-dev 		libpq-dev 		libzip-dev 	; 		docker-php-ext-configure gd --with-jpeg; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch"; 	docker-php-ext-install -j "$(nproc)" 		bz2 		gd 		gmp 		intl 		ldap 		mysqli 		pdo_mysql 		pdo_pgsql 		pgsql 		zip 	; 		pecl install APCu-5.1.21; 	pecl install memcached-3.1.5; 	pecl install redis-5.3.4; 		docker-php-ext-enable 		apcu 		memcached 		redis 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { print $3 }' 		| sort -u 		| xargs -r dpkg-query -S 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*
+# Mon, 01 Nov 2021 21:48:18 GMT
 VOLUME [/var/www/html]
-# Tue, 26 Oct 2021 18:44:19 GMT
+# Mon, 01 Nov 2021 21:48:18 GMT
 ENV JOOMLA_VERSION=4.0.4
-# Tue, 26 Oct 2021 18:44:19 GMT
+# Mon, 01 Nov 2021 21:48:18 GMT
 ENV JOOMLA_SHA512=56dc516fd4596c1f728cf3503d7427dfc755d4b23ad5c170e2ee11d2a1d9e38484b3fa5cb337f8ce9ad8b5108386644d915afda3d3eae0d418dae9bd1d774eb3
-# Tue, 26 Oct 2021 18:44:25 GMT
+# Mon, 01 Nov 2021 21:48:24 GMT
 RUN set -ex; 	curl -o joomla.tar.bz2 -SL https://github.com/joomla/joomla-cms/releases/download/${JOOMLA_VERSION}/Joomla_${JOOMLA_VERSION}-Stable-Full_Package.tar.bz2; 	echo "$JOOMLA_SHA512 *joomla.tar.bz2" | sha512sum -c -; 	mkdir /usr/src/joomla; 	tar -xf joomla.tar.bz2 -C /usr/src/joomla; 	rm joomla.tar.bz2; 	chown -R www-data:www-data /usr/src/joomla
-# Tue, 26 Oct 2021 18:44:27 GMT
+# Mon, 01 Nov 2021 21:48:26 GMT
 COPY file:f6b7a1c96cc89593a2b9ce4c68af350ae02f2e0c654cd5e842ff6c03641d470e in /entrypoint.sh 
-# Tue, 26 Oct 2021 18:44:27 GMT
+# Mon, 01 Nov 2021 21:48:26 GMT
 COPY file:5a85d779aaae74cfa3ab6228df0f24236d4d5ad9097e2a1b277e3daea0d6d3dc in /makedb.php 
-# Tue, 26 Oct 2021 18:44:27 GMT
+# Mon, 01 Nov 2021 21:48:26 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 26 Oct 2021 18:44:28 GMT
+# Mon, 01 Nov 2021 21:48:26 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1398,19 +1398,19 @@ CMD ["apache2-foreground"]
 		Last Modified: Thu, 21 Oct 2021 17:31:38 GMT  
 		Size: 313.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:36ceaec0adca9d1f7d37109797aba714bdc1465c13300fce072efcb2e92473d6`  
-		Last Modified: Thu, 21 Oct 2021 17:31:38 GMT  
-		Size: 2.9 MB (2879471 bytes)  
+	-	`sha256:0475c9319de262277ae9933c021c09e145fc9a8d9f6fa9d614510b757aa115d1`  
+		Last Modified: Mon, 01 Nov 2021 21:55:04 GMT  
+		Size: 3.0 MB (3040592 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a7db32cbc310f99c3a5fd1461f00fdceab21744ba3310a47bc2ecc4c8e2c3b1`  
-		Last Modified: Tue, 26 Oct 2021 18:49:45 GMT  
-		Size: 21.6 MB (21566376 bytes)  
+	-	`sha256:d05ec767cb6c9695e4c02f9e5edbe46f66e209f276015418342a2ae2a6742dee`  
+		Last Modified: Mon, 01 Nov 2021 21:55:07 GMT  
+		Size: 21.6 MB (21566460 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:13dad8ba5c705699d99976f7231d82fb588a0d8718b2859800f6c6cb44190ea2`  
-		Last Modified: Tue, 26 Oct 2021 18:49:42 GMT  
-		Size: 1.2 KB (1197 bytes)  
+	-	`sha256:df4438fb7e892ed8289ace74853f7a3d93505c7ecdb70af474052b396690129e`  
+		Last Modified: Mon, 01 Nov 2021 21:55:04 GMT  
+		Size: 1.2 KB (1202 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:935e51f73c5df2c48cb7725ab1db0ca9fa3087cc8c2448c4073cf334b060144d`  
-		Last Modified: Tue, 26 Oct 2021 18:49:42 GMT  
-		Size: 614.0 B  
+	-	`sha256:7837a78e9f4019831ee4e19de8a389fc9ce73952759b4fd37887aa7c13cf0efe`  
+		Last Modified: Mon, 01 Nov 2021 21:55:04 GMT  
+		Size: 613.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
