@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7307679295b1efa3611ea719f35294e9a94bbcd87c3c286280c7f417afa08123`
-- Created: `2021-10-26T19:20:01.900214069Z`
-- Virtual Size: ~ 165.09 Mb  
+- Image ID: `sha256:1595b10ab5dccf8092a9b12d6efe82bf6ccc5b8b35460a8d03b622cd89ffcd2a`
+- Created: `2021-11-01T23:11:35.807652753Z`
+- Virtual Size: ~ 198.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -230,6 +230,23 @@ gmp-6.2.1-r0 installed size:
 
 gmp-6.2.1-r0 license:
 LGPL-3.0-or-later OR GPL-2.0-or-later
+
+```
+
+### `apk` package: `icu-libs`
+
+```console
+icu-libs-67.1-r2 description:
+International Components for Unicode library (libraries)
+
+icu-libs-67.1-r2 webpage:
+http://site.icu-project.org/
+
+icu-libs-67.1-r2 installed size:
+31 MiB
+
+icu-libs-67.1-r2 license:
+MIT ICU Unicode-TOU
 
 ```
 
