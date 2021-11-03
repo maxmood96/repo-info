@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b483b2bbb7b55946a6c36455da0f6f77cb99c427e7f3610bf10e679ccf3ecdcc`
-- Created: `2021-10-28T00:32:56.803280783Z`
+- Image ID: `sha256:4a8250fd837af77a7d190a859b7e509e3bb6aa247cf89fc2788f2aaf839f310b`
+- Created: `2021-11-01T18:34:43.40859044Z`
 - Virtual Size: ~ 597.49 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -39,15 +39,7 @@ Licenses (from `rpm --query`): GPLv2+
 
 Licenses (from `rpm --query`): LGPLv2+
 
-Source:
-
-```console
-$ yumdownloader --quiet --source --urls audit-libs-2.8.5-4.el7
-Enabling updates-source repository
-Enabling base-source repository
-Enabling extras-source repository
-http://vault.centos.org/centos/7/os/Source//SPackages/audit-2.8.5-4.el7.src.rpm
-```
+**WARNING:** unable to find source (`yumdownloader` failed or returned no results)!
 
 ### `rpm` package: `basesystem-10.0-7.el7.centos.noarch`
 
