@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:757d54b179b5dd3399617299b8aa033b407921be850da3a4f5c3157aa78d35a5`
-- Created: `2021-10-22T03:09:49.241966266Z`
-- Virtual Size: ~ 673.69 Mb  
+- Image ID: `sha256:5b4a185fda900b6b21bcea5cf9639450db381a53381dccf96710673b0210b3fd`
+- Created: `2021-11-01T19:37:56.002804983Z`
+- Virtual Size: ~ 673.77 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["lein","repl"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/`
   - `JAVA_HOME=/usr/local/openjdk-18`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=18-ea+20`
+  - `JAVA_VERSION=18-ea+21`
   - `LEIN_VERSION=2.9.7`
   - `LEIN_INSTALL=/usr/local/bin/`
   - `LEIN_ROOT=1`
