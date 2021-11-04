@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1e31bb4d7cd00e5b9fa50ffe66fbfb505399c0149092dbef99f58a62f9a1b5b5`
-- Created: `2021-10-18T20:21:34.626939265Z`
+- Image ID: `sha256:62ae3f4898cd2a040419215578ff13034a38282cff1be6af78da806217409f6b`
+- Created: `2021-11-01T18:42:48.883581491Z`
 - Virtual Size: ~ 1.43 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -3489,33 +3489,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/mailcap/3.69/ (for browsing the source)
 - https://sources.debian.net/src/mailcap/3.69/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/mailcap/3.69/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `mako=1.1.3+ds1-2`
-
-Binary Packages:
-
-- `python3-mako=1.1.3+ds1-2`
-
-Licenses: (parsed from: `/usr/share/doc/python3-mako/copyright`)
-
-- `BSD-3-clause`
-- `Expat`
-- `WTFPL`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris mako=1.1.3+ds1-2
-'http://deb.debian.org/debian/pool/main/m/mako/mako_1.1.3+ds1-2.dsc' mako_1.1.3+ds1-2.dsc 2312 SHA256:511785be6880e957105b33efaac880c03bef131ed4166418ef1fddb7c35ad904
-'http://deb.debian.org/debian/pool/main/m/mako/mako_1.1.3+ds1.orig.tar.xz' mako_1.1.3+ds1.orig.tar.xz 161456 SHA256:9c6ef441588b6aaa51b879739aa780902327a11ab1a1858df0850588daa0df80
-'http://deb.debian.org/debian/pool/main/m/mako/mako_1.1.3+ds1-2.debian.tar.xz' mako_1.1.3+ds1-2.debian.tar.xz 13364 SHA256:427ddb30610c8fe6a4cf8a7900f2011bc90892c7c2648f0e51c006ec166e079f
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/mako/1.1.3+ds1-2/ (for browsing the source)
-- https://sources.debian.net/src/mako/1.1.3+ds1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mako/1.1.3+ds1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `markupsafe=1.1.1-1`
 
@@ -8024,11 +7997,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/npth/1.6-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/npth/1.6-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `odoo=15.0.20211018`
+### `dpkg` source package: `odoo=15.0.20211029`
 
 Binary Packages:
 
-- `odoo=15.0.20211018`
+- `odoo=15.0.20211029`
 
 Licenses: (parsed from: `/usr/share/doc/odoo/copyright`)
 
