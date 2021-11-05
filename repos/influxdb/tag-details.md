@@ -38,6 +38,10 @@
 -	[`influxdb:2.0-alpine`](#influxdb20-alpine)
 -	[`influxdb:2.0.9`](#influxdb209)
 -	[`influxdb:2.0.9-alpine`](#influxdb209-alpine)
+-	[`influxdb:2.1`](#influxdb21)
+-	[`influxdb:2.1-alpine`](#influxdb21-alpine)
+-	[`influxdb:2.1.0`](#influxdb210)
+-	[`influxdb:2.1.0-alpine`](#influxdb210-alpine)
 -	[`influxdb:alpine`](#influxdbalpine)
 -	[`influxdb:data`](#influxdbdata)
 -	[`influxdb:data-alpine`](#influxdbdata-alpine)
@@ -4168,6 +4172,22 @@ ENV DOCKER_INFLUXDB_INIT_CLI_CONFIG_NAME=default
 		Last Modified: Tue, 12 Oct 2021 22:00:17 GMT  
 		Size: 4.3 KB (4324 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `influxdb:2.1`
+
+**does not exist** (yet?)
+
+## `influxdb:2.1-alpine`
+
+**does not exist** (yet?)
+
+## `influxdb:2.1.0`
+
+**does not exist** (yet?)
+
+## `influxdb:2.1.0-alpine`
+
+**does not exist** (yet?)
 
 ## `influxdb:alpine`
 
