@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7c02f6289dca6ecbd27c029252f3b42c320ed52aea0148373aa8419ab493a958`
-- Created: `2021-10-16T01:52:49.740047849Z`
+- Image ID: `sha256:5b9ef5692961b31df2550467196c52c2fea87a56286e0309e94001e75d07341c`
+- Created: `2021-11-04T23:01:33.06139659Z`
 - Virtual Size: ~ 1.06 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2952,11 +2952,11 @@ $ apt-get source -qq --print-uris libzstd=1.4.8+dfsg-2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.8+dfsg-2.1.debian.tar.xz' libzstd_1.4.8+dfsg-2.1.debian.tar.xz 12224 SHA512:c43ebcd786bf0bf011ba37136ff03f6996b1569508a98aea55c004e48466080f0b799fba71469391898d55253a435c80b1a0a75c7f5229980dc973cf09f98814
 ```
 
-### `dpkg` source package: `linux=5.13.0-19.19`
+### `dpkg` source package: `linux=5.13.0-20.20`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.13.0-19.19`
+- `linux-libc-dev:amd64=5.13.0-20.20`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2965,10 +2965,10 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=5.13.0-19.19
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.13.0-19.19.dsc' linux_5.13.0-19.19.dsc 8207 SHA512:9da984f9babee84721d22f46049d283d15a29911ec6cdb5c130d15916f0d60d063305c40f2de8117e535af7562f3949de9718b0bb7d167014c3bc35453aa6e63
+$ apt-get source -qq --print-uris linux=5.13.0-20.20
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.13.0-20.20.dsc' linux_5.13.0-20.20.dsc 8810 SHA512:a22e98a3d48c172d654a27ac9a6df6ebdc698ae1fc221794be21c912c52cdfadfbd3bd61b59bee6794b5946c781fa665ea9a4876aaafdff8e273e16fb399ae2d
 'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.13.0.orig.tar.gz' linux_5.13.0.orig.tar.gz 189652704 SHA512:e7aff485ac9f5752df4a35fbb7668fd0a60597d3cd63c3bc78933f9fbf509ed83f8d2516c8441e6136157c5efe9a4745f97ba74b3b4353c26c1e44ca0eaa0b87
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.13.0-19.19.diff.gz' linux_5.13.0-19.19.diff.gz 4784497 SHA512:6b001d83618443892246a986ca76274b3e4cd6b6ed752f9a40bac5d301290fdecbec352e85e5321182bcccb4a6d572e9873b47c0dc59a7886d7b552377945851
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.13.0-20.20.diff.gz' linux_5.13.0-20.20.diff.gz 4784691 SHA512:a33abdf90b104e970e56bb7a0ee48eae391223ac49de3f9ee265ac615ba18d081b5c625f5f7a72e48f01b69b4019a43752b93862108e91c02ed81d8660ceb13f
 ```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu3`
@@ -3212,12 +3212,12 @@ $ apt-get source -qq --print-uris mpfr4=4.1.0-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mpfr4/mpfr4_4.1.0-3build1.debian.tar.xz' mpfr4_4.1.0-3build1.debian.tar.xz 12424 SHA512:1cb8790b81f42f36db85850da25695ab47673e6fbfcace1e108665274fcd6feb5ad2e66a518f779e49b1d04ff7a179fb3a6a255dee3a194c2478c62064a56114
 ```
 
-### `dpkg` source package: `mysql-8.0=8.0.26-0ubuntu1`
+### `dpkg` source package: `mysql-8.0=8.0.27-0ubuntu0.21.10.1`
 
 Binary Packages:
 
-- `libmysqlclient-dev=8.0.26-0ubuntu1`
-- `libmysqlclient21:amd64=8.0.26-0ubuntu1`
+- `libmysqlclient-dev=8.0.27-0ubuntu0.21.10.1`
+- `libmysqlclient21:amd64=8.0.27-0ubuntu0.21.10.1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/share/doc/libmysqlclient21/copyright`)
 
@@ -3237,10 +3237,10 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mysql-8.0=8.0.26-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.26-0ubuntu1.dsc' mysql-8.0_8.0.26-0ubuntu1.dsc 3485 SHA512:85dfbea754933f42417959912b866ff2853131eb1a755b799edb322ae3e83eb4bc8cef28aa01a6dab5552295759668fce10d9688e2b6fc89d548685c317a092a
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.26.orig.tar.gz' mysql-8.0_8.0.26.orig.tar.gz 291285918 SHA512:63d47cb52407a816dc9f4330b99924624dfee46e57e7fdce19eff32909dd9e23251e2439d1807b002a1661b547173222c77465a3ca4dbb312414a84927809cfc
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.26-0ubuntu1.debian.tar.xz' mysql-8.0_8.0.26-0ubuntu1.debian.tar.xz 158916 SHA512:c72b2c6a6c004de858edec91fe2e09d2fcfb3ba5e1d44acc7c282994ecc99f0cd4935b3b5f608e2bd77f5174b0f6b49702aa3d7ccec3b7e7e0f320bd9ea8794d
+$ apt-get source -qq --print-uris mysql-8.0=8.0.27-0ubuntu0.21.10.1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.27-0ubuntu0.21.10.1.dsc' mysql-8.0_8.0.27-0ubuntu0.21.10.1.dsc 3517 SHA512:ec061cdaeed863fafb147b9ac3949140a7f0706e4d031045ac6222568af839946a6c28089bb3a18eea031cb234733af42d838a649017d08dd7fbae4badcb10d4
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.27.orig.tar.gz' mysql-8.0_8.0.27.orig.tar.gz 292184025 SHA512:6ef2426c0bee46bdf8e2fa5cb159d5ae19f0bed4f7c9bea9b33e0dd922b568c3c68ca063dcbcd7ea6904aaea31877c10064ea10b4bc63fb40d9f31778e3a7891
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.27-0ubuntu0.21.10.1.debian.tar.xz' mysql-8.0_8.0.27-0ubuntu0.21.10.1.debian.tar.xz 158840 SHA512:57f56d98ef49ab731815e922fe9da8635122855876e48622d47f9aea3e5b3f8463c9d501f43b9ce7b06708a3c2761475546ec1b75151d260a3dd2e34a6168064
 ```
 
 ### `dpkg` source package: `mysql-defaults=1.0.5ubuntu2`
@@ -4234,11 +4234,11 @@ $ apt-get source -qq --print-uris tiff=4.3.0-1
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0-1.debian.tar.xz' tiff_4.3.0-1.debian.tar.xz 19588 SHA512:847b7f4f9eb50b96484c54e6802aa0168d7470e5a1e94fed234e7038187530dc8f45d54601dd18b0f44329503f63999d4210c2bdce87685f52decd82d9f79c2c
 ```
 
-### `dpkg` source package: `tzdata=2021a-2ubuntu1`
+### `dpkg` source package: `tzdata=2021e-0ubuntu0.21.10`
 
 Binary Packages:
 
-- `tzdata=2021a-2ubuntu1`
+- `tzdata=2021e-0ubuntu0.21.10`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
@@ -4247,11 +4247,11 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2021a-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2021a-2ubuntu1.dsc' tzdata_2021a-2ubuntu1.dsc 2326 SHA512:0da891db3161d0453a338f27ec404fd69f6b0cc094eea76530855a07d8163c0f08f2f9fd4e5004020798149e95702534c587b8e0371982d67881074827486b32
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2021a.orig.tar.gz' tzdata_2021a.orig.tar.gz 411892 SHA512:7cdd762ec90ce12a30fa36b1d66d1ea82d9fa21e514e2b9c7fcbe2541514ee0fadf30843ff352c65512fb270857b51d1517b45e1232b89c6f954ba9ff1833bb3
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2021a.orig.tar.gz.asc' tzdata_2021a.orig.tar.gz.asc 833 SHA512:41532174622222fc5e8d733c4af2decfcd0ab3f56db946763d1731ae96873e31abcb31f9a7a442428c78ea21612318b05c99bcf4b9bf37d59f11d1dc914814e6
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2021a-2ubuntu1.debian.tar.xz' tzdata_2021a-2ubuntu1.debian.tar.xz 168476 SHA512:8b256efaac2816f418b05de0d507b0b2bc0647586fa30b382ccdad3bf31d6351d9e174108884e33889ae652c47db4f57ee795cd6ff65fb7ace2e467136fdb288
+$ apt-get source -qq --print-uris tzdata=2021e-0ubuntu0.21.10
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2021e-0ubuntu0.21.10.dsc' tzdata_2021e-0ubuntu0.21.10.dsc 2350 SHA512:4be632996603e5461895aa1b2f535fba08be3ce4da7b0d3d22a58088976ebde23f7f4fa8fece2b1fee5a65eed1af5d2c7340cc2ff3c11352a49efdaace66c095
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2021e.orig.tar.gz' tzdata_2021e.orig.tar.gz 422509 SHA512:c1e8d04e049157ed5d4af0868855bbd75517e3d7e1db9c41d5283ff260109de46b6fac6be94828201d093e163d868044ac2a9db2bf0aeab800e264d0c73a9119
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2021e.orig.tar.gz.asc' tzdata_2021e.orig.tar.gz.asc 833 SHA512:b0bd68939fbf4cdf4078b8e97d0cd642e8112966e874a18218469ca35ff82c29410347a99e1321d6c9d723547ebc7945173418966e80d14b10f60af8ea7bff52
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2021e-0ubuntu0.21.10.debian.tar.xz' tzdata_2021e-0ubuntu0.21.10.debian.tar.xz 166656 SHA512:c1395c917421f5d8fd57a8199c6d3cbfbe908843836d594a38fb0e927f8714c8c2bf6fd134bc92d56047f2995d879fa42ad3aca4c1017a752eff8927e89ce9af
 ```
 
 ### `dpkg` source package: `ubuntu-keyring=2021.03.26`
@@ -4309,11 +4309,11 @@ $ apt-get source -qq --print-uris unzip=6.0-26ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/u/unzip/unzip_6.0-26ubuntu1.debian.tar.xz' unzip_6.0-26ubuntu1.debian.tar.xz 26944 SHA512:b5cda0f09d51a88bdfdd025d321f343b85966d588ca8821203788651cb9da424d1c1ec7d951c83dcc41529d519f53803ba8bd5a4a6c27f9b4ecd8516e5127064
 ```
 
-### `dpkg` source package: `usrmerge=25ubuntu1`
+### `dpkg` source package: `usrmerge=25ubuntu1.1`
 
 Binary Packages:
 
-- `usrmerge=25ubuntu1`
+- `usrmerge=25ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/usrmerge/copyright`)
 
@@ -4324,9 +4324,9 @@ Licenses: (parsed from: `/usr/share/doc/usrmerge/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris usrmerge=25ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/u/usrmerge/usrmerge_25ubuntu1.dsc' usrmerge_25ubuntu1.dsc 1614 SHA512:c2d86a38a0876f291c2c7c7fe563c019739032d2303ce6a1b17d2388e7f366168c33b83b0db93e493bd4ad265e941d081f3cb45aa4a1d455ea4a607b9b70d706
-'http://archive.ubuntu.com/ubuntu/pool/main/u/usrmerge/usrmerge_25ubuntu1.tar.xz' usrmerge_25ubuntu1.tar.xz 12620 SHA512:7baaf4b45dacf3204186c961216930f49682d1b53246bd99116d4c2efff3c47ff14e21d4d6aa4730aeb1496884427dcfb4ef099d5ab24c03dd94485e754a93e5
+$ apt-get source -qq --print-uris usrmerge=25ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/u/usrmerge/usrmerge_25ubuntu1.1.dsc' usrmerge_25ubuntu1.1.dsc 1622 SHA512:161e74f0f1489da7bdd94f2caf8391b2b3cdc52f07da5df22745ab51ec86c1cf9cd553997d2bc76ad3b2fb4c1d0058b5aadf5290080ed2d42bdad71318e4ba95
+'http://archive.ubuntu.com/ubuntu/pool/main/u/usrmerge/usrmerge_25ubuntu1.1.tar.xz' usrmerge_25ubuntu1.1.tar.xz 12820 SHA512:e955c63783536ca5177290b8302a8b21bc3f48d2b66fdcb7090c95e21b8cc8cde22e9885364279b0c0117504c519e07b5aaf8bc8f07dc12b9d6aa708496bb906
 ```
 
 ### `dpkg` source package: `utf8proc=2.5.0-1`
@@ -4349,20 +4349,20 @@ $ apt-get source -qq --print-uris utf8proc=2.5.0-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/u/utf8proc/utf8proc_2.5.0-1.debian.tar.xz' utf8proc_2.5.0-1.debian.tar.xz 5240 SHA512:0a32ae86570560b98eb174b33ff819cc07ad945466527def0567e729436491aab410b9d239597d5484c0b07d4dae676f2ebc2ffb09a2bd6ef455abb08e6cd94b
 ```
 
-### `dpkg` source package: `util-linux=2.36.1-8ubuntu1`
+### `dpkg` source package: `util-linux=2.36.1-8ubuntu2`
 
 Binary Packages:
 
-- `bsdutils=1:2.36.1-8ubuntu1`
-- `libblkid-dev:amd64=2.36.1-8ubuntu1`
-- `libblkid1:amd64=2.36.1-8ubuntu1`
-- `libmount-dev:amd64=2.36.1-8ubuntu1`
-- `libmount1:amd64=2.36.1-8ubuntu1`
-- `libsmartcols1:amd64=2.36.1-8ubuntu1`
-- `libuuid1:amd64=2.36.1-8ubuntu1`
-- `mount=2.36.1-8ubuntu1`
-- `util-linux=2.36.1-8ubuntu1`
-- `uuid-dev:amd64=2.36.1-8ubuntu1`
+- `bsdutils=1:2.36.1-8ubuntu2`
+- `libblkid-dev:amd64=2.36.1-8ubuntu2`
+- `libblkid1:amd64=2.36.1-8ubuntu2`
+- `libmount-dev:amd64=2.36.1-8ubuntu2`
+- `libmount1:amd64=2.36.1-8ubuntu2`
+- `libsmartcols1:amd64=2.36.1-8ubuntu2`
+- `libuuid1:amd64=2.36.1-8ubuntu2`
+- `mount=2.36.1-8ubuntu2`
+- `util-linux=2.36.1-8ubuntu2`
+- `uuid-dev:amd64=2.36.1-8ubuntu2`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid-dev/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libmount-dev/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`, `/usr/share/doc/uuid-dev/copyright`)
 
@@ -4386,10 +4386,10 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris util-linux=2.36.1-8ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.36.1-8ubuntu1.dsc' util-linux_2.36.1-8ubuntu1.dsc 4471 SHA512:5fdfdb9c1488447b20e2b4485c74daac3531cdf91a258d618f9e2077b2e22ac7c6dba9ca2a96d09ee87e2fcf485a7cff708eed7b10c74ca7797fd09aaa68f362
+$ apt-get source -qq --print-uris util-linux=2.36.1-8ubuntu2
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.36.1-8ubuntu2.dsc' util-linux_2.36.1-8ubuntu2.dsc 4471 SHA512:9375ca13aca2f4abc2db648ee9658c3795b08279c3bcef3ae44a88fb9aa086816621e59656d1e7c5b4085474ce13dc15ff54c7905996df2a914f140984e5b00a
 'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.36.1.orig.tar.xz' util-linux_2.36.1.orig.tar.xz 5231880 SHA512:9dfd01ae4c16fa35015dafd222d555988b72e4d1d2fbadd140791b9ef78f84fa8254d4d08dc67cabf41e873338867f19e786b989d708ccfe5161c4f7679bba7a
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.36.1-8ubuntu1.debian.tar.xz' util-linux_2.36.1-8ubuntu1.debian.tar.xz 102400 SHA512:0efc37f6d08c6c7a360fc8cfe7573d3a53886e0ba8af28a7d2b530f331801b62d60e6c33f3374950710eb01db0a62116bf113206d4cbd766c9e43602ebc5073d
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.36.1-8ubuntu2.debian.tar.xz' util-linux_2.36.1-8ubuntu2.debian.tar.xz 103764 SHA512:de267807f28911b2cddeb0ece6b56719c9ceb368fb4756fc959a2781d2ac3b5e61da331180cc0dc55763d3581ab65a613ac23f19939b5046333b3a7df8ad32a3
 ```
 
 ### `dpkg` source package: `wget=1.21-1ubuntu3`
