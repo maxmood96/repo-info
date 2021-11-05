@@ -1,7 +1,7 @@
 ## `eclipse-temurin:17-jdk-windowsservercore-ltsc2016`
 
 ```console
-$ docker pull eclipse-temurin@sha256:20b7cc5202748ec509cd3864ba57f7489396c5588462f50f4776c684781ef3c5
+$ docker pull eclipse-temurin@sha256:f6c25c94b023f5b66438bfc1f00aafec995eaf45bde1dd176693326ac7760e6b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull eclipse-temurin@sha256:20b7cc5202748ec509cd3864ba57f7489396c558846
 ### `eclipse-temurin:17-jdk-windowsservercore-ltsc2016` - windows version 10.0.14393.4704; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:654348399c835448e518b2a72549e21b9cd14b1f90dce38256eac2c01e3aba75
+$ docker pull eclipse-temurin@sha256:aed1fdc062de5300f3c12c8010cb7cd8a9baf18c753e3817ca45d8ba08e0c71d
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 GB (6628750966 bytes)**  
+-	Total Size: **6.6 GB (6628768564 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2e3e9701ab96f013ecb442d9a468155090e3dc26ee9f48a28fdda0f5ee248bc4`
+-	Image ID: `sha256:08dc7f468e11a646c4625477262299b8ed69026c9f80c9fe21effecf7085c556`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -29,13 +29,13 @@ RUN Apply image 1607-RTM-amd64
 RUN Install update ltsc2016-amd64
 # Wed, 13 Oct 2021 12:40:35 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 13 Oct 2021 18:59:02 GMT
-ENV JAVA_VERSION=jdk-17+35
-# Wed, 13 Oct 2021 19:00:56 GMT
-RUN Write-Host ('Downloading https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_windows_hotspot_17_35.msi ...');     [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12 ; Invoke-WebRequest -Uri https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_windows_hotspot_17_35.msi -O 'openjdk.msi' ;     Write-Host ('Verifying sha256 (4a0350a9e3e0cf3bba9a57890bb0b223b7c47883169730f122100fc31d61d486) ...');     if ((Get-FileHash openjdk.msi -Algorithm sha256).Hash -ne '4a0350a9e3e0cf3bba9a57890bb0b223b7c47883169730f122100fc31d61d486') {         Write-Host 'FAILED!';         exit 1;     };         New-Item -ItemType Directory -Path C:\temp | Out-Null;         Write-Host 'Installing using MSI ...';     $proc = Start-Process -FilePath "msiexec.exe" -ArgumentList '/i', 'openjdk.msi', '/L*V', 'C:\temp\OpenJDK.log',     '/quiet', 'ADDLOCAL=FeatureEnvironment,FeatureJarFileRunWith,FeatureJavaHome', 'INSTALLDIR=C:\openjdk-17' -Wait -Passthru;     $proc.WaitForExit() ;     if ($proc.ExitCode -ne 0) {         Write-Host 'FAILED installing MSI!' ;         exit 1;     };         Remove-Item -Path C:\temp -Recurse | Out-Null;     Write-Host 'Removing openjdk.msi ...';     Remove-Item openjdk.msi -Force
-# Wed, 13 Oct 2021 19:02:11 GMT
+# Fri, 05 Nov 2021 19:39:51 GMT
+ENV JAVA_VERSION=jdk-17.0.1+12
+# Fri, 05 Nov 2021 19:41:48 GMT
+RUN Write-Host ('Downloading https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.1%2B12/OpenJDK17U-jdk_x64_windows_hotspot_17.0.1_12.msi ...');     [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12 ; Invoke-WebRequest -Uri https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.1%2B12/OpenJDK17U-jdk_x64_windows_hotspot_17.0.1_12.msi -O 'openjdk.msi' ;     Write-Host ('Verifying sha256 (f5241bb43b589e45b6c3133fae6cc8cbffec4cae2504c3b99c3fac0c50cbf11e) ...');     if ((Get-FileHash openjdk.msi -Algorithm sha256).Hash -ne 'f5241bb43b589e45b6c3133fae6cc8cbffec4cae2504c3b99c3fac0c50cbf11e') {         Write-Host 'FAILED!';         exit 1;     };         New-Item -ItemType Directory -Path C:\temp | Out-Null;         Write-Host 'Installing using MSI ...';     $proc = Start-Process -FilePath "msiexec.exe" -ArgumentList '/i', 'openjdk.msi', '/L*V', 'C:\temp\OpenJDK.log',     '/quiet', 'ADDLOCAL=FeatureEnvironment,FeatureJarFileRunWith,FeatureJavaHome', 'INSTALLDIR=C:\openjdk-17' -Wait -Passthru;     $proc.WaitForExit() ;     if ($proc.ExitCode -ne 0) {         Write-Host 'FAILED installing MSI!' ;         exit 1;     };         Remove-Item -Path C:\temp -Recurse | Out-Null;     Write-Host 'Removing openjdk.msi ...';     Remove-Item openjdk.msi -Force
+# Fri, 05 Nov 2021 19:42:57 GMT
 RUN Write-Host 'Verifying install ...';     Write-Host 'javac --version'; javac --version;     Write-Host 'java --version'; java --version;         Write-Host 'Complete.'
-# Wed, 13 Oct 2021 19:02:12 GMT
+# Fri, 05 Nov 2021 19:42:58 GMT
 CMD ["jshell"]
 ```
 
@@ -50,19 +50,19 @@ CMD ["jshell"]
 		Last Modified: Wed, 13 Oct 2021 13:27:57 GMT  
 		Size: 1.3 KB (1322 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:507b50cb230e4739993a1147cd6b10302df619133a162dbb7226533c8ff046ed`  
-		Last Modified: Wed, 13 Oct 2021 19:43:10 GMT  
-		Size: 1.4 KB (1410 bytes)  
+	-	`sha256:65e9919f3776b4c95d2df7dcbbe025d7b41d7a5066bf1789a6cc8cc15c43afe1`  
+		Last Modified: Fri, 05 Nov 2021 20:38:31 GMT  
+		Size: 1.4 KB (1396 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c14bbcd8245eb2fa566ddc78e69006db632c4d95351a4a0e2c44aac0541b6875`  
-		Last Modified: Wed, 13 Oct 2021 19:43:40 GMT  
-		Size: 352.1 MB (352108400 bytes)  
+	-	`sha256:7ff1a2680c9f8a103aa0026a8ceccb10358923f3c2675cfb54d3dd381a2c02dc`  
+		Last Modified: Fri, 05 Nov 2021 20:38:59 GMT  
+		Size: 352.1 MB (352118270 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fcf4ef24556ec98a93248c3e47566a015211a99e03b42dd77f6e0a44f0301d8b`  
-		Last Modified: Wed, 13 Oct 2021 19:43:15 GMT  
-		Size: 3.9 MB (3871884 bytes)  
+	-	`sha256:4419c13bbdc24dda75b81e34d01729a74aea61959e73796724f250a5929a8673`  
+		Last Modified: Fri, 05 Nov 2021 20:38:35 GMT  
+		Size: 3.9 MB (3879620 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3301fb1a089bde0c91dc57582bf359110f5188127c672e482ca07aa79318dbb4`  
-		Last Modified: Wed, 13 Oct 2021 19:43:10 GMT  
-		Size: 1.4 KB (1424 bytes)  
+	-	`sha256:03f9e207a0611af8fd96bc2718f817509bce147973efbf8e927ae5f68a1e22f8`  
+		Last Modified: Fri, 05 Nov 2021 20:38:33 GMT  
+		Size: 1.4 KB (1430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
