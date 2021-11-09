@@ -1863,9 +1863,13 @@ Licenses: (parsed from: `/usr/share/doc/usrmerge/copyright`)
 - `GPL-2`
 - `later (please see /usr/share/common-licenses/GPL-2)`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris usrmerge=25ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/u/usrmerge/usrmerge_25ubuntu1.1.dsc' usrmerge_25ubuntu1.1.dsc 1622 SHA512:161e74f0f1489da7bdd94f2caf8391b2b3cdc52f07da5df22745ab51ec86c1cf9cd553997d2bc76ad3b2fb4c1d0058b5aadf5290080ed2d42bdad71318e4ba95
+'http://archive.ubuntu.com/ubuntu/pool/main/u/usrmerge/usrmerge_25ubuntu1.1.tar.xz' usrmerge_25ubuntu1.1.tar.xz 12820 SHA512:e955c63783536ca5177290b8302a8b21bc3f48d2b66fdcb7090c95e21b8cc8cde22e9885364279b0c0117504c519e07b5aaf8bc8f07dc12b9d6aa708496bb906
+```
 
 ### `dpkg` source package: `util-linux=2.36.1-8ubuntu2`
 
