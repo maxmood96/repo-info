@@ -67,14 +67,9 @@ Licenses: (parsed from: `/usr/share/doc/libasound2/copyright`, `/usr/share/doc/l
 - `LGPL-2.1`
 - `LPGL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris alsa-lib=1.2.2-2.1ubuntu2.4
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.2.2-2.1ubuntu2.4.dsc' alsa-lib_1.2.2-2.1ubuntu2.4.dsc 2029 SHA512:56ba169275fb8f0d6c02b3130796a4271104cbf013ffac0d8e9567c1ad3651bb44706b14c0f04c5e82d37a19c2646994799983199987d27524bd0afcf200620e
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.2.2.orig.tar.bz2' alsa-lib_1.2.2.orig.tar.bz2 1030747 SHA512:d21adb3ff998918c7d1820f9ce2aaf4202dd45ccb87cb092d49da8b2402b6ddaad06325be0fd59f17393a5d9958e3743bfccb4b14bdb947a42e7d791d73c7033
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.2.2-2.1ubuntu2.4.debian.tar.xz' alsa-lib_1.2.2-2.1ubuntu2.4.debian.tar.xz 59000 SHA512:9c359539a19f18169ba37e8731fb29707b0a1eaefdc17bf66e6b5243d5f61032693245787d09fa86dc4bd3e639e41f76caf0a7a1d383ee0c40bf36c1101eeaea
-```
 
 ### `dpkg` source package: `aom=1.0.0.errata1-3build1`
 
@@ -5263,14 +5258,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.4.0-89.100
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-89.100.dsc' linux_5.4.0-89.100.dsc 7224 SHA512:a52b6d8b7f4f6e525005888b82f47060c9b83956a1dbaf7db021659ad9c4fba7e1f5182fbd03ebc4052e5b1ec7a98ee556dd5d61a8ab55f5d2abdbc0356d6f5c
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA512:62b09a7231fd793973c5f59b16c4f6ffce621188b02a71915874b05e8e3f956fb6146d4a4fb1a4475bebe463949ca5a18da12842c3ce7c52e996e6bc4012a074
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-89.100.diff.gz' linux_5.4.0-89.100.diff.gz 8582799 SHA512:3a84c6511eee90ea94a2f824a6d2fdb06442f80fbecf03d5a7a183c9eb731b82c83ccc27329fc438e9993920762f46d6e8bddbe5922d39a1ac972244bd62f317
-```
 
 ### `dpkg` source package: `llvm-toolchain-12=1:12.0.0-3ubuntu1~20.04.4`
 
