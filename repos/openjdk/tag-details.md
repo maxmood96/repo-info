@@ -231,36 +231,36 @@
 -	[`openjdk:18-ea-11-jdk-alpine`](#openjdk18-ea-11-jdk-alpine)
 -	[`openjdk:18-ea-11-jdk-alpine3.13`](#openjdk18-ea-11-jdk-alpine313)
 -	[`openjdk:18-ea-11-jdk-alpine3.14`](#openjdk18-ea-11-jdk-alpine314)
--	[`openjdk:18-ea-21`](#openjdk18-ea-21)
--	[`openjdk:18-ea-21-bullseye`](#openjdk18-ea-21-bullseye)
--	[`openjdk:18-ea-21-buster`](#openjdk18-ea-21-buster)
--	[`openjdk:18-ea-21-jdk`](#openjdk18-ea-21-jdk)
--	[`openjdk:18-ea-21-jdk-bullseye`](#openjdk18-ea-21-jdk-bullseye)
--	[`openjdk:18-ea-21-jdk-buster`](#openjdk18-ea-21-jdk-buster)
--	[`openjdk:18-ea-21-jdk-nanoserver`](#openjdk18-ea-21-jdk-nanoserver)
--	[`openjdk:18-ea-21-jdk-nanoserver-1809`](#openjdk18-ea-21-jdk-nanoserver-1809)
--	[`openjdk:18-ea-21-jdk-oracle`](#openjdk18-ea-21-jdk-oracle)
--	[`openjdk:18-ea-21-jdk-oraclelinux7`](#openjdk18-ea-21-jdk-oraclelinux7)
--	[`openjdk:18-ea-21-jdk-oraclelinux8`](#openjdk18-ea-21-jdk-oraclelinux8)
--	[`openjdk:18-ea-21-jdk-slim`](#openjdk18-ea-21-jdk-slim)
--	[`openjdk:18-ea-21-jdk-slim-bullseye`](#openjdk18-ea-21-jdk-slim-bullseye)
--	[`openjdk:18-ea-21-jdk-slim-buster`](#openjdk18-ea-21-jdk-slim-buster)
--	[`openjdk:18-ea-21-jdk-windowsservercore`](#openjdk18-ea-21-jdk-windowsservercore)
--	[`openjdk:18-ea-21-jdk-windowsservercore-1809`](#openjdk18-ea-21-jdk-windowsservercore-1809)
--	[`openjdk:18-ea-21-jdk-windowsservercore-ltsc2016`](#openjdk18-ea-21-jdk-windowsservercore-ltsc2016)
--	[`openjdk:18-ea-21-jdk-windowsservercore-ltsc2022`](#openjdk18-ea-21-jdk-windowsservercore-ltsc2022)
--	[`openjdk:18-ea-21-nanoserver`](#openjdk18-ea-21-nanoserver)
--	[`openjdk:18-ea-21-nanoserver-1809`](#openjdk18-ea-21-nanoserver-1809)
--	[`openjdk:18-ea-21-oracle`](#openjdk18-ea-21-oracle)
--	[`openjdk:18-ea-21-oraclelinux7`](#openjdk18-ea-21-oraclelinux7)
--	[`openjdk:18-ea-21-oraclelinux8`](#openjdk18-ea-21-oraclelinux8)
--	[`openjdk:18-ea-21-slim`](#openjdk18-ea-21-slim)
--	[`openjdk:18-ea-21-slim-bullseye`](#openjdk18-ea-21-slim-bullseye)
--	[`openjdk:18-ea-21-slim-buster`](#openjdk18-ea-21-slim-buster)
--	[`openjdk:18-ea-21-windowsservercore`](#openjdk18-ea-21-windowsservercore)
--	[`openjdk:18-ea-21-windowsservercore-1809`](#openjdk18-ea-21-windowsservercore-1809)
--	[`openjdk:18-ea-21-windowsservercore-ltsc2016`](#openjdk18-ea-21-windowsservercore-ltsc2016)
--	[`openjdk:18-ea-21-windowsservercore-ltsc2022`](#openjdk18-ea-21-windowsservercore-ltsc2022)
+-	[`openjdk:18-ea-22`](#openjdk18-ea-22)
+-	[`openjdk:18-ea-22-bullseye`](#openjdk18-ea-22-bullseye)
+-	[`openjdk:18-ea-22-buster`](#openjdk18-ea-22-buster)
+-	[`openjdk:18-ea-22-jdk`](#openjdk18-ea-22-jdk)
+-	[`openjdk:18-ea-22-jdk-bullseye`](#openjdk18-ea-22-jdk-bullseye)
+-	[`openjdk:18-ea-22-jdk-buster`](#openjdk18-ea-22-jdk-buster)
+-	[`openjdk:18-ea-22-jdk-nanoserver`](#openjdk18-ea-22-jdk-nanoserver)
+-	[`openjdk:18-ea-22-jdk-nanoserver-1809`](#openjdk18-ea-22-jdk-nanoserver-1809)
+-	[`openjdk:18-ea-22-jdk-oracle`](#openjdk18-ea-22-jdk-oracle)
+-	[`openjdk:18-ea-22-jdk-oraclelinux7`](#openjdk18-ea-22-jdk-oraclelinux7)
+-	[`openjdk:18-ea-22-jdk-oraclelinux8`](#openjdk18-ea-22-jdk-oraclelinux8)
+-	[`openjdk:18-ea-22-jdk-slim`](#openjdk18-ea-22-jdk-slim)
+-	[`openjdk:18-ea-22-jdk-slim-bullseye`](#openjdk18-ea-22-jdk-slim-bullseye)
+-	[`openjdk:18-ea-22-jdk-slim-buster`](#openjdk18-ea-22-jdk-slim-buster)
+-	[`openjdk:18-ea-22-jdk-windowsservercore`](#openjdk18-ea-22-jdk-windowsservercore)
+-	[`openjdk:18-ea-22-jdk-windowsservercore-1809`](#openjdk18-ea-22-jdk-windowsservercore-1809)
+-	[`openjdk:18-ea-22-jdk-windowsservercore-ltsc2016`](#openjdk18-ea-22-jdk-windowsservercore-ltsc2016)
+-	[`openjdk:18-ea-22-jdk-windowsservercore-ltsc2022`](#openjdk18-ea-22-jdk-windowsservercore-ltsc2022)
+-	[`openjdk:18-ea-22-nanoserver`](#openjdk18-ea-22-nanoserver)
+-	[`openjdk:18-ea-22-nanoserver-1809`](#openjdk18-ea-22-nanoserver-1809)
+-	[`openjdk:18-ea-22-oracle`](#openjdk18-ea-22-oracle)
+-	[`openjdk:18-ea-22-oraclelinux7`](#openjdk18-ea-22-oraclelinux7)
+-	[`openjdk:18-ea-22-oraclelinux8`](#openjdk18-ea-22-oraclelinux8)
+-	[`openjdk:18-ea-22-slim`](#openjdk18-ea-22-slim)
+-	[`openjdk:18-ea-22-slim-bullseye`](#openjdk18-ea-22-slim-bullseye)
+-	[`openjdk:18-ea-22-slim-buster`](#openjdk18-ea-22-slim-buster)
+-	[`openjdk:18-ea-22-windowsservercore`](#openjdk18-ea-22-windowsservercore)
+-	[`openjdk:18-ea-22-windowsservercore-1809`](#openjdk18-ea-22-windowsservercore-1809)
+-	[`openjdk:18-ea-22-windowsservercore-ltsc2016`](#openjdk18-ea-22-windowsservercore-ltsc2016)
+-	[`openjdk:18-ea-22-windowsservercore-ltsc2022`](#openjdk18-ea-22-windowsservercore-ltsc2022)
 -	[`openjdk:18-ea-alpine`](#openjdk18-ea-alpine)
 -	[`openjdk:18-ea-alpine3.13`](#openjdk18-ea-alpine313)
 -	[`openjdk:18-ea-alpine3.14`](#openjdk18-ea-alpine314)
@@ -29634,7 +29634,7 @@ CMD ["jshell"]
 ## `openjdk:18`
 
 ```console
-$ docker pull openjdk@sha256:fe025977fd77a1cbfe1bc388a48b4b8776a200f4ddda1f828c41b355d68cbcfe
+$ docker pull openjdk@sha256:53a6bb7c29bce7dbe2c669c98c2c73f29aa9e9e487a5e64153523c230b6261a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -29648,14 +29648,14 @@ $ docker pull openjdk@sha256:fe025977fd77a1cbfe1bc388a48b4b8776a200f4ddda1f828c4
 ### `openjdk:18` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:817b9de5fd1ed622c9080f216dd6b3040f3545be2c6026fe5d413628eb87edca
+$ docker pull openjdk@sha256:d91c50b89de0c4a4b5d4e9b528995006453b9867cb0dae41f100f89e851c9a52
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **243.6 MB (243585087 bytes)**  
+-	Total Size: **243.7 MB (243728237 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f55f011574655a28ccd27287ab45d17065ae9bbc0c4101281ffa665c385c2315`
+-	Image ID: `sha256:672ef7efeba8fe2ad1d923268b6836d1ecbff55754c90ed0fbfe47b4c214a6f8`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -29671,11 +29671,11 @@ ENV JAVA_HOME=/usr/java/openjdk-18
 ENV PATH=/usr/java/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 03 Nov 2021 22:37:07 GMT
 ENV LANG=C.UTF-8
-# Wed, 03 Nov 2021 22:37:07 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 03 Nov 2021 22:37:18 GMT
-RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 03 Nov 2021 22:37:19 GMT
+# Thu, 11 Nov 2021 02:27:47 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:27:58 GMT
+RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:27:59 GMT
 CMD ["jshell"]
 ```
 
@@ -29688,9 +29688,9 @@ CMD ["jshell"]
 		Last Modified: Wed, 03 Nov 2021 22:43:12 GMT  
 		Size: 13.5 MB (13491241 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9881991c1db3ee3e0c6ae7c15b8a4429c433a7655ffe01202511ebf51b6a2ec2`  
-		Last Modified: Wed, 03 Nov 2021 22:43:24 GMT  
-		Size: 188.1 MB (188125731 bytes)  
+	-	`sha256:9a2f4b2e287c44dde9d335364634f51085f3bc93889ea6d9112410318239f8b6`  
+		Last Modified: Thu, 11 Nov 2021 02:34:37 GMT  
+		Size: 188.3 MB (188268881 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18` - linux; arm64 variant v8
@@ -29744,14 +29744,14 @@ CMD ["jshell"]
 ### `openjdk:18` - windows version 10.0.20348.350; amd64
 
 ```console
-$ docker pull openjdk@sha256:e8255df62dff59325ca6e55e1bcc9080692eaefdcdbb1d7deaafb57971ee86de
+$ docker pull openjdk@sha256:9c20d60c7bde738f2c3e57e52aafbaecc57f1a5ec9c4b75dba7c45378b4acfeb
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.4 GB (2369632853 bytes)**  
+-	Total Size: **2.4 GB (2369930838 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c7f00655015db4254b3d0354638c0dbea2256f1b504ac92eb2577f6a5a1884f4`
+-	Image ID: `sha256:a5c6761474f0c566c146885a48d00326c719b7730871258da29aad263b932a4a`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -29768,15 +29768,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:23:41 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:23:42 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:23:43 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:23:44 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:24:32 GMT
+# Thu, 11 Nov 2021 02:22:29 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:22:30 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:22:31 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:23:15 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:24:34 GMT
+# Thu, 11 Nov 2021 02:23:16 GMT
 CMD ["jshell"]
 ```
 
@@ -29803,38 +29803,38 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:03:27 GMT  
 		Size: 549.7 KB (549708 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b698dd11831adf277aae025052bc6eef078afd78744099225fd6ecd561fdcb6f`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1379 bytes)  
+	-	`sha256:47a3965ec2551fcd1a6117196df95c018068b200db9142b813af85f8f05fac3f`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b0900c61346cbdc2e5203cfe88ec50506b93be59c3bd52564a8b95a1e0f5f4d`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1398 bytes)  
+	-	`sha256:157aee527ea6606caee0c3f88322e3dcee4605f52eb98706b7629d2f2d864f50`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:006246c3aa0e0f4bc3f01c03d0e7d48693d0725b25f3e78f3581915d92760caa`  
-		Last Modified: Wed, 10 Nov 2021 21:03:25 GMT  
-		Size: 1.4 KB (1355 bytes)  
+	-	`sha256:53b7b5633a2546c9bab04d431d13513305ffa78a8fd0fbb6871d649054b71248`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05f8dd5277feae03b608b6cc2ff3cd3dc5107d8e8b71c5d8af8412db74134f7b`  
-		Last Modified: Wed, 10 Nov 2021 21:06:46 GMT  
-		Size: 183.9 MB (183851222 bytes)  
+	-	`sha256:458a4ea681f6aaefe0ffff613b2b6902899d6cf784e658b99c5d2aefe9fd101c`  
+		Last Modified: Thu, 11 Nov 2021 02:35:31 GMT  
+		Size: 184.1 MB (184149058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:174ce1c5faf404eee966a95111144858ca8a1cd9b461dc6660bda459e2b91294`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1419 bytes)  
+	-	`sha256:b237936aa73b8bc01a1cd55260a8718087e351e2cf387793361369cb3067930f`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18` - windows version 10.0.17763.2300; amd64
 
 ```console
-$ docker pull openjdk@sha256:2844a4f5ef91b81e8639e3c77c53eb720cb1a92d7615cb49e474db929c7f0e4d
+$ docker pull openjdk@sha256:8e32cdb2628a6f1f06929a6f3ce57025716a05db9885a170e8d4acb24002f91d
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 GB (2890432121 bytes)**  
+-	Total Size: **2.9 GB (2890756401 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:edb6fdab0d77d354269b0c787da93627f788070ff04e27610bf4d74ac6947dbb`
+-	Image ID: `sha256:50d8c70546f0046f36a731848b58b0bbf9e64784e0a12ad91de1219f225d97d4`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -29851,15 +29851,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:26:31 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:26:31 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:26:32 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:26:33 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:28:03 GMT
+# Thu, 11 Nov 2021 02:23:31 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:23:32 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:23:33 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:24:52 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:28:04 GMT
+# Thu, 11 Nov 2021 02:24:53 GMT
 CMD ["jshell"]
 ```
 
@@ -29886,38 +29886,38 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:07:09 GMT  
 		Size: 319.7 KB (319676 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f27f6a08e6bde711bb8374842ac82c0cad5fa223e6215af6895d7b1ae20ab601`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1435 bytes)  
+	-	`sha256:e82aaf27003bf2b62a2cc2dbd9cb4ff9a112f8ef1cf0240f81607382e7cd6138`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb17e13d4cdd0b960ba531f11242bb58c8a359c38dbd6bb4bdd03853994bc2ce`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1441 bytes)  
+	-	`sha256:98f36effb4b3b001319833edf8fc4e1a9b6008500dafad80385b5a4520aa3c29`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c847b4d31b558449e54882e692193c6e77fd877cb8d037083d8898f0a3e4efe6`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
+	-	`sha256:c64c2dd6bbf7811caa7ae295e72178094f00f1058f9918636ef7245bd24cc578`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1430 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:cdfbdd5d3b9376889190109d5cc7a4cf2377a4946e1ccc5535bd87d1cac3ca5d`  
+		Last Modified: Thu, 11 Nov 2021 02:36:10 GMT  
+		Size: 183.9 MB (183948230 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4465946c6c9661cbaf098a919fdf0be953f0cf789394679363d052795feb4f30`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
 		Size: 1.4 KB (1420 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95a35ec7cf69a61548328a852bd3c946f51685d419a4c79f87802db51db08c50`  
-		Last Modified: Wed, 10 Nov 2021 21:07:26 GMT  
-		Size: 183.6 MB (183623942 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5753877e7a39a9e13e30aa822049b0a084cda5de4a40cd5f6ace47ac2fc9eb10`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18` - windows version 10.0.14393.4770; amd64
 
 ```console
-$ docker pull openjdk@sha256:393e2252dd54db1eae006103f025518c7a5ad43752461ed3d8ee1de90f0395ae
+$ docker pull openjdk@sha256:1fb6cb4679450a052002f19a809879940b24f5a42313a449b3abac847b5716b8
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.5 GB (6457431629 bytes)**  
+-	Total Size: **6.5 GB (6457750413 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d306462a846e7b818d1a0e0e8ab77db60ccccfd35a285ce2ee8647be0f0f9de`
+-	Image ID: `sha256:81a0d0a688c09412d0fc9d6c668fc54ceb91032a59439189764571f4987fa30a`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -29934,15 +29934,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:30:05 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:30:06 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:30:07 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:30:08 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:31:36 GMT
+# Thu, 11 Nov 2021 02:25:13 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:25:14 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:25:15 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:26:36 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:31:37 GMT
+# Thu, 11 Nov 2021 02:26:37 GMT
 CMD ["jshell"]
 ```
 
@@ -29969,25 +29969,25 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:07:51 GMT  
 		Size: 346.8 KB (346841 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1d9bca52a27503493f0c99b4a99920bf0977ea36e5c98d5640b9974957eaf1c`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1400 bytes)  
+	-	`sha256:83bd413e3a517265afe99693948983f594de2897cc86194a7d8d387b575e82a5`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1424 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87f3555ad46e455b194d91f0a0c93835b1f759bed8eca17a3a0dc657385bd13c`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1415 bytes)  
+	-	`sha256:43648bc0ccab1f3f49e25e4d2e08ad16e43fd15b3b877f2a9659cc2b8735924a`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2a124c261e3810baa7b86d3002f7c9bb0d9b74f151a368c9efdd7dbda0dd0d5`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1429 bytes)  
+	-	`sha256:b37343f091cd0ffd2e8881824fa7eb48840fcaa1924b9df53edc6d5828a44255`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1389 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1d67ffbd95a6b961816519f50fa3d55ae7eb440d88109b8d6784a1093bfe62e2`  
-		Last Modified: Wed, 10 Nov 2021 21:11:11 GMT  
-		Size: 183.6 MB (183629721 bytes)  
+	-	`sha256:5a722237d8a9d82c5a0e0401f0d42603163f666c0dc8dba2f339c5858703d9e7`  
+		Last Modified: Thu, 11 Nov 2021 02:39:38 GMT  
+		Size: 183.9 MB (183948511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a06fd0b5df6b3417d9ff1f2bdf32c8c9ed0d6a0c45b70e6db8fb0a0019e361d7`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1415 bytes)  
+	-	`sha256:f983e129d00f1fc3c9459bca58fe6d4bf0f833ed18f5ccc0c1e4478aea0af48e`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1418 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `openjdk:18-alpine`
@@ -30161,7 +30161,7 @@ CMD ["jshell"]
 ## `openjdk:18-bullseye`
 
 ```console
-$ docker pull openjdk@sha256:b34adb0bd4ef1fa7eb8a9ac59d70b70f09173679ecf0973b9b55458d9f63a062
+$ docker pull openjdk@sha256:7ec905a9bceb3214da3683a6c8a9c828922734a3d2cc9db7e2b265c920be8254
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -30172,14 +30172,14 @@ $ docker pull openjdk@sha256:b34adb0bd4ef1fa7eb8a9ac59d70b70f09173679ecf0973b9b5
 ### `openjdk:18-bullseye` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:15dd6622b67c43a37f419bece22f25e55079b58a4f10b9d84df8a5b5dbd8f375
+$ docker pull openjdk@sha256:a5fdf91444484a67739a2406539c153e4586ec3053a6d9bc5bedfe6c113997aa
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **327.8 MB (327817336 bytes)**  
+-	Total Size: **328.0 MB (327959593 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8214cbfc4e4baf5ddb3cb7d9c798a3e186ffa05cadde66de90fb313bb5ea7a9c`
+-	Image ID: `sha256:6f395a8ee4404de82b9d3db99d55f42b0621473a8933d5bc2fff2f800abdb8ff`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -30201,11 +30201,11 @@ ENV JAVA_HOME=/usr/local/openjdk-18
 ENV PATH=/usr/local/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 12 Oct 2021 16:27:22 GMT
 ENV LANG=C.UTF-8
-# Mon, 01 Nov 2021 18:49:36 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 18:49:49 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 18:49:50 GMT
+# Thu, 11 Nov 2021 02:28:19 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:28:30 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:28:31 GMT
 CMD ["jshell"]
 ```
 
@@ -30230,9 +30230,9 @@ CMD ["jshell"]
 		Last Modified: Tue, 12 Oct 2021 16:42:23 GMT  
 		Size: 14.1 MB (14071834 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:972fa5e33b31fd4ad24909410193a04068676af50abc0a41584d702abeb6cd37`  
-		Last Modified: Mon, 01 Nov 2021 18:57:35 GMT  
-		Size: 188.2 MB (188235013 bytes)  
+	-	`sha256:9ee19c4d65aa828166758ac92a6e4652f7e4a1867287ccf1dbcdc3f6cd9d9b0b`  
+		Last Modified: Thu, 11 Nov 2021 02:35:59 GMT  
+		Size: 188.4 MB (188377270 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-bullseye` - linux; arm64 variant v8
@@ -30304,7 +30304,7 @@ CMD ["jshell"]
 ## `openjdk:18-buster`
 
 ```console
-$ docker pull openjdk@sha256:0f44e827154b7126f229988255469485e4f45da794f0045aff384f694a727272
+$ docker pull openjdk@sha256:a4607fc5925dbe217020c82bd24e76230edce164e0715dfe8ba91db9c8279f29
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -30315,14 +30315,14 @@ $ docker pull openjdk@sha256:0f44e827154b7126f229988255469485e4f45da794f0045aff3
 ### `openjdk:18-buster` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:696584d92fd43941e89c6f843e004ec5e08307be179af47574446e46f50535f2
+$ docker pull openjdk@sha256:267b76c2fd454cb5d03ab6588a2b060d657e37c539e95d22f1dc22b0e8114136
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **322.3 MB (322265996 bytes)**  
+-	Total Size: **322.4 MB (322416320 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e100a7bfcd4933ce38e63845a379afee31d3550e20c59746b6b191d497210df5`
+-	Image ID: `sha256:b9f0939359ecbf4bdc0b810c623493f299bd238ac93c7cc216db6c24d57ed4dc`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -30344,11 +30344,11 @@ ENV JAVA_HOME=/usr/local/openjdk-18
 ENV PATH=/usr/local/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 12 Oct 2021 16:28:21 GMT
 ENV LANG=C.UTF-8
-# Mon, 01 Nov 2021 18:50:17 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 18:50:29 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 18:50:29 GMT
+# Thu, 11 Nov 2021 02:28:55 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:29:06 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:29:06 GMT
 CMD ["jshell"]
 ```
 
@@ -30373,9 +30373,9 @@ CMD ["jshell"]
 		Last Modified: Tue, 12 Oct 2021 16:43:50 GMT  
 		Size: 13.9 MB (13921295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bab5fe1454290004d1cebe69e0ae7e06ebd8c5a614ea3697558e7dfb9cf3e5aa`  
-		Last Modified: Mon, 01 Nov 2021 18:58:57 GMT  
-		Size: 188.2 MB (188236263 bytes)  
+	-	`sha256:e3d4c0b39f35cb25307b6b21a02705bd2d727c504c34e8a04ba355b6675faec4`  
+		Last Modified: Thu, 11 Nov 2021 02:37:21 GMT  
+		Size: 188.4 MB (188386587 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-buster` - linux; arm64 variant v8
@@ -30447,7 +30447,7 @@ CMD ["jshell"]
 ## `openjdk:18-ea`
 
 ```console
-$ docker pull openjdk@sha256:fe025977fd77a1cbfe1bc388a48b4b8776a200f4ddda1f828c41b355d68cbcfe
+$ docker pull openjdk@sha256:53a6bb7c29bce7dbe2c669c98c2c73f29aa9e9e487a5e64153523c230b6261a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -30461,14 +30461,14 @@ $ docker pull openjdk@sha256:fe025977fd77a1cbfe1bc388a48b4b8776a200f4ddda1f828c4
 ### `openjdk:18-ea` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:817b9de5fd1ed622c9080f216dd6b3040f3545be2c6026fe5d413628eb87edca
+$ docker pull openjdk@sha256:d91c50b89de0c4a4b5d4e9b528995006453b9867cb0dae41f100f89e851c9a52
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **243.6 MB (243585087 bytes)**  
+-	Total Size: **243.7 MB (243728237 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f55f011574655a28ccd27287ab45d17065ae9bbc0c4101281ffa665c385c2315`
+-	Image ID: `sha256:672ef7efeba8fe2ad1d923268b6836d1ecbff55754c90ed0fbfe47b4c214a6f8`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -30484,11 +30484,11 @@ ENV JAVA_HOME=/usr/java/openjdk-18
 ENV PATH=/usr/java/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 03 Nov 2021 22:37:07 GMT
 ENV LANG=C.UTF-8
-# Wed, 03 Nov 2021 22:37:07 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 03 Nov 2021 22:37:18 GMT
-RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 03 Nov 2021 22:37:19 GMT
+# Thu, 11 Nov 2021 02:27:47 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:27:58 GMT
+RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:27:59 GMT
 CMD ["jshell"]
 ```
 
@@ -30501,9 +30501,9 @@ CMD ["jshell"]
 		Last Modified: Wed, 03 Nov 2021 22:43:12 GMT  
 		Size: 13.5 MB (13491241 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9881991c1db3ee3e0c6ae7c15b8a4429c433a7655ffe01202511ebf51b6a2ec2`  
-		Last Modified: Wed, 03 Nov 2021 22:43:24 GMT  
-		Size: 188.1 MB (188125731 bytes)  
+	-	`sha256:9a2f4b2e287c44dde9d335364634f51085f3bc93889ea6d9112410318239f8b6`  
+		Last Modified: Thu, 11 Nov 2021 02:34:37 GMT  
+		Size: 188.3 MB (188268881 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-ea` - linux; arm64 variant v8
@@ -30557,14 +30557,14 @@ CMD ["jshell"]
 ### `openjdk:18-ea` - windows version 10.0.20348.350; amd64
 
 ```console
-$ docker pull openjdk@sha256:e8255df62dff59325ca6e55e1bcc9080692eaefdcdbb1d7deaafb57971ee86de
+$ docker pull openjdk@sha256:9c20d60c7bde738f2c3e57e52aafbaecc57f1a5ec9c4b75dba7c45378b4acfeb
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.4 GB (2369632853 bytes)**  
+-	Total Size: **2.4 GB (2369930838 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c7f00655015db4254b3d0354638c0dbea2256f1b504ac92eb2577f6a5a1884f4`
+-	Image ID: `sha256:a5c6761474f0c566c146885a48d00326c719b7730871258da29aad263b932a4a`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -30581,15 +30581,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:23:41 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:23:42 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:23:43 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:23:44 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:24:32 GMT
+# Thu, 11 Nov 2021 02:22:29 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:22:30 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:22:31 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:23:15 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:24:34 GMT
+# Thu, 11 Nov 2021 02:23:16 GMT
 CMD ["jshell"]
 ```
 
@@ -30616,38 +30616,38 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:03:27 GMT  
 		Size: 549.7 KB (549708 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b698dd11831adf277aae025052bc6eef078afd78744099225fd6ecd561fdcb6f`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1379 bytes)  
+	-	`sha256:47a3965ec2551fcd1a6117196df95c018068b200db9142b813af85f8f05fac3f`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b0900c61346cbdc2e5203cfe88ec50506b93be59c3bd52564a8b95a1e0f5f4d`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1398 bytes)  
+	-	`sha256:157aee527ea6606caee0c3f88322e3dcee4605f52eb98706b7629d2f2d864f50`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:006246c3aa0e0f4bc3f01c03d0e7d48693d0725b25f3e78f3581915d92760caa`  
-		Last Modified: Wed, 10 Nov 2021 21:03:25 GMT  
-		Size: 1.4 KB (1355 bytes)  
+	-	`sha256:53b7b5633a2546c9bab04d431d13513305ffa78a8fd0fbb6871d649054b71248`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05f8dd5277feae03b608b6cc2ff3cd3dc5107d8e8b71c5d8af8412db74134f7b`  
-		Last Modified: Wed, 10 Nov 2021 21:06:46 GMT  
-		Size: 183.9 MB (183851222 bytes)  
+	-	`sha256:458a4ea681f6aaefe0ffff613b2b6902899d6cf784e658b99c5d2aefe9fd101c`  
+		Last Modified: Thu, 11 Nov 2021 02:35:31 GMT  
+		Size: 184.1 MB (184149058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:174ce1c5faf404eee966a95111144858ca8a1cd9b461dc6660bda459e2b91294`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1419 bytes)  
+	-	`sha256:b237936aa73b8bc01a1cd55260a8718087e351e2cf387793361369cb3067930f`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-ea` - windows version 10.0.17763.2300; amd64
 
 ```console
-$ docker pull openjdk@sha256:2844a4f5ef91b81e8639e3c77c53eb720cb1a92d7615cb49e474db929c7f0e4d
+$ docker pull openjdk@sha256:8e32cdb2628a6f1f06929a6f3ce57025716a05db9885a170e8d4acb24002f91d
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 GB (2890432121 bytes)**  
+-	Total Size: **2.9 GB (2890756401 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:edb6fdab0d77d354269b0c787da93627f788070ff04e27610bf4d74ac6947dbb`
+-	Image ID: `sha256:50d8c70546f0046f36a731848b58b0bbf9e64784e0a12ad91de1219f225d97d4`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -30664,15 +30664,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:26:31 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:26:31 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:26:32 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:26:33 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:28:03 GMT
+# Thu, 11 Nov 2021 02:23:31 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:23:32 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:23:33 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:24:52 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:28:04 GMT
+# Thu, 11 Nov 2021 02:24:53 GMT
 CMD ["jshell"]
 ```
 
@@ -30699,38 +30699,38 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:07:09 GMT  
 		Size: 319.7 KB (319676 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f27f6a08e6bde711bb8374842ac82c0cad5fa223e6215af6895d7b1ae20ab601`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1435 bytes)  
+	-	`sha256:e82aaf27003bf2b62a2cc2dbd9cb4ff9a112f8ef1cf0240f81607382e7cd6138`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb17e13d4cdd0b960ba531f11242bb58c8a359c38dbd6bb4bdd03853994bc2ce`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1441 bytes)  
+	-	`sha256:98f36effb4b3b001319833edf8fc4e1a9b6008500dafad80385b5a4520aa3c29`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c847b4d31b558449e54882e692193c6e77fd877cb8d037083d8898f0a3e4efe6`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
+	-	`sha256:c64c2dd6bbf7811caa7ae295e72178094f00f1058f9918636ef7245bd24cc578`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1430 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:cdfbdd5d3b9376889190109d5cc7a4cf2377a4946e1ccc5535bd87d1cac3ca5d`  
+		Last Modified: Thu, 11 Nov 2021 02:36:10 GMT  
+		Size: 183.9 MB (183948230 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4465946c6c9661cbaf098a919fdf0be953f0cf789394679363d052795feb4f30`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
 		Size: 1.4 KB (1420 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95a35ec7cf69a61548328a852bd3c946f51685d419a4c79f87802db51db08c50`  
-		Last Modified: Wed, 10 Nov 2021 21:07:26 GMT  
-		Size: 183.6 MB (183623942 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5753877e7a39a9e13e30aa822049b0a084cda5de4a40cd5f6ace47ac2fc9eb10`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-ea` - windows version 10.0.14393.4770; amd64
 
 ```console
-$ docker pull openjdk@sha256:393e2252dd54db1eae006103f025518c7a5ad43752461ed3d8ee1de90f0395ae
+$ docker pull openjdk@sha256:1fb6cb4679450a052002f19a809879940b24f5a42313a449b3abac847b5716b8
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.5 GB (6457431629 bytes)**  
+-	Total Size: **6.5 GB (6457750413 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d306462a846e7b818d1a0e0e8ab77db60ccccfd35a285ce2ee8647be0f0f9de`
+-	Image ID: `sha256:81a0d0a688c09412d0fc9d6c668fc54ceb91032a59439189764571f4987fa30a`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -30747,15 +30747,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:30:05 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:30:06 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:30:07 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:30:08 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:31:36 GMT
+# Thu, 11 Nov 2021 02:25:13 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:25:14 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:25:15 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:26:36 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:31:37 GMT
+# Thu, 11 Nov 2021 02:26:37 GMT
 CMD ["jshell"]
 ```
 
@@ -30782,25 +30782,25 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:07:51 GMT  
 		Size: 346.8 KB (346841 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1d9bca52a27503493f0c99b4a99920bf0977ea36e5c98d5640b9974957eaf1c`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1400 bytes)  
+	-	`sha256:83bd413e3a517265afe99693948983f594de2897cc86194a7d8d387b575e82a5`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1424 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87f3555ad46e455b194d91f0a0c93835b1f759bed8eca17a3a0dc657385bd13c`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1415 bytes)  
+	-	`sha256:43648bc0ccab1f3f49e25e4d2e08ad16e43fd15b3b877f2a9659cc2b8735924a`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2a124c261e3810baa7b86d3002f7c9bb0d9b74f151a368c9efdd7dbda0dd0d5`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1429 bytes)  
+	-	`sha256:b37343f091cd0ffd2e8881824fa7eb48840fcaa1924b9df53edc6d5828a44255`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1389 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1d67ffbd95a6b961816519f50fa3d55ae7eb440d88109b8d6784a1093bfe62e2`  
-		Last Modified: Wed, 10 Nov 2021 21:11:11 GMT  
-		Size: 183.6 MB (183629721 bytes)  
+	-	`sha256:5a722237d8a9d82c5a0e0401f0d42603163f666c0dc8dba2f339c5858703d9e7`  
+		Last Modified: Thu, 11 Nov 2021 02:39:38 GMT  
+		Size: 183.9 MB (183948511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a06fd0b5df6b3417d9ff1f2bdf32c8c9ed0d6a0c45b70e6db8fb0a0019e361d7`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1415 bytes)  
+	-	`sha256:f983e129d00f1fc3c9459bca58fe6d4bf0f833ed18f5ccc0c1e4478aea0af48e`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1418 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `openjdk:18-ea-11-alpine`
@@ -31139,31 +31139,30 @@ CMD ["jshell"]
 		Size: 188.7 MB (188699656 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `openjdk:18-ea-21`
+## `openjdk:18-ea-22`
 
 ```console
-$ docker pull openjdk@sha256:fe025977fd77a1cbfe1bc388a48b4b8776a200f4ddda1f828c41b355d68cbcfe
+$ docker pull openjdk@sha256:28efc682a6025bdea95385877148c9e8a2f69998be3c2bb3fb3c8de8aceca779
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 5
+-	Platforms: 4
 	-	linux; amd64
-	-	linux; arm64 variant v8
 	-	windows version 10.0.20348.350; amd64
 	-	windows version 10.0.17763.2300; amd64
 	-	windows version 10.0.14393.4770; amd64
 
-### `openjdk:18-ea-21` - linux; amd64
+### `openjdk:18-ea-22` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:817b9de5fd1ed622c9080f216dd6b3040f3545be2c6026fe5d413628eb87edca
+$ docker pull openjdk@sha256:d91c50b89de0c4a4b5d4e9b528995006453b9867cb0dae41f100f89e851c9a52
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **243.6 MB (243585087 bytes)**  
+-	Total Size: **243.7 MB (243728237 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f55f011574655a28ccd27287ab45d17065ae9bbc0c4101281ffa665c385c2315`
+-	Image ID: `sha256:672ef7efeba8fe2ad1d923268b6836d1ecbff55754c90ed0fbfe47b4c214a6f8`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -31179,11 +31178,11 @@ ENV JAVA_HOME=/usr/java/openjdk-18
 ENV PATH=/usr/java/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 03 Nov 2021 22:37:07 GMT
 ENV LANG=C.UTF-8
-# Wed, 03 Nov 2021 22:37:07 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 03 Nov 2021 22:37:18 GMT
-RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 03 Nov 2021 22:37:19 GMT
+# Thu, 11 Nov 2021 02:27:47 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:27:58 GMT
+RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:27:59 GMT
 CMD ["jshell"]
 ```
 
@@ -31196,70 +31195,22 @@ CMD ["jshell"]
 		Last Modified: Wed, 03 Nov 2021 22:43:12 GMT  
 		Size: 13.5 MB (13491241 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9881991c1db3ee3e0c6ae7c15b8a4429c433a7655ffe01202511ebf51b6a2ec2`  
-		Last Modified: Wed, 03 Nov 2021 22:43:24 GMT  
-		Size: 188.1 MB (188125731 bytes)  
+	-	`sha256:9a2f4b2e287c44dde9d335364634f51085f3bc93889ea6d9112410318239f8b6`  
+		Last Modified: Thu, 11 Nov 2021 02:34:37 GMT  
+		Size: 188.3 MB (188268881 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `openjdk:18-ea-21` - linux; arm64 variant v8
+### `openjdk:18-ea-22` - windows version 10.0.20348.350; amd64
 
 ```console
-$ docker pull openjdk@sha256:69f8c25e377ba8ec010ce8caa460146f220662c291280ed9af9229d07256e972
-```
-
--	Docker Version: 20.10.7
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **243.2 MB (243202184 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c1c288c27730dd8709627c4220fa83c9513cb0d2bfd26b73d92da997676a3f3d`
--	Default Command: `["jshell"]`
-
-```dockerfile
-# Wed, 03 Nov 2021 22:44:10 GMT
-ADD file:42d3c96053f453ca6f7155adc565cd822cd2663bd2a3862ccaabb9886c191116 in / 
-# Wed, 03 Nov 2021 22:44:11 GMT
-CMD ["/bin/bash"]
-# Wed, 03 Nov 2021 23:01:19 GMT
-RUN set -eux; 	microdnf install 		gzip 		tar 				binutils 		freetype fontconfig 	; 	microdnf clean all
-# Wed, 03 Nov 2021 23:01:20 GMT
-ENV JAVA_HOME=/usr/java/openjdk-18
-# Wed, 03 Nov 2021 23:01:21 GMT
-ENV PATH=/usr/java/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 03 Nov 2021 23:01:22 GMT
-ENV LANG=C.UTF-8
-# Wed, 03 Nov 2021 23:01:23 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 03 Nov 2021 23:01:35 GMT
-RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 03 Nov 2021 23:01:36 GMT
-CMD ["jshell"]
-```
-
--	Layers:
-	-	`sha256:f6fe8bd1b591af20f7f1bf6cabe92846a2b5f1ba33ca5fd165cf03624558cd5c`  
-		Last Modified: Wed, 03 Nov 2021 22:45:11 GMT  
-		Size: 41.9 MB (41879080 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5f82d768d0f333fffcb86fe10bab796e393363d92953d26c9435077acb1598e`  
-		Last Modified: Wed, 03 Nov 2021 23:12:36 GMT  
-		Size: 14.3 MB (14274012 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f12dafb56a01afc697264735df1f9eee940086c846bc9b2d88981f202d362920`  
-		Last Modified: Wed, 03 Nov 2021 23:12:50 GMT  
-		Size: 187.0 MB (187049092 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-### `openjdk:18-ea-21` - windows version 10.0.20348.350; amd64
-
-```console
-$ docker pull openjdk@sha256:e8255df62dff59325ca6e55e1bcc9080692eaefdcdbb1d7deaafb57971ee86de
+$ docker pull openjdk@sha256:9c20d60c7bde738f2c3e57e52aafbaecc57f1a5ec9c4b75dba7c45378b4acfeb
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.4 GB (2369632853 bytes)**  
+-	Total Size: **2.4 GB (2369930838 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c7f00655015db4254b3d0354638c0dbea2256f1b504ac92eb2577f6a5a1884f4`
+-	Image ID: `sha256:a5c6761474f0c566c146885a48d00326c719b7730871258da29aad263b932a4a`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -31276,15 +31227,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:23:41 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:23:42 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:23:43 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:23:44 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:24:32 GMT
+# Thu, 11 Nov 2021 02:22:29 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:22:30 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:22:31 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:23:15 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:24:34 GMT
+# Thu, 11 Nov 2021 02:23:16 GMT
 CMD ["jshell"]
 ```
 
@@ -31311,38 +31262,38 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:03:27 GMT  
 		Size: 549.7 KB (549708 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b698dd11831adf277aae025052bc6eef078afd78744099225fd6ecd561fdcb6f`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1379 bytes)  
+	-	`sha256:47a3965ec2551fcd1a6117196df95c018068b200db9142b813af85f8f05fac3f`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b0900c61346cbdc2e5203cfe88ec50506b93be59c3bd52564a8b95a1e0f5f4d`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1398 bytes)  
+	-	`sha256:157aee527ea6606caee0c3f88322e3dcee4605f52eb98706b7629d2f2d864f50`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:006246c3aa0e0f4bc3f01c03d0e7d48693d0725b25f3e78f3581915d92760caa`  
-		Last Modified: Wed, 10 Nov 2021 21:03:25 GMT  
-		Size: 1.4 KB (1355 bytes)  
+	-	`sha256:53b7b5633a2546c9bab04d431d13513305ffa78a8fd0fbb6871d649054b71248`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05f8dd5277feae03b608b6cc2ff3cd3dc5107d8e8b71c5d8af8412db74134f7b`  
-		Last Modified: Wed, 10 Nov 2021 21:06:46 GMT  
-		Size: 183.9 MB (183851222 bytes)  
+	-	`sha256:458a4ea681f6aaefe0ffff613b2b6902899d6cf784e658b99c5d2aefe9fd101c`  
+		Last Modified: Thu, 11 Nov 2021 02:35:31 GMT  
+		Size: 184.1 MB (184149058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:174ce1c5faf404eee966a95111144858ca8a1cd9b461dc6660bda459e2b91294`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1419 bytes)  
+	-	`sha256:b237936aa73b8bc01a1cd55260a8718087e351e2cf387793361369cb3067930f`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `openjdk:18-ea-21` - windows version 10.0.17763.2300; amd64
+### `openjdk:18-ea-22` - windows version 10.0.17763.2300; amd64
 
 ```console
-$ docker pull openjdk@sha256:2844a4f5ef91b81e8639e3c77c53eb720cb1a92d7615cb49e474db929c7f0e4d
+$ docker pull openjdk@sha256:8e32cdb2628a6f1f06929a6f3ce57025716a05db9885a170e8d4acb24002f91d
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 GB (2890432121 bytes)**  
+-	Total Size: **2.9 GB (2890756401 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:edb6fdab0d77d354269b0c787da93627f788070ff04e27610bf4d74ac6947dbb`
+-	Image ID: `sha256:50d8c70546f0046f36a731848b58b0bbf9e64784e0a12ad91de1219f225d97d4`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -31359,15 +31310,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:26:31 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:26:31 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:26:32 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:26:33 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:28:03 GMT
+# Thu, 11 Nov 2021 02:23:31 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:23:32 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:23:33 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:24:52 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:28:04 GMT
+# Thu, 11 Nov 2021 02:24:53 GMT
 CMD ["jshell"]
 ```
 
@@ -31394,38 +31345,38 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:07:09 GMT  
 		Size: 319.7 KB (319676 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f27f6a08e6bde711bb8374842ac82c0cad5fa223e6215af6895d7b1ae20ab601`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1435 bytes)  
+	-	`sha256:e82aaf27003bf2b62a2cc2dbd9cb4ff9a112f8ef1cf0240f81607382e7cd6138`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb17e13d4cdd0b960ba531f11242bb58c8a359c38dbd6bb4bdd03853994bc2ce`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1441 bytes)  
+	-	`sha256:98f36effb4b3b001319833edf8fc4e1a9b6008500dafad80385b5a4520aa3c29`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c847b4d31b558449e54882e692193c6e77fd877cb8d037083d8898f0a3e4efe6`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
+	-	`sha256:c64c2dd6bbf7811caa7ae295e72178094f00f1058f9918636ef7245bd24cc578`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1430 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:cdfbdd5d3b9376889190109d5cc7a4cf2377a4946e1ccc5535bd87d1cac3ca5d`  
+		Last Modified: Thu, 11 Nov 2021 02:36:10 GMT  
+		Size: 183.9 MB (183948230 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4465946c6c9661cbaf098a919fdf0be953f0cf789394679363d052795feb4f30`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
 		Size: 1.4 KB (1420 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95a35ec7cf69a61548328a852bd3c946f51685d419a4c79f87802db51db08c50`  
-		Last Modified: Wed, 10 Nov 2021 21:07:26 GMT  
-		Size: 183.6 MB (183623942 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5753877e7a39a9e13e30aa822049b0a084cda5de4a40cd5f6ace47ac2fc9eb10`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1416 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `openjdk:18-ea-21` - windows version 10.0.14393.4770; amd64
+### `openjdk:18-ea-22` - windows version 10.0.14393.4770; amd64
 
 ```console
-$ docker pull openjdk@sha256:393e2252dd54db1eae006103f025518c7a5ad43752461ed3d8ee1de90f0395ae
+$ docker pull openjdk@sha256:1fb6cb4679450a052002f19a809879940b24f5a42313a449b3abac847b5716b8
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.5 GB (6457431629 bytes)**  
+-	Total Size: **6.5 GB (6457750413 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d306462a846e7b818d1a0e0e8ab77db60ccccfd35a285ce2ee8647be0f0f9de`
+-	Image ID: `sha256:81a0d0a688c09412d0fc9d6c668fc54ceb91032a59439189764571f4987fa30a`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -31442,15 +31393,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:30:05 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:30:06 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:30:07 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:30:08 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:31:36 GMT
+# Thu, 11 Nov 2021 02:25:13 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:25:14 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:25:15 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:26:36 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:31:37 GMT
+# Thu, 11 Nov 2021 02:26:37 GMT
 CMD ["jshell"]
 ```
 
@@ -31477,49 +31428,48 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:07:51 GMT  
 		Size: 346.8 KB (346841 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1d9bca52a27503493f0c99b4a99920bf0977ea36e5c98d5640b9974957eaf1c`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1400 bytes)  
+	-	`sha256:83bd413e3a517265afe99693948983f594de2897cc86194a7d8d387b575e82a5`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1424 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87f3555ad46e455b194d91f0a0c93835b1f759bed8eca17a3a0dc657385bd13c`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1415 bytes)  
+	-	`sha256:43648bc0ccab1f3f49e25e4d2e08ad16e43fd15b3b877f2a9659cc2b8735924a`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2a124c261e3810baa7b86d3002f7c9bb0d9b74f151a368c9efdd7dbda0dd0d5`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1429 bytes)  
+	-	`sha256:b37343f091cd0ffd2e8881824fa7eb48840fcaa1924b9df53edc6d5828a44255`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1389 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1d67ffbd95a6b961816519f50fa3d55ae7eb440d88109b8d6784a1093bfe62e2`  
-		Last Modified: Wed, 10 Nov 2021 21:11:11 GMT  
-		Size: 183.6 MB (183629721 bytes)  
+	-	`sha256:5a722237d8a9d82c5a0e0401f0d42603163f666c0dc8dba2f339c5858703d9e7`  
+		Last Modified: Thu, 11 Nov 2021 02:39:38 GMT  
+		Size: 183.9 MB (183948511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a06fd0b5df6b3417d9ff1f2bdf32c8c9ed0d6a0c45b70e6db8fb0a0019e361d7`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1415 bytes)  
+	-	`sha256:f983e129d00f1fc3c9459bca58fe6d4bf0f833ed18f5ccc0c1e4478aea0af48e`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1418 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `openjdk:18-ea-21-bullseye`
+## `openjdk:18-ea-22-bullseye`
 
 ```console
-$ docker pull openjdk@sha256:b34adb0bd4ef1fa7eb8a9ac59d70b70f09173679ecf0973b9b55458d9f63a062
+$ docker pull openjdk@sha256:a24826dc0b78a57f1181f629579917ea41245c4b9c65271019889b1816298d89
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 2
+-	Platforms: 1
 	-	linux; amd64
-	-	linux; arm64 variant v8
 
-### `openjdk:18-ea-21-bullseye` - linux; amd64
+### `openjdk:18-ea-22-bullseye` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:15dd6622b67c43a37f419bece22f25e55079b58a4f10b9d84df8a5b5dbd8f375
+$ docker pull openjdk@sha256:a5fdf91444484a67739a2406539c153e4586ec3053a6d9bc5bedfe6c113997aa
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **327.8 MB (327817336 bytes)**  
+-	Total Size: **328.0 MB (327959593 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8214cbfc4e4baf5ddb3cb7d9c798a3e186ffa05cadde66de90fb313bb5ea7a9c`
+-	Image ID: `sha256:6f395a8ee4404de82b9d3db99d55f42b0621473a8933d5bc2fff2f800abdb8ff`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -31541,11 +31491,11 @@ ENV JAVA_HOME=/usr/local/openjdk-18
 ENV PATH=/usr/local/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 12 Oct 2021 16:27:22 GMT
 ENV LANG=C.UTF-8
-# Mon, 01 Nov 2021 18:49:36 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 18:49:49 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 18:49:50 GMT
+# Thu, 11 Nov 2021 02:28:19 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:28:30 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:28:31 GMT
 CMD ["jshell"]
 ```
 
@@ -31570,99 +31520,32 @@ CMD ["jshell"]
 		Last Modified: Tue, 12 Oct 2021 16:42:23 GMT  
 		Size: 14.1 MB (14071834 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:972fa5e33b31fd4ad24909410193a04068676af50abc0a41584d702abeb6cd37`  
-		Last Modified: Mon, 01 Nov 2021 18:57:35 GMT  
-		Size: 188.2 MB (188235013 bytes)  
+	-	`sha256:9ee19c4d65aa828166758ac92a6e4652f7e4a1867287ccf1dbcdc3f6cd9d9b0b`  
+		Last Modified: Thu, 11 Nov 2021 02:35:59 GMT  
+		Size: 188.4 MB (188377270 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `openjdk:18-ea-21-bullseye` - linux; arm64 variant v8
-
-```console
-$ docker pull openjdk@sha256:4f5bf9c21aa03d61e5e91073194b64a5113293639b57f690222b27a941ba633c
-```
-
--	Docker Version: 20.10.7
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **326.7 MB (326748337 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ed88f088eb0ad9a4a1f4aa73794c5e14816f778b17a4a54298a2c663f405a5b7`
--	Default Command: `["jshell"]`
-
-```dockerfile
-# Tue, 12 Oct 2021 01:41:04 GMT
-ADD file:1529ae12e334fd992892d3fb97c103297cff7e0115b0475bec4c093939a2bff7 in / 
-# Tue, 12 Oct 2021 01:41:04 GMT
-CMD ["bash"]
-# Sat, 16 Oct 2021 02:58:23 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Sat, 16 Oct 2021 02:58:28 GMT
-RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 16 Oct 2021 02:58:48 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 16 Oct 2021 04:06:29 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				binutils 				fontconfig libfreetype6 				ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Sat, 16 Oct 2021 04:06:29 GMT
-ENV JAVA_HOME=/usr/local/openjdk-18
-# Sat, 16 Oct 2021 04:06:30 GMT
-ENV PATH=/usr/local/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 16 Oct 2021 04:06:31 GMT
-ENV LANG=C.UTF-8
-# Mon, 01 Nov 2021 19:18:36 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 19:18:49 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 19:18:49 GMT
-CMD ["jshell"]
-```
-
--	Layers:
-	-	`sha256:1c47a423366578e5ce665d03788914bf0459485a627a27896fa9c5663ce55cdf`  
-		Last Modified: Tue, 12 Oct 2021 01:47:41 GMT  
-		Size: 53.6 MB (53603015 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:889b1f128be8ebd64f787c46418ffe34ce1096d1ccd6938924d7397713720758`  
-		Last Modified: Sat, 16 Oct 2021 03:14:21 GMT  
-		Size: 5.1 MB (5141861 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c338d42ad921985fb8ebb6e2c48d381f6e03a91535eeffce7f08084b3dfbfdf4`  
-		Last Modified: Sat, 16 Oct 2021 03:14:21 GMT  
-		Size: 10.7 MB (10655847 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e27d3d9a061af78e3fcbefe5dbbe718db380687319e5ba8a7c9fd7ba55d16cc3`  
-		Last Modified: Sat, 16 Oct 2021 03:14:43 GMT  
-		Size: 54.7 MB (54669931 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6184c33cbbd3e136683d125fb9cef775eb12f0f0e3140a8edc23406be025a964`  
-		Last Modified: Sat, 16 Oct 2021 04:21:52 GMT  
-		Size: 15.5 MB (15524863 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1979fa8127e6eb0d6a0bf58f9fa5c24d7386a2281c433734da889b5cc41ba9d`  
-		Last Modified: Mon, 01 Nov 2021 19:31:13 GMT  
-		Size: 187.2 MB (187152820 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-## `openjdk:18-ea-21-buster`
+## `openjdk:18-ea-22-buster`
 
 ```console
-$ docker pull openjdk@sha256:0f44e827154b7126f229988255469485e4f45da794f0045aff384f694a727272
+$ docker pull openjdk@sha256:ccb7d8f28e3a74912f8c007cc0e6b3b0e7f628d2982a34b471001528dfb332fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 2
+-	Platforms: 1
 	-	linux; amd64
-	-	linux; arm64 variant v8
 
-### `openjdk:18-ea-21-buster` - linux; amd64
+### `openjdk:18-ea-22-buster` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:696584d92fd43941e89c6f843e004ec5e08307be179af47574446e46f50535f2
+$ docker pull openjdk@sha256:267b76c2fd454cb5d03ab6588a2b060d657e37c539e95d22f1dc22b0e8114136
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **322.3 MB (322265996 bytes)**  
+-	Total Size: **322.4 MB (322416320 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e100a7bfcd4933ce38e63845a379afee31d3550e20c59746b6b191d497210df5`
+-	Image ID: `sha256:b9f0939359ecbf4bdc0b810c623493f299bd238ac93c7cc216db6c24d57ed4dc`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -31684,11 +31567,11 @@ ENV JAVA_HOME=/usr/local/openjdk-18
 ENV PATH=/usr/local/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 12 Oct 2021 16:28:21 GMT
 ENV LANG=C.UTF-8
-# Mon, 01 Nov 2021 18:50:17 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 18:50:29 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 18:50:29 GMT
+# Thu, 11 Nov 2021 02:28:55 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:29:06 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:29:06 GMT
 CMD ["jshell"]
 ```
 
@@ -31713,102 +31596,35 @@ CMD ["jshell"]
 		Last Modified: Tue, 12 Oct 2021 16:43:50 GMT  
 		Size: 13.9 MB (13921295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bab5fe1454290004d1cebe69e0ae7e06ebd8c5a614ea3697558e7dfb9cf3e5aa`  
-		Last Modified: Mon, 01 Nov 2021 18:58:57 GMT  
-		Size: 188.2 MB (188236263 bytes)  
+	-	`sha256:e3d4c0b39f35cb25307b6b21a02705bd2d727c504c34e8a04ba355b6675faec4`  
+		Last Modified: Thu, 11 Nov 2021 02:37:21 GMT  
+		Size: 188.4 MB (188386587 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `openjdk:18-ea-21-buster` - linux; arm64 variant v8
-
-```console
-$ docker pull openjdk@sha256:fd60be92c6dc7de663c1f0ad08519c1565da6e76747f57c50f5b911b017d9181
-```
-
--	Docker Version: 20.10.7
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **320.7 MB (320683936 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:75341921ce09464c52ed5f07436ba95c221d005511977177cd35ccf36387bf20`
--	Default Command: `["jshell"]`
-
-```dockerfile
-# Tue, 12 Oct 2021 01:41:28 GMT
-ADD file:aed1709ccba6a81b9726b228fad7b81bcf4c16bafe723981ad37076322d78986 in / 
-# Tue, 12 Oct 2021 01:41:29 GMT
-CMD ["bash"]
-# Sat, 16 Oct 2021 02:59:51 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Sat, 16 Oct 2021 02:59:56 GMT
-RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 16 Oct 2021 03:00:12 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 16 Oct 2021 04:07:15 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				binutils 				fontconfig libfreetype6 				ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Sat, 16 Oct 2021 04:07:15 GMT
-ENV JAVA_HOME=/usr/local/openjdk-18
-# Sat, 16 Oct 2021 04:07:16 GMT
-ENV PATH=/usr/local/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 16 Oct 2021 04:07:17 GMT
-ENV LANG=C.UTF-8
-# Mon, 01 Nov 2021 19:19:23 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 19:19:37 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 19:19:38 GMT
-CMD ["jshell"]
-```
-
--	Layers:
-	-	`sha256:2ff6d7a9e7d73e4a01b9417518d18c001728c45fa8109ed8f55aaa50e7981482`  
-		Last Modified: Tue, 12 Oct 2021 01:48:38 GMT  
-		Size: 49.2 MB (49222756 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7324ea4098419bc5fa2ac5a138522230bf12cef3996d1740dd00f9d4737d004`  
-		Last Modified: Sat, 16 Oct 2021 03:15:37 GMT  
-		Size: 7.7 MB (7695063 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4e213c33a07316d84d829be685bd3b02e1e2bc135f7748c932050e6ed6a3a0d3`  
-		Last Modified: Sat, 16 Oct 2021 03:15:37 GMT  
-		Size: 9.8 MB (9767289 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e7c82db586c3ef7a5c4716aeca2d6e779ec11c568c84c8ef7e6df7bd72512c80`  
-		Last Modified: Sat, 16 Oct 2021 03:15:56 GMT  
-		Size: 52.2 MB (52167277 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ca5f2ea6ae2690d6893716729208342b96e3108dcbbc9e492305d11869aa54e`  
-		Last Modified: Sat, 16 Oct 2021 04:22:43 GMT  
-		Size: 14.7 MB (14671047 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb20e5eb8d79436d86b43ab5273b00adf57966130ee2142bbd833c2d4ef7f5b7`  
-		Last Modified: Mon, 01 Nov 2021 19:32:50 GMT  
-		Size: 187.2 MB (187160504 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-## `openjdk:18-ea-21-jdk`
+## `openjdk:18-ea-22-jdk`
 
 ```console
-$ docker pull openjdk@sha256:fe025977fd77a1cbfe1bc388a48b4b8776a200f4ddda1f828c41b355d68cbcfe
+$ docker pull openjdk@sha256:28efc682a6025bdea95385877148c9e8a2f69998be3c2bb3fb3c8de8aceca779
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 5
+-	Platforms: 4
 	-	linux; amd64
-	-	linux; arm64 variant v8
 	-	windows version 10.0.20348.350; amd64
 	-	windows version 10.0.17763.2300; amd64
 	-	windows version 10.0.14393.4770; amd64
 
-### `openjdk:18-ea-21-jdk` - linux; amd64
+### `openjdk:18-ea-22-jdk` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:817b9de5fd1ed622c9080f216dd6b3040f3545be2c6026fe5d413628eb87edca
+$ docker pull openjdk@sha256:d91c50b89de0c4a4b5d4e9b528995006453b9867cb0dae41f100f89e851c9a52
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **243.6 MB (243585087 bytes)**  
+-	Total Size: **243.7 MB (243728237 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f55f011574655a28ccd27287ab45d17065ae9bbc0c4101281ffa665c385c2315`
+-	Image ID: `sha256:672ef7efeba8fe2ad1d923268b6836d1ecbff55754c90ed0fbfe47b4c214a6f8`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -31824,11 +31640,11 @@ ENV JAVA_HOME=/usr/java/openjdk-18
 ENV PATH=/usr/java/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 03 Nov 2021 22:37:07 GMT
 ENV LANG=C.UTF-8
-# Wed, 03 Nov 2021 22:37:07 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 03 Nov 2021 22:37:18 GMT
-RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 03 Nov 2021 22:37:19 GMT
+# Thu, 11 Nov 2021 02:27:47 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:27:58 GMT
+RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:27:59 GMT
 CMD ["jshell"]
 ```
 
@@ -31841,70 +31657,22 @@ CMD ["jshell"]
 		Last Modified: Wed, 03 Nov 2021 22:43:12 GMT  
 		Size: 13.5 MB (13491241 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9881991c1db3ee3e0c6ae7c15b8a4429c433a7655ffe01202511ebf51b6a2ec2`  
-		Last Modified: Wed, 03 Nov 2021 22:43:24 GMT  
-		Size: 188.1 MB (188125731 bytes)  
+	-	`sha256:9a2f4b2e287c44dde9d335364634f51085f3bc93889ea6d9112410318239f8b6`  
+		Last Modified: Thu, 11 Nov 2021 02:34:37 GMT  
+		Size: 188.3 MB (188268881 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `openjdk:18-ea-21-jdk` - linux; arm64 variant v8
+### `openjdk:18-ea-22-jdk` - windows version 10.0.20348.350; amd64
 
 ```console
-$ docker pull openjdk@sha256:69f8c25e377ba8ec010ce8caa460146f220662c291280ed9af9229d07256e972
-```
-
--	Docker Version: 20.10.7
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **243.2 MB (243202184 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c1c288c27730dd8709627c4220fa83c9513cb0d2bfd26b73d92da997676a3f3d`
--	Default Command: `["jshell"]`
-
-```dockerfile
-# Wed, 03 Nov 2021 22:44:10 GMT
-ADD file:42d3c96053f453ca6f7155adc565cd822cd2663bd2a3862ccaabb9886c191116 in / 
-# Wed, 03 Nov 2021 22:44:11 GMT
-CMD ["/bin/bash"]
-# Wed, 03 Nov 2021 23:01:19 GMT
-RUN set -eux; 	microdnf install 		gzip 		tar 				binutils 		freetype fontconfig 	; 	microdnf clean all
-# Wed, 03 Nov 2021 23:01:20 GMT
-ENV JAVA_HOME=/usr/java/openjdk-18
-# Wed, 03 Nov 2021 23:01:21 GMT
-ENV PATH=/usr/java/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 03 Nov 2021 23:01:22 GMT
-ENV LANG=C.UTF-8
-# Wed, 03 Nov 2021 23:01:23 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 03 Nov 2021 23:01:35 GMT
-RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 03 Nov 2021 23:01:36 GMT
-CMD ["jshell"]
-```
-
--	Layers:
-	-	`sha256:f6fe8bd1b591af20f7f1bf6cabe92846a2b5f1ba33ca5fd165cf03624558cd5c`  
-		Last Modified: Wed, 03 Nov 2021 22:45:11 GMT  
-		Size: 41.9 MB (41879080 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5f82d768d0f333fffcb86fe10bab796e393363d92953d26c9435077acb1598e`  
-		Last Modified: Wed, 03 Nov 2021 23:12:36 GMT  
-		Size: 14.3 MB (14274012 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f12dafb56a01afc697264735df1f9eee940086c846bc9b2d88981f202d362920`  
-		Last Modified: Wed, 03 Nov 2021 23:12:50 GMT  
-		Size: 187.0 MB (187049092 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-### `openjdk:18-ea-21-jdk` - windows version 10.0.20348.350; amd64
-
-```console
-$ docker pull openjdk@sha256:e8255df62dff59325ca6e55e1bcc9080692eaefdcdbb1d7deaafb57971ee86de
+$ docker pull openjdk@sha256:9c20d60c7bde738f2c3e57e52aafbaecc57f1a5ec9c4b75dba7c45378b4acfeb
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.4 GB (2369632853 bytes)**  
+-	Total Size: **2.4 GB (2369930838 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c7f00655015db4254b3d0354638c0dbea2256f1b504ac92eb2577f6a5a1884f4`
+-	Image ID: `sha256:a5c6761474f0c566c146885a48d00326c719b7730871258da29aad263b932a4a`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -31921,15 +31689,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:23:41 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:23:42 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:23:43 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:23:44 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:24:32 GMT
+# Thu, 11 Nov 2021 02:22:29 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:22:30 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:22:31 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:23:15 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:24:34 GMT
+# Thu, 11 Nov 2021 02:23:16 GMT
 CMD ["jshell"]
 ```
 
@@ -31956,38 +31724,38 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:03:27 GMT  
 		Size: 549.7 KB (549708 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b698dd11831adf277aae025052bc6eef078afd78744099225fd6ecd561fdcb6f`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1379 bytes)  
+	-	`sha256:47a3965ec2551fcd1a6117196df95c018068b200db9142b813af85f8f05fac3f`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b0900c61346cbdc2e5203cfe88ec50506b93be59c3bd52564a8b95a1e0f5f4d`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1398 bytes)  
+	-	`sha256:157aee527ea6606caee0c3f88322e3dcee4605f52eb98706b7629d2f2d864f50`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:006246c3aa0e0f4bc3f01c03d0e7d48693d0725b25f3e78f3581915d92760caa`  
-		Last Modified: Wed, 10 Nov 2021 21:03:25 GMT  
-		Size: 1.4 KB (1355 bytes)  
+	-	`sha256:53b7b5633a2546c9bab04d431d13513305ffa78a8fd0fbb6871d649054b71248`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05f8dd5277feae03b608b6cc2ff3cd3dc5107d8e8b71c5d8af8412db74134f7b`  
-		Last Modified: Wed, 10 Nov 2021 21:06:46 GMT  
-		Size: 183.9 MB (183851222 bytes)  
+	-	`sha256:458a4ea681f6aaefe0ffff613b2b6902899d6cf784e658b99c5d2aefe9fd101c`  
+		Last Modified: Thu, 11 Nov 2021 02:35:31 GMT  
+		Size: 184.1 MB (184149058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:174ce1c5faf404eee966a95111144858ca8a1cd9b461dc6660bda459e2b91294`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1419 bytes)  
+	-	`sha256:b237936aa73b8bc01a1cd55260a8718087e351e2cf387793361369cb3067930f`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `openjdk:18-ea-21-jdk` - windows version 10.0.17763.2300; amd64
+### `openjdk:18-ea-22-jdk` - windows version 10.0.17763.2300; amd64
 
 ```console
-$ docker pull openjdk@sha256:2844a4f5ef91b81e8639e3c77c53eb720cb1a92d7615cb49e474db929c7f0e4d
+$ docker pull openjdk@sha256:8e32cdb2628a6f1f06929a6f3ce57025716a05db9885a170e8d4acb24002f91d
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 GB (2890432121 bytes)**  
+-	Total Size: **2.9 GB (2890756401 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:edb6fdab0d77d354269b0c787da93627f788070ff04e27610bf4d74ac6947dbb`
+-	Image ID: `sha256:50d8c70546f0046f36a731848b58b0bbf9e64784e0a12ad91de1219f225d97d4`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -32004,15 +31772,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:26:31 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:26:31 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:26:32 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:26:33 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:28:03 GMT
+# Thu, 11 Nov 2021 02:23:31 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:23:32 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:23:33 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:24:52 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:28:04 GMT
+# Thu, 11 Nov 2021 02:24:53 GMT
 CMD ["jshell"]
 ```
 
@@ -32039,38 +31807,38 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:07:09 GMT  
 		Size: 319.7 KB (319676 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f27f6a08e6bde711bb8374842ac82c0cad5fa223e6215af6895d7b1ae20ab601`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1435 bytes)  
+	-	`sha256:e82aaf27003bf2b62a2cc2dbd9cb4ff9a112f8ef1cf0240f81607382e7cd6138`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb17e13d4cdd0b960ba531f11242bb58c8a359c38dbd6bb4bdd03853994bc2ce`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1441 bytes)  
+	-	`sha256:98f36effb4b3b001319833edf8fc4e1a9b6008500dafad80385b5a4520aa3c29`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c847b4d31b558449e54882e692193c6e77fd877cb8d037083d8898f0a3e4efe6`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
+	-	`sha256:c64c2dd6bbf7811caa7ae295e72178094f00f1058f9918636ef7245bd24cc578`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1430 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:cdfbdd5d3b9376889190109d5cc7a4cf2377a4946e1ccc5535bd87d1cac3ca5d`  
+		Last Modified: Thu, 11 Nov 2021 02:36:10 GMT  
+		Size: 183.9 MB (183948230 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4465946c6c9661cbaf098a919fdf0be953f0cf789394679363d052795feb4f30`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
 		Size: 1.4 KB (1420 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95a35ec7cf69a61548328a852bd3c946f51685d419a4c79f87802db51db08c50`  
-		Last Modified: Wed, 10 Nov 2021 21:07:26 GMT  
-		Size: 183.6 MB (183623942 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5753877e7a39a9e13e30aa822049b0a084cda5de4a40cd5f6ace47ac2fc9eb10`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1416 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `openjdk:18-ea-21-jdk` - windows version 10.0.14393.4770; amd64
+### `openjdk:18-ea-22-jdk` - windows version 10.0.14393.4770; amd64
 
 ```console
-$ docker pull openjdk@sha256:393e2252dd54db1eae006103f025518c7a5ad43752461ed3d8ee1de90f0395ae
+$ docker pull openjdk@sha256:1fb6cb4679450a052002f19a809879940b24f5a42313a449b3abac847b5716b8
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.5 GB (6457431629 bytes)**  
+-	Total Size: **6.5 GB (6457750413 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d306462a846e7b818d1a0e0e8ab77db60ccccfd35a285ce2ee8647be0f0f9de`
+-	Image ID: `sha256:81a0d0a688c09412d0fc9d6c668fc54ceb91032a59439189764571f4987fa30a`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -32087,15 +31855,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:30:05 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:30:06 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:30:07 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:30:08 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:31:36 GMT
+# Thu, 11 Nov 2021 02:25:13 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:25:14 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:25:15 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:26:36 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:31:37 GMT
+# Thu, 11 Nov 2021 02:26:37 GMT
 CMD ["jshell"]
 ```
 
@@ -32122,49 +31890,48 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:07:51 GMT  
 		Size: 346.8 KB (346841 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1d9bca52a27503493f0c99b4a99920bf0977ea36e5c98d5640b9974957eaf1c`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1400 bytes)  
+	-	`sha256:83bd413e3a517265afe99693948983f594de2897cc86194a7d8d387b575e82a5`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1424 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87f3555ad46e455b194d91f0a0c93835b1f759bed8eca17a3a0dc657385bd13c`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1415 bytes)  
+	-	`sha256:43648bc0ccab1f3f49e25e4d2e08ad16e43fd15b3b877f2a9659cc2b8735924a`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2a124c261e3810baa7b86d3002f7c9bb0d9b74f151a368c9efdd7dbda0dd0d5`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1429 bytes)  
+	-	`sha256:b37343f091cd0ffd2e8881824fa7eb48840fcaa1924b9df53edc6d5828a44255`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1389 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1d67ffbd95a6b961816519f50fa3d55ae7eb440d88109b8d6784a1093bfe62e2`  
-		Last Modified: Wed, 10 Nov 2021 21:11:11 GMT  
-		Size: 183.6 MB (183629721 bytes)  
+	-	`sha256:5a722237d8a9d82c5a0e0401f0d42603163f666c0dc8dba2f339c5858703d9e7`  
+		Last Modified: Thu, 11 Nov 2021 02:39:38 GMT  
+		Size: 183.9 MB (183948511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a06fd0b5df6b3417d9ff1f2bdf32c8c9ed0d6a0c45b70e6db8fb0a0019e361d7`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1415 bytes)  
+	-	`sha256:f983e129d00f1fc3c9459bca58fe6d4bf0f833ed18f5ccc0c1e4478aea0af48e`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1418 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `openjdk:18-ea-21-jdk-bullseye`
+## `openjdk:18-ea-22-jdk-bullseye`
 
 ```console
-$ docker pull openjdk@sha256:b34adb0bd4ef1fa7eb8a9ac59d70b70f09173679ecf0973b9b55458d9f63a062
+$ docker pull openjdk@sha256:a24826dc0b78a57f1181f629579917ea41245c4b9c65271019889b1816298d89
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 2
+-	Platforms: 1
 	-	linux; amd64
-	-	linux; arm64 variant v8
 
-### `openjdk:18-ea-21-jdk-bullseye` - linux; amd64
+### `openjdk:18-ea-22-jdk-bullseye` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:15dd6622b67c43a37f419bece22f25e55079b58a4f10b9d84df8a5b5dbd8f375
+$ docker pull openjdk@sha256:a5fdf91444484a67739a2406539c153e4586ec3053a6d9bc5bedfe6c113997aa
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **327.8 MB (327817336 bytes)**  
+-	Total Size: **328.0 MB (327959593 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8214cbfc4e4baf5ddb3cb7d9c798a3e186ffa05cadde66de90fb313bb5ea7a9c`
+-	Image ID: `sha256:6f395a8ee4404de82b9d3db99d55f42b0621473a8933d5bc2fff2f800abdb8ff`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -32186,11 +31953,11 @@ ENV JAVA_HOME=/usr/local/openjdk-18
 ENV PATH=/usr/local/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 12 Oct 2021 16:27:22 GMT
 ENV LANG=C.UTF-8
-# Mon, 01 Nov 2021 18:49:36 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 18:49:49 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 18:49:50 GMT
+# Thu, 11 Nov 2021 02:28:19 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:28:30 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:28:31 GMT
 CMD ["jshell"]
 ```
 
@@ -32215,99 +31982,32 @@ CMD ["jshell"]
 		Last Modified: Tue, 12 Oct 2021 16:42:23 GMT  
 		Size: 14.1 MB (14071834 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:972fa5e33b31fd4ad24909410193a04068676af50abc0a41584d702abeb6cd37`  
-		Last Modified: Mon, 01 Nov 2021 18:57:35 GMT  
-		Size: 188.2 MB (188235013 bytes)  
+	-	`sha256:9ee19c4d65aa828166758ac92a6e4652f7e4a1867287ccf1dbcdc3f6cd9d9b0b`  
+		Last Modified: Thu, 11 Nov 2021 02:35:59 GMT  
+		Size: 188.4 MB (188377270 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `openjdk:18-ea-21-jdk-bullseye` - linux; arm64 variant v8
-
-```console
-$ docker pull openjdk@sha256:4f5bf9c21aa03d61e5e91073194b64a5113293639b57f690222b27a941ba633c
-```
-
--	Docker Version: 20.10.7
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **326.7 MB (326748337 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ed88f088eb0ad9a4a1f4aa73794c5e14816f778b17a4a54298a2c663f405a5b7`
--	Default Command: `["jshell"]`
-
-```dockerfile
-# Tue, 12 Oct 2021 01:41:04 GMT
-ADD file:1529ae12e334fd992892d3fb97c103297cff7e0115b0475bec4c093939a2bff7 in / 
-# Tue, 12 Oct 2021 01:41:04 GMT
-CMD ["bash"]
-# Sat, 16 Oct 2021 02:58:23 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Sat, 16 Oct 2021 02:58:28 GMT
-RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 16 Oct 2021 02:58:48 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 16 Oct 2021 04:06:29 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				binutils 				fontconfig libfreetype6 				ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Sat, 16 Oct 2021 04:06:29 GMT
-ENV JAVA_HOME=/usr/local/openjdk-18
-# Sat, 16 Oct 2021 04:06:30 GMT
-ENV PATH=/usr/local/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 16 Oct 2021 04:06:31 GMT
-ENV LANG=C.UTF-8
-# Mon, 01 Nov 2021 19:18:36 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 19:18:49 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 19:18:49 GMT
-CMD ["jshell"]
-```
-
--	Layers:
-	-	`sha256:1c47a423366578e5ce665d03788914bf0459485a627a27896fa9c5663ce55cdf`  
-		Last Modified: Tue, 12 Oct 2021 01:47:41 GMT  
-		Size: 53.6 MB (53603015 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:889b1f128be8ebd64f787c46418ffe34ce1096d1ccd6938924d7397713720758`  
-		Last Modified: Sat, 16 Oct 2021 03:14:21 GMT  
-		Size: 5.1 MB (5141861 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c338d42ad921985fb8ebb6e2c48d381f6e03a91535eeffce7f08084b3dfbfdf4`  
-		Last Modified: Sat, 16 Oct 2021 03:14:21 GMT  
-		Size: 10.7 MB (10655847 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e27d3d9a061af78e3fcbefe5dbbe718db380687319e5ba8a7c9fd7ba55d16cc3`  
-		Last Modified: Sat, 16 Oct 2021 03:14:43 GMT  
-		Size: 54.7 MB (54669931 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6184c33cbbd3e136683d125fb9cef775eb12f0f0e3140a8edc23406be025a964`  
-		Last Modified: Sat, 16 Oct 2021 04:21:52 GMT  
-		Size: 15.5 MB (15524863 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1979fa8127e6eb0d6a0bf58f9fa5c24d7386a2281c433734da889b5cc41ba9d`  
-		Last Modified: Mon, 01 Nov 2021 19:31:13 GMT  
-		Size: 187.2 MB (187152820 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-## `openjdk:18-ea-21-jdk-buster`
+## `openjdk:18-ea-22-jdk-buster`
 
 ```console
-$ docker pull openjdk@sha256:0f44e827154b7126f229988255469485e4f45da794f0045aff384f694a727272
+$ docker pull openjdk@sha256:ccb7d8f28e3a74912f8c007cc0e6b3b0e7f628d2982a34b471001528dfb332fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 2
+-	Platforms: 1
 	-	linux; amd64
-	-	linux; arm64 variant v8
 
-### `openjdk:18-ea-21-jdk-buster` - linux; amd64
+### `openjdk:18-ea-22-jdk-buster` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:696584d92fd43941e89c6f843e004ec5e08307be179af47574446e46f50535f2
+$ docker pull openjdk@sha256:267b76c2fd454cb5d03ab6588a2b060d657e37c539e95d22f1dc22b0e8114136
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **322.3 MB (322265996 bytes)**  
+-	Total Size: **322.4 MB (322416320 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e100a7bfcd4933ce38e63845a379afee31d3550e20c59746b6b191d497210df5`
+-	Image ID: `sha256:b9f0939359ecbf4bdc0b810c623493f299bd238ac93c7cc216db6c24d57ed4dc`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -32329,11 +32029,11 @@ ENV JAVA_HOME=/usr/local/openjdk-18
 ENV PATH=/usr/local/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 12 Oct 2021 16:28:21 GMT
 ENV LANG=C.UTF-8
-# Mon, 01 Nov 2021 18:50:17 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 18:50:29 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 18:50:29 GMT
+# Thu, 11 Nov 2021 02:28:55 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:29:06 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:29:06 GMT
 CMD ["jshell"]
 ```
 
@@ -32358,98 +32058,32 @@ CMD ["jshell"]
 		Last Modified: Tue, 12 Oct 2021 16:43:50 GMT  
 		Size: 13.9 MB (13921295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bab5fe1454290004d1cebe69e0ae7e06ebd8c5a614ea3697558e7dfb9cf3e5aa`  
-		Last Modified: Mon, 01 Nov 2021 18:58:57 GMT  
-		Size: 188.2 MB (188236263 bytes)  
+	-	`sha256:e3d4c0b39f35cb25307b6b21a02705bd2d727c504c34e8a04ba355b6675faec4`  
+		Last Modified: Thu, 11 Nov 2021 02:37:21 GMT  
+		Size: 188.4 MB (188386587 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `openjdk:18-ea-21-jdk-buster` - linux; arm64 variant v8
-
-```console
-$ docker pull openjdk@sha256:fd60be92c6dc7de663c1f0ad08519c1565da6e76747f57c50f5b911b017d9181
-```
-
--	Docker Version: 20.10.7
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **320.7 MB (320683936 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:75341921ce09464c52ed5f07436ba95c221d005511977177cd35ccf36387bf20`
--	Default Command: `["jshell"]`
-
-```dockerfile
-# Tue, 12 Oct 2021 01:41:28 GMT
-ADD file:aed1709ccba6a81b9726b228fad7b81bcf4c16bafe723981ad37076322d78986 in / 
-# Tue, 12 Oct 2021 01:41:29 GMT
-CMD ["bash"]
-# Sat, 16 Oct 2021 02:59:51 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Sat, 16 Oct 2021 02:59:56 GMT
-RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 16 Oct 2021 03:00:12 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 16 Oct 2021 04:07:15 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				binutils 				fontconfig libfreetype6 				ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Sat, 16 Oct 2021 04:07:15 GMT
-ENV JAVA_HOME=/usr/local/openjdk-18
-# Sat, 16 Oct 2021 04:07:16 GMT
-ENV PATH=/usr/local/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 16 Oct 2021 04:07:17 GMT
-ENV LANG=C.UTF-8
-# Mon, 01 Nov 2021 19:19:23 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 19:19:37 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 19:19:38 GMT
-CMD ["jshell"]
-```
-
--	Layers:
-	-	`sha256:2ff6d7a9e7d73e4a01b9417518d18c001728c45fa8109ed8f55aaa50e7981482`  
-		Last Modified: Tue, 12 Oct 2021 01:48:38 GMT  
-		Size: 49.2 MB (49222756 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7324ea4098419bc5fa2ac5a138522230bf12cef3996d1740dd00f9d4737d004`  
-		Last Modified: Sat, 16 Oct 2021 03:15:37 GMT  
-		Size: 7.7 MB (7695063 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4e213c33a07316d84d829be685bd3b02e1e2bc135f7748c932050e6ed6a3a0d3`  
-		Last Modified: Sat, 16 Oct 2021 03:15:37 GMT  
-		Size: 9.8 MB (9767289 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e7c82db586c3ef7a5c4716aeca2d6e779ec11c568c84c8ef7e6df7bd72512c80`  
-		Last Modified: Sat, 16 Oct 2021 03:15:56 GMT  
-		Size: 52.2 MB (52167277 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ca5f2ea6ae2690d6893716729208342b96e3108dcbbc9e492305d11869aa54e`  
-		Last Modified: Sat, 16 Oct 2021 04:22:43 GMT  
-		Size: 14.7 MB (14671047 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb20e5eb8d79436d86b43ab5273b00adf57966130ee2142bbd833c2d4ef7f5b7`  
-		Last Modified: Mon, 01 Nov 2021 19:32:50 GMT  
-		Size: 187.2 MB (187160504 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-## `openjdk:18-ea-21-jdk-nanoserver`
+## `openjdk:18-ea-22-jdk-nanoserver`
 
 ```console
-$ docker pull openjdk@sha256:2c698eed211dacdfcad8cfcf8bb65180e9feb2e4af011e0da302e5f09294fb74
+$ docker pull openjdk@sha256:6fb352605241063a7689cf99b1bc78fd5efaeab751e3a71c6f7d3012216b7f6a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
 	-	windows version 10.0.17763.2300; amd64
 
-### `openjdk:18-ea-21-jdk-nanoserver` - windows version 10.0.17763.2300; amd64
+### `openjdk:18-ea-22-jdk-nanoserver` - windows version 10.0.17763.2300; amd64
 
 ```console
-$ docker pull openjdk@sha256:76e7ce8921200c2da74218723265e748efb5b538bbc805d96e5875c35e6c9685
+$ docker pull openjdk@sha256:ec025d27caa59ea3603b6ff8e089dd88c2f7a26a69856dfc62c082c78b3c4969
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **289.7 MB (289705169 bytes)**  
+-	Total Size: **290.0 MB (290017954 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f605ec0f6d8620a8d7837798a5cb287e6f718b34f4aa184e494be9c400f5ee93`
+-	Image ID: `sha256:43881b592fbb5488ef2a1826031065b0507eaec5c09a746850b1813bc23ea083`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["cmd","\/s","\/c"]`
 
@@ -32466,13 +32100,13 @@ USER ContainerAdministrator
 RUN echo Updating PATH: %JAVA_HOME%\bin;%PATH% 	&& setx /M PATH %JAVA_HOME%\bin;%PATH% 	&& echo Complete.
 # Wed, 10 Nov 2021 20:32:07 GMT
 USER ContainerUser
-# Wed, 10 Nov 2021 20:32:08 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:32:23 GMT
-COPY dir:2484c24fc278a2a4f9b1faf3e56bed024398b36a40c94d33298963a00cd29cac in C:\openjdk-18 
-# Wed, 10 Nov 2021 20:32:37 GMT
+# Thu, 11 Nov 2021 02:26:55 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:27:10 GMT
+COPY dir:8d6a03ecb43a50e96e1ea8050215c3463f1cd25f09c6c66b339295cfb108fd47 in C:\openjdk-18 
+# Thu, 11 Nov 2021 02:27:24 GMT
 RUN echo Verifying install ... 	&& echo   javac --version && javac --version 	&& echo   java --version && java --version 	&& echo Complete.
-# Wed, 10 Nov 2021 20:32:37 GMT
+# Thu, 11 Nov 2021 02:27:25 GMT
 CMD ["jshell"]
 ```
 
@@ -32500,44 +32134,44 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:11:33 GMT  
 		Size: 1.1 KB (1138 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b032844458881830eff0be6c730b39b70a8e00d9d48b5614c499b10d0e55a131`  
-		Last Modified: Wed, 10 Nov 2021 21:11:33 GMT  
-		Size: 1.1 KB (1127 bytes)  
+	-	`sha256:a4f70cd085588ca56ede8ce99b00cd84e76e989217138f8d5d545c068b4b03aa`  
+		Last Modified: Thu, 11 Nov 2021 02:39:59 GMT  
+		Size: 1.2 KB (1167 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03cfe5eb122e63822c38ded40d5cef742bc695b3c16c2c099cbfae63d43c6588`  
-		Last Modified: Wed, 10 Nov 2021 21:11:54 GMT  
-		Size: 183.3 MB (183299359 bytes)  
+	-	`sha256:9a789c500a3d522aa9e0f7a275070ae5fda6f2c4a6aa83fda57c1c3f433f19cc`  
+		Last Modified: Thu, 11 Nov 2021 02:40:20 GMT  
+		Size: 183.6 MB (183609790 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88d4615c9ed406caf4fcd84446b3e0dd7e56d63892a56c81965b04d213d8a677`  
-		Last Modified: Wed, 10 Nov 2021 21:11:35 GMT  
-		Size: 3.5 MB (3541799 bytes)  
+	-	`sha256:26200be72d5e7969ea70fcb1e295e3833109ddf22ef6008b07d81e5d5ee8b2db`  
+		Last Modified: Thu, 11 Nov 2021 02:40:03 GMT  
+		Size: 3.5 MB (3544102 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14712278de59cab664f0e49fa0f1871ec5ab10ba4e7b6dbe5945492d496c781e`  
-		Last Modified: Wed, 10 Nov 2021 21:11:34 GMT  
-		Size: 1.2 KB (1166 bytes)  
+	-	`sha256:d2ba4ebf7124214086dba305e9d9525a45618109821d8d9ef384507222eb24ec`  
+		Last Modified: Thu, 11 Nov 2021 02:39:59 GMT  
+		Size: 1.2 KB (1177 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `openjdk:18-ea-21-jdk-nanoserver-1809`
+## `openjdk:18-ea-22-jdk-nanoserver-1809`
 
 ```console
-$ docker pull openjdk@sha256:2c698eed211dacdfcad8cfcf8bb65180e9feb2e4af011e0da302e5f09294fb74
+$ docker pull openjdk@sha256:6fb352605241063a7689cf99b1bc78fd5efaeab751e3a71c6f7d3012216b7f6a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
 	-	windows version 10.0.17763.2300; amd64
 
-### `openjdk:18-ea-21-jdk-nanoserver-1809` - windows version 10.0.17763.2300; amd64
+### `openjdk:18-ea-22-jdk-nanoserver-1809` - windows version 10.0.17763.2300; amd64
 
 ```console
-$ docker pull openjdk@sha256:76e7ce8921200c2da74218723265e748efb5b538bbc805d96e5875c35e6c9685
+$ docker pull openjdk@sha256:ec025d27caa59ea3603b6ff8e089dd88c2f7a26a69856dfc62c082c78b3c4969
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **289.7 MB (289705169 bytes)**  
+-	Total Size: **290.0 MB (290017954 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f605ec0f6d8620a8d7837798a5cb287e6f718b34f4aa184e494be9c400f5ee93`
+-	Image ID: `sha256:43881b592fbb5488ef2a1826031065b0507eaec5c09a746850b1813bc23ea083`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["cmd","\/s","\/c"]`
 
@@ -32554,13 +32188,13 @@ USER ContainerAdministrator
 RUN echo Updating PATH: %JAVA_HOME%\bin;%PATH% 	&& setx /M PATH %JAVA_HOME%\bin;%PATH% 	&& echo Complete.
 # Wed, 10 Nov 2021 20:32:07 GMT
 USER ContainerUser
-# Wed, 10 Nov 2021 20:32:08 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:32:23 GMT
-COPY dir:2484c24fc278a2a4f9b1faf3e56bed024398b36a40c94d33298963a00cd29cac in C:\openjdk-18 
-# Wed, 10 Nov 2021 20:32:37 GMT
+# Thu, 11 Nov 2021 02:26:55 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:27:10 GMT
+COPY dir:8d6a03ecb43a50e96e1ea8050215c3463f1cd25f09c6c66b339295cfb108fd47 in C:\openjdk-18 
+# Thu, 11 Nov 2021 02:27:24 GMT
 RUN echo Verifying install ... 	&& echo   javac --version && javac --version 	&& echo   java --version && java --version 	&& echo Complete.
-# Wed, 10 Nov 2021 20:32:37 GMT
+# Thu, 11 Nov 2021 02:27:25 GMT
 CMD ["jshell"]
 ```
 
@@ -32588,45 +32222,44 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:11:33 GMT  
 		Size: 1.1 KB (1138 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b032844458881830eff0be6c730b39b70a8e00d9d48b5614c499b10d0e55a131`  
-		Last Modified: Wed, 10 Nov 2021 21:11:33 GMT  
-		Size: 1.1 KB (1127 bytes)  
+	-	`sha256:a4f70cd085588ca56ede8ce99b00cd84e76e989217138f8d5d545c068b4b03aa`  
+		Last Modified: Thu, 11 Nov 2021 02:39:59 GMT  
+		Size: 1.2 KB (1167 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03cfe5eb122e63822c38ded40d5cef742bc695b3c16c2c099cbfae63d43c6588`  
-		Last Modified: Wed, 10 Nov 2021 21:11:54 GMT  
-		Size: 183.3 MB (183299359 bytes)  
+	-	`sha256:9a789c500a3d522aa9e0f7a275070ae5fda6f2c4a6aa83fda57c1c3f433f19cc`  
+		Last Modified: Thu, 11 Nov 2021 02:40:20 GMT  
+		Size: 183.6 MB (183609790 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88d4615c9ed406caf4fcd84446b3e0dd7e56d63892a56c81965b04d213d8a677`  
-		Last Modified: Wed, 10 Nov 2021 21:11:35 GMT  
-		Size: 3.5 MB (3541799 bytes)  
+	-	`sha256:26200be72d5e7969ea70fcb1e295e3833109ddf22ef6008b07d81e5d5ee8b2db`  
+		Last Modified: Thu, 11 Nov 2021 02:40:03 GMT  
+		Size: 3.5 MB (3544102 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14712278de59cab664f0e49fa0f1871ec5ab10ba4e7b6dbe5945492d496c781e`  
-		Last Modified: Wed, 10 Nov 2021 21:11:34 GMT  
-		Size: 1.2 KB (1166 bytes)  
+	-	`sha256:d2ba4ebf7124214086dba305e9d9525a45618109821d8d9ef384507222eb24ec`  
+		Last Modified: Thu, 11 Nov 2021 02:39:59 GMT  
+		Size: 1.2 KB (1177 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `openjdk:18-ea-21-jdk-oracle`
+## `openjdk:18-ea-22-jdk-oracle`
 
 ```console
-$ docker pull openjdk@sha256:6454022f8656aaa0fc08cbfcc617134fbb65e9bf91d0a8cb3a5fa9f45c43172e
+$ docker pull openjdk@sha256:1a33f6f5cc8af8940b2b15e5513eed4a3563a657794c7b42d3be9ab9dd0d5203
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 2
+-	Platforms: 1
 	-	linux; amd64
-	-	linux; arm64 variant v8
 
-### `openjdk:18-ea-21-jdk-oracle` - linux; amd64
+### `openjdk:18-ea-22-jdk-oracle` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:817b9de5fd1ed622c9080f216dd6b3040f3545be2c6026fe5d413628eb87edca
+$ docker pull openjdk@sha256:d91c50b89de0c4a4b5d4e9b528995006453b9867cb0dae41f100f89e851c9a52
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **243.6 MB (243585087 bytes)**  
+-	Total Size: **243.7 MB (243728237 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f55f011574655a28ccd27287ab45d17065ae9bbc0c4101281ffa665c385c2315`
+-	Image ID: `sha256:672ef7efeba8fe2ad1d923268b6836d1ecbff55754c90ed0fbfe47b4c214a6f8`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -32642,11 +32275,11 @@ ENV JAVA_HOME=/usr/java/openjdk-18
 ENV PATH=/usr/java/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 03 Nov 2021 22:37:07 GMT
 ENV LANG=C.UTF-8
-# Wed, 03 Nov 2021 22:37:07 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 03 Nov 2021 22:37:18 GMT
-RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 03 Nov 2021 22:37:19 GMT
+# Thu, 11 Nov 2021 02:27:47 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:27:58 GMT
+RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:27:59 GMT
 CMD ["jshell"]
 ```
 
@@ -32659,81 +32292,32 @@ CMD ["jshell"]
 		Last Modified: Wed, 03 Nov 2021 22:43:12 GMT  
 		Size: 13.5 MB (13491241 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9881991c1db3ee3e0c6ae7c15b8a4429c433a7655ffe01202511ebf51b6a2ec2`  
-		Last Modified: Wed, 03 Nov 2021 22:43:24 GMT  
-		Size: 188.1 MB (188125731 bytes)  
+	-	`sha256:9a2f4b2e287c44dde9d335364634f51085f3bc93889ea6d9112410318239f8b6`  
+		Last Modified: Thu, 11 Nov 2021 02:34:37 GMT  
+		Size: 188.3 MB (188268881 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `openjdk:18-ea-21-jdk-oracle` - linux; arm64 variant v8
+## `openjdk:18-ea-22-jdk-oraclelinux7`
 
 ```console
-$ docker pull openjdk@sha256:69f8c25e377ba8ec010ce8caa460146f220662c291280ed9af9229d07256e972
-```
-
--	Docker Version: 20.10.7
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **243.2 MB (243202184 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c1c288c27730dd8709627c4220fa83c9513cb0d2bfd26b73d92da997676a3f3d`
--	Default Command: `["jshell"]`
-
-```dockerfile
-# Wed, 03 Nov 2021 22:44:10 GMT
-ADD file:42d3c96053f453ca6f7155adc565cd822cd2663bd2a3862ccaabb9886c191116 in / 
-# Wed, 03 Nov 2021 22:44:11 GMT
-CMD ["/bin/bash"]
-# Wed, 03 Nov 2021 23:01:19 GMT
-RUN set -eux; 	microdnf install 		gzip 		tar 				binutils 		freetype fontconfig 	; 	microdnf clean all
-# Wed, 03 Nov 2021 23:01:20 GMT
-ENV JAVA_HOME=/usr/java/openjdk-18
-# Wed, 03 Nov 2021 23:01:21 GMT
-ENV PATH=/usr/java/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 03 Nov 2021 23:01:22 GMT
-ENV LANG=C.UTF-8
-# Wed, 03 Nov 2021 23:01:23 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 03 Nov 2021 23:01:35 GMT
-RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 03 Nov 2021 23:01:36 GMT
-CMD ["jshell"]
-```
-
--	Layers:
-	-	`sha256:f6fe8bd1b591af20f7f1bf6cabe92846a2b5f1ba33ca5fd165cf03624558cd5c`  
-		Last Modified: Wed, 03 Nov 2021 22:45:11 GMT  
-		Size: 41.9 MB (41879080 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5f82d768d0f333fffcb86fe10bab796e393363d92953d26c9435077acb1598e`  
-		Last Modified: Wed, 03 Nov 2021 23:12:36 GMT  
-		Size: 14.3 MB (14274012 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f12dafb56a01afc697264735df1f9eee940086c846bc9b2d88981f202d362920`  
-		Last Modified: Wed, 03 Nov 2021 23:12:50 GMT  
-		Size: 187.0 MB (187049092 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-## `openjdk:18-ea-21-jdk-oraclelinux7`
-
-```console
-$ docker pull openjdk@sha256:ed3ba98351d2c4bff1800623b6038745140af2e79feac3ae6002caeb742449b6
+$ docker pull openjdk@sha256:28857b88f79eb55e5564e06397c66e9f2943aba99a141857198f9f0f8d7de468
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 2
+-	Platforms: 1
 	-	linux; amd64
-	-	linux; arm64 variant v8
 
-### `openjdk:18-ea-21-jdk-oraclelinux7` - linux; amd64
+### `openjdk:18-ea-22-jdk-oraclelinux7` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:ec196e338fa8bbd0d9287cc432100dfc2310577c6e39bb691e5c4aad00d6b521
+$ docker pull openjdk@sha256:ce4c326af7ac5a60c8ca40f44ae6ebb71a43eb165afe0d18716114faa2ae9241
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.9 MB (251855575 bytes)**  
+-	Total Size: **252.0 MB (251995533 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b3e91ba8ba9cb56e993c2ac26ea12609f055911aee8f7860b56f49f35da22f67`
+-	Image ID: `sha256:95bb93f8d111d78b4b3aafe543ea16de5c32e350d9517726baf0852b2f6f63c3`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -32749,11 +32333,11 @@ ENV JAVA_HOME=/usr/java/openjdk-18
 ENV PATH=/usr/java/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Thu, 28 Oct 2021 01:45:25 GMT
 ENV LANG=en_US.UTF-8
-# Mon, 01 Nov 2021 18:49:22 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 18:49:33 GMT
-RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 18:49:33 GMT
+# Thu, 11 Nov 2021 02:28:04 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:28:15 GMT
+RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:28:16 GMT
 CMD ["jshell"]
 ```
 
@@ -32766,81 +32350,32 @@ CMD ["jshell"]
 		Last Modified: Thu, 28 Oct 2021 01:53:12 GMT  
 		Size: 15.4 MB (15399150 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:745ba23332f5419699490030c7a251ae318678ad9f335be24081ace19121bf47`  
-		Last Modified: Mon, 01 Nov 2021 18:57:03 GMT  
-		Size: 188.1 MB (188127463 bytes)  
+	-	`sha256:60632eff72aeb95abb140b5e33b41e9e4d1f089f71271807f25b3f35c9257b0b`  
+		Last Modified: Thu, 11 Nov 2021 02:35:25 GMT  
+		Size: 188.3 MB (188267421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `openjdk:18-ea-21-jdk-oraclelinux7` - linux; arm64 variant v8
+## `openjdk:18-ea-22-jdk-oraclelinux8`
 
 ```console
-$ docker pull openjdk@sha256:c23dfe4629f2e38e39a5c8dcbc2593c16561597e396e34a5bc33eb2c1bdb2400
-```
-
--	Docker Version: 20.10.7
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **252.4 MB (252408546 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cf3575914a6084f3ec8f9deccd8313f670512b7287aeeeffb70f27eec26d21ff`
--	Default Command: `["jshell"]`
-
-```dockerfile
-# Thu, 28 Oct 2021 01:44:12 GMT
-ADD file:f997c704e003e7bef1e40d457d005aa07a60cb4c37255cc2711119deb3e6df7d in / 
-# Thu, 28 Oct 2021 01:44:13 GMT
-CMD ["/bin/bash"]
-# Thu, 28 Oct 2021 02:16:09 GMT
-RUN set -eux; 	yum install -y 		gzip 		tar 				binutils 		freetype fontconfig 	; 	rm -rf /var/cache/yum
-# Thu, 28 Oct 2021 02:16:10 GMT
-ENV JAVA_HOME=/usr/java/openjdk-18
-# Thu, 28 Oct 2021 02:16:11 GMT
-ENV PATH=/usr/java/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 28 Oct 2021 02:16:12 GMT
-ENV LANG=en_US.UTF-8
-# Mon, 01 Nov 2021 19:18:05 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 19:18:27 GMT
-RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 19:18:28 GMT
-CMD ["jshell"]
-```
-
--	Layers:
-	-	`sha256:9e1221f69ca9b4fd1daae21b9a20e7225f6ca7d0e34e9e998bc6600de1a3836a`  
-		Last Modified: Thu, 28 Oct 2021 01:45:43 GMT  
-		Size: 48.9 MB (48905370 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d0b5770e043e6b3a738c83528c0b9c0c9be1c26e18eea50e4a5c270c853ccb2e`  
-		Last Modified: Thu, 28 Oct 2021 02:29:48 GMT  
-		Size: 16.5 MB (16454087 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:76b8892b2b37990a15a4b760b7f02166f96e66a8800096349cd93580a87f5779`  
-		Last Modified: Mon, 01 Nov 2021 19:30:31 GMT  
-		Size: 187.0 MB (187049089 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-## `openjdk:18-ea-21-jdk-oraclelinux8`
-
-```console
-$ docker pull openjdk@sha256:6454022f8656aaa0fc08cbfcc617134fbb65e9bf91d0a8cb3a5fa9f45c43172e
+$ docker pull openjdk@sha256:1a33f6f5cc8af8940b2b15e5513eed4a3563a657794c7b42d3be9ab9dd0d5203
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 2
+-	Platforms: 1
 	-	linux; amd64
-	-	linux; arm64 variant v8
 
-### `openjdk:18-ea-21-jdk-oraclelinux8` - linux; amd64
+### `openjdk:18-ea-22-jdk-oraclelinux8` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:817b9de5fd1ed622c9080f216dd6b3040f3545be2c6026fe5d413628eb87edca
+$ docker pull openjdk@sha256:d91c50b89de0c4a4b5d4e9b528995006453b9867cb0dae41f100f89e851c9a52
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **243.6 MB (243585087 bytes)**  
+-	Total Size: **243.7 MB (243728237 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f55f011574655a28ccd27287ab45d17065ae9bbc0c4101281ffa665c385c2315`
+-	Image ID: `sha256:672ef7efeba8fe2ad1d923268b6836d1ecbff55754c90ed0fbfe47b4c214a6f8`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -32856,11 +32391,11 @@ ENV JAVA_HOME=/usr/java/openjdk-18
 ENV PATH=/usr/java/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 03 Nov 2021 22:37:07 GMT
 ENV LANG=C.UTF-8
-# Wed, 03 Nov 2021 22:37:07 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 03 Nov 2021 22:37:18 GMT
-RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 03 Nov 2021 22:37:19 GMT
+# Thu, 11 Nov 2021 02:27:47 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:27:58 GMT
+RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:27:59 GMT
 CMD ["jshell"]
 ```
 
@@ -32873,81 +32408,32 @@ CMD ["jshell"]
 		Last Modified: Wed, 03 Nov 2021 22:43:12 GMT  
 		Size: 13.5 MB (13491241 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9881991c1db3ee3e0c6ae7c15b8a4429c433a7655ffe01202511ebf51b6a2ec2`  
-		Last Modified: Wed, 03 Nov 2021 22:43:24 GMT  
-		Size: 188.1 MB (188125731 bytes)  
+	-	`sha256:9a2f4b2e287c44dde9d335364634f51085f3bc93889ea6d9112410318239f8b6`  
+		Last Modified: Thu, 11 Nov 2021 02:34:37 GMT  
+		Size: 188.3 MB (188268881 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `openjdk:18-ea-21-jdk-oraclelinux8` - linux; arm64 variant v8
+## `openjdk:18-ea-22-jdk-slim`
 
 ```console
-$ docker pull openjdk@sha256:69f8c25e377ba8ec010ce8caa460146f220662c291280ed9af9229d07256e972
-```
-
--	Docker Version: 20.10.7
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **243.2 MB (243202184 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c1c288c27730dd8709627c4220fa83c9513cb0d2bfd26b73d92da997676a3f3d`
--	Default Command: `["jshell"]`
-
-```dockerfile
-# Wed, 03 Nov 2021 22:44:10 GMT
-ADD file:42d3c96053f453ca6f7155adc565cd822cd2663bd2a3862ccaabb9886c191116 in / 
-# Wed, 03 Nov 2021 22:44:11 GMT
-CMD ["/bin/bash"]
-# Wed, 03 Nov 2021 23:01:19 GMT
-RUN set -eux; 	microdnf install 		gzip 		tar 				binutils 		freetype fontconfig 	; 	microdnf clean all
-# Wed, 03 Nov 2021 23:01:20 GMT
-ENV JAVA_HOME=/usr/java/openjdk-18
-# Wed, 03 Nov 2021 23:01:21 GMT
-ENV PATH=/usr/java/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 03 Nov 2021 23:01:22 GMT
-ENV LANG=C.UTF-8
-# Wed, 03 Nov 2021 23:01:23 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 03 Nov 2021 23:01:35 GMT
-RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 03 Nov 2021 23:01:36 GMT
-CMD ["jshell"]
-```
-
--	Layers:
-	-	`sha256:f6fe8bd1b591af20f7f1bf6cabe92846a2b5f1ba33ca5fd165cf03624558cd5c`  
-		Last Modified: Wed, 03 Nov 2021 22:45:11 GMT  
-		Size: 41.9 MB (41879080 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5f82d768d0f333fffcb86fe10bab796e393363d92953d26c9435077acb1598e`  
-		Last Modified: Wed, 03 Nov 2021 23:12:36 GMT  
-		Size: 14.3 MB (14274012 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f12dafb56a01afc697264735df1f9eee940086c846bc9b2d88981f202d362920`  
-		Last Modified: Wed, 03 Nov 2021 23:12:50 GMT  
-		Size: 187.0 MB (187049092 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-## `openjdk:18-ea-21-jdk-slim`
-
-```console
-$ docker pull openjdk@sha256:9f9db4e7b8cf008882c23d60496ffbf92f2def52e97bb0967f5abb8cf971f9bc
+$ docker pull openjdk@sha256:513ab1422512c33c87ab6e49f38abcd4f962cde240ee90684af3f18a314faece
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 2
+-	Platforms: 1
 	-	linux; amd64
-	-	linux; arm64 variant v8
 
-### `openjdk:18-ea-21-jdk-slim` - linux; amd64
+### `openjdk:18-ea-22-jdk-slim` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:6fd2bf246d0585b450903c03cae374f975c7684cb4d52554a194ec4e88b33428
+$ docker pull openjdk@sha256:707dedb1245a645e5859bb79462c53cef7846ba447731b4d5640be0fc2b3f125
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **221.4 MB (221443148 bytes)**  
+-	Total Size: **221.6 MB (221583947 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b20796d1637bf5538d022dcb30a1d8c3f820c33258e7b524e180c7ba48599d75`
+-	Image ID: `sha256:d03fc506dd2f5806ae0628d561dc7d0353d9e5df598b9e7f90286567cbd7bac9`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -32963,11 +32449,11 @@ ENV JAVA_HOME=/usr/local/openjdk-18
 ENV PATH=/usr/local/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 12 Oct 2021 16:27:47 GMT
 ENV LANG=C.UTF-8
-# Mon, 01 Nov 2021 18:49:53 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 18:50:10 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 18:50:11 GMT
+# Thu, 11 Nov 2021 02:28:35 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:28:50 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:28:50 GMT
 CMD ["jshell"]
 ```
 
@@ -32980,81 +32466,32 @@ CMD ["jshell"]
 		Last Modified: Tue, 12 Oct 2021 16:42:59 GMT  
 		Size: 1.6 MB (1582043 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:efcc91b087b99e6e057cfe49d4fbbf2e1b3039f8876e7837244f8a4200d36aa9`  
-		Last Modified: Mon, 01 Nov 2021 18:58:09 GMT  
-		Size: 188.5 MB (188503794 bytes)  
+	-	`sha256:c94532e4ea740fa348bd5588336eb055aa252dca675396529409e0f2e392c981`  
+		Last Modified: Thu, 11 Nov 2021 02:36:33 GMT  
+		Size: 188.6 MB (188644593 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `openjdk:18-ea-21-jdk-slim` - linux; arm64 variant v8
+## `openjdk:18-ea-22-jdk-slim-bullseye`
 
 ```console
-$ docker pull openjdk@sha256:c051707a9ecca3b28e5a34934cc43b3de078a7ccd6833f57519b290f6d43ed17
-```
-
--	Docker Version: 20.10.7
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **218.8 MB (218818738 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8596b266405f572e3ad73c1ff3ebdd3d5855c577879c7c1888d4f1d6188f2749`
--	Default Command: `["jshell"]`
-
-```dockerfile
-# Tue, 12 Oct 2021 01:41:18 GMT
-ADD file:d84144ad575672cd6cc8a00c8e5a88ab0545348f040fc249ea5fcf8193b2bce6 in / 
-# Tue, 12 Oct 2021 01:41:18 GMT
-CMD ["bash"]
-# Wed, 13 Oct 2021 06:00:52 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 13 Oct 2021 06:00:53 GMT
-ENV JAVA_HOME=/usr/local/openjdk-18
-# Wed, 13 Oct 2021 06:00:54 GMT
-ENV PATH=/usr/local/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 13 Oct 2021 06:00:55 GMT
-ENV LANG=C.UTF-8
-# Mon, 01 Nov 2021 19:18:56 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 19:19:12 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 19:19:12 GMT
-CMD ["jshell"]
-```
-
--	Layers:
-	-	`sha256:a9eb63951c1c2ee8efcc12b696928fee3741a2d4eae76f2da3e161a5d90548bf`  
-		Last Modified: Tue, 12 Oct 2021 01:48:13 GMT  
-		Size: 30.0 MB (30043906 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8552e0d309d6deaf17b87f395ca03a5bb0b4c14128cd49208ab21c34bf39e933`  
-		Last Modified: Wed, 13 Oct 2021 06:25:32 GMT  
-		Size: 1.6 MB (1565908 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f92c1d205a06dd52516eff18a8b8af706b616258c5ee9e021cb0f4bad0db3203`  
-		Last Modified: Mon, 01 Nov 2021 19:31:52 GMT  
-		Size: 187.2 MB (187208924 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-## `openjdk:18-ea-21-jdk-slim-bullseye`
-
-```console
-$ docker pull openjdk@sha256:9f9db4e7b8cf008882c23d60496ffbf92f2def52e97bb0967f5abb8cf971f9bc
+$ docker pull openjdk@sha256:513ab1422512c33c87ab6e49f38abcd4f962cde240ee90684af3f18a314faece
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 2
+-	Platforms: 1
 	-	linux; amd64
-	-	linux; arm64 variant v8
 
-### `openjdk:18-ea-21-jdk-slim-bullseye` - linux; amd64
+### `openjdk:18-ea-22-jdk-slim-bullseye` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:6fd2bf246d0585b450903c03cae374f975c7684cb4d52554a194ec4e88b33428
+$ docker pull openjdk@sha256:707dedb1245a645e5859bb79462c53cef7846ba447731b4d5640be0fc2b3f125
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **221.4 MB (221443148 bytes)**  
+-	Total Size: **221.6 MB (221583947 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b20796d1637bf5538d022dcb30a1d8c3f820c33258e7b524e180c7ba48599d75`
+-	Image ID: `sha256:d03fc506dd2f5806ae0628d561dc7d0353d9e5df598b9e7f90286567cbd7bac9`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -33070,11 +32507,11 @@ ENV JAVA_HOME=/usr/local/openjdk-18
 ENV PATH=/usr/local/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 12 Oct 2021 16:27:47 GMT
 ENV LANG=C.UTF-8
-# Mon, 01 Nov 2021 18:49:53 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 18:50:10 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 18:50:11 GMT
+# Thu, 11 Nov 2021 02:28:35 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:28:50 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:28:50 GMT
 CMD ["jshell"]
 ```
 
@@ -33087,81 +32524,32 @@ CMD ["jshell"]
 		Last Modified: Tue, 12 Oct 2021 16:42:59 GMT  
 		Size: 1.6 MB (1582043 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:efcc91b087b99e6e057cfe49d4fbbf2e1b3039f8876e7837244f8a4200d36aa9`  
-		Last Modified: Mon, 01 Nov 2021 18:58:09 GMT  
-		Size: 188.5 MB (188503794 bytes)  
+	-	`sha256:c94532e4ea740fa348bd5588336eb055aa252dca675396529409e0f2e392c981`  
+		Last Modified: Thu, 11 Nov 2021 02:36:33 GMT  
+		Size: 188.6 MB (188644593 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `openjdk:18-ea-21-jdk-slim-bullseye` - linux; arm64 variant v8
+## `openjdk:18-ea-22-jdk-slim-buster`
 
 ```console
-$ docker pull openjdk@sha256:c051707a9ecca3b28e5a34934cc43b3de078a7ccd6833f57519b290f6d43ed17
-```
-
--	Docker Version: 20.10.7
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **218.8 MB (218818738 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8596b266405f572e3ad73c1ff3ebdd3d5855c577879c7c1888d4f1d6188f2749`
--	Default Command: `["jshell"]`
-
-```dockerfile
-# Tue, 12 Oct 2021 01:41:18 GMT
-ADD file:d84144ad575672cd6cc8a00c8e5a88ab0545348f040fc249ea5fcf8193b2bce6 in / 
-# Tue, 12 Oct 2021 01:41:18 GMT
-CMD ["bash"]
-# Wed, 13 Oct 2021 06:00:52 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 13 Oct 2021 06:00:53 GMT
-ENV JAVA_HOME=/usr/local/openjdk-18
-# Wed, 13 Oct 2021 06:00:54 GMT
-ENV PATH=/usr/local/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 13 Oct 2021 06:00:55 GMT
-ENV LANG=C.UTF-8
-# Mon, 01 Nov 2021 19:18:56 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 19:19:12 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 19:19:12 GMT
-CMD ["jshell"]
-```
-
--	Layers:
-	-	`sha256:a9eb63951c1c2ee8efcc12b696928fee3741a2d4eae76f2da3e161a5d90548bf`  
-		Last Modified: Tue, 12 Oct 2021 01:48:13 GMT  
-		Size: 30.0 MB (30043906 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8552e0d309d6deaf17b87f395ca03a5bb0b4c14128cd49208ab21c34bf39e933`  
-		Last Modified: Wed, 13 Oct 2021 06:25:32 GMT  
-		Size: 1.6 MB (1565908 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f92c1d205a06dd52516eff18a8b8af706b616258c5ee9e021cb0f4bad0db3203`  
-		Last Modified: Mon, 01 Nov 2021 19:31:52 GMT  
-		Size: 187.2 MB (187208924 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-## `openjdk:18-ea-21-jdk-slim-buster`
-
-```console
-$ docker pull openjdk@sha256:7c76b028832c996c949f82f1374113176b1be0b49713681c4d65aded3275000c
+$ docker pull openjdk@sha256:97108cb589c9bae4c454affc8fcc937acf2227259f869b6ca14bc21bccb54224
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 2
+-	Platforms: 1
 	-	linux; amd64
-	-	linux; arm64 variant v8
 
-### `openjdk:18-ea-21-jdk-slim-buster` - linux; amd64
+### `openjdk:18-ea-22-jdk-slim-buster` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:5907363d51f46b81c780349dde095c0dc0ed3dad83474f66bc5f99ecda3aeb4c
+$ docker pull openjdk@sha256:ac0a7e52bccf05883a56614449482cb73614f5bc5b016e42874090760fb488b2
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **218.9 MB (218912828 bytes)**  
+-	Total Size: **219.1 MB (219058803 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:10653c2b68942341ef0ccbcdf71eef5d708ff40561371aef012f08d50bd62fdb`
+-	Image ID: `sha256:fe6ddbc7fa65084af20f557a980a70d6e8b197d4a7f95c5d30ba38f1daecb125`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -33177,11 +32565,11 @@ ENV JAVA_HOME=/usr/local/openjdk-18
 ENV PATH=/usr/local/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 12 Oct 2021 16:28:45 GMT
 ENV LANG=C.UTF-8
-# Mon, 01 Nov 2021 18:50:33 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 18:50:49 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 18:50:50 GMT
+# Thu, 11 Nov 2021 02:29:11 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:29:25 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:29:26 GMT
 CMD ["jshell"]
 ```
 
@@ -33194,63 +32582,15 @@ CMD ["jshell"]
 		Last Modified: Tue, 12 Oct 2021 16:44:29 GMT  
 		Size: 3.3 MB (3269598 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:669b832f4a79a98af0ed0f1f024cd2229b096d2e30b88cb3ff72c272ff08ffa2`  
-		Last Modified: Mon, 01 Nov 2021 18:59:33 GMT  
-		Size: 188.5 MB (188503720 bytes)  
+	-	`sha256:f05325d794d04afdfac5990f67bc56f76fa5288b25dfedb00d760c9b67910fbb`  
+		Last Modified: Thu, 11 Nov 2021 02:37:56 GMT  
+		Size: 188.6 MB (188649695 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `openjdk:18-ea-21-jdk-slim-buster` - linux; arm64 variant v8
+## `openjdk:18-ea-22-jdk-windowsservercore`
 
 ```console
-$ docker pull openjdk@sha256:f6b44ee8328b312f93ad380ae8f9345e57e160643879c9461a6c4815374b45ad
-```
-
--	Docker Version: 20.10.7
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **216.2 MB (216241190 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1e89cee8d8eaacb02429da17a5deda7818b0d3dc4776b4a1dc2d0cfb75ca8811`
--	Default Command: `["jshell"]`
-
-```dockerfile
-# Tue, 12 Oct 2021 01:41:42 GMT
-ADD file:f0d53027a7ba594477674127971aa477af3a2bc6bcddef6c0aa174953a5f2db0 in / 
-# Tue, 12 Oct 2021 01:41:42 GMT
-CMD ["bash"]
-# Wed, 13 Oct 2021 06:01:57 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 13 Oct 2021 06:01:58 GMT
-ENV JAVA_HOME=/usr/local/openjdk-18
-# Wed, 13 Oct 2021 06:01:59 GMT
-ENV PATH=/usr/local/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 13 Oct 2021 06:02:00 GMT
-ENV LANG=C.UTF-8
-# Mon, 01 Nov 2021 19:19:44 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 19:20:02 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 19:20:02 GMT
-CMD ["jshell"]
-```
-
--	Layers:
-	-	`sha256:02b45931a436a68cadb742684148ed6aacbbf9aa21447b467c11bac97f92eb46`  
-		Last Modified: Tue, 12 Oct 2021 01:49:07 GMT  
-		Size: 25.9 MB (25908479 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d42a628bf864e5fbc07330c3cb3cbd4f73d7b9f624a52fbb7162c07185b972a4`  
-		Last Modified: Wed, 13 Oct 2021 06:27:07 GMT  
-		Size: 3.1 MB (3118848 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9937d34cda44443b8610d52daa32dffc17d4227ad7eccde7a811d71f80114a65`  
-		Last Modified: Mon, 01 Nov 2021 19:33:33 GMT  
-		Size: 187.2 MB (187213863 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-## `openjdk:18-ea-21-jdk-windowsservercore`
-
-```console
-$ docker pull openjdk@sha256:a991c6b5666e0d0edb90abea94e1ad76b3803a3b2f91841aed6ceae81380a206
+$ docker pull openjdk@sha256:916ceba5742a7ddd0fe8b131eb8ac2f81d5f4124e3262c11dc4e7d309e484f5c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -33259,17 +32599,17 @@ $ docker pull openjdk@sha256:a991c6b5666e0d0edb90abea94e1ad76b3803a3b2f91841aed6
 	-	windows version 10.0.17763.2300; amd64
 	-	windows version 10.0.14393.4770; amd64
 
-### `openjdk:18-ea-21-jdk-windowsservercore` - windows version 10.0.20348.350; amd64
+### `openjdk:18-ea-22-jdk-windowsservercore` - windows version 10.0.20348.350; amd64
 
 ```console
-$ docker pull openjdk@sha256:e8255df62dff59325ca6e55e1bcc9080692eaefdcdbb1d7deaafb57971ee86de
+$ docker pull openjdk@sha256:9c20d60c7bde738f2c3e57e52aafbaecc57f1a5ec9c4b75dba7c45378b4acfeb
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.4 GB (2369632853 bytes)**  
+-	Total Size: **2.4 GB (2369930838 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c7f00655015db4254b3d0354638c0dbea2256f1b504ac92eb2577f6a5a1884f4`
+-	Image ID: `sha256:a5c6761474f0c566c146885a48d00326c719b7730871258da29aad263b932a4a`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -33286,15 +32626,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:23:41 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:23:42 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:23:43 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:23:44 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:24:32 GMT
+# Thu, 11 Nov 2021 02:22:29 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:22:30 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:22:31 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:23:15 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:24:34 GMT
+# Thu, 11 Nov 2021 02:23:16 GMT
 CMD ["jshell"]
 ```
 
@@ -33321,38 +32661,38 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:03:27 GMT  
 		Size: 549.7 KB (549708 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b698dd11831adf277aae025052bc6eef078afd78744099225fd6ecd561fdcb6f`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1379 bytes)  
+	-	`sha256:47a3965ec2551fcd1a6117196df95c018068b200db9142b813af85f8f05fac3f`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b0900c61346cbdc2e5203cfe88ec50506b93be59c3bd52564a8b95a1e0f5f4d`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1398 bytes)  
+	-	`sha256:157aee527ea6606caee0c3f88322e3dcee4605f52eb98706b7629d2f2d864f50`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:006246c3aa0e0f4bc3f01c03d0e7d48693d0725b25f3e78f3581915d92760caa`  
-		Last Modified: Wed, 10 Nov 2021 21:03:25 GMT  
-		Size: 1.4 KB (1355 bytes)  
+	-	`sha256:53b7b5633a2546c9bab04d431d13513305ffa78a8fd0fbb6871d649054b71248`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05f8dd5277feae03b608b6cc2ff3cd3dc5107d8e8b71c5d8af8412db74134f7b`  
-		Last Modified: Wed, 10 Nov 2021 21:06:46 GMT  
-		Size: 183.9 MB (183851222 bytes)  
+	-	`sha256:458a4ea681f6aaefe0ffff613b2b6902899d6cf784e658b99c5d2aefe9fd101c`  
+		Last Modified: Thu, 11 Nov 2021 02:35:31 GMT  
+		Size: 184.1 MB (184149058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:174ce1c5faf404eee966a95111144858ca8a1cd9b461dc6660bda459e2b91294`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1419 bytes)  
+	-	`sha256:b237936aa73b8bc01a1cd55260a8718087e351e2cf387793361369cb3067930f`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `openjdk:18-ea-21-jdk-windowsservercore` - windows version 10.0.17763.2300; amd64
+### `openjdk:18-ea-22-jdk-windowsservercore` - windows version 10.0.17763.2300; amd64
 
 ```console
-$ docker pull openjdk@sha256:2844a4f5ef91b81e8639e3c77c53eb720cb1a92d7615cb49e474db929c7f0e4d
+$ docker pull openjdk@sha256:8e32cdb2628a6f1f06929a6f3ce57025716a05db9885a170e8d4acb24002f91d
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 GB (2890432121 bytes)**  
+-	Total Size: **2.9 GB (2890756401 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:edb6fdab0d77d354269b0c787da93627f788070ff04e27610bf4d74ac6947dbb`
+-	Image ID: `sha256:50d8c70546f0046f36a731848b58b0bbf9e64784e0a12ad91de1219f225d97d4`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -33369,15 +32709,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:26:31 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:26:31 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:26:32 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:26:33 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:28:03 GMT
+# Thu, 11 Nov 2021 02:23:31 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:23:32 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:23:33 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:24:52 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:28:04 GMT
+# Thu, 11 Nov 2021 02:24:53 GMT
 CMD ["jshell"]
 ```
 
@@ -33404,38 +32744,38 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:07:09 GMT  
 		Size: 319.7 KB (319676 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f27f6a08e6bde711bb8374842ac82c0cad5fa223e6215af6895d7b1ae20ab601`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1435 bytes)  
+	-	`sha256:e82aaf27003bf2b62a2cc2dbd9cb4ff9a112f8ef1cf0240f81607382e7cd6138`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb17e13d4cdd0b960ba531f11242bb58c8a359c38dbd6bb4bdd03853994bc2ce`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1441 bytes)  
+	-	`sha256:98f36effb4b3b001319833edf8fc4e1a9b6008500dafad80385b5a4520aa3c29`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c847b4d31b558449e54882e692193c6e77fd877cb8d037083d8898f0a3e4efe6`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
+	-	`sha256:c64c2dd6bbf7811caa7ae295e72178094f00f1058f9918636ef7245bd24cc578`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1430 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:cdfbdd5d3b9376889190109d5cc7a4cf2377a4946e1ccc5535bd87d1cac3ca5d`  
+		Last Modified: Thu, 11 Nov 2021 02:36:10 GMT  
+		Size: 183.9 MB (183948230 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4465946c6c9661cbaf098a919fdf0be953f0cf789394679363d052795feb4f30`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
 		Size: 1.4 KB (1420 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95a35ec7cf69a61548328a852bd3c946f51685d419a4c79f87802db51db08c50`  
-		Last Modified: Wed, 10 Nov 2021 21:07:26 GMT  
-		Size: 183.6 MB (183623942 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5753877e7a39a9e13e30aa822049b0a084cda5de4a40cd5f6ace47ac2fc9eb10`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1416 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `openjdk:18-ea-21-jdk-windowsservercore` - windows version 10.0.14393.4770; amd64
+### `openjdk:18-ea-22-jdk-windowsservercore` - windows version 10.0.14393.4770; amd64
 
 ```console
-$ docker pull openjdk@sha256:393e2252dd54db1eae006103f025518c7a5ad43752461ed3d8ee1de90f0395ae
+$ docker pull openjdk@sha256:1fb6cb4679450a052002f19a809879940b24f5a42313a449b3abac847b5716b8
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.5 GB (6457431629 bytes)**  
+-	Total Size: **6.5 GB (6457750413 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d306462a846e7b818d1a0e0e8ab77db60ccccfd35a285ce2ee8647be0f0f9de`
+-	Image ID: `sha256:81a0d0a688c09412d0fc9d6c668fc54ceb91032a59439189764571f4987fa30a`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -33452,15 +32792,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:30:05 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:30:06 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:30:07 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:30:08 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:31:36 GMT
+# Thu, 11 Nov 2021 02:25:13 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:25:14 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:25:15 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:26:36 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:31:37 GMT
+# Thu, 11 Nov 2021 02:26:37 GMT
 CMD ["jshell"]
 ```
 
@@ -33487,48 +32827,48 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:07:51 GMT  
 		Size: 346.8 KB (346841 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1d9bca52a27503493f0c99b4a99920bf0977ea36e5c98d5640b9974957eaf1c`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1400 bytes)  
+	-	`sha256:83bd413e3a517265afe99693948983f594de2897cc86194a7d8d387b575e82a5`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1424 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87f3555ad46e455b194d91f0a0c93835b1f759bed8eca17a3a0dc657385bd13c`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1415 bytes)  
+	-	`sha256:43648bc0ccab1f3f49e25e4d2e08ad16e43fd15b3b877f2a9659cc2b8735924a`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2a124c261e3810baa7b86d3002f7c9bb0d9b74f151a368c9efdd7dbda0dd0d5`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1429 bytes)  
+	-	`sha256:b37343f091cd0ffd2e8881824fa7eb48840fcaa1924b9df53edc6d5828a44255`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1389 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1d67ffbd95a6b961816519f50fa3d55ae7eb440d88109b8d6784a1093bfe62e2`  
-		Last Modified: Wed, 10 Nov 2021 21:11:11 GMT  
-		Size: 183.6 MB (183629721 bytes)  
+	-	`sha256:5a722237d8a9d82c5a0e0401f0d42603163f666c0dc8dba2f339c5858703d9e7`  
+		Last Modified: Thu, 11 Nov 2021 02:39:38 GMT  
+		Size: 183.9 MB (183948511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a06fd0b5df6b3417d9ff1f2bdf32c8c9ed0d6a0c45b70e6db8fb0a0019e361d7`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1415 bytes)  
+	-	`sha256:f983e129d00f1fc3c9459bca58fe6d4bf0f833ed18f5ccc0c1e4478aea0af48e`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1418 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `openjdk:18-ea-21-jdk-windowsservercore-1809`
+## `openjdk:18-ea-22-jdk-windowsservercore-1809`
 
 ```console
-$ docker pull openjdk@sha256:e999c59a44c977dcb0c739cb733653de8ee93db07518187bcdfcc6d658d5f11e
+$ docker pull openjdk@sha256:a116b92ff8f5c5e37efe7bb82b121c54151e7b7d9e7e6fbf77bd6f2421ceca44
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
 	-	windows version 10.0.17763.2300; amd64
 
-### `openjdk:18-ea-21-jdk-windowsservercore-1809` - windows version 10.0.17763.2300; amd64
+### `openjdk:18-ea-22-jdk-windowsservercore-1809` - windows version 10.0.17763.2300; amd64
 
 ```console
-$ docker pull openjdk@sha256:2844a4f5ef91b81e8639e3c77c53eb720cb1a92d7615cb49e474db929c7f0e4d
+$ docker pull openjdk@sha256:8e32cdb2628a6f1f06929a6f3ce57025716a05db9885a170e8d4acb24002f91d
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 GB (2890432121 bytes)**  
+-	Total Size: **2.9 GB (2890756401 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:edb6fdab0d77d354269b0c787da93627f788070ff04e27610bf4d74ac6947dbb`
+-	Image ID: `sha256:50d8c70546f0046f36a731848b58b0bbf9e64784e0a12ad91de1219f225d97d4`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -33545,15 +32885,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:26:31 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:26:31 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:26:32 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:26:33 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:28:03 GMT
+# Thu, 11 Nov 2021 02:23:31 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:23:32 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:23:33 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:24:52 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:28:04 GMT
+# Thu, 11 Nov 2021 02:24:53 GMT
 CMD ["jshell"]
 ```
 
@@ -33580,48 +32920,48 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:07:09 GMT  
 		Size: 319.7 KB (319676 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f27f6a08e6bde711bb8374842ac82c0cad5fa223e6215af6895d7b1ae20ab601`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1435 bytes)  
+	-	`sha256:e82aaf27003bf2b62a2cc2dbd9cb4ff9a112f8ef1cf0240f81607382e7cd6138`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb17e13d4cdd0b960ba531f11242bb58c8a359c38dbd6bb4bdd03853994bc2ce`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1441 bytes)  
+	-	`sha256:98f36effb4b3b001319833edf8fc4e1a9b6008500dafad80385b5a4520aa3c29`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c847b4d31b558449e54882e692193c6e77fd877cb8d037083d8898f0a3e4efe6`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
+	-	`sha256:c64c2dd6bbf7811caa7ae295e72178094f00f1058f9918636ef7245bd24cc578`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1430 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:cdfbdd5d3b9376889190109d5cc7a4cf2377a4946e1ccc5535bd87d1cac3ca5d`  
+		Last Modified: Thu, 11 Nov 2021 02:36:10 GMT  
+		Size: 183.9 MB (183948230 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4465946c6c9661cbaf098a919fdf0be953f0cf789394679363d052795feb4f30`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
 		Size: 1.4 KB (1420 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95a35ec7cf69a61548328a852bd3c946f51685d419a4c79f87802db51db08c50`  
-		Last Modified: Wed, 10 Nov 2021 21:07:26 GMT  
-		Size: 183.6 MB (183623942 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5753877e7a39a9e13e30aa822049b0a084cda5de4a40cd5f6ace47ac2fc9eb10`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1416 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `openjdk:18-ea-21-jdk-windowsservercore-ltsc2016`
+## `openjdk:18-ea-22-jdk-windowsservercore-ltsc2016`
 
 ```console
-$ docker pull openjdk@sha256:938429f5ef4c5db2a518e461331aec2a5bd8f229d7b7d2cb31850cd2254ade27
+$ docker pull openjdk@sha256:a8f9c46981a31d619cbd7f2abebab8cbd77a7376e766f26b035f44912f60df9b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
 	-	windows version 10.0.14393.4770; amd64
 
-### `openjdk:18-ea-21-jdk-windowsservercore-ltsc2016` - windows version 10.0.14393.4770; amd64
+### `openjdk:18-ea-22-jdk-windowsservercore-ltsc2016` - windows version 10.0.14393.4770; amd64
 
 ```console
-$ docker pull openjdk@sha256:393e2252dd54db1eae006103f025518c7a5ad43752461ed3d8ee1de90f0395ae
+$ docker pull openjdk@sha256:1fb6cb4679450a052002f19a809879940b24f5a42313a449b3abac847b5716b8
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.5 GB (6457431629 bytes)**  
+-	Total Size: **6.5 GB (6457750413 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d306462a846e7b818d1a0e0e8ab77db60ccccfd35a285ce2ee8647be0f0f9de`
+-	Image ID: `sha256:81a0d0a688c09412d0fc9d6c668fc54ceb91032a59439189764571f4987fa30a`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -33638,15 +32978,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:30:05 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:30:06 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:30:07 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:30:08 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:31:36 GMT
+# Thu, 11 Nov 2021 02:25:13 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:25:14 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:25:15 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:26:36 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:31:37 GMT
+# Thu, 11 Nov 2021 02:26:37 GMT
 CMD ["jshell"]
 ```
 
@@ -33673,48 +33013,48 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:07:51 GMT  
 		Size: 346.8 KB (346841 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1d9bca52a27503493f0c99b4a99920bf0977ea36e5c98d5640b9974957eaf1c`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1400 bytes)  
+	-	`sha256:83bd413e3a517265afe99693948983f594de2897cc86194a7d8d387b575e82a5`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1424 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87f3555ad46e455b194d91f0a0c93835b1f759bed8eca17a3a0dc657385bd13c`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1415 bytes)  
+	-	`sha256:43648bc0ccab1f3f49e25e4d2e08ad16e43fd15b3b877f2a9659cc2b8735924a`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2a124c261e3810baa7b86d3002f7c9bb0d9b74f151a368c9efdd7dbda0dd0d5`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1429 bytes)  
+	-	`sha256:b37343f091cd0ffd2e8881824fa7eb48840fcaa1924b9df53edc6d5828a44255`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1389 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1d67ffbd95a6b961816519f50fa3d55ae7eb440d88109b8d6784a1093bfe62e2`  
-		Last Modified: Wed, 10 Nov 2021 21:11:11 GMT  
-		Size: 183.6 MB (183629721 bytes)  
+	-	`sha256:5a722237d8a9d82c5a0e0401f0d42603163f666c0dc8dba2f339c5858703d9e7`  
+		Last Modified: Thu, 11 Nov 2021 02:39:38 GMT  
+		Size: 183.9 MB (183948511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a06fd0b5df6b3417d9ff1f2bdf32c8c9ed0d6a0c45b70e6db8fb0a0019e361d7`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1415 bytes)  
+	-	`sha256:f983e129d00f1fc3c9459bca58fe6d4bf0f833ed18f5ccc0c1e4478aea0af48e`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1418 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `openjdk:18-ea-21-jdk-windowsservercore-ltsc2022`
+## `openjdk:18-ea-22-jdk-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull openjdk@sha256:ae714022fbaebf672f0d5718781b37285f6126101122843d24734fcce4a9e769
+$ docker pull openjdk@sha256:fc7df54e750b5c819b1e04005fa166205dbc9fb52fd811c6168e851534087208
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
 	-	windows version 10.0.20348.350; amd64
 
-### `openjdk:18-ea-21-jdk-windowsservercore-ltsc2022` - windows version 10.0.20348.350; amd64
+### `openjdk:18-ea-22-jdk-windowsservercore-ltsc2022` - windows version 10.0.20348.350; amd64
 
 ```console
-$ docker pull openjdk@sha256:e8255df62dff59325ca6e55e1bcc9080692eaefdcdbb1d7deaafb57971ee86de
+$ docker pull openjdk@sha256:9c20d60c7bde738f2c3e57e52aafbaecc57f1a5ec9c4b75dba7c45378b4acfeb
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.4 GB (2369632853 bytes)**  
+-	Total Size: **2.4 GB (2369930838 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c7f00655015db4254b3d0354638c0dbea2256f1b504ac92eb2577f6a5a1884f4`
+-	Image ID: `sha256:a5c6761474f0c566c146885a48d00326c719b7730871258da29aad263b932a4a`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -33731,15 +33071,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:23:41 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:23:42 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:23:43 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:23:44 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:24:32 GMT
+# Thu, 11 Nov 2021 02:22:29 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:22:30 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:22:31 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:23:15 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:24:34 GMT
+# Thu, 11 Nov 2021 02:23:16 GMT
 CMD ["jshell"]
 ```
 
@@ -33766,48 +33106,48 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:03:27 GMT  
 		Size: 549.7 KB (549708 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b698dd11831adf277aae025052bc6eef078afd78744099225fd6ecd561fdcb6f`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1379 bytes)  
+	-	`sha256:47a3965ec2551fcd1a6117196df95c018068b200db9142b813af85f8f05fac3f`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b0900c61346cbdc2e5203cfe88ec50506b93be59c3bd52564a8b95a1e0f5f4d`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1398 bytes)  
+	-	`sha256:157aee527ea6606caee0c3f88322e3dcee4605f52eb98706b7629d2f2d864f50`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:006246c3aa0e0f4bc3f01c03d0e7d48693d0725b25f3e78f3581915d92760caa`  
-		Last Modified: Wed, 10 Nov 2021 21:03:25 GMT  
-		Size: 1.4 KB (1355 bytes)  
+	-	`sha256:53b7b5633a2546c9bab04d431d13513305ffa78a8fd0fbb6871d649054b71248`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05f8dd5277feae03b608b6cc2ff3cd3dc5107d8e8b71c5d8af8412db74134f7b`  
-		Last Modified: Wed, 10 Nov 2021 21:06:46 GMT  
-		Size: 183.9 MB (183851222 bytes)  
+	-	`sha256:458a4ea681f6aaefe0ffff613b2b6902899d6cf784e658b99c5d2aefe9fd101c`  
+		Last Modified: Thu, 11 Nov 2021 02:35:31 GMT  
+		Size: 184.1 MB (184149058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:174ce1c5faf404eee966a95111144858ca8a1cd9b461dc6660bda459e2b91294`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1419 bytes)  
+	-	`sha256:b237936aa73b8bc01a1cd55260a8718087e351e2cf387793361369cb3067930f`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `openjdk:18-ea-21-nanoserver`
+## `openjdk:18-ea-22-nanoserver`
 
 ```console
-$ docker pull openjdk@sha256:2c698eed211dacdfcad8cfcf8bb65180e9feb2e4af011e0da302e5f09294fb74
+$ docker pull openjdk@sha256:6fb352605241063a7689cf99b1bc78fd5efaeab751e3a71c6f7d3012216b7f6a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
 	-	windows version 10.0.17763.2300; amd64
 
-### `openjdk:18-ea-21-nanoserver` - windows version 10.0.17763.2300; amd64
+### `openjdk:18-ea-22-nanoserver` - windows version 10.0.17763.2300; amd64
 
 ```console
-$ docker pull openjdk@sha256:76e7ce8921200c2da74218723265e748efb5b538bbc805d96e5875c35e6c9685
+$ docker pull openjdk@sha256:ec025d27caa59ea3603b6ff8e089dd88c2f7a26a69856dfc62c082c78b3c4969
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **289.7 MB (289705169 bytes)**  
+-	Total Size: **290.0 MB (290017954 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f605ec0f6d8620a8d7837798a5cb287e6f718b34f4aa184e494be9c400f5ee93`
+-	Image ID: `sha256:43881b592fbb5488ef2a1826031065b0507eaec5c09a746850b1813bc23ea083`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["cmd","\/s","\/c"]`
 
@@ -33824,13 +33164,13 @@ USER ContainerAdministrator
 RUN echo Updating PATH: %JAVA_HOME%\bin;%PATH% 	&& setx /M PATH %JAVA_HOME%\bin;%PATH% 	&& echo Complete.
 # Wed, 10 Nov 2021 20:32:07 GMT
 USER ContainerUser
-# Wed, 10 Nov 2021 20:32:08 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:32:23 GMT
-COPY dir:2484c24fc278a2a4f9b1faf3e56bed024398b36a40c94d33298963a00cd29cac in C:\openjdk-18 
-# Wed, 10 Nov 2021 20:32:37 GMT
+# Thu, 11 Nov 2021 02:26:55 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:27:10 GMT
+COPY dir:8d6a03ecb43a50e96e1ea8050215c3463f1cd25f09c6c66b339295cfb108fd47 in C:\openjdk-18 
+# Thu, 11 Nov 2021 02:27:24 GMT
 RUN echo Verifying install ... 	&& echo   javac --version && javac --version 	&& echo   java --version && java --version 	&& echo Complete.
-# Wed, 10 Nov 2021 20:32:37 GMT
+# Thu, 11 Nov 2021 02:27:25 GMT
 CMD ["jshell"]
 ```
 
@@ -33858,44 +33198,44 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:11:33 GMT  
 		Size: 1.1 KB (1138 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b032844458881830eff0be6c730b39b70a8e00d9d48b5614c499b10d0e55a131`  
-		Last Modified: Wed, 10 Nov 2021 21:11:33 GMT  
-		Size: 1.1 KB (1127 bytes)  
+	-	`sha256:a4f70cd085588ca56ede8ce99b00cd84e76e989217138f8d5d545c068b4b03aa`  
+		Last Modified: Thu, 11 Nov 2021 02:39:59 GMT  
+		Size: 1.2 KB (1167 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03cfe5eb122e63822c38ded40d5cef742bc695b3c16c2c099cbfae63d43c6588`  
-		Last Modified: Wed, 10 Nov 2021 21:11:54 GMT  
-		Size: 183.3 MB (183299359 bytes)  
+	-	`sha256:9a789c500a3d522aa9e0f7a275070ae5fda6f2c4a6aa83fda57c1c3f433f19cc`  
+		Last Modified: Thu, 11 Nov 2021 02:40:20 GMT  
+		Size: 183.6 MB (183609790 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88d4615c9ed406caf4fcd84446b3e0dd7e56d63892a56c81965b04d213d8a677`  
-		Last Modified: Wed, 10 Nov 2021 21:11:35 GMT  
-		Size: 3.5 MB (3541799 bytes)  
+	-	`sha256:26200be72d5e7969ea70fcb1e295e3833109ddf22ef6008b07d81e5d5ee8b2db`  
+		Last Modified: Thu, 11 Nov 2021 02:40:03 GMT  
+		Size: 3.5 MB (3544102 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14712278de59cab664f0e49fa0f1871ec5ab10ba4e7b6dbe5945492d496c781e`  
-		Last Modified: Wed, 10 Nov 2021 21:11:34 GMT  
-		Size: 1.2 KB (1166 bytes)  
+	-	`sha256:d2ba4ebf7124214086dba305e9d9525a45618109821d8d9ef384507222eb24ec`  
+		Last Modified: Thu, 11 Nov 2021 02:39:59 GMT  
+		Size: 1.2 KB (1177 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `openjdk:18-ea-21-nanoserver-1809`
+## `openjdk:18-ea-22-nanoserver-1809`
 
 ```console
-$ docker pull openjdk@sha256:2c698eed211dacdfcad8cfcf8bb65180e9feb2e4af011e0da302e5f09294fb74
+$ docker pull openjdk@sha256:6fb352605241063a7689cf99b1bc78fd5efaeab751e3a71c6f7d3012216b7f6a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
 	-	windows version 10.0.17763.2300; amd64
 
-### `openjdk:18-ea-21-nanoserver-1809` - windows version 10.0.17763.2300; amd64
+### `openjdk:18-ea-22-nanoserver-1809` - windows version 10.0.17763.2300; amd64
 
 ```console
-$ docker pull openjdk@sha256:76e7ce8921200c2da74218723265e748efb5b538bbc805d96e5875c35e6c9685
+$ docker pull openjdk@sha256:ec025d27caa59ea3603b6ff8e089dd88c2f7a26a69856dfc62c082c78b3c4969
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **289.7 MB (289705169 bytes)**  
+-	Total Size: **290.0 MB (290017954 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f605ec0f6d8620a8d7837798a5cb287e6f718b34f4aa184e494be9c400f5ee93`
+-	Image ID: `sha256:43881b592fbb5488ef2a1826031065b0507eaec5c09a746850b1813bc23ea083`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["cmd","\/s","\/c"]`
 
@@ -33912,13 +33252,13 @@ USER ContainerAdministrator
 RUN echo Updating PATH: %JAVA_HOME%\bin;%PATH% 	&& setx /M PATH %JAVA_HOME%\bin;%PATH% 	&& echo Complete.
 # Wed, 10 Nov 2021 20:32:07 GMT
 USER ContainerUser
-# Wed, 10 Nov 2021 20:32:08 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:32:23 GMT
-COPY dir:2484c24fc278a2a4f9b1faf3e56bed024398b36a40c94d33298963a00cd29cac in C:\openjdk-18 
-# Wed, 10 Nov 2021 20:32:37 GMT
+# Thu, 11 Nov 2021 02:26:55 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:27:10 GMT
+COPY dir:8d6a03ecb43a50e96e1ea8050215c3463f1cd25f09c6c66b339295cfb108fd47 in C:\openjdk-18 
+# Thu, 11 Nov 2021 02:27:24 GMT
 RUN echo Verifying install ... 	&& echo   javac --version && javac --version 	&& echo   java --version && java --version 	&& echo Complete.
-# Wed, 10 Nov 2021 20:32:37 GMT
+# Thu, 11 Nov 2021 02:27:25 GMT
 CMD ["jshell"]
 ```
 
@@ -33946,45 +33286,44 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:11:33 GMT  
 		Size: 1.1 KB (1138 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b032844458881830eff0be6c730b39b70a8e00d9d48b5614c499b10d0e55a131`  
-		Last Modified: Wed, 10 Nov 2021 21:11:33 GMT  
-		Size: 1.1 KB (1127 bytes)  
+	-	`sha256:a4f70cd085588ca56ede8ce99b00cd84e76e989217138f8d5d545c068b4b03aa`  
+		Last Modified: Thu, 11 Nov 2021 02:39:59 GMT  
+		Size: 1.2 KB (1167 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03cfe5eb122e63822c38ded40d5cef742bc695b3c16c2c099cbfae63d43c6588`  
-		Last Modified: Wed, 10 Nov 2021 21:11:54 GMT  
-		Size: 183.3 MB (183299359 bytes)  
+	-	`sha256:9a789c500a3d522aa9e0f7a275070ae5fda6f2c4a6aa83fda57c1c3f433f19cc`  
+		Last Modified: Thu, 11 Nov 2021 02:40:20 GMT  
+		Size: 183.6 MB (183609790 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88d4615c9ed406caf4fcd84446b3e0dd7e56d63892a56c81965b04d213d8a677`  
-		Last Modified: Wed, 10 Nov 2021 21:11:35 GMT  
-		Size: 3.5 MB (3541799 bytes)  
+	-	`sha256:26200be72d5e7969ea70fcb1e295e3833109ddf22ef6008b07d81e5d5ee8b2db`  
+		Last Modified: Thu, 11 Nov 2021 02:40:03 GMT  
+		Size: 3.5 MB (3544102 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14712278de59cab664f0e49fa0f1871ec5ab10ba4e7b6dbe5945492d496c781e`  
-		Last Modified: Wed, 10 Nov 2021 21:11:34 GMT  
-		Size: 1.2 KB (1166 bytes)  
+	-	`sha256:d2ba4ebf7124214086dba305e9d9525a45618109821d8d9ef384507222eb24ec`  
+		Last Modified: Thu, 11 Nov 2021 02:39:59 GMT  
+		Size: 1.2 KB (1177 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `openjdk:18-ea-21-oracle`
+## `openjdk:18-ea-22-oracle`
 
 ```console
-$ docker pull openjdk@sha256:6454022f8656aaa0fc08cbfcc617134fbb65e9bf91d0a8cb3a5fa9f45c43172e
+$ docker pull openjdk@sha256:1a33f6f5cc8af8940b2b15e5513eed4a3563a657794c7b42d3be9ab9dd0d5203
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 2
+-	Platforms: 1
 	-	linux; amd64
-	-	linux; arm64 variant v8
 
-### `openjdk:18-ea-21-oracle` - linux; amd64
+### `openjdk:18-ea-22-oracle` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:817b9de5fd1ed622c9080f216dd6b3040f3545be2c6026fe5d413628eb87edca
+$ docker pull openjdk@sha256:d91c50b89de0c4a4b5d4e9b528995006453b9867cb0dae41f100f89e851c9a52
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **243.6 MB (243585087 bytes)**  
+-	Total Size: **243.7 MB (243728237 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f55f011574655a28ccd27287ab45d17065ae9bbc0c4101281ffa665c385c2315`
+-	Image ID: `sha256:672ef7efeba8fe2ad1d923268b6836d1ecbff55754c90ed0fbfe47b4c214a6f8`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -34000,11 +33339,11 @@ ENV JAVA_HOME=/usr/java/openjdk-18
 ENV PATH=/usr/java/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 03 Nov 2021 22:37:07 GMT
 ENV LANG=C.UTF-8
-# Wed, 03 Nov 2021 22:37:07 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 03 Nov 2021 22:37:18 GMT
-RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 03 Nov 2021 22:37:19 GMT
+# Thu, 11 Nov 2021 02:27:47 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:27:58 GMT
+RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:27:59 GMT
 CMD ["jshell"]
 ```
 
@@ -34017,81 +33356,32 @@ CMD ["jshell"]
 		Last Modified: Wed, 03 Nov 2021 22:43:12 GMT  
 		Size: 13.5 MB (13491241 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9881991c1db3ee3e0c6ae7c15b8a4429c433a7655ffe01202511ebf51b6a2ec2`  
-		Last Modified: Wed, 03 Nov 2021 22:43:24 GMT  
-		Size: 188.1 MB (188125731 bytes)  
+	-	`sha256:9a2f4b2e287c44dde9d335364634f51085f3bc93889ea6d9112410318239f8b6`  
+		Last Modified: Thu, 11 Nov 2021 02:34:37 GMT  
+		Size: 188.3 MB (188268881 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `openjdk:18-ea-21-oracle` - linux; arm64 variant v8
+## `openjdk:18-ea-22-oraclelinux7`
 
 ```console
-$ docker pull openjdk@sha256:69f8c25e377ba8ec010ce8caa460146f220662c291280ed9af9229d07256e972
-```
-
--	Docker Version: 20.10.7
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **243.2 MB (243202184 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c1c288c27730dd8709627c4220fa83c9513cb0d2bfd26b73d92da997676a3f3d`
--	Default Command: `["jshell"]`
-
-```dockerfile
-# Wed, 03 Nov 2021 22:44:10 GMT
-ADD file:42d3c96053f453ca6f7155adc565cd822cd2663bd2a3862ccaabb9886c191116 in / 
-# Wed, 03 Nov 2021 22:44:11 GMT
-CMD ["/bin/bash"]
-# Wed, 03 Nov 2021 23:01:19 GMT
-RUN set -eux; 	microdnf install 		gzip 		tar 				binutils 		freetype fontconfig 	; 	microdnf clean all
-# Wed, 03 Nov 2021 23:01:20 GMT
-ENV JAVA_HOME=/usr/java/openjdk-18
-# Wed, 03 Nov 2021 23:01:21 GMT
-ENV PATH=/usr/java/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 03 Nov 2021 23:01:22 GMT
-ENV LANG=C.UTF-8
-# Wed, 03 Nov 2021 23:01:23 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 03 Nov 2021 23:01:35 GMT
-RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 03 Nov 2021 23:01:36 GMT
-CMD ["jshell"]
-```
-
--	Layers:
-	-	`sha256:f6fe8bd1b591af20f7f1bf6cabe92846a2b5f1ba33ca5fd165cf03624558cd5c`  
-		Last Modified: Wed, 03 Nov 2021 22:45:11 GMT  
-		Size: 41.9 MB (41879080 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5f82d768d0f333fffcb86fe10bab796e393363d92953d26c9435077acb1598e`  
-		Last Modified: Wed, 03 Nov 2021 23:12:36 GMT  
-		Size: 14.3 MB (14274012 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f12dafb56a01afc697264735df1f9eee940086c846bc9b2d88981f202d362920`  
-		Last Modified: Wed, 03 Nov 2021 23:12:50 GMT  
-		Size: 187.0 MB (187049092 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-## `openjdk:18-ea-21-oraclelinux7`
-
-```console
-$ docker pull openjdk@sha256:ed3ba98351d2c4bff1800623b6038745140af2e79feac3ae6002caeb742449b6
+$ docker pull openjdk@sha256:28857b88f79eb55e5564e06397c66e9f2943aba99a141857198f9f0f8d7de468
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 2
+-	Platforms: 1
 	-	linux; amd64
-	-	linux; arm64 variant v8
 
-### `openjdk:18-ea-21-oraclelinux7` - linux; amd64
+### `openjdk:18-ea-22-oraclelinux7` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:ec196e338fa8bbd0d9287cc432100dfc2310577c6e39bb691e5c4aad00d6b521
+$ docker pull openjdk@sha256:ce4c326af7ac5a60c8ca40f44ae6ebb71a43eb165afe0d18716114faa2ae9241
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.9 MB (251855575 bytes)**  
+-	Total Size: **252.0 MB (251995533 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b3e91ba8ba9cb56e993c2ac26ea12609f055911aee8f7860b56f49f35da22f67`
+-	Image ID: `sha256:95bb93f8d111d78b4b3aafe543ea16de5c32e350d9517726baf0852b2f6f63c3`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -34107,11 +33397,11 @@ ENV JAVA_HOME=/usr/java/openjdk-18
 ENV PATH=/usr/java/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Thu, 28 Oct 2021 01:45:25 GMT
 ENV LANG=en_US.UTF-8
-# Mon, 01 Nov 2021 18:49:22 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 18:49:33 GMT
-RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 18:49:33 GMT
+# Thu, 11 Nov 2021 02:28:04 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:28:15 GMT
+RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:28:16 GMT
 CMD ["jshell"]
 ```
 
@@ -34124,81 +33414,32 @@ CMD ["jshell"]
 		Last Modified: Thu, 28 Oct 2021 01:53:12 GMT  
 		Size: 15.4 MB (15399150 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:745ba23332f5419699490030c7a251ae318678ad9f335be24081ace19121bf47`  
-		Last Modified: Mon, 01 Nov 2021 18:57:03 GMT  
-		Size: 188.1 MB (188127463 bytes)  
+	-	`sha256:60632eff72aeb95abb140b5e33b41e9e4d1f089f71271807f25b3f35c9257b0b`  
+		Last Modified: Thu, 11 Nov 2021 02:35:25 GMT  
+		Size: 188.3 MB (188267421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `openjdk:18-ea-21-oraclelinux7` - linux; arm64 variant v8
+## `openjdk:18-ea-22-oraclelinux8`
 
 ```console
-$ docker pull openjdk@sha256:c23dfe4629f2e38e39a5c8dcbc2593c16561597e396e34a5bc33eb2c1bdb2400
-```
-
--	Docker Version: 20.10.7
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **252.4 MB (252408546 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cf3575914a6084f3ec8f9deccd8313f670512b7287aeeeffb70f27eec26d21ff`
--	Default Command: `["jshell"]`
-
-```dockerfile
-# Thu, 28 Oct 2021 01:44:12 GMT
-ADD file:f997c704e003e7bef1e40d457d005aa07a60cb4c37255cc2711119deb3e6df7d in / 
-# Thu, 28 Oct 2021 01:44:13 GMT
-CMD ["/bin/bash"]
-# Thu, 28 Oct 2021 02:16:09 GMT
-RUN set -eux; 	yum install -y 		gzip 		tar 				binutils 		freetype fontconfig 	; 	rm -rf /var/cache/yum
-# Thu, 28 Oct 2021 02:16:10 GMT
-ENV JAVA_HOME=/usr/java/openjdk-18
-# Thu, 28 Oct 2021 02:16:11 GMT
-ENV PATH=/usr/java/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 28 Oct 2021 02:16:12 GMT
-ENV LANG=en_US.UTF-8
-# Mon, 01 Nov 2021 19:18:05 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 19:18:27 GMT
-RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 19:18:28 GMT
-CMD ["jshell"]
-```
-
--	Layers:
-	-	`sha256:9e1221f69ca9b4fd1daae21b9a20e7225f6ca7d0e34e9e998bc6600de1a3836a`  
-		Last Modified: Thu, 28 Oct 2021 01:45:43 GMT  
-		Size: 48.9 MB (48905370 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d0b5770e043e6b3a738c83528c0b9c0c9be1c26e18eea50e4a5c270c853ccb2e`  
-		Last Modified: Thu, 28 Oct 2021 02:29:48 GMT  
-		Size: 16.5 MB (16454087 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:76b8892b2b37990a15a4b760b7f02166f96e66a8800096349cd93580a87f5779`  
-		Last Modified: Mon, 01 Nov 2021 19:30:31 GMT  
-		Size: 187.0 MB (187049089 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-## `openjdk:18-ea-21-oraclelinux8`
-
-```console
-$ docker pull openjdk@sha256:6454022f8656aaa0fc08cbfcc617134fbb65e9bf91d0a8cb3a5fa9f45c43172e
+$ docker pull openjdk@sha256:1a33f6f5cc8af8940b2b15e5513eed4a3563a657794c7b42d3be9ab9dd0d5203
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 2
+-	Platforms: 1
 	-	linux; amd64
-	-	linux; arm64 variant v8
 
-### `openjdk:18-ea-21-oraclelinux8` - linux; amd64
+### `openjdk:18-ea-22-oraclelinux8` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:817b9de5fd1ed622c9080f216dd6b3040f3545be2c6026fe5d413628eb87edca
+$ docker pull openjdk@sha256:d91c50b89de0c4a4b5d4e9b528995006453b9867cb0dae41f100f89e851c9a52
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **243.6 MB (243585087 bytes)**  
+-	Total Size: **243.7 MB (243728237 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f55f011574655a28ccd27287ab45d17065ae9bbc0c4101281ffa665c385c2315`
+-	Image ID: `sha256:672ef7efeba8fe2ad1d923268b6836d1ecbff55754c90ed0fbfe47b4c214a6f8`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -34214,11 +33455,11 @@ ENV JAVA_HOME=/usr/java/openjdk-18
 ENV PATH=/usr/java/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 03 Nov 2021 22:37:07 GMT
 ENV LANG=C.UTF-8
-# Wed, 03 Nov 2021 22:37:07 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 03 Nov 2021 22:37:18 GMT
-RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 03 Nov 2021 22:37:19 GMT
+# Thu, 11 Nov 2021 02:27:47 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:27:58 GMT
+RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:27:59 GMT
 CMD ["jshell"]
 ```
 
@@ -34231,81 +33472,32 @@ CMD ["jshell"]
 		Last Modified: Wed, 03 Nov 2021 22:43:12 GMT  
 		Size: 13.5 MB (13491241 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9881991c1db3ee3e0c6ae7c15b8a4429c433a7655ffe01202511ebf51b6a2ec2`  
-		Last Modified: Wed, 03 Nov 2021 22:43:24 GMT  
-		Size: 188.1 MB (188125731 bytes)  
+	-	`sha256:9a2f4b2e287c44dde9d335364634f51085f3bc93889ea6d9112410318239f8b6`  
+		Last Modified: Thu, 11 Nov 2021 02:34:37 GMT  
+		Size: 188.3 MB (188268881 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `openjdk:18-ea-21-oraclelinux8` - linux; arm64 variant v8
+## `openjdk:18-ea-22-slim`
 
 ```console
-$ docker pull openjdk@sha256:69f8c25e377ba8ec010ce8caa460146f220662c291280ed9af9229d07256e972
-```
-
--	Docker Version: 20.10.7
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **243.2 MB (243202184 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c1c288c27730dd8709627c4220fa83c9513cb0d2bfd26b73d92da997676a3f3d`
--	Default Command: `["jshell"]`
-
-```dockerfile
-# Wed, 03 Nov 2021 22:44:10 GMT
-ADD file:42d3c96053f453ca6f7155adc565cd822cd2663bd2a3862ccaabb9886c191116 in / 
-# Wed, 03 Nov 2021 22:44:11 GMT
-CMD ["/bin/bash"]
-# Wed, 03 Nov 2021 23:01:19 GMT
-RUN set -eux; 	microdnf install 		gzip 		tar 				binutils 		freetype fontconfig 	; 	microdnf clean all
-# Wed, 03 Nov 2021 23:01:20 GMT
-ENV JAVA_HOME=/usr/java/openjdk-18
-# Wed, 03 Nov 2021 23:01:21 GMT
-ENV PATH=/usr/java/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 03 Nov 2021 23:01:22 GMT
-ENV LANG=C.UTF-8
-# Wed, 03 Nov 2021 23:01:23 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 03 Nov 2021 23:01:35 GMT
-RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 03 Nov 2021 23:01:36 GMT
-CMD ["jshell"]
-```
-
--	Layers:
-	-	`sha256:f6fe8bd1b591af20f7f1bf6cabe92846a2b5f1ba33ca5fd165cf03624558cd5c`  
-		Last Modified: Wed, 03 Nov 2021 22:45:11 GMT  
-		Size: 41.9 MB (41879080 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5f82d768d0f333fffcb86fe10bab796e393363d92953d26c9435077acb1598e`  
-		Last Modified: Wed, 03 Nov 2021 23:12:36 GMT  
-		Size: 14.3 MB (14274012 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f12dafb56a01afc697264735df1f9eee940086c846bc9b2d88981f202d362920`  
-		Last Modified: Wed, 03 Nov 2021 23:12:50 GMT  
-		Size: 187.0 MB (187049092 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-## `openjdk:18-ea-21-slim`
-
-```console
-$ docker pull openjdk@sha256:9f9db4e7b8cf008882c23d60496ffbf92f2def52e97bb0967f5abb8cf971f9bc
+$ docker pull openjdk@sha256:513ab1422512c33c87ab6e49f38abcd4f962cde240ee90684af3f18a314faece
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 2
+-	Platforms: 1
 	-	linux; amd64
-	-	linux; arm64 variant v8
 
-### `openjdk:18-ea-21-slim` - linux; amd64
+### `openjdk:18-ea-22-slim` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:6fd2bf246d0585b450903c03cae374f975c7684cb4d52554a194ec4e88b33428
+$ docker pull openjdk@sha256:707dedb1245a645e5859bb79462c53cef7846ba447731b4d5640be0fc2b3f125
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **221.4 MB (221443148 bytes)**  
+-	Total Size: **221.6 MB (221583947 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b20796d1637bf5538d022dcb30a1d8c3f820c33258e7b524e180c7ba48599d75`
+-	Image ID: `sha256:d03fc506dd2f5806ae0628d561dc7d0353d9e5df598b9e7f90286567cbd7bac9`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -34321,11 +33513,11 @@ ENV JAVA_HOME=/usr/local/openjdk-18
 ENV PATH=/usr/local/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 12 Oct 2021 16:27:47 GMT
 ENV LANG=C.UTF-8
-# Mon, 01 Nov 2021 18:49:53 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 18:50:10 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 18:50:11 GMT
+# Thu, 11 Nov 2021 02:28:35 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:28:50 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:28:50 GMT
 CMD ["jshell"]
 ```
 
@@ -34338,81 +33530,32 @@ CMD ["jshell"]
 		Last Modified: Tue, 12 Oct 2021 16:42:59 GMT  
 		Size: 1.6 MB (1582043 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:efcc91b087b99e6e057cfe49d4fbbf2e1b3039f8876e7837244f8a4200d36aa9`  
-		Last Modified: Mon, 01 Nov 2021 18:58:09 GMT  
-		Size: 188.5 MB (188503794 bytes)  
+	-	`sha256:c94532e4ea740fa348bd5588336eb055aa252dca675396529409e0f2e392c981`  
+		Last Modified: Thu, 11 Nov 2021 02:36:33 GMT  
+		Size: 188.6 MB (188644593 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `openjdk:18-ea-21-slim` - linux; arm64 variant v8
+## `openjdk:18-ea-22-slim-bullseye`
 
 ```console
-$ docker pull openjdk@sha256:c051707a9ecca3b28e5a34934cc43b3de078a7ccd6833f57519b290f6d43ed17
-```
-
--	Docker Version: 20.10.7
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **218.8 MB (218818738 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8596b266405f572e3ad73c1ff3ebdd3d5855c577879c7c1888d4f1d6188f2749`
--	Default Command: `["jshell"]`
-
-```dockerfile
-# Tue, 12 Oct 2021 01:41:18 GMT
-ADD file:d84144ad575672cd6cc8a00c8e5a88ab0545348f040fc249ea5fcf8193b2bce6 in / 
-# Tue, 12 Oct 2021 01:41:18 GMT
-CMD ["bash"]
-# Wed, 13 Oct 2021 06:00:52 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 13 Oct 2021 06:00:53 GMT
-ENV JAVA_HOME=/usr/local/openjdk-18
-# Wed, 13 Oct 2021 06:00:54 GMT
-ENV PATH=/usr/local/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 13 Oct 2021 06:00:55 GMT
-ENV LANG=C.UTF-8
-# Mon, 01 Nov 2021 19:18:56 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 19:19:12 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 19:19:12 GMT
-CMD ["jshell"]
-```
-
--	Layers:
-	-	`sha256:a9eb63951c1c2ee8efcc12b696928fee3741a2d4eae76f2da3e161a5d90548bf`  
-		Last Modified: Tue, 12 Oct 2021 01:48:13 GMT  
-		Size: 30.0 MB (30043906 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8552e0d309d6deaf17b87f395ca03a5bb0b4c14128cd49208ab21c34bf39e933`  
-		Last Modified: Wed, 13 Oct 2021 06:25:32 GMT  
-		Size: 1.6 MB (1565908 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f92c1d205a06dd52516eff18a8b8af706b616258c5ee9e021cb0f4bad0db3203`  
-		Last Modified: Mon, 01 Nov 2021 19:31:52 GMT  
-		Size: 187.2 MB (187208924 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-## `openjdk:18-ea-21-slim-bullseye`
-
-```console
-$ docker pull openjdk@sha256:9f9db4e7b8cf008882c23d60496ffbf92f2def52e97bb0967f5abb8cf971f9bc
+$ docker pull openjdk@sha256:513ab1422512c33c87ab6e49f38abcd4f962cde240ee90684af3f18a314faece
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 2
+-	Platforms: 1
 	-	linux; amd64
-	-	linux; arm64 variant v8
 
-### `openjdk:18-ea-21-slim-bullseye` - linux; amd64
+### `openjdk:18-ea-22-slim-bullseye` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:6fd2bf246d0585b450903c03cae374f975c7684cb4d52554a194ec4e88b33428
+$ docker pull openjdk@sha256:707dedb1245a645e5859bb79462c53cef7846ba447731b4d5640be0fc2b3f125
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **221.4 MB (221443148 bytes)**  
+-	Total Size: **221.6 MB (221583947 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b20796d1637bf5538d022dcb30a1d8c3f820c33258e7b524e180c7ba48599d75`
+-	Image ID: `sha256:d03fc506dd2f5806ae0628d561dc7d0353d9e5df598b9e7f90286567cbd7bac9`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -34428,11 +33571,11 @@ ENV JAVA_HOME=/usr/local/openjdk-18
 ENV PATH=/usr/local/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 12 Oct 2021 16:27:47 GMT
 ENV LANG=C.UTF-8
-# Mon, 01 Nov 2021 18:49:53 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 18:50:10 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 18:50:11 GMT
+# Thu, 11 Nov 2021 02:28:35 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:28:50 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:28:50 GMT
 CMD ["jshell"]
 ```
 
@@ -34445,81 +33588,32 @@ CMD ["jshell"]
 		Last Modified: Tue, 12 Oct 2021 16:42:59 GMT  
 		Size: 1.6 MB (1582043 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:efcc91b087b99e6e057cfe49d4fbbf2e1b3039f8876e7837244f8a4200d36aa9`  
-		Last Modified: Mon, 01 Nov 2021 18:58:09 GMT  
-		Size: 188.5 MB (188503794 bytes)  
+	-	`sha256:c94532e4ea740fa348bd5588336eb055aa252dca675396529409e0f2e392c981`  
+		Last Modified: Thu, 11 Nov 2021 02:36:33 GMT  
+		Size: 188.6 MB (188644593 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `openjdk:18-ea-21-slim-bullseye` - linux; arm64 variant v8
+## `openjdk:18-ea-22-slim-buster`
 
 ```console
-$ docker pull openjdk@sha256:c051707a9ecca3b28e5a34934cc43b3de078a7ccd6833f57519b290f6d43ed17
-```
-
--	Docker Version: 20.10.7
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **218.8 MB (218818738 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8596b266405f572e3ad73c1ff3ebdd3d5855c577879c7c1888d4f1d6188f2749`
--	Default Command: `["jshell"]`
-
-```dockerfile
-# Tue, 12 Oct 2021 01:41:18 GMT
-ADD file:d84144ad575672cd6cc8a00c8e5a88ab0545348f040fc249ea5fcf8193b2bce6 in / 
-# Tue, 12 Oct 2021 01:41:18 GMT
-CMD ["bash"]
-# Wed, 13 Oct 2021 06:00:52 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 13 Oct 2021 06:00:53 GMT
-ENV JAVA_HOME=/usr/local/openjdk-18
-# Wed, 13 Oct 2021 06:00:54 GMT
-ENV PATH=/usr/local/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 13 Oct 2021 06:00:55 GMT
-ENV LANG=C.UTF-8
-# Mon, 01 Nov 2021 19:18:56 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 19:19:12 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 19:19:12 GMT
-CMD ["jshell"]
-```
-
--	Layers:
-	-	`sha256:a9eb63951c1c2ee8efcc12b696928fee3741a2d4eae76f2da3e161a5d90548bf`  
-		Last Modified: Tue, 12 Oct 2021 01:48:13 GMT  
-		Size: 30.0 MB (30043906 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8552e0d309d6deaf17b87f395ca03a5bb0b4c14128cd49208ab21c34bf39e933`  
-		Last Modified: Wed, 13 Oct 2021 06:25:32 GMT  
-		Size: 1.6 MB (1565908 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f92c1d205a06dd52516eff18a8b8af706b616258c5ee9e021cb0f4bad0db3203`  
-		Last Modified: Mon, 01 Nov 2021 19:31:52 GMT  
-		Size: 187.2 MB (187208924 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-## `openjdk:18-ea-21-slim-buster`
-
-```console
-$ docker pull openjdk@sha256:7c76b028832c996c949f82f1374113176b1be0b49713681c4d65aded3275000c
+$ docker pull openjdk@sha256:97108cb589c9bae4c454affc8fcc937acf2227259f869b6ca14bc21bccb54224
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 2
+-	Platforms: 1
 	-	linux; amd64
-	-	linux; arm64 variant v8
 
-### `openjdk:18-ea-21-slim-buster` - linux; amd64
+### `openjdk:18-ea-22-slim-buster` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:5907363d51f46b81c780349dde095c0dc0ed3dad83474f66bc5f99ecda3aeb4c
+$ docker pull openjdk@sha256:ac0a7e52bccf05883a56614449482cb73614f5bc5b016e42874090760fb488b2
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **218.9 MB (218912828 bytes)**  
+-	Total Size: **219.1 MB (219058803 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:10653c2b68942341ef0ccbcdf71eef5d708ff40561371aef012f08d50bd62fdb`
+-	Image ID: `sha256:fe6ddbc7fa65084af20f557a980a70d6e8b197d4a7f95c5d30ba38f1daecb125`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -34535,11 +33629,11 @@ ENV JAVA_HOME=/usr/local/openjdk-18
 ENV PATH=/usr/local/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 12 Oct 2021 16:28:45 GMT
 ENV LANG=C.UTF-8
-# Mon, 01 Nov 2021 18:50:33 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 18:50:49 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 18:50:50 GMT
+# Thu, 11 Nov 2021 02:29:11 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:29:25 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:29:26 GMT
 CMD ["jshell"]
 ```
 
@@ -34552,63 +33646,15 @@ CMD ["jshell"]
 		Last Modified: Tue, 12 Oct 2021 16:44:29 GMT  
 		Size: 3.3 MB (3269598 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:669b832f4a79a98af0ed0f1f024cd2229b096d2e30b88cb3ff72c272ff08ffa2`  
-		Last Modified: Mon, 01 Nov 2021 18:59:33 GMT  
-		Size: 188.5 MB (188503720 bytes)  
+	-	`sha256:f05325d794d04afdfac5990f67bc56f76fa5288b25dfedb00d760c9b67910fbb`  
+		Last Modified: Thu, 11 Nov 2021 02:37:56 GMT  
+		Size: 188.6 MB (188649695 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `openjdk:18-ea-21-slim-buster` - linux; arm64 variant v8
+## `openjdk:18-ea-22-windowsservercore`
 
 ```console
-$ docker pull openjdk@sha256:f6b44ee8328b312f93ad380ae8f9345e57e160643879c9461a6c4815374b45ad
-```
-
--	Docker Version: 20.10.7
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **216.2 MB (216241190 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1e89cee8d8eaacb02429da17a5deda7818b0d3dc4776b4a1dc2d0cfb75ca8811`
--	Default Command: `["jshell"]`
-
-```dockerfile
-# Tue, 12 Oct 2021 01:41:42 GMT
-ADD file:f0d53027a7ba594477674127971aa477af3a2bc6bcddef6c0aa174953a5f2db0 in / 
-# Tue, 12 Oct 2021 01:41:42 GMT
-CMD ["bash"]
-# Wed, 13 Oct 2021 06:01:57 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 13 Oct 2021 06:01:58 GMT
-ENV JAVA_HOME=/usr/local/openjdk-18
-# Wed, 13 Oct 2021 06:01:59 GMT
-ENV PATH=/usr/local/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 13 Oct 2021 06:02:00 GMT
-ENV LANG=C.UTF-8
-# Mon, 01 Nov 2021 19:19:44 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 19:20:02 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 19:20:02 GMT
-CMD ["jshell"]
-```
-
--	Layers:
-	-	`sha256:02b45931a436a68cadb742684148ed6aacbbf9aa21447b467c11bac97f92eb46`  
-		Last Modified: Tue, 12 Oct 2021 01:49:07 GMT  
-		Size: 25.9 MB (25908479 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d42a628bf864e5fbc07330c3cb3cbd4f73d7b9f624a52fbb7162c07185b972a4`  
-		Last Modified: Wed, 13 Oct 2021 06:27:07 GMT  
-		Size: 3.1 MB (3118848 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9937d34cda44443b8610d52daa32dffc17d4227ad7eccde7a811d71f80114a65`  
-		Last Modified: Mon, 01 Nov 2021 19:33:33 GMT  
-		Size: 187.2 MB (187213863 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-## `openjdk:18-ea-21-windowsservercore`
-
-```console
-$ docker pull openjdk@sha256:a991c6b5666e0d0edb90abea94e1ad76b3803a3b2f91841aed6ceae81380a206
+$ docker pull openjdk@sha256:916ceba5742a7ddd0fe8b131eb8ac2f81d5f4124e3262c11dc4e7d309e484f5c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -34617,17 +33663,17 @@ $ docker pull openjdk@sha256:a991c6b5666e0d0edb90abea94e1ad76b3803a3b2f91841aed6
 	-	windows version 10.0.17763.2300; amd64
 	-	windows version 10.0.14393.4770; amd64
 
-### `openjdk:18-ea-21-windowsservercore` - windows version 10.0.20348.350; amd64
+### `openjdk:18-ea-22-windowsservercore` - windows version 10.0.20348.350; amd64
 
 ```console
-$ docker pull openjdk@sha256:e8255df62dff59325ca6e55e1bcc9080692eaefdcdbb1d7deaafb57971ee86de
+$ docker pull openjdk@sha256:9c20d60c7bde738f2c3e57e52aafbaecc57f1a5ec9c4b75dba7c45378b4acfeb
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.4 GB (2369632853 bytes)**  
+-	Total Size: **2.4 GB (2369930838 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c7f00655015db4254b3d0354638c0dbea2256f1b504ac92eb2577f6a5a1884f4`
+-	Image ID: `sha256:a5c6761474f0c566c146885a48d00326c719b7730871258da29aad263b932a4a`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -34644,15 +33690,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:23:41 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:23:42 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:23:43 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:23:44 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:24:32 GMT
+# Thu, 11 Nov 2021 02:22:29 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:22:30 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:22:31 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:23:15 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:24:34 GMT
+# Thu, 11 Nov 2021 02:23:16 GMT
 CMD ["jshell"]
 ```
 
@@ -34679,38 +33725,38 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:03:27 GMT  
 		Size: 549.7 KB (549708 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b698dd11831adf277aae025052bc6eef078afd78744099225fd6ecd561fdcb6f`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1379 bytes)  
+	-	`sha256:47a3965ec2551fcd1a6117196df95c018068b200db9142b813af85f8f05fac3f`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b0900c61346cbdc2e5203cfe88ec50506b93be59c3bd52564a8b95a1e0f5f4d`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1398 bytes)  
+	-	`sha256:157aee527ea6606caee0c3f88322e3dcee4605f52eb98706b7629d2f2d864f50`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:006246c3aa0e0f4bc3f01c03d0e7d48693d0725b25f3e78f3581915d92760caa`  
-		Last Modified: Wed, 10 Nov 2021 21:03:25 GMT  
-		Size: 1.4 KB (1355 bytes)  
+	-	`sha256:53b7b5633a2546c9bab04d431d13513305ffa78a8fd0fbb6871d649054b71248`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05f8dd5277feae03b608b6cc2ff3cd3dc5107d8e8b71c5d8af8412db74134f7b`  
-		Last Modified: Wed, 10 Nov 2021 21:06:46 GMT  
-		Size: 183.9 MB (183851222 bytes)  
+	-	`sha256:458a4ea681f6aaefe0ffff613b2b6902899d6cf784e658b99c5d2aefe9fd101c`  
+		Last Modified: Thu, 11 Nov 2021 02:35:31 GMT  
+		Size: 184.1 MB (184149058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:174ce1c5faf404eee966a95111144858ca8a1cd9b461dc6660bda459e2b91294`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1419 bytes)  
+	-	`sha256:b237936aa73b8bc01a1cd55260a8718087e351e2cf387793361369cb3067930f`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `openjdk:18-ea-21-windowsservercore` - windows version 10.0.17763.2300; amd64
+### `openjdk:18-ea-22-windowsservercore` - windows version 10.0.17763.2300; amd64
 
 ```console
-$ docker pull openjdk@sha256:2844a4f5ef91b81e8639e3c77c53eb720cb1a92d7615cb49e474db929c7f0e4d
+$ docker pull openjdk@sha256:8e32cdb2628a6f1f06929a6f3ce57025716a05db9885a170e8d4acb24002f91d
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 GB (2890432121 bytes)**  
+-	Total Size: **2.9 GB (2890756401 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:edb6fdab0d77d354269b0c787da93627f788070ff04e27610bf4d74ac6947dbb`
+-	Image ID: `sha256:50d8c70546f0046f36a731848b58b0bbf9e64784e0a12ad91de1219f225d97d4`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -34727,15 +33773,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:26:31 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:26:31 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:26:32 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:26:33 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:28:03 GMT
+# Thu, 11 Nov 2021 02:23:31 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:23:32 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:23:33 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:24:52 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:28:04 GMT
+# Thu, 11 Nov 2021 02:24:53 GMT
 CMD ["jshell"]
 ```
 
@@ -34762,38 +33808,38 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:07:09 GMT  
 		Size: 319.7 KB (319676 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f27f6a08e6bde711bb8374842ac82c0cad5fa223e6215af6895d7b1ae20ab601`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1435 bytes)  
+	-	`sha256:e82aaf27003bf2b62a2cc2dbd9cb4ff9a112f8ef1cf0240f81607382e7cd6138`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb17e13d4cdd0b960ba531f11242bb58c8a359c38dbd6bb4bdd03853994bc2ce`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1441 bytes)  
+	-	`sha256:98f36effb4b3b001319833edf8fc4e1a9b6008500dafad80385b5a4520aa3c29`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c847b4d31b558449e54882e692193c6e77fd877cb8d037083d8898f0a3e4efe6`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
+	-	`sha256:c64c2dd6bbf7811caa7ae295e72178094f00f1058f9918636ef7245bd24cc578`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1430 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:cdfbdd5d3b9376889190109d5cc7a4cf2377a4946e1ccc5535bd87d1cac3ca5d`  
+		Last Modified: Thu, 11 Nov 2021 02:36:10 GMT  
+		Size: 183.9 MB (183948230 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4465946c6c9661cbaf098a919fdf0be953f0cf789394679363d052795feb4f30`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
 		Size: 1.4 KB (1420 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95a35ec7cf69a61548328a852bd3c946f51685d419a4c79f87802db51db08c50`  
-		Last Modified: Wed, 10 Nov 2021 21:07:26 GMT  
-		Size: 183.6 MB (183623942 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5753877e7a39a9e13e30aa822049b0a084cda5de4a40cd5f6ace47ac2fc9eb10`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1416 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `openjdk:18-ea-21-windowsservercore` - windows version 10.0.14393.4770; amd64
+### `openjdk:18-ea-22-windowsservercore` - windows version 10.0.14393.4770; amd64
 
 ```console
-$ docker pull openjdk@sha256:393e2252dd54db1eae006103f025518c7a5ad43752461ed3d8ee1de90f0395ae
+$ docker pull openjdk@sha256:1fb6cb4679450a052002f19a809879940b24f5a42313a449b3abac847b5716b8
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.5 GB (6457431629 bytes)**  
+-	Total Size: **6.5 GB (6457750413 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d306462a846e7b818d1a0e0e8ab77db60ccccfd35a285ce2ee8647be0f0f9de`
+-	Image ID: `sha256:81a0d0a688c09412d0fc9d6c668fc54ceb91032a59439189764571f4987fa30a`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -34810,15 +33856,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:30:05 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:30:06 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:30:07 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:30:08 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:31:36 GMT
+# Thu, 11 Nov 2021 02:25:13 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:25:14 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:25:15 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:26:36 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:31:37 GMT
+# Thu, 11 Nov 2021 02:26:37 GMT
 CMD ["jshell"]
 ```
 
@@ -34845,48 +33891,48 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:07:51 GMT  
 		Size: 346.8 KB (346841 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1d9bca52a27503493f0c99b4a99920bf0977ea36e5c98d5640b9974957eaf1c`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1400 bytes)  
+	-	`sha256:83bd413e3a517265afe99693948983f594de2897cc86194a7d8d387b575e82a5`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1424 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87f3555ad46e455b194d91f0a0c93835b1f759bed8eca17a3a0dc657385bd13c`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1415 bytes)  
+	-	`sha256:43648bc0ccab1f3f49e25e4d2e08ad16e43fd15b3b877f2a9659cc2b8735924a`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2a124c261e3810baa7b86d3002f7c9bb0d9b74f151a368c9efdd7dbda0dd0d5`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1429 bytes)  
+	-	`sha256:b37343f091cd0ffd2e8881824fa7eb48840fcaa1924b9df53edc6d5828a44255`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1389 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1d67ffbd95a6b961816519f50fa3d55ae7eb440d88109b8d6784a1093bfe62e2`  
-		Last Modified: Wed, 10 Nov 2021 21:11:11 GMT  
-		Size: 183.6 MB (183629721 bytes)  
+	-	`sha256:5a722237d8a9d82c5a0e0401f0d42603163f666c0dc8dba2f339c5858703d9e7`  
+		Last Modified: Thu, 11 Nov 2021 02:39:38 GMT  
+		Size: 183.9 MB (183948511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a06fd0b5df6b3417d9ff1f2bdf32c8c9ed0d6a0c45b70e6db8fb0a0019e361d7`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1415 bytes)  
+	-	`sha256:f983e129d00f1fc3c9459bca58fe6d4bf0f833ed18f5ccc0c1e4478aea0af48e`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1418 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `openjdk:18-ea-21-windowsservercore-1809`
+## `openjdk:18-ea-22-windowsservercore-1809`
 
 ```console
-$ docker pull openjdk@sha256:e999c59a44c977dcb0c739cb733653de8ee93db07518187bcdfcc6d658d5f11e
+$ docker pull openjdk@sha256:a116b92ff8f5c5e37efe7bb82b121c54151e7b7d9e7e6fbf77bd6f2421ceca44
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
 	-	windows version 10.0.17763.2300; amd64
 
-### `openjdk:18-ea-21-windowsservercore-1809` - windows version 10.0.17763.2300; amd64
+### `openjdk:18-ea-22-windowsservercore-1809` - windows version 10.0.17763.2300; amd64
 
 ```console
-$ docker pull openjdk@sha256:2844a4f5ef91b81e8639e3c77c53eb720cb1a92d7615cb49e474db929c7f0e4d
+$ docker pull openjdk@sha256:8e32cdb2628a6f1f06929a6f3ce57025716a05db9885a170e8d4acb24002f91d
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 GB (2890432121 bytes)**  
+-	Total Size: **2.9 GB (2890756401 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:edb6fdab0d77d354269b0c787da93627f788070ff04e27610bf4d74ac6947dbb`
+-	Image ID: `sha256:50d8c70546f0046f36a731848b58b0bbf9e64784e0a12ad91de1219f225d97d4`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -34903,15 +33949,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:26:31 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:26:31 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:26:32 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:26:33 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:28:03 GMT
+# Thu, 11 Nov 2021 02:23:31 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:23:32 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:23:33 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:24:52 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:28:04 GMT
+# Thu, 11 Nov 2021 02:24:53 GMT
 CMD ["jshell"]
 ```
 
@@ -34938,48 +33984,48 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:07:09 GMT  
 		Size: 319.7 KB (319676 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f27f6a08e6bde711bb8374842ac82c0cad5fa223e6215af6895d7b1ae20ab601`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1435 bytes)  
+	-	`sha256:e82aaf27003bf2b62a2cc2dbd9cb4ff9a112f8ef1cf0240f81607382e7cd6138`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb17e13d4cdd0b960ba531f11242bb58c8a359c38dbd6bb4bdd03853994bc2ce`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1441 bytes)  
+	-	`sha256:98f36effb4b3b001319833edf8fc4e1a9b6008500dafad80385b5a4520aa3c29`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c847b4d31b558449e54882e692193c6e77fd877cb8d037083d8898f0a3e4efe6`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
+	-	`sha256:c64c2dd6bbf7811caa7ae295e72178094f00f1058f9918636ef7245bd24cc578`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1430 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:cdfbdd5d3b9376889190109d5cc7a4cf2377a4946e1ccc5535bd87d1cac3ca5d`  
+		Last Modified: Thu, 11 Nov 2021 02:36:10 GMT  
+		Size: 183.9 MB (183948230 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4465946c6c9661cbaf098a919fdf0be953f0cf789394679363d052795feb4f30`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
 		Size: 1.4 KB (1420 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95a35ec7cf69a61548328a852bd3c946f51685d419a4c79f87802db51db08c50`  
-		Last Modified: Wed, 10 Nov 2021 21:07:26 GMT  
-		Size: 183.6 MB (183623942 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5753877e7a39a9e13e30aa822049b0a084cda5de4a40cd5f6ace47ac2fc9eb10`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1416 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `openjdk:18-ea-21-windowsservercore-ltsc2016`
+## `openjdk:18-ea-22-windowsservercore-ltsc2016`
 
 ```console
-$ docker pull openjdk@sha256:938429f5ef4c5db2a518e461331aec2a5bd8f229d7b7d2cb31850cd2254ade27
+$ docker pull openjdk@sha256:a8f9c46981a31d619cbd7f2abebab8cbd77a7376e766f26b035f44912f60df9b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
 	-	windows version 10.0.14393.4770; amd64
 
-### `openjdk:18-ea-21-windowsservercore-ltsc2016` - windows version 10.0.14393.4770; amd64
+### `openjdk:18-ea-22-windowsservercore-ltsc2016` - windows version 10.0.14393.4770; amd64
 
 ```console
-$ docker pull openjdk@sha256:393e2252dd54db1eae006103f025518c7a5ad43752461ed3d8ee1de90f0395ae
+$ docker pull openjdk@sha256:1fb6cb4679450a052002f19a809879940b24f5a42313a449b3abac847b5716b8
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.5 GB (6457431629 bytes)**  
+-	Total Size: **6.5 GB (6457750413 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d306462a846e7b818d1a0e0e8ab77db60ccccfd35a285ce2ee8647be0f0f9de`
+-	Image ID: `sha256:81a0d0a688c09412d0fc9d6c668fc54ceb91032a59439189764571f4987fa30a`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -34996,15 +34042,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:30:05 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:30:06 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:30:07 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:30:08 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:31:36 GMT
+# Thu, 11 Nov 2021 02:25:13 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:25:14 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:25:15 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:26:36 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:31:37 GMT
+# Thu, 11 Nov 2021 02:26:37 GMT
 CMD ["jshell"]
 ```
 
@@ -35031,48 +34077,48 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:07:51 GMT  
 		Size: 346.8 KB (346841 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1d9bca52a27503493f0c99b4a99920bf0977ea36e5c98d5640b9974957eaf1c`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1400 bytes)  
+	-	`sha256:83bd413e3a517265afe99693948983f594de2897cc86194a7d8d387b575e82a5`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1424 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87f3555ad46e455b194d91f0a0c93835b1f759bed8eca17a3a0dc657385bd13c`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1415 bytes)  
+	-	`sha256:43648bc0ccab1f3f49e25e4d2e08ad16e43fd15b3b877f2a9659cc2b8735924a`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2a124c261e3810baa7b86d3002f7c9bb0d9b74f151a368c9efdd7dbda0dd0d5`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1429 bytes)  
+	-	`sha256:b37343f091cd0ffd2e8881824fa7eb48840fcaa1924b9df53edc6d5828a44255`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1389 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1d67ffbd95a6b961816519f50fa3d55ae7eb440d88109b8d6784a1093bfe62e2`  
-		Last Modified: Wed, 10 Nov 2021 21:11:11 GMT  
-		Size: 183.6 MB (183629721 bytes)  
+	-	`sha256:5a722237d8a9d82c5a0e0401f0d42603163f666c0dc8dba2f339c5858703d9e7`  
+		Last Modified: Thu, 11 Nov 2021 02:39:38 GMT  
+		Size: 183.9 MB (183948511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a06fd0b5df6b3417d9ff1f2bdf32c8c9ed0d6a0c45b70e6db8fb0a0019e361d7`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1415 bytes)  
+	-	`sha256:f983e129d00f1fc3c9459bca58fe6d4bf0f833ed18f5ccc0c1e4478aea0af48e`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1418 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `openjdk:18-ea-21-windowsservercore-ltsc2022`
+## `openjdk:18-ea-22-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull openjdk@sha256:ae714022fbaebf672f0d5718781b37285f6126101122843d24734fcce4a9e769
+$ docker pull openjdk@sha256:fc7df54e750b5c819b1e04005fa166205dbc9fb52fd811c6168e851534087208
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
 	-	windows version 10.0.20348.350; amd64
 
-### `openjdk:18-ea-21-windowsservercore-ltsc2022` - windows version 10.0.20348.350; amd64
+### `openjdk:18-ea-22-windowsservercore-ltsc2022` - windows version 10.0.20348.350; amd64
 
 ```console
-$ docker pull openjdk@sha256:e8255df62dff59325ca6e55e1bcc9080692eaefdcdbb1d7deaafb57971ee86de
+$ docker pull openjdk@sha256:9c20d60c7bde738f2c3e57e52aafbaecc57f1a5ec9c4b75dba7c45378b4acfeb
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.4 GB (2369632853 bytes)**  
+-	Total Size: **2.4 GB (2369930838 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c7f00655015db4254b3d0354638c0dbea2256f1b504ac92eb2577f6a5a1884f4`
+-	Image ID: `sha256:a5c6761474f0c566c146885a48d00326c719b7730871258da29aad263b932a4a`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -35089,15 +34135,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:23:41 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:23:42 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:23:43 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:23:44 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:24:32 GMT
+# Thu, 11 Nov 2021 02:22:29 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:22:30 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:22:31 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:23:15 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:24:34 GMT
+# Thu, 11 Nov 2021 02:23:16 GMT
 CMD ["jshell"]
 ```
 
@@ -35124,25 +34170,25 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:03:27 GMT  
 		Size: 549.7 KB (549708 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b698dd11831adf277aae025052bc6eef078afd78744099225fd6ecd561fdcb6f`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1379 bytes)  
+	-	`sha256:47a3965ec2551fcd1a6117196df95c018068b200db9142b813af85f8f05fac3f`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b0900c61346cbdc2e5203cfe88ec50506b93be59c3bd52564a8b95a1e0f5f4d`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1398 bytes)  
+	-	`sha256:157aee527ea6606caee0c3f88322e3dcee4605f52eb98706b7629d2f2d864f50`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:006246c3aa0e0f4bc3f01c03d0e7d48693d0725b25f3e78f3581915d92760caa`  
-		Last Modified: Wed, 10 Nov 2021 21:03:25 GMT  
-		Size: 1.4 KB (1355 bytes)  
+	-	`sha256:53b7b5633a2546c9bab04d431d13513305ffa78a8fd0fbb6871d649054b71248`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05f8dd5277feae03b608b6cc2ff3cd3dc5107d8e8b71c5d8af8412db74134f7b`  
-		Last Modified: Wed, 10 Nov 2021 21:06:46 GMT  
-		Size: 183.9 MB (183851222 bytes)  
+	-	`sha256:458a4ea681f6aaefe0ffff613b2b6902899d6cf784e658b99c5d2aefe9fd101c`  
+		Last Modified: Thu, 11 Nov 2021 02:35:31 GMT  
+		Size: 184.1 MB (184149058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:174ce1c5faf404eee966a95111144858ca8a1cd9b461dc6660bda459e2b91294`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1419 bytes)  
+	-	`sha256:b237936aa73b8bc01a1cd55260a8718087e351e2cf387793361369cb3067930f`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `openjdk:18-ea-alpine`
@@ -35316,7 +34362,7 @@ CMD ["jshell"]
 ## `openjdk:18-ea-bullseye`
 
 ```console
-$ docker pull openjdk@sha256:b34adb0bd4ef1fa7eb8a9ac59d70b70f09173679ecf0973b9b55458d9f63a062
+$ docker pull openjdk@sha256:7ec905a9bceb3214da3683a6c8a9c828922734a3d2cc9db7e2b265c920be8254
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -35327,14 +34373,14 @@ $ docker pull openjdk@sha256:b34adb0bd4ef1fa7eb8a9ac59d70b70f09173679ecf0973b9b5
 ### `openjdk:18-ea-bullseye` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:15dd6622b67c43a37f419bece22f25e55079b58a4f10b9d84df8a5b5dbd8f375
+$ docker pull openjdk@sha256:a5fdf91444484a67739a2406539c153e4586ec3053a6d9bc5bedfe6c113997aa
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **327.8 MB (327817336 bytes)**  
+-	Total Size: **328.0 MB (327959593 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8214cbfc4e4baf5ddb3cb7d9c798a3e186ffa05cadde66de90fb313bb5ea7a9c`
+-	Image ID: `sha256:6f395a8ee4404de82b9d3db99d55f42b0621473a8933d5bc2fff2f800abdb8ff`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -35356,11 +34402,11 @@ ENV JAVA_HOME=/usr/local/openjdk-18
 ENV PATH=/usr/local/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 12 Oct 2021 16:27:22 GMT
 ENV LANG=C.UTF-8
-# Mon, 01 Nov 2021 18:49:36 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 18:49:49 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 18:49:50 GMT
+# Thu, 11 Nov 2021 02:28:19 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:28:30 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:28:31 GMT
 CMD ["jshell"]
 ```
 
@@ -35385,9 +34431,9 @@ CMD ["jshell"]
 		Last Modified: Tue, 12 Oct 2021 16:42:23 GMT  
 		Size: 14.1 MB (14071834 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:972fa5e33b31fd4ad24909410193a04068676af50abc0a41584d702abeb6cd37`  
-		Last Modified: Mon, 01 Nov 2021 18:57:35 GMT  
-		Size: 188.2 MB (188235013 bytes)  
+	-	`sha256:9ee19c4d65aa828166758ac92a6e4652f7e4a1867287ccf1dbcdc3f6cd9d9b0b`  
+		Last Modified: Thu, 11 Nov 2021 02:35:59 GMT  
+		Size: 188.4 MB (188377270 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-ea-bullseye` - linux; arm64 variant v8
@@ -35459,7 +34505,7 @@ CMD ["jshell"]
 ## `openjdk:18-ea-buster`
 
 ```console
-$ docker pull openjdk@sha256:0f44e827154b7126f229988255469485e4f45da794f0045aff384f694a727272
+$ docker pull openjdk@sha256:a4607fc5925dbe217020c82bd24e76230edce164e0715dfe8ba91db9c8279f29
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -35470,14 +34516,14 @@ $ docker pull openjdk@sha256:0f44e827154b7126f229988255469485e4f45da794f0045aff3
 ### `openjdk:18-ea-buster` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:696584d92fd43941e89c6f843e004ec5e08307be179af47574446e46f50535f2
+$ docker pull openjdk@sha256:267b76c2fd454cb5d03ab6588a2b060d657e37c539e95d22f1dc22b0e8114136
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **322.3 MB (322265996 bytes)**  
+-	Total Size: **322.4 MB (322416320 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e100a7bfcd4933ce38e63845a379afee31d3550e20c59746b6b191d497210df5`
+-	Image ID: `sha256:b9f0939359ecbf4bdc0b810c623493f299bd238ac93c7cc216db6c24d57ed4dc`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -35499,11 +34545,11 @@ ENV JAVA_HOME=/usr/local/openjdk-18
 ENV PATH=/usr/local/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 12 Oct 2021 16:28:21 GMT
 ENV LANG=C.UTF-8
-# Mon, 01 Nov 2021 18:50:17 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 18:50:29 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 18:50:29 GMT
+# Thu, 11 Nov 2021 02:28:55 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:29:06 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:29:06 GMT
 CMD ["jshell"]
 ```
 
@@ -35528,9 +34574,9 @@ CMD ["jshell"]
 		Last Modified: Tue, 12 Oct 2021 16:43:50 GMT  
 		Size: 13.9 MB (13921295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bab5fe1454290004d1cebe69e0ae7e06ebd8c5a614ea3697558e7dfb9cf3e5aa`  
-		Last Modified: Mon, 01 Nov 2021 18:58:57 GMT  
-		Size: 188.2 MB (188236263 bytes)  
+	-	`sha256:e3d4c0b39f35cb25307b6b21a02705bd2d727c504c34e8a04ba355b6675faec4`  
+		Last Modified: Thu, 11 Nov 2021 02:37:21 GMT  
+		Size: 188.4 MB (188386587 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-ea-buster` - linux; arm64 variant v8
@@ -35602,7 +34648,7 @@ CMD ["jshell"]
 ## `openjdk:18-ea-jdk`
 
 ```console
-$ docker pull openjdk@sha256:fe025977fd77a1cbfe1bc388a48b4b8776a200f4ddda1f828c41b355d68cbcfe
+$ docker pull openjdk@sha256:53a6bb7c29bce7dbe2c669c98c2c73f29aa9e9e487a5e64153523c230b6261a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -35616,14 +34662,14 @@ $ docker pull openjdk@sha256:fe025977fd77a1cbfe1bc388a48b4b8776a200f4ddda1f828c4
 ### `openjdk:18-ea-jdk` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:817b9de5fd1ed622c9080f216dd6b3040f3545be2c6026fe5d413628eb87edca
+$ docker pull openjdk@sha256:d91c50b89de0c4a4b5d4e9b528995006453b9867cb0dae41f100f89e851c9a52
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **243.6 MB (243585087 bytes)**  
+-	Total Size: **243.7 MB (243728237 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f55f011574655a28ccd27287ab45d17065ae9bbc0c4101281ffa665c385c2315`
+-	Image ID: `sha256:672ef7efeba8fe2ad1d923268b6836d1ecbff55754c90ed0fbfe47b4c214a6f8`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -35639,11 +34685,11 @@ ENV JAVA_HOME=/usr/java/openjdk-18
 ENV PATH=/usr/java/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 03 Nov 2021 22:37:07 GMT
 ENV LANG=C.UTF-8
-# Wed, 03 Nov 2021 22:37:07 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 03 Nov 2021 22:37:18 GMT
-RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 03 Nov 2021 22:37:19 GMT
+# Thu, 11 Nov 2021 02:27:47 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:27:58 GMT
+RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:27:59 GMT
 CMD ["jshell"]
 ```
 
@@ -35656,9 +34702,9 @@ CMD ["jshell"]
 		Last Modified: Wed, 03 Nov 2021 22:43:12 GMT  
 		Size: 13.5 MB (13491241 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9881991c1db3ee3e0c6ae7c15b8a4429c433a7655ffe01202511ebf51b6a2ec2`  
-		Last Modified: Wed, 03 Nov 2021 22:43:24 GMT  
-		Size: 188.1 MB (188125731 bytes)  
+	-	`sha256:9a2f4b2e287c44dde9d335364634f51085f3bc93889ea6d9112410318239f8b6`  
+		Last Modified: Thu, 11 Nov 2021 02:34:37 GMT  
+		Size: 188.3 MB (188268881 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-ea-jdk` - linux; arm64 variant v8
@@ -35712,14 +34758,14 @@ CMD ["jshell"]
 ### `openjdk:18-ea-jdk` - windows version 10.0.20348.350; amd64
 
 ```console
-$ docker pull openjdk@sha256:e8255df62dff59325ca6e55e1bcc9080692eaefdcdbb1d7deaafb57971ee86de
+$ docker pull openjdk@sha256:9c20d60c7bde738f2c3e57e52aafbaecc57f1a5ec9c4b75dba7c45378b4acfeb
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.4 GB (2369632853 bytes)**  
+-	Total Size: **2.4 GB (2369930838 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c7f00655015db4254b3d0354638c0dbea2256f1b504ac92eb2577f6a5a1884f4`
+-	Image ID: `sha256:a5c6761474f0c566c146885a48d00326c719b7730871258da29aad263b932a4a`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -35736,15 +34782,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:23:41 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:23:42 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:23:43 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:23:44 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:24:32 GMT
+# Thu, 11 Nov 2021 02:22:29 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:22:30 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:22:31 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:23:15 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:24:34 GMT
+# Thu, 11 Nov 2021 02:23:16 GMT
 CMD ["jshell"]
 ```
 
@@ -35771,38 +34817,38 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:03:27 GMT  
 		Size: 549.7 KB (549708 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b698dd11831adf277aae025052bc6eef078afd78744099225fd6ecd561fdcb6f`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1379 bytes)  
+	-	`sha256:47a3965ec2551fcd1a6117196df95c018068b200db9142b813af85f8f05fac3f`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b0900c61346cbdc2e5203cfe88ec50506b93be59c3bd52564a8b95a1e0f5f4d`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1398 bytes)  
+	-	`sha256:157aee527ea6606caee0c3f88322e3dcee4605f52eb98706b7629d2f2d864f50`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:006246c3aa0e0f4bc3f01c03d0e7d48693d0725b25f3e78f3581915d92760caa`  
-		Last Modified: Wed, 10 Nov 2021 21:03:25 GMT  
-		Size: 1.4 KB (1355 bytes)  
+	-	`sha256:53b7b5633a2546c9bab04d431d13513305ffa78a8fd0fbb6871d649054b71248`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05f8dd5277feae03b608b6cc2ff3cd3dc5107d8e8b71c5d8af8412db74134f7b`  
-		Last Modified: Wed, 10 Nov 2021 21:06:46 GMT  
-		Size: 183.9 MB (183851222 bytes)  
+	-	`sha256:458a4ea681f6aaefe0ffff613b2b6902899d6cf784e658b99c5d2aefe9fd101c`  
+		Last Modified: Thu, 11 Nov 2021 02:35:31 GMT  
+		Size: 184.1 MB (184149058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:174ce1c5faf404eee966a95111144858ca8a1cd9b461dc6660bda459e2b91294`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1419 bytes)  
+	-	`sha256:b237936aa73b8bc01a1cd55260a8718087e351e2cf387793361369cb3067930f`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-ea-jdk` - windows version 10.0.17763.2300; amd64
 
 ```console
-$ docker pull openjdk@sha256:2844a4f5ef91b81e8639e3c77c53eb720cb1a92d7615cb49e474db929c7f0e4d
+$ docker pull openjdk@sha256:8e32cdb2628a6f1f06929a6f3ce57025716a05db9885a170e8d4acb24002f91d
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 GB (2890432121 bytes)**  
+-	Total Size: **2.9 GB (2890756401 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:edb6fdab0d77d354269b0c787da93627f788070ff04e27610bf4d74ac6947dbb`
+-	Image ID: `sha256:50d8c70546f0046f36a731848b58b0bbf9e64784e0a12ad91de1219f225d97d4`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -35819,15 +34865,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:26:31 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:26:31 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:26:32 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:26:33 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:28:03 GMT
+# Thu, 11 Nov 2021 02:23:31 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:23:32 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:23:33 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:24:52 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:28:04 GMT
+# Thu, 11 Nov 2021 02:24:53 GMT
 CMD ["jshell"]
 ```
 
@@ -35854,38 +34900,38 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:07:09 GMT  
 		Size: 319.7 KB (319676 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f27f6a08e6bde711bb8374842ac82c0cad5fa223e6215af6895d7b1ae20ab601`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1435 bytes)  
+	-	`sha256:e82aaf27003bf2b62a2cc2dbd9cb4ff9a112f8ef1cf0240f81607382e7cd6138`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb17e13d4cdd0b960ba531f11242bb58c8a359c38dbd6bb4bdd03853994bc2ce`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1441 bytes)  
+	-	`sha256:98f36effb4b3b001319833edf8fc4e1a9b6008500dafad80385b5a4520aa3c29`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c847b4d31b558449e54882e692193c6e77fd877cb8d037083d8898f0a3e4efe6`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
+	-	`sha256:c64c2dd6bbf7811caa7ae295e72178094f00f1058f9918636ef7245bd24cc578`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1430 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:cdfbdd5d3b9376889190109d5cc7a4cf2377a4946e1ccc5535bd87d1cac3ca5d`  
+		Last Modified: Thu, 11 Nov 2021 02:36:10 GMT  
+		Size: 183.9 MB (183948230 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4465946c6c9661cbaf098a919fdf0be953f0cf789394679363d052795feb4f30`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
 		Size: 1.4 KB (1420 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95a35ec7cf69a61548328a852bd3c946f51685d419a4c79f87802db51db08c50`  
-		Last Modified: Wed, 10 Nov 2021 21:07:26 GMT  
-		Size: 183.6 MB (183623942 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5753877e7a39a9e13e30aa822049b0a084cda5de4a40cd5f6ace47ac2fc9eb10`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-ea-jdk` - windows version 10.0.14393.4770; amd64
 
 ```console
-$ docker pull openjdk@sha256:393e2252dd54db1eae006103f025518c7a5ad43752461ed3d8ee1de90f0395ae
+$ docker pull openjdk@sha256:1fb6cb4679450a052002f19a809879940b24f5a42313a449b3abac847b5716b8
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.5 GB (6457431629 bytes)**  
+-	Total Size: **6.5 GB (6457750413 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d306462a846e7b818d1a0e0e8ab77db60ccccfd35a285ce2ee8647be0f0f9de`
+-	Image ID: `sha256:81a0d0a688c09412d0fc9d6c668fc54ceb91032a59439189764571f4987fa30a`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -35902,15 +34948,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:30:05 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:30:06 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:30:07 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:30:08 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:31:36 GMT
+# Thu, 11 Nov 2021 02:25:13 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:25:14 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:25:15 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:26:36 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:31:37 GMT
+# Thu, 11 Nov 2021 02:26:37 GMT
 CMD ["jshell"]
 ```
 
@@ -35937,25 +34983,25 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:07:51 GMT  
 		Size: 346.8 KB (346841 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1d9bca52a27503493f0c99b4a99920bf0977ea36e5c98d5640b9974957eaf1c`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1400 bytes)  
+	-	`sha256:83bd413e3a517265afe99693948983f594de2897cc86194a7d8d387b575e82a5`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1424 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87f3555ad46e455b194d91f0a0c93835b1f759bed8eca17a3a0dc657385bd13c`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1415 bytes)  
+	-	`sha256:43648bc0ccab1f3f49e25e4d2e08ad16e43fd15b3b877f2a9659cc2b8735924a`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2a124c261e3810baa7b86d3002f7c9bb0d9b74f151a368c9efdd7dbda0dd0d5`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1429 bytes)  
+	-	`sha256:b37343f091cd0ffd2e8881824fa7eb48840fcaa1924b9df53edc6d5828a44255`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1389 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1d67ffbd95a6b961816519f50fa3d55ae7eb440d88109b8d6784a1093bfe62e2`  
-		Last Modified: Wed, 10 Nov 2021 21:11:11 GMT  
-		Size: 183.6 MB (183629721 bytes)  
+	-	`sha256:5a722237d8a9d82c5a0e0401f0d42603163f666c0dc8dba2f339c5858703d9e7`  
+		Last Modified: Thu, 11 Nov 2021 02:39:38 GMT  
+		Size: 183.9 MB (183948511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a06fd0b5df6b3417d9ff1f2bdf32c8c9ed0d6a0c45b70e6db8fb0a0019e361d7`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1415 bytes)  
+	-	`sha256:f983e129d00f1fc3c9459bca58fe6d4bf0f833ed18f5ccc0c1e4478aea0af48e`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1418 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `openjdk:18-ea-jdk-alpine`
@@ -36129,7 +35175,7 @@ CMD ["jshell"]
 ## `openjdk:18-ea-jdk-bullseye`
 
 ```console
-$ docker pull openjdk@sha256:b34adb0bd4ef1fa7eb8a9ac59d70b70f09173679ecf0973b9b55458d9f63a062
+$ docker pull openjdk@sha256:7ec905a9bceb3214da3683a6c8a9c828922734a3d2cc9db7e2b265c920be8254
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -36140,14 +35186,14 @@ $ docker pull openjdk@sha256:b34adb0bd4ef1fa7eb8a9ac59d70b70f09173679ecf0973b9b5
 ### `openjdk:18-ea-jdk-bullseye` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:15dd6622b67c43a37f419bece22f25e55079b58a4f10b9d84df8a5b5dbd8f375
+$ docker pull openjdk@sha256:a5fdf91444484a67739a2406539c153e4586ec3053a6d9bc5bedfe6c113997aa
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **327.8 MB (327817336 bytes)**  
+-	Total Size: **328.0 MB (327959593 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8214cbfc4e4baf5ddb3cb7d9c798a3e186ffa05cadde66de90fb313bb5ea7a9c`
+-	Image ID: `sha256:6f395a8ee4404de82b9d3db99d55f42b0621473a8933d5bc2fff2f800abdb8ff`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -36169,11 +35215,11 @@ ENV JAVA_HOME=/usr/local/openjdk-18
 ENV PATH=/usr/local/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 12 Oct 2021 16:27:22 GMT
 ENV LANG=C.UTF-8
-# Mon, 01 Nov 2021 18:49:36 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 18:49:49 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 18:49:50 GMT
+# Thu, 11 Nov 2021 02:28:19 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:28:30 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:28:31 GMT
 CMD ["jshell"]
 ```
 
@@ -36198,9 +35244,9 @@ CMD ["jshell"]
 		Last Modified: Tue, 12 Oct 2021 16:42:23 GMT  
 		Size: 14.1 MB (14071834 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:972fa5e33b31fd4ad24909410193a04068676af50abc0a41584d702abeb6cd37`  
-		Last Modified: Mon, 01 Nov 2021 18:57:35 GMT  
-		Size: 188.2 MB (188235013 bytes)  
+	-	`sha256:9ee19c4d65aa828166758ac92a6e4652f7e4a1867287ccf1dbcdc3f6cd9d9b0b`  
+		Last Modified: Thu, 11 Nov 2021 02:35:59 GMT  
+		Size: 188.4 MB (188377270 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-ea-jdk-bullseye` - linux; arm64 variant v8
@@ -36272,7 +35318,7 @@ CMD ["jshell"]
 ## `openjdk:18-ea-jdk-buster`
 
 ```console
-$ docker pull openjdk@sha256:0f44e827154b7126f229988255469485e4f45da794f0045aff384f694a727272
+$ docker pull openjdk@sha256:a4607fc5925dbe217020c82bd24e76230edce164e0715dfe8ba91db9c8279f29
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -36283,14 +35329,14 @@ $ docker pull openjdk@sha256:0f44e827154b7126f229988255469485e4f45da794f0045aff3
 ### `openjdk:18-ea-jdk-buster` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:696584d92fd43941e89c6f843e004ec5e08307be179af47574446e46f50535f2
+$ docker pull openjdk@sha256:267b76c2fd454cb5d03ab6588a2b060d657e37c539e95d22f1dc22b0e8114136
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **322.3 MB (322265996 bytes)**  
+-	Total Size: **322.4 MB (322416320 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e100a7bfcd4933ce38e63845a379afee31d3550e20c59746b6b191d497210df5`
+-	Image ID: `sha256:b9f0939359ecbf4bdc0b810c623493f299bd238ac93c7cc216db6c24d57ed4dc`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -36312,11 +35358,11 @@ ENV JAVA_HOME=/usr/local/openjdk-18
 ENV PATH=/usr/local/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 12 Oct 2021 16:28:21 GMT
 ENV LANG=C.UTF-8
-# Mon, 01 Nov 2021 18:50:17 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 18:50:29 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 18:50:29 GMT
+# Thu, 11 Nov 2021 02:28:55 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:29:06 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:29:06 GMT
 CMD ["jshell"]
 ```
 
@@ -36341,9 +35387,9 @@ CMD ["jshell"]
 		Last Modified: Tue, 12 Oct 2021 16:43:50 GMT  
 		Size: 13.9 MB (13921295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bab5fe1454290004d1cebe69e0ae7e06ebd8c5a614ea3697558e7dfb9cf3e5aa`  
-		Last Modified: Mon, 01 Nov 2021 18:58:57 GMT  
-		Size: 188.2 MB (188236263 bytes)  
+	-	`sha256:e3d4c0b39f35cb25307b6b21a02705bd2d727c504c34e8a04ba355b6675faec4`  
+		Last Modified: Thu, 11 Nov 2021 02:37:21 GMT  
+		Size: 188.4 MB (188386587 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-ea-jdk-buster` - linux; arm64 variant v8
@@ -36415,7 +35461,7 @@ CMD ["jshell"]
 ## `openjdk:18-ea-jdk-nanoserver`
 
 ```console
-$ docker pull openjdk@sha256:2c698eed211dacdfcad8cfcf8bb65180e9feb2e4af011e0da302e5f09294fb74
+$ docker pull openjdk@sha256:6fb352605241063a7689cf99b1bc78fd5efaeab751e3a71c6f7d3012216b7f6a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -36425,14 +35471,14 @@ $ docker pull openjdk@sha256:2c698eed211dacdfcad8cfcf8bb65180e9feb2e4af011e0da30
 ### `openjdk:18-ea-jdk-nanoserver` - windows version 10.0.17763.2300; amd64
 
 ```console
-$ docker pull openjdk@sha256:76e7ce8921200c2da74218723265e748efb5b538bbc805d96e5875c35e6c9685
+$ docker pull openjdk@sha256:ec025d27caa59ea3603b6ff8e089dd88c2f7a26a69856dfc62c082c78b3c4969
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **289.7 MB (289705169 bytes)**  
+-	Total Size: **290.0 MB (290017954 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f605ec0f6d8620a8d7837798a5cb287e6f718b34f4aa184e494be9c400f5ee93`
+-	Image ID: `sha256:43881b592fbb5488ef2a1826031065b0507eaec5c09a746850b1813bc23ea083`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["cmd","\/s","\/c"]`
 
@@ -36449,13 +35495,13 @@ USER ContainerAdministrator
 RUN echo Updating PATH: %JAVA_HOME%\bin;%PATH% 	&& setx /M PATH %JAVA_HOME%\bin;%PATH% 	&& echo Complete.
 # Wed, 10 Nov 2021 20:32:07 GMT
 USER ContainerUser
-# Wed, 10 Nov 2021 20:32:08 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:32:23 GMT
-COPY dir:2484c24fc278a2a4f9b1faf3e56bed024398b36a40c94d33298963a00cd29cac in C:\openjdk-18 
-# Wed, 10 Nov 2021 20:32:37 GMT
+# Thu, 11 Nov 2021 02:26:55 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:27:10 GMT
+COPY dir:8d6a03ecb43a50e96e1ea8050215c3463f1cd25f09c6c66b339295cfb108fd47 in C:\openjdk-18 
+# Thu, 11 Nov 2021 02:27:24 GMT
 RUN echo Verifying install ... 	&& echo   javac --version && javac --version 	&& echo   java --version && java --version 	&& echo Complete.
-# Wed, 10 Nov 2021 20:32:37 GMT
+# Thu, 11 Nov 2021 02:27:25 GMT
 CMD ["jshell"]
 ```
 
@@ -36483,27 +35529,27 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:11:33 GMT  
 		Size: 1.1 KB (1138 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b032844458881830eff0be6c730b39b70a8e00d9d48b5614c499b10d0e55a131`  
-		Last Modified: Wed, 10 Nov 2021 21:11:33 GMT  
-		Size: 1.1 KB (1127 bytes)  
+	-	`sha256:a4f70cd085588ca56ede8ce99b00cd84e76e989217138f8d5d545c068b4b03aa`  
+		Last Modified: Thu, 11 Nov 2021 02:39:59 GMT  
+		Size: 1.2 KB (1167 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03cfe5eb122e63822c38ded40d5cef742bc695b3c16c2c099cbfae63d43c6588`  
-		Last Modified: Wed, 10 Nov 2021 21:11:54 GMT  
-		Size: 183.3 MB (183299359 bytes)  
+	-	`sha256:9a789c500a3d522aa9e0f7a275070ae5fda6f2c4a6aa83fda57c1c3f433f19cc`  
+		Last Modified: Thu, 11 Nov 2021 02:40:20 GMT  
+		Size: 183.6 MB (183609790 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88d4615c9ed406caf4fcd84446b3e0dd7e56d63892a56c81965b04d213d8a677`  
-		Last Modified: Wed, 10 Nov 2021 21:11:35 GMT  
-		Size: 3.5 MB (3541799 bytes)  
+	-	`sha256:26200be72d5e7969ea70fcb1e295e3833109ddf22ef6008b07d81e5d5ee8b2db`  
+		Last Modified: Thu, 11 Nov 2021 02:40:03 GMT  
+		Size: 3.5 MB (3544102 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14712278de59cab664f0e49fa0f1871ec5ab10ba4e7b6dbe5945492d496c781e`  
-		Last Modified: Wed, 10 Nov 2021 21:11:34 GMT  
-		Size: 1.2 KB (1166 bytes)  
+	-	`sha256:d2ba4ebf7124214086dba305e9d9525a45618109821d8d9ef384507222eb24ec`  
+		Last Modified: Thu, 11 Nov 2021 02:39:59 GMT  
+		Size: 1.2 KB (1177 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `openjdk:18-ea-jdk-nanoserver-1809`
 
 ```console
-$ docker pull openjdk@sha256:2c698eed211dacdfcad8cfcf8bb65180e9feb2e4af011e0da302e5f09294fb74
+$ docker pull openjdk@sha256:6fb352605241063a7689cf99b1bc78fd5efaeab751e3a71c6f7d3012216b7f6a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -36513,14 +35559,14 @@ $ docker pull openjdk@sha256:2c698eed211dacdfcad8cfcf8bb65180e9feb2e4af011e0da30
 ### `openjdk:18-ea-jdk-nanoserver-1809` - windows version 10.0.17763.2300; amd64
 
 ```console
-$ docker pull openjdk@sha256:76e7ce8921200c2da74218723265e748efb5b538bbc805d96e5875c35e6c9685
+$ docker pull openjdk@sha256:ec025d27caa59ea3603b6ff8e089dd88c2f7a26a69856dfc62c082c78b3c4969
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **289.7 MB (289705169 bytes)**  
+-	Total Size: **290.0 MB (290017954 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f605ec0f6d8620a8d7837798a5cb287e6f718b34f4aa184e494be9c400f5ee93`
+-	Image ID: `sha256:43881b592fbb5488ef2a1826031065b0507eaec5c09a746850b1813bc23ea083`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["cmd","\/s","\/c"]`
 
@@ -36537,13 +35583,13 @@ USER ContainerAdministrator
 RUN echo Updating PATH: %JAVA_HOME%\bin;%PATH% 	&& setx /M PATH %JAVA_HOME%\bin;%PATH% 	&& echo Complete.
 # Wed, 10 Nov 2021 20:32:07 GMT
 USER ContainerUser
-# Wed, 10 Nov 2021 20:32:08 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:32:23 GMT
-COPY dir:2484c24fc278a2a4f9b1faf3e56bed024398b36a40c94d33298963a00cd29cac in C:\openjdk-18 
-# Wed, 10 Nov 2021 20:32:37 GMT
+# Thu, 11 Nov 2021 02:26:55 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:27:10 GMT
+COPY dir:8d6a03ecb43a50e96e1ea8050215c3463f1cd25f09c6c66b339295cfb108fd47 in C:\openjdk-18 
+# Thu, 11 Nov 2021 02:27:24 GMT
 RUN echo Verifying install ... 	&& echo   javac --version && javac --version 	&& echo   java --version && java --version 	&& echo Complete.
-# Wed, 10 Nov 2021 20:32:37 GMT
+# Thu, 11 Nov 2021 02:27:25 GMT
 CMD ["jshell"]
 ```
 
@@ -36571,27 +35617,27 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:11:33 GMT  
 		Size: 1.1 KB (1138 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b032844458881830eff0be6c730b39b70a8e00d9d48b5614c499b10d0e55a131`  
-		Last Modified: Wed, 10 Nov 2021 21:11:33 GMT  
-		Size: 1.1 KB (1127 bytes)  
+	-	`sha256:a4f70cd085588ca56ede8ce99b00cd84e76e989217138f8d5d545c068b4b03aa`  
+		Last Modified: Thu, 11 Nov 2021 02:39:59 GMT  
+		Size: 1.2 KB (1167 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03cfe5eb122e63822c38ded40d5cef742bc695b3c16c2c099cbfae63d43c6588`  
-		Last Modified: Wed, 10 Nov 2021 21:11:54 GMT  
-		Size: 183.3 MB (183299359 bytes)  
+	-	`sha256:9a789c500a3d522aa9e0f7a275070ae5fda6f2c4a6aa83fda57c1c3f433f19cc`  
+		Last Modified: Thu, 11 Nov 2021 02:40:20 GMT  
+		Size: 183.6 MB (183609790 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88d4615c9ed406caf4fcd84446b3e0dd7e56d63892a56c81965b04d213d8a677`  
-		Last Modified: Wed, 10 Nov 2021 21:11:35 GMT  
-		Size: 3.5 MB (3541799 bytes)  
+	-	`sha256:26200be72d5e7969ea70fcb1e295e3833109ddf22ef6008b07d81e5d5ee8b2db`  
+		Last Modified: Thu, 11 Nov 2021 02:40:03 GMT  
+		Size: 3.5 MB (3544102 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14712278de59cab664f0e49fa0f1871ec5ab10ba4e7b6dbe5945492d496c781e`  
-		Last Modified: Wed, 10 Nov 2021 21:11:34 GMT  
-		Size: 1.2 KB (1166 bytes)  
+	-	`sha256:d2ba4ebf7124214086dba305e9d9525a45618109821d8d9ef384507222eb24ec`  
+		Last Modified: Thu, 11 Nov 2021 02:39:59 GMT  
+		Size: 1.2 KB (1177 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `openjdk:18-ea-jdk-oracle`
 
 ```console
-$ docker pull openjdk@sha256:6454022f8656aaa0fc08cbfcc617134fbb65e9bf91d0a8cb3a5fa9f45c43172e
+$ docker pull openjdk@sha256:d643bba5e4afc8f6f1f2b2729739b0a3d140559db78304f9c8c1380666f75f78
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -36602,14 +35648,14 @@ $ docker pull openjdk@sha256:6454022f8656aaa0fc08cbfcc617134fbb65e9bf91d0a8cb3a5
 ### `openjdk:18-ea-jdk-oracle` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:817b9de5fd1ed622c9080f216dd6b3040f3545be2c6026fe5d413628eb87edca
+$ docker pull openjdk@sha256:d91c50b89de0c4a4b5d4e9b528995006453b9867cb0dae41f100f89e851c9a52
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **243.6 MB (243585087 bytes)**  
+-	Total Size: **243.7 MB (243728237 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f55f011574655a28ccd27287ab45d17065ae9bbc0c4101281ffa665c385c2315`
+-	Image ID: `sha256:672ef7efeba8fe2ad1d923268b6836d1ecbff55754c90ed0fbfe47b4c214a6f8`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -36625,11 +35671,11 @@ ENV JAVA_HOME=/usr/java/openjdk-18
 ENV PATH=/usr/java/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 03 Nov 2021 22:37:07 GMT
 ENV LANG=C.UTF-8
-# Wed, 03 Nov 2021 22:37:07 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 03 Nov 2021 22:37:18 GMT
-RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 03 Nov 2021 22:37:19 GMT
+# Thu, 11 Nov 2021 02:27:47 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:27:58 GMT
+RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:27:59 GMT
 CMD ["jshell"]
 ```
 
@@ -36642,9 +35688,9 @@ CMD ["jshell"]
 		Last Modified: Wed, 03 Nov 2021 22:43:12 GMT  
 		Size: 13.5 MB (13491241 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9881991c1db3ee3e0c6ae7c15b8a4429c433a7655ffe01202511ebf51b6a2ec2`  
-		Last Modified: Wed, 03 Nov 2021 22:43:24 GMT  
-		Size: 188.1 MB (188125731 bytes)  
+	-	`sha256:9a2f4b2e287c44dde9d335364634f51085f3bc93889ea6d9112410318239f8b6`  
+		Last Modified: Thu, 11 Nov 2021 02:34:37 GMT  
+		Size: 188.3 MB (188268881 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-ea-jdk-oracle` - linux; arm64 variant v8
@@ -36698,7 +35744,7 @@ CMD ["jshell"]
 ## `openjdk:18-ea-jdk-oraclelinux7`
 
 ```console
-$ docker pull openjdk@sha256:ed3ba98351d2c4bff1800623b6038745140af2e79feac3ae6002caeb742449b6
+$ docker pull openjdk@sha256:1223fd016fdc028fdd4cc3ac80ad0353f8547c46f5d58428053d90bedbb85466
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -36709,14 +35755,14 @@ $ docker pull openjdk@sha256:ed3ba98351d2c4bff1800623b6038745140af2e79feac3ae600
 ### `openjdk:18-ea-jdk-oraclelinux7` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:ec196e338fa8bbd0d9287cc432100dfc2310577c6e39bb691e5c4aad00d6b521
+$ docker pull openjdk@sha256:ce4c326af7ac5a60c8ca40f44ae6ebb71a43eb165afe0d18716114faa2ae9241
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.9 MB (251855575 bytes)**  
+-	Total Size: **252.0 MB (251995533 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b3e91ba8ba9cb56e993c2ac26ea12609f055911aee8f7860b56f49f35da22f67`
+-	Image ID: `sha256:95bb93f8d111d78b4b3aafe543ea16de5c32e350d9517726baf0852b2f6f63c3`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -36732,11 +35778,11 @@ ENV JAVA_HOME=/usr/java/openjdk-18
 ENV PATH=/usr/java/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Thu, 28 Oct 2021 01:45:25 GMT
 ENV LANG=en_US.UTF-8
-# Mon, 01 Nov 2021 18:49:22 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 18:49:33 GMT
-RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 18:49:33 GMT
+# Thu, 11 Nov 2021 02:28:04 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:28:15 GMT
+RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:28:16 GMT
 CMD ["jshell"]
 ```
 
@@ -36749,9 +35795,9 @@ CMD ["jshell"]
 		Last Modified: Thu, 28 Oct 2021 01:53:12 GMT  
 		Size: 15.4 MB (15399150 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:745ba23332f5419699490030c7a251ae318678ad9f335be24081ace19121bf47`  
-		Last Modified: Mon, 01 Nov 2021 18:57:03 GMT  
-		Size: 188.1 MB (188127463 bytes)  
+	-	`sha256:60632eff72aeb95abb140b5e33b41e9e4d1f089f71271807f25b3f35c9257b0b`  
+		Last Modified: Thu, 11 Nov 2021 02:35:25 GMT  
+		Size: 188.3 MB (188267421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-ea-jdk-oraclelinux7` - linux; arm64 variant v8
@@ -36805,7 +35851,7 @@ CMD ["jshell"]
 ## `openjdk:18-ea-jdk-oraclelinux8`
 
 ```console
-$ docker pull openjdk@sha256:6454022f8656aaa0fc08cbfcc617134fbb65e9bf91d0a8cb3a5fa9f45c43172e
+$ docker pull openjdk@sha256:d643bba5e4afc8f6f1f2b2729739b0a3d140559db78304f9c8c1380666f75f78
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -36816,14 +35862,14 @@ $ docker pull openjdk@sha256:6454022f8656aaa0fc08cbfcc617134fbb65e9bf91d0a8cb3a5
 ### `openjdk:18-ea-jdk-oraclelinux8` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:817b9de5fd1ed622c9080f216dd6b3040f3545be2c6026fe5d413628eb87edca
+$ docker pull openjdk@sha256:d91c50b89de0c4a4b5d4e9b528995006453b9867cb0dae41f100f89e851c9a52
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **243.6 MB (243585087 bytes)**  
+-	Total Size: **243.7 MB (243728237 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f55f011574655a28ccd27287ab45d17065ae9bbc0c4101281ffa665c385c2315`
+-	Image ID: `sha256:672ef7efeba8fe2ad1d923268b6836d1ecbff55754c90ed0fbfe47b4c214a6f8`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -36839,11 +35885,11 @@ ENV JAVA_HOME=/usr/java/openjdk-18
 ENV PATH=/usr/java/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 03 Nov 2021 22:37:07 GMT
 ENV LANG=C.UTF-8
-# Wed, 03 Nov 2021 22:37:07 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 03 Nov 2021 22:37:18 GMT
-RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 03 Nov 2021 22:37:19 GMT
+# Thu, 11 Nov 2021 02:27:47 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:27:58 GMT
+RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:27:59 GMT
 CMD ["jshell"]
 ```
 
@@ -36856,9 +35902,9 @@ CMD ["jshell"]
 		Last Modified: Wed, 03 Nov 2021 22:43:12 GMT  
 		Size: 13.5 MB (13491241 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9881991c1db3ee3e0c6ae7c15b8a4429c433a7655ffe01202511ebf51b6a2ec2`  
-		Last Modified: Wed, 03 Nov 2021 22:43:24 GMT  
-		Size: 188.1 MB (188125731 bytes)  
+	-	`sha256:9a2f4b2e287c44dde9d335364634f51085f3bc93889ea6d9112410318239f8b6`  
+		Last Modified: Thu, 11 Nov 2021 02:34:37 GMT  
+		Size: 188.3 MB (188268881 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-ea-jdk-oraclelinux8` - linux; arm64 variant v8
@@ -36912,7 +35958,7 @@ CMD ["jshell"]
 ## `openjdk:18-ea-jdk-slim`
 
 ```console
-$ docker pull openjdk@sha256:9f9db4e7b8cf008882c23d60496ffbf92f2def52e97bb0967f5abb8cf971f9bc
+$ docker pull openjdk@sha256:59cc102cedda13409f4d02b3367e6887876c0e0cfa0564d025267572aa3cc7b3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -36923,14 +35969,14 @@ $ docker pull openjdk@sha256:9f9db4e7b8cf008882c23d60496ffbf92f2def52e97bb0967f5
 ### `openjdk:18-ea-jdk-slim` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:6fd2bf246d0585b450903c03cae374f975c7684cb4d52554a194ec4e88b33428
+$ docker pull openjdk@sha256:707dedb1245a645e5859bb79462c53cef7846ba447731b4d5640be0fc2b3f125
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **221.4 MB (221443148 bytes)**  
+-	Total Size: **221.6 MB (221583947 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b20796d1637bf5538d022dcb30a1d8c3f820c33258e7b524e180c7ba48599d75`
+-	Image ID: `sha256:d03fc506dd2f5806ae0628d561dc7d0353d9e5df598b9e7f90286567cbd7bac9`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -36946,11 +35992,11 @@ ENV JAVA_HOME=/usr/local/openjdk-18
 ENV PATH=/usr/local/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 12 Oct 2021 16:27:47 GMT
 ENV LANG=C.UTF-8
-# Mon, 01 Nov 2021 18:49:53 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 18:50:10 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 18:50:11 GMT
+# Thu, 11 Nov 2021 02:28:35 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:28:50 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:28:50 GMT
 CMD ["jshell"]
 ```
 
@@ -36963,9 +36009,9 @@ CMD ["jshell"]
 		Last Modified: Tue, 12 Oct 2021 16:42:59 GMT  
 		Size: 1.6 MB (1582043 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:efcc91b087b99e6e057cfe49d4fbbf2e1b3039f8876e7837244f8a4200d36aa9`  
-		Last Modified: Mon, 01 Nov 2021 18:58:09 GMT  
-		Size: 188.5 MB (188503794 bytes)  
+	-	`sha256:c94532e4ea740fa348bd5588336eb055aa252dca675396529409e0f2e392c981`  
+		Last Modified: Thu, 11 Nov 2021 02:36:33 GMT  
+		Size: 188.6 MB (188644593 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-ea-jdk-slim` - linux; arm64 variant v8
@@ -37019,7 +36065,7 @@ CMD ["jshell"]
 ## `openjdk:18-ea-jdk-slim-bullseye`
 
 ```console
-$ docker pull openjdk@sha256:9f9db4e7b8cf008882c23d60496ffbf92f2def52e97bb0967f5abb8cf971f9bc
+$ docker pull openjdk@sha256:59cc102cedda13409f4d02b3367e6887876c0e0cfa0564d025267572aa3cc7b3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -37030,14 +36076,14 @@ $ docker pull openjdk@sha256:9f9db4e7b8cf008882c23d60496ffbf92f2def52e97bb0967f5
 ### `openjdk:18-ea-jdk-slim-bullseye` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:6fd2bf246d0585b450903c03cae374f975c7684cb4d52554a194ec4e88b33428
+$ docker pull openjdk@sha256:707dedb1245a645e5859bb79462c53cef7846ba447731b4d5640be0fc2b3f125
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **221.4 MB (221443148 bytes)**  
+-	Total Size: **221.6 MB (221583947 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b20796d1637bf5538d022dcb30a1d8c3f820c33258e7b524e180c7ba48599d75`
+-	Image ID: `sha256:d03fc506dd2f5806ae0628d561dc7d0353d9e5df598b9e7f90286567cbd7bac9`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -37053,11 +36099,11 @@ ENV JAVA_HOME=/usr/local/openjdk-18
 ENV PATH=/usr/local/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 12 Oct 2021 16:27:47 GMT
 ENV LANG=C.UTF-8
-# Mon, 01 Nov 2021 18:49:53 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 18:50:10 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 18:50:11 GMT
+# Thu, 11 Nov 2021 02:28:35 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:28:50 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:28:50 GMT
 CMD ["jshell"]
 ```
 
@@ -37070,9 +36116,9 @@ CMD ["jshell"]
 		Last Modified: Tue, 12 Oct 2021 16:42:59 GMT  
 		Size: 1.6 MB (1582043 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:efcc91b087b99e6e057cfe49d4fbbf2e1b3039f8876e7837244f8a4200d36aa9`  
-		Last Modified: Mon, 01 Nov 2021 18:58:09 GMT  
-		Size: 188.5 MB (188503794 bytes)  
+	-	`sha256:c94532e4ea740fa348bd5588336eb055aa252dca675396529409e0f2e392c981`  
+		Last Modified: Thu, 11 Nov 2021 02:36:33 GMT  
+		Size: 188.6 MB (188644593 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-ea-jdk-slim-bullseye` - linux; arm64 variant v8
@@ -37126,7 +36172,7 @@ CMD ["jshell"]
 ## `openjdk:18-ea-jdk-slim-buster`
 
 ```console
-$ docker pull openjdk@sha256:7c76b028832c996c949f82f1374113176b1be0b49713681c4d65aded3275000c
+$ docker pull openjdk@sha256:90eee7860ea839b794db5729a1d285f6887a79806c0f6dfe43f083137f8f347b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -37137,14 +36183,14 @@ $ docker pull openjdk@sha256:7c76b028832c996c949f82f1374113176b1be0b49713681c4d6
 ### `openjdk:18-ea-jdk-slim-buster` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:5907363d51f46b81c780349dde095c0dc0ed3dad83474f66bc5f99ecda3aeb4c
+$ docker pull openjdk@sha256:ac0a7e52bccf05883a56614449482cb73614f5bc5b016e42874090760fb488b2
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **218.9 MB (218912828 bytes)**  
+-	Total Size: **219.1 MB (219058803 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:10653c2b68942341ef0ccbcdf71eef5d708ff40561371aef012f08d50bd62fdb`
+-	Image ID: `sha256:fe6ddbc7fa65084af20f557a980a70d6e8b197d4a7f95c5d30ba38f1daecb125`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -37160,11 +36206,11 @@ ENV JAVA_HOME=/usr/local/openjdk-18
 ENV PATH=/usr/local/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 12 Oct 2021 16:28:45 GMT
 ENV LANG=C.UTF-8
-# Mon, 01 Nov 2021 18:50:33 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 18:50:49 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 18:50:50 GMT
+# Thu, 11 Nov 2021 02:29:11 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:29:25 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:29:26 GMT
 CMD ["jshell"]
 ```
 
@@ -37177,9 +36223,9 @@ CMD ["jshell"]
 		Last Modified: Tue, 12 Oct 2021 16:44:29 GMT  
 		Size: 3.3 MB (3269598 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:669b832f4a79a98af0ed0f1f024cd2229b096d2e30b88cb3ff72c272ff08ffa2`  
-		Last Modified: Mon, 01 Nov 2021 18:59:33 GMT  
-		Size: 188.5 MB (188503720 bytes)  
+	-	`sha256:f05325d794d04afdfac5990f67bc56f76fa5288b25dfedb00d760c9b67910fbb`  
+		Last Modified: Thu, 11 Nov 2021 02:37:56 GMT  
+		Size: 188.6 MB (188649695 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-ea-jdk-slim-buster` - linux; arm64 variant v8
@@ -37233,7 +36279,7 @@ CMD ["jshell"]
 ## `openjdk:18-ea-jdk-windowsservercore`
 
 ```console
-$ docker pull openjdk@sha256:a991c6b5666e0d0edb90abea94e1ad76b3803a3b2f91841aed6ceae81380a206
+$ docker pull openjdk@sha256:916ceba5742a7ddd0fe8b131eb8ac2f81d5f4124e3262c11dc4e7d309e484f5c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -37245,14 +36291,14 @@ $ docker pull openjdk@sha256:a991c6b5666e0d0edb90abea94e1ad76b3803a3b2f91841aed6
 ### `openjdk:18-ea-jdk-windowsservercore` - windows version 10.0.20348.350; amd64
 
 ```console
-$ docker pull openjdk@sha256:e8255df62dff59325ca6e55e1bcc9080692eaefdcdbb1d7deaafb57971ee86de
+$ docker pull openjdk@sha256:9c20d60c7bde738f2c3e57e52aafbaecc57f1a5ec9c4b75dba7c45378b4acfeb
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.4 GB (2369632853 bytes)**  
+-	Total Size: **2.4 GB (2369930838 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c7f00655015db4254b3d0354638c0dbea2256f1b504ac92eb2577f6a5a1884f4`
+-	Image ID: `sha256:a5c6761474f0c566c146885a48d00326c719b7730871258da29aad263b932a4a`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -37269,15 +36315,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:23:41 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:23:42 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:23:43 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:23:44 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:24:32 GMT
+# Thu, 11 Nov 2021 02:22:29 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:22:30 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:22:31 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:23:15 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:24:34 GMT
+# Thu, 11 Nov 2021 02:23:16 GMT
 CMD ["jshell"]
 ```
 
@@ -37304,38 +36350,38 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:03:27 GMT  
 		Size: 549.7 KB (549708 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b698dd11831adf277aae025052bc6eef078afd78744099225fd6ecd561fdcb6f`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1379 bytes)  
+	-	`sha256:47a3965ec2551fcd1a6117196df95c018068b200db9142b813af85f8f05fac3f`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b0900c61346cbdc2e5203cfe88ec50506b93be59c3bd52564a8b95a1e0f5f4d`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1398 bytes)  
+	-	`sha256:157aee527ea6606caee0c3f88322e3dcee4605f52eb98706b7629d2f2d864f50`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:006246c3aa0e0f4bc3f01c03d0e7d48693d0725b25f3e78f3581915d92760caa`  
-		Last Modified: Wed, 10 Nov 2021 21:03:25 GMT  
-		Size: 1.4 KB (1355 bytes)  
+	-	`sha256:53b7b5633a2546c9bab04d431d13513305ffa78a8fd0fbb6871d649054b71248`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05f8dd5277feae03b608b6cc2ff3cd3dc5107d8e8b71c5d8af8412db74134f7b`  
-		Last Modified: Wed, 10 Nov 2021 21:06:46 GMT  
-		Size: 183.9 MB (183851222 bytes)  
+	-	`sha256:458a4ea681f6aaefe0ffff613b2b6902899d6cf784e658b99c5d2aefe9fd101c`  
+		Last Modified: Thu, 11 Nov 2021 02:35:31 GMT  
+		Size: 184.1 MB (184149058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:174ce1c5faf404eee966a95111144858ca8a1cd9b461dc6660bda459e2b91294`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1419 bytes)  
+	-	`sha256:b237936aa73b8bc01a1cd55260a8718087e351e2cf387793361369cb3067930f`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-ea-jdk-windowsservercore` - windows version 10.0.17763.2300; amd64
 
 ```console
-$ docker pull openjdk@sha256:2844a4f5ef91b81e8639e3c77c53eb720cb1a92d7615cb49e474db929c7f0e4d
+$ docker pull openjdk@sha256:8e32cdb2628a6f1f06929a6f3ce57025716a05db9885a170e8d4acb24002f91d
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 GB (2890432121 bytes)**  
+-	Total Size: **2.9 GB (2890756401 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:edb6fdab0d77d354269b0c787da93627f788070ff04e27610bf4d74ac6947dbb`
+-	Image ID: `sha256:50d8c70546f0046f36a731848b58b0bbf9e64784e0a12ad91de1219f225d97d4`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -37352,15 +36398,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:26:31 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:26:31 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:26:32 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:26:33 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:28:03 GMT
+# Thu, 11 Nov 2021 02:23:31 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:23:32 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:23:33 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:24:52 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:28:04 GMT
+# Thu, 11 Nov 2021 02:24:53 GMT
 CMD ["jshell"]
 ```
 
@@ -37387,38 +36433,38 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:07:09 GMT  
 		Size: 319.7 KB (319676 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f27f6a08e6bde711bb8374842ac82c0cad5fa223e6215af6895d7b1ae20ab601`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1435 bytes)  
+	-	`sha256:e82aaf27003bf2b62a2cc2dbd9cb4ff9a112f8ef1cf0240f81607382e7cd6138`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb17e13d4cdd0b960ba531f11242bb58c8a359c38dbd6bb4bdd03853994bc2ce`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1441 bytes)  
+	-	`sha256:98f36effb4b3b001319833edf8fc4e1a9b6008500dafad80385b5a4520aa3c29`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c847b4d31b558449e54882e692193c6e77fd877cb8d037083d8898f0a3e4efe6`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
+	-	`sha256:c64c2dd6bbf7811caa7ae295e72178094f00f1058f9918636ef7245bd24cc578`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1430 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:cdfbdd5d3b9376889190109d5cc7a4cf2377a4946e1ccc5535bd87d1cac3ca5d`  
+		Last Modified: Thu, 11 Nov 2021 02:36:10 GMT  
+		Size: 183.9 MB (183948230 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4465946c6c9661cbaf098a919fdf0be953f0cf789394679363d052795feb4f30`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
 		Size: 1.4 KB (1420 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95a35ec7cf69a61548328a852bd3c946f51685d419a4c79f87802db51db08c50`  
-		Last Modified: Wed, 10 Nov 2021 21:07:26 GMT  
-		Size: 183.6 MB (183623942 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5753877e7a39a9e13e30aa822049b0a084cda5de4a40cd5f6ace47ac2fc9eb10`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-ea-jdk-windowsservercore` - windows version 10.0.14393.4770; amd64
 
 ```console
-$ docker pull openjdk@sha256:393e2252dd54db1eae006103f025518c7a5ad43752461ed3d8ee1de90f0395ae
+$ docker pull openjdk@sha256:1fb6cb4679450a052002f19a809879940b24f5a42313a449b3abac847b5716b8
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.5 GB (6457431629 bytes)**  
+-	Total Size: **6.5 GB (6457750413 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d306462a846e7b818d1a0e0e8ab77db60ccccfd35a285ce2ee8647be0f0f9de`
+-	Image ID: `sha256:81a0d0a688c09412d0fc9d6c668fc54ceb91032a59439189764571f4987fa30a`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -37435,15 +36481,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:30:05 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:30:06 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:30:07 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:30:08 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:31:36 GMT
+# Thu, 11 Nov 2021 02:25:13 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:25:14 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:25:15 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:26:36 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:31:37 GMT
+# Thu, 11 Nov 2021 02:26:37 GMT
 CMD ["jshell"]
 ```
 
@@ -37470,31 +36516,31 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:07:51 GMT  
 		Size: 346.8 KB (346841 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1d9bca52a27503493f0c99b4a99920bf0977ea36e5c98d5640b9974957eaf1c`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1400 bytes)  
+	-	`sha256:83bd413e3a517265afe99693948983f594de2897cc86194a7d8d387b575e82a5`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1424 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87f3555ad46e455b194d91f0a0c93835b1f759bed8eca17a3a0dc657385bd13c`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1415 bytes)  
+	-	`sha256:43648bc0ccab1f3f49e25e4d2e08ad16e43fd15b3b877f2a9659cc2b8735924a`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2a124c261e3810baa7b86d3002f7c9bb0d9b74f151a368c9efdd7dbda0dd0d5`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1429 bytes)  
+	-	`sha256:b37343f091cd0ffd2e8881824fa7eb48840fcaa1924b9df53edc6d5828a44255`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1389 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1d67ffbd95a6b961816519f50fa3d55ae7eb440d88109b8d6784a1093bfe62e2`  
-		Last Modified: Wed, 10 Nov 2021 21:11:11 GMT  
-		Size: 183.6 MB (183629721 bytes)  
+	-	`sha256:5a722237d8a9d82c5a0e0401f0d42603163f666c0dc8dba2f339c5858703d9e7`  
+		Last Modified: Thu, 11 Nov 2021 02:39:38 GMT  
+		Size: 183.9 MB (183948511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a06fd0b5df6b3417d9ff1f2bdf32c8c9ed0d6a0c45b70e6db8fb0a0019e361d7`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1415 bytes)  
+	-	`sha256:f983e129d00f1fc3c9459bca58fe6d4bf0f833ed18f5ccc0c1e4478aea0af48e`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1418 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `openjdk:18-ea-jdk-windowsservercore-1809`
 
 ```console
-$ docker pull openjdk@sha256:e999c59a44c977dcb0c739cb733653de8ee93db07518187bcdfcc6d658d5f11e
+$ docker pull openjdk@sha256:a116b92ff8f5c5e37efe7bb82b121c54151e7b7d9e7e6fbf77bd6f2421ceca44
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -37504,14 +36550,14 @@ $ docker pull openjdk@sha256:e999c59a44c977dcb0c739cb733653de8ee93db07518187bcdf
 ### `openjdk:18-ea-jdk-windowsservercore-1809` - windows version 10.0.17763.2300; amd64
 
 ```console
-$ docker pull openjdk@sha256:2844a4f5ef91b81e8639e3c77c53eb720cb1a92d7615cb49e474db929c7f0e4d
+$ docker pull openjdk@sha256:8e32cdb2628a6f1f06929a6f3ce57025716a05db9885a170e8d4acb24002f91d
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 GB (2890432121 bytes)**  
+-	Total Size: **2.9 GB (2890756401 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:edb6fdab0d77d354269b0c787da93627f788070ff04e27610bf4d74ac6947dbb`
+-	Image ID: `sha256:50d8c70546f0046f36a731848b58b0bbf9e64784e0a12ad91de1219f225d97d4`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -37528,15 +36574,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:26:31 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:26:31 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:26:32 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:26:33 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:28:03 GMT
+# Thu, 11 Nov 2021 02:23:31 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:23:32 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:23:33 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:24:52 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:28:04 GMT
+# Thu, 11 Nov 2021 02:24:53 GMT
 CMD ["jshell"]
 ```
 
@@ -37563,31 +36609,31 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:07:09 GMT  
 		Size: 319.7 KB (319676 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f27f6a08e6bde711bb8374842ac82c0cad5fa223e6215af6895d7b1ae20ab601`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1435 bytes)  
+	-	`sha256:e82aaf27003bf2b62a2cc2dbd9cb4ff9a112f8ef1cf0240f81607382e7cd6138`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb17e13d4cdd0b960ba531f11242bb58c8a359c38dbd6bb4bdd03853994bc2ce`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1441 bytes)  
+	-	`sha256:98f36effb4b3b001319833edf8fc4e1a9b6008500dafad80385b5a4520aa3c29`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c847b4d31b558449e54882e692193c6e77fd877cb8d037083d8898f0a3e4efe6`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
+	-	`sha256:c64c2dd6bbf7811caa7ae295e72178094f00f1058f9918636ef7245bd24cc578`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1430 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:cdfbdd5d3b9376889190109d5cc7a4cf2377a4946e1ccc5535bd87d1cac3ca5d`  
+		Last Modified: Thu, 11 Nov 2021 02:36:10 GMT  
+		Size: 183.9 MB (183948230 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4465946c6c9661cbaf098a919fdf0be953f0cf789394679363d052795feb4f30`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
 		Size: 1.4 KB (1420 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95a35ec7cf69a61548328a852bd3c946f51685d419a4c79f87802db51db08c50`  
-		Last Modified: Wed, 10 Nov 2021 21:07:26 GMT  
-		Size: 183.6 MB (183623942 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5753877e7a39a9e13e30aa822049b0a084cda5de4a40cd5f6ace47ac2fc9eb10`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `openjdk:18-ea-jdk-windowsservercore-ltsc2016`
 
 ```console
-$ docker pull openjdk@sha256:938429f5ef4c5db2a518e461331aec2a5bd8f229d7b7d2cb31850cd2254ade27
+$ docker pull openjdk@sha256:a8f9c46981a31d619cbd7f2abebab8cbd77a7376e766f26b035f44912f60df9b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -37597,14 +36643,14 @@ $ docker pull openjdk@sha256:938429f5ef4c5db2a518e461331aec2a5bd8f229d7b7d2cb318
 ### `openjdk:18-ea-jdk-windowsservercore-ltsc2016` - windows version 10.0.14393.4770; amd64
 
 ```console
-$ docker pull openjdk@sha256:393e2252dd54db1eae006103f025518c7a5ad43752461ed3d8ee1de90f0395ae
+$ docker pull openjdk@sha256:1fb6cb4679450a052002f19a809879940b24f5a42313a449b3abac847b5716b8
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.5 GB (6457431629 bytes)**  
+-	Total Size: **6.5 GB (6457750413 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d306462a846e7b818d1a0e0e8ab77db60ccccfd35a285ce2ee8647be0f0f9de`
+-	Image ID: `sha256:81a0d0a688c09412d0fc9d6c668fc54ceb91032a59439189764571f4987fa30a`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -37621,15 +36667,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:30:05 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:30:06 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:30:07 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:30:08 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:31:36 GMT
+# Thu, 11 Nov 2021 02:25:13 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:25:14 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:25:15 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:26:36 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:31:37 GMT
+# Thu, 11 Nov 2021 02:26:37 GMT
 CMD ["jshell"]
 ```
 
@@ -37656,31 +36702,31 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:07:51 GMT  
 		Size: 346.8 KB (346841 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1d9bca52a27503493f0c99b4a99920bf0977ea36e5c98d5640b9974957eaf1c`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1400 bytes)  
+	-	`sha256:83bd413e3a517265afe99693948983f594de2897cc86194a7d8d387b575e82a5`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1424 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87f3555ad46e455b194d91f0a0c93835b1f759bed8eca17a3a0dc657385bd13c`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1415 bytes)  
+	-	`sha256:43648bc0ccab1f3f49e25e4d2e08ad16e43fd15b3b877f2a9659cc2b8735924a`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2a124c261e3810baa7b86d3002f7c9bb0d9b74f151a368c9efdd7dbda0dd0d5`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1429 bytes)  
+	-	`sha256:b37343f091cd0ffd2e8881824fa7eb48840fcaa1924b9df53edc6d5828a44255`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1389 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1d67ffbd95a6b961816519f50fa3d55ae7eb440d88109b8d6784a1093bfe62e2`  
-		Last Modified: Wed, 10 Nov 2021 21:11:11 GMT  
-		Size: 183.6 MB (183629721 bytes)  
+	-	`sha256:5a722237d8a9d82c5a0e0401f0d42603163f666c0dc8dba2f339c5858703d9e7`  
+		Last Modified: Thu, 11 Nov 2021 02:39:38 GMT  
+		Size: 183.9 MB (183948511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a06fd0b5df6b3417d9ff1f2bdf32c8c9ed0d6a0c45b70e6db8fb0a0019e361d7`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1415 bytes)  
+	-	`sha256:f983e129d00f1fc3c9459bca58fe6d4bf0f833ed18f5ccc0c1e4478aea0af48e`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1418 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `openjdk:18-ea-jdk-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull openjdk@sha256:ae714022fbaebf672f0d5718781b37285f6126101122843d24734fcce4a9e769
+$ docker pull openjdk@sha256:fc7df54e750b5c819b1e04005fa166205dbc9fb52fd811c6168e851534087208
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -37690,14 +36736,14 @@ $ docker pull openjdk@sha256:ae714022fbaebf672f0d5718781b37285f6126101122843d247
 ### `openjdk:18-ea-jdk-windowsservercore-ltsc2022` - windows version 10.0.20348.350; amd64
 
 ```console
-$ docker pull openjdk@sha256:e8255df62dff59325ca6e55e1bcc9080692eaefdcdbb1d7deaafb57971ee86de
+$ docker pull openjdk@sha256:9c20d60c7bde738f2c3e57e52aafbaecc57f1a5ec9c4b75dba7c45378b4acfeb
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.4 GB (2369632853 bytes)**  
+-	Total Size: **2.4 GB (2369930838 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c7f00655015db4254b3d0354638c0dbea2256f1b504ac92eb2577f6a5a1884f4`
+-	Image ID: `sha256:a5c6761474f0c566c146885a48d00326c719b7730871258da29aad263b932a4a`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -37714,15 +36760,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:23:41 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:23:42 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:23:43 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:23:44 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:24:32 GMT
+# Thu, 11 Nov 2021 02:22:29 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:22:30 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:22:31 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:23:15 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:24:34 GMT
+# Thu, 11 Nov 2021 02:23:16 GMT
 CMD ["jshell"]
 ```
 
@@ -37749,31 +36795,31 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:03:27 GMT  
 		Size: 549.7 KB (549708 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b698dd11831adf277aae025052bc6eef078afd78744099225fd6ecd561fdcb6f`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1379 bytes)  
+	-	`sha256:47a3965ec2551fcd1a6117196df95c018068b200db9142b813af85f8f05fac3f`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b0900c61346cbdc2e5203cfe88ec50506b93be59c3bd52564a8b95a1e0f5f4d`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1398 bytes)  
+	-	`sha256:157aee527ea6606caee0c3f88322e3dcee4605f52eb98706b7629d2f2d864f50`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:006246c3aa0e0f4bc3f01c03d0e7d48693d0725b25f3e78f3581915d92760caa`  
-		Last Modified: Wed, 10 Nov 2021 21:03:25 GMT  
-		Size: 1.4 KB (1355 bytes)  
+	-	`sha256:53b7b5633a2546c9bab04d431d13513305ffa78a8fd0fbb6871d649054b71248`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05f8dd5277feae03b608b6cc2ff3cd3dc5107d8e8b71c5d8af8412db74134f7b`  
-		Last Modified: Wed, 10 Nov 2021 21:06:46 GMT  
-		Size: 183.9 MB (183851222 bytes)  
+	-	`sha256:458a4ea681f6aaefe0ffff613b2b6902899d6cf784e658b99c5d2aefe9fd101c`  
+		Last Modified: Thu, 11 Nov 2021 02:35:31 GMT  
+		Size: 184.1 MB (184149058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:174ce1c5faf404eee966a95111144858ca8a1cd9b461dc6660bda459e2b91294`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1419 bytes)  
+	-	`sha256:b237936aa73b8bc01a1cd55260a8718087e351e2cf387793361369cb3067930f`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `openjdk:18-ea-nanoserver`
 
 ```console
-$ docker pull openjdk@sha256:2c698eed211dacdfcad8cfcf8bb65180e9feb2e4af011e0da302e5f09294fb74
+$ docker pull openjdk@sha256:6fb352605241063a7689cf99b1bc78fd5efaeab751e3a71c6f7d3012216b7f6a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -37783,14 +36829,14 @@ $ docker pull openjdk@sha256:2c698eed211dacdfcad8cfcf8bb65180e9feb2e4af011e0da30
 ### `openjdk:18-ea-nanoserver` - windows version 10.0.17763.2300; amd64
 
 ```console
-$ docker pull openjdk@sha256:76e7ce8921200c2da74218723265e748efb5b538bbc805d96e5875c35e6c9685
+$ docker pull openjdk@sha256:ec025d27caa59ea3603b6ff8e089dd88c2f7a26a69856dfc62c082c78b3c4969
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **289.7 MB (289705169 bytes)**  
+-	Total Size: **290.0 MB (290017954 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f605ec0f6d8620a8d7837798a5cb287e6f718b34f4aa184e494be9c400f5ee93`
+-	Image ID: `sha256:43881b592fbb5488ef2a1826031065b0507eaec5c09a746850b1813bc23ea083`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["cmd","\/s","\/c"]`
 
@@ -37807,13 +36853,13 @@ USER ContainerAdministrator
 RUN echo Updating PATH: %JAVA_HOME%\bin;%PATH% 	&& setx /M PATH %JAVA_HOME%\bin;%PATH% 	&& echo Complete.
 # Wed, 10 Nov 2021 20:32:07 GMT
 USER ContainerUser
-# Wed, 10 Nov 2021 20:32:08 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:32:23 GMT
-COPY dir:2484c24fc278a2a4f9b1faf3e56bed024398b36a40c94d33298963a00cd29cac in C:\openjdk-18 
-# Wed, 10 Nov 2021 20:32:37 GMT
+# Thu, 11 Nov 2021 02:26:55 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:27:10 GMT
+COPY dir:8d6a03ecb43a50e96e1ea8050215c3463f1cd25f09c6c66b339295cfb108fd47 in C:\openjdk-18 
+# Thu, 11 Nov 2021 02:27:24 GMT
 RUN echo Verifying install ... 	&& echo   javac --version && javac --version 	&& echo   java --version && java --version 	&& echo Complete.
-# Wed, 10 Nov 2021 20:32:37 GMT
+# Thu, 11 Nov 2021 02:27:25 GMT
 CMD ["jshell"]
 ```
 
@@ -37841,27 +36887,27 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:11:33 GMT  
 		Size: 1.1 KB (1138 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b032844458881830eff0be6c730b39b70a8e00d9d48b5614c499b10d0e55a131`  
-		Last Modified: Wed, 10 Nov 2021 21:11:33 GMT  
-		Size: 1.1 KB (1127 bytes)  
+	-	`sha256:a4f70cd085588ca56ede8ce99b00cd84e76e989217138f8d5d545c068b4b03aa`  
+		Last Modified: Thu, 11 Nov 2021 02:39:59 GMT  
+		Size: 1.2 KB (1167 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03cfe5eb122e63822c38ded40d5cef742bc695b3c16c2c099cbfae63d43c6588`  
-		Last Modified: Wed, 10 Nov 2021 21:11:54 GMT  
-		Size: 183.3 MB (183299359 bytes)  
+	-	`sha256:9a789c500a3d522aa9e0f7a275070ae5fda6f2c4a6aa83fda57c1c3f433f19cc`  
+		Last Modified: Thu, 11 Nov 2021 02:40:20 GMT  
+		Size: 183.6 MB (183609790 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88d4615c9ed406caf4fcd84446b3e0dd7e56d63892a56c81965b04d213d8a677`  
-		Last Modified: Wed, 10 Nov 2021 21:11:35 GMT  
-		Size: 3.5 MB (3541799 bytes)  
+	-	`sha256:26200be72d5e7969ea70fcb1e295e3833109ddf22ef6008b07d81e5d5ee8b2db`  
+		Last Modified: Thu, 11 Nov 2021 02:40:03 GMT  
+		Size: 3.5 MB (3544102 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14712278de59cab664f0e49fa0f1871ec5ab10ba4e7b6dbe5945492d496c781e`  
-		Last Modified: Wed, 10 Nov 2021 21:11:34 GMT  
-		Size: 1.2 KB (1166 bytes)  
+	-	`sha256:d2ba4ebf7124214086dba305e9d9525a45618109821d8d9ef384507222eb24ec`  
+		Last Modified: Thu, 11 Nov 2021 02:39:59 GMT  
+		Size: 1.2 KB (1177 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `openjdk:18-ea-nanoserver-1809`
 
 ```console
-$ docker pull openjdk@sha256:2c698eed211dacdfcad8cfcf8bb65180e9feb2e4af011e0da302e5f09294fb74
+$ docker pull openjdk@sha256:6fb352605241063a7689cf99b1bc78fd5efaeab751e3a71c6f7d3012216b7f6a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -37871,14 +36917,14 @@ $ docker pull openjdk@sha256:2c698eed211dacdfcad8cfcf8bb65180e9feb2e4af011e0da30
 ### `openjdk:18-ea-nanoserver-1809` - windows version 10.0.17763.2300; amd64
 
 ```console
-$ docker pull openjdk@sha256:76e7ce8921200c2da74218723265e748efb5b538bbc805d96e5875c35e6c9685
+$ docker pull openjdk@sha256:ec025d27caa59ea3603b6ff8e089dd88c2f7a26a69856dfc62c082c78b3c4969
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **289.7 MB (289705169 bytes)**  
+-	Total Size: **290.0 MB (290017954 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f605ec0f6d8620a8d7837798a5cb287e6f718b34f4aa184e494be9c400f5ee93`
+-	Image ID: `sha256:43881b592fbb5488ef2a1826031065b0507eaec5c09a746850b1813bc23ea083`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["cmd","\/s","\/c"]`
 
@@ -37895,13 +36941,13 @@ USER ContainerAdministrator
 RUN echo Updating PATH: %JAVA_HOME%\bin;%PATH% 	&& setx /M PATH %JAVA_HOME%\bin;%PATH% 	&& echo Complete.
 # Wed, 10 Nov 2021 20:32:07 GMT
 USER ContainerUser
-# Wed, 10 Nov 2021 20:32:08 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:32:23 GMT
-COPY dir:2484c24fc278a2a4f9b1faf3e56bed024398b36a40c94d33298963a00cd29cac in C:\openjdk-18 
-# Wed, 10 Nov 2021 20:32:37 GMT
+# Thu, 11 Nov 2021 02:26:55 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:27:10 GMT
+COPY dir:8d6a03ecb43a50e96e1ea8050215c3463f1cd25f09c6c66b339295cfb108fd47 in C:\openjdk-18 
+# Thu, 11 Nov 2021 02:27:24 GMT
 RUN echo Verifying install ... 	&& echo   javac --version && javac --version 	&& echo   java --version && java --version 	&& echo Complete.
-# Wed, 10 Nov 2021 20:32:37 GMT
+# Thu, 11 Nov 2021 02:27:25 GMT
 CMD ["jshell"]
 ```
 
@@ -37929,27 +36975,27 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:11:33 GMT  
 		Size: 1.1 KB (1138 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b032844458881830eff0be6c730b39b70a8e00d9d48b5614c499b10d0e55a131`  
-		Last Modified: Wed, 10 Nov 2021 21:11:33 GMT  
-		Size: 1.1 KB (1127 bytes)  
+	-	`sha256:a4f70cd085588ca56ede8ce99b00cd84e76e989217138f8d5d545c068b4b03aa`  
+		Last Modified: Thu, 11 Nov 2021 02:39:59 GMT  
+		Size: 1.2 KB (1167 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03cfe5eb122e63822c38ded40d5cef742bc695b3c16c2c099cbfae63d43c6588`  
-		Last Modified: Wed, 10 Nov 2021 21:11:54 GMT  
-		Size: 183.3 MB (183299359 bytes)  
+	-	`sha256:9a789c500a3d522aa9e0f7a275070ae5fda6f2c4a6aa83fda57c1c3f433f19cc`  
+		Last Modified: Thu, 11 Nov 2021 02:40:20 GMT  
+		Size: 183.6 MB (183609790 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88d4615c9ed406caf4fcd84446b3e0dd7e56d63892a56c81965b04d213d8a677`  
-		Last Modified: Wed, 10 Nov 2021 21:11:35 GMT  
-		Size: 3.5 MB (3541799 bytes)  
+	-	`sha256:26200be72d5e7969ea70fcb1e295e3833109ddf22ef6008b07d81e5d5ee8b2db`  
+		Last Modified: Thu, 11 Nov 2021 02:40:03 GMT  
+		Size: 3.5 MB (3544102 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14712278de59cab664f0e49fa0f1871ec5ab10ba4e7b6dbe5945492d496c781e`  
-		Last Modified: Wed, 10 Nov 2021 21:11:34 GMT  
-		Size: 1.2 KB (1166 bytes)  
+	-	`sha256:d2ba4ebf7124214086dba305e9d9525a45618109821d8d9ef384507222eb24ec`  
+		Last Modified: Thu, 11 Nov 2021 02:39:59 GMT  
+		Size: 1.2 KB (1177 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `openjdk:18-ea-oracle`
 
 ```console
-$ docker pull openjdk@sha256:6454022f8656aaa0fc08cbfcc617134fbb65e9bf91d0a8cb3a5fa9f45c43172e
+$ docker pull openjdk@sha256:d643bba5e4afc8f6f1f2b2729739b0a3d140559db78304f9c8c1380666f75f78
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -37960,14 +37006,14 @@ $ docker pull openjdk@sha256:6454022f8656aaa0fc08cbfcc617134fbb65e9bf91d0a8cb3a5
 ### `openjdk:18-ea-oracle` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:817b9de5fd1ed622c9080f216dd6b3040f3545be2c6026fe5d413628eb87edca
+$ docker pull openjdk@sha256:d91c50b89de0c4a4b5d4e9b528995006453b9867cb0dae41f100f89e851c9a52
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **243.6 MB (243585087 bytes)**  
+-	Total Size: **243.7 MB (243728237 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f55f011574655a28ccd27287ab45d17065ae9bbc0c4101281ffa665c385c2315`
+-	Image ID: `sha256:672ef7efeba8fe2ad1d923268b6836d1ecbff55754c90ed0fbfe47b4c214a6f8`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -37983,11 +37029,11 @@ ENV JAVA_HOME=/usr/java/openjdk-18
 ENV PATH=/usr/java/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 03 Nov 2021 22:37:07 GMT
 ENV LANG=C.UTF-8
-# Wed, 03 Nov 2021 22:37:07 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 03 Nov 2021 22:37:18 GMT
-RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 03 Nov 2021 22:37:19 GMT
+# Thu, 11 Nov 2021 02:27:47 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:27:58 GMT
+RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:27:59 GMT
 CMD ["jshell"]
 ```
 
@@ -38000,9 +37046,9 @@ CMD ["jshell"]
 		Last Modified: Wed, 03 Nov 2021 22:43:12 GMT  
 		Size: 13.5 MB (13491241 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9881991c1db3ee3e0c6ae7c15b8a4429c433a7655ffe01202511ebf51b6a2ec2`  
-		Last Modified: Wed, 03 Nov 2021 22:43:24 GMT  
-		Size: 188.1 MB (188125731 bytes)  
+	-	`sha256:9a2f4b2e287c44dde9d335364634f51085f3bc93889ea6d9112410318239f8b6`  
+		Last Modified: Thu, 11 Nov 2021 02:34:37 GMT  
+		Size: 188.3 MB (188268881 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-ea-oracle` - linux; arm64 variant v8
@@ -38056,7 +37102,7 @@ CMD ["jshell"]
 ## `openjdk:18-ea-oraclelinux7`
 
 ```console
-$ docker pull openjdk@sha256:ed3ba98351d2c4bff1800623b6038745140af2e79feac3ae6002caeb742449b6
+$ docker pull openjdk@sha256:1223fd016fdc028fdd4cc3ac80ad0353f8547c46f5d58428053d90bedbb85466
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -38067,14 +37113,14 @@ $ docker pull openjdk@sha256:ed3ba98351d2c4bff1800623b6038745140af2e79feac3ae600
 ### `openjdk:18-ea-oraclelinux7` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:ec196e338fa8bbd0d9287cc432100dfc2310577c6e39bb691e5c4aad00d6b521
+$ docker pull openjdk@sha256:ce4c326af7ac5a60c8ca40f44ae6ebb71a43eb165afe0d18716114faa2ae9241
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.9 MB (251855575 bytes)**  
+-	Total Size: **252.0 MB (251995533 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b3e91ba8ba9cb56e993c2ac26ea12609f055911aee8f7860b56f49f35da22f67`
+-	Image ID: `sha256:95bb93f8d111d78b4b3aafe543ea16de5c32e350d9517726baf0852b2f6f63c3`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -38090,11 +37136,11 @@ ENV JAVA_HOME=/usr/java/openjdk-18
 ENV PATH=/usr/java/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Thu, 28 Oct 2021 01:45:25 GMT
 ENV LANG=en_US.UTF-8
-# Mon, 01 Nov 2021 18:49:22 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 18:49:33 GMT
-RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 18:49:33 GMT
+# Thu, 11 Nov 2021 02:28:04 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:28:15 GMT
+RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:28:16 GMT
 CMD ["jshell"]
 ```
 
@@ -38107,9 +37153,9 @@ CMD ["jshell"]
 		Last Modified: Thu, 28 Oct 2021 01:53:12 GMT  
 		Size: 15.4 MB (15399150 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:745ba23332f5419699490030c7a251ae318678ad9f335be24081ace19121bf47`  
-		Last Modified: Mon, 01 Nov 2021 18:57:03 GMT  
-		Size: 188.1 MB (188127463 bytes)  
+	-	`sha256:60632eff72aeb95abb140b5e33b41e9e4d1f089f71271807f25b3f35c9257b0b`  
+		Last Modified: Thu, 11 Nov 2021 02:35:25 GMT  
+		Size: 188.3 MB (188267421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-ea-oraclelinux7` - linux; arm64 variant v8
@@ -38163,7 +37209,7 @@ CMD ["jshell"]
 ## `openjdk:18-ea-oraclelinux8`
 
 ```console
-$ docker pull openjdk@sha256:6454022f8656aaa0fc08cbfcc617134fbb65e9bf91d0a8cb3a5fa9f45c43172e
+$ docker pull openjdk@sha256:d643bba5e4afc8f6f1f2b2729739b0a3d140559db78304f9c8c1380666f75f78
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -38174,14 +37220,14 @@ $ docker pull openjdk@sha256:6454022f8656aaa0fc08cbfcc617134fbb65e9bf91d0a8cb3a5
 ### `openjdk:18-ea-oraclelinux8` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:817b9de5fd1ed622c9080f216dd6b3040f3545be2c6026fe5d413628eb87edca
+$ docker pull openjdk@sha256:d91c50b89de0c4a4b5d4e9b528995006453b9867cb0dae41f100f89e851c9a52
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **243.6 MB (243585087 bytes)**  
+-	Total Size: **243.7 MB (243728237 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f55f011574655a28ccd27287ab45d17065ae9bbc0c4101281ffa665c385c2315`
+-	Image ID: `sha256:672ef7efeba8fe2ad1d923268b6836d1ecbff55754c90ed0fbfe47b4c214a6f8`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -38197,11 +37243,11 @@ ENV JAVA_HOME=/usr/java/openjdk-18
 ENV PATH=/usr/java/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 03 Nov 2021 22:37:07 GMT
 ENV LANG=C.UTF-8
-# Wed, 03 Nov 2021 22:37:07 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 03 Nov 2021 22:37:18 GMT
-RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 03 Nov 2021 22:37:19 GMT
+# Thu, 11 Nov 2021 02:27:47 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:27:58 GMT
+RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:27:59 GMT
 CMD ["jshell"]
 ```
 
@@ -38214,9 +37260,9 @@ CMD ["jshell"]
 		Last Modified: Wed, 03 Nov 2021 22:43:12 GMT  
 		Size: 13.5 MB (13491241 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9881991c1db3ee3e0c6ae7c15b8a4429c433a7655ffe01202511ebf51b6a2ec2`  
-		Last Modified: Wed, 03 Nov 2021 22:43:24 GMT  
-		Size: 188.1 MB (188125731 bytes)  
+	-	`sha256:9a2f4b2e287c44dde9d335364634f51085f3bc93889ea6d9112410318239f8b6`  
+		Last Modified: Thu, 11 Nov 2021 02:34:37 GMT  
+		Size: 188.3 MB (188268881 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-ea-oraclelinux8` - linux; arm64 variant v8
@@ -38270,7 +37316,7 @@ CMD ["jshell"]
 ## `openjdk:18-ea-slim`
 
 ```console
-$ docker pull openjdk@sha256:9f9db4e7b8cf008882c23d60496ffbf92f2def52e97bb0967f5abb8cf971f9bc
+$ docker pull openjdk@sha256:59cc102cedda13409f4d02b3367e6887876c0e0cfa0564d025267572aa3cc7b3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -38281,14 +37327,14 @@ $ docker pull openjdk@sha256:9f9db4e7b8cf008882c23d60496ffbf92f2def52e97bb0967f5
 ### `openjdk:18-ea-slim` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:6fd2bf246d0585b450903c03cae374f975c7684cb4d52554a194ec4e88b33428
+$ docker pull openjdk@sha256:707dedb1245a645e5859bb79462c53cef7846ba447731b4d5640be0fc2b3f125
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **221.4 MB (221443148 bytes)**  
+-	Total Size: **221.6 MB (221583947 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b20796d1637bf5538d022dcb30a1d8c3f820c33258e7b524e180c7ba48599d75`
+-	Image ID: `sha256:d03fc506dd2f5806ae0628d561dc7d0353d9e5df598b9e7f90286567cbd7bac9`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -38304,11 +37350,11 @@ ENV JAVA_HOME=/usr/local/openjdk-18
 ENV PATH=/usr/local/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 12 Oct 2021 16:27:47 GMT
 ENV LANG=C.UTF-8
-# Mon, 01 Nov 2021 18:49:53 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 18:50:10 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 18:50:11 GMT
+# Thu, 11 Nov 2021 02:28:35 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:28:50 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:28:50 GMT
 CMD ["jshell"]
 ```
 
@@ -38321,9 +37367,9 @@ CMD ["jshell"]
 		Last Modified: Tue, 12 Oct 2021 16:42:59 GMT  
 		Size: 1.6 MB (1582043 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:efcc91b087b99e6e057cfe49d4fbbf2e1b3039f8876e7837244f8a4200d36aa9`  
-		Last Modified: Mon, 01 Nov 2021 18:58:09 GMT  
-		Size: 188.5 MB (188503794 bytes)  
+	-	`sha256:c94532e4ea740fa348bd5588336eb055aa252dca675396529409e0f2e392c981`  
+		Last Modified: Thu, 11 Nov 2021 02:36:33 GMT  
+		Size: 188.6 MB (188644593 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-ea-slim` - linux; arm64 variant v8
@@ -38377,7 +37423,7 @@ CMD ["jshell"]
 ## `openjdk:18-ea-slim-bullseye`
 
 ```console
-$ docker pull openjdk@sha256:9f9db4e7b8cf008882c23d60496ffbf92f2def52e97bb0967f5abb8cf971f9bc
+$ docker pull openjdk@sha256:59cc102cedda13409f4d02b3367e6887876c0e0cfa0564d025267572aa3cc7b3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -38388,14 +37434,14 @@ $ docker pull openjdk@sha256:9f9db4e7b8cf008882c23d60496ffbf92f2def52e97bb0967f5
 ### `openjdk:18-ea-slim-bullseye` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:6fd2bf246d0585b450903c03cae374f975c7684cb4d52554a194ec4e88b33428
+$ docker pull openjdk@sha256:707dedb1245a645e5859bb79462c53cef7846ba447731b4d5640be0fc2b3f125
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **221.4 MB (221443148 bytes)**  
+-	Total Size: **221.6 MB (221583947 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b20796d1637bf5538d022dcb30a1d8c3f820c33258e7b524e180c7ba48599d75`
+-	Image ID: `sha256:d03fc506dd2f5806ae0628d561dc7d0353d9e5df598b9e7f90286567cbd7bac9`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -38411,11 +37457,11 @@ ENV JAVA_HOME=/usr/local/openjdk-18
 ENV PATH=/usr/local/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 12 Oct 2021 16:27:47 GMT
 ENV LANG=C.UTF-8
-# Mon, 01 Nov 2021 18:49:53 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 18:50:10 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 18:50:11 GMT
+# Thu, 11 Nov 2021 02:28:35 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:28:50 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:28:50 GMT
 CMD ["jshell"]
 ```
 
@@ -38428,9 +37474,9 @@ CMD ["jshell"]
 		Last Modified: Tue, 12 Oct 2021 16:42:59 GMT  
 		Size: 1.6 MB (1582043 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:efcc91b087b99e6e057cfe49d4fbbf2e1b3039f8876e7837244f8a4200d36aa9`  
-		Last Modified: Mon, 01 Nov 2021 18:58:09 GMT  
-		Size: 188.5 MB (188503794 bytes)  
+	-	`sha256:c94532e4ea740fa348bd5588336eb055aa252dca675396529409e0f2e392c981`  
+		Last Modified: Thu, 11 Nov 2021 02:36:33 GMT  
+		Size: 188.6 MB (188644593 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-ea-slim-bullseye` - linux; arm64 variant v8
@@ -38484,7 +37530,7 @@ CMD ["jshell"]
 ## `openjdk:18-ea-slim-buster`
 
 ```console
-$ docker pull openjdk@sha256:7c76b028832c996c949f82f1374113176b1be0b49713681c4d65aded3275000c
+$ docker pull openjdk@sha256:90eee7860ea839b794db5729a1d285f6887a79806c0f6dfe43f083137f8f347b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -38495,14 +37541,14 @@ $ docker pull openjdk@sha256:7c76b028832c996c949f82f1374113176b1be0b49713681c4d6
 ### `openjdk:18-ea-slim-buster` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:5907363d51f46b81c780349dde095c0dc0ed3dad83474f66bc5f99ecda3aeb4c
+$ docker pull openjdk@sha256:ac0a7e52bccf05883a56614449482cb73614f5bc5b016e42874090760fb488b2
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **218.9 MB (218912828 bytes)**  
+-	Total Size: **219.1 MB (219058803 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:10653c2b68942341ef0ccbcdf71eef5d708ff40561371aef012f08d50bd62fdb`
+-	Image ID: `sha256:fe6ddbc7fa65084af20f557a980a70d6e8b197d4a7f95c5d30ba38f1daecb125`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -38518,11 +37564,11 @@ ENV JAVA_HOME=/usr/local/openjdk-18
 ENV PATH=/usr/local/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 12 Oct 2021 16:28:45 GMT
 ENV LANG=C.UTF-8
-# Mon, 01 Nov 2021 18:50:33 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 18:50:49 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 18:50:50 GMT
+# Thu, 11 Nov 2021 02:29:11 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:29:25 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:29:26 GMT
 CMD ["jshell"]
 ```
 
@@ -38535,9 +37581,9 @@ CMD ["jshell"]
 		Last Modified: Tue, 12 Oct 2021 16:44:29 GMT  
 		Size: 3.3 MB (3269598 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:669b832f4a79a98af0ed0f1f024cd2229b096d2e30b88cb3ff72c272ff08ffa2`  
-		Last Modified: Mon, 01 Nov 2021 18:59:33 GMT  
-		Size: 188.5 MB (188503720 bytes)  
+	-	`sha256:f05325d794d04afdfac5990f67bc56f76fa5288b25dfedb00d760c9b67910fbb`  
+		Last Modified: Thu, 11 Nov 2021 02:37:56 GMT  
+		Size: 188.6 MB (188649695 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-ea-slim-buster` - linux; arm64 variant v8
@@ -38591,7 +37637,7 @@ CMD ["jshell"]
 ## `openjdk:18-ea-windowsservercore`
 
 ```console
-$ docker pull openjdk@sha256:a991c6b5666e0d0edb90abea94e1ad76b3803a3b2f91841aed6ceae81380a206
+$ docker pull openjdk@sha256:916ceba5742a7ddd0fe8b131eb8ac2f81d5f4124e3262c11dc4e7d309e484f5c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -38603,14 +37649,14 @@ $ docker pull openjdk@sha256:a991c6b5666e0d0edb90abea94e1ad76b3803a3b2f91841aed6
 ### `openjdk:18-ea-windowsservercore` - windows version 10.0.20348.350; amd64
 
 ```console
-$ docker pull openjdk@sha256:e8255df62dff59325ca6e55e1bcc9080692eaefdcdbb1d7deaafb57971ee86de
+$ docker pull openjdk@sha256:9c20d60c7bde738f2c3e57e52aafbaecc57f1a5ec9c4b75dba7c45378b4acfeb
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.4 GB (2369632853 bytes)**  
+-	Total Size: **2.4 GB (2369930838 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c7f00655015db4254b3d0354638c0dbea2256f1b504ac92eb2577f6a5a1884f4`
+-	Image ID: `sha256:a5c6761474f0c566c146885a48d00326c719b7730871258da29aad263b932a4a`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -38627,15 +37673,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:23:41 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:23:42 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:23:43 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:23:44 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:24:32 GMT
+# Thu, 11 Nov 2021 02:22:29 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:22:30 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:22:31 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:23:15 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:24:34 GMT
+# Thu, 11 Nov 2021 02:23:16 GMT
 CMD ["jshell"]
 ```
 
@@ -38662,38 +37708,38 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:03:27 GMT  
 		Size: 549.7 KB (549708 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b698dd11831adf277aae025052bc6eef078afd78744099225fd6ecd561fdcb6f`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1379 bytes)  
+	-	`sha256:47a3965ec2551fcd1a6117196df95c018068b200db9142b813af85f8f05fac3f`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b0900c61346cbdc2e5203cfe88ec50506b93be59c3bd52564a8b95a1e0f5f4d`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1398 bytes)  
+	-	`sha256:157aee527ea6606caee0c3f88322e3dcee4605f52eb98706b7629d2f2d864f50`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:006246c3aa0e0f4bc3f01c03d0e7d48693d0725b25f3e78f3581915d92760caa`  
-		Last Modified: Wed, 10 Nov 2021 21:03:25 GMT  
-		Size: 1.4 KB (1355 bytes)  
+	-	`sha256:53b7b5633a2546c9bab04d431d13513305ffa78a8fd0fbb6871d649054b71248`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05f8dd5277feae03b608b6cc2ff3cd3dc5107d8e8b71c5d8af8412db74134f7b`  
-		Last Modified: Wed, 10 Nov 2021 21:06:46 GMT  
-		Size: 183.9 MB (183851222 bytes)  
+	-	`sha256:458a4ea681f6aaefe0ffff613b2b6902899d6cf784e658b99c5d2aefe9fd101c`  
+		Last Modified: Thu, 11 Nov 2021 02:35:31 GMT  
+		Size: 184.1 MB (184149058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:174ce1c5faf404eee966a95111144858ca8a1cd9b461dc6660bda459e2b91294`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1419 bytes)  
+	-	`sha256:b237936aa73b8bc01a1cd55260a8718087e351e2cf387793361369cb3067930f`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-ea-windowsservercore` - windows version 10.0.17763.2300; amd64
 
 ```console
-$ docker pull openjdk@sha256:2844a4f5ef91b81e8639e3c77c53eb720cb1a92d7615cb49e474db929c7f0e4d
+$ docker pull openjdk@sha256:8e32cdb2628a6f1f06929a6f3ce57025716a05db9885a170e8d4acb24002f91d
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 GB (2890432121 bytes)**  
+-	Total Size: **2.9 GB (2890756401 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:edb6fdab0d77d354269b0c787da93627f788070ff04e27610bf4d74ac6947dbb`
+-	Image ID: `sha256:50d8c70546f0046f36a731848b58b0bbf9e64784e0a12ad91de1219f225d97d4`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -38710,15 +37756,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:26:31 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:26:31 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:26:32 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:26:33 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:28:03 GMT
+# Thu, 11 Nov 2021 02:23:31 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:23:32 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:23:33 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:24:52 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:28:04 GMT
+# Thu, 11 Nov 2021 02:24:53 GMT
 CMD ["jshell"]
 ```
 
@@ -38745,38 +37791,38 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:07:09 GMT  
 		Size: 319.7 KB (319676 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f27f6a08e6bde711bb8374842ac82c0cad5fa223e6215af6895d7b1ae20ab601`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1435 bytes)  
+	-	`sha256:e82aaf27003bf2b62a2cc2dbd9cb4ff9a112f8ef1cf0240f81607382e7cd6138`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb17e13d4cdd0b960ba531f11242bb58c8a359c38dbd6bb4bdd03853994bc2ce`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1441 bytes)  
+	-	`sha256:98f36effb4b3b001319833edf8fc4e1a9b6008500dafad80385b5a4520aa3c29`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c847b4d31b558449e54882e692193c6e77fd877cb8d037083d8898f0a3e4efe6`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
+	-	`sha256:c64c2dd6bbf7811caa7ae295e72178094f00f1058f9918636ef7245bd24cc578`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1430 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:cdfbdd5d3b9376889190109d5cc7a4cf2377a4946e1ccc5535bd87d1cac3ca5d`  
+		Last Modified: Thu, 11 Nov 2021 02:36:10 GMT  
+		Size: 183.9 MB (183948230 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4465946c6c9661cbaf098a919fdf0be953f0cf789394679363d052795feb4f30`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
 		Size: 1.4 KB (1420 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95a35ec7cf69a61548328a852bd3c946f51685d419a4c79f87802db51db08c50`  
-		Last Modified: Wed, 10 Nov 2021 21:07:26 GMT  
-		Size: 183.6 MB (183623942 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5753877e7a39a9e13e30aa822049b0a084cda5de4a40cd5f6ace47ac2fc9eb10`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-ea-windowsservercore` - windows version 10.0.14393.4770; amd64
 
 ```console
-$ docker pull openjdk@sha256:393e2252dd54db1eae006103f025518c7a5ad43752461ed3d8ee1de90f0395ae
+$ docker pull openjdk@sha256:1fb6cb4679450a052002f19a809879940b24f5a42313a449b3abac847b5716b8
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.5 GB (6457431629 bytes)**  
+-	Total Size: **6.5 GB (6457750413 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d306462a846e7b818d1a0e0e8ab77db60ccccfd35a285ce2ee8647be0f0f9de`
+-	Image ID: `sha256:81a0d0a688c09412d0fc9d6c668fc54ceb91032a59439189764571f4987fa30a`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -38793,15 +37839,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:30:05 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:30:06 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:30:07 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:30:08 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:31:36 GMT
+# Thu, 11 Nov 2021 02:25:13 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:25:14 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:25:15 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:26:36 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:31:37 GMT
+# Thu, 11 Nov 2021 02:26:37 GMT
 CMD ["jshell"]
 ```
 
@@ -38828,31 +37874,31 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:07:51 GMT  
 		Size: 346.8 KB (346841 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1d9bca52a27503493f0c99b4a99920bf0977ea36e5c98d5640b9974957eaf1c`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1400 bytes)  
+	-	`sha256:83bd413e3a517265afe99693948983f594de2897cc86194a7d8d387b575e82a5`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1424 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87f3555ad46e455b194d91f0a0c93835b1f759bed8eca17a3a0dc657385bd13c`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1415 bytes)  
+	-	`sha256:43648bc0ccab1f3f49e25e4d2e08ad16e43fd15b3b877f2a9659cc2b8735924a`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2a124c261e3810baa7b86d3002f7c9bb0d9b74f151a368c9efdd7dbda0dd0d5`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1429 bytes)  
+	-	`sha256:b37343f091cd0ffd2e8881824fa7eb48840fcaa1924b9df53edc6d5828a44255`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1389 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1d67ffbd95a6b961816519f50fa3d55ae7eb440d88109b8d6784a1093bfe62e2`  
-		Last Modified: Wed, 10 Nov 2021 21:11:11 GMT  
-		Size: 183.6 MB (183629721 bytes)  
+	-	`sha256:5a722237d8a9d82c5a0e0401f0d42603163f666c0dc8dba2f339c5858703d9e7`  
+		Last Modified: Thu, 11 Nov 2021 02:39:38 GMT  
+		Size: 183.9 MB (183948511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a06fd0b5df6b3417d9ff1f2bdf32c8c9ed0d6a0c45b70e6db8fb0a0019e361d7`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1415 bytes)  
+	-	`sha256:f983e129d00f1fc3c9459bca58fe6d4bf0f833ed18f5ccc0c1e4478aea0af48e`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1418 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `openjdk:18-ea-windowsservercore-1809`
 
 ```console
-$ docker pull openjdk@sha256:e999c59a44c977dcb0c739cb733653de8ee93db07518187bcdfcc6d658d5f11e
+$ docker pull openjdk@sha256:a116b92ff8f5c5e37efe7bb82b121c54151e7b7d9e7e6fbf77bd6f2421ceca44
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -38862,14 +37908,14 @@ $ docker pull openjdk@sha256:e999c59a44c977dcb0c739cb733653de8ee93db07518187bcdf
 ### `openjdk:18-ea-windowsservercore-1809` - windows version 10.0.17763.2300; amd64
 
 ```console
-$ docker pull openjdk@sha256:2844a4f5ef91b81e8639e3c77c53eb720cb1a92d7615cb49e474db929c7f0e4d
+$ docker pull openjdk@sha256:8e32cdb2628a6f1f06929a6f3ce57025716a05db9885a170e8d4acb24002f91d
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 GB (2890432121 bytes)**  
+-	Total Size: **2.9 GB (2890756401 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:edb6fdab0d77d354269b0c787da93627f788070ff04e27610bf4d74ac6947dbb`
+-	Image ID: `sha256:50d8c70546f0046f36a731848b58b0bbf9e64784e0a12ad91de1219f225d97d4`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -38886,15 +37932,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:26:31 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:26:31 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:26:32 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:26:33 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:28:03 GMT
+# Thu, 11 Nov 2021 02:23:31 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:23:32 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:23:33 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:24:52 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:28:04 GMT
+# Thu, 11 Nov 2021 02:24:53 GMT
 CMD ["jshell"]
 ```
 
@@ -38921,31 +37967,31 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:07:09 GMT  
 		Size: 319.7 KB (319676 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f27f6a08e6bde711bb8374842ac82c0cad5fa223e6215af6895d7b1ae20ab601`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1435 bytes)  
+	-	`sha256:e82aaf27003bf2b62a2cc2dbd9cb4ff9a112f8ef1cf0240f81607382e7cd6138`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb17e13d4cdd0b960ba531f11242bb58c8a359c38dbd6bb4bdd03853994bc2ce`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1441 bytes)  
+	-	`sha256:98f36effb4b3b001319833edf8fc4e1a9b6008500dafad80385b5a4520aa3c29`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c847b4d31b558449e54882e692193c6e77fd877cb8d037083d8898f0a3e4efe6`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
+	-	`sha256:c64c2dd6bbf7811caa7ae295e72178094f00f1058f9918636ef7245bd24cc578`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1430 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:cdfbdd5d3b9376889190109d5cc7a4cf2377a4946e1ccc5535bd87d1cac3ca5d`  
+		Last Modified: Thu, 11 Nov 2021 02:36:10 GMT  
+		Size: 183.9 MB (183948230 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4465946c6c9661cbaf098a919fdf0be953f0cf789394679363d052795feb4f30`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
 		Size: 1.4 KB (1420 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95a35ec7cf69a61548328a852bd3c946f51685d419a4c79f87802db51db08c50`  
-		Last Modified: Wed, 10 Nov 2021 21:07:26 GMT  
-		Size: 183.6 MB (183623942 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5753877e7a39a9e13e30aa822049b0a084cda5de4a40cd5f6ace47ac2fc9eb10`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `openjdk:18-ea-windowsservercore-ltsc2016`
 
 ```console
-$ docker pull openjdk@sha256:938429f5ef4c5db2a518e461331aec2a5bd8f229d7b7d2cb31850cd2254ade27
+$ docker pull openjdk@sha256:a8f9c46981a31d619cbd7f2abebab8cbd77a7376e766f26b035f44912f60df9b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -38955,14 +38001,14 @@ $ docker pull openjdk@sha256:938429f5ef4c5db2a518e461331aec2a5bd8f229d7b7d2cb318
 ### `openjdk:18-ea-windowsservercore-ltsc2016` - windows version 10.0.14393.4770; amd64
 
 ```console
-$ docker pull openjdk@sha256:393e2252dd54db1eae006103f025518c7a5ad43752461ed3d8ee1de90f0395ae
+$ docker pull openjdk@sha256:1fb6cb4679450a052002f19a809879940b24f5a42313a449b3abac847b5716b8
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.5 GB (6457431629 bytes)**  
+-	Total Size: **6.5 GB (6457750413 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d306462a846e7b818d1a0e0e8ab77db60ccccfd35a285ce2ee8647be0f0f9de`
+-	Image ID: `sha256:81a0d0a688c09412d0fc9d6c668fc54ceb91032a59439189764571f4987fa30a`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -38979,15 +38025,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:30:05 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:30:06 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:30:07 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:30:08 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:31:36 GMT
+# Thu, 11 Nov 2021 02:25:13 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:25:14 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:25:15 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:26:36 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:31:37 GMT
+# Thu, 11 Nov 2021 02:26:37 GMT
 CMD ["jshell"]
 ```
 
@@ -39014,31 +38060,31 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:07:51 GMT  
 		Size: 346.8 KB (346841 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1d9bca52a27503493f0c99b4a99920bf0977ea36e5c98d5640b9974957eaf1c`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1400 bytes)  
+	-	`sha256:83bd413e3a517265afe99693948983f594de2897cc86194a7d8d387b575e82a5`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1424 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87f3555ad46e455b194d91f0a0c93835b1f759bed8eca17a3a0dc657385bd13c`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1415 bytes)  
+	-	`sha256:43648bc0ccab1f3f49e25e4d2e08ad16e43fd15b3b877f2a9659cc2b8735924a`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2a124c261e3810baa7b86d3002f7c9bb0d9b74f151a368c9efdd7dbda0dd0d5`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1429 bytes)  
+	-	`sha256:b37343f091cd0ffd2e8881824fa7eb48840fcaa1924b9df53edc6d5828a44255`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1389 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1d67ffbd95a6b961816519f50fa3d55ae7eb440d88109b8d6784a1093bfe62e2`  
-		Last Modified: Wed, 10 Nov 2021 21:11:11 GMT  
-		Size: 183.6 MB (183629721 bytes)  
+	-	`sha256:5a722237d8a9d82c5a0e0401f0d42603163f666c0dc8dba2f339c5858703d9e7`  
+		Last Modified: Thu, 11 Nov 2021 02:39:38 GMT  
+		Size: 183.9 MB (183948511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a06fd0b5df6b3417d9ff1f2bdf32c8c9ed0d6a0c45b70e6db8fb0a0019e361d7`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1415 bytes)  
+	-	`sha256:f983e129d00f1fc3c9459bca58fe6d4bf0f833ed18f5ccc0c1e4478aea0af48e`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1418 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `openjdk:18-ea-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull openjdk@sha256:ae714022fbaebf672f0d5718781b37285f6126101122843d24734fcce4a9e769
+$ docker pull openjdk@sha256:fc7df54e750b5c819b1e04005fa166205dbc9fb52fd811c6168e851534087208
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -39048,14 +38094,14 @@ $ docker pull openjdk@sha256:ae714022fbaebf672f0d5718781b37285f6126101122843d247
 ### `openjdk:18-ea-windowsservercore-ltsc2022` - windows version 10.0.20348.350; amd64
 
 ```console
-$ docker pull openjdk@sha256:e8255df62dff59325ca6e55e1bcc9080692eaefdcdbb1d7deaafb57971ee86de
+$ docker pull openjdk@sha256:9c20d60c7bde738f2c3e57e52aafbaecc57f1a5ec9c4b75dba7c45378b4acfeb
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.4 GB (2369632853 bytes)**  
+-	Total Size: **2.4 GB (2369930838 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c7f00655015db4254b3d0354638c0dbea2256f1b504ac92eb2577f6a5a1884f4`
+-	Image ID: `sha256:a5c6761474f0c566c146885a48d00326c719b7730871258da29aad263b932a4a`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -39072,15 +38118,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:23:41 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:23:42 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:23:43 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:23:44 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:24:32 GMT
+# Thu, 11 Nov 2021 02:22:29 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:22:30 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:22:31 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:23:15 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:24:34 GMT
+# Thu, 11 Nov 2021 02:23:16 GMT
 CMD ["jshell"]
 ```
 
@@ -39107,31 +38153,31 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:03:27 GMT  
 		Size: 549.7 KB (549708 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b698dd11831adf277aae025052bc6eef078afd78744099225fd6ecd561fdcb6f`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1379 bytes)  
+	-	`sha256:47a3965ec2551fcd1a6117196df95c018068b200db9142b813af85f8f05fac3f`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b0900c61346cbdc2e5203cfe88ec50506b93be59c3bd52564a8b95a1e0f5f4d`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1398 bytes)  
+	-	`sha256:157aee527ea6606caee0c3f88322e3dcee4605f52eb98706b7629d2f2d864f50`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:006246c3aa0e0f4bc3f01c03d0e7d48693d0725b25f3e78f3581915d92760caa`  
-		Last Modified: Wed, 10 Nov 2021 21:03:25 GMT  
-		Size: 1.4 KB (1355 bytes)  
+	-	`sha256:53b7b5633a2546c9bab04d431d13513305ffa78a8fd0fbb6871d649054b71248`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05f8dd5277feae03b608b6cc2ff3cd3dc5107d8e8b71c5d8af8412db74134f7b`  
-		Last Modified: Wed, 10 Nov 2021 21:06:46 GMT  
-		Size: 183.9 MB (183851222 bytes)  
+	-	`sha256:458a4ea681f6aaefe0ffff613b2b6902899d6cf784e658b99c5d2aefe9fd101c`  
+		Last Modified: Thu, 11 Nov 2021 02:35:31 GMT  
+		Size: 184.1 MB (184149058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:174ce1c5faf404eee966a95111144858ca8a1cd9b461dc6660bda459e2b91294`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1419 bytes)  
+	-	`sha256:b237936aa73b8bc01a1cd55260a8718087e351e2cf387793361369cb3067930f`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `openjdk:18-jdk`
 
 ```console
-$ docker pull openjdk@sha256:fe025977fd77a1cbfe1bc388a48b4b8776a200f4ddda1f828c41b355d68cbcfe
+$ docker pull openjdk@sha256:53a6bb7c29bce7dbe2c669c98c2c73f29aa9e9e487a5e64153523c230b6261a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -39145,14 +38191,14 @@ $ docker pull openjdk@sha256:fe025977fd77a1cbfe1bc388a48b4b8776a200f4ddda1f828c4
 ### `openjdk:18-jdk` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:817b9de5fd1ed622c9080f216dd6b3040f3545be2c6026fe5d413628eb87edca
+$ docker pull openjdk@sha256:d91c50b89de0c4a4b5d4e9b528995006453b9867cb0dae41f100f89e851c9a52
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **243.6 MB (243585087 bytes)**  
+-	Total Size: **243.7 MB (243728237 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f55f011574655a28ccd27287ab45d17065ae9bbc0c4101281ffa665c385c2315`
+-	Image ID: `sha256:672ef7efeba8fe2ad1d923268b6836d1ecbff55754c90ed0fbfe47b4c214a6f8`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -39168,11 +38214,11 @@ ENV JAVA_HOME=/usr/java/openjdk-18
 ENV PATH=/usr/java/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 03 Nov 2021 22:37:07 GMT
 ENV LANG=C.UTF-8
-# Wed, 03 Nov 2021 22:37:07 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 03 Nov 2021 22:37:18 GMT
-RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 03 Nov 2021 22:37:19 GMT
+# Thu, 11 Nov 2021 02:27:47 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:27:58 GMT
+RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:27:59 GMT
 CMD ["jshell"]
 ```
 
@@ -39185,9 +38231,9 @@ CMD ["jshell"]
 		Last Modified: Wed, 03 Nov 2021 22:43:12 GMT  
 		Size: 13.5 MB (13491241 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9881991c1db3ee3e0c6ae7c15b8a4429c433a7655ffe01202511ebf51b6a2ec2`  
-		Last Modified: Wed, 03 Nov 2021 22:43:24 GMT  
-		Size: 188.1 MB (188125731 bytes)  
+	-	`sha256:9a2f4b2e287c44dde9d335364634f51085f3bc93889ea6d9112410318239f8b6`  
+		Last Modified: Thu, 11 Nov 2021 02:34:37 GMT  
+		Size: 188.3 MB (188268881 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-jdk` - linux; arm64 variant v8
@@ -39241,14 +38287,14 @@ CMD ["jshell"]
 ### `openjdk:18-jdk` - windows version 10.0.20348.350; amd64
 
 ```console
-$ docker pull openjdk@sha256:e8255df62dff59325ca6e55e1bcc9080692eaefdcdbb1d7deaafb57971ee86de
+$ docker pull openjdk@sha256:9c20d60c7bde738f2c3e57e52aafbaecc57f1a5ec9c4b75dba7c45378b4acfeb
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.4 GB (2369632853 bytes)**  
+-	Total Size: **2.4 GB (2369930838 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c7f00655015db4254b3d0354638c0dbea2256f1b504ac92eb2577f6a5a1884f4`
+-	Image ID: `sha256:a5c6761474f0c566c146885a48d00326c719b7730871258da29aad263b932a4a`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -39265,15 +38311,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:23:41 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:23:42 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:23:43 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:23:44 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:24:32 GMT
+# Thu, 11 Nov 2021 02:22:29 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:22:30 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:22:31 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:23:15 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:24:34 GMT
+# Thu, 11 Nov 2021 02:23:16 GMT
 CMD ["jshell"]
 ```
 
@@ -39300,38 +38346,38 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:03:27 GMT  
 		Size: 549.7 KB (549708 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b698dd11831adf277aae025052bc6eef078afd78744099225fd6ecd561fdcb6f`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1379 bytes)  
+	-	`sha256:47a3965ec2551fcd1a6117196df95c018068b200db9142b813af85f8f05fac3f`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b0900c61346cbdc2e5203cfe88ec50506b93be59c3bd52564a8b95a1e0f5f4d`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1398 bytes)  
+	-	`sha256:157aee527ea6606caee0c3f88322e3dcee4605f52eb98706b7629d2f2d864f50`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:006246c3aa0e0f4bc3f01c03d0e7d48693d0725b25f3e78f3581915d92760caa`  
-		Last Modified: Wed, 10 Nov 2021 21:03:25 GMT  
-		Size: 1.4 KB (1355 bytes)  
+	-	`sha256:53b7b5633a2546c9bab04d431d13513305ffa78a8fd0fbb6871d649054b71248`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05f8dd5277feae03b608b6cc2ff3cd3dc5107d8e8b71c5d8af8412db74134f7b`  
-		Last Modified: Wed, 10 Nov 2021 21:06:46 GMT  
-		Size: 183.9 MB (183851222 bytes)  
+	-	`sha256:458a4ea681f6aaefe0ffff613b2b6902899d6cf784e658b99c5d2aefe9fd101c`  
+		Last Modified: Thu, 11 Nov 2021 02:35:31 GMT  
+		Size: 184.1 MB (184149058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:174ce1c5faf404eee966a95111144858ca8a1cd9b461dc6660bda459e2b91294`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1419 bytes)  
+	-	`sha256:b237936aa73b8bc01a1cd55260a8718087e351e2cf387793361369cb3067930f`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-jdk` - windows version 10.0.17763.2300; amd64
 
 ```console
-$ docker pull openjdk@sha256:2844a4f5ef91b81e8639e3c77c53eb720cb1a92d7615cb49e474db929c7f0e4d
+$ docker pull openjdk@sha256:8e32cdb2628a6f1f06929a6f3ce57025716a05db9885a170e8d4acb24002f91d
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 GB (2890432121 bytes)**  
+-	Total Size: **2.9 GB (2890756401 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:edb6fdab0d77d354269b0c787da93627f788070ff04e27610bf4d74ac6947dbb`
+-	Image ID: `sha256:50d8c70546f0046f36a731848b58b0bbf9e64784e0a12ad91de1219f225d97d4`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -39348,15 +38394,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:26:31 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:26:31 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:26:32 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:26:33 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:28:03 GMT
+# Thu, 11 Nov 2021 02:23:31 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:23:32 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:23:33 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:24:52 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:28:04 GMT
+# Thu, 11 Nov 2021 02:24:53 GMT
 CMD ["jshell"]
 ```
 
@@ -39383,38 +38429,38 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:07:09 GMT  
 		Size: 319.7 KB (319676 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f27f6a08e6bde711bb8374842ac82c0cad5fa223e6215af6895d7b1ae20ab601`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1435 bytes)  
+	-	`sha256:e82aaf27003bf2b62a2cc2dbd9cb4ff9a112f8ef1cf0240f81607382e7cd6138`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb17e13d4cdd0b960ba531f11242bb58c8a359c38dbd6bb4bdd03853994bc2ce`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1441 bytes)  
+	-	`sha256:98f36effb4b3b001319833edf8fc4e1a9b6008500dafad80385b5a4520aa3c29`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c847b4d31b558449e54882e692193c6e77fd877cb8d037083d8898f0a3e4efe6`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
+	-	`sha256:c64c2dd6bbf7811caa7ae295e72178094f00f1058f9918636ef7245bd24cc578`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1430 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:cdfbdd5d3b9376889190109d5cc7a4cf2377a4946e1ccc5535bd87d1cac3ca5d`  
+		Last Modified: Thu, 11 Nov 2021 02:36:10 GMT  
+		Size: 183.9 MB (183948230 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4465946c6c9661cbaf098a919fdf0be953f0cf789394679363d052795feb4f30`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
 		Size: 1.4 KB (1420 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95a35ec7cf69a61548328a852bd3c946f51685d419a4c79f87802db51db08c50`  
-		Last Modified: Wed, 10 Nov 2021 21:07:26 GMT  
-		Size: 183.6 MB (183623942 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5753877e7a39a9e13e30aa822049b0a084cda5de4a40cd5f6ace47ac2fc9eb10`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-jdk` - windows version 10.0.14393.4770; amd64
 
 ```console
-$ docker pull openjdk@sha256:393e2252dd54db1eae006103f025518c7a5ad43752461ed3d8ee1de90f0395ae
+$ docker pull openjdk@sha256:1fb6cb4679450a052002f19a809879940b24f5a42313a449b3abac847b5716b8
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.5 GB (6457431629 bytes)**  
+-	Total Size: **6.5 GB (6457750413 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d306462a846e7b818d1a0e0e8ab77db60ccccfd35a285ce2ee8647be0f0f9de`
+-	Image ID: `sha256:81a0d0a688c09412d0fc9d6c668fc54ceb91032a59439189764571f4987fa30a`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -39431,15 +38477,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:30:05 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:30:06 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:30:07 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:30:08 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:31:36 GMT
+# Thu, 11 Nov 2021 02:25:13 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:25:14 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:25:15 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:26:36 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:31:37 GMT
+# Thu, 11 Nov 2021 02:26:37 GMT
 CMD ["jshell"]
 ```
 
@@ -39466,25 +38512,25 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:07:51 GMT  
 		Size: 346.8 KB (346841 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1d9bca52a27503493f0c99b4a99920bf0977ea36e5c98d5640b9974957eaf1c`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1400 bytes)  
+	-	`sha256:83bd413e3a517265afe99693948983f594de2897cc86194a7d8d387b575e82a5`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1424 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87f3555ad46e455b194d91f0a0c93835b1f759bed8eca17a3a0dc657385bd13c`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1415 bytes)  
+	-	`sha256:43648bc0ccab1f3f49e25e4d2e08ad16e43fd15b3b877f2a9659cc2b8735924a`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2a124c261e3810baa7b86d3002f7c9bb0d9b74f151a368c9efdd7dbda0dd0d5`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1429 bytes)  
+	-	`sha256:b37343f091cd0ffd2e8881824fa7eb48840fcaa1924b9df53edc6d5828a44255`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1389 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1d67ffbd95a6b961816519f50fa3d55ae7eb440d88109b8d6784a1093bfe62e2`  
-		Last Modified: Wed, 10 Nov 2021 21:11:11 GMT  
-		Size: 183.6 MB (183629721 bytes)  
+	-	`sha256:5a722237d8a9d82c5a0e0401f0d42603163f666c0dc8dba2f339c5858703d9e7`  
+		Last Modified: Thu, 11 Nov 2021 02:39:38 GMT  
+		Size: 183.9 MB (183948511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a06fd0b5df6b3417d9ff1f2bdf32c8c9ed0d6a0c45b70e6db8fb0a0019e361d7`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1415 bytes)  
+	-	`sha256:f983e129d00f1fc3c9459bca58fe6d4bf0f833ed18f5ccc0c1e4478aea0af48e`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1418 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `openjdk:18-jdk-alpine`
@@ -39658,7 +38704,7 @@ CMD ["jshell"]
 ## `openjdk:18-jdk-bullseye`
 
 ```console
-$ docker pull openjdk@sha256:b34adb0bd4ef1fa7eb8a9ac59d70b70f09173679ecf0973b9b55458d9f63a062
+$ docker pull openjdk@sha256:7ec905a9bceb3214da3683a6c8a9c828922734a3d2cc9db7e2b265c920be8254
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -39669,14 +38715,14 @@ $ docker pull openjdk@sha256:b34adb0bd4ef1fa7eb8a9ac59d70b70f09173679ecf0973b9b5
 ### `openjdk:18-jdk-bullseye` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:15dd6622b67c43a37f419bece22f25e55079b58a4f10b9d84df8a5b5dbd8f375
+$ docker pull openjdk@sha256:a5fdf91444484a67739a2406539c153e4586ec3053a6d9bc5bedfe6c113997aa
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **327.8 MB (327817336 bytes)**  
+-	Total Size: **328.0 MB (327959593 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8214cbfc4e4baf5ddb3cb7d9c798a3e186ffa05cadde66de90fb313bb5ea7a9c`
+-	Image ID: `sha256:6f395a8ee4404de82b9d3db99d55f42b0621473a8933d5bc2fff2f800abdb8ff`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -39698,11 +38744,11 @@ ENV JAVA_HOME=/usr/local/openjdk-18
 ENV PATH=/usr/local/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 12 Oct 2021 16:27:22 GMT
 ENV LANG=C.UTF-8
-# Mon, 01 Nov 2021 18:49:36 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 18:49:49 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 18:49:50 GMT
+# Thu, 11 Nov 2021 02:28:19 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:28:30 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:28:31 GMT
 CMD ["jshell"]
 ```
 
@@ -39727,9 +38773,9 @@ CMD ["jshell"]
 		Last Modified: Tue, 12 Oct 2021 16:42:23 GMT  
 		Size: 14.1 MB (14071834 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:972fa5e33b31fd4ad24909410193a04068676af50abc0a41584d702abeb6cd37`  
-		Last Modified: Mon, 01 Nov 2021 18:57:35 GMT  
-		Size: 188.2 MB (188235013 bytes)  
+	-	`sha256:9ee19c4d65aa828166758ac92a6e4652f7e4a1867287ccf1dbcdc3f6cd9d9b0b`  
+		Last Modified: Thu, 11 Nov 2021 02:35:59 GMT  
+		Size: 188.4 MB (188377270 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-jdk-bullseye` - linux; arm64 variant v8
@@ -39801,7 +38847,7 @@ CMD ["jshell"]
 ## `openjdk:18-jdk-buster`
 
 ```console
-$ docker pull openjdk@sha256:0f44e827154b7126f229988255469485e4f45da794f0045aff384f694a727272
+$ docker pull openjdk@sha256:a4607fc5925dbe217020c82bd24e76230edce164e0715dfe8ba91db9c8279f29
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -39812,14 +38858,14 @@ $ docker pull openjdk@sha256:0f44e827154b7126f229988255469485e4f45da794f0045aff3
 ### `openjdk:18-jdk-buster` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:696584d92fd43941e89c6f843e004ec5e08307be179af47574446e46f50535f2
+$ docker pull openjdk@sha256:267b76c2fd454cb5d03ab6588a2b060d657e37c539e95d22f1dc22b0e8114136
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **322.3 MB (322265996 bytes)**  
+-	Total Size: **322.4 MB (322416320 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e100a7bfcd4933ce38e63845a379afee31d3550e20c59746b6b191d497210df5`
+-	Image ID: `sha256:b9f0939359ecbf4bdc0b810c623493f299bd238ac93c7cc216db6c24d57ed4dc`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -39841,11 +38887,11 @@ ENV JAVA_HOME=/usr/local/openjdk-18
 ENV PATH=/usr/local/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 12 Oct 2021 16:28:21 GMT
 ENV LANG=C.UTF-8
-# Mon, 01 Nov 2021 18:50:17 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 18:50:29 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 18:50:29 GMT
+# Thu, 11 Nov 2021 02:28:55 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:29:06 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:29:06 GMT
 CMD ["jshell"]
 ```
 
@@ -39870,9 +38916,9 @@ CMD ["jshell"]
 		Last Modified: Tue, 12 Oct 2021 16:43:50 GMT  
 		Size: 13.9 MB (13921295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bab5fe1454290004d1cebe69e0ae7e06ebd8c5a614ea3697558e7dfb9cf3e5aa`  
-		Last Modified: Mon, 01 Nov 2021 18:58:57 GMT  
-		Size: 188.2 MB (188236263 bytes)  
+	-	`sha256:e3d4c0b39f35cb25307b6b21a02705bd2d727c504c34e8a04ba355b6675faec4`  
+		Last Modified: Thu, 11 Nov 2021 02:37:21 GMT  
+		Size: 188.4 MB (188386587 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-jdk-buster` - linux; arm64 variant v8
@@ -39944,7 +38990,7 @@ CMD ["jshell"]
 ## `openjdk:18-jdk-nanoserver`
 
 ```console
-$ docker pull openjdk@sha256:2c698eed211dacdfcad8cfcf8bb65180e9feb2e4af011e0da302e5f09294fb74
+$ docker pull openjdk@sha256:6fb352605241063a7689cf99b1bc78fd5efaeab751e3a71c6f7d3012216b7f6a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -39954,14 +39000,14 @@ $ docker pull openjdk@sha256:2c698eed211dacdfcad8cfcf8bb65180e9feb2e4af011e0da30
 ### `openjdk:18-jdk-nanoserver` - windows version 10.0.17763.2300; amd64
 
 ```console
-$ docker pull openjdk@sha256:76e7ce8921200c2da74218723265e748efb5b538bbc805d96e5875c35e6c9685
+$ docker pull openjdk@sha256:ec025d27caa59ea3603b6ff8e089dd88c2f7a26a69856dfc62c082c78b3c4969
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **289.7 MB (289705169 bytes)**  
+-	Total Size: **290.0 MB (290017954 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f605ec0f6d8620a8d7837798a5cb287e6f718b34f4aa184e494be9c400f5ee93`
+-	Image ID: `sha256:43881b592fbb5488ef2a1826031065b0507eaec5c09a746850b1813bc23ea083`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["cmd","\/s","\/c"]`
 
@@ -39978,13 +39024,13 @@ USER ContainerAdministrator
 RUN echo Updating PATH: %JAVA_HOME%\bin;%PATH% 	&& setx /M PATH %JAVA_HOME%\bin;%PATH% 	&& echo Complete.
 # Wed, 10 Nov 2021 20:32:07 GMT
 USER ContainerUser
-# Wed, 10 Nov 2021 20:32:08 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:32:23 GMT
-COPY dir:2484c24fc278a2a4f9b1faf3e56bed024398b36a40c94d33298963a00cd29cac in C:\openjdk-18 
-# Wed, 10 Nov 2021 20:32:37 GMT
+# Thu, 11 Nov 2021 02:26:55 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:27:10 GMT
+COPY dir:8d6a03ecb43a50e96e1ea8050215c3463f1cd25f09c6c66b339295cfb108fd47 in C:\openjdk-18 
+# Thu, 11 Nov 2021 02:27:24 GMT
 RUN echo Verifying install ... 	&& echo   javac --version && javac --version 	&& echo   java --version && java --version 	&& echo Complete.
-# Wed, 10 Nov 2021 20:32:37 GMT
+# Thu, 11 Nov 2021 02:27:25 GMT
 CMD ["jshell"]
 ```
 
@@ -40012,27 +39058,27 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:11:33 GMT  
 		Size: 1.1 KB (1138 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b032844458881830eff0be6c730b39b70a8e00d9d48b5614c499b10d0e55a131`  
-		Last Modified: Wed, 10 Nov 2021 21:11:33 GMT  
-		Size: 1.1 KB (1127 bytes)  
+	-	`sha256:a4f70cd085588ca56ede8ce99b00cd84e76e989217138f8d5d545c068b4b03aa`  
+		Last Modified: Thu, 11 Nov 2021 02:39:59 GMT  
+		Size: 1.2 KB (1167 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03cfe5eb122e63822c38ded40d5cef742bc695b3c16c2c099cbfae63d43c6588`  
-		Last Modified: Wed, 10 Nov 2021 21:11:54 GMT  
-		Size: 183.3 MB (183299359 bytes)  
+	-	`sha256:9a789c500a3d522aa9e0f7a275070ae5fda6f2c4a6aa83fda57c1c3f433f19cc`  
+		Last Modified: Thu, 11 Nov 2021 02:40:20 GMT  
+		Size: 183.6 MB (183609790 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88d4615c9ed406caf4fcd84446b3e0dd7e56d63892a56c81965b04d213d8a677`  
-		Last Modified: Wed, 10 Nov 2021 21:11:35 GMT  
-		Size: 3.5 MB (3541799 bytes)  
+	-	`sha256:26200be72d5e7969ea70fcb1e295e3833109ddf22ef6008b07d81e5d5ee8b2db`  
+		Last Modified: Thu, 11 Nov 2021 02:40:03 GMT  
+		Size: 3.5 MB (3544102 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14712278de59cab664f0e49fa0f1871ec5ab10ba4e7b6dbe5945492d496c781e`  
-		Last Modified: Wed, 10 Nov 2021 21:11:34 GMT  
-		Size: 1.2 KB (1166 bytes)  
+	-	`sha256:d2ba4ebf7124214086dba305e9d9525a45618109821d8d9ef384507222eb24ec`  
+		Last Modified: Thu, 11 Nov 2021 02:39:59 GMT  
+		Size: 1.2 KB (1177 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `openjdk:18-jdk-nanoserver-1809`
 
 ```console
-$ docker pull openjdk@sha256:2c698eed211dacdfcad8cfcf8bb65180e9feb2e4af011e0da302e5f09294fb74
+$ docker pull openjdk@sha256:6fb352605241063a7689cf99b1bc78fd5efaeab751e3a71c6f7d3012216b7f6a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -40042,14 +39088,14 @@ $ docker pull openjdk@sha256:2c698eed211dacdfcad8cfcf8bb65180e9feb2e4af011e0da30
 ### `openjdk:18-jdk-nanoserver-1809` - windows version 10.0.17763.2300; amd64
 
 ```console
-$ docker pull openjdk@sha256:76e7ce8921200c2da74218723265e748efb5b538bbc805d96e5875c35e6c9685
+$ docker pull openjdk@sha256:ec025d27caa59ea3603b6ff8e089dd88c2f7a26a69856dfc62c082c78b3c4969
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **289.7 MB (289705169 bytes)**  
+-	Total Size: **290.0 MB (290017954 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f605ec0f6d8620a8d7837798a5cb287e6f718b34f4aa184e494be9c400f5ee93`
+-	Image ID: `sha256:43881b592fbb5488ef2a1826031065b0507eaec5c09a746850b1813bc23ea083`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["cmd","\/s","\/c"]`
 
@@ -40066,13 +39112,13 @@ USER ContainerAdministrator
 RUN echo Updating PATH: %JAVA_HOME%\bin;%PATH% 	&& setx /M PATH %JAVA_HOME%\bin;%PATH% 	&& echo Complete.
 # Wed, 10 Nov 2021 20:32:07 GMT
 USER ContainerUser
-# Wed, 10 Nov 2021 20:32:08 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:32:23 GMT
-COPY dir:2484c24fc278a2a4f9b1faf3e56bed024398b36a40c94d33298963a00cd29cac in C:\openjdk-18 
-# Wed, 10 Nov 2021 20:32:37 GMT
+# Thu, 11 Nov 2021 02:26:55 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:27:10 GMT
+COPY dir:8d6a03ecb43a50e96e1ea8050215c3463f1cd25f09c6c66b339295cfb108fd47 in C:\openjdk-18 
+# Thu, 11 Nov 2021 02:27:24 GMT
 RUN echo Verifying install ... 	&& echo   javac --version && javac --version 	&& echo   java --version && java --version 	&& echo Complete.
-# Wed, 10 Nov 2021 20:32:37 GMT
+# Thu, 11 Nov 2021 02:27:25 GMT
 CMD ["jshell"]
 ```
 
@@ -40100,27 +39146,27 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:11:33 GMT  
 		Size: 1.1 KB (1138 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b032844458881830eff0be6c730b39b70a8e00d9d48b5614c499b10d0e55a131`  
-		Last Modified: Wed, 10 Nov 2021 21:11:33 GMT  
-		Size: 1.1 KB (1127 bytes)  
+	-	`sha256:a4f70cd085588ca56ede8ce99b00cd84e76e989217138f8d5d545c068b4b03aa`  
+		Last Modified: Thu, 11 Nov 2021 02:39:59 GMT  
+		Size: 1.2 KB (1167 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03cfe5eb122e63822c38ded40d5cef742bc695b3c16c2c099cbfae63d43c6588`  
-		Last Modified: Wed, 10 Nov 2021 21:11:54 GMT  
-		Size: 183.3 MB (183299359 bytes)  
+	-	`sha256:9a789c500a3d522aa9e0f7a275070ae5fda6f2c4a6aa83fda57c1c3f433f19cc`  
+		Last Modified: Thu, 11 Nov 2021 02:40:20 GMT  
+		Size: 183.6 MB (183609790 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88d4615c9ed406caf4fcd84446b3e0dd7e56d63892a56c81965b04d213d8a677`  
-		Last Modified: Wed, 10 Nov 2021 21:11:35 GMT  
-		Size: 3.5 MB (3541799 bytes)  
+	-	`sha256:26200be72d5e7969ea70fcb1e295e3833109ddf22ef6008b07d81e5d5ee8b2db`  
+		Last Modified: Thu, 11 Nov 2021 02:40:03 GMT  
+		Size: 3.5 MB (3544102 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14712278de59cab664f0e49fa0f1871ec5ab10ba4e7b6dbe5945492d496c781e`  
-		Last Modified: Wed, 10 Nov 2021 21:11:34 GMT  
-		Size: 1.2 KB (1166 bytes)  
+	-	`sha256:d2ba4ebf7124214086dba305e9d9525a45618109821d8d9ef384507222eb24ec`  
+		Last Modified: Thu, 11 Nov 2021 02:39:59 GMT  
+		Size: 1.2 KB (1177 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `openjdk:18-jdk-oracle`
 
 ```console
-$ docker pull openjdk@sha256:6454022f8656aaa0fc08cbfcc617134fbb65e9bf91d0a8cb3a5fa9f45c43172e
+$ docker pull openjdk@sha256:d643bba5e4afc8f6f1f2b2729739b0a3d140559db78304f9c8c1380666f75f78
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -40131,14 +39177,14 @@ $ docker pull openjdk@sha256:6454022f8656aaa0fc08cbfcc617134fbb65e9bf91d0a8cb3a5
 ### `openjdk:18-jdk-oracle` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:817b9de5fd1ed622c9080f216dd6b3040f3545be2c6026fe5d413628eb87edca
+$ docker pull openjdk@sha256:d91c50b89de0c4a4b5d4e9b528995006453b9867cb0dae41f100f89e851c9a52
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **243.6 MB (243585087 bytes)**  
+-	Total Size: **243.7 MB (243728237 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f55f011574655a28ccd27287ab45d17065ae9bbc0c4101281ffa665c385c2315`
+-	Image ID: `sha256:672ef7efeba8fe2ad1d923268b6836d1ecbff55754c90ed0fbfe47b4c214a6f8`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -40154,11 +39200,11 @@ ENV JAVA_HOME=/usr/java/openjdk-18
 ENV PATH=/usr/java/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 03 Nov 2021 22:37:07 GMT
 ENV LANG=C.UTF-8
-# Wed, 03 Nov 2021 22:37:07 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 03 Nov 2021 22:37:18 GMT
-RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 03 Nov 2021 22:37:19 GMT
+# Thu, 11 Nov 2021 02:27:47 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:27:58 GMT
+RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:27:59 GMT
 CMD ["jshell"]
 ```
 
@@ -40171,9 +39217,9 @@ CMD ["jshell"]
 		Last Modified: Wed, 03 Nov 2021 22:43:12 GMT  
 		Size: 13.5 MB (13491241 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9881991c1db3ee3e0c6ae7c15b8a4429c433a7655ffe01202511ebf51b6a2ec2`  
-		Last Modified: Wed, 03 Nov 2021 22:43:24 GMT  
-		Size: 188.1 MB (188125731 bytes)  
+	-	`sha256:9a2f4b2e287c44dde9d335364634f51085f3bc93889ea6d9112410318239f8b6`  
+		Last Modified: Thu, 11 Nov 2021 02:34:37 GMT  
+		Size: 188.3 MB (188268881 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-jdk-oracle` - linux; arm64 variant v8
@@ -40227,7 +39273,7 @@ CMD ["jshell"]
 ## `openjdk:18-jdk-oraclelinux7`
 
 ```console
-$ docker pull openjdk@sha256:ed3ba98351d2c4bff1800623b6038745140af2e79feac3ae6002caeb742449b6
+$ docker pull openjdk@sha256:1223fd016fdc028fdd4cc3ac80ad0353f8547c46f5d58428053d90bedbb85466
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -40238,14 +39284,14 @@ $ docker pull openjdk@sha256:ed3ba98351d2c4bff1800623b6038745140af2e79feac3ae600
 ### `openjdk:18-jdk-oraclelinux7` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:ec196e338fa8bbd0d9287cc432100dfc2310577c6e39bb691e5c4aad00d6b521
+$ docker pull openjdk@sha256:ce4c326af7ac5a60c8ca40f44ae6ebb71a43eb165afe0d18716114faa2ae9241
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.9 MB (251855575 bytes)**  
+-	Total Size: **252.0 MB (251995533 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b3e91ba8ba9cb56e993c2ac26ea12609f055911aee8f7860b56f49f35da22f67`
+-	Image ID: `sha256:95bb93f8d111d78b4b3aafe543ea16de5c32e350d9517726baf0852b2f6f63c3`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -40261,11 +39307,11 @@ ENV JAVA_HOME=/usr/java/openjdk-18
 ENV PATH=/usr/java/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Thu, 28 Oct 2021 01:45:25 GMT
 ENV LANG=en_US.UTF-8
-# Mon, 01 Nov 2021 18:49:22 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 18:49:33 GMT
-RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 18:49:33 GMT
+# Thu, 11 Nov 2021 02:28:04 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:28:15 GMT
+RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:28:16 GMT
 CMD ["jshell"]
 ```
 
@@ -40278,9 +39324,9 @@ CMD ["jshell"]
 		Last Modified: Thu, 28 Oct 2021 01:53:12 GMT  
 		Size: 15.4 MB (15399150 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:745ba23332f5419699490030c7a251ae318678ad9f335be24081ace19121bf47`  
-		Last Modified: Mon, 01 Nov 2021 18:57:03 GMT  
-		Size: 188.1 MB (188127463 bytes)  
+	-	`sha256:60632eff72aeb95abb140b5e33b41e9e4d1f089f71271807f25b3f35c9257b0b`  
+		Last Modified: Thu, 11 Nov 2021 02:35:25 GMT  
+		Size: 188.3 MB (188267421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-jdk-oraclelinux7` - linux; arm64 variant v8
@@ -40334,7 +39380,7 @@ CMD ["jshell"]
 ## `openjdk:18-jdk-oraclelinux8`
 
 ```console
-$ docker pull openjdk@sha256:6454022f8656aaa0fc08cbfcc617134fbb65e9bf91d0a8cb3a5fa9f45c43172e
+$ docker pull openjdk@sha256:d643bba5e4afc8f6f1f2b2729739b0a3d140559db78304f9c8c1380666f75f78
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -40345,14 +39391,14 @@ $ docker pull openjdk@sha256:6454022f8656aaa0fc08cbfcc617134fbb65e9bf91d0a8cb3a5
 ### `openjdk:18-jdk-oraclelinux8` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:817b9de5fd1ed622c9080f216dd6b3040f3545be2c6026fe5d413628eb87edca
+$ docker pull openjdk@sha256:d91c50b89de0c4a4b5d4e9b528995006453b9867cb0dae41f100f89e851c9a52
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **243.6 MB (243585087 bytes)**  
+-	Total Size: **243.7 MB (243728237 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f55f011574655a28ccd27287ab45d17065ae9bbc0c4101281ffa665c385c2315`
+-	Image ID: `sha256:672ef7efeba8fe2ad1d923268b6836d1ecbff55754c90ed0fbfe47b4c214a6f8`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -40368,11 +39414,11 @@ ENV JAVA_HOME=/usr/java/openjdk-18
 ENV PATH=/usr/java/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 03 Nov 2021 22:37:07 GMT
 ENV LANG=C.UTF-8
-# Wed, 03 Nov 2021 22:37:07 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 03 Nov 2021 22:37:18 GMT
-RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 03 Nov 2021 22:37:19 GMT
+# Thu, 11 Nov 2021 02:27:47 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:27:58 GMT
+RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:27:59 GMT
 CMD ["jshell"]
 ```
 
@@ -40385,9 +39431,9 @@ CMD ["jshell"]
 		Last Modified: Wed, 03 Nov 2021 22:43:12 GMT  
 		Size: 13.5 MB (13491241 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9881991c1db3ee3e0c6ae7c15b8a4429c433a7655ffe01202511ebf51b6a2ec2`  
-		Last Modified: Wed, 03 Nov 2021 22:43:24 GMT  
-		Size: 188.1 MB (188125731 bytes)  
+	-	`sha256:9a2f4b2e287c44dde9d335364634f51085f3bc93889ea6d9112410318239f8b6`  
+		Last Modified: Thu, 11 Nov 2021 02:34:37 GMT  
+		Size: 188.3 MB (188268881 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-jdk-oraclelinux8` - linux; arm64 variant v8
@@ -40441,7 +39487,7 @@ CMD ["jshell"]
 ## `openjdk:18-jdk-slim`
 
 ```console
-$ docker pull openjdk@sha256:9f9db4e7b8cf008882c23d60496ffbf92f2def52e97bb0967f5abb8cf971f9bc
+$ docker pull openjdk@sha256:59cc102cedda13409f4d02b3367e6887876c0e0cfa0564d025267572aa3cc7b3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -40452,14 +39498,14 @@ $ docker pull openjdk@sha256:9f9db4e7b8cf008882c23d60496ffbf92f2def52e97bb0967f5
 ### `openjdk:18-jdk-slim` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:6fd2bf246d0585b450903c03cae374f975c7684cb4d52554a194ec4e88b33428
+$ docker pull openjdk@sha256:707dedb1245a645e5859bb79462c53cef7846ba447731b4d5640be0fc2b3f125
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **221.4 MB (221443148 bytes)**  
+-	Total Size: **221.6 MB (221583947 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b20796d1637bf5538d022dcb30a1d8c3f820c33258e7b524e180c7ba48599d75`
+-	Image ID: `sha256:d03fc506dd2f5806ae0628d561dc7d0353d9e5df598b9e7f90286567cbd7bac9`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -40475,11 +39521,11 @@ ENV JAVA_HOME=/usr/local/openjdk-18
 ENV PATH=/usr/local/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 12 Oct 2021 16:27:47 GMT
 ENV LANG=C.UTF-8
-# Mon, 01 Nov 2021 18:49:53 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 18:50:10 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 18:50:11 GMT
+# Thu, 11 Nov 2021 02:28:35 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:28:50 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:28:50 GMT
 CMD ["jshell"]
 ```
 
@@ -40492,9 +39538,9 @@ CMD ["jshell"]
 		Last Modified: Tue, 12 Oct 2021 16:42:59 GMT  
 		Size: 1.6 MB (1582043 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:efcc91b087b99e6e057cfe49d4fbbf2e1b3039f8876e7837244f8a4200d36aa9`  
-		Last Modified: Mon, 01 Nov 2021 18:58:09 GMT  
-		Size: 188.5 MB (188503794 bytes)  
+	-	`sha256:c94532e4ea740fa348bd5588336eb055aa252dca675396529409e0f2e392c981`  
+		Last Modified: Thu, 11 Nov 2021 02:36:33 GMT  
+		Size: 188.6 MB (188644593 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-jdk-slim` - linux; arm64 variant v8
@@ -40548,7 +39594,7 @@ CMD ["jshell"]
 ## `openjdk:18-jdk-slim-bullseye`
 
 ```console
-$ docker pull openjdk@sha256:9f9db4e7b8cf008882c23d60496ffbf92f2def52e97bb0967f5abb8cf971f9bc
+$ docker pull openjdk@sha256:59cc102cedda13409f4d02b3367e6887876c0e0cfa0564d025267572aa3cc7b3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -40559,14 +39605,14 @@ $ docker pull openjdk@sha256:9f9db4e7b8cf008882c23d60496ffbf92f2def52e97bb0967f5
 ### `openjdk:18-jdk-slim-bullseye` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:6fd2bf246d0585b450903c03cae374f975c7684cb4d52554a194ec4e88b33428
+$ docker pull openjdk@sha256:707dedb1245a645e5859bb79462c53cef7846ba447731b4d5640be0fc2b3f125
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **221.4 MB (221443148 bytes)**  
+-	Total Size: **221.6 MB (221583947 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b20796d1637bf5538d022dcb30a1d8c3f820c33258e7b524e180c7ba48599d75`
+-	Image ID: `sha256:d03fc506dd2f5806ae0628d561dc7d0353d9e5df598b9e7f90286567cbd7bac9`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -40582,11 +39628,11 @@ ENV JAVA_HOME=/usr/local/openjdk-18
 ENV PATH=/usr/local/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 12 Oct 2021 16:27:47 GMT
 ENV LANG=C.UTF-8
-# Mon, 01 Nov 2021 18:49:53 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 18:50:10 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 18:50:11 GMT
+# Thu, 11 Nov 2021 02:28:35 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:28:50 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:28:50 GMT
 CMD ["jshell"]
 ```
 
@@ -40599,9 +39645,9 @@ CMD ["jshell"]
 		Last Modified: Tue, 12 Oct 2021 16:42:59 GMT  
 		Size: 1.6 MB (1582043 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:efcc91b087b99e6e057cfe49d4fbbf2e1b3039f8876e7837244f8a4200d36aa9`  
-		Last Modified: Mon, 01 Nov 2021 18:58:09 GMT  
-		Size: 188.5 MB (188503794 bytes)  
+	-	`sha256:c94532e4ea740fa348bd5588336eb055aa252dca675396529409e0f2e392c981`  
+		Last Modified: Thu, 11 Nov 2021 02:36:33 GMT  
+		Size: 188.6 MB (188644593 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-jdk-slim-bullseye` - linux; arm64 variant v8
@@ -40655,7 +39701,7 @@ CMD ["jshell"]
 ## `openjdk:18-jdk-slim-buster`
 
 ```console
-$ docker pull openjdk@sha256:7c76b028832c996c949f82f1374113176b1be0b49713681c4d65aded3275000c
+$ docker pull openjdk@sha256:90eee7860ea839b794db5729a1d285f6887a79806c0f6dfe43f083137f8f347b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -40666,14 +39712,14 @@ $ docker pull openjdk@sha256:7c76b028832c996c949f82f1374113176b1be0b49713681c4d6
 ### `openjdk:18-jdk-slim-buster` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:5907363d51f46b81c780349dde095c0dc0ed3dad83474f66bc5f99ecda3aeb4c
+$ docker pull openjdk@sha256:ac0a7e52bccf05883a56614449482cb73614f5bc5b016e42874090760fb488b2
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **218.9 MB (218912828 bytes)**  
+-	Total Size: **219.1 MB (219058803 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:10653c2b68942341ef0ccbcdf71eef5d708ff40561371aef012f08d50bd62fdb`
+-	Image ID: `sha256:fe6ddbc7fa65084af20f557a980a70d6e8b197d4a7f95c5d30ba38f1daecb125`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -40689,11 +39735,11 @@ ENV JAVA_HOME=/usr/local/openjdk-18
 ENV PATH=/usr/local/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 12 Oct 2021 16:28:45 GMT
 ENV LANG=C.UTF-8
-# Mon, 01 Nov 2021 18:50:33 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 18:50:49 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 18:50:50 GMT
+# Thu, 11 Nov 2021 02:29:11 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:29:25 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:29:26 GMT
 CMD ["jshell"]
 ```
 
@@ -40706,9 +39752,9 @@ CMD ["jshell"]
 		Last Modified: Tue, 12 Oct 2021 16:44:29 GMT  
 		Size: 3.3 MB (3269598 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:669b832f4a79a98af0ed0f1f024cd2229b096d2e30b88cb3ff72c272ff08ffa2`  
-		Last Modified: Mon, 01 Nov 2021 18:59:33 GMT  
-		Size: 188.5 MB (188503720 bytes)  
+	-	`sha256:f05325d794d04afdfac5990f67bc56f76fa5288b25dfedb00d760c9b67910fbb`  
+		Last Modified: Thu, 11 Nov 2021 02:37:56 GMT  
+		Size: 188.6 MB (188649695 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-jdk-slim-buster` - linux; arm64 variant v8
@@ -40762,7 +39808,7 @@ CMD ["jshell"]
 ## `openjdk:18-jdk-windowsservercore`
 
 ```console
-$ docker pull openjdk@sha256:a991c6b5666e0d0edb90abea94e1ad76b3803a3b2f91841aed6ceae81380a206
+$ docker pull openjdk@sha256:916ceba5742a7ddd0fe8b131eb8ac2f81d5f4124e3262c11dc4e7d309e484f5c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -40774,14 +39820,14 @@ $ docker pull openjdk@sha256:a991c6b5666e0d0edb90abea94e1ad76b3803a3b2f91841aed6
 ### `openjdk:18-jdk-windowsservercore` - windows version 10.0.20348.350; amd64
 
 ```console
-$ docker pull openjdk@sha256:e8255df62dff59325ca6e55e1bcc9080692eaefdcdbb1d7deaafb57971ee86de
+$ docker pull openjdk@sha256:9c20d60c7bde738f2c3e57e52aafbaecc57f1a5ec9c4b75dba7c45378b4acfeb
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.4 GB (2369632853 bytes)**  
+-	Total Size: **2.4 GB (2369930838 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c7f00655015db4254b3d0354638c0dbea2256f1b504ac92eb2577f6a5a1884f4`
+-	Image ID: `sha256:a5c6761474f0c566c146885a48d00326c719b7730871258da29aad263b932a4a`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -40798,15 +39844,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:23:41 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:23:42 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:23:43 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:23:44 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:24:32 GMT
+# Thu, 11 Nov 2021 02:22:29 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:22:30 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:22:31 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:23:15 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:24:34 GMT
+# Thu, 11 Nov 2021 02:23:16 GMT
 CMD ["jshell"]
 ```
 
@@ -40833,38 +39879,38 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:03:27 GMT  
 		Size: 549.7 KB (549708 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b698dd11831adf277aae025052bc6eef078afd78744099225fd6ecd561fdcb6f`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1379 bytes)  
+	-	`sha256:47a3965ec2551fcd1a6117196df95c018068b200db9142b813af85f8f05fac3f`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b0900c61346cbdc2e5203cfe88ec50506b93be59c3bd52564a8b95a1e0f5f4d`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1398 bytes)  
+	-	`sha256:157aee527ea6606caee0c3f88322e3dcee4605f52eb98706b7629d2f2d864f50`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:006246c3aa0e0f4bc3f01c03d0e7d48693d0725b25f3e78f3581915d92760caa`  
-		Last Modified: Wed, 10 Nov 2021 21:03:25 GMT  
-		Size: 1.4 KB (1355 bytes)  
+	-	`sha256:53b7b5633a2546c9bab04d431d13513305ffa78a8fd0fbb6871d649054b71248`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05f8dd5277feae03b608b6cc2ff3cd3dc5107d8e8b71c5d8af8412db74134f7b`  
-		Last Modified: Wed, 10 Nov 2021 21:06:46 GMT  
-		Size: 183.9 MB (183851222 bytes)  
+	-	`sha256:458a4ea681f6aaefe0ffff613b2b6902899d6cf784e658b99c5d2aefe9fd101c`  
+		Last Modified: Thu, 11 Nov 2021 02:35:31 GMT  
+		Size: 184.1 MB (184149058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:174ce1c5faf404eee966a95111144858ca8a1cd9b461dc6660bda459e2b91294`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1419 bytes)  
+	-	`sha256:b237936aa73b8bc01a1cd55260a8718087e351e2cf387793361369cb3067930f`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-jdk-windowsservercore` - windows version 10.0.17763.2300; amd64
 
 ```console
-$ docker pull openjdk@sha256:2844a4f5ef91b81e8639e3c77c53eb720cb1a92d7615cb49e474db929c7f0e4d
+$ docker pull openjdk@sha256:8e32cdb2628a6f1f06929a6f3ce57025716a05db9885a170e8d4acb24002f91d
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 GB (2890432121 bytes)**  
+-	Total Size: **2.9 GB (2890756401 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:edb6fdab0d77d354269b0c787da93627f788070ff04e27610bf4d74ac6947dbb`
+-	Image ID: `sha256:50d8c70546f0046f36a731848b58b0bbf9e64784e0a12ad91de1219f225d97d4`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -40881,15 +39927,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:26:31 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:26:31 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:26:32 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:26:33 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:28:03 GMT
+# Thu, 11 Nov 2021 02:23:31 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:23:32 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:23:33 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:24:52 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:28:04 GMT
+# Thu, 11 Nov 2021 02:24:53 GMT
 CMD ["jshell"]
 ```
 
@@ -40916,38 +39962,38 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:07:09 GMT  
 		Size: 319.7 KB (319676 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f27f6a08e6bde711bb8374842ac82c0cad5fa223e6215af6895d7b1ae20ab601`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1435 bytes)  
+	-	`sha256:e82aaf27003bf2b62a2cc2dbd9cb4ff9a112f8ef1cf0240f81607382e7cd6138`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb17e13d4cdd0b960ba531f11242bb58c8a359c38dbd6bb4bdd03853994bc2ce`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1441 bytes)  
+	-	`sha256:98f36effb4b3b001319833edf8fc4e1a9b6008500dafad80385b5a4520aa3c29`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c847b4d31b558449e54882e692193c6e77fd877cb8d037083d8898f0a3e4efe6`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
+	-	`sha256:c64c2dd6bbf7811caa7ae295e72178094f00f1058f9918636ef7245bd24cc578`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1430 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:cdfbdd5d3b9376889190109d5cc7a4cf2377a4946e1ccc5535bd87d1cac3ca5d`  
+		Last Modified: Thu, 11 Nov 2021 02:36:10 GMT  
+		Size: 183.9 MB (183948230 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4465946c6c9661cbaf098a919fdf0be953f0cf789394679363d052795feb4f30`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
 		Size: 1.4 KB (1420 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95a35ec7cf69a61548328a852bd3c946f51685d419a4c79f87802db51db08c50`  
-		Last Modified: Wed, 10 Nov 2021 21:07:26 GMT  
-		Size: 183.6 MB (183623942 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5753877e7a39a9e13e30aa822049b0a084cda5de4a40cd5f6ace47ac2fc9eb10`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-jdk-windowsservercore` - windows version 10.0.14393.4770; amd64
 
 ```console
-$ docker pull openjdk@sha256:393e2252dd54db1eae006103f025518c7a5ad43752461ed3d8ee1de90f0395ae
+$ docker pull openjdk@sha256:1fb6cb4679450a052002f19a809879940b24f5a42313a449b3abac847b5716b8
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.5 GB (6457431629 bytes)**  
+-	Total Size: **6.5 GB (6457750413 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d306462a846e7b818d1a0e0e8ab77db60ccccfd35a285ce2ee8647be0f0f9de`
+-	Image ID: `sha256:81a0d0a688c09412d0fc9d6c668fc54ceb91032a59439189764571f4987fa30a`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -40964,15 +40010,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:30:05 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:30:06 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:30:07 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:30:08 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:31:36 GMT
+# Thu, 11 Nov 2021 02:25:13 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:25:14 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:25:15 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:26:36 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:31:37 GMT
+# Thu, 11 Nov 2021 02:26:37 GMT
 CMD ["jshell"]
 ```
 
@@ -40999,31 +40045,31 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:07:51 GMT  
 		Size: 346.8 KB (346841 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1d9bca52a27503493f0c99b4a99920bf0977ea36e5c98d5640b9974957eaf1c`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1400 bytes)  
+	-	`sha256:83bd413e3a517265afe99693948983f594de2897cc86194a7d8d387b575e82a5`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1424 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87f3555ad46e455b194d91f0a0c93835b1f759bed8eca17a3a0dc657385bd13c`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1415 bytes)  
+	-	`sha256:43648bc0ccab1f3f49e25e4d2e08ad16e43fd15b3b877f2a9659cc2b8735924a`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2a124c261e3810baa7b86d3002f7c9bb0d9b74f151a368c9efdd7dbda0dd0d5`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1429 bytes)  
+	-	`sha256:b37343f091cd0ffd2e8881824fa7eb48840fcaa1924b9df53edc6d5828a44255`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1389 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1d67ffbd95a6b961816519f50fa3d55ae7eb440d88109b8d6784a1093bfe62e2`  
-		Last Modified: Wed, 10 Nov 2021 21:11:11 GMT  
-		Size: 183.6 MB (183629721 bytes)  
+	-	`sha256:5a722237d8a9d82c5a0e0401f0d42603163f666c0dc8dba2f339c5858703d9e7`  
+		Last Modified: Thu, 11 Nov 2021 02:39:38 GMT  
+		Size: 183.9 MB (183948511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a06fd0b5df6b3417d9ff1f2bdf32c8c9ed0d6a0c45b70e6db8fb0a0019e361d7`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1415 bytes)  
+	-	`sha256:f983e129d00f1fc3c9459bca58fe6d4bf0f833ed18f5ccc0c1e4478aea0af48e`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1418 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `openjdk:18-jdk-windowsservercore-1809`
 
 ```console
-$ docker pull openjdk@sha256:e999c59a44c977dcb0c739cb733653de8ee93db07518187bcdfcc6d658d5f11e
+$ docker pull openjdk@sha256:a116b92ff8f5c5e37efe7bb82b121c54151e7b7d9e7e6fbf77bd6f2421ceca44
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -41033,14 +40079,14 @@ $ docker pull openjdk@sha256:e999c59a44c977dcb0c739cb733653de8ee93db07518187bcdf
 ### `openjdk:18-jdk-windowsservercore-1809` - windows version 10.0.17763.2300; amd64
 
 ```console
-$ docker pull openjdk@sha256:2844a4f5ef91b81e8639e3c77c53eb720cb1a92d7615cb49e474db929c7f0e4d
+$ docker pull openjdk@sha256:8e32cdb2628a6f1f06929a6f3ce57025716a05db9885a170e8d4acb24002f91d
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 GB (2890432121 bytes)**  
+-	Total Size: **2.9 GB (2890756401 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:edb6fdab0d77d354269b0c787da93627f788070ff04e27610bf4d74ac6947dbb`
+-	Image ID: `sha256:50d8c70546f0046f36a731848b58b0bbf9e64784e0a12ad91de1219f225d97d4`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -41057,15 +40103,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:26:31 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:26:31 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:26:32 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:26:33 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:28:03 GMT
+# Thu, 11 Nov 2021 02:23:31 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:23:32 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:23:33 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:24:52 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:28:04 GMT
+# Thu, 11 Nov 2021 02:24:53 GMT
 CMD ["jshell"]
 ```
 
@@ -41092,31 +40138,31 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:07:09 GMT  
 		Size: 319.7 KB (319676 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f27f6a08e6bde711bb8374842ac82c0cad5fa223e6215af6895d7b1ae20ab601`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1435 bytes)  
+	-	`sha256:e82aaf27003bf2b62a2cc2dbd9cb4ff9a112f8ef1cf0240f81607382e7cd6138`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb17e13d4cdd0b960ba531f11242bb58c8a359c38dbd6bb4bdd03853994bc2ce`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1441 bytes)  
+	-	`sha256:98f36effb4b3b001319833edf8fc4e1a9b6008500dafad80385b5a4520aa3c29`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c847b4d31b558449e54882e692193c6e77fd877cb8d037083d8898f0a3e4efe6`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
+	-	`sha256:c64c2dd6bbf7811caa7ae295e72178094f00f1058f9918636ef7245bd24cc578`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1430 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:cdfbdd5d3b9376889190109d5cc7a4cf2377a4946e1ccc5535bd87d1cac3ca5d`  
+		Last Modified: Thu, 11 Nov 2021 02:36:10 GMT  
+		Size: 183.9 MB (183948230 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4465946c6c9661cbaf098a919fdf0be953f0cf789394679363d052795feb4f30`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
 		Size: 1.4 KB (1420 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95a35ec7cf69a61548328a852bd3c946f51685d419a4c79f87802db51db08c50`  
-		Last Modified: Wed, 10 Nov 2021 21:07:26 GMT  
-		Size: 183.6 MB (183623942 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5753877e7a39a9e13e30aa822049b0a084cda5de4a40cd5f6ace47ac2fc9eb10`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `openjdk:18-jdk-windowsservercore-ltsc2016`
 
 ```console
-$ docker pull openjdk@sha256:938429f5ef4c5db2a518e461331aec2a5bd8f229d7b7d2cb31850cd2254ade27
+$ docker pull openjdk@sha256:a8f9c46981a31d619cbd7f2abebab8cbd77a7376e766f26b035f44912f60df9b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -41126,14 +40172,14 @@ $ docker pull openjdk@sha256:938429f5ef4c5db2a518e461331aec2a5bd8f229d7b7d2cb318
 ### `openjdk:18-jdk-windowsservercore-ltsc2016` - windows version 10.0.14393.4770; amd64
 
 ```console
-$ docker pull openjdk@sha256:393e2252dd54db1eae006103f025518c7a5ad43752461ed3d8ee1de90f0395ae
+$ docker pull openjdk@sha256:1fb6cb4679450a052002f19a809879940b24f5a42313a449b3abac847b5716b8
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.5 GB (6457431629 bytes)**  
+-	Total Size: **6.5 GB (6457750413 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d306462a846e7b818d1a0e0e8ab77db60ccccfd35a285ce2ee8647be0f0f9de`
+-	Image ID: `sha256:81a0d0a688c09412d0fc9d6c668fc54ceb91032a59439189764571f4987fa30a`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -41150,15 +40196,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:30:05 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:30:06 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:30:07 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:30:08 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:31:36 GMT
+# Thu, 11 Nov 2021 02:25:13 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:25:14 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:25:15 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:26:36 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:31:37 GMT
+# Thu, 11 Nov 2021 02:26:37 GMT
 CMD ["jshell"]
 ```
 
@@ -41185,31 +40231,31 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:07:51 GMT  
 		Size: 346.8 KB (346841 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1d9bca52a27503493f0c99b4a99920bf0977ea36e5c98d5640b9974957eaf1c`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1400 bytes)  
+	-	`sha256:83bd413e3a517265afe99693948983f594de2897cc86194a7d8d387b575e82a5`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1424 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87f3555ad46e455b194d91f0a0c93835b1f759bed8eca17a3a0dc657385bd13c`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1415 bytes)  
+	-	`sha256:43648bc0ccab1f3f49e25e4d2e08ad16e43fd15b3b877f2a9659cc2b8735924a`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2a124c261e3810baa7b86d3002f7c9bb0d9b74f151a368c9efdd7dbda0dd0d5`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1429 bytes)  
+	-	`sha256:b37343f091cd0ffd2e8881824fa7eb48840fcaa1924b9df53edc6d5828a44255`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1389 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1d67ffbd95a6b961816519f50fa3d55ae7eb440d88109b8d6784a1093bfe62e2`  
-		Last Modified: Wed, 10 Nov 2021 21:11:11 GMT  
-		Size: 183.6 MB (183629721 bytes)  
+	-	`sha256:5a722237d8a9d82c5a0e0401f0d42603163f666c0dc8dba2f339c5858703d9e7`  
+		Last Modified: Thu, 11 Nov 2021 02:39:38 GMT  
+		Size: 183.9 MB (183948511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a06fd0b5df6b3417d9ff1f2bdf32c8c9ed0d6a0c45b70e6db8fb0a0019e361d7`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1415 bytes)  
+	-	`sha256:f983e129d00f1fc3c9459bca58fe6d4bf0f833ed18f5ccc0c1e4478aea0af48e`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1418 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `openjdk:18-jdk-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull openjdk@sha256:ae714022fbaebf672f0d5718781b37285f6126101122843d24734fcce4a9e769
+$ docker pull openjdk@sha256:fc7df54e750b5c819b1e04005fa166205dbc9fb52fd811c6168e851534087208
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -41219,14 +40265,14 @@ $ docker pull openjdk@sha256:ae714022fbaebf672f0d5718781b37285f6126101122843d247
 ### `openjdk:18-jdk-windowsservercore-ltsc2022` - windows version 10.0.20348.350; amd64
 
 ```console
-$ docker pull openjdk@sha256:e8255df62dff59325ca6e55e1bcc9080692eaefdcdbb1d7deaafb57971ee86de
+$ docker pull openjdk@sha256:9c20d60c7bde738f2c3e57e52aafbaecc57f1a5ec9c4b75dba7c45378b4acfeb
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.4 GB (2369632853 bytes)**  
+-	Total Size: **2.4 GB (2369930838 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c7f00655015db4254b3d0354638c0dbea2256f1b504ac92eb2577f6a5a1884f4`
+-	Image ID: `sha256:a5c6761474f0c566c146885a48d00326c719b7730871258da29aad263b932a4a`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -41243,15 +40289,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:23:41 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:23:42 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:23:43 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:23:44 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:24:32 GMT
+# Thu, 11 Nov 2021 02:22:29 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:22:30 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:22:31 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:23:15 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:24:34 GMT
+# Thu, 11 Nov 2021 02:23:16 GMT
 CMD ["jshell"]
 ```
 
@@ -41278,31 +40324,31 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:03:27 GMT  
 		Size: 549.7 KB (549708 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b698dd11831adf277aae025052bc6eef078afd78744099225fd6ecd561fdcb6f`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1379 bytes)  
+	-	`sha256:47a3965ec2551fcd1a6117196df95c018068b200db9142b813af85f8f05fac3f`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b0900c61346cbdc2e5203cfe88ec50506b93be59c3bd52564a8b95a1e0f5f4d`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1398 bytes)  
+	-	`sha256:157aee527ea6606caee0c3f88322e3dcee4605f52eb98706b7629d2f2d864f50`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:006246c3aa0e0f4bc3f01c03d0e7d48693d0725b25f3e78f3581915d92760caa`  
-		Last Modified: Wed, 10 Nov 2021 21:03:25 GMT  
-		Size: 1.4 KB (1355 bytes)  
+	-	`sha256:53b7b5633a2546c9bab04d431d13513305ffa78a8fd0fbb6871d649054b71248`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05f8dd5277feae03b608b6cc2ff3cd3dc5107d8e8b71c5d8af8412db74134f7b`  
-		Last Modified: Wed, 10 Nov 2021 21:06:46 GMT  
-		Size: 183.9 MB (183851222 bytes)  
+	-	`sha256:458a4ea681f6aaefe0ffff613b2b6902899d6cf784e658b99c5d2aefe9fd101c`  
+		Last Modified: Thu, 11 Nov 2021 02:35:31 GMT  
+		Size: 184.1 MB (184149058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:174ce1c5faf404eee966a95111144858ca8a1cd9b461dc6660bda459e2b91294`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1419 bytes)  
+	-	`sha256:b237936aa73b8bc01a1cd55260a8718087e351e2cf387793361369cb3067930f`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `openjdk:18-nanoserver`
 
 ```console
-$ docker pull openjdk@sha256:2c698eed211dacdfcad8cfcf8bb65180e9feb2e4af011e0da302e5f09294fb74
+$ docker pull openjdk@sha256:6fb352605241063a7689cf99b1bc78fd5efaeab751e3a71c6f7d3012216b7f6a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -41312,14 +40358,14 @@ $ docker pull openjdk@sha256:2c698eed211dacdfcad8cfcf8bb65180e9feb2e4af011e0da30
 ### `openjdk:18-nanoserver` - windows version 10.0.17763.2300; amd64
 
 ```console
-$ docker pull openjdk@sha256:76e7ce8921200c2da74218723265e748efb5b538bbc805d96e5875c35e6c9685
+$ docker pull openjdk@sha256:ec025d27caa59ea3603b6ff8e089dd88c2f7a26a69856dfc62c082c78b3c4969
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **289.7 MB (289705169 bytes)**  
+-	Total Size: **290.0 MB (290017954 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f605ec0f6d8620a8d7837798a5cb287e6f718b34f4aa184e494be9c400f5ee93`
+-	Image ID: `sha256:43881b592fbb5488ef2a1826031065b0507eaec5c09a746850b1813bc23ea083`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["cmd","\/s","\/c"]`
 
@@ -41336,13 +40382,13 @@ USER ContainerAdministrator
 RUN echo Updating PATH: %JAVA_HOME%\bin;%PATH% 	&& setx /M PATH %JAVA_HOME%\bin;%PATH% 	&& echo Complete.
 # Wed, 10 Nov 2021 20:32:07 GMT
 USER ContainerUser
-# Wed, 10 Nov 2021 20:32:08 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:32:23 GMT
-COPY dir:2484c24fc278a2a4f9b1faf3e56bed024398b36a40c94d33298963a00cd29cac in C:\openjdk-18 
-# Wed, 10 Nov 2021 20:32:37 GMT
+# Thu, 11 Nov 2021 02:26:55 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:27:10 GMT
+COPY dir:8d6a03ecb43a50e96e1ea8050215c3463f1cd25f09c6c66b339295cfb108fd47 in C:\openjdk-18 
+# Thu, 11 Nov 2021 02:27:24 GMT
 RUN echo Verifying install ... 	&& echo   javac --version && javac --version 	&& echo   java --version && java --version 	&& echo Complete.
-# Wed, 10 Nov 2021 20:32:37 GMT
+# Thu, 11 Nov 2021 02:27:25 GMT
 CMD ["jshell"]
 ```
 
@@ -41370,27 +40416,27 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:11:33 GMT  
 		Size: 1.1 KB (1138 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b032844458881830eff0be6c730b39b70a8e00d9d48b5614c499b10d0e55a131`  
-		Last Modified: Wed, 10 Nov 2021 21:11:33 GMT  
-		Size: 1.1 KB (1127 bytes)  
+	-	`sha256:a4f70cd085588ca56ede8ce99b00cd84e76e989217138f8d5d545c068b4b03aa`  
+		Last Modified: Thu, 11 Nov 2021 02:39:59 GMT  
+		Size: 1.2 KB (1167 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03cfe5eb122e63822c38ded40d5cef742bc695b3c16c2c099cbfae63d43c6588`  
-		Last Modified: Wed, 10 Nov 2021 21:11:54 GMT  
-		Size: 183.3 MB (183299359 bytes)  
+	-	`sha256:9a789c500a3d522aa9e0f7a275070ae5fda6f2c4a6aa83fda57c1c3f433f19cc`  
+		Last Modified: Thu, 11 Nov 2021 02:40:20 GMT  
+		Size: 183.6 MB (183609790 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88d4615c9ed406caf4fcd84446b3e0dd7e56d63892a56c81965b04d213d8a677`  
-		Last Modified: Wed, 10 Nov 2021 21:11:35 GMT  
-		Size: 3.5 MB (3541799 bytes)  
+	-	`sha256:26200be72d5e7969ea70fcb1e295e3833109ddf22ef6008b07d81e5d5ee8b2db`  
+		Last Modified: Thu, 11 Nov 2021 02:40:03 GMT  
+		Size: 3.5 MB (3544102 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14712278de59cab664f0e49fa0f1871ec5ab10ba4e7b6dbe5945492d496c781e`  
-		Last Modified: Wed, 10 Nov 2021 21:11:34 GMT  
-		Size: 1.2 KB (1166 bytes)  
+	-	`sha256:d2ba4ebf7124214086dba305e9d9525a45618109821d8d9ef384507222eb24ec`  
+		Last Modified: Thu, 11 Nov 2021 02:39:59 GMT  
+		Size: 1.2 KB (1177 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `openjdk:18-nanoserver-1809`
 
 ```console
-$ docker pull openjdk@sha256:2c698eed211dacdfcad8cfcf8bb65180e9feb2e4af011e0da302e5f09294fb74
+$ docker pull openjdk@sha256:6fb352605241063a7689cf99b1bc78fd5efaeab751e3a71c6f7d3012216b7f6a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -41400,14 +40446,14 @@ $ docker pull openjdk@sha256:2c698eed211dacdfcad8cfcf8bb65180e9feb2e4af011e0da30
 ### `openjdk:18-nanoserver-1809` - windows version 10.0.17763.2300; amd64
 
 ```console
-$ docker pull openjdk@sha256:76e7ce8921200c2da74218723265e748efb5b538bbc805d96e5875c35e6c9685
+$ docker pull openjdk@sha256:ec025d27caa59ea3603b6ff8e089dd88c2f7a26a69856dfc62c082c78b3c4969
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **289.7 MB (289705169 bytes)**  
+-	Total Size: **290.0 MB (290017954 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f605ec0f6d8620a8d7837798a5cb287e6f718b34f4aa184e494be9c400f5ee93`
+-	Image ID: `sha256:43881b592fbb5488ef2a1826031065b0507eaec5c09a746850b1813bc23ea083`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["cmd","\/s","\/c"]`
 
@@ -41424,13 +40470,13 @@ USER ContainerAdministrator
 RUN echo Updating PATH: %JAVA_HOME%\bin;%PATH% 	&& setx /M PATH %JAVA_HOME%\bin;%PATH% 	&& echo Complete.
 # Wed, 10 Nov 2021 20:32:07 GMT
 USER ContainerUser
-# Wed, 10 Nov 2021 20:32:08 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:32:23 GMT
-COPY dir:2484c24fc278a2a4f9b1faf3e56bed024398b36a40c94d33298963a00cd29cac in C:\openjdk-18 
-# Wed, 10 Nov 2021 20:32:37 GMT
+# Thu, 11 Nov 2021 02:26:55 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:27:10 GMT
+COPY dir:8d6a03ecb43a50e96e1ea8050215c3463f1cd25f09c6c66b339295cfb108fd47 in C:\openjdk-18 
+# Thu, 11 Nov 2021 02:27:24 GMT
 RUN echo Verifying install ... 	&& echo   javac --version && javac --version 	&& echo   java --version && java --version 	&& echo Complete.
-# Wed, 10 Nov 2021 20:32:37 GMT
+# Thu, 11 Nov 2021 02:27:25 GMT
 CMD ["jshell"]
 ```
 
@@ -41458,27 +40504,27 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:11:33 GMT  
 		Size: 1.1 KB (1138 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b032844458881830eff0be6c730b39b70a8e00d9d48b5614c499b10d0e55a131`  
-		Last Modified: Wed, 10 Nov 2021 21:11:33 GMT  
-		Size: 1.1 KB (1127 bytes)  
+	-	`sha256:a4f70cd085588ca56ede8ce99b00cd84e76e989217138f8d5d545c068b4b03aa`  
+		Last Modified: Thu, 11 Nov 2021 02:39:59 GMT  
+		Size: 1.2 KB (1167 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03cfe5eb122e63822c38ded40d5cef742bc695b3c16c2c099cbfae63d43c6588`  
-		Last Modified: Wed, 10 Nov 2021 21:11:54 GMT  
-		Size: 183.3 MB (183299359 bytes)  
+	-	`sha256:9a789c500a3d522aa9e0f7a275070ae5fda6f2c4a6aa83fda57c1c3f433f19cc`  
+		Last Modified: Thu, 11 Nov 2021 02:40:20 GMT  
+		Size: 183.6 MB (183609790 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88d4615c9ed406caf4fcd84446b3e0dd7e56d63892a56c81965b04d213d8a677`  
-		Last Modified: Wed, 10 Nov 2021 21:11:35 GMT  
-		Size: 3.5 MB (3541799 bytes)  
+	-	`sha256:26200be72d5e7969ea70fcb1e295e3833109ddf22ef6008b07d81e5d5ee8b2db`  
+		Last Modified: Thu, 11 Nov 2021 02:40:03 GMT  
+		Size: 3.5 MB (3544102 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14712278de59cab664f0e49fa0f1871ec5ab10ba4e7b6dbe5945492d496c781e`  
-		Last Modified: Wed, 10 Nov 2021 21:11:34 GMT  
-		Size: 1.2 KB (1166 bytes)  
+	-	`sha256:d2ba4ebf7124214086dba305e9d9525a45618109821d8d9ef384507222eb24ec`  
+		Last Modified: Thu, 11 Nov 2021 02:39:59 GMT  
+		Size: 1.2 KB (1177 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `openjdk:18-oracle`
 
 ```console
-$ docker pull openjdk@sha256:6454022f8656aaa0fc08cbfcc617134fbb65e9bf91d0a8cb3a5fa9f45c43172e
+$ docker pull openjdk@sha256:d643bba5e4afc8f6f1f2b2729739b0a3d140559db78304f9c8c1380666f75f78
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -41489,14 +40535,14 @@ $ docker pull openjdk@sha256:6454022f8656aaa0fc08cbfcc617134fbb65e9bf91d0a8cb3a5
 ### `openjdk:18-oracle` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:817b9de5fd1ed622c9080f216dd6b3040f3545be2c6026fe5d413628eb87edca
+$ docker pull openjdk@sha256:d91c50b89de0c4a4b5d4e9b528995006453b9867cb0dae41f100f89e851c9a52
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **243.6 MB (243585087 bytes)**  
+-	Total Size: **243.7 MB (243728237 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f55f011574655a28ccd27287ab45d17065ae9bbc0c4101281ffa665c385c2315`
+-	Image ID: `sha256:672ef7efeba8fe2ad1d923268b6836d1ecbff55754c90ed0fbfe47b4c214a6f8`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -41512,11 +40558,11 @@ ENV JAVA_HOME=/usr/java/openjdk-18
 ENV PATH=/usr/java/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 03 Nov 2021 22:37:07 GMT
 ENV LANG=C.UTF-8
-# Wed, 03 Nov 2021 22:37:07 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 03 Nov 2021 22:37:18 GMT
-RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 03 Nov 2021 22:37:19 GMT
+# Thu, 11 Nov 2021 02:27:47 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:27:58 GMT
+RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:27:59 GMT
 CMD ["jshell"]
 ```
 
@@ -41529,9 +40575,9 @@ CMD ["jshell"]
 		Last Modified: Wed, 03 Nov 2021 22:43:12 GMT  
 		Size: 13.5 MB (13491241 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9881991c1db3ee3e0c6ae7c15b8a4429c433a7655ffe01202511ebf51b6a2ec2`  
-		Last Modified: Wed, 03 Nov 2021 22:43:24 GMT  
-		Size: 188.1 MB (188125731 bytes)  
+	-	`sha256:9a2f4b2e287c44dde9d335364634f51085f3bc93889ea6d9112410318239f8b6`  
+		Last Modified: Thu, 11 Nov 2021 02:34:37 GMT  
+		Size: 188.3 MB (188268881 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-oracle` - linux; arm64 variant v8
@@ -41585,7 +40631,7 @@ CMD ["jshell"]
 ## `openjdk:18-oraclelinux7`
 
 ```console
-$ docker pull openjdk@sha256:ed3ba98351d2c4bff1800623b6038745140af2e79feac3ae6002caeb742449b6
+$ docker pull openjdk@sha256:1223fd016fdc028fdd4cc3ac80ad0353f8547c46f5d58428053d90bedbb85466
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -41596,14 +40642,14 @@ $ docker pull openjdk@sha256:ed3ba98351d2c4bff1800623b6038745140af2e79feac3ae600
 ### `openjdk:18-oraclelinux7` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:ec196e338fa8bbd0d9287cc432100dfc2310577c6e39bb691e5c4aad00d6b521
+$ docker pull openjdk@sha256:ce4c326af7ac5a60c8ca40f44ae6ebb71a43eb165afe0d18716114faa2ae9241
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.9 MB (251855575 bytes)**  
+-	Total Size: **252.0 MB (251995533 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b3e91ba8ba9cb56e993c2ac26ea12609f055911aee8f7860b56f49f35da22f67`
+-	Image ID: `sha256:95bb93f8d111d78b4b3aafe543ea16de5c32e350d9517726baf0852b2f6f63c3`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -41619,11 +40665,11 @@ ENV JAVA_HOME=/usr/java/openjdk-18
 ENV PATH=/usr/java/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Thu, 28 Oct 2021 01:45:25 GMT
 ENV LANG=en_US.UTF-8
-# Mon, 01 Nov 2021 18:49:22 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 18:49:33 GMT
-RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 18:49:33 GMT
+# Thu, 11 Nov 2021 02:28:04 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:28:15 GMT
+RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:28:16 GMT
 CMD ["jshell"]
 ```
 
@@ -41636,9 +40682,9 @@ CMD ["jshell"]
 		Last Modified: Thu, 28 Oct 2021 01:53:12 GMT  
 		Size: 15.4 MB (15399150 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:745ba23332f5419699490030c7a251ae318678ad9f335be24081ace19121bf47`  
-		Last Modified: Mon, 01 Nov 2021 18:57:03 GMT  
-		Size: 188.1 MB (188127463 bytes)  
+	-	`sha256:60632eff72aeb95abb140b5e33b41e9e4d1f089f71271807f25b3f35c9257b0b`  
+		Last Modified: Thu, 11 Nov 2021 02:35:25 GMT  
+		Size: 188.3 MB (188267421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-oraclelinux7` - linux; arm64 variant v8
@@ -41692,7 +40738,7 @@ CMD ["jshell"]
 ## `openjdk:18-oraclelinux8`
 
 ```console
-$ docker pull openjdk@sha256:6454022f8656aaa0fc08cbfcc617134fbb65e9bf91d0a8cb3a5fa9f45c43172e
+$ docker pull openjdk@sha256:d643bba5e4afc8f6f1f2b2729739b0a3d140559db78304f9c8c1380666f75f78
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -41703,14 +40749,14 @@ $ docker pull openjdk@sha256:6454022f8656aaa0fc08cbfcc617134fbb65e9bf91d0a8cb3a5
 ### `openjdk:18-oraclelinux8` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:817b9de5fd1ed622c9080f216dd6b3040f3545be2c6026fe5d413628eb87edca
+$ docker pull openjdk@sha256:d91c50b89de0c4a4b5d4e9b528995006453b9867cb0dae41f100f89e851c9a52
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **243.6 MB (243585087 bytes)**  
+-	Total Size: **243.7 MB (243728237 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f55f011574655a28ccd27287ab45d17065ae9bbc0c4101281ffa665c385c2315`
+-	Image ID: `sha256:672ef7efeba8fe2ad1d923268b6836d1ecbff55754c90ed0fbfe47b4c214a6f8`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -41726,11 +40772,11 @@ ENV JAVA_HOME=/usr/java/openjdk-18
 ENV PATH=/usr/java/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 03 Nov 2021 22:37:07 GMT
 ENV LANG=C.UTF-8
-# Wed, 03 Nov 2021 22:37:07 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 03 Nov 2021 22:37:18 GMT
-RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 03 Nov 2021 22:37:19 GMT
+# Thu, 11 Nov 2021 02:27:47 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:27:58 GMT
+RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:27:59 GMT
 CMD ["jshell"]
 ```
 
@@ -41743,9 +40789,9 @@ CMD ["jshell"]
 		Last Modified: Wed, 03 Nov 2021 22:43:12 GMT  
 		Size: 13.5 MB (13491241 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9881991c1db3ee3e0c6ae7c15b8a4429c433a7655ffe01202511ebf51b6a2ec2`  
-		Last Modified: Wed, 03 Nov 2021 22:43:24 GMT  
-		Size: 188.1 MB (188125731 bytes)  
+	-	`sha256:9a2f4b2e287c44dde9d335364634f51085f3bc93889ea6d9112410318239f8b6`  
+		Last Modified: Thu, 11 Nov 2021 02:34:37 GMT  
+		Size: 188.3 MB (188268881 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-oraclelinux8` - linux; arm64 variant v8
@@ -41799,7 +40845,7 @@ CMD ["jshell"]
 ## `openjdk:18-slim`
 
 ```console
-$ docker pull openjdk@sha256:9f9db4e7b8cf008882c23d60496ffbf92f2def52e97bb0967f5abb8cf971f9bc
+$ docker pull openjdk@sha256:59cc102cedda13409f4d02b3367e6887876c0e0cfa0564d025267572aa3cc7b3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -41810,14 +40856,14 @@ $ docker pull openjdk@sha256:9f9db4e7b8cf008882c23d60496ffbf92f2def52e97bb0967f5
 ### `openjdk:18-slim` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:6fd2bf246d0585b450903c03cae374f975c7684cb4d52554a194ec4e88b33428
+$ docker pull openjdk@sha256:707dedb1245a645e5859bb79462c53cef7846ba447731b4d5640be0fc2b3f125
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **221.4 MB (221443148 bytes)**  
+-	Total Size: **221.6 MB (221583947 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b20796d1637bf5538d022dcb30a1d8c3f820c33258e7b524e180c7ba48599d75`
+-	Image ID: `sha256:d03fc506dd2f5806ae0628d561dc7d0353d9e5df598b9e7f90286567cbd7bac9`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -41833,11 +40879,11 @@ ENV JAVA_HOME=/usr/local/openjdk-18
 ENV PATH=/usr/local/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 12 Oct 2021 16:27:47 GMT
 ENV LANG=C.UTF-8
-# Mon, 01 Nov 2021 18:49:53 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 18:50:10 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 18:50:11 GMT
+# Thu, 11 Nov 2021 02:28:35 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:28:50 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:28:50 GMT
 CMD ["jshell"]
 ```
 
@@ -41850,9 +40896,9 @@ CMD ["jshell"]
 		Last Modified: Tue, 12 Oct 2021 16:42:59 GMT  
 		Size: 1.6 MB (1582043 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:efcc91b087b99e6e057cfe49d4fbbf2e1b3039f8876e7837244f8a4200d36aa9`  
-		Last Modified: Mon, 01 Nov 2021 18:58:09 GMT  
-		Size: 188.5 MB (188503794 bytes)  
+	-	`sha256:c94532e4ea740fa348bd5588336eb055aa252dca675396529409e0f2e392c981`  
+		Last Modified: Thu, 11 Nov 2021 02:36:33 GMT  
+		Size: 188.6 MB (188644593 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-slim` - linux; arm64 variant v8
@@ -41906,7 +40952,7 @@ CMD ["jshell"]
 ## `openjdk:18-slim-bullseye`
 
 ```console
-$ docker pull openjdk@sha256:9f9db4e7b8cf008882c23d60496ffbf92f2def52e97bb0967f5abb8cf971f9bc
+$ docker pull openjdk@sha256:59cc102cedda13409f4d02b3367e6887876c0e0cfa0564d025267572aa3cc7b3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -41917,14 +40963,14 @@ $ docker pull openjdk@sha256:9f9db4e7b8cf008882c23d60496ffbf92f2def52e97bb0967f5
 ### `openjdk:18-slim-bullseye` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:6fd2bf246d0585b450903c03cae374f975c7684cb4d52554a194ec4e88b33428
+$ docker pull openjdk@sha256:707dedb1245a645e5859bb79462c53cef7846ba447731b4d5640be0fc2b3f125
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **221.4 MB (221443148 bytes)**  
+-	Total Size: **221.6 MB (221583947 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b20796d1637bf5538d022dcb30a1d8c3f820c33258e7b524e180c7ba48599d75`
+-	Image ID: `sha256:d03fc506dd2f5806ae0628d561dc7d0353d9e5df598b9e7f90286567cbd7bac9`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -41940,11 +40986,11 @@ ENV JAVA_HOME=/usr/local/openjdk-18
 ENV PATH=/usr/local/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 12 Oct 2021 16:27:47 GMT
 ENV LANG=C.UTF-8
-# Mon, 01 Nov 2021 18:49:53 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 18:50:10 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 18:50:11 GMT
+# Thu, 11 Nov 2021 02:28:35 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:28:50 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:28:50 GMT
 CMD ["jshell"]
 ```
 
@@ -41957,9 +41003,9 @@ CMD ["jshell"]
 		Last Modified: Tue, 12 Oct 2021 16:42:59 GMT  
 		Size: 1.6 MB (1582043 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:efcc91b087b99e6e057cfe49d4fbbf2e1b3039f8876e7837244f8a4200d36aa9`  
-		Last Modified: Mon, 01 Nov 2021 18:58:09 GMT  
-		Size: 188.5 MB (188503794 bytes)  
+	-	`sha256:c94532e4ea740fa348bd5588336eb055aa252dca675396529409e0f2e392c981`  
+		Last Modified: Thu, 11 Nov 2021 02:36:33 GMT  
+		Size: 188.6 MB (188644593 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-slim-bullseye` - linux; arm64 variant v8
@@ -42013,7 +41059,7 @@ CMD ["jshell"]
 ## `openjdk:18-slim-buster`
 
 ```console
-$ docker pull openjdk@sha256:7c76b028832c996c949f82f1374113176b1be0b49713681c4d65aded3275000c
+$ docker pull openjdk@sha256:90eee7860ea839b794db5729a1d285f6887a79806c0f6dfe43f083137f8f347b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -42024,14 +41070,14 @@ $ docker pull openjdk@sha256:7c76b028832c996c949f82f1374113176b1be0b49713681c4d6
 ### `openjdk:18-slim-buster` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:5907363d51f46b81c780349dde095c0dc0ed3dad83474f66bc5f99ecda3aeb4c
+$ docker pull openjdk@sha256:ac0a7e52bccf05883a56614449482cb73614f5bc5b016e42874090760fb488b2
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **218.9 MB (218912828 bytes)**  
+-	Total Size: **219.1 MB (219058803 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:10653c2b68942341ef0ccbcdf71eef5d708ff40561371aef012f08d50bd62fdb`
+-	Image ID: `sha256:fe6ddbc7fa65084af20f557a980a70d6e8b197d4a7f95c5d30ba38f1daecb125`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -42047,11 +41093,11 @@ ENV JAVA_HOME=/usr/local/openjdk-18
 ENV PATH=/usr/local/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 12 Oct 2021 16:28:45 GMT
 ENV LANG=C.UTF-8
-# Mon, 01 Nov 2021 18:50:33 GMT
-ENV JAVA_VERSION=18-ea+21
-# Mon, 01 Nov 2021 18:50:49 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-x64_bin.tar.gz'; 			downloadSha256='c0a1fcdd389abdc8101892215f73413b10975f735f31e6d0484c9653fc9ba5e9'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_linux-aarch64_bin.tar.gz'; 			downloadSha256='a5ed86d5c7f9433360bc81b5b283d6b5fc345309d16c77125c8ceff32ed5c9a8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 01 Nov 2021 18:50:50 GMT
+# Thu, 11 Nov 2021 02:29:11 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:29:25 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-x64_bin.tar.gz'; 			downloadSha256='71124796aac929f184d54cf5b2a3ba3a31c0cef1ba9b5b5e1535ec5a5d482a8b'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_linux-aarch64_bin.tar.gz'; 			downloadSha256='714a0b84e6ed39e5442ca0044dab9ebecddeceffc9b78aed8e4d7ba2fbefb8aa'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 11 Nov 2021 02:29:26 GMT
 CMD ["jshell"]
 ```
 
@@ -42064,9 +41110,9 @@ CMD ["jshell"]
 		Last Modified: Tue, 12 Oct 2021 16:44:29 GMT  
 		Size: 3.3 MB (3269598 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:669b832f4a79a98af0ed0f1f024cd2229b096d2e30b88cb3ff72c272ff08ffa2`  
-		Last Modified: Mon, 01 Nov 2021 18:59:33 GMT  
-		Size: 188.5 MB (188503720 bytes)  
+	-	`sha256:f05325d794d04afdfac5990f67bc56f76fa5288b25dfedb00d760c9b67910fbb`  
+		Last Modified: Thu, 11 Nov 2021 02:37:56 GMT  
+		Size: 188.6 MB (188649695 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-slim-buster` - linux; arm64 variant v8
@@ -42120,7 +41166,7 @@ CMD ["jshell"]
 ## `openjdk:18-windowsservercore`
 
 ```console
-$ docker pull openjdk@sha256:a991c6b5666e0d0edb90abea94e1ad76b3803a3b2f91841aed6ceae81380a206
+$ docker pull openjdk@sha256:916ceba5742a7ddd0fe8b131eb8ac2f81d5f4124e3262c11dc4e7d309e484f5c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -42132,14 +41178,14 @@ $ docker pull openjdk@sha256:a991c6b5666e0d0edb90abea94e1ad76b3803a3b2f91841aed6
 ### `openjdk:18-windowsservercore` - windows version 10.0.20348.350; amd64
 
 ```console
-$ docker pull openjdk@sha256:e8255df62dff59325ca6e55e1bcc9080692eaefdcdbb1d7deaafb57971ee86de
+$ docker pull openjdk@sha256:9c20d60c7bde738f2c3e57e52aafbaecc57f1a5ec9c4b75dba7c45378b4acfeb
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.4 GB (2369632853 bytes)**  
+-	Total Size: **2.4 GB (2369930838 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c7f00655015db4254b3d0354638c0dbea2256f1b504ac92eb2577f6a5a1884f4`
+-	Image ID: `sha256:a5c6761474f0c566c146885a48d00326c719b7730871258da29aad263b932a4a`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -42156,15 +41202,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:23:41 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:23:42 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:23:43 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:23:44 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:24:32 GMT
+# Thu, 11 Nov 2021 02:22:29 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:22:30 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:22:31 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:23:15 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:24:34 GMT
+# Thu, 11 Nov 2021 02:23:16 GMT
 CMD ["jshell"]
 ```
 
@@ -42191,38 +41237,38 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:03:27 GMT  
 		Size: 549.7 KB (549708 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b698dd11831adf277aae025052bc6eef078afd78744099225fd6ecd561fdcb6f`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1379 bytes)  
+	-	`sha256:47a3965ec2551fcd1a6117196df95c018068b200db9142b813af85f8f05fac3f`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b0900c61346cbdc2e5203cfe88ec50506b93be59c3bd52564a8b95a1e0f5f4d`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1398 bytes)  
+	-	`sha256:157aee527ea6606caee0c3f88322e3dcee4605f52eb98706b7629d2f2d864f50`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:006246c3aa0e0f4bc3f01c03d0e7d48693d0725b25f3e78f3581915d92760caa`  
-		Last Modified: Wed, 10 Nov 2021 21:03:25 GMT  
-		Size: 1.4 KB (1355 bytes)  
+	-	`sha256:53b7b5633a2546c9bab04d431d13513305ffa78a8fd0fbb6871d649054b71248`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05f8dd5277feae03b608b6cc2ff3cd3dc5107d8e8b71c5d8af8412db74134f7b`  
-		Last Modified: Wed, 10 Nov 2021 21:06:46 GMT  
-		Size: 183.9 MB (183851222 bytes)  
+	-	`sha256:458a4ea681f6aaefe0ffff613b2b6902899d6cf784e658b99c5d2aefe9fd101c`  
+		Last Modified: Thu, 11 Nov 2021 02:35:31 GMT  
+		Size: 184.1 MB (184149058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:174ce1c5faf404eee966a95111144858ca8a1cd9b461dc6660bda459e2b91294`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1419 bytes)  
+	-	`sha256:b237936aa73b8bc01a1cd55260a8718087e351e2cf387793361369cb3067930f`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-windowsservercore` - windows version 10.0.17763.2300; amd64
 
 ```console
-$ docker pull openjdk@sha256:2844a4f5ef91b81e8639e3c77c53eb720cb1a92d7615cb49e474db929c7f0e4d
+$ docker pull openjdk@sha256:8e32cdb2628a6f1f06929a6f3ce57025716a05db9885a170e8d4acb24002f91d
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 GB (2890432121 bytes)**  
+-	Total Size: **2.9 GB (2890756401 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:edb6fdab0d77d354269b0c787da93627f788070ff04e27610bf4d74ac6947dbb`
+-	Image ID: `sha256:50d8c70546f0046f36a731848b58b0bbf9e64784e0a12ad91de1219f225d97d4`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -42239,15 +41285,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:26:31 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:26:31 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:26:32 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:26:33 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:28:03 GMT
+# Thu, 11 Nov 2021 02:23:31 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:23:32 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:23:33 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:24:52 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:28:04 GMT
+# Thu, 11 Nov 2021 02:24:53 GMT
 CMD ["jshell"]
 ```
 
@@ -42274,38 +41320,38 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:07:09 GMT  
 		Size: 319.7 KB (319676 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f27f6a08e6bde711bb8374842ac82c0cad5fa223e6215af6895d7b1ae20ab601`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1435 bytes)  
+	-	`sha256:e82aaf27003bf2b62a2cc2dbd9cb4ff9a112f8ef1cf0240f81607382e7cd6138`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb17e13d4cdd0b960ba531f11242bb58c8a359c38dbd6bb4bdd03853994bc2ce`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1441 bytes)  
+	-	`sha256:98f36effb4b3b001319833edf8fc4e1a9b6008500dafad80385b5a4520aa3c29`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c847b4d31b558449e54882e692193c6e77fd877cb8d037083d8898f0a3e4efe6`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
+	-	`sha256:c64c2dd6bbf7811caa7ae295e72178094f00f1058f9918636ef7245bd24cc578`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1430 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:cdfbdd5d3b9376889190109d5cc7a4cf2377a4946e1ccc5535bd87d1cac3ca5d`  
+		Last Modified: Thu, 11 Nov 2021 02:36:10 GMT  
+		Size: 183.9 MB (183948230 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4465946c6c9661cbaf098a919fdf0be953f0cf789394679363d052795feb4f30`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
 		Size: 1.4 KB (1420 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95a35ec7cf69a61548328a852bd3c946f51685d419a4c79f87802db51db08c50`  
-		Last Modified: Wed, 10 Nov 2021 21:07:26 GMT  
-		Size: 183.6 MB (183623942 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5753877e7a39a9e13e30aa822049b0a084cda5de4a40cd5f6ace47ac2fc9eb10`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:18-windowsservercore` - windows version 10.0.14393.4770; amd64
 
 ```console
-$ docker pull openjdk@sha256:393e2252dd54db1eae006103f025518c7a5ad43752461ed3d8ee1de90f0395ae
+$ docker pull openjdk@sha256:1fb6cb4679450a052002f19a809879940b24f5a42313a449b3abac847b5716b8
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.5 GB (6457431629 bytes)**  
+-	Total Size: **6.5 GB (6457750413 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d306462a846e7b818d1a0e0e8ab77db60ccccfd35a285ce2ee8647be0f0f9de`
+-	Image ID: `sha256:81a0d0a688c09412d0fc9d6c668fc54ceb91032a59439189764571f4987fa30a`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -42322,15 +41368,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:30:05 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:30:06 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:30:07 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:30:08 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:31:36 GMT
+# Thu, 11 Nov 2021 02:25:13 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:25:14 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:25:15 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:26:36 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:31:37 GMT
+# Thu, 11 Nov 2021 02:26:37 GMT
 CMD ["jshell"]
 ```
 
@@ -42357,31 +41403,31 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:07:51 GMT  
 		Size: 346.8 KB (346841 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1d9bca52a27503493f0c99b4a99920bf0977ea36e5c98d5640b9974957eaf1c`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1400 bytes)  
+	-	`sha256:83bd413e3a517265afe99693948983f594de2897cc86194a7d8d387b575e82a5`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1424 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87f3555ad46e455b194d91f0a0c93835b1f759bed8eca17a3a0dc657385bd13c`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1415 bytes)  
+	-	`sha256:43648bc0ccab1f3f49e25e4d2e08ad16e43fd15b3b877f2a9659cc2b8735924a`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2a124c261e3810baa7b86d3002f7c9bb0d9b74f151a368c9efdd7dbda0dd0d5`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1429 bytes)  
+	-	`sha256:b37343f091cd0ffd2e8881824fa7eb48840fcaa1924b9df53edc6d5828a44255`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1389 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1d67ffbd95a6b961816519f50fa3d55ae7eb440d88109b8d6784a1093bfe62e2`  
-		Last Modified: Wed, 10 Nov 2021 21:11:11 GMT  
-		Size: 183.6 MB (183629721 bytes)  
+	-	`sha256:5a722237d8a9d82c5a0e0401f0d42603163f666c0dc8dba2f339c5858703d9e7`  
+		Last Modified: Thu, 11 Nov 2021 02:39:38 GMT  
+		Size: 183.9 MB (183948511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a06fd0b5df6b3417d9ff1f2bdf32c8c9ed0d6a0c45b70e6db8fb0a0019e361d7`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1415 bytes)  
+	-	`sha256:f983e129d00f1fc3c9459bca58fe6d4bf0f833ed18f5ccc0c1e4478aea0af48e`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1418 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `openjdk:18-windowsservercore-1809`
 
 ```console
-$ docker pull openjdk@sha256:e999c59a44c977dcb0c739cb733653de8ee93db07518187bcdfcc6d658d5f11e
+$ docker pull openjdk@sha256:a116b92ff8f5c5e37efe7bb82b121c54151e7b7d9e7e6fbf77bd6f2421ceca44
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -42391,14 +41437,14 @@ $ docker pull openjdk@sha256:e999c59a44c977dcb0c739cb733653de8ee93db07518187bcdf
 ### `openjdk:18-windowsservercore-1809` - windows version 10.0.17763.2300; amd64
 
 ```console
-$ docker pull openjdk@sha256:2844a4f5ef91b81e8639e3c77c53eb720cb1a92d7615cb49e474db929c7f0e4d
+$ docker pull openjdk@sha256:8e32cdb2628a6f1f06929a6f3ce57025716a05db9885a170e8d4acb24002f91d
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 GB (2890432121 bytes)**  
+-	Total Size: **2.9 GB (2890756401 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:edb6fdab0d77d354269b0c787da93627f788070ff04e27610bf4d74ac6947dbb`
+-	Image ID: `sha256:50d8c70546f0046f36a731848b58b0bbf9e64784e0a12ad91de1219f225d97d4`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -42415,15 +41461,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:26:31 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:26:31 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:26:32 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:26:33 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:28:03 GMT
+# Thu, 11 Nov 2021 02:23:31 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:23:32 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:23:33 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:24:52 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:28:04 GMT
+# Thu, 11 Nov 2021 02:24:53 GMT
 CMD ["jshell"]
 ```
 
@@ -42450,31 +41496,31 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:07:09 GMT  
 		Size: 319.7 KB (319676 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f27f6a08e6bde711bb8374842ac82c0cad5fa223e6215af6895d7b1ae20ab601`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1435 bytes)  
+	-	`sha256:e82aaf27003bf2b62a2cc2dbd9cb4ff9a112f8ef1cf0240f81607382e7cd6138`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb17e13d4cdd0b960ba531f11242bb58c8a359c38dbd6bb4bdd03853994bc2ce`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1441 bytes)  
+	-	`sha256:98f36effb4b3b001319833edf8fc4e1a9b6008500dafad80385b5a4520aa3c29`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c847b4d31b558449e54882e692193c6e77fd877cb8d037083d8898f0a3e4efe6`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
+	-	`sha256:c64c2dd6bbf7811caa7ae295e72178094f00f1058f9918636ef7245bd24cc578`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
+		Size: 1.4 KB (1430 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:cdfbdd5d3b9376889190109d5cc7a4cf2377a4946e1ccc5535bd87d1cac3ca5d`  
+		Last Modified: Thu, 11 Nov 2021 02:36:10 GMT  
+		Size: 183.9 MB (183948230 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4465946c6c9661cbaf098a919fdf0be953f0cf789394679363d052795feb4f30`  
+		Last Modified: Thu, 11 Nov 2021 02:35:52 GMT  
 		Size: 1.4 KB (1420 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95a35ec7cf69a61548328a852bd3c946f51685d419a4c79f87802db51db08c50`  
-		Last Modified: Wed, 10 Nov 2021 21:07:26 GMT  
-		Size: 183.6 MB (183623942 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5753877e7a39a9e13e30aa822049b0a084cda5de4a40cd5f6ace47ac2fc9eb10`  
-		Last Modified: Wed, 10 Nov 2021 21:07:06 GMT  
-		Size: 1.4 KB (1416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `openjdk:18-windowsservercore-ltsc2016`
 
 ```console
-$ docker pull openjdk@sha256:938429f5ef4c5db2a518e461331aec2a5bd8f229d7b7d2cb31850cd2254ade27
+$ docker pull openjdk@sha256:a8f9c46981a31d619cbd7f2abebab8cbd77a7376e766f26b035f44912f60df9b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -42484,14 +41530,14 @@ $ docker pull openjdk@sha256:938429f5ef4c5db2a518e461331aec2a5bd8f229d7b7d2cb318
 ### `openjdk:18-windowsservercore-ltsc2016` - windows version 10.0.14393.4770; amd64
 
 ```console
-$ docker pull openjdk@sha256:393e2252dd54db1eae006103f025518c7a5ad43752461ed3d8ee1de90f0395ae
+$ docker pull openjdk@sha256:1fb6cb4679450a052002f19a809879940b24f5a42313a449b3abac847b5716b8
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.5 GB (6457431629 bytes)**  
+-	Total Size: **6.5 GB (6457750413 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d306462a846e7b818d1a0e0e8ab77db60ccccfd35a285ce2ee8647be0f0f9de`
+-	Image ID: `sha256:81a0d0a688c09412d0fc9d6c668fc54ceb91032a59439189764571f4987fa30a`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -42508,15 +41554,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:30:05 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:30:06 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:30:07 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:30:08 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:31:36 GMT
+# Thu, 11 Nov 2021 02:25:13 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:25:14 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:25:15 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:26:36 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:31:37 GMT
+# Thu, 11 Nov 2021 02:26:37 GMT
 CMD ["jshell"]
 ```
 
@@ -42543,31 +41589,31 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:07:51 GMT  
 		Size: 346.8 KB (346841 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1d9bca52a27503493f0c99b4a99920bf0977ea36e5c98d5640b9974957eaf1c`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1400 bytes)  
+	-	`sha256:83bd413e3a517265afe99693948983f594de2897cc86194a7d8d387b575e82a5`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1424 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87f3555ad46e455b194d91f0a0c93835b1f759bed8eca17a3a0dc657385bd13c`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1415 bytes)  
+	-	`sha256:43648bc0ccab1f3f49e25e4d2e08ad16e43fd15b3b877f2a9659cc2b8735924a`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2a124c261e3810baa7b86d3002f7c9bb0d9b74f151a368c9efdd7dbda0dd0d5`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1429 bytes)  
+	-	`sha256:b37343f091cd0ffd2e8881824fa7eb48840fcaa1924b9df53edc6d5828a44255`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1389 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1d67ffbd95a6b961816519f50fa3d55ae7eb440d88109b8d6784a1093bfe62e2`  
-		Last Modified: Wed, 10 Nov 2021 21:11:11 GMT  
-		Size: 183.6 MB (183629721 bytes)  
+	-	`sha256:5a722237d8a9d82c5a0e0401f0d42603163f666c0dc8dba2f339c5858703d9e7`  
+		Last Modified: Thu, 11 Nov 2021 02:39:38 GMT  
+		Size: 183.9 MB (183948511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a06fd0b5df6b3417d9ff1f2bdf32c8c9ed0d6a0c45b70e6db8fb0a0019e361d7`  
-		Last Modified: Wed, 10 Nov 2021 21:07:48 GMT  
-		Size: 1.4 KB (1415 bytes)  
+	-	`sha256:f983e129d00f1fc3c9459bca58fe6d4bf0f833ed18f5ccc0c1e4478aea0af48e`  
+		Last Modified: Thu, 11 Nov 2021 02:36:30 GMT  
+		Size: 1.4 KB (1418 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `openjdk:18-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull openjdk@sha256:ae714022fbaebf672f0d5718781b37285f6126101122843d24734fcce4a9e769
+$ docker pull openjdk@sha256:fc7df54e750b5c819b1e04005fa166205dbc9fb52fd811c6168e851534087208
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -42577,14 +41623,14 @@ $ docker pull openjdk@sha256:ae714022fbaebf672f0d5718781b37285f6126101122843d247
 ### `openjdk:18-windowsservercore-ltsc2022` - windows version 10.0.20348.350; amd64
 
 ```console
-$ docker pull openjdk@sha256:e8255df62dff59325ca6e55e1bcc9080692eaefdcdbb1d7deaafb57971ee86de
+$ docker pull openjdk@sha256:9c20d60c7bde738f2c3e57e52aafbaecc57f1a5ec9c4b75dba7c45378b4acfeb
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.4 GB (2369632853 bytes)**  
+-	Total Size: **2.4 GB (2369930838 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c7f00655015db4254b3d0354638c0dbea2256f1b504ac92eb2577f6a5a1884f4`
+-	Image ID: `sha256:a5c6761474f0c566c146885a48d00326c719b7730871258da29aad263b932a4a`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -42601,15 +41647,15 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 ENV JAVA_HOME=C:\openjdk-18
 # Wed, 10 Nov 2021 20:23:41 GMT
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath; 	Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:23:42 GMT
-ENV JAVA_VERSION=18-ea+21
-# Wed, 10 Nov 2021 20:23:43 GMT
-ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/21/GPL/openjdk-18-ea+21_windows-x64_bin.zip
-# Wed, 10 Nov 2021 20:23:44 GMT
-ENV JAVA_SHA256=d86fa72089f38517f71cc0bc0b431978c3c5c820971af065f17813249833bd87
-# Wed, 10 Nov 2021 20:24:32 GMT
+# Thu, 11 Nov 2021 02:22:29 GMT
+ENV JAVA_VERSION=18-ea+22
+# Thu, 11 Nov 2021 02:22:30 GMT
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk18/22/GPL/openjdk-18-ea+22_windows-x64_bin.zip
+# Thu, 11 Nov 2021 02:22:31 GMT
+ENV JAVA_SHA256=93be0b0693c34aeb7092285ef991a263f796b4c38421b8396afd93808b5cd84e
+# Thu, 11 Nov 2021 02:23:15 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:JAVA_URL -OutFile 'openjdk.zip'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:JAVA_SHA256); 	if ((Get-FileHash openjdk.zip -Algorithm sha256).Hash -ne $env:JAVA_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	New-Item -ItemType Directory -Path C:\temp | Out-Null; 	Expand-Archive openjdk.zip -DestinationPath C:\temp; 	Move-Item -Path C:\temp\* -Destination $env:JAVA_HOME; 	Remove-Item C:\temp; 		Write-Host 'Removing ...'; 	Remove-Item openjdk.zip -Force; 		Write-Host 'Verifying install ...'; 	Write-Host '  javac --version'; javac --version; 	Write-Host '  java --version'; java --version; 		Write-Host 'Complete.'
-# Wed, 10 Nov 2021 20:24:34 GMT
+# Thu, 11 Nov 2021 02:23:16 GMT
 CMD ["jshell"]
 ```
 
@@ -42636,25 +41682,25 @@ CMD ["jshell"]
 		Last Modified: Wed, 10 Nov 2021 21:03:27 GMT  
 		Size: 549.7 KB (549708 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b698dd11831adf277aae025052bc6eef078afd78744099225fd6ecd561fdcb6f`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1379 bytes)  
+	-	`sha256:47a3965ec2551fcd1a6117196df95c018068b200db9142b813af85f8f05fac3f`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b0900c61346cbdc2e5203cfe88ec50506b93be59c3bd52564a8b95a1e0f5f4d`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1398 bytes)  
+	-	`sha256:157aee527ea6606caee0c3f88322e3dcee4605f52eb98706b7629d2f2d864f50`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:006246c3aa0e0f4bc3f01c03d0e7d48693d0725b25f3e78f3581915d92760caa`  
-		Last Modified: Wed, 10 Nov 2021 21:03:25 GMT  
-		Size: 1.4 KB (1355 bytes)  
+	-	`sha256:53b7b5633a2546c9bab04d431d13513305ffa78a8fd0fbb6871d649054b71248`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05f8dd5277feae03b608b6cc2ff3cd3dc5107d8e8b71c5d8af8412db74134f7b`  
-		Last Modified: Wed, 10 Nov 2021 21:06:46 GMT  
-		Size: 183.9 MB (183851222 bytes)  
+	-	`sha256:458a4ea681f6aaefe0ffff613b2b6902899d6cf784e658b99c5d2aefe9fd101c`  
+		Last Modified: Thu, 11 Nov 2021 02:35:31 GMT  
+		Size: 184.1 MB (184149058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:174ce1c5faf404eee966a95111144858ca8a1cd9b461dc6660bda459e2b91294`  
-		Last Modified: Wed, 10 Nov 2021 21:03:24 GMT  
-		Size: 1.4 KB (1419 bytes)  
+	-	`sha256:b237936aa73b8bc01a1cd55260a8718087e351e2cf387793361369cb3067930f`  
+		Last Modified: Thu, 11 Nov 2021 02:32:08 GMT  
+		Size: 1.4 KB (1416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `openjdk:8`
