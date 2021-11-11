@@ -4,7 +4,7 @@
 
 - Image ID: `sha256:4e619f6b5f2a0ffec0d181f430f72c50b032785eddd18053c5bffda99007309e`
 - Created: `2021-11-05T19:21:41.090765338Z`
-- Virtual Size: ~ 571.66 Mb  
+- Virtual Size: ~ 571.64 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -36,6 +36,8 @@ Source:
 
 ```console
 $ yumdownloader --quiet --source --urls acl-2.2.51-15.el7
+http://mirrors.tripadvisor.com/centos/7.9.2009/updates/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://mirrors.tripadvisor.com/centos/7.9.2009/updates/x86_64/repodata/repomd.xml: (28, 'Operation too slow. Less than 1000 bytes/sec transferred the last 30 seconds')
+Trying other mirror.
 Enabling updates-source repository
 Enabling base-source repository
 Enabling extras-source repository
