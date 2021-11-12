@@ -1,18 +1,18 @@
-# `nginx:1.21.3-alpine-perl`
+# `nginx:1.21.4-alpine-perl`
 
 ## Docker Metadata
 
-- Image ID: `sha256:213a542c9862a490e0140cb5caf9b9916013d516b6ce3aa35a7f120b95c4cd32`
-- Created: `2021-09-09T18:27:07.73390303Z`
-- Virtual Size: ~ 57.58 Mb  
+- Image ID: `sha256:5aa057cc422bab6655cb3035028ea28c60ec2f0d12781fce2559607c411dc39a`
+- Created: `2021-11-10T01:38:41.985490219Z`
+- Virtual Size: ~ 57.82 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.21.3`
-  - `NJS_VERSION=0.6.2`
+  - `NGINX_VERSION=1.21.4`
+  - `NJS_VERSION=0.7.0`
   - `PKG_RELEASE=1`
 - Labels:
   - `maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>`
@@ -141,16 +141,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-7.78.0-r0 description:
+curl-7.79.1-r0 description:
 URL retrival utility and library
 
-curl-7.78.0-r0 webpage:
+curl-7.79.1-r0 webpage:
 https://curl.se/
 
-curl-7.78.0-r0 installed size:
-244 KiB
+curl-7.79.1-r0 installed size:
+248 KiB
 
-curl-7.78.0-r0 license:
+curl-7.79.1-r0 license:
 MIT
 
 ```
@@ -175,16 +175,16 @@ FTL GPL-2.0-or-later
 ### `apk` package: `geoip`
 
 ```console
-geoip-1.6.12-r1 description:
+geoip-1.6.12-r2 description:
 Lookup countries by IP addresses
 
-geoip-1.6.12-r1 webpage:
+geoip-1.6.12-r2 webpage:
 http://www.maxmind.com/app/ip-location
 
-geoip-1.6.12-r1 installed size:
-284 KiB
+geoip-1.6.12-r2 installed size:
+268 KiB
 
-geoip-1.6.12-r1 license:
+geoip-1.6.12-r2 license:
 GPL
 
 ```
@@ -243,16 +243,16 @@ OpenSSL
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.78.0-r0 description:
+libcurl-7.79.1-r0 description:
 The multiprotocol file transfer library
 
-libcurl-7.78.0-r0 webpage:
+libcurl-7.79.1-r0 webpage:
 https://curl.se/
 
-libcurl-7.78.0-r0 installed size:
+libcurl-7.79.1-r0 installed size:
 500 KiB
 
-libcurl-7.78.0-r0 license:
+libcurl-7.79.1-r0 license:
 MIT
 
 ```
@@ -549,16 +549,16 @@ MIT
 ### `apk` package: `nginx`
 
 ```console
-nginx-1.21.3-r1 description:
+nginx-1.21.4-r1 description:
 High performance web server
 
-nginx-1.21.3-r1 webpage:
+nginx-1.21.4-r1 webpage:
 https://nginx.org/
 
-nginx-1.21.3-r1 installed size:
+nginx-1.21.4-r1 installed size:
 2584 KiB
 
-nginx-1.21.3-r1 license:
+nginx-1.21.4-r1 license:
 2-clause BSD-like license
 
 ```
@@ -566,16 +566,16 @@ nginx-1.21.3-r1 license:
 ### `apk` package: `nginx-module-geoip`
 
 ```console
-nginx-module-geoip-1.21.3-r1 description:
+nginx-module-geoip-1.21.4-r1 description:
 nginx GeoIP dynamic modules
 
-nginx-module-geoip-1.21.3-r1 webpage:
+nginx-module-geoip-1.21.4-r1 webpage:
 https://nginx.org/
 
-nginx-module-geoip-1.21.3-r1 installed size:
+nginx-module-geoip-1.21.4-r1 installed size:
 116 KiB
 
-nginx-module-geoip-1.21.3-r1 license:
+nginx-module-geoip-1.21.4-r1 license:
 2-clause BSD-like license
 
 ```
@@ -583,16 +583,16 @@ nginx-module-geoip-1.21.3-r1 license:
 ### `apk` package: `nginx-module-image-filter`
 
 ```console
-nginx-module-image-filter-1.21.3-r1 description:
+nginx-module-image-filter-1.21.4-r1 description:
 nginx image filter dynamic module
 
-nginx-module-image-filter-1.21.3-r1 webpage:
+nginx-module-image-filter-1.21.4-r1 webpage:
 https://nginx.org/
 
-nginx-module-image-filter-1.21.3-r1 installed size:
+nginx-module-image-filter-1.21.4-r1 installed size:
 88 KiB
 
-nginx-module-image-filter-1.21.3-r1 license:
+nginx-module-image-filter-1.21.4-r1 license:
 2-clause BSD-like license
 
 ```
@@ -600,16 +600,16 @@ nginx-module-image-filter-1.21.3-r1 license:
 ### `apk` package: `nginx-module-njs`
 
 ```console
-nginx-module-njs-1.21.3.0.6.2-r1 description:
+nginx-module-njs-1.21.4.0.7.0-r1 description:
 nginx njs dynamic modules
 
-nginx-module-njs-1.21.3.0.6.2-r1 webpage:
+nginx-module-njs-1.21.4.0.7.0-r1 webpage:
 https://nginx.org/
 
-nginx-module-njs-1.21.3.0.6.2-r1 installed size:
-3624 KiB
+nginx-module-njs-1.21.4.0.7.0-r1 installed size:
+3812 KiB
 
-nginx-module-njs-1.21.3.0.6.2-r1 license:
+nginx-module-njs-1.21.4.0.7.0-r1 license:
 2-clause BSD-like license
 
 ```
@@ -617,16 +617,16 @@ nginx-module-njs-1.21.3.0.6.2-r1 license:
 ### `apk` package: `nginx-module-perl`
 
 ```console
-nginx-module-perl-1.21.3-r1 description:
+nginx-module-perl-1.21.4-r1 description:
 nginx Perl dynamic module
 
-nginx-module-perl-1.21.3-r1 webpage:
+nginx-module-perl-1.21.4-r1 webpage:
 https://nginx.org/
 
-nginx-module-perl-1.21.3-r1 installed size:
+nginx-module-perl-1.21.4-r1 installed size:
 156 KiB
 
-nginx-module-perl-1.21.3-r1 license:
+nginx-module-perl-1.21.4-r1 license:
 2-clause BSD-like license
 
 ```
@@ -634,16 +634,16 @@ nginx-module-perl-1.21.3-r1 license:
 ### `apk` package: `nginx-module-xslt`
 
 ```console
-nginx-module-xslt-1.21.3-r1 description:
+nginx-module-xslt-1.21.4-r1 description:
 nginx xslt dynamic module
 
-nginx-module-xslt-1.21.3-r1 webpage:
+nginx-module-xslt-1.21.4-r1 webpage:
 https://nginx.org/
 
-nginx-module-xslt-1.21.3-r1 installed size:
+nginx-module-xslt-1.21.4-r1 installed size:
 84 KiB
 
-nginx-module-xslt-1.21.3-r1 license:
+nginx-module-xslt-1.21.4-r1 license:
 2-clause BSD-like license
 
 ```
@@ -719,16 +719,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2021a-r0 description:
+tzdata-2021e-r0 description:
 Timezone data
 
-tzdata-2021a-r0 webpage:
+tzdata-2021e-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2021a-r0 installed size:
-3436 KiB
+tzdata-2021e-r0 installed size:
+3376 KiB
 
-tzdata-2021a-r0 license:
+tzdata-2021e-r0 license:
 Public-Domain
 
 ```
