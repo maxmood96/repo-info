@@ -626,7 +626,7 @@ CMD ["jshell"]
 ## `eclipse-temurin:11-alpine`
 
 ```console
-$ docker pull eclipse-temurin@sha256:3321c02f0afedee935b42a7e84f9a0ef3f70ae0fa357d46805c9a2376b2e381d
+$ docker pull eclipse-temurin@sha256:7e9507850e2b4a4bd50151bcd63a3d32c8d2a6249c0cb3665c8fa9f8d4aba72e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -636,53 +636,53 @@ $ docker pull eclipse-temurin@sha256:3321c02f0afedee935b42a7e84f9a0ef3f70ae0fa35
 ### `eclipse-temurin:11-alpine` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:ffb401a9dce63ece4d840357c6042a2c740ffde7a94693aea67186d88a53fa0d
+$ docker pull eclipse-temurin@sha256:ed3613ae4c11346484fc737dd3178dcb47926c9a67ab08e45a306f29a41d5ed2
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **196.0 MB (195965150 bytes)**  
+-	Total Size: **196.0 MB (195995143 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:70f0247041868c48857034eb586d02ec9aa47e1f0ccb446c36fee549cb857a81`
+-	Image ID: `sha256:7a2d72829277775f66a7f5aeed02034afe573dd2f761d57c7e95187309ff52d6`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Fri, 27 Aug 2021 17:19:45 GMT
-ADD file:aad4290d27580cc1a094ffaf98c3ca2fc5d699fe695dfb8e6e9fac20f1129450 in / 
-# Fri, 27 Aug 2021 17:19:45 GMT
+# Fri, 12 Nov 2021 17:19:44 GMT
+ADD file:762c899ec0505d1a32930ee804c5b008825f41611161be104076cba33b7e5b2b in / 
+# Fri, 12 Nov 2021 17:19:45 GMT
 CMD ["/bin/sh"]
-# Fri, 17 Sep 2021 21:41:38 GMT
+# Fri, 12 Nov 2021 22:10:12 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 24 Sep 2021 19:20:30 GMT
+# Fri, 12 Nov 2021 22:10:13 GMT
 RUN apk add --no-cache tzdata musl-locales musl-locales-lang     && rm -rf /var/cache/apk/*
-# Wed, 27 Oct 2021 00:21:11 GMT
+# Fri, 12 Nov 2021 22:10:13 GMT
 ENV JAVA_VERSION=jdk-11.0.13+8
-# Wed, 27 Oct 2021 00:21:23 GMT
+# Fri, 12 Nov 2021 22:10:26 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='4216543c8eaa4b10475bbacb15bbda41e04ec5c8c57424b3303f60c36b8b362d';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.13_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p /opt/java/openjdk; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory /opt/java/openjdk 	      --strip-components 1 	      --no-same-owner 	  ;     rm -rf /tmp/openjdk.tar.gz;
-# Wed, 27 Oct 2021 00:21:23 GMT
+# Fri, 12 Nov 2021 22:10:27 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 27 Oct 2021 00:21:25 GMT
+# Fri, 12 Nov 2021 22:10:28 GMT
 RUN echo Verifying install ...     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Wed, 27 Oct 2021 00:21:25 GMT
+# Fri, 12 Nov 2021 22:10:28 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:a0d0a0d46f8b52473982a3c466318f479767577551a53ffc9074c9fa7035982e`  
-		Last Modified: Fri, 27 Aug 2021 17:20:13 GMT  
-		Size: 2.8 MB (2814446 bytes)  
+	-	`sha256:97518928ae5f3d52d4164b314a7e73654eb686ecd8aafa0b79acd980773a740d`  
+		Last Modified: Fri, 12 Nov 2021 17:20:39 GMT  
+		Size: 2.8 MB (2822981 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5491faa5141cd7b6b8bcb2f0546bc3268ca907c1a0835e91db57c666453bde3d`  
-		Last Modified: Fri, 24 Sep 2021 19:23:00 GMT  
-		Size: 408.6 KB (408594 bytes)  
+	-	`sha256:56981b1bb25bf90c21f6060c91c15dbc4a3d4376abc16e9975ef475bc8561710`  
+		Last Modified: Fri, 12 Nov 2021 22:12:51 GMT  
+		Size: 430.1 KB (430083 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec07926210159dd1ea84cd07a169e8979a796564a763df0eab6cf64056626640`  
-		Last Modified: Wed, 27 Oct 2021 00:23:46 GMT  
-		Size: 192.7 MB (192741950 bytes)  
+	-	`sha256:b97623027cff394637ceb699001f714be6f2495ab2e0cfea545e1cfe4f9f2656`  
+		Last Modified: Fri, 12 Nov 2021 22:13:10 GMT  
+		Size: 192.7 MB (192741917 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a9de57a165da61917fe0d96f86e9e26626e47871236625e79da24282f177f1c6`  
-		Last Modified: Wed, 27 Oct 2021 00:23:26 GMT  
-		Size: 160.0 B  
+	-	`sha256:c6fc9c4c02373f27144b7c6fb5c6d177b1a967cb562d4da0540641faa1d41f61`  
+		Last Modified: Fri, 12 Nov 2021 22:12:50 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `eclipse-temurin:11-centos7`
@@ -1590,7 +1590,7 @@ CMD ["jshell"]
 ## `eclipse-temurin:11-jdk-alpine`
 
 ```console
-$ docker pull eclipse-temurin@sha256:3321c02f0afedee935b42a7e84f9a0ef3f70ae0fa357d46805c9a2376b2e381d
+$ docker pull eclipse-temurin@sha256:7e9507850e2b4a4bd50151bcd63a3d32c8d2a6249c0cb3665c8fa9f8d4aba72e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1600,53 +1600,53 @@ $ docker pull eclipse-temurin@sha256:3321c02f0afedee935b42a7e84f9a0ef3f70ae0fa35
 ### `eclipse-temurin:11-jdk-alpine` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:ffb401a9dce63ece4d840357c6042a2c740ffde7a94693aea67186d88a53fa0d
+$ docker pull eclipse-temurin@sha256:ed3613ae4c11346484fc737dd3178dcb47926c9a67ab08e45a306f29a41d5ed2
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **196.0 MB (195965150 bytes)**  
+-	Total Size: **196.0 MB (195995143 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:70f0247041868c48857034eb586d02ec9aa47e1f0ccb446c36fee549cb857a81`
+-	Image ID: `sha256:7a2d72829277775f66a7f5aeed02034afe573dd2f761d57c7e95187309ff52d6`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Fri, 27 Aug 2021 17:19:45 GMT
-ADD file:aad4290d27580cc1a094ffaf98c3ca2fc5d699fe695dfb8e6e9fac20f1129450 in / 
-# Fri, 27 Aug 2021 17:19:45 GMT
+# Fri, 12 Nov 2021 17:19:44 GMT
+ADD file:762c899ec0505d1a32930ee804c5b008825f41611161be104076cba33b7e5b2b in / 
+# Fri, 12 Nov 2021 17:19:45 GMT
 CMD ["/bin/sh"]
-# Fri, 17 Sep 2021 21:41:38 GMT
+# Fri, 12 Nov 2021 22:10:12 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 24 Sep 2021 19:20:30 GMT
+# Fri, 12 Nov 2021 22:10:13 GMT
 RUN apk add --no-cache tzdata musl-locales musl-locales-lang     && rm -rf /var/cache/apk/*
-# Wed, 27 Oct 2021 00:21:11 GMT
+# Fri, 12 Nov 2021 22:10:13 GMT
 ENV JAVA_VERSION=jdk-11.0.13+8
-# Wed, 27 Oct 2021 00:21:23 GMT
+# Fri, 12 Nov 2021 22:10:26 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='4216543c8eaa4b10475bbacb15bbda41e04ec5c8c57424b3303f60c36b8b362d';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.13_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p /opt/java/openjdk; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory /opt/java/openjdk 	      --strip-components 1 	      --no-same-owner 	  ;     rm -rf /tmp/openjdk.tar.gz;
-# Wed, 27 Oct 2021 00:21:23 GMT
+# Fri, 12 Nov 2021 22:10:27 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 27 Oct 2021 00:21:25 GMT
+# Fri, 12 Nov 2021 22:10:28 GMT
 RUN echo Verifying install ...     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Wed, 27 Oct 2021 00:21:25 GMT
+# Fri, 12 Nov 2021 22:10:28 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:a0d0a0d46f8b52473982a3c466318f479767577551a53ffc9074c9fa7035982e`  
-		Last Modified: Fri, 27 Aug 2021 17:20:13 GMT  
-		Size: 2.8 MB (2814446 bytes)  
+	-	`sha256:97518928ae5f3d52d4164b314a7e73654eb686ecd8aafa0b79acd980773a740d`  
+		Last Modified: Fri, 12 Nov 2021 17:20:39 GMT  
+		Size: 2.8 MB (2822981 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5491faa5141cd7b6b8bcb2f0546bc3268ca907c1a0835e91db57c666453bde3d`  
-		Last Modified: Fri, 24 Sep 2021 19:23:00 GMT  
-		Size: 408.6 KB (408594 bytes)  
+	-	`sha256:56981b1bb25bf90c21f6060c91c15dbc4a3d4376abc16e9975ef475bc8561710`  
+		Last Modified: Fri, 12 Nov 2021 22:12:51 GMT  
+		Size: 430.1 KB (430083 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec07926210159dd1ea84cd07a169e8979a796564a763df0eab6cf64056626640`  
-		Last Modified: Wed, 27 Oct 2021 00:23:46 GMT  
-		Size: 192.7 MB (192741950 bytes)  
+	-	`sha256:b97623027cff394637ceb699001f714be6f2495ab2e0cfea545e1cfe4f9f2656`  
+		Last Modified: Fri, 12 Nov 2021 22:13:10 GMT  
+		Size: 192.7 MB (192741917 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a9de57a165da61917fe0d96f86e9e26626e47871236625e79da24282f177f1c6`  
-		Last Modified: Wed, 27 Oct 2021 00:23:26 GMT  
-		Size: 160.0 B  
+	-	`sha256:c6fc9c4c02373f27144b7c6fb5c6d177b1a967cb562d4da0540641faa1d41f61`  
+		Last Modified: Fri, 12 Nov 2021 22:12:50 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `eclipse-temurin:11-jdk-centos7`
@@ -3265,7 +3265,7 @@ RUN Write-Host 'Verifying install ...';     Write-Host 'java --version'; java --
 ## `eclipse-temurin:11-jre-alpine`
 
 ```console
-$ docker pull eclipse-temurin@sha256:b4f3522498c1c019ffeee7dc8e2f4100f8028207d86c62971efe1d37e313c375
+$ docker pull eclipse-temurin@sha256:96f25d8ae7b1ebc45651d58713a47fe47335333355a99e183f6383baf1e65fa1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3275,50 +3275,50 @@ $ docker pull eclipse-temurin@sha256:b4f3522498c1c019ffeee7dc8e2f4100f8028207d86
 ### `eclipse-temurin:11-jre-alpine` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:68a61bdf11c53dd0d2396bfe631877a300db41329847b487aa06ea5a4f51cecf
+$ docker pull eclipse-temurin@sha256:6bb47aba5cebd4cb5ae09b64a54bcaf4fa5903dde0526a664e0b20528336075b
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **45.9 MB (45888942 bytes)**  
+-	Total Size: **45.9 MB (45918995 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e614e566385bb0aa3b8fffb10621b7281590312d1bbea37006ca93040351c197`
+-	Image ID: `sha256:57d03c2174e6d7d5195855b9922f87665556bb6f671a2f47ecefc59b14cd8837`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Fri, 27 Aug 2021 17:19:45 GMT
-ADD file:aad4290d27580cc1a094ffaf98c3ca2fc5d699fe695dfb8e6e9fac20f1129450 in / 
-# Fri, 27 Aug 2021 17:19:45 GMT
+# Fri, 12 Nov 2021 17:19:44 GMT
+ADD file:762c899ec0505d1a32930ee804c5b008825f41611161be104076cba33b7e5b2b in / 
+# Fri, 12 Nov 2021 17:19:45 GMT
 CMD ["/bin/sh"]
-# Fri, 17 Sep 2021 21:41:38 GMT
+# Fri, 12 Nov 2021 22:10:12 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 24 Sep 2021 19:20:30 GMT
+# Fri, 12 Nov 2021 22:10:13 GMT
 RUN apk add --no-cache tzdata musl-locales musl-locales-lang     && rm -rf /var/cache/apk/*
-# Wed, 27 Oct 2021 00:21:11 GMT
+# Fri, 12 Nov 2021 22:10:13 GMT
 ENV JAVA_VERSION=jdk-11.0.13+8
-# Fri, 05 Nov 2021 19:20:20 GMT
+# Fri, 12 Nov 2021 22:10:42 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='c7f56c8c4a5d115e13c9b595384029441008786427e7a85f91004134520f46d2';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.13_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p /opt/java/openjdk; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory /opt/java/openjdk 	      --strip-components 1 	      --no-same-owner 	  ;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 05 Nov 2021 19:20:21 GMT
+# Fri, 12 Nov 2021 22:10:43 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 05 Nov 2021 19:20:22 GMT
+# Fri, 12 Nov 2021 22:10:44 GMT
 RUN echo Verifying install ...     && echo java --version && java --version     && echo Complete.
 ```
 
 -	Layers:
-	-	`sha256:a0d0a0d46f8b52473982a3c466318f479767577551a53ffc9074c9fa7035982e`  
-		Last Modified: Fri, 27 Aug 2021 17:20:13 GMT  
-		Size: 2.8 MB (2814446 bytes)  
+	-	`sha256:97518928ae5f3d52d4164b314a7e73654eb686ecd8aafa0b79acd980773a740d`  
+		Last Modified: Fri, 12 Nov 2021 17:20:39 GMT  
+		Size: 2.8 MB (2822981 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5491faa5141cd7b6b8bcb2f0546bc3268ca907c1a0835e91db57c666453bde3d`  
-		Last Modified: Fri, 24 Sep 2021 19:23:00 GMT  
-		Size: 408.6 KB (408594 bytes)  
+	-	`sha256:56981b1bb25bf90c21f6060c91c15dbc4a3d4376abc16e9975ef475bc8561710`  
+		Last Modified: Fri, 12 Nov 2021 22:12:51 GMT  
+		Size: 430.1 KB (430083 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cfaece2fb47abad3ebd8253634e21c8bfaa59341127564cd31709dd4f1fbc266`  
-		Last Modified: Fri, 05 Nov 2021 19:23:58 GMT  
-		Size: 42.7 MB (42665742 bytes)  
+	-	`sha256:36467aa27abe813c1ac4b315942b21f7963c8fda07d56525817d21b13ff6d3f7`  
+		Last Modified: Fri, 12 Nov 2021 22:13:36 GMT  
+		Size: 42.7 MB (42665771 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a50942bc481a1af046ec18cbc0cf723bde9154bf20cb9aa753bc0ddc5d3f9898`  
-		Last Modified: Fri, 05 Nov 2021 19:23:52 GMT  
+	-	`sha256:24f54b0225739c61e6ee4021a4076c8ecf32c5dba35f48ed950b91d0162093f7`  
+		Last Modified: Fri, 12 Nov 2021 22:13:28 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -5629,7 +5629,7 @@ CMD ["jshell"]
 ## `eclipse-temurin:11.0.13_8-jdk-alpine`
 
 ```console
-$ docker pull eclipse-temurin@sha256:3321c02f0afedee935b42a7e84f9a0ef3f70ae0fa357d46805c9a2376b2e381d
+$ docker pull eclipse-temurin@sha256:7e9507850e2b4a4bd50151bcd63a3d32c8d2a6249c0cb3665c8fa9f8d4aba72e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5639,53 +5639,53 @@ $ docker pull eclipse-temurin@sha256:3321c02f0afedee935b42a7e84f9a0ef3f70ae0fa35
 ### `eclipse-temurin:11.0.13_8-jdk-alpine` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:ffb401a9dce63ece4d840357c6042a2c740ffde7a94693aea67186d88a53fa0d
+$ docker pull eclipse-temurin@sha256:ed3613ae4c11346484fc737dd3178dcb47926c9a67ab08e45a306f29a41d5ed2
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **196.0 MB (195965150 bytes)**  
+-	Total Size: **196.0 MB (195995143 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:70f0247041868c48857034eb586d02ec9aa47e1f0ccb446c36fee549cb857a81`
+-	Image ID: `sha256:7a2d72829277775f66a7f5aeed02034afe573dd2f761d57c7e95187309ff52d6`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Fri, 27 Aug 2021 17:19:45 GMT
-ADD file:aad4290d27580cc1a094ffaf98c3ca2fc5d699fe695dfb8e6e9fac20f1129450 in / 
-# Fri, 27 Aug 2021 17:19:45 GMT
+# Fri, 12 Nov 2021 17:19:44 GMT
+ADD file:762c899ec0505d1a32930ee804c5b008825f41611161be104076cba33b7e5b2b in / 
+# Fri, 12 Nov 2021 17:19:45 GMT
 CMD ["/bin/sh"]
-# Fri, 17 Sep 2021 21:41:38 GMT
+# Fri, 12 Nov 2021 22:10:12 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 24 Sep 2021 19:20:30 GMT
+# Fri, 12 Nov 2021 22:10:13 GMT
 RUN apk add --no-cache tzdata musl-locales musl-locales-lang     && rm -rf /var/cache/apk/*
-# Wed, 27 Oct 2021 00:21:11 GMT
+# Fri, 12 Nov 2021 22:10:13 GMT
 ENV JAVA_VERSION=jdk-11.0.13+8
-# Wed, 27 Oct 2021 00:21:23 GMT
+# Fri, 12 Nov 2021 22:10:26 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='4216543c8eaa4b10475bbacb15bbda41e04ec5c8c57424b3303f60c36b8b362d';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.13_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p /opt/java/openjdk; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory /opt/java/openjdk 	      --strip-components 1 	      --no-same-owner 	  ;     rm -rf /tmp/openjdk.tar.gz;
-# Wed, 27 Oct 2021 00:21:23 GMT
+# Fri, 12 Nov 2021 22:10:27 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 27 Oct 2021 00:21:25 GMT
+# Fri, 12 Nov 2021 22:10:28 GMT
 RUN echo Verifying install ...     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Wed, 27 Oct 2021 00:21:25 GMT
+# Fri, 12 Nov 2021 22:10:28 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:a0d0a0d46f8b52473982a3c466318f479767577551a53ffc9074c9fa7035982e`  
-		Last Modified: Fri, 27 Aug 2021 17:20:13 GMT  
-		Size: 2.8 MB (2814446 bytes)  
+	-	`sha256:97518928ae5f3d52d4164b314a7e73654eb686ecd8aafa0b79acd980773a740d`  
+		Last Modified: Fri, 12 Nov 2021 17:20:39 GMT  
+		Size: 2.8 MB (2822981 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5491faa5141cd7b6b8bcb2f0546bc3268ca907c1a0835e91db57c666453bde3d`  
-		Last Modified: Fri, 24 Sep 2021 19:23:00 GMT  
-		Size: 408.6 KB (408594 bytes)  
+	-	`sha256:56981b1bb25bf90c21f6060c91c15dbc4a3d4376abc16e9975ef475bc8561710`  
+		Last Modified: Fri, 12 Nov 2021 22:12:51 GMT  
+		Size: 430.1 KB (430083 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec07926210159dd1ea84cd07a169e8979a796564a763df0eab6cf64056626640`  
-		Last Modified: Wed, 27 Oct 2021 00:23:46 GMT  
-		Size: 192.7 MB (192741950 bytes)  
+	-	`sha256:b97623027cff394637ceb699001f714be6f2495ab2e0cfea545e1cfe4f9f2656`  
+		Last Modified: Fri, 12 Nov 2021 22:13:10 GMT  
+		Size: 192.7 MB (192741917 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a9de57a165da61917fe0d96f86e9e26626e47871236625e79da24282f177f1c6`  
-		Last Modified: Wed, 27 Oct 2021 00:23:26 GMT  
-		Size: 160.0 B  
+	-	`sha256:c6fc9c4c02373f27144b7c6fb5c6d177b1a967cb562d4da0540641faa1d41f61`  
+		Last Modified: Fri, 12 Nov 2021 22:12:50 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `eclipse-temurin:11.0.13_8-jdk-centos7`
@@ -7304,7 +7304,7 @@ RUN Write-Host 'Verifying install ...';     Write-Host 'java --version'; java --
 ## `eclipse-temurin:11.0.13_8-jre-alpine`
 
 ```console
-$ docker pull eclipse-temurin@sha256:b4f3522498c1c019ffeee7dc8e2f4100f8028207d86c62971efe1d37e313c375
+$ docker pull eclipse-temurin@sha256:96f25d8ae7b1ebc45651d58713a47fe47335333355a99e183f6383baf1e65fa1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7314,50 +7314,50 @@ $ docker pull eclipse-temurin@sha256:b4f3522498c1c019ffeee7dc8e2f4100f8028207d86
 ### `eclipse-temurin:11.0.13_8-jre-alpine` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:68a61bdf11c53dd0d2396bfe631877a300db41329847b487aa06ea5a4f51cecf
+$ docker pull eclipse-temurin@sha256:6bb47aba5cebd4cb5ae09b64a54bcaf4fa5903dde0526a664e0b20528336075b
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **45.9 MB (45888942 bytes)**  
+-	Total Size: **45.9 MB (45918995 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e614e566385bb0aa3b8fffb10621b7281590312d1bbea37006ca93040351c197`
+-	Image ID: `sha256:57d03c2174e6d7d5195855b9922f87665556bb6f671a2f47ecefc59b14cd8837`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Fri, 27 Aug 2021 17:19:45 GMT
-ADD file:aad4290d27580cc1a094ffaf98c3ca2fc5d699fe695dfb8e6e9fac20f1129450 in / 
-# Fri, 27 Aug 2021 17:19:45 GMT
+# Fri, 12 Nov 2021 17:19:44 GMT
+ADD file:762c899ec0505d1a32930ee804c5b008825f41611161be104076cba33b7e5b2b in / 
+# Fri, 12 Nov 2021 17:19:45 GMT
 CMD ["/bin/sh"]
-# Fri, 17 Sep 2021 21:41:38 GMT
+# Fri, 12 Nov 2021 22:10:12 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 24 Sep 2021 19:20:30 GMT
+# Fri, 12 Nov 2021 22:10:13 GMT
 RUN apk add --no-cache tzdata musl-locales musl-locales-lang     && rm -rf /var/cache/apk/*
-# Wed, 27 Oct 2021 00:21:11 GMT
+# Fri, 12 Nov 2021 22:10:13 GMT
 ENV JAVA_VERSION=jdk-11.0.13+8
-# Fri, 05 Nov 2021 19:20:20 GMT
+# Fri, 12 Nov 2021 22:10:42 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='c7f56c8c4a5d115e13c9b595384029441008786427e7a85f91004134520f46d2';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.13_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p /opt/java/openjdk; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory /opt/java/openjdk 	      --strip-components 1 	      --no-same-owner 	  ;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 05 Nov 2021 19:20:21 GMT
+# Fri, 12 Nov 2021 22:10:43 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 05 Nov 2021 19:20:22 GMT
+# Fri, 12 Nov 2021 22:10:44 GMT
 RUN echo Verifying install ...     && echo java --version && java --version     && echo Complete.
 ```
 
 -	Layers:
-	-	`sha256:a0d0a0d46f8b52473982a3c466318f479767577551a53ffc9074c9fa7035982e`  
-		Last Modified: Fri, 27 Aug 2021 17:20:13 GMT  
-		Size: 2.8 MB (2814446 bytes)  
+	-	`sha256:97518928ae5f3d52d4164b314a7e73654eb686ecd8aafa0b79acd980773a740d`  
+		Last Modified: Fri, 12 Nov 2021 17:20:39 GMT  
+		Size: 2.8 MB (2822981 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5491faa5141cd7b6b8bcb2f0546bc3268ca907c1a0835e91db57c666453bde3d`  
-		Last Modified: Fri, 24 Sep 2021 19:23:00 GMT  
-		Size: 408.6 KB (408594 bytes)  
+	-	`sha256:56981b1bb25bf90c21f6060c91c15dbc4a3d4376abc16e9975ef475bc8561710`  
+		Last Modified: Fri, 12 Nov 2021 22:12:51 GMT  
+		Size: 430.1 KB (430083 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cfaece2fb47abad3ebd8253634e21c8bfaa59341127564cd31709dd4f1fbc266`  
-		Last Modified: Fri, 05 Nov 2021 19:23:58 GMT  
-		Size: 42.7 MB (42665742 bytes)  
+	-	`sha256:36467aa27abe813c1ac4b315942b21f7963c8fda07d56525817d21b13ff6d3f7`  
+		Last Modified: Fri, 12 Nov 2021 22:13:36 GMT  
+		Size: 42.7 MB (42665771 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a50942bc481a1af046ec18cbc0cf723bde9154bf20cb9aa753bc0ddc5d3f9898`  
-		Last Modified: Fri, 05 Nov 2021 19:23:52 GMT  
+	-	`sha256:24f54b0225739c61e6ee4021a4076c8ecf32c5dba35f48ed950b91d0162093f7`  
+		Last Modified: Fri, 12 Nov 2021 22:13:28 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -8869,7 +8869,7 @@ CMD ["jshell"]
 ## `eclipse-temurin:16-alpine`
 
 ```console
-$ docker pull eclipse-temurin@sha256:1994b82029836f840c4ca2650f07a39ac3b8b715ae320fd16bc3fe09f614fb3a
+$ docker pull eclipse-temurin@sha256:2fbfd31df38a41dee7e2613c827c3994a449913859d02c3e56bbb0697c09f02f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8879,52 +8879,52 @@ $ docker pull eclipse-temurin@sha256:1994b82029836f840c4ca2650f07a39ac3b8b715ae3
 ### `eclipse-temurin:16-alpine` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:9ae3d4a6fd4758d661bbb0a31076f6347a994aa885973187504d6e55d453e935
+$ docker pull eclipse-temurin@sha256:06ee1e072c1f0a23ef23502f7476ae6c907f3df6336c1af5b343611a3a9205d7
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **208.7 MB (208696988 bytes)**  
+-	Total Size: **208.7 MB (208726801 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ef6cff39622f79ff428ba36a792e28fea35296cd93008de6f77a1d004f9c8330`
+-	Image ID: `sha256:e07d8f5c93a7f9135c9826f2021deab407ae0add9dc8f3d0d07f730b808fdea8`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Fri, 27 Aug 2021 17:19:45 GMT
-ADD file:aad4290d27580cc1a094ffaf98c3ca2fc5d699fe695dfb8e6e9fac20f1129450 in / 
-# Fri, 27 Aug 2021 17:19:45 GMT
+# Fri, 12 Nov 2021 17:19:44 GMT
+ADD file:762c899ec0505d1a32930ee804c5b008825f41611161be104076cba33b7e5b2b in / 
+# Fri, 12 Nov 2021 17:19:45 GMT
 CMD ["/bin/sh"]
-# Fri, 17 Sep 2021 21:41:38 GMT
+# Fri, 12 Nov 2021 22:10:12 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 24 Sep 2021 19:20:30 GMT
+# Fri, 12 Nov 2021 22:10:13 GMT
 RUN apk add --no-cache tzdata musl-locales musl-locales-lang     && rm -rf /var/cache/apk/*
-# Thu, 30 Sep 2021 17:20:06 GMT
+# Fri, 12 Nov 2021 22:10:50 GMT
 ENV JAVA_VERSION=jdk-16.0.2+7
-# Thu, 30 Sep 2021 17:20:20 GMT
+# Fri, 12 Nov 2021 22:11:05 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='85788b1a1f470ca7ddc576028f29abbc3bc3b08f82dd811a3e24371689d7dc0f';          BINARY_URL='https://github.com/adoptium/temurin16-binaries/releases/download/jdk-16.0.2%2B7/OpenJDK16U-jdk_x64_alpine-linux_hotspot_16.0.2_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p /opt/java/openjdk; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory /opt/java/openjdk 	      --strip-components 1 	      --no-same-owner 	  ;     rm -rf /tmp/openjdk.tar.gz;
-# Thu, 30 Sep 2021 17:20:21 GMT
+# Fri, 12 Nov 2021 22:11:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 30 Sep 2021 17:20:22 GMT
+# Fri, 12 Nov 2021 22:11:07 GMT
 RUN echo Verifying install ...     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Thu, 30 Sep 2021 17:20:22 GMT
+# Fri, 12 Nov 2021 22:11:07 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:a0d0a0d46f8b52473982a3c466318f479767577551a53ffc9074c9fa7035982e`  
-		Last Modified: Fri, 27 Aug 2021 17:20:13 GMT  
-		Size: 2.8 MB (2814446 bytes)  
+	-	`sha256:97518928ae5f3d52d4164b314a7e73654eb686ecd8aafa0b79acd980773a740d`  
+		Last Modified: Fri, 12 Nov 2021 17:20:39 GMT  
+		Size: 2.8 MB (2822981 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5491faa5141cd7b6b8bcb2f0546bc3268ca907c1a0835e91db57c666453bde3d`  
-		Last Modified: Fri, 24 Sep 2021 19:23:00 GMT  
-		Size: 408.6 KB (408594 bytes)  
+	-	`sha256:56981b1bb25bf90c21f6060c91c15dbc4a3d4376abc16e9975ef475bc8561710`  
+		Last Modified: Fri, 12 Nov 2021 22:12:51 GMT  
+		Size: 430.1 KB (430083 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:727067180390841412d947f7964422f9c516711764eb10fb35ae337dc66677b8`  
-		Last Modified: Thu, 30 Sep 2021 17:21:52 GMT  
-		Size: 205.5 MB (205473787 bytes)  
+	-	`sha256:127fcb40ccb64f778eb06fb2a1957c35e3abfd924f410781d933b4d3b8576139`  
+		Last Modified: Fri, 12 Nov 2021 22:14:08 GMT  
+		Size: 205.5 MB (205473576 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8604c492f623b3dfc51d67f385dfb686f3b55afd7346b1e8356d9f3657e989d5`  
-		Last Modified: Thu, 30 Sep 2021 17:21:37 GMT  
+	-	`sha256:ee43c163f4268f6c2312f341573fbb51f84104a1a8455dcb61bc8fd7876a0d43`  
+		Last Modified: Fri, 12 Nov 2021 22:13:49 GMT  
 		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -9773,7 +9773,7 @@ CMD ["jshell"]
 ## `eclipse-temurin:16-jdk-alpine`
 
 ```console
-$ docker pull eclipse-temurin@sha256:1994b82029836f840c4ca2650f07a39ac3b8b715ae320fd16bc3fe09f614fb3a
+$ docker pull eclipse-temurin@sha256:2fbfd31df38a41dee7e2613c827c3994a449913859d02c3e56bbb0697c09f02f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9783,52 +9783,52 @@ $ docker pull eclipse-temurin@sha256:1994b82029836f840c4ca2650f07a39ac3b8b715ae3
 ### `eclipse-temurin:16-jdk-alpine` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:9ae3d4a6fd4758d661bbb0a31076f6347a994aa885973187504d6e55d453e935
+$ docker pull eclipse-temurin@sha256:06ee1e072c1f0a23ef23502f7476ae6c907f3df6336c1af5b343611a3a9205d7
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **208.7 MB (208696988 bytes)**  
+-	Total Size: **208.7 MB (208726801 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ef6cff39622f79ff428ba36a792e28fea35296cd93008de6f77a1d004f9c8330`
+-	Image ID: `sha256:e07d8f5c93a7f9135c9826f2021deab407ae0add9dc8f3d0d07f730b808fdea8`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Fri, 27 Aug 2021 17:19:45 GMT
-ADD file:aad4290d27580cc1a094ffaf98c3ca2fc5d699fe695dfb8e6e9fac20f1129450 in / 
-# Fri, 27 Aug 2021 17:19:45 GMT
+# Fri, 12 Nov 2021 17:19:44 GMT
+ADD file:762c899ec0505d1a32930ee804c5b008825f41611161be104076cba33b7e5b2b in / 
+# Fri, 12 Nov 2021 17:19:45 GMT
 CMD ["/bin/sh"]
-# Fri, 17 Sep 2021 21:41:38 GMT
+# Fri, 12 Nov 2021 22:10:12 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 24 Sep 2021 19:20:30 GMT
+# Fri, 12 Nov 2021 22:10:13 GMT
 RUN apk add --no-cache tzdata musl-locales musl-locales-lang     && rm -rf /var/cache/apk/*
-# Thu, 30 Sep 2021 17:20:06 GMT
+# Fri, 12 Nov 2021 22:10:50 GMT
 ENV JAVA_VERSION=jdk-16.0.2+7
-# Thu, 30 Sep 2021 17:20:20 GMT
+# Fri, 12 Nov 2021 22:11:05 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='85788b1a1f470ca7ddc576028f29abbc3bc3b08f82dd811a3e24371689d7dc0f';          BINARY_URL='https://github.com/adoptium/temurin16-binaries/releases/download/jdk-16.0.2%2B7/OpenJDK16U-jdk_x64_alpine-linux_hotspot_16.0.2_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p /opt/java/openjdk; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory /opt/java/openjdk 	      --strip-components 1 	      --no-same-owner 	  ;     rm -rf /tmp/openjdk.tar.gz;
-# Thu, 30 Sep 2021 17:20:21 GMT
+# Fri, 12 Nov 2021 22:11:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 30 Sep 2021 17:20:22 GMT
+# Fri, 12 Nov 2021 22:11:07 GMT
 RUN echo Verifying install ...     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Thu, 30 Sep 2021 17:20:22 GMT
+# Fri, 12 Nov 2021 22:11:07 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:a0d0a0d46f8b52473982a3c466318f479767577551a53ffc9074c9fa7035982e`  
-		Last Modified: Fri, 27 Aug 2021 17:20:13 GMT  
-		Size: 2.8 MB (2814446 bytes)  
+	-	`sha256:97518928ae5f3d52d4164b314a7e73654eb686ecd8aafa0b79acd980773a740d`  
+		Last Modified: Fri, 12 Nov 2021 17:20:39 GMT  
+		Size: 2.8 MB (2822981 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5491faa5141cd7b6b8bcb2f0546bc3268ca907c1a0835e91db57c666453bde3d`  
-		Last Modified: Fri, 24 Sep 2021 19:23:00 GMT  
-		Size: 408.6 KB (408594 bytes)  
+	-	`sha256:56981b1bb25bf90c21f6060c91c15dbc4a3d4376abc16e9975ef475bc8561710`  
+		Last Modified: Fri, 12 Nov 2021 22:12:51 GMT  
+		Size: 430.1 KB (430083 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:727067180390841412d947f7964422f9c516711764eb10fb35ae337dc66677b8`  
-		Last Modified: Thu, 30 Sep 2021 17:21:52 GMT  
-		Size: 205.5 MB (205473787 bytes)  
+	-	`sha256:127fcb40ccb64f778eb06fb2a1957c35e3abfd924f410781d933b4d3b8576139`  
+		Last Modified: Fri, 12 Nov 2021 22:14:08 GMT  
+		Size: 205.5 MB (205473576 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8604c492f623b3dfc51d67f385dfb686f3b55afd7346b1e8356d9f3657e989d5`  
-		Last Modified: Thu, 30 Sep 2021 17:21:37 GMT  
+	-	`sha256:ee43c163f4268f6c2312f341573fbb51f84104a1a8455dcb61bc8fd7876a0d43`  
+		Last Modified: Fri, 12 Nov 2021 22:13:49 GMT  
 		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -11563,7 +11563,7 @@ CMD ["jshell"]
 ## `eclipse-temurin:16.0.2_7-jdk-alpine`
 
 ```console
-$ docker pull eclipse-temurin@sha256:1994b82029836f840c4ca2650f07a39ac3b8b715ae320fd16bc3fe09f614fb3a
+$ docker pull eclipse-temurin@sha256:2fbfd31df38a41dee7e2613c827c3994a449913859d02c3e56bbb0697c09f02f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11573,52 +11573,52 @@ $ docker pull eclipse-temurin@sha256:1994b82029836f840c4ca2650f07a39ac3b8b715ae3
 ### `eclipse-temurin:16.0.2_7-jdk-alpine` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:9ae3d4a6fd4758d661bbb0a31076f6347a994aa885973187504d6e55d453e935
+$ docker pull eclipse-temurin@sha256:06ee1e072c1f0a23ef23502f7476ae6c907f3df6336c1af5b343611a3a9205d7
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **208.7 MB (208696988 bytes)**  
+-	Total Size: **208.7 MB (208726801 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ef6cff39622f79ff428ba36a792e28fea35296cd93008de6f77a1d004f9c8330`
+-	Image ID: `sha256:e07d8f5c93a7f9135c9826f2021deab407ae0add9dc8f3d0d07f730b808fdea8`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Fri, 27 Aug 2021 17:19:45 GMT
-ADD file:aad4290d27580cc1a094ffaf98c3ca2fc5d699fe695dfb8e6e9fac20f1129450 in / 
-# Fri, 27 Aug 2021 17:19:45 GMT
+# Fri, 12 Nov 2021 17:19:44 GMT
+ADD file:762c899ec0505d1a32930ee804c5b008825f41611161be104076cba33b7e5b2b in / 
+# Fri, 12 Nov 2021 17:19:45 GMT
 CMD ["/bin/sh"]
-# Fri, 17 Sep 2021 21:41:38 GMT
+# Fri, 12 Nov 2021 22:10:12 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 24 Sep 2021 19:20:30 GMT
+# Fri, 12 Nov 2021 22:10:13 GMT
 RUN apk add --no-cache tzdata musl-locales musl-locales-lang     && rm -rf /var/cache/apk/*
-# Thu, 30 Sep 2021 17:20:06 GMT
+# Fri, 12 Nov 2021 22:10:50 GMT
 ENV JAVA_VERSION=jdk-16.0.2+7
-# Thu, 30 Sep 2021 17:20:20 GMT
+# Fri, 12 Nov 2021 22:11:05 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='85788b1a1f470ca7ddc576028f29abbc3bc3b08f82dd811a3e24371689d7dc0f';          BINARY_URL='https://github.com/adoptium/temurin16-binaries/releases/download/jdk-16.0.2%2B7/OpenJDK16U-jdk_x64_alpine-linux_hotspot_16.0.2_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p /opt/java/openjdk; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory /opt/java/openjdk 	      --strip-components 1 	      --no-same-owner 	  ;     rm -rf /tmp/openjdk.tar.gz;
-# Thu, 30 Sep 2021 17:20:21 GMT
+# Fri, 12 Nov 2021 22:11:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 30 Sep 2021 17:20:22 GMT
+# Fri, 12 Nov 2021 22:11:07 GMT
 RUN echo Verifying install ...     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Thu, 30 Sep 2021 17:20:22 GMT
+# Fri, 12 Nov 2021 22:11:07 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:a0d0a0d46f8b52473982a3c466318f479767577551a53ffc9074c9fa7035982e`  
-		Last Modified: Fri, 27 Aug 2021 17:20:13 GMT  
-		Size: 2.8 MB (2814446 bytes)  
+	-	`sha256:97518928ae5f3d52d4164b314a7e73654eb686ecd8aafa0b79acd980773a740d`  
+		Last Modified: Fri, 12 Nov 2021 17:20:39 GMT  
+		Size: 2.8 MB (2822981 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5491faa5141cd7b6b8bcb2f0546bc3268ca907c1a0835e91db57c666453bde3d`  
-		Last Modified: Fri, 24 Sep 2021 19:23:00 GMT  
-		Size: 408.6 KB (408594 bytes)  
+	-	`sha256:56981b1bb25bf90c21f6060c91c15dbc4a3d4376abc16e9975ef475bc8561710`  
+		Last Modified: Fri, 12 Nov 2021 22:12:51 GMT  
+		Size: 430.1 KB (430083 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:727067180390841412d947f7964422f9c516711764eb10fb35ae337dc66677b8`  
-		Last Modified: Thu, 30 Sep 2021 17:21:52 GMT  
-		Size: 205.5 MB (205473787 bytes)  
+	-	`sha256:127fcb40ccb64f778eb06fb2a1957c35e3abfd924f410781d933b4d3b8576139`  
+		Last Modified: Fri, 12 Nov 2021 22:14:08 GMT  
+		Size: 205.5 MB (205473576 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8604c492f623b3dfc51d67f385dfb686f3b55afd7346b1e8356d9f3657e989d5`  
-		Last Modified: Thu, 30 Sep 2021 17:21:37 GMT  
+	-	`sha256:ee43c163f4268f6c2312f341573fbb51f84104a1a8455dcb61bc8fd7876a0d43`  
+		Last Modified: Fri, 12 Nov 2021 22:13:49 GMT  
 		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -12970,7 +12970,7 @@ CMD ["jshell"]
 ## `eclipse-temurin:17-alpine`
 
 ```console
-$ docker pull eclipse-temurin@sha256:7e7f5efc54fe8913ce00d2a7ab8cb8226d0d5c6065c0eceef9ba7984fd5300f4
+$ docker pull eclipse-temurin@sha256:32b5c3ab0a254b9fcfdd6fce9ac968c7d1f8b2785cfbd39643eaf1c08774d7aa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12980,52 +12980,52 @@ $ docker pull eclipse-temurin@sha256:7e7f5efc54fe8913ce00d2a7ab8cb8226d0d5c6065c
 ### `eclipse-temurin:17-alpine` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:0a2d997d610743ff75e497e18800ad2dbfca896430ec4559c5fa4b32f213845c
+$ docker pull eclipse-temurin@sha256:b30fa3ce4323ce037cb95fd2729dd4662d86f0ee2986452527cc645eaf258a1d
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **195.1 MB (195078326 bytes)**  
+-	Total Size: **195.1 MB (195108396 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6caf7aceb0c371fff0127f8ed416fb7f6e4be8cf3ebc4261abd127291984dc7c`
+-	Image ID: `sha256:cf55f05132a1560f89ac16e205a85b1ba22d5d581df30a8c046e67c56aa9067f`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Fri, 27 Aug 2021 17:19:45 GMT
-ADD file:aad4290d27580cc1a094ffaf98c3ca2fc5d699fe695dfb8e6e9fac20f1129450 in / 
-# Fri, 27 Aug 2021 17:19:45 GMT
+# Fri, 12 Nov 2021 17:19:44 GMT
+ADD file:762c899ec0505d1a32930ee804c5b008825f41611161be104076cba33b7e5b2b in / 
+# Fri, 12 Nov 2021 17:19:45 GMT
 CMD ["/bin/sh"]
-# Fri, 17 Sep 2021 21:41:38 GMT
+# Fri, 12 Nov 2021 22:10:12 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 24 Sep 2021 19:20:30 GMT
+# Fri, 12 Nov 2021 22:10:13 GMT
 RUN apk add --no-cache tzdata musl-locales musl-locales-lang     && rm -rf /var/cache/apk/*
-# Fri, 05 Nov 2021 19:20:49 GMT
+# Fri, 12 Nov 2021 22:11:15 GMT
 ENV JAVA_VERSION=jdk-17.0.1+12
-# Fri, 05 Nov 2021 19:21:06 GMT
+# Fri, 12 Nov 2021 22:11:37 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='da4845987b3348da14338a0620ef7db25870e27670e82baebcc367fa9d17c7de';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.1%2B12/OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.1_12.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p /opt/java/openjdk; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory /opt/java/openjdk 	      --strip-components 1 	      --no-same-owner 	  ;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 05 Nov 2021 19:21:07 GMT
+# Fri, 12 Nov 2021 22:11:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 05 Nov 2021 19:21:08 GMT
+# Fri, 12 Nov 2021 22:11:39 GMT
 RUN echo Verifying install ...     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Fri, 05 Nov 2021 19:21:08 GMT
+# Fri, 12 Nov 2021 22:11:39 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:a0d0a0d46f8b52473982a3c466318f479767577551a53ffc9074c9fa7035982e`  
-		Last Modified: Fri, 27 Aug 2021 17:20:13 GMT  
-		Size: 2.8 MB (2814446 bytes)  
+	-	`sha256:97518928ae5f3d52d4164b314a7e73654eb686ecd8aafa0b79acd980773a740d`  
+		Last Modified: Fri, 12 Nov 2021 17:20:39 GMT  
+		Size: 2.8 MB (2822981 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5491faa5141cd7b6b8bcb2f0546bc3268ca907c1a0835e91db57c666453bde3d`  
-		Last Modified: Fri, 24 Sep 2021 19:23:00 GMT  
-		Size: 408.6 KB (408594 bytes)  
+	-	`sha256:56981b1bb25bf90c21f6060c91c15dbc4a3d4376abc16e9975ef475bc8561710`  
+		Last Modified: Fri, 12 Nov 2021 22:12:51 GMT  
+		Size: 430.1 KB (430083 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7350cd0e887e506871e572f4eb84f758e0e7186e6a5412cc78c850ea25d1c2e3`  
-		Last Modified: Fri, 05 Nov 2021 19:24:56 GMT  
-		Size: 191.9 MB (191855125 bytes)  
+	-	`sha256:eb6d985b90eeb385a832ce914b0c45cb9557ec40b835c335c57e656875044d50`  
+		Last Modified: Fri, 12 Nov 2021 22:14:39 GMT  
+		Size: 191.9 MB (191855171 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dab4824b2d6455ed7e7acb2aa548eae5144102979dfa32aa1d77f26a99f673be`  
-		Last Modified: Fri, 05 Nov 2021 19:24:42 GMT  
+	-	`sha256:718042d8f3f27fd9ebc645c0428ea7a7cbfc517363da21fa72094177ab6404b1`  
+		Last Modified: Fri, 12 Nov 2021 22:14:23 GMT  
 		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -13934,7 +13934,7 @@ CMD ["jshell"]
 ## `eclipse-temurin:17-jdk-alpine`
 
 ```console
-$ docker pull eclipse-temurin@sha256:7e7f5efc54fe8913ce00d2a7ab8cb8226d0d5c6065c0eceef9ba7984fd5300f4
+$ docker pull eclipse-temurin@sha256:32b5c3ab0a254b9fcfdd6fce9ac968c7d1f8b2785cfbd39643eaf1c08774d7aa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13944,52 +13944,52 @@ $ docker pull eclipse-temurin@sha256:7e7f5efc54fe8913ce00d2a7ab8cb8226d0d5c6065c
 ### `eclipse-temurin:17-jdk-alpine` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:0a2d997d610743ff75e497e18800ad2dbfca896430ec4559c5fa4b32f213845c
+$ docker pull eclipse-temurin@sha256:b30fa3ce4323ce037cb95fd2729dd4662d86f0ee2986452527cc645eaf258a1d
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **195.1 MB (195078326 bytes)**  
+-	Total Size: **195.1 MB (195108396 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6caf7aceb0c371fff0127f8ed416fb7f6e4be8cf3ebc4261abd127291984dc7c`
+-	Image ID: `sha256:cf55f05132a1560f89ac16e205a85b1ba22d5d581df30a8c046e67c56aa9067f`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Fri, 27 Aug 2021 17:19:45 GMT
-ADD file:aad4290d27580cc1a094ffaf98c3ca2fc5d699fe695dfb8e6e9fac20f1129450 in / 
-# Fri, 27 Aug 2021 17:19:45 GMT
+# Fri, 12 Nov 2021 17:19:44 GMT
+ADD file:762c899ec0505d1a32930ee804c5b008825f41611161be104076cba33b7e5b2b in / 
+# Fri, 12 Nov 2021 17:19:45 GMT
 CMD ["/bin/sh"]
-# Fri, 17 Sep 2021 21:41:38 GMT
+# Fri, 12 Nov 2021 22:10:12 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 24 Sep 2021 19:20:30 GMT
+# Fri, 12 Nov 2021 22:10:13 GMT
 RUN apk add --no-cache tzdata musl-locales musl-locales-lang     && rm -rf /var/cache/apk/*
-# Fri, 05 Nov 2021 19:20:49 GMT
+# Fri, 12 Nov 2021 22:11:15 GMT
 ENV JAVA_VERSION=jdk-17.0.1+12
-# Fri, 05 Nov 2021 19:21:06 GMT
+# Fri, 12 Nov 2021 22:11:37 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='da4845987b3348da14338a0620ef7db25870e27670e82baebcc367fa9d17c7de';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.1%2B12/OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.1_12.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p /opt/java/openjdk; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory /opt/java/openjdk 	      --strip-components 1 	      --no-same-owner 	  ;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 05 Nov 2021 19:21:07 GMT
+# Fri, 12 Nov 2021 22:11:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 05 Nov 2021 19:21:08 GMT
+# Fri, 12 Nov 2021 22:11:39 GMT
 RUN echo Verifying install ...     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Fri, 05 Nov 2021 19:21:08 GMT
+# Fri, 12 Nov 2021 22:11:39 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:a0d0a0d46f8b52473982a3c466318f479767577551a53ffc9074c9fa7035982e`  
-		Last Modified: Fri, 27 Aug 2021 17:20:13 GMT  
-		Size: 2.8 MB (2814446 bytes)  
+	-	`sha256:97518928ae5f3d52d4164b314a7e73654eb686ecd8aafa0b79acd980773a740d`  
+		Last Modified: Fri, 12 Nov 2021 17:20:39 GMT  
+		Size: 2.8 MB (2822981 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5491faa5141cd7b6b8bcb2f0546bc3268ca907c1a0835e91db57c666453bde3d`  
-		Last Modified: Fri, 24 Sep 2021 19:23:00 GMT  
-		Size: 408.6 KB (408594 bytes)  
+	-	`sha256:56981b1bb25bf90c21f6060c91c15dbc4a3d4376abc16e9975ef475bc8561710`  
+		Last Modified: Fri, 12 Nov 2021 22:12:51 GMT  
+		Size: 430.1 KB (430083 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7350cd0e887e506871e572f4eb84f758e0e7186e6a5412cc78c850ea25d1c2e3`  
-		Last Modified: Fri, 05 Nov 2021 19:24:56 GMT  
-		Size: 191.9 MB (191855125 bytes)  
+	-	`sha256:eb6d985b90eeb385a832ce914b0c45cb9557ec40b835c335c57e656875044d50`  
+		Last Modified: Fri, 12 Nov 2021 22:14:39 GMT  
+		Size: 191.9 MB (191855171 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dab4824b2d6455ed7e7acb2aa548eae5144102979dfa32aa1d77f26a99f673be`  
-		Last Modified: Fri, 05 Nov 2021 19:24:42 GMT  
+	-	`sha256:718042d8f3f27fd9ebc645c0428ea7a7cbfc517363da21fa72094177ab6404b1`  
+		Last Modified: Fri, 12 Nov 2021 22:14:23 GMT  
 		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -16376,7 +16376,7 @@ CMD ["jshell"]
 ## `eclipse-temurin:17.0.1_12-jdk-alpine`
 
 ```console
-$ docker pull eclipse-temurin@sha256:7e7f5efc54fe8913ce00d2a7ab8cb8226d0d5c6065c0eceef9ba7984fd5300f4
+$ docker pull eclipse-temurin@sha256:32b5c3ab0a254b9fcfdd6fce9ac968c7d1f8b2785cfbd39643eaf1c08774d7aa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16386,52 +16386,52 @@ $ docker pull eclipse-temurin@sha256:7e7f5efc54fe8913ce00d2a7ab8cb8226d0d5c6065c
 ### `eclipse-temurin:17.0.1_12-jdk-alpine` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:0a2d997d610743ff75e497e18800ad2dbfca896430ec4559c5fa4b32f213845c
+$ docker pull eclipse-temurin@sha256:b30fa3ce4323ce037cb95fd2729dd4662d86f0ee2986452527cc645eaf258a1d
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **195.1 MB (195078326 bytes)**  
+-	Total Size: **195.1 MB (195108396 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6caf7aceb0c371fff0127f8ed416fb7f6e4be8cf3ebc4261abd127291984dc7c`
+-	Image ID: `sha256:cf55f05132a1560f89ac16e205a85b1ba22d5d581df30a8c046e67c56aa9067f`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Fri, 27 Aug 2021 17:19:45 GMT
-ADD file:aad4290d27580cc1a094ffaf98c3ca2fc5d699fe695dfb8e6e9fac20f1129450 in / 
-# Fri, 27 Aug 2021 17:19:45 GMT
+# Fri, 12 Nov 2021 17:19:44 GMT
+ADD file:762c899ec0505d1a32930ee804c5b008825f41611161be104076cba33b7e5b2b in / 
+# Fri, 12 Nov 2021 17:19:45 GMT
 CMD ["/bin/sh"]
-# Fri, 17 Sep 2021 21:41:38 GMT
+# Fri, 12 Nov 2021 22:10:12 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 24 Sep 2021 19:20:30 GMT
+# Fri, 12 Nov 2021 22:10:13 GMT
 RUN apk add --no-cache tzdata musl-locales musl-locales-lang     && rm -rf /var/cache/apk/*
-# Fri, 05 Nov 2021 19:20:49 GMT
+# Fri, 12 Nov 2021 22:11:15 GMT
 ENV JAVA_VERSION=jdk-17.0.1+12
-# Fri, 05 Nov 2021 19:21:06 GMT
+# Fri, 12 Nov 2021 22:11:37 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='da4845987b3348da14338a0620ef7db25870e27670e82baebcc367fa9d17c7de';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.1%2B12/OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.1_12.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p /opt/java/openjdk; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory /opt/java/openjdk 	      --strip-components 1 	      --no-same-owner 	  ;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 05 Nov 2021 19:21:07 GMT
+# Fri, 12 Nov 2021 22:11:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 05 Nov 2021 19:21:08 GMT
+# Fri, 12 Nov 2021 22:11:39 GMT
 RUN echo Verifying install ...     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Fri, 05 Nov 2021 19:21:08 GMT
+# Fri, 12 Nov 2021 22:11:39 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:a0d0a0d46f8b52473982a3c466318f479767577551a53ffc9074c9fa7035982e`  
-		Last Modified: Fri, 27 Aug 2021 17:20:13 GMT  
-		Size: 2.8 MB (2814446 bytes)  
+	-	`sha256:97518928ae5f3d52d4164b314a7e73654eb686ecd8aafa0b79acd980773a740d`  
+		Last Modified: Fri, 12 Nov 2021 17:20:39 GMT  
+		Size: 2.8 MB (2822981 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5491faa5141cd7b6b8bcb2f0546bc3268ca907c1a0835e91db57c666453bde3d`  
-		Last Modified: Fri, 24 Sep 2021 19:23:00 GMT  
-		Size: 408.6 KB (408594 bytes)  
+	-	`sha256:56981b1bb25bf90c21f6060c91c15dbc4a3d4376abc16e9975ef475bc8561710`  
+		Last Modified: Fri, 12 Nov 2021 22:12:51 GMT  
+		Size: 430.1 KB (430083 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7350cd0e887e506871e572f4eb84f758e0e7186e6a5412cc78c850ea25d1c2e3`  
-		Last Modified: Fri, 05 Nov 2021 19:24:56 GMT  
-		Size: 191.9 MB (191855125 bytes)  
+	-	`sha256:eb6d985b90eeb385a832ce914b0c45cb9557ec40b835c335c57e656875044d50`  
+		Last Modified: Fri, 12 Nov 2021 22:14:39 GMT  
+		Size: 191.9 MB (191855171 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dab4824b2d6455ed7e7acb2aa548eae5144102979dfa32aa1d77f26a99f673be`  
-		Last Modified: Fri, 05 Nov 2021 19:24:42 GMT  
+	-	`sha256:718042d8f3f27fd9ebc645c0428ea7a7cbfc517363da21fa72094177ab6404b1`  
+		Last Modified: Fri, 12 Nov 2021 22:14:23 GMT  
 		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
