@@ -1,7 +1,7 @@
 ## `jobber:latest`
 
 ```console
-$ docker pull jobber@sha256:652facc4ce8aa8669bc36de8a996361a34188e2a0b307d1d3be69e4963d41b26
+$ docker pull jobber@sha256:67ac842e6d1fc22305fb0edc5aff277711702d4bb7268c8ca6dbcc42aa7071cd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,59 +11,59 @@ $ docker pull jobber@sha256:652facc4ce8aa8669bc36de8a996361a34188e2a0b307d1d3be6
 ### `jobber:latest` - linux; amd64
 
 ```console
-$ docker pull jobber@sha256:a85b68725beeb738e5d6e0f029dd01c4e0dd793aa4f1bfdf70c8d5f37586c3d5
+$ docker pull jobber@sha256:b7c614c25f6e6ff28093f43f8bb3b054ff6dc5e78e89945f6d1919bf183f6246
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **11.8 MB (11764588 bytes)**  
+-	Total Size: **11.8 MB (11764719 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f3b2ec9cd879ec4ae942b88182cbeb7fa419a9511a19a5bd85e09d7f8db12399`
+-	Image ID: `sha256:d257bee61c01be075b3a0ba5c40edef75c3b74a7681e7fe9023c8853f6ecd51e`
 -	Default Command: `["\/usr\/libexec\/jobberrunner","-u","\/var\/jobber\/1000\/cmd.sock","\/home\/jobberuser\/.jobber"]`
 
 ```dockerfile
-# Tue, 31 Aug 2021 23:18:31 GMT
-ADD file:9d14b11183983923090d9e6d15cc51ee210466296e913bfefbfd580b3de59c95 in / 
-# Tue, 31 Aug 2021 23:18:31 GMT
+# Fri, 12 Nov 2021 17:20:17 GMT
+ADD file:efe2d94a88cdbbd01c3ef095f0a2473cec9e74804b49cd6fb9b837d362631409 in / 
+# Fri, 12 Nov 2021 17:20:17 GMT
 CMD ["/bin/sh"]
-# Wed, 01 Sep 2021 03:01:40 GMT
+# Sat, 13 Nov 2021 06:06:43 GMT
 ENV USERID=1000
-# Wed, 01 Sep 2021 03:01:41 GMT
+# Sat, 13 Nov 2021 06:06:44 GMT
 RUN addgroup jobberuser &&     adduser -S -u "${USERID}" -G jobberuser jobberuser &&     mkdir -p "/var/jobber/${USERID}" &&     chown -R jobberuser:jobberuser "/var/jobber/${USERID}"
-# Wed, 01 Sep 2021 03:01:41 GMT
+# Sat, 13 Nov 2021 06:06:44 GMT
 ENV JOBBER_VERSION=1.4.4
-# Wed, 01 Sep 2021 03:01:41 GMT
+# Sat, 13 Nov 2021 06:06:44 GMT
 ENV JOBBER_SHA256=ec09b2efafff69c91fba2124bf28607209e1c9b50ed834ff444a9d40798aa8d3
-# Wed, 01 Sep 2021 03:01:44 GMT
+# Sat, 13 Nov 2021 06:06:46 GMT
 RUN wget -O /tmp/jobber.apk "https://github.com/dshearer/jobber/releases/download/v${JOBBER_VERSION}/jobber-${JOBBER_VERSION}-r0.apk" &&     echo -n "Actual checksum: " && sha256sum /tmp/jobber.apk &&     echo "${JOBBER_SHA256} */tmp/jobber.apk" | sha256sum -c &&     apk add --no-network --no-scripts --allow-untrusted /tmp/jobber.apk &&     rm /tmp/jobber.apk
-# Wed, 01 Sep 2021 03:01:44 GMT
+# Sat, 13 Nov 2021 06:06:46 GMT
 COPY --chown=jobberuser:jobberuserfile:c7cc6d32091e7beeac78efd9fe855e36a106902c1177df0f9f6bd2bbe3b8d518 in /home/jobberuser/.jobber 
-# Wed, 01 Sep 2021 03:01:45 GMT
+# Sat, 13 Nov 2021 06:06:47 GMT
 RUN chmod 0600 /home/jobberuser/.jobber
-# Wed, 01 Sep 2021 03:01:45 GMT
+# Sat, 13 Nov 2021 06:06:47 GMT
 USER jobberuser
-# Wed, 01 Sep 2021 03:01:45 GMT
+# Sat, 13 Nov 2021 06:06:48 GMT
 CMD ["/usr/libexec/jobberrunner" "-u" "/var/jobber/1000/cmd.sock" "/home/jobberuser/.jobber"]
 ```
 
 -	Layers:
-	-	`sha256:6a428f9f83b0a29f1fdd2ccccca19a9bab805a925b8eddf432a5a3d3da04afbc`  
-		Last Modified: Tue, 31 Aug 2021 23:19:15 GMT  
-		Size: 2.8 MB (2817307 bytes)  
+	-	`sha256:79e9f2f55bf5465a02ee6a6170e66005b20c7aa6b115af6fcd04fad706ea651a`  
+		Last Modified: Fri, 12 Nov 2021 17:21:24 GMT  
+		Size: 2.8 MB (2817409 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ac1b18101a627546b309d6a77a34d11d10d56ee14cdc85cf55cf5a80f62f5e23`  
-		Last Modified: Wed, 01 Sep 2021 03:01:58 GMT  
+	-	`sha256:ff8536fb9e33e5e167908577cbf57ef61cc8b49c8662903edf462a5de2088b8b`  
+		Last Modified: Sat, 13 Nov 2021 06:07:01 GMT  
 		Size: 1.3 KB (1332 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ef49d20280992e72362712a5ff6c391e93f34f4f964ee2983faabfa483f3e23`  
-		Last Modified: Wed, 01 Sep 2021 03:02:00 GMT  
-		Size: 8.9 MB (8945478 bytes)  
+	-	`sha256:40189fd0ca25a11e6f57b08e10862438373842b58b8642f036eb1cdd0eacaf5f`  
+		Last Modified: Sat, 13 Nov 2021 06:07:02 GMT  
+		Size: 8.9 MB (8945509 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e64a0c34a429abee6adf286228377fc0372842ea2c7cae950aa2f8f996a90dc7`  
-		Last Modified: Wed, 01 Sep 2021 03:01:58 GMT  
-		Size: 236.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:58e02ab2b1ad1a03911aed21418751e378016df9ead2e86f3acd38eed82bda4d`  
-		Last Modified: Wed, 01 Sep 2021 03:01:58 GMT  
+	-	`sha256:b41ef4619c68cc809c38fb652206b250b7616fb1cb54a3bb905def35b4286736`  
+		Last Modified: Sat, 13 Nov 2021 06:07:01 GMT  
 		Size: 235.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:95d6b89710611cf680b00f0fc0b0d7540e07daea41faf8b10d83a66245d72b8b`  
+		Last Modified: Sat, 13 Nov 2021 06:07:01 GMT  
+		Size: 234.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
