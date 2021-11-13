@@ -1,16 +1,17 @@
 ## `perl:threaded`
 
 ```console
-$ docker pull perl@sha256:59115a3bed8bcdf5479b1e0c2fe496567d3e0e3ada4de46b630b31813ad00031
+$ docker pull perl@sha256:51108743e99fbf25831e04d91b8ec60fd7a4fc1b37df6e1b265445ea9e13b1cc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 7
+-	Platforms: 8
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	linux; 386
+	-	linux; mips64le
 	-	linux; ppc64le
 	-	linux; s390x
 
@@ -362,6 +363,76 @@ CMD ["perl5.34.0" "-de0"]
 	-	`sha256:3e406fc80910fb8646f6ccad78c61b97ea34d48f2a4754e2ccf082efbf450eb2`  
 		Last Modified: Wed, 13 Oct 2021 01:17:20 GMT  
 		Size: 13.9 MB (13911575 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `perl:threaded` - linux; mips64le
+
+```console
+$ docker pull perl@sha256:948565b2f582a240d8cbe35b99d8451f944482755fc8426d5d7be94516bd6ba5
+```
+
+-	Docker Version: 20.10.7
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **315.1 MB (315064510 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:772055ac603515be162c2b6371e2433c22367555cd7d9afe947a656aff7f6f1f`
+-	Default Command: `["perl5.34.0","-de0"]`
+
+```dockerfile
+# Tue, 12 Oct 2021 01:10:49 GMT
+ADD file:856952232716a2e2d5069387a06a537937a1dec1bb75bc9519c60d6ad226bddb in / 
+# Tue, 12 Oct 2021 01:10:50 GMT
+CMD ["bash"]
+# Tue, 12 Oct 2021 01:49:14 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 12 Oct 2021 01:49:33 GMT
+RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
+# Tue, 12 Oct 2021 01:50:34 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
+# Tue, 12 Oct 2021 01:53:10 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Fri, 12 Nov 2021 20:10:40 GMT
+LABEL maintainer=Peter Martini <PeterCMartini@GMail.com>, Zak B. Elep <zakame@cpan.org>
+# Fri, 12 Nov 2021 20:10:41 GMT
+COPY file:3744c5cc39cdbdcae10db09a1f0f399005a79f93c237b387a72ff5710cdd458c in /usr/src/perl/ 
+# Fri, 12 Nov 2021 20:10:41 GMT
+WORKDIR /usr/src/perl
+# Fri, 12 Nov 2021 21:47:49 GMT
+RUN true     && curl -SL https://www.cpan.org/src/5.0/perl-5.34.0.tar.xz -o perl-5.34.0.tar.xz     && echo '82c2e5e5c71b0e10487a80d79140469ab1f8056349ca8545140a224dbbed7ded *perl-5.34.0.tar.xz' | sha256sum -c -     && tar --strip-components=1 -xaf perl-5.34.0.tar.xz -C /usr/src/perl     && rm perl-5.34.0.tar.xz     && cat *.patch | patch -p1     && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"     && archBits="$(dpkg-architecture --query DEB_BUILD_ARCH_BITS)"     && archFlag="$([ "$archBits" = '64' ] && echo '-Duse64bitall' || echo '-Duse64bitint')"     && ./Configure -Darchname="$gnuArch" "$archFlag" -Dusethreads -Duseshrplib -Dvendorprefix=/usr/local  -des     && make -j$(nproc)     && TEST_JOBS=$(nproc) make test_harness     && make install     && cd /usr/src     && curl -LO https://www.cpan.org/authors/id/M/MI/MIYAGAWA/App-cpanminus-1.7044.tar.gz     && echo '9b60767fe40752ef7a9d3f13f19060a63389a5c23acc3e9827e19b75500f81f3 *App-cpanminus-1.7044.tar.gz' | sha256sum -c -     && tar -xzf App-cpanminus-1.7044.tar.gz && cd App-cpanminus-1.7044 && perl bin/cpanm . && cd /root     && true     && rm -fr ./cpanm /root/.cpanm /usr/src/perl /usr/src/App-cpanminus-1.7044* /tmp/*
+# Fri, 12 Nov 2021 21:47:49 GMT
+WORKDIR /
+# Fri, 12 Nov 2021 21:47:50 GMT
+CMD ["perl5.34.0" "-de0"]
+```
+
+-	Layers:
+	-	`sha256:3d2cd78b9c44ce4eadbb0cc35b884bfd0dac51123f3c8c6645cb8dc9dc9c1512`  
+		Last Modified: Tue, 12 Oct 2021 01:19:18 GMT  
+		Size: 53.2 MB (53169836 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bbc92c0f1b1ba16db081439cf0fe0ba300c5acb087b88f97abb47cd8aa1760d6`  
+		Last Modified: Tue, 12 Oct 2021 02:04:54 GMT  
+		Size: 5.1 MB (5114923 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f090a91c9dcffdc8ccb3d0c43f49469a175e0c902bdae900df04c7afe0799f64`  
+		Last Modified: Tue, 12 Oct 2021 02:04:56 GMT  
+		Size: 10.9 MB (10873345 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5dca8dc314040adde734540d22d6ece8f751dd2fa78662083691ed36be6a2a8f`  
+		Last Modified: Tue, 12 Oct 2021 02:05:49 GMT  
+		Size: 53.3 MB (53296535 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4d3cbd8a1740e3dd9cfc5bb50b5091d9750be6809c9404144caf76f9a1853815`  
+		Last Modified: Tue, 12 Oct 2021 02:08:01 GMT  
+		Size: 179.0 MB (178993465 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:99427228fbfaf529150671aa1daed6660976e340b84f783e4cc9f906be27b3fa`  
+		Last Modified: Sat, 13 Nov 2021 04:01:07 GMT  
+		Size: 178.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:32f19555eee057867be1b0a3e40d7e12e0f98de998a7cefac4a1cc23b56cee3a`  
+		Last Modified: Sat, 13 Nov 2021 04:03:38 GMT  
+		Size: 13.6 MB (13616228 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `perl:threaded` - linux; ppc64le

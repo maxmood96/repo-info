@@ -1,16 +1,17 @@
 ## `perl:5-threaded-buster`
 
 ```console
-$ docker pull perl@sha256:ecc785e2484628cc2417e993c9dec23ff825f10de969d7872581eae3beeaf778
+$ docker pull perl@sha256:81ae11a8768a39720af3d39611167bafdae123663e2dfeaad124a2715ca7507f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 7
+-	Platforms: 8
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	linux; 386
+	-	linux; mips64le
 	-	linux; ppc64le
 	-	linux; s390x
 
@@ -362,6 +363,76 @@ CMD ["perl5.34.0" "-de0"]
 	-	`sha256:3e406fc80910fb8646f6ccad78c61b97ea34d48f2a4754e2ccf082efbf450eb2`  
 		Last Modified: Wed, 13 Oct 2021 01:17:20 GMT  
 		Size: 13.9 MB (13911575 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `perl:5-threaded-buster` - linux; mips64le
+
+```console
+$ docker pull perl@sha256:28b4140a7326ec29be1015ade063d6514e99e8312a8590db546b08e9f27245b7
+```
+
+-	Docker Version: 20.10.7
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **310.8 MB (310750905 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:b371a87aa698c46f68cca3bca5bbc9b7d85b6007e952b7a5af242774f8bab5aa`
+-	Default Command: `["perl5.34.0","-de0"]`
+
+```dockerfile
+# Tue, 12 Oct 2021 01:11:41 GMT
+ADD file:37326203d7d5c7764007ca3a26d61a2da861011dddf8992bc1a0b70ba659c0c1 in / 
+# Tue, 12 Oct 2021 01:11:42 GMT
+CMD ["bash"]
+# Tue, 12 Oct 2021 01:53:35 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 12 Oct 2021 01:53:51 GMT
+RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
+# Tue, 12 Oct 2021 01:54:54 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
+# Tue, 12 Oct 2021 01:57:48 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Fri, 12 Nov 2021 20:29:37 GMT
+LABEL maintainer=Peter Martini <PeterCMartini@GMail.com>, Zak B. Elep <zakame@cpan.org>
+# Fri, 12 Nov 2021 20:29:37 GMT
+COPY file:3744c5cc39cdbdcae10db09a1f0f399005a79f93c237b387a72ff5710cdd458c in /usr/src/perl/ 
+# Fri, 12 Nov 2021 20:29:38 GMT
+WORKDIR /usr/src/perl
+# Fri, 12 Nov 2021 22:08:17 GMT
+RUN true     && curl -SL https://www.cpan.org/src/5.0/perl-5.34.0.tar.xz -o perl-5.34.0.tar.xz     && echo '82c2e5e5c71b0e10487a80d79140469ab1f8056349ca8545140a224dbbed7ded *perl-5.34.0.tar.xz' | sha256sum -c -     && tar --strip-components=1 -xaf perl-5.34.0.tar.xz -C /usr/src/perl     && rm perl-5.34.0.tar.xz     && cat *.patch | patch -p1     && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"     && archBits="$(dpkg-architecture --query DEB_BUILD_ARCH_BITS)"     && archFlag="$([ "$archBits" = '64' ] && echo '-Duse64bitall' || echo '-Duse64bitint')"     && ./Configure -Darchname="$gnuArch" "$archFlag" -Dusethreads -Duseshrplib -Dvendorprefix=/usr/local  -des     && make -j$(nproc)     && TEST_JOBS=$(nproc) make test_harness     && make install     && cd /usr/src     && curl -LO https://www.cpan.org/authors/id/M/MI/MIYAGAWA/App-cpanminus-1.7044.tar.gz     && echo '9b60767fe40752ef7a9d3f13f19060a63389a5c23acc3e9827e19b75500f81f3 *App-cpanminus-1.7044.tar.gz' | sha256sum -c -     && tar -xzf App-cpanminus-1.7044.tar.gz && cd App-cpanminus-1.7044 && perl bin/cpanm . && cd /root     && true     && rm -fr ./cpanm /root/.cpanm /usr/src/perl /usr/src/App-cpanminus-1.7044* /tmp/*
+# Fri, 12 Nov 2021 22:08:18 GMT
+WORKDIR /
+# Fri, 12 Nov 2021 22:08:18 GMT
+CMD ["perl5.34.0" "-de0"]
+```
+
+-	Layers:
+	-	`sha256:f086aaa10cbe2dfccc93401fe3cce55b2f5eed2ba1a2fe3e34a4501644f9c8fa`  
+		Last Modified: Tue, 12 Oct 2021 01:20:49 GMT  
+		Size: 49.1 MB (49079545 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1d616f4bde99abe068eb28ab4b7ac4257ded3b68bf57ef8468607497a525bdd5`  
+		Last Modified: Tue, 12 Oct 2021 02:08:26 GMT  
+		Size: 7.3 MB (7253602 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:cbdf78718a4b3eb02fe6ebafb667a2227bd7ec3516a96e56b8939f548ee34ee1`  
+		Last Modified: Tue, 12 Oct 2021 02:08:26 GMT  
+		Size: 10.0 MB (10016320 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:30c287a552c85344af42ae30bd511eb6976193d430e6ca6e90199c34c0b48bc5`  
+		Last Modified: Tue, 12 Oct 2021 02:09:18 GMT  
+		Size: 50.8 MB (50845270 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e14aa21945181b9503b35489d6e35108cbf0b0d9cf0e8834c2f84a626e50c080`  
+		Last Modified: Tue, 12 Oct 2021 02:11:24 GMT  
+		Size: 179.9 MB (179931969 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c95802b88d10f9b8e301dd25ad01648e4bc5ab7eb2bd3d1c4f89b37f7d6c5d4c`  
+		Last Modified: Sat, 13 Nov 2021 04:01:53 GMT  
+		Size: 180.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c1a87de7552708d670fb33bebe05f916d2b51da0a854150abc34a16c3fe53f9d`  
+		Last Modified: Sat, 13 Nov 2021 04:04:18 GMT  
+		Size: 13.6 MB (13624019 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `perl:5-threaded-buster` - linux; ppc64le
