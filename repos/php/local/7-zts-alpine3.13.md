@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:10269d21b9d77629055129ba28e3f5bbebd396614e9297408072e9cbbd1960d6`
-- Created: `2021-10-22T18:37:16.719764236Z`
-- Virtual Size: ~ 66.07 Mb  
+- Image ID: `sha256:9ef677af962ca2d13bf30e5420c06cfec43ec7afced9af9687caa8df2d867cb4`
+- Created: `2021-11-13T09:58:32.163455049Z`
+- Virtual Size: ~ 65.60 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -44,16 +44,16 @@ GPL-2.0-only
 ### `apk` package: `alpine-keys`
 
 ```console
-alpine-keys-2.2-r0 description:
+alpine-keys-2.4-r0 description:
 Public keys for Alpine Linux packages
 
-alpine-keys-2.2-r0 webpage:
+alpine-keys-2.4-r0 webpage:
 https://alpinelinux.org
 
-alpine-keys-2.2-r0 installed size:
-104 KiB
+alpine-keys-2.4-r0 installed size:
+156 KiB
 
-alpine-keys-2.2-r0 license:
+alpine-keys-2.4-r0 license:
 MIT
 
 ```
@@ -112,16 +112,16 @@ MIT
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.32.1-r6 description:
+busybox-1.32.1-r7 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.32.1-r6 webpage:
+busybox-1.32.1-r7 webpage:
 https://busybox.net/
 
-busybox-1.32.1-r6 installed size:
+busybox-1.32.1-r7 installed size:
 924 KiB
 
-busybox-1.32.1-r6 license:
+busybox-1.32.1-r7 license:
 GPL-2.0-only
 
 ```
@@ -163,16 +163,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-7.78.0-r0 description:
+curl-7.79.1-r0 description:
 URL retrival utility and library
 
-curl-7.78.0-r0 webpage:
+curl-7.79.1-r0 webpage:
 https://curl.se/
 
-curl-7.78.0-r0 installed size:
-244 KiB
+curl-7.79.1-r0 installed size:
+248 KiB
 
-curl-7.78.0-r0 license:
+curl-7.79.1-r0 license:
 MIT
 
 ```
@@ -486,16 +486,16 @@ Public-Domain
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.32.1-r6 description:
+ssl_client-1.32.1-r7 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.32.1-r6 webpage:
+ssl_client-1.32.1-r7 webpage:
 https://busybox.net/
 
-ssl_client-1.32.1-r6 installed size:
+ssl_client-1.32.1-r7 installed size:
 28 KiB
 
-ssl_client-1.32.1-r6 license:
+ssl_client-1.32.1-r7 license:
 GPL-2.0-only
 
 ```
