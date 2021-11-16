@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0a39566a1c5a324d587d4cdf004a5b10f0637d89c2777d253934c24c63c4fed3`
-- Created: `2021-11-11T03:10:06.849181802Z`
-- Virtual Size: ~ 252.68 Mb  
+- Image ID: `sha256:ce53ea659bb2b62ff1247a0ea10bdb32458a082b460862b1fade364cb841f4e2`
+- Created: `2021-11-13T15:20:25.450316614Z`
+- Virtual Size: ~ 252.21 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -44,16 +44,16 @@ GPL-2.0-only
 ### `apk` package: `alpine-keys`
 
 ```console
-alpine-keys-2.3-r1 description:
+alpine-keys-2.4-r0 description:
 Public keys for Alpine Linux packages
 
-alpine-keys-2.3-r1 webpage:
+alpine-keys-2.4-r0 webpage:
 https://alpinelinux.org
 
-alpine-keys-2.3-r1 installed size:
-116 KiB
+alpine-keys-2.4-r0 installed size:
+156 KiB
 
-alpine-keys-2.3-r1 license:
+alpine-keys-2.4-r0 license:
 MIT
 
 ```
@@ -163,16 +163,16 @@ MIT
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.33.1-r3 description:
+busybox-1.33.1-r6 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.33.1-r3 webpage:
+busybox-1.33.1-r6 webpage:
 https://busybox.net/
 
-busybox-1.33.1-r3 installed size:
+busybox-1.33.1-r6 installed size:
 928 KiB
 
-busybox-1.33.1-r3 license:
+busybox-1.33.1-r6 license:
 GPL-2.0-only
 
 ```
@@ -265,16 +265,16 @@ GPL-2.0-only
 ### `apk` package: `curl`
 
 ```console
-curl-7.78.0-r0 description:
+curl-7.79.1-r0 description:
 URL retrival utility and library
 
-curl-7.78.0-r0 webpage:
+curl-7.79.1-r0 webpage:
 https://curl.se/
 
-curl-7.78.0-r0 installed size:
-244 KiB
+curl-7.79.1-r0 installed size:
+248 KiB
 
-curl-7.78.0-r0 license:
+curl-7.79.1-r0 license:
 MIT
 
 ```
@@ -571,16 +571,16 @@ LGPL-2.1-or-later AND GPL-2.0-or-later
 ### `apk` package: `libblkid`
 
 ```console
-libblkid-2.37-r0 description:
+libblkid-2.37.2-r0 description:
 Block device identification library from util-linux
 
-libblkid-2.37-r0 webpage:
+libblkid-2.37.2-r0 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libblkid-2.37-r0 installed size:
+libblkid-2.37.2-r0 installed size:
 300 KiB
 
-libblkid-2.37-r0 license:
+libblkid-2.37.2-r0 license:
 GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND
 
 ```
@@ -826,16 +826,16 @@ Public Domain
 ### `apk` package: `libmount`
 
 ```console
-libmount-2.37-r0 description:
+libmount-2.37.2-r0 description:
 Block device identification library from util-linux
 
-libmount-2.37-r0 webpage:
+libmount-2.37.2-r0 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libmount-2.37-r0 installed size:
+libmount-2.37.2-r0 installed size:
 336 KiB
 
-libmount-2.37-r0 license:
+libmount-2.37.2-r0 license:
 GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND
 
 ```
@@ -979,16 +979,16 @@ GPL-2.0+ OR LGPL-3.0+
 ### `apk` package: `libuuid`
 
 ```console
-libuuid-2.37-r0 description:
+libuuid-2.37.2-r0 description:
 DCE compatible Universally Unique Identifier library
 
-libuuid-2.37-r0 webpage:
+libuuid-2.37.2-r0 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libuuid-2.37-r0 installed size:
+libuuid-2.37.2-r0 installed size:
 40 KiB
 
-libuuid-2.37-r0 license:
+libuuid-2.37.2-r0 license:
 GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND
 
 ```
@@ -1438,16 +1438,16 @@ Public-Domain
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.33.1-r3 description:
+ssl_client-1.33.1-r6 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.33.1-r3 webpage:
+ssl_client-1.33.1-r6 webpage:
 https://busybox.net/
 
-ssl_client-1.33.1-r3 installed size:
+ssl_client-1.33.1-r6 installed size:
 28 KiB
 
-ssl_client-1.33.1-r3 license:
+ssl_client-1.33.1-r6 license:
 GPL-2.0-only
 
 ```
