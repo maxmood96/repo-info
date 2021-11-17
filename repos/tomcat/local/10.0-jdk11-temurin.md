@@ -1,10 +1,10 @@
-# `tomcat:10.0.12-jdk11-temurin-focal`
+# `tomcat:10.0.13-jdk11-temurin-focal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e9b3cc3383b94030f1d73e7c3c00d27aa57e7fb96a2d236919348cc281acd5a5`
-- Created: `2021-10-27T01:07:58.371871762Z`
-- Virtual Size: ~ 458.07 Mb  
+- Image ID: `sha256:680e4e060003459e5ae3a6eb5130cdd7bdc910dfe93829569a3eee730ebb41b4`
+- Created: `2021-11-15T21:03:00.962720832Z`
+- Virtual Size: ~ 462.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -20,8 +20,8 @@
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `GPG_KEYS=A9C5DF4D22E99998D9875A5110C01C5A2F6059E7`
   - `TOMCAT_MAJOR=10`
-  - `TOMCAT_VERSION=10.0.12`
-  - `TOMCAT_SHA512=e084fc0cc243c0a9ac7de85ffd4b96d00b40b5493ed7ef276d91373fe8036bc953406cd3c48db6b5ae116f2af162fd1bfb13ecdddf5d64523fdd69a9463de8a3`
+  - `TOMCAT_VERSION=10.0.13`
+  - `TOMCAT_SHA512=fecfe06f38ff31e31fa43c15f2566f6fcd26bb874a9b7c0533087be81d1decd97f81eefeaca7ecb5ab2b79a3ea69ed0459adff5f9d55c05f5af45f69b0725608`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1416,7 +1416,6 @@ $ apt-get source -qq --print-uris openldap=2.4.49+dfsg-2ubuntu1.8
 
 Binary Packages:
 
-- `libssl1.1:amd64=1.1.1f-1ubuntu2.8`
 - `openssl=1.1.1f-1ubuntu2.8`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
@@ -1427,9 +1426,28 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openssl=1.1.1f-1ubuntu2.8
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.8.dsc' openssl_1.1.1f-1ubuntu2.8.dsc 2466 SHA512:79514668a1c50eb32665786dae9b2e60ec4c908c173a7c66feb97ce3bf87d46e5c5dd8786a3c8d20aab20a9c4705821fa833ff4f54e92a1c033215a1c3749c07
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.8.dsc' openssl_1.1.1f-1ubuntu2.8.dsc 2466 SHA512:79514668a1c50eb32665786dae9b2e60ec4c908c173a7c66feb97ce3bf87d46e5c5dd8786a3c8d20aab20a9c4705821fa833ff4f54e92a1c033215a1c3749c07
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f.orig.tar.gz' openssl_1.1.1f.orig.tar.gz 9792828 SHA512:b00bd9b5ad5298fbceeec6bb19c1ab0c106ca5cfb31178497c58bf7e0e0cf30fcc19c20f84e23af31cc126bf2447d3e4f8461db97bafa7bd78f69561932f000c
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.8.debian.tar.xz' openssl_1.1.1f-1ubuntu2.8.debian.tar.xz 166152 SHA512:97fc740bd4fe474019878dd90d7130200644aec105fc6cf926791dada9a2bb8f330091b7e91fa6410e516dfbfb656120520b86190b3e417fcb9d461069b604d1
+```
+
+### `dpkg` source package: `openssl=1.1.1f-1ubuntu2.9`
+
+Binary Packages:
+
+- `libssl1.1:amd64=1.1.1f-1ubuntu2.9`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris openssl=1.1.1f-1ubuntu2.9
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.9.dsc' openssl_1.1.1f-1ubuntu2.9.dsc 2466 SHA512:1d784f346fdd8b5d43124ddb1f2377aa453772b8f8dd869a18459fdefb856aba4bfdc2e75ebd7f57bcac102f3d3a18fe8d4a3e27915e80e571692c2ef90a86a3
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f.orig.tar.gz' openssl_1.1.1f.orig.tar.gz 9792828 SHA512:b00bd9b5ad5298fbceeec6bb19c1ab0c106ca5cfb31178497c58bf7e0e0cf30fcc19c20f84e23af31cc126bf2447d3e4f8461db97bafa7bd78f69561932f000c
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.8.debian.tar.xz' openssl_1.1.1f-1ubuntu2.8.debian.tar.xz 166152 SHA512:97fc740bd4fe474019878dd90d7130200644aec105fc6cf926791dada9a2bb8f330091b7e91fa6410e516dfbfb656120520b86190b3e417fcb9d461069b604d1
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.9.debian.tar.xz' openssl_1.1.1f-1ubuntu2.9.debian.tar.xz 167856 SHA512:9e660fc967029fee8378cf4c8054978bc759742b9c106b76e590a71b8417b305bce59c96cc4df564264af6e3aa352d7ee8a8cadebe5f8614cc3adf1272dfb22e
 ```
 
 ### `dpkg` source package: `p11-kit=0.23.20-1ubuntu0.1`

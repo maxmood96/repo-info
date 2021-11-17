@@ -1,10 +1,10 @@
-# `tomcat:9.0.54-jdk8-temurin-focal`
+# `tomcat:9.0.55-jdk8-temurin-focal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:da8f03273f90dda18c31bb1c2c1958b1e2ef3e125bddd88ce63cad25cd791a14`
-- Created: `2021-11-05T20:08:01.787112427Z`
-- Virtual Size: ~ 341.05 Mb  
+- Image ID: `sha256:920eddf85e46aa916f9ab513b78f18c34afa8288d0ecc4eae2a25a1b41d7655a`
+- Created: `2021-11-16T00:37:04.505726522Z`
+- Virtual Size: ~ 345.81 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -20,8 +20,8 @@
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.54`
-  - `TOMCAT_SHA512=83430f24d42186ce2ff51eeef2f7a5517048f37d9050c45cac1e3dba8926d61a1f7f5aba122a34a11ac1dbdd3c1f6d98671841047df139394d43751263de57c3`
+  - `TOMCAT_VERSION=9.0.55`
+  - `TOMCAT_SHA512=a0c480b8bba09069bda3b57f54e658450a59d799474ad587dead0ffbf5074c16ee3f9f9c13312d0ff3227c7034589dabf25941fbd672838e9baeee9661e024dc`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1416,7 +1416,6 @@ $ apt-get source -qq --print-uris openldap=2.4.49+dfsg-2ubuntu1.8
 
 Binary Packages:
 
-- `libssl1.1:amd64=1.1.1f-1ubuntu2.8`
 - `openssl=1.1.1f-1ubuntu2.8`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
@@ -1427,9 +1426,28 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openssl=1.1.1f-1ubuntu2.8
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.8.dsc' openssl_1.1.1f-1ubuntu2.8.dsc 2466 SHA512:79514668a1c50eb32665786dae9b2e60ec4c908c173a7c66feb97ce3bf87d46e5c5dd8786a3c8d20aab20a9c4705821fa833ff4f54e92a1c033215a1c3749c07
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.8.dsc' openssl_1.1.1f-1ubuntu2.8.dsc 2466 SHA512:79514668a1c50eb32665786dae9b2e60ec4c908c173a7c66feb97ce3bf87d46e5c5dd8786a3c8d20aab20a9c4705821fa833ff4f54e92a1c033215a1c3749c07
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f.orig.tar.gz' openssl_1.1.1f.orig.tar.gz 9792828 SHA512:b00bd9b5ad5298fbceeec6bb19c1ab0c106ca5cfb31178497c58bf7e0e0cf30fcc19c20f84e23af31cc126bf2447d3e4f8461db97bafa7bd78f69561932f000c
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.8.debian.tar.xz' openssl_1.1.1f-1ubuntu2.8.debian.tar.xz 166152 SHA512:97fc740bd4fe474019878dd90d7130200644aec105fc6cf926791dada9a2bb8f330091b7e91fa6410e516dfbfb656120520b86190b3e417fcb9d461069b604d1
+```
+
+### `dpkg` source package: `openssl=1.1.1f-1ubuntu2.9`
+
+Binary Packages:
+
+- `libssl1.1:amd64=1.1.1f-1ubuntu2.9`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris openssl=1.1.1f-1ubuntu2.9
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.9.dsc' openssl_1.1.1f-1ubuntu2.9.dsc 2466 SHA512:1d784f346fdd8b5d43124ddb1f2377aa453772b8f8dd869a18459fdefb856aba4bfdc2e75ebd7f57bcac102f3d3a18fe8d4a3e27915e80e571692c2ef90a86a3
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f.orig.tar.gz' openssl_1.1.1f.orig.tar.gz 9792828 SHA512:b00bd9b5ad5298fbceeec6bb19c1ab0c106ca5cfb31178497c58bf7e0e0cf30fcc19c20f84e23af31cc126bf2447d3e4f8461db97bafa7bd78f69561932f000c
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.8.debian.tar.xz' openssl_1.1.1f-1ubuntu2.8.debian.tar.xz 166152 SHA512:97fc740bd4fe474019878dd90d7130200644aec105fc6cf926791dada9a2bb8f330091b7e91fa6410e516dfbfb656120520b86190b3e417fcb9d461069b604d1
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.9.debian.tar.xz' openssl_1.1.1f-1ubuntu2.9.debian.tar.xz 167856 SHA512:9e660fc967029fee8378cf4c8054978bc759742b9c106b76e590a71b8417b305bce59c96cc4df564264af6e3aa352d7ee8a8cadebe5f8614cc3adf1272dfb22e
 ```
 
 ### `dpkg` source package: `p11-kit=0.23.20-1ubuntu0.1`
