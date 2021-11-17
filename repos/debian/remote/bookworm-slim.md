@@ -1,7 +1,7 @@
 ## `debian:bookworm-slim`
 
 ```console
-$ docker pull debian@sha256:295c662b763b685cf5b0bf8bbc073a4aa5cc89fb7037c15c6c5b31ea93b0947d
+$ docker pull debian@sha256:a3db73ce8bc3465421efb0fe3dcaf254e8adc3e3be6e5745b9a9eb92e882cbd1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -174,27 +174,27 @@ CMD ["bash"]
 ### `debian:bookworm-slim` - linux; ppc64le
 
 ```console
-$ docker pull debian@sha256:e4ccc66ce1c20510bb0f3037745e765507832b91cc77fe8ec675fe4ca47585b8
+$ docker pull debian@sha256:7e67704d41f705d7c1c4b8e58aa1f17b6775fc949178c2d545f176b0ee6d4ba4
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **35.9 MB (35900678 bytes)**  
+-	Total Size: **36.0 MB (36014976 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3f736f04688ed59050ee8d4848f17d26577a1cfee0d3739ced37f4abbaee3674`
+-	Image ID: `sha256:54f3e021f31b16bda7bae14b93e9edb489d2e618a22d74acc91985c64cf06e2c`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 12 Oct 2021 01:24:44 GMT
-ADD file:5c750a1cf418050da8164b02e79d89893775c8cb82cba89ce6d2f820f4e43139 in / 
-# Tue, 12 Oct 2021 01:24:49 GMT
+# Wed, 17 Nov 2021 03:26:34 GMT
+ADD file:362555703d58a643f3413b5e1ba57f072ccf9d4616a70af821535aa49d33ff64 in / 
+# Wed, 17 Nov 2021 03:26:43 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:6281a0df95aaa56f35d9c470a0b63d5dcf2bab02587999175c26f131fc898534`  
-		Last Modified: Tue, 12 Oct 2021 01:35:18 GMT  
-		Size: 35.9 MB (35900678 bytes)  
+	-	`sha256:02f2c90951c6ac202d9cad544ed879bfec4607a0cdc8c3a609af6dfc52039cd4`  
+		Last Modified: Wed, 17 Nov 2021 03:49:02 GMT  
+		Size: 36.0 MB (36014976 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `debian:bookworm-slim` - linux; s390x

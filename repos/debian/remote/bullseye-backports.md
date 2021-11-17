@@ -1,7 +1,7 @@
 ## `debian:bullseye-backports`
 
 ```console
-$ docker pull debian@sha256:e3509965ae494533f0420624c144dd59006206a2febe79bf717fa5900dc3181b
+$ docker pull debian@sha256:8d312115abc63f36333804abf457bb38c27f63f1aaefae3666ea6185b8a891ef
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -210,33 +210,33 @@ RUN echo 'deb http://deb.debian.org/debian bullseye-backports main' > /etc/apt/s
 ### `debian:bullseye-backports` - linux; ppc64le
 
 ```console
-$ docker pull debian@sha256:40f8b8b2e3ea477ad834637661bbddd461a2f56b32c04a1b887ed0404e85f6a8
+$ docker pull debian@sha256:dc5bd3960c610318d5ed435bd1652bce56065f6e66fa6598f9db710cf4fd16b9
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **58.8 MB (58809106 bytes)**  
+-	Total Size: **58.8 MB (58819733 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:48a6877f5dd128c20503b72eb18b2926abe77cae1a58ce5df093a7814e83d067`
+-	Image ID: `sha256:425eb4520a7d1ec9dc7e77c095c26c51396bc7ec6d20542135bd8b385e9bffa4`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 12 Oct 2021 01:25:04 GMT
-ADD file:127b21494e1c790bdbb4c277638b3e16b25fbbcd1e0cdb52e60a4f55a57cd0f2 in / 
-# Tue, 12 Oct 2021 01:25:10 GMT
+# Wed, 17 Nov 2021 03:27:04 GMT
+ADD file:85375acb19da58f9eabaa67f8cb425cd1ff2dadb2888bbd9dbfa6223d16fef23 in / 
+# Wed, 17 Nov 2021 03:27:20 GMT
 CMD ["bash"]
-# Tue, 12 Oct 2021 01:25:26 GMT
+# Wed, 17 Nov 2021 03:27:56 GMT
 RUN echo 'deb http://deb.debian.org/debian bullseye-backports main' > /etc/apt/sources.list.d/backports.list
 ```
 
 -	Layers:
-	-	`sha256:c7e7ddcf3b3abfed2b7aab50c1b68bfdfc6fcffed2f4b93ebff4d6050b3d5e72`  
-		Last Modified: Tue, 12 Oct 2021 01:36:12 GMT  
-		Size: 58.8 MB (58808876 bytes)  
+	-	`sha256:ede9cd7c8f1d380c971a130fb3d8a3914bf3a9106702164c23b2cce536fa618c`  
+		Last Modified: Wed, 17 Nov 2021 03:52:39 GMT  
+		Size: 58.8 MB (58819505 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:56fb001a0c62f3a0c70976e2acd34e874089886aa5b0f8ee10fe1e6e579ef15f`  
-		Last Modified: Tue, 12 Oct 2021 01:36:31 GMT  
-		Size: 230.0 B  
+	-	`sha256:db37e9eb2f72ebe52d30bc2bd731d6081d570c5a021ad20f2bc558d789078a60`  
+		Last Modified: Wed, 17 Nov 2021 03:53:04 GMT  
+		Size: 228.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `debian:bullseye-backports` - linux; s390x
