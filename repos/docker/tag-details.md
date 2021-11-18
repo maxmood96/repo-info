@@ -32,7 +32,7 @@
 ## `docker:20`
 
 ```console
-$ docker pull docker@sha256:ef7bb7fae023a1c895370ace48e3f4d470fe2351752565cdf4b3488ecb4a1fa8
+$ docker pull docker@sha256:317b60d32767d3d9abda0129a7c3f34d83f75a90b7ae3020d01aa46cb24556fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -114,14 +114,14 @@ CMD ["sh"]
 ### `docker:20` - linux; arm64 variant v8
 
 ```console
-$ docker pull docker@sha256:7f8c695ee89847aa87d315e8d345a22e928447543cda8780837a30fcd3ec1c1b
+$ docker pull docker@sha256:8aef5b543363230546c03371e8b3c857285ffdad566b676c3657cf64fedd9299
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **62.4 MB (62360475 bytes)**  
+-	Total Size: **62.4 MB (62375513 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:520e9a0a30f7c4055889f4969ee2b1bc143827c6e87d6aaeed617c6fa01de262`
+-	Image ID: `sha256:0836e8a2fd6d55074387335d0a134d329cedce53561a1b6fc6eefe44cf1cf487`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
@@ -134,21 +134,21 @@ CMD ["/bin/sh"]
 RUN apk add --no-cache 		ca-certificates 		libc6-compat 		openssh-client
 # Sat, 13 Nov 2021 11:12:05 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Sat, 13 Nov 2021 11:12:06 GMT
-ENV DOCKER_VERSION=20.10.10
-# Sat, 13 Nov 2021 11:12:12 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-20.10.10.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-20.10.10.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-20.10.10.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-20.10.10.tgz'; 			;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O docker.tgz "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		dockerd --version; 	docker --version
-# Sat, 13 Nov 2021 11:12:13 GMT
+# Thu, 18 Nov 2021 09:17:16 GMT
+ENV DOCKER_VERSION=20.10.11
+# Thu, 18 Nov 2021 09:17:22 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-20.10.11.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-20.10.11.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-20.10.11.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-20.10.11.tgz'; 			;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O docker.tgz "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		dockerd --version; 	docker --version
+# Thu, 18 Nov 2021 09:17:24 GMT
 COPY file:abb137d24130e7fa2bdd38694af607361ecb688521e60965681e49460964a204 in /usr/local/bin/modprobe 
-# Sat, 13 Nov 2021 11:12:14 GMT
+# Thu, 18 Nov 2021 09:17:25 GMT
 COPY file:5b18768029dab8174c9d5957bb39560bde5ef6cba50fbbca222731a0059b449b in /usr/local/bin/ 
-# Sat, 13 Nov 2021 11:12:14 GMT
+# Thu, 18 Nov 2021 09:17:25 GMT
 ENV DOCKER_TLS_CERTDIR=/certs
-# Sat, 13 Nov 2021 11:12:15 GMT
+# Thu, 18 Nov 2021 09:17:26 GMT
 RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client
-# Sat, 13 Nov 2021 11:12:16 GMT
+# Thu, 18 Nov 2021 09:17:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 13 Nov 2021 11:12:17 GMT
+# Thu, 18 Nov 2021 09:17:28 GMT
 CMD ["sh"]
 ```
 
@@ -165,27 +165,27 @@ CMD ["sh"]
 		Last Modified: Sat, 13 Nov 2021 11:13:37 GMT  
 		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a62d8382e8c3998e6150de13325d0cefc188fd2df3dab4923e604a9ca4c5f18`  
-		Last Modified: Sat, 13 Nov 2021 11:13:47 GMT  
-		Size: 57.7 MB (57730974 bytes)  
+	-	`sha256:7b50fed93df89351d596ab08fab482a174aa37a86d61cdeef150162665a67a80`  
+		Last Modified: Thu, 18 Nov 2021 09:18:59 GMT  
+		Size: 57.7 MB (57746015 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da32b7decf4b345d476b6a4e10a003a86c0bcfde1e98db9baf6cf10943b6bf19`  
-		Last Modified: Sat, 13 Nov 2021 11:13:37 GMT  
-		Size: 544.0 B  
+	-	`sha256:f21638a3c07c5ebd6977bcc9c75e0ac36c2a82b761fc51a8aee313c9a9d7ed46`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 542.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1eaa20d143da83073976f6cf7ed7deccc3b80e067502e7aa0c4a08ab921a9147`  
-		Last Modified: Sat, 13 Nov 2021 11:13:38 GMT  
-		Size: 1.0 KB (1017 bytes)  
+	-	`sha256:b9e37a1bae185ca8552a00efd7984a74bc595d0dac82ab81e945615f5a0b29af`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 1.0 KB (1018 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:47aa80e9f3e814d809569ac62843a611cd58228798fd5570cc7194807c4cb77c`  
-		Last Modified: Sat, 13 Nov 2021 11:13:37 GMT  
-		Size: 117.0 B  
+	-	`sha256:b81c4e38c2d1b6603791a26f4dad582d554c306fb4c8c4218e0d537da3b8af6a`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:20-dind`
 
 ```console
-$ docker pull docker@sha256:24bbc8400edcc162a7489ceedc3d580897b5756a29fa503e584d00016eabf975
+$ docker pull docker@sha256:ef4fb6a1255345d59ead278f6bf74be666e0e47cb075c237682bb266c0bfb3a2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -301,14 +301,14 @@ CMD []
 ### `docker:20-dind` - linux; arm64 variant v8
 
 ```console
-$ docker pull docker@sha256:4b5737bdf555bcae5de92046c971d2c1e8b4c60c1f927a6ebec02dac0f3fc2cb
+$ docker pull docker@sha256:6b91496cd8473f8f0412be846318dcf073a41e5c02fea27a75a657376c55e83b
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **68.8 MB (68783733 bytes)**  
+-	Total Size: **68.8 MB (68798719 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:60ec537fa5285bebadb8112cf517ddb665ecc782b17549e24b5268c424b37e2e`
+-	Image ID: `sha256:9280bbaf2b20c01dbbcd50930cb5862adc44e531d88f54d157358d16f7de8a5f`
 -	Entrypoint: `["dockerd-entrypoint.sh"]`
 -	Default Command: `[]`
 
@@ -321,39 +321,39 @@ CMD ["/bin/sh"]
 RUN apk add --no-cache 		ca-certificates 		libc6-compat 		openssh-client
 # Sat, 13 Nov 2021 11:12:05 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Sat, 13 Nov 2021 11:12:06 GMT
-ENV DOCKER_VERSION=20.10.10
-# Sat, 13 Nov 2021 11:12:12 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-20.10.10.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-20.10.10.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-20.10.10.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-20.10.10.tgz'; 			;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O docker.tgz "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		dockerd --version; 	docker --version
-# Sat, 13 Nov 2021 11:12:13 GMT
+# Thu, 18 Nov 2021 09:17:16 GMT
+ENV DOCKER_VERSION=20.10.11
+# Thu, 18 Nov 2021 09:17:22 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-20.10.11.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-20.10.11.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-20.10.11.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-20.10.11.tgz'; 			;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O docker.tgz "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		dockerd --version; 	docker --version
+# Thu, 18 Nov 2021 09:17:24 GMT
 COPY file:abb137d24130e7fa2bdd38694af607361ecb688521e60965681e49460964a204 in /usr/local/bin/modprobe 
-# Sat, 13 Nov 2021 11:12:14 GMT
+# Thu, 18 Nov 2021 09:17:25 GMT
 COPY file:5b18768029dab8174c9d5957bb39560bde5ef6cba50fbbca222731a0059b449b in /usr/local/bin/ 
-# Sat, 13 Nov 2021 11:12:14 GMT
+# Thu, 18 Nov 2021 09:17:25 GMT
 ENV DOCKER_TLS_CERTDIR=/certs
-# Sat, 13 Nov 2021 11:12:15 GMT
+# Thu, 18 Nov 2021 09:17:26 GMT
 RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client
-# Sat, 13 Nov 2021 11:12:16 GMT
+# Thu, 18 Nov 2021 09:17:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 13 Nov 2021 11:12:17 GMT
+# Thu, 18 Nov 2021 09:17:28 GMT
 CMD ["sh"]
-# Sat, 13 Nov 2021 11:12:26 GMT
+# Thu, 18 Nov 2021 09:17:38 GMT
 RUN set -eux; 	apk add --no-cache 		btrfs-progs 		e2fsprogs 		e2fsprogs-extra 		ip6tables 		iptables 		openssl 		shadow-uidmap 		xfsprogs 		xz 		pigz 	; 	if zfs="$(apk info --no-cache --quiet zfs)" && [ -n "$zfs" ]; then 		apk add --no-cache zfs; 	fi
-# Sat, 13 Nov 2021 11:12:27 GMT
+# Thu, 18 Nov 2021 09:17:39 GMT
 RUN set -eux; 	addgroup -S dockremap; 	adduser -S -G dockremap dockremap; 	echo 'dockremap:165536:65536' >> /etc/subuid; 	echo 'dockremap:165536:65536' >> /etc/subgid
-# Sat, 13 Nov 2021 11:12:28 GMT
+# Thu, 18 Nov 2021 09:17:40 GMT
 ENV DIND_COMMIT=42b1175eda071c0e9121e1d64345928384a93df1
-# Sat, 13 Nov 2021 11:12:29 GMT
+# Thu, 18 Nov 2021 09:17:41 GMT
 RUN set -eux; 	wget -O /usr/local/bin/dind "https://raw.githubusercontent.com/docker/docker/${DIND_COMMIT}/hack/dind"; 	chmod +x /usr/local/bin/dind
-# Sat, 13 Nov 2021 11:12:31 GMT
+# Thu, 18 Nov 2021 09:17:43 GMT
 COPY file:89f2c7c1492b0cb067fc6be48e1edf3f04c0b6063371da4a48cd4ca35aa098d7 in /usr/local/bin/ 
-# Sat, 13 Nov 2021 11:12:31 GMT
+# Thu, 18 Nov 2021 09:17:43 GMT
 VOLUME [/var/lib/docker]
-# Sat, 13 Nov 2021 11:12:32 GMT
+# Thu, 18 Nov 2021 09:17:44 GMT
 EXPOSE 2375 2376
-# Sat, 13 Nov 2021 11:12:33 GMT
+# Thu, 18 Nov 2021 09:17:45 GMT
 ENTRYPOINT ["dockerd-entrypoint.sh"]
-# Sat, 13 Nov 2021 11:12:34 GMT
+# Thu, 18 Nov 2021 09:17:46 GMT
 CMD []
 ```
 
@@ -370,43 +370,43 @@ CMD []
 		Last Modified: Sat, 13 Nov 2021 11:13:37 GMT  
 		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a62d8382e8c3998e6150de13325d0cefc188fd2df3dab4923e604a9ca4c5f18`  
-		Last Modified: Sat, 13 Nov 2021 11:13:47 GMT  
-		Size: 57.7 MB (57730974 bytes)  
+	-	`sha256:7b50fed93df89351d596ab08fab482a174aa37a86d61cdeef150162665a67a80`  
+		Last Modified: Thu, 18 Nov 2021 09:18:59 GMT  
+		Size: 57.7 MB (57746015 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da32b7decf4b345d476b6a4e10a003a86c0bcfde1e98db9baf6cf10943b6bf19`  
-		Last Modified: Sat, 13 Nov 2021 11:13:37 GMT  
-		Size: 544.0 B  
+	-	`sha256:f21638a3c07c5ebd6977bcc9c75e0ac36c2a82b761fc51a8aee313c9a9d7ed46`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 542.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1eaa20d143da83073976f6cf7ed7deccc3b80e067502e7aa0c4a08ab921a9147`  
-		Last Modified: Sat, 13 Nov 2021 11:13:38 GMT  
-		Size: 1.0 KB (1017 bytes)  
+	-	`sha256:b9e37a1bae185ca8552a00efd7984a74bc595d0dac82ab81e945615f5a0b29af`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 1.0 KB (1018 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:47aa80e9f3e814d809569ac62843a611cd58228798fd5570cc7194807c4cb77c`  
-		Last Modified: Sat, 13 Nov 2021 11:13:37 GMT  
-		Size: 117.0 B  
+	-	`sha256:b81c4e38c2d1b6603791a26f4dad582d554c306fb4c8c4218e0d537da3b8af6a`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cdd4eff14edf3baa59a2710743529bd0271876a425be9bf15515edf16d238426`  
-		Last Modified: Sat, 13 Nov 2021 11:14:08 GMT  
-		Size: 6.4 MB (6418396 bytes)  
+	-	`sha256:dc29a86f7ed1b15ec5c146abf64a41609779eb5b0e2a668d274b1b28c14c37e3`  
+		Last Modified: Thu, 18 Nov 2021 09:19:20 GMT  
+		Size: 6.4 MB (6418345 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:29ef05e5793f710405e8cdcaf8bbbe0cb097e2b05cd4c60f296ea5522b5bbabc`  
-		Last Modified: Sat, 13 Nov 2021 11:14:07 GMT  
+	-	`sha256:fce285f2fd3dbcbe5e58749e817ef3a3e60fa1dbf82bc51eaff0f20f8e151d3f`  
+		Last Modified: Thu, 18 Nov 2021 09:19:18 GMT  
 		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:79a05be465a272484a40c51e42a2dfd7c7f4e64eab29d4955fb1bc70fe98e820`  
-		Last Modified: Sat, 13 Nov 2021 11:14:07 GMT  
-		Size: 957.0 B  
+	-	`sha256:aeabdc4aba67b4850e7e5c118e6409d59a161d11f5be536341a4e9f40ed017bf`  
+		Last Modified: Thu, 18 Nov 2021 09:19:18 GMT  
+		Size: 956.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6650ac9b2748862ed8338257ebfbd2e9b788dea52523a506b339d87b29ff91a8`  
-		Last Modified: Sat, 13 Nov 2021 11:14:07 GMT  
+	-	`sha256:9dd2d42122e3f199551259bf3db06d2c446c725eb3ae3239f2692f3fa57804b5`  
+		Last Modified: Thu, 18 Nov 2021 09:19:18 GMT  
 		Size: 2.6 KB (2614 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:20-dind-rootless`
 
 ```console
-$ docker pull docker@sha256:29e19ed5ed0c3c1c889bf726c76fdbe7fb8e67f033aeff2d941112d7f9730836
+$ docker pull docker@sha256:f7eda2fabb5f3b449e141975f3bd3b53a303f0976aeb06638626a6c49bfbc45f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -556,14 +556,14 @@ USER rootless
 ### `docker:20-dind-rootless` - linux; arm64 variant v8
 
 ```console
-$ docker pull docker@sha256:7aa7a557db4837963c50f130d0b3cb0266cdf40b95d1885016390c2fb60d42ac
+$ docker pull docker@sha256:2441b89586372dc59c8fce28fc3fa0a6141193ad158d18482597187a7e1c9eeb
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **91.1 MB (91055436 bytes)**  
+-	Total Size: **91.1 MB (91070455 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:27f0db21ce6ac17ede9ed78e7a500ed07fce6f552814b1862fedba25815fee61`
+-	Image ID: `sha256:0c509ba52a7374da993e6cf01a7147518857077192831cf839078772fa27881b`
 -	Entrypoint: `["dockerd-entrypoint.sh"]`
 -	Default Command: `[]`
 
@@ -576,53 +576,53 @@ CMD ["/bin/sh"]
 RUN apk add --no-cache 		ca-certificates 		libc6-compat 		openssh-client
 # Sat, 13 Nov 2021 11:12:05 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Sat, 13 Nov 2021 11:12:06 GMT
-ENV DOCKER_VERSION=20.10.10
-# Sat, 13 Nov 2021 11:12:12 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-20.10.10.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-20.10.10.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-20.10.10.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-20.10.10.tgz'; 			;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O docker.tgz "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		dockerd --version; 	docker --version
-# Sat, 13 Nov 2021 11:12:13 GMT
+# Thu, 18 Nov 2021 09:17:16 GMT
+ENV DOCKER_VERSION=20.10.11
+# Thu, 18 Nov 2021 09:17:22 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-20.10.11.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-20.10.11.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-20.10.11.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-20.10.11.tgz'; 			;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O docker.tgz "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		dockerd --version; 	docker --version
+# Thu, 18 Nov 2021 09:17:24 GMT
 COPY file:abb137d24130e7fa2bdd38694af607361ecb688521e60965681e49460964a204 in /usr/local/bin/modprobe 
-# Sat, 13 Nov 2021 11:12:14 GMT
+# Thu, 18 Nov 2021 09:17:25 GMT
 COPY file:5b18768029dab8174c9d5957bb39560bde5ef6cba50fbbca222731a0059b449b in /usr/local/bin/ 
-# Sat, 13 Nov 2021 11:12:14 GMT
+# Thu, 18 Nov 2021 09:17:25 GMT
 ENV DOCKER_TLS_CERTDIR=/certs
-# Sat, 13 Nov 2021 11:12:15 GMT
+# Thu, 18 Nov 2021 09:17:26 GMT
 RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client
-# Sat, 13 Nov 2021 11:12:16 GMT
+# Thu, 18 Nov 2021 09:17:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 13 Nov 2021 11:12:17 GMT
+# Thu, 18 Nov 2021 09:17:28 GMT
 CMD ["sh"]
-# Sat, 13 Nov 2021 11:12:26 GMT
+# Thu, 18 Nov 2021 09:17:38 GMT
 RUN set -eux; 	apk add --no-cache 		btrfs-progs 		e2fsprogs 		e2fsprogs-extra 		ip6tables 		iptables 		openssl 		shadow-uidmap 		xfsprogs 		xz 		pigz 	; 	if zfs="$(apk info --no-cache --quiet zfs)" && [ -n "$zfs" ]; then 		apk add --no-cache zfs; 	fi
-# Sat, 13 Nov 2021 11:12:27 GMT
+# Thu, 18 Nov 2021 09:17:39 GMT
 RUN set -eux; 	addgroup -S dockremap; 	adduser -S -G dockremap dockremap; 	echo 'dockremap:165536:65536' >> /etc/subuid; 	echo 'dockremap:165536:65536' >> /etc/subgid
-# Sat, 13 Nov 2021 11:12:28 GMT
+# Thu, 18 Nov 2021 09:17:40 GMT
 ENV DIND_COMMIT=42b1175eda071c0e9121e1d64345928384a93df1
-# Sat, 13 Nov 2021 11:12:29 GMT
+# Thu, 18 Nov 2021 09:17:41 GMT
 RUN set -eux; 	wget -O /usr/local/bin/dind "https://raw.githubusercontent.com/docker/docker/${DIND_COMMIT}/hack/dind"; 	chmod +x /usr/local/bin/dind
-# Sat, 13 Nov 2021 11:12:31 GMT
+# Thu, 18 Nov 2021 09:17:43 GMT
 COPY file:89f2c7c1492b0cb067fc6be48e1edf3f04c0b6063371da4a48cd4ca35aa098d7 in /usr/local/bin/ 
-# Sat, 13 Nov 2021 11:12:31 GMT
+# Thu, 18 Nov 2021 09:17:43 GMT
 VOLUME [/var/lib/docker]
-# Sat, 13 Nov 2021 11:12:32 GMT
+# Thu, 18 Nov 2021 09:17:44 GMT
 EXPOSE 2375 2376
-# Sat, 13 Nov 2021 11:12:33 GMT
+# Thu, 18 Nov 2021 09:17:45 GMT
 ENTRYPOINT ["dockerd-entrypoint.sh"]
-# Sat, 13 Nov 2021 11:12:34 GMT
+# Thu, 18 Nov 2021 09:17:46 GMT
 CMD []
-# Sat, 13 Nov 2021 11:12:42 GMT
+# Thu, 18 Nov 2021 09:17:54 GMT
 RUN apk add --no-cache iproute2
-# Sat, 13 Nov 2021 11:12:43 GMT
+# Thu, 18 Nov 2021 09:17:55 GMT
 RUN mkdir /run/user && chmod 1777 /run/user
-# Sat, 13 Nov 2021 11:12:44 GMT
+# Thu, 18 Nov 2021 09:17:56 GMT
 RUN set -eux; 	adduser -h /home/rootless -g 'Rootless' -D -u 1000 rootless; 	echo 'rootless:100000:65536' >> /etc/subuid; 	echo 'rootless:100000:65536' >> /etc/subgid
-# Sat, 13 Nov 2021 11:12:47 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-rootless-extras-20.10.10.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-rootless-extras-20.10.10.tgz'; 			;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O rootless.tgz "$url"; 		tar --extract 		--file rootless.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		'docker-rootless-extras/rootlesskit' 		'docker-rootless-extras/rootlesskit-docker-proxy' 		'docker-rootless-extras/vpnkit' 	; 	rm rootless.tgz; 		rootlesskit --version; 	vpnkit --version
-# Sat, 13 Nov 2021 11:12:48 GMT
+# Thu, 18 Nov 2021 09:17:59 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-rootless-extras-20.10.11.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-rootless-extras-20.10.11.tgz'; 			;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O rootless.tgz "$url"; 		tar --extract 		--file rootless.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		'docker-rootless-extras/rootlesskit' 		'docker-rootless-extras/rootlesskit-docker-proxy' 		'docker-rootless-extras/vpnkit' 	; 	rm rootless.tgz; 		rootlesskit --version; 	vpnkit --version
+# Thu, 18 Nov 2021 09:18:00 GMT
 RUN set -eux; 	mkdir -p /home/rootless/.local/share/docker; 	chown -R rootless:rootless /home/rootless/.local/share/docker
-# Sat, 13 Nov 2021 11:12:49 GMT
+# Thu, 18 Nov 2021 09:18:01 GMT
 VOLUME [/home/rootless/.local/share/docker]
-# Sat, 13 Nov 2021 11:12:50 GMT
+# Thu, 18 Nov 2021 09:18:02 GMT
 USER rootless
 ```
 
@@ -639,63 +639,63 @@ USER rootless
 		Last Modified: Sat, 13 Nov 2021 11:13:37 GMT  
 		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a62d8382e8c3998e6150de13325d0cefc188fd2df3dab4923e604a9ca4c5f18`  
-		Last Modified: Sat, 13 Nov 2021 11:13:47 GMT  
-		Size: 57.7 MB (57730974 bytes)  
+	-	`sha256:7b50fed93df89351d596ab08fab482a174aa37a86d61cdeef150162665a67a80`  
+		Last Modified: Thu, 18 Nov 2021 09:18:59 GMT  
+		Size: 57.7 MB (57746015 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da32b7decf4b345d476b6a4e10a003a86c0bcfde1e98db9baf6cf10943b6bf19`  
-		Last Modified: Sat, 13 Nov 2021 11:13:37 GMT  
-		Size: 544.0 B  
+	-	`sha256:f21638a3c07c5ebd6977bcc9c75e0ac36c2a82b761fc51a8aee313c9a9d7ed46`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 542.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1eaa20d143da83073976f6cf7ed7deccc3b80e067502e7aa0c4a08ab921a9147`  
-		Last Modified: Sat, 13 Nov 2021 11:13:38 GMT  
-		Size: 1.0 KB (1017 bytes)  
+	-	`sha256:b9e37a1bae185ca8552a00efd7984a74bc595d0dac82ab81e945615f5a0b29af`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 1.0 KB (1018 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:47aa80e9f3e814d809569ac62843a611cd58228798fd5570cc7194807c4cb77c`  
-		Last Modified: Sat, 13 Nov 2021 11:13:37 GMT  
-		Size: 117.0 B  
+	-	`sha256:b81c4e38c2d1b6603791a26f4dad582d554c306fb4c8c4218e0d537da3b8af6a`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cdd4eff14edf3baa59a2710743529bd0271876a425be9bf15515edf16d238426`  
-		Last Modified: Sat, 13 Nov 2021 11:14:08 GMT  
-		Size: 6.4 MB (6418396 bytes)  
+	-	`sha256:dc29a86f7ed1b15ec5c146abf64a41609779eb5b0e2a668d274b1b28c14c37e3`  
+		Last Modified: Thu, 18 Nov 2021 09:19:20 GMT  
+		Size: 6.4 MB (6418345 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:29ef05e5793f710405e8cdcaf8bbbe0cb097e2b05cd4c60f296ea5522b5bbabc`  
-		Last Modified: Sat, 13 Nov 2021 11:14:07 GMT  
+	-	`sha256:fce285f2fd3dbcbe5e58749e817ef3a3e60fa1dbf82bc51eaff0f20f8e151d3f`  
+		Last Modified: Thu, 18 Nov 2021 09:19:18 GMT  
 		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:79a05be465a272484a40c51e42a2dfd7c7f4e64eab29d4955fb1bc70fe98e820`  
-		Last Modified: Sat, 13 Nov 2021 11:14:07 GMT  
-		Size: 957.0 B  
+	-	`sha256:aeabdc4aba67b4850e7e5c118e6409d59a161d11f5be536341a4e9f40ed017bf`  
+		Last Modified: Thu, 18 Nov 2021 09:19:18 GMT  
+		Size: 956.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6650ac9b2748862ed8338257ebfbd2e9b788dea52523a506b339d87b29ff91a8`  
-		Last Modified: Sat, 13 Nov 2021 11:14:07 GMT  
+	-	`sha256:9dd2d42122e3f199551259bf3db06d2c446c725eb3ae3239f2692f3fa57804b5`  
+		Last Modified: Thu, 18 Nov 2021 09:19:18 GMT  
 		Size: 2.6 KB (2614 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe86ac559b5a564bb3df41ebd8e9d1570a242e9d56546f293f98d2aaac3119aa`  
-		Last Modified: Sat, 13 Nov 2021 11:14:29 GMT  
-		Size: 1.2 MB (1168586 bytes)  
+	-	`sha256:230963f6db0e75d3a58bc46d5b33ea4f67e6b1f0300e99ba12497c89f68ce855`  
+		Last Modified: Thu, 18 Nov 2021 09:19:41 GMT  
+		Size: 1.2 MB (1168585 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc7077b192bccf3af6a4da34fb009d7016d455db5137f71deea61efb74832f10`  
-		Last Modified: Sat, 13 Nov 2021 11:14:30 GMT  
-		Size: 114.0 B  
+	-	`sha256:f66cc595973e50f8d3e25c628464cfa45436824aab478bda61c9ac4232d822c3`  
+		Last Modified: Thu, 18 Nov 2021 09:19:40 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2f77077b5415e0cac28e216de1e3123fe3899ab3a5f74144a2fb38d22eee40b`  
-		Last Modified: Sat, 13 Nov 2021 11:14:29 GMT  
-		Size: 1.3 KB (1317 bytes)  
+	-	`sha256:55af54131c4a2bf83efebe4e4fec2d50bd4c99ffbca5aa5ccfa29c167f4c16ce`  
+		Last Modified: Thu, 18 Nov 2021 09:19:40 GMT  
+		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:051832e5a3328eae673f5479e17e64a0df05f543456bde994ed17f4666f1ac28`  
-		Last Modified: Sat, 13 Nov 2021 11:14:32 GMT  
-		Size: 21.1 MB (21101497 bytes)  
+	-	`sha256:48cab39e5c6b0a896c570c0218f29e0600936018957c487e7b439c9ecf14ad8e`  
+		Last Modified: Thu, 18 Nov 2021 09:19:44 GMT  
+		Size: 21.1 MB (21101528 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d4172fb6b514cb25e51f7c061f6b6357db907bd62801b6bc1364c26d3e6c5f1a`  
-		Last Modified: Sat, 13 Nov 2021 11:14:29 GMT  
+	-	`sha256:b365691e2dffd5c75fa3b86bd4ccd1b11a4beae986f511ce5400a6a3d69b550c`  
+		Last Modified: Thu, 18 Nov 2021 09:19:40 GMT  
 		Size: 189.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:20-git`
 
 ```console
-$ docker pull docker@sha256:8dead7d26f479e29b5d535533dd1447cdb1785f1fa2cde55cd4742e58d5f9838
+$ docker pull docker@sha256:a9ec8dce9cdab5c0d82690840373f70a0fcc9a2b2f5ad5a0d38147b2d2d8ef93
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -783,14 +783,14 @@ RUN apk add --no-cache git
 ### `docker:20-git` - linux; arm64 variant v8
 
 ```console
-$ docker pull docker@sha256:086c42fce9c4b3cafac1e86d6c3274603f0e932acbe5ff1fd8b904dc6978a224
+$ docker pull docker@sha256:abd4f25a749ebaac21635348b5e8db17d1d7cc5bcfa3b437e730b4178177cd2f
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.1 MB (69100640 bytes)**  
+-	Total Size: **69.1 MB (69115687 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:123fa396495add862a22f2d1c26c61257fc94ae58f46620d4ec3aa191f9d6109`
+-	Image ID: `sha256:0eb4264b475ad1b401f8776fd4d94293173ddd396cf1a88a5fb4372947b3ef3f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
@@ -803,23 +803,23 @@ CMD ["/bin/sh"]
 RUN apk add --no-cache 		ca-certificates 		libc6-compat 		openssh-client
 # Sat, 13 Nov 2021 11:12:05 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Sat, 13 Nov 2021 11:12:06 GMT
-ENV DOCKER_VERSION=20.10.10
-# Sat, 13 Nov 2021 11:12:12 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-20.10.10.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-20.10.10.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-20.10.10.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-20.10.10.tgz'; 			;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O docker.tgz "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		dockerd --version; 	docker --version
-# Sat, 13 Nov 2021 11:12:13 GMT
+# Thu, 18 Nov 2021 09:17:16 GMT
+ENV DOCKER_VERSION=20.10.11
+# Thu, 18 Nov 2021 09:17:22 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-20.10.11.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-20.10.11.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-20.10.11.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-20.10.11.tgz'; 			;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O docker.tgz "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		dockerd --version; 	docker --version
+# Thu, 18 Nov 2021 09:17:24 GMT
 COPY file:abb137d24130e7fa2bdd38694af607361ecb688521e60965681e49460964a204 in /usr/local/bin/modprobe 
-# Sat, 13 Nov 2021 11:12:14 GMT
+# Thu, 18 Nov 2021 09:17:25 GMT
 COPY file:5b18768029dab8174c9d5957bb39560bde5ef6cba50fbbca222731a0059b449b in /usr/local/bin/ 
-# Sat, 13 Nov 2021 11:12:14 GMT
+# Thu, 18 Nov 2021 09:17:25 GMT
 ENV DOCKER_TLS_CERTDIR=/certs
-# Sat, 13 Nov 2021 11:12:15 GMT
+# Thu, 18 Nov 2021 09:17:26 GMT
 RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client
-# Sat, 13 Nov 2021 11:12:16 GMT
+# Thu, 18 Nov 2021 09:17:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 13 Nov 2021 11:12:17 GMT
+# Thu, 18 Nov 2021 09:17:28 GMT
 CMD ["sh"]
-# Sat, 13 Nov 2021 11:12:58 GMT
+# Thu, 18 Nov 2021 09:18:09 GMT
 RUN apk add --no-cache git
 ```
 
@@ -836,25 +836,25 @@ RUN apk add --no-cache git
 		Last Modified: Sat, 13 Nov 2021 11:13:37 GMT  
 		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a62d8382e8c3998e6150de13325d0cefc188fd2df3dab4923e604a9ca4c5f18`  
-		Last Modified: Sat, 13 Nov 2021 11:13:47 GMT  
-		Size: 57.7 MB (57730974 bytes)  
+	-	`sha256:7b50fed93df89351d596ab08fab482a174aa37a86d61cdeef150162665a67a80`  
+		Last Modified: Thu, 18 Nov 2021 09:18:59 GMT  
+		Size: 57.7 MB (57746015 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da32b7decf4b345d476b6a4e10a003a86c0bcfde1e98db9baf6cf10943b6bf19`  
-		Last Modified: Sat, 13 Nov 2021 11:13:37 GMT  
-		Size: 544.0 B  
+	-	`sha256:f21638a3c07c5ebd6977bcc9c75e0ac36c2a82b761fc51a8aee313c9a9d7ed46`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 542.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1eaa20d143da83073976f6cf7ed7deccc3b80e067502e7aa0c4a08ab921a9147`  
-		Last Modified: Sat, 13 Nov 2021 11:13:38 GMT  
-		Size: 1.0 KB (1017 bytes)  
+	-	`sha256:b9e37a1bae185ca8552a00efd7984a74bc595d0dac82ab81e945615f5a0b29af`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 1.0 KB (1018 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:47aa80e9f3e814d809569ac62843a611cd58228798fd5570cc7194807c4cb77c`  
-		Last Modified: Sat, 13 Nov 2021 11:13:37 GMT  
-		Size: 117.0 B  
+	-	`sha256:b81c4e38c2d1b6603791a26f4dad582d554c306fb4c8c4218e0d537da3b8af6a`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63428bb134c49eb3606edbf2b1a924cc2935e38a7d5c64576432728c2fcbacaa`  
-		Last Modified: Sat, 13 Nov 2021 11:14:52 GMT  
-		Size: 6.7 MB (6740165 bytes)  
+	-	`sha256:77d06f8877e01ae57a21f32e8cdd5b66ffc3fdf70cfb5c8036a429db1ed15e12`  
+		Last Modified: Thu, 18 Nov 2021 09:20:04 GMT  
+		Size: 6.7 MB (6740174 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:20-windowsservercore`
@@ -998,7 +998,7 @@ RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -U
 ## `docker:20.10`
 
 ```console
-$ docker pull docker@sha256:ef7bb7fae023a1c895370ace48e3f4d470fe2351752565cdf4b3488ecb4a1fa8
+$ docker pull docker@sha256:317b60d32767d3d9abda0129a7c3f34d83f75a90b7ae3020d01aa46cb24556fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1080,14 +1080,14 @@ CMD ["sh"]
 ### `docker:20.10` - linux; arm64 variant v8
 
 ```console
-$ docker pull docker@sha256:7f8c695ee89847aa87d315e8d345a22e928447543cda8780837a30fcd3ec1c1b
+$ docker pull docker@sha256:8aef5b543363230546c03371e8b3c857285ffdad566b676c3657cf64fedd9299
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **62.4 MB (62360475 bytes)**  
+-	Total Size: **62.4 MB (62375513 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:520e9a0a30f7c4055889f4969ee2b1bc143827c6e87d6aaeed617c6fa01de262`
+-	Image ID: `sha256:0836e8a2fd6d55074387335d0a134d329cedce53561a1b6fc6eefe44cf1cf487`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
@@ -1100,21 +1100,21 @@ CMD ["/bin/sh"]
 RUN apk add --no-cache 		ca-certificates 		libc6-compat 		openssh-client
 # Sat, 13 Nov 2021 11:12:05 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Sat, 13 Nov 2021 11:12:06 GMT
-ENV DOCKER_VERSION=20.10.10
-# Sat, 13 Nov 2021 11:12:12 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-20.10.10.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-20.10.10.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-20.10.10.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-20.10.10.tgz'; 			;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O docker.tgz "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		dockerd --version; 	docker --version
-# Sat, 13 Nov 2021 11:12:13 GMT
+# Thu, 18 Nov 2021 09:17:16 GMT
+ENV DOCKER_VERSION=20.10.11
+# Thu, 18 Nov 2021 09:17:22 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-20.10.11.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-20.10.11.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-20.10.11.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-20.10.11.tgz'; 			;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O docker.tgz "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		dockerd --version; 	docker --version
+# Thu, 18 Nov 2021 09:17:24 GMT
 COPY file:abb137d24130e7fa2bdd38694af607361ecb688521e60965681e49460964a204 in /usr/local/bin/modprobe 
-# Sat, 13 Nov 2021 11:12:14 GMT
+# Thu, 18 Nov 2021 09:17:25 GMT
 COPY file:5b18768029dab8174c9d5957bb39560bde5ef6cba50fbbca222731a0059b449b in /usr/local/bin/ 
-# Sat, 13 Nov 2021 11:12:14 GMT
+# Thu, 18 Nov 2021 09:17:25 GMT
 ENV DOCKER_TLS_CERTDIR=/certs
-# Sat, 13 Nov 2021 11:12:15 GMT
+# Thu, 18 Nov 2021 09:17:26 GMT
 RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client
-# Sat, 13 Nov 2021 11:12:16 GMT
+# Thu, 18 Nov 2021 09:17:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 13 Nov 2021 11:12:17 GMT
+# Thu, 18 Nov 2021 09:17:28 GMT
 CMD ["sh"]
 ```
 
@@ -1131,27 +1131,27 @@ CMD ["sh"]
 		Last Modified: Sat, 13 Nov 2021 11:13:37 GMT  
 		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a62d8382e8c3998e6150de13325d0cefc188fd2df3dab4923e604a9ca4c5f18`  
-		Last Modified: Sat, 13 Nov 2021 11:13:47 GMT  
-		Size: 57.7 MB (57730974 bytes)  
+	-	`sha256:7b50fed93df89351d596ab08fab482a174aa37a86d61cdeef150162665a67a80`  
+		Last Modified: Thu, 18 Nov 2021 09:18:59 GMT  
+		Size: 57.7 MB (57746015 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da32b7decf4b345d476b6a4e10a003a86c0bcfde1e98db9baf6cf10943b6bf19`  
-		Last Modified: Sat, 13 Nov 2021 11:13:37 GMT  
-		Size: 544.0 B  
+	-	`sha256:f21638a3c07c5ebd6977bcc9c75e0ac36c2a82b761fc51a8aee313c9a9d7ed46`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 542.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1eaa20d143da83073976f6cf7ed7deccc3b80e067502e7aa0c4a08ab921a9147`  
-		Last Modified: Sat, 13 Nov 2021 11:13:38 GMT  
-		Size: 1.0 KB (1017 bytes)  
+	-	`sha256:b9e37a1bae185ca8552a00efd7984a74bc595d0dac82ab81e945615f5a0b29af`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 1.0 KB (1018 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:47aa80e9f3e814d809569ac62843a611cd58228798fd5570cc7194807c4cb77c`  
-		Last Modified: Sat, 13 Nov 2021 11:13:37 GMT  
-		Size: 117.0 B  
+	-	`sha256:b81c4e38c2d1b6603791a26f4dad582d554c306fb4c8c4218e0d537da3b8af6a`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:20.10-dind`
 
 ```console
-$ docker pull docker@sha256:24bbc8400edcc162a7489ceedc3d580897b5756a29fa503e584d00016eabf975
+$ docker pull docker@sha256:ef4fb6a1255345d59ead278f6bf74be666e0e47cb075c237682bb266c0bfb3a2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1267,14 +1267,14 @@ CMD []
 ### `docker:20.10-dind` - linux; arm64 variant v8
 
 ```console
-$ docker pull docker@sha256:4b5737bdf555bcae5de92046c971d2c1e8b4c60c1f927a6ebec02dac0f3fc2cb
+$ docker pull docker@sha256:6b91496cd8473f8f0412be846318dcf073a41e5c02fea27a75a657376c55e83b
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **68.8 MB (68783733 bytes)**  
+-	Total Size: **68.8 MB (68798719 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:60ec537fa5285bebadb8112cf517ddb665ecc782b17549e24b5268c424b37e2e`
+-	Image ID: `sha256:9280bbaf2b20c01dbbcd50930cb5862adc44e531d88f54d157358d16f7de8a5f`
 -	Entrypoint: `["dockerd-entrypoint.sh"]`
 -	Default Command: `[]`
 
@@ -1287,39 +1287,39 @@ CMD ["/bin/sh"]
 RUN apk add --no-cache 		ca-certificates 		libc6-compat 		openssh-client
 # Sat, 13 Nov 2021 11:12:05 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Sat, 13 Nov 2021 11:12:06 GMT
-ENV DOCKER_VERSION=20.10.10
-# Sat, 13 Nov 2021 11:12:12 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-20.10.10.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-20.10.10.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-20.10.10.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-20.10.10.tgz'; 			;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O docker.tgz "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		dockerd --version; 	docker --version
-# Sat, 13 Nov 2021 11:12:13 GMT
+# Thu, 18 Nov 2021 09:17:16 GMT
+ENV DOCKER_VERSION=20.10.11
+# Thu, 18 Nov 2021 09:17:22 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-20.10.11.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-20.10.11.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-20.10.11.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-20.10.11.tgz'; 			;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O docker.tgz "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		dockerd --version; 	docker --version
+# Thu, 18 Nov 2021 09:17:24 GMT
 COPY file:abb137d24130e7fa2bdd38694af607361ecb688521e60965681e49460964a204 in /usr/local/bin/modprobe 
-# Sat, 13 Nov 2021 11:12:14 GMT
+# Thu, 18 Nov 2021 09:17:25 GMT
 COPY file:5b18768029dab8174c9d5957bb39560bde5ef6cba50fbbca222731a0059b449b in /usr/local/bin/ 
-# Sat, 13 Nov 2021 11:12:14 GMT
+# Thu, 18 Nov 2021 09:17:25 GMT
 ENV DOCKER_TLS_CERTDIR=/certs
-# Sat, 13 Nov 2021 11:12:15 GMT
+# Thu, 18 Nov 2021 09:17:26 GMT
 RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client
-# Sat, 13 Nov 2021 11:12:16 GMT
+# Thu, 18 Nov 2021 09:17:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 13 Nov 2021 11:12:17 GMT
+# Thu, 18 Nov 2021 09:17:28 GMT
 CMD ["sh"]
-# Sat, 13 Nov 2021 11:12:26 GMT
+# Thu, 18 Nov 2021 09:17:38 GMT
 RUN set -eux; 	apk add --no-cache 		btrfs-progs 		e2fsprogs 		e2fsprogs-extra 		ip6tables 		iptables 		openssl 		shadow-uidmap 		xfsprogs 		xz 		pigz 	; 	if zfs="$(apk info --no-cache --quiet zfs)" && [ -n "$zfs" ]; then 		apk add --no-cache zfs; 	fi
-# Sat, 13 Nov 2021 11:12:27 GMT
+# Thu, 18 Nov 2021 09:17:39 GMT
 RUN set -eux; 	addgroup -S dockremap; 	adduser -S -G dockremap dockremap; 	echo 'dockremap:165536:65536' >> /etc/subuid; 	echo 'dockremap:165536:65536' >> /etc/subgid
-# Sat, 13 Nov 2021 11:12:28 GMT
+# Thu, 18 Nov 2021 09:17:40 GMT
 ENV DIND_COMMIT=42b1175eda071c0e9121e1d64345928384a93df1
-# Sat, 13 Nov 2021 11:12:29 GMT
+# Thu, 18 Nov 2021 09:17:41 GMT
 RUN set -eux; 	wget -O /usr/local/bin/dind "https://raw.githubusercontent.com/docker/docker/${DIND_COMMIT}/hack/dind"; 	chmod +x /usr/local/bin/dind
-# Sat, 13 Nov 2021 11:12:31 GMT
+# Thu, 18 Nov 2021 09:17:43 GMT
 COPY file:89f2c7c1492b0cb067fc6be48e1edf3f04c0b6063371da4a48cd4ca35aa098d7 in /usr/local/bin/ 
-# Sat, 13 Nov 2021 11:12:31 GMT
+# Thu, 18 Nov 2021 09:17:43 GMT
 VOLUME [/var/lib/docker]
-# Sat, 13 Nov 2021 11:12:32 GMT
+# Thu, 18 Nov 2021 09:17:44 GMT
 EXPOSE 2375 2376
-# Sat, 13 Nov 2021 11:12:33 GMT
+# Thu, 18 Nov 2021 09:17:45 GMT
 ENTRYPOINT ["dockerd-entrypoint.sh"]
-# Sat, 13 Nov 2021 11:12:34 GMT
+# Thu, 18 Nov 2021 09:17:46 GMT
 CMD []
 ```
 
@@ -1336,43 +1336,43 @@ CMD []
 		Last Modified: Sat, 13 Nov 2021 11:13:37 GMT  
 		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a62d8382e8c3998e6150de13325d0cefc188fd2df3dab4923e604a9ca4c5f18`  
-		Last Modified: Sat, 13 Nov 2021 11:13:47 GMT  
-		Size: 57.7 MB (57730974 bytes)  
+	-	`sha256:7b50fed93df89351d596ab08fab482a174aa37a86d61cdeef150162665a67a80`  
+		Last Modified: Thu, 18 Nov 2021 09:18:59 GMT  
+		Size: 57.7 MB (57746015 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da32b7decf4b345d476b6a4e10a003a86c0bcfde1e98db9baf6cf10943b6bf19`  
-		Last Modified: Sat, 13 Nov 2021 11:13:37 GMT  
-		Size: 544.0 B  
+	-	`sha256:f21638a3c07c5ebd6977bcc9c75e0ac36c2a82b761fc51a8aee313c9a9d7ed46`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 542.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1eaa20d143da83073976f6cf7ed7deccc3b80e067502e7aa0c4a08ab921a9147`  
-		Last Modified: Sat, 13 Nov 2021 11:13:38 GMT  
-		Size: 1.0 KB (1017 bytes)  
+	-	`sha256:b9e37a1bae185ca8552a00efd7984a74bc595d0dac82ab81e945615f5a0b29af`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 1.0 KB (1018 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:47aa80e9f3e814d809569ac62843a611cd58228798fd5570cc7194807c4cb77c`  
-		Last Modified: Sat, 13 Nov 2021 11:13:37 GMT  
-		Size: 117.0 B  
+	-	`sha256:b81c4e38c2d1b6603791a26f4dad582d554c306fb4c8c4218e0d537da3b8af6a`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cdd4eff14edf3baa59a2710743529bd0271876a425be9bf15515edf16d238426`  
-		Last Modified: Sat, 13 Nov 2021 11:14:08 GMT  
-		Size: 6.4 MB (6418396 bytes)  
+	-	`sha256:dc29a86f7ed1b15ec5c146abf64a41609779eb5b0e2a668d274b1b28c14c37e3`  
+		Last Modified: Thu, 18 Nov 2021 09:19:20 GMT  
+		Size: 6.4 MB (6418345 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:29ef05e5793f710405e8cdcaf8bbbe0cb097e2b05cd4c60f296ea5522b5bbabc`  
-		Last Modified: Sat, 13 Nov 2021 11:14:07 GMT  
+	-	`sha256:fce285f2fd3dbcbe5e58749e817ef3a3e60fa1dbf82bc51eaff0f20f8e151d3f`  
+		Last Modified: Thu, 18 Nov 2021 09:19:18 GMT  
 		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:79a05be465a272484a40c51e42a2dfd7c7f4e64eab29d4955fb1bc70fe98e820`  
-		Last Modified: Sat, 13 Nov 2021 11:14:07 GMT  
-		Size: 957.0 B  
+	-	`sha256:aeabdc4aba67b4850e7e5c118e6409d59a161d11f5be536341a4e9f40ed017bf`  
+		Last Modified: Thu, 18 Nov 2021 09:19:18 GMT  
+		Size: 956.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6650ac9b2748862ed8338257ebfbd2e9b788dea52523a506b339d87b29ff91a8`  
-		Last Modified: Sat, 13 Nov 2021 11:14:07 GMT  
+	-	`sha256:9dd2d42122e3f199551259bf3db06d2c446c725eb3ae3239f2692f3fa57804b5`  
+		Last Modified: Thu, 18 Nov 2021 09:19:18 GMT  
 		Size: 2.6 KB (2614 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:20.10-dind-rootless`
 
 ```console
-$ docker pull docker@sha256:29e19ed5ed0c3c1c889bf726c76fdbe7fb8e67f033aeff2d941112d7f9730836
+$ docker pull docker@sha256:f7eda2fabb5f3b449e141975f3bd3b53a303f0976aeb06638626a6c49bfbc45f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1522,14 +1522,14 @@ USER rootless
 ### `docker:20.10-dind-rootless` - linux; arm64 variant v8
 
 ```console
-$ docker pull docker@sha256:7aa7a557db4837963c50f130d0b3cb0266cdf40b95d1885016390c2fb60d42ac
+$ docker pull docker@sha256:2441b89586372dc59c8fce28fc3fa0a6141193ad158d18482597187a7e1c9eeb
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **91.1 MB (91055436 bytes)**  
+-	Total Size: **91.1 MB (91070455 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:27f0db21ce6ac17ede9ed78e7a500ed07fce6f552814b1862fedba25815fee61`
+-	Image ID: `sha256:0c509ba52a7374da993e6cf01a7147518857077192831cf839078772fa27881b`
 -	Entrypoint: `["dockerd-entrypoint.sh"]`
 -	Default Command: `[]`
 
@@ -1542,53 +1542,53 @@ CMD ["/bin/sh"]
 RUN apk add --no-cache 		ca-certificates 		libc6-compat 		openssh-client
 # Sat, 13 Nov 2021 11:12:05 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Sat, 13 Nov 2021 11:12:06 GMT
-ENV DOCKER_VERSION=20.10.10
-# Sat, 13 Nov 2021 11:12:12 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-20.10.10.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-20.10.10.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-20.10.10.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-20.10.10.tgz'; 			;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O docker.tgz "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		dockerd --version; 	docker --version
-# Sat, 13 Nov 2021 11:12:13 GMT
+# Thu, 18 Nov 2021 09:17:16 GMT
+ENV DOCKER_VERSION=20.10.11
+# Thu, 18 Nov 2021 09:17:22 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-20.10.11.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-20.10.11.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-20.10.11.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-20.10.11.tgz'; 			;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O docker.tgz "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		dockerd --version; 	docker --version
+# Thu, 18 Nov 2021 09:17:24 GMT
 COPY file:abb137d24130e7fa2bdd38694af607361ecb688521e60965681e49460964a204 in /usr/local/bin/modprobe 
-# Sat, 13 Nov 2021 11:12:14 GMT
+# Thu, 18 Nov 2021 09:17:25 GMT
 COPY file:5b18768029dab8174c9d5957bb39560bde5ef6cba50fbbca222731a0059b449b in /usr/local/bin/ 
-# Sat, 13 Nov 2021 11:12:14 GMT
+# Thu, 18 Nov 2021 09:17:25 GMT
 ENV DOCKER_TLS_CERTDIR=/certs
-# Sat, 13 Nov 2021 11:12:15 GMT
+# Thu, 18 Nov 2021 09:17:26 GMT
 RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client
-# Sat, 13 Nov 2021 11:12:16 GMT
+# Thu, 18 Nov 2021 09:17:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 13 Nov 2021 11:12:17 GMT
+# Thu, 18 Nov 2021 09:17:28 GMT
 CMD ["sh"]
-# Sat, 13 Nov 2021 11:12:26 GMT
+# Thu, 18 Nov 2021 09:17:38 GMT
 RUN set -eux; 	apk add --no-cache 		btrfs-progs 		e2fsprogs 		e2fsprogs-extra 		ip6tables 		iptables 		openssl 		shadow-uidmap 		xfsprogs 		xz 		pigz 	; 	if zfs="$(apk info --no-cache --quiet zfs)" && [ -n "$zfs" ]; then 		apk add --no-cache zfs; 	fi
-# Sat, 13 Nov 2021 11:12:27 GMT
+# Thu, 18 Nov 2021 09:17:39 GMT
 RUN set -eux; 	addgroup -S dockremap; 	adduser -S -G dockremap dockremap; 	echo 'dockremap:165536:65536' >> /etc/subuid; 	echo 'dockremap:165536:65536' >> /etc/subgid
-# Sat, 13 Nov 2021 11:12:28 GMT
+# Thu, 18 Nov 2021 09:17:40 GMT
 ENV DIND_COMMIT=42b1175eda071c0e9121e1d64345928384a93df1
-# Sat, 13 Nov 2021 11:12:29 GMT
+# Thu, 18 Nov 2021 09:17:41 GMT
 RUN set -eux; 	wget -O /usr/local/bin/dind "https://raw.githubusercontent.com/docker/docker/${DIND_COMMIT}/hack/dind"; 	chmod +x /usr/local/bin/dind
-# Sat, 13 Nov 2021 11:12:31 GMT
+# Thu, 18 Nov 2021 09:17:43 GMT
 COPY file:89f2c7c1492b0cb067fc6be48e1edf3f04c0b6063371da4a48cd4ca35aa098d7 in /usr/local/bin/ 
-# Sat, 13 Nov 2021 11:12:31 GMT
+# Thu, 18 Nov 2021 09:17:43 GMT
 VOLUME [/var/lib/docker]
-# Sat, 13 Nov 2021 11:12:32 GMT
+# Thu, 18 Nov 2021 09:17:44 GMT
 EXPOSE 2375 2376
-# Sat, 13 Nov 2021 11:12:33 GMT
+# Thu, 18 Nov 2021 09:17:45 GMT
 ENTRYPOINT ["dockerd-entrypoint.sh"]
-# Sat, 13 Nov 2021 11:12:34 GMT
+# Thu, 18 Nov 2021 09:17:46 GMT
 CMD []
-# Sat, 13 Nov 2021 11:12:42 GMT
+# Thu, 18 Nov 2021 09:17:54 GMT
 RUN apk add --no-cache iproute2
-# Sat, 13 Nov 2021 11:12:43 GMT
+# Thu, 18 Nov 2021 09:17:55 GMT
 RUN mkdir /run/user && chmod 1777 /run/user
-# Sat, 13 Nov 2021 11:12:44 GMT
+# Thu, 18 Nov 2021 09:17:56 GMT
 RUN set -eux; 	adduser -h /home/rootless -g 'Rootless' -D -u 1000 rootless; 	echo 'rootless:100000:65536' >> /etc/subuid; 	echo 'rootless:100000:65536' >> /etc/subgid
-# Sat, 13 Nov 2021 11:12:47 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-rootless-extras-20.10.10.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-rootless-extras-20.10.10.tgz'; 			;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O rootless.tgz "$url"; 		tar --extract 		--file rootless.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		'docker-rootless-extras/rootlesskit' 		'docker-rootless-extras/rootlesskit-docker-proxy' 		'docker-rootless-extras/vpnkit' 	; 	rm rootless.tgz; 		rootlesskit --version; 	vpnkit --version
-# Sat, 13 Nov 2021 11:12:48 GMT
+# Thu, 18 Nov 2021 09:17:59 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-rootless-extras-20.10.11.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-rootless-extras-20.10.11.tgz'; 			;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O rootless.tgz "$url"; 		tar --extract 		--file rootless.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		'docker-rootless-extras/rootlesskit' 		'docker-rootless-extras/rootlesskit-docker-proxy' 		'docker-rootless-extras/vpnkit' 	; 	rm rootless.tgz; 		rootlesskit --version; 	vpnkit --version
+# Thu, 18 Nov 2021 09:18:00 GMT
 RUN set -eux; 	mkdir -p /home/rootless/.local/share/docker; 	chown -R rootless:rootless /home/rootless/.local/share/docker
-# Sat, 13 Nov 2021 11:12:49 GMT
+# Thu, 18 Nov 2021 09:18:01 GMT
 VOLUME [/home/rootless/.local/share/docker]
-# Sat, 13 Nov 2021 11:12:50 GMT
+# Thu, 18 Nov 2021 09:18:02 GMT
 USER rootless
 ```
 
@@ -1605,63 +1605,63 @@ USER rootless
 		Last Modified: Sat, 13 Nov 2021 11:13:37 GMT  
 		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a62d8382e8c3998e6150de13325d0cefc188fd2df3dab4923e604a9ca4c5f18`  
-		Last Modified: Sat, 13 Nov 2021 11:13:47 GMT  
-		Size: 57.7 MB (57730974 bytes)  
+	-	`sha256:7b50fed93df89351d596ab08fab482a174aa37a86d61cdeef150162665a67a80`  
+		Last Modified: Thu, 18 Nov 2021 09:18:59 GMT  
+		Size: 57.7 MB (57746015 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da32b7decf4b345d476b6a4e10a003a86c0bcfde1e98db9baf6cf10943b6bf19`  
-		Last Modified: Sat, 13 Nov 2021 11:13:37 GMT  
-		Size: 544.0 B  
+	-	`sha256:f21638a3c07c5ebd6977bcc9c75e0ac36c2a82b761fc51a8aee313c9a9d7ed46`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 542.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1eaa20d143da83073976f6cf7ed7deccc3b80e067502e7aa0c4a08ab921a9147`  
-		Last Modified: Sat, 13 Nov 2021 11:13:38 GMT  
-		Size: 1.0 KB (1017 bytes)  
+	-	`sha256:b9e37a1bae185ca8552a00efd7984a74bc595d0dac82ab81e945615f5a0b29af`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 1.0 KB (1018 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:47aa80e9f3e814d809569ac62843a611cd58228798fd5570cc7194807c4cb77c`  
-		Last Modified: Sat, 13 Nov 2021 11:13:37 GMT  
-		Size: 117.0 B  
+	-	`sha256:b81c4e38c2d1b6603791a26f4dad582d554c306fb4c8c4218e0d537da3b8af6a`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cdd4eff14edf3baa59a2710743529bd0271876a425be9bf15515edf16d238426`  
-		Last Modified: Sat, 13 Nov 2021 11:14:08 GMT  
-		Size: 6.4 MB (6418396 bytes)  
+	-	`sha256:dc29a86f7ed1b15ec5c146abf64a41609779eb5b0e2a668d274b1b28c14c37e3`  
+		Last Modified: Thu, 18 Nov 2021 09:19:20 GMT  
+		Size: 6.4 MB (6418345 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:29ef05e5793f710405e8cdcaf8bbbe0cb097e2b05cd4c60f296ea5522b5bbabc`  
-		Last Modified: Sat, 13 Nov 2021 11:14:07 GMT  
+	-	`sha256:fce285f2fd3dbcbe5e58749e817ef3a3e60fa1dbf82bc51eaff0f20f8e151d3f`  
+		Last Modified: Thu, 18 Nov 2021 09:19:18 GMT  
 		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:79a05be465a272484a40c51e42a2dfd7c7f4e64eab29d4955fb1bc70fe98e820`  
-		Last Modified: Sat, 13 Nov 2021 11:14:07 GMT  
-		Size: 957.0 B  
+	-	`sha256:aeabdc4aba67b4850e7e5c118e6409d59a161d11f5be536341a4e9f40ed017bf`  
+		Last Modified: Thu, 18 Nov 2021 09:19:18 GMT  
+		Size: 956.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6650ac9b2748862ed8338257ebfbd2e9b788dea52523a506b339d87b29ff91a8`  
-		Last Modified: Sat, 13 Nov 2021 11:14:07 GMT  
+	-	`sha256:9dd2d42122e3f199551259bf3db06d2c446c725eb3ae3239f2692f3fa57804b5`  
+		Last Modified: Thu, 18 Nov 2021 09:19:18 GMT  
 		Size: 2.6 KB (2614 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe86ac559b5a564bb3df41ebd8e9d1570a242e9d56546f293f98d2aaac3119aa`  
-		Last Modified: Sat, 13 Nov 2021 11:14:29 GMT  
-		Size: 1.2 MB (1168586 bytes)  
+	-	`sha256:230963f6db0e75d3a58bc46d5b33ea4f67e6b1f0300e99ba12497c89f68ce855`  
+		Last Modified: Thu, 18 Nov 2021 09:19:41 GMT  
+		Size: 1.2 MB (1168585 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc7077b192bccf3af6a4da34fb009d7016d455db5137f71deea61efb74832f10`  
-		Last Modified: Sat, 13 Nov 2021 11:14:30 GMT  
-		Size: 114.0 B  
+	-	`sha256:f66cc595973e50f8d3e25c628464cfa45436824aab478bda61c9ac4232d822c3`  
+		Last Modified: Thu, 18 Nov 2021 09:19:40 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2f77077b5415e0cac28e216de1e3123fe3899ab3a5f74144a2fb38d22eee40b`  
-		Last Modified: Sat, 13 Nov 2021 11:14:29 GMT  
-		Size: 1.3 KB (1317 bytes)  
+	-	`sha256:55af54131c4a2bf83efebe4e4fec2d50bd4c99ffbca5aa5ccfa29c167f4c16ce`  
+		Last Modified: Thu, 18 Nov 2021 09:19:40 GMT  
+		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:051832e5a3328eae673f5479e17e64a0df05f543456bde994ed17f4666f1ac28`  
-		Last Modified: Sat, 13 Nov 2021 11:14:32 GMT  
-		Size: 21.1 MB (21101497 bytes)  
+	-	`sha256:48cab39e5c6b0a896c570c0218f29e0600936018957c487e7b439c9ecf14ad8e`  
+		Last Modified: Thu, 18 Nov 2021 09:19:44 GMT  
+		Size: 21.1 MB (21101528 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d4172fb6b514cb25e51f7c061f6b6357db907bd62801b6bc1364c26d3e6c5f1a`  
-		Last Modified: Sat, 13 Nov 2021 11:14:29 GMT  
+	-	`sha256:b365691e2dffd5c75fa3b86bd4ccd1b11a4beae986f511ce5400a6a3d69b550c`  
+		Last Modified: Thu, 18 Nov 2021 09:19:40 GMT  
 		Size: 189.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:20.10-git`
 
 ```console
-$ docker pull docker@sha256:8dead7d26f479e29b5d535533dd1447cdb1785f1fa2cde55cd4742e58d5f9838
+$ docker pull docker@sha256:a9ec8dce9cdab5c0d82690840373f70a0fcc9a2b2f5ad5a0d38147b2d2d8ef93
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1749,14 +1749,14 @@ RUN apk add --no-cache git
 ### `docker:20.10-git` - linux; arm64 variant v8
 
 ```console
-$ docker pull docker@sha256:086c42fce9c4b3cafac1e86d6c3274603f0e932acbe5ff1fd8b904dc6978a224
+$ docker pull docker@sha256:abd4f25a749ebaac21635348b5e8db17d1d7cc5bcfa3b437e730b4178177cd2f
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.1 MB (69100640 bytes)**  
+-	Total Size: **69.1 MB (69115687 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:123fa396495add862a22f2d1c26c61257fc94ae58f46620d4ec3aa191f9d6109`
+-	Image ID: `sha256:0eb4264b475ad1b401f8776fd4d94293173ddd396cf1a88a5fb4372947b3ef3f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
@@ -1769,23 +1769,23 @@ CMD ["/bin/sh"]
 RUN apk add --no-cache 		ca-certificates 		libc6-compat 		openssh-client
 # Sat, 13 Nov 2021 11:12:05 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Sat, 13 Nov 2021 11:12:06 GMT
-ENV DOCKER_VERSION=20.10.10
-# Sat, 13 Nov 2021 11:12:12 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-20.10.10.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-20.10.10.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-20.10.10.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-20.10.10.tgz'; 			;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O docker.tgz "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		dockerd --version; 	docker --version
-# Sat, 13 Nov 2021 11:12:13 GMT
+# Thu, 18 Nov 2021 09:17:16 GMT
+ENV DOCKER_VERSION=20.10.11
+# Thu, 18 Nov 2021 09:17:22 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-20.10.11.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-20.10.11.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-20.10.11.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-20.10.11.tgz'; 			;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O docker.tgz "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		dockerd --version; 	docker --version
+# Thu, 18 Nov 2021 09:17:24 GMT
 COPY file:abb137d24130e7fa2bdd38694af607361ecb688521e60965681e49460964a204 in /usr/local/bin/modprobe 
-# Sat, 13 Nov 2021 11:12:14 GMT
+# Thu, 18 Nov 2021 09:17:25 GMT
 COPY file:5b18768029dab8174c9d5957bb39560bde5ef6cba50fbbca222731a0059b449b in /usr/local/bin/ 
-# Sat, 13 Nov 2021 11:12:14 GMT
+# Thu, 18 Nov 2021 09:17:25 GMT
 ENV DOCKER_TLS_CERTDIR=/certs
-# Sat, 13 Nov 2021 11:12:15 GMT
+# Thu, 18 Nov 2021 09:17:26 GMT
 RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client
-# Sat, 13 Nov 2021 11:12:16 GMT
+# Thu, 18 Nov 2021 09:17:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 13 Nov 2021 11:12:17 GMT
+# Thu, 18 Nov 2021 09:17:28 GMT
 CMD ["sh"]
-# Sat, 13 Nov 2021 11:12:58 GMT
+# Thu, 18 Nov 2021 09:18:09 GMT
 RUN apk add --no-cache git
 ```
 
@@ -1802,25 +1802,25 @@ RUN apk add --no-cache git
 		Last Modified: Sat, 13 Nov 2021 11:13:37 GMT  
 		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a62d8382e8c3998e6150de13325d0cefc188fd2df3dab4923e604a9ca4c5f18`  
-		Last Modified: Sat, 13 Nov 2021 11:13:47 GMT  
-		Size: 57.7 MB (57730974 bytes)  
+	-	`sha256:7b50fed93df89351d596ab08fab482a174aa37a86d61cdeef150162665a67a80`  
+		Last Modified: Thu, 18 Nov 2021 09:18:59 GMT  
+		Size: 57.7 MB (57746015 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da32b7decf4b345d476b6a4e10a003a86c0bcfde1e98db9baf6cf10943b6bf19`  
-		Last Modified: Sat, 13 Nov 2021 11:13:37 GMT  
-		Size: 544.0 B  
+	-	`sha256:f21638a3c07c5ebd6977bcc9c75e0ac36c2a82b761fc51a8aee313c9a9d7ed46`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 542.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1eaa20d143da83073976f6cf7ed7deccc3b80e067502e7aa0c4a08ab921a9147`  
-		Last Modified: Sat, 13 Nov 2021 11:13:38 GMT  
-		Size: 1.0 KB (1017 bytes)  
+	-	`sha256:b9e37a1bae185ca8552a00efd7984a74bc595d0dac82ab81e945615f5a0b29af`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 1.0 KB (1018 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:47aa80e9f3e814d809569ac62843a611cd58228798fd5570cc7194807c4cb77c`  
-		Last Modified: Sat, 13 Nov 2021 11:13:37 GMT  
-		Size: 117.0 B  
+	-	`sha256:b81c4e38c2d1b6603791a26f4dad582d554c306fb4c8c4218e0d537da3b8af6a`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63428bb134c49eb3606edbf2b1a924cc2935e38a7d5c64576432728c2fcbacaa`  
-		Last Modified: Sat, 13 Nov 2021 11:14:52 GMT  
-		Size: 6.7 MB (6740165 bytes)  
+	-	`sha256:77d06f8877e01ae57a21f32e8cdd5b66ffc3fdf70cfb5c8036a429db1ed15e12`  
+		Last Modified: Thu, 18 Nov 2021 09:20:04 GMT  
+		Size: 6.7 MB (6740174 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:20.10-windowsservercore`
@@ -1964,56 +1964,630 @@ RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -U
 ## `docker:20.10.11`
 
 ```console
-$ docker pull docker@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+$ docker pull docker@sha256:faefbb8d0cfb4a4ed92ed54c6c291213130581f550f197c7972856a9ea20f01b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 0
+-	Platforms: 1
+	-	linux; arm64 variant v8
+
+### `docker:20.10.11` - linux; arm64 variant v8
+
+```console
+$ docker pull docker@sha256:8aef5b543363230546c03371e8b3c857285ffdad566b676c3657cf64fedd9299
+```
+
+-	Docker Version: 20.10.7
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **62.4 MB (62375513 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0836e8a2fd6d55074387335d0a134d329cedce53561a1b6fc6eefe44cf1cf487`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["sh"]`
+
+```dockerfile
+# Fri, 12 Nov 2021 16:39:58 GMT
+ADD file:400c0466b29ccad54e0f6c0acef22542992828678c96693ef1f9f4d0551935d8 in / 
+# Fri, 12 Nov 2021 16:39:58 GMT
+CMD ["/bin/sh"]
+# Sat, 13 Nov 2021 11:12:04 GMT
+RUN apk add --no-cache 		ca-certificates 		libc6-compat 		openssh-client
+# Sat, 13 Nov 2021 11:12:05 GMT
+RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
+# Thu, 18 Nov 2021 09:17:16 GMT
+ENV DOCKER_VERSION=20.10.11
+# Thu, 18 Nov 2021 09:17:22 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-20.10.11.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-20.10.11.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-20.10.11.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-20.10.11.tgz'; 			;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O docker.tgz "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		dockerd --version; 	docker --version
+# Thu, 18 Nov 2021 09:17:24 GMT
+COPY file:abb137d24130e7fa2bdd38694af607361ecb688521e60965681e49460964a204 in /usr/local/bin/modprobe 
+# Thu, 18 Nov 2021 09:17:25 GMT
+COPY file:5b18768029dab8174c9d5957bb39560bde5ef6cba50fbbca222731a0059b449b in /usr/local/bin/ 
+# Thu, 18 Nov 2021 09:17:25 GMT
+ENV DOCKER_TLS_CERTDIR=/certs
+# Thu, 18 Nov 2021 09:17:26 GMT
+RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client
+# Thu, 18 Nov 2021 09:17:27 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Thu, 18 Nov 2021 09:17:28 GMT
+CMD ["sh"]
+```
+
+-	Layers:
+	-	`sha256:be307f383ecc62b27a29b599c3fc9d3129693a798e7fcce614f09174cfe2d354`  
+		Last Modified: Fri, 12 Nov 2021 16:40:59 GMT  
+		Size: 2.7 MB (2717700 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:233f664f6e365c4259a38e7cfe3c14e234ab45f15847cc874a88b510f66a132f`  
+		Last Modified: Sat, 13 Nov 2021 11:13:40 GMT  
+		Size: 1.9 MB (1909969 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:501a1c7cbdd3e377ff292e68f9ced99315b84c85398591633343352948bbc291`  
+		Last Modified: Sat, 13 Nov 2021 11:13:37 GMT  
+		Size: 154.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7b50fed93df89351d596ab08fab482a174aa37a86d61cdeef150162665a67a80`  
+		Last Modified: Thu, 18 Nov 2021 09:18:59 GMT  
+		Size: 57.7 MB (57746015 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f21638a3c07c5ebd6977bcc9c75e0ac36c2a82b761fc51a8aee313c9a9d7ed46`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 542.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b9e37a1bae185ca8552a00efd7984a74bc595d0dac82ab81e945615f5a0b29af`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 1.0 KB (1018 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b81c4e38c2d1b6603791a26f4dad582d554c306fb4c8c4218e0d537da3b8af6a`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 115.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:20.10.11-alpine3.14`
 
 ```console
-$ docker pull docker@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+$ docker pull docker@sha256:faefbb8d0cfb4a4ed92ed54c6c291213130581f550f197c7972856a9ea20f01b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 0
+-	Platforms: 1
+	-	linux; arm64 variant v8
+
+### `docker:20.10.11-alpine3.14` - linux; arm64 variant v8
+
+```console
+$ docker pull docker@sha256:8aef5b543363230546c03371e8b3c857285ffdad566b676c3657cf64fedd9299
+```
+
+-	Docker Version: 20.10.7
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **62.4 MB (62375513 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0836e8a2fd6d55074387335d0a134d329cedce53561a1b6fc6eefe44cf1cf487`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["sh"]`
+
+```dockerfile
+# Fri, 12 Nov 2021 16:39:58 GMT
+ADD file:400c0466b29ccad54e0f6c0acef22542992828678c96693ef1f9f4d0551935d8 in / 
+# Fri, 12 Nov 2021 16:39:58 GMT
+CMD ["/bin/sh"]
+# Sat, 13 Nov 2021 11:12:04 GMT
+RUN apk add --no-cache 		ca-certificates 		libc6-compat 		openssh-client
+# Sat, 13 Nov 2021 11:12:05 GMT
+RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
+# Thu, 18 Nov 2021 09:17:16 GMT
+ENV DOCKER_VERSION=20.10.11
+# Thu, 18 Nov 2021 09:17:22 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-20.10.11.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-20.10.11.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-20.10.11.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-20.10.11.tgz'; 			;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O docker.tgz "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		dockerd --version; 	docker --version
+# Thu, 18 Nov 2021 09:17:24 GMT
+COPY file:abb137d24130e7fa2bdd38694af607361ecb688521e60965681e49460964a204 in /usr/local/bin/modprobe 
+# Thu, 18 Nov 2021 09:17:25 GMT
+COPY file:5b18768029dab8174c9d5957bb39560bde5ef6cba50fbbca222731a0059b449b in /usr/local/bin/ 
+# Thu, 18 Nov 2021 09:17:25 GMT
+ENV DOCKER_TLS_CERTDIR=/certs
+# Thu, 18 Nov 2021 09:17:26 GMT
+RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client
+# Thu, 18 Nov 2021 09:17:27 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Thu, 18 Nov 2021 09:17:28 GMT
+CMD ["sh"]
+```
+
+-	Layers:
+	-	`sha256:be307f383ecc62b27a29b599c3fc9d3129693a798e7fcce614f09174cfe2d354`  
+		Last Modified: Fri, 12 Nov 2021 16:40:59 GMT  
+		Size: 2.7 MB (2717700 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:233f664f6e365c4259a38e7cfe3c14e234ab45f15847cc874a88b510f66a132f`  
+		Last Modified: Sat, 13 Nov 2021 11:13:40 GMT  
+		Size: 1.9 MB (1909969 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:501a1c7cbdd3e377ff292e68f9ced99315b84c85398591633343352948bbc291`  
+		Last Modified: Sat, 13 Nov 2021 11:13:37 GMT  
+		Size: 154.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7b50fed93df89351d596ab08fab482a174aa37a86d61cdeef150162665a67a80`  
+		Last Modified: Thu, 18 Nov 2021 09:18:59 GMT  
+		Size: 57.7 MB (57746015 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f21638a3c07c5ebd6977bcc9c75e0ac36c2a82b761fc51a8aee313c9a9d7ed46`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 542.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b9e37a1bae185ca8552a00efd7984a74bc595d0dac82ab81e945615f5a0b29af`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 1.0 KB (1018 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b81c4e38c2d1b6603791a26f4dad582d554c306fb4c8c4218e0d537da3b8af6a`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 115.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:20.10.11-dind`
 
 ```console
-$ docker pull docker@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+$ docker pull docker@sha256:c6e89d75eb16a93a39bc91d220ed3f36357a9f8d5464f6677d23575ef13ef4b4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 0
+-	Platforms: 1
+	-	linux; arm64 variant v8
+
+### `docker:20.10.11-dind` - linux; arm64 variant v8
+
+```console
+$ docker pull docker@sha256:6b91496cd8473f8f0412be846318dcf073a41e5c02fea27a75a657376c55e83b
+```
+
+-	Docker Version: 20.10.7
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **68.8 MB (68798719 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:9280bbaf2b20c01dbbcd50930cb5862adc44e531d88f54d157358d16f7de8a5f`
+-	Entrypoint: `["dockerd-entrypoint.sh"]`
+-	Default Command: `[]`
+
+```dockerfile
+# Fri, 12 Nov 2021 16:39:58 GMT
+ADD file:400c0466b29ccad54e0f6c0acef22542992828678c96693ef1f9f4d0551935d8 in / 
+# Fri, 12 Nov 2021 16:39:58 GMT
+CMD ["/bin/sh"]
+# Sat, 13 Nov 2021 11:12:04 GMT
+RUN apk add --no-cache 		ca-certificates 		libc6-compat 		openssh-client
+# Sat, 13 Nov 2021 11:12:05 GMT
+RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
+# Thu, 18 Nov 2021 09:17:16 GMT
+ENV DOCKER_VERSION=20.10.11
+# Thu, 18 Nov 2021 09:17:22 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-20.10.11.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-20.10.11.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-20.10.11.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-20.10.11.tgz'; 			;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O docker.tgz "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		dockerd --version; 	docker --version
+# Thu, 18 Nov 2021 09:17:24 GMT
+COPY file:abb137d24130e7fa2bdd38694af607361ecb688521e60965681e49460964a204 in /usr/local/bin/modprobe 
+# Thu, 18 Nov 2021 09:17:25 GMT
+COPY file:5b18768029dab8174c9d5957bb39560bde5ef6cba50fbbca222731a0059b449b in /usr/local/bin/ 
+# Thu, 18 Nov 2021 09:17:25 GMT
+ENV DOCKER_TLS_CERTDIR=/certs
+# Thu, 18 Nov 2021 09:17:26 GMT
+RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client
+# Thu, 18 Nov 2021 09:17:27 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Thu, 18 Nov 2021 09:17:28 GMT
+CMD ["sh"]
+# Thu, 18 Nov 2021 09:17:38 GMT
+RUN set -eux; 	apk add --no-cache 		btrfs-progs 		e2fsprogs 		e2fsprogs-extra 		ip6tables 		iptables 		openssl 		shadow-uidmap 		xfsprogs 		xz 		pigz 	; 	if zfs="$(apk info --no-cache --quiet zfs)" && [ -n "$zfs" ]; then 		apk add --no-cache zfs; 	fi
+# Thu, 18 Nov 2021 09:17:39 GMT
+RUN set -eux; 	addgroup -S dockremap; 	adduser -S -G dockremap dockremap; 	echo 'dockremap:165536:65536' >> /etc/subuid; 	echo 'dockremap:165536:65536' >> /etc/subgid
+# Thu, 18 Nov 2021 09:17:40 GMT
+ENV DIND_COMMIT=42b1175eda071c0e9121e1d64345928384a93df1
+# Thu, 18 Nov 2021 09:17:41 GMT
+RUN set -eux; 	wget -O /usr/local/bin/dind "https://raw.githubusercontent.com/docker/docker/${DIND_COMMIT}/hack/dind"; 	chmod +x /usr/local/bin/dind
+# Thu, 18 Nov 2021 09:17:43 GMT
+COPY file:89f2c7c1492b0cb067fc6be48e1edf3f04c0b6063371da4a48cd4ca35aa098d7 in /usr/local/bin/ 
+# Thu, 18 Nov 2021 09:17:43 GMT
+VOLUME [/var/lib/docker]
+# Thu, 18 Nov 2021 09:17:44 GMT
+EXPOSE 2375 2376
+# Thu, 18 Nov 2021 09:17:45 GMT
+ENTRYPOINT ["dockerd-entrypoint.sh"]
+# Thu, 18 Nov 2021 09:17:46 GMT
+CMD []
+```
+
+-	Layers:
+	-	`sha256:be307f383ecc62b27a29b599c3fc9d3129693a798e7fcce614f09174cfe2d354`  
+		Last Modified: Fri, 12 Nov 2021 16:40:59 GMT  
+		Size: 2.7 MB (2717700 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:233f664f6e365c4259a38e7cfe3c14e234ab45f15847cc874a88b510f66a132f`  
+		Last Modified: Sat, 13 Nov 2021 11:13:40 GMT  
+		Size: 1.9 MB (1909969 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:501a1c7cbdd3e377ff292e68f9ced99315b84c85398591633343352948bbc291`  
+		Last Modified: Sat, 13 Nov 2021 11:13:37 GMT  
+		Size: 154.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7b50fed93df89351d596ab08fab482a174aa37a86d61cdeef150162665a67a80`  
+		Last Modified: Thu, 18 Nov 2021 09:18:59 GMT  
+		Size: 57.7 MB (57746015 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f21638a3c07c5ebd6977bcc9c75e0ac36c2a82b761fc51a8aee313c9a9d7ed46`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 542.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b9e37a1bae185ca8552a00efd7984a74bc595d0dac82ab81e945615f5a0b29af`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 1.0 KB (1018 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b81c4e38c2d1b6603791a26f4dad582d554c306fb4c8c4218e0d537da3b8af6a`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 115.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:dc29a86f7ed1b15ec5c146abf64a41609779eb5b0e2a668d274b1b28c14c37e3`  
+		Last Modified: Thu, 18 Nov 2021 09:19:20 GMT  
+		Size: 6.4 MB (6418345 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fce285f2fd3dbcbe5e58749e817ef3a3e60fa1dbf82bc51eaff0f20f8e151d3f`  
+		Last Modified: Thu, 18 Nov 2021 09:19:18 GMT  
+		Size: 1.3 KB (1291 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:aeabdc4aba67b4850e7e5c118e6409d59a161d11f5be536341a4e9f40ed017bf`  
+		Last Modified: Thu, 18 Nov 2021 09:19:18 GMT  
+		Size: 956.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9dd2d42122e3f199551259bf3db06d2c446c725eb3ae3239f2692f3fa57804b5`  
+		Last Modified: Thu, 18 Nov 2021 09:19:18 GMT  
+		Size: 2.6 KB (2614 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:20.10.11-dind-alpine3.14`
 
 ```console
-$ docker pull docker@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+$ docker pull docker@sha256:c6e89d75eb16a93a39bc91d220ed3f36357a9f8d5464f6677d23575ef13ef4b4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 0
+-	Platforms: 1
+	-	linux; arm64 variant v8
+
+### `docker:20.10.11-dind-alpine3.14` - linux; arm64 variant v8
+
+```console
+$ docker pull docker@sha256:6b91496cd8473f8f0412be846318dcf073a41e5c02fea27a75a657376c55e83b
+```
+
+-	Docker Version: 20.10.7
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **68.8 MB (68798719 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:9280bbaf2b20c01dbbcd50930cb5862adc44e531d88f54d157358d16f7de8a5f`
+-	Entrypoint: `["dockerd-entrypoint.sh"]`
+-	Default Command: `[]`
+
+```dockerfile
+# Fri, 12 Nov 2021 16:39:58 GMT
+ADD file:400c0466b29ccad54e0f6c0acef22542992828678c96693ef1f9f4d0551935d8 in / 
+# Fri, 12 Nov 2021 16:39:58 GMT
+CMD ["/bin/sh"]
+# Sat, 13 Nov 2021 11:12:04 GMT
+RUN apk add --no-cache 		ca-certificates 		libc6-compat 		openssh-client
+# Sat, 13 Nov 2021 11:12:05 GMT
+RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
+# Thu, 18 Nov 2021 09:17:16 GMT
+ENV DOCKER_VERSION=20.10.11
+# Thu, 18 Nov 2021 09:17:22 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-20.10.11.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-20.10.11.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-20.10.11.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-20.10.11.tgz'; 			;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O docker.tgz "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		dockerd --version; 	docker --version
+# Thu, 18 Nov 2021 09:17:24 GMT
+COPY file:abb137d24130e7fa2bdd38694af607361ecb688521e60965681e49460964a204 in /usr/local/bin/modprobe 
+# Thu, 18 Nov 2021 09:17:25 GMT
+COPY file:5b18768029dab8174c9d5957bb39560bde5ef6cba50fbbca222731a0059b449b in /usr/local/bin/ 
+# Thu, 18 Nov 2021 09:17:25 GMT
+ENV DOCKER_TLS_CERTDIR=/certs
+# Thu, 18 Nov 2021 09:17:26 GMT
+RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client
+# Thu, 18 Nov 2021 09:17:27 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Thu, 18 Nov 2021 09:17:28 GMT
+CMD ["sh"]
+# Thu, 18 Nov 2021 09:17:38 GMT
+RUN set -eux; 	apk add --no-cache 		btrfs-progs 		e2fsprogs 		e2fsprogs-extra 		ip6tables 		iptables 		openssl 		shadow-uidmap 		xfsprogs 		xz 		pigz 	; 	if zfs="$(apk info --no-cache --quiet zfs)" && [ -n "$zfs" ]; then 		apk add --no-cache zfs; 	fi
+# Thu, 18 Nov 2021 09:17:39 GMT
+RUN set -eux; 	addgroup -S dockremap; 	adduser -S -G dockremap dockremap; 	echo 'dockremap:165536:65536' >> /etc/subuid; 	echo 'dockremap:165536:65536' >> /etc/subgid
+# Thu, 18 Nov 2021 09:17:40 GMT
+ENV DIND_COMMIT=42b1175eda071c0e9121e1d64345928384a93df1
+# Thu, 18 Nov 2021 09:17:41 GMT
+RUN set -eux; 	wget -O /usr/local/bin/dind "https://raw.githubusercontent.com/docker/docker/${DIND_COMMIT}/hack/dind"; 	chmod +x /usr/local/bin/dind
+# Thu, 18 Nov 2021 09:17:43 GMT
+COPY file:89f2c7c1492b0cb067fc6be48e1edf3f04c0b6063371da4a48cd4ca35aa098d7 in /usr/local/bin/ 
+# Thu, 18 Nov 2021 09:17:43 GMT
+VOLUME [/var/lib/docker]
+# Thu, 18 Nov 2021 09:17:44 GMT
+EXPOSE 2375 2376
+# Thu, 18 Nov 2021 09:17:45 GMT
+ENTRYPOINT ["dockerd-entrypoint.sh"]
+# Thu, 18 Nov 2021 09:17:46 GMT
+CMD []
+```
+
+-	Layers:
+	-	`sha256:be307f383ecc62b27a29b599c3fc9d3129693a798e7fcce614f09174cfe2d354`  
+		Last Modified: Fri, 12 Nov 2021 16:40:59 GMT  
+		Size: 2.7 MB (2717700 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:233f664f6e365c4259a38e7cfe3c14e234ab45f15847cc874a88b510f66a132f`  
+		Last Modified: Sat, 13 Nov 2021 11:13:40 GMT  
+		Size: 1.9 MB (1909969 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:501a1c7cbdd3e377ff292e68f9ced99315b84c85398591633343352948bbc291`  
+		Last Modified: Sat, 13 Nov 2021 11:13:37 GMT  
+		Size: 154.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7b50fed93df89351d596ab08fab482a174aa37a86d61cdeef150162665a67a80`  
+		Last Modified: Thu, 18 Nov 2021 09:18:59 GMT  
+		Size: 57.7 MB (57746015 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f21638a3c07c5ebd6977bcc9c75e0ac36c2a82b761fc51a8aee313c9a9d7ed46`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 542.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b9e37a1bae185ca8552a00efd7984a74bc595d0dac82ab81e945615f5a0b29af`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 1.0 KB (1018 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b81c4e38c2d1b6603791a26f4dad582d554c306fb4c8c4218e0d537da3b8af6a`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 115.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:dc29a86f7ed1b15ec5c146abf64a41609779eb5b0e2a668d274b1b28c14c37e3`  
+		Last Modified: Thu, 18 Nov 2021 09:19:20 GMT  
+		Size: 6.4 MB (6418345 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fce285f2fd3dbcbe5e58749e817ef3a3e60fa1dbf82bc51eaff0f20f8e151d3f`  
+		Last Modified: Thu, 18 Nov 2021 09:19:18 GMT  
+		Size: 1.3 KB (1291 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:aeabdc4aba67b4850e7e5c118e6409d59a161d11f5be536341a4e9f40ed017bf`  
+		Last Modified: Thu, 18 Nov 2021 09:19:18 GMT  
+		Size: 956.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9dd2d42122e3f199551259bf3db06d2c446c725eb3ae3239f2692f3fa57804b5`  
+		Last Modified: Thu, 18 Nov 2021 09:19:18 GMT  
+		Size: 2.6 KB (2614 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:20.10.11-dind-rootless`
 
 ```console
-$ docker pull docker@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+$ docker pull docker@sha256:6338fe2468b0bb2a07bd3d8ce5978354fe0a74b23eb723af7ea55260f5601f56
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 0
+-	Platforms: 1
+	-	linux; arm64 variant v8
+
+### `docker:20.10.11-dind-rootless` - linux; arm64 variant v8
+
+```console
+$ docker pull docker@sha256:2441b89586372dc59c8fce28fc3fa0a6141193ad158d18482597187a7e1c9eeb
+```
+
+-	Docker Version: 20.10.7
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **91.1 MB (91070455 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0c509ba52a7374da993e6cf01a7147518857077192831cf839078772fa27881b`
+-	Entrypoint: `["dockerd-entrypoint.sh"]`
+-	Default Command: `[]`
+
+```dockerfile
+# Fri, 12 Nov 2021 16:39:58 GMT
+ADD file:400c0466b29ccad54e0f6c0acef22542992828678c96693ef1f9f4d0551935d8 in / 
+# Fri, 12 Nov 2021 16:39:58 GMT
+CMD ["/bin/sh"]
+# Sat, 13 Nov 2021 11:12:04 GMT
+RUN apk add --no-cache 		ca-certificates 		libc6-compat 		openssh-client
+# Sat, 13 Nov 2021 11:12:05 GMT
+RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
+# Thu, 18 Nov 2021 09:17:16 GMT
+ENV DOCKER_VERSION=20.10.11
+# Thu, 18 Nov 2021 09:17:22 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-20.10.11.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-20.10.11.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-20.10.11.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-20.10.11.tgz'; 			;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O docker.tgz "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		dockerd --version; 	docker --version
+# Thu, 18 Nov 2021 09:17:24 GMT
+COPY file:abb137d24130e7fa2bdd38694af607361ecb688521e60965681e49460964a204 in /usr/local/bin/modprobe 
+# Thu, 18 Nov 2021 09:17:25 GMT
+COPY file:5b18768029dab8174c9d5957bb39560bde5ef6cba50fbbca222731a0059b449b in /usr/local/bin/ 
+# Thu, 18 Nov 2021 09:17:25 GMT
+ENV DOCKER_TLS_CERTDIR=/certs
+# Thu, 18 Nov 2021 09:17:26 GMT
+RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client
+# Thu, 18 Nov 2021 09:17:27 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Thu, 18 Nov 2021 09:17:28 GMT
+CMD ["sh"]
+# Thu, 18 Nov 2021 09:17:38 GMT
+RUN set -eux; 	apk add --no-cache 		btrfs-progs 		e2fsprogs 		e2fsprogs-extra 		ip6tables 		iptables 		openssl 		shadow-uidmap 		xfsprogs 		xz 		pigz 	; 	if zfs="$(apk info --no-cache --quiet zfs)" && [ -n "$zfs" ]; then 		apk add --no-cache zfs; 	fi
+# Thu, 18 Nov 2021 09:17:39 GMT
+RUN set -eux; 	addgroup -S dockremap; 	adduser -S -G dockremap dockremap; 	echo 'dockremap:165536:65536' >> /etc/subuid; 	echo 'dockremap:165536:65536' >> /etc/subgid
+# Thu, 18 Nov 2021 09:17:40 GMT
+ENV DIND_COMMIT=42b1175eda071c0e9121e1d64345928384a93df1
+# Thu, 18 Nov 2021 09:17:41 GMT
+RUN set -eux; 	wget -O /usr/local/bin/dind "https://raw.githubusercontent.com/docker/docker/${DIND_COMMIT}/hack/dind"; 	chmod +x /usr/local/bin/dind
+# Thu, 18 Nov 2021 09:17:43 GMT
+COPY file:89f2c7c1492b0cb067fc6be48e1edf3f04c0b6063371da4a48cd4ca35aa098d7 in /usr/local/bin/ 
+# Thu, 18 Nov 2021 09:17:43 GMT
+VOLUME [/var/lib/docker]
+# Thu, 18 Nov 2021 09:17:44 GMT
+EXPOSE 2375 2376
+# Thu, 18 Nov 2021 09:17:45 GMT
+ENTRYPOINT ["dockerd-entrypoint.sh"]
+# Thu, 18 Nov 2021 09:17:46 GMT
+CMD []
+# Thu, 18 Nov 2021 09:17:54 GMT
+RUN apk add --no-cache iproute2
+# Thu, 18 Nov 2021 09:17:55 GMT
+RUN mkdir /run/user && chmod 1777 /run/user
+# Thu, 18 Nov 2021 09:17:56 GMT
+RUN set -eux; 	adduser -h /home/rootless -g 'Rootless' -D -u 1000 rootless; 	echo 'rootless:100000:65536' >> /etc/subuid; 	echo 'rootless:100000:65536' >> /etc/subgid
+# Thu, 18 Nov 2021 09:17:59 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-rootless-extras-20.10.11.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-rootless-extras-20.10.11.tgz'; 			;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O rootless.tgz "$url"; 		tar --extract 		--file rootless.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		'docker-rootless-extras/rootlesskit' 		'docker-rootless-extras/rootlesskit-docker-proxy' 		'docker-rootless-extras/vpnkit' 	; 	rm rootless.tgz; 		rootlesskit --version; 	vpnkit --version
+# Thu, 18 Nov 2021 09:18:00 GMT
+RUN set -eux; 	mkdir -p /home/rootless/.local/share/docker; 	chown -R rootless:rootless /home/rootless/.local/share/docker
+# Thu, 18 Nov 2021 09:18:01 GMT
+VOLUME [/home/rootless/.local/share/docker]
+# Thu, 18 Nov 2021 09:18:02 GMT
+USER rootless
+```
+
+-	Layers:
+	-	`sha256:be307f383ecc62b27a29b599c3fc9d3129693a798e7fcce614f09174cfe2d354`  
+		Last Modified: Fri, 12 Nov 2021 16:40:59 GMT  
+		Size: 2.7 MB (2717700 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:233f664f6e365c4259a38e7cfe3c14e234ab45f15847cc874a88b510f66a132f`  
+		Last Modified: Sat, 13 Nov 2021 11:13:40 GMT  
+		Size: 1.9 MB (1909969 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:501a1c7cbdd3e377ff292e68f9ced99315b84c85398591633343352948bbc291`  
+		Last Modified: Sat, 13 Nov 2021 11:13:37 GMT  
+		Size: 154.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7b50fed93df89351d596ab08fab482a174aa37a86d61cdeef150162665a67a80`  
+		Last Modified: Thu, 18 Nov 2021 09:18:59 GMT  
+		Size: 57.7 MB (57746015 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f21638a3c07c5ebd6977bcc9c75e0ac36c2a82b761fc51a8aee313c9a9d7ed46`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 542.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b9e37a1bae185ca8552a00efd7984a74bc595d0dac82ab81e945615f5a0b29af`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 1.0 KB (1018 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b81c4e38c2d1b6603791a26f4dad582d554c306fb4c8c4218e0d537da3b8af6a`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 115.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:dc29a86f7ed1b15ec5c146abf64a41609779eb5b0e2a668d274b1b28c14c37e3`  
+		Last Modified: Thu, 18 Nov 2021 09:19:20 GMT  
+		Size: 6.4 MB (6418345 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fce285f2fd3dbcbe5e58749e817ef3a3e60fa1dbf82bc51eaff0f20f8e151d3f`  
+		Last Modified: Thu, 18 Nov 2021 09:19:18 GMT  
+		Size: 1.3 KB (1291 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:aeabdc4aba67b4850e7e5c118e6409d59a161d11f5be536341a4e9f40ed017bf`  
+		Last Modified: Thu, 18 Nov 2021 09:19:18 GMT  
+		Size: 956.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9dd2d42122e3f199551259bf3db06d2c446c725eb3ae3239f2692f3fa57804b5`  
+		Last Modified: Thu, 18 Nov 2021 09:19:18 GMT  
+		Size: 2.6 KB (2614 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:230963f6db0e75d3a58bc46d5b33ea4f67e6b1f0300e99ba12497c89f68ce855`  
+		Last Modified: Thu, 18 Nov 2021 09:19:41 GMT  
+		Size: 1.2 MB (1168585 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f66cc595973e50f8d3e25c628464cfa45436824aab478bda61c9ac4232d822c3`  
+		Last Modified: Thu, 18 Nov 2021 09:19:40 GMT  
+		Size: 115.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:55af54131c4a2bf83efebe4e4fec2d50bd4c99ffbca5aa5ccfa29c167f4c16ce`  
+		Last Modified: Thu, 18 Nov 2021 09:19:40 GMT  
+		Size: 1.3 KB (1319 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:48cab39e5c6b0a896c570c0218f29e0600936018957c487e7b439c9ecf14ad8e`  
+		Last Modified: Thu, 18 Nov 2021 09:19:44 GMT  
+		Size: 21.1 MB (21101528 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b365691e2dffd5c75fa3b86bd4ccd1b11a4beae986f511ce5400a6a3d69b550c`  
+		Last Modified: Thu, 18 Nov 2021 09:19:40 GMT  
+		Size: 189.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:20.10.11-git`
 
 ```console
-$ docker pull docker@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+$ docker pull docker@sha256:e02adfc0d0967739dfc66565dcbe237b26773a655f9779f9d4f88b172a40e5cd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 0
+-	Platforms: 1
+	-	linux; arm64 variant v8
+
+### `docker:20.10.11-git` - linux; arm64 variant v8
+
+```console
+$ docker pull docker@sha256:abd4f25a749ebaac21635348b5e8db17d1d7cc5bcfa3b437e730b4178177cd2f
+```
+
+-	Docker Version: 20.10.7
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **69.1 MB (69115687 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0eb4264b475ad1b401f8776fd4d94293173ddd396cf1a88a5fb4372947b3ef3f`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["sh"]`
+
+```dockerfile
+# Fri, 12 Nov 2021 16:39:58 GMT
+ADD file:400c0466b29ccad54e0f6c0acef22542992828678c96693ef1f9f4d0551935d8 in / 
+# Fri, 12 Nov 2021 16:39:58 GMT
+CMD ["/bin/sh"]
+# Sat, 13 Nov 2021 11:12:04 GMT
+RUN apk add --no-cache 		ca-certificates 		libc6-compat 		openssh-client
+# Sat, 13 Nov 2021 11:12:05 GMT
+RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
+# Thu, 18 Nov 2021 09:17:16 GMT
+ENV DOCKER_VERSION=20.10.11
+# Thu, 18 Nov 2021 09:17:22 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-20.10.11.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-20.10.11.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-20.10.11.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-20.10.11.tgz'; 			;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O docker.tgz "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		dockerd --version; 	docker --version
+# Thu, 18 Nov 2021 09:17:24 GMT
+COPY file:abb137d24130e7fa2bdd38694af607361ecb688521e60965681e49460964a204 in /usr/local/bin/modprobe 
+# Thu, 18 Nov 2021 09:17:25 GMT
+COPY file:5b18768029dab8174c9d5957bb39560bde5ef6cba50fbbca222731a0059b449b in /usr/local/bin/ 
+# Thu, 18 Nov 2021 09:17:25 GMT
+ENV DOCKER_TLS_CERTDIR=/certs
+# Thu, 18 Nov 2021 09:17:26 GMT
+RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client
+# Thu, 18 Nov 2021 09:17:27 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Thu, 18 Nov 2021 09:17:28 GMT
+CMD ["sh"]
+# Thu, 18 Nov 2021 09:18:09 GMT
+RUN apk add --no-cache git
+```
+
+-	Layers:
+	-	`sha256:be307f383ecc62b27a29b599c3fc9d3129693a798e7fcce614f09174cfe2d354`  
+		Last Modified: Fri, 12 Nov 2021 16:40:59 GMT  
+		Size: 2.7 MB (2717700 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:233f664f6e365c4259a38e7cfe3c14e234ab45f15847cc874a88b510f66a132f`  
+		Last Modified: Sat, 13 Nov 2021 11:13:40 GMT  
+		Size: 1.9 MB (1909969 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:501a1c7cbdd3e377ff292e68f9ced99315b84c85398591633343352948bbc291`  
+		Last Modified: Sat, 13 Nov 2021 11:13:37 GMT  
+		Size: 154.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7b50fed93df89351d596ab08fab482a174aa37a86d61cdeef150162665a67a80`  
+		Last Modified: Thu, 18 Nov 2021 09:18:59 GMT  
+		Size: 57.7 MB (57746015 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f21638a3c07c5ebd6977bcc9c75e0ac36c2a82b761fc51a8aee313c9a9d7ed46`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 542.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b9e37a1bae185ca8552a00efd7984a74bc595d0dac82ab81e945615f5a0b29af`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 1.0 KB (1018 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b81c4e38c2d1b6603791a26f4dad582d554c306fb4c8c4218e0d537da3b8af6a`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 115.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:77d06f8877e01ae57a21f32e8cdd5b66ffc3fdf70cfb5c8036a429db1ed15e12`  
+		Last Modified: Thu, 18 Nov 2021 09:20:04 GMT  
+		Size: 6.7 MB (6740174 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:20.10.11-windowsservercore`
 
@@ -2156,7 +2730,7 @@ RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -U
 ## `docker:dind`
 
 ```console
-$ docker pull docker@sha256:24bbc8400edcc162a7489ceedc3d580897b5756a29fa503e584d00016eabf975
+$ docker pull docker@sha256:ef4fb6a1255345d59ead278f6bf74be666e0e47cb075c237682bb266c0bfb3a2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2272,14 +2846,14 @@ CMD []
 ### `docker:dind` - linux; arm64 variant v8
 
 ```console
-$ docker pull docker@sha256:4b5737bdf555bcae5de92046c971d2c1e8b4c60c1f927a6ebec02dac0f3fc2cb
+$ docker pull docker@sha256:6b91496cd8473f8f0412be846318dcf073a41e5c02fea27a75a657376c55e83b
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **68.8 MB (68783733 bytes)**  
+-	Total Size: **68.8 MB (68798719 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:60ec537fa5285bebadb8112cf517ddb665ecc782b17549e24b5268c424b37e2e`
+-	Image ID: `sha256:9280bbaf2b20c01dbbcd50930cb5862adc44e531d88f54d157358d16f7de8a5f`
 -	Entrypoint: `["dockerd-entrypoint.sh"]`
 -	Default Command: `[]`
 
@@ -2292,39 +2866,39 @@ CMD ["/bin/sh"]
 RUN apk add --no-cache 		ca-certificates 		libc6-compat 		openssh-client
 # Sat, 13 Nov 2021 11:12:05 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Sat, 13 Nov 2021 11:12:06 GMT
-ENV DOCKER_VERSION=20.10.10
-# Sat, 13 Nov 2021 11:12:12 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-20.10.10.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-20.10.10.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-20.10.10.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-20.10.10.tgz'; 			;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O docker.tgz "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		dockerd --version; 	docker --version
-# Sat, 13 Nov 2021 11:12:13 GMT
+# Thu, 18 Nov 2021 09:17:16 GMT
+ENV DOCKER_VERSION=20.10.11
+# Thu, 18 Nov 2021 09:17:22 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-20.10.11.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-20.10.11.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-20.10.11.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-20.10.11.tgz'; 			;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O docker.tgz "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		dockerd --version; 	docker --version
+# Thu, 18 Nov 2021 09:17:24 GMT
 COPY file:abb137d24130e7fa2bdd38694af607361ecb688521e60965681e49460964a204 in /usr/local/bin/modprobe 
-# Sat, 13 Nov 2021 11:12:14 GMT
+# Thu, 18 Nov 2021 09:17:25 GMT
 COPY file:5b18768029dab8174c9d5957bb39560bde5ef6cba50fbbca222731a0059b449b in /usr/local/bin/ 
-# Sat, 13 Nov 2021 11:12:14 GMT
+# Thu, 18 Nov 2021 09:17:25 GMT
 ENV DOCKER_TLS_CERTDIR=/certs
-# Sat, 13 Nov 2021 11:12:15 GMT
+# Thu, 18 Nov 2021 09:17:26 GMT
 RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client
-# Sat, 13 Nov 2021 11:12:16 GMT
+# Thu, 18 Nov 2021 09:17:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 13 Nov 2021 11:12:17 GMT
+# Thu, 18 Nov 2021 09:17:28 GMT
 CMD ["sh"]
-# Sat, 13 Nov 2021 11:12:26 GMT
+# Thu, 18 Nov 2021 09:17:38 GMT
 RUN set -eux; 	apk add --no-cache 		btrfs-progs 		e2fsprogs 		e2fsprogs-extra 		ip6tables 		iptables 		openssl 		shadow-uidmap 		xfsprogs 		xz 		pigz 	; 	if zfs="$(apk info --no-cache --quiet zfs)" && [ -n "$zfs" ]; then 		apk add --no-cache zfs; 	fi
-# Sat, 13 Nov 2021 11:12:27 GMT
+# Thu, 18 Nov 2021 09:17:39 GMT
 RUN set -eux; 	addgroup -S dockremap; 	adduser -S -G dockremap dockremap; 	echo 'dockremap:165536:65536' >> /etc/subuid; 	echo 'dockremap:165536:65536' >> /etc/subgid
-# Sat, 13 Nov 2021 11:12:28 GMT
+# Thu, 18 Nov 2021 09:17:40 GMT
 ENV DIND_COMMIT=42b1175eda071c0e9121e1d64345928384a93df1
-# Sat, 13 Nov 2021 11:12:29 GMT
+# Thu, 18 Nov 2021 09:17:41 GMT
 RUN set -eux; 	wget -O /usr/local/bin/dind "https://raw.githubusercontent.com/docker/docker/${DIND_COMMIT}/hack/dind"; 	chmod +x /usr/local/bin/dind
-# Sat, 13 Nov 2021 11:12:31 GMT
+# Thu, 18 Nov 2021 09:17:43 GMT
 COPY file:89f2c7c1492b0cb067fc6be48e1edf3f04c0b6063371da4a48cd4ca35aa098d7 in /usr/local/bin/ 
-# Sat, 13 Nov 2021 11:12:31 GMT
+# Thu, 18 Nov 2021 09:17:43 GMT
 VOLUME [/var/lib/docker]
-# Sat, 13 Nov 2021 11:12:32 GMT
+# Thu, 18 Nov 2021 09:17:44 GMT
 EXPOSE 2375 2376
-# Sat, 13 Nov 2021 11:12:33 GMT
+# Thu, 18 Nov 2021 09:17:45 GMT
 ENTRYPOINT ["dockerd-entrypoint.sh"]
-# Sat, 13 Nov 2021 11:12:34 GMT
+# Thu, 18 Nov 2021 09:17:46 GMT
 CMD []
 ```
 
@@ -2341,43 +2915,43 @@ CMD []
 		Last Modified: Sat, 13 Nov 2021 11:13:37 GMT  
 		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a62d8382e8c3998e6150de13325d0cefc188fd2df3dab4923e604a9ca4c5f18`  
-		Last Modified: Sat, 13 Nov 2021 11:13:47 GMT  
-		Size: 57.7 MB (57730974 bytes)  
+	-	`sha256:7b50fed93df89351d596ab08fab482a174aa37a86d61cdeef150162665a67a80`  
+		Last Modified: Thu, 18 Nov 2021 09:18:59 GMT  
+		Size: 57.7 MB (57746015 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da32b7decf4b345d476b6a4e10a003a86c0bcfde1e98db9baf6cf10943b6bf19`  
-		Last Modified: Sat, 13 Nov 2021 11:13:37 GMT  
-		Size: 544.0 B  
+	-	`sha256:f21638a3c07c5ebd6977bcc9c75e0ac36c2a82b761fc51a8aee313c9a9d7ed46`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 542.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1eaa20d143da83073976f6cf7ed7deccc3b80e067502e7aa0c4a08ab921a9147`  
-		Last Modified: Sat, 13 Nov 2021 11:13:38 GMT  
-		Size: 1.0 KB (1017 bytes)  
+	-	`sha256:b9e37a1bae185ca8552a00efd7984a74bc595d0dac82ab81e945615f5a0b29af`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 1.0 KB (1018 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:47aa80e9f3e814d809569ac62843a611cd58228798fd5570cc7194807c4cb77c`  
-		Last Modified: Sat, 13 Nov 2021 11:13:37 GMT  
-		Size: 117.0 B  
+	-	`sha256:b81c4e38c2d1b6603791a26f4dad582d554c306fb4c8c4218e0d537da3b8af6a`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cdd4eff14edf3baa59a2710743529bd0271876a425be9bf15515edf16d238426`  
-		Last Modified: Sat, 13 Nov 2021 11:14:08 GMT  
-		Size: 6.4 MB (6418396 bytes)  
+	-	`sha256:dc29a86f7ed1b15ec5c146abf64a41609779eb5b0e2a668d274b1b28c14c37e3`  
+		Last Modified: Thu, 18 Nov 2021 09:19:20 GMT  
+		Size: 6.4 MB (6418345 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:29ef05e5793f710405e8cdcaf8bbbe0cb097e2b05cd4c60f296ea5522b5bbabc`  
-		Last Modified: Sat, 13 Nov 2021 11:14:07 GMT  
+	-	`sha256:fce285f2fd3dbcbe5e58749e817ef3a3e60fa1dbf82bc51eaff0f20f8e151d3f`  
+		Last Modified: Thu, 18 Nov 2021 09:19:18 GMT  
 		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:79a05be465a272484a40c51e42a2dfd7c7f4e64eab29d4955fb1bc70fe98e820`  
-		Last Modified: Sat, 13 Nov 2021 11:14:07 GMT  
-		Size: 957.0 B  
+	-	`sha256:aeabdc4aba67b4850e7e5c118e6409d59a161d11f5be536341a4e9f40ed017bf`  
+		Last Modified: Thu, 18 Nov 2021 09:19:18 GMT  
+		Size: 956.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6650ac9b2748862ed8338257ebfbd2e9b788dea52523a506b339d87b29ff91a8`  
-		Last Modified: Sat, 13 Nov 2021 11:14:07 GMT  
+	-	`sha256:9dd2d42122e3f199551259bf3db06d2c446c725eb3ae3239f2692f3fa57804b5`  
+		Last Modified: Thu, 18 Nov 2021 09:19:18 GMT  
 		Size: 2.6 KB (2614 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:dind-rootless`
 
 ```console
-$ docker pull docker@sha256:29e19ed5ed0c3c1c889bf726c76fdbe7fb8e67f033aeff2d941112d7f9730836
+$ docker pull docker@sha256:f7eda2fabb5f3b449e141975f3bd3b53a303f0976aeb06638626a6c49bfbc45f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2527,14 +3101,14 @@ USER rootless
 ### `docker:dind-rootless` - linux; arm64 variant v8
 
 ```console
-$ docker pull docker@sha256:7aa7a557db4837963c50f130d0b3cb0266cdf40b95d1885016390c2fb60d42ac
+$ docker pull docker@sha256:2441b89586372dc59c8fce28fc3fa0a6141193ad158d18482597187a7e1c9eeb
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **91.1 MB (91055436 bytes)**  
+-	Total Size: **91.1 MB (91070455 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:27f0db21ce6ac17ede9ed78e7a500ed07fce6f552814b1862fedba25815fee61`
+-	Image ID: `sha256:0c509ba52a7374da993e6cf01a7147518857077192831cf839078772fa27881b`
 -	Entrypoint: `["dockerd-entrypoint.sh"]`
 -	Default Command: `[]`
 
@@ -2547,53 +3121,53 @@ CMD ["/bin/sh"]
 RUN apk add --no-cache 		ca-certificates 		libc6-compat 		openssh-client
 # Sat, 13 Nov 2021 11:12:05 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Sat, 13 Nov 2021 11:12:06 GMT
-ENV DOCKER_VERSION=20.10.10
-# Sat, 13 Nov 2021 11:12:12 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-20.10.10.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-20.10.10.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-20.10.10.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-20.10.10.tgz'; 			;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O docker.tgz "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		dockerd --version; 	docker --version
-# Sat, 13 Nov 2021 11:12:13 GMT
+# Thu, 18 Nov 2021 09:17:16 GMT
+ENV DOCKER_VERSION=20.10.11
+# Thu, 18 Nov 2021 09:17:22 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-20.10.11.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-20.10.11.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-20.10.11.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-20.10.11.tgz'; 			;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O docker.tgz "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		dockerd --version; 	docker --version
+# Thu, 18 Nov 2021 09:17:24 GMT
 COPY file:abb137d24130e7fa2bdd38694af607361ecb688521e60965681e49460964a204 in /usr/local/bin/modprobe 
-# Sat, 13 Nov 2021 11:12:14 GMT
+# Thu, 18 Nov 2021 09:17:25 GMT
 COPY file:5b18768029dab8174c9d5957bb39560bde5ef6cba50fbbca222731a0059b449b in /usr/local/bin/ 
-# Sat, 13 Nov 2021 11:12:14 GMT
+# Thu, 18 Nov 2021 09:17:25 GMT
 ENV DOCKER_TLS_CERTDIR=/certs
-# Sat, 13 Nov 2021 11:12:15 GMT
+# Thu, 18 Nov 2021 09:17:26 GMT
 RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client
-# Sat, 13 Nov 2021 11:12:16 GMT
+# Thu, 18 Nov 2021 09:17:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 13 Nov 2021 11:12:17 GMT
+# Thu, 18 Nov 2021 09:17:28 GMT
 CMD ["sh"]
-# Sat, 13 Nov 2021 11:12:26 GMT
+# Thu, 18 Nov 2021 09:17:38 GMT
 RUN set -eux; 	apk add --no-cache 		btrfs-progs 		e2fsprogs 		e2fsprogs-extra 		ip6tables 		iptables 		openssl 		shadow-uidmap 		xfsprogs 		xz 		pigz 	; 	if zfs="$(apk info --no-cache --quiet zfs)" && [ -n "$zfs" ]; then 		apk add --no-cache zfs; 	fi
-# Sat, 13 Nov 2021 11:12:27 GMT
+# Thu, 18 Nov 2021 09:17:39 GMT
 RUN set -eux; 	addgroup -S dockremap; 	adduser -S -G dockremap dockremap; 	echo 'dockremap:165536:65536' >> /etc/subuid; 	echo 'dockremap:165536:65536' >> /etc/subgid
-# Sat, 13 Nov 2021 11:12:28 GMT
+# Thu, 18 Nov 2021 09:17:40 GMT
 ENV DIND_COMMIT=42b1175eda071c0e9121e1d64345928384a93df1
-# Sat, 13 Nov 2021 11:12:29 GMT
+# Thu, 18 Nov 2021 09:17:41 GMT
 RUN set -eux; 	wget -O /usr/local/bin/dind "https://raw.githubusercontent.com/docker/docker/${DIND_COMMIT}/hack/dind"; 	chmod +x /usr/local/bin/dind
-# Sat, 13 Nov 2021 11:12:31 GMT
+# Thu, 18 Nov 2021 09:17:43 GMT
 COPY file:89f2c7c1492b0cb067fc6be48e1edf3f04c0b6063371da4a48cd4ca35aa098d7 in /usr/local/bin/ 
-# Sat, 13 Nov 2021 11:12:31 GMT
+# Thu, 18 Nov 2021 09:17:43 GMT
 VOLUME [/var/lib/docker]
-# Sat, 13 Nov 2021 11:12:32 GMT
+# Thu, 18 Nov 2021 09:17:44 GMT
 EXPOSE 2375 2376
-# Sat, 13 Nov 2021 11:12:33 GMT
+# Thu, 18 Nov 2021 09:17:45 GMT
 ENTRYPOINT ["dockerd-entrypoint.sh"]
-# Sat, 13 Nov 2021 11:12:34 GMT
+# Thu, 18 Nov 2021 09:17:46 GMT
 CMD []
-# Sat, 13 Nov 2021 11:12:42 GMT
+# Thu, 18 Nov 2021 09:17:54 GMT
 RUN apk add --no-cache iproute2
-# Sat, 13 Nov 2021 11:12:43 GMT
+# Thu, 18 Nov 2021 09:17:55 GMT
 RUN mkdir /run/user && chmod 1777 /run/user
-# Sat, 13 Nov 2021 11:12:44 GMT
+# Thu, 18 Nov 2021 09:17:56 GMT
 RUN set -eux; 	adduser -h /home/rootless -g 'Rootless' -D -u 1000 rootless; 	echo 'rootless:100000:65536' >> /etc/subuid; 	echo 'rootless:100000:65536' >> /etc/subgid
-# Sat, 13 Nov 2021 11:12:47 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-rootless-extras-20.10.10.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-rootless-extras-20.10.10.tgz'; 			;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O rootless.tgz "$url"; 		tar --extract 		--file rootless.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		'docker-rootless-extras/rootlesskit' 		'docker-rootless-extras/rootlesskit-docker-proxy' 		'docker-rootless-extras/vpnkit' 	; 	rm rootless.tgz; 		rootlesskit --version; 	vpnkit --version
-# Sat, 13 Nov 2021 11:12:48 GMT
+# Thu, 18 Nov 2021 09:17:59 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-rootless-extras-20.10.11.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-rootless-extras-20.10.11.tgz'; 			;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O rootless.tgz "$url"; 		tar --extract 		--file rootless.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		'docker-rootless-extras/rootlesskit' 		'docker-rootless-extras/rootlesskit-docker-proxy' 		'docker-rootless-extras/vpnkit' 	; 	rm rootless.tgz; 		rootlesskit --version; 	vpnkit --version
+# Thu, 18 Nov 2021 09:18:00 GMT
 RUN set -eux; 	mkdir -p /home/rootless/.local/share/docker; 	chown -R rootless:rootless /home/rootless/.local/share/docker
-# Sat, 13 Nov 2021 11:12:49 GMT
+# Thu, 18 Nov 2021 09:18:01 GMT
 VOLUME [/home/rootless/.local/share/docker]
-# Sat, 13 Nov 2021 11:12:50 GMT
+# Thu, 18 Nov 2021 09:18:02 GMT
 USER rootless
 ```
 
@@ -2610,63 +3184,63 @@ USER rootless
 		Last Modified: Sat, 13 Nov 2021 11:13:37 GMT  
 		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a62d8382e8c3998e6150de13325d0cefc188fd2df3dab4923e604a9ca4c5f18`  
-		Last Modified: Sat, 13 Nov 2021 11:13:47 GMT  
-		Size: 57.7 MB (57730974 bytes)  
+	-	`sha256:7b50fed93df89351d596ab08fab482a174aa37a86d61cdeef150162665a67a80`  
+		Last Modified: Thu, 18 Nov 2021 09:18:59 GMT  
+		Size: 57.7 MB (57746015 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da32b7decf4b345d476b6a4e10a003a86c0bcfde1e98db9baf6cf10943b6bf19`  
-		Last Modified: Sat, 13 Nov 2021 11:13:37 GMT  
-		Size: 544.0 B  
+	-	`sha256:f21638a3c07c5ebd6977bcc9c75e0ac36c2a82b761fc51a8aee313c9a9d7ed46`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 542.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1eaa20d143da83073976f6cf7ed7deccc3b80e067502e7aa0c4a08ab921a9147`  
-		Last Modified: Sat, 13 Nov 2021 11:13:38 GMT  
-		Size: 1.0 KB (1017 bytes)  
+	-	`sha256:b9e37a1bae185ca8552a00efd7984a74bc595d0dac82ab81e945615f5a0b29af`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 1.0 KB (1018 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:47aa80e9f3e814d809569ac62843a611cd58228798fd5570cc7194807c4cb77c`  
-		Last Modified: Sat, 13 Nov 2021 11:13:37 GMT  
-		Size: 117.0 B  
+	-	`sha256:b81c4e38c2d1b6603791a26f4dad582d554c306fb4c8c4218e0d537da3b8af6a`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cdd4eff14edf3baa59a2710743529bd0271876a425be9bf15515edf16d238426`  
-		Last Modified: Sat, 13 Nov 2021 11:14:08 GMT  
-		Size: 6.4 MB (6418396 bytes)  
+	-	`sha256:dc29a86f7ed1b15ec5c146abf64a41609779eb5b0e2a668d274b1b28c14c37e3`  
+		Last Modified: Thu, 18 Nov 2021 09:19:20 GMT  
+		Size: 6.4 MB (6418345 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:29ef05e5793f710405e8cdcaf8bbbe0cb097e2b05cd4c60f296ea5522b5bbabc`  
-		Last Modified: Sat, 13 Nov 2021 11:14:07 GMT  
+	-	`sha256:fce285f2fd3dbcbe5e58749e817ef3a3e60fa1dbf82bc51eaff0f20f8e151d3f`  
+		Last Modified: Thu, 18 Nov 2021 09:19:18 GMT  
 		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:79a05be465a272484a40c51e42a2dfd7c7f4e64eab29d4955fb1bc70fe98e820`  
-		Last Modified: Sat, 13 Nov 2021 11:14:07 GMT  
-		Size: 957.0 B  
+	-	`sha256:aeabdc4aba67b4850e7e5c118e6409d59a161d11f5be536341a4e9f40ed017bf`  
+		Last Modified: Thu, 18 Nov 2021 09:19:18 GMT  
+		Size: 956.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6650ac9b2748862ed8338257ebfbd2e9b788dea52523a506b339d87b29ff91a8`  
-		Last Modified: Sat, 13 Nov 2021 11:14:07 GMT  
+	-	`sha256:9dd2d42122e3f199551259bf3db06d2c446c725eb3ae3239f2692f3fa57804b5`  
+		Last Modified: Thu, 18 Nov 2021 09:19:18 GMT  
 		Size: 2.6 KB (2614 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe86ac559b5a564bb3df41ebd8e9d1570a242e9d56546f293f98d2aaac3119aa`  
-		Last Modified: Sat, 13 Nov 2021 11:14:29 GMT  
-		Size: 1.2 MB (1168586 bytes)  
+	-	`sha256:230963f6db0e75d3a58bc46d5b33ea4f67e6b1f0300e99ba12497c89f68ce855`  
+		Last Modified: Thu, 18 Nov 2021 09:19:41 GMT  
+		Size: 1.2 MB (1168585 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc7077b192bccf3af6a4da34fb009d7016d455db5137f71deea61efb74832f10`  
-		Last Modified: Sat, 13 Nov 2021 11:14:30 GMT  
-		Size: 114.0 B  
+	-	`sha256:f66cc595973e50f8d3e25c628464cfa45436824aab478bda61c9ac4232d822c3`  
+		Last Modified: Thu, 18 Nov 2021 09:19:40 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2f77077b5415e0cac28e216de1e3123fe3899ab3a5f74144a2fb38d22eee40b`  
-		Last Modified: Sat, 13 Nov 2021 11:14:29 GMT  
-		Size: 1.3 KB (1317 bytes)  
+	-	`sha256:55af54131c4a2bf83efebe4e4fec2d50bd4c99ffbca5aa5ccfa29c167f4c16ce`  
+		Last Modified: Thu, 18 Nov 2021 09:19:40 GMT  
+		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:051832e5a3328eae673f5479e17e64a0df05f543456bde994ed17f4666f1ac28`  
-		Last Modified: Sat, 13 Nov 2021 11:14:32 GMT  
-		Size: 21.1 MB (21101497 bytes)  
+	-	`sha256:48cab39e5c6b0a896c570c0218f29e0600936018957c487e7b439c9ecf14ad8e`  
+		Last Modified: Thu, 18 Nov 2021 09:19:44 GMT  
+		Size: 21.1 MB (21101528 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d4172fb6b514cb25e51f7c061f6b6357db907bd62801b6bc1364c26d3e6c5f1a`  
-		Last Modified: Sat, 13 Nov 2021 11:14:29 GMT  
+	-	`sha256:b365691e2dffd5c75fa3b86bd4ccd1b11a4beae986f511ce5400a6a3d69b550c`  
+		Last Modified: Thu, 18 Nov 2021 09:19:40 GMT  
 		Size: 189.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:git`
 
 ```console
-$ docker pull docker@sha256:8dead7d26f479e29b5d535533dd1447cdb1785f1fa2cde55cd4742e58d5f9838
+$ docker pull docker@sha256:a9ec8dce9cdab5c0d82690840373f70a0fcc9a2b2f5ad5a0d38147b2d2d8ef93
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2754,14 +3328,14 @@ RUN apk add --no-cache git
 ### `docker:git` - linux; arm64 variant v8
 
 ```console
-$ docker pull docker@sha256:086c42fce9c4b3cafac1e86d6c3274603f0e932acbe5ff1fd8b904dc6978a224
+$ docker pull docker@sha256:abd4f25a749ebaac21635348b5e8db17d1d7cc5bcfa3b437e730b4178177cd2f
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.1 MB (69100640 bytes)**  
+-	Total Size: **69.1 MB (69115687 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:123fa396495add862a22f2d1c26c61257fc94ae58f46620d4ec3aa191f9d6109`
+-	Image ID: `sha256:0eb4264b475ad1b401f8776fd4d94293173ddd396cf1a88a5fb4372947b3ef3f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
@@ -2774,23 +3348,23 @@ CMD ["/bin/sh"]
 RUN apk add --no-cache 		ca-certificates 		libc6-compat 		openssh-client
 # Sat, 13 Nov 2021 11:12:05 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Sat, 13 Nov 2021 11:12:06 GMT
-ENV DOCKER_VERSION=20.10.10
-# Sat, 13 Nov 2021 11:12:12 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-20.10.10.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-20.10.10.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-20.10.10.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-20.10.10.tgz'; 			;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O docker.tgz "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		dockerd --version; 	docker --version
-# Sat, 13 Nov 2021 11:12:13 GMT
+# Thu, 18 Nov 2021 09:17:16 GMT
+ENV DOCKER_VERSION=20.10.11
+# Thu, 18 Nov 2021 09:17:22 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-20.10.11.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-20.10.11.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-20.10.11.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-20.10.11.tgz'; 			;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O docker.tgz "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		dockerd --version; 	docker --version
+# Thu, 18 Nov 2021 09:17:24 GMT
 COPY file:abb137d24130e7fa2bdd38694af607361ecb688521e60965681e49460964a204 in /usr/local/bin/modprobe 
-# Sat, 13 Nov 2021 11:12:14 GMT
+# Thu, 18 Nov 2021 09:17:25 GMT
 COPY file:5b18768029dab8174c9d5957bb39560bde5ef6cba50fbbca222731a0059b449b in /usr/local/bin/ 
-# Sat, 13 Nov 2021 11:12:14 GMT
+# Thu, 18 Nov 2021 09:17:25 GMT
 ENV DOCKER_TLS_CERTDIR=/certs
-# Sat, 13 Nov 2021 11:12:15 GMT
+# Thu, 18 Nov 2021 09:17:26 GMT
 RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client
-# Sat, 13 Nov 2021 11:12:16 GMT
+# Thu, 18 Nov 2021 09:17:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 13 Nov 2021 11:12:17 GMT
+# Thu, 18 Nov 2021 09:17:28 GMT
 CMD ["sh"]
-# Sat, 13 Nov 2021 11:12:58 GMT
+# Thu, 18 Nov 2021 09:18:09 GMT
 RUN apk add --no-cache git
 ```
 
@@ -2807,31 +3381,31 @@ RUN apk add --no-cache git
 		Last Modified: Sat, 13 Nov 2021 11:13:37 GMT  
 		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a62d8382e8c3998e6150de13325d0cefc188fd2df3dab4923e604a9ca4c5f18`  
-		Last Modified: Sat, 13 Nov 2021 11:13:47 GMT  
-		Size: 57.7 MB (57730974 bytes)  
+	-	`sha256:7b50fed93df89351d596ab08fab482a174aa37a86d61cdeef150162665a67a80`  
+		Last Modified: Thu, 18 Nov 2021 09:18:59 GMT  
+		Size: 57.7 MB (57746015 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da32b7decf4b345d476b6a4e10a003a86c0bcfde1e98db9baf6cf10943b6bf19`  
-		Last Modified: Sat, 13 Nov 2021 11:13:37 GMT  
-		Size: 544.0 B  
+	-	`sha256:f21638a3c07c5ebd6977bcc9c75e0ac36c2a82b761fc51a8aee313c9a9d7ed46`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 542.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1eaa20d143da83073976f6cf7ed7deccc3b80e067502e7aa0c4a08ab921a9147`  
-		Last Modified: Sat, 13 Nov 2021 11:13:38 GMT  
-		Size: 1.0 KB (1017 bytes)  
+	-	`sha256:b9e37a1bae185ca8552a00efd7984a74bc595d0dac82ab81e945615f5a0b29af`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 1.0 KB (1018 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:47aa80e9f3e814d809569ac62843a611cd58228798fd5570cc7194807c4cb77c`  
-		Last Modified: Sat, 13 Nov 2021 11:13:37 GMT  
-		Size: 117.0 B  
+	-	`sha256:b81c4e38c2d1b6603791a26f4dad582d554c306fb4c8c4218e0d537da3b8af6a`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63428bb134c49eb3606edbf2b1a924cc2935e38a7d5c64576432728c2fcbacaa`  
-		Last Modified: Sat, 13 Nov 2021 11:14:52 GMT  
-		Size: 6.7 MB (6740165 bytes)  
+	-	`sha256:77d06f8877e01ae57a21f32e8cdd5b66ffc3fdf70cfb5c8036a429db1ed15e12`  
+		Last Modified: Thu, 18 Nov 2021 09:20:04 GMT  
+		Size: 6.7 MB (6740174 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:latest`
 
 ```console
-$ docker pull docker@sha256:ef7bb7fae023a1c895370ace48e3f4d470fe2351752565cdf4b3488ecb4a1fa8
+$ docker pull docker@sha256:317b60d32767d3d9abda0129a7c3f34d83f75a90b7ae3020d01aa46cb24556fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2913,14 +3487,14 @@ CMD ["sh"]
 ### `docker:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull docker@sha256:7f8c695ee89847aa87d315e8d345a22e928447543cda8780837a30fcd3ec1c1b
+$ docker pull docker@sha256:8aef5b543363230546c03371e8b3c857285ffdad566b676c3657cf64fedd9299
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **62.4 MB (62360475 bytes)**  
+-	Total Size: **62.4 MB (62375513 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:520e9a0a30f7c4055889f4969ee2b1bc143827c6e87d6aaeed617c6fa01de262`
+-	Image ID: `sha256:0836e8a2fd6d55074387335d0a134d329cedce53561a1b6fc6eefe44cf1cf487`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
@@ -2933,21 +3507,21 @@ CMD ["/bin/sh"]
 RUN apk add --no-cache 		ca-certificates 		libc6-compat 		openssh-client
 # Sat, 13 Nov 2021 11:12:05 GMT
 RUN [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
-# Sat, 13 Nov 2021 11:12:06 GMT
-ENV DOCKER_VERSION=20.10.10
-# Sat, 13 Nov 2021 11:12:12 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-20.10.10.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-20.10.10.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-20.10.10.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-20.10.10.tgz'; 			;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O docker.tgz "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		dockerd --version; 	docker --version
-# Sat, 13 Nov 2021 11:12:13 GMT
+# Thu, 18 Nov 2021 09:17:16 GMT
+ENV DOCKER_VERSION=20.10.11
+# Thu, 18 Nov 2021 09:17:22 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-20.10.11.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-20.10.11.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-20.10.11.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-20.10.11.tgz'; 			;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O docker.tgz "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		dockerd --version; 	docker --version
+# Thu, 18 Nov 2021 09:17:24 GMT
 COPY file:abb137d24130e7fa2bdd38694af607361ecb688521e60965681e49460964a204 in /usr/local/bin/modprobe 
-# Sat, 13 Nov 2021 11:12:14 GMT
+# Thu, 18 Nov 2021 09:17:25 GMT
 COPY file:5b18768029dab8174c9d5957bb39560bde5ef6cba50fbbca222731a0059b449b in /usr/local/bin/ 
-# Sat, 13 Nov 2021 11:12:14 GMT
+# Thu, 18 Nov 2021 09:17:25 GMT
 ENV DOCKER_TLS_CERTDIR=/certs
-# Sat, 13 Nov 2021 11:12:15 GMT
+# Thu, 18 Nov 2021 09:17:26 GMT
 RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client
-# Sat, 13 Nov 2021 11:12:16 GMT
+# Thu, 18 Nov 2021 09:17:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 13 Nov 2021 11:12:17 GMT
+# Thu, 18 Nov 2021 09:17:28 GMT
 CMD ["sh"]
 ```
 
@@ -2964,21 +3538,21 @@ CMD ["sh"]
 		Last Modified: Sat, 13 Nov 2021 11:13:37 GMT  
 		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a62d8382e8c3998e6150de13325d0cefc188fd2df3dab4923e604a9ca4c5f18`  
-		Last Modified: Sat, 13 Nov 2021 11:13:47 GMT  
-		Size: 57.7 MB (57730974 bytes)  
+	-	`sha256:7b50fed93df89351d596ab08fab482a174aa37a86d61cdeef150162665a67a80`  
+		Last Modified: Thu, 18 Nov 2021 09:18:59 GMT  
+		Size: 57.7 MB (57746015 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da32b7decf4b345d476b6a4e10a003a86c0bcfde1e98db9baf6cf10943b6bf19`  
-		Last Modified: Sat, 13 Nov 2021 11:13:37 GMT  
-		Size: 544.0 B  
+	-	`sha256:f21638a3c07c5ebd6977bcc9c75e0ac36c2a82b761fc51a8aee313c9a9d7ed46`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 542.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1eaa20d143da83073976f6cf7ed7deccc3b80e067502e7aa0c4a08ab921a9147`  
-		Last Modified: Sat, 13 Nov 2021 11:13:38 GMT  
-		Size: 1.0 KB (1017 bytes)  
+	-	`sha256:b9e37a1bae185ca8552a00efd7984a74bc595d0dac82ab81e945615f5a0b29af`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 1.0 KB (1018 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:47aa80e9f3e814d809569ac62843a611cd58228798fd5570cc7194807c4cb77c`  
-		Last Modified: Sat, 13 Nov 2021 11:13:37 GMT  
-		Size: 117.0 B  
+	-	`sha256:b81c4e38c2d1b6603791a26f4dad582d554c306fb4c8c4218e0d537da3b8af6a`  
+		Last Modified: Thu, 18 Nov 2021 09:18:49 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:windowsservercore`
