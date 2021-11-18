@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cc42c2df980e3af4bb720fed34a68569089b7bf48d39a4aae4bb35b774472911`
-- Created: `2021-11-13T05:42:14.830955434Z`
-- Virtual Size: ~ 37.41 Mb  
+- Image ID: `sha256:ea44badd1a0a2f2a1091b2200f5546126bd2a0f8892fd93bc01659ff074dcb68`
+- Created: `2021-11-16T01:53:49.901115122Z`
+- Virtual Size: ~ 54.38 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -121,6 +121,74 @@ MPL-2.0 AND MIT
 
 ```
 
+### `apk` package: `gdbm`
+
+```console
+gdbm-1.19-r0 description:
+GNU dbm is a set of database routines that use extensible hashing
+
+gdbm-1.19-r0 webpage:
+https://www.gnu.org/software/gdbm/
+
+gdbm-1.19-r0 installed size:
+224 KiB
+
+gdbm-1.19-r0 license:
+GPL-3.0-or-later
+
+```
+
+### `apk` package: `keyutils-libs`
+
+```console
+keyutils-libs-1.6.3-r0 description:
+Key utilities library
+
+keyutils-libs-1.6.3-r0 webpage:
+http://people.redhat.com/~dhowells/keyutils/
+
+keyutils-libs-1.6.3-r0 installed size:
+36 KiB
+
+keyutils-libs-1.6.3-r0 license:
+GPL-2.0-or-later LGPL-2.0-or-later
+
+```
+
+### `apk` package: `krb5-conf`
+
+```console
+krb5-conf-1.0-r2 description:
+Shared krb5.conf for both MIT krb5 and heimdal
+
+krb5-conf-1.0-r2 webpage:
+https://web.mit.edu/kerberos/www/
+
+krb5-conf-1.0-r2 installed size:
+12 KiB
+
+krb5-conf-1.0-r2 license:
+MIT
+
+```
+
+### `apk` package: `krb5-libs`
+
+```console
+krb5-libs-1.18.4-r0 description:
+The shared libraries used by Kerberos 5
+
+krb5-libs-1.18.4-r0 webpage:
+https://web.mit.edu/kerberos/www/
+
+krb5-libs-1.18.4-r0 installed size:
+1960 KiB
+
+krb5-libs-1.18.4-r0 license:
+MIT
+
+```
+
 ### `apk` package: `libc-utils`
 
 ```console
@@ -135,6 +203,23 @@ libc-utils-0.7.2-r3 installed size:
 
 libc-utils-0.7.2-r3 license:
 BSD-2-Clause AND BSD-3-Clause
+
+```
+
+### `apk` package: `libcom_err`
+
+```console
+libcom_err-1.46.2-r0 description:
+Common error description library
+
+libcom_err-1.46.2-r0 webpage:
+http://e2fsprogs.sourceforge.net
+
+libcom_err-1.46.2-r0 installed size:
+24 KiB
+
+libcom_err-1.46.2-r0 license:
+GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
 
 ```
 
@@ -206,6 +291,23 @@ GPL-2.0-or-later LGPL-2.1-or-later
 
 ```
 
+### `apk` package: `libldap`
+
+```console
+libldap-2.4.58-r0 description:
+OpenLDAP libraries
+
+libldap-2.4.58-r0 webpage:
+https://www.openldap.org/
+
+libldap-2.4.58-r0 installed size:
+616 KiB
+
+libldap-2.4.58-r0 license:
+OLDAP-2.8
+
+```
+
 ### `apk` package: `libretls`
 
 ```console
@@ -220,6 +322,23 @@ libretls-3.3.3p1-r2 installed size:
 
 libretls-3.3.3p1-r2 license:
 ISC AND (BSD-3-Clause OR MIT)
+
+```
+
+### `apk` package: `libsasl`
+
+```console
+libsasl-2.1.27-r12 description:
+Cyrus Simple Authentication and Security Layer (SASL) library
+
+libsasl-2.1.27-r12 webpage:
+https://www.cyrusimap.org/sasl/
+
+libsasl-2.1.27-r12 installed size:
+192 KiB
+
+libsasl-2.1.27-r12 license:
+custom
 
 ```
 
@@ -254,6 +373,23 @@ libuuid-2.37.2-r0 installed size:
 
 libuuid-2.37.2-r0 license:
 GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND
+
+```
+
+### `apk` package: `libverto`
+
+```console
+libverto-0.3.2-r0 description:
+Main loop abstraction library
+
+libverto-0.3.2-r0 webpage:
+https://github.com/npmccallum/libverto
+
+libverto-0.3.2-r0 installed size:
+36 KiB
+
+libverto-0.3.2-r0 license:
+MIT
 
 ```
 
