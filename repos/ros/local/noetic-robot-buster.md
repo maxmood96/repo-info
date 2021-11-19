@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e7aff3bf5c44dd947334f976f3bf7032515484d74ffd611c1edb141534823352`
-- Created: `2021-10-12T04:26:13.969667027Z`
+- Image ID: `sha256:9b440e63083c21cf88e00b7240dafcaa399827e9f41b8eaf1204cb538685d393`
+- Created: `2021-11-17T22:39:08.593770056Z`
 - Virtual Size: ~ 1.40 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -5559,33 +5559,43 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/python2.7/2.7.16-2+deb10u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/python2.7/2.7.16-2+deb10u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `python3-catkin-pkg-modules=0.4.23-1`
+### `dpkg` source package: `python3-catkin-pkg-modules=0.4.24-1`
 
 Binary Packages:
 
-- `python3-catkin-pkg-modules=0.4.23-1`
+- `python3-catkin-pkg-modules=0.4.24-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3-catkin-pkg-modules=0.4.24-1
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python3-catkin-pkg-modules/python3-catkin-pkg-modules_0.4.24-1.debian.tar.xz' python3-catkin-pkg-modules_0.4.24-1.debian.tar.xz 2024 SHA512:34839c06efbaceccbfa6fe15e8d62264ca9fd1271f500389df7358b81830e82337f5c526e9935ddd147526dd3da35e8692761d86313f1bdabaca52670a919039
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python3-catkin-pkg-modules/python3-catkin-pkg-modules_0.4.24-1.dsc' python3-catkin-pkg-modules_0.4.24-1.dsc 1026 SHA512:02c8c18ec94c70bf39670ee4a61a6a8374adc3abcfc93424d4db323da3b14af729e1c83313546a724b78d1629d1a79ec33ada5434575f53e4594004c44d01393
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python3-catkin-pkg-modules/python3-catkin-pkg-modules_0.4.24.orig.tar.gz' python3-catkin-pkg-modules_0.4.24.orig.tar.gz 61189 SHA512:77336a9221cfccca22782dd111bea6ce34ccd6cfdf288bb523b66b7999023af8a53125f0fe97d8ccf54ff665aac1bca32248136662a0ab4743f893e962c270cd
+```
 
-### `dpkg` source package: `python3-catkin-pkg=0.4.23-100`
+### `dpkg` source package: `python3-catkin-pkg=0.4.24-100`
 
 Binary Packages:
 
-- `python3-catkin-pkg=0.4.23-100`
+- `python3-catkin-pkg=0.4.24-100`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3-catkin-pkg=0.4.24-100
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python3-catkin-pkg/python3-catkin-pkg_0.4.24-100.debian.tar.xz' python3-catkin-pkg_0.4.24-100.debian.tar.xz 2012 SHA512:3db57a92e09b3d7406df2299fb3ced667e78ef7b20273da740c453b81075af75173850f31c20b2d550be9fc1b2d047b567f87b0438736c619742f2cb9046f944
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python3-catkin-pkg/python3-catkin-pkg_0.4.24-100.dsc' python3-catkin-pkg_0.4.24-100.dsc 962 SHA512:48deef0904ca87c021eece7ec5ac1d3cce205b0790140117c42c84c9c0bac9ceb0f95bf3bf0b3642a2f0ff5744ff5d5d632eb675c7c6b7c114197aa35660188d
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python3-catkin-pkg/python3-catkin-pkg_0.4.24.orig.tar.gz' python3-catkin-pkg_0.4.24.orig.tar.gz 14786 SHA512:f37d1a1285115d125a8ad3cfd67f7f969b6ab7ad0452eefc5d690832a19623e5e9418fa35841139a952b3883ea5406348fae741e09ae3273546212a35489cc59
+```
 
 ### `dpkg` source package: `python3-defaults=3.7.3-1`
 
@@ -6479,11 +6489,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-nodelet-core=1.10.1-1buster.20210922.184500`
+### `dpkg` source package: `ros-noetic-nodelet-core=1.10.2-1buster.20211007.210626`
 
 Binary Packages:
 
-- `ros-noetic-nodelet-core=1.10.1-1buster.20210922.184500`
+- `ros-noetic-nodelet-core=1.10.2-1buster.20211007.210626`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6493,11 +6503,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-nodelet-topic-tools=1.10.1-1buster.20210922.183944`
+### `dpkg` source package: `ros-noetic-nodelet-topic-tools=1.10.2-1buster.20211007.210334`
 
 Binary Packages:
 
-- `ros-noetic-nodelet-topic-tools=1.10.1-1buster.20210922.183944`
+- `ros-noetic-nodelet-topic-tools=1.10.2-1buster.20211007.210334`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6507,11 +6517,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-nodelet=1.10.1-1buster.20210922.180348`
+### `dpkg` source package: `ros-noetic-nodelet=1.10.2-1buster.20211007.205343`
 
 Binary Packages:
 
-- `ros-noetic-nodelet=1.10.1-1buster.20210922.180348`
+- `ros-noetic-nodelet=1.10.2-1buster.20211007.205343`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6535,11 +6545,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-robot-state-publisher=1.15.0-1buster.20210922.185534`
+### `dpkg` source package: `ros-noetic-robot-state-publisher=1.15.2-1buster.20210930.193720`
 
 Binary Packages:
 
-- `ros-noetic-robot-state-publisher=1.15.0-1buster.20210922.185534`
+- `ros-noetic-robot-state-publisher=1.15.2-1buster.20210930.193720`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6549,11 +6559,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-robot=1.5.0-1buster.20210922.201436`
+### `dpkg` source package: `ros-noetic-robot=1.5.0-1buster.20211007.215427`
 
 Binary Packages:
 
-- `ros-noetic-robot=1.5.0-1buster.20210922.201436`
+- `ros-noetic-robot=1.5.0-1buster.20211007.215427`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6563,11 +6573,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-ros-base=1.5.0-1buster.20210922.200840`
+### `dpkg` source package: `ros-noetic-ros-base=1.5.0-1buster.20211007.213723`
 
 Binary Packages:
 
-- `ros-noetic-ros-base=1.5.0-1buster.20210922.200840`
+- `ros-noetic-ros-base=1.5.0-1buster.20211007.213723`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7431,11 +7441,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-xacro=1.14.9-1buster.20210922.181856`
+### `dpkg` source package: `ros-noetic-xacro=1.14.10-1buster.20211004.234536`
 
 Binary Packages:
 
-- `ros-noetic-xacro=1.14.9-1buster.20210922.181856`
+- `ros-noetic-xacro=1.14.10-1buster.20211004.234536`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7921,11 +7931,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.30+dfsg-6/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.30+dfsg-6/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tiff=4.1.0+git191117-2~deb10u2`
+### `dpkg` source package: `tiff=4.1.0+git191117-2~deb10u3`
 
 Binary Packages:
 
-- `libtiff5:amd64=4.1.0+git191117-2~deb10u2`
+- `libtiff5:amd64=4.1.0+git191117-2~deb10u3`
 
 Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 
@@ -7934,17 +7944,17 @@ Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tiff=4.1.0+git191117-2~deb10u2
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.1.0+git191117-2~deb10u2.dsc' tiff_4.1.0+git191117-2~deb10u2.dsc 2274 SHA256:5cb0e00ee767c39a2b398942fd20291403a3e6b41ac296e99b158b5cefb1cdab
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.1.0+git191117.orig.tar.xz' tiff_4.1.0+git191117.orig.tar.xz 1533524 SHA256:67e1d045e994adb7144b0cca228d70dd6d520aaf8c75c342064bc0fd601e6e42
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.1.0+git191117-2~deb10u2.debian.tar.xz' tiff_4.1.0+git191117-2~deb10u2.debian.tar.xz 20396 SHA256:0d7c74f2ecd6423af258148822b74a6d1f537f6cb931daf17998db5ff5cb7a44
+$ apt-get source -qq --print-uris tiff=4.1.0+git191117-2~deb10u3
+'http://security.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.1.0+git191117-2~deb10u3.dsc' tiff_4.1.0+git191117-2~deb10u3.dsc 2429 SHA256:78683a8ee5bfd5f3561e8e3d70c914c420d4cc590c9bbe9222832c2e9e8f3ec6
+'http://security.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.1.0+git191117.orig.tar.xz' tiff_4.1.0+git191117.orig.tar.xz 1533524 SHA256:67e1d045e994adb7144b0cca228d70dd6d520aaf8c75c342064bc0fd601e6e42
+'http://security.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.1.0+git191117-2~deb10u3.debian.tar.xz' tiff_4.1.0+git191117-2~deb10u3.debian.tar.xz 20896 SHA256:b58a9a797fc5526a0134bfd88081670b075a4b1bfa9a8aaf2607430e06bb63ca
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/tiff/4.1.0+git191117-2~deb10u2/ (for browsing the source)
-- https://sources.debian.net/src/tiff/4.1.0+git191117-2~deb10u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tiff/4.1.0+git191117-2~deb10u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/tiff/4.1.0+git191117-2~deb10u3/ (for browsing the source)
+- https://sources.debian.net/src/tiff/4.1.0+git191117-2~deb10u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tiff/4.1.0+git191117-2~deb10u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tinyxml2=7.0.0+dfsg-1`
 
@@ -8000,11 +8010,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tinyxml/2.6.2-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tinyxml/2.6.2-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2021a-0+deb10u2`
+### `dpkg` source package: `tzdata=2021a-0+deb10u3`
 
 Binary Packages:
 
-- `tzdata=2021a-0+deb10u2`
+- `tzdata=2021a-0+deb10u3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8013,18 +8023,18 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2021a-0+deb10u2
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2021a-0+deb10u2.dsc' tzdata_2021a-0+deb10u2.dsc 2264 SHA256:75349115b974f0194f59dac2488f18edcc460abdeebe549051356a201e87bc58
+$ apt-get source -qq --print-uris tzdata=2021a-0+deb10u3
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2021a-0+deb10u3.dsc' tzdata_2021a-0+deb10u3.dsc 2264 SHA256:1730f7a8a2ac3ac3c9db9dc7ddd3074343a7846988c515d55f046be527a00834
 'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2021a.orig.tar.gz' tzdata_2021a.orig.tar.gz 411892 SHA256:39e7d2ba08c68cbaefc8de3227aab0dec2521be8042cf56855f7dc3a9fb14e08
 'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2021a.orig.tar.gz.asc' tzdata_2021a.orig.tar.gz.asc 833 SHA256:9dc5f54674166f4ffbc2d4485e656227430ab5f39c9006e6ed9986281117f058
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2021a-0+deb10u2.debian.tar.xz' tzdata_2021a-0+deb10u2.debian.tar.xz 107944 SHA256:721ed11128d69ce090ee1566e197a7c724b0ed4422321f50abf3b7538c360178
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2021a-0+deb10u3.debian.tar.xz' tzdata_2021a-0+deb10u3.debian.tar.xz 109800 SHA256:aa09186f2ceb3d4b7ec9e7575ba51a3c1b4894e0669e1125c4cae1eafec73808
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/tzdata/2021a-0+deb10u2/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2021a-0+deb10u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2021a-0+deb10u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/tzdata/2021a-0+deb10u3/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2021a-0+deb10u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2021a-0+deb10u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0038+nmu1`
 
