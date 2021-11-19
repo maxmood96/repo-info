@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:049d59ce94869ece070d524537714b237c194fede137729a931214f9eafc68e3`
-- Created: `2021-10-12T11:45:55.47167019Z`
+- Image ID: `sha256:33fdbddea024ff841f97ed3bdf00283caee654356dd6fdf5756c1fcbb888dd23`
+- Created: `2021-11-17T08:03:47.680128423Z`
 - Virtual Size: ~ 896.06 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -373,11 +373,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/coreutils/8.26-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/coreutils/8.26-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `cups=2.2.1-8+deb9u6`
+### `dpkg` source package: `cups=2.2.1-8+deb9u7`
 
 Binary Packages:
 
-- `libcups2:amd64=2.2.1-8+deb9u6`
+- `libcups2:amd64=2.2.1-8+deb9u7`
 
 Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 
@@ -391,18 +391,18 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris cups=2.2.1-8+deb9u6
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.1-8+deb9u6.dsc' cups_2.2.1-8+deb9u6.dsc 3598 SHA256:720af5bc9903a14ac7f1b8d184ed397d2ed6cf627bdd02b174a552819e000d10
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.1.orig.tar.gz' cups_2.2.1.orig.tar.gz 9486635 SHA256:83b8730aa977cc055e7410df6a3a682548994c113994ca630a16513017e419d5
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.1.orig.tar.gz.asc' cups_2.2.1.orig.tar.gz.asc 797 SHA256:37c2e6215b2794c33864e543bc0caf6aefa724844e41b4c9659c87f28d125c2a
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.1-8+deb9u6.debian.tar.xz' cups_2.2.1-8+deb9u6.debian.tar.xz 368220 SHA256:726dedb603f7b108a62804990d1de36494f5b311264ec6e7d0f62ae09ddecade
+$ apt-get source -qq --print-uris cups=2.2.1-8+deb9u7
+'http://security.debian.org/debian-security/pool/updates/main/c/cups/cups_2.2.1-8+deb9u7.dsc' cups_2.2.1-8+deb9u7.dsc 3757 SHA256:4767b250db6e44a4539a845f5839d3af3423d5598252066b7e18bd6dc227be73
+'http://security.debian.org/debian-security/pool/updates/main/c/cups/cups_2.2.1.orig.tar.gz' cups_2.2.1.orig.tar.gz 9486635 SHA256:83b8730aa977cc055e7410df6a3a682548994c113994ca630a16513017e419d5
+'http://security.debian.org/debian-security/pool/updates/main/c/cups/cups_2.2.1.orig.tar.gz.asc' cups_2.2.1.orig.tar.gz.asc 797 SHA256:37c2e6215b2794c33864e543bc0caf6aefa724844e41b4c9659c87f28d125c2a
+'http://security.debian.org/debian-security/pool/updates/main/c/cups/cups_2.2.1-8+deb9u7.debian.tar.xz' cups_2.2.1-8+deb9u7.debian.tar.xz 368828 SHA256:5a605593b299daed74b5f0e5824e290a82d10d0d98b33df6e6c60e2e0476a524
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/cups/2.2.1-8+deb9u6/ (for browsing the source)
-- https://sources.debian.net/src/cups/2.2.1-8+deb9u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cups/2.2.1-8+deb9u6/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/cups/2.2.1-8+deb9u7/ (for browsing the source)
+- https://sources.debian.net/src/cups/2.2.1-8+deb9u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/cups/2.2.1-8+deb9u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dash=0.5.8-2.4`
 
@@ -643,11 +643,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/e2fsprogs/1.43.4-2+deb9u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/e2fsprogs/1.43.4-2+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `elfutils=0.168-1`
+### `dpkg` source package: `elfutils=0.168-1+deb9u1`
 
 Binary Packages:
 
-- `libelf1:amd64=0.168-1`
+- `libelf1:amd64=0.168-1+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/libelf1/copyright`)
 
@@ -658,18 +658,18 @@ Licenses: (parsed from: `/usr/share/doc/libelf1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris elfutils=0.168-1
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.168-1.dsc' elfutils_0.168-1.dsc 2549 SHA256:b29e03a3d515d9accd52019ff7c75762ae5e61285453518ff90d538e9878ad7f
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.168.orig.tar.bz2' elfutils_0.168.orig.tar.bz2 6840399 SHA256:b88d07893ba1373c7dd69a7855974706d05377766568a7d9002706d5de72c276
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.168.orig.tar.bz2.asc' elfutils_0.168.orig.tar.bz2.asc 473 SHA256:f455fc014b59a0d80ab921935d20f26e64f411a424d4be29ec5bf3a1378f3002
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.168-1.debian.tar.xz' elfutils_0.168-1.debian.tar.xz 39964 SHA256:5517922b1025d32903759c46f9a1f656e3e367c5ea036dc54b32cbbe68a5f300
+$ apt-get source -qq --print-uris elfutils=0.168-1+deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/e/elfutils/elfutils_0.168-1+deb9u1.dsc' elfutils_0.168-1+deb9u1.dsc 2577 SHA256:5336e12c7d182d15d822804858eaceba84a3eb4c4f70238d7930f43cff8dc8cb
+'http://security.debian.org/debian-security/pool/updates/main/e/elfutils/elfutils_0.168.orig.tar.bz2' elfutils_0.168.orig.tar.bz2 6840399 SHA256:b88d07893ba1373c7dd69a7855974706d05377766568a7d9002706d5de72c276
+'http://security.debian.org/debian-security/pool/updates/main/e/elfutils/elfutils_0.168.orig.tar.bz2.asc' elfutils_0.168.orig.tar.bz2.asc 473 SHA256:f455fc014b59a0d80ab921935d20f26e64f411a424d4be29ec5bf3a1378f3002
+'http://security.debian.org/debian-security/pool/updates/main/e/elfutils/elfutils_0.168-1+deb9u1.debian.tar.xz' elfutils_0.168-1+deb9u1.debian.tar.xz 43980 SHA256:e41f9b7b8843d2a8d67ee3cd90bf12d4349aa96e0bbc3e6c2b49be9fab773bea
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/elfutils/0.168-1/ (for browsing the source)
-- https://sources.debian.net/src/elfutils/0.168-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/elfutils/0.168-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/elfutils/0.168-1+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/elfutils/0.168-1+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/elfutils/0.168-1+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `expat=2.2.0-2+deb9u3`
 
@@ -1259,11 +1259,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/hostname/3.18/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/hostname/3.18/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `icu=57.1-6+deb9u4`
+### `dpkg` source package: `icu=57.1-6+deb9u5`
 
 Binary Packages:
 
-- `libicu57:amd64=57.1-6+deb9u4`
+- `libicu57:amd64=57.1-6+deb9u5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1272,17 +1272,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris icu=57.1-6+deb9u4
-'http://deb.debian.org/debian/pool/main/i/icu/icu_57.1-6+deb9u4.dsc' icu_57.1-6+deb9u4.dsc 2133 SHA256:80b9e9f411f713e7ba475959f083ba600cead528ab2c097448564f3ad9c0ffb5
-'http://deb.debian.org/debian/pool/main/i/icu/icu_57.1.orig.tar.gz' icu_57.1.orig.tar.gz 22360664 SHA256:ff8c67cb65949b1e7808f2359f2b80f722697048e90e7cfc382ec1fe229e9581
-'http://deb.debian.org/debian/pool/main/i/icu/icu_57.1-6+deb9u4.debian.tar.xz' icu_57.1-6+deb9u4.debian.tar.xz 36404 SHA256:37674a98793c0048ad8f7f8dc21d9ab14fd01b182c5ea764da3bae111f8afd63
+$ apt-get source -qq --print-uris icu=57.1-6+deb9u5
+'http://security.debian.org/debian-security/pool/updates/main/i/icu/icu_57.1-6+deb9u5.dsc' icu_57.1-6+deb9u5.dsc 2133 SHA256:1f609e87107e3ec941861b184de73603eebde90c36d59afddf4da4d7780de190
+'http://security.debian.org/debian-security/pool/updates/main/i/icu/icu_57.1.orig.tar.gz' icu_57.1.orig.tar.gz 22360664 SHA256:ff8c67cb65949b1e7808f2359f2b80f722697048e90e7cfc382ec1fe229e9581
+'http://security.debian.org/debian-security/pool/updates/main/i/icu/icu_57.1-6+deb9u5.debian.tar.xz' icu_57.1-6+deb9u5.debian.tar.xz 36984 SHA256:a1a17eed376629f2d36b00ffa47325a82d4ebd80792a3d2174eb19357743368d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/icu/57.1-6+deb9u4/ (for browsing the source)
-- https://sources.debian.net/src/icu/57.1-6+deb9u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/icu/57.1-6+deb9u4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/icu/57.1-6+deb9u5/ (for browsing the source)
+- https://sources.debian.net/src/icu/57.1-6+deb9u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/icu/57.1-6+deb9u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `init-system-helpers=1.48`
 
@@ -3244,23 +3244,30 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tiff/4.0.8-2+deb9u7/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tiff/4.0.8-2+deb9u7/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2021a-0+deb9u1`
+### `dpkg` source package: `tzdata=2021a-0+deb9u2`
 
 Binary Packages:
 
-- `tzdata=2021a-0+deb9u1`
+- `tzdata=2021a-0+deb9u2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris tzdata=2021a-0+deb9u2
+'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2021a-0+deb9u2.dsc' tzdata_2021a-0+deb9u2.dsc 2029 SHA256:4960d5fba9c4e8e68f5776d76eb5141c24ea2e5246e5e23622d389b62717e393
+'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2021a.orig.tar.gz' tzdata_2021a.orig.tar.gz 411892 SHA256:39e7d2ba08c68cbaefc8de3227aab0dec2521be8042cf56855f7dc3a9fb14e08
+'http://security.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2021a-0+deb9u2.debian.tar.xz' tzdata_2021a-0+deb9u2.debian.tar.xz 106908 SHA256:c8c9982cdfb6be2d595239d0312bf35778406df298389c184b2c57fc15263a21
+```
 
-- http://snapshot.debian.org/package/tzdata/2021a-0+deb9u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/tzdata/2021a-0+deb9u2/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2021a-0+deb9u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2021a-0+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0036`
 
