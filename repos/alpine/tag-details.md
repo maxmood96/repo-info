@@ -12,6 +12,8 @@
 -	[`alpine:3.13.7`](#alpine3137)
 -	[`alpine:3.14`](#alpine314)
 -	[`alpine:3.14.3`](#alpine3143)
+-	[`alpine:3.15`](#alpine315)
+-	[`alpine:3.15.0-rc.4`](#alpine3150-rc4)
 -	[`alpine:edge`](#alpineedge)
 -	[`alpine:latest`](#alpinelatest)
 
@@ -2021,6 +2023,14 @@ CMD ["/bin/sh"]
 		Last Modified: Fri, 12 Nov 2021 16:42:44 GMT  
 		Size: 2.6 MB (2609278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `alpine:3.15`
+
+**does not exist** (yet?)
+
+## `alpine:3.15.0-rc.4`
+
+**does not exist** (yet?)
 
 ## `alpine:edge`
 
