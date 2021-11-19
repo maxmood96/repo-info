@@ -1,18 +1,18 @@
-# `nginx:1.20.1-alpine`
+# `nginx:1.20.2-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7f18bdc92ca581836b1bb733a1f15dd2e2c05ed626b958a012b4becb9f191da6`
-- Created: `2021-11-13T05:03:26.094933111Z`
-- Virtual Size: ~ 22.70 Mb  
+- Image ID: `sha256:373f8d4d4c60c0ec2ad5aefe46e4bbebfbb8e86b8cf4263f8df9730bc5d22c11`
+- Created: `2021-11-16T18:22:27.763985311Z`
+- Virtual Size: ~ 23.17 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.20.1`
-  - `NJS_VERSION=0.5.3`
+  - `NGINX_VERSION=1.20.2`
+  - `NJS_VERSION=0.7.0`
   - `PKG_RELEASE=1`
 - Labels:
   - `maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>`
@@ -22,16 +22,16 @@
 ### `apk` package: `alpine-baselayout`
 
 ```console
-alpine-baselayout-3.2.0-r8 description:
+alpine-baselayout-3.2.0-r16 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-3.2.0-r8 webpage:
+alpine-baselayout-3.2.0-r16 webpage:
 https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
-alpine-baselayout-3.2.0-r8 installed size:
-400 KiB
+alpine-baselayout-3.2.0-r16 installed size:
+404 KiB
 
-alpine-baselayout-3.2.0-r8 license:
+alpine-baselayout-3.2.0-r16 license:
 GPL-2.0-only
 
 ```
@@ -73,16 +73,16 @@ GPL-2.0-only
 ### `apk` package: `brotli-libs`
 
 ```console
-brotli-libs-1.0.9-r3 description:
+brotli-libs-1.0.9-r5 description:
 Generic lossless compressor (libraries)
 
-brotli-libs-1.0.9-r3 webpage:
+brotli-libs-1.0.9-r5 webpage:
 https://github.com/google/brotli
 
-brotli-libs-1.0.9-r3 installed size:
+brotli-libs-1.0.9-r5 installed size:
 720 KiB
 
-brotli-libs-1.0.9-r3 license:
+brotli-libs-1.0.9-r5 license:
 MIT
 
 ```
@@ -90,16 +90,16 @@ MIT
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.32.1-r7 description:
+busybox-1.33.1-r6 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.32.1-r7 webpage:
+busybox-1.33.1-r6 webpage:
 https://busybox.net/
 
-busybox-1.32.1-r7 installed size:
-924 KiB
+busybox-1.33.1-r6 installed size:
+928 KiB
 
-busybox-1.32.1-r7 license:
+busybox-1.33.1-r6 license:
 GPL-2.0-only
 
 ```
@@ -260,16 +260,16 @@ MIT
 ### `apk` package: `libedit`
 
 ```console
-libedit-20191231.3.1-r1 description:
+libedit-20210216.3.1-r0 description:
 BSD line editing library
 
-libedit-20191231.3.1-r1 webpage:
+libedit-20210216.3.1-r0 webpage:
 https://www.thrysoee.dk/editline
 
-libedit-20191231.3.1-r1 installed size:
+libedit-20210216.3.1-r0 installed size:
 196 KiB
 
-libedit-20191231.3.1-r1 license:
+libedit-20210216.3.1-r0 license:
 BSD-3-Clause
 
 ```
@@ -277,16 +277,16 @@ BSD-3-Clause
 ### `apk` package: `libgcrypt`
 
 ```console
-libgcrypt-1.8.8-r1 description:
-general purpose crypto library based on the code used in GnuPG
+libgcrypt-1.9.4-r0 description:
+General purpose crypto library based on the code used in GnuPG
 
-libgcrypt-1.8.8-r1 webpage:
+libgcrypt-1.9.4-r0 webpage:
 https://www.gnupg.org/
 
-libgcrypt-1.8.8-r1 installed size:
-1124 KiB
+libgcrypt-1.9.4-r0 installed size:
+1220 KiB
 
-libgcrypt-1.8.8-r1 license:
+libgcrypt-1.9.4-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -311,16 +311,16 @@ custom
 ### `apk` package: `libgpg-error`
 
 ```console
-libgpg-error-1.41-r0 description:
+libgpg-error-1.42-r0 description:
 Support library for libgcrypt
 
-libgpg-error-1.41-r0 webpage:
+libgpg-error-1.42-r0 webpage:
 https://www.gnupg.org/
 
-libgpg-error-1.41-r0 installed size:
-208 KiB
+libgpg-error-1.42-r0 installed size:
+212 KiB
 
-libgpg-error-1.41-r0 license:
+libgpg-error-1.42-r0 license:
 GPL-2.0-or-later LGPL-2.1-or-later
 
 ```
@@ -328,16 +328,16 @@ GPL-2.0-or-later LGPL-2.1-or-later
 ### `apk` package: `libintl`
 
 ```console
-libintl-0.20.2-r2 description:
+libintl-0.21-r0 description:
 GNU gettext runtime library
 
-libintl-0.20.2-r2 webpage:
+libintl-0.21-r0 webpage:
 https://www.gnu.org/software/gettext/gettext.html
 
-libintl-0.20.2-r2 installed size:
+libintl-0.21-r0 installed size:
 56 KiB
 
-libintl-0.20.2-r2 license:
+libintl-0.21-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -376,6 +376,23 @@ Libpng
 
 ```
 
+### `apk` package: `libretls`
+
+```console
+libretls-3.3.3p1-r2 description:
+port of libtls from libressl to openssl
+
+libretls-3.3.3p1-r2 webpage:
+https://git.causal.agency/libretls/
+
+libretls-3.3.3p1-r2 installed size:
+84 KiB
+
+libretls-3.3.3p1-r2 license:
+ISC AND (BSD-3-Clause OR MIT)
+
+```
+
 ### `apk` package: `libssl1.1`
 
 ```console
@@ -393,36 +410,19 @@ OpenSSL
 
 ```
 
-### `apk` package: `libtls-standalone`
-
-```console
-libtls-standalone-2.9.1-r1 description:
-libtls extricated from libressl sources
-
-libtls-standalone-2.9.1-r1 webpage:
-https://www.libressl.org/
-
-libtls-standalone-2.9.1-r1 installed size:
-108 KiB
-
-libtls-standalone-2.9.1-r1 license:
-ISC
-
-```
-
 ### `apk` package: `libwebp`
 
 ```console
-libwebp-1.1.0-r0 description:
+libwebp-1.2.0-r2 description:
 Libraries for working with WebP images
 
-libwebp-1.1.0-r0 webpage:
+libwebp-1.2.0-r2 webpage:
 https://developers.google.com/speed/webp
 
-libwebp-1.1.0-r0 installed size:
-576 KiB
+libwebp-1.2.0-r2 installed size:
+580 KiB
 
-libwebp-1.1.0-r0 license:
+libwebp-1.2.0-r2 license:
 BSD-3-Clause
 
 ```
@@ -430,16 +430,16 @@ BSD-3-Clause
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.9.12-r0 description:
+libxml2-2.9.12-r1 description:
 XML parsing library, version 2
 
-libxml2-2.9.12-r0 webpage:
+libxml2-2.9.12-r1 webpage:
 http://www.xmlsoft.org/
 
-libxml2-2.9.12-r0 installed size:
+libxml2-2.9.12-r1 installed size:
 1200 KiB
 
-libxml2-2.9.12-r0 license:
+libxml2-2.9.12-r1 license:
 MIT
 
 ```
@@ -447,16 +447,16 @@ MIT
 ### `apk` package: `libxslt`
 
 ```console
-libxslt-1.1.34-r0 description:
+libxslt-1.1.34-r1 description:
 XML stylesheet transformation library
 
-libxslt-1.1.34-r0 webpage:
+libxslt-1.1.34-r1 webpage:
 http://xmlsoft.org/XSLT/
 
-libxslt-1.1.34-r0 installed size:
+libxslt-1.1.34-r1 installed size:
 360 KiB
 
-libxslt-1.1.34-r0 license:
+libxslt-1.1.34-r1 license:
 custom
 
 ```
@@ -464,16 +464,16 @@ custom
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.2-r1 description:
+musl-1.2.2-r3 description:
 the musl c library (libc) implementation
 
-musl-1.2.2-r1 webpage:
+musl-1.2.2-r3 webpage:
 https://musl.libc.org/
 
-musl-1.2.2-r1 installed size:
+musl-1.2.2-r3 installed size:
 608 KiB
 
-musl-1.2.2-r1 license:
+musl-1.2.2-r3 license:
 MIT
 
 ```
@@ -481,16 +481,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.2-r1 description:
+musl-utils-1.2.2-r3 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.2-r1 webpage:
+musl-utils-1.2.2-r3 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.2-r1 installed size:
-140 KiB
+musl-utils-1.2.2-r3 installed size:
+144 KiB
 
-musl-utils-1.2.2-r1 license:
+musl-utils-1.2.2-r3 license:
 MIT BSD GPL2+
 
 ```
@@ -498,16 +498,16 @@ MIT BSD GPL2+
 ### `apk` package: `ncurses-libs`
 
 ```console
-ncurses-libs-6.2_p20210109-r0 description:
+ncurses-libs-6.2_p20210612-r0 description:
 Ncurses libraries
 
-ncurses-libs-6.2_p20210109-r0 webpage:
+ncurses-libs-6.2_p20210612-r0 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-libs-6.2_p20210109-r0 installed size:
-496 KiB
+ncurses-libs-6.2_p20210612-r0 installed size:
+500 KiB
 
-ncurses-libs-6.2_p20210109-r0 license:
+ncurses-libs-6.2_p20210612-r0 license:
 MIT
 
 ```
@@ -515,16 +515,16 @@ MIT
 ### `apk` package: `ncurses-terminfo-base`
 
 ```console
-ncurses-terminfo-base-6.2_p20210109-r0 description:
+ncurses-terminfo-base-6.2_p20210612-r0 description:
 Descriptions of common terminals
 
-ncurses-terminfo-base-6.2_p20210109-r0 webpage:
+ncurses-terminfo-base-6.2_p20210612-r0 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-terminfo-base-6.2_p20210109-r0 installed size:
+ncurses-terminfo-base-6.2_p20210612-r0 installed size:
 216 KiB
 
-ncurses-terminfo-base-6.2_p20210109-r0 license:
+ncurses-terminfo-base-6.2_p20210612-r0 license:
 MIT
 
 ```
@@ -532,16 +532,16 @@ MIT
 ### `apk` package: `nghttp2-libs`
 
 ```console
-nghttp2-libs-1.42.0-r1 description:
+nghttp2-libs-1.43.0-r0 description:
 Experimental HTTP/2 client, server and proxy (libraries)
 
-nghttp2-libs-1.42.0-r1 webpage:
+nghttp2-libs-1.43.0-r0 webpage:
 https://nghttp2.org
 
-nghttp2-libs-1.42.0-r1 installed size:
+nghttp2-libs-1.43.0-r0 installed size:
 168 KiB
 
-nghttp2-libs-1.42.0-r1 license:
+nghttp2-libs-1.43.0-r0 license:
 MIT
 
 ```
@@ -549,16 +549,16 @@ MIT
 ### `apk` package: `nginx`
 
 ```console
-nginx-1.20.1-r1 description:
+nginx-1.20.2-r1 description:
 High performance web server
 
-nginx-1.20.1-r1 webpage:
+nginx-1.20.2-r1 webpage:
 https://nginx.org/
 
-nginx-1.20.1-r1 installed size:
-2568 KiB
+nginx-1.20.2-r1 installed size:
+2576 KiB
 
-nginx-1.20.1-r1 license:
+nginx-1.20.2-r1 license:
 2-clause BSD-like license
 
 ```
@@ -566,16 +566,16 @@ nginx-1.20.1-r1 license:
 ### `apk` package: `nginx-module-geoip`
 
 ```console
-nginx-module-geoip-1.20.1-r1 description:
+nginx-module-geoip-1.20.2-r1 description:
 nginx GeoIP dynamic modules
 
-nginx-module-geoip-1.20.1-r1 webpage:
+nginx-module-geoip-1.20.2-r1 webpage:
 https://nginx.org/
 
-nginx-module-geoip-1.20.1-r1 installed size:
+nginx-module-geoip-1.20.2-r1 installed size:
 116 KiB
 
-nginx-module-geoip-1.20.1-r1 license:
+nginx-module-geoip-1.20.2-r1 license:
 2-clause BSD-like license
 
 ```
@@ -583,16 +583,16 @@ nginx-module-geoip-1.20.1-r1 license:
 ### `apk` package: `nginx-module-image-filter`
 
 ```console
-nginx-module-image-filter-1.20.1-r1 description:
+nginx-module-image-filter-1.20.2-r1 description:
 nginx image filter dynamic module
 
-nginx-module-image-filter-1.20.1-r1 webpage:
+nginx-module-image-filter-1.20.2-r1 webpage:
 https://nginx.org/
 
-nginx-module-image-filter-1.20.1-r1 installed size:
+nginx-module-image-filter-1.20.2-r1 installed size:
 88 KiB
 
-nginx-module-image-filter-1.20.1-r1 license:
+nginx-module-image-filter-1.20.2-r1 license:
 2-clause BSD-like license
 
 ```
@@ -600,16 +600,16 @@ nginx-module-image-filter-1.20.1-r1 license:
 ### `apk` package: `nginx-module-njs`
 
 ```console
-nginx-module-njs-1.20.1.0.5.3-r1 description:
+nginx-module-njs-1.20.2.0.7.0-r1 description:
 nginx njs dynamic modules
 
-nginx-module-njs-1.20.1.0.5.3-r1 webpage:
+nginx-module-njs-1.20.2.0.7.0-r1 webpage:
 https://nginx.org/
 
-nginx-module-njs-1.20.1.0.5.3-r1 installed size:
-3456 KiB
+nginx-module-njs-1.20.2.0.7.0-r1 installed size:
+3812 KiB
 
-nginx-module-njs-1.20.1.0.5.3-r1 license:
+nginx-module-njs-1.20.2.0.7.0-r1 license:
 2-clause BSD-like license
 
 ```
@@ -617,16 +617,16 @@ nginx-module-njs-1.20.1.0.5.3-r1 license:
 ### `apk` package: `nginx-module-xslt`
 
 ```console
-nginx-module-xslt-1.20.1-r1 description:
+nginx-module-xslt-1.20.2-r1 description:
 nginx xslt dynamic module
 
-nginx-module-xslt-1.20.1-r1 webpage:
+nginx-module-xslt-1.20.2-r1 webpage:
 https://nginx.org/
 
-nginx-module-xslt-1.20.1-r1 installed size:
+nginx-module-xslt-1.20.2-r1 installed size:
 84 KiB
 
-nginx-module-xslt-1.20.1-r1 license:
+nginx-module-xslt-1.20.2-r1 license:
 2-clause BSD-like license
 
 ```
@@ -651,16 +651,16 @@ BSD-3-Clause
 ### `apk` package: `scanelf`
 
 ```console
-scanelf-1.2.8-r0 description:
+scanelf-1.3.2-r0 description:
 Scan ELF binaries for stuff
 
-scanelf-1.2.8-r0 webpage:
+scanelf-1.3.2-r0 webpage:
 https://wiki.gentoo.org/wiki/Hardened/PaX_Utilities
 
-scanelf-1.2.8-r0 installed size:
+scanelf-1.3.2-r0 installed size:
 92 KiB
 
-scanelf-1.2.8-r0 license:
+scanelf-1.3.2-r0 license:
 GPL-2.0-only
 
 ```
@@ -668,16 +668,16 @@ GPL-2.0-only
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.32.1-r7 description:
+ssl_client-1.33.1-r6 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.32.1-r7 webpage:
+ssl_client-1.33.1-r6 webpage:
 https://busybox.net/
 
-ssl_client-1.32.1-r7 installed size:
+ssl_client-1.33.1-r6 installed size:
 28 KiB
 
-ssl_client-1.32.1-r7 license:
+ssl_client-1.33.1-r6 license:
 GPL-2.0-only
 
 ```
