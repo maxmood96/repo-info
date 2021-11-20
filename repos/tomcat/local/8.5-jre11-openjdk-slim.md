@@ -1,10 +1,10 @@
-# `tomcat:8.5.72-jre11-openjdk-slim-bullseye`
+# `tomcat:8.5.73-jre11-openjdk-slim-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:cc86f2e556b660be8b852d1dc49e044e5a1b784449e23356af90bfb1c88fd607`
-- Created: `2021-10-22T00:46:50.871778311Z`
-- Virtual Size: ~ 246.71 Mb  
+- Image ID: `sha256:6c4cd969169e3e5c33bb2e17a4c992dd0dafc2b3f015519e8bda276361bdee78`
+- Created: `2021-11-18T15:14:08.326953114Z`
+- Virtual Size: ~ 246.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -18,8 +18,8 @@
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 5C3C5F3E314C866292F359A8F3AD5C94A67F707E 765908099ACF92702C7D949BFA0C35EA8AA299F1 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
   - `TOMCAT_MAJOR=8`
-  - `TOMCAT_VERSION=8.5.72`
-  - `TOMCAT_SHA512=41d7eb83120f210d238d8653d729bfb2be32f3666e6c04e73607c05f066c4136b0719f8107cf66673333548c82dc5b9c0357e91fc0ac845e64f055b598f27049`
+  - `TOMCAT_VERSION=8.5.73`
+  - `TOMCAT_SHA512=4d33760d007acc5271ba0f946d2be96f6146d4632e411c9b72d351fc49d08355e8b84b051713a2f580e0f633cbe4409b7e9bb0e62f3af8d1094c6e4b3fdb96f0`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1862,11 +1862,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.34+dfsg-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.34+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2021a-1+deb11u1`
+### `dpkg` source package: `tzdata=2021a-1+deb11u2`
 
 Binary Packages:
 
-- `tzdata=2021a-1+deb11u1`
+- `tzdata=2021a-1+deb11u2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1875,18 +1875,18 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2021a-1+deb11u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2021a-1+deb11u1.dsc' tzdata_2021a-1+deb11u1.dsc 2269 SHA256:b522afdfe43198299934667b4571484a0af3228bae7ec5d000eb82dfa0de5afe
+$ apt-get source -qq --print-uris tzdata=2021a-1+deb11u2
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2021a-1+deb11u2.dsc' tzdata_2021a-1+deb11u2.dsc 2269 SHA256:2893ddffaf6cdad7b672c3c21449c32bd3febef0af53a944dcf6845af999f334
 'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2021a.orig.tar.gz' tzdata_2021a.orig.tar.gz 411892 SHA256:39e7d2ba08c68cbaefc8de3227aab0dec2521be8042cf56855f7dc3a9fb14e08
 'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2021a.orig.tar.gz.asc' tzdata_2021a.orig.tar.gz.asc 833 SHA256:9dc5f54674166f4ffbc2d4485e656227430ab5f39c9006e6ed9986281117f058
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2021a-1+deb11u1.debian.tar.xz' tzdata_2021a-1+deb11u1.debian.tar.xz 107096 SHA256:74a1e2ed73a28ba32f2ee0058e62c76d3f3e29a75cdf9bdc9e991974704270e9
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2021a-1+deb11u2.debian.tar.xz' tzdata_2021a-1+deb11u2.debian.tar.xz 109132 SHA256:ede987eed945f744dea5866d77663f7d01589c3f97eb68a0dd484f24efbec9e2
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/tzdata/2021a-1+deb11u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2021a-1+deb11u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2021a-1+deb11u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/tzdata/2021a-1+deb11u2/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2021a-1+deb11u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2021a-1+deb11u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `util-linux=2.36.1-8`
 
