@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:aa38f1ad4e45e75a993f05ec48d748c0344cbbf4a78927afda79da0f851beef0`
-- Created: `2021-10-22T19:42:10.584000466Z`
-- Virtual Size: ~ 528.53 Mb  
+- Image ID: `sha256:29297cf77408110b4916588b0811e273f433b85faf33f3b2eed21672a4e5e016`
+- Created: `2021-11-18T21:15:35.608498967Z`
+- Virtual Size: ~ 528.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -19,10 +19,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312`
-  - `PHP_VERSION=7.4.25`
-  - `PHP_URL=https://www.php.net/distributions/php-7.4.25.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.25.tar.xz.asc`
-  - `PHP_SHA256=12a758f1d7fee544387a28d3cf73226f47e3a52fb3049f07fcc37d156d393c0a`
+  - `PHP_VERSION=7.4.26`
+  - `PHP_URL=https://www.php.net/distributions/php-7.4.26.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.26.tar.xz.asc`
+  - `PHP_SHA256=e305b3aafdc85fa73a81c53d3ce30578bc94d1633ec376add193a1e85e0f0ef8`
   - `MAX_EXECUTION_TIME=600`
   - `MEMORY_LIMIT=512M`
   - `UPLOAD_LIMIT=2048K`
@@ -3386,11 +3386,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.34+dfsg-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.34+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2021a-1+deb11u1`
+### `dpkg` source package: `tzdata=2021a-1+deb11u2`
 
 Binary Packages:
 
-- `tzdata=2021a-1+deb11u1`
+- `tzdata=2021a-1+deb11u2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3399,18 +3399,18 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2021a-1+deb11u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2021a-1+deb11u1.dsc' tzdata_2021a-1+deb11u1.dsc 2269 SHA256:b522afdfe43198299934667b4571484a0af3228bae7ec5d000eb82dfa0de5afe
+$ apt-get source -qq --print-uris tzdata=2021a-1+deb11u2
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2021a-1+deb11u2.dsc' tzdata_2021a-1+deb11u2.dsc 2269 SHA256:2893ddffaf6cdad7b672c3c21449c32bd3febef0af53a944dcf6845af999f334
 'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2021a.orig.tar.gz' tzdata_2021a.orig.tar.gz 411892 SHA256:39e7d2ba08c68cbaefc8de3227aab0dec2521be8042cf56855f7dc3a9fb14e08
 'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2021a.orig.tar.gz.asc' tzdata_2021a.orig.tar.gz.asc 833 SHA256:9dc5f54674166f4ffbc2d4485e656227430ab5f39c9006e6ed9986281117f058
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2021a-1+deb11u1.debian.tar.xz' tzdata_2021a-1+deb11u1.debian.tar.xz 107096 SHA256:74a1e2ed73a28ba32f2ee0058e62c76d3f3e29a75cdf9bdc9e991974704270e9
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2021a-1+deb11u2.debian.tar.xz' tzdata_2021a-1+deb11u2.debian.tar.xz 109132 SHA256:ede987eed945f744dea5866d77663f7d01589c3f97eb68a0dd484f24efbec9e2
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/tzdata/2021a-1+deb11u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2021a-1+deb11u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2021a-1+deb11u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/tzdata/2021a-1+deb11u2/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2021a-1+deb11u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2021a-1+deb11u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `util-linux=2.36.1-8`
 
