@@ -1,17 +1,17 @@
-# `nats-streaming:0.23.1-alpine3.14`
+# `nats-streaming:0.23.2-alpine3.14`
 
 ## Docker Metadata
 
-- Image ID: `sha256:78ea744d3652f9f6deb6f9efb270a386770cc5cb8a9aed8a42b140639b89c8ca`
-- Created: `2021-11-13T05:46:24.266871605Z`
-- Virtual Size: ~ 28.72 Mb  
+- Image ID: `sha256:4c0d37898667fe6fa6289417167d7e7ce3799d21b08dc0ea4276850e2e8b54b8`
+- Created: `2021-11-20T02:20:57.516817619Z`
+- Virtual Size: ~ 28.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["nats-streaming-server","-m","8222"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NATS_STREAMING_SERVER=0.23.1`
+  - `NATS_STREAMING_SERVER=0.23.2`
 
 ## `apk` (`.apk`-based packages)
 
