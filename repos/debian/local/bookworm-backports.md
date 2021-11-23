@@ -78,19 +78,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.3.11
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.3.11.dsc' apt_2.3.11.dsc 2801 SHA256:540b1bbc9c4fb8f60f2f74fb0f58bb61b15580c99a655bbbf656ec2cf8c991a7
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.3.11.tar.xz' apt_2.3.11.tar.xz 2211324 SHA256:cc0c5b24240176e333b11bce1a7ac528ae263317d137ceeebad3ec2d8682cb91
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/2.3.11/
 
-- https://sources.debian.net/src/apt/2.3.11/ (for browsing the source)
-- https://sources.debian.net/src/apt/2.3.11/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/2.3.11/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.1-1`
 
@@ -1223,21 +1217,13 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 - `LGPL`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libtasn1-6=4.17.0-2
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.17.0-2.dsc' libtasn1-6_4.17.0-2.dsc 2586 SHA256:3094abb781ad3146d60c068fc5181d317001a0ab47dd4ff7edb0bf7f531c8f14
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.17.0.orig.tar.gz' libtasn1-6_4.17.0.orig.tar.gz 1906654 SHA256:ece7551cea7922b8e10d7ebc70bc2248d1fdd73351646a2d6a8d68a9421c45a5
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.17.0.orig.tar.gz.asc' libtasn1-6_4.17.0.orig.tar.gz.asc 488 SHA256:bacbaa3ffe63df9a876b65246668968e3580032f69fbac4b0a2044831855b69a
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.17.0-2.debian.tar.xz' libtasn1-6_4.17.0-2.debian.tar.xz 20168 SHA256:29419f61d6f15bdea299e6ad12f9d408337e865828d362ca475f52e2fc5651df
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libtasn1-6/4.17.0-2/
 
-- https://sources.debian.net/src/libtasn1-6/4.17.0-2/ (for browsing the source)
-- https://sources.debian.net/src/libtasn1-6/4.17.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libtasn1-6/4.17.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libtirpc=1.3.2-2`
 
@@ -1452,21 +1438,13 @@ Licenses: (parsed from: `/usr/share/doc/libtinfo6/copyright`, `/usr/share/doc/nc
 - `MIT/X11`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ncurses=6.2+20201114-4
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.2+20201114-4.dsc' ncurses_6.2+20201114-4.dsc 4200 SHA256:08282aeef8d25d9979e0760455ee5814e3a16622aa5a6ec06c247f1467ebdacb
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.2+20201114.orig.tar.gz' ncurses_6.2+20201114.orig.tar.gz 3539796 SHA256:aa3f8cfaff2a2b78f184274ec43d9da910c864e4b4d80fc47b5b48cba9154cd2
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.2+20201114.orig.tar.gz.asc' ncurses_6.2+20201114.orig.tar.gz.asc 265 SHA256:91615d9d5575f9e974e78c6aca55e1885f42d1b2600cebec407be4471bb7a27d
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.2+20201114-4.debian.tar.xz' ncurses_6.2+20201114-4.debian.tar.xz 54112 SHA256:c0a1272f55a5e12af542496bf9915b3109ec10d71aa62aca19c2a33c9e027d7f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/ncurses/6.2+20201114-4/
 
-- https://sources.debian.net/src/ncurses/6.2+20201114-4/ (for browsing the source)
-- https://sources.debian.net/src/ncurses/6.2+20201114-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ncurses/6.2+20201114-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nettle=3.7.3-1`
 
@@ -1602,20 +1580,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pcre2=10.39-2
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.39-2.dsc' pcre2_10.39-2.dsc 2286 SHA256:1b8d8683b5768651a0e09aad2d064ee63cd4fde2b852794f55c2a5942fbbf066
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.39.orig.tar.gz' pcre2_10.39.orig.tar.gz 2309964 SHA256:0781bd2536ef5279b1943471fdcdbd9961a2845e1d2c9ad849b9bd98ba1a9bd4
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.39-2.diff.gz' pcre2_10.39-2.diff.gz 7017 SHA256:2e5837bc565a5d6d1bafef9dc9db41974e04d5d26d34822666e26d2a0105ba72
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pcre2/10.39-2/
 
-- https://sources.debian.net/src/pcre2/10.39-2/ (for browsing the source)
-- https://sources.debian.net/src/pcre2/10.39-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pcre2/10.39-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pcre3=2:8.39-13`
 
@@ -1757,20 +1728,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=249.5-2
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_249.5-2.dsc' systemd_249.5-2.dsc 5438 SHA256:8cda68db5c1d3360cefba1438bdd185631ee31916362a1bffe5410ae1f32eaf8
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_249.5.orig.tar.gz' systemd_249.5.orig.tar.gz 10597897 SHA256:773ee546ad6df0921ea6f9e12294eb102bf68c1ac9eb3dcaca1764f8306d6e13
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_249.5-2.debian.tar.xz' systemd_249.5-2.debian.tar.xz 165812 SHA256:2a6728c4ca02aeb6ae7320e56ae8dd865e0dcc117dd3048c25502372c64b7bd8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/249.5-2/
 
-- https://sources.debian.net/src/systemd/249.5-2/ (for browsing the source)
-- https://sources.debian.net/src/systemd/249.5-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/249.5-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.00-1`
 
