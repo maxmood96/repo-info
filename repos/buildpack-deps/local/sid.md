@@ -413,20 +413,13 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.37-9
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.37-9.dsc' binutils_2.37-9.dsc 11295 SHA256:68cd5f260a96e2b686927c6c14e8dff58cbe21eaf3bba011c776f59a1ff9ca29
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.37.orig.tar.xz' binutils_2.37.orig.tar.xz 24345744 SHA256:220124d1e23f360a3be80b2e2506b379164b0832cc6ff2767360e6a3a747b914
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.37-9.debian.tar.xz' binutils_2.37-9.debian.tar.xz 183584 SHA256:62a7fa43d4bdfe4dd138c4230d335e765fcc1391e3dd08ee7fe2700a1e4556c5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/binutils/2.37-9/
 
-- https://sources.debian.net/src/binutils/2.37-9/ (for browsing the source)
-- https://sources.debian.net/src/binutils/2.37-9/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/binutils/2.37-9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `brotli=1.0.9-2`
 
@@ -1027,21 +1020,13 @@ Licenses: (parsed from: `/usr/share/doc/file/copyright`, `/usr/share/doc/libmagi
 - `MIT-Old-Style-with-legal-disclaimer-2`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris file=1:5.39-3
-'http://deb.debian.org/debian/pool/main/f/file/file_5.39-3.dsc' file_5.39-3.dsc 2237 SHA256:19952c131cffa14cf4b64f3fa2d35c975388985e5b5ee154e2e0cef5ccde697e
-'http://deb.debian.org/debian/pool/main/f/file/file_5.39.orig.tar.gz' file_5.39.orig.tar.gz 954266 SHA256:f05d286a76d9556243d0cb05814929c2ecf3a5ba07963f8f70bfaaa70517fad1
-'http://deb.debian.org/debian/pool/main/f/file/file_5.39.orig.tar.gz.asc' file_5.39.orig.tar.gz.asc 169 SHA256:409232b54cabe3082f38f1e7ec4c69e7d937f26d039da691f7349d142b48df83
-'http://deb.debian.org/debian/pool/main/f/file/file_5.39-3.debian.tar.xz' file_5.39-3.debian.tar.xz 34420 SHA256:92657787e04b444d7ec3b6cac0519d1655cb6fc2ae08de76bc3f4f90acf0c545
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/file/1:5.39-3/
 
-- https://sources.debian.net/src/file/1:5.39-3/ (for browsing the source)
-- https://sources.debian.net/src/file/1:5.39-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/file/1:5.39-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `findutils=4.8.0-1`
 
@@ -1428,20 +1413,13 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.33.1-1
-'http://deb.debian.org/debian/pool/main/g/git/git_2.33.1-1.dsc' git_2.33.1-1.dsc 2825 SHA256:dc156f4b49bfd7307fdd787d9329152ef1f09a31584e46c5341e33815d363500
-'http://deb.debian.org/debian/pool/main/g/git/git_2.33.1.orig.tar.xz' git_2.33.1.orig.tar.xz 6558636 SHA256:e054a6e6c2b088bd1bff5f61ed9ba5aa91c9a3cd509539a4b41c5ddf02201f2f
-'http://deb.debian.org/debian/pool/main/g/git/git_2.33.1-1.debian.tar.xz' git_2.33.1-1.debian.tar.xz 692124 SHA256:6e7e38e04804c89698dab5436691d75cc1095ae6d641b025c202485b67f96eb2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/git/1:2.33.1-1/
 
-- https://sources.debian.net/src/git/1:2.33.1-1/ (for browsing the source)
-- https://sources.debian.net/src/git/1:2.33.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/git/1:2.33.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.70.1-1`
 
@@ -3016,21 +2994,13 @@ Licenses: (parsed from: `/usr/share/doc/libseccomp2/copyright`)
 
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libseccomp=2.5.2-2
-'http://deb.debian.org/debian/pool/main/libs/libseccomp/libseccomp_2.5.2-2.dsc' libseccomp_2.5.2-2.dsc 2676 SHA256:fe35f84dea6f5b9e4e7c30481c45e96f4c6ce77d351d2bf242a47251ed1a6b0a
-'http://deb.debian.org/debian/pool/main/libs/libseccomp/libseccomp_2.5.2.orig.tar.gz' libseccomp_2.5.2.orig.tar.gz 640305 SHA256:17a652dfb491d96be893960e9b791914936ee16c13b777a3caf562fe48cb87df
-'http://deb.debian.org/debian/pool/main/libs/libseccomp/libseccomp_2.5.2.orig.tar.gz.asc' libseccomp_2.5.2.orig.tar.gz.asc 833 SHA256:fad8440f5670296259288842d64c94d611dcdfc7707d52d4c249f4e810c6775d
-'http://deb.debian.org/debian/pool/main/libs/libseccomp/libseccomp_2.5.2-2.debian.tar.xz' libseccomp_2.5.2-2.debian.tar.xz 27776 SHA256:70718c5e060d0b275a9e5dccdf109a8dc6720043392736cc474f61f74853c1ce
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libseccomp/2.5.2-2/
 
-- https://sources.debian.net/src/libseccomp/2.5.2-2/ (for browsing the source)
-- https://sources.debian.net/src/libseccomp/2.5.2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libseccomp/2.5.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libselinux=3.3-1`
 
@@ -5242,20 +5212,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=249.6-2
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_249.6-2.dsc' systemd_249.6-2.dsc 5438 SHA256:32b14da071601e7658e2dc73eb9aeae49efdd333dfcddcb575b843aef32ad750
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_249.6.orig.tar.gz' systemd_249.6.orig.tar.gz 10599611 SHA256:37ec7f7c641935f75f605333c561b7d29894146cc03ae46e6489da3f7dba6016
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_249.6-2.debian.tar.xz' systemd_249.6-2.debian.tar.xz 167036 SHA256:aad30d3b6ce2a88d680b8636a49a5d764b0dadf082fd30ff03f8bf8889553a5d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/249.6-2/
 
-- https://sources.debian.net/src/systemd/249.6-2/ (for browsing the source)
-- https://sources.debian.net/src/systemd/249.6-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/249.6-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.00-1`
 
