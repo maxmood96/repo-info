@@ -2064,17 +2064,9 @@ Licenses: (parsed from: `/usr/share/doc/fonts-opensymbol/copyright`, `/usr/share
 - `MPL-2.0`
 - `other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libreoffice=1:6.4.7-0ubuntu0.20.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_6.4.7-0ubuntu0.20.04.1.dsc' libreoffice_6.4.7-0ubuntu0.20.04.1.dsc 30534 SHA512:c5de057994eaf36d8a1cd7f14301378982b8e42b96a3292dc2b1ce269e84c144d05fb9dfbaef354d4369b8ceae0319106f13ee4c506540ddd5932e54674ae1ba
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_6.4.7.orig-helpcontent2.tar.xz' libreoffice_6.4.7.orig-helpcontent2.tar.xz 88073752 SHA512:3d6459cd4eab764d1fc15eb6edd6c1b16272f51869de1e9379328e81e03adb146d73c2acaf147d13b8ccc9a99721e023d404a0cf2f99a05264cc5536604828da
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_6.4.7.orig-tarballs.tar.xz' libreoffice_6.4.7.orig-tarballs.tar.xz 200916520 SHA512:10dc6e7b0521dff9aea57859312bb9802e1671f52d97f0f3fb7e030e779f778842088160ee14f446a8cc457d67b21b683c90c94bf0aa797ff890b2dea344f5ab
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_6.4.7.orig-translations.tar.xz' libreoffice_6.4.7.orig-translations.tar.xz 179847328 SHA512:6496ce816b136504c9511aeac5e881f329360e144ea48f28e9b56720ed727719339703431e0e0cee931d721c0e2b308366f0a3af771ebc980952c410f400c1cd
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_6.4.7.orig.tar.xz' libreoffice_6.4.7.orig.tar.xz 211530416 SHA512:a0ee0c0e617b33655dce0fbb14e2af12c3d810a3a9631d4b2204a75c8ac64c8797ab52735b799d078e1fff5a14d188ee850c239dab7bce4035a7ca704d6caa97
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_6.4.7-0ubuntu0.20.04.1.debian.tar.xz' libreoffice_6.4.7-0ubuntu0.20.04.1.debian.tar.xz 2374272 SHA512:78883ca16b441714a761c7f1d66067ee5f2635700ac1668bf948329ebd8d875e28bbf643151d543ab6016fed7476540ae0f496757c5a20bafd9b7a66caabd2a0
-```
 
 ### `dpkg` source package: `librevenge=0.0.4-6ubuntu5`
 
