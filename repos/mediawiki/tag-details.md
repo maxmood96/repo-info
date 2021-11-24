@@ -20,6 +20,12 @@
 -	[`mediawiki:1.36.2`](#mediawiki1362)
 -	[`mediawiki:1.36.2-fpm`](#mediawiki1362-fpm)
 -	[`mediawiki:1.36.2-fpm-alpine`](#mediawiki1362-fpm-alpine)
+-	[`mediawiki:1.37`](#mediawiki137)
+-	[`mediawiki:1.37-fpm`](#mediawiki137-fpm)
+-	[`mediawiki:1.37-fpm-alpine`](#mediawiki137-fpm-alpine)
+-	[`mediawiki:1.37.0`](#mediawiki1370)
+-	[`mediawiki:1.37.0-fpm`](#mediawiki1370-fpm)
+-	[`mediawiki:1.37.0-fpm-alpine`](#mediawiki1370-fpm-alpine)
 -	[`mediawiki:latest`](#mediawikilatest)
 -	[`mediawiki:legacy`](#mediawikilegacy)
 -	[`mediawiki:legacy-fpm`](#mediawikilegacy-fpm)
@@ -17187,6 +17193,60 @@ CMD ["php-fpm"]
 		Last Modified: Sat, 20 Nov 2021 01:55:21 GMT  
 		Size: 49.9 MB (49948423 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `mediawiki:1.37`
+
+```console
+$ docker pull mediawiki@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `mediawiki:1.37-fpm`
+
+```console
+$ docker pull mediawiki@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `mediawiki:1.37-fpm-alpine`
+
+```console
+$ docker pull mediawiki@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `mediawiki:1.37.0`
+
+```console
+$ docker pull mediawiki@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `mediawiki:1.37.0-fpm`
+
+```console
+$ docker pull mediawiki@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `mediawiki:1.37.0-fpm-alpine`
+
+```console
+$ docker pull mediawiki@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `mediawiki:latest`
 
