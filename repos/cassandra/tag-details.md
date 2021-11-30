@@ -15,7 +15,7 @@
 ## `cassandra:3`
 
 ```console
-$ docker pull cassandra@sha256:72f01aa0bb77ef7037cca761eca460d24f60b9432a3d38fd63a0b8c8f808eeaa
+$ docker pull cassandra@sha256:a0e7b4d7a8f63ce68023df70a6adc4a0ef18fd0ee0dc9df76b075599ddec4656
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -245,14 +245,14 @@ CMD ["cassandra" "-f"]
 ### `cassandra:3` - linux; ppc64le
 
 ```console
-$ docker pull cassandra@sha256:bb1ee67cc6c5db68b3e11e7d29f39572d661b1b8e0b64a81519b130a2fdeafcb
+$ docker pull cassandra@sha256:b7944eafeacc77a7f28d6bb2172456cbcddc4efb0ffc44c9ba50b61e77bbfea2
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **135.5 MB (135481417 bytes)**  
+-	Total Size: **144.7 MB (144675195 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:31219d0a0ec21a876fce84a53014fbc4e3fb88d46c76cfa88f6d201ca5f07c88`
+-	Image ID: `sha256:44c5baab56b01257e73ddb4c64c1dc88b2de92ae932d93d3e4f6ca3d21925a39`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -263,49 +263,49 @@ ADD file:9246bf887411af1b286de95d779c11581dcef3c0d5a29e434162f0c085a7ce85 in /
 CMD ["bash"]
 # Sat, 16 Oct 2021 00:54:47 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Sat, 16 Oct 2021 00:55:56 GMT
-RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 05 Nov 2021 20:39:01 GMT
+# Mon, 29 Nov 2021 20:18:28 GMT
+RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales python-is-python3     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Mon, 29 Nov 2021 20:18:32 GMT
 ENV JAVA_VERSION=jdk8u312-b07
-# Fri, 05 Nov 2021 20:40:43 GMT
+# Mon, 29 Nov 2021 20:19:18 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='961df2d520987c2252496fbee024f84c8c8c4d0be80e9fe043d221191666899e';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u312-b07/OpenJDK8U-jre_aarch64_linux_hotspot_8u312b07.tar.gz';          ;;        armhf|arm)          ESUM='5f37cbf311a5c2928aff8e83a82aebcf37b5911b193b5ab8538108381dcd6276';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u312-b07/OpenJDK8U-jre_arm_linux_hotspot_8u312b07.tar.gz';          apt-get update          && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1          && rm -rf /var/lib/apt/lists/*          ;;        ppc64el|powerpc:common64)          ESUM='7914a2efcb7edb28df71b2d4e5194907163da06841a16f7c8c96d60677551f93';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u312-b07/OpenJDK8U-jre_ppc64le_linux_hotspot_8u312b07.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='18fd13e77621f712326bfcf79c3e3cc08c880e3e4b8f63a1e5da619f3054b063';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u312-b07/OpenJDK8U-jre_x64_linux_hotspot_8u312b07.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 05 Nov 2021 20:40:49 GMT
+# Mon, 29 Nov 2021 20:19:22 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 05 Nov 2021 20:41:07 GMT
+# Mon, 29 Nov 2021 20:19:31 GMT
 RUN echo Verifying install ...     && echo java -version && java -version     && echo Complete.
-# Fri, 05 Nov 2021 23:19:19 GMT
+# Mon, 29 Nov 2021 23:17:25 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra
-# Fri, 05 Nov 2021 23:19:58 GMT
+# Mon, 29 Nov 2021 23:18:07 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libjemalloc2 		procps 		python 		iproute2 		numactl 	; 	rm -rf /var/lib/apt/lists/*; 	libjemalloc="$(readlink -e /usr/lib/*/libjemalloc.so.2)"; 	ln -sT "$libjemalloc" /usr/local/lib/libjemalloc.so; 	ldconfig
-# Fri, 05 Nov 2021 23:20:01 GMT
+# Mon, 29 Nov 2021 23:18:09 GMT
 ENV GOSU_VERSION=1.12
-# Fri, 05 Nov 2021 23:20:50 GMT
+# Mon, 29 Nov 2021 23:18:51 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Fri, 05 Nov 2021 23:20:55 GMT
+# Mon, 29 Nov 2021 23:18:53 GMT
 ENV CASSANDRA_HOME=/opt/cassandra
-# Fri, 05 Nov 2021 23:20:58 GMT
+# Mon, 29 Nov 2021 23:18:56 GMT
 ENV CASSANDRA_CONF=/etc/cassandra
-# Fri, 05 Nov 2021 23:21:00 GMT
+# Mon, 29 Nov 2021 23:18:57 GMT
 ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 05 Nov 2021 23:21:04 GMT
+# Mon, 29 Nov 2021 23:18:58 GMT
 ENV GPG_KEYS=CEC86BB4A0BA9D0F90397CAEF8358FA2F2833C93 	C4965EE9E3015D192CCCF2B6F758CE318D77295D 	5AED1BF378E9A19DADE1BCB34BD736A82B5C1B00 	514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB 	9E66CEC6106D578D0B1EB9BFF1000962B7F6840C 	C4009872C59B49561310D966D0062876AF30F054 	B7842CDAF36E6A3214FAE35D5E85B9AE0B84C041 	3E9C876907A560ACA00964F363E9BAD215BBF5F0 	F8B7FD00E05C932991A2CD6150EE103D162C5A55
-# Fri, 05 Nov 2021 23:21:06 GMT
+# Mon, 29 Nov 2021 23:18:59 GMT
 ENV CASSANDRA_VERSION=3.11.11
-# Fri, 05 Nov 2021 23:21:08 GMT
+# Mon, 29 Nov 2021 23:19:00 GMT
 ENV CASSANDRA_SHA512=5a7dc4237c9f43526b63cae62f04d73ec60f28e86ee1dd4bd4aaa55d2063d74fe842e015f7f68512db7deadbe52cab37417341183a716c191035463992e42d37
-# Fri, 05 Nov 2021 23:22:29 GMT
+# Mon, 29 Nov 2021 23:19:45 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			if grep -q -- '^-Xss' "$CASSANDRA_CONF/jvm.options"; then 				grep -- '^-Xss256k$' "$CASSANDRA_CONF/jvm.options"; 				sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONF/jvm.options"; 				grep -- '^-Xss512k$' "$CASSANDRA_CONF/jvm.options"; 			elif grep -q -- '-Xss256k' "$CASSANDRA_CONF/cassandra-env.sh"; then 				sed -ri 's/-Xss256k/-Xss512k/g' "$CASSANDRA_CONF/cassandra-env.sh"; 				grep -- '-Xss512k' "$CASSANDRA_CONF/cassandra-env.sh"; 			fi; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod -R a+rwX "$CASSANDRA_CONF"; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v
-# Fri, 05 Nov 2021 23:22:32 GMT
+# Mon, 29 Nov 2021 23:19:47 GMT
 VOLUME [/var/lib/cassandra]
-# Fri, 05 Nov 2021 23:22:36 GMT
+# Mon, 29 Nov 2021 23:19:48 GMT
 COPY file:a8d4fc10252d8783a105c235b3eef2315dbe3b0b1be0f1e4650f19fa5a56ab29 in /usr/local/bin/ 
-# Fri, 05 Nov 2021 23:22:41 GMT
+# Mon, 29 Nov 2021 23:19:52 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat
-# Fri, 05 Nov 2021 23:22:46 GMT
+# Mon, 29 Nov 2021 23:19:54 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 05 Nov 2021 23:22:48 GMT
+# Mon, 29 Nov 2021 23:19:56 GMT
 EXPOSE 7000 7001 7199 9042 9160
-# Fri, 05 Nov 2021 23:22:51 GMT
+# Mon, 29 Nov 2021 23:19:58 GMT
 CMD ["cassandra" "-f"]
 ```
 
@@ -314,47 +314,47 @@ CMD ["cassandra" "-f"]
 		Last Modified: Sat, 16 Oct 2021 00:38:38 GMT  
 		Size: 33.3 MB (33287238 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90c930749dacf55e37561edab7967f5a2f51660034fee0da501c2d71cb783301`  
-		Last Modified: Sat, 16 Oct 2021 01:03:26 GMT  
-		Size: 17.2 MB (17210510 bytes)  
+	-	`sha256:4ce46da97c533978caacb28d5a66ed1f0b6374622ee6806ebe49cc2fa004597f`  
+		Last Modified: Mon, 29 Nov 2021 20:25:42 GMT  
+		Size: 26.6 MB (26647174 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8328ccd6508833e8a520d09389a536363c7280e58c4b718a755344474ea6d79d`  
-		Last Modified: Fri, 05 Nov 2021 20:48:15 GMT  
-		Size: 41.1 MB (41146765 bytes)  
+	-	`sha256:e386e1e9d0add1be2b71d7e39b10592132a504f31e78458b8b160b4016f0c892`  
+		Last Modified: Mon, 29 Nov 2021 20:26:12 GMT  
+		Size: 41.1 MB (41146752 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a25dcc78f9ba7858f03a4591c1a80c070df665d531f0423f0ab516d8604a64e2`  
-		Last Modified: Fri, 05 Nov 2021 20:48:08 GMT  
-		Size: 160.0 B  
+	-	`sha256:de30b2127c463bf175ec312573947431962e0b658fafe75d9e3dc99a6605cfd0`  
+		Last Modified: Mon, 29 Nov 2021 20:26:06 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a036e40a59cd63da939b05ef5f362a0390b5a48670f98ed96ccfaa58faf6550`  
-		Last Modified: Fri, 05 Nov 2021 23:25:48 GMT  
-		Size: 1.8 KB (1769 bytes)  
+	-	`sha256:47a46e1e75f4dab9b2c364ce161718b1d68ff014ef64438781a7a26641751ce8`  
+		Last Modified: Mon, 29 Nov 2021 23:22:27 GMT  
+		Size: 1.8 KB (1760 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a16efdfbd26a392884e016ef39cd8d57706705f4771bb1735f9308ded98eac36`  
-		Last Modified: Fri, 05 Nov 2021 23:25:47 GMT  
-		Size: 10.3 MB (10310424 bytes)  
+	-	`sha256:0295d4fb7f88b9a788b4c65de4af673019171b652f344592a0c637f4f2243822`  
+		Last Modified: Mon, 29 Nov 2021 23:22:27 GMT  
+		Size: 10.1 MB (10062655 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:158e3a85f98ea7b30fff4c7c171575b174cc064a2bdd142eed3adfceee7e4d90`  
-		Last Modified: Fri, 05 Nov 2021 23:25:45 GMT  
-		Size: 1.2 MB (1237059 bytes)  
+	-	`sha256:875de71371bc78e595f9937f2dc1a1e2119a45b4f9732c2c8d4eacf0b0d4072f`  
+		Last Modified: Mon, 29 Nov 2021 23:22:25 GMT  
+		Size: 1.2 MB (1240716 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ac99d0d6ed0d3dc7499c6ad7b6676203e1979cf69b784056cbf307edba26ac74`  
-		Last Modified: Fri, 05 Nov 2021 23:25:48 GMT  
-		Size: 32.3 MB (32286157 bytes)  
+	-	`sha256:d7c79769032236e626de49ca857b3d8ed3ea8525625359a211b21aadc0e52419`  
+		Last Modified: Mon, 29 Nov 2021 23:22:28 GMT  
+		Size: 32.3 MB (32287399 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:757d8d19c56f00c00c4495ba9e91474da23ab5457640979b3c6944ae4368e64e`  
-		Last Modified: Fri, 05 Nov 2021 23:25:45 GMT  
-		Size: 1.2 KB (1217 bytes)  
+	-	`sha256:24f94dcb5767b62e76e50bbf2ae8372ea7f5b4f18e161f15314d824940ebbc57`  
+		Last Modified: Mon, 29 Nov 2021 23:22:24 GMT  
+		Size: 1.2 KB (1219 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdff6b41d7ecc3ed4fe74de8606336e3943b6eb5eaf9ed9a089ca996041570f3`  
-		Last Modified: Fri, 05 Nov 2021 23:25:45 GMT  
-		Size: 118.0 B  
+	-	`sha256:65c175a1cf0772afbb8626abd166a7fab08095f3dee1c483a853237e84842a05`  
+		Last Modified: Mon, 29 Nov 2021 23:22:24 GMT  
+		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `cassandra:3.0`
 
 ```console
-$ docker pull cassandra@sha256:2a04de0ea0a8e9b0c36b3c88db159d605650196acf915302227a1026a82dbf66
+$ docker pull cassandra@sha256:d3742421afca8203383c25e461b92fdbdb65088236bbfa48a6ca7f636e16850d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -584,14 +584,14 @@ CMD ["cassandra" "-f"]
 ### `cassandra:3.0` - linux; ppc64le
 
 ```console
-$ docker pull cassandra@sha256:e36480c730f897df709af4da5d97d15f3fb4ba8211a3d7a58811ac2b7631c33e
+$ docker pull cassandra@sha256:6257f683868cafaa42616ea6a111de67fbbbb88f7c61570758b10701596601eb
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **130.4 MB (130400228 bytes)**  
+-	Total Size: **139.6 MB (139594042 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b75a86391d51c664f1ed9cfd4a37d7c1f2c8acd3e0c8a5419667febbd76b694f`
+-	Image ID: `sha256:368a91264e814367e934270b9c16845c8482afe6a53b4a4eb2a90ce0f20d23b9`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -602,49 +602,49 @@ ADD file:9246bf887411af1b286de95d779c11581dcef3c0d5a29e434162f0c085a7ce85 in /
 CMD ["bash"]
 # Sat, 16 Oct 2021 00:54:47 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Sat, 16 Oct 2021 00:55:56 GMT
-RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 05 Nov 2021 20:39:01 GMT
+# Mon, 29 Nov 2021 20:18:28 GMT
+RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales python-is-python3     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Mon, 29 Nov 2021 20:18:32 GMT
 ENV JAVA_VERSION=jdk8u312-b07
-# Fri, 05 Nov 2021 20:40:43 GMT
+# Mon, 29 Nov 2021 20:19:18 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='961df2d520987c2252496fbee024f84c8c8c4d0be80e9fe043d221191666899e';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u312-b07/OpenJDK8U-jre_aarch64_linux_hotspot_8u312b07.tar.gz';          ;;        armhf|arm)          ESUM='5f37cbf311a5c2928aff8e83a82aebcf37b5911b193b5ab8538108381dcd6276';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u312-b07/OpenJDK8U-jre_arm_linux_hotspot_8u312b07.tar.gz';          apt-get update          && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1          && rm -rf /var/lib/apt/lists/*          ;;        ppc64el|powerpc:common64)          ESUM='7914a2efcb7edb28df71b2d4e5194907163da06841a16f7c8c96d60677551f93';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u312-b07/OpenJDK8U-jre_ppc64le_linux_hotspot_8u312b07.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='18fd13e77621f712326bfcf79c3e3cc08c880e3e4b8f63a1e5da619f3054b063';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u312-b07/OpenJDK8U-jre_x64_linux_hotspot_8u312b07.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 05 Nov 2021 20:40:49 GMT
+# Mon, 29 Nov 2021 20:19:22 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 05 Nov 2021 20:41:07 GMT
+# Mon, 29 Nov 2021 20:19:31 GMT
 RUN echo Verifying install ...     && echo java -version && java -version     && echo Complete.
-# Fri, 05 Nov 2021 23:19:19 GMT
+# Mon, 29 Nov 2021 23:17:25 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra
-# Fri, 05 Nov 2021 23:19:58 GMT
+# Mon, 29 Nov 2021 23:18:07 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libjemalloc2 		procps 		python 		iproute2 		numactl 	; 	rm -rf /var/lib/apt/lists/*; 	libjemalloc="$(readlink -e /usr/lib/*/libjemalloc.so.2)"; 	ln -sT "$libjemalloc" /usr/local/lib/libjemalloc.so; 	ldconfig
-# Fri, 05 Nov 2021 23:20:01 GMT
+# Mon, 29 Nov 2021 23:18:09 GMT
 ENV GOSU_VERSION=1.12
-# Fri, 05 Nov 2021 23:20:50 GMT
+# Mon, 29 Nov 2021 23:18:51 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Fri, 05 Nov 2021 23:20:55 GMT
+# Mon, 29 Nov 2021 23:18:53 GMT
 ENV CASSANDRA_HOME=/opt/cassandra
-# Fri, 05 Nov 2021 23:20:58 GMT
+# Mon, 29 Nov 2021 23:18:56 GMT
 ENV CASSANDRA_CONF=/etc/cassandra
-# Fri, 05 Nov 2021 23:21:00 GMT
+# Mon, 29 Nov 2021 23:18:57 GMT
 ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 05 Nov 2021 23:21:04 GMT
+# Mon, 29 Nov 2021 23:18:58 GMT
 ENV GPG_KEYS=CEC86BB4A0BA9D0F90397CAEF8358FA2F2833C93 	C4965EE9E3015D192CCCF2B6F758CE318D77295D 	5AED1BF378E9A19DADE1BCB34BD736A82B5C1B00 	514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB 	9E66CEC6106D578D0B1EB9BFF1000962B7F6840C 	C4009872C59B49561310D966D0062876AF30F054 	B7842CDAF36E6A3214FAE35D5E85B9AE0B84C041 	3E9C876907A560ACA00964F363E9BAD215BBF5F0 	F8B7FD00E05C932991A2CD6150EE103D162C5A55
-# Fri, 05 Nov 2021 23:23:02 GMT
+# Mon, 29 Nov 2021 23:20:17 GMT
 ENV CASSANDRA_VERSION=3.0.25
-# Fri, 05 Nov 2021 23:23:06 GMT
+# Mon, 29 Nov 2021 23:20:18 GMT
 ENV CASSANDRA_SHA512=a425485a995a8dba998303e368af3cabc322a824f9e42c9e30c4890a0fe186a6bfa19d18b00f2e0336c3c100c6461f191a3e78e201cc91e99f8b80d8df803fdc
-# Fri, 05 Nov 2021 23:24:00 GMT
+# Mon, 29 Nov 2021 23:21:13 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			if grep -q -- '^-Xss' "$CASSANDRA_CONF/jvm.options"; then 				grep -- '^-Xss256k$' "$CASSANDRA_CONF/jvm.options"; 				sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONF/jvm.options"; 				grep -- '^-Xss512k$' "$CASSANDRA_CONF/jvm.options"; 			elif grep -q -- '-Xss256k' "$CASSANDRA_CONF/cassandra-env.sh"; then 				sed -ri 's/-Xss256k/-Xss512k/g' "$CASSANDRA_CONF/cassandra-env.sh"; 				grep -- '-Xss512k' "$CASSANDRA_CONF/cassandra-env.sh"; 			fi; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod -R a+rwX "$CASSANDRA_CONF"; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v
-# Fri, 05 Nov 2021 23:24:07 GMT
+# Mon, 29 Nov 2021 23:21:15 GMT
 VOLUME [/var/lib/cassandra]
-# Fri, 05 Nov 2021 23:24:08 GMT
+# Mon, 29 Nov 2021 23:21:16 GMT
 COPY file:a8d4fc10252d8783a105c235b3eef2315dbe3b0b1be0f1e4650f19fa5a56ab29 in /usr/local/bin/ 
-# Fri, 05 Nov 2021 23:24:18 GMT
+# Mon, 29 Nov 2021 23:21:20 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat
-# Fri, 05 Nov 2021 23:24:36 GMT
+# Mon, 29 Nov 2021 23:21:22 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 05 Nov 2021 23:24:42 GMT
+# Mon, 29 Nov 2021 23:21:24 GMT
 EXPOSE 7000 7001 7199 9042 9160
-# Fri, 05 Nov 2021 23:24:47 GMT
+# Mon, 29 Nov 2021 23:21:26 GMT
 CMD ["cassandra" "-f"]
 ```
 
@@ -653,47 +653,47 @@ CMD ["cassandra" "-f"]
 		Last Modified: Sat, 16 Oct 2021 00:38:38 GMT  
 		Size: 33.3 MB (33287238 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90c930749dacf55e37561edab7967f5a2f51660034fee0da501c2d71cb783301`  
-		Last Modified: Sat, 16 Oct 2021 01:03:26 GMT  
-		Size: 17.2 MB (17210510 bytes)  
+	-	`sha256:4ce46da97c533978caacb28d5a66ed1f0b6374622ee6806ebe49cc2fa004597f`  
+		Last Modified: Mon, 29 Nov 2021 20:25:42 GMT  
+		Size: 26.6 MB (26647174 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8328ccd6508833e8a520d09389a536363c7280e58c4b718a755344474ea6d79d`  
-		Last Modified: Fri, 05 Nov 2021 20:48:15 GMT  
-		Size: 41.1 MB (41146765 bytes)  
+	-	`sha256:e386e1e9d0add1be2b71d7e39b10592132a504f31e78458b8b160b4016f0c892`  
+		Last Modified: Mon, 29 Nov 2021 20:26:12 GMT  
+		Size: 41.1 MB (41146752 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a25dcc78f9ba7858f03a4591c1a80c070df665d531f0423f0ab516d8604a64e2`  
-		Last Modified: Fri, 05 Nov 2021 20:48:08 GMT  
-		Size: 160.0 B  
+	-	`sha256:de30b2127c463bf175ec312573947431962e0b658fafe75d9e3dc99a6605cfd0`  
+		Last Modified: Mon, 29 Nov 2021 20:26:06 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a036e40a59cd63da939b05ef5f362a0390b5a48670f98ed96ccfaa58faf6550`  
-		Last Modified: Fri, 05 Nov 2021 23:25:48 GMT  
-		Size: 1.8 KB (1769 bytes)  
+	-	`sha256:47a46e1e75f4dab9b2c364ce161718b1d68ff014ef64438781a7a26641751ce8`  
+		Last Modified: Mon, 29 Nov 2021 23:22:27 GMT  
+		Size: 1.8 KB (1760 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a16efdfbd26a392884e016ef39cd8d57706705f4771bb1735f9308ded98eac36`  
-		Last Modified: Fri, 05 Nov 2021 23:25:47 GMT  
-		Size: 10.3 MB (10310424 bytes)  
+	-	`sha256:0295d4fb7f88b9a788b4c65de4af673019171b652f344592a0c637f4f2243822`  
+		Last Modified: Mon, 29 Nov 2021 23:22:27 GMT  
+		Size: 10.1 MB (10062655 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:158e3a85f98ea7b30fff4c7c171575b174cc064a2bdd142eed3adfceee7e4d90`  
-		Last Modified: Fri, 05 Nov 2021 23:25:45 GMT  
-		Size: 1.2 MB (1237059 bytes)  
+	-	`sha256:875de71371bc78e595f9937f2dc1a1e2119a45b4f9732c2c8d4eacf0b0d4072f`  
+		Last Modified: Mon, 29 Nov 2021 23:22:25 GMT  
+		Size: 1.2 MB (1240716 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2110434f0deb42020b7da90e815577e7626e504b9188226e9332bd76821292db`  
-		Last Modified: Fri, 05 Nov 2021 23:26:07 GMT  
-		Size: 27.2 MB (27204962 bytes)  
+	-	`sha256:f3c3d57636f8e1fdd705cb4b622a32fb426247bf22e36c9afb5aa54617063a29`  
+		Last Modified: Mon, 29 Nov 2021 23:22:45 GMT  
+		Size: 27.2 MB (27206245 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b5bfbb879078ee0cc64f8376c99c1dd6b24014cc6d5905b4ad442f7564c63d7f`  
-		Last Modified: Fri, 05 Nov 2021 23:26:03 GMT  
+	-	`sha256:9a5f93fb226f1cb9a249d68c7bf351356352bed8b7e9e33359ed2cfa0c2ce00e`  
+		Last Modified: Mon, 29 Nov 2021 23:22:43 GMT  
 		Size: 1.2 KB (1220 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:72eb21bf3f7f7b15cd8bb7bcf9983c1435dacae41062c06d9257b8bbaaa4450c`  
-		Last Modified: Fri, 05 Nov 2021 23:26:04 GMT  
+	-	`sha256:5fb1104d3888754e9f6afe019e518a243e3bc68da2668f80a573b9eae9df4ef2`  
+		Last Modified: Mon, 29 Nov 2021 23:22:42 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `cassandra:3.0.25`
 
 ```console
-$ docker pull cassandra@sha256:2a04de0ea0a8e9b0c36b3c88db159d605650196acf915302227a1026a82dbf66
+$ docker pull cassandra@sha256:d3742421afca8203383c25e461b92fdbdb65088236bbfa48a6ca7f636e16850d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -923,14 +923,14 @@ CMD ["cassandra" "-f"]
 ### `cassandra:3.0.25` - linux; ppc64le
 
 ```console
-$ docker pull cassandra@sha256:e36480c730f897df709af4da5d97d15f3fb4ba8211a3d7a58811ac2b7631c33e
+$ docker pull cassandra@sha256:6257f683868cafaa42616ea6a111de67fbbbb88f7c61570758b10701596601eb
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **130.4 MB (130400228 bytes)**  
+-	Total Size: **139.6 MB (139594042 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b75a86391d51c664f1ed9cfd4a37d7c1f2c8acd3e0c8a5419667febbd76b694f`
+-	Image ID: `sha256:368a91264e814367e934270b9c16845c8482afe6a53b4a4eb2a90ce0f20d23b9`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -941,49 +941,49 @@ ADD file:9246bf887411af1b286de95d779c11581dcef3c0d5a29e434162f0c085a7ce85 in /
 CMD ["bash"]
 # Sat, 16 Oct 2021 00:54:47 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Sat, 16 Oct 2021 00:55:56 GMT
-RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 05 Nov 2021 20:39:01 GMT
+# Mon, 29 Nov 2021 20:18:28 GMT
+RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales python-is-python3     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Mon, 29 Nov 2021 20:18:32 GMT
 ENV JAVA_VERSION=jdk8u312-b07
-# Fri, 05 Nov 2021 20:40:43 GMT
+# Mon, 29 Nov 2021 20:19:18 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='961df2d520987c2252496fbee024f84c8c8c4d0be80e9fe043d221191666899e';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u312-b07/OpenJDK8U-jre_aarch64_linux_hotspot_8u312b07.tar.gz';          ;;        armhf|arm)          ESUM='5f37cbf311a5c2928aff8e83a82aebcf37b5911b193b5ab8538108381dcd6276';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u312-b07/OpenJDK8U-jre_arm_linux_hotspot_8u312b07.tar.gz';          apt-get update          && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1          && rm -rf /var/lib/apt/lists/*          ;;        ppc64el|powerpc:common64)          ESUM='7914a2efcb7edb28df71b2d4e5194907163da06841a16f7c8c96d60677551f93';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u312-b07/OpenJDK8U-jre_ppc64le_linux_hotspot_8u312b07.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='18fd13e77621f712326bfcf79c3e3cc08c880e3e4b8f63a1e5da619f3054b063';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u312-b07/OpenJDK8U-jre_x64_linux_hotspot_8u312b07.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 05 Nov 2021 20:40:49 GMT
+# Mon, 29 Nov 2021 20:19:22 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 05 Nov 2021 20:41:07 GMT
+# Mon, 29 Nov 2021 20:19:31 GMT
 RUN echo Verifying install ...     && echo java -version && java -version     && echo Complete.
-# Fri, 05 Nov 2021 23:19:19 GMT
+# Mon, 29 Nov 2021 23:17:25 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra
-# Fri, 05 Nov 2021 23:19:58 GMT
+# Mon, 29 Nov 2021 23:18:07 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libjemalloc2 		procps 		python 		iproute2 		numactl 	; 	rm -rf /var/lib/apt/lists/*; 	libjemalloc="$(readlink -e /usr/lib/*/libjemalloc.so.2)"; 	ln -sT "$libjemalloc" /usr/local/lib/libjemalloc.so; 	ldconfig
-# Fri, 05 Nov 2021 23:20:01 GMT
+# Mon, 29 Nov 2021 23:18:09 GMT
 ENV GOSU_VERSION=1.12
-# Fri, 05 Nov 2021 23:20:50 GMT
+# Mon, 29 Nov 2021 23:18:51 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Fri, 05 Nov 2021 23:20:55 GMT
+# Mon, 29 Nov 2021 23:18:53 GMT
 ENV CASSANDRA_HOME=/opt/cassandra
-# Fri, 05 Nov 2021 23:20:58 GMT
+# Mon, 29 Nov 2021 23:18:56 GMT
 ENV CASSANDRA_CONF=/etc/cassandra
-# Fri, 05 Nov 2021 23:21:00 GMT
+# Mon, 29 Nov 2021 23:18:57 GMT
 ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 05 Nov 2021 23:21:04 GMT
+# Mon, 29 Nov 2021 23:18:58 GMT
 ENV GPG_KEYS=CEC86BB4A0BA9D0F90397CAEF8358FA2F2833C93 	C4965EE9E3015D192CCCF2B6F758CE318D77295D 	5AED1BF378E9A19DADE1BCB34BD736A82B5C1B00 	514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB 	9E66CEC6106D578D0B1EB9BFF1000962B7F6840C 	C4009872C59B49561310D966D0062876AF30F054 	B7842CDAF36E6A3214FAE35D5E85B9AE0B84C041 	3E9C876907A560ACA00964F363E9BAD215BBF5F0 	F8B7FD00E05C932991A2CD6150EE103D162C5A55
-# Fri, 05 Nov 2021 23:23:02 GMT
+# Mon, 29 Nov 2021 23:20:17 GMT
 ENV CASSANDRA_VERSION=3.0.25
-# Fri, 05 Nov 2021 23:23:06 GMT
+# Mon, 29 Nov 2021 23:20:18 GMT
 ENV CASSANDRA_SHA512=a425485a995a8dba998303e368af3cabc322a824f9e42c9e30c4890a0fe186a6bfa19d18b00f2e0336c3c100c6461f191a3e78e201cc91e99f8b80d8df803fdc
-# Fri, 05 Nov 2021 23:24:00 GMT
+# Mon, 29 Nov 2021 23:21:13 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			if grep -q -- '^-Xss' "$CASSANDRA_CONF/jvm.options"; then 				grep -- '^-Xss256k$' "$CASSANDRA_CONF/jvm.options"; 				sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONF/jvm.options"; 				grep -- '^-Xss512k$' "$CASSANDRA_CONF/jvm.options"; 			elif grep -q -- '-Xss256k' "$CASSANDRA_CONF/cassandra-env.sh"; then 				sed -ri 's/-Xss256k/-Xss512k/g' "$CASSANDRA_CONF/cassandra-env.sh"; 				grep -- '-Xss512k' "$CASSANDRA_CONF/cassandra-env.sh"; 			fi; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod -R a+rwX "$CASSANDRA_CONF"; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v
-# Fri, 05 Nov 2021 23:24:07 GMT
+# Mon, 29 Nov 2021 23:21:15 GMT
 VOLUME [/var/lib/cassandra]
-# Fri, 05 Nov 2021 23:24:08 GMT
+# Mon, 29 Nov 2021 23:21:16 GMT
 COPY file:a8d4fc10252d8783a105c235b3eef2315dbe3b0b1be0f1e4650f19fa5a56ab29 in /usr/local/bin/ 
-# Fri, 05 Nov 2021 23:24:18 GMT
+# Mon, 29 Nov 2021 23:21:20 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat
-# Fri, 05 Nov 2021 23:24:36 GMT
+# Mon, 29 Nov 2021 23:21:22 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 05 Nov 2021 23:24:42 GMT
+# Mon, 29 Nov 2021 23:21:24 GMT
 EXPOSE 7000 7001 7199 9042 9160
-# Fri, 05 Nov 2021 23:24:47 GMT
+# Mon, 29 Nov 2021 23:21:26 GMT
 CMD ["cassandra" "-f"]
 ```
 
@@ -992,47 +992,47 @@ CMD ["cassandra" "-f"]
 		Last Modified: Sat, 16 Oct 2021 00:38:38 GMT  
 		Size: 33.3 MB (33287238 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90c930749dacf55e37561edab7967f5a2f51660034fee0da501c2d71cb783301`  
-		Last Modified: Sat, 16 Oct 2021 01:03:26 GMT  
-		Size: 17.2 MB (17210510 bytes)  
+	-	`sha256:4ce46da97c533978caacb28d5a66ed1f0b6374622ee6806ebe49cc2fa004597f`  
+		Last Modified: Mon, 29 Nov 2021 20:25:42 GMT  
+		Size: 26.6 MB (26647174 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8328ccd6508833e8a520d09389a536363c7280e58c4b718a755344474ea6d79d`  
-		Last Modified: Fri, 05 Nov 2021 20:48:15 GMT  
-		Size: 41.1 MB (41146765 bytes)  
+	-	`sha256:e386e1e9d0add1be2b71d7e39b10592132a504f31e78458b8b160b4016f0c892`  
+		Last Modified: Mon, 29 Nov 2021 20:26:12 GMT  
+		Size: 41.1 MB (41146752 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a25dcc78f9ba7858f03a4591c1a80c070df665d531f0423f0ab516d8604a64e2`  
-		Last Modified: Fri, 05 Nov 2021 20:48:08 GMT  
-		Size: 160.0 B  
+	-	`sha256:de30b2127c463bf175ec312573947431962e0b658fafe75d9e3dc99a6605cfd0`  
+		Last Modified: Mon, 29 Nov 2021 20:26:06 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a036e40a59cd63da939b05ef5f362a0390b5a48670f98ed96ccfaa58faf6550`  
-		Last Modified: Fri, 05 Nov 2021 23:25:48 GMT  
-		Size: 1.8 KB (1769 bytes)  
+	-	`sha256:47a46e1e75f4dab9b2c364ce161718b1d68ff014ef64438781a7a26641751ce8`  
+		Last Modified: Mon, 29 Nov 2021 23:22:27 GMT  
+		Size: 1.8 KB (1760 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a16efdfbd26a392884e016ef39cd8d57706705f4771bb1735f9308ded98eac36`  
-		Last Modified: Fri, 05 Nov 2021 23:25:47 GMT  
-		Size: 10.3 MB (10310424 bytes)  
+	-	`sha256:0295d4fb7f88b9a788b4c65de4af673019171b652f344592a0c637f4f2243822`  
+		Last Modified: Mon, 29 Nov 2021 23:22:27 GMT  
+		Size: 10.1 MB (10062655 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:158e3a85f98ea7b30fff4c7c171575b174cc064a2bdd142eed3adfceee7e4d90`  
-		Last Modified: Fri, 05 Nov 2021 23:25:45 GMT  
-		Size: 1.2 MB (1237059 bytes)  
+	-	`sha256:875de71371bc78e595f9937f2dc1a1e2119a45b4f9732c2c8d4eacf0b0d4072f`  
+		Last Modified: Mon, 29 Nov 2021 23:22:25 GMT  
+		Size: 1.2 MB (1240716 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2110434f0deb42020b7da90e815577e7626e504b9188226e9332bd76821292db`  
-		Last Modified: Fri, 05 Nov 2021 23:26:07 GMT  
-		Size: 27.2 MB (27204962 bytes)  
+	-	`sha256:f3c3d57636f8e1fdd705cb4b622a32fb426247bf22e36c9afb5aa54617063a29`  
+		Last Modified: Mon, 29 Nov 2021 23:22:45 GMT  
+		Size: 27.2 MB (27206245 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b5bfbb879078ee0cc64f8376c99c1dd6b24014cc6d5905b4ad442f7564c63d7f`  
-		Last Modified: Fri, 05 Nov 2021 23:26:03 GMT  
+	-	`sha256:9a5f93fb226f1cb9a249d68c7bf351356352bed8b7e9e33359ed2cfa0c2ce00e`  
+		Last Modified: Mon, 29 Nov 2021 23:22:43 GMT  
 		Size: 1.2 KB (1220 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:72eb21bf3f7f7b15cd8bb7bcf9983c1435dacae41062c06d9257b8bbaaa4450c`  
-		Last Modified: Fri, 05 Nov 2021 23:26:04 GMT  
+	-	`sha256:5fb1104d3888754e9f6afe019e518a243e3bc68da2668f80a573b9eae9df4ef2`  
+		Last Modified: Mon, 29 Nov 2021 23:22:42 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `cassandra:3.11`
 
 ```console
-$ docker pull cassandra@sha256:72f01aa0bb77ef7037cca761eca460d24f60b9432a3d38fd63a0b8c8f808eeaa
+$ docker pull cassandra@sha256:a0e7b4d7a8f63ce68023df70a6adc4a0ef18fd0ee0dc9df76b075599ddec4656
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1262,14 +1262,14 @@ CMD ["cassandra" "-f"]
 ### `cassandra:3.11` - linux; ppc64le
 
 ```console
-$ docker pull cassandra@sha256:bb1ee67cc6c5db68b3e11e7d29f39572d661b1b8e0b64a81519b130a2fdeafcb
+$ docker pull cassandra@sha256:b7944eafeacc77a7f28d6bb2172456cbcddc4efb0ffc44c9ba50b61e77bbfea2
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **135.5 MB (135481417 bytes)**  
+-	Total Size: **144.7 MB (144675195 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:31219d0a0ec21a876fce84a53014fbc4e3fb88d46c76cfa88f6d201ca5f07c88`
+-	Image ID: `sha256:44c5baab56b01257e73ddb4c64c1dc88b2de92ae932d93d3e4f6ca3d21925a39`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -1280,49 +1280,49 @@ ADD file:9246bf887411af1b286de95d779c11581dcef3c0d5a29e434162f0c085a7ce85 in /
 CMD ["bash"]
 # Sat, 16 Oct 2021 00:54:47 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Sat, 16 Oct 2021 00:55:56 GMT
-RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 05 Nov 2021 20:39:01 GMT
+# Mon, 29 Nov 2021 20:18:28 GMT
+RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales python-is-python3     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Mon, 29 Nov 2021 20:18:32 GMT
 ENV JAVA_VERSION=jdk8u312-b07
-# Fri, 05 Nov 2021 20:40:43 GMT
+# Mon, 29 Nov 2021 20:19:18 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='961df2d520987c2252496fbee024f84c8c8c4d0be80e9fe043d221191666899e';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u312-b07/OpenJDK8U-jre_aarch64_linux_hotspot_8u312b07.tar.gz';          ;;        armhf|arm)          ESUM='5f37cbf311a5c2928aff8e83a82aebcf37b5911b193b5ab8538108381dcd6276';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u312-b07/OpenJDK8U-jre_arm_linux_hotspot_8u312b07.tar.gz';          apt-get update          && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1          && rm -rf /var/lib/apt/lists/*          ;;        ppc64el|powerpc:common64)          ESUM='7914a2efcb7edb28df71b2d4e5194907163da06841a16f7c8c96d60677551f93';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u312-b07/OpenJDK8U-jre_ppc64le_linux_hotspot_8u312b07.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='18fd13e77621f712326bfcf79c3e3cc08c880e3e4b8f63a1e5da619f3054b063';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u312-b07/OpenJDK8U-jre_x64_linux_hotspot_8u312b07.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 05 Nov 2021 20:40:49 GMT
+# Mon, 29 Nov 2021 20:19:22 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 05 Nov 2021 20:41:07 GMT
+# Mon, 29 Nov 2021 20:19:31 GMT
 RUN echo Verifying install ...     && echo java -version && java -version     && echo Complete.
-# Fri, 05 Nov 2021 23:19:19 GMT
+# Mon, 29 Nov 2021 23:17:25 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra
-# Fri, 05 Nov 2021 23:19:58 GMT
+# Mon, 29 Nov 2021 23:18:07 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libjemalloc2 		procps 		python 		iproute2 		numactl 	; 	rm -rf /var/lib/apt/lists/*; 	libjemalloc="$(readlink -e /usr/lib/*/libjemalloc.so.2)"; 	ln -sT "$libjemalloc" /usr/local/lib/libjemalloc.so; 	ldconfig
-# Fri, 05 Nov 2021 23:20:01 GMT
+# Mon, 29 Nov 2021 23:18:09 GMT
 ENV GOSU_VERSION=1.12
-# Fri, 05 Nov 2021 23:20:50 GMT
+# Mon, 29 Nov 2021 23:18:51 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Fri, 05 Nov 2021 23:20:55 GMT
+# Mon, 29 Nov 2021 23:18:53 GMT
 ENV CASSANDRA_HOME=/opt/cassandra
-# Fri, 05 Nov 2021 23:20:58 GMT
+# Mon, 29 Nov 2021 23:18:56 GMT
 ENV CASSANDRA_CONF=/etc/cassandra
-# Fri, 05 Nov 2021 23:21:00 GMT
+# Mon, 29 Nov 2021 23:18:57 GMT
 ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 05 Nov 2021 23:21:04 GMT
+# Mon, 29 Nov 2021 23:18:58 GMT
 ENV GPG_KEYS=CEC86BB4A0BA9D0F90397CAEF8358FA2F2833C93 	C4965EE9E3015D192CCCF2B6F758CE318D77295D 	5AED1BF378E9A19DADE1BCB34BD736A82B5C1B00 	514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB 	9E66CEC6106D578D0B1EB9BFF1000962B7F6840C 	C4009872C59B49561310D966D0062876AF30F054 	B7842CDAF36E6A3214FAE35D5E85B9AE0B84C041 	3E9C876907A560ACA00964F363E9BAD215BBF5F0 	F8B7FD00E05C932991A2CD6150EE103D162C5A55
-# Fri, 05 Nov 2021 23:21:06 GMT
+# Mon, 29 Nov 2021 23:18:59 GMT
 ENV CASSANDRA_VERSION=3.11.11
-# Fri, 05 Nov 2021 23:21:08 GMT
+# Mon, 29 Nov 2021 23:19:00 GMT
 ENV CASSANDRA_SHA512=5a7dc4237c9f43526b63cae62f04d73ec60f28e86ee1dd4bd4aaa55d2063d74fe842e015f7f68512db7deadbe52cab37417341183a716c191035463992e42d37
-# Fri, 05 Nov 2021 23:22:29 GMT
+# Mon, 29 Nov 2021 23:19:45 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			if grep -q -- '^-Xss' "$CASSANDRA_CONF/jvm.options"; then 				grep -- '^-Xss256k$' "$CASSANDRA_CONF/jvm.options"; 				sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONF/jvm.options"; 				grep -- '^-Xss512k$' "$CASSANDRA_CONF/jvm.options"; 			elif grep -q -- '-Xss256k' "$CASSANDRA_CONF/cassandra-env.sh"; then 				sed -ri 's/-Xss256k/-Xss512k/g' "$CASSANDRA_CONF/cassandra-env.sh"; 				grep -- '-Xss512k' "$CASSANDRA_CONF/cassandra-env.sh"; 			fi; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod -R a+rwX "$CASSANDRA_CONF"; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v
-# Fri, 05 Nov 2021 23:22:32 GMT
+# Mon, 29 Nov 2021 23:19:47 GMT
 VOLUME [/var/lib/cassandra]
-# Fri, 05 Nov 2021 23:22:36 GMT
+# Mon, 29 Nov 2021 23:19:48 GMT
 COPY file:a8d4fc10252d8783a105c235b3eef2315dbe3b0b1be0f1e4650f19fa5a56ab29 in /usr/local/bin/ 
-# Fri, 05 Nov 2021 23:22:41 GMT
+# Mon, 29 Nov 2021 23:19:52 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat
-# Fri, 05 Nov 2021 23:22:46 GMT
+# Mon, 29 Nov 2021 23:19:54 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 05 Nov 2021 23:22:48 GMT
+# Mon, 29 Nov 2021 23:19:56 GMT
 EXPOSE 7000 7001 7199 9042 9160
-# Fri, 05 Nov 2021 23:22:51 GMT
+# Mon, 29 Nov 2021 23:19:58 GMT
 CMD ["cassandra" "-f"]
 ```
 
@@ -1331,47 +1331,47 @@ CMD ["cassandra" "-f"]
 		Last Modified: Sat, 16 Oct 2021 00:38:38 GMT  
 		Size: 33.3 MB (33287238 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90c930749dacf55e37561edab7967f5a2f51660034fee0da501c2d71cb783301`  
-		Last Modified: Sat, 16 Oct 2021 01:03:26 GMT  
-		Size: 17.2 MB (17210510 bytes)  
+	-	`sha256:4ce46da97c533978caacb28d5a66ed1f0b6374622ee6806ebe49cc2fa004597f`  
+		Last Modified: Mon, 29 Nov 2021 20:25:42 GMT  
+		Size: 26.6 MB (26647174 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8328ccd6508833e8a520d09389a536363c7280e58c4b718a755344474ea6d79d`  
-		Last Modified: Fri, 05 Nov 2021 20:48:15 GMT  
-		Size: 41.1 MB (41146765 bytes)  
+	-	`sha256:e386e1e9d0add1be2b71d7e39b10592132a504f31e78458b8b160b4016f0c892`  
+		Last Modified: Mon, 29 Nov 2021 20:26:12 GMT  
+		Size: 41.1 MB (41146752 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a25dcc78f9ba7858f03a4591c1a80c070df665d531f0423f0ab516d8604a64e2`  
-		Last Modified: Fri, 05 Nov 2021 20:48:08 GMT  
-		Size: 160.0 B  
+	-	`sha256:de30b2127c463bf175ec312573947431962e0b658fafe75d9e3dc99a6605cfd0`  
+		Last Modified: Mon, 29 Nov 2021 20:26:06 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a036e40a59cd63da939b05ef5f362a0390b5a48670f98ed96ccfaa58faf6550`  
-		Last Modified: Fri, 05 Nov 2021 23:25:48 GMT  
-		Size: 1.8 KB (1769 bytes)  
+	-	`sha256:47a46e1e75f4dab9b2c364ce161718b1d68ff014ef64438781a7a26641751ce8`  
+		Last Modified: Mon, 29 Nov 2021 23:22:27 GMT  
+		Size: 1.8 KB (1760 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a16efdfbd26a392884e016ef39cd8d57706705f4771bb1735f9308ded98eac36`  
-		Last Modified: Fri, 05 Nov 2021 23:25:47 GMT  
-		Size: 10.3 MB (10310424 bytes)  
+	-	`sha256:0295d4fb7f88b9a788b4c65de4af673019171b652f344592a0c637f4f2243822`  
+		Last Modified: Mon, 29 Nov 2021 23:22:27 GMT  
+		Size: 10.1 MB (10062655 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:158e3a85f98ea7b30fff4c7c171575b174cc064a2bdd142eed3adfceee7e4d90`  
-		Last Modified: Fri, 05 Nov 2021 23:25:45 GMT  
-		Size: 1.2 MB (1237059 bytes)  
+	-	`sha256:875de71371bc78e595f9937f2dc1a1e2119a45b4f9732c2c8d4eacf0b0d4072f`  
+		Last Modified: Mon, 29 Nov 2021 23:22:25 GMT  
+		Size: 1.2 MB (1240716 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ac99d0d6ed0d3dc7499c6ad7b6676203e1979cf69b784056cbf307edba26ac74`  
-		Last Modified: Fri, 05 Nov 2021 23:25:48 GMT  
-		Size: 32.3 MB (32286157 bytes)  
+	-	`sha256:d7c79769032236e626de49ca857b3d8ed3ea8525625359a211b21aadc0e52419`  
+		Last Modified: Mon, 29 Nov 2021 23:22:28 GMT  
+		Size: 32.3 MB (32287399 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:757d8d19c56f00c00c4495ba9e91474da23ab5457640979b3c6944ae4368e64e`  
-		Last Modified: Fri, 05 Nov 2021 23:25:45 GMT  
-		Size: 1.2 KB (1217 bytes)  
+	-	`sha256:24f94dcb5767b62e76e50bbf2ae8372ea7f5b4f18e161f15314d824940ebbc57`  
+		Last Modified: Mon, 29 Nov 2021 23:22:24 GMT  
+		Size: 1.2 KB (1219 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdff6b41d7ecc3ed4fe74de8606336e3943b6eb5eaf9ed9a089ca996041570f3`  
-		Last Modified: Fri, 05 Nov 2021 23:25:45 GMT  
-		Size: 118.0 B  
+	-	`sha256:65c175a1cf0772afbb8626abd166a7fab08095f3dee1c483a853237e84842a05`  
+		Last Modified: Mon, 29 Nov 2021 23:22:24 GMT  
+		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `cassandra:3.11.11`
 
 ```console
-$ docker pull cassandra@sha256:72f01aa0bb77ef7037cca761eca460d24f60b9432a3d38fd63a0b8c8f808eeaa
+$ docker pull cassandra@sha256:a0e7b4d7a8f63ce68023df70a6adc4a0ef18fd0ee0dc9df76b075599ddec4656
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1601,14 +1601,14 @@ CMD ["cassandra" "-f"]
 ### `cassandra:3.11.11` - linux; ppc64le
 
 ```console
-$ docker pull cassandra@sha256:bb1ee67cc6c5db68b3e11e7d29f39572d661b1b8e0b64a81519b130a2fdeafcb
+$ docker pull cassandra@sha256:b7944eafeacc77a7f28d6bb2172456cbcddc4efb0ffc44c9ba50b61e77bbfea2
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **135.5 MB (135481417 bytes)**  
+-	Total Size: **144.7 MB (144675195 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:31219d0a0ec21a876fce84a53014fbc4e3fb88d46c76cfa88f6d201ca5f07c88`
+-	Image ID: `sha256:44c5baab56b01257e73ddb4c64c1dc88b2de92ae932d93d3e4f6ca3d21925a39`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -1619,49 +1619,49 @@ ADD file:9246bf887411af1b286de95d779c11581dcef3c0d5a29e434162f0c085a7ce85 in /
 CMD ["bash"]
 # Sat, 16 Oct 2021 00:54:47 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Sat, 16 Oct 2021 00:55:56 GMT
-RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 05 Nov 2021 20:39:01 GMT
+# Mon, 29 Nov 2021 20:18:28 GMT
+RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales python-is-python3     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Mon, 29 Nov 2021 20:18:32 GMT
 ENV JAVA_VERSION=jdk8u312-b07
-# Fri, 05 Nov 2021 20:40:43 GMT
+# Mon, 29 Nov 2021 20:19:18 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='961df2d520987c2252496fbee024f84c8c8c4d0be80e9fe043d221191666899e';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u312-b07/OpenJDK8U-jre_aarch64_linux_hotspot_8u312b07.tar.gz';          ;;        armhf|arm)          ESUM='5f37cbf311a5c2928aff8e83a82aebcf37b5911b193b5ab8538108381dcd6276';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u312-b07/OpenJDK8U-jre_arm_linux_hotspot_8u312b07.tar.gz';          apt-get update          && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1          && rm -rf /var/lib/apt/lists/*          ;;        ppc64el|powerpc:common64)          ESUM='7914a2efcb7edb28df71b2d4e5194907163da06841a16f7c8c96d60677551f93';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u312-b07/OpenJDK8U-jre_ppc64le_linux_hotspot_8u312b07.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='18fd13e77621f712326bfcf79c3e3cc08c880e3e4b8f63a1e5da619f3054b063';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u312-b07/OpenJDK8U-jre_x64_linux_hotspot_8u312b07.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 05 Nov 2021 20:40:49 GMT
+# Mon, 29 Nov 2021 20:19:22 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 05 Nov 2021 20:41:07 GMT
+# Mon, 29 Nov 2021 20:19:31 GMT
 RUN echo Verifying install ...     && echo java -version && java -version     && echo Complete.
-# Fri, 05 Nov 2021 23:19:19 GMT
+# Mon, 29 Nov 2021 23:17:25 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra
-# Fri, 05 Nov 2021 23:19:58 GMT
+# Mon, 29 Nov 2021 23:18:07 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libjemalloc2 		procps 		python 		iproute2 		numactl 	; 	rm -rf /var/lib/apt/lists/*; 	libjemalloc="$(readlink -e /usr/lib/*/libjemalloc.so.2)"; 	ln -sT "$libjemalloc" /usr/local/lib/libjemalloc.so; 	ldconfig
-# Fri, 05 Nov 2021 23:20:01 GMT
+# Mon, 29 Nov 2021 23:18:09 GMT
 ENV GOSU_VERSION=1.12
-# Fri, 05 Nov 2021 23:20:50 GMT
+# Mon, 29 Nov 2021 23:18:51 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Fri, 05 Nov 2021 23:20:55 GMT
+# Mon, 29 Nov 2021 23:18:53 GMT
 ENV CASSANDRA_HOME=/opt/cassandra
-# Fri, 05 Nov 2021 23:20:58 GMT
+# Mon, 29 Nov 2021 23:18:56 GMT
 ENV CASSANDRA_CONF=/etc/cassandra
-# Fri, 05 Nov 2021 23:21:00 GMT
+# Mon, 29 Nov 2021 23:18:57 GMT
 ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 05 Nov 2021 23:21:04 GMT
+# Mon, 29 Nov 2021 23:18:58 GMT
 ENV GPG_KEYS=CEC86BB4A0BA9D0F90397CAEF8358FA2F2833C93 	C4965EE9E3015D192CCCF2B6F758CE318D77295D 	5AED1BF378E9A19DADE1BCB34BD736A82B5C1B00 	514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB 	9E66CEC6106D578D0B1EB9BFF1000962B7F6840C 	C4009872C59B49561310D966D0062876AF30F054 	B7842CDAF36E6A3214FAE35D5E85B9AE0B84C041 	3E9C876907A560ACA00964F363E9BAD215BBF5F0 	F8B7FD00E05C932991A2CD6150EE103D162C5A55
-# Fri, 05 Nov 2021 23:21:06 GMT
+# Mon, 29 Nov 2021 23:18:59 GMT
 ENV CASSANDRA_VERSION=3.11.11
-# Fri, 05 Nov 2021 23:21:08 GMT
+# Mon, 29 Nov 2021 23:19:00 GMT
 ENV CASSANDRA_SHA512=5a7dc4237c9f43526b63cae62f04d73ec60f28e86ee1dd4bd4aaa55d2063d74fe842e015f7f68512db7deadbe52cab37417341183a716c191035463992e42d37
-# Fri, 05 Nov 2021 23:22:29 GMT
+# Mon, 29 Nov 2021 23:19:45 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			if grep -q -- '^-Xss' "$CASSANDRA_CONF/jvm.options"; then 				grep -- '^-Xss256k$' "$CASSANDRA_CONF/jvm.options"; 				sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONF/jvm.options"; 				grep -- '^-Xss512k$' "$CASSANDRA_CONF/jvm.options"; 			elif grep -q -- '-Xss256k' "$CASSANDRA_CONF/cassandra-env.sh"; then 				sed -ri 's/-Xss256k/-Xss512k/g' "$CASSANDRA_CONF/cassandra-env.sh"; 				grep -- '-Xss512k' "$CASSANDRA_CONF/cassandra-env.sh"; 			fi; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod -R a+rwX "$CASSANDRA_CONF"; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v
-# Fri, 05 Nov 2021 23:22:32 GMT
+# Mon, 29 Nov 2021 23:19:47 GMT
 VOLUME [/var/lib/cassandra]
-# Fri, 05 Nov 2021 23:22:36 GMT
+# Mon, 29 Nov 2021 23:19:48 GMT
 COPY file:a8d4fc10252d8783a105c235b3eef2315dbe3b0b1be0f1e4650f19fa5a56ab29 in /usr/local/bin/ 
-# Fri, 05 Nov 2021 23:22:41 GMT
+# Mon, 29 Nov 2021 23:19:52 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat
-# Fri, 05 Nov 2021 23:22:46 GMT
+# Mon, 29 Nov 2021 23:19:54 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 05 Nov 2021 23:22:48 GMT
+# Mon, 29 Nov 2021 23:19:56 GMT
 EXPOSE 7000 7001 7199 9042 9160
-# Fri, 05 Nov 2021 23:22:51 GMT
+# Mon, 29 Nov 2021 23:19:58 GMT
 CMD ["cassandra" "-f"]
 ```
 
@@ -1670,47 +1670,47 @@ CMD ["cassandra" "-f"]
 		Last Modified: Sat, 16 Oct 2021 00:38:38 GMT  
 		Size: 33.3 MB (33287238 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90c930749dacf55e37561edab7967f5a2f51660034fee0da501c2d71cb783301`  
-		Last Modified: Sat, 16 Oct 2021 01:03:26 GMT  
-		Size: 17.2 MB (17210510 bytes)  
+	-	`sha256:4ce46da97c533978caacb28d5a66ed1f0b6374622ee6806ebe49cc2fa004597f`  
+		Last Modified: Mon, 29 Nov 2021 20:25:42 GMT  
+		Size: 26.6 MB (26647174 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8328ccd6508833e8a520d09389a536363c7280e58c4b718a755344474ea6d79d`  
-		Last Modified: Fri, 05 Nov 2021 20:48:15 GMT  
-		Size: 41.1 MB (41146765 bytes)  
+	-	`sha256:e386e1e9d0add1be2b71d7e39b10592132a504f31e78458b8b160b4016f0c892`  
+		Last Modified: Mon, 29 Nov 2021 20:26:12 GMT  
+		Size: 41.1 MB (41146752 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a25dcc78f9ba7858f03a4591c1a80c070df665d531f0423f0ab516d8604a64e2`  
-		Last Modified: Fri, 05 Nov 2021 20:48:08 GMT  
-		Size: 160.0 B  
+	-	`sha256:de30b2127c463bf175ec312573947431962e0b658fafe75d9e3dc99a6605cfd0`  
+		Last Modified: Mon, 29 Nov 2021 20:26:06 GMT  
+		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a036e40a59cd63da939b05ef5f362a0390b5a48670f98ed96ccfaa58faf6550`  
-		Last Modified: Fri, 05 Nov 2021 23:25:48 GMT  
-		Size: 1.8 KB (1769 bytes)  
+	-	`sha256:47a46e1e75f4dab9b2c364ce161718b1d68ff014ef64438781a7a26641751ce8`  
+		Last Modified: Mon, 29 Nov 2021 23:22:27 GMT  
+		Size: 1.8 KB (1760 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a16efdfbd26a392884e016ef39cd8d57706705f4771bb1735f9308ded98eac36`  
-		Last Modified: Fri, 05 Nov 2021 23:25:47 GMT  
-		Size: 10.3 MB (10310424 bytes)  
+	-	`sha256:0295d4fb7f88b9a788b4c65de4af673019171b652f344592a0c637f4f2243822`  
+		Last Modified: Mon, 29 Nov 2021 23:22:27 GMT  
+		Size: 10.1 MB (10062655 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:158e3a85f98ea7b30fff4c7c171575b174cc064a2bdd142eed3adfceee7e4d90`  
-		Last Modified: Fri, 05 Nov 2021 23:25:45 GMT  
-		Size: 1.2 MB (1237059 bytes)  
+	-	`sha256:875de71371bc78e595f9937f2dc1a1e2119a45b4f9732c2c8d4eacf0b0d4072f`  
+		Last Modified: Mon, 29 Nov 2021 23:22:25 GMT  
+		Size: 1.2 MB (1240716 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ac99d0d6ed0d3dc7499c6ad7b6676203e1979cf69b784056cbf307edba26ac74`  
-		Last Modified: Fri, 05 Nov 2021 23:25:48 GMT  
-		Size: 32.3 MB (32286157 bytes)  
+	-	`sha256:d7c79769032236e626de49ca857b3d8ed3ea8525625359a211b21aadc0e52419`  
+		Last Modified: Mon, 29 Nov 2021 23:22:28 GMT  
+		Size: 32.3 MB (32287399 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:757d8d19c56f00c00c4495ba9e91474da23ab5457640979b3c6944ae4368e64e`  
-		Last Modified: Fri, 05 Nov 2021 23:25:45 GMT  
-		Size: 1.2 KB (1217 bytes)  
+	-	`sha256:24f94dcb5767b62e76e50bbf2ae8372ea7f5b4f18e161f15314d824940ebbc57`  
+		Last Modified: Mon, 29 Nov 2021 23:22:24 GMT  
+		Size: 1.2 KB (1219 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdff6b41d7ecc3ed4fe74de8606336e3943b6eb5eaf9ed9a089ca996041570f3`  
-		Last Modified: Fri, 05 Nov 2021 23:25:45 GMT  
-		Size: 118.0 B  
+	-	`sha256:65c175a1cf0772afbb8626abd166a7fab08095f3dee1c483a853237e84842a05`  
+		Last Modified: Mon, 29 Nov 2021 23:22:24 GMT  
+		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `cassandra:4`
 
 ```console
-$ docker pull cassandra@sha256:d454c3af427ba44cfb6313b4c1bef0ed9caf882cb56b57cab9189f286564b767
+$ docker pull cassandra@sha256:0009469a5287899f69aea74a92cb6498f284b7d6db7e407c06ac02d89c6bf7ec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2032,14 +2032,14 @@ CMD ["cassandra" "-f"]
 ### `cassandra:4` - linux; ppc64le
 
 ```console
-$ docker pull cassandra@sha256:8d66a0aefdbc22956ed12a9c63fc4f54f5ec309edf7f0bc570172a1eb27af3a4
+$ docker pull cassandra@sha256:12385626754700a983fbe275018b96d2c7ec35f39f533586d4232634662105bc
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **152.2 MB (152167433 bytes)**  
+-	Total Size: **152.2 MB (152161269 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c5c1ce3e74220d1a764583b32234bcca84601e953ffc7dc68b91292016a74028`
+-	Image ID: `sha256:554f97b529d68087ef5963d686c44b1f28d3d6d5bab68ea25e02cd0ee6435dab`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -2050,47 +2050,47 @@ ADD file:9246bf887411af1b286de95d779c11581dcef3c0d5a29e434162f0c085a7ce85 in /
 CMD ["bash"]
 # Sat, 16 Oct 2021 00:54:47 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Sat, 16 Oct 2021 00:55:56 GMT
-RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 26 Oct 2021 23:53:41 GMT
+# Mon, 29 Nov 2021 20:18:28 GMT
+RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales python-is-python3     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Mon, 29 Nov 2021 20:19:43 GMT
 ENV JAVA_VERSION=jdk-11.0.13+8
-# Fri, 05 Nov 2021 20:42:39 GMT
+# Mon, 29 Nov 2021 20:20:35 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='76f7da05d905b5f9de8de1a34c1a206744f7589bf0eed876cd9069cb1d913806';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.13_8.tar.gz';          ;;        armhf|arm)          ESUM='aee2f20d005b58e79c3c6c02271f797cb387d33a135b762886990b9bf7cb262e';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jre_arm_linux_hotspot_11.0.13_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='8f267876675dac3da3f4ceccd44d812b57098505eeec5fb1688d54bdeffcd1da';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.13_8.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='b4a5af4ffcc98f6b7cdd2232f79aa12f20efa769b5255277fa4974e2e19d4409';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jre_s390x_linux_hotspot_11.0.13_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='fb0a27e6e1f26a1ee79daa92e4cfe3ec0d676acfe114d99dd84b3414f056e8a0';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jre_x64_linux_hotspot_11.0.13_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 05 Nov 2021 20:42:43 GMT
+# Mon, 29 Nov 2021 20:20:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 05 Nov 2021 20:42:53 GMT
+# Mon, 29 Nov 2021 20:20:42 GMT
 RUN echo Verifying install ...     && echo java --version && java --version     && echo Complete.
-# Fri, 05 Nov 2021 23:12:14 GMT
+# Mon, 29 Nov 2021 23:15:01 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra
-# Fri, 05 Nov 2021 23:13:57 GMT
+# Mon, 29 Nov 2021 23:15:23 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libjemalloc2 		procps 		python3 		iproute2 		numactl 	; 	rm -rf /var/lib/apt/lists/*; 	libjemalloc="$(readlink -e /usr/lib/*/libjemalloc.so.2)"; 	ln -sT "$libjemalloc" /usr/local/lib/libjemalloc.so; 	ldconfig
-# Fri, 05 Nov 2021 23:14:00 GMT
+# Mon, 29 Nov 2021 23:15:25 GMT
 ENV GOSU_VERSION=1.12
-# Fri, 05 Nov 2021 23:15:25 GMT
+# Mon, 29 Nov 2021 23:16:01 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Fri, 05 Nov 2021 23:15:29 GMT
+# Mon, 29 Nov 2021 23:16:03 GMT
 ENV CASSANDRA_HOME=/opt/cassandra
-# Fri, 05 Nov 2021 23:15:32 GMT
+# Mon, 29 Nov 2021 23:16:04 GMT
 ENV CASSANDRA_CONF=/etc/cassandra
-# Fri, 05 Nov 2021 23:15:35 GMT
+# Mon, 29 Nov 2021 23:16:05 GMT
 ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 05 Nov 2021 23:15:57 GMT
+# Mon, 29 Nov 2021 23:16:07 GMT
 ENV GPG_KEYS=CEC86BB4A0BA9D0F90397CAEF8358FA2F2833C93 	C4965EE9E3015D192CCCF2B6F758CE318D77295D 	5AED1BF378E9A19DADE1BCB34BD736A82B5C1B00 	514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB 	9E66CEC6106D578D0B1EB9BFF1000962B7F6840C 	C4009872C59B49561310D966D0062876AF30F054 	B7842CDAF36E6A3214FAE35D5E85B9AE0B84C041 	3E9C876907A560ACA00964F363E9BAD215BBF5F0 	F8B7FD00E05C932991A2CD6150EE103D162C5A55
-# Fri, 05 Nov 2021 23:16:14 GMT
+# Mon, 29 Nov 2021 23:16:09 GMT
 ENV CASSANDRA_VERSION=4.0.1
-# Fri, 05 Nov 2021 23:16:30 GMT
+# Mon, 29 Nov 2021 23:16:11 GMT
 ENV CASSANDRA_SHA512=2890c054666afa93fe2978c46da5db15ed7d11d60f4890574dc642bd81f7b3af40b41d3e5b8245e6c1453a165eddebeb28bcf3fef1a2b2fc6fb3b82058d7ceb0
-# Fri, 05 Nov 2021 23:18:33 GMT
+# Mon, 29 Nov 2021 23:17:01 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			if grep -q -- '^-Xss' "$CASSANDRA_CONF/jvm.options"; then 				grep -- '^-Xss256k$' "$CASSANDRA_CONF/jvm.options"; 				sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONF/jvm.options"; 				grep -- '^-Xss512k$' "$CASSANDRA_CONF/jvm.options"; 			elif grep -q -- '-Xss256k' "$CASSANDRA_CONF/cassandra-env.sh"; then 				sed -ri 's/-Xss256k/-Xss512k/g' "$CASSANDRA_CONF/cassandra-env.sh"; 				grep -- '-Xss512k' "$CASSANDRA_CONF/cassandra-env.sh"; 			fi; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod -R a+rwX "$CASSANDRA_CONF"; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v
-# Fri, 05 Nov 2021 23:18:39 GMT
+# Mon, 29 Nov 2021 23:17:04 GMT
 VOLUME [/var/lib/cassandra]
-# Fri, 05 Nov 2021 23:18:41 GMT
+# Mon, 29 Nov 2021 23:17:05 GMT
 COPY file:a8d4fc10252d8783a105c235b3eef2315dbe3b0b1be0f1e4650f19fa5a56ab29 in /usr/local/bin/ 
-# Fri, 05 Nov 2021 23:18:45 GMT
+# Mon, 29 Nov 2021 23:17:08 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 05 Nov 2021 23:18:48 GMT
+# Mon, 29 Nov 2021 23:17:11 GMT
 EXPOSE 7000 7001 7199 9042 9160
-# Fri, 05 Nov 2021 23:18:51 GMT
+# Mon, 29 Nov 2021 23:17:13 GMT
 CMD ["cassandra" "-f"]
 ```
 
@@ -2099,43 +2099,43 @@ CMD ["cassandra" "-f"]
 		Last Modified: Sat, 16 Oct 2021 00:38:38 GMT  
 		Size: 33.3 MB (33287238 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90c930749dacf55e37561edab7967f5a2f51660034fee0da501c2d71cb783301`  
-		Last Modified: Sat, 16 Oct 2021 01:03:26 GMT  
-		Size: 17.2 MB (17210510 bytes)  
+	-	`sha256:4ce46da97c533978caacb28d5a66ed1f0b6374622ee6806ebe49cc2fa004597f`  
+		Last Modified: Mon, 29 Nov 2021 20:25:42 GMT  
+		Size: 26.6 MB (26647174 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:09299e93867b581035fde7e4840c6ac591f9fba5a43d81b1aba5ad7ec2496de4`  
-		Last Modified: Fri, 05 Nov 2021 20:48:55 GMT  
-		Size: 38.6 MB (38610183 bytes)  
+	-	`sha256:0d8269e16c15316b550660b9994c851cab79f9fdebdf42c79b8529f0aee69143`  
+		Last Modified: Mon, 29 Nov 2021 20:27:10 GMT  
+		Size: 38.6 MB (38610182 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1ef3621f9d02a65c0e3c54ebedbd1020d804f6fefcd01e36ca7df29ef1311bf`  
-		Last Modified: Fri, 05 Nov 2021 20:48:48 GMT  
+	-	`sha256:4c82f11e0647d3ee00a96acb9ec278aac47c4b5b8fde3cec519fad7146843088`  
+		Last Modified: Mon, 29 Nov 2021 20:27:01 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f81953c4c27e0c9d79048bf7e3a2490f7fc7e0de1086cf9a232ff49173bed36`  
-		Last Modified: Fri, 05 Nov 2021 23:25:20 GMT  
-		Size: 1.8 KB (1765 bytes)  
+	-	`sha256:0c41271c9a2b8152a44dce03a10f54a06825e94072aae67a7ff8cefcbcc4966a`  
+		Last Modified: Mon, 29 Nov 2021 23:22:02 GMT  
+		Size: 1.8 KB (1759 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2cb791d0160d2290ed922e2b7942475aaa31089272e4736c9397135dfde5dc2`  
-		Last Modified: Fri, 05 Nov 2021 23:25:23 GMT  
-		Size: 12.0 MB (11967029 bytes)  
+	-	`sha256:cf7bbfb23d955654bc15f44d2e665248f7ab3bb59445b65469139bc58e9b2e0f`  
+		Last Modified: Mon, 29 Nov 2021 23:22:02 GMT  
+		Size: 2.5 MB (2522984 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9d17c5be4ed58520b2a45f299e72b29a1ec09648abbecdd981bc5fc7d2038e0a`  
-		Last Modified: Fri, 05 Nov 2021 23:25:21 GMT  
-		Size: 1.2 MB (1235447 bytes)  
+	-	`sha256:68d6dc3a79179d3b59892ca8a38a1a00bad8f964e03c29bc7c776d8ef73f85b4`  
+		Last Modified: Mon, 29 Nov 2021 23:22:03 GMT  
+		Size: 1.2 MB (1236158 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:323a7348d863b2f92103109aa338a63058890045ec59871543a755357a475bf5`  
-		Last Modified: Fri, 05 Nov 2021 23:25:26 GMT  
-		Size: 49.9 MB (49853882 bytes)  
+	-	`sha256:35aabd645966470febf98c760de29dfa5113e61f0d8e84cdf9877aaa3ba4140f`  
+		Last Modified: Mon, 29 Nov 2021 23:22:07 GMT  
+		Size: 49.9 MB (49854395 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6e035f0db3d16a9a8062c6b56e4d9bfd38301d0eb76d3cec5e567c3fac11c1eb`  
-		Last Modified: Fri, 05 Nov 2021 23:25:20 GMT  
+	-	`sha256:f021656b24ceb3b5833ae8408c70bb7fa5128fcb0214b724f67b21910a9e406b`  
+		Last Modified: Mon, 29 Nov 2021 23:22:02 GMT  
 		Size: 1.2 KB (1219 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `cassandra:4.0`
 
 ```console
-$ docker pull cassandra@sha256:d454c3af427ba44cfb6313b4c1bef0ed9caf882cb56b57cab9189f286564b767
+$ docker pull cassandra@sha256:0009469a5287899f69aea74a92cb6498f284b7d6db7e407c06ac02d89c6bf7ec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2457,14 +2457,14 @@ CMD ["cassandra" "-f"]
 ### `cassandra:4.0` - linux; ppc64le
 
 ```console
-$ docker pull cassandra@sha256:8d66a0aefdbc22956ed12a9c63fc4f54f5ec309edf7f0bc570172a1eb27af3a4
+$ docker pull cassandra@sha256:12385626754700a983fbe275018b96d2c7ec35f39f533586d4232634662105bc
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **152.2 MB (152167433 bytes)**  
+-	Total Size: **152.2 MB (152161269 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c5c1ce3e74220d1a764583b32234bcca84601e953ffc7dc68b91292016a74028`
+-	Image ID: `sha256:554f97b529d68087ef5963d686c44b1f28d3d6d5bab68ea25e02cd0ee6435dab`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -2475,47 +2475,47 @@ ADD file:9246bf887411af1b286de95d779c11581dcef3c0d5a29e434162f0c085a7ce85 in /
 CMD ["bash"]
 # Sat, 16 Oct 2021 00:54:47 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Sat, 16 Oct 2021 00:55:56 GMT
-RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 26 Oct 2021 23:53:41 GMT
+# Mon, 29 Nov 2021 20:18:28 GMT
+RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales python-is-python3     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Mon, 29 Nov 2021 20:19:43 GMT
 ENV JAVA_VERSION=jdk-11.0.13+8
-# Fri, 05 Nov 2021 20:42:39 GMT
+# Mon, 29 Nov 2021 20:20:35 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='76f7da05d905b5f9de8de1a34c1a206744f7589bf0eed876cd9069cb1d913806';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.13_8.tar.gz';          ;;        armhf|arm)          ESUM='aee2f20d005b58e79c3c6c02271f797cb387d33a135b762886990b9bf7cb262e';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jre_arm_linux_hotspot_11.0.13_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='8f267876675dac3da3f4ceccd44d812b57098505eeec5fb1688d54bdeffcd1da';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.13_8.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='b4a5af4ffcc98f6b7cdd2232f79aa12f20efa769b5255277fa4974e2e19d4409';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jre_s390x_linux_hotspot_11.0.13_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='fb0a27e6e1f26a1ee79daa92e4cfe3ec0d676acfe114d99dd84b3414f056e8a0';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jre_x64_linux_hotspot_11.0.13_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 05 Nov 2021 20:42:43 GMT
+# Mon, 29 Nov 2021 20:20:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 05 Nov 2021 20:42:53 GMT
+# Mon, 29 Nov 2021 20:20:42 GMT
 RUN echo Verifying install ...     && echo java --version && java --version     && echo Complete.
-# Fri, 05 Nov 2021 23:12:14 GMT
+# Mon, 29 Nov 2021 23:15:01 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra
-# Fri, 05 Nov 2021 23:13:57 GMT
+# Mon, 29 Nov 2021 23:15:23 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libjemalloc2 		procps 		python3 		iproute2 		numactl 	; 	rm -rf /var/lib/apt/lists/*; 	libjemalloc="$(readlink -e /usr/lib/*/libjemalloc.so.2)"; 	ln -sT "$libjemalloc" /usr/local/lib/libjemalloc.so; 	ldconfig
-# Fri, 05 Nov 2021 23:14:00 GMT
+# Mon, 29 Nov 2021 23:15:25 GMT
 ENV GOSU_VERSION=1.12
-# Fri, 05 Nov 2021 23:15:25 GMT
+# Mon, 29 Nov 2021 23:16:01 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Fri, 05 Nov 2021 23:15:29 GMT
+# Mon, 29 Nov 2021 23:16:03 GMT
 ENV CASSANDRA_HOME=/opt/cassandra
-# Fri, 05 Nov 2021 23:15:32 GMT
+# Mon, 29 Nov 2021 23:16:04 GMT
 ENV CASSANDRA_CONF=/etc/cassandra
-# Fri, 05 Nov 2021 23:15:35 GMT
+# Mon, 29 Nov 2021 23:16:05 GMT
 ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 05 Nov 2021 23:15:57 GMT
+# Mon, 29 Nov 2021 23:16:07 GMT
 ENV GPG_KEYS=CEC86BB4A0BA9D0F90397CAEF8358FA2F2833C93 	C4965EE9E3015D192CCCF2B6F758CE318D77295D 	5AED1BF378E9A19DADE1BCB34BD736A82B5C1B00 	514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB 	9E66CEC6106D578D0B1EB9BFF1000962B7F6840C 	C4009872C59B49561310D966D0062876AF30F054 	B7842CDAF36E6A3214FAE35D5E85B9AE0B84C041 	3E9C876907A560ACA00964F363E9BAD215BBF5F0 	F8B7FD00E05C932991A2CD6150EE103D162C5A55
-# Fri, 05 Nov 2021 23:16:14 GMT
+# Mon, 29 Nov 2021 23:16:09 GMT
 ENV CASSANDRA_VERSION=4.0.1
-# Fri, 05 Nov 2021 23:16:30 GMT
+# Mon, 29 Nov 2021 23:16:11 GMT
 ENV CASSANDRA_SHA512=2890c054666afa93fe2978c46da5db15ed7d11d60f4890574dc642bd81f7b3af40b41d3e5b8245e6c1453a165eddebeb28bcf3fef1a2b2fc6fb3b82058d7ceb0
-# Fri, 05 Nov 2021 23:18:33 GMT
+# Mon, 29 Nov 2021 23:17:01 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			if grep -q -- '^-Xss' "$CASSANDRA_CONF/jvm.options"; then 				grep -- '^-Xss256k$' "$CASSANDRA_CONF/jvm.options"; 				sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONF/jvm.options"; 				grep -- '^-Xss512k$' "$CASSANDRA_CONF/jvm.options"; 			elif grep -q -- '-Xss256k' "$CASSANDRA_CONF/cassandra-env.sh"; then 				sed -ri 's/-Xss256k/-Xss512k/g' "$CASSANDRA_CONF/cassandra-env.sh"; 				grep -- '-Xss512k' "$CASSANDRA_CONF/cassandra-env.sh"; 			fi; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod -R a+rwX "$CASSANDRA_CONF"; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v
-# Fri, 05 Nov 2021 23:18:39 GMT
+# Mon, 29 Nov 2021 23:17:04 GMT
 VOLUME [/var/lib/cassandra]
-# Fri, 05 Nov 2021 23:18:41 GMT
+# Mon, 29 Nov 2021 23:17:05 GMT
 COPY file:a8d4fc10252d8783a105c235b3eef2315dbe3b0b1be0f1e4650f19fa5a56ab29 in /usr/local/bin/ 
-# Fri, 05 Nov 2021 23:18:45 GMT
+# Mon, 29 Nov 2021 23:17:08 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 05 Nov 2021 23:18:48 GMT
+# Mon, 29 Nov 2021 23:17:11 GMT
 EXPOSE 7000 7001 7199 9042 9160
-# Fri, 05 Nov 2021 23:18:51 GMT
+# Mon, 29 Nov 2021 23:17:13 GMT
 CMD ["cassandra" "-f"]
 ```
 
@@ -2524,43 +2524,43 @@ CMD ["cassandra" "-f"]
 		Last Modified: Sat, 16 Oct 2021 00:38:38 GMT  
 		Size: 33.3 MB (33287238 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90c930749dacf55e37561edab7967f5a2f51660034fee0da501c2d71cb783301`  
-		Last Modified: Sat, 16 Oct 2021 01:03:26 GMT  
-		Size: 17.2 MB (17210510 bytes)  
+	-	`sha256:4ce46da97c533978caacb28d5a66ed1f0b6374622ee6806ebe49cc2fa004597f`  
+		Last Modified: Mon, 29 Nov 2021 20:25:42 GMT  
+		Size: 26.6 MB (26647174 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:09299e93867b581035fde7e4840c6ac591f9fba5a43d81b1aba5ad7ec2496de4`  
-		Last Modified: Fri, 05 Nov 2021 20:48:55 GMT  
-		Size: 38.6 MB (38610183 bytes)  
+	-	`sha256:0d8269e16c15316b550660b9994c851cab79f9fdebdf42c79b8529f0aee69143`  
+		Last Modified: Mon, 29 Nov 2021 20:27:10 GMT  
+		Size: 38.6 MB (38610182 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1ef3621f9d02a65c0e3c54ebedbd1020d804f6fefcd01e36ca7df29ef1311bf`  
-		Last Modified: Fri, 05 Nov 2021 20:48:48 GMT  
+	-	`sha256:4c82f11e0647d3ee00a96acb9ec278aac47c4b5b8fde3cec519fad7146843088`  
+		Last Modified: Mon, 29 Nov 2021 20:27:01 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f81953c4c27e0c9d79048bf7e3a2490f7fc7e0de1086cf9a232ff49173bed36`  
-		Last Modified: Fri, 05 Nov 2021 23:25:20 GMT  
-		Size: 1.8 KB (1765 bytes)  
+	-	`sha256:0c41271c9a2b8152a44dce03a10f54a06825e94072aae67a7ff8cefcbcc4966a`  
+		Last Modified: Mon, 29 Nov 2021 23:22:02 GMT  
+		Size: 1.8 KB (1759 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2cb791d0160d2290ed922e2b7942475aaa31089272e4736c9397135dfde5dc2`  
-		Last Modified: Fri, 05 Nov 2021 23:25:23 GMT  
-		Size: 12.0 MB (11967029 bytes)  
+	-	`sha256:cf7bbfb23d955654bc15f44d2e665248f7ab3bb59445b65469139bc58e9b2e0f`  
+		Last Modified: Mon, 29 Nov 2021 23:22:02 GMT  
+		Size: 2.5 MB (2522984 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9d17c5be4ed58520b2a45f299e72b29a1ec09648abbecdd981bc5fc7d2038e0a`  
-		Last Modified: Fri, 05 Nov 2021 23:25:21 GMT  
-		Size: 1.2 MB (1235447 bytes)  
+	-	`sha256:68d6dc3a79179d3b59892ca8a38a1a00bad8f964e03c29bc7c776d8ef73f85b4`  
+		Last Modified: Mon, 29 Nov 2021 23:22:03 GMT  
+		Size: 1.2 MB (1236158 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:323a7348d863b2f92103109aa338a63058890045ec59871543a755357a475bf5`  
-		Last Modified: Fri, 05 Nov 2021 23:25:26 GMT  
-		Size: 49.9 MB (49853882 bytes)  
+	-	`sha256:35aabd645966470febf98c760de29dfa5113e61f0d8e84cdf9877aaa3ba4140f`  
+		Last Modified: Mon, 29 Nov 2021 23:22:07 GMT  
+		Size: 49.9 MB (49854395 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6e035f0db3d16a9a8062c6b56e4d9bfd38301d0eb76d3cec5e567c3fac11c1eb`  
-		Last Modified: Fri, 05 Nov 2021 23:25:20 GMT  
+	-	`sha256:f021656b24ceb3b5833ae8408c70bb7fa5128fcb0214b724f67b21910a9e406b`  
+		Last Modified: Mon, 29 Nov 2021 23:22:02 GMT  
 		Size: 1.2 KB (1219 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `cassandra:4.0.1`
 
 ```console
-$ docker pull cassandra@sha256:d454c3af427ba44cfb6313b4c1bef0ed9caf882cb56b57cab9189f286564b767
+$ docker pull cassandra@sha256:0009469a5287899f69aea74a92cb6498f284b7d6db7e407c06ac02d89c6bf7ec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2882,14 +2882,14 @@ CMD ["cassandra" "-f"]
 ### `cassandra:4.0.1` - linux; ppc64le
 
 ```console
-$ docker pull cassandra@sha256:8d66a0aefdbc22956ed12a9c63fc4f54f5ec309edf7f0bc570172a1eb27af3a4
+$ docker pull cassandra@sha256:12385626754700a983fbe275018b96d2c7ec35f39f533586d4232634662105bc
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **152.2 MB (152167433 bytes)**  
+-	Total Size: **152.2 MB (152161269 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c5c1ce3e74220d1a764583b32234bcca84601e953ffc7dc68b91292016a74028`
+-	Image ID: `sha256:554f97b529d68087ef5963d686c44b1f28d3d6d5bab68ea25e02cd0ee6435dab`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -2900,47 +2900,47 @@ ADD file:9246bf887411af1b286de95d779c11581dcef3c0d5a29e434162f0c085a7ce85 in /
 CMD ["bash"]
 # Sat, 16 Oct 2021 00:54:47 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Sat, 16 Oct 2021 00:55:56 GMT
-RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 26 Oct 2021 23:53:41 GMT
+# Mon, 29 Nov 2021 20:18:28 GMT
+RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales python-is-python3     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Mon, 29 Nov 2021 20:19:43 GMT
 ENV JAVA_VERSION=jdk-11.0.13+8
-# Fri, 05 Nov 2021 20:42:39 GMT
+# Mon, 29 Nov 2021 20:20:35 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='76f7da05d905b5f9de8de1a34c1a206744f7589bf0eed876cd9069cb1d913806';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.13_8.tar.gz';          ;;        armhf|arm)          ESUM='aee2f20d005b58e79c3c6c02271f797cb387d33a135b762886990b9bf7cb262e';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jre_arm_linux_hotspot_11.0.13_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='8f267876675dac3da3f4ceccd44d812b57098505eeec5fb1688d54bdeffcd1da';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.13_8.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='b4a5af4ffcc98f6b7cdd2232f79aa12f20efa769b5255277fa4974e2e19d4409';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jre_s390x_linux_hotspot_11.0.13_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='fb0a27e6e1f26a1ee79daa92e4cfe3ec0d676acfe114d99dd84b3414f056e8a0';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jre_x64_linux_hotspot_11.0.13_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 05 Nov 2021 20:42:43 GMT
+# Mon, 29 Nov 2021 20:20:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 05 Nov 2021 20:42:53 GMT
+# Mon, 29 Nov 2021 20:20:42 GMT
 RUN echo Verifying install ...     && echo java --version && java --version     && echo Complete.
-# Fri, 05 Nov 2021 23:12:14 GMT
+# Mon, 29 Nov 2021 23:15:01 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra
-# Fri, 05 Nov 2021 23:13:57 GMT
+# Mon, 29 Nov 2021 23:15:23 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libjemalloc2 		procps 		python3 		iproute2 		numactl 	; 	rm -rf /var/lib/apt/lists/*; 	libjemalloc="$(readlink -e /usr/lib/*/libjemalloc.so.2)"; 	ln -sT "$libjemalloc" /usr/local/lib/libjemalloc.so; 	ldconfig
-# Fri, 05 Nov 2021 23:14:00 GMT
+# Mon, 29 Nov 2021 23:15:25 GMT
 ENV GOSU_VERSION=1.12
-# Fri, 05 Nov 2021 23:15:25 GMT
+# Mon, 29 Nov 2021 23:16:01 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Fri, 05 Nov 2021 23:15:29 GMT
+# Mon, 29 Nov 2021 23:16:03 GMT
 ENV CASSANDRA_HOME=/opt/cassandra
-# Fri, 05 Nov 2021 23:15:32 GMT
+# Mon, 29 Nov 2021 23:16:04 GMT
 ENV CASSANDRA_CONF=/etc/cassandra
-# Fri, 05 Nov 2021 23:15:35 GMT
+# Mon, 29 Nov 2021 23:16:05 GMT
 ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 05 Nov 2021 23:15:57 GMT
+# Mon, 29 Nov 2021 23:16:07 GMT
 ENV GPG_KEYS=CEC86BB4A0BA9D0F90397CAEF8358FA2F2833C93 	C4965EE9E3015D192CCCF2B6F758CE318D77295D 	5AED1BF378E9A19DADE1BCB34BD736A82B5C1B00 	514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB 	9E66CEC6106D578D0B1EB9BFF1000962B7F6840C 	C4009872C59B49561310D966D0062876AF30F054 	B7842CDAF36E6A3214FAE35D5E85B9AE0B84C041 	3E9C876907A560ACA00964F363E9BAD215BBF5F0 	F8B7FD00E05C932991A2CD6150EE103D162C5A55
-# Fri, 05 Nov 2021 23:16:14 GMT
+# Mon, 29 Nov 2021 23:16:09 GMT
 ENV CASSANDRA_VERSION=4.0.1
-# Fri, 05 Nov 2021 23:16:30 GMT
+# Mon, 29 Nov 2021 23:16:11 GMT
 ENV CASSANDRA_SHA512=2890c054666afa93fe2978c46da5db15ed7d11d60f4890574dc642bd81f7b3af40b41d3e5b8245e6c1453a165eddebeb28bcf3fef1a2b2fc6fb3b82058d7ceb0
-# Fri, 05 Nov 2021 23:18:33 GMT
+# Mon, 29 Nov 2021 23:17:01 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			if grep -q -- '^-Xss' "$CASSANDRA_CONF/jvm.options"; then 				grep -- '^-Xss256k$' "$CASSANDRA_CONF/jvm.options"; 				sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONF/jvm.options"; 				grep -- '^-Xss512k$' "$CASSANDRA_CONF/jvm.options"; 			elif grep -q -- '-Xss256k' "$CASSANDRA_CONF/cassandra-env.sh"; then 				sed -ri 's/-Xss256k/-Xss512k/g' "$CASSANDRA_CONF/cassandra-env.sh"; 				grep -- '-Xss512k' "$CASSANDRA_CONF/cassandra-env.sh"; 			fi; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod -R a+rwX "$CASSANDRA_CONF"; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v
-# Fri, 05 Nov 2021 23:18:39 GMT
+# Mon, 29 Nov 2021 23:17:04 GMT
 VOLUME [/var/lib/cassandra]
-# Fri, 05 Nov 2021 23:18:41 GMT
+# Mon, 29 Nov 2021 23:17:05 GMT
 COPY file:a8d4fc10252d8783a105c235b3eef2315dbe3b0b1be0f1e4650f19fa5a56ab29 in /usr/local/bin/ 
-# Fri, 05 Nov 2021 23:18:45 GMT
+# Mon, 29 Nov 2021 23:17:08 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 05 Nov 2021 23:18:48 GMT
+# Mon, 29 Nov 2021 23:17:11 GMT
 EXPOSE 7000 7001 7199 9042 9160
-# Fri, 05 Nov 2021 23:18:51 GMT
+# Mon, 29 Nov 2021 23:17:13 GMT
 CMD ["cassandra" "-f"]
 ```
 
@@ -2949,43 +2949,43 @@ CMD ["cassandra" "-f"]
 		Last Modified: Sat, 16 Oct 2021 00:38:38 GMT  
 		Size: 33.3 MB (33287238 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90c930749dacf55e37561edab7967f5a2f51660034fee0da501c2d71cb783301`  
-		Last Modified: Sat, 16 Oct 2021 01:03:26 GMT  
-		Size: 17.2 MB (17210510 bytes)  
+	-	`sha256:4ce46da97c533978caacb28d5a66ed1f0b6374622ee6806ebe49cc2fa004597f`  
+		Last Modified: Mon, 29 Nov 2021 20:25:42 GMT  
+		Size: 26.6 MB (26647174 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:09299e93867b581035fde7e4840c6ac591f9fba5a43d81b1aba5ad7ec2496de4`  
-		Last Modified: Fri, 05 Nov 2021 20:48:55 GMT  
-		Size: 38.6 MB (38610183 bytes)  
+	-	`sha256:0d8269e16c15316b550660b9994c851cab79f9fdebdf42c79b8529f0aee69143`  
+		Last Modified: Mon, 29 Nov 2021 20:27:10 GMT  
+		Size: 38.6 MB (38610182 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1ef3621f9d02a65c0e3c54ebedbd1020d804f6fefcd01e36ca7df29ef1311bf`  
-		Last Modified: Fri, 05 Nov 2021 20:48:48 GMT  
+	-	`sha256:4c82f11e0647d3ee00a96acb9ec278aac47c4b5b8fde3cec519fad7146843088`  
+		Last Modified: Mon, 29 Nov 2021 20:27:01 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f81953c4c27e0c9d79048bf7e3a2490f7fc7e0de1086cf9a232ff49173bed36`  
-		Last Modified: Fri, 05 Nov 2021 23:25:20 GMT  
-		Size: 1.8 KB (1765 bytes)  
+	-	`sha256:0c41271c9a2b8152a44dce03a10f54a06825e94072aae67a7ff8cefcbcc4966a`  
+		Last Modified: Mon, 29 Nov 2021 23:22:02 GMT  
+		Size: 1.8 KB (1759 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2cb791d0160d2290ed922e2b7942475aaa31089272e4736c9397135dfde5dc2`  
-		Last Modified: Fri, 05 Nov 2021 23:25:23 GMT  
-		Size: 12.0 MB (11967029 bytes)  
+	-	`sha256:cf7bbfb23d955654bc15f44d2e665248f7ab3bb59445b65469139bc58e9b2e0f`  
+		Last Modified: Mon, 29 Nov 2021 23:22:02 GMT  
+		Size: 2.5 MB (2522984 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9d17c5be4ed58520b2a45f299e72b29a1ec09648abbecdd981bc5fc7d2038e0a`  
-		Last Modified: Fri, 05 Nov 2021 23:25:21 GMT  
-		Size: 1.2 MB (1235447 bytes)  
+	-	`sha256:68d6dc3a79179d3b59892ca8a38a1a00bad8f964e03c29bc7c776d8ef73f85b4`  
+		Last Modified: Mon, 29 Nov 2021 23:22:03 GMT  
+		Size: 1.2 MB (1236158 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:323a7348d863b2f92103109aa338a63058890045ec59871543a755357a475bf5`  
-		Last Modified: Fri, 05 Nov 2021 23:25:26 GMT  
-		Size: 49.9 MB (49853882 bytes)  
+	-	`sha256:35aabd645966470febf98c760de29dfa5113e61f0d8e84cdf9877aaa3ba4140f`  
+		Last Modified: Mon, 29 Nov 2021 23:22:07 GMT  
+		Size: 49.9 MB (49854395 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6e035f0db3d16a9a8062c6b56e4d9bfd38301d0eb76d3cec5e567c3fac11c1eb`  
-		Last Modified: Fri, 05 Nov 2021 23:25:20 GMT  
+	-	`sha256:f021656b24ceb3b5833ae8408c70bb7fa5128fcb0214b724f67b21910a9e406b`  
+		Last Modified: Mon, 29 Nov 2021 23:22:02 GMT  
 		Size: 1.2 KB (1219 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `cassandra:latest`
 
 ```console
-$ docker pull cassandra@sha256:d454c3af427ba44cfb6313b4c1bef0ed9caf882cb56b57cab9189f286564b767
+$ docker pull cassandra@sha256:0009469a5287899f69aea74a92cb6498f284b7d6db7e407c06ac02d89c6bf7ec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3307,14 +3307,14 @@ CMD ["cassandra" "-f"]
 ### `cassandra:latest` - linux; ppc64le
 
 ```console
-$ docker pull cassandra@sha256:8d66a0aefdbc22956ed12a9c63fc4f54f5ec309edf7f0bc570172a1eb27af3a4
+$ docker pull cassandra@sha256:12385626754700a983fbe275018b96d2c7ec35f39f533586d4232634662105bc
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **152.2 MB (152167433 bytes)**  
+-	Total Size: **152.2 MB (152161269 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c5c1ce3e74220d1a764583b32234bcca84601e953ffc7dc68b91292016a74028`
+-	Image ID: `sha256:554f97b529d68087ef5963d686c44b1f28d3d6d5bab68ea25e02cd0ee6435dab`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -3325,47 +3325,47 @@ ADD file:9246bf887411af1b286de95d779c11581dcef3c0d5a29e434162f0c085a7ce85 in /
 CMD ["bash"]
 # Sat, 16 Oct 2021 00:54:47 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Sat, 16 Oct 2021 00:55:56 GMT
-RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 26 Oct 2021 23:53:41 GMT
+# Mon, 29 Nov 2021 20:18:28 GMT
+RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales python-is-python3     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Mon, 29 Nov 2021 20:19:43 GMT
 ENV JAVA_VERSION=jdk-11.0.13+8
-# Fri, 05 Nov 2021 20:42:39 GMT
+# Mon, 29 Nov 2021 20:20:35 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='76f7da05d905b5f9de8de1a34c1a206744f7589bf0eed876cd9069cb1d913806';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.13_8.tar.gz';          ;;        armhf|arm)          ESUM='aee2f20d005b58e79c3c6c02271f797cb387d33a135b762886990b9bf7cb262e';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jre_arm_linux_hotspot_11.0.13_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='8f267876675dac3da3f4ceccd44d812b57098505eeec5fb1688d54bdeffcd1da';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.13_8.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='b4a5af4ffcc98f6b7cdd2232f79aa12f20efa769b5255277fa4974e2e19d4409';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jre_s390x_linux_hotspot_11.0.13_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='fb0a27e6e1f26a1ee79daa92e4cfe3ec0d676acfe114d99dd84b3414f056e8a0';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jre_x64_linux_hotspot_11.0.13_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 05 Nov 2021 20:42:43 GMT
+# Mon, 29 Nov 2021 20:20:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 05 Nov 2021 20:42:53 GMT
+# Mon, 29 Nov 2021 20:20:42 GMT
 RUN echo Verifying install ...     && echo java --version && java --version     && echo Complete.
-# Fri, 05 Nov 2021 23:12:14 GMT
+# Mon, 29 Nov 2021 23:15:01 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra
-# Fri, 05 Nov 2021 23:13:57 GMT
+# Mon, 29 Nov 2021 23:15:23 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libjemalloc2 		procps 		python3 		iproute2 		numactl 	; 	rm -rf /var/lib/apt/lists/*; 	libjemalloc="$(readlink -e /usr/lib/*/libjemalloc.so.2)"; 	ln -sT "$libjemalloc" /usr/local/lib/libjemalloc.so; 	ldconfig
-# Fri, 05 Nov 2021 23:14:00 GMT
+# Mon, 29 Nov 2021 23:15:25 GMT
 ENV GOSU_VERSION=1.12
-# Fri, 05 Nov 2021 23:15:25 GMT
+# Mon, 29 Nov 2021 23:16:01 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Fri, 05 Nov 2021 23:15:29 GMT
+# Mon, 29 Nov 2021 23:16:03 GMT
 ENV CASSANDRA_HOME=/opt/cassandra
-# Fri, 05 Nov 2021 23:15:32 GMT
+# Mon, 29 Nov 2021 23:16:04 GMT
 ENV CASSANDRA_CONF=/etc/cassandra
-# Fri, 05 Nov 2021 23:15:35 GMT
+# Mon, 29 Nov 2021 23:16:05 GMT
 ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 05 Nov 2021 23:15:57 GMT
+# Mon, 29 Nov 2021 23:16:07 GMT
 ENV GPG_KEYS=CEC86BB4A0BA9D0F90397CAEF8358FA2F2833C93 	C4965EE9E3015D192CCCF2B6F758CE318D77295D 	5AED1BF378E9A19DADE1BCB34BD736A82B5C1B00 	514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB 	9E66CEC6106D578D0B1EB9BFF1000962B7F6840C 	C4009872C59B49561310D966D0062876AF30F054 	B7842CDAF36E6A3214FAE35D5E85B9AE0B84C041 	3E9C876907A560ACA00964F363E9BAD215BBF5F0 	F8B7FD00E05C932991A2CD6150EE103D162C5A55
-# Fri, 05 Nov 2021 23:16:14 GMT
+# Mon, 29 Nov 2021 23:16:09 GMT
 ENV CASSANDRA_VERSION=4.0.1
-# Fri, 05 Nov 2021 23:16:30 GMT
+# Mon, 29 Nov 2021 23:16:11 GMT
 ENV CASSANDRA_SHA512=2890c054666afa93fe2978c46da5db15ed7d11d60f4890574dc642bd81f7b3af40b41d3e5b8245e6c1453a165eddebeb28bcf3fef1a2b2fc6fb3b82058d7ceb0
-# Fri, 05 Nov 2021 23:18:33 GMT
+# Mon, 29 Nov 2021 23:17:01 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			if grep -q -- '^-Xss' "$CASSANDRA_CONF/jvm.options"; then 				grep -- '^-Xss256k$' "$CASSANDRA_CONF/jvm.options"; 				sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONF/jvm.options"; 				grep -- '^-Xss512k$' "$CASSANDRA_CONF/jvm.options"; 			elif grep -q -- '-Xss256k' "$CASSANDRA_CONF/cassandra-env.sh"; then 				sed -ri 's/-Xss256k/-Xss512k/g' "$CASSANDRA_CONF/cassandra-env.sh"; 				grep -- '-Xss512k' "$CASSANDRA_CONF/cassandra-env.sh"; 			fi; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod -R a+rwX "$CASSANDRA_CONF"; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v
-# Fri, 05 Nov 2021 23:18:39 GMT
+# Mon, 29 Nov 2021 23:17:04 GMT
 VOLUME [/var/lib/cassandra]
-# Fri, 05 Nov 2021 23:18:41 GMT
+# Mon, 29 Nov 2021 23:17:05 GMT
 COPY file:a8d4fc10252d8783a105c235b3eef2315dbe3b0b1be0f1e4650f19fa5a56ab29 in /usr/local/bin/ 
-# Fri, 05 Nov 2021 23:18:45 GMT
+# Mon, 29 Nov 2021 23:17:08 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 05 Nov 2021 23:18:48 GMT
+# Mon, 29 Nov 2021 23:17:11 GMT
 EXPOSE 7000 7001 7199 9042 9160
-# Fri, 05 Nov 2021 23:18:51 GMT
+# Mon, 29 Nov 2021 23:17:13 GMT
 CMD ["cassandra" "-f"]
 ```
 
@@ -3374,35 +3374,35 @@ CMD ["cassandra" "-f"]
 		Last Modified: Sat, 16 Oct 2021 00:38:38 GMT  
 		Size: 33.3 MB (33287238 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90c930749dacf55e37561edab7967f5a2f51660034fee0da501c2d71cb783301`  
-		Last Modified: Sat, 16 Oct 2021 01:03:26 GMT  
-		Size: 17.2 MB (17210510 bytes)  
+	-	`sha256:4ce46da97c533978caacb28d5a66ed1f0b6374622ee6806ebe49cc2fa004597f`  
+		Last Modified: Mon, 29 Nov 2021 20:25:42 GMT  
+		Size: 26.6 MB (26647174 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:09299e93867b581035fde7e4840c6ac591f9fba5a43d81b1aba5ad7ec2496de4`  
-		Last Modified: Fri, 05 Nov 2021 20:48:55 GMT  
-		Size: 38.6 MB (38610183 bytes)  
+	-	`sha256:0d8269e16c15316b550660b9994c851cab79f9fdebdf42c79b8529f0aee69143`  
+		Last Modified: Mon, 29 Nov 2021 20:27:10 GMT  
+		Size: 38.6 MB (38610182 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1ef3621f9d02a65c0e3c54ebedbd1020d804f6fefcd01e36ca7df29ef1311bf`  
-		Last Modified: Fri, 05 Nov 2021 20:48:48 GMT  
+	-	`sha256:4c82f11e0647d3ee00a96acb9ec278aac47c4b5b8fde3cec519fad7146843088`  
+		Last Modified: Mon, 29 Nov 2021 20:27:01 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f81953c4c27e0c9d79048bf7e3a2490f7fc7e0de1086cf9a232ff49173bed36`  
-		Last Modified: Fri, 05 Nov 2021 23:25:20 GMT  
-		Size: 1.8 KB (1765 bytes)  
+	-	`sha256:0c41271c9a2b8152a44dce03a10f54a06825e94072aae67a7ff8cefcbcc4966a`  
+		Last Modified: Mon, 29 Nov 2021 23:22:02 GMT  
+		Size: 1.8 KB (1759 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2cb791d0160d2290ed922e2b7942475aaa31089272e4736c9397135dfde5dc2`  
-		Last Modified: Fri, 05 Nov 2021 23:25:23 GMT  
-		Size: 12.0 MB (11967029 bytes)  
+	-	`sha256:cf7bbfb23d955654bc15f44d2e665248f7ab3bb59445b65469139bc58e9b2e0f`  
+		Last Modified: Mon, 29 Nov 2021 23:22:02 GMT  
+		Size: 2.5 MB (2522984 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9d17c5be4ed58520b2a45f299e72b29a1ec09648abbecdd981bc5fc7d2038e0a`  
-		Last Modified: Fri, 05 Nov 2021 23:25:21 GMT  
-		Size: 1.2 MB (1235447 bytes)  
+	-	`sha256:68d6dc3a79179d3b59892ca8a38a1a00bad8f964e03c29bc7c776d8ef73f85b4`  
+		Last Modified: Mon, 29 Nov 2021 23:22:03 GMT  
+		Size: 1.2 MB (1236158 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:323a7348d863b2f92103109aa338a63058890045ec59871543a755357a475bf5`  
-		Last Modified: Fri, 05 Nov 2021 23:25:26 GMT  
-		Size: 49.9 MB (49853882 bytes)  
+	-	`sha256:35aabd645966470febf98c760de29dfa5113e61f0d8e84cdf9877aaa3ba4140f`  
+		Last Modified: Mon, 29 Nov 2021 23:22:07 GMT  
+		Size: 49.9 MB (49854395 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6e035f0db3d16a9a8062c6b56e4d9bfd38301d0eb76d3cec5e567c3fac11c1eb`  
-		Last Modified: Fri, 05 Nov 2021 23:25:20 GMT  
+	-	`sha256:f021656b24ceb3b5833ae8408c70bb7fa5128fcb0214b724f67b21910a9e406b`  
+		Last Modified: Mon, 29 Nov 2021 23:22:02 GMT  
 		Size: 1.2 KB (1219 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
