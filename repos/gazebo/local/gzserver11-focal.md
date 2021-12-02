@@ -4,7 +4,7 @@
 
 - Image ID: `sha256:30b18f47dbf6cf205c4aef42ad388a1236a03fc0d79cef0b9ec745d7d8d35c63`
 - Created: `2021-11-01T22:58:24.503172004Z`
-- Virtual Size: ~ 809.10 Mb  
+- Virtual Size: ~ 809.08 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/gzserver_entrypoint.sh"]`
@@ -4747,14 +4747,9 @@ Licenses: (parsed from: `/usr/share/doc/libnss3/copyright`)
 - `Zlib`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nss=2:3.49.1-1ubuntu1.5
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.49.1-1ubuntu1.5.dsc' nss_3.49.1-1ubuntu1.5.dsc 2287 SHA512:af3f45c01e8ee4610771c9614d5ab162758831a15f1e5aff0f23c841d485846ffbe5659649cc6d4aed47c1593e94dc9fa9f284ee3d74252cb0540376fb01075c
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.49.1.orig.tar.gz' nss_3.49.1.orig.tar.gz 76489134 SHA512:e463c9d71537ac30dbd2998cbdbc0cadc734768a6f3a316c57b6a6d01ad6d26ca732dff65e9c88555a834ae7d71fc857e4cbc1799438069f544a1e27f75985e8
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.49.1-1ubuntu1.5.debian.tar.xz' nss_3.49.1-1ubuntu1.5.debian.tar.xz 198856 SHA512:1d7e71691396c4104f470cc67c34e7ae74680d9e58a45c88c0ea418aaf859a2f03f10fc1665923ad9bc32e8e2dd8fbe8e7edfcc7676178e3092b5406455c2408
-```
 
 ### `dpkg` source package: `numactl=2.0.12-1`
 
