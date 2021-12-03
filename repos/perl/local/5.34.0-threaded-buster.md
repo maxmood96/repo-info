@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cd5fe6a211c98ac2e2ad2943b6031c5627fd80cd107770b3d76dabe7d1a3cd42`
-- Created: `2021-11-17T11:49:29.864536021Z`
+- Image ID: `sha256:a890074ea113c99237f7ccedbda00a2641a2768fc7feaf5934870b6d64f988be`
+- Created: `2021-12-02T20:08:39.39767649Z`
 - Virtual Size: ~ 860.40 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1669,13 +1669,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/hostname/3.21/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/hostname/3.21/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `icu=63.1-6+deb10u1`
+### `dpkg` source package: `icu=63.1-6+deb10u2`
 
 Binary Packages:
 
-- `icu-devtools=63.1-6+deb10u1`
-- `libicu-dev:amd64=63.1-6+deb10u1`
-- `libicu63:amd64=63.1-6+deb10u1`
+- `icu-devtools=63.1-6+deb10u2`
+- `libicu-dev:amd64=63.1-6+deb10u2`
+- `libicu63:amd64=63.1-6+deb10u2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1684,17 +1684,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris icu=63.1-6+deb10u1
-'http://deb.debian.org/debian/pool/main/i/icu/icu_63.1-6+deb10u1.dsc' icu_63.1-6+deb10u1.dsc 1997 SHA256:c33329e44a83af47cdfd6ca2639611d960b163a5cce39e71945b0ed4b6971ec9
-'http://deb.debian.org/debian/pool/main/i/icu/icu_63.1.orig.tar.xz' icu_63.1.orig.tar.xz 13638120 SHA256:347d0e6c39c3538b812c10c6c83815d4a089d578380387ae7d94c5b820948e82
-'http://deb.debian.org/debian/pool/main/i/icu/icu_63.1-6+deb10u1.debian.tar.xz' icu_63.1-6+deb10u1.debian.tar.xz 25004 SHA256:d65fde3a61d0ba935b493b46fd42addeb24e0398b8d778124cb489770ec50a6d
+$ apt-get source -qq --print-uris icu=63.1-6+deb10u2
+'http://security.debian.org/debian-security/pool/updates/main/i/icu/icu_63.1-6+deb10u2.dsc' icu_63.1-6+deb10u2.dsc 2152 SHA256:4d175ca81d9605af871f634b831d75394f0497d66b523af8eaaf15846550333c
+'http://security.debian.org/debian-security/pool/updates/main/i/icu/icu_63.1.orig.tar.xz' icu_63.1.orig.tar.xz 13638120 SHA256:347d0e6c39c3538b812c10c6c83815d4a089d578380387ae7d94c5b820948e82
+'http://security.debian.org/debian-security/pool/updates/main/i/icu/icu_63.1-6+deb10u2.debian.tar.xz' icu_63.1-6+deb10u2.debian.tar.xz 25732 SHA256:1626f226cf3dad093bfc7874c5ebe9cc7a24e5fe8a1225a1de9fe576a4b9b463
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/icu/63.1-6+deb10u1/ (for browsing the source)
-- https://sources.debian.net/src/icu/63.1-6+deb10u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/icu/63.1-6+deb10u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/icu/63.1-6+deb10u2/ (for browsing the source)
+- https://sources.debian.net/src/icu/63.1-6+deb10u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/icu/63.1-6+deb10u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ilmbase=2.2.1-2`
 
