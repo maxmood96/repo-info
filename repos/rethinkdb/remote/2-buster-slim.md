@@ -1,7 +1,7 @@
 ## `rethinkdb:2-buster-slim`
 
 ```console
-$ docker pull rethinkdb@sha256:bf0b74da846cf30f1c422573b6faaba09d3354657e71473312fe90a83f77f9ac
+$ docker pull rethinkdb@sha256:d791d3a973a0f596441d5d9ebc394ecd2783e78591c84d90a5f35f01a735958c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,57 +11,57 @@ $ docker pull rethinkdb@sha256:bf0b74da846cf30f1c422573b6faaba09d3354657e7147331
 ### `rethinkdb:2-buster-slim` - linux; amd64
 
 ```console
-$ docker pull rethinkdb@sha256:a6a58a5ca7e87210999ae543d5adc67b635f925f7aa32b79cee9ecc7c203059f
+$ docker pull rethinkdb@sha256:5d107c365fb6bb88856cf8576f1ea02358832149f0414c23c2301b55d46e49a0
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.8 MB (51838989 bytes)**  
+-	Total Size: **51.8 MB (51839002 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:caab5fcad254c52b72bf9ad2c3ab94eea05a7f4a6f039c8dad2ba5cc9d0e8d27`
+-	Image ID: `sha256:ac126fdd90251808ba019b7b1969217564fd2bc38055584c034c3bfed4b412d6`
 -	Default Command: `["rethinkdb","--bind","all"]`
 
 ```dockerfile
-# Wed, 17 Nov 2021 02:21:02 GMT
-ADD file:3c54ad257f2e04f7294ce879b884820cf4726c8e93ec548172825963e40c79ad in / 
-# Wed, 17 Nov 2021 02:21:02 GMT
+# Thu, 02 Dec 2021 02:48:43 GMT
+ADD file:70f893355b4ecf317b289874ea624aa52c30735086e26de45bad73f57d16757b in / 
+# Thu, 02 Dec 2021 02:48:43 GMT
 CMD ["bash"]
-# Wed, 17 Nov 2021 22:24:51 GMT
+# Fri, 03 Dec 2021 03:45:59 GMT
 RUN apt-get -qqy update     && apt-get install -y --no-install-recommends ca-certificates gnupg2     && rm -rf /var/lib/apt/lists/*
-# Wed, 17 Nov 2021 22:25:02 GMT
+# Fri, 03 Dec 2021 03:46:10 GMT
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys "539A3A8C6692E6E3F69B3FE81D85E93F801BB43F"     && echo "deb https://download.rethinkdb.com/repository/debian-buster buster main" > /etc/apt/sources.list.d/rethinkdb.list
-# Wed, 17 Nov 2021 22:25:02 GMT
+# Fri, 03 Dec 2021 03:46:10 GMT
 ENV RETHINKDB_PACKAGE_VERSION=2.4.1~0buster
-# Wed, 17 Nov 2021 22:25:10 GMT
+# Fri, 03 Dec 2021 03:46:18 GMT
 RUN apt-get -qqy update 	&& apt-get install -y rethinkdb=$RETHINKDB_PACKAGE_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 17 Nov 2021 22:25:10 GMT
+# Fri, 03 Dec 2021 03:46:18 GMT
 VOLUME [/data]
-# Wed, 17 Nov 2021 22:25:11 GMT
+# Fri, 03 Dec 2021 03:46:18 GMT
 WORKDIR /data
-# Wed, 17 Nov 2021 22:25:11 GMT
+# Fri, 03 Dec 2021 03:46:18 GMT
 CMD ["rethinkdb" "--bind" "all"]
-# Wed, 17 Nov 2021 22:25:11 GMT
+# Fri, 03 Dec 2021 03:46:19 GMT
 EXPOSE 28015 29015 8080
 ```
 
 -	Layers:
-	-	`sha256:a10c77af261312e7c92bcc184f2d1726175ff7f142e44b01c5779cd79348b9fd`  
-		Last Modified: Wed, 17 Nov 2021 02:26:31 GMT  
-		Size: 27.2 MB (27153675 bytes)  
+	-	`sha256:ffbb094f4f9e7c61d97c2b409f3e8154e2621a5074a0087d35f1849e665d0d34`  
+		Last Modified: Thu, 02 Dec 2021 02:54:33 GMT  
+		Size: 27.2 MB (27153729 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66fb6b02a9a0ade6df258d7064777b68071482b115c8902e01a27194bdf15940`  
-		Last Modified: Wed, 17 Nov 2021 22:25:33 GMT  
-		Size: 6.7 MB (6691116 bytes)  
+	-	`sha256:14358a6fa48651796b12a46712690dfc747d989660d0c101e7d92d1d78134903`  
+		Last Modified: Fri, 03 Dec 2021 03:46:44 GMT  
+		Size: 6.7 MB (6691041 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:de316cb2988512400f1cb24315615f7d9c61e4cc781ce4b78a1a6797a2bd58dc`  
-		Last Modified: Wed, 17 Nov 2021 22:25:31 GMT  
-		Size: 2.6 KB (2612 bytes)  
+	-	`sha256:53565ca8ebd24d12231eea3a22dfdb2e9b62608057634947ae2aa22576f1a420`  
+		Last Modified: Fri, 03 Dec 2021 03:46:43 GMT  
+		Size: 2.6 KB (2614 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c6dfcaddf3c553eb8300f607eee1151bedccf8957248f60b590a2a3a720a26c`  
-		Last Modified: Wed, 17 Nov 2021 22:25:34 GMT  
-		Size: 18.0 MB (17991459 bytes)  
+	-	`sha256:cdb0eb01bb1d629344bc229d2ed2eee029e4514ba97ab41305abe7784051ff21`  
+		Last Modified: Fri, 03 Dec 2021 03:46:46 GMT  
+		Size: 18.0 MB (17991491 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:276ce5b4b66351bef0957b0c61e6d0eb8e4f8a00fef8581f63e8a5d61f01c416`  
-		Last Modified: Wed, 17 Nov 2021 22:25:31 GMT  
+	-	`sha256:f545a92af626178003556b438b33c5a77d04345eac8b13774fb9ce70c5f62fb1`  
+		Last Modified: Fri, 03 Dec 2021 03:46:43 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
