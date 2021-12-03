@@ -1,7 +1,7 @@
 ## `clojure:openjdk-18-tools-deps-alpine`
 
 ```console
-$ docker pull clojure@sha256:43346c113d5ece0e6fb6ce685c0d7eaf9b0ad3c861f1eca6c1704ef0cf339779
+$ docker pull clojure@sha256:231a10f5f69cfb33aedab06a9fb8c93e93cd7e982d4993c4cbc17859316cef7a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull clojure@sha256:43346c113d5ece0e6fb6ce685c0d7eaf9b0ad3c861f1eca6c17
 ### `clojure:openjdk-18-tools-deps-alpine` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:ffaa4b4150f1e9f1375266ca2471db99edae404fab1e34494facef844eb77f81
+$ docker pull clojure@sha256:cfc7cd24a1a8242776b34577b85db591568cb2573b0ecce8fe8f2067a077ac57
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **218.6 MB (218607038 bytes)**  
+-	Total Size: **218.6 MB (218623734 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a3c6406f0f77fb3b2a4881e5e213e5126e27aa945ea17096767198d261a4444c`
+-	Image ID: `sha256:cddedd34086d7ff38907c04d96ab0c9ad67e340230f69e2ae081c07f56993484`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
@@ -39,19 +39,19 @@ ENV JAVA_VERSION=18-ea+11
 RUN set -eux; 		arch="$(apk --print-arch)"; 	case "$arch" in 		'x86_64') 			downloadUrl='https://download.java.net/java/early_access/alpine/11/binaries/openjdk-18-ea+11_linux-x64-musl_bin.tar.gz'; 			downloadSha256='86fad9069587a5e9dd003e7354a69b2f720a05c12706d2f2345a0c8d90e56c47'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum -c -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/ssl/certs/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
 # Tue, 30 Nov 2021 04:45:46 GMT
 CMD ["jshell"]
-# Tue, 30 Nov 2021 10:20:36 GMT
-ENV CLOJURE_VERSION=1.10.3.1020
-# Tue, 30 Nov 2021 10:20:36 GMT
+# Fri, 03 Dec 2021 13:15:05 GMT
+ENV CLOJURE_VERSION=1.10.3.1040
+# Fri, 03 Dec 2021 13:15:05 GMT
 WORKDIR /tmp
-# Tue, 30 Nov 2021 10:20:43 GMT
-RUN apk add --no-cache curl bash make git && wget https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "afc87e2c8cfbf87e43553439c69a4c8e36bc2094405d08f39ca542b4cca0920a *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" && apk del curl
-# Thu, 02 Dec 2021 02:34:55 GMT
+# Fri, 03 Dec 2021 13:15:11 GMT
+RUN apk add --no-cache curl bash make git && wget https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "665e35e8d7dd0996edaba36220fd5048fee95f5155ec0426f628f18770239821 *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" && apk del curl
+# Fri, 03 Dec 2021 13:15:11 GMT
 COPY file:b0aef3ea203de7b5c2ea645debf58c8231445a2e3070b72749b54614f4a89b82 in /usr/local/bin/rlwrap 
-# Thu, 02 Dec 2021 02:34:55 GMT
+# Fri, 03 Dec 2021 13:15:11 GMT
 COPY file:137b40904568e30898cd031ef34f77e7f132846ba4eec91d04ae4b93dddfbb8d in /usr/local/bin/entrypoint 
-# Thu, 02 Dec 2021 02:34:56 GMT
+# Fri, 03 Dec 2021 13:15:12 GMT
 ENTRYPOINT ["entrypoint"]
-# Thu, 02 Dec 2021 02:34:56 GMT
+# Fri, 03 Dec 2021 13:15:12 GMT
 CMD ["-M" "--repl"]
 ```
 
@@ -68,15 +68,15 @@ CMD ["-M" "--repl"]
 		Last Modified: Tue, 30 Nov 2021 04:55:48 GMT  
 		Size: 188.7 MB (188699653 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c3259960bbd492a65ce4a51fe312903b9de704827879685c2c81d94f8f81a59`  
-		Last Modified: Tue, 30 Nov 2021 10:28:15 GMT  
-		Size: 26.2 MB (26155739 bytes)  
+	-	`sha256:f35632dc308f2d94a0fbfe48d57b85836c1466e97918bed83e64706f5f6c3092`  
+		Last Modified: Fri, 03 Dec 2021 13:32:04 GMT  
+		Size: 26.2 MB (26172437 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21b99eadf82eaf12604e8fcde6986706f1971d7c4c480c5f286ef7364b393eec`  
-		Last Modified: Thu, 02 Dec 2021 02:46:58 GMT  
-		Size: 623.0 B  
+	-	`sha256:27f212645ac6132208b1ed2ed9092eca53fb2042950856d5ec1336b0108aea60`  
+		Last Modified: Fri, 03 Dec 2021 13:32:02 GMT  
+		Size: 622.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ac58a7914e0fcf32571458478857d94b57dadb038c5d59db6dc2ce85f2b5eed`  
-		Last Modified: Thu, 02 Dec 2021 02:46:59 GMT  
-		Size: 405.0 B  
+	-	`sha256:914def7c587a1b1020d0e0708248e9d50404ad0a601b13bc61ccf24248ba2ea4`  
+		Last Modified: Fri, 03 Dec 2021 13:32:02 GMT  
+		Size: 404.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
