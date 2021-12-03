@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2f0e0e3a9a161ca81022e58cb12bf888a220464f5e8bcaf0c0787ca26b12bf94`
-- Created: `2021-11-17T22:41:49.720249862Z`
+- Image ID: `sha256:5ea6df2ead6ba388fa613c502b6008f2c9e27dbe1f3ee78a32869c6facdc65ba`
+- Created: `2021-12-02T17:43:08.421814695Z`
 - Virtual Size: ~ 2.95 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -3476,13 +3476,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/hyphen/2.8.8-7/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/hyphen/2.8.8-7/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `icu=63.1-6+deb10u1`
+### `dpkg` source package: `icu=63.1-6+deb10u2`
 
 Binary Packages:
 
-- `icu-devtools=63.1-6+deb10u1`
-- `libicu-dev:amd64=63.1-6+deb10u1`
-- `libicu63:amd64=63.1-6+deb10u1`
+- `icu-devtools=63.1-6+deb10u2`
+- `libicu-dev:amd64=63.1-6+deb10u2`
+- `libicu63:amd64=63.1-6+deb10u2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3491,17 +3491,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris icu=63.1-6+deb10u1
-'http://deb.debian.org/debian/pool/main/i/icu/icu_63.1-6+deb10u1.dsc' icu_63.1-6+deb10u1.dsc 1997 SHA256:c33329e44a83af47cdfd6ca2639611d960b163a5cce39e71945b0ed4b6971ec9
-'http://deb.debian.org/debian/pool/main/i/icu/icu_63.1.orig.tar.xz' icu_63.1.orig.tar.xz 13638120 SHA256:347d0e6c39c3538b812c10c6c83815d4a089d578380387ae7d94c5b820948e82
-'http://deb.debian.org/debian/pool/main/i/icu/icu_63.1-6+deb10u1.debian.tar.xz' icu_63.1-6+deb10u1.debian.tar.xz 25004 SHA256:d65fde3a61d0ba935b493b46fd42addeb24e0398b8d778124cb489770ec50a6d
+$ apt-get source -qq --print-uris icu=63.1-6+deb10u2
+'http://security.debian.org/debian-security/pool/updates/main/i/icu/icu_63.1-6+deb10u2.dsc' icu_63.1-6+deb10u2.dsc 2152 SHA256:4d175ca81d9605af871f634b831d75394f0497d66b523af8eaaf15846550333c
+'http://security.debian.org/debian-security/pool/updates/main/i/icu/icu_63.1.orig.tar.xz' icu_63.1.orig.tar.xz 13638120 SHA256:347d0e6c39c3538b812c10c6c83815d4a089d578380387ae7d94c5b820948e82
+'http://security.debian.org/debian-security/pool/updates/main/i/icu/icu_63.1-6+deb10u2.debian.tar.xz' icu_63.1-6+deb10u2.debian.tar.xz 25732 SHA256:1626f226cf3dad093bfc7874c5ebe9cc7a24e5fe8a1225a1de9fe576a4b9b463
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/icu/63.1-6+deb10u1/ (for browsing the source)
-- https://sources.debian.net/src/icu/63.1-6+deb10u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/icu/63.1-6+deb10u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/icu/63.1-6+deb10u2/ (for browsing the source)
+- https://sources.debian.net/src/icu/63.1-6+deb10u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/icu/63.1-6+deb10u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ilmbase=2.2.1-2`
 
@@ -7972,11 +7972,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nspr/2:4.20-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nspr/2:4.20-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nss=2:3.42.1-1+deb10u3`
+### `dpkg` source package: `nss=2:3.42.1-1+deb10u4`
 
 Binary Packages:
 
-- `libnss3:amd64=2:3.42.1-1+deb10u3`
+- `libnss3:amd64=2:3.42.1-1+deb10u4`
 
 Licenses: (parsed from: `/usr/share/doc/libnss3/copyright`)
 
@@ -7989,17 +7989,17 @@ Licenses: (parsed from: `/usr/share/doc/libnss3/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris nss=2:3.42.1-1+deb10u3
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.42.1-1+deb10u3.dsc' nss_3.42.1-1+deb10u3.dsc 2192 SHA256:fac608678750abfd2f82894e4930c86fa01a7852b1c4f48497a55f9e395c5162
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.42.1.orig.tar.gz' nss_3.42.1.orig.tar.gz 23416408 SHA256:087db37d38fd49dfd584dd2a8b5baa7fc88de7c9bd97c0c2d5be4abcafc61fc6
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.42.1-1+deb10u3.debian.tar.xz' nss_3.42.1-1+deb10u3.debian.tar.xz 34540 SHA256:f933f36022756bfcc2c1a25064552d8cebd329e786463d77a849d5c55df39bd8
+$ apt-get source -qq --print-uris nss=2:3.42.1-1+deb10u4
+'http://security.debian.org/debian-security/pool/updates/main/n/nss/nss_3.42.1-1+deb10u4.dsc' nss_3.42.1-1+deb10u4.dsc 2347 SHA256:29c8fe09a9e7fa2f5ed5aaa505ce2615af353f6885910bdd35592fb95cd5f9b6
+'http://security.debian.org/debian-security/pool/updates/main/n/nss/nss_3.42.1.orig.tar.gz' nss_3.42.1.orig.tar.gz 23416408 SHA256:087db37d38fd49dfd584dd2a8b5baa7fc88de7c9bd97c0c2d5be4abcafc61fc6
+'http://security.debian.org/debian-security/pool/updates/main/n/nss/nss_3.42.1-1+deb10u4.debian.tar.xz' nss_3.42.1-1+deb10u4.debian.tar.xz 36308 SHA256:496d33cfdf500496f27211a28cfdd089624874555ca268a9c86b89e24283eb5b
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/nss/2:3.42.1-1+deb10u3/ (for browsing the source)
-- https://sources.debian.net/src/nss/2:3.42.1-1+deb10u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nss/2:3.42.1-1+deb10u3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/nss/2:3.42.1-1+deb10u4/ (for browsing the source)
+- https://sources.debian.net/src/nss/2:3.42.1-1+deb10u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/nss/2:3.42.1-1+deb10u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `numactl=2.0.12-1`
 
