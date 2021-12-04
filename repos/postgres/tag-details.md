@@ -2080,7 +2080,7 @@ CMD ["postgres"]
 ## `postgres:10-bullseye`
 
 ```console
-$ docker pull postgres@sha256:89765dd6505d0e3027a9a5a73c73fb3ae3c0b411623529c5bff8175d0b1bf5d4
+$ docker pull postgres@sha256:edbaf3163b1b83ea823097286207a4af9d88f844b17c7e909fc63a79cacf9079
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2732,127 +2732,127 @@ CMD ["postgres"]
 ### `postgres:10-bullseye` - linux; mips64le
 
 ```console
-$ docker pull postgres@sha256:d95d46ee195d8f726f34ad78ae7b466c93747dac94c564cf83dfc0ad9aff5b0a
+$ docker pull postgres@sha256:6f20e2cbf7563fbc557d86e771bd77fd95e97eda49433fc8d2767bf8b6ff498e
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.6 MB (81634858 bytes)**  
+-	Total Size: **81.6 MB (81633718 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:24f23ee81d40deb28d41ab2352161ac8742aa37d2f288d5c69967b8f6b3e8aa8`
+-	Image ID: `sha256:f283bf991f371631b754b6da2a742ca49bc3f2f734b7df24b427dcd8de7889f2`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Wed, 17 Nov 2021 02:10:13 GMT
-ADD file:10bc783d286d0a800f59d5009e87ecb4651659c82cae1325132756c7c8b1dec0 in / 
-# Wed, 17 Nov 2021 02:10:13 GMT
+# Thu, 02 Dec 2021 03:09:10 GMT
+ADD file:419aff162077eb16923c3ede6455ca86756a929a5a837bc6ac6b8dc67913503a in / 
+# Thu, 02 Dec 2021 03:09:10 GMT
 CMD ["bash"]
-# Wed, 17 Nov 2021 03:38:46 GMT
+# Fri, 03 Dec 2021 19:20:44 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 17 Nov 2021 03:38:48 GMT
+# Fri, 03 Dec 2021 19:20:46 GMT
 RUN set -eux; 	groupadd -r postgres --gid=999; 	useradd -r -g postgres --uid=999 --home-dir=/var/lib/postgresql --shell=/bin/bash postgres; 	mkdir -p /var/lib/postgresql; 	chown -R postgres:postgres /var/lib/postgresql
-# Tue, 30 Nov 2021 03:51:38 GMT
+# Fri, 03 Dec 2021 19:20:46 GMT
 ENV GOSU_VERSION=1.14
-# Tue, 30 Nov 2021 03:51:59 GMT
+# Fri, 03 Dec 2021 19:21:06 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Tue, 30 Nov 2021 03:52:23 GMT
+# Fri, 03 Dec 2021 19:21:31 GMT
 RUN set -eux; 	if [ -f /etc/dpkg/dpkg.cfg.d/docker ]; then 		grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 		sed -ri '/\/usr\/share\/locale/d' /etc/dpkg/dpkg.cfg.d/docker; 		! grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 	fi; 	apt-get update; apt-get install -y --no-install-recommends locales; rm -rf /var/lib/apt/lists/*; 	localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Tue, 30 Nov 2021 03:52:24 GMT
+# Fri, 03 Dec 2021 19:21:31 GMT
 ENV LANG=en_US.utf8
-# Tue, 30 Nov 2021 03:52:36 GMT
+# Fri, 03 Dec 2021 19:21:44 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libnss-wrapper 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 30 Nov 2021 03:52:38 GMT
+# Fri, 03 Dec 2021 19:21:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 30 Nov 2021 03:52:41 GMT
+# Fri, 03 Dec 2021 19:21:48 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	command -v gpgconf > /dev/null && gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Tue, 30 Nov 2021 07:22:48 GMT
+# Fri, 03 Dec 2021 22:52:38 GMT
 ENV PG_MAJOR=10
-# Tue, 30 Nov 2021 07:22:49 GMT
+# Fri, 03 Dec 2021 22:52:38 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/10/bin
-# Tue, 30 Nov 2021 07:22:49 GMT
+# Fri, 03 Dec 2021 22:52:39 GMT
 ENV PG_VERSION=10.19-1.pgdg110+1
-# Tue, 30 Nov 2021 07:58:10 GMT
+# Fri, 03 Dec 2021 23:28:07 GMT
 RUN set -ex; 		export PYTHONDONTWRITEBYTECODE=1; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64 | arm64 | ppc64el) 			echo "deb http://apt.postgresql.org/pub/repos/apt/ bullseye-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 			apt-get update; 			;; 		*) 			echo "deb-src http://apt.postgresql.org/pub/repos/apt/ bullseye-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 						tempDir="$(mktemp -d)"; 			cd "$tempDir"; 						savedAptMark="$(apt-mark showmanual)"; 						apt-get update; 			apt-get build-dep -y 				postgresql-common pgdg-keyring 				"postgresql-$PG_MAJOR=$PG_VERSION" 			; 			DEB_BUILD_OPTIONS="nocheck parallel=$(nproc)" 				apt-get source --compile 					postgresql-common pgdg-keyring 					"postgresql-$PG_MAJOR=$PG_VERSION" 			; 						apt-mark showmanual | xargs apt-mark auto > /dev/null; 			apt-mark manual $savedAptMark; 						ls -lAFh; 			dpkg-scanpackages . > Packages; 			grep '^Package: ' Packages; 			echo "deb [ trusted=yes ] file://$tempDir ./" > /etc/apt/sources.list.d/temp.list; 			apt-get -o Acquire::GzipIndexes=false update; 			;; 	esac; 		apt-get install -y --no-install-recommends postgresql-common; 	sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf; 	apt-get install -y --no-install-recommends 		"postgresql-$PG_MAJOR=$PG_VERSION" 	; 		rm -rf /var/lib/apt/lists/*; 		if [ -n "$tempDir" ]; then 		apt-get purge -y --auto-remove; 		rm -rf "$tempDir" /etc/apt/sources.list.d/temp.list; 	fi; 		find /usr -name '*.pyc' -type f -exec bash -c 'for pyc; do dpkg -S "$pyc" &> /dev/null || rm -vf "$pyc"; done' -- '{}' +; 		postgres --version
-# Tue, 30 Nov 2021 07:58:13 GMT
+# Fri, 03 Dec 2021 23:28:10 GMT
 RUN set -eux; 	dpkg-divert --add --rename --divert "/usr/share/postgresql/postgresql.conf.sample.dpkg" "/usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample"; 	cp -v /usr/share/postgresql/postgresql.conf.sample.dpkg /usr/share/postgresql/postgresql.conf.sample; 	ln -sv ../postgresql.conf.sample "/usr/share/postgresql/$PG_MAJOR/"; 	sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample; 	grep -F "listen_addresses = '*'" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 30 Nov 2021 07:58:15 GMT
+# Fri, 03 Dec 2021 23:28:12 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod 2777 /var/run/postgresql
-# Tue, 30 Nov 2021 07:58:16 GMT
+# Fri, 03 Dec 2021 23:28:12 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 30 Nov 2021 07:58:18 GMT
+# Fri, 03 Dec 2021 23:28:14 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA"
-# Tue, 30 Nov 2021 07:58:18 GMT
+# Fri, 03 Dec 2021 23:28:14 GMT
 VOLUME [/var/lib/postgresql/data]
-# Tue, 30 Nov 2021 07:58:18 GMT
+# Fri, 03 Dec 2021 23:28:15 GMT
 COPY file:6e4de9271291e4bdd4a40b73fffe4d6d1aeff033460f5b14d74e948686daa095 in /usr/local/bin/ 
-# Tue, 30 Nov 2021 07:58:20 GMT
+# Fri, 03 Dec 2021 23:28:17 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Tue, 30 Nov 2021 07:58:21 GMT
+# Fri, 03 Dec 2021 23:28:17 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 30 Nov 2021 07:58:21 GMT
+# Fri, 03 Dec 2021 23:28:17 GMT
 STOPSIGNAL SIGINT
-# Tue, 30 Nov 2021 07:58:21 GMT
+# Fri, 03 Dec 2021 23:28:18 GMT
 EXPOSE 5432
-# Tue, 30 Nov 2021 07:58:22 GMT
+# Fri, 03 Dec 2021 23:28:18 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:08bca22fbffb4e58224e9e4f6a56f1ca5099c002b1aeb6181df63af308a3da58`  
-		Last Modified: Wed, 17 Nov 2021 02:19:09 GMT  
-		Size: 29.6 MB (29630388 bytes)  
+	-	`sha256:df61fb15db6391af55d70bc3c0db3e9014438c81bf802619fb527221adf5e8a8`  
+		Last Modified: Thu, 02 Dec 2021 03:17:58 GMT  
+		Size: 29.6 MB (29630496 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:173240a7e67fd44ecc0ad5edd818557628d50f00c5d2a5f3d580e0a2ac091610`  
-		Last Modified: Wed, 17 Nov 2021 08:20:21 GMT  
-		Size: 4.4 MB (4402817 bytes)  
+	-	`sha256:aead74c300746557e558c9a90ac68d244f2d0a4887452c091df5b13129cb2b9f`  
+		Last Modified: Sat, 04 Dec 2021 00:03:36 GMT  
+		Size: 4.4 MB (4402852 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5442a27e75e2c0fbbf3bcf39b1c33f75d31863490f96ba2f0f1921ef6da25caf`  
-		Last Modified: Wed, 17 Nov 2021 08:20:17 GMT  
-		Size: 1.8 KB (1767 bytes)  
+	-	`sha256:ff24a9c55d840ff572c517a90e96685d72a67060b5e33095553fb562baab18cf`  
+		Last Modified: Sat, 04 Dec 2021 00:03:32 GMT  
+		Size: 1.8 KB (1769 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2054e4460d2a19717dd4a336b47653df9571eda928f0f361edc1ab86244ddcc2`  
-		Last Modified: Tue, 30 Nov 2021 08:33:27 GMT  
-		Size: 1.3 MB (1298194 bytes)  
+	-	`sha256:ff2f2672897c98937e158db018d3d1b122bf326ce588884511581b48ad1a88ff`  
+		Last Modified: Sat, 04 Dec 2021 00:03:33 GMT  
+		Size: 1.3 MB (1298160 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb7d76eb66b099fba3c2444676a5f23198b89f04ca562d92fe3cbad93e17ed6f`  
-		Last Modified: Tue, 30 Nov 2021 08:33:31 GMT  
-		Size: 8.0 MB (8043954 bytes)  
+	-	`sha256:79a1189dc92e0a7d42054bcaba5f31998c46ca53d7c74cede00da57e1ad8e953`  
+		Last Modified: Sat, 04 Dec 2021 00:03:37 GMT  
+		Size: 8.0 MB (8043932 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fde934ccf5b463f3cc67c5e044fdb538461feed010e478a8adb22f25017f220b`  
-		Last Modified: Tue, 30 Nov 2021 08:33:24 GMT  
-		Size: 439.2 KB (439195 bytes)  
+	-	`sha256:6ebf674bd1ad23a8d1eb79e72400b0113c5888197764e12868bb0bf9e8524f35`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
+		Size: 439.2 KB (439177 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0517cbc7ba02213b80d94a9809694781806502aef56896f981df723099874173`  
-		Last Modified: Tue, 30 Nov 2021 08:33:23 GMT  
+	-	`sha256:082848bd27554921aa8011299d5bc6ca85fd6ad7f1c5ceb5a0af2f8d453db000`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5ff4ee65102820557350a5542a9ce98ad5efe0fcb3cf0a382b9ef99f9850a99`  
-		Last Modified: Tue, 30 Nov 2021 08:33:23 GMT  
-		Size: 3.1 KB (3052 bytes)  
+	-	`sha256:77c733c7a0c1c23d143a50ed0a6e48a73f8aac5364a708d48a3ea82b16359311`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
+		Size: 3.1 KB (3054 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d967b69aae7a1bb66eeca8bb5c524f8106390fb156d415ad2f820267a3f1a09f`  
-		Last Modified: Tue, 30 Nov 2021 08:39:17 GMT  
-		Size: 37.8 MB (37802152 bytes)  
+	-	`sha256:b20fe7db7aac4e9ca9ebbd0dad95092166b1e794f9fc72710d7c209a30d2bfa7`  
+		Last Modified: Sat, 04 Dec 2021 00:09:12 GMT  
+		Size: 37.8 MB (37800939 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1e7d4f6fb5d0ed3918b71213c21eeaed90829a0f081a81fddba499113fb82f95`  
-		Last Modified: Tue, 30 Nov 2021 08:38:47 GMT  
-		Size: 8.1 KB (8084 bytes)  
+	-	`sha256:426b68462cde160cd20fc30e80c8f2e70ef1860e8f6eac48777688a82c1be5dd`  
+		Last Modified: Sat, 04 Dec 2021 00:08:42 GMT  
+		Size: 8.1 KB (8085 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:70b4d82c1a87a35e9d071e0da9751724222f748e3432c4eabbc65a1b0dd7764f`  
-		Last Modified: Tue, 30 Nov 2021 08:38:47 GMT  
-		Size: 130.0 B  
+	-	`sha256:3f0326962271835e7912175feeb6e5e1de5809fc03b802587442c61ee93fc32f`  
+		Last Modified: Sat, 04 Dec 2021 00:08:42 GMT  
+		Size: 129.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:52d724297370df883f337776ad82127a4df368458ef2dd09632f532369f3993b`  
-		Last Modified: Tue, 30 Nov 2021 08:38:47 GMT  
-		Size: 172.0 B  
+	-	`sha256:9813b870d904ae03657d0a408162af2a81c8b17453665445cc5c89f34c7a16a7`  
+		Last Modified: Sat, 04 Dec 2021 00:08:42 GMT  
+		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45f6ce7b9e4db84a666e5d955e813a6dfaa5ada025a0f80f1d960373b64560d5`  
-		Last Modified: Tue, 30 Nov 2021 08:38:47 GMT  
-		Size: 4.7 KB (4717 bytes)  
+	-	`sha256:458e57ec4893be68553dcc917183a083ce57c59e5fba433bbf0e5fc73229266e`  
+		Last Modified: Sat, 04 Dec 2021 00:08:42 GMT  
+		Size: 4.7 KB (4718 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe5bb3ad2577413a1dff6f22e7674f02d749553e8a9d9202fd1e0f6020677991`  
-		Last Modified: Tue, 30 Nov 2021 08:38:47 GMT  
+	-	`sha256:3dfe2efb0d4d25354ae09e856ee839fcd380d1924d140e70b9c166923d8c634e`  
+		Last Modified: Sat, 04 Dec 2021 00:08:42 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -5773,7 +5773,7 @@ CMD ["postgres"]
 ## `postgres:10.19-bullseye`
 
 ```console
-$ docker pull postgres@sha256:89765dd6505d0e3027a9a5a73c73fb3ae3c0b411623529c5bff8175d0b1bf5d4
+$ docker pull postgres@sha256:edbaf3163b1b83ea823097286207a4af9d88f844b17c7e909fc63a79cacf9079
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6425,127 +6425,127 @@ CMD ["postgres"]
 ### `postgres:10.19-bullseye` - linux; mips64le
 
 ```console
-$ docker pull postgres@sha256:d95d46ee195d8f726f34ad78ae7b466c93747dac94c564cf83dfc0ad9aff5b0a
+$ docker pull postgres@sha256:6f20e2cbf7563fbc557d86e771bd77fd95e97eda49433fc8d2767bf8b6ff498e
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.6 MB (81634858 bytes)**  
+-	Total Size: **81.6 MB (81633718 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:24f23ee81d40deb28d41ab2352161ac8742aa37d2f288d5c69967b8f6b3e8aa8`
+-	Image ID: `sha256:f283bf991f371631b754b6da2a742ca49bc3f2f734b7df24b427dcd8de7889f2`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Wed, 17 Nov 2021 02:10:13 GMT
-ADD file:10bc783d286d0a800f59d5009e87ecb4651659c82cae1325132756c7c8b1dec0 in / 
-# Wed, 17 Nov 2021 02:10:13 GMT
+# Thu, 02 Dec 2021 03:09:10 GMT
+ADD file:419aff162077eb16923c3ede6455ca86756a929a5a837bc6ac6b8dc67913503a in / 
+# Thu, 02 Dec 2021 03:09:10 GMT
 CMD ["bash"]
-# Wed, 17 Nov 2021 03:38:46 GMT
+# Fri, 03 Dec 2021 19:20:44 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 17 Nov 2021 03:38:48 GMT
+# Fri, 03 Dec 2021 19:20:46 GMT
 RUN set -eux; 	groupadd -r postgres --gid=999; 	useradd -r -g postgres --uid=999 --home-dir=/var/lib/postgresql --shell=/bin/bash postgres; 	mkdir -p /var/lib/postgresql; 	chown -R postgres:postgres /var/lib/postgresql
-# Tue, 30 Nov 2021 03:51:38 GMT
+# Fri, 03 Dec 2021 19:20:46 GMT
 ENV GOSU_VERSION=1.14
-# Tue, 30 Nov 2021 03:51:59 GMT
+# Fri, 03 Dec 2021 19:21:06 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Tue, 30 Nov 2021 03:52:23 GMT
+# Fri, 03 Dec 2021 19:21:31 GMT
 RUN set -eux; 	if [ -f /etc/dpkg/dpkg.cfg.d/docker ]; then 		grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 		sed -ri '/\/usr\/share\/locale/d' /etc/dpkg/dpkg.cfg.d/docker; 		! grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 	fi; 	apt-get update; apt-get install -y --no-install-recommends locales; rm -rf /var/lib/apt/lists/*; 	localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Tue, 30 Nov 2021 03:52:24 GMT
+# Fri, 03 Dec 2021 19:21:31 GMT
 ENV LANG=en_US.utf8
-# Tue, 30 Nov 2021 03:52:36 GMT
+# Fri, 03 Dec 2021 19:21:44 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libnss-wrapper 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 30 Nov 2021 03:52:38 GMT
+# Fri, 03 Dec 2021 19:21:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 30 Nov 2021 03:52:41 GMT
+# Fri, 03 Dec 2021 19:21:48 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	command -v gpgconf > /dev/null && gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Tue, 30 Nov 2021 07:22:48 GMT
+# Fri, 03 Dec 2021 22:52:38 GMT
 ENV PG_MAJOR=10
-# Tue, 30 Nov 2021 07:22:49 GMT
+# Fri, 03 Dec 2021 22:52:38 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/10/bin
-# Tue, 30 Nov 2021 07:22:49 GMT
+# Fri, 03 Dec 2021 22:52:39 GMT
 ENV PG_VERSION=10.19-1.pgdg110+1
-# Tue, 30 Nov 2021 07:58:10 GMT
+# Fri, 03 Dec 2021 23:28:07 GMT
 RUN set -ex; 		export PYTHONDONTWRITEBYTECODE=1; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64 | arm64 | ppc64el) 			echo "deb http://apt.postgresql.org/pub/repos/apt/ bullseye-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 			apt-get update; 			;; 		*) 			echo "deb-src http://apt.postgresql.org/pub/repos/apt/ bullseye-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 						tempDir="$(mktemp -d)"; 			cd "$tempDir"; 						savedAptMark="$(apt-mark showmanual)"; 						apt-get update; 			apt-get build-dep -y 				postgresql-common pgdg-keyring 				"postgresql-$PG_MAJOR=$PG_VERSION" 			; 			DEB_BUILD_OPTIONS="nocheck parallel=$(nproc)" 				apt-get source --compile 					postgresql-common pgdg-keyring 					"postgresql-$PG_MAJOR=$PG_VERSION" 			; 						apt-mark showmanual | xargs apt-mark auto > /dev/null; 			apt-mark manual $savedAptMark; 						ls -lAFh; 			dpkg-scanpackages . > Packages; 			grep '^Package: ' Packages; 			echo "deb [ trusted=yes ] file://$tempDir ./" > /etc/apt/sources.list.d/temp.list; 			apt-get -o Acquire::GzipIndexes=false update; 			;; 	esac; 		apt-get install -y --no-install-recommends postgresql-common; 	sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf; 	apt-get install -y --no-install-recommends 		"postgresql-$PG_MAJOR=$PG_VERSION" 	; 		rm -rf /var/lib/apt/lists/*; 		if [ -n "$tempDir" ]; then 		apt-get purge -y --auto-remove; 		rm -rf "$tempDir" /etc/apt/sources.list.d/temp.list; 	fi; 		find /usr -name '*.pyc' -type f -exec bash -c 'for pyc; do dpkg -S "$pyc" &> /dev/null || rm -vf "$pyc"; done' -- '{}' +; 		postgres --version
-# Tue, 30 Nov 2021 07:58:13 GMT
+# Fri, 03 Dec 2021 23:28:10 GMT
 RUN set -eux; 	dpkg-divert --add --rename --divert "/usr/share/postgresql/postgresql.conf.sample.dpkg" "/usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample"; 	cp -v /usr/share/postgresql/postgresql.conf.sample.dpkg /usr/share/postgresql/postgresql.conf.sample; 	ln -sv ../postgresql.conf.sample "/usr/share/postgresql/$PG_MAJOR/"; 	sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample; 	grep -F "listen_addresses = '*'" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 30 Nov 2021 07:58:15 GMT
+# Fri, 03 Dec 2021 23:28:12 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod 2777 /var/run/postgresql
-# Tue, 30 Nov 2021 07:58:16 GMT
+# Fri, 03 Dec 2021 23:28:12 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 30 Nov 2021 07:58:18 GMT
+# Fri, 03 Dec 2021 23:28:14 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA"
-# Tue, 30 Nov 2021 07:58:18 GMT
+# Fri, 03 Dec 2021 23:28:14 GMT
 VOLUME [/var/lib/postgresql/data]
-# Tue, 30 Nov 2021 07:58:18 GMT
+# Fri, 03 Dec 2021 23:28:15 GMT
 COPY file:6e4de9271291e4bdd4a40b73fffe4d6d1aeff033460f5b14d74e948686daa095 in /usr/local/bin/ 
-# Tue, 30 Nov 2021 07:58:20 GMT
+# Fri, 03 Dec 2021 23:28:17 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Tue, 30 Nov 2021 07:58:21 GMT
+# Fri, 03 Dec 2021 23:28:17 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 30 Nov 2021 07:58:21 GMT
+# Fri, 03 Dec 2021 23:28:17 GMT
 STOPSIGNAL SIGINT
-# Tue, 30 Nov 2021 07:58:21 GMT
+# Fri, 03 Dec 2021 23:28:18 GMT
 EXPOSE 5432
-# Tue, 30 Nov 2021 07:58:22 GMT
+# Fri, 03 Dec 2021 23:28:18 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:08bca22fbffb4e58224e9e4f6a56f1ca5099c002b1aeb6181df63af308a3da58`  
-		Last Modified: Wed, 17 Nov 2021 02:19:09 GMT  
-		Size: 29.6 MB (29630388 bytes)  
+	-	`sha256:df61fb15db6391af55d70bc3c0db3e9014438c81bf802619fb527221adf5e8a8`  
+		Last Modified: Thu, 02 Dec 2021 03:17:58 GMT  
+		Size: 29.6 MB (29630496 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:173240a7e67fd44ecc0ad5edd818557628d50f00c5d2a5f3d580e0a2ac091610`  
-		Last Modified: Wed, 17 Nov 2021 08:20:21 GMT  
-		Size: 4.4 MB (4402817 bytes)  
+	-	`sha256:aead74c300746557e558c9a90ac68d244f2d0a4887452c091df5b13129cb2b9f`  
+		Last Modified: Sat, 04 Dec 2021 00:03:36 GMT  
+		Size: 4.4 MB (4402852 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5442a27e75e2c0fbbf3bcf39b1c33f75d31863490f96ba2f0f1921ef6da25caf`  
-		Last Modified: Wed, 17 Nov 2021 08:20:17 GMT  
-		Size: 1.8 KB (1767 bytes)  
+	-	`sha256:ff24a9c55d840ff572c517a90e96685d72a67060b5e33095553fb562baab18cf`  
+		Last Modified: Sat, 04 Dec 2021 00:03:32 GMT  
+		Size: 1.8 KB (1769 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2054e4460d2a19717dd4a336b47653df9571eda928f0f361edc1ab86244ddcc2`  
-		Last Modified: Tue, 30 Nov 2021 08:33:27 GMT  
-		Size: 1.3 MB (1298194 bytes)  
+	-	`sha256:ff2f2672897c98937e158db018d3d1b122bf326ce588884511581b48ad1a88ff`  
+		Last Modified: Sat, 04 Dec 2021 00:03:33 GMT  
+		Size: 1.3 MB (1298160 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb7d76eb66b099fba3c2444676a5f23198b89f04ca562d92fe3cbad93e17ed6f`  
-		Last Modified: Tue, 30 Nov 2021 08:33:31 GMT  
-		Size: 8.0 MB (8043954 bytes)  
+	-	`sha256:79a1189dc92e0a7d42054bcaba5f31998c46ca53d7c74cede00da57e1ad8e953`  
+		Last Modified: Sat, 04 Dec 2021 00:03:37 GMT  
+		Size: 8.0 MB (8043932 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fde934ccf5b463f3cc67c5e044fdb538461feed010e478a8adb22f25017f220b`  
-		Last Modified: Tue, 30 Nov 2021 08:33:24 GMT  
-		Size: 439.2 KB (439195 bytes)  
+	-	`sha256:6ebf674bd1ad23a8d1eb79e72400b0113c5888197764e12868bb0bf9e8524f35`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
+		Size: 439.2 KB (439177 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0517cbc7ba02213b80d94a9809694781806502aef56896f981df723099874173`  
-		Last Modified: Tue, 30 Nov 2021 08:33:23 GMT  
+	-	`sha256:082848bd27554921aa8011299d5bc6ca85fd6ad7f1c5ceb5a0af2f8d453db000`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5ff4ee65102820557350a5542a9ce98ad5efe0fcb3cf0a382b9ef99f9850a99`  
-		Last Modified: Tue, 30 Nov 2021 08:33:23 GMT  
-		Size: 3.1 KB (3052 bytes)  
+	-	`sha256:77c733c7a0c1c23d143a50ed0a6e48a73f8aac5364a708d48a3ea82b16359311`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
+		Size: 3.1 KB (3054 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d967b69aae7a1bb66eeca8bb5c524f8106390fb156d415ad2f820267a3f1a09f`  
-		Last Modified: Tue, 30 Nov 2021 08:39:17 GMT  
-		Size: 37.8 MB (37802152 bytes)  
+	-	`sha256:b20fe7db7aac4e9ca9ebbd0dad95092166b1e794f9fc72710d7c209a30d2bfa7`  
+		Last Modified: Sat, 04 Dec 2021 00:09:12 GMT  
+		Size: 37.8 MB (37800939 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1e7d4f6fb5d0ed3918b71213c21eeaed90829a0f081a81fddba499113fb82f95`  
-		Last Modified: Tue, 30 Nov 2021 08:38:47 GMT  
-		Size: 8.1 KB (8084 bytes)  
+	-	`sha256:426b68462cde160cd20fc30e80c8f2e70ef1860e8f6eac48777688a82c1be5dd`  
+		Last Modified: Sat, 04 Dec 2021 00:08:42 GMT  
+		Size: 8.1 KB (8085 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:70b4d82c1a87a35e9d071e0da9751724222f748e3432c4eabbc65a1b0dd7764f`  
-		Last Modified: Tue, 30 Nov 2021 08:38:47 GMT  
-		Size: 130.0 B  
+	-	`sha256:3f0326962271835e7912175feeb6e5e1de5809fc03b802587442c61ee93fc32f`  
+		Last Modified: Sat, 04 Dec 2021 00:08:42 GMT  
+		Size: 129.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:52d724297370df883f337776ad82127a4df368458ef2dd09632f532369f3993b`  
-		Last Modified: Tue, 30 Nov 2021 08:38:47 GMT  
-		Size: 172.0 B  
+	-	`sha256:9813b870d904ae03657d0a408162af2a81c8b17453665445cc5c89f34c7a16a7`  
+		Last Modified: Sat, 04 Dec 2021 00:08:42 GMT  
+		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45f6ce7b9e4db84a666e5d955e813a6dfaa5ada025a0f80f1d960373b64560d5`  
-		Last Modified: Tue, 30 Nov 2021 08:38:47 GMT  
-		Size: 4.7 KB (4717 bytes)  
+	-	`sha256:458e57ec4893be68553dcc917183a083ce57c59e5fba433bbf0e5fc73229266e`  
+		Last Modified: Sat, 04 Dec 2021 00:08:42 GMT  
+		Size: 4.7 KB (4718 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe5bb3ad2577413a1dff6f22e7674f02d749553e8a9d9202fd1e0f6020677991`  
-		Last Modified: Tue, 30 Nov 2021 08:38:47 GMT  
+	-	`sha256:3dfe2efb0d4d25354ae09e856ee839fcd380d1924d140e70b9c166923d8c634e`  
+		Last Modified: Sat, 04 Dec 2021 00:08:42 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -9352,7 +9352,7 @@ CMD ["postgres"]
 ## `postgres:11-bullseye`
 
 ```console
-$ docker pull postgres@sha256:53061e8758de18e382162dcc25290f758e1af9010b2147cbe4676ac8a7ec3f14
+$ docker pull postgres@sha256:6903901b5b53ffb364825d6c1eb108e68f3faa4cae5da62085ade62b3b5f3d6e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9974,122 +9974,122 @@ CMD ["postgres"]
 ### `postgres:11-bullseye` - linux; mips64le
 
 ```console
-$ docker pull postgres@sha256:ab792ef5d252373bd4c99dd6904328af97dfb8741871e83d3d3d42494ebfe633
+$ docker pull postgres@sha256:ebc4b963df3a28ce13e694c01e47798ac31ac76ca9146faa978ef27d1963e3e6
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **129.2 MB (129154285 bytes)**  
+-	Total Size: **129.2 MB (129154575 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:defe81c9d752c89cad1511d23375ecd85eb7b221dc0eba1568463cc7e4c7c6a5`
+-	Image ID: `sha256:d98368718dcce1a421b462d204b9e1f43d4d7f062c21033d14df29ee5bea58ac`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Wed, 17 Nov 2021 02:10:13 GMT
-ADD file:10bc783d286d0a800f59d5009e87ecb4651659c82cae1325132756c7c8b1dec0 in / 
-# Wed, 17 Nov 2021 02:10:13 GMT
+# Thu, 02 Dec 2021 03:09:10 GMT
+ADD file:419aff162077eb16923c3ede6455ca86756a929a5a837bc6ac6b8dc67913503a in / 
+# Thu, 02 Dec 2021 03:09:10 GMT
 CMD ["bash"]
-# Wed, 17 Nov 2021 03:38:46 GMT
+# Fri, 03 Dec 2021 19:20:44 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 17 Nov 2021 03:38:48 GMT
+# Fri, 03 Dec 2021 19:20:46 GMT
 RUN set -eux; 	groupadd -r postgres --gid=999; 	useradd -r -g postgres --uid=999 --home-dir=/var/lib/postgresql --shell=/bin/bash postgres; 	mkdir -p /var/lib/postgresql; 	chown -R postgres:postgres /var/lib/postgresql
-# Tue, 30 Nov 2021 03:51:38 GMT
+# Fri, 03 Dec 2021 19:20:46 GMT
 ENV GOSU_VERSION=1.14
-# Tue, 30 Nov 2021 03:51:59 GMT
+# Fri, 03 Dec 2021 19:21:06 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Tue, 30 Nov 2021 03:52:23 GMT
+# Fri, 03 Dec 2021 19:21:31 GMT
 RUN set -eux; 	if [ -f /etc/dpkg/dpkg.cfg.d/docker ]; then 		grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 		sed -ri '/\/usr\/share\/locale/d' /etc/dpkg/dpkg.cfg.d/docker; 		! grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 	fi; 	apt-get update; apt-get install -y --no-install-recommends locales; rm -rf /var/lib/apt/lists/*; 	localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Tue, 30 Nov 2021 03:52:24 GMT
+# Fri, 03 Dec 2021 19:21:31 GMT
 ENV LANG=en_US.utf8
-# Tue, 30 Nov 2021 03:52:36 GMT
+# Fri, 03 Dec 2021 19:21:44 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libnss-wrapper 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 30 Nov 2021 03:52:38 GMT
+# Fri, 03 Dec 2021 19:21:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 30 Nov 2021 03:52:41 GMT
+# Fri, 03 Dec 2021 19:21:48 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	command -v gpgconf > /dev/null && gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Tue, 30 Nov 2021 06:33:15 GMT
+# Fri, 03 Dec 2021 22:02:50 GMT
 ENV PG_MAJOR=11
-# Tue, 30 Nov 2021 06:33:15 GMT
+# Fri, 03 Dec 2021 22:02:50 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/11/bin
-# Tue, 30 Nov 2021 06:33:15 GMT
+# Fri, 03 Dec 2021 22:02:50 GMT
 ENV PG_VERSION=11.14-1.pgdg110+1
-# Tue, 30 Nov 2021 07:22:34 GMT
+# Fri, 03 Dec 2021 22:52:16 GMT
 RUN set -ex; 		export PYTHONDONTWRITEBYTECODE=1; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64 | arm64 | ppc64el) 			echo "deb http://apt.postgresql.org/pub/repos/apt/ bullseye-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 			apt-get update; 			;; 		*) 			echo "deb-src http://apt.postgresql.org/pub/repos/apt/ bullseye-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 						tempDir="$(mktemp -d)"; 			cd "$tempDir"; 						savedAptMark="$(apt-mark showmanual)"; 						apt-get update; 			apt-get build-dep -y 				postgresql-common pgdg-keyring 				"postgresql-$PG_MAJOR=$PG_VERSION" 			; 			DEB_BUILD_OPTIONS="nocheck parallel=$(nproc)" 				apt-get source --compile 					postgresql-common pgdg-keyring 					"postgresql-$PG_MAJOR=$PG_VERSION" 			; 						apt-mark showmanual | xargs apt-mark auto > /dev/null; 			apt-mark manual $savedAptMark; 						ls -lAFh; 			dpkg-scanpackages . > Packages; 			grep '^Package: ' Packages; 			echo "deb [ trusted=yes ] file://$tempDir ./" > /etc/apt/sources.list.d/temp.list; 			apt-get -o Acquire::GzipIndexes=false update; 			;; 	esac; 		apt-get install -y --no-install-recommends postgresql-common; 	sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf; 	apt-get install -y --no-install-recommends 		"postgresql-$PG_MAJOR=$PG_VERSION" 	; 		rm -rf /var/lib/apt/lists/*; 		if [ -n "$tempDir" ]; then 		apt-get purge -y --auto-remove; 		rm -rf "$tempDir" /etc/apt/sources.list.d/temp.list; 	fi; 		find /usr -name '*.pyc' -type f -exec bash -c 'for pyc; do dpkg -S "$pyc" &> /dev/null || rm -vf "$pyc"; done' -- '{}' +; 		postgres --version
-# Tue, 30 Nov 2021 07:22:37 GMT
+# Fri, 03 Dec 2021 22:52:18 GMT
 RUN set -eux; 	dpkg-divert --add --rename --divert "/usr/share/postgresql/postgresql.conf.sample.dpkg" "/usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample"; 	cp -v /usr/share/postgresql/postgresql.conf.sample.dpkg /usr/share/postgresql/postgresql.conf.sample; 	ln -sv ../postgresql.conf.sample "/usr/share/postgresql/$PG_MAJOR/"; 	sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample; 	grep -F "listen_addresses = '*'" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 30 Nov 2021 07:22:39 GMT
+# Fri, 03 Dec 2021 22:52:21 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod 2777 /var/run/postgresql
-# Tue, 30 Nov 2021 07:22:39 GMT
+# Fri, 03 Dec 2021 22:52:21 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 30 Nov 2021 07:22:41 GMT
+# Fri, 03 Dec 2021 22:52:23 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA"
-# Tue, 30 Nov 2021 07:22:42 GMT
+# Fri, 03 Dec 2021 22:52:23 GMT
 VOLUME [/var/lib/postgresql/data]
-# Tue, 30 Nov 2021 07:22:42 GMT
+# Fri, 03 Dec 2021 22:52:24 GMT
 COPY file:6e4de9271291e4bdd4a40b73fffe4d6d1aeff033460f5b14d74e948686daa095 in /usr/local/bin/ 
-# Tue, 30 Nov 2021 07:22:43 GMT
+# Fri, 03 Dec 2021 22:52:24 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 30 Nov 2021 07:22:43 GMT
+# Fri, 03 Dec 2021 22:52:24 GMT
 STOPSIGNAL SIGINT
-# Tue, 30 Nov 2021 07:22:43 GMT
+# Fri, 03 Dec 2021 22:52:25 GMT
 EXPOSE 5432
-# Tue, 30 Nov 2021 07:22:44 GMT
+# Fri, 03 Dec 2021 22:52:25 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:08bca22fbffb4e58224e9e4f6a56f1ca5099c002b1aeb6181df63af308a3da58`  
-		Last Modified: Wed, 17 Nov 2021 02:19:09 GMT  
-		Size: 29.6 MB (29630388 bytes)  
+	-	`sha256:df61fb15db6391af55d70bc3c0db3e9014438c81bf802619fb527221adf5e8a8`  
+		Last Modified: Thu, 02 Dec 2021 03:17:58 GMT  
+		Size: 29.6 MB (29630496 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:173240a7e67fd44ecc0ad5edd818557628d50f00c5d2a5f3d580e0a2ac091610`  
-		Last Modified: Wed, 17 Nov 2021 08:20:21 GMT  
-		Size: 4.4 MB (4402817 bytes)  
+	-	`sha256:aead74c300746557e558c9a90ac68d244f2d0a4887452c091df5b13129cb2b9f`  
+		Last Modified: Sat, 04 Dec 2021 00:03:36 GMT  
+		Size: 4.4 MB (4402852 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5442a27e75e2c0fbbf3bcf39b1c33f75d31863490f96ba2f0f1921ef6da25caf`  
-		Last Modified: Wed, 17 Nov 2021 08:20:17 GMT  
-		Size: 1.8 KB (1767 bytes)  
+	-	`sha256:ff24a9c55d840ff572c517a90e96685d72a67060b5e33095553fb562baab18cf`  
+		Last Modified: Sat, 04 Dec 2021 00:03:32 GMT  
+		Size: 1.8 KB (1769 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2054e4460d2a19717dd4a336b47653df9571eda928f0f361edc1ab86244ddcc2`  
-		Last Modified: Tue, 30 Nov 2021 08:33:27 GMT  
-		Size: 1.3 MB (1298194 bytes)  
+	-	`sha256:ff2f2672897c98937e158db018d3d1b122bf326ce588884511581b48ad1a88ff`  
+		Last Modified: Sat, 04 Dec 2021 00:03:33 GMT  
+		Size: 1.3 MB (1298160 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb7d76eb66b099fba3c2444676a5f23198b89f04ca562d92fe3cbad93e17ed6f`  
-		Last Modified: Tue, 30 Nov 2021 08:33:31 GMT  
-		Size: 8.0 MB (8043954 bytes)  
+	-	`sha256:79a1189dc92e0a7d42054bcaba5f31998c46ca53d7c74cede00da57e1ad8e953`  
+		Last Modified: Sat, 04 Dec 2021 00:03:37 GMT  
+		Size: 8.0 MB (8043932 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fde934ccf5b463f3cc67c5e044fdb538461feed010e478a8adb22f25017f220b`  
-		Last Modified: Tue, 30 Nov 2021 08:33:24 GMT  
-		Size: 439.2 KB (439195 bytes)  
+	-	`sha256:6ebf674bd1ad23a8d1eb79e72400b0113c5888197764e12868bb0bf9e8524f35`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
+		Size: 439.2 KB (439177 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0517cbc7ba02213b80d94a9809694781806502aef56896f981df723099874173`  
-		Last Modified: Tue, 30 Nov 2021 08:33:23 GMT  
+	-	`sha256:082848bd27554921aa8011299d5bc6ca85fd6ad7f1c5ceb5a0af2f8d453db000`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5ff4ee65102820557350a5542a9ce98ad5efe0fcb3cf0a382b9ef99f9850a99`  
-		Last Modified: Tue, 30 Nov 2021 08:33:23 GMT  
-		Size: 3.1 KB (3052 bytes)  
+	-	`sha256:77c733c7a0c1c23d143a50ed0a6e48a73f8aac5364a708d48a3ea82b16359311`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
+		Size: 3.1 KB (3054 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2fd6d30a8c56ed217fd23deb58751b197dcfdd121ee34c10fde89dd792e27d35`  
-		Last Modified: Tue, 30 Nov 2021 08:38:37 GMT  
-		Size: 85.3 MB (85321457 bytes)  
+	-	`sha256:d01c351c670e9ad1128f64a83769dbe2471b6fdd77aedae35c36b6e671f427db`  
+		Last Modified: Sat, 04 Dec 2021 00:08:30 GMT  
+		Size: 85.3 MB (85321673 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba1a1a384467a4ec93314fc945d08f8c92912d8ef664cedfe88e709319a0ac4b`  
-		Last Modified: Tue, 30 Nov 2021 08:37:38 GMT  
-		Size: 8.3 KB (8331 bytes)  
+	-	`sha256:c2befc6b3ed3e04f4901b42f41a20a885abd3e10a696f59b6e0bf774e38f5331`  
+		Last Modified: Sat, 04 Dec 2021 00:07:31 GMT  
+		Size: 8.3 KB (8334 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:564b2c511c2bf47c51e509da01430303b9d7659af6baa192680eb2ed79362b32`  
-		Last Modified: Tue, 30 Nov 2021 08:37:38 GMT  
-		Size: 129.0 B  
+	-	`sha256:0e5a5d29eb31be9786d3d7d1161757063d3fcb1284d4b7c889f8de5f4951e9d4`  
+		Last Modified: Sat, 04 Dec 2021 00:07:31 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:be47d5915a263791a09a35a1282dc358b2424e5fe938f7d111c6c0138f84ee77`  
-		Last Modified: Tue, 30 Nov 2021 08:37:38 GMT  
+	-	`sha256:0e2b8c32662d0b271518f39392c3d0805fde0c4a0e1c233e4d0f3076d8ca475b`  
+		Last Modified: Sat, 04 Dec 2021 00:07:31 GMT  
 		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:04c54d5be75ef078e0ad275340aae9f3f86d79da5c5d6413da9316a9ad1685f9`  
-		Last Modified: Tue, 30 Nov 2021 08:37:38 GMT  
-		Size: 4.7 KB (4716 bytes)  
+	-	`sha256:086cb68d409026cf1102d675e4b51c52408a232fbf15c6ce4682c8fdaf8559c2`  
+		Last Modified: Sat, 04 Dec 2021 00:07:31 GMT  
+		Size: 4.7 KB (4715 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `postgres:11-bullseye` - linux; ppc64le
@@ -12853,7 +12853,7 @@ CMD ["postgres"]
 ## `postgres:11.14-bullseye`
 
 ```console
-$ docker pull postgres@sha256:53061e8758de18e382162dcc25290f758e1af9010b2147cbe4676ac8a7ec3f14
+$ docker pull postgres@sha256:6903901b5b53ffb364825d6c1eb108e68f3faa4cae5da62085ade62b3b5f3d6e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13475,122 +13475,122 @@ CMD ["postgres"]
 ### `postgres:11.14-bullseye` - linux; mips64le
 
 ```console
-$ docker pull postgres@sha256:ab792ef5d252373bd4c99dd6904328af97dfb8741871e83d3d3d42494ebfe633
+$ docker pull postgres@sha256:ebc4b963df3a28ce13e694c01e47798ac31ac76ca9146faa978ef27d1963e3e6
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **129.2 MB (129154285 bytes)**  
+-	Total Size: **129.2 MB (129154575 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:defe81c9d752c89cad1511d23375ecd85eb7b221dc0eba1568463cc7e4c7c6a5`
+-	Image ID: `sha256:d98368718dcce1a421b462d204b9e1f43d4d7f062c21033d14df29ee5bea58ac`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Wed, 17 Nov 2021 02:10:13 GMT
-ADD file:10bc783d286d0a800f59d5009e87ecb4651659c82cae1325132756c7c8b1dec0 in / 
-# Wed, 17 Nov 2021 02:10:13 GMT
+# Thu, 02 Dec 2021 03:09:10 GMT
+ADD file:419aff162077eb16923c3ede6455ca86756a929a5a837bc6ac6b8dc67913503a in / 
+# Thu, 02 Dec 2021 03:09:10 GMT
 CMD ["bash"]
-# Wed, 17 Nov 2021 03:38:46 GMT
+# Fri, 03 Dec 2021 19:20:44 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 17 Nov 2021 03:38:48 GMT
+# Fri, 03 Dec 2021 19:20:46 GMT
 RUN set -eux; 	groupadd -r postgres --gid=999; 	useradd -r -g postgres --uid=999 --home-dir=/var/lib/postgresql --shell=/bin/bash postgres; 	mkdir -p /var/lib/postgresql; 	chown -R postgres:postgres /var/lib/postgresql
-# Tue, 30 Nov 2021 03:51:38 GMT
+# Fri, 03 Dec 2021 19:20:46 GMT
 ENV GOSU_VERSION=1.14
-# Tue, 30 Nov 2021 03:51:59 GMT
+# Fri, 03 Dec 2021 19:21:06 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Tue, 30 Nov 2021 03:52:23 GMT
+# Fri, 03 Dec 2021 19:21:31 GMT
 RUN set -eux; 	if [ -f /etc/dpkg/dpkg.cfg.d/docker ]; then 		grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 		sed -ri '/\/usr\/share\/locale/d' /etc/dpkg/dpkg.cfg.d/docker; 		! grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 	fi; 	apt-get update; apt-get install -y --no-install-recommends locales; rm -rf /var/lib/apt/lists/*; 	localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Tue, 30 Nov 2021 03:52:24 GMT
+# Fri, 03 Dec 2021 19:21:31 GMT
 ENV LANG=en_US.utf8
-# Tue, 30 Nov 2021 03:52:36 GMT
+# Fri, 03 Dec 2021 19:21:44 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libnss-wrapper 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 30 Nov 2021 03:52:38 GMT
+# Fri, 03 Dec 2021 19:21:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 30 Nov 2021 03:52:41 GMT
+# Fri, 03 Dec 2021 19:21:48 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	command -v gpgconf > /dev/null && gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Tue, 30 Nov 2021 06:33:15 GMT
+# Fri, 03 Dec 2021 22:02:50 GMT
 ENV PG_MAJOR=11
-# Tue, 30 Nov 2021 06:33:15 GMT
+# Fri, 03 Dec 2021 22:02:50 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/11/bin
-# Tue, 30 Nov 2021 06:33:15 GMT
+# Fri, 03 Dec 2021 22:02:50 GMT
 ENV PG_VERSION=11.14-1.pgdg110+1
-# Tue, 30 Nov 2021 07:22:34 GMT
+# Fri, 03 Dec 2021 22:52:16 GMT
 RUN set -ex; 		export PYTHONDONTWRITEBYTECODE=1; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64 | arm64 | ppc64el) 			echo "deb http://apt.postgresql.org/pub/repos/apt/ bullseye-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 			apt-get update; 			;; 		*) 			echo "deb-src http://apt.postgresql.org/pub/repos/apt/ bullseye-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 						tempDir="$(mktemp -d)"; 			cd "$tempDir"; 						savedAptMark="$(apt-mark showmanual)"; 						apt-get update; 			apt-get build-dep -y 				postgresql-common pgdg-keyring 				"postgresql-$PG_MAJOR=$PG_VERSION" 			; 			DEB_BUILD_OPTIONS="nocheck parallel=$(nproc)" 				apt-get source --compile 					postgresql-common pgdg-keyring 					"postgresql-$PG_MAJOR=$PG_VERSION" 			; 						apt-mark showmanual | xargs apt-mark auto > /dev/null; 			apt-mark manual $savedAptMark; 						ls -lAFh; 			dpkg-scanpackages . > Packages; 			grep '^Package: ' Packages; 			echo "deb [ trusted=yes ] file://$tempDir ./" > /etc/apt/sources.list.d/temp.list; 			apt-get -o Acquire::GzipIndexes=false update; 			;; 	esac; 		apt-get install -y --no-install-recommends postgresql-common; 	sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf; 	apt-get install -y --no-install-recommends 		"postgresql-$PG_MAJOR=$PG_VERSION" 	; 		rm -rf /var/lib/apt/lists/*; 		if [ -n "$tempDir" ]; then 		apt-get purge -y --auto-remove; 		rm -rf "$tempDir" /etc/apt/sources.list.d/temp.list; 	fi; 		find /usr -name '*.pyc' -type f -exec bash -c 'for pyc; do dpkg -S "$pyc" &> /dev/null || rm -vf "$pyc"; done' -- '{}' +; 		postgres --version
-# Tue, 30 Nov 2021 07:22:37 GMT
+# Fri, 03 Dec 2021 22:52:18 GMT
 RUN set -eux; 	dpkg-divert --add --rename --divert "/usr/share/postgresql/postgresql.conf.sample.dpkg" "/usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample"; 	cp -v /usr/share/postgresql/postgresql.conf.sample.dpkg /usr/share/postgresql/postgresql.conf.sample; 	ln -sv ../postgresql.conf.sample "/usr/share/postgresql/$PG_MAJOR/"; 	sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample; 	grep -F "listen_addresses = '*'" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 30 Nov 2021 07:22:39 GMT
+# Fri, 03 Dec 2021 22:52:21 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod 2777 /var/run/postgresql
-# Tue, 30 Nov 2021 07:22:39 GMT
+# Fri, 03 Dec 2021 22:52:21 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 30 Nov 2021 07:22:41 GMT
+# Fri, 03 Dec 2021 22:52:23 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA"
-# Tue, 30 Nov 2021 07:22:42 GMT
+# Fri, 03 Dec 2021 22:52:23 GMT
 VOLUME [/var/lib/postgresql/data]
-# Tue, 30 Nov 2021 07:22:42 GMT
+# Fri, 03 Dec 2021 22:52:24 GMT
 COPY file:6e4de9271291e4bdd4a40b73fffe4d6d1aeff033460f5b14d74e948686daa095 in /usr/local/bin/ 
-# Tue, 30 Nov 2021 07:22:43 GMT
+# Fri, 03 Dec 2021 22:52:24 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 30 Nov 2021 07:22:43 GMT
+# Fri, 03 Dec 2021 22:52:24 GMT
 STOPSIGNAL SIGINT
-# Tue, 30 Nov 2021 07:22:43 GMT
+# Fri, 03 Dec 2021 22:52:25 GMT
 EXPOSE 5432
-# Tue, 30 Nov 2021 07:22:44 GMT
+# Fri, 03 Dec 2021 22:52:25 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:08bca22fbffb4e58224e9e4f6a56f1ca5099c002b1aeb6181df63af308a3da58`  
-		Last Modified: Wed, 17 Nov 2021 02:19:09 GMT  
-		Size: 29.6 MB (29630388 bytes)  
+	-	`sha256:df61fb15db6391af55d70bc3c0db3e9014438c81bf802619fb527221adf5e8a8`  
+		Last Modified: Thu, 02 Dec 2021 03:17:58 GMT  
+		Size: 29.6 MB (29630496 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:173240a7e67fd44ecc0ad5edd818557628d50f00c5d2a5f3d580e0a2ac091610`  
-		Last Modified: Wed, 17 Nov 2021 08:20:21 GMT  
-		Size: 4.4 MB (4402817 bytes)  
+	-	`sha256:aead74c300746557e558c9a90ac68d244f2d0a4887452c091df5b13129cb2b9f`  
+		Last Modified: Sat, 04 Dec 2021 00:03:36 GMT  
+		Size: 4.4 MB (4402852 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5442a27e75e2c0fbbf3bcf39b1c33f75d31863490f96ba2f0f1921ef6da25caf`  
-		Last Modified: Wed, 17 Nov 2021 08:20:17 GMT  
-		Size: 1.8 KB (1767 bytes)  
+	-	`sha256:ff24a9c55d840ff572c517a90e96685d72a67060b5e33095553fb562baab18cf`  
+		Last Modified: Sat, 04 Dec 2021 00:03:32 GMT  
+		Size: 1.8 KB (1769 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2054e4460d2a19717dd4a336b47653df9571eda928f0f361edc1ab86244ddcc2`  
-		Last Modified: Tue, 30 Nov 2021 08:33:27 GMT  
-		Size: 1.3 MB (1298194 bytes)  
+	-	`sha256:ff2f2672897c98937e158db018d3d1b122bf326ce588884511581b48ad1a88ff`  
+		Last Modified: Sat, 04 Dec 2021 00:03:33 GMT  
+		Size: 1.3 MB (1298160 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb7d76eb66b099fba3c2444676a5f23198b89f04ca562d92fe3cbad93e17ed6f`  
-		Last Modified: Tue, 30 Nov 2021 08:33:31 GMT  
-		Size: 8.0 MB (8043954 bytes)  
+	-	`sha256:79a1189dc92e0a7d42054bcaba5f31998c46ca53d7c74cede00da57e1ad8e953`  
+		Last Modified: Sat, 04 Dec 2021 00:03:37 GMT  
+		Size: 8.0 MB (8043932 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fde934ccf5b463f3cc67c5e044fdb538461feed010e478a8adb22f25017f220b`  
-		Last Modified: Tue, 30 Nov 2021 08:33:24 GMT  
-		Size: 439.2 KB (439195 bytes)  
+	-	`sha256:6ebf674bd1ad23a8d1eb79e72400b0113c5888197764e12868bb0bf9e8524f35`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
+		Size: 439.2 KB (439177 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0517cbc7ba02213b80d94a9809694781806502aef56896f981df723099874173`  
-		Last Modified: Tue, 30 Nov 2021 08:33:23 GMT  
+	-	`sha256:082848bd27554921aa8011299d5bc6ca85fd6ad7f1c5ceb5a0af2f8d453db000`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5ff4ee65102820557350a5542a9ce98ad5efe0fcb3cf0a382b9ef99f9850a99`  
-		Last Modified: Tue, 30 Nov 2021 08:33:23 GMT  
-		Size: 3.1 KB (3052 bytes)  
+	-	`sha256:77c733c7a0c1c23d143a50ed0a6e48a73f8aac5364a708d48a3ea82b16359311`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
+		Size: 3.1 KB (3054 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2fd6d30a8c56ed217fd23deb58751b197dcfdd121ee34c10fde89dd792e27d35`  
-		Last Modified: Tue, 30 Nov 2021 08:38:37 GMT  
-		Size: 85.3 MB (85321457 bytes)  
+	-	`sha256:d01c351c670e9ad1128f64a83769dbe2471b6fdd77aedae35c36b6e671f427db`  
+		Last Modified: Sat, 04 Dec 2021 00:08:30 GMT  
+		Size: 85.3 MB (85321673 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba1a1a384467a4ec93314fc945d08f8c92912d8ef664cedfe88e709319a0ac4b`  
-		Last Modified: Tue, 30 Nov 2021 08:37:38 GMT  
-		Size: 8.3 KB (8331 bytes)  
+	-	`sha256:c2befc6b3ed3e04f4901b42f41a20a885abd3e10a696f59b6e0bf774e38f5331`  
+		Last Modified: Sat, 04 Dec 2021 00:07:31 GMT  
+		Size: 8.3 KB (8334 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:564b2c511c2bf47c51e509da01430303b9d7659af6baa192680eb2ed79362b32`  
-		Last Modified: Tue, 30 Nov 2021 08:37:38 GMT  
-		Size: 129.0 B  
+	-	`sha256:0e5a5d29eb31be9786d3d7d1161757063d3fcb1284d4b7c889f8de5f4951e9d4`  
+		Last Modified: Sat, 04 Dec 2021 00:07:31 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:be47d5915a263791a09a35a1282dc358b2424e5fe938f7d111c6c0138f84ee77`  
-		Last Modified: Tue, 30 Nov 2021 08:37:38 GMT  
+	-	`sha256:0e2b8c32662d0b271518f39392c3d0805fde0c4a0e1c233e4d0f3076d8ca475b`  
+		Last Modified: Sat, 04 Dec 2021 00:07:31 GMT  
 		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:04c54d5be75ef078e0ad275340aae9f3f86d79da5c5d6413da9316a9ad1685f9`  
-		Last Modified: Tue, 30 Nov 2021 08:37:38 GMT  
-		Size: 4.7 KB (4716 bytes)  
+	-	`sha256:086cb68d409026cf1102d675e4b51c52408a232fbf15c6ce4682c8fdaf8559c2`  
+		Last Modified: Sat, 04 Dec 2021 00:07:31 GMT  
+		Size: 4.7 KB (4715 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `postgres:11.14-bullseye` - linux; ppc64le
@@ -14457,7 +14457,7 @@ CMD ["postgres"]
 ## `postgres:12`
 
 ```console
-$ docker pull postgres@sha256:04034be6c8dd105d06fd79ffec600952850e46a64c09eb28d3ebd11519e586a4
+$ docker pull postgres@sha256:0854202db0b3378c46909bab43a85b01dc1b92cc44520480e47dd4fbc22714ee
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -15079,122 +15079,122 @@ CMD ["postgres"]
 ### `postgres:12` - linux; mips64le
 
 ```console
-$ docker pull postgres@sha256:b3bc58c6ba13aeca11e630505cf95a1e1808a92f1a9482fc3f4a6753c15d8e2b
+$ docker pull postgres@sha256:e2ef41b6e79dcabb7680f56d8e8330b28d2627dd7d0747ba6d4d7bebf324532d
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **130.1 MB (130105141 bytes)**  
+-	Total Size: **130.1 MB (130105404 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bc64c233dca5260c1a7f5800b0ad5cfdf4ab1c5e27f625e3ca1731894da14cff`
+-	Image ID: `sha256:7e3d30b913917cf5e5a46fead78a3dfc6a1df39bb063c6a3c2e74d11c1f17629`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Wed, 17 Nov 2021 02:10:13 GMT
-ADD file:10bc783d286d0a800f59d5009e87ecb4651659c82cae1325132756c7c8b1dec0 in / 
-# Wed, 17 Nov 2021 02:10:13 GMT
+# Thu, 02 Dec 2021 03:09:10 GMT
+ADD file:419aff162077eb16923c3ede6455ca86756a929a5a837bc6ac6b8dc67913503a in / 
+# Thu, 02 Dec 2021 03:09:10 GMT
 CMD ["bash"]
-# Wed, 17 Nov 2021 03:38:46 GMT
+# Fri, 03 Dec 2021 19:20:44 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 17 Nov 2021 03:38:48 GMT
+# Fri, 03 Dec 2021 19:20:46 GMT
 RUN set -eux; 	groupadd -r postgres --gid=999; 	useradd -r -g postgres --uid=999 --home-dir=/var/lib/postgresql --shell=/bin/bash postgres; 	mkdir -p /var/lib/postgresql; 	chown -R postgres:postgres /var/lib/postgresql
-# Tue, 30 Nov 2021 03:51:38 GMT
+# Fri, 03 Dec 2021 19:20:46 GMT
 ENV GOSU_VERSION=1.14
-# Tue, 30 Nov 2021 03:51:59 GMT
+# Fri, 03 Dec 2021 19:21:06 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Tue, 30 Nov 2021 03:52:23 GMT
+# Fri, 03 Dec 2021 19:21:31 GMT
 RUN set -eux; 	if [ -f /etc/dpkg/dpkg.cfg.d/docker ]; then 		grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 		sed -ri '/\/usr\/share\/locale/d' /etc/dpkg/dpkg.cfg.d/docker; 		! grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 	fi; 	apt-get update; apt-get install -y --no-install-recommends locales; rm -rf /var/lib/apt/lists/*; 	localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Tue, 30 Nov 2021 03:52:24 GMT
+# Fri, 03 Dec 2021 19:21:31 GMT
 ENV LANG=en_US.utf8
-# Tue, 30 Nov 2021 03:52:36 GMT
+# Fri, 03 Dec 2021 19:21:44 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libnss-wrapper 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 30 Nov 2021 03:52:38 GMT
+# Fri, 03 Dec 2021 19:21:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 30 Nov 2021 03:52:41 GMT
+# Fri, 03 Dec 2021 19:21:48 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	command -v gpgconf > /dev/null && gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Tue, 30 Nov 2021 05:41:54 GMT
+# Fri, 03 Dec 2021 21:11:15 GMT
 ENV PG_MAJOR=12
-# Tue, 30 Nov 2021 05:41:54 GMT
+# Fri, 03 Dec 2021 21:11:15 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/12/bin
-# Tue, 30 Nov 2021 05:41:55 GMT
+# Fri, 03 Dec 2021 21:11:15 GMT
 ENV PG_VERSION=12.9-1.pgdg110+1
-# Tue, 30 Nov 2021 06:32:58 GMT
+# Fri, 03 Dec 2021 22:02:22 GMT
 RUN set -ex; 		export PYTHONDONTWRITEBYTECODE=1; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64 | arm64 | ppc64el) 			echo "deb http://apt.postgresql.org/pub/repos/apt/ bullseye-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 			apt-get update; 			;; 		*) 			echo "deb-src http://apt.postgresql.org/pub/repos/apt/ bullseye-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 						tempDir="$(mktemp -d)"; 			cd "$tempDir"; 						savedAptMark="$(apt-mark showmanual)"; 						apt-get update; 			apt-get build-dep -y 				postgresql-common pgdg-keyring 				"postgresql-$PG_MAJOR=$PG_VERSION" 			; 			DEB_BUILD_OPTIONS="nocheck parallel=$(nproc)" 				apt-get source --compile 					postgresql-common pgdg-keyring 					"postgresql-$PG_MAJOR=$PG_VERSION" 			; 						apt-mark showmanual | xargs apt-mark auto > /dev/null; 			apt-mark manual $savedAptMark; 						ls -lAFh; 			dpkg-scanpackages . > Packages; 			grep '^Package: ' Packages; 			echo "deb [ trusted=yes ] file://$tempDir ./" > /etc/apt/sources.list.d/temp.list; 			apt-get -o Acquire::GzipIndexes=false update; 			;; 	esac; 		apt-get install -y --no-install-recommends postgresql-common; 	sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf; 	apt-get install -y --no-install-recommends 		"postgresql-$PG_MAJOR=$PG_VERSION" 	; 		rm -rf /var/lib/apt/lists/*; 		if [ -n "$tempDir" ]; then 		apt-get purge -y --auto-remove; 		rm -rf "$tempDir" /etc/apt/sources.list.d/temp.list; 	fi; 		find /usr -name '*.pyc' -type f -exec bash -c 'for pyc; do dpkg -S "$pyc" &> /dev/null || rm -vf "$pyc"; done' -- '{}' +; 		postgres --version
-# Tue, 30 Nov 2021 06:33:01 GMT
+# Fri, 03 Dec 2021 22:02:24 GMT
 RUN set -eux; 	dpkg-divert --add --rename --divert "/usr/share/postgresql/postgresql.conf.sample.dpkg" "/usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample"; 	cp -v /usr/share/postgresql/postgresql.conf.sample.dpkg /usr/share/postgresql/postgresql.conf.sample; 	ln -sv ../postgresql.conf.sample "/usr/share/postgresql/$PG_MAJOR/"; 	sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample; 	grep -F "listen_addresses = '*'" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 30 Nov 2021 06:33:03 GMT
+# Fri, 03 Dec 2021 22:02:27 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod 2777 /var/run/postgresql
-# Tue, 30 Nov 2021 06:33:03 GMT
+# Fri, 03 Dec 2021 22:02:27 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 30 Nov 2021 06:33:05 GMT
+# Fri, 03 Dec 2021 22:02:29 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA"
-# Tue, 30 Nov 2021 06:33:06 GMT
+# Fri, 03 Dec 2021 22:02:29 GMT
 VOLUME [/var/lib/postgresql/data]
-# Tue, 30 Nov 2021 06:33:06 GMT
+# Fri, 03 Dec 2021 22:02:30 GMT
 COPY file:6e4de9271291e4bdd4a40b73fffe4d6d1aeff033460f5b14d74e948686daa095 in /usr/local/bin/ 
-# Tue, 30 Nov 2021 06:33:06 GMT
+# Fri, 03 Dec 2021 22:02:30 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 30 Nov 2021 06:33:07 GMT
+# Fri, 03 Dec 2021 22:02:30 GMT
 STOPSIGNAL SIGINT
-# Tue, 30 Nov 2021 06:33:07 GMT
+# Fri, 03 Dec 2021 22:02:31 GMT
 EXPOSE 5432
-# Tue, 30 Nov 2021 06:33:07 GMT
+# Fri, 03 Dec 2021 22:02:31 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:08bca22fbffb4e58224e9e4f6a56f1ca5099c002b1aeb6181df63af308a3da58`  
-		Last Modified: Wed, 17 Nov 2021 02:19:09 GMT  
-		Size: 29.6 MB (29630388 bytes)  
+	-	`sha256:df61fb15db6391af55d70bc3c0db3e9014438c81bf802619fb527221adf5e8a8`  
+		Last Modified: Thu, 02 Dec 2021 03:17:58 GMT  
+		Size: 29.6 MB (29630496 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:173240a7e67fd44ecc0ad5edd818557628d50f00c5d2a5f3d580e0a2ac091610`  
-		Last Modified: Wed, 17 Nov 2021 08:20:21 GMT  
-		Size: 4.4 MB (4402817 bytes)  
+	-	`sha256:aead74c300746557e558c9a90ac68d244f2d0a4887452c091df5b13129cb2b9f`  
+		Last Modified: Sat, 04 Dec 2021 00:03:36 GMT  
+		Size: 4.4 MB (4402852 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5442a27e75e2c0fbbf3bcf39b1c33f75d31863490f96ba2f0f1921ef6da25caf`  
-		Last Modified: Wed, 17 Nov 2021 08:20:17 GMT  
-		Size: 1.8 KB (1767 bytes)  
+	-	`sha256:ff24a9c55d840ff572c517a90e96685d72a67060b5e33095553fb562baab18cf`  
+		Last Modified: Sat, 04 Dec 2021 00:03:32 GMT  
+		Size: 1.8 KB (1769 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2054e4460d2a19717dd4a336b47653df9571eda928f0f361edc1ab86244ddcc2`  
-		Last Modified: Tue, 30 Nov 2021 08:33:27 GMT  
-		Size: 1.3 MB (1298194 bytes)  
+	-	`sha256:ff2f2672897c98937e158db018d3d1b122bf326ce588884511581b48ad1a88ff`  
+		Last Modified: Sat, 04 Dec 2021 00:03:33 GMT  
+		Size: 1.3 MB (1298160 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb7d76eb66b099fba3c2444676a5f23198b89f04ca562d92fe3cbad93e17ed6f`  
-		Last Modified: Tue, 30 Nov 2021 08:33:31 GMT  
-		Size: 8.0 MB (8043954 bytes)  
+	-	`sha256:79a1189dc92e0a7d42054bcaba5f31998c46ca53d7c74cede00da57e1ad8e953`  
+		Last Modified: Sat, 04 Dec 2021 00:03:37 GMT  
+		Size: 8.0 MB (8043932 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fde934ccf5b463f3cc67c5e044fdb538461feed010e478a8adb22f25017f220b`  
-		Last Modified: Tue, 30 Nov 2021 08:33:24 GMT  
-		Size: 439.2 KB (439195 bytes)  
+	-	`sha256:6ebf674bd1ad23a8d1eb79e72400b0113c5888197764e12868bb0bf9e8524f35`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
+		Size: 439.2 KB (439177 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0517cbc7ba02213b80d94a9809694781806502aef56896f981df723099874173`  
-		Last Modified: Tue, 30 Nov 2021 08:33:23 GMT  
+	-	`sha256:082848bd27554921aa8011299d5bc6ca85fd6ad7f1c5ceb5a0af2f8d453db000`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5ff4ee65102820557350a5542a9ce98ad5efe0fcb3cf0a382b9ef99f9850a99`  
-		Last Modified: Tue, 30 Nov 2021 08:33:23 GMT  
-		Size: 3.1 KB (3052 bytes)  
+	-	`sha256:77c733c7a0c1c23d143a50ed0a6e48a73f8aac5364a708d48a3ea82b16359311`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
+		Size: 3.1 KB (3054 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6d62478913309321a462852da1b1f18f13eed958bc01f4beb6958f2f5ce45aac`  
-		Last Modified: Tue, 30 Nov 2021 08:37:15 GMT  
-		Size: 86.3 MB (86271611 bytes)  
+	-	`sha256:c8929df814bfeb385686018db065cedd834350addbdc68fbdccc71768c68dea3`  
+		Last Modified: Sat, 04 Dec 2021 00:07:12 GMT  
+		Size: 86.3 MB (86271804 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cd6cf3c765a6e488dd382a679428801b5dc601d3342b73656d9f140bc01a2a4c`  
-		Last Modified: Tue, 30 Nov 2021 08:36:16 GMT  
-		Size: 9.0 KB (9031 bytes)  
+	-	`sha256:fdc03c90421cf5b0d795c6cbea1d6a595977325cc328ad51a57600566ebcfb06`  
+		Last Modified: Sat, 04 Dec 2021 00:06:12 GMT  
+		Size: 9.0 KB (9028 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42db55b560c74e652e12e2252486c107d9148bfeab42d943adff72f7bf0de4df`  
-		Last Modified: Tue, 30 Nov 2021 08:36:16 GMT  
+	-	`sha256:548e8c961a5bd16d6abe68040577e41492b757fa176196b79d8f9e772c93e5ad`  
+		Last Modified: Sat, 04 Dec 2021 00:06:12 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2aec33cc033153f0e1aee0f2fe73c5f9fa4da988ec5644eb9123723c4ea7f475`  
-		Last Modified: Tue, 30 Nov 2021 08:36:15 GMT  
-		Size: 170.0 B  
+	-	`sha256:b707841035185b3f2e5e26ea2c648f6b94b8482fa92286fe4d1f549e17812aa9`  
+		Last Modified: Sat, 04 Dec 2021 00:06:12 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ca14a1edab2c3bc86d17f0efca1926f06ec50faf6405df62622a791a1e737a42`  
-		Last Modified: Tue, 30 Nov 2021 08:36:16 GMT  
-		Size: 4.7 KB (4717 bytes)  
+	-	`sha256:47a0ffbb72fd0ac4478954a9f52fe578d772d67c52af1f4de3dfede671e8285e`  
+		Last Modified: Sat, 04 Dec 2021 00:06:12 GMT  
+		Size: 4.7 KB (4715 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `postgres:12` - linux; ppc64le
@@ -16720,7 +16720,7 @@ CMD ["postgres"]
 ## `postgres:12-bullseye`
 
 ```console
-$ docker pull postgres@sha256:04034be6c8dd105d06fd79ffec600952850e46a64c09eb28d3ebd11519e586a4
+$ docker pull postgres@sha256:0854202db0b3378c46909bab43a85b01dc1b92cc44520480e47dd4fbc22714ee
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17342,122 +17342,122 @@ CMD ["postgres"]
 ### `postgres:12-bullseye` - linux; mips64le
 
 ```console
-$ docker pull postgres@sha256:b3bc58c6ba13aeca11e630505cf95a1e1808a92f1a9482fc3f4a6753c15d8e2b
+$ docker pull postgres@sha256:e2ef41b6e79dcabb7680f56d8e8330b28d2627dd7d0747ba6d4d7bebf324532d
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **130.1 MB (130105141 bytes)**  
+-	Total Size: **130.1 MB (130105404 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bc64c233dca5260c1a7f5800b0ad5cfdf4ab1c5e27f625e3ca1731894da14cff`
+-	Image ID: `sha256:7e3d30b913917cf5e5a46fead78a3dfc6a1df39bb063c6a3c2e74d11c1f17629`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Wed, 17 Nov 2021 02:10:13 GMT
-ADD file:10bc783d286d0a800f59d5009e87ecb4651659c82cae1325132756c7c8b1dec0 in / 
-# Wed, 17 Nov 2021 02:10:13 GMT
+# Thu, 02 Dec 2021 03:09:10 GMT
+ADD file:419aff162077eb16923c3ede6455ca86756a929a5a837bc6ac6b8dc67913503a in / 
+# Thu, 02 Dec 2021 03:09:10 GMT
 CMD ["bash"]
-# Wed, 17 Nov 2021 03:38:46 GMT
+# Fri, 03 Dec 2021 19:20:44 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 17 Nov 2021 03:38:48 GMT
+# Fri, 03 Dec 2021 19:20:46 GMT
 RUN set -eux; 	groupadd -r postgres --gid=999; 	useradd -r -g postgres --uid=999 --home-dir=/var/lib/postgresql --shell=/bin/bash postgres; 	mkdir -p /var/lib/postgresql; 	chown -R postgres:postgres /var/lib/postgresql
-# Tue, 30 Nov 2021 03:51:38 GMT
+# Fri, 03 Dec 2021 19:20:46 GMT
 ENV GOSU_VERSION=1.14
-# Tue, 30 Nov 2021 03:51:59 GMT
+# Fri, 03 Dec 2021 19:21:06 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Tue, 30 Nov 2021 03:52:23 GMT
+# Fri, 03 Dec 2021 19:21:31 GMT
 RUN set -eux; 	if [ -f /etc/dpkg/dpkg.cfg.d/docker ]; then 		grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 		sed -ri '/\/usr\/share\/locale/d' /etc/dpkg/dpkg.cfg.d/docker; 		! grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 	fi; 	apt-get update; apt-get install -y --no-install-recommends locales; rm -rf /var/lib/apt/lists/*; 	localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Tue, 30 Nov 2021 03:52:24 GMT
+# Fri, 03 Dec 2021 19:21:31 GMT
 ENV LANG=en_US.utf8
-# Tue, 30 Nov 2021 03:52:36 GMT
+# Fri, 03 Dec 2021 19:21:44 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libnss-wrapper 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 30 Nov 2021 03:52:38 GMT
+# Fri, 03 Dec 2021 19:21:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 30 Nov 2021 03:52:41 GMT
+# Fri, 03 Dec 2021 19:21:48 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	command -v gpgconf > /dev/null && gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Tue, 30 Nov 2021 05:41:54 GMT
+# Fri, 03 Dec 2021 21:11:15 GMT
 ENV PG_MAJOR=12
-# Tue, 30 Nov 2021 05:41:54 GMT
+# Fri, 03 Dec 2021 21:11:15 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/12/bin
-# Tue, 30 Nov 2021 05:41:55 GMT
+# Fri, 03 Dec 2021 21:11:15 GMT
 ENV PG_VERSION=12.9-1.pgdg110+1
-# Tue, 30 Nov 2021 06:32:58 GMT
+# Fri, 03 Dec 2021 22:02:22 GMT
 RUN set -ex; 		export PYTHONDONTWRITEBYTECODE=1; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64 | arm64 | ppc64el) 			echo "deb http://apt.postgresql.org/pub/repos/apt/ bullseye-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 			apt-get update; 			;; 		*) 			echo "deb-src http://apt.postgresql.org/pub/repos/apt/ bullseye-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 						tempDir="$(mktemp -d)"; 			cd "$tempDir"; 						savedAptMark="$(apt-mark showmanual)"; 						apt-get update; 			apt-get build-dep -y 				postgresql-common pgdg-keyring 				"postgresql-$PG_MAJOR=$PG_VERSION" 			; 			DEB_BUILD_OPTIONS="nocheck parallel=$(nproc)" 				apt-get source --compile 					postgresql-common pgdg-keyring 					"postgresql-$PG_MAJOR=$PG_VERSION" 			; 						apt-mark showmanual | xargs apt-mark auto > /dev/null; 			apt-mark manual $savedAptMark; 						ls -lAFh; 			dpkg-scanpackages . > Packages; 			grep '^Package: ' Packages; 			echo "deb [ trusted=yes ] file://$tempDir ./" > /etc/apt/sources.list.d/temp.list; 			apt-get -o Acquire::GzipIndexes=false update; 			;; 	esac; 		apt-get install -y --no-install-recommends postgresql-common; 	sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf; 	apt-get install -y --no-install-recommends 		"postgresql-$PG_MAJOR=$PG_VERSION" 	; 		rm -rf /var/lib/apt/lists/*; 		if [ -n "$tempDir" ]; then 		apt-get purge -y --auto-remove; 		rm -rf "$tempDir" /etc/apt/sources.list.d/temp.list; 	fi; 		find /usr -name '*.pyc' -type f -exec bash -c 'for pyc; do dpkg -S "$pyc" &> /dev/null || rm -vf "$pyc"; done' -- '{}' +; 		postgres --version
-# Tue, 30 Nov 2021 06:33:01 GMT
+# Fri, 03 Dec 2021 22:02:24 GMT
 RUN set -eux; 	dpkg-divert --add --rename --divert "/usr/share/postgresql/postgresql.conf.sample.dpkg" "/usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample"; 	cp -v /usr/share/postgresql/postgresql.conf.sample.dpkg /usr/share/postgresql/postgresql.conf.sample; 	ln -sv ../postgresql.conf.sample "/usr/share/postgresql/$PG_MAJOR/"; 	sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample; 	grep -F "listen_addresses = '*'" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 30 Nov 2021 06:33:03 GMT
+# Fri, 03 Dec 2021 22:02:27 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod 2777 /var/run/postgresql
-# Tue, 30 Nov 2021 06:33:03 GMT
+# Fri, 03 Dec 2021 22:02:27 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 30 Nov 2021 06:33:05 GMT
+# Fri, 03 Dec 2021 22:02:29 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA"
-# Tue, 30 Nov 2021 06:33:06 GMT
+# Fri, 03 Dec 2021 22:02:29 GMT
 VOLUME [/var/lib/postgresql/data]
-# Tue, 30 Nov 2021 06:33:06 GMT
+# Fri, 03 Dec 2021 22:02:30 GMT
 COPY file:6e4de9271291e4bdd4a40b73fffe4d6d1aeff033460f5b14d74e948686daa095 in /usr/local/bin/ 
-# Tue, 30 Nov 2021 06:33:06 GMT
+# Fri, 03 Dec 2021 22:02:30 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 30 Nov 2021 06:33:07 GMT
+# Fri, 03 Dec 2021 22:02:30 GMT
 STOPSIGNAL SIGINT
-# Tue, 30 Nov 2021 06:33:07 GMT
+# Fri, 03 Dec 2021 22:02:31 GMT
 EXPOSE 5432
-# Tue, 30 Nov 2021 06:33:07 GMT
+# Fri, 03 Dec 2021 22:02:31 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:08bca22fbffb4e58224e9e4f6a56f1ca5099c002b1aeb6181df63af308a3da58`  
-		Last Modified: Wed, 17 Nov 2021 02:19:09 GMT  
-		Size: 29.6 MB (29630388 bytes)  
+	-	`sha256:df61fb15db6391af55d70bc3c0db3e9014438c81bf802619fb527221adf5e8a8`  
+		Last Modified: Thu, 02 Dec 2021 03:17:58 GMT  
+		Size: 29.6 MB (29630496 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:173240a7e67fd44ecc0ad5edd818557628d50f00c5d2a5f3d580e0a2ac091610`  
-		Last Modified: Wed, 17 Nov 2021 08:20:21 GMT  
-		Size: 4.4 MB (4402817 bytes)  
+	-	`sha256:aead74c300746557e558c9a90ac68d244f2d0a4887452c091df5b13129cb2b9f`  
+		Last Modified: Sat, 04 Dec 2021 00:03:36 GMT  
+		Size: 4.4 MB (4402852 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5442a27e75e2c0fbbf3bcf39b1c33f75d31863490f96ba2f0f1921ef6da25caf`  
-		Last Modified: Wed, 17 Nov 2021 08:20:17 GMT  
-		Size: 1.8 KB (1767 bytes)  
+	-	`sha256:ff24a9c55d840ff572c517a90e96685d72a67060b5e33095553fb562baab18cf`  
+		Last Modified: Sat, 04 Dec 2021 00:03:32 GMT  
+		Size: 1.8 KB (1769 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2054e4460d2a19717dd4a336b47653df9571eda928f0f361edc1ab86244ddcc2`  
-		Last Modified: Tue, 30 Nov 2021 08:33:27 GMT  
-		Size: 1.3 MB (1298194 bytes)  
+	-	`sha256:ff2f2672897c98937e158db018d3d1b122bf326ce588884511581b48ad1a88ff`  
+		Last Modified: Sat, 04 Dec 2021 00:03:33 GMT  
+		Size: 1.3 MB (1298160 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb7d76eb66b099fba3c2444676a5f23198b89f04ca562d92fe3cbad93e17ed6f`  
-		Last Modified: Tue, 30 Nov 2021 08:33:31 GMT  
-		Size: 8.0 MB (8043954 bytes)  
+	-	`sha256:79a1189dc92e0a7d42054bcaba5f31998c46ca53d7c74cede00da57e1ad8e953`  
+		Last Modified: Sat, 04 Dec 2021 00:03:37 GMT  
+		Size: 8.0 MB (8043932 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fde934ccf5b463f3cc67c5e044fdb538461feed010e478a8adb22f25017f220b`  
-		Last Modified: Tue, 30 Nov 2021 08:33:24 GMT  
-		Size: 439.2 KB (439195 bytes)  
+	-	`sha256:6ebf674bd1ad23a8d1eb79e72400b0113c5888197764e12868bb0bf9e8524f35`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
+		Size: 439.2 KB (439177 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0517cbc7ba02213b80d94a9809694781806502aef56896f981df723099874173`  
-		Last Modified: Tue, 30 Nov 2021 08:33:23 GMT  
+	-	`sha256:082848bd27554921aa8011299d5bc6ca85fd6ad7f1c5ceb5a0af2f8d453db000`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5ff4ee65102820557350a5542a9ce98ad5efe0fcb3cf0a382b9ef99f9850a99`  
-		Last Modified: Tue, 30 Nov 2021 08:33:23 GMT  
-		Size: 3.1 KB (3052 bytes)  
+	-	`sha256:77c733c7a0c1c23d143a50ed0a6e48a73f8aac5364a708d48a3ea82b16359311`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
+		Size: 3.1 KB (3054 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6d62478913309321a462852da1b1f18f13eed958bc01f4beb6958f2f5ce45aac`  
-		Last Modified: Tue, 30 Nov 2021 08:37:15 GMT  
-		Size: 86.3 MB (86271611 bytes)  
+	-	`sha256:c8929df814bfeb385686018db065cedd834350addbdc68fbdccc71768c68dea3`  
+		Last Modified: Sat, 04 Dec 2021 00:07:12 GMT  
+		Size: 86.3 MB (86271804 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cd6cf3c765a6e488dd382a679428801b5dc601d3342b73656d9f140bc01a2a4c`  
-		Last Modified: Tue, 30 Nov 2021 08:36:16 GMT  
-		Size: 9.0 KB (9031 bytes)  
+	-	`sha256:fdc03c90421cf5b0d795c6cbea1d6a595977325cc328ad51a57600566ebcfb06`  
+		Last Modified: Sat, 04 Dec 2021 00:06:12 GMT  
+		Size: 9.0 KB (9028 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42db55b560c74e652e12e2252486c107d9148bfeab42d943adff72f7bf0de4df`  
-		Last Modified: Tue, 30 Nov 2021 08:36:16 GMT  
+	-	`sha256:548e8c961a5bd16d6abe68040577e41492b757fa176196b79d8f9e772c93e5ad`  
+		Last Modified: Sat, 04 Dec 2021 00:06:12 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2aec33cc033153f0e1aee0f2fe73c5f9fa4da988ec5644eb9123723c4ea7f475`  
-		Last Modified: Tue, 30 Nov 2021 08:36:15 GMT  
-		Size: 170.0 B  
+	-	`sha256:b707841035185b3f2e5e26ea2c648f6b94b8482fa92286fe4d1f549e17812aa9`  
+		Last Modified: Sat, 04 Dec 2021 00:06:12 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ca14a1edab2c3bc86d17f0efca1926f06ec50faf6405df62622a791a1e737a42`  
-		Last Modified: Tue, 30 Nov 2021 08:36:16 GMT  
-		Size: 4.7 KB (4717 bytes)  
+	-	`sha256:47a0ffbb72fd0ac4478954a9f52fe578d772d67c52af1f4de3dfede671e8285e`  
+		Last Modified: Sat, 04 Dec 2021 00:06:12 GMT  
+		Size: 4.7 KB (4715 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `postgres:12-bullseye` - linux; ppc64le
@@ -17705,7 +17705,7 @@ CMD ["postgres"]
 ## `postgres:12.9`
 
 ```console
-$ docker pull postgres@sha256:04034be6c8dd105d06fd79ffec600952850e46a64c09eb28d3ebd11519e586a4
+$ docker pull postgres@sha256:0854202db0b3378c46909bab43a85b01dc1b92cc44520480e47dd4fbc22714ee
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -18327,122 +18327,122 @@ CMD ["postgres"]
 ### `postgres:12.9` - linux; mips64le
 
 ```console
-$ docker pull postgres@sha256:b3bc58c6ba13aeca11e630505cf95a1e1808a92f1a9482fc3f4a6753c15d8e2b
+$ docker pull postgres@sha256:e2ef41b6e79dcabb7680f56d8e8330b28d2627dd7d0747ba6d4d7bebf324532d
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **130.1 MB (130105141 bytes)**  
+-	Total Size: **130.1 MB (130105404 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bc64c233dca5260c1a7f5800b0ad5cfdf4ab1c5e27f625e3ca1731894da14cff`
+-	Image ID: `sha256:7e3d30b913917cf5e5a46fead78a3dfc6a1df39bb063c6a3c2e74d11c1f17629`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Wed, 17 Nov 2021 02:10:13 GMT
-ADD file:10bc783d286d0a800f59d5009e87ecb4651659c82cae1325132756c7c8b1dec0 in / 
-# Wed, 17 Nov 2021 02:10:13 GMT
+# Thu, 02 Dec 2021 03:09:10 GMT
+ADD file:419aff162077eb16923c3ede6455ca86756a929a5a837bc6ac6b8dc67913503a in / 
+# Thu, 02 Dec 2021 03:09:10 GMT
 CMD ["bash"]
-# Wed, 17 Nov 2021 03:38:46 GMT
+# Fri, 03 Dec 2021 19:20:44 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 17 Nov 2021 03:38:48 GMT
+# Fri, 03 Dec 2021 19:20:46 GMT
 RUN set -eux; 	groupadd -r postgres --gid=999; 	useradd -r -g postgres --uid=999 --home-dir=/var/lib/postgresql --shell=/bin/bash postgres; 	mkdir -p /var/lib/postgresql; 	chown -R postgres:postgres /var/lib/postgresql
-# Tue, 30 Nov 2021 03:51:38 GMT
+# Fri, 03 Dec 2021 19:20:46 GMT
 ENV GOSU_VERSION=1.14
-# Tue, 30 Nov 2021 03:51:59 GMT
+# Fri, 03 Dec 2021 19:21:06 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Tue, 30 Nov 2021 03:52:23 GMT
+# Fri, 03 Dec 2021 19:21:31 GMT
 RUN set -eux; 	if [ -f /etc/dpkg/dpkg.cfg.d/docker ]; then 		grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 		sed -ri '/\/usr\/share\/locale/d' /etc/dpkg/dpkg.cfg.d/docker; 		! grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 	fi; 	apt-get update; apt-get install -y --no-install-recommends locales; rm -rf /var/lib/apt/lists/*; 	localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Tue, 30 Nov 2021 03:52:24 GMT
+# Fri, 03 Dec 2021 19:21:31 GMT
 ENV LANG=en_US.utf8
-# Tue, 30 Nov 2021 03:52:36 GMT
+# Fri, 03 Dec 2021 19:21:44 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libnss-wrapper 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 30 Nov 2021 03:52:38 GMT
+# Fri, 03 Dec 2021 19:21:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 30 Nov 2021 03:52:41 GMT
+# Fri, 03 Dec 2021 19:21:48 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	command -v gpgconf > /dev/null && gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Tue, 30 Nov 2021 05:41:54 GMT
+# Fri, 03 Dec 2021 21:11:15 GMT
 ENV PG_MAJOR=12
-# Tue, 30 Nov 2021 05:41:54 GMT
+# Fri, 03 Dec 2021 21:11:15 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/12/bin
-# Tue, 30 Nov 2021 05:41:55 GMT
+# Fri, 03 Dec 2021 21:11:15 GMT
 ENV PG_VERSION=12.9-1.pgdg110+1
-# Tue, 30 Nov 2021 06:32:58 GMT
+# Fri, 03 Dec 2021 22:02:22 GMT
 RUN set -ex; 		export PYTHONDONTWRITEBYTECODE=1; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64 | arm64 | ppc64el) 			echo "deb http://apt.postgresql.org/pub/repos/apt/ bullseye-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 			apt-get update; 			;; 		*) 			echo "deb-src http://apt.postgresql.org/pub/repos/apt/ bullseye-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 						tempDir="$(mktemp -d)"; 			cd "$tempDir"; 						savedAptMark="$(apt-mark showmanual)"; 						apt-get update; 			apt-get build-dep -y 				postgresql-common pgdg-keyring 				"postgresql-$PG_MAJOR=$PG_VERSION" 			; 			DEB_BUILD_OPTIONS="nocheck parallel=$(nproc)" 				apt-get source --compile 					postgresql-common pgdg-keyring 					"postgresql-$PG_MAJOR=$PG_VERSION" 			; 						apt-mark showmanual | xargs apt-mark auto > /dev/null; 			apt-mark manual $savedAptMark; 						ls -lAFh; 			dpkg-scanpackages . > Packages; 			grep '^Package: ' Packages; 			echo "deb [ trusted=yes ] file://$tempDir ./" > /etc/apt/sources.list.d/temp.list; 			apt-get -o Acquire::GzipIndexes=false update; 			;; 	esac; 		apt-get install -y --no-install-recommends postgresql-common; 	sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf; 	apt-get install -y --no-install-recommends 		"postgresql-$PG_MAJOR=$PG_VERSION" 	; 		rm -rf /var/lib/apt/lists/*; 		if [ -n "$tempDir" ]; then 		apt-get purge -y --auto-remove; 		rm -rf "$tempDir" /etc/apt/sources.list.d/temp.list; 	fi; 		find /usr -name '*.pyc' -type f -exec bash -c 'for pyc; do dpkg -S "$pyc" &> /dev/null || rm -vf "$pyc"; done' -- '{}' +; 		postgres --version
-# Tue, 30 Nov 2021 06:33:01 GMT
+# Fri, 03 Dec 2021 22:02:24 GMT
 RUN set -eux; 	dpkg-divert --add --rename --divert "/usr/share/postgresql/postgresql.conf.sample.dpkg" "/usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample"; 	cp -v /usr/share/postgresql/postgresql.conf.sample.dpkg /usr/share/postgresql/postgresql.conf.sample; 	ln -sv ../postgresql.conf.sample "/usr/share/postgresql/$PG_MAJOR/"; 	sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample; 	grep -F "listen_addresses = '*'" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 30 Nov 2021 06:33:03 GMT
+# Fri, 03 Dec 2021 22:02:27 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod 2777 /var/run/postgresql
-# Tue, 30 Nov 2021 06:33:03 GMT
+# Fri, 03 Dec 2021 22:02:27 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 30 Nov 2021 06:33:05 GMT
+# Fri, 03 Dec 2021 22:02:29 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA"
-# Tue, 30 Nov 2021 06:33:06 GMT
+# Fri, 03 Dec 2021 22:02:29 GMT
 VOLUME [/var/lib/postgresql/data]
-# Tue, 30 Nov 2021 06:33:06 GMT
+# Fri, 03 Dec 2021 22:02:30 GMT
 COPY file:6e4de9271291e4bdd4a40b73fffe4d6d1aeff033460f5b14d74e948686daa095 in /usr/local/bin/ 
-# Tue, 30 Nov 2021 06:33:06 GMT
+# Fri, 03 Dec 2021 22:02:30 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 30 Nov 2021 06:33:07 GMT
+# Fri, 03 Dec 2021 22:02:30 GMT
 STOPSIGNAL SIGINT
-# Tue, 30 Nov 2021 06:33:07 GMT
+# Fri, 03 Dec 2021 22:02:31 GMT
 EXPOSE 5432
-# Tue, 30 Nov 2021 06:33:07 GMT
+# Fri, 03 Dec 2021 22:02:31 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:08bca22fbffb4e58224e9e4f6a56f1ca5099c002b1aeb6181df63af308a3da58`  
-		Last Modified: Wed, 17 Nov 2021 02:19:09 GMT  
-		Size: 29.6 MB (29630388 bytes)  
+	-	`sha256:df61fb15db6391af55d70bc3c0db3e9014438c81bf802619fb527221adf5e8a8`  
+		Last Modified: Thu, 02 Dec 2021 03:17:58 GMT  
+		Size: 29.6 MB (29630496 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:173240a7e67fd44ecc0ad5edd818557628d50f00c5d2a5f3d580e0a2ac091610`  
-		Last Modified: Wed, 17 Nov 2021 08:20:21 GMT  
-		Size: 4.4 MB (4402817 bytes)  
+	-	`sha256:aead74c300746557e558c9a90ac68d244f2d0a4887452c091df5b13129cb2b9f`  
+		Last Modified: Sat, 04 Dec 2021 00:03:36 GMT  
+		Size: 4.4 MB (4402852 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5442a27e75e2c0fbbf3bcf39b1c33f75d31863490f96ba2f0f1921ef6da25caf`  
-		Last Modified: Wed, 17 Nov 2021 08:20:17 GMT  
-		Size: 1.8 KB (1767 bytes)  
+	-	`sha256:ff24a9c55d840ff572c517a90e96685d72a67060b5e33095553fb562baab18cf`  
+		Last Modified: Sat, 04 Dec 2021 00:03:32 GMT  
+		Size: 1.8 KB (1769 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2054e4460d2a19717dd4a336b47653df9571eda928f0f361edc1ab86244ddcc2`  
-		Last Modified: Tue, 30 Nov 2021 08:33:27 GMT  
-		Size: 1.3 MB (1298194 bytes)  
+	-	`sha256:ff2f2672897c98937e158db018d3d1b122bf326ce588884511581b48ad1a88ff`  
+		Last Modified: Sat, 04 Dec 2021 00:03:33 GMT  
+		Size: 1.3 MB (1298160 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb7d76eb66b099fba3c2444676a5f23198b89f04ca562d92fe3cbad93e17ed6f`  
-		Last Modified: Tue, 30 Nov 2021 08:33:31 GMT  
-		Size: 8.0 MB (8043954 bytes)  
+	-	`sha256:79a1189dc92e0a7d42054bcaba5f31998c46ca53d7c74cede00da57e1ad8e953`  
+		Last Modified: Sat, 04 Dec 2021 00:03:37 GMT  
+		Size: 8.0 MB (8043932 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fde934ccf5b463f3cc67c5e044fdb538461feed010e478a8adb22f25017f220b`  
-		Last Modified: Tue, 30 Nov 2021 08:33:24 GMT  
-		Size: 439.2 KB (439195 bytes)  
+	-	`sha256:6ebf674bd1ad23a8d1eb79e72400b0113c5888197764e12868bb0bf9e8524f35`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
+		Size: 439.2 KB (439177 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0517cbc7ba02213b80d94a9809694781806502aef56896f981df723099874173`  
-		Last Modified: Tue, 30 Nov 2021 08:33:23 GMT  
+	-	`sha256:082848bd27554921aa8011299d5bc6ca85fd6ad7f1c5ceb5a0af2f8d453db000`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5ff4ee65102820557350a5542a9ce98ad5efe0fcb3cf0a382b9ef99f9850a99`  
-		Last Modified: Tue, 30 Nov 2021 08:33:23 GMT  
-		Size: 3.1 KB (3052 bytes)  
+	-	`sha256:77c733c7a0c1c23d143a50ed0a6e48a73f8aac5364a708d48a3ea82b16359311`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
+		Size: 3.1 KB (3054 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6d62478913309321a462852da1b1f18f13eed958bc01f4beb6958f2f5ce45aac`  
-		Last Modified: Tue, 30 Nov 2021 08:37:15 GMT  
-		Size: 86.3 MB (86271611 bytes)  
+	-	`sha256:c8929df814bfeb385686018db065cedd834350addbdc68fbdccc71768c68dea3`  
+		Last Modified: Sat, 04 Dec 2021 00:07:12 GMT  
+		Size: 86.3 MB (86271804 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cd6cf3c765a6e488dd382a679428801b5dc601d3342b73656d9f140bc01a2a4c`  
-		Last Modified: Tue, 30 Nov 2021 08:36:16 GMT  
-		Size: 9.0 KB (9031 bytes)  
+	-	`sha256:fdc03c90421cf5b0d795c6cbea1d6a595977325cc328ad51a57600566ebcfb06`  
+		Last Modified: Sat, 04 Dec 2021 00:06:12 GMT  
+		Size: 9.0 KB (9028 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42db55b560c74e652e12e2252486c107d9148bfeab42d943adff72f7bf0de4df`  
-		Last Modified: Tue, 30 Nov 2021 08:36:16 GMT  
+	-	`sha256:548e8c961a5bd16d6abe68040577e41492b757fa176196b79d8f9e772c93e5ad`  
+		Last Modified: Sat, 04 Dec 2021 00:06:12 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2aec33cc033153f0e1aee0f2fe73c5f9fa4da988ec5644eb9123723c4ea7f475`  
-		Last Modified: Tue, 30 Nov 2021 08:36:15 GMT  
-		Size: 170.0 B  
+	-	`sha256:b707841035185b3f2e5e26ea2c648f6b94b8482fa92286fe4d1f549e17812aa9`  
+		Last Modified: Sat, 04 Dec 2021 00:06:12 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ca14a1edab2c3bc86d17f0efca1926f06ec50faf6405df62622a791a1e737a42`  
-		Last Modified: Tue, 30 Nov 2021 08:36:16 GMT  
-		Size: 4.7 KB (4717 bytes)  
+	-	`sha256:47a0ffbb72fd0ac4478954a9f52fe578d772d67c52af1f4de3dfede671e8285e`  
+		Last Modified: Sat, 04 Dec 2021 00:06:12 GMT  
+		Size: 4.7 KB (4715 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `postgres:12.9` - linux; ppc64le
@@ -19968,7 +19968,7 @@ CMD ["postgres"]
 ## `postgres:12.9-bullseye`
 
 ```console
-$ docker pull postgres@sha256:04034be6c8dd105d06fd79ffec600952850e46a64c09eb28d3ebd11519e586a4
+$ docker pull postgres@sha256:0854202db0b3378c46909bab43a85b01dc1b92cc44520480e47dd4fbc22714ee
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -20590,122 +20590,122 @@ CMD ["postgres"]
 ### `postgres:12.9-bullseye` - linux; mips64le
 
 ```console
-$ docker pull postgres@sha256:b3bc58c6ba13aeca11e630505cf95a1e1808a92f1a9482fc3f4a6753c15d8e2b
+$ docker pull postgres@sha256:e2ef41b6e79dcabb7680f56d8e8330b28d2627dd7d0747ba6d4d7bebf324532d
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **130.1 MB (130105141 bytes)**  
+-	Total Size: **130.1 MB (130105404 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bc64c233dca5260c1a7f5800b0ad5cfdf4ab1c5e27f625e3ca1731894da14cff`
+-	Image ID: `sha256:7e3d30b913917cf5e5a46fead78a3dfc6a1df39bb063c6a3c2e74d11c1f17629`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Wed, 17 Nov 2021 02:10:13 GMT
-ADD file:10bc783d286d0a800f59d5009e87ecb4651659c82cae1325132756c7c8b1dec0 in / 
-# Wed, 17 Nov 2021 02:10:13 GMT
+# Thu, 02 Dec 2021 03:09:10 GMT
+ADD file:419aff162077eb16923c3ede6455ca86756a929a5a837bc6ac6b8dc67913503a in / 
+# Thu, 02 Dec 2021 03:09:10 GMT
 CMD ["bash"]
-# Wed, 17 Nov 2021 03:38:46 GMT
+# Fri, 03 Dec 2021 19:20:44 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 17 Nov 2021 03:38:48 GMT
+# Fri, 03 Dec 2021 19:20:46 GMT
 RUN set -eux; 	groupadd -r postgres --gid=999; 	useradd -r -g postgres --uid=999 --home-dir=/var/lib/postgresql --shell=/bin/bash postgres; 	mkdir -p /var/lib/postgresql; 	chown -R postgres:postgres /var/lib/postgresql
-# Tue, 30 Nov 2021 03:51:38 GMT
+# Fri, 03 Dec 2021 19:20:46 GMT
 ENV GOSU_VERSION=1.14
-# Tue, 30 Nov 2021 03:51:59 GMT
+# Fri, 03 Dec 2021 19:21:06 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Tue, 30 Nov 2021 03:52:23 GMT
+# Fri, 03 Dec 2021 19:21:31 GMT
 RUN set -eux; 	if [ -f /etc/dpkg/dpkg.cfg.d/docker ]; then 		grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 		sed -ri '/\/usr\/share\/locale/d' /etc/dpkg/dpkg.cfg.d/docker; 		! grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 	fi; 	apt-get update; apt-get install -y --no-install-recommends locales; rm -rf /var/lib/apt/lists/*; 	localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Tue, 30 Nov 2021 03:52:24 GMT
+# Fri, 03 Dec 2021 19:21:31 GMT
 ENV LANG=en_US.utf8
-# Tue, 30 Nov 2021 03:52:36 GMT
+# Fri, 03 Dec 2021 19:21:44 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libnss-wrapper 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 30 Nov 2021 03:52:38 GMT
+# Fri, 03 Dec 2021 19:21:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 30 Nov 2021 03:52:41 GMT
+# Fri, 03 Dec 2021 19:21:48 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	command -v gpgconf > /dev/null && gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Tue, 30 Nov 2021 05:41:54 GMT
+# Fri, 03 Dec 2021 21:11:15 GMT
 ENV PG_MAJOR=12
-# Tue, 30 Nov 2021 05:41:54 GMT
+# Fri, 03 Dec 2021 21:11:15 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/12/bin
-# Tue, 30 Nov 2021 05:41:55 GMT
+# Fri, 03 Dec 2021 21:11:15 GMT
 ENV PG_VERSION=12.9-1.pgdg110+1
-# Tue, 30 Nov 2021 06:32:58 GMT
+# Fri, 03 Dec 2021 22:02:22 GMT
 RUN set -ex; 		export PYTHONDONTWRITEBYTECODE=1; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64 | arm64 | ppc64el) 			echo "deb http://apt.postgresql.org/pub/repos/apt/ bullseye-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 			apt-get update; 			;; 		*) 			echo "deb-src http://apt.postgresql.org/pub/repos/apt/ bullseye-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 						tempDir="$(mktemp -d)"; 			cd "$tempDir"; 						savedAptMark="$(apt-mark showmanual)"; 						apt-get update; 			apt-get build-dep -y 				postgresql-common pgdg-keyring 				"postgresql-$PG_MAJOR=$PG_VERSION" 			; 			DEB_BUILD_OPTIONS="nocheck parallel=$(nproc)" 				apt-get source --compile 					postgresql-common pgdg-keyring 					"postgresql-$PG_MAJOR=$PG_VERSION" 			; 						apt-mark showmanual | xargs apt-mark auto > /dev/null; 			apt-mark manual $savedAptMark; 						ls -lAFh; 			dpkg-scanpackages . > Packages; 			grep '^Package: ' Packages; 			echo "deb [ trusted=yes ] file://$tempDir ./" > /etc/apt/sources.list.d/temp.list; 			apt-get -o Acquire::GzipIndexes=false update; 			;; 	esac; 		apt-get install -y --no-install-recommends postgresql-common; 	sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf; 	apt-get install -y --no-install-recommends 		"postgresql-$PG_MAJOR=$PG_VERSION" 	; 		rm -rf /var/lib/apt/lists/*; 		if [ -n "$tempDir" ]; then 		apt-get purge -y --auto-remove; 		rm -rf "$tempDir" /etc/apt/sources.list.d/temp.list; 	fi; 		find /usr -name '*.pyc' -type f -exec bash -c 'for pyc; do dpkg -S "$pyc" &> /dev/null || rm -vf "$pyc"; done' -- '{}' +; 		postgres --version
-# Tue, 30 Nov 2021 06:33:01 GMT
+# Fri, 03 Dec 2021 22:02:24 GMT
 RUN set -eux; 	dpkg-divert --add --rename --divert "/usr/share/postgresql/postgresql.conf.sample.dpkg" "/usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample"; 	cp -v /usr/share/postgresql/postgresql.conf.sample.dpkg /usr/share/postgresql/postgresql.conf.sample; 	ln -sv ../postgresql.conf.sample "/usr/share/postgresql/$PG_MAJOR/"; 	sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample; 	grep -F "listen_addresses = '*'" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 30 Nov 2021 06:33:03 GMT
+# Fri, 03 Dec 2021 22:02:27 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod 2777 /var/run/postgresql
-# Tue, 30 Nov 2021 06:33:03 GMT
+# Fri, 03 Dec 2021 22:02:27 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 30 Nov 2021 06:33:05 GMT
+# Fri, 03 Dec 2021 22:02:29 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA"
-# Tue, 30 Nov 2021 06:33:06 GMT
+# Fri, 03 Dec 2021 22:02:29 GMT
 VOLUME [/var/lib/postgresql/data]
-# Tue, 30 Nov 2021 06:33:06 GMT
+# Fri, 03 Dec 2021 22:02:30 GMT
 COPY file:6e4de9271291e4bdd4a40b73fffe4d6d1aeff033460f5b14d74e948686daa095 in /usr/local/bin/ 
-# Tue, 30 Nov 2021 06:33:06 GMT
+# Fri, 03 Dec 2021 22:02:30 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 30 Nov 2021 06:33:07 GMT
+# Fri, 03 Dec 2021 22:02:30 GMT
 STOPSIGNAL SIGINT
-# Tue, 30 Nov 2021 06:33:07 GMT
+# Fri, 03 Dec 2021 22:02:31 GMT
 EXPOSE 5432
-# Tue, 30 Nov 2021 06:33:07 GMT
+# Fri, 03 Dec 2021 22:02:31 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:08bca22fbffb4e58224e9e4f6a56f1ca5099c002b1aeb6181df63af308a3da58`  
-		Last Modified: Wed, 17 Nov 2021 02:19:09 GMT  
-		Size: 29.6 MB (29630388 bytes)  
+	-	`sha256:df61fb15db6391af55d70bc3c0db3e9014438c81bf802619fb527221adf5e8a8`  
+		Last Modified: Thu, 02 Dec 2021 03:17:58 GMT  
+		Size: 29.6 MB (29630496 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:173240a7e67fd44ecc0ad5edd818557628d50f00c5d2a5f3d580e0a2ac091610`  
-		Last Modified: Wed, 17 Nov 2021 08:20:21 GMT  
-		Size: 4.4 MB (4402817 bytes)  
+	-	`sha256:aead74c300746557e558c9a90ac68d244f2d0a4887452c091df5b13129cb2b9f`  
+		Last Modified: Sat, 04 Dec 2021 00:03:36 GMT  
+		Size: 4.4 MB (4402852 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5442a27e75e2c0fbbf3bcf39b1c33f75d31863490f96ba2f0f1921ef6da25caf`  
-		Last Modified: Wed, 17 Nov 2021 08:20:17 GMT  
-		Size: 1.8 KB (1767 bytes)  
+	-	`sha256:ff24a9c55d840ff572c517a90e96685d72a67060b5e33095553fb562baab18cf`  
+		Last Modified: Sat, 04 Dec 2021 00:03:32 GMT  
+		Size: 1.8 KB (1769 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2054e4460d2a19717dd4a336b47653df9571eda928f0f361edc1ab86244ddcc2`  
-		Last Modified: Tue, 30 Nov 2021 08:33:27 GMT  
-		Size: 1.3 MB (1298194 bytes)  
+	-	`sha256:ff2f2672897c98937e158db018d3d1b122bf326ce588884511581b48ad1a88ff`  
+		Last Modified: Sat, 04 Dec 2021 00:03:33 GMT  
+		Size: 1.3 MB (1298160 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb7d76eb66b099fba3c2444676a5f23198b89f04ca562d92fe3cbad93e17ed6f`  
-		Last Modified: Tue, 30 Nov 2021 08:33:31 GMT  
-		Size: 8.0 MB (8043954 bytes)  
+	-	`sha256:79a1189dc92e0a7d42054bcaba5f31998c46ca53d7c74cede00da57e1ad8e953`  
+		Last Modified: Sat, 04 Dec 2021 00:03:37 GMT  
+		Size: 8.0 MB (8043932 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fde934ccf5b463f3cc67c5e044fdb538461feed010e478a8adb22f25017f220b`  
-		Last Modified: Tue, 30 Nov 2021 08:33:24 GMT  
-		Size: 439.2 KB (439195 bytes)  
+	-	`sha256:6ebf674bd1ad23a8d1eb79e72400b0113c5888197764e12868bb0bf9e8524f35`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
+		Size: 439.2 KB (439177 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0517cbc7ba02213b80d94a9809694781806502aef56896f981df723099874173`  
-		Last Modified: Tue, 30 Nov 2021 08:33:23 GMT  
+	-	`sha256:082848bd27554921aa8011299d5bc6ca85fd6ad7f1c5ceb5a0af2f8d453db000`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5ff4ee65102820557350a5542a9ce98ad5efe0fcb3cf0a382b9ef99f9850a99`  
-		Last Modified: Tue, 30 Nov 2021 08:33:23 GMT  
-		Size: 3.1 KB (3052 bytes)  
+	-	`sha256:77c733c7a0c1c23d143a50ed0a6e48a73f8aac5364a708d48a3ea82b16359311`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
+		Size: 3.1 KB (3054 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6d62478913309321a462852da1b1f18f13eed958bc01f4beb6958f2f5ce45aac`  
-		Last Modified: Tue, 30 Nov 2021 08:37:15 GMT  
-		Size: 86.3 MB (86271611 bytes)  
+	-	`sha256:c8929df814bfeb385686018db065cedd834350addbdc68fbdccc71768c68dea3`  
+		Last Modified: Sat, 04 Dec 2021 00:07:12 GMT  
+		Size: 86.3 MB (86271804 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cd6cf3c765a6e488dd382a679428801b5dc601d3342b73656d9f140bc01a2a4c`  
-		Last Modified: Tue, 30 Nov 2021 08:36:16 GMT  
-		Size: 9.0 KB (9031 bytes)  
+	-	`sha256:fdc03c90421cf5b0d795c6cbea1d6a595977325cc328ad51a57600566ebcfb06`  
+		Last Modified: Sat, 04 Dec 2021 00:06:12 GMT  
+		Size: 9.0 KB (9028 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42db55b560c74e652e12e2252486c107d9148bfeab42d943adff72f7bf0de4df`  
-		Last Modified: Tue, 30 Nov 2021 08:36:16 GMT  
+	-	`sha256:548e8c961a5bd16d6abe68040577e41492b757fa176196b79d8f9e772c93e5ad`  
+		Last Modified: Sat, 04 Dec 2021 00:06:12 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2aec33cc033153f0e1aee0f2fe73c5f9fa4da988ec5644eb9123723c4ea7f475`  
-		Last Modified: Tue, 30 Nov 2021 08:36:15 GMT  
-		Size: 170.0 B  
+	-	`sha256:b707841035185b3f2e5e26ea2c648f6b94b8482fa92286fe4d1f549e17812aa9`  
+		Last Modified: Sat, 04 Dec 2021 00:06:12 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ca14a1edab2c3bc86d17f0efca1926f06ec50faf6405df62622a791a1e737a42`  
-		Last Modified: Tue, 30 Nov 2021 08:36:16 GMT  
-		Size: 4.7 KB (4717 bytes)  
+	-	`sha256:47a0ffbb72fd0ac4478954a9f52fe578d772d67c52af1f4de3dfede671e8285e`  
+		Last Modified: Sat, 04 Dec 2021 00:06:12 GMT  
+		Size: 4.7 KB (4715 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `postgres:12.9-bullseye` - linux; ppc64le
@@ -20953,7 +20953,7 @@ CMD ["postgres"]
 ## `postgres:13`
 
 ```console
-$ docker pull postgres@sha256:db905a0955e8a34468f8ab5c6e71a3561baf0ed8996b0387d4a05860d7a32c20
+$ docker pull postgres@sha256:3c6d1cef78fe0c84a79c76f0907aed29895dff661fecd45103f7afe2a055078e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -21575,122 +21575,122 @@ CMD ["postgres"]
 ### `postgres:13` - linux; mips64le
 
 ```console
-$ docker pull postgres@sha256:0f5e1619e550be0d98252a3855f259c49e149c79bbcf4d6aad506fe58fa4454c
+$ docker pull postgres@sha256:86a7a8f858aad6dfdfb485004f30a6c468213c49576091033600f8512c529cbc
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **130.5 MB (130544885 bytes)**  
+-	Total Size: **130.5 MB (130543326 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:199805fb1048ac2f0e8cd0e3d2f30cee93f3f27d8f860b2671f7140de72f0880`
+-	Image ID: `sha256:d793434eb5bb2fddcd6f0e426b6478aaa7245eb239da2087a33fd9247421e9a4`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Wed, 17 Nov 2021 02:10:13 GMT
-ADD file:10bc783d286d0a800f59d5009e87ecb4651659c82cae1325132756c7c8b1dec0 in / 
-# Wed, 17 Nov 2021 02:10:13 GMT
+# Thu, 02 Dec 2021 03:09:10 GMT
+ADD file:419aff162077eb16923c3ede6455ca86756a929a5a837bc6ac6b8dc67913503a in / 
+# Thu, 02 Dec 2021 03:09:10 GMT
 CMD ["bash"]
-# Wed, 17 Nov 2021 03:38:46 GMT
+# Fri, 03 Dec 2021 19:20:44 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 17 Nov 2021 03:38:48 GMT
+# Fri, 03 Dec 2021 19:20:46 GMT
 RUN set -eux; 	groupadd -r postgres --gid=999; 	useradd -r -g postgres --uid=999 --home-dir=/var/lib/postgresql --shell=/bin/bash postgres; 	mkdir -p /var/lib/postgresql; 	chown -R postgres:postgres /var/lib/postgresql
-# Tue, 30 Nov 2021 03:51:38 GMT
+# Fri, 03 Dec 2021 19:20:46 GMT
 ENV GOSU_VERSION=1.14
-# Tue, 30 Nov 2021 03:51:59 GMT
+# Fri, 03 Dec 2021 19:21:06 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Tue, 30 Nov 2021 03:52:23 GMT
+# Fri, 03 Dec 2021 19:21:31 GMT
 RUN set -eux; 	if [ -f /etc/dpkg/dpkg.cfg.d/docker ]; then 		grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 		sed -ri '/\/usr\/share\/locale/d' /etc/dpkg/dpkg.cfg.d/docker; 		! grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 	fi; 	apt-get update; apt-get install -y --no-install-recommends locales; rm -rf /var/lib/apt/lists/*; 	localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Tue, 30 Nov 2021 03:52:24 GMT
+# Fri, 03 Dec 2021 19:21:31 GMT
 ENV LANG=en_US.utf8
-# Tue, 30 Nov 2021 03:52:36 GMT
+# Fri, 03 Dec 2021 19:21:44 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libnss-wrapper 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 30 Nov 2021 03:52:38 GMT
+# Fri, 03 Dec 2021 19:21:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 30 Nov 2021 03:52:41 GMT
+# Fri, 03 Dec 2021 19:21:48 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	command -v gpgconf > /dev/null && gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Tue, 30 Nov 2021 04:48:48 GMT
+# Fri, 03 Dec 2021 20:17:53 GMT
 ENV PG_MAJOR=13
-# Tue, 30 Nov 2021 04:48:48 GMT
+# Fri, 03 Dec 2021 20:17:53 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/13/bin
-# Tue, 30 Nov 2021 04:48:49 GMT
+# Fri, 03 Dec 2021 20:17:53 GMT
 ENV PG_VERSION=13.5-1.pgdg110+1
-# Tue, 30 Nov 2021 05:41:37 GMT
+# Fri, 03 Dec 2021 21:10:47 GMT
 RUN set -ex; 		export PYTHONDONTWRITEBYTECODE=1; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64 | arm64 | ppc64el) 			echo "deb http://apt.postgresql.org/pub/repos/apt/ bullseye-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 			apt-get update; 			;; 		*) 			echo "deb-src http://apt.postgresql.org/pub/repos/apt/ bullseye-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 						tempDir="$(mktemp -d)"; 			cd "$tempDir"; 						savedAptMark="$(apt-mark showmanual)"; 						apt-get update; 			DEBIAN_FRONTEND=noninteractive 			apt-get build-dep -y 				postgresql-common pgdg-keyring 				"postgresql-$PG_MAJOR=$PG_VERSION" 			; 			DEB_BUILD_OPTIONS="nocheck parallel=$(nproc)" 				apt-get source --compile 					postgresql-common pgdg-keyring 					"postgresql-$PG_MAJOR=$PG_VERSION" 			; 						apt-mark showmanual | xargs apt-mark auto > /dev/null; 			apt-mark manual $savedAptMark; 						ls -lAFh; 			dpkg-scanpackages . > Packages; 			grep '^Package: ' Packages; 			echo "deb [ trusted=yes ] file://$tempDir ./" > /etc/apt/sources.list.d/temp.list; 			apt-get -o Acquire::GzipIndexes=false update; 			;; 	esac; 		apt-get install -y --no-install-recommends postgresql-common; 	sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf; 	apt-get install -y --no-install-recommends 		"postgresql-$PG_MAJOR=$PG_VERSION" 	; 		rm -rf /var/lib/apt/lists/*; 		if [ -n "$tempDir" ]; then 		apt-get purge -y --auto-remove; 		rm -rf "$tempDir" /etc/apt/sources.list.d/temp.list; 	fi; 		find /usr -name '*.pyc' -type f -exec bash -c 'for pyc; do dpkg -S "$pyc" &> /dev/null || rm -vf "$pyc"; done' -- '{}' +; 		postgres --version
-# Tue, 30 Nov 2021 05:41:40 GMT
+# Fri, 03 Dec 2021 21:10:50 GMT
 RUN set -eux; 	dpkg-divert --add --rename --divert "/usr/share/postgresql/postgresql.conf.sample.dpkg" "/usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample"; 	cp -v /usr/share/postgresql/postgresql.conf.sample.dpkg /usr/share/postgresql/postgresql.conf.sample; 	ln -sv ../postgresql.conf.sample "/usr/share/postgresql/$PG_MAJOR/"; 	sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample; 	grep -F "listen_addresses = '*'" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 30 Nov 2021 05:41:42 GMT
+# Fri, 03 Dec 2021 21:10:52 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod 2777 /var/run/postgresql
-# Tue, 30 Nov 2021 05:41:43 GMT
+# Fri, 03 Dec 2021 21:10:53 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 30 Nov 2021 05:41:45 GMT
+# Fri, 03 Dec 2021 21:10:55 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA"
-# Tue, 30 Nov 2021 05:41:45 GMT
+# Fri, 03 Dec 2021 21:10:55 GMT
 VOLUME [/var/lib/postgresql/data]
-# Tue, 30 Nov 2021 05:41:45 GMT
+# Fri, 03 Dec 2021 21:10:56 GMT
 COPY file:6e4de9271291e4bdd4a40b73fffe4d6d1aeff033460f5b14d74e948686daa095 in /usr/local/bin/ 
-# Tue, 30 Nov 2021 05:41:46 GMT
+# Fri, 03 Dec 2021 21:10:56 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 30 Nov 2021 05:41:46 GMT
+# Fri, 03 Dec 2021 21:10:56 GMT
 STOPSIGNAL SIGINT
-# Tue, 30 Nov 2021 05:41:46 GMT
+# Fri, 03 Dec 2021 21:10:57 GMT
 EXPOSE 5432
-# Tue, 30 Nov 2021 05:41:47 GMT
+# Fri, 03 Dec 2021 21:10:57 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:08bca22fbffb4e58224e9e4f6a56f1ca5099c002b1aeb6181df63af308a3da58`  
-		Last Modified: Wed, 17 Nov 2021 02:19:09 GMT  
-		Size: 29.6 MB (29630388 bytes)  
+	-	`sha256:df61fb15db6391af55d70bc3c0db3e9014438c81bf802619fb527221adf5e8a8`  
+		Last Modified: Thu, 02 Dec 2021 03:17:58 GMT  
+		Size: 29.6 MB (29630496 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:173240a7e67fd44ecc0ad5edd818557628d50f00c5d2a5f3d580e0a2ac091610`  
-		Last Modified: Wed, 17 Nov 2021 08:20:21 GMT  
-		Size: 4.4 MB (4402817 bytes)  
+	-	`sha256:aead74c300746557e558c9a90ac68d244f2d0a4887452c091df5b13129cb2b9f`  
+		Last Modified: Sat, 04 Dec 2021 00:03:36 GMT  
+		Size: 4.4 MB (4402852 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5442a27e75e2c0fbbf3bcf39b1c33f75d31863490f96ba2f0f1921ef6da25caf`  
-		Last Modified: Wed, 17 Nov 2021 08:20:17 GMT  
-		Size: 1.8 KB (1767 bytes)  
+	-	`sha256:ff24a9c55d840ff572c517a90e96685d72a67060b5e33095553fb562baab18cf`  
+		Last Modified: Sat, 04 Dec 2021 00:03:32 GMT  
+		Size: 1.8 KB (1769 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2054e4460d2a19717dd4a336b47653df9571eda928f0f361edc1ab86244ddcc2`  
-		Last Modified: Tue, 30 Nov 2021 08:33:27 GMT  
-		Size: 1.3 MB (1298194 bytes)  
+	-	`sha256:ff2f2672897c98937e158db018d3d1b122bf326ce588884511581b48ad1a88ff`  
+		Last Modified: Sat, 04 Dec 2021 00:03:33 GMT  
+		Size: 1.3 MB (1298160 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb7d76eb66b099fba3c2444676a5f23198b89f04ca562d92fe3cbad93e17ed6f`  
-		Last Modified: Tue, 30 Nov 2021 08:33:31 GMT  
-		Size: 8.0 MB (8043954 bytes)  
+	-	`sha256:79a1189dc92e0a7d42054bcaba5f31998c46ca53d7c74cede00da57e1ad8e953`  
+		Last Modified: Sat, 04 Dec 2021 00:03:37 GMT  
+		Size: 8.0 MB (8043932 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fde934ccf5b463f3cc67c5e044fdb538461feed010e478a8adb22f25017f220b`  
-		Last Modified: Tue, 30 Nov 2021 08:33:24 GMT  
-		Size: 439.2 KB (439195 bytes)  
+	-	`sha256:6ebf674bd1ad23a8d1eb79e72400b0113c5888197764e12868bb0bf9e8524f35`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
+		Size: 439.2 KB (439177 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0517cbc7ba02213b80d94a9809694781806502aef56896f981df723099874173`  
-		Last Modified: Tue, 30 Nov 2021 08:33:23 GMT  
+	-	`sha256:082848bd27554921aa8011299d5bc6ca85fd6ad7f1c5ceb5a0af2f8d453db000`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5ff4ee65102820557350a5542a9ce98ad5efe0fcb3cf0a382b9ef99f9850a99`  
-		Last Modified: Tue, 30 Nov 2021 08:33:23 GMT  
-		Size: 3.1 KB (3052 bytes)  
+	-	`sha256:77c733c7a0c1c23d143a50ed0a6e48a73f8aac5364a708d48a3ea82b16359311`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
+		Size: 3.1 KB (3054 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d44ee210e0e98afe9468574891e854b1d424b87923108bb695c444c3f5329ca8`  
-		Last Modified: Tue, 30 Nov 2021 08:35:52 GMT  
-		Size: 86.7 MB (86711020 bytes)  
+	-	`sha256:305b83721f080e36e7b4eee2474f33a57d64932b0e9eb68a44259c04db9b5644`  
+		Last Modified: Sat, 04 Dec 2021 00:05:55 GMT  
+		Size: 86.7 MB (86709393 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4d0d4a1893e5a23501124c21d741cfb196c6a9a34650e44ef076bba7b2809a27`  
-		Last Modified: Tue, 30 Nov 2021 08:34:52 GMT  
-		Size: 9.4 KB (9364 bytes)  
+	-	`sha256:a4377df85be8013fd59541767ee0355e8278ec1655bf1fff061dc4c7ee59e348`  
+		Last Modified: Sat, 04 Dec 2021 00:04:56 GMT  
+		Size: 9.4 KB (9362 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bcd544c4c49b8b8da1e32306b5e13b6abbb26b39796028293ab8971624dd45d5`  
-		Last Modified: Tue, 30 Nov 2021 08:34:52 GMT  
+	-	`sha256:2644f6cd97c90d08d3403caf96fa239e87cb9f67a96db8e6f769067b3d732837`  
+		Last Modified: Sat, 04 Dec 2021 00:04:56 GMT  
 		Size: 129.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c14918a9c5e77d2201142f8f42f2709897ebcb4e441467632d4181aa37398587`  
-		Last Modified: Tue, 30 Nov 2021 08:34:52 GMT  
+	-	`sha256:7f4faac74890e118d749ff57a50db8a362ba249cd5be06664da6cdd140b6263a`  
+		Last Modified: Sat, 04 Dec 2021 00:04:56 GMT  
 		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2da75bc19eaee2a5ff0e66fc4d9556e384adbaea95ad67610815baecd4c309d8`  
-		Last Modified: Tue, 30 Nov 2021 08:34:52 GMT  
-		Size: 4.7 KB (4720 bytes)  
+	-	`sha256:d5aa4d84fbf3dab64b7b9634200178954ff9053da9f6c6130ba638474f54097a`  
+		Last Modified: Sat, 04 Dec 2021 00:04:56 GMT  
+		Size: 4.7 KB (4717 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `postgres:13` - linux; ppc64le
@@ -23216,7 +23216,7 @@ CMD ["postgres"]
 ## `postgres:13-bullseye`
 
 ```console
-$ docker pull postgres@sha256:db905a0955e8a34468f8ab5c6e71a3561baf0ed8996b0387d4a05860d7a32c20
+$ docker pull postgres@sha256:3c6d1cef78fe0c84a79c76f0907aed29895dff661fecd45103f7afe2a055078e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -23838,122 +23838,122 @@ CMD ["postgres"]
 ### `postgres:13-bullseye` - linux; mips64le
 
 ```console
-$ docker pull postgres@sha256:0f5e1619e550be0d98252a3855f259c49e149c79bbcf4d6aad506fe58fa4454c
+$ docker pull postgres@sha256:86a7a8f858aad6dfdfb485004f30a6c468213c49576091033600f8512c529cbc
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **130.5 MB (130544885 bytes)**  
+-	Total Size: **130.5 MB (130543326 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:199805fb1048ac2f0e8cd0e3d2f30cee93f3f27d8f860b2671f7140de72f0880`
+-	Image ID: `sha256:d793434eb5bb2fddcd6f0e426b6478aaa7245eb239da2087a33fd9247421e9a4`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Wed, 17 Nov 2021 02:10:13 GMT
-ADD file:10bc783d286d0a800f59d5009e87ecb4651659c82cae1325132756c7c8b1dec0 in / 
-# Wed, 17 Nov 2021 02:10:13 GMT
+# Thu, 02 Dec 2021 03:09:10 GMT
+ADD file:419aff162077eb16923c3ede6455ca86756a929a5a837bc6ac6b8dc67913503a in / 
+# Thu, 02 Dec 2021 03:09:10 GMT
 CMD ["bash"]
-# Wed, 17 Nov 2021 03:38:46 GMT
+# Fri, 03 Dec 2021 19:20:44 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 17 Nov 2021 03:38:48 GMT
+# Fri, 03 Dec 2021 19:20:46 GMT
 RUN set -eux; 	groupadd -r postgres --gid=999; 	useradd -r -g postgres --uid=999 --home-dir=/var/lib/postgresql --shell=/bin/bash postgres; 	mkdir -p /var/lib/postgresql; 	chown -R postgres:postgres /var/lib/postgresql
-# Tue, 30 Nov 2021 03:51:38 GMT
+# Fri, 03 Dec 2021 19:20:46 GMT
 ENV GOSU_VERSION=1.14
-# Tue, 30 Nov 2021 03:51:59 GMT
+# Fri, 03 Dec 2021 19:21:06 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Tue, 30 Nov 2021 03:52:23 GMT
+# Fri, 03 Dec 2021 19:21:31 GMT
 RUN set -eux; 	if [ -f /etc/dpkg/dpkg.cfg.d/docker ]; then 		grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 		sed -ri '/\/usr\/share\/locale/d' /etc/dpkg/dpkg.cfg.d/docker; 		! grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 	fi; 	apt-get update; apt-get install -y --no-install-recommends locales; rm -rf /var/lib/apt/lists/*; 	localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Tue, 30 Nov 2021 03:52:24 GMT
+# Fri, 03 Dec 2021 19:21:31 GMT
 ENV LANG=en_US.utf8
-# Tue, 30 Nov 2021 03:52:36 GMT
+# Fri, 03 Dec 2021 19:21:44 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libnss-wrapper 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 30 Nov 2021 03:52:38 GMT
+# Fri, 03 Dec 2021 19:21:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 30 Nov 2021 03:52:41 GMT
+# Fri, 03 Dec 2021 19:21:48 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	command -v gpgconf > /dev/null && gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Tue, 30 Nov 2021 04:48:48 GMT
+# Fri, 03 Dec 2021 20:17:53 GMT
 ENV PG_MAJOR=13
-# Tue, 30 Nov 2021 04:48:48 GMT
+# Fri, 03 Dec 2021 20:17:53 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/13/bin
-# Tue, 30 Nov 2021 04:48:49 GMT
+# Fri, 03 Dec 2021 20:17:53 GMT
 ENV PG_VERSION=13.5-1.pgdg110+1
-# Tue, 30 Nov 2021 05:41:37 GMT
+# Fri, 03 Dec 2021 21:10:47 GMT
 RUN set -ex; 		export PYTHONDONTWRITEBYTECODE=1; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64 | arm64 | ppc64el) 			echo "deb http://apt.postgresql.org/pub/repos/apt/ bullseye-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 			apt-get update; 			;; 		*) 			echo "deb-src http://apt.postgresql.org/pub/repos/apt/ bullseye-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 						tempDir="$(mktemp -d)"; 			cd "$tempDir"; 						savedAptMark="$(apt-mark showmanual)"; 						apt-get update; 			DEBIAN_FRONTEND=noninteractive 			apt-get build-dep -y 				postgresql-common pgdg-keyring 				"postgresql-$PG_MAJOR=$PG_VERSION" 			; 			DEB_BUILD_OPTIONS="nocheck parallel=$(nproc)" 				apt-get source --compile 					postgresql-common pgdg-keyring 					"postgresql-$PG_MAJOR=$PG_VERSION" 			; 						apt-mark showmanual | xargs apt-mark auto > /dev/null; 			apt-mark manual $savedAptMark; 						ls -lAFh; 			dpkg-scanpackages . > Packages; 			grep '^Package: ' Packages; 			echo "deb [ trusted=yes ] file://$tempDir ./" > /etc/apt/sources.list.d/temp.list; 			apt-get -o Acquire::GzipIndexes=false update; 			;; 	esac; 		apt-get install -y --no-install-recommends postgresql-common; 	sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf; 	apt-get install -y --no-install-recommends 		"postgresql-$PG_MAJOR=$PG_VERSION" 	; 		rm -rf /var/lib/apt/lists/*; 		if [ -n "$tempDir" ]; then 		apt-get purge -y --auto-remove; 		rm -rf "$tempDir" /etc/apt/sources.list.d/temp.list; 	fi; 		find /usr -name '*.pyc' -type f -exec bash -c 'for pyc; do dpkg -S "$pyc" &> /dev/null || rm -vf "$pyc"; done' -- '{}' +; 		postgres --version
-# Tue, 30 Nov 2021 05:41:40 GMT
+# Fri, 03 Dec 2021 21:10:50 GMT
 RUN set -eux; 	dpkg-divert --add --rename --divert "/usr/share/postgresql/postgresql.conf.sample.dpkg" "/usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample"; 	cp -v /usr/share/postgresql/postgresql.conf.sample.dpkg /usr/share/postgresql/postgresql.conf.sample; 	ln -sv ../postgresql.conf.sample "/usr/share/postgresql/$PG_MAJOR/"; 	sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample; 	grep -F "listen_addresses = '*'" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 30 Nov 2021 05:41:42 GMT
+# Fri, 03 Dec 2021 21:10:52 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod 2777 /var/run/postgresql
-# Tue, 30 Nov 2021 05:41:43 GMT
+# Fri, 03 Dec 2021 21:10:53 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 30 Nov 2021 05:41:45 GMT
+# Fri, 03 Dec 2021 21:10:55 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA"
-# Tue, 30 Nov 2021 05:41:45 GMT
+# Fri, 03 Dec 2021 21:10:55 GMT
 VOLUME [/var/lib/postgresql/data]
-# Tue, 30 Nov 2021 05:41:45 GMT
+# Fri, 03 Dec 2021 21:10:56 GMT
 COPY file:6e4de9271291e4bdd4a40b73fffe4d6d1aeff033460f5b14d74e948686daa095 in /usr/local/bin/ 
-# Tue, 30 Nov 2021 05:41:46 GMT
+# Fri, 03 Dec 2021 21:10:56 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 30 Nov 2021 05:41:46 GMT
+# Fri, 03 Dec 2021 21:10:56 GMT
 STOPSIGNAL SIGINT
-# Tue, 30 Nov 2021 05:41:46 GMT
+# Fri, 03 Dec 2021 21:10:57 GMT
 EXPOSE 5432
-# Tue, 30 Nov 2021 05:41:47 GMT
+# Fri, 03 Dec 2021 21:10:57 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:08bca22fbffb4e58224e9e4f6a56f1ca5099c002b1aeb6181df63af308a3da58`  
-		Last Modified: Wed, 17 Nov 2021 02:19:09 GMT  
-		Size: 29.6 MB (29630388 bytes)  
+	-	`sha256:df61fb15db6391af55d70bc3c0db3e9014438c81bf802619fb527221adf5e8a8`  
+		Last Modified: Thu, 02 Dec 2021 03:17:58 GMT  
+		Size: 29.6 MB (29630496 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:173240a7e67fd44ecc0ad5edd818557628d50f00c5d2a5f3d580e0a2ac091610`  
-		Last Modified: Wed, 17 Nov 2021 08:20:21 GMT  
-		Size: 4.4 MB (4402817 bytes)  
+	-	`sha256:aead74c300746557e558c9a90ac68d244f2d0a4887452c091df5b13129cb2b9f`  
+		Last Modified: Sat, 04 Dec 2021 00:03:36 GMT  
+		Size: 4.4 MB (4402852 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5442a27e75e2c0fbbf3bcf39b1c33f75d31863490f96ba2f0f1921ef6da25caf`  
-		Last Modified: Wed, 17 Nov 2021 08:20:17 GMT  
-		Size: 1.8 KB (1767 bytes)  
+	-	`sha256:ff24a9c55d840ff572c517a90e96685d72a67060b5e33095553fb562baab18cf`  
+		Last Modified: Sat, 04 Dec 2021 00:03:32 GMT  
+		Size: 1.8 KB (1769 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2054e4460d2a19717dd4a336b47653df9571eda928f0f361edc1ab86244ddcc2`  
-		Last Modified: Tue, 30 Nov 2021 08:33:27 GMT  
-		Size: 1.3 MB (1298194 bytes)  
+	-	`sha256:ff2f2672897c98937e158db018d3d1b122bf326ce588884511581b48ad1a88ff`  
+		Last Modified: Sat, 04 Dec 2021 00:03:33 GMT  
+		Size: 1.3 MB (1298160 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb7d76eb66b099fba3c2444676a5f23198b89f04ca562d92fe3cbad93e17ed6f`  
-		Last Modified: Tue, 30 Nov 2021 08:33:31 GMT  
-		Size: 8.0 MB (8043954 bytes)  
+	-	`sha256:79a1189dc92e0a7d42054bcaba5f31998c46ca53d7c74cede00da57e1ad8e953`  
+		Last Modified: Sat, 04 Dec 2021 00:03:37 GMT  
+		Size: 8.0 MB (8043932 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fde934ccf5b463f3cc67c5e044fdb538461feed010e478a8adb22f25017f220b`  
-		Last Modified: Tue, 30 Nov 2021 08:33:24 GMT  
-		Size: 439.2 KB (439195 bytes)  
+	-	`sha256:6ebf674bd1ad23a8d1eb79e72400b0113c5888197764e12868bb0bf9e8524f35`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
+		Size: 439.2 KB (439177 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0517cbc7ba02213b80d94a9809694781806502aef56896f981df723099874173`  
-		Last Modified: Tue, 30 Nov 2021 08:33:23 GMT  
+	-	`sha256:082848bd27554921aa8011299d5bc6ca85fd6ad7f1c5ceb5a0af2f8d453db000`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5ff4ee65102820557350a5542a9ce98ad5efe0fcb3cf0a382b9ef99f9850a99`  
-		Last Modified: Tue, 30 Nov 2021 08:33:23 GMT  
-		Size: 3.1 KB (3052 bytes)  
+	-	`sha256:77c733c7a0c1c23d143a50ed0a6e48a73f8aac5364a708d48a3ea82b16359311`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
+		Size: 3.1 KB (3054 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d44ee210e0e98afe9468574891e854b1d424b87923108bb695c444c3f5329ca8`  
-		Last Modified: Tue, 30 Nov 2021 08:35:52 GMT  
-		Size: 86.7 MB (86711020 bytes)  
+	-	`sha256:305b83721f080e36e7b4eee2474f33a57d64932b0e9eb68a44259c04db9b5644`  
+		Last Modified: Sat, 04 Dec 2021 00:05:55 GMT  
+		Size: 86.7 MB (86709393 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4d0d4a1893e5a23501124c21d741cfb196c6a9a34650e44ef076bba7b2809a27`  
-		Last Modified: Tue, 30 Nov 2021 08:34:52 GMT  
-		Size: 9.4 KB (9364 bytes)  
+	-	`sha256:a4377df85be8013fd59541767ee0355e8278ec1655bf1fff061dc4c7ee59e348`  
+		Last Modified: Sat, 04 Dec 2021 00:04:56 GMT  
+		Size: 9.4 KB (9362 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bcd544c4c49b8b8da1e32306b5e13b6abbb26b39796028293ab8971624dd45d5`  
-		Last Modified: Tue, 30 Nov 2021 08:34:52 GMT  
+	-	`sha256:2644f6cd97c90d08d3403caf96fa239e87cb9f67a96db8e6f769067b3d732837`  
+		Last Modified: Sat, 04 Dec 2021 00:04:56 GMT  
 		Size: 129.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c14918a9c5e77d2201142f8f42f2709897ebcb4e441467632d4181aa37398587`  
-		Last Modified: Tue, 30 Nov 2021 08:34:52 GMT  
+	-	`sha256:7f4faac74890e118d749ff57a50db8a362ba249cd5be06664da6cdd140b6263a`  
+		Last Modified: Sat, 04 Dec 2021 00:04:56 GMT  
 		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2da75bc19eaee2a5ff0e66fc4d9556e384adbaea95ad67610815baecd4c309d8`  
-		Last Modified: Tue, 30 Nov 2021 08:34:52 GMT  
-		Size: 4.7 KB (4720 bytes)  
+	-	`sha256:d5aa4d84fbf3dab64b7b9634200178954ff9053da9f6c6130ba638474f54097a`  
+		Last Modified: Sat, 04 Dec 2021 00:04:56 GMT  
+		Size: 4.7 KB (4717 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `postgres:13-bullseye` - linux; ppc64le
@@ -24201,7 +24201,7 @@ CMD ["postgres"]
 ## `postgres:13.5`
 
 ```console
-$ docker pull postgres@sha256:db905a0955e8a34468f8ab5c6e71a3561baf0ed8996b0387d4a05860d7a32c20
+$ docker pull postgres@sha256:3c6d1cef78fe0c84a79c76f0907aed29895dff661fecd45103f7afe2a055078e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -24823,122 +24823,122 @@ CMD ["postgres"]
 ### `postgres:13.5` - linux; mips64le
 
 ```console
-$ docker pull postgres@sha256:0f5e1619e550be0d98252a3855f259c49e149c79bbcf4d6aad506fe58fa4454c
+$ docker pull postgres@sha256:86a7a8f858aad6dfdfb485004f30a6c468213c49576091033600f8512c529cbc
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **130.5 MB (130544885 bytes)**  
+-	Total Size: **130.5 MB (130543326 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:199805fb1048ac2f0e8cd0e3d2f30cee93f3f27d8f860b2671f7140de72f0880`
+-	Image ID: `sha256:d793434eb5bb2fddcd6f0e426b6478aaa7245eb239da2087a33fd9247421e9a4`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Wed, 17 Nov 2021 02:10:13 GMT
-ADD file:10bc783d286d0a800f59d5009e87ecb4651659c82cae1325132756c7c8b1dec0 in / 
-# Wed, 17 Nov 2021 02:10:13 GMT
+# Thu, 02 Dec 2021 03:09:10 GMT
+ADD file:419aff162077eb16923c3ede6455ca86756a929a5a837bc6ac6b8dc67913503a in / 
+# Thu, 02 Dec 2021 03:09:10 GMT
 CMD ["bash"]
-# Wed, 17 Nov 2021 03:38:46 GMT
+# Fri, 03 Dec 2021 19:20:44 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 17 Nov 2021 03:38:48 GMT
+# Fri, 03 Dec 2021 19:20:46 GMT
 RUN set -eux; 	groupadd -r postgres --gid=999; 	useradd -r -g postgres --uid=999 --home-dir=/var/lib/postgresql --shell=/bin/bash postgres; 	mkdir -p /var/lib/postgresql; 	chown -R postgres:postgres /var/lib/postgresql
-# Tue, 30 Nov 2021 03:51:38 GMT
+# Fri, 03 Dec 2021 19:20:46 GMT
 ENV GOSU_VERSION=1.14
-# Tue, 30 Nov 2021 03:51:59 GMT
+# Fri, 03 Dec 2021 19:21:06 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Tue, 30 Nov 2021 03:52:23 GMT
+# Fri, 03 Dec 2021 19:21:31 GMT
 RUN set -eux; 	if [ -f /etc/dpkg/dpkg.cfg.d/docker ]; then 		grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 		sed -ri '/\/usr\/share\/locale/d' /etc/dpkg/dpkg.cfg.d/docker; 		! grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 	fi; 	apt-get update; apt-get install -y --no-install-recommends locales; rm -rf /var/lib/apt/lists/*; 	localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Tue, 30 Nov 2021 03:52:24 GMT
+# Fri, 03 Dec 2021 19:21:31 GMT
 ENV LANG=en_US.utf8
-# Tue, 30 Nov 2021 03:52:36 GMT
+# Fri, 03 Dec 2021 19:21:44 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libnss-wrapper 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 30 Nov 2021 03:52:38 GMT
+# Fri, 03 Dec 2021 19:21:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 30 Nov 2021 03:52:41 GMT
+# Fri, 03 Dec 2021 19:21:48 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	command -v gpgconf > /dev/null && gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Tue, 30 Nov 2021 04:48:48 GMT
+# Fri, 03 Dec 2021 20:17:53 GMT
 ENV PG_MAJOR=13
-# Tue, 30 Nov 2021 04:48:48 GMT
+# Fri, 03 Dec 2021 20:17:53 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/13/bin
-# Tue, 30 Nov 2021 04:48:49 GMT
+# Fri, 03 Dec 2021 20:17:53 GMT
 ENV PG_VERSION=13.5-1.pgdg110+1
-# Tue, 30 Nov 2021 05:41:37 GMT
+# Fri, 03 Dec 2021 21:10:47 GMT
 RUN set -ex; 		export PYTHONDONTWRITEBYTECODE=1; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64 | arm64 | ppc64el) 			echo "deb http://apt.postgresql.org/pub/repos/apt/ bullseye-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 			apt-get update; 			;; 		*) 			echo "deb-src http://apt.postgresql.org/pub/repos/apt/ bullseye-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 						tempDir="$(mktemp -d)"; 			cd "$tempDir"; 						savedAptMark="$(apt-mark showmanual)"; 						apt-get update; 			DEBIAN_FRONTEND=noninteractive 			apt-get build-dep -y 				postgresql-common pgdg-keyring 				"postgresql-$PG_MAJOR=$PG_VERSION" 			; 			DEB_BUILD_OPTIONS="nocheck parallel=$(nproc)" 				apt-get source --compile 					postgresql-common pgdg-keyring 					"postgresql-$PG_MAJOR=$PG_VERSION" 			; 						apt-mark showmanual | xargs apt-mark auto > /dev/null; 			apt-mark manual $savedAptMark; 						ls -lAFh; 			dpkg-scanpackages . > Packages; 			grep '^Package: ' Packages; 			echo "deb [ trusted=yes ] file://$tempDir ./" > /etc/apt/sources.list.d/temp.list; 			apt-get -o Acquire::GzipIndexes=false update; 			;; 	esac; 		apt-get install -y --no-install-recommends postgresql-common; 	sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf; 	apt-get install -y --no-install-recommends 		"postgresql-$PG_MAJOR=$PG_VERSION" 	; 		rm -rf /var/lib/apt/lists/*; 		if [ -n "$tempDir" ]; then 		apt-get purge -y --auto-remove; 		rm -rf "$tempDir" /etc/apt/sources.list.d/temp.list; 	fi; 		find /usr -name '*.pyc' -type f -exec bash -c 'for pyc; do dpkg -S "$pyc" &> /dev/null || rm -vf "$pyc"; done' -- '{}' +; 		postgres --version
-# Tue, 30 Nov 2021 05:41:40 GMT
+# Fri, 03 Dec 2021 21:10:50 GMT
 RUN set -eux; 	dpkg-divert --add --rename --divert "/usr/share/postgresql/postgresql.conf.sample.dpkg" "/usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample"; 	cp -v /usr/share/postgresql/postgresql.conf.sample.dpkg /usr/share/postgresql/postgresql.conf.sample; 	ln -sv ../postgresql.conf.sample "/usr/share/postgresql/$PG_MAJOR/"; 	sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample; 	grep -F "listen_addresses = '*'" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 30 Nov 2021 05:41:42 GMT
+# Fri, 03 Dec 2021 21:10:52 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod 2777 /var/run/postgresql
-# Tue, 30 Nov 2021 05:41:43 GMT
+# Fri, 03 Dec 2021 21:10:53 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 30 Nov 2021 05:41:45 GMT
+# Fri, 03 Dec 2021 21:10:55 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA"
-# Tue, 30 Nov 2021 05:41:45 GMT
+# Fri, 03 Dec 2021 21:10:55 GMT
 VOLUME [/var/lib/postgresql/data]
-# Tue, 30 Nov 2021 05:41:45 GMT
+# Fri, 03 Dec 2021 21:10:56 GMT
 COPY file:6e4de9271291e4bdd4a40b73fffe4d6d1aeff033460f5b14d74e948686daa095 in /usr/local/bin/ 
-# Tue, 30 Nov 2021 05:41:46 GMT
+# Fri, 03 Dec 2021 21:10:56 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 30 Nov 2021 05:41:46 GMT
+# Fri, 03 Dec 2021 21:10:56 GMT
 STOPSIGNAL SIGINT
-# Tue, 30 Nov 2021 05:41:46 GMT
+# Fri, 03 Dec 2021 21:10:57 GMT
 EXPOSE 5432
-# Tue, 30 Nov 2021 05:41:47 GMT
+# Fri, 03 Dec 2021 21:10:57 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:08bca22fbffb4e58224e9e4f6a56f1ca5099c002b1aeb6181df63af308a3da58`  
-		Last Modified: Wed, 17 Nov 2021 02:19:09 GMT  
-		Size: 29.6 MB (29630388 bytes)  
+	-	`sha256:df61fb15db6391af55d70bc3c0db3e9014438c81bf802619fb527221adf5e8a8`  
+		Last Modified: Thu, 02 Dec 2021 03:17:58 GMT  
+		Size: 29.6 MB (29630496 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:173240a7e67fd44ecc0ad5edd818557628d50f00c5d2a5f3d580e0a2ac091610`  
-		Last Modified: Wed, 17 Nov 2021 08:20:21 GMT  
-		Size: 4.4 MB (4402817 bytes)  
+	-	`sha256:aead74c300746557e558c9a90ac68d244f2d0a4887452c091df5b13129cb2b9f`  
+		Last Modified: Sat, 04 Dec 2021 00:03:36 GMT  
+		Size: 4.4 MB (4402852 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5442a27e75e2c0fbbf3bcf39b1c33f75d31863490f96ba2f0f1921ef6da25caf`  
-		Last Modified: Wed, 17 Nov 2021 08:20:17 GMT  
-		Size: 1.8 KB (1767 bytes)  
+	-	`sha256:ff24a9c55d840ff572c517a90e96685d72a67060b5e33095553fb562baab18cf`  
+		Last Modified: Sat, 04 Dec 2021 00:03:32 GMT  
+		Size: 1.8 KB (1769 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2054e4460d2a19717dd4a336b47653df9571eda928f0f361edc1ab86244ddcc2`  
-		Last Modified: Tue, 30 Nov 2021 08:33:27 GMT  
-		Size: 1.3 MB (1298194 bytes)  
+	-	`sha256:ff2f2672897c98937e158db018d3d1b122bf326ce588884511581b48ad1a88ff`  
+		Last Modified: Sat, 04 Dec 2021 00:03:33 GMT  
+		Size: 1.3 MB (1298160 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb7d76eb66b099fba3c2444676a5f23198b89f04ca562d92fe3cbad93e17ed6f`  
-		Last Modified: Tue, 30 Nov 2021 08:33:31 GMT  
-		Size: 8.0 MB (8043954 bytes)  
+	-	`sha256:79a1189dc92e0a7d42054bcaba5f31998c46ca53d7c74cede00da57e1ad8e953`  
+		Last Modified: Sat, 04 Dec 2021 00:03:37 GMT  
+		Size: 8.0 MB (8043932 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fde934ccf5b463f3cc67c5e044fdb538461feed010e478a8adb22f25017f220b`  
-		Last Modified: Tue, 30 Nov 2021 08:33:24 GMT  
-		Size: 439.2 KB (439195 bytes)  
+	-	`sha256:6ebf674bd1ad23a8d1eb79e72400b0113c5888197764e12868bb0bf9e8524f35`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
+		Size: 439.2 KB (439177 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0517cbc7ba02213b80d94a9809694781806502aef56896f981df723099874173`  
-		Last Modified: Tue, 30 Nov 2021 08:33:23 GMT  
+	-	`sha256:082848bd27554921aa8011299d5bc6ca85fd6ad7f1c5ceb5a0af2f8d453db000`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5ff4ee65102820557350a5542a9ce98ad5efe0fcb3cf0a382b9ef99f9850a99`  
-		Last Modified: Tue, 30 Nov 2021 08:33:23 GMT  
-		Size: 3.1 KB (3052 bytes)  
+	-	`sha256:77c733c7a0c1c23d143a50ed0a6e48a73f8aac5364a708d48a3ea82b16359311`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
+		Size: 3.1 KB (3054 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d44ee210e0e98afe9468574891e854b1d424b87923108bb695c444c3f5329ca8`  
-		Last Modified: Tue, 30 Nov 2021 08:35:52 GMT  
-		Size: 86.7 MB (86711020 bytes)  
+	-	`sha256:305b83721f080e36e7b4eee2474f33a57d64932b0e9eb68a44259c04db9b5644`  
+		Last Modified: Sat, 04 Dec 2021 00:05:55 GMT  
+		Size: 86.7 MB (86709393 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4d0d4a1893e5a23501124c21d741cfb196c6a9a34650e44ef076bba7b2809a27`  
-		Last Modified: Tue, 30 Nov 2021 08:34:52 GMT  
-		Size: 9.4 KB (9364 bytes)  
+	-	`sha256:a4377df85be8013fd59541767ee0355e8278ec1655bf1fff061dc4c7ee59e348`  
+		Last Modified: Sat, 04 Dec 2021 00:04:56 GMT  
+		Size: 9.4 KB (9362 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bcd544c4c49b8b8da1e32306b5e13b6abbb26b39796028293ab8971624dd45d5`  
-		Last Modified: Tue, 30 Nov 2021 08:34:52 GMT  
+	-	`sha256:2644f6cd97c90d08d3403caf96fa239e87cb9f67a96db8e6f769067b3d732837`  
+		Last Modified: Sat, 04 Dec 2021 00:04:56 GMT  
 		Size: 129.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c14918a9c5e77d2201142f8f42f2709897ebcb4e441467632d4181aa37398587`  
-		Last Modified: Tue, 30 Nov 2021 08:34:52 GMT  
+	-	`sha256:7f4faac74890e118d749ff57a50db8a362ba249cd5be06664da6cdd140b6263a`  
+		Last Modified: Sat, 04 Dec 2021 00:04:56 GMT  
 		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2da75bc19eaee2a5ff0e66fc4d9556e384adbaea95ad67610815baecd4c309d8`  
-		Last Modified: Tue, 30 Nov 2021 08:34:52 GMT  
-		Size: 4.7 KB (4720 bytes)  
+	-	`sha256:d5aa4d84fbf3dab64b7b9634200178954ff9053da9f6c6130ba638474f54097a`  
+		Last Modified: Sat, 04 Dec 2021 00:04:56 GMT  
+		Size: 4.7 KB (4717 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `postgres:13.5` - linux; ppc64le
@@ -26464,7 +26464,7 @@ CMD ["postgres"]
 ## `postgres:13.5-bullseye`
 
 ```console
-$ docker pull postgres@sha256:db905a0955e8a34468f8ab5c6e71a3561baf0ed8996b0387d4a05860d7a32c20
+$ docker pull postgres@sha256:3c6d1cef78fe0c84a79c76f0907aed29895dff661fecd45103f7afe2a055078e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -27086,122 +27086,122 @@ CMD ["postgres"]
 ### `postgres:13.5-bullseye` - linux; mips64le
 
 ```console
-$ docker pull postgres@sha256:0f5e1619e550be0d98252a3855f259c49e149c79bbcf4d6aad506fe58fa4454c
+$ docker pull postgres@sha256:86a7a8f858aad6dfdfb485004f30a6c468213c49576091033600f8512c529cbc
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **130.5 MB (130544885 bytes)**  
+-	Total Size: **130.5 MB (130543326 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:199805fb1048ac2f0e8cd0e3d2f30cee93f3f27d8f860b2671f7140de72f0880`
+-	Image ID: `sha256:d793434eb5bb2fddcd6f0e426b6478aaa7245eb239da2087a33fd9247421e9a4`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Wed, 17 Nov 2021 02:10:13 GMT
-ADD file:10bc783d286d0a800f59d5009e87ecb4651659c82cae1325132756c7c8b1dec0 in / 
-# Wed, 17 Nov 2021 02:10:13 GMT
+# Thu, 02 Dec 2021 03:09:10 GMT
+ADD file:419aff162077eb16923c3ede6455ca86756a929a5a837bc6ac6b8dc67913503a in / 
+# Thu, 02 Dec 2021 03:09:10 GMT
 CMD ["bash"]
-# Wed, 17 Nov 2021 03:38:46 GMT
+# Fri, 03 Dec 2021 19:20:44 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 17 Nov 2021 03:38:48 GMT
+# Fri, 03 Dec 2021 19:20:46 GMT
 RUN set -eux; 	groupadd -r postgres --gid=999; 	useradd -r -g postgres --uid=999 --home-dir=/var/lib/postgresql --shell=/bin/bash postgres; 	mkdir -p /var/lib/postgresql; 	chown -R postgres:postgres /var/lib/postgresql
-# Tue, 30 Nov 2021 03:51:38 GMT
+# Fri, 03 Dec 2021 19:20:46 GMT
 ENV GOSU_VERSION=1.14
-# Tue, 30 Nov 2021 03:51:59 GMT
+# Fri, 03 Dec 2021 19:21:06 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Tue, 30 Nov 2021 03:52:23 GMT
+# Fri, 03 Dec 2021 19:21:31 GMT
 RUN set -eux; 	if [ -f /etc/dpkg/dpkg.cfg.d/docker ]; then 		grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 		sed -ri '/\/usr\/share\/locale/d' /etc/dpkg/dpkg.cfg.d/docker; 		! grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 	fi; 	apt-get update; apt-get install -y --no-install-recommends locales; rm -rf /var/lib/apt/lists/*; 	localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Tue, 30 Nov 2021 03:52:24 GMT
+# Fri, 03 Dec 2021 19:21:31 GMT
 ENV LANG=en_US.utf8
-# Tue, 30 Nov 2021 03:52:36 GMT
+# Fri, 03 Dec 2021 19:21:44 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libnss-wrapper 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 30 Nov 2021 03:52:38 GMT
+# Fri, 03 Dec 2021 19:21:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 30 Nov 2021 03:52:41 GMT
+# Fri, 03 Dec 2021 19:21:48 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	command -v gpgconf > /dev/null && gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Tue, 30 Nov 2021 04:48:48 GMT
+# Fri, 03 Dec 2021 20:17:53 GMT
 ENV PG_MAJOR=13
-# Tue, 30 Nov 2021 04:48:48 GMT
+# Fri, 03 Dec 2021 20:17:53 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/13/bin
-# Tue, 30 Nov 2021 04:48:49 GMT
+# Fri, 03 Dec 2021 20:17:53 GMT
 ENV PG_VERSION=13.5-1.pgdg110+1
-# Tue, 30 Nov 2021 05:41:37 GMT
+# Fri, 03 Dec 2021 21:10:47 GMT
 RUN set -ex; 		export PYTHONDONTWRITEBYTECODE=1; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64 | arm64 | ppc64el) 			echo "deb http://apt.postgresql.org/pub/repos/apt/ bullseye-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 			apt-get update; 			;; 		*) 			echo "deb-src http://apt.postgresql.org/pub/repos/apt/ bullseye-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 						tempDir="$(mktemp -d)"; 			cd "$tempDir"; 						savedAptMark="$(apt-mark showmanual)"; 						apt-get update; 			DEBIAN_FRONTEND=noninteractive 			apt-get build-dep -y 				postgresql-common pgdg-keyring 				"postgresql-$PG_MAJOR=$PG_VERSION" 			; 			DEB_BUILD_OPTIONS="nocheck parallel=$(nproc)" 				apt-get source --compile 					postgresql-common pgdg-keyring 					"postgresql-$PG_MAJOR=$PG_VERSION" 			; 						apt-mark showmanual | xargs apt-mark auto > /dev/null; 			apt-mark manual $savedAptMark; 						ls -lAFh; 			dpkg-scanpackages . > Packages; 			grep '^Package: ' Packages; 			echo "deb [ trusted=yes ] file://$tempDir ./" > /etc/apt/sources.list.d/temp.list; 			apt-get -o Acquire::GzipIndexes=false update; 			;; 	esac; 		apt-get install -y --no-install-recommends postgresql-common; 	sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf; 	apt-get install -y --no-install-recommends 		"postgresql-$PG_MAJOR=$PG_VERSION" 	; 		rm -rf /var/lib/apt/lists/*; 		if [ -n "$tempDir" ]; then 		apt-get purge -y --auto-remove; 		rm -rf "$tempDir" /etc/apt/sources.list.d/temp.list; 	fi; 		find /usr -name '*.pyc' -type f -exec bash -c 'for pyc; do dpkg -S "$pyc" &> /dev/null || rm -vf "$pyc"; done' -- '{}' +; 		postgres --version
-# Tue, 30 Nov 2021 05:41:40 GMT
+# Fri, 03 Dec 2021 21:10:50 GMT
 RUN set -eux; 	dpkg-divert --add --rename --divert "/usr/share/postgresql/postgresql.conf.sample.dpkg" "/usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample"; 	cp -v /usr/share/postgresql/postgresql.conf.sample.dpkg /usr/share/postgresql/postgresql.conf.sample; 	ln -sv ../postgresql.conf.sample "/usr/share/postgresql/$PG_MAJOR/"; 	sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample; 	grep -F "listen_addresses = '*'" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 30 Nov 2021 05:41:42 GMT
+# Fri, 03 Dec 2021 21:10:52 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod 2777 /var/run/postgresql
-# Tue, 30 Nov 2021 05:41:43 GMT
+# Fri, 03 Dec 2021 21:10:53 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 30 Nov 2021 05:41:45 GMT
+# Fri, 03 Dec 2021 21:10:55 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA"
-# Tue, 30 Nov 2021 05:41:45 GMT
+# Fri, 03 Dec 2021 21:10:55 GMT
 VOLUME [/var/lib/postgresql/data]
-# Tue, 30 Nov 2021 05:41:45 GMT
+# Fri, 03 Dec 2021 21:10:56 GMT
 COPY file:6e4de9271291e4bdd4a40b73fffe4d6d1aeff033460f5b14d74e948686daa095 in /usr/local/bin/ 
-# Tue, 30 Nov 2021 05:41:46 GMT
+# Fri, 03 Dec 2021 21:10:56 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 30 Nov 2021 05:41:46 GMT
+# Fri, 03 Dec 2021 21:10:56 GMT
 STOPSIGNAL SIGINT
-# Tue, 30 Nov 2021 05:41:46 GMT
+# Fri, 03 Dec 2021 21:10:57 GMT
 EXPOSE 5432
-# Tue, 30 Nov 2021 05:41:47 GMT
+# Fri, 03 Dec 2021 21:10:57 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:08bca22fbffb4e58224e9e4f6a56f1ca5099c002b1aeb6181df63af308a3da58`  
-		Last Modified: Wed, 17 Nov 2021 02:19:09 GMT  
-		Size: 29.6 MB (29630388 bytes)  
+	-	`sha256:df61fb15db6391af55d70bc3c0db3e9014438c81bf802619fb527221adf5e8a8`  
+		Last Modified: Thu, 02 Dec 2021 03:17:58 GMT  
+		Size: 29.6 MB (29630496 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:173240a7e67fd44ecc0ad5edd818557628d50f00c5d2a5f3d580e0a2ac091610`  
-		Last Modified: Wed, 17 Nov 2021 08:20:21 GMT  
-		Size: 4.4 MB (4402817 bytes)  
+	-	`sha256:aead74c300746557e558c9a90ac68d244f2d0a4887452c091df5b13129cb2b9f`  
+		Last Modified: Sat, 04 Dec 2021 00:03:36 GMT  
+		Size: 4.4 MB (4402852 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5442a27e75e2c0fbbf3bcf39b1c33f75d31863490f96ba2f0f1921ef6da25caf`  
-		Last Modified: Wed, 17 Nov 2021 08:20:17 GMT  
-		Size: 1.8 KB (1767 bytes)  
+	-	`sha256:ff24a9c55d840ff572c517a90e96685d72a67060b5e33095553fb562baab18cf`  
+		Last Modified: Sat, 04 Dec 2021 00:03:32 GMT  
+		Size: 1.8 KB (1769 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2054e4460d2a19717dd4a336b47653df9571eda928f0f361edc1ab86244ddcc2`  
-		Last Modified: Tue, 30 Nov 2021 08:33:27 GMT  
-		Size: 1.3 MB (1298194 bytes)  
+	-	`sha256:ff2f2672897c98937e158db018d3d1b122bf326ce588884511581b48ad1a88ff`  
+		Last Modified: Sat, 04 Dec 2021 00:03:33 GMT  
+		Size: 1.3 MB (1298160 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb7d76eb66b099fba3c2444676a5f23198b89f04ca562d92fe3cbad93e17ed6f`  
-		Last Modified: Tue, 30 Nov 2021 08:33:31 GMT  
-		Size: 8.0 MB (8043954 bytes)  
+	-	`sha256:79a1189dc92e0a7d42054bcaba5f31998c46ca53d7c74cede00da57e1ad8e953`  
+		Last Modified: Sat, 04 Dec 2021 00:03:37 GMT  
+		Size: 8.0 MB (8043932 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fde934ccf5b463f3cc67c5e044fdb538461feed010e478a8adb22f25017f220b`  
-		Last Modified: Tue, 30 Nov 2021 08:33:24 GMT  
-		Size: 439.2 KB (439195 bytes)  
+	-	`sha256:6ebf674bd1ad23a8d1eb79e72400b0113c5888197764e12868bb0bf9e8524f35`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
+		Size: 439.2 KB (439177 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0517cbc7ba02213b80d94a9809694781806502aef56896f981df723099874173`  
-		Last Modified: Tue, 30 Nov 2021 08:33:23 GMT  
+	-	`sha256:082848bd27554921aa8011299d5bc6ca85fd6ad7f1c5ceb5a0af2f8d453db000`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5ff4ee65102820557350a5542a9ce98ad5efe0fcb3cf0a382b9ef99f9850a99`  
-		Last Modified: Tue, 30 Nov 2021 08:33:23 GMT  
-		Size: 3.1 KB (3052 bytes)  
+	-	`sha256:77c733c7a0c1c23d143a50ed0a6e48a73f8aac5364a708d48a3ea82b16359311`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
+		Size: 3.1 KB (3054 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d44ee210e0e98afe9468574891e854b1d424b87923108bb695c444c3f5329ca8`  
-		Last Modified: Tue, 30 Nov 2021 08:35:52 GMT  
-		Size: 86.7 MB (86711020 bytes)  
+	-	`sha256:305b83721f080e36e7b4eee2474f33a57d64932b0e9eb68a44259c04db9b5644`  
+		Last Modified: Sat, 04 Dec 2021 00:05:55 GMT  
+		Size: 86.7 MB (86709393 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4d0d4a1893e5a23501124c21d741cfb196c6a9a34650e44ef076bba7b2809a27`  
-		Last Modified: Tue, 30 Nov 2021 08:34:52 GMT  
-		Size: 9.4 KB (9364 bytes)  
+	-	`sha256:a4377df85be8013fd59541767ee0355e8278ec1655bf1fff061dc4c7ee59e348`  
+		Last Modified: Sat, 04 Dec 2021 00:04:56 GMT  
+		Size: 9.4 KB (9362 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bcd544c4c49b8b8da1e32306b5e13b6abbb26b39796028293ab8971624dd45d5`  
-		Last Modified: Tue, 30 Nov 2021 08:34:52 GMT  
+	-	`sha256:2644f6cd97c90d08d3403caf96fa239e87cb9f67a96db8e6f769067b3d732837`  
+		Last Modified: Sat, 04 Dec 2021 00:04:56 GMT  
 		Size: 129.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c14918a9c5e77d2201142f8f42f2709897ebcb4e441467632d4181aa37398587`  
-		Last Modified: Tue, 30 Nov 2021 08:34:52 GMT  
+	-	`sha256:7f4faac74890e118d749ff57a50db8a362ba249cd5be06664da6cdd140b6263a`  
+		Last Modified: Sat, 04 Dec 2021 00:04:56 GMT  
 		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2da75bc19eaee2a5ff0e66fc4d9556e384adbaea95ad67610815baecd4c309d8`  
-		Last Modified: Tue, 30 Nov 2021 08:34:52 GMT  
-		Size: 4.7 KB (4720 bytes)  
+	-	`sha256:d5aa4d84fbf3dab64b7b9634200178954ff9053da9f6c6130ba638474f54097a`  
+		Last Modified: Sat, 04 Dec 2021 00:04:56 GMT  
+		Size: 4.7 KB (4717 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `postgres:13.5-bullseye` - linux; ppc64le
@@ -27449,7 +27449,7 @@ CMD ["postgres"]
 ## `postgres:14`
 
 ```console
-$ docker pull postgres@sha256:1c06b5e69db18609fcbbc385651cba21962539cd0dddc4f2458e97a6b2b0f43a
+$ docker pull postgres@sha256:f76241d07218561e3d1a334eae6a5bf63c70b49f35ffecb7f020448e30e37390
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -28071,121 +28071,121 @@ CMD ["postgres"]
 ### `postgres:14` - linux; mips64le
 
 ```console
-$ docker pull postgres@sha256:626a00d28e9043d6e38bd967af0b563e874c9434c67004c8e428752d81bae661
+$ docker pull postgres@sha256:8f549f1adc5796b8685c9f516ff51d91854f7b07f3787c8b4e26e987008c96ed
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **131.7 MB (131746938 bytes)**  
+-	Total Size: **131.7 MB (131747243 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8bf6c0920dbf0498ba795a4fc7863bf4c9c05ac89fdd7820f8d04858da679db6`
+-	Image ID: `sha256:df113fa4de88979925b6c1541301efaf67a61e559cc9b4b57653e16559d02794`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Wed, 17 Nov 2021 02:10:13 GMT
-ADD file:10bc783d286d0a800f59d5009e87ecb4651659c82cae1325132756c7c8b1dec0 in / 
-# Wed, 17 Nov 2021 02:10:13 GMT
+# Thu, 02 Dec 2021 03:09:10 GMT
+ADD file:419aff162077eb16923c3ede6455ca86756a929a5a837bc6ac6b8dc67913503a in / 
+# Thu, 02 Dec 2021 03:09:10 GMT
 CMD ["bash"]
-# Wed, 17 Nov 2021 03:38:46 GMT
+# Fri, 03 Dec 2021 19:20:44 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 17 Nov 2021 03:38:48 GMT
+# Fri, 03 Dec 2021 19:20:46 GMT
 RUN set -eux; 	groupadd -r postgres --gid=999; 	useradd -r -g postgres --uid=999 --home-dir=/var/lib/postgresql --shell=/bin/bash postgres; 	mkdir -p /var/lib/postgresql; 	chown -R postgres:postgres /var/lib/postgresql
-# Tue, 30 Nov 2021 03:51:38 GMT
+# Fri, 03 Dec 2021 19:20:46 GMT
 ENV GOSU_VERSION=1.14
-# Tue, 30 Nov 2021 03:51:59 GMT
+# Fri, 03 Dec 2021 19:21:06 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Tue, 30 Nov 2021 03:52:23 GMT
+# Fri, 03 Dec 2021 19:21:31 GMT
 RUN set -eux; 	if [ -f /etc/dpkg/dpkg.cfg.d/docker ]; then 		grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 		sed -ri '/\/usr\/share\/locale/d' /etc/dpkg/dpkg.cfg.d/docker; 		! grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 	fi; 	apt-get update; apt-get install -y --no-install-recommends locales; rm -rf /var/lib/apt/lists/*; 	localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Tue, 30 Nov 2021 03:52:24 GMT
+# Fri, 03 Dec 2021 19:21:31 GMT
 ENV LANG=en_US.utf8
-# Tue, 30 Nov 2021 03:52:36 GMT
+# Fri, 03 Dec 2021 19:21:44 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libnss-wrapper 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 30 Nov 2021 03:52:38 GMT
+# Fri, 03 Dec 2021 19:21:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 30 Nov 2021 03:52:41 GMT
+# Fri, 03 Dec 2021 19:21:48 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	command -v gpgconf > /dev/null && gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Tue, 30 Nov 2021 03:52:41 GMT
+# Fri, 03 Dec 2021 19:21:48 GMT
 ENV PG_MAJOR=14
-# Tue, 30 Nov 2021 03:52:42 GMT
+# Fri, 03 Dec 2021 19:21:49 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/14/bin
-# Tue, 30 Nov 2021 03:52:42 GMT
+# Fri, 03 Dec 2021 19:21:49 GMT
 ENV PG_VERSION=14.1-1.pgdg110+1
-# Tue, 30 Nov 2021 04:48:19 GMT
+# Fri, 03 Dec 2021 20:17:32 GMT
 RUN set -ex; 		export PYTHONDONTWRITEBYTECODE=1; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64 | arm64 | ppc64el) 			echo "deb http://apt.postgresql.org/pub/repos/apt/ bullseye-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 			apt-get update; 			;; 		*) 			echo "deb-src http://apt.postgresql.org/pub/repos/apt/ bullseye-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 						tempDir="$(mktemp -d)"; 			cd "$tempDir"; 						savedAptMark="$(apt-mark showmanual)"; 						apt-get update; 			apt-get build-dep -y 				postgresql-common pgdg-keyring 				"postgresql-$PG_MAJOR=$PG_VERSION" 			; 			DEB_BUILD_OPTIONS="nocheck parallel=$(nproc)" 				apt-get source --compile 					postgresql-common pgdg-keyring 					"postgresql-$PG_MAJOR=$PG_VERSION" 			; 						apt-mark showmanual | xargs apt-mark auto > /dev/null; 			apt-mark manual $savedAptMark; 						ls -lAFh; 			dpkg-scanpackages . > Packages; 			grep '^Package: ' Packages; 			echo "deb [ trusted=yes ] file://$tempDir ./" > /etc/apt/sources.list.d/temp.list; 			apt-get -o Acquire::GzipIndexes=false update; 			;; 	esac; 		apt-get install -y --no-install-recommends postgresql-common; 	sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf; 	apt-get install -y --no-install-recommends 		"postgresql-$PG_MAJOR=$PG_VERSION" 	; 		rm -rf /var/lib/apt/lists/*; 		if [ -n "$tempDir" ]; then 		apt-get purge -y --auto-remove; 		rm -rf "$tempDir" /etc/apt/sources.list.d/temp.list; 	fi; 		find /usr -name '*.pyc' -type f -exec bash -c 'for pyc; do dpkg -S "$pyc" &> /dev/null || rm -vf "$pyc"; done' -- '{}' +; 		postgres --version
-# Tue, 30 Nov 2021 04:48:22 GMT
+# Fri, 03 Dec 2021 20:17:35 GMT
 RUN set -eux; 	dpkg-divert --add --rename --divert "/usr/share/postgresql/postgresql.conf.sample.dpkg" "/usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample"; 	cp -v /usr/share/postgresql/postgresql.conf.sample.dpkg /usr/share/postgresql/postgresql.conf.sample; 	ln -sv ../postgresql.conf.sample "/usr/share/postgresql/$PG_MAJOR/"; 	sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample; 	grep -F "listen_addresses = '*'" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 30 Nov 2021 04:48:28 GMT
+# Fri, 03 Dec 2021 20:17:37 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod 2777 /var/run/postgresql
-# Tue, 30 Nov 2021 04:48:28 GMT
+# Fri, 03 Dec 2021 20:17:38 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 30 Nov 2021 04:48:30 GMT
+# Fri, 03 Dec 2021 20:17:40 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA"
-# Tue, 30 Nov 2021 04:48:31 GMT
+# Fri, 03 Dec 2021 20:17:40 GMT
 VOLUME [/var/lib/postgresql/data]
-# Tue, 30 Nov 2021 04:48:31 GMT
+# Fri, 03 Dec 2021 20:17:41 GMT
 COPY file:6e4de9271291e4bdd4a40b73fffe4d6d1aeff033460f5b14d74e948686daa095 in /usr/local/bin/ 
-# Tue, 30 Nov 2021 04:48:32 GMT
+# Fri, 03 Dec 2021 20:17:41 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 30 Nov 2021 04:48:32 GMT
+# Fri, 03 Dec 2021 20:17:41 GMT
 STOPSIGNAL SIGINT
-# Tue, 30 Nov 2021 04:48:32 GMT
+# Fri, 03 Dec 2021 20:17:42 GMT
 EXPOSE 5432
-# Tue, 30 Nov 2021 04:48:33 GMT
+# Fri, 03 Dec 2021 20:17:42 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:08bca22fbffb4e58224e9e4f6a56f1ca5099c002b1aeb6181df63af308a3da58`  
-		Last Modified: Wed, 17 Nov 2021 02:19:09 GMT  
-		Size: 29.6 MB (29630388 bytes)  
+	-	`sha256:df61fb15db6391af55d70bc3c0db3e9014438c81bf802619fb527221adf5e8a8`  
+		Last Modified: Thu, 02 Dec 2021 03:17:58 GMT  
+		Size: 29.6 MB (29630496 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:173240a7e67fd44ecc0ad5edd818557628d50f00c5d2a5f3d580e0a2ac091610`  
-		Last Modified: Wed, 17 Nov 2021 08:20:21 GMT  
-		Size: 4.4 MB (4402817 bytes)  
+	-	`sha256:aead74c300746557e558c9a90ac68d244f2d0a4887452c091df5b13129cb2b9f`  
+		Last Modified: Sat, 04 Dec 2021 00:03:36 GMT  
+		Size: 4.4 MB (4402852 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5442a27e75e2c0fbbf3bcf39b1c33f75d31863490f96ba2f0f1921ef6da25caf`  
-		Last Modified: Wed, 17 Nov 2021 08:20:17 GMT  
-		Size: 1.8 KB (1767 bytes)  
+	-	`sha256:ff24a9c55d840ff572c517a90e96685d72a67060b5e33095553fb562baab18cf`  
+		Last Modified: Sat, 04 Dec 2021 00:03:32 GMT  
+		Size: 1.8 KB (1769 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2054e4460d2a19717dd4a336b47653df9571eda928f0f361edc1ab86244ddcc2`  
-		Last Modified: Tue, 30 Nov 2021 08:33:27 GMT  
-		Size: 1.3 MB (1298194 bytes)  
+	-	`sha256:ff2f2672897c98937e158db018d3d1b122bf326ce588884511581b48ad1a88ff`  
+		Last Modified: Sat, 04 Dec 2021 00:03:33 GMT  
+		Size: 1.3 MB (1298160 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb7d76eb66b099fba3c2444676a5f23198b89f04ca562d92fe3cbad93e17ed6f`  
-		Last Modified: Tue, 30 Nov 2021 08:33:31 GMT  
-		Size: 8.0 MB (8043954 bytes)  
+	-	`sha256:79a1189dc92e0a7d42054bcaba5f31998c46ca53d7c74cede00da57e1ad8e953`  
+		Last Modified: Sat, 04 Dec 2021 00:03:37 GMT  
+		Size: 8.0 MB (8043932 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fde934ccf5b463f3cc67c5e044fdb538461feed010e478a8adb22f25017f220b`  
-		Last Modified: Tue, 30 Nov 2021 08:33:24 GMT  
-		Size: 439.2 KB (439195 bytes)  
+	-	`sha256:6ebf674bd1ad23a8d1eb79e72400b0113c5888197764e12868bb0bf9e8524f35`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
+		Size: 439.2 KB (439177 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0517cbc7ba02213b80d94a9809694781806502aef56896f981df723099874173`  
-		Last Modified: Tue, 30 Nov 2021 08:33:23 GMT  
+	-	`sha256:082848bd27554921aa8011299d5bc6ca85fd6ad7f1c5ceb5a0af2f8d453db000`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5ff4ee65102820557350a5542a9ce98ad5efe0fcb3cf0a382b9ef99f9850a99`  
-		Last Modified: Tue, 30 Nov 2021 08:33:23 GMT  
-		Size: 3.1 KB (3052 bytes)  
+	-	`sha256:77c733c7a0c1c23d143a50ed0a6e48a73f8aac5364a708d48a3ea82b16359311`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
+		Size: 3.1 KB (3054 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fbf94935d67b1e559293359f341d792b86550ddcee61e250e71d018d40f0914d`  
-		Last Modified: Tue, 30 Nov 2021 08:34:22 GMT  
-		Size: 87.9 MB (87912904 bytes)  
+	-	`sha256:baea0b9d66fdf23965574a0a0a745a9c4dfb4c5bea773470308d847180a2b37b`  
+		Last Modified: Sat, 04 Dec 2021 00:04:28 GMT  
+		Size: 87.9 MB (87913130 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d701ee6ea6f9ab303cbbd384c0ed4571e7b947fb223dad2ee212464d15f2d75d`  
-		Last Modified: Tue, 30 Nov 2021 08:33:21 GMT  
-		Size: 9.5 KB (9532 bytes)  
+	-	`sha256:e7dd8c780130b361ccc81662c627871ebb3b1faf9969deb03419b4380c3e0c48`  
+		Last Modified: Sat, 04 Dec 2021 00:03:26 GMT  
+		Size: 9.5 KB (9539 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:069952f14e8c9fad9162942b8325253c9d85cabafc65cc928d7bef15cc7ff330`  
-		Last Modified: Tue, 30 Nov 2021 08:33:21 GMT  
-		Size: 130.0 B  
+	-	`sha256:2800f386c196ba48f74801f09f7e7992fc75a50642fddb051b31fd48a2ae0518`  
+		Last Modified: Sat, 04 Dec 2021 00:03:26 GMT  
+		Size: 129.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd9048a6cbcc1c354cd74e0dbec9c2c96cbfd95bb0c42c3161fcd408ffb28038`  
-		Last Modified: Tue, 30 Nov 2021 08:33:21 GMT  
+	-	`sha256:34d7fea6f2d1874f7a3c57743e055e3ddf4c9f3a09c7804b704fc6e548cda6c5`  
+		Last Modified: Sat, 04 Dec 2021 00:03:26 GMT  
 		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ffd49dbf0018bb29263c66ed04c43a3a930fb03b11ea22bb3399b9c53f8a8ee4`  
-		Last Modified: Tue, 30 Nov 2021 08:33:21 GMT  
+	-	`sha256:b7b1f5671cf56202f350a6e1a06cd5178e95168bc2d2d45729c249a449fa74aa`  
+		Last Modified: Sat, 04 Dec 2021 00:03:26 GMT  
 		Size: 4.7 KB (4719 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -29712,7 +29712,7 @@ CMD ["postgres"]
 ## `postgres:14-bullseye`
 
 ```console
-$ docker pull postgres@sha256:1c06b5e69db18609fcbbc385651cba21962539cd0dddc4f2458e97a6b2b0f43a
+$ docker pull postgres@sha256:f76241d07218561e3d1a334eae6a5bf63c70b49f35ffecb7f020448e30e37390
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -30334,121 +30334,121 @@ CMD ["postgres"]
 ### `postgres:14-bullseye` - linux; mips64le
 
 ```console
-$ docker pull postgres@sha256:626a00d28e9043d6e38bd967af0b563e874c9434c67004c8e428752d81bae661
+$ docker pull postgres@sha256:8f549f1adc5796b8685c9f516ff51d91854f7b07f3787c8b4e26e987008c96ed
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **131.7 MB (131746938 bytes)**  
+-	Total Size: **131.7 MB (131747243 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8bf6c0920dbf0498ba795a4fc7863bf4c9c05ac89fdd7820f8d04858da679db6`
+-	Image ID: `sha256:df113fa4de88979925b6c1541301efaf67a61e559cc9b4b57653e16559d02794`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Wed, 17 Nov 2021 02:10:13 GMT
-ADD file:10bc783d286d0a800f59d5009e87ecb4651659c82cae1325132756c7c8b1dec0 in / 
-# Wed, 17 Nov 2021 02:10:13 GMT
+# Thu, 02 Dec 2021 03:09:10 GMT
+ADD file:419aff162077eb16923c3ede6455ca86756a929a5a837bc6ac6b8dc67913503a in / 
+# Thu, 02 Dec 2021 03:09:10 GMT
 CMD ["bash"]
-# Wed, 17 Nov 2021 03:38:46 GMT
+# Fri, 03 Dec 2021 19:20:44 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 17 Nov 2021 03:38:48 GMT
+# Fri, 03 Dec 2021 19:20:46 GMT
 RUN set -eux; 	groupadd -r postgres --gid=999; 	useradd -r -g postgres --uid=999 --home-dir=/var/lib/postgresql --shell=/bin/bash postgres; 	mkdir -p /var/lib/postgresql; 	chown -R postgres:postgres /var/lib/postgresql
-# Tue, 30 Nov 2021 03:51:38 GMT
+# Fri, 03 Dec 2021 19:20:46 GMT
 ENV GOSU_VERSION=1.14
-# Tue, 30 Nov 2021 03:51:59 GMT
+# Fri, 03 Dec 2021 19:21:06 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Tue, 30 Nov 2021 03:52:23 GMT
+# Fri, 03 Dec 2021 19:21:31 GMT
 RUN set -eux; 	if [ -f /etc/dpkg/dpkg.cfg.d/docker ]; then 		grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 		sed -ri '/\/usr\/share\/locale/d' /etc/dpkg/dpkg.cfg.d/docker; 		! grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 	fi; 	apt-get update; apt-get install -y --no-install-recommends locales; rm -rf /var/lib/apt/lists/*; 	localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Tue, 30 Nov 2021 03:52:24 GMT
+# Fri, 03 Dec 2021 19:21:31 GMT
 ENV LANG=en_US.utf8
-# Tue, 30 Nov 2021 03:52:36 GMT
+# Fri, 03 Dec 2021 19:21:44 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libnss-wrapper 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 30 Nov 2021 03:52:38 GMT
+# Fri, 03 Dec 2021 19:21:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 30 Nov 2021 03:52:41 GMT
+# Fri, 03 Dec 2021 19:21:48 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	command -v gpgconf > /dev/null && gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Tue, 30 Nov 2021 03:52:41 GMT
+# Fri, 03 Dec 2021 19:21:48 GMT
 ENV PG_MAJOR=14
-# Tue, 30 Nov 2021 03:52:42 GMT
+# Fri, 03 Dec 2021 19:21:49 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/14/bin
-# Tue, 30 Nov 2021 03:52:42 GMT
+# Fri, 03 Dec 2021 19:21:49 GMT
 ENV PG_VERSION=14.1-1.pgdg110+1
-# Tue, 30 Nov 2021 04:48:19 GMT
+# Fri, 03 Dec 2021 20:17:32 GMT
 RUN set -ex; 		export PYTHONDONTWRITEBYTECODE=1; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64 | arm64 | ppc64el) 			echo "deb http://apt.postgresql.org/pub/repos/apt/ bullseye-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 			apt-get update; 			;; 		*) 			echo "deb-src http://apt.postgresql.org/pub/repos/apt/ bullseye-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 						tempDir="$(mktemp -d)"; 			cd "$tempDir"; 						savedAptMark="$(apt-mark showmanual)"; 						apt-get update; 			apt-get build-dep -y 				postgresql-common pgdg-keyring 				"postgresql-$PG_MAJOR=$PG_VERSION" 			; 			DEB_BUILD_OPTIONS="nocheck parallel=$(nproc)" 				apt-get source --compile 					postgresql-common pgdg-keyring 					"postgresql-$PG_MAJOR=$PG_VERSION" 			; 						apt-mark showmanual | xargs apt-mark auto > /dev/null; 			apt-mark manual $savedAptMark; 						ls -lAFh; 			dpkg-scanpackages . > Packages; 			grep '^Package: ' Packages; 			echo "deb [ trusted=yes ] file://$tempDir ./" > /etc/apt/sources.list.d/temp.list; 			apt-get -o Acquire::GzipIndexes=false update; 			;; 	esac; 		apt-get install -y --no-install-recommends postgresql-common; 	sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf; 	apt-get install -y --no-install-recommends 		"postgresql-$PG_MAJOR=$PG_VERSION" 	; 		rm -rf /var/lib/apt/lists/*; 		if [ -n "$tempDir" ]; then 		apt-get purge -y --auto-remove; 		rm -rf "$tempDir" /etc/apt/sources.list.d/temp.list; 	fi; 		find /usr -name '*.pyc' -type f -exec bash -c 'for pyc; do dpkg -S "$pyc" &> /dev/null || rm -vf "$pyc"; done' -- '{}' +; 		postgres --version
-# Tue, 30 Nov 2021 04:48:22 GMT
+# Fri, 03 Dec 2021 20:17:35 GMT
 RUN set -eux; 	dpkg-divert --add --rename --divert "/usr/share/postgresql/postgresql.conf.sample.dpkg" "/usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample"; 	cp -v /usr/share/postgresql/postgresql.conf.sample.dpkg /usr/share/postgresql/postgresql.conf.sample; 	ln -sv ../postgresql.conf.sample "/usr/share/postgresql/$PG_MAJOR/"; 	sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample; 	grep -F "listen_addresses = '*'" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 30 Nov 2021 04:48:28 GMT
+# Fri, 03 Dec 2021 20:17:37 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod 2777 /var/run/postgresql
-# Tue, 30 Nov 2021 04:48:28 GMT
+# Fri, 03 Dec 2021 20:17:38 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 30 Nov 2021 04:48:30 GMT
+# Fri, 03 Dec 2021 20:17:40 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA"
-# Tue, 30 Nov 2021 04:48:31 GMT
+# Fri, 03 Dec 2021 20:17:40 GMT
 VOLUME [/var/lib/postgresql/data]
-# Tue, 30 Nov 2021 04:48:31 GMT
+# Fri, 03 Dec 2021 20:17:41 GMT
 COPY file:6e4de9271291e4bdd4a40b73fffe4d6d1aeff033460f5b14d74e948686daa095 in /usr/local/bin/ 
-# Tue, 30 Nov 2021 04:48:32 GMT
+# Fri, 03 Dec 2021 20:17:41 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 30 Nov 2021 04:48:32 GMT
+# Fri, 03 Dec 2021 20:17:41 GMT
 STOPSIGNAL SIGINT
-# Tue, 30 Nov 2021 04:48:32 GMT
+# Fri, 03 Dec 2021 20:17:42 GMT
 EXPOSE 5432
-# Tue, 30 Nov 2021 04:48:33 GMT
+# Fri, 03 Dec 2021 20:17:42 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:08bca22fbffb4e58224e9e4f6a56f1ca5099c002b1aeb6181df63af308a3da58`  
-		Last Modified: Wed, 17 Nov 2021 02:19:09 GMT  
-		Size: 29.6 MB (29630388 bytes)  
+	-	`sha256:df61fb15db6391af55d70bc3c0db3e9014438c81bf802619fb527221adf5e8a8`  
+		Last Modified: Thu, 02 Dec 2021 03:17:58 GMT  
+		Size: 29.6 MB (29630496 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:173240a7e67fd44ecc0ad5edd818557628d50f00c5d2a5f3d580e0a2ac091610`  
-		Last Modified: Wed, 17 Nov 2021 08:20:21 GMT  
-		Size: 4.4 MB (4402817 bytes)  
+	-	`sha256:aead74c300746557e558c9a90ac68d244f2d0a4887452c091df5b13129cb2b9f`  
+		Last Modified: Sat, 04 Dec 2021 00:03:36 GMT  
+		Size: 4.4 MB (4402852 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5442a27e75e2c0fbbf3bcf39b1c33f75d31863490f96ba2f0f1921ef6da25caf`  
-		Last Modified: Wed, 17 Nov 2021 08:20:17 GMT  
-		Size: 1.8 KB (1767 bytes)  
+	-	`sha256:ff24a9c55d840ff572c517a90e96685d72a67060b5e33095553fb562baab18cf`  
+		Last Modified: Sat, 04 Dec 2021 00:03:32 GMT  
+		Size: 1.8 KB (1769 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2054e4460d2a19717dd4a336b47653df9571eda928f0f361edc1ab86244ddcc2`  
-		Last Modified: Tue, 30 Nov 2021 08:33:27 GMT  
-		Size: 1.3 MB (1298194 bytes)  
+	-	`sha256:ff2f2672897c98937e158db018d3d1b122bf326ce588884511581b48ad1a88ff`  
+		Last Modified: Sat, 04 Dec 2021 00:03:33 GMT  
+		Size: 1.3 MB (1298160 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb7d76eb66b099fba3c2444676a5f23198b89f04ca562d92fe3cbad93e17ed6f`  
-		Last Modified: Tue, 30 Nov 2021 08:33:31 GMT  
-		Size: 8.0 MB (8043954 bytes)  
+	-	`sha256:79a1189dc92e0a7d42054bcaba5f31998c46ca53d7c74cede00da57e1ad8e953`  
+		Last Modified: Sat, 04 Dec 2021 00:03:37 GMT  
+		Size: 8.0 MB (8043932 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fde934ccf5b463f3cc67c5e044fdb538461feed010e478a8adb22f25017f220b`  
-		Last Modified: Tue, 30 Nov 2021 08:33:24 GMT  
-		Size: 439.2 KB (439195 bytes)  
+	-	`sha256:6ebf674bd1ad23a8d1eb79e72400b0113c5888197764e12868bb0bf9e8524f35`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
+		Size: 439.2 KB (439177 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0517cbc7ba02213b80d94a9809694781806502aef56896f981df723099874173`  
-		Last Modified: Tue, 30 Nov 2021 08:33:23 GMT  
+	-	`sha256:082848bd27554921aa8011299d5bc6ca85fd6ad7f1c5ceb5a0af2f8d453db000`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5ff4ee65102820557350a5542a9ce98ad5efe0fcb3cf0a382b9ef99f9850a99`  
-		Last Modified: Tue, 30 Nov 2021 08:33:23 GMT  
-		Size: 3.1 KB (3052 bytes)  
+	-	`sha256:77c733c7a0c1c23d143a50ed0a6e48a73f8aac5364a708d48a3ea82b16359311`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
+		Size: 3.1 KB (3054 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fbf94935d67b1e559293359f341d792b86550ddcee61e250e71d018d40f0914d`  
-		Last Modified: Tue, 30 Nov 2021 08:34:22 GMT  
-		Size: 87.9 MB (87912904 bytes)  
+	-	`sha256:baea0b9d66fdf23965574a0a0a745a9c4dfb4c5bea773470308d847180a2b37b`  
+		Last Modified: Sat, 04 Dec 2021 00:04:28 GMT  
+		Size: 87.9 MB (87913130 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d701ee6ea6f9ab303cbbd384c0ed4571e7b947fb223dad2ee212464d15f2d75d`  
-		Last Modified: Tue, 30 Nov 2021 08:33:21 GMT  
-		Size: 9.5 KB (9532 bytes)  
+	-	`sha256:e7dd8c780130b361ccc81662c627871ebb3b1faf9969deb03419b4380c3e0c48`  
+		Last Modified: Sat, 04 Dec 2021 00:03:26 GMT  
+		Size: 9.5 KB (9539 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:069952f14e8c9fad9162942b8325253c9d85cabafc65cc928d7bef15cc7ff330`  
-		Last Modified: Tue, 30 Nov 2021 08:33:21 GMT  
-		Size: 130.0 B  
+	-	`sha256:2800f386c196ba48f74801f09f7e7992fc75a50642fddb051b31fd48a2ae0518`  
+		Last Modified: Sat, 04 Dec 2021 00:03:26 GMT  
+		Size: 129.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd9048a6cbcc1c354cd74e0dbec9c2c96cbfd95bb0c42c3161fcd408ffb28038`  
-		Last Modified: Tue, 30 Nov 2021 08:33:21 GMT  
+	-	`sha256:34d7fea6f2d1874f7a3c57743e055e3ddf4c9f3a09c7804b704fc6e548cda6c5`  
+		Last Modified: Sat, 04 Dec 2021 00:03:26 GMT  
 		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ffd49dbf0018bb29263c66ed04c43a3a930fb03b11ea22bb3399b9c53f8a8ee4`  
-		Last Modified: Tue, 30 Nov 2021 08:33:21 GMT  
+	-	`sha256:b7b1f5671cf56202f350a6e1a06cd5178e95168bc2d2d45729c249a449fa74aa`  
+		Last Modified: Sat, 04 Dec 2021 00:03:26 GMT  
 		Size: 4.7 KB (4719 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -30697,7 +30697,7 @@ CMD ["postgres"]
 ## `postgres:14.1`
 
 ```console
-$ docker pull postgres@sha256:1c06b5e69db18609fcbbc385651cba21962539cd0dddc4f2458e97a6b2b0f43a
+$ docker pull postgres@sha256:f76241d07218561e3d1a334eae6a5bf63c70b49f35ffecb7f020448e30e37390
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -31319,121 +31319,121 @@ CMD ["postgres"]
 ### `postgres:14.1` - linux; mips64le
 
 ```console
-$ docker pull postgres@sha256:626a00d28e9043d6e38bd967af0b563e874c9434c67004c8e428752d81bae661
+$ docker pull postgres@sha256:8f549f1adc5796b8685c9f516ff51d91854f7b07f3787c8b4e26e987008c96ed
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **131.7 MB (131746938 bytes)**  
+-	Total Size: **131.7 MB (131747243 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8bf6c0920dbf0498ba795a4fc7863bf4c9c05ac89fdd7820f8d04858da679db6`
+-	Image ID: `sha256:df113fa4de88979925b6c1541301efaf67a61e559cc9b4b57653e16559d02794`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Wed, 17 Nov 2021 02:10:13 GMT
-ADD file:10bc783d286d0a800f59d5009e87ecb4651659c82cae1325132756c7c8b1dec0 in / 
-# Wed, 17 Nov 2021 02:10:13 GMT
+# Thu, 02 Dec 2021 03:09:10 GMT
+ADD file:419aff162077eb16923c3ede6455ca86756a929a5a837bc6ac6b8dc67913503a in / 
+# Thu, 02 Dec 2021 03:09:10 GMT
 CMD ["bash"]
-# Wed, 17 Nov 2021 03:38:46 GMT
+# Fri, 03 Dec 2021 19:20:44 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 17 Nov 2021 03:38:48 GMT
+# Fri, 03 Dec 2021 19:20:46 GMT
 RUN set -eux; 	groupadd -r postgres --gid=999; 	useradd -r -g postgres --uid=999 --home-dir=/var/lib/postgresql --shell=/bin/bash postgres; 	mkdir -p /var/lib/postgresql; 	chown -R postgres:postgres /var/lib/postgresql
-# Tue, 30 Nov 2021 03:51:38 GMT
+# Fri, 03 Dec 2021 19:20:46 GMT
 ENV GOSU_VERSION=1.14
-# Tue, 30 Nov 2021 03:51:59 GMT
+# Fri, 03 Dec 2021 19:21:06 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Tue, 30 Nov 2021 03:52:23 GMT
+# Fri, 03 Dec 2021 19:21:31 GMT
 RUN set -eux; 	if [ -f /etc/dpkg/dpkg.cfg.d/docker ]; then 		grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 		sed -ri '/\/usr\/share\/locale/d' /etc/dpkg/dpkg.cfg.d/docker; 		! grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 	fi; 	apt-get update; apt-get install -y --no-install-recommends locales; rm -rf /var/lib/apt/lists/*; 	localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Tue, 30 Nov 2021 03:52:24 GMT
+# Fri, 03 Dec 2021 19:21:31 GMT
 ENV LANG=en_US.utf8
-# Tue, 30 Nov 2021 03:52:36 GMT
+# Fri, 03 Dec 2021 19:21:44 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libnss-wrapper 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 30 Nov 2021 03:52:38 GMT
+# Fri, 03 Dec 2021 19:21:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 30 Nov 2021 03:52:41 GMT
+# Fri, 03 Dec 2021 19:21:48 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	command -v gpgconf > /dev/null && gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Tue, 30 Nov 2021 03:52:41 GMT
+# Fri, 03 Dec 2021 19:21:48 GMT
 ENV PG_MAJOR=14
-# Tue, 30 Nov 2021 03:52:42 GMT
+# Fri, 03 Dec 2021 19:21:49 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/14/bin
-# Tue, 30 Nov 2021 03:52:42 GMT
+# Fri, 03 Dec 2021 19:21:49 GMT
 ENV PG_VERSION=14.1-1.pgdg110+1
-# Tue, 30 Nov 2021 04:48:19 GMT
+# Fri, 03 Dec 2021 20:17:32 GMT
 RUN set -ex; 		export PYTHONDONTWRITEBYTECODE=1; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64 | arm64 | ppc64el) 			echo "deb http://apt.postgresql.org/pub/repos/apt/ bullseye-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 			apt-get update; 			;; 		*) 			echo "deb-src http://apt.postgresql.org/pub/repos/apt/ bullseye-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 						tempDir="$(mktemp -d)"; 			cd "$tempDir"; 						savedAptMark="$(apt-mark showmanual)"; 						apt-get update; 			apt-get build-dep -y 				postgresql-common pgdg-keyring 				"postgresql-$PG_MAJOR=$PG_VERSION" 			; 			DEB_BUILD_OPTIONS="nocheck parallel=$(nproc)" 				apt-get source --compile 					postgresql-common pgdg-keyring 					"postgresql-$PG_MAJOR=$PG_VERSION" 			; 						apt-mark showmanual | xargs apt-mark auto > /dev/null; 			apt-mark manual $savedAptMark; 						ls -lAFh; 			dpkg-scanpackages . > Packages; 			grep '^Package: ' Packages; 			echo "deb [ trusted=yes ] file://$tempDir ./" > /etc/apt/sources.list.d/temp.list; 			apt-get -o Acquire::GzipIndexes=false update; 			;; 	esac; 		apt-get install -y --no-install-recommends postgresql-common; 	sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf; 	apt-get install -y --no-install-recommends 		"postgresql-$PG_MAJOR=$PG_VERSION" 	; 		rm -rf /var/lib/apt/lists/*; 		if [ -n "$tempDir" ]; then 		apt-get purge -y --auto-remove; 		rm -rf "$tempDir" /etc/apt/sources.list.d/temp.list; 	fi; 		find /usr -name '*.pyc' -type f -exec bash -c 'for pyc; do dpkg -S "$pyc" &> /dev/null || rm -vf "$pyc"; done' -- '{}' +; 		postgres --version
-# Tue, 30 Nov 2021 04:48:22 GMT
+# Fri, 03 Dec 2021 20:17:35 GMT
 RUN set -eux; 	dpkg-divert --add --rename --divert "/usr/share/postgresql/postgresql.conf.sample.dpkg" "/usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample"; 	cp -v /usr/share/postgresql/postgresql.conf.sample.dpkg /usr/share/postgresql/postgresql.conf.sample; 	ln -sv ../postgresql.conf.sample "/usr/share/postgresql/$PG_MAJOR/"; 	sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample; 	grep -F "listen_addresses = '*'" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 30 Nov 2021 04:48:28 GMT
+# Fri, 03 Dec 2021 20:17:37 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod 2777 /var/run/postgresql
-# Tue, 30 Nov 2021 04:48:28 GMT
+# Fri, 03 Dec 2021 20:17:38 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 30 Nov 2021 04:48:30 GMT
+# Fri, 03 Dec 2021 20:17:40 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA"
-# Tue, 30 Nov 2021 04:48:31 GMT
+# Fri, 03 Dec 2021 20:17:40 GMT
 VOLUME [/var/lib/postgresql/data]
-# Tue, 30 Nov 2021 04:48:31 GMT
+# Fri, 03 Dec 2021 20:17:41 GMT
 COPY file:6e4de9271291e4bdd4a40b73fffe4d6d1aeff033460f5b14d74e948686daa095 in /usr/local/bin/ 
-# Tue, 30 Nov 2021 04:48:32 GMT
+# Fri, 03 Dec 2021 20:17:41 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 30 Nov 2021 04:48:32 GMT
+# Fri, 03 Dec 2021 20:17:41 GMT
 STOPSIGNAL SIGINT
-# Tue, 30 Nov 2021 04:48:32 GMT
+# Fri, 03 Dec 2021 20:17:42 GMT
 EXPOSE 5432
-# Tue, 30 Nov 2021 04:48:33 GMT
+# Fri, 03 Dec 2021 20:17:42 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:08bca22fbffb4e58224e9e4f6a56f1ca5099c002b1aeb6181df63af308a3da58`  
-		Last Modified: Wed, 17 Nov 2021 02:19:09 GMT  
-		Size: 29.6 MB (29630388 bytes)  
+	-	`sha256:df61fb15db6391af55d70bc3c0db3e9014438c81bf802619fb527221adf5e8a8`  
+		Last Modified: Thu, 02 Dec 2021 03:17:58 GMT  
+		Size: 29.6 MB (29630496 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:173240a7e67fd44ecc0ad5edd818557628d50f00c5d2a5f3d580e0a2ac091610`  
-		Last Modified: Wed, 17 Nov 2021 08:20:21 GMT  
-		Size: 4.4 MB (4402817 bytes)  
+	-	`sha256:aead74c300746557e558c9a90ac68d244f2d0a4887452c091df5b13129cb2b9f`  
+		Last Modified: Sat, 04 Dec 2021 00:03:36 GMT  
+		Size: 4.4 MB (4402852 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5442a27e75e2c0fbbf3bcf39b1c33f75d31863490f96ba2f0f1921ef6da25caf`  
-		Last Modified: Wed, 17 Nov 2021 08:20:17 GMT  
-		Size: 1.8 KB (1767 bytes)  
+	-	`sha256:ff24a9c55d840ff572c517a90e96685d72a67060b5e33095553fb562baab18cf`  
+		Last Modified: Sat, 04 Dec 2021 00:03:32 GMT  
+		Size: 1.8 KB (1769 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2054e4460d2a19717dd4a336b47653df9571eda928f0f361edc1ab86244ddcc2`  
-		Last Modified: Tue, 30 Nov 2021 08:33:27 GMT  
-		Size: 1.3 MB (1298194 bytes)  
+	-	`sha256:ff2f2672897c98937e158db018d3d1b122bf326ce588884511581b48ad1a88ff`  
+		Last Modified: Sat, 04 Dec 2021 00:03:33 GMT  
+		Size: 1.3 MB (1298160 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb7d76eb66b099fba3c2444676a5f23198b89f04ca562d92fe3cbad93e17ed6f`  
-		Last Modified: Tue, 30 Nov 2021 08:33:31 GMT  
-		Size: 8.0 MB (8043954 bytes)  
+	-	`sha256:79a1189dc92e0a7d42054bcaba5f31998c46ca53d7c74cede00da57e1ad8e953`  
+		Last Modified: Sat, 04 Dec 2021 00:03:37 GMT  
+		Size: 8.0 MB (8043932 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fde934ccf5b463f3cc67c5e044fdb538461feed010e478a8adb22f25017f220b`  
-		Last Modified: Tue, 30 Nov 2021 08:33:24 GMT  
-		Size: 439.2 KB (439195 bytes)  
+	-	`sha256:6ebf674bd1ad23a8d1eb79e72400b0113c5888197764e12868bb0bf9e8524f35`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
+		Size: 439.2 KB (439177 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0517cbc7ba02213b80d94a9809694781806502aef56896f981df723099874173`  
-		Last Modified: Tue, 30 Nov 2021 08:33:23 GMT  
+	-	`sha256:082848bd27554921aa8011299d5bc6ca85fd6ad7f1c5ceb5a0af2f8d453db000`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5ff4ee65102820557350a5542a9ce98ad5efe0fcb3cf0a382b9ef99f9850a99`  
-		Last Modified: Tue, 30 Nov 2021 08:33:23 GMT  
-		Size: 3.1 KB (3052 bytes)  
+	-	`sha256:77c733c7a0c1c23d143a50ed0a6e48a73f8aac5364a708d48a3ea82b16359311`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
+		Size: 3.1 KB (3054 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fbf94935d67b1e559293359f341d792b86550ddcee61e250e71d018d40f0914d`  
-		Last Modified: Tue, 30 Nov 2021 08:34:22 GMT  
-		Size: 87.9 MB (87912904 bytes)  
+	-	`sha256:baea0b9d66fdf23965574a0a0a745a9c4dfb4c5bea773470308d847180a2b37b`  
+		Last Modified: Sat, 04 Dec 2021 00:04:28 GMT  
+		Size: 87.9 MB (87913130 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d701ee6ea6f9ab303cbbd384c0ed4571e7b947fb223dad2ee212464d15f2d75d`  
-		Last Modified: Tue, 30 Nov 2021 08:33:21 GMT  
-		Size: 9.5 KB (9532 bytes)  
+	-	`sha256:e7dd8c780130b361ccc81662c627871ebb3b1faf9969deb03419b4380c3e0c48`  
+		Last Modified: Sat, 04 Dec 2021 00:03:26 GMT  
+		Size: 9.5 KB (9539 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:069952f14e8c9fad9162942b8325253c9d85cabafc65cc928d7bef15cc7ff330`  
-		Last Modified: Tue, 30 Nov 2021 08:33:21 GMT  
-		Size: 130.0 B  
+	-	`sha256:2800f386c196ba48f74801f09f7e7992fc75a50642fddb051b31fd48a2ae0518`  
+		Last Modified: Sat, 04 Dec 2021 00:03:26 GMT  
+		Size: 129.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd9048a6cbcc1c354cd74e0dbec9c2c96cbfd95bb0c42c3161fcd408ffb28038`  
-		Last Modified: Tue, 30 Nov 2021 08:33:21 GMT  
+	-	`sha256:34d7fea6f2d1874f7a3c57743e055e3ddf4c9f3a09c7804b704fc6e548cda6c5`  
+		Last Modified: Sat, 04 Dec 2021 00:03:26 GMT  
 		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ffd49dbf0018bb29263c66ed04c43a3a930fb03b11ea22bb3399b9c53f8a8ee4`  
-		Last Modified: Tue, 30 Nov 2021 08:33:21 GMT  
+	-	`sha256:b7b1f5671cf56202f350a6e1a06cd5178e95168bc2d2d45729c249a449fa74aa`  
+		Last Modified: Sat, 04 Dec 2021 00:03:26 GMT  
 		Size: 4.7 KB (4719 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -32960,7 +32960,7 @@ CMD ["postgres"]
 ## `postgres:14.1-bullseye`
 
 ```console
-$ docker pull postgres@sha256:1c06b5e69db18609fcbbc385651cba21962539cd0dddc4f2458e97a6b2b0f43a
+$ docker pull postgres@sha256:f76241d07218561e3d1a334eae6a5bf63c70b49f35ffecb7f020448e30e37390
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -33582,121 +33582,121 @@ CMD ["postgres"]
 ### `postgres:14.1-bullseye` - linux; mips64le
 
 ```console
-$ docker pull postgres@sha256:626a00d28e9043d6e38bd967af0b563e874c9434c67004c8e428752d81bae661
+$ docker pull postgres@sha256:8f549f1adc5796b8685c9f516ff51d91854f7b07f3787c8b4e26e987008c96ed
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **131.7 MB (131746938 bytes)**  
+-	Total Size: **131.7 MB (131747243 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8bf6c0920dbf0498ba795a4fc7863bf4c9c05ac89fdd7820f8d04858da679db6`
+-	Image ID: `sha256:df113fa4de88979925b6c1541301efaf67a61e559cc9b4b57653e16559d02794`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Wed, 17 Nov 2021 02:10:13 GMT
-ADD file:10bc783d286d0a800f59d5009e87ecb4651659c82cae1325132756c7c8b1dec0 in / 
-# Wed, 17 Nov 2021 02:10:13 GMT
+# Thu, 02 Dec 2021 03:09:10 GMT
+ADD file:419aff162077eb16923c3ede6455ca86756a929a5a837bc6ac6b8dc67913503a in / 
+# Thu, 02 Dec 2021 03:09:10 GMT
 CMD ["bash"]
-# Wed, 17 Nov 2021 03:38:46 GMT
+# Fri, 03 Dec 2021 19:20:44 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 17 Nov 2021 03:38:48 GMT
+# Fri, 03 Dec 2021 19:20:46 GMT
 RUN set -eux; 	groupadd -r postgres --gid=999; 	useradd -r -g postgres --uid=999 --home-dir=/var/lib/postgresql --shell=/bin/bash postgres; 	mkdir -p /var/lib/postgresql; 	chown -R postgres:postgres /var/lib/postgresql
-# Tue, 30 Nov 2021 03:51:38 GMT
+# Fri, 03 Dec 2021 19:20:46 GMT
 ENV GOSU_VERSION=1.14
-# Tue, 30 Nov 2021 03:51:59 GMT
+# Fri, 03 Dec 2021 19:21:06 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Tue, 30 Nov 2021 03:52:23 GMT
+# Fri, 03 Dec 2021 19:21:31 GMT
 RUN set -eux; 	if [ -f /etc/dpkg/dpkg.cfg.d/docker ]; then 		grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 		sed -ri '/\/usr\/share\/locale/d' /etc/dpkg/dpkg.cfg.d/docker; 		! grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 	fi; 	apt-get update; apt-get install -y --no-install-recommends locales; rm -rf /var/lib/apt/lists/*; 	localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Tue, 30 Nov 2021 03:52:24 GMT
+# Fri, 03 Dec 2021 19:21:31 GMT
 ENV LANG=en_US.utf8
-# Tue, 30 Nov 2021 03:52:36 GMT
+# Fri, 03 Dec 2021 19:21:44 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libnss-wrapper 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 30 Nov 2021 03:52:38 GMT
+# Fri, 03 Dec 2021 19:21:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 30 Nov 2021 03:52:41 GMT
+# Fri, 03 Dec 2021 19:21:48 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	command -v gpgconf > /dev/null && gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Tue, 30 Nov 2021 03:52:41 GMT
+# Fri, 03 Dec 2021 19:21:48 GMT
 ENV PG_MAJOR=14
-# Tue, 30 Nov 2021 03:52:42 GMT
+# Fri, 03 Dec 2021 19:21:49 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/14/bin
-# Tue, 30 Nov 2021 03:52:42 GMT
+# Fri, 03 Dec 2021 19:21:49 GMT
 ENV PG_VERSION=14.1-1.pgdg110+1
-# Tue, 30 Nov 2021 04:48:19 GMT
+# Fri, 03 Dec 2021 20:17:32 GMT
 RUN set -ex; 		export PYTHONDONTWRITEBYTECODE=1; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64 | arm64 | ppc64el) 			echo "deb http://apt.postgresql.org/pub/repos/apt/ bullseye-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 			apt-get update; 			;; 		*) 			echo "deb-src http://apt.postgresql.org/pub/repos/apt/ bullseye-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 						tempDir="$(mktemp -d)"; 			cd "$tempDir"; 						savedAptMark="$(apt-mark showmanual)"; 						apt-get update; 			apt-get build-dep -y 				postgresql-common pgdg-keyring 				"postgresql-$PG_MAJOR=$PG_VERSION" 			; 			DEB_BUILD_OPTIONS="nocheck parallel=$(nproc)" 				apt-get source --compile 					postgresql-common pgdg-keyring 					"postgresql-$PG_MAJOR=$PG_VERSION" 			; 						apt-mark showmanual | xargs apt-mark auto > /dev/null; 			apt-mark manual $savedAptMark; 						ls -lAFh; 			dpkg-scanpackages . > Packages; 			grep '^Package: ' Packages; 			echo "deb [ trusted=yes ] file://$tempDir ./" > /etc/apt/sources.list.d/temp.list; 			apt-get -o Acquire::GzipIndexes=false update; 			;; 	esac; 		apt-get install -y --no-install-recommends postgresql-common; 	sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf; 	apt-get install -y --no-install-recommends 		"postgresql-$PG_MAJOR=$PG_VERSION" 	; 		rm -rf /var/lib/apt/lists/*; 		if [ -n "$tempDir" ]; then 		apt-get purge -y --auto-remove; 		rm -rf "$tempDir" /etc/apt/sources.list.d/temp.list; 	fi; 		find /usr -name '*.pyc' -type f -exec bash -c 'for pyc; do dpkg -S "$pyc" &> /dev/null || rm -vf "$pyc"; done' -- '{}' +; 		postgres --version
-# Tue, 30 Nov 2021 04:48:22 GMT
+# Fri, 03 Dec 2021 20:17:35 GMT
 RUN set -eux; 	dpkg-divert --add --rename --divert "/usr/share/postgresql/postgresql.conf.sample.dpkg" "/usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample"; 	cp -v /usr/share/postgresql/postgresql.conf.sample.dpkg /usr/share/postgresql/postgresql.conf.sample; 	ln -sv ../postgresql.conf.sample "/usr/share/postgresql/$PG_MAJOR/"; 	sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample; 	grep -F "listen_addresses = '*'" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 30 Nov 2021 04:48:28 GMT
+# Fri, 03 Dec 2021 20:17:37 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod 2777 /var/run/postgresql
-# Tue, 30 Nov 2021 04:48:28 GMT
+# Fri, 03 Dec 2021 20:17:38 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 30 Nov 2021 04:48:30 GMT
+# Fri, 03 Dec 2021 20:17:40 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA"
-# Tue, 30 Nov 2021 04:48:31 GMT
+# Fri, 03 Dec 2021 20:17:40 GMT
 VOLUME [/var/lib/postgresql/data]
-# Tue, 30 Nov 2021 04:48:31 GMT
+# Fri, 03 Dec 2021 20:17:41 GMT
 COPY file:6e4de9271291e4bdd4a40b73fffe4d6d1aeff033460f5b14d74e948686daa095 in /usr/local/bin/ 
-# Tue, 30 Nov 2021 04:48:32 GMT
+# Fri, 03 Dec 2021 20:17:41 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 30 Nov 2021 04:48:32 GMT
+# Fri, 03 Dec 2021 20:17:41 GMT
 STOPSIGNAL SIGINT
-# Tue, 30 Nov 2021 04:48:32 GMT
+# Fri, 03 Dec 2021 20:17:42 GMT
 EXPOSE 5432
-# Tue, 30 Nov 2021 04:48:33 GMT
+# Fri, 03 Dec 2021 20:17:42 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:08bca22fbffb4e58224e9e4f6a56f1ca5099c002b1aeb6181df63af308a3da58`  
-		Last Modified: Wed, 17 Nov 2021 02:19:09 GMT  
-		Size: 29.6 MB (29630388 bytes)  
+	-	`sha256:df61fb15db6391af55d70bc3c0db3e9014438c81bf802619fb527221adf5e8a8`  
+		Last Modified: Thu, 02 Dec 2021 03:17:58 GMT  
+		Size: 29.6 MB (29630496 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:173240a7e67fd44ecc0ad5edd818557628d50f00c5d2a5f3d580e0a2ac091610`  
-		Last Modified: Wed, 17 Nov 2021 08:20:21 GMT  
-		Size: 4.4 MB (4402817 bytes)  
+	-	`sha256:aead74c300746557e558c9a90ac68d244f2d0a4887452c091df5b13129cb2b9f`  
+		Last Modified: Sat, 04 Dec 2021 00:03:36 GMT  
+		Size: 4.4 MB (4402852 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5442a27e75e2c0fbbf3bcf39b1c33f75d31863490f96ba2f0f1921ef6da25caf`  
-		Last Modified: Wed, 17 Nov 2021 08:20:17 GMT  
-		Size: 1.8 KB (1767 bytes)  
+	-	`sha256:ff24a9c55d840ff572c517a90e96685d72a67060b5e33095553fb562baab18cf`  
+		Last Modified: Sat, 04 Dec 2021 00:03:32 GMT  
+		Size: 1.8 KB (1769 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2054e4460d2a19717dd4a336b47653df9571eda928f0f361edc1ab86244ddcc2`  
-		Last Modified: Tue, 30 Nov 2021 08:33:27 GMT  
-		Size: 1.3 MB (1298194 bytes)  
+	-	`sha256:ff2f2672897c98937e158db018d3d1b122bf326ce588884511581b48ad1a88ff`  
+		Last Modified: Sat, 04 Dec 2021 00:03:33 GMT  
+		Size: 1.3 MB (1298160 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb7d76eb66b099fba3c2444676a5f23198b89f04ca562d92fe3cbad93e17ed6f`  
-		Last Modified: Tue, 30 Nov 2021 08:33:31 GMT  
-		Size: 8.0 MB (8043954 bytes)  
+	-	`sha256:79a1189dc92e0a7d42054bcaba5f31998c46ca53d7c74cede00da57e1ad8e953`  
+		Last Modified: Sat, 04 Dec 2021 00:03:37 GMT  
+		Size: 8.0 MB (8043932 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fde934ccf5b463f3cc67c5e044fdb538461feed010e478a8adb22f25017f220b`  
-		Last Modified: Tue, 30 Nov 2021 08:33:24 GMT  
-		Size: 439.2 KB (439195 bytes)  
+	-	`sha256:6ebf674bd1ad23a8d1eb79e72400b0113c5888197764e12868bb0bf9e8524f35`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
+		Size: 439.2 KB (439177 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0517cbc7ba02213b80d94a9809694781806502aef56896f981df723099874173`  
-		Last Modified: Tue, 30 Nov 2021 08:33:23 GMT  
+	-	`sha256:082848bd27554921aa8011299d5bc6ca85fd6ad7f1c5ceb5a0af2f8d453db000`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5ff4ee65102820557350a5542a9ce98ad5efe0fcb3cf0a382b9ef99f9850a99`  
-		Last Modified: Tue, 30 Nov 2021 08:33:23 GMT  
-		Size: 3.1 KB (3052 bytes)  
+	-	`sha256:77c733c7a0c1c23d143a50ed0a6e48a73f8aac5364a708d48a3ea82b16359311`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
+		Size: 3.1 KB (3054 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fbf94935d67b1e559293359f341d792b86550ddcee61e250e71d018d40f0914d`  
-		Last Modified: Tue, 30 Nov 2021 08:34:22 GMT  
-		Size: 87.9 MB (87912904 bytes)  
+	-	`sha256:baea0b9d66fdf23965574a0a0a745a9c4dfb4c5bea773470308d847180a2b37b`  
+		Last Modified: Sat, 04 Dec 2021 00:04:28 GMT  
+		Size: 87.9 MB (87913130 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d701ee6ea6f9ab303cbbd384c0ed4571e7b947fb223dad2ee212464d15f2d75d`  
-		Last Modified: Tue, 30 Nov 2021 08:33:21 GMT  
-		Size: 9.5 KB (9532 bytes)  
+	-	`sha256:e7dd8c780130b361ccc81662c627871ebb3b1faf9969deb03419b4380c3e0c48`  
+		Last Modified: Sat, 04 Dec 2021 00:03:26 GMT  
+		Size: 9.5 KB (9539 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:069952f14e8c9fad9162942b8325253c9d85cabafc65cc928d7bef15cc7ff330`  
-		Last Modified: Tue, 30 Nov 2021 08:33:21 GMT  
-		Size: 130.0 B  
+	-	`sha256:2800f386c196ba48f74801f09f7e7992fc75a50642fddb051b31fd48a2ae0518`  
+		Last Modified: Sat, 04 Dec 2021 00:03:26 GMT  
+		Size: 129.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd9048a6cbcc1c354cd74e0dbec9c2c96cbfd95bb0c42c3161fcd408ffb28038`  
-		Last Modified: Tue, 30 Nov 2021 08:33:21 GMT  
+	-	`sha256:34d7fea6f2d1874f7a3c57743e055e3ddf4c9f3a09c7804b704fc6e548cda6c5`  
+		Last Modified: Sat, 04 Dec 2021 00:03:26 GMT  
 		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ffd49dbf0018bb29263c66ed04c43a3a930fb03b11ea22bb3399b9c53f8a8ee4`  
-		Last Modified: Tue, 30 Nov 2021 08:33:21 GMT  
+	-	`sha256:b7b1f5671cf56202f350a6e1a06cd5178e95168bc2d2d45729c249a449fa74aa`  
+		Last Modified: Sat, 04 Dec 2021 00:03:26 GMT  
 		Size: 4.7 KB (4719 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -35956,7 +35956,7 @@ CMD ["postgres"]
 ## `postgres:9-bullseye`
 
 ```console
-$ docker pull postgres@sha256:e267392c15f84dc69d0442a6e6de426aacddaa092073278729197a584b775985
+$ docker pull postgres@sha256:9fbc6d474093086ce7faf0ac16cc2403b1c3315e09a18e081a3e386dd411db7d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -36608,127 +36608,127 @@ CMD ["postgres"]
 ### `postgres:9-bullseye` - linux; mips64le
 
 ```console
-$ docker pull postgres@sha256:786ec89f70a3ea38f2a95e0e2418485eaaedf3b58e645a0771a3fe7661904710
+$ docker pull postgres@sha256:3e97a16385b85a43e0c5aaea2c08bd0ff2e76e8ab2a79263257f5303088f039d
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **82.0 MB (82019806 bytes)**  
+-	Total Size: **82.0 MB (82019744 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:95f066e9afdf022c55507895ad1d8260d6b6ad173526189f84b5abda65578d70`
+-	Image ID: `sha256:01a79e678ce4d4231d2e3867c3e6e91e7ffbc4de909fb4e5ff8a040ebb064cb7`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Wed, 17 Nov 2021 02:10:13 GMT
-ADD file:10bc783d286d0a800f59d5009e87ecb4651659c82cae1325132756c7c8b1dec0 in / 
-# Wed, 17 Nov 2021 02:10:13 GMT
+# Thu, 02 Dec 2021 03:09:10 GMT
+ADD file:419aff162077eb16923c3ede6455ca86756a929a5a837bc6ac6b8dc67913503a in / 
+# Thu, 02 Dec 2021 03:09:10 GMT
 CMD ["bash"]
-# Wed, 17 Nov 2021 03:38:46 GMT
+# Fri, 03 Dec 2021 19:20:44 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 17 Nov 2021 03:38:48 GMT
+# Fri, 03 Dec 2021 19:20:46 GMT
 RUN set -eux; 	groupadd -r postgres --gid=999; 	useradd -r -g postgres --uid=999 --home-dir=/var/lib/postgresql --shell=/bin/bash postgres; 	mkdir -p /var/lib/postgresql; 	chown -R postgres:postgres /var/lib/postgresql
-# Tue, 30 Nov 2021 03:51:38 GMT
+# Fri, 03 Dec 2021 19:20:46 GMT
 ENV GOSU_VERSION=1.14
-# Tue, 30 Nov 2021 03:51:59 GMT
+# Fri, 03 Dec 2021 19:21:06 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Tue, 30 Nov 2021 03:52:23 GMT
+# Fri, 03 Dec 2021 19:21:31 GMT
 RUN set -eux; 	if [ -f /etc/dpkg/dpkg.cfg.d/docker ]; then 		grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 		sed -ri '/\/usr\/share\/locale/d' /etc/dpkg/dpkg.cfg.d/docker; 		! grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 	fi; 	apt-get update; apt-get install -y --no-install-recommends locales; rm -rf /var/lib/apt/lists/*; 	localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Tue, 30 Nov 2021 03:52:24 GMT
+# Fri, 03 Dec 2021 19:21:31 GMT
 ENV LANG=en_US.utf8
-# Tue, 30 Nov 2021 03:52:36 GMT
+# Fri, 03 Dec 2021 19:21:44 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libnss-wrapper 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 30 Nov 2021 03:52:38 GMT
+# Fri, 03 Dec 2021 19:21:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 30 Nov 2021 03:52:41 GMT
+# Fri, 03 Dec 2021 19:21:48 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	command -v gpgconf > /dev/null && gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Tue, 30 Nov 2021 07:58:27 GMT
+# Fri, 03 Dec 2021 23:28:32 GMT
 ENV PG_MAJOR=9.6
-# Tue, 30 Nov 2021 07:58:27 GMT
+# Fri, 03 Dec 2021 23:28:32 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/9.6/bin
-# Tue, 30 Nov 2021 07:58:28 GMT
+# Fri, 03 Dec 2021 23:28:32 GMT
 ENV PG_VERSION=9.6.24-1.pgdg110+1
-# Tue, 30 Nov 2021 08:32:43 GMT
+# Sat, 04 Dec 2021 00:02:48 GMT
 RUN set -ex; 		export PYTHONDONTWRITEBYTECODE=1; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64 | arm64 | ppc64el) 			echo "deb http://apt.postgresql.org/pub/repos/apt/ bullseye-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 			apt-get update; 			;; 		*) 			echo "deb-src http://apt.postgresql.org/pub/repos/apt/ bullseye-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 						tempDir="$(mktemp -d)"; 			cd "$tempDir"; 						savedAptMark="$(apt-mark showmanual)"; 						apt-get update; 			apt-get build-dep -y 				postgresql-common pgdg-keyring 				"postgresql-$PG_MAJOR=$PG_VERSION" 			; 			DEB_BUILD_OPTIONS="nocheck parallel=$(nproc)" 				apt-get source --compile 					postgresql-common pgdg-keyring 					"postgresql-$PG_MAJOR=$PG_VERSION" 			; 						apt-mark showmanual | xargs apt-mark auto > /dev/null; 			apt-mark manual $savedAptMark; 						ls -lAFh; 			dpkg-scanpackages . > Packages; 			grep '^Package: ' Packages; 			echo "deb [ trusted=yes ] file://$tempDir ./" > /etc/apt/sources.list.d/temp.list; 			apt-get -o Acquire::GzipIndexes=false update; 			;; 	esac; 		apt-get install -y --no-install-recommends postgresql-common; 	sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf; 	apt-get install -y --no-install-recommends 		"postgresql-$PG_MAJOR=$PG_VERSION" 		"postgresql-contrib-$PG_MAJOR=$PG_VERSION" 	; 		rm -rf /var/lib/apt/lists/*; 		if [ -n "$tempDir" ]; then 		apt-get purge -y --auto-remove; 		rm -rf "$tempDir" /etc/apt/sources.list.d/temp.list; 	fi; 		find /usr -name '*.pyc' -type f -exec bash -c 'for pyc; do dpkg -S "$pyc" &> /dev/null || rm -vf "$pyc"; done' -- '{}' +; 		postgres --version
-# Tue, 30 Nov 2021 08:32:46 GMT
+# Sat, 04 Dec 2021 00:02:51 GMT
 RUN set -eux; 	dpkg-divert --add --rename --divert "/usr/share/postgresql/postgresql.conf.sample.dpkg" "/usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample"; 	cp -v /usr/share/postgresql/postgresql.conf.sample.dpkg /usr/share/postgresql/postgresql.conf.sample; 	ln -sv ../postgresql.conf.sample "/usr/share/postgresql/$PG_MAJOR/"; 	sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample; 	grep -F "listen_addresses = '*'" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 30 Nov 2021 08:32:48 GMT
+# Sat, 04 Dec 2021 00:02:53 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod 2777 /var/run/postgresql
-# Tue, 30 Nov 2021 08:32:48 GMT
+# Sat, 04 Dec 2021 00:02:53 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 30 Nov 2021 08:32:50 GMT
+# Sat, 04 Dec 2021 00:02:55 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA"
-# Tue, 30 Nov 2021 08:32:50 GMT
+# Sat, 04 Dec 2021 00:02:56 GMT
 VOLUME [/var/lib/postgresql/data]
-# Tue, 30 Nov 2021 08:32:51 GMT
+# Sat, 04 Dec 2021 00:02:56 GMT
 COPY file:73785d4a64e88cd001941f2d0fb17c583e6d98ffda704b27106f5ef128737e5b in /usr/local/bin/ 
-# Tue, 30 Nov 2021 08:32:53 GMT
+# Sat, 04 Dec 2021 00:02:58 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Tue, 30 Nov 2021 08:32:53 GMT
+# Sat, 04 Dec 2021 00:02:59 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 30 Nov 2021 08:32:53 GMT
+# Sat, 04 Dec 2021 00:02:59 GMT
 STOPSIGNAL SIGINT
-# Tue, 30 Nov 2021 08:32:54 GMT
+# Sat, 04 Dec 2021 00:02:59 GMT
 EXPOSE 5432
-# Tue, 30 Nov 2021 08:32:54 GMT
+# Sat, 04 Dec 2021 00:03:00 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:08bca22fbffb4e58224e9e4f6a56f1ca5099c002b1aeb6181df63af308a3da58`  
-		Last Modified: Wed, 17 Nov 2021 02:19:09 GMT  
-		Size: 29.6 MB (29630388 bytes)  
+	-	`sha256:df61fb15db6391af55d70bc3c0db3e9014438c81bf802619fb527221adf5e8a8`  
+		Last Modified: Thu, 02 Dec 2021 03:17:58 GMT  
+		Size: 29.6 MB (29630496 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:173240a7e67fd44ecc0ad5edd818557628d50f00c5d2a5f3d580e0a2ac091610`  
-		Last Modified: Wed, 17 Nov 2021 08:20:21 GMT  
-		Size: 4.4 MB (4402817 bytes)  
+	-	`sha256:aead74c300746557e558c9a90ac68d244f2d0a4887452c091df5b13129cb2b9f`  
+		Last Modified: Sat, 04 Dec 2021 00:03:36 GMT  
+		Size: 4.4 MB (4402852 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5442a27e75e2c0fbbf3bcf39b1c33f75d31863490f96ba2f0f1921ef6da25caf`  
-		Last Modified: Wed, 17 Nov 2021 08:20:17 GMT  
-		Size: 1.8 KB (1767 bytes)  
+	-	`sha256:ff24a9c55d840ff572c517a90e96685d72a67060b5e33095553fb562baab18cf`  
+		Last Modified: Sat, 04 Dec 2021 00:03:32 GMT  
+		Size: 1.8 KB (1769 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2054e4460d2a19717dd4a336b47653df9571eda928f0f361edc1ab86244ddcc2`  
-		Last Modified: Tue, 30 Nov 2021 08:33:27 GMT  
-		Size: 1.3 MB (1298194 bytes)  
+	-	`sha256:ff2f2672897c98937e158db018d3d1b122bf326ce588884511581b48ad1a88ff`  
+		Last Modified: Sat, 04 Dec 2021 00:03:33 GMT  
+		Size: 1.3 MB (1298160 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb7d76eb66b099fba3c2444676a5f23198b89f04ca562d92fe3cbad93e17ed6f`  
-		Last Modified: Tue, 30 Nov 2021 08:33:31 GMT  
-		Size: 8.0 MB (8043954 bytes)  
+	-	`sha256:79a1189dc92e0a7d42054bcaba5f31998c46ca53d7c74cede00da57e1ad8e953`  
+		Last Modified: Sat, 04 Dec 2021 00:03:37 GMT  
+		Size: 8.0 MB (8043932 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fde934ccf5b463f3cc67c5e044fdb538461feed010e478a8adb22f25017f220b`  
-		Last Modified: Tue, 30 Nov 2021 08:33:24 GMT  
-		Size: 439.2 KB (439195 bytes)  
+	-	`sha256:6ebf674bd1ad23a8d1eb79e72400b0113c5888197764e12868bb0bf9e8524f35`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
+		Size: 439.2 KB (439177 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0517cbc7ba02213b80d94a9809694781806502aef56896f981df723099874173`  
-		Last Modified: Tue, 30 Nov 2021 08:33:23 GMT  
+	-	`sha256:082848bd27554921aa8011299d5bc6ca85fd6ad7f1c5ceb5a0af2f8d453db000`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5ff4ee65102820557350a5542a9ce98ad5efe0fcb3cf0a382b9ef99f9850a99`  
-		Last Modified: Tue, 30 Nov 2021 08:33:23 GMT  
-		Size: 3.1 KB (3052 bytes)  
+	-	`sha256:77c733c7a0c1c23d143a50ed0a6e48a73f8aac5364a708d48a3ea82b16359311`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
+		Size: 3.1 KB (3054 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:20b7df9bcf2e9fcce7e9e6b8a6ea2c6dfaa07edeaa24138c7cd767581c82c31a`  
-		Last Modified: Tue, 30 Nov 2021 08:39:58 GMT  
-		Size: 38.2 MB (38187311 bytes)  
+	-	`sha256:666912f77fc29a1b4440c820825d4a184f2c1f84a34a8acc393e3fd9401986e5`  
+		Last Modified: Sat, 04 Dec 2021 00:09:53 GMT  
+		Size: 38.2 MB (38187177 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8470667cba18600703367bb05141f6994a76775ac43b1ae6fd873aae91f6379b`  
-		Last Modified: Tue, 30 Nov 2021 08:39:28 GMT  
-		Size: 7.9 KB (7869 bytes)  
+	-	`sha256:dfe9d779d449118618ffc9d76b2858543b9a98661a471a83d0ae9f50779fb602`  
+		Last Modified: Sat, 04 Dec 2021 00:09:24 GMT  
+		Size: 7.9 KB (7873 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:933b8c363121860af806c77931e07b16be3caaf1a449c5d4f537dfcd4b923996`  
-		Last Modified: Tue, 30 Nov 2021 08:39:28 GMT  
+	-	`sha256:4a7acb47c66798d44d0cc6961ec1f0275423af9c8e73630c408e0215e943b272`  
+		Last Modified: Sat, 04 Dec 2021 00:09:23 GMT  
 		Size: 129.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc95b6e60fa7531c931ea83a172683f4a18a35e41173cd1b57eab347beabb606`  
-		Last Modified: Tue, 30 Nov 2021 08:39:28 GMT  
-		Size: 171.0 B  
+	-	`sha256:342fc11c56d78b4a3dfebe5d16ec634277f71f583ce712fd8463e6d5c5fef1a8`  
+		Last Modified: Sat, 04 Dec 2021 00:09:23 GMT  
+		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:17bcd7b92abb3e9350d7fc21eb28238bc2806f4db533d42e06ed182c94275e24`  
-		Last Modified: Tue, 30 Nov 2021 08:39:28 GMT  
-		Size: 4.7 KB (4723 bytes)  
+	-	`sha256:3831fcbe9b0520906a4cf029ab41fd7b69d4aeb5e328ca3ca6f9f577afff7917`  
+		Last Modified: Sat, 04 Dec 2021 00:09:23 GMT  
+		Size: 4.7 KB (4719 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98801499015254caa1ad49d89154ac86402290a8d4a6697ff4bda582d85e1aa7`  
-		Last Modified: Tue, 30 Nov 2021 08:39:28 GMT  
+	-	`sha256:963bff4fbba5fa8818bcc9c6c732e9fb6d8b32f8339d97f16fca2141bb205dbe`  
+		Last Modified: Sat, 04 Dec 2021 00:09:23 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -39649,7 +39649,7 @@ CMD ["postgres"]
 ## `postgres:9.6-bullseye`
 
 ```console
-$ docker pull postgres@sha256:e267392c15f84dc69d0442a6e6de426aacddaa092073278729197a584b775985
+$ docker pull postgres@sha256:9fbc6d474093086ce7faf0ac16cc2403b1c3315e09a18e081a3e386dd411db7d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -40301,127 +40301,127 @@ CMD ["postgres"]
 ### `postgres:9.6-bullseye` - linux; mips64le
 
 ```console
-$ docker pull postgres@sha256:786ec89f70a3ea38f2a95e0e2418485eaaedf3b58e645a0771a3fe7661904710
+$ docker pull postgres@sha256:3e97a16385b85a43e0c5aaea2c08bd0ff2e76e8ab2a79263257f5303088f039d
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **82.0 MB (82019806 bytes)**  
+-	Total Size: **82.0 MB (82019744 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:95f066e9afdf022c55507895ad1d8260d6b6ad173526189f84b5abda65578d70`
+-	Image ID: `sha256:01a79e678ce4d4231d2e3867c3e6e91e7ffbc4de909fb4e5ff8a040ebb064cb7`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Wed, 17 Nov 2021 02:10:13 GMT
-ADD file:10bc783d286d0a800f59d5009e87ecb4651659c82cae1325132756c7c8b1dec0 in / 
-# Wed, 17 Nov 2021 02:10:13 GMT
+# Thu, 02 Dec 2021 03:09:10 GMT
+ADD file:419aff162077eb16923c3ede6455ca86756a929a5a837bc6ac6b8dc67913503a in / 
+# Thu, 02 Dec 2021 03:09:10 GMT
 CMD ["bash"]
-# Wed, 17 Nov 2021 03:38:46 GMT
+# Fri, 03 Dec 2021 19:20:44 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 17 Nov 2021 03:38:48 GMT
+# Fri, 03 Dec 2021 19:20:46 GMT
 RUN set -eux; 	groupadd -r postgres --gid=999; 	useradd -r -g postgres --uid=999 --home-dir=/var/lib/postgresql --shell=/bin/bash postgres; 	mkdir -p /var/lib/postgresql; 	chown -R postgres:postgres /var/lib/postgresql
-# Tue, 30 Nov 2021 03:51:38 GMT
+# Fri, 03 Dec 2021 19:20:46 GMT
 ENV GOSU_VERSION=1.14
-# Tue, 30 Nov 2021 03:51:59 GMT
+# Fri, 03 Dec 2021 19:21:06 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Tue, 30 Nov 2021 03:52:23 GMT
+# Fri, 03 Dec 2021 19:21:31 GMT
 RUN set -eux; 	if [ -f /etc/dpkg/dpkg.cfg.d/docker ]; then 		grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 		sed -ri '/\/usr\/share\/locale/d' /etc/dpkg/dpkg.cfg.d/docker; 		! grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 	fi; 	apt-get update; apt-get install -y --no-install-recommends locales; rm -rf /var/lib/apt/lists/*; 	localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Tue, 30 Nov 2021 03:52:24 GMT
+# Fri, 03 Dec 2021 19:21:31 GMT
 ENV LANG=en_US.utf8
-# Tue, 30 Nov 2021 03:52:36 GMT
+# Fri, 03 Dec 2021 19:21:44 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libnss-wrapper 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 30 Nov 2021 03:52:38 GMT
+# Fri, 03 Dec 2021 19:21:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 30 Nov 2021 03:52:41 GMT
+# Fri, 03 Dec 2021 19:21:48 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	command -v gpgconf > /dev/null && gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Tue, 30 Nov 2021 07:58:27 GMT
+# Fri, 03 Dec 2021 23:28:32 GMT
 ENV PG_MAJOR=9.6
-# Tue, 30 Nov 2021 07:58:27 GMT
+# Fri, 03 Dec 2021 23:28:32 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/9.6/bin
-# Tue, 30 Nov 2021 07:58:28 GMT
+# Fri, 03 Dec 2021 23:28:32 GMT
 ENV PG_VERSION=9.6.24-1.pgdg110+1
-# Tue, 30 Nov 2021 08:32:43 GMT
+# Sat, 04 Dec 2021 00:02:48 GMT
 RUN set -ex; 		export PYTHONDONTWRITEBYTECODE=1; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64 | arm64 | ppc64el) 			echo "deb http://apt.postgresql.org/pub/repos/apt/ bullseye-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 			apt-get update; 			;; 		*) 			echo "deb-src http://apt.postgresql.org/pub/repos/apt/ bullseye-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 						tempDir="$(mktemp -d)"; 			cd "$tempDir"; 						savedAptMark="$(apt-mark showmanual)"; 						apt-get update; 			apt-get build-dep -y 				postgresql-common pgdg-keyring 				"postgresql-$PG_MAJOR=$PG_VERSION" 			; 			DEB_BUILD_OPTIONS="nocheck parallel=$(nproc)" 				apt-get source --compile 					postgresql-common pgdg-keyring 					"postgresql-$PG_MAJOR=$PG_VERSION" 			; 						apt-mark showmanual | xargs apt-mark auto > /dev/null; 			apt-mark manual $savedAptMark; 						ls -lAFh; 			dpkg-scanpackages . > Packages; 			grep '^Package: ' Packages; 			echo "deb [ trusted=yes ] file://$tempDir ./" > /etc/apt/sources.list.d/temp.list; 			apt-get -o Acquire::GzipIndexes=false update; 			;; 	esac; 		apt-get install -y --no-install-recommends postgresql-common; 	sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf; 	apt-get install -y --no-install-recommends 		"postgresql-$PG_MAJOR=$PG_VERSION" 		"postgresql-contrib-$PG_MAJOR=$PG_VERSION" 	; 		rm -rf /var/lib/apt/lists/*; 		if [ -n "$tempDir" ]; then 		apt-get purge -y --auto-remove; 		rm -rf "$tempDir" /etc/apt/sources.list.d/temp.list; 	fi; 		find /usr -name '*.pyc' -type f -exec bash -c 'for pyc; do dpkg -S "$pyc" &> /dev/null || rm -vf "$pyc"; done' -- '{}' +; 		postgres --version
-# Tue, 30 Nov 2021 08:32:46 GMT
+# Sat, 04 Dec 2021 00:02:51 GMT
 RUN set -eux; 	dpkg-divert --add --rename --divert "/usr/share/postgresql/postgresql.conf.sample.dpkg" "/usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample"; 	cp -v /usr/share/postgresql/postgresql.conf.sample.dpkg /usr/share/postgresql/postgresql.conf.sample; 	ln -sv ../postgresql.conf.sample "/usr/share/postgresql/$PG_MAJOR/"; 	sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample; 	grep -F "listen_addresses = '*'" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 30 Nov 2021 08:32:48 GMT
+# Sat, 04 Dec 2021 00:02:53 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod 2777 /var/run/postgresql
-# Tue, 30 Nov 2021 08:32:48 GMT
+# Sat, 04 Dec 2021 00:02:53 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 30 Nov 2021 08:32:50 GMT
+# Sat, 04 Dec 2021 00:02:55 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA"
-# Tue, 30 Nov 2021 08:32:50 GMT
+# Sat, 04 Dec 2021 00:02:56 GMT
 VOLUME [/var/lib/postgresql/data]
-# Tue, 30 Nov 2021 08:32:51 GMT
+# Sat, 04 Dec 2021 00:02:56 GMT
 COPY file:73785d4a64e88cd001941f2d0fb17c583e6d98ffda704b27106f5ef128737e5b in /usr/local/bin/ 
-# Tue, 30 Nov 2021 08:32:53 GMT
+# Sat, 04 Dec 2021 00:02:58 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Tue, 30 Nov 2021 08:32:53 GMT
+# Sat, 04 Dec 2021 00:02:59 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 30 Nov 2021 08:32:53 GMT
+# Sat, 04 Dec 2021 00:02:59 GMT
 STOPSIGNAL SIGINT
-# Tue, 30 Nov 2021 08:32:54 GMT
+# Sat, 04 Dec 2021 00:02:59 GMT
 EXPOSE 5432
-# Tue, 30 Nov 2021 08:32:54 GMT
+# Sat, 04 Dec 2021 00:03:00 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:08bca22fbffb4e58224e9e4f6a56f1ca5099c002b1aeb6181df63af308a3da58`  
-		Last Modified: Wed, 17 Nov 2021 02:19:09 GMT  
-		Size: 29.6 MB (29630388 bytes)  
+	-	`sha256:df61fb15db6391af55d70bc3c0db3e9014438c81bf802619fb527221adf5e8a8`  
+		Last Modified: Thu, 02 Dec 2021 03:17:58 GMT  
+		Size: 29.6 MB (29630496 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:173240a7e67fd44ecc0ad5edd818557628d50f00c5d2a5f3d580e0a2ac091610`  
-		Last Modified: Wed, 17 Nov 2021 08:20:21 GMT  
-		Size: 4.4 MB (4402817 bytes)  
+	-	`sha256:aead74c300746557e558c9a90ac68d244f2d0a4887452c091df5b13129cb2b9f`  
+		Last Modified: Sat, 04 Dec 2021 00:03:36 GMT  
+		Size: 4.4 MB (4402852 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5442a27e75e2c0fbbf3bcf39b1c33f75d31863490f96ba2f0f1921ef6da25caf`  
-		Last Modified: Wed, 17 Nov 2021 08:20:17 GMT  
-		Size: 1.8 KB (1767 bytes)  
+	-	`sha256:ff24a9c55d840ff572c517a90e96685d72a67060b5e33095553fb562baab18cf`  
+		Last Modified: Sat, 04 Dec 2021 00:03:32 GMT  
+		Size: 1.8 KB (1769 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2054e4460d2a19717dd4a336b47653df9571eda928f0f361edc1ab86244ddcc2`  
-		Last Modified: Tue, 30 Nov 2021 08:33:27 GMT  
-		Size: 1.3 MB (1298194 bytes)  
+	-	`sha256:ff2f2672897c98937e158db018d3d1b122bf326ce588884511581b48ad1a88ff`  
+		Last Modified: Sat, 04 Dec 2021 00:03:33 GMT  
+		Size: 1.3 MB (1298160 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb7d76eb66b099fba3c2444676a5f23198b89f04ca562d92fe3cbad93e17ed6f`  
-		Last Modified: Tue, 30 Nov 2021 08:33:31 GMT  
-		Size: 8.0 MB (8043954 bytes)  
+	-	`sha256:79a1189dc92e0a7d42054bcaba5f31998c46ca53d7c74cede00da57e1ad8e953`  
+		Last Modified: Sat, 04 Dec 2021 00:03:37 GMT  
+		Size: 8.0 MB (8043932 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fde934ccf5b463f3cc67c5e044fdb538461feed010e478a8adb22f25017f220b`  
-		Last Modified: Tue, 30 Nov 2021 08:33:24 GMT  
-		Size: 439.2 KB (439195 bytes)  
+	-	`sha256:6ebf674bd1ad23a8d1eb79e72400b0113c5888197764e12868bb0bf9e8524f35`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
+		Size: 439.2 KB (439177 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0517cbc7ba02213b80d94a9809694781806502aef56896f981df723099874173`  
-		Last Modified: Tue, 30 Nov 2021 08:33:23 GMT  
+	-	`sha256:082848bd27554921aa8011299d5bc6ca85fd6ad7f1c5ceb5a0af2f8d453db000`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5ff4ee65102820557350a5542a9ce98ad5efe0fcb3cf0a382b9ef99f9850a99`  
-		Last Modified: Tue, 30 Nov 2021 08:33:23 GMT  
-		Size: 3.1 KB (3052 bytes)  
+	-	`sha256:77c733c7a0c1c23d143a50ed0a6e48a73f8aac5364a708d48a3ea82b16359311`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
+		Size: 3.1 KB (3054 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:20b7df9bcf2e9fcce7e9e6b8a6ea2c6dfaa07edeaa24138c7cd767581c82c31a`  
-		Last Modified: Tue, 30 Nov 2021 08:39:58 GMT  
-		Size: 38.2 MB (38187311 bytes)  
+	-	`sha256:666912f77fc29a1b4440c820825d4a184f2c1f84a34a8acc393e3fd9401986e5`  
+		Last Modified: Sat, 04 Dec 2021 00:09:53 GMT  
+		Size: 38.2 MB (38187177 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8470667cba18600703367bb05141f6994a76775ac43b1ae6fd873aae91f6379b`  
-		Last Modified: Tue, 30 Nov 2021 08:39:28 GMT  
-		Size: 7.9 KB (7869 bytes)  
+	-	`sha256:dfe9d779d449118618ffc9d76b2858543b9a98661a471a83d0ae9f50779fb602`  
+		Last Modified: Sat, 04 Dec 2021 00:09:24 GMT  
+		Size: 7.9 KB (7873 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:933b8c363121860af806c77931e07b16be3caaf1a449c5d4f537dfcd4b923996`  
-		Last Modified: Tue, 30 Nov 2021 08:39:28 GMT  
+	-	`sha256:4a7acb47c66798d44d0cc6961ec1f0275423af9c8e73630c408e0215e943b272`  
+		Last Modified: Sat, 04 Dec 2021 00:09:23 GMT  
 		Size: 129.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc95b6e60fa7531c931ea83a172683f4a18a35e41173cd1b57eab347beabb606`  
-		Last Modified: Tue, 30 Nov 2021 08:39:28 GMT  
-		Size: 171.0 B  
+	-	`sha256:342fc11c56d78b4a3dfebe5d16ec634277f71f583ce712fd8463e6d5c5fef1a8`  
+		Last Modified: Sat, 04 Dec 2021 00:09:23 GMT  
+		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:17bcd7b92abb3e9350d7fc21eb28238bc2806f4db533d42e06ed182c94275e24`  
-		Last Modified: Tue, 30 Nov 2021 08:39:28 GMT  
-		Size: 4.7 KB (4723 bytes)  
+	-	`sha256:3831fcbe9b0520906a4cf029ab41fd7b69d4aeb5e328ca3ca6f9f577afff7917`  
+		Last Modified: Sat, 04 Dec 2021 00:09:23 GMT  
+		Size: 4.7 KB (4719 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98801499015254caa1ad49d89154ac86402290a8d4a6697ff4bda582d85e1aa7`  
-		Last Modified: Tue, 30 Nov 2021 08:39:28 GMT  
+	-	`sha256:963bff4fbba5fa8818bcc9c6c732e9fb6d8b32f8339d97f16fca2141bb205dbe`  
+		Last Modified: Sat, 04 Dec 2021 00:09:23 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -43342,7 +43342,7 @@ CMD ["postgres"]
 ## `postgres:9.6.24-bullseye`
 
 ```console
-$ docker pull postgres@sha256:e267392c15f84dc69d0442a6e6de426aacddaa092073278729197a584b775985
+$ docker pull postgres@sha256:9fbc6d474093086ce7faf0ac16cc2403b1c3315e09a18e081a3e386dd411db7d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -43994,127 +43994,127 @@ CMD ["postgres"]
 ### `postgres:9.6.24-bullseye` - linux; mips64le
 
 ```console
-$ docker pull postgres@sha256:786ec89f70a3ea38f2a95e0e2418485eaaedf3b58e645a0771a3fe7661904710
+$ docker pull postgres@sha256:3e97a16385b85a43e0c5aaea2c08bd0ff2e76e8ab2a79263257f5303088f039d
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **82.0 MB (82019806 bytes)**  
+-	Total Size: **82.0 MB (82019744 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:95f066e9afdf022c55507895ad1d8260d6b6ad173526189f84b5abda65578d70`
+-	Image ID: `sha256:01a79e678ce4d4231d2e3867c3e6e91e7ffbc4de909fb4e5ff8a040ebb064cb7`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Wed, 17 Nov 2021 02:10:13 GMT
-ADD file:10bc783d286d0a800f59d5009e87ecb4651659c82cae1325132756c7c8b1dec0 in / 
-# Wed, 17 Nov 2021 02:10:13 GMT
+# Thu, 02 Dec 2021 03:09:10 GMT
+ADD file:419aff162077eb16923c3ede6455ca86756a929a5a837bc6ac6b8dc67913503a in / 
+# Thu, 02 Dec 2021 03:09:10 GMT
 CMD ["bash"]
-# Wed, 17 Nov 2021 03:38:46 GMT
+# Fri, 03 Dec 2021 19:20:44 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 17 Nov 2021 03:38:48 GMT
+# Fri, 03 Dec 2021 19:20:46 GMT
 RUN set -eux; 	groupadd -r postgres --gid=999; 	useradd -r -g postgres --uid=999 --home-dir=/var/lib/postgresql --shell=/bin/bash postgres; 	mkdir -p /var/lib/postgresql; 	chown -R postgres:postgres /var/lib/postgresql
-# Tue, 30 Nov 2021 03:51:38 GMT
+# Fri, 03 Dec 2021 19:20:46 GMT
 ENV GOSU_VERSION=1.14
-# Tue, 30 Nov 2021 03:51:59 GMT
+# Fri, 03 Dec 2021 19:21:06 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Tue, 30 Nov 2021 03:52:23 GMT
+# Fri, 03 Dec 2021 19:21:31 GMT
 RUN set -eux; 	if [ -f /etc/dpkg/dpkg.cfg.d/docker ]; then 		grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 		sed -ri '/\/usr\/share\/locale/d' /etc/dpkg/dpkg.cfg.d/docker; 		! grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 	fi; 	apt-get update; apt-get install -y --no-install-recommends locales; rm -rf /var/lib/apt/lists/*; 	localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Tue, 30 Nov 2021 03:52:24 GMT
+# Fri, 03 Dec 2021 19:21:31 GMT
 ENV LANG=en_US.utf8
-# Tue, 30 Nov 2021 03:52:36 GMT
+# Fri, 03 Dec 2021 19:21:44 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libnss-wrapper 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 30 Nov 2021 03:52:38 GMT
+# Fri, 03 Dec 2021 19:21:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 30 Nov 2021 03:52:41 GMT
+# Fri, 03 Dec 2021 19:21:48 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	command -v gpgconf > /dev/null && gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Tue, 30 Nov 2021 07:58:27 GMT
+# Fri, 03 Dec 2021 23:28:32 GMT
 ENV PG_MAJOR=9.6
-# Tue, 30 Nov 2021 07:58:27 GMT
+# Fri, 03 Dec 2021 23:28:32 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/9.6/bin
-# Tue, 30 Nov 2021 07:58:28 GMT
+# Fri, 03 Dec 2021 23:28:32 GMT
 ENV PG_VERSION=9.6.24-1.pgdg110+1
-# Tue, 30 Nov 2021 08:32:43 GMT
+# Sat, 04 Dec 2021 00:02:48 GMT
 RUN set -ex; 		export PYTHONDONTWRITEBYTECODE=1; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64 | arm64 | ppc64el) 			echo "deb http://apt.postgresql.org/pub/repos/apt/ bullseye-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 			apt-get update; 			;; 		*) 			echo "deb-src http://apt.postgresql.org/pub/repos/apt/ bullseye-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 						tempDir="$(mktemp -d)"; 			cd "$tempDir"; 						savedAptMark="$(apt-mark showmanual)"; 						apt-get update; 			apt-get build-dep -y 				postgresql-common pgdg-keyring 				"postgresql-$PG_MAJOR=$PG_VERSION" 			; 			DEB_BUILD_OPTIONS="nocheck parallel=$(nproc)" 				apt-get source --compile 					postgresql-common pgdg-keyring 					"postgresql-$PG_MAJOR=$PG_VERSION" 			; 						apt-mark showmanual | xargs apt-mark auto > /dev/null; 			apt-mark manual $savedAptMark; 						ls -lAFh; 			dpkg-scanpackages . > Packages; 			grep '^Package: ' Packages; 			echo "deb [ trusted=yes ] file://$tempDir ./" > /etc/apt/sources.list.d/temp.list; 			apt-get -o Acquire::GzipIndexes=false update; 			;; 	esac; 		apt-get install -y --no-install-recommends postgresql-common; 	sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf; 	apt-get install -y --no-install-recommends 		"postgresql-$PG_MAJOR=$PG_VERSION" 		"postgresql-contrib-$PG_MAJOR=$PG_VERSION" 	; 		rm -rf /var/lib/apt/lists/*; 		if [ -n "$tempDir" ]; then 		apt-get purge -y --auto-remove; 		rm -rf "$tempDir" /etc/apt/sources.list.d/temp.list; 	fi; 		find /usr -name '*.pyc' -type f -exec bash -c 'for pyc; do dpkg -S "$pyc" &> /dev/null || rm -vf "$pyc"; done' -- '{}' +; 		postgres --version
-# Tue, 30 Nov 2021 08:32:46 GMT
+# Sat, 04 Dec 2021 00:02:51 GMT
 RUN set -eux; 	dpkg-divert --add --rename --divert "/usr/share/postgresql/postgresql.conf.sample.dpkg" "/usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample"; 	cp -v /usr/share/postgresql/postgresql.conf.sample.dpkg /usr/share/postgresql/postgresql.conf.sample; 	ln -sv ../postgresql.conf.sample "/usr/share/postgresql/$PG_MAJOR/"; 	sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample; 	grep -F "listen_addresses = '*'" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 30 Nov 2021 08:32:48 GMT
+# Sat, 04 Dec 2021 00:02:53 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod 2777 /var/run/postgresql
-# Tue, 30 Nov 2021 08:32:48 GMT
+# Sat, 04 Dec 2021 00:02:53 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 30 Nov 2021 08:32:50 GMT
+# Sat, 04 Dec 2021 00:02:55 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA"
-# Tue, 30 Nov 2021 08:32:50 GMT
+# Sat, 04 Dec 2021 00:02:56 GMT
 VOLUME [/var/lib/postgresql/data]
-# Tue, 30 Nov 2021 08:32:51 GMT
+# Sat, 04 Dec 2021 00:02:56 GMT
 COPY file:73785d4a64e88cd001941f2d0fb17c583e6d98ffda704b27106f5ef128737e5b in /usr/local/bin/ 
-# Tue, 30 Nov 2021 08:32:53 GMT
+# Sat, 04 Dec 2021 00:02:58 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Tue, 30 Nov 2021 08:32:53 GMT
+# Sat, 04 Dec 2021 00:02:59 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 30 Nov 2021 08:32:53 GMT
+# Sat, 04 Dec 2021 00:02:59 GMT
 STOPSIGNAL SIGINT
-# Tue, 30 Nov 2021 08:32:54 GMT
+# Sat, 04 Dec 2021 00:02:59 GMT
 EXPOSE 5432
-# Tue, 30 Nov 2021 08:32:54 GMT
+# Sat, 04 Dec 2021 00:03:00 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:08bca22fbffb4e58224e9e4f6a56f1ca5099c002b1aeb6181df63af308a3da58`  
-		Last Modified: Wed, 17 Nov 2021 02:19:09 GMT  
-		Size: 29.6 MB (29630388 bytes)  
+	-	`sha256:df61fb15db6391af55d70bc3c0db3e9014438c81bf802619fb527221adf5e8a8`  
+		Last Modified: Thu, 02 Dec 2021 03:17:58 GMT  
+		Size: 29.6 MB (29630496 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:173240a7e67fd44ecc0ad5edd818557628d50f00c5d2a5f3d580e0a2ac091610`  
-		Last Modified: Wed, 17 Nov 2021 08:20:21 GMT  
-		Size: 4.4 MB (4402817 bytes)  
+	-	`sha256:aead74c300746557e558c9a90ac68d244f2d0a4887452c091df5b13129cb2b9f`  
+		Last Modified: Sat, 04 Dec 2021 00:03:36 GMT  
+		Size: 4.4 MB (4402852 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5442a27e75e2c0fbbf3bcf39b1c33f75d31863490f96ba2f0f1921ef6da25caf`  
-		Last Modified: Wed, 17 Nov 2021 08:20:17 GMT  
-		Size: 1.8 KB (1767 bytes)  
+	-	`sha256:ff24a9c55d840ff572c517a90e96685d72a67060b5e33095553fb562baab18cf`  
+		Last Modified: Sat, 04 Dec 2021 00:03:32 GMT  
+		Size: 1.8 KB (1769 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2054e4460d2a19717dd4a336b47653df9571eda928f0f361edc1ab86244ddcc2`  
-		Last Modified: Tue, 30 Nov 2021 08:33:27 GMT  
-		Size: 1.3 MB (1298194 bytes)  
+	-	`sha256:ff2f2672897c98937e158db018d3d1b122bf326ce588884511581b48ad1a88ff`  
+		Last Modified: Sat, 04 Dec 2021 00:03:33 GMT  
+		Size: 1.3 MB (1298160 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb7d76eb66b099fba3c2444676a5f23198b89f04ca562d92fe3cbad93e17ed6f`  
-		Last Modified: Tue, 30 Nov 2021 08:33:31 GMT  
-		Size: 8.0 MB (8043954 bytes)  
+	-	`sha256:79a1189dc92e0a7d42054bcaba5f31998c46ca53d7c74cede00da57e1ad8e953`  
+		Last Modified: Sat, 04 Dec 2021 00:03:37 GMT  
+		Size: 8.0 MB (8043932 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fde934ccf5b463f3cc67c5e044fdb538461feed010e478a8adb22f25017f220b`  
-		Last Modified: Tue, 30 Nov 2021 08:33:24 GMT  
-		Size: 439.2 KB (439195 bytes)  
+	-	`sha256:6ebf674bd1ad23a8d1eb79e72400b0113c5888197764e12868bb0bf9e8524f35`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
+		Size: 439.2 KB (439177 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0517cbc7ba02213b80d94a9809694781806502aef56896f981df723099874173`  
-		Last Modified: Tue, 30 Nov 2021 08:33:23 GMT  
+	-	`sha256:082848bd27554921aa8011299d5bc6ca85fd6ad7f1c5ceb5a0af2f8d453db000`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5ff4ee65102820557350a5542a9ce98ad5efe0fcb3cf0a382b9ef99f9850a99`  
-		Last Modified: Tue, 30 Nov 2021 08:33:23 GMT  
-		Size: 3.1 KB (3052 bytes)  
+	-	`sha256:77c733c7a0c1c23d143a50ed0a6e48a73f8aac5364a708d48a3ea82b16359311`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
+		Size: 3.1 KB (3054 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:20b7df9bcf2e9fcce7e9e6b8a6ea2c6dfaa07edeaa24138c7cd767581c82c31a`  
-		Last Modified: Tue, 30 Nov 2021 08:39:58 GMT  
-		Size: 38.2 MB (38187311 bytes)  
+	-	`sha256:666912f77fc29a1b4440c820825d4a184f2c1f84a34a8acc393e3fd9401986e5`  
+		Last Modified: Sat, 04 Dec 2021 00:09:53 GMT  
+		Size: 38.2 MB (38187177 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8470667cba18600703367bb05141f6994a76775ac43b1ae6fd873aae91f6379b`  
-		Last Modified: Tue, 30 Nov 2021 08:39:28 GMT  
-		Size: 7.9 KB (7869 bytes)  
+	-	`sha256:dfe9d779d449118618ffc9d76b2858543b9a98661a471a83d0ae9f50779fb602`  
+		Last Modified: Sat, 04 Dec 2021 00:09:24 GMT  
+		Size: 7.9 KB (7873 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:933b8c363121860af806c77931e07b16be3caaf1a449c5d4f537dfcd4b923996`  
-		Last Modified: Tue, 30 Nov 2021 08:39:28 GMT  
+	-	`sha256:4a7acb47c66798d44d0cc6961ec1f0275423af9c8e73630c408e0215e943b272`  
+		Last Modified: Sat, 04 Dec 2021 00:09:23 GMT  
 		Size: 129.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc95b6e60fa7531c931ea83a172683f4a18a35e41173cd1b57eab347beabb606`  
-		Last Modified: Tue, 30 Nov 2021 08:39:28 GMT  
-		Size: 171.0 B  
+	-	`sha256:342fc11c56d78b4a3dfebe5d16ec634277f71f583ce712fd8463e6d5c5fef1a8`  
+		Last Modified: Sat, 04 Dec 2021 00:09:23 GMT  
+		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:17bcd7b92abb3e9350d7fc21eb28238bc2806f4db533d42e06ed182c94275e24`  
-		Last Modified: Tue, 30 Nov 2021 08:39:28 GMT  
-		Size: 4.7 KB (4723 bytes)  
+	-	`sha256:3831fcbe9b0520906a4cf029ab41fd7b69d4aeb5e328ca3ca6f9f577afff7917`  
+		Last Modified: Sat, 04 Dec 2021 00:09:23 GMT  
+		Size: 4.7 KB (4719 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98801499015254caa1ad49d89154ac86402290a8d4a6697ff4bda582d85e1aa7`  
-		Last Modified: Tue, 30 Nov 2021 08:39:28 GMT  
+	-	`sha256:963bff4fbba5fa8818bcc9c6c732e9fb6d8b32f8339d97f16fca2141bb205dbe`  
+		Last Modified: Sat, 04 Dec 2021 00:09:23 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -46302,7 +46302,7 @@ CMD ["postgres"]
 ## `postgres:bullseye`
 
 ```console
-$ docker pull postgres@sha256:1c06b5e69db18609fcbbc385651cba21962539cd0dddc4f2458e97a6b2b0f43a
+$ docker pull postgres@sha256:f76241d07218561e3d1a334eae6a5bf63c70b49f35ffecb7f020448e30e37390
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -46924,121 +46924,121 @@ CMD ["postgres"]
 ### `postgres:bullseye` - linux; mips64le
 
 ```console
-$ docker pull postgres@sha256:626a00d28e9043d6e38bd967af0b563e874c9434c67004c8e428752d81bae661
+$ docker pull postgres@sha256:8f549f1adc5796b8685c9f516ff51d91854f7b07f3787c8b4e26e987008c96ed
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **131.7 MB (131746938 bytes)**  
+-	Total Size: **131.7 MB (131747243 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8bf6c0920dbf0498ba795a4fc7863bf4c9c05ac89fdd7820f8d04858da679db6`
+-	Image ID: `sha256:df113fa4de88979925b6c1541301efaf67a61e559cc9b4b57653e16559d02794`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Wed, 17 Nov 2021 02:10:13 GMT
-ADD file:10bc783d286d0a800f59d5009e87ecb4651659c82cae1325132756c7c8b1dec0 in / 
-# Wed, 17 Nov 2021 02:10:13 GMT
+# Thu, 02 Dec 2021 03:09:10 GMT
+ADD file:419aff162077eb16923c3ede6455ca86756a929a5a837bc6ac6b8dc67913503a in / 
+# Thu, 02 Dec 2021 03:09:10 GMT
 CMD ["bash"]
-# Wed, 17 Nov 2021 03:38:46 GMT
+# Fri, 03 Dec 2021 19:20:44 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 17 Nov 2021 03:38:48 GMT
+# Fri, 03 Dec 2021 19:20:46 GMT
 RUN set -eux; 	groupadd -r postgres --gid=999; 	useradd -r -g postgres --uid=999 --home-dir=/var/lib/postgresql --shell=/bin/bash postgres; 	mkdir -p /var/lib/postgresql; 	chown -R postgres:postgres /var/lib/postgresql
-# Tue, 30 Nov 2021 03:51:38 GMT
+# Fri, 03 Dec 2021 19:20:46 GMT
 ENV GOSU_VERSION=1.14
-# Tue, 30 Nov 2021 03:51:59 GMT
+# Fri, 03 Dec 2021 19:21:06 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Tue, 30 Nov 2021 03:52:23 GMT
+# Fri, 03 Dec 2021 19:21:31 GMT
 RUN set -eux; 	if [ -f /etc/dpkg/dpkg.cfg.d/docker ]; then 		grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 		sed -ri '/\/usr\/share\/locale/d' /etc/dpkg/dpkg.cfg.d/docker; 		! grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 	fi; 	apt-get update; apt-get install -y --no-install-recommends locales; rm -rf /var/lib/apt/lists/*; 	localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Tue, 30 Nov 2021 03:52:24 GMT
+# Fri, 03 Dec 2021 19:21:31 GMT
 ENV LANG=en_US.utf8
-# Tue, 30 Nov 2021 03:52:36 GMT
+# Fri, 03 Dec 2021 19:21:44 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libnss-wrapper 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 30 Nov 2021 03:52:38 GMT
+# Fri, 03 Dec 2021 19:21:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 30 Nov 2021 03:52:41 GMT
+# Fri, 03 Dec 2021 19:21:48 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	command -v gpgconf > /dev/null && gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Tue, 30 Nov 2021 03:52:41 GMT
+# Fri, 03 Dec 2021 19:21:48 GMT
 ENV PG_MAJOR=14
-# Tue, 30 Nov 2021 03:52:42 GMT
+# Fri, 03 Dec 2021 19:21:49 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/14/bin
-# Tue, 30 Nov 2021 03:52:42 GMT
+# Fri, 03 Dec 2021 19:21:49 GMT
 ENV PG_VERSION=14.1-1.pgdg110+1
-# Tue, 30 Nov 2021 04:48:19 GMT
+# Fri, 03 Dec 2021 20:17:32 GMT
 RUN set -ex; 		export PYTHONDONTWRITEBYTECODE=1; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64 | arm64 | ppc64el) 			echo "deb http://apt.postgresql.org/pub/repos/apt/ bullseye-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 			apt-get update; 			;; 		*) 			echo "deb-src http://apt.postgresql.org/pub/repos/apt/ bullseye-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 						tempDir="$(mktemp -d)"; 			cd "$tempDir"; 						savedAptMark="$(apt-mark showmanual)"; 						apt-get update; 			apt-get build-dep -y 				postgresql-common pgdg-keyring 				"postgresql-$PG_MAJOR=$PG_VERSION" 			; 			DEB_BUILD_OPTIONS="nocheck parallel=$(nproc)" 				apt-get source --compile 					postgresql-common pgdg-keyring 					"postgresql-$PG_MAJOR=$PG_VERSION" 			; 						apt-mark showmanual | xargs apt-mark auto > /dev/null; 			apt-mark manual $savedAptMark; 						ls -lAFh; 			dpkg-scanpackages . > Packages; 			grep '^Package: ' Packages; 			echo "deb [ trusted=yes ] file://$tempDir ./" > /etc/apt/sources.list.d/temp.list; 			apt-get -o Acquire::GzipIndexes=false update; 			;; 	esac; 		apt-get install -y --no-install-recommends postgresql-common; 	sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf; 	apt-get install -y --no-install-recommends 		"postgresql-$PG_MAJOR=$PG_VERSION" 	; 		rm -rf /var/lib/apt/lists/*; 		if [ -n "$tempDir" ]; then 		apt-get purge -y --auto-remove; 		rm -rf "$tempDir" /etc/apt/sources.list.d/temp.list; 	fi; 		find /usr -name '*.pyc' -type f -exec bash -c 'for pyc; do dpkg -S "$pyc" &> /dev/null || rm -vf "$pyc"; done' -- '{}' +; 		postgres --version
-# Tue, 30 Nov 2021 04:48:22 GMT
+# Fri, 03 Dec 2021 20:17:35 GMT
 RUN set -eux; 	dpkg-divert --add --rename --divert "/usr/share/postgresql/postgresql.conf.sample.dpkg" "/usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample"; 	cp -v /usr/share/postgresql/postgresql.conf.sample.dpkg /usr/share/postgresql/postgresql.conf.sample; 	ln -sv ../postgresql.conf.sample "/usr/share/postgresql/$PG_MAJOR/"; 	sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample; 	grep -F "listen_addresses = '*'" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 30 Nov 2021 04:48:28 GMT
+# Fri, 03 Dec 2021 20:17:37 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod 2777 /var/run/postgresql
-# Tue, 30 Nov 2021 04:48:28 GMT
+# Fri, 03 Dec 2021 20:17:38 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 30 Nov 2021 04:48:30 GMT
+# Fri, 03 Dec 2021 20:17:40 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA"
-# Tue, 30 Nov 2021 04:48:31 GMT
+# Fri, 03 Dec 2021 20:17:40 GMT
 VOLUME [/var/lib/postgresql/data]
-# Tue, 30 Nov 2021 04:48:31 GMT
+# Fri, 03 Dec 2021 20:17:41 GMT
 COPY file:6e4de9271291e4bdd4a40b73fffe4d6d1aeff033460f5b14d74e948686daa095 in /usr/local/bin/ 
-# Tue, 30 Nov 2021 04:48:32 GMT
+# Fri, 03 Dec 2021 20:17:41 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 30 Nov 2021 04:48:32 GMT
+# Fri, 03 Dec 2021 20:17:41 GMT
 STOPSIGNAL SIGINT
-# Tue, 30 Nov 2021 04:48:32 GMT
+# Fri, 03 Dec 2021 20:17:42 GMT
 EXPOSE 5432
-# Tue, 30 Nov 2021 04:48:33 GMT
+# Fri, 03 Dec 2021 20:17:42 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:08bca22fbffb4e58224e9e4f6a56f1ca5099c002b1aeb6181df63af308a3da58`  
-		Last Modified: Wed, 17 Nov 2021 02:19:09 GMT  
-		Size: 29.6 MB (29630388 bytes)  
+	-	`sha256:df61fb15db6391af55d70bc3c0db3e9014438c81bf802619fb527221adf5e8a8`  
+		Last Modified: Thu, 02 Dec 2021 03:17:58 GMT  
+		Size: 29.6 MB (29630496 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:173240a7e67fd44ecc0ad5edd818557628d50f00c5d2a5f3d580e0a2ac091610`  
-		Last Modified: Wed, 17 Nov 2021 08:20:21 GMT  
-		Size: 4.4 MB (4402817 bytes)  
+	-	`sha256:aead74c300746557e558c9a90ac68d244f2d0a4887452c091df5b13129cb2b9f`  
+		Last Modified: Sat, 04 Dec 2021 00:03:36 GMT  
+		Size: 4.4 MB (4402852 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5442a27e75e2c0fbbf3bcf39b1c33f75d31863490f96ba2f0f1921ef6da25caf`  
-		Last Modified: Wed, 17 Nov 2021 08:20:17 GMT  
-		Size: 1.8 KB (1767 bytes)  
+	-	`sha256:ff24a9c55d840ff572c517a90e96685d72a67060b5e33095553fb562baab18cf`  
+		Last Modified: Sat, 04 Dec 2021 00:03:32 GMT  
+		Size: 1.8 KB (1769 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2054e4460d2a19717dd4a336b47653df9571eda928f0f361edc1ab86244ddcc2`  
-		Last Modified: Tue, 30 Nov 2021 08:33:27 GMT  
-		Size: 1.3 MB (1298194 bytes)  
+	-	`sha256:ff2f2672897c98937e158db018d3d1b122bf326ce588884511581b48ad1a88ff`  
+		Last Modified: Sat, 04 Dec 2021 00:03:33 GMT  
+		Size: 1.3 MB (1298160 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb7d76eb66b099fba3c2444676a5f23198b89f04ca562d92fe3cbad93e17ed6f`  
-		Last Modified: Tue, 30 Nov 2021 08:33:31 GMT  
-		Size: 8.0 MB (8043954 bytes)  
+	-	`sha256:79a1189dc92e0a7d42054bcaba5f31998c46ca53d7c74cede00da57e1ad8e953`  
+		Last Modified: Sat, 04 Dec 2021 00:03:37 GMT  
+		Size: 8.0 MB (8043932 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fde934ccf5b463f3cc67c5e044fdb538461feed010e478a8adb22f25017f220b`  
-		Last Modified: Tue, 30 Nov 2021 08:33:24 GMT  
-		Size: 439.2 KB (439195 bytes)  
+	-	`sha256:6ebf674bd1ad23a8d1eb79e72400b0113c5888197764e12868bb0bf9e8524f35`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
+		Size: 439.2 KB (439177 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0517cbc7ba02213b80d94a9809694781806502aef56896f981df723099874173`  
-		Last Modified: Tue, 30 Nov 2021 08:33:23 GMT  
+	-	`sha256:082848bd27554921aa8011299d5bc6ca85fd6ad7f1c5ceb5a0af2f8d453db000`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5ff4ee65102820557350a5542a9ce98ad5efe0fcb3cf0a382b9ef99f9850a99`  
-		Last Modified: Tue, 30 Nov 2021 08:33:23 GMT  
-		Size: 3.1 KB (3052 bytes)  
+	-	`sha256:77c733c7a0c1c23d143a50ed0a6e48a73f8aac5364a708d48a3ea82b16359311`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
+		Size: 3.1 KB (3054 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fbf94935d67b1e559293359f341d792b86550ddcee61e250e71d018d40f0914d`  
-		Last Modified: Tue, 30 Nov 2021 08:34:22 GMT  
-		Size: 87.9 MB (87912904 bytes)  
+	-	`sha256:baea0b9d66fdf23965574a0a0a745a9c4dfb4c5bea773470308d847180a2b37b`  
+		Last Modified: Sat, 04 Dec 2021 00:04:28 GMT  
+		Size: 87.9 MB (87913130 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d701ee6ea6f9ab303cbbd384c0ed4571e7b947fb223dad2ee212464d15f2d75d`  
-		Last Modified: Tue, 30 Nov 2021 08:33:21 GMT  
-		Size: 9.5 KB (9532 bytes)  
+	-	`sha256:e7dd8c780130b361ccc81662c627871ebb3b1faf9969deb03419b4380c3e0c48`  
+		Last Modified: Sat, 04 Dec 2021 00:03:26 GMT  
+		Size: 9.5 KB (9539 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:069952f14e8c9fad9162942b8325253c9d85cabafc65cc928d7bef15cc7ff330`  
-		Last Modified: Tue, 30 Nov 2021 08:33:21 GMT  
-		Size: 130.0 B  
+	-	`sha256:2800f386c196ba48f74801f09f7e7992fc75a50642fddb051b31fd48a2ae0518`  
+		Last Modified: Sat, 04 Dec 2021 00:03:26 GMT  
+		Size: 129.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd9048a6cbcc1c354cd74e0dbec9c2c96cbfd95bb0c42c3161fcd408ffb28038`  
-		Last Modified: Tue, 30 Nov 2021 08:33:21 GMT  
+	-	`sha256:34d7fea6f2d1874f7a3c57743e055e3ddf4c9f3a09c7804b704fc6e548cda6c5`  
+		Last Modified: Sat, 04 Dec 2021 00:03:26 GMT  
 		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ffd49dbf0018bb29263c66ed04c43a3a930fb03b11ea22bb3399b9c53f8a8ee4`  
-		Last Modified: Tue, 30 Nov 2021 08:33:21 GMT  
+	-	`sha256:b7b1f5671cf56202f350a6e1a06cd5178e95168bc2d2d45729c249a449fa74aa`  
+		Last Modified: Sat, 04 Dec 2021 00:03:26 GMT  
 		Size: 4.7 KB (4719 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -47287,7 +47287,7 @@ CMD ["postgres"]
 ## `postgres:latest`
 
 ```console
-$ docker pull postgres@sha256:1c06b5e69db18609fcbbc385651cba21962539cd0dddc4f2458e97a6b2b0f43a
+$ docker pull postgres@sha256:f76241d07218561e3d1a334eae6a5bf63c70b49f35ffecb7f020448e30e37390
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -47909,121 +47909,121 @@ CMD ["postgres"]
 ### `postgres:latest` - linux; mips64le
 
 ```console
-$ docker pull postgres@sha256:626a00d28e9043d6e38bd967af0b563e874c9434c67004c8e428752d81bae661
+$ docker pull postgres@sha256:8f549f1adc5796b8685c9f516ff51d91854f7b07f3787c8b4e26e987008c96ed
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **131.7 MB (131746938 bytes)**  
+-	Total Size: **131.7 MB (131747243 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8bf6c0920dbf0498ba795a4fc7863bf4c9c05ac89fdd7820f8d04858da679db6`
+-	Image ID: `sha256:df113fa4de88979925b6c1541301efaf67a61e559cc9b4b57653e16559d02794`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Wed, 17 Nov 2021 02:10:13 GMT
-ADD file:10bc783d286d0a800f59d5009e87ecb4651659c82cae1325132756c7c8b1dec0 in / 
-# Wed, 17 Nov 2021 02:10:13 GMT
+# Thu, 02 Dec 2021 03:09:10 GMT
+ADD file:419aff162077eb16923c3ede6455ca86756a929a5a837bc6ac6b8dc67913503a in / 
+# Thu, 02 Dec 2021 03:09:10 GMT
 CMD ["bash"]
-# Wed, 17 Nov 2021 03:38:46 GMT
+# Fri, 03 Dec 2021 19:20:44 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 17 Nov 2021 03:38:48 GMT
+# Fri, 03 Dec 2021 19:20:46 GMT
 RUN set -eux; 	groupadd -r postgres --gid=999; 	useradd -r -g postgres --uid=999 --home-dir=/var/lib/postgresql --shell=/bin/bash postgres; 	mkdir -p /var/lib/postgresql; 	chown -R postgres:postgres /var/lib/postgresql
-# Tue, 30 Nov 2021 03:51:38 GMT
+# Fri, 03 Dec 2021 19:20:46 GMT
 ENV GOSU_VERSION=1.14
-# Tue, 30 Nov 2021 03:51:59 GMT
+# Fri, 03 Dec 2021 19:21:06 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Tue, 30 Nov 2021 03:52:23 GMT
+# Fri, 03 Dec 2021 19:21:31 GMT
 RUN set -eux; 	if [ -f /etc/dpkg/dpkg.cfg.d/docker ]; then 		grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 		sed -ri '/\/usr\/share\/locale/d' /etc/dpkg/dpkg.cfg.d/docker; 		! grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; 	fi; 	apt-get update; apt-get install -y --no-install-recommends locales; rm -rf /var/lib/apt/lists/*; 	localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Tue, 30 Nov 2021 03:52:24 GMT
+# Fri, 03 Dec 2021 19:21:31 GMT
 ENV LANG=en_US.utf8
-# Tue, 30 Nov 2021 03:52:36 GMT
+# Fri, 03 Dec 2021 19:21:44 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libnss-wrapper 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 30 Nov 2021 03:52:38 GMT
+# Fri, 03 Dec 2021 19:21:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 30 Nov 2021 03:52:41 GMT
+# Fri, 03 Dec 2021 19:21:48 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	gpg --batch --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	command -v gpgconf > /dev/null && gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Tue, 30 Nov 2021 03:52:41 GMT
+# Fri, 03 Dec 2021 19:21:48 GMT
 ENV PG_MAJOR=14
-# Tue, 30 Nov 2021 03:52:42 GMT
+# Fri, 03 Dec 2021 19:21:49 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/14/bin
-# Tue, 30 Nov 2021 03:52:42 GMT
+# Fri, 03 Dec 2021 19:21:49 GMT
 ENV PG_VERSION=14.1-1.pgdg110+1
-# Tue, 30 Nov 2021 04:48:19 GMT
+# Fri, 03 Dec 2021 20:17:32 GMT
 RUN set -ex; 		export PYTHONDONTWRITEBYTECODE=1; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		amd64 | arm64 | ppc64el) 			echo "deb http://apt.postgresql.org/pub/repos/apt/ bullseye-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 			apt-get update; 			;; 		*) 			echo "deb-src http://apt.postgresql.org/pub/repos/apt/ bullseye-pgdg main $PG_MAJOR" > /etc/apt/sources.list.d/pgdg.list; 						tempDir="$(mktemp -d)"; 			cd "$tempDir"; 						savedAptMark="$(apt-mark showmanual)"; 						apt-get update; 			apt-get build-dep -y 				postgresql-common pgdg-keyring 				"postgresql-$PG_MAJOR=$PG_VERSION" 			; 			DEB_BUILD_OPTIONS="nocheck parallel=$(nproc)" 				apt-get source --compile 					postgresql-common pgdg-keyring 					"postgresql-$PG_MAJOR=$PG_VERSION" 			; 						apt-mark showmanual | xargs apt-mark auto > /dev/null; 			apt-mark manual $savedAptMark; 						ls -lAFh; 			dpkg-scanpackages . > Packages; 			grep '^Package: ' Packages; 			echo "deb [ trusted=yes ] file://$tempDir ./" > /etc/apt/sources.list.d/temp.list; 			apt-get -o Acquire::GzipIndexes=false update; 			;; 	esac; 		apt-get install -y --no-install-recommends postgresql-common; 	sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf; 	apt-get install -y --no-install-recommends 		"postgresql-$PG_MAJOR=$PG_VERSION" 	; 		rm -rf /var/lib/apt/lists/*; 		if [ -n "$tempDir" ]; then 		apt-get purge -y --auto-remove; 		rm -rf "$tempDir" /etc/apt/sources.list.d/temp.list; 	fi; 		find /usr -name '*.pyc' -type f -exec bash -c 'for pyc; do dpkg -S "$pyc" &> /dev/null || rm -vf "$pyc"; done' -- '{}' +; 		postgres --version
-# Tue, 30 Nov 2021 04:48:22 GMT
+# Fri, 03 Dec 2021 20:17:35 GMT
 RUN set -eux; 	dpkg-divert --add --rename --divert "/usr/share/postgresql/postgresql.conf.sample.dpkg" "/usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample"; 	cp -v /usr/share/postgresql/postgresql.conf.sample.dpkg /usr/share/postgresql/postgresql.conf.sample; 	ln -sv ../postgresql.conf.sample "/usr/share/postgresql/$PG_MAJOR/"; 	sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample; 	grep -F "listen_addresses = '*'" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 30 Nov 2021 04:48:28 GMT
+# Fri, 03 Dec 2021 20:17:37 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod 2777 /var/run/postgresql
-# Tue, 30 Nov 2021 04:48:28 GMT
+# Fri, 03 Dec 2021 20:17:38 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 30 Nov 2021 04:48:30 GMT
+# Fri, 03 Dec 2021 20:17:40 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA"
-# Tue, 30 Nov 2021 04:48:31 GMT
+# Fri, 03 Dec 2021 20:17:40 GMT
 VOLUME [/var/lib/postgresql/data]
-# Tue, 30 Nov 2021 04:48:31 GMT
+# Fri, 03 Dec 2021 20:17:41 GMT
 COPY file:6e4de9271291e4bdd4a40b73fffe4d6d1aeff033460f5b14d74e948686daa095 in /usr/local/bin/ 
-# Tue, 30 Nov 2021 04:48:32 GMT
+# Fri, 03 Dec 2021 20:17:41 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 30 Nov 2021 04:48:32 GMT
+# Fri, 03 Dec 2021 20:17:41 GMT
 STOPSIGNAL SIGINT
-# Tue, 30 Nov 2021 04:48:32 GMT
+# Fri, 03 Dec 2021 20:17:42 GMT
 EXPOSE 5432
-# Tue, 30 Nov 2021 04:48:33 GMT
+# Fri, 03 Dec 2021 20:17:42 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:08bca22fbffb4e58224e9e4f6a56f1ca5099c002b1aeb6181df63af308a3da58`  
-		Last Modified: Wed, 17 Nov 2021 02:19:09 GMT  
-		Size: 29.6 MB (29630388 bytes)  
+	-	`sha256:df61fb15db6391af55d70bc3c0db3e9014438c81bf802619fb527221adf5e8a8`  
+		Last Modified: Thu, 02 Dec 2021 03:17:58 GMT  
+		Size: 29.6 MB (29630496 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:173240a7e67fd44ecc0ad5edd818557628d50f00c5d2a5f3d580e0a2ac091610`  
-		Last Modified: Wed, 17 Nov 2021 08:20:21 GMT  
-		Size: 4.4 MB (4402817 bytes)  
+	-	`sha256:aead74c300746557e558c9a90ac68d244f2d0a4887452c091df5b13129cb2b9f`  
+		Last Modified: Sat, 04 Dec 2021 00:03:36 GMT  
+		Size: 4.4 MB (4402852 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5442a27e75e2c0fbbf3bcf39b1c33f75d31863490f96ba2f0f1921ef6da25caf`  
-		Last Modified: Wed, 17 Nov 2021 08:20:17 GMT  
-		Size: 1.8 KB (1767 bytes)  
+	-	`sha256:ff24a9c55d840ff572c517a90e96685d72a67060b5e33095553fb562baab18cf`  
+		Last Modified: Sat, 04 Dec 2021 00:03:32 GMT  
+		Size: 1.8 KB (1769 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2054e4460d2a19717dd4a336b47653df9571eda928f0f361edc1ab86244ddcc2`  
-		Last Modified: Tue, 30 Nov 2021 08:33:27 GMT  
-		Size: 1.3 MB (1298194 bytes)  
+	-	`sha256:ff2f2672897c98937e158db018d3d1b122bf326ce588884511581b48ad1a88ff`  
+		Last Modified: Sat, 04 Dec 2021 00:03:33 GMT  
+		Size: 1.3 MB (1298160 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb7d76eb66b099fba3c2444676a5f23198b89f04ca562d92fe3cbad93e17ed6f`  
-		Last Modified: Tue, 30 Nov 2021 08:33:31 GMT  
-		Size: 8.0 MB (8043954 bytes)  
+	-	`sha256:79a1189dc92e0a7d42054bcaba5f31998c46ca53d7c74cede00da57e1ad8e953`  
+		Last Modified: Sat, 04 Dec 2021 00:03:37 GMT  
+		Size: 8.0 MB (8043932 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fde934ccf5b463f3cc67c5e044fdb538461feed010e478a8adb22f25017f220b`  
-		Last Modified: Tue, 30 Nov 2021 08:33:24 GMT  
-		Size: 439.2 KB (439195 bytes)  
+	-	`sha256:6ebf674bd1ad23a8d1eb79e72400b0113c5888197764e12868bb0bf9e8524f35`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
+		Size: 439.2 KB (439177 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0517cbc7ba02213b80d94a9809694781806502aef56896f981df723099874173`  
-		Last Modified: Tue, 30 Nov 2021 08:33:23 GMT  
+	-	`sha256:082848bd27554921aa8011299d5bc6ca85fd6ad7f1c5ceb5a0af2f8d453db000`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5ff4ee65102820557350a5542a9ce98ad5efe0fcb3cf0a382b9ef99f9850a99`  
-		Last Modified: Tue, 30 Nov 2021 08:33:23 GMT  
-		Size: 3.1 KB (3052 bytes)  
+	-	`sha256:77c733c7a0c1c23d143a50ed0a6e48a73f8aac5364a708d48a3ea82b16359311`  
+		Last Modified: Sat, 04 Dec 2021 00:03:29 GMT  
+		Size: 3.1 KB (3054 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fbf94935d67b1e559293359f341d792b86550ddcee61e250e71d018d40f0914d`  
-		Last Modified: Tue, 30 Nov 2021 08:34:22 GMT  
-		Size: 87.9 MB (87912904 bytes)  
+	-	`sha256:baea0b9d66fdf23965574a0a0a745a9c4dfb4c5bea773470308d847180a2b37b`  
+		Last Modified: Sat, 04 Dec 2021 00:04:28 GMT  
+		Size: 87.9 MB (87913130 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d701ee6ea6f9ab303cbbd384c0ed4571e7b947fb223dad2ee212464d15f2d75d`  
-		Last Modified: Tue, 30 Nov 2021 08:33:21 GMT  
-		Size: 9.5 KB (9532 bytes)  
+	-	`sha256:e7dd8c780130b361ccc81662c627871ebb3b1faf9969deb03419b4380c3e0c48`  
+		Last Modified: Sat, 04 Dec 2021 00:03:26 GMT  
+		Size: 9.5 KB (9539 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:069952f14e8c9fad9162942b8325253c9d85cabafc65cc928d7bef15cc7ff330`  
-		Last Modified: Tue, 30 Nov 2021 08:33:21 GMT  
-		Size: 130.0 B  
+	-	`sha256:2800f386c196ba48f74801f09f7e7992fc75a50642fddb051b31fd48a2ae0518`  
+		Last Modified: Sat, 04 Dec 2021 00:03:26 GMT  
+		Size: 129.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd9048a6cbcc1c354cd74e0dbec9c2c96cbfd95bb0c42c3161fcd408ffb28038`  
-		Last Modified: Tue, 30 Nov 2021 08:33:21 GMT  
+	-	`sha256:34d7fea6f2d1874f7a3c57743e055e3ddf4c9f3a09c7804b704fc6e548cda6c5`  
+		Last Modified: Sat, 04 Dec 2021 00:03:26 GMT  
 		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ffd49dbf0018bb29263c66ed04c43a3a930fb03b11ea22bb3399b9c53f8a8ee4`  
-		Last Modified: Tue, 30 Nov 2021 08:33:21 GMT  
+	-	`sha256:b7b1f5671cf56202f350a6e1a06cd5178e95168bc2d2d45729c249a449fa74aa`  
+		Last Modified: Sat, 04 Dec 2021 00:03:26 GMT  
 		Size: 4.7 KB (4719 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
