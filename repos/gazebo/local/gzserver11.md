@@ -4,7 +4,7 @@
 
 - Image ID: `sha256:30b18f47dbf6cf205c4aef42ad388a1236a03fc0d79cef0b9ec745d7d8d35c63`
 - Created: `2021-11-01T22:58:24.503172004Z`
-- Virtual Size: ~ 809.08 Mb  
+- Virtual Size: ~ 809.10 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/gzserver_entrypoint.sh"]`
@@ -1270,14 +1270,9 @@ Licenses: (parsed from: `/usr/share/doc/gazebo11/copyright`, `/usr/share/doc/gaz
 - `LGPL-3+`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gazebo11=11.9.0-1~focal
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/g/gazebo11/gazebo11_11.9.0-1~focal.dsc' gazebo11_11.9.0-1~focal.dsc 2664 SHA256:a8d0cc653c8ace10dde16255d71ce482d4d0657a7cbfb4b9a6e75576472a736d
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/g/gazebo11/gazebo11_11.9.0.orig.tar.bz2' gazebo11_11.9.0.orig.tar.bz2 56472051 SHA256:57dfc5e778a820a435baa050b4888f95cd968fdcb071d417c4c5453691b81f2e
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/g/gazebo11/gazebo11_11.9.0-1~focal.debian.tar.xz' gazebo11_11.9.0-1~focal.debian.tar.xz 6856 SHA256:2a6821597977d4b368fdb1ee0474dd273743b78deeac95366a2d0d13689a74a0
-```
 
 ### `dpkg` source package: `gcc-10=10.3.0-1ubuntu1~20.04`
 
