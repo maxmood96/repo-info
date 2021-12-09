@@ -6,93 +6,119 @@
 -	[`mongo:4-focal`](#mongo4-focal)
 -	[`mongo:4-nanoserver`](#mongo4-nanoserver)
 -	[`mongo:4-nanoserver-1809`](#mongo4-nanoserver-1809)
+-	[`mongo:4-nanoserver-ltsc2022`](#mongo4-nanoserver-ltsc2022)
 -	[`mongo:4-windowsservercore`](#mongo4-windowsservercore)
 -	[`mongo:4-windowsservercore-1809`](#mongo4-windowsservercore-1809)
 -	[`mongo:4-windowsservercore-ltsc2016`](#mongo4-windowsservercore-ltsc2016)
+-	[`mongo:4-windowsservercore-ltsc2022`](#mongo4-windowsservercore-ltsc2022)
 -	[`mongo:4.0`](#mongo40)
 -	[`mongo:4.0-nanoserver`](#mongo40-nanoserver)
 -	[`mongo:4.0-nanoserver-1809`](#mongo40-nanoserver-1809)
+-	[`mongo:4.0-nanoserver-ltsc2022`](#mongo40-nanoserver-ltsc2022)
 -	[`mongo:4.0-windowsservercore`](#mongo40-windowsservercore)
 -	[`mongo:4.0-windowsservercore-1809`](#mongo40-windowsservercore-1809)
 -	[`mongo:4.0-windowsservercore-ltsc2016`](#mongo40-windowsservercore-ltsc2016)
+-	[`mongo:4.0-windowsservercore-ltsc2022`](#mongo40-windowsservercore-ltsc2022)
 -	[`mongo:4.0-xenial`](#mongo40-xenial)
 -	[`mongo:4.0.27`](#mongo4027)
 -	[`mongo:4.0.27-nanoserver`](#mongo4027-nanoserver)
 -	[`mongo:4.0.27-nanoserver-1809`](#mongo4027-nanoserver-1809)
+-	[`mongo:4.0.27-nanoserver-ltsc2022`](#mongo4027-nanoserver-ltsc2022)
 -	[`mongo:4.0.27-windowsservercore`](#mongo4027-windowsservercore)
 -	[`mongo:4.0.27-windowsservercore-1809`](#mongo4027-windowsservercore-1809)
 -	[`mongo:4.0.27-windowsservercore-ltsc2016`](#mongo4027-windowsservercore-ltsc2016)
+-	[`mongo:4.0.27-windowsservercore-ltsc2022`](#mongo4027-windowsservercore-ltsc2022)
 -	[`mongo:4.0.27-xenial`](#mongo4027-xenial)
 -	[`mongo:4.2`](#mongo42)
 -	[`mongo:4.2-bionic`](#mongo42-bionic)
 -	[`mongo:4.2-nanoserver`](#mongo42-nanoserver)
 -	[`mongo:4.2-nanoserver-1809`](#mongo42-nanoserver-1809)
+-	[`mongo:4.2-nanoserver-ltsc2022`](#mongo42-nanoserver-ltsc2022)
 -	[`mongo:4.2-windowsservercore`](#mongo42-windowsservercore)
 -	[`mongo:4.2-windowsservercore-1809`](#mongo42-windowsservercore-1809)
 -	[`mongo:4.2-windowsservercore-ltsc2016`](#mongo42-windowsservercore-ltsc2016)
+-	[`mongo:4.2-windowsservercore-ltsc2022`](#mongo42-windowsservercore-ltsc2022)
 -	[`mongo:4.2.17`](#mongo4217)
 -	[`mongo:4.2.17-bionic`](#mongo4217-bionic)
 -	[`mongo:4.2.17-nanoserver`](#mongo4217-nanoserver)
 -	[`mongo:4.2.17-nanoserver-1809`](#mongo4217-nanoserver-1809)
+-	[`mongo:4.2.17-nanoserver-ltsc2022`](#mongo4217-nanoserver-ltsc2022)
 -	[`mongo:4.2.17-windowsservercore`](#mongo4217-windowsservercore)
 -	[`mongo:4.2.17-windowsservercore-1809`](#mongo4217-windowsservercore-1809)
 -	[`mongo:4.2.17-windowsservercore-ltsc2016`](#mongo4217-windowsservercore-ltsc2016)
+-	[`mongo:4.2.17-windowsservercore-ltsc2022`](#mongo4217-windowsservercore-ltsc2022)
 -	[`mongo:4.4`](#mongo44)
 -	[`mongo:4.4-focal`](#mongo44-focal)
 -	[`mongo:4.4-nanoserver`](#mongo44-nanoserver)
 -	[`mongo:4.4-nanoserver-1809`](#mongo44-nanoserver-1809)
+-	[`mongo:4.4-nanoserver-ltsc2022`](#mongo44-nanoserver-ltsc2022)
 -	[`mongo:4.4-rc`](#mongo44-rc)
 -	[`mongo:4.4-rc-focal`](#mongo44-rc-focal)
 -	[`mongo:4.4-rc-nanoserver`](#mongo44-rc-nanoserver)
 -	[`mongo:4.4-rc-nanoserver-1809`](#mongo44-rc-nanoserver-1809)
+-	[`mongo:4.4-rc-nanoserver-ltsc2022`](#mongo44-rc-nanoserver-ltsc2022)
 -	[`mongo:4.4-rc-windowsservercore`](#mongo44-rc-windowsservercore)
 -	[`mongo:4.4-rc-windowsservercore-1809`](#mongo44-rc-windowsservercore-1809)
 -	[`mongo:4.4-rc-windowsservercore-ltsc2016`](#mongo44-rc-windowsservercore-ltsc2016)
+-	[`mongo:4.4-rc-windowsservercore-ltsc2022`](#mongo44-rc-windowsservercore-ltsc2022)
 -	[`mongo:4.4-windowsservercore`](#mongo44-windowsservercore)
 -	[`mongo:4.4-windowsservercore-1809`](#mongo44-windowsservercore-1809)
 -	[`mongo:4.4-windowsservercore-ltsc2016`](#mongo44-windowsservercore-ltsc2016)
+-	[`mongo:4.4-windowsservercore-ltsc2022`](#mongo44-windowsservercore-ltsc2022)
 -	[`mongo:4.4.10`](#mongo4410)
 -	[`mongo:4.4.10-focal`](#mongo4410-focal)
 -	[`mongo:4.4.10-nanoserver`](#mongo4410-nanoserver)
 -	[`mongo:4.4.10-nanoserver-1809`](#mongo4410-nanoserver-1809)
+-	[`mongo:4.4.10-nanoserver-ltsc2022`](#mongo4410-nanoserver-ltsc2022)
 -	[`mongo:4.4.10-windowsservercore`](#mongo4410-windowsservercore)
 -	[`mongo:4.4.10-windowsservercore-1809`](#mongo4410-windowsservercore-1809)
 -	[`mongo:4.4.10-windowsservercore-ltsc2016`](#mongo4410-windowsservercore-ltsc2016)
+-	[`mongo:4.4.10-windowsservercore-ltsc2022`](#mongo4410-windowsservercore-ltsc2022)
 -	[`mongo:4.4.11-rc0`](#mongo4411-rc0)
 -	[`mongo:4.4.11-rc0-focal`](#mongo4411-rc0-focal)
 -	[`mongo:4.4.11-rc0-nanoserver`](#mongo4411-rc0-nanoserver)
 -	[`mongo:4.4.11-rc0-nanoserver-1809`](#mongo4411-rc0-nanoserver-1809)
+-	[`mongo:4.4.11-rc0-nanoserver-ltsc2022`](#mongo4411-rc0-nanoserver-ltsc2022)
 -	[`mongo:4.4.11-rc0-windowsservercore`](#mongo4411-rc0-windowsservercore)
 -	[`mongo:4.4.11-rc0-windowsservercore-1809`](#mongo4411-rc0-windowsservercore-1809)
 -	[`mongo:4.4.11-rc0-windowsservercore-ltsc2016`](#mongo4411-rc0-windowsservercore-ltsc2016)
+-	[`mongo:4.4.11-rc0-windowsservercore-ltsc2022`](#mongo4411-rc0-windowsservercore-ltsc2022)
 -	[`mongo:5`](#mongo5)
 -	[`mongo:5-focal`](#mongo5-focal)
 -	[`mongo:5-nanoserver`](#mongo5-nanoserver)
 -	[`mongo:5-nanoserver-1809`](#mongo5-nanoserver-1809)
+-	[`mongo:5-nanoserver-ltsc2022`](#mongo5-nanoserver-ltsc2022)
 -	[`mongo:5-windowsservercore`](#mongo5-windowsservercore)
 -	[`mongo:5-windowsservercore-1809`](#mongo5-windowsservercore-1809)
 -	[`mongo:5-windowsservercore-ltsc2016`](#mongo5-windowsservercore-ltsc2016)
+-	[`mongo:5-windowsservercore-ltsc2022`](#mongo5-windowsservercore-ltsc2022)
 -	[`mongo:5.0`](#mongo50)
 -	[`mongo:5.0-focal`](#mongo50-focal)
 -	[`mongo:5.0-nanoserver`](#mongo50-nanoserver)
 -	[`mongo:5.0-nanoserver-1809`](#mongo50-nanoserver-1809)
+-	[`mongo:5.0-nanoserver-ltsc2022`](#mongo50-nanoserver-ltsc2022)
 -	[`mongo:5.0-windowsservercore`](#mongo50-windowsservercore)
 -	[`mongo:5.0-windowsservercore-1809`](#mongo50-windowsservercore-1809)
 -	[`mongo:5.0-windowsservercore-ltsc2016`](#mongo50-windowsservercore-ltsc2016)
+-	[`mongo:5.0-windowsservercore-ltsc2022`](#mongo50-windowsservercore-ltsc2022)
 -	[`mongo:5.0.5`](#mongo505)
 -	[`mongo:5.0.5-focal`](#mongo505-focal)
 -	[`mongo:5.0.5-nanoserver`](#mongo505-nanoserver)
 -	[`mongo:5.0.5-nanoserver-1809`](#mongo505-nanoserver-1809)
+-	[`mongo:5.0.5-nanoserver-ltsc2022`](#mongo505-nanoserver-ltsc2022)
 -	[`mongo:5.0.5-windowsservercore`](#mongo505-windowsservercore)
 -	[`mongo:5.0.5-windowsservercore-1809`](#mongo505-windowsservercore-1809)
 -	[`mongo:5.0.5-windowsservercore-ltsc2016`](#mongo505-windowsservercore-ltsc2016)
+-	[`mongo:5.0.5-windowsservercore-ltsc2022`](#mongo505-windowsservercore-ltsc2022)
 -	[`mongo:focal`](#mongofocal)
 -	[`mongo:latest`](#mongolatest)
 -	[`mongo:nanoserver`](#mongonanoserver)
 -	[`mongo:nanoserver-1809`](#mongonanoserver-1809)
+-	[`mongo:nanoserver-ltsc2022`](#mongonanoserver-ltsc2022)
 -	[`mongo:windowsservercore`](#mongowindowsservercore)
 -	[`mongo:windowsservercore-1809`](#mongowindowsservercore-1809)
 -	[`mongo:windowsservercore-ltsc2016`](#mongowindowsservercore-ltsc2016)
+-	[`mongo:windowsservercore-ltsc2022`](#mongowindowsservercore-ltsc2022)
 
 ## `mongo:4`
 
@@ -884,6 +910,10 @@ CMD ["mongod" "--bind_ip_all"]
 		Size: 1.2 KB (1167 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `mongo:4-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
 ## `mongo:4-windowsservercore`
 
 ```console
@@ -1222,6 +1252,10 @@ CMD ["mongod" "--bind_ip_all"]
 		Last Modified: Wed, 10 Nov 2021 19:47:17 GMT  
 		Size: 1.4 KB (1414 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `mongo:4-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
 
 ## `mongo:4.0`
 
@@ -1832,6 +1866,10 @@ CMD ["mongod" "--bind_ip_all"]
 		Size: 1.2 KB (1172 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `mongo:4.0-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
 ## `mongo:4.0-windowsservercore`
 
 ```console
@@ -2170,6 +2208,10 @@ CMD ["mongod" "--bind_ip_all"]
 		Last Modified: Wed, 10 Nov 2021 19:57:39 GMT  
 		Size: 1.4 KB (1375 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `mongo:4.0-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
 
 ## `mongo:4.0-xenial`
 
@@ -3033,6 +3075,10 @@ CMD ["mongod" "--bind_ip_all"]
 		Size: 1.2 KB (1172 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `mongo:4.0.27-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
 ## `mongo:4.0.27-windowsservercore`
 
 ```console
@@ -3371,6 +3417,10 @@ CMD ["mongod" "--bind_ip_all"]
 		Last Modified: Wed, 10 Nov 2021 19:57:39 GMT  
 		Size: 1.4 KB (1375 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `mongo:4.0.27-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
 
 ## `mongo:4.0.27-xenial`
 
@@ -4415,6 +4465,10 @@ CMD ["mongod" "--bind_ip_all"]
 		Size: 1.2 KB (1178 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `mongo:4.2-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
 ## `mongo:4.2-windowsservercore`
 
 ```console
@@ -4753,6 +4807,10 @@ CMD ["mongod" "--bind_ip_all"]
 		Last Modified: Wed, 10 Nov 2021 19:50:11 GMT  
 		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `mongo:4.2-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
 
 ## `mongo:4.2.17`
 
@@ -5544,6 +5602,10 @@ CMD ["mongod" "--bind_ip_all"]
 		Size: 1.2 KB (1178 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `mongo:4.2.17-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
 ## `mongo:4.2.17-windowsservercore`
 
 ```console
@@ -5882,6 +5944,10 @@ CMD ["mongod" "--bind_ip_all"]
 		Last Modified: Wed, 10 Nov 2021 19:50:11 GMT  
 		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `mongo:4.2.17-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
 
 ## `mongo:4.4`
 
@@ -6673,6 +6739,10 @@ CMD ["mongod" "--bind_ip_all"]
 		Size: 1.2 KB (1167 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `mongo:4.4-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
 ## `mongo:4.4-rc`
 
 ```console
@@ -7463,6 +7533,10 @@ CMD ["mongod" "--bind_ip_all"]
 		Size: 1.0 KB (1012 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `mongo:4.4-rc-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
 ## `mongo:4.4-rc-windowsservercore`
 
 ```console
@@ -7802,6 +7876,10 @@ CMD ["mongod" "--bind_ip_all"]
 		Size: 1.3 KB (1281 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `mongo:4.4-rc-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
+
 ## `mongo:4.4-windowsservercore`
 
 ```console
@@ -8140,6 +8218,10 @@ CMD ["mongod" "--bind_ip_all"]
 		Last Modified: Wed, 10 Nov 2021 19:47:17 GMT  
 		Size: 1.4 KB (1414 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `mongo:4.4-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
 
 ## `mongo:4.4.10`
 
@@ -8931,6 +9013,10 @@ CMD ["mongod" "--bind_ip_all"]
 		Size: 1.2 KB (1167 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `mongo:4.4.10-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
 ## `mongo:4.4.10-windowsservercore`
 
 ```console
@@ -9269,6 +9355,10 @@ CMD ["mongod" "--bind_ip_all"]
 		Last Modified: Wed, 10 Nov 2021 19:47:17 GMT  
 		Size: 1.4 KB (1414 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `mongo:4.4.10-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
 
 ## `mongo:4.4.11-rc0`
 
@@ -10060,6 +10150,10 @@ CMD ["mongod" "--bind_ip_all"]
 		Size: 1.0 KB (1012 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `mongo:4.4.11-rc0-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
 ## `mongo:4.4.11-rc0-windowsservercore`
 
 ```console
@@ -10398,6 +10492,10 @@ CMD ["mongod" "--bind_ip_all"]
 		Last Modified: Tue, 23 Nov 2021 22:24:54 GMT  
 		Size: 1.3 KB (1281 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `mongo:4.4.11-rc0-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
 
 ## `mongo:5`
 
@@ -11189,6 +11287,10 @@ CMD ["mongod" "--bind_ip_all"]
 		Size: 1.1 KB (1122 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `mongo:5-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
 ## `mongo:5-windowsservercore`
 
 ```console
@@ -11527,6 +11629,10 @@ CMD ["mongod" "--bind_ip_all"]
 		Last Modified: Wed, 08 Dec 2021 00:30:43 GMT  
 		Size: 1.4 KB (1446 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `mongo:5-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
 
 ## `mongo:5.0`
 
@@ -12318,6 +12424,10 @@ CMD ["mongod" "--bind_ip_all"]
 		Size: 1.1 KB (1122 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `mongo:5.0-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
 ## `mongo:5.0-windowsservercore`
 
 ```console
@@ -12656,6 +12766,10 @@ CMD ["mongod" "--bind_ip_all"]
 		Last Modified: Wed, 08 Dec 2021 00:30:43 GMT  
 		Size: 1.4 KB (1446 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `mongo:5.0-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
 
 ## `mongo:5.0.5`
 
@@ -13447,6 +13561,10 @@ CMD ["mongod" "--bind_ip_all"]
 		Size: 1.1 KB (1122 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `mongo:5.0.5-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
 ## `mongo:5.0.5-windowsservercore`
 
 ```console
@@ -13785,6 +13903,10 @@ CMD ["mongod" "--bind_ip_all"]
 		Last Modified: Wed, 08 Dec 2021 00:30:43 GMT  
 		Size: 1.4 KB (1446 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `mongo:5.0.5-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
 
 ## `mongo:focal`
 
@@ -14576,6 +14698,10 @@ CMD ["mongod" "--bind_ip_all"]
 		Size: 1.1 KB (1122 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `mongo:nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
 ## `mongo:windowsservercore`
 
 ```console
@@ -14914,3 +15040,7 @@ CMD ["mongod" "--bind_ip_all"]
 		Last Modified: Wed, 08 Dec 2021 00:30:43 GMT  
 		Size: 1.4 KB (1446 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `mongo:windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
