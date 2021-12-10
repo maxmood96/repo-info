@@ -1,7 +1,7 @@
 ## `traefik:maroilles-alpine`
 
 ```console
-$ docker pull traefik@sha256:895f8572c63df0f7377209c0fce487681a8b41fc99d300f04db4efe70773dd1e
+$ docker pull traefik@sha256:50732108778d2600002e936d0e8863fbc549152fbc2882663a0cd1f70e419fee
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13,14 +13,14 @@ $ docker pull traefik@sha256:895f8572c63df0f7377209c0fce487681a8b41fc99d300f04db
 ### `traefik:maroilles-alpine` - linux; amd64
 
 ```console
-$ docker pull traefik@sha256:88d1942373e2ee0780b6325aea2688c2034dcd22960a4890a88dcbf336d9d8f7
+$ docker pull traefik@sha256:26057fa675bf46c770691d54fa06179744a268643d6d9265a100b33f7616a7fe
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.7 MB (25661520 bytes)**  
+-	Total Size: **25.7 MB (25663227 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2a5ed2d11ff8e56c38cf11e53edb054d1d6ea1bf38151cbc2c03c87f8da717a9`
+-	Image ID: `sha256:ae0385562c2ca638c3e56fc5e368e0d760861501c3acb1be07b1ec2ff5f4ec8a`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["traefik"]`
 
@@ -31,18 +31,18 @@ ADD file:762c899ec0505d1a32930ee804c5b008825f41611161be104076cba33b7e5b2b in /
 CMD ["/bin/sh"]
 # Sat, 13 Nov 2021 07:23:08 GMT
 RUN apk --no-cache add ca-certificates tzdata
-# Sat, 13 Nov 2021 07:23:21 GMT
-RUN set -ex; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		armhf) arch='arm' ;; 		aarch64) arch='arm64' ;; 		x86_64) arch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: $apkArch"; exit 1 ;; 	esac; 	wget --quiet -O /usr/local/bin/traefik "https://github.com/traefik/traefik/releases/download/v1.7.33/traefik_linux-$arch"; 	chmod +x /usr/local/bin/traefik
-# Sat, 13 Nov 2021 07:23:22 GMT
+# Fri, 10 Dec 2021 21:32:17 GMT
+RUN set -ex; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		armhf) arch='arm' ;; 		aarch64) arch='arm64' ;; 		x86_64) arch='amd64' ;; 		*) echo >&2 "error: unsupported architecture: $apkArch"; exit 1 ;; 	esac; 	wget --quiet -O /usr/local/bin/traefik "https://github.com/traefik/traefik/releases/download/v1.7.34/traefik_linux-$arch"; 	chmod +x /usr/local/bin/traefik
+# Fri, 10 Dec 2021 21:32:17 GMT
 COPY file:59a219a1fb7a9dc894a7a9a4718fa97fd24adb0a4a6455240ec2ab0183da796e in / 
-# Sat, 13 Nov 2021 07:23:22 GMT
+# Fri, 10 Dec 2021 21:32:17 GMT
 EXPOSE 80
-# Sat, 13 Nov 2021 07:23:22 GMT
+# Fri, 10 Dec 2021 21:32:17 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Sat, 13 Nov 2021 07:23:22 GMT
+# Fri, 10 Dec 2021 21:32:18 GMT
 CMD ["traefik"]
-# Sat, 13 Nov 2021 07:23:23 GMT
-LABEL org.opencontainers.image.vendor=traefik org.opencontainers.image.url=https://traefik.io org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v1.7.33 org.opencontainers.image.documentation=https://docs.traefik.io
+# Fri, 10 Dec 2021 21:32:18 GMT
+LABEL org.opencontainers.image.vendor=traefik org.opencontainers.image.url=https://traefik.io org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v1.7.34 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
 -	Layers:
@@ -54,13 +54,13 @@ LABEL org.opencontainers.image.vendor=traefik org.opencontainers.image.url=https
 		Last Modified: Sat, 13 Nov 2021 07:24:22 GMT  
 		Size: 677.8 KB (677824 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:37bcebf415844088de9001ae6841f5143addba165be18d16263bf7424c28d22b`  
-		Last Modified: Sat, 13 Nov 2021 07:24:55 GMT  
-		Size: 22.2 MB (22160346 bytes)  
+	-	`sha256:4f8fccde93889bb45e3ec014080674609715442d77a83c4e22aed842c54aa320`  
+		Last Modified: Fri, 10 Dec 2021 21:33:40 GMT  
+		Size: 22.2 MB (22162054 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:09af340c688250b3b431d7a174439b91dafb6df7c5981e8e817f9b2ee79fc627`  
-		Last Modified: Sat, 13 Nov 2021 07:24:50 GMT  
-		Size: 369.0 B  
+	-	`sha256:c5edab535d879083fbb7bc0569dd3b1588e3ad6549c4ba201eecf74820ad66aa`  
+		Last Modified: Fri, 10 Dec 2021 21:33:35 GMT  
+		Size: 368.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `traefik:maroilles-alpine` - linux; arm variant v6
