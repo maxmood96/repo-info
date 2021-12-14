@@ -134,6 +134,9 @@
 -	[`neo4j:4.2.11`](#neo4j4211)
 -	[`neo4j:4.2.11-community`](#neo4j4211-community)
 -	[`neo4j:4.2.11-enterprise`](#neo4j4211-enterprise)
+-	[`neo4j:4.2.12`](#neo4j4212)
+-	[`neo4j:4.2.12-community`](#neo4j4212-community)
+-	[`neo4j:4.2.12-enterprise`](#neo4j4212-enterprise)
 -	[`neo4j:4.2.2`](#neo4j422)
 -	[`neo4j:4.2.2-community`](#neo4j422-community)
 -	[`neo4j:4.2.2-enterprise`](#neo4j422-enterprise)
@@ -14534,6 +14537,18 @@ CMD ["neo4j"]
 		Last Modified: Fri, 03 Dec 2021 17:01:39 GMT  
 		Size: 6.2 KB (6206 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `neo4j:4.2.12`
+
+**does not exist** (yet?)
+
+## `neo4j:4.2.12-community`
+
+**does not exist** (yet?)
+
+## `neo4j:4.2.12-enterprise`
+
+**does not exist** (yet?)
 
 ## `neo4j:4.2.2`
 
