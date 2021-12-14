@@ -188,12 +188,18 @@
 -	[`neo4j:4.3.7`](#neo4j437)
 -	[`neo4j:4.3.7-community`](#neo4j437-community)
 -	[`neo4j:4.3.7-enterprise`](#neo4j437-enterprise)
+-	[`neo4j:4.3.8`](#neo4j438)
+-	[`neo4j:4.3.8-community`](#neo4j438-community)
+-	[`neo4j:4.3.8-enterprise`](#neo4j438-enterprise)
 -	[`neo4j:4.4`](#neo4j44)
 -	[`neo4j:4.4-community`](#neo4j44-community)
 -	[`neo4j:4.4-enterprise`](#neo4j44-enterprise)
 -	[`neo4j:4.4.0`](#neo4j440)
 -	[`neo4j:4.4.0-community`](#neo4j440-community)
 -	[`neo4j:4.4.0-enterprise`](#neo4j440-enterprise)
+-	[`neo4j:4.4.1`](#neo4j441)
+-	[`neo4j:4.4.1-community`](#neo4j441-community)
+-	[`neo4j:4.4.1-enterprise`](#neo4j441-enterprise)
 -	[`neo4j:community`](#neo4jcommunity)
 -	[`neo4j:enterprise`](#neo4jenterprise)
 -	[`neo4j:latest`](#neo4jlatest)
@@ -20532,6 +20538,18 @@ CMD ["neo4j"]
 		Size: 6.4 KB (6427 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `neo4j:4.3.8`
+
+**does not exist** (yet?)
+
+## `neo4j:4.3.8-community`
+
+**does not exist** (yet?)
+
+## `neo4j:4.3.8-enterprise`
+
+**does not exist** (yet?)
+
 ## `neo4j:4.4`
 
 ```console
@@ -21761,6 +21779,18 @@ CMD ["neo4j"]
 		Last Modified: Tue, 07 Dec 2021 17:37:57 GMT  
 		Size: 6.6 KB (6554 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `neo4j:4.4.1`
+
+**does not exist** (yet?)
+
+## `neo4j:4.4.1-community`
+
+**does not exist** (yet?)
+
+## `neo4j:4.4.1-enterprise`
+
+**does not exist** (yet?)
 
 ## `neo4j:community`
 
