@@ -1,7 +1,7 @@
 ## `alt:latest`
 
 ```console
-$ docker pull alt@sha256:629d0674192aa01ee15dd8df0f22fd1e0efcb62fd7ebca1252b3f3d13fdc95b2
+$ docker pull alt@sha256:f0cfb36b4b810eacc8b14b1baa880936babd75a3a1feaffd6f2881bfe77f14c4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -83,24 +83,24 @@ CMD ["/bin/bash"]
 ### `alt:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull alt@sha256:cae253d247a47d098e72f009db3fc9b75f748fbd7766528f834fa97df0f94d01
+$ docker pull alt@sha256:2a2a0ed01d3118703f4f884ee597a33ffab092f42a3f5ebbaabab326f443a3a9
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **40.8 MB (40803855 bytes)**  
+-	Total Size: **40.8 MB (40803854 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1ef382274d41e0c4976b427d2a4d451f41e960def6d834a08654f556bed57983`
+-	Image ID: `sha256:1a49ceeffdb7015448f61177b6bec3bd9ed28859979a7bcbfe7d1b71f3d4dab4`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 04 Aug 2021 23:11:19 GMT
+# Wed, 15 Dec 2021 16:01:29 GMT
 MAINTAINER [Alexey Shabalin <shaba@altlinux.org>] [Mikhail Gordeev <obirvalger@altlinux.org]
-# Tue, 05 Oct 2021 22:39:48 GMT
+# Wed, 15 Dec 2021 16:01:32 GMT
 ADD file:2e8b90a92499ef5adf1d8e269489f5200db1e84d2ca1343e1cd8a3bfa3a55234 in / 
-# Tue, 05 Oct 2021 22:39:50 GMT
+# Wed, 15 Dec 2021 16:01:33 GMT
 RUN true > /etc/security/limits.d/50-defaults.conf
-# Tue, 05 Oct 2021 22:39:50 GMT
+# Wed, 15 Dec 2021 16:01:34 GMT
 CMD ["/bin/bash"]
 ```
 
@@ -109,9 +109,9 @@ CMD ["/bin/bash"]
 		Last Modified: Tue, 05 Oct 2021 22:40:33 GMT  
 		Size: 40.8 MB (40803663 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cee086f6d364c7f7ee7f0ca591bdba7490bee9f03884754e2b5452a8b1c5934c`  
-		Last Modified: Tue, 05 Oct 2021 22:40:27 GMT  
-		Size: 192.0 B  
+	-	`sha256:8b9a4ae80e9e2527575026520c367ccc14e19edcd72fca5ddaf1fca22ae360b5`  
+		Last Modified: Wed, 15 Dec 2021 16:02:13 GMT  
+		Size: 191.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `alt:latest` - linux; 386
