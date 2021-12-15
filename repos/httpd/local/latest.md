@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ea28e1b82f314092abd3f90a69e57d6ccf506382821ee0b8d9b48c3e47440c1f`
-- Created: `2021-12-02T10:03:55.933654778Z`
-- Virtual Size: ~ 143.49 Mb  
+- Image ID: `sha256:8362f2615893c70073d4b6576c884eade7f6ce81482780ac989d535b621750f9`
+- Created: `2021-12-14T23:32:57.669973921Z`
+- Virtual Size: ~ 143.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["httpd-foreground"]`
@@ -1858,6 +1858,7 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libldap-2.4-2:amd64=2.4.57+dfsg-3`
+- `libldap-common=2.4.57+dfsg-3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
