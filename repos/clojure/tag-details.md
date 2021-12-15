@@ -174,6 +174,7 @@
 -	[`clojure:tools-deps-1.10.3.1040`](#clojuretools-deps-11031040)
 -	[`clojure:tools-deps-1.10.3.1040-bullseye`](#clojuretools-deps-11031040-bullseye)
 -	[`clojure:tools-deps-1.10.3.1040-buster`](#clojuretools-deps-11031040-buster)
+-	[`clojure:tools-deps-1.10.3.1040-slim-bullseye`](#clojuretools-deps-11031040-slim-bullseye)
 -	[`clojure:tools-deps-1.10.3.1040-slim-buster`](#clojuretools-deps-11031040-slim-buster)
 -	[`clojure:tools-deps-bullseye`](#clojuretools-deps-bullseye)
 -	[`clojure:tools-deps-buster`](#clojuretools-deps-buster)
@@ -30452,6 +30453,10 @@ CMD ["-M" "--repl"]
 		Last Modified: Fri, 03 Dec 2021 06:16:07 GMT  
 		Size: 406.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `clojure:tools-deps-1.10.3.1040-slim-bullseye`
+
+**does not exist** (yet?)
 
 ## `clojure:tools-deps-1.10.3.1040-slim-buster`
 
