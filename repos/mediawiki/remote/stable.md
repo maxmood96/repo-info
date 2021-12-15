@@ -1,7 +1,7 @@
 ## `mediawiki:stable`
 
 ```console
-$ docker pull mediawiki@sha256:06e46e6342e39d4ba50d5b02dad08ddce608afff272eae4e2ee9774382baba01
+$ docker pull mediawiki@sha256:0fb43d14117a5ad24bc558c4a453b37c1407cadf1fb1575a5838c765f0f1f749
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16,14 +16,14 @@ $ docker pull mediawiki@sha256:06e46e6342e39d4ba50d5b02dad08ddce608afff272eae4e2
 ### `mediawiki:stable` - linux; amd64
 
 ```console
-$ docker pull mediawiki@sha256:86fbf6ad724acc3cfcc54539ffd7ee1ba7418ce849db4a70f5ef60295b7a8a4a
+$ docker pull mediawiki@sha256:8ddfa9b6a05cf92724420ed80cf7e7a61a4825e55bc3473ab5f05c5b52db7fec
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **261.6 MB (261617108 bytes)**  
+-	Total Size: **261.8 MB (261775835 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9717ef2135c96b8585d416fa1f9b359ab488e89ea638438f102363ad586ef8be`
+-	Image ID: `sha256:d986261764309259ef5256cefb83e9baa664b453a5694df8f891febbe32d68db`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -90,23 +90,23 @@ EXPOSE 80
 CMD ["apache2-foreground"]
 # Fri, 03 Dec 2021 18:23:56 GMT
 RUN set -eux; 		apt-get update; 	apt-get install -y --no-install-recommends 		git 		librsvg2-bin 		imagemagick 		python3 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 03 Dec 2021 18:24:57 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libicu-dev 		libonig-dev 	; 		docker-php-ext-install -j "$(nproc)" 		intl 		mbstring 		mysqli 		opcache 	; 		pecl install APCu-5.1.20; 	docker-php-ext-enable 		apcu 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { print $3 }' 		| sort -u 		| xargs -r dpkg-query -S 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*
-# Fri, 03 Dec 2021 18:24:58 GMT
+# Wed, 15 Dec 2021 19:50:12 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libicu-dev 		libonig-dev 	; 		docker-php-ext-install -j "$(nproc)" 		intl 		mbstring 		mysqli 		opcache 	; 		pecl install APCu-5.1.21; 	docker-php-ext-enable 		apcu 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { print $3 }' 		| sort -u 		| xargs -r dpkg-query -S 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*
+# Wed, 15 Dec 2021 19:50:13 GMT
 RUN set -eux; 	a2enmod rewrite; 	{ 		echo "<Directory /var/www/html>"; 		echo "  RewriteEngine On"; 		echo "  RewriteCond %{REQUEST_FILENAME} !-f"; 		echo "  RewriteCond %{REQUEST_FILENAME} !-d"; 		echo "  RewriteRule ^ %{DOCUMENT_ROOT}/index.php [L]"; 		echo "</Directory>"; 	} > "$APACHE_CONFDIR/conf-available/short-url.conf"; 	a2enconf short-url
-# Fri, 03 Dec 2021 18:24:59 GMT
+# Wed, 15 Dec 2021 19:50:14 GMT
 RUN sed -i "s/<\/VirtualHost>/\tAllowEncodedSlashes NoDecode\n<\/VirtualHost>/" "$APACHE_CONFDIR/sites-available/000-default.conf"
-# Fri, 03 Dec 2021 18:25:00 GMT
+# Wed, 15 Dec 2021 19:50:15 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Fri, 03 Dec 2021 18:25:01 GMT
+# Wed, 15 Dec 2021 19:50:15 GMT
 RUN set -eux; 	mkdir -p /var/www/data; 	chown -R www-data:www-data /var/www/data
-# Fri, 03 Dec 2021 18:25:01 GMT
+# Wed, 15 Dec 2021 19:50:16 GMT
 ENV MEDIAWIKI_MAJOR_VERSION=1.37
-# Fri, 03 Dec 2021 18:25:01 GMT
-ENV MEDIAWIKI_VERSION=1.37.0
-# Fri, 03 Dec 2021 18:25:38 GMT
+# Wed, 15 Dec 2021 19:50:16 GMT
+ENV MEDIAWIKI_VERSION=1.37.1
+# Wed, 15 Dec 2021 19:50:46 GMT
 RUN set -eux; 	fetchDeps=" 		gnupg 		dirmngr 	"; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 		curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz" -o mediawiki.tar.gz; 	curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz.sig" -o mediawiki.tar.gz.sig; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 		D7D6767D135A514BEB86E9BA75682B08E8A3FEC4 		441276E9CCD15F44F6D97D18C119E1A64D70938E 		F7F780D82EBFB8A56556E7EE82403E59F9F8CD79 		1D98867E82982C8FE0ABC25F9B69B3109D3BB7B0 	; 	gpg --batch --verify mediawiki.tar.gz.sig mediawiki.tar.gz; 	tar -x --strip-components=1 -f mediawiki.tar.gz; 	gpgconf --kill all; 	rm -r "$GNUPGHOME" mediawiki.tar.gz.sig mediawiki.tar.gz; 	chown -R www-data:www-data extensions skins cache images; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	rm -rf /var/lib/apt/lists/*
-# Fri, 03 Dec 2021 18:25:39 GMT
+# Wed, 15 Dec 2021 19:50:48 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -167,42 +167,42 @@ CMD ["apache2-foreground"]
 		Last Modified: Fri, 03 Dec 2021 18:34:33 GMT  
 		Size: 41.7 MB (41657063 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0f8e8a6a637376f215cf913d70b5cc6f70150ad41c1d8004cd44d188bad63c21`  
-		Last Modified: Fri, 03 Dec 2021 18:34:26 GMT  
-		Size: 1.7 MB (1705714 bytes)  
+	-	`sha256:f9bcf1dad86ff560c9b3474e41b4bb87681559456868c66e35bc7c8f25c68ab4`  
+		Last Modified: Wed, 15 Dec 2021 19:57:45 GMT  
+		Size: 1.7 MB (1700632 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2512caeaee753de6e20a92701abe0f652d79fa248b7ef847cf3ac3f788a8e92f`  
-		Last Modified: Fri, 03 Dec 2021 18:34:23 GMT  
-		Size: 578.0 B  
+	-	`sha256:9bf5c6aec56551815eaf457c57ea1ee62ba4fb7bc4f6eee3d01a91339e3d4641`  
+		Last Modified: Wed, 15 Dec 2021 19:57:43 GMT  
+		Size: 595.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2de6d62922e3fcef2fd8c2274337dd27d246574278a20e47edba76072368327c`  
-		Last Modified: Fri, 03 Dec 2021 18:34:24 GMT  
-		Size: 935.0 B  
+	-	`sha256:af72a200f7ece721dd1cd0489822eaeea45fbe668bd3d6908fa5e26ebfff6009`  
+		Last Modified: Wed, 15 Dec 2021 19:57:43 GMT  
+		Size: 934.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e7ef86ae2b24aeffcc4a7385ed3380747c5ce695902b017cc23630f08d9af71c`  
-		Last Modified: Fri, 03 Dec 2021 18:34:24 GMT  
-		Size: 314.0 B  
+	-	`sha256:1628ec9bc547502023b13f1790659cffd77c07263bb328367daece315e63e9f1`  
+		Last Modified: Wed, 15 Dec 2021 19:57:43 GMT  
+		Size: 317.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4d620530220992388b8f15a0c1f36d95cb47b52fa1b6aa62987fc47879b9f98d`  
-		Last Modified: Fri, 03 Dec 2021 18:34:23 GMT  
-		Size: 170.0 B  
+	-	`sha256:011f271cbd004d49fc8d1a78796e71d59a6e359f5683c60f9473cf1ef35cca34`  
+		Last Modified: Wed, 15 Dec 2021 19:57:43 GMT  
+		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b5d9d64cec0535bef94e0546751d4d27b49bf07e39c12d1e5fd5dc0dfc76d84a`  
-		Last Modified: Fri, 03 Dec 2021 18:34:35 GMT  
-		Size: 51.4 MB (51367808 bytes)  
+	-	`sha256:fc72ef0d4e9385814efef7b2eb0f78643cfc3afa431dfbcbf4a6df67c0dcd31a`  
+		Last Modified: Wed, 15 Dec 2021 19:57:54 GMT  
+		Size: 51.5 MB (51531597 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mediawiki:stable` - linux; arm variant v5
 
 ```console
-$ docker pull mediawiki@sha256:2b84b2202708f8238f83ecdf4c61dd2ca12b96505e6aea6eb32a3fb82ef1574f
+$ docker pull mediawiki@sha256:e4dae601dc285e78bdfd7a4f2581a6aa7c84ad7cca7bd733ae803a91abff8c2d
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **236.1 MB (236144198 bytes)**  
+-	Total Size: **236.3 MB (236309382 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8921708a496a01b3a140e54ae355bc4a8aad29633adbe8b408de40f891931e86`
+-	Image ID: `sha256:2abc7b305ceed43a94bee55b1ea864e85f2ea2ddd6c74fc90538f1882f56b28c`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -269,23 +269,23 @@ EXPOSE 80
 CMD ["apache2-foreground"]
 # Fri, 03 Dec 2021 14:17:07 GMT
 RUN set -eux; 		apt-get update; 	apt-get install -y --no-install-recommends 		git 		librsvg2-bin 		imagemagick 		python3 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 03 Dec 2021 14:19:36 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libicu-dev 		libonig-dev 	; 		docker-php-ext-install -j "$(nproc)" 		intl 		mbstring 		mysqli 		opcache 	; 		pecl install APCu-5.1.20; 	docker-php-ext-enable 		apcu 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { print $3 }' 		| sort -u 		| xargs -r dpkg-query -S 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*
-# Fri, 03 Dec 2021 14:19:38 GMT
+# Wed, 15 Dec 2021 19:51:29 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libicu-dev 		libonig-dev 	; 		docker-php-ext-install -j "$(nproc)" 		intl 		mbstring 		mysqli 		opcache 	; 		pecl install APCu-5.1.21; 	docker-php-ext-enable 		apcu 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { print $3 }' 		| sort -u 		| xargs -r dpkg-query -S 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*
+# Wed, 15 Dec 2021 19:51:31 GMT
 RUN set -eux; 	a2enmod rewrite; 	{ 		echo "<Directory /var/www/html>"; 		echo "  RewriteEngine On"; 		echo "  RewriteCond %{REQUEST_FILENAME} !-f"; 		echo "  RewriteCond %{REQUEST_FILENAME} !-d"; 		echo "  RewriteRule ^ %{DOCUMENT_ROOT}/index.php [L]"; 		echo "</Directory>"; 	} > "$APACHE_CONFDIR/conf-available/short-url.conf"; 	a2enconf short-url
-# Fri, 03 Dec 2021 14:19:39 GMT
+# Wed, 15 Dec 2021 19:51:33 GMT
 RUN sed -i "s/<\/VirtualHost>/\tAllowEncodedSlashes NoDecode\n<\/VirtualHost>/" "$APACHE_CONFDIR/sites-available/000-default.conf"
-# Fri, 03 Dec 2021 14:19:41 GMT
+# Wed, 15 Dec 2021 19:51:35 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Fri, 03 Dec 2021 14:19:43 GMT
+# Wed, 15 Dec 2021 19:51:37 GMT
 RUN set -eux; 	mkdir -p /var/www/data; 	chown -R www-data:www-data /var/www/data
-# Fri, 03 Dec 2021 14:19:43 GMT
+# Wed, 15 Dec 2021 19:51:37 GMT
 ENV MEDIAWIKI_MAJOR_VERSION=1.37
-# Fri, 03 Dec 2021 14:19:43 GMT
-ENV MEDIAWIKI_VERSION=1.37.0
-# Fri, 03 Dec 2021 14:21:00 GMT
+# Wed, 15 Dec 2021 19:51:38 GMT
+ENV MEDIAWIKI_VERSION=1.37.1
+# Wed, 15 Dec 2021 19:52:39 GMT
 RUN set -eux; 	fetchDeps=" 		gnupg 		dirmngr 	"; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 		curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz" -o mediawiki.tar.gz; 	curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz.sig" -o mediawiki.tar.gz.sig; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 		D7D6767D135A514BEB86E9BA75682B08E8A3FEC4 		441276E9CCD15F44F6D97D18C119E1A64D70938E 		F7F780D82EBFB8A56556E7EE82403E59F9F8CD79 		1D98867E82982C8FE0ABC25F9B69B3109D3BB7B0 	; 	gpg --batch --verify mediawiki.tar.gz.sig mediawiki.tar.gz; 	tar -x --strip-components=1 -f mediawiki.tar.gz; 	gpgconf --kill all; 	rm -r "$GNUPGHOME" mediawiki.tar.gz.sig mediawiki.tar.gz; 	chown -R www-data:www-data extensions skins cache images; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	rm -rf /var/lib/apt/lists/*
-# Fri, 03 Dec 2021 14:21:02 GMT
+# Wed, 15 Dec 2021 19:52:41 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -346,42 +346,42 @@ CMD ["apache2-foreground"]
 		Last Modified: Fri, 03 Dec 2021 14:43:05 GMT  
 		Size: 38.3 MB (38260622 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21a4d7618dd7523b3272958fc67c46822a328ca11aff43fecda6836b2315af73`  
-		Last Modified: Fri, 03 Dec 2021 14:42:42 GMT  
-		Size: 1.7 MB (1651288 bytes)  
+	-	`sha256:5de47f3afae8f6fab502b4a2fb0165ef539b2f9ec49faa56f4660005c1d1049e`  
+		Last Modified: Wed, 15 Dec 2021 20:03:14 GMT  
+		Size: 1.6 MB (1648740 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61fa36c1d1ef9b3d8f2a820b49a7a52d8aaacff6c1ef96f66d7f42e4e518fade`  
-		Last Modified: Fri, 03 Dec 2021 14:42:39 GMT  
-		Size: 581.0 B  
+	-	`sha256:38ef63e87318ac9f8bcb02ab99e05ffaeaa890362f534009b6fdf2d2b906d0ba`  
+		Last Modified: Wed, 15 Dec 2021 20:03:11 GMT  
+		Size: 582.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a2b688e4e45ab2d93f48bf18416bc7e07e9c49236a5b03fd2102ed612f92756f`  
-		Last Modified: Fri, 03 Dec 2021 14:42:39 GMT  
-		Size: 933.0 B  
+	-	`sha256:7b63ee0ea3316c0d8cd4aa145cfe48033984bcce83674a8b3c6980404130ab5b`  
+		Last Modified: Wed, 15 Dec 2021 20:03:11 GMT  
+		Size: 936.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fd0c3aa53796d03241de5981ee090fea45affa1644fcb89183dff999bd8e1837`  
-		Last Modified: Fri, 03 Dec 2021 14:42:39 GMT  
-		Size: 314.0 B  
+	-	`sha256:d5a5e6a2227d7a1f985defd615a4a70c53816b02a695e5428a70d2dc3646bd20`  
+		Last Modified: Wed, 15 Dec 2021 20:03:11 GMT  
+		Size: 315.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a27f0d24136f55eef1840febd0116a8b86e4fa61048751342c6c078f4032c51`  
-		Last Modified: Fri, 03 Dec 2021 14:42:39 GMT  
-		Size: 170.0 B  
+	-	`sha256:4ad7e62dd5edcd5006186ef55bb1f2ea51af3f6e06290f9190a85c8487c3150f`  
+		Last Modified: Wed, 15 Dec 2021 20:03:11 GMT  
+		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f89cede95cbc80320a03b42d5076fb4c17a0df4ca54830eaf43c9eb909bdbda`  
-		Last Modified: Fri, 03 Dec 2021 14:43:35 GMT  
-		Size: 51.4 MB (51363247 bytes)  
+	-	`sha256:de600d41001197dd0e0af45e0845cd5ca0843dbb51c1cf5ab06d4beb1e90bda0`  
+		Last Modified: Wed, 15 Dec 2021 20:04:08 GMT  
+		Size: 51.5 MB (51530973 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mediawiki:stable` - linux; arm variant v7
 
 ```console
-$ docker pull mediawiki@sha256:6eb5146c1491d167862146884349eb0e3b4cacea50f1e0139b8af4dccbc4ed7c
+$ docker pull mediawiki@sha256:4aeb271dd192d3d7bbfab55cea32b782b2df115216eb964fedcd1aa8af4cb458
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **225.4 MB (225438548 bytes)**  
+-	Total Size: **225.6 MB (225600160 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bcc8ecf789e277202dd4440c8714e5b9dc5b4a40b265ad4709f55cf725a1cd6d`
+-	Image ID: `sha256:86c17630b0701a3dabc4c107f3cc91d444a67a8f0ebf3052e1aa70dab3591f7c`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -448,23 +448,23 @@ EXPOSE 80
 CMD ["apache2-foreground"]
 # Sat, 04 Dec 2021 11:03:23 GMT
 RUN set -eux; 		apt-get update; 	apt-get install -y --no-install-recommends 		git 		librsvg2-bin 		imagemagick 		python3 	; 	rm -rf /var/lib/apt/lists/*
-# Sat, 04 Dec 2021 11:05:41 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libicu-dev 		libonig-dev 	; 		docker-php-ext-install -j "$(nproc)" 		intl 		mbstring 		mysqli 		opcache 	; 		pecl install APCu-5.1.20; 	docker-php-ext-enable 		apcu 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { print $3 }' 		| sort -u 		| xargs -r dpkg-query -S 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*
-# Sat, 04 Dec 2021 11:05:43 GMT
+# Wed, 15 Dec 2021 19:51:29 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libicu-dev 		libonig-dev 	; 		docker-php-ext-install -j "$(nproc)" 		intl 		mbstring 		mysqli 		opcache 	; 		pecl install APCu-5.1.21; 	docker-php-ext-enable 		apcu 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { print $3 }' 		| sort -u 		| xargs -r dpkg-query -S 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*
+# Wed, 15 Dec 2021 19:51:31 GMT
 RUN set -eux; 	a2enmod rewrite; 	{ 		echo "<Directory /var/www/html>"; 		echo "  RewriteEngine On"; 		echo "  RewriteCond %{REQUEST_FILENAME} !-f"; 		echo "  RewriteCond %{REQUEST_FILENAME} !-d"; 		echo "  RewriteRule ^ %{DOCUMENT_ROOT}/index.php [L]"; 		echo "</Directory>"; 	} > "$APACHE_CONFDIR/conf-available/short-url.conf"; 	a2enconf short-url
-# Sat, 04 Dec 2021 11:05:45 GMT
+# Wed, 15 Dec 2021 19:51:33 GMT
 RUN sed -i "s/<\/VirtualHost>/\tAllowEncodedSlashes NoDecode\n<\/VirtualHost>/" "$APACHE_CONFDIR/sites-available/000-default.conf"
-# Sat, 04 Dec 2021 11:05:46 GMT
+# Wed, 15 Dec 2021 19:51:34 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Sat, 04 Dec 2021 11:05:48 GMT
+# Wed, 15 Dec 2021 19:51:36 GMT
 RUN set -eux; 	mkdir -p /var/www/data; 	chown -R www-data:www-data /var/www/data
-# Sat, 04 Dec 2021 11:05:48 GMT
+# Wed, 15 Dec 2021 19:51:37 GMT
 ENV MEDIAWIKI_MAJOR_VERSION=1.37
-# Sat, 04 Dec 2021 11:05:49 GMT
-ENV MEDIAWIKI_VERSION=1.37.0
-# Sat, 04 Dec 2021 11:06:53 GMT
+# Wed, 15 Dec 2021 19:51:37 GMT
+ENV MEDIAWIKI_VERSION=1.37.1
+# Wed, 15 Dec 2021 19:52:36 GMT
 RUN set -eux; 	fetchDeps=" 		gnupg 		dirmngr 	"; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 		curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz" -o mediawiki.tar.gz; 	curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz.sig" -o mediawiki.tar.gz.sig; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 		D7D6767D135A514BEB86E9BA75682B08E8A3FEC4 		441276E9CCD15F44F6D97D18C119E1A64D70938E 		F7F780D82EBFB8A56556E7EE82403E59F9F8CD79 		1D98867E82982C8FE0ABC25F9B69B3109D3BB7B0 	; 	gpg --batch --verify mediawiki.tar.gz.sig mediawiki.tar.gz; 	tar -x --strip-components=1 -f mediawiki.tar.gz; 	gpgconf --kill all; 	rm -r "$GNUPGHOME" mediawiki.tar.gz.sig mediawiki.tar.gz; 	chown -R www-data:www-data extensions skins cache images; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	rm -rf /var/lib/apt/lists/*
-# Sat, 04 Dec 2021 11:06:55 GMT
+# Wed, 15 Dec 2021 19:52:38 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -525,42 +525,42 @@ CMD ["apache2-foreground"]
 		Last Modified: Sat, 04 Dec 2021 11:29:03 GMT  
 		Size: 35.6 MB (35555987 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c8d2cf7854298add415cff760110896375b6c54518c45b9e815ee2bfee3330bc`  
-		Last Modified: Sat, 04 Dec 2021 11:28:44 GMT  
-		Size: 1.6 MB (1598261 bytes)  
+	-	`sha256:ea3c9417c206e9ccc6e52b7c97ebe567bb81ba4cea0d7a726ba1ac3c24eeaa35`  
+		Last Modified: Wed, 15 Dec 2021 20:08:10 GMT  
+		Size: 1.6 MB (1592428 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1df42f24e1c78c2cdb304cba0496fe55310cb612bb8fe79fc92615a8e4cc2ec2`  
-		Last Modified: Sat, 04 Dec 2021 11:28:41 GMT  
-		Size: 580.0 B  
+	-	`sha256:d251e2322023df095a8af1a791c2f9bf074be6cb529d6363235835a6f31759fa`  
+		Last Modified: Wed, 15 Dec 2021 20:08:07 GMT  
+		Size: 581.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ffdfeaf41b2d74d96efe3c2d3f9115ab2764a237da6e81a286a9350c605c305f`  
-		Last Modified: Sat, 04 Dec 2021 11:28:41 GMT  
-		Size: 934.0 B  
+	-	`sha256:b679d0aabf4614df5c863684fe62ba3018beff597ecaaa167150469e326bfb47`  
+		Last Modified: Wed, 15 Dec 2021 20:08:07 GMT  
+		Size: 937.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5535eaba393fd1a70feadeb0f12e441c880634036f82a9b6262dabcf7dbb9f06`  
-		Last Modified: Sat, 04 Dec 2021 11:28:41 GMT  
-		Size: 317.0 B  
+	-	`sha256:c5d22ede598c456a08951a6b7cec8eaa7a1ccaa737ef028c53324453a1adb89b`  
+		Last Modified: Wed, 15 Dec 2021 20:08:07 GMT  
+		Size: 318.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7407fbf17ec51e3361d716dda470fa63ec73da25bd80be29da5c464c4e5989c3`  
-		Last Modified: Sat, 04 Dec 2021 11:28:41 GMT  
+	-	`sha256:250c571e83aa665c4383911698c56fa1765da9683cd93b94ea96120827431287`  
+		Last Modified: Wed, 15 Dec 2021 20:08:07 GMT  
 		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d75037716c633a92969e63c01272582b50851958d17d135d7dab65a90f2ef573`  
-		Last Modified: Sat, 04 Dec 2021 11:29:37 GMT  
-		Size: 51.4 MB (51363560 bytes)  
+	-	`sha256:9fb13b66ceb83220569ccb21c96ccc7d7753e9cab4a0824bcff32f1a21776b85`  
+		Last Modified: Wed, 15 Dec 2021 20:09:03 GMT  
+		Size: 51.5 MB (51531000 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mediawiki:stable` - linux; arm64 variant v8
 
 ```console
-$ docker pull mediawiki@sha256:c6e7a7458301fd4a451599ba7602e4fc2f0196ed86eddf9de38b196919fe6501
+$ docker pull mediawiki@sha256:b4df89e17866de5b06a8483f19497142d17689c9d7fb4e84073b1761b1f9b484
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.9 MB (251925505 bytes)**  
+-	Total Size: **252.1 MB (252083480 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2d2064bbc5f4fba9672d7d2ea2b231fa3314ed6de771bf5e37e62a3b70169a64`
+-	Image ID: `sha256:f9d6f5fbde214018ba5f0d8a4f37f780742627b5fe7355808f85779a2dafb6af`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -627,23 +627,23 @@ EXPOSE 80
 CMD ["apache2-foreground"]
 # Fri, 03 Dec 2021 13:49:10 GMT
 RUN set -eux; 		apt-get update; 	apt-get install -y --no-install-recommends 		git 		librsvg2-bin 		imagemagick 		python3 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 03 Dec 2021 13:50:02 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libicu-dev 		libonig-dev 	; 		docker-php-ext-install -j "$(nproc)" 		intl 		mbstring 		mysqli 		opcache 	; 		pecl install APCu-5.1.20; 	docker-php-ext-enable 		apcu 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { print $3 }' 		| sort -u 		| xargs -r dpkg-query -S 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*
-# Fri, 03 Dec 2021 13:50:03 GMT
+# Wed, 15 Dec 2021 19:43:59 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libicu-dev 		libonig-dev 	; 		docker-php-ext-install -j "$(nproc)" 		intl 		mbstring 		mysqli 		opcache 	; 		pecl install APCu-5.1.21; 	docker-php-ext-enable 		apcu 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { print $3 }' 		| sort -u 		| xargs -r dpkg-query -S 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*
+# Wed, 15 Dec 2021 19:44:00 GMT
 RUN set -eux; 	a2enmod rewrite; 	{ 		echo "<Directory /var/www/html>"; 		echo "  RewriteEngine On"; 		echo "  RewriteCond %{REQUEST_FILENAME} !-f"; 		echo "  RewriteCond %{REQUEST_FILENAME} !-d"; 		echo "  RewriteRule ^ %{DOCUMENT_ROOT}/index.php [L]"; 		echo "</Directory>"; 	} > "$APACHE_CONFDIR/conf-available/short-url.conf"; 	a2enconf short-url
-# Fri, 03 Dec 2021 13:50:04 GMT
+# Wed, 15 Dec 2021 19:44:01 GMT
 RUN sed -i "s/<\/VirtualHost>/\tAllowEncodedSlashes NoDecode\n<\/VirtualHost>/" "$APACHE_CONFDIR/sites-available/000-default.conf"
-# Fri, 03 Dec 2021 13:50:06 GMT
+# Wed, 15 Dec 2021 19:44:02 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Fri, 03 Dec 2021 13:50:07 GMT
+# Wed, 15 Dec 2021 19:44:03 GMT
 RUN set -eux; 	mkdir -p /var/www/data; 	chown -R www-data:www-data /var/www/data
-# Fri, 03 Dec 2021 13:50:07 GMT
+# Wed, 15 Dec 2021 19:44:03 GMT
 ENV MEDIAWIKI_MAJOR_VERSION=1.37
-# Fri, 03 Dec 2021 13:50:08 GMT
-ENV MEDIAWIKI_VERSION=1.37.0
-# Fri, 03 Dec 2021 13:50:30 GMT
+# Wed, 15 Dec 2021 19:56:55 GMT
+ENV MEDIAWIKI_VERSION=1.37.1
+# Wed, 15 Dec 2021 19:57:15 GMT
 RUN set -eux; 	fetchDeps=" 		gnupg 		dirmngr 	"; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 		curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz" -o mediawiki.tar.gz; 	curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz.sig" -o mediawiki.tar.gz.sig; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 		D7D6767D135A514BEB86E9BA75682B08E8A3FEC4 		441276E9CCD15F44F6D97D18C119E1A64D70938E 		F7F780D82EBFB8A56556E7EE82403E59F9F8CD79 		1D98867E82982C8FE0ABC25F9B69B3109D3BB7B0 	; 	gpg --batch --verify mediawiki.tar.gz.sig mediawiki.tar.gz; 	tar -x --strip-components=1 -f mediawiki.tar.gz; 	gpgconf --kill all; 	rm -r "$GNUPGHOME" mediawiki.tar.gz.sig mediawiki.tar.gz; 	chown -R www-data:www-data extensions skins cache images; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	rm -rf /var/lib/apt/lists/*
-# Fri, 03 Dec 2021 13:50:31 GMT
+# Wed, 15 Dec 2021 19:57:17 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -704,42 +704,42 @@ CMD ["apache2-foreground"]
 		Last Modified: Fri, 03 Dec 2021 13:59:04 GMT  
 		Size: 39.4 MB (39431739 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68efe2050b3d9fb74049f47540b7f75fa284df5d51387655b1f5a5bf79a44be9`  
-		Last Modified: Fri, 03 Dec 2021 13:58:57 GMT  
-		Size: 1.5 MB (1451929 bytes)  
+	-	`sha256:b13e1299931a6acf8288302b2de52996b4bca49ca99828f6ccccf4e4e80bf8fd`  
+		Last Modified: Wed, 15 Dec 2021 19:51:14 GMT  
+		Size: 1.4 MB (1447019 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f9d1c36e823dd45aaea2e0e88fde63e15095689862646a04a8477fb3dcc4a08`  
-		Last Modified: Fri, 03 Dec 2021 13:58:55 GMT  
-		Size: 574.0 B  
+	-	`sha256:ac70c07eb8dbd9184bf2e6121f78d5d96e18004f3be46105159febf225769a80`  
+		Last Modified: Wed, 15 Dec 2021 19:51:11 GMT  
+		Size: 575.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3afd0b4d820ef6504823e9f1b2cf10da5af54dde1c58c2ac6473ba097750ffaa`  
-		Last Modified: Fri, 03 Dec 2021 13:58:55 GMT  
-		Size: 931.0 B  
+	-	`sha256:360504bcb03518f1c72b916496f0e4929cf81a30d0ea5e86bd07385c5a671135`  
+		Last Modified: Wed, 15 Dec 2021 19:51:11 GMT  
+		Size: 932.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:970b3c35ea1588201db1ee205ac8b95e005ad0f6b367498d45a45df04a293ebc`  
-		Last Modified: Fri, 03 Dec 2021 13:58:55 GMT  
-		Size: 314.0 B  
+	-	`sha256:8e3d0aa5334bf1460140374b818313db02176ce1d73915a313b7e3a54e6a4a6b`  
+		Last Modified: Wed, 15 Dec 2021 19:51:11 GMT  
+		Size: 316.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6474aced93d1f7340149c63ac56cfebad8343334d30ae952fcf868b79582fe87`  
-		Last Modified: Fri, 03 Dec 2021 13:58:55 GMT  
-		Size: 139.0 B  
+	-	`sha256:9906603e47559983bee0739845efb5b900172ba7e50d28c57b228ed2cc2e4921`  
+		Last Modified: Wed, 15 Dec 2021 19:51:11 GMT  
+		Size: 140.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:93fe9fa0eeb7a1df90389e926267bc240198b48110aec401f3d28482ded3de79`  
-		Last Modified: Fri, 03 Dec 2021 13:59:07 GMT  
-		Size: 51.1 MB (51127511 bytes)  
+	-	`sha256:a9401744ec882b9f24bcba7ceedb6c46f0de21abeb382869cf30db88131d1442`  
+		Last Modified: Wed, 15 Dec 2021 20:01:56 GMT  
+		Size: 51.3 MB (51290391 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mediawiki:stable` - linux; 386
 
 ```console
-$ docker pull mediawiki@sha256:8a4b6fcf1ed26135891f2c9dba5c44c6549efb35dad103432384b62365d87210
+$ docker pull mediawiki@sha256:bf3e67057fa90bd7c463bac754293fe8d5cf8c72f5dcb27198e8b403005da280
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **265.5 MB (265546037 bytes)**  
+-	Total Size: **265.7 MB (265706228 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a1d8b6c4b1fbe7ed9e770c1c0f6fe8c3d5179c33c7e66038e224c0f76b72d37d`
+-	Image ID: `sha256:90eda5aa706c2f9d83e990d3c6867d985bbe1e1e53d8d9dafc8dd3a97d4af507`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -806,23 +806,23 @@ EXPOSE 80
 CMD ["apache2-foreground"]
 # Fri, 03 Dec 2021 09:07:48 GMT
 RUN set -eux; 		apt-get update; 	apt-get install -y --no-install-recommends 		git 		librsvg2-bin 		imagemagick 		python3 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 03 Dec 2021 09:09:34 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libicu-dev 		libonig-dev 	; 		docker-php-ext-install -j "$(nproc)" 		intl 		mbstring 		mysqli 		opcache 	; 		pecl install APCu-5.1.20; 	docker-php-ext-enable 		apcu 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { print $3 }' 		| sort -u 		| xargs -r dpkg-query -S 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*
-# Fri, 03 Dec 2021 09:09:36 GMT
+# Wed, 15 Dec 2021 19:39:47 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libicu-dev 		libonig-dev 	; 		docker-php-ext-install -j "$(nproc)" 		intl 		mbstring 		mysqli 		opcache 	; 		pecl install APCu-5.1.21; 	docker-php-ext-enable 		apcu 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { print $3 }' 		| sort -u 		| xargs -r dpkg-query -S 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*
+# Wed, 15 Dec 2021 19:39:48 GMT
 RUN set -eux; 	a2enmod rewrite; 	{ 		echo "<Directory /var/www/html>"; 		echo "  RewriteEngine On"; 		echo "  RewriteCond %{REQUEST_FILENAME} !-f"; 		echo "  RewriteCond %{REQUEST_FILENAME} !-d"; 		echo "  RewriteRule ^ %{DOCUMENT_ROOT}/index.php [L]"; 		echo "</Directory>"; 	} > "$APACHE_CONFDIR/conf-available/short-url.conf"; 	a2enconf short-url
-# Fri, 03 Dec 2021 09:09:37 GMT
+# Wed, 15 Dec 2021 19:39:49 GMT
 RUN sed -i "s/<\/VirtualHost>/\tAllowEncodedSlashes NoDecode\n<\/VirtualHost>/" "$APACHE_CONFDIR/sites-available/000-default.conf"
-# Fri, 03 Dec 2021 09:09:39 GMT
+# Wed, 15 Dec 2021 19:39:50 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Fri, 03 Dec 2021 09:09:40 GMT
+# Wed, 15 Dec 2021 19:39:51 GMT
 RUN set -eux; 	mkdir -p /var/www/data; 	chown -R www-data:www-data /var/www/data
-# Fri, 03 Dec 2021 09:09:41 GMT
+# Wed, 15 Dec 2021 19:39:51 GMT
 ENV MEDIAWIKI_MAJOR_VERSION=1.37
-# Fri, 03 Dec 2021 09:09:41 GMT
-ENV MEDIAWIKI_VERSION=1.37.0
-# Fri, 03 Dec 2021 09:10:25 GMT
+# Wed, 15 Dec 2021 19:54:24 GMT
+ENV MEDIAWIKI_VERSION=1.37.1
+# Wed, 15 Dec 2021 19:54:53 GMT
 RUN set -eux; 	fetchDeps=" 		gnupg 		dirmngr 	"; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 		curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz" -o mediawiki.tar.gz; 	curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz.sig" -o mediawiki.tar.gz.sig; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 		D7D6767D135A514BEB86E9BA75682B08E8A3FEC4 		441276E9CCD15F44F6D97D18C119E1A64D70938E 		F7F780D82EBFB8A56556E7EE82403E59F9F8CD79 		1D98867E82982C8FE0ABC25F9B69B3109D3BB7B0 	; 	gpg --batch --verify mediawiki.tar.gz.sig mediawiki.tar.gz; 	tar -x --strip-components=1 -f mediawiki.tar.gz; 	gpgconf --kill all; 	rm -r "$GNUPGHOME" mediawiki.tar.gz.sig mediawiki.tar.gz; 	chown -R www-data:www-data extensions skins cache images; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	rm -rf /var/lib/apt/lists/*
-# Fri, 03 Dec 2021 09:10:27 GMT
+# Wed, 15 Dec 2021 19:54:54 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -883,42 +883,42 @@ CMD ["apache2-foreground"]
 		Last Modified: Fri, 03 Dec 2021 09:27:05 GMT  
 		Size: 42.7 MB (42655182 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2d6f477a02119de4f9f9af4d0fc585a6e2ed27145d59d198ebe165c19ca6e0aa`  
-		Last Modified: Fri, 03 Dec 2021 09:26:42 GMT  
-		Size: 1.7 MB (1712665 bytes)  
+	-	`sha256:9b6379e446cbf159e33e56a13d209438c425aa321a9005b355e941f67fdba861`  
+		Last Modified: Wed, 15 Dec 2021 19:48:31 GMT  
+		Size: 1.7 MB (1708701 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4af0f07c7b4d01936992eacc5c1ae398e786d673164208a76cd037ffb69a2a80`  
-		Last Modified: Fri, 03 Dec 2021 09:26:39 GMT  
-		Size: 584.0 B  
+	-	`sha256:114c20d0dae53a564fcb3e2d0f2dd20ee6abec649f120b808e214f1a05e030e0`  
+		Last Modified: Wed, 15 Dec 2021 19:48:29 GMT  
+		Size: 580.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d271d518406e5b5470f3f5b89c6b24b5418923feace2173747a2ba690f34f37`  
-		Last Modified: Fri, 03 Dec 2021 09:26:39 GMT  
-		Size: 936.0 B  
+	-	`sha256:9b1c42791ccf674bd3707acd06deef6eb107a58d0bbbb44cbdd4e596484e45fd`  
+		Last Modified: Wed, 15 Dec 2021 19:48:28 GMT  
+		Size: 935.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43e84dacc32659fa7d03a799ad5545c460c8c11c9be0c188a4c622cca564979d`  
-		Last Modified: Fri, 03 Dec 2021 09:26:39 GMT  
-		Size: 316.0 B  
+	-	`sha256:133c0a57128569e44521d616e927fba86b5d0b2d051e672f5ad9fe6f6788574e`  
+		Last Modified: Wed, 15 Dec 2021 19:48:28 GMT  
+		Size: 315.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f3d3d3bbbb529b878cb28d959be70e59fab80566e5dd00c3cd6f43aca4c96a90`  
-		Last Modified: Fri, 03 Dec 2021 09:26:40 GMT  
-		Size: 170.0 B  
+	-	`sha256:d4413ce35b627d8bc3388cdc870ce8f293c0c4ef78078d8220c05babdcc32d6d`  
+		Last Modified: Wed, 15 Dec 2021 19:48:28 GMT  
+		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b58d21b226678e7e5a67215b061387917cccffd7f38ddbf89f40826ca737cd97`  
-		Last Modified: Fri, 03 Dec 2021 09:27:12 GMT  
-		Size: 51.4 MB (51366693 bytes)  
+	-	`sha256:7950a517fff9c3e1396778eca2f7d00e5169af48ebd6864bb355aeaecd59c84a`  
+		Last Modified: Wed, 15 Dec 2021 20:00:42 GMT  
+		Size: 51.5 MB (51530853 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mediawiki:stable` - linux; ppc64le
 
 ```console
-$ docker pull mediawiki@sha256:ad08aa8c618fcd187248274339ba8816b2020adda9e68d51fe90ff76cefbd045
+$ docker pull mediawiki@sha256:2954c1329aa00bb8ca2c15953e9d47cfa624f348e95bbf921a2413a9c4032e3d
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **266.2 MB (266157024 bytes)**  
+-	Total Size: **266.3 MB (266316414 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:753dbe56e987719e0d7dfb821b81822cdd7106680e045a64e50d8b31ba2243bb`
+-	Image ID: `sha256:9ad62cf6e8974608bc0952184f4e88f526f3273100a70e19feeea8f5c3233d04`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -985,23 +985,23 @@ EXPOSE 80
 CMD ["apache2-foreground"]
 # Fri, 03 Dec 2021 23:13:40 GMT
 RUN set -eux; 		apt-get update; 	apt-get install -y --no-install-recommends 		git 		librsvg2-bin 		imagemagick 		python3 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 03 Dec 2021 23:15:05 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libicu-dev 		libonig-dev 	; 		docker-php-ext-install -j "$(nproc)" 		intl 		mbstring 		mysqli 		opcache 	; 		pecl install APCu-5.1.20; 	docker-php-ext-enable 		apcu 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { print $3 }' 		| sort -u 		| xargs -r dpkg-query -S 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*
-# Fri, 03 Dec 2021 23:15:11 GMT
+# Wed, 15 Dec 2021 19:50:53 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libicu-dev 		libonig-dev 	; 		docker-php-ext-install -j "$(nproc)" 		intl 		mbstring 		mysqli 		opcache 	; 		pecl install APCu-5.1.21; 	docker-php-ext-enable 		apcu 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { print $3 }' 		| sort -u 		| xargs -r dpkg-query -S 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*
+# Wed, 15 Dec 2021 19:50:58 GMT
 RUN set -eux; 	a2enmod rewrite; 	{ 		echo "<Directory /var/www/html>"; 		echo "  RewriteEngine On"; 		echo "  RewriteCond %{REQUEST_FILENAME} !-f"; 		echo "  RewriteCond %{REQUEST_FILENAME} !-d"; 		echo "  RewriteRule ^ %{DOCUMENT_ROOT}/index.php [L]"; 		echo "</Directory>"; 	} > "$APACHE_CONFDIR/conf-available/short-url.conf"; 	a2enconf short-url
-# Fri, 03 Dec 2021 23:15:20 GMT
+# Wed, 15 Dec 2021 19:51:02 GMT
 RUN sed -i "s/<\/VirtualHost>/\tAllowEncodedSlashes NoDecode\n<\/VirtualHost>/" "$APACHE_CONFDIR/sites-available/000-default.conf"
-# Fri, 03 Dec 2021 23:15:26 GMT
+# Wed, 15 Dec 2021 19:51:07 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Fri, 03 Dec 2021 23:15:31 GMT
+# Wed, 15 Dec 2021 19:51:11 GMT
 RUN set -eux; 	mkdir -p /var/www/data; 	chown -R www-data:www-data /var/www/data
-# Fri, 03 Dec 2021 23:15:33 GMT
+# Wed, 15 Dec 2021 19:51:13 GMT
 ENV MEDIAWIKI_MAJOR_VERSION=1.37
-# Fri, 03 Dec 2021 23:15:37 GMT
-ENV MEDIAWIKI_VERSION=1.37.0
-# Fri, 03 Dec 2021 23:16:58 GMT
+# Wed, 15 Dec 2021 19:51:15 GMT
+ENV MEDIAWIKI_VERSION=1.37.1
+# Wed, 15 Dec 2021 19:52:49 GMT
 RUN set -eux; 	fetchDeps=" 		gnupg 		dirmngr 	"; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 		curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz" -o mediawiki.tar.gz; 	curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz.sig" -o mediawiki.tar.gz.sig; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 		D7D6767D135A514BEB86E9BA75682B08E8A3FEC4 		441276E9CCD15F44F6D97D18C119E1A64D70938E 		F7F780D82EBFB8A56556E7EE82403E59F9F8CD79 		1D98867E82982C8FE0ABC25F9B69B3109D3BB7B0 	; 	gpg --batch --verify mediawiki.tar.gz.sig mediawiki.tar.gz; 	tar -x --strip-components=1 -f mediawiki.tar.gz; 	gpgconf --kill all; 	rm -r "$GNUPGHOME" mediawiki.tar.gz.sig mediawiki.tar.gz; 	chown -R www-data:www-data extensions skins cache images; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	rm -rf /var/lib/apt/lists/*
-# Fri, 03 Dec 2021 23:17:07 GMT
+# Wed, 15 Dec 2021 19:52:54 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1062,27 +1062,27 @@ CMD ["apache2-foreground"]
 		Last Modified: Fri, 03 Dec 2021 23:52:28 GMT  
 		Size: 45.0 MB (44983438 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:67f104a80b68330e8045c94b3ac807ffb9f0d4b7c1206f3e41308c43d44f0721`  
-		Last Modified: Fri, 03 Dec 2021 23:51:51 GMT  
-		Size: 1.8 MB (1774130 bytes)  
+	-	`sha256:db63d2ba6df3d59d419c5f6e5463040a1dd917b0d9a3e5bc08449fbe77208566`  
+		Last Modified: Wed, 15 Dec 2021 20:11:27 GMT  
+		Size: 1.8 MB (1770173 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:346f6fe3f8cf96c2a46b3a7dac6660c3c9846a5353d00e28caaee5828aac2d40`  
-		Last Modified: Fri, 03 Dec 2021 23:51:43 GMT  
-		Size: 578.0 B  
+	-	`sha256:de0374c78f2977fda1f884ca9166fcecfa3675e2007dff53e14658ff10d3b709`  
+		Last Modified: Wed, 15 Dec 2021 20:11:24 GMT  
+		Size: 581.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c0e7761467839f635d41eb06baa5765adc35f8fefaa203ffabc7729804df655`  
-		Last Modified: Fri, 03 Dec 2021 23:51:43 GMT  
+	-	`sha256:61c68cd699bc33c10a124c6469125400f7a6a83295f980280fe3ea1f78052ab4`  
+		Last Modified: Wed, 15 Dec 2021 20:11:24 GMT  
 		Size: 935.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:79cc93e5734525e7e06827cf0b5fc3cce22064971720e9ca6d9f7f9d67931b4d`  
-		Last Modified: Fri, 03 Dec 2021 23:51:43 GMT  
-		Size: 313.0 B  
+	-	`sha256:14f0fc09dc4ca5659d914023cf8797887adbdc7db01d1237fb4802aed8724824`  
+		Last Modified: Wed, 15 Dec 2021 20:11:24 GMT  
+		Size: 316.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0aad387bfa350ae0f7217554a8462cbdc960be15498c71ba720de5f3e8c81138`  
-		Last Modified: Fri, 03 Dec 2021 23:51:43 GMT  
-		Size: 169.0 B  
+	-	`sha256:111cfe5f048600d80ed47edc367cb233faaba8c78e05e48be92a82cfc0f2572f`  
+		Last Modified: Wed, 15 Dec 2021 20:11:24 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc7af31aacf5ab6cd292d6e912d62d8a6d456b98cd0d284cf11a4a1f77cd3863`  
-		Last Modified: Fri, 03 Dec 2021 23:53:27 GMT  
-		Size: 51.4 MB (51369416 bytes)  
+	-	`sha256:728b87ae72570e6c1b3fa796d214c6d071d64732e6ae66092165686ff2d4ec5c`  
+		Last Modified: Wed, 15 Dec 2021 20:12:18 GMT  
+		Size: 51.5 MB (51532754 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
