@@ -1,10 +1,10 @@
-# `sonarqube:9.2.1-datacenter-app`
+# `sonarqube:9.2.3-datacenter-app`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1c5f11a9f4c82fceea5fd008ff6077ab489e3da27809ed234d40684b8cda1233`
-- Created: `2021-11-29T23:46:47.68614924Z`
-- Virtual Size: ~ 683.82 Mb  
+- Image ID: `sha256:65cd6f184b8ddbf19bd380696971c46182bb7c4aa78dec74b80bb50c74863a6e`
+- Created: `2021-12-16T20:54:13.540009118Z`
+- Virtual Size: ~ 690.47 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/sonarqube/bin/run.sh"]`
@@ -16,7 +16,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_HOME=/usr/lib/jvm/java-11-openjdk`
   - `SONARQUBE_HOME=/opt/sonarqube`
-  - `SONAR_VERSION=9.2.1.49989`
+  - `SONAR_VERSION=9.2.3.50713`
   - `SQ_DATA_DIR=/opt/sonarqube/data`
   - `SQ_EXTENSIONS_DIR=/opt/sonarqube/extensions`
   - `SQ_LOGS_DIR=/opt/sonarqube/logs`
@@ -760,16 +760,16 @@ MIT
 ### `apk` package: `openjdk11-jre`
 
 ```console
-openjdk11-jre-11.0.11_p9-r0 description:
+openjdk11-jre-11.0.12_p7-r0 description:
 Oracle OpenJDK 11 (JRE)
 
-openjdk11-jre-11.0.11_p9-r0 webpage:
+openjdk11-jre-11.0.12_p7-r0 webpage:
 https://github.com/openjdk/jdk11u
 
-openjdk11-jre-11.0.11_p9-r0 installed size:
+openjdk11-jre-11.0.12_p7-r0 installed size:
 696 KiB
 
-openjdk11-jre-11.0.11_p9-r0 license:
+openjdk11-jre-11.0.12_p7-r0 license:
 GPL-2.0-with-classpath-exception
 
 ```
@@ -777,16 +777,16 @@ GPL-2.0-with-classpath-exception
 ### `apk` package: `openjdk11-jre-headless`
 
 ```console
-openjdk11-jre-headless-11.0.11_p9-r0 description:
+openjdk11-jre-headless-11.0.12_p7-r0 description:
 Oracle OpenJDK 11 (JRE headless)
 
-openjdk11-jre-headless-11.0.11_p9-r0 webpage:
+openjdk11-jre-headless-11.0.12_p7-r0 webpage:
 https://github.com/openjdk/jdk11u
 
-openjdk11-jre-headless-11.0.11_p9-r0 installed size:
+openjdk11-jre-headless-11.0.12_p7-r0 installed size:
 159 MiB
 
-openjdk11-jre-headless-11.0.11_p9-r0 license:
+openjdk11-jre-headless-11.0.12_p7-r0 license:
 GPL-2.0-with-classpath-exception
 
 ```

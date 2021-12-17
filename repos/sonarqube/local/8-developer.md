@@ -1,10 +1,10 @@
-# `sonarqube:8.9.3-developer`
+# `sonarqube:8.9.5-developer`
 
 ## Docker Metadata
 
-- Image ID: `sha256:fbc7e64cf5d330f1fb3633012a2503498de58fc62b9628a340c4a02500dd0805`
-- Created: `2021-11-13T07:01:50.518567861Z`
-- Virtual Size: ~ 570.97 Mb  
+- Image ID: `sha256:e98fd6baebff974dfba800cb0d34a126ebf2cfb34f159671e2670dc2b572b7cf`
+- Created: `2021-12-16T20:45:17.593252691Z`
+- Virtual Size: ~ 590.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["bin/run.sh"]`
@@ -17,7 +17,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_HOME=/opt/java/openjdk`
   - `SONARQUBE_HOME=/opt/sonarqube`
-  - `SONAR_VERSION=8.9.3.48735`
+  - `SONAR_VERSION=8.9.5.50698`
   - `SQ_DATA_DIR=/opt/sonarqube/data`
   - `SQ_EXTENSIONS_DIR=/opt/sonarqube/extensions`
   - `SQ_LOGS_DIR=/opt/sonarqube/logs`
@@ -453,16 +453,16 @@ MIT BSD GPL2+
 ### `apk` package: `ncurses-libs`
 
 ```console
-ncurses-libs-6.2_p20200523-r0 description:
+ncurses-libs-6.2_p20200523-r1 description:
 Ncurses libraries
 
-ncurses-libs-6.2_p20200523-r0 webpage:
+ncurses-libs-6.2_p20200523-r1 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-libs-6.2_p20200523-r0 installed size:
+ncurses-libs-6.2_p20200523-r1 installed size:
 496 KiB
 
-ncurses-libs-6.2_p20200523-r0 license:
+ncurses-libs-6.2_p20200523-r1 license:
 MIT
 
 ```
@@ -470,16 +470,16 @@ MIT
 ### `apk` package: `ncurses-terminfo-base`
 
 ```console
-ncurses-terminfo-base-6.2_p20200523-r0 description:
+ncurses-terminfo-base-6.2_p20200523-r1 description:
 Descriptions of common terminals
 
-ncurses-terminfo-base-6.2_p20200523-r0 webpage:
+ncurses-terminfo-base-6.2_p20200523-r1 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-terminfo-base-6.2_p20200523-r0 installed size:
+ncurses-terminfo-base-6.2_p20200523-r1 installed size:
 212 KiB
 
-ncurses-terminfo-base-6.2_p20200523-r0 license:
+ncurses-terminfo-base-6.2_p20200523-r1 license:
 MIT
 
 ```
