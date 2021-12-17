@@ -181,14 +181,9 @@ Licenses: (parsed from: `/usr/share/doc/libbz2-1.0/copyright`)
 - `BSD-variant`
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bzip2=1.0.8-4ubuntu4
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.8-4ubuntu4.dsc' bzip2_1.0.8-4ubuntu4.dsc 2250 SHA512:fff5893b014643beb6e3d062704a91c3ac24df48f55b0d72f4d01b6c17c7d4e7c06de83fbef5f4b531a85a5264a3cfdcd3d25de8b5eeb714dc985e0a7728761a
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.8.orig.tar.gz' bzip2_1.0.8.orig.tar.gz 810029 SHA512:083f5e675d73f3233c7930ebe20425a533feedeaaa9d8cc86831312a6581cefbe6ed0d08d2fa89be81082f2a5abdabca8b3c080bf97218a1bd59dc118a30b9f3
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.8-4ubuntu4.debian.tar.bz2' bzip2_1.0.8-4ubuntu4.debian.tar.bz2 26655 SHA512:0fc5da4bd351b0548d95d2e01f412c214a8ee33b276e718bcd2f0af86c069e94ac79b4bcf8e17dd0072ea91c51e663e30c4b90bd3849a992fabde56a93332493
-```
 
 ### `dpkg` source package: `cdebconf=0.256ubuntu4`
 
@@ -602,13 +597,9 @@ Licenses: (parsed from: `/usr/share/doc/init-system-helpers/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris init-system-helpers=1.60build1
-'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.60build1.dsc' init-system-helpers_1.60build1.dsc 1951 SHA512:9bb66e5fa1313bcfe99e64f0ee4ea4a993dce7ddce428934fe6f5b708f8b1ce0cfd6dcec99754049219f079b7191ff82ab83d5ae3e4f36e1b47328c9d4a1643a
-'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.60build1.tar.xz' init-system-helpers_1.60build1.tar.xz 40636 SHA512:d2a5b6d1bb7666386834f257a36173fedf676b52228924423d427dca81d885b35ea81e8d311e833ef72dd0cf8fc9ebd686cbb417ef9f44b9113a07c6f43a5d66
-```
 
 ### `dpkg` source package: `keyutils=1.6.1-2ubuntu2`
 
@@ -1290,14 +1281,9 @@ Licenses: (parsed from: `/usr/share/doc/sed/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sed=4.7-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.7-1ubuntu2.dsc' sed_4.7-1ubuntu2.dsc 1987 SHA512:0960755d828a11300e8e7d818dec7beb2f58b0327434c86f2aa8b1eddf37e1c0c4adb5aa71943823f8aa9f1119ee7648b82b6e3c3b3d15c70874d0b00538d6c3
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.7.orig.tar.xz' sed_4.7.orig.tar.xz 1298316 SHA512:e0be5db4cdf8226b34aaa9071bc5ae0eafde1c52227cee3512eea7fe2520d6c5cebf15266aa5c4adffbb51bf125c140a15644e28d57759893c12823ea9bbf4fb
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.7-1ubuntu2.debian.tar.xz' sed_4.7-1ubuntu2.debian.tar.xz 60624 SHA512:7e0d9a6dbdc08029f101cf9a7837b7b6ff2db0123639d0311ee7fa1424f8e6551fcb416e1377c2f33c9c17e3dfc0a291adb123f24d8aec4190f5c7121ef3fbcf
-```
 
 ### `dpkg` source package: `sensible-utils=0.0.17`
 
