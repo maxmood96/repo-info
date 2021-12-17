@@ -2056,14 +2056,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.9-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.9=3.9.5-3~21.04
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.9/python3.9_3.9.5-3~21.04.dsc' python3.9_3.9.5-3~21.04.dsc 3147 SHA512:7322cf5256f05cc26e7edf328907a9e74e58fec0d6e39daf68efc48eff403e6a9c85fe1a9e68686586626bcb856cac1ecc2c0a3c743907923225a92dd03a23af
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.9/python3.9_3.9.5.orig.tar.xz' python3.9_3.9.5.orig.tar.xz 19058600 SHA512:7b581af1b3e73695f124ff6a3a960e22104153a5d920ca930c046f42ea313b1e7ec77e39876db2bf5d5da6d7412cb072ff8ae7814dda12c14f9da6c570fb0995
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.9/python3.9_3.9.5-3~21.04.debian.tar.xz' python3.9_3.9.5-3~21.04.debian.tar.xz 211960 SHA512:d94cbc5da34e577218b090684b057344f0b28fccc06db1588a362d445ff741183fc9513e3eec69158f5fcb27629e56e46ad3f01253df9f49e8fe69cb6f0a0f8b
-```
 
 ### `dpkg` source package: `readline=8.1-1`
 

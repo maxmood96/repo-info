@@ -466,20 +466,13 @@ Licenses: (parsed from: `/usr/share/doc/bzip2/copyright`, `/usr/share/doc/libbz2
 - `BSD-variant`
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bzip2=1.0.8-4
-'http://deb.debian.org/debian/pool/main/b/bzip2/bzip2_1.0.8-4.dsc' bzip2_1.0.8-4.dsc 1603 SHA256:662c5e656a87db884fdc070239f5112cba1e616f20ff260de602876f70415c7b
-'http://deb.debian.org/debian/pool/main/b/bzip2/bzip2_1.0.8.orig.tar.gz' bzip2_1.0.8.orig.tar.gz 810029 SHA256:ab5a03176ee106d3f0fa90e381da478ddae405918153cca248e682cd0c4a2269
-'http://deb.debian.org/debian/pool/main/b/bzip2/bzip2_1.0.8-4.debian.tar.bz2' bzip2_1.0.8-4.debian.tar.bz2 26515 SHA256:3f3b26d83120260c7b2e69a5c89649bb818a79955b960fb34a5fae106f008a5d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/bzip2/1.0.8-4/
 
-- https://sources.debian.net/src/bzip2/1.0.8-4/ (for browsing the source)
-- https://sources.debian.net/src/bzip2/1.0.8-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/bzip2/1.0.8-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ca-certificates=20211016`
 
@@ -1486,20 +1479,13 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.70.1-1
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.70.1-1.dsc' glib2.0_2.70.1-1.dsc 3486 SHA256:0ad12055052e20888e1d13636205f30c901857744a620a6b17b92e6f33344303
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.70.1.orig.tar.xz' glib2.0_2.70.1.orig.tar.xz 4797752 SHA256:f9b7bce7f51753a1f43853bbcaca8bf09e15e994268e29cfd7a76f65636263c0
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.70.1-1.debian.tar.xz' glib2.0_2.70.1-1.debian.tar.xz 102452 SHA256:f642e2b61c8f8268e659ae1b0fba4494594c076dbda537b796fe4155c2bbf480
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glib2.0/2.70.1-1/
 
-- https://sources.debian.net/src/glib2.0/2.70.1-1/ (for browsing the source)
-- https://sources.debian.net/src/glib2.0/2.70.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glib2.0/2.70.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.32-4`
 
@@ -1515,20 +1501,13 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.32-4
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.32-4.dsc' glibc_2.32-4.dsc 9617 SHA256:bb861648fe09205bc9ad561f203f633163939ca431189893a68d0241bdb36e90
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.32.orig.tar.xz' glibc_2.32.orig.tar.xz 17339504 SHA256:98367884c13188ae59a90b59a1628bb109f67fa14fceba42f0cbeb08412bb69c
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.32-4.debian.tar.xz' glibc_2.32-4.debian.tar.xz 842152 SHA256:2abfe70d32eb9ad2dad60a110da69c42f9d62e9653548a849dee3aef7a32a006
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glibc/2.32-4/
 
-- https://sources.debian.net/src/glibc/2.32-4/ (for browsing the source)
-- https://sources.debian.net/src/glibc/2.32-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glibc/2.32-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-3`
 
@@ -2558,21 +2537,13 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 - `GPL-2`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libgcrypt20=1.9.4-4
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.9.4-4.dsc' libgcrypt20_1.9.4-4.dsc 2800 SHA256:ba094596f303289b7cf7dfb879391eb8ac34a2acaed198132ac97106e9700fb7
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.9.4.orig.tar.bz2' libgcrypt20_1.9.4.orig.tar.bz2 3239704 SHA256:ea849c83a72454e3ed4267697e8ca03390aee972ab421e7df69dfe42b65caaf7
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.9.4.orig.tar.bz2.asc' libgcrypt20_1.9.4.orig.tar.bz2.asc 228 SHA256:aa44cb00b779b4e75f3e63abeedd4112b10b4b92914dad8f23438fd0217a9fec
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.9.4-4.debian.tar.xz' libgcrypt20_1.9.4-4.debian.tar.xz 34896 SHA256:bc6936cffbe3db7ddab53c068ffb17416fa31ea5712d5468e49e8e9a4272a12d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libgcrypt20/1.9.4-4/
 
-- https://sources.debian.net/src/libgcrypt20/1.9.4-4/ (for browsing the source)
-- https://sources.debian.net/src/libgcrypt20/1.9.4-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libgcrypt20/1.9.4-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libgpg-error=1.42-3`
 
@@ -3981,20 +3952,13 @@ Licenses: (parsed from: `/usr/share/doc/libmariadb-dev/copyright`, `/usr/share/d
 - `unlimited-free-doc`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mariadb-10.6=1:10.6.5-1
-'http://deb.debian.org/debian/pool/main/m/mariadb-10.6/mariadb-10.6_10.6.5-1.dsc' mariadb-10.6_10.6.5-1.dsc 4573 SHA256:97c2de39231de3e944f68d781c7b5b7a9787cf2217b30001e66a0362c4ad54d8
-'http://deb.debian.org/debian/pool/main/m/mariadb-10.6/mariadb-10.6_10.6.5.orig.tar.gz' mariadb-10.6_10.6.5.orig.tar.gz 81853489 SHA256:0831debda6ff6f2942d756732a9e5886ef2c5526ad360119502ae3e03b13e013
-'http://deb.debian.org/debian/pool/main/m/mariadb-10.6/mariadb-10.6_10.6.5-1.debian.tar.xz' mariadb-10.6_10.6.5-1.debian.tar.xz 220900 SHA256:5b9cf7b95aedea74bef2092a2016759e9eb8dba43932580a8c012eff5d176cc4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mariadb-10.6/1:10.6.5-1/
 
-- https://sources.debian.net/src/mariadb-10.6/1:10.6.5-1/ (for browsing the source)
-- https://sources.debian.net/src/mariadb-10.6/1:10.6.5-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mariadb-10.6/1:10.6.5-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mawk=1.3.4.20200120-2`
 
@@ -4956,20 +4920,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.9-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.9=3.9.9-1
-'http://deb.debian.org/debian/pool/main/p/python3.9/python3.9_3.9.9-1.dsc' python3.9_3.9.9-1.dsc 3493 SHA256:01090c7278c6c616db52a0b3b61ecac1dbd48b0c3f071f442ed71b90aa1a3985
-'http://deb.debian.org/debian/pool/main/p/python3.9/python3.9_3.9.9.orig.tar.xz' python3.9_3.9.9.orig.tar.xz 19144372 SHA256:06828c04a573c073a4e51c4292a27c1be4ae26621c3edc7cf9318418ce3b6d27
-'http://deb.debian.org/debian/pool/main/p/python3.9/python3.9_3.9.9-1.debian.tar.xz' python3.9_3.9.9-1.debian.tar.xz 212284 SHA256:bbef753ca15eeee209e2a8d07a21b96ebd554be85ddc8adf458798db9ef6ab26
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3.9/3.9.9-1/
 
-- https://sources.debian.net/src/python3.9/3.9.9-1/ (for browsing the source)
-- https://sources.debian.net/src/python3.9/3.9.9-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.9/3.9.9-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=8.1-2`
 
@@ -5297,20 +5254,13 @@ Licenses: (parsed from: `/usr/share/doc/sysvinit-utils/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sysvinit=3.00-1
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.00-1.dsc' sysvinit_3.00-1.dsc 2376 SHA256:599b9ee804c3ec3db40be1be6d65cc50b98bdaf2f94bda92557bb346058e68f7
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.00.orig.tar.xz' sysvinit_3.00.orig.tar.xz 126544 SHA256:d575f34e91736f019f6e4327f74fadd7cf6f464cdfc8c16a796860b504bd9fd4
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.00-1.debian.tar.xz' sysvinit_3.00-1.debian.tar.xz 129592 SHA256:e79c7d0f7ea0f122f36c4fe2b3726187bfc5a2e9f5f68132fc764790e28cce49
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sysvinit/3.00-1/
 
-- https://sources.debian.net/src/sysvinit/3.00-1/ (for browsing the source)
-- https://sources.debian.net/src/sysvinit/3.00-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sysvinit/3.00-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tar=1.34+dfsg-1`
 
