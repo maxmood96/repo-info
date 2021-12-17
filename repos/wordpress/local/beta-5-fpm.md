@@ -1,10 +1,10 @@
-# `wordpress:beta-5.9-beta2-fpm`
+# `wordpress:beta-5.9-beta3-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:309f3249c113425270009208fbe03acda3e3ec480cca28de642dd28460a6085e`
-- Created: `2021-12-08T20:25:05.305838958Z`
-- Virtual Size: ~ 613.90 Mb  
+- Image ID: `sha256:7ed73201e7073033fc24a7e8c64355eee5001e6afb51763e7482a2737f770538`
+- Created: `2021-12-17T01:12:12.353061151Z`
+- Virtual Size: ~ 614.01 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312`
-  - `PHP_VERSION=7.4.26`
-  - `PHP_URL=https://www.php.net/distributions/php-7.4.26.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.26.tar.xz.asc`
-  - `PHP_SHA256=e305b3aafdc85fa73a81c53d3ce30578bc94d1633ec376add193a1e85e0f0ef8`
+  - `PHP_VERSION=7.4.27`
+  - `PHP_URL=https://www.php.net/distributions/php-7.4.27.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.27.tar.xz.asc`
+  - `PHP_SHA256=3f8b937310f155822752229c2c2feb8cc2621e25a728e7b94d0d74c128c43d0c`
 
 ## `dpkg` (`.deb`-based packages)
 

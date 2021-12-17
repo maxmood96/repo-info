@@ -1,10 +1,10 @@
-# `wordpress:beta-5.9-beta2-php7.3-apache`
+# `wordpress:beta-5.9-beta3-php8.0-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e69652f6899779b6226ac39a03b9e19f2f46805456cc24abbf4c84791f0931df`
-- Created: `2021-12-08T20:25:22.240692086Z`
-- Virtual Size: ~ 619.42 Mb  
+- Image ID: `sha256:d6df6e567b6e80e9428429ff5978b10f5d0e7ae4b32a1c7d85e40ac8c76b2dca`
+- Created: `2021-12-15T00:55:09.774093614Z`
+- Virtual Size: ~ 626.03 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -18,11 +18,11 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
-  - `GPG_KEYS=CBAF69F173A0FEA4B537F470D66C9593118BCCB6 F38252826ACD957EF380D39F2F7956BC5DA04B5D`
-  - `PHP_VERSION=7.3.33`
-  - `PHP_URL=https://www.php.net/distributions/php-7.3.33.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.3.33.tar.xz.asc`
-  - `PHP_SHA256=166eaccde933381da9516a2b70ad0f447d7cec4b603d07b9a916032b215b90cc`
+  - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F`
+  - `PHP_VERSION=8.0.13`
+  - `PHP_URL=https://www.php.net/distributions/php-8.0.13.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.0.13.tar.xz.asc`
+  - `PHP_SHA256=cd976805ec2e9198417651027dfe16854ba2c2c388151ab9d4d268513d52ed52`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2391,6 +2391,33 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libnsl/1.3.0-2/ (for browsing the source)
 - https://sources.debian.net/src/libnsl/1.3.0-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libnsl/1.3.0-2/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `libonig=6.9.6-1.1`
+
+Binary Packages:
+
+- `libonig5:amd64=6.9.6-1.1`
+
+Licenses: (parsed from: `/usr/share/doc/libonig5/copyright`)
+
+- `BSD-2-clause`
+- `GPL-2`
+- `GPL-2+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libonig=6.9.6-1.1
+'http://deb.debian.org/debian/pool/main/libo/libonig/libonig_6.9.6-1.1.dsc' libonig_6.9.6-1.1.dsc 1868 SHA256:a5bb396616d170586fdf01dfb4191b59181dc0f4505b648a68fe801ea8a6f5fb
+'http://deb.debian.org/debian/pool/main/libo/libonig/libonig_6.9.6.orig.tar.gz' libonig_6.9.6.orig.tar.gz 621239 SHA256:aec9f6902ad8b7bb53b2c55d04686ea75da89a06694836b0362cb206578dfe89
+'http://deb.debian.org/debian/pool/main/libo/libonig/libonig_6.9.6-1.1.debian.tar.xz' libonig_6.9.6-1.1.debian.tar.xz 8680 SHA256:59d4dccdc85481947efeab3dbb79ba6208d7758df107ad2510adf101666a6d8f
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libonig/6.9.6-1.1/ (for browsing the source)
+- https://sources.debian.net/src/libonig/6.9.6-1.1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libonig/6.9.6-1.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpaper=1.1.28`
 
