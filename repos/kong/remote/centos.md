@@ -1,7 +1,7 @@
 ## `kong:centos`
 
 ```console
-$ docker pull kong@sha256:03453c57b918faa98be9faf2ee7b91239c4a4030a5478b750712408b4104b6f6
+$ docker pull kong@sha256:2994d66df2c9c1be536b6ca2a5b7835fd1fbf532a4cbca34838d1660f8095375
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull kong@sha256:03453c57b918faa98be9faf2ee7b91239c4a4030a5478b75071240
 ### `kong:centos` - linux; amd64
 
 ```console
-$ docker pull kong@sha256:27efe9259a4da91b92a42030be7bec0d4d3e09b6483ac9473dd4996037c84d3c
+$ docker pull kong@sha256:e64a8c7b55dad59f0428afdbc090e37f4a1b34412617f387e700928b1f24dd2b
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **161.0 MB (160965349 bytes)**  
+-	Total Size: **167.8 MB (167828026 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ee5d952d7b8eb428c80083082cfea96234e5a263dea8f0a1ef32882fbcec5920`
+-	Image ID: `sha256:af7f82237e6e981dabf88fb7e5f947940bac0edbca09cce784d467e789f2e5cc`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["kong","docker-start"]`
 
@@ -39,28 +39,28 @@ ENV ASSET=ce
 ARG EE_PORTS
 # Wed, 15 Sep 2021 23:21:24 GMT
 COPY file:ff02c070e4c89f043b176279a7e41464b5fab8cb98cfcd6332fad2d2741fc41d in /tmp/kong.rpm 
-# Tue, 05 Oct 2021 17:43:00 GMT
-ARG KONG_VERSION=2.6.0
-# Tue, 05 Oct 2021 17:43:00 GMT
-ENV KONG_VERSION=2.6.0
-# Tue, 05 Oct 2021 17:43:01 GMT
-ARG KONG_SHA256=f83a1030b01aa3deb4535394b550228f4804a6fd35a4ea4b11e12dcbcacdadc0
-# Tue, 05 Oct 2021 17:43:40 GMT
-# ARGS: KONG_SHA256=f83a1030b01aa3deb4535394b550228f4804a6fd35a4ea4b11e12dcbcacdadc0
-RUN set -ex;     if [ "$ASSET" = "ce" ] ; then       curl -fL https://download.konghq.com/gateway-${KONG_VERSION%%.*}.x-centos-7/Packages/k/kong-$KONG_VERSION.el7.amd64.rpm -o /tmp/kong.rpm       && echo "$KONG_SHA256  /tmp/kong.rpm" | sha256sum -c -;     fi;     yum install -y -q unzip shadow-utils git     && yum clean all -q     && rm -fr /var/cache/yum/* /tmp/yum_save*.yumtx /root/.pki     && yum install -y /tmp/kong.rpm     && yum clean all     && rm /tmp/kong.rpm     && chown kong:0 /usr/local/bin/kong     && chown -R kong:0 /usr/local/kong     && ln -s /usr/local/openresty/bin/resty /usr/local/bin/resty     && ln -s /usr/local/openresty/luajit/bin/luajit /usr/local/bin/luajit     && ln -s /usr/local/openresty/luajit/bin/luajit /usr/local/bin/lua     && ln -s /usr/local/openresty/nginx/sbin/nginx /usr/local/bin/nginx     && if [ "$ASSET" = "ce" ] ; then       kong version ;     fi
-# Tue, 05 Oct 2021 17:43:41 GMT
+# Fri, 17 Dec 2021 19:25:13 GMT
+ARG KONG_VERSION=2.7.0
+# Fri, 17 Dec 2021 19:25:13 GMT
+ENV KONG_VERSION=2.7.0
+# Fri, 17 Dec 2021 19:25:13 GMT
+ARG KONG_SHA256=d69aedffbecf697482f7ef3f9ea8087e6487702e1683732205aaed108adb0c3d
+# Fri, 17 Dec 2021 19:25:47 GMT
+# ARGS: KONG_SHA256=d69aedffbecf697482f7ef3f9ea8087e6487702e1683732205aaed108adb0c3d
+RUN set -ex;     if [ "$ASSET" = "ce" ] ; then       curl -fL https://download.konghq.com/gateway-${KONG_VERSION%%.*}.x-centos-8/Packages/k/kong-$KONG_VERSION.el8.amd64.rpm -o /tmp/kong.rpm       && echo "$KONG_SHA256  /tmp/kong.rpm" | sha256sum -c -;     else       yum update -y       && yum upgrade -y ;     fi;     yum install -y -q unzip shadow-utils git     && yum clean all -q     && rm -fr /var/cache/yum/* /tmp/yum_save*.yumtx /root/.pki     && yum install -y /tmp/kong.rpm     && yum clean all     && rm /tmp/kong.rpm     && chown kong:0 /usr/local/bin/kong     && chown -R kong:0 /usr/local/kong     && ln -s /usr/local/openresty/bin/resty /usr/local/bin/resty     && ln -s /usr/local/openresty/luajit/bin/luajit /usr/local/bin/luajit     && ln -s /usr/local/openresty/luajit/bin/luajit /usr/local/bin/lua     && ln -s /usr/local/openresty/nginx/sbin/nginx /usr/local/bin/nginx     && if [ "$ASSET" = "ce" ] ; then       kong version;     fi
+# Fri, 17 Dec 2021 19:25:48 GMT
 COPY file:df7f26941e26fd034e43646906785ecba3877cf078fa891fd1d304925f70408e in /docker-entrypoint.sh 
-# Tue, 05 Oct 2021 17:43:41 GMT
+# Fri, 17 Dec 2021 19:25:49 GMT
 USER kong
-# Tue, 05 Oct 2021 17:43:41 GMT
+# Fri, 17 Dec 2021 19:25:49 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 05 Oct 2021 17:43:42 GMT
+# Fri, 17 Dec 2021 19:25:49 GMT
 EXPOSE 8000 8001 8443 8444
-# Tue, 05 Oct 2021 17:43:42 GMT
+# Fri, 17 Dec 2021 19:25:49 GMT
 STOPSIGNAL SIGQUIT
-# Tue, 05 Oct 2021 17:43:42 GMT
+# Fri, 17 Dec 2021 19:25:49 GMT
 HEALTHCHECK &{["CMD-SHELL" "kong health"] "10s" "10s" "0s" '\n'}
-# Tue, 05 Oct 2021 17:43:42 GMT
+# Fri, 17 Dec 2021 19:25:49 GMT
 CMD ["kong" "docker-start"]
 ```
 
@@ -73,11 +73,11 @@ CMD ["kong" "docker-start"]
 		Last Modified: Wed, 15 Sep 2021 23:23:25 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c3563bfe40d23f8dbed26358d7c01a711109642f9d164dacf921387cfe9d5ca`  
-		Last Modified: Tue, 05 Oct 2021 17:45:39 GMT  
-		Size: 77.4 MB (77446253 bytes)  
+	-	`sha256:e996b8fb0de9267b17e982ed3ce78d349259cae8470c908bb640e92ddec100a1`  
+		Last Modified: Fri, 17 Dec 2021 19:27:28 GMT  
+		Size: 84.3 MB (84308930 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:92b3206af33126cd570c9aa494380def6d75f1e4cdde13c3ea55ccedd8641c93`  
-		Last Modified: Tue, 05 Oct 2021 17:45:26 GMT  
+	-	`sha256:51848fd42fef75bdf5043f5c7d5f2b813b128048cb57533a1762dc5ce48490d0`  
+		Last Modified: Fri, 17 Dec 2021 19:27:16 GMT  
 		Size: 880.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
