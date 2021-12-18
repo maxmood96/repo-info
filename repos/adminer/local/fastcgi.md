@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:794fa3b64a0c95ba8b475062578fe313f03748206dbe918cdb39ce0f31b061b5`
-- Created: `2021-11-30T11:21:01.6752168Z`
-- Virtual Size: ~ 89.01 Mb  
+- Image ID: `sha256:488f587a9cbbfa5406d4d56599bacea438f919d3aa5007799b996114ab1bd7bd`
+- Created: `2021-12-17T00:08:31.439407524Z`
+- Virtual Size: ~ 88.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint.sh","docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312`
-  - `PHP_VERSION=7.4.26`
-  - `PHP_URL=https://www.php.net/distributions/php-7.4.26.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.26.tar.xz.asc`
-  - `PHP_SHA256=e305b3aafdc85fa73a81c53d3ce30578bc94d1633ec376add193a1e85e0f0ef8`
+  - `PHP_VERSION=7.4.27`
+  - `PHP_URL=https://www.php.net/distributions/php-7.4.27.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.27.tar.xz.asc`
+  - `PHP_SHA256=3f8b937310f155822752229c2c2feb8cc2621e25a728e7b94d0d74c128c43d0c`
   - `ADMINER_VERSION=4.8.1`
   - `ADMINER_DOWNLOAD_SHA256=2fd7e6d8f987b243ab1839249551f62adce19704c47d3d0c8dd9e57ea5b9c6b3`
   - `ADMINER_SRC_DOWNLOAD_SHA256=ef832414296d11eed33e9d85fff3fb316c63f13f05fceb4a961cbe4cb2ae8712`
@@ -268,16 +268,16 @@ MIT
 ### `apk` package: `libpq`
 
 ```console
-libpq-14.1-r3 description:
+libpq-14.1-r4 description:
 PostgreSQL client library
 
-libpq-14.1-r3 webpage:
+libpq-14.1-r4 webpage:
 https://www.postgresql.org/
 
-libpq-14.1-r3 installed size:
+libpq-14.1-r4 installed size:
 328 KiB
 
-libpq-14.1-r3 license:
+libpq-14.1-r4 license:
 PostgreSQL
 
 ```
