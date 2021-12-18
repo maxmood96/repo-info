@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3fc84b0c1b7ec8313c69d82f25820ffa6feb95d6beda741ad5b6b988e6709f83`
-- Created: `2021-12-02T03:07:26.226397456Z`
+- Image ID: `sha256:09de52149c16490bc22ce21b44305c87a4ac476436d2be7ec363d3e10bae7abc`
+- Created: `2021-12-17T00:52:17.257654495Z`
 - Virtual Size: ~ 534.66 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312`
-  - `PHP_VERSION=7.4.26`
-  - `PHP_URL=https://www.php.net/distributions/php-7.4.26.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.26.tar.xz.asc`
-  - `PHP_SHA256=e305b3aafdc85fa73a81c53d3ce30578bc94d1633ec376add193a1e85e0f0ef8`
+  - `PHP_VERSION=7.4.27`
+  - `PHP_URL=https://www.php.net/distributions/php-7.4.27.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.27.tar.xz.asc`
+  - `PHP_SHA256=3f8b937310f155822752229c2c2feb8cc2621e25a728e7b94d0d74c128c43d0c`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `NEXTCLOUD_VERSION=21.0.7`
@@ -812,16 +812,16 @@ BSD-3-Clause
 ### `apk` package: `lz4-libs`
 
 ```console
-lz4-libs-1.9.3-r0 description:
+lz4-libs-1.9.3-r1 description:
 LZ4 is lossless compression algorithm with fast decoder @ multiple GB/s per core. (libraries)
 
-lz4-libs-1.9.3-r0 webpage:
+lz4-libs-1.9.3-r1 webpage:
 https://github.com/lz4/lz4
 
-lz4-libs-1.9.3-r0 installed size:
+lz4-libs-1.9.3-r1 installed size:
 216 KiB
 
-lz4-libs-1.9.3-r0 license:
+lz4-libs-1.9.3-r1 license:
 BSD-2-Clause GPL-2.0-only
 
 ```
