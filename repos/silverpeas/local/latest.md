@@ -1,10 +1,10 @@
-# `silverpeas:6.2.1`
+# `silverpeas:6.2.2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:92894ed5fd296d1a7e5a379a3be910f468d6bc50dc6fe5b09b1e89ee7a6a1405`
-- Created: `2021-10-16T03:23:30.266689378Z`
-- Virtual Size: ~ 3.19 Gb  
+- Image ID: `sha256:e87c410141b6a98f5aa79be4f7fbe890295eec65255b96171c140c7d67a83bc1`
+- Created: `2021-12-17T23:22:07.420725262Z`
+- Virtual Size: ~ 3.20 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/opt/run.sh"]`
@@ -17,14 +17,14 @@
   - `JAVA_HOME=/docker-java-home`
   - `SILVERPEAS_HOME=/opt/silverpeas`
   - `JBOSS_HOME=/opt/wildfly`
-  - `SILVERPEAS_VERSION=6.2.1`
+  - `SILVERPEAS_VERSION=6.2.2`
   - `WILDFLY_VERSION=20.0.1`
 - Labels:
   - `build=1`
-  - `description=Image to install and to run Silverpeas 6.2.1`
-  - `name=Silverpeas 6.2.1`
+  - `description=Image to install and to run Silverpeas 6.2.2`
+  - `name=Silverpeas 6.2.2`
   - `vendor=Silverpeas`
-  - `version=6.2.1`
+  - `version=6.2.2`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -7547,14 +7547,9 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-11-jdk/copyright`, `/usr/share/d
 - `LGPL-2`
 - `LGPL-2-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjdk-lts=11.0.11+9-0ubuntu2~20.04
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.11+9-0ubuntu2~20.04.dsc' openjdk-lts_11.0.11+9-0ubuntu2~20.04.dsc 4720 SHA512:9b919dfad1e69d09435cd1139dae448ca28058b1b785595cc9fa8c3cfea65832f9df954c2a29bd91353705d695d822e9c132ceefd8a3f8a469711e52646e5dbb
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.11+9.orig.tar.xz' openjdk-lts_11.0.11+9.orig.tar.xz 78079764 SHA512:3baeb4480215bec453d5935ba4cba94716aa75d51f2a65cf2c94e7ea95c3e54e44e5b36d4690d2b0b7ec4cd95c70eee3484846c0690ea4b406b3dcd8911a6d4f
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.11+9-0ubuntu2~20.04.debian.tar.xz' openjdk-lts_11.0.11+9-0ubuntu2~20.04.debian.tar.xz 171772 SHA512:8eebbb45b186164131b8f2b040936bc822e6f9649feca1dc5056aa77f92567b1b207094bca4627ee5e4e6a0f4c32764ff6a3c613bb084a03928e3edcb27780a2
-```
 
 ### `dpkg` source package: `openjpeg2=2.3.1-1ubuntu4.20.04.1`
 
@@ -8113,14 +8108,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.8/copyright`, `/usr/share/doc
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.8=3.8.10-0ubuntu1~20.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.10-0ubuntu1~20.04.1.dsc' python3.8_3.8.10-0ubuntu1~20.04.1.dsc 3504 SHA512:6fa58a364a94a0fa92feef12e9237726a3ee5e03c479524a85c87d505819b1c8cb75ecac74ba37dc3ff3471e5e380da84db8a583b25a3eb2d4d9f123ee2c034b
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.10.orig.tar.xz' python3.8_3.8.10.orig.tar.xz 18433456 SHA512:0be69705483ff9692e12048a96180e586f9d84c8d53066629f7fb2389585eb75c0f3506bb8182936e322508f58b71f4d8c6dfebbab9049b31b49da11d3b98e80
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.10-0ubuntu1~20.04.1.debian.tar.xz' python3.8_3.8.10-0ubuntu1~20.04.1.debian.tar.xz 212920 SHA512:0ddc7a9f161e328f2f7d7686e3736c6f2a0fd248c78472a57a35026c069a08b5d1c56ae8e4d929d5029fa86e2bb2750572ccfd40de656620f117876c2c2a60ec
-```
 
 ### `dpkg` source package: `raptor2=2.0.15-0ubuntu1.20.04.1`
 
