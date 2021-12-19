@@ -2,17 +2,17 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c9074e3057f54b413e60378f75177c7c5e20a3053a2ab177a4b02aa9f8001039`
-- Created: `2021-12-14T23:27:36.157037262Z`
-- Virtual Size: ~ 392.54 Mb  
+- Image ID: `sha256:1e80c4c64660b80edc2833b93cd2272c052801610cc59a5e0be35c690dad79fd`
+- Created: `2021-12-18T07:47:39.637427464Z`
+- Virtual Size: ~ 392.50 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["node","current/index.js"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=12.22.7`
-  - `YARN_VERSION=1.22.15`
+  - `NODE_VERSION=12.22.8`
+  - `YARN_VERSION=1.22.17`
   - `NODE_ENV=production`
   - `GHOST_CLI_VERSION=1.18.1`
   - `GHOST_INSTALL=/var/lib/ghost`
@@ -262,16 +262,16 @@ MIT BSD GPL2+
 ### `apk` package: `ncurses-libs`
 
 ```console
-ncurses-libs-6.2_p20200523-r0 description:
+ncurses-libs-6.2_p20200523-r1 description:
 Ncurses libraries
 
-ncurses-libs-6.2_p20200523-r0 webpage:
+ncurses-libs-6.2_p20200523-r1 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-libs-6.2_p20200523-r0 installed size:
+ncurses-libs-6.2_p20200523-r1 installed size:
 496 KiB
 
-ncurses-libs-6.2_p20200523-r0 license:
+ncurses-libs-6.2_p20200523-r1 license:
 MIT
 
 ```
@@ -279,16 +279,16 @@ MIT
 ### `apk` package: `ncurses-terminfo-base`
 
 ```console
-ncurses-terminfo-base-6.2_p20200523-r0 description:
+ncurses-terminfo-base-6.2_p20200523-r1 description:
 Descriptions of common terminals
 
-ncurses-terminfo-base-6.2_p20200523-r0 webpage:
+ncurses-terminfo-base-6.2_p20200523-r1 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-terminfo-base-6.2_p20200523-r0 installed size:
+ncurses-terminfo-base-6.2_p20200523-r1 installed size:
 212 KiB
 
-ncurses-terminfo-base-6.2_p20200523-r0 license:
+ncurses-terminfo-base-6.2_p20200523-r1 license:
 MIT
 
 ```
