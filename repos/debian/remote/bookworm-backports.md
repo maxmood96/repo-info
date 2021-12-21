@@ -1,7 +1,7 @@
 ## `debian:bookworm-backports`
 
 ```console
-$ docker pull debian@sha256:e38d96b5b0a5c0f1b32a3792fb7b55c0a88a131a524a2d8d449949d127af6485
+$ docker pull debian@sha256:9048c997284a45707670b6efdfcf5f85d166cc3ded16c8ce7aa5635d89f2e9cd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -82,33 +82,33 @@ RUN echo 'deb http://deb.debian.org/debian bookworm-backports main' > /etc/apt/s
 ### `debian:bookworm-backports` - linux; arm variant v7
 
 ```console
-$ docker pull debian@sha256:754437f2d1b75e9104554e4472155f0dfb70d03e1ca005545b9213d9edcc88e6
+$ docker pull debian@sha256:d4c89e4c97054b068de5d021530ebcbfcc173725252191e5d9aa0bc184945961
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.7 MB (50668211 bytes)**  
+-	Total Size: **50.7 MB (50699124 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dd7aca774f43f50b0740ba35047a72f2a8f435b879f1fdf96aeac3ccd6105eca`
+-	Image ID: `sha256:e7922d534b777e517a26af25241087757ceb5f03827af6f0c2d099099ffc9ac3`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Thu, 02 Dec 2021 09:03:39 GMT
-ADD file:bd5233b326b625660d820fa962832e6c5413ff9a56f64a6f072b9a9adfc545b2 in / 
-# Thu, 02 Dec 2021 09:03:40 GMT
+# Tue, 21 Dec 2021 01:58:11 GMT
+ADD file:7ed54a4a4704538f37ad0755a81034bc1bd04ec05d6e2a10f3dc44aab517bd3d in / 
+# Tue, 21 Dec 2021 01:58:12 GMT
 CMD ["bash"]
-# Thu, 02 Dec 2021 09:03:52 GMT
+# Tue, 21 Dec 2021 01:58:24 GMT
 RUN echo 'deb http://deb.debian.org/debian bookworm-backports main' > /etc/apt/sources.list.d/backports.list
 ```
 
 -	Layers:
-	-	`sha256:4dcb906f06af542b010e092a9a4d4ad8ccb110debf57beb0d4ded9baa51b82a1`  
-		Last Modified: Thu, 02 Dec 2021 09:18:59 GMT  
-		Size: 50.7 MB (50667986 bytes)  
+	-	`sha256:661d8e50ead70cdfa65f1e6cee609c2fd7cee22ad5c09bb02a88c7d51c60da27`  
+		Last Modified: Tue, 21 Dec 2021 02:13:26 GMT  
+		Size: 50.7 MB (50698897 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f7fb9f8a8eeb1a11d5a1d14a1b1b29f5559ddd3f9cab664e2629883b147b5ebc`  
-		Last Modified: Thu, 02 Dec 2021 09:19:11 GMT  
-		Size: 225.0 B  
+	-	`sha256:ad0bb26f83017de8580c6065b3c25569e5419d8deda63b3a6c527b98bdc0fc33`  
+		Last Modified: Tue, 21 Dec 2021 02:13:38 GMT  
+		Size: 227.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `debian:bookworm-backports` - linux; arm64 variant v8
@@ -178,64 +178,64 @@ RUN echo 'deb http://deb.debian.org/debian bookworm-backports main' > /etc/apt/s
 ### `debian:bookworm-backports` - linux; mips64le
 
 ```console
-$ docker pull debian@sha256:08a20159ed23ba78318d847b7fb8a5454caa8a351f8a6095c9833ae3e4191981
+$ docker pull debian@sha256:0d201dca8e5f66a51583d68e73ae951ceeec98946d4baa32226440c669c46b85
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.3 MB (54269820 bytes)**  
+-	Total Size: **54.3 MB (54302957 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8fb1d2a8812283847cb5aa15b80cb4ed890154847feef633408f59f14cdfc4eb`
+-	Image ID: `sha256:40c8400de8203a3c494543ea366d719f3ac0660702cfd9e5d561f7ff6f0cc08b`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Thu, 02 Dec 2021 03:07:51 GMT
-ADD file:2b78b392bcc6daef3d9c93dcae4adf8b84cac89c57ed08bd43854d23774078d6 in / 
-# Thu, 02 Dec 2021 03:07:52 GMT
+# Tue, 21 Dec 2021 02:07:47 GMT
+ADD file:41547ce5cf30425be5612cd827fbdd2cf3e3190ecb39bf4c5a634512db860237 in / 
+# Tue, 21 Dec 2021 02:07:48 GMT
 CMD ["bash"]
-# Thu, 02 Dec 2021 03:07:58 GMT
+# Tue, 21 Dec 2021 02:07:54 GMT
 RUN echo 'deb http://deb.debian.org/debian bookworm-backports main' > /etc/apt/sources.list.d/backports.list
 ```
 
 -	Layers:
-	-	`sha256:8c4a35c3e932252ccb2418c1bc14531f11d21f13ba131d0a52cd9cb690dc9623`  
-		Last Modified: Thu, 02 Dec 2021 03:15:53 GMT  
-		Size: 54.3 MB (54269592 bytes)  
+	-	`sha256:847df5d6ab10ba0e4a41a13ce3d04aa9d5b5c826a90bc36162239e7587e48cee`  
+		Last Modified: Tue, 21 Dec 2021 02:15:49 GMT  
+		Size: 54.3 MB (54302729 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:349a8ca1adf7665d8b56eb5f4dee37f9b21d2c8d750c93da7939bf44e64c9d2e`  
-		Last Modified: Thu, 02 Dec 2021 03:16:03 GMT  
+	-	`sha256:ad91b0233a764ab492f3f265758ab3610f29af0c055bf68b136f596e0d40e8d3`  
+		Last Modified: Tue, 21 Dec 2021 02:16:04 GMT  
 		Size: 228.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `debian:bookworm-backports` - linux; ppc64le
 
 ```console
-$ docker pull debian@sha256:b4b32c9d948ab084825d28c7273a21a32145d53c80819d87c5b63009c030ac0f
+$ docker pull debian@sha256:6d0d88b393d7ecd6090bc5f8811555be62e48d68532e5e5c62bccc5ef2149f6b
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **59.9 MB (59851596 bytes)**  
+-	Total Size: **60.0 MB (59991993 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:64e1c9aa75865eb49b4409c88da5a5d5b7c24532c24a7b63da5a3fa1ac6fd7a4`
+-	Image ID: `sha256:0fc3713e969c50674ed7a676ed4b5beb96bede6d8ae2413f039a61dd1fe094c9`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Thu, 02 Dec 2021 07:19:51 GMT
-ADD file:b1221d684becfd74b167e24d774eb6099d264be14e0abd56599cb6a39c9eed74 in / 
-# Thu, 02 Dec 2021 07:20:00 GMT
+# Tue, 21 Dec 2021 02:18:58 GMT
+ADD file:b2445892db6f22a700090e84ea01cec8156666af13bbd1943ff76648f9b45fa7 in / 
+# Tue, 21 Dec 2021 02:19:03 GMT
 CMD ["bash"]
-# Thu, 02 Dec 2021 07:20:18 GMT
+# Tue, 21 Dec 2021 02:19:26 GMT
 RUN echo 'deb http://deb.debian.org/debian bookworm-backports main' > /etc/apt/sources.list.d/backports.list
 ```
 
 -	Layers:
-	-	`sha256:5ad94a9a32e9daafdd41e8b09d1671e7fd6b6d7cff42957db5b36cf5fe8276d1`  
-		Last Modified: Thu, 02 Dec 2021 07:29:36 GMT  
-		Size: 59.9 MB (59851370 bytes)  
+	-	`sha256:acf94744ccb1210214c86a9a0cddb19c2809171609310c507f8e988f1e399199`  
+		Last Modified: Tue, 21 Dec 2021 02:27:45 GMT  
+		Size: 60.0 MB (59991767 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:06bfb2b607328eb15d7ac51fdcb7b40674219e70a36bafea9f10c090e469c338`  
-		Last Modified: Thu, 02 Dec 2021 07:29:47 GMT  
+	-	`sha256:0a6cb348d385089098e06717eb5c4f4cc400a315989d95d0ca53e3ebf2a35005`  
+		Last Modified: Tue, 21 Dec 2021 02:27:57 GMT  
 		Size: 226.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
