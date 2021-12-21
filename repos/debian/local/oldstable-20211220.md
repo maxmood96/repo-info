@@ -1,9 +1,9 @@
-# `debian:buster`
+# `debian:oldstable`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6642e362a8254d7645ed8dae69be5e3edcd2e9a5ee77baeb0655595244082d13`
-- Created: `2021-12-02T02:48:32.500000689Z`
+- Image ID: `sha256:afa9e9c8c26ebf1c27d5e2f493e01195a55ecef80bfb03bf695de7bf0db97123`
+- Created: `2021-12-21T01:23:34.130470185Z`
 - Virtual Size: ~ 114.11 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
