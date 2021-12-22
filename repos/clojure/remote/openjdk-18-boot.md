@@ -1,7 +1,7 @@
 ## `clojure:openjdk-18-boot`
 
 ```console
-$ docker pull clojure@sha256:03a508c278f7d60628ba42f475b3a42a6d7d0e754094e33ed2cc83830ad90916
+$ docker pull clojure@sha256:ff9d2365750a207105b3a707ea6381fbbfed126324672b81ade80d613649272c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,81 +12,81 @@ $ docker pull clojure@sha256:03a508c278f7d60628ba42f475b3a42a6d7d0e754094e33ed2c
 ### `clojure:openjdk-18-boot` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:37d5c13acfe98718904a6ddb22b20d9f56430c86641092b22bddef5193fbd9bd
+$ docker pull clojure@sha256:bb829198d39e204092c642342d430460de9b020ca1f5eafe1182853de7a1be58
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **281.1 MB (281064835 bytes)**  
+-	Total Size: **281.1 MB (281052870 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a4a028b035118b4b1b6261779e020f8984bdfa152fe7b24a441430fc30a6d4ce`
+-	Image ID: `sha256:bee99bf14cb848c4b4f255b08eba3feb27f2d7ec436567d6bbad9be2bc336e31`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["repl"]`
 
 ```dockerfile
-# Thu, 02 Dec 2021 02:48:20 GMT
-ADD file:ece5ff85ca549f0b1e9139d29dcb43a52af672d0591c423e28180f6d8d700ad7 in / 
-# Thu, 02 Dec 2021 02:48:21 GMT
+# Tue, 21 Dec 2021 01:22:43 GMT
+ADD file:09675d11695f65c55efdc393ff0cd32f30194cd7d0fbef4631eebfed4414ac97 in / 
+# Tue, 21 Dec 2021 01:22:43 GMT
 CMD ["bash"]
-# Thu, 02 Dec 2021 11:29:26 GMT
+# Tue, 21 Dec 2021 22:57:38 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 02 Dec 2021 11:29:26 GMT
+# Tue, 21 Dec 2021 22:59:21 GMT
 ENV JAVA_HOME=/usr/local/openjdk-18
-# Thu, 02 Dec 2021 11:29:27 GMT
+# Tue, 21 Dec 2021 22:59:22 GMT
 ENV PATH=/usr/local/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 02 Dec 2021 11:29:27 GMT
+# Tue, 21 Dec 2021 22:59:22 GMT
 ENV LANG=C.UTF-8
-# Sat, 18 Dec 2021 04:11:11 GMT
+# Tue, 21 Dec 2021 22:59:22 GMT
 ENV JAVA_VERSION=18-ea+28
-# Sat, 18 Dec 2021 04:11:28 GMT
+# Tue, 21 Dec 2021 22:59:37 GMT
 RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/28/GPL/openjdk-18-ea+28_linux-x64_bin.tar.gz'; 			downloadSha256='7e5f0e54c799f8c155a934e61d88f4fef3a70a641c1636c925158622c7bd9341'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk18/28/GPL/openjdk-18-ea+28_linux-aarch64_bin.tar.gz'; 			downloadSha256='e29aa39763ebcfe5f037cc4fe47c6b9eb34cbe482f6ea57e93de89070255e22b'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Sat, 18 Dec 2021 04:11:29 GMT
+# Tue, 21 Dec 2021 22:59:37 GMT
 CMD ["jshell"]
-# Sat, 18 Dec 2021 06:53:51 GMT
+# Wed, 22 Dec 2021 13:49:36 GMT
 ENV BOOT_VERSION=2.8.3
-# Sat, 18 Dec 2021 06:53:51 GMT
+# Wed, 22 Dec 2021 13:49:36 GMT
 ENV BOOT_INSTALL=/usr/local/bin/
-# Sat, 18 Dec 2021 06:53:51 GMT
+# Wed, 22 Dec 2021 13:49:36 GMT
 WORKDIR /tmp
-# Sat, 18 Dec 2021 06:53:56 GMT
+# Wed, 22 Dec 2021 13:49:40 GMT
 RUN apt-get update && apt-get install -y wget && rm -rf /var/lib/apt/lists/* && mkdir -p $BOOT_INSTALL && wget -q https://github.com/boot-clj/boot-bin/releases/download/latest/boot.sh && echo "Comparing installer checksum..." && sha256sum boot.sh && echo "0ccd697f2027e7e1cd3be3d62721057cbc841585740d0aaa9fbb485d7b1f17c3 *boot.sh" | sha256sum -c - && mv boot.sh $BOOT_INSTALL/boot && chmod 0755 $BOOT_INSTALL/boot && apt-get purge -y --auto-remove wget
-# Sat, 18 Dec 2021 06:53:56 GMT
+# Wed, 22 Dec 2021 13:49:41 GMT
 ENV PATH=/usr/local/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Sat, 18 Dec 2021 06:53:56 GMT
+# Wed, 22 Dec 2021 13:49:41 GMT
 ENV BOOT_AS_ROOT=yes
-# Sat, 18 Dec 2021 06:54:20 GMT
+# Wed, 22 Dec 2021 13:50:23 GMT
 RUN boot
-# Sat, 18 Dec 2021 06:54:21 GMT
+# Wed, 22 Dec 2021 13:50:24 GMT
 COPY file:0282db266eb050a3ad3609149efe2188243cb9f95c0b3e48a312ddef6c6bea02 in /usr/local/bin/entrypoint 
-# Sat, 18 Dec 2021 06:54:21 GMT
+# Wed, 22 Dec 2021 13:50:24 GMT
 ENTRYPOINT ["entrypoint"]
-# Sat, 18 Dec 2021 06:54:21 GMT
+# Wed, 22 Dec 2021 13:50:24 GMT
 CMD ["repl"]
 ```
 
 -	Layers:
-	-	`sha256:e5ae68f740265288a4888db98d2999a638fdcb6d725f427678814538d253aa4d`  
-		Last Modified: Thu, 02 Dec 2021 02:53:46 GMT  
-		Size: 31.4 MB (31370221 bytes)  
+	-	`sha256:a2abf6c4d29d43a4bf9fbb769f524d0fb36a2edab49819c1bf3e76f409f953ea`  
+		Last Modified: Tue, 21 Dec 2021 01:27:48 GMT  
+		Size: 31.4 MB (31357624 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e9f5b9b70c2f137dc70e816256e7a568a084d066e7c34c028d30a6a45438685`  
-		Last Modified: Thu, 02 Dec 2021 11:47:20 GMT  
-		Size: 1.6 MB (1582045 bytes)  
+	-	`sha256:2bbde5250315969db657b55bd8b2f5507fb659c0cf7f135edc84b684ffeab44a`  
+		Last Modified: Tue, 21 Dec 2021 23:14:38 GMT  
+		Size: 1.6 MB (1582039 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e71fd0564b64594d9d12cfa9a977c2d399df5350dfe24ddecd9dad968e3f197`  
-		Last Modified: Sat, 18 Dec 2021 04:24:19 GMT  
-		Size: 189.0 MB (189008722 bytes)  
+	-	`sha256:a61815ebdef528175531edb6014c6c3fb724e1fcd7413613f6dabe1fa530e311`  
+		Last Modified: Tue, 21 Dec 2021 23:17:43 GMT  
+		Size: 189.0 MB (189008775 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:815c53055e063f4a3f8a7d707009c288eef6b911aa3b92b0e50ed7213e4f5e9f`  
-		Last Modified: Sat, 18 Dec 2021 07:01:07 GMT  
-		Size: 283.0 KB (283043 bytes)  
+	-	`sha256:8cc15fb3552b47abeb4d9a6591d82e67e0acd62b4322d0f98eab9d6c8fdc9a20`  
+		Last Modified: Wed, 22 Dec 2021 14:07:20 GMT  
+		Size: 283.0 KB (283045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:022c39f6bf2a9602be2ea149c742c9a449e0bd69951176ebbec1846fd5dee801`  
-		Last Modified: Sat, 18 Dec 2021 07:01:11 GMT  
-		Size: 58.8 MB (58820398 bytes)  
+	-	`sha256:78b96bb404100d1f475830eab4c76f75dfafaac3f28dc093807b17c1a88f52b1`  
+		Last Modified: Wed, 22 Dec 2021 14:07:23 GMT  
+		Size: 58.8 MB (58820981 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68eb256459888ae6b17f7e517d8d58d6d8ca94b48d7cd8d522d86a816917730a`  
-		Last Modified: Sat, 18 Dec 2021 07:01:07 GMT  
+	-	`sha256:6697f6eb3f89e71dafe9133781f5cb94266346dd02cd0b6bca079a644d05cdcc`  
+		Last Modified: Wed, 22 Dec 2021 14:07:20 GMT  
 		Size: 406.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
