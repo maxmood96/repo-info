@@ -3232,20 +3232,13 @@ Licenses: (parsed from: `/usr/share/doc/libthai-data/copyright`, `/usr/share/doc
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libthai=0.1.28-4.1
-'http://deb.debian.org/debian/pool/main/libt/libthai/libthai_0.1.28-4.1.dsc' libthai_0.1.28-4.1.dsc 2333 SHA256:0198b1fd8f623cfc246518e1eaf582287b21d7b11e4bb701e3b2308c6fdf2ff4
-'http://deb.debian.org/debian/pool/main/libt/libthai/libthai_0.1.28.orig.tar.xz' libthai_0.1.28.orig.tar.xz 413592 SHA256:ffe0a17b4b5aa11b153c15986800eca19f6c93a4025ffa5cf2cab2dcdf1ae911
-'http://deb.debian.org/debian/pool/main/libt/libthai/libthai_0.1.28-4.1.debian.tar.xz' libthai_0.1.28-4.1.debian.tar.xz 12852 SHA256:3e8fc1f49ea78ec16ca79414a6ea0632a92c67de8610ada1b841df4139bce33e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libthai/0.1.28-4.1/
 
-- https://sources.debian.net/src/libthai/0.1.28-4.1/ (for browsing the source)
-- https://sources.debian.net/src/libthai/0.1.28-4.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libthai/0.1.28-4.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libtirpc=1.3.2-2`
 
@@ -4791,20 +4784,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-14=14.1-1
-'http://deb.debian.org/debian/pool/main/p/postgresql-14/postgresql-14_14.1-1.dsc' postgresql-14_14.1-1.dsc 3684 SHA256:d6c1167bbd31d4c02ef0c864d1d302dcec8e1c18fa876c2d4f0476c342fd1439
-'http://deb.debian.org/debian/pool/main/p/postgresql-14/postgresql-14_14.1.orig.tar.bz2' postgresql-14_14.1.orig.tar.bz2 21887101 SHA256:4d3c101ea7ae38982f06bdc73758b53727fb6402ecd9382006fa5ecc7c2ca41f
-'http://deb.debian.org/debian/pool/main/p/postgresql-14/postgresql-14_14.1-1.debian.tar.xz' postgresql-14_14.1-1.debian.tar.xz 25904 SHA256:5e40b8e428e50a407e0797964fe305921abbe26f99c8691b4b238b38ff0211f3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/postgresql-14/14.1-1/
 
-- https://sources.debian.net/src/postgresql-14/14.1-1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-14/14.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-14/14.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:3.3.17-5`
 
@@ -5407,20 +5393,13 @@ Licenses: (parsed from: `/usr/share/doc/libutf8proc2/copyright`)
 - `Expat`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris utf8proc=2.5.0-1
-'http://deb.debian.org/debian/pool/main/u/utf8proc/utf8proc_2.5.0-1.dsc' utf8proc_2.5.0-1.dsc 2154 SHA256:2137104a3712875650629305fe7d7ef37d4d99328846c18b087b289c0ddbf27c
-'http://deb.debian.org/debian/pool/main/u/utf8proc/utf8proc_2.5.0.orig.tar.gz' utf8proc_2.5.0.orig.tar.gz 155485 SHA256:d4e8dfc898cfd062493cb7f42d95d70ccdd3a4cd4d90bec0c71b47cca688f1be
-'http://deb.debian.org/debian/pool/main/u/utf8proc/utf8proc_2.5.0-1.debian.tar.xz' utf8proc_2.5.0-1.debian.tar.xz 5240 SHA256:333496cf4e178b5ccf4972fa52523d07a21a0cabf0cb123133c6c71f98e92eff
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/utf8proc/2.5.0-1/
 
-- https://sources.debian.net/src/utf8proc/2.5.0-1/ (for browsing the source)
-- https://sources.debian.net/src/utf8proc/2.5.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/utf8proc/2.5.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `util-linux=2.37.2-4`
 
