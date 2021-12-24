@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:495144440d6be95d62973def5933c4d76ec7edf1efa34d08e32a68649871325a`
-- Created: `2021-12-02T08:53:25.952838132Z`
-- Virtual Size: ~ 896.06 Mb  
+- Image ID: `sha256:ccf361780e3d8a699ca0f8279841f5555778bfa5b4e7941aeb2325f948c912fe`
+- Created: `2021-12-21T17:53:12.94428816Z`
+- Virtual Size: ~ 896.08 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["erl"]`
@@ -921,11 +921,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/glibc/2.24-11+deb9u4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/glibc/2.24-11+deb9u4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gmp=2:6.1.2+dfsg-1`
+### `dpkg` source package: `gmp=2:6.1.2+dfsg-1+deb9u1`
 
 Binary Packages:
 
-- `libgmp10:amd64=2:6.1.2+dfsg-1`
+- `libgmp10:amd64=2:6.1.2+dfsg-1+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/libgmp10/copyright`)
 
@@ -937,17 +937,17 @@ Licenses: (parsed from: `/usr/share/doc/libgmp10/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gmp=2:6.1.2+dfsg-1
-'http://deb.debian.org/debian/pool/main/g/gmp/gmp_6.1.2+dfsg-1.dsc' gmp_6.1.2+dfsg-1.dsc 2183 SHA256:3a53f6c74c9b2465c1c61446aa9bdc6182fdec8b04075849d4cbf224a73b6fbe
-'http://deb.debian.org/debian/pool/main/g/gmp/gmp_6.1.2+dfsg.orig.tar.xz' gmp_6.1.2+dfsg.orig.tar.xz 1804424 SHA256:18016f718f621e7641ddd4e57f8e140391c5183252e5998263ffff59198a65b7
-'http://deb.debian.org/debian/pool/main/g/gmp/gmp_6.1.2+dfsg-1.debian.tar.xz' gmp_6.1.2+dfsg-1.debian.tar.xz 20652 SHA256:79e73f74197e7628b2f0c02edf01b6eea3716c13152044ed8e0e0ee4178394df
+$ apt-get source -qq --print-uris gmp=2:6.1.2+dfsg-1+deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/g/gmp/gmp_6.1.2+dfsg-1+deb9u1.dsc' gmp_6.1.2+dfsg-1+deb9u1.dsc 2211 SHA256:0ce57232e517fc70ead63b515f26d4a492acd9041cd373b09db62f42326a7055
+'http://security.debian.org/debian-security/pool/updates/main/g/gmp/gmp_6.1.2+dfsg.orig.tar.xz' gmp_6.1.2+dfsg.orig.tar.xz 1804424 SHA256:18016f718f621e7641ddd4e57f8e140391c5183252e5998263ffff59198a65b7
+'http://security.debian.org/debian-security/pool/updates/main/g/gmp/gmp_6.1.2+dfsg-1+deb9u1.debian.tar.xz' gmp_6.1.2+dfsg-1+deb9u1.debian.tar.xz 21268 SHA256:afc4192a4749edfc5effed23993d419d2e9b499c85b8fd5c9f47145caca1c056
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/gmp/2:6.1.2+dfsg-1/ (for browsing the source)
-- https://sources.debian.net/src/gmp/2:6.1.2+dfsg-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gmp/2:6.1.2+dfsg-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/gmp/2:6.1.2+dfsg-1+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/gmp/2:6.1.2+dfsg-1+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gmp/2:6.1.2+dfsg-1+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnome-icon-theme=3.12.0-2`
 
@@ -2593,11 +2593,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libxxf86vm/1:1.1.4-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libxxf86vm/1:1.1.4-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=4.9.272-2`
+### `dpkg` source package: `linux=4.9.290-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.9.272-2`
+- `linux-libc-dev:amd64=4.9.290-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2610,17 +2610,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=4.9.272-2
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.272-2.dsc' linux_4.9.272-2.dsc 125025 SHA256:9a4c7769019a9115ca92ba36ed651bdb04202e876f30c47b5c90f36cba48745c
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.272.orig.tar.xz' linux_4.9.272.orig.tar.xz 94953184 SHA256:e6bdb214f4958246399198a0f7838b69ad499a88ca8c45e5c3e4d91e1d201566
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.272-2.debian.tar.xz' linux_4.9.272-2.debian.tar.xz 2177272 SHA256:94efd9d3d6b5697dd7f96a3e76349b737520317726cd95b968bbdc06ed24c777
+$ apt-get source -qq --print-uris linux=4.9.290-1
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.290-1.dsc' linux_4.9.290-1.dsc 125025 SHA256:819ef704a833435672b0e2f072aa8bd89374835e65f6fa9976977d93fd9e96a6
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.290.orig.tar.xz' linux_4.9.290.orig.tar.xz 94972796 SHA256:8493411b4a8b193b2c56b7e64ed8396f947fb71caaa7cabc7d48a6deffea79e1
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.290-1.debian.tar.xz' linux_4.9.290-1.debian.tar.xz 1347856 SHA256:bb047962165aecc4f019bb0bd131f9ae248cc242003638fa24e17d5f67888247
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/4.9.272-2/ (for browsing the source)
-- https://sources.debian.net/src/linux/4.9.272-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/4.9.272-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/4.9.290-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/4.9.290-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/4.9.290-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lksctp-tools=1.0.17+dfsg-1`
 

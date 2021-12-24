@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6e7fe58bf28bbd06336d0b77558b0295d54c6700fd0ab19819d979a154e34aa7`
-- Created: `2021-12-02T08:06:24.437099848Z`
-- Virtual Size: ~ 259.69 Mb  
+- Image ID: `sha256:7f40fc73617f1539fefbf1cbadfc386a604517a2f1af703c1530d07ad72501a2`
+- Created: `2021-12-21T17:12:01.96307313Z`
+- Virtual Size: ~ 259.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["erl"]`
@@ -1074,11 +1074,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libtool/2.4.6-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libtool/2.4.6-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=4.9.272-2`
+### `dpkg` source package: `linux=4.9.290-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.9.272-2`
+- `linux-libc-dev:amd64=4.9.290-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1091,17 +1091,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=4.9.272-2
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.272-2.dsc' linux_4.9.272-2.dsc 125025 SHA256:9a4c7769019a9115ca92ba36ed651bdb04202e876f30c47b5c90f36cba48745c
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.272.orig.tar.xz' linux_4.9.272.orig.tar.xz 94953184 SHA256:e6bdb214f4958246399198a0f7838b69ad499a88ca8c45e5c3e4d91e1d201566
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.272-2.debian.tar.xz' linux_4.9.272-2.debian.tar.xz 2177272 SHA256:94efd9d3d6b5697dd7f96a3e76349b737520317726cd95b968bbdc06ed24c777
+$ apt-get source -qq --print-uris linux=4.9.290-1
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.290-1.dsc' linux_4.9.290-1.dsc 125025 SHA256:819ef704a833435672b0e2f072aa8bd89374835e65f6fa9976977d93fd9e96a6
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.290.orig.tar.xz' linux_4.9.290.orig.tar.xz 94972796 SHA256:8493411b4a8b193b2c56b7e64ed8396f947fb71caaa7cabc7d48a6deffea79e1
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_4.9.290-1.debian.tar.xz' linux_4.9.290-1.debian.tar.xz 1347856 SHA256:bb047962165aecc4f019bb0bd131f9ae248cc242003638fa24e17d5f67888247
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/4.9.272-2/ (for browsing the source)
-- https://sources.debian.net/src/linux/4.9.272-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/4.9.272-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/4.9.290-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/4.9.290-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/4.9.290-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lksctp-tools=1.0.17+dfsg-1`
 
