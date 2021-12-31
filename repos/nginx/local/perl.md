@@ -1,18 +1,18 @@
-# `nginx:1.21.4-perl`
+# `nginx:1.21.5-perl`
 
 ## Docker Metadata
 
-- Image ID: `sha256:481375b6e9f29c0c00e155057fb6474024b4a094b72081b528a50a49c152e618`
-- Created: `2021-12-21T03:01:18.262199342Z`
-- Virtual Size: ~ 187.55 Mb  
+- Image ID: `sha256:f99016d974635900fc301271ea1e8260c7ac4053e3e2646f0c226eb548a09a05`
+- Created: `2021-12-29T19:28:57.929110269Z`
+- Virtual Size: ~ 187.56 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.21.4`
-  - `NJS_VERSION=0.7.0`
+  - `NGINX_VERSION=1.21.5`
+  - `NJS_VERSION=0.7.1`
   - `PKG_RELEASE=1~bullseye`
 - Labels:
   - `maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>`
@@ -2334,11 +2334,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nghttp2/1.43.0-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nghttp2/1.43.0-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nginx-module-geoip=1.21.4-1~bullseye`
+### `dpkg` source package: `nginx-module-geoip=1.21.5-1~bullseye`
 
 Binary Packages:
 
-- `nginx-module-geoip=1.21.4-1~bullseye`
+- `nginx-module-geoip=1.21.5-1~bullseye`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2348,11 +2348,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-image-filter=1.21.4-1~bullseye`
+### `dpkg` source package: `nginx-module-image-filter=1.21.5-1~bullseye`
 
 Binary Packages:
 
-- `nginx-module-image-filter=1.21.4-1~bullseye`
+- `nginx-module-image-filter=1.21.5-1~bullseye`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2362,11 +2362,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-njs=1.21.4+0.7.0-1~bullseye`
+### `dpkg` source package: `nginx-module-njs=1.21.5+0.7.1-1~bullseye`
 
 Binary Packages:
 
-- `nginx-module-njs=1.21.4+0.7.0-1~bullseye`
+- `nginx-module-njs=1.21.5+0.7.1-1~bullseye`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2376,11 +2376,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-perl=1.21.4-1~bullseye`
+### `dpkg` source package: `nginx-module-perl=1.21.5-1~bullseye`
 
 Binary Packages:
 
-- `nginx-module-perl=1.21.4-1~bullseye`
+- `nginx-module-perl=1.21.5-1~bullseye`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2390,11 +2390,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-xslt=1.21.4-1~bullseye`
+### `dpkg` source package: `nginx-module-xslt=1.21.5-1~bullseye`
 
 Binary Packages:
 
-- `nginx-module-xslt=1.21.4-1~bullseye`
+- `nginx-module-xslt=1.21.5-1~bullseye`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2404,11 +2404,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx=1.21.4-1~bullseye`
+### `dpkg` source package: `nginx=1.21.5-1~bullseye`
 
 Binary Packages:
 
-- `nginx=1.21.4-1~bullseye`
+- `nginx=1.21.5-1~bullseye`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
