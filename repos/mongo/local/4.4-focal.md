@@ -1,10 +1,10 @@
-# `mongo:4.4.10-focal`
+# `mongo:4.4.11-focal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:275f79a10a884575f8ffcfb240e1f0d26aecdf6b16df6bcc52f3db8d9d0db19d`
-- Created: `2021-11-17T02:31:25.65626599Z`
-- Virtual Size: ~ 437.15 Mb  
+- Image ID: `sha256:1c0f1e566fec5848ef0d4f7425ee69bd97fa62e15b014f9f811b573cc8c3ca0e`
+- Created: `2021-12-30T19:23:13.288908922Z`
+- Virtual Size: ~ 437.57 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `MONGO_PACKAGE=mongodb-org`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=4.4`
-  - `MONGO_VERSION=4.4.10`
+  - `MONGO_VERSION=4.4.11`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1275,16 +1275,16 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-org=4.4.10`
+### `dpkg` source package: `mongodb-org=4.4.11`
 
 Binary Packages:
 
-- `mongodb-org=4.4.10`
-- `mongodb-org-database-tools-extra=4.4.10`
-- `mongodb-org-mongos=4.4.10`
-- `mongodb-org-server=4.4.10`
-- `mongodb-org-shell=4.4.10`
-- `mongodb-org-tools=4.4.10`
+- `mongodb-org=4.4.11`
+- `mongodb-org-database-tools-extra=4.4.11`
+- `mongodb-org-mongos=4.4.11`
+- `mongodb-org-server=4.4.11`
+- `mongodb-org-shell=4.4.11`
+- `mongodb-org-tools=4.4.11`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1844,19 +1844,24 @@ $ apt-get source -qq --print-uris tar=1.30+dfsg-7ubuntu0.20.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.30+dfsg-7ubuntu0.20.04.1.debian.tar.xz' tar_1.30+dfsg-7ubuntu0.20.04.1.debian.tar.xz 22616 SHA512:015cf0e3eadb05e07b1c555afadf2f8d6af21f82a375ad0f87682af5e2c4b10e38e0f7ee6ac72fa5ecea5bc40cd4600cd0f2aed06c3c8051a6191d51d124003e
 ```
 
-### `dpkg` source package: `tzdata=2021a-2ubuntu0.20.04`
+### `dpkg` source package: `tzdata=2021e-0ubuntu0.20.04`
 
 Binary Packages:
 
-- `tzdata=2021a-2ubuntu0.20.04`
+- `tzdata=2021e-0ubuntu0.20.04`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2021e-0ubuntu0.20.04
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2021e-0ubuntu0.20.04.dsc' tzdata_2021e-0ubuntu0.20.04.dsc 2109 SHA512:64469ce6306e76adfd323ed421295f91c963dfa563496dd55d227f69cdff44e1873a3e8471892bd2b46613557e22bb1d2e3b5677338a1b3023e17e9eb9b7f36e
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2021e.orig.tar.gz' tzdata_2021e.orig.tar.gz 422509 SHA512:c1e8d04e049157ed5d4af0868855bbd75517e3d7e1db9c41d5283ff260109de46b6fac6be94828201d093e163d868044ac2a9db2bf0aeab800e264d0c73a9119
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2021e-0ubuntu0.20.04.debian.tar.xz' tzdata_2021e-0ubuntu0.20.04.debian.tar.xz 168032 SHA512:f8a84f5372339dcd695f9265ae6fad2dc9b2495928824e81a76d4f88c64226e3135edb0c082d0f0ebca9cf9eef94eef06c9c4f34d5d8f01d5733655714b29916
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2020.02.11.4`
 
