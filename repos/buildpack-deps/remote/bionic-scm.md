@@ -1,7 +1,7 @@
 ## `buildpack-deps:bionic-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:39abe1751a21d5fe77f9468b9fb862931c4db1136094af6d75361ce5561d44ee
+$ docker pull buildpack-deps@sha256:1a41c58a5e3bc7c45f7488f923f00f4991e0a7525f54efb4a18dfa24ed8fd489
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16,89 +16,89 @@ $ docker pull buildpack-deps@sha256:39abe1751a21d5fe77f9468b9fb862931c4db1136094
 ### `buildpack-deps:bionic-scm` - linux; amd64
 
 ```console
-$ docker pull buildpack-deps@sha256:5e43b1ebcfe2b76e7912db780b8aac130c8578f962609f04f88de0e5abbb150c
+$ docker pull buildpack-deps@sha256:d8d7b6fbc2668fa192f1b171af6a14907a82aac442fd4f053ad18f87bff62d5b
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.8 MB (81848404 bytes)**  
+-	Total Size: **81.9 MB (81854598 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cd2ce214211225c549bf9107a4c081cc04753411e5f7dc05e2fe18e780cb6807`
+-	Image ID: `sha256:ac2ca96c7ac8c796c74634eb1ec1a6ead5274ef986d271c2ed679c6ba77da9f8`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Fri, 01 Oct 2021 02:23:23 GMT
-ADD file:0d82cd095966e8ee78b593cb47a352eec842edb7bd9d9468e8a70154522447d1 in / 
-# Fri, 01 Oct 2021 02:23:24 GMT
+# Fri, 07 Jan 2022 02:25:21 GMT
+ADD file:2aa3e79e3cff3c048612744ac310cf86bc27de3433d420711bafc6612445befc in / 
+# Fri, 07 Jan 2022 02:25:21 GMT
 CMD ["bash"]
-# Fri, 01 Oct 2021 03:02:01 GMT
+# Fri, 07 Jan 2022 03:02:18 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 01 Oct 2021 03:02:17 GMT
+# Fri, 07 Jan 2022 03:02:25 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Fri, 01 Oct 2021 03:02:58 GMT
+# Fri, 07 Jan 2022 03:02:59 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:284055322776031bac33723839acb0db2d063a525ba4fa1fd268a831c7553b26`  
-		Last Modified: Fri, 01 Oct 2021 02:25:02 GMT  
-		Size: 26.7 MB (26705075 bytes)  
+	-	`sha256:2f94e549220aea96f00cae7eb95f401e61b41a16cc5eb0b4ea592d0ce871930a`  
+		Last Modified: Thu, 06 Jan 2022 23:50:21 GMT  
+		Size: 26.7 MB (26705027 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1404df7fbdef68bea55f7c051dbdb1aac1e564886ca277d1f8b1d0bf3fbe8e4`  
-		Last Modified: Fri, 01 Oct 2021 03:17:56 GMT  
-		Size: 6.6 MB (6643379 bytes)  
+	-	`sha256:93d2c4c0515b34e36078574315ad974d4563e24d45b76bed28c008d4b84af5d5`  
+		Last Modified: Fri, 07 Jan 2022 03:21:56 GMT  
+		Size: 6.6 MB (6642245 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:964552afca366bca79302ab79366a0528db0710e3db41a0a5c40e90d1b936c20`  
-		Last Modified: Fri, 01 Oct 2021 03:17:55 GMT  
-		Size: 3.0 MB (3022502 bytes)  
+	-	`sha256:fbc31a01cc6d078f111f123161ccaca397151a5fe113d9a8c6a47e3600d02b03`  
+		Last Modified: Fri, 07 Jan 2022 03:21:56 GMT  
+		Size: 3.0 MB (3022839 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e3f547fe5b8db9e7e53004a6ebd2656feef7a91d529f9cb21c95b3bc8b108e19`  
-		Last Modified: Fri, 01 Oct 2021 03:18:13 GMT  
-		Size: 45.5 MB (45477448 bytes)  
+	-	`sha256:ab8c286c520b835eec50a3ac38a8b1a3068e0da57a7cea9185d05ba8267ab4a9`  
+		Last Modified: Fri, 07 Jan 2022 03:22:13 GMT  
+		Size: 45.5 MB (45484487 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:bionic-scm` - linux; arm variant v7
 
 ```console
-$ docker pull buildpack-deps@sha256:58947866db3f48fa361f7056b87a69b67ef6f4b3348e65f297ab297295dca8ec
+$ docker pull buildpack-deps@sha256:51bc0cd0c9da6d5f6c99e66c7641eb3ccabc0773ce36977926770fb033010383
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **71.3 MB (71273095 bytes)**  
+-	Total Size: **71.3 MB (71278516 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2fa26238d728f2e54ac4d6d4703e94f9750fa80cebe834eccf807a708e56ddd4`
+-	Image ID: `sha256:6267be5bcefd6bbd024b3e5563300a704b83b20b0a47b5664dc1a7ae16a39f82`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Sat, 02 Oct 2021 05:58:32 GMT
-ADD file:ec8cec062962fe6498197aa4bfaf1953505e272985dda8d5e81465521d850fac in / 
-# Sat, 02 Oct 2021 05:58:33 GMT
+# Fri, 07 Jan 2022 02:26:03 GMT
+ADD file:04c050ae3b998115f9e3f0da295a93a62bdff5d2efc3c37e792665d263cbf804 in / 
+# Fri, 07 Jan 2022 02:26:04 GMT
 CMD ["bash"]
-# Sat, 02 Oct 2021 22:17:32 GMT
+# Fri, 07 Jan 2022 02:51:34 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
-# Sat, 02 Oct 2021 22:17:45 GMT
+# Fri, 07 Jan 2022 02:51:49 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 02 Oct 2021 22:18:33 GMT
+# Fri, 07 Jan 2022 02:52:41 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:0fe312f6db8a357ff205c74a1649d8c36186a76057c3223acbd31367e2dfd049`  
-		Last Modified: Sat, 02 Oct 2021 06:02:32 GMT  
-		Size: 22.3 MB (22304304 bytes)  
+	-	`sha256:db4feefed17933b9e08cd0d0fd6c63db5c115552848576f2bc2062c8c5f69628`  
+		Last Modified: Fri, 07 Jan 2022 02:30:10 GMT  
+		Size: 22.3 MB (22303634 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0514bc47630e4346d13917c20c9a52eb361c5077c2b17f804d305bb3aeeae1ec`  
-		Last Modified: Sat, 02 Oct 2021 22:36:02 GMT  
-		Size: 5.7 MB (5713518 bytes)  
+	-	`sha256:7effbe8b0ef2fabb2f78579f400c46d711622f00f77feb1ba43590d049ef323d`  
+		Last Modified: Fri, 07 Jan 2022 03:12:31 GMT  
+		Size: 5.7 MB (5712218 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43197d564770c4e86c4ec1c0d141238ad2a175e92bebfa12b212b729f581ae62`  
-		Last Modified: Sat, 02 Oct 2021 22:36:00 GMT  
-		Size: 2.6 MB (2584549 bytes)  
+	-	`sha256:369e7c93d7c89dbe2c27677cd5cc7c33d18491e2f71b55a48bd815d221643f50`  
+		Last Modified: Fri, 07 Jan 2022 03:12:28 GMT  
+		Size: 2.6 MB (2584744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1bd05568a3d4d96e48d84348793a6345f8359538aed1403669bef0db7a6f026c`  
-		Last Modified: Sat, 02 Oct 2021 22:36:42 GMT  
-		Size: 40.7 MB (40670724 bytes)  
+	-	`sha256:ed9eb228c539cbf8b8f658527a38e5c547515365430480aaf7c228cd71da576a`  
+		Last Modified: Fri, 07 Jan 2022 03:13:11 GMT  
+		Size: 40.7 MB (40677920 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:bionic-scm` - linux; arm64 variant v8
@@ -192,45 +192,45 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 ### `buildpack-deps:bionic-scm` - linux; ppc64le
 
 ```console
-$ docker pull buildpack-deps@sha256:d4a4d531a63f36ca9d9b778f021e88bedc03615312d12bc138ae8829798e9d40
+$ docker pull buildpack-deps@sha256:678018633abfa702038dcedb2cb4d1f4c7739f07e245020628bdfedb33e5e668
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **94.9 MB (94933984 bytes)**  
+-	Total Size: **94.9 MB (94929865 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:55b74a920f641c6acbe8e3557e6b0420efaa1a94b372cdffb52a99991e04d210`
+-	Image ID: `sha256:d2b9a2a1d13c4ae5c914e82dbb28feabe598da9ac6f798b8a5a16bb7bc6a5fc0`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 05 Oct 2021 11:07:29 GMT
-ADD file:fd96554dfb72307c3cf9292c343050a8b9f0848735b7555820f0068914ebd758 in / 
-# Tue, 05 Oct 2021 11:07:35 GMT
+# Fri, 07 Jan 2022 02:19:52 GMT
+ADD file:e29b7078eb9c78ec6f3931c4beea820e4b7fe5d0d02e02e220c083dcd603aad1 in / 
+# Fri, 07 Jan 2022 02:19:55 GMT
 CMD ["bash"]
-# Tue, 05 Oct 2021 14:41:25 GMT
+# Fri, 07 Jan 2022 02:41:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 05 Oct 2021 14:42:42 GMT
+# Fri, 07 Jan 2022 02:41:45 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 05 Oct 2021 14:46:48 GMT
+# Fri, 07 Jan 2022 02:42:59 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:db28fc1e594e5598e665c54ac1b7fd602d86dddaf8bb237a72303cec22a9185c`  
-		Last Modified: Tue, 05 Oct 2021 11:10:31 GMT  
-		Size: 30.4 MB (30432921 bytes)  
+	-	`sha256:f130035f6453da800db2a1c34f617d35285297b1e549cc5fe138db9ecb704f0b`  
+		Last Modified: Fri, 07 Jan 2022 02:22:21 GMT  
+		Size: 30.4 MB (30432347 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4bb1c3498d7cd3adcb6d716b98adcea053880272423eb1a9939a7426d428cfd8`  
-		Last Modified: Tue, 05 Oct 2021 15:46:03 GMT  
-		Size: 7.1 MB (7058539 bytes)  
+	-	`sha256:d02cf98deb89a0429afce514e8acff660769c377b62a27bed4ac9461d5fb3d05`  
+		Last Modified: Fri, 07 Jan 2022 03:09:21 GMT  
+		Size: 7.1 MB (7056362 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:494fb7e48f3a6cbd76b9eaab065228a859bdd7e6f41a24d6aa2cf74d77d31e73`  
-		Last Modified: Tue, 05 Oct 2021 15:45:58 GMT  
-		Size: 3.7 MB (3719778 bytes)  
+	-	`sha256:bcb8c7ad2e71ddbe68b162a1dd387cc107143935937ebd41ba87891667c78553`  
+		Last Modified: Fri, 07 Jan 2022 03:09:20 GMT  
+		Size: 3.7 MB (3719250 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:961571b34653877509a0b15ed874ac56391305c5a20707a48fdf723b3becd986`  
-		Last Modified: Tue, 05 Oct 2021 15:46:51 GMT  
-		Size: 53.7 MB (53722746 bytes)  
+	-	`sha256:862a5c5e78fe0eb255a3bb1e42697bd0637677e1e2531b3d2bf00d670eb2bd47`  
+		Last Modified: Fri, 07 Jan 2022 03:09:47 GMT  
+		Size: 53.7 MB (53721906 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:bionic-scm` - linux; s390x
