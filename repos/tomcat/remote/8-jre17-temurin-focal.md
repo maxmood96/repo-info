@@ -1,7 +1,7 @@
 ## `tomcat:8-jre17-temurin-focal`
 
 ```console
-$ docker pull tomcat@sha256:408fcf8e30a4540da44e0277d3151df332b38bb6a882b4d7752486de6923fbfb
+$ docker pull tomcat@sha256:70071484c38d9e17620c5254a8b52aa205fbcd4da5155aedebab81795a99ce6f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -207,93 +207,93 @@ CMD ["catalina.sh" "run"]
 ### `tomcat:8-jre17-temurin-focal` - linux; arm64 variant v8
 
 ```console
-$ docker pull tomcat@sha256:d6762d93a1e672dc65eaa7ed3b0b69fe03a9218d6ec82ad123050fc872456d69
+$ docker pull tomcat@sha256:d9347c9f807730a50d665afef411c6c07f07903e6f585b7e297d743225d23396
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **115.5 MB (115480715 bytes)**  
+-	Total Size: **113.5 MB (113473654 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:004b7cab33aa528b2491efe42d5cfb96673ba146d4aca13515d8bd3a0649b044`
+-	Image ID: `sha256:3366e120964c6b886c46807f35b6bb5239d7b181e8cfcc5d66927dd7b988616f`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
-# Sat, 16 Oct 2021 01:47:45 GMT
-ADD file:ff4909f2124325dac58d43c617132325934ed48a5ab4c534d05f931fcf700a2f in / 
-# Sat, 16 Oct 2021 01:47:45 GMT
+# Fri, 07 Jan 2022 01:53:45 GMT
+ADD file:521a8ada4ac06e6f7720904486d481d216a8c3e08c0c7db1376c39a33e709668 in / 
+# Fri, 07 Jan 2022 01:53:45 GMT
 CMD ["bash"]
-# Sat, 16 Oct 2021 03:25:20 GMT
+# Fri, 07 Jan 2022 02:32:58 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Mon, 29 Nov 2021 19:41:49 GMT
+# Fri, 07 Jan 2022 02:35:11 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales python-is-python3 binutils     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Mon, 29 Nov 2021 19:42:22 GMT
+# Fri, 07 Jan 2022 02:35:44 GMT
 ENV JAVA_VERSION=jdk-17.0.1+12
-# Wed, 22 Dec 2021 04:24:09 GMT
+# Fri, 07 Jan 2022 02:36:14 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='851205c5036543cbcf1953c3f5768977b9efaf6b86c9fb5ec1b6cab01f781faf';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.1%2B12/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.1_12.tar.gz';          ;;        armhf|arm)          ESUM='e1d94e98c47f2530304eb187c74a3e3c1cf46ddb4d86c277edb1e499bb525fe1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.1%2B12/OpenJDK17U-jre_arm_linux_hotspot_17.0.1_12.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='0e9eee4977e14edc14d0e2acb97cb413f4a769e2d855d02131af1ccd877779ff';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.1%2B12/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.1_12.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='ff88a8bcdaa8db788b463b14724460f68c4c70c80b86e556012521996281f4bf';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.1%2B12/OpenJDK17U-jre_s390x_linux_hotspot_17.0.1_12.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='9d58cb741509a88e0ae33eb022334fb900b409b198eca6fe76246f0677b392ad';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.1%2B12/OpenJDK17U-jre_x64_linux_hotspot_17.0.1_12.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Wed, 22 Dec 2021 04:24:09 GMT
+# Fri, 07 Jan 2022 02:36:15 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 22 Dec 2021 04:24:10 GMT
+# Fri, 07 Jan 2022 02:36:16 GMT
 RUN echo Verifying install ...     && echo java --version && java --version     && echo Complete.
-# Wed, 22 Dec 2021 19:32:59 GMT
+# Fri, 07 Jan 2022 05:12:16 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Wed, 22 Dec 2021 19:33:00 GMT
+# Fri, 07 Jan 2022 05:12:17 GMT
 ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 22 Dec 2021 19:33:01 GMT
+# Fri, 07 Jan 2022 05:12:18 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Wed, 22 Dec 2021 19:33:02 GMT
+# Fri, 07 Jan 2022 05:12:19 GMT
 WORKDIR /usr/local/tomcat
-# Wed, 22 Dec 2021 19:33:03 GMT
+# Fri, 07 Jan 2022 05:12:20 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Wed, 22 Dec 2021 19:33:04 GMT
+# Fri, 07 Jan 2022 05:12:21 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Wed, 22 Dec 2021 19:42:01 GMT
+# Fri, 07 Jan 2022 05:31:25 GMT
 ENV GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 5C3C5F3E314C866292F359A8F3AD5C94A67F707E 765908099ACF92702C7D949BFA0C35EA8AA299F1 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23
-# Wed, 22 Dec 2021 19:42:01 GMT
+# Fri, 07 Jan 2022 05:31:26 GMT
 ENV TOMCAT_MAJOR=8
-# Wed, 22 Dec 2021 19:42:02 GMT
+# Fri, 07 Jan 2022 05:31:27 GMT
 ENV TOMCAT_VERSION=8.5.73
-# Wed, 22 Dec 2021 19:42:03 GMT
+# Fri, 07 Jan 2022 05:31:28 GMT
 ENV TOMCAT_SHA512=4d33760d007acc5271ba0f946d2be96f6146d4632e411c9b72d351fc49d08355e8b84b051713a2f580e0f633cbe4409b7e9bb0e62f3af8d1094c6e4b3fdb96f0
-# Wed, 22 Dec 2021 19:42:05 GMT
-COPY dir:6602aa8209f6372d03fbbed9961bd699252eb45ca19aba4ce15dc6fee98ec58f in /usr/local/tomcat 
-# Wed, 22 Dec 2021 19:42:13 GMT
+# Fri, 07 Jan 2022 05:31:30 GMT
+COPY dir:7ca211e245d8a1374a792e58db4c26e93bcb5e1aba472b6b6c1ea6a035eaf40c in /usr/local/tomcat 
+# Fri, 07 Jan 2022 05:31:36 GMT
 RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/*
-# Wed, 22 Dec 2021 19:42:15 GMT
+# Fri, 07 Jan 2022 05:31:38 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Wed, 22 Dec 2021 19:42:16 GMT
+# Fri, 07 Jan 2022 05:31:39 GMT
 EXPOSE 8080
-# Wed, 22 Dec 2021 19:42:17 GMT
+# Fri, 07 Jan 2022 05:31:40 GMT
 CMD ["catalina.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:a39c84e173f038958d338f55a9e8ee64bb6643e8ac6ae98e08ca65146e668d86`  
-		Last Modified: Sat, 09 Oct 2021 15:32:18 GMT  
-		Size: 27.2 MB (27170900 bytes)  
+	-	`sha256:5f3d23ccb99f6c9462a15efcf35aef0863858073a06d56df671d0e791b26222a`  
+		Last Modified: Fri, 07 Jan 2022 01:55:32 GMT  
+		Size: 27.2 MB (27171074 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e4bc7e92316b9d4dee98cf60f4fcb0995823e001fcc5448df92e5fb76485370a`  
-		Last Modified: Mon, 29 Nov 2021 19:45:52 GMT  
-		Size: 29.4 MB (29377186 bytes)  
+	-	`sha256:f4cc5324dc0c2bf6f5bc85f9784eb0512b2f0175a537dcb2b9dc380f681a325d`  
+		Last Modified: Fri, 07 Jan 2022 02:39:34 GMT  
+		Size: 29.4 MB (29377313 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2556b1b0a2d3afc98ef686b769f959d708ac3b77e69b625a5f0738942f96b04`  
-		Last Modified: Wed, 22 Dec 2021 04:26:27 GMT  
-		Size: 45.4 MB (45438063 bytes)  
+	-	`sha256:161ea062ff1bd87f97034e9d0adc89ff7255cb68e2fcd874750a50cb96e95cef`  
+		Last Modified: Fri, 07 Jan 2022 02:40:50 GMT  
+		Size: 45.4 MB (45438065 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44a24ed4ea98ad4e13cdce4d8eb9140a5ccb4970ff96d23f3fe10fa9c4204418`  
-		Last Modified: Wed, 22 Dec 2021 04:26:20 GMT  
+	-	`sha256:b00a278478160419fd2197d9ca34d1971eca57ea08af2382c79ca69e700942f3`  
+		Last Modified: Fri, 07 Jan 2022 02:40:43 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:62a76d8772686439959166177b555febc81f7b4d3e54f20d9fef4f4d01298415`  
-		Last Modified: Wed, 22 Dec 2021 20:01:46 GMT  
-		Size: 140.0 B  
+	-	`sha256:a13604335b155739375f1be8d78e781ba6d593dad8b4b6fdae7525d9d2ff9556`  
+		Last Modified: Fri, 07 Jan 2022 05:54:56 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bad8b6e22ba8eec14f335accb89df1514555e5555d13805fe07c9a0908a066d1`  
-		Last Modified: Wed, 22 Dec 2021 20:08:01 GMT  
-		Size: 11.3 MB (11269400 bytes)  
+	-	`sha256:6a6213add7dc9dca7d824c6314aeac19fab5edc9d3e91e133abe9fecf45be246`  
+		Last Modified: Fri, 07 Jan 2022 06:07:22 GMT  
+		Size: 11.3 MB (11269401 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4df79ceeb69a094b28d9c7e203be53adb9bcaf5e8b4d61102dd006c50a2ff3f`  
-		Last Modified: Wed, 22 Dec 2021 20:08:01 GMT  
-		Size: 2.2 MB (2224899 bytes)  
+	-	`sha256:a6c346e7b637876f10fc0db6d5f2ae6cba5eaa5d70200f9314aedf216dcef974`  
+		Last Modified: Fri, 07 Jan 2022 06:07:21 GMT  
+		Size: 217.5 KB (217535 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `tomcat:8-jre17-temurin-focal` - linux; ppc64le
