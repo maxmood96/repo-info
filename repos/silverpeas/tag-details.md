@@ -167,7 +167,7 @@ CMD ["/opt/run.sh"]
 ## `silverpeas:6.1.3`
 
 ```console
-$ docker pull silverpeas@sha256:5c00c5dcc0488f49fab9cb135abdbfe5869559754aa25e70456f91bc6d4bf225
+$ docker pull silverpeas@sha256:044e88a38ac9863540c6811ab1aef38ac624f09db8fd75df2a8f834b6705acde
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -177,136 +177,136 @@ $ docker pull silverpeas@sha256:5c00c5dcc0488f49fab9cb135abdbfe5869559754aa25e70
 ### `silverpeas:6.1.3` - linux; amd64
 
 ```console
-$ docker pull silverpeas@sha256:aafc6f12a87115c85b4841089c20d547607aeab5320387fd5a7066a2feac432b
+$ docker pull silverpeas@sha256:7c93a8d14d26de8485f52d2be7516c49120bbcb820eee485dc454df7b26408c2
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.4 GB (1426527378 bytes)**  
+-	Total Size: **1.4 GB (1426564337 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:94fd9b83484ffec91ddb6c43842084bdb3088b9e47a9faa9a84bbef28c38c322`
+-	Image ID: `sha256:5ebc8c8d2941607bd7f20c52789b18726ee8db808a26b26080029af309fa20a8`
 -	Default Command: `["\/opt\/run.sh"]`
 
 ```dockerfile
-# Fri, 01 Oct 2021 02:23:23 GMT
-ADD file:0d82cd095966e8ee78b593cb47a352eec842edb7bd9d9468e8a70154522447d1 in / 
-# Fri, 01 Oct 2021 02:23:24 GMT
+# Fri, 07 Jan 2022 02:25:21 GMT
+ADD file:2aa3e79e3cff3c048612744ac310cf86bc27de3433d420711bafc6612445befc in / 
+# Fri, 07 Jan 2022 02:25:21 GMT
 CMD ["bash"]
-# Fri, 01 Oct 2021 06:39:43 GMT
+# Fri, 07 Jan 2022 05:48:10 GMT
 MAINTAINER Miguel Moquillon "miguel.moquillon@silverpeas.org"
-# Fri, 01 Oct 2021 06:39:43 GMT
+# Fri, 07 Jan 2022 05:48:10 GMT
 ENV TERM=xterm
-# Fri, 01 Oct 2021 06:46:35 GMT
+# Fri, 07 Jan 2022 05:54:32 GMT
 RUN apt-get update && apt-get install -y     wget     locales     procps     net-tools     zip     unzip     openjdk-8-jdk     ffmpeg     imagemagick     ghostscript     libreoffice     ure     gpgv   && rm -rf /var/lib/apt/lists/*   && update-ca-certificates -f
-# Fri, 01 Oct 2021 06:46:43 GMT
+# Fri, 07 Jan 2022 05:54:40 GMT
 RUN wget -nc https://www.silverpeas.org/files/swftools-bin-0.9.2.zip   && echo 'd40bd091c84bde2872f2733a3c767b3a686c8e8477a3af3a96ef347cf05c5e43 *swftools-bin-0.9.2.zip' | sha256sum -   && unzip swftools-bin-0.9.2.zip -d /   && rm swftools-bin-0.9.2.zip
-# Fri, 01 Oct 2021 06:46:48 GMT
+# Fri, 07 Jan 2022 05:54:43 GMT
 RUN wget -nc https://www.silverpeas.org/files/pdf2json-bin-0.68.zip   && echo 'eec849cdd75224f9d44c0999ed1fbe8764a773d8ab0cf7fff4bf922ab81c9f84 *pdf2json-bin-0.68.zip' | sha256sum -   && unzip pdf2json-bin-0.68.zip -d /   && rm pdf2json-bin-0.68.zip
-# Fri, 01 Oct 2021 06:46:48 GMT
+# Fri, 07 Jan 2022 05:54:43 GMT
 ARG DEFAULT_LOCALE=en_US.UTF-8
-# Fri, 01 Oct 2021 06:46:51 GMT
+# Fri, 07 Jan 2022 05:54:46 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen   && echo "fr_FR.UTF-8 UTF-8" >> /etc/locale.gen   && echo "de_DE.UTF-8 UTF-8" >> /etc/locale.gen   && locale-gen   && update-locale LANG=${DEFAULT_LOCALE} LANGUAGE=${DEFAULT_LOCALE} LC_ALL=${DEFAULT_LOCALE}
-# Fri, 01 Oct 2021 06:46:51 GMT
+# Fri, 07 Jan 2022 05:54:46 GMT
 ENV LANG=en_US.UTF-8
-# Fri, 01 Oct 2021 06:46:51 GMT
+# Fri, 07 Jan 2022 05:54:47 GMT
 ENV LANGUAGE=en_US.UTF-8
-# Fri, 01 Oct 2021 06:46:51 GMT
+# Fri, 07 Jan 2022 05:54:47 GMT
 ENV LC_ALL=en_US.UTF-8
-# Fri, 01 Oct 2021 06:46:52 GMT
+# Fri, 07 Jan 2022 05:54:48 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Fri, 01 Oct 2021 06:46:53 GMT
+# Fri, 07 Jan 2022 05:54:48 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN ln -svT "/usr/lib/jvm/java-8-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Fri, 01 Oct 2021 06:46:53 GMT
+# Fri, 07 Jan 2022 05:54:49 GMT
 ENV JAVA_HOME=/docker-java-home
-# Fri, 01 Oct 2021 06:46:53 GMT
+# Fri, 07 Jan 2022 05:54:49 GMT
 ENV SILVERPEAS_HOME=/opt/silverpeas
-# Fri, 01 Oct 2021 06:46:53 GMT
+# Fri, 07 Jan 2022 05:54:49 GMT
 ENV JBOSS_HOME=/opt/wildfly
-# Fri, 01 Oct 2021 06:46:54 GMT
+# Fri, 07 Jan 2022 05:54:49 GMT
 ENV SILVERPEAS_VERSION=6.1.3
-# Fri, 01 Oct 2021 06:46:54 GMT
+# Fri, 07 Jan 2022 05:54:49 GMT
 ENV WILDFLY_VERSION=18.0.1
-# Fri, 01 Oct 2021 06:46:54 GMT
+# Fri, 07 Jan 2022 05:54:50 GMT
 LABEL name=Silverpeas 6 description=Image to install and to run Silverpeas 6 vendor=Silverpeas version=6.1.3 build=1
-# Fri, 01 Oct 2021 06:47:06 GMT
+# Fri, 07 Jan 2022 05:56:04 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN wget -nc https://www.silverpeas.org/files/silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip   && wget -nc https://www.silverpeas.org/files/silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip.asc   && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 3F4657EF9C591F2FEA458FEBC19391EB3DF442B6   && gpg --batch --verify silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip.asc silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip   && wget -nc http://download.jboss.org/wildfly/${WILDFLY_VERSION}.Final/wildfly-${WILDFLY_VERSION}.Final.zip   && unzip silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip -d /opt   && unzip wildfly-${WILDFLY_VERSION}.Final.zip -d /opt   && mv /opt/silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?} /opt/silverpeas   && mv /opt/wildfly-${WILDFLY_VERSION}.Final /opt/wildfly   && rm *.zip   && mkdir -p /root/.m2
-# Fri, 01 Oct 2021 06:47:06 GMT
+# Fri, 07 Jan 2022 05:56:05 GMT
 COPY file:4d0e637a3e1ce0b8143795fd5df1997a7ee18fba27382849ed23e9ecb8142009 in /root/.m2/ 
-# Fri, 01 Oct 2021 06:47:07 GMT
+# Fri, 07 Jan 2022 05:56:05 GMT
 WORKDIR /opt/silverpeas/bin
-# Fri, 01 Oct 2021 06:47:07 GMT
+# Fri, 07 Jan 2022 05:56:05 GMT
 COPY file:bd0a4d5e9017df7c7d4b9ba1011c737b2e2fcbe0966662e3315fabb5498b8aa3 in /opt/ 
-# Fri, 01 Oct 2021 06:47:07 GMT
+# Fri, 07 Jan 2022 05:56:05 GMT
 COPY file:b5a807d0a061fd9e87c6acfc7080c110a5f3c030251fe9a4c995cec7603e12d2 in /opt/silverpeas/configuration/silverpeas/ 
-# Fri, 01 Oct 2021 06:49:12 GMT
+# Fri, 07 Jan 2022 05:58:07 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN ./silverpeas construct   && rm ../log/build-*   && touch .install
-# Fri, 01 Oct 2021 06:49:15 GMT
+# Fri, 07 Jan 2022 05:58:10 GMT
 EXPOSE 8000 9990
-# Fri, 01 Oct 2021 06:49:15 GMT
+# Fri, 07 Jan 2022 05:58:11 GMT
 VOLUME [/opt/silverpeas/log /opt/silverpeas/data /opt/silverpeas/properties /opt/silverpeas/xmlcomponents/workflows]
-# Fri, 01 Oct 2021 06:49:16 GMT
+# Fri, 07 Jan 2022 05:58:11 GMT
 CMD ["/opt/run.sh"]
 ```
 
 -	Layers:
-	-	`sha256:284055322776031bac33723839acb0db2d063a525ba4fa1fd268a831c7553b26`  
-		Last Modified: Fri, 01 Oct 2021 02:25:02 GMT  
-		Size: 26.7 MB (26705075 bytes)  
+	-	`sha256:2f94e549220aea96f00cae7eb95f401e61b41a16cc5eb0b4ea592d0ce871930a`  
+		Last Modified: Thu, 06 Jan 2022 23:50:21 GMT  
+		Size: 26.7 MB (26705027 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8ce7ee3ef1a33565f839bcf009b3c75d659e9d924e52681bdd1a22da22fdc14a`  
-		Last Modified: Fri, 01 Oct 2021 06:52:38 GMT  
-		Size: 481.4 MB (481434072 bytes)  
+	-	`sha256:5ccfe398f526da4b81f10905eaf8a6fb9841808bd1259b677e1824e2b5a7ba7b`  
+		Last Modified: Fri, 07 Jan 2022 06:01:26 GMT  
+		Size: 481.5 MB (481471085 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d59a7786b48cde3d9ca14992177d08b30380c1d94e3694a1b0762dd835c38613`  
-		Last Modified: Fri, 01 Oct 2021 06:51:35 GMT  
-		Size: 4.0 MB (3994087 bytes)  
+	-	`sha256:ac52c680286074150078436d21d200de76d0f59b52434735dc0c9b7a49bb0af6`  
+		Last Modified: Fri, 07 Jan 2022 06:00:23 GMT  
+		Size: 4.0 MB (3994088 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b5167bb41abe70ae0b9d3fcbc9d7c75f59b6b2caf59aadf6ee21696c9f496550`  
-		Last Modified: Fri, 01 Oct 2021 06:51:35 GMT  
-		Size: 7.1 MB (7146659 bytes)  
+	-	`sha256:d29b717f399183a297a1cbd0469188a979c7f8dde541919f6285b34297387e53`  
+		Last Modified: Fri, 07 Jan 2022 06:00:23 GMT  
+		Size: 7.1 MB (7146668 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fce84ec10b80deb7767df032ac556c88216eaf15543185e9a5afff3ad6d2b693`  
-		Last Modified: Fri, 01 Oct 2021 06:51:32 GMT  
-		Size: 490.7 KB (490685 bytes)  
+	-	`sha256:52bfabb3cd257e74eea0fc33d153e9539b04601f15b02640501f299724ac3522`  
+		Last Modified: Fri, 07 Jan 2022 06:00:19 GMT  
+		Size: 490.7 KB (490697 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f513859d07e6989fe48216e07bb460687b7c360dc809fb2d7ca8898a2a9cb25`  
-		Last Modified: Fri, 01 Oct 2021 06:51:31 GMT  
-		Size: 238.0 B  
+	-	`sha256:15880a4f3416e996e0ee0a3ddd5682bd2682dce8e91304232dc08f73fd8a7b9c`  
+		Last Modified: Fri, 07 Jan 2022 06:00:19 GMT  
+		Size: 239.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1ecbc9d2ad5d663f2af43733e9b0e0bbca75d45eb3f8601fab02b888663e4cae`  
-		Last Modified: Fri, 01 Oct 2021 06:51:31 GMT  
+	-	`sha256:d84981cee67db568a38c02be617531c6ecaeae3bb59b9c41556a89e5ba2a2de1`  
+		Last Modified: Fri, 07 Jan 2022 06:00:19 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9b6d7beadfe3050a9fb4958f0b53e9ebe6e52b9ac9f0bc5e6b8b7b61785e0f76`  
-		Last Modified: Fri, 01 Oct 2021 06:51:42 GMT  
-		Size: 190.5 MB (190469435 bytes)  
+	-	`sha256:5ce082598a05506562d96075593e2e712fcf47148cdfbf1b619cc62a3ff9d421`  
+		Last Modified: Fri, 07 Jan 2022 06:00:29 GMT  
+		Size: 190.5 MB (190469450 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:026d202040a0768bc993914864b06b1b19980098131db9fd1275b4a9816b2bf2`  
-		Last Modified: Fri, 01 Oct 2021 06:51:29 GMT  
-		Size: 404.0 B  
+	-	`sha256:f67c5809fc5deca9fef5c9c82a97dfd215e38ed18a1defe9f35701abfb5a9d6a`  
+		Last Modified: Fri, 07 Jan 2022 06:00:17 GMT  
+		Size: 405.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d252facd361dbc316ffee6430f3327c47f64438bf2b621eab143bab570717635`  
-		Last Modified: Fri, 01 Oct 2021 06:51:29 GMT  
-		Size: 763.0 B  
+	-	`sha256:5fed44f57792c56ab75890b53f3487b9a119934c50f6e33b6a58339dc00ff17a`  
+		Last Modified: Fri, 07 Jan 2022 06:00:17 GMT  
+		Size: 758.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e84e3914595700845c370bbac8e4a3175f8b6645c4d5160fef543d77fe20c303`  
-		Last Modified: Fri, 01 Oct 2021 06:51:29 GMT  
-		Size: 385.0 B  
+	-	`sha256:e669a545cde2f703a579e462ab47a5caea508d68ce6d3a0d236eaa617bdf1225`  
+		Last Modified: Fri, 07 Jan 2022 06:00:17 GMT  
+		Size: 384.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b150e11337453b8d7a306b9d0332b7e5985fc1ffab7a15b8cf2088db748ca88a`  
-		Last Modified: Fri, 01 Oct 2021 06:52:06 GMT  
-		Size: 716.3 MB (716285444 bytes)  
+	-	`sha256:00958ba96cbd41d2d481c515b4320f03f3f0a056d5e761168b45476eeb2f6f06`  
+		Last Modified: Fri, 07 Jan 2022 06:00:54 GMT  
+		Size: 716.3 MB (716285405 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `silverpeas:6.2.2`
 
 ```console
-$ docker pull silverpeas@sha256:1ffd3e94c87c3797051c0b0964c2551f2cc803a20af27e52c8e9c1210d5d5fd9
+$ docker pull silverpeas@sha256:fe1b57f43953648ea95a4824442e03f7557e394523e4c339dc61260f174ac663
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -316,142 +316,142 @@ $ docker pull silverpeas@sha256:1ffd3e94c87c3797051c0b0964c2551f2cc803a20af27e52
 ### `silverpeas:6.2.2` - linux; amd64
 
 ```console
-$ docker pull silverpeas@sha256:315ba837d2e545213ea1b8b52acdb7fa989ed3f20fb36edf29ad8fdbebb4366d
+$ docker pull silverpeas@sha256:3b148babf8ac4cec90ae8643b9aaa58d6b3024ccc805dfba755c741ee92e72cc
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.9 GB (1896844292 bytes)**  
+-	Total Size: **1.9 GB (1896916998 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e87c410141b6a98f5aa79be4f7fbe890295eec65255b96171c140c7d67a83bc1`
+-	Image ID: `sha256:af77cb15fd6025fcce4295d50fd7b24f1d020c6ee51e9e22e75461294fea2bb1`
 -	Default Command: `["\/opt\/run.sh"]`
 
 ```dockerfile
-# Sat, 16 Oct 2021 00:37:47 GMT
-ADD file:5d68d27cc15a80653c93d3a0b262a28112d47a46326ff5fc2dfbf7fa3b9a0ce8 in / 
-# Sat, 16 Oct 2021 00:37:47 GMT
+# Fri, 07 Jan 2022 02:25:29 GMT
+ADD file:122ad323412c2e70b3138d8eb62648c4692989de91be1ffb6b4bf086c8311b62 in / 
+# Fri, 07 Jan 2022 02:25:30 GMT
 CMD ["bash"]
-# Sat, 16 Oct 2021 03:13:25 GMT
+# Fri, 07 Jan 2022 05:38:02 GMT
 MAINTAINER Miguel Moquillon "miguel.moquillon@silverpeas.org"
-# Sat, 16 Oct 2021 03:13:26 GMT
+# Fri, 07 Jan 2022 05:38:02 GMT
 ENV TERM=xterm
-# Sat, 16 Oct 2021 03:19:54 GMT
+# Fri, 07 Jan 2022 05:45:01 GMT
 RUN apt-get update   && apt-get install -y tzdata   && apt-get install -y     apt-utils     iputils-ping     curl     wget     vim     locales     language-pack-en     language-pack-fr     procps     net-tools     zip     unzip     openjdk-11-jdk     ffmpeg     imagemagick     ghostscript     libreoffice     ure     gpgv   && rm -rf /var/lib/apt/lists/*   && update-ca-certificates -f
-# Sat, 16 Oct 2021 03:20:00 GMT
+# Fri, 07 Jan 2022 05:45:08 GMT
 RUN wget -nc https://www.silverpeas.org/files/swftools-bin-0.9.2.zip   && echo 'd40bd091c84bde2872f2733a3c767b3a686c8e8477a3af3a96ef347cf05c5e43 *swftools-bin-0.9.2.zip' | sha256sum -   && unzip swftools-bin-0.9.2.zip -d /   && rm swftools-bin-0.9.2.zip
-# Sat, 16 Oct 2021 03:20:05 GMT
+# Fri, 07 Jan 2022 05:45:11 GMT
 RUN wget -nc https://www.silverpeas.org/files/pdf2json-bin-0.68.zip   && echo 'eec849cdd75224f9d44c0999ed1fbe8764a773d8ab0cf7fff4bf922ab81c9f84 *pdf2json-bin-0.68.zip' | sha256sum -   && unzip pdf2json-bin-0.68.zip -d /   && rm pdf2json-bin-0.68.zip
-# Sat, 16 Oct 2021 03:20:05 GMT
+# Fri, 07 Jan 2022 05:45:12 GMT
 ARG DEFAULT_LOCALE=en_US.UTF-8
-# Sat, 16 Oct 2021 03:20:44 GMT
+# Fri, 07 Jan 2022 05:45:50 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen   && echo "fr_FR.UTF-8 UTF-8" >> /etc/locale.gen   && echo "de_DE.UTF-8 UTF-8" >> /etc/locale.gen   && locale-gen   && update-locale LANG=${DEFAULT_LOCALE} LANGUAGE=${DEFAULT_LOCALE} LC_ALL=${DEFAULT_LOCALE}
-# Sat, 16 Oct 2021 03:20:44 GMT
+# Fri, 07 Jan 2022 05:45:50 GMT
 ENV LANG=en_US.UTF-8
-# Sat, 16 Oct 2021 03:20:44 GMT
+# Fri, 07 Jan 2022 05:45:50 GMT
 ENV LANGUAGE=en_US.UTF-8
-# Sat, 16 Oct 2021 03:20:44 GMT
+# Fri, 07 Jan 2022 05:45:51 GMT
 ENV LC_ALL=en_US.UTF-8
-# Sat, 16 Oct 2021 03:20:45 GMT
+# Fri, 07 Jan 2022 05:45:51 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Sat, 16 Oct 2021 03:20:46 GMT
+# Fri, 07 Jan 2022 05:45:52 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN ln -svT "/usr/lib/jvm/java-11-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Sat, 16 Oct 2021 03:20:46 GMT
+# Fri, 07 Jan 2022 05:45:52 GMT
 ENV JAVA_HOME=/docker-java-home
-# Sat, 16 Oct 2021 03:20:46 GMT
+# Fri, 07 Jan 2022 05:45:53 GMT
 ENV SILVERPEAS_HOME=/opt/silverpeas
-# Sat, 16 Oct 2021 03:20:46 GMT
+# Fri, 07 Jan 2022 05:45:53 GMT
 ENV JBOSS_HOME=/opt/wildfly
-# Fri, 17 Dec 2021 23:19:55 GMT
+# Fri, 07 Jan 2022 05:45:53 GMT
 ENV SILVERPEAS_VERSION=6.2.2
-# Fri, 17 Dec 2021 23:19:55 GMT
+# Fri, 07 Jan 2022 05:45:53 GMT
 ENV WILDFLY_VERSION=20.0.1
-# Fri, 17 Dec 2021 23:19:55 GMT
+# Fri, 07 Jan 2022 05:45:53 GMT
 LABEL name=Silverpeas 6.2.2 description=Image to install and to run Silverpeas 6.2.2 vendor=Silverpeas version=6.2.2 build=1
-# Fri, 17 Dec 2021 23:20:10 GMT
+# Fri, 07 Jan 2022 05:46:09 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN wget -nc https://www.silverpeas.org/files/silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip   && wget -nc https://www.silverpeas.org/files/silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip.asc   && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 3F4657EF9C591F2FEA458FEBC19391EB3DF442B6   && gpg --batch --verify silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip.asc silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip   && wget -nc http://download.jboss.org/wildfly/${WILDFLY_VERSION}.Final/wildfly-${WILDFLY_VERSION}.Final.zip   && unzip silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip -d /opt   && unzip wildfly-${WILDFLY_VERSION}.Final.zip -d /opt   && mv /opt/silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?} /opt/silverpeas   && mv /opt/wildfly-${WILDFLY_VERSION}.Final /opt/wildfly   && rm *.zip   && mkdir -p /root/.m2
-# Fri, 17 Dec 2021 23:20:11 GMT
+# Fri, 07 Jan 2022 05:46:10 GMT
 COPY file:4d0e637a3e1ce0b8143795fd5df1997a7ee18fba27382849ed23e9ecb8142009 in /root/.m2/ 
-# Fri, 17 Dec 2021 23:20:11 GMT
+# Fri, 07 Jan 2022 05:46:10 GMT
 COPY file:473bf75b335a39b6b4b39c64cd151bd8ed3d3e33da73b8124e537a5db1fad3d6 in /opt/silverpeas/bin/ 
-# Fri, 17 Dec 2021 23:20:12 GMT
+# Fri, 07 Jan 2022 05:46:10 GMT
 WORKDIR /opt/silverpeas/bin
-# Fri, 17 Dec 2021 23:20:12 GMT
+# Fri, 07 Jan 2022 05:46:11 GMT
 COPY file:b54156953ecf6c3259f3b3d2885a784847c0996fd145c0f7ccef25182725511f in /opt/ 
-# Fri, 17 Dec 2021 23:20:12 GMT
+# Fri, 07 Jan 2022 05:46:11 GMT
 COPY file:b5a807d0a061fd9e87c6acfc7080c110a5f3c030251fe9a4c995cec7603e12d2 in /opt/silverpeas/configuration/silverpeas/ 
-# Fri, 17 Dec 2021 23:22:03 GMT
+# Fri, 07 Jan 2022 05:48:01 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN sed -i -e "s/SILVERPEAS_VERSION/${SILVERPEAS_VERSION}/g" ${SILVERPEAS_HOME}/bin/silverpeas.gradle   && ./silverpeas construct   && rm ../log/build-*   && touch .install
-# Fri, 17 Dec 2021 23:22:06 GMT
+# Fri, 07 Jan 2022 05:48:04 GMT
 EXPOSE 8000 9990
-# Fri, 17 Dec 2021 23:22:07 GMT
+# Fri, 07 Jan 2022 05:48:04 GMT
 VOLUME [/opt/silverpeas/log /opt/silverpeas/data /opt/silverpeas/properties /opt/silverpeas/xmlcomponents/workflows]
-# Fri, 17 Dec 2021 23:22:07 GMT
+# Fri, 07 Jan 2022 05:48:05 GMT
 CMD ["/opt/run.sh"]
 ```
 
 -	Layers:
-	-	`sha256:7b1a6ab2e44dbac178598dabe7cff59bd67233dba0b27e4fbd1f9d4b3c877a54`  
-		Last Modified: Thu, 07 Oct 2021 23:44:23 GMT  
-		Size: 28.6 MB (28567101 bytes)  
+	-	`sha256:ea362f368469f909a95f9a6e54ebe0121ce0a8e3c30583dd9c5fb35b14544dec`  
+		Last Modified: Thu, 06 Jan 2022 15:07:12 GMT  
+		Size: 28.6 MB (28566425 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:200d878df30075fcecb4d08f2e50d8ae1652fd84ff4d249ee0ddd4ee484d5951`  
-		Last Modified: Sat, 16 Oct 2021 03:25:24 GMT  
-		Size: 909.8 MB (909802898 bytes)  
+	-	`sha256:67c40d122f8f6e0112bb277f221d325bc3d2f835931a72d342734bea9e45c401`  
+		Last Modified: Fri, 07 Jan 2022 06:00:05 GMT  
+		Size: 909.9 MB (909876872 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eebbf7f2028d16c581936c5f39680eb21f6aa038e9b06b4a8cdeb12e08593779`  
-		Last Modified: Sat, 16 Oct 2021 03:23:51 GMT  
-		Size: 4.0 MB (3994070 bytes)  
+	-	`sha256:004e34c38a7c5a63ef85a0355e2dddca97591863d363b570ef25cb1e2c6e944d`  
+		Last Modified: Fri, 07 Jan 2022 05:58:32 GMT  
+		Size: 4.0 MB (3994068 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bea30ec91ca3e147ceabea6d7511b77c16ded4c11c43899d1e4b3aa9df4f214f`  
-		Last Modified: Sat, 16 Oct 2021 03:23:51 GMT  
-		Size: 7.1 MB (7146660 bytes)  
+	-	`sha256:c5d01a19868298feafea1fa658c5a42b3b3020819f998fcacff034a852fc5296`  
+		Last Modified: Fri, 07 Jan 2022 05:58:32 GMT  
+		Size: 7.1 MB (7146648 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:670dfa300b7144e3bad0666e98c37f53d0826075b99ad5292a607829b6262cd7`  
-		Last Modified: Sat, 16 Oct 2021 03:23:48 GMT  
-		Size: 2.5 MB (2534365 bytes)  
+	-	`sha256:592c400ad9b8a1e7e0cfd95c6468c48616e76bffd545ee3fae5362799eef8be2`  
+		Last Modified: Fri, 07 Jan 2022 05:58:29 GMT  
+		Size: 2.5 MB (2534366 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:744477919b53b641498abaffbe0cab93a5bd7cea050e60f57a3885c4ae620f10`  
-		Last Modified: Sat, 16 Oct 2021 03:23:47 GMT  
-		Size: 242.0 B  
+	-	`sha256:dcb6e910563c17ef74e04b44dd915a06b2e47762aa429670b1a2135596aa7d50`  
+		Last Modified: Fri, 07 Jan 2022 05:58:28 GMT  
+		Size: 241.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2140c07c7f8f9cb94b1a699e73c99546797fa149b5eb0bf33b7d6e7c46e95c57`  
-		Last Modified: Sat, 16 Oct 2021 03:23:47 GMT  
-		Size: 131.0 B  
+	-	`sha256:86da6030d71c2ce2030ce2e7230b6e25292d479dcd722074caf806343315c4cf`  
+		Last Modified: Fri, 07 Jan 2022 05:58:28 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3bf7c10b4d8f1db1bf6ded9d75806109c1732d1eabbc7998ade095a54276f60c`  
-		Last Modified: Fri, 17 Dec 2021 23:22:42 GMT  
-		Size: 196.8 MB (196774062 bytes)  
+	-	`sha256:e148401445c2a86a86ed4c62aaea25c575d4d0c93d0e46c688aaad73bc436fdf`  
+		Last Modified: Fri, 07 Jan 2022 05:58:41 GMT  
+		Size: 196.8 MB (196774067 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b9cf9982bcf67a3896b9e9c80776f2c074ad135f58057d0374c02f4b59569865`  
-		Last Modified: Fri, 17 Dec 2021 23:22:29 GMT  
-		Size: 405.0 B  
+	-	`sha256:b5bfa761dcb05231237d90ffe88b48708cf5c76c791fad0ff9eb710e7a7a9737`  
+		Last Modified: Fri, 07 Jan 2022 05:58:26 GMT  
+		Size: 406.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:58dd446b29fd7915c2d8b848962ec10c7a31cbd38720bc4b95fd9ecf7b52fc52`  
-		Last Modified: Fri, 17 Dec 2021 23:22:29 GMT  
-		Size: 660.0 B  
+	-	`sha256:d1b60dec9603e5d4ce3e001721327448e11f71e44eb19a9239866b21fc34280f`  
+		Last Modified: Fri, 07 Jan 2022 05:58:26 GMT  
+		Size: 666.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ca1b217b4ebe92bacc674d9177aee670e97eb1efa6059fa3872404cf38100e0`  
-		Last Modified: Fri, 17 Dec 2021 23:22:29 GMT  
-		Size: 875.0 B  
+	-	`sha256:fb18f89eba3cd5ac7848d223d57f9e424e7c919ecf4dc5fa211e6ecead6fd7d3`  
+		Last Modified: Fri, 07 Jan 2022 05:58:26 GMT  
+		Size: 877.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:83dcc7964c7e4c98bbc54f505711a78b244f7e8667eec6bea0243891388adfe8`  
-		Last Modified: Fri, 17 Dec 2021 23:22:29 GMT  
-		Size: 383.0 B  
+	-	`sha256:dc0a855f632b5184ce221f206a1340c2a2d0352242eb3eaaaea7e57983c9d527`  
+		Last Modified: Fri, 07 Jan 2022 05:58:26 GMT  
+		Size: 386.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:700ce9bbf5659c57125a395ea40a7f95dc31b18ca64a0b94083bb59ca3bef6ee`  
-		Last Modified: Fri, 17 Dec 2021 23:23:03 GMT  
-		Size: 748.0 MB (748022440 bytes)  
+	-	`sha256:35efde809c2f5a4d7323abcda584af8196e21d2a54555e068fd42da088f4f5cb`  
+		Last Modified: Fri, 07 Jan 2022 05:59:05 GMT  
+		Size: 748.0 MB (748021846 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `silverpeas:latest`
 
 ```console
-$ docker pull silverpeas@sha256:1ffd3e94c87c3797051c0b0964c2551f2cc803a20af27e52c8e9c1210d5d5fd9
+$ docker pull silverpeas@sha256:fe1b57f43953648ea95a4824442e03f7557e394523e4c339dc61260f174ac663
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -461,134 +461,134 @@ $ docker pull silverpeas@sha256:1ffd3e94c87c3797051c0b0964c2551f2cc803a20af27e52
 ### `silverpeas:latest` - linux; amd64
 
 ```console
-$ docker pull silverpeas@sha256:315ba837d2e545213ea1b8b52acdb7fa989ed3f20fb36edf29ad8fdbebb4366d
+$ docker pull silverpeas@sha256:3b148babf8ac4cec90ae8643b9aaa58d6b3024ccc805dfba755c741ee92e72cc
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.9 GB (1896844292 bytes)**  
+-	Total Size: **1.9 GB (1896916998 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e87c410141b6a98f5aa79be4f7fbe890295eec65255b96171c140c7d67a83bc1`
+-	Image ID: `sha256:af77cb15fd6025fcce4295d50fd7b24f1d020c6ee51e9e22e75461294fea2bb1`
 -	Default Command: `["\/opt\/run.sh"]`
 
 ```dockerfile
-# Sat, 16 Oct 2021 00:37:47 GMT
-ADD file:5d68d27cc15a80653c93d3a0b262a28112d47a46326ff5fc2dfbf7fa3b9a0ce8 in / 
-# Sat, 16 Oct 2021 00:37:47 GMT
+# Fri, 07 Jan 2022 02:25:29 GMT
+ADD file:122ad323412c2e70b3138d8eb62648c4692989de91be1ffb6b4bf086c8311b62 in / 
+# Fri, 07 Jan 2022 02:25:30 GMT
 CMD ["bash"]
-# Sat, 16 Oct 2021 03:13:25 GMT
+# Fri, 07 Jan 2022 05:38:02 GMT
 MAINTAINER Miguel Moquillon "miguel.moquillon@silverpeas.org"
-# Sat, 16 Oct 2021 03:13:26 GMT
+# Fri, 07 Jan 2022 05:38:02 GMT
 ENV TERM=xterm
-# Sat, 16 Oct 2021 03:19:54 GMT
+# Fri, 07 Jan 2022 05:45:01 GMT
 RUN apt-get update   && apt-get install -y tzdata   && apt-get install -y     apt-utils     iputils-ping     curl     wget     vim     locales     language-pack-en     language-pack-fr     procps     net-tools     zip     unzip     openjdk-11-jdk     ffmpeg     imagemagick     ghostscript     libreoffice     ure     gpgv   && rm -rf /var/lib/apt/lists/*   && update-ca-certificates -f
-# Sat, 16 Oct 2021 03:20:00 GMT
+# Fri, 07 Jan 2022 05:45:08 GMT
 RUN wget -nc https://www.silverpeas.org/files/swftools-bin-0.9.2.zip   && echo 'd40bd091c84bde2872f2733a3c767b3a686c8e8477a3af3a96ef347cf05c5e43 *swftools-bin-0.9.2.zip' | sha256sum -   && unzip swftools-bin-0.9.2.zip -d /   && rm swftools-bin-0.9.2.zip
-# Sat, 16 Oct 2021 03:20:05 GMT
+# Fri, 07 Jan 2022 05:45:11 GMT
 RUN wget -nc https://www.silverpeas.org/files/pdf2json-bin-0.68.zip   && echo 'eec849cdd75224f9d44c0999ed1fbe8764a773d8ab0cf7fff4bf922ab81c9f84 *pdf2json-bin-0.68.zip' | sha256sum -   && unzip pdf2json-bin-0.68.zip -d /   && rm pdf2json-bin-0.68.zip
-# Sat, 16 Oct 2021 03:20:05 GMT
+# Fri, 07 Jan 2022 05:45:12 GMT
 ARG DEFAULT_LOCALE=en_US.UTF-8
-# Sat, 16 Oct 2021 03:20:44 GMT
+# Fri, 07 Jan 2022 05:45:50 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen   && echo "fr_FR.UTF-8 UTF-8" >> /etc/locale.gen   && echo "de_DE.UTF-8 UTF-8" >> /etc/locale.gen   && locale-gen   && update-locale LANG=${DEFAULT_LOCALE} LANGUAGE=${DEFAULT_LOCALE} LC_ALL=${DEFAULT_LOCALE}
-# Sat, 16 Oct 2021 03:20:44 GMT
+# Fri, 07 Jan 2022 05:45:50 GMT
 ENV LANG=en_US.UTF-8
-# Sat, 16 Oct 2021 03:20:44 GMT
+# Fri, 07 Jan 2022 05:45:50 GMT
 ENV LANGUAGE=en_US.UTF-8
-# Sat, 16 Oct 2021 03:20:44 GMT
+# Fri, 07 Jan 2022 05:45:51 GMT
 ENV LC_ALL=en_US.UTF-8
-# Sat, 16 Oct 2021 03:20:45 GMT
+# Fri, 07 Jan 2022 05:45:51 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Sat, 16 Oct 2021 03:20:46 GMT
+# Fri, 07 Jan 2022 05:45:52 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN ln -svT "/usr/lib/jvm/java-11-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Sat, 16 Oct 2021 03:20:46 GMT
+# Fri, 07 Jan 2022 05:45:52 GMT
 ENV JAVA_HOME=/docker-java-home
-# Sat, 16 Oct 2021 03:20:46 GMT
+# Fri, 07 Jan 2022 05:45:53 GMT
 ENV SILVERPEAS_HOME=/opt/silverpeas
-# Sat, 16 Oct 2021 03:20:46 GMT
+# Fri, 07 Jan 2022 05:45:53 GMT
 ENV JBOSS_HOME=/opt/wildfly
-# Fri, 17 Dec 2021 23:19:55 GMT
+# Fri, 07 Jan 2022 05:45:53 GMT
 ENV SILVERPEAS_VERSION=6.2.2
-# Fri, 17 Dec 2021 23:19:55 GMT
+# Fri, 07 Jan 2022 05:45:53 GMT
 ENV WILDFLY_VERSION=20.0.1
-# Fri, 17 Dec 2021 23:19:55 GMT
+# Fri, 07 Jan 2022 05:45:53 GMT
 LABEL name=Silverpeas 6.2.2 description=Image to install and to run Silverpeas 6.2.2 vendor=Silverpeas version=6.2.2 build=1
-# Fri, 17 Dec 2021 23:20:10 GMT
+# Fri, 07 Jan 2022 05:46:09 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN wget -nc https://www.silverpeas.org/files/silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip   && wget -nc https://www.silverpeas.org/files/silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip.asc   && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 3F4657EF9C591F2FEA458FEBC19391EB3DF442B6   && gpg --batch --verify silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip.asc silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip   && wget -nc http://download.jboss.org/wildfly/${WILDFLY_VERSION}.Final/wildfly-${WILDFLY_VERSION}.Final.zip   && unzip silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?}.zip -d /opt   && unzip wildfly-${WILDFLY_VERSION}.Final.zip -d /opt   && mv /opt/silverpeas-${SILVERPEAS_VERSION}-wildfly${WILDFLY_VERSION%.?.?} /opt/silverpeas   && mv /opt/wildfly-${WILDFLY_VERSION}.Final /opt/wildfly   && rm *.zip   && mkdir -p /root/.m2
-# Fri, 17 Dec 2021 23:20:11 GMT
+# Fri, 07 Jan 2022 05:46:10 GMT
 COPY file:4d0e637a3e1ce0b8143795fd5df1997a7ee18fba27382849ed23e9ecb8142009 in /root/.m2/ 
-# Fri, 17 Dec 2021 23:20:11 GMT
+# Fri, 07 Jan 2022 05:46:10 GMT
 COPY file:473bf75b335a39b6b4b39c64cd151bd8ed3d3e33da73b8124e537a5db1fad3d6 in /opt/silverpeas/bin/ 
-# Fri, 17 Dec 2021 23:20:12 GMT
+# Fri, 07 Jan 2022 05:46:10 GMT
 WORKDIR /opt/silverpeas/bin
-# Fri, 17 Dec 2021 23:20:12 GMT
+# Fri, 07 Jan 2022 05:46:11 GMT
 COPY file:b54156953ecf6c3259f3b3d2885a784847c0996fd145c0f7ccef25182725511f in /opt/ 
-# Fri, 17 Dec 2021 23:20:12 GMT
+# Fri, 07 Jan 2022 05:46:11 GMT
 COPY file:b5a807d0a061fd9e87c6acfc7080c110a5f3c030251fe9a4c995cec7603e12d2 in /opt/silverpeas/configuration/silverpeas/ 
-# Fri, 17 Dec 2021 23:22:03 GMT
+# Fri, 07 Jan 2022 05:48:01 GMT
 # ARGS: DEFAULT_LOCALE=en_US.UTF-8
 RUN sed -i -e "s/SILVERPEAS_VERSION/${SILVERPEAS_VERSION}/g" ${SILVERPEAS_HOME}/bin/silverpeas.gradle   && ./silverpeas construct   && rm ../log/build-*   && touch .install
-# Fri, 17 Dec 2021 23:22:06 GMT
+# Fri, 07 Jan 2022 05:48:04 GMT
 EXPOSE 8000 9990
-# Fri, 17 Dec 2021 23:22:07 GMT
+# Fri, 07 Jan 2022 05:48:04 GMT
 VOLUME [/opt/silverpeas/log /opt/silverpeas/data /opt/silverpeas/properties /opt/silverpeas/xmlcomponents/workflows]
-# Fri, 17 Dec 2021 23:22:07 GMT
+# Fri, 07 Jan 2022 05:48:05 GMT
 CMD ["/opt/run.sh"]
 ```
 
 -	Layers:
-	-	`sha256:7b1a6ab2e44dbac178598dabe7cff59bd67233dba0b27e4fbd1f9d4b3c877a54`  
-		Last Modified: Thu, 07 Oct 2021 23:44:23 GMT  
-		Size: 28.6 MB (28567101 bytes)  
+	-	`sha256:ea362f368469f909a95f9a6e54ebe0121ce0a8e3c30583dd9c5fb35b14544dec`  
+		Last Modified: Thu, 06 Jan 2022 15:07:12 GMT  
+		Size: 28.6 MB (28566425 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:200d878df30075fcecb4d08f2e50d8ae1652fd84ff4d249ee0ddd4ee484d5951`  
-		Last Modified: Sat, 16 Oct 2021 03:25:24 GMT  
-		Size: 909.8 MB (909802898 bytes)  
+	-	`sha256:67c40d122f8f6e0112bb277f221d325bc3d2f835931a72d342734bea9e45c401`  
+		Last Modified: Fri, 07 Jan 2022 06:00:05 GMT  
+		Size: 909.9 MB (909876872 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eebbf7f2028d16c581936c5f39680eb21f6aa038e9b06b4a8cdeb12e08593779`  
-		Last Modified: Sat, 16 Oct 2021 03:23:51 GMT  
-		Size: 4.0 MB (3994070 bytes)  
+	-	`sha256:004e34c38a7c5a63ef85a0355e2dddca97591863d363b570ef25cb1e2c6e944d`  
+		Last Modified: Fri, 07 Jan 2022 05:58:32 GMT  
+		Size: 4.0 MB (3994068 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bea30ec91ca3e147ceabea6d7511b77c16ded4c11c43899d1e4b3aa9df4f214f`  
-		Last Modified: Sat, 16 Oct 2021 03:23:51 GMT  
-		Size: 7.1 MB (7146660 bytes)  
+	-	`sha256:c5d01a19868298feafea1fa658c5a42b3b3020819f998fcacff034a852fc5296`  
+		Last Modified: Fri, 07 Jan 2022 05:58:32 GMT  
+		Size: 7.1 MB (7146648 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:670dfa300b7144e3bad0666e98c37f53d0826075b99ad5292a607829b6262cd7`  
-		Last Modified: Sat, 16 Oct 2021 03:23:48 GMT  
-		Size: 2.5 MB (2534365 bytes)  
+	-	`sha256:592c400ad9b8a1e7e0cfd95c6468c48616e76bffd545ee3fae5362799eef8be2`  
+		Last Modified: Fri, 07 Jan 2022 05:58:29 GMT  
+		Size: 2.5 MB (2534366 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:744477919b53b641498abaffbe0cab93a5bd7cea050e60f57a3885c4ae620f10`  
-		Last Modified: Sat, 16 Oct 2021 03:23:47 GMT  
-		Size: 242.0 B  
+	-	`sha256:dcb6e910563c17ef74e04b44dd915a06b2e47762aa429670b1a2135596aa7d50`  
+		Last Modified: Fri, 07 Jan 2022 05:58:28 GMT  
+		Size: 241.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2140c07c7f8f9cb94b1a699e73c99546797fa149b5eb0bf33b7d6e7c46e95c57`  
-		Last Modified: Sat, 16 Oct 2021 03:23:47 GMT  
-		Size: 131.0 B  
+	-	`sha256:86da6030d71c2ce2030ce2e7230b6e25292d479dcd722074caf806343315c4cf`  
+		Last Modified: Fri, 07 Jan 2022 05:58:28 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3bf7c10b4d8f1db1bf6ded9d75806109c1732d1eabbc7998ade095a54276f60c`  
-		Last Modified: Fri, 17 Dec 2021 23:22:42 GMT  
-		Size: 196.8 MB (196774062 bytes)  
+	-	`sha256:e148401445c2a86a86ed4c62aaea25c575d4d0c93d0e46c688aaad73bc436fdf`  
+		Last Modified: Fri, 07 Jan 2022 05:58:41 GMT  
+		Size: 196.8 MB (196774067 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b9cf9982bcf67a3896b9e9c80776f2c074ad135f58057d0374c02f4b59569865`  
-		Last Modified: Fri, 17 Dec 2021 23:22:29 GMT  
-		Size: 405.0 B  
+	-	`sha256:b5bfa761dcb05231237d90ffe88b48708cf5c76c791fad0ff9eb710e7a7a9737`  
+		Last Modified: Fri, 07 Jan 2022 05:58:26 GMT  
+		Size: 406.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:58dd446b29fd7915c2d8b848962ec10c7a31cbd38720bc4b95fd9ecf7b52fc52`  
-		Last Modified: Fri, 17 Dec 2021 23:22:29 GMT  
-		Size: 660.0 B  
+	-	`sha256:d1b60dec9603e5d4ce3e001721327448e11f71e44eb19a9239866b21fc34280f`  
+		Last Modified: Fri, 07 Jan 2022 05:58:26 GMT  
+		Size: 666.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ca1b217b4ebe92bacc674d9177aee670e97eb1efa6059fa3872404cf38100e0`  
-		Last Modified: Fri, 17 Dec 2021 23:22:29 GMT  
-		Size: 875.0 B  
+	-	`sha256:fb18f89eba3cd5ac7848d223d57f9e424e7c919ecf4dc5fa211e6ecead6fd7d3`  
+		Last Modified: Fri, 07 Jan 2022 05:58:26 GMT  
+		Size: 877.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:83dcc7964c7e4c98bbc54f505711a78b244f7e8667eec6bea0243891388adfe8`  
-		Last Modified: Fri, 17 Dec 2021 23:22:29 GMT  
-		Size: 383.0 B  
+	-	`sha256:dc0a855f632b5184ce221f206a1340c2a2d0352242eb3eaaaea7e57983c9d527`  
+		Last Modified: Fri, 07 Jan 2022 05:58:26 GMT  
+		Size: 386.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:700ce9bbf5659c57125a395ea40a7f95dc31b18ca64a0b94083bb59ca3bef6ee`  
-		Last Modified: Fri, 17 Dec 2021 23:23:03 GMT  
-		Size: 748.0 MB (748022440 bytes)  
+	-	`sha256:35efde809c2f5a4d7323abcda584af8196e21d2a54555e068fd42da088f4f5cb`  
+		Last Modified: Fri, 07 Jan 2022 05:59:05 GMT  
+		Size: 748.0 MB (748021846 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
