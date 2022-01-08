@@ -784,21 +784,13 @@ Licenses: (parsed from: `/usr/share/doc/e2fsprogs/copyright`, `/usr/share/doc/li
 - `GPL-2`
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris e2fsprogs=1.46.4-1
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.46.4-1.dsc' e2fsprogs_1.46.4-1.dsc 2846 SHA256:d3ec9a1c778d5c1f71b76a6736eb0d396ff76543ceb9fc9c05fb706d5c4cbf65
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.46.4.orig.tar.gz' e2fsprogs_1.46.4.orig.tar.gz 9521023 SHA256:7524520b291e901431ce59ea085955b601126de371bf3cfc0f5e4fad78684265
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.46.4.orig.tar.gz.asc' e2fsprogs_1.46.4.orig.tar.gz.asc 488 SHA256:e544606bc7fe48134a16d95d79e19fb1ea5d284d3ef47a05ccc1051ccb01ae67
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.46.4-1.debian.tar.xz' e2fsprogs_1.46.4-1.debian.tar.xz 83128 SHA256:ce747152024765e5a6b33ef5fc63bd7ceba107152811e822c4d3fea54b4ecae9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/e2fsprogs/1.46.4-1/
 
-- https://sources.debian.net/src/e2fsprogs/1.46.4-1/ (for browsing the source)
-- https://sources.debian.net/src/e2fsprogs/1.46.4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/e2fsprogs/1.46.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ed=1.17-1`
 
@@ -4174,20 +4166,13 @@ Licenses: (parsed from: `/usr/share/doc/vim-common/copyright`, `/usr/share/doc/v
 - `XPM`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris vim=2:8.2.3565-1
-'http://deb.debian.org/debian/pool/main/v/vim/vim_8.2.3565-1.dsc' vim_8.2.3565-1.dsc 3044 SHA256:3a7da0ba0b35b1a4f3010fcc4504cc7da8437348be62753f98341ffc7a985e31
-'http://deb.debian.org/debian/pool/main/v/vim/vim_8.2.3565.orig.tar.xz' vim_8.2.3565.orig.tar.xz 10308024 SHA256:c87d5b64d6ea1fe81d5971c841ea437430ff303b32d2c9605170827a8f668334
-'http://deb.debian.org/debian/pool/main/v/vim/vim_8.2.3565-1.debian.tar.xz' vim_8.2.3565-1.debian.tar.xz 211440 SHA256:d865a849faf03f59e355eeebd03a9bcb79f271acc32f0c7417da0f161661a62a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/vim/2:8.2.3565-1/
 
-- https://sources.debian.net/src/vim/2:8.2.3565-1/ (for browsing the source)
-- https://sources.debian.net/src/vim/2:8.2.3565-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/vim/2:8.2.3565-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.21.2-2`
 
