@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1c0f1e566fec5848ef0d4f7425ee69bd97fa62e15b014f9f811b573cc8c3ca0e`
-- Created: `2021-12-30T19:23:13.288908922Z`
+- Image ID: `sha256:333ef24403ed92898d34721f1d3746d1933ce5d3dc9c33358aec0e1830ba090b`
+- Created: `2022-01-07T03:41:00.000921397Z`
 - Virtual Size: ~ 437.57 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1009,19 +1009,24 @@ $ apt-get source -qq --print-uris libpsl=0.21.0-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpsl/libpsl_0.21.0-1ubuntu1.debian.tar.xz' libpsl_0.21.0-1ubuntu1.debian.tar.xz 12476 SHA256:efd6c7ae8c244b582d6af943b5925d95a31a183abf695301f2fa49de9f694671
 ```
 
-### `dpkg` source package: `libseccomp=2.5.1-1ubuntu1~20.04.1`
+### `dpkg` source package: `libseccomp=2.5.1-1ubuntu1~20.04.2`
 
 Binary Packages:
 
-- `libseccomp2:amd64=2.5.1-1ubuntu1~20.04.1`
+- `libseccomp2:amd64=2.5.1-1ubuntu1~20.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/libseccomp2/copyright`)
 
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libseccomp=2.5.1-1ubuntu1~20.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.1-1ubuntu1~20.04.2.dsc' libseccomp_2.5.1-1ubuntu1~20.04.2.dsc 2578 SHA512:ea3e505f936011ea2d37eb5c9c10fb0f7ead4f699180679940c1e27936c1b28fc96b40f98d4e25e1e058466244d08d29c2d538fff85d726808c2cec45f914509
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.1.orig.tar.gz' libseccomp_2.5.1.orig.tar.gz 638811 SHA512:2be80a6323f9282dbeae8791724e5778b32e2382b2a3d1b0f77366371ec4072ea28128204f675cce101c091c0420d12c497e1a9ccbb7dc5bcbf61bfd777160af
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.1-1ubuntu1~20.04.2.debian.tar.xz' libseccomp_2.5.1-1ubuntu1~20.04.2.debian.tar.xz 21168 SHA512:77187efe846d46f3cff589b048cd446f13f1d0d60274b54fa464e337288b9fd3979e1f3b6f4999af00e12738232b9397e485e977a732f74cb89cfa5bf90a21be
+```
 
 ### `dpkg` source package: `libselinux=3.0-1build2`
 
@@ -1434,12 +1439,12 @@ $ apt-get source -qq --print-uris openldap=2.4.49+dfsg-2ubuntu1.8
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.49+dfsg-2ubuntu1.8.debian.tar.xz' openldap_2.4.49+dfsg-2ubuntu1.8.debian.tar.xz 187956 SHA512:918483e21af3233daa5a8b04da0c87fc010049ad5e66230d36a3737f511cd395f5f1f6753139f13520266f9fe86c07ae9c06c90128ca800680ecd3d23bc4b9a4
 ```
 
-### `dpkg` source package: `openssl=1.1.1f-1ubuntu2.8`
+### `dpkg` source package: `openssl=1.1.1f-1ubuntu2.10`
 
 Binary Packages:
 
-- `libssl1.1:amd64=1.1.1f-1ubuntu2.8`
-- `openssl=1.1.1f-1ubuntu2.8`
+- `libssl1.1:amd64=1.1.1f-1ubuntu2.10`
+- `openssl=1.1.1f-1ubuntu2.10`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1448,10 +1453,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=1.1.1f-1ubuntu2.8
-'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.8.dsc' openssl_1.1.1f-1ubuntu2.8.dsc 2466 SHA512:79514668a1c50eb32665786dae9b2e60ec4c908c173a7c66feb97ce3bf87d46e5c5dd8786a3c8d20aab20a9c4705821fa833ff4f54e92a1c033215a1c3749c07
-'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f.orig.tar.gz' openssl_1.1.1f.orig.tar.gz 9792828 SHA512:b00bd9b5ad5298fbceeec6bb19c1ab0c106ca5cfb31178497c58bf7e0e0cf30fcc19c20f84e23af31cc126bf2447d3e4f8461db97bafa7bd78f69561932f000c
-'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.8.debian.tar.xz' openssl_1.1.1f-1ubuntu2.8.debian.tar.xz 166152 SHA512:97fc740bd4fe474019878dd90d7130200644aec105fc6cf926791dada9a2bb8f330091b7e91fa6410e516dfbfb656120520b86190b3e417fcb9d461069b604d1
+$ apt-get source -qq --print-uris openssl=1.1.1f-1ubuntu2.10
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.10.dsc' openssl_1.1.1f-1ubuntu2.10.dsc 2499 SHA512:388d30358cd111bac756318b259f76eedd77e8f131b1537f63b0b3e7a4c8860f9d39b8a3662931c37993c75579cd95640244e96382e841a3477abb34a26bde73
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f.orig.tar.gz' openssl_1.1.1f.orig.tar.gz 9792828 SHA512:b00bd9b5ad5298fbceeec6bb19c1ab0c106ca5cfb31178497c58bf7e0e0cf30fcc19c20f84e23af31cc126bf2447d3e4f8461db97bafa7bd78f69561932f000c
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.10.debian.tar.xz' openssl_1.1.1f-1ubuntu2.10.debian.tar.xz 170668 SHA512:e95371b58d36b3b7184c0b7b6a459ed121fb57baa4bc694bc0c1f004be98ef7b672b6c8ec2e1207998bf35aafb3dd2c3e8a0e018c13930dbb072f8d911b2b9ed
 ```
 
 ### `dpkg` source package: `p11-kit=0.23.20-1ubuntu0.1`
@@ -1776,12 +1781,12 @@ $ apt-get source -qq --print-uris sqlite3=3.31.1-4ubuntu0.2
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1-4ubuntu0.2.debian.tar.xz' sqlite3_3.31.1-4ubuntu0.2.debian.tar.xz 33492 SHA512:87cc51bce108d6306d815683a1825b43a6e7a7d8dc2bade8ce34d3850b8a4437034b1383f5e60b8d9c4569e8ab5bb3eb28febda7745f4a9db01b5e1b0b11d5ae
 ```
 
-### `dpkg` source package: `systemd=245.4-4ubuntu3.13`
+### `dpkg` source package: `systemd=245.4-4ubuntu3.14`
 
 Binary Packages:
 
-- `libsystemd0:amd64=245.4-4ubuntu3.13`
-- `libudev1:amd64=245.4-4ubuntu3.13`
+- `libsystemd0:amd64=245.4-4ubuntu3.14`
+- `libudev1:amd64=245.4-4ubuntu3.14`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1794,9 +1799,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=245.4-4ubuntu3.14
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.14.dsc' systemd_245.4-4ubuntu3.14.dsc 5262 SHA512:a4f66eaabdfb2633ba4514f4ba1af6e2b2cebb1ee9f34ab52bd57e9a91736413c2b2c90a074db84ce8a2c49581449401b08f2ada3e05a92ff040fca0908ae1b0
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4.orig.tar.gz' systemd_245.4.orig.tar.gz 9000780 SHA512:02036bb1ab05301a9d0dfdd4b9c9376e90134474482531e6e292122380be2f24f99177493dd3af6f8af1a8ed2599ee0996da91a3b1b7872bbfaf26a1c3e61b4c
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.14.debian.tar.xz' systemd_245.4-4ubuntu3.14.debian.tar.xz 268644 SHA512:a63220aca9f6876f43e2275ad6357036bc30052092dc34eadbf6f354980662900b3a7d42a4bba6e055235f45e415c3d094e2dfc48e56336446016b13a97f0051
+```
 
 ### `dpkg` source package: `sysvinit=2.96-2.1ubuntu1`
 
