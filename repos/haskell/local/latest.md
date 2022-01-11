@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:860a8b30acec6fa7b719440a4a4eb7bf664adfeb5969d177e53181c7a15c8cc9`
-- Created: `2021-12-21T02:17:29.539879876Z`
+- Image ID: `sha256:0b8cafe95c5db9ead816ed4493b93c3f1f8e5757c0a65a0d3e1f7824bcf11e8f`
+- Created: `2022-01-07T20:39:47.988587447Z`
 - Virtual Size: ~ 1.73 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -258,9 +258,10 @@ Other potentially useful URLs:
 
 Binary Packages:
 
+- `bzip2=1.0.6-9.2~deb10u1`
 - `libbz2-1.0:amd64=1.0.6-9.2~deb10u1`
 
-Licenses: (parsed from: `/usr/share/doc/libbz2-1.0/copyright`)
+Licenses: (parsed from: `/usr/share/doc/bzip2/copyright`, `/usr/share/doc/libbz2-1.0/copyright`)
 
 - `BSD-variant`
 - `GPL-2`
@@ -568,8 +569,10 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `dpkg=1.19.7`
+- `dpkg-dev=1.19.7`
+- `libdpkg-perl=1.19.7`
 
-Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
+Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`, `/usr/share/doc/dpkg-dev/copyright`, `/usr/share/doc/libdpkg-perl/copyright`)
 
 - `BSD-2-clause`
 - `GPL-2`
@@ -2360,6 +2363,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pam/1.3.1-5/ (for browsing the source)
 - https://sources.debian.net/src/pam/1.3.1-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pam/1.3.1-5/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `patch=2.7.6-3+deb10u1`
+
+Binary Packages:
+
+- `patch=2.7.6-3+deb10u1`
+
+Licenses: (parsed from: `/usr/share/doc/patch/copyright`)
+
+- `GPL`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris patch=2.7.6-3+deb10u1
+'http://deb.debian.org/debian/pool/main/p/patch/patch_2.7.6-3+deb10u1.dsc' patch_2.7.6-3+deb10u1.dsc 1731 SHA256:dae4e0d25106b2d14d981309395371397091892359b44a919eb08dd841bee13f
+'http://deb.debian.org/debian/pool/main/p/patch/patch_2.7.6.orig.tar.xz' patch_2.7.6.orig.tar.xz 783756 SHA256:ac610bda97abe0d9f6b7c963255a11dcb196c25e337c61f94e4778d632f1d8fd
+'http://deb.debian.org/debian/pool/main/p/patch/patch_2.7.6-3+deb10u1.debian.tar.xz' patch_2.7.6-3+deb10u1.debian.tar.xz 13164 SHA256:58d4e84bd4ce850152e1d1911546ac0aad9764992570c360cff8f9cf03eb37bc
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/patch/2.7.6-3+deb10u1/ (for browsing the source)
+- https://sources.debian.net/src/patch/2.7.6-3+deb10u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/patch/2.7.6-3+deb10u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pcre2=10.32-5`
 
