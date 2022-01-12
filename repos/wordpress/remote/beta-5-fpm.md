@@ -1,7 +1,7 @@
 ## `wordpress:beta-5-fpm`
 
 ```console
-$ docker pull wordpress@sha256:8df9ec101a267c9e501bae76bb8f6218757beea78265e3d95d00b0dc7d32f6b1
+$ docker pull wordpress@sha256:a816d5ffd31d9532b12b4be337d4d493fa5f3ff2a0a6d7eb2c883744f97643b0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -18,14 +18,14 @@ $ docker pull wordpress@sha256:8df9ec101a267c9e501bae76bb8f6218757beea78265e3d95
 ### `wordpress:beta-5-fpm` - linux; amd64
 
 ```console
-$ docker pull wordpress@sha256:b15eebf8b948c549cb75b2a577bf0bbc1b0f74832e5521879a03f2e1053a2e84
+$ docker pull wordpress@sha256:8ec4dba07d953784ea96c38653958ee6a8f2b2ec4490af039f8812176033d373
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **212.7 MB (212655528 bytes)**  
+-	Total Size: **212.7 MB (212658732 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df23448e6bb6dbdbec10f476a51f772b5b435899c63bbb104191148edcdb6b71`
+-	Image ID: `sha256:cb7387bc2b797ba1b829e8acf574aeba3707de9ef0193888099b0e3c3a065094`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -88,17 +88,17 @@ RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get
 RUN set -eux; 	docker-php-ext-enable opcache; 	{ 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
 # Wed, 22 Dec 2021 12:24:17 GMT
 RUN { 		echo 'error_reporting = E_ERROR | E_WARNING | E_PARSE | E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_COMPILE_WARNING | E_RECOVERABLE_ERROR'; 		echo 'display_errors = Off'; 		echo 'display_startup_errors = Off'; 		echo 'log_errors = On'; 		echo 'error_log = /dev/stderr'; 		echo 'log_errors_max_len = 1024'; 		echo 'ignore_repeated_errors = On'; 		echo 'ignore_repeated_source = Off'; 		echo 'html_errors = Off'; 	} > /usr/local/etc/php/conf.d/error-logging.ini
-# Thu, 06 Jan 2022 20:56:12 GMT
-RUN set -eux; 	version='5.9-RC1'; 	sha1='84af65fb7785b979c20d38cffc05e1cc99340306'; 		curl -o wordpress.tar.gz -fL "https://wordpress.org/wordpress-$version.tar.gz"; 	echo "$sha1 *wordpress.tar.gz" | sha1sum -c -; 		tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 		[ ! -e /usr/src/wordpress/.htaccess ]; 	{ 		echo '# BEGIN WordPress'; 		echo ''; 		echo 'RewriteEngine On'; 		echo 'RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]'; 		echo 'RewriteBase /'; 		echo 'RewriteRule ^index\.php$ - [L]'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-f'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-d'; 		echo 'RewriteRule . /index.php [L]'; 		echo ''; 		echo '# END WordPress'; 	} > /usr/src/wordpress/.htaccess; 		chown -R www-data:www-data /usr/src/wordpress; 	mkdir wp-content; 	for dir in /usr/src/wordpress/wp-content/*/ cache; do 		dir="$(basename "${dir%/}")"; 		mkdir "wp-content/$dir"; 	done; 	chown -R www-data:www-data wp-content; 	chmod -R 777 wp-content
-# Thu, 06 Jan 2022 20:56:13 GMT
+# Wed, 12 Jan 2022 23:24:34 GMT
+RUN set -eux; 	version='5.9-RC2'; 	sha1='169b60d57d34c55d0b8bdfc122e0810d61b781a6'; 		curl -o wordpress.tar.gz -fL "https://wordpress.org/wordpress-$version.tar.gz"; 	echo "$sha1 *wordpress.tar.gz" | sha1sum -c -; 		tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 		[ ! -e /usr/src/wordpress/.htaccess ]; 	{ 		echo '# BEGIN WordPress'; 		echo ''; 		echo 'RewriteEngine On'; 		echo 'RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]'; 		echo 'RewriteBase /'; 		echo 'RewriteRule ^index\.php$ - [L]'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-f'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-d'; 		echo 'RewriteRule . /index.php [L]'; 		echo ''; 		echo '# END WordPress'; 	} > /usr/src/wordpress/.htaccess; 		chown -R www-data:www-data /usr/src/wordpress; 	mkdir wp-content; 	for dir in /usr/src/wordpress/wp-content/*/ cache; do 		dir="$(basename "${dir%/}")"; 		mkdir "wp-content/$dir"; 	done; 	chown -R www-data:www-data wp-content; 	chmod -R 777 wp-content
+# Wed, 12 Jan 2022 23:24:35 GMT
 VOLUME [/var/www/html]
-# Thu, 06 Jan 2022 20:56:13 GMT
+# Wed, 12 Jan 2022 23:24:35 GMT
 COPY --chown=www-data:www-datafile:f95ddeaad9b50ddddf288560052a9de4f33fa6297ea70870e396f6d99c482b7a in /usr/src/wordpress/ 
-# Thu, 06 Jan 2022 20:56:13 GMT
+# Wed, 12 Jan 2022 23:24:35 GMT
 COPY file:5be6bcc31206cb827f037769d89fd092037ed61a1e10d6cae7939a37055beb4c in /usr/local/bin/ 
-# Thu, 06 Jan 2022 20:56:13 GMT
+# Wed, 12 Jan 2022 23:24:35 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 06 Jan 2022 20:56:14 GMT
+# Wed, 12 Jan 2022 23:24:35 GMT
 CMD ["php-fpm"]
 ```
 
@@ -159,30 +159,30 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 22 Dec 2021 12:40:13 GMT  
 		Size: 391.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4e448b6f9f374b202d924176f47791fc81ac22ca516d942fb6c5867202f9b77d`  
-		Last Modified: Thu, 06 Jan 2022 21:02:16 GMT  
-		Size: 19.5 MB (19520157 bytes)  
+	-	`sha256:7b84ed66c28f05d5f7d86a259f53992f576204b8b0f3006500c5c72812e39e5b`  
+		Last Modified: Wed, 12 Jan 2022 23:31:32 GMT  
+		Size: 19.5 MB (19523357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08f1e3183ca0d50ea76e309a8042dba4f6a20b0ba521a2990f0998c212369fd5`  
-		Last Modified: Thu, 06 Jan 2022 21:02:12 GMT  
-		Size: 2.3 KB (2339 bytes)  
+	-	`sha256:202cbb4bfb8dc131b8e90addaa93669c7ab2a4b865b1704e887d53756e882812`  
+		Last Modified: Wed, 12 Jan 2022 23:31:29 GMT  
+		Size: 2.3 KB (2341 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66672dc102e4dbae4edce99169671022cf1c3cdc8a8f89da0db4b3f26102b19c`  
-		Last Modified: Thu, 06 Jan 2022 21:02:13 GMT  
-		Size: 1.7 KB (1729 bytes)  
+	-	`sha256:a97fe9ba8bcbeea09e89a3432da534e665adf9f30da3314cdb32d9f9d1e90faf`  
+		Last Modified: Wed, 12 Jan 2022 23:31:29 GMT  
+		Size: 1.7 KB (1731 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `wordpress:beta-5-fpm` - linux; arm variant v5
 
 ```console
-$ docker pull wordpress@sha256:bce77557a47a8405d24d80a06f30be16d497242ed68e54a82b91c8e748520eec
+$ docker pull wordpress@sha256:d2e90bffb5cf0ceb48accf0345546ecdfd63e183ff892042f84556293ea1033d
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **188.8 MB (188811644 bytes)**  
+-	Total Size: **188.8 MB (188814841 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8970ac9217fb7dd55fd52d24e2dfe6b92164b874f752b126c5fbaf3de9b59b98`
+-	Image ID: `sha256:8e58df9b28beec9fdb4506a0dd554261e4ee80a925bc550870fcbc615b193b2c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -245,17 +245,17 @@ RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get
 RUN set -eux; 	docker-php-ext-enable opcache; 	{ 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
 # Wed, 22 Dec 2021 12:39:59 GMT
 RUN { 		echo 'error_reporting = E_ERROR | E_WARNING | E_PARSE | E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_COMPILE_WARNING | E_RECOVERABLE_ERROR'; 		echo 'display_errors = Off'; 		echo 'display_startup_errors = Off'; 		echo 'log_errors = On'; 		echo 'error_log = /dev/stderr'; 		echo 'log_errors_max_len = 1024'; 		echo 'ignore_repeated_errors = On'; 		echo 'ignore_repeated_source = Off'; 		echo 'html_errors = Off'; 	} > /usr/local/etc/php/conf.d/error-logging.ini
-# Thu, 06 Jan 2022 20:02:10 GMT
-RUN set -eux; 	version='5.9-RC1'; 	sha1='84af65fb7785b979c20d38cffc05e1cc99340306'; 		curl -o wordpress.tar.gz -fL "https://wordpress.org/wordpress-$version.tar.gz"; 	echo "$sha1 *wordpress.tar.gz" | sha1sum -c -; 		tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 		[ ! -e /usr/src/wordpress/.htaccess ]; 	{ 		echo '# BEGIN WordPress'; 		echo ''; 		echo 'RewriteEngine On'; 		echo 'RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]'; 		echo 'RewriteBase /'; 		echo 'RewriteRule ^index\.php$ - [L]'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-f'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-d'; 		echo 'RewriteRule . /index.php [L]'; 		echo ''; 		echo '# END WordPress'; 	} > /usr/src/wordpress/.htaccess; 		chown -R www-data:www-data /usr/src/wordpress; 	mkdir wp-content; 	for dir in /usr/src/wordpress/wp-content/*/ cache; do 		dir="$(basename "${dir%/}")"; 		mkdir "wp-content/$dir"; 	done; 	chown -R www-data:www-data wp-content; 	chmod -R 777 wp-content
-# Thu, 06 Jan 2022 20:02:11 GMT
+# Wed, 12 Jan 2022 22:59:16 GMT
+RUN set -eux; 	version='5.9-RC2'; 	sha1='169b60d57d34c55d0b8bdfc122e0810d61b781a6'; 		curl -o wordpress.tar.gz -fL "https://wordpress.org/wordpress-$version.tar.gz"; 	echo "$sha1 *wordpress.tar.gz" | sha1sum -c -; 		tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 		[ ! -e /usr/src/wordpress/.htaccess ]; 	{ 		echo '# BEGIN WordPress'; 		echo ''; 		echo 'RewriteEngine On'; 		echo 'RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]'; 		echo 'RewriteBase /'; 		echo 'RewriteRule ^index\.php$ - [L]'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-f'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-d'; 		echo 'RewriteRule . /index.php [L]'; 		echo ''; 		echo '# END WordPress'; 	} > /usr/src/wordpress/.htaccess; 		chown -R www-data:www-data /usr/src/wordpress; 	mkdir wp-content; 	for dir in /usr/src/wordpress/wp-content/*/ cache; do 		dir="$(basename "${dir%/}")"; 		mkdir "wp-content/$dir"; 	done; 	chown -R www-data:www-data wp-content; 	chmod -R 777 wp-content
+# Wed, 12 Jan 2022 22:59:17 GMT
 VOLUME [/var/www/html]
-# Thu, 06 Jan 2022 20:02:12 GMT
+# Wed, 12 Jan 2022 22:59:18 GMT
 COPY --chown=www-data:www-datafile:f95ddeaad9b50ddddf288560052a9de4f33fa6297ea70870e396f6d99c482b7a in /usr/src/wordpress/ 
-# Thu, 06 Jan 2022 20:02:12 GMT
+# Wed, 12 Jan 2022 22:59:18 GMT
 COPY file:5be6bcc31206cb827f037769d89fd092037ed61a1e10d6cae7939a37055beb4c in /usr/local/bin/ 
-# Thu, 06 Jan 2022 20:02:13 GMT
+# Wed, 12 Jan 2022 22:59:19 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 06 Jan 2022 20:02:13 GMT
+# Wed, 12 Jan 2022 22:59:19 GMT
 CMD ["php-fpm"]
 ```
 
@@ -316,16 +316,16 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 22 Dec 2021 13:21:13 GMT  
 		Size: 396.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b6c9da266e50a69b10c75ad808e0f84fba3d3b8f991a242607c130e51960f1b3`  
-		Last Modified: Thu, 06 Jan 2022 20:16:49 GMT  
-		Size: 19.5 MB (19520152 bytes)  
+	-	`sha256:326213f3c60c61a883e6409668360e218d890ac875b49ac6de578c0610df6a4f`  
+		Last Modified: Wed, 12 Jan 2022 23:13:50 GMT  
+		Size: 19.5 MB (19523354 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d39709af5c3b87efa41bf73a53793ee6d198c2e936a9d9da8989fd4b4c6b9706`  
-		Last Modified: Thu, 06 Jan 2022 20:16:39 GMT  
-		Size: 2.3 KB (2344 bytes)  
+	-	`sha256:ee302f45d90e6019281bb60bc8e88e1069bd499bdcb49b0422ce7402b192ba5b`  
+		Last Modified: Wed, 12 Jan 2022 23:13:36 GMT  
+		Size: 2.3 KB (2339 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99a89b046d9ac68950a356644020f1a6dec25bcca00f6e9d0b92607bdef24bba`  
-		Last Modified: Thu, 06 Jan 2022 20:16:39 GMT  
+	-	`sha256:026dd22b4dc884059be0d034aa66654db3a388585f5b4600a3f14c2a877f3350`  
+		Last Modified: Wed, 12 Jan 2022 23:13:36 GMT  
 		Size: 1.7 KB (1733 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -646,14 +646,14 @@ CMD ["php-fpm"]
 ### `wordpress:beta-5-fpm` - linux; 386
 
 ```console
-$ docker pull wordpress@sha256:d0d19a944254753202e19adb4a02b84c6fb557b576a0cd81f50733447da0277e
+$ docker pull wordpress@sha256:58d52e24db30a2ac9a1fd54c5b0e646d7a83596f60e459a0d40ffee96718ab46
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **215.0 MB (214954424 bytes)**  
+-	Total Size: **215.0 MB (214957630 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b28ccf7e09649d76bdbae20476716c54b87ab7b1830eb8db2e73c59eddcf8f05`
+-	Image ID: `sha256:5529b3a758ae6b1da652fdc1854285ddcd749b7b6b4bf0f3d1aed8c853e4d7e2`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -716,17 +716,17 @@ RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get
 RUN set -eux; 	docker-php-ext-enable opcache; 	{ 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
 # Wed, 22 Dec 2021 08:10:34 GMT
 RUN { 		echo 'error_reporting = E_ERROR | E_WARNING | E_PARSE | E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_COMPILE_WARNING | E_RECOVERABLE_ERROR'; 		echo 'display_errors = Off'; 		echo 'display_startup_errors = Off'; 		echo 'log_errors = On'; 		echo 'error_log = /dev/stderr'; 		echo 'log_errors_max_len = 1024'; 		echo 'ignore_repeated_errors = On'; 		echo 'ignore_repeated_source = Off'; 		echo 'html_errors = Off'; 	} > /usr/local/etc/php/conf.d/error-logging.ini
-# Thu, 06 Jan 2022 20:33:15 GMT
-RUN set -eux; 	version='5.9-RC1'; 	sha1='84af65fb7785b979c20d38cffc05e1cc99340306'; 		curl -o wordpress.tar.gz -fL "https://wordpress.org/wordpress-$version.tar.gz"; 	echo "$sha1 *wordpress.tar.gz" | sha1sum -c -; 		tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 		[ ! -e /usr/src/wordpress/.htaccess ]; 	{ 		echo '# BEGIN WordPress'; 		echo ''; 		echo 'RewriteEngine On'; 		echo 'RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]'; 		echo 'RewriteBase /'; 		echo 'RewriteRule ^index\.php$ - [L]'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-f'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-d'; 		echo 'RewriteRule . /index.php [L]'; 		echo ''; 		echo '# END WordPress'; 	} > /usr/src/wordpress/.htaccess; 		chown -R www-data:www-data /usr/src/wordpress; 	mkdir wp-content; 	for dir in /usr/src/wordpress/wp-content/*/ cache; do 		dir="$(basename "${dir%/}")"; 		mkdir "wp-content/$dir"; 	done; 	chown -R www-data:www-data wp-content; 	chmod -R 777 wp-content
-# Thu, 06 Jan 2022 20:33:15 GMT
+# Wed, 12 Jan 2022 22:48:25 GMT
+RUN set -eux; 	version='5.9-RC2'; 	sha1='169b60d57d34c55d0b8bdfc122e0810d61b781a6'; 		curl -o wordpress.tar.gz -fL "https://wordpress.org/wordpress-$version.tar.gz"; 	echo "$sha1 *wordpress.tar.gz" | sha1sum -c -; 		tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 		[ ! -e /usr/src/wordpress/.htaccess ]; 	{ 		echo '# BEGIN WordPress'; 		echo ''; 		echo 'RewriteEngine On'; 		echo 'RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]'; 		echo 'RewriteBase /'; 		echo 'RewriteRule ^index\.php$ - [L]'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-f'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-d'; 		echo 'RewriteRule . /index.php [L]'; 		echo ''; 		echo '# END WordPress'; 	} > /usr/src/wordpress/.htaccess; 		chown -R www-data:www-data /usr/src/wordpress; 	mkdir wp-content; 	for dir in /usr/src/wordpress/wp-content/*/ cache; do 		dir="$(basename "${dir%/}")"; 		mkdir "wp-content/$dir"; 	done; 	chown -R www-data:www-data wp-content; 	chmod -R 777 wp-content
+# Wed, 12 Jan 2022 22:48:25 GMT
 VOLUME [/var/www/html]
-# Thu, 06 Jan 2022 20:33:16 GMT
+# Wed, 12 Jan 2022 22:48:26 GMT
 COPY --chown=www-data:www-datafile:f95ddeaad9b50ddddf288560052a9de4f33fa6297ea70870e396f6d99c482b7a in /usr/src/wordpress/ 
-# Thu, 06 Jan 2022 20:33:16 GMT
+# Wed, 12 Jan 2022 22:48:26 GMT
 COPY file:5be6bcc31206cb827f037769d89fd092037ed61a1e10d6cae7939a37055beb4c in /usr/local/bin/ 
-# Thu, 06 Jan 2022 20:33:16 GMT
+# Wed, 12 Jan 2022 22:48:26 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 06 Jan 2022 20:33:16 GMT
+# Wed, 12 Jan 2022 22:48:27 GMT
 CMD ["php-fpm"]
 ```
 
@@ -787,30 +787,30 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 22 Dec 2021 08:37:48 GMT  
 		Size: 397.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:26a27d8c5bfd01cbf871befa79787435e39c46646a5eb598ab33cf0bfe1e939e`  
-		Last Modified: Thu, 06 Jan 2022 20:44:48 GMT  
-		Size: 19.5 MB (19520151 bytes)  
+	-	`sha256:4bc0ab0edfbbddbcf96bfdc62a4181f781dc9d8b668ea7963b364ac140192b52`  
+		Last Modified: Wed, 12 Jan 2022 23:00:05 GMT  
+		Size: 19.5 MB (19523356 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cebda2d2839de06b220373fe4e9ba57ee9d3f11be9c490ae16d75e324055d8c3`  
-		Last Modified: Thu, 06 Jan 2022 20:44:43 GMT  
-		Size: 2.3 KB (2339 bytes)  
+	-	`sha256:4b489ea2755e641bf1700f42afce415ee6a2543734a9cae66b0ea815898ecf04`  
+		Last Modified: Wed, 12 Jan 2022 23:00:01 GMT  
+		Size: 2.3 KB (2342 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88ae4917a58b5d93ccbda352f67e36993795bd0ff01908a07cf71dcbb12b7704`  
-		Last Modified: Thu, 06 Jan 2022 20:44:43 GMT  
-		Size: 1.7 KB (1732 bytes)  
+	-	`sha256:c03b630da613c1a0d16278bd64fd72cee868054ffa13a2b1f0d151a0a790adb3`  
+		Last Modified: Wed, 12 Jan 2022 23:00:01 GMT  
+		Size: 1.7 KB (1730 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `wordpress:beta-5-fpm` - linux; mips64le
 
 ```console
-$ docker pull wordpress@sha256:c33394a8bd632d9631eb32e27260773c8d45c53951d7b68b0d3f50a8d076f31d
+$ docker pull wordpress@sha256:ed93c38df482ca392af8e406f3b67d6b0607eff957dd68b338f8933a56c92f0c
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **188.4 MB (188419089 bytes)**  
+-	Total Size: **188.4 MB (188422191 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:117679b0f0b90f990f3af2ab99e808bf64ad2c731fb71e285fe858e2cd111b54`
+-	Image ID: `sha256:f048892dc2b3ec0ed282b21bfd91487df54f2474bc2329f8686b4c6ff1fc159f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -873,17 +873,17 @@ RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get
 RUN set -eux; 	docker-php-ext-enable opcache; 	{ 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
 # Thu, 23 Dec 2021 02:25:08 GMT
 RUN { 		echo 'error_reporting = E_ERROR | E_WARNING | E_PARSE | E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_COMPILE_WARNING | E_RECOVERABLE_ERROR'; 		echo 'display_errors = Off'; 		echo 'display_startup_errors = Off'; 		echo 'log_errors = On'; 		echo 'error_log = /dev/stderr'; 		echo 'log_errors_max_len = 1024'; 		echo 'ignore_repeated_errors = On'; 		echo 'ignore_repeated_source = Off'; 		echo 'html_errors = Off'; 	} > /usr/local/etc/php/conf.d/error-logging.ini
-# Thu, 06 Jan 2022 20:11:17 GMT
-RUN set -eux; 	version='5.9-RC1'; 	sha1='84af65fb7785b979c20d38cffc05e1cc99340306'; 		curl -o wordpress.tar.gz -fL "https://wordpress.org/wordpress-$version.tar.gz"; 	echo "$sha1 *wordpress.tar.gz" | sha1sum -c -; 		tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 		[ ! -e /usr/src/wordpress/.htaccess ]; 	{ 		echo '# BEGIN WordPress'; 		echo ''; 		echo 'RewriteEngine On'; 		echo 'RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]'; 		echo 'RewriteBase /'; 		echo 'RewriteRule ^index\.php$ - [L]'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-f'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-d'; 		echo 'RewriteRule . /index.php [L]'; 		echo ''; 		echo '# END WordPress'; 	} > /usr/src/wordpress/.htaccess; 		chown -R www-data:www-data /usr/src/wordpress; 	mkdir wp-content; 	for dir in /usr/src/wordpress/wp-content/*/ cache; do 		dir="$(basename "${dir%/}")"; 		mkdir "wp-content/$dir"; 	done; 	chown -R www-data:www-data wp-content; 	chmod -R 777 wp-content
-# Thu, 06 Jan 2022 20:11:18 GMT
+# Wed, 12 Jan 2022 23:15:03 GMT
+RUN set -eux; 	version='5.9-RC2'; 	sha1='169b60d57d34c55d0b8bdfc122e0810d61b781a6'; 		curl -o wordpress.tar.gz -fL "https://wordpress.org/wordpress-$version.tar.gz"; 	echo "$sha1 *wordpress.tar.gz" | sha1sum -c -; 		tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 		[ ! -e /usr/src/wordpress/.htaccess ]; 	{ 		echo '# BEGIN WordPress'; 		echo ''; 		echo 'RewriteEngine On'; 		echo 'RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]'; 		echo 'RewriteBase /'; 		echo 'RewriteRule ^index\.php$ - [L]'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-f'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-d'; 		echo 'RewriteRule . /index.php [L]'; 		echo ''; 		echo '# END WordPress'; 	} > /usr/src/wordpress/.htaccess; 		chown -R www-data:www-data /usr/src/wordpress; 	mkdir wp-content; 	for dir in /usr/src/wordpress/wp-content/*/ cache; do 		dir="$(basename "${dir%/}")"; 		mkdir "wp-content/$dir"; 	done; 	chown -R www-data:www-data wp-content; 	chmod -R 777 wp-content
+# Wed, 12 Jan 2022 23:15:03 GMT
 VOLUME [/var/www/html]
-# Thu, 06 Jan 2022 20:11:18 GMT
+# Wed, 12 Jan 2022 23:15:04 GMT
 COPY --chown=www-data:www-datafile:f95ddeaad9b50ddddf288560052a9de4f33fa6297ea70870e396f6d99c482b7a in /usr/src/wordpress/ 
-# Thu, 06 Jan 2022 20:11:19 GMT
+# Wed, 12 Jan 2022 23:15:04 GMT
 COPY file:5be6bcc31206cb827f037769d89fd092037ed61a1e10d6cae7939a37055beb4c in /usr/local/bin/ 
-# Thu, 06 Jan 2022 20:11:19 GMT
+# Wed, 12 Jan 2022 23:15:05 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 06 Jan 2022 20:11:20 GMT
+# Wed, 12 Jan 2022 23:15:05 GMT
 CMD ["php-fpm"]
 ```
 
@@ -944,17 +944,17 @@ CMD ["php-fpm"]
 		Last Modified: Thu, 23 Dec 2021 03:03:34 GMT  
 		Size: 394.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:245c9ff22bfe492276311fbf10dcb9e7def648eecfbaf9cd69da840f72687058`  
-		Last Modified: Thu, 06 Jan 2022 20:16:12 GMT  
-		Size: 19.5 MB (19520188 bytes)  
+	-	`sha256:4f633ccba17fce697da7e13480aafbd2107b98280665b62bd8de8824fb430a6f`  
+		Last Modified: Wed, 12 Jan 2022 23:19:51 GMT  
+		Size: 19.5 MB (19523297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84c7d8d9b38cf8791057d66b93e7bb916bf9bc11ca23e87286a591daeac1fd49`  
-		Last Modified: Thu, 06 Jan 2022 20:15:59 GMT  
-		Size: 2.3 KB (2342 bytes)  
+	-	`sha256:3fc230e7ce33afdde46cb60049798b2454c927f644351fcfc6912f28faaa421f`  
+		Last Modified: Wed, 12 Jan 2022 23:19:39 GMT  
+		Size: 2.3 KB (2336 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e105409a2382ed1ede60fb36ff6a9bedb3770f955ca6c275d7b6f4da7224ae2`  
-		Last Modified: Thu, 06 Jan 2022 20:15:59 GMT  
-		Size: 1.7 KB (1734 bytes)  
+	-	`sha256:933034eff1ae675edde3cbe071cf1bc30819f52ca9d05b813d1e8143ebb42de2`  
+		Last Modified: Wed, 12 Jan 2022 23:19:38 GMT  
+		Size: 1.7 KB (1733 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `wordpress:beta-5-fpm` - linux; ppc64le
@@ -1117,14 +1117,14 @@ CMD ["php-fpm"]
 ### `wordpress:beta-5-fpm` - linux; s390x
 
 ```console
-$ docker pull wordpress@sha256:3b7cb3b237af59bee06b9a96146ea3934e9efd62b1c4c2861157996ba806294b
+$ docker pull wordpress@sha256:4c1637cd1fb785335bee6797b33849b696e712a76cc46593f2ed4cc8c9995da7
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **188.0 MB (188022907 bytes)**  
+-	Total Size: **188.0 MB (188026096 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4c9ff3baf9b3a5fafa781801d66f767a29641e0bed3544b0b2cd6b97e3b9d781`
+-	Image ID: `sha256:a12ae165d43477bd086519ca671d921b19dd1291b4450601116c91ec041fc048`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -1187,17 +1187,17 @@ RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get
 RUN set -eux; 	docker-php-ext-enable opcache; 	{ 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
 # Tue, 21 Dec 2021 17:57:07 GMT
 RUN { 		echo 'error_reporting = E_ERROR | E_WARNING | E_PARSE | E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_COMPILE_WARNING | E_RECOVERABLE_ERROR'; 		echo 'display_errors = Off'; 		echo 'display_startup_errors = Off'; 		echo 'log_errors = On'; 		echo 'error_log = /dev/stderr'; 		echo 'log_errors_max_len = 1024'; 		echo 'ignore_repeated_errors = On'; 		echo 'ignore_repeated_source = Off'; 		echo 'html_errors = Off'; 	} > /usr/local/etc/php/conf.d/error-logging.ini
-# Thu, 06 Jan 2022 20:30:14 GMT
-RUN set -eux; 	version='5.9-RC1'; 	sha1='84af65fb7785b979c20d38cffc05e1cc99340306'; 		curl -o wordpress.tar.gz -fL "https://wordpress.org/wordpress-$version.tar.gz"; 	echo "$sha1 *wordpress.tar.gz" | sha1sum -c -; 		tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 		[ ! -e /usr/src/wordpress/.htaccess ]; 	{ 		echo '# BEGIN WordPress'; 		echo ''; 		echo 'RewriteEngine On'; 		echo 'RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]'; 		echo 'RewriteBase /'; 		echo 'RewriteRule ^index\.php$ - [L]'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-f'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-d'; 		echo 'RewriteRule . /index.php [L]'; 		echo ''; 		echo '# END WordPress'; 	} > /usr/src/wordpress/.htaccess; 		chown -R www-data:www-data /usr/src/wordpress; 	mkdir wp-content; 	for dir in /usr/src/wordpress/wp-content/*/ cache; do 		dir="$(basename "${dir%/}")"; 		mkdir "wp-content/$dir"; 	done; 	chown -R www-data:www-data wp-content; 	chmod -R 777 wp-content
-# Thu, 06 Jan 2022 20:30:15 GMT
+# Wed, 12 Jan 2022 23:03:06 GMT
+RUN set -eux; 	version='5.9-RC2'; 	sha1='169b60d57d34c55d0b8bdfc122e0810d61b781a6'; 		curl -o wordpress.tar.gz -fL "https://wordpress.org/wordpress-$version.tar.gz"; 	echo "$sha1 *wordpress.tar.gz" | sha1sum -c -; 		tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 		[ ! -e /usr/src/wordpress/.htaccess ]; 	{ 		echo '# BEGIN WordPress'; 		echo ''; 		echo 'RewriteEngine On'; 		echo 'RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]'; 		echo 'RewriteBase /'; 		echo 'RewriteRule ^index\.php$ - [L]'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-f'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-d'; 		echo 'RewriteRule . /index.php [L]'; 		echo ''; 		echo '# END WordPress'; 	} > /usr/src/wordpress/.htaccess; 		chown -R www-data:www-data /usr/src/wordpress; 	mkdir wp-content; 	for dir in /usr/src/wordpress/wp-content/*/ cache; do 		dir="$(basename "${dir%/}")"; 		mkdir "wp-content/$dir"; 	done; 	chown -R www-data:www-data wp-content; 	chmod -R 777 wp-content
+# Wed, 12 Jan 2022 23:03:08 GMT
 VOLUME [/var/www/html]
-# Thu, 06 Jan 2022 20:30:15 GMT
+# Wed, 12 Jan 2022 23:03:08 GMT
 COPY --chown=www-data:www-datafile:f95ddeaad9b50ddddf288560052a9de4f33fa6297ea70870e396f6d99c482b7a in /usr/src/wordpress/ 
-# Thu, 06 Jan 2022 20:30:16 GMT
+# Wed, 12 Jan 2022 23:03:08 GMT
 COPY file:5be6bcc31206cb827f037769d89fd092037ed61a1e10d6cae7939a37055beb4c in /usr/local/bin/ 
-# Thu, 06 Jan 2022 20:30:16 GMT
+# Wed, 12 Jan 2022 23:03:08 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 06 Jan 2022 20:30:16 GMT
+# Wed, 12 Jan 2022 23:03:08 GMT
 CMD ["php-fpm"]
 ```
 
@@ -1258,15 +1258,15 @@ CMD ["php-fpm"]
 		Last Modified: Tue, 21 Dec 2021 18:13:29 GMT  
 		Size: 397.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6cfee7daf804fcfab9f9dd89b82c5e4df01418ba8fdabcb27951ec76478dc6d`  
-		Last Modified: Thu, 06 Jan 2022 20:40:16 GMT  
-		Size: 19.5 MB (19520168 bytes)  
+	-	`sha256:3ca9b1d1b277f0b69916cff29ddd54a3c5b69a69bb99dae88dad220ceeba6cae`  
+		Last Modified: Wed, 12 Jan 2022 23:13:17 GMT  
+		Size: 19.5 MB (19523355 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:15dbd90dd2b4977be70eb1eb65225c405d3a8f0be647b200f37b0038bfce2551`  
-		Last Modified: Thu, 06 Jan 2022 20:40:14 GMT  
-		Size: 2.3 KB (2340 bytes)  
+	-	`sha256:8020c6f539f42a3d0a0b18d54e7527762dc0280bcaf554ad86a6b8f051f9e21a`  
+		Last Modified: Wed, 12 Jan 2022 23:13:15 GMT  
+		Size: 2.3 KB (2341 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8e83c86344d59902bf72c165871cb359236e95ece82e4be52c670506f005e437`  
-		Last Modified: Thu, 06 Jan 2022 20:40:13 GMT  
-		Size: 1.7 KB (1732 bytes)  
+	-	`sha256:a25841055a4aeebb2ab50fcfe7dfd65809a678cab29357bbd832ce9e6f7d4002`  
+		Last Modified: Wed, 12 Jan 2022 23:13:15 GMT  
+		Size: 1.7 KB (1733 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
