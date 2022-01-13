@@ -1492,14 +1492,9 @@ Licenses: (parsed from: `/usr/share/doc/gazebo11/copyright`, `/usr/share/doc/gaz
 - `LGPL-3+`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gazebo11=11.9.1-1~bionic
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/g/gazebo11/gazebo11_11.9.1-1~bionic.dsc' gazebo11_11.9.1-1~bionic.dsc 2354 SHA256:e8da3998399a2ad7f97333bed197ef18883452667adddfec7671d5c529be2542
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/g/gazebo11/gazebo11_11.9.1.orig.tar.bz2' gazebo11_11.9.1.orig.tar.bz2 56472954 SHA256:2959f4bed5fa8b5aa7f86bcd518e74a65402fe21b91a8d125807117827731be6
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/g/gazebo11/gazebo11_11.9.1-1~bionic.debian.tar.xz' gazebo11_11.9.1-1~bionic.debian.tar.xz 6812 SHA256:f824c6b01f693d56b5df65773b5b612bbb203d1ccd09889305c7bc00317e296b
-```
 
 ### `dpkg` source package: `gcc-6=6.5.0-2ubuntu1~18.04`
 
