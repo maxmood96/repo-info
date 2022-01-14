@@ -4759,20 +4759,13 @@ Licenses: (parsed from: `/usr/share/doc/libprocps8/copyright`, `/usr/share/doc/p
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris procps=2:3.3.17-5
-'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.17-5.dsc' procps_3.3.17-5.dsc 2136 SHA256:3b1d9a3d3bc9ec24360ed20721d4235fcd4b4dbb9a86c1eba6c42899a50ecff8
-'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.17.orig.tar.xz' procps_3.3.17.orig.tar.xz 1008428 SHA256:4518b3e7aafd34ec07d0063d250fd474999b20b200218c3ae56f5d2113f141b4
-'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.17-5.debian.tar.xz' procps_3.3.17-5.debian.tar.xz 28608 SHA256:e6b5f9ef22eca9f03f79dc79b4c389249368216df8702a8cc380e10f29eda8c9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/procps/2:3.3.17-5/
 
-- https://sources.debian.net/src/procps/2:3.3.17-5/ (for browsing the source)
-- https://sources.debian.net/src/procps/2:3.3.17-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/procps/2:3.3.17-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3-defaults=3.9.8-1`
 
@@ -5148,20 +5141,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=249.7-1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_249.7-1.dsc' systemd_249.7-1.dsc 5438 SHA256:c470934868070567a044c7a0a1a254fec4e1f5e461b426447f24fa87d5423f30
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_249.7.orig.tar.gz' systemd_249.7.orig.tar.gz 10608252 SHA256:5dbf457431bb16e5dfc957200731ad302fe3ae4919470bc34b8224428e1addbb
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_249.7-1.debian.tar.xz' systemd_249.7-1.debian.tar.xz 166796 SHA256:ed663fc63c77896d585ac62d68c35474fe5d8ee27adf255d9ae2376940042a20
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/249.7-1/
 
-- https://sources.debian.net/src/systemd/249.7-1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/249.7-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/249.7-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.01-1`
 

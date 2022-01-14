@@ -381,20 +381,13 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bash=5.1-5
-'http://deb.debian.org/debian/pool/main/b/bash/bash_5.1-5.dsc' bash_5.1-5.dsc 2296 SHA256:1d9728c7b74bdd15c933cab55eaa1bff5e98afe000e9deac474df1f723f99e5c
-'http://deb.debian.org/debian/pool/main/b/bash/bash_5.1.orig.tar.xz' bash_5.1.orig.tar.xz 5802740 SHA256:d5eeee4f953c09826409d572e2e8996a2140d67eb8f382ce1f3a9d23883ad696
-'http://deb.debian.org/debian/pool/main/b/bash/bash_5.1-5.debian.tar.xz' bash_5.1-5.debian.tar.xz 92536 SHA256:58a466088e364c1e8c2a0fb9bd144e86ddcae19d87fbb48b79a4bb5314eaadea
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/bash/5.1-5/
 
-- https://sources.debian.net/src/bash/5.1-5/ (for browsing the source)
-- https://sources.debian.net/src/bash/5.1-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/bash/5.1-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `binutils=2.37-7`
 
@@ -4834,20 +4827,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.9-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.9=3.9.9-2
-'http://deb.debian.org/debian/pool/main/p/python3.9/python3.9_3.9.9-2.dsc' python3.9_3.9.9-2.dsc 3493 SHA256:f1ead66f6fe1dcc67b6b19555797fe4f71dd75305b6d6305818939d189d04590
-'http://deb.debian.org/debian/pool/main/p/python3.9/python3.9_3.9.9.orig.tar.xz' python3.9_3.9.9.orig.tar.xz 19144372 SHA256:06828c04a573c073a4e51c4292a27c1be4ae26621c3edc7cf9318418ce3b6d27
-'http://deb.debian.org/debian/pool/main/p/python3.9/python3.9_3.9.9-2.debian.tar.xz' python3.9_3.9.9-2.debian.tar.xz 212360 SHA256:570eedc912e97b28570355163b8c1f28ace674c722c6cf339a6a64b8bb23ed78
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3.9/3.9.9-2/
 
-- https://sources.debian.net/src/python3.9/3.9.9-2/ (for browsing the source)
-- https://sources.debian.net/src/python3.9/3.9.9-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.9/3.9.9-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=8.1-2`
 
@@ -4862,20 +4848,13 @@ Licenses: (parsed from: `/usr/share/doc/libreadline-dev/copyright`, `/usr/share/
 - `GFDL`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris readline=8.1-2
-'http://deb.debian.org/debian/pool/main/r/readline/readline_8.1-2.dsc' readline_8.1-2.dsc 2418 SHA256:cefa72ab21f0fccab401c49ce559b7e7e4ae45cd1e20c92cba807de64f6169eb
-'http://deb.debian.org/debian/pool/main/r/readline/readline_8.1.orig.tar.gz' readline_8.1.orig.tar.gz 2993288 SHA256:f8ceb4ee131e3232226a17f51b164afc46cd0b9e6cef344be87c65962cb82b02
-'http://deb.debian.org/debian/pool/main/r/readline/readline_8.1-2.debian.tar.xz' readline_8.1-2.debian.tar.xz 29800 SHA256:7ff7b7e48727bf8e634cd9721dceb2e4f9e9c2c941664be140ec947267cf26d5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/readline/8.1-2/
 
-- https://sources.debian.net/src/readline/8.1-2/ (for browsing the source)
-- https://sources.debian.net/src/readline/8.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/readline/8.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rpcsvc-proto=1.4.2-4`
 
