@@ -6508,14 +6508,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pillow=5.1.0-1ubuntu0.6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pillow/pillow_5.1.0-1ubuntu0.6.dsc' pillow_5.1.0-1ubuntu0.6.dsc 2883 SHA512:32527ea8d847f6f3e8a4b1cf84745041937062cc8cf28e3a95a80d48818f8a6221cba0d29cc2d646ff83498ff18ee10b24fa0eaeae434f3975d5be6be51d5193
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pillow/pillow_5.1.0.orig.tar.xz' pillow_5.1.0.orig.tar.xz 10771012 SHA512:40262690ef24ae1b4a5e8f7da5070d9e7a9d85a2ae990ef859f0af9270bb447dff249501abbd76352248ca9ec26c6f49862240270f1cb0b8dc3ab5b449e3801e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pillow/pillow_5.1.0-1ubuntu0.6.debian.tar.xz' pillow_5.1.0-1ubuntu0.6.debian.tar.xz 46584 SHA512:586ddef35d1600acf94796d8f82ae49d9c296f4792a80c43323caf0bec8190f0e30aaf39ee12f5ebaf76789ac8accf6c32c3cfa6e4ea81f54e59c1394ab7e7f1
-```
 
 ### `dpkg` source package: `pinentry=1.1.0-1`
 

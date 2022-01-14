@@ -2734,14 +2734,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.4.0-92.103
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-92.103.dsc' linux_5.4.0-92.103.dsc 6932 SHA512:cfc79a0fa617a15c07557fc96768c0f492723e1f7daa3d127ff217f0f8a0a009513888987b11f6666c26074d472ba6a8fa0f63b60182e7fd1499afc41c1354a2
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA512:62b09a7231fd793973c5f59b16c4f6ffce621188b02a71915874b05e8e3f956fb6146d4a4fb1a4475bebe463949ca5a18da12842c3ce7c52e996e6bc4012a074
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-92.103.diff.gz' linux_5.4.0-92.103.diff.gz 8875324 SHA512:f04395b34b20a7c6cdf576f31271e792fca1ecc5fcd5c6c6d13ea4696373fd0647c604faeef33ac9caa123a5dde409cd65ee844a1cd02b91aec2ad6374a229df
-```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu2`
 
@@ -2775,14 +2770,9 @@ Licenses: (parsed from: `/usr/share/doc/python3-lxml/copyright`)
 - `GPL2`
 - `later`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lxml=4.5.0-1ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lxml/lxml_4.5.0-1ubuntu0.3.dsc' lxml_4.5.0-1ubuntu0.3.dsc 2355 SHA512:505930b24f7cae6db4eca3adff6e724a9ed91d05dfede14d865a34bc97074228f3b3fc969b9a35fbf39838a8c97cb94b6e0b74e074fb5746cb40e518f5184406
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lxml/lxml_4.5.0.orig.tar.gz' lxml_4.5.0.orig.tar.gz 4531832 SHA512:7cb957b2ab9931c32984ad0808f51e650e82e2d9b14df3fd8df2dd8f2c5c261d26ebf2c672b723e89b00b867a0a8dbb9130023e48a5f302fd02d5409e1c8cd6c
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lxml/lxml_4.5.0-1ubuntu0.3.debian.tar.xz' lxml_4.5.0-1ubuntu0.3.debian.tar.xz 10424 SHA512:dc6a59f3a17a07f1e58cda276d6928be657bb44d3615b06c2072e59884c23a6678bab351a1a6c4441caaf82e6d12644c1870b835bfb7f6ae861a3385756446fd
-```
 
 ### `dpkg` source package: `lz4=1.9.2-2ubuntu0.20.04.1`
 
@@ -7564,14 +7554,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=245.4-4ubuntu3.14
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.14.dsc' systemd_245.4-4ubuntu3.14.dsc 5262 SHA512:a4f66eaabdfb2633ba4514f4ba1af6e2b2cebb1ee9f34ab52bd57e9a91736413c2b2c90a074db84ce8a2c49581449401b08f2ada3e05a92ff040fca0908ae1b0
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4.orig.tar.gz' systemd_245.4.orig.tar.gz 9000780 SHA512:02036bb1ab05301a9d0dfdd4b9c9376e90134474482531e6e292122380be2f24f99177493dd3af6f8af1a8ed2599ee0996da91a3b1b7872bbfaf26a1c3e61b4c
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.14.debian.tar.xz' systemd_245.4-4ubuntu3.14.debian.tar.xz 268644 SHA512:a63220aca9f6876f43e2275ad6357036bc30052092dc34eadbf6f354980662900b3a7d42a4bba6e055235f45e415c3d094e2dfc48e56336446016b13a97f0051
-```
 
 ### `dpkg` source package: `sysvinit=2.96-2.1ubuntu1`
 
