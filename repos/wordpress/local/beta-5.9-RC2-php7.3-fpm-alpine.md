@@ -1,10 +1,10 @@
-# `wordpress:beta-5.9-RC1-php8.0-fpm-alpine`
+# `wordpress:beta-5.9-RC2-php7.3-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:285d77f687732dbaae480f41e873689eda977b3477844f2ec19c46135e4ca1b3`
-- Created: `2022-01-06T20:57:14.937370351Z`
-- Virtual Size: ~ 275.16 Mb  
+- Image ID: `sha256:5139ac2066276d1a84cb6a393c3071e35d2d3ffd2f762f3b90c8da0ace7eb000`
+- Created: `2022-01-12T23:25:12.204270135Z`
+- Virtual Size: ~ 266.80 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,11 +16,11 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
-  - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F`
-  - `PHP_VERSION=8.0.14`
-  - `PHP_URL=https://www.php.net/distributions/php-8.0.14.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.0.14.tar.xz.asc`
-  - `PHP_SHA256=fbde8247ac200e4de73449d9fefc8b495d323b5be9c10cdb645fb431c91156e3`
+  - `GPG_KEYS=CBAF69F173A0FEA4B537F470D66C9593118BCCB6 F38252826ACD957EF380D39F2F7956BC5DA04B5D`
+  - `PHP_VERSION=7.3.33`
+  - `PHP_URL=https://www.php.net/distributions/php-7.3.33.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.3.33.tar.xz.asc`
+  - `PHP_SHA256=166eaccde933381da9516a2b70ad0f447d7cec4b603d07b9a916032b215b90cc`
 
 ## `apk` (`.apk`-based packages)
 
@@ -1262,23 +1262,6 @@ nghttp2-libs-1.46.0-r0 installed size:
 
 nghttp2-libs-1.46.0-r0 license:
 MIT
-
-```
-
-### `apk` package: `oniguruma`
-
-```console
-oniguruma-6.9.7.1-r0 description:
-a regular expressions library
-
-oniguruma-6.9.7.1-r0 webpage:
-https://github.com/kkos/oniguruma
-
-oniguruma-6.9.7.1-r0 installed size:
-560 KiB
-
-oniguruma-6.9.7.1-r0 license:
-BSD-2-Clause
 
 ```
 
