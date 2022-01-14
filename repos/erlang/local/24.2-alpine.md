@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:65e12d2205f6998e61b340ce3ec783a2e415a85db488d99e5983bda1f0072833`
-- Created: `2021-12-17T18:54:20.763686283Z`
-- Virtual Size: ~ 70.98 Mb  
+- Image ID: `sha256:fa2124888a4608fca31b28953b57f183ab7b6bea865fdcf03e27bc56465e855f`
+- Created: `2022-01-11T18:56:59.652650835Z`
+- Virtual Size: ~ 74.21 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["erl"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `OTP_VERSION=24.2`
-  - `REBAR3_VERSION=3.17.0`
+  - `REBAR3_VERSION=3.18.0`
 - Labels:
   - `org.opencontainers.image.version=24.2`
 
@@ -139,16 +139,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1l-r7 description:
+libcrypto1.1-1.1.1l-r8 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1l-r7 webpage:
+libcrypto1.1-1.1.1l-r8 webpage:
 https://www.openssl.org/
 
-libcrypto1.1-1.1.1l-r7 installed size:
+libcrypto1.1-1.1.1l-r8 installed size:
 2676 KiB
 
-libcrypto1.1-1.1.1l-r7 license:
+libcrypto1.1-1.1.1l-r8 license:
 OpenSSL
 
 ```
@@ -207,16 +207,16 @@ ISC AND (BSD-3-Clause OR MIT)
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1l-r7 description:
+libssl1.1-1.1.1l-r8 description:
 SSL shared libraries
 
-libssl1.1-1.1.1l-r7 webpage:
+libssl1.1-1.1.1l-r8 webpage:
 https://www.openssl.org/
 
-libssl1.1-1.1.1l-r7 installed size:
+libssl1.1-1.1.1l-r8 installed size:
 528 KiB
 
-libssl1.1-1.1.1l-r7 license:
+libssl1.1-1.1.1l-r8 license:
 OpenSSL
 
 ```
