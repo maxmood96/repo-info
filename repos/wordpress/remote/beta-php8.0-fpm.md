@@ -1,7 +1,7 @@
 ## `wordpress:beta-php8.0-fpm`
 
 ```console
-$ docker pull wordpress@sha256:ccf6adf1156b7849d31c1a379826d6f7fa430539a9c688784cbb944558ff1e86
+$ docker pull wordpress@sha256:40ee1ca298b835e6cef2a0e66cabdb4863ef0bf96bb82925be19b7b1a0996d06
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -18,14 +18,14 @@ $ docker pull wordpress@sha256:ccf6adf1156b7849d31c1a379826d6f7fa430539a9c688784
 ### `wordpress:beta-php8.0-fpm` - linux; amd64
 
 ```console
-$ docker pull wordpress@sha256:348ce826f8c6336e2cbebfbfcd7ca5e4f88c8754df736c7f90fa40c4f8a83646
+$ docker pull wordpress@sha256:e2c4fcba74a73e0c144186c4ae8bbf9dfb4df5b4e1fdcd2ee92fc1ec171148b6
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **213.8 MB (213758293 bytes)**  
+-	Total Size: **213.7 MB (213744339 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b4477b39983f5a9ea1fa1220e9fdfd4ba07b5ddbc98b964d547924c9ee2ce87d`
+-	Image ID: `sha256:a7088ae90f073dbe23a471e7e39424fa03bb9906b7f37e1d6a60dab90f47c704`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -88,17 +88,17 @@ RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get
 RUN set -eux; 	docker-php-ext-enable opcache; 	{ 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
 # Wed, 22 Dec 2021 12:30:52 GMT
 RUN { 		echo 'error_reporting = E_ERROR | E_WARNING | E_PARSE | E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_COMPILE_WARNING | E_RECOVERABLE_ERROR'; 		echo 'display_errors = Off'; 		echo 'display_startup_errors = Off'; 		echo 'log_errors = On'; 		echo 'error_log = /dev/stderr'; 		echo 'log_errors_max_len = 1024'; 		echo 'ignore_repeated_errors = On'; 		echo 'ignore_repeated_source = Off'; 		echo 'html_errors = Off'; 	} > /usr/local/etc/php/conf.d/error-logging.ini
-# Wed, 12 Jan 2022 23:25:27 GMT
-RUN set -eux; 	version='5.9-RC2'; 	sha1='169b60d57d34c55d0b8bdfc122e0810d61b781a6'; 		curl -o wordpress.tar.gz -fL "https://wordpress.org/wordpress-$version.tar.gz"; 	echo "$sha1 *wordpress.tar.gz" | sha1sum -c -; 		tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 		[ ! -e /usr/src/wordpress/.htaccess ]; 	{ 		echo '# BEGIN WordPress'; 		echo ''; 		echo 'RewriteEngine On'; 		echo 'RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]'; 		echo 'RewriteBase /'; 		echo 'RewriteRule ^index\.php$ - [L]'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-f'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-d'; 		echo 'RewriteRule . /index.php [L]'; 		echo ''; 		echo '# END WordPress'; 	} > /usr/src/wordpress/.htaccess; 		chown -R www-data:www-data /usr/src/wordpress; 	mkdir wp-content; 	for dir in /usr/src/wordpress/wp-content/*/ cache; do 		dir="$(basename "${dir%/}")"; 		mkdir "wp-content/$dir"; 	done; 	chown -R www-data:www-data wp-content; 	chmod -R 777 wp-content
-# Wed, 12 Jan 2022 23:25:27 GMT
+# Thu, 20 Jan 2022 04:52:39 GMT
+RUN set -eux; 	version='5.9-RC3'; 	sha1='7401bf2a2a28f5b0c07f444b7b5ded1fef34d7b9'; 		curl -o wordpress.tar.gz -fL "https://wordpress.org/wordpress-$version.tar.gz"; 	echo "$sha1 *wordpress.tar.gz" | sha1sum -c -; 		tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 		[ ! -e /usr/src/wordpress/.htaccess ]; 	{ 		echo '# BEGIN WordPress'; 		echo ''; 		echo 'RewriteEngine On'; 		echo 'RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]'; 		echo 'RewriteBase /'; 		echo 'RewriteRule ^index\.php$ - [L]'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-f'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-d'; 		echo 'RewriteRule . /index.php [L]'; 		echo ''; 		echo '# END WordPress'; 	} > /usr/src/wordpress/.htaccess; 		chown -R www-data:www-data /usr/src/wordpress; 	mkdir wp-content; 	for dir in /usr/src/wordpress/wp-content/*/ cache; do 		dir="$(basename "${dir%/}")"; 		mkdir "wp-content/$dir"; 	done; 	chown -R www-data:www-data wp-content; 	chmod -R 777 wp-content
+# Thu, 20 Jan 2022 04:52:39 GMT
 VOLUME [/var/www/html]
-# Wed, 12 Jan 2022 23:25:28 GMT
+# Thu, 20 Jan 2022 04:52:39 GMT
 COPY --chown=www-data:www-datafile:f95ddeaad9b50ddddf288560052a9de4f33fa6297ea70870e396f6d99c482b7a in /usr/src/wordpress/ 
-# Wed, 12 Jan 2022 23:25:28 GMT
+# Thu, 20 Jan 2022 04:52:40 GMT
 COPY file:5be6bcc31206cb827f037769d89fd092037ed61a1e10d6cae7939a37055beb4c in /usr/local/bin/ 
-# Wed, 12 Jan 2022 23:25:28 GMT
+# Thu, 20 Jan 2022 04:52:40 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 12 Jan 2022 23:25:28 GMT
+# Thu, 20 Jan 2022 04:52:40 GMT
 CMD ["php-fpm"]
 ```
 
@@ -159,17 +159,17 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 22 Dec 2021 12:43:09 GMT  
 		Size: 397.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c40a515d2efbb65c698e6ea2c79649b40c7a2d338a5eadd59e59058c66d25d3a`  
-		Last Modified: Wed, 12 Jan 2022 23:35:32 GMT  
-		Size: 19.5 MB (19523365 bytes)  
+	-	`sha256:96594c92aebdf4babb7fc970d768d68010b09fa3d8db506aed988913fd172b6b`  
+		Last Modified: Thu, 20 Jan 2022 05:00:57 GMT  
+		Size: 19.5 MB (19509409 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4469d1b7cd9e90817dab08a6daf5c61b03fbd04aa2123038015da2415df92fe`  
-		Last Modified: Wed, 12 Jan 2022 23:35:28 GMT  
-		Size: 2.3 KB (2339 bytes)  
+	-	`sha256:3e4380e46f3f2bf87d465c62888604e2e1f82190a42a680fd8ce4bb54ca9d556`  
+		Last Modified: Thu, 20 Jan 2022 05:00:54 GMT  
+		Size: 2.3 KB (2340 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:923c5ce9dfd97626e7194bcb21e989cc7dfe6ec73a6c4f139467d493d446d92f`  
-		Last Modified: Wed, 12 Jan 2022 23:35:28 GMT  
-		Size: 1.7 KB (1734 bytes)  
+	-	`sha256:8a9cd54f6665340ac6a27773cf7084894593915854805ea20803de301fb06425`  
+		Last Modified: Thu, 20 Jan 2022 05:00:54 GMT  
+		Size: 1.7 KB (1735 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `wordpress:beta-php8.0-fpm` - linux; arm variant v5
