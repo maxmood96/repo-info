@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ad1e5e2319bace220dd433c67dc7209cca335bb3db9775787b397fbf499d5fd9`
-- Created: `2022-01-08T00:57:58.423525712Z`
-- Virtual Size: ~ 267.86 Mb  
+- Image ID: `sha256:52c814d1ea387755e05f705a79bfa75fb13206218a8729f4639047d6dcd7c54a`
+- Created: `2022-01-20T23:31:21.233128363Z`
+- Virtual Size: ~ 270.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F`
-  - `PHP_VERSION=8.0.14`
-  - `PHP_URL=https://www.php.net/distributions/php-8.0.14.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.0.14.tar.xz.asc`
-  - `PHP_SHA256=fbde8247ac200e4de73449d9fefc8b495d323b5be9c10cdb645fb431c91156e3`
+  - `PHP_VERSION=8.0.15`
+  - `PHP_URL=https://www.php.net/distributions/php-8.0.15.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.0.15.tar.xz.asc`
+  - `PHP_SHA256=5f33544061d37d805a2a9ce791f081ef08a7155bd7ba2362e69bba2d06b0f8b2`
 
 ## `apk` (`.apk`-based packages)
 
@@ -248,16 +248,16 @@ LGPL-2.0-or-later MPL-1.1
 ### `apk` package: `cups-libs`
 
 ```console
-cups-libs-2.3.3-r4 description:
+cups-libs-2.3.3-r5 description:
 CUPS libraries
 
-cups-libs-2.3.3-r4 webpage:
+cups-libs-2.3.3-r5 webpage:
 https://www.cups.org/
 
-cups-libs-2.3.3-r4 installed size:
+cups-libs-2.3.3-r5 installed size:
 564 KiB
 
-cups-libs-2.3.3-r4 license:
+cups-libs-2.3.3-r5 license:
 GPL-2.0-only
 
 ```
@@ -299,16 +299,16 @@ AFL-2.1 OR GPL-2.0-or-later
 ### `apk` package: `expat`
 
 ```console
-expat-2.4.1-r0 description:
+expat-2.4.3-r0 description:
 XML Parser library written in C
 
-expat-2.4.1-r0 webpage:
+expat-2.4.3-r0 webpage:
 http://www.libexpat.org/
 
-expat-2.4.1-r0 installed size:
-188 KiB
+expat-2.4.3-r0 installed size:
+192 KiB
 
-expat-2.4.1-r0 license:
+expat-2.4.3-r0 license:
 MIT
 
 ```
@@ -639,16 +639,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1l-r7 description:
+libcrypto1.1-1.1.1l-r8 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1l-r7 webpage:
+libcrypto1.1-1.1.1l-r8 webpage:
 https://www.openssl.org/
 
-libcrypto1.1-1.1.1l-r7 installed size:
+libcrypto1.1-1.1.1l-r8 installed size:
 2676 KiB
 
-libcrypto1.1-1.1.1l-r7 license:
+libcrypto1.1-1.1.1l-r8 license:
 OpenSSL
 
 ```
@@ -911,16 +911,16 @@ ISC
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1l-r7 description:
+libssl1.1-1.1.1l-r8 description:
 SSL shared libraries
 
-libssl1.1-1.1.1l-r7 webpage:
+libssl1.1-1.1.1l-r8 webpage:
 https://www.openssl.org/
 
-libssl1.1-1.1.1l-r7 installed size:
+libssl1.1-1.1.1l-r8 installed size:
 528 KiB
 
-libssl1.1-1.1.1l-r7 license:
+libssl1.1-1.1.1l-r8 license:
 OpenSSL
 
 ```
