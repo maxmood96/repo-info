@@ -1,10 +1,10 @@
-# `openjdk:17.0.1-jdk-slim-bullseye`
+# `openjdk:17.0.2-jdk-slim-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f8ad5f24764fc36369cd041643e3234a09604d80d3c1bf8ef241761cce02b3ad`
-- Created: `2021-12-21T23:01:06.775023548Z`
-- Virtual Size: ~ 407.01 Mb  
+- Image ID: `sha256:77c7f521ffe99520fea9634d66ed00439fa0fb63fffd4ed3579c48a716eb3041`
+- Created: `2022-01-19T20:43:57.621781478Z`
+- Virtual Size: ~ 407.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/openjdk-17/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/local/openjdk-17`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=17.0.1`
+  - `JAVA_VERSION=17.0.2`
 
 ## `dpkg` (`.deb`-based packages)
 
