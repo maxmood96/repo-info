@@ -1,7 +1,7 @@
 ## `xwiki:stable-postgres`
 
 ```console
-$ docker pull xwiki@sha256:6375835f6dadac7f2b280f3cef46ba3d2dc33cb2aeef31a16152add9a83a8809
+$ docker pull xwiki@sha256:a398bb924df335e0c28ed1143f8ea03a56deea6e41add4b5fb40d9314bc01d16
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -191,14 +191,14 @@ CMD ["xwiki"]
 ### `xwiki:stable-postgres` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:d5ca201644ccea6283cb2912db90345fcaad2603dda40ac7d9f7a3e89be29cfc
+$ docker pull xwiki@sha256:1513ff4579f14f8b9ce098874b06c29a2442a2e09ff4b9b5967e6a950cba3195
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **820.9 MB (820886421 bytes)**  
+-	Total Size: **820.9 MB (820881180 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8cff65b94ec360661f9b1a22c572c2d0eb1600143c0989215d92860b8c33db70`
+-	Image ID: `sha256:a1f1dfe8709069f29a4b74d74c9b47c078fe3d125c31757523ccea3d4240da45`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -245,55 +245,55 @@ ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
 # Tue, 21 Dec 2021 20:51:37 GMT
 ENV TOMCAT_MAJOR=9
-# Tue, 21 Dec 2021 20:51:38 GMT
-ENV TOMCAT_VERSION=9.0.56
-# Tue, 21 Dec 2021 20:51:39 GMT
-ENV TOMCAT_SHA512=b4c2c85891e84f0fbd8fec889ef0890d68a2bfa53eb31d4d39fcf5758aa483694af7ac27533ea4bc3fc3fdae56f2fa9c018d4acf872574c0ec5e37bb443599ce
-# Tue, 21 Dec 2021 20:52:00 GMT
+# Fri, 21 Jan 2022 02:24:25 GMT
+ENV TOMCAT_VERSION=9.0.58
+# Fri, 21 Jan 2022 02:24:26 GMT
+ENV TOMCAT_SHA512=33c030a312a0a087deeb06fff921d13a23789e152d30620f33a368e7a2244c762fcf9acd55f3b90f08560704ba45bc2be820bccf2058b0cf5801a7b124f9056d
+# Fri, 21 Jan 2022 02:24:46 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		dirmngr 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work; 		catalina.sh version
-# Tue, 21 Dec 2021 20:52:02 GMT
+# Fri, 21 Jan 2022 02:24:48 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Tue, 21 Dec 2021 20:52:03 GMT
+# Fri, 21 Jan 2022 02:24:49 GMT
 EXPOSE 8080
-# Tue, 21 Dec 2021 20:52:04 GMT
+# Fri, 21 Jan 2022 02:24:49 GMT
 CMD ["catalina.sh" "run"]
-# Wed, 22 Dec 2021 04:27:11 GMT
+# Fri, 21 Jan 2022 04:24:00 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Wed, 22 Dec 2021 04:27:11 GMT
+# Fri, 21 Jan 2022 04:24:01 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Wed, 22 Dec 2021 04:27:12 GMT
+# Fri, 21 Jan 2022 04:24:01 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Wed, 22 Dec 2021 04:27:13 GMT
+# Fri, 21 Jan 2022 04:24:02 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Wed, 22 Dec 2021 04:27:14 GMT
+# Fri, 21 Jan 2022 04:24:03 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Wed, 22 Dec 2021 04:27:15 GMT
+# Fri, 21 Jan 2022 04:24:04 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Wed, 22 Dec 2021 04:27:49 GMT
+# Fri, 21 Jan 2022 04:24:36 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps     libpostgresql-jdbc-java &&   rm -rf /var/lib/apt/lists/*
-# Mon, 27 Dec 2021 19:40:54 GMT
+# Fri, 21 Jan 2022 04:24:37 GMT
 ENV XWIKI_VERSION=13.10.2
-# Mon, 27 Dec 2021 19:40:55 GMT
+# Fri, 21 Jan 2022 04:24:38 GMT
 ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/13.10.2
-# Mon, 27 Dec 2021 19:40:56 GMT
+# Fri, 21 Jan 2022 04:24:39 GMT
 ENV XWIKI_DOWNLOAD_SHA256=fc3b0299f5fa903d3fdee2e6af0a69173a8a411a4e027a271772e0666bb6d3aa
-# Mon, 27 Dec 2021 19:42:19 GMT
+# Fri, 21 Jan 2022 04:26:09 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Mon, 27 Dec 2021 19:42:20 GMT
+# Fri, 21 Jan 2022 04:26:11 GMT
 RUN cp /usr/share/java/postgresql-jdbc4.jar /usr/local/tomcat/webapps/ROOT/WEB-INF/lib/
-# Mon, 27 Dec 2021 19:42:22 GMT
+# Fri, 21 Jan 2022 04:26:12 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Mon, 27 Dec 2021 19:42:23 GMT
+# Fri, 21 Jan 2022 04:26:13 GMT
 COPY file:4a923f484bb29a26630c19e1d617d3bf6aa6ae7c6c4a5561e97b037bcde0847c in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Mon, 27 Dec 2021 19:42:24 GMT
+# Fri, 21 Jan 2022 04:26:14 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Mon, 27 Dec 2021 19:42:25 GMT
+# Fri, 21 Jan 2022 04:26:15 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Mon, 27 Dec 2021 19:42:26 GMT
+# Fri, 21 Jan 2022 04:26:16 GMT
 VOLUME [/usr/local/xwiki]
-# Mon, 27 Dec 2021 19:42:27 GMT
+# Fri, 21 Jan 2022 04:26:17 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 27 Dec 2021 19:42:28 GMT
+# Fri, 21 Jan 2022 04:26:18 GMT
 CMD ["xwiki"]
 ```
 
@@ -330,35 +330,35 @@ CMD ["xwiki"]
 		Last Modified: Tue, 21 Dec 2021 21:30:44 GMT  
 		Size: 138.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a9c29e5e7760e2d634594b531a7b31dedeafb0c42d911755a28b24ee19d694ce`  
-		Last Modified: Tue, 21 Dec 2021 21:46:01 GMT  
-		Size: 12.3 MB (12295668 bytes)  
+	-	`sha256:f0dcb5ce8f1a468bcf3dc1e5c95e665eeb30ed7cabaf6740c16667e6096fc107`  
+		Last Modified: Fri, 21 Jan 2022 03:34:26 GMT  
+		Size: 12.3 MB (12289923 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8373be06bc834bf0527604ce145cff49bbf617ae203c84a2180f9b041929989`  
-		Last Modified: Wed, 22 Dec 2021 04:34:09 GMT  
-		Size: 185.2 MB (185203901 bytes)  
+	-	`sha256:534c25d757f2376045a6cc1086f5143d7e55e5c0f428d454a639273f1b6e8c61`  
+		Last Modified: Fri, 21 Jan 2022 04:31:42 GMT  
+		Size: 185.2 MB (185204283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05f42222aeb0e18124a294c54851e661ad8ad068fd8c7d50732a4e5534d5801a`  
-		Last Modified: Mon, 27 Dec 2021 19:43:32 GMT  
-		Size: 292.3 MB (292323735 bytes)  
+	-	`sha256:4dae9dc08f585c242feee549f9883fdc3e3402337b117b98a1fae238934581c6`  
+		Last Modified: Fri, 21 Jan 2022 04:31:39 GMT  
+		Size: 292.3 MB (292323834 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb8a0c94bd990c9979664632d294d2beb2dcfcba5fd3959023440391bc6f2642`  
-		Last Modified: Mon, 27 Dec 2021 19:43:09 GMT  
-		Size: 846.2 KB (846206 bytes)  
+	-	`sha256:8600b67bc89cc12193ad839aa937953a73cda552df1c4eea8f72cc47bdb2307d`  
+		Last Modified: Fri, 21 Jan 2022 04:31:16 GMT  
+		Size: 846.2 KB (846214 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5db77ec7f8b411c9972cf1bc171256ddd9bfbc6b08611e20570effee8b53369d`  
-		Last Modified: Mon, 27 Dec 2021 19:43:09 GMT  
-		Size: 1.3 KB (1340 bytes)  
+	-	`sha256:48b27aff87e2d478b4571f3a8d53376c918b1803985c147f85166b6e2686e22f`  
+		Last Modified: Fri, 21 Jan 2022 04:31:16 GMT  
+		Size: 1.3 KB (1343 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:de1a12775fa7be39e64117f28f4e77747908862dbbb8a68437d15842833f1872`  
-		Last Modified: Mon, 27 Dec 2021 19:43:09 GMT  
-		Size: 2.5 KB (2453 bytes)  
+	-	`sha256:75677dee9824805d88c9e6bb54d4b1875ebfd3f298c8382ad22d78a2f6e7280a`  
+		Last Modified: Fri, 21 Jan 2022 04:31:16 GMT  
+		Size: 2.5 KB (2457 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08557bfcc7d2dd1faf8d4afb2124e23bfdfa98a7e0b0a9bc954de2192db78807`  
-		Last Modified: Mon, 27 Dec 2021 19:43:09 GMT  
-		Size: 5.3 KB (5331 bytes)  
+	-	`sha256:e0c67db6d40e037843496d80fe692f13f1a079d728bd21b7d28f30a4309d9f81`  
+		Last Modified: Fri, 21 Jan 2022 04:31:16 GMT  
+		Size: 5.3 KB (5337 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2dfa5c3c973840fc94f38fa562ac6325c1c45aaed2d2422695d5c6f55db0d166`  
-		Last Modified: Mon, 27 Dec 2021 19:43:09 GMT  
-		Size: 2.5 KB (2502 bytes)  
+	-	`sha256:fe2c1fd02bd80828767f6de73be06abfebd9fd8f0cba3cc3e4c0290cdb2e1d29`  
+		Last Modified: Fri, 21 Jan 2022 04:31:16 GMT  
+		Size: 2.5 KB (2504 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
