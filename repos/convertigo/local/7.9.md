@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:fbb219672b5bb414226e607746e4ad4065882b27987f65306aaab023694dd7e4`
-- Created: `2021-12-22T19:44:02.903160839Z`
-- Virtual Size: ~ 814.86 Mb  
+- Image ID: `sha256:ce85182ea4af136e5cbf7cdb8cb355d92df0fc48b248cf71d456352e1ef66b95`
+- Created: `2022-01-21T03:55:01.489939983Z`
+- Virtual Size: ~ 815.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","--","/docker-entrypoint.sh"]`
@@ -13,14 +13,14 @@
   - `PATH=/usr/local/tomcat/bin:/usr/local/openjdk-17/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/local/openjdk-17`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=17.0.1`
+  - `JAVA_VERSION=17.0.2`
   - `CATALINA_HOME=/usr/local/tomcat`
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.56`
-  - `TOMCAT_SHA512=b4c2c85891e84f0fbd8fec889ef0890d68a2bfa53eb31d4d39fcf5758aa483694af7ac27533ea4bc3fc3fdae56f2fa9c018d4acf872574c0ec5e37bb443599ce`
+  - `TOMCAT_VERSION=9.0.58`
+  - `TOMCAT_SHA512=33c030a312a0a087deeb06fff921d13a23789e152d30620f33a368e7a2244c762fcf9acd55f3b90f08560704ba45bc2be820bccf2058b0cf5801a7b124f9056d`
   - `SWT_GTK3=0`
   - `GOSU_VERSION=1.12`
   - `GOSU_GPG_KEYS=B42F6819007F00F88E364FD4036A9C25BF357DD4`
