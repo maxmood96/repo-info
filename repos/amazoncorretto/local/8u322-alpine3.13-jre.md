@@ -1,33 +1,33 @@
-# `amazoncorretto:17-alpine3.14`
+# `amazoncorretto:8-alpine3.13-jre`
 
 ## Docker Metadata
 
-- Image ID: `sha256:11983e6629417c4b5b001494e742a3065cc7521143db633c86ee9f5ea8ec9abd`
-- Created: `2021-11-12T21:20:32.800735602Z`
-- Virtual Size: ~ 333.09 Mb  
+- Image ID: `sha256:01abd4a2523408f4865276e1e7a0695edeaf11b97bd968e9048807b8c17ba283`
+- Created: `2022-01-19T22:02:35.298199426Z`
+- Virtual Size: ~ 110.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
 - Environment:
-  - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/default-jvm/bin`
+  - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `JAVA_HOME=/usr/lib/jvm/default-jvm`
+  - `JAVA_HOME=/usr/lib/jvm/default-jvm/jre`
 
 ## `apk` (`.apk`-based packages)
 
 ### `apk` package: `alpine-baselayout`
 
 ```console
-alpine-baselayout-3.2.0-r16 description:
+alpine-baselayout-3.2.0-r8 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-3.2.0-r16 webpage:
+alpine-baselayout-3.2.0-r8 webpage:
 https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
-alpine-baselayout-3.2.0-r16 installed size:
-404 KiB
+alpine-baselayout-3.2.0-r8 installed size:
+400 KiB
 
-alpine-baselayout-3.2.0-r16 license:
+alpine-baselayout-3.2.0-r8 license:
 GPL-2.0-only
 
 ```
@@ -49,20 +49,20 @@ MIT
 
 ```
 
-### `apk` package: `amazon-corretto-17`
+### `apk` package: `amazon-corretto-8-jre`
 
 ```console
-amazon-corretto-17-17.0.1.12.1-r0 description:
-Corretto17
+amazon-corretto-8-jre-8.322.06.2-r0 description:
+Amazon Corretto 8 Java Runtime
 
-amazon-corretto-17-17.0.1.12.1-r0 webpage:
-https://github.com/corretto/corretto-jdk
+amazon-corretto-8-jre-8.322.06.2-r0 webpage:
+https://github.com/corretto/corretto-8
 
-amazon-corretto-17-17.0.1.12.1-r0 installed size:
-313 MiB
+amazon-corretto-8-jre-8.322.06.2-r0 installed size:
+99 MiB
 
-amazon-corretto-17-17.0.1.12.1-r0 license:
-https://github.com/corretto/corretto-jdk/blob/develop/LICENSE
+amazon-corretto-8-jre-8.322.06.2-r0 license:
+https://github.com/corretto/corretto-8/blob/develop/LICENSE
 
 ```
 
@@ -86,16 +86,16 @@ GPL-2.0-only
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.33.1-r6 description:
+busybox-1.32.1-r7 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.33.1-r6 webpage:
+busybox-1.32.1-r7 webpage:
 https://busybox.net/
 
-busybox-1.33.1-r6 installed size:
-928 KiB
+busybox-1.32.1-r7 installed size:
+924 KiB
 
-busybox-1.33.1-r6 license:
+busybox-1.32.1-r7 license:
 GPL-2.0-only
 
 ```
@@ -120,17 +120,17 @@ MPL-2.0 AND MIT
 ### `apk` package: `java-common`
 
 ```console
-java-common-0.4-r0 description:
+java-common-0.2-r0 description:
 Java common (updates java links)
 
-java-common-0.4-r0 webpage:
-https://git.alpinelinux.org/aports/
+java-common-0.2-r0 webpage:
+https://git.alpinelinux.org/aports.git
 
-java-common-0.4-r0 installed size:
+java-common-0.2-r0 installed size:
 12 KiB
 
-java-common-0.4-r0 license:
-GPL-2.0-or-later
+java-common-0.2-r0 license:
+GPL-2.0
 
 ```
 
@@ -168,23 +168,6 @@ OpenSSL
 
 ```
 
-### `apk` package: `libretls`
-
-```console
-libretls-3.3.3p1-r2 description:
-port of libtls from libressl to openssl
-
-libretls-3.3.3p1-r2 webpage:
-https://git.causal.agency/libretls/
-
-libretls-3.3.3p1-r2 installed size:
-84 KiB
-
-libretls-3.3.3p1-r2 license:
-ISC AND (BSD-3-Clause OR MIT)
-
-```
-
 ### `apk` package: `libssl1.1`
 
 ```console
@@ -202,19 +185,36 @@ OpenSSL
 
 ```
 
+### `apk` package: `libtls-standalone`
+
+```console
+libtls-standalone-2.9.1-r1 description:
+libtls extricated from libressl sources
+
+libtls-standalone-2.9.1-r1 webpage:
+https://www.libressl.org/
+
+libtls-standalone-2.9.1-r1 installed size:
+108 KiB
+
+libtls-standalone-2.9.1-r1 license:
+ISC
+
+```
+
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.2-r3 description:
+musl-1.2.2-r1 description:
 the musl c library (libc) implementation
 
-musl-1.2.2-r3 webpage:
+musl-1.2.2-r1 webpage:
 https://musl.libc.org/
 
-musl-1.2.2-r3 installed size:
+musl-1.2.2-r1 installed size:
 608 KiB
 
-musl-1.2.2-r3 license:
+musl-1.2.2-r1 license:
 MIT
 
 ```
@@ -222,16 +222,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.2-r3 description:
+musl-utils-1.2.2-r1 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.2-r3 webpage:
+musl-utils-1.2.2-r1 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.2-r3 installed size:
-144 KiB
+musl-utils-1.2.2-r1 installed size:
+140 KiB
 
-musl-utils-1.2.2-r3 license:
+musl-utils-1.2.2-r1 license:
 MIT BSD GPL2+
 
 ```
@@ -239,16 +239,16 @@ MIT BSD GPL2+
 ### `apk` package: `scanelf`
 
 ```console
-scanelf-1.3.2-r0 description:
+scanelf-1.2.8-r0 description:
 Scan ELF binaries for stuff
 
-scanelf-1.3.2-r0 webpage:
+scanelf-1.2.8-r0 webpage:
 https://wiki.gentoo.org/wiki/Hardened/PaX_Utilities
 
-scanelf-1.3.2-r0 installed size:
+scanelf-1.2.8-r0 installed size:
 92 KiB
 
-scanelf-1.3.2-r0 license:
+scanelf-1.2.8-r0 license:
 GPL-2.0-only
 
 ```
@@ -256,16 +256,16 @@ GPL-2.0-only
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.33.1-r6 description:
+ssl_client-1.32.1-r7 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.33.1-r6 webpage:
+ssl_client-1.32.1-r7 webpage:
 https://busybox.net/
 
-ssl_client-1.33.1-r6 installed size:
+ssl_client-1.32.1-r7 installed size:
 28 KiB
 
-ssl_client-1.33.1-r6 license:
+ssl_client-1.32.1-r7 license:
 GPL-2.0-only
 
 ```
