@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7ec44b6ece60c08e0a59ae846e2fea8cf254407cd5a9fbff85a10751d729cd9a`
-- Created: `2022-01-10T21:39:01.864307322Z`
+- Image ID: `sha256:e339d3503f7f9e6bba4ff7fabc3fcb03f61105904da0621d7d1cd3d0cfd21d80`
+- Created: `2022-01-26T09:06:12.872110381Z`
 - Virtual Size: ~ 1.47 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -3438,11 +3438,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/lsb/11.1.0/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/lsb/11.1.0/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `lxml=4.6.3+dfsg-0.1`
+### `dpkg` source package: `lxml=4.6.3+dfsg-0.1+deb11u1`
 
 Binary Packages:
 
-- `python3-lxml:amd64=4.6.3+dfsg-0.1`
+- `python3-lxml:amd64=4.6.3+dfsg-0.1+deb11u1`
 
 Licenses: (parsed from: `/usr/share/doc/python3-lxml/copyright`)
 
@@ -3453,17 +3453,17 @@ Licenses: (parsed from: `/usr/share/doc/python3-lxml/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris lxml=4.6.3+dfsg-0.1
-'http://deb.debian.org/debian/pool/main/l/lxml/lxml_4.6.3+dfsg-0.1.dsc' lxml_4.6.3+dfsg-0.1.dsc 1839 SHA256:9fc2b8c9f6f360d170572c85b03e14e341e6350c3e1cb9225db3cda6a93be551
-'http://deb.debian.org/debian/pool/main/l/lxml/lxml_4.6.3+dfsg.orig.tar.gz' lxml_4.6.3+dfsg.orig.tar.gz 940222 SHA256:aa386ddf45ccc40975f33d29e285b6656273254ed797dd87d6283090f5d62036
-'http://deb.debian.org/debian/pool/main/l/lxml/lxml_4.6.3+dfsg-0.1.debian.tar.xz' lxml_4.6.3+dfsg-0.1.debian.tar.xz 7692 SHA256:b2d0c2b73e8749ace7519111a1ec9c82788293facb7ed79bb5b64ada4f6fd52e
+$ apt-get source -qq --print-uris lxml=4.6.3+dfsg-0.1+deb11u1
+'http://security.debian.org/debian-security/pool/updates/main/l/lxml/lxml_4.6.3+dfsg-0.1+deb11u1.dsc' lxml_4.6.3+dfsg-0.1+deb11u1.dsc 2254 SHA256:0d6d208b52a784c0c3a3dc7def582780ecd9cd1675bb586551336717727c3202
+'http://security.debian.org/debian-security/pool/updates/main/l/lxml/lxml_4.6.3+dfsg.orig.tar.gz' lxml_4.6.3+dfsg.orig.tar.gz 940222 SHA256:aa386ddf45ccc40975f33d29e285b6656273254ed797dd87d6283090f5d62036
+'http://security.debian.org/debian-security/pool/updates/main/l/lxml/lxml_4.6.3+dfsg-0.1+deb11u1.debian.tar.xz' lxml_4.6.3+dfsg-0.1+deb11u1.debian.tar.xz 9684 SHA256:ee470d49936d6e5079df87d098ba82d9a99dab2f74e3db0f480c874d12952e3d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/lxml/4.6.3+dfsg-0.1/ (for browsing the source)
-- https://sources.debian.net/src/lxml/4.6.3+dfsg-0.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lxml/4.6.3+dfsg-0.1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/lxml/4.6.3+dfsg-0.1+deb11u1/ (for browsing the source)
+- https://sources.debian.net/src/lxml/4.6.3+dfsg-0.1+deb11u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/lxml/4.6.3+dfsg-0.1+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.9.3-2`
 
@@ -8340,11 +8340,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `pillow=8.1.2+dfsg-0.3`
+### `dpkg` source package: `pillow=8.1.2+dfsg-0.3+deb11u1`
 
 Binary Packages:
 
-- `python3-pil:amd64=8.1.2+dfsg-0.3`
+- `python3-pil:amd64=8.1.2+dfsg-0.3+deb11u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8353,17 +8353,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris pillow=8.1.2+dfsg-0.3
-'http://deb.debian.org/debian/pool/main/p/pillow/pillow_8.1.2+dfsg-0.3.dsc' pillow_8.1.2+dfsg-0.3.dsc 2440 SHA256:eef001db37bb4aa3dfe3ac94cd0b7eeca99adcfd6034ff48da45b42ecebeeeda
-'http://deb.debian.org/debian/pool/main/p/pillow/pillow_8.1.2+dfsg.orig.tar.xz' pillow_8.1.2+dfsg.orig.tar.xz 37523796 SHA256:7fb9b5e9306bfc30990322314cd92b6befd8e6ab9af6ef5bbccca18f938e4e49
-'http://deb.debian.org/debian/pool/main/p/pillow/pillow_8.1.2+dfsg-0.3.debian.tar.xz' pillow_8.1.2+dfsg-0.3.debian.tar.xz 21972 SHA256:685245e185a47f3c2bdd77419ae486110fbb8698641437c8e630b25a44c4a1af
+$ apt-get source -qq --print-uris pillow=8.1.2+dfsg-0.3+deb11u1
+'http://security.debian.org/debian-security/pool/updates/main/p/pillow/pillow_8.1.2+dfsg-0.3+deb11u1.dsc' pillow_8.1.2+dfsg-0.3+deb11u1.dsc 2472 SHA256:24a70c1cec8dbd72be7e56a78577d4861bb07bb63e1866d20e0257cc33749bfb
+'http://security.debian.org/debian-security/pool/updates/main/p/pillow/pillow_8.1.2+dfsg.orig.tar.xz' pillow_8.1.2+dfsg.orig.tar.xz 37523796 SHA256:7fb9b5e9306bfc30990322314cd92b6befd8e6ab9af6ef5bbccca18f938e4e49
+'http://security.debian.org/debian-security/pool/updates/main/p/pillow/pillow_8.1.2+dfsg-0.3+deb11u1.debian.tar.xz' pillow_8.1.2+dfsg-0.3+deb11u1.debian.tar.xz 22708 SHA256:c33ebda9521eb740f7c8a82ff2d5a23171284ec49d52e2b3e5e1638576a43033
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/pillow/8.1.2+dfsg-0.3/ (for browsing the source)
-- https://sources.debian.net/src/pillow/8.1.2+dfsg-0.3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pillow/8.1.2+dfsg-0.3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/pillow/8.1.2+dfsg-0.3+deb11u1/ (for browsing the source)
+- https://sources.debian.net/src/pillow/8.1.2+dfsg-0.3+deb11u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/pillow/8.1.2+dfsg-0.3+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pinentry=1.1.0-4`
 
@@ -10385,17 +10385,17 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/unidecode/1.2.0-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/unidecode/1.2.0-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `util-linux=2.36.1-8`
+### `dpkg` source package: `util-linux=2.36.1-8+deb11u1`
 
 Binary Packages:
 
-- `bsdutils=1:2.36.1-8`
-- `libblkid1:amd64=2.36.1-8`
-- `libmount1:amd64=2.36.1-8`
-- `libsmartcols1:amd64=2.36.1-8`
-- `libuuid1:amd64=2.36.1-8`
-- `mount=2.36.1-8`
-- `util-linux=2.36.1-8`
+- `bsdutils=1:2.36.1-8+deb11u1`
+- `libblkid1:amd64=2.36.1-8+deb11u1`
+- `libmount1:amd64=2.36.1-8+deb11u1`
+- `libsmartcols1:amd64=2.36.1-8+deb11u1`
+- `libuuid1:amd64=2.36.1-8+deb11u1`
+- `mount=2.36.1-8+deb11u1`
+- `util-linux=2.36.1-8+deb11u1`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
@@ -10419,17 +10419,17 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris util-linux=2.36.1-8
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.36.1-8.dsc' util-linux_2.36.1-8.dsc 4271 SHA256:ce431fba2d6d1ac8e46f12cd94fe124e666693c92bcf96783beb0dfafe34dc58
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.36.1.orig.tar.xz' util-linux_2.36.1.orig.tar.xz 5231880 SHA256:09fac242172cd8ec27f0739d8d192402c69417617091d8c6e974841568f37eed
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.36.1-8.debian.tar.xz' util-linux_2.36.1-8.debian.tar.xz 98400 SHA256:876304edc7d9cbfacb5615f6205539d8b18fb254c5143243f9c7850cc58b3243
+$ apt-get source -qq --print-uris util-linux=2.36.1-8+deb11u1
+'http://security.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.36.1-8+deb11u1.dsc' util-linux_2.36.1-8+deb11u1.dsc 4461 SHA256:1f42a8e46c383b6fbfb57ea89dfe5adb5b7e6960bc5e8cdb9589109773be6cac
+'http://security.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.36.1.orig.tar.xz' util-linux_2.36.1.orig.tar.xz 5231880 SHA256:09fac242172cd8ec27f0739d8d192402c69417617091d8c6e974841568f37eed
+'http://security.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.36.1-8+deb11u1.debian.tar.xz' util-linux_2.36.1-8+deb11u1.debian.tar.xz 101448 SHA256:edda1d46e25a40e730c672aac2cd0e44f9eeb0fb64b27be957d6924ed5288a0a
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/util-linux/2.36.1-8/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.36.1-8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.36.1-8/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/util-linux/2.36.1-8+deb11u1/ (for browsing the source)
+- https://sources.debian.net/src/util-linux/2.36.1-8+deb11u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/util-linux/2.36.1-8+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wheel=0.34.2-1`
 
