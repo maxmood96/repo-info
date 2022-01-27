@@ -1,7 +1,7 @@
 ## `monica:fpm-alpine`
 
 ```console
-$ docker pull monica@sha256:88779dc277cf68f3997d297cd7ba65a25ec2908de342445bc3b0453d45b47d49
+$ docker pull monica@sha256:12bc4677d8f0eb67b489614b570afcbe92082a71b4b3fca1d9f36533db2d5f9c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -653,14 +653,14 @@ CMD ["php-fpm"]
 ### `monica:fpm-alpine` - linux; 386
 
 ```console
-$ docker pull monica@sha256:51404d80104453f5a86652d74e1bcfe16fc47f0308ba251a524628bcbe945e0f
+$ docker pull monica@sha256:4319566de5204a69dee36a244a42e7a4f89efaf3d549dd680af7e770d5e48dde
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **88.2 MB (88218615 bytes)**  
+-	Total Size: **88.2 MB (88213162 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fa4a9cb722506fc77f75b5005825ac2341a0b79ff3898b4c04db2c01432f2122`
+-	Image ID: `sha256:ded481447f7ed92f0760cf2d0f5b07199b241735b923b4a3891b7da3680f4d2b`
 -	Entrypoint: `["\/usr\/local\/bin\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -719,27 +719,27 @@ CMD ["php-fpm"]
 LABEL org.opencontainers.image.authors=Alexis Saettler <alexis@saettler.org> org.opencontainers.image.title=MonicaHQ, the Personal Relationship Manager org.opencontainers.image.description=This is MonicaHQ, your personal memory! MonicaHQ is like a CRM but for the friends, family, and acquaintances around you. org.opencontainers.image.url=https://monicahq.com org.opencontainers.image.source=https://github.com/monicahq/docker org.opencontainers.image.vendor=Monica
 # Thu, 20 Jan 2022 23:00:57 GMT
 RUN set -ex;         apk add --no-cache         bash         coreutils
-# Thu, 20 Jan 2022 23:05:01 GMT
-RUN set -ex;         apk add --no-cache --virtual .build-deps         $PHPIZE_DEPS         icu-dev         zlib-dev         libzip-dev         libxml2-dev         freetype-dev         libpng-dev         libjpeg-turbo-dev         jpeg-dev         gmp-dev         libmemcached-dev         libwebp-dev     ;         docker-php-ext-configure intl;     docker-php-ext-configure gd --with-jpeg --with-freetype --with-webp;     docker-php-ext-configure gmp;     docker-php-ext-install -j "$(nproc)"         intl         zip         bcmath         gd         gmp         pdo_mysql         mysqli         soap     ;     pecl install APCu-5.1.21;     pecl install memcached-3.1.5;     pecl install redis-5.3.5;         docker-php-ext-enable         apcu         memcached         redis     ;         runDeps="$(         scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions         | tr ',' '\n'         | sort -u         | awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }'         )";     apk add --no-network --virtual .monica-phpext-rundeps $runDeps;     apk del --no-network .build-deps
-# Thu, 20 Jan 2022 23:05:02 GMT
+# Thu, 27 Jan 2022 09:09:58 GMT
+RUN set -ex;         apk add --no-cache --virtual .build-deps         $PHPIZE_DEPS         icu-dev         zlib-dev         libzip-dev         libxml2-dev         freetype-dev         libpng-dev         libjpeg-turbo-dev         jpeg-dev         gmp-dev         libmemcached-dev         libwebp-dev     ;         docker-php-ext-configure intl;     docker-php-ext-configure gd --with-jpeg --with-freetype --with-webp;     docker-php-ext-configure gmp;     docker-php-ext-install -j "$(nproc)"         intl         zip         bcmath         gd         gmp         pdo_mysql         mysqli         soap     ;     pecl install APCu-5.1.21;     pecl install memcached-3.1.5;     pecl install redis-5.3.6;         docker-php-ext-enable         apcu         memcached         redis     ;         runDeps="$(         scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions         | tr ',' '\n'         | sort -u         | awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }'         )";     apk add --no-network --virtual .monica-phpext-rundeps $runDeps;     apk del --no-network .build-deps
+# Thu, 27 Jan 2022 09:10:00 GMT
 RUN set -ex;         mkdir -p /var/spool/cron/crontabs;     rm -f /var/spool/cron/crontabs/root;     echo '*/5 * * * * php /var/www/html/artisan schedule:run -v' > /var/spool/cron/crontabs/www-data
-# Thu, 20 Jan 2022 23:05:02 GMT
+# Thu, 27 Jan 2022 09:10:01 GMT
 ENV PHP_OPCACHE_VALIDATE_TIMESTAMPS=0 PHP_OPCACHE_MAX_ACCELERATED_FILES=20000 PHP_OPCACHE_MEMORY_CONSUMPTION=192 PHP_OPCACHE_MAX_WASTED_PERCENTAGE=10
-# Thu, 20 Jan 2022 23:05:04 GMT
+# Thu, 27 Jan 2022 09:10:03 GMT
 RUN set -ex;         docker-php-ext-enable opcache;     {         echo '[opcache]';         echo 'opcache.enable=1';         echo 'opcache.revalidate_freq=0';         echo 'opcache.validate_timestamps=${PHP_OPCACHE_VALIDATE_TIMESTAMPS}';         echo 'opcache.max_accelerated_files=${PHP_OPCACHE_MAX_ACCELERATED_FILES}';         echo 'opcache.memory_consumption=${PHP_OPCACHE_MEMORY_CONSUMPTION}';         echo 'opcache.max_wasted_percentage=${PHP_OPCACHE_MAX_WASTED_PERCENTAGE}';         echo 'opcache.interned_strings_buffer=16';         echo 'opcache.fast_shutdown=1';     } > $PHP_INI_DIR/conf.d/opcache-recommended.ini;         echo 'apc.enable_cli=1' >> $PHP_INI_DIR/conf.d/docker-php-ext-apcu.ini;         echo 'memory_limit=512M' > $PHP_INI_DIR/conf.d/memory-limit.ini
-# Thu, 20 Jan 2022 23:05:04 GMT
+# Thu, 27 Jan 2022 09:10:04 GMT
 WORKDIR /var/www/html
-# Thu, 20 Jan 2022 23:05:05 GMT
+# Thu, 27 Jan 2022 09:10:04 GMT
 ENV MONICA_VERSION=v3.6.1
-# Thu, 20 Jan 2022 23:05:05 GMT
+# Thu, 27 Jan 2022 09:10:05 GMT
 LABEL org.opencontainers.image.revision=832b425502ad9d6059cabb9a70dd5351eb47fa81 org.opencontainers.image.version=v3.6.1
-# Thu, 20 Jan 2022 23:05:30 GMT
+# Thu, 27 Jan 2022 09:10:42 GMT
 RUN set -ex;     apk add --no-cache --virtual .fetch-deps         bzip2         gnupg     ;         for ext in tar.bz2 tar.bz2.asc; do         curl -fsSL -o monica-${MONICA_VERSION}.$ext "https://github.com/monicahq/monica/releases/download/${MONICA_VERSION}/monica-${MONICA_VERSION}.$ext";     done;         GPGKEY='BDAB0D0D36A00466A2964E85DE15667131EA6018';     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPGKEY";     gpg --batch --verify monica-${MONICA_VERSION}.tar.bz2.asc monica-${MONICA_VERSION}.tar.bz2;         tar -xf monica-${MONICA_VERSION}.tar.bz2 -C /var/www/html --strip-components=1;         gpgconf --kill all;     rm -rf "$GNUPGHOME" monica-${MONICA_VERSION}.tar.bz2 monica-${MONICA_VERSION}.tar.bz2.asc;         cp /var/www/html/.env.example /var/www/html/.env;     chown -R www-data:www-data /var/www/html;         apk del .fetch-deps
-# Thu, 20 Jan 2022 23:05:33 GMT
-COPY multi:db85cc466652e8a1547bec301703113d0c5e1898f8a33b3a492b57c0c4baf908 in /usr/local/bin/ 
-# Thu, 20 Jan 2022 23:05:33 GMT
+# Thu, 27 Jan 2022 09:10:45 GMT
+COPY multi:72e8bce953fdf60df31c4a1bb50faa001efd8f7eaaf696121cf35f8ea9080af7 in /usr/local/bin/ 
+# Thu, 27 Jan 2022 09:10:46 GMT
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
-# Thu, 20 Jan 2022 23:05:34 GMT
+# Thu, 27 Jan 2022 09:10:46 GMT
 CMD ["php-fpm"]
 ```
 
@@ -788,25 +788,25 @@ CMD ["php-fpm"]
 		Last Modified: Thu, 20 Jan 2022 23:10:25 GMT  
 		Size: 1.2 MB (1242156 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:82500191f8349c9f549ac16a27070a50543320191333ceec5f65eeb6e7832487`  
-		Last Modified: Thu, 20 Jan 2022 23:10:26 GMT  
-		Size: 19.6 MB (19602961 bytes)  
+	-	`sha256:91628ebd1624f892e9c3c86b8c31fc4033dd65bcffd040350834d7525f9bcdb8`  
+		Last Modified: Thu, 27 Jan 2022 09:19:31 GMT  
+		Size: 19.6 MB (19597493 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42b2c6c31288d62c7befdb660d8d6d558194ca98b397d6caa289990412905574`  
-		Last Modified: Thu, 20 Jan 2022 23:10:21 GMT  
+	-	`sha256:354d96b0991de03b2ecb8a299755447360f5976f2faa0cb7e8e750a09b7d412a`  
+		Last Modified: Thu, 27 Jan 2022 09:19:22 GMT  
 		Size: 224.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:563c9ab8899b8bc5afe6771f7215a21a8c4737730928c9554e5b1cb8face43a3`  
-		Last Modified: Thu, 20 Jan 2022 23:10:21 GMT  
-		Size: 26.3 KB (26282 bytes)  
+	-	`sha256:382eff3632a498d80bd1f67dd928039efefbe5ca6a8b2e779417cb1bce909290`  
+		Last Modified: Thu, 27 Jan 2022 09:19:22 GMT  
+		Size: 26.3 KB (26284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae355a82d1480304ffb17c5204b339ffde8d3234dccb8b68a1cfa41dc6b52ba6`  
-		Last Modified: Thu, 20 Jan 2022 23:10:35 GMT  
-		Size: 35.0 MB (35013146 bytes)  
+	-	`sha256:27ab3eb5a88b5712f94e756a93ea93ebc83f3493e4d9908b1a140d2a0ac56534`  
+		Last Modified: Thu, 27 Jan 2022 09:19:46 GMT  
+		Size: 35.0 MB (35013144 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f0a51741616cecdff55de6def7ed8c9e213d48a4ae61749d568d83425aa98586`  
-		Last Modified: Thu, 20 Jan 2022 23:10:21 GMT  
-		Size: 2.0 KB (2009 bytes)  
+	-	`sha256:dc9e795d583163de3abdc69480913c24b81f9cf285e5783b22e164266df15868`  
+		Last Modified: Thu, 27 Jan 2022 09:19:22 GMT  
+		Size: 2.0 KB (2024 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `monica:fpm-alpine` - linux; ppc64le
