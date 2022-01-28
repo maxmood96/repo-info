@@ -323,14 +323,9 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.37.50.20220106-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.37.50.20220106-2ubuntu1.dsc' binutils_2.37.50.20220106-2ubuntu1.dsc 8883 SHA512:b076def8ee57eaae93c64505b186894c1cc937e4e9bd745b566467980ddeb370cdb9e73c210c6bde4f5cf8e848acb168bc968f2bd77e12776d9bb63fef6da043
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.37.50.20220106.orig.tar.xz' binutils_2.37.50.20220106.orig.tar.xz 22515028 SHA512:b3b546c6fc1b23622720069a7ec301c06be9feb833404d2dda79ca06d179711c7e667420b87255127c3d91445cb775f58c11035783d1bb02356f92169554bdcc
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.37.50.20220106-2ubuntu1.debian.tar.xz' binutils_2.37.50.20220106-2ubuntu1.debian.tar.xz 191064 SHA512:00760a12496b9b1510c4bf5b7cee5c937f0fced232e2c341703389f4867b2753ccff773e9b84a0146239b82a31c36bc00ea39bd4c1b53fa8eeb3acb0feef1134
-```
 
 ### `dpkg` source package: `brotli=1.0.9-2build4`
 
@@ -2957,14 +2952,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.15.0-17.17
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-17.17.dsc' linux_5.15.0-17.17.dsc 7529 SHA512:71007c9dd30315900489a8a9a3821ef48c7a1443c38105519a60bef02ceec7f2e3d009f3c4db414d5c8c0c08af40e6236fbefc325cc4746562af2dec53a9bbcd
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-17.17.diff.gz' linux_5.15.0-17.17.diff.gz 4935512 SHA512:710ce2716201bea6b8a64a4a20a64fe53ef2171c9746fa4e87abf6f7e6602b8c52b709f07ccffe8cdfa983a5c57a6727ef0743055234ace96d2fedae2ee7ebc9
-```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu3`
 
@@ -3454,14 +3444,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.5.6+dfsg-1~exp1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.6+dfsg-1~exp1ubuntu1.dsc' openldap_2.5.6+dfsg-1~exp1ubuntu1.dsc 3271 SHA512:716911cf25db3768f630de553c6fcf6a433aa9e936ba21cc32234754373dfafd7428c869035e81149434ce050e07db51d9351b86ec2555ee1d524b2818139424
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.6+dfsg.orig.tar.gz' openldap_2.5.6+dfsg.orig.tar.gz 5570324 SHA512:f2b3c9abe53176360847563e4864eab63434671653d74b07a9ce69ff75771716d0deca58d66291c6e582f576ce6daf4588261105e307b23df0d6cdf3254d33f9
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.6+dfsg-1~exp1ubuntu1.debian.tar.xz' openldap_2.5.6+dfsg-1~exp1ubuntu1.debian.tar.xz 170828 SHA512:c5943df92305cf4f0a39c80fc48689c4eb5604399ffa636987f60e7f69788e6acb8752e51acc7a04fd9333a0b117c57849db4c52669d7c62c03f93bcbeaf9817
-```
 
 ### `dpkg` source package: `openssh=1:8.7p1-4`
 
@@ -4190,15 +4175,9 @@ Licenses: (parsed from: `/usr/share/doc/sysvinit-utils/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sysvinit=2.96-7ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sysvinit/sysvinit_2.96-7ubuntu2.dsc' sysvinit_2.96-7ubuntu2.dsc 2718 SHA512:6543be6337ed7fdca82f62ec790c8ba7a3936cbe798975a0a38f7d7dad8132e30b3bec6688a3da3e1efb634030996cec48770dfa717178064d2558953d9424de
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sysvinit/sysvinit_2.96.orig.tar.xz' sysvinit_2.96.orig.tar.xz 122164 SHA512:1388398568ebfe53460796f8ab75a3ead6111612888ea36e8f1c0db4d41ef6f45fc217abb7804519ff1143a78d97c95b24e42c8c22c95a47b9436484bfb6f45d
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sysvinit/sysvinit_2.96.orig.tar.xz.asc' sysvinit_2.96.orig.tar.xz.asc 313 SHA512:2b3798e8fc8531cd1a2b2a523159b7f064bfadd8815b930fb70d5a1380775f1b5bac5627d5cd9d95b03ff3737d8d6b2f357c6bc21ac2e21ee089b67f98b4eb6a
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sysvinit/sysvinit_2.96-7ubuntu2.debian.tar.xz' sysvinit_2.96-7ubuntu2.debian.tar.xz 129696 SHA512:6f81ac49fba5e42d77e80cda39263c5b02537f801ae4c784ac1b4e2c8ff9ec523b2465d5cfcf84e00d36098d71ab4a58fd23c608701ef1aa2d4ba1742809f7be
-```
 
 ### `dpkg` source package: `tar=1.34+dfsg-1build2`
 
@@ -4232,15 +4211,13 @@ Licenses: (parsed from: `/usr/share/doc/libtiff-dev/copyright`, `/usr/share/doc/
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.3.0-2
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0-2.dsc' tiff_4.3.0-2.dsc 2429 SHA512:6f4554979fe3a2bf1a871d2de81ea006a05a3bf2bfbaee76481dca501d42e9ea14c97987bafdbff853b6ab1bb6a68560aee2024b1a47c3da05a81c8235b79704
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0.orig.tar.gz' tiff_4.3.0.orig.tar.gz 2808254 SHA512:e04a4a6c542e58a174c1e9516af3908acf1d3d3e1096648c5514f4963f73e7af27387a76b0fbabe43cf867a18874088f963796a7cd6e45deb998692e3e235493
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0.orig.tar.gz.asc' tiff_4.3.0.orig.tar.gz.asc 488 SHA512:115a4c5714b52d0fbea800c494d83c8a96b70b2c9ce84a8df03205d9afc517faa17963f5f9508c013d7d3e2be6675b84b594a771a829406473234c4bd85e469e
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0-2.debian.tar.xz' tiff_4.3.0-2.debian.tar.xz 19596 SHA512:cb1417ca9d9fe35537bd8067e348e196efbadcdd1439f9f365e9a62d330a0e4f1b8e87c3c9dc4644d9da6ef5f62a4a0cca7f0eb99f305e9a7bd137565878d42f
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/tiff/4.3.0-2/
+
 
 ### `dpkg` source package: `tzdata=2021e-1ubuntu1`
 

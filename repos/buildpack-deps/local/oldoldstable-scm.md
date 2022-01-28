@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2a04ee51ca350a8c82804e8e8a6269ea97c0d565ce4d9b4f4303ab48954b94e2`
-- Created: `2021-12-21T01:56:55.605304249Z`
+- Image ID: `sha256:560f16a854cc144196c5a9b8658bb0d3f8f8bcfbbca3b7615d1a64832843c82c`
+- Created: `2022-01-26T02:17:21.479618928Z`
 - Virtual Size: ~ 273.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -88,11 +88,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/apr-util/1.5.4-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/apr-util/1.5.4-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `apr=1.5.2-5`
+### `dpkg` source package: `apr=1.5.2-5+deb9u1`
 
 Binary Packages:
 
-- `libapr1:amd64=1.5.2-5`
+- `libapr1:amd64=1.5.2-5+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/libapr1/copyright`)
 
@@ -101,17 +101,17 @@ Licenses: (parsed from: `/usr/share/doc/libapr1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apr=1.5.2-5
-'http://deb.debian.org/debian/pool/main/a/apr/apr_1.5.2-5.dsc' apr_1.5.2-5.dsc 2115 SHA256:b58bb3209c8a28bff47666de6a9bf32292303fdc2433c9fafb15f2a9e6c16ca6
-'http://deb.debian.org/debian/pool/main/a/apr/apr_1.5.2.orig.tar.bz2' apr_1.5.2.orig.tar.bz2 826885 SHA256:7d03ed29c22a7152be45b8e50431063736df9e1daa1ddf93f6a547ba7a28f67a
-'http://deb.debian.org/debian/pool/main/a/apr/apr_1.5.2-5.debian.tar.xz' apr_1.5.2-5.debian.tar.xz 212856 SHA256:5b253cd3acc284241c3cb4a84d9d16f9c5c7775c8f7a26b3a0068ff174bacf76
+$ apt-get source -qq --print-uris apr=1.5.2-5+deb9u1
+'http://security.debian.org/debian-security/pool/updates/main/a/apr/apr_1.5.2-5+deb9u1.dsc' apr_1.5.2-5+deb9u1.dsc 2302 SHA256:4c93f1f7f250174a493001ca9052f06800878675403117e0fb3e13421dcce560
+'http://security.debian.org/debian-security/pool/updates/main/a/apr/apr_1.5.2.orig.tar.bz2' apr_1.5.2.orig.tar.bz2 826885 SHA256:7d03ed29c22a7152be45b8e50431063736df9e1daa1ddf93f6a547ba7a28f67a
+'http://security.debian.org/debian-security/pool/updates/main/a/apr/apr_1.5.2-5+deb9u1.debian.tar.xz' apr_1.5.2-5+deb9u1.debian.tar.xz 213632 SHA256:b4898f802315b4d0ba693c07be0d56cde8545153c3dc4e982503b8471ff0dea0
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/apr/1.5.2-5/ (for browsing the source)
-- https://sources.debian.net/src/apr/1.5.2-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apr/1.5.2-5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/apr/1.5.2-5+deb9u1/ (for browsing the source)
+- https://sources.debian.net/src/apr/1.5.2-5+deb9u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/apr/1.5.2-5+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apt=1.4.11`
 
