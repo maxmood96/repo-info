@@ -1,18 +1,18 @@
-# `nginx:1.21.5-alpine`
+# `nginx:1.21.6-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:cc44224bfe208a46fbc45471e8f9416f66b75d6307573e29634e7f42e27a9268`
-- Created: `2021-12-29T19:29:13.874392808Z`
-- Virtual Size: ~ 23.44 Mb  
+- Image ID: `sha256:bef258acf10dc257d641c47c3a600c92f87be4b4ce4a5e4752b3eade7533dcd9`
+- Created: `2022-01-25T20:39:11.21594189Z`
+- Virtual Size: ~ 23.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.21.5`
-  - `NJS_VERSION=0.7.1`
+  - `NGINX_VERSION=1.21.6`
+  - `NJS_VERSION=0.7.2`
   - `PKG_RELEASE=1`
 - Labels:
   - `maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>`
@@ -107,16 +107,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20191127-r7 description:
+ca-certificates-20211220-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20191127-r7 webpage:
+ca-certificates-20211220-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20191127-r7 installed size:
-676 KiB
+ca-certificates-20211220-r0 installed size:
+656 KiB
 
-ca-certificates-20191127-r7 license:
+ca-certificates-20211220-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -413,16 +413,16 @@ OpenSSL
 ### `apk` package: `libwebp`
 
 ```console
-libwebp-1.2.1-r0 description:
+libwebp-1.2.2-r0 description:
 Libraries for working with WebP images
 
-libwebp-1.2.1-r0 webpage:
+libwebp-1.2.2-r0 webpage:
 https://developers.google.com/speed/webp
 
-libwebp-1.2.1-r0 installed size:
+libwebp-1.2.2-r0 installed size:
 580 KiB
 
-libwebp-1.2.1-r0 license:
+libwebp-1.2.2-r0 license:
 BSD-3-Clause
 
 ```
@@ -549,16 +549,16 @@ MIT
 ### `apk` package: `nginx`
 
 ```console
-nginx-1.21.5-r1 description:
+nginx-1.21.6-r1 description:
 High performance web server
 
-nginx-1.21.5-r1 webpage:
+nginx-1.21.6-r1 webpage:
 https://nginx.org/
 
-nginx-1.21.5-r1 installed size:
+nginx-1.21.6-r1 installed size:
 2584 KiB
 
-nginx-1.21.5-r1 license:
+nginx-1.21.6-r1 license:
 2-clause BSD-like license
 
 ```
@@ -566,16 +566,16 @@ nginx-1.21.5-r1 license:
 ### `apk` package: `nginx-module-geoip`
 
 ```console
-nginx-module-geoip-1.21.5-r1 description:
+nginx-module-geoip-1.21.6-r1 description:
 nginx GeoIP dynamic modules
 
-nginx-module-geoip-1.21.5-r1 webpage:
+nginx-module-geoip-1.21.6-r1 webpage:
 https://nginx.org/
 
-nginx-module-geoip-1.21.5-r1 installed size:
+nginx-module-geoip-1.21.6-r1 installed size:
 116 KiB
 
-nginx-module-geoip-1.21.5-r1 license:
+nginx-module-geoip-1.21.6-r1 license:
 2-clause BSD-like license
 
 ```
@@ -583,16 +583,16 @@ nginx-module-geoip-1.21.5-r1 license:
 ### `apk` package: `nginx-module-image-filter`
 
 ```console
-nginx-module-image-filter-1.21.5-r1 description:
+nginx-module-image-filter-1.21.6-r1 description:
 nginx image filter dynamic module
 
-nginx-module-image-filter-1.21.5-r1 webpage:
+nginx-module-image-filter-1.21.6-r1 webpage:
 https://nginx.org/
 
-nginx-module-image-filter-1.21.5-r1 installed size:
+nginx-module-image-filter-1.21.6-r1 installed size:
 88 KiB
 
-nginx-module-image-filter-1.21.5-r1 license:
+nginx-module-image-filter-1.21.6-r1 license:
 2-clause BSD-like license
 
 ```
@@ -600,16 +600,16 @@ nginx-module-image-filter-1.21.5-r1 license:
 ### `apk` package: `nginx-module-njs`
 
 ```console
-nginx-module-njs-1.21.5.0.7.1-r1 description:
+nginx-module-njs-1.21.6.0.7.2-r1 description:
 nginx njs dynamic modules
 
-nginx-module-njs-1.21.5.0.7.1-r1 webpage:
+nginx-module-njs-1.21.6.0.7.2-r1 webpage:
 https://nginx.org/
 
-nginx-module-njs-1.21.5.0.7.1-r1 installed size:
+nginx-module-njs-1.21.6.0.7.2-r1 installed size:
 3804 KiB
 
-nginx-module-njs-1.21.5.0.7.1-r1 license:
+nginx-module-njs-1.21.6.0.7.2-r1 license:
 2-clause BSD-like license
 
 ```
@@ -617,16 +617,16 @@ nginx-module-njs-1.21.5.0.7.1-r1 license:
 ### `apk` package: `nginx-module-xslt`
 
 ```console
-nginx-module-xslt-1.21.5-r1 description:
+nginx-module-xslt-1.21.6-r1 description:
 nginx xslt dynamic module
 
-nginx-module-xslt-1.21.5-r1 webpage:
+nginx-module-xslt-1.21.6-r1 webpage:
 https://nginx.org/
 
-nginx-module-xslt-1.21.5-r1 installed size:
+nginx-module-xslt-1.21.6-r1 installed size:
 84 KiB
 
-nginx-module-xslt-1.21.5-r1 license:
+nginx-module-xslt-1.21.6-r1 license:
 2-clause BSD-like license
 
 ```

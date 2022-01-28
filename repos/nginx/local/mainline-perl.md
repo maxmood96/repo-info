@@ -1,18 +1,18 @@
-# `nginx:1.21.5-perl`
+# `nginx:1.21.6-perl`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f99016d974635900fc301271ea1e8260c7ac4053e3e2646f0c226eb548a09a05`
-- Created: `2021-12-29T19:28:57.929110269Z`
-- Virtual Size: ~ 187.56 Mb  
+- Image ID: `sha256:b7cec1e2b53f384a070be969619ce6cd9f11e173ecbf74552b9730f1b1ad31ac`
+- Created: `2022-01-26T08:59:12.878085055Z`
+- Virtual Size: ~ 187.58 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.21.5`
-  - `NJS_VERSION=0.7.1`
+  - `NGINX_VERSION=1.21.6`
+  - `NJS_VERSION=0.7.2`
   - `PKG_RELEASE=1~bullseye`
 - Labels:
   - `maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>`
@@ -2334,11 +2334,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nghttp2/1.43.0-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nghttp2/1.43.0-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nginx-module-geoip=1.21.5-1~bullseye`
+### `dpkg` source package: `nginx-module-geoip=1.21.6-1~bullseye`
 
 Binary Packages:
 
-- `nginx-module-geoip=1.21.5-1~bullseye`
+- `nginx-module-geoip=1.21.6-1~bullseye`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2348,11 +2348,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-image-filter=1.21.5-1~bullseye`
+### `dpkg` source package: `nginx-module-image-filter=1.21.6-1~bullseye`
 
 Binary Packages:
 
-- `nginx-module-image-filter=1.21.5-1~bullseye`
+- `nginx-module-image-filter=1.21.6-1~bullseye`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2362,11 +2362,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-njs=1.21.5+0.7.1-1~bullseye`
+### `dpkg` source package: `nginx-module-njs=1.21.6+0.7.2-1~bullseye`
 
 Binary Packages:
 
-- `nginx-module-njs=1.21.5+0.7.1-1~bullseye`
+- `nginx-module-njs=1.21.6+0.7.2-1~bullseye`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2376,11 +2376,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-perl=1.21.5-1~bullseye`
+### `dpkg` source package: `nginx-module-perl=1.21.6-1~bullseye`
 
 Binary Packages:
 
-- `nginx-module-perl=1.21.5-1~bullseye`
+- `nginx-module-perl=1.21.6-1~bullseye`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2390,11 +2390,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-xslt=1.21.5-1~bullseye`
+### `dpkg` source package: `nginx-module-xslt=1.21.6-1~bullseye`
 
 Binary Packages:
 
-- `nginx-module-xslt=1.21.5-1~bullseye`
+- `nginx-module-xslt=1.21.6-1~bullseye`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2404,11 +2404,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx=1.21.5-1~bullseye`
+### `dpkg` source package: `nginx=1.21.6-1~bullseye`
 
 Binary Packages:
 
-- `nginx=1.21.5-1~bullseye`
+- `nginx=1.21.6-1~bullseye`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2927,17 +2927,17 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ucf/3.0043/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ucf/3.0043/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `util-linux=2.36.1-8`
+### `dpkg` source package: `util-linux=2.36.1-8+deb11u1`
 
 Binary Packages:
 
-- `bsdutils=1:2.36.1-8`
-- `libblkid1:amd64=2.36.1-8`
-- `libmount1:amd64=2.36.1-8`
-- `libsmartcols1:amd64=2.36.1-8`
-- `libuuid1:amd64=2.36.1-8`
-- `mount=2.36.1-8`
-- `util-linux=2.36.1-8`
+- `bsdutils=1:2.36.1-8+deb11u1`
+- `libblkid1:amd64=2.36.1-8+deb11u1`
+- `libmount1:amd64=2.36.1-8+deb11u1`
+- `libsmartcols1:amd64=2.36.1-8+deb11u1`
+- `libuuid1:amd64=2.36.1-8+deb11u1`
+- `mount=2.36.1-8+deb11u1`
+- `util-linux=2.36.1-8+deb11u1`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
@@ -2961,17 +2961,17 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris util-linux=2.36.1-8
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.36.1-8.dsc' util-linux_2.36.1-8.dsc 4271 SHA256:ce431fba2d6d1ac8e46f12cd94fe124e666693c92bcf96783beb0dfafe34dc58
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.36.1.orig.tar.xz' util-linux_2.36.1.orig.tar.xz 5231880 SHA256:09fac242172cd8ec27f0739d8d192402c69417617091d8c6e974841568f37eed
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.36.1-8.debian.tar.xz' util-linux_2.36.1-8.debian.tar.xz 98400 SHA256:876304edc7d9cbfacb5615f6205539d8b18fb254c5143243f9c7850cc58b3243
+$ apt-get source -qq --print-uris util-linux=2.36.1-8+deb11u1
+'http://security.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.36.1-8+deb11u1.dsc' util-linux_2.36.1-8+deb11u1.dsc 4461 SHA256:1f42a8e46c383b6fbfb57ea89dfe5adb5b7e6960bc5e8cdb9589109773be6cac
+'http://security.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.36.1.orig.tar.xz' util-linux_2.36.1.orig.tar.xz 5231880 SHA256:09fac242172cd8ec27f0739d8d192402c69417617091d8c6e974841568f37eed
+'http://security.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.36.1-8+deb11u1.debian.tar.xz' util-linux_2.36.1-8+deb11u1.debian.tar.xz 101448 SHA256:edda1d46e25a40e730c672aac2cd0e44f9eeb0fb64b27be957d6924ed5288a0a
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/util-linux/2.36.1-8/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.36.1-8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.36.1-8/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/util-linux/2.36.1-8+deb11u1/ (for browsing the source)
+- https://sources.debian.net/src/util-linux/2.36.1-8+deb11u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/util-linux/2.36.1-8+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xxhash=0.8.0-2`
 
