@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f28abff07583dcf14f6ce9ecb6161c236c1abc9138a39ab4a07153547b28b28f`
-- Created: `2022-01-18T22:45:45.709480665Z`
+- Image ID: `sha256:20063753fd1e2969905b0914f81ffe5d4c50d8c3984d7105234d3b660c887e9d`
+- Created: `2022-01-27T22:52:44.294962573Z`
 - Virtual Size: ~ 754.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2558,11 +2558,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nspr/2:4.20-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nspr/2:4.20-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nss=2:3.42.1-1+deb10u4`
+### `dpkg` source package: `nss=2:3.42.1-1+deb10u5`
 
 Binary Packages:
 
-- `libnss3:amd64=2:3.42.1-1+deb10u4`
+- `libnss3:amd64=2:3.42.1-1+deb10u5`
 
 Licenses: (parsed from: `/usr/share/doc/libnss3/copyright`)
 
@@ -2575,17 +2575,17 @@ Licenses: (parsed from: `/usr/share/doc/libnss3/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris nss=2:3.42.1-1+deb10u4
-'http://security.debian.org/debian-security/pool/updates/main/n/nss/nss_3.42.1-1+deb10u4.dsc' nss_3.42.1-1+deb10u4.dsc 2347 SHA256:29c8fe09a9e7fa2f5ed5aaa505ce2615af353f6885910bdd35592fb95cd5f9b6
+$ apt-get source -qq --print-uris nss=2:3.42.1-1+deb10u5
+'http://security.debian.org/debian-security/pool/updates/main/n/nss/nss_3.42.1-1+deb10u5.dsc' nss_3.42.1-1+deb10u5.dsc 2347 SHA256:70cda0bc852ae903d1bbc93619b4aa9a11f0d6f85e953988a6919414b322942b
 'http://security.debian.org/debian-security/pool/updates/main/n/nss/nss_3.42.1.orig.tar.gz' nss_3.42.1.orig.tar.gz 23416408 SHA256:087db37d38fd49dfd584dd2a8b5baa7fc88de7c9bd97c0c2d5be4abcafc61fc6
-'http://security.debian.org/debian-security/pool/updates/main/n/nss/nss_3.42.1-1+deb10u4.debian.tar.xz' nss_3.42.1-1+deb10u4.debian.tar.xz 36308 SHA256:496d33cfdf500496f27211a28cfdd089624874555ca268a9c86b89e24283eb5b
+'http://security.debian.org/debian-security/pool/updates/main/n/nss/nss_3.42.1-1+deb10u5.debian.tar.xz' nss_3.42.1-1+deb10u5.debian.tar.xz 36748 SHA256:6b85e73c38b2c6d5a0a7611443b1c62321e9c93fe7816373adb2a08bd3ed8791
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/nss/2:3.42.1-1+deb10u4/ (for browsing the source)
-- https://sources.debian.net/src/nss/2:3.42.1-1+deb10u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nss/2:3.42.1-1+deb10u4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/nss/2:3.42.1-1+deb10u5/ (for browsing the source)
+- https://sources.debian.net/src/nss/2:3.42.1-1+deb10u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/nss/2:3.42.1-1+deb10u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openjpeg2=2.3.0-2+deb10u2`
 
