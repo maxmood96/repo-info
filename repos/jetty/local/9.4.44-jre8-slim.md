@@ -4,7 +4,7 @@
 
 - Image ID: `sha256:d61fcd55e2bff584c61a5f5d98ef03570d3cd064b3fb09d6e2eea6e7d71b0030`
 - Created: `2022-01-27T16:29:31.97231268Z`
-- Virtual Size: ~ 207.18 Mb  
+- Virtual Size: ~ 207.20 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
