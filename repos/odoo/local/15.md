@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e339d3503f7f9e6bba4ff7fabc3fcb03f61105904da0621d7d1cd3d0cfd21d80`
-- Created: `2022-01-26T09:06:12.872110381Z`
+- Image ID: `sha256:54dbfd87063bbedbba8a02f2c4b03ee68139a76033e0eff013f1a21fe453a094`
+- Created: `2022-01-27T22:32:26.237147469Z`
 - Virtual Size: ~ 1.47 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -8024,11 +8024,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/npth/1.6-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/npth/1.6-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `odoo=15.0.20220110`
+### `dpkg` source package: `odoo=15.0.20220126`
 
 Binary Packages:
 
-- `odoo=15.0.20220110`
+- `odoo=15.0.20220126`
 
 Licenses: (parsed from: `/usr/share/doc/odoo/copyright`)
 
@@ -8997,33 +8997,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/python-greenlet/0.4.17-1/ (for browsing the source)
 - https://sources.debian.net/src/python-greenlet/0.4.17-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/python-greenlet/0.4.17-1/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `python-html2text=2020.1.16-1`
-
-Binary Packages:
-
-- `python3-html2text=2020.1.16-1`
-
-Licenses: (parsed from: `/usr/share/doc/python3-html2text/copyright`)
-
-- `GPL-2`
-- `GPL-2+`
-- `GPL-3`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris python-html2text=2020.1.16-1
-'http://deb.debian.org/debian/pool/main/p/python-html2text/python-html2text_2020.1.16-1.dsc' python-html2text_2020.1.16-1.dsc 1578 SHA256:787989cdb1bb909ef4f06b1fffda55794331e0641566797dc80374ff3478fdc0
-'http://deb.debian.org/debian/pool/main/p/python-html2text/python-html2text_2020.1.16.orig.tar.gz' python-html2text_2020.1.16.orig.tar.gz 49464 SHA256:e296318e16b059ddb97f7a8a1d6a5c1d7af4544049a01e261731d2d5cc277bbb
-'http://deb.debian.org/debian/pool/main/p/python-html2text/python-html2text_2020.1.16-1.debian.tar.xz' python-html2text_2020.1.16-1.debian.tar.xz 6372 SHA256:b63d5252adbb2f247c770996caca1c672dab2536260271e7d72c94f8acb300ec
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/python-html2text/2020.1.16-1/ (for browsing the source)
-- https://sources.debian.net/src/python-html2text/2020.1.16-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python-html2text/2020.1.16-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python-idna=2.10-1`
 
