@@ -614,14 +614,9 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.33.1-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.33.1-1ubuntu1.dsc' git_2.33.1-1ubuntu1.dsc 2948 SHA512:38aebd38a1f37bd2838560513c742c5c8b99b09b8eda3c62bf6efbc3faec8637856cee08226052f1bcade9735c8b71a14c557acdcd66885f499e490419433f47
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.33.1.orig.tar.xz' git_2.33.1.orig.tar.xz 6558636 SHA512:16d417183232e1057bea754d59cdf4bbacc5f1527d1de6ee04cdd293a2512bfa7208e20f6130816605528b59cb1bc3188c5bddf1a42c1413095ee74e44dd2f91
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.33.1-1ubuntu1.debian.tar.xz' git_2.33.1-1ubuntu1.debian.tar.xz 693760 SHA512:49557194ce12abdfdfc366d702a32db6f11c1695ba0b9ad1d6c92c87684d03fef662aa89e89bcd5793c1d22f5b19ec07ee955ea5986ce7756dd580dff623f327
-```
 
 ### `dpkg` source package: `glibc=2.34-0ubuntu3`
 
@@ -2360,15 +2355,9 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 - `GFDL-1.2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris wget=1.21-1ubuntu5
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21-1ubuntu5.dsc' wget_1.21-1ubuntu5.dsc 2223 SHA512:aed99207de9ad2bcef7c9174e88d206290b78e1ad133430167affe27bce59a68c428af504fe999d16e37dc56458a1966ae8ad3fe37fe235430612413eb6ff700
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.orig.tar.gz' wget_1.21.orig.tar.gz 4866788 SHA512:13313a98f91ef34ad90103f076285549eb4887d77953e9f192d3b0667642b5ceb9e2e30091f766cbf1d6ed423499c497ed85d826f3f3e92f0711aa06d8303c5a
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.orig.tar.gz.asc' wget_1.21.orig.tar.gz.asc 854 SHA512:1bdaedc164800158625fddbc842c2cbe246d3e3c2f07546ecebacc8c1ea44779aab31a707d792f965669f2403941d4869e59719198563a0f39099145609310d1
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21-1ubuntu5.debian.tar.xz' wget_1.21-1ubuntu5.debian.tar.xz 63564 SHA512:995e2a6309fd73d453f237db049c013339cbf0d0ae7dd18f191999f036ec97d0fdf29658666ab761f6c33a421ef99f0498c331a2b5777e41ec42a12821efdb70
-```
 
 ### `dpkg` source package: `xxhash=0.8.0-2build1`
 

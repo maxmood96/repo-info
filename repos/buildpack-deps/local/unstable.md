@@ -999,20 +999,13 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`, `/usr/share/doc/li
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.4.3-2
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.4.3-2.dsc' expat_2.4.3-2.dsc 1981 SHA256:d3eaafea145d06d10bc89ebacdc716e3ad2039cc6de189931b4df0f2934a03c2
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.4.3.orig.tar.gz' expat_2.4.3.orig.tar.gz 8311959 SHA256:edd734dbc54668839185f95f530f45e2221c478929eb47ca9647c5ec803c1417
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.4.3-2.debian.tar.xz' expat_2.4.3-2.debian.tar.xz 13588 SHA256:55687937f718cf7cb0a4f65a7fce0a43683a0cfe00f12629bada7f0e311ccb58
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/expat/2.4.3-2/
 
-- https://sources.debian.net/src/expat/2.4.3-2/ (for browsing the source)
-- https://sources.debian.net/src/expat/2.4.3-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/expat/2.4.3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `fftw3=3.3.8-2`
 
@@ -1112,20 +1105,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris fontconfig=2.13.1-4.3
-'http://deb.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.13.1-4.3.dsc' fontconfig_2.13.1-4.3.dsc 2687 SHA256:74594e50ce0804750c1b78e1ff95922478da51ec92be4be85826927da1e3c001
-'http://deb.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.13.1.orig.tar.bz2' fontconfig_2.13.1.orig.tar.bz2 1723639 SHA256:f655dd2a986d7aa97e052261b36aa67b0a64989496361eca8d604e6414006741
-'http://deb.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.13.1-4.3.debian.tar.xz' fontconfig_2.13.1-4.3.debian.tar.xz 55968 SHA256:4ff1802a74c6cc611dd64f68e34e03da44aabf7083b4a1edb4cb561b99573c4e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/fontconfig/2.13.1-4.3/
 
-- https://sources.debian.net/src/fontconfig/2.13.1-4.3/ (for browsing the source)
-- https://sources.debian.net/src/fontconfig/2.13.1-4.3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/fontconfig/2.13.1-4.3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `fonts-dejavu=2.37-2`
 
@@ -1541,20 +1527,13 @@ Licenses: (parsed from: `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.33-4
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.33-4.dsc' glibc_2.33-4.dsc 9631 SHA256:1e868a61e0db93378fe79c8c7be6d87aa023f43ea023bbd84c5bbb65123d394e
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.33.orig.tar.xz' glibc_2.33.orig.tar.xz 17643172 SHA256:5bd6d6b7fb0350308aa7abd067e081d57ba6ac1e0372ed372d197bccb86e5c14
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.33-4.debian.tar.xz' glibc_2.33-4.debian.tar.xz 823180 SHA256:301cd9f71010476fea06be1aa386a2aa335e216205c5718a14aa5c25a2d92c8b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glibc/2.33-4/
 
-- https://sources.debian.net/src/glibc/2.33-4/ (for browsing the source)
-- https://sources.debian.net/src/glibc/2.33-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glibc/2.33-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-3`
 
@@ -3184,21 +3163,13 @@ Licenses: (parsed from: `/usr/share/doc/libsigsegv2/copyright`)
 - `permissive-fsf`
 - `permissive-other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libsigsegv=2.13-1
-'http://deb.debian.org/debian/pool/main/libs/libsigsegv/libsigsegv_2.13-1.dsc' libsigsegv_2.13-1.dsc 2338 SHA256:6e22271eb31721e6b55b401c830aa2459654d3d08bd53688e86037b71fef5170
-'http://deb.debian.org/debian/pool/main/libs/libsigsegv/libsigsegv_2.13.orig.tar.gz' libsigsegv_2.13.orig.tar.gz 460736 SHA256:be78ee4176b05f7c75ff03298d84874db90f4b6c9d5503f0da1226b3a3c48119
-'http://deb.debian.org/debian/pool/main/libs/libsigsegv/libsigsegv_2.13.orig.tar.gz.asc' libsigsegv_2.13.orig.tar.gz.asc 819 SHA256:f63cbbc68da4a53b685dc373b5c11d0b0cdf467be9391efc89c88c440d74df36
-'http://deb.debian.org/debian/pool/main/libs/libsigsegv/libsigsegv_2.13-1.debian.tar.xz' libsigsegv_2.13-1.debian.tar.xz 8572 SHA256:4210f5c3b99fd2521490f52345b4faca591f2fabb09b19a14e5644e8da8ac59a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libsigsegv/2.13-1/
 
-- https://sources.debian.net/src/libsigsegv/2.13-1/ (for browsing the source)
-- https://sources.debian.net/src/libsigsegv/2.13-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libsigsegv/2.13-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libsm=2:1.2.3-1`
 
@@ -3448,20 +3419,13 @@ Licenses: (parsed from: `/usr/share/doc/libwmf-dev/copyright`, `/usr/share/doc/l
 
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libwmf=0.2.8.4-17
-'http://deb.debian.org/debian/pool/main/libw/libwmf/libwmf_0.2.8.4-17.dsc' libwmf_0.2.8.4-17.dsc 2268 SHA256:1d48da0032093725c16f1c389152cc4041e60323a8453c550310286a0cfafa6a
-'http://deb.debian.org/debian/pool/main/libw/libwmf/libwmf_0.2.8.4.orig.tar.gz' libwmf_0.2.8.4.orig.tar.gz 2169375 SHA256:5b345c69220545d003ad52bfd035d5d6f4f075e65204114a9e875e84895a7cf8
-'http://deb.debian.org/debian/pool/main/libw/libwmf/libwmf_0.2.8.4-17.debian.tar.xz' libwmf_0.2.8.4-17.debian.tar.xz 12900 SHA256:d32d2b4c948abb929911c7b23ef9490863d86e3c6b6302aa3549d25301e0fed1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libwmf/0.2.8.4-17/
 
-- https://sources.debian.net/src/libwmf/0.2.8.4-17/ (for browsing the source)
-- https://sources.debian.net/src/libwmf/0.2.8.4-17/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libwmf/0.2.8.4-17/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libx11=2:1.7.2-2`
 
@@ -4164,19 +4128,13 @@ Licenses: (parsed from: `/usr/share/doc/default-libmysqlclient-dev/copyright`, `
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mysql-defaults=1.0.7
-'http://deb.debian.org/debian/pool/main/m/mysql-defaults/mysql-defaults_1.0.7.dsc' mysql-defaults_1.0.7.dsc 2266 SHA256:969c5682e991967f5b9488c04b784e63148c952fc597f7b7e5483e4204726649
-'http://deb.debian.org/debian/pool/main/m/mysql-defaults/mysql-defaults_1.0.7.tar.xz' mysql-defaults_1.0.7.tar.xz 7220 SHA256:e2942479d614756e2e49698a6a3819b6e00b1285802799dab5519e0d2925437b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mysql-defaults/1.0.7/
 
-- https://sources.debian.net/src/mysql-defaults/1.0.7/ (for browsing the source)
-- https://sources.debian.net/src/mysql-defaults/1.0.7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mysql-defaults/1.0.7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ncurses=6.3-2`
 
@@ -4603,20 +4561,13 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 - `TCL`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pango1.0=1.50.3+ds1-4
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.50.3+ds1-4.dsc' pango1.0_1.50.3+ds1-4.dsc 3669 SHA256:95daa8c6c6ed547eda28035100d3f7d3f2f03ed0a22c5962062b19b9c79ec343
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.50.3+ds1.orig.tar.xz' pango1.0_1.50.3+ds1.orig.tar.xz 2476492 SHA256:d88a24e3f075587070fa45f4b583323a4623ca5574fdf9722ddb1c1790851032
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.50.3+ds1-4.debian.tar.xz' pango1.0_1.50.3+ds1-4.debian.tar.xz 50268 SHA256:0d80755df427d50ae4a375df62f0ec2716481f44878f1f9f982e1c4d50c39754
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pango1.0/1.50.3+ds1-4/
 
-- https://sources.debian.net/src/pango1.0/1.50.3+ds1-4/ (for browsing the source)
-- https://sources.debian.net/src/pango1.0/1.50.3+ds1-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pango1.0/1.50.3+ds1-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `patch=2.7.6-7`
 
@@ -5178,20 +5129,13 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.8.1-2
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.8.1-2.dsc' shadow_4.8.1-2.dsc 2218 SHA256:6cca7aecb3faa89684333cc6ae01931a56fdf435f1181734613fb7bb2bab8ce6
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.8.1.orig.tar.xz' shadow_4.8.1.orig.tar.xz 1611196 SHA256:a3ad4630bdc41372f02a647278a8c3514844295d36eefe68ece6c3a641c1ae62
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.8.1-2.debian.tar.xz' shadow_4.8.1-2.debian.tar.xz 74476 SHA256:e230a5fe3945587140dcec2b42dbd0b6bd371bb5976f1b5fb99f5799a2ec4d89
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/shadow/1:4.8.1-2/
 
-- https://sources.debian.net/src/shadow/1:4.8.1-2/ (for browsing the source)
-- https://sources.debian.net/src/shadow/1:4.8.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/shadow/1:4.8.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `shared-mime-info=2.1-2`
 
@@ -5304,20 +5248,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=250.3-1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_250.3-1.dsc' systemd_250.3-1.dsc 5661 SHA256:0cda17083c40ec35bfb4b3df4de2f793cc0a06044ce98b12746cbc43bceda8cd
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_250.3.orig.tar.gz' systemd_250.3.orig.tar.gz 11125151 SHA256:87b0eee7b6e5aaab2ab56d158f9536daa6bfd5de011f2a5fc6ccdd81ee1e7a24
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_250.3-1.debian.tar.xz' systemd_250.3-1.debian.tar.xz 161916 SHA256:02c64c998208d0f12cd2f536c74fb7680a33ba1127f39f439f7940141c5c92e8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/250.3-1/
 
-- https://sources.debian.net/src/systemd/250.3-1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/250.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/250.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.01-1`
 
@@ -5383,21 +5320,13 @@ Licenses: (parsed from: `/usr/share/doc/libtiff-dev/copyright`, `/usr/share/doc/
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.3.0-2
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.3.0-2.dsc' tiff_4.3.0-2.dsc 2429 SHA256:68340f57b5b35407c297b89472e03ea277283754cd1c6c2843399338f494985a
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.3.0.orig.tar.gz' tiff_4.3.0.orig.tar.gz 2808254 SHA256:0e46e5acb087ce7d1ac53cf4f56a09b221537fc86dfc5daaad1c2e89e1b37ac8
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.3.0.orig.tar.gz.asc' tiff_4.3.0.orig.tar.gz.asc 488 SHA256:6e41d0a4c042d2903f28534eb696a16409ccde9aaa2d02d06b5daaabbfb94aa7
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.3.0-2.debian.tar.xz' tiff_4.3.0-2.debian.tar.xz 19596 SHA256:84e02cd055dedd45e87f662ec34097fb1b4c339feb904d5ec6e33aba30b0b995
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tiff/4.3.0-2/
 
-- https://sources.debian.net/src/tiff/4.3.0-2/ (for browsing the source)
-- https://sources.debian.net/src/tiff/4.3.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tiff/4.3.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tzdata=2021e-1`
 

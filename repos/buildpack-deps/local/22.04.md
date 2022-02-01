@@ -1113,14 +1113,9 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.33.1-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.33.1-1ubuntu1.dsc' git_2.33.1-1ubuntu1.dsc 2948 SHA512:38aebd38a1f37bd2838560513c742c5c8b99b09b8eda3c62bf6efbc3faec8637856cee08226052f1bcade9735c8b71a14c557acdcd66885f499e490419433f47
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.33.1.orig.tar.xz' git_2.33.1.orig.tar.xz 6558636 SHA512:16d417183232e1057bea754d59cdf4bbacc5f1527d1de6ee04cdd293a2512bfa7208e20f6130816605528b59cb1bc3188c5bddf1a42c1413095ee74e44dd2f91
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.33.1-1ubuntu1.debian.tar.xz' git_2.33.1-1ubuntu1.debian.tar.xz 693760 SHA512:49557194ce12abdfdfc366d702a32db6f11c1695ba0b9ad1d6c92c87684d03fef662aa89e89bcd5793c1d22f5b19ec07ee955ea5986ce7756dd580dff623f327
-```
 
 ### `dpkg` source package: `glib2.0=2.71.0-2`
 
@@ -1138,14 +1133,13 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.71.0-2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.71.0-2.dsc' glib2.0_2.71.0-2.dsc 3545 SHA512:8a84b9fcbe6316ef76b2db36fcc44a455fb0ba27de47df88b301e14708b32a983ac832c6f8cbf1d30e18405f022badf4273d977a80a04360a2749b93e4f5e400
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.71.0.orig.tar.xz' glib2.0_2.71.0.orig.tar.xz 4842844 SHA512:833ac450d046e7293a2cabe3157ca393ca0aeac007163384e1705f1860933ae5f1cd1f7f733fd4732c3eaaaa42a941a1c486432c3768ce15238acb37bc2649d6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.71.0-2.debian.tar.xz' glib2.0_2.71.0-2.debian.tar.xz 102444 SHA512:fa5a925cbc6d4f2e2e923eabdb222da377403510d4e8941ea0880c0b06b32f146114c2e5b83e334213377c09ac151faf92dd8b5a3d5b66e91925fc4608ddf390
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/glib2.0/2.71.0-2/
+
 
 ### `dpkg` source package: `glibc=2.34-0ubuntu3`
 
@@ -2659,14 +2653,9 @@ Licenses: (parsed from: `/usr/share/doc/libwebp-dev/copyright`, `/usr/share/doc/
 
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libwebp=0.6.1-2.1build1
-'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwebp/libwebp_0.6.1-2.1build1.dsc' libwebp_0.6.1-2.1build1.dsc 2103 SHA512:c6875479be12214e16c81a40aff092d6338dd0f0c51a9013f12b1fe9232e2a51dd960b0979a56cd9dfc05dd601f29bf0d32a374067af0acc04ea80c53c8d56fb
-'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwebp/libwebp_0.6.1.orig.tar.gz' libwebp_0.6.1.orig.tar.gz 3554290 SHA512:313b345a01c91eb07c2e4d46b93fcda9c50dca9e05e39f757238a679355514a2e9bc9bc220f3d3eb6d6a55148957cb2be14dac330203953337759841af1a32bf
-'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwebp/libwebp_0.6.1-2.1build1.debian.tar.xz' libwebp_0.6.1-2.1build1.debian.tar.xz 13688 SHA512:d44bc03718f743d42895f998dc9cd3c152bf13807fed23fa4fa9b82b40aaf55229d83f8c9b0e8652fbbae93622c2b8d4a21ef081ef35f11826417c3ee03bea69
-```
 
 ### `dpkg` source package: `libwmf=0.2.8.4-17ubuntu2`
 
@@ -3235,13 +3224,13 @@ Licenses: (parsed from: `/usr/share/doc/default-libmysqlclient-dev/copyright`, `
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mysql-defaults=1.0.7
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-defaults/mysql-defaults_1.0.7.dsc' mysql-defaults_1.0.7.dsc 2266 SHA512:9acf6dfbafcac002226c8780a5323110fc11f51f5421a62825ec7eb4cf3ce96da15667fef01f5e4267b23cb78ea19d25ce781c2597cf8f177d1b31cade19e34a
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-defaults/mysql-defaults_1.0.7.tar.xz' mysql-defaults_1.0.7.tar.xz 7220 SHA512:497fedc48b4252ed1f0351ce0be20ce195069b1ec0acf52690a05f3785b22c6c2eee2379d77ce7c75c1ce16e96daaf365ded9539a084cac1d810bf0e4c6ce6fb
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/mysql-defaults/1.0.7/
+
 
 ### `dpkg` source package: `ncurses=6.3-1`
 
@@ -4388,15 +4377,9 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 - `GFDL-1.2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris wget=1.21-1ubuntu5
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21-1ubuntu5.dsc' wget_1.21-1ubuntu5.dsc 2223 SHA512:aed99207de9ad2bcef7c9174e88d206290b78e1ad133430167affe27bce59a68c428af504fe999d16e37dc56458a1966ae8ad3fe37fe235430612413eb6ff700
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.orig.tar.gz' wget_1.21.orig.tar.gz 4866788 SHA512:13313a98f91ef34ad90103f076285549eb4887d77953e9f192d3b0667642b5ceb9e2e30091f766cbf1d6ed423499c497ed85d826f3f3e92f0711aa06d8303c5a
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21.orig.tar.gz.asc' wget_1.21.orig.tar.gz.asc 854 SHA512:1bdaedc164800158625fddbc842c2cbe246d3e3c2f07546ecebacc8c1ea44779aab31a707d792f965669f2403941d4869e59719198563a0f39099145609310d1
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.21-1ubuntu5.debian.tar.xz' wget_1.21-1ubuntu5.debian.tar.xz 63564 SHA512:995e2a6309fd73d453f237db049c013339cbf0d0ae7dd18f191999f036ec97d0fdf29658666ab761f6c33a421ef99f0498c331a2b5777e41ec42a12821efdb70
-```
 
 ### `dpkg` source package: `x265=3.5-2`
 

@@ -704,20 +704,13 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.4.3-2
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.4.3-2.dsc' expat_2.4.3-2.dsc 1981 SHA256:d3eaafea145d06d10bc89ebacdc716e3ad2039cc6de189931b4df0f2934a03c2
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.4.3.orig.tar.gz' expat_2.4.3.orig.tar.gz 8311959 SHA256:edd734dbc54668839185f95f530f45e2221c478929eb47ca9647c5ec803c1417
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.4.3-2.debian.tar.xz' expat_2.4.3-2.debian.tar.xz 13588 SHA256:55687937f718cf7cb0a4f65a7fce0a43683a0cfe00f12629bada7f0e311ccb58
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/expat/2.4.3-2/
 
-- https://sources.debian.net/src/expat/2.4.3-2/ (for browsing the source)
-- https://sources.debian.net/src/expat/2.4.3-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/expat/2.4.3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `findutils=4.8.0-1`
 
@@ -2802,20 +2795,13 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.8.1-2
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.8.1-2.dsc' shadow_4.8.1-2.dsc 2218 SHA256:6cca7aecb3faa89684333cc6ae01931a56fdf435f1181734613fb7bb2bab8ce6
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.8.1.orig.tar.xz' shadow_4.8.1.orig.tar.xz 1611196 SHA256:a3ad4630bdc41372f02a647278a8c3514844295d36eefe68ece6c3a641c1ae62
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.8.1-2.debian.tar.xz' shadow_4.8.1-2.debian.tar.xz 74476 SHA256:e230a5fe3945587140dcec2b42dbd0b6bd371bb5976f1b5fb99f5799a2ec4d89
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/shadow/1:4.8.1-2/
 
-- https://sources.debian.net/src/shadow/1:4.8.1-2/ (for browsing the source)
-- https://sources.debian.net/src/shadow/1:4.8.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/shadow/1:4.8.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sqlite3=3.37.2-2`
 
@@ -2902,20 +2888,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=250.3-1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_250.3-1.dsc' systemd_250.3-1.dsc 5661 SHA256:0cda17083c40ec35bfb4b3df4de2f793cc0a06044ce98b12746cbc43bceda8cd
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_250.3.orig.tar.gz' systemd_250.3.orig.tar.gz 11125151 SHA256:87b0eee7b6e5aaab2ab56d158f9536daa6bfd5de011f2a5fc6ccdd81ee1e7a24
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_250.3-1.debian.tar.xz' systemd_250.3-1.debian.tar.xz 161916 SHA256:02c64c998208d0f12cd2f536c74fb7680a33ba1127f39f439f7940141c5c92e8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/250.3-1/
 
-- https://sources.debian.net/src/systemd/250.3-1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/250.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/250.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.01-1`
 
