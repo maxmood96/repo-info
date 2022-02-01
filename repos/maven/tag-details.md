@@ -3654,7 +3654,7 @@ CMD ["mvn"]
 ## `maven:3-ibm-semeru-11-focal`
 
 ```console
-$ docker pull maven@sha256:84b9cf31344c75e3ad7e327514ff1ed486ecbc75ac9aa96b426f16eb546e8c8a
+$ docker pull maven@sha256:5569c18d761880ac762e9de0b9b0701a17a0dce73712777f10fba6192d4dbcd9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3667,14 +3667,14 @@ $ docker pull maven@sha256:84b9cf31344c75e3ad7e327514ff1ed486ecbc75ac9aa96b426f1
 ### `maven:3-ibm-semeru-11-focal` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:5415ed40e7f3d79da976e41e0323c1b6d939780fd74d5333584007393313cf7a
+$ docker pull maven@sha256:4d3cc64f0ff5f50ea756c42eaef2efb9c4ec67bd693a3c8ea08bc1a06da636c0
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **293.2 MB (293249169 bytes)**  
+-	Total Size: **293.6 MB (293640718 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4efc994685ae228995ff4e05e5954e979f5508e84308019f4e3311dd6bf84ebd`
+-	Image ID: `sha256:45ba00f7262440b1a5482dd42a54c738f5fafa05676c7216612a1fb26269dc9a`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -3687,43 +3687,43 @@ CMD ["bash"]
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Fri, 07 Jan 2022 04:49:04 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 07 Jan 2022 04:50:50 GMT
-ENV JAVA_VERSION=jdk-11.0.13+8_openj9-0.29.0
-# Fri, 07 Jan 2022 04:51:05 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='151dca23e1fdb43eaa60631c96895be9aa7bb751e7fdf88ddffa1c32157fb417';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_aarch64_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        amd64|x86_64)          ESUM='3975e2732cf632ca8f41c237ba7e033fd96bda262b79861f83b4e2ac62c90c3d';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_x64_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='7b304c52974f51611b45a2ab7949503e33a204b8a4ae705eb3c74789350174d3';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_ppc64le_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        s390x)          ESUM='6c3ebb4af0f4066e721e1f0078438458775f4b93bfd2d0be1066c54ccf015654';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_s390x_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 07 Jan 2022 04:51:05 GMT
+# Tue, 01 Feb 2022 01:44:03 GMT
+ENV JAVA_VERSION=jdk-11.0.14+9_openj9-0.30.0
+# Tue, 01 Feb 2022 01:44:18 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='1db3d93a57a66db7eec553e9350431e3092ebe20a03f871259a52e3d39b346e4';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_aarch64_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        amd64|x86_64)          ESUM='f39fc492182198503d9be5f198cf257b894a1a74de24e27c70070e7456778eb6';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_x64_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='98e8fb899ba770f85d0a9a44c3965cf87f59c6d767cecd81924176033ed28eed';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_ppc64le_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        s390x)          ESUM='7250822af05cebd2c5ec6ab4871a870d58357241a3070f20ef3623dc42317548';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_s390x_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Tue, 01 Feb 2022 01:44:19 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 07 Jan 2022 04:51:06 GMT
+# Tue, 01 Feb 2022 01:44:19 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
-# Fri, 07 Jan 2022 04:51:41 GMT
+# Tue, 01 Feb 2022 01:44:55 GMT
 RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="0db27185d9fc3174f2c670f814df3dda8a008b89d1a38a5d96cbbe119767ebfb1cf0bce956b27954aee9be19c4a7b91f2579d967932207976322033a86075f98";     TOMCAT_DWNLD_URL="https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.35/bin/apache-tomcat-9.0.35.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed";
-# Fri, 07 Jan 2022 04:51:42 GMT
+# Tue, 01 Feb 2022 01:44:55 GMT
 CMD ["jshell"]
-# Mon, 10 Jan 2022 22:30:48 GMT
+# Tue, 01 Feb 2022 02:29:12 GMT
 ARG MAVEN_VERSION=3.8.4
-# Mon, 10 Jan 2022 22:30:48 GMT
+# Tue, 01 Feb 2022 02:29:12 GMT
 ARG USER_HOME_DIR=/root
-# Mon, 10 Jan 2022 22:30:48 GMT
+# Tue, 01 Feb 2022 02:29:12 GMT
 ARG SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8
-# Mon, 10 Jan 2022 22:30:49 GMT
+# Tue, 01 Feb 2022 02:29:12 GMT
 ARG BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries
-# Mon, 10 Jan 2022 22:31:17 GMT
+# Tue, 01 Feb 2022 02:29:38 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN apt-get update     && apt-get install -y git     && rm -rf /var/lib/apt/lists/*
-# Mon, 10 Jan 2022 22:31:26 GMT
+# Tue, 01 Feb 2022 02:29:45 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN mkdir -p /usr/share/maven /usr/share/maven/ref   && curl -fsSL -o /tmp/apache-maven.tar.gz ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz   && echo "${SHA}  /tmp/apache-maven.tar.gz" | sha512sum -c -   && tar -xzf /tmp/apache-maven.tar.gz -C /usr/share/maven --strip-components=1   && rm -f /tmp/apache-maven.tar.gz   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Mon, 10 Jan 2022 22:31:26 GMT
+# Tue, 01 Feb 2022 02:29:45 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Mon, 10 Jan 2022 22:31:26 GMT
+# Tue, 01 Feb 2022 02:29:45 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Mon, 10 Jan 2022 22:31:26 GMT
+# Tue, 01 Feb 2022 02:29:45 GMT
 COPY file:1b3da5c58894f705e7387946301c0c52edb6271761ea3cd80b86a848847a64cd in /usr/local/bin/mvn-entrypoint.sh 
-# Mon, 10 Jan 2022 22:31:26 GMT
+# Tue, 01 Feb 2022 02:29:46 GMT
 COPY file:2bbb488dd73c55d658b91943cfdf9c26975a320ceafc45dda94c95b03e518ad3 in /usr/share/maven/ref/ 
-# Mon, 10 Jan 2022 22:31:27 GMT
+# Tue, 01 Feb 2022 02:29:46 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Mon, 10 Jan 2022 22:31:27 GMT
+# Tue, 01 Feb 2022 02:29:46 GMT
 CMD ["mvn"]
 ```
 
@@ -3736,42 +3736,42 @@ CMD ["mvn"]
 		Last Modified: Fri, 07 Jan 2022 04:57:29 GMT  
 		Size: 16.0 MB (16032427 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c6da339be5d6e58ded271817b592f6e36ad095c7319e1e9a23ea84ad939a498`  
-		Last Modified: Fri, 07 Jan 2022 04:58:18 GMT  
-		Size: 203.2 MB (203222613 bytes)  
+	-	`sha256:f76750da5d07b0dbfc0d548ff33fc7a21b66b56afeece46319dbe98566f10470`  
+		Last Modified: Tue, 01 Feb 2022 01:54:53 GMT  
+		Size: 203.5 MB (203500025 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3f39aff5169de58011ccc6cbb7ab0fde7f086ed40d1a0be62913dfdb198d7a15`  
-		Last Modified: Fri, 07 Jan 2022 04:58:04 GMT  
-		Size: 5.1 MB (5146299 bytes)  
+	-	`sha256:c22d0759c4108c6f1a3e9d10c71bfd18d8668195335989df4529ba6b2baddc08`  
+		Last Modified: Tue, 01 Feb 2022 01:54:38 GMT  
+		Size: 5.3 MB (5260591 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b36bcf6fa314ada2769719cd109c4de1bf133a887896eff9c69eb739acae0965`  
-		Last Modified: Mon, 10 Jan 2022 22:33:59 GMT  
-		Size: 31.2 MB (31170390 bytes)  
+	-	`sha256:9a2b45c65584988f4fd83e65bfcb6910987c1f131816d1804df77c83aa7e30cc`  
+		Last Modified: Tue, 01 Feb 2022 02:32:15 GMT  
+		Size: 31.2 MB (31170238 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:187ae3c686fe9e63b98efd9ecfc1a94785768d75b1b10661b6d89d3a2c29ef00`  
-		Last Modified: Mon, 10 Jan 2022 22:33:55 GMT  
-		Size: 9.1 MB (9109804 bytes)  
+	-	`sha256:a56fd6e0998184510aece6cbaa5c9646a953d7785bdd48bb9d5510ef5f2378cc`  
+		Last Modified: Tue, 01 Feb 2022 02:32:11 GMT  
+		Size: 9.1 MB (9109795 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b5a2faf741dfe1bfc4225a04edcb3c231b3f8051b0b4ff157dc148c2511702f9`  
-		Last Modified: Mon, 10 Jan 2022 22:33:54 GMT  
-		Size: 852.0 B  
+	-	`sha256:9baaf2b93bb2995b7ff459ac16dda48f6e7dee044a32e1407ccf2ba5513cfd52`  
+		Last Modified: Tue, 01 Feb 2022 02:32:10 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:26caa0968d882ea078cee631b4b54a8e6688c7b1b55995b879ccc827d34f6ce7`  
-		Last Modified: Mon, 10 Jan 2022 22:33:54 GMT  
-		Size: 359.0 B  
+	-	`sha256:77fffbb459e4efb38602118c0056f4e6ebcd441b1c57186d8f32726300bad4d7`  
+		Last Modified: Tue, 01 Feb 2022 02:32:10 GMT  
+		Size: 363.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3-ibm-semeru-11-focal` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:b73761e02dd88690ab6f4ea6e2decbf20670f5587e2837e9afd11b46ebec890d
+$ docker pull maven@sha256:93ff1004eb3c9b37f55f80dd733650552c5e34887e2ef0478579604842ec9bac
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **286.8 MB (286828947 bytes)**  
+-	Total Size: **287.1 MB (287120473 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0c810f8250aeae72c8c6f966f6497ce99a54d95e2971d92e8f09896259925401`
+-	Image ID: `sha256:f4e10d63f81a8a02242c25960615c9d243589ce40f5e0217382a761ff54a4825`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -3784,43 +3784,43 @@ CMD ["bash"]
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Fri, 07 Jan 2022 02:41:57 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 07 Jan 2022 02:43:51 GMT
-ENV JAVA_VERSION=jdk-11.0.13+8_openj9-0.29.0
-# Fri, 07 Jan 2022 02:44:07 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='151dca23e1fdb43eaa60631c96895be9aa7bb751e7fdf88ddffa1c32157fb417';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_aarch64_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        amd64|x86_64)          ESUM='3975e2732cf632ca8f41c237ba7e033fd96bda262b79861f83b4e2ac62c90c3d';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_x64_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='7b304c52974f51611b45a2ab7949503e33a204b8a4ae705eb3c74789350174d3';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_ppc64le_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        s390x)          ESUM='6c3ebb4af0f4066e721e1f0078438458775f4b93bfd2d0be1066c54ccf015654';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_s390x_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 07 Jan 2022 02:44:08 GMT
+# Tue, 01 Feb 2022 02:22:53 GMT
+ENV JAVA_VERSION=jdk-11.0.14+9_openj9-0.30.0
+# Tue, 01 Feb 2022 02:23:08 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='1db3d93a57a66db7eec553e9350431e3092ebe20a03f871259a52e3d39b346e4';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_aarch64_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        amd64|x86_64)          ESUM='f39fc492182198503d9be5f198cf257b894a1a74de24e27c70070e7456778eb6';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_x64_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='98e8fb899ba770f85d0a9a44c3965cf87f59c6d767cecd81924176033ed28eed';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_ppc64le_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        s390x)          ESUM='7250822af05cebd2c5ec6ab4871a870d58357241a3070f20ef3623dc42317548';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_s390x_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Tue, 01 Feb 2022 02:23:09 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 07 Jan 2022 02:44:08 GMT
+# Tue, 01 Feb 2022 02:23:09 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
-# Fri, 07 Jan 2022 02:44:44 GMT
+# Tue, 01 Feb 2022 02:23:45 GMT
 RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="0db27185d9fc3174f2c670f814df3dda8a008b89d1a38a5d96cbbe119767ebfb1cf0bce956b27954aee9be19c4a7b91f2579d967932207976322033a86075f98";     TOMCAT_DWNLD_URL="https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.35/bin/apache-tomcat-9.0.35.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed";
-# Fri, 07 Jan 2022 02:44:44 GMT
+# Tue, 01 Feb 2022 02:23:46 GMT
 CMD ["jshell"]
-# Mon, 10 Jan 2022 21:42:09 GMT
+# Tue, 01 Feb 2022 03:15:05 GMT
 ARG MAVEN_VERSION=3.8.4
-# Mon, 10 Jan 2022 21:42:09 GMT
+# Tue, 01 Feb 2022 03:15:05 GMT
 ARG USER_HOME_DIR=/root
-# Mon, 10 Jan 2022 21:42:10 GMT
+# Tue, 01 Feb 2022 03:15:06 GMT
 ARG SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8
-# Mon, 10 Jan 2022 21:42:11 GMT
+# Tue, 01 Feb 2022 03:15:07 GMT
 ARG BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries
-# Mon, 10 Jan 2022 21:42:25 GMT
+# Tue, 01 Feb 2022 03:15:20 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN apt-get update     && apt-get install -y git     && rm -rf /var/lib/apt/lists/*
-# Mon, 10 Jan 2022 21:42:29 GMT
+# Tue, 01 Feb 2022 03:15:25 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN mkdir -p /usr/share/maven /usr/share/maven/ref   && curl -fsSL -o /tmp/apache-maven.tar.gz ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz   && echo "${SHA}  /tmp/apache-maven.tar.gz" | sha512sum -c -   && tar -xzf /tmp/apache-maven.tar.gz -C /usr/share/maven --strip-components=1   && rm -f /tmp/apache-maven.tar.gz   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Mon, 10 Jan 2022 21:42:30 GMT
+# Tue, 01 Feb 2022 03:15:25 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Mon, 10 Jan 2022 21:42:31 GMT
+# Tue, 01 Feb 2022 03:15:26 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Mon, 10 Jan 2022 21:42:33 GMT
+# Tue, 01 Feb 2022 03:15:28 GMT
 COPY file:1b3da5c58894f705e7387946301c0c52edb6271761ea3cd80b86a848847a64cd in /usr/local/bin/mvn-entrypoint.sh 
-# Mon, 10 Jan 2022 21:42:34 GMT
+# Tue, 01 Feb 2022 03:15:29 GMT
 COPY file:2bbb488dd73c55d658b91943cfdf9c26975a320ceafc45dda94c95b03e518ad3 in /usr/share/maven/ref/ 
-# Mon, 10 Jan 2022 21:42:34 GMT
+# Tue, 01 Feb 2022 03:15:29 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Mon, 10 Jan 2022 21:42:35 GMT
+# Tue, 01 Feb 2022 03:15:30 GMT
 CMD ["mvn"]
 ```
 
@@ -3833,42 +3833,42 @@ CMD ["mvn"]
 		Last Modified: Fri, 07 Jan 2022 02:46:50 GMT  
 		Size: 15.9 MB (15894303 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6420bbf643a8c58183444ef3e623b95acf3155aa6537dffd3f1128477d65b42a`  
-		Last Modified: Fri, 07 Jan 2022 02:47:48 GMT  
-		Size: 198.8 MB (198820633 bytes)  
+	-	`sha256:403ce41c6ebbca64053ed56e9832e6d7929ad9a72d9113cc179dc8b9a02f30d3`  
+		Last Modified: Tue, 01 Feb 2022 02:33:33 GMT  
+		Size: 199.0 MB (199028670 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c71633f3d8bfbc660dc2f896074f5aaf8f146f22b2717a6742fc52601670484e`  
-		Last Modified: Fri, 07 Jan 2022 02:47:30 GMT  
-		Size: 4.9 MB (4867518 bytes)  
+	-	`sha256:0c0c40176a39c48a4a403ec1282a1e2696608f50cfeabb9c607b5dc31910fb00`  
+		Last Modified: Tue, 01 Feb 2022 02:33:14 GMT  
+		Size: 5.0 MB (4950723 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08de31f74c1fbb95177a79ee0b9ad2a22392edfb3c818ab34eb956a80dd2ba6f`  
-		Last Modified: Mon, 10 Jan 2022 21:46:19 GMT  
-		Size: 31.0 MB (30964434 bytes)  
+	-	`sha256:1dcf7778433c74cd99709802b4bac02f0fc9d1c4e53b9881d18384f3ee7f5f1f`  
+		Last Modified: Tue, 01 Feb 2022 03:19:04 GMT  
+		Size: 31.0 MB (30964714 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:773d7c8d49ff18d22da1b48135e61cde58cb412fc00b828f8c4f6f1e84b69a15`  
-		Last Modified: Mon, 10 Jan 2022 21:46:15 GMT  
-		Size: 9.1 MB (9109771 bytes)  
+	-	`sha256:4174d01fc2a0a1f5c29f61266fcbe4b1cca0c5ee94627dab695603dbfd7c4662`  
+		Last Modified: Tue, 01 Feb 2022 03:19:00 GMT  
+		Size: 9.1 MB (9109772 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:230bff6cc5a83d4e3f290e8e0739c817fc751e2add69e0b06fd48a27842e052f`  
-		Last Modified: Mon, 10 Jan 2022 21:46:13 GMT  
-		Size: 851.0 B  
+	-	`sha256:b281c895f6dc064fd4df619b82b656665ae64f4b0a874fe048e26a3203eceaa9`  
+		Last Modified: Tue, 01 Feb 2022 03:18:59 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:564e8720a35943f60574179db6229dd5c5ee86ca7fa7a0443eea30090df43b82`  
-		Last Modified: Mon, 10 Jan 2022 21:46:14 GMT  
+	-	`sha256:134135d16eed575c7f754347edea51548856797b42dc2ff440887c9b54cac90a`  
+		Last Modified: Tue, 01 Feb 2022 03:18:59 GMT  
 		Size: 363.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3-ibm-semeru-11-focal` - linux; ppc64le
 
 ```console
-$ docker pull maven@sha256:4872e138d2b617a970a9cc77c3f741a7734a096551f90bf9aa7592ea809a9c08
+$ docker pull maven@sha256:83c764d9bedb4b0cbcc2b935e44cb6f58ecd0553ebc226e30d9cac8bedb7c6e8
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **306.3 MB (306328555 bytes)**  
+-	Total Size: **306.6 MB (306597482 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b3887650255ce2ff4c6cd345ab33afa401f72474071ac9a9dcae0db8b66c5e4f`
+-	Image ID: `sha256:a08b66e9699afb0604327ea0cecf17da6241697658750dd31cc4f685fb5b2ee2`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -3881,43 +3881,43 @@ CMD ["bash"]
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Fri, 07 Jan 2022 04:22:19 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 07 Jan 2022 04:24:52 GMT
-ENV JAVA_VERSION=jdk-11.0.13+8_openj9-0.29.0
-# Fri, 07 Jan 2022 04:25:27 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='151dca23e1fdb43eaa60631c96895be9aa7bb751e7fdf88ddffa1c32157fb417';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_aarch64_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        amd64|x86_64)          ESUM='3975e2732cf632ca8f41c237ba7e033fd96bda262b79861f83b4e2ac62c90c3d';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_x64_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='7b304c52974f51611b45a2ab7949503e33a204b8a4ae705eb3c74789350174d3';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_ppc64le_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        s390x)          ESUM='6c3ebb4af0f4066e721e1f0078438458775f4b93bfd2d0be1066c54ccf015654';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_s390x_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 07 Jan 2022 04:25:32 GMT
+# Tue, 01 Feb 2022 01:23:02 GMT
+ENV JAVA_VERSION=jdk-11.0.14+9_openj9-0.30.0
+# Tue, 01 Feb 2022 01:23:30 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='1db3d93a57a66db7eec553e9350431e3092ebe20a03f871259a52e3d39b346e4';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_aarch64_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        amd64|x86_64)          ESUM='f39fc492182198503d9be5f198cf257b894a1a74de24e27c70070e7456778eb6';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_x64_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='98e8fb899ba770f85d0a9a44c3965cf87f59c6d767cecd81924176033ed28eed';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_ppc64le_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        s390x)          ESUM='7250822af05cebd2c5ec6ab4871a870d58357241a3070f20ef3623dc42317548';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_s390x_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Tue, 01 Feb 2022 01:23:36 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 07 Jan 2022 04:25:34 GMT
+# Tue, 01 Feb 2022 01:23:38 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
-# Fri, 07 Jan 2022 04:26:14 GMT
+# Tue, 01 Feb 2022 01:24:17 GMT
 RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="0db27185d9fc3174f2c670f814df3dda8a008b89d1a38a5d96cbbe119767ebfb1cf0bce956b27954aee9be19c4a7b91f2579d967932207976322033a86075f98";     TOMCAT_DWNLD_URL="https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.35/bin/apache-tomcat-9.0.35.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed";
-# Fri, 07 Jan 2022 04:26:15 GMT
+# Tue, 01 Feb 2022 01:24:20 GMT
 CMD ["jshell"]
-# Mon, 10 Jan 2022 22:46:32 GMT
+# Tue, 01 Feb 2022 02:32:59 GMT
 ARG MAVEN_VERSION=3.8.4
-# Mon, 10 Jan 2022 22:46:34 GMT
+# Tue, 01 Feb 2022 02:33:00 GMT
 ARG USER_HOME_DIR=/root
-# Mon, 10 Jan 2022 22:46:35 GMT
+# Tue, 01 Feb 2022 02:33:01 GMT
 ARG SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8
-# Mon, 10 Jan 2022 22:46:37 GMT
+# Tue, 01 Feb 2022 02:33:02 GMT
 ARG BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries
-# Mon, 10 Jan 2022 22:47:29 GMT
+# Tue, 01 Feb 2022 02:33:44 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN apt-get update     && apt-get install -y git     && rm -rf /var/lib/apt/lists/*
-# Mon, 10 Jan 2022 22:47:43 GMT
+# Tue, 01 Feb 2022 02:33:51 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN mkdir -p /usr/share/maven /usr/share/maven/ref   && curl -fsSL -o /tmp/apache-maven.tar.gz ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz   && echo "${SHA}  /tmp/apache-maven.tar.gz" | sha512sum -c -   && tar -xzf /tmp/apache-maven.tar.gz -C /usr/share/maven --strip-components=1   && rm -f /tmp/apache-maven.tar.gz   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Mon, 10 Jan 2022 22:47:46 GMT
+# Tue, 01 Feb 2022 02:33:53 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Mon, 10 Jan 2022 22:47:49 GMT
+# Tue, 01 Feb 2022 02:33:55 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Mon, 10 Jan 2022 22:47:50 GMT
+# Tue, 01 Feb 2022 02:33:56 GMT
 COPY file:1b3da5c58894f705e7387946301c0c52edb6271761ea3cd80b86a848847a64cd in /usr/local/bin/mvn-entrypoint.sh 
-# Mon, 10 Jan 2022 22:47:51 GMT
+# Tue, 01 Feb 2022 02:33:56 GMT
 COPY file:2bbb488dd73c55d658b91943cfdf9c26975a320ceafc45dda94c95b03e518ad3 in /usr/share/maven/ref/ 
-# Mon, 10 Jan 2022 22:47:55 GMT
+# Tue, 01 Feb 2022 02:33:58 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Mon, 10 Jan 2022 22:47:57 GMT
+# Tue, 01 Feb 2022 02:34:00 GMT
 CMD ["mvn"]
 ```
 
@@ -3930,42 +3930,42 @@ CMD ["mvn"]
 		Last Modified: Fri, 07 Jan 2022 04:34:49 GMT  
 		Size: 17.2 MB (17206916 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cd358a500a3d0557b6dce6f2c7c711857b0ccc7b7c6dfda87e006901a830a370`  
-		Last Modified: Fri, 07 Jan 2022 04:35:55 GMT  
-		Size: 204.1 MB (204079976 bytes)  
+	-	`sha256:921563ca21cba6b4765e33ceddd93ab3a446829b2a7d7c7fe3092825ac3c94c8`  
+		Last Modified: Tue, 01 Feb 2022 01:38:49 GMT  
+		Size: 204.3 MB (204326119 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:329160ecbc5e5a2fb214191623520fad57c6c089030e4d45617a2ed0b038aa40`  
-		Last Modified: Fri, 07 Jan 2022 04:35:33 GMT  
-		Size: 4.3 MB (4267619 bytes)  
+	-	`sha256:42d2aa19307a0bcd3ba18a18bdf9fc8ec120e288f7662bf576ae25c2b89d6b1e`  
+		Last Modified: Tue, 01 Feb 2022 01:38:28 GMT  
+		Size: 4.3 MB (4290368 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1bbdcfd5276668d7ab560a3f293aa7fc4b1a593be05c6f60885759091fdcbad1`  
-		Last Modified: Mon, 10 Jan 2022 22:51:03 GMT  
-		Size: 38.4 MB (38376143 bytes)  
+	-	`sha256:b2889beac26a108966b8ddb22c92c02d1713430cefe35a02d66716509f9873b0`  
+		Last Modified: Tue, 01 Feb 2022 02:36:48 GMT  
+		Size: 38.4 MB (38376168 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6b9347939665111da29cb4d14c8f14ae396ef011230d3d05b919316044d4f68b`  
-		Last Modified: Mon, 10 Jan 2022 22:50:57 GMT  
-		Size: 9.1 MB (9109796 bytes)  
+	-	`sha256:388aa636b0bd58d068f86d433e0db30952999fb3b2173057cd5d9acf1e3db588`  
+		Last Modified: Tue, 01 Feb 2022 02:36:42 GMT  
+		Size: 9.1 MB (9109803 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4bdb37b235c42114fd3b3835aa9b72193416bcdc6ef428244c24df0722449a8`  
-		Last Modified: Mon, 10 Jan 2022 22:50:56 GMT  
-		Size: 853.0 B  
+	-	`sha256:d3ffecc61b5f114cdfbcbe07af4b564345c0e89746cc458e810c3c35d44ac6fa`  
+		Last Modified: Tue, 01 Feb 2022 02:36:41 GMT  
+		Size: 855.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c70415142e53501535e99eac317eb652e04d4057a1e925384b6327796c44ad78`  
-		Last Modified: Mon, 10 Jan 2022 22:50:56 GMT  
-		Size: 360.0 B  
+	-	`sha256:4e6c9a3234644e9fbdc52a7a453b349ebe72b7a11ba5e1e8620bee51a3d9f6b2`  
+		Last Modified: Tue, 01 Feb 2022 02:36:41 GMT  
+		Size: 361.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3-ibm-semeru-11-focal` - linux; s390x
 
 ```console
-$ docker pull maven@sha256:20a314b6cb6256b8e6594b595d7307dbc36acdffb159b227ff4eee874b0e2ad4
+$ docker pull maven@sha256:bc2494c4b1bfc336b41c1195ca637568a3f6941b6eca2f92ec8030d176c4c89b
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **288.7 MB (288653442 bytes)**  
+-	Total Size: **288.9 MB (288874075 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6be896576b7df43558b6274b4f353f9432dd1bf21ba0b4ed7a806257406fc593`
+-	Image ID: `sha256:9369f971fb260cbbce3c4c47e158f3f65e90ab26112961f9851bd4c17b22b04d`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -3978,43 +3978,43 @@ CMD ["bash"]
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Fri, 07 Jan 2022 02:24:31 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 07 Jan 2022 02:26:16 GMT
-ENV JAVA_VERSION=jdk-11.0.13+8_openj9-0.29.0
-# Fri, 07 Jan 2022 02:26:26 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='151dca23e1fdb43eaa60631c96895be9aa7bb751e7fdf88ddffa1c32157fb417';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_aarch64_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        amd64|x86_64)          ESUM='3975e2732cf632ca8f41c237ba7e033fd96bda262b79861f83b4e2ac62c90c3d';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_x64_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='7b304c52974f51611b45a2ab7949503e33a204b8a4ae705eb3c74789350174d3';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_ppc64le_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        s390x)          ESUM='6c3ebb4af0f4066e721e1f0078438458775f4b93bfd2d0be1066c54ccf015654';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_s390x_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 07 Jan 2022 02:26:30 GMT
+# Tue, 01 Feb 2022 02:00:54 GMT
+ENV JAVA_VERSION=jdk-11.0.14+9_openj9-0.30.0
+# Tue, 01 Feb 2022 02:01:07 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='1db3d93a57a66db7eec553e9350431e3092ebe20a03f871259a52e3d39b346e4';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_aarch64_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        amd64|x86_64)          ESUM='f39fc492182198503d9be5f198cf257b894a1a74de24e27c70070e7456778eb6';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_x64_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='98e8fb899ba770f85d0a9a44c3965cf87f59c6d767cecd81924176033ed28eed';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_ppc64le_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        s390x)          ESUM='7250822af05cebd2c5ec6ab4871a870d58357241a3070f20ef3623dc42317548';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_s390x_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Tue, 01 Feb 2022 02:01:13 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 07 Jan 2022 02:26:30 GMT
+# Tue, 01 Feb 2022 02:01:13 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
-# Fri, 07 Jan 2022 02:27:03 GMT
+# Tue, 01 Feb 2022 02:01:46 GMT
 RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="0db27185d9fc3174f2c670f814df3dda8a008b89d1a38a5d96cbbe119767ebfb1cf0bce956b27954aee9be19c4a7b91f2579d967932207976322033a86075f98";     TOMCAT_DWNLD_URL="https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.35/bin/apache-tomcat-9.0.35.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed";
-# Fri, 07 Jan 2022 02:27:04 GMT
+# Tue, 01 Feb 2022 02:01:46 GMT
 CMD ["jshell"]
-# Mon, 10 Jan 2022 21:43:09 GMT
+# Tue, 01 Feb 2022 02:37:43 GMT
 ARG MAVEN_VERSION=3.8.4
-# Mon, 10 Jan 2022 21:43:09 GMT
+# Tue, 01 Feb 2022 02:37:43 GMT
 ARG USER_HOME_DIR=/root
-# Mon, 10 Jan 2022 21:43:09 GMT
+# Tue, 01 Feb 2022 02:37:43 GMT
 ARG SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8
-# Mon, 10 Jan 2022 21:43:09 GMT
+# Tue, 01 Feb 2022 02:37:43 GMT
 ARG BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries
-# Mon, 10 Jan 2022 21:43:18 GMT
+# Tue, 01 Feb 2022 02:37:52 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN apt-get update     && apt-get install -y git     && rm -rf /var/lib/apt/lists/*
-# Mon, 10 Jan 2022 21:43:22 GMT
+# Tue, 01 Feb 2022 02:38:05 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN mkdir -p /usr/share/maven /usr/share/maven/ref   && curl -fsSL -o /tmp/apache-maven.tar.gz ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz   && echo "${SHA}  /tmp/apache-maven.tar.gz" | sha512sum -c -   && tar -xzf /tmp/apache-maven.tar.gz -C /usr/share/maven --strip-components=1   && rm -f /tmp/apache-maven.tar.gz   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Mon, 10 Jan 2022 21:43:23 GMT
+# Tue, 01 Feb 2022 02:38:05 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Mon, 10 Jan 2022 21:43:23 GMT
+# Tue, 01 Feb 2022 02:38:05 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Mon, 10 Jan 2022 21:43:23 GMT
+# Tue, 01 Feb 2022 02:38:05 GMT
 COPY file:1b3da5c58894f705e7387946301c0c52edb6271761ea3cd80b86a848847a64cd in /usr/local/bin/mvn-entrypoint.sh 
-# Mon, 10 Jan 2022 21:43:23 GMT
+# Tue, 01 Feb 2022 02:38:05 GMT
 COPY file:2bbb488dd73c55d658b91943cfdf9c26975a320ceafc45dda94c95b03e518ad3 in /usr/share/maven/ref/ 
-# Mon, 10 Jan 2022 21:43:23 GMT
+# Tue, 01 Feb 2022 02:38:06 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Mon, 10 Jan 2022 21:43:23 GMT
+# Tue, 01 Feb 2022 02:38:06 GMT
 CMD ["mvn"]
 ```
 
@@ -4027,35 +4027,35 @@ CMD ["mvn"]
 		Last Modified: Fri, 07 Jan 2022 02:32:46 GMT  
 		Size: 15.7 MB (15739670 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3cc84033c8e8795eba7f0df984a6ad5fde22cb7435363bc269b87797262819d5`  
-		Last Modified: Fri, 07 Jan 2022 02:33:36 GMT  
-		Size: 200.7 MB (200748202 bytes)  
+	-	`sha256:d3396e99be3866db6cba77647ac740fc3ef419c41fa2395d192fd27e9cb88a3e`  
+		Last Modified: Tue, 01 Feb 2022 02:06:27 GMT  
+		Size: 201.0 MB (200965847 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b34c16d58740009ff1dec03b5e7cc7b79accb0a46ee95e0c76914e1f63433461`  
-		Last Modified: Fri, 07 Jan 2022 02:33:24 GMT  
-		Size: 5.2 MB (5245267 bytes)  
+	-	`sha256:aef64f00adba5b11b85d2ffd0ef30994e5549699d7adb869a4f60396bdc31cb1`  
+		Last Modified: Tue, 01 Feb 2022 02:06:14 GMT  
+		Size: 5.2 MB (5248221 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f40657ecb68ef8827a75f7e9e888bc0a3811c18ca987b7dc1ddca60f137ab24`  
-		Last Modified: Mon, 10 Jan 2022 21:45:02 GMT  
-		Size: 30.7 MB (30688291 bytes)  
+	-	`sha256:a913ae18af8718eb191fe5519ad4d67008db2217742e89868c655235b09da6e8`  
+		Last Modified: Tue, 01 Feb 2022 02:39:47 GMT  
+		Size: 30.7 MB (30688320 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f3b4fed381ad3c95420ee7ccaf30454e035beaab199f22d3661b67a613f8183b`  
-		Last Modified: Mon, 10 Jan 2022 21:44:58 GMT  
-		Size: 9.1 MB (9109803 bytes)  
+	-	`sha256:e0f3831e0fcace8bc099e33cc48d4713a8681cd774ec0c8e3e5cb53af345c1cb`  
+		Last Modified: Tue, 01 Feb 2022 02:39:43 GMT  
+		Size: 9.1 MB (9109801 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a906424b51cae699d1f4074d13361b54cf355f807d3dc7dfba5ddb6b0c077735`  
-		Last Modified: Mon, 10 Jan 2022 21:44:57 GMT  
-		Size: 850.0 B  
+	-	`sha256:059f54533ff68c07e122dac73f52bc353694362eeac56ab6f579bee99e7cf0fd`  
+		Last Modified: Tue, 01 Feb 2022 02:39:43 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e03f6d3bd26c504a87f9b26d64e43b74c47dd2fda1a6bf8636bdeb17cff5fe05`  
-		Last Modified: Mon, 10 Jan 2022 21:44:57 GMT  
-		Size: 360.0 B  
+	-	`sha256:f2574e5d60dfe8b98e5d19e5719040cbe6b413d15a7fc91c89db0e9d65c703e6`  
+		Last Modified: Tue, 01 Feb 2022 02:39:43 GMT  
+		Size: 364.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `maven:3-ibm-semeru-17-focal`
 
 ```console
-$ docker pull maven@sha256:32f1d8554e9733bb13765b811c43bb158eb232cbca14a09cff530f273b2586c4
+$ docker pull maven@sha256:efd91ad48a5413122df8e4cb35b742710d3d83abe13017dfb1c560ab6a209165
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4068,14 +4068,14 @@ $ docker pull maven@sha256:32f1d8554e9733bb13765b811c43bb158eb232cbca14a09cff530
 ### `maven:3-ibm-semeru-17-focal` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:c4becf5cf83087b6d8b6f8aa2c78673ccc46ff8cb3a3cbb610352b0063391007
+$ docker pull maven@sha256:80c9d7d49ced0691b7d9cc96748efe46e2e29ca0d22676161416a03b3e50c0ea
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **299.1 MB (299139288 bytes)**  
+-	Total Size: **299.3 MB (299329228 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:76e8eaac8dbe67c992acfd859788ae34484bbd75951b885970bb34094fd2f2b5`
+-	Image ID: `sha256:125067f47a77ca636919b0d00ffe2054bf1e29942ffc5ced099f4918405db443`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -4088,43 +4088,43 @@ CMD ["bash"]
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Fri, 07 Jan 2022 04:49:04 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 07 Jan 2022 04:54:28 GMT
-ENV JAVA_VERSION=jdk-17.0.1+12_openj9-0.29.1
-# Fri, 07 Jan 2022 04:55:01 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='5e0f80052ac4613d2d689904b20ff8b6e2bbd1edd87271db0659a646a24dfeb6';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_aarch64_linux_17.0.1_12_openj9-0.29.1.tar.gz';          ;;        amd64|x86_64)          ESUM='154f6411742ee1f8cbf004d72e7e71053b9ad4e89090cb930b6f16951e56503e';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_x64_linux_17.0.1_12_openj9-0.29.1.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='80b6389dbed9b7de9c63b1cb423e719aa5e6fbab42387fdb1f68d9d199bf5196';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_ppc64le_linux_17.0.1_12_openj9-0.29.1.tar.gz';         ;;       s390x)          ESUM='56e01c97f98bfb2cf9959b09b5d0cfae9993f82f1f54f77ef1199425c0b64bc2';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_s390x_linux_17.0.1_12_openj9-0.29.1.tar.gz';          ;;       *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 07 Jan 2022 04:55:02 GMT
+# Tue, 01 Feb 2022 01:48:11 GMT
+ENV JAVA_VERSION=jdk-jdk-17.0.2+8_openj9-0.30.0
+# Tue, 01 Feb 2022 01:48:35 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='c2dc7558f9bdbc88329d0e8af6f694c71e8c95531d44ed003b8510535cecd2cc';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_aarch64_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;        amd64|x86_64)          ESUM='2e35d0b10dce880a2447e7c8b5d87b8aa63c693440744089590bec2d6f1490a7';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_x64_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='218d122c6ab34f13b300e003830f23df25a8a6dc86b1ca6be261e471a5627537';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_ppc64le_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;        s390x)          ESUM='cd39a1162145a76de214150c8b0f165c4f82cbda62f21063f18c7a011c97d21e';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_s390x_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;       *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Tue, 01 Feb 2022 01:48:36 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 07 Jan 2022 04:55:02 GMT
+# Tue, 01 Feb 2022 01:48:36 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
-# Fri, 07 Jan 2022 04:55:38 GMT
+# Tue, 01 Feb 2022 01:49:16 GMT
 RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="0db27185d9fc3174f2c670f814df3dda8a008b89d1a38a5d96cbbe119767ebfb1cf0bce956b27954aee9be19c4a7b91f2579d967932207976322033a86075f98";     TOMCAT_DWNLD_URL="https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.35/bin/apache-tomcat-9.0.35.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed";
-# Fri, 07 Jan 2022 04:55:38 GMT
+# Tue, 01 Feb 2022 01:49:16 GMT
 CMD ["jshell"]
-# Mon, 10 Jan 2022 22:31:32 GMT
+# Tue, 01 Feb 2022 02:29:52 GMT
 ARG MAVEN_VERSION=3.8.4
-# Mon, 10 Jan 2022 22:31:32 GMT
+# Tue, 01 Feb 2022 02:29:52 GMT
 ARG USER_HOME_DIR=/root
-# Mon, 10 Jan 2022 22:31:33 GMT
+# Tue, 01 Feb 2022 02:29:52 GMT
 ARG SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8
-# Mon, 10 Jan 2022 22:31:33 GMT
+# Tue, 01 Feb 2022 02:29:52 GMT
 ARG BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries
-# Mon, 10 Jan 2022 22:31:42 GMT
+# Tue, 01 Feb 2022 02:30:00 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN apt-get update     && apt-get install -y git     && rm -rf /var/lib/apt/lists/*
-# Mon, 10 Jan 2022 22:31:45 GMT
+# Tue, 01 Feb 2022 02:30:08 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN mkdir -p /usr/share/maven /usr/share/maven/ref   && curl -fsSL -o /tmp/apache-maven.tar.gz ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz   && echo "${SHA}  /tmp/apache-maven.tar.gz" | sha512sum -c -   && tar -xzf /tmp/apache-maven.tar.gz -C /usr/share/maven --strip-components=1   && rm -f /tmp/apache-maven.tar.gz   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Mon, 10 Jan 2022 22:31:45 GMT
+# Tue, 01 Feb 2022 02:30:08 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Mon, 10 Jan 2022 22:31:45 GMT
+# Tue, 01 Feb 2022 02:30:08 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Mon, 10 Jan 2022 22:31:45 GMT
+# Tue, 01 Feb 2022 02:30:09 GMT
 COPY file:1b3da5c58894f705e7387946301c0c52edb6271761ea3cd80b86a848847a64cd in /usr/local/bin/mvn-entrypoint.sh 
-# Mon, 10 Jan 2022 22:31:45 GMT
+# Tue, 01 Feb 2022 02:30:09 GMT
 COPY file:2bbb488dd73c55d658b91943cfdf9c26975a320ceafc45dda94c95b03e518ad3 in /usr/share/maven/ref/ 
-# Mon, 10 Jan 2022 22:31:46 GMT
+# Tue, 01 Feb 2022 02:30:09 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Mon, 10 Jan 2022 22:31:46 GMT
+# Tue, 01 Feb 2022 02:30:09 GMT
 CMD ["mvn"]
 ```
 
@@ -4137,42 +4137,42 @@ CMD ["mvn"]
 		Last Modified: Fri, 07 Jan 2022 04:57:29 GMT  
 		Size: 16.0 MB (16032427 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87b4d1272155911f56795974ec0af6448a18819efdbdb547b851a2fd10285b38`  
-		Last Modified: Fri, 07 Jan 2022 04:59:41 GMT  
-		Size: 208.4 MB (208388838 bytes)  
+	-	`sha256:476557e8c1a9f1b12365d48d11a125877dffbf906921b425d775ecf5426a683c`  
+		Last Modified: Tue, 01 Feb 2022 01:56:22 GMT  
+		Size: 208.6 MB (208589686 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee5a8c165cd797722c9a391c36b43066c7c125f2c991ad0d94fd6d33af91c8e8`  
-		Last Modified: Fri, 07 Jan 2022 04:59:28 GMT  
-		Size: 5.9 MB (5870151 bytes)  
+	-	`sha256:8ce124f00ef397f6c9dda5b21b3a36e4df82777e1bc8c31b02fb578f610fa3ca`  
+		Last Modified: Tue, 01 Feb 2022 01:56:07 GMT  
+		Size: 5.9 MB (5859277 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bef7ec517e3780fb4dfad1f73454863ea757ba24c363c16870b80052fe86c2f2`  
-		Last Modified: Mon, 10 Jan 2022 22:34:17 GMT  
-		Size: 31.2 MB (31170435 bytes)  
+	-	`sha256:df8cd63f16dd987f353369ded482d299f5da7052668687e9b527d6367d322e10`  
+		Last Modified: Tue, 01 Feb 2022 02:32:32 GMT  
+		Size: 31.2 MB (31170393 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4e794e93d0f6e65972081431abe7a357323d99b0cd9b369ddf8bd4d8df3205dd`  
-		Last Modified: Mon, 10 Jan 2022 22:34:12 GMT  
-		Size: 9.1 MB (9109801 bytes)  
+	-	`sha256:191e842b29e71c41d3c98c937bd8486494aa648b7b27c5f684a5d9088f2807cc`  
+		Last Modified: Tue, 01 Feb 2022 02:32:28 GMT  
+		Size: 9.1 MB (9109806 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14e775d125b360a0493d19b62b771797c9c40d41089ad35ccda53343a36cd304`  
-		Last Modified: Mon, 10 Jan 2022 22:34:11 GMT  
-		Size: 852.0 B  
+	-	`sha256:eb85c6199094e94e9911f57e33cd43177e73367f1212f8c9a8682e075637376e`  
+		Last Modified: Tue, 01 Feb 2022 02:32:28 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ca22d41a6f3a57fa49e1922d4d1d0acc0704671b59103bef8011fdef4f92331`  
-		Last Modified: Mon, 10 Jan 2022 22:34:11 GMT  
-		Size: 359.0 B  
+	-	`sha256:a4ae8fabe2cc88006b97cb842ba38d3946dd039e4992ca690a3ad6b2f655f7ec`  
+		Last Modified: Tue, 01 Feb 2022 02:32:27 GMT  
+		Size: 361.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3-ibm-semeru-17-focal` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:99843f7f8960649a5f58050611e175fd8835d775545dc9e0bd431bd5e6d17339
+$ docker pull maven@sha256:1ba0d9078c55cbc5d914014491a64f984b5d5e1933fd29346f55f125cd86aa0c
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **292.1 MB (292088064 bytes)**  
+-	Total Size: **292.3 MB (292315276 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:543c234f5c6c06244493b403918d6e65aab748a0a4e04f334f189b736e62536d`
+-	Image ID: `sha256:c4a8b1c130529f54f50413c6e2854e3e60f20052a712c8a2398d7026fe375d5d`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -4185,43 +4185,43 @@ CMD ["bash"]
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Fri, 07 Jan 2022 02:41:57 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 07 Jan 2022 19:40:28 GMT
-ENV JAVA_VERSION=jdk-17.0.1+12_openj9-0.29.1
-# Fri, 07 Jan 2022 19:40:45 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='5e0f80052ac4613d2d689904b20ff8b6e2bbd1edd87271db0659a646a24dfeb6';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_aarch64_linux_17.0.1_12_openj9-0.29.1.tar.gz';          ;;        amd64|x86_64)          ESUM='154f6411742ee1f8cbf004d72e7e71053b9ad4e89090cb930b6f16951e56503e';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_x64_linux_17.0.1_12_openj9-0.29.1.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='80b6389dbed9b7de9c63b1cb423e719aa5e6fbab42387fdb1f68d9d199bf5196';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_ppc64le_linux_17.0.1_12_openj9-0.29.1.tar.gz';         ;;       s390x)          ESUM='56e01c97f98bfb2cf9959b09b5d0cfae9993f82f1f54f77ef1199425c0b64bc2';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_s390x_linux_17.0.1_12_openj9-0.29.1.tar.gz';          ;;       *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 07 Jan 2022 19:40:46 GMT
+# Tue, 01 Feb 2022 02:26:39 GMT
+ENV JAVA_VERSION=jdk-jdk-17.0.2+8_openj9-0.30.0
+# Tue, 01 Feb 2022 02:26:53 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='c2dc7558f9bdbc88329d0e8af6f694c71e8c95531d44ed003b8510535cecd2cc';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_aarch64_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;        amd64|x86_64)          ESUM='2e35d0b10dce880a2447e7c8b5d87b8aa63c693440744089590bec2d6f1490a7';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_x64_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='218d122c6ab34f13b300e003830f23df25a8a6dc86b1ca6be261e471a5627537';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_ppc64le_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;        s390x)          ESUM='cd39a1162145a76de214150c8b0f165c4f82cbda62f21063f18c7a011c97d21e';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_s390x_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;       *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Tue, 01 Feb 2022 02:26:53 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 07 Jan 2022 19:40:47 GMT
+# Tue, 01 Feb 2022 02:26:54 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
-# Fri, 07 Jan 2022 19:41:23 GMT
+# Tue, 01 Feb 2022 02:27:30 GMT
 RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="0db27185d9fc3174f2c670f814df3dda8a008b89d1a38a5d96cbbe119767ebfb1cf0bce956b27954aee9be19c4a7b91f2579d967932207976322033a86075f98";     TOMCAT_DWNLD_URL="https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.35/bin/apache-tomcat-9.0.35.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed";
-# Fri, 07 Jan 2022 19:41:24 GMT
+# Tue, 01 Feb 2022 02:27:30 GMT
 CMD ["jshell"]
-# Mon, 10 Jan 2022 21:42:41 GMT
+# Tue, 01 Feb 2022 03:15:36 GMT
 ARG MAVEN_VERSION=3.8.4
-# Mon, 10 Jan 2022 21:42:41 GMT
+# Tue, 01 Feb 2022 03:15:37 GMT
 ARG USER_HOME_DIR=/root
-# Mon, 10 Jan 2022 21:42:42 GMT
+# Tue, 01 Feb 2022 03:15:38 GMT
 ARG SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8
-# Mon, 10 Jan 2022 21:42:43 GMT
+# Tue, 01 Feb 2022 03:15:39 GMT
 ARG BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries
-# Mon, 10 Jan 2022 21:42:57 GMT
+# Tue, 01 Feb 2022 03:15:52 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN apt-get update     && apt-get install -y git     && rm -rf /var/lib/apt/lists/*
-# Mon, 10 Jan 2022 21:43:10 GMT
+# Tue, 01 Feb 2022 03:15:56 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN mkdir -p /usr/share/maven /usr/share/maven/ref   && curl -fsSL -o /tmp/apache-maven.tar.gz ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz   && echo "${SHA}  /tmp/apache-maven.tar.gz" | sha512sum -c -   && tar -xzf /tmp/apache-maven.tar.gz -C /usr/share/maven --strip-components=1   && rm -f /tmp/apache-maven.tar.gz   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Mon, 10 Jan 2022 21:43:11 GMT
+# Tue, 01 Feb 2022 03:15:57 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Mon, 10 Jan 2022 21:43:12 GMT
+# Tue, 01 Feb 2022 03:15:58 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Mon, 10 Jan 2022 21:43:14 GMT
+# Tue, 01 Feb 2022 03:16:00 GMT
 COPY file:1b3da5c58894f705e7387946301c0c52edb6271761ea3cd80b86a848847a64cd in /usr/local/bin/mvn-entrypoint.sh 
-# Mon, 10 Jan 2022 21:43:15 GMT
+# Tue, 01 Feb 2022 03:16:01 GMT
 COPY file:2bbb488dd73c55d658b91943cfdf9c26975a320ceafc45dda94c95b03e518ad3 in /usr/share/maven/ref/ 
-# Mon, 10 Jan 2022 21:43:15 GMT
+# Tue, 01 Feb 2022 03:16:01 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Mon, 10 Jan 2022 21:43:16 GMT
+# Tue, 01 Feb 2022 03:16:02 GMT
 CMD ["mvn"]
 ```
 
@@ -4234,42 +4234,42 @@ CMD ["mvn"]
 		Last Modified: Fri, 07 Jan 2022 02:46:50 GMT  
 		Size: 15.9 MB (15894303 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fbcd324088ba527ea466905250d0bfb3ffe191a8c868e6624f8f1c738b1b02e9`  
-		Last Modified: Fri, 07 Jan 2022 19:46:04 GMT  
-		Size: 203.3 MB (203293772 bytes)  
+	-	`sha256:d1162362814a04541f7c7058e646652a69b8f16ff7225822d2cee695a981c4b2`  
+		Last Modified: Tue, 01 Feb 2022 02:35:07 GMT  
+		Size: 203.4 MB (203432646 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:56ab9bb7d9e3efd7836528a4a8aa5879ffcc69cfeb389ab16b7b7183ee348238`  
-		Last Modified: Fri, 07 Jan 2022 19:45:47 GMT  
-		Size: 5.7 MB (5653210 bytes)  
+	-	`sha256:37b9b5c9e70551611427484c97762286dba3af1e10206ca67f1c698d546d567d`  
+		Last Modified: Tue, 01 Feb 2022 02:34:50 GMT  
+		Size: 5.7 MB (5741493 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:64ec9a1c4ca37d826815c3a0bea8e794be7f282ee956ccea9c349323f641b18b`  
-		Last Modified: Mon, 10 Jan 2022 21:46:37 GMT  
-		Size: 31.0 MB (30964728 bytes)  
+	-	`sha256:146ea8495ab1dc5816621bad74455d6fc626e13a0b744252218200eec86e0c4e`  
+		Last Modified: Tue, 01 Feb 2022 03:19:23 GMT  
+		Size: 31.0 MB (30964777 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7e1e173ec62f495cccca89509b15a9092021f20d1ada1eb3e29010a4f8edb7f`  
-		Last Modified: Mon, 10 Jan 2022 21:46:34 GMT  
-		Size: 9.1 MB (9109762 bytes)  
+	-	`sha256:c7bd557f7e8007c967c310783a21812f395495de47fae1a7f7a8f13683503012`  
+		Last Modified: Tue, 01 Feb 2022 03:19:19 GMT  
+		Size: 9.1 MB (9109769 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa22e29d02f63dfb97204d1cb8431268136e4bd13eaf249cc85c9fdf82a23145`  
-		Last Modified: Mon, 10 Jan 2022 21:46:32 GMT  
+	-	`sha256:5d67eaa0b8c15b7b4d5d5a3135bd5e3abebe5f6d4f4cb31b11e74cb285e28c05`  
+		Last Modified: Tue, 01 Feb 2022 03:19:18 GMT  
 		Size: 852.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:520bd40410dc9ac2a2c7506ede19290cfa905f642b846f78a73f56a626237ccd`  
-		Last Modified: Mon, 10 Jan 2022 21:46:33 GMT  
-		Size: 363.0 B  
+	-	`sha256:29b741cc5519c54c83116e35f6bc27476601508604b8444964d4e559716a4605`  
+		Last Modified: Tue, 01 Feb 2022 03:19:18 GMT  
+		Size: 362.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3-ibm-semeru-17-focal` - linux; ppc64le
 
 ```console
-$ docker pull maven@sha256:86974bd804682eb466e2b5376a95b7575da696ef9ffaf70235e5935b6e24cf7d
+$ docker pull maven@sha256:ea277945002c9ae9f9c8f1658696d569bda4474a4400ab47ff42a89aef3057e4
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **311.6 MB (311550719 bytes)**  
+-	Total Size: **311.8 MB (311767020 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d522a2768167c9a7e500d70659bf777d71104b69df90ef520bb6f0d0a3849f4a`
+-	Image ID: `sha256:ff77f4eba58cb6f7614a139dcb06520404824e4eaf30eba48909db443e2df04f`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -4282,43 +4282,43 @@ CMD ["bash"]
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Fri, 07 Jan 2022 04:22:19 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 07 Jan 2022 04:30:40 GMT
-ENV JAVA_VERSION=jdk-17.0.1+12_openj9-0.29.1
-# Fri, 07 Jan 2022 04:31:01 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='5e0f80052ac4613d2d689904b20ff8b6e2bbd1edd87271db0659a646a24dfeb6';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_aarch64_linux_17.0.1_12_openj9-0.29.1.tar.gz';          ;;        amd64|x86_64)          ESUM='154f6411742ee1f8cbf004d72e7e71053b9ad4e89090cb930b6f16951e56503e';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_x64_linux_17.0.1_12_openj9-0.29.1.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='80b6389dbed9b7de9c63b1cb423e719aa5e6fbab42387fdb1f68d9d199bf5196';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_ppc64le_linux_17.0.1_12_openj9-0.29.1.tar.gz';         ;;       s390x)          ESUM='56e01c97f98bfb2cf9959b09b5d0cfae9993f82f1f54f77ef1199425c0b64bc2';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_s390x_linux_17.0.1_12_openj9-0.29.1.tar.gz';          ;;       *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 07 Jan 2022 04:31:05 GMT
+# Tue, 01 Feb 2022 01:29:19 GMT
+ENV JAVA_VERSION=jdk-jdk-17.0.2+8_openj9-0.30.0
+# Tue, 01 Feb 2022 01:29:40 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='c2dc7558f9bdbc88329d0e8af6f694c71e8c95531d44ed003b8510535cecd2cc';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_aarch64_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;        amd64|x86_64)          ESUM='2e35d0b10dce880a2447e7c8b5d87b8aa63c693440744089590bec2d6f1490a7';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_x64_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='218d122c6ab34f13b300e003830f23df25a8a6dc86b1ca6be261e471a5627537';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_ppc64le_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;        s390x)          ESUM='cd39a1162145a76de214150c8b0f165c4f82cbda62f21063f18c7a011c97d21e';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_s390x_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;       *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Tue, 01 Feb 2022 01:29:46 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 07 Jan 2022 04:31:09 GMT
+# Tue, 01 Feb 2022 01:29:53 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
-# Fri, 07 Jan 2022 04:31:48 GMT
+# Tue, 01 Feb 2022 01:30:39 GMT
 RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="0db27185d9fc3174f2c670f814df3dda8a008b89d1a38a5d96cbbe119767ebfb1cf0bce956b27954aee9be19c4a7b91f2579d967932207976322033a86075f98";     TOMCAT_DWNLD_URL="https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.35/bin/apache-tomcat-9.0.35.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed";
-# Fri, 07 Jan 2022 04:31:51 GMT
+# Tue, 01 Feb 2022 01:30:44 GMT
 CMD ["jshell"]
-# Mon, 10 Jan 2022 22:48:12 GMT
+# Tue, 01 Feb 2022 02:34:11 GMT
 ARG MAVEN_VERSION=3.8.4
-# Mon, 10 Jan 2022 22:48:13 GMT
+# Tue, 01 Feb 2022 02:34:12 GMT
 ARG USER_HOME_DIR=/root
-# Mon, 10 Jan 2022 22:48:17 GMT
+# Tue, 01 Feb 2022 02:34:14 GMT
 ARG SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8
-# Mon, 10 Jan 2022 22:48:20 GMT
+# Tue, 01 Feb 2022 02:34:15 GMT
 ARG BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries
-# Mon, 10 Jan 2022 22:49:15 GMT
+# Tue, 01 Feb 2022 02:35:02 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN apt-get update     && apt-get install -y git     && rm -rf /var/lib/apt/lists/*
-# Mon, 10 Jan 2022 22:49:23 GMT
+# Tue, 01 Feb 2022 02:35:12 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN mkdir -p /usr/share/maven /usr/share/maven/ref   && curl -fsSL -o /tmp/apache-maven.tar.gz ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz   && echo "${SHA}  /tmp/apache-maven.tar.gz" | sha512sum -c -   && tar -xzf /tmp/apache-maven.tar.gz -C /usr/share/maven --strip-components=1   && rm -f /tmp/apache-maven.tar.gz   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Mon, 10 Jan 2022 22:49:25 GMT
+# Tue, 01 Feb 2022 02:35:14 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Mon, 10 Jan 2022 22:49:27 GMT
+# Tue, 01 Feb 2022 02:35:15 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Mon, 10 Jan 2022 22:49:28 GMT
+# Tue, 01 Feb 2022 02:35:16 GMT
 COPY file:1b3da5c58894f705e7387946301c0c52edb6271761ea3cd80b86a848847a64cd in /usr/local/bin/mvn-entrypoint.sh 
-# Mon, 10 Jan 2022 22:49:29 GMT
+# Tue, 01 Feb 2022 02:35:17 GMT
 COPY file:2bbb488dd73c55d658b91943cfdf9c26975a320ceafc45dda94c95b03e518ad3 in /usr/share/maven/ref/ 
-# Mon, 10 Jan 2022 22:49:31 GMT
+# Tue, 01 Feb 2022 02:35:19 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Mon, 10 Jan 2022 22:49:32 GMT
+# Tue, 01 Feb 2022 02:35:20 GMT
 CMD ["mvn"]
 ```
 
@@ -4331,42 +4331,42 @@ CMD ["mvn"]
 		Last Modified: Fri, 07 Jan 2022 04:34:49 GMT  
 		Size: 17.2 MB (17206916 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ebdd9d98a6dea2a986725972e7c6e59691339cc5ec3e108a271202b3864b78e2`  
-		Last Modified: Fri, 07 Jan 2022 04:37:54 GMT  
-		Size: 208.8 MB (208777828 bytes)  
+	-	`sha256:f80c180721b4c9de57fc4a7d9a5e3d5f6e5bbdf3af32cd700b10945d2e1d2f15`  
+		Last Modified: Tue, 01 Feb 2022 01:40:46 GMT  
+		Size: 209.0 MB (208963184 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad4b689f5c12df1386bdd86f9cab4b8bab70886d26c325457b70bc85c2c70f69`  
-		Last Modified: Fri, 07 Jan 2022 04:37:33 GMT  
-		Size: 4.8 MB (4792030 bytes)  
+	-	`sha256:40cbc6b62bb78013e4eb98dfcabe8574ef019e86a580ce632cfd425fd52d767d`  
+		Last Modified: Tue, 01 Feb 2022 01:40:23 GMT  
+		Size: 4.8 MB (4822811 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3814ac990f361a50a37b6f08f5ae6fbf2d9c81ed5c872815759bd341870aeacf`  
-		Last Modified: Mon, 10 Jan 2022 22:51:26 GMT  
-		Size: 38.4 MB (38376040 bytes)  
+	-	`sha256:6998cab0583766a33967fc9249825de619496a6826e56037a4fb5cd1e1903116`  
+		Last Modified: Tue, 01 Feb 2022 02:37:12 GMT  
+		Size: 38.4 MB (38376208 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4f46e9d369f81200f91bf0f40e4772e67c5912263a1d9fcae5d095290a053f48`  
-		Last Modified: Mon, 10 Jan 2022 22:51:19 GMT  
-		Size: 9.1 MB (9109798 bytes)  
+	-	`sha256:7abc05a880a98ed4585aca9db94419aaa0c2d4aeb2c50e36a842ffb4431cfde4`  
+		Last Modified: Tue, 01 Feb 2022 02:37:05 GMT  
+		Size: 9.1 MB (9109794 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fca9cdf4d305463b6b2a6c8c1902ab92346c87706bb30d6ca8ca42ddc7f29e9f`  
-		Last Modified: Mon, 10 Jan 2022 22:51:18 GMT  
+	-	`sha256:830f36a62f1838429fb0b0c264dc50c15bb5854b8876b2253a8593b8f2e45cbd`  
+		Last Modified: Tue, 01 Feb 2022 02:37:04 GMT  
 		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e08a0ccceac8acf388a588ca21a77dc9937ff67cfba1335990479fa2f7509eea`  
-		Last Modified: Mon, 10 Jan 2022 22:51:18 GMT  
+	-	`sha256:e252dbd32c59b49a1310253036b6cfaa78e832cd28547132824f0fc4b2426385`  
+		Last Modified: Tue, 01 Feb 2022 02:37:04 GMT  
 		Size: 361.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3-ibm-semeru-17-focal` - linux; s390x
 
 ```console
-$ docker pull maven@sha256:922c27866e73b45844be512c33f5d937d8f4864ecf5aef857c6fdbe53369ad37
+$ docker pull maven@sha256:4633016a23131d525067bbac3f048e511afc91d1c6483ede9503f680bdc99ca9
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **293.1 MB (293084366 bytes)**  
+-	Total Size: **293.3 MB (293262137 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:444f9ba066c3f678119e1cf10975bea5630a7adf0548c318f3556ef5001f0857`
+-	Image ID: `sha256:64e928eac25e0b2dc1368dd0b49b693840d08bc0c73e0bc87d6cfce19c5f4948`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -4379,43 +4379,43 @@ CMD ["bash"]
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Fri, 07 Jan 2022 02:24:31 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 07 Jan 2022 02:29:51 GMT
-ENV JAVA_VERSION=jdk-17.0.1+12_openj9-0.29.1
-# Fri, 07 Jan 2022 02:30:01 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='5e0f80052ac4613d2d689904b20ff8b6e2bbd1edd87271db0659a646a24dfeb6';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_aarch64_linux_17.0.1_12_openj9-0.29.1.tar.gz';          ;;        amd64|x86_64)          ESUM='154f6411742ee1f8cbf004d72e7e71053b9ad4e89090cb930b6f16951e56503e';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_x64_linux_17.0.1_12_openj9-0.29.1.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='80b6389dbed9b7de9c63b1cb423e719aa5e6fbab42387fdb1f68d9d199bf5196';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_ppc64le_linux_17.0.1_12_openj9-0.29.1.tar.gz';         ;;       s390x)          ESUM='56e01c97f98bfb2cf9959b09b5d0cfae9993f82f1f54f77ef1199425c0b64bc2';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_s390x_linux_17.0.1_12_openj9-0.29.1.tar.gz';          ;;       *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 07 Jan 2022 02:30:07 GMT
+# Tue, 01 Feb 2022 02:02:58 GMT
+ENV JAVA_VERSION=jdk-jdk-17.0.2+8_openj9-0.30.0
+# Tue, 01 Feb 2022 02:03:10 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='c2dc7558f9bdbc88329d0e8af6f694c71e8c95531d44ed003b8510535cecd2cc';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_aarch64_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;        amd64|x86_64)          ESUM='2e35d0b10dce880a2447e7c8b5d87b8aa63c693440744089590bec2d6f1490a7';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_x64_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='218d122c6ab34f13b300e003830f23df25a8a6dc86b1ca6be261e471a5627537';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_ppc64le_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;        s390x)          ESUM='cd39a1162145a76de214150c8b0f165c4f82cbda62f21063f18c7a011c97d21e';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_s390x_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;       *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Tue, 01 Feb 2022 02:03:16 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 07 Jan 2022 02:30:07 GMT
+# Tue, 01 Feb 2022 02:03:16 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
-# Fri, 07 Jan 2022 02:30:42 GMT
+# Tue, 01 Feb 2022 02:03:49 GMT
 RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="0db27185d9fc3174f2c670f814df3dda8a008b89d1a38a5d96cbbe119767ebfb1cf0bce956b27954aee9be19c4a7b91f2579d967932207976322033a86075f98";     TOMCAT_DWNLD_URL="https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.35/bin/apache-tomcat-9.0.35.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed";
-# Fri, 07 Jan 2022 02:30:42 GMT
+# Tue, 01 Feb 2022 02:03:49 GMT
 CMD ["jshell"]
-# Mon, 10 Jan 2022 21:43:30 GMT
+# Tue, 01 Feb 2022 02:38:14 GMT
 ARG MAVEN_VERSION=3.8.4
-# Mon, 10 Jan 2022 21:43:30 GMT
+# Tue, 01 Feb 2022 02:38:14 GMT
 ARG USER_HOME_DIR=/root
-# Mon, 10 Jan 2022 21:43:31 GMT
+# Tue, 01 Feb 2022 02:38:15 GMT
 ARG SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8
-# Mon, 10 Jan 2022 21:43:31 GMT
+# Tue, 01 Feb 2022 02:38:15 GMT
 ARG BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries
-# Mon, 10 Jan 2022 21:43:40 GMT
+# Tue, 01 Feb 2022 02:38:24 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN apt-get update     && apt-get install -y git     && rm -rf /var/lib/apt/lists/*
-# Mon, 10 Jan 2022 21:43:44 GMT
+# Tue, 01 Feb 2022 02:38:28 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN mkdir -p /usr/share/maven /usr/share/maven/ref   && curl -fsSL -o /tmp/apache-maven.tar.gz ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz   && echo "${SHA}  /tmp/apache-maven.tar.gz" | sha512sum -c -   && tar -xzf /tmp/apache-maven.tar.gz -C /usr/share/maven --strip-components=1   && rm -f /tmp/apache-maven.tar.gz   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Mon, 10 Jan 2022 21:43:44 GMT
+# Tue, 01 Feb 2022 02:38:28 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Mon, 10 Jan 2022 21:43:44 GMT
+# Tue, 01 Feb 2022 02:38:28 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Mon, 10 Jan 2022 21:43:44 GMT
+# Tue, 01 Feb 2022 02:38:28 GMT
 COPY file:1b3da5c58894f705e7387946301c0c52edb6271761ea3cd80b86a848847a64cd in /usr/local/bin/mvn-entrypoint.sh 
-# Mon, 10 Jan 2022 21:43:44 GMT
+# Tue, 01 Feb 2022 02:38:29 GMT
 COPY file:2bbb488dd73c55d658b91943cfdf9c26975a320ceafc45dda94c95b03e518ad3 in /usr/share/maven/ref/ 
-# Mon, 10 Jan 2022 21:43:45 GMT
+# Tue, 01 Feb 2022 02:38:29 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Mon, 10 Jan 2022 21:43:45 GMT
+# Tue, 01 Feb 2022 02:38:29 GMT
 CMD ["mvn"]
 ```
 
@@ -4428,29 +4428,29 @@ CMD ["mvn"]
 		Last Modified: Fri, 07 Jan 2022 02:32:46 GMT  
 		Size: 15.7 MB (15739670 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:26895d5767c9b753c5f78a81886caebd33d5dc75ae1c108da768dab052f7e42d`  
-		Last Modified: Fri, 07 Jan 2022 02:34:47 GMT  
-		Size: 204.4 MB (204443746 bytes)  
+	-	`sha256:3c0b384c02ce171d3c5fced114e81d8abba133ca30c4ce412802e35127f50652`  
+		Last Modified: Tue, 01 Feb 2022 02:07:04 GMT  
+		Size: 204.6 MB (204621533 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3716b6fe4c57feab18f1fe61c43efb16bb68330997bb2330444e4614e523ece2`  
-		Last Modified: Fri, 07 Jan 2022 02:34:33 GMT  
-		Size: 6.0 MB (5980788 bytes)  
+	-	`sha256:51bdecda3917ebe274d2bf884f6b774679bf5483e65bc2ac9a1fd9ed645731f3`  
+		Last Modified: Tue, 01 Feb 2022 02:06:51 GMT  
+		Size: 6.0 MB (5980644 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ffacfd4c9dee817820f95547ff8e34570c797218730b6944561a1d70a066aab`  
-		Last Modified: Mon, 10 Jan 2022 21:45:16 GMT  
-		Size: 30.7 MB (30688134 bytes)  
+	-	`sha256:b7b8efa3cd693d26b38cfd7c975b49a3b6131a6f4a3c6896ff85457f14a79a53`  
+		Last Modified: Tue, 01 Feb 2022 02:40:01 GMT  
+		Size: 30.7 MB (30688271 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:53b369c45cf7f977b8920f9b959d87bdd8768266fd99501d8895c9fb78c9cf43`  
-		Last Modified: Mon, 10 Jan 2022 21:45:12 GMT  
-		Size: 9.1 MB (9109817 bytes)  
+	-	`sha256:bce36f971f23eea69b812cb4615685548861640a87affedbd24735d74c88a91c`  
+		Last Modified: Tue, 01 Feb 2022 02:39:56 GMT  
+		Size: 9.1 MB (9109808 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba3ababa5f451b5f683c44d1c48765997427af0738d4b5ff3ac1b8c3dc0585ee`  
-		Last Modified: Mon, 10 Jan 2022 21:45:12 GMT  
-		Size: 850.0 B  
+	-	`sha256:f4985614bb72de81597c4172f927a45efa67b4a90e3e702ad805f48da87125f9`  
+		Last Modified: Tue, 01 Feb 2022 02:39:56 GMT  
+		Size: 851.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:62e7b141d00eacec8911ca28e081ff22e553435c483e12fd2dcacaf07d08b3f1`  
-		Last Modified: Mon, 10 Jan 2022 21:45:12 GMT  
-		Size: 362.0 B  
+	-	`sha256:1fe34fcd489ba925828097929c9e41f4b2dcd13de323abcfcdb253f55959d6e5`  
+		Last Modified: Tue, 01 Feb 2022 02:39:56 GMT  
+		Size: 361.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `maven:3-ibmjava`
@@ -11068,7 +11068,7 @@ CMD ["mvn"]
 ## `maven:3.8-ibm-semeru-11-focal`
 
 ```console
-$ docker pull maven@sha256:84b9cf31344c75e3ad7e327514ff1ed486ecbc75ac9aa96b426f16eb546e8c8a
+$ docker pull maven@sha256:5569c18d761880ac762e9de0b9b0701a17a0dce73712777f10fba6192d4dbcd9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11081,14 +11081,14 @@ $ docker pull maven@sha256:84b9cf31344c75e3ad7e327514ff1ed486ecbc75ac9aa96b426f1
 ### `maven:3.8-ibm-semeru-11-focal` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:5415ed40e7f3d79da976e41e0323c1b6d939780fd74d5333584007393313cf7a
+$ docker pull maven@sha256:4d3cc64f0ff5f50ea756c42eaef2efb9c4ec67bd693a3c8ea08bc1a06da636c0
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **293.2 MB (293249169 bytes)**  
+-	Total Size: **293.6 MB (293640718 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4efc994685ae228995ff4e05e5954e979f5508e84308019f4e3311dd6bf84ebd`
+-	Image ID: `sha256:45ba00f7262440b1a5482dd42a54c738f5fafa05676c7216612a1fb26269dc9a`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -11101,43 +11101,43 @@ CMD ["bash"]
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Fri, 07 Jan 2022 04:49:04 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 07 Jan 2022 04:50:50 GMT
-ENV JAVA_VERSION=jdk-11.0.13+8_openj9-0.29.0
-# Fri, 07 Jan 2022 04:51:05 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='151dca23e1fdb43eaa60631c96895be9aa7bb751e7fdf88ddffa1c32157fb417';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_aarch64_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        amd64|x86_64)          ESUM='3975e2732cf632ca8f41c237ba7e033fd96bda262b79861f83b4e2ac62c90c3d';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_x64_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='7b304c52974f51611b45a2ab7949503e33a204b8a4ae705eb3c74789350174d3';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_ppc64le_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        s390x)          ESUM='6c3ebb4af0f4066e721e1f0078438458775f4b93bfd2d0be1066c54ccf015654';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_s390x_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 07 Jan 2022 04:51:05 GMT
+# Tue, 01 Feb 2022 01:44:03 GMT
+ENV JAVA_VERSION=jdk-11.0.14+9_openj9-0.30.0
+# Tue, 01 Feb 2022 01:44:18 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='1db3d93a57a66db7eec553e9350431e3092ebe20a03f871259a52e3d39b346e4';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_aarch64_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        amd64|x86_64)          ESUM='f39fc492182198503d9be5f198cf257b894a1a74de24e27c70070e7456778eb6';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_x64_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='98e8fb899ba770f85d0a9a44c3965cf87f59c6d767cecd81924176033ed28eed';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_ppc64le_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        s390x)          ESUM='7250822af05cebd2c5ec6ab4871a870d58357241a3070f20ef3623dc42317548';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_s390x_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Tue, 01 Feb 2022 01:44:19 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 07 Jan 2022 04:51:06 GMT
+# Tue, 01 Feb 2022 01:44:19 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
-# Fri, 07 Jan 2022 04:51:41 GMT
+# Tue, 01 Feb 2022 01:44:55 GMT
 RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="0db27185d9fc3174f2c670f814df3dda8a008b89d1a38a5d96cbbe119767ebfb1cf0bce956b27954aee9be19c4a7b91f2579d967932207976322033a86075f98";     TOMCAT_DWNLD_URL="https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.35/bin/apache-tomcat-9.0.35.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed";
-# Fri, 07 Jan 2022 04:51:42 GMT
+# Tue, 01 Feb 2022 01:44:55 GMT
 CMD ["jshell"]
-# Mon, 10 Jan 2022 22:30:48 GMT
+# Tue, 01 Feb 2022 02:29:12 GMT
 ARG MAVEN_VERSION=3.8.4
-# Mon, 10 Jan 2022 22:30:48 GMT
+# Tue, 01 Feb 2022 02:29:12 GMT
 ARG USER_HOME_DIR=/root
-# Mon, 10 Jan 2022 22:30:48 GMT
+# Tue, 01 Feb 2022 02:29:12 GMT
 ARG SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8
-# Mon, 10 Jan 2022 22:30:49 GMT
+# Tue, 01 Feb 2022 02:29:12 GMT
 ARG BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries
-# Mon, 10 Jan 2022 22:31:17 GMT
+# Tue, 01 Feb 2022 02:29:38 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN apt-get update     && apt-get install -y git     && rm -rf /var/lib/apt/lists/*
-# Mon, 10 Jan 2022 22:31:26 GMT
+# Tue, 01 Feb 2022 02:29:45 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN mkdir -p /usr/share/maven /usr/share/maven/ref   && curl -fsSL -o /tmp/apache-maven.tar.gz ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz   && echo "${SHA}  /tmp/apache-maven.tar.gz" | sha512sum -c -   && tar -xzf /tmp/apache-maven.tar.gz -C /usr/share/maven --strip-components=1   && rm -f /tmp/apache-maven.tar.gz   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Mon, 10 Jan 2022 22:31:26 GMT
+# Tue, 01 Feb 2022 02:29:45 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Mon, 10 Jan 2022 22:31:26 GMT
+# Tue, 01 Feb 2022 02:29:45 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Mon, 10 Jan 2022 22:31:26 GMT
+# Tue, 01 Feb 2022 02:29:45 GMT
 COPY file:1b3da5c58894f705e7387946301c0c52edb6271761ea3cd80b86a848847a64cd in /usr/local/bin/mvn-entrypoint.sh 
-# Mon, 10 Jan 2022 22:31:26 GMT
+# Tue, 01 Feb 2022 02:29:46 GMT
 COPY file:2bbb488dd73c55d658b91943cfdf9c26975a320ceafc45dda94c95b03e518ad3 in /usr/share/maven/ref/ 
-# Mon, 10 Jan 2022 22:31:27 GMT
+# Tue, 01 Feb 2022 02:29:46 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Mon, 10 Jan 2022 22:31:27 GMT
+# Tue, 01 Feb 2022 02:29:46 GMT
 CMD ["mvn"]
 ```
 
@@ -11150,42 +11150,42 @@ CMD ["mvn"]
 		Last Modified: Fri, 07 Jan 2022 04:57:29 GMT  
 		Size: 16.0 MB (16032427 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c6da339be5d6e58ded271817b592f6e36ad095c7319e1e9a23ea84ad939a498`  
-		Last Modified: Fri, 07 Jan 2022 04:58:18 GMT  
-		Size: 203.2 MB (203222613 bytes)  
+	-	`sha256:f76750da5d07b0dbfc0d548ff33fc7a21b66b56afeece46319dbe98566f10470`  
+		Last Modified: Tue, 01 Feb 2022 01:54:53 GMT  
+		Size: 203.5 MB (203500025 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3f39aff5169de58011ccc6cbb7ab0fde7f086ed40d1a0be62913dfdb198d7a15`  
-		Last Modified: Fri, 07 Jan 2022 04:58:04 GMT  
-		Size: 5.1 MB (5146299 bytes)  
+	-	`sha256:c22d0759c4108c6f1a3e9d10c71bfd18d8668195335989df4529ba6b2baddc08`  
+		Last Modified: Tue, 01 Feb 2022 01:54:38 GMT  
+		Size: 5.3 MB (5260591 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b36bcf6fa314ada2769719cd109c4de1bf133a887896eff9c69eb739acae0965`  
-		Last Modified: Mon, 10 Jan 2022 22:33:59 GMT  
-		Size: 31.2 MB (31170390 bytes)  
+	-	`sha256:9a2b45c65584988f4fd83e65bfcb6910987c1f131816d1804df77c83aa7e30cc`  
+		Last Modified: Tue, 01 Feb 2022 02:32:15 GMT  
+		Size: 31.2 MB (31170238 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:187ae3c686fe9e63b98efd9ecfc1a94785768d75b1b10661b6d89d3a2c29ef00`  
-		Last Modified: Mon, 10 Jan 2022 22:33:55 GMT  
-		Size: 9.1 MB (9109804 bytes)  
+	-	`sha256:a56fd6e0998184510aece6cbaa5c9646a953d7785bdd48bb9d5510ef5f2378cc`  
+		Last Modified: Tue, 01 Feb 2022 02:32:11 GMT  
+		Size: 9.1 MB (9109795 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b5a2faf741dfe1bfc4225a04edcb3c231b3f8051b0b4ff157dc148c2511702f9`  
-		Last Modified: Mon, 10 Jan 2022 22:33:54 GMT  
-		Size: 852.0 B  
+	-	`sha256:9baaf2b93bb2995b7ff459ac16dda48f6e7dee044a32e1407ccf2ba5513cfd52`  
+		Last Modified: Tue, 01 Feb 2022 02:32:10 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:26caa0968d882ea078cee631b4b54a8e6688c7b1b55995b879ccc827d34f6ce7`  
-		Last Modified: Mon, 10 Jan 2022 22:33:54 GMT  
-		Size: 359.0 B  
+	-	`sha256:77fffbb459e4efb38602118c0056f4e6ebcd441b1c57186d8f32726300bad4d7`  
+		Last Modified: Tue, 01 Feb 2022 02:32:10 GMT  
+		Size: 363.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3.8-ibm-semeru-11-focal` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:b73761e02dd88690ab6f4ea6e2decbf20670f5587e2837e9afd11b46ebec890d
+$ docker pull maven@sha256:93ff1004eb3c9b37f55f80dd733650552c5e34887e2ef0478579604842ec9bac
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **286.8 MB (286828947 bytes)**  
+-	Total Size: **287.1 MB (287120473 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0c810f8250aeae72c8c6f966f6497ce99a54d95e2971d92e8f09896259925401`
+-	Image ID: `sha256:f4e10d63f81a8a02242c25960615c9d243589ce40f5e0217382a761ff54a4825`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -11198,43 +11198,43 @@ CMD ["bash"]
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Fri, 07 Jan 2022 02:41:57 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 07 Jan 2022 02:43:51 GMT
-ENV JAVA_VERSION=jdk-11.0.13+8_openj9-0.29.0
-# Fri, 07 Jan 2022 02:44:07 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='151dca23e1fdb43eaa60631c96895be9aa7bb751e7fdf88ddffa1c32157fb417';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_aarch64_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        amd64|x86_64)          ESUM='3975e2732cf632ca8f41c237ba7e033fd96bda262b79861f83b4e2ac62c90c3d';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_x64_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='7b304c52974f51611b45a2ab7949503e33a204b8a4ae705eb3c74789350174d3';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_ppc64le_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        s390x)          ESUM='6c3ebb4af0f4066e721e1f0078438458775f4b93bfd2d0be1066c54ccf015654';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_s390x_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 07 Jan 2022 02:44:08 GMT
+# Tue, 01 Feb 2022 02:22:53 GMT
+ENV JAVA_VERSION=jdk-11.0.14+9_openj9-0.30.0
+# Tue, 01 Feb 2022 02:23:08 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='1db3d93a57a66db7eec553e9350431e3092ebe20a03f871259a52e3d39b346e4';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_aarch64_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        amd64|x86_64)          ESUM='f39fc492182198503d9be5f198cf257b894a1a74de24e27c70070e7456778eb6';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_x64_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='98e8fb899ba770f85d0a9a44c3965cf87f59c6d767cecd81924176033ed28eed';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_ppc64le_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        s390x)          ESUM='7250822af05cebd2c5ec6ab4871a870d58357241a3070f20ef3623dc42317548';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_s390x_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Tue, 01 Feb 2022 02:23:09 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 07 Jan 2022 02:44:08 GMT
+# Tue, 01 Feb 2022 02:23:09 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
-# Fri, 07 Jan 2022 02:44:44 GMT
+# Tue, 01 Feb 2022 02:23:45 GMT
 RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="0db27185d9fc3174f2c670f814df3dda8a008b89d1a38a5d96cbbe119767ebfb1cf0bce956b27954aee9be19c4a7b91f2579d967932207976322033a86075f98";     TOMCAT_DWNLD_URL="https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.35/bin/apache-tomcat-9.0.35.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed";
-# Fri, 07 Jan 2022 02:44:44 GMT
+# Tue, 01 Feb 2022 02:23:46 GMT
 CMD ["jshell"]
-# Mon, 10 Jan 2022 21:42:09 GMT
+# Tue, 01 Feb 2022 03:15:05 GMT
 ARG MAVEN_VERSION=3.8.4
-# Mon, 10 Jan 2022 21:42:09 GMT
+# Tue, 01 Feb 2022 03:15:05 GMT
 ARG USER_HOME_DIR=/root
-# Mon, 10 Jan 2022 21:42:10 GMT
+# Tue, 01 Feb 2022 03:15:06 GMT
 ARG SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8
-# Mon, 10 Jan 2022 21:42:11 GMT
+# Tue, 01 Feb 2022 03:15:07 GMT
 ARG BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries
-# Mon, 10 Jan 2022 21:42:25 GMT
+# Tue, 01 Feb 2022 03:15:20 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN apt-get update     && apt-get install -y git     && rm -rf /var/lib/apt/lists/*
-# Mon, 10 Jan 2022 21:42:29 GMT
+# Tue, 01 Feb 2022 03:15:25 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN mkdir -p /usr/share/maven /usr/share/maven/ref   && curl -fsSL -o /tmp/apache-maven.tar.gz ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz   && echo "${SHA}  /tmp/apache-maven.tar.gz" | sha512sum -c -   && tar -xzf /tmp/apache-maven.tar.gz -C /usr/share/maven --strip-components=1   && rm -f /tmp/apache-maven.tar.gz   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Mon, 10 Jan 2022 21:42:30 GMT
+# Tue, 01 Feb 2022 03:15:25 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Mon, 10 Jan 2022 21:42:31 GMT
+# Tue, 01 Feb 2022 03:15:26 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Mon, 10 Jan 2022 21:42:33 GMT
+# Tue, 01 Feb 2022 03:15:28 GMT
 COPY file:1b3da5c58894f705e7387946301c0c52edb6271761ea3cd80b86a848847a64cd in /usr/local/bin/mvn-entrypoint.sh 
-# Mon, 10 Jan 2022 21:42:34 GMT
+# Tue, 01 Feb 2022 03:15:29 GMT
 COPY file:2bbb488dd73c55d658b91943cfdf9c26975a320ceafc45dda94c95b03e518ad3 in /usr/share/maven/ref/ 
-# Mon, 10 Jan 2022 21:42:34 GMT
+# Tue, 01 Feb 2022 03:15:29 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Mon, 10 Jan 2022 21:42:35 GMT
+# Tue, 01 Feb 2022 03:15:30 GMT
 CMD ["mvn"]
 ```
 
@@ -11247,42 +11247,42 @@ CMD ["mvn"]
 		Last Modified: Fri, 07 Jan 2022 02:46:50 GMT  
 		Size: 15.9 MB (15894303 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6420bbf643a8c58183444ef3e623b95acf3155aa6537dffd3f1128477d65b42a`  
-		Last Modified: Fri, 07 Jan 2022 02:47:48 GMT  
-		Size: 198.8 MB (198820633 bytes)  
+	-	`sha256:403ce41c6ebbca64053ed56e9832e6d7929ad9a72d9113cc179dc8b9a02f30d3`  
+		Last Modified: Tue, 01 Feb 2022 02:33:33 GMT  
+		Size: 199.0 MB (199028670 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c71633f3d8bfbc660dc2f896074f5aaf8f146f22b2717a6742fc52601670484e`  
-		Last Modified: Fri, 07 Jan 2022 02:47:30 GMT  
-		Size: 4.9 MB (4867518 bytes)  
+	-	`sha256:0c0c40176a39c48a4a403ec1282a1e2696608f50cfeabb9c607b5dc31910fb00`  
+		Last Modified: Tue, 01 Feb 2022 02:33:14 GMT  
+		Size: 5.0 MB (4950723 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08de31f74c1fbb95177a79ee0b9ad2a22392edfb3c818ab34eb956a80dd2ba6f`  
-		Last Modified: Mon, 10 Jan 2022 21:46:19 GMT  
-		Size: 31.0 MB (30964434 bytes)  
+	-	`sha256:1dcf7778433c74cd99709802b4bac02f0fc9d1c4e53b9881d18384f3ee7f5f1f`  
+		Last Modified: Tue, 01 Feb 2022 03:19:04 GMT  
+		Size: 31.0 MB (30964714 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:773d7c8d49ff18d22da1b48135e61cde58cb412fc00b828f8c4f6f1e84b69a15`  
-		Last Modified: Mon, 10 Jan 2022 21:46:15 GMT  
-		Size: 9.1 MB (9109771 bytes)  
+	-	`sha256:4174d01fc2a0a1f5c29f61266fcbe4b1cca0c5ee94627dab695603dbfd7c4662`  
+		Last Modified: Tue, 01 Feb 2022 03:19:00 GMT  
+		Size: 9.1 MB (9109772 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:230bff6cc5a83d4e3f290e8e0739c817fc751e2add69e0b06fd48a27842e052f`  
-		Last Modified: Mon, 10 Jan 2022 21:46:13 GMT  
-		Size: 851.0 B  
+	-	`sha256:b281c895f6dc064fd4df619b82b656665ae64f4b0a874fe048e26a3203eceaa9`  
+		Last Modified: Tue, 01 Feb 2022 03:18:59 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:564e8720a35943f60574179db6229dd5c5ee86ca7fa7a0443eea30090df43b82`  
-		Last Modified: Mon, 10 Jan 2022 21:46:14 GMT  
+	-	`sha256:134135d16eed575c7f754347edea51548856797b42dc2ff440887c9b54cac90a`  
+		Last Modified: Tue, 01 Feb 2022 03:18:59 GMT  
 		Size: 363.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3.8-ibm-semeru-11-focal` - linux; ppc64le
 
 ```console
-$ docker pull maven@sha256:4872e138d2b617a970a9cc77c3f741a7734a096551f90bf9aa7592ea809a9c08
+$ docker pull maven@sha256:83c764d9bedb4b0cbcc2b935e44cb6f58ecd0553ebc226e30d9cac8bedb7c6e8
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **306.3 MB (306328555 bytes)**  
+-	Total Size: **306.6 MB (306597482 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b3887650255ce2ff4c6cd345ab33afa401f72474071ac9a9dcae0db8b66c5e4f`
+-	Image ID: `sha256:a08b66e9699afb0604327ea0cecf17da6241697658750dd31cc4f685fb5b2ee2`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -11295,43 +11295,43 @@ CMD ["bash"]
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Fri, 07 Jan 2022 04:22:19 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 07 Jan 2022 04:24:52 GMT
-ENV JAVA_VERSION=jdk-11.0.13+8_openj9-0.29.0
-# Fri, 07 Jan 2022 04:25:27 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='151dca23e1fdb43eaa60631c96895be9aa7bb751e7fdf88ddffa1c32157fb417';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_aarch64_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        amd64|x86_64)          ESUM='3975e2732cf632ca8f41c237ba7e033fd96bda262b79861f83b4e2ac62c90c3d';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_x64_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='7b304c52974f51611b45a2ab7949503e33a204b8a4ae705eb3c74789350174d3';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_ppc64le_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        s390x)          ESUM='6c3ebb4af0f4066e721e1f0078438458775f4b93bfd2d0be1066c54ccf015654';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_s390x_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 07 Jan 2022 04:25:32 GMT
+# Tue, 01 Feb 2022 01:23:02 GMT
+ENV JAVA_VERSION=jdk-11.0.14+9_openj9-0.30.0
+# Tue, 01 Feb 2022 01:23:30 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='1db3d93a57a66db7eec553e9350431e3092ebe20a03f871259a52e3d39b346e4';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_aarch64_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        amd64|x86_64)          ESUM='f39fc492182198503d9be5f198cf257b894a1a74de24e27c70070e7456778eb6';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_x64_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='98e8fb899ba770f85d0a9a44c3965cf87f59c6d767cecd81924176033ed28eed';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_ppc64le_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        s390x)          ESUM='7250822af05cebd2c5ec6ab4871a870d58357241a3070f20ef3623dc42317548';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_s390x_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Tue, 01 Feb 2022 01:23:36 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 07 Jan 2022 04:25:34 GMT
+# Tue, 01 Feb 2022 01:23:38 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
-# Fri, 07 Jan 2022 04:26:14 GMT
+# Tue, 01 Feb 2022 01:24:17 GMT
 RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="0db27185d9fc3174f2c670f814df3dda8a008b89d1a38a5d96cbbe119767ebfb1cf0bce956b27954aee9be19c4a7b91f2579d967932207976322033a86075f98";     TOMCAT_DWNLD_URL="https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.35/bin/apache-tomcat-9.0.35.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed";
-# Fri, 07 Jan 2022 04:26:15 GMT
+# Tue, 01 Feb 2022 01:24:20 GMT
 CMD ["jshell"]
-# Mon, 10 Jan 2022 22:46:32 GMT
+# Tue, 01 Feb 2022 02:32:59 GMT
 ARG MAVEN_VERSION=3.8.4
-# Mon, 10 Jan 2022 22:46:34 GMT
+# Tue, 01 Feb 2022 02:33:00 GMT
 ARG USER_HOME_DIR=/root
-# Mon, 10 Jan 2022 22:46:35 GMT
+# Tue, 01 Feb 2022 02:33:01 GMT
 ARG SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8
-# Mon, 10 Jan 2022 22:46:37 GMT
+# Tue, 01 Feb 2022 02:33:02 GMT
 ARG BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries
-# Mon, 10 Jan 2022 22:47:29 GMT
+# Tue, 01 Feb 2022 02:33:44 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN apt-get update     && apt-get install -y git     && rm -rf /var/lib/apt/lists/*
-# Mon, 10 Jan 2022 22:47:43 GMT
+# Tue, 01 Feb 2022 02:33:51 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN mkdir -p /usr/share/maven /usr/share/maven/ref   && curl -fsSL -o /tmp/apache-maven.tar.gz ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz   && echo "${SHA}  /tmp/apache-maven.tar.gz" | sha512sum -c -   && tar -xzf /tmp/apache-maven.tar.gz -C /usr/share/maven --strip-components=1   && rm -f /tmp/apache-maven.tar.gz   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Mon, 10 Jan 2022 22:47:46 GMT
+# Tue, 01 Feb 2022 02:33:53 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Mon, 10 Jan 2022 22:47:49 GMT
+# Tue, 01 Feb 2022 02:33:55 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Mon, 10 Jan 2022 22:47:50 GMT
+# Tue, 01 Feb 2022 02:33:56 GMT
 COPY file:1b3da5c58894f705e7387946301c0c52edb6271761ea3cd80b86a848847a64cd in /usr/local/bin/mvn-entrypoint.sh 
-# Mon, 10 Jan 2022 22:47:51 GMT
+# Tue, 01 Feb 2022 02:33:56 GMT
 COPY file:2bbb488dd73c55d658b91943cfdf9c26975a320ceafc45dda94c95b03e518ad3 in /usr/share/maven/ref/ 
-# Mon, 10 Jan 2022 22:47:55 GMT
+# Tue, 01 Feb 2022 02:33:58 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Mon, 10 Jan 2022 22:47:57 GMT
+# Tue, 01 Feb 2022 02:34:00 GMT
 CMD ["mvn"]
 ```
 
@@ -11344,42 +11344,42 @@ CMD ["mvn"]
 		Last Modified: Fri, 07 Jan 2022 04:34:49 GMT  
 		Size: 17.2 MB (17206916 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cd358a500a3d0557b6dce6f2c7c711857b0ccc7b7c6dfda87e006901a830a370`  
-		Last Modified: Fri, 07 Jan 2022 04:35:55 GMT  
-		Size: 204.1 MB (204079976 bytes)  
+	-	`sha256:921563ca21cba6b4765e33ceddd93ab3a446829b2a7d7c7fe3092825ac3c94c8`  
+		Last Modified: Tue, 01 Feb 2022 01:38:49 GMT  
+		Size: 204.3 MB (204326119 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:329160ecbc5e5a2fb214191623520fad57c6c089030e4d45617a2ed0b038aa40`  
-		Last Modified: Fri, 07 Jan 2022 04:35:33 GMT  
-		Size: 4.3 MB (4267619 bytes)  
+	-	`sha256:42d2aa19307a0bcd3ba18a18bdf9fc8ec120e288f7662bf576ae25c2b89d6b1e`  
+		Last Modified: Tue, 01 Feb 2022 01:38:28 GMT  
+		Size: 4.3 MB (4290368 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1bbdcfd5276668d7ab560a3f293aa7fc4b1a593be05c6f60885759091fdcbad1`  
-		Last Modified: Mon, 10 Jan 2022 22:51:03 GMT  
-		Size: 38.4 MB (38376143 bytes)  
+	-	`sha256:b2889beac26a108966b8ddb22c92c02d1713430cefe35a02d66716509f9873b0`  
+		Last Modified: Tue, 01 Feb 2022 02:36:48 GMT  
+		Size: 38.4 MB (38376168 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6b9347939665111da29cb4d14c8f14ae396ef011230d3d05b919316044d4f68b`  
-		Last Modified: Mon, 10 Jan 2022 22:50:57 GMT  
-		Size: 9.1 MB (9109796 bytes)  
+	-	`sha256:388aa636b0bd58d068f86d433e0db30952999fb3b2173057cd5d9acf1e3db588`  
+		Last Modified: Tue, 01 Feb 2022 02:36:42 GMT  
+		Size: 9.1 MB (9109803 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4bdb37b235c42114fd3b3835aa9b72193416bcdc6ef428244c24df0722449a8`  
-		Last Modified: Mon, 10 Jan 2022 22:50:56 GMT  
-		Size: 853.0 B  
+	-	`sha256:d3ffecc61b5f114cdfbcbe07af4b564345c0e89746cc458e810c3c35d44ac6fa`  
+		Last Modified: Tue, 01 Feb 2022 02:36:41 GMT  
+		Size: 855.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c70415142e53501535e99eac317eb652e04d4057a1e925384b6327796c44ad78`  
-		Last Modified: Mon, 10 Jan 2022 22:50:56 GMT  
-		Size: 360.0 B  
+	-	`sha256:4e6c9a3234644e9fbdc52a7a453b349ebe72b7a11ba5e1e8620bee51a3d9f6b2`  
+		Last Modified: Tue, 01 Feb 2022 02:36:41 GMT  
+		Size: 361.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3.8-ibm-semeru-11-focal` - linux; s390x
 
 ```console
-$ docker pull maven@sha256:20a314b6cb6256b8e6594b595d7307dbc36acdffb159b227ff4eee874b0e2ad4
+$ docker pull maven@sha256:bc2494c4b1bfc336b41c1195ca637568a3f6941b6eca2f92ec8030d176c4c89b
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **288.7 MB (288653442 bytes)**  
+-	Total Size: **288.9 MB (288874075 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6be896576b7df43558b6274b4f353f9432dd1bf21ba0b4ed7a806257406fc593`
+-	Image ID: `sha256:9369f971fb260cbbce3c4c47e158f3f65e90ab26112961f9851bd4c17b22b04d`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -11392,43 +11392,43 @@ CMD ["bash"]
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Fri, 07 Jan 2022 02:24:31 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 07 Jan 2022 02:26:16 GMT
-ENV JAVA_VERSION=jdk-11.0.13+8_openj9-0.29.0
-# Fri, 07 Jan 2022 02:26:26 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='151dca23e1fdb43eaa60631c96895be9aa7bb751e7fdf88ddffa1c32157fb417';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_aarch64_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        amd64|x86_64)          ESUM='3975e2732cf632ca8f41c237ba7e033fd96bda262b79861f83b4e2ac62c90c3d';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_x64_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='7b304c52974f51611b45a2ab7949503e33a204b8a4ae705eb3c74789350174d3';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_ppc64le_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        s390x)          ESUM='6c3ebb4af0f4066e721e1f0078438458775f4b93bfd2d0be1066c54ccf015654';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_s390x_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 07 Jan 2022 02:26:30 GMT
+# Tue, 01 Feb 2022 02:00:54 GMT
+ENV JAVA_VERSION=jdk-11.0.14+9_openj9-0.30.0
+# Tue, 01 Feb 2022 02:01:07 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='1db3d93a57a66db7eec553e9350431e3092ebe20a03f871259a52e3d39b346e4';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_aarch64_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        amd64|x86_64)          ESUM='f39fc492182198503d9be5f198cf257b894a1a74de24e27c70070e7456778eb6';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_x64_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='98e8fb899ba770f85d0a9a44c3965cf87f59c6d767cecd81924176033ed28eed';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_ppc64le_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        s390x)          ESUM='7250822af05cebd2c5ec6ab4871a870d58357241a3070f20ef3623dc42317548';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_s390x_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Tue, 01 Feb 2022 02:01:13 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 07 Jan 2022 02:26:30 GMT
+# Tue, 01 Feb 2022 02:01:13 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
-# Fri, 07 Jan 2022 02:27:03 GMT
+# Tue, 01 Feb 2022 02:01:46 GMT
 RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="0db27185d9fc3174f2c670f814df3dda8a008b89d1a38a5d96cbbe119767ebfb1cf0bce956b27954aee9be19c4a7b91f2579d967932207976322033a86075f98";     TOMCAT_DWNLD_URL="https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.35/bin/apache-tomcat-9.0.35.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed";
-# Fri, 07 Jan 2022 02:27:04 GMT
+# Tue, 01 Feb 2022 02:01:46 GMT
 CMD ["jshell"]
-# Mon, 10 Jan 2022 21:43:09 GMT
+# Tue, 01 Feb 2022 02:37:43 GMT
 ARG MAVEN_VERSION=3.8.4
-# Mon, 10 Jan 2022 21:43:09 GMT
+# Tue, 01 Feb 2022 02:37:43 GMT
 ARG USER_HOME_DIR=/root
-# Mon, 10 Jan 2022 21:43:09 GMT
+# Tue, 01 Feb 2022 02:37:43 GMT
 ARG SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8
-# Mon, 10 Jan 2022 21:43:09 GMT
+# Tue, 01 Feb 2022 02:37:43 GMT
 ARG BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries
-# Mon, 10 Jan 2022 21:43:18 GMT
+# Tue, 01 Feb 2022 02:37:52 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN apt-get update     && apt-get install -y git     && rm -rf /var/lib/apt/lists/*
-# Mon, 10 Jan 2022 21:43:22 GMT
+# Tue, 01 Feb 2022 02:38:05 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN mkdir -p /usr/share/maven /usr/share/maven/ref   && curl -fsSL -o /tmp/apache-maven.tar.gz ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz   && echo "${SHA}  /tmp/apache-maven.tar.gz" | sha512sum -c -   && tar -xzf /tmp/apache-maven.tar.gz -C /usr/share/maven --strip-components=1   && rm -f /tmp/apache-maven.tar.gz   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Mon, 10 Jan 2022 21:43:23 GMT
+# Tue, 01 Feb 2022 02:38:05 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Mon, 10 Jan 2022 21:43:23 GMT
+# Tue, 01 Feb 2022 02:38:05 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Mon, 10 Jan 2022 21:43:23 GMT
+# Tue, 01 Feb 2022 02:38:05 GMT
 COPY file:1b3da5c58894f705e7387946301c0c52edb6271761ea3cd80b86a848847a64cd in /usr/local/bin/mvn-entrypoint.sh 
-# Mon, 10 Jan 2022 21:43:23 GMT
+# Tue, 01 Feb 2022 02:38:05 GMT
 COPY file:2bbb488dd73c55d658b91943cfdf9c26975a320ceafc45dda94c95b03e518ad3 in /usr/share/maven/ref/ 
-# Mon, 10 Jan 2022 21:43:23 GMT
+# Tue, 01 Feb 2022 02:38:06 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Mon, 10 Jan 2022 21:43:23 GMT
+# Tue, 01 Feb 2022 02:38:06 GMT
 CMD ["mvn"]
 ```
 
@@ -11441,35 +11441,35 @@ CMD ["mvn"]
 		Last Modified: Fri, 07 Jan 2022 02:32:46 GMT  
 		Size: 15.7 MB (15739670 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3cc84033c8e8795eba7f0df984a6ad5fde22cb7435363bc269b87797262819d5`  
-		Last Modified: Fri, 07 Jan 2022 02:33:36 GMT  
-		Size: 200.7 MB (200748202 bytes)  
+	-	`sha256:d3396e99be3866db6cba77647ac740fc3ef419c41fa2395d192fd27e9cb88a3e`  
+		Last Modified: Tue, 01 Feb 2022 02:06:27 GMT  
+		Size: 201.0 MB (200965847 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b34c16d58740009ff1dec03b5e7cc7b79accb0a46ee95e0c76914e1f63433461`  
-		Last Modified: Fri, 07 Jan 2022 02:33:24 GMT  
-		Size: 5.2 MB (5245267 bytes)  
+	-	`sha256:aef64f00adba5b11b85d2ffd0ef30994e5549699d7adb869a4f60396bdc31cb1`  
+		Last Modified: Tue, 01 Feb 2022 02:06:14 GMT  
+		Size: 5.2 MB (5248221 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f40657ecb68ef8827a75f7e9e888bc0a3811c18ca987b7dc1ddca60f137ab24`  
-		Last Modified: Mon, 10 Jan 2022 21:45:02 GMT  
-		Size: 30.7 MB (30688291 bytes)  
+	-	`sha256:a913ae18af8718eb191fe5519ad4d67008db2217742e89868c655235b09da6e8`  
+		Last Modified: Tue, 01 Feb 2022 02:39:47 GMT  
+		Size: 30.7 MB (30688320 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f3b4fed381ad3c95420ee7ccaf30454e035beaab199f22d3661b67a613f8183b`  
-		Last Modified: Mon, 10 Jan 2022 21:44:58 GMT  
-		Size: 9.1 MB (9109803 bytes)  
+	-	`sha256:e0f3831e0fcace8bc099e33cc48d4713a8681cd774ec0c8e3e5cb53af345c1cb`  
+		Last Modified: Tue, 01 Feb 2022 02:39:43 GMT  
+		Size: 9.1 MB (9109801 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a906424b51cae699d1f4074d13361b54cf355f807d3dc7dfba5ddb6b0c077735`  
-		Last Modified: Mon, 10 Jan 2022 21:44:57 GMT  
-		Size: 850.0 B  
+	-	`sha256:059f54533ff68c07e122dac73f52bc353694362eeac56ab6f579bee99e7cf0fd`  
+		Last Modified: Tue, 01 Feb 2022 02:39:43 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e03f6d3bd26c504a87f9b26d64e43b74c47dd2fda1a6bf8636bdeb17cff5fe05`  
-		Last Modified: Mon, 10 Jan 2022 21:44:57 GMT  
-		Size: 360.0 B  
+	-	`sha256:f2574e5d60dfe8b98e5d19e5719040cbe6b413d15a7fc91c89db0e9d65c703e6`  
+		Last Modified: Tue, 01 Feb 2022 02:39:43 GMT  
+		Size: 364.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `maven:3.8-ibm-semeru-17-focal`
 
 ```console
-$ docker pull maven@sha256:32f1d8554e9733bb13765b811c43bb158eb232cbca14a09cff530f273b2586c4
+$ docker pull maven@sha256:efd91ad48a5413122df8e4cb35b742710d3d83abe13017dfb1c560ab6a209165
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11482,14 +11482,14 @@ $ docker pull maven@sha256:32f1d8554e9733bb13765b811c43bb158eb232cbca14a09cff530
 ### `maven:3.8-ibm-semeru-17-focal` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:c4becf5cf83087b6d8b6f8aa2c78673ccc46ff8cb3a3cbb610352b0063391007
+$ docker pull maven@sha256:80c9d7d49ced0691b7d9cc96748efe46e2e29ca0d22676161416a03b3e50c0ea
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **299.1 MB (299139288 bytes)**  
+-	Total Size: **299.3 MB (299329228 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:76e8eaac8dbe67c992acfd859788ae34484bbd75951b885970bb34094fd2f2b5`
+-	Image ID: `sha256:125067f47a77ca636919b0d00ffe2054bf1e29942ffc5ced099f4918405db443`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -11502,43 +11502,43 @@ CMD ["bash"]
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Fri, 07 Jan 2022 04:49:04 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 07 Jan 2022 04:54:28 GMT
-ENV JAVA_VERSION=jdk-17.0.1+12_openj9-0.29.1
-# Fri, 07 Jan 2022 04:55:01 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='5e0f80052ac4613d2d689904b20ff8b6e2bbd1edd87271db0659a646a24dfeb6';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_aarch64_linux_17.0.1_12_openj9-0.29.1.tar.gz';          ;;        amd64|x86_64)          ESUM='154f6411742ee1f8cbf004d72e7e71053b9ad4e89090cb930b6f16951e56503e';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_x64_linux_17.0.1_12_openj9-0.29.1.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='80b6389dbed9b7de9c63b1cb423e719aa5e6fbab42387fdb1f68d9d199bf5196';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_ppc64le_linux_17.0.1_12_openj9-0.29.1.tar.gz';         ;;       s390x)          ESUM='56e01c97f98bfb2cf9959b09b5d0cfae9993f82f1f54f77ef1199425c0b64bc2';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_s390x_linux_17.0.1_12_openj9-0.29.1.tar.gz';          ;;       *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 07 Jan 2022 04:55:02 GMT
+# Tue, 01 Feb 2022 01:48:11 GMT
+ENV JAVA_VERSION=jdk-jdk-17.0.2+8_openj9-0.30.0
+# Tue, 01 Feb 2022 01:48:35 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='c2dc7558f9bdbc88329d0e8af6f694c71e8c95531d44ed003b8510535cecd2cc';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_aarch64_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;        amd64|x86_64)          ESUM='2e35d0b10dce880a2447e7c8b5d87b8aa63c693440744089590bec2d6f1490a7';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_x64_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='218d122c6ab34f13b300e003830f23df25a8a6dc86b1ca6be261e471a5627537';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_ppc64le_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;        s390x)          ESUM='cd39a1162145a76de214150c8b0f165c4f82cbda62f21063f18c7a011c97d21e';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_s390x_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;       *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Tue, 01 Feb 2022 01:48:36 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 07 Jan 2022 04:55:02 GMT
+# Tue, 01 Feb 2022 01:48:36 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
-# Fri, 07 Jan 2022 04:55:38 GMT
+# Tue, 01 Feb 2022 01:49:16 GMT
 RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="0db27185d9fc3174f2c670f814df3dda8a008b89d1a38a5d96cbbe119767ebfb1cf0bce956b27954aee9be19c4a7b91f2579d967932207976322033a86075f98";     TOMCAT_DWNLD_URL="https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.35/bin/apache-tomcat-9.0.35.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed";
-# Fri, 07 Jan 2022 04:55:38 GMT
+# Tue, 01 Feb 2022 01:49:16 GMT
 CMD ["jshell"]
-# Mon, 10 Jan 2022 22:31:32 GMT
+# Tue, 01 Feb 2022 02:29:52 GMT
 ARG MAVEN_VERSION=3.8.4
-# Mon, 10 Jan 2022 22:31:32 GMT
+# Tue, 01 Feb 2022 02:29:52 GMT
 ARG USER_HOME_DIR=/root
-# Mon, 10 Jan 2022 22:31:33 GMT
+# Tue, 01 Feb 2022 02:29:52 GMT
 ARG SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8
-# Mon, 10 Jan 2022 22:31:33 GMT
+# Tue, 01 Feb 2022 02:29:52 GMT
 ARG BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries
-# Mon, 10 Jan 2022 22:31:42 GMT
+# Tue, 01 Feb 2022 02:30:00 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN apt-get update     && apt-get install -y git     && rm -rf /var/lib/apt/lists/*
-# Mon, 10 Jan 2022 22:31:45 GMT
+# Tue, 01 Feb 2022 02:30:08 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN mkdir -p /usr/share/maven /usr/share/maven/ref   && curl -fsSL -o /tmp/apache-maven.tar.gz ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz   && echo "${SHA}  /tmp/apache-maven.tar.gz" | sha512sum -c -   && tar -xzf /tmp/apache-maven.tar.gz -C /usr/share/maven --strip-components=1   && rm -f /tmp/apache-maven.tar.gz   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Mon, 10 Jan 2022 22:31:45 GMT
+# Tue, 01 Feb 2022 02:30:08 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Mon, 10 Jan 2022 22:31:45 GMT
+# Tue, 01 Feb 2022 02:30:08 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Mon, 10 Jan 2022 22:31:45 GMT
+# Tue, 01 Feb 2022 02:30:09 GMT
 COPY file:1b3da5c58894f705e7387946301c0c52edb6271761ea3cd80b86a848847a64cd in /usr/local/bin/mvn-entrypoint.sh 
-# Mon, 10 Jan 2022 22:31:45 GMT
+# Tue, 01 Feb 2022 02:30:09 GMT
 COPY file:2bbb488dd73c55d658b91943cfdf9c26975a320ceafc45dda94c95b03e518ad3 in /usr/share/maven/ref/ 
-# Mon, 10 Jan 2022 22:31:46 GMT
+# Tue, 01 Feb 2022 02:30:09 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Mon, 10 Jan 2022 22:31:46 GMT
+# Tue, 01 Feb 2022 02:30:09 GMT
 CMD ["mvn"]
 ```
 
@@ -11551,42 +11551,42 @@ CMD ["mvn"]
 		Last Modified: Fri, 07 Jan 2022 04:57:29 GMT  
 		Size: 16.0 MB (16032427 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87b4d1272155911f56795974ec0af6448a18819efdbdb547b851a2fd10285b38`  
-		Last Modified: Fri, 07 Jan 2022 04:59:41 GMT  
-		Size: 208.4 MB (208388838 bytes)  
+	-	`sha256:476557e8c1a9f1b12365d48d11a125877dffbf906921b425d775ecf5426a683c`  
+		Last Modified: Tue, 01 Feb 2022 01:56:22 GMT  
+		Size: 208.6 MB (208589686 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee5a8c165cd797722c9a391c36b43066c7c125f2c991ad0d94fd6d33af91c8e8`  
-		Last Modified: Fri, 07 Jan 2022 04:59:28 GMT  
-		Size: 5.9 MB (5870151 bytes)  
+	-	`sha256:8ce124f00ef397f6c9dda5b21b3a36e4df82777e1bc8c31b02fb578f610fa3ca`  
+		Last Modified: Tue, 01 Feb 2022 01:56:07 GMT  
+		Size: 5.9 MB (5859277 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bef7ec517e3780fb4dfad1f73454863ea757ba24c363c16870b80052fe86c2f2`  
-		Last Modified: Mon, 10 Jan 2022 22:34:17 GMT  
-		Size: 31.2 MB (31170435 bytes)  
+	-	`sha256:df8cd63f16dd987f353369ded482d299f5da7052668687e9b527d6367d322e10`  
+		Last Modified: Tue, 01 Feb 2022 02:32:32 GMT  
+		Size: 31.2 MB (31170393 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4e794e93d0f6e65972081431abe7a357323d99b0cd9b369ddf8bd4d8df3205dd`  
-		Last Modified: Mon, 10 Jan 2022 22:34:12 GMT  
-		Size: 9.1 MB (9109801 bytes)  
+	-	`sha256:191e842b29e71c41d3c98c937bd8486494aa648b7b27c5f684a5d9088f2807cc`  
+		Last Modified: Tue, 01 Feb 2022 02:32:28 GMT  
+		Size: 9.1 MB (9109806 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14e775d125b360a0493d19b62b771797c9c40d41089ad35ccda53343a36cd304`  
-		Last Modified: Mon, 10 Jan 2022 22:34:11 GMT  
-		Size: 852.0 B  
+	-	`sha256:eb85c6199094e94e9911f57e33cd43177e73367f1212f8c9a8682e075637376e`  
+		Last Modified: Tue, 01 Feb 2022 02:32:28 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ca22d41a6f3a57fa49e1922d4d1d0acc0704671b59103bef8011fdef4f92331`  
-		Last Modified: Mon, 10 Jan 2022 22:34:11 GMT  
-		Size: 359.0 B  
+	-	`sha256:a4ae8fabe2cc88006b97cb842ba38d3946dd039e4992ca690a3ad6b2f655f7ec`  
+		Last Modified: Tue, 01 Feb 2022 02:32:27 GMT  
+		Size: 361.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3.8-ibm-semeru-17-focal` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:99843f7f8960649a5f58050611e175fd8835d775545dc9e0bd431bd5e6d17339
+$ docker pull maven@sha256:1ba0d9078c55cbc5d914014491a64f984b5d5e1933fd29346f55f125cd86aa0c
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **292.1 MB (292088064 bytes)**  
+-	Total Size: **292.3 MB (292315276 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:543c234f5c6c06244493b403918d6e65aab748a0a4e04f334f189b736e62536d`
+-	Image ID: `sha256:c4a8b1c130529f54f50413c6e2854e3e60f20052a712c8a2398d7026fe375d5d`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -11599,43 +11599,43 @@ CMD ["bash"]
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Fri, 07 Jan 2022 02:41:57 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 07 Jan 2022 19:40:28 GMT
-ENV JAVA_VERSION=jdk-17.0.1+12_openj9-0.29.1
-# Fri, 07 Jan 2022 19:40:45 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='5e0f80052ac4613d2d689904b20ff8b6e2bbd1edd87271db0659a646a24dfeb6';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_aarch64_linux_17.0.1_12_openj9-0.29.1.tar.gz';          ;;        amd64|x86_64)          ESUM='154f6411742ee1f8cbf004d72e7e71053b9ad4e89090cb930b6f16951e56503e';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_x64_linux_17.0.1_12_openj9-0.29.1.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='80b6389dbed9b7de9c63b1cb423e719aa5e6fbab42387fdb1f68d9d199bf5196';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_ppc64le_linux_17.0.1_12_openj9-0.29.1.tar.gz';         ;;       s390x)          ESUM='56e01c97f98bfb2cf9959b09b5d0cfae9993f82f1f54f77ef1199425c0b64bc2';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_s390x_linux_17.0.1_12_openj9-0.29.1.tar.gz';          ;;       *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 07 Jan 2022 19:40:46 GMT
+# Tue, 01 Feb 2022 02:26:39 GMT
+ENV JAVA_VERSION=jdk-jdk-17.0.2+8_openj9-0.30.0
+# Tue, 01 Feb 2022 02:26:53 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='c2dc7558f9bdbc88329d0e8af6f694c71e8c95531d44ed003b8510535cecd2cc';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_aarch64_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;        amd64|x86_64)          ESUM='2e35d0b10dce880a2447e7c8b5d87b8aa63c693440744089590bec2d6f1490a7';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_x64_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='218d122c6ab34f13b300e003830f23df25a8a6dc86b1ca6be261e471a5627537';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_ppc64le_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;        s390x)          ESUM='cd39a1162145a76de214150c8b0f165c4f82cbda62f21063f18c7a011c97d21e';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_s390x_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;       *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Tue, 01 Feb 2022 02:26:53 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 07 Jan 2022 19:40:47 GMT
+# Tue, 01 Feb 2022 02:26:54 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
-# Fri, 07 Jan 2022 19:41:23 GMT
+# Tue, 01 Feb 2022 02:27:30 GMT
 RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="0db27185d9fc3174f2c670f814df3dda8a008b89d1a38a5d96cbbe119767ebfb1cf0bce956b27954aee9be19c4a7b91f2579d967932207976322033a86075f98";     TOMCAT_DWNLD_URL="https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.35/bin/apache-tomcat-9.0.35.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed";
-# Fri, 07 Jan 2022 19:41:24 GMT
+# Tue, 01 Feb 2022 02:27:30 GMT
 CMD ["jshell"]
-# Mon, 10 Jan 2022 21:42:41 GMT
+# Tue, 01 Feb 2022 03:15:36 GMT
 ARG MAVEN_VERSION=3.8.4
-# Mon, 10 Jan 2022 21:42:41 GMT
+# Tue, 01 Feb 2022 03:15:37 GMT
 ARG USER_HOME_DIR=/root
-# Mon, 10 Jan 2022 21:42:42 GMT
+# Tue, 01 Feb 2022 03:15:38 GMT
 ARG SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8
-# Mon, 10 Jan 2022 21:42:43 GMT
+# Tue, 01 Feb 2022 03:15:39 GMT
 ARG BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries
-# Mon, 10 Jan 2022 21:42:57 GMT
+# Tue, 01 Feb 2022 03:15:52 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN apt-get update     && apt-get install -y git     && rm -rf /var/lib/apt/lists/*
-# Mon, 10 Jan 2022 21:43:10 GMT
+# Tue, 01 Feb 2022 03:15:56 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN mkdir -p /usr/share/maven /usr/share/maven/ref   && curl -fsSL -o /tmp/apache-maven.tar.gz ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz   && echo "${SHA}  /tmp/apache-maven.tar.gz" | sha512sum -c -   && tar -xzf /tmp/apache-maven.tar.gz -C /usr/share/maven --strip-components=1   && rm -f /tmp/apache-maven.tar.gz   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Mon, 10 Jan 2022 21:43:11 GMT
+# Tue, 01 Feb 2022 03:15:57 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Mon, 10 Jan 2022 21:43:12 GMT
+# Tue, 01 Feb 2022 03:15:58 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Mon, 10 Jan 2022 21:43:14 GMT
+# Tue, 01 Feb 2022 03:16:00 GMT
 COPY file:1b3da5c58894f705e7387946301c0c52edb6271761ea3cd80b86a848847a64cd in /usr/local/bin/mvn-entrypoint.sh 
-# Mon, 10 Jan 2022 21:43:15 GMT
+# Tue, 01 Feb 2022 03:16:01 GMT
 COPY file:2bbb488dd73c55d658b91943cfdf9c26975a320ceafc45dda94c95b03e518ad3 in /usr/share/maven/ref/ 
-# Mon, 10 Jan 2022 21:43:15 GMT
+# Tue, 01 Feb 2022 03:16:01 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Mon, 10 Jan 2022 21:43:16 GMT
+# Tue, 01 Feb 2022 03:16:02 GMT
 CMD ["mvn"]
 ```
 
@@ -11648,42 +11648,42 @@ CMD ["mvn"]
 		Last Modified: Fri, 07 Jan 2022 02:46:50 GMT  
 		Size: 15.9 MB (15894303 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fbcd324088ba527ea466905250d0bfb3ffe191a8c868e6624f8f1c738b1b02e9`  
-		Last Modified: Fri, 07 Jan 2022 19:46:04 GMT  
-		Size: 203.3 MB (203293772 bytes)  
+	-	`sha256:d1162362814a04541f7c7058e646652a69b8f16ff7225822d2cee695a981c4b2`  
+		Last Modified: Tue, 01 Feb 2022 02:35:07 GMT  
+		Size: 203.4 MB (203432646 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:56ab9bb7d9e3efd7836528a4a8aa5879ffcc69cfeb389ab16b7b7183ee348238`  
-		Last Modified: Fri, 07 Jan 2022 19:45:47 GMT  
-		Size: 5.7 MB (5653210 bytes)  
+	-	`sha256:37b9b5c9e70551611427484c97762286dba3af1e10206ca67f1c698d546d567d`  
+		Last Modified: Tue, 01 Feb 2022 02:34:50 GMT  
+		Size: 5.7 MB (5741493 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:64ec9a1c4ca37d826815c3a0bea8e794be7f282ee956ccea9c349323f641b18b`  
-		Last Modified: Mon, 10 Jan 2022 21:46:37 GMT  
-		Size: 31.0 MB (30964728 bytes)  
+	-	`sha256:146ea8495ab1dc5816621bad74455d6fc626e13a0b744252218200eec86e0c4e`  
+		Last Modified: Tue, 01 Feb 2022 03:19:23 GMT  
+		Size: 31.0 MB (30964777 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7e1e173ec62f495cccca89509b15a9092021f20d1ada1eb3e29010a4f8edb7f`  
-		Last Modified: Mon, 10 Jan 2022 21:46:34 GMT  
-		Size: 9.1 MB (9109762 bytes)  
+	-	`sha256:c7bd557f7e8007c967c310783a21812f395495de47fae1a7f7a8f13683503012`  
+		Last Modified: Tue, 01 Feb 2022 03:19:19 GMT  
+		Size: 9.1 MB (9109769 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa22e29d02f63dfb97204d1cb8431268136e4bd13eaf249cc85c9fdf82a23145`  
-		Last Modified: Mon, 10 Jan 2022 21:46:32 GMT  
+	-	`sha256:5d67eaa0b8c15b7b4d5d5a3135bd5e3abebe5f6d4f4cb31b11e74cb285e28c05`  
+		Last Modified: Tue, 01 Feb 2022 03:19:18 GMT  
 		Size: 852.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:520bd40410dc9ac2a2c7506ede19290cfa905f642b846f78a73f56a626237ccd`  
-		Last Modified: Mon, 10 Jan 2022 21:46:33 GMT  
-		Size: 363.0 B  
+	-	`sha256:29b741cc5519c54c83116e35f6bc27476601508604b8444964d4e559716a4605`  
+		Last Modified: Tue, 01 Feb 2022 03:19:18 GMT  
+		Size: 362.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3.8-ibm-semeru-17-focal` - linux; ppc64le
 
 ```console
-$ docker pull maven@sha256:86974bd804682eb466e2b5376a95b7575da696ef9ffaf70235e5935b6e24cf7d
+$ docker pull maven@sha256:ea277945002c9ae9f9c8f1658696d569bda4474a4400ab47ff42a89aef3057e4
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **311.6 MB (311550719 bytes)**  
+-	Total Size: **311.8 MB (311767020 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d522a2768167c9a7e500d70659bf777d71104b69df90ef520bb6f0d0a3849f4a`
+-	Image ID: `sha256:ff77f4eba58cb6f7614a139dcb06520404824e4eaf30eba48909db443e2df04f`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -11696,43 +11696,43 @@ CMD ["bash"]
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Fri, 07 Jan 2022 04:22:19 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 07 Jan 2022 04:30:40 GMT
-ENV JAVA_VERSION=jdk-17.0.1+12_openj9-0.29.1
-# Fri, 07 Jan 2022 04:31:01 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='5e0f80052ac4613d2d689904b20ff8b6e2bbd1edd87271db0659a646a24dfeb6';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_aarch64_linux_17.0.1_12_openj9-0.29.1.tar.gz';          ;;        amd64|x86_64)          ESUM='154f6411742ee1f8cbf004d72e7e71053b9ad4e89090cb930b6f16951e56503e';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_x64_linux_17.0.1_12_openj9-0.29.1.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='80b6389dbed9b7de9c63b1cb423e719aa5e6fbab42387fdb1f68d9d199bf5196';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_ppc64le_linux_17.0.1_12_openj9-0.29.1.tar.gz';         ;;       s390x)          ESUM='56e01c97f98bfb2cf9959b09b5d0cfae9993f82f1f54f77ef1199425c0b64bc2';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_s390x_linux_17.0.1_12_openj9-0.29.1.tar.gz';          ;;       *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 07 Jan 2022 04:31:05 GMT
+# Tue, 01 Feb 2022 01:29:19 GMT
+ENV JAVA_VERSION=jdk-jdk-17.0.2+8_openj9-0.30.0
+# Tue, 01 Feb 2022 01:29:40 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='c2dc7558f9bdbc88329d0e8af6f694c71e8c95531d44ed003b8510535cecd2cc';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_aarch64_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;        amd64|x86_64)          ESUM='2e35d0b10dce880a2447e7c8b5d87b8aa63c693440744089590bec2d6f1490a7';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_x64_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='218d122c6ab34f13b300e003830f23df25a8a6dc86b1ca6be261e471a5627537';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_ppc64le_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;        s390x)          ESUM='cd39a1162145a76de214150c8b0f165c4f82cbda62f21063f18c7a011c97d21e';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_s390x_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;       *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Tue, 01 Feb 2022 01:29:46 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 07 Jan 2022 04:31:09 GMT
+# Tue, 01 Feb 2022 01:29:53 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
-# Fri, 07 Jan 2022 04:31:48 GMT
+# Tue, 01 Feb 2022 01:30:39 GMT
 RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="0db27185d9fc3174f2c670f814df3dda8a008b89d1a38a5d96cbbe119767ebfb1cf0bce956b27954aee9be19c4a7b91f2579d967932207976322033a86075f98";     TOMCAT_DWNLD_URL="https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.35/bin/apache-tomcat-9.0.35.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed";
-# Fri, 07 Jan 2022 04:31:51 GMT
+# Tue, 01 Feb 2022 01:30:44 GMT
 CMD ["jshell"]
-# Mon, 10 Jan 2022 22:48:12 GMT
+# Tue, 01 Feb 2022 02:34:11 GMT
 ARG MAVEN_VERSION=3.8.4
-# Mon, 10 Jan 2022 22:48:13 GMT
+# Tue, 01 Feb 2022 02:34:12 GMT
 ARG USER_HOME_DIR=/root
-# Mon, 10 Jan 2022 22:48:17 GMT
+# Tue, 01 Feb 2022 02:34:14 GMT
 ARG SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8
-# Mon, 10 Jan 2022 22:48:20 GMT
+# Tue, 01 Feb 2022 02:34:15 GMT
 ARG BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries
-# Mon, 10 Jan 2022 22:49:15 GMT
+# Tue, 01 Feb 2022 02:35:02 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN apt-get update     && apt-get install -y git     && rm -rf /var/lib/apt/lists/*
-# Mon, 10 Jan 2022 22:49:23 GMT
+# Tue, 01 Feb 2022 02:35:12 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN mkdir -p /usr/share/maven /usr/share/maven/ref   && curl -fsSL -o /tmp/apache-maven.tar.gz ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz   && echo "${SHA}  /tmp/apache-maven.tar.gz" | sha512sum -c -   && tar -xzf /tmp/apache-maven.tar.gz -C /usr/share/maven --strip-components=1   && rm -f /tmp/apache-maven.tar.gz   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Mon, 10 Jan 2022 22:49:25 GMT
+# Tue, 01 Feb 2022 02:35:14 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Mon, 10 Jan 2022 22:49:27 GMT
+# Tue, 01 Feb 2022 02:35:15 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Mon, 10 Jan 2022 22:49:28 GMT
+# Tue, 01 Feb 2022 02:35:16 GMT
 COPY file:1b3da5c58894f705e7387946301c0c52edb6271761ea3cd80b86a848847a64cd in /usr/local/bin/mvn-entrypoint.sh 
-# Mon, 10 Jan 2022 22:49:29 GMT
+# Tue, 01 Feb 2022 02:35:17 GMT
 COPY file:2bbb488dd73c55d658b91943cfdf9c26975a320ceafc45dda94c95b03e518ad3 in /usr/share/maven/ref/ 
-# Mon, 10 Jan 2022 22:49:31 GMT
+# Tue, 01 Feb 2022 02:35:19 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Mon, 10 Jan 2022 22:49:32 GMT
+# Tue, 01 Feb 2022 02:35:20 GMT
 CMD ["mvn"]
 ```
 
@@ -11745,42 +11745,42 @@ CMD ["mvn"]
 		Last Modified: Fri, 07 Jan 2022 04:34:49 GMT  
 		Size: 17.2 MB (17206916 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ebdd9d98a6dea2a986725972e7c6e59691339cc5ec3e108a271202b3864b78e2`  
-		Last Modified: Fri, 07 Jan 2022 04:37:54 GMT  
-		Size: 208.8 MB (208777828 bytes)  
+	-	`sha256:f80c180721b4c9de57fc4a7d9a5e3d5f6e5bbdf3af32cd700b10945d2e1d2f15`  
+		Last Modified: Tue, 01 Feb 2022 01:40:46 GMT  
+		Size: 209.0 MB (208963184 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad4b689f5c12df1386bdd86f9cab4b8bab70886d26c325457b70bc85c2c70f69`  
-		Last Modified: Fri, 07 Jan 2022 04:37:33 GMT  
-		Size: 4.8 MB (4792030 bytes)  
+	-	`sha256:40cbc6b62bb78013e4eb98dfcabe8574ef019e86a580ce632cfd425fd52d767d`  
+		Last Modified: Tue, 01 Feb 2022 01:40:23 GMT  
+		Size: 4.8 MB (4822811 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3814ac990f361a50a37b6f08f5ae6fbf2d9c81ed5c872815759bd341870aeacf`  
-		Last Modified: Mon, 10 Jan 2022 22:51:26 GMT  
-		Size: 38.4 MB (38376040 bytes)  
+	-	`sha256:6998cab0583766a33967fc9249825de619496a6826e56037a4fb5cd1e1903116`  
+		Last Modified: Tue, 01 Feb 2022 02:37:12 GMT  
+		Size: 38.4 MB (38376208 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4f46e9d369f81200f91bf0f40e4772e67c5912263a1d9fcae5d095290a053f48`  
-		Last Modified: Mon, 10 Jan 2022 22:51:19 GMT  
-		Size: 9.1 MB (9109798 bytes)  
+	-	`sha256:7abc05a880a98ed4585aca9db94419aaa0c2d4aeb2c50e36a842ffb4431cfde4`  
+		Last Modified: Tue, 01 Feb 2022 02:37:05 GMT  
+		Size: 9.1 MB (9109794 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fca9cdf4d305463b6b2a6c8c1902ab92346c87706bb30d6ca8ca42ddc7f29e9f`  
-		Last Modified: Mon, 10 Jan 2022 22:51:18 GMT  
+	-	`sha256:830f36a62f1838429fb0b0c264dc50c15bb5854b8876b2253a8593b8f2e45cbd`  
+		Last Modified: Tue, 01 Feb 2022 02:37:04 GMT  
 		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e08a0ccceac8acf388a588ca21a77dc9937ff67cfba1335990479fa2f7509eea`  
-		Last Modified: Mon, 10 Jan 2022 22:51:18 GMT  
+	-	`sha256:e252dbd32c59b49a1310253036b6cfaa78e832cd28547132824f0fc4b2426385`  
+		Last Modified: Tue, 01 Feb 2022 02:37:04 GMT  
 		Size: 361.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3.8-ibm-semeru-17-focal` - linux; s390x
 
 ```console
-$ docker pull maven@sha256:922c27866e73b45844be512c33f5d937d8f4864ecf5aef857c6fdbe53369ad37
+$ docker pull maven@sha256:4633016a23131d525067bbac3f048e511afc91d1c6483ede9503f680bdc99ca9
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **293.1 MB (293084366 bytes)**  
+-	Total Size: **293.3 MB (293262137 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:444f9ba066c3f678119e1cf10975bea5630a7adf0548c318f3556ef5001f0857`
+-	Image ID: `sha256:64e928eac25e0b2dc1368dd0b49b693840d08bc0c73e0bc87d6cfce19c5f4948`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -11793,43 +11793,43 @@ CMD ["bash"]
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Fri, 07 Jan 2022 02:24:31 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 07 Jan 2022 02:29:51 GMT
-ENV JAVA_VERSION=jdk-17.0.1+12_openj9-0.29.1
-# Fri, 07 Jan 2022 02:30:01 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='5e0f80052ac4613d2d689904b20ff8b6e2bbd1edd87271db0659a646a24dfeb6';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_aarch64_linux_17.0.1_12_openj9-0.29.1.tar.gz';          ;;        amd64|x86_64)          ESUM='154f6411742ee1f8cbf004d72e7e71053b9ad4e89090cb930b6f16951e56503e';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_x64_linux_17.0.1_12_openj9-0.29.1.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='80b6389dbed9b7de9c63b1cb423e719aa5e6fbab42387fdb1f68d9d199bf5196';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_ppc64le_linux_17.0.1_12_openj9-0.29.1.tar.gz';         ;;       s390x)          ESUM='56e01c97f98bfb2cf9959b09b5d0cfae9993f82f1f54f77ef1199425c0b64bc2';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_s390x_linux_17.0.1_12_openj9-0.29.1.tar.gz';          ;;       *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 07 Jan 2022 02:30:07 GMT
+# Tue, 01 Feb 2022 02:02:58 GMT
+ENV JAVA_VERSION=jdk-jdk-17.0.2+8_openj9-0.30.0
+# Tue, 01 Feb 2022 02:03:10 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='c2dc7558f9bdbc88329d0e8af6f694c71e8c95531d44ed003b8510535cecd2cc';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_aarch64_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;        amd64|x86_64)          ESUM='2e35d0b10dce880a2447e7c8b5d87b8aa63c693440744089590bec2d6f1490a7';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_x64_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='218d122c6ab34f13b300e003830f23df25a8a6dc86b1ca6be261e471a5627537';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_ppc64le_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;        s390x)          ESUM='cd39a1162145a76de214150c8b0f165c4f82cbda62f21063f18c7a011c97d21e';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_s390x_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;       *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Tue, 01 Feb 2022 02:03:16 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 07 Jan 2022 02:30:07 GMT
+# Tue, 01 Feb 2022 02:03:16 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
-# Fri, 07 Jan 2022 02:30:42 GMT
+# Tue, 01 Feb 2022 02:03:49 GMT
 RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="0db27185d9fc3174f2c670f814df3dda8a008b89d1a38a5d96cbbe119767ebfb1cf0bce956b27954aee9be19c4a7b91f2579d967932207976322033a86075f98";     TOMCAT_DWNLD_URL="https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.35/bin/apache-tomcat-9.0.35.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed";
-# Fri, 07 Jan 2022 02:30:42 GMT
+# Tue, 01 Feb 2022 02:03:49 GMT
 CMD ["jshell"]
-# Mon, 10 Jan 2022 21:43:30 GMT
+# Tue, 01 Feb 2022 02:38:14 GMT
 ARG MAVEN_VERSION=3.8.4
-# Mon, 10 Jan 2022 21:43:30 GMT
+# Tue, 01 Feb 2022 02:38:14 GMT
 ARG USER_HOME_DIR=/root
-# Mon, 10 Jan 2022 21:43:31 GMT
+# Tue, 01 Feb 2022 02:38:15 GMT
 ARG SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8
-# Mon, 10 Jan 2022 21:43:31 GMT
+# Tue, 01 Feb 2022 02:38:15 GMT
 ARG BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries
-# Mon, 10 Jan 2022 21:43:40 GMT
+# Tue, 01 Feb 2022 02:38:24 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN apt-get update     && apt-get install -y git     && rm -rf /var/lib/apt/lists/*
-# Mon, 10 Jan 2022 21:43:44 GMT
+# Tue, 01 Feb 2022 02:38:28 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN mkdir -p /usr/share/maven /usr/share/maven/ref   && curl -fsSL -o /tmp/apache-maven.tar.gz ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz   && echo "${SHA}  /tmp/apache-maven.tar.gz" | sha512sum -c -   && tar -xzf /tmp/apache-maven.tar.gz -C /usr/share/maven --strip-components=1   && rm -f /tmp/apache-maven.tar.gz   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Mon, 10 Jan 2022 21:43:44 GMT
+# Tue, 01 Feb 2022 02:38:28 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Mon, 10 Jan 2022 21:43:44 GMT
+# Tue, 01 Feb 2022 02:38:28 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Mon, 10 Jan 2022 21:43:44 GMT
+# Tue, 01 Feb 2022 02:38:28 GMT
 COPY file:1b3da5c58894f705e7387946301c0c52edb6271761ea3cd80b86a848847a64cd in /usr/local/bin/mvn-entrypoint.sh 
-# Mon, 10 Jan 2022 21:43:44 GMT
+# Tue, 01 Feb 2022 02:38:29 GMT
 COPY file:2bbb488dd73c55d658b91943cfdf9c26975a320ceafc45dda94c95b03e518ad3 in /usr/share/maven/ref/ 
-# Mon, 10 Jan 2022 21:43:45 GMT
+# Tue, 01 Feb 2022 02:38:29 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Mon, 10 Jan 2022 21:43:45 GMT
+# Tue, 01 Feb 2022 02:38:29 GMT
 CMD ["mvn"]
 ```
 
@@ -11842,29 +11842,29 @@ CMD ["mvn"]
 		Last Modified: Fri, 07 Jan 2022 02:32:46 GMT  
 		Size: 15.7 MB (15739670 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:26895d5767c9b753c5f78a81886caebd33d5dc75ae1c108da768dab052f7e42d`  
-		Last Modified: Fri, 07 Jan 2022 02:34:47 GMT  
-		Size: 204.4 MB (204443746 bytes)  
+	-	`sha256:3c0b384c02ce171d3c5fced114e81d8abba133ca30c4ce412802e35127f50652`  
+		Last Modified: Tue, 01 Feb 2022 02:07:04 GMT  
+		Size: 204.6 MB (204621533 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3716b6fe4c57feab18f1fe61c43efb16bb68330997bb2330444e4614e523ece2`  
-		Last Modified: Fri, 07 Jan 2022 02:34:33 GMT  
-		Size: 6.0 MB (5980788 bytes)  
+	-	`sha256:51bdecda3917ebe274d2bf884f6b774679bf5483e65bc2ac9a1fd9ed645731f3`  
+		Last Modified: Tue, 01 Feb 2022 02:06:51 GMT  
+		Size: 6.0 MB (5980644 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ffacfd4c9dee817820f95547ff8e34570c797218730b6944561a1d70a066aab`  
-		Last Modified: Mon, 10 Jan 2022 21:45:16 GMT  
-		Size: 30.7 MB (30688134 bytes)  
+	-	`sha256:b7b8efa3cd693d26b38cfd7c975b49a3b6131a6f4a3c6896ff85457f14a79a53`  
+		Last Modified: Tue, 01 Feb 2022 02:40:01 GMT  
+		Size: 30.7 MB (30688271 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:53b369c45cf7f977b8920f9b959d87bdd8768266fd99501d8895c9fb78c9cf43`  
-		Last Modified: Mon, 10 Jan 2022 21:45:12 GMT  
-		Size: 9.1 MB (9109817 bytes)  
+	-	`sha256:bce36f971f23eea69b812cb4615685548861640a87affedbd24735d74c88a91c`  
+		Last Modified: Tue, 01 Feb 2022 02:39:56 GMT  
+		Size: 9.1 MB (9109808 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba3ababa5f451b5f683c44d1c48765997427af0738d4b5ff3ac1b8c3dc0585ee`  
-		Last Modified: Mon, 10 Jan 2022 21:45:12 GMT  
-		Size: 850.0 B  
+	-	`sha256:f4985614bb72de81597c4172f927a45efa67b4a90e3e702ad805f48da87125f9`  
+		Last Modified: Tue, 01 Feb 2022 02:39:56 GMT  
+		Size: 851.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:62e7b141d00eacec8911ca28e081ff22e553435c483e12fd2dcacaf07d08b3f1`  
-		Last Modified: Mon, 10 Jan 2022 21:45:12 GMT  
-		Size: 362.0 B  
+	-	`sha256:1fe34fcd489ba925828097929c9e41f4b2dcd13de323abcfcdb253f55959d6e5`  
+		Last Modified: Tue, 01 Feb 2022 02:39:56 GMT  
+		Size: 361.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `maven:3.8-ibmjava`
@@ -18584,7 +18584,7 @@ CMD ["mvn"]
 ## `maven:3.8.4-ibm-semeru-11-focal`
 
 ```console
-$ docker pull maven@sha256:84b9cf31344c75e3ad7e327514ff1ed486ecbc75ac9aa96b426f16eb546e8c8a
+$ docker pull maven@sha256:5569c18d761880ac762e9de0b9b0701a17a0dce73712777f10fba6192d4dbcd9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -18597,14 +18597,14 @@ $ docker pull maven@sha256:84b9cf31344c75e3ad7e327514ff1ed486ecbc75ac9aa96b426f1
 ### `maven:3.8.4-ibm-semeru-11-focal` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:5415ed40e7f3d79da976e41e0323c1b6d939780fd74d5333584007393313cf7a
+$ docker pull maven@sha256:4d3cc64f0ff5f50ea756c42eaef2efb9c4ec67bd693a3c8ea08bc1a06da636c0
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **293.2 MB (293249169 bytes)**  
+-	Total Size: **293.6 MB (293640718 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4efc994685ae228995ff4e05e5954e979f5508e84308019f4e3311dd6bf84ebd`
+-	Image ID: `sha256:45ba00f7262440b1a5482dd42a54c738f5fafa05676c7216612a1fb26269dc9a`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -18617,43 +18617,43 @@ CMD ["bash"]
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Fri, 07 Jan 2022 04:49:04 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 07 Jan 2022 04:50:50 GMT
-ENV JAVA_VERSION=jdk-11.0.13+8_openj9-0.29.0
-# Fri, 07 Jan 2022 04:51:05 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='151dca23e1fdb43eaa60631c96895be9aa7bb751e7fdf88ddffa1c32157fb417';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_aarch64_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        amd64|x86_64)          ESUM='3975e2732cf632ca8f41c237ba7e033fd96bda262b79861f83b4e2ac62c90c3d';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_x64_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='7b304c52974f51611b45a2ab7949503e33a204b8a4ae705eb3c74789350174d3';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_ppc64le_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        s390x)          ESUM='6c3ebb4af0f4066e721e1f0078438458775f4b93bfd2d0be1066c54ccf015654';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_s390x_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 07 Jan 2022 04:51:05 GMT
+# Tue, 01 Feb 2022 01:44:03 GMT
+ENV JAVA_VERSION=jdk-11.0.14+9_openj9-0.30.0
+# Tue, 01 Feb 2022 01:44:18 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='1db3d93a57a66db7eec553e9350431e3092ebe20a03f871259a52e3d39b346e4';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_aarch64_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        amd64|x86_64)          ESUM='f39fc492182198503d9be5f198cf257b894a1a74de24e27c70070e7456778eb6';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_x64_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='98e8fb899ba770f85d0a9a44c3965cf87f59c6d767cecd81924176033ed28eed';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_ppc64le_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        s390x)          ESUM='7250822af05cebd2c5ec6ab4871a870d58357241a3070f20ef3623dc42317548';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_s390x_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Tue, 01 Feb 2022 01:44:19 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 07 Jan 2022 04:51:06 GMT
+# Tue, 01 Feb 2022 01:44:19 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
-# Fri, 07 Jan 2022 04:51:41 GMT
+# Tue, 01 Feb 2022 01:44:55 GMT
 RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="0db27185d9fc3174f2c670f814df3dda8a008b89d1a38a5d96cbbe119767ebfb1cf0bce956b27954aee9be19c4a7b91f2579d967932207976322033a86075f98";     TOMCAT_DWNLD_URL="https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.35/bin/apache-tomcat-9.0.35.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed";
-# Fri, 07 Jan 2022 04:51:42 GMT
+# Tue, 01 Feb 2022 01:44:55 GMT
 CMD ["jshell"]
-# Mon, 10 Jan 2022 22:30:48 GMT
+# Tue, 01 Feb 2022 02:29:12 GMT
 ARG MAVEN_VERSION=3.8.4
-# Mon, 10 Jan 2022 22:30:48 GMT
+# Tue, 01 Feb 2022 02:29:12 GMT
 ARG USER_HOME_DIR=/root
-# Mon, 10 Jan 2022 22:30:48 GMT
+# Tue, 01 Feb 2022 02:29:12 GMT
 ARG SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8
-# Mon, 10 Jan 2022 22:30:49 GMT
+# Tue, 01 Feb 2022 02:29:12 GMT
 ARG BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries
-# Mon, 10 Jan 2022 22:31:17 GMT
+# Tue, 01 Feb 2022 02:29:38 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN apt-get update     && apt-get install -y git     && rm -rf /var/lib/apt/lists/*
-# Mon, 10 Jan 2022 22:31:26 GMT
+# Tue, 01 Feb 2022 02:29:45 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN mkdir -p /usr/share/maven /usr/share/maven/ref   && curl -fsSL -o /tmp/apache-maven.tar.gz ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz   && echo "${SHA}  /tmp/apache-maven.tar.gz" | sha512sum -c -   && tar -xzf /tmp/apache-maven.tar.gz -C /usr/share/maven --strip-components=1   && rm -f /tmp/apache-maven.tar.gz   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Mon, 10 Jan 2022 22:31:26 GMT
+# Tue, 01 Feb 2022 02:29:45 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Mon, 10 Jan 2022 22:31:26 GMT
+# Tue, 01 Feb 2022 02:29:45 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Mon, 10 Jan 2022 22:31:26 GMT
+# Tue, 01 Feb 2022 02:29:45 GMT
 COPY file:1b3da5c58894f705e7387946301c0c52edb6271761ea3cd80b86a848847a64cd in /usr/local/bin/mvn-entrypoint.sh 
-# Mon, 10 Jan 2022 22:31:26 GMT
+# Tue, 01 Feb 2022 02:29:46 GMT
 COPY file:2bbb488dd73c55d658b91943cfdf9c26975a320ceafc45dda94c95b03e518ad3 in /usr/share/maven/ref/ 
-# Mon, 10 Jan 2022 22:31:27 GMT
+# Tue, 01 Feb 2022 02:29:46 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Mon, 10 Jan 2022 22:31:27 GMT
+# Tue, 01 Feb 2022 02:29:46 GMT
 CMD ["mvn"]
 ```
 
@@ -18666,42 +18666,42 @@ CMD ["mvn"]
 		Last Modified: Fri, 07 Jan 2022 04:57:29 GMT  
 		Size: 16.0 MB (16032427 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c6da339be5d6e58ded271817b592f6e36ad095c7319e1e9a23ea84ad939a498`  
-		Last Modified: Fri, 07 Jan 2022 04:58:18 GMT  
-		Size: 203.2 MB (203222613 bytes)  
+	-	`sha256:f76750da5d07b0dbfc0d548ff33fc7a21b66b56afeece46319dbe98566f10470`  
+		Last Modified: Tue, 01 Feb 2022 01:54:53 GMT  
+		Size: 203.5 MB (203500025 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3f39aff5169de58011ccc6cbb7ab0fde7f086ed40d1a0be62913dfdb198d7a15`  
-		Last Modified: Fri, 07 Jan 2022 04:58:04 GMT  
-		Size: 5.1 MB (5146299 bytes)  
+	-	`sha256:c22d0759c4108c6f1a3e9d10c71bfd18d8668195335989df4529ba6b2baddc08`  
+		Last Modified: Tue, 01 Feb 2022 01:54:38 GMT  
+		Size: 5.3 MB (5260591 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b36bcf6fa314ada2769719cd109c4de1bf133a887896eff9c69eb739acae0965`  
-		Last Modified: Mon, 10 Jan 2022 22:33:59 GMT  
-		Size: 31.2 MB (31170390 bytes)  
+	-	`sha256:9a2b45c65584988f4fd83e65bfcb6910987c1f131816d1804df77c83aa7e30cc`  
+		Last Modified: Tue, 01 Feb 2022 02:32:15 GMT  
+		Size: 31.2 MB (31170238 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:187ae3c686fe9e63b98efd9ecfc1a94785768d75b1b10661b6d89d3a2c29ef00`  
-		Last Modified: Mon, 10 Jan 2022 22:33:55 GMT  
-		Size: 9.1 MB (9109804 bytes)  
+	-	`sha256:a56fd6e0998184510aece6cbaa5c9646a953d7785bdd48bb9d5510ef5f2378cc`  
+		Last Modified: Tue, 01 Feb 2022 02:32:11 GMT  
+		Size: 9.1 MB (9109795 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b5a2faf741dfe1bfc4225a04edcb3c231b3f8051b0b4ff157dc148c2511702f9`  
-		Last Modified: Mon, 10 Jan 2022 22:33:54 GMT  
-		Size: 852.0 B  
+	-	`sha256:9baaf2b93bb2995b7ff459ac16dda48f6e7dee044a32e1407ccf2ba5513cfd52`  
+		Last Modified: Tue, 01 Feb 2022 02:32:10 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:26caa0968d882ea078cee631b4b54a8e6688c7b1b55995b879ccc827d34f6ce7`  
-		Last Modified: Mon, 10 Jan 2022 22:33:54 GMT  
-		Size: 359.0 B  
+	-	`sha256:77fffbb459e4efb38602118c0056f4e6ebcd441b1c57186d8f32726300bad4d7`  
+		Last Modified: Tue, 01 Feb 2022 02:32:10 GMT  
+		Size: 363.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3.8.4-ibm-semeru-11-focal` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:b73761e02dd88690ab6f4ea6e2decbf20670f5587e2837e9afd11b46ebec890d
+$ docker pull maven@sha256:93ff1004eb3c9b37f55f80dd733650552c5e34887e2ef0478579604842ec9bac
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **286.8 MB (286828947 bytes)**  
+-	Total Size: **287.1 MB (287120473 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0c810f8250aeae72c8c6f966f6497ce99a54d95e2971d92e8f09896259925401`
+-	Image ID: `sha256:f4e10d63f81a8a02242c25960615c9d243589ce40f5e0217382a761ff54a4825`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -18714,43 +18714,43 @@ CMD ["bash"]
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Fri, 07 Jan 2022 02:41:57 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 07 Jan 2022 02:43:51 GMT
-ENV JAVA_VERSION=jdk-11.0.13+8_openj9-0.29.0
-# Fri, 07 Jan 2022 02:44:07 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='151dca23e1fdb43eaa60631c96895be9aa7bb751e7fdf88ddffa1c32157fb417';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_aarch64_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        amd64|x86_64)          ESUM='3975e2732cf632ca8f41c237ba7e033fd96bda262b79861f83b4e2ac62c90c3d';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_x64_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='7b304c52974f51611b45a2ab7949503e33a204b8a4ae705eb3c74789350174d3';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_ppc64le_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        s390x)          ESUM='6c3ebb4af0f4066e721e1f0078438458775f4b93bfd2d0be1066c54ccf015654';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_s390x_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 07 Jan 2022 02:44:08 GMT
+# Tue, 01 Feb 2022 02:22:53 GMT
+ENV JAVA_VERSION=jdk-11.0.14+9_openj9-0.30.0
+# Tue, 01 Feb 2022 02:23:08 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='1db3d93a57a66db7eec553e9350431e3092ebe20a03f871259a52e3d39b346e4';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_aarch64_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        amd64|x86_64)          ESUM='f39fc492182198503d9be5f198cf257b894a1a74de24e27c70070e7456778eb6';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_x64_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='98e8fb899ba770f85d0a9a44c3965cf87f59c6d767cecd81924176033ed28eed';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_ppc64le_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        s390x)          ESUM='7250822af05cebd2c5ec6ab4871a870d58357241a3070f20ef3623dc42317548';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_s390x_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Tue, 01 Feb 2022 02:23:09 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 07 Jan 2022 02:44:08 GMT
+# Tue, 01 Feb 2022 02:23:09 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
-# Fri, 07 Jan 2022 02:44:44 GMT
+# Tue, 01 Feb 2022 02:23:45 GMT
 RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="0db27185d9fc3174f2c670f814df3dda8a008b89d1a38a5d96cbbe119767ebfb1cf0bce956b27954aee9be19c4a7b91f2579d967932207976322033a86075f98";     TOMCAT_DWNLD_URL="https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.35/bin/apache-tomcat-9.0.35.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed";
-# Fri, 07 Jan 2022 02:44:44 GMT
+# Tue, 01 Feb 2022 02:23:46 GMT
 CMD ["jshell"]
-# Mon, 10 Jan 2022 21:42:09 GMT
+# Tue, 01 Feb 2022 03:15:05 GMT
 ARG MAVEN_VERSION=3.8.4
-# Mon, 10 Jan 2022 21:42:09 GMT
+# Tue, 01 Feb 2022 03:15:05 GMT
 ARG USER_HOME_DIR=/root
-# Mon, 10 Jan 2022 21:42:10 GMT
+# Tue, 01 Feb 2022 03:15:06 GMT
 ARG SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8
-# Mon, 10 Jan 2022 21:42:11 GMT
+# Tue, 01 Feb 2022 03:15:07 GMT
 ARG BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries
-# Mon, 10 Jan 2022 21:42:25 GMT
+# Tue, 01 Feb 2022 03:15:20 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN apt-get update     && apt-get install -y git     && rm -rf /var/lib/apt/lists/*
-# Mon, 10 Jan 2022 21:42:29 GMT
+# Tue, 01 Feb 2022 03:15:25 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN mkdir -p /usr/share/maven /usr/share/maven/ref   && curl -fsSL -o /tmp/apache-maven.tar.gz ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz   && echo "${SHA}  /tmp/apache-maven.tar.gz" | sha512sum -c -   && tar -xzf /tmp/apache-maven.tar.gz -C /usr/share/maven --strip-components=1   && rm -f /tmp/apache-maven.tar.gz   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Mon, 10 Jan 2022 21:42:30 GMT
+# Tue, 01 Feb 2022 03:15:25 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Mon, 10 Jan 2022 21:42:31 GMT
+# Tue, 01 Feb 2022 03:15:26 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Mon, 10 Jan 2022 21:42:33 GMT
+# Tue, 01 Feb 2022 03:15:28 GMT
 COPY file:1b3da5c58894f705e7387946301c0c52edb6271761ea3cd80b86a848847a64cd in /usr/local/bin/mvn-entrypoint.sh 
-# Mon, 10 Jan 2022 21:42:34 GMT
+# Tue, 01 Feb 2022 03:15:29 GMT
 COPY file:2bbb488dd73c55d658b91943cfdf9c26975a320ceafc45dda94c95b03e518ad3 in /usr/share/maven/ref/ 
-# Mon, 10 Jan 2022 21:42:34 GMT
+# Tue, 01 Feb 2022 03:15:29 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Mon, 10 Jan 2022 21:42:35 GMT
+# Tue, 01 Feb 2022 03:15:30 GMT
 CMD ["mvn"]
 ```
 
@@ -18763,42 +18763,42 @@ CMD ["mvn"]
 		Last Modified: Fri, 07 Jan 2022 02:46:50 GMT  
 		Size: 15.9 MB (15894303 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6420bbf643a8c58183444ef3e623b95acf3155aa6537dffd3f1128477d65b42a`  
-		Last Modified: Fri, 07 Jan 2022 02:47:48 GMT  
-		Size: 198.8 MB (198820633 bytes)  
+	-	`sha256:403ce41c6ebbca64053ed56e9832e6d7929ad9a72d9113cc179dc8b9a02f30d3`  
+		Last Modified: Tue, 01 Feb 2022 02:33:33 GMT  
+		Size: 199.0 MB (199028670 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c71633f3d8bfbc660dc2f896074f5aaf8f146f22b2717a6742fc52601670484e`  
-		Last Modified: Fri, 07 Jan 2022 02:47:30 GMT  
-		Size: 4.9 MB (4867518 bytes)  
+	-	`sha256:0c0c40176a39c48a4a403ec1282a1e2696608f50cfeabb9c607b5dc31910fb00`  
+		Last Modified: Tue, 01 Feb 2022 02:33:14 GMT  
+		Size: 5.0 MB (4950723 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08de31f74c1fbb95177a79ee0b9ad2a22392edfb3c818ab34eb956a80dd2ba6f`  
-		Last Modified: Mon, 10 Jan 2022 21:46:19 GMT  
-		Size: 31.0 MB (30964434 bytes)  
+	-	`sha256:1dcf7778433c74cd99709802b4bac02f0fc9d1c4e53b9881d18384f3ee7f5f1f`  
+		Last Modified: Tue, 01 Feb 2022 03:19:04 GMT  
+		Size: 31.0 MB (30964714 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:773d7c8d49ff18d22da1b48135e61cde58cb412fc00b828f8c4f6f1e84b69a15`  
-		Last Modified: Mon, 10 Jan 2022 21:46:15 GMT  
-		Size: 9.1 MB (9109771 bytes)  
+	-	`sha256:4174d01fc2a0a1f5c29f61266fcbe4b1cca0c5ee94627dab695603dbfd7c4662`  
+		Last Modified: Tue, 01 Feb 2022 03:19:00 GMT  
+		Size: 9.1 MB (9109772 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:230bff6cc5a83d4e3f290e8e0739c817fc751e2add69e0b06fd48a27842e052f`  
-		Last Modified: Mon, 10 Jan 2022 21:46:13 GMT  
-		Size: 851.0 B  
+	-	`sha256:b281c895f6dc064fd4df619b82b656665ae64f4b0a874fe048e26a3203eceaa9`  
+		Last Modified: Tue, 01 Feb 2022 03:18:59 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:564e8720a35943f60574179db6229dd5c5ee86ca7fa7a0443eea30090df43b82`  
-		Last Modified: Mon, 10 Jan 2022 21:46:14 GMT  
+	-	`sha256:134135d16eed575c7f754347edea51548856797b42dc2ff440887c9b54cac90a`  
+		Last Modified: Tue, 01 Feb 2022 03:18:59 GMT  
 		Size: 363.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3.8.4-ibm-semeru-11-focal` - linux; ppc64le
 
 ```console
-$ docker pull maven@sha256:4872e138d2b617a970a9cc77c3f741a7734a096551f90bf9aa7592ea809a9c08
+$ docker pull maven@sha256:83c764d9bedb4b0cbcc2b935e44cb6f58ecd0553ebc226e30d9cac8bedb7c6e8
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **306.3 MB (306328555 bytes)**  
+-	Total Size: **306.6 MB (306597482 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b3887650255ce2ff4c6cd345ab33afa401f72474071ac9a9dcae0db8b66c5e4f`
+-	Image ID: `sha256:a08b66e9699afb0604327ea0cecf17da6241697658750dd31cc4f685fb5b2ee2`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -18811,43 +18811,43 @@ CMD ["bash"]
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Fri, 07 Jan 2022 04:22:19 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 07 Jan 2022 04:24:52 GMT
-ENV JAVA_VERSION=jdk-11.0.13+8_openj9-0.29.0
-# Fri, 07 Jan 2022 04:25:27 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='151dca23e1fdb43eaa60631c96895be9aa7bb751e7fdf88ddffa1c32157fb417';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_aarch64_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        amd64|x86_64)          ESUM='3975e2732cf632ca8f41c237ba7e033fd96bda262b79861f83b4e2ac62c90c3d';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_x64_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='7b304c52974f51611b45a2ab7949503e33a204b8a4ae705eb3c74789350174d3';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_ppc64le_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        s390x)          ESUM='6c3ebb4af0f4066e721e1f0078438458775f4b93bfd2d0be1066c54ccf015654';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_s390x_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 07 Jan 2022 04:25:32 GMT
+# Tue, 01 Feb 2022 01:23:02 GMT
+ENV JAVA_VERSION=jdk-11.0.14+9_openj9-0.30.0
+# Tue, 01 Feb 2022 01:23:30 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='1db3d93a57a66db7eec553e9350431e3092ebe20a03f871259a52e3d39b346e4';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_aarch64_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        amd64|x86_64)          ESUM='f39fc492182198503d9be5f198cf257b894a1a74de24e27c70070e7456778eb6';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_x64_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='98e8fb899ba770f85d0a9a44c3965cf87f59c6d767cecd81924176033ed28eed';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_ppc64le_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        s390x)          ESUM='7250822af05cebd2c5ec6ab4871a870d58357241a3070f20ef3623dc42317548';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_s390x_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Tue, 01 Feb 2022 01:23:36 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 07 Jan 2022 04:25:34 GMT
+# Tue, 01 Feb 2022 01:23:38 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
-# Fri, 07 Jan 2022 04:26:14 GMT
+# Tue, 01 Feb 2022 01:24:17 GMT
 RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="0db27185d9fc3174f2c670f814df3dda8a008b89d1a38a5d96cbbe119767ebfb1cf0bce956b27954aee9be19c4a7b91f2579d967932207976322033a86075f98";     TOMCAT_DWNLD_URL="https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.35/bin/apache-tomcat-9.0.35.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed";
-# Fri, 07 Jan 2022 04:26:15 GMT
+# Tue, 01 Feb 2022 01:24:20 GMT
 CMD ["jshell"]
-# Mon, 10 Jan 2022 22:46:32 GMT
+# Tue, 01 Feb 2022 02:32:59 GMT
 ARG MAVEN_VERSION=3.8.4
-# Mon, 10 Jan 2022 22:46:34 GMT
+# Tue, 01 Feb 2022 02:33:00 GMT
 ARG USER_HOME_DIR=/root
-# Mon, 10 Jan 2022 22:46:35 GMT
+# Tue, 01 Feb 2022 02:33:01 GMT
 ARG SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8
-# Mon, 10 Jan 2022 22:46:37 GMT
+# Tue, 01 Feb 2022 02:33:02 GMT
 ARG BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries
-# Mon, 10 Jan 2022 22:47:29 GMT
+# Tue, 01 Feb 2022 02:33:44 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN apt-get update     && apt-get install -y git     && rm -rf /var/lib/apt/lists/*
-# Mon, 10 Jan 2022 22:47:43 GMT
+# Tue, 01 Feb 2022 02:33:51 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN mkdir -p /usr/share/maven /usr/share/maven/ref   && curl -fsSL -o /tmp/apache-maven.tar.gz ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz   && echo "${SHA}  /tmp/apache-maven.tar.gz" | sha512sum -c -   && tar -xzf /tmp/apache-maven.tar.gz -C /usr/share/maven --strip-components=1   && rm -f /tmp/apache-maven.tar.gz   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Mon, 10 Jan 2022 22:47:46 GMT
+# Tue, 01 Feb 2022 02:33:53 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Mon, 10 Jan 2022 22:47:49 GMT
+# Tue, 01 Feb 2022 02:33:55 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Mon, 10 Jan 2022 22:47:50 GMT
+# Tue, 01 Feb 2022 02:33:56 GMT
 COPY file:1b3da5c58894f705e7387946301c0c52edb6271761ea3cd80b86a848847a64cd in /usr/local/bin/mvn-entrypoint.sh 
-# Mon, 10 Jan 2022 22:47:51 GMT
+# Tue, 01 Feb 2022 02:33:56 GMT
 COPY file:2bbb488dd73c55d658b91943cfdf9c26975a320ceafc45dda94c95b03e518ad3 in /usr/share/maven/ref/ 
-# Mon, 10 Jan 2022 22:47:55 GMT
+# Tue, 01 Feb 2022 02:33:58 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Mon, 10 Jan 2022 22:47:57 GMT
+# Tue, 01 Feb 2022 02:34:00 GMT
 CMD ["mvn"]
 ```
 
@@ -18860,42 +18860,42 @@ CMD ["mvn"]
 		Last Modified: Fri, 07 Jan 2022 04:34:49 GMT  
 		Size: 17.2 MB (17206916 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cd358a500a3d0557b6dce6f2c7c711857b0ccc7b7c6dfda87e006901a830a370`  
-		Last Modified: Fri, 07 Jan 2022 04:35:55 GMT  
-		Size: 204.1 MB (204079976 bytes)  
+	-	`sha256:921563ca21cba6b4765e33ceddd93ab3a446829b2a7d7c7fe3092825ac3c94c8`  
+		Last Modified: Tue, 01 Feb 2022 01:38:49 GMT  
+		Size: 204.3 MB (204326119 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:329160ecbc5e5a2fb214191623520fad57c6c089030e4d45617a2ed0b038aa40`  
-		Last Modified: Fri, 07 Jan 2022 04:35:33 GMT  
-		Size: 4.3 MB (4267619 bytes)  
+	-	`sha256:42d2aa19307a0bcd3ba18a18bdf9fc8ec120e288f7662bf576ae25c2b89d6b1e`  
+		Last Modified: Tue, 01 Feb 2022 01:38:28 GMT  
+		Size: 4.3 MB (4290368 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1bbdcfd5276668d7ab560a3f293aa7fc4b1a593be05c6f60885759091fdcbad1`  
-		Last Modified: Mon, 10 Jan 2022 22:51:03 GMT  
-		Size: 38.4 MB (38376143 bytes)  
+	-	`sha256:b2889beac26a108966b8ddb22c92c02d1713430cefe35a02d66716509f9873b0`  
+		Last Modified: Tue, 01 Feb 2022 02:36:48 GMT  
+		Size: 38.4 MB (38376168 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6b9347939665111da29cb4d14c8f14ae396ef011230d3d05b919316044d4f68b`  
-		Last Modified: Mon, 10 Jan 2022 22:50:57 GMT  
-		Size: 9.1 MB (9109796 bytes)  
+	-	`sha256:388aa636b0bd58d068f86d433e0db30952999fb3b2173057cd5d9acf1e3db588`  
+		Last Modified: Tue, 01 Feb 2022 02:36:42 GMT  
+		Size: 9.1 MB (9109803 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4bdb37b235c42114fd3b3835aa9b72193416bcdc6ef428244c24df0722449a8`  
-		Last Modified: Mon, 10 Jan 2022 22:50:56 GMT  
-		Size: 853.0 B  
+	-	`sha256:d3ffecc61b5f114cdfbcbe07af4b564345c0e89746cc458e810c3c35d44ac6fa`  
+		Last Modified: Tue, 01 Feb 2022 02:36:41 GMT  
+		Size: 855.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c70415142e53501535e99eac317eb652e04d4057a1e925384b6327796c44ad78`  
-		Last Modified: Mon, 10 Jan 2022 22:50:56 GMT  
-		Size: 360.0 B  
+	-	`sha256:4e6c9a3234644e9fbdc52a7a453b349ebe72b7a11ba5e1e8620bee51a3d9f6b2`  
+		Last Modified: Tue, 01 Feb 2022 02:36:41 GMT  
+		Size: 361.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3.8.4-ibm-semeru-11-focal` - linux; s390x
 
 ```console
-$ docker pull maven@sha256:20a314b6cb6256b8e6594b595d7307dbc36acdffb159b227ff4eee874b0e2ad4
+$ docker pull maven@sha256:bc2494c4b1bfc336b41c1195ca637568a3f6941b6eca2f92ec8030d176c4c89b
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **288.7 MB (288653442 bytes)**  
+-	Total Size: **288.9 MB (288874075 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6be896576b7df43558b6274b4f353f9432dd1bf21ba0b4ed7a806257406fc593`
+-	Image ID: `sha256:9369f971fb260cbbce3c4c47e158f3f65e90ab26112961f9851bd4c17b22b04d`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -18908,43 +18908,43 @@ CMD ["bash"]
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Fri, 07 Jan 2022 02:24:31 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 07 Jan 2022 02:26:16 GMT
-ENV JAVA_VERSION=jdk-11.0.13+8_openj9-0.29.0
-# Fri, 07 Jan 2022 02:26:26 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='151dca23e1fdb43eaa60631c96895be9aa7bb751e7fdf88ddffa1c32157fb417';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_aarch64_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        amd64|x86_64)          ESUM='3975e2732cf632ca8f41c237ba7e033fd96bda262b79861f83b4e2ac62c90c3d';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_x64_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='7b304c52974f51611b45a2ab7949503e33a204b8a4ae705eb3c74789350174d3';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_ppc64le_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        s390x)          ESUM='6c3ebb4af0f4066e721e1f0078438458775f4b93bfd2d0be1066c54ccf015654';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_s390x_linux_11.0.13_8_openj9-0.29.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 07 Jan 2022 02:26:30 GMT
+# Tue, 01 Feb 2022 02:00:54 GMT
+ENV JAVA_VERSION=jdk-11.0.14+9_openj9-0.30.0
+# Tue, 01 Feb 2022 02:01:07 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='1db3d93a57a66db7eec553e9350431e3092ebe20a03f871259a52e3d39b346e4';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_aarch64_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        amd64|x86_64)          ESUM='f39fc492182198503d9be5f198cf257b894a1a74de24e27c70070e7456778eb6';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_x64_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='98e8fb899ba770f85d0a9a44c3965cf87f59c6d767cecd81924176033ed28eed';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_ppc64le_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        s390x)          ESUM='7250822af05cebd2c5ec6ab4871a870d58357241a3070f20ef3623dc42317548';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.14%2B9_openj9-0.30.0/ibm-semeru-open-jdk_s390x_linux_11.0.14_9_openj9-0.30.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Tue, 01 Feb 2022 02:01:13 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 07 Jan 2022 02:26:30 GMT
+# Tue, 01 Feb 2022 02:01:13 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
-# Fri, 07 Jan 2022 02:27:03 GMT
+# Tue, 01 Feb 2022 02:01:46 GMT
 RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="0db27185d9fc3174f2c670f814df3dda8a008b89d1a38a5d96cbbe119767ebfb1cf0bce956b27954aee9be19c4a7b91f2579d967932207976322033a86075f98";     TOMCAT_DWNLD_URL="https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.35/bin/apache-tomcat-9.0.35.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed";
-# Fri, 07 Jan 2022 02:27:04 GMT
+# Tue, 01 Feb 2022 02:01:46 GMT
 CMD ["jshell"]
-# Mon, 10 Jan 2022 21:43:09 GMT
+# Tue, 01 Feb 2022 02:37:43 GMT
 ARG MAVEN_VERSION=3.8.4
-# Mon, 10 Jan 2022 21:43:09 GMT
+# Tue, 01 Feb 2022 02:37:43 GMT
 ARG USER_HOME_DIR=/root
-# Mon, 10 Jan 2022 21:43:09 GMT
+# Tue, 01 Feb 2022 02:37:43 GMT
 ARG SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8
-# Mon, 10 Jan 2022 21:43:09 GMT
+# Tue, 01 Feb 2022 02:37:43 GMT
 ARG BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries
-# Mon, 10 Jan 2022 21:43:18 GMT
+# Tue, 01 Feb 2022 02:37:52 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN apt-get update     && apt-get install -y git     && rm -rf /var/lib/apt/lists/*
-# Mon, 10 Jan 2022 21:43:22 GMT
+# Tue, 01 Feb 2022 02:38:05 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN mkdir -p /usr/share/maven /usr/share/maven/ref   && curl -fsSL -o /tmp/apache-maven.tar.gz ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz   && echo "${SHA}  /tmp/apache-maven.tar.gz" | sha512sum -c -   && tar -xzf /tmp/apache-maven.tar.gz -C /usr/share/maven --strip-components=1   && rm -f /tmp/apache-maven.tar.gz   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Mon, 10 Jan 2022 21:43:23 GMT
+# Tue, 01 Feb 2022 02:38:05 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Mon, 10 Jan 2022 21:43:23 GMT
+# Tue, 01 Feb 2022 02:38:05 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Mon, 10 Jan 2022 21:43:23 GMT
+# Tue, 01 Feb 2022 02:38:05 GMT
 COPY file:1b3da5c58894f705e7387946301c0c52edb6271761ea3cd80b86a848847a64cd in /usr/local/bin/mvn-entrypoint.sh 
-# Mon, 10 Jan 2022 21:43:23 GMT
+# Tue, 01 Feb 2022 02:38:05 GMT
 COPY file:2bbb488dd73c55d658b91943cfdf9c26975a320ceafc45dda94c95b03e518ad3 in /usr/share/maven/ref/ 
-# Mon, 10 Jan 2022 21:43:23 GMT
+# Tue, 01 Feb 2022 02:38:06 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Mon, 10 Jan 2022 21:43:23 GMT
+# Tue, 01 Feb 2022 02:38:06 GMT
 CMD ["mvn"]
 ```
 
@@ -18957,35 +18957,35 @@ CMD ["mvn"]
 		Last Modified: Fri, 07 Jan 2022 02:32:46 GMT  
 		Size: 15.7 MB (15739670 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3cc84033c8e8795eba7f0df984a6ad5fde22cb7435363bc269b87797262819d5`  
-		Last Modified: Fri, 07 Jan 2022 02:33:36 GMT  
-		Size: 200.7 MB (200748202 bytes)  
+	-	`sha256:d3396e99be3866db6cba77647ac740fc3ef419c41fa2395d192fd27e9cb88a3e`  
+		Last Modified: Tue, 01 Feb 2022 02:06:27 GMT  
+		Size: 201.0 MB (200965847 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b34c16d58740009ff1dec03b5e7cc7b79accb0a46ee95e0c76914e1f63433461`  
-		Last Modified: Fri, 07 Jan 2022 02:33:24 GMT  
-		Size: 5.2 MB (5245267 bytes)  
+	-	`sha256:aef64f00adba5b11b85d2ffd0ef30994e5549699d7adb869a4f60396bdc31cb1`  
+		Last Modified: Tue, 01 Feb 2022 02:06:14 GMT  
+		Size: 5.2 MB (5248221 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f40657ecb68ef8827a75f7e9e888bc0a3811c18ca987b7dc1ddca60f137ab24`  
-		Last Modified: Mon, 10 Jan 2022 21:45:02 GMT  
-		Size: 30.7 MB (30688291 bytes)  
+	-	`sha256:a913ae18af8718eb191fe5519ad4d67008db2217742e89868c655235b09da6e8`  
+		Last Modified: Tue, 01 Feb 2022 02:39:47 GMT  
+		Size: 30.7 MB (30688320 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f3b4fed381ad3c95420ee7ccaf30454e035beaab199f22d3661b67a613f8183b`  
-		Last Modified: Mon, 10 Jan 2022 21:44:58 GMT  
-		Size: 9.1 MB (9109803 bytes)  
+	-	`sha256:e0f3831e0fcace8bc099e33cc48d4713a8681cd774ec0c8e3e5cb53af345c1cb`  
+		Last Modified: Tue, 01 Feb 2022 02:39:43 GMT  
+		Size: 9.1 MB (9109801 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a906424b51cae699d1f4074d13361b54cf355f807d3dc7dfba5ddb6b0c077735`  
-		Last Modified: Mon, 10 Jan 2022 21:44:57 GMT  
-		Size: 850.0 B  
+	-	`sha256:059f54533ff68c07e122dac73f52bc353694362eeac56ab6f579bee99e7cf0fd`  
+		Last Modified: Tue, 01 Feb 2022 02:39:43 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e03f6d3bd26c504a87f9b26d64e43b74c47dd2fda1a6bf8636bdeb17cff5fe05`  
-		Last Modified: Mon, 10 Jan 2022 21:44:57 GMT  
-		Size: 360.0 B  
+	-	`sha256:f2574e5d60dfe8b98e5d19e5719040cbe6b413d15a7fc91c89db0e9d65c703e6`  
+		Last Modified: Tue, 01 Feb 2022 02:39:43 GMT  
+		Size: 364.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `maven:3.8.4-ibm-semeru-17-focal`
 
 ```console
-$ docker pull maven@sha256:32f1d8554e9733bb13765b811c43bb158eb232cbca14a09cff530f273b2586c4
+$ docker pull maven@sha256:efd91ad48a5413122df8e4cb35b742710d3d83abe13017dfb1c560ab6a209165
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -18998,14 +18998,14 @@ $ docker pull maven@sha256:32f1d8554e9733bb13765b811c43bb158eb232cbca14a09cff530
 ### `maven:3.8.4-ibm-semeru-17-focal` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:c4becf5cf83087b6d8b6f8aa2c78673ccc46ff8cb3a3cbb610352b0063391007
+$ docker pull maven@sha256:80c9d7d49ced0691b7d9cc96748efe46e2e29ca0d22676161416a03b3e50c0ea
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **299.1 MB (299139288 bytes)**  
+-	Total Size: **299.3 MB (299329228 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:76e8eaac8dbe67c992acfd859788ae34484bbd75951b885970bb34094fd2f2b5`
+-	Image ID: `sha256:125067f47a77ca636919b0d00ffe2054bf1e29942ffc5ced099f4918405db443`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -19018,43 +19018,43 @@ CMD ["bash"]
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Fri, 07 Jan 2022 04:49:04 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 07 Jan 2022 04:54:28 GMT
-ENV JAVA_VERSION=jdk-17.0.1+12_openj9-0.29.1
-# Fri, 07 Jan 2022 04:55:01 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='5e0f80052ac4613d2d689904b20ff8b6e2bbd1edd87271db0659a646a24dfeb6';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_aarch64_linux_17.0.1_12_openj9-0.29.1.tar.gz';          ;;        amd64|x86_64)          ESUM='154f6411742ee1f8cbf004d72e7e71053b9ad4e89090cb930b6f16951e56503e';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_x64_linux_17.0.1_12_openj9-0.29.1.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='80b6389dbed9b7de9c63b1cb423e719aa5e6fbab42387fdb1f68d9d199bf5196';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_ppc64le_linux_17.0.1_12_openj9-0.29.1.tar.gz';         ;;       s390x)          ESUM='56e01c97f98bfb2cf9959b09b5d0cfae9993f82f1f54f77ef1199425c0b64bc2';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_s390x_linux_17.0.1_12_openj9-0.29.1.tar.gz';          ;;       *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 07 Jan 2022 04:55:02 GMT
+# Tue, 01 Feb 2022 01:48:11 GMT
+ENV JAVA_VERSION=jdk-jdk-17.0.2+8_openj9-0.30.0
+# Tue, 01 Feb 2022 01:48:35 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='c2dc7558f9bdbc88329d0e8af6f694c71e8c95531d44ed003b8510535cecd2cc';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_aarch64_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;        amd64|x86_64)          ESUM='2e35d0b10dce880a2447e7c8b5d87b8aa63c693440744089590bec2d6f1490a7';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_x64_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='218d122c6ab34f13b300e003830f23df25a8a6dc86b1ca6be261e471a5627537';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_ppc64le_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;        s390x)          ESUM='cd39a1162145a76de214150c8b0f165c4f82cbda62f21063f18c7a011c97d21e';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_s390x_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;       *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Tue, 01 Feb 2022 01:48:36 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 07 Jan 2022 04:55:02 GMT
+# Tue, 01 Feb 2022 01:48:36 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
-# Fri, 07 Jan 2022 04:55:38 GMT
+# Tue, 01 Feb 2022 01:49:16 GMT
 RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="0db27185d9fc3174f2c670f814df3dda8a008b89d1a38a5d96cbbe119767ebfb1cf0bce956b27954aee9be19c4a7b91f2579d967932207976322033a86075f98";     TOMCAT_DWNLD_URL="https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.35/bin/apache-tomcat-9.0.35.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed";
-# Fri, 07 Jan 2022 04:55:38 GMT
+# Tue, 01 Feb 2022 01:49:16 GMT
 CMD ["jshell"]
-# Mon, 10 Jan 2022 22:31:32 GMT
+# Tue, 01 Feb 2022 02:29:52 GMT
 ARG MAVEN_VERSION=3.8.4
-# Mon, 10 Jan 2022 22:31:32 GMT
+# Tue, 01 Feb 2022 02:29:52 GMT
 ARG USER_HOME_DIR=/root
-# Mon, 10 Jan 2022 22:31:33 GMT
+# Tue, 01 Feb 2022 02:29:52 GMT
 ARG SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8
-# Mon, 10 Jan 2022 22:31:33 GMT
+# Tue, 01 Feb 2022 02:29:52 GMT
 ARG BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries
-# Mon, 10 Jan 2022 22:31:42 GMT
+# Tue, 01 Feb 2022 02:30:00 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN apt-get update     && apt-get install -y git     && rm -rf /var/lib/apt/lists/*
-# Mon, 10 Jan 2022 22:31:45 GMT
+# Tue, 01 Feb 2022 02:30:08 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN mkdir -p /usr/share/maven /usr/share/maven/ref   && curl -fsSL -o /tmp/apache-maven.tar.gz ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz   && echo "${SHA}  /tmp/apache-maven.tar.gz" | sha512sum -c -   && tar -xzf /tmp/apache-maven.tar.gz -C /usr/share/maven --strip-components=1   && rm -f /tmp/apache-maven.tar.gz   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Mon, 10 Jan 2022 22:31:45 GMT
+# Tue, 01 Feb 2022 02:30:08 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Mon, 10 Jan 2022 22:31:45 GMT
+# Tue, 01 Feb 2022 02:30:08 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Mon, 10 Jan 2022 22:31:45 GMT
+# Tue, 01 Feb 2022 02:30:09 GMT
 COPY file:1b3da5c58894f705e7387946301c0c52edb6271761ea3cd80b86a848847a64cd in /usr/local/bin/mvn-entrypoint.sh 
-# Mon, 10 Jan 2022 22:31:45 GMT
+# Tue, 01 Feb 2022 02:30:09 GMT
 COPY file:2bbb488dd73c55d658b91943cfdf9c26975a320ceafc45dda94c95b03e518ad3 in /usr/share/maven/ref/ 
-# Mon, 10 Jan 2022 22:31:46 GMT
+# Tue, 01 Feb 2022 02:30:09 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Mon, 10 Jan 2022 22:31:46 GMT
+# Tue, 01 Feb 2022 02:30:09 GMT
 CMD ["mvn"]
 ```
 
@@ -19067,42 +19067,42 @@ CMD ["mvn"]
 		Last Modified: Fri, 07 Jan 2022 04:57:29 GMT  
 		Size: 16.0 MB (16032427 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87b4d1272155911f56795974ec0af6448a18819efdbdb547b851a2fd10285b38`  
-		Last Modified: Fri, 07 Jan 2022 04:59:41 GMT  
-		Size: 208.4 MB (208388838 bytes)  
+	-	`sha256:476557e8c1a9f1b12365d48d11a125877dffbf906921b425d775ecf5426a683c`  
+		Last Modified: Tue, 01 Feb 2022 01:56:22 GMT  
+		Size: 208.6 MB (208589686 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee5a8c165cd797722c9a391c36b43066c7c125f2c991ad0d94fd6d33af91c8e8`  
-		Last Modified: Fri, 07 Jan 2022 04:59:28 GMT  
-		Size: 5.9 MB (5870151 bytes)  
+	-	`sha256:8ce124f00ef397f6c9dda5b21b3a36e4df82777e1bc8c31b02fb578f610fa3ca`  
+		Last Modified: Tue, 01 Feb 2022 01:56:07 GMT  
+		Size: 5.9 MB (5859277 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bef7ec517e3780fb4dfad1f73454863ea757ba24c363c16870b80052fe86c2f2`  
-		Last Modified: Mon, 10 Jan 2022 22:34:17 GMT  
-		Size: 31.2 MB (31170435 bytes)  
+	-	`sha256:df8cd63f16dd987f353369ded482d299f5da7052668687e9b527d6367d322e10`  
+		Last Modified: Tue, 01 Feb 2022 02:32:32 GMT  
+		Size: 31.2 MB (31170393 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4e794e93d0f6e65972081431abe7a357323d99b0cd9b369ddf8bd4d8df3205dd`  
-		Last Modified: Mon, 10 Jan 2022 22:34:12 GMT  
-		Size: 9.1 MB (9109801 bytes)  
+	-	`sha256:191e842b29e71c41d3c98c937bd8486494aa648b7b27c5f684a5d9088f2807cc`  
+		Last Modified: Tue, 01 Feb 2022 02:32:28 GMT  
+		Size: 9.1 MB (9109806 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14e775d125b360a0493d19b62b771797c9c40d41089ad35ccda53343a36cd304`  
-		Last Modified: Mon, 10 Jan 2022 22:34:11 GMT  
-		Size: 852.0 B  
+	-	`sha256:eb85c6199094e94e9911f57e33cd43177e73367f1212f8c9a8682e075637376e`  
+		Last Modified: Tue, 01 Feb 2022 02:32:28 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ca22d41a6f3a57fa49e1922d4d1d0acc0704671b59103bef8011fdef4f92331`  
-		Last Modified: Mon, 10 Jan 2022 22:34:11 GMT  
-		Size: 359.0 B  
+	-	`sha256:a4ae8fabe2cc88006b97cb842ba38d3946dd039e4992ca690a3ad6b2f655f7ec`  
+		Last Modified: Tue, 01 Feb 2022 02:32:27 GMT  
+		Size: 361.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3.8.4-ibm-semeru-17-focal` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:99843f7f8960649a5f58050611e175fd8835d775545dc9e0bd431bd5e6d17339
+$ docker pull maven@sha256:1ba0d9078c55cbc5d914014491a64f984b5d5e1933fd29346f55f125cd86aa0c
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **292.1 MB (292088064 bytes)**  
+-	Total Size: **292.3 MB (292315276 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:543c234f5c6c06244493b403918d6e65aab748a0a4e04f334f189b736e62536d`
+-	Image ID: `sha256:c4a8b1c130529f54f50413c6e2854e3e60f20052a712c8a2398d7026fe375d5d`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -19115,43 +19115,43 @@ CMD ["bash"]
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Fri, 07 Jan 2022 02:41:57 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 07 Jan 2022 19:40:28 GMT
-ENV JAVA_VERSION=jdk-17.0.1+12_openj9-0.29.1
-# Fri, 07 Jan 2022 19:40:45 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='5e0f80052ac4613d2d689904b20ff8b6e2bbd1edd87271db0659a646a24dfeb6';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_aarch64_linux_17.0.1_12_openj9-0.29.1.tar.gz';          ;;        amd64|x86_64)          ESUM='154f6411742ee1f8cbf004d72e7e71053b9ad4e89090cb930b6f16951e56503e';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_x64_linux_17.0.1_12_openj9-0.29.1.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='80b6389dbed9b7de9c63b1cb423e719aa5e6fbab42387fdb1f68d9d199bf5196';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_ppc64le_linux_17.0.1_12_openj9-0.29.1.tar.gz';         ;;       s390x)          ESUM='56e01c97f98bfb2cf9959b09b5d0cfae9993f82f1f54f77ef1199425c0b64bc2';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_s390x_linux_17.0.1_12_openj9-0.29.1.tar.gz';          ;;       *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 07 Jan 2022 19:40:46 GMT
+# Tue, 01 Feb 2022 02:26:39 GMT
+ENV JAVA_VERSION=jdk-jdk-17.0.2+8_openj9-0.30.0
+# Tue, 01 Feb 2022 02:26:53 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='c2dc7558f9bdbc88329d0e8af6f694c71e8c95531d44ed003b8510535cecd2cc';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_aarch64_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;        amd64|x86_64)          ESUM='2e35d0b10dce880a2447e7c8b5d87b8aa63c693440744089590bec2d6f1490a7';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_x64_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='218d122c6ab34f13b300e003830f23df25a8a6dc86b1ca6be261e471a5627537';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_ppc64le_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;        s390x)          ESUM='cd39a1162145a76de214150c8b0f165c4f82cbda62f21063f18c7a011c97d21e';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_s390x_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;       *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Tue, 01 Feb 2022 02:26:53 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 07 Jan 2022 19:40:47 GMT
+# Tue, 01 Feb 2022 02:26:54 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
-# Fri, 07 Jan 2022 19:41:23 GMT
+# Tue, 01 Feb 2022 02:27:30 GMT
 RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="0db27185d9fc3174f2c670f814df3dda8a008b89d1a38a5d96cbbe119767ebfb1cf0bce956b27954aee9be19c4a7b91f2579d967932207976322033a86075f98";     TOMCAT_DWNLD_URL="https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.35/bin/apache-tomcat-9.0.35.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed";
-# Fri, 07 Jan 2022 19:41:24 GMT
+# Tue, 01 Feb 2022 02:27:30 GMT
 CMD ["jshell"]
-# Mon, 10 Jan 2022 21:42:41 GMT
+# Tue, 01 Feb 2022 03:15:36 GMT
 ARG MAVEN_VERSION=3.8.4
-# Mon, 10 Jan 2022 21:42:41 GMT
+# Tue, 01 Feb 2022 03:15:37 GMT
 ARG USER_HOME_DIR=/root
-# Mon, 10 Jan 2022 21:42:42 GMT
+# Tue, 01 Feb 2022 03:15:38 GMT
 ARG SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8
-# Mon, 10 Jan 2022 21:42:43 GMT
+# Tue, 01 Feb 2022 03:15:39 GMT
 ARG BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries
-# Mon, 10 Jan 2022 21:42:57 GMT
+# Tue, 01 Feb 2022 03:15:52 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN apt-get update     && apt-get install -y git     && rm -rf /var/lib/apt/lists/*
-# Mon, 10 Jan 2022 21:43:10 GMT
+# Tue, 01 Feb 2022 03:15:56 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN mkdir -p /usr/share/maven /usr/share/maven/ref   && curl -fsSL -o /tmp/apache-maven.tar.gz ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz   && echo "${SHA}  /tmp/apache-maven.tar.gz" | sha512sum -c -   && tar -xzf /tmp/apache-maven.tar.gz -C /usr/share/maven --strip-components=1   && rm -f /tmp/apache-maven.tar.gz   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Mon, 10 Jan 2022 21:43:11 GMT
+# Tue, 01 Feb 2022 03:15:57 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Mon, 10 Jan 2022 21:43:12 GMT
+# Tue, 01 Feb 2022 03:15:58 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Mon, 10 Jan 2022 21:43:14 GMT
+# Tue, 01 Feb 2022 03:16:00 GMT
 COPY file:1b3da5c58894f705e7387946301c0c52edb6271761ea3cd80b86a848847a64cd in /usr/local/bin/mvn-entrypoint.sh 
-# Mon, 10 Jan 2022 21:43:15 GMT
+# Tue, 01 Feb 2022 03:16:01 GMT
 COPY file:2bbb488dd73c55d658b91943cfdf9c26975a320ceafc45dda94c95b03e518ad3 in /usr/share/maven/ref/ 
-# Mon, 10 Jan 2022 21:43:15 GMT
+# Tue, 01 Feb 2022 03:16:01 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Mon, 10 Jan 2022 21:43:16 GMT
+# Tue, 01 Feb 2022 03:16:02 GMT
 CMD ["mvn"]
 ```
 
@@ -19164,42 +19164,42 @@ CMD ["mvn"]
 		Last Modified: Fri, 07 Jan 2022 02:46:50 GMT  
 		Size: 15.9 MB (15894303 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fbcd324088ba527ea466905250d0bfb3ffe191a8c868e6624f8f1c738b1b02e9`  
-		Last Modified: Fri, 07 Jan 2022 19:46:04 GMT  
-		Size: 203.3 MB (203293772 bytes)  
+	-	`sha256:d1162362814a04541f7c7058e646652a69b8f16ff7225822d2cee695a981c4b2`  
+		Last Modified: Tue, 01 Feb 2022 02:35:07 GMT  
+		Size: 203.4 MB (203432646 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:56ab9bb7d9e3efd7836528a4a8aa5879ffcc69cfeb389ab16b7b7183ee348238`  
-		Last Modified: Fri, 07 Jan 2022 19:45:47 GMT  
-		Size: 5.7 MB (5653210 bytes)  
+	-	`sha256:37b9b5c9e70551611427484c97762286dba3af1e10206ca67f1c698d546d567d`  
+		Last Modified: Tue, 01 Feb 2022 02:34:50 GMT  
+		Size: 5.7 MB (5741493 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:64ec9a1c4ca37d826815c3a0bea8e794be7f282ee956ccea9c349323f641b18b`  
-		Last Modified: Mon, 10 Jan 2022 21:46:37 GMT  
-		Size: 31.0 MB (30964728 bytes)  
+	-	`sha256:146ea8495ab1dc5816621bad74455d6fc626e13a0b744252218200eec86e0c4e`  
+		Last Modified: Tue, 01 Feb 2022 03:19:23 GMT  
+		Size: 31.0 MB (30964777 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7e1e173ec62f495cccca89509b15a9092021f20d1ada1eb3e29010a4f8edb7f`  
-		Last Modified: Mon, 10 Jan 2022 21:46:34 GMT  
-		Size: 9.1 MB (9109762 bytes)  
+	-	`sha256:c7bd557f7e8007c967c310783a21812f395495de47fae1a7f7a8f13683503012`  
+		Last Modified: Tue, 01 Feb 2022 03:19:19 GMT  
+		Size: 9.1 MB (9109769 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa22e29d02f63dfb97204d1cb8431268136e4bd13eaf249cc85c9fdf82a23145`  
-		Last Modified: Mon, 10 Jan 2022 21:46:32 GMT  
+	-	`sha256:5d67eaa0b8c15b7b4d5d5a3135bd5e3abebe5f6d4f4cb31b11e74cb285e28c05`  
+		Last Modified: Tue, 01 Feb 2022 03:19:18 GMT  
 		Size: 852.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:520bd40410dc9ac2a2c7506ede19290cfa905f642b846f78a73f56a626237ccd`  
-		Last Modified: Mon, 10 Jan 2022 21:46:33 GMT  
-		Size: 363.0 B  
+	-	`sha256:29b741cc5519c54c83116e35f6bc27476601508604b8444964d4e559716a4605`  
+		Last Modified: Tue, 01 Feb 2022 03:19:18 GMT  
+		Size: 362.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3.8.4-ibm-semeru-17-focal` - linux; ppc64le
 
 ```console
-$ docker pull maven@sha256:86974bd804682eb466e2b5376a95b7575da696ef9ffaf70235e5935b6e24cf7d
+$ docker pull maven@sha256:ea277945002c9ae9f9c8f1658696d569bda4474a4400ab47ff42a89aef3057e4
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **311.6 MB (311550719 bytes)**  
+-	Total Size: **311.8 MB (311767020 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d522a2768167c9a7e500d70659bf777d71104b69df90ef520bb6f0d0a3849f4a`
+-	Image ID: `sha256:ff77f4eba58cb6f7614a139dcb06520404824e4eaf30eba48909db443e2df04f`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -19212,43 +19212,43 @@ CMD ["bash"]
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Fri, 07 Jan 2022 04:22:19 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 07 Jan 2022 04:30:40 GMT
-ENV JAVA_VERSION=jdk-17.0.1+12_openj9-0.29.1
-# Fri, 07 Jan 2022 04:31:01 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='5e0f80052ac4613d2d689904b20ff8b6e2bbd1edd87271db0659a646a24dfeb6';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_aarch64_linux_17.0.1_12_openj9-0.29.1.tar.gz';          ;;        amd64|x86_64)          ESUM='154f6411742ee1f8cbf004d72e7e71053b9ad4e89090cb930b6f16951e56503e';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_x64_linux_17.0.1_12_openj9-0.29.1.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='80b6389dbed9b7de9c63b1cb423e719aa5e6fbab42387fdb1f68d9d199bf5196';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_ppc64le_linux_17.0.1_12_openj9-0.29.1.tar.gz';         ;;       s390x)          ESUM='56e01c97f98bfb2cf9959b09b5d0cfae9993f82f1f54f77ef1199425c0b64bc2';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_s390x_linux_17.0.1_12_openj9-0.29.1.tar.gz';          ;;       *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 07 Jan 2022 04:31:05 GMT
+# Tue, 01 Feb 2022 01:29:19 GMT
+ENV JAVA_VERSION=jdk-jdk-17.0.2+8_openj9-0.30.0
+# Tue, 01 Feb 2022 01:29:40 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='c2dc7558f9bdbc88329d0e8af6f694c71e8c95531d44ed003b8510535cecd2cc';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_aarch64_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;        amd64|x86_64)          ESUM='2e35d0b10dce880a2447e7c8b5d87b8aa63c693440744089590bec2d6f1490a7';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_x64_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='218d122c6ab34f13b300e003830f23df25a8a6dc86b1ca6be261e471a5627537';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_ppc64le_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;        s390x)          ESUM='cd39a1162145a76de214150c8b0f165c4f82cbda62f21063f18c7a011c97d21e';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_s390x_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;       *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Tue, 01 Feb 2022 01:29:46 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 07 Jan 2022 04:31:09 GMT
+# Tue, 01 Feb 2022 01:29:53 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
-# Fri, 07 Jan 2022 04:31:48 GMT
+# Tue, 01 Feb 2022 01:30:39 GMT
 RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="0db27185d9fc3174f2c670f814df3dda8a008b89d1a38a5d96cbbe119767ebfb1cf0bce956b27954aee9be19c4a7b91f2579d967932207976322033a86075f98";     TOMCAT_DWNLD_URL="https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.35/bin/apache-tomcat-9.0.35.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed";
-# Fri, 07 Jan 2022 04:31:51 GMT
+# Tue, 01 Feb 2022 01:30:44 GMT
 CMD ["jshell"]
-# Mon, 10 Jan 2022 22:48:12 GMT
+# Tue, 01 Feb 2022 02:34:11 GMT
 ARG MAVEN_VERSION=3.8.4
-# Mon, 10 Jan 2022 22:48:13 GMT
+# Tue, 01 Feb 2022 02:34:12 GMT
 ARG USER_HOME_DIR=/root
-# Mon, 10 Jan 2022 22:48:17 GMT
+# Tue, 01 Feb 2022 02:34:14 GMT
 ARG SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8
-# Mon, 10 Jan 2022 22:48:20 GMT
+# Tue, 01 Feb 2022 02:34:15 GMT
 ARG BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries
-# Mon, 10 Jan 2022 22:49:15 GMT
+# Tue, 01 Feb 2022 02:35:02 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN apt-get update     && apt-get install -y git     && rm -rf /var/lib/apt/lists/*
-# Mon, 10 Jan 2022 22:49:23 GMT
+# Tue, 01 Feb 2022 02:35:12 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN mkdir -p /usr/share/maven /usr/share/maven/ref   && curl -fsSL -o /tmp/apache-maven.tar.gz ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz   && echo "${SHA}  /tmp/apache-maven.tar.gz" | sha512sum -c -   && tar -xzf /tmp/apache-maven.tar.gz -C /usr/share/maven --strip-components=1   && rm -f /tmp/apache-maven.tar.gz   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Mon, 10 Jan 2022 22:49:25 GMT
+# Tue, 01 Feb 2022 02:35:14 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Mon, 10 Jan 2022 22:49:27 GMT
+# Tue, 01 Feb 2022 02:35:15 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Mon, 10 Jan 2022 22:49:28 GMT
+# Tue, 01 Feb 2022 02:35:16 GMT
 COPY file:1b3da5c58894f705e7387946301c0c52edb6271761ea3cd80b86a848847a64cd in /usr/local/bin/mvn-entrypoint.sh 
-# Mon, 10 Jan 2022 22:49:29 GMT
+# Tue, 01 Feb 2022 02:35:17 GMT
 COPY file:2bbb488dd73c55d658b91943cfdf9c26975a320ceafc45dda94c95b03e518ad3 in /usr/share/maven/ref/ 
-# Mon, 10 Jan 2022 22:49:31 GMT
+# Tue, 01 Feb 2022 02:35:19 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Mon, 10 Jan 2022 22:49:32 GMT
+# Tue, 01 Feb 2022 02:35:20 GMT
 CMD ["mvn"]
 ```
 
@@ -19261,42 +19261,42 @@ CMD ["mvn"]
 		Last Modified: Fri, 07 Jan 2022 04:34:49 GMT  
 		Size: 17.2 MB (17206916 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ebdd9d98a6dea2a986725972e7c6e59691339cc5ec3e108a271202b3864b78e2`  
-		Last Modified: Fri, 07 Jan 2022 04:37:54 GMT  
-		Size: 208.8 MB (208777828 bytes)  
+	-	`sha256:f80c180721b4c9de57fc4a7d9a5e3d5f6e5bbdf3af32cd700b10945d2e1d2f15`  
+		Last Modified: Tue, 01 Feb 2022 01:40:46 GMT  
+		Size: 209.0 MB (208963184 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad4b689f5c12df1386bdd86f9cab4b8bab70886d26c325457b70bc85c2c70f69`  
-		Last Modified: Fri, 07 Jan 2022 04:37:33 GMT  
-		Size: 4.8 MB (4792030 bytes)  
+	-	`sha256:40cbc6b62bb78013e4eb98dfcabe8574ef019e86a580ce632cfd425fd52d767d`  
+		Last Modified: Tue, 01 Feb 2022 01:40:23 GMT  
+		Size: 4.8 MB (4822811 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3814ac990f361a50a37b6f08f5ae6fbf2d9c81ed5c872815759bd341870aeacf`  
-		Last Modified: Mon, 10 Jan 2022 22:51:26 GMT  
-		Size: 38.4 MB (38376040 bytes)  
+	-	`sha256:6998cab0583766a33967fc9249825de619496a6826e56037a4fb5cd1e1903116`  
+		Last Modified: Tue, 01 Feb 2022 02:37:12 GMT  
+		Size: 38.4 MB (38376208 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4f46e9d369f81200f91bf0f40e4772e67c5912263a1d9fcae5d095290a053f48`  
-		Last Modified: Mon, 10 Jan 2022 22:51:19 GMT  
-		Size: 9.1 MB (9109798 bytes)  
+	-	`sha256:7abc05a880a98ed4585aca9db94419aaa0c2d4aeb2c50e36a842ffb4431cfde4`  
+		Last Modified: Tue, 01 Feb 2022 02:37:05 GMT  
+		Size: 9.1 MB (9109794 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fca9cdf4d305463b6b2a6c8c1902ab92346c87706bb30d6ca8ca42ddc7f29e9f`  
-		Last Modified: Mon, 10 Jan 2022 22:51:18 GMT  
+	-	`sha256:830f36a62f1838429fb0b0c264dc50c15bb5854b8876b2253a8593b8f2e45cbd`  
+		Last Modified: Tue, 01 Feb 2022 02:37:04 GMT  
 		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e08a0ccceac8acf388a588ca21a77dc9937ff67cfba1335990479fa2f7509eea`  
-		Last Modified: Mon, 10 Jan 2022 22:51:18 GMT  
+	-	`sha256:e252dbd32c59b49a1310253036b6cfaa78e832cd28547132824f0fc4b2426385`  
+		Last Modified: Tue, 01 Feb 2022 02:37:04 GMT  
 		Size: 361.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3.8.4-ibm-semeru-17-focal` - linux; s390x
 
 ```console
-$ docker pull maven@sha256:922c27866e73b45844be512c33f5d937d8f4864ecf5aef857c6fdbe53369ad37
+$ docker pull maven@sha256:4633016a23131d525067bbac3f048e511afc91d1c6483ede9503f680bdc99ca9
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **293.1 MB (293084366 bytes)**  
+-	Total Size: **293.3 MB (293262137 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:444f9ba066c3f678119e1cf10975bea5630a7adf0548c318f3556ef5001f0857`
+-	Image ID: `sha256:64e928eac25e0b2dc1368dd0b49b693840d08bc0c73e0bc87d6cfce19c5f4948`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -19309,43 +19309,43 @@ CMD ["bash"]
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Fri, 07 Jan 2022 02:24:31 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 07 Jan 2022 02:29:51 GMT
-ENV JAVA_VERSION=jdk-17.0.1+12_openj9-0.29.1
-# Fri, 07 Jan 2022 02:30:01 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='5e0f80052ac4613d2d689904b20ff8b6e2bbd1edd87271db0659a646a24dfeb6';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_aarch64_linux_17.0.1_12_openj9-0.29.1.tar.gz';          ;;        amd64|x86_64)          ESUM='154f6411742ee1f8cbf004d72e7e71053b9ad4e89090cb930b6f16951e56503e';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_x64_linux_17.0.1_12_openj9-0.29.1.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='80b6389dbed9b7de9c63b1cb423e719aa5e6fbab42387fdb1f68d9d199bf5196';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_ppc64le_linux_17.0.1_12_openj9-0.29.1.tar.gz';         ;;       s390x)          ESUM='56e01c97f98bfb2cf9959b09b5d0cfae9993f82f1f54f77ef1199425c0b64bc2';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_s390x_linux_17.0.1_12_openj9-0.29.1.tar.gz';          ;;       *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 07 Jan 2022 02:30:07 GMT
+# Tue, 01 Feb 2022 02:02:58 GMT
+ENV JAVA_VERSION=jdk-jdk-17.0.2+8_openj9-0.30.0
+# Tue, 01 Feb 2022 02:03:10 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='c2dc7558f9bdbc88329d0e8af6f694c71e8c95531d44ed003b8510535cecd2cc';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_aarch64_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;        amd64|x86_64)          ESUM='2e35d0b10dce880a2447e7c8b5d87b8aa63c693440744089590bec2d6f1490a7';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_x64_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='218d122c6ab34f13b300e003830f23df25a8a6dc86b1ca6be261e471a5627537';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_ppc64le_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;        s390x)          ESUM='cd39a1162145a76de214150c8b0f165c4f82cbda62f21063f18c7a011c97d21e';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jdk_s390x_linux_17.0.2_8_openj9-0.30.0.tar.gz';          ;;       *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Tue, 01 Feb 2022 02:03:16 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 07 Jan 2022 02:30:07 GMT
+# Tue, 01 Feb 2022 02:03:16 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
-# Fri, 07 Jan 2022 02:30:42 GMT
+# Tue, 01 Feb 2022 02:03:49 GMT
 RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="0db27185d9fc3174f2c670f814df3dda8a008b89d1a38a5d96cbbe119767ebfb1cf0bce956b27954aee9be19c4a7b91f2579d967932207976322033a86075f98";     TOMCAT_DWNLD_URL="https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.35/bin/apache-tomcat-9.0.35.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed";
-# Fri, 07 Jan 2022 02:30:42 GMT
+# Tue, 01 Feb 2022 02:03:49 GMT
 CMD ["jshell"]
-# Mon, 10 Jan 2022 21:43:30 GMT
+# Tue, 01 Feb 2022 02:38:14 GMT
 ARG MAVEN_VERSION=3.8.4
-# Mon, 10 Jan 2022 21:43:30 GMT
+# Tue, 01 Feb 2022 02:38:14 GMT
 ARG USER_HOME_DIR=/root
-# Mon, 10 Jan 2022 21:43:31 GMT
+# Tue, 01 Feb 2022 02:38:15 GMT
 ARG SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8
-# Mon, 10 Jan 2022 21:43:31 GMT
+# Tue, 01 Feb 2022 02:38:15 GMT
 ARG BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries
-# Mon, 10 Jan 2022 21:43:40 GMT
+# Tue, 01 Feb 2022 02:38:24 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN apt-get update     && apt-get install -y git     && rm -rf /var/lib/apt/lists/*
-# Mon, 10 Jan 2022 21:43:44 GMT
+# Tue, 01 Feb 2022 02:38:28 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.4/binaries MAVEN_VERSION=3.8.4 SHA=a9b2d825eacf2e771ed5d6b0e01398589ac1bfa4171f36154d1b5787879605507802f699da6f7cfc80732a5282fd31b28e4cd6052338cbef0fa1358b48a5e3c8 USER_HOME_DIR=/root
 RUN mkdir -p /usr/share/maven /usr/share/maven/ref   && curl -fsSL -o /tmp/apache-maven.tar.gz ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz   && echo "${SHA}  /tmp/apache-maven.tar.gz" | sha512sum -c -   && tar -xzf /tmp/apache-maven.tar.gz -C /usr/share/maven --strip-components=1   && rm -f /tmp/apache-maven.tar.gz   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Mon, 10 Jan 2022 21:43:44 GMT
+# Tue, 01 Feb 2022 02:38:28 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Mon, 10 Jan 2022 21:43:44 GMT
+# Tue, 01 Feb 2022 02:38:28 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Mon, 10 Jan 2022 21:43:44 GMT
+# Tue, 01 Feb 2022 02:38:28 GMT
 COPY file:1b3da5c58894f705e7387946301c0c52edb6271761ea3cd80b86a848847a64cd in /usr/local/bin/mvn-entrypoint.sh 
-# Mon, 10 Jan 2022 21:43:44 GMT
+# Tue, 01 Feb 2022 02:38:29 GMT
 COPY file:2bbb488dd73c55d658b91943cfdf9c26975a320ceafc45dda94c95b03e518ad3 in /usr/share/maven/ref/ 
-# Mon, 10 Jan 2022 21:43:45 GMT
+# Tue, 01 Feb 2022 02:38:29 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Mon, 10 Jan 2022 21:43:45 GMT
+# Tue, 01 Feb 2022 02:38:29 GMT
 CMD ["mvn"]
 ```
 
@@ -19358,29 +19358,29 @@ CMD ["mvn"]
 		Last Modified: Fri, 07 Jan 2022 02:32:46 GMT  
 		Size: 15.7 MB (15739670 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:26895d5767c9b753c5f78a81886caebd33d5dc75ae1c108da768dab052f7e42d`  
-		Last Modified: Fri, 07 Jan 2022 02:34:47 GMT  
-		Size: 204.4 MB (204443746 bytes)  
+	-	`sha256:3c0b384c02ce171d3c5fced114e81d8abba133ca30c4ce412802e35127f50652`  
+		Last Modified: Tue, 01 Feb 2022 02:07:04 GMT  
+		Size: 204.6 MB (204621533 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3716b6fe4c57feab18f1fe61c43efb16bb68330997bb2330444e4614e523ece2`  
-		Last Modified: Fri, 07 Jan 2022 02:34:33 GMT  
-		Size: 6.0 MB (5980788 bytes)  
+	-	`sha256:51bdecda3917ebe274d2bf884f6b774679bf5483e65bc2ac9a1fd9ed645731f3`  
+		Last Modified: Tue, 01 Feb 2022 02:06:51 GMT  
+		Size: 6.0 MB (5980644 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ffacfd4c9dee817820f95547ff8e34570c797218730b6944561a1d70a066aab`  
-		Last Modified: Mon, 10 Jan 2022 21:45:16 GMT  
-		Size: 30.7 MB (30688134 bytes)  
+	-	`sha256:b7b8efa3cd693d26b38cfd7c975b49a3b6131a6f4a3c6896ff85457f14a79a53`  
+		Last Modified: Tue, 01 Feb 2022 02:40:01 GMT  
+		Size: 30.7 MB (30688271 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:53b369c45cf7f977b8920f9b959d87bdd8768266fd99501d8895c9fb78c9cf43`  
-		Last Modified: Mon, 10 Jan 2022 21:45:12 GMT  
-		Size: 9.1 MB (9109817 bytes)  
+	-	`sha256:bce36f971f23eea69b812cb4615685548861640a87affedbd24735d74c88a91c`  
+		Last Modified: Tue, 01 Feb 2022 02:39:56 GMT  
+		Size: 9.1 MB (9109808 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba3ababa5f451b5f683c44d1c48765997427af0738d4b5ff3ac1b8c3dc0585ee`  
-		Last Modified: Mon, 10 Jan 2022 21:45:12 GMT  
-		Size: 850.0 B  
+	-	`sha256:f4985614bb72de81597c4172f927a45efa67b4a90e3e702ad805f48da87125f9`  
+		Last Modified: Tue, 01 Feb 2022 02:39:56 GMT  
+		Size: 851.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:62e7b141d00eacec8911ca28e081ff22e553435c483e12fd2dcacaf07d08b3f1`  
-		Last Modified: Mon, 10 Jan 2022 21:45:12 GMT  
-		Size: 362.0 B  
+	-	`sha256:1fe34fcd489ba925828097929c9e41f4b2dcd13de323abcfcdb253f55959d6e5`  
+		Last Modified: Tue, 01 Feb 2022 02:39:56 GMT  
+		Size: 361.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `maven:3.8.4-ibmjava`
