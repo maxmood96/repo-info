@@ -846,20 +846,13 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.4.3-1
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.4.3-1.dsc' expat_2.4.3-1.dsc 1981 SHA256:30122d6411559157415dcb26ece0a49d6c5ecc2cb54ae52424d2204cdf9dbd24
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.4.3.orig.tar.gz' expat_2.4.3.orig.tar.gz 8311959 SHA256:edd734dbc54668839185f95f530f45e2221c478929eb47ca9647c5ec803c1417
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.4.3-1.debian.tar.xz' expat_2.4.3-1.debian.tar.xz 12188 SHA256:73058dee32607be8e8cb9df740f4b215b3229d6766fa86705b1b7fefe92a53cf
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/expat/2.4.3-1/
 
-- https://sources.debian.net/src/expat/2.4.3-1/ (for browsing the source)
-- https://sources.debian.net/src/expat/2.4.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/expat/2.4.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `findutils=4.8.0-1`
 
@@ -1737,21 +1730,13 @@ Licenses: (parsed from: `/usr/share/doc/libbsd0/copyright`)
 - `ISC-Original`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libbsd=0.11.4-1
-'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.11.4-1.dsc' libbsd_0.11.4-1.dsc 2292 SHA256:3c322736a09846dbe1bf1dca118381f9c17a6ff05476623e1c32279823bbbf73
-'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.11.4.orig.tar.xz' libbsd_0.11.4.orig.tar.xz 409148 SHA256:570abb5c9cdf33a91a3f7748a3771f715079b5ee886221edbdedab45f88d5037
-'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.11.4.orig.tar.xz.asc' libbsd_0.11.4.orig.tar.xz.asc 833 SHA256:2fc1bae3b4aa68ba03f7a73d42decd39562cd6e05905a71720c9efd9f64d056c
-'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.11.4-1.debian.tar.xz' libbsd_0.11.4-1.debian.tar.xz 17560 SHA256:a2932315eabbef2203c620287c74f12b47f2967c091e22da3d37ea30cffd65af
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libbsd/0.11.4-1/
 
-- https://sources.debian.net/src/libbsd/0.11.4-1/ (for browsing the source)
-- https://sources.debian.net/src/libbsd/0.11.4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libbsd/0.11.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libcap-ng=0.7.9-2.2`
 
@@ -2930,20 +2915,13 @@ Licenses: (parsed from: `/usr/share/doc/mawk/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mawk=1.3.4.20200120-2
-'http://deb.debian.org/debian/pool/main/m/mawk/mawk_1.3.4.20200120-2.dsc' mawk_1.3.4.20200120-2.dsc 1915 SHA256:5069c46872ac74f5221250dfb88b31b1f2dbb8a2617c1e013f8f80cc34638c6d
-'http://deb.debian.org/debian/pool/main/m/mawk/mawk_1.3.4.20200120.orig.tar.gz' mawk_1.3.4.20200120.orig.tar.gz 468855 SHA256:7fd4cd1e1fae9290fe089171181bbc6291dfd9bca939ca804f0ddb851c8b8237
-'http://deb.debian.org/debian/pool/main/m/mawk/mawk_1.3.4.20200120-2.debian.tar.xz' mawk_1.3.4.20200120-2.debian.tar.xz 7504 SHA256:b772ed2f016b0286980c46cbc1f1f4ae62887ef2aa3dff6ef10cae638f923f26
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mawk/1.3.4.20200120-2/
 
-- https://sources.debian.net/src/mawk/1.3.4.20200120-2/ (for browsing the source)
-- https://sources.debian.net/src/mawk/1.3.4.20200120-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mawk/1.3.4.20200120-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mgcv=1.8-38-1`
 
@@ -3734,20 +3712,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-rpart/copyright`)
 - `GPL-2`
 - `GPL-2 | license included below`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rpart=4.1-15-2
-'http://deb.debian.org/debian/pool/main/r/rpart/rpart_4.1-15-2.dsc' rpart_4.1-15-2.dsc 1840 SHA256:016d8219c9998d8d2fa59c81a40a5ee81e2bff63a8180f256c02548f06820a51
-'http://deb.debian.org/debian/pool/main/r/rpart/rpart_4.1-15.orig.tar.gz' rpart_4.1-15.orig.tar.gz 639286 SHA256:2b8ebe0e9e11592debff893f93f5a44a6765abd0bd956b0eb1f70e9394cfae5c
-'http://deb.debian.org/debian/pool/main/r/rpart/rpart_4.1-15-2.debian.tar.xz' rpart_4.1-15-2.debian.tar.xz 4336 SHA256:e708011ab48126ea1829d8e6a005cee44edf1b09a4129f71ed2051f6e673e9f8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/rpart/4.1-15-2/
 
-- https://sources.debian.net/src/rpart/4.1-15-2/ (for browsing the source)
-- https://sources.debian.net/src/rpart/4.1-15-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rpart/4.1-15-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rpcsvc-proto=1.4.2-4`
 
@@ -3933,20 +3904,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=250.3-1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_250.3-1.dsc' systemd_250.3-1.dsc 5661 SHA256:0cda17083c40ec35bfb4b3df4de2f793cc0a06044ce98b12746cbc43bceda8cd
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_250.3.orig.tar.gz' systemd_250.3.orig.tar.gz 11125151 SHA256:87b0eee7b6e5aaab2ab56d158f9536daa6bfd5de011f2a5fc6ccdd81ee1e7a24
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_250.3-1.debian.tar.xz' systemd_250.3-1.debian.tar.xz 161916 SHA256:02c64c998208d0f12cd2f536c74fb7680a33ba1127f39f439f7940141c5c92e8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/250.3-1/
 
-- https://sources.debian.net/src/systemd/250.3-1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/250.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/250.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.01-1`
 
@@ -4060,21 +4024,13 @@ Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.3.0-2
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.3.0-2.dsc' tiff_4.3.0-2.dsc 2429 SHA256:68340f57b5b35407c297b89472e03ea277283754cd1c6c2843399338f494985a
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.3.0.orig.tar.gz' tiff_4.3.0.orig.tar.gz 2808254 SHA256:0e46e5acb087ce7d1ac53cf4f56a09b221537fc86dfc5daaad1c2e89e1b37ac8
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.3.0.orig.tar.gz.asc' tiff_4.3.0.orig.tar.gz.asc 488 SHA256:6e41d0a4c042d2903f28534eb696a16409ccde9aaa2d02d06b5daaabbfb94aa7
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.3.0-2.debian.tar.xz' tiff_4.3.0-2.debian.tar.xz 19596 SHA256:84e02cd055dedd45e87f662ec34097fb1b4c339feb904d5ec6e33aba30b0b995
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tiff/4.3.0-2/
 
-- https://sources.debian.net/src/tiff/4.3.0-2/ (for browsing the source)
-- https://sources.debian.net/src/tiff/4.3.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tiff/4.3.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tk8.6=8.6.12-1`
 
@@ -4207,20 +4163,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.37.2-6
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.37.2-6.dsc' util-linux_2.37.2-6.dsc 4454 SHA256:acfe23d512f4e6c47d100322e4184fa1fc4b6015787d5bbecdc595f1c66e4c00
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.37.2.orig.tar.xz' util-linux_2.37.2.orig.tar.xz 5621624 SHA256:6a0764c1aae7fb607ef8a6dd2c0f6c47d5e5fd27aa08820abaad9ec14e28e9d9
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.37.2-6.debian.tar.xz' util-linux_2.37.2-6.debian.tar.xz 99116 SHA256:2427e278f9bb4e67c05bbf46690cb7f856d15f8b0bfc9479acfbba3cffe718a5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.37.2-6/
 
-- https://sources.debian.net/src/util-linux/2.37.2-6/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.37.2-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.37.2-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `vim=2:8.2.3995-1`
 
