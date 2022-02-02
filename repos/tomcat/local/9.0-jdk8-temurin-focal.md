@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e775494eb6a1b56b0b5c1e594a3e8cfdba732fe68620929fee65cff6106d45d5`
-- Created: `2022-01-21T02:08:55.248816301Z`
-- Virtual Size: ~ 367.02 Mb  
+- Image ID: `sha256:1d8446b9eb111fd60c0640553ac6ac6798962f51ae818c08e4a592aba987f16f`
+- Created: `2022-02-02T14:31:00.477444781Z`
+- Virtual Size: ~ 367.11 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -13,7 +13,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk8u312-b07`
+  - `JAVA_VERSION=jdk8u322-b06`
   - `JAVA_HOME=/opt/java/openjdk`
   - `CATALINA_HOME=/usr/local/tomcat`
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
@@ -1809,12 +1809,12 @@ $ apt-get source -qq --print-uris sqlite3=3.31.1-4ubuntu0.2
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1-4ubuntu0.2.debian.tar.xz' sqlite3_3.31.1-4ubuntu0.2.debian.tar.xz 33492 SHA512:87cc51bce108d6306d815683a1825b43a6e7a7d8dc2bade8ce34d3850b8a4437034b1383f5e60b8d9c4569e8ab5bb3eb28febda7745f4a9db01b5e1b0b11d5ae
 ```
 
-### `dpkg` source package: `systemd=245.4-4ubuntu3.14`
+### `dpkg` source package: `systemd=245.4-4ubuntu3.15`
 
 Binary Packages:
 
-- `libsystemd0:amd64=245.4-4ubuntu3.14`
-- `libudev1:amd64=245.4-4ubuntu3.14`
+- `libsystemd0:amd64=245.4-4ubuntu3.15`
+- `libudev1:amd64=245.4-4ubuntu3.15`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1827,9 +1827,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=245.4-4ubuntu3.15
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.15.dsc' systemd_245.4-4ubuntu3.15.dsc 4954 SHA512:996d262b9ce6febe25690e087bc12c2da957a9a1554dd4d186346187d0af144c3759f14e46cc052601684c9c1c65dd76ffaca0fbaad19d7819ade41d4f045e26
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4.orig.tar.gz' systemd_245.4.orig.tar.gz 9000780 SHA512:02036bb1ab05301a9d0dfdd4b9c9376e90134474482531e6e292122380be2f24f99177493dd3af6f8af1a8ed2599ee0996da91a3b1b7872bbfaf26a1c3e61b4c
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.15.debian.tar.xz' systemd_245.4-4ubuntu3.15.debian.tar.xz 273168 SHA512:775ee33b35d6a9891ded16b381fb788f9d0cb01020720de5102175a9e4024a53a358d8b13928f2a2fb7cc2b05bf20bd80a913b314e69111b9dfa167a1ec89e45
+```
 
 ### `dpkg` source package: `sysvinit=2.96-2.1ubuntu1`
 
