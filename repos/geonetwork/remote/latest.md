@@ -1,7 +1,7 @@
 ## `geonetwork:latest`
 
 ```console
-$ docker pull geonetwork@sha256:ee2db1934b8dec0804ccb49a9ea4ac716d541c56c50a7a1fb9991d754615d2fd
+$ docker pull geonetwork@sha256:1c751cfb4e2b6f36ee490c7edb06d41b3d5883c17a729834dc43405639917343
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,14 +12,14 @@ $ docker pull geonetwork@sha256:ee2db1934b8dec0804ccb49a9ea4ac716d541c56c50a7a1f
 ### `geonetwork:latest` - linux; amd64
 
 ```console
-$ docker pull geonetwork@sha256:7661b86c13bac377b9944e240437e0ffdd66ebbfd7dd5d8ebc2f4b8ef6ef8048
+$ docker pull geonetwork@sha256:ca61169db9e05a46fd207df940f413675e034b4ca5bfe5186019169c161c8445
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **430.9 MB (430865409 bytes)**  
+-	Total Size: **484.2 MB (484212993 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:05d7e16621792197d8c421b9038f423057507e29834e4be72827e20c1132c5b8`
+-	Image ID: `sha256:c9ac2a62f9d2182edc57fca1a9889ffec95ebbc77c60015f2ca57b2085c40457`
 -	Entrypoint: `["\/geonetwork-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -84,25 +84,21 @@ USER root
 RUN apt-get -y update &&     apt-get -y install curl &&     rm -rf /var/lib/apt/lists/* &&     mkdir -p /${DATA_DIR} &&     chown -R jetty:jetty ${DATA_DIR} &&     mkdir -p /var/lib/jetty/webapps/geonetwork &&     chown -R jetty:jetty /var/lib/jetty/webapps/geonetwork
 # Fri, 28 Jan 2022 00:31:03 GMT
 USER jetty
-# Fri, 28 Jan 2022 00:31:04 GMT
-ENV GN_FILE=GeoNetwork-4.0.5-0.war
-# Fri, 28 Jan 2022 00:31:04 GMT
-ENV GN_VERSION=4.0.5
-# Fri, 28 Jan 2022 00:31:04 GMT
-ENV GN_DOWNLOAD_MD5=7dfcfdffc66b9a97f0d24b0769e9c3b7
-# Fri, 28 Jan 2022 00:31:04 GMT
-ENV LOG4J_VERSION=2.17.1
-# Fri, 28 Jan 2022 00:31:04 GMT
-ENV LOG4J_SHA512=b7e948df6c6f57d903d990de2cc0270c1537b711285e9b6b91280db6ace38418fced713785b2c20512dd9a4238c2d1d0ceb414d9936df2ca110ff14993ae04dc
-# Fri, 28 Jan 2022 00:33:12 GMT
-RUN cd /var/lib/jetty/webapps/geonetwork/ &&      curl -fSL -o geonetwork.war      https://sourceforge.net/projects/geonetwork/files/GeoNetwork_opensource/v${GN_VERSION}/${GN_FILE}/download &&      echo "${GN_DOWNLOAD_MD5} *geonetwork.war" | md5sum -c &&      unzip -q geonetwork.war &&      rm geonetwork.war &&      rm /var/lib/jetty/webapps/geonetwork/WEB-INF/lib/log4j-core-* &&      rm /var/lib/jetty/webapps/geonetwork/WEB-INF/lib/log4j-api* &&      curl -fSL -o apache-log4j-${LOG4J_VERSION}-bin.tar.gz "https://dlcdn.apache.org/logging/log4j/${LOG4J_VERSION}/apache-log4j-${LOG4J_VERSION}-bin.tar.gz" &&      echo "${LOG4J_SHA512} apache-log4j-${LOG4J_VERSION}-bin.tar.gz" | sha512sum -c &&      tar -xvzf apache-log4j-${LOG4J_VERSION}-bin.tar.gz &&      cp apache-log4j-${LOG4J_VERSION}-bin/log4j-core-${LOG4J_VERSION}.jar /var/lib/jetty/webapps/geonetwork/WEB-INF/lib/ &&      cp apache-log4j-${LOG4J_VERSION}-bin/log4j-api-${LOG4J_VERSION}.jar /var/lib/jetty/webapps/geonetwork/WEB-INF/lib/ &&      rm -rf apache-log4j-${LOG4J_VERSION}-bin*
-# Fri, 28 Jan 2022 00:33:13 GMT
+# Wed, 02 Feb 2022 20:19:46 GMT
+ENV GN_FILE=geonetwork.war
+# Wed, 02 Feb 2022 20:19:46 GMT
+ENV GN_VERSION=4.0.6
+# Wed, 02 Feb 2022 20:19:47 GMT
+ENV GN_DOWNLOAD_MD5=793732cb9c723e73857a4da73b78451b
+# Wed, 02 Feb 2022 20:21:56 GMT
+RUN cd /var/lib/jetty/webapps/geonetwork/ &&      curl -fSL -o geonetwork.war      https://sourceforge.net/projects/geonetwork/files/GeoNetwork_opensource/v${GN_VERSION}/${GN_FILE}/download &&      echo "${GN_DOWNLOAD_MD5} *geonetwork.war" | md5sum -c &&      unzip -q geonetwork.war &&      rm geonetwork.war
+# Wed, 02 Feb 2022 20:21:57 GMT
 COPY file:ca46ab251df3dfc253cb04cf962e7266e42428fab31ad2f583a7c86b06d5f778 in /geonetwork-entrypoint.sh 
-# Fri, 28 Jan 2022 00:33:14 GMT
+# Wed, 02 Feb 2022 20:21:57 GMT
 ENTRYPOINT ["/geonetwork-entrypoint.sh"]
-# Fri, 28 Jan 2022 00:33:14 GMT
+# Wed, 02 Feb 2022 20:21:58 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
-# Fri, 28 Jan 2022 00:33:14 GMT
+# Wed, 02 Feb 2022 20:21:58 GMT
 VOLUME [/catalogue-data]
 ```
 
@@ -143,26 +139,26 @@ VOLUME [/catalogue-data]
 		Last Modified: Fri, 28 Jan 2022 00:33:30 GMT  
 		Size: 511.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2c87373d400033c1a0a6e08a034754357b60ec766496a1b6db966b3068d717fc`  
-		Last Modified: Fri, 28 Jan 2022 00:33:47 GMT  
-		Size: 303.0 MB (303016496 bytes)  
+	-	`sha256:7f6a8cc9f3616637148b32d1ef852d965515b99966b90ee71f9257d9032cf181`  
+		Last Modified: Wed, 02 Feb 2022 20:22:48 GMT  
+		Size: 356.4 MB (356364080 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7685c9c3c532a1e150024afc46947cc42eb31e360bf33e06cdc7c881886ebf9d`  
-		Last Modified: Fri, 28 Jan 2022 00:33:30 GMT  
+	-	`sha256:d4d2100bc1e3c34f46cf987695167f4ca90f0bc838ad0964b9e3407ce8b292eb`  
+		Last Modified: Wed, 02 Feb 2022 20:22:29 GMT  
 		Size: 958.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `geonetwork:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull geonetwork@sha256:9ad82c890235b36b003b6ea5db7c2e6c0583b2a8ad6b73d73bcf5870d95c27c8
+$ docker pull geonetwork@sha256:5783124a301d7a1bd9433c06b5be33aba45047956eb60cc48b80ae4dfc52faa1
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **428.6 MB (428577027 bytes)**  
+-	Total Size: **481.9 MB (481925456 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4c3746fee759ee0ea16239192cf3491c7ea1f909b23b65bf4fe68dcce9d99278`
+-	Image ID: `sha256:06f1b64546780d5dde7b5e91b4c5f5545ef9b56f72ba52b105cc12966e14619a`
 -	Entrypoint: `["\/geonetwork-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -227,25 +223,21 @@ USER root
 RUN apt-get -y update &&     apt-get -y install curl &&     rm -rf /var/lib/apt/lists/* &&     mkdir -p /${DATA_DIR} &&     chown -R jetty:jetty ${DATA_DIR} &&     mkdir -p /var/lib/jetty/webapps/geonetwork &&     chown -R jetty:jetty /var/lib/jetty/webapps/geonetwork
 # Thu, 27 Jan 2022 05:15:36 GMT
 USER jetty
-# Thu, 27 Jan 2022 05:15:37 GMT
-ENV GN_FILE=GeoNetwork-4.0.5-0.war
-# Thu, 27 Jan 2022 05:15:38 GMT
-ENV GN_VERSION=4.0.5
-# Thu, 27 Jan 2022 05:15:39 GMT
-ENV GN_DOWNLOAD_MD5=7dfcfdffc66b9a97f0d24b0769e9c3b7
-# Thu, 27 Jan 2022 05:15:40 GMT
-ENV LOG4J_VERSION=2.17.1
-# Thu, 27 Jan 2022 05:15:41 GMT
-ENV LOG4J_SHA512=b7e948df6c6f57d903d990de2cc0270c1537b711285e9b6b91280db6ace38418fced713785b2c20512dd9a4238c2d1d0ceb414d9936df2ca110ff14993ae04dc
-# Thu, 27 Jan 2022 05:18:24 GMT
-RUN cd /var/lib/jetty/webapps/geonetwork/ &&      curl -fSL -o geonetwork.war      https://sourceforge.net/projects/geonetwork/files/GeoNetwork_opensource/v${GN_VERSION}/${GN_FILE}/download &&      echo "${GN_DOWNLOAD_MD5} *geonetwork.war" | md5sum -c &&      unzip -q geonetwork.war &&      rm geonetwork.war &&      rm /var/lib/jetty/webapps/geonetwork/WEB-INF/lib/log4j-core-* &&      rm /var/lib/jetty/webapps/geonetwork/WEB-INF/lib/log4j-api* &&      curl -fSL -o apache-log4j-${LOG4J_VERSION}-bin.tar.gz "https://dlcdn.apache.org/logging/log4j/${LOG4J_VERSION}/apache-log4j-${LOG4J_VERSION}-bin.tar.gz" &&      echo "${LOG4J_SHA512} apache-log4j-${LOG4J_VERSION}-bin.tar.gz" | sha512sum -c &&      tar -xvzf apache-log4j-${LOG4J_VERSION}-bin.tar.gz &&      cp apache-log4j-${LOG4J_VERSION}-bin/log4j-core-${LOG4J_VERSION}.jar /var/lib/jetty/webapps/geonetwork/WEB-INF/lib/ &&      cp apache-log4j-${LOG4J_VERSION}-bin/log4j-api-${LOG4J_VERSION}.jar /var/lib/jetty/webapps/geonetwork/WEB-INF/lib/ &&      rm -rf apache-log4j-${LOG4J_VERSION}-bin*
-# Thu, 27 Jan 2022 05:18:25 GMT
+# Wed, 02 Feb 2022 19:40:01 GMT
+ENV GN_FILE=geonetwork.war
+# Wed, 02 Feb 2022 19:40:02 GMT
+ENV GN_VERSION=4.0.6
+# Wed, 02 Feb 2022 19:40:03 GMT
+ENV GN_DOWNLOAD_MD5=793732cb9c723e73857a4da73b78451b
+# Wed, 02 Feb 2022 19:44:50 GMT
+RUN cd /var/lib/jetty/webapps/geonetwork/ &&      curl -fSL -o geonetwork.war      https://sourceforge.net/projects/geonetwork/files/GeoNetwork_opensource/v${GN_VERSION}/${GN_FILE}/download &&      echo "${GN_DOWNLOAD_MD5} *geonetwork.war" | md5sum -c &&      unzip -q geonetwork.war &&      rm geonetwork.war
+# Wed, 02 Feb 2022 19:44:51 GMT
 COPY file:ca46ab251df3dfc253cb04cf962e7266e42428fab31ad2f583a7c86b06d5f778 in /geonetwork-entrypoint.sh 
-# Thu, 27 Jan 2022 05:18:25 GMT
+# Wed, 02 Feb 2022 19:44:52 GMT
 ENTRYPOINT ["/geonetwork-entrypoint.sh"]
-# Thu, 27 Jan 2022 05:18:26 GMT
+# Wed, 02 Feb 2022 19:44:52 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
-# Thu, 27 Jan 2022 05:18:27 GMT
+# Wed, 02 Feb 2022 19:44:53 GMT
 VOLUME [/catalogue-data]
 ```
 
@@ -286,11 +278,11 @@ VOLUME [/catalogue-data]
 		Last Modified: Thu, 27 Jan 2022 05:20:43 GMT  
 		Size: 220.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f427190f16bfc83388f7c8bf25bba56613407943306f3eccfb5272ad09a16d0d`  
-		Last Modified: Thu, 27 Jan 2022 05:21:05 GMT  
-		Size: 303.0 MB (303017367 bytes)  
+	-	`sha256:b693bae7a83b11ff55a77a2d16d31ef9598f2e49334c7ac58643846e722a0898`  
+		Last Modified: Wed, 02 Feb 2022 19:46:00 GMT  
+		Size: 356.4 MB (356365798 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f301c78ad85e0dba03764e80e3b496e1a3e93745341a83d80949f5a4e313578e`  
-		Last Modified: Thu, 27 Jan 2022 05:20:42 GMT  
-		Size: 959.0 B  
+	-	`sha256:486f227db12ac85686f9fc9b3e8cac11cbde632149cac92c9f806ebb73c759bf`  
+		Last Modified: Wed, 02 Feb 2022 19:45:35 GMT  
+		Size: 957.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
