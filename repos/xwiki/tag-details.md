@@ -34,7 +34,7 @@
 ## `xwiki:13`
 
 ```console
-$ docker pull xwiki@sha256:09cde5b219f328cf3cc3175cc8036afb3aeafdac2955f5fa4b2372d9ad8b1bc8
+$ docker pull xwiki@sha256:8008e132febfdb4b72082ff200b8e0ec6e2571e6706eeabeebd17841acd96de4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -44,14 +44,14 @@ $ docker pull xwiki@sha256:09cde5b219f328cf3cc3175cc8036afb3aeafdac2955f5fa4b237
 ### `xwiki:13` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:0a245333fe825fc874f06a7c75284db8861dd95d2f9e4b892aeab2fe37eba78d
+$ docker pull xwiki@sha256:7aef21f5e703c8d07712f1e67d5e39dbace757b5b9301adf296d67dc02fc8957
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **830.6 MB (830574972 bytes)**  
+-	Total Size: **830.7 MB (830728567 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b298c74729aece85079a36cf038ae611cc3a85ede96a544a00b8a88a99af1490`
+-	Image ID: `sha256:59d1d783b2213cff4466c0fbd54ba750c9a65891552d1e49c01116e2f23e9c08`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -76,87 +76,87 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 26 Jan 2022 09:24:15 GMT
 ENV LANG=C.UTF-8
-# Wed, 26 Jan 2022 09:24:15 GMT
-ENV JAVA_VERSION=11.0.13
-# Wed, 26 Jan 2022 09:25:37 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_x64_linux_11.0.13_8.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_aarch64_linux_11.0.13_8.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 26 Jan 2022 09:25:38 GMT
+# Thu, 03 Feb 2022 20:34:14 GMT
+ENV JAVA_VERSION=11.0.14
+# Thu, 03 Feb 2022 20:35:39 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_x64_linux_11.0.14_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_aarch64_linux_11.0.14_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 03 Feb 2022 20:35:40 GMT
 CMD ["jshell"]
-# Thu, 27 Jan 2022 17:44:01 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:02 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 WORKDIR /usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_MAJOR=9
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_VERSION=9.0.58
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_SHA512=33c030a312a0a087deeb06fff921d13a23789e152d30620f33a368e7a2244c762fcf9acd55f3b90f08560704ba45bc2be820bccf2058b0cf5801a7b124f9056d
-# Thu, 27 Jan 2022 18:12:37 GMT
+# Fri, 04 Feb 2022 01:47:39 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		dirmngr 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work; 		catalina.sh version
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 EXPOSE 8080
-# Thu, 27 Jan 2022 18:12:40 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 CMD ["catalina.sh" "run"]
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Fri, 28 Jan 2022 00:39:09 GMT
+# Fri, 04 Feb 2022 06:20:42 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/*
-# Fri, 28 Jan 2022 00:39:10 GMT
+# Fri, 04 Feb 2022 06:23:05 GMT
 ENV XWIKI_VERSION=13.10.2
-# Fri, 28 Jan 2022 00:39:10 GMT
+# Fri, 04 Feb 2022 06:23:05 GMT
 ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/13.10.2
-# Fri, 28 Jan 2022 00:39:11 GMT
+# Fri, 04 Feb 2022 06:23:05 GMT
 ENV XWIKI_DOWNLOAD_SHA256=fc3b0299f5fa903d3fdee2e6af0a69173a8a411a4e027a271772e0666bb6d3aa
-# Fri, 28 Jan 2022 00:39:48 GMT
+# Fri, 04 Feb 2022 06:23:45 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Fri, 28 Jan 2022 00:39:49 GMT
+# Fri, 04 Feb 2022 06:23:46 GMT
 ENV MYSQL_JDBC_VERSION=8.0.22
-# Fri, 28 Jan 2022 00:39:50 GMT
+# Fri, 04 Feb 2022 06:23:46 GMT
 ENV MYSQL_JDBC_SHA256=5019defbd12316295e97a6e88f2a9b07f118345a4e982710bba232e499b22f4f
-# Fri, 28 Jan 2022 00:39:50 GMT
+# Fri, 04 Feb 2022 06:23:46 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.22
-# Fri, 28 Jan 2022 00:39:50 GMT
+# Fri, 04 Feb 2022 06:23:47 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-java-8.0.22.jar
-# Fri, 28 Jan 2022 00:39:50 GMT
+# Fri, 04 Feb 2022 06:23:47 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-java-8.0.22.jar
-# Fri, 28 Jan 2022 00:39:51 GMT
+# Fri, 04 Feb 2022 06:23:48 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c -
-# Fri, 28 Jan 2022 00:39:52 GMT
+# Fri, 04 Feb 2022 06:23:48 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Fri, 28 Jan 2022 00:39:52 GMT
+# Fri, 04 Feb 2022 06:23:48 GMT
 COPY file:1b8409986f3e4eb79a7a0b18472cb2692a61d504fb5ef34292bc997b79fd760d in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Fri, 28 Jan 2022 00:39:52 GMT
+# Fri, 04 Feb 2022 06:23:49 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Fri, 28 Jan 2022 00:39:53 GMT
+# Fri, 04 Feb 2022 06:23:49 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Fri, 28 Jan 2022 00:39:53 GMT
+# Fri, 04 Feb 2022 06:23:50 GMT
 VOLUME [/usr/local/xwiki]
-# Fri, 28 Jan 2022 00:39:53 GMT
+# Fri, 04 Feb 2022 06:23:50 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 28 Jan 2022 00:39:53 GMT
+# Fri, 04 Feb 2022 06:23:50 GMT
 CMD ["xwiki"]
 ```
 
@@ -185,55 +185,55 @@ CMD ["xwiki"]
 		Last Modified: Wed, 26 Jan 2022 09:50:57 GMT  
 		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4512bdd2598cabd6c3bd8ee70ad79fceb4082b9bc297ff1b46a4e769ed684062`  
-		Last Modified: Wed, 26 Jan 2022 09:51:16 GMT  
-		Size: 203.1 MB (203118688 bytes)  
+	-	`sha256:fda090e7df3523dc9db18e06c2619b52e4dd2772c2800105e421552c27e599ed`  
+		Last Modified: Thu, 03 Feb 2022 20:58:14 GMT  
+		Size: 203.3 MB (203272575 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80124a46e801eaa1b446b86644d47869682894497815f2f0b77d98e29452343e`  
-		Last Modified: Thu, 27 Jan 2022 19:02:36 GMT  
-		Size: 172.0 B  
+	-	`sha256:e5341f7d466587f60c7ab87e18455c8f3e8f8e64681248565726a71137481f72`  
+		Last Modified: Fri, 04 Feb 2022 02:16:39 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46ecb4b115268768a2248cf5c66cccfb7d7293bba9c2c746337715effd0a1d2a`  
-		Last Modified: Thu, 27 Jan 2022 19:24:17 GMT  
-		Size: 12.5 MB (12522843 bytes)  
+	-	`sha256:658f77ce17d67d7b64dcd870a07d0e58bbe6a1ec52f253b0f93276edc3f1e0e4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:49 GMT  
+		Size: 12.5 MB (12522598 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdf3a46eab5ffff6d0b6fce0a150080847d2b80a4e03afa70c91377c9bf23401`  
-		Last Modified: Thu, 27 Jan 2022 19:24:16 GMT  
-		Size: 130.0 B  
+	-	`sha256:5c32bc7e7c91ebeb93dfcf733e07f2193161f8691a1555e22c9abe163ee7c2d4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:47 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8068c3825818104bc3046fa3ee6b8295aeac3295e175c0e80bd2334886e53ea`  
-		Last Modified: Fri, 28 Jan 2022 00:44:29 GMT  
+	-	`sha256:e07f4a067a7f038cb77c035bc29748f1c173243b916eb9f3a5d4ed9d9ce3a8b9`  
+		Last Modified: Fri, 04 Feb 2022 06:25:39 GMT  
 		Size: 189.4 MB (189410696 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:396889a0f6c7b282fc8d77b0b050128c83fc3b789cfda9077d37bbe3b1075837`  
-		Last Modified: Fri, 28 Jan 2022 00:44:19 GMT  
-		Size: 292.3 MB (292323788 bytes)  
+	-	`sha256:da601c88fd3f0ad0637b15c6be500ca10a5ff04d374cbf4de97dee0214cb509c`  
+		Last Modified: Fri, 04 Feb 2022 06:27:24 GMT  
+		Size: 292.3 MB (292323742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4fe365e4da623218296e5353817ead969edc901534865d157d7abd8d698952af`  
-		Last Modified: Fri, 28 Jan 2022 00:44:00 GMT  
-		Size: 2.3 MB (2257823 bytes)  
+	-	`sha256:7c0d2774f6069962ecff7b71f9e87c0b777f8583c101e5b840c340eb527c0bb3`  
+		Last Modified: Fri, 04 Feb 2022 06:27:05 GMT  
+		Size: 2.3 MB (2257819 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d3b6c3e9a0f7a62b1be438aecac9577ffe2ce689774c66df8665aa5abc9cdae`  
-		Last Modified: Fri, 28 Jan 2022 00:44:00 GMT  
-		Size: 1.3 KB (1340 bytes)  
+	-	`sha256:c3e2a765d0aedd26d93c03068af86d301664476521beff2a4981266734d7a321`  
+		Last Modified: Fri, 04 Feb 2022 06:27:05 GMT  
+		Size: 1.3 KB (1344 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9186f3274fcb6303685907a1b62454e6dec93f14e1746c61a5642896c1f17320`  
-		Last Modified: Fri, 28 Jan 2022 00:44:00 GMT  
-		Size: 2.3 KB (2306 bytes)  
+	-	`sha256:05ff3ee34c3886920b58e8fe87ad3b9825d73df08b79e042c83841fc86efc742`  
+		Last Modified: Fri, 04 Feb 2022 06:27:05 GMT  
+		Size: 2.3 KB (2305 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f906af211ae8369e59c729bae16166918ba94919c1aba7c85a381c324327088`  
-		Last Modified: Fri, 28 Jan 2022 00:44:00 GMT  
-		Size: 5.3 KB (5332 bytes)  
+	-	`sha256:56c15f2d682052b629b4c684cab30b4d2a296b23b9b57b2a31a5fd0e6a12ce21`  
+		Last Modified: Fri, 04 Feb 2022 06:27:05 GMT  
+		Size: 5.3 KB (5331 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:831e56417aefbe60ed5799fe7bb7e47f51ab7b971fe81bf734317fed71f822a4`  
-		Last Modified: Fri, 28 Jan 2022 00:44:00 GMT  
-		Size: 2.5 KB (2503 bytes)  
+	-	`sha256:b309a178723e0dc4d831943ab093c646a536802b0fd5560039c9fdcc8d31b710`  
+		Last Modified: Fri, 04 Feb 2022 06:27:05 GMT  
+		Size: 2.5 KB (2502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `xwiki:13-mysql-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:09cde5b219f328cf3cc3175cc8036afb3aeafdac2955f5fa4b2372d9ad8b1bc8
+$ docker pull xwiki@sha256:8008e132febfdb4b72082ff200b8e0ec6e2571e6706eeabeebd17841acd96de4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -243,14 +243,14 @@ $ docker pull xwiki@sha256:09cde5b219f328cf3cc3175cc8036afb3aeafdac2955f5fa4b237
 ### `xwiki:13-mysql-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:0a245333fe825fc874f06a7c75284db8861dd95d2f9e4b892aeab2fe37eba78d
+$ docker pull xwiki@sha256:7aef21f5e703c8d07712f1e67d5e39dbace757b5b9301adf296d67dc02fc8957
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **830.6 MB (830574972 bytes)**  
+-	Total Size: **830.7 MB (830728567 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b298c74729aece85079a36cf038ae611cc3a85ede96a544a00b8a88a99af1490`
+-	Image ID: `sha256:59d1d783b2213cff4466c0fbd54ba750c9a65891552d1e49c01116e2f23e9c08`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -275,87 +275,87 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 26 Jan 2022 09:24:15 GMT
 ENV LANG=C.UTF-8
-# Wed, 26 Jan 2022 09:24:15 GMT
-ENV JAVA_VERSION=11.0.13
-# Wed, 26 Jan 2022 09:25:37 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_x64_linux_11.0.13_8.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_aarch64_linux_11.0.13_8.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 26 Jan 2022 09:25:38 GMT
+# Thu, 03 Feb 2022 20:34:14 GMT
+ENV JAVA_VERSION=11.0.14
+# Thu, 03 Feb 2022 20:35:39 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_x64_linux_11.0.14_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_aarch64_linux_11.0.14_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 03 Feb 2022 20:35:40 GMT
 CMD ["jshell"]
-# Thu, 27 Jan 2022 17:44:01 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:02 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 WORKDIR /usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_MAJOR=9
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_VERSION=9.0.58
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_SHA512=33c030a312a0a087deeb06fff921d13a23789e152d30620f33a368e7a2244c762fcf9acd55f3b90f08560704ba45bc2be820bccf2058b0cf5801a7b124f9056d
-# Thu, 27 Jan 2022 18:12:37 GMT
+# Fri, 04 Feb 2022 01:47:39 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		dirmngr 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work; 		catalina.sh version
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 EXPOSE 8080
-# Thu, 27 Jan 2022 18:12:40 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 CMD ["catalina.sh" "run"]
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Fri, 28 Jan 2022 00:39:09 GMT
+# Fri, 04 Feb 2022 06:20:42 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/*
-# Fri, 28 Jan 2022 00:39:10 GMT
+# Fri, 04 Feb 2022 06:23:05 GMT
 ENV XWIKI_VERSION=13.10.2
-# Fri, 28 Jan 2022 00:39:10 GMT
+# Fri, 04 Feb 2022 06:23:05 GMT
 ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/13.10.2
-# Fri, 28 Jan 2022 00:39:11 GMT
+# Fri, 04 Feb 2022 06:23:05 GMT
 ENV XWIKI_DOWNLOAD_SHA256=fc3b0299f5fa903d3fdee2e6af0a69173a8a411a4e027a271772e0666bb6d3aa
-# Fri, 28 Jan 2022 00:39:48 GMT
+# Fri, 04 Feb 2022 06:23:45 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Fri, 28 Jan 2022 00:39:49 GMT
+# Fri, 04 Feb 2022 06:23:46 GMT
 ENV MYSQL_JDBC_VERSION=8.0.22
-# Fri, 28 Jan 2022 00:39:50 GMT
+# Fri, 04 Feb 2022 06:23:46 GMT
 ENV MYSQL_JDBC_SHA256=5019defbd12316295e97a6e88f2a9b07f118345a4e982710bba232e499b22f4f
-# Fri, 28 Jan 2022 00:39:50 GMT
+# Fri, 04 Feb 2022 06:23:46 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.22
-# Fri, 28 Jan 2022 00:39:50 GMT
+# Fri, 04 Feb 2022 06:23:47 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-java-8.0.22.jar
-# Fri, 28 Jan 2022 00:39:50 GMT
+# Fri, 04 Feb 2022 06:23:47 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-java-8.0.22.jar
-# Fri, 28 Jan 2022 00:39:51 GMT
+# Fri, 04 Feb 2022 06:23:48 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c -
-# Fri, 28 Jan 2022 00:39:52 GMT
+# Fri, 04 Feb 2022 06:23:48 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Fri, 28 Jan 2022 00:39:52 GMT
+# Fri, 04 Feb 2022 06:23:48 GMT
 COPY file:1b8409986f3e4eb79a7a0b18472cb2692a61d504fb5ef34292bc997b79fd760d in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Fri, 28 Jan 2022 00:39:52 GMT
+# Fri, 04 Feb 2022 06:23:49 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Fri, 28 Jan 2022 00:39:53 GMT
+# Fri, 04 Feb 2022 06:23:49 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Fri, 28 Jan 2022 00:39:53 GMT
+# Fri, 04 Feb 2022 06:23:50 GMT
 VOLUME [/usr/local/xwiki]
-# Fri, 28 Jan 2022 00:39:53 GMT
+# Fri, 04 Feb 2022 06:23:50 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 28 Jan 2022 00:39:53 GMT
+# Fri, 04 Feb 2022 06:23:50 GMT
 CMD ["xwiki"]
 ```
 
@@ -384,55 +384,55 @@ CMD ["xwiki"]
 		Last Modified: Wed, 26 Jan 2022 09:50:57 GMT  
 		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4512bdd2598cabd6c3bd8ee70ad79fceb4082b9bc297ff1b46a4e769ed684062`  
-		Last Modified: Wed, 26 Jan 2022 09:51:16 GMT  
-		Size: 203.1 MB (203118688 bytes)  
+	-	`sha256:fda090e7df3523dc9db18e06c2619b52e4dd2772c2800105e421552c27e599ed`  
+		Last Modified: Thu, 03 Feb 2022 20:58:14 GMT  
+		Size: 203.3 MB (203272575 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80124a46e801eaa1b446b86644d47869682894497815f2f0b77d98e29452343e`  
-		Last Modified: Thu, 27 Jan 2022 19:02:36 GMT  
-		Size: 172.0 B  
+	-	`sha256:e5341f7d466587f60c7ab87e18455c8f3e8f8e64681248565726a71137481f72`  
+		Last Modified: Fri, 04 Feb 2022 02:16:39 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46ecb4b115268768a2248cf5c66cccfb7d7293bba9c2c746337715effd0a1d2a`  
-		Last Modified: Thu, 27 Jan 2022 19:24:17 GMT  
-		Size: 12.5 MB (12522843 bytes)  
+	-	`sha256:658f77ce17d67d7b64dcd870a07d0e58bbe6a1ec52f253b0f93276edc3f1e0e4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:49 GMT  
+		Size: 12.5 MB (12522598 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdf3a46eab5ffff6d0b6fce0a150080847d2b80a4e03afa70c91377c9bf23401`  
-		Last Modified: Thu, 27 Jan 2022 19:24:16 GMT  
-		Size: 130.0 B  
+	-	`sha256:5c32bc7e7c91ebeb93dfcf733e07f2193161f8691a1555e22c9abe163ee7c2d4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:47 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8068c3825818104bc3046fa3ee6b8295aeac3295e175c0e80bd2334886e53ea`  
-		Last Modified: Fri, 28 Jan 2022 00:44:29 GMT  
+	-	`sha256:e07f4a067a7f038cb77c035bc29748f1c173243b916eb9f3a5d4ed9d9ce3a8b9`  
+		Last Modified: Fri, 04 Feb 2022 06:25:39 GMT  
 		Size: 189.4 MB (189410696 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:396889a0f6c7b282fc8d77b0b050128c83fc3b789cfda9077d37bbe3b1075837`  
-		Last Modified: Fri, 28 Jan 2022 00:44:19 GMT  
-		Size: 292.3 MB (292323788 bytes)  
+	-	`sha256:da601c88fd3f0ad0637b15c6be500ca10a5ff04d374cbf4de97dee0214cb509c`  
+		Last Modified: Fri, 04 Feb 2022 06:27:24 GMT  
+		Size: 292.3 MB (292323742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4fe365e4da623218296e5353817ead969edc901534865d157d7abd8d698952af`  
-		Last Modified: Fri, 28 Jan 2022 00:44:00 GMT  
-		Size: 2.3 MB (2257823 bytes)  
+	-	`sha256:7c0d2774f6069962ecff7b71f9e87c0b777f8583c101e5b840c340eb527c0bb3`  
+		Last Modified: Fri, 04 Feb 2022 06:27:05 GMT  
+		Size: 2.3 MB (2257819 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d3b6c3e9a0f7a62b1be438aecac9577ffe2ce689774c66df8665aa5abc9cdae`  
-		Last Modified: Fri, 28 Jan 2022 00:44:00 GMT  
-		Size: 1.3 KB (1340 bytes)  
+	-	`sha256:c3e2a765d0aedd26d93c03068af86d301664476521beff2a4981266734d7a321`  
+		Last Modified: Fri, 04 Feb 2022 06:27:05 GMT  
+		Size: 1.3 KB (1344 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9186f3274fcb6303685907a1b62454e6dec93f14e1746c61a5642896c1f17320`  
-		Last Modified: Fri, 28 Jan 2022 00:44:00 GMT  
-		Size: 2.3 KB (2306 bytes)  
+	-	`sha256:05ff3ee34c3886920b58e8fe87ad3b9825d73df08b79e042c83841fc86efc742`  
+		Last Modified: Fri, 04 Feb 2022 06:27:05 GMT  
+		Size: 2.3 KB (2305 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f906af211ae8369e59c729bae16166918ba94919c1aba7c85a381c324327088`  
-		Last Modified: Fri, 28 Jan 2022 00:44:00 GMT  
-		Size: 5.3 KB (5332 bytes)  
+	-	`sha256:56c15f2d682052b629b4c684cab30b4d2a296b23b9b57b2a31a5fd0e6a12ce21`  
+		Last Modified: Fri, 04 Feb 2022 06:27:05 GMT  
+		Size: 5.3 KB (5331 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:831e56417aefbe60ed5799fe7bb7e47f51ab7b971fe81bf734317fed71f822a4`  
-		Last Modified: Fri, 28 Jan 2022 00:44:00 GMT  
-		Size: 2.5 KB (2503 bytes)  
+	-	`sha256:b309a178723e0dc4d831943ab093c646a536802b0fd5560039c9fdcc8d31b710`  
+		Last Modified: Fri, 04 Feb 2022 06:27:05 GMT  
+		Size: 2.5 KB (2502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `xwiki:13-postgres-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:75e4cbe812d17014e0e2f5f3bb06b9043ac91d335c2f2f1a755470215a588966
+$ docker pull xwiki@sha256:2e6a54cc855abd068672be3157736cbdffa3e7069b4650e2bfa28801c5b53fc1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -443,14 +443,14 @@ $ docker pull xwiki@sha256:75e4cbe812d17014e0e2f5f3bb06b9043ac91d335c2f2f1a75547
 ### `xwiki:13-postgres-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:3d21d1b6a4b6b88f133adc7cfdc055fa6f92d486ee123cb09b627d7de33f9555
+$ docker pull xwiki@sha256:e753a5533755a2cea10b563c4063647834d6692bc99cd88bad8e8a215f7dd957
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **830.0 MB (830038637 bytes)**  
+-	Total Size: **830.2 MB (830192305 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:753a58ea527df2f7f1b68ae385249bf80892268c291edc72a89982a51b27fe3a`
+-	Image ID: `sha256:107637fe0f3cc8b2889d6c53fd224faf68f8541f56b42e0d281f1d6578954eca`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -475,77 +475,77 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 26 Jan 2022 09:24:15 GMT
 ENV LANG=C.UTF-8
-# Wed, 26 Jan 2022 09:24:15 GMT
-ENV JAVA_VERSION=11.0.13
-# Wed, 26 Jan 2022 09:25:37 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_x64_linux_11.0.13_8.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_aarch64_linux_11.0.13_8.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 26 Jan 2022 09:25:38 GMT
+# Thu, 03 Feb 2022 20:34:14 GMT
+ENV JAVA_VERSION=11.0.14
+# Thu, 03 Feb 2022 20:35:39 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_x64_linux_11.0.14_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_aarch64_linux_11.0.14_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 03 Feb 2022 20:35:40 GMT
 CMD ["jshell"]
-# Thu, 27 Jan 2022 17:44:01 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:02 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 WORKDIR /usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_MAJOR=9
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_VERSION=9.0.58
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_SHA512=33c030a312a0a087deeb06fff921d13a23789e152d30620f33a368e7a2244c762fcf9acd55f3b90f08560704ba45bc2be820bccf2058b0cf5801a7b124f9056d
-# Thu, 27 Jan 2022 18:12:37 GMT
+# Fri, 04 Feb 2022 01:47:39 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		dirmngr 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work; 		catalina.sh version
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 EXPOSE 8080
-# Thu, 27 Jan 2022 18:12:40 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 CMD ["catalina.sh" "run"]
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Fri, 28 Jan 2022 00:40:35 GMT
+# Fri, 04 Feb 2022 06:22:14 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps     libpostgresql-jdbc-java &&   rm -rf /var/lib/apt/lists/*
-# Fri, 28 Jan 2022 00:40:36 GMT
+# Fri, 04 Feb 2022 06:23:54 GMT
 ENV XWIKI_VERSION=13.10.2
-# Fri, 28 Jan 2022 00:40:37 GMT
+# Fri, 04 Feb 2022 06:23:54 GMT
 ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/13.10.2
-# Fri, 28 Jan 2022 00:40:37 GMT
+# Fri, 04 Feb 2022 06:23:54 GMT
 ENV XWIKI_DOWNLOAD_SHA256=fc3b0299f5fa903d3fdee2e6af0a69173a8a411a4e027a271772e0666bb6d3aa
-# Fri, 28 Jan 2022 00:41:25 GMT
+# Fri, 04 Feb 2022 06:24:32 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Fri, 28 Jan 2022 00:41:27 GMT
+# Fri, 04 Feb 2022 06:24:34 GMT
 RUN cp /usr/share/java/postgresql-jdbc4.jar /usr/local/tomcat/webapps/ROOT/WEB-INF/lib/
-# Fri, 28 Jan 2022 00:41:27 GMT
+# Fri, 04 Feb 2022 06:24:34 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Fri, 28 Jan 2022 00:41:27 GMT
+# Fri, 04 Feb 2022 06:24:34 GMT
 COPY file:4a923f484bb29a26630c19e1d617d3bf6aa6ae7c6c4a5561e97b037bcde0847c in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Fri, 28 Jan 2022 00:41:28 GMT
+# Fri, 04 Feb 2022 06:24:35 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Fri, 28 Jan 2022 00:41:28 GMT
+# Fri, 04 Feb 2022 06:24:35 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Fri, 28 Jan 2022 00:41:28 GMT
+# Fri, 04 Feb 2022 06:24:36 GMT
 VOLUME [/usr/local/xwiki]
-# Fri, 28 Jan 2022 00:41:28 GMT
+# Fri, 04 Feb 2022 06:24:36 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 28 Jan 2022 00:41:29 GMT
+# Fri, 04 Feb 2022 06:24:36 GMT
 CMD ["xwiki"]
 ```
 
@@ -574,62 +574,62 @@ CMD ["xwiki"]
 		Last Modified: Wed, 26 Jan 2022 09:50:57 GMT  
 		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4512bdd2598cabd6c3bd8ee70ad79fceb4082b9bc297ff1b46a4e769ed684062`  
-		Last Modified: Wed, 26 Jan 2022 09:51:16 GMT  
-		Size: 203.1 MB (203118688 bytes)  
+	-	`sha256:fda090e7df3523dc9db18e06c2619b52e4dd2772c2800105e421552c27e599ed`  
+		Last Modified: Thu, 03 Feb 2022 20:58:14 GMT  
+		Size: 203.3 MB (203272575 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80124a46e801eaa1b446b86644d47869682894497815f2f0b77d98e29452343e`  
-		Last Modified: Thu, 27 Jan 2022 19:02:36 GMT  
-		Size: 172.0 B  
+	-	`sha256:e5341f7d466587f60c7ab87e18455c8f3e8f8e64681248565726a71137481f72`  
+		Last Modified: Fri, 04 Feb 2022 02:16:39 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46ecb4b115268768a2248cf5c66cccfb7d7293bba9c2c746337715effd0a1d2a`  
-		Last Modified: Thu, 27 Jan 2022 19:24:17 GMT  
-		Size: 12.5 MB (12522843 bytes)  
+	-	`sha256:658f77ce17d67d7b64dcd870a07d0e58bbe6a1ec52f253b0f93276edc3f1e0e4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:49 GMT  
+		Size: 12.5 MB (12522598 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdf3a46eab5ffff6d0b6fce0a150080847d2b80a4e03afa70c91377c9bf23401`  
-		Last Modified: Thu, 27 Jan 2022 19:24:16 GMT  
-		Size: 130.0 B  
+	-	`sha256:5c32bc7e7c91ebeb93dfcf733e07f2193161f8691a1555e22c9abe163ee7c2d4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:47 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af539591d5df2e4985dee90ab6d28ee232867000819a22ea0c5a5a14bb89fd96`  
-		Last Modified: Fri, 28 Jan 2022 00:45:49 GMT  
-		Size: 190.3 MB (190285846 bytes)  
+	-	`sha256:fa796b6a421404c5ed1980b8e1277de92aadd8b243229d78ca48034606f4e44b`  
+		Last Modified: Fri, 04 Feb 2022 06:26:44 GMT  
+		Size: 190.3 MB (190285862 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4ef698ed33162760c05e98bccea4fc9a84e07756eeba43a519070653a92d118`  
-		Last Modified: Fri, 28 Jan 2022 00:45:41 GMT  
-		Size: 292.3 MB (292323765 bytes)  
+	-	`sha256:33f68599b777b9575178075dedc4263a926e80f80e3fc130ca666335fef8b171`  
+		Last Modified: Fri, 04 Feb 2022 06:28:15 GMT  
+		Size: 292.3 MB (292323766 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:921649a27aef2f135f3045d980896dc6f85f6dae1e313fadb8370b9e9dfc0b27`  
-		Last Modified: Fri, 28 Jan 2022 00:45:21 GMT  
-		Size: 846.2 KB (846207 bytes)  
+	-	`sha256:2b892b71808c773ef896c4cf302d287679438062f8de2a6a884ee1ac2b677420`  
+		Last Modified: Fri, 04 Feb 2022 06:27:59 GMT  
+		Size: 846.2 KB (846213 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec628c1b53017b6a847a9c50ff870300fb2728004f6f4f180af47b4f4e81d003`  
-		Last Modified: Fri, 28 Jan 2022 00:45:22 GMT  
-		Size: 1.3 KB (1343 bytes)  
+	-	`sha256:2d3242792b746d64e6358fef1fb3f5749d063e9438b0a7d07c18604262304fbe`  
+		Last Modified: Fri, 04 Feb 2022 06:27:59 GMT  
+		Size: 1.3 KB (1344 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f972fd488fcfcb41500bd9cd29de336f085345e76188f7942e9f3f90d6793653`  
-		Last Modified: Fri, 28 Jan 2022 00:45:21 GMT  
-		Size: 2.5 KB (2453 bytes)  
+	-	`sha256:c9f1aba1f97da7b480bd57637ac106b02622e52b411b7348e2bbfaba8b8e957b`  
+		Last Modified: Fri, 04 Feb 2022 06:27:58 GMT  
+		Size: 2.5 KB (2455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d188e37cad47b59cb2407a567bef9f348b0643e7ecb691de2fc60fb8ed0ae2aa`  
-		Last Modified: Fri, 28 Jan 2022 00:45:21 GMT  
+	-	`sha256:3cfbbb2c4a222e2e634a7740f688da9f8d84c227561815168512d97cd6679335`  
+		Last Modified: Fri, 04 Feb 2022 06:27:58 GMT  
 		Size: 5.3 KB (5335 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:032774c1e57b283a9e52b5a565e1d3368b001353cffcbcbc6e64e2559a75d475`  
-		Last Modified: Fri, 28 Jan 2022 00:45:21 GMT  
-		Size: 2.5 KB (2504 bytes)  
+	-	`sha256:8d6dc5f0191b17b221834f808af26e9159eb607bc2475766b001a9966dc7cd5a`  
+		Last Modified: Fri, 04 Feb 2022 06:27:58 GMT  
+		Size: 2.5 KB (2502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `xwiki:13-postgres-tomcat` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:3af45f30e94c0ab3d7c3bb269af97a0eb03a5c1eb881d3ae7fc2506bdaf2d882
+$ docker pull xwiki@sha256:3bc8d8d2ea80d237639576b7d5bed27e982183e6925aeabcce9a84cc56f7284f
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **820.9 MB (820886094 bytes)**  
+-	Total Size: **821.1 MB (821058881 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:28605695a4ddffc3ee8d009a708c3cb89f9bbb9e7dff2121bab3eb236414679a`
+-	Image ID: `sha256:9b4467ae4b95b278a1ad27a6ecd2031d991acacf260b8d2ea9882414e3951a97`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -654,77 +654,77 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 26 Jan 2022 05:56:10 GMT
 ENV LANG=C.UTF-8
-# Wed, 26 Jan 2022 05:56:11 GMT
-ENV JAVA_VERSION=11.0.13
-# Wed, 26 Jan 2022 05:57:08 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_x64_linux_11.0.13_8.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_aarch64_linux_11.0.13_8.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 26 Jan 2022 05:57:09 GMT
+# Thu, 03 Feb 2022 20:49:24 GMT
+ENV JAVA_VERSION=11.0.14
+# Thu, 03 Feb 2022 20:50:20 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_x64_linux_11.0.14_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_aarch64_linux_11.0.14_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 03 Feb 2022 20:50:21 GMT
 CMD ["jshell"]
-# Wed, 26 Jan 2022 23:45:39 GMT
+# Fri, 04 Feb 2022 00:39:07 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Wed, 26 Jan 2022 23:45:40 GMT
+# Fri, 04 Feb 2022 00:39:08 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 26 Jan 2022 23:45:41 GMT
+# Fri, 04 Feb 2022 00:39:09 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Wed, 26 Jan 2022 23:45:42 GMT
+# Fri, 04 Feb 2022 00:39:10 GMT
 WORKDIR /usr/local/tomcat
-# Wed, 26 Jan 2022 23:45:43 GMT
+# Fri, 04 Feb 2022 00:39:11 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Wed, 26 Jan 2022 23:45:44 GMT
+# Fri, 04 Feb 2022 00:39:12 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 00:07:11 GMT
+# Fri, 04 Feb 2022 01:02:16 GMT
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
-# Thu, 27 Jan 2022 00:07:11 GMT
+# Fri, 04 Feb 2022 01:02:16 GMT
 ENV TOMCAT_MAJOR=9
-# Thu, 27 Jan 2022 00:07:12 GMT
+# Fri, 04 Feb 2022 01:02:17 GMT
 ENV TOMCAT_VERSION=9.0.58
-# Thu, 27 Jan 2022 00:07:13 GMT
+# Fri, 04 Feb 2022 01:02:18 GMT
 ENV TOMCAT_SHA512=33c030a312a0a087deeb06fff921d13a23789e152d30620f33a368e7a2244c762fcf9acd55f3b90f08560704ba45bc2be820bccf2058b0cf5801a7b124f9056d
-# Thu, 27 Jan 2022 00:07:33 GMT
+# Fri, 04 Feb 2022 01:03:23 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		dirmngr 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work; 		catalina.sh version
-# Thu, 27 Jan 2022 00:07:35 GMT
+# Fri, 04 Feb 2022 01:03:25 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 27 Jan 2022 00:07:36 GMT
+# Fri, 04 Feb 2022 01:03:25 GMT
 EXPOSE 8080
-# Thu, 27 Jan 2022 00:07:37 GMT
+# Fri, 04 Feb 2022 01:03:26 GMT
 CMD ["catalina.sh" "run"]
-# Thu, 27 Jan 2022 05:50:31 GMT
+# Fri, 04 Feb 2022 04:15:17 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Thu, 27 Jan 2022 05:50:31 GMT
+# Fri, 04 Feb 2022 04:15:17 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Thu, 27 Jan 2022 05:50:32 GMT
+# Fri, 04 Feb 2022 04:15:18 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Thu, 27 Jan 2022 05:50:33 GMT
+# Fri, 04 Feb 2022 04:15:19 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Thu, 27 Jan 2022 05:50:34 GMT
+# Fri, 04 Feb 2022 04:15:20 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Thu, 27 Jan 2022 05:50:35 GMT
+# Fri, 04 Feb 2022 04:15:21 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Thu, 27 Jan 2022 05:51:17 GMT
+# Fri, 04 Feb 2022 04:15:52 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps     libpostgresql-jdbc-java &&   rm -rf /var/lib/apt/lists/*
-# Thu, 27 Jan 2022 05:51:19 GMT
+# Fri, 04 Feb 2022 04:17:44 GMT
 ENV XWIKI_VERSION=13.10.2
-# Thu, 27 Jan 2022 05:51:19 GMT
+# Fri, 04 Feb 2022 04:17:45 GMT
 ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/13.10.2
-# Thu, 27 Jan 2022 05:51:20 GMT
+# Fri, 04 Feb 2022 04:17:45 GMT
 ENV XWIKI_DOWNLOAD_SHA256=fc3b0299f5fa903d3fdee2e6af0a69173a8a411a4e027a271772e0666bb6d3aa
-# Thu, 27 Jan 2022 05:52:57 GMT
+# Fri, 04 Feb 2022 04:19:06 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Thu, 27 Jan 2022 05:52:58 GMT
+# Fri, 04 Feb 2022 04:19:08 GMT
 RUN cp /usr/share/java/postgresql-jdbc4.jar /usr/local/tomcat/webapps/ROOT/WEB-INF/lib/
-# Thu, 27 Jan 2022 05:52:59 GMT
+# Fri, 04 Feb 2022 04:19:09 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Thu, 27 Jan 2022 05:53:00 GMT
+# Fri, 04 Feb 2022 04:19:10 GMT
 COPY file:4a923f484bb29a26630c19e1d617d3bf6aa6ae7c6c4a5561e97b037bcde0847c in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Thu, 27 Jan 2022 05:53:01 GMT
+# Fri, 04 Feb 2022 04:19:11 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Thu, 27 Jan 2022 05:53:02 GMT
+# Fri, 04 Feb 2022 04:19:12 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Thu, 27 Jan 2022 05:53:03 GMT
+# Fri, 04 Feb 2022 04:19:13 GMT
 VOLUME [/usr/local/xwiki]
-# Thu, 27 Jan 2022 05:53:04 GMT
+# Fri, 04 Feb 2022 04:19:14 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 27 Jan 2022 05:53:05 GMT
+# Fri, 04 Feb 2022 04:19:15 GMT
 CMD ["xwiki"]
 ```
 
@@ -753,51 +753,51 @@ CMD ["xwiki"]
 		Last Modified: Wed, 26 Jan 2022 06:23:04 GMT  
 		Size: 212.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d46cad4095d077981b03d8fc3768a011689e84da8c906b28c8d762521c7d3d1a`  
-		Last Modified: Wed, 26 Jan 2022 06:23:23 GMT  
-		Size: 200.7 MB (200714065 bytes)  
+	-	`sha256:094aec66c6a7d824fad2b23976909d7a80fb1306908ad7fdfa38bded6f5d2f8b`  
+		Last Modified: Thu, 03 Feb 2022 21:12:31 GMT  
+		Size: 200.9 MB (200886679 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:51ffd677e016f0ca2d523555eb31a4bb907122ff28e694bf6f9ffa00d64eb35b`  
-		Last Modified: Thu, 27 Jan 2022 00:48:42 GMT  
+	-	`sha256:4d190c32e6780b7f813e534bb35b54d7c274759716626dd777c454fc06a884a8`  
+		Last Modified: Fri, 04 Feb 2022 01:44:18 GMT  
 		Size: 139.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35788645ec42db1cbdbb0e08d34d9c856f580940026809a268612d29c57b121c`  
-		Last Modified: Thu, 27 Jan 2022 01:04:30 GMT  
-		Size: 12.3 MB (12290038 bytes)  
+	-	`sha256:dfec2cf8d777891eaa322b3fe0e9666127e538e6c0ce47503f5a1ddb102e697b`  
+		Last Modified: Fri, 04 Feb 2022 01:58:19 GMT  
+		Size: 12.3 MB (12289911 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a00e62b554c09b0a5e65167e12d701de6aed0d2a2c9f37df0f4d2d8416380e9`  
-		Last Modified: Thu, 27 Jan 2022 05:55:50 GMT  
-		Size: 185.2 MB (185204053 bytes)  
+	-	`sha256:6b2a11450733610955131b222d21338c16cd2e791d4ab640678898c6885cf082`  
+		Last Modified: Fri, 04 Feb 2022 04:20:14 GMT  
+		Size: 185.2 MB (185204270 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bfc85d349aa89b1ee2ce1d96e1fecc39f073eef0bb8790473938c8af5b572c25`  
-		Last Modified: Thu, 27 Jan 2022 05:55:51 GMT  
-		Size: 292.3 MB (292323783 bytes)  
+	-	`sha256:2df1cb968c27b1df8f9c66ebaaa739043e1983ffa7bd3861496ce2c07aac83ce`  
+		Last Modified: Fri, 04 Feb 2022 04:21:00 GMT  
+		Size: 292.3 MB (292323866 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e39c58d99fe859ebc1bf5c4cba93e5ba5aee49f39bb1edaefe97fd01466ef66`  
-		Last Modified: Thu, 27 Jan 2022 05:55:25 GMT  
-		Size: 846.2 KB (846205 bytes)  
+	-	`sha256:fad23f263affc72dad897c28c013e07dc305d7d0509ffe3f16a2b4bf862a40c3`  
+		Last Modified: Fri, 04 Feb 2022 04:20:37 GMT  
+		Size: 846.2 KB (846210 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3e10c1bce3e4537e8732ba6cab65b2ba9d4b09d65590716c3390b510accd1e8`  
-		Last Modified: Thu, 27 Jan 2022 05:55:24 GMT  
-		Size: 1.3 KB (1346 bytes)  
+	-	`sha256:70762cec07baab23606315b906e66180b5e97c0875aa6977c6a1df8facd33576`  
+		Last Modified: Fri, 04 Feb 2022 04:20:37 GMT  
+		Size: 1.3 KB (1345 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f68f0d4c03727d8ed2217e0bf005445c510a29ef80d85320a6642d88bf9d4f88`  
-		Last Modified: Thu, 27 Jan 2022 05:55:24 GMT  
-		Size: 2.5 KB (2455 bytes)  
+	-	`sha256:0b97bab58e2cbf28896da73d1be871b4ee6bbc887d09db1cbcd63304da501205`  
+		Last Modified: Fri, 04 Feb 2022 04:20:37 GMT  
+		Size: 2.5 KB (2454 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9198e0489f644a8cb8761c6d6723eec447bf5f5c39a229cdb64dcbab34dc4fb2`  
-		Last Modified: Thu, 27 Jan 2022 05:55:24 GMT  
+	-	`sha256:f10b015d55f55508a9769d96d9bd09a4859ae38f9753ae3a97dee6cee6a7135c`  
+		Last Modified: Fri, 04 Feb 2022 04:20:37 GMT  
 		Size: 5.3 KB (5332 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f0ac619e27609108d429ebf53a6a62d49257addc31cbaf4188f07cc8352c32e4`  
-		Last Modified: Thu, 27 Jan 2022 05:55:24 GMT  
-		Size: 2.5 KB (2505 bytes)  
+	-	`sha256:6e95c59ffc660cebea1adb1e7d2d4317aa94fb87fd0b35dac6ee2f344d052438`  
+		Last Modified: Fri, 04 Feb 2022 04:20:37 GMT  
+		Size: 2.5 KB (2502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `xwiki:13.10`
 
 ```console
-$ docker pull xwiki@sha256:09cde5b219f328cf3cc3175cc8036afb3aeafdac2955f5fa4b2372d9ad8b1bc8
+$ docker pull xwiki@sha256:8008e132febfdb4b72082ff200b8e0ec6e2571e6706eeabeebd17841acd96de4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -807,14 +807,14 @@ $ docker pull xwiki@sha256:09cde5b219f328cf3cc3175cc8036afb3aeafdac2955f5fa4b237
 ### `xwiki:13.10` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:0a245333fe825fc874f06a7c75284db8861dd95d2f9e4b892aeab2fe37eba78d
+$ docker pull xwiki@sha256:7aef21f5e703c8d07712f1e67d5e39dbace757b5b9301adf296d67dc02fc8957
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **830.6 MB (830574972 bytes)**  
+-	Total Size: **830.7 MB (830728567 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b298c74729aece85079a36cf038ae611cc3a85ede96a544a00b8a88a99af1490`
+-	Image ID: `sha256:59d1d783b2213cff4466c0fbd54ba750c9a65891552d1e49c01116e2f23e9c08`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -839,87 +839,87 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 26 Jan 2022 09:24:15 GMT
 ENV LANG=C.UTF-8
-# Wed, 26 Jan 2022 09:24:15 GMT
-ENV JAVA_VERSION=11.0.13
-# Wed, 26 Jan 2022 09:25:37 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_x64_linux_11.0.13_8.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_aarch64_linux_11.0.13_8.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 26 Jan 2022 09:25:38 GMT
+# Thu, 03 Feb 2022 20:34:14 GMT
+ENV JAVA_VERSION=11.0.14
+# Thu, 03 Feb 2022 20:35:39 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_x64_linux_11.0.14_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_aarch64_linux_11.0.14_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 03 Feb 2022 20:35:40 GMT
 CMD ["jshell"]
-# Thu, 27 Jan 2022 17:44:01 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:02 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 WORKDIR /usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_MAJOR=9
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_VERSION=9.0.58
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_SHA512=33c030a312a0a087deeb06fff921d13a23789e152d30620f33a368e7a2244c762fcf9acd55f3b90f08560704ba45bc2be820bccf2058b0cf5801a7b124f9056d
-# Thu, 27 Jan 2022 18:12:37 GMT
+# Fri, 04 Feb 2022 01:47:39 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		dirmngr 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work; 		catalina.sh version
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 EXPOSE 8080
-# Thu, 27 Jan 2022 18:12:40 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 CMD ["catalina.sh" "run"]
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Fri, 28 Jan 2022 00:39:09 GMT
+# Fri, 04 Feb 2022 06:20:42 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/*
-# Fri, 28 Jan 2022 00:39:10 GMT
+# Fri, 04 Feb 2022 06:23:05 GMT
 ENV XWIKI_VERSION=13.10.2
-# Fri, 28 Jan 2022 00:39:10 GMT
+# Fri, 04 Feb 2022 06:23:05 GMT
 ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/13.10.2
-# Fri, 28 Jan 2022 00:39:11 GMT
+# Fri, 04 Feb 2022 06:23:05 GMT
 ENV XWIKI_DOWNLOAD_SHA256=fc3b0299f5fa903d3fdee2e6af0a69173a8a411a4e027a271772e0666bb6d3aa
-# Fri, 28 Jan 2022 00:39:48 GMT
+# Fri, 04 Feb 2022 06:23:45 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Fri, 28 Jan 2022 00:39:49 GMT
+# Fri, 04 Feb 2022 06:23:46 GMT
 ENV MYSQL_JDBC_VERSION=8.0.22
-# Fri, 28 Jan 2022 00:39:50 GMT
+# Fri, 04 Feb 2022 06:23:46 GMT
 ENV MYSQL_JDBC_SHA256=5019defbd12316295e97a6e88f2a9b07f118345a4e982710bba232e499b22f4f
-# Fri, 28 Jan 2022 00:39:50 GMT
+# Fri, 04 Feb 2022 06:23:46 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.22
-# Fri, 28 Jan 2022 00:39:50 GMT
+# Fri, 04 Feb 2022 06:23:47 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-java-8.0.22.jar
-# Fri, 28 Jan 2022 00:39:50 GMT
+# Fri, 04 Feb 2022 06:23:47 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-java-8.0.22.jar
-# Fri, 28 Jan 2022 00:39:51 GMT
+# Fri, 04 Feb 2022 06:23:48 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c -
-# Fri, 28 Jan 2022 00:39:52 GMT
+# Fri, 04 Feb 2022 06:23:48 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Fri, 28 Jan 2022 00:39:52 GMT
+# Fri, 04 Feb 2022 06:23:48 GMT
 COPY file:1b8409986f3e4eb79a7a0b18472cb2692a61d504fb5ef34292bc997b79fd760d in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Fri, 28 Jan 2022 00:39:52 GMT
+# Fri, 04 Feb 2022 06:23:49 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Fri, 28 Jan 2022 00:39:53 GMT
+# Fri, 04 Feb 2022 06:23:49 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Fri, 28 Jan 2022 00:39:53 GMT
+# Fri, 04 Feb 2022 06:23:50 GMT
 VOLUME [/usr/local/xwiki]
-# Fri, 28 Jan 2022 00:39:53 GMT
+# Fri, 04 Feb 2022 06:23:50 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 28 Jan 2022 00:39:53 GMT
+# Fri, 04 Feb 2022 06:23:50 GMT
 CMD ["xwiki"]
 ```
 
@@ -948,55 +948,55 @@ CMD ["xwiki"]
 		Last Modified: Wed, 26 Jan 2022 09:50:57 GMT  
 		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4512bdd2598cabd6c3bd8ee70ad79fceb4082b9bc297ff1b46a4e769ed684062`  
-		Last Modified: Wed, 26 Jan 2022 09:51:16 GMT  
-		Size: 203.1 MB (203118688 bytes)  
+	-	`sha256:fda090e7df3523dc9db18e06c2619b52e4dd2772c2800105e421552c27e599ed`  
+		Last Modified: Thu, 03 Feb 2022 20:58:14 GMT  
+		Size: 203.3 MB (203272575 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80124a46e801eaa1b446b86644d47869682894497815f2f0b77d98e29452343e`  
-		Last Modified: Thu, 27 Jan 2022 19:02:36 GMT  
-		Size: 172.0 B  
+	-	`sha256:e5341f7d466587f60c7ab87e18455c8f3e8f8e64681248565726a71137481f72`  
+		Last Modified: Fri, 04 Feb 2022 02:16:39 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46ecb4b115268768a2248cf5c66cccfb7d7293bba9c2c746337715effd0a1d2a`  
-		Last Modified: Thu, 27 Jan 2022 19:24:17 GMT  
-		Size: 12.5 MB (12522843 bytes)  
+	-	`sha256:658f77ce17d67d7b64dcd870a07d0e58bbe6a1ec52f253b0f93276edc3f1e0e4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:49 GMT  
+		Size: 12.5 MB (12522598 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdf3a46eab5ffff6d0b6fce0a150080847d2b80a4e03afa70c91377c9bf23401`  
-		Last Modified: Thu, 27 Jan 2022 19:24:16 GMT  
-		Size: 130.0 B  
+	-	`sha256:5c32bc7e7c91ebeb93dfcf733e07f2193161f8691a1555e22c9abe163ee7c2d4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:47 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8068c3825818104bc3046fa3ee6b8295aeac3295e175c0e80bd2334886e53ea`  
-		Last Modified: Fri, 28 Jan 2022 00:44:29 GMT  
+	-	`sha256:e07f4a067a7f038cb77c035bc29748f1c173243b916eb9f3a5d4ed9d9ce3a8b9`  
+		Last Modified: Fri, 04 Feb 2022 06:25:39 GMT  
 		Size: 189.4 MB (189410696 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:396889a0f6c7b282fc8d77b0b050128c83fc3b789cfda9077d37bbe3b1075837`  
-		Last Modified: Fri, 28 Jan 2022 00:44:19 GMT  
-		Size: 292.3 MB (292323788 bytes)  
+	-	`sha256:da601c88fd3f0ad0637b15c6be500ca10a5ff04d374cbf4de97dee0214cb509c`  
+		Last Modified: Fri, 04 Feb 2022 06:27:24 GMT  
+		Size: 292.3 MB (292323742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4fe365e4da623218296e5353817ead969edc901534865d157d7abd8d698952af`  
-		Last Modified: Fri, 28 Jan 2022 00:44:00 GMT  
-		Size: 2.3 MB (2257823 bytes)  
+	-	`sha256:7c0d2774f6069962ecff7b71f9e87c0b777f8583c101e5b840c340eb527c0bb3`  
+		Last Modified: Fri, 04 Feb 2022 06:27:05 GMT  
+		Size: 2.3 MB (2257819 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d3b6c3e9a0f7a62b1be438aecac9577ffe2ce689774c66df8665aa5abc9cdae`  
-		Last Modified: Fri, 28 Jan 2022 00:44:00 GMT  
-		Size: 1.3 KB (1340 bytes)  
+	-	`sha256:c3e2a765d0aedd26d93c03068af86d301664476521beff2a4981266734d7a321`  
+		Last Modified: Fri, 04 Feb 2022 06:27:05 GMT  
+		Size: 1.3 KB (1344 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9186f3274fcb6303685907a1b62454e6dec93f14e1746c61a5642896c1f17320`  
-		Last Modified: Fri, 28 Jan 2022 00:44:00 GMT  
-		Size: 2.3 KB (2306 bytes)  
+	-	`sha256:05ff3ee34c3886920b58e8fe87ad3b9825d73df08b79e042c83841fc86efc742`  
+		Last Modified: Fri, 04 Feb 2022 06:27:05 GMT  
+		Size: 2.3 KB (2305 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f906af211ae8369e59c729bae16166918ba94919c1aba7c85a381c324327088`  
-		Last Modified: Fri, 28 Jan 2022 00:44:00 GMT  
-		Size: 5.3 KB (5332 bytes)  
+	-	`sha256:56c15f2d682052b629b4c684cab30b4d2a296b23b9b57b2a31a5fd0e6a12ce21`  
+		Last Modified: Fri, 04 Feb 2022 06:27:05 GMT  
+		Size: 5.3 KB (5331 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:831e56417aefbe60ed5799fe7bb7e47f51ab7b971fe81bf734317fed71f822a4`  
-		Last Modified: Fri, 28 Jan 2022 00:44:00 GMT  
-		Size: 2.5 KB (2503 bytes)  
+	-	`sha256:b309a178723e0dc4d831943ab093c646a536802b0fd5560039c9fdcc8d31b710`  
+		Last Modified: Fri, 04 Feb 2022 06:27:05 GMT  
+		Size: 2.5 KB (2502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `xwiki:13.10-mysql-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:09cde5b219f328cf3cc3175cc8036afb3aeafdac2955f5fa4b2372d9ad8b1bc8
+$ docker pull xwiki@sha256:8008e132febfdb4b72082ff200b8e0ec6e2571e6706eeabeebd17841acd96de4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1006,14 +1006,14 @@ $ docker pull xwiki@sha256:09cde5b219f328cf3cc3175cc8036afb3aeafdac2955f5fa4b237
 ### `xwiki:13.10-mysql-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:0a245333fe825fc874f06a7c75284db8861dd95d2f9e4b892aeab2fe37eba78d
+$ docker pull xwiki@sha256:7aef21f5e703c8d07712f1e67d5e39dbace757b5b9301adf296d67dc02fc8957
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **830.6 MB (830574972 bytes)**  
+-	Total Size: **830.7 MB (830728567 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b298c74729aece85079a36cf038ae611cc3a85ede96a544a00b8a88a99af1490`
+-	Image ID: `sha256:59d1d783b2213cff4466c0fbd54ba750c9a65891552d1e49c01116e2f23e9c08`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -1038,87 +1038,87 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 26 Jan 2022 09:24:15 GMT
 ENV LANG=C.UTF-8
-# Wed, 26 Jan 2022 09:24:15 GMT
-ENV JAVA_VERSION=11.0.13
-# Wed, 26 Jan 2022 09:25:37 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_x64_linux_11.0.13_8.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_aarch64_linux_11.0.13_8.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 26 Jan 2022 09:25:38 GMT
+# Thu, 03 Feb 2022 20:34:14 GMT
+ENV JAVA_VERSION=11.0.14
+# Thu, 03 Feb 2022 20:35:39 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_x64_linux_11.0.14_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_aarch64_linux_11.0.14_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 03 Feb 2022 20:35:40 GMT
 CMD ["jshell"]
-# Thu, 27 Jan 2022 17:44:01 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:02 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 WORKDIR /usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_MAJOR=9
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_VERSION=9.0.58
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_SHA512=33c030a312a0a087deeb06fff921d13a23789e152d30620f33a368e7a2244c762fcf9acd55f3b90f08560704ba45bc2be820bccf2058b0cf5801a7b124f9056d
-# Thu, 27 Jan 2022 18:12:37 GMT
+# Fri, 04 Feb 2022 01:47:39 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		dirmngr 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work; 		catalina.sh version
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 EXPOSE 8080
-# Thu, 27 Jan 2022 18:12:40 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 CMD ["catalina.sh" "run"]
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Fri, 28 Jan 2022 00:39:09 GMT
+# Fri, 04 Feb 2022 06:20:42 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/*
-# Fri, 28 Jan 2022 00:39:10 GMT
+# Fri, 04 Feb 2022 06:23:05 GMT
 ENV XWIKI_VERSION=13.10.2
-# Fri, 28 Jan 2022 00:39:10 GMT
+# Fri, 04 Feb 2022 06:23:05 GMT
 ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/13.10.2
-# Fri, 28 Jan 2022 00:39:11 GMT
+# Fri, 04 Feb 2022 06:23:05 GMT
 ENV XWIKI_DOWNLOAD_SHA256=fc3b0299f5fa903d3fdee2e6af0a69173a8a411a4e027a271772e0666bb6d3aa
-# Fri, 28 Jan 2022 00:39:48 GMT
+# Fri, 04 Feb 2022 06:23:45 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Fri, 28 Jan 2022 00:39:49 GMT
+# Fri, 04 Feb 2022 06:23:46 GMT
 ENV MYSQL_JDBC_VERSION=8.0.22
-# Fri, 28 Jan 2022 00:39:50 GMT
+# Fri, 04 Feb 2022 06:23:46 GMT
 ENV MYSQL_JDBC_SHA256=5019defbd12316295e97a6e88f2a9b07f118345a4e982710bba232e499b22f4f
-# Fri, 28 Jan 2022 00:39:50 GMT
+# Fri, 04 Feb 2022 06:23:46 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.22
-# Fri, 28 Jan 2022 00:39:50 GMT
+# Fri, 04 Feb 2022 06:23:47 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-java-8.0.22.jar
-# Fri, 28 Jan 2022 00:39:50 GMT
+# Fri, 04 Feb 2022 06:23:47 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-java-8.0.22.jar
-# Fri, 28 Jan 2022 00:39:51 GMT
+# Fri, 04 Feb 2022 06:23:48 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c -
-# Fri, 28 Jan 2022 00:39:52 GMT
+# Fri, 04 Feb 2022 06:23:48 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Fri, 28 Jan 2022 00:39:52 GMT
+# Fri, 04 Feb 2022 06:23:48 GMT
 COPY file:1b8409986f3e4eb79a7a0b18472cb2692a61d504fb5ef34292bc997b79fd760d in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Fri, 28 Jan 2022 00:39:52 GMT
+# Fri, 04 Feb 2022 06:23:49 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Fri, 28 Jan 2022 00:39:53 GMT
+# Fri, 04 Feb 2022 06:23:49 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Fri, 28 Jan 2022 00:39:53 GMT
+# Fri, 04 Feb 2022 06:23:50 GMT
 VOLUME [/usr/local/xwiki]
-# Fri, 28 Jan 2022 00:39:53 GMT
+# Fri, 04 Feb 2022 06:23:50 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 28 Jan 2022 00:39:53 GMT
+# Fri, 04 Feb 2022 06:23:50 GMT
 CMD ["xwiki"]
 ```
 
@@ -1147,55 +1147,55 @@ CMD ["xwiki"]
 		Last Modified: Wed, 26 Jan 2022 09:50:57 GMT  
 		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4512bdd2598cabd6c3bd8ee70ad79fceb4082b9bc297ff1b46a4e769ed684062`  
-		Last Modified: Wed, 26 Jan 2022 09:51:16 GMT  
-		Size: 203.1 MB (203118688 bytes)  
+	-	`sha256:fda090e7df3523dc9db18e06c2619b52e4dd2772c2800105e421552c27e599ed`  
+		Last Modified: Thu, 03 Feb 2022 20:58:14 GMT  
+		Size: 203.3 MB (203272575 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80124a46e801eaa1b446b86644d47869682894497815f2f0b77d98e29452343e`  
-		Last Modified: Thu, 27 Jan 2022 19:02:36 GMT  
-		Size: 172.0 B  
+	-	`sha256:e5341f7d466587f60c7ab87e18455c8f3e8f8e64681248565726a71137481f72`  
+		Last Modified: Fri, 04 Feb 2022 02:16:39 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46ecb4b115268768a2248cf5c66cccfb7d7293bba9c2c746337715effd0a1d2a`  
-		Last Modified: Thu, 27 Jan 2022 19:24:17 GMT  
-		Size: 12.5 MB (12522843 bytes)  
+	-	`sha256:658f77ce17d67d7b64dcd870a07d0e58bbe6a1ec52f253b0f93276edc3f1e0e4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:49 GMT  
+		Size: 12.5 MB (12522598 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdf3a46eab5ffff6d0b6fce0a150080847d2b80a4e03afa70c91377c9bf23401`  
-		Last Modified: Thu, 27 Jan 2022 19:24:16 GMT  
-		Size: 130.0 B  
+	-	`sha256:5c32bc7e7c91ebeb93dfcf733e07f2193161f8691a1555e22c9abe163ee7c2d4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:47 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8068c3825818104bc3046fa3ee6b8295aeac3295e175c0e80bd2334886e53ea`  
-		Last Modified: Fri, 28 Jan 2022 00:44:29 GMT  
+	-	`sha256:e07f4a067a7f038cb77c035bc29748f1c173243b916eb9f3a5d4ed9d9ce3a8b9`  
+		Last Modified: Fri, 04 Feb 2022 06:25:39 GMT  
 		Size: 189.4 MB (189410696 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:396889a0f6c7b282fc8d77b0b050128c83fc3b789cfda9077d37bbe3b1075837`  
-		Last Modified: Fri, 28 Jan 2022 00:44:19 GMT  
-		Size: 292.3 MB (292323788 bytes)  
+	-	`sha256:da601c88fd3f0ad0637b15c6be500ca10a5ff04d374cbf4de97dee0214cb509c`  
+		Last Modified: Fri, 04 Feb 2022 06:27:24 GMT  
+		Size: 292.3 MB (292323742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4fe365e4da623218296e5353817ead969edc901534865d157d7abd8d698952af`  
-		Last Modified: Fri, 28 Jan 2022 00:44:00 GMT  
-		Size: 2.3 MB (2257823 bytes)  
+	-	`sha256:7c0d2774f6069962ecff7b71f9e87c0b777f8583c101e5b840c340eb527c0bb3`  
+		Last Modified: Fri, 04 Feb 2022 06:27:05 GMT  
+		Size: 2.3 MB (2257819 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d3b6c3e9a0f7a62b1be438aecac9577ffe2ce689774c66df8665aa5abc9cdae`  
-		Last Modified: Fri, 28 Jan 2022 00:44:00 GMT  
-		Size: 1.3 KB (1340 bytes)  
+	-	`sha256:c3e2a765d0aedd26d93c03068af86d301664476521beff2a4981266734d7a321`  
+		Last Modified: Fri, 04 Feb 2022 06:27:05 GMT  
+		Size: 1.3 KB (1344 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9186f3274fcb6303685907a1b62454e6dec93f14e1746c61a5642896c1f17320`  
-		Last Modified: Fri, 28 Jan 2022 00:44:00 GMT  
-		Size: 2.3 KB (2306 bytes)  
+	-	`sha256:05ff3ee34c3886920b58e8fe87ad3b9825d73df08b79e042c83841fc86efc742`  
+		Last Modified: Fri, 04 Feb 2022 06:27:05 GMT  
+		Size: 2.3 KB (2305 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f906af211ae8369e59c729bae16166918ba94919c1aba7c85a381c324327088`  
-		Last Modified: Fri, 28 Jan 2022 00:44:00 GMT  
-		Size: 5.3 KB (5332 bytes)  
+	-	`sha256:56c15f2d682052b629b4c684cab30b4d2a296b23b9b57b2a31a5fd0e6a12ce21`  
+		Last Modified: Fri, 04 Feb 2022 06:27:05 GMT  
+		Size: 5.3 KB (5331 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:831e56417aefbe60ed5799fe7bb7e47f51ab7b971fe81bf734317fed71f822a4`  
-		Last Modified: Fri, 28 Jan 2022 00:44:00 GMT  
-		Size: 2.5 KB (2503 bytes)  
+	-	`sha256:b309a178723e0dc4d831943ab093c646a536802b0fd5560039c9fdcc8d31b710`  
+		Last Modified: Fri, 04 Feb 2022 06:27:05 GMT  
+		Size: 2.5 KB (2502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `xwiki:13.10-postgres-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:75e4cbe812d17014e0e2f5f3bb06b9043ac91d335c2f2f1a755470215a588966
+$ docker pull xwiki@sha256:2e6a54cc855abd068672be3157736cbdffa3e7069b4650e2bfa28801c5b53fc1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1206,14 +1206,14 @@ $ docker pull xwiki@sha256:75e4cbe812d17014e0e2f5f3bb06b9043ac91d335c2f2f1a75547
 ### `xwiki:13.10-postgres-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:3d21d1b6a4b6b88f133adc7cfdc055fa6f92d486ee123cb09b627d7de33f9555
+$ docker pull xwiki@sha256:e753a5533755a2cea10b563c4063647834d6692bc99cd88bad8e8a215f7dd957
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **830.0 MB (830038637 bytes)**  
+-	Total Size: **830.2 MB (830192305 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:753a58ea527df2f7f1b68ae385249bf80892268c291edc72a89982a51b27fe3a`
+-	Image ID: `sha256:107637fe0f3cc8b2889d6c53fd224faf68f8541f56b42e0d281f1d6578954eca`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -1238,77 +1238,77 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 26 Jan 2022 09:24:15 GMT
 ENV LANG=C.UTF-8
-# Wed, 26 Jan 2022 09:24:15 GMT
-ENV JAVA_VERSION=11.0.13
-# Wed, 26 Jan 2022 09:25:37 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_x64_linux_11.0.13_8.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_aarch64_linux_11.0.13_8.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 26 Jan 2022 09:25:38 GMT
+# Thu, 03 Feb 2022 20:34:14 GMT
+ENV JAVA_VERSION=11.0.14
+# Thu, 03 Feb 2022 20:35:39 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_x64_linux_11.0.14_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_aarch64_linux_11.0.14_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 03 Feb 2022 20:35:40 GMT
 CMD ["jshell"]
-# Thu, 27 Jan 2022 17:44:01 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:02 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 WORKDIR /usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_MAJOR=9
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_VERSION=9.0.58
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_SHA512=33c030a312a0a087deeb06fff921d13a23789e152d30620f33a368e7a2244c762fcf9acd55f3b90f08560704ba45bc2be820bccf2058b0cf5801a7b124f9056d
-# Thu, 27 Jan 2022 18:12:37 GMT
+# Fri, 04 Feb 2022 01:47:39 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		dirmngr 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work; 		catalina.sh version
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 EXPOSE 8080
-# Thu, 27 Jan 2022 18:12:40 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 CMD ["catalina.sh" "run"]
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Fri, 28 Jan 2022 00:40:35 GMT
+# Fri, 04 Feb 2022 06:22:14 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps     libpostgresql-jdbc-java &&   rm -rf /var/lib/apt/lists/*
-# Fri, 28 Jan 2022 00:40:36 GMT
+# Fri, 04 Feb 2022 06:23:54 GMT
 ENV XWIKI_VERSION=13.10.2
-# Fri, 28 Jan 2022 00:40:37 GMT
+# Fri, 04 Feb 2022 06:23:54 GMT
 ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/13.10.2
-# Fri, 28 Jan 2022 00:40:37 GMT
+# Fri, 04 Feb 2022 06:23:54 GMT
 ENV XWIKI_DOWNLOAD_SHA256=fc3b0299f5fa903d3fdee2e6af0a69173a8a411a4e027a271772e0666bb6d3aa
-# Fri, 28 Jan 2022 00:41:25 GMT
+# Fri, 04 Feb 2022 06:24:32 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Fri, 28 Jan 2022 00:41:27 GMT
+# Fri, 04 Feb 2022 06:24:34 GMT
 RUN cp /usr/share/java/postgresql-jdbc4.jar /usr/local/tomcat/webapps/ROOT/WEB-INF/lib/
-# Fri, 28 Jan 2022 00:41:27 GMT
+# Fri, 04 Feb 2022 06:24:34 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Fri, 28 Jan 2022 00:41:27 GMT
+# Fri, 04 Feb 2022 06:24:34 GMT
 COPY file:4a923f484bb29a26630c19e1d617d3bf6aa6ae7c6c4a5561e97b037bcde0847c in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Fri, 28 Jan 2022 00:41:28 GMT
+# Fri, 04 Feb 2022 06:24:35 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Fri, 28 Jan 2022 00:41:28 GMT
+# Fri, 04 Feb 2022 06:24:35 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Fri, 28 Jan 2022 00:41:28 GMT
+# Fri, 04 Feb 2022 06:24:36 GMT
 VOLUME [/usr/local/xwiki]
-# Fri, 28 Jan 2022 00:41:28 GMT
+# Fri, 04 Feb 2022 06:24:36 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 28 Jan 2022 00:41:29 GMT
+# Fri, 04 Feb 2022 06:24:36 GMT
 CMD ["xwiki"]
 ```
 
@@ -1337,62 +1337,62 @@ CMD ["xwiki"]
 		Last Modified: Wed, 26 Jan 2022 09:50:57 GMT  
 		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4512bdd2598cabd6c3bd8ee70ad79fceb4082b9bc297ff1b46a4e769ed684062`  
-		Last Modified: Wed, 26 Jan 2022 09:51:16 GMT  
-		Size: 203.1 MB (203118688 bytes)  
+	-	`sha256:fda090e7df3523dc9db18e06c2619b52e4dd2772c2800105e421552c27e599ed`  
+		Last Modified: Thu, 03 Feb 2022 20:58:14 GMT  
+		Size: 203.3 MB (203272575 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80124a46e801eaa1b446b86644d47869682894497815f2f0b77d98e29452343e`  
-		Last Modified: Thu, 27 Jan 2022 19:02:36 GMT  
-		Size: 172.0 B  
+	-	`sha256:e5341f7d466587f60c7ab87e18455c8f3e8f8e64681248565726a71137481f72`  
+		Last Modified: Fri, 04 Feb 2022 02:16:39 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46ecb4b115268768a2248cf5c66cccfb7d7293bba9c2c746337715effd0a1d2a`  
-		Last Modified: Thu, 27 Jan 2022 19:24:17 GMT  
-		Size: 12.5 MB (12522843 bytes)  
+	-	`sha256:658f77ce17d67d7b64dcd870a07d0e58bbe6a1ec52f253b0f93276edc3f1e0e4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:49 GMT  
+		Size: 12.5 MB (12522598 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdf3a46eab5ffff6d0b6fce0a150080847d2b80a4e03afa70c91377c9bf23401`  
-		Last Modified: Thu, 27 Jan 2022 19:24:16 GMT  
-		Size: 130.0 B  
+	-	`sha256:5c32bc7e7c91ebeb93dfcf733e07f2193161f8691a1555e22c9abe163ee7c2d4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:47 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af539591d5df2e4985dee90ab6d28ee232867000819a22ea0c5a5a14bb89fd96`  
-		Last Modified: Fri, 28 Jan 2022 00:45:49 GMT  
-		Size: 190.3 MB (190285846 bytes)  
+	-	`sha256:fa796b6a421404c5ed1980b8e1277de92aadd8b243229d78ca48034606f4e44b`  
+		Last Modified: Fri, 04 Feb 2022 06:26:44 GMT  
+		Size: 190.3 MB (190285862 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4ef698ed33162760c05e98bccea4fc9a84e07756eeba43a519070653a92d118`  
-		Last Modified: Fri, 28 Jan 2022 00:45:41 GMT  
-		Size: 292.3 MB (292323765 bytes)  
+	-	`sha256:33f68599b777b9575178075dedc4263a926e80f80e3fc130ca666335fef8b171`  
+		Last Modified: Fri, 04 Feb 2022 06:28:15 GMT  
+		Size: 292.3 MB (292323766 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:921649a27aef2f135f3045d980896dc6f85f6dae1e313fadb8370b9e9dfc0b27`  
-		Last Modified: Fri, 28 Jan 2022 00:45:21 GMT  
-		Size: 846.2 KB (846207 bytes)  
+	-	`sha256:2b892b71808c773ef896c4cf302d287679438062f8de2a6a884ee1ac2b677420`  
+		Last Modified: Fri, 04 Feb 2022 06:27:59 GMT  
+		Size: 846.2 KB (846213 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec628c1b53017b6a847a9c50ff870300fb2728004f6f4f180af47b4f4e81d003`  
-		Last Modified: Fri, 28 Jan 2022 00:45:22 GMT  
-		Size: 1.3 KB (1343 bytes)  
+	-	`sha256:2d3242792b746d64e6358fef1fb3f5749d063e9438b0a7d07c18604262304fbe`  
+		Last Modified: Fri, 04 Feb 2022 06:27:59 GMT  
+		Size: 1.3 KB (1344 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f972fd488fcfcb41500bd9cd29de336f085345e76188f7942e9f3f90d6793653`  
-		Last Modified: Fri, 28 Jan 2022 00:45:21 GMT  
-		Size: 2.5 KB (2453 bytes)  
+	-	`sha256:c9f1aba1f97da7b480bd57637ac106b02622e52b411b7348e2bbfaba8b8e957b`  
+		Last Modified: Fri, 04 Feb 2022 06:27:58 GMT  
+		Size: 2.5 KB (2455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d188e37cad47b59cb2407a567bef9f348b0643e7ecb691de2fc60fb8ed0ae2aa`  
-		Last Modified: Fri, 28 Jan 2022 00:45:21 GMT  
+	-	`sha256:3cfbbb2c4a222e2e634a7740f688da9f8d84c227561815168512d97cd6679335`  
+		Last Modified: Fri, 04 Feb 2022 06:27:58 GMT  
 		Size: 5.3 KB (5335 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:032774c1e57b283a9e52b5a565e1d3368b001353cffcbcbc6e64e2559a75d475`  
-		Last Modified: Fri, 28 Jan 2022 00:45:21 GMT  
-		Size: 2.5 KB (2504 bytes)  
+	-	`sha256:8d6dc5f0191b17b221834f808af26e9159eb607bc2475766b001a9966dc7cd5a`  
+		Last Modified: Fri, 04 Feb 2022 06:27:58 GMT  
+		Size: 2.5 KB (2502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `xwiki:13.10-postgres-tomcat` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:3af45f30e94c0ab3d7c3bb269af97a0eb03a5c1eb881d3ae7fc2506bdaf2d882
+$ docker pull xwiki@sha256:3bc8d8d2ea80d237639576b7d5bed27e982183e6925aeabcce9a84cc56f7284f
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **820.9 MB (820886094 bytes)**  
+-	Total Size: **821.1 MB (821058881 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:28605695a4ddffc3ee8d009a708c3cb89f9bbb9e7dff2121bab3eb236414679a`
+-	Image ID: `sha256:9b4467ae4b95b278a1ad27a6ecd2031d991acacf260b8d2ea9882414e3951a97`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -1417,77 +1417,77 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 26 Jan 2022 05:56:10 GMT
 ENV LANG=C.UTF-8
-# Wed, 26 Jan 2022 05:56:11 GMT
-ENV JAVA_VERSION=11.0.13
-# Wed, 26 Jan 2022 05:57:08 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_x64_linux_11.0.13_8.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_aarch64_linux_11.0.13_8.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 26 Jan 2022 05:57:09 GMT
+# Thu, 03 Feb 2022 20:49:24 GMT
+ENV JAVA_VERSION=11.0.14
+# Thu, 03 Feb 2022 20:50:20 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_x64_linux_11.0.14_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_aarch64_linux_11.0.14_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 03 Feb 2022 20:50:21 GMT
 CMD ["jshell"]
-# Wed, 26 Jan 2022 23:45:39 GMT
+# Fri, 04 Feb 2022 00:39:07 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Wed, 26 Jan 2022 23:45:40 GMT
+# Fri, 04 Feb 2022 00:39:08 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 26 Jan 2022 23:45:41 GMT
+# Fri, 04 Feb 2022 00:39:09 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Wed, 26 Jan 2022 23:45:42 GMT
+# Fri, 04 Feb 2022 00:39:10 GMT
 WORKDIR /usr/local/tomcat
-# Wed, 26 Jan 2022 23:45:43 GMT
+# Fri, 04 Feb 2022 00:39:11 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Wed, 26 Jan 2022 23:45:44 GMT
+# Fri, 04 Feb 2022 00:39:12 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 00:07:11 GMT
+# Fri, 04 Feb 2022 01:02:16 GMT
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
-# Thu, 27 Jan 2022 00:07:11 GMT
+# Fri, 04 Feb 2022 01:02:16 GMT
 ENV TOMCAT_MAJOR=9
-# Thu, 27 Jan 2022 00:07:12 GMT
+# Fri, 04 Feb 2022 01:02:17 GMT
 ENV TOMCAT_VERSION=9.0.58
-# Thu, 27 Jan 2022 00:07:13 GMT
+# Fri, 04 Feb 2022 01:02:18 GMT
 ENV TOMCAT_SHA512=33c030a312a0a087deeb06fff921d13a23789e152d30620f33a368e7a2244c762fcf9acd55f3b90f08560704ba45bc2be820bccf2058b0cf5801a7b124f9056d
-# Thu, 27 Jan 2022 00:07:33 GMT
+# Fri, 04 Feb 2022 01:03:23 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		dirmngr 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work; 		catalina.sh version
-# Thu, 27 Jan 2022 00:07:35 GMT
+# Fri, 04 Feb 2022 01:03:25 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 27 Jan 2022 00:07:36 GMT
+# Fri, 04 Feb 2022 01:03:25 GMT
 EXPOSE 8080
-# Thu, 27 Jan 2022 00:07:37 GMT
+# Fri, 04 Feb 2022 01:03:26 GMT
 CMD ["catalina.sh" "run"]
-# Thu, 27 Jan 2022 05:50:31 GMT
+# Fri, 04 Feb 2022 04:15:17 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Thu, 27 Jan 2022 05:50:31 GMT
+# Fri, 04 Feb 2022 04:15:17 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Thu, 27 Jan 2022 05:50:32 GMT
+# Fri, 04 Feb 2022 04:15:18 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Thu, 27 Jan 2022 05:50:33 GMT
+# Fri, 04 Feb 2022 04:15:19 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Thu, 27 Jan 2022 05:50:34 GMT
+# Fri, 04 Feb 2022 04:15:20 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Thu, 27 Jan 2022 05:50:35 GMT
+# Fri, 04 Feb 2022 04:15:21 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Thu, 27 Jan 2022 05:51:17 GMT
+# Fri, 04 Feb 2022 04:15:52 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps     libpostgresql-jdbc-java &&   rm -rf /var/lib/apt/lists/*
-# Thu, 27 Jan 2022 05:51:19 GMT
+# Fri, 04 Feb 2022 04:17:44 GMT
 ENV XWIKI_VERSION=13.10.2
-# Thu, 27 Jan 2022 05:51:19 GMT
+# Fri, 04 Feb 2022 04:17:45 GMT
 ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/13.10.2
-# Thu, 27 Jan 2022 05:51:20 GMT
+# Fri, 04 Feb 2022 04:17:45 GMT
 ENV XWIKI_DOWNLOAD_SHA256=fc3b0299f5fa903d3fdee2e6af0a69173a8a411a4e027a271772e0666bb6d3aa
-# Thu, 27 Jan 2022 05:52:57 GMT
+# Fri, 04 Feb 2022 04:19:06 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Thu, 27 Jan 2022 05:52:58 GMT
+# Fri, 04 Feb 2022 04:19:08 GMT
 RUN cp /usr/share/java/postgresql-jdbc4.jar /usr/local/tomcat/webapps/ROOT/WEB-INF/lib/
-# Thu, 27 Jan 2022 05:52:59 GMT
+# Fri, 04 Feb 2022 04:19:09 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Thu, 27 Jan 2022 05:53:00 GMT
+# Fri, 04 Feb 2022 04:19:10 GMT
 COPY file:4a923f484bb29a26630c19e1d617d3bf6aa6ae7c6c4a5561e97b037bcde0847c in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Thu, 27 Jan 2022 05:53:01 GMT
+# Fri, 04 Feb 2022 04:19:11 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Thu, 27 Jan 2022 05:53:02 GMT
+# Fri, 04 Feb 2022 04:19:12 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Thu, 27 Jan 2022 05:53:03 GMT
+# Fri, 04 Feb 2022 04:19:13 GMT
 VOLUME [/usr/local/xwiki]
-# Thu, 27 Jan 2022 05:53:04 GMT
+# Fri, 04 Feb 2022 04:19:14 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 27 Jan 2022 05:53:05 GMT
+# Fri, 04 Feb 2022 04:19:15 GMT
 CMD ["xwiki"]
 ```
 
@@ -1516,51 +1516,51 @@ CMD ["xwiki"]
 		Last Modified: Wed, 26 Jan 2022 06:23:04 GMT  
 		Size: 212.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d46cad4095d077981b03d8fc3768a011689e84da8c906b28c8d762521c7d3d1a`  
-		Last Modified: Wed, 26 Jan 2022 06:23:23 GMT  
-		Size: 200.7 MB (200714065 bytes)  
+	-	`sha256:094aec66c6a7d824fad2b23976909d7a80fb1306908ad7fdfa38bded6f5d2f8b`  
+		Last Modified: Thu, 03 Feb 2022 21:12:31 GMT  
+		Size: 200.9 MB (200886679 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:51ffd677e016f0ca2d523555eb31a4bb907122ff28e694bf6f9ffa00d64eb35b`  
-		Last Modified: Thu, 27 Jan 2022 00:48:42 GMT  
+	-	`sha256:4d190c32e6780b7f813e534bb35b54d7c274759716626dd777c454fc06a884a8`  
+		Last Modified: Fri, 04 Feb 2022 01:44:18 GMT  
 		Size: 139.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35788645ec42db1cbdbb0e08d34d9c856f580940026809a268612d29c57b121c`  
-		Last Modified: Thu, 27 Jan 2022 01:04:30 GMT  
-		Size: 12.3 MB (12290038 bytes)  
+	-	`sha256:dfec2cf8d777891eaa322b3fe0e9666127e538e6c0ce47503f5a1ddb102e697b`  
+		Last Modified: Fri, 04 Feb 2022 01:58:19 GMT  
+		Size: 12.3 MB (12289911 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a00e62b554c09b0a5e65167e12d701de6aed0d2a2c9f37df0f4d2d8416380e9`  
-		Last Modified: Thu, 27 Jan 2022 05:55:50 GMT  
-		Size: 185.2 MB (185204053 bytes)  
+	-	`sha256:6b2a11450733610955131b222d21338c16cd2e791d4ab640678898c6885cf082`  
+		Last Modified: Fri, 04 Feb 2022 04:20:14 GMT  
+		Size: 185.2 MB (185204270 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bfc85d349aa89b1ee2ce1d96e1fecc39f073eef0bb8790473938c8af5b572c25`  
-		Last Modified: Thu, 27 Jan 2022 05:55:51 GMT  
-		Size: 292.3 MB (292323783 bytes)  
+	-	`sha256:2df1cb968c27b1df8f9c66ebaaa739043e1983ffa7bd3861496ce2c07aac83ce`  
+		Last Modified: Fri, 04 Feb 2022 04:21:00 GMT  
+		Size: 292.3 MB (292323866 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e39c58d99fe859ebc1bf5c4cba93e5ba5aee49f39bb1edaefe97fd01466ef66`  
-		Last Modified: Thu, 27 Jan 2022 05:55:25 GMT  
-		Size: 846.2 KB (846205 bytes)  
+	-	`sha256:fad23f263affc72dad897c28c013e07dc305d7d0509ffe3f16a2b4bf862a40c3`  
+		Last Modified: Fri, 04 Feb 2022 04:20:37 GMT  
+		Size: 846.2 KB (846210 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3e10c1bce3e4537e8732ba6cab65b2ba9d4b09d65590716c3390b510accd1e8`  
-		Last Modified: Thu, 27 Jan 2022 05:55:24 GMT  
-		Size: 1.3 KB (1346 bytes)  
+	-	`sha256:70762cec07baab23606315b906e66180b5e97c0875aa6977c6a1df8facd33576`  
+		Last Modified: Fri, 04 Feb 2022 04:20:37 GMT  
+		Size: 1.3 KB (1345 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f68f0d4c03727d8ed2217e0bf005445c510a29ef80d85320a6642d88bf9d4f88`  
-		Last Modified: Thu, 27 Jan 2022 05:55:24 GMT  
-		Size: 2.5 KB (2455 bytes)  
+	-	`sha256:0b97bab58e2cbf28896da73d1be871b4ee6bbc887d09db1cbcd63304da501205`  
+		Last Modified: Fri, 04 Feb 2022 04:20:37 GMT  
+		Size: 2.5 KB (2454 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9198e0489f644a8cb8761c6d6723eec447bf5f5c39a229cdb64dcbab34dc4fb2`  
-		Last Modified: Thu, 27 Jan 2022 05:55:24 GMT  
+	-	`sha256:f10b015d55f55508a9769d96d9bd09a4859ae38f9753ae3a97dee6cee6a7135c`  
+		Last Modified: Fri, 04 Feb 2022 04:20:37 GMT  
 		Size: 5.3 KB (5332 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f0ac619e27609108d429ebf53a6a62d49257addc31cbaf4188f07cc8352c32e4`  
-		Last Modified: Thu, 27 Jan 2022 05:55:24 GMT  
-		Size: 2.5 KB (2505 bytes)  
+	-	`sha256:6e95c59ffc660cebea1adb1e7d2d4317aa94fb87fd0b35dac6ee2f344d052438`  
+		Last Modified: Fri, 04 Feb 2022 04:20:37 GMT  
+		Size: 2.5 KB (2502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `xwiki:13.10.2`
 
 ```console
-$ docker pull xwiki@sha256:09cde5b219f328cf3cc3175cc8036afb3aeafdac2955f5fa4b2372d9ad8b1bc8
+$ docker pull xwiki@sha256:8008e132febfdb4b72082ff200b8e0ec6e2571e6706eeabeebd17841acd96de4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1570,14 +1570,14 @@ $ docker pull xwiki@sha256:09cde5b219f328cf3cc3175cc8036afb3aeafdac2955f5fa4b237
 ### `xwiki:13.10.2` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:0a245333fe825fc874f06a7c75284db8861dd95d2f9e4b892aeab2fe37eba78d
+$ docker pull xwiki@sha256:7aef21f5e703c8d07712f1e67d5e39dbace757b5b9301adf296d67dc02fc8957
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **830.6 MB (830574972 bytes)**  
+-	Total Size: **830.7 MB (830728567 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b298c74729aece85079a36cf038ae611cc3a85ede96a544a00b8a88a99af1490`
+-	Image ID: `sha256:59d1d783b2213cff4466c0fbd54ba750c9a65891552d1e49c01116e2f23e9c08`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -1602,87 +1602,87 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 26 Jan 2022 09:24:15 GMT
 ENV LANG=C.UTF-8
-# Wed, 26 Jan 2022 09:24:15 GMT
-ENV JAVA_VERSION=11.0.13
-# Wed, 26 Jan 2022 09:25:37 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_x64_linux_11.0.13_8.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_aarch64_linux_11.0.13_8.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 26 Jan 2022 09:25:38 GMT
+# Thu, 03 Feb 2022 20:34:14 GMT
+ENV JAVA_VERSION=11.0.14
+# Thu, 03 Feb 2022 20:35:39 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_x64_linux_11.0.14_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_aarch64_linux_11.0.14_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 03 Feb 2022 20:35:40 GMT
 CMD ["jshell"]
-# Thu, 27 Jan 2022 17:44:01 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:02 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 WORKDIR /usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_MAJOR=9
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_VERSION=9.0.58
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_SHA512=33c030a312a0a087deeb06fff921d13a23789e152d30620f33a368e7a2244c762fcf9acd55f3b90f08560704ba45bc2be820bccf2058b0cf5801a7b124f9056d
-# Thu, 27 Jan 2022 18:12:37 GMT
+# Fri, 04 Feb 2022 01:47:39 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		dirmngr 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work; 		catalina.sh version
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 EXPOSE 8080
-# Thu, 27 Jan 2022 18:12:40 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 CMD ["catalina.sh" "run"]
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Fri, 28 Jan 2022 00:39:09 GMT
+# Fri, 04 Feb 2022 06:20:42 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/*
-# Fri, 28 Jan 2022 00:39:10 GMT
+# Fri, 04 Feb 2022 06:23:05 GMT
 ENV XWIKI_VERSION=13.10.2
-# Fri, 28 Jan 2022 00:39:10 GMT
+# Fri, 04 Feb 2022 06:23:05 GMT
 ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/13.10.2
-# Fri, 28 Jan 2022 00:39:11 GMT
+# Fri, 04 Feb 2022 06:23:05 GMT
 ENV XWIKI_DOWNLOAD_SHA256=fc3b0299f5fa903d3fdee2e6af0a69173a8a411a4e027a271772e0666bb6d3aa
-# Fri, 28 Jan 2022 00:39:48 GMT
+# Fri, 04 Feb 2022 06:23:45 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Fri, 28 Jan 2022 00:39:49 GMT
+# Fri, 04 Feb 2022 06:23:46 GMT
 ENV MYSQL_JDBC_VERSION=8.0.22
-# Fri, 28 Jan 2022 00:39:50 GMT
+# Fri, 04 Feb 2022 06:23:46 GMT
 ENV MYSQL_JDBC_SHA256=5019defbd12316295e97a6e88f2a9b07f118345a4e982710bba232e499b22f4f
-# Fri, 28 Jan 2022 00:39:50 GMT
+# Fri, 04 Feb 2022 06:23:46 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.22
-# Fri, 28 Jan 2022 00:39:50 GMT
+# Fri, 04 Feb 2022 06:23:47 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-java-8.0.22.jar
-# Fri, 28 Jan 2022 00:39:50 GMT
+# Fri, 04 Feb 2022 06:23:47 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-java-8.0.22.jar
-# Fri, 28 Jan 2022 00:39:51 GMT
+# Fri, 04 Feb 2022 06:23:48 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c -
-# Fri, 28 Jan 2022 00:39:52 GMT
+# Fri, 04 Feb 2022 06:23:48 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Fri, 28 Jan 2022 00:39:52 GMT
+# Fri, 04 Feb 2022 06:23:48 GMT
 COPY file:1b8409986f3e4eb79a7a0b18472cb2692a61d504fb5ef34292bc997b79fd760d in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Fri, 28 Jan 2022 00:39:52 GMT
+# Fri, 04 Feb 2022 06:23:49 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Fri, 28 Jan 2022 00:39:53 GMT
+# Fri, 04 Feb 2022 06:23:49 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Fri, 28 Jan 2022 00:39:53 GMT
+# Fri, 04 Feb 2022 06:23:50 GMT
 VOLUME [/usr/local/xwiki]
-# Fri, 28 Jan 2022 00:39:53 GMT
+# Fri, 04 Feb 2022 06:23:50 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 28 Jan 2022 00:39:53 GMT
+# Fri, 04 Feb 2022 06:23:50 GMT
 CMD ["xwiki"]
 ```
 
@@ -1711,55 +1711,55 @@ CMD ["xwiki"]
 		Last Modified: Wed, 26 Jan 2022 09:50:57 GMT  
 		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4512bdd2598cabd6c3bd8ee70ad79fceb4082b9bc297ff1b46a4e769ed684062`  
-		Last Modified: Wed, 26 Jan 2022 09:51:16 GMT  
-		Size: 203.1 MB (203118688 bytes)  
+	-	`sha256:fda090e7df3523dc9db18e06c2619b52e4dd2772c2800105e421552c27e599ed`  
+		Last Modified: Thu, 03 Feb 2022 20:58:14 GMT  
+		Size: 203.3 MB (203272575 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80124a46e801eaa1b446b86644d47869682894497815f2f0b77d98e29452343e`  
-		Last Modified: Thu, 27 Jan 2022 19:02:36 GMT  
-		Size: 172.0 B  
+	-	`sha256:e5341f7d466587f60c7ab87e18455c8f3e8f8e64681248565726a71137481f72`  
+		Last Modified: Fri, 04 Feb 2022 02:16:39 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46ecb4b115268768a2248cf5c66cccfb7d7293bba9c2c746337715effd0a1d2a`  
-		Last Modified: Thu, 27 Jan 2022 19:24:17 GMT  
-		Size: 12.5 MB (12522843 bytes)  
+	-	`sha256:658f77ce17d67d7b64dcd870a07d0e58bbe6a1ec52f253b0f93276edc3f1e0e4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:49 GMT  
+		Size: 12.5 MB (12522598 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdf3a46eab5ffff6d0b6fce0a150080847d2b80a4e03afa70c91377c9bf23401`  
-		Last Modified: Thu, 27 Jan 2022 19:24:16 GMT  
-		Size: 130.0 B  
+	-	`sha256:5c32bc7e7c91ebeb93dfcf733e07f2193161f8691a1555e22c9abe163ee7c2d4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:47 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8068c3825818104bc3046fa3ee6b8295aeac3295e175c0e80bd2334886e53ea`  
-		Last Modified: Fri, 28 Jan 2022 00:44:29 GMT  
+	-	`sha256:e07f4a067a7f038cb77c035bc29748f1c173243b916eb9f3a5d4ed9d9ce3a8b9`  
+		Last Modified: Fri, 04 Feb 2022 06:25:39 GMT  
 		Size: 189.4 MB (189410696 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:396889a0f6c7b282fc8d77b0b050128c83fc3b789cfda9077d37bbe3b1075837`  
-		Last Modified: Fri, 28 Jan 2022 00:44:19 GMT  
-		Size: 292.3 MB (292323788 bytes)  
+	-	`sha256:da601c88fd3f0ad0637b15c6be500ca10a5ff04d374cbf4de97dee0214cb509c`  
+		Last Modified: Fri, 04 Feb 2022 06:27:24 GMT  
+		Size: 292.3 MB (292323742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4fe365e4da623218296e5353817ead969edc901534865d157d7abd8d698952af`  
-		Last Modified: Fri, 28 Jan 2022 00:44:00 GMT  
-		Size: 2.3 MB (2257823 bytes)  
+	-	`sha256:7c0d2774f6069962ecff7b71f9e87c0b777f8583c101e5b840c340eb527c0bb3`  
+		Last Modified: Fri, 04 Feb 2022 06:27:05 GMT  
+		Size: 2.3 MB (2257819 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d3b6c3e9a0f7a62b1be438aecac9577ffe2ce689774c66df8665aa5abc9cdae`  
-		Last Modified: Fri, 28 Jan 2022 00:44:00 GMT  
-		Size: 1.3 KB (1340 bytes)  
+	-	`sha256:c3e2a765d0aedd26d93c03068af86d301664476521beff2a4981266734d7a321`  
+		Last Modified: Fri, 04 Feb 2022 06:27:05 GMT  
+		Size: 1.3 KB (1344 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9186f3274fcb6303685907a1b62454e6dec93f14e1746c61a5642896c1f17320`  
-		Last Modified: Fri, 28 Jan 2022 00:44:00 GMT  
-		Size: 2.3 KB (2306 bytes)  
+	-	`sha256:05ff3ee34c3886920b58e8fe87ad3b9825d73df08b79e042c83841fc86efc742`  
+		Last Modified: Fri, 04 Feb 2022 06:27:05 GMT  
+		Size: 2.3 KB (2305 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f906af211ae8369e59c729bae16166918ba94919c1aba7c85a381c324327088`  
-		Last Modified: Fri, 28 Jan 2022 00:44:00 GMT  
-		Size: 5.3 KB (5332 bytes)  
+	-	`sha256:56c15f2d682052b629b4c684cab30b4d2a296b23b9b57b2a31a5fd0e6a12ce21`  
+		Last Modified: Fri, 04 Feb 2022 06:27:05 GMT  
+		Size: 5.3 KB (5331 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:831e56417aefbe60ed5799fe7bb7e47f51ab7b971fe81bf734317fed71f822a4`  
-		Last Modified: Fri, 28 Jan 2022 00:44:00 GMT  
-		Size: 2.5 KB (2503 bytes)  
+	-	`sha256:b309a178723e0dc4d831943ab093c646a536802b0fd5560039c9fdcc8d31b710`  
+		Last Modified: Fri, 04 Feb 2022 06:27:05 GMT  
+		Size: 2.5 KB (2502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `xwiki:13.10.2-mysql-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:09cde5b219f328cf3cc3175cc8036afb3aeafdac2955f5fa4b2372d9ad8b1bc8
+$ docker pull xwiki@sha256:8008e132febfdb4b72082ff200b8e0ec6e2571e6706eeabeebd17841acd96de4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1769,14 +1769,14 @@ $ docker pull xwiki@sha256:09cde5b219f328cf3cc3175cc8036afb3aeafdac2955f5fa4b237
 ### `xwiki:13.10.2-mysql-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:0a245333fe825fc874f06a7c75284db8861dd95d2f9e4b892aeab2fe37eba78d
+$ docker pull xwiki@sha256:7aef21f5e703c8d07712f1e67d5e39dbace757b5b9301adf296d67dc02fc8957
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **830.6 MB (830574972 bytes)**  
+-	Total Size: **830.7 MB (830728567 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b298c74729aece85079a36cf038ae611cc3a85ede96a544a00b8a88a99af1490`
+-	Image ID: `sha256:59d1d783b2213cff4466c0fbd54ba750c9a65891552d1e49c01116e2f23e9c08`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -1801,87 +1801,87 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 26 Jan 2022 09:24:15 GMT
 ENV LANG=C.UTF-8
-# Wed, 26 Jan 2022 09:24:15 GMT
-ENV JAVA_VERSION=11.0.13
-# Wed, 26 Jan 2022 09:25:37 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_x64_linux_11.0.13_8.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_aarch64_linux_11.0.13_8.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 26 Jan 2022 09:25:38 GMT
+# Thu, 03 Feb 2022 20:34:14 GMT
+ENV JAVA_VERSION=11.0.14
+# Thu, 03 Feb 2022 20:35:39 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_x64_linux_11.0.14_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_aarch64_linux_11.0.14_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 03 Feb 2022 20:35:40 GMT
 CMD ["jshell"]
-# Thu, 27 Jan 2022 17:44:01 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:02 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 WORKDIR /usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_MAJOR=9
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_VERSION=9.0.58
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_SHA512=33c030a312a0a087deeb06fff921d13a23789e152d30620f33a368e7a2244c762fcf9acd55f3b90f08560704ba45bc2be820bccf2058b0cf5801a7b124f9056d
-# Thu, 27 Jan 2022 18:12:37 GMT
+# Fri, 04 Feb 2022 01:47:39 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		dirmngr 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work; 		catalina.sh version
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 EXPOSE 8080
-# Thu, 27 Jan 2022 18:12:40 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 CMD ["catalina.sh" "run"]
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Fri, 28 Jan 2022 00:39:09 GMT
+# Fri, 04 Feb 2022 06:20:42 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/*
-# Fri, 28 Jan 2022 00:39:10 GMT
+# Fri, 04 Feb 2022 06:23:05 GMT
 ENV XWIKI_VERSION=13.10.2
-# Fri, 28 Jan 2022 00:39:10 GMT
+# Fri, 04 Feb 2022 06:23:05 GMT
 ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/13.10.2
-# Fri, 28 Jan 2022 00:39:11 GMT
+# Fri, 04 Feb 2022 06:23:05 GMT
 ENV XWIKI_DOWNLOAD_SHA256=fc3b0299f5fa903d3fdee2e6af0a69173a8a411a4e027a271772e0666bb6d3aa
-# Fri, 28 Jan 2022 00:39:48 GMT
+# Fri, 04 Feb 2022 06:23:45 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Fri, 28 Jan 2022 00:39:49 GMT
+# Fri, 04 Feb 2022 06:23:46 GMT
 ENV MYSQL_JDBC_VERSION=8.0.22
-# Fri, 28 Jan 2022 00:39:50 GMT
+# Fri, 04 Feb 2022 06:23:46 GMT
 ENV MYSQL_JDBC_SHA256=5019defbd12316295e97a6e88f2a9b07f118345a4e982710bba232e499b22f4f
-# Fri, 28 Jan 2022 00:39:50 GMT
+# Fri, 04 Feb 2022 06:23:46 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.22
-# Fri, 28 Jan 2022 00:39:50 GMT
+# Fri, 04 Feb 2022 06:23:47 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-java-8.0.22.jar
-# Fri, 28 Jan 2022 00:39:50 GMT
+# Fri, 04 Feb 2022 06:23:47 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-java-8.0.22.jar
-# Fri, 28 Jan 2022 00:39:51 GMT
+# Fri, 04 Feb 2022 06:23:48 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c -
-# Fri, 28 Jan 2022 00:39:52 GMT
+# Fri, 04 Feb 2022 06:23:48 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Fri, 28 Jan 2022 00:39:52 GMT
+# Fri, 04 Feb 2022 06:23:48 GMT
 COPY file:1b8409986f3e4eb79a7a0b18472cb2692a61d504fb5ef34292bc997b79fd760d in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Fri, 28 Jan 2022 00:39:52 GMT
+# Fri, 04 Feb 2022 06:23:49 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Fri, 28 Jan 2022 00:39:53 GMT
+# Fri, 04 Feb 2022 06:23:49 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Fri, 28 Jan 2022 00:39:53 GMT
+# Fri, 04 Feb 2022 06:23:50 GMT
 VOLUME [/usr/local/xwiki]
-# Fri, 28 Jan 2022 00:39:53 GMT
+# Fri, 04 Feb 2022 06:23:50 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 28 Jan 2022 00:39:53 GMT
+# Fri, 04 Feb 2022 06:23:50 GMT
 CMD ["xwiki"]
 ```
 
@@ -1910,55 +1910,55 @@ CMD ["xwiki"]
 		Last Modified: Wed, 26 Jan 2022 09:50:57 GMT  
 		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4512bdd2598cabd6c3bd8ee70ad79fceb4082b9bc297ff1b46a4e769ed684062`  
-		Last Modified: Wed, 26 Jan 2022 09:51:16 GMT  
-		Size: 203.1 MB (203118688 bytes)  
+	-	`sha256:fda090e7df3523dc9db18e06c2619b52e4dd2772c2800105e421552c27e599ed`  
+		Last Modified: Thu, 03 Feb 2022 20:58:14 GMT  
+		Size: 203.3 MB (203272575 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80124a46e801eaa1b446b86644d47869682894497815f2f0b77d98e29452343e`  
-		Last Modified: Thu, 27 Jan 2022 19:02:36 GMT  
-		Size: 172.0 B  
+	-	`sha256:e5341f7d466587f60c7ab87e18455c8f3e8f8e64681248565726a71137481f72`  
+		Last Modified: Fri, 04 Feb 2022 02:16:39 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46ecb4b115268768a2248cf5c66cccfb7d7293bba9c2c746337715effd0a1d2a`  
-		Last Modified: Thu, 27 Jan 2022 19:24:17 GMT  
-		Size: 12.5 MB (12522843 bytes)  
+	-	`sha256:658f77ce17d67d7b64dcd870a07d0e58bbe6a1ec52f253b0f93276edc3f1e0e4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:49 GMT  
+		Size: 12.5 MB (12522598 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdf3a46eab5ffff6d0b6fce0a150080847d2b80a4e03afa70c91377c9bf23401`  
-		Last Modified: Thu, 27 Jan 2022 19:24:16 GMT  
-		Size: 130.0 B  
+	-	`sha256:5c32bc7e7c91ebeb93dfcf733e07f2193161f8691a1555e22c9abe163ee7c2d4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:47 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8068c3825818104bc3046fa3ee6b8295aeac3295e175c0e80bd2334886e53ea`  
-		Last Modified: Fri, 28 Jan 2022 00:44:29 GMT  
+	-	`sha256:e07f4a067a7f038cb77c035bc29748f1c173243b916eb9f3a5d4ed9d9ce3a8b9`  
+		Last Modified: Fri, 04 Feb 2022 06:25:39 GMT  
 		Size: 189.4 MB (189410696 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:396889a0f6c7b282fc8d77b0b050128c83fc3b789cfda9077d37bbe3b1075837`  
-		Last Modified: Fri, 28 Jan 2022 00:44:19 GMT  
-		Size: 292.3 MB (292323788 bytes)  
+	-	`sha256:da601c88fd3f0ad0637b15c6be500ca10a5ff04d374cbf4de97dee0214cb509c`  
+		Last Modified: Fri, 04 Feb 2022 06:27:24 GMT  
+		Size: 292.3 MB (292323742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4fe365e4da623218296e5353817ead969edc901534865d157d7abd8d698952af`  
-		Last Modified: Fri, 28 Jan 2022 00:44:00 GMT  
-		Size: 2.3 MB (2257823 bytes)  
+	-	`sha256:7c0d2774f6069962ecff7b71f9e87c0b777f8583c101e5b840c340eb527c0bb3`  
+		Last Modified: Fri, 04 Feb 2022 06:27:05 GMT  
+		Size: 2.3 MB (2257819 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d3b6c3e9a0f7a62b1be438aecac9577ffe2ce689774c66df8665aa5abc9cdae`  
-		Last Modified: Fri, 28 Jan 2022 00:44:00 GMT  
-		Size: 1.3 KB (1340 bytes)  
+	-	`sha256:c3e2a765d0aedd26d93c03068af86d301664476521beff2a4981266734d7a321`  
+		Last Modified: Fri, 04 Feb 2022 06:27:05 GMT  
+		Size: 1.3 KB (1344 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9186f3274fcb6303685907a1b62454e6dec93f14e1746c61a5642896c1f17320`  
-		Last Modified: Fri, 28 Jan 2022 00:44:00 GMT  
-		Size: 2.3 KB (2306 bytes)  
+	-	`sha256:05ff3ee34c3886920b58e8fe87ad3b9825d73df08b79e042c83841fc86efc742`  
+		Last Modified: Fri, 04 Feb 2022 06:27:05 GMT  
+		Size: 2.3 KB (2305 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f906af211ae8369e59c729bae16166918ba94919c1aba7c85a381c324327088`  
-		Last Modified: Fri, 28 Jan 2022 00:44:00 GMT  
-		Size: 5.3 KB (5332 bytes)  
+	-	`sha256:56c15f2d682052b629b4c684cab30b4d2a296b23b9b57b2a31a5fd0e6a12ce21`  
+		Last Modified: Fri, 04 Feb 2022 06:27:05 GMT  
+		Size: 5.3 KB (5331 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:831e56417aefbe60ed5799fe7bb7e47f51ab7b971fe81bf734317fed71f822a4`  
-		Last Modified: Fri, 28 Jan 2022 00:44:00 GMT  
-		Size: 2.5 KB (2503 bytes)  
+	-	`sha256:b309a178723e0dc4d831943ab093c646a536802b0fd5560039c9fdcc8d31b710`  
+		Last Modified: Fri, 04 Feb 2022 06:27:05 GMT  
+		Size: 2.5 KB (2502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `xwiki:13.10.2-postgres-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:75e4cbe812d17014e0e2f5f3bb06b9043ac91d335c2f2f1a755470215a588966
+$ docker pull xwiki@sha256:2e6a54cc855abd068672be3157736cbdffa3e7069b4650e2bfa28801c5b53fc1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1969,14 +1969,14 @@ $ docker pull xwiki@sha256:75e4cbe812d17014e0e2f5f3bb06b9043ac91d335c2f2f1a75547
 ### `xwiki:13.10.2-postgres-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:3d21d1b6a4b6b88f133adc7cfdc055fa6f92d486ee123cb09b627d7de33f9555
+$ docker pull xwiki@sha256:e753a5533755a2cea10b563c4063647834d6692bc99cd88bad8e8a215f7dd957
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **830.0 MB (830038637 bytes)**  
+-	Total Size: **830.2 MB (830192305 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:753a58ea527df2f7f1b68ae385249bf80892268c291edc72a89982a51b27fe3a`
+-	Image ID: `sha256:107637fe0f3cc8b2889d6c53fd224faf68f8541f56b42e0d281f1d6578954eca`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -2001,77 +2001,77 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 26 Jan 2022 09:24:15 GMT
 ENV LANG=C.UTF-8
-# Wed, 26 Jan 2022 09:24:15 GMT
-ENV JAVA_VERSION=11.0.13
-# Wed, 26 Jan 2022 09:25:37 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_x64_linux_11.0.13_8.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_aarch64_linux_11.0.13_8.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 26 Jan 2022 09:25:38 GMT
+# Thu, 03 Feb 2022 20:34:14 GMT
+ENV JAVA_VERSION=11.0.14
+# Thu, 03 Feb 2022 20:35:39 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_x64_linux_11.0.14_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_aarch64_linux_11.0.14_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 03 Feb 2022 20:35:40 GMT
 CMD ["jshell"]
-# Thu, 27 Jan 2022 17:44:01 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:02 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 WORKDIR /usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_MAJOR=9
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_VERSION=9.0.58
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_SHA512=33c030a312a0a087deeb06fff921d13a23789e152d30620f33a368e7a2244c762fcf9acd55f3b90f08560704ba45bc2be820bccf2058b0cf5801a7b124f9056d
-# Thu, 27 Jan 2022 18:12:37 GMT
+# Fri, 04 Feb 2022 01:47:39 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		dirmngr 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work; 		catalina.sh version
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 EXPOSE 8080
-# Thu, 27 Jan 2022 18:12:40 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 CMD ["catalina.sh" "run"]
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Fri, 28 Jan 2022 00:40:35 GMT
+# Fri, 04 Feb 2022 06:22:14 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps     libpostgresql-jdbc-java &&   rm -rf /var/lib/apt/lists/*
-# Fri, 28 Jan 2022 00:40:36 GMT
+# Fri, 04 Feb 2022 06:23:54 GMT
 ENV XWIKI_VERSION=13.10.2
-# Fri, 28 Jan 2022 00:40:37 GMT
+# Fri, 04 Feb 2022 06:23:54 GMT
 ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/13.10.2
-# Fri, 28 Jan 2022 00:40:37 GMT
+# Fri, 04 Feb 2022 06:23:54 GMT
 ENV XWIKI_DOWNLOAD_SHA256=fc3b0299f5fa903d3fdee2e6af0a69173a8a411a4e027a271772e0666bb6d3aa
-# Fri, 28 Jan 2022 00:41:25 GMT
+# Fri, 04 Feb 2022 06:24:32 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Fri, 28 Jan 2022 00:41:27 GMT
+# Fri, 04 Feb 2022 06:24:34 GMT
 RUN cp /usr/share/java/postgresql-jdbc4.jar /usr/local/tomcat/webapps/ROOT/WEB-INF/lib/
-# Fri, 28 Jan 2022 00:41:27 GMT
+# Fri, 04 Feb 2022 06:24:34 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Fri, 28 Jan 2022 00:41:27 GMT
+# Fri, 04 Feb 2022 06:24:34 GMT
 COPY file:4a923f484bb29a26630c19e1d617d3bf6aa6ae7c6c4a5561e97b037bcde0847c in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Fri, 28 Jan 2022 00:41:28 GMT
+# Fri, 04 Feb 2022 06:24:35 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Fri, 28 Jan 2022 00:41:28 GMT
+# Fri, 04 Feb 2022 06:24:35 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Fri, 28 Jan 2022 00:41:28 GMT
+# Fri, 04 Feb 2022 06:24:36 GMT
 VOLUME [/usr/local/xwiki]
-# Fri, 28 Jan 2022 00:41:28 GMT
+# Fri, 04 Feb 2022 06:24:36 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 28 Jan 2022 00:41:29 GMT
+# Fri, 04 Feb 2022 06:24:36 GMT
 CMD ["xwiki"]
 ```
 
@@ -2100,62 +2100,62 @@ CMD ["xwiki"]
 		Last Modified: Wed, 26 Jan 2022 09:50:57 GMT  
 		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4512bdd2598cabd6c3bd8ee70ad79fceb4082b9bc297ff1b46a4e769ed684062`  
-		Last Modified: Wed, 26 Jan 2022 09:51:16 GMT  
-		Size: 203.1 MB (203118688 bytes)  
+	-	`sha256:fda090e7df3523dc9db18e06c2619b52e4dd2772c2800105e421552c27e599ed`  
+		Last Modified: Thu, 03 Feb 2022 20:58:14 GMT  
+		Size: 203.3 MB (203272575 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80124a46e801eaa1b446b86644d47869682894497815f2f0b77d98e29452343e`  
-		Last Modified: Thu, 27 Jan 2022 19:02:36 GMT  
-		Size: 172.0 B  
+	-	`sha256:e5341f7d466587f60c7ab87e18455c8f3e8f8e64681248565726a71137481f72`  
+		Last Modified: Fri, 04 Feb 2022 02:16:39 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46ecb4b115268768a2248cf5c66cccfb7d7293bba9c2c746337715effd0a1d2a`  
-		Last Modified: Thu, 27 Jan 2022 19:24:17 GMT  
-		Size: 12.5 MB (12522843 bytes)  
+	-	`sha256:658f77ce17d67d7b64dcd870a07d0e58bbe6a1ec52f253b0f93276edc3f1e0e4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:49 GMT  
+		Size: 12.5 MB (12522598 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdf3a46eab5ffff6d0b6fce0a150080847d2b80a4e03afa70c91377c9bf23401`  
-		Last Modified: Thu, 27 Jan 2022 19:24:16 GMT  
-		Size: 130.0 B  
+	-	`sha256:5c32bc7e7c91ebeb93dfcf733e07f2193161f8691a1555e22c9abe163ee7c2d4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:47 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af539591d5df2e4985dee90ab6d28ee232867000819a22ea0c5a5a14bb89fd96`  
-		Last Modified: Fri, 28 Jan 2022 00:45:49 GMT  
-		Size: 190.3 MB (190285846 bytes)  
+	-	`sha256:fa796b6a421404c5ed1980b8e1277de92aadd8b243229d78ca48034606f4e44b`  
+		Last Modified: Fri, 04 Feb 2022 06:26:44 GMT  
+		Size: 190.3 MB (190285862 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4ef698ed33162760c05e98bccea4fc9a84e07756eeba43a519070653a92d118`  
-		Last Modified: Fri, 28 Jan 2022 00:45:41 GMT  
-		Size: 292.3 MB (292323765 bytes)  
+	-	`sha256:33f68599b777b9575178075dedc4263a926e80f80e3fc130ca666335fef8b171`  
+		Last Modified: Fri, 04 Feb 2022 06:28:15 GMT  
+		Size: 292.3 MB (292323766 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:921649a27aef2f135f3045d980896dc6f85f6dae1e313fadb8370b9e9dfc0b27`  
-		Last Modified: Fri, 28 Jan 2022 00:45:21 GMT  
-		Size: 846.2 KB (846207 bytes)  
+	-	`sha256:2b892b71808c773ef896c4cf302d287679438062f8de2a6a884ee1ac2b677420`  
+		Last Modified: Fri, 04 Feb 2022 06:27:59 GMT  
+		Size: 846.2 KB (846213 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec628c1b53017b6a847a9c50ff870300fb2728004f6f4f180af47b4f4e81d003`  
-		Last Modified: Fri, 28 Jan 2022 00:45:22 GMT  
-		Size: 1.3 KB (1343 bytes)  
+	-	`sha256:2d3242792b746d64e6358fef1fb3f5749d063e9438b0a7d07c18604262304fbe`  
+		Last Modified: Fri, 04 Feb 2022 06:27:59 GMT  
+		Size: 1.3 KB (1344 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f972fd488fcfcb41500bd9cd29de336f085345e76188f7942e9f3f90d6793653`  
-		Last Modified: Fri, 28 Jan 2022 00:45:21 GMT  
-		Size: 2.5 KB (2453 bytes)  
+	-	`sha256:c9f1aba1f97da7b480bd57637ac106b02622e52b411b7348e2bbfaba8b8e957b`  
+		Last Modified: Fri, 04 Feb 2022 06:27:58 GMT  
+		Size: 2.5 KB (2455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d188e37cad47b59cb2407a567bef9f348b0643e7ecb691de2fc60fb8ed0ae2aa`  
-		Last Modified: Fri, 28 Jan 2022 00:45:21 GMT  
+	-	`sha256:3cfbbb2c4a222e2e634a7740f688da9f8d84c227561815168512d97cd6679335`  
+		Last Modified: Fri, 04 Feb 2022 06:27:58 GMT  
 		Size: 5.3 KB (5335 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:032774c1e57b283a9e52b5a565e1d3368b001353cffcbcbc6e64e2559a75d475`  
-		Last Modified: Fri, 28 Jan 2022 00:45:21 GMT  
-		Size: 2.5 KB (2504 bytes)  
+	-	`sha256:8d6dc5f0191b17b221834f808af26e9159eb607bc2475766b001a9966dc7cd5a`  
+		Last Modified: Fri, 04 Feb 2022 06:27:58 GMT  
+		Size: 2.5 KB (2502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `xwiki:13.10.2-postgres-tomcat` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:3af45f30e94c0ab3d7c3bb269af97a0eb03a5c1eb881d3ae7fc2506bdaf2d882
+$ docker pull xwiki@sha256:3bc8d8d2ea80d237639576b7d5bed27e982183e6925aeabcce9a84cc56f7284f
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **820.9 MB (820886094 bytes)**  
+-	Total Size: **821.1 MB (821058881 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:28605695a4ddffc3ee8d009a708c3cb89f9bbb9e7dff2121bab3eb236414679a`
+-	Image ID: `sha256:9b4467ae4b95b278a1ad27a6ecd2031d991acacf260b8d2ea9882414e3951a97`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -2180,77 +2180,77 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 26 Jan 2022 05:56:10 GMT
 ENV LANG=C.UTF-8
-# Wed, 26 Jan 2022 05:56:11 GMT
-ENV JAVA_VERSION=11.0.13
-# Wed, 26 Jan 2022 05:57:08 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_x64_linux_11.0.13_8.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_aarch64_linux_11.0.13_8.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 26 Jan 2022 05:57:09 GMT
+# Thu, 03 Feb 2022 20:49:24 GMT
+ENV JAVA_VERSION=11.0.14
+# Thu, 03 Feb 2022 20:50:20 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_x64_linux_11.0.14_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_aarch64_linux_11.0.14_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 03 Feb 2022 20:50:21 GMT
 CMD ["jshell"]
-# Wed, 26 Jan 2022 23:45:39 GMT
+# Fri, 04 Feb 2022 00:39:07 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Wed, 26 Jan 2022 23:45:40 GMT
+# Fri, 04 Feb 2022 00:39:08 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 26 Jan 2022 23:45:41 GMT
+# Fri, 04 Feb 2022 00:39:09 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Wed, 26 Jan 2022 23:45:42 GMT
+# Fri, 04 Feb 2022 00:39:10 GMT
 WORKDIR /usr/local/tomcat
-# Wed, 26 Jan 2022 23:45:43 GMT
+# Fri, 04 Feb 2022 00:39:11 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Wed, 26 Jan 2022 23:45:44 GMT
+# Fri, 04 Feb 2022 00:39:12 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 00:07:11 GMT
+# Fri, 04 Feb 2022 01:02:16 GMT
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
-# Thu, 27 Jan 2022 00:07:11 GMT
+# Fri, 04 Feb 2022 01:02:16 GMT
 ENV TOMCAT_MAJOR=9
-# Thu, 27 Jan 2022 00:07:12 GMT
+# Fri, 04 Feb 2022 01:02:17 GMT
 ENV TOMCAT_VERSION=9.0.58
-# Thu, 27 Jan 2022 00:07:13 GMT
+# Fri, 04 Feb 2022 01:02:18 GMT
 ENV TOMCAT_SHA512=33c030a312a0a087deeb06fff921d13a23789e152d30620f33a368e7a2244c762fcf9acd55f3b90f08560704ba45bc2be820bccf2058b0cf5801a7b124f9056d
-# Thu, 27 Jan 2022 00:07:33 GMT
+# Fri, 04 Feb 2022 01:03:23 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		dirmngr 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work; 		catalina.sh version
-# Thu, 27 Jan 2022 00:07:35 GMT
+# Fri, 04 Feb 2022 01:03:25 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 27 Jan 2022 00:07:36 GMT
+# Fri, 04 Feb 2022 01:03:25 GMT
 EXPOSE 8080
-# Thu, 27 Jan 2022 00:07:37 GMT
+# Fri, 04 Feb 2022 01:03:26 GMT
 CMD ["catalina.sh" "run"]
-# Thu, 27 Jan 2022 05:50:31 GMT
+# Fri, 04 Feb 2022 04:15:17 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Thu, 27 Jan 2022 05:50:31 GMT
+# Fri, 04 Feb 2022 04:15:17 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Thu, 27 Jan 2022 05:50:32 GMT
+# Fri, 04 Feb 2022 04:15:18 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Thu, 27 Jan 2022 05:50:33 GMT
+# Fri, 04 Feb 2022 04:15:19 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Thu, 27 Jan 2022 05:50:34 GMT
+# Fri, 04 Feb 2022 04:15:20 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Thu, 27 Jan 2022 05:50:35 GMT
+# Fri, 04 Feb 2022 04:15:21 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Thu, 27 Jan 2022 05:51:17 GMT
+# Fri, 04 Feb 2022 04:15:52 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps     libpostgresql-jdbc-java &&   rm -rf /var/lib/apt/lists/*
-# Thu, 27 Jan 2022 05:51:19 GMT
+# Fri, 04 Feb 2022 04:17:44 GMT
 ENV XWIKI_VERSION=13.10.2
-# Thu, 27 Jan 2022 05:51:19 GMT
+# Fri, 04 Feb 2022 04:17:45 GMT
 ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/13.10.2
-# Thu, 27 Jan 2022 05:51:20 GMT
+# Fri, 04 Feb 2022 04:17:45 GMT
 ENV XWIKI_DOWNLOAD_SHA256=fc3b0299f5fa903d3fdee2e6af0a69173a8a411a4e027a271772e0666bb6d3aa
-# Thu, 27 Jan 2022 05:52:57 GMT
+# Fri, 04 Feb 2022 04:19:06 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Thu, 27 Jan 2022 05:52:58 GMT
+# Fri, 04 Feb 2022 04:19:08 GMT
 RUN cp /usr/share/java/postgresql-jdbc4.jar /usr/local/tomcat/webapps/ROOT/WEB-INF/lib/
-# Thu, 27 Jan 2022 05:52:59 GMT
+# Fri, 04 Feb 2022 04:19:09 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Thu, 27 Jan 2022 05:53:00 GMT
+# Fri, 04 Feb 2022 04:19:10 GMT
 COPY file:4a923f484bb29a26630c19e1d617d3bf6aa6ae7c6c4a5561e97b037bcde0847c in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Thu, 27 Jan 2022 05:53:01 GMT
+# Fri, 04 Feb 2022 04:19:11 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Thu, 27 Jan 2022 05:53:02 GMT
+# Fri, 04 Feb 2022 04:19:12 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Thu, 27 Jan 2022 05:53:03 GMT
+# Fri, 04 Feb 2022 04:19:13 GMT
 VOLUME [/usr/local/xwiki]
-# Thu, 27 Jan 2022 05:53:04 GMT
+# Fri, 04 Feb 2022 04:19:14 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 27 Jan 2022 05:53:05 GMT
+# Fri, 04 Feb 2022 04:19:15 GMT
 CMD ["xwiki"]
 ```
 
@@ -2279,51 +2279,51 @@ CMD ["xwiki"]
 		Last Modified: Wed, 26 Jan 2022 06:23:04 GMT  
 		Size: 212.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d46cad4095d077981b03d8fc3768a011689e84da8c906b28c8d762521c7d3d1a`  
-		Last Modified: Wed, 26 Jan 2022 06:23:23 GMT  
-		Size: 200.7 MB (200714065 bytes)  
+	-	`sha256:094aec66c6a7d824fad2b23976909d7a80fb1306908ad7fdfa38bded6f5d2f8b`  
+		Last Modified: Thu, 03 Feb 2022 21:12:31 GMT  
+		Size: 200.9 MB (200886679 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:51ffd677e016f0ca2d523555eb31a4bb907122ff28e694bf6f9ffa00d64eb35b`  
-		Last Modified: Thu, 27 Jan 2022 00:48:42 GMT  
+	-	`sha256:4d190c32e6780b7f813e534bb35b54d7c274759716626dd777c454fc06a884a8`  
+		Last Modified: Fri, 04 Feb 2022 01:44:18 GMT  
 		Size: 139.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35788645ec42db1cbdbb0e08d34d9c856f580940026809a268612d29c57b121c`  
-		Last Modified: Thu, 27 Jan 2022 01:04:30 GMT  
-		Size: 12.3 MB (12290038 bytes)  
+	-	`sha256:dfec2cf8d777891eaa322b3fe0e9666127e538e6c0ce47503f5a1ddb102e697b`  
+		Last Modified: Fri, 04 Feb 2022 01:58:19 GMT  
+		Size: 12.3 MB (12289911 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a00e62b554c09b0a5e65167e12d701de6aed0d2a2c9f37df0f4d2d8416380e9`  
-		Last Modified: Thu, 27 Jan 2022 05:55:50 GMT  
-		Size: 185.2 MB (185204053 bytes)  
+	-	`sha256:6b2a11450733610955131b222d21338c16cd2e791d4ab640678898c6885cf082`  
+		Last Modified: Fri, 04 Feb 2022 04:20:14 GMT  
+		Size: 185.2 MB (185204270 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bfc85d349aa89b1ee2ce1d96e1fecc39f073eef0bb8790473938c8af5b572c25`  
-		Last Modified: Thu, 27 Jan 2022 05:55:51 GMT  
-		Size: 292.3 MB (292323783 bytes)  
+	-	`sha256:2df1cb968c27b1df8f9c66ebaaa739043e1983ffa7bd3861496ce2c07aac83ce`  
+		Last Modified: Fri, 04 Feb 2022 04:21:00 GMT  
+		Size: 292.3 MB (292323866 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e39c58d99fe859ebc1bf5c4cba93e5ba5aee49f39bb1edaefe97fd01466ef66`  
-		Last Modified: Thu, 27 Jan 2022 05:55:25 GMT  
-		Size: 846.2 KB (846205 bytes)  
+	-	`sha256:fad23f263affc72dad897c28c013e07dc305d7d0509ffe3f16a2b4bf862a40c3`  
+		Last Modified: Fri, 04 Feb 2022 04:20:37 GMT  
+		Size: 846.2 KB (846210 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3e10c1bce3e4537e8732ba6cab65b2ba9d4b09d65590716c3390b510accd1e8`  
-		Last Modified: Thu, 27 Jan 2022 05:55:24 GMT  
-		Size: 1.3 KB (1346 bytes)  
+	-	`sha256:70762cec07baab23606315b906e66180b5e97c0875aa6977c6a1df8facd33576`  
+		Last Modified: Fri, 04 Feb 2022 04:20:37 GMT  
+		Size: 1.3 KB (1345 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f68f0d4c03727d8ed2217e0bf005445c510a29ef80d85320a6642d88bf9d4f88`  
-		Last Modified: Thu, 27 Jan 2022 05:55:24 GMT  
-		Size: 2.5 KB (2455 bytes)  
+	-	`sha256:0b97bab58e2cbf28896da73d1be871b4ee6bbc887d09db1cbcd63304da501205`  
+		Last Modified: Fri, 04 Feb 2022 04:20:37 GMT  
+		Size: 2.5 KB (2454 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9198e0489f644a8cb8761c6d6723eec447bf5f5c39a229cdb64dcbab34dc4fb2`  
-		Last Modified: Thu, 27 Jan 2022 05:55:24 GMT  
+	-	`sha256:f10b015d55f55508a9769d96d9bd09a4859ae38f9753ae3a97dee6cee6a7135c`  
+		Last Modified: Fri, 04 Feb 2022 04:20:37 GMT  
 		Size: 5.3 KB (5332 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f0ac619e27609108d429ebf53a6a62d49257addc31cbaf4188f07cc8352c32e4`  
-		Last Modified: Thu, 27 Jan 2022 05:55:24 GMT  
-		Size: 2.5 KB (2505 bytes)  
+	-	`sha256:6e95c59ffc660cebea1adb1e7d2d4317aa94fb87fd0b35dac6ee2f344d052438`  
+		Last Modified: Fri, 04 Feb 2022 04:20:37 GMT  
+		Size: 2.5 KB (2502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `xwiki:14`
 
 ```console
-$ docker pull xwiki@sha256:4b39210ec80f53df33835759ca3f983a7d0a57373a644ce9502fb3671693245a
+$ docker pull xwiki@sha256:25250e940f2e940a5d57eb24673e056f16330773401b85c57046ded833910c0d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2333,14 +2333,14 @@ $ docker pull xwiki@sha256:4b39210ec80f53df33835759ca3f983a7d0a57373a644ce9502fb
 ### `xwiki:14` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:de0bfb05f3369e10d3bddafba4715f455cd94ffb937c91ba953218f43c10edc4
+$ docker pull xwiki@sha256:1063cfc53c5126fc8b3505174a98460bbeacff4d51897f5232c1a67a453951f3
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **832.9 MB (832882997 bytes)**  
+-	Total Size: **833.0 MB (833036603 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f9c52a76c8dd336a9d7b35176f51c058e3a5f270fca1b622f942e40b94fb1ccb`
+-	Image ID: `sha256:12c6aae3734f6755cc68cd8261cd5006b8cfcf89dd0373b4c8e2774415c87a5b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -2365,87 +2365,87 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 26 Jan 2022 09:24:15 GMT
 ENV LANG=C.UTF-8
-# Wed, 26 Jan 2022 09:24:15 GMT
-ENV JAVA_VERSION=11.0.13
-# Wed, 26 Jan 2022 09:25:37 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_x64_linux_11.0.13_8.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_aarch64_linux_11.0.13_8.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 26 Jan 2022 09:25:38 GMT
+# Thu, 03 Feb 2022 20:34:14 GMT
+ENV JAVA_VERSION=11.0.14
+# Thu, 03 Feb 2022 20:35:39 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_x64_linux_11.0.14_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_aarch64_linux_11.0.14_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 03 Feb 2022 20:35:40 GMT
 CMD ["jshell"]
-# Thu, 27 Jan 2022 17:44:01 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:02 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 WORKDIR /usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_MAJOR=9
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_VERSION=9.0.58
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_SHA512=33c030a312a0a087deeb06fff921d13a23789e152d30620f33a368e7a2244c762fcf9acd55f3b90f08560704ba45bc2be820bccf2058b0cf5801a7b124f9056d
-# Thu, 27 Jan 2022 18:12:37 GMT
+# Fri, 04 Feb 2022 01:47:39 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		dirmngr 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work; 		catalina.sh version
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 EXPOSE 8080
-# Thu, 27 Jan 2022 18:12:40 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 CMD ["catalina.sh" "run"]
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Fri, 28 Jan 2022 00:39:09 GMT
+# Fri, 04 Feb 2022 06:20:42 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 20:23:16 GMT
+# Fri, 04 Feb 2022 06:20:44 GMT
 ENV XWIKI_VERSION=14.0
-# Wed, 02 Feb 2022 20:23:16 GMT
+# Fri, 04 Feb 2022 06:20:44 GMT
 ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/14.0
-# Wed, 02 Feb 2022 20:23:17 GMT
+# Fri, 04 Feb 2022 06:20:44 GMT
 ENV XWIKI_DOWNLOAD_SHA256=9acdc5f54267fd0270b227dcea0ed5351125757a390ca8530f71b0943f4404c5
-# Wed, 02 Feb 2022 20:23:55 GMT
+# Fri, 04 Feb 2022 06:21:22 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Wed, 02 Feb 2022 20:23:56 GMT
+# Fri, 04 Feb 2022 06:21:23 GMT
 ENV MYSQL_JDBC_VERSION=8.0.22
-# Wed, 02 Feb 2022 20:23:56 GMT
+# Fri, 04 Feb 2022 06:21:23 GMT
 ENV MYSQL_JDBC_SHA256=5019defbd12316295e97a6e88f2a9b07f118345a4e982710bba232e499b22f4f
-# Wed, 02 Feb 2022 20:23:56 GMT
+# Fri, 04 Feb 2022 06:21:23 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.22
-# Wed, 02 Feb 2022 20:23:56 GMT
+# Fri, 04 Feb 2022 06:21:23 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-java-8.0.22.jar
-# Wed, 02 Feb 2022 20:23:57 GMT
+# Fri, 04 Feb 2022 06:21:24 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-java-8.0.22.jar
-# Wed, 02 Feb 2022 20:23:58 GMT
+# Fri, 04 Feb 2022 06:21:25 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c -
-# Wed, 02 Feb 2022 20:23:58 GMT
+# Fri, 04 Feb 2022 06:21:25 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Wed, 02 Feb 2022 20:23:58 GMT
+# Fri, 04 Feb 2022 06:21:25 GMT
 COPY file:1b8409986f3e4eb79a7a0b18472cb2692a61d504fb5ef34292bc997b79fd760d in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Wed, 02 Feb 2022 20:23:59 GMT
+# Fri, 04 Feb 2022 06:21:26 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Wed, 02 Feb 2022 20:23:59 GMT
+# Fri, 04 Feb 2022 06:21:26 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Wed, 02 Feb 2022 20:23:59 GMT
+# Fri, 04 Feb 2022 06:21:26 GMT
 VOLUME [/usr/local/xwiki]
-# Wed, 02 Feb 2022 20:23:59 GMT
+# Fri, 04 Feb 2022 06:21:26 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 02 Feb 2022 20:24:00 GMT
+# Fri, 04 Feb 2022 06:21:27 GMT
 CMD ["xwiki"]
 ```
 
@@ -2474,55 +2474,55 @@ CMD ["xwiki"]
 		Last Modified: Wed, 26 Jan 2022 09:50:57 GMT  
 		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4512bdd2598cabd6c3bd8ee70ad79fceb4082b9bc297ff1b46a4e769ed684062`  
-		Last Modified: Wed, 26 Jan 2022 09:51:16 GMT  
-		Size: 203.1 MB (203118688 bytes)  
+	-	`sha256:fda090e7df3523dc9db18e06c2619b52e4dd2772c2800105e421552c27e599ed`  
+		Last Modified: Thu, 03 Feb 2022 20:58:14 GMT  
+		Size: 203.3 MB (203272575 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80124a46e801eaa1b446b86644d47869682894497815f2f0b77d98e29452343e`  
-		Last Modified: Thu, 27 Jan 2022 19:02:36 GMT  
-		Size: 172.0 B  
+	-	`sha256:e5341f7d466587f60c7ab87e18455c8f3e8f8e64681248565726a71137481f72`  
+		Last Modified: Fri, 04 Feb 2022 02:16:39 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46ecb4b115268768a2248cf5c66cccfb7d7293bba9c2c746337715effd0a1d2a`  
-		Last Modified: Thu, 27 Jan 2022 19:24:17 GMT  
-		Size: 12.5 MB (12522843 bytes)  
+	-	`sha256:658f77ce17d67d7b64dcd870a07d0e58bbe6a1ec52f253b0f93276edc3f1e0e4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:49 GMT  
+		Size: 12.5 MB (12522598 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdf3a46eab5ffff6d0b6fce0a150080847d2b80a4e03afa70c91377c9bf23401`  
-		Last Modified: Thu, 27 Jan 2022 19:24:16 GMT  
-		Size: 130.0 B  
+	-	`sha256:5c32bc7e7c91ebeb93dfcf733e07f2193161f8691a1555e22c9abe163ee7c2d4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:47 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8068c3825818104bc3046fa3ee6b8295aeac3295e175c0e80bd2334886e53ea`  
-		Last Modified: Fri, 28 Jan 2022 00:44:29 GMT  
+	-	`sha256:e07f4a067a7f038cb77c035bc29748f1c173243b916eb9f3a5d4ed9d9ce3a8b9`  
+		Last Modified: Fri, 04 Feb 2022 06:25:39 GMT  
 		Size: 189.4 MB (189410696 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d4e355f31a4633f6833049ad622ff0e7f6fda12e83d58f9c1b23aea02b909c79`  
-		Last Modified: Wed, 02 Feb 2022 20:25:43 GMT  
-		Size: 294.6 MB (294631392 bytes)  
+	-	`sha256:5722f156b54135a8d35147cd2ae370ebfb746a998e3f610b3c9eb58a59eb5906`  
+		Last Modified: Fri, 04 Feb 2022 06:25:31 GMT  
+		Size: 294.6 MB (294631351 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a82cf581932485da05ae12f4bb115a309455e23864cb9ceaa868673ee39ed42`  
-		Last Modified: Wed, 02 Feb 2022 20:25:26 GMT  
-		Size: 2.3 MB (2257827 bytes)  
+	-	`sha256:3aaaf90b2a55fb9aec1bd53b563a358b871aee80d05099bf1dea62de17da3534`  
+		Last Modified: Fri, 04 Feb 2022 06:25:11 GMT  
+		Size: 2.3 MB (2257828 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6c327e945d9319d8a5bf256a70001f511f664f6de2a5405d2929f27990fa2d5d`  
-		Last Modified: Wed, 02 Feb 2022 20:25:25 GMT  
-		Size: 1.3 KB (1344 bytes)  
+	-	`sha256:3656f7ae3d894472354598aaab04609c1d29ccf1fe373ae8fb21b85d9ab1b796`  
+		Last Modified: Fri, 04 Feb 2022 06:25:11 GMT  
+		Size: 1.3 KB (1343 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:76ce4043eaad579741c55b7da771e2a81d41b54bd7ede7a66ef486126650a32c`  
-		Last Modified: Wed, 02 Feb 2022 20:25:26 GMT  
-		Size: 2.3 KB (2307 bytes)  
+	-	`sha256:697d7334af0e409eb5f27dbb21fa43d8f13155aa569ade57189b443725826426`  
+		Last Modified: Fri, 04 Feb 2022 06:25:11 GMT  
+		Size: 2.3 KB (2306 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1e7d28b06145407dd0506f933c67800d3f6571a1996aa9589c1dc41313666483`  
-		Last Modified: Wed, 02 Feb 2022 20:25:25 GMT  
-		Size: 5.7 KB (5744 bytes)  
+	-	`sha256:05a9c1dd22c07dbb8cd1d750013658e27cb3fc2548c1eda39f88528ec612ce4a`  
+		Last Modified: Fri, 04 Feb 2022 06:25:10 GMT  
+		Size: 5.7 KB (5746 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:57ed2f2ba38af3e67f6755317fbfce862c56a0bf3d94f05776cd08a35e388d3d`  
-		Last Modified: Wed, 02 Feb 2022 20:25:26 GMT  
-		Size: 2.5 KB (2503 bytes)  
+	-	`sha256:0791c64daa93259b40b1ca47d9001aad63024b18d2695c69588f77e9961d053f`  
+		Last Modified: Fri, 04 Feb 2022 06:25:10 GMT  
+		Size: 2.5 KB (2505 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `xwiki:14-mysql-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:4b39210ec80f53df33835759ca3f983a7d0a57373a644ce9502fb3671693245a
+$ docker pull xwiki@sha256:25250e940f2e940a5d57eb24673e056f16330773401b85c57046ded833910c0d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2532,14 +2532,14 @@ $ docker pull xwiki@sha256:4b39210ec80f53df33835759ca3f983a7d0a57373a644ce9502fb
 ### `xwiki:14-mysql-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:de0bfb05f3369e10d3bddafba4715f455cd94ffb937c91ba953218f43c10edc4
+$ docker pull xwiki@sha256:1063cfc53c5126fc8b3505174a98460bbeacff4d51897f5232c1a67a453951f3
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **832.9 MB (832882997 bytes)**  
+-	Total Size: **833.0 MB (833036603 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f9c52a76c8dd336a9d7b35176f51c058e3a5f270fca1b622f942e40b94fb1ccb`
+-	Image ID: `sha256:12c6aae3734f6755cc68cd8261cd5006b8cfcf89dd0373b4c8e2774415c87a5b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -2564,87 +2564,87 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 26 Jan 2022 09:24:15 GMT
 ENV LANG=C.UTF-8
-# Wed, 26 Jan 2022 09:24:15 GMT
-ENV JAVA_VERSION=11.0.13
-# Wed, 26 Jan 2022 09:25:37 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_x64_linux_11.0.13_8.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_aarch64_linux_11.0.13_8.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 26 Jan 2022 09:25:38 GMT
+# Thu, 03 Feb 2022 20:34:14 GMT
+ENV JAVA_VERSION=11.0.14
+# Thu, 03 Feb 2022 20:35:39 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_x64_linux_11.0.14_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_aarch64_linux_11.0.14_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 03 Feb 2022 20:35:40 GMT
 CMD ["jshell"]
-# Thu, 27 Jan 2022 17:44:01 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:02 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 WORKDIR /usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_MAJOR=9
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_VERSION=9.0.58
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_SHA512=33c030a312a0a087deeb06fff921d13a23789e152d30620f33a368e7a2244c762fcf9acd55f3b90f08560704ba45bc2be820bccf2058b0cf5801a7b124f9056d
-# Thu, 27 Jan 2022 18:12:37 GMT
+# Fri, 04 Feb 2022 01:47:39 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		dirmngr 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work; 		catalina.sh version
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 EXPOSE 8080
-# Thu, 27 Jan 2022 18:12:40 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 CMD ["catalina.sh" "run"]
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Fri, 28 Jan 2022 00:39:09 GMT
+# Fri, 04 Feb 2022 06:20:42 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 20:23:16 GMT
+# Fri, 04 Feb 2022 06:20:44 GMT
 ENV XWIKI_VERSION=14.0
-# Wed, 02 Feb 2022 20:23:16 GMT
+# Fri, 04 Feb 2022 06:20:44 GMT
 ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/14.0
-# Wed, 02 Feb 2022 20:23:17 GMT
+# Fri, 04 Feb 2022 06:20:44 GMT
 ENV XWIKI_DOWNLOAD_SHA256=9acdc5f54267fd0270b227dcea0ed5351125757a390ca8530f71b0943f4404c5
-# Wed, 02 Feb 2022 20:23:55 GMT
+# Fri, 04 Feb 2022 06:21:22 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Wed, 02 Feb 2022 20:23:56 GMT
+# Fri, 04 Feb 2022 06:21:23 GMT
 ENV MYSQL_JDBC_VERSION=8.0.22
-# Wed, 02 Feb 2022 20:23:56 GMT
+# Fri, 04 Feb 2022 06:21:23 GMT
 ENV MYSQL_JDBC_SHA256=5019defbd12316295e97a6e88f2a9b07f118345a4e982710bba232e499b22f4f
-# Wed, 02 Feb 2022 20:23:56 GMT
+# Fri, 04 Feb 2022 06:21:23 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.22
-# Wed, 02 Feb 2022 20:23:56 GMT
+# Fri, 04 Feb 2022 06:21:23 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-java-8.0.22.jar
-# Wed, 02 Feb 2022 20:23:57 GMT
+# Fri, 04 Feb 2022 06:21:24 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-java-8.0.22.jar
-# Wed, 02 Feb 2022 20:23:58 GMT
+# Fri, 04 Feb 2022 06:21:25 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c -
-# Wed, 02 Feb 2022 20:23:58 GMT
+# Fri, 04 Feb 2022 06:21:25 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Wed, 02 Feb 2022 20:23:58 GMT
+# Fri, 04 Feb 2022 06:21:25 GMT
 COPY file:1b8409986f3e4eb79a7a0b18472cb2692a61d504fb5ef34292bc997b79fd760d in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Wed, 02 Feb 2022 20:23:59 GMT
+# Fri, 04 Feb 2022 06:21:26 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Wed, 02 Feb 2022 20:23:59 GMT
+# Fri, 04 Feb 2022 06:21:26 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Wed, 02 Feb 2022 20:23:59 GMT
+# Fri, 04 Feb 2022 06:21:26 GMT
 VOLUME [/usr/local/xwiki]
-# Wed, 02 Feb 2022 20:23:59 GMT
+# Fri, 04 Feb 2022 06:21:26 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 02 Feb 2022 20:24:00 GMT
+# Fri, 04 Feb 2022 06:21:27 GMT
 CMD ["xwiki"]
 ```
 
@@ -2673,55 +2673,55 @@ CMD ["xwiki"]
 		Last Modified: Wed, 26 Jan 2022 09:50:57 GMT  
 		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4512bdd2598cabd6c3bd8ee70ad79fceb4082b9bc297ff1b46a4e769ed684062`  
-		Last Modified: Wed, 26 Jan 2022 09:51:16 GMT  
-		Size: 203.1 MB (203118688 bytes)  
+	-	`sha256:fda090e7df3523dc9db18e06c2619b52e4dd2772c2800105e421552c27e599ed`  
+		Last Modified: Thu, 03 Feb 2022 20:58:14 GMT  
+		Size: 203.3 MB (203272575 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80124a46e801eaa1b446b86644d47869682894497815f2f0b77d98e29452343e`  
-		Last Modified: Thu, 27 Jan 2022 19:02:36 GMT  
-		Size: 172.0 B  
+	-	`sha256:e5341f7d466587f60c7ab87e18455c8f3e8f8e64681248565726a71137481f72`  
+		Last Modified: Fri, 04 Feb 2022 02:16:39 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46ecb4b115268768a2248cf5c66cccfb7d7293bba9c2c746337715effd0a1d2a`  
-		Last Modified: Thu, 27 Jan 2022 19:24:17 GMT  
-		Size: 12.5 MB (12522843 bytes)  
+	-	`sha256:658f77ce17d67d7b64dcd870a07d0e58bbe6a1ec52f253b0f93276edc3f1e0e4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:49 GMT  
+		Size: 12.5 MB (12522598 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdf3a46eab5ffff6d0b6fce0a150080847d2b80a4e03afa70c91377c9bf23401`  
-		Last Modified: Thu, 27 Jan 2022 19:24:16 GMT  
-		Size: 130.0 B  
+	-	`sha256:5c32bc7e7c91ebeb93dfcf733e07f2193161f8691a1555e22c9abe163ee7c2d4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:47 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8068c3825818104bc3046fa3ee6b8295aeac3295e175c0e80bd2334886e53ea`  
-		Last Modified: Fri, 28 Jan 2022 00:44:29 GMT  
+	-	`sha256:e07f4a067a7f038cb77c035bc29748f1c173243b916eb9f3a5d4ed9d9ce3a8b9`  
+		Last Modified: Fri, 04 Feb 2022 06:25:39 GMT  
 		Size: 189.4 MB (189410696 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d4e355f31a4633f6833049ad622ff0e7f6fda12e83d58f9c1b23aea02b909c79`  
-		Last Modified: Wed, 02 Feb 2022 20:25:43 GMT  
-		Size: 294.6 MB (294631392 bytes)  
+	-	`sha256:5722f156b54135a8d35147cd2ae370ebfb746a998e3f610b3c9eb58a59eb5906`  
+		Last Modified: Fri, 04 Feb 2022 06:25:31 GMT  
+		Size: 294.6 MB (294631351 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a82cf581932485da05ae12f4bb115a309455e23864cb9ceaa868673ee39ed42`  
-		Last Modified: Wed, 02 Feb 2022 20:25:26 GMT  
-		Size: 2.3 MB (2257827 bytes)  
+	-	`sha256:3aaaf90b2a55fb9aec1bd53b563a358b871aee80d05099bf1dea62de17da3534`  
+		Last Modified: Fri, 04 Feb 2022 06:25:11 GMT  
+		Size: 2.3 MB (2257828 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6c327e945d9319d8a5bf256a70001f511f664f6de2a5405d2929f27990fa2d5d`  
-		Last Modified: Wed, 02 Feb 2022 20:25:25 GMT  
-		Size: 1.3 KB (1344 bytes)  
+	-	`sha256:3656f7ae3d894472354598aaab04609c1d29ccf1fe373ae8fb21b85d9ab1b796`  
+		Last Modified: Fri, 04 Feb 2022 06:25:11 GMT  
+		Size: 1.3 KB (1343 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:76ce4043eaad579741c55b7da771e2a81d41b54bd7ede7a66ef486126650a32c`  
-		Last Modified: Wed, 02 Feb 2022 20:25:26 GMT  
-		Size: 2.3 KB (2307 bytes)  
+	-	`sha256:697d7334af0e409eb5f27dbb21fa43d8f13155aa569ade57189b443725826426`  
+		Last Modified: Fri, 04 Feb 2022 06:25:11 GMT  
+		Size: 2.3 KB (2306 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1e7d28b06145407dd0506f933c67800d3f6571a1996aa9589c1dc41313666483`  
-		Last Modified: Wed, 02 Feb 2022 20:25:25 GMT  
-		Size: 5.7 KB (5744 bytes)  
+	-	`sha256:05a9c1dd22c07dbb8cd1d750013658e27cb3fc2548c1eda39f88528ec612ce4a`  
+		Last Modified: Fri, 04 Feb 2022 06:25:10 GMT  
+		Size: 5.7 KB (5746 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:57ed2f2ba38af3e67f6755317fbfce862c56a0bf3d94f05776cd08a35e388d3d`  
-		Last Modified: Wed, 02 Feb 2022 20:25:26 GMT  
-		Size: 2.5 KB (2503 bytes)  
+	-	`sha256:0791c64daa93259b40b1ca47d9001aad63024b18d2695c69588f77e9961d053f`  
+		Last Modified: Fri, 04 Feb 2022 06:25:10 GMT  
+		Size: 2.5 KB (2505 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `xwiki:14-postgres-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:abc72f00b0ba2692009b3820357d45ff103f6851a79fb7fbde8d95224db36f9f
+$ docker pull xwiki@sha256:1fd790d09f4863faab156a64edc7e964854adb2971ad199b76f0e952ecaf8e66
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2732,14 +2732,14 @@ $ docker pull xwiki@sha256:abc72f00b0ba2692009b3820357d45ff103f6851a79fb7fbde8d9
 ### `xwiki:14-postgres-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:837c3dc218ae695159e83176e8a9c93c4ad68c0029f0f180463683160cfcd3f5
+$ docker pull xwiki@sha256:f6bf2f54549d6089f0e523d55e602f4d20e927a6c1cd0e9f0f6afa80e77999af
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **832.3 MB (832346635 bytes)**  
+-	Total Size: **832.5 MB (832500336 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d45f3ec7a7229f1d33ccb0bad9556d09c9d2b0348007476bb58ba69ba67afc8`
+-	Image ID: `sha256:bfb0ad62f6ddaf9084f137477622d2dabae7322240ed6b157c1dc2aa0a462475`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -2764,77 +2764,77 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 26 Jan 2022 09:24:15 GMT
 ENV LANG=C.UTF-8
-# Wed, 26 Jan 2022 09:24:15 GMT
-ENV JAVA_VERSION=11.0.13
-# Wed, 26 Jan 2022 09:25:37 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_x64_linux_11.0.13_8.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_aarch64_linux_11.0.13_8.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 26 Jan 2022 09:25:38 GMT
+# Thu, 03 Feb 2022 20:34:14 GMT
+ENV JAVA_VERSION=11.0.14
+# Thu, 03 Feb 2022 20:35:39 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_x64_linux_11.0.14_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_aarch64_linux_11.0.14_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 03 Feb 2022 20:35:40 GMT
 CMD ["jshell"]
-# Thu, 27 Jan 2022 17:44:01 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:02 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 WORKDIR /usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_MAJOR=9
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_VERSION=9.0.58
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_SHA512=33c030a312a0a087deeb06fff921d13a23789e152d30620f33a368e7a2244c762fcf9acd55f3b90f08560704ba45bc2be820bccf2058b0cf5801a7b124f9056d
-# Thu, 27 Jan 2022 18:12:37 GMT
+# Fri, 04 Feb 2022 01:47:39 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		dirmngr 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work; 		catalina.sh version
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 EXPOSE 8080
-# Thu, 27 Jan 2022 18:12:40 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 CMD ["catalina.sh" "run"]
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Fri, 28 Jan 2022 00:40:35 GMT
+# Fri, 04 Feb 2022 06:22:14 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps     libpostgresql-jdbc-java &&   rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 20:24:04 GMT
+# Fri, 04 Feb 2022 06:22:15 GMT
 ENV XWIKI_VERSION=14.0
-# Wed, 02 Feb 2022 20:24:04 GMT
+# Fri, 04 Feb 2022 06:22:15 GMT
 ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/14.0
-# Wed, 02 Feb 2022 20:24:05 GMT
+# Fri, 04 Feb 2022 06:22:16 GMT
 ENV XWIKI_DOWNLOAD_SHA256=9acdc5f54267fd0270b227dcea0ed5351125757a390ca8530f71b0943f4404c5
-# Wed, 02 Feb 2022 20:24:42 GMT
+# Fri, 04 Feb 2022 06:22:54 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Wed, 02 Feb 2022 20:24:44 GMT
+# Fri, 04 Feb 2022 06:22:55 GMT
 RUN cp /usr/share/java/postgresql-jdbc4.jar /usr/local/tomcat/webapps/ROOT/WEB-INF/lib/
-# Wed, 02 Feb 2022 20:24:44 GMT
+# Fri, 04 Feb 2022 06:22:56 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Wed, 02 Feb 2022 20:24:44 GMT
+# Fri, 04 Feb 2022 06:22:56 GMT
 COPY file:4a923f484bb29a26630c19e1d617d3bf6aa6ae7c6c4a5561e97b037bcde0847c in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Wed, 02 Feb 2022 20:24:45 GMT
+# Fri, 04 Feb 2022 06:22:57 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Wed, 02 Feb 2022 20:24:45 GMT
+# Fri, 04 Feb 2022 06:22:57 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Wed, 02 Feb 2022 20:24:46 GMT
+# Fri, 04 Feb 2022 06:22:57 GMT
 VOLUME [/usr/local/xwiki]
-# Wed, 02 Feb 2022 20:24:46 GMT
+# Fri, 04 Feb 2022 06:22:57 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 02 Feb 2022 20:24:46 GMT
+# Fri, 04 Feb 2022 06:22:57 GMT
 CMD ["xwiki"]
 ```
 
@@ -2863,62 +2863,62 @@ CMD ["xwiki"]
 		Last Modified: Wed, 26 Jan 2022 09:50:57 GMT  
 		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4512bdd2598cabd6c3bd8ee70ad79fceb4082b9bc297ff1b46a4e769ed684062`  
-		Last Modified: Wed, 26 Jan 2022 09:51:16 GMT  
-		Size: 203.1 MB (203118688 bytes)  
+	-	`sha256:fda090e7df3523dc9db18e06c2619b52e4dd2772c2800105e421552c27e599ed`  
+		Last Modified: Thu, 03 Feb 2022 20:58:14 GMT  
+		Size: 203.3 MB (203272575 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80124a46e801eaa1b446b86644d47869682894497815f2f0b77d98e29452343e`  
-		Last Modified: Thu, 27 Jan 2022 19:02:36 GMT  
-		Size: 172.0 B  
+	-	`sha256:e5341f7d466587f60c7ab87e18455c8f3e8f8e64681248565726a71137481f72`  
+		Last Modified: Fri, 04 Feb 2022 02:16:39 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46ecb4b115268768a2248cf5c66cccfb7d7293bba9c2c746337715effd0a1d2a`  
-		Last Modified: Thu, 27 Jan 2022 19:24:17 GMT  
-		Size: 12.5 MB (12522843 bytes)  
+	-	`sha256:658f77ce17d67d7b64dcd870a07d0e58bbe6a1ec52f253b0f93276edc3f1e0e4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:49 GMT  
+		Size: 12.5 MB (12522598 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdf3a46eab5ffff6d0b6fce0a150080847d2b80a4e03afa70c91377c9bf23401`  
-		Last Modified: Thu, 27 Jan 2022 19:24:16 GMT  
-		Size: 130.0 B  
+	-	`sha256:5c32bc7e7c91ebeb93dfcf733e07f2193161f8691a1555e22c9abe163ee7c2d4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:47 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af539591d5df2e4985dee90ab6d28ee232867000819a22ea0c5a5a14bb89fd96`  
-		Last Modified: Fri, 28 Jan 2022 00:45:49 GMT  
-		Size: 190.3 MB (190285846 bytes)  
+	-	`sha256:fa796b6a421404c5ed1980b8e1277de92aadd8b243229d78ca48034606f4e44b`  
+		Last Modified: Fri, 04 Feb 2022 06:26:44 GMT  
+		Size: 190.3 MB (190285862 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e4428db8a856beb47aba7ea4b81fb292fd059409b6f250408782e799091c962b`  
-		Last Modified: Wed, 02 Feb 2022 20:26:36 GMT  
-		Size: 294.6 MB (294631351 bytes)  
+	-	`sha256:1954fc2d5c78b6e7d41b866e5e9acd1d6c3b124cbb7d35360555275291454274`  
+		Last Modified: Fri, 04 Feb 2022 06:26:35 GMT  
+		Size: 294.6 MB (294631391 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8bd922bd28f83f50d5a881ffd1b219297e3e98efe7fb929a4b84fee9a17d0efc`  
-		Last Modified: Wed, 02 Feb 2022 20:26:19 GMT  
+	-	`sha256:d3446a4f559b39f481290c50f81b5116f3502a8207fd2240b9d093d6a1d2f1c8`  
+		Last Modified: Fri, 04 Feb 2022 06:26:16 GMT  
 		Size: 846.2 KB (846209 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d1ab2055983b98a3bc6376831a2ac20f32182d3abe005a4a331a1f6a04f99df7`  
-		Last Modified: Wed, 02 Feb 2022 20:26:19 GMT  
+	-	`sha256:a62aa01d56a23a721829209a2ebfa86a6e8429e43a885845db80da121b42fc8b`  
+		Last Modified: Fri, 04 Feb 2022 06:26:15 GMT  
 		Size: 1.3 KB (1343 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f9fb79525796b1d0e91b4e80d0ef2c68ab60dd680bedcd2f36f21c7d59d1afaa`  
-		Last Modified: Wed, 02 Feb 2022 20:26:19 GMT  
+	-	`sha256:6d52718b75aa4b195dd2b01542290317486763781b1a395d92b455ac30dc3216`  
+		Last Modified: Fri, 04 Feb 2022 06:26:15 GMT  
 		Size: 2.5 KB (2455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dd38bd849ed46268c0df253acacf3a94077f1de52ae40546fab86c5a48a5fc55`  
-		Last Modified: Wed, 02 Feb 2022 20:26:19 GMT  
-		Size: 5.7 KB (5745 bytes)  
+	-	`sha256:0c0b585082194e12307f7ea4493165e3435e54f7c102f45a39186dd407ae2721`  
+		Last Modified: Fri, 04 Feb 2022 06:26:15 GMT  
+		Size: 5.7 KB (5744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:928f4afe7901aaa88ba8ac0cc92e3e92b8d282c146429ebeb53a25549a501306`  
-		Last Modified: Wed, 02 Feb 2022 20:26:19 GMT  
-		Size: 2.5 KB (2502 bytes)  
+	-	`sha256:45753e42e89889285411b08e1c3a211df89ffe1a517ceed9923c0601b8d68f1a`  
+		Last Modified: Fri, 04 Feb 2022 06:26:15 GMT  
+		Size: 2.5 KB (2504 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `xwiki:14-postgres-tomcat` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:c0691ba2cc01631c74d17b6c097db0ef2a97637cc8226aa17879f5360dadd990
+$ docker pull xwiki@sha256:aacac077fdf66f699c0e83465fed5b61dbd4e372472ba031320825ba62e3d565
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **823.2 MB (823194373 bytes)**  
+-	Total Size: **823.4 MB (823367066 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:889373fd32d59a4c4edc549dd9dbe20a4d20705bb0d1cca2a87d59dc188fc9b6`
+-	Image ID: `sha256:e81db716727d179c0487868ca07a818559372c2813b00f4d814e13bf10226bb0`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -2943,77 +2943,77 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 26 Jan 2022 05:56:10 GMT
 ENV LANG=C.UTF-8
-# Wed, 26 Jan 2022 05:56:11 GMT
-ENV JAVA_VERSION=11.0.13
-# Wed, 26 Jan 2022 05:57:08 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_x64_linux_11.0.13_8.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_aarch64_linux_11.0.13_8.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 26 Jan 2022 05:57:09 GMT
+# Thu, 03 Feb 2022 20:49:24 GMT
+ENV JAVA_VERSION=11.0.14
+# Thu, 03 Feb 2022 20:50:20 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_x64_linux_11.0.14_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_aarch64_linux_11.0.14_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 03 Feb 2022 20:50:21 GMT
 CMD ["jshell"]
-# Wed, 26 Jan 2022 23:45:39 GMT
+# Fri, 04 Feb 2022 00:39:07 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Wed, 26 Jan 2022 23:45:40 GMT
+# Fri, 04 Feb 2022 00:39:08 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 26 Jan 2022 23:45:41 GMT
+# Fri, 04 Feb 2022 00:39:09 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Wed, 26 Jan 2022 23:45:42 GMT
+# Fri, 04 Feb 2022 00:39:10 GMT
 WORKDIR /usr/local/tomcat
-# Wed, 26 Jan 2022 23:45:43 GMT
+# Fri, 04 Feb 2022 00:39:11 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Wed, 26 Jan 2022 23:45:44 GMT
+# Fri, 04 Feb 2022 00:39:12 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 00:07:11 GMT
+# Fri, 04 Feb 2022 01:02:16 GMT
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
-# Thu, 27 Jan 2022 00:07:11 GMT
+# Fri, 04 Feb 2022 01:02:16 GMT
 ENV TOMCAT_MAJOR=9
-# Thu, 27 Jan 2022 00:07:12 GMT
+# Fri, 04 Feb 2022 01:02:17 GMT
 ENV TOMCAT_VERSION=9.0.58
-# Thu, 27 Jan 2022 00:07:13 GMT
+# Fri, 04 Feb 2022 01:02:18 GMT
 ENV TOMCAT_SHA512=33c030a312a0a087deeb06fff921d13a23789e152d30620f33a368e7a2244c762fcf9acd55f3b90f08560704ba45bc2be820bccf2058b0cf5801a7b124f9056d
-# Thu, 27 Jan 2022 00:07:33 GMT
+# Fri, 04 Feb 2022 01:03:23 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		dirmngr 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work; 		catalina.sh version
-# Thu, 27 Jan 2022 00:07:35 GMT
+# Fri, 04 Feb 2022 01:03:25 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 27 Jan 2022 00:07:36 GMT
+# Fri, 04 Feb 2022 01:03:25 GMT
 EXPOSE 8080
-# Thu, 27 Jan 2022 00:07:37 GMT
+# Fri, 04 Feb 2022 01:03:26 GMT
 CMD ["catalina.sh" "run"]
-# Thu, 27 Jan 2022 05:50:31 GMT
+# Fri, 04 Feb 2022 04:15:17 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Thu, 27 Jan 2022 05:50:31 GMT
+# Fri, 04 Feb 2022 04:15:17 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Thu, 27 Jan 2022 05:50:32 GMT
+# Fri, 04 Feb 2022 04:15:18 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Thu, 27 Jan 2022 05:50:33 GMT
+# Fri, 04 Feb 2022 04:15:19 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Thu, 27 Jan 2022 05:50:34 GMT
+# Fri, 04 Feb 2022 04:15:20 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Thu, 27 Jan 2022 05:50:35 GMT
+# Fri, 04 Feb 2022 04:15:21 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Thu, 27 Jan 2022 05:51:17 GMT
+# Fri, 04 Feb 2022 04:15:52 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps     libpostgresql-jdbc-java &&   rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 19:46:33 GMT
+# Fri, 04 Feb 2022 04:15:53 GMT
 ENV XWIKI_VERSION=14.0
-# Wed, 02 Feb 2022 19:46:34 GMT
+# Fri, 04 Feb 2022 04:15:54 GMT
 ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/14.0
-# Wed, 02 Feb 2022 19:46:35 GMT
+# Fri, 04 Feb 2022 04:15:55 GMT
 ENV XWIKI_DOWNLOAD_SHA256=9acdc5f54267fd0270b227dcea0ed5351125757a390ca8530f71b0943f4404c5
-# Wed, 02 Feb 2022 19:48:08 GMT
+# Fri, 04 Feb 2022 04:17:18 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Wed, 02 Feb 2022 19:48:10 GMT
+# Fri, 04 Feb 2022 04:17:20 GMT
 RUN cp /usr/share/java/postgresql-jdbc4.jar /usr/local/tomcat/webapps/ROOT/WEB-INF/lib/
-# Wed, 02 Feb 2022 19:48:11 GMT
+# Fri, 04 Feb 2022 04:17:21 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Wed, 02 Feb 2022 19:48:12 GMT
+# Fri, 04 Feb 2022 04:17:22 GMT
 COPY file:4a923f484bb29a26630c19e1d617d3bf6aa6ae7c6c4a5561e97b037bcde0847c in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Wed, 02 Feb 2022 19:48:13 GMT
+# Fri, 04 Feb 2022 04:17:23 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Wed, 02 Feb 2022 19:48:14 GMT
+# Fri, 04 Feb 2022 04:17:24 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Wed, 02 Feb 2022 19:48:15 GMT
+# Fri, 04 Feb 2022 04:17:25 GMT
 VOLUME [/usr/local/xwiki]
-# Wed, 02 Feb 2022 19:48:16 GMT
+# Fri, 04 Feb 2022 04:17:26 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 02 Feb 2022 19:48:17 GMT
+# Fri, 04 Feb 2022 04:17:27 GMT
 CMD ["xwiki"]
 ```
 
@@ -3042,51 +3042,51 @@ CMD ["xwiki"]
 		Last Modified: Wed, 26 Jan 2022 06:23:04 GMT  
 		Size: 212.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d46cad4095d077981b03d8fc3768a011689e84da8c906b28c8d762521c7d3d1a`  
-		Last Modified: Wed, 26 Jan 2022 06:23:23 GMT  
-		Size: 200.7 MB (200714065 bytes)  
+	-	`sha256:094aec66c6a7d824fad2b23976909d7a80fb1306908ad7fdfa38bded6f5d2f8b`  
+		Last Modified: Thu, 03 Feb 2022 21:12:31 GMT  
+		Size: 200.9 MB (200886679 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:51ffd677e016f0ca2d523555eb31a4bb907122ff28e694bf6f9ffa00d64eb35b`  
-		Last Modified: Thu, 27 Jan 2022 00:48:42 GMT  
+	-	`sha256:4d190c32e6780b7f813e534bb35b54d7c274759716626dd777c454fc06a884a8`  
+		Last Modified: Fri, 04 Feb 2022 01:44:18 GMT  
 		Size: 139.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35788645ec42db1cbdbb0e08d34d9c856f580940026809a268612d29c57b121c`  
-		Last Modified: Thu, 27 Jan 2022 01:04:30 GMT  
-		Size: 12.3 MB (12290038 bytes)  
+	-	`sha256:dfec2cf8d777891eaa322b3fe0e9666127e538e6c0ce47503f5a1ddb102e697b`  
+		Last Modified: Fri, 04 Feb 2022 01:58:19 GMT  
+		Size: 12.3 MB (12289911 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a00e62b554c09b0a5e65167e12d701de6aed0d2a2c9f37df0f4d2d8416380e9`  
-		Last Modified: Thu, 27 Jan 2022 05:55:50 GMT  
-		Size: 185.2 MB (185204053 bytes)  
+	-	`sha256:6b2a11450733610955131b222d21338c16cd2e791d4ab640678898c6885cf082`  
+		Last Modified: Fri, 04 Feb 2022 04:20:14 GMT  
+		Size: 185.2 MB (185204270 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:07d7706f02ede0aa87b190d3cd80ba43efc30d4b373e64de921729026c4d3910`  
-		Last Modified: Wed, 02 Feb 2022 19:49:18 GMT  
-		Size: 294.6 MB (294631653 bytes)  
+	-	`sha256:df23d485d76bf12a5975078ed0ece599663e166585c0e160785c0c8d15622e47`  
+		Last Modified: Fri, 04 Feb 2022 04:20:10 GMT  
+		Size: 294.6 MB (294631646 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae9b9b1c0398c4a17d1068bad2709d8eb38e19cf3452800a0a3fa46c3d54d16d`  
-		Last Modified: Wed, 02 Feb 2022 19:48:56 GMT  
-		Size: 846.2 KB (846207 bytes)  
+	-	`sha256:141480e5cd238a5348df43a6652f7121409cc6f40985912fe490b4e02e011958`  
+		Last Modified: Fri, 04 Feb 2022 04:19:47 GMT  
+		Size: 846.2 KB (846208 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a7a8c336d893c897775265a8caceab3598a055715d822cba8c18f2e95489564e`  
-		Last Modified: Wed, 02 Feb 2022 19:48:55 GMT  
-		Size: 1.3 KB (1343 bytes)  
+	-	`sha256:f60d403609eeac8339bd174b32423892290074ad36512ffc18ef58d6ad770a2f`  
+		Last Modified: Fri, 04 Feb 2022 04:19:47 GMT  
+		Size: 1.3 KB (1344 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eefc762909996628f34206edfcfb4ef938c2525e53f82e2d4a6aa7e77145abc3`  
-		Last Modified: Wed, 02 Feb 2022 19:48:56 GMT  
-		Size: 2.5 KB (2455 bytes)  
+	-	`sha256:2d55dfee5207a361b335d468b8676bdeaf1c27767ec962a7ceff9d564e49904a`  
+		Last Modified: Fri, 04 Feb 2022 04:19:47 GMT  
+		Size: 2.5 KB (2452 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1890ce0750d85fa95733fef93eaf587cd64fec0496577271391ec8178731f15`  
-		Last Modified: Wed, 02 Feb 2022 19:48:55 GMT  
-		Size: 5.7 KB (5744 bytes)  
+	-	`sha256:0a1fa9cfcd5df23c68623edeb850e82ca287e3b57bd759402d25483c187cddc5`  
+		Last Modified: Fri, 04 Feb 2022 04:19:47 GMT  
+		Size: 5.7 KB (5743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4414eceff9cade8fa21f0d6d5dd48ff21a6fe293e07a3e492954c61a39d55028`  
-		Last Modified: Wed, 02 Feb 2022 19:48:56 GMT  
-		Size: 2.5 KB (2503 bytes)  
+	-	`sha256:95a464d8beef9841c1d3bd9fe94ed8b9ae243fb8f72b953952e84fe08f85a423`  
+		Last Modified: Fri, 04 Feb 2022 04:19:47 GMT  
+		Size: 2.5 KB (2501 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `xwiki:14.0`
 
 ```console
-$ docker pull xwiki@sha256:4b39210ec80f53df33835759ca3f983a7d0a57373a644ce9502fb3671693245a
+$ docker pull xwiki@sha256:25250e940f2e940a5d57eb24673e056f16330773401b85c57046ded833910c0d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3096,14 +3096,14 @@ $ docker pull xwiki@sha256:4b39210ec80f53df33835759ca3f983a7d0a57373a644ce9502fb
 ### `xwiki:14.0` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:de0bfb05f3369e10d3bddafba4715f455cd94ffb937c91ba953218f43c10edc4
+$ docker pull xwiki@sha256:1063cfc53c5126fc8b3505174a98460bbeacff4d51897f5232c1a67a453951f3
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **832.9 MB (832882997 bytes)**  
+-	Total Size: **833.0 MB (833036603 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f9c52a76c8dd336a9d7b35176f51c058e3a5f270fca1b622f942e40b94fb1ccb`
+-	Image ID: `sha256:12c6aae3734f6755cc68cd8261cd5006b8cfcf89dd0373b4c8e2774415c87a5b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -3128,87 +3128,87 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 26 Jan 2022 09:24:15 GMT
 ENV LANG=C.UTF-8
-# Wed, 26 Jan 2022 09:24:15 GMT
-ENV JAVA_VERSION=11.0.13
-# Wed, 26 Jan 2022 09:25:37 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_x64_linux_11.0.13_8.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_aarch64_linux_11.0.13_8.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 26 Jan 2022 09:25:38 GMT
+# Thu, 03 Feb 2022 20:34:14 GMT
+ENV JAVA_VERSION=11.0.14
+# Thu, 03 Feb 2022 20:35:39 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_x64_linux_11.0.14_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_aarch64_linux_11.0.14_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 03 Feb 2022 20:35:40 GMT
 CMD ["jshell"]
-# Thu, 27 Jan 2022 17:44:01 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:02 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 WORKDIR /usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_MAJOR=9
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_VERSION=9.0.58
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_SHA512=33c030a312a0a087deeb06fff921d13a23789e152d30620f33a368e7a2244c762fcf9acd55f3b90f08560704ba45bc2be820bccf2058b0cf5801a7b124f9056d
-# Thu, 27 Jan 2022 18:12:37 GMT
+# Fri, 04 Feb 2022 01:47:39 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		dirmngr 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work; 		catalina.sh version
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 EXPOSE 8080
-# Thu, 27 Jan 2022 18:12:40 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 CMD ["catalina.sh" "run"]
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Fri, 28 Jan 2022 00:39:09 GMT
+# Fri, 04 Feb 2022 06:20:42 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 20:23:16 GMT
+# Fri, 04 Feb 2022 06:20:44 GMT
 ENV XWIKI_VERSION=14.0
-# Wed, 02 Feb 2022 20:23:16 GMT
+# Fri, 04 Feb 2022 06:20:44 GMT
 ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/14.0
-# Wed, 02 Feb 2022 20:23:17 GMT
+# Fri, 04 Feb 2022 06:20:44 GMT
 ENV XWIKI_DOWNLOAD_SHA256=9acdc5f54267fd0270b227dcea0ed5351125757a390ca8530f71b0943f4404c5
-# Wed, 02 Feb 2022 20:23:55 GMT
+# Fri, 04 Feb 2022 06:21:22 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Wed, 02 Feb 2022 20:23:56 GMT
+# Fri, 04 Feb 2022 06:21:23 GMT
 ENV MYSQL_JDBC_VERSION=8.0.22
-# Wed, 02 Feb 2022 20:23:56 GMT
+# Fri, 04 Feb 2022 06:21:23 GMT
 ENV MYSQL_JDBC_SHA256=5019defbd12316295e97a6e88f2a9b07f118345a4e982710bba232e499b22f4f
-# Wed, 02 Feb 2022 20:23:56 GMT
+# Fri, 04 Feb 2022 06:21:23 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.22
-# Wed, 02 Feb 2022 20:23:56 GMT
+# Fri, 04 Feb 2022 06:21:23 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-java-8.0.22.jar
-# Wed, 02 Feb 2022 20:23:57 GMT
+# Fri, 04 Feb 2022 06:21:24 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-java-8.0.22.jar
-# Wed, 02 Feb 2022 20:23:58 GMT
+# Fri, 04 Feb 2022 06:21:25 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c -
-# Wed, 02 Feb 2022 20:23:58 GMT
+# Fri, 04 Feb 2022 06:21:25 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Wed, 02 Feb 2022 20:23:58 GMT
+# Fri, 04 Feb 2022 06:21:25 GMT
 COPY file:1b8409986f3e4eb79a7a0b18472cb2692a61d504fb5ef34292bc997b79fd760d in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Wed, 02 Feb 2022 20:23:59 GMT
+# Fri, 04 Feb 2022 06:21:26 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Wed, 02 Feb 2022 20:23:59 GMT
+# Fri, 04 Feb 2022 06:21:26 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Wed, 02 Feb 2022 20:23:59 GMT
+# Fri, 04 Feb 2022 06:21:26 GMT
 VOLUME [/usr/local/xwiki]
-# Wed, 02 Feb 2022 20:23:59 GMT
+# Fri, 04 Feb 2022 06:21:26 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 02 Feb 2022 20:24:00 GMT
+# Fri, 04 Feb 2022 06:21:27 GMT
 CMD ["xwiki"]
 ```
 
@@ -3237,55 +3237,55 @@ CMD ["xwiki"]
 		Last Modified: Wed, 26 Jan 2022 09:50:57 GMT  
 		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4512bdd2598cabd6c3bd8ee70ad79fceb4082b9bc297ff1b46a4e769ed684062`  
-		Last Modified: Wed, 26 Jan 2022 09:51:16 GMT  
-		Size: 203.1 MB (203118688 bytes)  
+	-	`sha256:fda090e7df3523dc9db18e06c2619b52e4dd2772c2800105e421552c27e599ed`  
+		Last Modified: Thu, 03 Feb 2022 20:58:14 GMT  
+		Size: 203.3 MB (203272575 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80124a46e801eaa1b446b86644d47869682894497815f2f0b77d98e29452343e`  
-		Last Modified: Thu, 27 Jan 2022 19:02:36 GMT  
-		Size: 172.0 B  
+	-	`sha256:e5341f7d466587f60c7ab87e18455c8f3e8f8e64681248565726a71137481f72`  
+		Last Modified: Fri, 04 Feb 2022 02:16:39 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46ecb4b115268768a2248cf5c66cccfb7d7293bba9c2c746337715effd0a1d2a`  
-		Last Modified: Thu, 27 Jan 2022 19:24:17 GMT  
-		Size: 12.5 MB (12522843 bytes)  
+	-	`sha256:658f77ce17d67d7b64dcd870a07d0e58bbe6a1ec52f253b0f93276edc3f1e0e4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:49 GMT  
+		Size: 12.5 MB (12522598 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdf3a46eab5ffff6d0b6fce0a150080847d2b80a4e03afa70c91377c9bf23401`  
-		Last Modified: Thu, 27 Jan 2022 19:24:16 GMT  
-		Size: 130.0 B  
+	-	`sha256:5c32bc7e7c91ebeb93dfcf733e07f2193161f8691a1555e22c9abe163ee7c2d4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:47 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8068c3825818104bc3046fa3ee6b8295aeac3295e175c0e80bd2334886e53ea`  
-		Last Modified: Fri, 28 Jan 2022 00:44:29 GMT  
+	-	`sha256:e07f4a067a7f038cb77c035bc29748f1c173243b916eb9f3a5d4ed9d9ce3a8b9`  
+		Last Modified: Fri, 04 Feb 2022 06:25:39 GMT  
 		Size: 189.4 MB (189410696 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d4e355f31a4633f6833049ad622ff0e7f6fda12e83d58f9c1b23aea02b909c79`  
-		Last Modified: Wed, 02 Feb 2022 20:25:43 GMT  
-		Size: 294.6 MB (294631392 bytes)  
+	-	`sha256:5722f156b54135a8d35147cd2ae370ebfb746a998e3f610b3c9eb58a59eb5906`  
+		Last Modified: Fri, 04 Feb 2022 06:25:31 GMT  
+		Size: 294.6 MB (294631351 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a82cf581932485da05ae12f4bb115a309455e23864cb9ceaa868673ee39ed42`  
-		Last Modified: Wed, 02 Feb 2022 20:25:26 GMT  
-		Size: 2.3 MB (2257827 bytes)  
+	-	`sha256:3aaaf90b2a55fb9aec1bd53b563a358b871aee80d05099bf1dea62de17da3534`  
+		Last Modified: Fri, 04 Feb 2022 06:25:11 GMT  
+		Size: 2.3 MB (2257828 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6c327e945d9319d8a5bf256a70001f511f664f6de2a5405d2929f27990fa2d5d`  
-		Last Modified: Wed, 02 Feb 2022 20:25:25 GMT  
-		Size: 1.3 KB (1344 bytes)  
+	-	`sha256:3656f7ae3d894472354598aaab04609c1d29ccf1fe373ae8fb21b85d9ab1b796`  
+		Last Modified: Fri, 04 Feb 2022 06:25:11 GMT  
+		Size: 1.3 KB (1343 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:76ce4043eaad579741c55b7da771e2a81d41b54bd7ede7a66ef486126650a32c`  
-		Last Modified: Wed, 02 Feb 2022 20:25:26 GMT  
-		Size: 2.3 KB (2307 bytes)  
+	-	`sha256:697d7334af0e409eb5f27dbb21fa43d8f13155aa569ade57189b443725826426`  
+		Last Modified: Fri, 04 Feb 2022 06:25:11 GMT  
+		Size: 2.3 KB (2306 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1e7d28b06145407dd0506f933c67800d3f6571a1996aa9589c1dc41313666483`  
-		Last Modified: Wed, 02 Feb 2022 20:25:25 GMT  
-		Size: 5.7 KB (5744 bytes)  
+	-	`sha256:05a9c1dd22c07dbb8cd1d750013658e27cb3fc2548c1eda39f88528ec612ce4a`  
+		Last Modified: Fri, 04 Feb 2022 06:25:10 GMT  
+		Size: 5.7 KB (5746 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:57ed2f2ba38af3e67f6755317fbfce862c56a0bf3d94f05776cd08a35e388d3d`  
-		Last Modified: Wed, 02 Feb 2022 20:25:26 GMT  
-		Size: 2.5 KB (2503 bytes)  
+	-	`sha256:0791c64daa93259b40b1ca47d9001aad63024b18d2695c69588f77e9961d053f`  
+		Last Modified: Fri, 04 Feb 2022 06:25:10 GMT  
+		Size: 2.5 KB (2505 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `xwiki:14.0-mysql-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:4b39210ec80f53df33835759ca3f983a7d0a57373a644ce9502fb3671693245a
+$ docker pull xwiki@sha256:25250e940f2e940a5d57eb24673e056f16330773401b85c57046ded833910c0d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3295,14 +3295,14 @@ $ docker pull xwiki@sha256:4b39210ec80f53df33835759ca3f983a7d0a57373a644ce9502fb
 ### `xwiki:14.0-mysql-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:de0bfb05f3369e10d3bddafba4715f455cd94ffb937c91ba953218f43c10edc4
+$ docker pull xwiki@sha256:1063cfc53c5126fc8b3505174a98460bbeacff4d51897f5232c1a67a453951f3
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **832.9 MB (832882997 bytes)**  
+-	Total Size: **833.0 MB (833036603 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f9c52a76c8dd336a9d7b35176f51c058e3a5f270fca1b622f942e40b94fb1ccb`
+-	Image ID: `sha256:12c6aae3734f6755cc68cd8261cd5006b8cfcf89dd0373b4c8e2774415c87a5b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -3327,87 +3327,87 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 26 Jan 2022 09:24:15 GMT
 ENV LANG=C.UTF-8
-# Wed, 26 Jan 2022 09:24:15 GMT
-ENV JAVA_VERSION=11.0.13
-# Wed, 26 Jan 2022 09:25:37 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_x64_linux_11.0.13_8.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_aarch64_linux_11.0.13_8.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 26 Jan 2022 09:25:38 GMT
+# Thu, 03 Feb 2022 20:34:14 GMT
+ENV JAVA_VERSION=11.0.14
+# Thu, 03 Feb 2022 20:35:39 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_x64_linux_11.0.14_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_aarch64_linux_11.0.14_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 03 Feb 2022 20:35:40 GMT
 CMD ["jshell"]
-# Thu, 27 Jan 2022 17:44:01 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:02 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 WORKDIR /usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_MAJOR=9
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_VERSION=9.0.58
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_SHA512=33c030a312a0a087deeb06fff921d13a23789e152d30620f33a368e7a2244c762fcf9acd55f3b90f08560704ba45bc2be820bccf2058b0cf5801a7b124f9056d
-# Thu, 27 Jan 2022 18:12:37 GMT
+# Fri, 04 Feb 2022 01:47:39 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		dirmngr 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work; 		catalina.sh version
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 EXPOSE 8080
-# Thu, 27 Jan 2022 18:12:40 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 CMD ["catalina.sh" "run"]
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Fri, 28 Jan 2022 00:39:09 GMT
+# Fri, 04 Feb 2022 06:20:42 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 20:23:16 GMT
+# Fri, 04 Feb 2022 06:20:44 GMT
 ENV XWIKI_VERSION=14.0
-# Wed, 02 Feb 2022 20:23:16 GMT
+# Fri, 04 Feb 2022 06:20:44 GMT
 ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/14.0
-# Wed, 02 Feb 2022 20:23:17 GMT
+# Fri, 04 Feb 2022 06:20:44 GMT
 ENV XWIKI_DOWNLOAD_SHA256=9acdc5f54267fd0270b227dcea0ed5351125757a390ca8530f71b0943f4404c5
-# Wed, 02 Feb 2022 20:23:55 GMT
+# Fri, 04 Feb 2022 06:21:22 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Wed, 02 Feb 2022 20:23:56 GMT
+# Fri, 04 Feb 2022 06:21:23 GMT
 ENV MYSQL_JDBC_VERSION=8.0.22
-# Wed, 02 Feb 2022 20:23:56 GMT
+# Fri, 04 Feb 2022 06:21:23 GMT
 ENV MYSQL_JDBC_SHA256=5019defbd12316295e97a6e88f2a9b07f118345a4e982710bba232e499b22f4f
-# Wed, 02 Feb 2022 20:23:56 GMT
+# Fri, 04 Feb 2022 06:21:23 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.22
-# Wed, 02 Feb 2022 20:23:56 GMT
+# Fri, 04 Feb 2022 06:21:23 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-java-8.0.22.jar
-# Wed, 02 Feb 2022 20:23:57 GMT
+# Fri, 04 Feb 2022 06:21:24 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-java-8.0.22.jar
-# Wed, 02 Feb 2022 20:23:58 GMT
+# Fri, 04 Feb 2022 06:21:25 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c -
-# Wed, 02 Feb 2022 20:23:58 GMT
+# Fri, 04 Feb 2022 06:21:25 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Wed, 02 Feb 2022 20:23:58 GMT
+# Fri, 04 Feb 2022 06:21:25 GMT
 COPY file:1b8409986f3e4eb79a7a0b18472cb2692a61d504fb5ef34292bc997b79fd760d in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Wed, 02 Feb 2022 20:23:59 GMT
+# Fri, 04 Feb 2022 06:21:26 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Wed, 02 Feb 2022 20:23:59 GMT
+# Fri, 04 Feb 2022 06:21:26 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Wed, 02 Feb 2022 20:23:59 GMT
+# Fri, 04 Feb 2022 06:21:26 GMT
 VOLUME [/usr/local/xwiki]
-# Wed, 02 Feb 2022 20:23:59 GMT
+# Fri, 04 Feb 2022 06:21:26 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 02 Feb 2022 20:24:00 GMT
+# Fri, 04 Feb 2022 06:21:27 GMT
 CMD ["xwiki"]
 ```
 
@@ -3436,55 +3436,55 @@ CMD ["xwiki"]
 		Last Modified: Wed, 26 Jan 2022 09:50:57 GMT  
 		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4512bdd2598cabd6c3bd8ee70ad79fceb4082b9bc297ff1b46a4e769ed684062`  
-		Last Modified: Wed, 26 Jan 2022 09:51:16 GMT  
-		Size: 203.1 MB (203118688 bytes)  
+	-	`sha256:fda090e7df3523dc9db18e06c2619b52e4dd2772c2800105e421552c27e599ed`  
+		Last Modified: Thu, 03 Feb 2022 20:58:14 GMT  
+		Size: 203.3 MB (203272575 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80124a46e801eaa1b446b86644d47869682894497815f2f0b77d98e29452343e`  
-		Last Modified: Thu, 27 Jan 2022 19:02:36 GMT  
-		Size: 172.0 B  
+	-	`sha256:e5341f7d466587f60c7ab87e18455c8f3e8f8e64681248565726a71137481f72`  
+		Last Modified: Fri, 04 Feb 2022 02:16:39 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46ecb4b115268768a2248cf5c66cccfb7d7293bba9c2c746337715effd0a1d2a`  
-		Last Modified: Thu, 27 Jan 2022 19:24:17 GMT  
-		Size: 12.5 MB (12522843 bytes)  
+	-	`sha256:658f77ce17d67d7b64dcd870a07d0e58bbe6a1ec52f253b0f93276edc3f1e0e4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:49 GMT  
+		Size: 12.5 MB (12522598 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdf3a46eab5ffff6d0b6fce0a150080847d2b80a4e03afa70c91377c9bf23401`  
-		Last Modified: Thu, 27 Jan 2022 19:24:16 GMT  
-		Size: 130.0 B  
+	-	`sha256:5c32bc7e7c91ebeb93dfcf733e07f2193161f8691a1555e22c9abe163ee7c2d4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:47 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8068c3825818104bc3046fa3ee6b8295aeac3295e175c0e80bd2334886e53ea`  
-		Last Modified: Fri, 28 Jan 2022 00:44:29 GMT  
+	-	`sha256:e07f4a067a7f038cb77c035bc29748f1c173243b916eb9f3a5d4ed9d9ce3a8b9`  
+		Last Modified: Fri, 04 Feb 2022 06:25:39 GMT  
 		Size: 189.4 MB (189410696 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d4e355f31a4633f6833049ad622ff0e7f6fda12e83d58f9c1b23aea02b909c79`  
-		Last Modified: Wed, 02 Feb 2022 20:25:43 GMT  
-		Size: 294.6 MB (294631392 bytes)  
+	-	`sha256:5722f156b54135a8d35147cd2ae370ebfb746a998e3f610b3c9eb58a59eb5906`  
+		Last Modified: Fri, 04 Feb 2022 06:25:31 GMT  
+		Size: 294.6 MB (294631351 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a82cf581932485da05ae12f4bb115a309455e23864cb9ceaa868673ee39ed42`  
-		Last Modified: Wed, 02 Feb 2022 20:25:26 GMT  
-		Size: 2.3 MB (2257827 bytes)  
+	-	`sha256:3aaaf90b2a55fb9aec1bd53b563a358b871aee80d05099bf1dea62de17da3534`  
+		Last Modified: Fri, 04 Feb 2022 06:25:11 GMT  
+		Size: 2.3 MB (2257828 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6c327e945d9319d8a5bf256a70001f511f664f6de2a5405d2929f27990fa2d5d`  
-		Last Modified: Wed, 02 Feb 2022 20:25:25 GMT  
-		Size: 1.3 KB (1344 bytes)  
+	-	`sha256:3656f7ae3d894472354598aaab04609c1d29ccf1fe373ae8fb21b85d9ab1b796`  
+		Last Modified: Fri, 04 Feb 2022 06:25:11 GMT  
+		Size: 1.3 KB (1343 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:76ce4043eaad579741c55b7da771e2a81d41b54bd7ede7a66ef486126650a32c`  
-		Last Modified: Wed, 02 Feb 2022 20:25:26 GMT  
-		Size: 2.3 KB (2307 bytes)  
+	-	`sha256:697d7334af0e409eb5f27dbb21fa43d8f13155aa569ade57189b443725826426`  
+		Last Modified: Fri, 04 Feb 2022 06:25:11 GMT  
+		Size: 2.3 KB (2306 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1e7d28b06145407dd0506f933c67800d3f6571a1996aa9589c1dc41313666483`  
-		Last Modified: Wed, 02 Feb 2022 20:25:25 GMT  
-		Size: 5.7 KB (5744 bytes)  
+	-	`sha256:05a9c1dd22c07dbb8cd1d750013658e27cb3fc2548c1eda39f88528ec612ce4a`  
+		Last Modified: Fri, 04 Feb 2022 06:25:10 GMT  
+		Size: 5.7 KB (5746 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:57ed2f2ba38af3e67f6755317fbfce862c56a0bf3d94f05776cd08a35e388d3d`  
-		Last Modified: Wed, 02 Feb 2022 20:25:26 GMT  
-		Size: 2.5 KB (2503 bytes)  
+	-	`sha256:0791c64daa93259b40b1ca47d9001aad63024b18d2695c69588f77e9961d053f`  
+		Last Modified: Fri, 04 Feb 2022 06:25:10 GMT  
+		Size: 2.5 KB (2505 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `xwiki:14.0-postgres-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:abc72f00b0ba2692009b3820357d45ff103f6851a79fb7fbde8d95224db36f9f
+$ docker pull xwiki@sha256:1fd790d09f4863faab156a64edc7e964854adb2971ad199b76f0e952ecaf8e66
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3495,14 +3495,14 @@ $ docker pull xwiki@sha256:abc72f00b0ba2692009b3820357d45ff103f6851a79fb7fbde8d9
 ### `xwiki:14.0-postgres-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:837c3dc218ae695159e83176e8a9c93c4ad68c0029f0f180463683160cfcd3f5
+$ docker pull xwiki@sha256:f6bf2f54549d6089f0e523d55e602f4d20e927a6c1cd0e9f0f6afa80e77999af
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **832.3 MB (832346635 bytes)**  
+-	Total Size: **832.5 MB (832500336 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d45f3ec7a7229f1d33ccb0bad9556d09c9d2b0348007476bb58ba69ba67afc8`
+-	Image ID: `sha256:bfb0ad62f6ddaf9084f137477622d2dabae7322240ed6b157c1dc2aa0a462475`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -3527,77 +3527,77 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 26 Jan 2022 09:24:15 GMT
 ENV LANG=C.UTF-8
-# Wed, 26 Jan 2022 09:24:15 GMT
-ENV JAVA_VERSION=11.0.13
-# Wed, 26 Jan 2022 09:25:37 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_x64_linux_11.0.13_8.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_aarch64_linux_11.0.13_8.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 26 Jan 2022 09:25:38 GMT
+# Thu, 03 Feb 2022 20:34:14 GMT
+ENV JAVA_VERSION=11.0.14
+# Thu, 03 Feb 2022 20:35:39 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_x64_linux_11.0.14_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_aarch64_linux_11.0.14_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 03 Feb 2022 20:35:40 GMT
 CMD ["jshell"]
-# Thu, 27 Jan 2022 17:44:01 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:02 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 WORKDIR /usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_MAJOR=9
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_VERSION=9.0.58
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_SHA512=33c030a312a0a087deeb06fff921d13a23789e152d30620f33a368e7a2244c762fcf9acd55f3b90f08560704ba45bc2be820bccf2058b0cf5801a7b124f9056d
-# Thu, 27 Jan 2022 18:12:37 GMT
+# Fri, 04 Feb 2022 01:47:39 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		dirmngr 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work; 		catalina.sh version
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 EXPOSE 8080
-# Thu, 27 Jan 2022 18:12:40 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 CMD ["catalina.sh" "run"]
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Fri, 28 Jan 2022 00:40:35 GMT
+# Fri, 04 Feb 2022 06:22:14 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps     libpostgresql-jdbc-java &&   rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 20:24:04 GMT
+# Fri, 04 Feb 2022 06:22:15 GMT
 ENV XWIKI_VERSION=14.0
-# Wed, 02 Feb 2022 20:24:04 GMT
+# Fri, 04 Feb 2022 06:22:15 GMT
 ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/14.0
-# Wed, 02 Feb 2022 20:24:05 GMT
+# Fri, 04 Feb 2022 06:22:16 GMT
 ENV XWIKI_DOWNLOAD_SHA256=9acdc5f54267fd0270b227dcea0ed5351125757a390ca8530f71b0943f4404c5
-# Wed, 02 Feb 2022 20:24:42 GMT
+# Fri, 04 Feb 2022 06:22:54 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Wed, 02 Feb 2022 20:24:44 GMT
+# Fri, 04 Feb 2022 06:22:55 GMT
 RUN cp /usr/share/java/postgresql-jdbc4.jar /usr/local/tomcat/webapps/ROOT/WEB-INF/lib/
-# Wed, 02 Feb 2022 20:24:44 GMT
+# Fri, 04 Feb 2022 06:22:56 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Wed, 02 Feb 2022 20:24:44 GMT
+# Fri, 04 Feb 2022 06:22:56 GMT
 COPY file:4a923f484bb29a26630c19e1d617d3bf6aa6ae7c6c4a5561e97b037bcde0847c in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Wed, 02 Feb 2022 20:24:45 GMT
+# Fri, 04 Feb 2022 06:22:57 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Wed, 02 Feb 2022 20:24:45 GMT
+# Fri, 04 Feb 2022 06:22:57 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Wed, 02 Feb 2022 20:24:46 GMT
+# Fri, 04 Feb 2022 06:22:57 GMT
 VOLUME [/usr/local/xwiki]
-# Wed, 02 Feb 2022 20:24:46 GMT
+# Fri, 04 Feb 2022 06:22:57 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 02 Feb 2022 20:24:46 GMT
+# Fri, 04 Feb 2022 06:22:57 GMT
 CMD ["xwiki"]
 ```
 
@@ -3626,62 +3626,62 @@ CMD ["xwiki"]
 		Last Modified: Wed, 26 Jan 2022 09:50:57 GMT  
 		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4512bdd2598cabd6c3bd8ee70ad79fceb4082b9bc297ff1b46a4e769ed684062`  
-		Last Modified: Wed, 26 Jan 2022 09:51:16 GMT  
-		Size: 203.1 MB (203118688 bytes)  
+	-	`sha256:fda090e7df3523dc9db18e06c2619b52e4dd2772c2800105e421552c27e599ed`  
+		Last Modified: Thu, 03 Feb 2022 20:58:14 GMT  
+		Size: 203.3 MB (203272575 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80124a46e801eaa1b446b86644d47869682894497815f2f0b77d98e29452343e`  
-		Last Modified: Thu, 27 Jan 2022 19:02:36 GMT  
-		Size: 172.0 B  
+	-	`sha256:e5341f7d466587f60c7ab87e18455c8f3e8f8e64681248565726a71137481f72`  
+		Last Modified: Fri, 04 Feb 2022 02:16:39 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46ecb4b115268768a2248cf5c66cccfb7d7293bba9c2c746337715effd0a1d2a`  
-		Last Modified: Thu, 27 Jan 2022 19:24:17 GMT  
-		Size: 12.5 MB (12522843 bytes)  
+	-	`sha256:658f77ce17d67d7b64dcd870a07d0e58bbe6a1ec52f253b0f93276edc3f1e0e4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:49 GMT  
+		Size: 12.5 MB (12522598 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdf3a46eab5ffff6d0b6fce0a150080847d2b80a4e03afa70c91377c9bf23401`  
-		Last Modified: Thu, 27 Jan 2022 19:24:16 GMT  
-		Size: 130.0 B  
+	-	`sha256:5c32bc7e7c91ebeb93dfcf733e07f2193161f8691a1555e22c9abe163ee7c2d4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:47 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af539591d5df2e4985dee90ab6d28ee232867000819a22ea0c5a5a14bb89fd96`  
-		Last Modified: Fri, 28 Jan 2022 00:45:49 GMT  
-		Size: 190.3 MB (190285846 bytes)  
+	-	`sha256:fa796b6a421404c5ed1980b8e1277de92aadd8b243229d78ca48034606f4e44b`  
+		Last Modified: Fri, 04 Feb 2022 06:26:44 GMT  
+		Size: 190.3 MB (190285862 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e4428db8a856beb47aba7ea4b81fb292fd059409b6f250408782e799091c962b`  
-		Last Modified: Wed, 02 Feb 2022 20:26:36 GMT  
-		Size: 294.6 MB (294631351 bytes)  
+	-	`sha256:1954fc2d5c78b6e7d41b866e5e9acd1d6c3b124cbb7d35360555275291454274`  
+		Last Modified: Fri, 04 Feb 2022 06:26:35 GMT  
+		Size: 294.6 MB (294631391 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8bd922bd28f83f50d5a881ffd1b219297e3e98efe7fb929a4b84fee9a17d0efc`  
-		Last Modified: Wed, 02 Feb 2022 20:26:19 GMT  
+	-	`sha256:d3446a4f559b39f481290c50f81b5116f3502a8207fd2240b9d093d6a1d2f1c8`  
+		Last Modified: Fri, 04 Feb 2022 06:26:16 GMT  
 		Size: 846.2 KB (846209 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d1ab2055983b98a3bc6376831a2ac20f32182d3abe005a4a331a1f6a04f99df7`  
-		Last Modified: Wed, 02 Feb 2022 20:26:19 GMT  
+	-	`sha256:a62aa01d56a23a721829209a2ebfa86a6e8429e43a885845db80da121b42fc8b`  
+		Last Modified: Fri, 04 Feb 2022 06:26:15 GMT  
 		Size: 1.3 KB (1343 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f9fb79525796b1d0e91b4e80d0ef2c68ab60dd680bedcd2f36f21c7d59d1afaa`  
-		Last Modified: Wed, 02 Feb 2022 20:26:19 GMT  
+	-	`sha256:6d52718b75aa4b195dd2b01542290317486763781b1a395d92b455ac30dc3216`  
+		Last Modified: Fri, 04 Feb 2022 06:26:15 GMT  
 		Size: 2.5 KB (2455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dd38bd849ed46268c0df253acacf3a94077f1de52ae40546fab86c5a48a5fc55`  
-		Last Modified: Wed, 02 Feb 2022 20:26:19 GMT  
-		Size: 5.7 KB (5745 bytes)  
+	-	`sha256:0c0b585082194e12307f7ea4493165e3435e54f7c102f45a39186dd407ae2721`  
+		Last Modified: Fri, 04 Feb 2022 06:26:15 GMT  
+		Size: 5.7 KB (5744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:928f4afe7901aaa88ba8ac0cc92e3e92b8d282c146429ebeb53a25549a501306`  
-		Last Modified: Wed, 02 Feb 2022 20:26:19 GMT  
-		Size: 2.5 KB (2502 bytes)  
+	-	`sha256:45753e42e89889285411b08e1c3a211df89ffe1a517ceed9923c0601b8d68f1a`  
+		Last Modified: Fri, 04 Feb 2022 06:26:15 GMT  
+		Size: 2.5 KB (2504 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `xwiki:14.0-postgres-tomcat` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:c0691ba2cc01631c74d17b6c097db0ef2a97637cc8226aa17879f5360dadd990
+$ docker pull xwiki@sha256:aacac077fdf66f699c0e83465fed5b61dbd4e372472ba031320825ba62e3d565
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **823.2 MB (823194373 bytes)**  
+-	Total Size: **823.4 MB (823367066 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:889373fd32d59a4c4edc549dd9dbe20a4d20705bb0d1cca2a87d59dc188fc9b6`
+-	Image ID: `sha256:e81db716727d179c0487868ca07a818559372c2813b00f4d814e13bf10226bb0`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -3706,77 +3706,77 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 26 Jan 2022 05:56:10 GMT
 ENV LANG=C.UTF-8
-# Wed, 26 Jan 2022 05:56:11 GMT
-ENV JAVA_VERSION=11.0.13
-# Wed, 26 Jan 2022 05:57:08 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_x64_linux_11.0.13_8.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_aarch64_linux_11.0.13_8.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 26 Jan 2022 05:57:09 GMT
+# Thu, 03 Feb 2022 20:49:24 GMT
+ENV JAVA_VERSION=11.0.14
+# Thu, 03 Feb 2022 20:50:20 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_x64_linux_11.0.14_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_aarch64_linux_11.0.14_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 03 Feb 2022 20:50:21 GMT
 CMD ["jshell"]
-# Wed, 26 Jan 2022 23:45:39 GMT
+# Fri, 04 Feb 2022 00:39:07 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Wed, 26 Jan 2022 23:45:40 GMT
+# Fri, 04 Feb 2022 00:39:08 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 26 Jan 2022 23:45:41 GMT
+# Fri, 04 Feb 2022 00:39:09 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Wed, 26 Jan 2022 23:45:42 GMT
+# Fri, 04 Feb 2022 00:39:10 GMT
 WORKDIR /usr/local/tomcat
-# Wed, 26 Jan 2022 23:45:43 GMT
+# Fri, 04 Feb 2022 00:39:11 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Wed, 26 Jan 2022 23:45:44 GMT
+# Fri, 04 Feb 2022 00:39:12 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 00:07:11 GMT
+# Fri, 04 Feb 2022 01:02:16 GMT
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
-# Thu, 27 Jan 2022 00:07:11 GMT
+# Fri, 04 Feb 2022 01:02:16 GMT
 ENV TOMCAT_MAJOR=9
-# Thu, 27 Jan 2022 00:07:12 GMT
+# Fri, 04 Feb 2022 01:02:17 GMT
 ENV TOMCAT_VERSION=9.0.58
-# Thu, 27 Jan 2022 00:07:13 GMT
+# Fri, 04 Feb 2022 01:02:18 GMT
 ENV TOMCAT_SHA512=33c030a312a0a087deeb06fff921d13a23789e152d30620f33a368e7a2244c762fcf9acd55f3b90f08560704ba45bc2be820bccf2058b0cf5801a7b124f9056d
-# Thu, 27 Jan 2022 00:07:33 GMT
+# Fri, 04 Feb 2022 01:03:23 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		dirmngr 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work; 		catalina.sh version
-# Thu, 27 Jan 2022 00:07:35 GMT
+# Fri, 04 Feb 2022 01:03:25 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 27 Jan 2022 00:07:36 GMT
+# Fri, 04 Feb 2022 01:03:25 GMT
 EXPOSE 8080
-# Thu, 27 Jan 2022 00:07:37 GMT
+# Fri, 04 Feb 2022 01:03:26 GMT
 CMD ["catalina.sh" "run"]
-# Thu, 27 Jan 2022 05:50:31 GMT
+# Fri, 04 Feb 2022 04:15:17 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Thu, 27 Jan 2022 05:50:31 GMT
+# Fri, 04 Feb 2022 04:15:17 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Thu, 27 Jan 2022 05:50:32 GMT
+# Fri, 04 Feb 2022 04:15:18 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Thu, 27 Jan 2022 05:50:33 GMT
+# Fri, 04 Feb 2022 04:15:19 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Thu, 27 Jan 2022 05:50:34 GMT
+# Fri, 04 Feb 2022 04:15:20 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Thu, 27 Jan 2022 05:50:35 GMT
+# Fri, 04 Feb 2022 04:15:21 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Thu, 27 Jan 2022 05:51:17 GMT
+# Fri, 04 Feb 2022 04:15:52 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps     libpostgresql-jdbc-java &&   rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 19:46:33 GMT
+# Fri, 04 Feb 2022 04:15:53 GMT
 ENV XWIKI_VERSION=14.0
-# Wed, 02 Feb 2022 19:46:34 GMT
+# Fri, 04 Feb 2022 04:15:54 GMT
 ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/14.0
-# Wed, 02 Feb 2022 19:46:35 GMT
+# Fri, 04 Feb 2022 04:15:55 GMT
 ENV XWIKI_DOWNLOAD_SHA256=9acdc5f54267fd0270b227dcea0ed5351125757a390ca8530f71b0943f4404c5
-# Wed, 02 Feb 2022 19:48:08 GMT
+# Fri, 04 Feb 2022 04:17:18 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Wed, 02 Feb 2022 19:48:10 GMT
+# Fri, 04 Feb 2022 04:17:20 GMT
 RUN cp /usr/share/java/postgresql-jdbc4.jar /usr/local/tomcat/webapps/ROOT/WEB-INF/lib/
-# Wed, 02 Feb 2022 19:48:11 GMT
+# Fri, 04 Feb 2022 04:17:21 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Wed, 02 Feb 2022 19:48:12 GMT
+# Fri, 04 Feb 2022 04:17:22 GMT
 COPY file:4a923f484bb29a26630c19e1d617d3bf6aa6ae7c6c4a5561e97b037bcde0847c in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Wed, 02 Feb 2022 19:48:13 GMT
+# Fri, 04 Feb 2022 04:17:23 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Wed, 02 Feb 2022 19:48:14 GMT
+# Fri, 04 Feb 2022 04:17:24 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Wed, 02 Feb 2022 19:48:15 GMT
+# Fri, 04 Feb 2022 04:17:25 GMT
 VOLUME [/usr/local/xwiki]
-# Wed, 02 Feb 2022 19:48:16 GMT
+# Fri, 04 Feb 2022 04:17:26 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 02 Feb 2022 19:48:17 GMT
+# Fri, 04 Feb 2022 04:17:27 GMT
 CMD ["xwiki"]
 ```
 
@@ -3805,51 +3805,51 @@ CMD ["xwiki"]
 		Last Modified: Wed, 26 Jan 2022 06:23:04 GMT  
 		Size: 212.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d46cad4095d077981b03d8fc3768a011689e84da8c906b28c8d762521c7d3d1a`  
-		Last Modified: Wed, 26 Jan 2022 06:23:23 GMT  
-		Size: 200.7 MB (200714065 bytes)  
+	-	`sha256:094aec66c6a7d824fad2b23976909d7a80fb1306908ad7fdfa38bded6f5d2f8b`  
+		Last Modified: Thu, 03 Feb 2022 21:12:31 GMT  
+		Size: 200.9 MB (200886679 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:51ffd677e016f0ca2d523555eb31a4bb907122ff28e694bf6f9ffa00d64eb35b`  
-		Last Modified: Thu, 27 Jan 2022 00:48:42 GMT  
+	-	`sha256:4d190c32e6780b7f813e534bb35b54d7c274759716626dd777c454fc06a884a8`  
+		Last Modified: Fri, 04 Feb 2022 01:44:18 GMT  
 		Size: 139.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35788645ec42db1cbdbb0e08d34d9c856f580940026809a268612d29c57b121c`  
-		Last Modified: Thu, 27 Jan 2022 01:04:30 GMT  
-		Size: 12.3 MB (12290038 bytes)  
+	-	`sha256:dfec2cf8d777891eaa322b3fe0e9666127e538e6c0ce47503f5a1ddb102e697b`  
+		Last Modified: Fri, 04 Feb 2022 01:58:19 GMT  
+		Size: 12.3 MB (12289911 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a00e62b554c09b0a5e65167e12d701de6aed0d2a2c9f37df0f4d2d8416380e9`  
-		Last Modified: Thu, 27 Jan 2022 05:55:50 GMT  
-		Size: 185.2 MB (185204053 bytes)  
+	-	`sha256:6b2a11450733610955131b222d21338c16cd2e791d4ab640678898c6885cf082`  
+		Last Modified: Fri, 04 Feb 2022 04:20:14 GMT  
+		Size: 185.2 MB (185204270 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:07d7706f02ede0aa87b190d3cd80ba43efc30d4b373e64de921729026c4d3910`  
-		Last Modified: Wed, 02 Feb 2022 19:49:18 GMT  
-		Size: 294.6 MB (294631653 bytes)  
+	-	`sha256:df23d485d76bf12a5975078ed0ece599663e166585c0e160785c0c8d15622e47`  
+		Last Modified: Fri, 04 Feb 2022 04:20:10 GMT  
+		Size: 294.6 MB (294631646 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae9b9b1c0398c4a17d1068bad2709d8eb38e19cf3452800a0a3fa46c3d54d16d`  
-		Last Modified: Wed, 02 Feb 2022 19:48:56 GMT  
-		Size: 846.2 KB (846207 bytes)  
+	-	`sha256:141480e5cd238a5348df43a6652f7121409cc6f40985912fe490b4e02e011958`  
+		Last Modified: Fri, 04 Feb 2022 04:19:47 GMT  
+		Size: 846.2 KB (846208 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a7a8c336d893c897775265a8caceab3598a055715d822cba8c18f2e95489564e`  
-		Last Modified: Wed, 02 Feb 2022 19:48:55 GMT  
-		Size: 1.3 KB (1343 bytes)  
+	-	`sha256:f60d403609eeac8339bd174b32423892290074ad36512ffc18ef58d6ad770a2f`  
+		Last Modified: Fri, 04 Feb 2022 04:19:47 GMT  
+		Size: 1.3 KB (1344 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eefc762909996628f34206edfcfb4ef938c2525e53f82e2d4a6aa7e77145abc3`  
-		Last Modified: Wed, 02 Feb 2022 19:48:56 GMT  
-		Size: 2.5 KB (2455 bytes)  
+	-	`sha256:2d55dfee5207a361b335d468b8676bdeaf1c27767ec962a7ceff9d564e49904a`  
+		Last Modified: Fri, 04 Feb 2022 04:19:47 GMT  
+		Size: 2.5 KB (2452 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1890ce0750d85fa95733fef93eaf587cd64fec0496577271391ec8178731f15`  
-		Last Modified: Wed, 02 Feb 2022 19:48:55 GMT  
-		Size: 5.7 KB (5744 bytes)  
+	-	`sha256:0a1fa9cfcd5df23c68623edeb850e82ca287e3b57bd759402d25483c187cddc5`  
+		Last Modified: Fri, 04 Feb 2022 04:19:47 GMT  
+		Size: 5.7 KB (5743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4414eceff9cade8fa21f0d6d5dd48ff21a6fe293e07a3e492954c61a39d55028`  
-		Last Modified: Wed, 02 Feb 2022 19:48:56 GMT  
-		Size: 2.5 KB (2503 bytes)  
+	-	`sha256:95a464d8beef9841c1d3bd9fe94ed8b9ae243fb8f72b953952e84fe08f85a423`  
+		Last Modified: Fri, 04 Feb 2022 04:19:47 GMT  
+		Size: 2.5 KB (2501 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `xwiki:latest`
 
 ```console
-$ docker pull xwiki@sha256:4b39210ec80f53df33835759ca3f983a7d0a57373a644ce9502fb3671693245a
+$ docker pull xwiki@sha256:25250e940f2e940a5d57eb24673e056f16330773401b85c57046ded833910c0d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3859,14 +3859,14 @@ $ docker pull xwiki@sha256:4b39210ec80f53df33835759ca3f983a7d0a57373a644ce9502fb
 ### `xwiki:latest` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:de0bfb05f3369e10d3bddafba4715f455cd94ffb937c91ba953218f43c10edc4
+$ docker pull xwiki@sha256:1063cfc53c5126fc8b3505174a98460bbeacff4d51897f5232c1a67a453951f3
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **832.9 MB (832882997 bytes)**  
+-	Total Size: **833.0 MB (833036603 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f9c52a76c8dd336a9d7b35176f51c058e3a5f270fca1b622f942e40b94fb1ccb`
+-	Image ID: `sha256:12c6aae3734f6755cc68cd8261cd5006b8cfcf89dd0373b4c8e2774415c87a5b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -3891,87 +3891,87 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 26 Jan 2022 09:24:15 GMT
 ENV LANG=C.UTF-8
-# Wed, 26 Jan 2022 09:24:15 GMT
-ENV JAVA_VERSION=11.0.13
-# Wed, 26 Jan 2022 09:25:37 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_x64_linux_11.0.13_8.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_aarch64_linux_11.0.13_8.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 26 Jan 2022 09:25:38 GMT
+# Thu, 03 Feb 2022 20:34:14 GMT
+ENV JAVA_VERSION=11.0.14
+# Thu, 03 Feb 2022 20:35:39 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_x64_linux_11.0.14_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_aarch64_linux_11.0.14_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 03 Feb 2022 20:35:40 GMT
 CMD ["jshell"]
-# Thu, 27 Jan 2022 17:44:01 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:02 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 WORKDIR /usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_MAJOR=9
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_VERSION=9.0.58
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_SHA512=33c030a312a0a087deeb06fff921d13a23789e152d30620f33a368e7a2244c762fcf9acd55f3b90f08560704ba45bc2be820bccf2058b0cf5801a7b124f9056d
-# Thu, 27 Jan 2022 18:12:37 GMT
+# Fri, 04 Feb 2022 01:47:39 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		dirmngr 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work; 		catalina.sh version
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 EXPOSE 8080
-# Thu, 27 Jan 2022 18:12:40 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 CMD ["catalina.sh" "run"]
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Fri, 28 Jan 2022 00:39:09 GMT
+# Fri, 04 Feb 2022 06:20:42 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 20:23:16 GMT
+# Fri, 04 Feb 2022 06:20:44 GMT
 ENV XWIKI_VERSION=14.0
-# Wed, 02 Feb 2022 20:23:16 GMT
+# Fri, 04 Feb 2022 06:20:44 GMT
 ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/14.0
-# Wed, 02 Feb 2022 20:23:17 GMT
+# Fri, 04 Feb 2022 06:20:44 GMT
 ENV XWIKI_DOWNLOAD_SHA256=9acdc5f54267fd0270b227dcea0ed5351125757a390ca8530f71b0943f4404c5
-# Wed, 02 Feb 2022 20:23:55 GMT
+# Fri, 04 Feb 2022 06:21:22 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Wed, 02 Feb 2022 20:23:56 GMT
+# Fri, 04 Feb 2022 06:21:23 GMT
 ENV MYSQL_JDBC_VERSION=8.0.22
-# Wed, 02 Feb 2022 20:23:56 GMT
+# Fri, 04 Feb 2022 06:21:23 GMT
 ENV MYSQL_JDBC_SHA256=5019defbd12316295e97a6e88f2a9b07f118345a4e982710bba232e499b22f4f
-# Wed, 02 Feb 2022 20:23:56 GMT
+# Fri, 04 Feb 2022 06:21:23 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.22
-# Wed, 02 Feb 2022 20:23:56 GMT
+# Fri, 04 Feb 2022 06:21:23 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-java-8.0.22.jar
-# Wed, 02 Feb 2022 20:23:57 GMT
+# Fri, 04 Feb 2022 06:21:24 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-java-8.0.22.jar
-# Wed, 02 Feb 2022 20:23:58 GMT
+# Fri, 04 Feb 2022 06:21:25 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c -
-# Wed, 02 Feb 2022 20:23:58 GMT
+# Fri, 04 Feb 2022 06:21:25 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Wed, 02 Feb 2022 20:23:58 GMT
+# Fri, 04 Feb 2022 06:21:25 GMT
 COPY file:1b8409986f3e4eb79a7a0b18472cb2692a61d504fb5ef34292bc997b79fd760d in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Wed, 02 Feb 2022 20:23:59 GMT
+# Fri, 04 Feb 2022 06:21:26 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Wed, 02 Feb 2022 20:23:59 GMT
+# Fri, 04 Feb 2022 06:21:26 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Wed, 02 Feb 2022 20:23:59 GMT
+# Fri, 04 Feb 2022 06:21:26 GMT
 VOLUME [/usr/local/xwiki]
-# Wed, 02 Feb 2022 20:23:59 GMT
+# Fri, 04 Feb 2022 06:21:26 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 02 Feb 2022 20:24:00 GMT
+# Fri, 04 Feb 2022 06:21:27 GMT
 CMD ["xwiki"]
 ```
 
@@ -4000,55 +4000,55 @@ CMD ["xwiki"]
 		Last Modified: Wed, 26 Jan 2022 09:50:57 GMT  
 		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4512bdd2598cabd6c3bd8ee70ad79fceb4082b9bc297ff1b46a4e769ed684062`  
-		Last Modified: Wed, 26 Jan 2022 09:51:16 GMT  
-		Size: 203.1 MB (203118688 bytes)  
+	-	`sha256:fda090e7df3523dc9db18e06c2619b52e4dd2772c2800105e421552c27e599ed`  
+		Last Modified: Thu, 03 Feb 2022 20:58:14 GMT  
+		Size: 203.3 MB (203272575 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80124a46e801eaa1b446b86644d47869682894497815f2f0b77d98e29452343e`  
-		Last Modified: Thu, 27 Jan 2022 19:02:36 GMT  
-		Size: 172.0 B  
+	-	`sha256:e5341f7d466587f60c7ab87e18455c8f3e8f8e64681248565726a71137481f72`  
+		Last Modified: Fri, 04 Feb 2022 02:16:39 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46ecb4b115268768a2248cf5c66cccfb7d7293bba9c2c746337715effd0a1d2a`  
-		Last Modified: Thu, 27 Jan 2022 19:24:17 GMT  
-		Size: 12.5 MB (12522843 bytes)  
+	-	`sha256:658f77ce17d67d7b64dcd870a07d0e58bbe6a1ec52f253b0f93276edc3f1e0e4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:49 GMT  
+		Size: 12.5 MB (12522598 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdf3a46eab5ffff6d0b6fce0a150080847d2b80a4e03afa70c91377c9bf23401`  
-		Last Modified: Thu, 27 Jan 2022 19:24:16 GMT  
-		Size: 130.0 B  
+	-	`sha256:5c32bc7e7c91ebeb93dfcf733e07f2193161f8691a1555e22c9abe163ee7c2d4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:47 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8068c3825818104bc3046fa3ee6b8295aeac3295e175c0e80bd2334886e53ea`  
-		Last Modified: Fri, 28 Jan 2022 00:44:29 GMT  
+	-	`sha256:e07f4a067a7f038cb77c035bc29748f1c173243b916eb9f3a5d4ed9d9ce3a8b9`  
+		Last Modified: Fri, 04 Feb 2022 06:25:39 GMT  
 		Size: 189.4 MB (189410696 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d4e355f31a4633f6833049ad622ff0e7f6fda12e83d58f9c1b23aea02b909c79`  
-		Last Modified: Wed, 02 Feb 2022 20:25:43 GMT  
-		Size: 294.6 MB (294631392 bytes)  
+	-	`sha256:5722f156b54135a8d35147cd2ae370ebfb746a998e3f610b3c9eb58a59eb5906`  
+		Last Modified: Fri, 04 Feb 2022 06:25:31 GMT  
+		Size: 294.6 MB (294631351 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a82cf581932485da05ae12f4bb115a309455e23864cb9ceaa868673ee39ed42`  
-		Last Modified: Wed, 02 Feb 2022 20:25:26 GMT  
-		Size: 2.3 MB (2257827 bytes)  
+	-	`sha256:3aaaf90b2a55fb9aec1bd53b563a358b871aee80d05099bf1dea62de17da3534`  
+		Last Modified: Fri, 04 Feb 2022 06:25:11 GMT  
+		Size: 2.3 MB (2257828 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6c327e945d9319d8a5bf256a70001f511f664f6de2a5405d2929f27990fa2d5d`  
-		Last Modified: Wed, 02 Feb 2022 20:25:25 GMT  
-		Size: 1.3 KB (1344 bytes)  
+	-	`sha256:3656f7ae3d894472354598aaab04609c1d29ccf1fe373ae8fb21b85d9ab1b796`  
+		Last Modified: Fri, 04 Feb 2022 06:25:11 GMT  
+		Size: 1.3 KB (1343 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:76ce4043eaad579741c55b7da771e2a81d41b54bd7ede7a66ef486126650a32c`  
-		Last Modified: Wed, 02 Feb 2022 20:25:26 GMT  
-		Size: 2.3 KB (2307 bytes)  
+	-	`sha256:697d7334af0e409eb5f27dbb21fa43d8f13155aa569ade57189b443725826426`  
+		Last Modified: Fri, 04 Feb 2022 06:25:11 GMT  
+		Size: 2.3 KB (2306 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1e7d28b06145407dd0506f933c67800d3f6571a1996aa9589c1dc41313666483`  
-		Last Modified: Wed, 02 Feb 2022 20:25:25 GMT  
-		Size: 5.7 KB (5744 bytes)  
+	-	`sha256:05a9c1dd22c07dbb8cd1d750013658e27cb3fc2548c1eda39f88528ec612ce4a`  
+		Last Modified: Fri, 04 Feb 2022 06:25:10 GMT  
+		Size: 5.7 KB (5746 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:57ed2f2ba38af3e67f6755317fbfce862c56a0bf3d94f05776cd08a35e388d3d`  
-		Last Modified: Wed, 02 Feb 2022 20:25:26 GMT  
-		Size: 2.5 KB (2503 bytes)  
+	-	`sha256:0791c64daa93259b40b1ca47d9001aad63024b18d2695c69588f77e9961d053f`  
+		Last Modified: Fri, 04 Feb 2022 06:25:10 GMT  
+		Size: 2.5 KB (2505 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `xwiki:lts`
 
 ```console
-$ docker pull xwiki@sha256:09cde5b219f328cf3cc3175cc8036afb3aeafdac2955f5fa4b2372d9ad8b1bc8
+$ docker pull xwiki@sha256:8008e132febfdb4b72082ff200b8e0ec6e2571e6706eeabeebd17841acd96de4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4058,14 +4058,14 @@ $ docker pull xwiki@sha256:09cde5b219f328cf3cc3175cc8036afb3aeafdac2955f5fa4b237
 ### `xwiki:lts` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:0a245333fe825fc874f06a7c75284db8861dd95d2f9e4b892aeab2fe37eba78d
+$ docker pull xwiki@sha256:7aef21f5e703c8d07712f1e67d5e39dbace757b5b9301adf296d67dc02fc8957
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **830.6 MB (830574972 bytes)**  
+-	Total Size: **830.7 MB (830728567 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b298c74729aece85079a36cf038ae611cc3a85ede96a544a00b8a88a99af1490`
+-	Image ID: `sha256:59d1d783b2213cff4466c0fbd54ba750c9a65891552d1e49c01116e2f23e9c08`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -4090,87 +4090,87 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 26 Jan 2022 09:24:15 GMT
 ENV LANG=C.UTF-8
-# Wed, 26 Jan 2022 09:24:15 GMT
-ENV JAVA_VERSION=11.0.13
-# Wed, 26 Jan 2022 09:25:37 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_x64_linux_11.0.13_8.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_aarch64_linux_11.0.13_8.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 26 Jan 2022 09:25:38 GMT
+# Thu, 03 Feb 2022 20:34:14 GMT
+ENV JAVA_VERSION=11.0.14
+# Thu, 03 Feb 2022 20:35:39 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_x64_linux_11.0.14_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_aarch64_linux_11.0.14_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 03 Feb 2022 20:35:40 GMT
 CMD ["jshell"]
-# Thu, 27 Jan 2022 17:44:01 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:02 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 WORKDIR /usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_MAJOR=9
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_VERSION=9.0.58
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_SHA512=33c030a312a0a087deeb06fff921d13a23789e152d30620f33a368e7a2244c762fcf9acd55f3b90f08560704ba45bc2be820bccf2058b0cf5801a7b124f9056d
-# Thu, 27 Jan 2022 18:12:37 GMT
+# Fri, 04 Feb 2022 01:47:39 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		dirmngr 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work; 		catalina.sh version
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 EXPOSE 8080
-# Thu, 27 Jan 2022 18:12:40 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 CMD ["catalina.sh" "run"]
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Fri, 28 Jan 2022 00:39:09 GMT
+# Fri, 04 Feb 2022 06:20:42 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/*
-# Fri, 28 Jan 2022 00:39:10 GMT
+# Fri, 04 Feb 2022 06:23:05 GMT
 ENV XWIKI_VERSION=13.10.2
-# Fri, 28 Jan 2022 00:39:10 GMT
+# Fri, 04 Feb 2022 06:23:05 GMT
 ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/13.10.2
-# Fri, 28 Jan 2022 00:39:11 GMT
+# Fri, 04 Feb 2022 06:23:05 GMT
 ENV XWIKI_DOWNLOAD_SHA256=fc3b0299f5fa903d3fdee2e6af0a69173a8a411a4e027a271772e0666bb6d3aa
-# Fri, 28 Jan 2022 00:39:48 GMT
+# Fri, 04 Feb 2022 06:23:45 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Fri, 28 Jan 2022 00:39:49 GMT
+# Fri, 04 Feb 2022 06:23:46 GMT
 ENV MYSQL_JDBC_VERSION=8.0.22
-# Fri, 28 Jan 2022 00:39:50 GMT
+# Fri, 04 Feb 2022 06:23:46 GMT
 ENV MYSQL_JDBC_SHA256=5019defbd12316295e97a6e88f2a9b07f118345a4e982710bba232e499b22f4f
-# Fri, 28 Jan 2022 00:39:50 GMT
+# Fri, 04 Feb 2022 06:23:46 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.22
-# Fri, 28 Jan 2022 00:39:50 GMT
+# Fri, 04 Feb 2022 06:23:47 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-java-8.0.22.jar
-# Fri, 28 Jan 2022 00:39:50 GMT
+# Fri, 04 Feb 2022 06:23:47 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-java-8.0.22.jar
-# Fri, 28 Jan 2022 00:39:51 GMT
+# Fri, 04 Feb 2022 06:23:48 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c -
-# Fri, 28 Jan 2022 00:39:52 GMT
+# Fri, 04 Feb 2022 06:23:48 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Fri, 28 Jan 2022 00:39:52 GMT
+# Fri, 04 Feb 2022 06:23:48 GMT
 COPY file:1b8409986f3e4eb79a7a0b18472cb2692a61d504fb5ef34292bc997b79fd760d in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Fri, 28 Jan 2022 00:39:52 GMT
+# Fri, 04 Feb 2022 06:23:49 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Fri, 28 Jan 2022 00:39:53 GMT
+# Fri, 04 Feb 2022 06:23:49 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Fri, 28 Jan 2022 00:39:53 GMT
+# Fri, 04 Feb 2022 06:23:50 GMT
 VOLUME [/usr/local/xwiki]
-# Fri, 28 Jan 2022 00:39:53 GMT
+# Fri, 04 Feb 2022 06:23:50 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 28 Jan 2022 00:39:53 GMT
+# Fri, 04 Feb 2022 06:23:50 GMT
 CMD ["xwiki"]
 ```
 
@@ -4199,55 +4199,55 @@ CMD ["xwiki"]
 		Last Modified: Wed, 26 Jan 2022 09:50:57 GMT  
 		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4512bdd2598cabd6c3bd8ee70ad79fceb4082b9bc297ff1b46a4e769ed684062`  
-		Last Modified: Wed, 26 Jan 2022 09:51:16 GMT  
-		Size: 203.1 MB (203118688 bytes)  
+	-	`sha256:fda090e7df3523dc9db18e06c2619b52e4dd2772c2800105e421552c27e599ed`  
+		Last Modified: Thu, 03 Feb 2022 20:58:14 GMT  
+		Size: 203.3 MB (203272575 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80124a46e801eaa1b446b86644d47869682894497815f2f0b77d98e29452343e`  
-		Last Modified: Thu, 27 Jan 2022 19:02:36 GMT  
-		Size: 172.0 B  
+	-	`sha256:e5341f7d466587f60c7ab87e18455c8f3e8f8e64681248565726a71137481f72`  
+		Last Modified: Fri, 04 Feb 2022 02:16:39 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46ecb4b115268768a2248cf5c66cccfb7d7293bba9c2c746337715effd0a1d2a`  
-		Last Modified: Thu, 27 Jan 2022 19:24:17 GMT  
-		Size: 12.5 MB (12522843 bytes)  
+	-	`sha256:658f77ce17d67d7b64dcd870a07d0e58bbe6a1ec52f253b0f93276edc3f1e0e4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:49 GMT  
+		Size: 12.5 MB (12522598 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdf3a46eab5ffff6d0b6fce0a150080847d2b80a4e03afa70c91377c9bf23401`  
-		Last Modified: Thu, 27 Jan 2022 19:24:16 GMT  
-		Size: 130.0 B  
+	-	`sha256:5c32bc7e7c91ebeb93dfcf733e07f2193161f8691a1555e22c9abe163ee7c2d4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:47 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8068c3825818104bc3046fa3ee6b8295aeac3295e175c0e80bd2334886e53ea`  
-		Last Modified: Fri, 28 Jan 2022 00:44:29 GMT  
+	-	`sha256:e07f4a067a7f038cb77c035bc29748f1c173243b916eb9f3a5d4ed9d9ce3a8b9`  
+		Last Modified: Fri, 04 Feb 2022 06:25:39 GMT  
 		Size: 189.4 MB (189410696 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:396889a0f6c7b282fc8d77b0b050128c83fc3b789cfda9077d37bbe3b1075837`  
-		Last Modified: Fri, 28 Jan 2022 00:44:19 GMT  
-		Size: 292.3 MB (292323788 bytes)  
+	-	`sha256:da601c88fd3f0ad0637b15c6be500ca10a5ff04d374cbf4de97dee0214cb509c`  
+		Last Modified: Fri, 04 Feb 2022 06:27:24 GMT  
+		Size: 292.3 MB (292323742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4fe365e4da623218296e5353817ead969edc901534865d157d7abd8d698952af`  
-		Last Modified: Fri, 28 Jan 2022 00:44:00 GMT  
-		Size: 2.3 MB (2257823 bytes)  
+	-	`sha256:7c0d2774f6069962ecff7b71f9e87c0b777f8583c101e5b840c340eb527c0bb3`  
+		Last Modified: Fri, 04 Feb 2022 06:27:05 GMT  
+		Size: 2.3 MB (2257819 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d3b6c3e9a0f7a62b1be438aecac9577ffe2ce689774c66df8665aa5abc9cdae`  
-		Last Modified: Fri, 28 Jan 2022 00:44:00 GMT  
-		Size: 1.3 KB (1340 bytes)  
+	-	`sha256:c3e2a765d0aedd26d93c03068af86d301664476521beff2a4981266734d7a321`  
+		Last Modified: Fri, 04 Feb 2022 06:27:05 GMT  
+		Size: 1.3 KB (1344 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9186f3274fcb6303685907a1b62454e6dec93f14e1746c61a5642896c1f17320`  
-		Last Modified: Fri, 28 Jan 2022 00:44:00 GMT  
-		Size: 2.3 KB (2306 bytes)  
+	-	`sha256:05ff3ee34c3886920b58e8fe87ad3b9825d73df08b79e042c83841fc86efc742`  
+		Last Modified: Fri, 04 Feb 2022 06:27:05 GMT  
+		Size: 2.3 KB (2305 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f906af211ae8369e59c729bae16166918ba94919c1aba7c85a381c324327088`  
-		Last Modified: Fri, 28 Jan 2022 00:44:00 GMT  
-		Size: 5.3 KB (5332 bytes)  
+	-	`sha256:56c15f2d682052b629b4c684cab30b4d2a296b23b9b57b2a31a5fd0e6a12ce21`  
+		Last Modified: Fri, 04 Feb 2022 06:27:05 GMT  
+		Size: 5.3 KB (5331 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:831e56417aefbe60ed5799fe7bb7e47f51ab7b971fe81bf734317fed71f822a4`  
-		Last Modified: Fri, 28 Jan 2022 00:44:00 GMT  
-		Size: 2.5 KB (2503 bytes)  
+	-	`sha256:b309a178723e0dc4d831943ab093c646a536802b0fd5560039c9fdcc8d31b710`  
+		Last Modified: Fri, 04 Feb 2022 06:27:05 GMT  
+		Size: 2.5 KB (2502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `xwiki:lts-mysql`
 
 ```console
-$ docker pull xwiki@sha256:09cde5b219f328cf3cc3175cc8036afb3aeafdac2955f5fa4b2372d9ad8b1bc8
+$ docker pull xwiki@sha256:8008e132febfdb4b72082ff200b8e0ec6e2571e6706eeabeebd17841acd96de4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4257,14 +4257,14 @@ $ docker pull xwiki@sha256:09cde5b219f328cf3cc3175cc8036afb3aeafdac2955f5fa4b237
 ### `xwiki:lts-mysql` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:0a245333fe825fc874f06a7c75284db8861dd95d2f9e4b892aeab2fe37eba78d
+$ docker pull xwiki@sha256:7aef21f5e703c8d07712f1e67d5e39dbace757b5b9301adf296d67dc02fc8957
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **830.6 MB (830574972 bytes)**  
+-	Total Size: **830.7 MB (830728567 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b298c74729aece85079a36cf038ae611cc3a85ede96a544a00b8a88a99af1490`
+-	Image ID: `sha256:59d1d783b2213cff4466c0fbd54ba750c9a65891552d1e49c01116e2f23e9c08`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -4289,87 +4289,87 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 26 Jan 2022 09:24:15 GMT
 ENV LANG=C.UTF-8
-# Wed, 26 Jan 2022 09:24:15 GMT
-ENV JAVA_VERSION=11.0.13
-# Wed, 26 Jan 2022 09:25:37 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_x64_linux_11.0.13_8.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_aarch64_linux_11.0.13_8.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 26 Jan 2022 09:25:38 GMT
+# Thu, 03 Feb 2022 20:34:14 GMT
+ENV JAVA_VERSION=11.0.14
+# Thu, 03 Feb 2022 20:35:39 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_x64_linux_11.0.14_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_aarch64_linux_11.0.14_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 03 Feb 2022 20:35:40 GMT
 CMD ["jshell"]
-# Thu, 27 Jan 2022 17:44:01 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:02 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 WORKDIR /usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_MAJOR=9
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_VERSION=9.0.58
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_SHA512=33c030a312a0a087deeb06fff921d13a23789e152d30620f33a368e7a2244c762fcf9acd55f3b90f08560704ba45bc2be820bccf2058b0cf5801a7b124f9056d
-# Thu, 27 Jan 2022 18:12:37 GMT
+# Fri, 04 Feb 2022 01:47:39 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		dirmngr 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work; 		catalina.sh version
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 EXPOSE 8080
-# Thu, 27 Jan 2022 18:12:40 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 CMD ["catalina.sh" "run"]
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Fri, 28 Jan 2022 00:39:09 GMT
+# Fri, 04 Feb 2022 06:20:42 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/*
-# Fri, 28 Jan 2022 00:39:10 GMT
+# Fri, 04 Feb 2022 06:23:05 GMT
 ENV XWIKI_VERSION=13.10.2
-# Fri, 28 Jan 2022 00:39:10 GMT
+# Fri, 04 Feb 2022 06:23:05 GMT
 ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/13.10.2
-# Fri, 28 Jan 2022 00:39:11 GMT
+# Fri, 04 Feb 2022 06:23:05 GMT
 ENV XWIKI_DOWNLOAD_SHA256=fc3b0299f5fa903d3fdee2e6af0a69173a8a411a4e027a271772e0666bb6d3aa
-# Fri, 28 Jan 2022 00:39:48 GMT
+# Fri, 04 Feb 2022 06:23:45 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Fri, 28 Jan 2022 00:39:49 GMT
+# Fri, 04 Feb 2022 06:23:46 GMT
 ENV MYSQL_JDBC_VERSION=8.0.22
-# Fri, 28 Jan 2022 00:39:50 GMT
+# Fri, 04 Feb 2022 06:23:46 GMT
 ENV MYSQL_JDBC_SHA256=5019defbd12316295e97a6e88f2a9b07f118345a4e982710bba232e499b22f4f
-# Fri, 28 Jan 2022 00:39:50 GMT
+# Fri, 04 Feb 2022 06:23:46 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.22
-# Fri, 28 Jan 2022 00:39:50 GMT
+# Fri, 04 Feb 2022 06:23:47 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-java-8.0.22.jar
-# Fri, 28 Jan 2022 00:39:50 GMT
+# Fri, 04 Feb 2022 06:23:47 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-java-8.0.22.jar
-# Fri, 28 Jan 2022 00:39:51 GMT
+# Fri, 04 Feb 2022 06:23:48 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c -
-# Fri, 28 Jan 2022 00:39:52 GMT
+# Fri, 04 Feb 2022 06:23:48 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Fri, 28 Jan 2022 00:39:52 GMT
+# Fri, 04 Feb 2022 06:23:48 GMT
 COPY file:1b8409986f3e4eb79a7a0b18472cb2692a61d504fb5ef34292bc997b79fd760d in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Fri, 28 Jan 2022 00:39:52 GMT
+# Fri, 04 Feb 2022 06:23:49 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Fri, 28 Jan 2022 00:39:53 GMT
+# Fri, 04 Feb 2022 06:23:49 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Fri, 28 Jan 2022 00:39:53 GMT
+# Fri, 04 Feb 2022 06:23:50 GMT
 VOLUME [/usr/local/xwiki]
-# Fri, 28 Jan 2022 00:39:53 GMT
+# Fri, 04 Feb 2022 06:23:50 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 28 Jan 2022 00:39:53 GMT
+# Fri, 04 Feb 2022 06:23:50 GMT
 CMD ["xwiki"]
 ```
 
@@ -4398,55 +4398,55 @@ CMD ["xwiki"]
 		Last Modified: Wed, 26 Jan 2022 09:50:57 GMT  
 		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4512bdd2598cabd6c3bd8ee70ad79fceb4082b9bc297ff1b46a4e769ed684062`  
-		Last Modified: Wed, 26 Jan 2022 09:51:16 GMT  
-		Size: 203.1 MB (203118688 bytes)  
+	-	`sha256:fda090e7df3523dc9db18e06c2619b52e4dd2772c2800105e421552c27e599ed`  
+		Last Modified: Thu, 03 Feb 2022 20:58:14 GMT  
+		Size: 203.3 MB (203272575 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80124a46e801eaa1b446b86644d47869682894497815f2f0b77d98e29452343e`  
-		Last Modified: Thu, 27 Jan 2022 19:02:36 GMT  
-		Size: 172.0 B  
+	-	`sha256:e5341f7d466587f60c7ab87e18455c8f3e8f8e64681248565726a71137481f72`  
+		Last Modified: Fri, 04 Feb 2022 02:16:39 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46ecb4b115268768a2248cf5c66cccfb7d7293bba9c2c746337715effd0a1d2a`  
-		Last Modified: Thu, 27 Jan 2022 19:24:17 GMT  
-		Size: 12.5 MB (12522843 bytes)  
+	-	`sha256:658f77ce17d67d7b64dcd870a07d0e58bbe6a1ec52f253b0f93276edc3f1e0e4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:49 GMT  
+		Size: 12.5 MB (12522598 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdf3a46eab5ffff6d0b6fce0a150080847d2b80a4e03afa70c91377c9bf23401`  
-		Last Modified: Thu, 27 Jan 2022 19:24:16 GMT  
-		Size: 130.0 B  
+	-	`sha256:5c32bc7e7c91ebeb93dfcf733e07f2193161f8691a1555e22c9abe163ee7c2d4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:47 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8068c3825818104bc3046fa3ee6b8295aeac3295e175c0e80bd2334886e53ea`  
-		Last Modified: Fri, 28 Jan 2022 00:44:29 GMT  
+	-	`sha256:e07f4a067a7f038cb77c035bc29748f1c173243b916eb9f3a5d4ed9d9ce3a8b9`  
+		Last Modified: Fri, 04 Feb 2022 06:25:39 GMT  
 		Size: 189.4 MB (189410696 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:396889a0f6c7b282fc8d77b0b050128c83fc3b789cfda9077d37bbe3b1075837`  
-		Last Modified: Fri, 28 Jan 2022 00:44:19 GMT  
-		Size: 292.3 MB (292323788 bytes)  
+	-	`sha256:da601c88fd3f0ad0637b15c6be500ca10a5ff04d374cbf4de97dee0214cb509c`  
+		Last Modified: Fri, 04 Feb 2022 06:27:24 GMT  
+		Size: 292.3 MB (292323742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4fe365e4da623218296e5353817ead969edc901534865d157d7abd8d698952af`  
-		Last Modified: Fri, 28 Jan 2022 00:44:00 GMT  
-		Size: 2.3 MB (2257823 bytes)  
+	-	`sha256:7c0d2774f6069962ecff7b71f9e87c0b777f8583c101e5b840c340eb527c0bb3`  
+		Last Modified: Fri, 04 Feb 2022 06:27:05 GMT  
+		Size: 2.3 MB (2257819 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d3b6c3e9a0f7a62b1be438aecac9577ffe2ce689774c66df8665aa5abc9cdae`  
-		Last Modified: Fri, 28 Jan 2022 00:44:00 GMT  
-		Size: 1.3 KB (1340 bytes)  
+	-	`sha256:c3e2a765d0aedd26d93c03068af86d301664476521beff2a4981266734d7a321`  
+		Last Modified: Fri, 04 Feb 2022 06:27:05 GMT  
+		Size: 1.3 KB (1344 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9186f3274fcb6303685907a1b62454e6dec93f14e1746c61a5642896c1f17320`  
-		Last Modified: Fri, 28 Jan 2022 00:44:00 GMT  
-		Size: 2.3 KB (2306 bytes)  
+	-	`sha256:05ff3ee34c3886920b58e8fe87ad3b9825d73df08b79e042c83841fc86efc742`  
+		Last Modified: Fri, 04 Feb 2022 06:27:05 GMT  
+		Size: 2.3 KB (2305 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f906af211ae8369e59c729bae16166918ba94919c1aba7c85a381c324327088`  
-		Last Modified: Fri, 28 Jan 2022 00:44:00 GMT  
-		Size: 5.3 KB (5332 bytes)  
+	-	`sha256:56c15f2d682052b629b4c684cab30b4d2a296b23b9b57b2a31a5fd0e6a12ce21`  
+		Last Modified: Fri, 04 Feb 2022 06:27:05 GMT  
+		Size: 5.3 KB (5331 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:831e56417aefbe60ed5799fe7bb7e47f51ab7b971fe81bf734317fed71f822a4`  
-		Last Modified: Fri, 28 Jan 2022 00:44:00 GMT  
-		Size: 2.5 KB (2503 bytes)  
+	-	`sha256:b309a178723e0dc4d831943ab093c646a536802b0fd5560039c9fdcc8d31b710`  
+		Last Modified: Fri, 04 Feb 2022 06:27:05 GMT  
+		Size: 2.5 KB (2502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `xwiki:lts-mysql-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:09cde5b219f328cf3cc3175cc8036afb3aeafdac2955f5fa4b2372d9ad8b1bc8
+$ docker pull xwiki@sha256:8008e132febfdb4b72082ff200b8e0ec6e2571e6706eeabeebd17841acd96de4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4456,14 +4456,14 @@ $ docker pull xwiki@sha256:09cde5b219f328cf3cc3175cc8036afb3aeafdac2955f5fa4b237
 ### `xwiki:lts-mysql-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:0a245333fe825fc874f06a7c75284db8861dd95d2f9e4b892aeab2fe37eba78d
+$ docker pull xwiki@sha256:7aef21f5e703c8d07712f1e67d5e39dbace757b5b9301adf296d67dc02fc8957
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **830.6 MB (830574972 bytes)**  
+-	Total Size: **830.7 MB (830728567 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b298c74729aece85079a36cf038ae611cc3a85ede96a544a00b8a88a99af1490`
+-	Image ID: `sha256:59d1d783b2213cff4466c0fbd54ba750c9a65891552d1e49c01116e2f23e9c08`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -4488,87 +4488,87 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 26 Jan 2022 09:24:15 GMT
 ENV LANG=C.UTF-8
-# Wed, 26 Jan 2022 09:24:15 GMT
-ENV JAVA_VERSION=11.0.13
-# Wed, 26 Jan 2022 09:25:37 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_x64_linux_11.0.13_8.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_aarch64_linux_11.0.13_8.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 26 Jan 2022 09:25:38 GMT
+# Thu, 03 Feb 2022 20:34:14 GMT
+ENV JAVA_VERSION=11.0.14
+# Thu, 03 Feb 2022 20:35:39 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_x64_linux_11.0.14_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_aarch64_linux_11.0.14_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 03 Feb 2022 20:35:40 GMT
 CMD ["jshell"]
-# Thu, 27 Jan 2022 17:44:01 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:02 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 WORKDIR /usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_MAJOR=9
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_VERSION=9.0.58
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_SHA512=33c030a312a0a087deeb06fff921d13a23789e152d30620f33a368e7a2244c762fcf9acd55f3b90f08560704ba45bc2be820bccf2058b0cf5801a7b124f9056d
-# Thu, 27 Jan 2022 18:12:37 GMT
+# Fri, 04 Feb 2022 01:47:39 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		dirmngr 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work; 		catalina.sh version
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 EXPOSE 8080
-# Thu, 27 Jan 2022 18:12:40 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 CMD ["catalina.sh" "run"]
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Fri, 28 Jan 2022 00:39:09 GMT
+# Fri, 04 Feb 2022 06:20:42 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/*
-# Fri, 28 Jan 2022 00:39:10 GMT
+# Fri, 04 Feb 2022 06:23:05 GMT
 ENV XWIKI_VERSION=13.10.2
-# Fri, 28 Jan 2022 00:39:10 GMT
+# Fri, 04 Feb 2022 06:23:05 GMT
 ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/13.10.2
-# Fri, 28 Jan 2022 00:39:11 GMT
+# Fri, 04 Feb 2022 06:23:05 GMT
 ENV XWIKI_DOWNLOAD_SHA256=fc3b0299f5fa903d3fdee2e6af0a69173a8a411a4e027a271772e0666bb6d3aa
-# Fri, 28 Jan 2022 00:39:48 GMT
+# Fri, 04 Feb 2022 06:23:45 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Fri, 28 Jan 2022 00:39:49 GMT
+# Fri, 04 Feb 2022 06:23:46 GMT
 ENV MYSQL_JDBC_VERSION=8.0.22
-# Fri, 28 Jan 2022 00:39:50 GMT
+# Fri, 04 Feb 2022 06:23:46 GMT
 ENV MYSQL_JDBC_SHA256=5019defbd12316295e97a6e88f2a9b07f118345a4e982710bba232e499b22f4f
-# Fri, 28 Jan 2022 00:39:50 GMT
+# Fri, 04 Feb 2022 06:23:46 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.22
-# Fri, 28 Jan 2022 00:39:50 GMT
+# Fri, 04 Feb 2022 06:23:47 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-java-8.0.22.jar
-# Fri, 28 Jan 2022 00:39:50 GMT
+# Fri, 04 Feb 2022 06:23:47 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-java-8.0.22.jar
-# Fri, 28 Jan 2022 00:39:51 GMT
+# Fri, 04 Feb 2022 06:23:48 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c -
-# Fri, 28 Jan 2022 00:39:52 GMT
+# Fri, 04 Feb 2022 06:23:48 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Fri, 28 Jan 2022 00:39:52 GMT
+# Fri, 04 Feb 2022 06:23:48 GMT
 COPY file:1b8409986f3e4eb79a7a0b18472cb2692a61d504fb5ef34292bc997b79fd760d in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Fri, 28 Jan 2022 00:39:52 GMT
+# Fri, 04 Feb 2022 06:23:49 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Fri, 28 Jan 2022 00:39:53 GMT
+# Fri, 04 Feb 2022 06:23:49 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Fri, 28 Jan 2022 00:39:53 GMT
+# Fri, 04 Feb 2022 06:23:50 GMT
 VOLUME [/usr/local/xwiki]
-# Fri, 28 Jan 2022 00:39:53 GMT
+# Fri, 04 Feb 2022 06:23:50 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 28 Jan 2022 00:39:53 GMT
+# Fri, 04 Feb 2022 06:23:50 GMT
 CMD ["xwiki"]
 ```
 
@@ -4597,55 +4597,55 @@ CMD ["xwiki"]
 		Last Modified: Wed, 26 Jan 2022 09:50:57 GMT  
 		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4512bdd2598cabd6c3bd8ee70ad79fceb4082b9bc297ff1b46a4e769ed684062`  
-		Last Modified: Wed, 26 Jan 2022 09:51:16 GMT  
-		Size: 203.1 MB (203118688 bytes)  
+	-	`sha256:fda090e7df3523dc9db18e06c2619b52e4dd2772c2800105e421552c27e599ed`  
+		Last Modified: Thu, 03 Feb 2022 20:58:14 GMT  
+		Size: 203.3 MB (203272575 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80124a46e801eaa1b446b86644d47869682894497815f2f0b77d98e29452343e`  
-		Last Modified: Thu, 27 Jan 2022 19:02:36 GMT  
-		Size: 172.0 B  
+	-	`sha256:e5341f7d466587f60c7ab87e18455c8f3e8f8e64681248565726a71137481f72`  
+		Last Modified: Fri, 04 Feb 2022 02:16:39 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46ecb4b115268768a2248cf5c66cccfb7d7293bba9c2c746337715effd0a1d2a`  
-		Last Modified: Thu, 27 Jan 2022 19:24:17 GMT  
-		Size: 12.5 MB (12522843 bytes)  
+	-	`sha256:658f77ce17d67d7b64dcd870a07d0e58bbe6a1ec52f253b0f93276edc3f1e0e4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:49 GMT  
+		Size: 12.5 MB (12522598 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdf3a46eab5ffff6d0b6fce0a150080847d2b80a4e03afa70c91377c9bf23401`  
-		Last Modified: Thu, 27 Jan 2022 19:24:16 GMT  
-		Size: 130.0 B  
+	-	`sha256:5c32bc7e7c91ebeb93dfcf733e07f2193161f8691a1555e22c9abe163ee7c2d4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:47 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8068c3825818104bc3046fa3ee6b8295aeac3295e175c0e80bd2334886e53ea`  
-		Last Modified: Fri, 28 Jan 2022 00:44:29 GMT  
+	-	`sha256:e07f4a067a7f038cb77c035bc29748f1c173243b916eb9f3a5d4ed9d9ce3a8b9`  
+		Last Modified: Fri, 04 Feb 2022 06:25:39 GMT  
 		Size: 189.4 MB (189410696 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:396889a0f6c7b282fc8d77b0b050128c83fc3b789cfda9077d37bbe3b1075837`  
-		Last Modified: Fri, 28 Jan 2022 00:44:19 GMT  
-		Size: 292.3 MB (292323788 bytes)  
+	-	`sha256:da601c88fd3f0ad0637b15c6be500ca10a5ff04d374cbf4de97dee0214cb509c`  
+		Last Modified: Fri, 04 Feb 2022 06:27:24 GMT  
+		Size: 292.3 MB (292323742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4fe365e4da623218296e5353817ead969edc901534865d157d7abd8d698952af`  
-		Last Modified: Fri, 28 Jan 2022 00:44:00 GMT  
-		Size: 2.3 MB (2257823 bytes)  
+	-	`sha256:7c0d2774f6069962ecff7b71f9e87c0b777f8583c101e5b840c340eb527c0bb3`  
+		Last Modified: Fri, 04 Feb 2022 06:27:05 GMT  
+		Size: 2.3 MB (2257819 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d3b6c3e9a0f7a62b1be438aecac9577ffe2ce689774c66df8665aa5abc9cdae`  
-		Last Modified: Fri, 28 Jan 2022 00:44:00 GMT  
-		Size: 1.3 KB (1340 bytes)  
+	-	`sha256:c3e2a765d0aedd26d93c03068af86d301664476521beff2a4981266734d7a321`  
+		Last Modified: Fri, 04 Feb 2022 06:27:05 GMT  
+		Size: 1.3 KB (1344 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9186f3274fcb6303685907a1b62454e6dec93f14e1746c61a5642896c1f17320`  
-		Last Modified: Fri, 28 Jan 2022 00:44:00 GMT  
-		Size: 2.3 KB (2306 bytes)  
+	-	`sha256:05ff3ee34c3886920b58e8fe87ad3b9825d73df08b79e042c83841fc86efc742`  
+		Last Modified: Fri, 04 Feb 2022 06:27:05 GMT  
+		Size: 2.3 KB (2305 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f906af211ae8369e59c729bae16166918ba94919c1aba7c85a381c324327088`  
-		Last Modified: Fri, 28 Jan 2022 00:44:00 GMT  
-		Size: 5.3 KB (5332 bytes)  
+	-	`sha256:56c15f2d682052b629b4c684cab30b4d2a296b23b9b57b2a31a5fd0e6a12ce21`  
+		Last Modified: Fri, 04 Feb 2022 06:27:05 GMT  
+		Size: 5.3 KB (5331 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:831e56417aefbe60ed5799fe7bb7e47f51ab7b971fe81bf734317fed71f822a4`  
-		Last Modified: Fri, 28 Jan 2022 00:44:00 GMT  
-		Size: 2.5 KB (2503 bytes)  
+	-	`sha256:b309a178723e0dc4d831943ab093c646a536802b0fd5560039c9fdcc8d31b710`  
+		Last Modified: Fri, 04 Feb 2022 06:27:05 GMT  
+		Size: 2.5 KB (2502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `xwiki:lts-postgres`
 
 ```console
-$ docker pull xwiki@sha256:75e4cbe812d17014e0e2f5f3bb06b9043ac91d335c2f2f1a755470215a588966
+$ docker pull xwiki@sha256:2e6a54cc855abd068672be3157736cbdffa3e7069b4650e2bfa28801c5b53fc1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4656,14 +4656,14 @@ $ docker pull xwiki@sha256:75e4cbe812d17014e0e2f5f3bb06b9043ac91d335c2f2f1a75547
 ### `xwiki:lts-postgres` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:3d21d1b6a4b6b88f133adc7cfdc055fa6f92d486ee123cb09b627d7de33f9555
+$ docker pull xwiki@sha256:e753a5533755a2cea10b563c4063647834d6692bc99cd88bad8e8a215f7dd957
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **830.0 MB (830038637 bytes)**  
+-	Total Size: **830.2 MB (830192305 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:753a58ea527df2f7f1b68ae385249bf80892268c291edc72a89982a51b27fe3a`
+-	Image ID: `sha256:107637fe0f3cc8b2889d6c53fd224faf68f8541f56b42e0d281f1d6578954eca`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -4688,77 +4688,77 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 26 Jan 2022 09:24:15 GMT
 ENV LANG=C.UTF-8
-# Wed, 26 Jan 2022 09:24:15 GMT
-ENV JAVA_VERSION=11.0.13
-# Wed, 26 Jan 2022 09:25:37 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_x64_linux_11.0.13_8.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_aarch64_linux_11.0.13_8.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 26 Jan 2022 09:25:38 GMT
+# Thu, 03 Feb 2022 20:34:14 GMT
+ENV JAVA_VERSION=11.0.14
+# Thu, 03 Feb 2022 20:35:39 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_x64_linux_11.0.14_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_aarch64_linux_11.0.14_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 03 Feb 2022 20:35:40 GMT
 CMD ["jshell"]
-# Thu, 27 Jan 2022 17:44:01 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:02 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 WORKDIR /usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_MAJOR=9
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_VERSION=9.0.58
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_SHA512=33c030a312a0a087deeb06fff921d13a23789e152d30620f33a368e7a2244c762fcf9acd55f3b90f08560704ba45bc2be820bccf2058b0cf5801a7b124f9056d
-# Thu, 27 Jan 2022 18:12:37 GMT
+# Fri, 04 Feb 2022 01:47:39 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		dirmngr 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work; 		catalina.sh version
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 EXPOSE 8080
-# Thu, 27 Jan 2022 18:12:40 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 CMD ["catalina.sh" "run"]
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Fri, 28 Jan 2022 00:40:35 GMT
+# Fri, 04 Feb 2022 06:22:14 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps     libpostgresql-jdbc-java &&   rm -rf /var/lib/apt/lists/*
-# Fri, 28 Jan 2022 00:40:36 GMT
+# Fri, 04 Feb 2022 06:23:54 GMT
 ENV XWIKI_VERSION=13.10.2
-# Fri, 28 Jan 2022 00:40:37 GMT
+# Fri, 04 Feb 2022 06:23:54 GMT
 ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/13.10.2
-# Fri, 28 Jan 2022 00:40:37 GMT
+# Fri, 04 Feb 2022 06:23:54 GMT
 ENV XWIKI_DOWNLOAD_SHA256=fc3b0299f5fa903d3fdee2e6af0a69173a8a411a4e027a271772e0666bb6d3aa
-# Fri, 28 Jan 2022 00:41:25 GMT
+# Fri, 04 Feb 2022 06:24:32 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Fri, 28 Jan 2022 00:41:27 GMT
+# Fri, 04 Feb 2022 06:24:34 GMT
 RUN cp /usr/share/java/postgresql-jdbc4.jar /usr/local/tomcat/webapps/ROOT/WEB-INF/lib/
-# Fri, 28 Jan 2022 00:41:27 GMT
+# Fri, 04 Feb 2022 06:24:34 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Fri, 28 Jan 2022 00:41:27 GMT
+# Fri, 04 Feb 2022 06:24:34 GMT
 COPY file:4a923f484bb29a26630c19e1d617d3bf6aa6ae7c6c4a5561e97b037bcde0847c in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Fri, 28 Jan 2022 00:41:28 GMT
+# Fri, 04 Feb 2022 06:24:35 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Fri, 28 Jan 2022 00:41:28 GMT
+# Fri, 04 Feb 2022 06:24:35 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Fri, 28 Jan 2022 00:41:28 GMT
+# Fri, 04 Feb 2022 06:24:36 GMT
 VOLUME [/usr/local/xwiki]
-# Fri, 28 Jan 2022 00:41:28 GMT
+# Fri, 04 Feb 2022 06:24:36 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 28 Jan 2022 00:41:29 GMT
+# Fri, 04 Feb 2022 06:24:36 GMT
 CMD ["xwiki"]
 ```
 
@@ -4787,62 +4787,62 @@ CMD ["xwiki"]
 		Last Modified: Wed, 26 Jan 2022 09:50:57 GMT  
 		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4512bdd2598cabd6c3bd8ee70ad79fceb4082b9bc297ff1b46a4e769ed684062`  
-		Last Modified: Wed, 26 Jan 2022 09:51:16 GMT  
-		Size: 203.1 MB (203118688 bytes)  
+	-	`sha256:fda090e7df3523dc9db18e06c2619b52e4dd2772c2800105e421552c27e599ed`  
+		Last Modified: Thu, 03 Feb 2022 20:58:14 GMT  
+		Size: 203.3 MB (203272575 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80124a46e801eaa1b446b86644d47869682894497815f2f0b77d98e29452343e`  
-		Last Modified: Thu, 27 Jan 2022 19:02:36 GMT  
-		Size: 172.0 B  
+	-	`sha256:e5341f7d466587f60c7ab87e18455c8f3e8f8e64681248565726a71137481f72`  
+		Last Modified: Fri, 04 Feb 2022 02:16:39 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46ecb4b115268768a2248cf5c66cccfb7d7293bba9c2c746337715effd0a1d2a`  
-		Last Modified: Thu, 27 Jan 2022 19:24:17 GMT  
-		Size: 12.5 MB (12522843 bytes)  
+	-	`sha256:658f77ce17d67d7b64dcd870a07d0e58bbe6a1ec52f253b0f93276edc3f1e0e4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:49 GMT  
+		Size: 12.5 MB (12522598 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdf3a46eab5ffff6d0b6fce0a150080847d2b80a4e03afa70c91377c9bf23401`  
-		Last Modified: Thu, 27 Jan 2022 19:24:16 GMT  
-		Size: 130.0 B  
+	-	`sha256:5c32bc7e7c91ebeb93dfcf733e07f2193161f8691a1555e22c9abe163ee7c2d4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:47 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af539591d5df2e4985dee90ab6d28ee232867000819a22ea0c5a5a14bb89fd96`  
-		Last Modified: Fri, 28 Jan 2022 00:45:49 GMT  
-		Size: 190.3 MB (190285846 bytes)  
+	-	`sha256:fa796b6a421404c5ed1980b8e1277de92aadd8b243229d78ca48034606f4e44b`  
+		Last Modified: Fri, 04 Feb 2022 06:26:44 GMT  
+		Size: 190.3 MB (190285862 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4ef698ed33162760c05e98bccea4fc9a84e07756eeba43a519070653a92d118`  
-		Last Modified: Fri, 28 Jan 2022 00:45:41 GMT  
-		Size: 292.3 MB (292323765 bytes)  
+	-	`sha256:33f68599b777b9575178075dedc4263a926e80f80e3fc130ca666335fef8b171`  
+		Last Modified: Fri, 04 Feb 2022 06:28:15 GMT  
+		Size: 292.3 MB (292323766 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:921649a27aef2f135f3045d980896dc6f85f6dae1e313fadb8370b9e9dfc0b27`  
-		Last Modified: Fri, 28 Jan 2022 00:45:21 GMT  
-		Size: 846.2 KB (846207 bytes)  
+	-	`sha256:2b892b71808c773ef896c4cf302d287679438062f8de2a6a884ee1ac2b677420`  
+		Last Modified: Fri, 04 Feb 2022 06:27:59 GMT  
+		Size: 846.2 KB (846213 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec628c1b53017b6a847a9c50ff870300fb2728004f6f4f180af47b4f4e81d003`  
-		Last Modified: Fri, 28 Jan 2022 00:45:22 GMT  
-		Size: 1.3 KB (1343 bytes)  
+	-	`sha256:2d3242792b746d64e6358fef1fb3f5749d063e9438b0a7d07c18604262304fbe`  
+		Last Modified: Fri, 04 Feb 2022 06:27:59 GMT  
+		Size: 1.3 KB (1344 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f972fd488fcfcb41500bd9cd29de336f085345e76188f7942e9f3f90d6793653`  
-		Last Modified: Fri, 28 Jan 2022 00:45:21 GMT  
-		Size: 2.5 KB (2453 bytes)  
+	-	`sha256:c9f1aba1f97da7b480bd57637ac106b02622e52b411b7348e2bbfaba8b8e957b`  
+		Last Modified: Fri, 04 Feb 2022 06:27:58 GMT  
+		Size: 2.5 KB (2455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d188e37cad47b59cb2407a567bef9f348b0643e7ecb691de2fc60fb8ed0ae2aa`  
-		Last Modified: Fri, 28 Jan 2022 00:45:21 GMT  
+	-	`sha256:3cfbbb2c4a222e2e634a7740f688da9f8d84c227561815168512d97cd6679335`  
+		Last Modified: Fri, 04 Feb 2022 06:27:58 GMT  
 		Size: 5.3 KB (5335 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:032774c1e57b283a9e52b5a565e1d3368b001353cffcbcbc6e64e2559a75d475`  
-		Last Modified: Fri, 28 Jan 2022 00:45:21 GMT  
-		Size: 2.5 KB (2504 bytes)  
+	-	`sha256:8d6dc5f0191b17b221834f808af26e9159eb607bc2475766b001a9966dc7cd5a`  
+		Last Modified: Fri, 04 Feb 2022 06:27:58 GMT  
+		Size: 2.5 KB (2502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `xwiki:lts-postgres` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:3af45f30e94c0ab3d7c3bb269af97a0eb03a5c1eb881d3ae7fc2506bdaf2d882
+$ docker pull xwiki@sha256:3bc8d8d2ea80d237639576b7d5bed27e982183e6925aeabcce9a84cc56f7284f
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **820.9 MB (820886094 bytes)**  
+-	Total Size: **821.1 MB (821058881 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:28605695a4ddffc3ee8d009a708c3cb89f9bbb9e7dff2121bab3eb236414679a`
+-	Image ID: `sha256:9b4467ae4b95b278a1ad27a6ecd2031d991acacf260b8d2ea9882414e3951a97`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -4867,77 +4867,77 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 26 Jan 2022 05:56:10 GMT
 ENV LANG=C.UTF-8
-# Wed, 26 Jan 2022 05:56:11 GMT
-ENV JAVA_VERSION=11.0.13
-# Wed, 26 Jan 2022 05:57:08 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_x64_linux_11.0.13_8.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_aarch64_linux_11.0.13_8.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 26 Jan 2022 05:57:09 GMT
+# Thu, 03 Feb 2022 20:49:24 GMT
+ENV JAVA_VERSION=11.0.14
+# Thu, 03 Feb 2022 20:50:20 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_x64_linux_11.0.14_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_aarch64_linux_11.0.14_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 03 Feb 2022 20:50:21 GMT
 CMD ["jshell"]
-# Wed, 26 Jan 2022 23:45:39 GMT
+# Fri, 04 Feb 2022 00:39:07 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Wed, 26 Jan 2022 23:45:40 GMT
+# Fri, 04 Feb 2022 00:39:08 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 26 Jan 2022 23:45:41 GMT
+# Fri, 04 Feb 2022 00:39:09 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Wed, 26 Jan 2022 23:45:42 GMT
+# Fri, 04 Feb 2022 00:39:10 GMT
 WORKDIR /usr/local/tomcat
-# Wed, 26 Jan 2022 23:45:43 GMT
+# Fri, 04 Feb 2022 00:39:11 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Wed, 26 Jan 2022 23:45:44 GMT
+# Fri, 04 Feb 2022 00:39:12 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 00:07:11 GMT
+# Fri, 04 Feb 2022 01:02:16 GMT
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
-# Thu, 27 Jan 2022 00:07:11 GMT
+# Fri, 04 Feb 2022 01:02:16 GMT
 ENV TOMCAT_MAJOR=9
-# Thu, 27 Jan 2022 00:07:12 GMT
+# Fri, 04 Feb 2022 01:02:17 GMT
 ENV TOMCAT_VERSION=9.0.58
-# Thu, 27 Jan 2022 00:07:13 GMT
+# Fri, 04 Feb 2022 01:02:18 GMT
 ENV TOMCAT_SHA512=33c030a312a0a087deeb06fff921d13a23789e152d30620f33a368e7a2244c762fcf9acd55f3b90f08560704ba45bc2be820bccf2058b0cf5801a7b124f9056d
-# Thu, 27 Jan 2022 00:07:33 GMT
+# Fri, 04 Feb 2022 01:03:23 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		dirmngr 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work; 		catalina.sh version
-# Thu, 27 Jan 2022 00:07:35 GMT
+# Fri, 04 Feb 2022 01:03:25 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 27 Jan 2022 00:07:36 GMT
+# Fri, 04 Feb 2022 01:03:25 GMT
 EXPOSE 8080
-# Thu, 27 Jan 2022 00:07:37 GMT
+# Fri, 04 Feb 2022 01:03:26 GMT
 CMD ["catalina.sh" "run"]
-# Thu, 27 Jan 2022 05:50:31 GMT
+# Fri, 04 Feb 2022 04:15:17 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Thu, 27 Jan 2022 05:50:31 GMT
+# Fri, 04 Feb 2022 04:15:17 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Thu, 27 Jan 2022 05:50:32 GMT
+# Fri, 04 Feb 2022 04:15:18 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Thu, 27 Jan 2022 05:50:33 GMT
+# Fri, 04 Feb 2022 04:15:19 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Thu, 27 Jan 2022 05:50:34 GMT
+# Fri, 04 Feb 2022 04:15:20 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Thu, 27 Jan 2022 05:50:35 GMT
+# Fri, 04 Feb 2022 04:15:21 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Thu, 27 Jan 2022 05:51:17 GMT
+# Fri, 04 Feb 2022 04:15:52 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps     libpostgresql-jdbc-java &&   rm -rf /var/lib/apt/lists/*
-# Thu, 27 Jan 2022 05:51:19 GMT
+# Fri, 04 Feb 2022 04:17:44 GMT
 ENV XWIKI_VERSION=13.10.2
-# Thu, 27 Jan 2022 05:51:19 GMT
+# Fri, 04 Feb 2022 04:17:45 GMT
 ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/13.10.2
-# Thu, 27 Jan 2022 05:51:20 GMT
+# Fri, 04 Feb 2022 04:17:45 GMT
 ENV XWIKI_DOWNLOAD_SHA256=fc3b0299f5fa903d3fdee2e6af0a69173a8a411a4e027a271772e0666bb6d3aa
-# Thu, 27 Jan 2022 05:52:57 GMT
+# Fri, 04 Feb 2022 04:19:06 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Thu, 27 Jan 2022 05:52:58 GMT
+# Fri, 04 Feb 2022 04:19:08 GMT
 RUN cp /usr/share/java/postgresql-jdbc4.jar /usr/local/tomcat/webapps/ROOT/WEB-INF/lib/
-# Thu, 27 Jan 2022 05:52:59 GMT
+# Fri, 04 Feb 2022 04:19:09 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Thu, 27 Jan 2022 05:53:00 GMT
+# Fri, 04 Feb 2022 04:19:10 GMT
 COPY file:4a923f484bb29a26630c19e1d617d3bf6aa6ae7c6c4a5561e97b037bcde0847c in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Thu, 27 Jan 2022 05:53:01 GMT
+# Fri, 04 Feb 2022 04:19:11 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Thu, 27 Jan 2022 05:53:02 GMT
+# Fri, 04 Feb 2022 04:19:12 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Thu, 27 Jan 2022 05:53:03 GMT
+# Fri, 04 Feb 2022 04:19:13 GMT
 VOLUME [/usr/local/xwiki]
-# Thu, 27 Jan 2022 05:53:04 GMT
+# Fri, 04 Feb 2022 04:19:14 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 27 Jan 2022 05:53:05 GMT
+# Fri, 04 Feb 2022 04:19:15 GMT
 CMD ["xwiki"]
 ```
 
@@ -4966,51 +4966,51 @@ CMD ["xwiki"]
 		Last Modified: Wed, 26 Jan 2022 06:23:04 GMT  
 		Size: 212.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d46cad4095d077981b03d8fc3768a011689e84da8c906b28c8d762521c7d3d1a`  
-		Last Modified: Wed, 26 Jan 2022 06:23:23 GMT  
-		Size: 200.7 MB (200714065 bytes)  
+	-	`sha256:094aec66c6a7d824fad2b23976909d7a80fb1306908ad7fdfa38bded6f5d2f8b`  
+		Last Modified: Thu, 03 Feb 2022 21:12:31 GMT  
+		Size: 200.9 MB (200886679 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:51ffd677e016f0ca2d523555eb31a4bb907122ff28e694bf6f9ffa00d64eb35b`  
-		Last Modified: Thu, 27 Jan 2022 00:48:42 GMT  
+	-	`sha256:4d190c32e6780b7f813e534bb35b54d7c274759716626dd777c454fc06a884a8`  
+		Last Modified: Fri, 04 Feb 2022 01:44:18 GMT  
 		Size: 139.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35788645ec42db1cbdbb0e08d34d9c856f580940026809a268612d29c57b121c`  
-		Last Modified: Thu, 27 Jan 2022 01:04:30 GMT  
-		Size: 12.3 MB (12290038 bytes)  
+	-	`sha256:dfec2cf8d777891eaa322b3fe0e9666127e538e6c0ce47503f5a1ddb102e697b`  
+		Last Modified: Fri, 04 Feb 2022 01:58:19 GMT  
+		Size: 12.3 MB (12289911 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a00e62b554c09b0a5e65167e12d701de6aed0d2a2c9f37df0f4d2d8416380e9`  
-		Last Modified: Thu, 27 Jan 2022 05:55:50 GMT  
-		Size: 185.2 MB (185204053 bytes)  
+	-	`sha256:6b2a11450733610955131b222d21338c16cd2e791d4ab640678898c6885cf082`  
+		Last Modified: Fri, 04 Feb 2022 04:20:14 GMT  
+		Size: 185.2 MB (185204270 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bfc85d349aa89b1ee2ce1d96e1fecc39f073eef0bb8790473938c8af5b572c25`  
-		Last Modified: Thu, 27 Jan 2022 05:55:51 GMT  
-		Size: 292.3 MB (292323783 bytes)  
+	-	`sha256:2df1cb968c27b1df8f9c66ebaaa739043e1983ffa7bd3861496ce2c07aac83ce`  
+		Last Modified: Fri, 04 Feb 2022 04:21:00 GMT  
+		Size: 292.3 MB (292323866 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e39c58d99fe859ebc1bf5c4cba93e5ba5aee49f39bb1edaefe97fd01466ef66`  
-		Last Modified: Thu, 27 Jan 2022 05:55:25 GMT  
-		Size: 846.2 KB (846205 bytes)  
+	-	`sha256:fad23f263affc72dad897c28c013e07dc305d7d0509ffe3f16a2b4bf862a40c3`  
+		Last Modified: Fri, 04 Feb 2022 04:20:37 GMT  
+		Size: 846.2 KB (846210 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3e10c1bce3e4537e8732ba6cab65b2ba9d4b09d65590716c3390b510accd1e8`  
-		Last Modified: Thu, 27 Jan 2022 05:55:24 GMT  
-		Size: 1.3 KB (1346 bytes)  
+	-	`sha256:70762cec07baab23606315b906e66180b5e97c0875aa6977c6a1df8facd33576`  
+		Last Modified: Fri, 04 Feb 2022 04:20:37 GMT  
+		Size: 1.3 KB (1345 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f68f0d4c03727d8ed2217e0bf005445c510a29ef80d85320a6642d88bf9d4f88`  
-		Last Modified: Thu, 27 Jan 2022 05:55:24 GMT  
-		Size: 2.5 KB (2455 bytes)  
+	-	`sha256:0b97bab58e2cbf28896da73d1be871b4ee6bbc887d09db1cbcd63304da501205`  
+		Last Modified: Fri, 04 Feb 2022 04:20:37 GMT  
+		Size: 2.5 KB (2454 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9198e0489f644a8cb8761c6d6723eec447bf5f5c39a229cdb64dcbab34dc4fb2`  
-		Last Modified: Thu, 27 Jan 2022 05:55:24 GMT  
+	-	`sha256:f10b015d55f55508a9769d96d9bd09a4859ae38f9753ae3a97dee6cee6a7135c`  
+		Last Modified: Fri, 04 Feb 2022 04:20:37 GMT  
 		Size: 5.3 KB (5332 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f0ac619e27609108d429ebf53a6a62d49257addc31cbaf4188f07cc8352c32e4`  
-		Last Modified: Thu, 27 Jan 2022 05:55:24 GMT  
-		Size: 2.5 KB (2505 bytes)  
+	-	`sha256:6e95c59ffc660cebea1adb1e7d2d4317aa94fb87fd0b35dac6ee2f344d052438`  
+		Last Modified: Fri, 04 Feb 2022 04:20:37 GMT  
+		Size: 2.5 KB (2502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `xwiki:lts-postgres-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:75e4cbe812d17014e0e2f5f3bb06b9043ac91d335c2f2f1a755470215a588966
+$ docker pull xwiki@sha256:2e6a54cc855abd068672be3157736cbdffa3e7069b4650e2bfa28801c5b53fc1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5021,14 +5021,14 @@ $ docker pull xwiki@sha256:75e4cbe812d17014e0e2f5f3bb06b9043ac91d335c2f2f1a75547
 ### `xwiki:lts-postgres-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:3d21d1b6a4b6b88f133adc7cfdc055fa6f92d486ee123cb09b627d7de33f9555
+$ docker pull xwiki@sha256:e753a5533755a2cea10b563c4063647834d6692bc99cd88bad8e8a215f7dd957
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **830.0 MB (830038637 bytes)**  
+-	Total Size: **830.2 MB (830192305 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:753a58ea527df2f7f1b68ae385249bf80892268c291edc72a89982a51b27fe3a`
+-	Image ID: `sha256:107637fe0f3cc8b2889d6c53fd224faf68f8541f56b42e0d281f1d6578954eca`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -5053,77 +5053,77 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 26 Jan 2022 09:24:15 GMT
 ENV LANG=C.UTF-8
-# Wed, 26 Jan 2022 09:24:15 GMT
-ENV JAVA_VERSION=11.0.13
-# Wed, 26 Jan 2022 09:25:37 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_x64_linux_11.0.13_8.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_aarch64_linux_11.0.13_8.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 26 Jan 2022 09:25:38 GMT
+# Thu, 03 Feb 2022 20:34:14 GMT
+ENV JAVA_VERSION=11.0.14
+# Thu, 03 Feb 2022 20:35:39 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_x64_linux_11.0.14_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_aarch64_linux_11.0.14_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 03 Feb 2022 20:35:40 GMT
 CMD ["jshell"]
-# Thu, 27 Jan 2022 17:44:01 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:02 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 WORKDIR /usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_MAJOR=9
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_VERSION=9.0.58
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_SHA512=33c030a312a0a087deeb06fff921d13a23789e152d30620f33a368e7a2244c762fcf9acd55f3b90f08560704ba45bc2be820bccf2058b0cf5801a7b124f9056d
-# Thu, 27 Jan 2022 18:12:37 GMT
+# Fri, 04 Feb 2022 01:47:39 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		dirmngr 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work; 		catalina.sh version
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 EXPOSE 8080
-# Thu, 27 Jan 2022 18:12:40 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 CMD ["catalina.sh" "run"]
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Fri, 28 Jan 2022 00:40:35 GMT
+# Fri, 04 Feb 2022 06:22:14 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps     libpostgresql-jdbc-java &&   rm -rf /var/lib/apt/lists/*
-# Fri, 28 Jan 2022 00:40:36 GMT
+# Fri, 04 Feb 2022 06:23:54 GMT
 ENV XWIKI_VERSION=13.10.2
-# Fri, 28 Jan 2022 00:40:37 GMT
+# Fri, 04 Feb 2022 06:23:54 GMT
 ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/13.10.2
-# Fri, 28 Jan 2022 00:40:37 GMT
+# Fri, 04 Feb 2022 06:23:54 GMT
 ENV XWIKI_DOWNLOAD_SHA256=fc3b0299f5fa903d3fdee2e6af0a69173a8a411a4e027a271772e0666bb6d3aa
-# Fri, 28 Jan 2022 00:41:25 GMT
+# Fri, 04 Feb 2022 06:24:32 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Fri, 28 Jan 2022 00:41:27 GMT
+# Fri, 04 Feb 2022 06:24:34 GMT
 RUN cp /usr/share/java/postgresql-jdbc4.jar /usr/local/tomcat/webapps/ROOT/WEB-INF/lib/
-# Fri, 28 Jan 2022 00:41:27 GMT
+# Fri, 04 Feb 2022 06:24:34 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Fri, 28 Jan 2022 00:41:27 GMT
+# Fri, 04 Feb 2022 06:24:34 GMT
 COPY file:4a923f484bb29a26630c19e1d617d3bf6aa6ae7c6c4a5561e97b037bcde0847c in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Fri, 28 Jan 2022 00:41:28 GMT
+# Fri, 04 Feb 2022 06:24:35 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Fri, 28 Jan 2022 00:41:28 GMT
+# Fri, 04 Feb 2022 06:24:35 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Fri, 28 Jan 2022 00:41:28 GMT
+# Fri, 04 Feb 2022 06:24:36 GMT
 VOLUME [/usr/local/xwiki]
-# Fri, 28 Jan 2022 00:41:28 GMT
+# Fri, 04 Feb 2022 06:24:36 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 28 Jan 2022 00:41:29 GMT
+# Fri, 04 Feb 2022 06:24:36 GMT
 CMD ["xwiki"]
 ```
 
@@ -5152,62 +5152,62 @@ CMD ["xwiki"]
 		Last Modified: Wed, 26 Jan 2022 09:50:57 GMT  
 		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4512bdd2598cabd6c3bd8ee70ad79fceb4082b9bc297ff1b46a4e769ed684062`  
-		Last Modified: Wed, 26 Jan 2022 09:51:16 GMT  
-		Size: 203.1 MB (203118688 bytes)  
+	-	`sha256:fda090e7df3523dc9db18e06c2619b52e4dd2772c2800105e421552c27e599ed`  
+		Last Modified: Thu, 03 Feb 2022 20:58:14 GMT  
+		Size: 203.3 MB (203272575 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80124a46e801eaa1b446b86644d47869682894497815f2f0b77d98e29452343e`  
-		Last Modified: Thu, 27 Jan 2022 19:02:36 GMT  
-		Size: 172.0 B  
+	-	`sha256:e5341f7d466587f60c7ab87e18455c8f3e8f8e64681248565726a71137481f72`  
+		Last Modified: Fri, 04 Feb 2022 02:16:39 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46ecb4b115268768a2248cf5c66cccfb7d7293bba9c2c746337715effd0a1d2a`  
-		Last Modified: Thu, 27 Jan 2022 19:24:17 GMT  
-		Size: 12.5 MB (12522843 bytes)  
+	-	`sha256:658f77ce17d67d7b64dcd870a07d0e58bbe6a1ec52f253b0f93276edc3f1e0e4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:49 GMT  
+		Size: 12.5 MB (12522598 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdf3a46eab5ffff6d0b6fce0a150080847d2b80a4e03afa70c91377c9bf23401`  
-		Last Modified: Thu, 27 Jan 2022 19:24:16 GMT  
-		Size: 130.0 B  
+	-	`sha256:5c32bc7e7c91ebeb93dfcf733e07f2193161f8691a1555e22c9abe163ee7c2d4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:47 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af539591d5df2e4985dee90ab6d28ee232867000819a22ea0c5a5a14bb89fd96`  
-		Last Modified: Fri, 28 Jan 2022 00:45:49 GMT  
-		Size: 190.3 MB (190285846 bytes)  
+	-	`sha256:fa796b6a421404c5ed1980b8e1277de92aadd8b243229d78ca48034606f4e44b`  
+		Last Modified: Fri, 04 Feb 2022 06:26:44 GMT  
+		Size: 190.3 MB (190285862 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4ef698ed33162760c05e98bccea4fc9a84e07756eeba43a519070653a92d118`  
-		Last Modified: Fri, 28 Jan 2022 00:45:41 GMT  
-		Size: 292.3 MB (292323765 bytes)  
+	-	`sha256:33f68599b777b9575178075dedc4263a926e80f80e3fc130ca666335fef8b171`  
+		Last Modified: Fri, 04 Feb 2022 06:28:15 GMT  
+		Size: 292.3 MB (292323766 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:921649a27aef2f135f3045d980896dc6f85f6dae1e313fadb8370b9e9dfc0b27`  
-		Last Modified: Fri, 28 Jan 2022 00:45:21 GMT  
-		Size: 846.2 KB (846207 bytes)  
+	-	`sha256:2b892b71808c773ef896c4cf302d287679438062f8de2a6a884ee1ac2b677420`  
+		Last Modified: Fri, 04 Feb 2022 06:27:59 GMT  
+		Size: 846.2 KB (846213 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec628c1b53017b6a847a9c50ff870300fb2728004f6f4f180af47b4f4e81d003`  
-		Last Modified: Fri, 28 Jan 2022 00:45:22 GMT  
-		Size: 1.3 KB (1343 bytes)  
+	-	`sha256:2d3242792b746d64e6358fef1fb3f5749d063e9438b0a7d07c18604262304fbe`  
+		Last Modified: Fri, 04 Feb 2022 06:27:59 GMT  
+		Size: 1.3 KB (1344 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f972fd488fcfcb41500bd9cd29de336f085345e76188f7942e9f3f90d6793653`  
-		Last Modified: Fri, 28 Jan 2022 00:45:21 GMT  
-		Size: 2.5 KB (2453 bytes)  
+	-	`sha256:c9f1aba1f97da7b480bd57637ac106b02622e52b411b7348e2bbfaba8b8e957b`  
+		Last Modified: Fri, 04 Feb 2022 06:27:58 GMT  
+		Size: 2.5 KB (2455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d188e37cad47b59cb2407a567bef9f348b0643e7ecb691de2fc60fb8ed0ae2aa`  
-		Last Modified: Fri, 28 Jan 2022 00:45:21 GMT  
+	-	`sha256:3cfbbb2c4a222e2e634a7740f688da9f8d84c227561815168512d97cd6679335`  
+		Last Modified: Fri, 04 Feb 2022 06:27:58 GMT  
 		Size: 5.3 KB (5335 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:032774c1e57b283a9e52b5a565e1d3368b001353cffcbcbc6e64e2559a75d475`  
-		Last Modified: Fri, 28 Jan 2022 00:45:21 GMT  
-		Size: 2.5 KB (2504 bytes)  
+	-	`sha256:8d6dc5f0191b17b221834f808af26e9159eb607bc2475766b001a9966dc7cd5a`  
+		Last Modified: Fri, 04 Feb 2022 06:27:58 GMT  
+		Size: 2.5 KB (2502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `xwiki:lts-postgres-tomcat` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:3af45f30e94c0ab3d7c3bb269af97a0eb03a5c1eb881d3ae7fc2506bdaf2d882
+$ docker pull xwiki@sha256:3bc8d8d2ea80d237639576b7d5bed27e982183e6925aeabcce9a84cc56f7284f
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **820.9 MB (820886094 bytes)**  
+-	Total Size: **821.1 MB (821058881 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:28605695a4ddffc3ee8d009a708c3cb89f9bbb9e7dff2121bab3eb236414679a`
+-	Image ID: `sha256:9b4467ae4b95b278a1ad27a6ecd2031d991acacf260b8d2ea9882414e3951a97`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -5232,77 +5232,77 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 26 Jan 2022 05:56:10 GMT
 ENV LANG=C.UTF-8
-# Wed, 26 Jan 2022 05:56:11 GMT
-ENV JAVA_VERSION=11.0.13
-# Wed, 26 Jan 2022 05:57:08 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_x64_linux_11.0.13_8.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_aarch64_linux_11.0.13_8.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 26 Jan 2022 05:57:09 GMT
+# Thu, 03 Feb 2022 20:49:24 GMT
+ENV JAVA_VERSION=11.0.14
+# Thu, 03 Feb 2022 20:50:20 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_x64_linux_11.0.14_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_aarch64_linux_11.0.14_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 03 Feb 2022 20:50:21 GMT
 CMD ["jshell"]
-# Wed, 26 Jan 2022 23:45:39 GMT
+# Fri, 04 Feb 2022 00:39:07 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Wed, 26 Jan 2022 23:45:40 GMT
+# Fri, 04 Feb 2022 00:39:08 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 26 Jan 2022 23:45:41 GMT
+# Fri, 04 Feb 2022 00:39:09 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Wed, 26 Jan 2022 23:45:42 GMT
+# Fri, 04 Feb 2022 00:39:10 GMT
 WORKDIR /usr/local/tomcat
-# Wed, 26 Jan 2022 23:45:43 GMT
+# Fri, 04 Feb 2022 00:39:11 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Wed, 26 Jan 2022 23:45:44 GMT
+# Fri, 04 Feb 2022 00:39:12 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 00:07:11 GMT
+# Fri, 04 Feb 2022 01:02:16 GMT
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
-# Thu, 27 Jan 2022 00:07:11 GMT
+# Fri, 04 Feb 2022 01:02:16 GMT
 ENV TOMCAT_MAJOR=9
-# Thu, 27 Jan 2022 00:07:12 GMT
+# Fri, 04 Feb 2022 01:02:17 GMT
 ENV TOMCAT_VERSION=9.0.58
-# Thu, 27 Jan 2022 00:07:13 GMT
+# Fri, 04 Feb 2022 01:02:18 GMT
 ENV TOMCAT_SHA512=33c030a312a0a087deeb06fff921d13a23789e152d30620f33a368e7a2244c762fcf9acd55f3b90f08560704ba45bc2be820bccf2058b0cf5801a7b124f9056d
-# Thu, 27 Jan 2022 00:07:33 GMT
+# Fri, 04 Feb 2022 01:03:23 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		dirmngr 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work; 		catalina.sh version
-# Thu, 27 Jan 2022 00:07:35 GMT
+# Fri, 04 Feb 2022 01:03:25 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 27 Jan 2022 00:07:36 GMT
+# Fri, 04 Feb 2022 01:03:25 GMT
 EXPOSE 8080
-# Thu, 27 Jan 2022 00:07:37 GMT
+# Fri, 04 Feb 2022 01:03:26 GMT
 CMD ["catalina.sh" "run"]
-# Thu, 27 Jan 2022 05:50:31 GMT
+# Fri, 04 Feb 2022 04:15:17 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Thu, 27 Jan 2022 05:50:31 GMT
+# Fri, 04 Feb 2022 04:15:17 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Thu, 27 Jan 2022 05:50:32 GMT
+# Fri, 04 Feb 2022 04:15:18 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Thu, 27 Jan 2022 05:50:33 GMT
+# Fri, 04 Feb 2022 04:15:19 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Thu, 27 Jan 2022 05:50:34 GMT
+# Fri, 04 Feb 2022 04:15:20 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Thu, 27 Jan 2022 05:50:35 GMT
+# Fri, 04 Feb 2022 04:15:21 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Thu, 27 Jan 2022 05:51:17 GMT
+# Fri, 04 Feb 2022 04:15:52 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps     libpostgresql-jdbc-java &&   rm -rf /var/lib/apt/lists/*
-# Thu, 27 Jan 2022 05:51:19 GMT
+# Fri, 04 Feb 2022 04:17:44 GMT
 ENV XWIKI_VERSION=13.10.2
-# Thu, 27 Jan 2022 05:51:19 GMT
+# Fri, 04 Feb 2022 04:17:45 GMT
 ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/13.10.2
-# Thu, 27 Jan 2022 05:51:20 GMT
+# Fri, 04 Feb 2022 04:17:45 GMT
 ENV XWIKI_DOWNLOAD_SHA256=fc3b0299f5fa903d3fdee2e6af0a69173a8a411a4e027a271772e0666bb6d3aa
-# Thu, 27 Jan 2022 05:52:57 GMT
+# Fri, 04 Feb 2022 04:19:06 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Thu, 27 Jan 2022 05:52:58 GMT
+# Fri, 04 Feb 2022 04:19:08 GMT
 RUN cp /usr/share/java/postgresql-jdbc4.jar /usr/local/tomcat/webapps/ROOT/WEB-INF/lib/
-# Thu, 27 Jan 2022 05:52:59 GMT
+# Fri, 04 Feb 2022 04:19:09 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Thu, 27 Jan 2022 05:53:00 GMT
+# Fri, 04 Feb 2022 04:19:10 GMT
 COPY file:4a923f484bb29a26630c19e1d617d3bf6aa6ae7c6c4a5561e97b037bcde0847c in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Thu, 27 Jan 2022 05:53:01 GMT
+# Fri, 04 Feb 2022 04:19:11 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Thu, 27 Jan 2022 05:53:02 GMT
+# Fri, 04 Feb 2022 04:19:12 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Thu, 27 Jan 2022 05:53:03 GMT
+# Fri, 04 Feb 2022 04:19:13 GMT
 VOLUME [/usr/local/xwiki]
-# Thu, 27 Jan 2022 05:53:04 GMT
+# Fri, 04 Feb 2022 04:19:14 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 27 Jan 2022 05:53:05 GMT
+# Fri, 04 Feb 2022 04:19:15 GMT
 CMD ["xwiki"]
 ```
 
@@ -5331,51 +5331,51 @@ CMD ["xwiki"]
 		Last Modified: Wed, 26 Jan 2022 06:23:04 GMT  
 		Size: 212.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d46cad4095d077981b03d8fc3768a011689e84da8c906b28c8d762521c7d3d1a`  
-		Last Modified: Wed, 26 Jan 2022 06:23:23 GMT  
-		Size: 200.7 MB (200714065 bytes)  
+	-	`sha256:094aec66c6a7d824fad2b23976909d7a80fb1306908ad7fdfa38bded6f5d2f8b`  
+		Last Modified: Thu, 03 Feb 2022 21:12:31 GMT  
+		Size: 200.9 MB (200886679 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:51ffd677e016f0ca2d523555eb31a4bb907122ff28e694bf6f9ffa00d64eb35b`  
-		Last Modified: Thu, 27 Jan 2022 00:48:42 GMT  
+	-	`sha256:4d190c32e6780b7f813e534bb35b54d7c274759716626dd777c454fc06a884a8`  
+		Last Modified: Fri, 04 Feb 2022 01:44:18 GMT  
 		Size: 139.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35788645ec42db1cbdbb0e08d34d9c856f580940026809a268612d29c57b121c`  
-		Last Modified: Thu, 27 Jan 2022 01:04:30 GMT  
-		Size: 12.3 MB (12290038 bytes)  
+	-	`sha256:dfec2cf8d777891eaa322b3fe0e9666127e538e6c0ce47503f5a1ddb102e697b`  
+		Last Modified: Fri, 04 Feb 2022 01:58:19 GMT  
+		Size: 12.3 MB (12289911 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a00e62b554c09b0a5e65167e12d701de6aed0d2a2c9f37df0f4d2d8416380e9`  
-		Last Modified: Thu, 27 Jan 2022 05:55:50 GMT  
-		Size: 185.2 MB (185204053 bytes)  
+	-	`sha256:6b2a11450733610955131b222d21338c16cd2e791d4ab640678898c6885cf082`  
+		Last Modified: Fri, 04 Feb 2022 04:20:14 GMT  
+		Size: 185.2 MB (185204270 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bfc85d349aa89b1ee2ce1d96e1fecc39f073eef0bb8790473938c8af5b572c25`  
-		Last Modified: Thu, 27 Jan 2022 05:55:51 GMT  
-		Size: 292.3 MB (292323783 bytes)  
+	-	`sha256:2df1cb968c27b1df8f9c66ebaaa739043e1983ffa7bd3861496ce2c07aac83ce`  
+		Last Modified: Fri, 04 Feb 2022 04:21:00 GMT  
+		Size: 292.3 MB (292323866 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e39c58d99fe859ebc1bf5c4cba93e5ba5aee49f39bb1edaefe97fd01466ef66`  
-		Last Modified: Thu, 27 Jan 2022 05:55:25 GMT  
-		Size: 846.2 KB (846205 bytes)  
+	-	`sha256:fad23f263affc72dad897c28c013e07dc305d7d0509ffe3f16a2b4bf862a40c3`  
+		Last Modified: Fri, 04 Feb 2022 04:20:37 GMT  
+		Size: 846.2 KB (846210 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3e10c1bce3e4537e8732ba6cab65b2ba9d4b09d65590716c3390b510accd1e8`  
-		Last Modified: Thu, 27 Jan 2022 05:55:24 GMT  
-		Size: 1.3 KB (1346 bytes)  
+	-	`sha256:70762cec07baab23606315b906e66180b5e97c0875aa6977c6a1df8facd33576`  
+		Last Modified: Fri, 04 Feb 2022 04:20:37 GMT  
+		Size: 1.3 KB (1345 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f68f0d4c03727d8ed2217e0bf005445c510a29ef80d85320a6642d88bf9d4f88`  
-		Last Modified: Thu, 27 Jan 2022 05:55:24 GMT  
-		Size: 2.5 KB (2455 bytes)  
+	-	`sha256:0b97bab58e2cbf28896da73d1be871b4ee6bbc887d09db1cbcd63304da501205`  
+		Last Modified: Fri, 04 Feb 2022 04:20:37 GMT  
+		Size: 2.5 KB (2454 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9198e0489f644a8cb8761c6d6723eec447bf5f5c39a229cdb64dcbab34dc4fb2`  
-		Last Modified: Thu, 27 Jan 2022 05:55:24 GMT  
+	-	`sha256:f10b015d55f55508a9769d96d9bd09a4859ae38f9753ae3a97dee6cee6a7135c`  
+		Last Modified: Fri, 04 Feb 2022 04:20:37 GMT  
 		Size: 5.3 KB (5332 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f0ac619e27609108d429ebf53a6a62d49257addc31cbaf4188f07cc8352c32e4`  
-		Last Modified: Thu, 27 Jan 2022 05:55:24 GMT  
-		Size: 2.5 KB (2505 bytes)  
+	-	`sha256:6e95c59ffc660cebea1adb1e7d2d4317aa94fb87fd0b35dac6ee2f344d052438`  
+		Last Modified: Fri, 04 Feb 2022 04:20:37 GMT  
+		Size: 2.5 KB (2502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `xwiki:mysql-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:4b39210ec80f53df33835759ca3f983a7d0a57373a644ce9502fb3671693245a
+$ docker pull xwiki@sha256:25250e940f2e940a5d57eb24673e056f16330773401b85c57046ded833910c0d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5385,14 +5385,14 @@ $ docker pull xwiki@sha256:4b39210ec80f53df33835759ca3f983a7d0a57373a644ce9502fb
 ### `xwiki:mysql-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:de0bfb05f3369e10d3bddafba4715f455cd94ffb937c91ba953218f43c10edc4
+$ docker pull xwiki@sha256:1063cfc53c5126fc8b3505174a98460bbeacff4d51897f5232c1a67a453951f3
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **832.9 MB (832882997 bytes)**  
+-	Total Size: **833.0 MB (833036603 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f9c52a76c8dd336a9d7b35176f51c058e3a5f270fca1b622f942e40b94fb1ccb`
+-	Image ID: `sha256:12c6aae3734f6755cc68cd8261cd5006b8cfcf89dd0373b4c8e2774415c87a5b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -5417,87 +5417,87 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 26 Jan 2022 09:24:15 GMT
 ENV LANG=C.UTF-8
-# Wed, 26 Jan 2022 09:24:15 GMT
-ENV JAVA_VERSION=11.0.13
-# Wed, 26 Jan 2022 09:25:37 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_x64_linux_11.0.13_8.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_aarch64_linux_11.0.13_8.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 26 Jan 2022 09:25:38 GMT
+# Thu, 03 Feb 2022 20:34:14 GMT
+ENV JAVA_VERSION=11.0.14
+# Thu, 03 Feb 2022 20:35:39 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_x64_linux_11.0.14_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_aarch64_linux_11.0.14_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 03 Feb 2022 20:35:40 GMT
 CMD ["jshell"]
-# Thu, 27 Jan 2022 17:44:01 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:02 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 WORKDIR /usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_MAJOR=9
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_VERSION=9.0.58
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_SHA512=33c030a312a0a087deeb06fff921d13a23789e152d30620f33a368e7a2244c762fcf9acd55f3b90f08560704ba45bc2be820bccf2058b0cf5801a7b124f9056d
-# Thu, 27 Jan 2022 18:12:37 GMT
+# Fri, 04 Feb 2022 01:47:39 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		dirmngr 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work; 		catalina.sh version
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 EXPOSE 8080
-# Thu, 27 Jan 2022 18:12:40 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 CMD ["catalina.sh" "run"]
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Fri, 28 Jan 2022 00:39:09 GMT
+# Fri, 04 Feb 2022 06:20:42 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 20:23:16 GMT
+# Fri, 04 Feb 2022 06:20:44 GMT
 ENV XWIKI_VERSION=14.0
-# Wed, 02 Feb 2022 20:23:16 GMT
+# Fri, 04 Feb 2022 06:20:44 GMT
 ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/14.0
-# Wed, 02 Feb 2022 20:23:17 GMT
+# Fri, 04 Feb 2022 06:20:44 GMT
 ENV XWIKI_DOWNLOAD_SHA256=9acdc5f54267fd0270b227dcea0ed5351125757a390ca8530f71b0943f4404c5
-# Wed, 02 Feb 2022 20:23:55 GMT
+# Fri, 04 Feb 2022 06:21:22 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Wed, 02 Feb 2022 20:23:56 GMT
+# Fri, 04 Feb 2022 06:21:23 GMT
 ENV MYSQL_JDBC_VERSION=8.0.22
-# Wed, 02 Feb 2022 20:23:56 GMT
+# Fri, 04 Feb 2022 06:21:23 GMT
 ENV MYSQL_JDBC_SHA256=5019defbd12316295e97a6e88f2a9b07f118345a4e982710bba232e499b22f4f
-# Wed, 02 Feb 2022 20:23:56 GMT
+# Fri, 04 Feb 2022 06:21:23 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.22
-# Wed, 02 Feb 2022 20:23:56 GMT
+# Fri, 04 Feb 2022 06:21:23 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-java-8.0.22.jar
-# Wed, 02 Feb 2022 20:23:57 GMT
+# Fri, 04 Feb 2022 06:21:24 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-java-8.0.22.jar
-# Wed, 02 Feb 2022 20:23:58 GMT
+# Fri, 04 Feb 2022 06:21:25 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c -
-# Wed, 02 Feb 2022 20:23:58 GMT
+# Fri, 04 Feb 2022 06:21:25 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Wed, 02 Feb 2022 20:23:58 GMT
+# Fri, 04 Feb 2022 06:21:25 GMT
 COPY file:1b8409986f3e4eb79a7a0b18472cb2692a61d504fb5ef34292bc997b79fd760d in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Wed, 02 Feb 2022 20:23:59 GMT
+# Fri, 04 Feb 2022 06:21:26 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Wed, 02 Feb 2022 20:23:59 GMT
+# Fri, 04 Feb 2022 06:21:26 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Wed, 02 Feb 2022 20:23:59 GMT
+# Fri, 04 Feb 2022 06:21:26 GMT
 VOLUME [/usr/local/xwiki]
-# Wed, 02 Feb 2022 20:23:59 GMT
+# Fri, 04 Feb 2022 06:21:26 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 02 Feb 2022 20:24:00 GMT
+# Fri, 04 Feb 2022 06:21:27 GMT
 CMD ["xwiki"]
 ```
 
@@ -5526,55 +5526,55 @@ CMD ["xwiki"]
 		Last Modified: Wed, 26 Jan 2022 09:50:57 GMT  
 		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4512bdd2598cabd6c3bd8ee70ad79fceb4082b9bc297ff1b46a4e769ed684062`  
-		Last Modified: Wed, 26 Jan 2022 09:51:16 GMT  
-		Size: 203.1 MB (203118688 bytes)  
+	-	`sha256:fda090e7df3523dc9db18e06c2619b52e4dd2772c2800105e421552c27e599ed`  
+		Last Modified: Thu, 03 Feb 2022 20:58:14 GMT  
+		Size: 203.3 MB (203272575 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80124a46e801eaa1b446b86644d47869682894497815f2f0b77d98e29452343e`  
-		Last Modified: Thu, 27 Jan 2022 19:02:36 GMT  
-		Size: 172.0 B  
+	-	`sha256:e5341f7d466587f60c7ab87e18455c8f3e8f8e64681248565726a71137481f72`  
+		Last Modified: Fri, 04 Feb 2022 02:16:39 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46ecb4b115268768a2248cf5c66cccfb7d7293bba9c2c746337715effd0a1d2a`  
-		Last Modified: Thu, 27 Jan 2022 19:24:17 GMT  
-		Size: 12.5 MB (12522843 bytes)  
+	-	`sha256:658f77ce17d67d7b64dcd870a07d0e58bbe6a1ec52f253b0f93276edc3f1e0e4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:49 GMT  
+		Size: 12.5 MB (12522598 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdf3a46eab5ffff6d0b6fce0a150080847d2b80a4e03afa70c91377c9bf23401`  
-		Last Modified: Thu, 27 Jan 2022 19:24:16 GMT  
-		Size: 130.0 B  
+	-	`sha256:5c32bc7e7c91ebeb93dfcf733e07f2193161f8691a1555e22c9abe163ee7c2d4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:47 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8068c3825818104bc3046fa3ee6b8295aeac3295e175c0e80bd2334886e53ea`  
-		Last Modified: Fri, 28 Jan 2022 00:44:29 GMT  
+	-	`sha256:e07f4a067a7f038cb77c035bc29748f1c173243b916eb9f3a5d4ed9d9ce3a8b9`  
+		Last Modified: Fri, 04 Feb 2022 06:25:39 GMT  
 		Size: 189.4 MB (189410696 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d4e355f31a4633f6833049ad622ff0e7f6fda12e83d58f9c1b23aea02b909c79`  
-		Last Modified: Wed, 02 Feb 2022 20:25:43 GMT  
-		Size: 294.6 MB (294631392 bytes)  
+	-	`sha256:5722f156b54135a8d35147cd2ae370ebfb746a998e3f610b3c9eb58a59eb5906`  
+		Last Modified: Fri, 04 Feb 2022 06:25:31 GMT  
+		Size: 294.6 MB (294631351 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a82cf581932485da05ae12f4bb115a309455e23864cb9ceaa868673ee39ed42`  
-		Last Modified: Wed, 02 Feb 2022 20:25:26 GMT  
-		Size: 2.3 MB (2257827 bytes)  
+	-	`sha256:3aaaf90b2a55fb9aec1bd53b563a358b871aee80d05099bf1dea62de17da3534`  
+		Last Modified: Fri, 04 Feb 2022 06:25:11 GMT  
+		Size: 2.3 MB (2257828 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6c327e945d9319d8a5bf256a70001f511f664f6de2a5405d2929f27990fa2d5d`  
-		Last Modified: Wed, 02 Feb 2022 20:25:25 GMT  
-		Size: 1.3 KB (1344 bytes)  
+	-	`sha256:3656f7ae3d894472354598aaab04609c1d29ccf1fe373ae8fb21b85d9ab1b796`  
+		Last Modified: Fri, 04 Feb 2022 06:25:11 GMT  
+		Size: 1.3 KB (1343 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:76ce4043eaad579741c55b7da771e2a81d41b54bd7ede7a66ef486126650a32c`  
-		Last Modified: Wed, 02 Feb 2022 20:25:26 GMT  
-		Size: 2.3 KB (2307 bytes)  
+	-	`sha256:697d7334af0e409eb5f27dbb21fa43d8f13155aa569ade57189b443725826426`  
+		Last Modified: Fri, 04 Feb 2022 06:25:11 GMT  
+		Size: 2.3 KB (2306 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1e7d28b06145407dd0506f933c67800d3f6571a1996aa9589c1dc41313666483`  
-		Last Modified: Wed, 02 Feb 2022 20:25:25 GMT  
-		Size: 5.7 KB (5744 bytes)  
+	-	`sha256:05a9c1dd22c07dbb8cd1d750013658e27cb3fc2548c1eda39f88528ec612ce4a`  
+		Last Modified: Fri, 04 Feb 2022 06:25:10 GMT  
+		Size: 5.7 KB (5746 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:57ed2f2ba38af3e67f6755317fbfce862c56a0bf3d94f05776cd08a35e388d3d`  
-		Last Modified: Wed, 02 Feb 2022 20:25:26 GMT  
-		Size: 2.5 KB (2503 bytes)  
+	-	`sha256:0791c64daa93259b40b1ca47d9001aad63024b18d2695c69588f77e9961d053f`  
+		Last Modified: Fri, 04 Feb 2022 06:25:10 GMT  
+		Size: 2.5 KB (2505 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `xwiki:postgres-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:abc72f00b0ba2692009b3820357d45ff103f6851a79fb7fbde8d95224db36f9f
+$ docker pull xwiki@sha256:1fd790d09f4863faab156a64edc7e964854adb2971ad199b76f0e952ecaf8e66
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5585,14 +5585,14 @@ $ docker pull xwiki@sha256:abc72f00b0ba2692009b3820357d45ff103f6851a79fb7fbde8d9
 ### `xwiki:postgres-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:837c3dc218ae695159e83176e8a9c93c4ad68c0029f0f180463683160cfcd3f5
+$ docker pull xwiki@sha256:f6bf2f54549d6089f0e523d55e602f4d20e927a6c1cd0e9f0f6afa80e77999af
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **832.3 MB (832346635 bytes)**  
+-	Total Size: **832.5 MB (832500336 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d45f3ec7a7229f1d33ccb0bad9556d09c9d2b0348007476bb58ba69ba67afc8`
+-	Image ID: `sha256:bfb0ad62f6ddaf9084f137477622d2dabae7322240ed6b157c1dc2aa0a462475`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -5617,77 +5617,77 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 26 Jan 2022 09:24:15 GMT
 ENV LANG=C.UTF-8
-# Wed, 26 Jan 2022 09:24:15 GMT
-ENV JAVA_VERSION=11.0.13
-# Wed, 26 Jan 2022 09:25:37 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_x64_linux_11.0.13_8.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_aarch64_linux_11.0.13_8.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 26 Jan 2022 09:25:38 GMT
+# Thu, 03 Feb 2022 20:34:14 GMT
+ENV JAVA_VERSION=11.0.14
+# Thu, 03 Feb 2022 20:35:39 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_x64_linux_11.0.14_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_aarch64_linux_11.0.14_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 03 Feb 2022 20:35:40 GMT
 CMD ["jshell"]
-# Thu, 27 Jan 2022 17:44:01 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:02 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 WORKDIR /usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_MAJOR=9
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_VERSION=9.0.58
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_SHA512=33c030a312a0a087deeb06fff921d13a23789e152d30620f33a368e7a2244c762fcf9acd55f3b90f08560704ba45bc2be820bccf2058b0cf5801a7b124f9056d
-# Thu, 27 Jan 2022 18:12:37 GMT
+# Fri, 04 Feb 2022 01:47:39 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		dirmngr 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work; 		catalina.sh version
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 EXPOSE 8080
-# Thu, 27 Jan 2022 18:12:40 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 CMD ["catalina.sh" "run"]
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Fri, 28 Jan 2022 00:40:35 GMT
+# Fri, 04 Feb 2022 06:22:14 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps     libpostgresql-jdbc-java &&   rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 20:24:04 GMT
+# Fri, 04 Feb 2022 06:22:15 GMT
 ENV XWIKI_VERSION=14.0
-# Wed, 02 Feb 2022 20:24:04 GMT
+# Fri, 04 Feb 2022 06:22:15 GMT
 ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/14.0
-# Wed, 02 Feb 2022 20:24:05 GMT
+# Fri, 04 Feb 2022 06:22:16 GMT
 ENV XWIKI_DOWNLOAD_SHA256=9acdc5f54267fd0270b227dcea0ed5351125757a390ca8530f71b0943f4404c5
-# Wed, 02 Feb 2022 20:24:42 GMT
+# Fri, 04 Feb 2022 06:22:54 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Wed, 02 Feb 2022 20:24:44 GMT
+# Fri, 04 Feb 2022 06:22:55 GMT
 RUN cp /usr/share/java/postgresql-jdbc4.jar /usr/local/tomcat/webapps/ROOT/WEB-INF/lib/
-# Wed, 02 Feb 2022 20:24:44 GMT
+# Fri, 04 Feb 2022 06:22:56 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Wed, 02 Feb 2022 20:24:44 GMT
+# Fri, 04 Feb 2022 06:22:56 GMT
 COPY file:4a923f484bb29a26630c19e1d617d3bf6aa6ae7c6c4a5561e97b037bcde0847c in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Wed, 02 Feb 2022 20:24:45 GMT
+# Fri, 04 Feb 2022 06:22:57 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Wed, 02 Feb 2022 20:24:45 GMT
+# Fri, 04 Feb 2022 06:22:57 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Wed, 02 Feb 2022 20:24:46 GMT
+# Fri, 04 Feb 2022 06:22:57 GMT
 VOLUME [/usr/local/xwiki]
-# Wed, 02 Feb 2022 20:24:46 GMT
+# Fri, 04 Feb 2022 06:22:57 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 02 Feb 2022 20:24:46 GMT
+# Fri, 04 Feb 2022 06:22:57 GMT
 CMD ["xwiki"]
 ```
 
@@ -5716,62 +5716,62 @@ CMD ["xwiki"]
 		Last Modified: Wed, 26 Jan 2022 09:50:57 GMT  
 		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4512bdd2598cabd6c3bd8ee70ad79fceb4082b9bc297ff1b46a4e769ed684062`  
-		Last Modified: Wed, 26 Jan 2022 09:51:16 GMT  
-		Size: 203.1 MB (203118688 bytes)  
+	-	`sha256:fda090e7df3523dc9db18e06c2619b52e4dd2772c2800105e421552c27e599ed`  
+		Last Modified: Thu, 03 Feb 2022 20:58:14 GMT  
+		Size: 203.3 MB (203272575 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80124a46e801eaa1b446b86644d47869682894497815f2f0b77d98e29452343e`  
-		Last Modified: Thu, 27 Jan 2022 19:02:36 GMT  
-		Size: 172.0 B  
+	-	`sha256:e5341f7d466587f60c7ab87e18455c8f3e8f8e64681248565726a71137481f72`  
+		Last Modified: Fri, 04 Feb 2022 02:16:39 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46ecb4b115268768a2248cf5c66cccfb7d7293bba9c2c746337715effd0a1d2a`  
-		Last Modified: Thu, 27 Jan 2022 19:24:17 GMT  
-		Size: 12.5 MB (12522843 bytes)  
+	-	`sha256:658f77ce17d67d7b64dcd870a07d0e58bbe6a1ec52f253b0f93276edc3f1e0e4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:49 GMT  
+		Size: 12.5 MB (12522598 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdf3a46eab5ffff6d0b6fce0a150080847d2b80a4e03afa70c91377c9bf23401`  
-		Last Modified: Thu, 27 Jan 2022 19:24:16 GMT  
-		Size: 130.0 B  
+	-	`sha256:5c32bc7e7c91ebeb93dfcf733e07f2193161f8691a1555e22c9abe163ee7c2d4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:47 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af539591d5df2e4985dee90ab6d28ee232867000819a22ea0c5a5a14bb89fd96`  
-		Last Modified: Fri, 28 Jan 2022 00:45:49 GMT  
-		Size: 190.3 MB (190285846 bytes)  
+	-	`sha256:fa796b6a421404c5ed1980b8e1277de92aadd8b243229d78ca48034606f4e44b`  
+		Last Modified: Fri, 04 Feb 2022 06:26:44 GMT  
+		Size: 190.3 MB (190285862 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e4428db8a856beb47aba7ea4b81fb292fd059409b6f250408782e799091c962b`  
-		Last Modified: Wed, 02 Feb 2022 20:26:36 GMT  
-		Size: 294.6 MB (294631351 bytes)  
+	-	`sha256:1954fc2d5c78b6e7d41b866e5e9acd1d6c3b124cbb7d35360555275291454274`  
+		Last Modified: Fri, 04 Feb 2022 06:26:35 GMT  
+		Size: 294.6 MB (294631391 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8bd922bd28f83f50d5a881ffd1b219297e3e98efe7fb929a4b84fee9a17d0efc`  
-		Last Modified: Wed, 02 Feb 2022 20:26:19 GMT  
+	-	`sha256:d3446a4f559b39f481290c50f81b5116f3502a8207fd2240b9d093d6a1d2f1c8`  
+		Last Modified: Fri, 04 Feb 2022 06:26:16 GMT  
 		Size: 846.2 KB (846209 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d1ab2055983b98a3bc6376831a2ac20f32182d3abe005a4a331a1f6a04f99df7`  
-		Last Modified: Wed, 02 Feb 2022 20:26:19 GMT  
+	-	`sha256:a62aa01d56a23a721829209a2ebfa86a6e8429e43a885845db80da121b42fc8b`  
+		Last Modified: Fri, 04 Feb 2022 06:26:15 GMT  
 		Size: 1.3 KB (1343 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f9fb79525796b1d0e91b4e80d0ef2c68ab60dd680bedcd2f36f21c7d59d1afaa`  
-		Last Modified: Wed, 02 Feb 2022 20:26:19 GMT  
+	-	`sha256:6d52718b75aa4b195dd2b01542290317486763781b1a395d92b455ac30dc3216`  
+		Last Modified: Fri, 04 Feb 2022 06:26:15 GMT  
 		Size: 2.5 KB (2455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dd38bd849ed46268c0df253acacf3a94077f1de52ae40546fab86c5a48a5fc55`  
-		Last Modified: Wed, 02 Feb 2022 20:26:19 GMT  
-		Size: 5.7 KB (5745 bytes)  
+	-	`sha256:0c0b585082194e12307f7ea4493165e3435e54f7c102f45a39186dd407ae2721`  
+		Last Modified: Fri, 04 Feb 2022 06:26:15 GMT  
+		Size: 5.7 KB (5744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:928f4afe7901aaa88ba8ac0cc92e3e92b8d282c146429ebeb53a25549a501306`  
-		Last Modified: Wed, 02 Feb 2022 20:26:19 GMT  
-		Size: 2.5 KB (2502 bytes)  
+	-	`sha256:45753e42e89889285411b08e1c3a211df89ffe1a517ceed9923c0601b8d68f1a`  
+		Last Modified: Fri, 04 Feb 2022 06:26:15 GMT  
+		Size: 2.5 KB (2504 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `xwiki:postgres-tomcat` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:c0691ba2cc01631c74d17b6c097db0ef2a97637cc8226aa17879f5360dadd990
+$ docker pull xwiki@sha256:aacac077fdf66f699c0e83465fed5b61dbd4e372472ba031320825ba62e3d565
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **823.2 MB (823194373 bytes)**  
+-	Total Size: **823.4 MB (823367066 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:889373fd32d59a4c4edc549dd9dbe20a4d20705bb0d1cca2a87d59dc188fc9b6`
+-	Image ID: `sha256:e81db716727d179c0487868ca07a818559372c2813b00f4d814e13bf10226bb0`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -5796,77 +5796,77 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 26 Jan 2022 05:56:10 GMT
 ENV LANG=C.UTF-8
-# Wed, 26 Jan 2022 05:56:11 GMT
-ENV JAVA_VERSION=11.0.13
-# Wed, 26 Jan 2022 05:57:08 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_x64_linux_11.0.13_8.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_aarch64_linux_11.0.13_8.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 26 Jan 2022 05:57:09 GMT
+# Thu, 03 Feb 2022 20:49:24 GMT
+ENV JAVA_VERSION=11.0.14
+# Thu, 03 Feb 2022 20:50:20 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_x64_linux_11.0.14_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_aarch64_linux_11.0.14_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 03 Feb 2022 20:50:21 GMT
 CMD ["jshell"]
-# Wed, 26 Jan 2022 23:45:39 GMT
+# Fri, 04 Feb 2022 00:39:07 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Wed, 26 Jan 2022 23:45:40 GMT
+# Fri, 04 Feb 2022 00:39:08 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 26 Jan 2022 23:45:41 GMT
+# Fri, 04 Feb 2022 00:39:09 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Wed, 26 Jan 2022 23:45:42 GMT
+# Fri, 04 Feb 2022 00:39:10 GMT
 WORKDIR /usr/local/tomcat
-# Wed, 26 Jan 2022 23:45:43 GMT
+# Fri, 04 Feb 2022 00:39:11 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Wed, 26 Jan 2022 23:45:44 GMT
+# Fri, 04 Feb 2022 00:39:12 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 00:07:11 GMT
+# Fri, 04 Feb 2022 01:02:16 GMT
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
-# Thu, 27 Jan 2022 00:07:11 GMT
+# Fri, 04 Feb 2022 01:02:16 GMT
 ENV TOMCAT_MAJOR=9
-# Thu, 27 Jan 2022 00:07:12 GMT
+# Fri, 04 Feb 2022 01:02:17 GMT
 ENV TOMCAT_VERSION=9.0.58
-# Thu, 27 Jan 2022 00:07:13 GMT
+# Fri, 04 Feb 2022 01:02:18 GMT
 ENV TOMCAT_SHA512=33c030a312a0a087deeb06fff921d13a23789e152d30620f33a368e7a2244c762fcf9acd55f3b90f08560704ba45bc2be820bccf2058b0cf5801a7b124f9056d
-# Thu, 27 Jan 2022 00:07:33 GMT
+# Fri, 04 Feb 2022 01:03:23 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		dirmngr 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work; 		catalina.sh version
-# Thu, 27 Jan 2022 00:07:35 GMT
+# Fri, 04 Feb 2022 01:03:25 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 27 Jan 2022 00:07:36 GMT
+# Fri, 04 Feb 2022 01:03:25 GMT
 EXPOSE 8080
-# Thu, 27 Jan 2022 00:07:37 GMT
+# Fri, 04 Feb 2022 01:03:26 GMT
 CMD ["catalina.sh" "run"]
-# Thu, 27 Jan 2022 05:50:31 GMT
+# Fri, 04 Feb 2022 04:15:17 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Thu, 27 Jan 2022 05:50:31 GMT
+# Fri, 04 Feb 2022 04:15:17 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Thu, 27 Jan 2022 05:50:32 GMT
+# Fri, 04 Feb 2022 04:15:18 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Thu, 27 Jan 2022 05:50:33 GMT
+# Fri, 04 Feb 2022 04:15:19 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Thu, 27 Jan 2022 05:50:34 GMT
+# Fri, 04 Feb 2022 04:15:20 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Thu, 27 Jan 2022 05:50:35 GMT
+# Fri, 04 Feb 2022 04:15:21 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Thu, 27 Jan 2022 05:51:17 GMT
+# Fri, 04 Feb 2022 04:15:52 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps     libpostgresql-jdbc-java &&   rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 19:46:33 GMT
+# Fri, 04 Feb 2022 04:15:53 GMT
 ENV XWIKI_VERSION=14.0
-# Wed, 02 Feb 2022 19:46:34 GMT
+# Fri, 04 Feb 2022 04:15:54 GMT
 ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/14.0
-# Wed, 02 Feb 2022 19:46:35 GMT
+# Fri, 04 Feb 2022 04:15:55 GMT
 ENV XWIKI_DOWNLOAD_SHA256=9acdc5f54267fd0270b227dcea0ed5351125757a390ca8530f71b0943f4404c5
-# Wed, 02 Feb 2022 19:48:08 GMT
+# Fri, 04 Feb 2022 04:17:18 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Wed, 02 Feb 2022 19:48:10 GMT
+# Fri, 04 Feb 2022 04:17:20 GMT
 RUN cp /usr/share/java/postgresql-jdbc4.jar /usr/local/tomcat/webapps/ROOT/WEB-INF/lib/
-# Wed, 02 Feb 2022 19:48:11 GMT
+# Fri, 04 Feb 2022 04:17:21 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Wed, 02 Feb 2022 19:48:12 GMT
+# Fri, 04 Feb 2022 04:17:22 GMT
 COPY file:4a923f484bb29a26630c19e1d617d3bf6aa6ae7c6c4a5561e97b037bcde0847c in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Wed, 02 Feb 2022 19:48:13 GMT
+# Fri, 04 Feb 2022 04:17:23 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Wed, 02 Feb 2022 19:48:14 GMT
+# Fri, 04 Feb 2022 04:17:24 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Wed, 02 Feb 2022 19:48:15 GMT
+# Fri, 04 Feb 2022 04:17:25 GMT
 VOLUME [/usr/local/xwiki]
-# Wed, 02 Feb 2022 19:48:16 GMT
+# Fri, 04 Feb 2022 04:17:26 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 02 Feb 2022 19:48:17 GMT
+# Fri, 04 Feb 2022 04:17:27 GMT
 CMD ["xwiki"]
 ```
 
@@ -5895,51 +5895,51 @@ CMD ["xwiki"]
 		Last Modified: Wed, 26 Jan 2022 06:23:04 GMT  
 		Size: 212.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d46cad4095d077981b03d8fc3768a011689e84da8c906b28c8d762521c7d3d1a`  
-		Last Modified: Wed, 26 Jan 2022 06:23:23 GMT  
-		Size: 200.7 MB (200714065 bytes)  
+	-	`sha256:094aec66c6a7d824fad2b23976909d7a80fb1306908ad7fdfa38bded6f5d2f8b`  
+		Last Modified: Thu, 03 Feb 2022 21:12:31 GMT  
+		Size: 200.9 MB (200886679 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:51ffd677e016f0ca2d523555eb31a4bb907122ff28e694bf6f9ffa00d64eb35b`  
-		Last Modified: Thu, 27 Jan 2022 00:48:42 GMT  
+	-	`sha256:4d190c32e6780b7f813e534bb35b54d7c274759716626dd777c454fc06a884a8`  
+		Last Modified: Fri, 04 Feb 2022 01:44:18 GMT  
 		Size: 139.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35788645ec42db1cbdbb0e08d34d9c856f580940026809a268612d29c57b121c`  
-		Last Modified: Thu, 27 Jan 2022 01:04:30 GMT  
-		Size: 12.3 MB (12290038 bytes)  
+	-	`sha256:dfec2cf8d777891eaa322b3fe0e9666127e538e6c0ce47503f5a1ddb102e697b`  
+		Last Modified: Fri, 04 Feb 2022 01:58:19 GMT  
+		Size: 12.3 MB (12289911 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a00e62b554c09b0a5e65167e12d701de6aed0d2a2c9f37df0f4d2d8416380e9`  
-		Last Modified: Thu, 27 Jan 2022 05:55:50 GMT  
-		Size: 185.2 MB (185204053 bytes)  
+	-	`sha256:6b2a11450733610955131b222d21338c16cd2e791d4ab640678898c6885cf082`  
+		Last Modified: Fri, 04 Feb 2022 04:20:14 GMT  
+		Size: 185.2 MB (185204270 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:07d7706f02ede0aa87b190d3cd80ba43efc30d4b373e64de921729026c4d3910`  
-		Last Modified: Wed, 02 Feb 2022 19:49:18 GMT  
-		Size: 294.6 MB (294631653 bytes)  
+	-	`sha256:df23d485d76bf12a5975078ed0ece599663e166585c0e160785c0c8d15622e47`  
+		Last Modified: Fri, 04 Feb 2022 04:20:10 GMT  
+		Size: 294.6 MB (294631646 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae9b9b1c0398c4a17d1068bad2709d8eb38e19cf3452800a0a3fa46c3d54d16d`  
-		Last Modified: Wed, 02 Feb 2022 19:48:56 GMT  
-		Size: 846.2 KB (846207 bytes)  
+	-	`sha256:141480e5cd238a5348df43a6652f7121409cc6f40985912fe490b4e02e011958`  
+		Last Modified: Fri, 04 Feb 2022 04:19:47 GMT  
+		Size: 846.2 KB (846208 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a7a8c336d893c897775265a8caceab3598a055715d822cba8c18f2e95489564e`  
-		Last Modified: Wed, 02 Feb 2022 19:48:55 GMT  
-		Size: 1.3 KB (1343 bytes)  
+	-	`sha256:f60d403609eeac8339bd174b32423892290074ad36512ffc18ef58d6ad770a2f`  
+		Last Modified: Fri, 04 Feb 2022 04:19:47 GMT  
+		Size: 1.3 KB (1344 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eefc762909996628f34206edfcfb4ef938c2525e53f82e2d4a6aa7e77145abc3`  
-		Last Modified: Wed, 02 Feb 2022 19:48:56 GMT  
-		Size: 2.5 KB (2455 bytes)  
+	-	`sha256:2d55dfee5207a361b335d468b8676bdeaf1c27767ec962a7ceff9d564e49904a`  
+		Last Modified: Fri, 04 Feb 2022 04:19:47 GMT  
+		Size: 2.5 KB (2452 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1890ce0750d85fa95733fef93eaf587cd64fec0496577271391ec8178731f15`  
-		Last Modified: Wed, 02 Feb 2022 19:48:55 GMT  
-		Size: 5.7 KB (5744 bytes)  
+	-	`sha256:0a1fa9cfcd5df23c68623edeb850e82ca287e3b57bd759402d25483c187cddc5`  
+		Last Modified: Fri, 04 Feb 2022 04:19:47 GMT  
+		Size: 5.7 KB (5743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4414eceff9cade8fa21f0d6d5dd48ff21a6fe293e07a3e492954c61a39d55028`  
-		Last Modified: Wed, 02 Feb 2022 19:48:56 GMT  
-		Size: 2.5 KB (2503 bytes)  
+	-	`sha256:95a464d8beef9841c1d3bd9fe94ed8b9ae243fb8f72b953952e84fe08f85a423`  
+		Last Modified: Fri, 04 Feb 2022 04:19:47 GMT  
+		Size: 2.5 KB (2501 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `xwiki:stable`
 
 ```console
-$ docker pull xwiki@sha256:4b39210ec80f53df33835759ca3f983a7d0a57373a644ce9502fb3671693245a
+$ docker pull xwiki@sha256:25250e940f2e940a5d57eb24673e056f16330773401b85c57046ded833910c0d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5949,14 +5949,14 @@ $ docker pull xwiki@sha256:4b39210ec80f53df33835759ca3f983a7d0a57373a644ce9502fb
 ### `xwiki:stable` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:de0bfb05f3369e10d3bddafba4715f455cd94ffb937c91ba953218f43c10edc4
+$ docker pull xwiki@sha256:1063cfc53c5126fc8b3505174a98460bbeacff4d51897f5232c1a67a453951f3
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **832.9 MB (832882997 bytes)**  
+-	Total Size: **833.0 MB (833036603 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f9c52a76c8dd336a9d7b35176f51c058e3a5f270fca1b622f942e40b94fb1ccb`
+-	Image ID: `sha256:12c6aae3734f6755cc68cd8261cd5006b8cfcf89dd0373b4c8e2774415c87a5b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -5981,87 +5981,87 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 26 Jan 2022 09:24:15 GMT
 ENV LANG=C.UTF-8
-# Wed, 26 Jan 2022 09:24:15 GMT
-ENV JAVA_VERSION=11.0.13
-# Wed, 26 Jan 2022 09:25:37 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_x64_linux_11.0.13_8.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_aarch64_linux_11.0.13_8.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 26 Jan 2022 09:25:38 GMT
+# Thu, 03 Feb 2022 20:34:14 GMT
+ENV JAVA_VERSION=11.0.14
+# Thu, 03 Feb 2022 20:35:39 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_x64_linux_11.0.14_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_aarch64_linux_11.0.14_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 03 Feb 2022 20:35:40 GMT
 CMD ["jshell"]
-# Thu, 27 Jan 2022 17:44:01 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:02 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 WORKDIR /usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_MAJOR=9
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_VERSION=9.0.58
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_SHA512=33c030a312a0a087deeb06fff921d13a23789e152d30620f33a368e7a2244c762fcf9acd55f3b90f08560704ba45bc2be820bccf2058b0cf5801a7b124f9056d
-# Thu, 27 Jan 2022 18:12:37 GMT
+# Fri, 04 Feb 2022 01:47:39 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		dirmngr 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work; 		catalina.sh version
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 EXPOSE 8080
-# Thu, 27 Jan 2022 18:12:40 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 CMD ["catalina.sh" "run"]
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Fri, 28 Jan 2022 00:39:09 GMT
+# Fri, 04 Feb 2022 06:20:42 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 20:23:16 GMT
+# Fri, 04 Feb 2022 06:20:44 GMT
 ENV XWIKI_VERSION=14.0
-# Wed, 02 Feb 2022 20:23:16 GMT
+# Fri, 04 Feb 2022 06:20:44 GMT
 ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/14.0
-# Wed, 02 Feb 2022 20:23:17 GMT
+# Fri, 04 Feb 2022 06:20:44 GMT
 ENV XWIKI_DOWNLOAD_SHA256=9acdc5f54267fd0270b227dcea0ed5351125757a390ca8530f71b0943f4404c5
-# Wed, 02 Feb 2022 20:23:55 GMT
+# Fri, 04 Feb 2022 06:21:22 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Wed, 02 Feb 2022 20:23:56 GMT
+# Fri, 04 Feb 2022 06:21:23 GMT
 ENV MYSQL_JDBC_VERSION=8.0.22
-# Wed, 02 Feb 2022 20:23:56 GMT
+# Fri, 04 Feb 2022 06:21:23 GMT
 ENV MYSQL_JDBC_SHA256=5019defbd12316295e97a6e88f2a9b07f118345a4e982710bba232e499b22f4f
-# Wed, 02 Feb 2022 20:23:56 GMT
+# Fri, 04 Feb 2022 06:21:23 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.22
-# Wed, 02 Feb 2022 20:23:56 GMT
+# Fri, 04 Feb 2022 06:21:23 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-java-8.0.22.jar
-# Wed, 02 Feb 2022 20:23:57 GMT
+# Fri, 04 Feb 2022 06:21:24 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-java-8.0.22.jar
-# Wed, 02 Feb 2022 20:23:58 GMT
+# Fri, 04 Feb 2022 06:21:25 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c -
-# Wed, 02 Feb 2022 20:23:58 GMT
+# Fri, 04 Feb 2022 06:21:25 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Wed, 02 Feb 2022 20:23:58 GMT
+# Fri, 04 Feb 2022 06:21:25 GMT
 COPY file:1b8409986f3e4eb79a7a0b18472cb2692a61d504fb5ef34292bc997b79fd760d in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Wed, 02 Feb 2022 20:23:59 GMT
+# Fri, 04 Feb 2022 06:21:26 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Wed, 02 Feb 2022 20:23:59 GMT
+# Fri, 04 Feb 2022 06:21:26 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Wed, 02 Feb 2022 20:23:59 GMT
+# Fri, 04 Feb 2022 06:21:26 GMT
 VOLUME [/usr/local/xwiki]
-# Wed, 02 Feb 2022 20:23:59 GMT
+# Fri, 04 Feb 2022 06:21:26 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 02 Feb 2022 20:24:00 GMT
+# Fri, 04 Feb 2022 06:21:27 GMT
 CMD ["xwiki"]
 ```
 
@@ -6090,55 +6090,55 @@ CMD ["xwiki"]
 		Last Modified: Wed, 26 Jan 2022 09:50:57 GMT  
 		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4512bdd2598cabd6c3bd8ee70ad79fceb4082b9bc297ff1b46a4e769ed684062`  
-		Last Modified: Wed, 26 Jan 2022 09:51:16 GMT  
-		Size: 203.1 MB (203118688 bytes)  
+	-	`sha256:fda090e7df3523dc9db18e06c2619b52e4dd2772c2800105e421552c27e599ed`  
+		Last Modified: Thu, 03 Feb 2022 20:58:14 GMT  
+		Size: 203.3 MB (203272575 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80124a46e801eaa1b446b86644d47869682894497815f2f0b77d98e29452343e`  
-		Last Modified: Thu, 27 Jan 2022 19:02:36 GMT  
-		Size: 172.0 B  
+	-	`sha256:e5341f7d466587f60c7ab87e18455c8f3e8f8e64681248565726a71137481f72`  
+		Last Modified: Fri, 04 Feb 2022 02:16:39 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46ecb4b115268768a2248cf5c66cccfb7d7293bba9c2c746337715effd0a1d2a`  
-		Last Modified: Thu, 27 Jan 2022 19:24:17 GMT  
-		Size: 12.5 MB (12522843 bytes)  
+	-	`sha256:658f77ce17d67d7b64dcd870a07d0e58bbe6a1ec52f253b0f93276edc3f1e0e4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:49 GMT  
+		Size: 12.5 MB (12522598 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdf3a46eab5ffff6d0b6fce0a150080847d2b80a4e03afa70c91377c9bf23401`  
-		Last Modified: Thu, 27 Jan 2022 19:24:16 GMT  
-		Size: 130.0 B  
+	-	`sha256:5c32bc7e7c91ebeb93dfcf733e07f2193161f8691a1555e22c9abe163ee7c2d4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:47 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8068c3825818104bc3046fa3ee6b8295aeac3295e175c0e80bd2334886e53ea`  
-		Last Modified: Fri, 28 Jan 2022 00:44:29 GMT  
+	-	`sha256:e07f4a067a7f038cb77c035bc29748f1c173243b916eb9f3a5d4ed9d9ce3a8b9`  
+		Last Modified: Fri, 04 Feb 2022 06:25:39 GMT  
 		Size: 189.4 MB (189410696 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d4e355f31a4633f6833049ad622ff0e7f6fda12e83d58f9c1b23aea02b909c79`  
-		Last Modified: Wed, 02 Feb 2022 20:25:43 GMT  
-		Size: 294.6 MB (294631392 bytes)  
+	-	`sha256:5722f156b54135a8d35147cd2ae370ebfb746a998e3f610b3c9eb58a59eb5906`  
+		Last Modified: Fri, 04 Feb 2022 06:25:31 GMT  
+		Size: 294.6 MB (294631351 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a82cf581932485da05ae12f4bb115a309455e23864cb9ceaa868673ee39ed42`  
-		Last Modified: Wed, 02 Feb 2022 20:25:26 GMT  
-		Size: 2.3 MB (2257827 bytes)  
+	-	`sha256:3aaaf90b2a55fb9aec1bd53b563a358b871aee80d05099bf1dea62de17da3534`  
+		Last Modified: Fri, 04 Feb 2022 06:25:11 GMT  
+		Size: 2.3 MB (2257828 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6c327e945d9319d8a5bf256a70001f511f664f6de2a5405d2929f27990fa2d5d`  
-		Last Modified: Wed, 02 Feb 2022 20:25:25 GMT  
-		Size: 1.3 KB (1344 bytes)  
+	-	`sha256:3656f7ae3d894472354598aaab04609c1d29ccf1fe373ae8fb21b85d9ab1b796`  
+		Last Modified: Fri, 04 Feb 2022 06:25:11 GMT  
+		Size: 1.3 KB (1343 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:76ce4043eaad579741c55b7da771e2a81d41b54bd7ede7a66ef486126650a32c`  
-		Last Modified: Wed, 02 Feb 2022 20:25:26 GMT  
-		Size: 2.3 KB (2307 bytes)  
+	-	`sha256:697d7334af0e409eb5f27dbb21fa43d8f13155aa569ade57189b443725826426`  
+		Last Modified: Fri, 04 Feb 2022 06:25:11 GMT  
+		Size: 2.3 KB (2306 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1e7d28b06145407dd0506f933c67800d3f6571a1996aa9589c1dc41313666483`  
-		Last Modified: Wed, 02 Feb 2022 20:25:25 GMT  
-		Size: 5.7 KB (5744 bytes)  
+	-	`sha256:05a9c1dd22c07dbb8cd1d750013658e27cb3fc2548c1eda39f88528ec612ce4a`  
+		Last Modified: Fri, 04 Feb 2022 06:25:10 GMT  
+		Size: 5.7 KB (5746 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:57ed2f2ba38af3e67f6755317fbfce862c56a0bf3d94f05776cd08a35e388d3d`  
-		Last Modified: Wed, 02 Feb 2022 20:25:26 GMT  
-		Size: 2.5 KB (2503 bytes)  
+	-	`sha256:0791c64daa93259b40b1ca47d9001aad63024b18d2695c69588f77e9961d053f`  
+		Last Modified: Fri, 04 Feb 2022 06:25:10 GMT  
+		Size: 2.5 KB (2505 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `xwiki:stable-mysql`
 
 ```console
-$ docker pull xwiki@sha256:4b39210ec80f53df33835759ca3f983a7d0a57373a644ce9502fb3671693245a
+$ docker pull xwiki@sha256:25250e940f2e940a5d57eb24673e056f16330773401b85c57046ded833910c0d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6148,14 +6148,14 @@ $ docker pull xwiki@sha256:4b39210ec80f53df33835759ca3f983a7d0a57373a644ce9502fb
 ### `xwiki:stable-mysql` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:de0bfb05f3369e10d3bddafba4715f455cd94ffb937c91ba953218f43c10edc4
+$ docker pull xwiki@sha256:1063cfc53c5126fc8b3505174a98460bbeacff4d51897f5232c1a67a453951f3
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **832.9 MB (832882997 bytes)**  
+-	Total Size: **833.0 MB (833036603 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f9c52a76c8dd336a9d7b35176f51c058e3a5f270fca1b622f942e40b94fb1ccb`
+-	Image ID: `sha256:12c6aae3734f6755cc68cd8261cd5006b8cfcf89dd0373b4c8e2774415c87a5b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -6180,87 +6180,87 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 26 Jan 2022 09:24:15 GMT
 ENV LANG=C.UTF-8
-# Wed, 26 Jan 2022 09:24:15 GMT
-ENV JAVA_VERSION=11.0.13
-# Wed, 26 Jan 2022 09:25:37 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_x64_linux_11.0.13_8.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_aarch64_linux_11.0.13_8.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 26 Jan 2022 09:25:38 GMT
+# Thu, 03 Feb 2022 20:34:14 GMT
+ENV JAVA_VERSION=11.0.14
+# Thu, 03 Feb 2022 20:35:39 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_x64_linux_11.0.14_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_aarch64_linux_11.0.14_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 03 Feb 2022 20:35:40 GMT
 CMD ["jshell"]
-# Thu, 27 Jan 2022 17:44:01 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:02 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 WORKDIR /usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_MAJOR=9
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_VERSION=9.0.58
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_SHA512=33c030a312a0a087deeb06fff921d13a23789e152d30620f33a368e7a2244c762fcf9acd55f3b90f08560704ba45bc2be820bccf2058b0cf5801a7b124f9056d
-# Thu, 27 Jan 2022 18:12:37 GMT
+# Fri, 04 Feb 2022 01:47:39 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		dirmngr 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work; 		catalina.sh version
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 EXPOSE 8080
-# Thu, 27 Jan 2022 18:12:40 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 CMD ["catalina.sh" "run"]
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Fri, 28 Jan 2022 00:39:09 GMT
+# Fri, 04 Feb 2022 06:20:42 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 20:23:16 GMT
+# Fri, 04 Feb 2022 06:20:44 GMT
 ENV XWIKI_VERSION=14.0
-# Wed, 02 Feb 2022 20:23:16 GMT
+# Fri, 04 Feb 2022 06:20:44 GMT
 ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/14.0
-# Wed, 02 Feb 2022 20:23:17 GMT
+# Fri, 04 Feb 2022 06:20:44 GMT
 ENV XWIKI_DOWNLOAD_SHA256=9acdc5f54267fd0270b227dcea0ed5351125757a390ca8530f71b0943f4404c5
-# Wed, 02 Feb 2022 20:23:55 GMT
+# Fri, 04 Feb 2022 06:21:22 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Wed, 02 Feb 2022 20:23:56 GMT
+# Fri, 04 Feb 2022 06:21:23 GMT
 ENV MYSQL_JDBC_VERSION=8.0.22
-# Wed, 02 Feb 2022 20:23:56 GMT
+# Fri, 04 Feb 2022 06:21:23 GMT
 ENV MYSQL_JDBC_SHA256=5019defbd12316295e97a6e88f2a9b07f118345a4e982710bba232e499b22f4f
-# Wed, 02 Feb 2022 20:23:56 GMT
+# Fri, 04 Feb 2022 06:21:23 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.22
-# Wed, 02 Feb 2022 20:23:56 GMT
+# Fri, 04 Feb 2022 06:21:23 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-java-8.0.22.jar
-# Wed, 02 Feb 2022 20:23:57 GMT
+# Fri, 04 Feb 2022 06:21:24 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-java-8.0.22.jar
-# Wed, 02 Feb 2022 20:23:58 GMT
+# Fri, 04 Feb 2022 06:21:25 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c -
-# Wed, 02 Feb 2022 20:23:58 GMT
+# Fri, 04 Feb 2022 06:21:25 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Wed, 02 Feb 2022 20:23:58 GMT
+# Fri, 04 Feb 2022 06:21:25 GMT
 COPY file:1b8409986f3e4eb79a7a0b18472cb2692a61d504fb5ef34292bc997b79fd760d in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Wed, 02 Feb 2022 20:23:59 GMT
+# Fri, 04 Feb 2022 06:21:26 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Wed, 02 Feb 2022 20:23:59 GMT
+# Fri, 04 Feb 2022 06:21:26 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Wed, 02 Feb 2022 20:23:59 GMT
+# Fri, 04 Feb 2022 06:21:26 GMT
 VOLUME [/usr/local/xwiki]
-# Wed, 02 Feb 2022 20:23:59 GMT
+# Fri, 04 Feb 2022 06:21:26 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 02 Feb 2022 20:24:00 GMT
+# Fri, 04 Feb 2022 06:21:27 GMT
 CMD ["xwiki"]
 ```
 
@@ -6289,55 +6289,55 @@ CMD ["xwiki"]
 		Last Modified: Wed, 26 Jan 2022 09:50:57 GMT  
 		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4512bdd2598cabd6c3bd8ee70ad79fceb4082b9bc297ff1b46a4e769ed684062`  
-		Last Modified: Wed, 26 Jan 2022 09:51:16 GMT  
-		Size: 203.1 MB (203118688 bytes)  
+	-	`sha256:fda090e7df3523dc9db18e06c2619b52e4dd2772c2800105e421552c27e599ed`  
+		Last Modified: Thu, 03 Feb 2022 20:58:14 GMT  
+		Size: 203.3 MB (203272575 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80124a46e801eaa1b446b86644d47869682894497815f2f0b77d98e29452343e`  
-		Last Modified: Thu, 27 Jan 2022 19:02:36 GMT  
-		Size: 172.0 B  
+	-	`sha256:e5341f7d466587f60c7ab87e18455c8f3e8f8e64681248565726a71137481f72`  
+		Last Modified: Fri, 04 Feb 2022 02:16:39 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46ecb4b115268768a2248cf5c66cccfb7d7293bba9c2c746337715effd0a1d2a`  
-		Last Modified: Thu, 27 Jan 2022 19:24:17 GMT  
-		Size: 12.5 MB (12522843 bytes)  
+	-	`sha256:658f77ce17d67d7b64dcd870a07d0e58bbe6a1ec52f253b0f93276edc3f1e0e4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:49 GMT  
+		Size: 12.5 MB (12522598 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdf3a46eab5ffff6d0b6fce0a150080847d2b80a4e03afa70c91377c9bf23401`  
-		Last Modified: Thu, 27 Jan 2022 19:24:16 GMT  
-		Size: 130.0 B  
+	-	`sha256:5c32bc7e7c91ebeb93dfcf733e07f2193161f8691a1555e22c9abe163ee7c2d4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:47 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8068c3825818104bc3046fa3ee6b8295aeac3295e175c0e80bd2334886e53ea`  
-		Last Modified: Fri, 28 Jan 2022 00:44:29 GMT  
+	-	`sha256:e07f4a067a7f038cb77c035bc29748f1c173243b916eb9f3a5d4ed9d9ce3a8b9`  
+		Last Modified: Fri, 04 Feb 2022 06:25:39 GMT  
 		Size: 189.4 MB (189410696 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d4e355f31a4633f6833049ad622ff0e7f6fda12e83d58f9c1b23aea02b909c79`  
-		Last Modified: Wed, 02 Feb 2022 20:25:43 GMT  
-		Size: 294.6 MB (294631392 bytes)  
+	-	`sha256:5722f156b54135a8d35147cd2ae370ebfb746a998e3f610b3c9eb58a59eb5906`  
+		Last Modified: Fri, 04 Feb 2022 06:25:31 GMT  
+		Size: 294.6 MB (294631351 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a82cf581932485da05ae12f4bb115a309455e23864cb9ceaa868673ee39ed42`  
-		Last Modified: Wed, 02 Feb 2022 20:25:26 GMT  
-		Size: 2.3 MB (2257827 bytes)  
+	-	`sha256:3aaaf90b2a55fb9aec1bd53b563a358b871aee80d05099bf1dea62de17da3534`  
+		Last Modified: Fri, 04 Feb 2022 06:25:11 GMT  
+		Size: 2.3 MB (2257828 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6c327e945d9319d8a5bf256a70001f511f664f6de2a5405d2929f27990fa2d5d`  
-		Last Modified: Wed, 02 Feb 2022 20:25:25 GMT  
-		Size: 1.3 KB (1344 bytes)  
+	-	`sha256:3656f7ae3d894472354598aaab04609c1d29ccf1fe373ae8fb21b85d9ab1b796`  
+		Last Modified: Fri, 04 Feb 2022 06:25:11 GMT  
+		Size: 1.3 KB (1343 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:76ce4043eaad579741c55b7da771e2a81d41b54bd7ede7a66ef486126650a32c`  
-		Last Modified: Wed, 02 Feb 2022 20:25:26 GMT  
-		Size: 2.3 KB (2307 bytes)  
+	-	`sha256:697d7334af0e409eb5f27dbb21fa43d8f13155aa569ade57189b443725826426`  
+		Last Modified: Fri, 04 Feb 2022 06:25:11 GMT  
+		Size: 2.3 KB (2306 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1e7d28b06145407dd0506f933c67800d3f6571a1996aa9589c1dc41313666483`  
-		Last Modified: Wed, 02 Feb 2022 20:25:25 GMT  
-		Size: 5.7 KB (5744 bytes)  
+	-	`sha256:05a9c1dd22c07dbb8cd1d750013658e27cb3fc2548c1eda39f88528ec612ce4a`  
+		Last Modified: Fri, 04 Feb 2022 06:25:10 GMT  
+		Size: 5.7 KB (5746 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:57ed2f2ba38af3e67f6755317fbfce862c56a0bf3d94f05776cd08a35e388d3d`  
-		Last Modified: Wed, 02 Feb 2022 20:25:26 GMT  
-		Size: 2.5 KB (2503 bytes)  
+	-	`sha256:0791c64daa93259b40b1ca47d9001aad63024b18d2695c69588f77e9961d053f`  
+		Last Modified: Fri, 04 Feb 2022 06:25:10 GMT  
+		Size: 2.5 KB (2505 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `xwiki:stable-mysql-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:4b39210ec80f53df33835759ca3f983a7d0a57373a644ce9502fb3671693245a
+$ docker pull xwiki@sha256:25250e940f2e940a5d57eb24673e056f16330773401b85c57046ded833910c0d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6347,14 +6347,14 @@ $ docker pull xwiki@sha256:4b39210ec80f53df33835759ca3f983a7d0a57373a644ce9502fb
 ### `xwiki:stable-mysql-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:de0bfb05f3369e10d3bddafba4715f455cd94ffb937c91ba953218f43c10edc4
+$ docker pull xwiki@sha256:1063cfc53c5126fc8b3505174a98460bbeacff4d51897f5232c1a67a453951f3
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **832.9 MB (832882997 bytes)**  
+-	Total Size: **833.0 MB (833036603 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f9c52a76c8dd336a9d7b35176f51c058e3a5f270fca1b622f942e40b94fb1ccb`
+-	Image ID: `sha256:12c6aae3734f6755cc68cd8261cd5006b8cfcf89dd0373b4c8e2774415c87a5b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -6379,87 +6379,87 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 26 Jan 2022 09:24:15 GMT
 ENV LANG=C.UTF-8
-# Wed, 26 Jan 2022 09:24:15 GMT
-ENV JAVA_VERSION=11.0.13
-# Wed, 26 Jan 2022 09:25:37 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_x64_linux_11.0.13_8.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_aarch64_linux_11.0.13_8.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 26 Jan 2022 09:25:38 GMT
+# Thu, 03 Feb 2022 20:34:14 GMT
+ENV JAVA_VERSION=11.0.14
+# Thu, 03 Feb 2022 20:35:39 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_x64_linux_11.0.14_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_aarch64_linux_11.0.14_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 03 Feb 2022 20:35:40 GMT
 CMD ["jshell"]
-# Thu, 27 Jan 2022 17:44:01 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:02 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 WORKDIR /usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_MAJOR=9
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_VERSION=9.0.58
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_SHA512=33c030a312a0a087deeb06fff921d13a23789e152d30620f33a368e7a2244c762fcf9acd55f3b90f08560704ba45bc2be820bccf2058b0cf5801a7b124f9056d
-# Thu, 27 Jan 2022 18:12:37 GMT
+# Fri, 04 Feb 2022 01:47:39 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		dirmngr 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work; 		catalina.sh version
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 EXPOSE 8080
-# Thu, 27 Jan 2022 18:12:40 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 CMD ["catalina.sh" "run"]
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Fri, 28 Jan 2022 00:39:09 GMT
+# Fri, 04 Feb 2022 06:20:42 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 20:23:16 GMT
+# Fri, 04 Feb 2022 06:20:44 GMT
 ENV XWIKI_VERSION=14.0
-# Wed, 02 Feb 2022 20:23:16 GMT
+# Fri, 04 Feb 2022 06:20:44 GMT
 ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/14.0
-# Wed, 02 Feb 2022 20:23:17 GMT
+# Fri, 04 Feb 2022 06:20:44 GMT
 ENV XWIKI_DOWNLOAD_SHA256=9acdc5f54267fd0270b227dcea0ed5351125757a390ca8530f71b0943f4404c5
-# Wed, 02 Feb 2022 20:23:55 GMT
+# Fri, 04 Feb 2022 06:21:22 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Wed, 02 Feb 2022 20:23:56 GMT
+# Fri, 04 Feb 2022 06:21:23 GMT
 ENV MYSQL_JDBC_VERSION=8.0.22
-# Wed, 02 Feb 2022 20:23:56 GMT
+# Fri, 04 Feb 2022 06:21:23 GMT
 ENV MYSQL_JDBC_SHA256=5019defbd12316295e97a6e88f2a9b07f118345a4e982710bba232e499b22f4f
-# Wed, 02 Feb 2022 20:23:56 GMT
+# Fri, 04 Feb 2022 06:21:23 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.22
-# Wed, 02 Feb 2022 20:23:56 GMT
+# Fri, 04 Feb 2022 06:21:23 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-java-8.0.22.jar
-# Wed, 02 Feb 2022 20:23:57 GMT
+# Fri, 04 Feb 2022 06:21:24 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-java-8.0.22.jar
-# Wed, 02 Feb 2022 20:23:58 GMT
+# Fri, 04 Feb 2022 06:21:25 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c -
-# Wed, 02 Feb 2022 20:23:58 GMT
+# Fri, 04 Feb 2022 06:21:25 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Wed, 02 Feb 2022 20:23:58 GMT
+# Fri, 04 Feb 2022 06:21:25 GMT
 COPY file:1b8409986f3e4eb79a7a0b18472cb2692a61d504fb5ef34292bc997b79fd760d in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Wed, 02 Feb 2022 20:23:59 GMT
+# Fri, 04 Feb 2022 06:21:26 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Wed, 02 Feb 2022 20:23:59 GMT
+# Fri, 04 Feb 2022 06:21:26 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Wed, 02 Feb 2022 20:23:59 GMT
+# Fri, 04 Feb 2022 06:21:26 GMT
 VOLUME [/usr/local/xwiki]
-# Wed, 02 Feb 2022 20:23:59 GMT
+# Fri, 04 Feb 2022 06:21:26 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 02 Feb 2022 20:24:00 GMT
+# Fri, 04 Feb 2022 06:21:27 GMT
 CMD ["xwiki"]
 ```
 
@@ -6488,55 +6488,55 @@ CMD ["xwiki"]
 		Last Modified: Wed, 26 Jan 2022 09:50:57 GMT  
 		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4512bdd2598cabd6c3bd8ee70ad79fceb4082b9bc297ff1b46a4e769ed684062`  
-		Last Modified: Wed, 26 Jan 2022 09:51:16 GMT  
-		Size: 203.1 MB (203118688 bytes)  
+	-	`sha256:fda090e7df3523dc9db18e06c2619b52e4dd2772c2800105e421552c27e599ed`  
+		Last Modified: Thu, 03 Feb 2022 20:58:14 GMT  
+		Size: 203.3 MB (203272575 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80124a46e801eaa1b446b86644d47869682894497815f2f0b77d98e29452343e`  
-		Last Modified: Thu, 27 Jan 2022 19:02:36 GMT  
-		Size: 172.0 B  
+	-	`sha256:e5341f7d466587f60c7ab87e18455c8f3e8f8e64681248565726a71137481f72`  
+		Last Modified: Fri, 04 Feb 2022 02:16:39 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46ecb4b115268768a2248cf5c66cccfb7d7293bba9c2c746337715effd0a1d2a`  
-		Last Modified: Thu, 27 Jan 2022 19:24:17 GMT  
-		Size: 12.5 MB (12522843 bytes)  
+	-	`sha256:658f77ce17d67d7b64dcd870a07d0e58bbe6a1ec52f253b0f93276edc3f1e0e4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:49 GMT  
+		Size: 12.5 MB (12522598 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdf3a46eab5ffff6d0b6fce0a150080847d2b80a4e03afa70c91377c9bf23401`  
-		Last Modified: Thu, 27 Jan 2022 19:24:16 GMT  
-		Size: 130.0 B  
+	-	`sha256:5c32bc7e7c91ebeb93dfcf733e07f2193161f8691a1555e22c9abe163ee7c2d4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:47 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8068c3825818104bc3046fa3ee6b8295aeac3295e175c0e80bd2334886e53ea`  
-		Last Modified: Fri, 28 Jan 2022 00:44:29 GMT  
+	-	`sha256:e07f4a067a7f038cb77c035bc29748f1c173243b916eb9f3a5d4ed9d9ce3a8b9`  
+		Last Modified: Fri, 04 Feb 2022 06:25:39 GMT  
 		Size: 189.4 MB (189410696 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d4e355f31a4633f6833049ad622ff0e7f6fda12e83d58f9c1b23aea02b909c79`  
-		Last Modified: Wed, 02 Feb 2022 20:25:43 GMT  
-		Size: 294.6 MB (294631392 bytes)  
+	-	`sha256:5722f156b54135a8d35147cd2ae370ebfb746a998e3f610b3c9eb58a59eb5906`  
+		Last Modified: Fri, 04 Feb 2022 06:25:31 GMT  
+		Size: 294.6 MB (294631351 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a82cf581932485da05ae12f4bb115a309455e23864cb9ceaa868673ee39ed42`  
-		Last Modified: Wed, 02 Feb 2022 20:25:26 GMT  
-		Size: 2.3 MB (2257827 bytes)  
+	-	`sha256:3aaaf90b2a55fb9aec1bd53b563a358b871aee80d05099bf1dea62de17da3534`  
+		Last Modified: Fri, 04 Feb 2022 06:25:11 GMT  
+		Size: 2.3 MB (2257828 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6c327e945d9319d8a5bf256a70001f511f664f6de2a5405d2929f27990fa2d5d`  
-		Last Modified: Wed, 02 Feb 2022 20:25:25 GMT  
-		Size: 1.3 KB (1344 bytes)  
+	-	`sha256:3656f7ae3d894472354598aaab04609c1d29ccf1fe373ae8fb21b85d9ab1b796`  
+		Last Modified: Fri, 04 Feb 2022 06:25:11 GMT  
+		Size: 1.3 KB (1343 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:76ce4043eaad579741c55b7da771e2a81d41b54bd7ede7a66ef486126650a32c`  
-		Last Modified: Wed, 02 Feb 2022 20:25:26 GMT  
-		Size: 2.3 KB (2307 bytes)  
+	-	`sha256:697d7334af0e409eb5f27dbb21fa43d8f13155aa569ade57189b443725826426`  
+		Last Modified: Fri, 04 Feb 2022 06:25:11 GMT  
+		Size: 2.3 KB (2306 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1e7d28b06145407dd0506f933c67800d3f6571a1996aa9589c1dc41313666483`  
-		Last Modified: Wed, 02 Feb 2022 20:25:25 GMT  
-		Size: 5.7 KB (5744 bytes)  
+	-	`sha256:05a9c1dd22c07dbb8cd1d750013658e27cb3fc2548c1eda39f88528ec612ce4a`  
+		Last Modified: Fri, 04 Feb 2022 06:25:10 GMT  
+		Size: 5.7 KB (5746 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:57ed2f2ba38af3e67f6755317fbfce862c56a0bf3d94f05776cd08a35e388d3d`  
-		Last Modified: Wed, 02 Feb 2022 20:25:26 GMT  
-		Size: 2.5 KB (2503 bytes)  
+	-	`sha256:0791c64daa93259b40b1ca47d9001aad63024b18d2695c69588f77e9961d053f`  
+		Last Modified: Fri, 04 Feb 2022 06:25:10 GMT  
+		Size: 2.5 KB (2505 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `xwiki:stable-postgres`
 
 ```console
-$ docker pull xwiki@sha256:abc72f00b0ba2692009b3820357d45ff103f6851a79fb7fbde8d95224db36f9f
+$ docker pull xwiki@sha256:1fd790d09f4863faab156a64edc7e964854adb2971ad199b76f0e952ecaf8e66
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6547,14 +6547,14 @@ $ docker pull xwiki@sha256:abc72f00b0ba2692009b3820357d45ff103f6851a79fb7fbde8d9
 ### `xwiki:stable-postgres` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:837c3dc218ae695159e83176e8a9c93c4ad68c0029f0f180463683160cfcd3f5
+$ docker pull xwiki@sha256:f6bf2f54549d6089f0e523d55e602f4d20e927a6c1cd0e9f0f6afa80e77999af
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **832.3 MB (832346635 bytes)**  
+-	Total Size: **832.5 MB (832500336 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d45f3ec7a7229f1d33ccb0bad9556d09c9d2b0348007476bb58ba69ba67afc8`
+-	Image ID: `sha256:bfb0ad62f6ddaf9084f137477622d2dabae7322240ed6b157c1dc2aa0a462475`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -6579,77 +6579,77 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 26 Jan 2022 09:24:15 GMT
 ENV LANG=C.UTF-8
-# Wed, 26 Jan 2022 09:24:15 GMT
-ENV JAVA_VERSION=11.0.13
-# Wed, 26 Jan 2022 09:25:37 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_x64_linux_11.0.13_8.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_aarch64_linux_11.0.13_8.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 26 Jan 2022 09:25:38 GMT
+# Thu, 03 Feb 2022 20:34:14 GMT
+ENV JAVA_VERSION=11.0.14
+# Thu, 03 Feb 2022 20:35:39 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_x64_linux_11.0.14_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_aarch64_linux_11.0.14_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 03 Feb 2022 20:35:40 GMT
 CMD ["jshell"]
-# Thu, 27 Jan 2022 17:44:01 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:02 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 WORKDIR /usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_MAJOR=9
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_VERSION=9.0.58
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_SHA512=33c030a312a0a087deeb06fff921d13a23789e152d30620f33a368e7a2244c762fcf9acd55f3b90f08560704ba45bc2be820bccf2058b0cf5801a7b124f9056d
-# Thu, 27 Jan 2022 18:12:37 GMT
+# Fri, 04 Feb 2022 01:47:39 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		dirmngr 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work; 		catalina.sh version
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 EXPOSE 8080
-# Thu, 27 Jan 2022 18:12:40 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 CMD ["catalina.sh" "run"]
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Fri, 28 Jan 2022 00:40:35 GMT
+# Fri, 04 Feb 2022 06:22:14 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps     libpostgresql-jdbc-java &&   rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 20:24:04 GMT
+# Fri, 04 Feb 2022 06:22:15 GMT
 ENV XWIKI_VERSION=14.0
-# Wed, 02 Feb 2022 20:24:04 GMT
+# Fri, 04 Feb 2022 06:22:15 GMT
 ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/14.0
-# Wed, 02 Feb 2022 20:24:05 GMT
+# Fri, 04 Feb 2022 06:22:16 GMT
 ENV XWIKI_DOWNLOAD_SHA256=9acdc5f54267fd0270b227dcea0ed5351125757a390ca8530f71b0943f4404c5
-# Wed, 02 Feb 2022 20:24:42 GMT
+# Fri, 04 Feb 2022 06:22:54 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Wed, 02 Feb 2022 20:24:44 GMT
+# Fri, 04 Feb 2022 06:22:55 GMT
 RUN cp /usr/share/java/postgresql-jdbc4.jar /usr/local/tomcat/webapps/ROOT/WEB-INF/lib/
-# Wed, 02 Feb 2022 20:24:44 GMT
+# Fri, 04 Feb 2022 06:22:56 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Wed, 02 Feb 2022 20:24:44 GMT
+# Fri, 04 Feb 2022 06:22:56 GMT
 COPY file:4a923f484bb29a26630c19e1d617d3bf6aa6ae7c6c4a5561e97b037bcde0847c in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Wed, 02 Feb 2022 20:24:45 GMT
+# Fri, 04 Feb 2022 06:22:57 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Wed, 02 Feb 2022 20:24:45 GMT
+# Fri, 04 Feb 2022 06:22:57 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Wed, 02 Feb 2022 20:24:46 GMT
+# Fri, 04 Feb 2022 06:22:57 GMT
 VOLUME [/usr/local/xwiki]
-# Wed, 02 Feb 2022 20:24:46 GMT
+# Fri, 04 Feb 2022 06:22:57 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 02 Feb 2022 20:24:46 GMT
+# Fri, 04 Feb 2022 06:22:57 GMT
 CMD ["xwiki"]
 ```
 
@@ -6678,62 +6678,62 @@ CMD ["xwiki"]
 		Last Modified: Wed, 26 Jan 2022 09:50:57 GMT  
 		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4512bdd2598cabd6c3bd8ee70ad79fceb4082b9bc297ff1b46a4e769ed684062`  
-		Last Modified: Wed, 26 Jan 2022 09:51:16 GMT  
-		Size: 203.1 MB (203118688 bytes)  
+	-	`sha256:fda090e7df3523dc9db18e06c2619b52e4dd2772c2800105e421552c27e599ed`  
+		Last Modified: Thu, 03 Feb 2022 20:58:14 GMT  
+		Size: 203.3 MB (203272575 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80124a46e801eaa1b446b86644d47869682894497815f2f0b77d98e29452343e`  
-		Last Modified: Thu, 27 Jan 2022 19:02:36 GMT  
-		Size: 172.0 B  
+	-	`sha256:e5341f7d466587f60c7ab87e18455c8f3e8f8e64681248565726a71137481f72`  
+		Last Modified: Fri, 04 Feb 2022 02:16:39 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46ecb4b115268768a2248cf5c66cccfb7d7293bba9c2c746337715effd0a1d2a`  
-		Last Modified: Thu, 27 Jan 2022 19:24:17 GMT  
-		Size: 12.5 MB (12522843 bytes)  
+	-	`sha256:658f77ce17d67d7b64dcd870a07d0e58bbe6a1ec52f253b0f93276edc3f1e0e4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:49 GMT  
+		Size: 12.5 MB (12522598 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdf3a46eab5ffff6d0b6fce0a150080847d2b80a4e03afa70c91377c9bf23401`  
-		Last Modified: Thu, 27 Jan 2022 19:24:16 GMT  
-		Size: 130.0 B  
+	-	`sha256:5c32bc7e7c91ebeb93dfcf733e07f2193161f8691a1555e22c9abe163ee7c2d4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:47 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af539591d5df2e4985dee90ab6d28ee232867000819a22ea0c5a5a14bb89fd96`  
-		Last Modified: Fri, 28 Jan 2022 00:45:49 GMT  
-		Size: 190.3 MB (190285846 bytes)  
+	-	`sha256:fa796b6a421404c5ed1980b8e1277de92aadd8b243229d78ca48034606f4e44b`  
+		Last Modified: Fri, 04 Feb 2022 06:26:44 GMT  
+		Size: 190.3 MB (190285862 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e4428db8a856beb47aba7ea4b81fb292fd059409b6f250408782e799091c962b`  
-		Last Modified: Wed, 02 Feb 2022 20:26:36 GMT  
-		Size: 294.6 MB (294631351 bytes)  
+	-	`sha256:1954fc2d5c78b6e7d41b866e5e9acd1d6c3b124cbb7d35360555275291454274`  
+		Last Modified: Fri, 04 Feb 2022 06:26:35 GMT  
+		Size: 294.6 MB (294631391 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8bd922bd28f83f50d5a881ffd1b219297e3e98efe7fb929a4b84fee9a17d0efc`  
-		Last Modified: Wed, 02 Feb 2022 20:26:19 GMT  
+	-	`sha256:d3446a4f559b39f481290c50f81b5116f3502a8207fd2240b9d093d6a1d2f1c8`  
+		Last Modified: Fri, 04 Feb 2022 06:26:16 GMT  
 		Size: 846.2 KB (846209 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d1ab2055983b98a3bc6376831a2ac20f32182d3abe005a4a331a1f6a04f99df7`  
-		Last Modified: Wed, 02 Feb 2022 20:26:19 GMT  
+	-	`sha256:a62aa01d56a23a721829209a2ebfa86a6e8429e43a885845db80da121b42fc8b`  
+		Last Modified: Fri, 04 Feb 2022 06:26:15 GMT  
 		Size: 1.3 KB (1343 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f9fb79525796b1d0e91b4e80d0ef2c68ab60dd680bedcd2f36f21c7d59d1afaa`  
-		Last Modified: Wed, 02 Feb 2022 20:26:19 GMT  
+	-	`sha256:6d52718b75aa4b195dd2b01542290317486763781b1a395d92b455ac30dc3216`  
+		Last Modified: Fri, 04 Feb 2022 06:26:15 GMT  
 		Size: 2.5 KB (2455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dd38bd849ed46268c0df253acacf3a94077f1de52ae40546fab86c5a48a5fc55`  
-		Last Modified: Wed, 02 Feb 2022 20:26:19 GMT  
-		Size: 5.7 KB (5745 bytes)  
+	-	`sha256:0c0b585082194e12307f7ea4493165e3435e54f7c102f45a39186dd407ae2721`  
+		Last Modified: Fri, 04 Feb 2022 06:26:15 GMT  
+		Size: 5.7 KB (5744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:928f4afe7901aaa88ba8ac0cc92e3e92b8d282c146429ebeb53a25549a501306`  
-		Last Modified: Wed, 02 Feb 2022 20:26:19 GMT  
-		Size: 2.5 KB (2502 bytes)  
+	-	`sha256:45753e42e89889285411b08e1c3a211df89ffe1a517ceed9923c0601b8d68f1a`  
+		Last Modified: Fri, 04 Feb 2022 06:26:15 GMT  
+		Size: 2.5 KB (2504 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `xwiki:stable-postgres` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:c0691ba2cc01631c74d17b6c097db0ef2a97637cc8226aa17879f5360dadd990
+$ docker pull xwiki@sha256:aacac077fdf66f699c0e83465fed5b61dbd4e372472ba031320825ba62e3d565
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **823.2 MB (823194373 bytes)**  
+-	Total Size: **823.4 MB (823367066 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:889373fd32d59a4c4edc549dd9dbe20a4d20705bb0d1cca2a87d59dc188fc9b6`
+-	Image ID: `sha256:e81db716727d179c0487868ca07a818559372c2813b00f4d814e13bf10226bb0`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -6758,77 +6758,77 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 26 Jan 2022 05:56:10 GMT
 ENV LANG=C.UTF-8
-# Wed, 26 Jan 2022 05:56:11 GMT
-ENV JAVA_VERSION=11.0.13
-# Wed, 26 Jan 2022 05:57:08 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_x64_linux_11.0.13_8.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_aarch64_linux_11.0.13_8.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 26 Jan 2022 05:57:09 GMT
+# Thu, 03 Feb 2022 20:49:24 GMT
+ENV JAVA_VERSION=11.0.14
+# Thu, 03 Feb 2022 20:50:20 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_x64_linux_11.0.14_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_aarch64_linux_11.0.14_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 03 Feb 2022 20:50:21 GMT
 CMD ["jshell"]
-# Wed, 26 Jan 2022 23:45:39 GMT
+# Fri, 04 Feb 2022 00:39:07 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Wed, 26 Jan 2022 23:45:40 GMT
+# Fri, 04 Feb 2022 00:39:08 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 26 Jan 2022 23:45:41 GMT
+# Fri, 04 Feb 2022 00:39:09 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Wed, 26 Jan 2022 23:45:42 GMT
+# Fri, 04 Feb 2022 00:39:10 GMT
 WORKDIR /usr/local/tomcat
-# Wed, 26 Jan 2022 23:45:43 GMT
+# Fri, 04 Feb 2022 00:39:11 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Wed, 26 Jan 2022 23:45:44 GMT
+# Fri, 04 Feb 2022 00:39:12 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 00:07:11 GMT
+# Fri, 04 Feb 2022 01:02:16 GMT
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
-# Thu, 27 Jan 2022 00:07:11 GMT
+# Fri, 04 Feb 2022 01:02:16 GMT
 ENV TOMCAT_MAJOR=9
-# Thu, 27 Jan 2022 00:07:12 GMT
+# Fri, 04 Feb 2022 01:02:17 GMT
 ENV TOMCAT_VERSION=9.0.58
-# Thu, 27 Jan 2022 00:07:13 GMT
+# Fri, 04 Feb 2022 01:02:18 GMT
 ENV TOMCAT_SHA512=33c030a312a0a087deeb06fff921d13a23789e152d30620f33a368e7a2244c762fcf9acd55f3b90f08560704ba45bc2be820bccf2058b0cf5801a7b124f9056d
-# Thu, 27 Jan 2022 00:07:33 GMT
+# Fri, 04 Feb 2022 01:03:23 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		dirmngr 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work; 		catalina.sh version
-# Thu, 27 Jan 2022 00:07:35 GMT
+# Fri, 04 Feb 2022 01:03:25 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 27 Jan 2022 00:07:36 GMT
+# Fri, 04 Feb 2022 01:03:25 GMT
 EXPOSE 8080
-# Thu, 27 Jan 2022 00:07:37 GMT
+# Fri, 04 Feb 2022 01:03:26 GMT
 CMD ["catalina.sh" "run"]
-# Thu, 27 Jan 2022 05:50:31 GMT
+# Fri, 04 Feb 2022 04:15:17 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Thu, 27 Jan 2022 05:50:31 GMT
+# Fri, 04 Feb 2022 04:15:17 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Thu, 27 Jan 2022 05:50:32 GMT
+# Fri, 04 Feb 2022 04:15:18 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Thu, 27 Jan 2022 05:50:33 GMT
+# Fri, 04 Feb 2022 04:15:19 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Thu, 27 Jan 2022 05:50:34 GMT
+# Fri, 04 Feb 2022 04:15:20 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Thu, 27 Jan 2022 05:50:35 GMT
+# Fri, 04 Feb 2022 04:15:21 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Thu, 27 Jan 2022 05:51:17 GMT
+# Fri, 04 Feb 2022 04:15:52 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps     libpostgresql-jdbc-java &&   rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 19:46:33 GMT
+# Fri, 04 Feb 2022 04:15:53 GMT
 ENV XWIKI_VERSION=14.0
-# Wed, 02 Feb 2022 19:46:34 GMT
+# Fri, 04 Feb 2022 04:15:54 GMT
 ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/14.0
-# Wed, 02 Feb 2022 19:46:35 GMT
+# Fri, 04 Feb 2022 04:15:55 GMT
 ENV XWIKI_DOWNLOAD_SHA256=9acdc5f54267fd0270b227dcea0ed5351125757a390ca8530f71b0943f4404c5
-# Wed, 02 Feb 2022 19:48:08 GMT
+# Fri, 04 Feb 2022 04:17:18 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Wed, 02 Feb 2022 19:48:10 GMT
+# Fri, 04 Feb 2022 04:17:20 GMT
 RUN cp /usr/share/java/postgresql-jdbc4.jar /usr/local/tomcat/webapps/ROOT/WEB-INF/lib/
-# Wed, 02 Feb 2022 19:48:11 GMT
+# Fri, 04 Feb 2022 04:17:21 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Wed, 02 Feb 2022 19:48:12 GMT
+# Fri, 04 Feb 2022 04:17:22 GMT
 COPY file:4a923f484bb29a26630c19e1d617d3bf6aa6ae7c6c4a5561e97b037bcde0847c in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Wed, 02 Feb 2022 19:48:13 GMT
+# Fri, 04 Feb 2022 04:17:23 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Wed, 02 Feb 2022 19:48:14 GMT
+# Fri, 04 Feb 2022 04:17:24 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Wed, 02 Feb 2022 19:48:15 GMT
+# Fri, 04 Feb 2022 04:17:25 GMT
 VOLUME [/usr/local/xwiki]
-# Wed, 02 Feb 2022 19:48:16 GMT
+# Fri, 04 Feb 2022 04:17:26 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 02 Feb 2022 19:48:17 GMT
+# Fri, 04 Feb 2022 04:17:27 GMT
 CMD ["xwiki"]
 ```
 
@@ -6857,51 +6857,51 @@ CMD ["xwiki"]
 		Last Modified: Wed, 26 Jan 2022 06:23:04 GMT  
 		Size: 212.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d46cad4095d077981b03d8fc3768a011689e84da8c906b28c8d762521c7d3d1a`  
-		Last Modified: Wed, 26 Jan 2022 06:23:23 GMT  
-		Size: 200.7 MB (200714065 bytes)  
+	-	`sha256:094aec66c6a7d824fad2b23976909d7a80fb1306908ad7fdfa38bded6f5d2f8b`  
+		Last Modified: Thu, 03 Feb 2022 21:12:31 GMT  
+		Size: 200.9 MB (200886679 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:51ffd677e016f0ca2d523555eb31a4bb907122ff28e694bf6f9ffa00d64eb35b`  
-		Last Modified: Thu, 27 Jan 2022 00:48:42 GMT  
+	-	`sha256:4d190c32e6780b7f813e534bb35b54d7c274759716626dd777c454fc06a884a8`  
+		Last Modified: Fri, 04 Feb 2022 01:44:18 GMT  
 		Size: 139.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35788645ec42db1cbdbb0e08d34d9c856f580940026809a268612d29c57b121c`  
-		Last Modified: Thu, 27 Jan 2022 01:04:30 GMT  
-		Size: 12.3 MB (12290038 bytes)  
+	-	`sha256:dfec2cf8d777891eaa322b3fe0e9666127e538e6c0ce47503f5a1ddb102e697b`  
+		Last Modified: Fri, 04 Feb 2022 01:58:19 GMT  
+		Size: 12.3 MB (12289911 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a00e62b554c09b0a5e65167e12d701de6aed0d2a2c9f37df0f4d2d8416380e9`  
-		Last Modified: Thu, 27 Jan 2022 05:55:50 GMT  
-		Size: 185.2 MB (185204053 bytes)  
+	-	`sha256:6b2a11450733610955131b222d21338c16cd2e791d4ab640678898c6885cf082`  
+		Last Modified: Fri, 04 Feb 2022 04:20:14 GMT  
+		Size: 185.2 MB (185204270 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:07d7706f02ede0aa87b190d3cd80ba43efc30d4b373e64de921729026c4d3910`  
-		Last Modified: Wed, 02 Feb 2022 19:49:18 GMT  
-		Size: 294.6 MB (294631653 bytes)  
+	-	`sha256:df23d485d76bf12a5975078ed0ece599663e166585c0e160785c0c8d15622e47`  
+		Last Modified: Fri, 04 Feb 2022 04:20:10 GMT  
+		Size: 294.6 MB (294631646 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae9b9b1c0398c4a17d1068bad2709d8eb38e19cf3452800a0a3fa46c3d54d16d`  
-		Last Modified: Wed, 02 Feb 2022 19:48:56 GMT  
-		Size: 846.2 KB (846207 bytes)  
+	-	`sha256:141480e5cd238a5348df43a6652f7121409cc6f40985912fe490b4e02e011958`  
+		Last Modified: Fri, 04 Feb 2022 04:19:47 GMT  
+		Size: 846.2 KB (846208 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a7a8c336d893c897775265a8caceab3598a055715d822cba8c18f2e95489564e`  
-		Last Modified: Wed, 02 Feb 2022 19:48:55 GMT  
-		Size: 1.3 KB (1343 bytes)  
+	-	`sha256:f60d403609eeac8339bd174b32423892290074ad36512ffc18ef58d6ad770a2f`  
+		Last Modified: Fri, 04 Feb 2022 04:19:47 GMT  
+		Size: 1.3 KB (1344 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eefc762909996628f34206edfcfb4ef938c2525e53f82e2d4a6aa7e77145abc3`  
-		Last Modified: Wed, 02 Feb 2022 19:48:56 GMT  
-		Size: 2.5 KB (2455 bytes)  
+	-	`sha256:2d55dfee5207a361b335d468b8676bdeaf1c27767ec962a7ceff9d564e49904a`  
+		Last Modified: Fri, 04 Feb 2022 04:19:47 GMT  
+		Size: 2.5 KB (2452 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1890ce0750d85fa95733fef93eaf587cd64fec0496577271391ec8178731f15`  
-		Last Modified: Wed, 02 Feb 2022 19:48:55 GMT  
-		Size: 5.7 KB (5744 bytes)  
+	-	`sha256:0a1fa9cfcd5df23c68623edeb850e82ca287e3b57bd759402d25483c187cddc5`  
+		Last Modified: Fri, 04 Feb 2022 04:19:47 GMT  
+		Size: 5.7 KB (5743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4414eceff9cade8fa21f0d6d5dd48ff21a6fe293e07a3e492954c61a39d55028`  
-		Last Modified: Wed, 02 Feb 2022 19:48:56 GMT  
-		Size: 2.5 KB (2503 bytes)  
+	-	`sha256:95a464d8beef9841c1d3bd9fe94ed8b9ae243fb8f72b953952e84fe08f85a423`  
+		Last Modified: Fri, 04 Feb 2022 04:19:47 GMT  
+		Size: 2.5 KB (2501 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `xwiki:stable-postgres-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:abc72f00b0ba2692009b3820357d45ff103f6851a79fb7fbde8d95224db36f9f
+$ docker pull xwiki@sha256:1fd790d09f4863faab156a64edc7e964854adb2971ad199b76f0e952ecaf8e66
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6912,14 +6912,14 @@ $ docker pull xwiki@sha256:abc72f00b0ba2692009b3820357d45ff103f6851a79fb7fbde8d9
 ### `xwiki:stable-postgres-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:837c3dc218ae695159e83176e8a9c93c4ad68c0029f0f180463683160cfcd3f5
+$ docker pull xwiki@sha256:f6bf2f54549d6089f0e523d55e602f4d20e927a6c1cd0e9f0f6afa80e77999af
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **832.3 MB (832346635 bytes)**  
+-	Total Size: **832.5 MB (832500336 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d45f3ec7a7229f1d33ccb0bad9556d09c9d2b0348007476bb58ba69ba67afc8`
+-	Image ID: `sha256:bfb0ad62f6ddaf9084f137477622d2dabae7322240ed6b157c1dc2aa0a462475`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -6944,77 +6944,77 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 26 Jan 2022 09:24:15 GMT
 ENV LANG=C.UTF-8
-# Wed, 26 Jan 2022 09:24:15 GMT
-ENV JAVA_VERSION=11.0.13
-# Wed, 26 Jan 2022 09:25:37 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_x64_linux_11.0.13_8.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_aarch64_linux_11.0.13_8.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 26 Jan 2022 09:25:38 GMT
+# Thu, 03 Feb 2022 20:34:14 GMT
+ENV JAVA_VERSION=11.0.14
+# Thu, 03 Feb 2022 20:35:39 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_x64_linux_11.0.14_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_aarch64_linux_11.0.14_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 03 Feb 2022 20:35:40 GMT
 CMD ["jshell"]
-# Thu, 27 Jan 2022 17:44:01 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:02 GMT
+# Fri, 04 Feb 2022 01:32:02 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 WORKDIR /usr/local/tomcat
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 17:44:03 GMT
+# Fri, 04 Feb 2022 01:32:03 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_MAJOR=9
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_VERSION=9.0.58
-# Thu, 27 Jan 2022 18:11:21 GMT
+# Fri, 04 Feb 2022 01:46:36 GMT
 ENV TOMCAT_SHA512=33c030a312a0a087deeb06fff921d13a23789e152d30620f33a368e7a2244c762fcf9acd55f3b90f08560704ba45bc2be820bccf2058b0cf5801a7b124f9056d
-# Thu, 27 Jan 2022 18:12:37 GMT
+# Fri, 04 Feb 2022 01:47:39 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		dirmngr 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work; 		catalina.sh version
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 27 Jan 2022 18:12:39 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 EXPOSE 8080
-# Thu, 27 Jan 2022 18:12:40 GMT
+# Fri, 04 Feb 2022 01:47:42 GMT
 CMD ["catalina.sh" "run"]
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Fri, 28 Jan 2022 00:38:24 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:04 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Fri, 28 Jan 2022 00:38:25 GMT
+# Fri, 04 Feb 2022 06:20:05 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Fri, 28 Jan 2022 00:40:35 GMT
+# Fri, 04 Feb 2022 06:22:14 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps     libpostgresql-jdbc-java &&   rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 20:24:04 GMT
+# Fri, 04 Feb 2022 06:22:15 GMT
 ENV XWIKI_VERSION=14.0
-# Wed, 02 Feb 2022 20:24:04 GMT
+# Fri, 04 Feb 2022 06:22:15 GMT
 ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/14.0
-# Wed, 02 Feb 2022 20:24:05 GMT
+# Fri, 04 Feb 2022 06:22:16 GMT
 ENV XWIKI_DOWNLOAD_SHA256=9acdc5f54267fd0270b227dcea0ed5351125757a390ca8530f71b0943f4404c5
-# Wed, 02 Feb 2022 20:24:42 GMT
+# Fri, 04 Feb 2022 06:22:54 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Wed, 02 Feb 2022 20:24:44 GMT
+# Fri, 04 Feb 2022 06:22:55 GMT
 RUN cp /usr/share/java/postgresql-jdbc4.jar /usr/local/tomcat/webapps/ROOT/WEB-INF/lib/
-# Wed, 02 Feb 2022 20:24:44 GMT
+# Fri, 04 Feb 2022 06:22:56 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Wed, 02 Feb 2022 20:24:44 GMT
+# Fri, 04 Feb 2022 06:22:56 GMT
 COPY file:4a923f484bb29a26630c19e1d617d3bf6aa6ae7c6c4a5561e97b037bcde0847c in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Wed, 02 Feb 2022 20:24:45 GMT
+# Fri, 04 Feb 2022 06:22:57 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Wed, 02 Feb 2022 20:24:45 GMT
+# Fri, 04 Feb 2022 06:22:57 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Wed, 02 Feb 2022 20:24:46 GMT
+# Fri, 04 Feb 2022 06:22:57 GMT
 VOLUME [/usr/local/xwiki]
-# Wed, 02 Feb 2022 20:24:46 GMT
+# Fri, 04 Feb 2022 06:22:57 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 02 Feb 2022 20:24:46 GMT
+# Fri, 04 Feb 2022 06:22:57 GMT
 CMD ["xwiki"]
 ```
 
@@ -7043,62 +7043,62 @@ CMD ["xwiki"]
 		Last Modified: Wed, 26 Jan 2022 09:50:57 GMT  
 		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4512bdd2598cabd6c3bd8ee70ad79fceb4082b9bc297ff1b46a4e769ed684062`  
-		Last Modified: Wed, 26 Jan 2022 09:51:16 GMT  
-		Size: 203.1 MB (203118688 bytes)  
+	-	`sha256:fda090e7df3523dc9db18e06c2619b52e4dd2772c2800105e421552c27e599ed`  
+		Last Modified: Thu, 03 Feb 2022 20:58:14 GMT  
+		Size: 203.3 MB (203272575 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80124a46e801eaa1b446b86644d47869682894497815f2f0b77d98e29452343e`  
-		Last Modified: Thu, 27 Jan 2022 19:02:36 GMT  
-		Size: 172.0 B  
+	-	`sha256:e5341f7d466587f60c7ab87e18455c8f3e8f8e64681248565726a71137481f72`  
+		Last Modified: Fri, 04 Feb 2022 02:16:39 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46ecb4b115268768a2248cf5c66cccfb7d7293bba9c2c746337715effd0a1d2a`  
-		Last Modified: Thu, 27 Jan 2022 19:24:17 GMT  
-		Size: 12.5 MB (12522843 bytes)  
+	-	`sha256:658f77ce17d67d7b64dcd870a07d0e58bbe6a1ec52f253b0f93276edc3f1e0e4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:49 GMT  
+		Size: 12.5 MB (12522598 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdf3a46eab5ffff6d0b6fce0a150080847d2b80a4e03afa70c91377c9bf23401`  
-		Last Modified: Thu, 27 Jan 2022 19:24:16 GMT  
-		Size: 130.0 B  
+	-	`sha256:5c32bc7e7c91ebeb93dfcf733e07f2193161f8691a1555e22c9abe163ee7c2d4`  
+		Last Modified: Fri, 04 Feb 2022 02:27:47 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af539591d5df2e4985dee90ab6d28ee232867000819a22ea0c5a5a14bb89fd96`  
-		Last Modified: Fri, 28 Jan 2022 00:45:49 GMT  
-		Size: 190.3 MB (190285846 bytes)  
+	-	`sha256:fa796b6a421404c5ed1980b8e1277de92aadd8b243229d78ca48034606f4e44b`  
+		Last Modified: Fri, 04 Feb 2022 06:26:44 GMT  
+		Size: 190.3 MB (190285862 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e4428db8a856beb47aba7ea4b81fb292fd059409b6f250408782e799091c962b`  
-		Last Modified: Wed, 02 Feb 2022 20:26:36 GMT  
-		Size: 294.6 MB (294631351 bytes)  
+	-	`sha256:1954fc2d5c78b6e7d41b866e5e9acd1d6c3b124cbb7d35360555275291454274`  
+		Last Modified: Fri, 04 Feb 2022 06:26:35 GMT  
+		Size: 294.6 MB (294631391 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8bd922bd28f83f50d5a881ffd1b219297e3e98efe7fb929a4b84fee9a17d0efc`  
-		Last Modified: Wed, 02 Feb 2022 20:26:19 GMT  
+	-	`sha256:d3446a4f559b39f481290c50f81b5116f3502a8207fd2240b9d093d6a1d2f1c8`  
+		Last Modified: Fri, 04 Feb 2022 06:26:16 GMT  
 		Size: 846.2 KB (846209 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d1ab2055983b98a3bc6376831a2ac20f32182d3abe005a4a331a1f6a04f99df7`  
-		Last Modified: Wed, 02 Feb 2022 20:26:19 GMT  
+	-	`sha256:a62aa01d56a23a721829209a2ebfa86a6e8429e43a885845db80da121b42fc8b`  
+		Last Modified: Fri, 04 Feb 2022 06:26:15 GMT  
 		Size: 1.3 KB (1343 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f9fb79525796b1d0e91b4e80d0ef2c68ab60dd680bedcd2f36f21c7d59d1afaa`  
-		Last Modified: Wed, 02 Feb 2022 20:26:19 GMT  
+	-	`sha256:6d52718b75aa4b195dd2b01542290317486763781b1a395d92b455ac30dc3216`  
+		Last Modified: Fri, 04 Feb 2022 06:26:15 GMT  
 		Size: 2.5 KB (2455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dd38bd849ed46268c0df253acacf3a94077f1de52ae40546fab86c5a48a5fc55`  
-		Last Modified: Wed, 02 Feb 2022 20:26:19 GMT  
-		Size: 5.7 KB (5745 bytes)  
+	-	`sha256:0c0b585082194e12307f7ea4493165e3435e54f7c102f45a39186dd407ae2721`  
+		Last Modified: Fri, 04 Feb 2022 06:26:15 GMT  
+		Size: 5.7 KB (5744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:928f4afe7901aaa88ba8ac0cc92e3e92b8d282c146429ebeb53a25549a501306`  
-		Last Modified: Wed, 02 Feb 2022 20:26:19 GMT  
-		Size: 2.5 KB (2502 bytes)  
+	-	`sha256:45753e42e89889285411b08e1c3a211df89ffe1a517ceed9923c0601b8d68f1a`  
+		Last Modified: Fri, 04 Feb 2022 06:26:15 GMT  
+		Size: 2.5 KB (2504 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `xwiki:stable-postgres-tomcat` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:c0691ba2cc01631c74d17b6c097db0ef2a97637cc8226aa17879f5360dadd990
+$ docker pull xwiki@sha256:aacac077fdf66f699c0e83465fed5b61dbd4e372472ba031320825ba62e3d565
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **823.2 MB (823194373 bytes)**  
+-	Total Size: **823.4 MB (823367066 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:889373fd32d59a4c4edc549dd9dbe20a4d20705bb0d1cca2a87d59dc188fc9b6`
+-	Image ID: `sha256:e81db716727d179c0487868ca07a818559372c2813b00f4d814e13bf10226bb0`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -7123,77 +7123,77 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 26 Jan 2022 05:56:10 GMT
 ENV LANG=C.UTF-8
-# Wed, 26 Jan 2022 05:56:11 GMT
-ENV JAVA_VERSION=11.0.13
-# Wed, 26 Jan 2022 05:57:08 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_x64_linux_11.0.13_8.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.13%2B8/OpenJDK11U-jdk_aarch64_linux_11.0.13_8.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Wed, 26 Jan 2022 05:57:09 GMT
+# Thu, 03 Feb 2022 20:49:24 GMT
+ENV JAVA_VERSION=11.0.14
+# Thu, 03 Feb 2022 20:50:20 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_x64_linux_11.0.14_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_aarch64_linux_11.0.14_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Thu, 03 Feb 2022 20:50:21 GMT
 CMD ["jshell"]
-# Wed, 26 Jan 2022 23:45:39 GMT
+# Fri, 04 Feb 2022 00:39:07 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Wed, 26 Jan 2022 23:45:40 GMT
+# Fri, 04 Feb 2022 00:39:08 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 26 Jan 2022 23:45:41 GMT
+# Fri, 04 Feb 2022 00:39:09 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Wed, 26 Jan 2022 23:45:42 GMT
+# Fri, 04 Feb 2022 00:39:10 GMT
 WORKDIR /usr/local/tomcat
-# Wed, 26 Jan 2022 23:45:43 GMT
+# Fri, 04 Feb 2022 00:39:11 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Wed, 26 Jan 2022 23:45:44 GMT
+# Fri, 04 Feb 2022 00:39:12 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Thu, 27 Jan 2022 00:07:11 GMT
+# Fri, 04 Feb 2022 01:02:16 GMT
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
-# Thu, 27 Jan 2022 00:07:11 GMT
+# Fri, 04 Feb 2022 01:02:16 GMT
 ENV TOMCAT_MAJOR=9
-# Thu, 27 Jan 2022 00:07:12 GMT
+# Fri, 04 Feb 2022 01:02:17 GMT
 ENV TOMCAT_VERSION=9.0.58
-# Thu, 27 Jan 2022 00:07:13 GMT
+# Fri, 04 Feb 2022 01:02:18 GMT
 ENV TOMCAT_SHA512=33c030a312a0a087deeb06fff921d13a23789e152d30620f33a368e7a2244c762fcf9acd55f3b90f08560704ba45bc2be820bccf2058b0cf5801a7b124f9056d
-# Thu, 27 Jan 2022 00:07:33 GMT
+# Fri, 04 Feb 2022 01:03:23 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		dirmngr 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work; 		catalina.sh version
-# Thu, 27 Jan 2022 00:07:35 GMT
+# Fri, 04 Feb 2022 01:03:25 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Thu, 27 Jan 2022 00:07:36 GMT
+# Fri, 04 Feb 2022 01:03:25 GMT
 EXPOSE 8080
-# Thu, 27 Jan 2022 00:07:37 GMT
+# Fri, 04 Feb 2022 01:03:26 GMT
 CMD ["catalina.sh" "run"]
-# Thu, 27 Jan 2022 05:50:31 GMT
+# Fri, 04 Feb 2022 04:15:17 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Thu, 27 Jan 2022 05:50:31 GMT
+# Fri, 04 Feb 2022 04:15:17 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Thu, 27 Jan 2022 05:50:32 GMT
+# Fri, 04 Feb 2022 04:15:18 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Thu, 27 Jan 2022 05:50:33 GMT
+# Fri, 04 Feb 2022 04:15:19 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Thu, 27 Jan 2022 05:50:34 GMT
+# Fri, 04 Feb 2022 04:15:20 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Thu, 27 Jan 2022 05:50:35 GMT
+# Fri, 04 Feb 2022 04:15:21 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Thu, 27 Jan 2022 05:51:17 GMT
+# Fri, 04 Feb 2022 04:15:52 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps     libpostgresql-jdbc-java &&   rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 19:46:33 GMT
+# Fri, 04 Feb 2022 04:15:53 GMT
 ENV XWIKI_VERSION=14.0
-# Wed, 02 Feb 2022 19:46:34 GMT
+# Fri, 04 Feb 2022 04:15:54 GMT
 ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/14.0
-# Wed, 02 Feb 2022 19:46:35 GMT
+# Fri, 04 Feb 2022 04:15:55 GMT
 ENV XWIKI_DOWNLOAD_SHA256=9acdc5f54267fd0270b227dcea0ed5351125757a390ca8530f71b0943f4404c5
-# Wed, 02 Feb 2022 19:48:08 GMT
+# Fri, 04 Feb 2022 04:17:18 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Wed, 02 Feb 2022 19:48:10 GMT
+# Fri, 04 Feb 2022 04:17:20 GMT
 RUN cp /usr/share/java/postgresql-jdbc4.jar /usr/local/tomcat/webapps/ROOT/WEB-INF/lib/
-# Wed, 02 Feb 2022 19:48:11 GMT
+# Fri, 04 Feb 2022 04:17:21 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Wed, 02 Feb 2022 19:48:12 GMT
+# Fri, 04 Feb 2022 04:17:22 GMT
 COPY file:4a923f484bb29a26630c19e1d617d3bf6aa6ae7c6c4a5561e97b037bcde0847c in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Wed, 02 Feb 2022 19:48:13 GMT
+# Fri, 04 Feb 2022 04:17:23 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Wed, 02 Feb 2022 19:48:14 GMT
+# Fri, 04 Feb 2022 04:17:24 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Wed, 02 Feb 2022 19:48:15 GMT
+# Fri, 04 Feb 2022 04:17:25 GMT
 VOLUME [/usr/local/xwiki]
-# Wed, 02 Feb 2022 19:48:16 GMT
+# Fri, 04 Feb 2022 04:17:26 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 02 Feb 2022 19:48:17 GMT
+# Fri, 04 Feb 2022 04:17:27 GMT
 CMD ["xwiki"]
 ```
 
@@ -7222,43 +7222,43 @@ CMD ["xwiki"]
 		Last Modified: Wed, 26 Jan 2022 06:23:04 GMT  
 		Size: 212.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d46cad4095d077981b03d8fc3768a011689e84da8c906b28c8d762521c7d3d1a`  
-		Last Modified: Wed, 26 Jan 2022 06:23:23 GMT  
-		Size: 200.7 MB (200714065 bytes)  
+	-	`sha256:094aec66c6a7d824fad2b23976909d7a80fb1306908ad7fdfa38bded6f5d2f8b`  
+		Last Modified: Thu, 03 Feb 2022 21:12:31 GMT  
+		Size: 200.9 MB (200886679 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:51ffd677e016f0ca2d523555eb31a4bb907122ff28e694bf6f9ffa00d64eb35b`  
-		Last Modified: Thu, 27 Jan 2022 00:48:42 GMT  
+	-	`sha256:4d190c32e6780b7f813e534bb35b54d7c274759716626dd777c454fc06a884a8`  
+		Last Modified: Fri, 04 Feb 2022 01:44:18 GMT  
 		Size: 139.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35788645ec42db1cbdbb0e08d34d9c856f580940026809a268612d29c57b121c`  
-		Last Modified: Thu, 27 Jan 2022 01:04:30 GMT  
-		Size: 12.3 MB (12290038 bytes)  
+	-	`sha256:dfec2cf8d777891eaa322b3fe0e9666127e538e6c0ce47503f5a1ddb102e697b`  
+		Last Modified: Fri, 04 Feb 2022 01:58:19 GMT  
+		Size: 12.3 MB (12289911 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a00e62b554c09b0a5e65167e12d701de6aed0d2a2c9f37df0f4d2d8416380e9`  
-		Last Modified: Thu, 27 Jan 2022 05:55:50 GMT  
-		Size: 185.2 MB (185204053 bytes)  
+	-	`sha256:6b2a11450733610955131b222d21338c16cd2e791d4ab640678898c6885cf082`  
+		Last Modified: Fri, 04 Feb 2022 04:20:14 GMT  
+		Size: 185.2 MB (185204270 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:07d7706f02ede0aa87b190d3cd80ba43efc30d4b373e64de921729026c4d3910`  
-		Last Modified: Wed, 02 Feb 2022 19:49:18 GMT  
-		Size: 294.6 MB (294631653 bytes)  
+	-	`sha256:df23d485d76bf12a5975078ed0ece599663e166585c0e160785c0c8d15622e47`  
+		Last Modified: Fri, 04 Feb 2022 04:20:10 GMT  
+		Size: 294.6 MB (294631646 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae9b9b1c0398c4a17d1068bad2709d8eb38e19cf3452800a0a3fa46c3d54d16d`  
-		Last Modified: Wed, 02 Feb 2022 19:48:56 GMT  
-		Size: 846.2 KB (846207 bytes)  
+	-	`sha256:141480e5cd238a5348df43a6652f7121409cc6f40985912fe490b4e02e011958`  
+		Last Modified: Fri, 04 Feb 2022 04:19:47 GMT  
+		Size: 846.2 KB (846208 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a7a8c336d893c897775265a8caceab3598a055715d822cba8c18f2e95489564e`  
-		Last Modified: Wed, 02 Feb 2022 19:48:55 GMT  
-		Size: 1.3 KB (1343 bytes)  
+	-	`sha256:f60d403609eeac8339bd174b32423892290074ad36512ffc18ef58d6ad770a2f`  
+		Last Modified: Fri, 04 Feb 2022 04:19:47 GMT  
+		Size: 1.3 KB (1344 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eefc762909996628f34206edfcfb4ef938c2525e53f82e2d4a6aa7e77145abc3`  
-		Last Modified: Wed, 02 Feb 2022 19:48:56 GMT  
-		Size: 2.5 KB (2455 bytes)  
+	-	`sha256:2d55dfee5207a361b335d468b8676bdeaf1c27767ec962a7ceff9d564e49904a`  
+		Last Modified: Fri, 04 Feb 2022 04:19:47 GMT  
+		Size: 2.5 KB (2452 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1890ce0750d85fa95733fef93eaf587cd64fec0496577271391ec8178731f15`  
-		Last Modified: Wed, 02 Feb 2022 19:48:55 GMT  
-		Size: 5.7 KB (5744 bytes)  
+	-	`sha256:0a1fa9cfcd5df23c68623edeb850e82ca287e3b57bd759402d25483c187cddc5`  
+		Last Modified: Fri, 04 Feb 2022 04:19:47 GMT  
+		Size: 5.7 KB (5743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4414eceff9cade8fa21f0d6d5dd48ff21a6fe293e07a3e492954c61a39d55028`  
-		Last Modified: Wed, 02 Feb 2022 19:48:56 GMT  
-		Size: 2.5 KB (2503 bytes)  
+	-	`sha256:95a464d8beef9841c1d3bd9fe94ed8b9ae243fb8f72b953952e84fe08f85a423`  
+		Last Modified: Fri, 04 Feb 2022 04:19:47 GMT  
+		Size: 2.5 KB (2501 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
