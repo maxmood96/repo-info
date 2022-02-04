@@ -1,10 +1,10 @@
-# `openjdk:8u312-jre-slim-bullseye`
+# `openjdk:8u322-jre-slim-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:cf0a4d9bd82bdb9c0bf81f5750455ba173bfd8eb51b0301cee5bc2b95ebaacad`
-- Created: `2022-01-26T09:33:42.996012247Z`
-- Virtual Size: ~ 194.35 Mb  
+- Image ID: `sha256:c0d3af3bfb454919057b47cfca2f863eefef3bb7509f3ce753fa4c35875e394d`
+- Created: `2022-02-03T20:50:05.166537713Z`
+- Virtual Size: ~ 194.39 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/local/openjdk-8`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=8u312`
+  - `JAVA_VERSION=8u322`
 
 ## `dpkg` (`.deb`-based packages)
 

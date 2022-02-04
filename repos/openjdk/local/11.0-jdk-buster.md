@@ -1,10 +1,10 @@
-# `openjdk:11.0.13-jdk-buster`
+# `openjdk:11.0.14-jdk-buster`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9a02c2fd109efbdf2493c9469d895d4e16736a959830995556fa3caa6d585b4f`
-- Created: `2022-01-26T09:27:23.407264551Z`
-- Virtual Size: ~ 647.49 Mb  
+- Image ID: `sha256:2b9473d8c3b899f8fe94e1eece92efa3f3f6499be025311b830065845915af6c`
+- Created: `2022-02-03T20:38:47.476957064Z`
+- Virtual Size: ~ 647.75 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/local/openjdk-11`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=11.0.13`
+  - `JAVA_VERSION=11.0.14`
 
 ## `dpkg` (`.deb`-based packages)
 
