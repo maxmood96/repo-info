@@ -3,26 +3,22 @@
 # Tags of `plone`
 
 -	[`plone:5`](#plone5)
--	[`plone:5-python37`](#plone5-python37)
 -	[`plone:5-python38`](#plone5-python38)
--	[`plone:5-python39`](#plone5-python39)
 -	[`plone:5.2`](#plone52)
--	[`plone:5.2-python37`](#plone52-python37)
 -	[`plone:5.2-python38`](#plone52-python38)
--	[`plone:5.2-python39`](#plone52-python39)
 -	[`plone:5.2.5`](#plone525)
--	[`plone:5.2.5-python37`](#plone525-python37)
 -	[`plone:5.2.5-python38`](#plone525-python38)
--	[`plone:5.2.5-python39`](#plone525-python39)
+-	[`plone:5.2.6`](#plone526)
+-	[`plone:5.2.6-python38`](#plone526-python38)
+-	[`plone:5.2.7`](#plone527)
+-	[`plone:5.2.7-python38`](#plone527-python38)
 -	[`plone:latest`](#plonelatest)
--	[`plone:python37`](#plonepython37)
 -	[`plone:python38`](#plonepython38)
--	[`plone:python39`](#plonepython39)
 
 ## `plone:5`
 
 ```console
-$ docker pull plone@sha256:09f236180ebc584426af0f18574f86cc7b96fb1264124bde9c3f81ec4e072369
+$ docker pull plone@sha256:f506dc5764250904747588629459ef6cecc35c4ea57c1348506249f825361d2c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -32,14 +28,14 @@ $ docker pull plone@sha256:09f236180ebc584426af0f18574f86cc7b96fb1264124bde9c3f8
 ### `plone:5` - linux; amd64
 
 ```console
-$ docker pull plone@sha256:e07369f5eac473cfa7ea2c1da4729a9f4be623688d0bb212b9890b44cba2f663
+$ docker pull plone@sha256:c49a626dd5557b6fa6923860ea5fbe5050e3683ac146bbdcbe7eebb2322e0072
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **241.7 MB (241671240 bytes)**  
+-	Total Size: **243.3 MB (243282311 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:812101146c3e48465c88352c619afcc3829f2bd65ea61185902cb03b1de3b6e3`
+-	Image ID: `sha256:355d09a034c8116b9065e2440b336994564d037cf2b844481aaff09c33d03f84`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["start"]`
 
@@ -56,45 +52,45 @@ ENV LANG=C.UTF-8
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		netbase 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
 # Wed, 26 Jan 2022 21:15:16 GMT
 ENV GPG_KEY=E3FF2839C048B25C084DEBE9B26995E310250568
-# Wed, 26 Jan 2022 21:15:16 GMT
-ENV PYTHON_VERSION=3.9.10
-# Sat, 29 Jan 2022 04:39:51 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		gnupg dirmngr 		libbluetooth-dev 		libbz2-dev 		libc6-dev 		libexpat1-dev 		libffi-dev 		libgdbm-dev 		liblzma-dev 		libncursesw5-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tk-dev 		uuid-dev 		wget 		xz-utils 		zlib1g-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPG_KEY"; 	gpg --batch --verify python.tar.xz.asc python.tar.xz; 	command -v gpgconf > /dev/null && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" python.tar.xz.asc; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-optimizations 		--enable-option-checking=fatal 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	; 	nproc="$(nproc)"; 	make -j "$nproc" 		LDFLAGS="-Wl,--strip-all" 	; 	make install; 	cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name '*.a' \) \) 		\) -exec rm -rf '{}' + 	; 		ldconfig; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python3 --version
-# Sat, 29 Jan 2022 04:39:52 GMT
+# Sat, 29 Jan 2022 05:26:04 GMT
+ENV PYTHON_VERSION=3.8.12
+# Sat, 29 Jan 2022 05:35:23 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		gnupg dirmngr 		libbluetooth-dev 		libbz2-dev 		libc6-dev 		libexpat1-dev 		libffi-dev 		libgdbm-dev 		liblzma-dev 		libncursesw5-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tk-dev 		uuid-dev 		wget 		xz-utils 		zlib1g-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPG_KEY"; 	gpg --batch --verify python.tar.xz.asc python.tar.xz; 	command -v gpgconf > /dev/null && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" python.tar.xz.asc; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-optimizations 		--enable-option-checking=fatal 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	; 	nproc="$(nproc)"; 	make -j "$nproc" 		LDFLAGS="-Wl,--strip-all" 	; 	make install; 	cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name '*.a' \) \) 			-o \( -type f -a -name 'wininst-*.exe' \) 		\) -exec rm -rf '{}' + 	; 		ldconfig; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python3 --version
+# Sat, 29 Jan 2022 05:35:24 GMT
 RUN set -eux; 	for src in idle3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "/usr/local/bin/$src" "/usr/local/bin/$dst"; 	done
-# Sat, 29 Jan 2022 04:39:52 GMT
+# Sat, 29 Jan 2022 05:35:24 GMT
 ENV PYTHON_PIP_VERSION=21.2.4
-# Sat, 29 Jan 2022 04:39:53 GMT
-ENV PYTHON_SETUPTOOLS_VERSION=58.1.0
-# Sat, 29 Jan 2022 04:39:53 GMT
+# Sat, 29 Jan 2022 05:35:25 GMT
+ENV PYTHON_SETUPTOOLS_VERSION=57.5.0
+# Sat, 29 Jan 2022 05:35:25 GMT
 ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/3cb8888cc2869620f57d5d2da64da38f516078c7/public/get-pip.py
-# Sat, 29 Jan 2022 04:39:53 GMT
+# Sat, 29 Jan 2022 05:35:25 GMT
 ENV PYTHON_GET_PIP_SHA256=c518250e91a70d7b20cceb15272209a4ded2a0c263ae5776f129e0d9b5674309
-# Sat, 29 Jan 2022 04:40:05 GMT
+# Sat, 29 Jan 2022 05:35:37 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	; 	rm -f get-pip.py
-# Sat, 29 Jan 2022 04:40:06 GMT
+# Sat, 29 Jan 2022 05:35:37 GMT
 CMD ["python3"]
-# Sat, 29 Jan 2022 07:20:22 GMT
-ENV PIP=21.0.1 ZC_BUILDOUT=2.13.5 SETUPTOOLS=51.3.3 WHEEL=0.36.2 PLONE_MAJOR=5.2 PLONE_VERSION=5.2.5 PLONE_VERSION_RELEASE=Plone-5.2.5-UnifiedInstaller-1.0 PLONE_MD5=62d96ddc612cf35d18890c752a59edc4
-# Sat, 29 Jan 2022 07:20:24 GMT
+# Fri, 04 Feb 2022 05:50:11 GMT
+ENV PIP=21.0.1 ZC_BUILDOUT=2.13.5 SETUPTOOLS=51.3.3 WHEEL=0.36.2 PLONE_MAJOR=5.2 PLONE_VERSION=5.2.7 PLONE_VERSION_RELEASE=Plone-5.2.7-UnifiedInstaller-1.0 PLONE_MD5=c180d7ce3170b1871a7e8d53938096b1
+# Fri, 04 Feb 2022 05:50:12 GMT
 RUN useradd --system -m -d /plone -U -u 500 plone  && mkdir -p /plone/instance/ /data/filestorage /data/blobstorage
-# Sat, 29 Jan 2022 07:20:24 GMT
-COPY file:c72591a4a81e946d3e2e785b23d6a368007666aaf3e458c6fd32b86e1e5b5025 in /plone/instance/ 
-# Sat, 29 Jan 2022 07:26:24 GMT
+# Fri, 04 Feb 2022 05:50:12 GMT
+COPY file:7b22c8ff5914ecee959543c0622bbb71de3b59961836e6f0bad3c41c35197e25 in /plone/instance/ 
+# Fri, 04 Feb 2022 05:54:16 GMT
 RUN buildDeps="default-libmysqlclient-dev dpkg-dev gcc libbz2-dev libc6-dev libffi-dev libjpeg62-turbo-dev libldap2-dev libopenjp2-7-dev libpcre3-dev libpq-dev libsasl2-dev libssl-dev libtiff5-dev libxml2-dev libxslt1-dev wget zlib1g-dev"  && runDeps="default-libmysqlclient-dev git gosu libjpeg62 libopenjp2-7 libpq5 libtiff5 libxml2 libxslt1.1 lynx netcat poppler-utils rsync wv"  && apt-get update  && apt-get install -y --no-install-recommends $buildDeps  && wget -O Plone.tgz https://launchpad.net/plone/$PLONE_MAJOR/$PLONE_VERSION/+download/$PLONE_VERSION_RELEASE.tgz  && echo "$PLONE_MD5 Plone.tgz" | md5sum -c -  && tar -xzf Plone.tgz  && cp -rv ./$PLONE_VERSION_RELEASE/base_skeleton/* /plone/instance/  && cp -v ./$PLONE_VERSION_RELEASE/buildout_templates/buildout.cfg /plone/instance/buildout-base.cfg  && pip install pip==$PIP setuptools==$SETUPTOOLS zc.buildout==$ZC_BUILDOUT wheel==$WHEEL  && cd /plone/instance  && buildout  && ln -s /data/filestorage/ /plone/instance/var/filestorage  && ln -s /data/blobstorage /plone/instance/var/blobstorage  && find /data  -not -user plone -exec chown plone:plone {} \+  && find /plone -not -user plone -exec chown plone:plone {} \+  && rm -rf /Plone*  && apt-get purge -y --auto-remove $buildDeps  && apt-get install -y --no-install-recommends $runDeps  && rm -rf /var/lib/apt/lists/*  && rm -rf /plone/buildout-cache/downloads/*
-# Sat, 29 Jan 2022 07:26:28 GMT
+# Fri, 04 Feb 2022 05:54:17 GMT
 VOLUME [/data]
-# Sat, 29 Jan 2022 07:26:28 GMT
-COPY multi:0d8a1d0f8ea3598efc970a9d1a7a50b969ffaa0704d732da1b62240ced2f6442 in / 
-# Sat, 29 Jan 2022 07:26:28 GMT
+# Fri, 04 Feb 2022 05:54:18 GMT
+COPY multi:cb7e252b86bd636999944f95a07a275ae82b4f8eefb11a49319425c7445203ac in / 
+# Fri, 04 Feb 2022 05:54:18 GMT
 EXPOSE 8080
-# Sat, 29 Jan 2022 07:26:28 GMT
+# Fri, 04 Feb 2022 05:54:18 GMT
 WORKDIR /plone/instance
-# Sat, 29 Jan 2022 07:26:29 GMT
+# Fri, 04 Feb 2022 05:54:18 GMT
 HEALTHCHECK &{["CMD-SHELL" "nc -z -w5 127.0.0.1 8080 || exit 1"] "1m0s" "5s" "1m0s" '\x00'}
-# Sat, 29 Jan 2022 07:26:29 GMT
+# Fri, 04 Feb 2022 05:54:19 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 29 Jan 2022 07:26:29 GMT
+# Fri, 04 Feb 2022 05:54:19 GMT
 CMD ["start"]
 ```
 
@@ -107,156 +103,39 @@ CMD ["start"]
 		Last Modified: Wed, 26 Jan 2022 22:34:52 GMT  
 		Size: 2.8 MB (2770186 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c2b309db2de8e8d501d5cb8e42b8576c2c24ee71b1f7488cbda69be445a5c02`  
-		Last Modified: Sat, 29 Jan 2022 06:52:49 GMT  
-		Size: 11.0 MB (11018413 bytes)  
+	-	`sha256:cfcccbd80a1adc59bf0d5a7ff05c5806afa8417c9ca3b87914b9e2ac755b0812`  
+		Last Modified: Sat, 29 Jan 2022 06:54:11 GMT  
+		Size: 10.7 MB (10728843 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b84635b4bc7acf9cbbc814f32196c28d63e7f3d5a1bcfd96af8516e99839590`  
-		Last Modified: Sat, 29 Jan 2022 06:52:46 GMT  
+	-	`sha256:0995a517cdf86ed3b8c1183c9f52caadc88aaa532bc15953e1c8f25df2e0d478`  
+		Last Modified: Sat, 29 Jan 2022 06:54:09 GMT  
 		Size: 236.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1a4f31df0540ae609df8ac43f468900b1cb5e18fccc1f4b06bfc8a3f20a0ebfb`  
-		Last Modified: Sat, 29 Jan 2022 06:52:47 GMT  
-		Size: 2.6 MB (2635235 bytes)  
+	-	`sha256:8c798f76106bb9af30691b3bcaa3aca47c1b36faf3bd572ce796c6d901ccb1ac`  
+		Last Modified: Sat, 29 Jan 2022 06:54:10 GMT  
+		Size: 2.6 MB (2637476 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ffae253ae02aad1b1f59583f75f3e74e64799cd13df9bd0243de4d07da35c6d`  
-		Last Modified: Sat, 29 Jan 2022 07:38:05 GMT  
-		Size: 3.9 KB (3944 bytes)  
+	-	`sha256:8cc4f4f69b12d6551860ba2b0bb18ed8183af3120f48dc8227a51ab110fb6f07`  
+		Last Modified: Fri, 04 Feb 2022 06:03:05 GMT  
+		Size: 3.9 KB (3948 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0791475393b8bbdb127d1e0dedee117a6099c60d3617812183738318b20dbef1`  
-		Last Modified: Sat, 29 Jan 2022 07:38:05 GMT  
-		Size: 1.2 KB (1210 bytes)  
+	-	`sha256:f53347a81f98913107c3e151ff11be2d43499ecb9bd4091dd005021bd7aeb883`  
+		Last Modified: Fri, 04 Feb 2022 06:03:05 GMT  
+		Size: 1.3 KB (1260 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71d4477eee422e33e90390208a7786acff0f48bd04854cfd8ac2d38a354d29c3`  
-		Last Modified: Sat, 29 Jan 2022 07:38:37 GMT  
-		Size: 198.1 MB (198084389 bytes)  
+	-	`sha256:dac2105bad12200c47a690ea91a66408b1cef2000e16eed301411a6f6e6e6b85`  
+		Last Modified: Fri, 04 Feb 2022 06:03:35 GMT  
+		Size: 200.0 MB (199982623 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3180d862405d60693de2dd9b1efe421ddd1738797e0b22c4228ffecd66d033da`  
-		Last Modified: Sat, 29 Jan 2022 07:38:05 GMT  
-		Size: 3.9 KB (3896 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-## `plone:5-python37`
-
-```console
-$ docker pull plone@sha256:d1a0dba5a25eb4390b0a21145d6e5ce6265f129d685e00b1d3087207bca84983
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 1
-	-	linux; amd64
-
-### `plone:5-python37` - linux; amd64
-
-```console
-$ docker pull plone@sha256:e4594d997940256d656f3111e17dfda5211845e377dd630d01b5451d1b5306c9
-```
-
--	Docker Version: 20.10.7
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **241.1 MB (241140675 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ffd95d3c4e2216f3bffee49b7422f818ff81bee2b7741bce7374a259a9804e5d`
--	Entrypoint: `["\/docker-entrypoint.sh"]`
--	Default Command: `["start"]`
-
-```dockerfile
-# Wed, 26 Jan 2022 01:40:59 GMT
-ADD file:c51141702f568a28a7e3e7a2748f5ead5754e32d7b1cf7ebc8f4326273d05206 in / 
-# Wed, 26 Jan 2022 01:40:59 GMT
-CMD ["bash"]
-# Wed, 26 Jan 2022 20:36:00 GMT
-ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 26 Jan 2022 20:36:00 GMT
-ENV LANG=C.UTF-8
-# Wed, 26 Jan 2022 20:36:07 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		netbase 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
-# Sat, 29 Jan 2022 06:17:55 GMT
-ENV GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D
-# Sat, 29 Jan 2022 06:17:55 GMT
-ENV PYTHON_VERSION=3.7.12
-# Sat, 29 Jan 2022 06:27:10 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		gnupg dirmngr 		libbluetooth-dev 		libbz2-dev 		libc6-dev 		libexpat1-dev 		libffi-dev 		libgdbm-dev 		liblzma-dev 		libncursesw5-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tk-dev 		uuid-dev 		wget 		xz-utils 		zlib1g-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPG_KEY"; 	gpg --batch --verify python.tar.xz.asc python.tar.xz; 	command -v gpgconf > /dev/null && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" python.tar.xz.asc; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-optimizations 		--enable-option-checking=fatal 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	; 	nproc="$(nproc)"; 	make -j "$nproc" 		LDFLAGS="-Wl,--strip-all" 		PROFILE_TASK='-m test.regrtest --pgo 			test_array 			test_base64 			test_binascii 			test_binhex 			test_binop 			test_bytes 			test_c_locale_coercion 			test_class 			test_cmath 			test_codecs 			test_compile 			test_complex 			test_csv 			test_decimal 			test_dict 			test_float 			test_fstring 			test_hashlib 			test_io 			test_iter 			test_json 			test_long 			test_math 			test_memoryview 			test_pickle 			test_re 			test_set 			test_slice 			test_struct 			test_threading 			test_time 			test_traceback 			test_unicode 		' 	; 	make install; 	cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name '*.a' \) \) 			-o \( -type f -a -name 'wininst-*.exe' \) 		\) -exec rm -rf '{}' + 	; 		ldconfig; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python3 --version
-# Sat, 29 Jan 2022 06:27:11 GMT
-RUN set -eux; 	for src in idle3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "/usr/local/bin/$src" "/usr/local/bin/$dst"; 	done
-# Sat, 29 Jan 2022 06:27:11 GMT
-ENV PYTHON_PIP_VERSION=21.2.4
-# Sat, 29 Jan 2022 06:27:11 GMT
-ENV PYTHON_SETUPTOOLS_VERSION=57.5.0
-# Sat, 29 Jan 2022 06:27:12 GMT
-ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/3cb8888cc2869620f57d5d2da64da38f516078c7/public/get-pip.py
-# Sat, 29 Jan 2022 06:27:12 GMT
-ENV PYTHON_GET_PIP_SHA256=c518250e91a70d7b20cceb15272209a4ded2a0c263ae5776f129e0d9b5674309
-# Sat, 29 Jan 2022 06:27:29 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	; 	rm -f get-pip.py
-# Sat, 29 Jan 2022 06:27:30 GMT
-CMD ["python3"]
-# Sat, 29 Jan 2022 07:32:24 GMT
-ENV PIP=21.0.1 ZC_BUILDOUT=2.13.5 SETUPTOOLS=51.3.3 WHEEL=0.36.2 PLONE_MAJOR=5.2 PLONE_VERSION=5.2.5 PLONE_VERSION_RELEASE=Plone-5.2.5-UnifiedInstaller-1.0 PLONE_MD5=62d96ddc612cf35d18890c752a59edc4
-# Sat, 29 Jan 2022 07:32:26 GMT
-RUN useradd --system -m -d /plone -U -u 500 plone  && mkdir -p /plone/instance/ /data/filestorage /data/blobstorage
-# Sat, 29 Jan 2022 07:32:27 GMT
-COPY file:c72591a4a81e946d3e2e785b23d6a368007666aaf3e458c6fd32b86e1e5b5025 in /plone/instance/ 
-# Sat, 29 Jan 2022 07:37:24 GMT
-RUN buildDeps="default-libmysqlclient-dev dpkg-dev gcc libbz2-dev libc6-dev libffi-dev libjpeg62-turbo-dev libldap2-dev libopenjp2-7-dev libpcre3-dev libpq-dev libsasl2-dev libssl-dev libtiff5-dev libxml2-dev libxslt1-dev wget zlib1g-dev"  && runDeps="default-libmysqlclient-dev git gosu libjpeg62 libopenjp2-7 libpq5 libtiff5 libxml2 libxslt1.1 lynx netcat poppler-utils rsync wv"  && apt-get update  && apt-get install -y --no-install-recommends $buildDeps  && wget -O Plone.tgz https://launchpad.net/plone/$PLONE_MAJOR/$PLONE_VERSION/+download/$PLONE_VERSION_RELEASE.tgz  && echo "$PLONE_MD5 Plone.tgz" | md5sum -c -  && tar -xzf Plone.tgz  && cp -rv ./$PLONE_VERSION_RELEASE/base_skeleton/* /plone/instance/  && cp -v ./$PLONE_VERSION_RELEASE/buildout_templates/buildout.cfg /plone/instance/buildout-base.cfg  && pip install pip==$PIP setuptools==$SETUPTOOLS zc.buildout==$ZC_BUILDOUT wheel==$WHEEL  && cd /plone/instance  && buildout  && ln -s /data/filestorage/ /plone/instance/var/filestorage  && ln -s /data/blobstorage /plone/instance/var/blobstorage  && find /data  -not -user plone -exec chown plone:plone {} \+  && find /plone -not -user plone -exec chown plone:plone {} \+  && rm -rf /Plone*  && apt-get purge -y --auto-remove $buildDeps  && apt-get install -y --no-install-recommends $runDeps  && rm -rf /var/lib/apt/lists/*  && rm -rf /plone/buildout-cache/downloads/*
-# Sat, 29 Jan 2022 07:37:29 GMT
-VOLUME [/data]
-# Sat, 29 Jan 2022 07:37:29 GMT
-COPY multi:0d8a1d0f8ea3598efc970a9d1a7a50b969ffaa0704d732da1b62240ced2f6442 in / 
-# Sat, 29 Jan 2022 07:37:29 GMT
-EXPOSE 8080
-# Sat, 29 Jan 2022 07:37:30 GMT
-WORKDIR /plone/instance
-# Sat, 29 Jan 2022 07:37:30 GMT
-HEALTHCHECK &{["CMD-SHELL" "nc -z -w5 127.0.0.1 8080 || exit 1"] "1m0s" "5s" "1m0s" '\x00'}
-# Sat, 29 Jan 2022 07:37:30 GMT
-ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 29 Jan 2022 07:37:31 GMT
-CMD ["start"]
-```
-
--	Layers:
-	-	`sha256:6552179c3509e3c4314b4065e0d2790563d01cd474e2fdd58be4d46acd48af6a`  
-		Last Modified: Wed, 26 Jan 2022 01:47:31 GMT  
-		Size: 27.2 MB (27153731 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c4887dad22fda8ead06b653271b8a6fde0f36b5d8aaa804f12f79a0fef138de5`  
-		Last Modified: Wed, 26 Jan 2022 22:34:52 GMT  
-		Size: 2.8 MB (2770186 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:83fecc69c36756a7720784991fdb9b6cea6d75efcb59b77d1cc77e1037cf4b3a`  
-		Last Modified: Sat, 29 Jan 2022 06:55:29 GMT  
-		Size: 10.1 MB (10059888 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a9d24969a226ef5af07fbca75838b5695614fb47e8a7a317221b49521f39de05`  
-		Last Modified: Sat, 29 Jan 2022 06:55:27 GMT  
-		Size: 235.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3546e2eec5e7fa9d82a4b53097cab929820afc4a3512ceb7a0acf996e01c318d`  
-		Last Modified: Sat, 29 Jan 2022 06:55:28 GMT  
-		Size: 2.6 MB (2637339 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe2e12da3d906a992033736305997415cca52e7d726f434c62afc7794c675be8`  
-		Last Modified: Sat, 29 Jan 2022 07:40:06 GMT  
-		Size: 3.9 KB (3946 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ffe5943351e3c84037b88dfbb60e298580d2d9c6540b94c4b94afd319e21d11b`  
-		Last Modified: Sat, 29 Jan 2022 07:40:06 GMT  
-		Size: 1.2 KB (1209 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cb64702f4594911a396402b143258369d41122f6e22f04c7d7e29462c048b2a2`  
-		Last Modified: Sat, 29 Jan 2022 07:40:39 GMT  
-		Size: 198.5 MB (198510244 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bba776e57f950b07983b4486a4134370630e3b275c9eefc9c17fd6875eb1d6e0`  
-		Last Modified: Sat, 29 Jan 2022 07:40:06 GMT  
-		Size: 3.9 KB (3897 bytes)  
+	-	`sha256:42328bccfed5a8d465cfac70624f0e4ea542210473d130539221080866b8df11`  
+		Last Modified: Fri, 04 Feb 2022 06:03:05 GMT  
+		Size: 4.0 KB (4008 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `plone:5-python38`
 
 ```console
-$ docker pull plone@sha256:6b07ca8f14d96383a1953c9570dc32fdcebf52c9af92e71c643e7bc6019f2988
+$ docker pull plone@sha256:f506dc5764250904747588629459ef6cecc35c4ea57c1348506249f825361d2c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -266,14 +145,14 @@ $ docker pull plone@sha256:6b07ca8f14d96383a1953c9570dc32fdcebf52c9af92e71c643e7
 ### `plone:5-python38` - linux; amd64
 
 ```console
-$ docker pull plone@sha256:c0d16bdf134a7bfa5081caeaf3a0ad6ba1ea2417a4a24000518f719e1f9dae31
+$ docker pull plone@sha256:c49a626dd5557b6fa6923860ea5fbe5050e3683ac146bbdcbe7eebb2322e0072
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **242.4 MB (242425310 bytes)**  
+-	Total Size: **243.3 MB (243282311 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:71d7af6dc3ceb4a87ecf8a2d6c92983c55749ff72a0c6d535dc12afbff706673`
+-	Image ID: `sha256:355d09a034c8116b9065e2440b336994564d037cf2b844481aaff09c33d03f84`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["start"]`
 
@@ -308,27 +187,27 @@ ENV PYTHON_GET_PIP_SHA256=c518250e91a70d7b20cceb15272209a4ded2a0c263ae5776f129e0
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	; 	rm -f get-pip.py
 # Sat, 29 Jan 2022 05:35:37 GMT
 CMD ["python3"]
-# Sat, 29 Jan 2022 07:26:44 GMT
-ENV PIP=21.0.1 ZC_BUILDOUT=2.13.5 SETUPTOOLS=51.3.3 WHEEL=0.36.2 PLONE_MAJOR=5.2 PLONE_VERSION=5.2.5 PLONE_VERSION_RELEASE=Plone-5.2.5-UnifiedInstaller-1.0 PLONE_MD5=62d96ddc612cf35d18890c752a59edc4
-# Sat, 29 Jan 2022 07:26:45 GMT
+# Fri, 04 Feb 2022 05:50:11 GMT
+ENV PIP=21.0.1 ZC_BUILDOUT=2.13.5 SETUPTOOLS=51.3.3 WHEEL=0.36.2 PLONE_MAJOR=5.2 PLONE_VERSION=5.2.7 PLONE_VERSION_RELEASE=Plone-5.2.7-UnifiedInstaller-1.0 PLONE_MD5=c180d7ce3170b1871a7e8d53938096b1
+# Fri, 04 Feb 2022 05:50:12 GMT
 RUN useradd --system -m -d /plone -U -u 500 plone  && mkdir -p /plone/instance/ /data/filestorage /data/blobstorage
-# Sat, 29 Jan 2022 07:26:46 GMT
-COPY file:c72591a4a81e946d3e2e785b23d6a368007666aaf3e458c6fd32b86e1e5b5025 in /plone/instance/ 
-# Sat, 29 Jan 2022 07:32:08 GMT
+# Fri, 04 Feb 2022 05:50:12 GMT
+COPY file:7b22c8ff5914ecee959543c0622bbb71de3b59961836e6f0bad3c41c35197e25 in /plone/instance/ 
+# Fri, 04 Feb 2022 05:54:16 GMT
 RUN buildDeps="default-libmysqlclient-dev dpkg-dev gcc libbz2-dev libc6-dev libffi-dev libjpeg62-turbo-dev libldap2-dev libopenjp2-7-dev libpcre3-dev libpq-dev libsasl2-dev libssl-dev libtiff5-dev libxml2-dev libxslt1-dev wget zlib1g-dev"  && runDeps="default-libmysqlclient-dev git gosu libjpeg62 libopenjp2-7 libpq5 libtiff5 libxml2 libxslt1.1 lynx netcat poppler-utils rsync wv"  && apt-get update  && apt-get install -y --no-install-recommends $buildDeps  && wget -O Plone.tgz https://launchpad.net/plone/$PLONE_MAJOR/$PLONE_VERSION/+download/$PLONE_VERSION_RELEASE.tgz  && echo "$PLONE_MD5 Plone.tgz" | md5sum -c -  && tar -xzf Plone.tgz  && cp -rv ./$PLONE_VERSION_RELEASE/base_skeleton/* /plone/instance/  && cp -v ./$PLONE_VERSION_RELEASE/buildout_templates/buildout.cfg /plone/instance/buildout-base.cfg  && pip install pip==$PIP setuptools==$SETUPTOOLS zc.buildout==$ZC_BUILDOUT wheel==$WHEEL  && cd /plone/instance  && buildout  && ln -s /data/filestorage/ /plone/instance/var/filestorage  && ln -s /data/blobstorage /plone/instance/var/blobstorage  && find /data  -not -user plone -exec chown plone:plone {} \+  && find /plone -not -user plone -exec chown plone:plone {} \+  && rm -rf /Plone*  && apt-get purge -y --auto-remove $buildDeps  && apt-get install -y --no-install-recommends $runDeps  && rm -rf /var/lib/apt/lists/*  && rm -rf /plone/buildout-cache/downloads/*
-# Sat, 29 Jan 2022 07:32:12 GMT
+# Fri, 04 Feb 2022 05:54:17 GMT
 VOLUME [/data]
-# Sat, 29 Jan 2022 07:32:12 GMT
-COPY multi:0d8a1d0f8ea3598efc970a9d1a7a50b969ffaa0704d732da1b62240ced2f6442 in / 
-# Sat, 29 Jan 2022 07:32:13 GMT
+# Fri, 04 Feb 2022 05:54:18 GMT
+COPY multi:cb7e252b86bd636999944f95a07a275ae82b4f8eefb11a49319425c7445203ac in / 
+# Fri, 04 Feb 2022 05:54:18 GMT
 EXPOSE 8080
-# Sat, 29 Jan 2022 07:32:13 GMT
+# Fri, 04 Feb 2022 05:54:18 GMT
 WORKDIR /plone/instance
-# Sat, 29 Jan 2022 07:32:14 GMT
+# Fri, 04 Feb 2022 05:54:18 GMT
 HEALTHCHECK &{["CMD-SHELL" "nc -z -w5 127.0.0.1 8080 || exit 1"] "1m0s" "5s" "1m0s" '\x00'}
-# Sat, 29 Jan 2022 07:32:14 GMT
+# Fri, 04 Feb 2022 05:54:19 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 29 Jan 2022 07:32:14 GMT
+# Fri, 04 Feb 2022 05:54:19 GMT
 CMD ["start"]
 ```
 
@@ -353,144 +232,27 @@ CMD ["start"]
 		Last Modified: Sat, 29 Jan 2022 06:54:10 GMT  
 		Size: 2.6 MB (2637476 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa10d873eb21e57495c735fd28bc0d1884b7a4e0d857c8dd9e4577c2304eaac6`  
-		Last Modified: Sat, 29 Jan 2022 07:39:07 GMT  
-		Size: 4.0 KB (3951 bytes)  
+	-	`sha256:8cc4f4f69b12d6551860ba2b0bb18ed8183af3120f48dc8227a51ab110fb6f07`  
+		Last Modified: Fri, 04 Feb 2022 06:03:05 GMT  
+		Size: 3.9 KB (3948 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e57f530b70d522abb25927e9ca93c958d8ee7228e2100652e5f61d28faacb10c`  
-		Last Modified: Sat, 29 Jan 2022 07:39:07 GMT  
-		Size: 1.2 KB (1206 bytes)  
+	-	`sha256:f53347a81f98913107c3e151ff11be2d43499ecb9bd4091dd005021bd7aeb883`  
+		Last Modified: Fri, 04 Feb 2022 06:03:05 GMT  
+		Size: 1.3 KB (1260 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45b36b047ac2edd3a3ce839ad1a3d1fc2404b136418bc77f08bf1aae8326fc8a`  
-		Last Modified: Sat, 29 Jan 2022 07:39:51 GMT  
-		Size: 199.1 MB (199125786 bytes)  
+	-	`sha256:dac2105bad12200c47a690ea91a66408b1cef2000e16eed301411a6f6e6e6b85`  
+		Last Modified: Fri, 04 Feb 2022 06:03:35 GMT  
+		Size: 200.0 MB (199982623 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d1300236fbc9b7b58c406ddb666669c079ee2a2679b160f24db4738084f49df8`  
-		Last Modified: Sat, 29 Jan 2022 07:39:07 GMT  
-		Size: 3.9 KB (3895 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-## `plone:5-python39`
-
-```console
-$ docker pull plone@sha256:09f236180ebc584426af0f18574f86cc7b96fb1264124bde9c3f81ec4e072369
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 1
-	-	linux; amd64
-
-### `plone:5-python39` - linux; amd64
-
-```console
-$ docker pull plone@sha256:e07369f5eac473cfa7ea2c1da4729a9f4be623688d0bb212b9890b44cba2f663
-```
-
--	Docker Version: 20.10.7
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **241.7 MB (241671240 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:812101146c3e48465c88352c619afcc3829f2bd65ea61185902cb03b1de3b6e3`
--	Entrypoint: `["\/docker-entrypoint.sh"]`
--	Default Command: `["start"]`
-
-```dockerfile
-# Wed, 26 Jan 2022 01:40:59 GMT
-ADD file:c51141702f568a28a7e3e7a2748f5ead5754e32d7b1cf7ebc8f4326273d05206 in / 
-# Wed, 26 Jan 2022 01:40:59 GMT
-CMD ["bash"]
-# Wed, 26 Jan 2022 20:36:00 GMT
-ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 26 Jan 2022 20:36:00 GMT
-ENV LANG=C.UTF-8
-# Wed, 26 Jan 2022 20:36:07 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		netbase 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 26 Jan 2022 21:15:16 GMT
-ENV GPG_KEY=E3FF2839C048B25C084DEBE9B26995E310250568
-# Wed, 26 Jan 2022 21:15:16 GMT
-ENV PYTHON_VERSION=3.9.10
-# Sat, 29 Jan 2022 04:39:51 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		gnupg dirmngr 		libbluetooth-dev 		libbz2-dev 		libc6-dev 		libexpat1-dev 		libffi-dev 		libgdbm-dev 		liblzma-dev 		libncursesw5-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tk-dev 		uuid-dev 		wget 		xz-utils 		zlib1g-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPG_KEY"; 	gpg --batch --verify python.tar.xz.asc python.tar.xz; 	command -v gpgconf > /dev/null && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" python.tar.xz.asc; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-optimizations 		--enable-option-checking=fatal 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	; 	nproc="$(nproc)"; 	make -j "$nproc" 		LDFLAGS="-Wl,--strip-all" 	; 	make install; 	cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name '*.a' \) \) 		\) -exec rm -rf '{}' + 	; 		ldconfig; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python3 --version
-# Sat, 29 Jan 2022 04:39:52 GMT
-RUN set -eux; 	for src in idle3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "/usr/local/bin/$src" "/usr/local/bin/$dst"; 	done
-# Sat, 29 Jan 2022 04:39:52 GMT
-ENV PYTHON_PIP_VERSION=21.2.4
-# Sat, 29 Jan 2022 04:39:53 GMT
-ENV PYTHON_SETUPTOOLS_VERSION=58.1.0
-# Sat, 29 Jan 2022 04:39:53 GMT
-ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/3cb8888cc2869620f57d5d2da64da38f516078c7/public/get-pip.py
-# Sat, 29 Jan 2022 04:39:53 GMT
-ENV PYTHON_GET_PIP_SHA256=c518250e91a70d7b20cceb15272209a4ded2a0c263ae5776f129e0d9b5674309
-# Sat, 29 Jan 2022 04:40:05 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	; 	rm -f get-pip.py
-# Sat, 29 Jan 2022 04:40:06 GMT
-CMD ["python3"]
-# Sat, 29 Jan 2022 07:20:22 GMT
-ENV PIP=21.0.1 ZC_BUILDOUT=2.13.5 SETUPTOOLS=51.3.3 WHEEL=0.36.2 PLONE_MAJOR=5.2 PLONE_VERSION=5.2.5 PLONE_VERSION_RELEASE=Plone-5.2.5-UnifiedInstaller-1.0 PLONE_MD5=62d96ddc612cf35d18890c752a59edc4
-# Sat, 29 Jan 2022 07:20:24 GMT
-RUN useradd --system -m -d /plone -U -u 500 plone  && mkdir -p /plone/instance/ /data/filestorage /data/blobstorage
-# Sat, 29 Jan 2022 07:20:24 GMT
-COPY file:c72591a4a81e946d3e2e785b23d6a368007666aaf3e458c6fd32b86e1e5b5025 in /plone/instance/ 
-# Sat, 29 Jan 2022 07:26:24 GMT
-RUN buildDeps="default-libmysqlclient-dev dpkg-dev gcc libbz2-dev libc6-dev libffi-dev libjpeg62-turbo-dev libldap2-dev libopenjp2-7-dev libpcre3-dev libpq-dev libsasl2-dev libssl-dev libtiff5-dev libxml2-dev libxslt1-dev wget zlib1g-dev"  && runDeps="default-libmysqlclient-dev git gosu libjpeg62 libopenjp2-7 libpq5 libtiff5 libxml2 libxslt1.1 lynx netcat poppler-utils rsync wv"  && apt-get update  && apt-get install -y --no-install-recommends $buildDeps  && wget -O Plone.tgz https://launchpad.net/plone/$PLONE_MAJOR/$PLONE_VERSION/+download/$PLONE_VERSION_RELEASE.tgz  && echo "$PLONE_MD5 Plone.tgz" | md5sum -c -  && tar -xzf Plone.tgz  && cp -rv ./$PLONE_VERSION_RELEASE/base_skeleton/* /plone/instance/  && cp -v ./$PLONE_VERSION_RELEASE/buildout_templates/buildout.cfg /plone/instance/buildout-base.cfg  && pip install pip==$PIP setuptools==$SETUPTOOLS zc.buildout==$ZC_BUILDOUT wheel==$WHEEL  && cd /plone/instance  && buildout  && ln -s /data/filestorage/ /plone/instance/var/filestorage  && ln -s /data/blobstorage /plone/instance/var/blobstorage  && find /data  -not -user plone -exec chown plone:plone {} \+  && find /plone -not -user plone -exec chown plone:plone {} \+  && rm -rf /Plone*  && apt-get purge -y --auto-remove $buildDeps  && apt-get install -y --no-install-recommends $runDeps  && rm -rf /var/lib/apt/lists/*  && rm -rf /plone/buildout-cache/downloads/*
-# Sat, 29 Jan 2022 07:26:28 GMT
-VOLUME [/data]
-# Sat, 29 Jan 2022 07:26:28 GMT
-COPY multi:0d8a1d0f8ea3598efc970a9d1a7a50b969ffaa0704d732da1b62240ced2f6442 in / 
-# Sat, 29 Jan 2022 07:26:28 GMT
-EXPOSE 8080
-# Sat, 29 Jan 2022 07:26:28 GMT
-WORKDIR /plone/instance
-# Sat, 29 Jan 2022 07:26:29 GMT
-HEALTHCHECK &{["CMD-SHELL" "nc -z -w5 127.0.0.1 8080 || exit 1"] "1m0s" "5s" "1m0s" '\x00'}
-# Sat, 29 Jan 2022 07:26:29 GMT
-ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 29 Jan 2022 07:26:29 GMT
-CMD ["start"]
-```
-
--	Layers:
-	-	`sha256:6552179c3509e3c4314b4065e0d2790563d01cd474e2fdd58be4d46acd48af6a`  
-		Last Modified: Wed, 26 Jan 2022 01:47:31 GMT  
-		Size: 27.2 MB (27153731 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c4887dad22fda8ead06b653271b8a6fde0f36b5d8aaa804f12f79a0fef138de5`  
-		Last Modified: Wed, 26 Jan 2022 22:34:52 GMT  
-		Size: 2.8 MB (2770186 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c2b309db2de8e8d501d5cb8e42b8576c2c24ee71b1f7488cbda69be445a5c02`  
-		Last Modified: Sat, 29 Jan 2022 06:52:49 GMT  
-		Size: 11.0 MB (11018413 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b84635b4bc7acf9cbbc814f32196c28d63e7f3d5a1bcfd96af8516e99839590`  
-		Last Modified: Sat, 29 Jan 2022 06:52:46 GMT  
-		Size: 236.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1a4f31df0540ae609df8ac43f468900b1cb5e18fccc1f4b06bfc8a3f20a0ebfb`  
-		Last Modified: Sat, 29 Jan 2022 06:52:47 GMT  
-		Size: 2.6 MB (2635235 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ffae253ae02aad1b1f59583f75f3e74e64799cd13df9bd0243de4d07da35c6d`  
-		Last Modified: Sat, 29 Jan 2022 07:38:05 GMT  
-		Size: 3.9 KB (3944 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0791475393b8bbdb127d1e0dedee117a6099c60d3617812183738318b20dbef1`  
-		Last Modified: Sat, 29 Jan 2022 07:38:05 GMT  
-		Size: 1.2 KB (1210 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71d4477eee422e33e90390208a7786acff0f48bd04854cfd8ac2d38a354d29c3`  
-		Last Modified: Sat, 29 Jan 2022 07:38:37 GMT  
-		Size: 198.1 MB (198084389 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3180d862405d60693de2dd9b1efe421ddd1738797e0b22c4228ffecd66d033da`  
-		Last Modified: Sat, 29 Jan 2022 07:38:05 GMT  
-		Size: 3.9 KB (3896 bytes)  
+	-	`sha256:42328bccfed5a8d465cfac70624f0e4ea542210473d130539221080866b8df11`  
+		Last Modified: Fri, 04 Feb 2022 06:03:05 GMT  
+		Size: 4.0 KB (4008 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `plone:5.2`
 
 ```console
-$ docker pull plone@sha256:09f236180ebc584426af0f18574f86cc7b96fb1264124bde9c3f81ec4e072369
+$ docker pull plone@sha256:f506dc5764250904747588629459ef6cecc35c4ea57c1348506249f825361d2c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -500,14 +262,14 @@ $ docker pull plone@sha256:09f236180ebc584426af0f18574f86cc7b96fb1264124bde9c3f8
 ### `plone:5.2` - linux; amd64
 
 ```console
-$ docker pull plone@sha256:e07369f5eac473cfa7ea2c1da4729a9f4be623688d0bb212b9890b44cba2f663
+$ docker pull plone@sha256:c49a626dd5557b6fa6923860ea5fbe5050e3683ac146bbdcbe7eebb2322e0072
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **241.7 MB (241671240 bytes)**  
+-	Total Size: **243.3 MB (243282311 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:812101146c3e48465c88352c619afcc3829f2bd65ea61185902cb03b1de3b6e3`
+-	Image ID: `sha256:355d09a034c8116b9065e2440b336994564d037cf2b844481aaff09c33d03f84`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["start"]`
 
@@ -524,45 +286,45 @@ ENV LANG=C.UTF-8
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		netbase 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
 # Wed, 26 Jan 2022 21:15:16 GMT
 ENV GPG_KEY=E3FF2839C048B25C084DEBE9B26995E310250568
-# Wed, 26 Jan 2022 21:15:16 GMT
-ENV PYTHON_VERSION=3.9.10
-# Sat, 29 Jan 2022 04:39:51 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		gnupg dirmngr 		libbluetooth-dev 		libbz2-dev 		libc6-dev 		libexpat1-dev 		libffi-dev 		libgdbm-dev 		liblzma-dev 		libncursesw5-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tk-dev 		uuid-dev 		wget 		xz-utils 		zlib1g-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPG_KEY"; 	gpg --batch --verify python.tar.xz.asc python.tar.xz; 	command -v gpgconf > /dev/null && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" python.tar.xz.asc; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-optimizations 		--enable-option-checking=fatal 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	; 	nproc="$(nproc)"; 	make -j "$nproc" 		LDFLAGS="-Wl,--strip-all" 	; 	make install; 	cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name '*.a' \) \) 		\) -exec rm -rf '{}' + 	; 		ldconfig; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python3 --version
-# Sat, 29 Jan 2022 04:39:52 GMT
+# Sat, 29 Jan 2022 05:26:04 GMT
+ENV PYTHON_VERSION=3.8.12
+# Sat, 29 Jan 2022 05:35:23 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		gnupg dirmngr 		libbluetooth-dev 		libbz2-dev 		libc6-dev 		libexpat1-dev 		libffi-dev 		libgdbm-dev 		liblzma-dev 		libncursesw5-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tk-dev 		uuid-dev 		wget 		xz-utils 		zlib1g-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPG_KEY"; 	gpg --batch --verify python.tar.xz.asc python.tar.xz; 	command -v gpgconf > /dev/null && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" python.tar.xz.asc; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-optimizations 		--enable-option-checking=fatal 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	; 	nproc="$(nproc)"; 	make -j "$nproc" 		LDFLAGS="-Wl,--strip-all" 	; 	make install; 	cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name '*.a' \) \) 			-o \( -type f -a -name 'wininst-*.exe' \) 		\) -exec rm -rf '{}' + 	; 		ldconfig; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python3 --version
+# Sat, 29 Jan 2022 05:35:24 GMT
 RUN set -eux; 	for src in idle3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "/usr/local/bin/$src" "/usr/local/bin/$dst"; 	done
-# Sat, 29 Jan 2022 04:39:52 GMT
+# Sat, 29 Jan 2022 05:35:24 GMT
 ENV PYTHON_PIP_VERSION=21.2.4
-# Sat, 29 Jan 2022 04:39:53 GMT
-ENV PYTHON_SETUPTOOLS_VERSION=58.1.0
-# Sat, 29 Jan 2022 04:39:53 GMT
+# Sat, 29 Jan 2022 05:35:25 GMT
+ENV PYTHON_SETUPTOOLS_VERSION=57.5.0
+# Sat, 29 Jan 2022 05:35:25 GMT
 ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/3cb8888cc2869620f57d5d2da64da38f516078c7/public/get-pip.py
-# Sat, 29 Jan 2022 04:39:53 GMT
+# Sat, 29 Jan 2022 05:35:25 GMT
 ENV PYTHON_GET_PIP_SHA256=c518250e91a70d7b20cceb15272209a4ded2a0c263ae5776f129e0d9b5674309
-# Sat, 29 Jan 2022 04:40:05 GMT
+# Sat, 29 Jan 2022 05:35:37 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	; 	rm -f get-pip.py
-# Sat, 29 Jan 2022 04:40:06 GMT
+# Sat, 29 Jan 2022 05:35:37 GMT
 CMD ["python3"]
-# Sat, 29 Jan 2022 07:20:22 GMT
-ENV PIP=21.0.1 ZC_BUILDOUT=2.13.5 SETUPTOOLS=51.3.3 WHEEL=0.36.2 PLONE_MAJOR=5.2 PLONE_VERSION=5.2.5 PLONE_VERSION_RELEASE=Plone-5.2.5-UnifiedInstaller-1.0 PLONE_MD5=62d96ddc612cf35d18890c752a59edc4
-# Sat, 29 Jan 2022 07:20:24 GMT
+# Fri, 04 Feb 2022 05:50:11 GMT
+ENV PIP=21.0.1 ZC_BUILDOUT=2.13.5 SETUPTOOLS=51.3.3 WHEEL=0.36.2 PLONE_MAJOR=5.2 PLONE_VERSION=5.2.7 PLONE_VERSION_RELEASE=Plone-5.2.7-UnifiedInstaller-1.0 PLONE_MD5=c180d7ce3170b1871a7e8d53938096b1
+# Fri, 04 Feb 2022 05:50:12 GMT
 RUN useradd --system -m -d /plone -U -u 500 plone  && mkdir -p /plone/instance/ /data/filestorage /data/blobstorage
-# Sat, 29 Jan 2022 07:20:24 GMT
-COPY file:c72591a4a81e946d3e2e785b23d6a368007666aaf3e458c6fd32b86e1e5b5025 in /plone/instance/ 
-# Sat, 29 Jan 2022 07:26:24 GMT
+# Fri, 04 Feb 2022 05:50:12 GMT
+COPY file:7b22c8ff5914ecee959543c0622bbb71de3b59961836e6f0bad3c41c35197e25 in /plone/instance/ 
+# Fri, 04 Feb 2022 05:54:16 GMT
 RUN buildDeps="default-libmysqlclient-dev dpkg-dev gcc libbz2-dev libc6-dev libffi-dev libjpeg62-turbo-dev libldap2-dev libopenjp2-7-dev libpcre3-dev libpq-dev libsasl2-dev libssl-dev libtiff5-dev libxml2-dev libxslt1-dev wget zlib1g-dev"  && runDeps="default-libmysqlclient-dev git gosu libjpeg62 libopenjp2-7 libpq5 libtiff5 libxml2 libxslt1.1 lynx netcat poppler-utils rsync wv"  && apt-get update  && apt-get install -y --no-install-recommends $buildDeps  && wget -O Plone.tgz https://launchpad.net/plone/$PLONE_MAJOR/$PLONE_VERSION/+download/$PLONE_VERSION_RELEASE.tgz  && echo "$PLONE_MD5 Plone.tgz" | md5sum -c -  && tar -xzf Plone.tgz  && cp -rv ./$PLONE_VERSION_RELEASE/base_skeleton/* /plone/instance/  && cp -v ./$PLONE_VERSION_RELEASE/buildout_templates/buildout.cfg /plone/instance/buildout-base.cfg  && pip install pip==$PIP setuptools==$SETUPTOOLS zc.buildout==$ZC_BUILDOUT wheel==$WHEEL  && cd /plone/instance  && buildout  && ln -s /data/filestorage/ /plone/instance/var/filestorage  && ln -s /data/blobstorage /plone/instance/var/blobstorage  && find /data  -not -user plone -exec chown plone:plone {} \+  && find /plone -not -user plone -exec chown plone:plone {} \+  && rm -rf /Plone*  && apt-get purge -y --auto-remove $buildDeps  && apt-get install -y --no-install-recommends $runDeps  && rm -rf /var/lib/apt/lists/*  && rm -rf /plone/buildout-cache/downloads/*
-# Sat, 29 Jan 2022 07:26:28 GMT
+# Fri, 04 Feb 2022 05:54:17 GMT
 VOLUME [/data]
-# Sat, 29 Jan 2022 07:26:28 GMT
-COPY multi:0d8a1d0f8ea3598efc970a9d1a7a50b969ffaa0704d732da1b62240ced2f6442 in / 
-# Sat, 29 Jan 2022 07:26:28 GMT
+# Fri, 04 Feb 2022 05:54:18 GMT
+COPY multi:cb7e252b86bd636999944f95a07a275ae82b4f8eefb11a49319425c7445203ac in / 
+# Fri, 04 Feb 2022 05:54:18 GMT
 EXPOSE 8080
-# Sat, 29 Jan 2022 07:26:28 GMT
+# Fri, 04 Feb 2022 05:54:18 GMT
 WORKDIR /plone/instance
-# Sat, 29 Jan 2022 07:26:29 GMT
+# Fri, 04 Feb 2022 05:54:18 GMT
 HEALTHCHECK &{["CMD-SHELL" "nc -z -w5 127.0.0.1 8080 || exit 1"] "1m0s" "5s" "1m0s" '\x00'}
-# Sat, 29 Jan 2022 07:26:29 GMT
+# Fri, 04 Feb 2022 05:54:19 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 29 Jan 2022 07:26:29 GMT
+# Fri, 04 Feb 2022 05:54:19 GMT
 CMD ["start"]
 ```
 
@@ -575,156 +337,39 @@ CMD ["start"]
 		Last Modified: Wed, 26 Jan 2022 22:34:52 GMT  
 		Size: 2.8 MB (2770186 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c2b309db2de8e8d501d5cb8e42b8576c2c24ee71b1f7488cbda69be445a5c02`  
-		Last Modified: Sat, 29 Jan 2022 06:52:49 GMT  
-		Size: 11.0 MB (11018413 bytes)  
+	-	`sha256:cfcccbd80a1adc59bf0d5a7ff05c5806afa8417c9ca3b87914b9e2ac755b0812`  
+		Last Modified: Sat, 29 Jan 2022 06:54:11 GMT  
+		Size: 10.7 MB (10728843 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b84635b4bc7acf9cbbc814f32196c28d63e7f3d5a1bcfd96af8516e99839590`  
-		Last Modified: Sat, 29 Jan 2022 06:52:46 GMT  
+	-	`sha256:0995a517cdf86ed3b8c1183c9f52caadc88aaa532bc15953e1c8f25df2e0d478`  
+		Last Modified: Sat, 29 Jan 2022 06:54:09 GMT  
 		Size: 236.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1a4f31df0540ae609df8ac43f468900b1cb5e18fccc1f4b06bfc8a3f20a0ebfb`  
-		Last Modified: Sat, 29 Jan 2022 06:52:47 GMT  
-		Size: 2.6 MB (2635235 bytes)  
+	-	`sha256:8c798f76106bb9af30691b3bcaa3aca47c1b36faf3bd572ce796c6d901ccb1ac`  
+		Last Modified: Sat, 29 Jan 2022 06:54:10 GMT  
+		Size: 2.6 MB (2637476 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ffae253ae02aad1b1f59583f75f3e74e64799cd13df9bd0243de4d07da35c6d`  
-		Last Modified: Sat, 29 Jan 2022 07:38:05 GMT  
-		Size: 3.9 KB (3944 bytes)  
+	-	`sha256:8cc4f4f69b12d6551860ba2b0bb18ed8183af3120f48dc8227a51ab110fb6f07`  
+		Last Modified: Fri, 04 Feb 2022 06:03:05 GMT  
+		Size: 3.9 KB (3948 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0791475393b8bbdb127d1e0dedee117a6099c60d3617812183738318b20dbef1`  
-		Last Modified: Sat, 29 Jan 2022 07:38:05 GMT  
-		Size: 1.2 KB (1210 bytes)  
+	-	`sha256:f53347a81f98913107c3e151ff11be2d43499ecb9bd4091dd005021bd7aeb883`  
+		Last Modified: Fri, 04 Feb 2022 06:03:05 GMT  
+		Size: 1.3 KB (1260 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71d4477eee422e33e90390208a7786acff0f48bd04854cfd8ac2d38a354d29c3`  
-		Last Modified: Sat, 29 Jan 2022 07:38:37 GMT  
-		Size: 198.1 MB (198084389 bytes)  
+	-	`sha256:dac2105bad12200c47a690ea91a66408b1cef2000e16eed301411a6f6e6e6b85`  
+		Last Modified: Fri, 04 Feb 2022 06:03:35 GMT  
+		Size: 200.0 MB (199982623 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3180d862405d60693de2dd9b1efe421ddd1738797e0b22c4228ffecd66d033da`  
-		Last Modified: Sat, 29 Jan 2022 07:38:05 GMT  
-		Size: 3.9 KB (3896 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-## `plone:5.2-python37`
-
-```console
-$ docker pull plone@sha256:d1a0dba5a25eb4390b0a21145d6e5ce6265f129d685e00b1d3087207bca84983
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 1
-	-	linux; amd64
-
-### `plone:5.2-python37` - linux; amd64
-
-```console
-$ docker pull plone@sha256:e4594d997940256d656f3111e17dfda5211845e377dd630d01b5451d1b5306c9
-```
-
--	Docker Version: 20.10.7
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **241.1 MB (241140675 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ffd95d3c4e2216f3bffee49b7422f818ff81bee2b7741bce7374a259a9804e5d`
--	Entrypoint: `["\/docker-entrypoint.sh"]`
--	Default Command: `["start"]`
-
-```dockerfile
-# Wed, 26 Jan 2022 01:40:59 GMT
-ADD file:c51141702f568a28a7e3e7a2748f5ead5754e32d7b1cf7ebc8f4326273d05206 in / 
-# Wed, 26 Jan 2022 01:40:59 GMT
-CMD ["bash"]
-# Wed, 26 Jan 2022 20:36:00 GMT
-ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 26 Jan 2022 20:36:00 GMT
-ENV LANG=C.UTF-8
-# Wed, 26 Jan 2022 20:36:07 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		netbase 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
-# Sat, 29 Jan 2022 06:17:55 GMT
-ENV GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D
-# Sat, 29 Jan 2022 06:17:55 GMT
-ENV PYTHON_VERSION=3.7.12
-# Sat, 29 Jan 2022 06:27:10 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		gnupg dirmngr 		libbluetooth-dev 		libbz2-dev 		libc6-dev 		libexpat1-dev 		libffi-dev 		libgdbm-dev 		liblzma-dev 		libncursesw5-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tk-dev 		uuid-dev 		wget 		xz-utils 		zlib1g-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPG_KEY"; 	gpg --batch --verify python.tar.xz.asc python.tar.xz; 	command -v gpgconf > /dev/null && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" python.tar.xz.asc; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-optimizations 		--enable-option-checking=fatal 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	; 	nproc="$(nproc)"; 	make -j "$nproc" 		LDFLAGS="-Wl,--strip-all" 		PROFILE_TASK='-m test.regrtest --pgo 			test_array 			test_base64 			test_binascii 			test_binhex 			test_binop 			test_bytes 			test_c_locale_coercion 			test_class 			test_cmath 			test_codecs 			test_compile 			test_complex 			test_csv 			test_decimal 			test_dict 			test_float 			test_fstring 			test_hashlib 			test_io 			test_iter 			test_json 			test_long 			test_math 			test_memoryview 			test_pickle 			test_re 			test_set 			test_slice 			test_struct 			test_threading 			test_time 			test_traceback 			test_unicode 		' 	; 	make install; 	cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name '*.a' \) \) 			-o \( -type f -a -name 'wininst-*.exe' \) 		\) -exec rm -rf '{}' + 	; 		ldconfig; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python3 --version
-# Sat, 29 Jan 2022 06:27:11 GMT
-RUN set -eux; 	for src in idle3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "/usr/local/bin/$src" "/usr/local/bin/$dst"; 	done
-# Sat, 29 Jan 2022 06:27:11 GMT
-ENV PYTHON_PIP_VERSION=21.2.4
-# Sat, 29 Jan 2022 06:27:11 GMT
-ENV PYTHON_SETUPTOOLS_VERSION=57.5.0
-# Sat, 29 Jan 2022 06:27:12 GMT
-ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/3cb8888cc2869620f57d5d2da64da38f516078c7/public/get-pip.py
-# Sat, 29 Jan 2022 06:27:12 GMT
-ENV PYTHON_GET_PIP_SHA256=c518250e91a70d7b20cceb15272209a4ded2a0c263ae5776f129e0d9b5674309
-# Sat, 29 Jan 2022 06:27:29 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	; 	rm -f get-pip.py
-# Sat, 29 Jan 2022 06:27:30 GMT
-CMD ["python3"]
-# Sat, 29 Jan 2022 07:32:24 GMT
-ENV PIP=21.0.1 ZC_BUILDOUT=2.13.5 SETUPTOOLS=51.3.3 WHEEL=0.36.2 PLONE_MAJOR=5.2 PLONE_VERSION=5.2.5 PLONE_VERSION_RELEASE=Plone-5.2.5-UnifiedInstaller-1.0 PLONE_MD5=62d96ddc612cf35d18890c752a59edc4
-# Sat, 29 Jan 2022 07:32:26 GMT
-RUN useradd --system -m -d /plone -U -u 500 plone  && mkdir -p /plone/instance/ /data/filestorage /data/blobstorage
-# Sat, 29 Jan 2022 07:32:27 GMT
-COPY file:c72591a4a81e946d3e2e785b23d6a368007666aaf3e458c6fd32b86e1e5b5025 in /plone/instance/ 
-# Sat, 29 Jan 2022 07:37:24 GMT
-RUN buildDeps="default-libmysqlclient-dev dpkg-dev gcc libbz2-dev libc6-dev libffi-dev libjpeg62-turbo-dev libldap2-dev libopenjp2-7-dev libpcre3-dev libpq-dev libsasl2-dev libssl-dev libtiff5-dev libxml2-dev libxslt1-dev wget zlib1g-dev"  && runDeps="default-libmysqlclient-dev git gosu libjpeg62 libopenjp2-7 libpq5 libtiff5 libxml2 libxslt1.1 lynx netcat poppler-utils rsync wv"  && apt-get update  && apt-get install -y --no-install-recommends $buildDeps  && wget -O Plone.tgz https://launchpad.net/plone/$PLONE_MAJOR/$PLONE_VERSION/+download/$PLONE_VERSION_RELEASE.tgz  && echo "$PLONE_MD5 Plone.tgz" | md5sum -c -  && tar -xzf Plone.tgz  && cp -rv ./$PLONE_VERSION_RELEASE/base_skeleton/* /plone/instance/  && cp -v ./$PLONE_VERSION_RELEASE/buildout_templates/buildout.cfg /plone/instance/buildout-base.cfg  && pip install pip==$PIP setuptools==$SETUPTOOLS zc.buildout==$ZC_BUILDOUT wheel==$WHEEL  && cd /plone/instance  && buildout  && ln -s /data/filestorage/ /plone/instance/var/filestorage  && ln -s /data/blobstorage /plone/instance/var/blobstorage  && find /data  -not -user plone -exec chown plone:plone {} \+  && find /plone -not -user plone -exec chown plone:plone {} \+  && rm -rf /Plone*  && apt-get purge -y --auto-remove $buildDeps  && apt-get install -y --no-install-recommends $runDeps  && rm -rf /var/lib/apt/lists/*  && rm -rf /plone/buildout-cache/downloads/*
-# Sat, 29 Jan 2022 07:37:29 GMT
-VOLUME [/data]
-# Sat, 29 Jan 2022 07:37:29 GMT
-COPY multi:0d8a1d0f8ea3598efc970a9d1a7a50b969ffaa0704d732da1b62240ced2f6442 in / 
-# Sat, 29 Jan 2022 07:37:29 GMT
-EXPOSE 8080
-# Sat, 29 Jan 2022 07:37:30 GMT
-WORKDIR /plone/instance
-# Sat, 29 Jan 2022 07:37:30 GMT
-HEALTHCHECK &{["CMD-SHELL" "nc -z -w5 127.0.0.1 8080 || exit 1"] "1m0s" "5s" "1m0s" '\x00'}
-# Sat, 29 Jan 2022 07:37:30 GMT
-ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 29 Jan 2022 07:37:31 GMT
-CMD ["start"]
-```
-
--	Layers:
-	-	`sha256:6552179c3509e3c4314b4065e0d2790563d01cd474e2fdd58be4d46acd48af6a`  
-		Last Modified: Wed, 26 Jan 2022 01:47:31 GMT  
-		Size: 27.2 MB (27153731 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c4887dad22fda8ead06b653271b8a6fde0f36b5d8aaa804f12f79a0fef138de5`  
-		Last Modified: Wed, 26 Jan 2022 22:34:52 GMT  
-		Size: 2.8 MB (2770186 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:83fecc69c36756a7720784991fdb9b6cea6d75efcb59b77d1cc77e1037cf4b3a`  
-		Last Modified: Sat, 29 Jan 2022 06:55:29 GMT  
-		Size: 10.1 MB (10059888 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a9d24969a226ef5af07fbca75838b5695614fb47e8a7a317221b49521f39de05`  
-		Last Modified: Sat, 29 Jan 2022 06:55:27 GMT  
-		Size: 235.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3546e2eec5e7fa9d82a4b53097cab929820afc4a3512ceb7a0acf996e01c318d`  
-		Last Modified: Sat, 29 Jan 2022 06:55:28 GMT  
-		Size: 2.6 MB (2637339 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe2e12da3d906a992033736305997415cca52e7d726f434c62afc7794c675be8`  
-		Last Modified: Sat, 29 Jan 2022 07:40:06 GMT  
-		Size: 3.9 KB (3946 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ffe5943351e3c84037b88dfbb60e298580d2d9c6540b94c4b94afd319e21d11b`  
-		Last Modified: Sat, 29 Jan 2022 07:40:06 GMT  
-		Size: 1.2 KB (1209 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cb64702f4594911a396402b143258369d41122f6e22f04c7d7e29462c048b2a2`  
-		Last Modified: Sat, 29 Jan 2022 07:40:39 GMT  
-		Size: 198.5 MB (198510244 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bba776e57f950b07983b4486a4134370630e3b275c9eefc9c17fd6875eb1d6e0`  
-		Last Modified: Sat, 29 Jan 2022 07:40:06 GMT  
-		Size: 3.9 KB (3897 bytes)  
+	-	`sha256:42328bccfed5a8d465cfac70624f0e4ea542210473d130539221080866b8df11`  
+		Last Modified: Fri, 04 Feb 2022 06:03:05 GMT  
+		Size: 4.0 KB (4008 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `plone:5.2-python38`
 
 ```console
-$ docker pull plone@sha256:6b07ca8f14d96383a1953c9570dc32fdcebf52c9af92e71c643e7bc6019f2988
+$ docker pull plone@sha256:f506dc5764250904747588629459ef6cecc35c4ea57c1348506249f825361d2c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -734,14 +379,14 @@ $ docker pull plone@sha256:6b07ca8f14d96383a1953c9570dc32fdcebf52c9af92e71c643e7
 ### `plone:5.2-python38` - linux; amd64
 
 ```console
-$ docker pull plone@sha256:c0d16bdf134a7bfa5081caeaf3a0ad6ba1ea2417a4a24000518f719e1f9dae31
+$ docker pull plone@sha256:c49a626dd5557b6fa6923860ea5fbe5050e3683ac146bbdcbe7eebb2322e0072
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **242.4 MB (242425310 bytes)**  
+-	Total Size: **243.3 MB (243282311 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:71d7af6dc3ceb4a87ecf8a2d6c92983c55749ff72a0c6d535dc12afbff706673`
+-	Image ID: `sha256:355d09a034c8116b9065e2440b336994564d037cf2b844481aaff09c33d03f84`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["start"]`
 
@@ -776,27 +421,27 @@ ENV PYTHON_GET_PIP_SHA256=c518250e91a70d7b20cceb15272209a4ded2a0c263ae5776f129e0
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	; 	rm -f get-pip.py
 # Sat, 29 Jan 2022 05:35:37 GMT
 CMD ["python3"]
-# Sat, 29 Jan 2022 07:26:44 GMT
-ENV PIP=21.0.1 ZC_BUILDOUT=2.13.5 SETUPTOOLS=51.3.3 WHEEL=0.36.2 PLONE_MAJOR=5.2 PLONE_VERSION=5.2.5 PLONE_VERSION_RELEASE=Plone-5.2.5-UnifiedInstaller-1.0 PLONE_MD5=62d96ddc612cf35d18890c752a59edc4
-# Sat, 29 Jan 2022 07:26:45 GMT
+# Fri, 04 Feb 2022 05:50:11 GMT
+ENV PIP=21.0.1 ZC_BUILDOUT=2.13.5 SETUPTOOLS=51.3.3 WHEEL=0.36.2 PLONE_MAJOR=5.2 PLONE_VERSION=5.2.7 PLONE_VERSION_RELEASE=Plone-5.2.7-UnifiedInstaller-1.0 PLONE_MD5=c180d7ce3170b1871a7e8d53938096b1
+# Fri, 04 Feb 2022 05:50:12 GMT
 RUN useradd --system -m -d /plone -U -u 500 plone  && mkdir -p /plone/instance/ /data/filestorage /data/blobstorage
-# Sat, 29 Jan 2022 07:26:46 GMT
-COPY file:c72591a4a81e946d3e2e785b23d6a368007666aaf3e458c6fd32b86e1e5b5025 in /plone/instance/ 
-# Sat, 29 Jan 2022 07:32:08 GMT
+# Fri, 04 Feb 2022 05:50:12 GMT
+COPY file:7b22c8ff5914ecee959543c0622bbb71de3b59961836e6f0bad3c41c35197e25 in /plone/instance/ 
+# Fri, 04 Feb 2022 05:54:16 GMT
 RUN buildDeps="default-libmysqlclient-dev dpkg-dev gcc libbz2-dev libc6-dev libffi-dev libjpeg62-turbo-dev libldap2-dev libopenjp2-7-dev libpcre3-dev libpq-dev libsasl2-dev libssl-dev libtiff5-dev libxml2-dev libxslt1-dev wget zlib1g-dev"  && runDeps="default-libmysqlclient-dev git gosu libjpeg62 libopenjp2-7 libpq5 libtiff5 libxml2 libxslt1.1 lynx netcat poppler-utils rsync wv"  && apt-get update  && apt-get install -y --no-install-recommends $buildDeps  && wget -O Plone.tgz https://launchpad.net/plone/$PLONE_MAJOR/$PLONE_VERSION/+download/$PLONE_VERSION_RELEASE.tgz  && echo "$PLONE_MD5 Plone.tgz" | md5sum -c -  && tar -xzf Plone.tgz  && cp -rv ./$PLONE_VERSION_RELEASE/base_skeleton/* /plone/instance/  && cp -v ./$PLONE_VERSION_RELEASE/buildout_templates/buildout.cfg /plone/instance/buildout-base.cfg  && pip install pip==$PIP setuptools==$SETUPTOOLS zc.buildout==$ZC_BUILDOUT wheel==$WHEEL  && cd /plone/instance  && buildout  && ln -s /data/filestorage/ /plone/instance/var/filestorage  && ln -s /data/blobstorage /plone/instance/var/blobstorage  && find /data  -not -user plone -exec chown plone:plone {} \+  && find /plone -not -user plone -exec chown plone:plone {} \+  && rm -rf /Plone*  && apt-get purge -y --auto-remove $buildDeps  && apt-get install -y --no-install-recommends $runDeps  && rm -rf /var/lib/apt/lists/*  && rm -rf /plone/buildout-cache/downloads/*
-# Sat, 29 Jan 2022 07:32:12 GMT
+# Fri, 04 Feb 2022 05:54:17 GMT
 VOLUME [/data]
-# Sat, 29 Jan 2022 07:32:12 GMT
-COPY multi:0d8a1d0f8ea3598efc970a9d1a7a50b969ffaa0704d732da1b62240ced2f6442 in / 
-# Sat, 29 Jan 2022 07:32:13 GMT
+# Fri, 04 Feb 2022 05:54:18 GMT
+COPY multi:cb7e252b86bd636999944f95a07a275ae82b4f8eefb11a49319425c7445203ac in / 
+# Fri, 04 Feb 2022 05:54:18 GMT
 EXPOSE 8080
-# Sat, 29 Jan 2022 07:32:13 GMT
+# Fri, 04 Feb 2022 05:54:18 GMT
 WORKDIR /plone/instance
-# Sat, 29 Jan 2022 07:32:14 GMT
+# Fri, 04 Feb 2022 05:54:18 GMT
 HEALTHCHECK &{["CMD-SHELL" "nc -z -w5 127.0.0.1 8080 || exit 1"] "1m0s" "5s" "1m0s" '\x00'}
-# Sat, 29 Jan 2022 07:32:14 GMT
+# Fri, 04 Feb 2022 05:54:19 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 29 Jan 2022 07:32:14 GMT
+# Fri, 04 Feb 2022 05:54:19 GMT
 CMD ["start"]
 ```
 
@@ -821,144 +466,27 @@ CMD ["start"]
 		Last Modified: Sat, 29 Jan 2022 06:54:10 GMT  
 		Size: 2.6 MB (2637476 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa10d873eb21e57495c735fd28bc0d1884b7a4e0d857c8dd9e4577c2304eaac6`  
-		Last Modified: Sat, 29 Jan 2022 07:39:07 GMT  
-		Size: 4.0 KB (3951 bytes)  
+	-	`sha256:8cc4f4f69b12d6551860ba2b0bb18ed8183af3120f48dc8227a51ab110fb6f07`  
+		Last Modified: Fri, 04 Feb 2022 06:03:05 GMT  
+		Size: 3.9 KB (3948 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e57f530b70d522abb25927e9ca93c958d8ee7228e2100652e5f61d28faacb10c`  
-		Last Modified: Sat, 29 Jan 2022 07:39:07 GMT  
-		Size: 1.2 KB (1206 bytes)  
+	-	`sha256:f53347a81f98913107c3e151ff11be2d43499ecb9bd4091dd005021bd7aeb883`  
+		Last Modified: Fri, 04 Feb 2022 06:03:05 GMT  
+		Size: 1.3 KB (1260 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45b36b047ac2edd3a3ce839ad1a3d1fc2404b136418bc77f08bf1aae8326fc8a`  
-		Last Modified: Sat, 29 Jan 2022 07:39:51 GMT  
-		Size: 199.1 MB (199125786 bytes)  
+	-	`sha256:dac2105bad12200c47a690ea91a66408b1cef2000e16eed301411a6f6e6e6b85`  
+		Last Modified: Fri, 04 Feb 2022 06:03:35 GMT  
+		Size: 200.0 MB (199982623 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d1300236fbc9b7b58c406ddb666669c079ee2a2679b160f24db4738084f49df8`  
-		Last Modified: Sat, 29 Jan 2022 07:39:07 GMT  
-		Size: 3.9 KB (3895 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-## `plone:5.2-python39`
-
-```console
-$ docker pull plone@sha256:09f236180ebc584426af0f18574f86cc7b96fb1264124bde9c3f81ec4e072369
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 1
-	-	linux; amd64
-
-### `plone:5.2-python39` - linux; amd64
-
-```console
-$ docker pull plone@sha256:e07369f5eac473cfa7ea2c1da4729a9f4be623688d0bb212b9890b44cba2f663
-```
-
--	Docker Version: 20.10.7
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **241.7 MB (241671240 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:812101146c3e48465c88352c619afcc3829f2bd65ea61185902cb03b1de3b6e3`
--	Entrypoint: `["\/docker-entrypoint.sh"]`
--	Default Command: `["start"]`
-
-```dockerfile
-# Wed, 26 Jan 2022 01:40:59 GMT
-ADD file:c51141702f568a28a7e3e7a2748f5ead5754e32d7b1cf7ebc8f4326273d05206 in / 
-# Wed, 26 Jan 2022 01:40:59 GMT
-CMD ["bash"]
-# Wed, 26 Jan 2022 20:36:00 GMT
-ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 26 Jan 2022 20:36:00 GMT
-ENV LANG=C.UTF-8
-# Wed, 26 Jan 2022 20:36:07 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		netbase 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 26 Jan 2022 21:15:16 GMT
-ENV GPG_KEY=E3FF2839C048B25C084DEBE9B26995E310250568
-# Wed, 26 Jan 2022 21:15:16 GMT
-ENV PYTHON_VERSION=3.9.10
-# Sat, 29 Jan 2022 04:39:51 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		gnupg dirmngr 		libbluetooth-dev 		libbz2-dev 		libc6-dev 		libexpat1-dev 		libffi-dev 		libgdbm-dev 		liblzma-dev 		libncursesw5-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tk-dev 		uuid-dev 		wget 		xz-utils 		zlib1g-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPG_KEY"; 	gpg --batch --verify python.tar.xz.asc python.tar.xz; 	command -v gpgconf > /dev/null && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" python.tar.xz.asc; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-optimizations 		--enable-option-checking=fatal 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	; 	nproc="$(nproc)"; 	make -j "$nproc" 		LDFLAGS="-Wl,--strip-all" 	; 	make install; 	cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name '*.a' \) \) 		\) -exec rm -rf '{}' + 	; 		ldconfig; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python3 --version
-# Sat, 29 Jan 2022 04:39:52 GMT
-RUN set -eux; 	for src in idle3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "/usr/local/bin/$src" "/usr/local/bin/$dst"; 	done
-# Sat, 29 Jan 2022 04:39:52 GMT
-ENV PYTHON_PIP_VERSION=21.2.4
-# Sat, 29 Jan 2022 04:39:53 GMT
-ENV PYTHON_SETUPTOOLS_VERSION=58.1.0
-# Sat, 29 Jan 2022 04:39:53 GMT
-ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/3cb8888cc2869620f57d5d2da64da38f516078c7/public/get-pip.py
-# Sat, 29 Jan 2022 04:39:53 GMT
-ENV PYTHON_GET_PIP_SHA256=c518250e91a70d7b20cceb15272209a4ded2a0c263ae5776f129e0d9b5674309
-# Sat, 29 Jan 2022 04:40:05 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	; 	rm -f get-pip.py
-# Sat, 29 Jan 2022 04:40:06 GMT
-CMD ["python3"]
-# Sat, 29 Jan 2022 07:20:22 GMT
-ENV PIP=21.0.1 ZC_BUILDOUT=2.13.5 SETUPTOOLS=51.3.3 WHEEL=0.36.2 PLONE_MAJOR=5.2 PLONE_VERSION=5.2.5 PLONE_VERSION_RELEASE=Plone-5.2.5-UnifiedInstaller-1.0 PLONE_MD5=62d96ddc612cf35d18890c752a59edc4
-# Sat, 29 Jan 2022 07:20:24 GMT
-RUN useradd --system -m -d /plone -U -u 500 plone  && mkdir -p /plone/instance/ /data/filestorage /data/blobstorage
-# Sat, 29 Jan 2022 07:20:24 GMT
-COPY file:c72591a4a81e946d3e2e785b23d6a368007666aaf3e458c6fd32b86e1e5b5025 in /plone/instance/ 
-# Sat, 29 Jan 2022 07:26:24 GMT
-RUN buildDeps="default-libmysqlclient-dev dpkg-dev gcc libbz2-dev libc6-dev libffi-dev libjpeg62-turbo-dev libldap2-dev libopenjp2-7-dev libpcre3-dev libpq-dev libsasl2-dev libssl-dev libtiff5-dev libxml2-dev libxslt1-dev wget zlib1g-dev"  && runDeps="default-libmysqlclient-dev git gosu libjpeg62 libopenjp2-7 libpq5 libtiff5 libxml2 libxslt1.1 lynx netcat poppler-utils rsync wv"  && apt-get update  && apt-get install -y --no-install-recommends $buildDeps  && wget -O Plone.tgz https://launchpad.net/plone/$PLONE_MAJOR/$PLONE_VERSION/+download/$PLONE_VERSION_RELEASE.tgz  && echo "$PLONE_MD5 Plone.tgz" | md5sum -c -  && tar -xzf Plone.tgz  && cp -rv ./$PLONE_VERSION_RELEASE/base_skeleton/* /plone/instance/  && cp -v ./$PLONE_VERSION_RELEASE/buildout_templates/buildout.cfg /plone/instance/buildout-base.cfg  && pip install pip==$PIP setuptools==$SETUPTOOLS zc.buildout==$ZC_BUILDOUT wheel==$WHEEL  && cd /plone/instance  && buildout  && ln -s /data/filestorage/ /plone/instance/var/filestorage  && ln -s /data/blobstorage /plone/instance/var/blobstorage  && find /data  -not -user plone -exec chown plone:plone {} \+  && find /plone -not -user plone -exec chown plone:plone {} \+  && rm -rf /Plone*  && apt-get purge -y --auto-remove $buildDeps  && apt-get install -y --no-install-recommends $runDeps  && rm -rf /var/lib/apt/lists/*  && rm -rf /plone/buildout-cache/downloads/*
-# Sat, 29 Jan 2022 07:26:28 GMT
-VOLUME [/data]
-# Sat, 29 Jan 2022 07:26:28 GMT
-COPY multi:0d8a1d0f8ea3598efc970a9d1a7a50b969ffaa0704d732da1b62240ced2f6442 in / 
-# Sat, 29 Jan 2022 07:26:28 GMT
-EXPOSE 8080
-# Sat, 29 Jan 2022 07:26:28 GMT
-WORKDIR /plone/instance
-# Sat, 29 Jan 2022 07:26:29 GMT
-HEALTHCHECK &{["CMD-SHELL" "nc -z -w5 127.0.0.1 8080 || exit 1"] "1m0s" "5s" "1m0s" '\x00'}
-# Sat, 29 Jan 2022 07:26:29 GMT
-ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 29 Jan 2022 07:26:29 GMT
-CMD ["start"]
-```
-
--	Layers:
-	-	`sha256:6552179c3509e3c4314b4065e0d2790563d01cd474e2fdd58be4d46acd48af6a`  
-		Last Modified: Wed, 26 Jan 2022 01:47:31 GMT  
-		Size: 27.2 MB (27153731 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c4887dad22fda8ead06b653271b8a6fde0f36b5d8aaa804f12f79a0fef138de5`  
-		Last Modified: Wed, 26 Jan 2022 22:34:52 GMT  
-		Size: 2.8 MB (2770186 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c2b309db2de8e8d501d5cb8e42b8576c2c24ee71b1f7488cbda69be445a5c02`  
-		Last Modified: Sat, 29 Jan 2022 06:52:49 GMT  
-		Size: 11.0 MB (11018413 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b84635b4bc7acf9cbbc814f32196c28d63e7f3d5a1bcfd96af8516e99839590`  
-		Last Modified: Sat, 29 Jan 2022 06:52:46 GMT  
-		Size: 236.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1a4f31df0540ae609df8ac43f468900b1cb5e18fccc1f4b06bfc8a3f20a0ebfb`  
-		Last Modified: Sat, 29 Jan 2022 06:52:47 GMT  
-		Size: 2.6 MB (2635235 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ffae253ae02aad1b1f59583f75f3e74e64799cd13df9bd0243de4d07da35c6d`  
-		Last Modified: Sat, 29 Jan 2022 07:38:05 GMT  
-		Size: 3.9 KB (3944 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0791475393b8bbdb127d1e0dedee117a6099c60d3617812183738318b20dbef1`  
-		Last Modified: Sat, 29 Jan 2022 07:38:05 GMT  
-		Size: 1.2 KB (1210 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71d4477eee422e33e90390208a7786acff0f48bd04854cfd8ac2d38a354d29c3`  
-		Last Modified: Sat, 29 Jan 2022 07:38:37 GMT  
-		Size: 198.1 MB (198084389 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3180d862405d60693de2dd9b1efe421ddd1738797e0b22c4228ffecd66d033da`  
-		Last Modified: Sat, 29 Jan 2022 07:38:05 GMT  
-		Size: 3.9 KB (3896 bytes)  
+	-	`sha256:42328bccfed5a8d465cfac70624f0e4ea542210473d130539221080866b8df11`  
+		Last Modified: Fri, 04 Feb 2022 06:03:05 GMT  
+		Size: 4.0 KB (4008 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `plone:5.2.5`
 
 ```console
-$ docker pull plone@sha256:09f236180ebc584426af0f18574f86cc7b96fb1264124bde9c3f81ec4e072369
+$ docker pull plone@sha256:43c3556b09cca1e3570e010b0576205441b1d72808a4f65b4abb2646d9a4ebaa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -968,14 +496,14 @@ $ docker pull plone@sha256:09f236180ebc584426af0f18574f86cc7b96fb1264124bde9c3f8
 ### `plone:5.2.5` - linux; amd64
 
 ```console
-$ docker pull plone@sha256:e07369f5eac473cfa7ea2c1da4729a9f4be623688d0bb212b9890b44cba2f663
+$ docker pull plone@sha256:d36d386e435b956d8816e428971b7dd5c4b4ee7df7d09be0f4bf3a8694549670
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **241.7 MB (241671240 bytes)**  
+-	Total Size: **242.4 MB (242425023 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:812101146c3e48465c88352c619afcc3829f2bd65ea61185902cb03b1de3b6e3`
+-	Image ID: `sha256:efc0743adacc67477b3e05eb94a81c1fa8c528349528c254f8e96ea2eb4decfe`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["start"]`
 
@@ -992,45 +520,45 @@ ENV LANG=C.UTF-8
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		netbase 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
 # Wed, 26 Jan 2022 21:15:16 GMT
 ENV GPG_KEY=E3FF2839C048B25C084DEBE9B26995E310250568
-# Wed, 26 Jan 2022 21:15:16 GMT
-ENV PYTHON_VERSION=3.9.10
-# Sat, 29 Jan 2022 04:39:51 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		gnupg dirmngr 		libbluetooth-dev 		libbz2-dev 		libc6-dev 		libexpat1-dev 		libffi-dev 		libgdbm-dev 		liblzma-dev 		libncursesw5-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tk-dev 		uuid-dev 		wget 		xz-utils 		zlib1g-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPG_KEY"; 	gpg --batch --verify python.tar.xz.asc python.tar.xz; 	command -v gpgconf > /dev/null && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" python.tar.xz.asc; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-optimizations 		--enable-option-checking=fatal 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	; 	nproc="$(nproc)"; 	make -j "$nproc" 		LDFLAGS="-Wl,--strip-all" 	; 	make install; 	cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name '*.a' \) \) 		\) -exec rm -rf '{}' + 	; 		ldconfig; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python3 --version
-# Sat, 29 Jan 2022 04:39:52 GMT
+# Sat, 29 Jan 2022 05:26:04 GMT
+ENV PYTHON_VERSION=3.8.12
+# Sat, 29 Jan 2022 05:35:23 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		gnupg dirmngr 		libbluetooth-dev 		libbz2-dev 		libc6-dev 		libexpat1-dev 		libffi-dev 		libgdbm-dev 		liblzma-dev 		libncursesw5-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tk-dev 		uuid-dev 		wget 		xz-utils 		zlib1g-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPG_KEY"; 	gpg --batch --verify python.tar.xz.asc python.tar.xz; 	command -v gpgconf > /dev/null && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" python.tar.xz.asc; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-optimizations 		--enable-option-checking=fatal 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	; 	nproc="$(nproc)"; 	make -j "$nproc" 		LDFLAGS="-Wl,--strip-all" 	; 	make install; 	cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name '*.a' \) \) 			-o \( -type f -a -name 'wininst-*.exe' \) 		\) -exec rm -rf '{}' + 	; 		ldconfig; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python3 --version
+# Sat, 29 Jan 2022 05:35:24 GMT
 RUN set -eux; 	for src in idle3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "/usr/local/bin/$src" "/usr/local/bin/$dst"; 	done
-# Sat, 29 Jan 2022 04:39:52 GMT
+# Sat, 29 Jan 2022 05:35:24 GMT
 ENV PYTHON_PIP_VERSION=21.2.4
-# Sat, 29 Jan 2022 04:39:53 GMT
-ENV PYTHON_SETUPTOOLS_VERSION=58.1.0
-# Sat, 29 Jan 2022 04:39:53 GMT
+# Sat, 29 Jan 2022 05:35:25 GMT
+ENV PYTHON_SETUPTOOLS_VERSION=57.5.0
+# Sat, 29 Jan 2022 05:35:25 GMT
 ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/3cb8888cc2869620f57d5d2da64da38f516078c7/public/get-pip.py
-# Sat, 29 Jan 2022 04:39:53 GMT
+# Sat, 29 Jan 2022 05:35:25 GMT
 ENV PYTHON_GET_PIP_SHA256=c518250e91a70d7b20cceb15272209a4ded2a0c263ae5776f129e0d9b5674309
-# Sat, 29 Jan 2022 04:40:05 GMT
+# Sat, 29 Jan 2022 05:35:37 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	; 	rm -f get-pip.py
-# Sat, 29 Jan 2022 04:40:06 GMT
+# Sat, 29 Jan 2022 05:35:37 GMT
 CMD ["python3"]
-# Sat, 29 Jan 2022 07:20:22 GMT
+# Sat, 29 Jan 2022 07:26:44 GMT
 ENV PIP=21.0.1 ZC_BUILDOUT=2.13.5 SETUPTOOLS=51.3.3 WHEEL=0.36.2 PLONE_MAJOR=5.2 PLONE_VERSION=5.2.5 PLONE_VERSION_RELEASE=Plone-5.2.5-UnifiedInstaller-1.0 PLONE_MD5=62d96ddc612cf35d18890c752a59edc4
-# Sat, 29 Jan 2022 07:20:24 GMT
+# Sat, 29 Jan 2022 07:26:45 GMT
 RUN useradd --system -m -d /plone -U -u 500 plone  && mkdir -p /plone/instance/ /data/filestorage /data/blobstorage
-# Sat, 29 Jan 2022 07:20:24 GMT
-COPY file:c72591a4a81e946d3e2e785b23d6a368007666aaf3e458c6fd32b86e1e5b5025 in /plone/instance/ 
-# Sat, 29 Jan 2022 07:26:24 GMT
+# Fri, 04 Feb 2022 05:58:41 GMT
+COPY file:55b4c6289451916e2eb41499cf24ec6a9219ef9eb3cb4c58dbd649584944363e in /plone/instance/ 
+# Fri, 04 Feb 2022 06:02:30 GMT
 RUN buildDeps="default-libmysqlclient-dev dpkg-dev gcc libbz2-dev libc6-dev libffi-dev libjpeg62-turbo-dev libldap2-dev libopenjp2-7-dev libpcre3-dev libpq-dev libsasl2-dev libssl-dev libtiff5-dev libxml2-dev libxslt1-dev wget zlib1g-dev"  && runDeps="default-libmysqlclient-dev git gosu libjpeg62 libopenjp2-7 libpq5 libtiff5 libxml2 libxslt1.1 lynx netcat poppler-utils rsync wv"  && apt-get update  && apt-get install -y --no-install-recommends $buildDeps  && wget -O Plone.tgz https://launchpad.net/plone/$PLONE_MAJOR/$PLONE_VERSION/+download/$PLONE_VERSION_RELEASE.tgz  && echo "$PLONE_MD5 Plone.tgz" | md5sum -c -  && tar -xzf Plone.tgz  && cp -rv ./$PLONE_VERSION_RELEASE/base_skeleton/* /plone/instance/  && cp -v ./$PLONE_VERSION_RELEASE/buildout_templates/buildout.cfg /plone/instance/buildout-base.cfg  && pip install pip==$PIP setuptools==$SETUPTOOLS zc.buildout==$ZC_BUILDOUT wheel==$WHEEL  && cd /plone/instance  && buildout  && ln -s /data/filestorage/ /plone/instance/var/filestorage  && ln -s /data/blobstorage /plone/instance/var/blobstorage  && find /data  -not -user plone -exec chown plone:plone {} \+  && find /plone -not -user plone -exec chown plone:plone {} \+  && rm -rf /Plone*  && apt-get purge -y --auto-remove $buildDeps  && apt-get install -y --no-install-recommends $runDeps  && rm -rf /var/lib/apt/lists/*  && rm -rf /plone/buildout-cache/downloads/*
-# Sat, 29 Jan 2022 07:26:28 GMT
+# Fri, 04 Feb 2022 06:02:33 GMT
 VOLUME [/data]
-# Sat, 29 Jan 2022 07:26:28 GMT
-COPY multi:0d8a1d0f8ea3598efc970a9d1a7a50b969ffaa0704d732da1b62240ced2f6442 in / 
-# Sat, 29 Jan 2022 07:26:28 GMT
+# Fri, 04 Feb 2022 06:02:34 GMT
+COPY multi:cb7e252b86bd636999944f95a07a275ae82b4f8eefb11a49319425c7445203ac in / 
+# Fri, 04 Feb 2022 06:02:34 GMT
 EXPOSE 8080
-# Sat, 29 Jan 2022 07:26:28 GMT
+# Fri, 04 Feb 2022 06:02:34 GMT
 WORKDIR /plone/instance
-# Sat, 29 Jan 2022 07:26:29 GMT
+# Fri, 04 Feb 2022 06:02:34 GMT
 HEALTHCHECK &{["CMD-SHELL" "nc -z -w5 127.0.0.1 8080 || exit 1"] "1m0s" "5s" "1m0s" '\x00'}
-# Sat, 29 Jan 2022 07:26:29 GMT
+# Fri, 04 Feb 2022 06:02:35 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 29 Jan 2022 07:26:29 GMT
+# Fri, 04 Feb 2022 06:02:35 GMT
 CMD ["start"]
 ```
 
@@ -1043,156 +571,39 @@ CMD ["start"]
 		Last Modified: Wed, 26 Jan 2022 22:34:52 GMT  
 		Size: 2.8 MB (2770186 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c2b309db2de8e8d501d5cb8e42b8576c2c24ee71b1f7488cbda69be445a5c02`  
-		Last Modified: Sat, 29 Jan 2022 06:52:49 GMT  
-		Size: 11.0 MB (11018413 bytes)  
+	-	`sha256:cfcccbd80a1adc59bf0d5a7ff05c5806afa8417c9ca3b87914b9e2ac755b0812`  
+		Last Modified: Sat, 29 Jan 2022 06:54:11 GMT  
+		Size: 10.7 MB (10728843 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b84635b4bc7acf9cbbc814f32196c28d63e7f3d5a1bcfd96af8516e99839590`  
-		Last Modified: Sat, 29 Jan 2022 06:52:46 GMT  
+	-	`sha256:0995a517cdf86ed3b8c1183c9f52caadc88aaa532bc15953e1c8f25df2e0d478`  
+		Last Modified: Sat, 29 Jan 2022 06:54:09 GMT  
 		Size: 236.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1a4f31df0540ae609df8ac43f468900b1cb5e18fccc1f4b06bfc8a3f20a0ebfb`  
-		Last Modified: Sat, 29 Jan 2022 06:52:47 GMT  
-		Size: 2.6 MB (2635235 bytes)  
+	-	`sha256:8c798f76106bb9af30691b3bcaa3aca47c1b36faf3bd572ce796c6d901ccb1ac`  
+		Last Modified: Sat, 29 Jan 2022 06:54:10 GMT  
+		Size: 2.6 MB (2637476 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ffae253ae02aad1b1f59583f75f3e74e64799cd13df9bd0243de4d07da35c6d`  
-		Last Modified: Sat, 29 Jan 2022 07:38:05 GMT  
-		Size: 3.9 KB (3944 bytes)  
+	-	`sha256:fa10d873eb21e57495c735fd28bc0d1884b7a4e0d857c8dd9e4577c2304eaac6`  
+		Last Modified: Sat, 29 Jan 2022 07:39:07 GMT  
+		Size: 4.0 KB (3951 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0791475393b8bbdb127d1e0dedee117a6099c60d3617812183738318b20dbef1`  
-		Last Modified: Sat, 29 Jan 2022 07:38:05 GMT  
-		Size: 1.2 KB (1210 bytes)  
+	-	`sha256:4a374f4826cce563f4d393203e19b688f784ea066021c31b4414c4665cf4c4e0`  
+		Last Modified: Fri, 04 Feb 2022 06:04:46 GMT  
+		Size: 1.3 KB (1263 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71d4477eee422e33e90390208a7786acff0f48bd04854cfd8ac2d38a354d29c3`  
-		Last Modified: Sat, 29 Jan 2022 07:38:37 GMT  
-		Size: 198.1 MB (198084389 bytes)  
+	-	`sha256:7f3d72fd8d0e32fa01016544902643316eb1553de0ccd6f59d6d8d063abbcaaf`  
+		Last Modified: Fri, 04 Feb 2022 06:05:16 GMT  
+		Size: 199.1 MB (199125329 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3180d862405d60693de2dd9b1efe421ddd1738797e0b22c4228ffecd66d033da`  
-		Last Modified: Sat, 29 Jan 2022 07:38:05 GMT  
-		Size: 3.9 KB (3896 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-## `plone:5.2.5-python37`
-
-```console
-$ docker pull plone@sha256:d1a0dba5a25eb4390b0a21145d6e5ce6265f129d685e00b1d3087207bca84983
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 1
-	-	linux; amd64
-
-### `plone:5.2.5-python37` - linux; amd64
-
-```console
-$ docker pull plone@sha256:e4594d997940256d656f3111e17dfda5211845e377dd630d01b5451d1b5306c9
-```
-
--	Docker Version: 20.10.7
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **241.1 MB (241140675 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ffd95d3c4e2216f3bffee49b7422f818ff81bee2b7741bce7374a259a9804e5d`
--	Entrypoint: `["\/docker-entrypoint.sh"]`
--	Default Command: `["start"]`
-
-```dockerfile
-# Wed, 26 Jan 2022 01:40:59 GMT
-ADD file:c51141702f568a28a7e3e7a2748f5ead5754e32d7b1cf7ebc8f4326273d05206 in / 
-# Wed, 26 Jan 2022 01:40:59 GMT
-CMD ["bash"]
-# Wed, 26 Jan 2022 20:36:00 GMT
-ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 26 Jan 2022 20:36:00 GMT
-ENV LANG=C.UTF-8
-# Wed, 26 Jan 2022 20:36:07 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		netbase 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
-# Sat, 29 Jan 2022 06:17:55 GMT
-ENV GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D
-# Sat, 29 Jan 2022 06:17:55 GMT
-ENV PYTHON_VERSION=3.7.12
-# Sat, 29 Jan 2022 06:27:10 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		gnupg dirmngr 		libbluetooth-dev 		libbz2-dev 		libc6-dev 		libexpat1-dev 		libffi-dev 		libgdbm-dev 		liblzma-dev 		libncursesw5-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tk-dev 		uuid-dev 		wget 		xz-utils 		zlib1g-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPG_KEY"; 	gpg --batch --verify python.tar.xz.asc python.tar.xz; 	command -v gpgconf > /dev/null && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" python.tar.xz.asc; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-optimizations 		--enable-option-checking=fatal 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	; 	nproc="$(nproc)"; 	make -j "$nproc" 		LDFLAGS="-Wl,--strip-all" 		PROFILE_TASK='-m test.regrtest --pgo 			test_array 			test_base64 			test_binascii 			test_binhex 			test_binop 			test_bytes 			test_c_locale_coercion 			test_class 			test_cmath 			test_codecs 			test_compile 			test_complex 			test_csv 			test_decimal 			test_dict 			test_float 			test_fstring 			test_hashlib 			test_io 			test_iter 			test_json 			test_long 			test_math 			test_memoryview 			test_pickle 			test_re 			test_set 			test_slice 			test_struct 			test_threading 			test_time 			test_traceback 			test_unicode 		' 	; 	make install; 	cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name '*.a' \) \) 			-o \( -type f -a -name 'wininst-*.exe' \) 		\) -exec rm -rf '{}' + 	; 		ldconfig; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python3 --version
-# Sat, 29 Jan 2022 06:27:11 GMT
-RUN set -eux; 	for src in idle3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "/usr/local/bin/$src" "/usr/local/bin/$dst"; 	done
-# Sat, 29 Jan 2022 06:27:11 GMT
-ENV PYTHON_PIP_VERSION=21.2.4
-# Sat, 29 Jan 2022 06:27:11 GMT
-ENV PYTHON_SETUPTOOLS_VERSION=57.5.0
-# Sat, 29 Jan 2022 06:27:12 GMT
-ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/3cb8888cc2869620f57d5d2da64da38f516078c7/public/get-pip.py
-# Sat, 29 Jan 2022 06:27:12 GMT
-ENV PYTHON_GET_PIP_SHA256=c518250e91a70d7b20cceb15272209a4ded2a0c263ae5776f129e0d9b5674309
-# Sat, 29 Jan 2022 06:27:29 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	; 	rm -f get-pip.py
-# Sat, 29 Jan 2022 06:27:30 GMT
-CMD ["python3"]
-# Sat, 29 Jan 2022 07:32:24 GMT
-ENV PIP=21.0.1 ZC_BUILDOUT=2.13.5 SETUPTOOLS=51.3.3 WHEEL=0.36.2 PLONE_MAJOR=5.2 PLONE_VERSION=5.2.5 PLONE_VERSION_RELEASE=Plone-5.2.5-UnifiedInstaller-1.0 PLONE_MD5=62d96ddc612cf35d18890c752a59edc4
-# Sat, 29 Jan 2022 07:32:26 GMT
-RUN useradd --system -m -d /plone -U -u 500 plone  && mkdir -p /plone/instance/ /data/filestorage /data/blobstorage
-# Sat, 29 Jan 2022 07:32:27 GMT
-COPY file:c72591a4a81e946d3e2e785b23d6a368007666aaf3e458c6fd32b86e1e5b5025 in /plone/instance/ 
-# Sat, 29 Jan 2022 07:37:24 GMT
-RUN buildDeps="default-libmysqlclient-dev dpkg-dev gcc libbz2-dev libc6-dev libffi-dev libjpeg62-turbo-dev libldap2-dev libopenjp2-7-dev libpcre3-dev libpq-dev libsasl2-dev libssl-dev libtiff5-dev libxml2-dev libxslt1-dev wget zlib1g-dev"  && runDeps="default-libmysqlclient-dev git gosu libjpeg62 libopenjp2-7 libpq5 libtiff5 libxml2 libxslt1.1 lynx netcat poppler-utils rsync wv"  && apt-get update  && apt-get install -y --no-install-recommends $buildDeps  && wget -O Plone.tgz https://launchpad.net/plone/$PLONE_MAJOR/$PLONE_VERSION/+download/$PLONE_VERSION_RELEASE.tgz  && echo "$PLONE_MD5 Plone.tgz" | md5sum -c -  && tar -xzf Plone.tgz  && cp -rv ./$PLONE_VERSION_RELEASE/base_skeleton/* /plone/instance/  && cp -v ./$PLONE_VERSION_RELEASE/buildout_templates/buildout.cfg /plone/instance/buildout-base.cfg  && pip install pip==$PIP setuptools==$SETUPTOOLS zc.buildout==$ZC_BUILDOUT wheel==$WHEEL  && cd /plone/instance  && buildout  && ln -s /data/filestorage/ /plone/instance/var/filestorage  && ln -s /data/blobstorage /plone/instance/var/blobstorage  && find /data  -not -user plone -exec chown plone:plone {} \+  && find /plone -not -user plone -exec chown plone:plone {} \+  && rm -rf /Plone*  && apt-get purge -y --auto-remove $buildDeps  && apt-get install -y --no-install-recommends $runDeps  && rm -rf /var/lib/apt/lists/*  && rm -rf /plone/buildout-cache/downloads/*
-# Sat, 29 Jan 2022 07:37:29 GMT
-VOLUME [/data]
-# Sat, 29 Jan 2022 07:37:29 GMT
-COPY multi:0d8a1d0f8ea3598efc970a9d1a7a50b969ffaa0704d732da1b62240ced2f6442 in / 
-# Sat, 29 Jan 2022 07:37:29 GMT
-EXPOSE 8080
-# Sat, 29 Jan 2022 07:37:30 GMT
-WORKDIR /plone/instance
-# Sat, 29 Jan 2022 07:37:30 GMT
-HEALTHCHECK &{["CMD-SHELL" "nc -z -w5 127.0.0.1 8080 || exit 1"] "1m0s" "5s" "1m0s" '\x00'}
-# Sat, 29 Jan 2022 07:37:30 GMT
-ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 29 Jan 2022 07:37:31 GMT
-CMD ["start"]
-```
-
--	Layers:
-	-	`sha256:6552179c3509e3c4314b4065e0d2790563d01cd474e2fdd58be4d46acd48af6a`  
-		Last Modified: Wed, 26 Jan 2022 01:47:31 GMT  
-		Size: 27.2 MB (27153731 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c4887dad22fda8ead06b653271b8a6fde0f36b5d8aaa804f12f79a0fef138de5`  
-		Last Modified: Wed, 26 Jan 2022 22:34:52 GMT  
-		Size: 2.8 MB (2770186 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:83fecc69c36756a7720784991fdb9b6cea6d75efcb59b77d1cc77e1037cf4b3a`  
-		Last Modified: Sat, 29 Jan 2022 06:55:29 GMT  
-		Size: 10.1 MB (10059888 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a9d24969a226ef5af07fbca75838b5695614fb47e8a7a317221b49521f39de05`  
-		Last Modified: Sat, 29 Jan 2022 06:55:27 GMT  
-		Size: 235.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3546e2eec5e7fa9d82a4b53097cab929820afc4a3512ceb7a0acf996e01c318d`  
-		Last Modified: Sat, 29 Jan 2022 06:55:28 GMT  
-		Size: 2.6 MB (2637339 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe2e12da3d906a992033736305997415cca52e7d726f434c62afc7794c675be8`  
-		Last Modified: Sat, 29 Jan 2022 07:40:06 GMT  
-		Size: 3.9 KB (3946 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ffe5943351e3c84037b88dfbb60e298580d2d9c6540b94c4b94afd319e21d11b`  
-		Last Modified: Sat, 29 Jan 2022 07:40:06 GMT  
-		Size: 1.2 KB (1209 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cb64702f4594911a396402b143258369d41122f6e22f04c7d7e29462c048b2a2`  
-		Last Modified: Sat, 29 Jan 2022 07:40:39 GMT  
-		Size: 198.5 MB (198510244 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bba776e57f950b07983b4486a4134370630e3b275c9eefc9c17fd6875eb1d6e0`  
-		Last Modified: Sat, 29 Jan 2022 07:40:06 GMT  
-		Size: 3.9 KB (3897 bytes)  
+	-	`sha256:e74b1f2768f99897980d0bfee2ce41c1bb74d12298cc1a9069129ee0a64c2430`  
+		Last Modified: Fri, 04 Feb 2022 06:04:46 GMT  
+		Size: 4.0 KB (4008 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `plone:5.2.5-python38`
 
 ```console
-$ docker pull plone@sha256:6b07ca8f14d96383a1953c9570dc32fdcebf52c9af92e71c643e7bc6019f2988
+$ docker pull plone@sha256:43c3556b09cca1e3570e010b0576205441b1d72808a4f65b4abb2646d9a4ebaa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1202,14 +613,14 @@ $ docker pull plone@sha256:6b07ca8f14d96383a1953c9570dc32fdcebf52c9af92e71c643e7
 ### `plone:5.2.5-python38` - linux; amd64
 
 ```console
-$ docker pull plone@sha256:c0d16bdf134a7bfa5081caeaf3a0ad6ba1ea2417a4a24000518f719e1f9dae31
+$ docker pull plone@sha256:d36d386e435b956d8816e428971b7dd5c4b4ee7df7d09be0f4bf3a8694549670
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **242.4 MB (242425310 bytes)**  
+-	Total Size: **242.4 MB (242425023 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:71d7af6dc3ceb4a87ecf8a2d6c92983c55749ff72a0c6d535dc12afbff706673`
+-	Image ID: `sha256:efc0743adacc67477b3e05eb94a81c1fa8c528349528c254f8e96ea2eb4decfe`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["start"]`
 
@@ -1248,23 +659,23 @@ CMD ["python3"]
 ENV PIP=21.0.1 ZC_BUILDOUT=2.13.5 SETUPTOOLS=51.3.3 WHEEL=0.36.2 PLONE_MAJOR=5.2 PLONE_VERSION=5.2.5 PLONE_VERSION_RELEASE=Plone-5.2.5-UnifiedInstaller-1.0 PLONE_MD5=62d96ddc612cf35d18890c752a59edc4
 # Sat, 29 Jan 2022 07:26:45 GMT
 RUN useradd --system -m -d /plone -U -u 500 plone  && mkdir -p /plone/instance/ /data/filestorage /data/blobstorage
-# Sat, 29 Jan 2022 07:26:46 GMT
-COPY file:c72591a4a81e946d3e2e785b23d6a368007666aaf3e458c6fd32b86e1e5b5025 in /plone/instance/ 
-# Sat, 29 Jan 2022 07:32:08 GMT
+# Fri, 04 Feb 2022 05:58:41 GMT
+COPY file:55b4c6289451916e2eb41499cf24ec6a9219ef9eb3cb4c58dbd649584944363e in /plone/instance/ 
+# Fri, 04 Feb 2022 06:02:30 GMT
 RUN buildDeps="default-libmysqlclient-dev dpkg-dev gcc libbz2-dev libc6-dev libffi-dev libjpeg62-turbo-dev libldap2-dev libopenjp2-7-dev libpcre3-dev libpq-dev libsasl2-dev libssl-dev libtiff5-dev libxml2-dev libxslt1-dev wget zlib1g-dev"  && runDeps="default-libmysqlclient-dev git gosu libjpeg62 libopenjp2-7 libpq5 libtiff5 libxml2 libxslt1.1 lynx netcat poppler-utils rsync wv"  && apt-get update  && apt-get install -y --no-install-recommends $buildDeps  && wget -O Plone.tgz https://launchpad.net/plone/$PLONE_MAJOR/$PLONE_VERSION/+download/$PLONE_VERSION_RELEASE.tgz  && echo "$PLONE_MD5 Plone.tgz" | md5sum -c -  && tar -xzf Plone.tgz  && cp -rv ./$PLONE_VERSION_RELEASE/base_skeleton/* /plone/instance/  && cp -v ./$PLONE_VERSION_RELEASE/buildout_templates/buildout.cfg /plone/instance/buildout-base.cfg  && pip install pip==$PIP setuptools==$SETUPTOOLS zc.buildout==$ZC_BUILDOUT wheel==$WHEEL  && cd /plone/instance  && buildout  && ln -s /data/filestorage/ /plone/instance/var/filestorage  && ln -s /data/blobstorage /plone/instance/var/blobstorage  && find /data  -not -user plone -exec chown plone:plone {} \+  && find /plone -not -user plone -exec chown plone:plone {} \+  && rm -rf /Plone*  && apt-get purge -y --auto-remove $buildDeps  && apt-get install -y --no-install-recommends $runDeps  && rm -rf /var/lib/apt/lists/*  && rm -rf /plone/buildout-cache/downloads/*
-# Sat, 29 Jan 2022 07:32:12 GMT
+# Fri, 04 Feb 2022 06:02:33 GMT
 VOLUME [/data]
-# Sat, 29 Jan 2022 07:32:12 GMT
-COPY multi:0d8a1d0f8ea3598efc970a9d1a7a50b969ffaa0704d732da1b62240ced2f6442 in / 
-# Sat, 29 Jan 2022 07:32:13 GMT
+# Fri, 04 Feb 2022 06:02:34 GMT
+COPY multi:cb7e252b86bd636999944f95a07a275ae82b4f8eefb11a49319425c7445203ac in / 
+# Fri, 04 Feb 2022 06:02:34 GMT
 EXPOSE 8080
-# Sat, 29 Jan 2022 07:32:13 GMT
+# Fri, 04 Feb 2022 06:02:34 GMT
 WORKDIR /plone/instance
-# Sat, 29 Jan 2022 07:32:14 GMT
+# Fri, 04 Feb 2022 06:02:34 GMT
 HEALTHCHECK &{["CMD-SHELL" "nc -z -w5 127.0.0.1 8080 || exit 1"] "1m0s" "5s" "1m0s" '\x00'}
-# Sat, 29 Jan 2022 07:32:14 GMT
+# Fri, 04 Feb 2022 06:02:35 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 29 Jan 2022 07:32:14 GMT
+# Fri, 04 Feb 2022 06:02:35 GMT
 CMD ["start"]
 ```
 
@@ -1293,40 +704,40 @@ CMD ["start"]
 		Last Modified: Sat, 29 Jan 2022 07:39:07 GMT  
 		Size: 4.0 KB (3951 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e57f530b70d522abb25927e9ca93c958d8ee7228e2100652e5f61d28faacb10c`  
-		Last Modified: Sat, 29 Jan 2022 07:39:07 GMT  
-		Size: 1.2 KB (1206 bytes)  
+	-	`sha256:4a374f4826cce563f4d393203e19b688f784ea066021c31b4414c4665cf4c4e0`  
+		Last Modified: Fri, 04 Feb 2022 06:04:46 GMT  
+		Size: 1.3 KB (1263 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45b36b047ac2edd3a3ce839ad1a3d1fc2404b136418bc77f08bf1aae8326fc8a`  
-		Last Modified: Sat, 29 Jan 2022 07:39:51 GMT  
-		Size: 199.1 MB (199125786 bytes)  
+	-	`sha256:7f3d72fd8d0e32fa01016544902643316eb1553de0ccd6f59d6d8d063abbcaaf`  
+		Last Modified: Fri, 04 Feb 2022 06:05:16 GMT  
+		Size: 199.1 MB (199125329 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d1300236fbc9b7b58c406ddb666669c079ee2a2679b160f24db4738084f49df8`  
-		Last Modified: Sat, 29 Jan 2022 07:39:07 GMT  
-		Size: 3.9 KB (3895 bytes)  
+	-	`sha256:e74b1f2768f99897980d0bfee2ce41c1bb74d12298cc1a9069129ee0a64c2430`  
+		Last Modified: Fri, 04 Feb 2022 06:04:46 GMT  
+		Size: 4.0 KB (4008 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `plone:5.2.5-python39`
+## `plone:5.2.6`
 
 ```console
-$ docker pull plone@sha256:09f236180ebc584426af0f18574f86cc7b96fb1264124bde9c3f81ec4e072369
+$ docker pull plone@sha256:83ac674d2b9f12a68402b92fc6f9848baad4fe57ad80117dfe5344c67a806bcb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
 	-	linux; amd64
 
-### `plone:5.2.5-python39` - linux; amd64
+### `plone:5.2.6` - linux; amd64
 
 ```console
-$ docker pull plone@sha256:e07369f5eac473cfa7ea2c1da4729a9f4be623688d0bb212b9890b44cba2f663
+$ docker pull plone@sha256:430fa4edc9fdb36bd3e3dfcef3cf27a3d707209ef8ff22a755c52c374b44fdbb
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **241.7 MB (241671240 bytes)**  
+-	Total Size: **243.3 MB (243251996 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:812101146c3e48465c88352c619afcc3829f2bd65ea61185902cb03b1de3b6e3`
+-	Image ID: `sha256:8ededd5bcc3bd074ce266052c07b5cb5bb5c52c0a2ed3873673bc63632171ddb`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["start"]`
 
@@ -1343,45 +754,45 @@ ENV LANG=C.UTF-8
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		netbase 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
 # Wed, 26 Jan 2022 21:15:16 GMT
 ENV GPG_KEY=E3FF2839C048B25C084DEBE9B26995E310250568
-# Wed, 26 Jan 2022 21:15:16 GMT
-ENV PYTHON_VERSION=3.9.10
-# Sat, 29 Jan 2022 04:39:51 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		gnupg dirmngr 		libbluetooth-dev 		libbz2-dev 		libc6-dev 		libexpat1-dev 		libffi-dev 		libgdbm-dev 		liblzma-dev 		libncursesw5-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tk-dev 		uuid-dev 		wget 		xz-utils 		zlib1g-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPG_KEY"; 	gpg --batch --verify python.tar.xz.asc python.tar.xz; 	command -v gpgconf > /dev/null && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" python.tar.xz.asc; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-optimizations 		--enable-option-checking=fatal 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	; 	nproc="$(nproc)"; 	make -j "$nproc" 		LDFLAGS="-Wl,--strip-all" 	; 	make install; 	cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name '*.a' \) \) 		\) -exec rm -rf '{}' + 	; 		ldconfig; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python3 --version
-# Sat, 29 Jan 2022 04:39:52 GMT
+# Sat, 29 Jan 2022 05:26:04 GMT
+ENV PYTHON_VERSION=3.8.12
+# Sat, 29 Jan 2022 05:35:23 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		gnupg dirmngr 		libbluetooth-dev 		libbz2-dev 		libc6-dev 		libexpat1-dev 		libffi-dev 		libgdbm-dev 		liblzma-dev 		libncursesw5-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tk-dev 		uuid-dev 		wget 		xz-utils 		zlib1g-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPG_KEY"; 	gpg --batch --verify python.tar.xz.asc python.tar.xz; 	command -v gpgconf > /dev/null && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" python.tar.xz.asc; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-optimizations 		--enable-option-checking=fatal 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	; 	nproc="$(nproc)"; 	make -j "$nproc" 		LDFLAGS="-Wl,--strip-all" 	; 	make install; 	cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name '*.a' \) \) 			-o \( -type f -a -name 'wininst-*.exe' \) 		\) -exec rm -rf '{}' + 	; 		ldconfig; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python3 --version
+# Sat, 29 Jan 2022 05:35:24 GMT
 RUN set -eux; 	for src in idle3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "/usr/local/bin/$src" "/usr/local/bin/$dst"; 	done
-# Sat, 29 Jan 2022 04:39:52 GMT
+# Sat, 29 Jan 2022 05:35:24 GMT
 ENV PYTHON_PIP_VERSION=21.2.4
-# Sat, 29 Jan 2022 04:39:53 GMT
-ENV PYTHON_SETUPTOOLS_VERSION=58.1.0
-# Sat, 29 Jan 2022 04:39:53 GMT
+# Sat, 29 Jan 2022 05:35:25 GMT
+ENV PYTHON_SETUPTOOLS_VERSION=57.5.0
+# Sat, 29 Jan 2022 05:35:25 GMT
 ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/3cb8888cc2869620f57d5d2da64da38f516078c7/public/get-pip.py
-# Sat, 29 Jan 2022 04:39:53 GMT
+# Sat, 29 Jan 2022 05:35:25 GMT
 ENV PYTHON_GET_PIP_SHA256=c518250e91a70d7b20cceb15272209a4ded2a0c263ae5776f129e0d9b5674309
-# Sat, 29 Jan 2022 04:40:05 GMT
+# Sat, 29 Jan 2022 05:35:37 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	; 	rm -f get-pip.py
-# Sat, 29 Jan 2022 04:40:06 GMT
+# Sat, 29 Jan 2022 05:35:37 GMT
 CMD ["python3"]
-# Sat, 29 Jan 2022 07:20:22 GMT
-ENV PIP=21.0.1 ZC_BUILDOUT=2.13.5 SETUPTOOLS=51.3.3 WHEEL=0.36.2 PLONE_MAJOR=5.2 PLONE_VERSION=5.2.5 PLONE_VERSION_RELEASE=Plone-5.2.5-UnifiedInstaller-1.0 PLONE_MD5=62d96ddc612cf35d18890c752a59edc4
-# Sat, 29 Jan 2022 07:20:24 GMT
+# Fri, 04 Feb 2022 05:54:33 GMT
+ENV PIP=21.0.1 ZC_BUILDOUT=2.13.5 SETUPTOOLS=51.3.3 WHEEL=0.36.2 PLONE_MAJOR=5.2 PLONE_VERSION=5.2.6 PLONE_VERSION_RELEASE=Plone-5.2.6-UnifiedInstaller-1.0 PLONE_MD5=51613c5271064bea1bf6d10aa1fec58c
+# Fri, 04 Feb 2022 05:54:34 GMT
 RUN useradd --system -m -d /plone -U -u 500 plone  && mkdir -p /plone/instance/ /data/filestorage /data/blobstorage
-# Sat, 29 Jan 2022 07:20:24 GMT
-COPY file:c72591a4a81e946d3e2e785b23d6a368007666aaf3e458c6fd32b86e1e5b5025 in /plone/instance/ 
-# Sat, 29 Jan 2022 07:26:24 GMT
+# Fri, 04 Feb 2022 05:54:34 GMT
+COPY file:7b22c8ff5914ecee959543c0622bbb71de3b59961836e6f0bad3c41c35197e25 in /plone/instance/ 
+# Fri, 04 Feb 2022 05:58:27 GMT
 RUN buildDeps="default-libmysqlclient-dev dpkg-dev gcc libbz2-dev libc6-dev libffi-dev libjpeg62-turbo-dev libldap2-dev libopenjp2-7-dev libpcre3-dev libpq-dev libsasl2-dev libssl-dev libtiff5-dev libxml2-dev libxslt1-dev wget zlib1g-dev"  && runDeps="default-libmysqlclient-dev git gosu libjpeg62 libopenjp2-7 libpq5 libtiff5 libxml2 libxslt1.1 lynx netcat poppler-utils rsync wv"  && apt-get update  && apt-get install -y --no-install-recommends $buildDeps  && wget -O Plone.tgz https://launchpad.net/plone/$PLONE_MAJOR/$PLONE_VERSION/+download/$PLONE_VERSION_RELEASE.tgz  && echo "$PLONE_MD5 Plone.tgz" | md5sum -c -  && tar -xzf Plone.tgz  && cp -rv ./$PLONE_VERSION_RELEASE/base_skeleton/* /plone/instance/  && cp -v ./$PLONE_VERSION_RELEASE/buildout_templates/buildout.cfg /plone/instance/buildout-base.cfg  && pip install pip==$PIP setuptools==$SETUPTOOLS zc.buildout==$ZC_BUILDOUT wheel==$WHEEL  && cd /plone/instance  && buildout  && ln -s /data/filestorage/ /plone/instance/var/filestorage  && ln -s /data/blobstorage /plone/instance/var/blobstorage  && find /data  -not -user plone -exec chown plone:plone {} \+  && find /plone -not -user plone -exec chown plone:plone {} \+  && rm -rf /Plone*  && apt-get purge -y --auto-remove $buildDeps  && apt-get install -y --no-install-recommends $runDeps  && rm -rf /var/lib/apt/lists/*  && rm -rf /plone/buildout-cache/downloads/*
-# Sat, 29 Jan 2022 07:26:28 GMT
+# Fri, 04 Feb 2022 05:58:29 GMT
 VOLUME [/data]
-# Sat, 29 Jan 2022 07:26:28 GMT
-COPY multi:0d8a1d0f8ea3598efc970a9d1a7a50b969ffaa0704d732da1b62240ced2f6442 in / 
-# Sat, 29 Jan 2022 07:26:28 GMT
+# Fri, 04 Feb 2022 05:58:29 GMT
+COPY multi:cb7e252b86bd636999944f95a07a275ae82b4f8eefb11a49319425c7445203ac in / 
+# Fri, 04 Feb 2022 05:58:29 GMT
 EXPOSE 8080
-# Sat, 29 Jan 2022 07:26:28 GMT
+# Fri, 04 Feb 2022 05:58:30 GMT
 WORKDIR /plone/instance
-# Sat, 29 Jan 2022 07:26:29 GMT
+# Fri, 04 Feb 2022 05:58:30 GMT
 HEALTHCHECK &{["CMD-SHELL" "nc -z -w5 127.0.0.1 8080 || exit 1"] "1m0s" "5s" "1m0s" '\x00'}
-# Sat, 29 Jan 2022 07:26:29 GMT
+# Fri, 04 Feb 2022 05:58:30 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 29 Jan 2022 07:26:29 GMT
+# Fri, 04 Feb 2022 05:58:30 GMT
 CMD ["start"]
 ```
 
@@ -1394,39 +805,390 @@ CMD ["start"]
 		Last Modified: Wed, 26 Jan 2022 22:34:52 GMT  
 		Size: 2.8 MB (2770186 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c2b309db2de8e8d501d5cb8e42b8576c2c24ee71b1f7488cbda69be445a5c02`  
-		Last Modified: Sat, 29 Jan 2022 06:52:49 GMT  
-		Size: 11.0 MB (11018413 bytes)  
+	-	`sha256:cfcccbd80a1adc59bf0d5a7ff05c5806afa8417c9ca3b87914b9e2ac755b0812`  
+		Last Modified: Sat, 29 Jan 2022 06:54:11 GMT  
+		Size: 10.7 MB (10728843 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b84635b4bc7acf9cbbc814f32196c28d63e7f3d5a1bcfd96af8516e99839590`  
-		Last Modified: Sat, 29 Jan 2022 06:52:46 GMT  
+	-	`sha256:0995a517cdf86ed3b8c1183c9f52caadc88aaa532bc15953e1c8f25df2e0d478`  
+		Last Modified: Sat, 29 Jan 2022 06:54:09 GMT  
 		Size: 236.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1a4f31df0540ae609df8ac43f468900b1cb5e18fccc1f4b06bfc8a3f20a0ebfb`  
-		Last Modified: Sat, 29 Jan 2022 06:52:47 GMT  
-		Size: 2.6 MB (2635235 bytes)  
+	-	`sha256:8c798f76106bb9af30691b3bcaa3aca47c1b36faf3bd572ce796c6d901ccb1ac`  
+		Last Modified: Sat, 29 Jan 2022 06:54:10 GMT  
+		Size: 2.6 MB (2637476 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ffae253ae02aad1b1f59583f75f3e74e64799cd13df9bd0243de4d07da35c6d`  
-		Last Modified: Sat, 29 Jan 2022 07:38:05 GMT  
-		Size: 3.9 KB (3944 bytes)  
+	-	`sha256:744b0b72fdeca18dbe7059af7094c80ef99bad032ae5aaa52c7bb1bb8491320b`  
+		Last Modified: Fri, 04 Feb 2022 06:04:02 GMT  
+		Size: 4.0 KB (3953 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0791475393b8bbdb127d1e0dedee117a6099c60d3617812183738318b20dbef1`  
-		Last Modified: Sat, 29 Jan 2022 07:38:05 GMT  
-		Size: 1.2 KB (1210 bytes)  
+	-	`sha256:0909704eec01c7998231bf1e937a664553f2177b6d2fd161871b8bc7f8aa4b3e`  
+		Last Modified: Fri, 04 Feb 2022 06:04:01 GMT  
+		Size: 1.3 KB (1257 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71d4477eee422e33e90390208a7786acff0f48bd04854cfd8ac2d38a354d29c3`  
-		Last Modified: Sat, 29 Jan 2022 07:38:37 GMT  
-		Size: 198.1 MB (198084389 bytes)  
+	-	`sha256:9f68d6a72e09d459320601179975acecb14fd9a860f297bcc82c368870d1042c`  
+		Last Modified: Fri, 04 Feb 2022 06:04:32 GMT  
+		Size: 200.0 MB (199952305 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3180d862405d60693de2dd9b1efe421ddd1738797e0b22c4228ffecd66d033da`  
-		Last Modified: Sat, 29 Jan 2022 07:38:05 GMT  
-		Size: 3.9 KB (3896 bytes)  
+	-	`sha256:203eb0ec45e76cb46f137ae1a47bb4c32d1fb102832095ed9ab13509a1d5c246`  
+		Last Modified: Fri, 04 Feb 2022 06:04:01 GMT  
+		Size: 4.0 KB (4009 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `plone:5.2.6-python38`
+
+```console
+$ docker pull plone@sha256:83ac674d2b9f12a68402b92fc6f9848baad4fe57ad80117dfe5344c67a806bcb
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 1
+	-	linux; amd64
+
+### `plone:5.2.6-python38` - linux; amd64
+
+```console
+$ docker pull plone@sha256:430fa4edc9fdb36bd3e3dfcef3cf27a3d707209ef8ff22a755c52c374b44fdbb
+```
+
+-	Docker Version: 20.10.7
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **243.3 MB (243251996 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:8ededd5bcc3bd074ce266052c07b5cb5bb5c52c0a2ed3873673bc63632171ddb`
+-	Entrypoint: `["\/docker-entrypoint.sh"]`
+-	Default Command: `["start"]`
+
+```dockerfile
+# Wed, 26 Jan 2022 01:40:59 GMT
+ADD file:c51141702f568a28a7e3e7a2748f5ead5754e32d7b1cf7ebc8f4326273d05206 in / 
+# Wed, 26 Jan 2022 01:40:59 GMT
+CMD ["bash"]
+# Wed, 26 Jan 2022 20:36:00 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 26 Jan 2022 20:36:00 GMT
+ENV LANG=C.UTF-8
+# Wed, 26 Jan 2022 20:36:07 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		netbase 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
+# Wed, 26 Jan 2022 21:15:16 GMT
+ENV GPG_KEY=E3FF2839C048B25C084DEBE9B26995E310250568
+# Sat, 29 Jan 2022 05:26:04 GMT
+ENV PYTHON_VERSION=3.8.12
+# Sat, 29 Jan 2022 05:35:23 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		gnupg dirmngr 		libbluetooth-dev 		libbz2-dev 		libc6-dev 		libexpat1-dev 		libffi-dev 		libgdbm-dev 		liblzma-dev 		libncursesw5-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tk-dev 		uuid-dev 		wget 		xz-utils 		zlib1g-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPG_KEY"; 	gpg --batch --verify python.tar.xz.asc python.tar.xz; 	command -v gpgconf > /dev/null && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" python.tar.xz.asc; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-optimizations 		--enable-option-checking=fatal 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	; 	nproc="$(nproc)"; 	make -j "$nproc" 		LDFLAGS="-Wl,--strip-all" 	; 	make install; 	cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name '*.a' \) \) 			-o \( -type f -a -name 'wininst-*.exe' \) 		\) -exec rm -rf '{}' + 	; 		ldconfig; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python3 --version
+# Sat, 29 Jan 2022 05:35:24 GMT
+RUN set -eux; 	for src in idle3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "/usr/local/bin/$src" "/usr/local/bin/$dst"; 	done
+# Sat, 29 Jan 2022 05:35:24 GMT
+ENV PYTHON_PIP_VERSION=21.2.4
+# Sat, 29 Jan 2022 05:35:25 GMT
+ENV PYTHON_SETUPTOOLS_VERSION=57.5.0
+# Sat, 29 Jan 2022 05:35:25 GMT
+ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/3cb8888cc2869620f57d5d2da64da38f516078c7/public/get-pip.py
+# Sat, 29 Jan 2022 05:35:25 GMT
+ENV PYTHON_GET_PIP_SHA256=c518250e91a70d7b20cceb15272209a4ded2a0c263ae5776f129e0d9b5674309
+# Sat, 29 Jan 2022 05:35:37 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	; 	rm -f get-pip.py
+# Sat, 29 Jan 2022 05:35:37 GMT
+CMD ["python3"]
+# Fri, 04 Feb 2022 05:54:33 GMT
+ENV PIP=21.0.1 ZC_BUILDOUT=2.13.5 SETUPTOOLS=51.3.3 WHEEL=0.36.2 PLONE_MAJOR=5.2 PLONE_VERSION=5.2.6 PLONE_VERSION_RELEASE=Plone-5.2.6-UnifiedInstaller-1.0 PLONE_MD5=51613c5271064bea1bf6d10aa1fec58c
+# Fri, 04 Feb 2022 05:54:34 GMT
+RUN useradd --system -m -d /plone -U -u 500 plone  && mkdir -p /plone/instance/ /data/filestorage /data/blobstorage
+# Fri, 04 Feb 2022 05:54:34 GMT
+COPY file:7b22c8ff5914ecee959543c0622bbb71de3b59961836e6f0bad3c41c35197e25 in /plone/instance/ 
+# Fri, 04 Feb 2022 05:58:27 GMT
+RUN buildDeps="default-libmysqlclient-dev dpkg-dev gcc libbz2-dev libc6-dev libffi-dev libjpeg62-turbo-dev libldap2-dev libopenjp2-7-dev libpcre3-dev libpq-dev libsasl2-dev libssl-dev libtiff5-dev libxml2-dev libxslt1-dev wget zlib1g-dev"  && runDeps="default-libmysqlclient-dev git gosu libjpeg62 libopenjp2-7 libpq5 libtiff5 libxml2 libxslt1.1 lynx netcat poppler-utils rsync wv"  && apt-get update  && apt-get install -y --no-install-recommends $buildDeps  && wget -O Plone.tgz https://launchpad.net/plone/$PLONE_MAJOR/$PLONE_VERSION/+download/$PLONE_VERSION_RELEASE.tgz  && echo "$PLONE_MD5 Plone.tgz" | md5sum -c -  && tar -xzf Plone.tgz  && cp -rv ./$PLONE_VERSION_RELEASE/base_skeleton/* /plone/instance/  && cp -v ./$PLONE_VERSION_RELEASE/buildout_templates/buildout.cfg /plone/instance/buildout-base.cfg  && pip install pip==$PIP setuptools==$SETUPTOOLS zc.buildout==$ZC_BUILDOUT wheel==$WHEEL  && cd /plone/instance  && buildout  && ln -s /data/filestorage/ /plone/instance/var/filestorage  && ln -s /data/blobstorage /plone/instance/var/blobstorage  && find /data  -not -user plone -exec chown plone:plone {} \+  && find /plone -not -user plone -exec chown plone:plone {} \+  && rm -rf /Plone*  && apt-get purge -y --auto-remove $buildDeps  && apt-get install -y --no-install-recommends $runDeps  && rm -rf /var/lib/apt/lists/*  && rm -rf /plone/buildout-cache/downloads/*
+# Fri, 04 Feb 2022 05:58:29 GMT
+VOLUME [/data]
+# Fri, 04 Feb 2022 05:58:29 GMT
+COPY multi:cb7e252b86bd636999944f95a07a275ae82b4f8eefb11a49319425c7445203ac in / 
+# Fri, 04 Feb 2022 05:58:29 GMT
+EXPOSE 8080
+# Fri, 04 Feb 2022 05:58:30 GMT
+WORKDIR /plone/instance
+# Fri, 04 Feb 2022 05:58:30 GMT
+HEALTHCHECK &{["CMD-SHELL" "nc -z -w5 127.0.0.1 8080 || exit 1"] "1m0s" "5s" "1m0s" '\x00'}
+# Fri, 04 Feb 2022 05:58:30 GMT
+ENTRYPOINT ["/docker-entrypoint.sh"]
+# Fri, 04 Feb 2022 05:58:30 GMT
+CMD ["start"]
+```
+
+-	Layers:
+	-	`sha256:6552179c3509e3c4314b4065e0d2790563d01cd474e2fdd58be4d46acd48af6a`  
+		Last Modified: Wed, 26 Jan 2022 01:47:31 GMT  
+		Size: 27.2 MB (27153731 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c4887dad22fda8ead06b653271b8a6fde0f36b5d8aaa804f12f79a0fef138de5`  
+		Last Modified: Wed, 26 Jan 2022 22:34:52 GMT  
+		Size: 2.8 MB (2770186 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:cfcccbd80a1adc59bf0d5a7ff05c5806afa8417c9ca3b87914b9e2ac755b0812`  
+		Last Modified: Sat, 29 Jan 2022 06:54:11 GMT  
+		Size: 10.7 MB (10728843 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0995a517cdf86ed3b8c1183c9f52caadc88aaa532bc15953e1c8f25df2e0d478`  
+		Last Modified: Sat, 29 Jan 2022 06:54:09 GMT  
+		Size: 236.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8c798f76106bb9af30691b3bcaa3aca47c1b36faf3bd572ce796c6d901ccb1ac`  
+		Last Modified: Sat, 29 Jan 2022 06:54:10 GMT  
+		Size: 2.6 MB (2637476 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:744b0b72fdeca18dbe7059af7094c80ef99bad032ae5aaa52c7bb1bb8491320b`  
+		Last Modified: Fri, 04 Feb 2022 06:04:02 GMT  
+		Size: 4.0 KB (3953 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0909704eec01c7998231bf1e937a664553f2177b6d2fd161871b8bc7f8aa4b3e`  
+		Last Modified: Fri, 04 Feb 2022 06:04:01 GMT  
+		Size: 1.3 KB (1257 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9f68d6a72e09d459320601179975acecb14fd9a860f297bcc82c368870d1042c`  
+		Last Modified: Fri, 04 Feb 2022 06:04:32 GMT  
+		Size: 200.0 MB (199952305 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:203eb0ec45e76cb46f137ae1a47bb4c32d1fb102832095ed9ab13509a1d5c246`  
+		Last Modified: Fri, 04 Feb 2022 06:04:01 GMT  
+		Size: 4.0 KB (4009 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `plone:5.2.7`
+
+```console
+$ docker pull plone@sha256:f506dc5764250904747588629459ef6cecc35c4ea57c1348506249f825361d2c
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 1
+	-	linux; amd64
+
+### `plone:5.2.7` - linux; amd64
+
+```console
+$ docker pull plone@sha256:c49a626dd5557b6fa6923860ea5fbe5050e3683ac146bbdcbe7eebb2322e0072
+```
+
+-	Docker Version: 20.10.7
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **243.3 MB (243282311 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:355d09a034c8116b9065e2440b336994564d037cf2b844481aaff09c33d03f84`
+-	Entrypoint: `["\/docker-entrypoint.sh"]`
+-	Default Command: `["start"]`
+
+```dockerfile
+# Wed, 26 Jan 2022 01:40:59 GMT
+ADD file:c51141702f568a28a7e3e7a2748f5ead5754e32d7b1cf7ebc8f4326273d05206 in / 
+# Wed, 26 Jan 2022 01:40:59 GMT
+CMD ["bash"]
+# Wed, 26 Jan 2022 20:36:00 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 26 Jan 2022 20:36:00 GMT
+ENV LANG=C.UTF-8
+# Wed, 26 Jan 2022 20:36:07 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		netbase 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
+# Wed, 26 Jan 2022 21:15:16 GMT
+ENV GPG_KEY=E3FF2839C048B25C084DEBE9B26995E310250568
+# Sat, 29 Jan 2022 05:26:04 GMT
+ENV PYTHON_VERSION=3.8.12
+# Sat, 29 Jan 2022 05:35:23 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		gnupg dirmngr 		libbluetooth-dev 		libbz2-dev 		libc6-dev 		libexpat1-dev 		libffi-dev 		libgdbm-dev 		liblzma-dev 		libncursesw5-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tk-dev 		uuid-dev 		wget 		xz-utils 		zlib1g-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPG_KEY"; 	gpg --batch --verify python.tar.xz.asc python.tar.xz; 	command -v gpgconf > /dev/null && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" python.tar.xz.asc; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-optimizations 		--enable-option-checking=fatal 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	; 	nproc="$(nproc)"; 	make -j "$nproc" 		LDFLAGS="-Wl,--strip-all" 	; 	make install; 	cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name '*.a' \) \) 			-o \( -type f -a -name 'wininst-*.exe' \) 		\) -exec rm -rf '{}' + 	; 		ldconfig; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python3 --version
+# Sat, 29 Jan 2022 05:35:24 GMT
+RUN set -eux; 	for src in idle3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "/usr/local/bin/$src" "/usr/local/bin/$dst"; 	done
+# Sat, 29 Jan 2022 05:35:24 GMT
+ENV PYTHON_PIP_VERSION=21.2.4
+# Sat, 29 Jan 2022 05:35:25 GMT
+ENV PYTHON_SETUPTOOLS_VERSION=57.5.0
+# Sat, 29 Jan 2022 05:35:25 GMT
+ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/3cb8888cc2869620f57d5d2da64da38f516078c7/public/get-pip.py
+# Sat, 29 Jan 2022 05:35:25 GMT
+ENV PYTHON_GET_PIP_SHA256=c518250e91a70d7b20cceb15272209a4ded2a0c263ae5776f129e0d9b5674309
+# Sat, 29 Jan 2022 05:35:37 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	; 	rm -f get-pip.py
+# Sat, 29 Jan 2022 05:35:37 GMT
+CMD ["python3"]
+# Fri, 04 Feb 2022 05:50:11 GMT
+ENV PIP=21.0.1 ZC_BUILDOUT=2.13.5 SETUPTOOLS=51.3.3 WHEEL=0.36.2 PLONE_MAJOR=5.2 PLONE_VERSION=5.2.7 PLONE_VERSION_RELEASE=Plone-5.2.7-UnifiedInstaller-1.0 PLONE_MD5=c180d7ce3170b1871a7e8d53938096b1
+# Fri, 04 Feb 2022 05:50:12 GMT
+RUN useradd --system -m -d /plone -U -u 500 plone  && mkdir -p /plone/instance/ /data/filestorage /data/blobstorage
+# Fri, 04 Feb 2022 05:50:12 GMT
+COPY file:7b22c8ff5914ecee959543c0622bbb71de3b59961836e6f0bad3c41c35197e25 in /plone/instance/ 
+# Fri, 04 Feb 2022 05:54:16 GMT
+RUN buildDeps="default-libmysqlclient-dev dpkg-dev gcc libbz2-dev libc6-dev libffi-dev libjpeg62-turbo-dev libldap2-dev libopenjp2-7-dev libpcre3-dev libpq-dev libsasl2-dev libssl-dev libtiff5-dev libxml2-dev libxslt1-dev wget zlib1g-dev"  && runDeps="default-libmysqlclient-dev git gosu libjpeg62 libopenjp2-7 libpq5 libtiff5 libxml2 libxslt1.1 lynx netcat poppler-utils rsync wv"  && apt-get update  && apt-get install -y --no-install-recommends $buildDeps  && wget -O Plone.tgz https://launchpad.net/plone/$PLONE_MAJOR/$PLONE_VERSION/+download/$PLONE_VERSION_RELEASE.tgz  && echo "$PLONE_MD5 Plone.tgz" | md5sum -c -  && tar -xzf Plone.tgz  && cp -rv ./$PLONE_VERSION_RELEASE/base_skeleton/* /plone/instance/  && cp -v ./$PLONE_VERSION_RELEASE/buildout_templates/buildout.cfg /plone/instance/buildout-base.cfg  && pip install pip==$PIP setuptools==$SETUPTOOLS zc.buildout==$ZC_BUILDOUT wheel==$WHEEL  && cd /plone/instance  && buildout  && ln -s /data/filestorage/ /plone/instance/var/filestorage  && ln -s /data/blobstorage /plone/instance/var/blobstorage  && find /data  -not -user plone -exec chown plone:plone {} \+  && find /plone -not -user plone -exec chown plone:plone {} \+  && rm -rf /Plone*  && apt-get purge -y --auto-remove $buildDeps  && apt-get install -y --no-install-recommends $runDeps  && rm -rf /var/lib/apt/lists/*  && rm -rf /plone/buildout-cache/downloads/*
+# Fri, 04 Feb 2022 05:54:17 GMT
+VOLUME [/data]
+# Fri, 04 Feb 2022 05:54:18 GMT
+COPY multi:cb7e252b86bd636999944f95a07a275ae82b4f8eefb11a49319425c7445203ac in / 
+# Fri, 04 Feb 2022 05:54:18 GMT
+EXPOSE 8080
+# Fri, 04 Feb 2022 05:54:18 GMT
+WORKDIR /plone/instance
+# Fri, 04 Feb 2022 05:54:18 GMT
+HEALTHCHECK &{["CMD-SHELL" "nc -z -w5 127.0.0.1 8080 || exit 1"] "1m0s" "5s" "1m0s" '\x00'}
+# Fri, 04 Feb 2022 05:54:19 GMT
+ENTRYPOINT ["/docker-entrypoint.sh"]
+# Fri, 04 Feb 2022 05:54:19 GMT
+CMD ["start"]
+```
+
+-	Layers:
+	-	`sha256:6552179c3509e3c4314b4065e0d2790563d01cd474e2fdd58be4d46acd48af6a`  
+		Last Modified: Wed, 26 Jan 2022 01:47:31 GMT  
+		Size: 27.2 MB (27153731 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c4887dad22fda8ead06b653271b8a6fde0f36b5d8aaa804f12f79a0fef138de5`  
+		Last Modified: Wed, 26 Jan 2022 22:34:52 GMT  
+		Size: 2.8 MB (2770186 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:cfcccbd80a1adc59bf0d5a7ff05c5806afa8417c9ca3b87914b9e2ac755b0812`  
+		Last Modified: Sat, 29 Jan 2022 06:54:11 GMT  
+		Size: 10.7 MB (10728843 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0995a517cdf86ed3b8c1183c9f52caadc88aaa532bc15953e1c8f25df2e0d478`  
+		Last Modified: Sat, 29 Jan 2022 06:54:09 GMT  
+		Size: 236.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8c798f76106bb9af30691b3bcaa3aca47c1b36faf3bd572ce796c6d901ccb1ac`  
+		Last Modified: Sat, 29 Jan 2022 06:54:10 GMT  
+		Size: 2.6 MB (2637476 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8cc4f4f69b12d6551860ba2b0bb18ed8183af3120f48dc8227a51ab110fb6f07`  
+		Last Modified: Fri, 04 Feb 2022 06:03:05 GMT  
+		Size: 3.9 KB (3948 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f53347a81f98913107c3e151ff11be2d43499ecb9bd4091dd005021bd7aeb883`  
+		Last Modified: Fri, 04 Feb 2022 06:03:05 GMT  
+		Size: 1.3 KB (1260 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:dac2105bad12200c47a690ea91a66408b1cef2000e16eed301411a6f6e6e6b85`  
+		Last Modified: Fri, 04 Feb 2022 06:03:35 GMT  
+		Size: 200.0 MB (199982623 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:42328bccfed5a8d465cfac70624f0e4ea542210473d130539221080866b8df11`  
+		Last Modified: Fri, 04 Feb 2022 06:03:05 GMT  
+		Size: 4.0 KB (4008 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `plone:5.2.7-python38`
+
+```console
+$ docker pull plone@sha256:f506dc5764250904747588629459ef6cecc35c4ea57c1348506249f825361d2c
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 1
+	-	linux; amd64
+
+### `plone:5.2.7-python38` - linux; amd64
+
+```console
+$ docker pull plone@sha256:c49a626dd5557b6fa6923860ea5fbe5050e3683ac146bbdcbe7eebb2322e0072
+```
+
+-	Docker Version: 20.10.7
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **243.3 MB (243282311 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:355d09a034c8116b9065e2440b336994564d037cf2b844481aaff09c33d03f84`
+-	Entrypoint: `["\/docker-entrypoint.sh"]`
+-	Default Command: `["start"]`
+
+```dockerfile
+# Wed, 26 Jan 2022 01:40:59 GMT
+ADD file:c51141702f568a28a7e3e7a2748f5ead5754e32d7b1cf7ebc8f4326273d05206 in / 
+# Wed, 26 Jan 2022 01:40:59 GMT
+CMD ["bash"]
+# Wed, 26 Jan 2022 20:36:00 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 26 Jan 2022 20:36:00 GMT
+ENV LANG=C.UTF-8
+# Wed, 26 Jan 2022 20:36:07 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		netbase 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
+# Wed, 26 Jan 2022 21:15:16 GMT
+ENV GPG_KEY=E3FF2839C048B25C084DEBE9B26995E310250568
+# Sat, 29 Jan 2022 05:26:04 GMT
+ENV PYTHON_VERSION=3.8.12
+# Sat, 29 Jan 2022 05:35:23 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		gnupg dirmngr 		libbluetooth-dev 		libbz2-dev 		libc6-dev 		libexpat1-dev 		libffi-dev 		libgdbm-dev 		liblzma-dev 		libncursesw5-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tk-dev 		uuid-dev 		wget 		xz-utils 		zlib1g-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPG_KEY"; 	gpg --batch --verify python.tar.xz.asc python.tar.xz; 	command -v gpgconf > /dev/null && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" python.tar.xz.asc; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-optimizations 		--enable-option-checking=fatal 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	; 	nproc="$(nproc)"; 	make -j "$nproc" 		LDFLAGS="-Wl,--strip-all" 	; 	make install; 	cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name '*.a' \) \) 			-o \( -type f -a -name 'wininst-*.exe' \) 		\) -exec rm -rf '{}' + 	; 		ldconfig; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python3 --version
+# Sat, 29 Jan 2022 05:35:24 GMT
+RUN set -eux; 	for src in idle3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "/usr/local/bin/$src" "/usr/local/bin/$dst"; 	done
+# Sat, 29 Jan 2022 05:35:24 GMT
+ENV PYTHON_PIP_VERSION=21.2.4
+# Sat, 29 Jan 2022 05:35:25 GMT
+ENV PYTHON_SETUPTOOLS_VERSION=57.5.0
+# Sat, 29 Jan 2022 05:35:25 GMT
+ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/3cb8888cc2869620f57d5d2da64da38f516078c7/public/get-pip.py
+# Sat, 29 Jan 2022 05:35:25 GMT
+ENV PYTHON_GET_PIP_SHA256=c518250e91a70d7b20cceb15272209a4ded2a0c263ae5776f129e0d9b5674309
+# Sat, 29 Jan 2022 05:35:37 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	; 	rm -f get-pip.py
+# Sat, 29 Jan 2022 05:35:37 GMT
+CMD ["python3"]
+# Fri, 04 Feb 2022 05:50:11 GMT
+ENV PIP=21.0.1 ZC_BUILDOUT=2.13.5 SETUPTOOLS=51.3.3 WHEEL=0.36.2 PLONE_MAJOR=5.2 PLONE_VERSION=5.2.7 PLONE_VERSION_RELEASE=Plone-5.2.7-UnifiedInstaller-1.0 PLONE_MD5=c180d7ce3170b1871a7e8d53938096b1
+# Fri, 04 Feb 2022 05:50:12 GMT
+RUN useradd --system -m -d /plone -U -u 500 plone  && mkdir -p /plone/instance/ /data/filestorage /data/blobstorage
+# Fri, 04 Feb 2022 05:50:12 GMT
+COPY file:7b22c8ff5914ecee959543c0622bbb71de3b59961836e6f0bad3c41c35197e25 in /plone/instance/ 
+# Fri, 04 Feb 2022 05:54:16 GMT
+RUN buildDeps="default-libmysqlclient-dev dpkg-dev gcc libbz2-dev libc6-dev libffi-dev libjpeg62-turbo-dev libldap2-dev libopenjp2-7-dev libpcre3-dev libpq-dev libsasl2-dev libssl-dev libtiff5-dev libxml2-dev libxslt1-dev wget zlib1g-dev"  && runDeps="default-libmysqlclient-dev git gosu libjpeg62 libopenjp2-7 libpq5 libtiff5 libxml2 libxslt1.1 lynx netcat poppler-utils rsync wv"  && apt-get update  && apt-get install -y --no-install-recommends $buildDeps  && wget -O Plone.tgz https://launchpad.net/plone/$PLONE_MAJOR/$PLONE_VERSION/+download/$PLONE_VERSION_RELEASE.tgz  && echo "$PLONE_MD5 Plone.tgz" | md5sum -c -  && tar -xzf Plone.tgz  && cp -rv ./$PLONE_VERSION_RELEASE/base_skeleton/* /plone/instance/  && cp -v ./$PLONE_VERSION_RELEASE/buildout_templates/buildout.cfg /plone/instance/buildout-base.cfg  && pip install pip==$PIP setuptools==$SETUPTOOLS zc.buildout==$ZC_BUILDOUT wheel==$WHEEL  && cd /plone/instance  && buildout  && ln -s /data/filestorage/ /plone/instance/var/filestorage  && ln -s /data/blobstorage /plone/instance/var/blobstorage  && find /data  -not -user plone -exec chown plone:plone {} \+  && find /plone -not -user plone -exec chown plone:plone {} \+  && rm -rf /Plone*  && apt-get purge -y --auto-remove $buildDeps  && apt-get install -y --no-install-recommends $runDeps  && rm -rf /var/lib/apt/lists/*  && rm -rf /plone/buildout-cache/downloads/*
+# Fri, 04 Feb 2022 05:54:17 GMT
+VOLUME [/data]
+# Fri, 04 Feb 2022 05:54:18 GMT
+COPY multi:cb7e252b86bd636999944f95a07a275ae82b4f8eefb11a49319425c7445203ac in / 
+# Fri, 04 Feb 2022 05:54:18 GMT
+EXPOSE 8080
+# Fri, 04 Feb 2022 05:54:18 GMT
+WORKDIR /plone/instance
+# Fri, 04 Feb 2022 05:54:18 GMT
+HEALTHCHECK &{["CMD-SHELL" "nc -z -w5 127.0.0.1 8080 || exit 1"] "1m0s" "5s" "1m0s" '\x00'}
+# Fri, 04 Feb 2022 05:54:19 GMT
+ENTRYPOINT ["/docker-entrypoint.sh"]
+# Fri, 04 Feb 2022 05:54:19 GMT
+CMD ["start"]
+```
+
+-	Layers:
+	-	`sha256:6552179c3509e3c4314b4065e0d2790563d01cd474e2fdd58be4d46acd48af6a`  
+		Last Modified: Wed, 26 Jan 2022 01:47:31 GMT  
+		Size: 27.2 MB (27153731 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c4887dad22fda8ead06b653271b8a6fde0f36b5d8aaa804f12f79a0fef138de5`  
+		Last Modified: Wed, 26 Jan 2022 22:34:52 GMT  
+		Size: 2.8 MB (2770186 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:cfcccbd80a1adc59bf0d5a7ff05c5806afa8417c9ca3b87914b9e2ac755b0812`  
+		Last Modified: Sat, 29 Jan 2022 06:54:11 GMT  
+		Size: 10.7 MB (10728843 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0995a517cdf86ed3b8c1183c9f52caadc88aaa532bc15953e1c8f25df2e0d478`  
+		Last Modified: Sat, 29 Jan 2022 06:54:09 GMT  
+		Size: 236.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8c798f76106bb9af30691b3bcaa3aca47c1b36faf3bd572ce796c6d901ccb1ac`  
+		Last Modified: Sat, 29 Jan 2022 06:54:10 GMT  
+		Size: 2.6 MB (2637476 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8cc4f4f69b12d6551860ba2b0bb18ed8183af3120f48dc8227a51ab110fb6f07`  
+		Last Modified: Fri, 04 Feb 2022 06:03:05 GMT  
+		Size: 3.9 KB (3948 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f53347a81f98913107c3e151ff11be2d43499ecb9bd4091dd005021bd7aeb883`  
+		Last Modified: Fri, 04 Feb 2022 06:03:05 GMT  
+		Size: 1.3 KB (1260 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:dac2105bad12200c47a690ea91a66408b1cef2000e16eed301411a6f6e6e6b85`  
+		Last Modified: Fri, 04 Feb 2022 06:03:35 GMT  
+		Size: 200.0 MB (199982623 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:42328bccfed5a8d465cfac70624f0e4ea542210473d130539221080866b8df11`  
+		Last Modified: Fri, 04 Feb 2022 06:03:05 GMT  
+		Size: 4.0 KB (4008 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `plone:latest`
 
 ```console
-$ docker pull plone@sha256:09f236180ebc584426af0f18574f86cc7b96fb1264124bde9c3f81ec4e072369
+$ docker pull plone@sha256:f506dc5764250904747588629459ef6cecc35c4ea57c1348506249f825361d2c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1436,248 +1198,14 @@ $ docker pull plone@sha256:09f236180ebc584426af0f18574f86cc7b96fb1264124bde9c3f8
 ### `plone:latest` - linux; amd64
 
 ```console
-$ docker pull plone@sha256:e07369f5eac473cfa7ea2c1da4729a9f4be623688d0bb212b9890b44cba2f663
+$ docker pull plone@sha256:c49a626dd5557b6fa6923860ea5fbe5050e3683ac146bbdcbe7eebb2322e0072
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **241.7 MB (241671240 bytes)**  
+-	Total Size: **243.3 MB (243282311 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:812101146c3e48465c88352c619afcc3829f2bd65ea61185902cb03b1de3b6e3`
--	Entrypoint: `["\/docker-entrypoint.sh"]`
--	Default Command: `["start"]`
-
-```dockerfile
-# Wed, 26 Jan 2022 01:40:59 GMT
-ADD file:c51141702f568a28a7e3e7a2748f5ead5754e32d7b1cf7ebc8f4326273d05206 in / 
-# Wed, 26 Jan 2022 01:40:59 GMT
-CMD ["bash"]
-# Wed, 26 Jan 2022 20:36:00 GMT
-ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 26 Jan 2022 20:36:00 GMT
-ENV LANG=C.UTF-8
-# Wed, 26 Jan 2022 20:36:07 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		netbase 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 26 Jan 2022 21:15:16 GMT
-ENV GPG_KEY=E3FF2839C048B25C084DEBE9B26995E310250568
-# Wed, 26 Jan 2022 21:15:16 GMT
-ENV PYTHON_VERSION=3.9.10
-# Sat, 29 Jan 2022 04:39:51 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		gnupg dirmngr 		libbluetooth-dev 		libbz2-dev 		libc6-dev 		libexpat1-dev 		libffi-dev 		libgdbm-dev 		liblzma-dev 		libncursesw5-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tk-dev 		uuid-dev 		wget 		xz-utils 		zlib1g-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPG_KEY"; 	gpg --batch --verify python.tar.xz.asc python.tar.xz; 	command -v gpgconf > /dev/null && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" python.tar.xz.asc; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-optimizations 		--enable-option-checking=fatal 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	; 	nproc="$(nproc)"; 	make -j "$nproc" 		LDFLAGS="-Wl,--strip-all" 	; 	make install; 	cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name '*.a' \) \) 		\) -exec rm -rf '{}' + 	; 		ldconfig; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python3 --version
-# Sat, 29 Jan 2022 04:39:52 GMT
-RUN set -eux; 	for src in idle3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "/usr/local/bin/$src" "/usr/local/bin/$dst"; 	done
-# Sat, 29 Jan 2022 04:39:52 GMT
-ENV PYTHON_PIP_VERSION=21.2.4
-# Sat, 29 Jan 2022 04:39:53 GMT
-ENV PYTHON_SETUPTOOLS_VERSION=58.1.0
-# Sat, 29 Jan 2022 04:39:53 GMT
-ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/3cb8888cc2869620f57d5d2da64da38f516078c7/public/get-pip.py
-# Sat, 29 Jan 2022 04:39:53 GMT
-ENV PYTHON_GET_PIP_SHA256=c518250e91a70d7b20cceb15272209a4ded2a0c263ae5776f129e0d9b5674309
-# Sat, 29 Jan 2022 04:40:05 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	; 	rm -f get-pip.py
-# Sat, 29 Jan 2022 04:40:06 GMT
-CMD ["python3"]
-# Sat, 29 Jan 2022 07:20:22 GMT
-ENV PIP=21.0.1 ZC_BUILDOUT=2.13.5 SETUPTOOLS=51.3.3 WHEEL=0.36.2 PLONE_MAJOR=5.2 PLONE_VERSION=5.2.5 PLONE_VERSION_RELEASE=Plone-5.2.5-UnifiedInstaller-1.0 PLONE_MD5=62d96ddc612cf35d18890c752a59edc4
-# Sat, 29 Jan 2022 07:20:24 GMT
-RUN useradd --system -m -d /plone -U -u 500 plone  && mkdir -p /plone/instance/ /data/filestorage /data/blobstorage
-# Sat, 29 Jan 2022 07:20:24 GMT
-COPY file:c72591a4a81e946d3e2e785b23d6a368007666aaf3e458c6fd32b86e1e5b5025 in /plone/instance/ 
-# Sat, 29 Jan 2022 07:26:24 GMT
-RUN buildDeps="default-libmysqlclient-dev dpkg-dev gcc libbz2-dev libc6-dev libffi-dev libjpeg62-turbo-dev libldap2-dev libopenjp2-7-dev libpcre3-dev libpq-dev libsasl2-dev libssl-dev libtiff5-dev libxml2-dev libxslt1-dev wget zlib1g-dev"  && runDeps="default-libmysqlclient-dev git gosu libjpeg62 libopenjp2-7 libpq5 libtiff5 libxml2 libxslt1.1 lynx netcat poppler-utils rsync wv"  && apt-get update  && apt-get install -y --no-install-recommends $buildDeps  && wget -O Plone.tgz https://launchpad.net/plone/$PLONE_MAJOR/$PLONE_VERSION/+download/$PLONE_VERSION_RELEASE.tgz  && echo "$PLONE_MD5 Plone.tgz" | md5sum -c -  && tar -xzf Plone.tgz  && cp -rv ./$PLONE_VERSION_RELEASE/base_skeleton/* /plone/instance/  && cp -v ./$PLONE_VERSION_RELEASE/buildout_templates/buildout.cfg /plone/instance/buildout-base.cfg  && pip install pip==$PIP setuptools==$SETUPTOOLS zc.buildout==$ZC_BUILDOUT wheel==$WHEEL  && cd /plone/instance  && buildout  && ln -s /data/filestorage/ /plone/instance/var/filestorage  && ln -s /data/blobstorage /plone/instance/var/blobstorage  && find /data  -not -user plone -exec chown plone:plone {} \+  && find /plone -not -user plone -exec chown plone:plone {} \+  && rm -rf /Plone*  && apt-get purge -y --auto-remove $buildDeps  && apt-get install -y --no-install-recommends $runDeps  && rm -rf /var/lib/apt/lists/*  && rm -rf /plone/buildout-cache/downloads/*
-# Sat, 29 Jan 2022 07:26:28 GMT
-VOLUME [/data]
-# Sat, 29 Jan 2022 07:26:28 GMT
-COPY multi:0d8a1d0f8ea3598efc970a9d1a7a50b969ffaa0704d732da1b62240ced2f6442 in / 
-# Sat, 29 Jan 2022 07:26:28 GMT
-EXPOSE 8080
-# Sat, 29 Jan 2022 07:26:28 GMT
-WORKDIR /plone/instance
-# Sat, 29 Jan 2022 07:26:29 GMT
-HEALTHCHECK &{["CMD-SHELL" "nc -z -w5 127.0.0.1 8080 || exit 1"] "1m0s" "5s" "1m0s" '\x00'}
-# Sat, 29 Jan 2022 07:26:29 GMT
-ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 29 Jan 2022 07:26:29 GMT
-CMD ["start"]
-```
-
--	Layers:
-	-	`sha256:6552179c3509e3c4314b4065e0d2790563d01cd474e2fdd58be4d46acd48af6a`  
-		Last Modified: Wed, 26 Jan 2022 01:47:31 GMT  
-		Size: 27.2 MB (27153731 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c4887dad22fda8ead06b653271b8a6fde0f36b5d8aaa804f12f79a0fef138de5`  
-		Last Modified: Wed, 26 Jan 2022 22:34:52 GMT  
-		Size: 2.8 MB (2770186 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c2b309db2de8e8d501d5cb8e42b8576c2c24ee71b1f7488cbda69be445a5c02`  
-		Last Modified: Sat, 29 Jan 2022 06:52:49 GMT  
-		Size: 11.0 MB (11018413 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b84635b4bc7acf9cbbc814f32196c28d63e7f3d5a1bcfd96af8516e99839590`  
-		Last Modified: Sat, 29 Jan 2022 06:52:46 GMT  
-		Size: 236.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1a4f31df0540ae609df8ac43f468900b1cb5e18fccc1f4b06bfc8a3f20a0ebfb`  
-		Last Modified: Sat, 29 Jan 2022 06:52:47 GMT  
-		Size: 2.6 MB (2635235 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ffae253ae02aad1b1f59583f75f3e74e64799cd13df9bd0243de4d07da35c6d`  
-		Last Modified: Sat, 29 Jan 2022 07:38:05 GMT  
-		Size: 3.9 KB (3944 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0791475393b8bbdb127d1e0dedee117a6099c60d3617812183738318b20dbef1`  
-		Last Modified: Sat, 29 Jan 2022 07:38:05 GMT  
-		Size: 1.2 KB (1210 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71d4477eee422e33e90390208a7786acff0f48bd04854cfd8ac2d38a354d29c3`  
-		Last Modified: Sat, 29 Jan 2022 07:38:37 GMT  
-		Size: 198.1 MB (198084389 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3180d862405d60693de2dd9b1efe421ddd1738797e0b22c4228ffecd66d033da`  
-		Last Modified: Sat, 29 Jan 2022 07:38:05 GMT  
-		Size: 3.9 KB (3896 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-## `plone:python37`
-
-```console
-$ docker pull plone@sha256:d1a0dba5a25eb4390b0a21145d6e5ce6265f129d685e00b1d3087207bca84983
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 1
-	-	linux; amd64
-
-### `plone:python37` - linux; amd64
-
-```console
-$ docker pull plone@sha256:e4594d997940256d656f3111e17dfda5211845e377dd630d01b5451d1b5306c9
-```
-
--	Docker Version: 20.10.7
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **241.1 MB (241140675 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ffd95d3c4e2216f3bffee49b7422f818ff81bee2b7741bce7374a259a9804e5d`
--	Entrypoint: `["\/docker-entrypoint.sh"]`
--	Default Command: `["start"]`
-
-```dockerfile
-# Wed, 26 Jan 2022 01:40:59 GMT
-ADD file:c51141702f568a28a7e3e7a2748f5ead5754e32d7b1cf7ebc8f4326273d05206 in / 
-# Wed, 26 Jan 2022 01:40:59 GMT
-CMD ["bash"]
-# Wed, 26 Jan 2022 20:36:00 GMT
-ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 26 Jan 2022 20:36:00 GMT
-ENV LANG=C.UTF-8
-# Wed, 26 Jan 2022 20:36:07 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		netbase 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
-# Sat, 29 Jan 2022 06:17:55 GMT
-ENV GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D
-# Sat, 29 Jan 2022 06:17:55 GMT
-ENV PYTHON_VERSION=3.7.12
-# Sat, 29 Jan 2022 06:27:10 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		gnupg dirmngr 		libbluetooth-dev 		libbz2-dev 		libc6-dev 		libexpat1-dev 		libffi-dev 		libgdbm-dev 		liblzma-dev 		libncursesw5-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tk-dev 		uuid-dev 		wget 		xz-utils 		zlib1g-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPG_KEY"; 	gpg --batch --verify python.tar.xz.asc python.tar.xz; 	command -v gpgconf > /dev/null && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" python.tar.xz.asc; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-optimizations 		--enable-option-checking=fatal 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	; 	nproc="$(nproc)"; 	make -j "$nproc" 		LDFLAGS="-Wl,--strip-all" 		PROFILE_TASK='-m test.regrtest --pgo 			test_array 			test_base64 			test_binascii 			test_binhex 			test_binop 			test_bytes 			test_c_locale_coercion 			test_class 			test_cmath 			test_codecs 			test_compile 			test_complex 			test_csv 			test_decimal 			test_dict 			test_float 			test_fstring 			test_hashlib 			test_io 			test_iter 			test_json 			test_long 			test_math 			test_memoryview 			test_pickle 			test_re 			test_set 			test_slice 			test_struct 			test_threading 			test_time 			test_traceback 			test_unicode 		' 	; 	make install; 	cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name '*.a' \) \) 			-o \( -type f -a -name 'wininst-*.exe' \) 		\) -exec rm -rf '{}' + 	; 		ldconfig; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python3 --version
-# Sat, 29 Jan 2022 06:27:11 GMT
-RUN set -eux; 	for src in idle3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "/usr/local/bin/$src" "/usr/local/bin/$dst"; 	done
-# Sat, 29 Jan 2022 06:27:11 GMT
-ENV PYTHON_PIP_VERSION=21.2.4
-# Sat, 29 Jan 2022 06:27:11 GMT
-ENV PYTHON_SETUPTOOLS_VERSION=57.5.0
-# Sat, 29 Jan 2022 06:27:12 GMT
-ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/3cb8888cc2869620f57d5d2da64da38f516078c7/public/get-pip.py
-# Sat, 29 Jan 2022 06:27:12 GMT
-ENV PYTHON_GET_PIP_SHA256=c518250e91a70d7b20cceb15272209a4ded2a0c263ae5776f129e0d9b5674309
-# Sat, 29 Jan 2022 06:27:29 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	; 	rm -f get-pip.py
-# Sat, 29 Jan 2022 06:27:30 GMT
-CMD ["python3"]
-# Sat, 29 Jan 2022 07:32:24 GMT
-ENV PIP=21.0.1 ZC_BUILDOUT=2.13.5 SETUPTOOLS=51.3.3 WHEEL=0.36.2 PLONE_MAJOR=5.2 PLONE_VERSION=5.2.5 PLONE_VERSION_RELEASE=Plone-5.2.5-UnifiedInstaller-1.0 PLONE_MD5=62d96ddc612cf35d18890c752a59edc4
-# Sat, 29 Jan 2022 07:32:26 GMT
-RUN useradd --system -m -d /plone -U -u 500 plone  && mkdir -p /plone/instance/ /data/filestorage /data/blobstorage
-# Sat, 29 Jan 2022 07:32:27 GMT
-COPY file:c72591a4a81e946d3e2e785b23d6a368007666aaf3e458c6fd32b86e1e5b5025 in /plone/instance/ 
-# Sat, 29 Jan 2022 07:37:24 GMT
-RUN buildDeps="default-libmysqlclient-dev dpkg-dev gcc libbz2-dev libc6-dev libffi-dev libjpeg62-turbo-dev libldap2-dev libopenjp2-7-dev libpcre3-dev libpq-dev libsasl2-dev libssl-dev libtiff5-dev libxml2-dev libxslt1-dev wget zlib1g-dev"  && runDeps="default-libmysqlclient-dev git gosu libjpeg62 libopenjp2-7 libpq5 libtiff5 libxml2 libxslt1.1 lynx netcat poppler-utils rsync wv"  && apt-get update  && apt-get install -y --no-install-recommends $buildDeps  && wget -O Plone.tgz https://launchpad.net/plone/$PLONE_MAJOR/$PLONE_VERSION/+download/$PLONE_VERSION_RELEASE.tgz  && echo "$PLONE_MD5 Plone.tgz" | md5sum -c -  && tar -xzf Plone.tgz  && cp -rv ./$PLONE_VERSION_RELEASE/base_skeleton/* /plone/instance/  && cp -v ./$PLONE_VERSION_RELEASE/buildout_templates/buildout.cfg /plone/instance/buildout-base.cfg  && pip install pip==$PIP setuptools==$SETUPTOOLS zc.buildout==$ZC_BUILDOUT wheel==$WHEEL  && cd /plone/instance  && buildout  && ln -s /data/filestorage/ /plone/instance/var/filestorage  && ln -s /data/blobstorage /plone/instance/var/blobstorage  && find /data  -not -user plone -exec chown plone:plone {} \+  && find /plone -not -user plone -exec chown plone:plone {} \+  && rm -rf /Plone*  && apt-get purge -y --auto-remove $buildDeps  && apt-get install -y --no-install-recommends $runDeps  && rm -rf /var/lib/apt/lists/*  && rm -rf /plone/buildout-cache/downloads/*
-# Sat, 29 Jan 2022 07:37:29 GMT
-VOLUME [/data]
-# Sat, 29 Jan 2022 07:37:29 GMT
-COPY multi:0d8a1d0f8ea3598efc970a9d1a7a50b969ffaa0704d732da1b62240ced2f6442 in / 
-# Sat, 29 Jan 2022 07:37:29 GMT
-EXPOSE 8080
-# Sat, 29 Jan 2022 07:37:30 GMT
-WORKDIR /plone/instance
-# Sat, 29 Jan 2022 07:37:30 GMT
-HEALTHCHECK &{["CMD-SHELL" "nc -z -w5 127.0.0.1 8080 || exit 1"] "1m0s" "5s" "1m0s" '\x00'}
-# Sat, 29 Jan 2022 07:37:30 GMT
-ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 29 Jan 2022 07:37:31 GMT
-CMD ["start"]
-```
-
--	Layers:
-	-	`sha256:6552179c3509e3c4314b4065e0d2790563d01cd474e2fdd58be4d46acd48af6a`  
-		Last Modified: Wed, 26 Jan 2022 01:47:31 GMT  
-		Size: 27.2 MB (27153731 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c4887dad22fda8ead06b653271b8a6fde0f36b5d8aaa804f12f79a0fef138de5`  
-		Last Modified: Wed, 26 Jan 2022 22:34:52 GMT  
-		Size: 2.8 MB (2770186 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:83fecc69c36756a7720784991fdb9b6cea6d75efcb59b77d1cc77e1037cf4b3a`  
-		Last Modified: Sat, 29 Jan 2022 06:55:29 GMT  
-		Size: 10.1 MB (10059888 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a9d24969a226ef5af07fbca75838b5695614fb47e8a7a317221b49521f39de05`  
-		Last Modified: Sat, 29 Jan 2022 06:55:27 GMT  
-		Size: 235.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3546e2eec5e7fa9d82a4b53097cab929820afc4a3512ceb7a0acf996e01c318d`  
-		Last Modified: Sat, 29 Jan 2022 06:55:28 GMT  
-		Size: 2.6 MB (2637339 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe2e12da3d906a992033736305997415cca52e7d726f434c62afc7794c675be8`  
-		Last Modified: Sat, 29 Jan 2022 07:40:06 GMT  
-		Size: 3.9 KB (3946 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ffe5943351e3c84037b88dfbb60e298580d2d9c6540b94c4b94afd319e21d11b`  
-		Last Modified: Sat, 29 Jan 2022 07:40:06 GMT  
-		Size: 1.2 KB (1209 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cb64702f4594911a396402b143258369d41122f6e22f04c7d7e29462c048b2a2`  
-		Last Modified: Sat, 29 Jan 2022 07:40:39 GMT  
-		Size: 198.5 MB (198510244 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bba776e57f950b07983b4486a4134370630e3b275c9eefc9c17fd6875eb1d6e0`  
-		Last Modified: Sat, 29 Jan 2022 07:40:06 GMT  
-		Size: 3.9 KB (3897 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-## `plone:python38`
-
-```console
-$ docker pull plone@sha256:6b07ca8f14d96383a1953c9570dc32fdcebf52c9af92e71c643e7bc6019f2988
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 1
-	-	linux; amd64
-
-### `plone:python38` - linux; amd64
-
-```console
-$ docker pull plone@sha256:c0d16bdf134a7bfa5081caeaf3a0ad6ba1ea2417a4a24000518f719e1f9dae31
-```
-
--	Docker Version: 20.10.7
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **242.4 MB (242425310 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:71d7af6dc3ceb4a87ecf8a2d6c92983c55749ff72a0c6d535dc12afbff706673`
+-	Image ID: `sha256:355d09a034c8116b9065e2440b336994564d037cf2b844481aaff09c33d03f84`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["start"]`
 
@@ -1712,27 +1240,27 @@ ENV PYTHON_GET_PIP_SHA256=c518250e91a70d7b20cceb15272209a4ded2a0c263ae5776f129e0
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	; 	rm -f get-pip.py
 # Sat, 29 Jan 2022 05:35:37 GMT
 CMD ["python3"]
-# Sat, 29 Jan 2022 07:26:44 GMT
-ENV PIP=21.0.1 ZC_BUILDOUT=2.13.5 SETUPTOOLS=51.3.3 WHEEL=0.36.2 PLONE_MAJOR=5.2 PLONE_VERSION=5.2.5 PLONE_VERSION_RELEASE=Plone-5.2.5-UnifiedInstaller-1.0 PLONE_MD5=62d96ddc612cf35d18890c752a59edc4
-# Sat, 29 Jan 2022 07:26:45 GMT
+# Fri, 04 Feb 2022 05:50:11 GMT
+ENV PIP=21.0.1 ZC_BUILDOUT=2.13.5 SETUPTOOLS=51.3.3 WHEEL=0.36.2 PLONE_MAJOR=5.2 PLONE_VERSION=5.2.7 PLONE_VERSION_RELEASE=Plone-5.2.7-UnifiedInstaller-1.0 PLONE_MD5=c180d7ce3170b1871a7e8d53938096b1
+# Fri, 04 Feb 2022 05:50:12 GMT
 RUN useradd --system -m -d /plone -U -u 500 plone  && mkdir -p /plone/instance/ /data/filestorage /data/blobstorage
-# Sat, 29 Jan 2022 07:26:46 GMT
-COPY file:c72591a4a81e946d3e2e785b23d6a368007666aaf3e458c6fd32b86e1e5b5025 in /plone/instance/ 
-# Sat, 29 Jan 2022 07:32:08 GMT
+# Fri, 04 Feb 2022 05:50:12 GMT
+COPY file:7b22c8ff5914ecee959543c0622bbb71de3b59961836e6f0bad3c41c35197e25 in /plone/instance/ 
+# Fri, 04 Feb 2022 05:54:16 GMT
 RUN buildDeps="default-libmysqlclient-dev dpkg-dev gcc libbz2-dev libc6-dev libffi-dev libjpeg62-turbo-dev libldap2-dev libopenjp2-7-dev libpcre3-dev libpq-dev libsasl2-dev libssl-dev libtiff5-dev libxml2-dev libxslt1-dev wget zlib1g-dev"  && runDeps="default-libmysqlclient-dev git gosu libjpeg62 libopenjp2-7 libpq5 libtiff5 libxml2 libxslt1.1 lynx netcat poppler-utils rsync wv"  && apt-get update  && apt-get install -y --no-install-recommends $buildDeps  && wget -O Plone.tgz https://launchpad.net/plone/$PLONE_MAJOR/$PLONE_VERSION/+download/$PLONE_VERSION_RELEASE.tgz  && echo "$PLONE_MD5 Plone.tgz" | md5sum -c -  && tar -xzf Plone.tgz  && cp -rv ./$PLONE_VERSION_RELEASE/base_skeleton/* /plone/instance/  && cp -v ./$PLONE_VERSION_RELEASE/buildout_templates/buildout.cfg /plone/instance/buildout-base.cfg  && pip install pip==$PIP setuptools==$SETUPTOOLS zc.buildout==$ZC_BUILDOUT wheel==$WHEEL  && cd /plone/instance  && buildout  && ln -s /data/filestorage/ /plone/instance/var/filestorage  && ln -s /data/blobstorage /plone/instance/var/blobstorage  && find /data  -not -user plone -exec chown plone:plone {} \+  && find /plone -not -user plone -exec chown plone:plone {} \+  && rm -rf /Plone*  && apt-get purge -y --auto-remove $buildDeps  && apt-get install -y --no-install-recommends $runDeps  && rm -rf /var/lib/apt/lists/*  && rm -rf /plone/buildout-cache/downloads/*
-# Sat, 29 Jan 2022 07:32:12 GMT
+# Fri, 04 Feb 2022 05:54:17 GMT
 VOLUME [/data]
-# Sat, 29 Jan 2022 07:32:12 GMT
-COPY multi:0d8a1d0f8ea3598efc970a9d1a7a50b969ffaa0704d732da1b62240ced2f6442 in / 
-# Sat, 29 Jan 2022 07:32:13 GMT
+# Fri, 04 Feb 2022 05:54:18 GMT
+COPY multi:cb7e252b86bd636999944f95a07a275ae82b4f8eefb11a49319425c7445203ac in / 
+# Fri, 04 Feb 2022 05:54:18 GMT
 EXPOSE 8080
-# Sat, 29 Jan 2022 07:32:13 GMT
+# Fri, 04 Feb 2022 05:54:18 GMT
 WORKDIR /plone/instance
-# Sat, 29 Jan 2022 07:32:14 GMT
+# Fri, 04 Feb 2022 05:54:18 GMT
 HEALTHCHECK &{["CMD-SHELL" "nc -z -w5 127.0.0.1 8080 || exit 1"] "1m0s" "5s" "1m0s" '\x00'}
-# Sat, 29 Jan 2022 07:32:14 GMT
+# Fri, 04 Feb 2022 05:54:19 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 29 Jan 2022 07:32:14 GMT
+# Fri, 04 Feb 2022 05:54:19 GMT
 CMD ["start"]
 ```
 
@@ -1757,44 +1285,44 @@ CMD ["start"]
 		Last Modified: Sat, 29 Jan 2022 06:54:10 GMT  
 		Size: 2.6 MB (2637476 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa10d873eb21e57495c735fd28bc0d1884b7a4e0d857c8dd9e4577c2304eaac6`  
-		Last Modified: Sat, 29 Jan 2022 07:39:07 GMT  
-		Size: 4.0 KB (3951 bytes)  
+	-	`sha256:8cc4f4f69b12d6551860ba2b0bb18ed8183af3120f48dc8227a51ab110fb6f07`  
+		Last Modified: Fri, 04 Feb 2022 06:03:05 GMT  
+		Size: 3.9 KB (3948 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e57f530b70d522abb25927e9ca93c958d8ee7228e2100652e5f61d28faacb10c`  
-		Last Modified: Sat, 29 Jan 2022 07:39:07 GMT  
-		Size: 1.2 KB (1206 bytes)  
+	-	`sha256:f53347a81f98913107c3e151ff11be2d43499ecb9bd4091dd005021bd7aeb883`  
+		Last Modified: Fri, 04 Feb 2022 06:03:05 GMT  
+		Size: 1.3 KB (1260 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45b36b047ac2edd3a3ce839ad1a3d1fc2404b136418bc77f08bf1aae8326fc8a`  
-		Last Modified: Sat, 29 Jan 2022 07:39:51 GMT  
-		Size: 199.1 MB (199125786 bytes)  
+	-	`sha256:dac2105bad12200c47a690ea91a66408b1cef2000e16eed301411a6f6e6e6b85`  
+		Last Modified: Fri, 04 Feb 2022 06:03:35 GMT  
+		Size: 200.0 MB (199982623 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d1300236fbc9b7b58c406ddb666669c079ee2a2679b160f24db4738084f49df8`  
-		Last Modified: Sat, 29 Jan 2022 07:39:07 GMT  
-		Size: 3.9 KB (3895 bytes)  
+	-	`sha256:42328bccfed5a8d465cfac70624f0e4ea542210473d130539221080866b8df11`  
+		Last Modified: Fri, 04 Feb 2022 06:03:05 GMT  
+		Size: 4.0 KB (4008 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `plone:python39`
+## `plone:python38`
 
 ```console
-$ docker pull plone@sha256:09f236180ebc584426af0f18574f86cc7b96fb1264124bde9c3f81ec4e072369
+$ docker pull plone@sha256:f506dc5764250904747588629459ef6cecc35c4ea57c1348506249f825361d2c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
 	-	linux; amd64
 
-### `plone:python39` - linux; amd64
+### `plone:python38` - linux; amd64
 
 ```console
-$ docker pull plone@sha256:e07369f5eac473cfa7ea2c1da4729a9f4be623688d0bb212b9890b44cba2f663
+$ docker pull plone@sha256:c49a626dd5557b6fa6923860ea5fbe5050e3683ac146bbdcbe7eebb2322e0072
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **241.7 MB (241671240 bytes)**  
+-	Total Size: **243.3 MB (243282311 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:812101146c3e48465c88352c619afcc3829f2bd65ea61185902cb03b1de3b6e3`
+-	Image ID: `sha256:355d09a034c8116b9065e2440b336994564d037cf2b844481aaff09c33d03f84`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["start"]`
 
@@ -1811,45 +1339,45 @@ ENV LANG=C.UTF-8
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		netbase 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
 # Wed, 26 Jan 2022 21:15:16 GMT
 ENV GPG_KEY=E3FF2839C048B25C084DEBE9B26995E310250568
-# Wed, 26 Jan 2022 21:15:16 GMT
-ENV PYTHON_VERSION=3.9.10
-# Sat, 29 Jan 2022 04:39:51 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		gnupg dirmngr 		libbluetooth-dev 		libbz2-dev 		libc6-dev 		libexpat1-dev 		libffi-dev 		libgdbm-dev 		liblzma-dev 		libncursesw5-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tk-dev 		uuid-dev 		wget 		xz-utils 		zlib1g-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPG_KEY"; 	gpg --batch --verify python.tar.xz.asc python.tar.xz; 	command -v gpgconf > /dev/null && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" python.tar.xz.asc; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-optimizations 		--enable-option-checking=fatal 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	; 	nproc="$(nproc)"; 	make -j "$nproc" 		LDFLAGS="-Wl,--strip-all" 	; 	make install; 	cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name '*.a' \) \) 		\) -exec rm -rf '{}' + 	; 		ldconfig; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python3 --version
-# Sat, 29 Jan 2022 04:39:52 GMT
+# Sat, 29 Jan 2022 05:26:04 GMT
+ENV PYTHON_VERSION=3.8.12
+# Sat, 29 Jan 2022 05:35:23 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		gnupg dirmngr 		libbluetooth-dev 		libbz2-dev 		libc6-dev 		libexpat1-dev 		libffi-dev 		libgdbm-dev 		liblzma-dev 		libncursesw5-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tk-dev 		uuid-dev 		wget 		xz-utils 		zlib1g-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPG_KEY"; 	gpg --batch --verify python.tar.xz.asc python.tar.xz; 	command -v gpgconf > /dev/null && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" python.tar.xz.asc; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-optimizations 		--enable-option-checking=fatal 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	; 	nproc="$(nproc)"; 	make -j "$nproc" 		LDFLAGS="-Wl,--strip-all" 	; 	make install; 	cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name '*.a' \) \) 			-o \( -type f -a -name 'wininst-*.exe' \) 		\) -exec rm -rf '{}' + 	; 		ldconfig; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python3 --version
+# Sat, 29 Jan 2022 05:35:24 GMT
 RUN set -eux; 	for src in idle3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "/usr/local/bin/$src" "/usr/local/bin/$dst"; 	done
-# Sat, 29 Jan 2022 04:39:52 GMT
+# Sat, 29 Jan 2022 05:35:24 GMT
 ENV PYTHON_PIP_VERSION=21.2.4
-# Sat, 29 Jan 2022 04:39:53 GMT
-ENV PYTHON_SETUPTOOLS_VERSION=58.1.0
-# Sat, 29 Jan 2022 04:39:53 GMT
+# Sat, 29 Jan 2022 05:35:25 GMT
+ENV PYTHON_SETUPTOOLS_VERSION=57.5.0
+# Sat, 29 Jan 2022 05:35:25 GMT
 ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/3cb8888cc2869620f57d5d2da64da38f516078c7/public/get-pip.py
-# Sat, 29 Jan 2022 04:39:53 GMT
+# Sat, 29 Jan 2022 05:35:25 GMT
 ENV PYTHON_GET_PIP_SHA256=c518250e91a70d7b20cceb15272209a4ded2a0c263ae5776f129e0d9b5674309
-# Sat, 29 Jan 2022 04:40:05 GMT
+# Sat, 29 Jan 2022 05:35:37 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	; 	rm -f get-pip.py
-# Sat, 29 Jan 2022 04:40:06 GMT
+# Sat, 29 Jan 2022 05:35:37 GMT
 CMD ["python3"]
-# Sat, 29 Jan 2022 07:20:22 GMT
-ENV PIP=21.0.1 ZC_BUILDOUT=2.13.5 SETUPTOOLS=51.3.3 WHEEL=0.36.2 PLONE_MAJOR=5.2 PLONE_VERSION=5.2.5 PLONE_VERSION_RELEASE=Plone-5.2.5-UnifiedInstaller-1.0 PLONE_MD5=62d96ddc612cf35d18890c752a59edc4
-# Sat, 29 Jan 2022 07:20:24 GMT
+# Fri, 04 Feb 2022 05:50:11 GMT
+ENV PIP=21.0.1 ZC_BUILDOUT=2.13.5 SETUPTOOLS=51.3.3 WHEEL=0.36.2 PLONE_MAJOR=5.2 PLONE_VERSION=5.2.7 PLONE_VERSION_RELEASE=Plone-5.2.7-UnifiedInstaller-1.0 PLONE_MD5=c180d7ce3170b1871a7e8d53938096b1
+# Fri, 04 Feb 2022 05:50:12 GMT
 RUN useradd --system -m -d /plone -U -u 500 plone  && mkdir -p /plone/instance/ /data/filestorage /data/blobstorage
-# Sat, 29 Jan 2022 07:20:24 GMT
-COPY file:c72591a4a81e946d3e2e785b23d6a368007666aaf3e458c6fd32b86e1e5b5025 in /plone/instance/ 
-# Sat, 29 Jan 2022 07:26:24 GMT
+# Fri, 04 Feb 2022 05:50:12 GMT
+COPY file:7b22c8ff5914ecee959543c0622bbb71de3b59961836e6f0bad3c41c35197e25 in /plone/instance/ 
+# Fri, 04 Feb 2022 05:54:16 GMT
 RUN buildDeps="default-libmysqlclient-dev dpkg-dev gcc libbz2-dev libc6-dev libffi-dev libjpeg62-turbo-dev libldap2-dev libopenjp2-7-dev libpcre3-dev libpq-dev libsasl2-dev libssl-dev libtiff5-dev libxml2-dev libxslt1-dev wget zlib1g-dev"  && runDeps="default-libmysqlclient-dev git gosu libjpeg62 libopenjp2-7 libpq5 libtiff5 libxml2 libxslt1.1 lynx netcat poppler-utils rsync wv"  && apt-get update  && apt-get install -y --no-install-recommends $buildDeps  && wget -O Plone.tgz https://launchpad.net/plone/$PLONE_MAJOR/$PLONE_VERSION/+download/$PLONE_VERSION_RELEASE.tgz  && echo "$PLONE_MD5 Plone.tgz" | md5sum -c -  && tar -xzf Plone.tgz  && cp -rv ./$PLONE_VERSION_RELEASE/base_skeleton/* /plone/instance/  && cp -v ./$PLONE_VERSION_RELEASE/buildout_templates/buildout.cfg /plone/instance/buildout-base.cfg  && pip install pip==$PIP setuptools==$SETUPTOOLS zc.buildout==$ZC_BUILDOUT wheel==$WHEEL  && cd /plone/instance  && buildout  && ln -s /data/filestorage/ /plone/instance/var/filestorage  && ln -s /data/blobstorage /plone/instance/var/blobstorage  && find /data  -not -user plone -exec chown plone:plone {} \+  && find /plone -not -user plone -exec chown plone:plone {} \+  && rm -rf /Plone*  && apt-get purge -y --auto-remove $buildDeps  && apt-get install -y --no-install-recommends $runDeps  && rm -rf /var/lib/apt/lists/*  && rm -rf /plone/buildout-cache/downloads/*
-# Sat, 29 Jan 2022 07:26:28 GMT
+# Fri, 04 Feb 2022 05:54:17 GMT
 VOLUME [/data]
-# Sat, 29 Jan 2022 07:26:28 GMT
-COPY multi:0d8a1d0f8ea3598efc970a9d1a7a50b969ffaa0704d732da1b62240ced2f6442 in / 
-# Sat, 29 Jan 2022 07:26:28 GMT
+# Fri, 04 Feb 2022 05:54:18 GMT
+COPY multi:cb7e252b86bd636999944f95a07a275ae82b4f8eefb11a49319425c7445203ac in / 
+# Fri, 04 Feb 2022 05:54:18 GMT
 EXPOSE 8080
-# Sat, 29 Jan 2022 07:26:28 GMT
+# Fri, 04 Feb 2022 05:54:18 GMT
 WORKDIR /plone/instance
-# Sat, 29 Jan 2022 07:26:29 GMT
+# Fri, 04 Feb 2022 05:54:18 GMT
 HEALTHCHECK &{["CMD-SHELL" "nc -z -w5 127.0.0.1 8080 || exit 1"] "1m0s" "5s" "1m0s" '\x00'}
-# Sat, 29 Jan 2022 07:26:29 GMT
+# Fri, 04 Feb 2022 05:54:19 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 29 Jan 2022 07:26:29 GMT
+# Fri, 04 Feb 2022 05:54:19 GMT
 CMD ["start"]
 ```
 
@@ -1862,31 +1390,31 @@ CMD ["start"]
 		Last Modified: Wed, 26 Jan 2022 22:34:52 GMT  
 		Size: 2.8 MB (2770186 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c2b309db2de8e8d501d5cb8e42b8576c2c24ee71b1f7488cbda69be445a5c02`  
-		Last Modified: Sat, 29 Jan 2022 06:52:49 GMT  
-		Size: 11.0 MB (11018413 bytes)  
+	-	`sha256:cfcccbd80a1adc59bf0d5a7ff05c5806afa8417c9ca3b87914b9e2ac755b0812`  
+		Last Modified: Sat, 29 Jan 2022 06:54:11 GMT  
+		Size: 10.7 MB (10728843 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b84635b4bc7acf9cbbc814f32196c28d63e7f3d5a1bcfd96af8516e99839590`  
-		Last Modified: Sat, 29 Jan 2022 06:52:46 GMT  
+	-	`sha256:0995a517cdf86ed3b8c1183c9f52caadc88aaa532bc15953e1c8f25df2e0d478`  
+		Last Modified: Sat, 29 Jan 2022 06:54:09 GMT  
 		Size: 236.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1a4f31df0540ae609df8ac43f468900b1cb5e18fccc1f4b06bfc8a3f20a0ebfb`  
-		Last Modified: Sat, 29 Jan 2022 06:52:47 GMT  
-		Size: 2.6 MB (2635235 bytes)  
+	-	`sha256:8c798f76106bb9af30691b3bcaa3aca47c1b36faf3bd572ce796c6d901ccb1ac`  
+		Last Modified: Sat, 29 Jan 2022 06:54:10 GMT  
+		Size: 2.6 MB (2637476 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ffae253ae02aad1b1f59583f75f3e74e64799cd13df9bd0243de4d07da35c6d`  
-		Last Modified: Sat, 29 Jan 2022 07:38:05 GMT  
-		Size: 3.9 KB (3944 bytes)  
+	-	`sha256:8cc4f4f69b12d6551860ba2b0bb18ed8183af3120f48dc8227a51ab110fb6f07`  
+		Last Modified: Fri, 04 Feb 2022 06:03:05 GMT  
+		Size: 3.9 KB (3948 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0791475393b8bbdb127d1e0dedee117a6099c60d3617812183738318b20dbef1`  
-		Last Modified: Sat, 29 Jan 2022 07:38:05 GMT  
-		Size: 1.2 KB (1210 bytes)  
+	-	`sha256:f53347a81f98913107c3e151ff11be2d43499ecb9bd4091dd005021bd7aeb883`  
+		Last Modified: Fri, 04 Feb 2022 06:03:05 GMT  
+		Size: 1.3 KB (1260 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71d4477eee422e33e90390208a7786acff0f48bd04854cfd8ac2d38a354d29c3`  
-		Last Modified: Sat, 29 Jan 2022 07:38:37 GMT  
-		Size: 198.1 MB (198084389 bytes)  
+	-	`sha256:dac2105bad12200c47a690ea91a66408b1cef2000e16eed301411a6f6e6e6b85`  
+		Last Modified: Fri, 04 Feb 2022 06:03:35 GMT  
+		Size: 200.0 MB (199982623 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3180d862405d60693de2dd9b1efe421ddd1738797e0b22c4228ffecd66d033da`  
-		Last Modified: Sat, 29 Jan 2022 07:38:05 GMT  
-		Size: 3.9 KB (3896 bytes)  
+	-	`sha256:42328bccfed5a8d465cfac70624f0e4ea542210473d130539221080866b8df11`  
+		Last Modified: Fri, 04 Feb 2022 06:03:05 GMT  
+		Size: 4.0 KB (4008 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
