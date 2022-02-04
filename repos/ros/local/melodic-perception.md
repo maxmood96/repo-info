@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0b49ae8b9b35c6c2430e8c0b4b0919f03038767d8117d919e894874056b34a1d`
-- Created: `2022-01-07T04:08:47.568851638Z`
+- Image ID: `sha256:132c60a4450e10c9abc4a54423bc82d97ad35c262c1ca8efb750a7e052cde053`
+- Created: `2022-02-02T04:37:38.986544508Z`
 - Virtual Size: ~ 2.32 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -5210,11 +5210,11 @@ $ apt-get source -qq --print-uris libzstd=1.3.3+dfsg-2ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.3.3+dfsg-2ubuntu1.2.debian.tar.xz' libzstd_1.3.3+dfsg-2ubuntu1.2.debian.tar.xz 13764 SHA512:f14aa9e453c7041a79dd90a52b5955b86fa86886b89ef26d4d257aa017a50d97410e8b875593992ad7d4b7e8e8d55743b8c66706be62cd4234f81e49c8bfc05d
 ```
 
-### `dpkg` source package: `linux=4.15.0-166.174`
+### `dpkg` source package: `linux=4.15.0-167.175`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.15.0-166.174`
+- `linux-libc-dev:amd64=4.15.0-167.175`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -5223,10 +5223,10 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=4.15.0-166.174
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-166.174.dsc' linux_4.15.0-166.174.dsc 7028 SHA512:696e8b4134e6ed9b35b5247152fd0899e7722add41a0e2bf0293a287ef41ecf774ce115e862e87503b67a8517aa456e5f3fd1aff6d123e6227a205ecdc15ead7
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0.orig.tar.gz' linux_4.15.0.orig.tar.gz 157656459 SHA512:0fab606a295e0857f774f8adaa9d56bf2cb227fbab2daed374415da216391b156f49e606ba37ac402987c5796d408807da5d1a42c0d85a8552f109a3e279443d
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-166.174.diff.gz' linux_4.15.0-166.174.diff.gz 12765670 SHA512:86d9c1326fbb8983d5e247391193a5914ad987aba0ba67e002ad64b496a44889721988db7fc513e8d3dbe633a6b15ee23ba95b4b27a87d2b71e5ce88fb1c7cb2
+$ apt-get source -qq --print-uris linux=4.15.0-167.175
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-167.175.dsc' linux_4.15.0-167.175.dsc 7373 SHA512:85ee1b1500778ba9961e6f7aa9d29ede8d48aaa9dad089be408e00baf1bf5423742f3259fd3524a1ad64e13225ae5f53a597ced5f1cc6643ad0ecdff83e29586
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0.orig.tar.gz' linux_4.15.0.orig.tar.gz 157656459 SHA512:0fab606a295e0857f774f8adaa9d56bf2cb227fbab2daed374415da216391b156f49e606ba37ac402987c5796d408807da5d1a42c0d85a8552f109a3e279443d
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-167.175.diff.gz' linux_4.15.0-167.175.diff.gz 12840229 SHA512:a15161234ce36766b6e8ea2ab2d14fed71d281765191c475f1edefa6acded48375f1f77198e18eedd5a246dee88d64b17eb843ca884cbb90cb1c9faf16313ada
 ```
 
 ### `dpkg` source package: `lksctp-tools=1.0.17+dfsg-2`
@@ -5677,14 +5677,9 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mysql-5.7=5.7.36-0ubuntu0.18.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.36-0ubuntu0.18.04.1.dsc' mysql-5.7_5.7.36-0ubuntu0.18.04.1.dsc 3446 SHA512:e72985958afa7333dda2963a40d3e31a2a30266539ec545f2dab0511bed4ab588af54b43abb4545f232545035fd0819a710bb685ab24abafc63d22dc2192df53
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.36.orig.tar.gz' mysql-5.7_5.7.36.orig.tar.gz 52968383 SHA512:a95580efd5b87776ee7f1aae9b50d50d88c70a48c16e7a2d8c6ada0b1cadc5ec6074a859291a65caa1b50a00e08a9e350df342bb0c6ef74edaf21055331c081b
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.36-0ubuntu0.18.04.1.debian.tar.xz' mysql-5.7_5.7.36-0ubuntu0.18.04.1.debian.tar.xz 156780 SHA512:a3dc8be7a27e2a4bb33298d55242014448d595e1701a48cb667fa3220aefd9741ec02643e491e122b73e8e4b04fbdd23c18e2d6e91182aa49d5fa47b293e4778
-```
 
 ### `dpkg` source package: `mysql-defaults=1.0.4`
 
@@ -6498,19 +6493,24 @@ $ apt-get source -qq --print-uris perl=5.26.1-6ubuntu0.5
 'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.26.1-6ubuntu0.5.debian.tar.xz' perl_5.26.1-6ubuntu0.5.debian.tar.xz 179176 SHA512:0d8612be05063b50a59cad031ef6c3572f1a747295df186a24ad646b897f0e0df7ff00bd914480c094d3702f1b249d822d8262202e8d25c5ed96b9403d5e86ed
 ```
 
-### `dpkg` source package: `pillow=5.1.0-1ubuntu0.6`
+### `dpkg` source package: `pillow=5.1.0-1ubuntu0.7`
 
 Binary Packages:
 
-- `python-pil:amd64=5.1.0-1ubuntu0.6`
+- `python-pil:amd64=5.1.0-1ubuntu0.7`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris pillow=5.1.0-1ubuntu0.7
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pillow/pillow_5.1.0-1ubuntu0.7.dsc' pillow_5.1.0-1ubuntu0.7.dsc 2883 SHA512:58f0fec9986431b7fb703fea26dbdc5e86b4c8d0d9439a558f1d0be50cbd5109052a8eb5d944fcf52c55b18570e80b0e67b01f40d7c4519c22023e183d9cb2ae
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pillow/pillow_5.1.0.orig.tar.xz' pillow_5.1.0.orig.tar.xz 10771012 SHA512:40262690ef24ae1b4a5e8f7da5070d9e7a9d85a2ae990ef859f0af9270bb447dff249501abbd76352248ca9ec26c6f49862240270f1cb0b8dc3ab5b449e3801e
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pillow/pillow_5.1.0-1ubuntu0.7.debian.tar.xz' pillow_5.1.0-1ubuntu0.7.debian.tar.xz 48444 SHA512:64760b0abaed3d4ae3361ff3bd340b7a7790a3ceee52b7272b68a35c127e0cf77e1742843e8d1736f2d3142af821d486a9b94e920c28757613e596ac3fa78263
+```
 
 ### `dpkg` source package: `pinentry=1.1.0-1`
 
@@ -9845,20 +9845,25 @@ $ apt-get source -qq --print-uris sgml-base=1.29
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sgml-base/sgml-base_1.29.tar.xz' sgml-base_1.29.tar.xz 12224 SHA256:33808f1d51407ae105d471bf53cab526fe8903b003b78bc7ac4fd1429b7986b4
 ```
 
-### `dpkg` source package: `shadow=1:4.5-1ubuntu2`
+### `dpkg` source package: `shadow=1:4.5-1ubuntu2.2`
 
 Binary Packages:
 
-- `login=1:4.5-1ubuntu2`
-- `passwd=1:4.5-1ubuntu2`
+- `login=1:4.5-1ubuntu2.2`
+- `passwd=1:4.5-1ubuntu2.2`
 
 Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris shadow=1:4.5-1ubuntu2.2
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.5-1ubuntu2.2.dsc' shadow_4.5-1ubuntu2.2.dsc 2401 SHA512:edc71f8392ffedba675d403d2c54084bbbc4b05be63ec6b77055a7fa82647779f26a427d3c12392567e27da3b831b506b5b34ffa75c92b64162133098dd666f0
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.5.orig.tar.xz' shadow_4.5.orig.tar.xz 1344524 SHA512:4278544efdd6d800a3c46cfcb144f209ace14ebe017ba1c0d05425fac7868062a73afa8522036a2bc0a16f6f1e7c16373a204463221012367ce0e8e9ef4c4a4d
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.5-1ubuntu2.2.debian.tar.xz' shadow_4.5-1ubuntu2.2.debian.tar.xz 473640 SHA512:2f1b28b796e1157164859d63e129b8e08dc297610580396993e4fae6f491ed5d56581461540e3a020ea44838431e36e828ac15d575f3b1849789415493095d6e
+```
 
 ### `dpkg` source package: `shared-mime-info=1.9-2`
 
