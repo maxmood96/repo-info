@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:76d6dbd57c5ab22a5e112eb3874fed2c22daf6923f84f306529aa71922121b6b`
-- Created: `2022-01-21T01:54:41.832589305Z`
-- Virtual Size: ~ 402.57 Mb  
+- Image ID: `sha256:cecc9b363a07af2da48165940146c9bdae3cb28c3933dde11d5e9177e6d3d24b`
+- Created: `2022-02-05T07:51:07.553965355Z`
+- Virtual Size: ~ 378.57 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -82,16 +82,16 @@ Enabling amzn2-core-source repository
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/8b618629d7dc5df1d8d584701a7c14d0ab8ddbf11e2c586a9860a7a92072a33f//../../../../../blobstore/5eb7c8b4ed1b326f5e640d655f92f498451c8013b223ad5702abb108358ef0dc/bzip2-1.0.6-13.amzn2.0.3.src.rpm
 ```
 
-### `rpm` package: `ca-certificates-2021.2.50-72.amzn2.0.1.noarch`
+### `rpm` package: `ca-certificates-2021.2.50-72.amzn2.0.2.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls ca-certificates-2021.2.50-72.amzn2.0.1.noarch
+$ yumdownloader --quiet --source --urls ca-certificates-2021.2.50-72.amzn2.0.2.noarch
 Enabling amzn2-core-source repository
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/8b618629d7dc5df1d8d584701a7c14d0ab8ddbf11e2c586a9860a7a92072a33f//../../../../../blobstore/c71b7714ec23d96f5e8b5a805ffbd9310ba575e922a294f2cd23541ee8b72492/ca-certificates-2021.2.50-72.amzn2.0.1.src.rpm
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/8b618629d7dc5df1d8d584701a7c14d0ab8ddbf11e2c586a9860a7a92072a33f//../../../../../blobstore/5c404184ea8d4d3c60fe47b7ba4dbfef334d70c1bb3d82391680c377d5ec2d07/ca-certificates-2021.2.50-72.amzn2.0.2.src.rpm
 ```
 
 ### `rpm` package: `chkconfig-1.7.4-1.amzn2.0.2.x86_64`
@@ -1300,16 +1300,28 @@ Enabling amzn2-core-source repository
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/8b618629d7dc5df1d8d584701a7c14d0ab8ddbf11e2c586a9860a7a92072a33f//../../../../../blobstore/d47583ea05cc858359697e71bf46e46966d5d029507abce69b7bec8a9da265fa/tzdata-2021a-1.amzn2.src.rpm
 ```
 
-### `rpm` package: `vim-minimal-8.2.3642-1.amzn2.0.1.x86_64`
+### `rpm` package: `vim-data-8.2.4006-1.amzn2.0.1.noarch`
 
 Licenses (from `rpm --query`): Vim and MIT
 
 Source:
 
 ```console
-$ yumdownloader --quiet --source --urls vim-minimal-8.2.3642-1.amzn2.0.1
+$ yumdownloader --quiet --source --urls vim-data-8.2.4006-1.amzn2.0.1.noarch
 Enabling amzn2-core-source repository
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/8b618629d7dc5df1d8d584701a7c14d0ab8ddbf11e2c586a9860a7a92072a33f//../../../../../blobstore/3c33f7b07bbfa25fffe4588747a32f8a56511180a41ff12cb19644f66b762324/vim-8.2.3642-1.amzn2.0.1.src.rpm
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/8b618629d7dc5df1d8d584701a7c14d0ab8ddbf11e2c586a9860a7a92072a33f//../../../../../blobstore/16de1b9adc79a2b493bd2d622c7c36a460bf9677b14b9ae45a492cf47f3a9533/vim-8.2.4006-1.amzn2.0.1.src.rpm
+```
+
+### `rpm` package: `vim-minimal-8.2.4006-1.amzn2.0.1.x86_64`
+
+Licenses (from `rpm --query`): Vim and MIT
+
+Source:
+
+```console
+$ yumdownloader --quiet --source --urls vim-minimal-8.2.4006-1.amzn2.0.1
+Enabling amzn2-core-source repository
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/8b618629d7dc5df1d8d584701a7c14d0ab8ddbf11e2c586a9860a7a92072a33f//../../../../../blobstore/16de1b9adc79a2b493bd2d622c7c36a460bf9677b14b9ae45a492cf47f3a9533/vim-8.2.4006-1.amzn2.0.1.src.rpm
 ```
 
 ### `rpm` package: `xz-libs-5.2.2-1.amzn2.0.2.x86_64`
