@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0ba18814d8e2638f768a0fe6ff08420529ff60aecf935318620567cf6d289d3a`
-- Created: `2022-01-27T17:09:50.561870756Z`
-- Virtual Size: ~ 592.16 Mb  
+- Image ID: `sha256:93262a36ca7e6567d6461069e1630580a7b015282971c647f3dcf16f8d60deea`
+- Created: `2022-02-03T22:09:54.720579275Z`
+- Virtual Size: ~ 592.21 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["boot","repl"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/`
   - `JAVA_HOME=/usr/local/openjdk-8`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=8u312`
+  - `JAVA_VERSION=8u322`
   - `BOOT_VERSION=2.8.3`
   - `BOOT_INSTALL=/usr/local/bin/`
   - `BOOT_AS_ROOT=yes`
