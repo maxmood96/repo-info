@@ -1,7 +1,7 @@
 ## `jetty:10-jdk11-slim`
 
 ```console
-$ docker pull jetty@sha256:a4165555ca854f15ad3e358d37a292c468f2d9f1224d21a5854d6124d46a9cad
+$ docker pull jetty@sha256:28d91ec8d3545178c2e1f9615c0dd6be1df306b8638bdaea69ac82f386e898d2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,14 +12,14 @@ $ docker pull jetty@sha256:a4165555ca854f15ad3e358d37a292c468f2d9f1224d21a5854d6
 ### `jetty:10-jdk11-slim` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:7315f076d9b4b8926c8c14c3a31a5979424147126b3137be73c82313079d1e3c
+$ docker pull jetty@sha256:553673f1a28a2ca44b8f710e0d0f98c178711471593898f3371b820739144abd
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **246.9 MB (246860910 bytes)**  
+-	Total Size: **247.6 MB (247557060 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d392922ab7d97befd9c963191230c18f3d1c6449b4e380fe95c73de31deb440a`
+-	Image ID: `sha256:f147ad6ce7afb2343983a915c9a8c06a0a627141c8b948e63fc974dee03daf65`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -44,33 +44,33 @@ ENV JAVA_VERSION=11.0.14
 RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_x64_linux_11.0.14_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_aarch64_linux_11.0.14_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
 # Thu, 03 Feb 2022 20:37:33 GMT
 CMD ["jshell"]
-# Fri, 04 Feb 2022 00:30:05 GMT
-ENV JETTY_VERSION=10.0.7
-# Fri, 04 Feb 2022 00:30:05 GMT
+# Tue, 08 Feb 2022 03:27:38 GMT
+ENV JETTY_VERSION=10.0.8
+# Tue, 08 Feb 2022 03:27:38 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Fri, 04 Feb 2022 00:30:05 GMT
+# Tue, 08 Feb 2022 03:27:38 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Fri, 04 Feb 2022 00:30:05 GMT
+# Tue, 08 Feb 2022 03:27:39 GMT
 ENV TMPDIR=/tmp/jetty
-# Fri, 04 Feb 2022 00:30:05 GMT
+# Tue, 08 Feb 2022 03:27:39 GMT
 ENV PATH=/usr/local/jetty/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 04 Feb 2022 00:30:06 GMT
-ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/10.0.7/jetty-home-10.0.7.tar.gz
-# Fri, 04 Feb 2022 00:30:06 GMT
+# Tue, 08 Feb 2022 03:27:39 GMT
+ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/10.0.8/jetty-home-10.0.8.tar.gz
+# Tue, 08 Feb 2022 03:27:39 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	FBA2B18D238AB852DF95745C76157BDF03D0DCD6 	5C9579B3DB2E506429319AAEF33B071B29559E1E 	F254B35617DC255D9344BCFA873A8E86B4372146
-# Fri, 04 Feb 2022 00:31:12 GMT
+# Tue, 08 Feb 2022 03:28:04 GMT
 RUN set -xe ; 	export savedAptMark="$(apt-mark showmanual)" ; 	mkdir -p $TMPDIR ; 	apt-get update ; 	apt-get install -y --no-install-recommends 		ca-certificates 		p11-kit 		gnupg 		curl 		; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		for server in 			ha.pool.sks-keyservers.net 			pgp.mit.edu 			hkp://p80.pool.sks-keyservers.net:80 			hkp://keyserver.ubuntu.com:80 			keyserver.pgp.com 			ipv4.pool.sks-keyservers.net ; 		do 			if gpg --batch --keyserver "$server" --recv-keys "$key"; then 				break; 			fi; 		done; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="server,http,deploy,jsp,jstl,ext,resources,websocket" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	apt-mark auto '.*' > /dev/null ; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null ; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false ; 	rm -rf /var/lib/apt/lists/* ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ;
-# Fri, 04 Feb 2022 00:31:12 GMT
+# Tue, 08 Feb 2022 03:28:04 GMT
 WORKDIR /var/lib/jetty
-# Fri, 04 Feb 2022 00:31:12 GMT
+# Tue, 08 Feb 2022 03:28:05 GMT
 COPY multi:a6bf79f83e3ff0c7dc5946cd61ca0413cd3191ce9671725a647923d97a115fae in / 
-# Fri, 04 Feb 2022 00:31:12 GMT
+# Tue, 08 Feb 2022 03:28:05 GMT
 USER jetty
-# Fri, 04 Feb 2022 00:31:13 GMT
+# Tue, 08 Feb 2022 03:28:05 GMT
 EXPOSE 8080
-# Fri, 04 Feb 2022 00:31:13 GMT
+# Tue, 08 Feb 2022 03:28:05 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 04 Feb 2022 00:31:13 GMT
+# Tue, 08 Feb 2022 03:28:05 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -91,26 +91,26 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Thu, 03 Feb 2022 20:58:49 GMT  
 		Size: 203.5 MB (203544081 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c209ef0f9c2af4fb68371d5045659daad15c852c710c57920c277723624a14bb`  
-		Last Modified: Fri, 04 Feb 2022 00:38:36 GMT  
-		Size: 10.4 MB (10366869 bytes)  
+	-	`sha256:87a2a567bb55d84c42144216f17ff54875f66834d876d21638f488ae4725fc68`  
+		Last Modified: Tue, 08 Feb 2022 03:38:58 GMT  
+		Size: 11.1 MB (11063021 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87a589416f3369ed2601e2bc722141ae2741dc0b187ee3fc0d6d7bdc3edb8fa1`  
-		Last Modified: Fri, 04 Feb 2022 00:38:35 GMT  
-		Size: 1.4 KB (1441 bytes)  
+	-	`sha256:f691a075fc95ae119471bcbf552f927f222ef3dda6f76ef94961dd81eccd4504`  
+		Last Modified: Tue, 08 Feb 2022 03:38:57 GMT  
+		Size: 1.4 KB (1439 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `jetty:10-jdk11-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull jetty@sha256:e0cd9a40bd02babea6e457efae7741aaaaadce3a5ae7d21e0d22b5b68dd90d36
+$ docker pull jetty@sha256:2505bf6e450a109525ded6e35da3b024dd9c0d6fb911ddbb645d211ad345ec8b
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **242.7 MB (242719844 bytes)**  
+-	Total Size: **243.4 MB (243416201 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:64eaaacc5409b38b02e66fd8ff358282d13311938235bcce2e066898e45d79b9`
+-	Image ID: `sha256:74d2354fd1429875a96508ddff3f4b6027035e01ce5f09ba93951aa5f04117dd`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -135,33 +135,33 @@ ENV JAVA_VERSION=11.0.14
 RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_x64_linux_11.0.14_9.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14%2B9/OpenJDK11U-jdk_aarch64_linux_11.0.14_9.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
 # Thu, 03 Feb 2022 20:51:52 GMT
 CMD ["jshell"]
-# Thu, 03 Feb 2022 22:17:19 GMT
-ENV JETTY_VERSION=10.0.7
-# Thu, 03 Feb 2022 22:17:20 GMT
+# Tue, 08 Feb 2022 04:26:41 GMT
+ENV JETTY_VERSION=10.0.8
+# Tue, 08 Feb 2022 04:26:42 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Thu, 03 Feb 2022 22:17:21 GMT
+# Tue, 08 Feb 2022 04:26:43 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Thu, 03 Feb 2022 22:17:22 GMT
+# Tue, 08 Feb 2022 04:26:44 GMT
 ENV TMPDIR=/tmp/jetty
-# Thu, 03 Feb 2022 22:17:23 GMT
+# Tue, 08 Feb 2022 04:26:45 GMT
 ENV PATH=/usr/local/jetty/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 03 Feb 2022 22:17:24 GMT
-ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/10.0.7/jetty-home-10.0.7.tar.gz
-# Thu, 03 Feb 2022 22:17:25 GMT
+# Tue, 08 Feb 2022 04:26:46 GMT
+ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/10.0.8/jetty-home-10.0.8.tar.gz
+# Tue, 08 Feb 2022 04:26:47 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	FBA2B18D238AB852DF95745C76157BDF03D0DCD6 	5C9579B3DB2E506429319AAEF33B071B29559E1E 	F254B35617DC255D9344BCFA873A8E86B4372146
-# Thu, 03 Feb 2022 22:18:10 GMT
+# Tue, 08 Feb 2022 04:27:10 GMT
 RUN set -xe ; 	export savedAptMark="$(apt-mark showmanual)" ; 	mkdir -p $TMPDIR ; 	apt-get update ; 	apt-get install -y --no-install-recommends 		ca-certificates 		p11-kit 		gnupg 		curl 		; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		for server in 			ha.pool.sks-keyservers.net 			pgp.mit.edu 			hkp://p80.pool.sks-keyservers.net:80 			hkp://keyserver.ubuntu.com:80 			keyserver.pgp.com 			ipv4.pool.sks-keyservers.net ; 		do 			if gpg --batch --keyserver "$server" --recv-keys "$key"; then 				break; 			fi; 		done; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="server,http,deploy,jsp,jstl,ext,resources,websocket" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	apt-mark auto '.*' > /dev/null ; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null ; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false ; 	rm -rf /var/lib/apt/lists/* ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ;
-# Thu, 03 Feb 2022 22:18:10 GMT
+# Tue, 08 Feb 2022 04:27:11 GMT
 WORKDIR /var/lib/jetty
-# Thu, 03 Feb 2022 22:18:12 GMT
+# Tue, 08 Feb 2022 04:27:13 GMT
 COPY multi:a6bf79f83e3ff0c7dc5946cd61ca0413cd3191ce9671725a647923d97a115fae in / 
-# Thu, 03 Feb 2022 22:18:12 GMT
+# Tue, 08 Feb 2022 04:27:13 GMT
 USER jetty
-# Thu, 03 Feb 2022 22:18:13 GMT
+# Tue, 08 Feb 2022 04:27:14 GMT
 EXPOSE 8080
-# Thu, 03 Feb 2022 22:18:14 GMT
+# Tue, 08 Feb 2022 04:27:15 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 03 Feb 2022 22:18:15 GMT
+# Tue, 08 Feb 2022 04:27:16 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -182,11 +182,11 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Thu, 03 Feb 2022 21:13:22 GMT  
 		Size: 200.9 MB (200944741 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:36b40932a28142897ddc02cfb0c50970bf2401d4d3008954a411623690f8b2af`  
-		Last Modified: Fri, 04 Feb 2022 00:11:20 GMT  
-		Size: 10.2 MB (10150787 bytes)  
+	-	`sha256:8a72f95d42d70d4ccb3e6ede160f7251da8a55d0e8073081389bc110ed86e268`  
+		Last Modified: Tue, 08 Feb 2022 04:39:56 GMT  
+		Size: 10.8 MB (10847146 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f7e0e57fd0c286942d31b130cec3e5c369fd97c3468733a873376e8e0d9604f3`  
-		Last Modified: Fri, 04 Feb 2022 00:11:18 GMT  
-		Size: 1.4 KB (1441 bytes)  
+	-	`sha256:51685bb65c9bd58ee6cb5eba04e73600c31d23d9700e1e3ba2ed05a97755729f`  
+		Last Modified: Tue, 08 Feb 2022 04:39:55 GMT  
+		Size: 1.4 KB (1439 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
