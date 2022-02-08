@@ -1,10 +1,10 @@
-# `xwiki:14`
+# `xwiki:14-mariadb-tomcat`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f4cbb0c31076fedad49cc36e37d2a39f37bccefa26565b241e8ff4cfa27516eb`
-- Created: `2022-02-08T05:50:53.620765381Z`
-- Virtual Size: ~ 1.57 Gb  
+- Image ID: `sha256:f35d181abc537baf0c2522039cb8656198ecfe3e5814a70adb2cb24dd61292f1`
+- Created: `2022-02-08T05:51:03.655874861Z`
+- Virtual Size: ~ 1.56 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -24,11 +24,11 @@
   - `XWIKI_VERSION=14.0`
   - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/14.0`
   - `XWIKI_DOWNLOAD_SHA256=9acdc5f54267fd0270b227dcea0ed5351125757a390ca8530f71b0943f4404c5`
-  - `MYSQL_JDBC_VERSION=8.0.28`
-  - `MYSQL_JDBC_SHA256=a00ccdf537ff50e50067b989108c2235197ffb65e197149bbb669db843cd1c3e`
-  - `MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.28`
-  - `MYSQL_JDBC_ARTIFACT=mysql-connector-java-8.0.28.jar`
-  - `MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-java-8.0.28.jar`
+  - `MARIADB_JDBC_VERSION=3.0.3`
+  - `MARIADB_JDBC_SHA256=613086a0a20f177dfcf5e227f519272bc6be88bde4011de0f23c533231a7ae05`
+  - `MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.0.3`
+  - `MARIADB_JDBC_ARTIFACT=mariadb-java-client-3.0.3.jar`
+  - `MARIADB_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mariadb-java-client-3.0.3.jar`
 - Labels:
   - `org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>`
   - `org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki`
