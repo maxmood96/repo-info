@@ -1,4 +1,4 @@
-## `amazonlinux:2022-with-sources`
+## `amazonlinux:devel-with-sources`
 
 ```console
 $ docker pull amazonlinux@sha256:fadcb4baca649109a8625d85ea703ae24c8b53da551bc2124d3f5fbc06b547ca
@@ -8,7 +8,7 @@ $ docker pull amazonlinux@sha256:fadcb4baca649109a8625d85ea703ae24c8b53da551bc21
 -	Platforms: 1
 	-	linux; arm64 variant v8
 
-### `amazonlinux:2022-with-sources` - linux; arm64 variant v8
+### `amazonlinux:devel-with-sources` - linux; arm64 variant v8
 
 ```console
 $ docker pull amazonlinux@sha256:9de6068deba3e5af8e83805b27dfc79d1e4728948d781f9eda038e8e84912374

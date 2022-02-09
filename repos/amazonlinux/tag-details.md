@@ -16,6 +16,8 @@
 -	[`amazonlinux:2022-with-sources`](#amazonlinux2022-with-sources)
 -	[`amazonlinux:2022.0.20220202.0`](#amazonlinux20220202202020)
 -	[`amazonlinux:2022.0.20220202.0-with-sources`](#amazonlinux20220202202020-with-sources)
+-	[`amazonlinux:devel`](#amazonlinuxdevel)
+-	[`amazonlinux:devel-with-sources`](#amazonlinuxdevel-with-sources)
 -	[`amazonlinux:latest`](#amazonlinuxlatest)
 -	[`amazonlinux:with-sources`](#amazonlinuxwith-sources)
 
@@ -531,19 +533,318 @@ RUN mkdir /usr/src/srpm  && curl -o /usr/src/srpm/srpm-bundle.tar.gz "https://am
 
 ## `amazonlinux:2022`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazonlinux@sha256:ba535592e8fca7d12c9f6ebe81e1fc69713740287d83c42d83af581a701f6e64
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 2
+	-	linux; amd64
+	-	linux; arm64 variant v8
+
+### `amazonlinux:2022` - linux; amd64
+
+```console
+$ docker pull amazonlinux@sha256:40b0ca43bd05033674743d9107fda51f6c28f54b913b03d6969a729fd97f2c5c
+```
+
+-	Docker Version: 20.10.7
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **67.4 MB (67393012 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:f925675097171e3c481c93fc5752fa357012a23c4fc380b600b910f47bfa3e6a`
+-	Default Command: `["\/bin\/bash"]`
+
+```dockerfile
+# Tue, 08 Feb 2022 19:19:55 GMT
+ADD file:a17c7e0c1674512d1358af2a8ecd7d3ab42c3f853ca0d502a0a5ccf61e7cc1ae in / 
+# Tue, 08 Feb 2022 19:19:56 GMT
+CMD ["/bin/bash"]
+```
+
+-	Layers:
+	-	`sha256:7bc2af7bb0f9d7bc2dd4e52e139b26d5ec36138f2349163c565b89eb4c5dcc6f`  
+		Last Modified: Tue, 08 Feb 2022 19:20:49 GMT  
+		Size: 67.4 MB (67393012 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `amazonlinux:2022` - linux; arm64 variant v8
+
+```console
+$ docker pull amazonlinux@sha256:68af4691e62c48340d588b8a3fbe468d7b0c1d8463b3a60cacb6bc22876c4497
+```
+
+-	Docker Version: 20.10.7
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **66.1 MB (66145238 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:bf7cd89050ed8e72dc51c91f0ec7cb56ff8c721e291d30c9f5712450d7744024`
+-	Default Command: `["\/bin\/bash"]`
+
+```dockerfile
+# Tue, 08 Feb 2022 19:39:46 GMT
+ADD file:0dcd3603971e922307b1605e2f1d589bc5f4c8bc61afc2f0aefa817d58bd6071 in / 
+# Tue, 08 Feb 2022 19:39:47 GMT
+CMD ["/bin/bash"]
+```
+
+-	Layers:
+	-	`sha256:6cc7ee6c96e110fb553a963091caccb5d86b21e544eaa942b6c0790d4278c681`  
+		Last Modified: Tue, 08 Feb 2022 19:40:48 GMT  
+		Size: 66.1 MB (66145238 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `amazonlinux:2022-with-sources`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazonlinux@sha256:fadcb4baca649109a8625d85ea703ae24c8b53da551bc2124d3f5fbc06b547ca
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 1
+	-	linux; arm64 variant v8
+
+### `amazonlinux:2022-with-sources` - linux; arm64 variant v8
+
+```console
+$ docker pull amazonlinux@sha256:9de6068deba3e5af8e83805b27dfc79d1e4728948d781f9eda038e8e84912374
+```
+
+-	Docker Version: 20.10.7
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **473.8 MB (473797024 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:37cca01d65d7d629d2f44cf3d2ac822fd1fecd185fbf0e00ceaaea97842450c4`
+-	Default Command: `["\/bin\/bash"]`
+
+```dockerfile
+# Tue, 08 Feb 2022 19:39:46 GMT
+ADD file:0dcd3603971e922307b1605e2f1d589bc5f4c8bc61afc2f0aefa817d58bd6071 in / 
+# Tue, 08 Feb 2022 19:39:47 GMT
+CMD ["/bin/bash"]
+# Tue, 08 Feb 2022 19:40:09 GMT
+RUN mkdir /usr/src/srpm  && curl -o /usr/src/srpm/srpm-bundle.tar.gz "https://amazon-linux-docker-sources.s3-accelerate.amazonaws.com/srpm-bundle-cc7e5469c58d5d340a4834dfcb1b4f5cd38df8115a8622b945b52156d73005e2.tar.gz"  && echo "356327ddb540b40c52a2a4a6392991c4fb8a6b15c8f6a0bca616a7751d776175  /usr/src/srpm/srpm-bundle.tar.gz" | sha256sum -c -
+```
+
+-	Layers:
+	-	`sha256:6cc7ee6c96e110fb553a963091caccb5d86b21e544eaa942b6c0790d4278c681`  
+		Last Modified: Tue, 08 Feb 2022 19:40:48 GMT  
+		Size: 66.1 MB (66145238 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f12d51930db801eff88ca3450938771be2dc3af5155289546b3b8c372ecc0506`  
+		Last Modified: Tue, 08 Feb 2022 19:41:19 GMT  
+		Size: 407.7 MB (407651786 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `amazonlinux:2022.0.20220202.0`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazonlinux@sha256:ba535592e8fca7d12c9f6ebe81e1fc69713740287d83c42d83af581a701f6e64
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 2
+	-	linux; amd64
+	-	linux; arm64 variant v8
+
+### `amazonlinux:2022.0.20220202.0` - linux; amd64
+
+```console
+$ docker pull amazonlinux@sha256:40b0ca43bd05033674743d9107fda51f6c28f54b913b03d6969a729fd97f2c5c
+```
+
+-	Docker Version: 20.10.7
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **67.4 MB (67393012 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:f925675097171e3c481c93fc5752fa357012a23c4fc380b600b910f47bfa3e6a`
+-	Default Command: `["\/bin\/bash"]`
+
+```dockerfile
+# Tue, 08 Feb 2022 19:19:55 GMT
+ADD file:a17c7e0c1674512d1358af2a8ecd7d3ab42c3f853ca0d502a0a5ccf61e7cc1ae in / 
+# Tue, 08 Feb 2022 19:19:56 GMT
+CMD ["/bin/bash"]
+```
+
+-	Layers:
+	-	`sha256:7bc2af7bb0f9d7bc2dd4e52e139b26d5ec36138f2349163c565b89eb4c5dcc6f`  
+		Last Modified: Tue, 08 Feb 2022 19:20:49 GMT  
+		Size: 67.4 MB (67393012 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `amazonlinux:2022.0.20220202.0` - linux; arm64 variant v8
+
+```console
+$ docker pull amazonlinux@sha256:68af4691e62c48340d588b8a3fbe468d7b0c1d8463b3a60cacb6bc22876c4497
+```
+
+-	Docker Version: 20.10.7
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **66.1 MB (66145238 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:bf7cd89050ed8e72dc51c91f0ec7cb56ff8c721e291d30c9f5712450d7744024`
+-	Default Command: `["\/bin\/bash"]`
+
+```dockerfile
+# Tue, 08 Feb 2022 19:39:46 GMT
+ADD file:0dcd3603971e922307b1605e2f1d589bc5f4c8bc61afc2f0aefa817d58bd6071 in / 
+# Tue, 08 Feb 2022 19:39:47 GMT
+CMD ["/bin/bash"]
+```
+
+-	Layers:
+	-	`sha256:6cc7ee6c96e110fb553a963091caccb5d86b21e544eaa942b6c0790d4278c681`  
+		Last Modified: Tue, 08 Feb 2022 19:40:48 GMT  
+		Size: 66.1 MB (66145238 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `amazonlinux:2022.0.20220202.0-with-sources`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazonlinux@sha256:fadcb4baca649109a8625d85ea703ae24c8b53da551bc2124d3f5fbc06b547ca
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 1
+	-	linux; arm64 variant v8
+
+### `amazonlinux:2022.0.20220202.0-with-sources` - linux; arm64 variant v8
+
+```console
+$ docker pull amazonlinux@sha256:9de6068deba3e5af8e83805b27dfc79d1e4728948d781f9eda038e8e84912374
+```
+
+-	Docker Version: 20.10.7
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **473.8 MB (473797024 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:37cca01d65d7d629d2f44cf3d2ac822fd1fecd185fbf0e00ceaaea97842450c4`
+-	Default Command: `["\/bin\/bash"]`
+
+```dockerfile
+# Tue, 08 Feb 2022 19:39:46 GMT
+ADD file:0dcd3603971e922307b1605e2f1d589bc5f4c8bc61afc2f0aefa817d58bd6071 in / 
+# Tue, 08 Feb 2022 19:39:47 GMT
+CMD ["/bin/bash"]
+# Tue, 08 Feb 2022 19:40:09 GMT
+RUN mkdir /usr/src/srpm  && curl -o /usr/src/srpm/srpm-bundle.tar.gz "https://amazon-linux-docker-sources.s3-accelerate.amazonaws.com/srpm-bundle-cc7e5469c58d5d340a4834dfcb1b4f5cd38df8115a8622b945b52156d73005e2.tar.gz"  && echo "356327ddb540b40c52a2a4a6392991c4fb8a6b15c8f6a0bca616a7751d776175  /usr/src/srpm/srpm-bundle.tar.gz" | sha256sum -c -
+```
+
+-	Layers:
+	-	`sha256:6cc7ee6c96e110fb553a963091caccb5d86b21e544eaa942b6c0790d4278c681`  
+		Last Modified: Tue, 08 Feb 2022 19:40:48 GMT  
+		Size: 66.1 MB (66145238 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f12d51930db801eff88ca3450938771be2dc3af5155289546b3b8c372ecc0506`  
+		Last Modified: Tue, 08 Feb 2022 19:41:19 GMT  
+		Size: 407.7 MB (407651786 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `amazonlinux:devel`
+
+```console
+$ docker pull amazonlinux@sha256:ba535592e8fca7d12c9f6ebe81e1fc69713740287d83c42d83af581a701f6e64
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 2
+	-	linux; amd64
+	-	linux; arm64 variant v8
+
+### `amazonlinux:devel` - linux; amd64
+
+```console
+$ docker pull amazonlinux@sha256:40b0ca43bd05033674743d9107fda51f6c28f54b913b03d6969a729fd97f2c5c
+```
+
+-	Docker Version: 20.10.7
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **67.4 MB (67393012 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:f925675097171e3c481c93fc5752fa357012a23c4fc380b600b910f47bfa3e6a`
+-	Default Command: `["\/bin\/bash"]`
+
+```dockerfile
+# Tue, 08 Feb 2022 19:19:55 GMT
+ADD file:a17c7e0c1674512d1358af2a8ecd7d3ab42c3f853ca0d502a0a5ccf61e7cc1ae in / 
+# Tue, 08 Feb 2022 19:19:56 GMT
+CMD ["/bin/bash"]
+```
+
+-	Layers:
+	-	`sha256:7bc2af7bb0f9d7bc2dd4e52e139b26d5ec36138f2349163c565b89eb4c5dcc6f`  
+		Last Modified: Tue, 08 Feb 2022 19:20:49 GMT  
+		Size: 67.4 MB (67393012 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `amazonlinux:devel` - linux; arm64 variant v8
+
+```console
+$ docker pull amazonlinux@sha256:68af4691e62c48340d588b8a3fbe468d7b0c1d8463b3a60cacb6bc22876c4497
+```
+
+-	Docker Version: 20.10.7
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **66.1 MB (66145238 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:bf7cd89050ed8e72dc51c91f0ec7cb56ff8c721e291d30c9f5712450d7744024`
+-	Default Command: `["\/bin\/bash"]`
+
+```dockerfile
+# Tue, 08 Feb 2022 19:39:46 GMT
+ADD file:0dcd3603971e922307b1605e2f1d589bc5f4c8bc61afc2f0aefa817d58bd6071 in / 
+# Tue, 08 Feb 2022 19:39:47 GMT
+CMD ["/bin/bash"]
+```
+
+-	Layers:
+	-	`sha256:6cc7ee6c96e110fb553a963091caccb5d86b21e544eaa942b6c0790d4278c681`  
+		Last Modified: Tue, 08 Feb 2022 19:40:48 GMT  
+		Size: 66.1 MB (66145238 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `amazonlinux:devel-with-sources`
+
+```console
+$ docker pull amazonlinux@sha256:fadcb4baca649109a8625d85ea703ae24c8b53da551bc2124d3f5fbc06b547ca
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 1
+	-	linux; arm64 variant v8
+
+### `amazonlinux:devel-with-sources` - linux; arm64 variant v8
+
+```console
+$ docker pull amazonlinux@sha256:9de6068deba3e5af8e83805b27dfc79d1e4728948d781f9eda038e8e84912374
+```
+
+-	Docker Version: 20.10.7
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **473.8 MB (473797024 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:37cca01d65d7d629d2f44cf3d2ac822fd1fecd185fbf0e00ceaaea97842450c4`
+-	Default Command: `["\/bin\/bash"]`
+
+```dockerfile
+# Tue, 08 Feb 2022 19:39:46 GMT
+ADD file:0dcd3603971e922307b1605e2f1d589bc5f4c8bc61afc2f0aefa817d58bd6071 in / 
+# Tue, 08 Feb 2022 19:39:47 GMT
+CMD ["/bin/bash"]
+# Tue, 08 Feb 2022 19:40:09 GMT
+RUN mkdir /usr/src/srpm  && curl -o /usr/src/srpm/srpm-bundle.tar.gz "https://amazon-linux-docker-sources.s3-accelerate.amazonaws.com/srpm-bundle-cc7e5469c58d5d340a4834dfcb1b4f5cd38df8115a8622b945b52156d73005e2.tar.gz"  && echo "356327ddb540b40c52a2a4a6392991c4fb8a6b15c8f6a0bca616a7751d776175  /usr/src/srpm/srpm-bundle.tar.gz" | sha256sum -c -
+```
+
+-	Layers:
+	-	`sha256:6cc7ee6c96e110fb553a963091caccb5d86b21e544eaa942b6c0790d4278c681`  
+		Last Modified: Tue, 08 Feb 2022 19:40:48 GMT  
+		Size: 66.1 MB (66145238 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f12d51930db801eff88ca3450938771be2dc3af5155289546b3b8c372ecc0506`  
+		Last Modified: Tue, 08 Feb 2022 19:41:19 GMT  
+		Size: 407.7 MB (407651786 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `amazonlinux:latest`
 

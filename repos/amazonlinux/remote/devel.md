@@ -1,4 +1,4 @@
-## `amazonlinux:2022.0.20220202.0`
+## `amazonlinux:devel`
 
 ```console
 $ docker pull amazonlinux@sha256:ba535592e8fca7d12c9f6ebe81e1fc69713740287d83c42d83af581a701f6e64
@@ -9,7 +9,7 @@ $ docker pull amazonlinux@sha256:ba535592e8fca7d12c9f6ebe81e1fc69713740287d83c42
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
-### `amazonlinux:2022.0.20220202.0` - linux; amd64
+### `amazonlinux:devel` - linux; amd64
 
 ```console
 $ docker pull amazonlinux@sha256:40b0ca43bd05033674743d9107fda51f6c28f54b913b03d6969a729fd97f2c5c
@@ -35,7 +35,7 @@ CMD ["/bin/bash"]
 		Size: 67.4 MB (67393012 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `amazonlinux:2022.0.20220202.0` - linux; arm64 variant v8
+### `amazonlinux:devel` - linux; arm64 variant v8
 
 ```console
 $ docker pull amazonlinux@sha256:68af4691e62c48340d588b8a3fbe468d7b0c1d8463b3a60cacb6bc22876c4497
