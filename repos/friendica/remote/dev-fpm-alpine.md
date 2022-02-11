@@ -1,7 +1,7 @@
 ## `friendica:dev-fpm-alpine`
 
 ```console
-$ docker pull friendica@sha256:c2e5c9f45e8b2957bb1616b6b195a03c5f98082e60759757d73178a250876354
+$ docker pull friendica@sha256:3473a42af80b7cb990d8b91d80e5e20a275e046018a4497fc90cd6b3ed07fc79
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16,14 +16,14 @@ $ docker pull friendica@sha256:c2e5c9f45e8b2957bb1616b6b195a03c5f98082e60759757d
 ### `friendica:dev-fpm-alpine` - linux; amd64
 
 ```console
-$ docker pull friendica@sha256:5b1a109f40d2ff396d9fc26d593115b8b6694309cd62d99cc15f52f2f1d8dd5b
+$ docker pull friendica@sha256:d63e416e30d41db4ccc415bb8c8bc169e563d60a4bda42eb1298183622d986ed
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **47.7 MB (47713151 bytes)**  
+-	Total Size: **47.7 MB (47713486 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:53c4ad89811fe52de18431c2add2b595021311f487609e9be8af8e77a81eb4f6`
+-	Image ID: `sha256:4d69bd2b7fcea7d62292f0b4573e47a5f8131efbff63f1c04711dae3796c4d80`
 -	Entrypoint: `["\/entrypoint-dev.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -102,13 +102,13 @@ ENV FRIENDICA_VERSION=2022.05-dev
 ENV FRIENDICA_ADDONS=2022.05-dev
 # Wed, 09 Feb 2022 22:33:46 GMT
 RUN set -ex;      apk add --no-cache --virtual .fetch-deps             gnupg         ;
-# Wed, 09 Feb 2022 22:33:47 GMT
-COPY multi:35b388a7591961ddf8c7237141e449a6d785bd4baa1c8f64f655d5ec053514b6 in / 
-# Wed, 09 Feb 2022 22:33:47 GMT
+# Fri, 11 Feb 2022 19:19:58 GMT
+COPY multi:4cbb68745a39a4ccbe4269451cba6cdbe2fc9712e0841aaa6aaf083284be3c2c in / 
+# Fri, 11 Feb 2022 19:19:58 GMT
 COPY multi:201dba5df7e408009a8882797a28095a47753a2db673a80c99e898e88501c42e in /usr/src/friendica/config/ 
-# Wed, 09 Feb 2022 22:33:47 GMT
+# Fri, 11 Feb 2022 19:19:58 GMT
 ENTRYPOINT ["/entrypoint-dev.sh"]
-# Wed, 09 Feb 2022 22:33:47 GMT
+# Fri, 11 Feb 2022 19:19:59 GMT
 CMD ["php-fpm"]
 ```
 
@@ -173,26 +173,26 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 09 Feb 2022 22:36:45 GMT  
 		Size: 2.8 MB (2809456 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a0fb839cb222747d74f567f1eaa79bcc0c61e210245b142ce91c6a0ea2f586af`  
-		Last Modified: Wed, 09 Feb 2022 22:36:44 GMT  
-		Size: 3.3 KB (3262 bytes)  
+	-	`sha256:ca2d231215bb28564b6869fed0b62c349aa2f2e0f09bb4f908c2164f07dcb311`  
+		Last Modified: Fri, 11 Feb 2022 19:22:16 GMT  
+		Size: 3.6 KB (3592 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1eb23e24b549863f0a64a800d4c0c9234d574af08dd9c06ad727da2814b90c36`  
-		Last Modified: Wed, 09 Feb 2022 22:36:44 GMT  
-		Size: 943.0 B  
+	-	`sha256:fe4d4cda29322e584c601bc939297502c51b19ae0833e3f0137ab60834816955`  
+		Last Modified: Fri, 11 Feb 2022 19:22:16 GMT  
+		Size: 948.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `friendica:dev-fpm-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull friendica@sha256:2b5fe81397be5608be8bd6cbc0e0258c59a891a7de48eb35b7ba39ba45a583f1
+$ docker pull friendica@sha256:8a168a8d674c09f152ae2912e9043ff05315fc0d7d662ee3db14fd5a16f979f5
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **45.4 MB (45414724 bytes)**  
+-	Total Size: **45.4 MB (45415056 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1c69fa3d666756f99c004a9e9bb8549447f5723cbc3a654123008624559de8e4`
+-	Image ID: `sha256:7e2972b9f07b9b67269e7788328e7cd9a028c61ed0cba155a90793926ad003ed`
 -	Entrypoint: `["\/entrypoint-dev.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -271,13 +271,13 @@ ENV FRIENDICA_VERSION=2022.05-dev
 ENV FRIENDICA_ADDONS=2022.05-dev
 # Wed, 09 Feb 2022 21:56:27 GMT
 RUN set -ex;      apk add --no-cache --virtual .fetch-deps             gnupg         ;
-# Wed, 09 Feb 2022 21:56:28 GMT
-COPY multi:35b388a7591961ddf8c7237141e449a6d785bd4baa1c8f64f655d5ec053514b6 in / 
-# Wed, 09 Feb 2022 21:56:29 GMT
+# Fri, 11 Feb 2022 18:50:00 GMT
+COPY multi:4cbb68745a39a4ccbe4269451cba6cdbe2fc9712e0841aaa6aaf083284be3c2c in / 
+# Fri, 11 Feb 2022 18:50:01 GMT
 COPY multi:201dba5df7e408009a8882797a28095a47753a2db673a80c99e898e88501c42e in /usr/src/friendica/config/ 
-# Wed, 09 Feb 2022 21:56:30 GMT
+# Fri, 11 Feb 2022 18:50:02 GMT
 ENTRYPOINT ["/entrypoint-dev.sh"]
-# Wed, 09 Feb 2022 21:56:30 GMT
+# Fri, 11 Feb 2022 18:50:02 GMT
 CMD ["php-fpm"]
 ```
 
@@ -342,26 +342,26 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 09 Feb 2022 21:58:35 GMT  
 		Size: 2.7 MB (2652543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a24e93d4214a4e8fc2a8a77e0556972ac36f924d54f02d7221f04d8cae15c578`  
-		Last Modified: Wed, 09 Feb 2022 21:58:33 GMT  
-		Size: 3.3 KB (3262 bytes)  
+	-	`sha256:e20269dfb9a3e9388980899b92952824be47eed29fbc19bbdb4eca2def20327d`  
+		Last Modified: Fri, 11 Feb 2022 18:51:04 GMT  
+		Size: 3.6 KB (3592 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61d831bf3af775252099287e7c33b1cbe3d1cb46b8907118f398896ccd9e47b5`  
-		Last Modified: Wed, 09 Feb 2022 21:58:33 GMT  
-		Size: 948.0 B  
+	-	`sha256:4a1158dc4f90b95f8949a35ae2b3c344f1fd936dc5cf13e9088eb040573495c3`  
+		Last Modified: Fri, 11 Feb 2022 18:51:04 GMT  
+		Size: 950.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `friendica:dev-fpm-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull friendica@sha256:3d36ccd7bbfdb3f9d1450db001ff1fbb7457a1cfc5f47933d01dd670aaad8b85
+$ docker pull friendica@sha256:405e9d696a664258897a354f98dde8a8474c46ea3fe52f1448f6411c82482eb2
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **43.1 MB (43138006 bytes)**  
+-	Total Size: **43.1 MB (43138336 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7f5ad180cc6b1beee14fdbfa65198221ebe01286867f5eeb0669ab4e5aaaa93d`
+-	Image ID: `sha256:d2d3cff79d507a19cc49418609444a7c98e3923547b1a2937ba34683ff00b42e`
 -	Entrypoint: `["\/entrypoint-dev.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -440,13 +440,13 @@ ENV FRIENDICA_VERSION=2022.05-dev
 ENV FRIENDICA_ADDONS=2022.05-dev
 # Wed, 09 Feb 2022 22:32:16 GMT
 RUN set -ex;      apk add --no-cache --virtual .fetch-deps             gnupg         ;
-# Wed, 09 Feb 2022 22:32:18 GMT
-COPY multi:35b388a7591961ddf8c7237141e449a6d785bd4baa1c8f64f655d5ec053514b6 in / 
-# Wed, 09 Feb 2022 22:32:19 GMT
+# Fri, 11 Feb 2022 18:59:59 GMT
+COPY multi:4cbb68745a39a4ccbe4269451cba6cdbe2fc9712e0841aaa6aaf083284be3c2c in / 
+# Fri, 11 Feb 2022 19:00:00 GMT
 COPY multi:201dba5df7e408009a8882797a28095a47753a2db673a80c99e898e88501c42e in /usr/src/friendica/config/ 
-# Wed, 09 Feb 2022 22:32:19 GMT
+# Fri, 11 Feb 2022 19:00:00 GMT
 ENTRYPOINT ["/entrypoint-dev.sh"]
-# Wed, 09 Feb 2022 22:32:20 GMT
+# Fri, 11 Feb 2022 19:00:01 GMT
 CMD ["php-fpm"]
 ```
 
@@ -511,26 +511,26 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 09 Feb 2022 22:39:37 GMT  
 		Size: 2.4 MB (2372393 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d4a1fe052e6483a39ead871bdd49efc676b9e58716d187347b4416dae05d7640`  
-		Last Modified: Wed, 09 Feb 2022 22:39:36 GMT  
-		Size: 3.3 KB (3262 bytes)  
+	-	`sha256:fd9cbca5d7bcf35838b40be900bc7fb1e3cbd5c3adb362b5d9eef44281e32131`  
+		Last Modified: Fri, 11 Feb 2022 19:04:01 GMT  
+		Size: 3.6 KB (3590 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:69cb29f4f2aff4eaac86b1558e42a9bde3878200e77a241ec84b973529ef1873`  
-		Last Modified: Wed, 09 Feb 2022 22:39:36 GMT  
-		Size: 948.0 B  
+	-	`sha256:2dd14e022550622d58ef448bf4a5bd4131332731d979fc43f7907df933c0fc08`  
+		Last Modified: Fri, 11 Feb 2022 19:04:01 GMT  
+		Size: 950.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `friendica:dev-fpm-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull friendica@sha256:b7d9e16282ef63004a9f365c89f9b0d7511a861f99161cac230c07bad380b718
+$ docker pull friendica@sha256:1fe38d05e8c1f3d5dbbc42dc50b1f5dc3c21c31caf0b3b3ce376448660324b57
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **46.8 MB (46755040 bytes)**  
+-	Total Size: **46.8 MB (46755371 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d55beea2517f03347c5b7e514cd92d9d8f1430eb941d918e38be09858011dcf7`
+-	Image ID: `sha256:4f1350d1bea2d4a0d02f51583c0f05ef8094f7c9df825c764fa2857bade7559f`
 -	Entrypoint: `["\/entrypoint-dev.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -609,13 +609,13 @@ ENV FRIENDICA_VERSION=2022.05-dev
 ENV FRIENDICA_ADDONS=2022.05-dev
 # Wed, 09 Feb 2022 22:57:39 GMT
 RUN set -ex;      apk add --no-cache --virtual .fetch-deps             gnupg         ;
-# Wed, 09 Feb 2022 22:57:41 GMT
-COPY multi:35b388a7591961ddf8c7237141e449a6d785bd4baa1c8f64f655d5ec053514b6 in / 
-# Wed, 09 Feb 2022 22:57:42 GMT
+# Fri, 11 Feb 2022 18:46:12 GMT
+COPY multi:4cbb68745a39a4ccbe4269451cba6cdbe2fc9712e0841aaa6aaf083284be3c2c in / 
+# Fri, 11 Feb 2022 18:46:13 GMT
 COPY multi:201dba5df7e408009a8882797a28095a47753a2db673a80c99e898e88501c42e in /usr/src/friendica/config/ 
-# Wed, 09 Feb 2022 22:57:42 GMT
+# Fri, 11 Feb 2022 18:46:13 GMT
 ENTRYPOINT ["/entrypoint-dev.sh"]
-# Wed, 09 Feb 2022 22:57:43 GMT
+# Fri, 11 Feb 2022 18:46:14 GMT
 CMD ["php-fpm"]
 ```
 
@@ -680,26 +680,26 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 09 Feb 2022 23:00:17 GMT  
 		Size: 2.7 MB (2733094 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e01e4507169411ac74f03f007053c9bd6a7809b52ab8049b056df2a324346d91`  
-		Last Modified: Wed, 09 Feb 2022 23:00:16 GMT  
-		Size: 3.3 KB (3262 bytes)  
+	-	`sha256:1b8a6f39c2dd1f2fc9ff02ffb9c2ec0493c5fad9c789248aabff68f86720fdd7`  
+		Last Modified: Fri, 11 Feb 2022 18:49:28 GMT  
+		Size: 3.6 KB (3592 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e834d1fe48b900162763a4fe9b9d574346c4dcb6384423a6facc1e8be57f23e1`  
-		Last Modified: Wed, 09 Feb 2022 23:00:16 GMT  
-		Size: 920.0 B  
+	-	`sha256:67596f552e2c0394643dae9510f8a60d878a71a7b087a735d59bc7497760d3b8`  
+		Last Modified: Fri, 11 Feb 2022 18:49:28 GMT  
+		Size: 921.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `friendica:dev-fpm-alpine` - linux; 386
 
 ```console
-$ docker pull friendica@sha256:82a7f8b072cb2a3d0c3cdf48bfb2ae60cec28e096a448bc6863f984be98f871a
+$ docker pull friendica@sha256:5e5f9fed94c08ffd02363e728b4337a46ed54fdccb93182dd83baf29601092a8
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **48.6 MB (48643790 bytes)**  
+-	Total Size: **48.6 MB (48644122 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e47cf2dac8821852c5c244f31a5e6ed16df14ab12f1cb2ec94f377ed83091c9c`
+-	Image ID: `sha256:46190a966b03452c4af28bb1805b0c47af7a41f0ec7e15b5ef5b153707cf08d4`
 -	Entrypoint: `["\/entrypoint-dev.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -778,13 +778,13 @@ ENV FRIENDICA_VERSION=2022.05-dev
 ENV FRIENDICA_ADDONS=2022.05-dev
 # Wed, 09 Feb 2022 22:50:53 GMT
 RUN set -ex;      apk add --no-cache --virtual .fetch-deps             gnupg         ;
-# Wed, 09 Feb 2022 22:50:54 GMT
-COPY multi:35b388a7591961ddf8c7237141e449a6d785bd4baa1c8f64f655d5ec053514b6 in / 
-# Wed, 09 Feb 2022 22:50:54 GMT
+# Fri, 11 Feb 2022 18:44:46 GMT
+COPY multi:4cbb68745a39a4ccbe4269451cba6cdbe2fc9712e0841aaa6aaf083284be3c2c in / 
+# Fri, 11 Feb 2022 18:44:47 GMT
 COPY multi:201dba5df7e408009a8882797a28095a47753a2db673a80c99e898e88501c42e in /usr/src/friendica/config/ 
-# Wed, 09 Feb 2022 22:50:54 GMT
+# Fri, 11 Feb 2022 18:44:47 GMT
 ENTRYPOINT ["/entrypoint-dev.sh"]
-# Wed, 09 Feb 2022 22:50:55 GMT
+# Fri, 11 Feb 2022 18:44:47 GMT
 CMD ["php-fpm"]
 ```
 
@@ -849,26 +849,26 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 09 Feb 2022 22:53:47 GMT  
 		Size: 3.0 MB (3007259 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01972e38739baeb38a2a54d2a5dc9ef22e931b968b8d358dd8953f5596c1bd74`  
-		Last Modified: Wed, 09 Feb 2022 22:53:46 GMT  
-		Size: 3.3 KB (3262 bytes)  
+	-	`sha256:9090ab17b5760dcb735b2e73c10a2d9f6f86d82d922346445699dd999493d835`  
+		Last Modified: Fri, 11 Feb 2022 18:48:37 GMT  
+		Size: 3.6 KB (3591 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:caebe97d46ec47c3b1376815435bf9b6c923b8d7bddfe5d0a33b32b85558d28b`  
-		Last Modified: Wed, 09 Feb 2022 22:53:46 GMT  
-		Size: 943.0 B  
+	-	`sha256:6e1ab5c103a60c1496a4f14c4bb895f0306c5df79f30ca7a5f1ca6c54daad7af`  
+		Last Modified: Fri, 11 Feb 2022 18:48:37 GMT  
+		Size: 946.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `friendica:dev-fpm-alpine` - linux; ppc64le
 
 ```console
-$ docker pull friendica@sha256:de3c3f16a5ae575f7914f3d560b61d0e12824997f7e541f2a601b178cbfbeca6
+$ docker pull friendica@sha256:b08a85fb247d6e3a9c729dcaa4ae07aa29af9a18e2c3933dda551506db83c7b4
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.2 MB (49167344 bytes)**  
+-	Total Size: **49.2 MB (49167674 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:14ed5960868792fbad7371459bd05143422f2a08f7d66762018d2934841875cf`
+-	Image ID: `sha256:ce5e0d2953db80ccac30f1f1d3a353e732a961907872d97296f47e7ff2b11328`
 -	Entrypoint: `["\/entrypoint-dev.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -947,13 +947,13 @@ ENV FRIENDICA_VERSION=2022.05-dev
 ENV FRIENDICA_ADDONS=2022.05-dev
 # Wed, 09 Feb 2022 23:08:09 GMT
 RUN set -ex;      apk add --no-cache --virtual .fetch-deps             gnupg         ;
-# Wed, 09 Feb 2022 23:08:12 GMT
-COPY multi:35b388a7591961ddf8c7237141e449a6d785bd4baa1c8f64f655d5ec053514b6 in / 
-# Wed, 09 Feb 2022 23:08:13 GMT
+# Fri, 11 Feb 2022 19:19:42 GMT
+COPY multi:4cbb68745a39a4ccbe4269451cba6cdbe2fc9712e0841aaa6aaf083284be3c2c in / 
+# Fri, 11 Feb 2022 19:19:45 GMT
 COPY multi:201dba5df7e408009a8882797a28095a47753a2db673a80c99e898e88501c42e in /usr/src/friendica/config/ 
-# Wed, 09 Feb 2022 23:08:15 GMT
+# Fri, 11 Feb 2022 19:19:49 GMT
 ENTRYPOINT ["/entrypoint-dev.sh"]
-# Wed, 09 Feb 2022 23:08:17 GMT
+# Fri, 11 Feb 2022 19:19:53 GMT
 CMD ["php-fpm"]
 ```
 
@@ -1018,11 +1018,11 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 09 Feb 2022 23:11:35 GMT  
 		Size: 2.9 MB (2947988 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:705af0918b33d6e686224d530c5afb749f8640cccce3b55cc1b21251bed83354`  
-		Last Modified: Wed, 09 Feb 2022 23:11:34 GMT  
-		Size: 3.3 KB (3261 bytes)  
+	-	`sha256:24d2135df4cceae22e76dcacc1a374e22e66f738745dcc94fa5c1d62e63cce59`  
+		Last Modified: Fri, 11 Feb 2022 19:23:00 GMT  
+		Size: 3.6 KB (3592 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6eb19f4c70672dbf319c81b95b9a2a48612880af9af8bc0bb0d02c1c690256fa`  
-		Last Modified: Wed, 09 Feb 2022 23:11:34 GMT  
-		Size: 951.0 B  
+	-	`sha256:307e4d59a165e479b35907b50115cf371e8cce3fd17f01535b2f47fa21c6ebe4`  
+		Last Modified: Fri, 11 Feb 2022 19:23:00 GMT  
+		Size: 950.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
