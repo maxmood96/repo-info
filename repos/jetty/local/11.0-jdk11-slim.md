@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2e2cc47928e3a85470ac0ee0d7d9ef9596655e46ecf286eaab8903eb8b83db1e`
-- Created: `2022-02-08T03:24:48.541516829Z`
+- Image ID: `sha256:9fc037fbc284e6e7c836c2ce5dcf9ac78cf17aa50ba51297ab4647a843ce7081`
+- Created: `2022-02-12T02:03:49.874853279Z`
 - Virtual Size: ~ 447.10 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/jetty/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/local/openjdk-11`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=11.0.14`
+  - `JAVA_VERSION=11.0.14.1`
   - `JETTY_VERSION=11.0.8`
   - `JETTY_HOME=/usr/local/jetty`
   - `JETTY_BASE=/var/lib/jetty`
