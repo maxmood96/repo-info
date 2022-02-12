@@ -1,10 +1,10 @@
-# `friendica:2021.09-fpm-alpine`
+# `friendica:2022.02-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9286172ecd7d601fdefdb8bd179e612c215668fb3b2903263ea3ab8612483f79`
-- Created: `2022-01-05T23:28:20.2825576Z`
-- Virtual Size: ~ 227.08 Mb  
+- Image ID: `sha256:72434c83d4fd53b9809d17c0c03c8005df4fe84d90fbd2ba58266b505c417f16`
+- Created: `2022-02-11T19:19:48.365119232Z`
+- Virtual Size: ~ 233.84 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -25,10 +25,10 @@
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `FRIENDICA_SYSLOG_FLAGS=39`
-  - `FRIENDICA_VERSION=2021.09`
-  - `FRIENDICA_ADDONS=2021.09`
-  - `FRIENDICA_DOWNLOAD_SHA256=3f33f5a63c4e9d8ea55b21a33d46663f4b1d636a6546fa3603a244583d3b6faf`
-  - `FRIENDICA_DOWNLOAD_ADDONS_SHA256=1910e732b3ca3fc35e57835f217746d6e1fbed1f76d8da1c989742ac2237090d`
+  - `FRIENDICA_VERSION=2022.02`
+  - `FRIENDICA_ADDONS=2022.02`
+  - `FRIENDICA_DOWNLOAD_SHA256=032be1a8c7e1a82d34eebc95b5bd2f2564a9114834eff45e6b4daa240eab22e8`
+  - `FRIENDICA_DOWNLOAD_ADDONS_SHA256=146240e7215d15d743bee4e0d3c084315b5a1778493f400284e80ff84e3cd1ce`
 
 ## `apk` (`.apk`-based packages)
 
@@ -188,16 +188,16 @@ MIT
 ### `apk` package: `expat`
 
 ```console
-expat-2.4.1-r0 description:
+expat-2.4.4-r0 description:
 XML Parser library written in C
 
-expat-2.4.1-r0 webpage:
+expat-2.4.4-r0 webpage:
 http://www.libexpat.org/
 
-expat-2.4.1-r0 installed size:
-188 KiB
+expat-2.4.4-r0 installed size:
+192 KiB
 
-expat-2.4.1-r0 license:
+expat-2.4.4-r0 license:
 MIT
 
 ```
@@ -732,16 +732,16 @@ GPL-2.0+ OR LGPL-3.0+
 ### `apk` package: `libuuid`
 
 ```console
-libuuid-2.37.2-r1 description:
+libuuid-2.37.3-r0 description:
 DCE compatible Universally Unique Identifier library
 
-libuuid-2.37.2-r1 webpage:
+libuuid-2.37.3-r0 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libuuid-2.37.2-r1 installed size:
+libuuid-2.37.3-r0 installed size:
 40 KiB
 
-libuuid-2.37.2-r1 license:
+libuuid-2.37.3-r0 license:
 GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND
 
 ```
@@ -749,16 +749,16 @@ GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND
 ### `apk` package: `libwebp`
 
 ```console
-libwebp-1.2.1-r0 description:
+libwebp-1.2.2-r0 description:
 Libraries for working with WebP images
 
-libwebp-1.2.1-r0 webpage:
+libwebp-1.2.2-r0 webpage:
 https://developers.google.com/speed/webp
 
-libwebp-1.2.1-r0 installed size:
+libwebp-1.2.2-r0 installed size:
 580 KiB
 
-libwebp-1.2.1-r0 license:
+libwebp-1.2.2-r0 license:
 BSD-3-Clause
 
 ```

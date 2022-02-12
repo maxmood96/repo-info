@@ -1,10 +1,10 @@
-# `friendica:2021.12-dev-fpm-alpine`
+# `friendica:2022.05-dev-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6659b5e2fbcfed1abba53547c1981edd66ff62cf6bf33e9863bf98da91a6fa3a`
-- Created: `2022-01-06T20:38:17.627563841Z`
-- Virtual Size: ~ 128.61 Mb  
+- Image ID: `sha256:4d69bd2b7fcea7d62292f0b4573e47a5f8131efbff63f1c04711dae3796c4d80`
+- Created: `2022-02-11T19:19:59.144260616Z`
+- Virtual Size: ~ 128.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint-dev.sh"]`
@@ -25,8 +25,8 @@
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `FRIENDICA_SYSLOG_FLAGS=39`
-  - `FRIENDICA_VERSION=2021.12-dev`
-  - `FRIENDICA_ADDONS=2021.12-dev`
+  - `FRIENDICA_VERSION=2022.05-dev`
+  - `FRIENDICA_ADDONS=2022.05-dev`
 
 ## `apk` (`.apk`-based packages)
 
@@ -186,16 +186,16 @@ MIT
 ### `apk` package: `expat`
 
 ```console
-expat-2.4.1-r0 description:
+expat-2.4.4-r0 description:
 XML Parser library written in C
 
-expat-2.4.1-r0 webpage:
+expat-2.4.4-r0 webpage:
 http://www.libexpat.org/
 
-expat-2.4.1-r0 installed size:
-188 KiB
+expat-2.4.4-r0 installed size:
+192 KiB
 
-expat-2.4.1-r0 license:
+expat-2.4.4-r0 license:
 MIT
 
 ```
@@ -985,16 +985,16 @@ GPL-2.0+ OR LGPL-3.0+
 ### `apk` package: `libuuid`
 
 ```console
-libuuid-2.37.2-r1 description:
+libuuid-2.37.3-r0 description:
 DCE compatible Universally Unique Identifier library
 
-libuuid-2.37.2-r1 webpage:
+libuuid-2.37.3-r0 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libuuid-2.37.2-r1 installed size:
+libuuid-2.37.3-r0 installed size:
 40 KiB
 
-libuuid-2.37.2-r1 license:
+libuuid-2.37.3-r0 license:
 GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND
 
 ```
@@ -1002,16 +1002,16 @@ GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND
 ### `apk` package: `libwebp`
 
 ```console
-libwebp-1.2.1-r0 description:
+libwebp-1.2.2-r0 description:
 Libraries for working with WebP images
 
-libwebp-1.2.1-r0 webpage:
+libwebp-1.2.2-r0 webpage:
 https://developers.google.com/speed/webp
 
-libwebp-1.2.1-r0 installed size:
+libwebp-1.2.2-r0 installed size:
 580 KiB
 
-libwebp-1.2.1-r0 license:
+libwebp-1.2.2-r0 license:
 BSD-3-Clause
 
 ```

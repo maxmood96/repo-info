@@ -1,10 +1,10 @@
-# `friendica:2021.12-dev-fpm`
+# `friendica:2022.05-dev-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:cdff69bea9f44d6ffe5f93c4bb76f4cc200e3e7ced9c478bceaa7d4f93f50dcd`
-- Created: `2022-02-05T07:24:43.585999316Z`
-- Virtual Size: ~ 568.98 Mb  
+- Image ID: `sha256:058cda8ca3ef7e6783ae56566e46d1b98a7cd26a32ec594737ff603f61ccb624`
+- Created: `2022-02-11T19:19:55.634271416Z`
+- Virtual Size: ~ 569.17 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint-dev.sh"]`
@@ -25,8 +25,8 @@
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `FRIENDICA_SYSLOG_FLAGS=39`
-  - `FRIENDICA_VERSION=2021.12-dev`
-  - `FRIENDICA_ADDONS=2021.12-dev`
+  - `FRIENDICA_VERSION=2022.05-dev`
+  - `FRIENDICA_ADDONS=2022.05-dev`
 
 ## `dpkg` (`.deb`-based packages)
 
