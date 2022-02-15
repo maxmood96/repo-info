@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e22cf337c3b6c19dabcc8fe3b62d6a7bfb906dcd3f3fbeb35972409f1b407a1a`
-- Created: `2022-02-04T00:13:56.265479505Z`
+- Image ID: `sha256:b1cd0d8f20f25067ff818d9305471da45055a06316c91d571cc24c352a333a6d`
+- Created: `2022-02-12T04:26:35.811783258Z`
 - Virtual Size: ~ 362.24 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/tomee/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/local/openjdk-11`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=11.0.14`
+  - `JAVA_VERSION=11.0.14.1`
   - `TOMEE_VER=8.0.9`
   - `TOMEE_BUILD=webprofile`
 
