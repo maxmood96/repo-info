@@ -1,10 +1,10 @@
-# `joomla:4.0.6-php7.4-fpm-alpine`
+# `joomla:4.1.0-php7.4-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c6242a7ec8e4a0cb23b40390d91e650e0964f294f43d124feef1dc047a4001a3`
-- Created: `2022-01-21T22:44:53.541042391Z`
-- Virtual Size: ~ 199.65 Mb  
+- Image ID: `sha256:4e6c0602b2e3a3cf44620de603ef863cd0a3226fc58d59de0a8c90db2c426f8e`
+- Created: `2022-02-16T00:23:34.797476549Z`
+- Virtual Size: ~ 204.51 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -22,8 +22,8 @@
   - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.27.tar.xz.asc`
   - `PHP_SHA256=3f8b937310f155822752229c2c2feb8cc2621e25a728e7b94d0d74c128c43d0c`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
-  - `JOOMLA_VERSION=4.0.6`
-  - `JOOMLA_SHA512=a35f3181c594ef0c30e4f8ec122f32e2ebe1795ccd31f55656be0f214b1f6eed54ef7961aed0be772b2c4a6cc5d0e6454b9213f1ba8833dd52317c6d216d9fd8`
+  - `JOOMLA_VERSION=4.1.0`
+  - `JOOMLA_SHA512=44173170fb1598c465415cba919339c26624322621efed17c95fdffca7b62a1089863615e415f0ec36a6a4c4f5c746b7ec06dddd08929757f737e1a2a15ff714`
 - Labels:
   - `maintainer=Llewellyn van der Merwe <llewellyn.van-der-merwe@community.joomla.org> (@Llewellynvdm), Harald Leithner <harald.leithner@community.joomla.org> (@HLeithner)`
 
@@ -219,16 +219,16 @@ GPL-3.0-or-later
 ### `apk` package: `gmp`
 
 ```console
-gmp-6.2.1-r0 description:
+gmp-6.2.1-r1 description:
 free library for arbitrary precision arithmetic
 
-gmp-6.2.1-r0 webpage:
+gmp-6.2.1-r1 webpage:
 https://gmplib.org/
 
-gmp-6.2.1-r0 installed size:
+gmp-6.2.1-r1 installed size:
 420 KiB
 
-gmp-6.2.1-r0 license:
+gmp-6.2.1-r1 license:
 LGPL-3.0-or-later OR GPL-2.0-or-later
 
 ```
@@ -304,16 +304,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1l-r7 description:
+libcrypto1.1-1.1.1l-r8 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1l-r7 webpage:
+libcrypto1.1-1.1.1l-r8 webpage:
 https://www.openssl.org/
 
-libcrypto1.1-1.1.1l-r7 installed size:
+libcrypto1.1-1.1.1l-r8 installed size:
 2676 KiB
 
-libcrypto1.1-1.1.1l-r7 license:
+libcrypto1.1-1.1.1l-r8 license:
 OpenSSL
 
 ```
@@ -386,23 +386,6 @@ OLDAP-2.8
 
 ```
 
-### `apk` package: `libmcrypt`
-
-```console
-libmcrypt-2.5.8-r9 description:
-A library which provides a uniform interface to several symmetric encryption algorithms
-
-libmcrypt-2.5.8-r9 webpage:
-http://mcrypt.sourceforge.net/
-
-libmcrypt-2.5.8-r9 installed size:
-176 KiB
-
-libmcrypt-2.5.8-r9 license:
-LGPL-2.1-or-later
-
-```
-
 ### `apk` package: `libmemcached-libs`
 
 ```console
@@ -440,16 +423,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-14.1-r4 description:
+libpq-14.2-r0 description:
 PostgreSQL client library
 
-libpq-14.1-r4 webpage:
+libpq-14.2-r0 webpage:
 https://www.postgresql.org/
 
-libpq-14.1-r4 installed size:
+libpq-14.2-r0 installed size:
 328 KiB
 
-libpq-14.1-r4 license:
+libpq-14.2-r0 license:
 PostgreSQL
 
 ```
@@ -508,16 +491,16 @@ ISC
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1l-r7 description:
+libssl1.1-1.1.1l-r8 description:
 SSL shared libraries
 
-libssl1.1-1.1.1l-r7 webpage:
+libssl1.1-1.1.1l-r8 webpage:
 https://www.openssl.org/
 
-libssl1.1-1.1.1l-r7 installed size:
+libssl1.1-1.1.1l-r8 installed size:
 528 KiB
 
-libssl1.1-1.1.1l-r7 license:
+libssl1.1-1.1.1l-r8 license:
 OpenSSL
 
 ```

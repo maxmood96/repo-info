@@ -1,10 +1,10 @@
-# `joomla:4.0.6-php8.0-fpm-alpine`
+# `joomla:4.1.0-php8.0-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:cca2a0930395d86630efc62dd45851c83362acc902e67a856f5fe8bb9c576b88`
-- Created: `2022-01-22T00:03:09.322441507Z`
-- Virtual Size: ~ 204.35 Mb  
+- Image ID: `sha256:84e7394b408b2d8ce6229cda190618ea7cf9e2f84f75d806a0388c067f5bb077`
+- Created: `2022-02-16T00:29:27.419387417Z`
+- Virtual Size: ~ 205.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -22,8 +22,8 @@
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.0.15.tar.xz.asc`
   - `PHP_SHA256=5f33544061d37d805a2a9ce791f081ef08a7155bd7ba2362e69bba2d06b0f8b2`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
-  - `JOOMLA_VERSION=4.0.6`
-  - `JOOMLA_SHA512=a35f3181c594ef0c30e4f8ec122f32e2ebe1795ccd31f55656be0f214b1f6eed54ef7961aed0be772b2c4a6cc5d0e6454b9213f1ba8833dd52317c6d216d9fd8`
+  - `JOOMLA_VERSION=4.1.0`
+  - `JOOMLA_SHA512=44173170fb1598c465415cba919339c26624322621efed17c95fdffca7b62a1089863615e415f0ec36a6a4c4f5c746b7ec06dddd08929757f737e1a2a15ff714`
 - Labels:
   - `maintainer=Llewellyn van der Merwe <llewellyn.van-der-merwe@community.joomla.org> (@Llewellynvdm), Harald Leithner <harald.leithner@community.joomla.org> (@HLeithner)`
 
@@ -219,16 +219,16 @@ GPL-3.0-or-later
 ### `apk` package: `gmp`
 
 ```console
-gmp-6.2.1-r0 description:
+gmp-6.2.1-r1 description:
 free library for arbitrary precision arithmetic
 
-gmp-6.2.1-r0 webpage:
+gmp-6.2.1-r1 webpage:
 https://gmplib.org/
 
-gmp-6.2.1-r0 installed size:
+gmp-6.2.1-r1 installed size:
 420 KiB
 
-gmp-6.2.1-r0 license:
+gmp-6.2.1-r1 license:
 LGPL-3.0-or-later OR GPL-2.0-or-later
 
 ```
@@ -386,23 +386,6 @@ OLDAP-2.8
 
 ```
 
-### `apk` package: `libmcrypt`
-
-```console
-libmcrypt-2.5.8-r9 description:
-A library which provides a uniform interface to several symmetric encryption algorithms
-
-libmcrypt-2.5.8-r9 webpage:
-http://mcrypt.sourceforge.net/
-
-libmcrypt-2.5.8-r9 installed size:
-176 KiB
-
-libmcrypt-2.5.8-r9 license:
-LGPL-2.1-or-later
-
-```
-
 ### `apk` package: `libmemcached-libs`
 
 ```console
@@ -440,16 +423,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-14.1-r5 description:
+libpq-14.2-r0 description:
 PostgreSQL client library
 
-libpq-14.1-r5 webpage:
+libpq-14.2-r0 webpage:
 https://www.postgresql.org/
 
-libpq-14.1-r5 installed size:
+libpq-14.2-r0 installed size:
 328 KiB
 
-libpq-14.1-r5 license:
+libpq-14.2-r0 license:
 PostgreSQL
 
 ```

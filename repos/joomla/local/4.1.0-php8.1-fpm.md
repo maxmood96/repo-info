@@ -1,10 +1,10 @@
-# `joomla:3.10.6-php7.3-fpm`
+# `joomla:4.1.0-php8.1-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4676438c2ddb89aa81061d45b517295bc935bad40ed48ef33fc128b6d8641372`
-- Created: `2022-02-16T00:37:47.32747509Z`
-- Virtual Size: ~ 500.17 Mb  
+- Image ID: `sha256:eebc406b070e7aa548a3cdac6bfcce337644f05ec25f6a25f401d2499ed702d2`
+- Created: `2022-02-16T00:37:18.942007041Z`
+- Virtual Size: ~ 546.72 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -16,14 +16,14 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
-  - `GPG_KEYS=CBAF69F173A0FEA4B537F470D66C9593118BCCB6 F38252826ACD957EF380D39F2F7956BC5DA04B5D`
-  - `PHP_VERSION=7.3.33`
-  - `PHP_URL=https://www.php.net/distributions/php-7.3.33.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.3.33.tar.xz.asc`
-  - `PHP_SHA256=166eaccde933381da9516a2b70ad0f447d7cec4b603d07b9a916032b215b90cc`
+  - `GPG_KEYS=528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD`
+  - `PHP_VERSION=8.1.2`
+  - `PHP_URL=https://www.php.net/distributions/php-8.1.2.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.2.tar.xz.asc`
+  - `PHP_SHA256=6b448242fd360c1a9f265b7263abf3da25d28f2b2b0f5465533b69be51a391dd`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
-  - `JOOMLA_VERSION=3.10.6`
-  - `JOOMLA_SHA512=cd871290f83d6fd1a2e3fe077735e86554a1b3825e5d7e831df7aad56831ee6a958d77e92fa50c0cbbd240ed1158d4c1eadc8c1e968c990db5c89c4f5ee40a0a`
+  - `JOOMLA_VERSION=4.1.0`
+  - `JOOMLA_SHA512=44173170fb1598c465415cba919339c26624322621efed17c95fdffca7b62a1089863615e415f0ec36a6a4c4f5c746b7ec06dddd08929757f737e1a2a15ff714`
 - Labels:
   - `maintainer=Llewellyn van der Merwe <llewellyn.van-der-merwe@community.joomla.org> (@Llewellynvdm), Harald Leithner <harald.leithner@community.joomla.org> (@HLeithner)`
 
@@ -1548,6 +1548,33 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libnsl/1.3.0-2/ (for browsing the source)
 - https://sources.debian.net/src/libnsl/1.3.0-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libnsl/1.3.0-2/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `libonig=6.9.6-1.1`
+
+Binary Packages:
+
+- `libonig5:amd64=6.9.6-1.1`
+
+Licenses: (parsed from: `/usr/share/doc/libonig5/copyright`)
+
+- `BSD-2-clause`
+- `GPL-2`
+- `GPL-2+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libonig=6.9.6-1.1
+'http://deb.debian.org/debian/pool/main/libo/libonig/libonig_6.9.6-1.1.dsc' libonig_6.9.6-1.1.dsc 1868 SHA256:a5bb396616d170586fdf01dfb4191b59181dc0f4505b648a68fe801ea8a6f5fb
+'http://deb.debian.org/debian/pool/main/libo/libonig/libonig_6.9.6.orig.tar.gz' libonig_6.9.6.orig.tar.gz 621239 SHA256:aec9f6902ad8b7bb53b2c55d04686ea75da89a06694836b0362cb206578dfe89
+'http://deb.debian.org/debian/pool/main/libo/libonig/libonig_6.9.6-1.1.debian.tar.xz' libonig_6.9.6-1.1.debian.tar.xz 8680 SHA256:59d4dccdc85481947efeab3dbb79ba6208d7758df107ad2510adf101666a6d8f
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libonig/6.9.6-1.1/ (for browsing the source)
+- https://sources.debian.net/src/libonig/6.9.6-1.1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libonig/6.9.6-1.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpng1.6=1.6.37-3`
 
