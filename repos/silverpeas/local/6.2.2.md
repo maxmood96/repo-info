@@ -409,13 +409,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=11ubuntu5.4
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_11ubuntu5.4.dsc' base-files_11ubuntu5.4.dsc 1331 SHA512:e312d34034ef8d471488894159d6eda5f21f8d9255ace701ddbe051c37546f0f4465ad655eaca80375c6f565a95c2e540a54693400c62f982bb67e995d212430
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_11ubuntu5.4.tar.xz' base-files_11ubuntu5.4.tar.xz 80576 SHA512:11e6e0b05c5c3ae9bfcc8568deb1a9ac765b4dd6ce741ae988ad783e4d58d861de2344219422931f5fc775b1bedf456bb98d2e841e00dae5e08686564d841690
-```
 
 ### `dpkg` source package: `base-passwd=3.5.47`
 
@@ -3165,13 +3161,9 @@ Licenses: (parsed from: `/usr/share/doc/language-pack-en-base/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris language-pack-en-base=1:20.04+20210802
-'http://archive.ubuntu.com/ubuntu/pool/main/l/language-pack-en-base/language-pack-en-base_20.04+20210802.dsc' language-pack-en-base_20.04+20210802.dsc 1555 SHA512:75f9fbac3c553a9d6128d1dc489013ed423f72e24f0f6381408848a6bc1d49e0f0651c289dc357f5da102a41bb122633a8fed2928121b4006a80b196eba497c2
-'http://archive.ubuntu.com/ubuntu/pool/main/l/language-pack-en-base/language-pack-en-base_20.04+20210802.tar.xz' language-pack-en-base_20.04+20210802.tar.xz 1614536 SHA512:4a726561214e44fb12de9cc03dfc5c64ff55268e3316ea6f107bffe76868503126d8bcdcee9db8180846bd90438f6a5ded657163fb7859b655ab74d68c293ce2
-```
 
 ### `dpkg` source package: `language-pack-en=1:20.04+20210802`
 
@@ -3183,13 +3175,9 @@ Licenses: (parsed from: `/usr/share/doc/language-pack-en/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris language-pack-en=1:20.04+20210802
-'http://archive.ubuntu.com/ubuntu/pool/main/l/language-pack-en/language-pack-en_20.04+20210802.dsc' language-pack-en_20.04+20210802.dsc 1516 SHA512:feaa2802ce514669aebbb14c5281aa0b6d7cf0727e3eba25e9918cdb02abb9474952b9a36efa500c876e722bc606aea80434c00f622141a48a1e65829896e6a5
-'http://archive.ubuntu.com/ubuntu/pool/main/l/language-pack-en/language-pack-en_20.04+20210802.tar.xz' language-pack-en_20.04+20210802.tar.xz 8092 SHA512:62af4044de4603b2a217c58620c598f0803754a7485d32533e9f246c0383b5fb160bb0cd57acfd456122107095bc75675e3c7bca1509c9c8bdc113f557228167
-```
 
 ### `dpkg` source package: `language-pack-fr-base=1:20.04+20210802`
 
