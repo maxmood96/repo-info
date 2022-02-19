@@ -1,10 +1,10 @@
-# `nextcloud:23.0.1-fpm-alpine`
+# `nextcloud:22.2.5-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5f539dd4e809b36a51e2fe4067c5bec5e9e8f8b88e5a4a7ce23e62111a136342`
-- Created: `2022-02-04T05:22:44.447713309Z`
-- Virtual Size: ~ 585.97 Mb  
+- Image ID: `sha256:e2f1c7ffd5658de15069ebc690d385dafc12d6d6f5043ce8b3b64453b588f646`
+- Created: `2022-02-18T23:37:36.878744831Z`
+- Virtual Size: ~ 553.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -17,13 +17,13 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F`
-  - `PHP_VERSION=8.0.15`
-  - `PHP_URL=https://www.php.net/distributions/php-8.0.15.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.0.15.tar.xz.asc`
-  - `PHP_SHA256=5f33544061d37d805a2a9ce791f081ef08a7155bd7ba2362e69bba2d06b0f8b2`
+  - `PHP_VERSION=8.0.16`
+  - `PHP_URL=https://www.php.net/distributions/php-8.0.16.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.0.16.tar.xz.asc`
+  - `PHP_SHA256=f27a2f25259e8c51e42dfd74e24a546ee521438ad7d9f6c6e794aa91f38bab0a`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
-  - `NEXTCLOUD_VERSION=23.0.1`
+  - `NEXTCLOUD_VERSION=22.2.5`
 
 ## `apk` (`.apk`-based packages)
 
@@ -557,16 +557,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-14.1-r5 description:
+libpq-14.2-r0 description:
 PostgreSQL client library
 
-libpq-14.1-r5 webpage:
+libpq-14.2-r0 webpage:
 https://www.postgresql.org/
 
-libpq-14.1-r5 installed size:
+libpq-14.2-r0 installed size:
 328 KiB
 
-libpq-14.1-r5 license:
+libpq-14.2-r0 license:
 PostgreSQL
 
 ```
@@ -659,16 +659,16 @@ GPL-2.0-or-later LGPL-2.1-or-later
 ### `apk` package: `libuuid`
 
 ```console
-libuuid-2.37.3-r0 description:
+libuuid-2.37.4-r0 description:
 DCE compatible Universally Unique Identifier library
 
-libuuid-2.37.3-r0 webpage:
+libuuid-2.37.4-r0 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libuuid-2.37.3-r0 installed size:
+libuuid-2.37.4-r0 installed size:
 40 KiB
 
-libuuid-2.37.3-r0 license:
+libuuid-2.37.4-r0 license:
 GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND
 
 ```
