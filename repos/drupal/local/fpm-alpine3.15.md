@@ -1,10 +1,10 @@
-# `drupal:9.2.12-php8.0-fpm-alpine3.15`
+# `drupal:9.2.13-php8.0-fpm-alpine3.15`
 
 ## Docker Metadata
 
-- Image ID: `sha256:fa4659f037fb4790a525abe31848c550a8c3d46627619fe60f8f535e4602fb4e`
-- Created: `2022-02-14T21:37:26.847727577Z`
-- Virtual Size: ~ 174.06 Mb  
+- Image ID: `sha256:856e1f5ea629ba5435472d5f218b3dcb82496dcf97b2c39bb9ace5f873196206`
+- Created: `2022-02-19T04:44:32.418738279Z`
+- Virtual Size: ~ 174.16 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -17,11 +17,11 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F`
-  - `PHP_VERSION=8.0.15`
-  - `PHP_URL=https://www.php.net/distributions/php-8.0.15.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.0.15.tar.xz.asc`
-  - `PHP_SHA256=5f33544061d37d805a2a9ce791f081ef08a7155bd7ba2362e69bba2d06b0f8b2`
-  - `DRUPAL_VERSION=9.2.12`
+  - `PHP_VERSION=8.0.16`
+  - `PHP_URL=https://www.php.net/distributions/php-8.0.16.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.0.16.tar.xz.asc`
+  - `PHP_SHA256=f27a2f25259e8c51e42dfd74e24a546ee521438ad7d9f6c6e794aa91f38bab0a`
+  - `DRUPAL_VERSION=9.2.13`
 
 ## `apk` (`.apk`-based packages)
 

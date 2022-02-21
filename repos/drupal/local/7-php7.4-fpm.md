@@ -1,9 +1,9 @@
-# `drupal:7.87-php7.4-fpm-bullseye`
+# `drupal:7.88-php7.4-fpm-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:df3d4384c2e4208584503bd9dbe6cd44a1341ac4d69880567ed1c0ff06ecc09c`
-- Created: `2022-02-14T21:39:35.611672744Z`
+- Image ID: `sha256:468ad749f8ad97279d30472ede4d28233babb13382f40beb9eb21463576e9583`
+- Created: `2022-02-17T23:32:53.051936441Z`
 - Virtual Size: ~ 477.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -17,12 +17,12 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312`
-  - `PHP_VERSION=7.4.27`
-  - `PHP_URL=https://www.php.net/distributions/php-7.4.27.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.27.tar.xz.asc`
-  - `PHP_SHA256=3f8b937310f155822752229c2c2feb8cc2621e25a728e7b94d0d74c128c43d0c`
-  - `DRUPAL_VERSION=7.87`
-  - `DRUPAL_MD5=75200b0b3f00140f25a990cb1ef35789`
+  - `PHP_VERSION=7.4.28`
+  - `PHP_URL=https://www.php.net/distributions/php-7.4.28.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.28.tar.xz.asc`
+  - `PHP_SHA256=9cc3b6f6217b60582f78566b3814532c4b71d517876c25013ae51811e65d8fce`
+  - `DRUPAL_VERSION=7.88`
+  - `DRUPAL_MD5=ff1a687492ea18e22cfb009198a7dafc`
 
 ## `dpkg` (`.deb`-based packages)
 
