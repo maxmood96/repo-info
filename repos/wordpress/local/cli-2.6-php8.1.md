@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ba58a3f5739275b505d505aa6c7a2b039a7447f2269b04edf16952be7ce76d0c`
-- Created: `2022-01-29T00:01:44.182829085Z`
-- Virtual Size: ~ 185.52 Mb  
+- Image ID: `sha256:750217b3f9f419ac31a363c9cea8d0ac97592e8a2e023fb4dcda369407b0fb78`
+- Created: `2022-02-19T00:45:03.563206336Z`
+- Virtual Size: ~ 185.60 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD`
-  - `PHP_VERSION=8.1.2`
-  - `PHP_URL=https://www.php.net/distributions/php-8.1.2.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.2.tar.xz.asc`
-  - `PHP_SHA256=6b448242fd360c1a9f265b7263abf3da25d28f2b2b0f5465533b69be51a391dd`
+  - `PHP_VERSION=8.1.3`
+  - `PHP_URL=https://www.php.net/distributions/php-8.1.3.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.3.tar.xz.asc`
+  - `PHP_SHA256=5d65a11071b47669c17452fb336c290b67c101efb745c1dbe7525b5caf546ec6`
   - `WORDPRESS_CLI_GPG_KEY=63AF7AA15067C05616FDDD88A3A2E8F226F0BC06`
   - `WORDPRESS_CLI_VERSION=2.6.0`
   - `WORDPRESS_CLI_SHA512=d73f9161a1f03b8ecaac7b196b6051fe847b3c402b9c92b1f6f3acbe5b1cf91f7260c0e499b8947bab75920ecec918b39533ca65fa5a1fd3eb6ce7b8e2c58e7d`
@@ -98,16 +98,16 @@ Apache-2.0 CC0-1.0
 ### `apk` package: `bash`
 
 ```console
-bash-5.1.8-r0 description:
+bash-5.1.16-r0 description:
 The GNU Bourne Again shell
 
-bash-5.1.8-r0 webpage:
+bash-5.1.16-r0 webpage:
 https://www.gnu.org/software/bash/bash.html
 
-bash-5.1.8-r0 installed size:
+bash-5.1.16-r0 installed size:
 1296 KiB
 
-bash-5.1.8-r0 license:
+bash-5.1.16-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -200,16 +200,16 @@ MIT
 ### `apk` package: `expat`
 
 ```console
-expat-2.4.3-r0 description:
+expat-2.4.4-r0 description:
 XML Parser library written in C
 
-expat-2.4.3-r0 webpage:
+expat-2.4.4-r0 webpage:
 http://www.libexpat.org/
 
-expat-2.4.3-r0 installed size:
+expat-2.4.4-r0 installed size:
 192 KiB
 
-expat-2.4.3-r0 license:
+expat-2.4.4-r0 license:
 MIT
 
 ```
@@ -591,16 +591,16 @@ GPL-2.0-or-later LGPL-2.1-or-later
 ### `apk` package: `libuuid`
 
 ```console
-libuuid-2.37.2-r1 description:
+libuuid-2.37.4-r0 description:
 DCE compatible Universally Unique Identifier library
 
-libuuid-2.37.2-r1 webpage:
+libuuid-2.37.4-r0 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libuuid-2.37.2-r1 installed size:
+libuuid-2.37.4-r0 installed size:
 40 KiB
 
-libuuid-2.37.2-r1 license:
+libuuid-2.37.4-r0 license:
 GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND
 
 ```
