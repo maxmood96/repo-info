@@ -283,13 +283,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cdebconf=0.256ubuntu4
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cdebconf/cdebconf_0.256ubuntu4.dsc' cdebconf_0.256ubuntu4.dsc 2941 SHA512:953fc9f1bfbebfc2517de5ea530d52ebb4b5afedc13deffc887412f84de992b19553094cacbbfc8cd9312d1e1edcc64a1430f08de6889aa6a49502d35b17e264
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cdebconf/cdebconf_0.256ubuntu4.tar.xz' cdebconf_0.256ubuntu4.tar.xz 279796 SHA512:f701b7b5b933e3f11d74c985905a7cd8f9fee3b4157f29216238be6784e51e3b9f57d19094a9c7ae78b117d545f8572b71f51207d5da500c1fafbbfde1c75e6a
-```
 
 ### `dpkg` source package: `coreutils=8.32-4ubuntu3`
 
@@ -424,13 +420,13 @@ Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 
 - `BSD-2-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debconf=1.5.79
-'http://archive.ubuntu.com/ubuntu/pool/main/d/debconf/debconf_1.5.79.dsc' debconf_1.5.79.dsc 2082 SHA512:e12cd4ba94dbfecb277efb2424a4adf9e11f5685afa9574167e59cc78b9a25a385c297eaed1fb29f72347f716aba0ad1f887cb28434d4f84bd92d2b6dd19e972
-'http://archive.ubuntu.com/ubuntu/pool/main/d/debconf/debconf_1.5.79.tar.xz' debconf_1.5.79.tar.xz 570588 SHA512:08a19a835422ff81d262e2a7212d42ce636e8fa4b58fb9fb220838f3d497e5c179202fcd3e79afca3b697d074749dbf6a81bfbaea54872f75a818d0cf49ab625
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/debconf/1.5.79/
+
 
 ### `dpkg` source package: `debianutils=5.5-1ubuntu1`
 
@@ -1750,15 +1746,13 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:8.7p1-4
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.7p1-4.dsc' openssh_8.7p1-4.dsc 3347 SHA512:d70c26b64c13d5963eaeeca524f5973f61224ac8ad506bd5b0a04f194e22445d49c5f8e9c89330f95af3ff4193bef92e3e5d248d43a2ae9e582058379706d87c
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.7p1.orig.tar.gz' openssh_8.7p1.orig.tar.gz 1814595 SHA512:08c81024d9e1248abfda6cc874886ff5ae916669b93cd6aff640e0614ee8cbcbc3fe87a9ce47136b6443ddbb1168b114367c74e117551905994e1a7e3fa2c0c2
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.7p1.orig.tar.gz.asc' openssh_8.7p1.orig.tar.gz.asc 833 SHA512:08b4bda855ca3ef202c271f1c0e3486082b93d1009a794d020e7ba223978bc87bf34b1fbccaae3379a47639bd849935fdaaf63bdb781d0a44625066ccf00fbfc
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.7p1-4.debian.tar.xz' openssh_8.7p1-4.debian.tar.xz 185728 SHA512:a27f5e7c674986940375ed5b6b75f82d28ff3463a771c226261a6c20cf1d9929514c3811410e42582b191b50f961468e721043337c5bfcbc256f9a250365b02d
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/openssh/1:8.7p1-4/
+
 
 ### `dpkg` source package: `openssl=3.0.1-0ubuntu1`
 
@@ -2214,14 +2208,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=249.9-0ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.9-0ubuntu2.dsc' systemd_249.9-0ubuntu2.dsc 5674 SHA512:b4131429b45a00aaa3d1eb85e873f80c6369767592e35bd958d5d6b8c76ac705311b9b6c9bf939e639befe9eb4a9db6082080e94896876c48482c9ba45c71103
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.9.orig.tar.gz' systemd_249.9.orig.tar.gz 10613893 SHA512:ce57bc6c522082e55649fc1886c4dc818c89607e175df2c92feffe288dbd38757f36b30abeebe153f5be6b664a49d729405040a952473cb2133a2e39cf9cc164
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.9-0ubuntu2.debian.tar.xz' systemd_249.9-0ubuntu2.debian.tar.xz 224268 SHA512:188bb45d4ab49c2f3ada94eb82c76ac302228bfab4985b78d89ea0255cae0761bd5daffc708279f8654d7a0e7537bc8b090c59590f740745a8c80b5f485de874
-```
 
 ### `dpkg` source package: `sysvinit=3.01-1ubuntu1`
 
@@ -2390,14 +2379,9 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.37.2-4ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.37.2-4ubuntu1.dsc' util-linux_2.37.2-4ubuntu1.dsc 4567 SHA512:2245ab47b726712f741ac209c8c1eaed6ba2496070c618abba228b680fe20799de436aa6d54907e669c356a4eceb839d1623a0e3ab904ca8069c10f359fb366e
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.37.2.orig.tar.xz' util-linux_2.37.2.orig.tar.xz 5621624 SHA512:38f0fe820445e3bfa79550e6581c230f98c7661566ccc4daa51c7208a5f972c61b4e57dfc86bed074fdbc7c40bc79f856be8f6a05a8860c1c0cecc4208e8b81d
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.37.2-4ubuntu1.debian.tar.xz' util-linux_2.37.2-4ubuntu1.debian.tar.xz 102856 SHA512:a8d4de10770d8f529ccfb38626e6fdaeb8619881ecffa4bbe109d118b992471f4246189474152c411de60a5e2914800ab5f545ea45c317ae539009f74257a670
-```
 
 ### `dpkg` source package: `wget=1.21.2-2ubuntu1`
 

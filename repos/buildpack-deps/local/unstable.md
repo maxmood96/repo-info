@@ -81,20 +81,13 @@ Licenses: (parsed from: `/usr/share/doc/libaom3/copyright`)
 - `ISC`
 - `public-domain-md5`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris aom=3.2.0-2
-'http://deb.debian.org/debian/pool/main/a/aom/aom_3.2.0-2.dsc' aom_3.2.0-2.dsc 2190 SHA256:5bef089e62c80d70835bbfcd0f843bad523dd321e0436025db2debf5745fe801
-'http://deb.debian.org/debian/pool/main/a/aom/aom_3.2.0.orig.tar.gz' aom_3.2.0.orig.tar.gz 4728473 SHA256:ef49182f99f73c231e650211584a80fdedd6ab319be06b3fad4ffcb56dbc3627
-'http://deb.debian.org/debian/pool/main/a/aom/aom_3.2.0-2.debian.tar.xz' aom_3.2.0-2.debian.tar.xz 12172 SHA256:349380ac857667196c3e35f4832eecfc9bfbddd1d0d31412a8fadebd9c7898d2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/aom/3.2.0-2/
 
-- https://sources.debian.net/src/aom/3.2.0-2/ (for browsing the source)
-- https://sources.debian.net/src/aom/3.2.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/aom/3.2.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apr-util=1.6.1-5`
 
@@ -2045,21 +2038,13 @@ Licenses: (parsed from: `/usr/share/doc/krb5-multidev/copyright`, `/usr/share/do
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.18.3-7
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.18.3-7.dsc' krb5_1.18.3-7.dsc 3160 SHA256:a5c8382335fb37e99f15266f2bf295700a1b2fda7d7db87899dd79a7f35514e9
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.18.3.orig.tar.gz' krb5_1.18.3.orig.tar.gz 8715312 SHA256:e61783c292b5efd9afb45c555a80dd267ac67eebabca42185362bee6c4fbd719
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.18.3.orig.tar.gz.asc' krb5_1.18.3.orig.tar.gz.asc 833 SHA256:ded19808ba7320ad0bb3ddfb5202845b2ff36a50613af7832f78dd3cb4437419
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.18.3-7.debian.tar.xz' krb5_1.18.3-7.debian.tar.xz 106316 SHA256:6a40d855d2154b353f958f383741d09b5e0c252b263dccefa23ddc1ae77f77c2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/krb5/1.18.3-7/
 
-- https://sources.debian.net/src/krb5/1.18.3-7/ (for browsing the source)
-- https://sources.debian.net/src/krb5/1.18.3-7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/krb5/1.18.3-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lcms2=2.12~rc1-2`
 
@@ -2318,20 +2303,13 @@ Licenses: (parsed from: `/usr/share/doc/libdeflate-dev/copyright`, `/usr/share/d
 
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libdeflate=1.9-1
-'http://deb.debian.org/debian/pool/main/libd/libdeflate/libdeflate_1.9-1.dsc' libdeflate_1.9-1.dsc 2199 SHA256:ff745e9fd13c48a24230516836c96d202f4fb1cfb6d070389cc781205a676154
-'http://deb.debian.org/debian/pool/main/libd/libdeflate/libdeflate_1.9.orig.tar.gz' libdeflate_1.9.orig.tar.gz 157565 SHA256:a537ab6125c226b874c02b166488b326aece954930260dbf682d88fc339137e3
-'http://deb.debian.org/debian/pool/main/libd/libdeflate/libdeflate_1.9-1.debian.tar.xz' libdeflate_1.9-1.debian.tar.xz 4324 SHA256:3df281b47bb529355fed6730b69c92204fa16301412066d9343a490f422e41b6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libdeflate/1.9-1/
 
-- https://sources.debian.net/src/libdeflate/1.9-1/ (for browsing the source)
-- https://sources.debian.net/src/libdeflate/1.9-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libdeflate/1.9-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libedit=3.1-20210910-1`
 
@@ -3547,20 +3525,13 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`, `/usr/share/doc/libx
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.12+dfsg-5
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.12+dfsg-5.dsc' libxml2_2.9.12+dfsg-5.dsc 2576 SHA256:a8ed15cbe14a997109d5a81fde9af5fcd0adafc2026fd9f4932adb3e2b0a4f28
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.12+dfsg.orig.tar.xz' libxml2_2.9.12+dfsg.orig.tar.xz 2535044 SHA256:e25d1b3e476f01f3c8c6b34950fa1be5535c13ef5207825cafe285bc88fd4ed0
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.12+dfsg-5.debian.tar.xz' libxml2_2.9.12+dfsg-5.debian.tar.xz 32960 SHA256:ba1b6ec8ea12312cdffd1d7b24dbdfed2702ba920bab6f2029940be8159d2851
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libxml2/2.9.12+dfsg-5/
 
-- https://sources.debian.net/src/libxml2/2.9.12+dfsg-5/ (for browsing the source)
-- https://sources.debian.net/src/libxml2/2.9.12+dfsg-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxml2/2.9.12+dfsg-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxrender=1:0.9.10-1`
 

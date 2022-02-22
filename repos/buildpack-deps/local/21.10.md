@@ -2962,14 +2962,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.13.0-28.31
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.13.0-28.31.dsc' linux_5.13.0-28.31.dsc 8465 SHA512:70837fd4b4e57c7a0ee6284bc57b11b32a3c35e609742900bfab3f5081effab5f1812191feb553297717b419fc1149d1c72668596f8a4583cde789e0b276211e
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.13.0.orig.tar.gz' linux_5.13.0.orig.tar.gz 189652704 SHA512:e7aff485ac9f5752df4a35fbb7668fd0a60597d3cd63c3bc78933f9fbf509ed83f8d2516c8441e6136157c5efe9a4745f97ba74b3b4353c26c1e44ca0eaa0b87
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.13.0-28.31.diff.gz' linux_5.13.0-28.31.diff.gz 6082841 SHA512:53c99a6732305021815884a1eb3eb39de0c5bf31b0275f8006876d40c426a339929b5acd227ee9cdffc207528531168e9e7483d89eaca438a7c9ec1a773caab3
-```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu3`
 
