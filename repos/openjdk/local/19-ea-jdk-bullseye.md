@@ -1,10 +1,10 @@
-# `openjdk:19-ea-9-jdk-bullseye`
+# `openjdk:19-ea-10-jdk-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a3686c265df7aa8b4a11ee5a2689b5927c608e80f1b2ad0c74990874ef19a2ee`
-- Created: `2022-02-11T23:50:15.547414235Z`
-- Virtual Size: ~ 669.42 Mb  
+- Image ID: `sha256:506d4f0010688088e297fc7ba9874ed487c28387318730defdc92663771b27b4`
+- Created: `2022-02-21T18:25:24.267547815Z`
+- Virtual Size: ~ 669.49 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/openjdk-19/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/local/openjdk-19`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=19-ea+9`
+  - `JAVA_VERSION=19-ea+10`
 
 ## `dpkg` (`.deb`-based packages)
 
