@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4cd8c5a0d7172874f278851901ed7866ac8804d9d48fde2924d773e8baf4af0c`
-- Created: `2022-01-20T23:45:38.77711613Z`
-- Virtual Size: ~ 95.80 Mb  
+- Image ID: `sha256:8f2ac107b686d038937a63cd5794e532b0a5765b8e80b8a5756088892a136c98`
+- Created: `2022-02-21T18:44:08.386768344Z`
+- Virtual Size: ~ 95.90 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F`
-  - `PHP_VERSION=8.0.15`
-  - `PHP_URL=https://www.php.net/distributions/php-8.0.15.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.0.15.tar.xz.asc`
-  - `PHP_SHA256=5f33544061d37d805a2a9ce791f081ef08a7155bd7ba2362e69bba2d06b0f8b2`
+  - `PHP_VERSION=8.0.16`
+  - `PHP_URL=https://www.php.net/distributions/php-8.0.16.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.0.16.tar.xz.asc`
+  - `PHP_SHA256=f27a2f25259e8c51e42dfd74e24a546ee521438ad7d9f6c6e794aa91f38bab0a`
 - Labels:
   - `org.opencontainers.image.authors=YOURLS`
   - `org.opencontainers.image.description=Your Own URL Shortener`
@@ -103,16 +103,16 @@ Apache-2.0 CC0-1.0
 ### `apk` package: `bash`
 
 ```console
-bash-5.1.8-r0 description:
+bash-5.1.16-r0 description:
 The GNU Bourne Again shell
 
-bash-5.1.8-r0 webpage:
+bash-5.1.16-r0 webpage:
 https://www.gnu.org/software/bash/bash.html
 
-bash-5.1.8-r0 installed size:
+bash-5.1.16-r0 installed size:
 1296 KiB
 
-bash-5.1.8-r0 license:
+bash-5.1.16-r0 license:
 GPL-3.0-or-later
 
 ```
