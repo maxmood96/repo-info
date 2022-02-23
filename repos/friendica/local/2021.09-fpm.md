@@ -813,20 +813,13 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.2.10-2+deb11u1
-'http://security.debian.org/debian-security/pool/updates/main/e/expat/expat_2.2.10-2+deb11u1.dsc' expat_2.2.10-2+deb11u1.dsc 2175 SHA256:bf6b9e6736306c24b3e1b3f9b57d7577136caff6973dbbdbb76d9937fe0cd331
-'http://security.debian.org/debian-security/pool/updates/main/e/expat/expat_2.2.10.orig.tar.gz' expat_2.2.10.orig.tar.gz 8276395 SHA256:62e280f5fd29a5b70973f623e20a7412c3e3912c2684cb0e462e2c881be129e1
-'http://security.debian.org/debian-security/pool/updates/main/e/expat/expat_2.2.10-2+deb11u1.debian.tar.xz' expat_2.2.10-2+deb11u1.debian.tar.xz 15052 SHA256:5c44eb525fdc4843c3b5fb8efc2d9699292100ff5b76ee148f58e9bae72057b9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/expat/2.2.10-2+deb11u1/
 
-- https://sources.debian.net/src/expat/2.2.10-2+deb11u1/ (for browsing the source)
-- https://sources.debian.net/src/expat/2.2.10-2+deb11u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/expat/2.2.10-2+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `fftw3=3.3.8-2`
 
