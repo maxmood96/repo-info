@@ -1,7 +1,7 @@
 ## `hylang:python3.9`
 
 ```console
-$ docker pull hylang@sha256:f4fa599524b256abad67300c0c4ad47ac9d27a7fcff0bfe434ef42ada3ca906e
+$ docker pull hylang@sha256:cfa350c25d5cc2a1221d04aed19824daffb2b4f880381e35d8e2012b24a0f286
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -20,14 +20,14 @@ $ docker pull hylang@sha256:f4fa599524b256abad67300c0c4ad47ac9d27a7fcff0bfe434ef
 ### `hylang:python3.9` - linux; amd64
 
 ```console
-$ docker pull hylang@sha256:59afb492adf0d644aa716a35388016453869a1e803566ade08ac9c1f023d33ff
+$ docker pull hylang@sha256:ca39f88acff4725069a841774008051a9f8c7fd950c1be55333080b2e67e0cd1
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **48.7 MB (48681889 bytes)**  
+-	Total Size: **48.7 MB (48677214 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8ed44e9b477c32f15030b846e4b946405c162a191470c23c341aef7ba856f6ed`
+-	Image ID: `sha256:655873f92f97ff264fdd4c806bdf102f796515d0f659c9bb39028c169fe72c60`
 -	Default Command: `["hy"]`
 
 ```dockerfile
@@ -57,17 +57,17 @@ ENV PYTHON_SETUPTOOLS_VERSION=58.1.0
 ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/2caf84b14febcda8077e59e9b8a6ef9a680aa392/public/get-pip.py
 # Fri, 04 Feb 2022 23:21:49 GMT
 ENV PYTHON_GET_PIP_SHA256=7c5239cea323cadae36083079a5ee6b2b3d56f25762a0c060d2867b89e5e06c5
-# Fri, 04 Feb 2022 23:22:01 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	; 	rm -f get-pip.py
-# Fri, 04 Feb 2022 23:22:01 GMT
+# Wed, 23 Feb 2022 23:55:55 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		export PYTHONDONTWRITEBYTECODE=1; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		--no-compile 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	rm -f get-pip.py; 		pip --version
+# Wed, 23 Feb 2022 23:55:55 GMT
 CMD ["python3"]
-# Sat, 05 Feb 2022 06:25:02 GMT
+# Thu, 24 Feb 2022 01:23:37 GMT
 ENV HY_VERSION=1.0a4
-# Sat, 05 Feb 2022 06:25:02 GMT
+# Thu, 24 Feb 2022 01:23:37 GMT
 ENV HYRULE_VERSION=0.1
-# Sat, 05 Feb 2022 06:25:06 GMT
+# Thu, 24 Feb 2022 01:23:44 GMT
 RUN pip install --no-cache-dir "hy == $HY_VERSION" "hyrule == $HYRULE_VERSION"
-# Sat, 05 Feb 2022 06:25:06 GMT
+# Thu, 24 Feb 2022 01:23:45 GMT
 CMD ["hy"]
 ```
 
@@ -88,13 +88,13 @@ CMD ["hy"]
 		Last Modified: Sat, 29 Jan 2022 06:52:16 GMT  
 		Size: 238.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:078e1103ffcc0cb3a883b9b6ae03e39b9cf0faf28f754bf6ef0d504a1c4cf182`  
-		Last Modified: Fri, 04 Feb 2022 23:31:05 GMT  
-		Size: 2.6 MB (2643740 bytes)  
+	-	`sha256:33b1e0a273afdc2e9a167e5d9154566c1b536cc7110b988ee93420608c063b4d`  
+		Last Modified: Thu, 24 Feb 2022 00:58:50 GMT  
+		Size: 2.6 MB (2637231 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:147177afad56d80ab35a93f44e8b68a1ff0133d8397db425d04b4e33ca74478b`  
-		Last Modified: Sat, 05 Feb 2022 06:28:54 GMT  
-		Size: 2.6 MB (2566301 bytes)  
+	-	`sha256:6340ab13af824fd2e68e7f050b7979139444de6c41755fc33f2559f9631d9e4c`  
+		Last Modified: Thu, 24 Feb 2022 01:28:02 GMT  
+		Size: 2.6 MB (2568135 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `hylang:python3.9` - linux; arm variant v5
@@ -180,14 +180,14 @@ CMD ["hy"]
 ### `hylang:python3.9` - linux; arm variant v7
 
 ```console
-$ docker pull hylang@sha256:0d743fd998eb5a07a7cf8dc3c004b76ad2f416a80a39e2f4f716c556c12b8dd2
+$ docker pull hylang@sha256:2507702f11a80190214aee53a4524c005ca94c3f8ee83788118b9961e60495ad
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **42.9 MB (42923918 bytes)**  
+-	Total Size: **42.9 MB (42919151 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4e8fb84be620018f5122afc22e41c36c7803e57b7fbf6b124376cbf2fc3adc07`
+-	Image ID: `sha256:e679ae6b2496b31bd1592293efaa4890b3c91bceb78b40cbc309484eafe76b28`
 -	Default Command: `["hy"]`
 
 ```dockerfile
@@ -217,17 +217,17 @@ ENV PYTHON_SETUPTOOLS_VERSION=58.1.0
 ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/2caf84b14febcda8077e59e9b8a6ef9a680aa392/public/get-pip.py
 # Sat, 05 Feb 2022 02:37:07 GMT
 ENV PYTHON_GET_PIP_SHA256=7c5239cea323cadae36083079a5ee6b2b3d56f25762a0c060d2867b89e5e06c5
-# Sat, 05 Feb 2022 02:37:36 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	; 	rm -f get-pip.py
-# Sat, 05 Feb 2022 02:37:37 GMT
+# Thu, 24 Feb 2022 00:44:15 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		export PYTHONDONTWRITEBYTECODE=1; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		--no-compile 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	rm -f get-pip.py; 		pip --version
+# Thu, 24 Feb 2022 00:44:15 GMT
 CMD ["python3"]
-# Sat, 05 Feb 2022 06:35:06 GMT
+# Thu, 24 Feb 2022 03:16:59 GMT
 ENV HY_VERSION=1.0a4
-# Sat, 05 Feb 2022 06:35:07 GMT
+# Thu, 24 Feb 2022 03:16:59 GMT
 ENV HYRULE_VERSION=0.1
-# Sat, 05 Feb 2022 06:35:14 GMT
+# Thu, 24 Feb 2022 03:17:06 GMT
 RUN pip install --no-cache-dir "hy == $HY_VERSION" "hyrule == $HYRULE_VERSION"
-# Sat, 05 Feb 2022 06:35:15 GMT
+# Thu, 24 Feb 2022 03:17:07 GMT
 CMD ["hy"]
 ```
 
@@ -248,26 +248,26 @@ CMD ["hy"]
 		Last Modified: Sat, 29 Jan 2022 13:38:15 GMT  
 		Size: 235.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c0dbfaa9c3fe2786073f1e7d60001cbdf30a5c2e5d9278aea16f2b7b0d6455e4`  
-		Last Modified: Sat, 05 Feb 2022 02:59:04 GMT  
-		Size: 2.6 MB (2643576 bytes)  
+	-	`sha256:eae66bcaa30f11e0bab9755dd431188c6fd5019bb5269e871adfc4683d3c0bac`  
+		Last Modified: Thu, 24 Feb 2022 02:23:23 GMT  
+		Size: 2.6 MB (2636864 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9d0150abb6eb2cb2ba55ce5817b24fcd73e22159176d5de8aded09457e66b849`  
-		Last Modified: Sat, 05 Feb 2022 06:45:02 GMT  
-		Size: 2.6 MB (2566391 bytes)  
+	-	`sha256:59c6684bcf4663b3a5d60f7cdb214bba1a9c28bba47153b78a529cee57a6240e`  
+		Last Modified: Thu, 24 Feb 2022 03:27:00 GMT  
+		Size: 2.6 MB (2568336 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `hylang:python3.9` - linux; arm64 variant v8
 
 ```console
-$ docker pull hylang@sha256:0e959a7a266c17898de1155c5c4073d41d4561b0f9cf13f908b33a6236e8198d
+$ docker pull hylang@sha256:7d2eb0968a4a6868b45a71f18ed06e2775617479bbcf3de2ea9d7482c1831f6a
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **47.1 MB (47142584 bytes)**  
+-	Total Size: **47.1 MB (47137321 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d36e1e7f6a6cd5c8868b6abd810e35334cc47cf5780a67f7435afadf53eb9e2e`
+-	Image ID: `sha256:00be413c214d481973a5c0c2b724308fefa08a4d2c0e5ef4d85ad785be908e2a`
 -	Default Command: `["hy"]`
 
 ```dockerfile
@@ -297,17 +297,17 @@ ENV PYTHON_SETUPTOOLS_VERSION=58.1.0
 ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/2caf84b14febcda8077e59e9b8a6ef9a680aa392/public/get-pip.py
 # Fri, 04 Feb 2022 23:50:25 GMT
 ENV PYTHON_GET_PIP_SHA256=7c5239cea323cadae36083079a5ee6b2b3d56f25762a0c060d2867b89e5e06c5
-# Fri, 04 Feb 2022 23:50:37 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	; 	rm -f get-pip.py
-# Fri, 04 Feb 2022 23:50:38 GMT
+# Thu, 24 Feb 2022 00:12:44 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		export PYTHONDONTWRITEBYTECODE=1; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		--no-compile 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	rm -f get-pip.py; 		pip --version
+# Thu, 24 Feb 2022 00:12:45 GMT
 CMD ["python3"]
-# Sat, 05 Feb 2022 04:24:59 GMT
+# Thu, 24 Feb 2022 01:38:28 GMT
 ENV HY_VERSION=1.0a4
-# Sat, 05 Feb 2022 04:25:00 GMT
+# Thu, 24 Feb 2022 01:38:29 GMT
 ENV HYRULE_VERSION=0.1
-# Sat, 05 Feb 2022 04:25:04 GMT
+# Thu, 24 Feb 2022 01:38:32 GMT
 RUN pip install --no-cache-dir "hy == $HY_VERSION" "hyrule == $HYRULE_VERSION"
-# Sat, 05 Feb 2022 04:25:04 GMT
+# Thu, 24 Feb 2022 01:38:33 GMT
 CMD ["hy"]
 ```
 
@@ -328,26 +328,26 @@ CMD ["hy"]
 		Last Modified: Sat, 29 Jan 2022 07:08:52 GMT  
 		Size: 238.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c0da71f0ea9f115203d2fcb62f87faf094caadfe776ade73f1c684511f1b644d`  
-		Last Modified: Sat, 05 Feb 2022 00:01:44 GMT  
-		Size: 2.4 MB (2427518 bytes)  
+	-	`sha256:f23df028b6ca2f11aa3f2a4ff1f9c97a98814dfd13d0e94feb2d49ec5f4ae4ce`  
+		Last Modified: Thu, 24 Feb 2022 00:57:26 GMT  
+		Size: 2.4 MB (2422526 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b699bc0b35d55238f5a567c9d625fa4b3cec981a536f9e19846c3f1599417df7`  
-		Last Modified: Sat, 05 Feb 2022 04:30:59 GMT  
-		Size: 2.6 MB (2566175 bytes)  
+	-	`sha256:5e594e2591cc9ed0c02b24786f3cda9e16a783d209a3ff708d9ab1de560b6af7`  
+		Last Modified: Thu, 24 Feb 2022 01:44:42 GMT  
+		Size: 2.6 MB (2565904 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `hylang:python3.9` - linux; 386
 
 ```console
-$ docker pull hylang@sha256:521284d9cb825559dc08cbc57ec4230cea619db4cb5c5993af907d6c0805acaa
+$ docker pull hylang@sha256:c1dba4b5072d5c7c38dcb1aea70dbc221ea6d9121907919b75544ef064edf496
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.8 MB (49801154 bytes)**  
+-	Total Size: **49.8 MB (49796304 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2453e40bbc0ad13f16f0472800ac2098cbdd6e91d70d484f06e23c5b73d998e5`
+-	Image ID: `sha256:7f9c965d9a66e208b8cf6fd4c5bda15acbfae505c690d819c7629df7eb208410`
 -	Default Command: `["hy"]`
 
 ```dockerfile
@@ -377,17 +377,17 @@ ENV PYTHON_SETUPTOOLS_VERSION=58.1.0
 ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/2caf84b14febcda8077e59e9b8a6ef9a680aa392/public/get-pip.py
 # Sat, 05 Feb 2022 00:19:12 GMT
 ENV PYTHON_GET_PIP_SHA256=7c5239cea323cadae36083079a5ee6b2b3d56f25762a0c060d2867b89e5e06c5
-# Sat, 05 Feb 2022 00:19:27 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	; 	rm -f get-pip.py
-# Sat, 05 Feb 2022 00:19:28 GMT
+# Thu, 24 Feb 2022 00:29:46 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		export PYTHONDONTWRITEBYTECODE=1; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		--no-compile 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	rm -f get-pip.py; 		pip --version
+# Thu, 24 Feb 2022 00:29:46 GMT
 CMD ["python3"]
-# Sat, 05 Feb 2022 04:54:04 GMT
+# Thu, 24 Feb 2022 02:02:46 GMT
 ENV HY_VERSION=1.0a4
-# Sat, 05 Feb 2022 04:54:04 GMT
+# Thu, 24 Feb 2022 02:02:47 GMT
 ENV HYRULE_VERSION=0.1
-# Sat, 05 Feb 2022 04:54:09 GMT
+# Thu, 24 Feb 2022 02:02:51 GMT
 RUN pip install --no-cache-dir "hy == $HY_VERSION" "hyrule == $HYRULE_VERSION"
-# Sat, 05 Feb 2022 04:54:09 GMT
+# Thu, 24 Feb 2022 02:02:51 GMT
 CMD ["hy"]
 ```
 
@@ -408,13 +408,13 @@ CMD ["hy"]
 		Last Modified: Sat, 29 Jan 2022 08:45:44 GMT  
 		Size: 238.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:088357cfab19e11cc9db8b5831ead78e72a06ad6bfff77ecd9cc723c2e18695b`  
-		Last Modified: Sat, 05 Feb 2022 00:31:40 GMT  
-		Size: 2.6 MB (2643450 bytes)  
+	-	`sha256:ea624c255d41b001ddf3710cac6abeabeca40461d1cc72747f570f032da3f0f4`  
+		Last Modified: Thu, 24 Feb 2022 01:34:18 GMT  
+		Size: 2.6 MB (2636826 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c81718aec93f1b70a4e87f15f0eae793580ed7778ab3fa164b4b7253533c3ae`  
-		Last Modified: Sat, 05 Feb 2022 05:03:03 GMT  
-		Size: 2.6 MB (2566251 bytes)  
+	-	`sha256:5b4c8f077134ba49c93203de3ddf06e0487c3881a922c6c19d402bebd85ec8de`  
+		Last Modified: Thu, 24 Feb 2022 02:09:39 GMT  
+		Size: 2.6 MB (2568025 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `hylang:python3.9` - linux; mips64le
@@ -500,14 +500,14 @@ CMD ["hy"]
 ### `hylang:python3.9` - linux; ppc64le
 
 ```console
-$ docker pull hylang@sha256:846d8f2d82cd0e6a0ac92b224085db5a0a8debb86ac62a78265d659afed8faa9
+$ docker pull hylang@sha256:6feb89f09835e6a2f7e73979505da903d75952297949ffbb42adb2ebf947d5af
 ```
 
 -	Docker Version: 20.10.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **53.0 MB (52966513 bytes)**  
+-	Total Size: **53.0 MB (52961338 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6bf97e88020fcfde8c98367e8a69b8c542dcea1c330883b702ab44c59acc5e66`
+-	Image ID: `sha256:2fe3e2c3205cc5ae62d672cc4b676d35cc15411dfeed2a73a100943122bb5e3f`
 -	Default Command: `["hy"]`
 
 ```dockerfile
@@ -537,17 +537,17 @@ ENV PYTHON_SETUPTOOLS_VERSION=58.1.0
 ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/2caf84b14febcda8077e59e9b8a6ef9a680aa392/public/get-pip.py
 # Sat, 05 Feb 2022 00:45:04 GMT
 ENV PYTHON_GET_PIP_SHA256=7c5239cea323cadae36083079a5ee6b2b3d56f25762a0c060d2867b89e5e06c5
-# Sat, 05 Feb 2022 00:45:42 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	; 	rm -f get-pip.py
-# Sat, 05 Feb 2022 00:45:44 GMT
+# Thu, 24 Feb 2022 00:50:37 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		export PYTHONDONTWRITEBYTECODE=1; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		--no-compile 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	rm -f get-pip.py; 		pip --version
+# Thu, 24 Feb 2022 00:50:40 GMT
 CMD ["python3"]
-# Sat, 05 Feb 2022 06:34:41 GMT
+# Thu, 24 Feb 2022 02:39:19 GMT
 ENV HY_VERSION=1.0a4
-# Sat, 05 Feb 2022 06:34:43 GMT
+# Thu, 24 Feb 2022 02:39:22 GMT
 ENV HYRULE_VERSION=0.1
-# Sat, 05 Feb 2022 06:35:00 GMT
+# Thu, 24 Feb 2022 02:39:35 GMT
 RUN pip install --no-cache-dir "hy == $HY_VERSION" "hyrule == $HYRULE_VERSION"
-# Sat, 05 Feb 2022 06:35:02 GMT
+# Thu, 24 Feb 2022 02:39:38 GMT
 CMD ["hy"]
 ```
 
@@ -568,13 +568,13 @@ CMD ["hy"]
 		Last Modified: Sat, 29 Jan 2022 10:11:12 GMT  
 		Size: 235.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d2f2a3ebd3e27e21767472cad0afcb63345246d77e33ecb6c7ab3a657d110dac`  
-		Last Modified: Sat, 05 Feb 2022 01:07:15 GMT  
-		Size: 2.6 MB (2644799 bytes)  
+	-	`sha256:0bf4f4a6381bb4e3654f34e52b0abaf07ab998515644c553cfca035cfc59ad78`  
+		Last Modified: Thu, 24 Feb 2022 02:15:43 GMT  
+		Size: 2.6 MB (2638123 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:20610d2085b5094b80a152125bcbe34632a4f7323ecc18ae1b6fc7d83d3bbb55`  
-		Last Modified: Sat, 05 Feb 2022 06:44:24 GMT  
-		Size: 2.6 MB (2566755 bytes)  
+	-	`sha256:28aef7637b28d576788d9995f7de1d3455eb3f2d4bc7a7b01aeec4a2218a22f8`  
+		Last Modified: Thu, 24 Feb 2022 02:54:15 GMT  
+		Size: 2.6 MB (2568256 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `hylang:python3.9` - linux; s390x
