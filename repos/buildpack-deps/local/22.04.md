@@ -1539,14 +1539,9 @@ Licenses: (parsed from: `/usr/share/doc/libkeyutils1/copyright`)
 - `LGPL-2`
 - `LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris keyutils=1.6.1-2ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/k/keyutils/keyutils_1.6.1-2ubuntu2.dsc' keyutils_1.6.1-2ubuntu2.dsc 2187 SHA512:cd3096416b46b2020d64d85ebf245d4ddcb1aab58d510a62b356b7ad80e71768894fced728f7a1b2411dd59d65080eab11f6f8e38403a84d5dcca36c76c9c8ac
-'http://archive.ubuntu.com/ubuntu/pool/main/k/keyutils/keyutils_1.6.1.orig.tar.bz2' keyutils_1.6.1.orig.tar.bz2 97232 SHA512:ea6e20b2594234c7f51581eef2b8fd19c109fa9eacaaef8dfbb4f237bd1d6fdf071ec23b4ff334cb22a46461d09d17cf499987fd1f00e66f27506888876961e1
-'http://archive.ubuntu.com/ubuntu/pool/main/k/keyutils/keyutils_1.6.1-2ubuntu2.debian.tar.xz' keyutils_1.6.1-2ubuntu2.debian.tar.xz 14428 SHA512:52908d27d030311c2b949326b31d42c4ed9f090589133385f87a0b1ac38f406193aa8817306de9be85b42efdb33a5e035c90c7636bed2cf36cf8536a897fee24
-```
 
 ### `dpkg` source package: `krb5=1.19.2-0ubuntu1`
 
