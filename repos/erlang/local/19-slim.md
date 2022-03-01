@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b13a7d957b303d284bbe60394dff5a726f0f086e4b625615053afa618ca5449c`
-- Created: `2022-01-26T07:32:26.764875616Z`
+- Image ID: `sha256:4924f00f9082cd8a960191ea4bd961f6a513193cd58d4fad1a8fa01ee668047a`
+- Created: `2022-03-01T12:22:56.706443225Z`
 - Virtual Size: ~ 896.08 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -671,11 +671,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/elfutils/0.168-1+deb9u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/elfutils/0.168-1+deb9u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `expat=2.2.0-2+deb9u3`
+### `dpkg` source package: `expat=2.2.0-2+deb9u4`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.2.0-2+deb9u3`
+- `libexpat1:amd64=2.2.0-2+deb9u4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -684,17 +684,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris expat=2.2.0-2+deb9u3
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.0-2%2bdeb9u3.dsc' expat_2.2.0-2+deb9u3.dsc 2450 SHA256:11f83d0c9912cf287b53b72636dc8049656477d05bffd3ecf56c29709bfec33f
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.0.orig.tar.bz2' expat_2.2.0.orig.tar.bz2 414352 SHA256:d9e50ff2d19b3538bd2127902a89987474e1a4db8e43a66a4d1a712ab9a504ff
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.0-2%2bdeb9u3.debian.tar.xz' expat_2.2.0-2+deb9u3.debian.tar.xz 12608 SHA256:68800c47feebefea7318e767d6837b7c84ad875ab53d188e951d4859eddba241
+$ apt-get source -qq --print-uris expat=2.2.0-2+deb9u4
+'http://security.debian.org/debian-security/pool/updates/main/e/expat/expat_2.2.0-2%2bdeb9u4.dsc' expat_2.2.0-2+deb9u4.dsc 2446 SHA256:edd9c1c2b26eb213e1238727f447437be4b35827b38822d9bb28dfba225106f9
+'http://security.debian.org/debian-security/pool/updates/main/e/expat/expat_2.2.0.orig.tar.bz2' expat_2.2.0.orig.tar.bz2 414352 SHA256:d9e50ff2d19b3538bd2127902a89987474e1a4db8e43a66a4d1a712ab9a504ff
+'http://security.debian.org/debian-security/pool/updates/main/e/expat/expat_2.2.0-2%2bdeb9u4.debian.tar.xz' expat_2.2.0-2+deb9u4.debian.tar.xz 15892 SHA256:6271aeb53ffb23a0723848f4875f678424f273e3c9e65257f0fe1c7725e2c68a
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/expat/2.2.0-2+deb9u3/ (for browsing the source)
-- https://sources.debian.net/src/expat/2.2.0-2+deb9u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/expat/2.2.0-2+deb9u3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/expat/2.2.0-2+deb9u4/ (for browsing the source)
+- https://sources.debian.net/src/expat/2.2.0-2+deb9u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/expat/2.2.0-2+deb9u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `findutils=4.6.0+git+20161106-2`
 
