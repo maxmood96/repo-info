@@ -1,7 +1,7 @@
 ## `tomcat:9-jre8-openjdk-slim-buster`
 
 ```console
-$ docker pull tomcat@sha256:93efc45e248f48ef94c8828673ca260c2419aa5b3ee502398bd1eb095c932bc1
+$ docker pull tomcat@sha256:511dbdd46591bf1a678c9fe8af202a04031b47a268ddbb5f00564fb6e400b22f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,14 +12,14 @@ $ docker pull tomcat@sha256:93efc45e248f48ef94c8828673ca260c2419aa5b3ee502398bd1
 ### `tomcat:9-jre8-openjdk-slim-buster` - linux; amd64
 
 ```console
-$ docker pull tomcat@sha256:2e61d1aba23b7dd37522e0c5970f12131c6f58b8223a8c144d12eff18b89cc9c
+$ docker pull tomcat@sha256:611bd06d14575a93831e764770b4570261f97db87f65de4af2fd46bad2455065
 ```
 
--	Docker Version: 20.10.7
+-	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **84.7 MB (84699841 bytes)**  
+-	Total Size: **84.7 MB (84666139 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a3041c083802cfb63c6c503bf0077977b562a78e9b0386676535d4d477c63a06`
+-	Image ID: `sha256:65d43f2a21f404cbd6d80fa4d17b8abae7a54bf8282f0453e0c6a1a97ec6e1e6`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -57,19 +57,19 @@ ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
 # Fri, 04 Feb 2022 01:55:37 GMT
 ENV TOMCAT_MAJOR=9
-# Fri, 04 Feb 2022 01:55:38 GMT
-ENV TOMCAT_VERSION=9.0.58
-# Fri, 04 Feb 2022 01:55:38 GMT
-ENV TOMCAT_SHA512=33c030a312a0a087deeb06fff921d13a23789e152d30620f33a368e7a2244c762fcf9acd55f3b90f08560704ba45bc2be820bccf2058b0cf5801a7b124f9056d
-# Fri, 04 Feb 2022 01:55:38 GMT
-COPY dir:0328897b16d8b97f0800afaa3bf723fd3e2cbd708a168e9f927ebf2fd6bde7a7 in /usr/local/tomcat 
-# Fri, 04 Feb 2022 01:55:43 GMT
+# Tue, 01 Mar 2022 04:24:52 GMT
+ENV TOMCAT_VERSION=9.0.59
+# Tue, 01 Mar 2022 04:24:52 GMT
+ENV TOMCAT_SHA512=74902b522abda04afb2be24d7410d4d93966d20fd07dde8f03bb281cdc714866f648babe1ff1ae85d663774779235f1cb9d701d5ce8884052f1f5efca7b62c68
+# Tue, 01 Mar 2022 04:24:52 GMT
+COPY dir:f9291f7766fa27070d1824d12518bde7d972b86341117f23655ac668b8ef1183 in /usr/local/tomcat 
+# Tue, 01 Mar 2022 04:24:56 GMT
 RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/*
-# Fri, 04 Feb 2022 01:55:45 GMT
+# Tue, 01 Mar 2022 04:24:57 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Fri, 04 Feb 2022 01:55:45 GMT
+# Tue, 01 Mar 2022 04:24:57 GMT
 EXPOSE 8080
-# Fri, 04 Feb 2022 01:55:45 GMT
+# Tue, 01 Mar 2022 04:24:57 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -94,17 +94,17 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Fri, 04 Feb 2022 02:27:04 GMT  
 		Size: 173.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9a70c867f55a7708bf97ee5467019f964a8d9e472b262fb4ddd3e0ee9d5eb4b`  
-		Last Modified: Fri, 04 Feb 2022 04:13:18 GMT  
-		Size: 12.2 MB (12215981 bytes)  
+	-	`sha256:ff3b66f32e643bc772ffd2b093c1d023021eb971761305957abc8a74126e4459`  
+		Last Modified: Tue, 01 Mar 2022 05:21:52 GMT  
+		Size: 12.2 MB (12182269 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e839a765072ec756457efadf4d9543a25f1d0cbc0ba7966367b51641c4f5d66a`  
-		Last Modified: Fri, 04 Feb 2022 04:13:17 GMT  
-		Size: 387.7 KB (387715 bytes)  
+	-	`sha256:199f4800399c8fa8d7d9d2d887e88908ffef9432213fa91fbd797dccc118d908`  
+		Last Modified: Tue, 01 Mar 2022 05:21:51 GMT  
+		Size: 387.7 KB (387727 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e2c3e389583f9a4c101ba10e6b2309b0ca71718f0962c7284964f404aa8bc2e7`  
-		Last Modified: Fri, 04 Feb 2022 04:13:17 GMT  
-		Size: 131.0 B  
+	-	`sha256:dbf8d18ba816d154ab7356c2eeaa28f3f067d347879066c7aad72ffd17d78c57`  
+		Last Modified: Tue, 01 Mar 2022 05:21:51 GMT  
+		Size: 129.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `tomcat:9-jre8-openjdk-slim-buster` - linux; arm64 variant v8
