@@ -1,4 +1,4 @@
-## `debian:oldstable-slim`
+## `debian:oldstable-20220228-slim`
 
 ```console
 $ docker pull debian@sha256:ed8f63b9700fdbad8887ac4614b53ee5815cdd2075ea7ae67d0da3581cde9e66
@@ -15,7 +15,7 @@ $ docker pull debian@sha256:ed8f63b9700fdbad8887ac4614b53ee5815cdd2075ea7ae67d0d
 	-	linux; ppc64le
 	-	linux; s390x
 
-### `debian:oldstable-slim` - linux; amd64
+### `debian:oldstable-20220228-slim` - linux; amd64
 
 ```console
 $ docker pull debian@sha256:953ffc540688ff359a7365dfd46fb7dc1d1a046ea0006872df5c460d79846905
@@ -41,7 +41,7 @@ CMD ["bash"]
 		Size: 27.2 MB (27153760 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:oldstable-slim` - linux; arm variant v5
+### `debian:oldstable-20220228-slim` - linux; arm variant v5
 
 ```console
 $ docker pull debian@sha256:e6097bb6de184e5b5be71670523cb0b02a66f2bc6205193a38ad4559a509e29e
@@ -67,7 +67,7 @@ CMD ["bash"]
 		Size: 24.9 MB (24886220 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:oldstable-slim` - linux; arm variant v7
+### `debian:oldstable-20220228-slim` - linux; arm variant v7
 
 ```console
 $ docker pull debian@sha256:97de907ed6ca3dd15c0b1a37c823a8b0cadbc8ab676faeba26f398fc80f1703c
@@ -93,7 +93,7 @@ CMD ["bash"]
 		Size: 22.8 MB (22754384 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:oldstable-slim` - linux; arm64 variant v8
+### `debian:oldstable-20220228-slim` - linux; arm64 variant v8
 
 ```console
 $ docker pull debian@sha256:6054d6dd9d2de13a3ab8208366f0d8e04ad630aaa45aa76691229ffbd9482371
@@ -119,7 +119,7 @@ CMD ["bash"]
 		Size: 25.9 MB (25923155 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:oldstable-slim` - linux; 386
+### `debian:oldstable-20220228-slim` - linux; 386
 
 ```console
 $ docker pull debian@sha256:5f5456aea38af024927dee57d5550f146aea7adda1a48c13499c60db1cce7026
@@ -145,7 +145,7 @@ CMD ["bash"]
 		Size: 27.8 MB (27804590 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:oldstable-slim` - linux; mips64le
+### `debian:oldstable-20220228-slim` - linux; mips64le
 
 ```console
 $ docker pull debian@sha256:e898e14adfff941e78495fd21691effaadb30f55b5999108f1a9b7a80c5c7ee3
@@ -171,7 +171,7 @@ CMD ["bash"]
 		Size: 25.8 MB (25820185 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:oldstable-slim` - linux; ppc64le
+### `debian:oldstable-20220228-slim` - linux; ppc64le
 
 ```console
 $ docker pull debian@sha256:e9aadb33ef30e740e614dec26476a0d7bb0154ea82637c3791f9c1e8e792bdcc
@@ -197,7 +197,7 @@ CMD ["bash"]
 		Size: 30.6 MB (30562275 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:oldstable-slim` - linux; s390x
+### `debian:oldstable-20220228-slim` - linux; s390x
 
 ```console
 $ docker pull debian@sha256:6d0565b575598ca7646bab45da95687cc079fefde850c601e29b9b5ccb0a0c37
