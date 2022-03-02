@@ -1,10 +1,10 @@
-# `consul:1.11.3`
+# `consul:1.11.4`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b3fcb78af95a35b5fef1897f529b6a36606c8808d874a58f4de20e28c15062bd`
-- Created: `2022-02-12T07:22:32.826736424Z`
-- Virtual Size: ~ 118.14 Mb  
+- Image ID: `sha256:aec96db0e7ba685574152bd300682c9cb8aaa545c9440f504eb7e21e695f46f9`
+- Created: `2022-03-01T02:07:53.622288586Z`
+- Virtual Size: ~ 118.20 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -20,7 +20,7 @@
   - `org.opencontainers.image.title=consul`
   - `org.opencontainers.image.url=https://www.consul.io/`
   - `org.opencontainers.image.vendor=HashiCorp`
-  - `org.opencontainers.image.version=1.11.3`
+  - `org.opencontainers.image.version=1.11.4`
 
 ## `apk` (`.apk`-based packages)
 
