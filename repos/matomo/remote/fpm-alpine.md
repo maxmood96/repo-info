@@ -1,7 +1,7 @@
 ## `matomo:fpm-alpine`
 
 ```console
-$ docker pull matomo@sha256:5748dc7db713b067329241cde179230a818175ae92fff756a3a8e156c72018c0
+$ docker pull matomo@sha256:c51866949580fbcfb24d69aba84221570e813cb86ea8d9579d49c9843baa5d60
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -772,14 +772,14 @@ CMD ["php-fpm"]
 ### `matomo:fpm-alpine` - linux; ppc64le
 
 ```console
-$ docker pull matomo@sha256:05ea966dfc24e9bfc82e27c1410e8d92d85ef65486472d4d46e7d758b92d859e
+$ docker pull matomo@sha256:c911118f822bacad1ae7f18d3e9525db99ccbfbe66da040f9040d3c398050c04
 ```
 
--	Docker Version: 20.10.7
+-	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.6 MB (54625359 bytes)**  
+-	Total Size: **50.5 MB (50515593 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:19167899c55ebf86e3c08dd894973664b078e54681258351edbd3e3974548ef3`
+-	Image ID: `sha256:b6910c181ca72419923cd811f8b329dced798d8d761df228e74731adbf90b2ab`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -816,45 +816,45 @@ ENV PHP_SHA256=f27a2f25259e8c51e42dfd74e24a546ee521438ad7d9f6c6e794aa91f38bab0a
 RUN set -eux; 		apk add --no-cache --virtual .fetch-deps gnupg; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apk del --no-network .fetch-deps
 # Fri, 18 Feb 2022 21:44:18 GMT
 COPY file:ce57c04b70896f77cc11eb2766417d8a1240fcffe5bba92179ec78c458844110 in /usr/local/bin/ 
-# Fri, 18 Feb 2022 21:55:28 GMT
-RUN set -eux; 	apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		argon2-dev 		coreutils 		curl-dev 		libsodium-dev 		libxml2-dev 		linux-headers 		oniguruma-dev 		openssl-dev 		readline-dev 		sqlite-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-openssl 		--with-readline 		--with-zlib 				--with-pear 				$(test "$gnuArch" = 's390x-linux-musl' && echo '--without-pcre-jit') 				--disable-cgi 				--enable-fpm 		--with-fpm-user=www-data 		--with-fpm-group=www-data 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache $runDeps; 		apk del --no-network .build-deps; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version
-# Fri, 18 Feb 2022 21:55:31 GMT
+# Wed, 02 Mar 2022 22:37:01 GMT
+RUN set -eux; 	apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		argon2-dev 		coreutils 		curl-dev 		libsodium-dev 		libxml2-dev 		linux-headers 		oniguruma-dev 		openssl-dev 		readline-dev 		sqlite-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				$(test "$gnuArch" = 's390x-linux-musl' && echo '--without-pcre-jit') 				--disable-cgi 				--enable-fpm 		--with-fpm-user=www-data 		--with-fpm-group=www-data 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache $runDeps; 		apk del --no-network .build-deps; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version
+# Wed, 02 Mar 2022 22:37:05 GMT
 COPY multi:7d7d4b016ee2e2e18720a1a58004eb4d59de798c619f217398cc1066a656bfd0 in /usr/local/bin/ 
-# Fri, 18 Feb 2022 21:55:38 GMT
+# Wed, 02 Mar 2022 22:37:16 GMT
 RUN docker-php-ext-enable sodium
-# Fri, 18 Feb 2022 21:55:42 GMT
+# Wed, 02 Mar 2022 22:37:21 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 18 Feb 2022 21:55:46 GMT
+# Wed, 02 Mar 2022 22:37:32 GMT
 WORKDIR /var/www/html
-# Fri, 18 Feb 2022 21:55:52 GMT
+# Wed, 02 Mar 2022 22:37:44 GMT
 RUN set -eux; 	cd /usr/local/etc; 	if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi; 	{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Fri, 18 Feb 2022 21:55:56 GMT
+# Wed, 02 Mar 2022 22:37:51 GMT
 STOPSIGNAL SIGQUIT
-# Fri, 18 Feb 2022 21:55:59 GMT
+# Wed, 02 Mar 2022 22:37:58 GMT
 EXPOSE 9000
-# Fri, 18 Feb 2022 21:56:05 GMT
+# Wed, 02 Mar 2022 22:38:02 GMT
 CMD ["php-fpm"]
-# Sat, 19 Feb 2022 02:31:14 GMT
+# Thu, 03 Mar 2022 10:42:12 GMT
 LABEL maintainer=pierre@piwik.org
-# Sat, 19 Feb 2022 02:31:20 GMT
+# Thu, 03 Mar 2022 10:42:17 GMT
 ENV PHP_MEMORY_LIMIT=256M
-# Sat, 19 Feb 2022 02:34:10 GMT
+# Thu, 03 Mar 2022 10:44:39 GMT
 RUN set -ex; 		apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		autoconf 		freetype-dev 		icu-dev 		libjpeg-turbo-dev 		libpng-dev 		libzip-dev 		openldap-dev 		pcre-dev 		procps 	; 		docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap; 	docker-php-ext-install -j "$(nproc)" 		gd 		bcmath 		ldap 		mysqli 		opcache 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.21; 	pecl install redis-5.3.6; 		docker-php-ext-enable 		apcu 		redis 	; 	rm -r /tmp/pear; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions 		| tr ',' '\n' 		| sort -u 		| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --virtual .matomo-phpext-rundeps $runDeps; 	apk del .build-deps
-# Sat, 19 Feb 2022 02:34:20 GMT
+# Thu, 03 Mar 2022 10:44:57 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Sat, 19 Feb 2022 02:34:24 GMT
+# Thu, 03 Mar 2022 10:45:03 GMT
 ENV MATOMO_VERSION=4.7.1
-# Sat, 19 Feb 2022 02:36:16 GMT
+# Thu, 03 Mar 2022 10:46:02 GMT
 RUN set -ex; 	apk add --no-cache --virtual .fetch-deps 		gnupg 	; 		curl -fsSL -o matomo.tar.gz 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz"; 	curl -fsSL -o matomo.tar.gz.asc 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 814E346FA01A20DBB04B6807B5DBD5925590A237; 	gpg --batch --verify matomo.tar.gz.asc matomo.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" matomo.tar.gz.asc; 	tar -xzf matomo.tar.gz -C /usr/src/; 	rm matomo.tar.gz; 	apk del .fetch-deps
-# Sat, 19 Feb 2022 02:36:22 GMT
+# Thu, 03 Mar 2022 10:46:09 GMT
 COPY file:f4ea35cff07e183c01b4e508329d1f5c342d9f4d330bda7f28faa530ced0d166 in /usr/local/etc/php/conf.d/php-matomo.ini 
-# Sat, 19 Feb 2022 02:36:24 GMT
+# Thu, 03 Mar 2022 10:46:14 GMT
 COPY file:ccb778224a0e1f6742127aba2860c245adf24b73ca277e7260c4789883751ccb in /entrypoint.sh 
-# Sat, 19 Feb 2022 02:36:27 GMT
+# Thu, 03 Mar 2022 10:46:22 GMT
 VOLUME [/var/www/html]
-# Sat, 19 Feb 2022 02:36:32 GMT
+# Thu, 03 Mar 2022 10:46:28 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Sat, 19 Feb 2022 02:36:38 GMT
+# Thu, 03 Mar 2022 10:46:35 GMT
 CMD ["php-fpm"]
 ```
 
@@ -883,41 +883,41 @@ CMD ["php-fpm"]
 		Last Modified: Fri, 18 Feb 2022 22:34:24 GMT  
 		Size: 501.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf74471e16724dcc308dbae967d2d1a6b4dd98b0070aa5c355bc46229e46f69d`  
-		Last Modified: Fri, 18 Feb 2022 22:35:04 GMT  
-		Size: 17.2 MB (17222111 bytes)  
+	-	`sha256:0f2229e2c67eb0c4a6feaa3348b3a767b2e2077387e5c3f991f99946cafcc783`  
+		Last Modified: Thu, 03 Mar 2022 02:22:37 GMT  
+		Size: 13.1 MB (13111774 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:812ccebc5fbe0eda153a3d56de36145c42d5a12a15195a333bffc8a64ce46cef`  
-		Last Modified: Fri, 18 Feb 2022 22:35:00 GMT  
-		Size: 2.3 KB (2303 bytes)  
+	-	`sha256:df17ed1d435b3718c6e4a61b49a0aa9b491dcf68860dd36150ceb31abd649477`  
+		Last Modified: Thu, 03 Mar 2022 02:22:34 GMT  
+		Size: 2.3 KB (2304 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6d84a4f64af4eacc12ff9ac9f2a536b2a50a01a64863464904604515a2535235`  
-		Last Modified: Fri, 18 Feb 2022 22:35:00 GMT  
-		Size: 18.2 KB (18249 bytes)  
+	-	`sha256:a627f90f6ba3ee8dfe0d45ddfec27dbb1b247bf753a7727ad15b6a87b0ee55e0`  
+		Last Modified: Thu, 03 Mar 2022 02:22:34 GMT  
+		Size: 18.2 KB (18247 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7b5f1dda3c71a0101e017e20b5be458263a2d8d238796ade3d5d8fea66cef084`  
-		Last Modified: Fri, 18 Feb 2022 22:35:00 GMT  
-		Size: 8.6 KB (8570 bytes)  
+	-	`sha256:82aad80aa5c9a78040dcf21503d6fea93e79a7687ea357ea45318efdf79afa11`  
+		Last Modified: Thu, 03 Mar 2022 02:22:34 GMT  
+		Size: 8.6 KB (8572 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:96d7d532d77f561cb5434c9f3e5f81f2f2f681ea1cf2023fe19eff25bfd9452a`  
-		Last Modified: Sat, 19 Feb 2022 02:38:42 GMT  
-		Size: 5.9 MB (5927221 bytes)  
+	-	`sha256:cc6cbccaf06d485d1a4eb7a58ba2cbdb2f7bad1d53b9fa0e0b676d1d8916b250`  
+		Last Modified: Thu, 03 Mar 2022 10:48:42 GMT  
+		Size: 5.9 MB (5927778 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5673126567f1554c17a6067f3ab3b07ac09e29c2f169e1ef90ff470a7a8e7499`  
-		Last Modified: Sat, 19 Feb 2022 02:38:41 GMT  
-		Size: 323.0 B  
+	-	`sha256:46454bff1f9a4a380b9377ed915da19a5c1c0ca16ae60fbbf032bb26b7eb5f9a`  
+		Last Modified: Thu, 03 Mar 2022 10:48:41 GMT  
+		Size: 330.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8e73f5079a252827bea2678e8d19513821cad237c5aff6e4e2dc8904a5ab29b`  
-		Last Modified: Sat, 19 Feb 2022 02:38:45 GMT  
-		Size: 16.0 MB (15988571 bytes)  
+	-	`sha256:cb964b0f3aa5925ae15b4f7b4aa2aca7a58bb6dc1b0f5afa3baa444001e62fe8`  
+		Last Modified: Thu, 03 Mar 2022 10:48:45 GMT  
+		Size: 16.0 MB (15988577 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d0299eaf35f8aca2fb51cc105d2c09fd6caf036e74d40ce5830ab32ac36ae60b`  
-		Last Modified: Sat, 19 Feb 2022 02:38:41 GMT  
-		Size: 340.0 B  
+	-	`sha256:caa7cd931aec4bdd0f340995a2427f0c171ff2fadf763b5d9dab6cb6fa52f3e8`  
+		Last Modified: Thu, 03 Mar 2022 10:48:41 GMT  
+		Size: 344.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dbf664f9f5fb76a69932b1e2328e153426354956674a7a91fb72a6247a424e93`  
-		Last Modified: Sat, 19 Feb 2022 02:38:41 GMT  
-		Size: 632.0 B  
+	-	`sha256:427dfe657e187419a1bd28cd32df0c9acb74d5dbd0817234ae2889a467e5c109`  
+		Last Modified: Thu, 03 Mar 2022 10:48:41 GMT  
+		Size: 628.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `matomo:fpm-alpine` - linux; s390x
