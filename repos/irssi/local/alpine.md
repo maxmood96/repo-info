@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:064295e6180eddccae4c53bfa3ccc4198baf64035be43d045aea0053df5b5ab2`
-- Created: `2021-11-13T06:22:07.483312351Z`
-- Virtual Size: ~ 58.56 Mb  
+- Image ID: `sha256:9dead0fe2265236caa74a87944b897072c3db257ea60dcd26ad0f8c8a0a57695`
+- Created: `2022-02-26T02:42:56.643187204Z`
+- Virtual Size: ~ 58.57 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["irssi"]`
@@ -138,16 +138,16 @@ LGPL-2.1-or-later
 ### `apk` package: `libblkid`
 
 ```console
-libblkid-2.36.1-r1 description:
+libblkid-2.37.4-r0 description:
 Block device identification library from util-linux
 
-libblkid-2.36.1-r1 webpage:
+libblkid-2.37.4-r0 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libblkid-2.36.1-r1 installed size:
-292 KiB
+libblkid-2.37.4-r0 installed size:
+300 KiB
 
-libblkid-2.36.1-r1 license:
+libblkid-2.37.4-r0 license:
 GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND
 
 ```
@@ -240,16 +240,16 @@ LGPL-2.1-or-later
 ### `apk` package: `libmount`
 
 ```console
-libmount-2.36.1-r1 description:
+libmount-2.37.4-r0 description:
 Block device identification library from util-linux
 
-libmount-2.36.1-r1 webpage:
+libmount-2.37.4-r0 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libmount-2.36.1-r1 installed size:
-328 KiB
+libmount-2.37.4-r0 installed size:
+336 KiB
 
-libmount-2.36.1-r1 license:
+libmount-2.37.4-r0 license:
 GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND
 
 ```
