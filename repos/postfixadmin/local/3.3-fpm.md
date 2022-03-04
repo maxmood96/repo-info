@@ -1,10 +1,10 @@
-# `postfixadmin:3.3.10-fpm`
+# `postfixadmin:3.3.11-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8ce4d4a23581b6c8c8fc8bdaf5779250f130cf53d85fd3e71a0909db06565202`
-- Created: `2022-02-17T22:48:44.014980072Z`
-- Virtual Size: ~ 472.66 Mb  
+- Image ID: `sha256:372c9cbf85810a9c091de283537f675e95af32cc64f80b6fbaf0ce5ac2354023`
+- Created: `2022-03-03T12:54:43.364507507Z`
+- Virtual Size: ~ 455.85 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-entrypoint.sh"]`
@@ -21,8 +21,8 @@
   - `PHP_URL=https://www.php.net/distributions/php-7.4.28.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.28.tar.xz.asc`
   - `PHP_SHA256=9cc3b6f6217b60582f78566b3814532c4b71d517876c25013ae51811e65d8fce`
-  - `POSTFIXADMIN_VERSION=3.3.10`
-  - `POSTFIXADMIN_SHA512=e00fc9ea343a928976d191adfa01020ee0c6ddbe80a39e01ca2ee414a18247958f033970f378fe4a9974636172a5e094e57117ee9ac7b930c592f433097a7aca`
+  - `POSTFIXADMIN_VERSION=3.3.11`
+  - `POSTFIXADMIN_SHA512=84b22fd1d162f723440fbfb9e20c01d7ddc7481556e340a80fda66658687878fd1668d164a216daed9badf4d2e308c958b0f678f7a4dc6a2af748e435a066072`
 - Labels:
   - `maintainer=David Goodwin <david@codepoets.co.uk> (@DavidGoodwin)`
 
@@ -496,12 +496,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/curl/7.74.0-1.3+deb11u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/curl/7.74.0-1.3+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-2.1`
+### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-2.1+deb11u1`
 
 Binary Packages:
 
-- `libsasl2-2:amd64=2.1.27+dfsg-2.1`
-- `libsasl2-modules-db:amd64=2.1.27+dfsg-2.1`
+- `libsasl2-2:amd64=2.1.27+dfsg-2.1+deb11u1`
+- `libsasl2-modules-db:amd64=2.1.27+dfsg-2.1+deb11u1`
 
 Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/libsasl2-modules-db/copyright`)
 
@@ -512,17 +512,17 @@ Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/l
 Source:
 
 ```console
-$ apt-get source -qq --print-uris cyrus-sasl2=2.1.27+dfsg-2.1
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27%2bdfsg-2.1.dsc' cyrus-sasl2_2.1.27+dfsg-2.1.dsc 3433 SHA256:714b4f59fdf5e3c436b0f10d15535f0048f5164a9a40763f2537fadbd2175da8
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27%2bdfsg.orig.tar.xz' cyrus-sasl2_2.1.27+dfsg.orig.tar.xz 2058596 SHA256:108b0c691c423837264f05abb559ea76c3dfdd91246555e8abe87c129a6e37cd
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27%2bdfsg-2.1.debian.tar.xz' cyrus-sasl2_2.1.27+dfsg-2.1.debian.tar.xz 101356 SHA256:0b2cf5e3118a8d99fc39a8133e5508de298b90507fb8c0846d4dae840bf4ec60
+$ apt-get source -qq --print-uris cyrus-sasl2=2.1.27+dfsg-2.1+deb11u1
+'http://security.debian.org/debian-security/pool/updates/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27%2bdfsg-2.1%2bdeb11u1.dsc' cyrus-sasl2_2.1.27+dfsg-2.1+deb11u1.dsc 3591 SHA256:4dafa1a5c90f0b3d9d6e9d22e810492edd3b91b9f1d4d9666683d257528445d6
+'http://security.debian.org/debian-security/pool/updates/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27%2bdfsg.orig.tar.xz' cyrus-sasl2_2.1.27+dfsg.orig.tar.xz 2058596 SHA256:108b0c691c423837264f05abb559ea76c3dfdd91246555e8abe87c129a6e37cd
+'http://security.debian.org/debian-security/pool/updates/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27%2bdfsg-2.1%2bdeb11u1.debian.tar.xz' cyrus-sasl2_2.1.27+dfsg-2.1+deb11u1.debian.tar.xz 102488 SHA256:70b7a55776febf987363f5bb58322d6f03186215374a2eb0b6203980924f8680
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/cyrus-sasl2/2.1.27+dfsg-2.1/ (for browsing the source)
-- https://sources.debian.net/src/cyrus-sasl2/2.1.27+dfsg-2.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cyrus-sasl2/2.1.27+dfsg-2.1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/cyrus-sasl2/2.1.27+dfsg-2.1+deb11u1/ (for browsing the source)
+- https://sources.debian.net/src/cyrus-sasl2/2.1.27+dfsg-2.1+deb11u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/cyrus-sasl2/2.1.27+dfsg-2.1+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dash=0.5.11+git20200708+dd9ef66-5`
 

@@ -1,10 +1,10 @@
-# `postfixadmin:3.3.10-fpm-alpine`
+# `postfixadmin:3.3.11-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:72c27864fb5be9b6f74f5b478e0dbc30d1d633658dc2979aa5517904d19b7155`
-- Created: `2022-02-17T22:49:36.89997464Z`
-- Virtual Size: ~ 97.43 Mb  
+- Image ID: `sha256:fa555a8793d9cadde22cb91cdf614ae165e3f7bcd1fab159308fb3872f3376fa`
+- Created: `2022-03-03T12:55:20.187345431Z`
+- Virtual Size: ~ 80.64 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-entrypoint.sh"]`
@@ -21,8 +21,8 @@
   - `PHP_URL=https://www.php.net/distributions/php-7.4.28.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.28.tar.xz.asc`
   - `PHP_SHA256=9cc3b6f6217b60582f78566b3814532c4b71d517876c25013ae51811e65d8fce`
-  - `POSTFIXADMIN_VERSION=3.3.10`
-  - `POSTFIXADMIN_SHA512=e00fc9ea343a928976d191adfa01020ee0c6ddbe80a39e01ca2ee414a18247958f033970f378fe4a9974636172a5e094e57117ee9ac7b930c592f433097a7aca`
+  - `POSTFIXADMIN_VERSION=3.3.11`
+  - `POSTFIXADMIN_SHA512=84b22fd1d162f723440fbfb9e20c01d7ddc7481556e340a80fda66658687878fd1668d164a216daed9badf4d2e308c958b0f678f7a4dc6a2af748e435a066072`
 - Labels:
   - `maintainer=David Goodwin <david@codepoets.co.uk> (@DavidGoodwin)`
 
@@ -99,16 +99,16 @@ Apache-2.0 CC0-1.0
 ### `apk` package: `bash`
 
 ```console
-bash-5.1.8-r0 description:
+bash-5.1.16-r0 description:
 The GNU Bourne Again shell
 
-bash-5.1.8-r0 webpage:
+bash-5.1.16-r0 webpage:
 https://www.gnu.org/software/bash/bash.html
 
-bash-5.1.8-r0 installed size:
+bash-5.1.16-r0 installed size:
 1296 KiB
 
-bash-5.1.8-r0 license:
+bash-5.1.16-r0 license:
 GPL-3.0-or-later
 
 ```
