@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c7fbdecb550c3201b2746662b434acbb4e59d249cd5318e0a22dab354085d05d`
-- Created: `2022-02-02T09:20:07.057575804Z`
-- Virtual Size: ~ 214.04 Mb  
+- Image ID: `sha256:62c549a007529dd5f7a9b1047830fe5237a2dc36a43bcba9c47d1d3498d95582`
+- Created: `2022-03-03T20:54:16.248710236Z`
+- Virtual Size: ~ 214.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -337,12 +337,12 @@ $ apt-get source -qq --print-uris curl=7.74.0-1.3ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.74.0-1.3ubuntu2.debian.tar.xz' curl_7.74.0-1.3ubuntu2.debian.tar.xz 45780 SHA512:d347fa37ab8bc8c434aefa04b9c387948c8e62f90e6a0ebfaf7b499995dad91ca9313abcd4b5893bd904abad6de10ab7e86554935b34953543c9338d1324c7fe
 ```
 
-### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-2.1build1`
+### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-2.1ubuntu0.1`
 
 Binary Packages:
 
-- `libsasl2-2:amd64=2.1.27+dfsg-2.1build1`
-- `libsasl2-modules-db:amd64=2.1.27+dfsg-2.1build1`
+- `libsasl2-2:amd64=2.1.27+dfsg-2.1ubuntu0.1`
+- `libsasl2-modules-db:amd64=2.1.27+dfsg-2.1ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/libsasl2-modules-db/copyright`)
 
@@ -353,10 +353,10 @@ Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/l
 Source:
 
 ```console
-$ apt-get source -qq --print-uris cyrus-sasl2=2.1.27+dfsg-2.1build1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27%2bdfsg-2.1build1.dsc' cyrus-sasl2_2.1.27+dfsg-2.1build1.dsc 3428 SHA512:901bcf4928b18b61704e62ab175e1aba87523a0faca8d2f5d6b959c0f0878a8f20d5a98cf8f8a69a7552aaec989b73c7ac24638f5129a074dd0a22278f9a897c
+$ apt-get source -qq --print-uris cyrus-sasl2=2.1.27+dfsg-2.1ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27%2bdfsg-2.1ubuntu0.1.dsc' cyrus-sasl2_2.1.27+dfsg-2.1ubuntu0.1.dsc 3519 SHA512:267109283bded2e2a9189c2e6556ab9cfd0f84389e29837a36c4bf52c9d282f7fec9ebcd874fce74e0454a6280471a816bcac2a90d44c72e8ab6018474314984
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27%2bdfsg.orig.tar.xz' cyrus-sasl2_2.1.27+dfsg.orig.tar.xz 2058596 SHA512:a795e4362f85a50e223c5456d03526832eb29fdbc9e17a767045f8542638e3f987d382b79b072bcd694bd1a12cbb818cff6c326063ca2bbe05453c1acf7fb8ad
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27%2bdfsg-2.1build1.debian.tar.xz' cyrus-sasl2_2.1.27+dfsg-2.1build1.debian.tar.xz 101460 SHA512:a22f3d04fec3b0ee6e4b95e6854aa3a9eb8a824b58959bd425a0171e602b16f141ef6b85dae4e8f14690074e7e4a0bc4284d3cf7df98cbf3c22491244c738f04
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27%2bdfsg-2.1ubuntu0.1.debian.tar.xz' cyrus-sasl2_2.1.27+dfsg-2.1ubuntu0.1.debian.tar.xz 102316 SHA512:ca1727e09c2716f476f924880d2e63049a6a743af1f636c0f4df25e4096b5c6da29aaf347ab708bbbd8d7bf38ef3429a7080f96596f6de264d4fd3e532b24c4f
 ```
 
 ### `dpkg` source package: `dash=0.5.11+git20210120+802ebd4-1build1`
@@ -508,11 +508,11 @@ $ apt-get source -qq --print-uris e2fsprogs=1.46.3-1ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.46.3-1ubuntu3.debian.tar.xz' e2fsprogs_1.46.3-1ubuntu3.debian.tar.xz 85800 SHA512:c4eafbeb9ef671ecc1d85e1fe714fb78a7205a232062860261b0a5a0d3338cd8ad48f76619e0d93c8520d276cdf418c6cc82d4e99b7c5889d97ff35c3b0ae26c
 ```
 
-### `dpkg` source package: `expat=2.4.1-2`
+### `dpkg` source package: `expat=2.4.1-2ubuntu0.1`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.4.1-2`
+- `libexpat1:amd64=2.4.1-2ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
@@ -521,10 +521,10 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris expat=2.4.1-2
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.1-2.dsc' expat_2.4.1-2.dsc 1981 SHA512:54e8d18c26224f946f2b191bd011f8d9d5327291abf3bdd48a8229746b75e4f4c27f05a58a8542a6de74d335c7dccbcc6a6177f2d71f71efa873efbb6c3b6ef3
+$ apt-get source -qq --print-uris expat=2.4.1-2ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.1-2ubuntu0.1.dsc' expat_2.4.1-2ubuntu0.1.dsc 2096 SHA512:0ecc25ad2b0e274cc321f5016348e8cf828c2816e301d3bc98d656feccdc2504e74f82fe3cb581397e5f40b129370ddab0fae665fcac4e3ad18c092efbf78012
 'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.1.orig.tar.gz' expat_2.4.1.orig.tar.gz 8307804 SHA512:1f08861e9b766fdbbc40159404a3fe1a86451d635ef81874fa3492845eda83ac2dc6a0272525891d396b70c9a9254c2f6c907fe4abb2f8a533ccd3f52dae9d5a
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.1-2.debian.tar.xz' expat_2.4.1-2.debian.tar.xz 11160 SHA512:453b1f8317810588a76fe6920bf0d6de5c2163219d899c5b430f3050c7d7c0c10dec75d5dbe6e5e78d395704a8b30b5d500d7e84358cbe4254396fb6493395cf
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.1-2ubuntu0.1.debian.tar.xz' expat_2.4.1-2ubuntu0.1.debian.tar.xz 17952 SHA512:b8ed027ae56f417c7d59b1e54b8c7745b527a5b44943c9e8a292ac693fda416ffa7801c5a9064944babb8a4e4a8ee6df0cd14a24c8fe8ddd3581ea54401fce52
 ```
 
 ### `dpkg` source package: `findutils=4.8.0-1ubuntu2`
@@ -635,12 +635,12 @@ $ apt-get source -qq --print-uris git=1:2.32.0-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.32.0-1ubuntu1.debian.tar.xz' git_2.32.0-1ubuntu1.debian.tar.xz 685712 SHA512:be28129901a3d5f6e26e92c9051acefb42ea3058ae94abf3249f4166d7acb793823a12793958d0d8434cf54086e2b5936e9410ccc655f7f42d019120e50dd3f0
 ```
 
-### `dpkg` source package: `glibc=2.34-0ubuntu3`
+### `dpkg` source package: `glibc=2.34-0ubuntu3.2`
 
 Binary Packages:
 
-- `libc-bin=2.34-0ubuntu3`
-- `libc6:amd64=2.34-0ubuntu3`
+- `libc-bin=2.34-0ubuntu3.2`
+- `libc6:amd64=2.34-0ubuntu3.2`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
@@ -651,11 +651,11 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glibc=2.34-0ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.34-0ubuntu3.dsc' glibc_2.34-0ubuntu3.dsc 8957 SHA512:c743d6fc4cce79bdbc8d45c86f5ca058d77eeec8c94b743a7c2d9e1344b0b60d9eb7f8c0bb01110603e3d5a8739d918e63f41a8d3dbfe328828f3683d2f0e921
+$ apt-get source -qq --print-uris glibc=2.34-0ubuntu3.2
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.34-0ubuntu3.2.dsc' glibc_2.34-0ubuntu3.2.dsc 8965 SHA512:029f0b6c9a5b343b6d1dc73a5089fea35ea3d289ee194709904e332f4daaa3433766d1f5f62bfb65ce1d8766f3d505d12900ef641c3df605726a69755b0e20e0
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.34.orig.tar.xz' glibc_2.34.orig.tar.xz 17301232 SHA512:15252affd9ef4523a8001db16d497f4fdcb3ddf4cde7fe80e075df0bd3cc6524dc29fbe20229dbf5f97af580556e6b1fac0de321a5fe25322bc3e72f93beb624
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.34.orig.tar.xz.asc' glibc_2.34.orig.tar.xz.asc 833 SHA512:5b92e315d81a0a157f15b8ac29acddbf4669b51a72483bba4b1769db78986ec9814b23be3d7ac3779cefb0a38070af7ecb37dc1667e1cb3ede8c34cb1ca5d7f3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.34-0ubuntu3.debian.tar.xz' glibc_2.34-0ubuntu3.debian.tar.xz 883372 SHA512:4ca38eecd987f49ee36b5855528b92632125953b118fd39a9e8bb0b55bd77cedc1f2a17ee33fb60465714ff2f396a247cc27e954a1179805cb66bcdd9bc0ef0f
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.34-0ubuntu3.2.debian.tar.xz' glibc_2.34-0ubuntu3.2.debian.tar.xz 890968 SHA512:644d47301d331e898de1285aaa9bbb28d710ee1653d9a1037d1e75eba3b42917640947e9e5d169e50307220b27f13eea7edbb69f527f64a08b2bc9d472a7915b
 ```
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-1ubuntu2`
@@ -2378,17 +2378,17 @@ $ apt-get source -qq --print-uris utf8proc=2.5.0-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/u/utf8proc/utf8proc_2.5.0-1.debian.tar.xz' utf8proc_2.5.0-1.debian.tar.xz 5240 SHA512:0a32ae86570560b98eb174b33ff819cc07ad945466527def0567e729436491aab410b9d239597d5484c0b07d4dae676f2ebc2ffb09a2bd6ef455abb08e6cd94b
 ```
 
-### `dpkg` source package: `util-linux=2.36.1-8ubuntu2`
+### `dpkg` source package: `util-linux=2.36.1-8ubuntu2.2`
 
 Binary Packages:
 
-- `bsdutils=1:2.36.1-8ubuntu2`
-- `libblkid1:amd64=2.36.1-8ubuntu2`
-- `libmount1:amd64=2.36.1-8ubuntu2`
-- `libsmartcols1:amd64=2.36.1-8ubuntu2`
-- `libuuid1:amd64=2.36.1-8ubuntu2`
-- `mount=2.36.1-8ubuntu2`
-- `util-linux=2.36.1-8ubuntu2`
+- `bsdutils=1:2.36.1-8ubuntu2.2`
+- `libblkid1:amd64=2.36.1-8ubuntu2.2`
+- `libmount1:amd64=2.36.1-8ubuntu2.2`
+- `libsmartcols1:amd64=2.36.1-8ubuntu2.2`
+- `libuuid1:amd64=2.36.1-8ubuntu2.2`
+- `mount=2.36.1-8ubuntu2.2`
+- `util-linux=2.36.1-8ubuntu2.2`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
@@ -2409,9 +2409,14 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris util-linux=2.36.1-8ubuntu2.2
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.36.1-8ubuntu2.2.dsc' util-linux_2.36.1-8ubuntu2.2.dsc 4479 SHA512:0133890a12cf4e7419e11f5fe892a47068ffdef08640caca5bbe6a4f20d1ffb4a29f5cac42385daec82d661cdc7cbf197aee51e94de4f0456c2673fcffc66848
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.36.1.orig.tar.xz' util-linux_2.36.1.orig.tar.xz 5231880 SHA512:9dfd01ae4c16fa35015dafd222d555988b72e4d1d2fbadd140791b9ef78f84fa8254d4d08dc67cabf41e873338867f19e786b989d708ccfe5161c4f7679bba7a
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.36.1-8ubuntu2.2.debian.tar.xz' util-linux_2.36.1-8ubuntu2.2.debian.tar.xz 107024 SHA512:cb048520cf6745ab704905d83c36c430d4cf46159859558f30e3673b66787f30be143510375a43784c0bc5a1f539ebd71e2c1043108e9b5acaac53f1adfc56cb
+```
 
 ### `dpkg` source package: `wget=1.21-1ubuntu3`
 
