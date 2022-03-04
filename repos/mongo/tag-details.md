@@ -126,7 +126,7 @@
 ## `mongo:4`
 
 ```console
-$ docker pull mongo@sha256:c9b6f62273fcdacf8b7aa8cd3d2e7edc69a6a9383e70c82bc8fe05d423bea738
+$ docker pull mongo@sha256:a9a9b095325f08a3057eeed0ba0b5c845e54187148dbeef0315f41065794ad32
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -139,206 +139,206 @@ $ docker pull mongo@sha256:c9b6f62273fcdacf8b7aa8cd3d2e7edc69a6a9383e70c82bc8fe0
 ### `mongo:4` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:416345680d52c14e122f25723d6b0f800c33c8471781976bd86c6bcc2017ef00
+$ docker pull mongo@sha256:fb22042c0565e8bc8a0a6b3b1b94a4a4e623bb14d1a0df2f2d97aac2ff7c6cff
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **171.6 MB (171647417 bytes)**  
+-	Total Size: **171.6 MB (171648916 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5ccbc80e5f8e4b4885853522ecc8c47335eab2a0780d71c6f66bbc092050c72b`
+-	Image ID: `sha256:8a0504dec14a5bd64f02e6f8ba4ed0d29bec25281928f7c1511bf0b0ccb22430`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 02:14:45 GMT
-ADD file:3ccf747d646089ed7fbb43c40c45dd43e86f0674115f856efada93c7e4a63624 in / 
-# Wed, 02 Feb 2022 02:14:46 GMT
+# Thu, 03 Mar 2022 20:19:33 GMT
+ADD file:8a50ad78a668527e974b05a3dfbfd64760de3cb643ceb8a8805d21f6ceab3389 in / 
+# Thu, 03 Mar 2022 20:19:33 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 03:53:54 GMT
+# Thu, 03 Mar 2022 21:57:21 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 03:54:12 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 03:54:12 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 03:54:13 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 03:54:24 GMT
+# Thu, 03 Mar 2022 21:57:46 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 03:54:25 GMT
+# Thu, 03 Mar 2022 21:57:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:25:38 GMT
+# Thu, 03 Mar 2022 22:02:27 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- '20691EEC35216C63CAF66CE1656408E390CFB1F5'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:25:38 GMT
+# Thu, 03 Mar 2022 22:02:27 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:25:38 GMT
+# Thu, 03 Mar 2022 22:02:27 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:25:38 GMT
+# Thu, 03 Mar 2022 22:02:27 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:25:39 GMT
+# Thu, 03 Mar 2022 22:02:27 GMT
 ENV MONGO_MAJOR=4.4
-# Tue, 01 Mar 2022 03:25:39 GMT
+# Thu, 03 Mar 2022 22:02:28 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu focal/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:25:39 GMT
+# Thu, 03 Mar 2022 22:02:28 GMT
 ENV MONGO_VERSION=4.4.12
-# Tue, 01 Mar 2022 03:25:57 GMT
+# Thu, 03 Mar 2022 22:02:44 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:25:58 GMT
+# Thu, 03 Mar 2022 22:02:45 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:25:58 GMT
+# Thu, 03 Mar 2022 22:02:45 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:25:58 GMT
+# Thu, 03 Mar 2022 22:02:45 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:25:59 GMT
+# Thu, 03 Mar 2022 22:02:45 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:25:59 GMT
+# Thu, 03 Mar 2022 22:02:46 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:25:59 GMT
+# Thu, 03 Mar 2022 22:02:46 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:08c01a0ec47e82ebe2bec112f373d160983a6d1e9e66627f66a3322bc403221b`  
-		Last Modified: Wed, 02 Feb 2022 02:16:20 GMT  
-		Size: 28.6 MB (28564099 bytes)  
+	-	`sha256:7c3b88808835aa80f1ef7f03083c5ae781d0f44e644537cd72de4ce6c5e62e00`  
+		Last Modified: Thu, 03 Mar 2022 20:20:44 GMT  
+		Size: 28.6 MB (28565751 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ceb608a7cda73cd80c28a22573e64e6778ba8d3cfbe6b03ed39213391a10e2a4`  
-		Last Modified: Wed, 02 Feb 2022 03:58:32 GMT  
-		Size: 1.8 KB (1750 bytes)  
+	-	`sha256:48a403577c28fafaf89a46590d69c237ae9fd5e576f96bf984e45ead657a3ef3`  
+		Last Modified: Thu, 03 Mar 2022 22:07:07 GMT  
+		Size: 1.7 KB (1748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a160d3e3934a135ad5c71555099d1fe85aab6f96d34b578a76ff52a95c22dd19`  
-		Last Modified: Wed, 02 Feb 2022 03:58:32 GMT  
-		Size: 3.1 MB (3064433 bytes)  
+	-	`sha256:76bbb7dc901383749cee88f0d357711cf7059ef51211c4725d60127a431d2844`  
+		Last Modified: Thu, 03 Mar 2022 22:07:08 GMT  
+		Size: 3.1 MB (3064492 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:544b729231207ba1a406ea8cbb2764717ea55ec68a2edd74bd992f0aed167184`  
-		Last Modified: Wed, 02 Feb 2022 03:58:33 GMT  
-		Size: 6.5 MB (6505756 bytes)  
+	-	`sha256:e81b1e5a386bad953e0fc4c4625bb63aea27c931f575e665730eea7fd4f373ad`  
+		Last Modified: Thu, 03 Mar 2022 22:07:08 GMT  
+		Size: 6.5 MB (6505604 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:812461eda79e980889ebf8fbb4bcc083ecae07e83d9dbec008a049a11c83198c`  
-		Last Modified: Wed, 02 Feb 2022 03:58:31 GMT  
+	-	`sha256:7bdc1db49ec948ae1977bbbf82bca00efce13bebbaf1aabbe5ec24e1b3c268db`  
+		Last Modified: Thu, 03 Mar 2022 22:07:07 GMT  
 		Size: 149.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cd6b9907740cbfbee3e3970e5e8298f9b9fb36b2ae04437a131c74183d43154e`  
-		Last Modified: Tue, 01 Mar 2022 03:29:50 GMT  
-		Size: 1.4 KB (1444 bytes)  
+	-	`sha256:9a57632a805191d98f7e8f0c11680166d5c0890f6e79f245572af4d2b243ea68`  
+		Last Modified: Thu, 03 Mar 2022 22:08:17 GMT  
+		Size: 1.4 KB (1445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:836655000c375bb076915e5af942a76840a15bb10863f4684d32d8cee56e628a`  
-		Last Modified: Tue, 01 Mar 2022 03:29:50 GMT  
-		Size: 259.0 B  
+	-	`sha256:5bdd30561f8402b3e6137cec2f5ef8ac61936588be7f436109e263e9a383b9cd`  
+		Last Modified: Thu, 03 Mar 2022 22:08:17 GMT  
+		Size: 257.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:abcc554bf4affcfe5694f38e0adb14ce41dc7ba692c2bccae2fbefd6fee1856f`  
-		Last Modified: Tue, 01 Mar 2022 03:30:09 GMT  
-		Size: 133.5 MB (133504410 bytes)  
+	-	`sha256:e7f3d307166feab0ac9eafce991dc503ad85f0665335f423260d9a890b6a73ba`  
+		Last Modified: Thu, 03 Mar 2022 22:08:34 GMT  
+		Size: 133.5 MB (133504355 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:808ba618f652943c5b41bbdb951afcd3805114d1bdcb83c61e82fc9c8d7deebc`  
-		Last Modified: Tue, 01 Mar 2022 03:29:50 GMT  
+	-	`sha256:36db699d28f0349c8e924ed2cc9bac7c94a1987fb8071831e49246c8f8b56a82`  
+		Last Modified: Thu, 03 Mar 2022 22:08:17 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:797e11761fdbd9c267dfc3e62b138d6385f2c3e72d13ffde0275f81cdfe7828d`  
-		Last Modified: Tue, 01 Mar 2022 03:29:50 GMT  
-		Size: 4.9 KB (4948 bytes)  
+	-	`sha256:b69893e2ea1ea3c7f53c3d9cbab570fe0ae6c4095b2ee5340b348c7078ae11e7`  
+		Last Modified: Thu, 03 Mar 2022 22:08:17 GMT  
+		Size: 4.9 KB (4946 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:4` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:e78e550570cfd84d293da54bb39bb9139fc91251a82a7969f2f41ca18267fa79
+$ docker pull mongo@sha256:d67a46d75bafff8172fc28eb5c9f524341a179c816c440f0ecd95fdbf677d255
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **166.7 MB (166738075 bytes)**  
+-	Total Size: **166.7 MB (166737437 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4920f12930f3d5b8d45f6e554eda6ced50eff7f5c8803c119491341379521443`
+-	Image ID: `sha256:9c0d0746961895653f090a96ea69f13ad91b9537e0509894798279cd12eed42e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 03:19:27 GMT
-ADD file:3acc741be29b0b58e44d7302ab5ce65bf65ea1b35922be58a2cee9cb708d006a in / 
-# Wed, 02 Feb 2022 03:19:27 GMT
+# Thu, 03 Mar 2022 19:41:02 GMT
+ADD file:f2fffe739729839aa17484bc4d79d33425549c5052824eac12131b16c23565d3 in / 
+# Thu, 03 Mar 2022 19:41:03 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 05:45:05 GMT
+# Thu, 03 Mar 2022 20:50:47 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 05:45:15 GMT
+# Thu, 03 Mar 2022 20:50:58 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 05:45:16 GMT
+# Thu, 03 Mar 2022 20:50:58 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 05:45:17 GMT
+# Thu, 03 Mar 2022 20:50:59 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 05:45:33 GMT
+# Thu, 03 Mar 2022 20:51:15 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 05:45:34 GMT
+# Thu, 03 Mar 2022 20:51:16 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 20:56:17 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- '20691EEC35216C63CAF66CE1656408E390CFB1F5'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 20:56:18 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:24:47 GMT
+# Thu, 03 Mar 2022 20:56:19 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:24:48 GMT
+# Thu, 03 Mar 2022 20:56:20 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:24:49 GMT
+# Thu, 03 Mar 2022 20:56:21 GMT
 ENV MONGO_MAJOR=4.4
-# Tue, 01 Mar 2022 03:24:50 GMT
+# Thu, 03 Mar 2022 20:56:22 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu focal/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:24:51 GMT
+# Thu, 03 Mar 2022 20:56:23 GMT
 ENV MONGO_VERSION=4.4.12
-# Tue, 01 Mar 2022 03:25:11 GMT
+# Thu, 03 Mar 2022 20:56:44 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:25:12 GMT
+# Thu, 03 Mar 2022 20:56:45 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:25:13 GMT
+# Thu, 03 Mar 2022 20:56:45 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:25:15 GMT
+# Thu, 03 Mar 2022 20:56:47 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:25:15 GMT
+# Thu, 03 Mar 2022 20:56:47 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:25:16 GMT
+# Thu, 03 Mar 2022 20:56:48 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:25:17 GMT
+# Thu, 03 Mar 2022 20:56:49 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:bbf2fb66fa6e06dd46eb26f518f93171ee7c48be68aafb213aa7c2c12f4018ca`  
-		Last Modified: Wed, 02 Feb 2022 03:21:24 GMT  
-		Size: 27.2 MB (27169640 bytes)  
+	-	`sha256:5a7855fb0d7ae372c824d9c76be5ad2f42ce178c1910fa54a8543036b5325fd5`  
+		Last Modified: Thu, 03 Mar 2022 19:42:38 GMT  
+		Size: 27.2 MB (27169631 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc29132329410addab1460dc8766c612d802fd087c89530850ee4fc3bfccb9d1`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
-		Size: 1.7 KB (1732 bytes)  
+	-	`sha256:93835005f83fca8d11e84de6d362cbdac541df8362e80c6a0172100f8b8a27ea`  
+		Last Modified: Thu, 03 Mar 2022 21:02:38 GMT  
+		Size: 1.7 KB (1728 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35d26e50b564fed7f08788d9db622ed591d1666d153ca9c6c7e44810cb4a95af`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
-		Size: 2.9 MB (2912189 bytes)  
+	-	`sha256:85b1c8f1aa262a4f9ecfc4a311235d079693056c9b47ac47c30478ac25c87e36`  
+		Last Modified: Thu, 03 Mar 2022 21:02:36 GMT  
+		Size: 2.9 MB (2912105 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e5a900b805d7561beb888f5130ab75e7a55960fba49790bc0e71dca4c6f1d00`  
-		Last Modified: Wed, 02 Feb 2022 05:50:26 GMT  
-		Size: 6.2 MB (6248507 bytes)  
+	-	`sha256:b9207ce7ec0ce748a22c1074f1471f694ca5a46ba77f3cb86f7485a9df75f492`  
+		Last Modified: Thu, 03 Mar 2022 21:02:36 GMT  
+		Size: 6.2 MB (6248075 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4bd55587e4b045a1d2bab13971a1045c2baa6952fcc7de26890851325cd5314`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
+	-	`sha256:a98a90fbda7bccfa543c5d402318d145dc64f2d3be60275c04a10ede986569ca`  
+		Last Modified: Thu, 03 Mar 2022 21:02:35 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ef21e2c8a7834c9104f0fb769ffedf9431a2d775d4ab950971f7e19d6b3f8536`  
-		Last Modified: Tue, 01 Mar 2022 03:31:04 GMT  
+	-	`sha256:a94ad0a7969a63e63fb47cf96c863c73a133bbe21dde534a12a6b1a2ecd4620e`  
+		Last Modified: Thu, 03 Mar 2022 21:03:50 GMT  
 		Size: 1.4 KB (1394 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:556797adee15ab44c08b3b8fc1a8882fd3f26198751e65f52214d6b31c5650a2`  
-		Last Modified: Tue, 01 Mar 2022 03:31:04 GMT  
-		Size: 261.0 B  
+	-	`sha256:e37c7fdc11f381659d5069d1336bd38bb17ccbcd73c5b735a62c79b49ccf936c`  
+		Last Modified: Thu, 03 Mar 2022 21:03:50 GMT  
+		Size: 260.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2fbcc7a6ef34d71a057d29611ee205e746aca5067834430149df186f7368a480`  
-		Last Modified: Tue, 01 Mar 2022 03:31:21 GMT  
-		Size: 130.4 MB (130399151 bytes)  
+	-	`sha256:51c308f81850382890e0b55f68c3b70437f530f76f0e9f2b646799422481ec20`  
+		Last Modified: Thu, 03 Mar 2022 21:04:06 GMT  
+		Size: 130.4 MB (130399044 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc15bdbfa8c7223c94140a7f4c17c7c8d3ce4876dea0facef17f114cba73e19a`  
-		Last Modified: Tue, 01 Mar 2022 03:31:05 GMT  
-		Size: 139.0 B  
+	-	`sha256:f7e63de29dad3e70eb299a298507a27d383d9630453b71d29cd20300e1f5e6b1`  
+		Last Modified: Thu, 03 Mar 2022 21:03:50 GMT  
+		Size: 138.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:12a20655125ac8b9d96142455cdf2363e80a3c073f579a7624e41c2a4a466c3a`  
-		Last Modified: Tue, 01 Mar 2022 03:31:04 GMT  
+	-	`sha256:0046fa0e8522005a884540fdec479070f3c8b1ed1efd0bb9851b75a46b0c6993`  
+		Last Modified: Thu, 03 Mar 2022 21:03:50 GMT  
 		Size: 4.9 KB (4947 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -499,7 +499,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:4-focal`
 
 ```console
-$ docker pull mongo@sha256:81232b17a10ff514dbc118c7cb8ac5116eeb15e59e19454edd1e7a6a4baf1f80
+$ docker pull mongo@sha256:27783a99236a51abd3225f48b7e111232dc1c934e613614e73f309b34b5a312f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -510,206 +510,206 @@ $ docker pull mongo@sha256:81232b17a10ff514dbc118c7cb8ac5116eeb15e59e19454edd1e7
 ### `mongo:4-focal` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:416345680d52c14e122f25723d6b0f800c33c8471781976bd86c6bcc2017ef00
+$ docker pull mongo@sha256:fb22042c0565e8bc8a0a6b3b1b94a4a4e623bb14d1a0df2f2d97aac2ff7c6cff
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **171.6 MB (171647417 bytes)**  
+-	Total Size: **171.6 MB (171648916 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5ccbc80e5f8e4b4885853522ecc8c47335eab2a0780d71c6f66bbc092050c72b`
+-	Image ID: `sha256:8a0504dec14a5bd64f02e6f8ba4ed0d29bec25281928f7c1511bf0b0ccb22430`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 02:14:45 GMT
-ADD file:3ccf747d646089ed7fbb43c40c45dd43e86f0674115f856efada93c7e4a63624 in / 
-# Wed, 02 Feb 2022 02:14:46 GMT
+# Thu, 03 Mar 2022 20:19:33 GMT
+ADD file:8a50ad78a668527e974b05a3dfbfd64760de3cb643ceb8a8805d21f6ceab3389 in / 
+# Thu, 03 Mar 2022 20:19:33 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 03:53:54 GMT
+# Thu, 03 Mar 2022 21:57:21 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 03:54:12 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 03:54:12 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 03:54:13 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 03:54:24 GMT
+# Thu, 03 Mar 2022 21:57:46 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 03:54:25 GMT
+# Thu, 03 Mar 2022 21:57:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:25:38 GMT
+# Thu, 03 Mar 2022 22:02:27 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- '20691EEC35216C63CAF66CE1656408E390CFB1F5'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:25:38 GMT
+# Thu, 03 Mar 2022 22:02:27 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:25:38 GMT
+# Thu, 03 Mar 2022 22:02:27 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:25:38 GMT
+# Thu, 03 Mar 2022 22:02:27 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:25:39 GMT
+# Thu, 03 Mar 2022 22:02:27 GMT
 ENV MONGO_MAJOR=4.4
-# Tue, 01 Mar 2022 03:25:39 GMT
+# Thu, 03 Mar 2022 22:02:28 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu focal/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:25:39 GMT
+# Thu, 03 Mar 2022 22:02:28 GMT
 ENV MONGO_VERSION=4.4.12
-# Tue, 01 Mar 2022 03:25:57 GMT
+# Thu, 03 Mar 2022 22:02:44 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:25:58 GMT
+# Thu, 03 Mar 2022 22:02:45 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:25:58 GMT
+# Thu, 03 Mar 2022 22:02:45 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:25:58 GMT
+# Thu, 03 Mar 2022 22:02:45 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:25:59 GMT
+# Thu, 03 Mar 2022 22:02:45 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:25:59 GMT
+# Thu, 03 Mar 2022 22:02:46 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:25:59 GMT
+# Thu, 03 Mar 2022 22:02:46 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:08c01a0ec47e82ebe2bec112f373d160983a6d1e9e66627f66a3322bc403221b`  
-		Last Modified: Wed, 02 Feb 2022 02:16:20 GMT  
-		Size: 28.6 MB (28564099 bytes)  
+	-	`sha256:7c3b88808835aa80f1ef7f03083c5ae781d0f44e644537cd72de4ce6c5e62e00`  
+		Last Modified: Thu, 03 Mar 2022 20:20:44 GMT  
+		Size: 28.6 MB (28565751 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ceb608a7cda73cd80c28a22573e64e6778ba8d3cfbe6b03ed39213391a10e2a4`  
-		Last Modified: Wed, 02 Feb 2022 03:58:32 GMT  
-		Size: 1.8 KB (1750 bytes)  
+	-	`sha256:48a403577c28fafaf89a46590d69c237ae9fd5e576f96bf984e45ead657a3ef3`  
+		Last Modified: Thu, 03 Mar 2022 22:07:07 GMT  
+		Size: 1.7 KB (1748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a160d3e3934a135ad5c71555099d1fe85aab6f96d34b578a76ff52a95c22dd19`  
-		Last Modified: Wed, 02 Feb 2022 03:58:32 GMT  
-		Size: 3.1 MB (3064433 bytes)  
+	-	`sha256:76bbb7dc901383749cee88f0d357711cf7059ef51211c4725d60127a431d2844`  
+		Last Modified: Thu, 03 Mar 2022 22:07:08 GMT  
+		Size: 3.1 MB (3064492 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:544b729231207ba1a406ea8cbb2764717ea55ec68a2edd74bd992f0aed167184`  
-		Last Modified: Wed, 02 Feb 2022 03:58:33 GMT  
-		Size: 6.5 MB (6505756 bytes)  
+	-	`sha256:e81b1e5a386bad953e0fc4c4625bb63aea27c931f575e665730eea7fd4f373ad`  
+		Last Modified: Thu, 03 Mar 2022 22:07:08 GMT  
+		Size: 6.5 MB (6505604 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:812461eda79e980889ebf8fbb4bcc083ecae07e83d9dbec008a049a11c83198c`  
-		Last Modified: Wed, 02 Feb 2022 03:58:31 GMT  
+	-	`sha256:7bdc1db49ec948ae1977bbbf82bca00efce13bebbaf1aabbe5ec24e1b3c268db`  
+		Last Modified: Thu, 03 Mar 2022 22:07:07 GMT  
 		Size: 149.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cd6b9907740cbfbee3e3970e5e8298f9b9fb36b2ae04437a131c74183d43154e`  
-		Last Modified: Tue, 01 Mar 2022 03:29:50 GMT  
-		Size: 1.4 KB (1444 bytes)  
+	-	`sha256:9a57632a805191d98f7e8f0c11680166d5c0890f6e79f245572af4d2b243ea68`  
+		Last Modified: Thu, 03 Mar 2022 22:08:17 GMT  
+		Size: 1.4 KB (1445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:836655000c375bb076915e5af942a76840a15bb10863f4684d32d8cee56e628a`  
-		Last Modified: Tue, 01 Mar 2022 03:29:50 GMT  
-		Size: 259.0 B  
+	-	`sha256:5bdd30561f8402b3e6137cec2f5ef8ac61936588be7f436109e263e9a383b9cd`  
+		Last Modified: Thu, 03 Mar 2022 22:08:17 GMT  
+		Size: 257.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:abcc554bf4affcfe5694f38e0adb14ce41dc7ba692c2bccae2fbefd6fee1856f`  
-		Last Modified: Tue, 01 Mar 2022 03:30:09 GMT  
-		Size: 133.5 MB (133504410 bytes)  
+	-	`sha256:e7f3d307166feab0ac9eafce991dc503ad85f0665335f423260d9a890b6a73ba`  
+		Last Modified: Thu, 03 Mar 2022 22:08:34 GMT  
+		Size: 133.5 MB (133504355 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:808ba618f652943c5b41bbdb951afcd3805114d1bdcb83c61e82fc9c8d7deebc`  
-		Last Modified: Tue, 01 Mar 2022 03:29:50 GMT  
+	-	`sha256:36db699d28f0349c8e924ed2cc9bac7c94a1987fb8071831e49246c8f8b56a82`  
+		Last Modified: Thu, 03 Mar 2022 22:08:17 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:797e11761fdbd9c267dfc3e62b138d6385f2c3e72d13ffde0275f81cdfe7828d`  
-		Last Modified: Tue, 01 Mar 2022 03:29:50 GMT  
-		Size: 4.9 KB (4948 bytes)  
+	-	`sha256:b69893e2ea1ea3c7f53c3d9cbab570fe0ae6c4095b2ee5340b348c7078ae11e7`  
+		Last Modified: Thu, 03 Mar 2022 22:08:17 GMT  
+		Size: 4.9 KB (4946 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:4-focal` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:e78e550570cfd84d293da54bb39bb9139fc91251a82a7969f2f41ca18267fa79
+$ docker pull mongo@sha256:d67a46d75bafff8172fc28eb5c9f524341a179c816c440f0ecd95fdbf677d255
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **166.7 MB (166738075 bytes)**  
+-	Total Size: **166.7 MB (166737437 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4920f12930f3d5b8d45f6e554eda6ced50eff7f5c8803c119491341379521443`
+-	Image ID: `sha256:9c0d0746961895653f090a96ea69f13ad91b9537e0509894798279cd12eed42e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 03:19:27 GMT
-ADD file:3acc741be29b0b58e44d7302ab5ce65bf65ea1b35922be58a2cee9cb708d006a in / 
-# Wed, 02 Feb 2022 03:19:27 GMT
+# Thu, 03 Mar 2022 19:41:02 GMT
+ADD file:f2fffe739729839aa17484bc4d79d33425549c5052824eac12131b16c23565d3 in / 
+# Thu, 03 Mar 2022 19:41:03 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 05:45:05 GMT
+# Thu, 03 Mar 2022 20:50:47 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 05:45:15 GMT
+# Thu, 03 Mar 2022 20:50:58 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 05:45:16 GMT
+# Thu, 03 Mar 2022 20:50:58 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 05:45:17 GMT
+# Thu, 03 Mar 2022 20:50:59 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 05:45:33 GMT
+# Thu, 03 Mar 2022 20:51:15 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 05:45:34 GMT
+# Thu, 03 Mar 2022 20:51:16 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 20:56:17 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- '20691EEC35216C63CAF66CE1656408E390CFB1F5'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 20:56:18 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:24:47 GMT
+# Thu, 03 Mar 2022 20:56:19 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:24:48 GMT
+# Thu, 03 Mar 2022 20:56:20 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:24:49 GMT
+# Thu, 03 Mar 2022 20:56:21 GMT
 ENV MONGO_MAJOR=4.4
-# Tue, 01 Mar 2022 03:24:50 GMT
+# Thu, 03 Mar 2022 20:56:22 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu focal/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:24:51 GMT
+# Thu, 03 Mar 2022 20:56:23 GMT
 ENV MONGO_VERSION=4.4.12
-# Tue, 01 Mar 2022 03:25:11 GMT
+# Thu, 03 Mar 2022 20:56:44 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:25:12 GMT
+# Thu, 03 Mar 2022 20:56:45 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:25:13 GMT
+# Thu, 03 Mar 2022 20:56:45 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:25:15 GMT
+# Thu, 03 Mar 2022 20:56:47 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:25:15 GMT
+# Thu, 03 Mar 2022 20:56:47 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:25:16 GMT
+# Thu, 03 Mar 2022 20:56:48 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:25:17 GMT
+# Thu, 03 Mar 2022 20:56:49 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:bbf2fb66fa6e06dd46eb26f518f93171ee7c48be68aafb213aa7c2c12f4018ca`  
-		Last Modified: Wed, 02 Feb 2022 03:21:24 GMT  
-		Size: 27.2 MB (27169640 bytes)  
+	-	`sha256:5a7855fb0d7ae372c824d9c76be5ad2f42ce178c1910fa54a8543036b5325fd5`  
+		Last Modified: Thu, 03 Mar 2022 19:42:38 GMT  
+		Size: 27.2 MB (27169631 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc29132329410addab1460dc8766c612d802fd087c89530850ee4fc3bfccb9d1`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
-		Size: 1.7 KB (1732 bytes)  
+	-	`sha256:93835005f83fca8d11e84de6d362cbdac541df8362e80c6a0172100f8b8a27ea`  
+		Last Modified: Thu, 03 Mar 2022 21:02:38 GMT  
+		Size: 1.7 KB (1728 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35d26e50b564fed7f08788d9db622ed591d1666d153ca9c6c7e44810cb4a95af`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
-		Size: 2.9 MB (2912189 bytes)  
+	-	`sha256:85b1c8f1aa262a4f9ecfc4a311235d079693056c9b47ac47c30478ac25c87e36`  
+		Last Modified: Thu, 03 Mar 2022 21:02:36 GMT  
+		Size: 2.9 MB (2912105 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e5a900b805d7561beb888f5130ab75e7a55960fba49790bc0e71dca4c6f1d00`  
-		Last Modified: Wed, 02 Feb 2022 05:50:26 GMT  
-		Size: 6.2 MB (6248507 bytes)  
+	-	`sha256:b9207ce7ec0ce748a22c1074f1471f694ca5a46ba77f3cb86f7485a9df75f492`  
+		Last Modified: Thu, 03 Mar 2022 21:02:36 GMT  
+		Size: 6.2 MB (6248075 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4bd55587e4b045a1d2bab13971a1045c2baa6952fcc7de26890851325cd5314`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
+	-	`sha256:a98a90fbda7bccfa543c5d402318d145dc64f2d3be60275c04a10ede986569ca`  
+		Last Modified: Thu, 03 Mar 2022 21:02:35 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ef21e2c8a7834c9104f0fb769ffedf9431a2d775d4ab950971f7e19d6b3f8536`  
-		Last Modified: Tue, 01 Mar 2022 03:31:04 GMT  
+	-	`sha256:a94ad0a7969a63e63fb47cf96c863c73a133bbe21dde534a12a6b1a2ecd4620e`  
+		Last Modified: Thu, 03 Mar 2022 21:03:50 GMT  
 		Size: 1.4 KB (1394 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:556797adee15ab44c08b3b8fc1a8882fd3f26198751e65f52214d6b31c5650a2`  
-		Last Modified: Tue, 01 Mar 2022 03:31:04 GMT  
-		Size: 261.0 B  
+	-	`sha256:e37c7fdc11f381659d5069d1336bd38bb17ccbcd73c5b735a62c79b49ccf936c`  
+		Last Modified: Thu, 03 Mar 2022 21:03:50 GMT  
+		Size: 260.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2fbcc7a6ef34d71a057d29611ee205e746aca5067834430149df186f7368a480`  
-		Last Modified: Tue, 01 Mar 2022 03:31:21 GMT  
-		Size: 130.4 MB (130399151 bytes)  
+	-	`sha256:51c308f81850382890e0b55f68c3b70437f530f76f0e9f2b646799422481ec20`  
+		Last Modified: Thu, 03 Mar 2022 21:04:06 GMT  
+		Size: 130.4 MB (130399044 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc15bdbfa8c7223c94140a7f4c17c7c8d3ce4876dea0facef17f114cba73e19a`  
-		Last Modified: Tue, 01 Mar 2022 03:31:05 GMT  
-		Size: 139.0 B  
+	-	`sha256:f7e63de29dad3e70eb299a298507a27d383d9630453b71d29cd20300e1f5e6b1`  
+		Last Modified: Thu, 03 Mar 2022 21:03:50 GMT  
+		Size: 138.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:12a20655125ac8b9d96142455cdf2363e80a3c073f579a7624e41c2a4a466c3a`  
-		Last Modified: Tue, 01 Mar 2022 03:31:04 GMT  
+	-	`sha256:0046fa0e8522005a884540fdec479070f3c8b1ed1efd0bb9851b75a46b0c6993`  
+		Last Modified: Thu, 03 Mar 2022 21:03:50 GMT  
 		Size: 4.9 KB (4947 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -4230,7 +4230,7 @@ CMD ["mongod"]
 ## `mongo:4.2`
 
 ```console
-$ docker pull mongo@sha256:f4d773933d66e57a664ec54b45b3e131cbb558a3e4f3f8e0431cf2e583b3188e
+$ docker pull mongo@sha256:69468660f923d23dca698dc5caa83e2a544bd3de9fd2a2f4d27d7c8530ebf681
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4243,207 +4243,207 @@ $ docker pull mongo@sha256:f4d773933d66e57a664ec54b45b3e131cbb558a3e4f3f8e0431cf
 ### `mongo:4.2` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:e22a890c4813dcbe7cab3a7e27a608f8ecdc725ae09b85e243db2704ee768248
+$ docker pull mongo@sha256:252dd086635abe525f55d99447cbc055741224519e4ddc0036ab70f433fb895b
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **165.4 MB (165362389 bytes)**  
+-	Total Size: **165.4 MB (165362606 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fc8dd96847d4b6bb47611f9570065c7908e314cb1bcd72c1a60febfd34b52972`
+-	Image ID: `sha256:d410198db7e4907ede8866fefc482fb58d7836a58e5bfb3dadc0e5c25ec66e84`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 02:14:36 GMT
-ADD file:c6039a4f004b6b6c2e4c281a228d64d8410cb9fdf0c67776f84bb173d3522be1 in / 
-# Wed, 02 Feb 2022 02:14:36 GMT
+# Thu, 03 Mar 2022 20:19:25 GMT
+ADD file:dee0aa8497bd26ca41dffa17adff99be2523f66f9b2c557ba9ad2388ed052dca in / 
+# Thu, 03 Mar 2022 20:19:25 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 03:56:44 GMT
+# Thu, 03 Mar 2022 22:02:49 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 03:56:54 GMT
+# Thu, 03 Mar 2022 22:02:58 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 03:56:54 GMT
+# Thu, 03 Mar 2022 22:02:58 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 03:56:54 GMT
+# Thu, 03 Mar 2022 22:02:58 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 03:57:07 GMT
+# Thu, 03 Mar 2022 22:03:10 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 03:57:08 GMT
+# Thu, 03 Mar 2022 22:03:11 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:26:47 GMT
+# Thu, 03 Mar 2022 22:06:06 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- 'E162F504A20CDF15827F718D4B7C549A058F8B6B'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:26:47 GMT
+# Thu, 03 Mar 2022 22:06:06 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:26:47 GMT
+# Thu, 03 Mar 2022 22:06:06 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:26:47 GMT
+# Thu, 03 Mar 2022 22:06:06 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:26:47 GMT
+# Thu, 03 Mar 2022 22:06:06 GMT
 ENV MONGO_MAJOR=4.2
-# Tue, 01 Mar 2022 03:26:48 GMT
+# Thu, 03 Mar 2022 22:06:07 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu bionic/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:26:48 GMT
+# Thu, 03 Mar 2022 22:06:07 GMT
 ENV MONGO_VERSION=4.2.18
-# Tue, 01 Mar 2022 03:27:06 GMT
+# Thu, 03 Mar 2022 22:06:25 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:27:07 GMT
+# Thu, 03 Mar 2022 22:06:26 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:27:07 GMT
+# Thu, 03 Mar 2022 22:06:26 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:27:07 GMT
+# Thu, 03 Mar 2022 22:06:26 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:27:07 GMT
+# Thu, 03 Mar 2022 22:06:26 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:27:07 GMT
+# Thu, 03 Mar 2022 22:06:26 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:27:07 GMT
+# Thu, 03 Mar 2022 22:06:26 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:68e7bb398b9ff421236990bfeaf5c1feab26c590eed93489e245375c23551e2a`  
-		Last Modified: Sat, 29 Jan 2022 14:35:20 GMT  
-		Size: 26.7 MB (26708066 bytes)  
+	-	`sha256:cf06a7c3161117888114e7e91dbd21915efae33c2dbfb086380f7b21946d6e59`  
+		Last Modified: Thu, 03 Mar 2022 20:20:28 GMT  
+		Size: 26.7 MB (26708326 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6dc27e38665914e55da82bc9cc80dc654515b9c0c9081707a75becee902d977d`  
-		Last Modified: Wed, 02 Feb 2022 03:59:46 GMT  
-		Size: 1.9 KB (1874 bytes)  
+	-	`sha256:5e8cbd0519786a031d3fe902fe1ecf2040101506bf48b0cb12a12c036c2ab8cd`  
+		Last Modified: Thu, 03 Mar 2022 22:08:50 GMT  
+		Size: 1.9 KB (1878 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c6025bea41c957f3bf6222a98f785e88bcbf67384bf8f2bc33725893d043e568`  
-		Last Modified: Wed, 02 Feb 2022 03:59:46 GMT  
-		Size: 3.0 MB (2978027 bytes)  
+	-	`sha256:22d2e18323fec0800e5ef24f02122f220fd07627fceaf19372174d7c75acce53`  
+		Last Modified: Thu, 03 Mar 2022 22:08:51 GMT  
+		Size: 3.0 MB (2978035 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8fbbd127d6111d1dad866f2d016ff69fb102ca8ce9f783a9317dcd8b651eb4c3`  
-		Last Modified: Wed, 02 Feb 2022 03:59:46 GMT  
-		Size: 5.8 MB (5828621 bytes)  
+	-	`sha256:ea17d81261d502d31bfafd4139d4165bdf851d0a592b77b883bfec056e161ea8`  
+		Last Modified: Thu, 03 Mar 2022 22:08:51 GMT  
+		Size: 5.8 MB (5828641 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ffca0dee44d939a7c7dd89da6cf3828d13fc3083635d129ab5ae72828009c165`  
-		Last Modified: Wed, 02 Feb 2022 03:59:45 GMT  
+	-	`sha256:ec6d044e0932fbce5142d1fa444ceb85f15a98a2637ac87b1da99a4b47e6832f`  
+		Last Modified: Thu, 03 Mar 2022 22:08:50 GMT  
 		Size: 149.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9942733e1f202f46c34b9b359bb4c03d747c726f2393d25053e770bf7ed20348`  
-		Last Modified: Tue, 01 Mar 2022 03:30:49 GMT  
+	-	`sha256:f498f5d059833e37356dcac4736fe6429c74dbb14993c5bbd5bc0c6146a205a6`  
+		Last Modified: Thu, 03 Mar 2022 22:09:13 GMT  
 		Size: 1.4 KB (1450 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:34274adcf83a7e0f0ebb2c06bf4d84d3a9da8a20bc20b581855bc42e25762b70`  
-		Last Modified: Tue, 01 Mar 2022 03:30:49 GMT  
-		Size: 260.0 B  
+	-	`sha256:498789c86cd99df0f2ebcf32aab90aef652b28c968fb9dd677e35ebcebd78f55`  
+		Last Modified: Thu, 03 Mar 2022 22:09:13 GMT  
+		Size: 256.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1fdf31a88df6876bcdebbef83bc2c74f74437514cd830c1901eb3e7fed32b16e`  
-		Last Modified: Tue, 01 Mar 2022 03:31:06 GMT  
-		Size: 129.8 MB (129838826 bytes)  
+	-	`sha256:ba1151db8da55d488b74ad52abbe9effa7703892848ce3b9ce72dbdcb23e4826`  
+		Last Modified: Thu, 03 Mar 2022 22:09:29 GMT  
+		Size: 129.8 MB (129838753 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f9c175d9682876b5e7da5ff99655a30c7dd08522492d2c9b980bf1a21f1409db`  
-		Last Modified: Tue, 01 Mar 2022 03:30:50 GMT  
-		Size: 169.0 B  
+	-	`sha256:9091720ff834f126a63c1ae3962f06660e51c830461b8b5e38d6f8a945b67603`  
+		Last Modified: Thu, 03 Mar 2022 22:09:13 GMT  
+		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ab8ab738cc6b3ec27fe727b0a123b9216ad7e36b4a838b869b3e783727fa476`  
-		Last Modified: Tue, 01 Mar 2022 03:30:50 GMT  
-		Size: 4.9 KB (4947 bytes)  
+	-	`sha256:06b8f67e13e19a891a5b7e441544c46674a4fbbe1f3ba68a93f91d8e4e1964f1`  
+		Last Modified: Thu, 03 Mar 2022 22:09:13 GMT  
+		Size: 4.9 KB (4948 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:4.2` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:12860ec454d3eef1e39d7aaf35e20ddf56718cf1c9f5728d1fb7b1705af71cac
+$ docker pull mongo@sha256:d31a2ad526fe6430b7f347b0edc0116821ecadce852b377b12cf5bcaf5791a80
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **155.6 MB (155556354 bytes)**  
+-	Total Size: **155.6 MB (155556268 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:53936119361fac4a77c919856b654df973ec38939f3dc2a3c62dde634c6cb0eb`
+-	Image ID: `sha256:4de3c7630dc92ea4c1fbca4fc42910d9546129c9448474cb279de55041de73f9`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 03:19:18 GMT
-ADD file:6c6588e8deb686903374087994742c9d5e77393babbbffd56aea9d4e6c888aa7 in / 
-# Wed, 02 Feb 2022 03:19:18 GMT
+# Thu, 03 Mar 2022 19:40:54 GMT
+ADD file:4e0e00a64dd88d531092dae4e900f36acb9c48c652d278ec0cd32aef9fffb42b in / 
+# Thu, 03 Mar 2022 19:40:55 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 05:48:00 GMT
+# Thu, 03 Mar 2022 20:56:57 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 05:48:11 GMT
+# Thu, 03 Mar 2022 20:57:08 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 05:48:11 GMT
+# Thu, 03 Mar 2022 20:57:08 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 05:48:12 GMT
+# Thu, 03 Mar 2022 20:57:09 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 05:48:28 GMT
+# Thu, 03 Mar 2022 20:57:25 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 05:48:29 GMT
+# Thu, 03 Mar 2022 20:57:26 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:27:30 GMT
+# Thu, 03 Mar 2022 21:01:00 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- 'E162F504A20CDF15827F718D4B7C549A058F8B6B'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:27:31 GMT
+# Thu, 03 Mar 2022 21:01:01 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:27:32 GMT
+# Thu, 03 Mar 2022 21:01:02 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:27:33 GMT
+# Thu, 03 Mar 2022 21:01:03 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:27:34 GMT
+# Thu, 03 Mar 2022 21:01:04 GMT
 ENV MONGO_MAJOR=4.2
-# Tue, 01 Mar 2022 03:27:35 GMT
+# Thu, 03 Mar 2022 21:01:05 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu bionic/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:27:36 GMT
+# Thu, 03 Mar 2022 21:01:06 GMT
 ENV MONGO_VERSION=4.2.18
-# Tue, 01 Mar 2022 03:27:54 GMT
+# Thu, 03 Mar 2022 21:01:23 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:27:54 GMT
+# Thu, 03 Mar 2022 21:01:24 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:27:55 GMT
+# Thu, 03 Mar 2022 21:01:25 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:27:57 GMT
+# Thu, 03 Mar 2022 21:01:27 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:27:57 GMT
+# Thu, 03 Mar 2022 21:01:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:27:58 GMT
+# Thu, 03 Mar 2022 21:01:28 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:27:59 GMT
+# Thu, 03 Mar 2022 21:01:29 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:02b7ffdbddc71205d24598c17b9c600df7cc8d35fb49e550250299ce97e1c96e`  
-		Last Modified: Wed, 02 Feb 2022 03:21:06 GMT  
-		Size: 23.7 MB (23729736 bytes)  
+	-	`sha256:20d796c36622ded7b79b53bfa23d7db4140fde7ea3842825f9aca4070b429317`  
+		Last Modified: Thu, 03 Mar 2022 19:42:21 GMT  
+		Size: 23.7 MB (23729651 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ee36322db07da461331ef7762cad1e50f9790912929a11d4869aa9505ae3607`  
-		Last Modified: Wed, 02 Feb 2022 05:51:44 GMT  
-		Size: 1.9 KB (1854 bytes)  
+	-	`sha256:6dfe0149b9b5b8b51774d87be06bb97e2c5187abfa38f4739c3782fdd069cfda`  
+		Last Modified: Thu, 03 Mar 2022 21:04:28 GMT  
+		Size: 1.9 KB (1859 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e7ad1a4ca6448feee2fb946d4e161591ea3d0523b34a5d86cbfd994500712efb`  
-		Last Modified: Wed, 02 Feb 2022 05:51:44 GMT  
-		Size: 2.7 MB (2668858 bytes)  
+	-	`sha256:d22a20c549dcbb8090a9e33091ad5af16996ae0a6af3b3562db269b16a29eea0`  
+		Last Modified: Thu, 03 Mar 2022 21:04:28 GMT  
+		Size: 2.7 MB (2668851 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:06bc2c2171ea3add5d4e5461cf44d4915b3fa1bde9954ed627eb5a01ed23caa1`  
-		Last Modified: Wed, 02 Feb 2022 05:51:44 GMT  
-		Size: 5.2 MB (5190270 bytes)  
+	-	`sha256:309f6523369dac2175295a07f0149b8adb95e50891b40f5c45aee2dd423a4ac1`  
+		Last Modified: Thu, 03 Mar 2022 21:04:28 GMT  
+		Size: 5.2 MB (5190295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4a4067c2c526c4d0e0b8fd7577edcf4f8e1a7fd798b60696b65de058616f639f`  
-		Last Modified: Wed, 02 Feb 2022 05:51:43 GMT  
-		Size: 113.0 B  
+	-	`sha256:97621c75af8e8e69e3f0fa929521b0ea2ddea7d1e70c8fa178aa9feb6621b52b`  
+		Last Modified: Thu, 03 Mar 2022 21:04:28 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a2fb804c2880fbfd17fe05b8cf6624bce1b74b24314f43a9bac181c0c3c45c05`  
-		Last Modified: Tue, 01 Mar 2022 03:32:01 GMT  
-		Size: 1.4 KB (1400 bytes)  
+	-	`sha256:004619e96b053ba04629055f88ec4e0604a0de44e9c0eaa451c3c57a35a7e2ad`  
+		Last Modified: Thu, 03 Mar 2022 21:04:51 GMT  
+		Size: 1.4 KB (1401 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68b16aa0b8144c67048ffa136ea5bab30dabd7077fbd658c72a225c818b03e4e`  
-		Last Modified: Tue, 01 Mar 2022 03:32:01 GMT  
+	-	`sha256:790c7349f51b093eba45d95bbd5ea7de2c66296d0d983ef3ab52bc30acca06b5`  
+		Last Modified: Thu, 03 Mar 2022 21:04:52 GMT  
 		Size: 259.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6401d74abf1c18a54d46260e0cfe58f96db912ba9e5e4b33e981c78d8eef7b60`  
-		Last Modified: Tue, 01 Mar 2022 03:32:16 GMT  
-		Size: 124.0 MB (123958777 bytes)  
+	-	`sha256:9039bddaf1e19cc94d7055b8c67b28dc89c3a9cfde188b8a6c4584925368b8e8`  
+		Last Modified: Thu, 03 Mar 2022 21:05:07 GMT  
+		Size: 124.0 MB (123958752 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a2b7083d553742c8ed2d6c30c1dff4bc15b86e6b7aeadfde191cb98a9d416765`  
-		Last Modified: Tue, 01 Mar 2022 03:32:01 GMT  
+	-	`sha256:c174ecad2806afeafdf435e405854d9146585cbf3186d30c72221baa0bffd78f`  
+		Last Modified: Thu, 03 Mar 2022 21:04:52 GMT  
 		Size: 139.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:799a01873dc4e0efb3e739bf7ec13ab8c67785a61b9efd4455d4fb5e55be1209`  
-		Last Modified: Tue, 01 Mar 2022 03:32:02 GMT  
-		Size: 4.9 KB (4948 bytes)  
+	-	`sha256:900b6feaeaa57aa3928833a2d733e29c46fdbf524e857f31a7620569fdeeee58`  
+		Last Modified: Thu, 03 Mar 2022 21:04:52 GMT  
+		Size: 4.9 KB (4946 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:4.2` - windows version 10.0.20348.524; amd64
@@ -4603,7 +4603,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:4.2-bionic`
 
 ```console
-$ docker pull mongo@sha256:fcabd2763bb1a70b93b9d87f78b1049c0db6b10e352dbac88ce4fb86390f8777
+$ docker pull mongo@sha256:21e26f3fa058cc772d08a355c199546fb9344f8a8401688ba943c21e8d6656d2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4614,207 +4614,207 @@ $ docker pull mongo@sha256:fcabd2763bb1a70b93b9d87f78b1049c0db6b10e352dbac88ce4f
 ### `mongo:4.2-bionic` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:e22a890c4813dcbe7cab3a7e27a608f8ecdc725ae09b85e243db2704ee768248
+$ docker pull mongo@sha256:252dd086635abe525f55d99447cbc055741224519e4ddc0036ab70f433fb895b
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **165.4 MB (165362389 bytes)**  
+-	Total Size: **165.4 MB (165362606 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fc8dd96847d4b6bb47611f9570065c7908e314cb1bcd72c1a60febfd34b52972`
+-	Image ID: `sha256:d410198db7e4907ede8866fefc482fb58d7836a58e5bfb3dadc0e5c25ec66e84`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 02:14:36 GMT
-ADD file:c6039a4f004b6b6c2e4c281a228d64d8410cb9fdf0c67776f84bb173d3522be1 in / 
-# Wed, 02 Feb 2022 02:14:36 GMT
+# Thu, 03 Mar 2022 20:19:25 GMT
+ADD file:dee0aa8497bd26ca41dffa17adff99be2523f66f9b2c557ba9ad2388ed052dca in / 
+# Thu, 03 Mar 2022 20:19:25 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 03:56:44 GMT
+# Thu, 03 Mar 2022 22:02:49 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 03:56:54 GMT
+# Thu, 03 Mar 2022 22:02:58 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 03:56:54 GMT
+# Thu, 03 Mar 2022 22:02:58 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 03:56:54 GMT
+# Thu, 03 Mar 2022 22:02:58 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 03:57:07 GMT
+# Thu, 03 Mar 2022 22:03:10 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 03:57:08 GMT
+# Thu, 03 Mar 2022 22:03:11 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:26:47 GMT
+# Thu, 03 Mar 2022 22:06:06 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- 'E162F504A20CDF15827F718D4B7C549A058F8B6B'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:26:47 GMT
+# Thu, 03 Mar 2022 22:06:06 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:26:47 GMT
+# Thu, 03 Mar 2022 22:06:06 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:26:47 GMT
+# Thu, 03 Mar 2022 22:06:06 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:26:47 GMT
+# Thu, 03 Mar 2022 22:06:06 GMT
 ENV MONGO_MAJOR=4.2
-# Tue, 01 Mar 2022 03:26:48 GMT
+# Thu, 03 Mar 2022 22:06:07 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu bionic/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:26:48 GMT
+# Thu, 03 Mar 2022 22:06:07 GMT
 ENV MONGO_VERSION=4.2.18
-# Tue, 01 Mar 2022 03:27:06 GMT
+# Thu, 03 Mar 2022 22:06:25 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:27:07 GMT
+# Thu, 03 Mar 2022 22:06:26 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:27:07 GMT
+# Thu, 03 Mar 2022 22:06:26 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:27:07 GMT
+# Thu, 03 Mar 2022 22:06:26 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:27:07 GMT
+# Thu, 03 Mar 2022 22:06:26 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:27:07 GMT
+# Thu, 03 Mar 2022 22:06:26 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:27:07 GMT
+# Thu, 03 Mar 2022 22:06:26 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:68e7bb398b9ff421236990bfeaf5c1feab26c590eed93489e245375c23551e2a`  
-		Last Modified: Sat, 29 Jan 2022 14:35:20 GMT  
-		Size: 26.7 MB (26708066 bytes)  
+	-	`sha256:cf06a7c3161117888114e7e91dbd21915efae33c2dbfb086380f7b21946d6e59`  
+		Last Modified: Thu, 03 Mar 2022 20:20:28 GMT  
+		Size: 26.7 MB (26708326 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6dc27e38665914e55da82bc9cc80dc654515b9c0c9081707a75becee902d977d`  
-		Last Modified: Wed, 02 Feb 2022 03:59:46 GMT  
-		Size: 1.9 KB (1874 bytes)  
+	-	`sha256:5e8cbd0519786a031d3fe902fe1ecf2040101506bf48b0cb12a12c036c2ab8cd`  
+		Last Modified: Thu, 03 Mar 2022 22:08:50 GMT  
+		Size: 1.9 KB (1878 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c6025bea41c957f3bf6222a98f785e88bcbf67384bf8f2bc33725893d043e568`  
-		Last Modified: Wed, 02 Feb 2022 03:59:46 GMT  
-		Size: 3.0 MB (2978027 bytes)  
+	-	`sha256:22d2e18323fec0800e5ef24f02122f220fd07627fceaf19372174d7c75acce53`  
+		Last Modified: Thu, 03 Mar 2022 22:08:51 GMT  
+		Size: 3.0 MB (2978035 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8fbbd127d6111d1dad866f2d016ff69fb102ca8ce9f783a9317dcd8b651eb4c3`  
-		Last Modified: Wed, 02 Feb 2022 03:59:46 GMT  
-		Size: 5.8 MB (5828621 bytes)  
+	-	`sha256:ea17d81261d502d31bfafd4139d4165bdf851d0a592b77b883bfec056e161ea8`  
+		Last Modified: Thu, 03 Mar 2022 22:08:51 GMT  
+		Size: 5.8 MB (5828641 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ffca0dee44d939a7c7dd89da6cf3828d13fc3083635d129ab5ae72828009c165`  
-		Last Modified: Wed, 02 Feb 2022 03:59:45 GMT  
+	-	`sha256:ec6d044e0932fbce5142d1fa444ceb85f15a98a2637ac87b1da99a4b47e6832f`  
+		Last Modified: Thu, 03 Mar 2022 22:08:50 GMT  
 		Size: 149.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9942733e1f202f46c34b9b359bb4c03d747c726f2393d25053e770bf7ed20348`  
-		Last Modified: Tue, 01 Mar 2022 03:30:49 GMT  
+	-	`sha256:f498f5d059833e37356dcac4736fe6429c74dbb14993c5bbd5bc0c6146a205a6`  
+		Last Modified: Thu, 03 Mar 2022 22:09:13 GMT  
 		Size: 1.4 KB (1450 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:34274adcf83a7e0f0ebb2c06bf4d84d3a9da8a20bc20b581855bc42e25762b70`  
-		Last Modified: Tue, 01 Mar 2022 03:30:49 GMT  
-		Size: 260.0 B  
+	-	`sha256:498789c86cd99df0f2ebcf32aab90aef652b28c968fb9dd677e35ebcebd78f55`  
+		Last Modified: Thu, 03 Mar 2022 22:09:13 GMT  
+		Size: 256.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1fdf31a88df6876bcdebbef83bc2c74f74437514cd830c1901eb3e7fed32b16e`  
-		Last Modified: Tue, 01 Mar 2022 03:31:06 GMT  
-		Size: 129.8 MB (129838826 bytes)  
+	-	`sha256:ba1151db8da55d488b74ad52abbe9effa7703892848ce3b9ce72dbdcb23e4826`  
+		Last Modified: Thu, 03 Mar 2022 22:09:29 GMT  
+		Size: 129.8 MB (129838753 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f9c175d9682876b5e7da5ff99655a30c7dd08522492d2c9b980bf1a21f1409db`  
-		Last Modified: Tue, 01 Mar 2022 03:30:50 GMT  
-		Size: 169.0 B  
+	-	`sha256:9091720ff834f126a63c1ae3962f06660e51c830461b8b5e38d6f8a945b67603`  
+		Last Modified: Thu, 03 Mar 2022 22:09:13 GMT  
+		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ab8ab738cc6b3ec27fe727b0a123b9216ad7e36b4a838b869b3e783727fa476`  
-		Last Modified: Tue, 01 Mar 2022 03:30:50 GMT  
-		Size: 4.9 KB (4947 bytes)  
+	-	`sha256:06b8f67e13e19a891a5b7e441544c46674a4fbbe1f3ba68a93f91d8e4e1964f1`  
+		Last Modified: Thu, 03 Mar 2022 22:09:13 GMT  
+		Size: 4.9 KB (4948 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:4.2-bionic` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:12860ec454d3eef1e39d7aaf35e20ddf56718cf1c9f5728d1fb7b1705af71cac
+$ docker pull mongo@sha256:d31a2ad526fe6430b7f347b0edc0116821ecadce852b377b12cf5bcaf5791a80
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **155.6 MB (155556354 bytes)**  
+-	Total Size: **155.6 MB (155556268 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:53936119361fac4a77c919856b654df973ec38939f3dc2a3c62dde634c6cb0eb`
+-	Image ID: `sha256:4de3c7630dc92ea4c1fbca4fc42910d9546129c9448474cb279de55041de73f9`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 03:19:18 GMT
-ADD file:6c6588e8deb686903374087994742c9d5e77393babbbffd56aea9d4e6c888aa7 in / 
-# Wed, 02 Feb 2022 03:19:18 GMT
+# Thu, 03 Mar 2022 19:40:54 GMT
+ADD file:4e0e00a64dd88d531092dae4e900f36acb9c48c652d278ec0cd32aef9fffb42b in / 
+# Thu, 03 Mar 2022 19:40:55 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 05:48:00 GMT
+# Thu, 03 Mar 2022 20:56:57 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 05:48:11 GMT
+# Thu, 03 Mar 2022 20:57:08 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 05:48:11 GMT
+# Thu, 03 Mar 2022 20:57:08 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 05:48:12 GMT
+# Thu, 03 Mar 2022 20:57:09 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 05:48:28 GMT
+# Thu, 03 Mar 2022 20:57:25 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 05:48:29 GMT
+# Thu, 03 Mar 2022 20:57:26 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:27:30 GMT
+# Thu, 03 Mar 2022 21:01:00 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- 'E162F504A20CDF15827F718D4B7C549A058F8B6B'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:27:31 GMT
+# Thu, 03 Mar 2022 21:01:01 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:27:32 GMT
+# Thu, 03 Mar 2022 21:01:02 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:27:33 GMT
+# Thu, 03 Mar 2022 21:01:03 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:27:34 GMT
+# Thu, 03 Mar 2022 21:01:04 GMT
 ENV MONGO_MAJOR=4.2
-# Tue, 01 Mar 2022 03:27:35 GMT
+# Thu, 03 Mar 2022 21:01:05 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu bionic/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:27:36 GMT
+# Thu, 03 Mar 2022 21:01:06 GMT
 ENV MONGO_VERSION=4.2.18
-# Tue, 01 Mar 2022 03:27:54 GMT
+# Thu, 03 Mar 2022 21:01:23 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:27:54 GMT
+# Thu, 03 Mar 2022 21:01:24 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:27:55 GMT
+# Thu, 03 Mar 2022 21:01:25 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:27:57 GMT
+# Thu, 03 Mar 2022 21:01:27 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:27:57 GMT
+# Thu, 03 Mar 2022 21:01:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:27:58 GMT
+# Thu, 03 Mar 2022 21:01:28 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:27:59 GMT
+# Thu, 03 Mar 2022 21:01:29 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:02b7ffdbddc71205d24598c17b9c600df7cc8d35fb49e550250299ce97e1c96e`  
-		Last Modified: Wed, 02 Feb 2022 03:21:06 GMT  
-		Size: 23.7 MB (23729736 bytes)  
+	-	`sha256:20d796c36622ded7b79b53bfa23d7db4140fde7ea3842825f9aca4070b429317`  
+		Last Modified: Thu, 03 Mar 2022 19:42:21 GMT  
+		Size: 23.7 MB (23729651 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ee36322db07da461331ef7762cad1e50f9790912929a11d4869aa9505ae3607`  
-		Last Modified: Wed, 02 Feb 2022 05:51:44 GMT  
-		Size: 1.9 KB (1854 bytes)  
+	-	`sha256:6dfe0149b9b5b8b51774d87be06bb97e2c5187abfa38f4739c3782fdd069cfda`  
+		Last Modified: Thu, 03 Mar 2022 21:04:28 GMT  
+		Size: 1.9 KB (1859 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e7ad1a4ca6448feee2fb946d4e161591ea3d0523b34a5d86cbfd994500712efb`  
-		Last Modified: Wed, 02 Feb 2022 05:51:44 GMT  
-		Size: 2.7 MB (2668858 bytes)  
+	-	`sha256:d22a20c549dcbb8090a9e33091ad5af16996ae0a6af3b3562db269b16a29eea0`  
+		Last Modified: Thu, 03 Mar 2022 21:04:28 GMT  
+		Size: 2.7 MB (2668851 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:06bc2c2171ea3add5d4e5461cf44d4915b3fa1bde9954ed627eb5a01ed23caa1`  
-		Last Modified: Wed, 02 Feb 2022 05:51:44 GMT  
-		Size: 5.2 MB (5190270 bytes)  
+	-	`sha256:309f6523369dac2175295a07f0149b8adb95e50891b40f5c45aee2dd423a4ac1`  
+		Last Modified: Thu, 03 Mar 2022 21:04:28 GMT  
+		Size: 5.2 MB (5190295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4a4067c2c526c4d0e0b8fd7577edcf4f8e1a7fd798b60696b65de058616f639f`  
-		Last Modified: Wed, 02 Feb 2022 05:51:43 GMT  
-		Size: 113.0 B  
+	-	`sha256:97621c75af8e8e69e3f0fa929521b0ea2ddea7d1e70c8fa178aa9feb6621b52b`  
+		Last Modified: Thu, 03 Mar 2022 21:04:28 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a2fb804c2880fbfd17fe05b8cf6624bce1b74b24314f43a9bac181c0c3c45c05`  
-		Last Modified: Tue, 01 Mar 2022 03:32:01 GMT  
-		Size: 1.4 KB (1400 bytes)  
+	-	`sha256:004619e96b053ba04629055f88ec4e0604a0de44e9c0eaa451c3c57a35a7e2ad`  
+		Last Modified: Thu, 03 Mar 2022 21:04:51 GMT  
+		Size: 1.4 KB (1401 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68b16aa0b8144c67048ffa136ea5bab30dabd7077fbd658c72a225c818b03e4e`  
-		Last Modified: Tue, 01 Mar 2022 03:32:01 GMT  
+	-	`sha256:790c7349f51b093eba45d95bbd5ea7de2c66296d0d983ef3ab52bc30acca06b5`  
+		Last Modified: Thu, 03 Mar 2022 21:04:52 GMT  
 		Size: 259.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6401d74abf1c18a54d46260e0cfe58f96db912ba9e5e4b33e981c78d8eef7b60`  
-		Last Modified: Tue, 01 Mar 2022 03:32:16 GMT  
-		Size: 124.0 MB (123958777 bytes)  
+	-	`sha256:9039bddaf1e19cc94d7055b8c67b28dc89c3a9cfde188b8a6c4584925368b8e8`  
+		Last Modified: Thu, 03 Mar 2022 21:05:07 GMT  
+		Size: 124.0 MB (123958752 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a2b7083d553742c8ed2d6c30c1dff4bc15b86e6b7aeadfde191cb98a9d416765`  
-		Last Modified: Tue, 01 Mar 2022 03:32:01 GMT  
+	-	`sha256:c174ecad2806afeafdf435e405854d9146585cbf3186d30c72221baa0bffd78f`  
+		Last Modified: Thu, 03 Mar 2022 21:04:52 GMT  
 		Size: 139.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:799a01873dc4e0efb3e739bf7ec13ab8c67785a61b9efd4455d4fb5e55be1209`  
-		Last Modified: Tue, 01 Mar 2022 03:32:02 GMT  
-		Size: 4.9 KB (4948 bytes)  
+	-	`sha256:900b6feaeaa57aa3928833a2d733e29c46fdbf524e857f31a7620569fdeeee58`  
+		Last Modified: Thu, 03 Mar 2022 21:04:52 GMT  
+		Size: 4.9 KB (4946 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:4.2-nanoserver`
@@ -5211,7 +5211,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:4.2-rc`
 
 ```console
-$ docker pull mongo@sha256:ac9a62daacd421e50a26256c5c88a3d60f60ea24c456f3476d4cef07c83257a0
+$ docker pull mongo@sha256:17f45282617e6f920257a2760551a965b46ff0ff4d392d5a0695f614ff0a2493
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5224,207 +5224,207 @@ $ docker pull mongo@sha256:ac9a62daacd421e50a26256c5c88a3d60f60ea24c456f3476d4ce
 ### `mongo:4.2-rc` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:862893a1cd4f5c2f252d56354b43291795b506b88e0090bdf07bc8d64229caef
+$ docker pull mongo@sha256:565c20533990d252915b49f0990d70b429d2371cbb2db2256c82d5077e6198e1
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **165.4 MB (165389558 bytes)**  
+-	Total Size: **165.4 MB (165389844 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cab9f8117df29ee72a1c715e28274a0b255acc2c8e61edd1bb7c1cabe97125b7`
+-	Image ID: `sha256:3296a5c5ec5ec189f8f38471bd90cf926e67f62a7f080615ffa295e4168c1fb6`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 02:14:36 GMT
-ADD file:c6039a4f004b6b6c2e4c281a228d64d8410cb9fdf0c67776f84bb173d3522be1 in / 
-# Wed, 02 Feb 2022 02:14:36 GMT
+# Thu, 03 Mar 2022 20:19:25 GMT
+ADD file:dee0aa8497bd26ca41dffa17adff99be2523f66f9b2c557ba9ad2388ed052dca in / 
+# Thu, 03 Mar 2022 20:19:25 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 03:56:44 GMT
+# Thu, 03 Mar 2022 22:02:49 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 03:56:54 GMT
+# Thu, 03 Mar 2022 22:02:58 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 03:56:54 GMT
+# Thu, 03 Mar 2022 22:02:58 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 03:56:54 GMT
+# Thu, 03 Mar 2022 22:02:58 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 03:57:07 GMT
+# Thu, 03 Mar 2022 22:03:10 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 03:57:08 GMT
+# Thu, 03 Mar 2022 22:03:11 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:26:05 GMT
+# Thu, 03 Mar 2022 22:04:53 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- '20691EEC35216C63CAF66CE1656408E390CFB1F5' '9DA31620334BD75D9DCB49F368818C72E52529D4' 'E162F504A20CDF15827F718D4B7C549A058F8B6B' 'F5679A222C647C87527C2F8CB00A0BD1E2C63C11'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:26:05 GMT
+# Thu, 03 Mar 2022 22:04:53 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:26:05 GMT
+# Thu, 03 Mar 2022 22:04:53 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:26:05 GMT
+# Thu, 03 Mar 2022 22:04:53 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:26:05 GMT
+# Thu, 03 Mar 2022 22:04:53 GMT
 ENV MONGO_MAJOR=testing
-# Tue, 01 Mar 2022 03:26:06 GMT
+# Thu, 03 Mar 2022 22:04:53 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu bionic/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:26:06 GMT
+# Thu, 03 Mar 2022 22:04:53 GMT
 ENV MONGO_VERSION=4.2.19~rc0
-# Tue, 01 Mar 2022 03:26:37 GMT
+# Thu, 03 Mar 2022 22:05:14 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:26:38 GMT
+# Thu, 03 Mar 2022 22:05:15 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:26:38 GMT
+# Thu, 03 Mar 2022 22:05:15 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:26:38 GMT
+# Thu, 03 Mar 2022 22:05:15 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:26:39 GMT
+# Thu, 03 Mar 2022 22:05:15 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:26:39 GMT
+# Thu, 03 Mar 2022 22:05:15 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:26:39 GMT
+# Thu, 03 Mar 2022 22:05:15 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:68e7bb398b9ff421236990bfeaf5c1feab26c590eed93489e245375c23551e2a`  
-		Last Modified: Sat, 29 Jan 2022 14:35:20 GMT  
-		Size: 26.7 MB (26708066 bytes)  
+	-	`sha256:cf06a7c3161117888114e7e91dbd21915efae33c2dbfb086380f7b21946d6e59`  
+		Last Modified: Thu, 03 Mar 2022 20:20:28 GMT  
+		Size: 26.7 MB (26708326 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6dc27e38665914e55da82bc9cc80dc654515b9c0c9081707a75becee902d977d`  
-		Last Modified: Wed, 02 Feb 2022 03:59:46 GMT  
-		Size: 1.9 KB (1874 bytes)  
+	-	`sha256:5e8cbd0519786a031d3fe902fe1ecf2040101506bf48b0cb12a12c036c2ab8cd`  
+		Last Modified: Thu, 03 Mar 2022 22:08:50 GMT  
+		Size: 1.9 KB (1878 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c6025bea41c957f3bf6222a98f785e88bcbf67384bf8f2bc33725893d043e568`  
-		Last Modified: Wed, 02 Feb 2022 03:59:46 GMT  
-		Size: 3.0 MB (2978027 bytes)  
+	-	`sha256:22d2e18323fec0800e5ef24f02122f220fd07627fceaf19372174d7c75acce53`  
+		Last Modified: Thu, 03 Mar 2022 22:08:51 GMT  
+		Size: 3.0 MB (2978035 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8fbbd127d6111d1dad866f2d016ff69fb102ca8ce9f783a9317dcd8b651eb4c3`  
-		Last Modified: Wed, 02 Feb 2022 03:59:46 GMT  
-		Size: 5.8 MB (5828621 bytes)  
+	-	`sha256:ea17d81261d502d31bfafd4139d4165bdf851d0a592b77b883bfec056e161ea8`  
+		Last Modified: Thu, 03 Mar 2022 22:08:51 GMT  
+		Size: 5.8 MB (5828641 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ffca0dee44d939a7c7dd89da6cf3828d13fc3083635d129ab5ae72828009c165`  
-		Last Modified: Wed, 02 Feb 2022 03:59:45 GMT  
+	-	`sha256:ec6d044e0932fbce5142d1fa444ceb85f15a98a2637ac87b1da99a4b47e6832f`  
+		Last Modified: Thu, 03 Mar 2022 22:08:50 GMT  
 		Size: 149.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0763363ebdc1d8e65aa9d9ca0999f3b9265349abd3b2812148979aea38c21a0e`  
-		Last Modified: Tue, 01 Mar 2022 03:30:23 GMT  
+	-	`sha256:ab33203141786ae31f1c3c4214430e7471ce7397c6e1492a0726da1ac6e5cc08`  
+		Last Modified: Thu, 03 Mar 2022 22:08:48 GMT  
 		Size: 4.7 KB (4662 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:144143f7a13db11f4909873b6955aad90a5ab917ab7de02b50747144fa2bd2ee`  
-		Last Modified: Tue, 01 Mar 2022 03:30:22 GMT  
+	-	`sha256:100399264a4b7b45f594a1c581e61f99898adc209a66c0a37c349063d6d387c0`  
+		Last Modified: Thu, 03 Mar 2022 22:08:48 GMT  
 		Size: 260.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:235e3eb065ec573dfa201f4c79594c0cdb97e0cacdb7583ff8598d097141d3c8`  
-		Last Modified: Tue, 01 Mar 2022 03:30:39 GMT  
-		Size: 129.9 MB (129862786 bytes)  
+	-	`sha256:2f0695955beccc13e323de33f2a23c48e9a32997526a013c05240c2bc375022b`  
+		Last Modified: Thu, 03 Mar 2022 22:09:03 GMT  
+		Size: 129.9 MB (129862777 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:126f6c7d16e74b1b1db4aa5c04daa8eedf700e264bf37c38d10879bbf3e8ec5c`  
-		Last Modified: Tue, 01 Mar 2022 03:30:22 GMT  
-		Size: 169.0 B  
+	-	`sha256:2395bf7cbf98ad726272583b986c5780109bd5233a67f8c3395ab075439e035e`  
+		Last Modified: Thu, 03 Mar 2022 22:08:48 GMT  
+		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5c6c39a15b4c4e827daf275130ead488d56ab44172a11d31944841547ec2f52`  
-		Last Modified: Tue, 01 Mar 2022 03:30:22 GMT  
-		Size: 4.9 KB (4944 bytes)  
+	-	`sha256:6537bc33a459f0ee460f7d75d547d31661f3dda7ebd285a3e62bbf1b734cf8ad`  
+		Last Modified: Thu, 03 Mar 2022 22:08:48 GMT  
+		Size: 4.9 KB (4946 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:4.2-rc` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:a4ac6268f72a479b82e0f6d3a8e8cad626d8bafc4e349b8d18ec0ff8b84200b2
+$ docker pull mongo@sha256:f53e85da63df8f75a61a1c6bcbe2376dc5b8d50f80fcbd0578a060c947276496
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **155.6 MB (155618870 bytes)**  
+-	Total Size: **155.6 MB (155618844 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d6ce37678c411b26922dd41b10b7a1e95f13edeca9b68bb8ea9f86214845ba31`
+-	Image ID: `sha256:7796f9b91347f3358e6b211f1bc5a6f68dc33bb5105df3e7293a585d3146dd76`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 03:19:18 GMT
-ADD file:6c6588e8deb686903374087994742c9d5e77393babbbffd56aea9d4e6c888aa7 in / 
-# Wed, 02 Feb 2022 03:19:18 GMT
+# Thu, 03 Mar 2022 19:40:54 GMT
+ADD file:4e0e00a64dd88d531092dae4e900f36acb9c48c652d278ec0cd32aef9fffb42b in / 
+# Thu, 03 Mar 2022 19:40:55 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 05:48:00 GMT
+# Thu, 03 Mar 2022 20:56:57 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 05:48:11 GMT
+# Thu, 03 Mar 2022 20:57:08 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 05:48:11 GMT
+# Thu, 03 Mar 2022 20:57:08 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 05:48:12 GMT
+# Thu, 03 Mar 2022 20:57:09 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 05:48:28 GMT
+# Thu, 03 Mar 2022 20:57:25 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 05:48:29 GMT
+# Thu, 03 Mar 2022 20:57:26 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:26:13 GMT
+# Thu, 03 Mar 2022 20:59:37 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- '20691EEC35216C63CAF66CE1656408E390CFB1F5' '9DA31620334BD75D9DCB49F368818C72E52529D4' 'E162F504A20CDF15827F718D4B7C549A058F8B6B' 'F5679A222C647C87527C2F8CB00A0BD1E2C63C11'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:26:13 GMT
+# Thu, 03 Mar 2022 20:59:38 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:26:14 GMT
+# Thu, 03 Mar 2022 20:59:39 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:26:15 GMT
+# Thu, 03 Mar 2022 20:59:40 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:26:16 GMT
+# Thu, 03 Mar 2022 20:59:41 GMT
 ENV MONGO_MAJOR=testing
-# Tue, 01 Mar 2022 03:26:17 GMT
+# Thu, 03 Mar 2022 20:59:42 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu bionic/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:26:18 GMT
+# Thu, 03 Mar 2022 20:59:43 GMT
 ENV MONGO_VERSION=4.2.19~rc0
-# Tue, 01 Mar 2022 03:26:42 GMT
+# Thu, 03 Mar 2022 21:00:05 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:26:43 GMT
+# Thu, 03 Mar 2022 21:00:06 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:26:44 GMT
+# Thu, 03 Mar 2022 21:00:07 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:26:46 GMT
+# Thu, 03 Mar 2022 21:00:09 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:26:46 GMT
+# Thu, 03 Mar 2022 21:00:09 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:26:47 GMT
+# Thu, 03 Mar 2022 21:00:10 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:26:48 GMT
+# Thu, 03 Mar 2022 21:00:11 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:02b7ffdbddc71205d24598c17b9c600df7cc8d35fb49e550250299ce97e1c96e`  
-		Last Modified: Wed, 02 Feb 2022 03:21:06 GMT  
-		Size: 23.7 MB (23729736 bytes)  
+	-	`sha256:20d796c36622ded7b79b53bfa23d7db4140fde7ea3842825f9aca4070b429317`  
+		Last Modified: Thu, 03 Mar 2022 19:42:21 GMT  
+		Size: 23.7 MB (23729651 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ee36322db07da461331ef7762cad1e50f9790912929a11d4869aa9505ae3607`  
-		Last Modified: Wed, 02 Feb 2022 05:51:44 GMT  
-		Size: 1.9 KB (1854 bytes)  
+	-	`sha256:6dfe0149b9b5b8b51774d87be06bb97e2c5187abfa38f4739c3782fdd069cfda`  
+		Last Modified: Thu, 03 Mar 2022 21:04:28 GMT  
+		Size: 1.9 KB (1859 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e7ad1a4ca6448feee2fb946d4e161591ea3d0523b34a5d86cbfd994500712efb`  
-		Last Modified: Wed, 02 Feb 2022 05:51:44 GMT  
-		Size: 2.7 MB (2668858 bytes)  
+	-	`sha256:d22a20c549dcbb8090a9e33091ad5af16996ae0a6af3b3562db269b16a29eea0`  
+		Last Modified: Thu, 03 Mar 2022 21:04:28 GMT  
+		Size: 2.7 MB (2668851 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:06bc2c2171ea3add5d4e5461cf44d4915b3fa1bde9954ed627eb5a01ed23caa1`  
-		Last Modified: Wed, 02 Feb 2022 05:51:44 GMT  
-		Size: 5.2 MB (5190270 bytes)  
+	-	`sha256:309f6523369dac2175295a07f0149b8adb95e50891b40f5c45aee2dd423a4ac1`  
+		Last Modified: Thu, 03 Mar 2022 21:04:28 GMT  
+		Size: 5.2 MB (5190295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4a4067c2c526c4d0e0b8fd7577edcf4f8e1a7fd798b60696b65de058616f639f`  
-		Last Modified: Wed, 02 Feb 2022 05:51:43 GMT  
-		Size: 113.0 B  
+	-	`sha256:97621c75af8e8e69e3f0fa929521b0ea2ddea7d1e70c8fa178aa9feb6621b52b`  
+		Last Modified: Thu, 03 Mar 2022 21:04:28 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:25931a9e690c4c96363582b4d3d1b76d6211c98c9b8d3e79743a63ecba0d9946`  
-		Last Modified: Tue, 01 Mar 2022 03:31:35 GMT  
-		Size: 4.6 KB (4601 bytes)  
+	-	`sha256:336996cb804b01e683f2d3aee7b79026a7b28cca753eccbed2b9bb1f19445de5`  
+		Last Modified: Thu, 03 Mar 2022 21:04:25 GMT  
+		Size: 4.6 KB (4604 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:58f9294ca59f5e62591bbc7eec2222388d2aee58fd4417885165d837cc21e98e`  
-		Last Modified: Tue, 01 Mar 2022 03:31:35 GMT  
-		Size: 263.0 B  
+	-	`sha256:2e4f6206bbc04e05cb5a4d3e7aa0915e442be48715f349b351d6659dfe6ce87d`  
+		Last Modified: Thu, 03 Mar 2022 21:04:25 GMT  
+		Size: 262.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9eeef85be90223df1e0e7f9ac1420e4d14a99d89ed292d981726cd0c46621fa9`  
-		Last Modified: Tue, 01 Mar 2022 03:31:50 GMT  
-		Size: 124.0 MB (124018085 bytes)  
+	-	`sha256:67c4810972328dfc2a509f84ee4fb832e59324421f4b609941e53cf9b115be28`  
+		Last Modified: Thu, 03 Mar 2022 21:04:41 GMT  
+		Size: 124.0 MB (124018123 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed9b568e0dd65b9731ac4eb6ebbe11164b13768cf1269f875388ef4c75828799`  
-		Last Modified: Tue, 01 Mar 2022 03:31:35 GMT  
-		Size: 141.0 B  
+	-	`sha256:95602636902c0aca39b2672d624ddac3a8cb9d93c5d82d064a4a657fe4b63dc6`  
+		Last Modified: Thu, 03 Mar 2022 21:04:25 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:75f840009f6e96fb5b93658423fbf2289bf24447f54087bb928e31e3a7040e90`  
-		Last Modified: Tue, 01 Mar 2022 03:31:35 GMT  
-		Size: 4.9 KB (4949 bytes)  
+	-	`sha256:2f4444c67b9e199b1e8d77afbd4e0aba2d1a90da5605d3cec2172377525ab61a`  
+		Last Modified: Thu, 03 Mar 2022 21:04:25 GMT  
+		Size: 4.9 KB (4945 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:4.2-rc` - windows version 10.0.20348.524; amd64
@@ -5584,7 +5584,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:4.2-rc-bionic`
 
 ```console
-$ docker pull mongo@sha256:d84de6fa916bb53260aab8949f423cd26306ac6c8ccead8b50b0a1007fad4c17
+$ docker pull mongo@sha256:961badd0f9ceaee9173b6f22572ce3e1cecf04a8710f371a351568cefa237430
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5595,207 +5595,207 @@ $ docker pull mongo@sha256:d84de6fa916bb53260aab8949f423cd26306ac6c8ccead8b50b0a
 ### `mongo:4.2-rc-bionic` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:862893a1cd4f5c2f252d56354b43291795b506b88e0090bdf07bc8d64229caef
+$ docker pull mongo@sha256:565c20533990d252915b49f0990d70b429d2371cbb2db2256c82d5077e6198e1
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **165.4 MB (165389558 bytes)**  
+-	Total Size: **165.4 MB (165389844 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cab9f8117df29ee72a1c715e28274a0b255acc2c8e61edd1bb7c1cabe97125b7`
+-	Image ID: `sha256:3296a5c5ec5ec189f8f38471bd90cf926e67f62a7f080615ffa295e4168c1fb6`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 02:14:36 GMT
-ADD file:c6039a4f004b6b6c2e4c281a228d64d8410cb9fdf0c67776f84bb173d3522be1 in / 
-# Wed, 02 Feb 2022 02:14:36 GMT
+# Thu, 03 Mar 2022 20:19:25 GMT
+ADD file:dee0aa8497bd26ca41dffa17adff99be2523f66f9b2c557ba9ad2388ed052dca in / 
+# Thu, 03 Mar 2022 20:19:25 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 03:56:44 GMT
+# Thu, 03 Mar 2022 22:02:49 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 03:56:54 GMT
+# Thu, 03 Mar 2022 22:02:58 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 03:56:54 GMT
+# Thu, 03 Mar 2022 22:02:58 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 03:56:54 GMT
+# Thu, 03 Mar 2022 22:02:58 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 03:57:07 GMT
+# Thu, 03 Mar 2022 22:03:10 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 03:57:08 GMT
+# Thu, 03 Mar 2022 22:03:11 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:26:05 GMT
+# Thu, 03 Mar 2022 22:04:53 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- '20691EEC35216C63CAF66CE1656408E390CFB1F5' '9DA31620334BD75D9DCB49F368818C72E52529D4' 'E162F504A20CDF15827F718D4B7C549A058F8B6B' 'F5679A222C647C87527C2F8CB00A0BD1E2C63C11'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:26:05 GMT
+# Thu, 03 Mar 2022 22:04:53 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:26:05 GMT
+# Thu, 03 Mar 2022 22:04:53 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:26:05 GMT
+# Thu, 03 Mar 2022 22:04:53 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:26:05 GMT
+# Thu, 03 Mar 2022 22:04:53 GMT
 ENV MONGO_MAJOR=testing
-# Tue, 01 Mar 2022 03:26:06 GMT
+# Thu, 03 Mar 2022 22:04:53 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu bionic/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:26:06 GMT
+# Thu, 03 Mar 2022 22:04:53 GMT
 ENV MONGO_VERSION=4.2.19~rc0
-# Tue, 01 Mar 2022 03:26:37 GMT
+# Thu, 03 Mar 2022 22:05:14 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:26:38 GMT
+# Thu, 03 Mar 2022 22:05:15 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:26:38 GMT
+# Thu, 03 Mar 2022 22:05:15 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:26:38 GMT
+# Thu, 03 Mar 2022 22:05:15 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:26:39 GMT
+# Thu, 03 Mar 2022 22:05:15 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:26:39 GMT
+# Thu, 03 Mar 2022 22:05:15 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:26:39 GMT
+# Thu, 03 Mar 2022 22:05:15 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:68e7bb398b9ff421236990bfeaf5c1feab26c590eed93489e245375c23551e2a`  
-		Last Modified: Sat, 29 Jan 2022 14:35:20 GMT  
-		Size: 26.7 MB (26708066 bytes)  
+	-	`sha256:cf06a7c3161117888114e7e91dbd21915efae33c2dbfb086380f7b21946d6e59`  
+		Last Modified: Thu, 03 Mar 2022 20:20:28 GMT  
+		Size: 26.7 MB (26708326 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6dc27e38665914e55da82bc9cc80dc654515b9c0c9081707a75becee902d977d`  
-		Last Modified: Wed, 02 Feb 2022 03:59:46 GMT  
-		Size: 1.9 KB (1874 bytes)  
+	-	`sha256:5e8cbd0519786a031d3fe902fe1ecf2040101506bf48b0cb12a12c036c2ab8cd`  
+		Last Modified: Thu, 03 Mar 2022 22:08:50 GMT  
+		Size: 1.9 KB (1878 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c6025bea41c957f3bf6222a98f785e88bcbf67384bf8f2bc33725893d043e568`  
-		Last Modified: Wed, 02 Feb 2022 03:59:46 GMT  
-		Size: 3.0 MB (2978027 bytes)  
+	-	`sha256:22d2e18323fec0800e5ef24f02122f220fd07627fceaf19372174d7c75acce53`  
+		Last Modified: Thu, 03 Mar 2022 22:08:51 GMT  
+		Size: 3.0 MB (2978035 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8fbbd127d6111d1dad866f2d016ff69fb102ca8ce9f783a9317dcd8b651eb4c3`  
-		Last Modified: Wed, 02 Feb 2022 03:59:46 GMT  
-		Size: 5.8 MB (5828621 bytes)  
+	-	`sha256:ea17d81261d502d31bfafd4139d4165bdf851d0a592b77b883bfec056e161ea8`  
+		Last Modified: Thu, 03 Mar 2022 22:08:51 GMT  
+		Size: 5.8 MB (5828641 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ffca0dee44d939a7c7dd89da6cf3828d13fc3083635d129ab5ae72828009c165`  
-		Last Modified: Wed, 02 Feb 2022 03:59:45 GMT  
+	-	`sha256:ec6d044e0932fbce5142d1fa444ceb85f15a98a2637ac87b1da99a4b47e6832f`  
+		Last Modified: Thu, 03 Mar 2022 22:08:50 GMT  
 		Size: 149.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0763363ebdc1d8e65aa9d9ca0999f3b9265349abd3b2812148979aea38c21a0e`  
-		Last Modified: Tue, 01 Mar 2022 03:30:23 GMT  
+	-	`sha256:ab33203141786ae31f1c3c4214430e7471ce7397c6e1492a0726da1ac6e5cc08`  
+		Last Modified: Thu, 03 Mar 2022 22:08:48 GMT  
 		Size: 4.7 KB (4662 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:144143f7a13db11f4909873b6955aad90a5ab917ab7de02b50747144fa2bd2ee`  
-		Last Modified: Tue, 01 Mar 2022 03:30:22 GMT  
+	-	`sha256:100399264a4b7b45f594a1c581e61f99898adc209a66c0a37c349063d6d387c0`  
+		Last Modified: Thu, 03 Mar 2022 22:08:48 GMT  
 		Size: 260.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:235e3eb065ec573dfa201f4c79594c0cdb97e0cacdb7583ff8598d097141d3c8`  
-		Last Modified: Tue, 01 Mar 2022 03:30:39 GMT  
-		Size: 129.9 MB (129862786 bytes)  
+	-	`sha256:2f0695955beccc13e323de33f2a23c48e9a32997526a013c05240c2bc375022b`  
+		Last Modified: Thu, 03 Mar 2022 22:09:03 GMT  
+		Size: 129.9 MB (129862777 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:126f6c7d16e74b1b1db4aa5c04daa8eedf700e264bf37c38d10879bbf3e8ec5c`  
-		Last Modified: Tue, 01 Mar 2022 03:30:22 GMT  
-		Size: 169.0 B  
+	-	`sha256:2395bf7cbf98ad726272583b986c5780109bd5233a67f8c3395ab075439e035e`  
+		Last Modified: Thu, 03 Mar 2022 22:08:48 GMT  
+		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5c6c39a15b4c4e827daf275130ead488d56ab44172a11d31944841547ec2f52`  
-		Last Modified: Tue, 01 Mar 2022 03:30:22 GMT  
-		Size: 4.9 KB (4944 bytes)  
+	-	`sha256:6537bc33a459f0ee460f7d75d547d31661f3dda7ebd285a3e62bbf1b734cf8ad`  
+		Last Modified: Thu, 03 Mar 2022 22:08:48 GMT  
+		Size: 4.9 KB (4946 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:4.2-rc-bionic` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:a4ac6268f72a479b82e0f6d3a8e8cad626d8bafc4e349b8d18ec0ff8b84200b2
+$ docker pull mongo@sha256:f53e85da63df8f75a61a1c6bcbe2376dc5b8d50f80fcbd0578a060c947276496
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **155.6 MB (155618870 bytes)**  
+-	Total Size: **155.6 MB (155618844 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d6ce37678c411b26922dd41b10b7a1e95f13edeca9b68bb8ea9f86214845ba31`
+-	Image ID: `sha256:7796f9b91347f3358e6b211f1bc5a6f68dc33bb5105df3e7293a585d3146dd76`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 03:19:18 GMT
-ADD file:6c6588e8deb686903374087994742c9d5e77393babbbffd56aea9d4e6c888aa7 in / 
-# Wed, 02 Feb 2022 03:19:18 GMT
+# Thu, 03 Mar 2022 19:40:54 GMT
+ADD file:4e0e00a64dd88d531092dae4e900f36acb9c48c652d278ec0cd32aef9fffb42b in / 
+# Thu, 03 Mar 2022 19:40:55 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 05:48:00 GMT
+# Thu, 03 Mar 2022 20:56:57 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 05:48:11 GMT
+# Thu, 03 Mar 2022 20:57:08 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 05:48:11 GMT
+# Thu, 03 Mar 2022 20:57:08 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 05:48:12 GMT
+# Thu, 03 Mar 2022 20:57:09 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 05:48:28 GMT
+# Thu, 03 Mar 2022 20:57:25 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 05:48:29 GMT
+# Thu, 03 Mar 2022 20:57:26 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:26:13 GMT
+# Thu, 03 Mar 2022 20:59:37 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- '20691EEC35216C63CAF66CE1656408E390CFB1F5' '9DA31620334BD75D9DCB49F368818C72E52529D4' 'E162F504A20CDF15827F718D4B7C549A058F8B6B' 'F5679A222C647C87527C2F8CB00A0BD1E2C63C11'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:26:13 GMT
+# Thu, 03 Mar 2022 20:59:38 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:26:14 GMT
+# Thu, 03 Mar 2022 20:59:39 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:26:15 GMT
+# Thu, 03 Mar 2022 20:59:40 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:26:16 GMT
+# Thu, 03 Mar 2022 20:59:41 GMT
 ENV MONGO_MAJOR=testing
-# Tue, 01 Mar 2022 03:26:17 GMT
+# Thu, 03 Mar 2022 20:59:42 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu bionic/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:26:18 GMT
+# Thu, 03 Mar 2022 20:59:43 GMT
 ENV MONGO_VERSION=4.2.19~rc0
-# Tue, 01 Mar 2022 03:26:42 GMT
+# Thu, 03 Mar 2022 21:00:05 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:26:43 GMT
+# Thu, 03 Mar 2022 21:00:06 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:26:44 GMT
+# Thu, 03 Mar 2022 21:00:07 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:26:46 GMT
+# Thu, 03 Mar 2022 21:00:09 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:26:46 GMT
+# Thu, 03 Mar 2022 21:00:09 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:26:47 GMT
+# Thu, 03 Mar 2022 21:00:10 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:26:48 GMT
+# Thu, 03 Mar 2022 21:00:11 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:02b7ffdbddc71205d24598c17b9c600df7cc8d35fb49e550250299ce97e1c96e`  
-		Last Modified: Wed, 02 Feb 2022 03:21:06 GMT  
-		Size: 23.7 MB (23729736 bytes)  
+	-	`sha256:20d796c36622ded7b79b53bfa23d7db4140fde7ea3842825f9aca4070b429317`  
+		Last Modified: Thu, 03 Mar 2022 19:42:21 GMT  
+		Size: 23.7 MB (23729651 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ee36322db07da461331ef7762cad1e50f9790912929a11d4869aa9505ae3607`  
-		Last Modified: Wed, 02 Feb 2022 05:51:44 GMT  
-		Size: 1.9 KB (1854 bytes)  
+	-	`sha256:6dfe0149b9b5b8b51774d87be06bb97e2c5187abfa38f4739c3782fdd069cfda`  
+		Last Modified: Thu, 03 Mar 2022 21:04:28 GMT  
+		Size: 1.9 KB (1859 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e7ad1a4ca6448feee2fb946d4e161591ea3d0523b34a5d86cbfd994500712efb`  
-		Last Modified: Wed, 02 Feb 2022 05:51:44 GMT  
-		Size: 2.7 MB (2668858 bytes)  
+	-	`sha256:d22a20c549dcbb8090a9e33091ad5af16996ae0a6af3b3562db269b16a29eea0`  
+		Last Modified: Thu, 03 Mar 2022 21:04:28 GMT  
+		Size: 2.7 MB (2668851 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:06bc2c2171ea3add5d4e5461cf44d4915b3fa1bde9954ed627eb5a01ed23caa1`  
-		Last Modified: Wed, 02 Feb 2022 05:51:44 GMT  
-		Size: 5.2 MB (5190270 bytes)  
+	-	`sha256:309f6523369dac2175295a07f0149b8adb95e50891b40f5c45aee2dd423a4ac1`  
+		Last Modified: Thu, 03 Mar 2022 21:04:28 GMT  
+		Size: 5.2 MB (5190295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4a4067c2c526c4d0e0b8fd7577edcf4f8e1a7fd798b60696b65de058616f639f`  
-		Last Modified: Wed, 02 Feb 2022 05:51:43 GMT  
-		Size: 113.0 B  
+	-	`sha256:97621c75af8e8e69e3f0fa929521b0ea2ddea7d1e70c8fa178aa9feb6621b52b`  
+		Last Modified: Thu, 03 Mar 2022 21:04:28 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:25931a9e690c4c96363582b4d3d1b76d6211c98c9b8d3e79743a63ecba0d9946`  
-		Last Modified: Tue, 01 Mar 2022 03:31:35 GMT  
-		Size: 4.6 KB (4601 bytes)  
+	-	`sha256:336996cb804b01e683f2d3aee7b79026a7b28cca753eccbed2b9bb1f19445de5`  
+		Last Modified: Thu, 03 Mar 2022 21:04:25 GMT  
+		Size: 4.6 KB (4604 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:58f9294ca59f5e62591bbc7eec2222388d2aee58fd4417885165d837cc21e98e`  
-		Last Modified: Tue, 01 Mar 2022 03:31:35 GMT  
-		Size: 263.0 B  
+	-	`sha256:2e4f6206bbc04e05cb5a4d3e7aa0915e442be48715f349b351d6659dfe6ce87d`  
+		Last Modified: Thu, 03 Mar 2022 21:04:25 GMT  
+		Size: 262.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9eeef85be90223df1e0e7f9ac1420e4d14a99d89ed292d981726cd0c46621fa9`  
-		Last Modified: Tue, 01 Mar 2022 03:31:50 GMT  
-		Size: 124.0 MB (124018085 bytes)  
+	-	`sha256:67c4810972328dfc2a509f84ee4fb832e59324421f4b609941e53cf9b115be28`  
+		Last Modified: Thu, 03 Mar 2022 21:04:41 GMT  
+		Size: 124.0 MB (124018123 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed9b568e0dd65b9731ac4eb6ebbe11164b13768cf1269f875388ef4c75828799`  
-		Last Modified: Tue, 01 Mar 2022 03:31:35 GMT  
-		Size: 141.0 B  
+	-	`sha256:95602636902c0aca39b2672d624ddac3a8cb9d93c5d82d064a4a657fe4b63dc6`  
+		Last Modified: Thu, 03 Mar 2022 21:04:25 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:75f840009f6e96fb5b93658423fbf2289bf24447f54087bb928e31e3a7040e90`  
-		Last Modified: Tue, 01 Mar 2022 03:31:35 GMT  
-		Size: 4.9 KB (4949 bytes)  
+	-	`sha256:2f4444c67b9e199b1e8d77afbd4e0aba2d1a90da5605d3cec2172377525ab61a`  
+		Last Modified: Thu, 03 Mar 2022 21:04:25 GMT  
+		Size: 4.9 KB (4945 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:4.2-rc-nanoserver`
@@ -6870,7 +6870,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:4.2.18`
 
 ```console
-$ docker pull mongo@sha256:f4d773933d66e57a664ec54b45b3e131cbb558a3e4f3f8e0431cf2e583b3188e
+$ docker pull mongo@sha256:69468660f923d23dca698dc5caa83e2a544bd3de9fd2a2f4d27d7c8530ebf681
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6883,207 +6883,207 @@ $ docker pull mongo@sha256:f4d773933d66e57a664ec54b45b3e131cbb558a3e4f3f8e0431cf
 ### `mongo:4.2.18` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:e22a890c4813dcbe7cab3a7e27a608f8ecdc725ae09b85e243db2704ee768248
+$ docker pull mongo@sha256:252dd086635abe525f55d99447cbc055741224519e4ddc0036ab70f433fb895b
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **165.4 MB (165362389 bytes)**  
+-	Total Size: **165.4 MB (165362606 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fc8dd96847d4b6bb47611f9570065c7908e314cb1bcd72c1a60febfd34b52972`
+-	Image ID: `sha256:d410198db7e4907ede8866fefc482fb58d7836a58e5bfb3dadc0e5c25ec66e84`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 02:14:36 GMT
-ADD file:c6039a4f004b6b6c2e4c281a228d64d8410cb9fdf0c67776f84bb173d3522be1 in / 
-# Wed, 02 Feb 2022 02:14:36 GMT
+# Thu, 03 Mar 2022 20:19:25 GMT
+ADD file:dee0aa8497bd26ca41dffa17adff99be2523f66f9b2c557ba9ad2388ed052dca in / 
+# Thu, 03 Mar 2022 20:19:25 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 03:56:44 GMT
+# Thu, 03 Mar 2022 22:02:49 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 03:56:54 GMT
+# Thu, 03 Mar 2022 22:02:58 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 03:56:54 GMT
+# Thu, 03 Mar 2022 22:02:58 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 03:56:54 GMT
+# Thu, 03 Mar 2022 22:02:58 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 03:57:07 GMT
+# Thu, 03 Mar 2022 22:03:10 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 03:57:08 GMT
+# Thu, 03 Mar 2022 22:03:11 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:26:47 GMT
+# Thu, 03 Mar 2022 22:06:06 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- 'E162F504A20CDF15827F718D4B7C549A058F8B6B'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:26:47 GMT
+# Thu, 03 Mar 2022 22:06:06 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:26:47 GMT
+# Thu, 03 Mar 2022 22:06:06 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:26:47 GMT
+# Thu, 03 Mar 2022 22:06:06 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:26:47 GMT
+# Thu, 03 Mar 2022 22:06:06 GMT
 ENV MONGO_MAJOR=4.2
-# Tue, 01 Mar 2022 03:26:48 GMT
+# Thu, 03 Mar 2022 22:06:07 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu bionic/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:26:48 GMT
+# Thu, 03 Mar 2022 22:06:07 GMT
 ENV MONGO_VERSION=4.2.18
-# Tue, 01 Mar 2022 03:27:06 GMT
+# Thu, 03 Mar 2022 22:06:25 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:27:07 GMT
+# Thu, 03 Mar 2022 22:06:26 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:27:07 GMT
+# Thu, 03 Mar 2022 22:06:26 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:27:07 GMT
+# Thu, 03 Mar 2022 22:06:26 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:27:07 GMT
+# Thu, 03 Mar 2022 22:06:26 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:27:07 GMT
+# Thu, 03 Mar 2022 22:06:26 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:27:07 GMT
+# Thu, 03 Mar 2022 22:06:26 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:68e7bb398b9ff421236990bfeaf5c1feab26c590eed93489e245375c23551e2a`  
-		Last Modified: Sat, 29 Jan 2022 14:35:20 GMT  
-		Size: 26.7 MB (26708066 bytes)  
+	-	`sha256:cf06a7c3161117888114e7e91dbd21915efae33c2dbfb086380f7b21946d6e59`  
+		Last Modified: Thu, 03 Mar 2022 20:20:28 GMT  
+		Size: 26.7 MB (26708326 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6dc27e38665914e55da82bc9cc80dc654515b9c0c9081707a75becee902d977d`  
-		Last Modified: Wed, 02 Feb 2022 03:59:46 GMT  
-		Size: 1.9 KB (1874 bytes)  
+	-	`sha256:5e8cbd0519786a031d3fe902fe1ecf2040101506bf48b0cb12a12c036c2ab8cd`  
+		Last Modified: Thu, 03 Mar 2022 22:08:50 GMT  
+		Size: 1.9 KB (1878 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c6025bea41c957f3bf6222a98f785e88bcbf67384bf8f2bc33725893d043e568`  
-		Last Modified: Wed, 02 Feb 2022 03:59:46 GMT  
-		Size: 3.0 MB (2978027 bytes)  
+	-	`sha256:22d2e18323fec0800e5ef24f02122f220fd07627fceaf19372174d7c75acce53`  
+		Last Modified: Thu, 03 Mar 2022 22:08:51 GMT  
+		Size: 3.0 MB (2978035 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8fbbd127d6111d1dad866f2d016ff69fb102ca8ce9f783a9317dcd8b651eb4c3`  
-		Last Modified: Wed, 02 Feb 2022 03:59:46 GMT  
-		Size: 5.8 MB (5828621 bytes)  
+	-	`sha256:ea17d81261d502d31bfafd4139d4165bdf851d0a592b77b883bfec056e161ea8`  
+		Last Modified: Thu, 03 Mar 2022 22:08:51 GMT  
+		Size: 5.8 MB (5828641 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ffca0dee44d939a7c7dd89da6cf3828d13fc3083635d129ab5ae72828009c165`  
-		Last Modified: Wed, 02 Feb 2022 03:59:45 GMT  
+	-	`sha256:ec6d044e0932fbce5142d1fa444ceb85f15a98a2637ac87b1da99a4b47e6832f`  
+		Last Modified: Thu, 03 Mar 2022 22:08:50 GMT  
 		Size: 149.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9942733e1f202f46c34b9b359bb4c03d747c726f2393d25053e770bf7ed20348`  
-		Last Modified: Tue, 01 Mar 2022 03:30:49 GMT  
+	-	`sha256:f498f5d059833e37356dcac4736fe6429c74dbb14993c5bbd5bc0c6146a205a6`  
+		Last Modified: Thu, 03 Mar 2022 22:09:13 GMT  
 		Size: 1.4 KB (1450 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:34274adcf83a7e0f0ebb2c06bf4d84d3a9da8a20bc20b581855bc42e25762b70`  
-		Last Modified: Tue, 01 Mar 2022 03:30:49 GMT  
-		Size: 260.0 B  
+	-	`sha256:498789c86cd99df0f2ebcf32aab90aef652b28c968fb9dd677e35ebcebd78f55`  
+		Last Modified: Thu, 03 Mar 2022 22:09:13 GMT  
+		Size: 256.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1fdf31a88df6876bcdebbef83bc2c74f74437514cd830c1901eb3e7fed32b16e`  
-		Last Modified: Tue, 01 Mar 2022 03:31:06 GMT  
-		Size: 129.8 MB (129838826 bytes)  
+	-	`sha256:ba1151db8da55d488b74ad52abbe9effa7703892848ce3b9ce72dbdcb23e4826`  
+		Last Modified: Thu, 03 Mar 2022 22:09:29 GMT  
+		Size: 129.8 MB (129838753 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f9c175d9682876b5e7da5ff99655a30c7dd08522492d2c9b980bf1a21f1409db`  
-		Last Modified: Tue, 01 Mar 2022 03:30:50 GMT  
-		Size: 169.0 B  
+	-	`sha256:9091720ff834f126a63c1ae3962f06660e51c830461b8b5e38d6f8a945b67603`  
+		Last Modified: Thu, 03 Mar 2022 22:09:13 GMT  
+		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ab8ab738cc6b3ec27fe727b0a123b9216ad7e36b4a838b869b3e783727fa476`  
-		Last Modified: Tue, 01 Mar 2022 03:30:50 GMT  
-		Size: 4.9 KB (4947 bytes)  
+	-	`sha256:06b8f67e13e19a891a5b7e441544c46674a4fbbe1f3ba68a93f91d8e4e1964f1`  
+		Last Modified: Thu, 03 Mar 2022 22:09:13 GMT  
+		Size: 4.9 KB (4948 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:4.2.18` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:12860ec454d3eef1e39d7aaf35e20ddf56718cf1c9f5728d1fb7b1705af71cac
+$ docker pull mongo@sha256:d31a2ad526fe6430b7f347b0edc0116821ecadce852b377b12cf5bcaf5791a80
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **155.6 MB (155556354 bytes)**  
+-	Total Size: **155.6 MB (155556268 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:53936119361fac4a77c919856b654df973ec38939f3dc2a3c62dde634c6cb0eb`
+-	Image ID: `sha256:4de3c7630dc92ea4c1fbca4fc42910d9546129c9448474cb279de55041de73f9`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 03:19:18 GMT
-ADD file:6c6588e8deb686903374087994742c9d5e77393babbbffd56aea9d4e6c888aa7 in / 
-# Wed, 02 Feb 2022 03:19:18 GMT
+# Thu, 03 Mar 2022 19:40:54 GMT
+ADD file:4e0e00a64dd88d531092dae4e900f36acb9c48c652d278ec0cd32aef9fffb42b in / 
+# Thu, 03 Mar 2022 19:40:55 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 05:48:00 GMT
+# Thu, 03 Mar 2022 20:56:57 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 05:48:11 GMT
+# Thu, 03 Mar 2022 20:57:08 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 05:48:11 GMT
+# Thu, 03 Mar 2022 20:57:08 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 05:48:12 GMT
+# Thu, 03 Mar 2022 20:57:09 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 05:48:28 GMT
+# Thu, 03 Mar 2022 20:57:25 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 05:48:29 GMT
+# Thu, 03 Mar 2022 20:57:26 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:27:30 GMT
+# Thu, 03 Mar 2022 21:01:00 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- 'E162F504A20CDF15827F718D4B7C549A058F8B6B'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:27:31 GMT
+# Thu, 03 Mar 2022 21:01:01 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:27:32 GMT
+# Thu, 03 Mar 2022 21:01:02 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:27:33 GMT
+# Thu, 03 Mar 2022 21:01:03 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:27:34 GMT
+# Thu, 03 Mar 2022 21:01:04 GMT
 ENV MONGO_MAJOR=4.2
-# Tue, 01 Mar 2022 03:27:35 GMT
+# Thu, 03 Mar 2022 21:01:05 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu bionic/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:27:36 GMT
+# Thu, 03 Mar 2022 21:01:06 GMT
 ENV MONGO_VERSION=4.2.18
-# Tue, 01 Mar 2022 03:27:54 GMT
+# Thu, 03 Mar 2022 21:01:23 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:27:54 GMT
+# Thu, 03 Mar 2022 21:01:24 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:27:55 GMT
+# Thu, 03 Mar 2022 21:01:25 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:27:57 GMT
+# Thu, 03 Mar 2022 21:01:27 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:27:57 GMT
+# Thu, 03 Mar 2022 21:01:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:27:58 GMT
+# Thu, 03 Mar 2022 21:01:28 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:27:59 GMT
+# Thu, 03 Mar 2022 21:01:29 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:02b7ffdbddc71205d24598c17b9c600df7cc8d35fb49e550250299ce97e1c96e`  
-		Last Modified: Wed, 02 Feb 2022 03:21:06 GMT  
-		Size: 23.7 MB (23729736 bytes)  
+	-	`sha256:20d796c36622ded7b79b53bfa23d7db4140fde7ea3842825f9aca4070b429317`  
+		Last Modified: Thu, 03 Mar 2022 19:42:21 GMT  
+		Size: 23.7 MB (23729651 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ee36322db07da461331ef7762cad1e50f9790912929a11d4869aa9505ae3607`  
-		Last Modified: Wed, 02 Feb 2022 05:51:44 GMT  
-		Size: 1.9 KB (1854 bytes)  
+	-	`sha256:6dfe0149b9b5b8b51774d87be06bb97e2c5187abfa38f4739c3782fdd069cfda`  
+		Last Modified: Thu, 03 Mar 2022 21:04:28 GMT  
+		Size: 1.9 KB (1859 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e7ad1a4ca6448feee2fb946d4e161591ea3d0523b34a5d86cbfd994500712efb`  
-		Last Modified: Wed, 02 Feb 2022 05:51:44 GMT  
-		Size: 2.7 MB (2668858 bytes)  
+	-	`sha256:d22a20c549dcbb8090a9e33091ad5af16996ae0a6af3b3562db269b16a29eea0`  
+		Last Modified: Thu, 03 Mar 2022 21:04:28 GMT  
+		Size: 2.7 MB (2668851 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:06bc2c2171ea3add5d4e5461cf44d4915b3fa1bde9954ed627eb5a01ed23caa1`  
-		Last Modified: Wed, 02 Feb 2022 05:51:44 GMT  
-		Size: 5.2 MB (5190270 bytes)  
+	-	`sha256:309f6523369dac2175295a07f0149b8adb95e50891b40f5c45aee2dd423a4ac1`  
+		Last Modified: Thu, 03 Mar 2022 21:04:28 GMT  
+		Size: 5.2 MB (5190295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4a4067c2c526c4d0e0b8fd7577edcf4f8e1a7fd798b60696b65de058616f639f`  
-		Last Modified: Wed, 02 Feb 2022 05:51:43 GMT  
-		Size: 113.0 B  
+	-	`sha256:97621c75af8e8e69e3f0fa929521b0ea2ddea7d1e70c8fa178aa9feb6621b52b`  
+		Last Modified: Thu, 03 Mar 2022 21:04:28 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a2fb804c2880fbfd17fe05b8cf6624bce1b74b24314f43a9bac181c0c3c45c05`  
-		Last Modified: Tue, 01 Mar 2022 03:32:01 GMT  
-		Size: 1.4 KB (1400 bytes)  
+	-	`sha256:004619e96b053ba04629055f88ec4e0604a0de44e9c0eaa451c3c57a35a7e2ad`  
+		Last Modified: Thu, 03 Mar 2022 21:04:51 GMT  
+		Size: 1.4 KB (1401 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68b16aa0b8144c67048ffa136ea5bab30dabd7077fbd658c72a225c818b03e4e`  
-		Last Modified: Tue, 01 Mar 2022 03:32:01 GMT  
+	-	`sha256:790c7349f51b093eba45d95bbd5ea7de2c66296d0d983ef3ab52bc30acca06b5`  
+		Last Modified: Thu, 03 Mar 2022 21:04:52 GMT  
 		Size: 259.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6401d74abf1c18a54d46260e0cfe58f96db912ba9e5e4b33e981c78d8eef7b60`  
-		Last Modified: Tue, 01 Mar 2022 03:32:16 GMT  
-		Size: 124.0 MB (123958777 bytes)  
+	-	`sha256:9039bddaf1e19cc94d7055b8c67b28dc89c3a9cfde188b8a6c4584925368b8e8`  
+		Last Modified: Thu, 03 Mar 2022 21:05:07 GMT  
+		Size: 124.0 MB (123958752 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a2b7083d553742c8ed2d6c30c1dff4bc15b86e6b7aeadfde191cb98a9d416765`  
-		Last Modified: Tue, 01 Mar 2022 03:32:01 GMT  
+	-	`sha256:c174ecad2806afeafdf435e405854d9146585cbf3186d30c72221baa0bffd78f`  
+		Last Modified: Thu, 03 Mar 2022 21:04:52 GMT  
 		Size: 139.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:799a01873dc4e0efb3e739bf7ec13ab8c67785a61b9efd4455d4fb5e55be1209`  
-		Last Modified: Tue, 01 Mar 2022 03:32:02 GMT  
-		Size: 4.9 KB (4948 bytes)  
+	-	`sha256:900b6feaeaa57aa3928833a2d733e29c46fdbf524e857f31a7620569fdeeee58`  
+		Last Modified: Thu, 03 Mar 2022 21:04:52 GMT  
+		Size: 4.9 KB (4946 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:4.2.18` - windows version 10.0.20348.524; amd64
@@ -7243,7 +7243,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:4.2.18-bionic`
 
 ```console
-$ docker pull mongo@sha256:fcabd2763bb1a70b93b9d87f78b1049c0db6b10e352dbac88ce4fb86390f8777
+$ docker pull mongo@sha256:21e26f3fa058cc772d08a355c199546fb9344f8a8401688ba943c21e8d6656d2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7254,207 +7254,207 @@ $ docker pull mongo@sha256:fcabd2763bb1a70b93b9d87f78b1049c0db6b10e352dbac88ce4f
 ### `mongo:4.2.18-bionic` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:e22a890c4813dcbe7cab3a7e27a608f8ecdc725ae09b85e243db2704ee768248
+$ docker pull mongo@sha256:252dd086635abe525f55d99447cbc055741224519e4ddc0036ab70f433fb895b
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **165.4 MB (165362389 bytes)**  
+-	Total Size: **165.4 MB (165362606 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fc8dd96847d4b6bb47611f9570065c7908e314cb1bcd72c1a60febfd34b52972`
+-	Image ID: `sha256:d410198db7e4907ede8866fefc482fb58d7836a58e5bfb3dadc0e5c25ec66e84`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 02:14:36 GMT
-ADD file:c6039a4f004b6b6c2e4c281a228d64d8410cb9fdf0c67776f84bb173d3522be1 in / 
-# Wed, 02 Feb 2022 02:14:36 GMT
+# Thu, 03 Mar 2022 20:19:25 GMT
+ADD file:dee0aa8497bd26ca41dffa17adff99be2523f66f9b2c557ba9ad2388ed052dca in / 
+# Thu, 03 Mar 2022 20:19:25 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 03:56:44 GMT
+# Thu, 03 Mar 2022 22:02:49 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 03:56:54 GMT
+# Thu, 03 Mar 2022 22:02:58 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 03:56:54 GMT
+# Thu, 03 Mar 2022 22:02:58 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 03:56:54 GMT
+# Thu, 03 Mar 2022 22:02:58 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 03:57:07 GMT
+# Thu, 03 Mar 2022 22:03:10 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 03:57:08 GMT
+# Thu, 03 Mar 2022 22:03:11 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:26:47 GMT
+# Thu, 03 Mar 2022 22:06:06 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- 'E162F504A20CDF15827F718D4B7C549A058F8B6B'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:26:47 GMT
+# Thu, 03 Mar 2022 22:06:06 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:26:47 GMT
+# Thu, 03 Mar 2022 22:06:06 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:26:47 GMT
+# Thu, 03 Mar 2022 22:06:06 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:26:47 GMT
+# Thu, 03 Mar 2022 22:06:06 GMT
 ENV MONGO_MAJOR=4.2
-# Tue, 01 Mar 2022 03:26:48 GMT
+# Thu, 03 Mar 2022 22:06:07 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu bionic/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:26:48 GMT
+# Thu, 03 Mar 2022 22:06:07 GMT
 ENV MONGO_VERSION=4.2.18
-# Tue, 01 Mar 2022 03:27:06 GMT
+# Thu, 03 Mar 2022 22:06:25 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:27:07 GMT
+# Thu, 03 Mar 2022 22:06:26 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:27:07 GMT
+# Thu, 03 Mar 2022 22:06:26 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:27:07 GMT
+# Thu, 03 Mar 2022 22:06:26 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:27:07 GMT
+# Thu, 03 Mar 2022 22:06:26 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:27:07 GMT
+# Thu, 03 Mar 2022 22:06:26 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:27:07 GMT
+# Thu, 03 Mar 2022 22:06:26 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:68e7bb398b9ff421236990bfeaf5c1feab26c590eed93489e245375c23551e2a`  
-		Last Modified: Sat, 29 Jan 2022 14:35:20 GMT  
-		Size: 26.7 MB (26708066 bytes)  
+	-	`sha256:cf06a7c3161117888114e7e91dbd21915efae33c2dbfb086380f7b21946d6e59`  
+		Last Modified: Thu, 03 Mar 2022 20:20:28 GMT  
+		Size: 26.7 MB (26708326 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6dc27e38665914e55da82bc9cc80dc654515b9c0c9081707a75becee902d977d`  
-		Last Modified: Wed, 02 Feb 2022 03:59:46 GMT  
-		Size: 1.9 KB (1874 bytes)  
+	-	`sha256:5e8cbd0519786a031d3fe902fe1ecf2040101506bf48b0cb12a12c036c2ab8cd`  
+		Last Modified: Thu, 03 Mar 2022 22:08:50 GMT  
+		Size: 1.9 KB (1878 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c6025bea41c957f3bf6222a98f785e88bcbf67384bf8f2bc33725893d043e568`  
-		Last Modified: Wed, 02 Feb 2022 03:59:46 GMT  
-		Size: 3.0 MB (2978027 bytes)  
+	-	`sha256:22d2e18323fec0800e5ef24f02122f220fd07627fceaf19372174d7c75acce53`  
+		Last Modified: Thu, 03 Mar 2022 22:08:51 GMT  
+		Size: 3.0 MB (2978035 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8fbbd127d6111d1dad866f2d016ff69fb102ca8ce9f783a9317dcd8b651eb4c3`  
-		Last Modified: Wed, 02 Feb 2022 03:59:46 GMT  
-		Size: 5.8 MB (5828621 bytes)  
+	-	`sha256:ea17d81261d502d31bfafd4139d4165bdf851d0a592b77b883bfec056e161ea8`  
+		Last Modified: Thu, 03 Mar 2022 22:08:51 GMT  
+		Size: 5.8 MB (5828641 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ffca0dee44d939a7c7dd89da6cf3828d13fc3083635d129ab5ae72828009c165`  
-		Last Modified: Wed, 02 Feb 2022 03:59:45 GMT  
+	-	`sha256:ec6d044e0932fbce5142d1fa444ceb85f15a98a2637ac87b1da99a4b47e6832f`  
+		Last Modified: Thu, 03 Mar 2022 22:08:50 GMT  
 		Size: 149.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9942733e1f202f46c34b9b359bb4c03d747c726f2393d25053e770bf7ed20348`  
-		Last Modified: Tue, 01 Mar 2022 03:30:49 GMT  
+	-	`sha256:f498f5d059833e37356dcac4736fe6429c74dbb14993c5bbd5bc0c6146a205a6`  
+		Last Modified: Thu, 03 Mar 2022 22:09:13 GMT  
 		Size: 1.4 KB (1450 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:34274adcf83a7e0f0ebb2c06bf4d84d3a9da8a20bc20b581855bc42e25762b70`  
-		Last Modified: Tue, 01 Mar 2022 03:30:49 GMT  
-		Size: 260.0 B  
+	-	`sha256:498789c86cd99df0f2ebcf32aab90aef652b28c968fb9dd677e35ebcebd78f55`  
+		Last Modified: Thu, 03 Mar 2022 22:09:13 GMT  
+		Size: 256.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1fdf31a88df6876bcdebbef83bc2c74f74437514cd830c1901eb3e7fed32b16e`  
-		Last Modified: Tue, 01 Mar 2022 03:31:06 GMT  
-		Size: 129.8 MB (129838826 bytes)  
+	-	`sha256:ba1151db8da55d488b74ad52abbe9effa7703892848ce3b9ce72dbdcb23e4826`  
+		Last Modified: Thu, 03 Mar 2022 22:09:29 GMT  
+		Size: 129.8 MB (129838753 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f9c175d9682876b5e7da5ff99655a30c7dd08522492d2c9b980bf1a21f1409db`  
-		Last Modified: Tue, 01 Mar 2022 03:30:50 GMT  
-		Size: 169.0 B  
+	-	`sha256:9091720ff834f126a63c1ae3962f06660e51c830461b8b5e38d6f8a945b67603`  
+		Last Modified: Thu, 03 Mar 2022 22:09:13 GMT  
+		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ab8ab738cc6b3ec27fe727b0a123b9216ad7e36b4a838b869b3e783727fa476`  
-		Last Modified: Tue, 01 Mar 2022 03:30:50 GMT  
-		Size: 4.9 KB (4947 bytes)  
+	-	`sha256:06b8f67e13e19a891a5b7e441544c46674a4fbbe1f3ba68a93f91d8e4e1964f1`  
+		Last Modified: Thu, 03 Mar 2022 22:09:13 GMT  
+		Size: 4.9 KB (4948 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:4.2.18-bionic` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:12860ec454d3eef1e39d7aaf35e20ddf56718cf1c9f5728d1fb7b1705af71cac
+$ docker pull mongo@sha256:d31a2ad526fe6430b7f347b0edc0116821ecadce852b377b12cf5bcaf5791a80
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **155.6 MB (155556354 bytes)**  
+-	Total Size: **155.6 MB (155556268 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:53936119361fac4a77c919856b654df973ec38939f3dc2a3c62dde634c6cb0eb`
+-	Image ID: `sha256:4de3c7630dc92ea4c1fbca4fc42910d9546129c9448474cb279de55041de73f9`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 03:19:18 GMT
-ADD file:6c6588e8deb686903374087994742c9d5e77393babbbffd56aea9d4e6c888aa7 in / 
-# Wed, 02 Feb 2022 03:19:18 GMT
+# Thu, 03 Mar 2022 19:40:54 GMT
+ADD file:4e0e00a64dd88d531092dae4e900f36acb9c48c652d278ec0cd32aef9fffb42b in / 
+# Thu, 03 Mar 2022 19:40:55 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 05:48:00 GMT
+# Thu, 03 Mar 2022 20:56:57 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 05:48:11 GMT
+# Thu, 03 Mar 2022 20:57:08 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 05:48:11 GMT
+# Thu, 03 Mar 2022 20:57:08 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 05:48:12 GMT
+# Thu, 03 Mar 2022 20:57:09 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 05:48:28 GMT
+# Thu, 03 Mar 2022 20:57:25 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 05:48:29 GMT
+# Thu, 03 Mar 2022 20:57:26 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:27:30 GMT
+# Thu, 03 Mar 2022 21:01:00 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- 'E162F504A20CDF15827F718D4B7C549A058F8B6B'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:27:31 GMT
+# Thu, 03 Mar 2022 21:01:01 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:27:32 GMT
+# Thu, 03 Mar 2022 21:01:02 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:27:33 GMT
+# Thu, 03 Mar 2022 21:01:03 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:27:34 GMT
+# Thu, 03 Mar 2022 21:01:04 GMT
 ENV MONGO_MAJOR=4.2
-# Tue, 01 Mar 2022 03:27:35 GMT
+# Thu, 03 Mar 2022 21:01:05 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu bionic/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:27:36 GMT
+# Thu, 03 Mar 2022 21:01:06 GMT
 ENV MONGO_VERSION=4.2.18
-# Tue, 01 Mar 2022 03:27:54 GMT
+# Thu, 03 Mar 2022 21:01:23 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:27:54 GMT
+# Thu, 03 Mar 2022 21:01:24 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:27:55 GMT
+# Thu, 03 Mar 2022 21:01:25 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:27:57 GMT
+# Thu, 03 Mar 2022 21:01:27 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:27:57 GMT
+# Thu, 03 Mar 2022 21:01:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:27:58 GMT
+# Thu, 03 Mar 2022 21:01:28 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:27:59 GMT
+# Thu, 03 Mar 2022 21:01:29 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:02b7ffdbddc71205d24598c17b9c600df7cc8d35fb49e550250299ce97e1c96e`  
-		Last Modified: Wed, 02 Feb 2022 03:21:06 GMT  
-		Size: 23.7 MB (23729736 bytes)  
+	-	`sha256:20d796c36622ded7b79b53bfa23d7db4140fde7ea3842825f9aca4070b429317`  
+		Last Modified: Thu, 03 Mar 2022 19:42:21 GMT  
+		Size: 23.7 MB (23729651 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ee36322db07da461331ef7762cad1e50f9790912929a11d4869aa9505ae3607`  
-		Last Modified: Wed, 02 Feb 2022 05:51:44 GMT  
-		Size: 1.9 KB (1854 bytes)  
+	-	`sha256:6dfe0149b9b5b8b51774d87be06bb97e2c5187abfa38f4739c3782fdd069cfda`  
+		Last Modified: Thu, 03 Mar 2022 21:04:28 GMT  
+		Size: 1.9 KB (1859 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e7ad1a4ca6448feee2fb946d4e161591ea3d0523b34a5d86cbfd994500712efb`  
-		Last Modified: Wed, 02 Feb 2022 05:51:44 GMT  
-		Size: 2.7 MB (2668858 bytes)  
+	-	`sha256:d22a20c549dcbb8090a9e33091ad5af16996ae0a6af3b3562db269b16a29eea0`  
+		Last Modified: Thu, 03 Mar 2022 21:04:28 GMT  
+		Size: 2.7 MB (2668851 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:06bc2c2171ea3add5d4e5461cf44d4915b3fa1bde9954ed627eb5a01ed23caa1`  
-		Last Modified: Wed, 02 Feb 2022 05:51:44 GMT  
-		Size: 5.2 MB (5190270 bytes)  
+	-	`sha256:309f6523369dac2175295a07f0149b8adb95e50891b40f5c45aee2dd423a4ac1`  
+		Last Modified: Thu, 03 Mar 2022 21:04:28 GMT  
+		Size: 5.2 MB (5190295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4a4067c2c526c4d0e0b8fd7577edcf4f8e1a7fd798b60696b65de058616f639f`  
-		Last Modified: Wed, 02 Feb 2022 05:51:43 GMT  
-		Size: 113.0 B  
+	-	`sha256:97621c75af8e8e69e3f0fa929521b0ea2ddea7d1e70c8fa178aa9feb6621b52b`  
+		Last Modified: Thu, 03 Mar 2022 21:04:28 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a2fb804c2880fbfd17fe05b8cf6624bce1b74b24314f43a9bac181c0c3c45c05`  
-		Last Modified: Tue, 01 Mar 2022 03:32:01 GMT  
-		Size: 1.4 KB (1400 bytes)  
+	-	`sha256:004619e96b053ba04629055f88ec4e0604a0de44e9c0eaa451c3c57a35a7e2ad`  
+		Last Modified: Thu, 03 Mar 2022 21:04:51 GMT  
+		Size: 1.4 KB (1401 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68b16aa0b8144c67048ffa136ea5bab30dabd7077fbd658c72a225c818b03e4e`  
-		Last Modified: Tue, 01 Mar 2022 03:32:01 GMT  
+	-	`sha256:790c7349f51b093eba45d95bbd5ea7de2c66296d0d983ef3ab52bc30acca06b5`  
+		Last Modified: Thu, 03 Mar 2022 21:04:52 GMT  
 		Size: 259.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6401d74abf1c18a54d46260e0cfe58f96db912ba9e5e4b33e981c78d8eef7b60`  
-		Last Modified: Tue, 01 Mar 2022 03:32:16 GMT  
-		Size: 124.0 MB (123958777 bytes)  
+	-	`sha256:9039bddaf1e19cc94d7055b8c67b28dc89c3a9cfde188b8a6c4584925368b8e8`  
+		Last Modified: Thu, 03 Mar 2022 21:05:07 GMT  
+		Size: 124.0 MB (123958752 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a2b7083d553742c8ed2d6c30c1dff4bc15b86e6b7aeadfde191cb98a9d416765`  
-		Last Modified: Tue, 01 Mar 2022 03:32:01 GMT  
+	-	`sha256:c174ecad2806afeafdf435e405854d9146585cbf3186d30c72221baa0bffd78f`  
+		Last Modified: Thu, 03 Mar 2022 21:04:52 GMT  
 		Size: 139.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:799a01873dc4e0efb3e739bf7ec13ab8c67785a61b9efd4455d4fb5e55be1209`  
-		Last Modified: Tue, 01 Mar 2022 03:32:02 GMT  
-		Size: 4.9 KB (4948 bytes)  
+	-	`sha256:900b6feaeaa57aa3928833a2d733e29c46fdbf524e857f31a7620569fdeeee58`  
+		Last Modified: Thu, 03 Mar 2022 21:04:52 GMT  
+		Size: 4.9 KB (4946 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:4.2.18-nanoserver`
@@ -8190,7 +8190,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:4.2.19-rc0`
 
 ```console
-$ docker pull mongo@sha256:ac9a62daacd421e50a26256c5c88a3d60f60ea24c456f3476d4cef07c83257a0
+$ docker pull mongo@sha256:17f45282617e6f920257a2760551a965b46ff0ff4d392d5a0695f614ff0a2493
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8203,207 +8203,207 @@ $ docker pull mongo@sha256:ac9a62daacd421e50a26256c5c88a3d60f60ea24c456f3476d4ce
 ### `mongo:4.2.19-rc0` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:862893a1cd4f5c2f252d56354b43291795b506b88e0090bdf07bc8d64229caef
+$ docker pull mongo@sha256:565c20533990d252915b49f0990d70b429d2371cbb2db2256c82d5077e6198e1
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **165.4 MB (165389558 bytes)**  
+-	Total Size: **165.4 MB (165389844 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cab9f8117df29ee72a1c715e28274a0b255acc2c8e61edd1bb7c1cabe97125b7`
+-	Image ID: `sha256:3296a5c5ec5ec189f8f38471bd90cf926e67f62a7f080615ffa295e4168c1fb6`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 02:14:36 GMT
-ADD file:c6039a4f004b6b6c2e4c281a228d64d8410cb9fdf0c67776f84bb173d3522be1 in / 
-# Wed, 02 Feb 2022 02:14:36 GMT
+# Thu, 03 Mar 2022 20:19:25 GMT
+ADD file:dee0aa8497bd26ca41dffa17adff99be2523f66f9b2c557ba9ad2388ed052dca in / 
+# Thu, 03 Mar 2022 20:19:25 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 03:56:44 GMT
+# Thu, 03 Mar 2022 22:02:49 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 03:56:54 GMT
+# Thu, 03 Mar 2022 22:02:58 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 03:56:54 GMT
+# Thu, 03 Mar 2022 22:02:58 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 03:56:54 GMT
+# Thu, 03 Mar 2022 22:02:58 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 03:57:07 GMT
+# Thu, 03 Mar 2022 22:03:10 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 03:57:08 GMT
+# Thu, 03 Mar 2022 22:03:11 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:26:05 GMT
+# Thu, 03 Mar 2022 22:04:53 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- '20691EEC35216C63CAF66CE1656408E390CFB1F5' '9DA31620334BD75D9DCB49F368818C72E52529D4' 'E162F504A20CDF15827F718D4B7C549A058F8B6B' 'F5679A222C647C87527C2F8CB00A0BD1E2C63C11'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:26:05 GMT
+# Thu, 03 Mar 2022 22:04:53 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:26:05 GMT
+# Thu, 03 Mar 2022 22:04:53 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:26:05 GMT
+# Thu, 03 Mar 2022 22:04:53 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:26:05 GMT
+# Thu, 03 Mar 2022 22:04:53 GMT
 ENV MONGO_MAJOR=testing
-# Tue, 01 Mar 2022 03:26:06 GMT
+# Thu, 03 Mar 2022 22:04:53 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu bionic/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:26:06 GMT
+# Thu, 03 Mar 2022 22:04:53 GMT
 ENV MONGO_VERSION=4.2.19~rc0
-# Tue, 01 Mar 2022 03:26:37 GMT
+# Thu, 03 Mar 2022 22:05:14 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:26:38 GMT
+# Thu, 03 Mar 2022 22:05:15 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:26:38 GMT
+# Thu, 03 Mar 2022 22:05:15 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:26:38 GMT
+# Thu, 03 Mar 2022 22:05:15 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:26:39 GMT
+# Thu, 03 Mar 2022 22:05:15 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:26:39 GMT
+# Thu, 03 Mar 2022 22:05:15 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:26:39 GMT
+# Thu, 03 Mar 2022 22:05:15 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:68e7bb398b9ff421236990bfeaf5c1feab26c590eed93489e245375c23551e2a`  
-		Last Modified: Sat, 29 Jan 2022 14:35:20 GMT  
-		Size: 26.7 MB (26708066 bytes)  
+	-	`sha256:cf06a7c3161117888114e7e91dbd21915efae33c2dbfb086380f7b21946d6e59`  
+		Last Modified: Thu, 03 Mar 2022 20:20:28 GMT  
+		Size: 26.7 MB (26708326 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6dc27e38665914e55da82bc9cc80dc654515b9c0c9081707a75becee902d977d`  
-		Last Modified: Wed, 02 Feb 2022 03:59:46 GMT  
-		Size: 1.9 KB (1874 bytes)  
+	-	`sha256:5e8cbd0519786a031d3fe902fe1ecf2040101506bf48b0cb12a12c036c2ab8cd`  
+		Last Modified: Thu, 03 Mar 2022 22:08:50 GMT  
+		Size: 1.9 KB (1878 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c6025bea41c957f3bf6222a98f785e88bcbf67384bf8f2bc33725893d043e568`  
-		Last Modified: Wed, 02 Feb 2022 03:59:46 GMT  
-		Size: 3.0 MB (2978027 bytes)  
+	-	`sha256:22d2e18323fec0800e5ef24f02122f220fd07627fceaf19372174d7c75acce53`  
+		Last Modified: Thu, 03 Mar 2022 22:08:51 GMT  
+		Size: 3.0 MB (2978035 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8fbbd127d6111d1dad866f2d016ff69fb102ca8ce9f783a9317dcd8b651eb4c3`  
-		Last Modified: Wed, 02 Feb 2022 03:59:46 GMT  
-		Size: 5.8 MB (5828621 bytes)  
+	-	`sha256:ea17d81261d502d31bfafd4139d4165bdf851d0a592b77b883bfec056e161ea8`  
+		Last Modified: Thu, 03 Mar 2022 22:08:51 GMT  
+		Size: 5.8 MB (5828641 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ffca0dee44d939a7c7dd89da6cf3828d13fc3083635d129ab5ae72828009c165`  
-		Last Modified: Wed, 02 Feb 2022 03:59:45 GMT  
+	-	`sha256:ec6d044e0932fbce5142d1fa444ceb85f15a98a2637ac87b1da99a4b47e6832f`  
+		Last Modified: Thu, 03 Mar 2022 22:08:50 GMT  
 		Size: 149.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0763363ebdc1d8e65aa9d9ca0999f3b9265349abd3b2812148979aea38c21a0e`  
-		Last Modified: Tue, 01 Mar 2022 03:30:23 GMT  
+	-	`sha256:ab33203141786ae31f1c3c4214430e7471ce7397c6e1492a0726da1ac6e5cc08`  
+		Last Modified: Thu, 03 Mar 2022 22:08:48 GMT  
 		Size: 4.7 KB (4662 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:144143f7a13db11f4909873b6955aad90a5ab917ab7de02b50747144fa2bd2ee`  
-		Last Modified: Tue, 01 Mar 2022 03:30:22 GMT  
+	-	`sha256:100399264a4b7b45f594a1c581e61f99898adc209a66c0a37c349063d6d387c0`  
+		Last Modified: Thu, 03 Mar 2022 22:08:48 GMT  
 		Size: 260.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:235e3eb065ec573dfa201f4c79594c0cdb97e0cacdb7583ff8598d097141d3c8`  
-		Last Modified: Tue, 01 Mar 2022 03:30:39 GMT  
-		Size: 129.9 MB (129862786 bytes)  
+	-	`sha256:2f0695955beccc13e323de33f2a23c48e9a32997526a013c05240c2bc375022b`  
+		Last Modified: Thu, 03 Mar 2022 22:09:03 GMT  
+		Size: 129.9 MB (129862777 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:126f6c7d16e74b1b1db4aa5c04daa8eedf700e264bf37c38d10879bbf3e8ec5c`  
-		Last Modified: Tue, 01 Mar 2022 03:30:22 GMT  
-		Size: 169.0 B  
+	-	`sha256:2395bf7cbf98ad726272583b986c5780109bd5233a67f8c3395ab075439e035e`  
+		Last Modified: Thu, 03 Mar 2022 22:08:48 GMT  
+		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5c6c39a15b4c4e827daf275130ead488d56ab44172a11d31944841547ec2f52`  
-		Last Modified: Tue, 01 Mar 2022 03:30:22 GMT  
-		Size: 4.9 KB (4944 bytes)  
+	-	`sha256:6537bc33a459f0ee460f7d75d547d31661f3dda7ebd285a3e62bbf1b734cf8ad`  
+		Last Modified: Thu, 03 Mar 2022 22:08:48 GMT  
+		Size: 4.9 KB (4946 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:4.2.19-rc0` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:a4ac6268f72a479b82e0f6d3a8e8cad626d8bafc4e349b8d18ec0ff8b84200b2
+$ docker pull mongo@sha256:f53e85da63df8f75a61a1c6bcbe2376dc5b8d50f80fcbd0578a060c947276496
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **155.6 MB (155618870 bytes)**  
+-	Total Size: **155.6 MB (155618844 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d6ce37678c411b26922dd41b10b7a1e95f13edeca9b68bb8ea9f86214845ba31`
+-	Image ID: `sha256:7796f9b91347f3358e6b211f1bc5a6f68dc33bb5105df3e7293a585d3146dd76`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 03:19:18 GMT
-ADD file:6c6588e8deb686903374087994742c9d5e77393babbbffd56aea9d4e6c888aa7 in / 
-# Wed, 02 Feb 2022 03:19:18 GMT
+# Thu, 03 Mar 2022 19:40:54 GMT
+ADD file:4e0e00a64dd88d531092dae4e900f36acb9c48c652d278ec0cd32aef9fffb42b in / 
+# Thu, 03 Mar 2022 19:40:55 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 05:48:00 GMT
+# Thu, 03 Mar 2022 20:56:57 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 05:48:11 GMT
+# Thu, 03 Mar 2022 20:57:08 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 05:48:11 GMT
+# Thu, 03 Mar 2022 20:57:08 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 05:48:12 GMT
+# Thu, 03 Mar 2022 20:57:09 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 05:48:28 GMT
+# Thu, 03 Mar 2022 20:57:25 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 05:48:29 GMT
+# Thu, 03 Mar 2022 20:57:26 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:26:13 GMT
+# Thu, 03 Mar 2022 20:59:37 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- '20691EEC35216C63CAF66CE1656408E390CFB1F5' '9DA31620334BD75D9DCB49F368818C72E52529D4' 'E162F504A20CDF15827F718D4B7C549A058F8B6B' 'F5679A222C647C87527C2F8CB00A0BD1E2C63C11'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:26:13 GMT
+# Thu, 03 Mar 2022 20:59:38 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:26:14 GMT
+# Thu, 03 Mar 2022 20:59:39 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:26:15 GMT
+# Thu, 03 Mar 2022 20:59:40 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:26:16 GMT
+# Thu, 03 Mar 2022 20:59:41 GMT
 ENV MONGO_MAJOR=testing
-# Tue, 01 Mar 2022 03:26:17 GMT
+# Thu, 03 Mar 2022 20:59:42 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu bionic/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:26:18 GMT
+# Thu, 03 Mar 2022 20:59:43 GMT
 ENV MONGO_VERSION=4.2.19~rc0
-# Tue, 01 Mar 2022 03:26:42 GMT
+# Thu, 03 Mar 2022 21:00:05 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:26:43 GMT
+# Thu, 03 Mar 2022 21:00:06 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:26:44 GMT
+# Thu, 03 Mar 2022 21:00:07 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:26:46 GMT
+# Thu, 03 Mar 2022 21:00:09 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:26:46 GMT
+# Thu, 03 Mar 2022 21:00:09 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:26:47 GMT
+# Thu, 03 Mar 2022 21:00:10 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:26:48 GMT
+# Thu, 03 Mar 2022 21:00:11 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:02b7ffdbddc71205d24598c17b9c600df7cc8d35fb49e550250299ce97e1c96e`  
-		Last Modified: Wed, 02 Feb 2022 03:21:06 GMT  
-		Size: 23.7 MB (23729736 bytes)  
+	-	`sha256:20d796c36622ded7b79b53bfa23d7db4140fde7ea3842825f9aca4070b429317`  
+		Last Modified: Thu, 03 Mar 2022 19:42:21 GMT  
+		Size: 23.7 MB (23729651 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ee36322db07da461331ef7762cad1e50f9790912929a11d4869aa9505ae3607`  
-		Last Modified: Wed, 02 Feb 2022 05:51:44 GMT  
-		Size: 1.9 KB (1854 bytes)  
+	-	`sha256:6dfe0149b9b5b8b51774d87be06bb97e2c5187abfa38f4739c3782fdd069cfda`  
+		Last Modified: Thu, 03 Mar 2022 21:04:28 GMT  
+		Size: 1.9 KB (1859 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e7ad1a4ca6448feee2fb946d4e161591ea3d0523b34a5d86cbfd994500712efb`  
-		Last Modified: Wed, 02 Feb 2022 05:51:44 GMT  
-		Size: 2.7 MB (2668858 bytes)  
+	-	`sha256:d22a20c549dcbb8090a9e33091ad5af16996ae0a6af3b3562db269b16a29eea0`  
+		Last Modified: Thu, 03 Mar 2022 21:04:28 GMT  
+		Size: 2.7 MB (2668851 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:06bc2c2171ea3add5d4e5461cf44d4915b3fa1bde9954ed627eb5a01ed23caa1`  
-		Last Modified: Wed, 02 Feb 2022 05:51:44 GMT  
-		Size: 5.2 MB (5190270 bytes)  
+	-	`sha256:309f6523369dac2175295a07f0149b8adb95e50891b40f5c45aee2dd423a4ac1`  
+		Last Modified: Thu, 03 Mar 2022 21:04:28 GMT  
+		Size: 5.2 MB (5190295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4a4067c2c526c4d0e0b8fd7577edcf4f8e1a7fd798b60696b65de058616f639f`  
-		Last Modified: Wed, 02 Feb 2022 05:51:43 GMT  
-		Size: 113.0 B  
+	-	`sha256:97621c75af8e8e69e3f0fa929521b0ea2ddea7d1e70c8fa178aa9feb6621b52b`  
+		Last Modified: Thu, 03 Mar 2022 21:04:28 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:25931a9e690c4c96363582b4d3d1b76d6211c98c9b8d3e79743a63ecba0d9946`  
-		Last Modified: Tue, 01 Mar 2022 03:31:35 GMT  
-		Size: 4.6 KB (4601 bytes)  
+	-	`sha256:336996cb804b01e683f2d3aee7b79026a7b28cca753eccbed2b9bb1f19445de5`  
+		Last Modified: Thu, 03 Mar 2022 21:04:25 GMT  
+		Size: 4.6 KB (4604 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:58f9294ca59f5e62591bbc7eec2222388d2aee58fd4417885165d837cc21e98e`  
-		Last Modified: Tue, 01 Mar 2022 03:31:35 GMT  
-		Size: 263.0 B  
+	-	`sha256:2e4f6206bbc04e05cb5a4d3e7aa0915e442be48715f349b351d6659dfe6ce87d`  
+		Last Modified: Thu, 03 Mar 2022 21:04:25 GMT  
+		Size: 262.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9eeef85be90223df1e0e7f9ac1420e4d14a99d89ed292d981726cd0c46621fa9`  
-		Last Modified: Tue, 01 Mar 2022 03:31:50 GMT  
-		Size: 124.0 MB (124018085 bytes)  
+	-	`sha256:67c4810972328dfc2a509f84ee4fb832e59324421f4b609941e53cf9b115be28`  
+		Last Modified: Thu, 03 Mar 2022 21:04:41 GMT  
+		Size: 124.0 MB (124018123 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed9b568e0dd65b9731ac4eb6ebbe11164b13768cf1269f875388ef4c75828799`  
-		Last Modified: Tue, 01 Mar 2022 03:31:35 GMT  
-		Size: 141.0 B  
+	-	`sha256:95602636902c0aca39b2672d624ddac3a8cb9d93c5d82d064a4a657fe4b63dc6`  
+		Last Modified: Thu, 03 Mar 2022 21:04:25 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:75f840009f6e96fb5b93658423fbf2289bf24447f54087bb928e31e3a7040e90`  
-		Last Modified: Tue, 01 Mar 2022 03:31:35 GMT  
-		Size: 4.9 KB (4949 bytes)  
+	-	`sha256:2f4444c67b9e199b1e8d77afbd4e0aba2d1a90da5605d3cec2172377525ab61a`  
+		Last Modified: Thu, 03 Mar 2022 21:04:25 GMT  
+		Size: 4.9 KB (4945 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:4.2.19-rc0` - windows version 10.0.20348.524; amd64
@@ -8563,7 +8563,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:4.2.19-rc0-bionic`
 
 ```console
-$ docker pull mongo@sha256:d84de6fa916bb53260aab8949f423cd26306ac6c8ccead8b50b0a1007fad4c17
+$ docker pull mongo@sha256:961badd0f9ceaee9173b6f22572ce3e1cecf04a8710f371a351568cefa237430
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8574,207 +8574,207 @@ $ docker pull mongo@sha256:d84de6fa916bb53260aab8949f423cd26306ac6c8ccead8b50b0a
 ### `mongo:4.2.19-rc0-bionic` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:862893a1cd4f5c2f252d56354b43291795b506b88e0090bdf07bc8d64229caef
+$ docker pull mongo@sha256:565c20533990d252915b49f0990d70b429d2371cbb2db2256c82d5077e6198e1
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **165.4 MB (165389558 bytes)**  
+-	Total Size: **165.4 MB (165389844 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cab9f8117df29ee72a1c715e28274a0b255acc2c8e61edd1bb7c1cabe97125b7`
+-	Image ID: `sha256:3296a5c5ec5ec189f8f38471bd90cf926e67f62a7f080615ffa295e4168c1fb6`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 02:14:36 GMT
-ADD file:c6039a4f004b6b6c2e4c281a228d64d8410cb9fdf0c67776f84bb173d3522be1 in / 
-# Wed, 02 Feb 2022 02:14:36 GMT
+# Thu, 03 Mar 2022 20:19:25 GMT
+ADD file:dee0aa8497bd26ca41dffa17adff99be2523f66f9b2c557ba9ad2388ed052dca in / 
+# Thu, 03 Mar 2022 20:19:25 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 03:56:44 GMT
+# Thu, 03 Mar 2022 22:02:49 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 03:56:54 GMT
+# Thu, 03 Mar 2022 22:02:58 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 03:56:54 GMT
+# Thu, 03 Mar 2022 22:02:58 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 03:56:54 GMT
+# Thu, 03 Mar 2022 22:02:58 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 03:57:07 GMT
+# Thu, 03 Mar 2022 22:03:10 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 03:57:08 GMT
+# Thu, 03 Mar 2022 22:03:11 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:26:05 GMT
+# Thu, 03 Mar 2022 22:04:53 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- '20691EEC35216C63CAF66CE1656408E390CFB1F5' '9DA31620334BD75D9DCB49F368818C72E52529D4' 'E162F504A20CDF15827F718D4B7C549A058F8B6B' 'F5679A222C647C87527C2F8CB00A0BD1E2C63C11'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:26:05 GMT
+# Thu, 03 Mar 2022 22:04:53 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:26:05 GMT
+# Thu, 03 Mar 2022 22:04:53 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:26:05 GMT
+# Thu, 03 Mar 2022 22:04:53 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:26:05 GMT
+# Thu, 03 Mar 2022 22:04:53 GMT
 ENV MONGO_MAJOR=testing
-# Tue, 01 Mar 2022 03:26:06 GMT
+# Thu, 03 Mar 2022 22:04:53 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu bionic/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:26:06 GMT
+# Thu, 03 Mar 2022 22:04:53 GMT
 ENV MONGO_VERSION=4.2.19~rc0
-# Tue, 01 Mar 2022 03:26:37 GMT
+# Thu, 03 Mar 2022 22:05:14 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:26:38 GMT
+# Thu, 03 Mar 2022 22:05:15 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:26:38 GMT
+# Thu, 03 Mar 2022 22:05:15 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:26:38 GMT
+# Thu, 03 Mar 2022 22:05:15 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:26:39 GMT
+# Thu, 03 Mar 2022 22:05:15 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:26:39 GMT
+# Thu, 03 Mar 2022 22:05:15 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:26:39 GMT
+# Thu, 03 Mar 2022 22:05:15 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:68e7bb398b9ff421236990bfeaf5c1feab26c590eed93489e245375c23551e2a`  
-		Last Modified: Sat, 29 Jan 2022 14:35:20 GMT  
-		Size: 26.7 MB (26708066 bytes)  
+	-	`sha256:cf06a7c3161117888114e7e91dbd21915efae33c2dbfb086380f7b21946d6e59`  
+		Last Modified: Thu, 03 Mar 2022 20:20:28 GMT  
+		Size: 26.7 MB (26708326 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6dc27e38665914e55da82bc9cc80dc654515b9c0c9081707a75becee902d977d`  
-		Last Modified: Wed, 02 Feb 2022 03:59:46 GMT  
-		Size: 1.9 KB (1874 bytes)  
+	-	`sha256:5e8cbd0519786a031d3fe902fe1ecf2040101506bf48b0cb12a12c036c2ab8cd`  
+		Last Modified: Thu, 03 Mar 2022 22:08:50 GMT  
+		Size: 1.9 KB (1878 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c6025bea41c957f3bf6222a98f785e88bcbf67384bf8f2bc33725893d043e568`  
-		Last Modified: Wed, 02 Feb 2022 03:59:46 GMT  
-		Size: 3.0 MB (2978027 bytes)  
+	-	`sha256:22d2e18323fec0800e5ef24f02122f220fd07627fceaf19372174d7c75acce53`  
+		Last Modified: Thu, 03 Mar 2022 22:08:51 GMT  
+		Size: 3.0 MB (2978035 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8fbbd127d6111d1dad866f2d016ff69fb102ca8ce9f783a9317dcd8b651eb4c3`  
-		Last Modified: Wed, 02 Feb 2022 03:59:46 GMT  
-		Size: 5.8 MB (5828621 bytes)  
+	-	`sha256:ea17d81261d502d31bfafd4139d4165bdf851d0a592b77b883bfec056e161ea8`  
+		Last Modified: Thu, 03 Mar 2022 22:08:51 GMT  
+		Size: 5.8 MB (5828641 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ffca0dee44d939a7c7dd89da6cf3828d13fc3083635d129ab5ae72828009c165`  
-		Last Modified: Wed, 02 Feb 2022 03:59:45 GMT  
+	-	`sha256:ec6d044e0932fbce5142d1fa444ceb85f15a98a2637ac87b1da99a4b47e6832f`  
+		Last Modified: Thu, 03 Mar 2022 22:08:50 GMT  
 		Size: 149.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0763363ebdc1d8e65aa9d9ca0999f3b9265349abd3b2812148979aea38c21a0e`  
-		Last Modified: Tue, 01 Mar 2022 03:30:23 GMT  
+	-	`sha256:ab33203141786ae31f1c3c4214430e7471ce7397c6e1492a0726da1ac6e5cc08`  
+		Last Modified: Thu, 03 Mar 2022 22:08:48 GMT  
 		Size: 4.7 KB (4662 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:144143f7a13db11f4909873b6955aad90a5ab917ab7de02b50747144fa2bd2ee`  
-		Last Modified: Tue, 01 Mar 2022 03:30:22 GMT  
+	-	`sha256:100399264a4b7b45f594a1c581e61f99898adc209a66c0a37c349063d6d387c0`  
+		Last Modified: Thu, 03 Mar 2022 22:08:48 GMT  
 		Size: 260.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:235e3eb065ec573dfa201f4c79594c0cdb97e0cacdb7583ff8598d097141d3c8`  
-		Last Modified: Tue, 01 Mar 2022 03:30:39 GMT  
-		Size: 129.9 MB (129862786 bytes)  
+	-	`sha256:2f0695955beccc13e323de33f2a23c48e9a32997526a013c05240c2bc375022b`  
+		Last Modified: Thu, 03 Mar 2022 22:09:03 GMT  
+		Size: 129.9 MB (129862777 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:126f6c7d16e74b1b1db4aa5c04daa8eedf700e264bf37c38d10879bbf3e8ec5c`  
-		Last Modified: Tue, 01 Mar 2022 03:30:22 GMT  
-		Size: 169.0 B  
+	-	`sha256:2395bf7cbf98ad726272583b986c5780109bd5233a67f8c3395ab075439e035e`  
+		Last Modified: Thu, 03 Mar 2022 22:08:48 GMT  
+		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5c6c39a15b4c4e827daf275130ead488d56ab44172a11d31944841547ec2f52`  
-		Last Modified: Tue, 01 Mar 2022 03:30:22 GMT  
-		Size: 4.9 KB (4944 bytes)  
+	-	`sha256:6537bc33a459f0ee460f7d75d547d31661f3dda7ebd285a3e62bbf1b734cf8ad`  
+		Last Modified: Thu, 03 Mar 2022 22:08:48 GMT  
+		Size: 4.9 KB (4946 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:4.2.19-rc0-bionic` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:a4ac6268f72a479b82e0f6d3a8e8cad626d8bafc4e349b8d18ec0ff8b84200b2
+$ docker pull mongo@sha256:f53e85da63df8f75a61a1c6bcbe2376dc5b8d50f80fcbd0578a060c947276496
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **155.6 MB (155618870 bytes)**  
+-	Total Size: **155.6 MB (155618844 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d6ce37678c411b26922dd41b10b7a1e95f13edeca9b68bb8ea9f86214845ba31`
+-	Image ID: `sha256:7796f9b91347f3358e6b211f1bc5a6f68dc33bb5105df3e7293a585d3146dd76`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 03:19:18 GMT
-ADD file:6c6588e8deb686903374087994742c9d5e77393babbbffd56aea9d4e6c888aa7 in / 
-# Wed, 02 Feb 2022 03:19:18 GMT
+# Thu, 03 Mar 2022 19:40:54 GMT
+ADD file:4e0e00a64dd88d531092dae4e900f36acb9c48c652d278ec0cd32aef9fffb42b in / 
+# Thu, 03 Mar 2022 19:40:55 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 05:48:00 GMT
+# Thu, 03 Mar 2022 20:56:57 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 05:48:11 GMT
+# Thu, 03 Mar 2022 20:57:08 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 05:48:11 GMT
+# Thu, 03 Mar 2022 20:57:08 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 05:48:12 GMT
+# Thu, 03 Mar 2022 20:57:09 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 05:48:28 GMT
+# Thu, 03 Mar 2022 20:57:25 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 05:48:29 GMT
+# Thu, 03 Mar 2022 20:57:26 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:26:13 GMT
+# Thu, 03 Mar 2022 20:59:37 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- '20691EEC35216C63CAF66CE1656408E390CFB1F5' '9DA31620334BD75D9DCB49F368818C72E52529D4' 'E162F504A20CDF15827F718D4B7C549A058F8B6B' 'F5679A222C647C87527C2F8CB00A0BD1E2C63C11'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:26:13 GMT
+# Thu, 03 Mar 2022 20:59:38 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:26:14 GMT
+# Thu, 03 Mar 2022 20:59:39 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:26:15 GMT
+# Thu, 03 Mar 2022 20:59:40 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:26:16 GMT
+# Thu, 03 Mar 2022 20:59:41 GMT
 ENV MONGO_MAJOR=testing
-# Tue, 01 Mar 2022 03:26:17 GMT
+# Thu, 03 Mar 2022 20:59:42 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu bionic/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:26:18 GMT
+# Thu, 03 Mar 2022 20:59:43 GMT
 ENV MONGO_VERSION=4.2.19~rc0
-# Tue, 01 Mar 2022 03:26:42 GMT
+# Thu, 03 Mar 2022 21:00:05 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:26:43 GMT
+# Thu, 03 Mar 2022 21:00:06 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:26:44 GMT
+# Thu, 03 Mar 2022 21:00:07 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:26:46 GMT
+# Thu, 03 Mar 2022 21:00:09 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:26:46 GMT
+# Thu, 03 Mar 2022 21:00:09 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:26:47 GMT
+# Thu, 03 Mar 2022 21:00:10 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:26:48 GMT
+# Thu, 03 Mar 2022 21:00:11 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:02b7ffdbddc71205d24598c17b9c600df7cc8d35fb49e550250299ce97e1c96e`  
-		Last Modified: Wed, 02 Feb 2022 03:21:06 GMT  
-		Size: 23.7 MB (23729736 bytes)  
+	-	`sha256:20d796c36622ded7b79b53bfa23d7db4140fde7ea3842825f9aca4070b429317`  
+		Last Modified: Thu, 03 Mar 2022 19:42:21 GMT  
+		Size: 23.7 MB (23729651 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ee36322db07da461331ef7762cad1e50f9790912929a11d4869aa9505ae3607`  
-		Last Modified: Wed, 02 Feb 2022 05:51:44 GMT  
-		Size: 1.9 KB (1854 bytes)  
+	-	`sha256:6dfe0149b9b5b8b51774d87be06bb97e2c5187abfa38f4739c3782fdd069cfda`  
+		Last Modified: Thu, 03 Mar 2022 21:04:28 GMT  
+		Size: 1.9 KB (1859 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e7ad1a4ca6448feee2fb946d4e161591ea3d0523b34a5d86cbfd994500712efb`  
-		Last Modified: Wed, 02 Feb 2022 05:51:44 GMT  
-		Size: 2.7 MB (2668858 bytes)  
+	-	`sha256:d22a20c549dcbb8090a9e33091ad5af16996ae0a6af3b3562db269b16a29eea0`  
+		Last Modified: Thu, 03 Mar 2022 21:04:28 GMT  
+		Size: 2.7 MB (2668851 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:06bc2c2171ea3add5d4e5461cf44d4915b3fa1bde9954ed627eb5a01ed23caa1`  
-		Last Modified: Wed, 02 Feb 2022 05:51:44 GMT  
-		Size: 5.2 MB (5190270 bytes)  
+	-	`sha256:309f6523369dac2175295a07f0149b8adb95e50891b40f5c45aee2dd423a4ac1`  
+		Last Modified: Thu, 03 Mar 2022 21:04:28 GMT  
+		Size: 5.2 MB (5190295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4a4067c2c526c4d0e0b8fd7577edcf4f8e1a7fd798b60696b65de058616f639f`  
-		Last Modified: Wed, 02 Feb 2022 05:51:43 GMT  
-		Size: 113.0 B  
+	-	`sha256:97621c75af8e8e69e3f0fa929521b0ea2ddea7d1e70c8fa178aa9feb6621b52b`  
+		Last Modified: Thu, 03 Mar 2022 21:04:28 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:25931a9e690c4c96363582b4d3d1b76d6211c98c9b8d3e79743a63ecba0d9946`  
-		Last Modified: Tue, 01 Mar 2022 03:31:35 GMT  
-		Size: 4.6 KB (4601 bytes)  
+	-	`sha256:336996cb804b01e683f2d3aee7b79026a7b28cca753eccbed2b9bb1f19445de5`  
+		Last Modified: Thu, 03 Mar 2022 21:04:25 GMT  
+		Size: 4.6 KB (4604 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:58f9294ca59f5e62591bbc7eec2222388d2aee58fd4417885165d837cc21e98e`  
-		Last Modified: Tue, 01 Mar 2022 03:31:35 GMT  
-		Size: 263.0 B  
+	-	`sha256:2e4f6206bbc04e05cb5a4d3e7aa0915e442be48715f349b351d6659dfe6ce87d`  
+		Last Modified: Thu, 03 Mar 2022 21:04:25 GMT  
+		Size: 262.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9eeef85be90223df1e0e7f9ac1420e4d14a99d89ed292d981726cd0c46621fa9`  
-		Last Modified: Tue, 01 Mar 2022 03:31:50 GMT  
-		Size: 124.0 MB (124018085 bytes)  
+	-	`sha256:67c4810972328dfc2a509f84ee4fb832e59324421f4b609941e53cf9b115be28`  
+		Last Modified: Thu, 03 Mar 2022 21:04:41 GMT  
+		Size: 124.0 MB (124018123 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed9b568e0dd65b9731ac4eb6ebbe11164b13768cf1269f875388ef4c75828799`  
-		Last Modified: Tue, 01 Mar 2022 03:31:35 GMT  
-		Size: 141.0 B  
+	-	`sha256:95602636902c0aca39b2672d624ddac3a8cb9d93c5d82d064a4a657fe4b63dc6`  
+		Last Modified: Thu, 03 Mar 2022 21:04:25 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:75f840009f6e96fb5b93658423fbf2289bf24447f54087bb928e31e3a7040e90`  
-		Last Modified: Tue, 01 Mar 2022 03:31:35 GMT  
-		Size: 4.9 KB (4949 bytes)  
+	-	`sha256:2f4444c67b9e199b1e8d77afbd4e0aba2d1a90da5605d3cec2172377525ab61a`  
+		Last Modified: Thu, 03 Mar 2022 21:04:25 GMT  
+		Size: 4.9 KB (4945 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:4.2.19-rc0-nanoserver`
@@ -9510,7 +9510,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:4.4`
 
 ```console
-$ docker pull mongo@sha256:c9b6f62273fcdacf8b7aa8cd3d2e7edc69a6a9383e70c82bc8fe05d423bea738
+$ docker pull mongo@sha256:a9a9b095325f08a3057eeed0ba0b5c845e54187148dbeef0315f41065794ad32
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9523,206 +9523,206 @@ $ docker pull mongo@sha256:c9b6f62273fcdacf8b7aa8cd3d2e7edc69a6a9383e70c82bc8fe0
 ### `mongo:4.4` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:416345680d52c14e122f25723d6b0f800c33c8471781976bd86c6bcc2017ef00
+$ docker pull mongo@sha256:fb22042c0565e8bc8a0a6b3b1b94a4a4e623bb14d1a0df2f2d97aac2ff7c6cff
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **171.6 MB (171647417 bytes)**  
+-	Total Size: **171.6 MB (171648916 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5ccbc80e5f8e4b4885853522ecc8c47335eab2a0780d71c6f66bbc092050c72b`
+-	Image ID: `sha256:8a0504dec14a5bd64f02e6f8ba4ed0d29bec25281928f7c1511bf0b0ccb22430`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 02:14:45 GMT
-ADD file:3ccf747d646089ed7fbb43c40c45dd43e86f0674115f856efada93c7e4a63624 in / 
-# Wed, 02 Feb 2022 02:14:46 GMT
+# Thu, 03 Mar 2022 20:19:33 GMT
+ADD file:8a50ad78a668527e974b05a3dfbfd64760de3cb643ceb8a8805d21f6ceab3389 in / 
+# Thu, 03 Mar 2022 20:19:33 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 03:53:54 GMT
+# Thu, 03 Mar 2022 21:57:21 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 03:54:12 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 03:54:12 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 03:54:13 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 03:54:24 GMT
+# Thu, 03 Mar 2022 21:57:46 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 03:54:25 GMT
+# Thu, 03 Mar 2022 21:57:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:25:38 GMT
+# Thu, 03 Mar 2022 22:02:27 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- '20691EEC35216C63CAF66CE1656408E390CFB1F5'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:25:38 GMT
+# Thu, 03 Mar 2022 22:02:27 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:25:38 GMT
+# Thu, 03 Mar 2022 22:02:27 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:25:38 GMT
+# Thu, 03 Mar 2022 22:02:27 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:25:39 GMT
+# Thu, 03 Mar 2022 22:02:27 GMT
 ENV MONGO_MAJOR=4.4
-# Tue, 01 Mar 2022 03:25:39 GMT
+# Thu, 03 Mar 2022 22:02:28 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu focal/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:25:39 GMT
+# Thu, 03 Mar 2022 22:02:28 GMT
 ENV MONGO_VERSION=4.4.12
-# Tue, 01 Mar 2022 03:25:57 GMT
+# Thu, 03 Mar 2022 22:02:44 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:25:58 GMT
+# Thu, 03 Mar 2022 22:02:45 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:25:58 GMT
+# Thu, 03 Mar 2022 22:02:45 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:25:58 GMT
+# Thu, 03 Mar 2022 22:02:45 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:25:59 GMT
+# Thu, 03 Mar 2022 22:02:45 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:25:59 GMT
+# Thu, 03 Mar 2022 22:02:46 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:25:59 GMT
+# Thu, 03 Mar 2022 22:02:46 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:08c01a0ec47e82ebe2bec112f373d160983a6d1e9e66627f66a3322bc403221b`  
-		Last Modified: Wed, 02 Feb 2022 02:16:20 GMT  
-		Size: 28.6 MB (28564099 bytes)  
+	-	`sha256:7c3b88808835aa80f1ef7f03083c5ae781d0f44e644537cd72de4ce6c5e62e00`  
+		Last Modified: Thu, 03 Mar 2022 20:20:44 GMT  
+		Size: 28.6 MB (28565751 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ceb608a7cda73cd80c28a22573e64e6778ba8d3cfbe6b03ed39213391a10e2a4`  
-		Last Modified: Wed, 02 Feb 2022 03:58:32 GMT  
-		Size: 1.8 KB (1750 bytes)  
+	-	`sha256:48a403577c28fafaf89a46590d69c237ae9fd5e576f96bf984e45ead657a3ef3`  
+		Last Modified: Thu, 03 Mar 2022 22:07:07 GMT  
+		Size: 1.7 KB (1748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a160d3e3934a135ad5c71555099d1fe85aab6f96d34b578a76ff52a95c22dd19`  
-		Last Modified: Wed, 02 Feb 2022 03:58:32 GMT  
-		Size: 3.1 MB (3064433 bytes)  
+	-	`sha256:76bbb7dc901383749cee88f0d357711cf7059ef51211c4725d60127a431d2844`  
+		Last Modified: Thu, 03 Mar 2022 22:07:08 GMT  
+		Size: 3.1 MB (3064492 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:544b729231207ba1a406ea8cbb2764717ea55ec68a2edd74bd992f0aed167184`  
-		Last Modified: Wed, 02 Feb 2022 03:58:33 GMT  
-		Size: 6.5 MB (6505756 bytes)  
+	-	`sha256:e81b1e5a386bad953e0fc4c4625bb63aea27c931f575e665730eea7fd4f373ad`  
+		Last Modified: Thu, 03 Mar 2022 22:07:08 GMT  
+		Size: 6.5 MB (6505604 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:812461eda79e980889ebf8fbb4bcc083ecae07e83d9dbec008a049a11c83198c`  
-		Last Modified: Wed, 02 Feb 2022 03:58:31 GMT  
+	-	`sha256:7bdc1db49ec948ae1977bbbf82bca00efce13bebbaf1aabbe5ec24e1b3c268db`  
+		Last Modified: Thu, 03 Mar 2022 22:07:07 GMT  
 		Size: 149.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cd6b9907740cbfbee3e3970e5e8298f9b9fb36b2ae04437a131c74183d43154e`  
-		Last Modified: Tue, 01 Mar 2022 03:29:50 GMT  
-		Size: 1.4 KB (1444 bytes)  
+	-	`sha256:9a57632a805191d98f7e8f0c11680166d5c0890f6e79f245572af4d2b243ea68`  
+		Last Modified: Thu, 03 Mar 2022 22:08:17 GMT  
+		Size: 1.4 KB (1445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:836655000c375bb076915e5af942a76840a15bb10863f4684d32d8cee56e628a`  
-		Last Modified: Tue, 01 Mar 2022 03:29:50 GMT  
-		Size: 259.0 B  
+	-	`sha256:5bdd30561f8402b3e6137cec2f5ef8ac61936588be7f436109e263e9a383b9cd`  
+		Last Modified: Thu, 03 Mar 2022 22:08:17 GMT  
+		Size: 257.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:abcc554bf4affcfe5694f38e0adb14ce41dc7ba692c2bccae2fbefd6fee1856f`  
-		Last Modified: Tue, 01 Mar 2022 03:30:09 GMT  
-		Size: 133.5 MB (133504410 bytes)  
+	-	`sha256:e7f3d307166feab0ac9eafce991dc503ad85f0665335f423260d9a890b6a73ba`  
+		Last Modified: Thu, 03 Mar 2022 22:08:34 GMT  
+		Size: 133.5 MB (133504355 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:808ba618f652943c5b41bbdb951afcd3805114d1bdcb83c61e82fc9c8d7deebc`  
-		Last Modified: Tue, 01 Mar 2022 03:29:50 GMT  
+	-	`sha256:36db699d28f0349c8e924ed2cc9bac7c94a1987fb8071831e49246c8f8b56a82`  
+		Last Modified: Thu, 03 Mar 2022 22:08:17 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:797e11761fdbd9c267dfc3e62b138d6385f2c3e72d13ffde0275f81cdfe7828d`  
-		Last Modified: Tue, 01 Mar 2022 03:29:50 GMT  
-		Size: 4.9 KB (4948 bytes)  
+	-	`sha256:b69893e2ea1ea3c7f53c3d9cbab570fe0ae6c4095b2ee5340b348c7078ae11e7`  
+		Last Modified: Thu, 03 Mar 2022 22:08:17 GMT  
+		Size: 4.9 KB (4946 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:4.4` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:e78e550570cfd84d293da54bb39bb9139fc91251a82a7969f2f41ca18267fa79
+$ docker pull mongo@sha256:d67a46d75bafff8172fc28eb5c9f524341a179c816c440f0ecd95fdbf677d255
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **166.7 MB (166738075 bytes)**  
+-	Total Size: **166.7 MB (166737437 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4920f12930f3d5b8d45f6e554eda6ced50eff7f5c8803c119491341379521443`
+-	Image ID: `sha256:9c0d0746961895653f090a96ea69f13ad91b9537e0509894798279cd12eed42e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 03:19:27 GMT
-ADD file:3acc741be29b0b58e44d7302ab5ce65bf65ea1b35922be58a2cee9cb708d006a in / 
-# Wed, 02 Feb 2022 03:19:27 GMT
+# Thu, 03 Mar 2022 19:41:02 GMT
+ADD file:f2fffe739729839aa17484bc4d79d33425549c5052824eac12131b16c23565d3 in / 
+# Thu, 03 Mar 2022 19:41:03 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 05:45:05 GMT
+# Thu, 03 Mar 2022 20:50:47 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 05:45:15 GMT
+# Thu, 03 Mar 2022 20:50:58 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 05:45:16 GMT
+# Thu, 03 Mar 2022 20:50:58 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 05:45:17 GMT
+# Thu, 03 Mar 2022 20:50:59 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 05:45:33 GMT
+# Thu, 03 Mar 2022 20:51:15 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 05:45:34 GMT
+# Thu, 03 Mar 2022 20:51:16 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 20:56:17 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- '20691EEC35216C63CAF66CE1656408E390CFB1F5'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 20:56:18 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:24:47 GMT
+# Thu, 03 Mar 2022 20:56:19 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:24:48 GMT
+# Thu, 03 Mar 2022 20:56:20 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:24:49 GMT
+# Thu, 03 Mar 2022 20:56:21 GMT
 ENV MONGO_MAJOR=4.4
-# Tue, 01 Mar 2022 03:24:50 GMT
+# Thu, 03 Mar 2022 20:56:22 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu focal/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:24:51 GMT
+# Thu, 03 Mar 2022 20:56:23 GMT
 ENV MONGO_VERSION=4.4.12
-# Tue, 01 Mar 2022 03:25:11 GMT
+# Thu, 03 Mar 2022 20:56:44 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:25:12 GMT
+# Thu, 03 Mar 2022 20:56:45 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:25:13 GMT
+# Thu, 03 Mar 2022 20:56:45 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:25:15 GMT
+# Thu, 03 Mar 2022 20:56:47 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:25:15 GMT
+# Thu, 03 Mar 2022 20:56:47 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:25:16 GMT
+# Thu, 03 Mar 2022 20:56:48 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:25:17 GMT
+# Thu, 03 Mar 2022 20:56:49 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:bbf2fb66fa6e06dd46eb26f518f93171ee7c48be68aafb213aa7c2c12f4018ca`  
-		Last Modified: Wed, 02 Feb 2022 03:21:24 GMT  
-		Size: 27.2 MB (27169640 bytes)  
+	-	`sha256:5a7855fb0d7ae372c824d9c76be5ad2f42ce178c1910fa54a8543036b5325fd5`  
+		Last Modified: Thu, 03 Mar 2022 19:42:38 GMT  
+		Size: 27.2 MB (27169631 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc29132329410addab1460dc8766c612d802fd087c89530850ee4fc3bfccb9d1`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
-		Size: 1.7 KB (1732 bytes)  
+	-	`sha256:93835005f83fca8d11e84de6d362cbdac541df8362e80c6a0172100f8b8a27ea`  
+		Last Modified: Thu, 03 Mar 2022 21:02:38 GMT  
+		Size: 1.7 KB (1728 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35d26e50b564fed7f08788d9db622ed591d1666d153ca9c6c7e44810cb4a95af`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
-		Size: 2.9 MB (2912189 bytes)  
+	-	`sha256:85b1c8f1aa262a4f9ecfc4a311235d079693056c9b47ac47c30478ac25c87e36`  
+		Last Modified: Thu, 03 Mar 2022 21:02:36 GMT  
+		Size: 2.9 MB (2912105 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e5a900b805d7561beb888f5130ab75e7a55960fba49790bc0e71dca4c6f1d00`  
-		Last Modified: Wed, 02 Feb 2022 05:50:26 GMT  
-		Size: 6.2 MB (6248507 bytes)  
+	-	`sha256:b9207ce7ec0ce748a22c1074f1471f694ca5a46ba77f3cb86f7485a9df75f492`  
+		Last Modified: Thu, 03 Mar 2022 21:02:36 GMT  
+		Size: 6.2 MB (6248075 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4bd55587e4b045a1d2bab13971a1045c2baa6952fcc7de26890851325cd5314`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
+	-	`sha256:a98a90fbda7bccfa543c5d402318d145dc64f2d3be60275c04a10ede986569ca`  
+		Last Modified: Thu, 03 Mar 2022 21:02:35 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ef21e2c8a7834c9104f0fb769ffedf9431a2d775d4ab950971f7e19d6b3f8536`  
-		Last Modified: Tue, 01 Mar 2022 03:31:04 GMT  
+	-	`sha256:a94ad0a7969a63e63fb47cf96c863c73a133bbe21dde534a12a6b1a2ecd4620e`  
+		Last Modified: Thu, 03 Mar 2022 21:03:50 GMT  
 		Size: 1.4 KB (1394 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:556797adee15ab44c08b3b8fc1a8882fd3f26198751e65f52214d6b31c5650a2`  
-		Last Modified: Tue, 01 Mar 2022 03:31:04 GMT  
-		Size: 261.0 B  
+	-	`sha256:e37c7fdc11f381659d5069d1336bd38bb17ccbcd73c5b735a62c79b49ccf936c`  
+		Last Modified: Thu, 03 Mar 2022 21:03:50 GMT  
+		Size: 260.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2fbcc7a6ef34d71a057d29611ee205e746aca5067834430149df186f7368a480`  
-		Last Modified: Tue, 01 Mar 2022 03:31:21 GMT  
-		Size: 130.4 MB (130399151 bytes)  
+	-	`sha256:51c308f81850382890e0b55f68c3b70437f530f76f0e9f2b646799422481ec20`  
+		Last Modified: Thu, 03 Mar 2022 21:04:06 GMT  
+		Size: 130.4 MB (130399044 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc15bdbfa8c7223c94140a7f4c17c7c8d3ce4876dea0facef17f114cba73e19a`  
-		Last Modified: Tue, 01 Mar 2022 03:31:05 GMT  
-		Size: 139.0 B  
+	-	`sha256:f7e63de29dad3e70eb299a298507a27d383d9630453b71d29cd20300e1f5e6b1`  
+		Last Modified: Thu, 03 Mar 2022 21:03:50 GMT  
+		Size: 138.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:12a20655125ac8b9d96142455cdf2363e80a3c073f579a7624e41c2a4a466c3a`  
-		Last Modified: Tue, 01 Mar 2022 03:31:04 GMT  
+	-	`sha256:0046fa0e8522005a884540fdec479070f3c8b1ed1efd0bb9851b75a46b0c6993`  
+		Last Modified: Thu, 03 Mar 2022 21:03:50 GMT  
 		Size: 4.9 KB (4947 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -9883,7 +9883,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:4.4-focal`
 
 ```console
-$ docker pull mongo@sha256:81232b17a10ff514dbc118c7cb8ac5116eeb15e59e19454edd1e7a6a4baf1f80
+$ docker pull mongo@sha256:27783a99236a51abd3225f48b7e111232dc1c934e613614e73f309b34b5a312f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9894,206 +9894,206 @@ $ docker pull mongo@sha256:81232b17a10ff514dbc118c7cb8ac5116eeb15e59e19454edd1e7
 ### `mongo:4.4-focal` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:416345680d52c14e122f25723d6b0f800c33c8471781976bd86c6bcc2017ef00
+$ docker pull mongo@sha256:fb22042c0565e8bc8a0a6b3b1b94a4a4e623bb14d1a0df2f2d97aac2ff7c6cff
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **171.6 MB (171647417 bytes)**  
+-	Total Size: **171.6 MB (171648916 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5ccbc80e5f8e4b4885853522ecc8c47335eab2a0780d71c6f66bbc092050c72b`
+-	Image ID: `sha256:8a0504dec14a5bd64f02e6f8ba4ed0d29bec25281928f7c1511bf0b0ccb22430`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 02:14:45 GMT
-ADD file:3ccf747d646089ed7fbb43c40c45dd43e86f0674115f856efada93c7e4a63624 in / 
-# Wed, 02 Feb 2022 02:14:46 GMT
+# Thu, 03 Mar 2022 20:19:33 GMT
+ADD file:8a50ad78a668527e974b05a3dfbfd64760de3cb643ceb8a8805d21f6ceab3389 in / 
+# Thu, 03 Mar 2022 20:19:33 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 03:53:54 GMT
+# Thu, 03 Mar 2022 21:57:21 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 03:54:12 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 03:54:12 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 03:54:13 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 03:54:24 GMT
+# Thu, 03 Mar 2022 21:57:46 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 03:54:25 GMT
+# Thu, 03 Mar 2022 21:57:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:25:38 GMT
+# Thu, 03 Mar 2022 22:02:27 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- '20691EEC35216C63CAF66CE1656408E390CFB1F5'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:25:38 GMT
+# Thu, 03 Mar 2022 22:02:27 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:25:38 GMT
+# Thu, 03 Mar 2022 22:02:27 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:25:38 GMT
+# Thu, 03 Mar 2022 22:02:27 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:25:39 GMT
+# Thu, 03 Mar 2022 22:02:27 GMT
 ENV MONGO_MAJOR=4.4
-# Tue, 01 Mar 2022 03:25:39 GMT
+# Thu, 03 Mar 2022 22:02:28 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu focal/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:25:39 GMT
+# Thu, 03 Mar 2022 22:02:28 GMT
 ENV MONGO_VERSION=4.4.12
-# Tue, 01 Mar 2022 03:25:57 GMT
+# Thu, 03 Mar 2022 22:02:44 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:25:58 GMT
+# Thu, 03 Mar 2022 22:02:45 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:25:58 GMT
+# Thu, 03 Mar 2022 22:02:45 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:25:58 GMT
+# Thu, 03 Mar 2022 22:02:45 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:25:59 GMT
+# Thu, 03 Mar 2022 22:02:45 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:25:59 GMT
+# Thu, 03 Mar 2022 22:02:46 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:25:59 GMT
+# Thu, 03 Mar 2022 22:02:46 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:08c01a0ec47e82ebe2bec112f373d160983a6d1e9e66627f66a3322bc403221b`  
-		Last Modified: Wed, 02 Feb 2022 02:16:20 GMT  
-		Size: 28.6 MB (28564099 bytes)  
+	-	`sha256:7c3b88808835aa80f1ef7f03083c5ae781d0f44e644537cd72de4ce6c5e62e00`  
+		Last Modified: Thu, 03 Mar 2022 20:20:44 GMT  
+		Size: 28.6 MB (28565751 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ceb608a7cda73cd80c28a22573e64e6778ba8d3cfbe6b03ed39213391a10e2a4`  
-		Last Modified: Wed, 02 Feb 2022 03:58:32 GMT  
-		Size: 1.8 KB (1750 bytes)  
+	-	`sha256:48a403577c28fafaf89a46590d69c237ae9fd5e576f96bf984e45ead657a3ef3`  
+		Last Modified: Thu, 03 Mar 2022 22:07:07 GMT  
+		Size: 1.7 KB (1748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a160d3e3934a135ad5c71555099d1fe85aab6f96d34b578a76ff52a95c22dd19`  
-		Last Modified: Wed, 02 Feb 2022 03:58:32 GMT  
-		Size: 3.1 MB (3064433 bytes)  
+	-	`sha256:76bbb7dc901383749cee88f0d357711cf7059ef51211c4725d60127a431d2844`  
+		Last Modified: Thu, 03 Mar 2022 22:07:08 GMT  
+		Size: 3.1 MB (3064492 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:544b729231207ba1a406ea8cbb2764717ea55ec68a2edd74bd992f0aed167184`  
-		Last Modified: Wed, 02 Feb 2022 03:58:33 GMT  
-		Size: 6.5 MB (6505756 bytes)  
+	-	`sha256:e81b1e5a386bad953e0fc4c4625bb63aea27c931f575e665730eea7fd4f373ad`  
+		Last Modified: Thu, 03 Mar 2022 22:07:08 GMT  
+		Size: 6.5 MB (6505604 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:812461eda79e980889ebf8fbb4bcc083ecae07e83d9dbec008a049a11c83198c`  
-		Last Modified: Wed, 02 Feb 2022 03:58:31 GMT  
+	-	`sha256:7bdc1db49ec948ae1977bbbf82bca00efce13bebbaf1aabbe5ec24e1b3c268db`  
+		Last Modified: Thu, 03 Mar 2022 22:07:07 GMT  
 		Size: 149.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cd6b9907740cbfbee3e3970e5e8298f9b9fb36b2ae04437a131c74183d43154e`  
-		Last Modified: Tue, 01 Mar 2022 03:29:50 GMT  
-		Size: 1.4 KB (1444 bytes)  
+	-	`sha256:9a57632a805191d98f7e8f0c11680166d5c0890f6e79f245572af4d2b243ea68`  
+		Last Modified: Thu, 03 Mar 2022 22:08:17 GMT  
+		Size: 1.4 KB (1445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:836655000c375bb076915e5af942a76840a15bb10863f4684d32d8cee56e628a`  
-		Last Modified: Tue, 01 Mar 2022 03:29:50 GMT  
-		Size: 259.0 B  
+	-	`sha256:5bdd30561f8402b3e6137cec2f5ef8ac61936588be7f436109e263e9a383b9cd`  
+		Last Modified: Thu, 03 Mar 2022 22:08:17 GMT  
+		Size: 257.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:abcc554bf4affcfe5694f38e0adb14ce41dc7ba692c2bccae2fbefd6fee1856f`  
-		Last Modified: Tue, 01 Mar 2022 03:30:09 GMT  
-		Size: 133.5 MB (133504410 bytes)  
+	-	`sha256:e7f3d307166feab0ac9eafce991dc503ad85f0665335f423260d9a890b6a73ba`  
+		Last Modified: Thu, 03 Mar 2022 22:08:34 GMT  
+		Size: 133.5 MB (133504355 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:808ba618f652943c5b41bbdb951afcd3805114d1bdcb83c61e82fc9c8d7deebc`  
-		Last Modified: Tue, 01 Mar 2022 03:29:50 GMT  
+	-	`sha256:36db699d28f0349c8e924ed2cc9bac7c94a1987fb8071831e49246c8f8b56a82`  
+		Last Modified: Thu, 03 Mar 2022 22:08:17 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:797e11761fdbd9c267dfc3e62b138d6385f2c3e72d13ffde0275f81cdfe7828d`  
-		Last Modified: Tue, 01 Mar 2022 03:29:50 GMT  
-		Size: 4.9 KB (4948 bytes)  
+	-	`sha256:b69893e2ea1ea3c7f53c3d9cbab570fe0ae6c4095b2ee5340b348c7078ae11e7`  
+		Last Modified: Thu, 03 Mar 2022 22:08:17 GMT  
+		Size: 4.9 KB (4946 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:4.4-focal` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:e78e550570cfd84d293da54bb39bb9139fc91251a82a7969f2f41ca18267fa79
+$ docker pull mongo@sha256:d67a46d75bafff8172fc28eb5c9f524341a179c816c440f0ecd95fdbf677d255
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **166.7 MB (166738075 bytes)**  
+-	Total Size: **166.7 MB (166737437 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4920f12930f3d5b8d45f6e554eda6ced50eff7f5c8803c119491341379521443`
+-	Image ID: `sha256:9c0d0746961895653f090a96ea69f13ad91b9537e0509894798279cd12eed42e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 03:19:27 GMT
-ADD file:3acc741be29b0b58e44d7302ab5ce65bf65ea1b35922be58a2cee9cb708d006a in / 
-# Wed, 02 Feb 2022 03:19:27 GMT
+# Thu, 03 Mar 2022 19:41:02 GMT
+ADD file:f2fffe739729839aa17484bc4d79d33425549c5052824eac12131b16c23565d3 in / 
+# Thu, 03 Mar 2022 19:41:03 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 05:45:05 GMT
+# Thu, 03 Mar 2022 20:50:47 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 05:45:15 GMT
+# Thu, 03 Mar 2022 20:50:58 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 05:45:16 GMT
+# Thu, 03 Mar 2022 20:50:58 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 05:45:17 GMT
+# Thu, 03 Mar 2022 20:50:59 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 05:45:33 GMT
+# Thu, 03 Mar 2022 20:51:15 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 05:45:34 GMT
+# Thu, 03 Mar 2022 20:51:16 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 20:56:17 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- '20691EEC35216C63CAF66CE1656408E390CFB1F5'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 20:56:18 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:24:47 GMT
+# Thu, 03 Mar 2022 20:56:19 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:24:48 GMT
+# Thu, 03 Mar 2022 20:56:20 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:24:49 GMT
+# Thu, 03 Mar 2022 20:56:21 GMT
 ENV MONGO_MAJOR=4.4
-# Tue, 01 Mar 2022 03:24:50 GMT
+# Thu, 03 Mar 2022 20:56:22 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu focal/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:24:51 GMT
+# Thu, 03 Mar 2022 20:56:23 GMT
 ENV MONGO_VERSION=4.4.12
-# Tue, 01 Mar 2022 03:25:11 GMT
+# Thu, 03 Mar 2022 20:56:44 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:25:12 GMT
+# Thu, 03 Mar 2022 20:56:45 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:25:13 GMT
+# Thu, 03 Mar 2022 20:56:45 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:25:15 GMT
+# Thu, 03 Mar 2022 20:56:47 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:25:15 GMT
+# Thu, 03 Mar 2022 20:56:47 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:25:16 GMT
+# Thu, 03 Mar 2022 20:56:48 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:25:17 GMT
+# Thu, 03 Mar 2022 20:56:49 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:bbf2fb66fa6e06dd46eb26f518f93171ee7c48be68aafb213aa7c2c12f4018ca`  
-		Last Modified: Wed, 02 Feb 2022 03:21:24 GMT  
-		Size: 27.2 MB (27169640 bytes)  
+	-	`sha256:5a7855fb0d7ae372c824d9c76be5ad2f42ce178c1910fa54a8543036b5325fd5`  
+		Last Modified: Thu, 03 Mar 2022 19:42:38 GMT  
+		Size: 27.2 MB (27169631 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc29132329410addab1460dc8766c612d802fd087c89530850ee4fc3bfccb9d1`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
-		Size: 1.7 KB (1732 bytes)  
+	-	`sha256:93835005f83fca8d11e84de6d362cbdac541df8362e80c6a0172100f8b8a27ea`  
+		Last Modified: Thu, 03 Mar 2022 21:02:38 GMT  
+		Size: 1.7 KB (1728 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35d26e50b564fed7f08788d9db622ed591d1666d153ca9c6c7e44810cb4a95af`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
-		Size: 2.9 MB (2912189 bytes)  
+	-	`sha256:85b1c8f1aa262a4f9ecfc4a311235d079693056c9b47ac47c30478ac25c87e36`  
+		Last Modified: Thu, 03 Mar 2022 21:02:36 GMT  
+		Size: 2.9 MB (2912105 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e5a900b805d7561beb888f5130ab75e7a55960fba49790bc0e71dca4c6f1d00`  
-		Last Modified: Wed, 02 Feb 2022 05:50:26 GMT  
-		Size: 6.2 MB (6248507 bytes)  
+	-	`sha256:b9207ce7ec0ce748a22c1074f1471f694ca5a46ba77f3cb86f7485a9df75f492`  
+		Last Modified: Thu, 03 Mar 2022 21:02:36 GMT  
+		Size: 6.2 MB (6248075 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4bd55587e4b045a1d2bab13971a1045c2baa6952fcc7de26890851325cd5314`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
+	-	`sha256:a98a90fbda7bccfa543c5d402318d145dc64f2d3be60275c04a10ede986569ca`  
+		Last Modified: Thu, 03 Mar 2022 21:02:35 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ef21e2c8a7834c9104f0fb769ffedf9431a2d775d4ab950971f7e19d6b3f8536`  
-		Last Modified: Tue, 01 Mar 2022 03:31:04 GMT  
+	-	`sha256:a94ad0a7969a63e63fb47cf96c863c73a133bbe21dde534a12a6b1a2ecd4620e`  
+		Last Modified: Thu, 03 Mar 2022 21:03:50 GMT  
 		Size: 1.4 KB (1394 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:556797adee15ab44c08b3b8fc1a8882fd3f26198751e65f52214d6b31c5650a2`  
-		Last Modified: Tue, 01 Mar 2022 03:31:04 GMT  
-		Size: 261.0 B  
+	-	`sha256:e37c7fdc11f381659d5069d1336bd38bb17ccbcd73c5b735a62c79b49ccf936c`  
+		Last Modified: Thu, 03 Mar 2022 21:03:50 GMT  
+		Size: 260.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2fbcc7a6ef34d71a057d29611ee205e746aca5067834430149df186f7368a480`  
-		Last Modified: Tue, 01 Mar 2022 03:31:21 GMT  
-		Size: 130.4 MB (130399151 bytes)  
+	-	`sha256:51c308f81850382890e0b55f68c3b70437f530f76f0e9f2b646799422481ec20`  
+		Last Modified: Thu, 03 Mar 2022 21:04:06 GMT  
+		Size: 130.4 MB (130399044 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc15bdbfa8c7223c94140a7f4c17c7c8d3ce4876dea0facef17f114cba73e19a`  
-		Last Modified: Tue, 01 Mar 2022 03:31:05 GMT  
-		Size: 139.0 B  
+	-	`sha256:f7e63de29dad3e70eb299a298507a27d383d9630453b71d29cd20300e1f5e6b1`  
+		Last Modified: Thu, 03 Mar 2022 21:03:50 GMT  
+		Size: 138.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:12a20655125ac8b9d96142455cdf2363e80a3c073f579a7624e41c2a4a466c3a`  
-		Last Modified: Tue, 01 Mar 2022 03:31:04 GMT  
+	-	`sha256:0046fa0e8522005a884540fdec479070f3c8b1ed1efd0bb9851b75a46b0c6993`  
+		Last Modified: Thu, 03 Mar 2022 21:03:50 GMT  
 		Size: 4.9 KB (4947 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -10491,7 +10491,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:4.4-rc`
 
 ```console
-$ docker pull mongo@sha256:2d0610641bd764000910608932109c53f3c8651ba21a7d2b326460f17fe11535
+$ docker pull mongo@sha256:67c74a1e778e0d148392d40c0312e05fb126502417b6bf08f2ba1b85862b9d29
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10504,207 +10504,207 @@ $ docker pull mongo@sha256:2d0610641bd764000910608932109c53f3c8651ba21a7d2b32646
 ### `mongo:4.4-rc` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:b69870f70ff4f732589a78ec60ba08c122d996e987ba4989f9cdf76659024903
+$ docker pull mongo@sha256:97f7194c6bcd373c29624af9d8871919eb4c68245bc56f471873ca3e3d0df329
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **171.6 MB (171617282 bytes)**  
+-	Total Size: **171.6 MB (171618837 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:87ee506f88b8e0b83a932a9845c8b76d5a65d8ad5cc085fa7eff7657ccf456de`
+-	Image ID: `sha256:e95b956c8c5690c3a599e70bee74d4f7c3af00fcec26ca0a828aebf78739fc4a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 02:14:45 GMT
-ADD file:3ccf747d646089ed7fbb43c40c45dd43e86f0674115f856efada93c7e4a63624 in / 
-# Wed, 02 Feb 2022 02:14:46 GMT
+# Thu, 03 Mar 2022 20:19:33 GMT
+ADD file:8a50ad78a668527e974b05a3dfbfd64760de3cb643ceb8a8805d21f6ceab3389 in / 
+# Thu, 03 Mar 2022 20:19:33 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 03:53:54 GMT
+# Thu, 03 Mar 2022 21:57:21 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 03:54:12 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 03:54:12 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 03:54:13 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 03:54:24 GMT
+# Thu, 03 Mar 2022 21:57:46 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 03:54:25 GMT
+# Thu, 03 Mar 2022 21:57:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:25:12 GMT
+# Thu, 03 Mar 2022 22:01:19 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- '20691EEC35216C63CAF66CE1656408E390CFB1F5' '9DA31620334BD75D9DCB49F368818C72E52529D4' 'E162F504A20CDF15827F718D4B7C549A058F8B6B' 'F5679A222C647C87527C2F8CB00A0BD1E2C63C11'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:25:12 GMT
+# Thu, 03 Mar 2022 22:01:19 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:25:12 GMT
+# Thu, 03 Mar 2022 22:01:19 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:25:12 GMT
+# Thu, 03 Mar 2022 22:01:19 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:25:12 GMT
+# Thu, 03 Mar 2022 22:01:20 GMT
 ENV MONGO_MAJOR=testing
-# Tue, 01 Mar 2022 03:25:13 GMT
+# Thu, 03 Mar 2022 22:01:20 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu focal/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:25:13 GMT
+# Thu, 03 Mar 2022 22:01:20 GMT
 ENV MONGO_VERSION=4.4.13~rc0
-# Tue, 01 Mar 2022 03:25:31 GMT
+# Thu, 03 Mar 2022 22:01:39 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:25:32 GMT
+# Thu, 03 Mar 2022 22:01:41 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:25:32 GMT
+# Thu, 03 Mar 2022 22:01:41 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:25:32 GMT
+# Thu, 03 Mar 2022 22:01:41 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:25:32 GMT
+# Thu, 03 Mar 2022 22:01:41 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:25:32 GMT
+# Thu, 03 Mar 2022 22:01:41 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:25:32 GMT
+# Thu, 03 Mar 2022 22:01:41 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:08c01a0ec47e82ebe2bec112f373d160983a6d1e9e66627f66a3322bc403221b`  
-		Last Modified: Wed, 02 Feb 2022 02:16:20 GMT  
-		Size: 28.6 MB (28564099 bytes)  
+	-	`sha256:7c3b88808835aa80f1ef7f03083c5ae781d0f44e644537cd72de4ce6c5e62e00`  
+		Last Modified: Thu, 03 Mar 2022 20:20:44 GMT  
+		Size: 28.6 MB (28565751 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ceb608a7cda73cd80c28a22573e64e6778ba8d3cfbe6b03ed39213391a10e2a4`  
-		Last Modified: Wed, 02 Feb 2022 03:58:32 GMT  
-		Size: 1.8 KB (1750 bytes)  
+	-	`sha256:48a403577c28fafaf89a46590d69c237ae9fd5e576f96bf984e45ead657a3ef3`  
+		Last Modified: Thu, 03 Mar 2022 22:07:07 GMT  
+		Size: 1.7 KB (1748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a160d3e3934a135ad5c71555099d1fe85aab6f96d34b578a76ff52a95c22dd19`  
-		Last Modified: Wed, 02 Feb 2022 03:58:32 GMT  
-		Size: 3.1 MB (3064433 bytes)  
+	-	`sha256:76bbb7dc901383749cee88f0d357711cf7059ef51211c4725d60127a431d2844`  
+		Last Modified: Thu, 03 Mar 2022 22:07:08 GMT  
+		Size: 3.1 MB (3064492 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:544b729231207ba1a406ea8cbb2764717ea55ec68a2edd74bd992f0aed167184`  
-		Last Modified: Wed, 02 Feb 2022 03:58:33 GMT  
-		Size: 6.5 MB (6505756 bytes)  
+	-	`sha256:e81b1e5a386bad953e0fc4c4625bb63aea27c931f575e665730eea7fd4f373ad`  
+		Last Modified: Thu, 03 Mar 2022 22:07:08 GMT  
+		Size: 6.5 MB (6505604 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:812461eda79e980889ebf8fbb4bcc083ecae07e83d9dbec008a049a11c83198c`  
-		Last Modified: Wed, 02 Feb 2022 03:58:31 GMT  
+	-	`sha256:7bdc1db49ec948ae1977bbbf82bca00efce13bebbaf1aabbe5ec24e1b3c268db`  
+		Last Modified: Thu, 03 Mar 2022 22:07:07 GMT  
 		Size: 149.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80de6534152e3a6fe96836040798d932f60d7cec3d43b88c8942efeb13039650`  
-		Last Modified: Tue, 01 Mar 2022 03:29:22 GMT  
-		Size: 4.7 KB (4662 bytes)  
+	-	`sha256:13e6b7852016f57111da3ca352822d442dfdc22eb9980ba49203b59706ee4576`  
+		Last Modified: Thu, 03 Mar 2022 22:07:49 GMT  
+		Size: 4.7 KB (4664 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ed20500cec70deb6edc08e7d3e2371c5f3920979ae9cbf9860ff8d24bf4f10b`  
-		Last Modified: Tue, 01 Mar 2022 03:29:22 GMT  
-		Size: 260.0 B  
+	-	`sha256:2d275b03664493e721a357b916d31c41084058253b0c6f6a8d23c5d619fa0866`  
+		Last Modified: Thu, 03 Mar 2022 22:07:49 GMT  
+		Size: 261.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bfcbb865b8c31e8dc2e996e790cc7f23e13fbbd33f89a5e309ebba42b996b4aa`  
-		Last Modified: Tue, 01 Mar 2022 03:29:41 GMT  
-		Size: 133.5 MB (133471057 bytes)  
+	-	`sha256:023396e6df3576f4cf2ef794617e93a4fef06adfde200e85e8d9c85cabac8766`  
+		Last Modified: Thu, 03 Mar 2022 22:08:07 GMT  
+		Size: 133.5 MB (133471053 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af0f6d07ff1390a55397bed8e83868d6c12a4cb68370b86b79f84615f5935e2c`  
-		Last Modified: Tue, 01 Mar 2022 03:29:22 GMT  
-		Size: 169.0 B  
+	-	`sha256:1a81cce598e8e7e7f0457e38bc589c725011261ebbc7ff557d9c29a2fe936ed2`  
+		Last Modified: Thu, 03 Mar 2022 22:07:49 GMT  
+		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4d8973d3abd4d0ac3809b1682cf5814b6d2063e1ee6c77cab6f1bcf2039dbf5`  
-		Last Modified: Tue, 01 Mar 2022 03:29:22 GMT  
-		Size: 4.9 KB (4947 bytes)  
+	-	`sha256:5b446385c2f63d0349bbf29be1f1ba4632fc19142fb947b0b09708211e798102`  
+		Last Modified: Thu, 03 Mar 2022 22:07:49 GMT  
+		Size: 4.9 KB (4945 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:4.4-rc` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:a263c5442b912073197dca2828e2378f771072e8eab690feb030055111821966
+$ docker pull mongo@sha256:7ff2ba2f5e126cb3e16aee9ba7032e6e16a20aef9f21edc4db702506b0686e8e
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **166.7 MB (166717808 bytes)**  
+-	Total Size: **166.7 MB (166717202 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b0915ad0b5348d647abe6f067db0a6f9f8a8a504dd4b52b09bef454e9e2ba48a`
+-	Image ID: `sha256:cff7ffe48dbaa5cc8089a7e527300c38570b6e0c5f78191343b32220dfaa742e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 03:19:27 GMT
-ADD file:3acc741be29b0b58e44d7302ab5ce65bf65ea1b35922be58a2cee9cb708d006a in / 
-# Wed, 02 Feb 2022 03:19:27 GMT
+# Thu, 03 Mar 2022 19:41:02 GMT
+ADD file:f2fffe739729839aa17484bc4d79d33425549c5052824eac12131b16c23565d3 in / 
+# Thu, 03 Mar 2022 19:41:03 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 05:45:05 GMT
+# Thu, 03 Mar 2022 20:50:47 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 05:45:15 GMT
+# Thu, 03 Mar 2022 20:50:58 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 05:45:16 GMT
+# Thu, 03 Mar 2022 20:50:58 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 05:45:17 GMT
+# Thu, 03 Mar 2022 20:50:59 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 05:45:33 GMT
+# Thu, 03 Mar 2022 20:51:15 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 05:45:34 GMT
+# Thu, 03 Mar 2022 20:51:16 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:23:37 GMT
+# Thu, 03 Mar 2022 20:55:09 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- '20691EEC35216C63CAF66CE1656408E390CFB1F5' '9DA31620334BD75D9DCB49F368818C72E52529D4' 'E162F504A20CDF15827F718D4B7C549A058F8B6B' 'F5679A222C647C87527C2F8CB00A0BD1E2C63C11'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:23:38 GMT
+# Thu, 03 Mar 2022 20:55:10 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:23:39 GMT
+# Thu, 03 Mar 2022 20:55:11 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:23:40 GMT
+# Thu, 03 Mar 2022 20:55:12 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:23:41 GMT
+# Thu, 03 Mar 2022 20:55:13 GMT
 ENV MONGO_MAJOR=testing
-# Tue, 01 Mar 2022 03:23:42 GMT
+# Thu, 03 Mar 2022 20:55:14 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu focal/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:23:43 GMT
+# Thu, 03 Mar 2022 20:55:15 GMT
 ENV MONGO_VERSION=4.4.13~rc0
-# Tue, 01 Mar 2022 03:24:02 GMT
+# Thu, 03 Mar 2022 20:55:36 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:24:03 GMT
+# Thu, 03 Mar 2022 20:55:36 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:24:04 GMT
+# Thu, 03 Mar 2022 20:55:37 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:24:06 GMT
+# Thu, 03 Mar 2022 20:55:39 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:24:06 GMT
+# Thu, 03 Mar 2022 20:55:39 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:24:07 GMT
+# Thu, 03 Mar 2022 20:55:40 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:24:08 GMT
+# Thu, 03 Mar 2022 20:55:41 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:bbf2fb66fa6e06dd46eb26f518f93171ee7c48be68aafb213aa7c2c12f4018ca`  
-		Last Modified: Wed, 02 Feb 2022 03:21:24 GMT  
-		Size: 27.2 MB (27169640 bytes)  
+	-	`sha256:5a7855fb0d7ae372c824d9c76be5ad2f42ce178c1910fa54a8543036b5325fd5`  
+		Last Modified: Thu, 03 Mar 2022 19:42:38 GMT  
+		Size: 27.2 MB (27169631 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc29132329410addab1460dc8766c612d802fd087c89530850ee4fc3bfccb9d1`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
-		Size: 1.7 KB (1732 bytes)  
+	-	`sha256:93835005f83fca8d11e84de6d362cbdac541df8362e80c6a0172100f8b8a27ea`  
+		Last Modified: Thu, 03 Mar 2022 21:02:38 GMT  
+		Size: 1.7 KB (1728 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35d26e50b564fed7f08788d9db622ed591d1666d153ca9c6c7e44810cb4a95af`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
-		Size: 2.9 MB (2912189 bytes)  
+	-	`sha256:85b1c8f1aa262a4f9ecfc4a311235d079693056c9b47ac47c30478ac25c87e36`  
+		Last Modified: Thu, 03 Mar 2022 21:02:36 GMT  
+		Size: 2.9 MB (2912105 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e5a900b805d7561beb888f5130ab75e7a55960fba49790bc0e71dca4c6f1d00`  
-		Last Modified: Wed, 02 Feb 2022 05:50:26 GMT  
-		Size: 6.2 MB (6248507 bytes)  
+	-	`sha256:b9207ce7ec0ce748a22c1074f1471f694ca5a46ba77f3cb86f7485a9df75f492`  
+		Last Modified: Thu, 03 Mar 2022 21:02:36 GMT  
+		Size: 6.2 MB (6248075 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4bd55587e4b045a1d2bab13971a1045c2baa6952fcc7de26890851325cd5314`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
+	-	`sha256:a98a90fbda7bccfa543c5d402318d145dc64f2d3be60275c04a10ede986569ca`  
+		Last Modified: Thu, 03 Mar 2022 21:02:35 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb7059f12a8c49e727fb403c16d36a87201ac16fe834734358d107cab0c68c0d`  
-		Last Modified: Tue, 01 Mar 2022 03:30:34 GMT  
-		Size: 4.6 KB (4604 bytes)  
+	-	`sha256:c933d61467efb1abcd6f228b1149d82b3640729946d3b26687b4f4f205907860`  
+		Last Modified: Thu, 03 Mar 2022 21:03:21 GMT  
+		Size: 4.6 KB (4603 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4864d3f5b60ea4481ea4e66246d8df9e075dd81fbe84b18c2fe43ab3e16e2578`  
-		Last Modified: Tue, 01 Mar 2022 03:30:34 GMT  
-		Size: 261.0 B  
+	-	`sha256:657b5207929ed6f404461648af03fb4091bc74557fb4000292b6d9c2f7103370`  
+		Last Modified: Thu, 03 Mar 2022 21:03:22 GMT  
+		Size: 262.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:94495241f0fa7b591e9f483a9e39a737f3e6b7e6ce0d1402301e3946ca82218e`  
-		Last Modified: Tue, 01 Mar 2022 03:30:51 GMT  
-		Size: 130.4 MB (130375674 bytes)  
+	-	`sha256:a53da7e39e4cf79637641c206c8c4067fdc7fa856591395a0804f1bf48637f8e`  
+		Last Modified: Thu, 03 Mar 2022 21:03:39 GMT  
+		Size: 130.4 MB (130375599 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6db6d4abe3a33af22ac4ebebdec0786860ff81538f0f0ba79be032ffd1001ba2`  
-		Last Modified: Tue, 01 Mar 2022 03:30:34 GMT  
+	-	`sha256:8eae842acebc13f6ecfc69148c311c6f6a0fddc2efe0e20e7afaaaa756becaee`  
+		Last Modified: Thu, 03 Mar 2022 21:03:21 GMT  
 		Size: 138.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b1166ae963603461ab3884c2353c925035dbe6a8c2c22bc639ced9f6fef051e6`  
-		Last Modified: Tue, 01 Mar 2022 03:30:34 GMT  
-		Size: 4.9 KB (4948 bytes)  
+	-	`sha256:b257a90d6acf4bf036b577f247f1ac6f70d593031007c46fd9333558842f57f7`  
+		Last Modified: Thu, 03 Mar 2022 21:03:21 GMT  
+		Size: 4.9 KB (4946 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:4.4-rc` - windows version 10.0.20348.524; amd64
@@ -10864,7 +10864,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:4.4-rc-focal`
 
 ```console
-$ docker pull mongo@sha256:6a842381687780b95cb2315a664e3466a9c60fb5a02240bf80d2367f5ba4f10b
+$ docker pull mongo@sha256:092aed23bb755f0c00cb6229695bd7345c991006dff341cd376b6963c58ec316
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10875,207 +10875,207 @@ $ docker pull mongo@sha256:6a842381687780b95cb2315a664e3466a9c60fb5a02240bf80d23
 ### `mongo:4.4-rc-focal` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:b69870f70ff4f732589a78ec60ba08c122d996e987ba4989f9cdf76659024903
+$ docker pull mongo@sha256:97f7194c6bcd373c29624af9d8871919eb4c68245bc56f471873ca3e3d0df329
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **171.6 MB (171617282 bytes)**  
+-	Total Size: **171.6 MB (171618837 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:87ee506f88b8e0b83a932a9845c8b76d5a65d8ad5cc085fa7eff7657ccf456de`
+-	Image ID: `sha256:e95b956c8c5690c3a599e70bee74d4f7c3af00fcec26ca0a828aebf78739fc4a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 02:14:45 GMT
-ADD file:3ccf747d646089ed7fbb43c40c45dd43e86f0674115f856efada93c7e4a63624 in / 
-# Wed, 02 Feb 2022 02:14:46 GMT
+# Thu, 03 Mar 2022 20:19:33 GMT
+ADD file:8a50ad78a668527e974b05a3dfbfd64760de3cb643ceb8a8805d21f6ceab3389 in / 
+# Thu, 03 Mar 2022 20:19:33 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 03:53:54 GMT
+# Thu, 03 Mar 2022 21:57:21 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 03:54:12 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 03:54:12 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 03:54:13 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 03:54:24 GMT
+# Thu, 03 Mar 2022 21:57:46 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 03:54:25 GMT
+# Thu, 03 Mar 2022 21:57:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:25:12 GMT
+# Thu, 03 Mar 2022 22:01:19 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- '20691EEC35216C63CAF66CE1656408E390CFB1F5' '9DA31620334BD75D9DCB49F368818C72E52529D4' 'E162F504A20CDF15827F718D4B7C549A058F8B6B' 'F5679A222C647C87527C2F8CB00A0BD1E2C63C11'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:25:12 GMT
+# Thu, 03 Mar 2022 22:01:19 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:25:12 GMT
+# Thu, 03 Mar 2022 22:01:19 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:25:12 GMT
+# Thu, 03 Mar 2022 22:01:19 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:25:12 GMT
+# Thu, 03 Mar 2022 22:01:20 GMT
 ENV MONGO_MAJOR=testing
-# Tue, 01 Mar 2022 03:25:13 GMT
+# Thu, 03 Mar 2022 22:01:20 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu focal/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:25:13 GMT
+# Thu, 03 Mar 2022 22:01:20 GMT
 ENV MONGO_VERSION=4.4.13~rc0
-# Tue, 01 Mar 2022 03:25:31 GMT
+# Thu, 03 Mar 2022 22:01:39 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:25:32 GMT
+# Thu, 03 Mar 2022 22:01:41 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:25:32 GMT
+# Thu, 03 Mar 2022 22:01:41 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:25:32 GMT
+# Thu, 03 Mar 2022 22:01:41 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:25:32 GMT
+# Thu, 03 Mar 2022 22:01:41 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:25:32 GMT
+# Thu, 03 Mar 2022 22:01:41 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:25:32 GMT
+# Thu, 03 Mar 2022 22:01:41 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:08c01a0ec47e82ebe2bec112f373d160983a6d1e9e66627f66a3322bc403221b`  
-		Last Modified: Wed, 02 Feb 2022 02:16:20 GMT  
-		Size: 28.6 MB (28564099 bytes)  
+	-	`sha256:7c3b88808835aa80f1ef7f03083c5ae781d0f44e644537cd72de4ce6c5e62e00`  
+		Last Modified: Thu, 03 Mar 2022 20:20:44 GMT  
+		Size: 28.6 MB (28565751 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ceb608a7cda73cd80c28a22573e64e6778ba8d3cfbe6b03ed39213391a10e2a4`  
-		Last Modified: Wed, 02 Feb 2022 03:58:32 GMT  
-		Size: 1.8 KB (1750 bytes)  
+	-	`sha256:48a403577c28fafaf89a46590d69c237ae9fd5e576f96bf984e45ead657a3ef3`  
+		Last Modified: Thu, 03 Mar 2022 22:07:07 GMT  
+		Size: 1.7 KB (1748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a160d3e3934a135ad5c71555099d1fe85aab6f96d34b578a76ff52a95c22dd19`  
-		Last Modified: Wed, 02 Feb 2022 03:58:32 GMT  
-		Size: 3.1 MB (3064433 bytes)  
+	-	`sha256:76bbb7dc901383749cee88f0d357711cf7059ef51211c4725d60127a431d2844`  
+		Last Modified: Thu, 03 Mar 2022 22:07:08 GMT  
+		Size: 3.1 MB (3064492 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:544b729231207ba1a406ea8cbb2764717ea55ec68a2edd74bd992f0aed167184`  
-		Last Modified: Wed, 02 Feb 2022 03:58:33 GMT  
-		Size: 6.5 MB (6505756 bytes)  
+	-	`sha256:e81b1e5a386bad953e0fc4c4625bb63aea27c931f575e665730eea7fd4f373ad`  
+		Last Modified: Thu, 03 Mar 2022 22:07:08 GMT  
+		Size: 6.5 MB (6505604 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:812461eda79e980889ebf8fbb4bcc083ecae07e83d9dbec008a049a11c83198c`  
-		Last Modified: Wed, 02 Feb 2022 03:58:31 GMT  
+	-	`sha256:7bdc1db49ec948ae1977bbbf82bca00efce13bebbaf1aabbe5ec24e1b3c268db`  
+		Last Modified: Thu, 03 Mar 2022 22:07:07 GMT  
 		Size: 149.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80de6534152e3a6fe96836040798d932f60d7cec3d43b88c8942efeb13039650`  
-		Last Modified: Tue, 01 Mar 2022 03:29:22 GMT  
-		Size: 4.7 KB (4662 bytes)  
+	-	`sha256:13e6b7852016f57111da3ca352822d442dfdc22eb9980ba49203b59706ee4576`  
+		Last Modified: Thu, 03 Mar 2022 22:07:49 GMT  
+		Size: 4.7 KB (4664 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ed20500cec70deb6edc08e7d3e2371c5f3920979ae9cbf9860ff8d24bf4f10b`  
-		Last Modified: Tue, 01 Mar 2022 03:29:22 GMT  
-		Size: 260.0 B  
+	-	`sha256:2d275b03664493e721a357b916d31c41084058253b0c6f6a8d23c5d619fa0866`  
+		Last Modified: Thu, 03 Mar 2022 22:07:49 GMT  
+		Size: 261.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bfcbb865b8c31e8dc2e996e790cc7f23e13fbbd33f89a5e309ebba42b996b4aa`  
-		Last Modified: Tue, 01 Mar 2022 03:29:41 GMT  
-		Size: 133.5 MB (133471057 bytes)  
+	-	`sha256:023396e6df3576f4cf2ef794617e93a4fef06adfde200e85e8d9c85cabac8766`  
+		Last Modified: Thu, 03 Mar 2022 22:08:07 GMT  
+		Size: 133.5 MB (133471053 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af0f6d07ff1390a55397bed8e83868d6c12a4cb68370b86b79f84615f5935e2c`  
-		Last Modified: Tue, 01 Mar 2022 03:29:22 GMT  
-		Size: 169.0 B  
+	-	`sha256:1a81cce598e8e7e7f0457e38bc589c725011261ebbc7ff557d9c29a2fe936ed2`  
+		Last Modified: Thu, 03 Mar 2022 22:07:49 GMT  
+		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4d8973d3abd4d0ac3809b1682cf5814b6d2063e1ee6c77cab6f1bcf2039dbf5`  
-		Last Modified: Tue, 01 Mar 2022 03:29:22 GMT  
-		Size: 4.9 KB (4947 bytes)  
+	-	`sha256:5b446385c2f63d0349bbf29be1f1ba4632fc19142fb947b0b09708211e798102`  
+		Last Modified: Thu, 03 Mar 2022 22:07:49 GMT  
+		Size: 4.9 KB (4945 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:4.4-rc-focal` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:a263c5442b912073197dca2828e2378f771072e8eab690feb030055111821966
+$ docker pull mongo@sha256:7ff2ba2f5e126cb3e16aee9ba7032e6e16a20aef9f21edc4db702506b0686e8e
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **166.7 MB (166717808 bytes)**  
+-	Total Size: **166.7 MB (166717202 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b0915ad0b5348d647abe6f067db0a6f9f8a8a504dd4b52b09bef454e9e2ba48a`
+-	Image ID: `sha256:cff7ffe48dbaa5cc8089a7e527300c38570b6e0c5f78191343b32220dfaa742e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 03:19:27 GMT
-ADD file:3acc741be29b0b58e44d7302ab5ce65bf65ea1b35922be58a2cee9cb708d006a in / 
-# Wed, 02 Feb 2022 03:19:27 GMT
+# Thu, 03 Mar 2022 19:41:02 GMT
+ADD file:f2fffe739729839aa17484bc4d79d33425549c5052824eac12131b16c23565d3 in / 
+# Thu, 03 Mar 2022 19:41:03 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 05:45:05 GMT
+# Thu, 03 Mar 2022 20:50:47 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 05:45:15 GMT
+# Thu, 03 Mar 2022 20:50:58 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 05:45:16 GMT
+# Thu, 03 Mar 2022 20:50:58 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 05:45:17 GMT
+# Thu, 03 Mar 2022 20:50:59 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 05:45:33 GMT
+# Thu, 03 Mar 2022 20:51:15 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 05:45:34 GMT
+# Thu, 03 Mar 2022 20:51:16 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:23:37 GMT
+# Thu, 03 Mar 2022 20:55:09 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- '20691EEC35216C63CAF66CE1656408E390CFB1F5' '9DA31620334BD75D9DCB49F368818C72E52529D4' 'E162F504A20CDF15827F718D4B7C549A058F8B6B' 'F5679A222C647C87527C2F8CB00A0BD1E2C63C11'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:23:38 GMT
+# Thu, 03 Mar 2022 20:55:10 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:23:39 GMT
+# Thu, 03 Mar 2022 20:55:11 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:23:40 GMT
+# Thu, 03 Mar 2022 20:55:12 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:23:41 GMT
+# Thu, 03 Mar 2022 20:55:13 GMT
 ENV MONGO_MAJOR=testing
-# Tue, 01 Mar 2022 03:23:42 GMT
+# Thu, 03 Mar 2022 20:55:14 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu focal/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:23:43 GMT
+# Thu, 03 Mar 2022 20:55:15 GMT
 ENV MONGO_VERSION=4.4.13~rc0
-# Tue, 01 Mar 2022 03:24:02 GMT
+# Thu, 03 Mar 2022 20:55:36 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:24:03 GMT
+# Thu, 03 Mar 2022 20:55:36 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:24:04 GMT
+# Thu, 03 Mar 2022 20:55:37 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:24:06 GMT
+# Thu, 03 Mar 2022 20:55:39 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:24:06 GMT
+# Thu, 03 Mar 2022 20:55:39 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:24:07 GMT
+# Thu, 03 Mar 2022 20:55:40 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:24:08 GMT
+# Thu, 03 Mar 2022 20:55:41 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:bbf2fb66fa6e06dd46eb26f518f93171ee7c48be68aafb213aa7c2c12f4018ca`  
-		Last Modified: Wed, 02 Feb 2022 03:21:24 GMT  
-		Size: 27.2 MB (27169640 bytes)  
+	-	`sha256:5a7855fb0d7ae372c824d9c76be5ad2f42ce178c1910fa54a8543036b5325fd5`  
+		Last Modified: Thu, 03 Mar 2022 19:42:38 GMT  
+		Size: 27.2 MB (27169631 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc29132329410addab1460dc8766c612d802fd087c89530850ee4fc3bfccb9d1`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
-		Size: 1.7 KB (1732 bytes)  
+	-	`sha256:93835005f83fca8d11e84de6d362cbdac541df8362e80c6a0172100f8b8a27ea`  
+		Last Modified: Thu, 03 Mar 2022 21:02:38 GMT  
+		Size: 1.7 KB (1728 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35d26e50b564fed7f08788d9db622ed591d1666d153ca9c6c7e44810cb4a95af`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
-		Size: 2.9 MB (2912189 bytes)  
+	-	`sha256:85b1c8f1aa262a4f9ecfc4a311235d079693056c9b47ac47c30478ac25c87e36`  
+		Last Modified: Thu, 03 Mar 2022 21:02:36 GMT  
+		Size: 2.9 MB (2912105 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e5a900b805d7561beb888f5130ab75e7a55960fba49790bc0e71dca4c6f1d00`  
-		Last Modified: Wed, 02 Feb 2022 05:50:26 GMT  
-		Size: 6.2 MB (6248507 bytes)  
+	-	`sha256:b9207ce7ec0ce748a22c1074f1471f694ca5a46ba77f3cb86f7485a9df75f492`  
+		Last Modified: Thu, 03 Mar 2022 21:02:36 GMT  
+		Size: 6.2 MB (6248075 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4bd55587e4b045a1d2bab13971a1045c2baa6952fcc7de26890851325cd5314`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
+	-	`sha256:a98a90fbda7bccfa543c5d402318d145dc64f2d3be60275c04a10ede986569ca`  
+		Last Modified: Thu, 03 Mar 2022 21:02:35 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb7059f12a8c49e727fb403c16d36a87201ac16fe834734358d107cab0c68c0d`  
-		Last Modified: Tue, 01 Mar 2022 03:30:34 GMT  
-		Size: 4.6 KB (4604 bytes)  
+	-	`sha256:c933d61467efb1abcd6f228b1149d82b3640729946d3b26687b4f4f205907860`  
+		Last Modified: Thu, 03 Mar 2022 21:03:21 GMT  
+		Size: 4.6 KB (4603 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4864d3f5b60ea4481ea4e66246d8df9e075dd81fbe84b18c2fe43ab3e16e2578`  
-		Last Modified: Tue, 01 Mar 2022 03:30:34 GMT  
-		Size: 261.0 B  
+	-	`sha256:657b5207929ed6f404461648af03fb4091bc74557fb4000292b6d9c2f7103370`  
+		Last Modified: Thu, 03 Mar 2022 21:03:22 GMT  
+		Size: 262.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:94495241f0fa7b591e9f483a9e39a737f3e6b7e6ce0d1402301e3946ca82218e`  
-		Last Modified: Tue, 01 Mar 2022 03:30:51 GMT  
-		Size: 130.4 MB (130375674 bytes)  
+	-	`sha256:a53da7e39e4cf79637641c206c8c4067fdc7fa856591395a0804f1bf48637f8e`  
+		Last Modified: Thu, 03 Mar 2022 21:03:39 GMT  
+		Size: 130.4 MB (130375599 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6db6d4abe3a33af22ac4ebebdec0786860ff81538f0f0ba79be032ffd1001ba2`  
-		Last Modified: Tue, 01 Mar 2022 03:30:34 GMT  
+	-	`sha256:8eae842acebc13f6ecfc69148c311c6f6a0fddc2efe0e20e7afaaaa756becaee`  
+		Last Modified: Thu, 03 Mar 2022 21:03:21 GMT  
 		Size: 138.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b1166ae963603461ab3884c2353c925035dbe6a8c2c22bc639ced9f6fef051e6`  
-		Last Modified: Tue, 01 Mar 2022 03:30:34 GMT  
-		Size: 4.9 KB (4948 bytes)  
+	-	`sha256:b257a90d6acf4bf036b577f247f1ac6f70d593031007c46fd9333558842f57f7`  
+		Last Modified: Thu, 03 Mar 2022 21:03:21 GMT  
+		Size: 4.9 KB (4946 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:4.4-rc-nanoserver`
@@ -12150,7 +12150,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:4.4.12`
 
 ```console
-$ docker pull mongo@sha256:c9b6f62273fcdacf8b7aa8cd3d2e7edc69a6a9383e70c82bc8fe05d423bea738
+$ docker pull mongo@sha256:a9a9b095325f08a3057eeed0ba0b5c845e54187148dbeef0315f41065794ad32
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12163,206 +12163,206 @@ $ docker pull mongo@sha256:c9b6f62273fcdacf8b7aa8cd3d2e7edc69a6a9383e70c82bc8fe0
 ### `mongo:4.4.12` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:416345680d52c14e122f25723d6b0f800c33c8471781976bd86c6bcc2017ef00
+$ docker pull mongo@sha256:fb22042c0565e8bc8a0a6b3b1b94a4a4e623bb14d1a0df2f2d97aac2ff7c6cff
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **171.6 MB (171647417 bytes)**  
+-	Total Size: **171.6 MB (171648916 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5ccbc80e5f8e4b4885853522ecc8c47335eab2a0780d71c6f66bbc092050c72b`
+-	Image ID: `sha256:8a0504dec14a5bd64f02e6f8ba4ed0d29bec25281928f7c1511bf0b0ccb22430`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 02:14:45 GMT
-ADD file:3ccf747d646089ed7fbb43c40c45dd43e86f0674115f856efada93c7e4a63624 in / 
-# Wed, 02 Feb 2022 02:14:46 GMT
+# Thu, 03 Mar 2022 20:19:33 GMT
+ADD file:8a50ad78a668527e974b05a3dfbfd64760de3cb643ceb8a8805d21f6ceab3389 in / 
+# Thu, 03 Mar 2022 20:19:33 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 03:53:54 GMT
+# Thu, 03 Mar 2022 21:57:21 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 03:54:12 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 03:54:12 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 03:54:13 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 03:54:24 GMT
+# Thu, 03 Mar 2022 21:57:46 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 03:54:25 GMT
+# Thu, 03 Mar 2022 21:57:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:25:38 GMT
+# Thu, 03 Mar 2022 22:02:27 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- '20691EEC35216C63CAF66CE1656408E390CFB1F5'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:25:38 GMT
+# Thu, 03 Mar 2022 22:02:27 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:25:38 GMT
+# Thu, 03 Mar 2022 22:02:27 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:25:38 GMT
+# Thu, 03 Mar 2022 22:02:27 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:25:39 GMT
+# Thu, 03 Mar 2022 22:02:27 GMT
 ENV MONGO_MAJOR=4.4
-# Tue, 01 Mar 2022 03:25:39 GMT
+# Thu, 03 Mar 2022 22:02:28 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu focal/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:25:39 GMT
+# Thu, 03 Mar 2022 22:02:28 GMT
 ENV MONGO_VERSION=4.4.12
-# Tue, 01 Mar 2022 03:25:57 GMT
+# Thu, 03 Mar 2022 22:02:44 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:25:58 GMT
+# Thu, 03 Mar 2022 22:02:45 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:25:58 GMT
+# Thu, 03 Mar 2022 22:02:45 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:25:58 GMT
+# Thu, 03 Mar 2022 22:02:45 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:25:59 GMT
+# Thu, 03 Mar 2022 22:02:45 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:25:59 GMT
+# Thu, 03 Mar 2022 22:02:46 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:25:59 GMT
+# Thu, 03 Mar 2022 22:02:46 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:08c01a0ec47e82ebe2bec112f373d160983a6d1e9e66627f66a3322bc403221b`  
-		Last Modified: Wed, 02 Feb 2022 02:16:20 GMT  
-		Size: 28.6 MB (28564099 bytes)  
+	-	`sha256:7c3b88808835aa80f1ef7f03083c5ae781d0f44e644537cd72de4ce6c5e62e00`  
+		Last Modified: Thu, 03 Mar 2022 20:20:44 GMT  
+		Size: 28.6 MB (28565751 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ceb608a7cda73cd80c28a22573e64e6778ba8d3cfbe6b03ed39213391a10e2a4`  
-		Last Modified: Wed, 02 Feb 2022 03:58:32 GMT  
-		Size: 1.8 KB (1750 bytes)  
+	-	`sha256:48a403577c28fafaf89a46590d69c237ae9fd5e576f96bf984e45ead657a3ef3`  
+		Last Modified: Thu, 03 Mar 2022 22:07:07 GMT  
+		Size: 1.7 KB (1748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a160d3e3934a135ad5c71555099d1fe85aab6f96d34b578a76ff52a95c22dd19`  
-		Last Modified: Wed, 02 Feb 2022 03:58:32 GMT  
-		Size: 3.1 MB (3064433 bytes)  
+	-	`sha256:76bbb7dc901383749cee88f0d357711cf7059ef51211c4725d60127a431d2844`  
+		Last Modified: Thu, 03 Mar 2022 22:07:08 GMT  
+		Size: 3.1 MB (3064492 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:544b729231207ba1a406ea8cbb2764717ea55ec68a2edd74bd992f0aed167184`  
-		Last Modified: Wed, 02 Feb 2022 03:58:33 GMT  
-		Size: 6.5 MB (6505756 bytes)  
+	-	`sha256:e81b1e5a386bad953e0fc4c4625bb63aea27c931f575e665730eea7fd4f373ad`  
+		Last Modified: Thu, 03 Mar 2022 22:07:08 GMT  
+		Size: 6.5 MB (6505604 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:812461eda79e980889ebf8fbb4bcc083ecae07e83d9dbec008a049a11c83198c`  
-		Last Modified: Wed, 02 Feb 2022 03:58:31 GMT  
+	-	`sha256:7bdc1db49ec948ae1977bbbf82bca00efce13bebbaf1aabbe5ec24e1b3c268db`  
+		Last Modified: Thu, 03 Mar 2022 22:07:07 GMT  
 		Size: 149.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cd6b9907740cbfbee3e3970e5e8298f9b9fb36b2ae04437a131c74183d43154e`  
-		Last Modified: Tue, 01 Mar 2022 03:29:50 GMT  
-		Size: 1.4 KB (1444 bytes)  
+	-	`sha256:9a57632a805191d98f7e8f0c11680166d5c0890f6e79f245572af4d2b243ea68`  
+		Last Modified: Thu, 03 Mar 2022 22:08:17 GMT  
+		Size: 1.4 KB (1445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:836655000c375bb076915e5af942a76840a15bb10863f4684d32d8cee56e628a`  
-		Last Modified: Tue, 01 Mar 2022 03:29:50 GMT  
-		Size: 259.0 B  
+	-	`sha256:5bdd30561f8402b3e6137cec2f5ef8ac61936588be7f436109e263e9a383b9cd`  
+		Last Modified: Thu, 03 Mar 2022 22:08:17 GMT  
+		Size: 257.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:abcc554bf4affcfe5694f38e0adb14ce41dc7ba692c2bccae2fbefd6fee1856f`  
-		Last Modified: Tue, 01 Mar 2022 03:30:09 GMT  
-		Size: 133.5 MB (133504410 bytes)  
+	-	`sha256:e7f3d307166feab0ac9eafce991dc503ad85f0665335f423260d9a890b6a73ba`  
+		Last Modified: Thu, 03 Mar 2022 22:08:34 GMT  
+		Size: 133.5 MB (133504355 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:808ba618f652943c5b41bbdb951afcd3805114d1bdcb83c61e82fc9c8d7deebc`  
-		Last Modified: Tue, 01 Mar 2022 03:29:50 GMT  
+	-	`sha256:36db699d28f0349c8e924ed2cc9bac7c94a1987fb8071831e49246c8f8b56a82`  
+		Last Modified: Thu, 03 Mar 2022 22:08:17 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:797e11761fdbd9c267dfc3e62b138d6385f2c3e72d13ffde0275f81cdfe7828d`  
-		Last Modified: Tue, 01 Mar 2022 03:29:50 GMT  
-		Size: 4.9 KB (4948 bytes)  
+	-	`sha256:b69893e2ea1ea3c7f53c3d9cbab570fe0ae6c4095b2ee5340b348c7078ae11e7`  
+		Last Modified: Thu, 03 Mar 2022 22:08:17 GMT  
+		Size: 4.9 KB (4946 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:4.4.12` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:e78e550570cfd84d293da54bb39bb9139fc91251a82a7969f2f41ca18267fa79
+$ docker pull mongo@sha256:d67a46d75bafff8172fc28eb5c9f524341a179c816c440f0ecd95fdbf677d255
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **166.7 MB (166738075 bytes)**  
+-	Total Size: **166.7 MB (166737437 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4920f12930f3d5b8d45f6e554eda6ced50eff7f5c8803c119491341379521443`
+-	Image ID: `sha256:9c0d0746961895653f090a96ea69f13ad91b9537e0509894798279cd12eed42e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 03:19:27 GMT
-ADD file:3acc741be29b0b58e44d7302ab5ce65bf65ea1b35922be58a2cee9cb708d006a in / 
-# Wed, 02 Feb 2022 03:19:27 GMT
+# Thu, 03 Mar 2022 19:41:02 GMT
+ADD file:f2fffe739729839aa17484bc4d79d33425549c5052824eac12131b16c23565d3 in / 
+# Thu, 03 Mar 2022 19:41:03 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 05:45:05 GMT
+# Thu, 03 Mar 2022 20:50:47 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 05:45:15 GMT
+# Thu, 03 Mar 2022 20:50:58 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 05:45:16 GMT
+# Thu, 03 Mar 2022 20:50:58 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 05:45:17 GMT
+# Thu, 03 Mar 2022 20:50:59 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 05:45:33 GMT
+# Thu, 03 Mar 2022 20:51:15 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 05:45:34 GMT
+# Thu, 03 Mar 2022 20:51:16 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 20:56:17 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- '20691EEC35216C63CAF66CE1656408E390CFB1F5'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 20:56:18 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:24:47 GMT
+# Thu, 03 Mar 2022 20:56:19 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:24:48 GMT
+# Thu, 03 Mar 2022 20:56:20 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:24:49 GMT
+# Thu, 03 Mar 2022 20:56:21 GMT
 ENV MONGO_MAJOR=4.4
-# Tue, 01 Mar 2022 03:24:50 GMT
+# Thu, 03 Mar 2022 20:56:22 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu focal/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:24:51 GMT
+# Thu, 03 Mar 2022 20:56:23 GMT
 ENV MONGO_VERSION=4.4.12
-# Tue, 01 Mar 2022 03:25:11 GMT
+# Thu, 03 Mar 2022 20:56:44 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:25:12 GMT
+# Thu, 03 Mar 2022 20:56:45 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:25:13 GMT
+# Thu, 03 Mar 2022 20:56:45 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:25:15 GMT
+# Thu, 03 Mar 2022 20:56:47 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:25:15 GMT
+# Thu, 03 Mar 2022 20:56:47 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:25:16 GMT
+# Thu, 03 Mar 2022 20:56:48 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:25:17 GMT
+# Thu, 03 Mar 2022 20:56:49 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:bbf2fb66fa6e06dd46eb26f518f93171ee7c48be68aafb213aa7c2c12f4018ca`  
-		Last Modified: Wed, 02 Feb 2022 03:21:24 GMT  
-		Size: 27.2 MB (27169640 bytes)  
+	-	`sha256:5a7855fb0d7ae372c824d9c76be5ad2f42ce178c1910fa54a8543036b5325fd5`  
+		Last Modified: Thu, 03 Mar 2022 19:42:38 GMT  
+		Size: 27.2 MB (27169631 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc29132329410addab1460dc8766c612d802fd087c89530850ee4fc3bfccb9d1`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
-		Size: 1.7 KB (1732 bytes)  
+	-	`sha256:93835005f83fca8d11e84de6d362cbdac541df8362e80c6a0172100f8b8a27ea`  
+		Last Modified: Thu, 03 Mar 2022 21:02:38 GMT  
+		Size: 1.7 KB (1728 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35d26e50b564fed7f08788d9db622ed591d1666d153ca9c6c7e44810cb4a95af`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
-		Size: 2.9 MB (2912189 bytes)  
+	-	`sha256:85b1c8f1aa262a4f9ecfc4a311235d079693056c9b47ac47c30478ac25c87e36`  
+		Last Modified: Thu, 03 Mar 2022 21:02:36 GMT  
+		Size: 2.9 MB (2912105 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e5a900b805d7561beb888f5130ab75e7a55960fba49790bc0e71dca4c6f1d00`  
-		Last Modified: Wed, 02 Feb 2022 05:50:26 GMT  
-		Size: 6.2 MB (6248507 bytes)  
+	-	`sha256:b9207ce7ec0ce748a22c1074f1471f694ca5a46ba77f3cb86f7485a9df75f492`  
+		Last Modified: Thu, 03 Mar 2022 21:02:36 GMT  
+		Size: 6.2 MB (6248075 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4bd55587e4b045a1d2bab13971a1045c2baa6952fcc7de26890851325cd5314`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
+	-	`sha256:a98a90fbda7bccfa543c5d402318d145dc64f2d3be60275c04a10ede986569ca`  
+		Last Modified: Thu, 03 Mar 2022 21:02:35 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ef21e2c8a7834c9104f0fb769ffedf9431a2d775d4ab950971f7e19d6b3f8536`  
-		Last Modified: Tue, 01 Mar 2022 03:31:04 GMT  
+	-	`sha256:a94ad0a7969a63e63fb47cf96c863c73a133bbe21dde534a12a6b1a2ecd4620e`  
+		Last Modified: Thu, 03 Mar 2022 21:03:50 GMT  
 		Size: 1.4 KB (1394 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:556797adee15ab44c08b3b8fc1a8882fd3f26198751e65f52214d6b31c5650a2`  
-		Last Modified: Tue, 01 Mar 2022 03:31:04 GMT  
-		Size: 261.0 B  
+	-	`sha256:e37c7fdc11f381659d5069d1336bd38bb17ccbcd73c5b735a62c79b49ccf936c`  
+		Last Modified: Thu, 03 Mar 2022 21:03:50 GMT  
+		Size: 260.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2fbcc7a6ef34d71a057d29611ee205e746aca5067834430149df186f7368a480`  
-		Last Modified: Tue, 01 Mar 2022 03:31:21 GMT  
-		Size: 130.4 MB (130399151 bytes)  
+	-	`sha256:51c308f81850382890e0b55f68c3b70437f530f76f0e9f2b646799422481ec20`  
+		Last Modified: Thu, 03 Mar 2022 21:04:06 GMT  
+		Size: 130.4 MB (130399044 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc15bdbfa8c7223c94140a7f4c17c7c8d3ce4876dea0facef17f114cba73e19a`  
-		Last Modified: Tue, 01 Mar 2022 03:31:05 GMT  
-		Size: 139.0 B  
+	-	`sha256:f7e63de29dad3e70eb299a298507a27d383d9630453b71d29cd20300e1f5e6b1`  
+		Last Modified: Thu, 03 Mar 2022 21:03:50 GMT  
+		Size: 138.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:12a20655125ac8b9d96142455cdf2363e80a3c073f579a7624e41c2a4a466c3a`  
-		Last Modified: Tue, 01 Mar 2022 03:31:04 GMT  
+	-	`sha256:0046fa0e8522005a884540fdec479070f3c8b1ed1efd0bb9851b75a46b0c6993`  
+		Last Modified: Thu, 03 Mar 2022 21:03:50 GMT  
 		Size: 4.9 KB (4947 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -12523,7 +12523,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:4.4.12-focal`
 
 ```console
-$ docker pull mongo@sha256:81232b17a10ff514dbc118c7cb8ac5116eeb15e59e19454edd1e7a6a4baf1f80
+$ docker pull mongo@sha256:27783a99236a51abd3225f48b7e111232dc1c934e613614e73f309b34b5a312f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12534,206 +12534,206 @@ $ docker pull mongo@sha256:81232b17a10ff514dbc118c7cb8ac5116eeb15e59e19454edd1e7
 ### `mongo:4.4.12-focal` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:416345680d52c14e122f25723d6b0f800c33c8471781976bd86c6bcc2017ef00
+$ docker pull mongo@sha256:fb22042c0565e8bc8a0a6b3b1b94a4a4e623bb14d1a0df2f2d97aac2ff7c6cff
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **171.6 MB (171647417 bytes)**  
+-	Total Size: **171.6 MB (171648916 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5ccbc80e5f8e4b4885853522ecc8c47335eab2a0780d71c6f66bbc092050c72b`
+-	Image ID: `sha256:8a0504dec14a5bd64f02e6f8ba4ed0d29bec25281928f7c1511bf0b0ccb22430`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 02:14:45 GMT
-ADD file:3ccf747d646089ed7fbb43c40c45dd43e86f0674115f856efada93c7e4a63624 in / 
-# Wed, 02 Feb 2022 02:14:46 GMT
+# Thu, 03 Mar 2022 20:19:33 GMT
+ADD file:8a50ad78a668527e974b05a3dfbfd64760de3cb643ceb8a8805d21f6ceab3389 in / 
+# Thu, 03 Mar 2022 20:19:33 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 03:53:54 GMT
+# Thu, 03 Mar 2022 21:57:21 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 03:54:12 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 03:54:12 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 03:54:13 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 03:54:24 GMT
+# Thu, 03 Mar 2022 21:57:46 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 03:54:25 GMT
+# Thu, 03 Mar 2022 21:57:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:25:38 GMT
+# Thu, 03 Mar 2022 22:02:27 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- '20691EEC35216C63CAF66CE1656408E390CFB1F5'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:25:38 GMT
+# Thu, 03 Mar 2022 22:02:27 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:25:38 GMT
+# Thu, 03 Mar 2022 22:02:27 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:25:38 GMT
+# Thu, 03 Mar 2022 22:02:27 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:25:39 GMT
+# Thu, 03 Mar 2022 22:02:27 GMT
 ENV MONGO_MAJOR=4.4
-# Tue, 01 Mar 2022 03:25:39 GMT
+# Thu, 03 Mar 2022 22:02:28 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu focal/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:25:39 GMT
+# Thu, 03 Mar 2022 22:02:28 GMT
 ENV MONGO_VERSION=4.4.12
-# Tue, 01 Mar 2022 03:25:57 GMT
+# Thu, 03 Mar 2022 22:02:44 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:25:58 GMT
+# Thu, 03 Mar 2022 22:02:45 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:25:58 GMT
+# Thu, 03 Mar 2022 22:02:45 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:25:58 GMT
+# Thu, 03 Mar 2022 22:02:45 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:25:59 GMT
+# Thu, 03 Mar 2022 22:02:45 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:25:59 GMT
+# Thu, 03 Mar 2022 22:02:46 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:25:59 GMT
+# Thu, 03 Mar 2022 22:02:46 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:08c01a0ec47e82ebe2bec112f373d160983a6d1e9e66627f66a3322bc403221b`  
-		Last Modified: Wed, 02 Feb 2022 02:16:20 GMT  
-		Size: 28.6 MB (28564099 bytes)  
+	-	`sha256:7c3b88808835aa80f1ef7f03083c5ae781d0f44e644537cd72de4ce6c5e62e00`  
+		Last Modified: Thu, 03 Mar 2022 20:20:44 GMT  
+		Size: 28.6 MB (28565751 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ceb608a7cda73cd80c28a22573e64e6778ba8d3cfbe6b03ed39213391a10e2a4`  
-		Last Modified: Wed, 02 Feb 2022 03:58:32 GMT  
-		Size: 1.8 KB (1750 bytes)  
+	-	`sha256:48a403577c28fafaf89a46590d69c237ae9fd5e576f96bf984e45ead657a3ef3`  
+		Last Modified: Thu, 03 Mar 2022 22:07:07 GMT  
+		Size: 1.7 KB (1748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a160d3e3934a135ad5c71555099d1fe85aab6f96d34b578a76ff52a95c22dd19`  
-		Last Modified: Wed, 02 Feb 2022 03:58:32 GMT  
-		Size: 3.1 MB (3064433 bytes)  
+	-	`sha256:76bbb7dc901383749cee88f0d357711cf7059ef51211c4725d60127a431d2844`  
+		Last Modified: Thu, 03 Mar 2022 22:07:08 GMT  
+		Size: 3.1 MB (3064492 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:544b729231207ba1a406ea8cbb2764717ea55ec68a2edd74bd992f0aed167184`  
-		Last Modified: Wed, 02 Feb 2022 03:58:33 GMT  
-		Size: 6.5 MB (6505756 bytes)  
+	-	`sha256:e81b1e5a386bad953e0fc4c4625bb63aea27c931f575e665730eea7fd4f373ad`  
+		Last Modified: Thu, 03 Mar 2022 22:07:08 GMT  
+		Size: 6.5 MB (6505604 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:812461eda79e980889ebf8fbb4bcc083ecae07e83d9dbec008a049a11c83198c`  
-		Last Modified: Wed, 02 Feb 2022 03:58:31 GMT  
+	-	`sha256:7bdc1db49ec948ae1977bbbf82bca00efce13bebbaf1aabbe5ec24e1b3c268db`  
+		Last Modified: Thu, 03 Mar 2022 22:07:07 GMT  
 		Size: 149.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cd6b9907740cbfbee3e3970e5e8298f9b9fb36b2ae04437a131c74183d43154e`  
-		Last Modified: Tue, 01 Mar 2022 03:29:50 GMT  
-		Size: 1.4 KB (1444 bytes)  
+	-	`sha256:9a57632a805191d98f7e8f0c11680166d5c0890f6e79f245572af4d2b243ea68`  
+		Last Modified: Thu, 03 Mar 2022 22:08:17 GMT  
+		Size: 1.4 KB (1445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:836655000c375bb076915e5af942a76840a15bb10863f4684d32d8cee56e628a`  
-		Last Modified: Tue, 01 Mar 2022 03:29:50 GMT  
-		Size: 259.0 B  
+	-	`sha256:5bdd30561f8402b3e6137cec2f5ef8ac61936588be7f436109e263e9a383b9cd`  
+		Last Modified: Thu, 03 Mar 2022 22:08:17 GMT  
+		Size: 257.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:abcc554bf4affcfe5694f38e0adb14ce41dc7ba692c2bccae2fbefd6fee1856f`  
-		Last Modified: Tue, 01 Mar 2022 03:30:09 GMT  
-		Size: 133.5 MB (133504410 bytes)  
+	-	`sha256:e7f3d307166feab0ac9eafce991dc503ad85f0665335f423260d9a890b6a73ba`  
+		Last Modified: Thu, 03 Mar 2022 22:08:34 GMT  
+		Size: 133.5 MB (133504355 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:808ba618f652943c5b41bbdb951afcd3805114d1bdcb83c61e82fc9c8d7deebc`  
-		Last Modified: Tue, 01 Mar 2022 03:29:50 GMT  
+	-	`sha256:36db699d28f0349c8e924ed2cc9bac7c94a1987fb8071831e49246c8f8b56a82`  
+		Last Modified: Thu, 03 Mar 2022 22:08:17 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:797e11761fdbd9c267dfc3e62b138d6385f2c3e72d13ffde0275f81cdfe7828d`  
-		Last Modified: Tue, 01 Mar 2022 03:29:50 GMT  
-		Size: 4.9 KB (4948 bytes)  
+	-	`sha256:b69893e2ea1ea3c7f53c3d9cbab570fe0ae6c4095b2ee5340b348c7078ae11e7`  
+		Last Modified: Thu, 03 Mar 2022 22:08:17 GMT  
+		Size: 4.9 KB (4946 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:4.4.12-focal` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:e78e550570cfd84d293da54bb39bb9139fc91251a82a7969f2f41ca18267fa79
+$ docker pull mongo@sha256:d67a46d75bafff8172fc28eb5c9f524341a179c816c440f0ecd95fdbf677d255
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **166.7 MB (166738075 bytes)**  
+-	Total Size: **166.7 MB (166737437 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4920f12930f3d5b8d45f6e554eda6ced50eff7f5c8803c119491341379521443`
+-	Image ID: `sha256:9c0d0746961895653f090a96ea69f13ad91b9537e0509894798279cd12eed42e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 03:19:27 GMT
-ADD file:3acc741be29b0b58e44d7302ab5ce65bf65ea1b35922be58a2cee9cb708d006a in / 
-# Wed, 02 Feb 2022 03:19:27 GMT
+# Thu, 03 Mar 2022 19:41:02 GMT
+ADD file:f2fffe739729839aa17484bc4d79d33425549c5052824eac12131b16c23565d3 in / 
+# Thu, 03 Mar 2022 19:41:03 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 05:45:05 GMT
+# Thu, 03 Mar 2022 20:50:47 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 05:45:15 GMT
+# Thu, 03 Mar 2022 20:50:58 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 05:45:16 GMT
+# Thu, 03 Mar 2022 20:50:58 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 05:45:17 GMT
+# Thu, 03 Mar 2022 20:50:59 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 05:45:33 GMT
+# Thu, 03 Mar 2022 20:51:15 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 05:45:34 GMT
+# Thu, 03 Mar 2022 20:51:16 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 20:56:17 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- '20691EEC35216C63CAF66CE1656408E390CFB1F5'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 20:56:18 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:24:47 GMT
+# Thu, 03 Mar 2022 20:56:19 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:24:48 GMT
+# Thu, 03 Mar 2022 20:56:20 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:24:49 GMT
+# Thu, 03 Mar 2022 20:56:21 GMT
 ENV MONGO_MAJOR=4.4
-# Tue, 01 Mar 2022 03:24:50 GMT
+# Thu, 03 Mar 2022 20:56:22 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu focal/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:24:51 GMT
+# Thu, 03 Mar 2022 20:56:23 GMT
 ENV MONGO_VERSION=4.4.12
-# Tue, 01 Mar 2022 03:25:11 GMT
+# Thu, 03 Mar 2022 20:56:44 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:25:12 GMT
+# Thu, 03 Mar 2022 20:56:45 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:25:13 GMT
+# Thu, 03 Mar 2022 20:56:45 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:25:15 GMT
+# Thu, 03 Mar 2022 20:56:47 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:25:15 GMT
+# Thu, 03 Mar 2022 20:56:47 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:25:16 GMT
+# Thu, 03 Mar 2022 20:56:48 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:25:17 GMT
+# Thu, 03 Mar 2022 20:56:49 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:bbf2fb66fa6e06dd46eb26f518f93171ee7c48be68aafb213aa7c2c12f4018ca`  
-		Last Modified: Wed, 02 Feb 2022 03:21:24 GMT  
-		Size: 27.2 MB (27169640 bytes)  
+	-	`sha256:5a7855fb0d7ae372c824d9c76be5ad2f42ce178c1910fa54a8543036b5325fd5`  
+		Last Modified: Thu, 03 Mar 2022 19:42:38 GMT  
+		Size: 27.2 MB (27169631 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc29132329410addab1460dc8766c612d802fd087c89530850ee4fc3bfccb9d1`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
-		Size: 1.7 KB (1732 bytes)  
+	-	`sha256:93835005f83fca8d11e84de6d362cbdac541df8362e80c6a0172100f8b8a27ea`  
+		Last Modified: Thu, 03 Mar 2022 21:02:38 GMT  
+		Size: 1.7 KB (1728 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35d26e50b564fed7f08788d9db622ed591d1666d153ca9c6c7e44810cb4a95af`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
-		Size: 2.9 MB (2912189 bytes)  
+	-	`sha256:85b1c8f1aa262a4f9ecfc4a311235d079693056c9b47ac47c30478ac25c87e36`  
+		Last Modified: Thu, 03 Mar 2022 21:02:36 GMT  
+		Size: 2.9 MB (2912105 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e5a900b805d7561beb888f5130ab75e7a55960fba49790bc0e71dca4c6f1d00`  
-		Last Modified: Wed, 02 Feb 2022 05:50:26 GMT  
-		Size: 6.2 MB (6248507 bytes)  
+	-	`sha256:b9207ce7ec0ce748a22c1074f1471f694ca5a46ba77f3cb86f7485a9df75f492`  
+		Last Modified: Thu, 03 Mar 2022 21:02:36 GMT  
+		Size: 6.2 MB (6248075 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4bd55587e4b045a1d2bab13971a1045c2baa6952fcc7de26890851325cd5314`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
+	-	`sha256:a98a90fbda7bccfa543c5d402318d145dc64f2d3be60275c04a10ede986569ca`  
+		Last Modified: Thu, 03 Mar 2022 21:02:35 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ef21e2c8a7834c9104f0fb769ffedf9431a2d775d4ab950971f7e19d6b3f8536`  
-		Last Modified: Tue, 01 Mar 2022 03:31:04 GMT  
+	-	`sha256:a94ad0a7969a63e63fb47cf96c863c73a133bbe21dde534a12a6b1a2ecd4620e`  
+		Last Modified: Thu, 03 Mar 2022 21:03:50 GMT  
 		Size: 1.4 KB (1394 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:556797adee15ab44c08b3b8fc1a8882fd3f26198751e65f52214d6b31c5650a2`  
-		Last Modified: Tue, 01 Mar 2022 03:31:04 GMT  
-		Size: 261.0 B  
+	-	`sha256:e37c7fdc11f381659d5069d1336bd38bb17ccbcd73c5b735a62c79b49ccf936c`  
+		Last Modified: Thu, 03 Mar 2022 21:03:50 GMT  
+		Size: 260.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2fbcc7a6ef34d71a057d29611ee205e746aca5067834430149df186f7368a480`  
-		Last Modified: Tue, 01 Mar 2022 03:31:21 GMT  
-		Size: 130.4 MB (130399151 bytes)  
+	-	`sha256:51c308f81850382890e0b55f68c3b70437f530f76f0e9f2b646799422481ec20`  
+		Last Modified: Thu, 03 Mar 2022 21:04:06 GMT  
+		Size: 130.4 MB (130399044 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc15bdbfa8c7223c94140a7f4c17c7c8d3ce4876dea0facef17f114cba73e19a`  
-		Last Modified: Tue, 01 Mar 2022 03:31:05 GMT  
-		Size: 139.0 B  
+	-	`sha256:f7e63de29dad3e70eb299a298507a27d383d9630453b71d29cd20300e1f5e6b1`  
+		Last Modified: Thu, 03 Mar 2022 21:03:50 GMT  
+		Size: 138.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:12a20655125ac8b9d96142455cdf2363e80a3c073f579a7624e41c2a4a466c3a`  
-		Last Modified: Tue, 01 Mar 2022 03:31:04 GMT  
+	-	`sha256:0046fa0e8522005a884540fdec479070f3c8b1ed1efd0bb9851b75a46b0c6993`  
+		Last Modified: Thu, 03 Mar 2022 21:03:50 GMT  
 		Size: 4.9 KB (4947 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -13470,7 +13470,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:4.4.13-rc0`
 
 ```console
-$ docker pull mongo@sha256:2d0610641bd764000910608932109c53f3c8651ba21a7d2b326460f17fe11535
+$ docker pull mongo@sha256:67c74a1e778e0d148392d40c0312e05fb126502417b6bf08f2ba1b85862b9d29
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13483,207 +13483,207 @@ $ docker pull mongo@sha256:2d0610641bd764000910608932109c53f3c8651ba21a7d2b32646
 ### `mongo:4.4.13-rc0` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:b69870f70ff4f732589a78ec60ba08c122d996e987ba4989f9cdf76659024903
+$ docker pull mongo@sha256:97f7194c6bcd373c29624af9d8871919eb4c68245bc56f471873ca3e3d0df329
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **171.6 MB (171617282 bytes)**  
+-	Total Size: **171.6 MB (171618837 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:87ee506f88b8e0b83a932a9845c8b76d5a65d8ad5cc085fa7eff7657ccf456de`
+-	Image ID: `sha256:e95b956c8c5690c3a599e70bee74d4f7c3af00fcec26ca0a828aebf78739fc4a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 02:14:45 GMT
-ADD file:3ccf747d646089ed7fbb43c40c45dd43e86f0674115f856efada93c7e4a63624 in / 
-# Wed, 02 Feb 2022 02:14:46 GMT
+# Thu, 03 Mar 2022 20:19:33 GMT
+ADD file:8a50ad78a668527e974b05a3dfbfd64760de3cb643ceb8a8805d21f6ceab3389 in / 
+# Thu, 03 Mar 2022 20:19:33 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 03:53:54 GMT
+# Thu, 03 Mar 2022 21:57:21 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 03:54:12 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 03:54:12 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 03:54:13 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 03:54:24 GMT
+# Thu, 03 Mar 2022 21:57:46 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 03:54:25 GMT
+# Thu, 03 Mar 2022 21:57:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:25:12 GMT
+# Thu, 03 Mar 2022 22:01:19 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- '20691EEC35216C63CAF66CE1656408E390CFB1F5' '9DA31620334BD75D9DCB49F368818C72E52529D4' 'E162F504A20CDF15827F718D4B7C549A058F8B6B' 'F5679A222C647C87527C2F8CB00A0BD1E2C63C11'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:25:12 GMT
+# Thu, 03 Mar 2022 22:01:19 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:25:12 GMT
+# Thu, 03 Mar 2022 22:01:19 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:25:12 GMT
+# Thu, 03 Mar 2022 22:01:19 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:25:12 GMT
+# Thu, 03 Mar 2022 22:01:20 GMT
 ENV MONGO_MAJOR=testing
-# Tue, 01 Mar 2022 03:25:13 GMT
+# Thu, 03 Mar 2022 22:01:20 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu focal/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:25:13 GMT
+# Thu, 03 Mar 2022 22:01:20 GMT
 ENV MONGO_VERSION=4.4.13~rc0
-# Tue, 01 Mar 2022 03:25:31 GMT
+# Thu, 03 Mar 2022 22:01:39 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:25:32 GMT
+# Thu, 03 Mar 2022 22:01:41 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:25:32 GMT
+# Thu, 03 Mar 2022 22:01:41 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:25:32 GMT
+# Thu, 03 Mar 2022 22:01:41 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:25:32 GMT
+# Thu, 03 Mar 2022 22:01:41 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:25:32 GMT
+# Thu, 03 Mar 2022 22:01:41 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:25:32 GMT
+# Thu, 03 Mar 2022 22:01:41 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:08c01a0ec47e82ebe2bec112f373d160983a6d1e9e66627f66a3322bc403221b`  
-		Last Modified: Wed, 02 Feb 2022 02:16:20 GMT  
-		Size: 28.6 MB (28564099 bytes)  
+	-	`sha256:7c3b88808835aa80f1ef7f03083c5ae781d0f44e644537cd72de4ce6c5e62e00`  
+		Last Modified: Thu, 03 Mar 2022 20:20:44 GMT  
+		Size: 28.6 MB (28565751 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ceb608a7cda73cd80c28a22573e64e6778ba8d3cfbe6b03ed39213391a10e2a4`  
-		Last Modified: Wed, 02 Feb 2022 03:58:32 GMT  
-		Size: 1.8 KB (1750 bytes)  
+	-	`sha256:48a403577c28fafaf89a46590d69c237ae9fd5e576f96bf984e45ead657a3ef3`  
+		Last Modified: Thu, 03 Mar 2022 22:07:07 GMT  
+		Size: 1.7 KB (1748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a160d3e3934a135ad5c71555099d1fe85aab6f96d34b578a76ff52a95c22dd19`  
-		Last Modified: Wed, 02 Feb 2022 03:58:32 GMT  
-		Size: 3.1 MB (3064433 bytes)  
+	-	`sha256:76bbb7dc901383749cee88f0d357711cf7059ef51211c4725d60127a431d2844`  
+		Last Modified: Thu, 03 Mar 2022 22:07:08 GMT  
+		Size: 3.1 MB (3064492 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:544b729231207ba1a406ea8cbb2764717ea55ec68a2edd74bd992f0aed167184`  
-		Last Modified: Wed, 02 Feb 2022 03:58:33 GMT  
-		Size: 6.5 MB (6505756 bytes)  
+	-	`sha256:e81b1e5a386bad953e0fc4c4625bb63aea27c931f575e665730eea7fd4f373ad`  
+		Last Modified: Thu, 03 Mar 2022 22:07:08 GMT  
+		Size: 6.5 MB (6505604 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:812461eda79e980889ebf8fbb4bcc083ecae07e83d9dbec008a049a11c83198c`  
-		Last Modified: Wed, 02 Feb 2022 03:58:31 GMT  
+	-	`sha256:7bdc1db49ec948ae1977bbbf82bca00efce13bebbaf1aabbe5ec24e1b3c268db`  
+		Last Modified: Thu, 03 Mar 2022 22:07:07 GMT  
 		Size: 149.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80de6534152e3a6fe96836040798d932f60d7cec3d43b88c8942efeb13039650`  
-		Last Modified: Tue, 01 Mar 2022 03:29:22 GMT  
-		Size: 4.7 KB (4662 bytes)  
+	-	`sha256:13e6b7852016f57111da3ca352822d442dfdc22eb9980ba49203b59706ee4576`  
+		Last Modified: Thu, 03 Mar 2022 22:07:49 GMT  
+		Size: 4.7 KB (4664 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ed20500cec70deb6edc08e7d3e2371c5f3920979ae9cbf9860ff8d24bf4f10b`  
-		Last Modified: Tue, 01 Mar 2022 03:29:22 GMT  
-		Size: 260.0 B  
+	-	`sha256:2d275b03664493e721a357b916d31c41084058253b0c6f6a8d23c5d619fa0866`  
+		Last Modified: Thu, 03 Mar 2022 22:07:49 GMT  
+		Size: 261.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bfcbb865b8c31e8dc2e996e790cc7f23e13fbbd33f89a5e309ebba42b996b4aa`  
-		Last Modified: Tue, 01 Mar 2022 03:29:41 GMT  
-		Size: 133.5 MB (133471057 bytes)  
+	-	`sha256:023396e6df3576f4cf2ef794617e93a4fef06adfde200e85e8d9c85cabac8766`  
+		Last Modified: Thu, 03 Mar 2022 22:08:07 GMT  
+		Size: 133.5 MB (133471053 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af0f6d07ff1390a55397bed8e83868d6c12a4cb68370b86b79f84615f5935e2c`  
-		Last Modified: Tue, 01 Mar 2022 03:29:22 GMT  
-		Size: 169.0 B  
+	-	`sha256:1a81cce598e8e7e7f0457e38bc589c725011261ebbc7ff557d9c29a2fe936ed2`  
+		Last Modified: Thu, 03 Mar 2022 22:07:49 GMT  
+		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4d8973d3abd4d0ac3809b1682cf5814b6d2063e1ee6c77cab6f1bcf2039dbf5`  
-		Last Modified: Tue, 01 Mar 2022 03:29:22 GMT  
-		Size: 4.9 KB (4947 bytes)  
+	-	`sha256:5b446385c2f63d0349bbf29be1f1ba4632fc19142fb947b0b09708211e798102`  
+		Last Modified: Thu, 03 Mar 2022 22:07:49 GMT  
+		Size: 4.9 KB (4945 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:4.4.13-rc0` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:a263c5442b912073197dca2828e2378f771072e8eab690feb030055111821966
+$ docker pull mongo@sha256:7ff2ba2f5e126cb3e16aee9ba7032e6e16a20aef9f21edc4db702506b0686e8e
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **166.7 MB (166717808 bytes)**  
+-	Total Size: **166.7 MB (166717202 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b0915ad0b5348d647abe6f067db0a6f9f8a8a504dd4b52b09bef454e9e2ba48a`
+-	Image ID: `sha256:cff7ffe48dbaa5cc8089a7e527300c38570b6e0c5f78191343b32220dfaa742e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 03:19:27 GMT
-ADD file:3acc741be29b0b58e44d7302ab5ce65bf65ea1b35922be58a2cee9cb708d006a in / 
-# Wed, 02 Feb 2022 03:19:27 GMT
+# Thu, 03 Mar 2022 19:41:02 GMT
+ADD file:f2fffe739729839aa17484bc4d79d33425549c5052824eac12131b16c23565d3 in / 
+# Thu, 03 Mar 2022 19:41:03 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 05:45:05 GMT
+# Thu, 03 Mar 2022 20:50:47 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 05:45:15 GMT
+# Thu, 03 Mar 2022 20:50:58 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 05:45:16 GMT
+# Thu, 03 Mar 2022 20:50:58 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 05:45:17 GMT
+# Thu, 03 Mar 2022 20:50:59 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 05:45:33 GMT
+# Thu, 03 Mar 2022 20:51:15 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 05:45:34 GMT
+# Thu, 03 Mar 2022 20:51:16 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:23:37 GMT
+# Thu, 03 Mar 2022 20:55:09 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- '20691EEC35216C63CAF66CE1656408E390CFB1F5' '9DA31620334BD75D9DCB49F368818C72E52529D4' 'E162F504A20CDF15827F718D4B7C549A058F8B6B' 'F5679A222C647C87527C2F8CB00A0BD1E2C63C11'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:23:38 GMT
+# Thu, 03 Mar 2022 20:55:10 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:23:39 GMT
+# Thu, 03 Mar 2022 20:55:11 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:23:40 GMT
+# Thu, 03 Mar 2022 20:55:12 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:23:41 GMT
+# Thu, 03 Mar 2022 20:55:13 GMT
 ENV MONGO_MAJOR=testing
-# Tue, 01 Mar 2022 03:23:42 GMT
+# Thu, 03 Mar 2022 20:55:14 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu focal/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:23:43 GMT
+# Thu, 03 Mar 2022 20:55:15 GMT
 ENV MONGO_VERSION=4.4.13~rc0
-# Tue, 01 Mar 2022 03:24:02 GMT
+# Thu, 03 Mar 2022 20:55:36 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:24:03 GMT
+# Thu, 03 Mar 2022 20:55:36 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:24:04 GMT
+# Thu, 03 Mar 2022 20:55:37 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:24:06 GMT
+# Thu, 03 Mar 2022 20:55:39 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:24:06 GMT
+# Thu, 03 Mar 2022 20:55:39 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:24:07 GMT
+# Thu, 03 Mar 2022 20:55:40 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:24:08 GMT
+# Thu, 03 Mar 2022 20:55:41 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:bbf2fb66fa6e06dd46eb26f518f93171ee7c48be68aafb213aa7c2c12f4018ca`  
-		Last Modified: Wed, 02 Feb 2022 03:21:24 GMT  
-		Size: 27.2 MB (27169640 bytes)  
+	-	`sha256:5a7855fb0d7ae372c824d9c76be5ad2f42ce178c1910fa54a8543036b5325fd5`  
+		Last Modified: Thu, 03 Mar 2022 19:42:38 GMT  
+		Size: 27.2 MB (27169631 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc29132329410addab1460dc8766c612d802fd087c89530850ee4fc3bfccb9d1`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
-		Size: 1.7 KB (1732 bytes)  
+	-	`sha256:93835005f83fca8d11e84de6d362cbdac541df8362e80c6a0172100f8b8a27ea`  
+		Last Modified: Thu, 03 Mar 2022 21:02:38 GMT  
+		Size: 1.7 KB (1728 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35d26e50b564fed7f08788d9db622ed591d1666d153ca9c6c7e44810cb4a95af`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
-		Size: 2.9 MB (2912189 bytes)  
+	-	`sha256:85b1c8f1aa262a4f9ecfc4a311235d079693056c9b47ac47c30478ac25c87e36`  
+		Last Modified: Thu, 03 Mar 2022 21:02:36 GMT  
+		Size: 2.9 MB (2912105 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e5a900b805d7561beb888f5130ab75e7a55960fba49790bc0e71dca4c6f1d00`  
-		Last Modified: Wed, 02 Feb 2022 05:50:26 GMT  
-		Size: 6.2 MB (6248507 bytes)  
+	-	`sha256:b9207ce7ec0ce748a22c1074f1471f694ca5a46ba77f3cb86f7485a9df75f492`  
+		Last Modified: Thu, 03 Mar 2022 21:02:36 GMT  
+		Size: 6.2 MB (6248075 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4bd55587e4b045a1d2bab13971a1045c2baa6952fcc7de26890851325cd5314`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
+	-	`sha256:a98a90fbda7bccfa543c5d402318d145dc64f2d3be60275c04a10ede986569ca`  
+		Last Modified: Thu, 03 Mar 2022 21:02:35 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb7059f12a8c49e727fb403c16d36a87201ac16fe834734358d107cab0c68c0d`  
-		Last Modified: Tue, 01 Mar 2022 03:30:34 GMT  
-		Size: 4.6 KB (4604 bytes)  
+	-	`sha256:c933d61467efb1abcd6f228b1149d82b3640729946d3b26687b4f4f205907860`  
+		Last Modified: Thu, 03 Mar 2022 21:03:21 GMT  
+		Size: 4.6 KB (4603 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4864d3f5b60ea4481ea4e66246d8df9e075dd81fbe84b18c2fe43ab3e16e2578`  
-		Last Modified: Tue, 01 Mar 2022 03:30:34 GMT  
-		Size: 261.0 B  
+	-	`sha256:657b5207929ed6f404461648af03fb4091bc74557fb4000292b6d9c2f7103370`  
+		Last Modified: Thu, 03 Mar 2022 21:03:22 GMT  
+		Size: 262.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:94495241f0fa7b591e9f483a9e39a737f3e6b7e6ce0d1402301e3946ca82218e`  
-		Last Modified: Tue, 01 Mar 2022 03:30:51 GMT  
-		Size: 130.4 MB (130375674 bytes)  
+	-	`sha256:a53da7e39e4cf79637641c206c8c4067fdc7fa856591395a0804f1bf48637f8e`  
+		Last Modified: Thu, 03 Mar 2022 21:03:39 GMT  
+		Size: 130.4 MB (130375599 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6db6d4abe3a33af22ac4ebebdec0786860ff81538f0f0ba79be032ffd1001ba2`  
-		Last Modified: Tue, 01 Mar 2022 03:30:34 GMT  
+	-	`sha256:8eae842acebc13f6ecfc69148c311c6f6a0fddc2efe0e20e7afaaaa756becaee`  
+		Last Modified: Thu, 03 Mar 2022 21:03:21 GMT  
 		Size: 138.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b1166ae963603461ab3884c2353c925035dbe6a8c2c22bc639ced9f6fef051e6`  
-		Last Modified: Tue, 01 Mar 2022 03:30:34 GMT  
-		Size: 4.9 KB (4948 bytes)  
+	-	`sha256:b257a90d6acf4bf036b577f247f1ac6f70d593031007c46fd9333558842f57f7`  
+		Last Modified: Thu, 03 Mar 2022 21:03:21 GMT  
+		Size: 4.9 KB (4946 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:4.4.13-rc0` - windows version 10.0.20348.524; amd64
@@ -13843,7 +13843,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:4.4.13-rc0-focal`
 
 ```console
-$ docker pull mongo@sha256:6a842381687780b95cb2315a664e3466a9c60fb5a02240bf80d2367f5ba4f10b
+$ docker pull mongo@sha256:092aed23bb755f0c00cb6229695bd7345c991006dff341cd376b6963c58ec316
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13854,207 +13854,207 @@ $ docker pull mongo@sha256:6a842381687780b95cb2315a664e3466a9c60fb5a02240bf80d23
 ### `mongo:4.4.13-rc0-focal` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:b69870f70ff4f732589a78ec60ba08c122d996e987ba4989f9cdf76659024903
+$ docker pull mongo@sha256:97f7194c6bcd373c29624af9d8871919eb4c68245bc56f471873ca3e3d0df329
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **171.6 MB (171617282 bytes)**  
+-	Total Size: **171.6 MB (171618837 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:87ee506f88b8e0b83a932a9845c8b76d5a65d8ad5cc085fa7eff7657ccf456de`
+-	Image ID: `sha256:e95b956c8c5690c3a599e70bee74d4f7c3af00fcec26ca0a828aebf78739fc4a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 02:14:45 GMT
-ADD file:3ccf747d646089ed7fbb43c40c45dd43e86f0674115f856efada93c7e4a63624 in / 
-# Wed, 02 Feb 2022 02:14:46 GMT
+# Thu, 03 Mar 2022 20:19:33 GMT
+ADD file:8a50ad78a668527e974b05a3dfbfd64760de3cb643ceb8a8805d21f6ceab3389 in / 
+# Thu, 03 Mar 2022 20:19:33 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 03:53:54 GMT
+# Thu, 03 Mar 2022 21:57:21 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 03:54:12 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 03:54:12 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 03:54:13 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 03:54:24 GMT
+# Thu, 03 Mar 2022 21:57:46 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 03:54:25 GMT
+# Thu, 03 Mar 2022 21:57:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:25:12 GMT
+# Thu, 03 Mar 2022 22:01:19 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- '20691EEC35216C63CAF66CE1656408E390CFB1F5' '9DA31620334BD75D9DCB49F368818C72E52529D4' 'E162F504A20CDF15827F718D4B7C549A058F8B6B' 'F5679A222C647C87527C2F8CB00A0BD1E2C63C11'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:25:12 GMT
+# Thu, 03 Mar 2022 22:01:19 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:25:12 GMT
+# Thu, 03 Mar 2022 22:01:19 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:25:12 GMT
+# Thu, 03 Mar 2022 22:01:19 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:25:12 GMT
+# Thu, 03 Mar 2022 22:01:20 GMT
 ENV MONGO_MAJOR=testing
-# Tue, 01 Mar 2022 03:25:13 GMT
+# Thu, 03 Mar 2022 22:01:20 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu focal/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:25:13 GMT
+# Thu, 03 Mar 2022 22:01:20 GMT
 ENV MONGO_VERSION=4.4.13~rc0
-# Tue, 01 Mar 2022 03:25:31 GMT
+# Thu, 03 Mar 2022 22:01:39 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:25:32 GMT
+# Thu, 03 Mar 2022 22:01:41 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:25:32 GMT
+# Thu, 03 Mar 2022 22:01:41 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:25:32 GMT
+# Thu, 03 Mar 2022 22:01:41 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:25:32 GMT
+# Thu, 03 Mar 2022 22:01:41 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:25:32 GMT
+# Thu, 03 Mar 2022 22:01:41 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:25:32 GMT
+# Thu, 03 Mar 2022 22:01:41 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:08c01a0ec47e82ebe2bec112f373d160983a6d1e9e66627f66a3322bc403221b`  
-		Last Modified: Wed, 02 Feb 2022 02:16:20 GMT  
-		Size: 28.6 MB (28564099 bytes)  
+	-	`sha256:7c3b88808835aa80f1ef7f03083c5ae781d0f44e644537cd72de4ce6c5e62e00`  
+		Last Modified: Thu, 03 Mar 2022 20:20:44 GMT  
+		Size: 28.6 MB (28565751 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ceb608a7cda73cd80c28a22573e64e6778ba8d3cfbe6b03ed39213391a10e2a4`  
-		Last Modified: Wed, 02 Feb 2022 03:58:32 GMT  
-		Size: 1.8 KB (1750 bytes)  
+	-	`sha256:48a403577c28fafaf89a46590d69c237ae9fd5e576f96bf984e45ead657a3ef3`  
+		Last Modified: Thu, 03 Mar 2022 22:07:07 GMT  
+		Size: 1.7 KB (1748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a160d3e3934a135ad5c71555099d1fe85aab6f96d34b578a76ff52a95c22dd19`  
-		Last Modified: Wed, 02 Feb 2022 03:58:32 GMT  
-		Size: 3.1 MB (3064433 bytes)  
+	-	`sha256:76bbb7dc901383749cee88f0d357711cf7059ef51211c4725d60127a431d2844`  
+		Last Modified: Thu, 03 Mar 2022 22:07:08 GMT  
+		Size: 3.1 MB (3064492 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:544b729231207ba1a406ea8cbb2764717ea55ec68a2edd74bd992f0aed167184`  
-		Last Modified: Wed, 02 Feb 2022 03:58:33 GMT  
-		Size: 6.5 MB (6505756 bytes)  
+	-	`sha256:e81b1e5a386bad953e0fc4c4625bb63aea27c931f575e665730eea7fd4f373ad`  
+		Last Modified: Thu, 03 Mar 2022 22:07:08 GMT  
+		Size: 6.5 MB (6505604 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:812461eda79e980889ebf8fbb4bcc083ecae07e83d9dbec008a049a11c83198c`  
-		Last Modified: Wed, 02 Feb 2022 03:58:31 GMT  
+	-	`sha256:7bdc1db49ec948ae1977bbbf82bca00efce13bebbaf1aabbe5ec24e1b3c268db`  
+		Last Modified: Thu, 03 Mar 2022 22:07:07 GMT  
 		Size: 149.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80de6534152e3a6fe96836040798d932f60d7cec3d43b88c8942efeb13039650`  
-		Last Modified: Tue, 01 Mar 2022 03:29:22 GMT  
-		Size: 4.7 KB (4662 bytes)  
+	-	`sha256:13e6b7852016f57111da3ca352822d442dfdc22eb9980ba49203b59706ee4576`  
+		Last Modified: Thu, 03 Mar 2022 22:07:49 GMT  
+		Size: 4.7 KB (4664 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ed20500cec70deb6edc08e7d3e2371c5f3920979ae9cbf9860ff8d24bf4f10b`  
-		Last Modified: Tue, 01 Mar 2022 03:29:22 GMT  
-		Size: 260.0 B  
+	-	`sha256:2d275b03664493e721a357b916d31c41084058253b0c6f6a8d23c5d619fa0866`  
+		Last Modified: Thu, 03 Mar 2022 22:07:49 GMT  
+		Size: 261.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bfcbb865b8c31e8dc2e996e790cc7f23e13fbbd33f89a5e309ebba42b996b4aa`  
-		Last Modified: Tue, 01 Mar 2022 03:29:41 GMT  
-		Size: 133.5 MB (133471057 bytes)  
+	-	`sha256:023396e6df3576f4cf2ef794617e93a4fef06adfde200e85e8d9c85cabac8766`  
+		Last Modified: Thu, 03 Mar 2022 22:08:07 GMT  
+		Size: 133.5 MB (133471053 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af0f6d07ff1390a55397bed8e83868d6c12a4cb68370b86b79f84615f5935e2c`  
-		Last Modified: Tue, 01 Mar 2022 03:29:22 GMT  
-		Size: 169.0 B  
+	-	`sha256:1a81cce598e8e7e7f0457e38bc589c725011261ebbc7ff557d9c29a2fe936ed2`  
+		Last Modified: Thu, 03 Mar 2022 22:07:49 GMT  
+		Size: 170.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4d8973d3abd4d0ac3809b1682cf5814b6d2063e1ee6c77cab6f1bcf2039dbf5`  
-		Last Modified: Tue, 01 Mar 2022 03:29:22 GMT  
-		Size: 4.9 KB (4947 bytes)  
+	-	`sha256:5b446385c2f63d0349bbf29be1f1ba4632fc19142fb947b0b09708211e798102`  
+		Last Modified: Thu, 03 Mar 2022 22:07:49 GMT  
+		Size: 4.9 KB (4945 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:4.4.13-rc0-focal` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:a263c5442b912073197dca2828e2378f771072e8eab690feb030055111821966
+$ docker pull mongo@sha256:7ff2ba2f5e126cb3e16aee9ba7032e6e16a20aef9f21edc4db702506b0686e8e
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **166.7 MB (166717808 bytes)**  
+-	Total Size: **166.7 MB (166717202 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b0915ad0b5348d647abe6f067db0a6f9f8a8a504dd4b52b09bef454e9e2ba48a`
+-	Image ID: `sha256:cff7ffe48dbaa5cc8089a7e527300c38570b6e0c5f78191343b32220dfaa742e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 03:19:27 GMT
-ADD file:3acc741be29b0b58e44d7302ab5ce65bf65ea1b35922be58a2cee9cb708d006a in / 
-# Wed, 02 Feb 2022 03:19:27 GMT
+# Thu, 03 Mar 2022 19:41:02 GMT
+ADD file:f2fffe739729839aa17484bc4d79d33425549c5052824eac12131b16c23565d3 in / 
+# Thu, 03 Mar 2022 19:41:03 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 05:45:05 GMT
+# Thu, 03 Mar 2022 20:50:47 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 05:45:15 GMT
+# Thu, 03 Mar 2022 20:50:58 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 05:45:16 GMT
+# Thu, 03 Mar 2022 20:50:58 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 05:45:17 GMT
+# Thu, 03 Mar 2022 20:50:59 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 05:45:33 GMT
+# Thu, 03 Mar 2022 20:51:15 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 05:45:34 GMT
+# Thu, 03 Mar 2022 20:51:16 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:23:37 GMT
+# Thu, 03 Mar 2022 20:55:09 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- '20691EEC35216C63CAF66CE1656408E390CFB1F5' '9DA31620334BD75D9DCB49F368818C72E52529D4' 'E162F504A20CDF15827F718D4B7C549A058F8B6B' 'F5679A222C647C87527C2F8CB00A0BD1E2C63C11'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:23:38 GMT
+# Thu, 03 Mar 2022 20:55:10 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:23:39 GMT
+# Thu, 03 Mar 2022 20:55:11 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:23:40 GMT
+# Thu, 03 Mar 2022 20:55:12 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:23:41 GMT
+# Thu, 03 Mar 2022 20:55:13 GMT
 ENV MONGO_MAJOR=testing
-# Tue, 01 Mar 2022 03:23:42 GMT
+# Thu, 03 Mar 2022 20:55:14 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu focal/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:23:43 GMT
+# Thu, 03 Mar 2022 20:55:15 GMT
 ENV MONGO_VERSION=4.4.13~rc0
-# Tue, 01 Mar 2022 03:24:02 GMT
+# Thu, 03 Mar 2022 20:55:36 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:24:03 GMT
+# Thu, 03 Mar 2022 20:55:36 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:24:04 GMT
+# Thu, 03 Mar 2022 20:55:37 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:24:06 GMT
+# Thu, 03 Mar 2022 20:55:39 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:24:06 GMT
+# Thu, 03 Mar 2022 20:55:39 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:24:07 GMT
+# Thu, 03 Mar 2022 20:55:40 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:24:08 GMT
+# Thu, 03 Mar 2022 20:55:41 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:bbf2fb66fa6e06dd46eb26f518f93171ee7c48be68aafb213aa7c2c12f4018ca`  
-		Last Modified: Wed, 02 Feb 2022 03:21:24 GMT  
-		Size: 27.2 MB (27169640 bytes)  
+	-	`sha256:5a7855fb0d7ae372c824d9c76be5ad2f42ce178c1910fa54a8543036b5325fd5`  
+		Last Modified: Thu, 03 Mar 2022 19:42:38 GMT  
+		Size: 27.2 MB (27169631 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc29132329410addab1460dc8766c612d802fd087c89530850ee4fc3bfccb9d1`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
-		Size: 1.7 KB (1732 bytes)  
+	-	`sha256:93835005f83fca8d11e84de6d362cbdac541df8362e80c6a0172100f8b8a27ea`  
+		Last Modified: Thu, 03 Mar 2022 21:02:38 GMT  
+		Size: 1.7 KB (1728 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35d26e50b564fed7f08788d9db622ed591d1666d153ca9c6c7e44810cb4a95af`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
-		Size: 2.9 MB (2912189 bytes)  
+	-	`sha256:85b1c8f1aa262a4f9ecfc4a311235d079693056c9b47ac47c30478ac25c87e36`  
+		Last Modified: Thu, 03 Mar 2022 21:02:36 GMT  
+		Size: 2.9 MB (2912105 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e5a900b805d7561beb888f5130ab75e7a55960fba49790bc0e71dca4c6f1d00`  
-		Last Modified: Wed, 02 Feb 2022 05:50:26 GMT  
-		Size: 6.2 MB (6248507 bytes)  
+	-	`sha256:b9207ce7ec0ce748a22c1074f1471f694ca5a46ba77f3cb86f7485a9df75f492`  
+		Last Modified: Thu, 03 Mar 2022 21:02:36 GMT  
+		Size: 6.2 MB (6248075 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4bd55587e4b045a1d2bab13971a1045c2baa6952fcc7de26890851325cd5314`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
+	-	`sha256:a98a90fbda7bccfa543c5d402318d145dc64f2d3be60275c04a10ede986569ca`  
+		Last Modified: Thu, 03 Mar 2022 21:02:35 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb7059f12a8c49e727fb403c16d36a87201ac16fe834734358d107cab0c68c0d`  
-		Last Modified: Tue, 01 Mar 2022 03:30:34 GMT  
-		Size: 4.6 KB (4604 bytes)  
+	-	`sha256:c933d61467efb1abcd6f228b1149d82b3640729946d3b26687b4f4f205907860`  
+		Last Modified: Thu, 03 Mar 2022 21:03:21 GMT  
+		Size: 4.6 KB (4603 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4864d3f5b60ea4481ea4e66246d8df9e075dd81fbe84b18c2fe43ab3e16e2578`  
-		Last Modified: Tue, 01 Mar 2022 03:30:34 GMT  
-		Size: 261.0 B  
+	-	`sha256:657b5207929ed6f404461648af03fb4091bc74557fb4000292b6d9c2f7103370`  
+		Last Modified: Thu, 03 Mar 2022 21:03:22 GMT  
+		Size: 262.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:94495241f0fa7b591e9f483a9e39a737f3e6b7e6ce0d1402301e3946ca82218e`  
-		Last Modified: Tue, 01 Mar 2022 03:30:51 GMT  
-		Size: 130.4 MB (130375674 bytes)  
+	-	`sha256:a53da7e39e4cf79637641c206c8c4067fdc7fa856591395a0804f1bf48637f8e`  
+		Last Modified: Thu, 03 Mar 2022 21:03:39 GMT  
+		Size: 130.4 MB (130375599 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6db6d4abe3a33af22ac4ebebdec0786860ff81538f0f0ba79be032ffd1001ba2`  
-		Last Modified: Tue, 01 Mar 2022 03:30:34 GMT  
+	-	`sha256:8eae842acebc13f6ecfc69148c311c6f6a0fddc2efe0e20e7afaaaa756becaee`  
+		Last Modified: Thu, 03 Mar 2022 21:03:21 GMT  
 		Size: 138.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b1166ae963603461ab3884c2353c925035dbe6a8c2c22bc639ced9f6fef051e6`  
-		Last Modified: Tue, 01 Mar 2022 03:30:34 GMT  
-		Size: 4.9 KB (4948 bytes)  
+	-	`sha256:b257a90d6acf4bf036b577f247f1ac6f70d593031007c46fd9333558842f57f7`  
+		Last Modified: Thu, 03 Mar 2022 21:03:21 GMT  
+		Size: 4.9 KB (4946 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:4.4.13-rc0-nanoserver`
@@ -14790,7 +14790,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:5`
 
 ```console
-$ docker pull mongo@sha256:1334cc689aec65d29af23a14b00c743c43343c442435aaa903abbb6369804d85
+$ docker pull mongo@sha256:b0abf19259902648be5ac17479dd4c65e037c3292c9eb09181f087687bca5102
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14803,207 +14803,207 @@ $ docker pull mongo@sha256:1334cc689aec65d29af23a14b00c743c43343c442435aaa903abb
 ### `mongo:5` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:fbf49dc17d6c75efbe0fce975ff783291e715fefd7a07490f1ec58630cc3db2a
+$ docker pull mongo@sha256:d1e3b724d514ed8df7f73ee175057160bde1c9cf3a85536e5e96161f40e8cf63
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **248.9 MB (248868547 bytes)**  
+-	Total Size: **248.9 MB (248870002 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2785fff65421d6b0915f7e72e9a3f8683afcee046f887078dad1e8172f8f1506`
+-	Image ID: `sha256:cb2388d1f0a57b9111045828faffacb618474b114e12c1de67f96f2bbd97ebe6`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 02:14:45 GMT
-ADD file:3ccf747d646089ed7fbb43c40c45dd43e86f0674115f856efada93c7e4a63624 in / 
-# Wed, 02 Feb 2022 02:14:46 GMT
+# Thu, 03 Mar 2022 20:19:33 GMT
+ADD file:8a50ad78a668527e974b05a3dfbfd64760de3cb643ceb8a8805d21f6ceab3389 in / 
+# Thu, 03 Mar 2022 20:19:33 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 03:53:54 GMT
+# Thu, 03 Mar 2022 21:57:21 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 03:54:12 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 03:54:12 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 03:54:13 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 03:54:24 GMT
+# Thu, 03 Mar 2022 21:57:46 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 03:54:25 GMT
+# Thu, 03 Mar 2022 21:57:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:24:02 GMT
+# Thu, 03 Mar 2022 21:58:22 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- 'F5679A222C647C87527C2F8CB00A0BD1E2C63C11'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:24:02 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:24:02 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:24:02 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:24:02 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 ENV MONGO_MAJOR=5.0
-# Tue, 01 Mar 2022 03:24:03 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu focal/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:24:03 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 ENV MONGO_VERSION=5.0.6
-# Tue, 01 Mar 2022 03:24:44 GMT
+# Thu, 03 Mar 2022 21:58:49 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:24:47 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:08c01a0ec47e82ebe2bec112f373d160983a6d1e9e66627f66a3322bc403221b`  
-		Last Modified: Wed, 02 Feb 2022 02:16:20 GMT  
-		Size: 28.6 MB (28564099 bytes)  
+	-	`sha256:7c3b88808835aa80f1ef7f03083c5ae781d0f44e644537cd72de4ce6c5e62e00`  
+		Last Modified: Thu, 03 Mar 2022 20:20:44 GMT  
+		Size: 28.6 MB (28565751 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ceb608a7cda73cd80c28a22573e64e6778ba8d3cfbe6b03ed39213391a10e2a4`  
-		Last Modified: Wed, 02 Feb 2022 03:58:32 GMT  
-		Size: 1.8 KB (1750 bytes)  
+	-	`sha256:48a403577c28fafaf89a46590d69c237ae9fd5e576f96bf984e45ead657a3ef3`  
+		Last Modified: Thu, 03 Mar 2022 22:07:07 GMT  
+		Size: 1.7 KB (1748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a160d3e3934a135ad5c71555099d1fe85aab6f96d34b578a76ff52a95c22dd19`  
-		Last Modified: Wed, 02 Feb 2022 03:58:32 GMT  
-		Size: 3.1 MB (3064433 bytes)  
+	-	`sha256:76bbb7dc901383749cee88f0d357711cf7059ef51211c4725d60127a431d2844`  
+		Last Modified: Thu, 03 Mar 2022 22:07:08 GMT  
+		Size: 3.1 MB (3064492 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:544b729231207ba1a406ea8cbb2764717ea55ec68a2edd74bd992f0aed167184`  
-		Last Modified: Wed, 02 Feb 2022 03:58:33 GMT  
-		Size: 6.5 MB (6505756 bytes)  
+	-	`sha256:e81b1e5a386bad953e0fc4c4625bb63aea27c931f575e665730eea7fd4f373ad`  
+		Last Modified: Thu, 03 Mar 2022 22:07:08 GMT  
+		Size: 6.5 MB (6505604 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:812461eda79e980889ebf8fbb4bcc083ecae07e83d9dbec008a049a11c83198c`  
-		Last Modified: Wed, 02 Feb 2022 03:58:31 GMT  
+	-	`sha256:7bdc1db49ec948ae1977bbbf82bca00efce13bebbaf1aabbe5ec24e1b3c268db`  
+		Last Modified: Thu, 03 Mar 2022 22:07:07 GMT  
 		Size: 149.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b06b719289f340d721f73d74afa1897ddb844e6ac715310507b397848ca00bf5`  
-		Last Modified: Tue, 01 Mar 2022 03:28:37 GMT  
+	-	`sha256:7b2f602f894c906b6b36c7b1fff4333658756e4f4837e21ded39c2d244c49405`  
+		Last Modified: Thu, 03 Mar 2022 22:07:05 GMT  
 		Size: 1.4 KB (1446 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:847315211ecbcf46497c43e6496f0d99929202469e4133dbd66fde1bc14516fe`  
-		Last Modified: Tue, 01 Mar 2022 03:28:37 GMT  
-		Size: 258.0 B  
+	-	`sha256:627a84bea5f4b8ca8fe1ec90c21ac1946afa459fef7530bc9c674a4a3078308f`  
+		Last Modified: Thu, 03 Mar 2022 22:07:05 GMT  
+		Size: 259.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc706d066f33188d1ed04797fdbe6b4557aa1994fda0d9ac682e9f141557e787`  
-		Last Modified: Tue, 01 Mar 2022 03:29:07 GMT  
-		Size: 210.7 MB (210725534 bytes)  
+	-	`sha256:fc06fa2a9f52c275570ed1ba6e5d3ab70a0a7f7c99ec7b328048a13afde1394f`  
+		Last Modified: Thu, 03 Mar 2022 22:07:34 GMT  
+		Size: 210.7 MB (210725432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:964f41340cd69cfcbe1f50456e0731b164f30ea757b327a05a2e090824e0dfab`  
-		Last Modified: Tue, 01 Mar 2022 03:28:37 GMT  
+	-	`sha256:0133c89ee92bf3428f2584f62b0d138cf4d6d1930c9a1426d20a4107f064fe79`  
+		Last Modified: Thu, 03 Mar 2022 22:07:05 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2f76c7cb5290d26d528e84a3ced68eeb548fc280d1006fec432f77261a83b96f`  
-		Last Modified: Tue, 01 Mar 2022 03:28:37 GMT  
-		Size: 5.0 KB (4953 bytes)  
+	-	`sha256:4e990167b745c8c6acbe9e08774be8420a7da623527573a2b7a767db9bd80d87`  
+		Last Modified: Thu, 03 Mar 2022 22:07:05 GMT  
+		Size: 5.0 KB (4952 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:5` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:480d15891009e31db39782ba60b15f2a348c0fa68ee7e77ae7119f9bbb45bd39
+$ docker pull mongo@sha256:16c7c417c0f803e2012d123c54b8479f733c6f902768494617f8a2f0fb515ed9
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **241.1 MB (241080635 bytes)**  
+-	Total Size: **241.1 MB (241079914 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9ab997c0224eafc739e41b80a67271718d288dc18a6018ccefcf3f04001cf5e5`
+-	Image ID: `sha256:2c4c92fc145cd21d7af328656bbdf08a6039e2d58f31f89777fd9a6f976f59f2`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 03:19:27 GMT
-ADD file:3acc741be29b0b58e44d7302ab5ce65bf65ea1b35922be58a2cee9cb708d006a in / 
-# Wed, 02 Feb 2022 03:19:27 GMT
+# Thu, 03 Mar 2022 19:41:02 GMT
+ADD file:f2fffe739729839aa17484bc4d79d33425549c5052824eac12131b16c23565d3 in / 
+# Thu, 03 Mar 2022 19:41:03 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 05:45:05 GMT
+# Thu, 03 Mar 2022 20:50:47 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 05:45:15 GMT
+# Thu, 03 Mar 2022 20:50:58 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 05:45:16 GMT
+# Thu, 03 Mar 2022 20:50:58 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 05:45:17 GMT
+# Thu, 03 Mar 2022 20:50:59 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 05:45:33 GMT
+# Thu, 03 Mar 2022 20:51:15 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 05:45:34 GMT
+# Thu, 03 Mar 2022 20:51:16 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:21:41 GMT
+# Thu, 03 Mar 2022 20:51:53 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- 'F5679A222C647C87527C2F8CB00A0BD1E2C63C11'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:21:42 GMT
+# Thu, 03 Mar 2022 20:51:54 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:21:43 GMT
+# Thu, 03 Mar 2022 20:51:55 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:21:44 GMT
+# Thu, 03 Mar 2022 20:51:56 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:21:45 GMT
+# Thu, 03 Mar 2022 20:51:57 GMT
 ENV MONGO_MAJOR=5.0
-# Tue, 01 Mar 2022 03:21:46 GMT
+# Thu, 03 Mar 2022 20:51:58 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu focal/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:21:47 GMT
+# Thu, 03 Mar 2022 20:51:59 GMT
 ENV MONGO_VERSION=5.0.6
-# Tue, 01 Mar 2022 03:22:10 GMT
+# Thu, 03 Mar 2022 20:52:25 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:22:11 GMT
+# Thu, 03 Mar 2022 20:52:26 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:22:12 GMT
+# Thu, 03 Mar 2022 20:52:27 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:22:14 GMT
+# Thu, 03 Mar 2022 20:52:29 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:22:14 GMT
+# Thu, 03 Mar 2022 20:52:29 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:22:15 GMT
+# Thu, 03 Mar 2022 20:52:30 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:22:16 GMT
+# Thu, 03 Mar 2022 20:52:31 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:bbf2fb66fa6e06dd46eb26f518f93171ee7c48be68aafb213aa7c2c12f4018ca`  
-		Last Modified: Wed, 02 Feb 2022 03:21:24 GMT  
-		Size: 27.2 MB (27169640 bytes)  
+	-	`sha256:5a7855fb0d7ae372c824d9c76be5ad2f42ce178c1910fa54a8543036b5325fd5`  
+		Last Modified: Thu, 03 Mar 2022 19:42:38 GMT  
+		Size: 27.2 MB (27169631 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc29132329410addab1460dc8766c612d802fd087c89530850ee4fc3bfccb9d1`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
-		Size: 1.7 KB (1732 bytes)  
+	-	`sha256:93835005f83fca8d11e84de6d362cbdac541df8362e80c6a0172100f8b8a27ea`  
+		Last Modified: Thu, 03 Mar 2022 21:02:38 GMT  
+		Size: 1.7 KB (1728 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35d26e50b564fed7f08788d9db622ed591d1666d153ca9c6c7e44810cb4a95af`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
-		Size: 2.9 MB (2912189 bytes)  
+	-	`sha256:85b1c8f1aa262a4f9ecfc4a311235d079693056c9b47ac47c30478ac25c87e36`  
+		Last Modified: Thu, 03 Mar 2022 21:02:36 GMT  
+		Size: 2.9 MB (2912105 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e5a900b805d7561beb888f5130ab75e7a55960fba49790bc0e71dca4c6f1d00`  
-		Last Modified: Wed, 02 Feb 2022 05:50:26 GMT  
-		Size: 6.2 MB (6248507 bytes)  
+	-	`sha256:b9207ce7ec0ce748a22c1074f1471f694ca5a46ba77f3cb86f7485a9df75f492`  
+		Last Modified: Thu, 03 Mar 2022 21:02:36 GMT  
+		Size: 6.2 MB (6248075 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4bd55587e4b045a1d2bab13971a1045c2baa6952fcc7de26890851325cd5314`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
+	-	`sha256:a98a90fbda7bccfa543c5d402318d145dc64f2d3be60275c04a10ede986569ca`  
+		Last Modified: Thu, 03 Mar 2022 21:02:35 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc38749bf9d8960a71f4abf7ce0c758193b39c67b8ba2d28aa59ebff2f7e529a`  
-		Last Modified: Tue, 01 Mar 2022 03:29:48 GMT  
-		Size: 1.4 KB (1397 bytes)  
+	-	`sha256:34ca3d6b9bafb90b33e2e2d4651318004e2bc74d76aaa8502aff9e78b134589f`  
+		Last Modified: Thu, 03 Mar 2022 21:02:33 GMT  
+		Size: 1.4 KB (1396 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1a3194606e704470d1ba35e778a7a73e6228bcc2b5f4cfa27640fccfe258590c`  
-		Last Modified: Tue, 01 Mar 2022 03:29:48 GMT  
-		Size: 260.0 B  
+	-	`sha256:2e915500804c314c72f7e604e9cd17e410eb3a9d186b1cdf94cdad32add6e750`  
+		Last Modified: Thu, 03 Mar 2022 21:02:33 GMT  
+		Size: 259.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98c72db0442151f0771f76caca21154ffe0e4a2ad392ccf5ee55af1a7e583fa3`  
-		Last Modified: Tue, 01 Mar 2022 03:30:16 GMT  
-		Size: 204.7 MB (204741708 bytes)  
+	-	`sha256:5289a3a230e1df28826d50ce17e1c042aeaecf7f6045713355263ab2a3f717e9`  
+		Last Modified: Thu, 03 Mar 2022 21:03:01 GMT  
+		Size: 204.7 MB (204741520 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:827a3d8be28432b2ebcca5c30670816409ef30b01bc7eff767d21fc294bc3347`  
-		Last Modified: Tue, 01 Mar 2022 03:29:48 GMT  
+	-	`sha256:d7e9aa7f19e73d27fbbffb762b8499cbec2c6d4e11a988d0cd4ebced973f6b04`  
+		Last Modified: Thu, 03 Mar 2022 21:02:33 GMT  
 		Size: 138.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f527d790e0afec482f8e129c9c44feabd8e8574b8b3504e24cb8660d0bd5f6a6`  
-		Last Modified: Tue, 01 Mar 2022 03:29:48 GMT  
-		Size: 4.9 KB (4949 bytes)  
+	-	`sha256:49dce2383b1d022163ec8099933f09fae45c32b13a97f3508bec941859a641b2`  
+		Last Modified: Thu, 03 Mar 2022 21:02:33 GMT  
+		Size: 4.9 KB (4947 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:5` - windows version 10.0.20348.524; amd64
@@ -15163,7 +15163,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:5-focal`
 
 ```console
-$ docker pull mongo@sha256:2fea7c24de9fff67cf15cd36c369a5d3f8d8bc52a69b5b0b1778bd3d2f079e1b
+$ docker pull mongo@sha256:f4fa206f5b2b449df15f7aa6a84e505d3df73cf1cb6a92f11cea814bd6140cb7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -15174,207 +15174,207 @@ $ docker pull mongo@sha256:2fea7c24de9fff67cf15cd36c369a5d3f8d8bc52a69b5b0b1778b
 ### `mongo:5-focal` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:fbf49dc17d6c75efbe0fce975ff783291e715fefd7a07490f1ec58630cc3db2a
+$ docker pull mongo@sha256:d1e3b724d514ed8df7f73ee175057160bde1c9cf3a85536e5e96161f40e8cf63
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **248.9 MB (248868547 bytes)**  
+-	Total Size: **248.9 MB (248870002 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2785fff65421d6b0915f7e72e9a3f8683afcee046f887078dad1e8172f8f1506`
+-	Image ID: `sha256:cb2388d1f0a57b9111045828faffacb618474b114e12c1de67f96f2bbd97ebe6`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 02:14:45 GMT
-ADD file:3ccf747d646089ed7fbb43c40c45dd43e86f0674115f856efada93c7e4a63624 in / 
-# Wed, 02 Feb 2022 02:14:46 GMT
+# Thu, 03 Mar 2022 20:19:33 GMT
+ADD file:8a50ad78a668527e974b05a3dfbfd64760de3cb643ceb8a8805d21f6ceab3389 in / 
+# Thu, 03 Mar 2022 20:19:33 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 03:53:54 GMT
+# Thu, 03 Mar 2022 21:57:21 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 03:54:12 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 03:54:12 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 03:54:13 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 03:54:24 GMT
+# Thu, 03 Mar 2022 21:57:46 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 03:54:25 GMT
+# Thu, 03 Mar 2022 21:57:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:24:02 GMT
+# Thu, 03 Mar 2022 21:58:22 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- 'F5679A222C647C87527C2F8CB00A0BD1E2C63C11'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:24:02 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:24:02 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:24:02 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:24:02 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 ENV MONGO_MAJOR=5.0
-# Tue, 01 Mar 2022 03:24:03 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu focal/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:24:03 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 ENV MONGO_VERSION=5.0.6
-# Tue, 01 Mar 2022 03:24:44 GMT
+# Thu, 03 Mar 2022 21:58:49 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:24:47 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:08c01a0ec47e82ebe2bec112f373d160983a6d1e9e66627f66a3322bc403221b`  
-		Last Modified: Wed, 02 Feb 2022 02:16:20 GMT  
-		Size: 28.6 MB (28564099 bytes)  
+	-	`sha256:7c3b88808835aa80f1ef7f03083c5ae781d0f44e644537cd72de4ce6c5e62e00`  
+		Last Modified: Thu, 03 Mar 2022 20:20:44 GMT  
+		Size: 28.6 MB (28565751 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ceb608a7cda73cd80c28a22573e64e6778ba8d3cfbe6b03ed39213391a10e2a4`  
-		Last Modified: Wed, 02 Feb 2022 03:58:32 GMT  
-		Size: 1.8 KB (1750 bytes)  
+	-	`sha256:48a403577c28fafaf89a46590d69c237ae9fd5e576f96bf984e45ead657a3ef3`  
+		Last Modified: Thu, 03 Mar 2022 22:07:07 GMT  
+		Size: 1.7 KB (1748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a160d3e3934a135ad5c71555099d1fe85aab6f96d34b578a76ff52a95c22dd19`  
-		Last Modified: Wed, 02 Feb 2022 03:58:32 GMT  
-		Size: 3.1 MB (3064433 bytes)  
+	-	`sha256:76bbb7dc901383749cee88f0d357711cf7059ef51211c4725d60127a431d2844`  
+		Last Modified: Thu, 03 Mar 2022 22:07:08 GMT  
+		Size: 3.1 MB (3064492 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:544b729231207ba1a406ea8cbb2764717ea55ec68a2edd74bd992f0aed167184`  
-		Last Modified: Wed, 02 Feb 2022 03:58:33 GMT  
-		Size: 6.5 MB (6505756 bytes)  
+	-	`sha256:e81b1e5a386bad953e0fc4c4625bb63aea27c931f575e665730eea7fd4f373ad`  
+		Last Modified: Thu, 03 Mar 2022 22:07:08 GMT  
+		Size: 6.5 MB (6505604 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:812461eda79e980889ebf8fbb4bcc083ecae07e83d9dbec008a049a11c83198c`  
-		Last Modified: Wed, 02 Feb 2022 03:58:31 GMT  
+	-	`sha256:7bdc1db49ec948ae1977bbbf82bca00efce13bebbaf1aabbe5ec24e1b3c268db`  
+		Last Modified: Thu, 03 Mar 2022 22:07:07 GMT  
 		Size: 149.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b06b719289f340d721f73d74afa1897ddb844e6ac715310507b397848ca00bf5`  
-		Last Modified: Tue, 01 Mar 2022 03:28:37 GMT  
+	-	`sha256:7b2f602f894c906b6b36c7b1fff4333658756e4f4837e21ded39c2d244c49405`  
+		Last Modified: Thu, 03 Mar 2022 22:07:05 GMT  
 		Size: 1.4 KB (1446 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:847315211ecbcf46497c43e6496f0d99929202469e4133dbd66fde1bc14516fe`  
-		Last Modified: Tue, 01 Mar 2022 03:28:37 GMT  
-		Size: 258.0 B  
+	-	`sha256:627a84bea5f4b8ca8fe1ec90c21ac1946afa459fef7530bc9c674a4a3078308f`  
+		Last Modified: Thu, 03 Mar 2022 22:07:05 GMT  
+		Size: 259.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc706d066f33188d1ed04797fdbe6b4557aa1994fda0d9ac682e9f141557e787`  
-		Last Modified: Tue, 01 Mar 2022 03:29:07 GMT  
-		Size: 210.7 MB (210725534 bytes)  
+	-	`sha256:fc06fa2a9f52c275570ed1ba6e5d3ab70a0a7f7c99ec7b328048a13afde1394f`  
+		Last Modified: Thu, 03 Mar 2022 22:07:34 GMT  
+		Size: 210.7 MB (210725432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:964f41340cd69cfcbe1f50456e0731b164f30ea757b327a05a2e090824e0dfab`  
-		Last Modified: Tue, 01 Mar 2022 03:28:37 GMT  
+	-	`sha256:0133c89ee92bf3428f2584f62b0d138cf4d6d1930c9a1426d20a4107f064fe79`  
+		Last Modified: Thu, 03 Mar 2022 22:07:05 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2f76c7cb5290d26d528e84a3ced68eeb548fc280d1006fec432f77261a83b96f`  
-		Last Modified: Tue, 01 Mar 2022 03:28:37 GMT  
-		Size: 5.0 KB (4953 bytes)  
+	-	`sha256:4e990167b745c8c6acbe9e08774be8420a7da623527573a2b7a767db9bd80d87`  
+		Last Modified: Thu, 03 Mar 2022 22:07:05 GMT  
+		Size: 5.0 KB (4952 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:5-focal` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:480d15891009e31db39782ba60b15f2a348c0fa68ee7e77ae7119f9bbb45bd39
+$ docker pull mongo@sha256:16c7c417c0f803e2012d123c54b8479f733c6f902768494617f8a2f0fb515ed9
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **241.1 MB (241080635 bytes)**  
+-	Total Size: **241.1 MB (241079914 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9ab997c0224eafc739e41b80a67271718d288dc18a6018ccefcf3f04001cf5e5`
+-	Image ID: `sha256:2c4c92fc145cd21d7af328656bbdf08a6039e2d58f31f89777fd9a6f976f59f2`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 03:19:27 GMT
-ADD file:3acc741be29b0b58e44d7302ab5ce65bf65ea1b35922be58a2cee9cb708d006a in / 
-# Wed, 02 Feb 2022 03:19:27 GMT
+# Thu, 03 Mar 2022 19:41:02 GMT
+ADD file:f2fffe739729839aa17484bc4d79d33425549c5052824eac12131b16c23565d3 in / 
+# Thu, 03 Mar 2022 19:41:03 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 05:45:05 GMT
+# Thu, 03 Mar 2022 20:50:47 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 05:45:15 GMT
+# Thu, 03 Mar 2022 20:50:58 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 05:45:16 GMT
+# Thu, 03 Mar 2022 20:50:58 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 05:45:17 GMT
+# Thu, 03 Mar 2022 20:50:59 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 05:45:33 GMT
+# Thu, 03 Mar 2022 20:51:15 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 05:45:34 GMT
+# Thu, 03 Mar 2022 20:51:16 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:21:41 GMT
+# Thu, 03 Mar 2022 20:51:53 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- 'F5679A222C647C87527C2F8CB00A0BD1E2C63C11'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:21:42 GMT
+# Thu, 03 Mar 2022 20:51:54 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:21:43 GMT
+# Thu, 03 Mar 2022 20:51:55 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:21:44 GMT
+# Thu, 03 Mar 2022 20:51:56 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:21:45 GMT
+# Thu, 03 Mar 2022 20:51:57 GMT
 ENV MONGO_MAJOR=5.0
-# Tue, 01 Mar 2022 03:21:46 GMT
+# Thu, 03 Mar 2022 20:51:58 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu focal/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:21:47 GMT
+# Thu, 03 Mar 2022 20:51:59 GMT
 ENV MONGO_VERSION=5.0.6
-# Tue, 01 Mar 2022 03:22:10 GMT
+# Thu, 03 Mar 2022 20:52:25 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:22:11 GMT
+# Thu, 03 Mar 2022 20:52:26 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:22:12 GMT
+# Thu, 03 Mar 2022 20:52:27 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:22:14 GMT
+# Thu, 03 Mar 2022 20:52:29 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:22:14 GMT
+# Thu, 03 Mar 2022 20:52:29 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:22:15 GMT
+# Thu, 03 Mar 2022 20:52:30 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:22:16 GMT
+# Thu, 03 Mar 2022 20:52:31 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:bbf2fb66fa6e06dd46eb26f518f93171ee7c48be68aafb213aa7c2c12f4018ca`  
-		Last Modified: Wed, 02 Feb 2022 03:21:24 GMT  
-		Size: 27.2 MB (27169640 bytes)  
+	-	`sha256:5a7855fb0d7ae372c824d9c76be5ad2f42ce178c1910fa54a8543036b5325fd5`  
+		Last Modified: Thu, 03 Mar 2022 19:42:38 GMT  
+		Size: 27.2 MB (27169631 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc29132329410addab1460dc8766c612d802fd087c89530850ee4fc3bfccb9d1`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
-		Size: 1.7 KB (1732 bytes)  
+	-	`sha256:93835005f83fca8d11e84de6d362cbdac541df8362e80c6a0172100f8b8a27ea`  
+		Last Modified: Thu, 03 Mar 2022 21:02:38 GMT  
+		Size: 1.7 KB (1728 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35d26e50b564fed7f08788d9db622ed591d1666d153ca9c6c7e44810cb4a95af`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
-		Size: 2.9 MB (2912189 bytes)  
+	-	`sha256:85b1c8f1aa262a4f9ecfc4a311235d079693056c9b47ac47c30478ac25c87e36`  
+		Last Modified: Thu, 03 Mar 2022 21:02:36 GMT  
+		Size: 2.9 MB (2912105 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e5a900b805d7561beb888f5130ab75e7a55960fba49790bc0e71dca4c6f1d00`  
-		Last Modified: Wed, 02 Feb 2022 05:50:26 GMT  
-		Size: 6.2 MB (6248507 bytes)  
+	-	`sha256:b9207ce7ec0ce748a22c1074f1471f694ca5a46ba77f3cb86f7485a9df75f492`  
+		Last Modified: Thu, 03 Mar 2022 21:02:36 GMT  
+		Size: 6.2 MB (6248075 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4bd55587e4b045a1d2bab13971a1045c2baa6952fcc7de26890851325cd5314`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
+	-	`sha256:a98a90fbda7bccfa543c5d402318d145dc64f2d3be60275c04a10ede986569ca`  
+		Last Modified: Thu, 03 Mar 2022 21:02:35 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc38749bf9d8960a71f4abf7ce0c758193b39c67b8ba2d28aa59ebff2f7e529a`  
-		Last Modified: Tue, 01 Mar 2022 03:29:48 GMT  
-		Size: 1.4 KB (1397 bytes)  
+	-	`sha256:34ca3d6b9bafb90b33e2e2d4651318004e2bc74d76aaa8502aff9e78b134589f`  
+		Last Modified: Thu, 03 Mar 2022 21:02:33 GMT  
+		Size: 1.4 KB (1396 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1a3194606e704470d1ba35e778a7a73e6228bcc2b5f4cfa27640fccfe258590c`  
-		Last Modified: Tue, 01 Mar 2022 03:29:48 GMT  
-		Size: 260.0 B  
+	-	`sha256:2e915500804c314c72f7e604e9cd17e410eb3a9d186b1cdf94cdad32add6e750`  
+		Last Modified: Thu, 03 Mar 2022 21:02:33 GMT  
+		Size: 259.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98c72db0442151f0771f76caca21154ffe0e4a2ad392ccf5ee55af1a7e583fa3`  
-		Last Modified: Tue, 01 Mar 2022 03:30:16 GMT  
-		Size: 204.7 MB (204741708 bytes)  
+	-	`sha256:5289a3a230e1df28826d50ce17e1c042aeaecf7f6045713355263ab2a3f717e9`  
+		Last Modified: Thu, 03 Mar 2022 21:03:01 GMT  
+		Size: 204.7 MB (204741520 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:827a3d8be28432b2ebcca5c30670816409ef30b01bc7eff767d21fc294bc3347`  
-		Last Modified: Tue, 01 Mar 2022 03:29:48 GMT  
+	-	`sha256:d7e9aa7f19e73d27fbbffb762b8499cbec2c6d4e11a988d0cd4ebced973f6b04`  
+		Last Modified: Thu, 03 Mar 2022 21:02:33 GMT  
 		Size: 138.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f527d790e0afec482f8e129c9c44feabd8e8574b8b3504e24cb8660d0bd5f6a6`  
-		Last Modified: Tue, 01 Mar 2022 03:29:48 GMT  
-		Size: 4.9 KB (4949 bytes)  
+	-	`sha256:49dce2383b1d022163ec8099933f09fae45c32b13a97f3508bec941859a641b2`  
+		Last Modified: Thu, 03 Mar 2022 21:02:33 GMT  
+		Size: 4.9 KB (4947 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:5-nanoserver`
@@ -16110,7 +16110,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:5.0`
 
 ```console
-$ docker pull mongo@sha256:1334cc689aec65d29af23a14b00c743c43343c442435aaa903abbb6369804d85
+$ docker pull mongo@sha256:b0abf19259902648be5ac17479dd4c65e037c3292c9eb09181f087687bca5102
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16123,207 +16123,207 @@ $ docker pull mongo@sha256:1334cc689aec65d29af23a14b00c743c43343c442435aaa903abb
 ### `mongo:5.0` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:fbf49dc17d6c75efbe0fce975ff783291e715fefd7a07490f1ec58630cc3db2a
+$ docker pull mongo@sha256:d1e3b724d514ed8df7f73ee175057160bde1c9cf3a85536e5e96161f40e8cf63
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **248.9 MB (248868547 bytes)**  
+-	Total Size: **248.9 MB (248870002 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2785fff65421d6b0915f7e72e9a3f8683afcee046f887078dad1e8172f8f1506`
+-	Image ID: `sha256:cb2388d1f0a57b9111045828faffacb618474b114e12c1de67f96f2bbd97ebe6`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 02:14:45 GMT
-ADD file:3ccf747d646089ed7fbb43c40c45dd43e86f0674115f856efada93c7e4a63624 in / 
-# Wed, 02 Feb 2022 02:14:46 GMT
+# Thu, 03 Mar 2022 20:19:33 GMT
+ADD file:8a50ad78a668527e974b05a3dfbfd64760de3cb643ceb8a8805d21f6ceab3389 in / 
+# Thu, 03 Mar 2022 20:19:33 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 03:53:54 GMT
+# Thu, 03 Mar 2022 21:57:21 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 03:54:12 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 03:54:12 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 03:54:13 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 03:54:24 GMT
+# Thu, 03 Mar 2022 21:57:46 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 03:54:25 GMT
+# Thu, 03 Mar 2022 21:57:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:24:02 GMT
+# Thu, 03 Mar 2022 21:58:22 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- 'F5679A222C647C87527C2F8CB00A0BD1E2C63C11'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:24:02 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:24:02 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:24:02 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:24:02 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 ENV MONGO_MAJOR=5.0
-# Tue, 01 Mar 2022 03:24:03 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu focal/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:24:03 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 ENV MONGO_VERSION=5.0.6
-# Tue, 01 Mar 2022 03:24:44 GMT
+# Thu, 03 Mar 2022 21:58:49 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:24:47 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:08c01a0ec47e82ebe2bec112f373d160983a6d1e9e66627f66a3322bc403221b`  
-		Last Modified: Wed, 02 Feb 2022 02:16:20 GMT  
-		Size: 28.6 MB (28564099 bytes)  
+	-	`sha256:7c3b88808835aa80f1ef7f03083c5ae781d0f44e644537cd72de4ce6c5e62e00`  
+		Last Modified: Thu, 03 Mar 2022 20:20:44 GMT  
+		Size: 28.6 MB (28565751 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ceb608a7cda73cd80c28a22573e64e6778ba8d3cfbe6b03ed39213391a10e2a4`  
-		Last Modified: Wed, 02 Feb 2022 03:58:32 GMT  
-		Size: 1.8 KB (1750 bytes)  
+	-	`sha256:48a403577c28fafaf89a46590d69c237ae9fd5e576f96bf984e45ead657a3ef3`  
+		Last Modified: Thu, 03 Mar 2022 22:07:07 GMT  
+		Size: 1.7 KB (1748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a160d3e3934a135ad5c71555099d1fe85aab6f96d34b578a76ff52a95c22dd19`  
-		Last Modified: Wed, 02 Feb 2022 03:58:32 GMT  
-		Size: 3.1 MB (3064433 bytes)  
+	-	`sha256:76bbb7dc901383749cee88f0d357711cf7059ef51211c4725d60127a431d2844`  
+		Last Modified: Thu, 03 Mar 2022 22:07:08 GMT  
+		Size: 3.1 MB (3064492 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:544b729231207ba1a406ea8cbb2764717ea55ec68a2edd74bd992f0aed167184`  
-		Last Modified: Wed, 02 Feb 2022 03:58:33 GMT  
-		Size: 6.5 MB (6505756 bytes)  
+	-	`sha256:e81b1e5a386bad953e0fc4c4625bb63aea27c931f575e665730eea7fd4f373ad`  
+		Last Modified: Thu, 03 Mar 2022 22:07:08 GMT  
+		Size: 6.5 MB (6505604 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:812461eda79e980889ebf8fbb4bcc083ecae07e83d9dbec008a049a11c83198c`  
-		Last Modified: Wed, 02 Feb 2022 03:58:31 GMT  
+	-	`sha256:7bdc1db49ec948ae1977bbbf82bca00efce13bebbaf1aabbe5ec24e1b3c268db`  
+		Last Modified: Thu, 03 Mar 2022 22:07:07 GMT  
 		Size: 149.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b06b719289f340d721f73d74afa1897ddb844e6ac715310507b397848ca00bf5`  
-		Last Modified: Tue, 01 Mar 2022 03:28:37 GMT  
+	-	`sha256:7b2f602f894c906b6b36c7b1fff4333658756e4f4837e21ded39c2d244c49405`  
+		Last Modified: Thu, 03 Mar 2022 22:07:05 GMT  
 		Size: 1.4 KB (1446 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:847315211ecbcf46497c43e6496f0d99929202469e4133dbd66fde1bc14516fe`  
-		Last Modified: Tue, 01 Mar 2022 03:28:37 GMT  
-		Size: 258.0 B  
+	-	`sha256:627a84bea5f4b8ca8fe1ec90c21ac1946afa459fef7530bc9c674a4a3078308f`  
+		Last Modified: Thu, 03 Mar 2022 22:07:05 GMT  
+		Size: 259.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc706d066f33188d1ed04797fdbe6b4557aa1994fda0d9ac682e9f141557e787`  
-		Last Modified: Tue, 01 Mar 2022 03:29:07 GMT  
-		Size: 210.7 MB (210725534 bytes)  
+	-	`sha256:fc06fa2a9f52c275570ed1ba6e5d3ab70a0a7f7c99ec7b328048a13afde1394f`  
+		Last Modified: Thu, 03 Mar 2022 22:07:34 GMT  
+		Size: 210.7 MB (210725432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:964f41340cd69cfcbe1f50456e0731b164f30ea757b327a05a2e090824e0dfab`  
-		Last Modified: Tue, 01 Mar 2022 03:28:37 GMT  
+	-	`sha256:0133c89ee92bf3428f2584f62b0d138cf4d6d1930c9a1426d20a4107f064fe79`  
+		Last Modified: Thu, 03 Mar 2022 22:07:05 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2f76c7cb5290d26d528e84a3ced68eeb548fc280d1006fec432f77261a83b96f`  
-		Last Modified: Tue, 01 Mar 2022 03:28:37 GMT  
-		Size: 5.0 KB (4953 bytes)  
+	-	`sha256:4e990167b745c8c6acbe9e08774be8420a7da623527573a2b7a767db9bd80d87`  
+		Last Modified: Thu, 03 Mar 2022 22:07:05 GMT  
+		Size: 5.0 KB (4952 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:5.0` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:480d15891009e31db39782ba60b15f2a348c0fa68ee7e77ae7119f9bbb45bd39
+$ docker pull mongo@sha256:16c7c417c0f803e2012d123c54b8479f733c6f902768494617f8a2f0fb515ed9
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **241.1 MB (241080635 bytes)**  
+-	Total Size: **241.1 MB (241079914 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9ab997c0224eafc739e41b80a67271718d288dc18a6018ccefcf3f04001cf5e5`
+-	Image ID: `sha256:2c4c92fc145cd21d7af328656bbdf08a6039e2d58f31f89777fd9a6f976f59f2`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 03:19:27 GMT
-ADD file:3acc741be29b0b58e44d7302ab5ce65bf65ea1b35922be58a2cee9cb708d006a in / 
-# Wed, 02 Feb 2022 03:19:27 GMT
+# Thu, 03 Mar 2022 19:41:02 GMT
+ADD file:f2fffe739729839aa17484bc4d79d33425549c5052824eac12131b16c23565d3 in / 
+# Thu, 03 Mar 2022 19:41:03 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 05:45:05 GMT
+# Thu, 03 Mar 2022 20:50:47 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 05:45:15 GMT
+# Thu, 03 Mar 2022 20:50:58 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 05:45:16 GMT
+# Thu, 03 Mar 2022 20:50:58 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 05:45:17 GMT
+# Thu, 03 Mar 2022 20:50:59 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 05:45:33 GMT
+# Thu, 03 Mar 2022 20:51:15 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 05:45:34 GMT
+# Thu, 03 Mar 2022 20:51:16 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:21:41 GMT
+# Thu, 03 Mar 2022 20:51:53 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- 'F5679A222C647C87527C2F8CB00A0BD1E2C63C11'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:21:42 GMT
+# Thu, 03 Mar 2022 20:51:54 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:21:43 GMT
+# Thu, 03 Mar 2022 20:51:55 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:21:44 GMT
+# Thu, 03 Mar 2022 20:51:56 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:21:45 GMT
+# Thu, 03 Mar 2022 20:51:57 GMT
 ENV MONGO_MAJOR=5.0
-# Tue, 01 Mar 2022 03:21:46 GMT
+# Thu, 03 Mar 2022 20:51:58 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu focal/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:21:47 GMT
+# Thu, 03 Mar 2022 20:51:59 GMT
 ENV MONGO_VERSION=5.0.6
-# Tue, 01 Mar 2022 03:22:10 GMT
+# Thu, 03 Mar 2022 20:52:25 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:22:11 GMT
+# Thu, 03 Mar 2022 20:52:26 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:22:12 GMT
+# Thu, 03 Mar 2022 20:52:27 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:22:14 GMT
+# Thu, 03 Mar 2022 20:52:29 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:22:14 GMT
+# Thu, 03 Mar 2022 20:52:29 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:22:15 GMT
+# Thu, 03 Mar 2022 20:52:30 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:22:16 GMT
+# Thu, 03 Mar 2022 20:52:31 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:bbf2fb66fa6e06dd46eb26f518f93171ee7c48be68aafb213aa7c2c12f4018ca`  
-		Last Modified: Wed, 02 Feb 2022 03:21:24 GMT  
-		Size: 27.2 MB (27169640 bytes)  
+	-	`sha256:5a7855fb0d7ae372c824d9c76be5ad2f42ce178c1910fa54a8543036b5325fd5`  
+		Last Modified: Thu, 03 Mar 2022 19:42:38 GMT  
+		Size: 27.2 MB (27169631 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc29132329410addab1460dc8766c612d802fd087c89530850ee4fc3bfccb9d1`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
-		Size: 1.7 KB (1732 bytes)  
+	-	`sha256:93835005f83fca8d11e84de6d362cbdac541df8362e80c6a0172100f8b8a27ea`  
+		Last Modified: Thu, 03 Mar 2022 21:02:38 GMT  
+		Size: 1.7 KB (1728 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35d26e50b564fed7f08788d9db622ed591d1666d153ca9c6c7e44810cb4a95af`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
-		Size: 2.9 MB (2912189 bytes)  
+	-	`sha256:85b1c8f1aa262a4f9ecfc4a311235d079693056c9b47ac47c30478ac25c87e36`  
+		Last Modified: Thu, 03 Mar 2022 21:02:36 GMT  
+		Size: 2.9 MB (2912105 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e5a900b805d7561beb888f5130ab75e7a55960fba49790bc0e71dca4c6f1d00`  
-		Last Modified: Wed, 02 Feb 2022 05:50:26 GMT  
-		Size: 6.2 MB (6248507 bytes)  
+	-	`sha256:b9207ce7ec0ce748a22c1074f1471f694ca5a46ba77f3cb86f7485a9df75f492`  
+		Last Modified: Thu, 03 Mar 2022 21:02:36 GMT  
+		Size: 6.2 MB (6248075 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4bd55587e4b045a1d2bab13971a1045c2baa6952fcc7de26890851325cd5314`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
+	-	`sha256:a98a90fbda7bccfa543c5d402318d145dc64f2d3be60275c04a10ede986569ca`  
+		Last Modified: Thu, 03 Mar 2022 21:02:35 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc38749bf9d8960a71f4abf7ce0c758193b39c67b8ba2d28aa59ebff2f7e529a`  
-		Last Modified: Tue, 01 Mar 2022 03:29:48 GMT  
-		Size: 1.4 KB (1397 bytes)  
+	-	`sha256:34ca3d6b9bafb90b33e2e2d4651318004e2bc74d76aaa8502aff9e78b134589f`  
+		Last Modified: Thu, 03 Mar 2022 21:02:33 GMT  
+		Size: 1.4 KB (1396 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1a3194606e704470d1ba35e778a7a73e6228bcc2b5f4cfa27640fccfe258590c`  
-		Last Modified: Tue, 01 Mar 2022 03:29:48 GMT  
-		Size: 260.0 B  
+	-	`sha256:2e915500804c314c72f7e604e9cd17e410eb3a9d186b1cdf94cdad32add6e750`  
+		Last Modified: Thu, 03 Mar 2022 21:02:33 GMT  
+		Size: 259.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98c72db0442151f0771f76caca21154ffe0e4a2ad392ccf5ee55af1a7e583fa3`  
-		Last Modified: Tue, 01 Mar 2022 03:30:16 GMT  
-		Size: 204.7 MB (204741708 bytes)  
+	-	`sha256:5289a3a230e1df28826d50ce17e1c042aeaecf7f6045713355263ab2a3f717e9`  
+		Last Modified: Thu, 03 Mar 2022 21:03:01 GMT  
+		Size: 204.7 MB (204741520 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:827a3d8be28432b2ebcca5c30670816409ef30b01bc7eff767d21fc294bc3347`  
-		Last Modified: Tue, 01 Mar 2022 03:29:48 GMT  
+	-	`sha256:d7e9aa7f19e73d27fbbffb762b8499cbec2c6d4e11a988d0cd4ebced973f6b04`  
+		Last Modified: Thu, 03 Mar 2022 21:02:33 GMT  
 		Size: 138.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f527d790e0afec482f8e129c9c44feabd8e8574b8b3504e24cb8660d0bd5f6a6`  
-		Last Modified: Tue, 01 Mar 2022 03:29:48 GMT  
-		Size: 4.9 KB (4949 bytes)  
+	-	`sha256:49dce2383b1d022163ec8099933f09fae45c32b13a97f3508bec941859a641b2`  
+		Last Modified: Thu, 03 Mar 2022 21:02:33 GMT  
+		Size: 4.9 KB (4947 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:5.0` - windows version 10.0.20348.524; amd64
@@ -16483,7 +16483,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:5.0-focal`
 
 ```console
-$ docker pull mongo@sha256:2fea7c24de9fff67cf15cd36c369a5d3f8d8bc52a69b5b0b1778bd3d2f079e1b
+$ docker pull mongo@sha256:f4fa206f5b2b449df15f7aa6a84e505d3df73cf1cb6a92f11cea814bd6140cb7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16494,207 +16494,207 @@ $ docker pull mongo@sha256:2fea7c24de9fff67cf15cd36c369a5d3f8d8bc52a69b5b0b1778b
 ### `mongo:5.0-focal` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:fbf49dc17d6c75efbe0fce975ff783291e715fefd7a07490f1ec58630cc3db2a
+$ docker pull mongo@sha256:d1e3b724d514ed8df7f73ee175057160bde1c9cf3a85536e5e96161f40e8cf63
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **248.9 MB (248868547 bytes)**  
+-	Total Size: **248.9 MB (248870002 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2785fff65421d6b0915f7e72e9a3f8683afcee046f887078dad1e8172f8f1506`
+-	Image ID: `sha256:cb2388d1f0a57b9111045828faffacb618474b114e12c1de67f96f2bbd97ebe6`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 02:14:45 GMT
-ADD file:3ccf747d646089ed7fbb43c40c45dd43e86f0674115f856efada93c7e4a63624 in / 
-# Wed, 02 Feb 2022 02:14:46 GMT
+# Thu, 03 Mar 2022 20:19:33 GMT
+ADD file:8a50ad78a668527e974b05a3dfbfd64760de3cb643ceb8a8805d21f6ceab3389 in / 
+# Thu, 03 Mar 2022 20:19:33 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 03:53:54 GMT
+# Thu, 03 Mar 2022 21:57:21 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 03:54:12 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 03:54:12 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 03:54:13 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 03:54:24 GMT
+# Thu, 03 Mar 2022 21:57:46 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 03:54:25 GMT
+# Thu, 03 Mar 2022 21:57:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:24:02 GMT
+# Thu, 03 Mar 2022 21:58:22 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- 'F5679A222C647C87527C2F8CB00A0BD1E2C63C11'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:24:02 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:24:02 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:24:02 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:24:02 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 ENV MONGO_MAJOR=5.0
-# Tue, 01 Mar 2022 03:24:03 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu focal/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:24:03 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 ENV MONGO_VERSION=5.0.6
-# Tue, 01 Mar 2022 03:24:44 GMT
+# Thu, 03 Mar 2022 21:58:49 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:24:47 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:08c01a0ec47e82ebe2bec112f373d160983a6d1e9e66627f66a3322bc403221b`  
-		Last Modified: Wed, 02 Feb 2022 02:16:20 GMT  
-		Size: 28.6 MB (28564099 bytes)  
+	-	`sha256:7c3b88808835aa80f1ef7f03083c5ae781d0f44e644537cd72de4ce6c5e62e00`  
+		Last Modified: Thu, 03 Mar 2022 20:20:44 GMT  
+		Size: 28.6 MB (28565751 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ceb608a7cda73cd80c28a22573e64e6778ba8d3cfbe6b03ed39213391a10e2a4`  
-		Last Modified: Wed, 02 Feb 2022 03:58:32 GMT  
-		Size: 1.8 KB (1750 bytes)  
+	-	`sha256:48a403577c28fafaf89a46590d69c237ae9fd5e576f96bf984e45ead657a3ef3`  
+		Last Modified: Thu, 03 Mar 2022 22:07:07 GMT  
+		Size: 1.7 KB (1748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a160d3e3934a135ad5c71555099d1fe85aab6f96d34b578a76ff52a95c22dd19`  
-		Last Modified: Wed, 02 Feb 2022 03:58:32 GMT  
-		Size: 3.1 MB (3064433 bytes)  
+	-	`sha256:76bbb7dc901383749cee88f0d357711cf7059ef51211c4725d60127a431d2844`  
+		Last Modified: Thu, 03 Mar 2022 22:07:08 GMT  
+		Size: 3.1 MB (3064492 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:544b729231207ba1a406ea8cbb2764717ea55ec68a2edd74bd992f0aed167184`  
-		Last Modified: Wed, 02 Feb 2022 03:58:33 GMT  
-		Size: 6.5 MB (6505756 bytes)  
+	-	`sha256:e81b1e5a386bad953e0fc4c4625bb63aea27c931f575e665730eea7fd4f373ad`  
+		Last Modified: Thu, 03 Mar 2022 22:07:08 GMT  
+		Size: 6.5 MB (6505604 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:812461eda79e980889ebf8fbb4bcc083ecae07e83d9dbec008a049a11c83198c`  
-		Last Modified: Wed, 02 Feb 2022 03:58:31 GMT  
+	-	`sha256:7bdc1db49ec948ae1977bbbf82bca00efce13bebbaf1aabbe5ec24e1b3c268db`  
+		Last Modified: Thu, 03 Mar 2022 22:07:07 GMT  
 		Size: 149.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b06b719289f340d721f73d74afa1897ddb844e6ac715310507b397848ca00bf5`  
-		Last Modified: Tue, 01 Mar 2022 03:28:37 GMT  
+	-	`sha256:7b2f602f894c906b6b36c7b1fff4333658756e4f4837e21ded39c2d244c49405`  
+		Last Modified: Thu, 03 Mar 2022 22:07:05 GMT  
 		Size: 1.4 KB (1446 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:847315211ecbcf46497c43e6496f0d99929202469e4133dbd66fde1bc14516fe`  
-		Last Modified: Tue, 01 Mar 2022 03:28:37 GMT  
-		Size: 258.0 B  
+	-	`sha256:627a84bea5f4b8ca8fe1ec90c21ac1946afa459fef7530bc9c674a4a3078308f`  
+		Last Modified: Thu, 03 Mar 2022 22:07:05 GMT  
+		Size: 259.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc706d066f33188d1ed04797fdbe6b4557aa1994fda0d9ac682e9f141557e787`  
-		Last Modified: Tue, 01 Mar 2022 03:29:07 GMT  
-		Size: 210.7 MB (210725534 bytes)  
+	-	`sha256:fc06fa2a9f52c275570ed1ba6e5d3ab70a0a7f7c99ec7b328048a13afde1394f`  
+		Last Modified: Thu, 03 Mar 2022 22:07:34 GMT  
+		Size: 210.7 MB (210725432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:964f41340cd69cfcbe1f50456e0731b164f30ea757b327a05a2e090824e0dfab`  
-		Last Modified: Tue, 01 Mar 2022 03:28:37 GMT  
+	-	`sha256:0133c89ee92bf3428f2584f62b0d138cf4d6d1930c9a1426d20a4107f064fe79`  
+		Last Modified: Thu, 03 Mar 2022 22:07:05 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2f76c7cb5290d26d528e84a3ced68eeb548fc280d1006fec432f77261a83b96f`  
-		Last Modified: Tue, 01 Mar 2022 03:28:37 GMT  
-		Size: 5.0 KB (4953 bytes)  
+	-	`sha256:4e990167b745c8c6acbe9e08774be8420a7da623527573a2b7a767db9bd80d87`  
+		Last Modified: Thu, 03 Mar 2022 22:07:05 GMT  
+		Size: 5.0 KB (4952 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:5.0-focal` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:480d15891009e31db39782ba60b15f2a348c0fa68ee7e77ae7119f9bbb45bd39
+$ docker pull mongo@sha256:16c7c417c0f803e2012d123c54b8479f733c6f902768494617f8a2f0fb515ed9
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **241.1 MB (241080635 bytes)**  
+-	Total Size: **241.1 MB (241079914 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9ab997c0224eafc739e41b80a67271718d288dc18a6018ccefcf3f04001cf5e5`
+-	Image ID: `sha256:2c4c92fc145cd21d7af328656bbdf08a6039e2d58f31f89777fd9a6f976f59f2`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 03:19:27 GMT
-ADD file:3acc741be29b0b58e44d7302ab5ce65bf65ea1b35922be58a2cee9cb708d006a in / 
-# Wed, 02 Feb 2022 03:19:27 GMT
+# Thu, 03 Mar 2022 19:41:02 GMT
+ADD file:f2fffe739729839aa17484bc4d79d33425549c5052824eac12131b16c23565d3 in / 
+# Thu, 03 Mar 2022 19:41:03 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 05:45:05 GMT
+# Thu, 03 Mar 2022 20:50:47 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 05:45:15 GMT
+# Thu, 03 Mar 2022 20:50:58 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 05:45:16 GMT
+# Thu, 03 Mar 2022 20:50:58 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 05:45:17 GMT
+# Thu, 03 Mar 2022 20:50:59 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 05:45:33 GMT
+# Thu, 03 Mar 2022 20:51:15 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 05:45:34 GMT
+# Thu, 03 Mar 2022 20:51:16 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:21:41 GMT
+# Thu, 03 Mar 2022 20:51:53 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- 'F5679A222C647C87527C2F8CB00A0BD1E2C63C11'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:21:42 GMT
+# Thu, 03 Mar 2022 20:51:54 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:21:43 GMT
+# Thu, 03 Mar 2022 20:51:55 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:21:44 GMT
+# Thu, 03 Mar 2022 20:51:56 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:21:45 GMT
+# Thu, 03 Mar 2022 20:51:57 GMT
 ENV MONGO_MAJOR=5.0
-# Tue, 01 Mar 2022 03:21:46 GMT
+# Thu, 03 Mar 2022 20:51:58 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu focal/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:21:47 GMT
+# Thu, 03 Mar 2022 20:51:59 GMT
 ENV MONGO_VERSION=5.0.6
-# Tue, 01 Mar 2022 03:22:10 GMT
+# Thu, 03 Mar 2022 20:52:25 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:22:11 GMT
+# Thu, 03 Mar 2022 20:52:26 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:22:12 GMT
+# Thu, 03 Mar 2022 20:52:27 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:22:14 GMT
+# Thu, 03 Mar 2022 20:52:29 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:22:14 GMT
+# Thu, 03 Mar 2022 20:52:29 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:22:15 GMT
+# Thu, 03 Mar 2022 20:52:30 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:22:16 GMT
+# Thu, 03 Mar 2022 20:52:31 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:bbf2fb66fa6e06dd46eb26f518f93171ee7c48be68aafb213aa7c2c12f4018ca`  
-		Last Modified: Wed, 02 Feb 2022 03:21:24 GMT  
-		Size: 27.2 MB (27169640 bytes)  
+	-	`sha256:5a7855fb0d7ae372c824d9c76be5ad2f42ce178c1910fa54a8543036b5325fd5`  
+		Last Modified: Thu, 03 Mar 2022 19:42:38 GMT  
+		Size: 27.2 MB (27169631 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc29132329410addab1460dc8766c612d802fd087c89530850ee4fc3bfccb9d1`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
-		Size: 1.7 KB (1732 bytes)  
+	-	`sha256:93835005f83fca8d11e84de6d362cbdac541df8362e80c6a0172100f8b8a27ea`  
+		Last Modified: Thu, 03 Mar 2022 21:02:38 GMT  
+		Size: 1.7 KB (1728 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35d26e50b564fed7f08788d9db622ed591d1666d153ca9c6c7e44810cb4a95af`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
-		Size: 2.9 MB (2912189 bytes)  
+	-	`sha256:85b1c8f1aa262a4f9ecfc4a311235d079693056c9b47ac47c30478ac25c87e36`  
+		Last Modified: Thu, 03 Mar 2022 21:02:36 GMT  
+		Size: 2.9 MB (2912105 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e5a900b805d7561beb888f5130ab75e7a55960fba49790bc0e71dca4c6f1d00`  
-		Last Modified: Wed, 02 Feb 2022 05:50:26 GMT  
-		Size: 6.2 MB (6248507 bytes)  
+	-	`sha256:b9207ce7ec0ce748a22c1074f1471f694ca5a46ba77f3cb86f7485a9df75f492`  
+		Last Modified: Thu, 03 Mar 2022 21:02:36 GMT  
+		Size: 6.2 MB (6248075 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4bd55587e4b045a1d2bab13971a1045c2baa6952fcc7de26890851325cd5314`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
+	-	`sha256:a98a90fbda7bccfa543c5d402318d145dc64f2d3be60275c04a10ede986569ca`  
+		Last Modified: Thu, 03 Mar 2022 21:02:35 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc38749bf9d8960a71f4abf7ce0c758193b39c67b8ba2d28aa59ebff2f7e529a`  
-		Last Modified: Tue, 01 Mar 2022 03:29:48 GMT  
-		Size: 1.4 KB (1397 bytes)  
+	-	`sha256:34ca3d6b9bafb90b33e2e2d4651318004e2bc74d76aaa8502aff9e78b134589f`  
+		Last Modified: Thu, 03 Mar 2022 21:02:33 GMT  
+		Size: 1.4 KB (1396 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1a3194606e704470d1ba35e778a7a73e6228bcc2b5f4cfa27640fccfe258590c`  
-		Last Modified: Tue, 01 Mar 2022 03:29:48 GMT  
-		Size: 260.0 B  
+	-	`sha256:2e915500804c314c72f7e604e9cd17e410eb3a9d186b1cdf94cdad32add6e750`  
+		Last Modified: Thu, 03 Mar 2022 21:02:33 GMT  
+		Size: 259.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98c72db0442151f0771f76caca21154ffe0e4a2ad392ccf5ee55af1a7e583fa3`  
-		Last Modified: Tue, 01 Mar 2022 03:30:16 GMT  
-		Size: 204.7 MB (204741708 bytes)  
+	-	`sha256:5289a3a230e1df28826d50ce17e1c042aeaecf7f6045713355263ab2a3f717e9`  
+		Last Modified: Thu, 03 Mar 2022 21:03:01 GMT  
+		Size: 204.7 MB (204741520 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:827a3d8be28432b2ebcca5c30670816409ef30b01bc7eff767d21fc294bc3347`  
-		Last Modified: Tue, 01 Mar 2022 03:29:48 GMT  
+	-	`sha256:d7e9aa7f19e73d27fbbffb762b8499cbec2c6d4e11a988d0cd4ebced973f6b04`  
+		Last Modified: Thu, 03 Mar 2022 21:02:33 GMT  
 		Size: 138.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f527d790e0afec482f8e129c9c44feabd8e8574b8b3504e24cb8660d0bd5f6a6`  
-		Last Modified: Tue, 01 Mar 2022 03:29:48 GMT  
-		Size: 4.9 KB (4949 bytes)  
+	-	`sha256:49dce2383b1d022163ec8099933f09fae45c32b13a97f3508bec941859a641b2`  
+		Last Modified: Thu, 03 Mar 2022 21:02:33 GMT  
+		Size: 4.9 KB (4947 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:5.0-nanoserver`
@@ -17430,7 +17430,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:5.0.6`
 
 ```console
-$ docker pull mongo@sha256:1334cc689aec65d29af23a14b00c743c43343c442435aaa903abbb6369804d85
+$ docker pull mongo@sha256:b0abf19259902648be5ac17479dd4c65e037c3292c9eb09181f087687bca5102
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17443,207 +17443,207 @@ $ docker pull mongo@sha256:1334cc689aec65d29af23a14b00c743c43343c442435aaa903abb
 ### `mongo:5.0.6` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:fbf49dc17d6c75efbe0fce975ff783291e715fefd7a07490f1ec58630cc3db2a
+$ docker pull mongo@sha256:d1e3b724d514ed8df7f73ee175057160bde1c9cf3a85536e5e96161f40e8cf63
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **248.9 MB (248868547 bytes)**  
+-	Total Size: **248.9 MB (248870002 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2785fff65421d6b0915f7e72e9a3f8683afcee046f887078dad1e8172f8f1506`
+-	Image ID: `sha256:cb2388d1f0a57b9111045828faffacb618474b114e12c1de67f96f2bbd97ebe6`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 02:14:45 GMT
-ADD file:3ccf747d646089ed7fbb43c40c45dd43e86f0674115f856efada93c7e4a63624 in / 
-# Wed, 02 Feb 2022 02:14:46 GMT
+# Thu, 03 Mar 2022 20:19:33 GMT
+ADD file:8a50ad78a668527e974b05a3dfbfd64760de3cb643ceb8a8805d21f6ceab3389 in / 
+# Thu, 03 Mar 2022 20:19:33 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 03:53:54 GMT
+# Thu, 03 Mar 2022 21:57:21 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 03:54:12 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 03:54:12 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 03:54:13 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 03:54:24 GMT
+# Thu, 03 Mar 2022 21:57:46 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 03:54:25 GMT
+# Thu, 03 Mar 2022 21:57:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:24:02 GMT
+# Thu, 03 Mar 2022 21:58:22 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- 'F5679A222C647C87527C2F8CB00A0BD1E2C63C11'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:24:02 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:24:02 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:24:02 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:24:02 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 ENV MONGO_MAJOR=5.0
-# Tue, 01 Mar 2022 03:24:03 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu focal/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:24:03 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 ENV MONGO_VERSION=5.0.6
-# Tue, 01 Mar 2022 03:24:44 GMT
+# Thu, 03 Mar 2022 21:58:49 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:24:47 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:08c01a0ec47e82ebe2bec112f373d160983a6d1e9e66627f66a3322bc403221b`  
-		Last Modified: Wed, 02 Feb 2022 02:16:20 GMT  
-		Size: 28.6 MB (28564099 bytes)  
+	-	`sha256:7c3b88808835aa80f1ef7f03083c5ae781d0f44e644537cd72de4ce6c5e62e00`  
+		Last Modified: Thu, 03 Mar 2022 20:20:44 GMT  
+		Size: 28.6 MB (28565751 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ceb608a7cda73cd80c28a22573e64e6778ba8d3cfbe6b03ed39213391a10e2a4`  
-		Last Modified: Wed, 02 Feb 2022 03:58:32 GMT  
-		Size: 1.8 KB (1750 bytes)  
+	-	`sha256:48a403577c28fafaf89a46590d69c237ae9fd5e576f96bf984e45ead657a3ef3`  
+		Last Modified: Thu, 03 Mar 2022 22:07:07 GMT  
+		Size: 1.7 KB (1748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a160d3e3934a135ad5c71555099d1fe85aab6f96d34b578a76ff52a95c22dd19`  
-		Last Modified: Wed, 02 Feb 2022 03:58:32 GMT  
-		Size: 3.1 MB (3064433 bytes)  
+	-	`sha256:76bbb7dc901383749cee88f0d357711cf7059ef51211c4725d60127a431d2844`  
+		Last Modified: Thu, 03 Mar 2022 22:07:08 GMT  
+		Size: 3.1 MB (3064492 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:544b729231207ba1a406ea8cbb2764717ea55ec68a2edd74bd992f0aed167184`  
-		Last Modified: Wed, 02 Feb 2022 03:58:33 GMT  
-		Size: 6.5 MB (6505756 bytes)  
+	-	`sha256:e81b1e5a386bad953e0fc4c4625bb63aea27c931f575e665730eea7fd4f373ad`  
+		Last Modified: Thu, 03 Mar 2022 22:07:08 GMT  
+		Size: 6.5 MB (6505604 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:812461eda79e980889ebf8fbb4bcc083ecae07e83d9dbec008a049a11c83198c`  
-		Last Modified: Wed, 02 Feb 2022 03:58:31 GMT  
+	-	`sha256:7bdc1db49ec948ae1977bbbf82bca00efce13bebbaf1aabbe5ec24e1b3c268db`  
+		Last Modified: Thu, 03 Mar 2022 22:07:07 GMT  
 		Size: 149.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b06b719289f340d721f73d74afa1897ddb844e6ac715310507b397848ca00bf5`  
-		Last Modified: Tue, 01 Mar 2022 03:28:37 GMT  
+	-	`sha256:7b2f602f894c906b6b36c7b1fff4333658756e4f4837e21ded39c2d244c49405`  
+		Last Modified: Thu, 03 Mar 2022 22:07:05 GMT  
 		Size: 1.4 KB (1446 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:847315211ecbcf46497c43e6496f0d99929202469e4133dbd66fde1bc14516fe`  
-		Last Modified: Tue, 01 Mar 2022 03:28:37 GMT  
-		Size: 258.0 B  
+	-	`sha256:627a84bea5f4b8ca8fe1ec90c21ac1946afa459fef7530bc9c674a4a3078308f`  
+		Last Modified: Thu, 03 Mar 2022 22:07:05 GMT  
+		Size: 259.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc706d066f33188d1ed04797fdbe6b4557aa1994fda0d9ac682e9f141557e787`  
-		Last Modified: Tue, 01 Mar 2022 03:29:07 GMT  
-		Size: 210.7 MB (210725534 bytes)  
+	-	`sha256:fc06fa2a9f52c275570ed1ba6e5d3ab70a0a7f7c99ec7b328048a13afde1394f`  
+		Last Modified: Thu, 03 Mar 2022 22:07:34 GMT  
+		Size: 210.7 MB (210725432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:964f41340cd69cfcbe1f50456e0731b164f30ea757b327a05a2e090824e0dfab`  
-		Last Modified: Tue, 01 Mar 2022 03:28:37 GMT  
+	-	`sha256:0133c89ee92bf3428f2584f62b0d138cf4d6d1930c9a1426d20a4107f064fe79`  
+		Last Modified: Thu, 03 Mar 2022 22:07:05 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2f76c7cb5290d26d528e84a3ced68eeb548fc280d1006fec432f77261a83b96f`  
-		Last Modified: Tue, 01 Mar 2022 03:28:37 GMT  
-		Size: 5.0 KB (4953 bytes)  
+	-	`sha256:4e990167b745c8c6acbe9e08774be8420a7da623527573a2b7a767db9bd80d87`  
+		Last Modified: Thu, 03 Mar 2022 22:07:05 GMT  
+		Size: 5.0 KB (4952 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:5.0.6` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:480d15891009e31db39782ba60b15f2a348c0fa68ee7e77ae7119f9bbb45bd39
+$ docker pull mongo@sha256:16c7c417c0f803e2012d123c54b8479f733c6f902768494617f8a2f0fb515ed9
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **241.1 MB (241080635 bytes)**  
+-	Total Size: **241.1 MB (241079914 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9ab997c0224eafc739e41b80a67271718d288dc18a6018ccefcf3f04001cf5e5`
+-	Image ID: `sha256:2c4c92fc145cd21d7af328656bbdf08a6039e2d58f31f89777fd9a6f976f59f2`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 03:19:27 GMT
-ADD file:3acc741be29b0b58e44d7302ab5ce65bf65ea1b35922be58a2cee9cb708d006a in / 
-# Wed, 02 Feb 2022 03:19:27 GMT
+# Thu, 03 Mar 2022 19:41:02 GMT
+ADD file:f2fffe739729839aa17484bc4d79d33425549c5052824eac12131b16c23565d3 in / 
+# Thu, 03 Mar 2022 19:41:03 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 05:45:05 GMT
+# Thu, 03 Mar 2022 20:50:47 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 05:45:15 GMT
+# Thu, 03 Mar 2022 20:50:58 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 05:45:16 GMT
+# Thu, 03 Mar 2022 20:50:58 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 05:45:17 GMT
+# Thu, 03 Mar 2022 20:50:59 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 05:45:33 GMT
+# Thu, 03 Mar 2022 20:51:15 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 05:45:34 GMT
+# Thu, 03 Mar 2022 20:51:16 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:21:41 GMT
+# Thu, 03 Mar 2022 20:51:53 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- 'F5679A222C647C87527C2F8CB00A0BD1E2C63C11'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:21:42 GMT
+# Thu, 03 Mar 2022 20:51:54 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:21:43 GMT
+# Thu, 03 Mar 2022 20:51:55 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:21:44 GMT
+# Thu, 03 Mar 2022 20:51:56 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:21:45 GMT
+# Thu, 03 Mar 2022 20:51:57 GMT
 ENV MONGO_MAJOR=5.0
-# Tue, 01 Mar 2022 03:21:46 GMT
+# Thu, 03 Mar 2022 20:51:58 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu focal/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:21:47 GMT
+# Thu, 03 Mar 2022 20:51:59 GMT
 ENV MONGO_VERSION=5.0.6
-# Tue, 01 Mar 2022 03:22:10 GMT
+# Thu, 03 Mar 2022 20:52:25 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:22:11 GMT
+# Thu, 03 Mar 2022 20:52:26 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:22:12 GMT
+# Thu, 03 Mar 2022 20:52:27 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:22:14 GMT
+# Thu, 03 Mar 2022 20:52:29 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:22:14 GMT
+# Thu, 03 Mar 2022 20:52:29 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:22:15 GMT
+# Thu, 03 Mar 2022 20:52:30 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:22:16 GMT
+# Thu, 03 Mar 2022 20:52:31 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:bbf2fb66fa6e06dd46eb26f518f93171ee7c48be68aafb213aa7c2c12f4018ca`  
-		Last Modified: Wed, 02 Feb 2022 03:21:24 GMT  
-		Size: 27.2 MB (27169640 bytes)  
+	-	`sha256:5a7855fb0d7ae372c824d9c76be5ad2f42ce178c1910fa54a8543036b5325fd5`  
+		Last Modified: Thu, 03 Mar 2022 19:42:38 GMT  
+		Size: 27.2 MB (27169631 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc29132329410addab1460dc8766c612d802fd087c89530850ee4fc3bfccb9d1`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
-		Size: 1.7 KB (1732 bytes)  
+	-	`sha256:93835005f83fca8d11e84de6d362cbdac541df8362e80c6a0172100f8b8a27ea`  
+		Last Modified: Thu, 03 Mar 2022 21:02:38 GMT  
+		Size: 1.7 KB (1728 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35d26e50b564fed7f08788d9db622ed591d1666d153ca9c6c7e44810cb4a95af`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
-		Size: 2.9 MB (2912189 bytes)  
+	-	`sha256:85b1c8f1aa262a4f9ecfc4a311235d079693056c9b47ac47c30478ac25c87e36`  
+		Last Modified: Thu, 03 Mar 2022 21:02:36 GMT  
+		Size: 2.9 MB (2912105 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e5a900b805d7561beb888f5130ab75e7a55960fba49790bc0e71dca4c6f1d00`  
-		Last Modified: Wed, 02 Feb 2022 05:50:26 GMT  
-		Size: 6.2 MB (6248507 bytes)  
+	-	`sha256:b9207ce7ec0ce748a22c1074f1471f694ca5a46ba77f3cb86f7485a9df75f492`  
+		Last Modified: Thu, 03 Mar 2022 21:02:36 GMT  
+		Size: 6.2 MB (6248075 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4bd55587e4b045a1d2bab13971a1045c2baa6952fcc7de26890851325cd5314`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
+	-	`sha256:a98a90fbda7bccfa543c5d402318d145dc64f2d3be60275c04a10ede986569ca`  
+		Last Modified: Thu, 03 Mar 2022 21:02:35 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc38749bf9d8960a71f4abf7ce0c758193b39c67b8ba2d28aa59ebff2f7e529a`  
-		Last Modified: Tue, 01 Mar 2022 03:29:48 GMT  
-		Size: 1.4 KB (1397 bytes)  
+	-	`sha256:34ca3d6b9bafb90b33e2e2d4651318004e2bc74d76aaa8502aff9e78b134589f`  
+		Last Modified: Thu, 03 Mar 2022 21:02:33 GMT  
+		Size: 1.4 KB (1396 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1a3194606e704470d1ba35e778a7a73e6228bcc2b5f4cfa27640fccfe258590c`  
-		Last Modified: Tue, 01 Mar 2022 03:29:48 GMT  
-		Size: 260.0 B  
+	-	`sha256:2e915500804c314c72f7e604e9cd17e410eb3a9d186b1cdf94cdad32add6e750`  
+		Last Modified: Thu, 03 Mar 2022 21:02:33 GMT  
+		Size: 259.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98c72db0442151f0771f76caca21154ffe0e4a2ad392ccf5ee55af1a7e583fa3`  
-		Last Modified: Tue, 01 Mar 2022 03:30:16 GMT  
-		Size: 204.7 MB (204741708 bytes)  
+	-	`sha256:5289a3a230e1df28826d50ce17e1c042aeaecf7f6045713355263ab2a3f717e9`  
+		Last Modified: Thu, 03 Mar 2022 21:03:01 GMT  
+		Size: 204.7 MB (204741520 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:827a3d8be28432b2ebcca5c30670816409ef30b01bc7eff767d21fc294bc3347`  
-		Last Modified: Tue, 01 Mar 2022 03:29:48 GMT  
+	-	`sha256:d7e9aa7f19e73d27fbbffb762b8499cbec2c6d4e11a988d0cd4ebced973f6b04`  
+		Last Modified: Thu, 03 Mar 2022 21:02:33 GMT  
 		Size: 138.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f527d790e0afec482f8e129c9c44feabd8e8574b8b3504e24cb8660d0bd5f6a6`  
-		Last Modified: Tue, 01 Mar 2022 03:29:48 GMT  
-		Size: 4.9 KB (4949 bytes)  
+	-	`sha256:49dce2383b1d022163ec8099933f09fae45c32b13a97f3508bec941859a641b2`  
+		Last Modified: Thu, 03 Mar 2022 21:02:33 GMT  
+		Size: 4.9 KB (4947 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:5.0.6` - windows version 10.0.20348.524; amd64
@@ -17803,7 +17803,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:5.0.6-focal`
 
 ```console
-$ docker pull mongo@sha256:2fea7c24de9fff67cf15cd36c369a5d3f8d8bc52a69b5b0b1778bd3d2f079e1b
+$ docker pull mongo@sha256:f4fa206f5b2b449df15f7aa6a84e505d3df73cf1cb6a92f11cea814bd6140cb7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17814,207 +17814,207 @@ $ docker pull mongo@sha256:2fea7c24de9fff67cf15cd36c369a5d3f8d8bc52a69b5b0b1778b
 ### `mongo:5.0.6-focal` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:fbf49dc17d6c75efbe0fce975ff783291e715fefd7a07490f1ec58630cc3db2a
+$ docker pull mongo@sha256:d1e3b724d514ed8df7f73ee175057160bde1c9cf3a85536e5e96161f40e8cf63
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **248.9 MB (248868547 bytes)**  
+-	Total Size: **248.9 MB (248870002 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2785fff65421d6b0915f7e72e9a3f8683afcee046f887078dad1e8172f8f1506`
+-	Image ID: `sha256:cb2388d1f0a57b9111045828faffacb618474b114e12c1de67f96f2bbd97ebe6`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 02:14:45 GMT
-ADD file:3ccf747d646089ed7fbb43c40c45dd43e86f0674115f856efada93c7e4a63624 in / 
-# Wed, 02 Feb 2022 02:14:46 GMT
+# Thu, 03 Mar 2022 20:19:33 GMT
+ADD file:8a50ad78a668527e974b05a3dfbfd64760de3cb643ceb8a8805d21f6ceab3389 in / 
+# Thu, 03 Mar 2022 20:19:33 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 03:53:54 GMT
+# Thu, 03 Mar 2022 21:57:21 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 03:54:12 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 03:54:12 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 03:54:13 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 03:54:24 GMT
+# Thu, 03 Mar 2022 21:57:46 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 03:54:25 GMT
+# Thu, 03 Mar 2022 21:57:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:24:02 GMT
+# Thu, 03 Mar 2022 21:58:22 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- 'F5679A222C647C87527C2F8CB00A0BD1E2C63C11'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:24:02 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:24:02 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:24:02 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:24:02 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 ENV MONGO_MAJOR=5.0
-# Tue, 01 Mar 2022 03:24:03 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu focal/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:24:03 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 ENV MONGO_VERSION=5.0.6
-# Tue, 01 Mar 2022 03:24:44 GMT
+# Thu, 03 Mar 2022 21:58:49 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:24:47 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:08c01a0ec47e82ebe2bec112f373d160983a6d1e9e66627f66a3322bc403221b`  
-		Last Modified: Wed, 02 Feb 2022 02:16:20 GMT  
-		Size: 28.6 MB (28564099 bytes)  
+	-	`sha256:7c3b88808835aa80f1ef7f03083c5ae781d0f44e644537cd72de4ce6c5e62e00`  
+		Last Modified: Thu, 03 Mar 2022 20:20:44 GMT  
+		Size: 28.6 MB (28565751 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ceb608a7cda73cd80c28a22573e64e6778ba8d3cfbe6b03ed39213391a10e2a4`  
-		Last Modified: Wed, 02 Feb 2022 03:58:32 GMT  
-		Size: 1.8 KB (1750 bytes)  
+	-	`sha256:48a403577c28fafaf89a46590d69c237ae9fd5e576f96bf984e45ead657a3ef3`  
+		Last Modified: Thu, 03 Mar 2022 22:07:07 GMT  
+		Size: 1.7 KB (1748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a160d3e3934a135ad5c71555099d1fe85aab6f96d34b578a76ff52a95c22dd19`  
-		Last Modified: Wed, 02 Feb 2022 03:58:32 GMT  
-		Size: 3.1 MB (3064433 bytes)  
+	-	`sha256:76bbb7dc901383749cee88f0d357711cf7059ef51211c4725d60127a431d2844`  
+		Last Modified: Thu, 03 Mar 2022 22:07:08 GMT  
+		Size: 3.1 MB (3064492 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:544b729231207ba1a406ea8cbb2764717ea55ec68a2edd74bd992f0aed167184`  
-		Last Modified: Wed, 02 Feb 2022 03:58:33 GMT  
-		Size: 6.5 MB (6505756 bytes)  
+	-	`sha256:e81b1e5a386bad953e0fc4c4625bb63aea27c931f575e665730eea7fd4f373ad`  
+		Last Modified: Thu, 03 Mar 2022 22:07:08 GMT  
+		Size: 6.5 MB (6505604 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:812461eda79e980889ebf8fbb4bcc083ecae07e83d9dbec008a049a11c83198c`  
-		Last Modified: Wed, 02 Feb 2022 03:58:31 GMT  
+	-	`sha256:7bdc1db49ec948ae1977bbbf82bca00efce13bebbaf1aabbe5ec24e1b3c268db`  
+		Last Modified: Thu, 03 Mar 2022 22:07:07 GMT  
 		Size: 149.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b06b719289f340d721f73d74afa1897ddb844e6ac715310507b397848ca00bf5`  
-		Last Modified: Tue, 01 Mar 2022 03:28:37 GMT  
+	-	`sha256:7b2f602f894c906b6b36c7b1fff4333658756e4f4837e21ded39c2d244c49405`  
+		Last Modified: Thu, 03 Mar 2022 22:07:05 GMT  
 		Size: 1.4 KB (1446 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:847315211ecbcf46497c43e6496f0d99929202469e4133dbd66fde1bc14516fe`  
-		Last Modified: Tue, 01 Mar 2022 03:28:37 GMT  
-		Size: 258.0 B  
+	-	`sha256:627a84bea5f4b8ca8fe1ec90c21ac1946afa459fef7530bc9c674a4a3078308f`  
+		Last Modified: Thu, 03 Mar 2022 22:07:05 GMT  
+		Size: 259.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc706d066f33188d1ed04797fdbe6b4557aa1994fda0d9ac682e9f141557e787`  
-		Last Modified: Tue, 01 Mar 2022 03:29:07 GMT  
-		Size: 210.7 MB (210725534 bytes)  
+	-	`sha256:fc06fa2a9f52c275570ed1ba6e5d3ab70a0a7f7c99ec7b328048a13afde1394f`  
+		Last Modified: Thu, 03 Mar 2022 22:07:34 GMT  
+		Size: 210.7 MB (210725432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:964f41340cd69cfcbe1f50456e0731b164f30ea757b327a05a2e090824e0dfab`  
-		Last Modified: Tue, 01 Mar 2022 03:28:37 GMT  
+	-	`sha256:0133c89ee92bf3428f2584f62b0d138cf4d6d1930c9a1426d20a4107f064fe79`  
+		Last Modified: Thu, 03 Mar 2022 22:07:05 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2f76c7cb5290d26d528e84a3ced68eeb548fc280d1006fec432f77261a83b96f`  
-		Last Modified: Tue, 01 Mar 2022 03:28:37 GMT  
-		Size: 5.0 KB (4953 bytes)  
+	-	`sha256:4e990167b745c8c6acbe9e08774be8420a7da623527573a2b7a767db9bd80d87`  
+		Last Modified: Thu, 03 Mar 2022 22:07:05 GMT  
+		Size: 5.0 KB (4952 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:5.0.6-focal` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:480d15891009e31db39782ba60b15f2a348c0fa68ee7e77ae7119f9bbb45bd39
+$ docker pull mongo@sha256:16c7c417c0f803e2012d123c54b8479f733c6f902768494617f8a2f0fb515ed9
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **241.1 MB (241080635 bytes)**  
+-	Total Size: **241.1 MB (241079914 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9ab997c0224eafc739e41b80a67271718d288dc18a6018ccefcf3f04001cf5e5`
+-	Image ID: `sha256:2c4c92fc145cd21d7af328656bbdf08a6039e2d58f31f89777fd9a6f976f59f2`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 03:19:27 GMT
-ADD file:3acc741be29b0b58e44d7302ab5ce65bf65ea1b35922be58a2cee9cb708d006a in / 
-# Wed, 02 Feb 2022 03:19:27 GMT
+# Thu, 03 Mar 2022 19:41:02 GMT
+ADD file:f2fffe739729839aa17484bc4d79d33425549c5052824eac12131b16c23565d3 in / 
+# Thu, 03 Mar 2022 19:41:03 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 05:45:05 GMT
+# Thu, 03 Mar 2022 20:50:47 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 05:45:15 GMT
+# Thu, 03 Mar 2022 20:50:58 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 05:45:16 GMT
+# Thu, 03 Mar 2022 20:50:58 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 05:45:17 GMT
+# Thu, 03 Mar 2022 20:50:59 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 05:45:33 GMT
+# Thu, 03 Mar 2022 20:51:15 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 05:45:34 GMT
+# Thu, 03 Mar 2022 20:51:16 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:21:41 GMT
+# Thu, 03 Mar 2022 20:51:53 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- 'F5679A222C647C87527C2F8CB00A0BD1E2C63C11'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:21:42 GMT
+# Thu, 03 Mar 2022 20:51:54 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:21:43 GMT
+# Thu, 03 Mar 2022 20:51:55 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:21:44 GMT
+# Thu, 03 Mar 2022 20:51:56 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:21:45 GMT
+# Thu, 03 Mar 2022 20:51:57 GMT
 ENV MONGO_MAJOR=5.0
-# Tue, 01 Mar 2022 03:21:46 GMT
+# Thu, 03 Mar 2022 20:51:58 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu focal/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:21:47 GMT
+# Thu, 03 Mar 2022 20:51:59 GMT
 ENV MONGO_VERSION=5.0.6
-# Tue, 01 Mar 2022 03:22:10 GMT
+# Thu, 03 Mar 2022 20:52:25 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:22:11 GMT
+# Thu, 03 Mar 2022 20:52:26 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:22:12 GMT
+# Thu, 03 Mar 2022 20:52:27 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:22:14 GMT
+# Thu, 03 Mar 2022 20:52:29 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:22:14 GMT
+# Thu, 03 Mar 2022 20:52:29 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:22:15 GMT
+# Thu, 03 Mar 2022 20:52:30 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:22:16 GMT
+# Thu, 03 Mar 2022 20:52:31 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:bbf2fb66fa6e06dd46eb26f518f93171ee7c48be68aafb213aa7c2c12f4018ca`  
-		Last Modified: Wed, 02 Feb 2022 03:21:24 GMT  
-		Size: 27.2 MB (27169640 bytes)  
+	-	`sha256:5a7855fb0d7ae372c824d9c76be5ad2f42ce178c1910fa54a8543036b5325fd5`  
+		Last Modified: Thu, 03 Mar 2022 19:42:38 GMT  
+		Size: 27.2 MB (27169631 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc29132329410addab1460dc8766c612d802fd087c89530850ee4fc3bfccb9d1`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
-		Size: 1.7 KB (1732 bytes)  
+	-	`sha256:93835005f83fca8d11e84de6d362cbdac541df8362e80c6a0172100f8b8a27ea`  
+		Last Modified: Thu, 03 Mar 2022 21:02:38 GMT  
+		Size: 1.7 KB (1728 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35d26e50b564fed7f08788d9db622ed591d1666d153ca9c6c7e44810cb4a95af`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
-		Size: 2.9 MB (2912189 bytes)  
+	-	`sha256:85b1c8f1aa262a4f9ecfc4a311235d079693056c9b47ac47c30478ac25c87e36`  
+		Last Modified: Thu, 03 Mar 2022 21:02:36 GMT  
+		Size: 2.9 MB (2912105 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e5a900b805d7561beb888f5130ab75e7a55960fba49790bc0e71dca4c6f1d00`  
-		Last Modified: Wed, 02 Feb 2022 05:50:26 GMT  
-		Size: 6.2 MB (6248507 bytes)  
+	-	`sha256:b9207ce7ec0ce748a22c1074f1471f694ca5a46ba77f3cb86f7485a9df75f492`  
+		Last Modified: Thu, 03 Mar 2022 21:02:36 GMT  
+		Size: 6.2 MB (6248075 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4bd55587e4b045a1d2bab13971a1045c2baa6952fcc7de26890851325cd5314`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
+	-	`sha256:a98a90fbda7bccfa543c5d402318d145dc64f2d3be60275c04a10ede986569ca`  
+		Last Modified: Thu, 03 Mar 2022 21:02:35 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc38749bf9d8960a71f4abf7ce0c758193b39c67b8ba2d28aa59ebff2f7e529a`  
-		Last Modified: Tue, 01 Mar 2022 03:29:48 GMT  
-		Size: 1.4 KB (1397 bytes)  
+	-	`sha256:34ca3d6b9bafb90b33e2e2d4651318004e2bc74d76aaa8502aff9e78b134589f`  
+		Last Modified: Thu, 03 Mar 2022 21:02:33 GMT  
+		Size: 1.4 KB (1396 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1a3194606e704470d1ba35e778a7a73e6228bcc2b5f4cfa27640fccfe258590c`  
-		Last Modified: Tue, 01 Mar 2022 03:29:48 GMT  
-		Size: 260.0 B  
+	-	`sha256:2e915500804c314c72f7e604e9cd17e410eb3a9d186b1cdf94cdad32add6e750`  
+		Last Modified: Thu, 03 Mar 2022 21:02:33 GMT  
+		Size: 259.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98c72db0442151f0771f76caca21154ffe0e4a2ad392ccf5ee55af1a7e583fa3`  
-		Last Modified: Tue, 01 Mar 2022 03:30:16 GMT  
-		Size: 204.7 MB (204741708 bytes)  
+	-	`sha256:5289a3a230e1df28826d50ce17e1c042aeaecf7f6045713355263ab2a3f717e9`  
+		Last Modified: Thu, 03 Mar 2022 21:03:01 GMT  
+		Size: 204.7 MB (204741520 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:827a3d8be28432b2ebcca5c30670816409ef30b01bc7eff767d21fc294bc3347`  
-		Last Modified: Tue, 01 Mar 2022 03:29:48 GMT  
+	-	`sha256:d7e9aa7f19e73d27fbbffb762b8499cbec2c6d4e11a988d0cd4ebced973f6b04`  
+		Last Modified: Thu, 03 Mar 2022 21:02:33 GMT  
 		Size: 138.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f527d790e0afec482f8e129c9c44feabd8e8574b8b3504e24cb8660d0bd5f6a6`  
-		Last Modified: Tue, 01 Mar 2022 03:29:48 GMT  
-		Size: 4.9 KB (4949 bytes)  
+	-	`sha256:49dce2383b1d022163ec8099933f09fae45c32b13a97f3508bec941859a641b2`  
+		Last Modified: Thu, 03 Mar 2022 21:02:33 GMT  
+		Size: 4.9 KB (4947 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:5.0.6-nanoserver`
@@ -18750,7 +18750,7 @@ CMD ["mongod" "--bind_ip_all"]
 ## `mongo:focal`
 
 ```console
-$ docker pull mongo@sha256:2fea7c24de9fff67cf15cd36c369a5d3f8d8bc52a69b5b0b1778bd3d2f079e1b
+$ docker pull mongo@sha256:f4fa206f5b2b449df15f7aa6a84e505d3df73cf1cb6a92f11cea814bd6140cb7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -18761,213 +18761,213 @@ $ docker pull mongo@sha256:2fea7c24de9fff67cf15cd36c369a5d3f8d8bc52a69b5b0b1778b
 ### `mongo:focal` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:fbf49dc17d6c75efbe0fce975ff783291e715fefd7a07490f1ec58630cc3db2a
+$ docker pull mongo@sha256:d1e3b724d514ed8df7f73ee175057160bde1c9cf3a85536e5e96161f40e8cf63
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **248.9 MB (248868547 bytes)**  
+-	Total Size: **248.9 MB (248870002 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2785fff65421d6b0915f7e72e9a3f8683afcee046f887078dad1e8172f8f1506`
+-	Image ID: `sha256:cb2388d1f0a57b9111045828faffacb618474b114e12c1de67f96f2bbd97ebe6`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 02:14:45 GMT
-ADD file:3ccf747d646089ed7fbb43c40c45dd43e86f0674115f856efada93c7e4a63624 in / 
-# Wed, 02 Feb 2022 02:14:46 GMT
+# Thu, 03 Mar 2022 20:19:33 GMT
+ADD file:8a50ad78a668527e974b05a3dfbfd64760de3cb643ceb8a8805d21f6ceab3389 in / 
+# Thu, 03 Mar 2022 20:19:33 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 03:53:54 GMT
+# Thu, 03 Mar 2022 21:57:21 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 03:54:12 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 03:54:12 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 03:54:13 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 03:54:24 GMT
+# Thu, 03 Mar 2022 21:57:46 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 03:54:25 GMT
+# Thu, 03 Mar 2022 21:57:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:24:02 GMT
+# Thu, 03 Mar 2022 21:58:22 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- 'F5679A222C647C87527C2F8CB00A0BD1E2C63C11'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:24:02 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:24:02 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:24:02 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:24:02 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 ENV MONGO_MAJOR=5.0
-# Tue, 01 Mar 2022 03:24:03 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu focal/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:24:03 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 ENV MONGO_VERSION=5.0.6
-# Tue, 01 Mar 2022 03:24:44 GMT
+# Thu, 03 Mar 2022 21:58:49 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:24:47 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:08c01a0ec47e82ebe2bec112f373d160983a6d1e9e66627f66a3322bc403221b`  
-		Last Modified: Wed, 02 Feb 2022 02:16:20 GMT  
-		Size: 28.6 MB (28564099 bytes)  
+	-	`sha256:7c3b88808835aa80f1ef7f03083c5ae781d0f44e644537cd72de4ce6c5e62e00`  
+		Last Modified: Thu, 03 Mar 2022 20:20:44 GMT  
+		Size: 28.6 MB (28565751 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ceb608a7cda73cd80c28a22573e64e6778ba8d3cfbe6b03ed39213391a10e2a4`  
-		Last Modified: Wed, 02 Feb 2022 03:58:32 GMT  
-		Size: 1.8 KB (1750 bytes)  
+	-	`sha256:48a403577c28fafaf89a46590d69c237ae9fd5e576f96bf984e45ead657a3ef3`  
+		Last Modified: Thu, 03 Mar 2022 22:07:07 GMT  
+		Size: 1.7 KB (1748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a160d3e3934a135ad5c71555099d1fe85aab6f96d34b578a76ff52a95c22dd19`  
-		Last Modified: Wed, 02 Feb 2022 03:58:32 GMT  
-		Size: 3.1 MB (3064433 bytes)  
+	-	`sha256:76bbb7dc901383749cee88f0d357711cf7059ef51211c4725d60127a431d2844`  
+		Last Modified: Thu, 03 Mar 2022 22:07:08 GMT  
+		Size: 3.1 MB (3064492 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:544b729231207ba1a406ea8cbb2764717ea55ec68a2edd74bd992f0aed167184`  
-		Last Modified: Wed, 02 Feb 2022 03:58:33 GMT  
-		Size: 6.5 MB (6505756 bytes)  
+	-	`sha256:e81b1e5a386bad953e0fc4c4625bb63aea27c931f575e665730eea7fd4f373ad`  
+		Last Modified: Thu, 03 Mar 2022 22:07:08 GMT  
+		Size: 6.5 MB (6505604 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:812461eda79e980889ebf8fbb4bcc083ecae07e83d9dbec008a049a11c83198c`  
-		Last Modified: Wed, 02 Feb 2022 03:58:31 GMT  
+	-	`sha256:7bdc1db49ec948ae1977bbbf82bca00efce13bebbaf1aabbe5ec24e1b3c268db`  
+		Last Modified: Thu, 03 Mar 2022 22:07:07 GMT  
 		Size: 149.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b06b719289f340d721f73d74afa1897ddb844e6ac715310507b397848ca00bf5`  
-		Last Modified: Tue, 01 Mar 2022 03:28:37 GMT  
+	-	`sha256:7b2f602f894c906b6b36c7b1fff4333658756e4f4837e21ded39c2d244c49405`  
+		Last Modified: Thu, 03 Mar 2022 22:07:05 GMT  
 		Size: 1.4 KB (1446 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:847315211ecbcf46497c43e6496f0d99929202469e4133dbd66fde1bc14516fe`  
-		Last Modified: Tue, 01 Mar 2022 03:28:37 GMT  
-		Size: 258.0 B  
+	-	`sha256:627a84bea5f4b8ca8fe1ec90c21ac1946afa459fef7530bc9c674a4a3078308f`  
+		Last Modified: Thu, 03 Mar 2022 22:07:05 GMT  
+		Size: 259.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc706d066f33188d1ed04797fdbe6b4557aa1994fda0d9ac682e9f141557e787`  
-		Last Modified: Tue, 01 Mar 2022 03:29:07 GMT  
-		Size: 210.7 MB (210725534 bytes)  
+	-	`sha256:fc06fa2a9f52c275570ed1ba6e5d3ab70a0a7f7c99ec7b328048a13afde1394f`  
+		Last Modified: Thu, 03 Mar 2022 22:07:34 GMT  
+		Size: 210.7 MB (210725432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:964f41340cd69cfcbe1f50456e0731b164f30ea757b327a05a2e090824e0dfab`  
-		Last Modified: Tue, 01 Mar 2022 03:28:37 GMT  
+	-	`sha256:0133c89ee92bf3428f2584f62b0d138cf4d6d1930c9a1426d20a4107f064fe79`  
+		Last Modified: Thu, 03 Mar 2022 22:07:05 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2f76c7cb5290d26d528e84a3ced68eeb548fc280d1006fec432f77261a83b96f`  
-		Last Modified: Tue, 01 Mar 2022 03:28:37 GMT  
-		Size: 5.0 KB (4953 bytes)  
+	-	`sha256:4e990167b745c8c6acbe9e08774be8420a7da623527573a2b7a767db9bd80d87`  
+		Last Modified: Thu, 03 Mar 2022 22:07:05 GMT  
+		Size: 5.0 KB (4952 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:focal` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:480d15891009e31db39782ba60b15f2a348c0fa68ee7e77ae7119f9bbb45bd39
+$ docker pull mongo@sha256:16c7c417c0f803e2012d123c54b8479f733c6f902768494617f8a2f0fb515ed9
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **241.1 MB (241080635 bytes)**  
+-	Total Size: **241.1 MB (241079914 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9ab997c0224eafc739e41b80a67271718d288dc18a6018ccefcf3f04001cf5e5`
+-	Image ID: `sha256:2c4c92fc145cd21d7af328656bbdf08a6039e2d58f31f89777fd9a6f976f59f2`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 03:19:27 GMT
-ADD file:3acc741be29b0b58e44d7302ab5ce65bf65ea1b35922be58a2cee9cb708d006a in / 
-# Wed, 02 Feb 2022 03:19:27 GMT
+# Thu, 03 Mar 2022 19:41:02 GMT
+ADD file:f2fffe739729839aa17484bc4d79d33425549c5052824eac12131b16c23565d3 in / 
+# Thu, 03 Mar 2022 19:41:03 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 05:45:05 GMT
+# Thu, 03 Mar 2022 20:50:47 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 05:45:15 GMT
+# Thu, 03 Mar 2022 20:50:58 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 05:45:16 GMT
+# Thu, 03 Mar 2022 20:50:58 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 05:45:17 GMT
+# Thu, 03 Mar 2022 20:50:59 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 05:45:33 GMT
+# Thu, 03 Mar 2022 20:51:15 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 05:45:34 GMT
+# Thu, 03 Mar 2022 20:51:16 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:21:41 GMT
+# Thu, 03 Mar 2022 20:51:53 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- 'F5679A222C647C87527C2F8CB00A0BD1E2C63C11'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:21:42 GMT
+# Thu, 03 Mar 2022 20:51:54 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:21:43 GMT
+# Thu, 03 Mar 2022 20:51:55 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:21:44 GMT
+# Thu, 03 Mar 2022 20:51:56 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:21:45 GMT
+# Thu, 03 Mar 2022 20:51:57 GMT
 ENV MONGO_MAJOR=5.0
-# Tue, 01 Mar 2022 03:21:46 GMT
+# Thu, 03 Mar 2022 20:51:58 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu focal/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:21:47 GMT
+# Thu, 03 Mar 2022 20:51:59 GMT
 ENV MONGO_VERSION=5.0.6
-# Tue, 01 Mar 2022 03:22:10 GMT
+# Thu, 03 Mar 2022 20:52:25 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:22:11 GMT
+# Thu, 03 Mar 2022 20:52:26 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:22:12 GMT
+# Thu, 03 Mar 2022 20:52:27 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:22:14 GMT
+# Thu, 03 Mar 2022 20:52:29 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:22:14 GMT
+# Thu, 03 Mar 2022 20:52:29 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:22:15 GMT
+# Thu, 03 Mar 2022 20:52:30 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:22:16 GMT
+# Thu, 03 Mar 2022 20:52:31 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:bbf2fb66fa6e06dd46eb26f518f93171ee7c48be68aafb213aa7c2c12f4018ca`  
-		Last Modified: Wed, 02 Feb 2022 03:21:24 GMT  
-		Size: 27.2 MB (27169640 bytes)  
+	-	`sha256:5a7855fb0d7ae372c824d9c76be5ad2f42ce178c1910fa54a8543036b5325fd5`  
+		Last Modified: Thu, 03 Mar 2022 19:42:38 GMT  
+		Size: 27.2 MB (27169631 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc29132329410addab1460dc8766c612d802fd087c89530850ee4fc3bfccb9d1`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
-		Size: 1.7 KB (1732 bytes)  
+	-	`sha256:93835005f83fca8d11e84de6d362cbdac541df8362e80c6a0172100f8b8a27ea`  
+		Last Modified: Thu, 03 Mar 2022 21:02:38 GMT  
+		Size: 1.7 KB (1728 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35d26e50b564fed7f08788d9db622ed591d1666d153ca9c6c7e44810cb4a95af`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
-		Size: 2.9 MB (2912189 bytes)  
+	-	`sha256:85b1c8f1aa262a4f9ecfc4a311235d079693056c9b47ac47c30478ac25c87e36`  
+		Last Modified: Thu, 03 Mar 2022 21:02:36 GMT  
+		Size: 2.9 MB (2912105 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e5a900b805d7561beb888f5130ab75e7a55960fba49790bc0e71dca4c6f1d00`  
-		Last Modified: Wed, 02 Feb 2022 05:50:26 GMT  
-		Size: 6.2 MB (6248507 bytes)  
+	-	`sha256:b9207ce7ec0ce748a22c1074f1471f694ca5a46ba77f3cb86f7485a9df75f492`  
+		Last Modified: Thu, 03 Mar 2022 21:02:36 GMT  
+		Size: 6.2 MB (6248075 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4bd55587e4b045a1d2bab13971a1045c2baa6952fcc7de26890851325cd5314`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
+	-	`sha256:a98a90fbda7bccfa543c5d402318d145dc64f2d3be60275c04a10ede986569ca`  
+		Last Modified: Thu, 03 Mar 2022 21:02:35 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc38749bf9d8960a71f4abf7ce0c758193b39c67b8ba2d28aa59ebff2f7e529a`  
-		Last Modified: Tue, 01 Mar 2022 03:29:48 GMT  
-		Size: 1.4 KB (1397 bytes)  
+	-	`sha256:34ca3d6b9bafb90b33e2e2d4651318004e2bc74d76aaa8502aff9e78b134589f`  
+		Last Modified: Thu, 03 Mar 2022 21:02:33 GMT  
+		Size: 1.4 KB (1396 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1a3194606e704470d1ba35e778a7a73e6228bcc2b5f4cfa27640fccfe258590c`  
-		Last Modified: Tue, 01 Mar 2022 03:29:48 GMT  
-		Size: 260.0 B  
+	-	`sha256:2e915500804c314c72f7e604e9cd17e410eb3a9d186b1cdf94cdad32add6e750`  
+		Last Modified: Thu, 03 Mar 2022 21:02:33 GMT  
+		Size: 259.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98c72db0442151f0771f76caca21154ffe0e4a2ad392ccf5ee55af1a7e583fa3`  
-		Last Modified: Tue, 01 Mar 2022 03:30:16 GMT  
-		Size: 204.7 MB (204741708 bytes)  
+	-	`sha256:5289a3a230e1df28826d50ce17e1c042aeaecf7f6045713355263ab2a3f717e9`  
+		Last Modified: Thu, 03 Mar 2022 21:03:01 GMT  
+		Size: 204.7 MB (204741520 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:827a3d8be28432b2ebcca5c30670816409ef30b01bc7eff767d21fc294bc3347`  
-		Last Modified: Tue, 01 Mar 2022 03:29:48 GMT  
+	-	`sha256:d7e9aa7f19e73d27fbbffb762b8499cbec2c6d4e11a988d0cd4ebced973f6b04`  
+		Last Modified: Thu, 03 Mar 2022 21:02:33 GMT  
 		Size: 138.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f527d790e0afec482f8e129c9c44feabd8e8574b8b3504e24cb8660d0bd5f6a6`  
-		Last Modified: Tue, 01 Mar 2022 03:29:48 GMT  
-		Size: 4.9 KB (4949 bytes)  
+	-	`sha256:49dce2383b1d022163ec8099933f09fae45c32b13a97f3508bec941859a641b2`  
+		Last Modified: Thu, 03 Mar 2022 21:02:33 GMT  
+		Size: 4.9 KB (4947 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mongo:latest`
 
 ```console
-$ docker pull mongo@sha256:1334cc689aec65d29af23a14b00c743c43343c442435aaa903abbb6369804d85
+$ docker pull mongo@sha256:b0abf19259902648be5ac17479dd4c65e037c3292c9eb09181f087687bca5102
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -18980,207 +18980,207 @@ $ docker pull mongo@sha256:1334cc689aec65d29af23a14b00c743c43343c442435aaa903abb
 ### `mongo:latest` - linux; amd64
 
 ```console
-$ docker pull mongo@sha256:fbf49dc17d6c75efbe0fce975ff783291e715fefd7a07490f1ec58630cc3db2a
+$ docker pull mongo@sha256:d1e3b724d514ed8df7f73ee175057160bde1c9cf3a85536e5e96161f40e8cf63
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **248.9 MB (248868547 bytes)**  
+-	Total Size: **248.9 MB (248870002 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2785fff65421d6b0915f7e72e9a3f8683afcee046f887078dad1e8172f8f1506`
+-	Image ID: `sha256:cb2388d1f0a57b9111045828faffacb618474b114e12c1de67f96f2bbd97ebe6`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 02:14:45 GMT
-ADD file:3ccf747d646089ed7fbb43c40c45dd43e86f0674115f856efada93c7e4a63624 in / 
-# Wed, 02 Feb 2022 02:14:46 GMT
+# Thu, 03 Mar 2022 20:19:33 GMT
+ADD file:8a50ad78a668527e974b05a3dfbfd64760de3cb643ceb8a8805d21f6ceab3389 in / 
+# Thu, 03 Mar 2022 20:19:33 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 03:53:54 GMT
+# Thu, 03 Mar 2022 21:57:21 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 03:54:12 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 03:54:12 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 03:54:13 GMT
+# Thu, 03 Mar 2022 21:57:29 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 03:54:24 GMT
+# Thu, 03 Mar 2022 21:57:46 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 03:54:25 GMT
+# Thu, 03 Mar 2022 21:57:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:24:02 GMT
+# Thu, 03 Mar 2022 21:58:22 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- 'F5679A222C647C87527C2F8CB00A0BD1E2C63C11'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:24:02 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:24:02 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:24:02 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:24:02 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 ENV MONGO_MAJOR=5.0
-# Tue, 01 Mar 2022 03:24:03 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu focal/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:24:03 GMT
+# Thu, 03 Mar 2022 21:58:23 GMT
 ENV MONGO_VERSION=5.0.6
-# Tue, 01 Mar 2022 03:24:44 GMT
+# Thu, 03 Mar 2022 21:58:49 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:24:46 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:24:47 GMT
+# Thu, 03 Mar 2022 21:58:51 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:08c01a0ec47e82ebe2bec112f373d160983a6d1e9e66627f66a3322bc403221b`  
-		Last Modified: Wed, 02 Feb 2022 02:16:20 GMT  
-		Size: 28.6 MB (28564099 bytes)  
+	-	`sha256:7c3b88808835aa80f1ef7f03083c5ae781d0f44e644537cd72de4ce6c5e62e00`  
+		Last Modified: Thu, 03 Mar 2022 20:20:44 GMT  
+		Size: 28.6 MB (28565751 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ceb608a7cda73cd80c28a22573e64e6778ba8d3cfbe6b03ed39213391a10e2a4`  
-		Last Modified: Wed, 02 Feb 2022 03:58:32 GMT  
-		Size: 1.8 KB (1750 bytes)  
+	-	`sha256:48a403577c28fafaf89a46590d69c237ae9fd5e576f96bf984e45ead657a3ef3`  
+		Last Modified: Thu, 03 Mar 2022 22:07:07 GMT  
+		Size: 1.7 KB (1748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a160d3e3934a135ad5c71555099d1fe85aab6f96d34b578a76ff52a95c22dd19`  
-		Last Modified: Wed, 02 Feb 2022 03:58:32 GMT  
-		Size: 3.1 MB (3064433 bytes)  
+	-	`sha256:76bbb7dc901383749cee88f0d357711cf7059ef51211c4725d60127a431d2844`  
+		Last Modified: Thu, 03 Mar 2022 22:07:08 GMT  
+		Size: 3.1 MB (3064492 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:544b729231207ba1a406ea8cbb2764717ea55ec68a2edd74bd992f0aed167184`  
-		Last Modified: Wed, 02 Feb 2022 03:58:33 GMT  
-		Size: 6.5 MB (6505756 bytes)  
+	-	`sha256:e81b1e5a386bad953e0fc4c4625bb63aea27c931f575e665730eea7fd4f373ad`  
+		Last Modified: Thu, 03 Mar 2022 22:07:08 GMT  
+		Size: 6.5 MB (6505604 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:812461eda79e980889ebf8fbb4bcc083ecae07e83d9dbec008a049a11c83198c`  
-		Last Modified: Wed, 02 Feb 2022 03:58:31 GMT  
+	-	`sha256:7bdc1db49ec948ae1977bbbf82bca00efce13bebbaf1aabbe5ec24e1b3c268db`  
+		Last Modified: Thu, 03 Mar 2022 22:07:07 GMT  
 		Size: 149.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b06b719289f340d721f73d74afa1897ddb844e6ac715310507b397848ca00bf5`  
-		Last Modified: Tue, 01 Mar 2022 03:28:37 GMT  
+	-	`sha256:7b2f602f894c906b6b36c7b1fff4333658756e4f4837e21ded39c2d244c49405`  
+		Last Modified: Thu, 03 Mar 2022 22:07:05 GMT  
 		Size: 1.4 KB (1446 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:847315211ecbcf46497c43e6496f0d99929202469e4133dbd66fde1bc14516fe`  
-		Last Modified: Tue, 01 Mar 2022 03:28:37 GMT  
-		Size: 258.0 B  
+	-	`sha256:627a84bea5f4b8ca8fe1ec90c21ac1946afa459fef7530bc9c674a4a3078308f`  
+		Last Modified: Thu, 03 Mar 2022 22:07:05 GMT  
+		Size: 259.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc706d066f33188d1ed04797fdbe6b4557aa1994fda0d9ac682e9f141557e787`  
-		Last Modified: Tue, 01 Mar 2022 03:29:07 GMT  
-		Size: 210.7 MB (210725534 bytes)  
+	-	`sha256:fc06fa2a9f52c275570ed1ba6e5d3ab70a0a7f7c99ec7b328048a13afde1394f`  
+		Last Modified: Thu, 03 Mar 2022 22:07:34 GMT  
+		Size: 210.7 MB (210725432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:964f41340cd69cfcbe1f50456e0731b164f30ea757b327a05a2e090824e0dfab`  
-		Last Modified: Tue, 01 Mar 2022 03:28:37 GMT  
+	-	`sha256:0133c89ee92bf3428f2584f62b0d138cf4d6d1930c9a1426d20a4107f064fe79`  
+		Last Modified: Thu, 03 Mar 2022 22:07:05 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2f76c7cb5290d26d528e84a3ced68eeb548fc280d1006fec432f77261a83b96f`  
-		Last Modified: Tue, 01 Mar 2022 03:28:37 GMT  
-		Size: 5.0 KB (4953 bytes)  
+	-	`sha256:4e990167b745c8c6acbe9e08774be8420a7da623527573a2b7a767db9bd80d87`  
+		Last Modified: Thu, 03 Mar 2022 22:07:05 GMT  
+		Size: 5.0 KB (4952 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull mongo@sha256:480d15891009e31db39782ba60b15f2a348c0fa68ee7e77ae7119f9bbb45bd39
+$ docker pull mongo@sha256:16c7c417c0f803e2012d123c54b8479f733c6f902768494617f8a2f0fb515ed9
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **241.1 MB (241080635 bytes)**  
+-	Total Size: **241.1 MB (241079914 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9ab997c0224eafc739e41b80a67271718d288dc18a6018ccefcf3f04001cf5e5`
+-	Image ID: `sha256:2c4c92fc145cd21d7af328656bbdf08a6039e2d58f31f89777fd9a6f976f59f2`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
 ```dockerfile
-# Wed, 02 Feb 2022 03:19:27 GMT
-ADD file:3acc741be29b0b58e44d7302ab5ce65bf65ea1b35922be58a2cee9cb708d006a in / 
-# Wed, 02 Feb 2022 03:19:27 GMT
+# Thu, 03 Mar 2022 19:41:02 GMT
+ADD file:f2fffe739729839aa17484bc4d79d33425549c5052824eac12131b16c23565d3 in / 
+# Thu, 03 Mar 2022 19:41:03 GMT
 CMD ["bash"]
-# Wed, 02 Feb 2022 05:45:05 GMT
+# Thu, 03 Mar 2022 20:50:47 GMT
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
-# Wed, 02 Feb 2022 05:45:15 GMT
+# Thu, 03 Mar 2022 20:50:58 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		jq 		numactl 	; 	if ! command -v ps > /dev/null; then 		apt-get install -y --no-install-recommends procps; 	fi; 	rm -rf /var/lib/apt/lists/*
-# Wed, 02 Feb 2022 05:45:16 GMT
+# Thu, 03 Mar 2022 20:50:58 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Feb 2022 05:45:17 GMT
+# Thu, 03 Mar 2022 20:50:59 GMT
 ENV JSYAML_VERSION=3.13.1
-# Wed, 02 Feb 2022 05:45:33 GMT
+# Thu, 03 Mar 2022 20:51:15 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		wget 	; 	if ! command -v gpg > /dev/null; then 		apt-get install -y --no-install-recommends gnupg dirmngr; 		savedAptMark="$savedAptMark gnupg dirmngr"; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc; 		wget -O /js-yaml.js "https://github.com/nodeca/js-yaml/raw/${JSYAML_VERSION}/dist/js-yaml.js"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 02 Feb 2022 05:45:34 GMT
+# Thu, 03 Mar 2022 20:51:16 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 01 Mar 2022 03:21:41 GMT
+# Thu, 03 Mar 2022 20:51:53 GMT
 RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	set -- 'F5679A222C647C87527C2F8CB00A0BD1E2C63C11'; 	for key; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	mkdir -p /etc/apt/keyrings; 	gpg --batch --export "$@" > /etc/apt/keyrings/mongodb.gpg; 	command -v gpgconf && gpgconf --kill all || :; 	rm -r "$GNUPGHOME"
-# Tue, 01 Mar 2022 03:21:42 GMT
+# Thu, 03 Mar 2022 20:51:54 GMT
 ARG MONGO_PACKAGE=mongodb-org
-# Tue, 01 Mar 2022 03:21:43 GMT
+# Thu, 03 Mar 2022 20:51:55 GMT
 ARG MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:21:44 GMT
+# Thu, 03 Mar 2022 20:51:56 GMT
 ENV MONGO_PACKAGE=mongodb-org MONGO_REPO=repo.mongodb.org
-# Tue, 01 Mar 2022 03:21:45 GMT
+# Thu, 03 Mar 2022 20:51:57 GMT
 ENV MONGO_MAJOR=5.0
-# Tue, 01 Mar 2022 03:21:46 GMT
+# Thu, 03 Mar 2022 20:51:58 GMT
 RUN echo "deb [ signed-by=/etc/apt/keyrings/mongodb.gpg ] http://$MONGO_REPO/apt/ubuntu focal/${MONGO_PACKAGE%-unstable}/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/${MONGO_PACKAGE%-unstable}.list"
-# Tue, 01 Mar 2022 03:21:47 GMT
+# Thu, 03 Mar 2022 20:51:59 GMT
 ENV MONGO_VERSION=5.0.6
-# Tue, 01 Mar 2022 03:22:10 GMT
+# Thu, 03 Mar 2022 20:52:25 GMT
 RUN set -x 	&& export DEBIAN_FRONTEND=noninteractive 	&& apt-get update 	&& ln -s /bin/true /usr/local/bin/systemctl 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_VERSION 		${MONGO_PACKAGE}-server=$MONGO_VERSION 		${MONGO_PACKAGE}-shell=$MONGO_VERSION 		${MONGO_PACKAGE}-mongos=$MONGO_VERSION 		${MONGO_PACKAGE}-tools=$MONGO_VERSION 	&& rm -f /usr/local/bin/systemctl 	&& rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mongodb 	&& mv /etc/mongod.conf /etc/mongod.conf.orig
-# Tue, 01 Mar 2022 03:22:11 GMT
+# Thu, 03 Mar 2022 20:52:26 GMT
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
-# Tue, 01 Mar 2022 03:22:12 GMT
+# Thu, 03 Mar 2022 20:52:27 GMT
 VOLUME [/data/db /data/configdb]
-# Tue, 01 Mar 2022 03:22:14 GMT
+# Thu, 03 Mar 2022 20:52:29 GMT
 COPY file:ff519c7454e20e6f14c42932b8d6eaee066ed739bfbbd2a6e884d0a7ffeead38 in /usr/local/bin/ 
-# Tue, 01 Mar 2022 03:22:14 GMT
+# Thu, 03 Mar 2022 20:52:29 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Mar 2022 03:22:15 GMT
+# Thu, 03 Mar 2022 20:52:30 GMT
 EXPOSE 27017
-# Tue, 01 Mar 2022 03:22:16 GMT
+# Thu, 03 Mar 2022 20:52:31 GMT
 CMD ["mongod"]
 ```
 
 -	Layers:
-	-	`sha256:bbf2fb66fa6e06dd46eb26f518f93171ee7c48be68aafb213aa7c2c12f4018ca`  
-		Last Modified: Wed, 02 Feb 2022 03:21:24 GMT  
-		Size: 27.2 MB (27169640 bytes)  
+	-	`sha256:5a7855fb0d7ae372c824d9c76be5ad2f42ce178c1910fa54a8543036b5325fd5`  
+		Last Modified: Thu, 03 Mar 2022 19:42:38 GMT  
+		Size: 27.2 MB (27169631 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc29132329410addab1460dc8766c612d802fd087c89530850ee4fc3bfccb9d1`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
-		Size: 1.7 KB (1732 bytes)  
+	-	`sha256:93835005f83fca8d11e84de6d362cbdac541df8362e80c6a0172100f8b8a27ea`  
+		Last Modified: Thu, 03 Mar 2022 21:02:38 GMT  
+		Size: 1.7 KB (1728 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35d26e50b564fed7f08788d9db622ed591d1666d153ca9c6c7e44810cb4a95af`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
-		Size: 2.9 MB (2912189 bytes)  
+	-	`sha256:85b1c8f1aa262a4f9ecfc4a311235d079693056c9b47ac47c30478ac25c87e36`  
+		Last Modified: Thu, 03 Mar 2022 21:02:36 GMT  
+		Size: 2.9 MB (2912105 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e5a900b805d7561beb888f5130ab75e7a55960fba49790bc0e71dca4c6f1d00`  
-		Last Modified: Wed, 02 Feb 2022 05:50:26 GMT  
-		Size: 6.2 MB (6248507 bytes)  
+	-	`sha256:b9207ce7ec0ce748a22c1074f1471f694ca5a46ba77f3cb86f7485a9df75f492`  
+		Last Modified: Thu, 03 Mar 2022 21:02:36 GMT  
+		Size: 6.2 MB (6248075 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4bd55587e4b045a1d2bab13971a1045c2baa6952fcc7de26890851325cd5314`  
-		Last Modified: Wed, 02 Feb 2022 05:50:25 GMT  
+	-	`sha256:a98a90fbda7bccfa543c5d402318d145dc64f2d3be60275c04a10ede986569ca`  
+		Last Modified: Thu, 03 Mar 2022 21:02:35 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc38749bf9d8960a71f4abf7ce0c758193b39c67b8ba2d28aa59ebff2f7e529a`  
-		Last Modified: Tue, 01 Mar 2022 03:29:48 GMT  
-		Size: 1.4 KB (1397 bytes)  
+	-	`sha256:34ca3d6b9bafb90b33e2e2d4651318004e2bc74d76aaa8502aff9e78b134589f`  
+		Last Modified: Thu, 03 Mar 2022 21:02:33 GMT  
+		Size: 1.4 KB (1396 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1a3194606e704470d1ba35e778a7a73e6228bcc2b5f4cfa27640fccfe258590c`  
-		Last Modified: Tue, 01 Mar 2022 03:29:48 GMT  
-		Size: 260.0 B  
+	-	`sha256:2e915500804c314c72f7e604e9cd17e410eb3a9d186b1cdf94cdad32add6e750`  
+		Last Modified: Thu, 03 Mar 2022 21:02:33 GMT  
+		Size: 259.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98c72db0442151f0771f76caca21154ffe0e4a2ad392ccf5ee55af1a7e583fa3`  
-		Last Modified: Tue, 01 Mar 2022 03:30:16 GMT  
-		Size: 204.7 MB (204741708 bytes)  
+	-	`sha256:5289a3a230e1df28826d50ce17e1c042aeaecf7f6045713355263ab2a3f717e9`  
+		Last Modified: Thu, 03 Mar 2022 21:03:01 GMT  
+		Size: 204.7 MB (204741520 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:827a3d8be28432b2ebcca5c30670816409ef30b01bc7eff767d21fc294bc3347`  
-		Last Modified: Tue, 01 Mar 2022 03:29:48 GMT  
+	-	`sha256:d7e9aa7f19e73d27fbbffb762b8499cbec2c6d4e11a988d0cd4ebced973f6b04`  
+		Last Modified: Thu, 03 Mar 2022 21:02:33 GMT  
 		Size: 138.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f527d790e0afec482f8e129c9c44feabd8e8574b8b3504e24cb8660d0bd5f6a6`  
-		Last Modified: Tue, 01 Mar 2022 03:29:48 GMT  
-		Size: 4.9 KB (4949 bytes)  
+	-	`sha256:49dce2383b1d022163ec8099933f09fae45c32b13a97f3508bec941859a641b2`  
+		Last Modified: Thu, 03 Mar 2022 21:02:33 GMT  
+		Size: 4.9 KB (4947 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mongo:latest` - windows version 10.0.20348.524; amd64
