@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cd01e8caec1217579cdc07afc66d5688f3bd99e1d412846c3940d12396108377`
-- Created: `2022-02-17T22:56:34.87063456Z`
-- Virtual Size: ~ 204.51 Mb  
+- Image ID: `sha256:98e3c0cde89f1b074a9eee4ee43787374c182c6034272dc0bfb2c53e9d54ace4`
+- Created: `2022-03-03T14:29:58.203754617Z`
+- Virtual Size: ~ 187.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -100,16 +100,16 @@ Apache-2.0 CC0-1.0
 ### `apk` package: `bash`
 
 ```console
-bash-5.1.8-r0 description:
+bash-5.1.16-r0 description:
 The GNU Bourne Again shell
 
-bash-5.1.8-r0 webpage:
+bash-5.1.16-r0 webpage:
 https://www.gnu.org/software/bash/bash.html
 
-bash-5.1.8-r0 installed size:
+bash-5.1.16-r0 installed size:
 1296 KiB
 
-bash-5.1.8-r0 license:
+bash-5.1.16-r0 license:
 GPL-3.0-or-later
 
 ```
