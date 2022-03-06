@@ -136,7 +136,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url curl-7.79.1-1.fc35
-http://download-ib01.fedoraproject.org/pub/fedora/linux/updates/35/Everything/source/tree/Packages/c/curl-7.79.1-1.fc35.src.rpm
+http://fedora.mirror.constant.com/fedora/linux/updates/35/Everything/source/tree/Packages/c/curl-7.79.1-1.fc35.src.rpm
 ```
 
 ### `rpm` package: `cyrus-sasl-lib-2.1.27-13.fc35.x86_64`
@@ -308,7 +308,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url gdbm-libs-1.22-1.fc35
-http://download-ib01.fedoraproject.org/pub/fedora/linux/updates/35/Everything/source/tree/Packages/g/gdbm-1.22-1.fc35.src.rpm
+http://fedora.mirror.constant.com/fedora/linux/updates/35/Everything/source/tree/Packages/g/gdbm-1.22-1.fc35.src.rpm
 ```
 
 ### `rpm` package: `glib2-2.70.1-1.fc35.x86_64`
@@ -377,7 +377,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url gpgme-1.15.1-6.fc35
-http://download-ib01.fedoraproject.org/pub/fedora/linux/updates/35/Everything/source/tree/Packages/g/gpgme-1.15.1-6.fc35.src.rpm
+http://fedora.mirror.constant.com/fedora/linux/updates/35/Everything/source/tree/Packages/g/gpgme-1.15.1-6.fc35.src.rpm
 ```
 
 ### `rpm` package: `grep-3.6-4.fc35.x86_64`
@@ -564,7 +564,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libcurl-7.79.1-1.fc35
-http://download-ib01.fedoraproject.org/pub/fedora/linux/updates/35/Everything/source/tree/Packages/c/curl-7.79.1-1.fc35.src.rpm
+http://fedora.mirror.constant.com/fedora/linux/updates/35/Everything/source/tree/Packages/c/curl-7.79.1-1.fc35.src.rpm
 ```
 
 ### `rpm` package: `libdb-5.3.28-50.fc35.x86_64`
@@ -619,7 +619,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libfsverity-1.4-6.fc35
-http://download-ib01.fedoraproject.org/pub/fedora/linux/updates/35/Everything/source/tree/Packages/f/fsverity-utils-1.4-6.fc35.src.rpm
+http://fedora.mirror.constant.com/fedora/linux/updates/35/Everything/source/tree/Packages/f/fsverity-utils-1.4-6.fc35.src.rpm
 ```
 
 ### `rpm` package: `libgcc-11.2.1-1.fc35.x86_64`
@@ -663,7 +663,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libgpg-error-1.43-1.fc35
-http://download-ib01.fedoraproject.org/pub/fedora/linux/updates/35/Everything/source/tree/Packages/l/libgpg-error-1.43-1.fc35.src.rpm
+http://fedora.mirror.constant.com/fedora/linux/updates/35/Everything/source/tree/Packages/l/libgpg-error-1.43-1.fc35.src.rpm
 ```
 
 ### `rpm` package: `libidn2-2.3.2-3.fc35.x86_64`
@@ -784,7 +784,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libselinux-3.3-1.fc35
-http://download-ib01.fedoraproject.org/pub/fedora/linux/updates/35/Everything/source/tree/Packages/l/libselinux-3.3-1.fc35.src.rpm
+http://fedora.mirror.constant.com/fedora/linux/updates/35/Everything/source/tree/Packages/l/libselinux-3.3-1.fc35.src.rpm
 ```
 
 ### `rpm` package: `libsemanage-3.3-1.fc35.x86_64`
@@ -795,7 +795,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libsemanage-3.3-1.fc35
-http://download-ib01.fedoraproject.org/pub/fedora/linux/updates/35/Everything/source/tree/Packages/l/libsemanage-3.3-1.fc35.src.rpm
+http://fedora.mirror.constant.com/fedora/linux/updates/35/Everything/source/tree/Packages/l/libsemanage-3.3-1.fc35.src.rpm
 ```
 
 ### `rpm` package: `libsepol-3.3-2.fc35.x86_64`
@@ -806,7 +806,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libsepol-3.3-2.fc35
-http://download-ib01.fedoraproject.org/pub/fedora/linux/updates/35/Everything/source/tree/Packages/l/libsepol-3.3-2.fc35.src.rpm
+http://fedora.mirror.constant.com/fedora/linux/updates/35/Everything/source/tree/Packages/l/libsepol-3.3-2.fc35.src.rpm
 ```
 
 ### `rpm` package: `libsigsegv-2.13-3.fc35.x86_64`
@@ -1180,7 +1180,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url python-pip-wheel-21.2.3-4.fc35.noarch
-http://download-ib01.fedoraproject.org/pub/fedora/linux/updates/35/Everything/source/tree/Packages/p/python-pip-21.2.3-4.fc35.src.rpm
+http://fedora.mirror.constant.com/fedora/linux/updates/35/Everything/source/tree/Packages/p/python-pip-21.2.3-4.fc35.src.rpm
 ```
 
 ### `rpm` package: `python-setuptools-wheel-57.4.0-1.fc35.noarch`
@@ -1224,7 +1224,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url python3-gpg-1.15.1-6.fc35
-http://download-ib01.fedoraproject.org/pub/fedora/linux/updates/35/Everything/source/tree/Packages/g/gpgme-1.15.1-6.fc35.src.rpm
+http://fedora.mirror.constant.com/fedora/linux/updates/35/Everything/source/tree/Packages/g/gpgme-1.15.1-6.fc35.src.rpm
 ```
 
 ### `rpm` package: `python3-hawkey-0.64.0-1.fc35.x86_64`
@@ -1428,7 +1428,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url tzdata-2021e-1.fc35.noarch
-http://download-ib01.fedoraproject.org/pub/fedora/linux/updates/35/Everything/source/tree/Packages/t/tzdata-2021e-1.fc35.src.rpm
+http://fedora.mirror.constant.com/fedora/linux/updates/35/Everything/source/tree/Packages/t/tzdata-2021e-1.fc35.src.rpm
 ```
 
 ### `rpm` package: `vim-minimal-8.2.3642-1.fc35.x86_64`
