@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3cda3a63dc41c4110783afc21122b5db61e7021cfd4d523afb17816c69524782`
-- Created: `2022-02-02T03:15:29.261137114Z`
-- Virtual Size: ~ 681.14 Mb  
+- Image ID: `sha256:4a3695657224bb682e26fa46c3ed7043a7ceb4d84169f6d351b982bca9d0034b`
+- Created: `2022-03-03T21:39:59.461346453Z`
+- Virtual Size: ~ 681.15 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/gzserver_entrypoint.sh"]`
@@ -528,12 +528,12 @@ $ apt-get source -qq --print-uris curl=7.58.0-2ubuntu3.16
 'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0-2ubuntu3.16.debian.tar.xz' curl_7.58.0-2ubuntu3.16.debian.tar.xz 64604 SHA512:dc79fb59f9b0a7520b3b99b27136a2a05b66867a615f54e4294f7a2232a43b6b32cea506deb54f2e7564a44e9a24ebdd4c07fcf199e0b3f41415dc196c505f0d
 ```
 
-### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3ubuntu2.3`
+### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3ubuntu2.4`
 
 Binary Packages:
 
-- `libsasl2-2:amd64=2.1.27~101-g0780600+dfsg-3ubuntu2.3`
-- `libsasl2-modules-db:amd64=2.1.27~101-g0780600+dfsg-3ubuntu2.3`
+- `libsasl2-2:amd64=2.1.27~101-g0780600+dfsg-3ubuntu2.4`
+- `libsasl2-modules-db:amd64=2.1.27~101-g0780600+dfsg-3ubuntu2.4`
 
 Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/libsasl2-modules-db/copyright`)
 
@@ -541,9 +541,14 @@ Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `GPL-3+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris cyrus-sasl2=2.1.27~101-g0780600+dfsg-3ubuntu2.4
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27%7e101-g0780600%2bdfsg-3ubuntu2.4.dsc' cyrus-sasl2_2.1.27~101-g0780600+dfsg-3ubuntu2.4.dsc 3313 SHA512:43fb4775db1967b0bc2fb4691dc2b754151eccb4d0344e83ed412dded8e1a6e61ec495579b06a05f6b5e5a35364f12681f7bf63c4649536f8d94ae640bdf7a95
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27%7e101-g0780600%2bdfsg.orig.tar.xz' cyrus-sasl2_2.1.27~101-g0780600+dfsg.orig.tar.xz 1143888 SHA512:cd684133dcea5856301f50e378ff105e88f8008af06bd4e02fb9a62a88ece2ee1901ea2776ef3d941d6a3cfc2a77875c08054326293818db89e5f9995c4cd524
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27%7e101-g0780600%2bdfsg-3ubuntu2.4.debian.tar.xz' cyrus-sasl2_2.1.27~101-g0780600+dfsg-3ubuntu2.4.debian.tar.xz 97932 SHA512:9532cf4f5bf817d84616327a183612bee333f4efff02bc120fed744b60b86851f2ccfb7398b620e99964334bd963f8f45e8f542a87e9752a7ceff23c4de34264
+```
 
 ### `dpkg` source package: `dart6=6.10.0~osrf20~20211005~bionic~d2b6ee08a60d0dbf71b0f008cd8fed1f611f6e24`
 
@@ -790,19 +795,24 @@ $ apt-get source -qq --print-uris elfutils=0.170-0.4ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.170-0.4ubuntu0.1.debian.tar.xz' elfutils_0.170-0.4ubuntu0.1.debian.tar.xz 51740 SHA512:a9d615f2dced250403c897ec1e2e2ff2b44523763b88cfad5656d60e864bb42b35384fdfdad372747499732c20e40e2e7d2de06a18c5284ea19f1a1617e2f254
 ```
 
-### `dpkg` source package: `expat=2.2.5-3ubuntu0.2`
+### `dpkg` source package: `expat=2.2.5-3ubuntu0.4`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.2.5-3ubuntu0.2`
+- `libexpat1:amd64=2.2.5-3ubuntu0.4`
 
 Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris expat=2.2.5-3ubuntu0.4
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.5-3ubuntu0.4.dsc' expat_2.2.5-3ubuntu0.4.dsc 2214 SHA512:8dfda3c542140be68d32ff37af8307992a7dde4f0554abf71a7199615cf82c5b2f3217158ec87274a6640c9e20da086875488c61660c691b23fe0b1e083397e3
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.5.orig.tar.gz' expat_2.2.5.orig.tar.gz 8273003 SHA512:61ce2a479521412e0c56c352106c4adfb61a6bedb883921aba3ebccc29311ddd192646ac2c51b41572728d4de6ab4cb60a1dbc71515d742a80a8b59d89ca74d6
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.5-3ubuntu0.4.debian.tar.xz' expat_2.2.5-3ubuntu0.4.debian.tar.xz 18456 SHA512:373647b424793829c7e161c07bcc135047f358626b7e39c381207711ac2f47023c821122f90285794ce5afc816bd4d921a256d1a55d683821fa74b15694040a9
+```
 
 ### `dpkg` source package: `fcl=0.5.0-5`
 
@@ -1361,22 +1371,27 @@ $ apt-get source -qq --print-uris glib2.0=2.56.4-0ubuntu0.18.04.9
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.56.4-0ubuntu0.18.04.9.debian.tar.xz' glib2.0_2.56.4-0ubuntu0.18.04.9.debian.tar.xz 107488 SHA512:9cbf02335e216eb2d74914de67411d89b76ff4a18d4194e19801326eb31be8d9300a4416588d7ad1c6fe384e57c4d986f64f05a93ae69fa137d68e0c80c174be
 ```
 
-### `dpkg` source package: `glibc=2.27-3ubuntu1.4`
+### `dpkg` source package: `glibc=2.27-3ubuntu1.5`
 
 Binary Packages:
 
-- `libc-bin=2.27-3ubuntu1.4`
-- `libc6:amd64=2.27-3ubuntu1.4`
-- `multiarch-support=2.27-3ubuntu1.4`
+- `libc-bin=2.27-3ubuntu1.5`
+- `libc6:amd64=2.27-3ubuntu1.5`
+- `multiarch-support=2.27-3ubuntu1.5`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/multiarch-support/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glibc=2.27-3ubuntu1.5
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.27-3ubuntu1.5.dsc' glibc_2.27-3ubuntu1.5.dsc 9599 SHA512:0714e1691a9fe30f6e961993f6726c4096ccc4451ba780faef9301a4ada2568292af4223b6d0dc9427fc125dc42a3d894c7eb0a45ea1ee10db54f7154a2ec027
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.27.orig.tar.xz' glibc_2.27.orig.tar.xz 15923832 SHA512:a0580fb52bc4ea8bb6e6734086b0dc66bd661060cdd837965880b989866490063c2420f250fb19b54e3547c58a5a7f8e012699e6513ce413746fd236ddd239e8
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.27-3ubuntu1.5.debian.tar.xz' glibc_2.27-3ubuntu1.5.debian.tar.xz 1110832 SHA512:db1249563b20cea5e4b6c733782d0b9617e7e37705f8038098240bb0a742635d8561c06bbdd3aef510342eda09e93c70bebee762c5929f11f8f2c021f5dbfb5c
+```
 
 ### `dpkg` source package: `gmp=2:6.1.2+dfsg-2`
 
@@ -4394,11 +4409,11 @@ $ apt-get source -qq --print-uris mtdev=1.1.5-1ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mtdev/mtdev_1.1.5-1ubuntu3.debian.tar.xz' mtdev_1.1.5-1ubuntu3.debian.tar.xz 6268 SHA256:60d8d42d71828abc8ef728c1a52f8c5e407be1d0c24871580a744e2b12a7a8a6
 ```
 
-### `dpkg` source package: `mysql-5.7=5.7.36-0ubuntu0.18.04.1`
+### `dpkg` source package: `mysql-5.7=5.7.37-0ubuntu0.18.04.1`
 
 Binary Packages:
 
-- `libmysqlclient20:amd64=5.7.36-0ubuntu0.18.04.1`
+- `libmysqlclient20:amd64=5.7.37-0ubuntu0.18.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient20/copyright`)
 
@@ -4416,9 +4431,14 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient20/copyright`)
 - `public-domain`
 - `zlib/libpng`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris mysql-5.7=5.7.37-0ubuntu0.18.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.37-0ubuntu0.18.04.1.dsc' mysql-5.7_5.7.37-0ubuntu0.18.04.1.dsc 3446 SHA512:9c477f522843fbf6f94be1c4863548ce2f67b05fa08a0b429bb38a5d77869c8fce1d039aebf6657f2e7d67aafc01aed043bfecc29d9b0112d417bcd58b7fc867
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.37.orig.tar.gz' mysql-5.7_5.7.37.orig.tar.gz 52978401 SHA512:39eb9a30fa884c45c0ed8a068fcbe0a21cb7c247b7d0520326257d49b42b7622d938b95efbbfae7f44db72e784fbd31053ea583e1900cbd3882ebb889169f7d8
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.37-0ubuntu0.18.04.1.debian.tar.xz' mysql-5.7_5.7.37-0ubuntu0.18.04.1.debian.tar.xz 156808 SHA512:78d288821aacfc3a0d84eecae3d90c925629bddd63cc6eafebea6dfaaf221dc3a6679ebd4ffb3c808f49cb603f95a68b1a44d19486e1768563bd7524dfb04034
+```
 
 ### `dpkg` source package: `mysql-defaults=1.0.4`
 
@@ -5695,11 +5715,11 @@ $ apt-get source -qq --print-uris spatialite=4.3.0a-5build1
 'http://archive.ubuntu.com/ubuntu/pool/universe/s/spatialite/spatialite_4.3.0a-5build1.debian.tar.xz' spatialite_4.3.0a-5build1.debian.tar.xz 23924 SHA256:ae4875dac4e3232eaa99fc1e2789fd551a0e1345b464fc1169c533ea6f1b7b97
 ```
 
-### `dpkg` source package: `speex=1.2~rc1.2-1ubuntu2`
+### `dpkg` source package: `speex=1.2~rc1.2-1ubuntu2.1`
 
 Binary Packages:
 
-- `libspeex1:amd64=1.2~rc1.2-1ubuntu2`
+- `libspeex1:amd64=1.2~rc1.2-1ubuntu2.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5708,10 +5728,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris speex=1.2~rc1.2-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/speex/speex_1.2%7erc1.2-1ubuntu2.dsc' speex_1.2~rc1.2-1ubuntu2.dsc 2360 SHA256:cfd4ef68c8ae7de261b0540b0749109c0831adee854b9262082c5f2e36cea046
-'http://archive.ubuntu.com/ubuntu/pool/main/s/speex/speex_1.2%7erc1.2.orig.tar.gz' speex_1.2~rc1.2.orig.tar.gz 1069339 SHA256:8320fb86a024dfe1b6a78a7d57bc2388e5f8cb7f2fa10c946db2704e1e5d2805
-'http://archive.ubuntu.com/ubuntu/pool/main/s/speex/speex_1.2%7erc1.2-1ubuntu2.diff.gz' speex_1.2~rc1.2-1ubuntu2.diff.gz 10372 SHA256:1f8602e771c179ce81444f2b82414683ee69715837e47b9755b114bbdfb64d17
+$ apt-get source -qq --print-uris speex=1.2~rc1.2-1ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/s/speex/speex_1.2%7erc1.2-1ubuntu2.1.dsc' speex_1.2~rc1.2-1ubuntu2.1.dsc 2339 SHA512:c065c80da02e312055abd2d9f6f5d71c43021a4a13667fa012432949756d79b7ebd459d5d7bdf9d7fa0fafa4136ba62ef9e2fd3e795cbc7b55954cef2b36aca5
+'http://archive.ubuntu.com/ubuntu/pool/main/s/speex/speex_1.2%7erc1.2.orig.tar.gz' speex_1.2~rc1.2.orig.tar.gz 1069339 SHA512:b523803dd2c024c20f992e8410421719c53981df3ff1c1d96bc030baddaf4729ee6a5172b8501f4c9a3194e4dafab8b79814d90624e8226bf869605505cc0bce
+'http://archive.ubuntu.com/ubuntu/pool/main/s/speex/speex_1.2%7erc1.2-1ubuntu2.1.diff.gz' speex_1.2~rc1.2-1ubuntu2.1.diff.gz 10577 SHA512:4118b1f2cffe4ba01c0bc38c50cd515cb0f92cf28d27801b219a6cf0f1333ac194fa888ae4d1aae78bdbeb9d6108dc06a939e114c4833e54620d42d6ca6ef785
 ```
 
 ### `dpkg` source package: `sqlite3=3.22.0-1ubuntu0.4`
