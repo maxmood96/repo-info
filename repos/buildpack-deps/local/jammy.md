@@ -2993,14 +2993,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.15.0-18.18
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-18.18.dsc' linux_5.15.0-18.18.dsc 7529 SHA512:82a0d705b6cc7ff641fa15a0c0af4d9749c0a04083b3a7a0eb879e6554a062cf3c7132f4cee5a519d7c76724e2331ea272d9057b0f859c66f8356cf7e020c396
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-18.18.diff.gz' linux_5.15.0-18.18.diff.gz 5064265 SHA512:b484854cb39f12b5441d09165e090839d3189e53cdc9e57519e14b5d80c5971d247e6e30a45d80981c503dd4c315508d4a7e0cf067bed86564597579c80b933f
-```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu3`
 
@@ -3032,13 +3027,9 @@ Licenses: (parsed from: `/usr/share/doc/lto-disabled-list/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lto-disabled-list=22
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lto-disabled-list/lto-disabled-list_22.dsc' lto-disabled-list_22.dsc 1435 SHA512:69a298e39ab16ddfc0c25417c9c2e5e7e52e0c17d8c08489dc5aeaf110238aa81a7946ebceb35c77408ca868f677e4e2e0a91a52b9bb4080b49c27a7a46d9f68
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lto-disabled-list/lto-disabled-list_22.tar.xz' lto-disabled-list_22.tar.xz 12332 SHA512:0e2221a84f149f36537017b1d15bfc548f6948b6959ec1e31b40b2093b7a209f44576a410a8b0875bfc9d92fc2f438e1fa7a90d51ba378b5244eee816a6c2805
-```
 
 ### `dpkg` source package: `lz4=1.9.3-2build1`
 
