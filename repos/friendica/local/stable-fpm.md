@@ -1,10 +1,10 @@
-# `friendica:2022.02-fpm`
+# `friendica:2022.03-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f7ccb3cd6cb6761c25ce7b5be9d47383d22a090ff834cc6519ada7537428d9a0`
-- Created: `2022-03-05T01:45:19.753987171Z`
-- Virtual Size: ~ 638.94 Mb  
+- Image ID: `sha256:02631b192a396283507eda795f47bc078a4524bbe947525f9088bcb932c32112`
+- Created: `2022-03-08T01:45:28.135775897Z`
+- Virtual Size: ~ 639.57 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -25,10 +25,10 @@
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `FRIENDICA_SYSLOG_FLAGS=39`
-  - `FRIENDICA_VERSION=2022.02`
-  - `FRIENDICA_ADDONS=2022.02`
-  - `FRIENDICA_DOWNLOAD_SHA256=032be1a8c7e1a82d34eebc95b5bd2f2564a9114834eff45e6b4daa240eab22e8`
-  - `FRIENDICA_DOWNLOAD_ADDONS_SHA256=146240e7215d15d743bee4e0d3c084315b5a1778493f400284e80ff84e3cd1ce`
+  - `FRIENDICA_VERSION=2022.03`
+  - `FRIENDICA_ADDONS=2022.03`
+  - `FRIENDICA_DOWNLOAD_SHA256=f190dd05bdd2ecff753da108535dbc4e406b0fe291c0764e87f93d9510aae74e`
+  - `FRIENDICA_DOWNLOAD_ADDONS_SHA256=d6b95835724b9814aa7c1862f985cdaf8754e7527b41ce80ca58ee5378807936`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2863,20 +2863,13 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `X11`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.10.92-1
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.92-1.dsc' linux_5.10.92-1.dsc 197231 SHA256:deb5c2eb26755d7954e109757ae410e8c5064dfcc64964e81df26dded3e98095
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.92.orig.tar.xz' linux_5.10.92.orig.tar.xz 121665656 SHA256:19b747100e42a1e4be3437aebd099db03de6fcf08bb19dbf61250adc65978984
-'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.92-1.debian.tar.xz' linux_5.10.92-1.debian.tar.xz 1471996 SHA256:2273c84a0d4240b89a1fdd432a5d2a1a89f750b8b045e286937a57ea71499412
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/linux/5.10.92-1/
 
-- https://sources.debian.net/src/linux/5.10.92-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/5.10.92-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/5.10.92-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=11.1.0`
 
