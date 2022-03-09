@@ -452,14 +452,9 @@ Licenses: (parsed from: `/usr/share/doc/gcc-9-base/copyright`)
 - `LGPL`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-9=9.3.0-17ubuntu1~20.04
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-9/gcc-9_9.3.0-17ubuntu1%7e20.04.dsc' gcc-9_9.3.0-17ubuntu1~20.04.dsc 23746 SHA512:bae6c156516a4988546a4518934f661a70243a89ed17883fe382bd984ae6533aab7d9b459986c2ebdb715b64b11ac76b9283447b26be3dbaec0b00c02afeb7f6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-9/gcc-9_9.3.0.orig.tar.gz' gcc-9_9.3.0.orig.tar.gz 90490748 SHA512:cebaa27b0ac7485e72f0d7b07e6ef08cd544bf551bc080ee00175cbe319ea8b0592ff54d55633bb189e481f9ba489d513205cf2310e4b5211869a021432ee31f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-9/gcc-9_9.3.0-17ubuntu1%7e20.04.debian.tar.xz' gcc-9_9.3.0-17ubuntu1~20.04.debian.tar.xz 763792 SHA512:f696a3d92edbadb7cfb29494b68ec00fa9b278ab7657e45933cf2e7564e6a524ac41edde14449114a2e06ad0c1f56473d998687aeb2f98f18c431727d4254d21
-```
 
 ### `dpkg` source package: `glibc=2.31-0ubuntu9.7`
 
