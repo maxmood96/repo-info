@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a1eba4435d869d32cc69dd4e290868c07a6fbca6d38798b9f768b226dad1a389`
-- Created: `2022-03-03T13:24:42.014819404Z`
-- Virtual Size: ~ 92.14 Mb  
+- Image ID: `sha256:ea18ba9e421436a968d585b0af743fa62a494c57381b856029147343853058c2`
+- Created: `2022-03-07T19:19:47.859021774Z`
+- Virtual Size: ~ 92.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint.sh","docker-php-entrypoint"]`
@@ -23,7 +23,7 @@
   - `PHP_SHA256=9cc3b6f6217b60582f78566b3814532c4b71d517876c25013ae51811e65d8fce`
   - `ADMINER_VERSION=4.8.1`
   - `ADMINER_DOWNLOAD_SHA256=2fd7e6d8f987b243ab1839249551f62adce19704c47d3d0c8dd9e57ea5b9c6b3`
-  - `ADMINER_SRC_DOWNLOAD_SHA256=ef832414296d11eed33e9d85fff3fb316c63f13f05fceb4a961cbe4cb2ae8712`
+  - `ADMINER_COMMIT=1f173e18bdf0be29182e0d67989df56eadea4754`
 
 ## `apk` (`.apk`-based packages)
 
