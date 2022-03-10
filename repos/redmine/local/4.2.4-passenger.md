@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:561827f209ad4c6669b06569c9dd21db088fb3b6b87bfe6b8a971377fa4bfe34`
-- Created: `2022-03-03T06:19:06.468926508Z`
+- Image ID: `sha256:44046159d2e2f1cba932c62efeb5007bdd3e7d107621adaf9e6ff017a511212a`
+- Created: `2022-03-08T20:17:15.717954933Z`
 - Virtual Size: ~ 606.20 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -21,8 +21,8 @@
   - `RAILS_ENV=production`
   - `HOME=/home/redmine`
   - `REDMINE_VERSION=4.2.4`
-  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/attachments/download/28862/redmine-4.2.4.tar.gz`
-  - `REDMINE_DOWNLOAD_SHA256=7f50fd4a6cf1c1e48091a87696b813ba264e11f04dec67fb006858a1b49a5c7d`
+  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-4.2.4.tar.gz`
+  - `REDMINE_DOWNLOAD_SHA256=cf649f5d4ff783582f82bebd4a5099ef63acb3d5573bbe6b4bf64f293c61c9ce`
   - `PASSENGER_VERSION=6.0.12`
   - `PASSENGER_PID_FILE=tmp/pids/server.pid`
 
