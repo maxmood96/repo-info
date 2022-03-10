@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c1558761f285add928a651173d5e903c7bf2cd5d511d0bd6752fb082c41b56a2`
-- Created: `2022-03-03T01:45:06.940892046Z`
-- Virtual Size: ~ 519.30 Mb  
+- Image ID: `sha256:826efd84393bb2451404ae04fd24c97aa0094d6072242001a9505e0a8099aac3`
+- Created: `2022-03-08T19:26:12.333273671Z`
+- Virtual Size: ~ 520.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -1352,8 +1352,9 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libzstd1:amd64=1.3.8+dfsg-3+deb10u2`
+- `zstd=1.3.8+dfsg-3+deb10u2`
 
-Licenses: (parsed from: `/usr/share/doc/libzstd1/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libzstd1/copyright`, `/usr/share/doc/zstd/copyright`)
 
 - `BSD-3-clause`
 - `Expat`
