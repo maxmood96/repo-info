@@ -1,10 +1,10 @@
-# `nats-streaming:0.24.2-scratch`
+# `nats-streaming:0.24.3-scratch`
 
 ## Docker Metadata
 
-- Image ID: `sha256:cc31f3812f5256ec02071ca3e295a5be59a2d326417a7b55569235b47a7a2fc9`
-- Created: `2022-02-25T02:19:55.352102723Z`
-- Virtual Size: ~ 20.58 Mb  
+- Image ID: `sha256:8db0f18c883ff929dfaae3de15de5562de5be34b4a941aa05c6d52112b8e4c84`
+- Created: `2022-03-09T23:21:18.653406843Z`
+- Virtual Size: ~ 20.62 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/nats-streaming-server"]`
