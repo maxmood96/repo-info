@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e1b19c19e56ee7a6708cc3ac4a460d33966f82d645ba3dc851c116283eb6bb46`
-- Created: `2022-03-07T19:20:27.764703857Z`
-- Virtual Size: ~ 75.96 Mb  
+- Image ID: `sha256:2c6d8b50b9a7ec0ed926a12e2cae1ec4a69cd327dab41c7c6c20f8621a2f2f89`
+- Created: `2022-03-11T12:46:54.405686768Z`
+- Virtual Size: ~ 77.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint.sh","docker-php-entrypoint"]`
@@ -197,6 +197,23 @@ GPL-2.0-or-later OR LGPL-2.0-or-later
 
 ```
 
+### `apk` package: `gnu-libiconv`
+
+```console
+gnu-libiconv-1.16-r0 description:
+GNU charset conversion library for libc which doesn't implement it
+
+gnu-libiconv-1.16-r0 webpage:
+https://www.gnu.org/software/libiconv
+
+gnu-libiconv-1.16-r0 installed size:
+1056 KiB
+
+gnu-libiconv-1.16-r0 license:
+LGPL-2.1-or-later
+
+```
+
 ### `apk` package: `libacl`
 
 ```console
@@ -336,16 +353,16 @@ OpenSSL
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.9.12-r2 description:
+libxml2-2.9.13-r0 description:
 XML parsing library, version 2
 
-libxml2-2.9.12-r2 webpage:
+libxml2-2.9.13-r0 webpage:
 http://www.xmlsoft.org/
 
-libxml2-2.9.12-r2 installed size:
+libxml2-2.9.13-r0 installed size:
 1200 KiB
 
-libxml2-2.9.12-r2 license:
+libxml2-2.9.13-r0 license:
 MIT
 
 ```
