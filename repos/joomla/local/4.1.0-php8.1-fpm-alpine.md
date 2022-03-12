@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c823d2be58c0426b5a8cf4c1a64cc550b02863bb92c5912c5f9957815a18001f`
-- Created: `2022-03-03T14:41:47.509126959Z`
-- Virtual Size: ~ 194.31 Mb  
+- Image ID: `sha256:c14b9b25925338e73f650d8744cb6c6a5ae0c8a5d3bfc9c913495a691f2d834d`
+- Created: `2022-03-11T13:22:32.856170744Z`
+- Virtual Size: ~ 195.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -230,6 +230,23 @@ gmp-6.2.1-r1 installed size:
 
 gmp-6.2.1-r1 license:
 LGPL-3.0-or-later OR GPL-2.0-or-later
+
+```
+
+### `apk` package: `gnu-libiconv`
+
+```console
+gnu-libiconv-1.16-r0 description:
+GNU charset conversion library for libc which doesn't implement it
+
+gnu-libiconv-1.16-r0 webpage:
+https://www.gnu.org/software/libiconv
+
+gnu-libiconv-1.16-r0 installed size:
+1056 KiB
+
+gnu-libiconv-1.16-r0 license:
+LGPL-2.1-or-later
 
 ```
 
