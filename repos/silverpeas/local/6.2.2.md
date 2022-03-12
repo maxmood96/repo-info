@@ -148,14 +148,9 @@ Licenses: (parsed from: `/usr/share/doc/alsa-ucm-conf/copyright`)
 
 - `BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris alsa-ucm-conf=1.2.2-1ubuntu0.11
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-ucm-conf/alsa-ucm-conf_1.2.2-1ubuntu0.11.dsc' alsa-ucm-conf_1.2.2-1ubuntu0.11.dsc 1431 SHA512:088c575f6161f1f2fb9c4b4a26780c906a81c52b2d4f4dae9d4b99b10c14a4e2396ef6783cc53c67906704d119d92ab19af5787399fbce2dabc095f19adbdcc4
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-ucm-conf/alsa-ucm-conf_1.2.2.orig.tar.bz2' alsa-ucm-conf_1.2.2.orig.tar.bz2 14608 SHA512:25e3f341c110772c7cffc8c7745b320f2ddd12fe6460380c088939b5dc67b99ae4ad92e69375179574e0e1c40d14ff49961e86494e223fde009e51590f00ca8f
-'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-ucm-conf/alsa-ucm-conf_1.2.2-1ubuntu0.11.debian.tar.xz' alsa-ucm-conf_1.2.2-1ubuntu0.11.debian.tar.xz 18692 SHA512:cecef9de0c5752b14869bf612b6a4dbe382056e2ccfb84945a42fef8c4934f8c59a8117f0e742c0194922826d32eea43ef721dd791413edfc2cb95b8c2ddc9a0
-```
 
 ### `dpkg` source package: `aom=1.0.0.errata1-3build1`
 
@@ -1215,14 +1210,9 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.2.9-1ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.9-1ubuntu0.2.dsc' expat_2.2.9-1ubuntu0.2.dsc 2064 SHA512:2a7d78a718fb0a1c26e05feda88dace03796fd4f0045e468f6ec7ca606b69136d9ad92e912c468501d87778abdd7701567aec6ae23e9209c0f7c04bc00e383c4
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.9.orig.tar.gz' expat_2.2.9.orig.tar.gz 8273174 SHA512:e274fa7f30630450cb3ca681b266d765dbb7f5d00d1275ff9d9b2e2f6e1095893b8af4e3f4172ae6297c7a8a831a0a6becd484fe4bcdca09c37922f630780ef0
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.9-1ubuntu0.2.debian.tar.xz' expat_2.2.9-1ubuntu0.2.debian.tar.xz 17492 SHA512:38f8d8781988df8fd8d7578e8626b1c9f601040487da189b1bafa4c04077de84a2e23f6189c7519e49553b6138e81037445639d8f48448341b4cb8307b97787f
-```
 
 ### `dpkg` source package: `ffmpeg=7:4.2.4-1ubuntu0.1`
 
@@ -3765,14 +3755,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libdrm=2.4.107-8ubuntu1~20.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.107-8ubuntu1%7e20.04.1.dsc' libdrm_2.4.107-8ubuntu1~20.04.1.dsc 3109 SHA512:f25ccfa080b6c0101f401e6d1185d34843032689238cbbd8b31f152e37fad7ddcd3948a59e4dab89f621676fd809a57d85c1d9161975da927576d34dbebfedce
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.107.orig.tar.xz' libdrm_2.4.107.orig.tar.xz 425612 SHA512:c7542ba15c4c934519a6a1f3cb1ec21effa820a805a030d0175313bb1cc796cd311f39596ead883f9f251679d701e262894c5a297d5cf45093c80a6cd818def0
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.107-8ubuntu1%7e20.04.1.debian.tar.xz' libdrm_2.4.107-8ubuntu1~20.04.1.debian.tar.xz 58936 SHA512:b02e43d4ffe91e43013108410135e6188438f3387fa9093f95ba3e50e4fd3b34631756ed2d3422fe1a4c088e024a1c482b86d55ff8243d0935b69ec88182f4f3
-```
 
 ### `dpkg` source package: `libe-book=0.1.3-1build3`
 
@@ -6849,14 +6834,9 @@ Licenses: (parsed from: `/usr/share/doc/libllvm12/copyright`)
 - `Python`
 - `solar-public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris llvm-toolchain-12=1:12.0.0-3ubuntu1~20.04.4
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-12/llvm-toolchain-12_12.0.0-3ubuntu1%7e20.04.4.dsc' llvm-toolchain-12_12.0.0-3ubuntu1~20.04.4.dsc 6307 SHA512:f9d8573a6df9a213ebcba4dd33b64d2d3bb4f8a57268082aa571504c467be5de07fb45e6a5bbc7300f1b2e165c6c84a093b0230e764c3162fe963d5f8704d36b
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-12/llvm-toolchain-12_12.0.0.orig.tar.xz' llvm-toolchain-12_12.0.0.orig.tar.xz 86089384 SHA512:34083aa8541f03c7a6408b3ac1a9305f5fad5da6c843396521652271f653c78a86a798e501ee17226c133cc3690d054aa086d9b371266afc4859072f6afc4dd6
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-12/llvm-toolchain-12_12.0.0-3ubuntu1%7e20.04.4.debian.tar.xz' llvm-toolchain-12_12.0.0-3ubuntu1~20.04.4.debian.tar.xz 127556 SHA512:34138a7f9164b6ac987d7f1368de932b676acf192c3a1c135f61b03541e406e3fae65415ff7c6733b54f9043352a1f21c8927d17ea6c1c096ca8443baf7bcebe
-```
 
 ### `dpkg` source package: `lm-sensors=1:3.6.0-2ubuntu1`
 
@@ -7008,14 +6988,9 @@ Licenses: (parsed from: `/usr/share/doc/libegl-mesa0/copyright`, `/usr/share/doc
 - `MLAA`
 - `SGI`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mesa=21.2.6-0ubuntu0.1~20.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_21.2.6-0ubuntu0.1%7e20.04.1.dsc' mesa_21.2.6-0ubuntu0.1~20.04.1.dsc 5464 SHA512:bccb5199522d55ad03af2fb3b544b4e059a98ea773d5ca9eff774d401c6335b667c2784516f680c01eecbf73c9fa54cbab05cf79a5c42b624c29eeb2a770ec67
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_21.2.6.orig.tar.gz' mesa_21.2.6.orig.tar.gz 24561701 SHA512:d5769a370439ecd401ef4bb24613aa0c529e968035c4b44cdfc286e73214f898b5e0c1db569d956c7bcfb02bd660bf60498d5f8abc86e523c241f06faf2a4f59
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_21.2.6-0ubuntu0.1%7e20.04.1.diff.gz' mesa_21.2.6-0ubuntu0.1~20.04.1.diff.gz 110426 SHA512:f9def037e1cb814e12c0851dccd9211693bfe727f37fc606c0c4c26d2c70b6b240f9345f6e6c14f60fbbceaf6edca02f41a40089fb1ae7728f7a1d2ed28a719d
-```
 
 ### `dpkg` source package: `mhash=0.9.9.9-8`
 
