@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bff9dfd6e3b5e4e23cd6046576613c05788576582a0c42a5af97412382b5f0fb`
-- Created: `2022-03-04T23:25:26.493130465Z`
-- Virtual Size: ~ 164.62 Mb  
+- Image ID: `sha256:e881f31376e88a6b7aa9047ac92edf6a3ecbc3cb52b100dc791f610a4518e335`
+- Created: `2022-03-11T12:04:45.292923882Z`
+- Virtual Size: ~ 165.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -192,6 +192,23 @@ freetype-2.11.0-r0 installed size:
 
 freetype-2.11.0-r0 license:
 FTL GPL-2.0-or-later
+
+```
+
+### `apk` package: `gnu-libiconv`
+
+```console
+gnu-libiconv-1.16-r0 description:
+GNU charset conversion library for libc which doesn't implement it
+
+gnu-libiconv-1.16-r0 webpage:
+https://www.gnu.org/software/libiconv
+
+gnu-libiconv-1.16-r0 installed size:
+1056 KiB
+
+gnu-libiconv-1.16-r0 license:
+LGPL-2.1-or-later
 
 ```
 
