@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0751b68ec1291c59f3bca17c8ffaa6e1acbb863b461f1b5a8960f62f81380892`
-- Created: `2022-02-23T18:21:27.529346787Z`
+- Image ID: `sha256:e6ae71bd564c9e3fed8f41f444c7f178febbc1b78920f31d31a0127d5e9693e0`
+- Created: `2022-03-14T18:09:54.840268205Z`
 - Virtual Size: ~ 167.65 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -436,21 +436,26 @@ $ apt-get source -qq --print-uris gcc-8=8.4.0-1ubuntu1~18.04
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.4.0-1ubuntu1%7e18.04.diff.gz' gcc-8_8.4.0-1ubuntu1~18.04.diff.gz 510634 SHA512:7bd97a04eccd35c3483a82b238d8d54c91071c4d1361cb30fb3fbf7b512c84b9d0bc80499373f2da3e17520d112125ebfebae6b93746feede78f9eecc1ccd4ac
 ```
 
-### `dpkg` source package: `glibc=2.27-3ubuntu1.4`
+### `dpkg` source package: `glibc=2.27-3ubuntu1.5`
 
 Binary Packages:
 
-- `libc-bin=2.27-3ubuntu1.4`
-- `libc6:amd64=2.27-3ubuntu1.4`
+- `libc-bin=2.27-3ubuntu1.5`
+- `libc6:amd64=2.27-3ubuntu1.5`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glibc=2.27-3ubuntu1.5
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.27-3ubuntu1.5.dsc' glibc_2.27-3ubuntu1.5.dsc 9599 SHA512:0714e1691a9fe30f6e961993f6726c4096ccc4451ba780faef9301a4ada2568292af4223b6d0dc9427fc125dc42a3d894c7eb0a45ea1ee10db54f7154a2ec027
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.27.orig.tar.xz' glibc_2.27.orig.tar.xz 15923832 SHA512:a0580fb52bc4ea8bb6e6734086b0dc66bd661060cdd837965880b989866490063c2420f250fb19b54e3547c58a5a7f8e012699e6513ce413746fd236ddd239e8
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.27-3ubuntu1.5.debian.tar.xz' glibc_2.27-3ubuntu1.5.debian.tar.xz 1110832 SHA512:db1249563b20cea5e4b6c733782d0b9617e7e37705f8038098240bb0a742635d8561c06bbdd3aef510342eda09e93c70bebee762c5929f11f8f2c021f5dbfb5c
+```
 
 ### `dpkg` source package: `gmp=2:6.1.2+dfsg-2`
 
