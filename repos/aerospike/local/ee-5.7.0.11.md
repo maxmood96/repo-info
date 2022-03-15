@@ -1,18 +1,19 @@
-# `aerospike:ce-5.7.0.10`
+# `aerospike:ee-5.7.0.11`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f4a32924375e58763d0102a041d4d588b5c803f21a8ec3e4787f04431aad2fcc`
-- Created: `2022-03-01T06:22:45.962464328Z`
-- Virtual Size: ~ 215.20 Mb  
+- Image ID: `sha256:ca26bdefd5eabc5267e495e8214327823a95698e4f7dfe646c6eb0931e31a9b7`
+- Created: `2022-03-11T18:19:46.459495892Z`
+- Virtual Size: ~ 221.63 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Entrypoint: `["/usr/bin/dumb-init","--","/entrypoint.sh"]`
+- Entrypoint: `["/usr/bin/as-tini-static","-r","SIGUSR1","-t","SIGTERM","--","/entrypoint.sh"]`
 - Command: `["asd"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `AEROSPIKE_VERSION=5.7.0.10`
-  - `AEROSPIKE_SHA256=6c17caabf03094c284c28406145447165ce7c40b954427879b8bd38d2824902b`
+  - `AEROSPIKE_VERSION=5.7.0.11`
+  - `AEROSPIKE_SHA256=f43f38680e39429976ef359f7b72034f8c1a9bf624d94826d61b898212e91766`
+  - `AS_TINI_SHA256=d1f6826dd70cdd88dde3d5a20d8ed248883a3bc2caba3071c8a3a9b0e0de5940`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -69,11 +70,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/adduser/3.118/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/adduser/3.118/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `aerospike-server-community=5.7.0.10-1`
+### `dpkg` source package: `aerospike-server-enterprise=5.7.0.11-1`
 
 Binary Packages:
 
-- `aerospike-server-community=5.7.0.10-1`
+- `aerospike-server-enterprise=5.7.0.11-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -566,31 +567,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/dpkg/1.19.7/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/dpkg/1.19.7/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `dumb-init=1.2.2-1.1`
-
-Binary Packages:
-
-- `dumb-init=1.2.2-1.1`
-
-Licenses: (parsed from: `/usr/share/doc/dumb-init/copyright`)
-
-- `Expat`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris dumb-init=1.2.2-1.1
-'http://deb.debian.org/debian/pool/main/d/dumb-init/dumb-init_1.2.2-1.1.dsc' dumb-init_1.2.2-1.1.dsc 1613 SHA256:6e3b3554b27624140fdcec89051de4664cabb07a19d2a15772699d741e833af3
-'http://deb.debian.org/debian/pool/main/d/dumb-init/dumb-init_1.2.2.orig.tar.xz' dumb-init_1.2.2.orig.tar.xz 22488 SHA256:c8a00ca238832502c4fdd8914af5a4636c1760bcbe04b18dba353d3ff9571f52
-'http://deb.debian.org/debian/pool/main/d/dumb-init/dumb-init_1.2.2-1.1.debian.tar.xz' dumb-init_1.2.2-1.1.debian.tar.xz 3684 SHA256:2968b02f556fe5ba6f68bcbe9f85640324220c0aeaf9f01aa432db124ef1ed70
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/dumb-init/1.2.2-1.1/ (for browsing the source)
-- https://sources.debian.net/src/dumb-init/1.2.2-1.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dumb-init/1.2.2-1.1/ (for access to the source package after it no longer exists in the archive)
-
 ### `dpkg` source package: `e2fsprogs=1.44.5-1+deb10u3`
 
 Binary Packages:
@@ -659,20 +635,13 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.2.6-2+deb10u3
-'http://security.debian.org/debian-security/pool/updates/main/e/expat/expat_2.2.6-2%2bdeb10u3.dsc' expat_2.2.6-2+deb10u3.dsc 2136 SHA256:2b58ea166b515d88311e65047aaa81b701a3a4581fbb56e5dd76933a86883a93
-'http://security.debian.org/debian-security/pool/updates/main/e/expat/expat_2.2.6.orig.tar.gz' expat_2.2.6.orig.tar.gz 8275473 SHA256:574499cba22a599393e28d99ecfa1e7fc85be7d6651d543045244d5b561cb7ff
-'http://security.debian.org/debian-security/pool/updates/main/e/expat/expat_2.2.6-2%2bdeb10u3.debian.tar.xz' expat_2.2.6-2+deb10u3.debian.tar.xz 25028 SHA256:99ccca69578e5bfff55b0fd5d21bf24ca2eda1a9e2f5a10610bc27409ca3f1b0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/expat/2.2.6-2+deb10u3/
 
-- https://sources.debian.net/src/expat/2.2.6-2+deb10u3/ (for browsing the source)
-- https://sources.debian.net/src/expat/2.2.6-2+deb10u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/expat/2.2.6-2+deb10u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `file=1:5.35-4+deb10u2`
 
@@ -1886,6 +1855,7 @@ Binary Packages:
 
 - `libldap-2.4-2:amd64=2.4.47+dfsg-3+deb10u6`
 - `libldap-common=2.4.47+dfsg-3+deb10u6`
+- `libldap2-dev:amd64=2.4.47+dfsg-3+deb10u6`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
