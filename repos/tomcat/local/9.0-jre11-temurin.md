@@ -1,10 +1,10 @@
-# `tomcat:9.0.59-jre11-temurin-focal`
+# `tomcat:9.0.60-jre11-temurin-focal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ba5aa3c1668e6feda5dcbea678aff9ab02d67acbe0c01d21a0c73365fd9515a4`
-- Created: `2022-03-07T20:32:58.589233552Z`
-- Virtual Size: ~ 269.47 Mb  
+- Image ID: `sha256:cfc6034a875fce7fa903b6da9054063d17eba62647b51759de555c6e72116d5e`
+- Created: `2022-03-16T02:04:23.689024179Z`
+- Virtual Size: ~ 269.48 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -20,8 +20,8 @@
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.59`
-  - `TOMCAT_SHA512=74902b522abda04afb2be24d7410d4d93966d20fd07dde8f03bb281cdc714866f648babe1ff1ae85d663774779235f1cb9d701d5ce8884052f1f5efca7b62c68`
+  - `TOMCAT_VERSION=9.0.60`
+  - `TOMCAT_SHA512=a4d43ac45f76e29d3dea23a2712c7570a11419aad7a1af2d1533454709c020b59666c7f9e063a77120224e0cbd4020cac06ca596dda7057cacb9a8a7e6d73eea`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1421,11 +1421,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `openssl=1.1.1f-1ubuntu2.11`
+### `dpkg` source package: `openssl=1.1.1f-1ubuntu2.12`
 
 Binary Packages:
 
-- `libssl1.1:amd64=1.1.1f-1ubuntu2.11`
+- `libssl1.1:amd64=1.1.1f-1ubuntu2.12`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1434,10 +1434,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=1.1.1f-1ubuntu2.11
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.11.dsc' openssl_1.1.1f-1ubuntu2.11.dsc 2495 SHA512:df41540db065c66bc233a53dc0ef03fbe57af20c809dd8a96e53427c77ff095bbc34a619618b610639d23c68b77ead5d771bbe627eac00f818636b1d56566008
+$ apt-get source -qq --print-uris openssl=1.1.1f-1ubuntu2.12
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.12.dsc' openssl_1.1.1f-1ubuntu2.12.dsc 2470 SHA512:d6439e1d598089b7115b55643f3042078d6440ff78b8f72db0abed892aa510873d2a456f1e92ff67fffaa541813149aa870e13c6557358dd4596c140f159b63f
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f.orig.tar.gz' openssl_1.1.1f.orig.tar.gz 9792828 SHA512:b00bd9b5ad5298fbceeec6bb19c1ab0c106ca5cfb31178497c58bf7e0e0cf30fcc19c20f84e23af31cc126bf2447d3e4f8461db97bafa7bd78f69561932f000c
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.11.debian.tar.xz' openssl_1.1.1f-1ubuntu2.11.debian.tar.xz 171284 SHA512:362caff4b491a953d157ab904d69be0b12ce859503d7ffc27e870979306eb224f95319d721ceaaa21c1c7f65720496c26aade09eba5a6818089f0f0ca4eba760
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.12.debian.tar.xz' openssl_1.1.1f-1ubuntu2.12.debian.tar.xz 173140 SHA512:a265a6227dfc61d9dc9f3b32b522135df5bc3fa1adaa8aba90b4acba0710f245e435d50ffe5d3ef74dff1cc4ac52bfde9bc9cfd60b5b115e8d5d3abb2a29efec
 ```
 
 ### `dpkg` source package: `p11-kit=0.23.20-1ubuntu0.1`
@@ -1757,14 +1757,9 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tar=1.30+dfsg-7ubuntu0.20.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.30%2bdfsg-7ubuntu0.20.04.1.dsc' tar_1.30+dfsg-7ubuntu0.20.04.1.dsc 1946 SHA512:beea3a39a93de0702e33e7ef666bf489e6b1521091b9068ab3bab757e8427cefa6fbf9dbb971fbb391188e8463cf465176f8b36869c9eea9fb198171b2617614
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.30%2bdfsg.orig.tar.xz' tar_1.30+dfsg.orig.tar.xz 1883220 SHA512:f9b3843bd4da03f58d6f88de70ecb36b8ac29312714fd2120ff00f17c99e6d77cc82a8f9de348f4c2bdba9a6cc8e8c6c78039b6c14cdee15d68f2517000c36f2
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.30%2bdfsg-7ubuntu0.20.04.1.debian.tar.xz' tar_1.30+dfsg-7ubuntu0.20.04.1.debian.tar.xz 22616 SHA512:015cf0e3eadb05e07b1c555afadf2f8d6af21f82a375ad0f87682af5e2c4b10e38e0f7ee6ac72fa5ecea5bc40cd4600cd0f2aed06c3c8051a6191d51d124003e
-```
 
 ### `dpkg` source package: `tzdata=2021e-0ubuntu0.20.04`
 
