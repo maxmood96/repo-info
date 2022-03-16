@@ -1,7 +1,7 @@
 ## `convertigo:latest`
 
 ```console
-$ docker pull convertigo@sha256:7fbef0ba7df2c8a015301e6f4dd3afdaaf4b2b7f25c56b1a7ac8963938c921fb
+$ docker pull convertigo@sha256:d6468372fa4a383e5bf19d1ab6830eca4922eb38234a702154c922476e3724f5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull convertigo@sha256:7fbef0ba7df2c8a015301e6f4dd3afdaaf4b2b7f25c56b1a
 ### `convertigo:latest` - linux; amd64
 
 ```console
-$ docker pull convertigo@sha256:11736ac6b768626d44ed448859279ada9e86ed2228292173e6402f6d840383b7
+$ docker pull convertigo@sha256:efe52c4751145e6abfdb7c359696396b33fd12bd3567bf85b1c9c3f79ce7c511
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **440.1 MB (440085783 bytes)**  
+-	Total Size: **442.2 MB (442246605 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:62b5ad6f48a5945b3654ad5b642fb9e7a804f97001d0b2ccf47d65066f15974a`
+-	Image ID: `sha256:bad39d6e99cc7ddb4c50ea2f351b1125623d80113acb6e604ea82e92006881d4`
 -	Entrypoint: `["tini","--","\/docker-entrypoint.sh"]`
 -	Default Command: `["convertigo"]`
 
@@ -63,65 +63,65 @@ ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
 # Wed, 02 Mar 2022 11:14:59 GMT
 ENV TOMCAT_MAJOR=9
-# Wed, 02 Mar 2022 11:14:59 GMT
-ENV TOMCAT_VERSION=9.0.59
-# Wed, 02 Mar 2022 11:14:59 GMT
-ENV TOMCAT_SHA512=74902b522abda04afb2be24d7410d4d93966d20fd07dde8f03bb281cdc714866f648babe1ff1ae85d663774779235f1cb9d701d5ce8884052f1f5efca7b62c68
-# Wed, 02 Mar 2022 11:15:51 GMT
+# Wed, 16 Mar 2022 01:52:50 GMT
+ENV TOMCAT_VERSION=9.0.60
+# Wed, 16 Mar 2022 01:52:50 GMT
+ENV TOMCAT_SHA512=a4d43ac45f76e29d3dea23a2712c7570a11419aad7a1af2d1533454709c020b59666c7f9e063a77120224e0cbd4020cac06ca596dda7057cacb9a8a7e6d73eea
+# Wed, 16 Mar 2022 01:53:23 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		dirmngr 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work; 		catalina.sh version
-# Wed, 02 Mar 2022 11:15:52 GMT
+# Wed, 16 Mar 2022 01:53:25 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Wed, 02 Mar 2022 11:15:53 GMT
+# Wed, 16 Mar 2022 01:53:25 GMT
 EXPOSE 8080
-# Wed, 02 Mar 2022 11:15:53 GMT
+# Wed, 16 Mar 2022 01:53:25 GMT
 CMD ["catalina.sh" "run"]
-# Wed, 02 Mar 2022 12:30:35 GMT
+# Wed, 16 Mar 2022 06:25:35 GMT
 MAINTAINER Nicolas Albert nicolasa@convertigo.com
-# Wed, 02 Mar 2022 12:30:35 GMT
+# Wed, 16 Mar 2022 06:25:35 GMT
 ENV SWT_GTK3=0
-# Wed, 02 Mar 2022 12:30:35 GMT
+# Wed, 16 Mar 2022 06:25:35 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Wed, 02 Mar 2022 12:30:35 GMT
+# Wed, 16 Mar 2022 06:25:36 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Wed, 02 Mar 2022 12:30:35 GMT
+# Wed, 16 Mar 2022 06:25:36 GMT
 WORKDIR /usr/local/tomcat
-# Wed, 02 Mar 2022 12:30:39 GMT
+# Wed, 16 Mar 2022 06:25:40 GMT
 RUN apt-get update -y   && apt-get install -y --no-install-recommends     ca-certificates     curl     dirmngr     gnupg     sudo     unzip   && rm -rf /var/lib/apt/lists/*
-# Wed, 02 Mar 2022 12:30:39 GMT
+# Wed, 16 Mar 2022 06:25:40 GMT
 ENV GOSU_VERSION=1.12
-# Wed, 02 Mar 2022 12:30:39 GMT
+# Wed, 16 Mar 2022 06:25:40 GMT
 ENV GOSU_GPG_KEYS=B42F6819007F00F88E364FD4036A9C25BF357DD4
-# Wed, 02 Mar 2022 12:30:39 GMT
+# Wed, 16 Mar 2022 06:25:40 GMT
 ENV TINI_VERSION=0.19.0
-# Wed, 02 Mar 2022 12:30:39 GMT
+# Wed, 16 Mar 2022 06:25:40 GMT
 ENV TINI_GPG_KEYS=6380DC428747F6C393FEACA59A84159D7001A4E5
-# Wed, 02 Mar 2022 12:31:59 GMT
+# Wed, 16 Mar 2022 06:26:57 GMT
 RUN export GNUPGHOME="$(mktemp -d)"   && ( gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$GOSU_GPG_KEYS"   || gpg --batch --keyserver pgp.mit.edu --recv-keys "$GOSU_GPG_KEYS"   || gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$GOSU_GPG_KEYS"   || gpg --batch --keyserver keyserver.pgp.com --recv-keys "$GOSU_GPG_KEYS" )   && curl -o /usr/local/bin/gosu -fSL "https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-$(dpkg --print-architecture | awk -F- '{ print $NF }')"   && curl -o /usr/local/bin/gosu.asc -fSL "https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-$(dpkg --print-architecture | awk -F- '{ print $NF }').asc"   && gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu   && rm /usr/local/bin/gosu.asc   && chmod +x /usr/local/bin/gosu   && ( gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$TINI_GPG_KEYS"   || gpg --batch --keyserver pgp.mit.edu --recv-keys "$TINI_GPG_KEYS"   || gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$TINI_GPG_KEYS"   || gpg --batch --keyserver keyserver.pgp.com --recv-keys "$TINI_GPG_KEYS" )   && curl -o /usr/local/bin/tini -fSL "https://github.com/krallin/tini/releases/download/v${TINI_VERSION}/tini-$(dpkg --print-architecture | awk -F- '{ print $NF }')"   && curl -o /usr/local/bin/tini.asc -fSL "https://github.com/krallin/tini/releases/download/v${TINI_VERSION}/tini-$(dpkg --print-architecture | awk -F- '{ print $NF }').asc"   && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini   && rm /usr/local/bin/tini.asc   && chmod +x /usr/local/bin/tini   && rm -rf /tmp/*
-# Wed, 02 Mar 2022 12:32:00 GMT
+# Wed, 16 Mar 2022 06:26:58 GMT
 RUN useradd -s /bin/false -m convertigo     && mkdir -p /workspace/lib /workspace/classes     && chown -R convertigo:convertigo /workspace     && echo "convertigo ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/convertigo     && chmod 0440 /etc/sudoers.d/convertigo
-# Wed, 02 Mar 2022 12:32:00 GMT
+# Wed, 16 Mar 2022 06:26:58 GMT
 RUN sed -i.bak         -e '/protocol="AJP/d'         -e '/AprLifecycleListener/d'         -e '/JasperListener/d'         -e 's/port="8080"/port="28080" maxThreads="64000" relaxedQueryChars="{}[]|"/'         -e 's,</Host>,  <Valve className="org.apache.catalina.valves.RemoteIpValve" />\n      </Host>,'         conf/server.xml     && sed -i.bak         -e 's,<Context>,<Context sessionCookiePath="/">,'         -e 's,</Context>,<Manager pathname="" /><CookieProcessor sameSiteCookies="unset" /></Context>,'         conf/context.xml     && rm -rf webapps/* bin/*.bat conf/server.xml.bak /tmp/*     && mkdir webapps/ROOT     && chown -R convertigo:convertigo conf temp work logs     && chmod -w conf/*
-# Wed, 02 Mar 2022 12:32:01 GMT
+# Wed, 16 Mar 2022 06:26:58 GMT
 ENV CONVERTIGO_VERSION=7.9.8
-# Wed, 02 Mar 2022 12:32:01 GMT
+# Wed, 16 Mar 2022 06:26:58 GMT
 ENV CONVERTIGO_WAR_URL=https://github.com/convertigo/convertigo/releases/download/7.9.8/convertigo-7.9.8.war
-# Wed, 02 Mar 2022 12:32:01 GMT
+# Wed, 16 Mar 2022 06:26:59 GMT
 ENV CONVERTIGO_GPG_KEYS=6A7779BB78FE368DF74B708FD4DA8FBEB64BF75F
-# Wed, 02 Mar 2022 12:32:53 GMT
+# Wed, 16 Mar 2022 06:27:44 GMT
 RUN export GNUPGHOME="$(mktemp -d)"     && ( gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$CONVERTIGO_GPG_KEYS"     || gpg --batch --keyserver pgp.mit.edu --recv-keys "$CONVERTIGO_GPG_KEYS"     || gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$CONVERTIGO_GPG_KEYS"     || gpg --batch --keyserver keyserver.pgp.com --recv-keys "$CONVERTIGO_GPG_KEYS" )     && curl -fSL -o /tmp/convertigo.war $CONVERTIGO_WAR_URL     && curl -fSL -o /tmp/convertigo.war.asc $CONVERTIGO_WAR_URL.asc     && gpg --batch --verify /tmp/convertigo.war.asc /tmp/convertigo.war     && mkdir -p webapps/ROOT webapps/convertigo     && (cd webapps/convertigo         && unzip -q /tmp/convertigo.war         && (chmod -f a+x WEB-INF/xvnc/* || true)         && (test "$(dpkg --print-architecture)" != "i386" && rm -rf WEB-INF/xulrunner WEB-INF/xvnc WEB-INF/lib/swt_* || true)         && rm -rf /tmp/*)
-# Wed, 02 Mar 2022 12:32:54 GMT
+# Wed, 16 Mar 2022 06:27:44 GMT
 COPY file:394d5b837e94d77b6fb87e0ca8bd50995186aaed1c5f3ab5bc0b482f0f769cc3 in webapps/ROOT/index.html 
-# Wed, 02 Mar 2022 12:32:54 GMT
+# Wed, 16 Mar 2022 06:27:44 GMT
 COPY file:ba6487fa7ec71ffccfe3babd0fb02dea602edf66ffef39f9ab084bdb887562ab in / 
-# Wed, 02 Mar 2022 12:32:54 GMT
+# Wed, 16 Mar 2022 06:27:44 GMT
 WORKDIR /workspace
-# Wed, 02 Mar 2022 12:32:54 GMT
+# Wed, 16 Mar 2022 06:27:44 GMT
 VOLUME [/workspace]
-# Wed, 02 Mar 2022 12:32:54 GMT
+# Wed, 16 Mar 2022 06:27:44 GMT
 EXPOSE 28080
-# Wed, 02 Mar 2022 12:32:54 GMT
+# Wed, 16 Mar 2022 06:27:44 GMT
 ENTRYPOINT ["tini" "--" "/docker-entrypoint.sh"]
-# Wed, 02 Mar 2022 12:32:54 GMT
+# Wed, 16 Mar 2022 06:27:44 GMT
 CMD ["convertigo"]
 ```
 
@@ -154,39 +154,39 @@ CMD ["convertigo"]
 		Last Modified: Wed, 02 Mar 2022 11:46:38 GMT  
 		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3afab48a73e4f9aa9eccdd6043f6b4a1ea2d1af6dfc26719a9ab8fc49901aaf5`  
-		Last Modified: Wed, 02 Mar 2022 12:03:11 GMT  
-		Size: 12.5 MB (12487778 bytes)  
+	-	`sha256:e7622259a72d35bb18815fc88eeec53ff159ea09fb8757df139797dc8072e638`  
+		Last Modified: Wed, 16 Mar 2022 04:18:56 GMT  
+		Size: 14.6 MB (14648383 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:308948af9f8cea0209edfe5cab1a6f1d37af51ff8b4908736d7e22e57eefd535`  
-		Last Modified: Wed, 02 Mar 2022 12:03:09 GMT  
-		Size: 130.0 B  
+	-	`sha256:416db1783e0147f3461867e37e1ddf880be89c20aeb787a0bd3105063f60da44`  
+		Last Modified: Wed, 16 Mar 2022 04:18:55 GMT  
+		Size: 129.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:166d5cf3daabada7e1e2359620f689ef642746eae1eef62a8b86162c63e3e094`  
-		Last Modified: Wed, 02 Mar 2022 12:33:07 GMT  
-		Size: 2.3 MB (2253990 bytes)  
+	-	`sha256:268b1fbee3cee77670c15019080973dfb3d0a568f17391b77c00fa4f2e93dae8`  
+		Last Modified: Wed, 16 Mar 2022 06:28:08 GMT  
+		Size: 2.3 MB (2254166 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d38cf42465ce139a147bb72ab7daaf08f8819e8f90ee99172e99409316f876f`  
-		Last Modified: Wed, 02 Mar 2022 12:33:06 GMT  
-		Size: 970.3 KB (970349 bytes)  
+	-	`sha256:e4d6b4cdd822a1a197266f96b37c09a18a1b31db50a2047205f6b7bdfbc76aa2`  
+		Last Modified: Wed, 16 Mar 2022 06:28:07 GMT  
+		Size: 970.4 KB (970353 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:64253efd28c9627fcb84fe9b89ccf7424e92202a494b8638557ce42fe391afb9`  
-		Last Modified: Wed, 02 Mar 2022 12:33:04 GMT  
+	-	`sha256:1b0a8d92177d34edab081fac1a3281b2ba74107eed7ecd1a419002c1c1ecc2db`  
+		Last Modified: Wed, 16 Mar 2022 06:28:04 GMT  
 		Size: 4.4 KB (4418 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:64380168804ad6643992440616eb5915a6a1cd49dce51e99161a17e5e9754e33`  
-		Last Modified: Wed, 02 Mar 2022 12:33:04 GMT  
-		Size: 27.5 KB (27485 bytes)  
+	-	`sha256:3c5971f58607389cf3e86fc00b4343f3b8289bdf648e2559abe8e02c6e053063`  
+		Last Modified: Wed, 16 Mar 2022 06:28:04 GMT  
+		Size: 27.5 KB (27492 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9b6fcd3aedfc31dea6bafb72c3041234bb1eb4fe1432459515c5e9e74a6947b8`  
-		Last Modified: Wed, 02 Mar 2022 12:33:10 GMT  
-		Size: 97.1 MB (97121302 bytes)  
+	-	`sha256:567ab4e2815c28fc4f611a1df140ec1f3684b64a37aa099836c1e571e0fa26a6`  
+		Last Modified: Wed, 16 Mar 2022 06:28:10 GMT  
+		Size: 97.1 MB (97121330 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c4610c85990ed5de847d4bb9ef67dc14fc1f69b74ea0a3086af711734070e517`  
-		Last Modified: Wed, 02 Mar 2022 12:33:04 GMT  
-		Size: 454.0 B  
+	-	`sha256:2dc69b7ba784b819aeaa18ee3a45a4b4fceec41f6655d55357e089beaf9d6c09`  
+		Last Modified: Wed, 16 Mar 2022 06:28:04 GMT  
+		Size: 458.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:72cc21c5f4d1d5487737600e74820a14bf3d62d501227ef94492398fc4b6a05f`  
-		Last Modified: Wed, 02 Mar 2022 12:33:04 GMT  
-		Size: 1.4 KB (1432 bytes)  
+	-	`sha256:942f2ad9365f00c3d9880454dd12c927549771bd7460cfdb7b1e74433a662583`  
+		Last Modified: Wed, 16 Mar 2022 06:28:04 GMT  
+		Size: 1.4 KB (1431 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
