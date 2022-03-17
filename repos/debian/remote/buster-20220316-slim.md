@@ -1,21 +1,19 @@
-## `debian:10.11-slim`
+## `debian:buster-20220316-slim`
 
 ```console
-$ docker pull debian@sha256:145fda9de8ae40b757e741e805ce0447237e0365caa99673980f7489400a38e9
+$ docker pull debian@sha256:a0fec27d8141ceaa44e54f4c221c46121566d52b2287e565008a501652bad515
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 8
+-	Platforms: 6
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	linux; 386
-	-	linux; mips64le
-	-	linux; ppc64le
 	-	linux; s390x
 
-### `debian:10.11-slim` - linux; amd64
+### `debian:buster-20220316-slim` - linux; amd64
 
 ```console
 $ docker pull debian@sha256:957293d0717a906c3c7b29c72eb5ba1c69359025ee3eee6ca6ce4b375256ff5b
@@ -41,7 +39,7 @@ CMD ["bash"]
 		Size: 27.2 MB (27153828 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:10.11-slim` - linux; arm variant v5
+### `debian:buster-20220316-slim` - linux; arm variant v5
 
 ```console
 $ docker pull debian@sha256:a98ae42e2b8ec3566286b49da8496a1b5275fea7e3639bc86c34345945b09d97
@@ -67,7 +65,7 @@ CMD ["bash"]
 		Size: 24.9 MB (24886195 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:10.11-slim` - linux; arm variant v7
+### `debian:buster-20220316-slim` - linux; arm variant v7
 
 ```console
 $ docker pull debian@sha256:6e6a828497fdb6e569023842cd3d72ec97d3551b9ea8608581379ea78b5b95e6
@@ -93,7 +91,7 @@ CMD ["bash"]
 		Size: 22.8 MB (22754389 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:10.11-slim` - linux; arm64 variant v8
+### `debian:buster-20220316-slim` - linux; arm64 variant v8
 
 ```console
 $ docker pull debian@sha256:223635952de65f60042b02f051ce99cc713e6a6d3b09f41e066112105c889dbe
@@ -119,7 +117,7 @@ CMD ["bash"]
 		Size: 25.9 MB (25923233 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:10.11-slim` - linux; 386
+### `debian:buster-20220316-slim` - linux; 386
 
 ```console
 $ docker pull debian@sha256:08acc283765251670c41ba23ebf5184f9385844ede2a657ee4a733254f7a0bd5
@@ -145,59 +143,7 @@ CMD ["bash"]
 		Size: 27.8 MB (27804570 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:10.11-slim` - linux; mips64le
-
-```console
-$ docker pull debian@sha256:157d82bd03421ef5a8705c7ff21295e504fbba7b2ac88eb908dbdef4ac747348
-```
-
--	Docker Version: 20.10.12
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.8 MB (25820204 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e657a7c8bc771eb632768c4bcbd340247d2e85274c484324c48b4ca0517bf736`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Tue, 01 Mar 2022 02:03:50 GMT
-ADD file:f681a18b03e8f8590fb85a806e2c18b3ee2e69fb1a4db7eb933bafb8e7784672 in / 
-# Tue, 01 Mar 2022 02:03:50 GMT
-CMD ["bash"]
-```
-
--	Layers:
-	-	`sha256:678634e0b2f87341687ab30235502da4100c2eeafae836b9a671b39e8f7a6da6`  
-		Last Modified: Tue, 01 Mar 2022 02:13:43 GMT  
-		Size: 25.8 MB (25820204 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-### `debian:10.11-slim` - linux; ppc64le
-
-```console
-$ docker pull debian@sha256:ec593e0ad4fff77a7c2952551ccc4308364deb653a16e0451ce6f261c51efcbe
-```
-
--	Docker Version: 20.10.12
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **30.6 MB (30562288 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac1b778cccbd7227aa8cf7998bb2b1af7c33ed66ced339ee098a288e163d1f0f`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Tue, 01 Mar 2022 02:06:09 GMT
-ADD file:005ec6e437fc9cf8458edb6369462ce53feb585501ea6b5e5f4a6264557b3a01 in / 
-# Tue, 01 Mar 2022 02:06:14 GMT
-CMD ["bash"]
-```
-
--	Layers:
-	-	`sha256:3cee81bb9485c9d0b620c87842e566d7a1f93086ef88c00a4d7175fc776b7f3f`  
-		Last Modified: Tue, 01 Mar 2022 02:16:22 GMT  
-		Size: 30.6 MB (30562288 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-### `debian:10.11-slim` - linux; s390x
+### `debian:buster-20220316-slim` - linux; s390x
 
 ```console
 $ docker pull debian@sha256:d41a89533ac8954df598a68b455e848d0fc5e85c036bba9a9f7bf5cf5c34ade7

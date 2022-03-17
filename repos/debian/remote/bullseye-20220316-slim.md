@@ -1,21 +1,19 @@
-## `debian:bullseye-slim`
+## `debian:bullseye-20220316-slim`
 
 ```console
-$ docker pull debian@sha256:78d776432b979fa7f846d1fda616b3c7f6841bb437451abdc8ffe8d6e9df860a
+$ docker pull debian@sha256:cbafd8105a994055df69ca9ab13364b0559bc9eb29c8130afbedae766c23d026
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 8
+-	Platforms: 6
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	linux; 386
-	-	linux; mips64le
-	-	linux; ppc64le
 	-	linux; s390x
 
-### `debian:bullseye-slim` - linux; amd64
+### `debian:bullseye-20220316-slim` - linux; amd64
 
 ```console
 $ docker pull debian@sha256:fa4209bc498f3cf557c7d448f295d300aed44e7fd296fdd480a8ff5785cca305
@@ -41,7 +39,7 @@ CMD ["bash"]
 		Size: 31.4 MB (31376572 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:bullseye-slim` - linux; arm variant v5
+### `debian:bullseye-20220316-slim` - linux; arm variant v5
 
 ```console
 $ docker pull debian@sha256:a2787573e37ab7dc4f2552d7ca5167f012c01f138dfaeb711fd70ad19f1b00e2
@@ -67,7 +65,7 @@ CMD ["bash"]
 		Size: 28.9 MB (28919702 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:bullseye-slim` - linux; arm variant v7
+### `debian:bullseye-20220316-slim` - linux; arm variant v7
 
 ```console
 $ docker pull debian@sha256:0b669f49062c3f25f66f7e0a0bc1e30b0828e4ffd48d8ee7f59cc45a38e0a16a
@@ -93,7 +91,7 @@ CMD ["bash"]
 		Size: 26.6 MB (26575097 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:bullseye-slim` - linux; arm64 variant v8
+### `debian:bullseye-20220316-slim` - linux; arm64 variant v8
 
 ```console
 $ docker pull debian@sha256:fc7792ebc6819bf63f967a6039f2f35346e7fa8f3650f8dd58f596c3da1a9882
@@ -119,7 +117,7 @@ CMD ["bash"]
 		Size: 30.1 MB (30063013 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:bullseye-slim` - linux; 386
+### `debian:bullseye-20220316-slim` - linux; 386
 
 ```console
 $ docker pull debian@sha256:e2bf743203ccb65f1530a1d951f091f9adaab575af640dc396e632aa00580d72
@@ -145,59 +143,7 @@ CMD ["bash"]
 		Size: 32.4 MB (32386475 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:bullseye-slim` - linux; mips64le
-
-```console
-$ docker pull debian@sha256:410964b6f9aee2b3c30b66cd4e2115e755077e6a03f5d32c7f33b621e41a0a87
-```
-
--	Docker Version: 20.10.12
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **29.6 MB (29632966 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b3a46717bf2f7429e47d14bb3872c4d01bd8e6997aec6bbc26bff2c1bb9aac11`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Tue, 01 Mar 2022 02:02:49 GMT
-ADD file:1901e1e1292cbfcd557262ec5d08551cecd0070b24928414d220472664fe3fdf in / 
-# Tue, 01 Mar 2022 02:02:49 GMT
-CMD ["bash"]
-```
-
--	Layers:
-	-	`sha256:3baeb8c34a522fc616f97412d47dc1f665e93552c57aa8237ee1d673f9757cba`  
-		Last Modified: Tue, 01 Mar 2022 02:12:25 GMT  
-		Size: 29.6 MB (29632966 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-### `debian:bullseye-slim` - linux; ppc64le
-
-```console
-$ docker pull debian@sha256:6543d65f0f814f0c58b003373721744a391dbceb2125df5b8dcfa9cd40ba095f
-```
-
--	Docker Version: 20.10.12
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **35.3 MB (35272910 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f827321a0025b6268c9123dbc62f0a47b2d95aa6ce255f83480644dff3d658c6`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Tue, 01 Mar 2022 02:05:07 GMT
-ADD file:fc0989685aecf50ec36795d73893c30d9ddd4f946f8c5f4a6d10963f8ab41168 in / 
-# Tue, 01 Mar 2022 02:05:12 GMT
-CMD ["bash"]
-```
-
--	Layers:
-	-	`sha256:1dde9239ed493e1fe68971baa3f162c734ef0f461ad109e48aeb5b56daa55cc2`  
-		Last Modified: Tue, 01 Mar 2022 02:15:19 GMT  
-		Size: 35.3 MB (35272910 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-### `debian:bullseye-slim` - linux; s390x
+### `debian:bullseye-20220316-slim` - linux; s390x
 
 ```console
 $ docker pull debian@sha256:b40851c26e67da3caa32bdccd39da705170c3965ed41dffcdd0815eca6791c58
