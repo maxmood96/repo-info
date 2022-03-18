@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6904d1e80952386710bc98175a4b7c06a7f691760ad11788e8dc6f2e1582a03e`
-- Created: `2022-03-01T02:14:09.285049462Z`
-- Virtual Size: ~ 100.64 Mb  
+- Image ID: `sha256:479aaa76262f35295b0844688e25a7f3ba798b4c492d3d8ac165b55f99423ab9`
+- Created: `2022-03-17T04:04:46.155253772Z`
+- Virtual Size: ~ 100.69 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -365,11 +365,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/debconf/1.5.61/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/debconf/1.5.61/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `debian-archive-keyring=2017.5+deb9u1`
+### `dpkg` source package: `debian-archive-keyring=2017.5+deb9u2`
 
 Binary Packages:
 
-- `debian-archive-keyring=2017.5+deb9u1`
+- `debian-archive-keyring=2017.5+deb9u2`
 
 Licenses: (parsed from: `/usr/share/doc/debian-archive-keyring/copyright`)
 
@@ -378,16 +378,16 @@ Licenses: (parsed from: `/usr/share/doc/debian-archive-keyring/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris debian-archive-keyring=2017.5+deb9u1
-'http://deb.debian.org/debian/pool/main/d/debian-archive-keyring/debian-archive-keyring_2017.5%2bdeb9u1.dsc' debian-archive-keyring_2017.5+deb9u1.dsc 1827 SHA256:bc03dac3958c0d9de0a161fbd1ea3d69cd8e9146df4ce6fa4b69f80189c6b21b
-'http://deb.debian.org/debian/pool/main/d/debian-archive-keyring/debian-archive-keyring_2017.5%2bdeb9u1.tar.xz' debian-archive-keyring_2017.5+deb9u1.tar.xz 116344 SHA256:dcfffc87cc382bda49de654d205abb586519c0859d6c570f1eabdfa997350806
+$ apt-get source -qq --print-uris debian-archive-keyring=2017.5+deb9u2
+'http://security.debian.org/debian-security/pool/updates/main/d/debian-archive-keyring/debian-archive-keyring_2017.5%2bdeb9u2.dsc' debian-archive-keyring_2017.5+deb9u2.dsc 1790 SHA256:dbe9c836053c379e46d57ba1a1ac1c995ff4b5b3d4012e1e6d67a7ea57920432
+'http://security.debian.org/debian-security/pool/updates/main/d/debian-archive-keyring/debian-archive-keyring_2017.5%2bdeb9u2.tar.xz' debian-archive-keyring_2017.5+deb9u2.tar.xz 197956 SHA256:e476a451c79e1ac9482976bade2cc6d0057d8c38ad6676a25a60e1e7f2f01a8d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/debian-archive-keyring/2017.5+deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/debian-archive-keyring/2017.5+deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debian-archive-keyring/2017.5+deb9u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/debian-archive-keyring/2017.5+deb9u2/ (for browsing the source)
+- https://sources.debian.net/src/debian-archive-keyring/2017.5+deb9u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/debian-archive-keyring/2017.5+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debianutils=4.8.1.1`
 
