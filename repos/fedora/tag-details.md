@@ -2,176 +2,12 @@
 
 # Tags of `fedora`
 
--	[`fedora:33`](#fedora33)
 -	[`fedora:34`](#fedora34)
 -	[`fedora:35`](#fedora35)
 -	[`fedora:36`](#fedora36)
+-	[`fedora:37`](#fedora37)
 -	[`fedora:latest`](#fedoralatest)
 -	[`fedora:rawhide`](#fedorarawhide)
-
-## `fedora:33`
-
-```console
-$ docker pull fedora@sha256:46e6c941bb536f6a54390f9956e2566fde0738c28d21c16eb8daa16c22d13410
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 5
-	-	linux; amd64
-	-	linux; arm variant v7
-	-	linux; arm64 variant v8
-	-	linux; ppc64le
-	-	linux; s390x
-
-### `fedora:33` - linux; amd64
-
-```console
-$ docker pull fedora@sha256:0917716c5c92a4d57ed58db867b8889e7834d542d89cac8dac2f0b30606a34f9
-```
-
--	Docker Version: 20.10.7
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **61.7 MB (61717804 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c27e4553c7530b3dfd5cddeed9cfa0ca38a2b7d4b4e92637aee990fad809f3b5`
--	Default Command: `["\/bin\/bash"]`
-
-```dockerfile
-# Thu, 01 Apr 2021 17:59:37 GMT
-LABEL maintainer=Clement Verna <cverna@fedoraproject.org>
-# Thu, 01 Apr 2021 18:00:06 GMT
-ENV DISTTAG=f33container FGC=f33 FBR=f33
-# Mon, 29 Nov 2021 20:28:34 GMT
-ADD file:4c8e8bdbd6478809ef9d93328de7a771980d5514b17f77dd2984c3fdafeb4ded in / 
-# Mon, 29 Nov 2021 20:28:35 GMT
-CMD ["/bin/bash"]
-```
-
--	Layers:
-	-	`sha256:e38005c461747e018a8623903ac5b9af4f2097c5050c8fa8d937ed3748bae7c6`  
-		Last Modified: Mon, 29 Nov 2021 20:29:31 GMT  
-		Size: 61.7 MB (61717804 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-### `fedora:33` - linux; arm variant v7
-
-```console
-$ docker pull fedora@sha256:771c683f88fa02df42fe088984db0d58973d158b14d37d78f30a5a53e4f4ad3b
-```
-
--	Docker Version: 20.10.7
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **58.2 MB (58239363 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d7511d8a0aee653a33b78f546ac28a72025d2fd1297d0f6caf4a637395475b70`
--	Default Command: `["\/bin\/bash"]`
-
-```dockerfile
-# Fri, 23 Jul 2021 19:03:21 GMT
-LABEL maintainer=Clement Verna <cverna@fedoraproject.org>
-# Fri, 23 Jul 2021 19:03:56 GMT
-ENV DISTTAG=f33container FGC=f33 FBR=f33
-# Mon, 29 Nov 2021 20:13:54 GMT
-ADD file:639a2cc0ea9dc44703c4f5ba4053dd67ea511e05bd489e370cd89d4f12401fe2 in / 
-# Mon, 29 Nov 2021 20:13:56 GMT
-CMD ["/bin/bash"]
-```
-
--	Layers:
-	-	`sha256:db80f7255ec21bb8f3a39a9431263de0f954ca1328385a1a67ef0d6d11b9e121`  
-		Last Modified: Mon, 29 Nov 2021 20:16:48 GMT  
-		Size: 58.2 MB (58239363 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-### `fedora:33` - linux; arm64 variant v8
-
-```console
-$ docker pull fedora@sha256:cca28e6aed5589f016bbd6a1963a037a6b85c15b2a653ae89dba5de75ed73867
-```
-
--	Docker Version: 20.10.7
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **61.5 MB (61519858 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:45181a1336ce40835f341d0fba19025d1d1c8ce6516807910169ce257ea25788`
--	Default Command: `["\/bin\/bash"]`
-
-```dockerfile
-# Tue, 02 Nov 2021 21:12:33 GMT
-LABEL maintainer=Clement Verna <cverna@fedoraproject.org>
-# Tue, 02 Nov 2021 21:12:34 GMT
-ENV DISTTAG=f33container FGC=f33 FBR=f33
-# Mon, 29 Nov 2021 19:50:41 GMT
-ADD file:510c2d3ca28440e067b34a9701518e2f995903ee3077136b6c34bd4c83decd0c in / 
-# Mon, 29 Nov 2021 19:50:42 GMT
-CMD ["/bin/bash"]
-```
-
--	Layers:
-	-	`sha256:c1323e24d83bead6278a9d962e8184fae424d3b184fd8892fcb9fb05b4b7068e`  
-		Last Modified: Mon, 29 Nov 2021 19:51:45 GMT  
-		Size: 61.5 MB (61519858 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-### `fedora:33` - linux; ppc64le
-
-```console
-$ docker pull fedora@sha256:ca3f232ff96b79cbe04e0b5b248a5de82888b65909515a7e50f906cfac9520b1
-```
-
--	Docker Version: 20.10.7
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **67.3 MB (67313890 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6c9c327637f16c005121cfc55bcd21f35f5bb5e88326ffc46d735878ffeeb72f`
--	Default Command: `["\/bin\/bash"]`
-
-```dockerfile
-# Fri, 23 Jul 2021 23:32:50 GMT
-LABEL maintainer=Clement Verna <cverna@fedoraproject.org>
-# Fri, 23 Jul 2021 23:34:07 GMT
-ENV DISTTAG=f33container FGC=f33 FBR=f33
-# Mon, 29 Nov 2021 20:32:16 GMT
-ADD file:6ed3d51dea2ea5c652fdd767eee89a1289bdb5d938bc69acb7be8a8549fbb6c8 in / 
-# Mon, 29 Nov 2021 20:32:24 GMT
-CMD ["/bin/bash"]
-```
-
--	Layers:
-	-	`sha256:130910071a6bc934daa32798485504846e71de9a7adba0062db507c58f56742c`  
-		Last Modified: Mon, 29 Nov 2021 20:34:11 GMT  
-		Size: 67.3 MB (67313890 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-### `fedora:33` - linux; s390x
-
-```console
-$ docker pull fedora@sha256:5dac9ec9b48e4da79c32f36dc5a25c8e273113af622ee4a4b2f5525b70f6233a
-```
-
--	Docker Version: 20.10.7
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **63.3 MB (63298220 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:39e7d113cfebf7339858983ed117c08f87f2e6e850a7d983d133c5259440c0f4`
--	Default Command: `["\/bin\/bash"]`
-
-```dockerfile
-# Fri, 23 Jul 2021 02:30:24 GMT
-LABEL maintainer=Clement Verna <cverna@fedoraproject.org>
-# Fri, 23 Jul 2021 02:30:42 GMT
-ENV DISTTAG=f33container FGC=f33 FBR=f33
-# Mon, 29 Nov 2021 19:41:42 GMT
-ADD file:6239a96e1e6ec74d5ce173407143520bf1178a2fd9ab01a123d8978684d1aad1 in / 
-# Mon, 29 Nov 2021 19:41:52 GMT
-CMD ["/bin/bash"]
-```
-
--	Layers:
-	-	`sha256:068bfb2fd80ec71140f3065c7b75e88627fbce2f79fd17d1571fcc15b3954b63`  
-		Last Modified: Mon, 29 Nov 2021 19:43:14 GMT  
-		Size: 63.3 MB (63298220 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `fedora:34`
 
@@ -664,6 +500,10 @@ CMD ["/bin/bash"]
 		Last Modified: Mon, 29 Nov 2021 19:43:54 GMT  
 		Size: 55.1 MB (55124405 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `fedora:37`
+
+**does not exist** (yet?)
 
 ## `fedora:latest`
 
