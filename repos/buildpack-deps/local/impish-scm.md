@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:62c549a007529dd5f7a9b1047830fe5237a2dc36a43bcba9c47d1d3498d95582`
-- Created: `2022-03-03T20:54:16.248710236Z`
+- Image ID: `sha256:d579c4e84443c577e827571521c894f50999ff4ee101ddb1869571e3836024d7`
+- Created: `2022-03-18T06:50:53.346517351Z`
 - Virtual Size: ~ 214.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -508,19 +508,24 @@ $ apt-get source -qq --print-uris e2fsprogs=1.46.3-1ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.46.3-1ubuntu3.debian.tar.xz' e2fsprogs_1.46.3-1ubuntu3.debian.tar.xz 85800 SHA512:c4eafbeb9ef671ecc1d85e1fe714fb78a7205a232062860261b0a5a0d3338cd8ad48f76619e0d93c8520d276cdf418c6cc82d4e99b7c5889d97ff35c3b0ae26c
 ```
 
-### `dpkg` source package: `expat=2.4.1-2ubuntu0.1`
+### `dpkg` source package: `expat=2.4.1-2ubuntu0.3`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.4.1-2ubuntu0.1`
+- `libexpat1:amd64=2.4.1-2ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris expat=2.4.1-2ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.1-2ubuntu0.3.dsc' expat_2.4.1-2ubuntu0.3.dsc 2096 SHA512:7f8c7c2d36ea20d941fc30b0f8029239716c95a26317f805ff0d0a8d503a2d61d2b9ba3ca2e1850ed0d1cce045341874d12d68104057cd0074bf5bea5ad85fe5
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.1.orig.tar.gz' expat_2.4.1.orig.tar.gz 8307804 SHA512:1f08861e9b766fdbbc40159404a3fe1a86451d635ef81874fa3492845eda83ac2dc6a0272525891d396b70c9a9254c2f6c907fe4abb2f8a533ccd3f52dae9d5a
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.1-2ubuntu0.3.debian.tar.xz' expat_2.4.1-2ubuntu0.3.debian.tar.xz 26116 SHA512:fd58c4788f11c5c670e3ca91784dd0a672905a96bbf3877132b33bcb0fefea8028c600deecd698c4019771ee6a4542605d78e1fd5beda795e5ae835b10210195
+```
 
 ### `dpkg` source package: `findutils=4.8.0-1ubuntu2`
 
@@ -1771,12 +1776,12 @@ $ apt-get source -qq --print-uris openssh=1:8.4p1-6ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.4p1-6ubuntu2.1.debian.tar.xz' openssh_8.4p1-6ubuntu2.1.debian.tar.xz 181748 SHA512:1ee3683f943dc9844e05c67d0a4da430e0bfa90b666ea2dccdcc79b0cbdaf742c2832436de61f4c40136a2f662971a4f7e5c6dc990c0ecb21b36a0f9a1c4a5f9
 ```
 
-### `dpkg` source package: `openssl=1.1.1l-1ubuntu1.1`
+### `dpkg` source package: `openssl=1.1.1l-1ubuntu1.2`
 
 Binary Packages:
 
-- `libssl1.1:amd64=1.1.1l-1ubuntu1.1`
-- `openssl=1.1.1l-1ubuntu1.1`
+- `libssl1.1:amd64=1.1.1l-1ubuntu1.2`
+- `openssl=1.1.1l-1ubuntu1.2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1785,11 +1790,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=1.1.1l-1ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1l-1ubuntu1.1.dsc' openssl_1.1.1l-1ubuntu1.1.dsc 2774 SHA512:b7cd426bbf60e21d4cce7f103b95d34e70914eb0d2434f4ff2c07a2d5b4496ad319fb63f32d62fb7ca3038a3856180d75af3046cdaf505bf6c82a520cb94687a
+$ apt-get source -qq --print-uris openssl=1.1.1l-1ubuntu1.2
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1l-1ubuntu1.2.dsc' openssl_1.1.1l-1ubuntu1.2.dsc 2745 SHA512:b786c30a74f53219580e86dac2eb0799d2892d832f6ee2e025ed91d96b3b9454b880bf20b4bd3ea76cb5b35c0bff2cc7d87e84e8e50e02ad476dc353aa3bf051
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1l.orig.tar.gz' openssl_1.1.1l.orig.tar.gz 9834044 SHA512:d9611f393e37577cca05004531388d3e0ebbf714894cab9f95f4903909cd4f45c214faab664c0cbc3ad3cca309d500b9e6d0ecbf9a0a0588d1677dc6b047f9e0
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1l.orig.tar.gz.asc' openssl_1.1.1l.orig.tar.gz.asc 488 SHA512:22f58aa49cec9e9678e56817113cccb5e1999b3148b1b3c40cf57c217d29b6bf3c7d8a4ed85b2dc865a1560095350902f7a3c78f6d4bb36ca2968740a8407aaf
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1l-1ubuntu1.1.debian.tar.xz' openssl_1.1.1l-1ubuntu1.1.debian.tar.xz 147012 SHA512:73424f781f2cef7613c4c41c6abb8fb77d83c558eede0171c7e7f3a9822fb24a2101ce58e355db519b2a5549df64517ab9daa1982e1edd00993f7f36ba1d50f3
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1l-1ubuntu1.2.debian.tar.xz' openssl_1.1.1l-1ubuntu1.2.debian.tar.xz 149008 SHA512:c30e1aa986793fb2693eafb230a43e48fba1ece63ff449fcdd9b09d49172f007c9cf81b015d72181eec6889ccc26e9d8d1fde054a128118bb6b991c9eda93f7f
 ```
 
 ### `dpkg` source package: `p11-kit=0.23.22-1build1`
