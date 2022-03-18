@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d1cf2739f793c084e6bade25e64b9f5aa06505b4a42ee4493bd70c33b40bba08`
-- Created: `2022-03-16T17:31:29.202379585Z`
-- Virtual Size: ~ 114.01 Mb  
+- Image ID: `sha256:a433eb47ba6a3467e2914103e8f537b34f50601420a90cea549de94ba55fdc45`
+- Created: `2022-03-18T08:13:58.118339109Z`
+- Virtual Size: ~ 114.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -291,12 +291,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/coreutils/8.26-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/coreutils/8.26-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3+deb9u1`
+### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3+deb9u2`
 
 Binary Packages:
 
-- `libsasl2-2:amd64=2.1.27~101-g0780600+dfsg-3+deb9u1`
-- `libsasl2-modules-db:amd64=2.1.27~101-g0780600+dfsg-3+deb9u1`
+- `libsasl2-2:amd64=2.1.27~101-g0780600+dfsg-3+deb9u2`
+- `libsasl2-modules-db:amd64=2.1.27~101-g0780600+dfsg-3+deb9u2`
 
 Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/libsasl2-modules-db/copyright`)
 
@@ -307,17 +307,17 @@ Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/l
 Source:
 
 ```console
-$ apt-get source -qq --print-uris cyrus-sasl2=2.1.27~101-g0780600+dfsg-3+deb9u1
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27%7e101-g0780600%2bdfsg-3%2bdeb9u1.dsc' cyrus-sasl2_2.1.27~101-g0780600+dfsg-3+deb9u1.dsc 3381 SHA256:a331441098ece65be5bf13d871b486115af68daf06a0145adf6cda8ef71d73e4
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27%7e101-g0780600%2bdfsg.orig.tar.xz' cyrus-sasl2_2.1.27~101-g0780600+dfsg.orig.tar.xz 1143888 SHA256:69f34971f768e7ee6a6b647ec2d16a5a72a854ecd4602b019d5f79ba61063fdc
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27%7e101-g0780600%2bdfsg-3%2bdeb9u1.debian.tar.xz' cyrus-sasl2_2.1.27~101-g0780600+dfsg-3+deb9u1.debian.tar.xz 94992 SHA256:be1ba4b3bfcc4740354342686deac73ca2e46c4871219599229efe8cfe98df6f
+$ apt-get source -qq --print-uris cyrus-sasl2=2.1.27~101-g0780600+dfsg-3+deb9u2
+'http://security.debian.org/debian-security/pool/updates/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27%7e101-g0780600%2bdfsg-3%2bdeb9u2.dsc' cyrus-sasl2_2.1.27~101-g0780600+dfsg-3+deb9u2.dsc 3385 SHA256:b010c3150312ce7d89c2ab9fe987f4597f7fbc7aca932542fd49de76246bcbf4
+'http://security.debian.org/debian-security/pool/updates/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27%7e101-g0780600%2bdfsg.orig.tar.xz' cyrus-sasl2_2.1.27~101-g0780600+dfsg.orig.tar.xz 1143888 SHA256:69f34971f768e7ee6a6b647ec2d16a5a72a854ecd4602b019d5f79ba61063fdc
+'http://security.debian.org/debian-security/pool/updates/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27%7e101-g0780600%2bdfsg-3%2bdeb9u2.debian.tar.xz' cyrus-sasl2_2.1.27~101-g0780600+dfsg-3+deb9u2.debian.tar.xz 96140 SHA256:5ce0b4b096f05abcf27302cb0c18b1e692f8ed2f7846a4e3a55c8f21b2adf3e2
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/cyrus-sasl2/2.1.27~101-g0780600+dfsg-3+deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/cyrus-sasl2/2.1.27~101-g0780600+dfsg-3+deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cyrus-sasl2/2.1.27~101-g0780600+dfsg-3+deb9u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/cyrus-sasl2/2.1.27~101-g0780600+dfsg-3+deb9u2/ (for browsing the source)
+- https://sources.debian.net/src/cyrus-sasl2/2.1.27~101-g0780600+dfsg-3+deb9u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/cyrus-sasl2/2.1.27~101-g0780600+dfsg-3+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dash=0.5.8-2.4`
 
@@ -393,11 +393,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/debconf/1.5.61/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/debconf/1.5.61/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `debian-archive-keyring=2017.5+deb9u1`
+### `dpkg` source package: `debian-archive-keyring=2017.5+deb9u2`
 
 Binary Packages:
 
-- `debian-archive-keyring=2017.5+deb9u1`
+- `debian-archive-keyring=2017.5+deb9u2`
 
 Licenses: (parsed from: `/usr/share/doc/debian-archive-keyring/copyright`)
 
@@ -406,16 +406,16 @@ Licenses: (parsed from: `/usr/share/doc/debian-archive-keyring/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris debian-archive-keyring=2017.5+deb9u1
-'http://deb.debian.org/debian/pool/main/d/debian-archive-keyring/debian-archive-keyring_2017.5%2bdeb9u1.dsc' debian-archive-keyring_2017.5+deb9u1.dsc 1827 SHA256:bc03dac3958c0d9de0a161fbd1ea3d69cd8e9146df4ce6fa4b69f80189c6b21b
-'http://deb.debian.org/debian/pool/main/d/debian-archive-keyring/debian-archive-keyring_2017.5%2bdeb9u1.tar.xz' debian-archive-keyring_2017.5+deb9u1.tar.xz 116344 SHA256:dcfffc87cc382bda49de654d205abb586519c0859d6c570f1eabdfa997350806
+$ apt-get source -qq --print-uris debian-archive-keyring=2017.5+deb9u2
+'http://security.debian.org/debian-security/pool/updates/main/d/debian-archive-keyring/debian-archive-keyring_2017.5%2bdeb9u2.dsc' debian-archive-keyring_2017.5+deb9u2.dsc 1790 SHA256:dbe9c836053c379e46d57ba1a1ac1c995ff4b5b3d4012e1e6d67a7ea57920432
+'http://security.debian.org/debian-security/pool/updates/main/d/debian-archive-keyring/debian-archive-keyring_2017.5%2bdeb9u2.tar.xz' debian-archive-keyring_2017.5+deb9u2.tar.xz 197956 SHA256:e476a451c79e1ac9482976bade2cc6d0057d8c38ad6676a25a60e1e7f2f01a8d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/debian-archive-keyring/2017.5+deb9u1/ (for browsing the source)
-- https://sources.debian.net/src/debian-archive-keyring/2017.5+deb9u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debian-archive-keyring/2017.5+deb9u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/debian-archive-keyring/2017.5+deb9u2/ (for browsing the source)
+- https://sources.debian.net/src/debian-archive-keyring/2017.5+deb9u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/debian-archive-keyring/2017.5+deb9u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debianutils=4.8.1.1`
 

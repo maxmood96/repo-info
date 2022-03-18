@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:af7fef393e7dd692f4f6a216c0c50ed1905ce7220dc2c870d100bd672261a9ab`
-- Created: `2022-03-16T17:30:45.011066211Z`
+- Image ID: `sha256:157f768d72636f7b777a6e298a6eb924161750b6ddc10ef17b8bb027d2c7e14e`
+- Created: `2022-03-18T08:13:41.296817772Z`
 - Virtual Size: ~ 86.69 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1313,19 +1313,25 @@ $ apt-get source -qq --print-uris openldap=2.5.6+dfsg-1~exp1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.6%2bdfsg-1%7eexp1ubuntu1.debian.tar.xz' openldap_2.5.6+dfsg-1~exp1ubuntu1.debian.tar.xz 170828 SHA512:c5943df92305cf4f0a39c80fc48689c4eb5604399ffa636987f60e7f69788e6acb8752e51acc7a04fd9333a0b117c57849db4c52669d7c62c03f93bcbeaf9817
 ```
 
-### `dpkg` source package: `openssl=1.1.1l-1ubuntu1.1`
+### `dpkg` source package: `openssl=1.1.1l-1ubuntu1.2`
 
 Binary Packages:
 
-- `libssl1.1:amd64=1.1.1l-1ubuntu1.1`
+- `libssl1.1:amd64=1.1.1l-1ubuntu1.2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.1.1l-1ubuntu1.2
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1l-1ubuntu1.2.dsc' openssl_1.1.1l-1ubuntu1.2.dsc 2745 SHA512:b786c30a74f53219580e86dac2eb0799d2892d832f6ee2e025ed91d96b3b9454b880bf20b4bd3ea76cb5b35c0bff2cc7d87e84e8e50e02ad476dc353aa3bf051
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1l.orig.tar.gz' openssl_1.1.1l.orig.tar.gz 9834044 SHA512:d9611f393e37577cca05004531388d3e0ebbf714894cab9f95f4903909cd4f45c214faab664c0cbc3ad3cca309d500b9e6d0ecbf9a0a0588d1677dc6b047f9e0
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1l.orig.tar.gz.asc' openssl_1.1.1l.orig.tar.gz.asc 488 SHA512:22f58aa49cec9e9678e56817113cccb5e1999b3148b1b3c40cf57c217d29b6bf3c7d8a4ed85b2dc865a1560095350902f7a3c78f6d4bb36ca2968740a8407aaf
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1l-1ubuntu1.2.debian.tar.xz' openssl_1.1.1l-1ubuntu1.2.debian.tar.xz 149008 SHA512:c30e1aa986793fb2693eafb230a43e48fba1ece63ff449fcdd9b09d49172f007c9cf81b015d72181eec6889ccc26e9d8d1fde054a128118bb6b991c9eda93f7f
+```
 
 ### `dpkg` source package: `p11-kit=0.23.22-1build1`
 
