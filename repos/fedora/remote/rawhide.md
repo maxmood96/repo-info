@@ -1,7 +1,7 @@
 ## `fedora:rawhide`
 
 ```console
-$ docker pull fedora@sha256:b8d3f5512931a9b68eed8efb91aea5a162b6fa2dbc706fbf7a2f11a972fd8eba
+$ docker pull fedora@sha256:0b01a7e0060195a46f0f32bc63bb0bbf114554f76a55409977ac98b626ffb5c9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -44,31 +44,31 @@ CMD ["/bin/bash"]
 ### `fedora:rawhide` - linux; arm64 variant v8
 
 ```console
-$ docker pull fedora@sha256:edd2b33c276f4eca7c1dbea392b18738335de9d33bce0deb38c492758a70ef96
+$ docker pull fedora@sha256:a2d49da0fb0cf905fa60b62c3f4d672a7bc15ada13976407f403a903e9c799a5
 ```
 
--	Docker Version: 20.10.7
+-	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **56.5 MB (56454063 bytes)**  
+-	Total Size: **57.4 MB (57404615 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:44968d6f04f87c229cc9efeb4e3f6c6cebcd5e9738cece5d286ed8dee5c0faf2`
+-	Image ID: `sha256:de1562ee981bb1c9cf936fa851eccd48e33f5f1cddd8ee3bcaba8b453466e82d`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
 # Tue, 02 Nov 2021 21:12:33 GMT
 LABEL maintainer=Clement Verna <cverna@fedoraproject.org>
-# Tue, 02 Nov 2021 21:13:09 GMT
-ENV DISTTAG=fRawhidecontainer FGC=fRawhide FBR=fRawhide
-# Mon, 29 Nov 2021 19:51:13 GMT
-ADD file:1ba14160180231449cbe007da0b0e7892331961dcc98a64178e330b2eda00d58 in / 
-# Mon, 29 Nov 2021 19:51:14 GMT
+# Sat, 19 Mar 2022 19:19:54 GMT
+ENV DISTTAG=f37container FGC=f37 FBR=f37
+# Sat, 19 Mar 2022 19:19:58 GMT
+ADD file:45b140b6bff51b337f97328705ea18d044afe7296544d671030d94aaa9ddbe6a in / 
+# Sat, 19 Mar 2022 19:19:59 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:4fcc0642766dfbcb972dfd27c94059091dca3040efa2cf6f6983b9ea4179a703`  
-		Last Modified: Mon, 29 Nov 2021 19:52:37 GMT  
-		Size: 56.5 MB (56454063 bytes)  
+	-	`sha256:3d8d377c7244dec052dd9d8842d162a4b68e98db2772f0d8ca69de62ac54dc0e`  
+		Last Modified: Sat, 19 Mar 2022 19:21:21 GMT  
+		Size: 57.4 MB (57404615 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `fedora:rawhide` - linux; ppc64le

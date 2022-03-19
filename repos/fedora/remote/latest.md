@@ -1,7 +1,7 @@
 ## `fedora:latest`
 
 ```console
-$ docker pull fedora@sha256:754b9ec99ae594c7d59180ce03d728329a5b05b8e3486f41b5915c8e1bbac7be
+$ docker pull fedora@sha256:c4555750ab68c2e7dc4cf74fa8d0d2fcf58bd9c1f1b9366b6058323fdc6dfeff
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -75,14 +75,14 @@ CMD ["/bin/bash"]
 ### `fedora:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull fedora@sha256:cfe295ee216d5995136f055659294ebc2dcbd736f94c5ac14dffb39fa2eebb27
+$ docker pull fedora@sha256:acf39c9fb7cd0fa51ee423f9536667007a1b52e98c6030c823007cf5686c7765
 ```
 
--	Docker Version: 20.10.7
+-	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **53.6 MB (53615106 bytes)**  
+-	Total Size: **53.6 MB (53608583 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:788739295edac7b7b34351db644c8a5506e7de56af398985c59bae8d87d45a1e`
+-	Image ID: `sha256:775b4cdd6b58e0dd0077142af08f123c9ed90ac24c4004f161afd01f86c3c95b`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -90,16 +90,16 @@ $ docker pull fedora@sha256:cfe295ee216d5995136f055659294ebc2dcbd736f94c5ac14dff
 LABEL maintainer=Clement Verna <cverna@fedoraproject.org>
 # Tue, 02 Nov 2021 21:12:58 GMT
 ENV DISTTAG=f35container FGC=f35 FBR=f35
-# Mon, 29 Nov 2021 19:51:02 GMT
-ADD file:488774c4dbc8b90b3a4364288c1c824d7512ab64bcdca18eb9d3f2778de0b71c in / 
-# Mon, 29 Nov 2021 19:51:03 GMT
+# Sat, 19 Mar 2022 19:19:32 GMT
+ADD file:a7d0a8d9a9133b3614c6961097e462a1e98ed32bd2a7d73f21552362e625edb0 in / 
+# Sat, 19 Mar 2022 19:19:33 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:3f28ea9d8c33c40fa95a05f63764cc6e8ef9d9449fd75da415eca42543b80f52`  
-		Last Modified: Mon, 29 Nov 2021 19:52:18 GMT  
-		Size: 53.6 MB (53615106 bytes)  
+	-	`sha256:623fc6c8f399e6dde93fc82beed08af10e667fa3896b48d4d41b3f93d652dd0c`  
+		Last Modified: Sat, 19 Mar 2022 19:20:45 GMT  
+		Size: 53.6 MB (53608583 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `fedora:latest` - linux; ppc64le
