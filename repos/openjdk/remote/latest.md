@@ -1,7 +1,7 @@
 ## `openjdk:latest`
 
 ```console
-$ docker pull openjdk@sha256:69171da5aa2d4930cd4f58701612aa33a684b8329c01bfd7d382277a44ddc21f
+$ docker pull openjdk@sha256:004d70432d691f30b05efac5623c29d264a0f6612500ddd859299d4ed7e66ea5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -62,49 +62,49 @@ CMD ["jshell"]
 ### `openjdk:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull openjdk@sha256:cc2931ea7b9d6639bef30ad4d4bc8b6833bc4d3c589dae467d8686f2f5306351
+$ docker pull openjdk@sha256:c39ccbb2d95e5a571f314ccaf1c972511e159bab447c2622f1e6aa9bc45abb43
 ```
 
--	Docker Version: 20.10.7
+-	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **242.6 MB (242620214 bytes)**  
+-	Total Size: **242.7 MB (242673682 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8c990c3fcc674627732853a316c6462f7eb717db5fed97d6751cfc2ce32ba25e`
+-	Image ID: `sha256:c94b0d9205ef321dbf5bf016c9ada86b0660d45ebdbe5a152af7ab9bdbfd3e8c`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Fri, 25 Feb 2022 02:07:20 GMT
-ADD file:99a87d6732159802bc46dd7fcfa5c22f7bcb1faacab59f6e5b8c5284bd3ab861 in / 
-# Fri, 25 Feb 2022 02:07:21 GMT
+# Fri, 18 Mar 2022 00:35:35 GMT
+ADD file:b16af05882bd38ac02b1f1cba2cc7e80bfbe467ce57f3cf35f1f5a551cee90fa in / 
+# Fri, 18 Mar 2022 00:35:36 GMT
 CMD ["/bin/bash"]
-# Fri, 25 Feb 2022 02:25:40 GMT
+# Sat, 19 Mar 2022 07:22:07 GMT
 RUN set -eux; 	microdnf install 		gzip 		tar 				binutils 		freetype fontconfig 	; 	microdnf clean all
-# Fri, 25 Feb 2022 02:29:41 GMT
+# Sat, 19 Mar 2022 07:25:19 GMT
 ENV JAVA_HOME=/usr/java/openjdk-17
-# Fri, 25 Feb 2022 02:29:41 GMT
+# Sat, 19 Mar 2022 07:25:20 GMT
 ENV PATH=/usr/java/openjdk-17/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 25 Feb 2022 02:29:42 GMT
+# Sat, 19 Mar 2022 07:25:21 GMT
 ENV LANG=C.UTF-8
-# Fri, 25 Feb 2022 02:29:43 GMT
+# Sat, 19 Mar 2022 07:25:22 GMT
 ENV JAVA_VERSION=17.0.2
-# Fri, 25 Feb 2022 02:29:55 GMT
+# Sat, 19 Mar 2022 07:25:34 GMT
 RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/GA/jdk17.0.2/dfd4a8d0985749f896bed50d7138ee7f/8/GPL/openjdk-17.0.2_linux-x64_bin.tar.gz'; 			downloadSha256='0022753d0cceecacdd3a795dd4cea2bd7ffdf9dc06e22ffd1be98411742fbb44'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/GA/jdk17.0.2/dfd4a8d0985749f896bed50d7138ee7f/8/GPL/openjdk-17.0.2_linux-aarch64_bin.tar.gz'; 			downloadSha256='13bfd976acf8803f862e82c7113fb0e9311ca5458b1decaef8a09ffd91119fa4'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Fri, 25 Feb 2022 02:29:55 GMT
+# Sat, 19 Mar 2022 07:25:34 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:63ea605e0f838cb587cea4b75125afc43e9d339ddc5233440e9a29b7c5ba12d5`  
-		Last Modified: Fri, 25 Feb 2022 02:08:42 GMT  
-		Size: 42.0 MB (41951862 bytes)  
+	-	`sha256:2f8e506fd7c6683f24250871efec36e3fe21cc71090a2f5c59dccdcdfeed2311`  
+		Last Modified: Fri, 18 Mar 2022 00:36:38 GMT  
+		Size: 42.0 MB (42017883 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ca767a5052236a4d74f577a368b70a4d1d5482f19c0b1c405b8fc19598510e3b`  
-		Last Modified: Fri, 25 Feb 2022 02:47:46 GMT  
-		Size: 14.3 MB (14304339 bytes)  
+	-	`sha256:1f5fff79dab44aae745004a90eddcd68a9db24e820f0c68e482a9508464ea719`  
+		Last Modified: Sat, 19 Mar 2022 07:43:39 GMT  
+		Size: 14.3 MB (14291778 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:20d9e5e362c3dd3664160f374feb4493d2ef0486b6c08aa08cac63214b089279`  
-		Last Modified: Fri, 25 Feb 2022 02:51:35 GMT  
-		Size: 186.4 MB (186364013 bytes)  
+	-	`sha256:88930fb8de8f62db0ae9192d0e6342ea746019c150fe21fd25d8e25dd7938b64`  
+		Last Modified: Sat, 19 Mar 2022 07:47:05 GMT  
+		Size: 186.4 MB (186364021 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:latest` - windows version 10.0.20348.587; amd64
