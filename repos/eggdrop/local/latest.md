@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:02576e601c28f1892b42557b2f916fcb832f175dd8b3cf2a85e582cd541c7a3b`
-- Created: `2022-03-16T17:25:26.327525767Z`
-- Virtual Size: ~ 25.50 Mb  
+- Image ID: `sha256:a9dd1bbf14a48744b1dec02b68a901079951585fe36d1e87218895d262d98516`
+- Created: `2022-03-19T03:07:16.341753965Z`
+- Virtual Size: ~ 22.26 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/home/eggdrop/eggdrop/entrypoint.sh"]`
@@ -108,16 +108,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20191127-r5 description:
+ca-certificates-bundle-20211220-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20191127-r5 webpage:
+ca-certificates-bundle-20211220-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20191127-r5 installed size:
-228 KiB
+ca-certificates-bundle-20211220-r0 installed size:
+216 KiB
 
-ca-certificates-bundle-20191127-r5 license:
+ca-certificates-bundle-20211220-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -261,16 +261,16 @@ MIT
 ### `apk` package: `openssl`
 
 ```console
-openssl-1.1.1l-r0 description:
+openssl-1.1.1n-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-1.1.1l-r0 webpage:
+openssl-1.1.1n-r0 webpage:
 https://www.openssl.org/
 
-openssl-1.1.1l-r0 installed size:
-660 KiB
+openssl-1.1.1n-r0 installed size:
+664 KiB
 
-openssl-1.1.1l-r0 license:
+openssl-1.1.1n-r0 license:
 OpenSSL
 
 ```
