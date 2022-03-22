@@ -161,19 +161,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.4.1
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.4.1.dsc' apt_2.4.1.dsc 2797 SHA256:d8957e38c149947b9e0d3cb6dbc0033b6b63eb8e2d602428be062e7871a100de
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.4.1.tar.xz' apt_2.4.1.tar.xz 2215760 SHA256:4a2bb326b6ab5ca35a7a6e7bee5fe3f41d32fe98e464b4ba32f93d3835aac7e7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/2.4.1/
 
-- https://sources.debian.net/src/apt/2.4.1/ (for browsing the source)
-- https://sources.debian.net/src/apt/2.4.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/2.4.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.1-1`
 
@@ -289,21 +283,13 @@ Licenses: (parsed from: `/usr/share/doc/automake/copyright`)
 - `GPL-3+`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris automake-1.16=1:1.16.5-1.1
-'http://deb.debian.org/debian/pool/main/a/automake-1.16/automake-1.16_1.16.5-1.1.dsc' automake-1.16_1.16.5-1.1.dsc 2575 SHA256:f96f0c588fac5d96f912a26b5ad1bd2bd2a3a29d4e30959e008d1878ab34a90b
-'http://deb.debian.org/debian/pool/main/a/automake-1.16/automake-1.16_1.16.5.orig.tar.xz' automake-1.16_1.16.5.orig.tar.xz 1601740 SHA256:f01d58cd6d9d77fbdca9eb4bbd5ead1988228fdb73d6f7a201f5f8d6b118b469
-'http://deb.debian.org/debian/pool/main/a/automake-1.16/automake-1.16_1.16.5.orig.tar.xz.asc' automake-1.16_1.16.5.orig.tar.xz.asc 833 SHA256:3a161ab65921eed55e1a94251d97c8451d4ba3431b55ca560e95a951b5f1d73a
-'http://deb.debian.org/debian/pool/main/a/automake-1.16/automake-1.16_1.16.5-1.1.debian.tar.xz' automake-1.16_1.16.5-1.1.debian.tar.xz 13320 SHA256:208b8e5e74c30232e6d9c671e274fe4e5c842f6e0ea5620813fefa1f1d77eb7c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/automake-1.16/1:1.16.5-1.1/
 
-- https://sources.debian.net/src/automake-1.16/1:1.16.5-1.1/ (for browsing the source)
-- https://sources.debian.net/src/automake-1.16/1:1.16.5-1.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/automake-1.16/1:1.16.5-1.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `autotools-dev=20220109.1`
 
@@ -3811,20 +3797,13 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.16.12-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_5.16.12-1.dsc' linux_5.16.12-1.dsc 248961 SHA256:c4103b019373e8b3ef119de7a25a960bcfefb9ced2e3ce8d14f1566504d5df01
-'http://deb.debian.org/debian/pool/main/l/linux/linux_5.16.12.orig.tar.xz' linux_5.16.12.orig.tar.xz 129212360 SHA256:9d1deec96ec128e986c21171a0a4287f4750ea223e64fa445e927fb68d6be83f
-'http://deb.debian.org/debian/pool/main/l/linux/linux_5.16.12-1.debian.tar.xz' linux_5.16.12-1.debian.tar.xz 1316600 SHA256:d64ad1de2fd692d2831481132d3518a80dffd62642a87803bfe7f59de3df097e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/linux/5.16.12-1/
 
-- https://sources.debian.net/src/linux/5.16.12-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/5.16.12-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/5.16.12-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=11.1.0`
 
@@ -4435,20 +4414,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.4.59+dfsg-1
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.59%2bdfsg-1.dsc' openldap_2.4.59+dfsg-1.dsc 3113 SHA256:cc2578c30b177406eb9cc1341cca710e4c4ac66230c40633f11a2a26290a6336
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.59%2bdfsg.orig.tar.gz' openldap_2.4.59+dfsg.orig.tar.gz 5056324 SHA256:cdeac7531ff072b0cdde29fcc19534d6ac00e9002ecd554d2ff69f897607bf6d
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.59%2bdfsg-1.debian.tar.xz' openldap_2.4.59+dfsg-1.debian.tar.xz 170320 SHA256:f57e80ab6ecdad5a0a3aed41d1ae9962129d0f3c9e5631ff6c56c2de19d10d60
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openldap/2.4.59+dfsg-1/
 
-- https://sources.debian.net/src/openldap/2.4.59+dfsg-1/ (for browsing the source)
-- https://sources.debian.net/src/openldap/2.4.59+dfsg-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openldap/2.4.59+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.5.11+dfsg-1`
 
@@ -4975,20 +4947,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-stdlib-extensions=3.9.10-1
-'http://deb.debian.org/debian/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.9.10-1.dsc' python3-stdlib-extensions_3.9.10-1.dsc 2571 SHA256:ddb8e242cd3c64ac41bb862ccb3b8f5363557d8e2c8ee926cf8a5ecea9d35978
-'http://deb.debian.org/debian/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.9.10.orig.tar.xz' python3-stdlib-extensions_3.9.10.orig.tar.xz 1113008 SHA256:a711449d65958a66a67b8e21bc9436410ca655d5c1926dc44abac11e82dc2adb
-'http://deb.debian.org/debian/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.9.10-1.debian.tar.xz' python3-stdlib-extensions_3.9.10-1.debian.tar.xz 24812 SHA256:db849ed9a68b5f1e3fd144f2967e713e8ea433ec24931c89319474250f793e9a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3-stdlib-extensions/3.9.10-1/
 
-- https://sources.debian.net/src/python3-stdlib-extensions/3.9.10-1/ (for browsing the source)
-- https://sources.debian.net/src/python3-stdlib-extensions/3.9.10-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3-stdlib-extensions/3.9.10-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3.9=3.9.10-2`
 
@@ -5019,20 +4984,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.9-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.9=3.9.10-2
-'http://deb.debian.org/debian/pool/main/p/python3.9/python3.9_3.9.10-2.dsc' python3.9_3.9.10-2.dsc 3500 SHA256:6b21331e9c00e63e3a79537bf2236c78c37e3f26cd2cc6def56d31f0c6bb6393
-'http://deb.debian.org/debian/pool/main/p/python3.9/python3.9_3.9.10.orig.tar.xz' python3.9_3.9.10.orig.tar.xz 19154136 SHA256:0a8fbfb5287ebc3a13e9baf3d54e08fa06778ffeccf6311aef821bb3a6586cc8
-'http://deb.debian.org/debian/pool/main/p/python3.9/python3.9_3.9.10-2.debian.tar.xz' python3.9_3.9.10-2.debian.tar.xz 213192 SHA256:0f4924ef9ad48792552fa7b89cb9401f81629056cf0affa49a3d837209f0c54f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3.9/3.9.10-2/
 
-- https://sources.debian.net/src/python3.9/3.9.10-2/ (for browsing the source)
-- https://sources.debian.net/src/python3.9/3.9.10-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.9/3.9.10-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=8.1.2-1`
 
@@ -5265,21 +5223,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.37.2-2
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.37.2-2.dsc' sqlite3_3.37.2-2.dsc 2487 SHA256:0265888a1b8a6cc2173b1185ce3aae005f59503a95a41ea428a901502118933a
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.37.2.orig-www.tar.xz' sqlite3_3.37.2.orig-www.tar.xz 5694016 SHA256:63dbd1c7abab37ec5beed22dae75bac048efead0f19aa5cad49b4bd690335ebd
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.37.2.orig.tar.xz' sqlite3_3.37.2.orig.tar.xz 7623768 SHA256:3157723da779963f7887f29de12289a4890f0c18eb17b570aa2c8d2c96d31d6f
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.37.2-2.debian.tar.xz' sqlite3_3.37.2-2.debian.tar.xz 28536 SHA256:7779ca533e0593c59fbf0959d71fe285c3f9b06a9fe2b968e149c0c359130559
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sqlite3/3.37.2-2/
 
-- https://sources.debian.net/src/sqlite3/3.37.2-2/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.37.2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.37.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `subversion=1.14.1-3`
 

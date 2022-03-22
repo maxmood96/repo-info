@@ -1021,14 +1021,9 @@ Licenses: (parsed from: `/usr/share/doc/cpp-9/copyright`, `/usr/share/doc/g++-9/
 - `LGPL`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-9=9.4.0-1ubuntu1~20.04
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-9/gcc-9_9.4.0-1ubuntu1%7e20.04.dsc' gcc-9_9.4.0-1ubuntu1~20.04.dsc 23752 SHA512:19c1a3636fe50646050b7d78f70ba2bc215fa1b4f0867cf9bc5eebffd8fa1bba00464e96883f7b872251d1c0b33904ddfe2b485f76e30aefcf90d5ce9b5ea727
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-9/gcc-9_9.4.0.orig.tar.gz' gcc-9_9.4.0.orig.tar.gz 92368536 SHA512:c10390524e900d3f0afd4516af097f536304fb2946ecf73eaba0472b953609ce8fbb5c7f0c20af9e54fe38fc8f45ec3b6ebd2051fa67225c73efa8362150c1c6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-9/gcc-9_9.4.0-1ubuntu1%7e20.04.debian.tar.xz' gcc-9_9.4.0-1ubuntu1~20.04.debian.tar.xz 577692 SHA512:8c7a9255aef5c8fb3c8489ecb87059127a1c68321dd5f0d0a54a1d3761f3208e82da6236a7f39c48ba0c2a186ebe9d317eb5945825136bb1ea96f5209e8ea7bc
-```
 
 ### `dpkg` source package: `gcc-defaults=1.185.1ubuntu2`
 
@@ -2824,14 +2819,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.4.0-104.118
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-104.118.dsc' linux_5.4.0-104.118.dsc 7022 SHA512:eb87c023d3040abde2d23533b08e546c4487bdd6a572d11a539bcf3e8e3381c5a20a78991cfe88b64cceba4e9f3c631db61c3165854594aab006358cbfecea0b
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA512:62b09a7231fd793973c5f59b16c4f6ffce621188b02a71915874b05e8e3f956fb6146d4a4fb1a4475bebe463949ca5a18da12842c3ce7c52e996e6bc4012a074
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-104.118.diff.gz' linux_5.4.0-104.118.diff.gz 9114811 SHA512:8efc54a01cfe8f34a396bb750dfe8d7d3721add0098c34f3599f49f874be2f6e26c04279f38bb7dd5850b6698f4c77d914cb2bc828adb871821a80aba74ca833
-```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu2`
 

@@ -283,21 +283,13 @@ Licenses: (parsed from: `/usr/share/doc/automake/copyright`)
 - `GPL-3+`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris automake-1.16=1:1.16.5-1.2
-'http://deb.debian.org/debian/pool/main/a/automake-1.16/automake-1.16_1.16.5-1.2.dsc' automake-1.16_1.16.5-1.2.dsc 1973 SHA256:2d423eccaf78a7348591ab529b1978c3dce9afedeaa0708c5fe79cbb1ef1336b
-'http://deb.debian.org/debian/pool/main/a/automake-1.16/automake-1.16_1.16.5.orig.tar.xz' automake-1.16_1.16.5.orig.tar.xz 1601740 SHA256:f01d58cd6d9d77fbdca9eb4bbd5ead1988228fdb73d6f7a201f5f8d6b118b469
-'http://deb.debian.org/debian/pool/main/a/automake-1.16/automake-1.16_1.16.5.orig.tar.xz.asc' automake-1.16_1.16.5.orig.tar.xz.asc 833 SHA256:3a161ab65921eed55e1a94251d97c8451d4ba3431b55ca560e95a951b5f1d73a
-'http://deb.debian.org/debian/pool/main/a/automake-1.16/automake-1.16_1.16.5-1.2.debian.tar.xz' automake-1.16_1.16.5-1.2.debian.tar.xz 14088 SHA256:b5f96c6b04db1f8c71f4e44ce721a63bd0f58d34193b8c30d524e3fc48a4f43b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/automake-1.16/1:1.16.5-1.2/
 
-- https://sources.debian.net/src/automake-1.16/1:1.16.5-1.2/ (for browsing the source)
-- https://sources.debian.net/src/automake-1.16/1:1.16.5-1.2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/automake-1.16/1:1.16.5-1.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `autotools-dev=20220109.1`
 
@@ -605,21 +597,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.82.0-1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.82.0-1.dsc' curl_7.82.0-1.dsc 3024 SHA256:6924892e8b6e6e095ee21259432881523c010dc795b72e4fa39c261dafe899f2
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.82.0.orig.tar.gz' curl_7.82.0.orig.tar.gz 4106857 SHA256:910cc5fe279dc36e2cca534172c94364cf3fcf7d6494ba56e6c61a390881ddce
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.82.0.orig.tar.gz.asc' curl_7.82.0.orig.tar.gz.asc 488 SHA256:c1799877d4d45e733f2c88373d5b6399f169133551e8968f131bb8447e673004
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.82.0-1.debian.tar.xz' curl_7.82.0-1.debian.tar.xz 35192 SHA256:430569eac842a1df706c151cb04e2b418b6c0dfccccee231f33bd2b56d19c684
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/7.82.0-1/
 
-- https://sources.debian.net/src/curl/7.82.0-1/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.82.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.82.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg-2`
 
@@ -1315,20 +1299,13 @@ Licenses: (parsed from: `/usr/share/doc/gcc-12-base/copyright`, `/usr/share/doc/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-12=12-20220313-1
-'http://deb.debian.org/debian/pool/main/g/gcc-12/gcc-12_12-20220313-1.dsc' gcc-12_12-20220313-1.dsc 27445 SHA256:87103b90b9657c4a0b13b7d1c39b6f3babb2f972007ed1831f287a09883b0182
-'http://deb.debian.org/debian/pool/main/g/gcc-12/gcc-12_12-20220313.orig.tar.gz' gcc-12_12-20220313.orig.tar.gz 95862116 SHA256:29f2b67bbddc1b1f3f48286609673283d51533c4c119ca9bc7f21803b3122485
-'http://deb.debian.org/debian/pool/main/g/gcc-12/gcc-12_12-20220313-1.debian.tar.xz' gcc-12_12-20220313-1.debian.tar.xz 559680 SHA256:ee086589a0dd49f832dc107ab841aef04c8d6126daa9b3336068c794215a6385
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-12/12-20220313-1/
 
-- https://sources.debian.net/src/gcc-12/12-20220313-1/ (for browsing the source)
-- https://sources.debian.net/src/gcc-12/12-20220313-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-12/12-20220313-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-9=9.4.0-5`
 
@@ -1521,20 +1498,13 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.70.5-1
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.70.5-1.dsc' glib2.0_2.70.5-1.dsc 3479 SHA256:074442b9e4a15d61fcfdadf6b27937bc9eb4a5a6b6d1f0728d1f62fccb48bf22
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.70.5.orig.tar.xz' glib2.0_2.70.5.orig.tar.xz 4822784 SHA256:f70bf76ebcc84e0705722f038be8e2f9a58d17e1a700810c635fcc18b8974b7e
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.70.5-1.debian.tar.xz' glib2.0_2.70.5-1.debian.tar.xz 102884 SHA256:db2c2cbf29c6bd5a765704e7a7090dc487f02fadf0f64b1e1851d368c2a6361c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glib2.0/2.70.5-1/
 
-- https://sources.debian.net/src/glib2.0/2.70.5-1/ (for browsing the source)
-- https://sources.debian.net/src/glib2.0/2.70.5-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glib2.0/2.70.5-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.33-7`
 
@@ -1696,20 +1666,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-freedesktop/copyright`, `/usr/sha
 - `LGPL-2+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gobject-introspection=1.70.0-3
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.70.0-3.dsc' gobject-introspection_1.70.0-3.dsc 2992 SHA256:23b26f1ea2c8f1eabe8f5706700eaa67483e0c378fcd335344a9bab1f3fc6e56
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.70.0.orig.tar.xz' gobject-introspection_1.70.0.orig.tar.xz 1029372 SHA256:902b4906e3102d17aa2fcb6dad1c19971c70f2a82a159ddc4a94df73a3cafc4a
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.70.0-3.debian.tar.xz' gobject-introspection_1.70.0-3.debian.tar.xz 28108 SHA256:bff7caef08d0d2ed066f5e6b49bd23ef0025efc4badff08cc513e06e78e3381c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gobject-introspection/1.70.0-3/
 
-- https://sources.debian.net/src/gobject-introspection/1.70.0-3/ (for browsing the source)
-- https://sources.debian.net/src/gobject-introspection/1.70.0-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gobject-introspection/1.70.0-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `graphite2=1.3.14-1`
 
@@ -3369,21 +3332,13 @@ Licenses: (parsed from: `/usr/share/doc/libltdl-dev/copyright`, `/usr/share/doc/
 - `GFDL`
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libtool=2.4.6-15
-'http://deb.debian.org/debian/pool/main/libt/libtool/libtool_2.4.6-15.dsc' libtool_2.4.6-15.dsc 2502 SHA256:c499bd88103239f5d9743c70fd9e84260b0237e43df47c44980ef4ac9ff5f8e0
-'http://deb.debian.org/debian/pool/main/libt/libtool/libtool_2.4.6.orig.tar.xz' libtool_2.4.6.orig.tar.xz 973080 SHA256:7c87a8c2c8c0fc9cd5019e402bed4292462d00a718a7cd5f11218153bf28b26f
-'http://deb.debian.org/debian/pool/main/libt/libtool/libtool_2.4.6.orig.tar.xz.asc' libtool_2.4.6.orig.tar.xz.asc 380 SHA256:ab68ebc45d60128a71fc36167cd29dcf3c3d6d639fd28663905ebaf3e2f43d6a
-'http://deb.debian.org/debian/pool/main/libt/libtool/libtool_2.4.6-15.debian.tar.xz' libtool_2.4.6-15.debian.tar.xz 53924 SHA256:3955615804746d1440f2880f5cc0cd19e50dbaffe689afbec45dfcaaf5ee0d35
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libtool/2.4.6-15/
 
-- https://sources.debian.net/src/libtool/2.4.6-15/ (for browsing the source)
-- https://sources.debian.net/src/libtool/2.4.6-15/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libtool/2.4.6-15/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libunistring=1.0-1`
 
@@ -4047,19 +4002,13 @@ Licenses: (parsed from: `/usr/share/doc/media-types/copyright`)
 
 - `ad-hoc`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris media-types=6.0.0
-'http://deb.debian.org/debian/pool/main/m/media-types/media-types_6.0.0.dsc' media-types_6.0.0.dsc 1620 SHA256:ec7505be45bc784d207439e064bb9578fd8481691a4496541f6b6d53f5ae7cc9
-'http://deb.debian.org/debian/pool/main/m/media-types/media-types_6.0.0.tar.xz' media-types_6.0.0.tar.xz 55448 SHA256:61222b7b9d0bb4189d877e061282eb448fa1ff8321d7bec1160051cb0fb8bd26
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/media-types/6.0.0/
 
-- https://sources.debian.net/src/media-types/6.0.0/ (for browsing the source)
-- https://sources.debian.net/src/media-types/6.0.0/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/media-types/6.0.0/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mercurial=6.0.2-1`
 

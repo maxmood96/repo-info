@@ -414,21 +414,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.82.0-1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.82.0-1.dsc' curl_7.82.0-1.dsc 3024 SHA256:6924892e8b6e6e095ee21259432881523c010dc795b72e4fa39c261dafe899f2
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.82.0.orig.tar.gz' curl_7.82.0.orig.tar.gz 4106857 SHA256:910cc5fe279dc36e2cca534172c94364cf3fcf7d6494ba56e6c61a390881ddce
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.82.0.orig.tar.gz.asc' curl_7.82.0.orig.tar.gz.asc 488 SHA256:c1799877d4d45e733f2c88373d5b6399f169133551e8968f131bb8447e673004
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.82.0-1.debian.tar.xz' curl_7.82.0-1.debian.tar.xz 35192 SHA256:430569eac842a1df706c151cb04e2b418b6c0dfccccee231f33bd2b56d19c684
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/7.82.0-1/
 
-- https://sources.debian.net/src/curl/7.82.0-1/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.82.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.82.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg-2`
 
@@ -788,20 +780,13 @@ Licenses: (parsed from: `/usr/share/doc/gcc-12-base/copyright`, `/usr/share/doc/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-12=12-20220313-1
-'http://deb.debian.org/debian/pool/main/g/gcc-12/gcc-12_12-20220313-1.dsc' gcc-12_12-20220313-1.dsc 27445 SHA256:87103b90b9657c4a0b13b7d1c39b6f3babb2f972007ed1831f287a09883b0182
-'http://deb.debian.org/debian/pool/main/g/gcc-12/gcc-12_12-20220313.orig.tar.gz' gcc-12_12-20220313.orig.tar.gz 95862116 SHA256:29f2b67bbddc1b1f3f48286609673283d51533c4c119ca9bc7f21803b3122485
-'http://deb.debian.org/debian/pool/main/g/gcc-12/gcc-12_12-20220313-1.debian.tar.xz' gcc-12_12-20220313-1.debian.tar.xz 559680 SHA256:ee086589a0dd49f832dc107ab841aef04c8d6126daa9b3336068c794215a6385
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-12/12-20220313-1/
 
-- https://sources.debian.net/src/gcc-12/12-20220313-1/ (for browsing the source)
-- https://sources.debian.net/src/gcc-12/12-20220313-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-12/12-20220313-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-9=9.4.0-5`
 
@@ -2057,19 +2042,13 @@ Licenses: (parsed from: `/usr/share/doc/media-types/copyright`)
 
 - `ad-hoc`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris media-types=6.0.0
-'http://deb.debian.org/debian/pool/main/m/media-types/media-types_6.0.0.dsc' media-types_6.0.0.dsc 1620 SHA256:ec7505be45bc784d207439e064bb9578fd8481691a4496541f6b6d53f5ae7cc9
-'http://deb.debian.org/debian/pool/main/m/media-types/media-types_6.0.0.tar.xz' media-types_6.0.0.tar.xz 55448 SHA256:61222b7b9d0bb4189d877e061282eb448fa1ff8321d7bec1160051cb0fb8bd26
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/media-types/6.0.0/
 
-- https://sources.debian.net/src/media-types/6.0.0/ (for browsing the source)
-- https://sources.debian.net/src/media-types/6.0.0/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/media-types/6.0.0/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mercurial=6.0.2-1`
 

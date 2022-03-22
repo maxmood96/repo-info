@@ -149,14 +149,13 @@ Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris audit=1:3.0.7-1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_3.0.7-1.dsc' audit_3.0.7-1.dsc 2401 SHA512:6e65b20f1e125727da33c3f36e7862db77c8faccad8aa9695b1dffa9b6f794e9056659bacaa3c478166f602b11a14ba041ef99b40947f54305bf46118e6ebea4
-'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_3.0.7.orig.tar.gz' audit_3.0.7.orig.tar.gz 1180226 SHA512:b5662b32082fc2ac54e247aa0db5442d76afa30134ebba1d624a17004e9ccf6856bb75344af4ce9d9a0a66c03e1c6f18b7d45658d7df13ea71af0c8362e08d70
-'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_3.0.7-1.debian.tar.xz' audit_3.0.7-1.debian.tar.xz 17700 SHA512:974c92b2575effa167390e2d95c89a3a74ed16174f5a6022b76ce45b08f42291926459c0bbf408acb6c35e0030463625661eb49c6a4449306661b20e875041b9
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/audit/1:3.0.7-1/
+
 
 ### `dpkg` source package: `base-files=12ubuntu2`
 
@@ -1314,15 +1313,9 @@ Licenses: (parsed from: `/usr/share/doc/libseccomp2/copyright`)
 
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libseccomp=2.5.3-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.3-2ubuntu1.dsc' libseccomp_2.5.3-2ubuntu1.dsc 2491 SHA512:2034ae8f0592a54dcfadc5270056baebd8f130911b18be8282e2b4e6335dafc25af1c1eba9eeefe55bc002ccf677c59e8e1754945d6ceda5fc08da1d8e760aa4
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.3.orig.tar.gz' libseccomp_2.5.3.orig.tar.gz 637572 SHA512:00170fe2360f0c0b33293dccfcc33e98fabb99619f34ecefbcc92bfdaa249ba91e7433226545b842b71542a3b224b6e980ea2ae656c4addf07e84a0def1870a0
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.3.orig.tar.gz.asc' libseccomp_2.5.3.orig.tar.gz.asc 833 SHA512:c879872448471fb1e01617145473254a0536ade1ff1e12871793631c3c63199cd46cb48317b4d596294d5cb187ff1fe9b58dc20ce52a89bfc9234a566bf8eb85
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.3-2ubuntu1.debian.tar.xz' libseccomp_2.5.3-2ubuntu1.debian.tar.xz 23536 SHA512:4529553c9893a3f727b8712d7c7b05efc8b49cc0c340ec714bb11c9260da2db976fb1878a4883b4b50be876be8983002745e5585492009d9b02d8c0b37f41929
-```
 
 ### `dpkg` source package: `libselinux=3.3-1build1`
 
@@ -1356,14 +1349,9 @@ Licenses: (parsed from: `/usr/share/doc/libsemanage-common/copyright`, `/usr/sha
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libsemanage=3.3-1build1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_3.3-1build1.dsc' libsemanage_3.3-1build1.dsc 2694 SHA512:7c2329fd24b57a524c311f576656d90ff8d87c293443583bbb0bf5bb9f3f7315c3b28f2fbcfdd5cfbac974b08df5d0e759e42ed8d58374709962ac6e199ee3a9
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_3.3.orig.tar.gz' libsemanage_3.3.orig.tar.gz 178890 SHA512:6026d9773c0886436ad801bc0c8beac888b6fb62034edeb863192dea4b6ef34a88e080758820fe635a20e048ac666beee505a0f946258f18571709cca5228aad
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_3.3-1build1.debian.tar.xz' libsemanage_3.3-1build1.debian.tar.xz 17884 SHA512:a20113f5b4876a90a66f63b5d63eea4d483eee8c8d98baa00f60ddaecee899470a068e47e8f8aeeb29477229218b12dc5f42c5ce590792fc10f045777d714011
-```
 
 ### `dpkg` source package: `libsepol=3.3-1`
 
@@ -1598,13 +1586,13 @@ Licenses: (parsed from: `/usr/share/doc/media-types/copyright`)
 
 - `ad-hoc`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris media-types=6.0.0
-'http://archive.ubuntu.com/ubuntu/pool/main/m/media-types/media-types_6.0.0.dsc' media-types_6.0.0.dsc 1620 SHA512:e81d6de0dea2ed8d5119a0683716679d6171c52f8b4451a35bd82d26a550a88873c966c71779d0ddd46d73c396113c13d76c76318b46f7f3e40b58b9a378e7a3
-'http://archive.ubuntu.com/ubuntu/pool/main/m/media-types/media-types_6.0.0.tar.xz' media-types_6.0.0.tar.xz 55448 SHA512:d34cf72263e4fd4fcd3d5615a9b06102080fec8fc6a09702dab2f5b2fe3e4b11f92ba13619fd3b468be9632ef6a0c01cc947457ac1867a291ebf2a8a2a6324e8
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/media-types/6.0.0/
+
 
 ### `dpkg` source package: `mercurial=6.0.1-1`
 
@@ -2074,14 +2062,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.10=3.10.2-7
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.2-7.dsc' python3.10_3.10.2-7.dsc 3544 SHA512:7415c727b5ed270a4f03a4ec49ff4bd16418a6dcc7a91a653d9efeaf2ca796ac42824fdcaa841aca287d4408a033532a9d38e4ab74d82c2389a669a0e8583092
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.2.orig.tar.xz' python3.10_3.10.2.orig.tar.xz 18780936 SHA512:215a7159face84788fe547c1e2689b8d0ae510275157cf01636bef2902d0ff465f844eb0328c9f39fd1cd03a1d1736d4cf258992f2788e492a801a372032c08b
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.2-7.debian.tar.xz' python3.10_3.10.2-7.debian.tar.xz 342136 SHA512:0613b8c3b52e61e308c98435ef99558f4eecd9f6946a57cba82b5c994a767c4c54fa4030f2b21b8f8d34c4dea35797a9f164513dc88f1768a449c337eac122a0
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/python3.10/3.10.2-7/
+
 
 ### `dpkg` source package: `readline=8.1.2-1`
 
@@ -2242,15 +2229,9 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 - `Unicode`
 - `Utfwidth`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris subversion=1.14.1-3build3
-'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.14.1-3build3.dsc' subversion_1.14.1-3build3.dsc 3580 SHA512:019f6cc40601f51ce44a6336d69c8213f4745ff366c5558adc36a6fa4f83d794a7d52445a6744c724725bb41e0f121667f1ec22f57fcb0da32b1816170b50c26
-'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.14.1.orig.tar.gz' subversion_1.14.1.orig.tar.gz 11534165 SHA512:6cd780f6669c811264de03b94ea41487111957dfd817498699c91e5dbb975e4b9626de9c436c5722fd6a6fadc4fef35f51905c2c0f5fd4955cf0fadef9cba60e
-'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.14.1.orig.tar.gz.asc' subversion_1.14.1.orig.tar.gz.asc 1288 SHA512:56f3b3ae63e10c503b741107261da955088749845693b34125f8e61c7850035021684b31944e99ed50628cc4f601081627c1472f83f8196eac3a289038a842f9
-'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.14.1-3build3.debian.tar.xz' subversion_1.14.1-3build3.debian.tar.xz 430280 SHA512:e8b88c56bca2a3319219ac78f2c18a0c50f61b15a2450a283ee888e396574b8a8730d094bc7383254c1f7c2aafb3e7fb2dbcfa88a9dfd4562c13aaa009277ccc
-```
 
 ### `dpkg` source package: `systemd=249.10-0ubuntu2`
 
@@ -2324,15 +2305,9 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2021e-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2021e-1ubuntu1.dsc' tzdata_2021e-1ubuntu1.dsc 2326 SHA512:b7e1560c5fd93e4bc6971009d19f0ccee1713bcf4387bdd46a6015e2edf7e4c6adf498b6b5ff0c509294b7e4ec7efe96e90c9f85f5d28d42f27f53e163bc0467
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2021e.orig.tar.gz' tzdata_2021e.orig.tar.gz 422509 SHA512:c1e8d04e049157ed5d4af0868855bbd75517e3d7e1db9c41d5283ff260109de46b6fac6be94828201d093e163d868044ac2a9db2bf0aeab800e264d0c73a9119
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2021e.orig.tar.gz.asc' tzdata_2021e.orig.tar.gz.asc 833 SHA512:b0bd68939fbf4cdf4078b8e97d0cd642e8112966e874a18218469ca35ff82c29410347a99e1321d6c9d723547ebc7945173418966e80d14b10f60af8ea7bff52
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2021e-1ubuntu1.debian.tar.xz' tzdata_2021e-1ubuntu1.debian.tar.xz 172984 SHA512:1213d6763668582933ca021d2a881b4a1e0496e8591563f30a276916d2ee0bf805795b7aa7aa24584badd65ddabac84d3a498be6647ef3b17730fb4bdfcd5ac8
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2021.03.26`
 

@@ -443,20 +443,13 @@ Licenses: (parsed from: `/usr/share/doc/dash/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dash=0.5.11+git20210903+057cd650a4ed-7
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.11%2bgit20210903%2b057cd650a4ed-7.dsc' dash_0.5.11+git20210903+057cd650a4ed-7.dsc 1720 SHA256:87d3aba202dbc5a42eda215b30dfba5f8c68724a6e485436cacf8a7c38c7e75e
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.11%2bgit20210903%2b057cd650a4ed.orig.tar.xz' dash_0.5.11+git20210903+057cd650a4ed.orig.tar.xz 133320 SHA256:4fb06697f33f14fcd6b96cd4dfdd5b343c848a4bb69b7c04f1717767e4a117d3
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.11%2bgit20210903%2b057cd650a4ed-7.debian.tar.xz' dash_0.5.11+git20210903+057cd650a4ed-7.debian.tar.xz 35776 SHA256:48669597bd25ef77d9e501438dfc11fac9ed4d9cd8748f3a2e641c80a66d8ff6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dash/0.5.11+git20210903+057cd650a4ed-7/
 
-- https://sources.debian.net/src/dash/0.5.11+git20210903+057cd650a4ed-7/ (for browsing the source)
-- https://sources.debian.net/src/dash/0.5.11+git20210903+057cd650a4ed-7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dash/0.5.11+git20210903+057cd650a4ed-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `db5.3=5.3.28+dfsg1-0.8`
 
@@ -710,20 +703,13 @@ Licenses: (parsed from: `/usr/share/doc/gcc-12-base/copyright`, `/usr/share/doc/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-12=12-20220302-1
-'http://deb.debian.org/debian/pool/main/g/gcc-12/gcc-12_12-20220302-1.dsc' gcc-12_12-20220302-1.dsc 27382 SHA256:54fa38fe459e16b45eabebf03299776b0aebacdb1101d8158593f16cc316547c
-'http://deb.debian.org/debian/pool/main/g/gcc-12/gcc-12_12-20220302.orig.tar.gz' gcc-12_12-20220302.orig.tar.gz 97316151 SHA256:51d88399106528601e3b307b66710d12277bc0f8aa98f48ece8ec79099676208
-'http://deb.debian.org/debian/pool/main/g/gcc-12/gcc-12_12-20220302-1.debian.tar.xz' gcc-12_12-20220302-1.debian.tar.xz 559160 SHA256:486cda7c54c3f7ba8957bb5e33222e268ccca0dc060669f59dc6f51a5637f2fa
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-12/12-20220302-1/
 
-- https://sources.debian.net/src/gcc-12/12-20220302-1/ (for browsing the source)
-- https://sources.debian.net/src/gcc-12/12-20220302-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-12/12-20220302-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.33-7`
 
@@ -1866,13 +1852,20 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris openldap=2.5.11+dfsg-1
+'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.5.11%2bdfsg-1.dsc' openldap_2.5.11+dfsg-1.dsc 3179 SHA256:19759b4b8305a8afc784e5669ce4c6eb960827b2d479ae5879ad7afd47b31dc5
+'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.5.11%2bdfsg.orig.tar.gz' openldap_2.5.11+dfsg.orig.tar.gz 5609424 SHA256:a159eece6577fd97aaa894b72e08f94d6d404155d05bf4653602418a88b20904
+'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.5.11%2bdfsg-1.debian.tar.xz' openldap_2.5.11+dfsg-1.debian.tar.xz 157864 SHA256:6e430b7ce7007bd83d79f2dafe38fcf85f43b1c30c3bcbc86e24ad0f4641e66f
+```
 
-- http://snapshot.debian.org/package/openldap/2.5.11+dfsg-1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/openldap/2.5.11+dfsg-1/ (for browsing the source)
+- https://sources.debian.net/src/openldap/2.5.11+dfsg-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openldap/2.5.11+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=1.1.1m-1`
 
@@ -1884,21 +1877,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.1.1m-1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1m-1.dsc' openssl_1.1.1m-1.dsc 2620 SHA256:a2e12c68b44d7bb6ef049a7583cd02b85201ce83ad11b57ce4c87ec6b05a0b1d
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1m.orig.tar.gz' openssl_1.1.1m.orig.tar.gz 9847315 SHA256:f89199be8b23ca45fc7cb9f1d8d3ee67312318286ad030f5316aca6462db6c96
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1m.orig.tar.gz.asc' openssl_1.1.1m.orig.tar.gz.asc 488 SHA256:49f209fe54825f6645f788f124ff6c3e1fab698434732cf3685dc63639d42820
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1m-1.debian.tar.xz' openssl_1.1.1m-1.debian.tar.xz 84744 SHA256:d2f6f2ec533bb840b7cfd37818eef23d6f226f308046328d20e0849feef6007e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssl/1.1.1m-1/
 
-- https://sources.debian.net/src/openssl/1.1.1m-1/ (for browsing the source)
-- https://sources.debian.net/src/openssl/1.1.1m-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/1.1.1m-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=1.1.1n-1`
 
@@ -1910,13 +1895,21 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris openssl=1.1.1n-1
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1n-1.dsc' openssl_1.1.1n-1.dsc 2620 SHA256:6e71c3e498c23c730491f9ff8506f85183eb9761a5dd8973fe8ea262bfe612b5
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1n.orig.tar.gz' openssl_1.1.1n.orig.tar.gz 9850712 SHA256:40dceb51a4f6a5275bde0e6bf20ef4b91bfc32ed57c0552e2e8e15463372b17a
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1n.orig.tar.gz.asc' openssl_1.1.1n.orig.tar.gz.asc 488 SHA256:e0e89e9467102880ee6f2ee8c1413933eb1268969afb97b9bec61e2190a62fd0
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1n-1.debian.tar.xz' openssl_1.1.1n-1.debian.tar.xz 85872 SHA256:7e08f8cb1835366898179e0f54a54d3cc1d7185c7d522b472aadc8ad38423026
+```
 
-- http://snapshot.debian.org/package/openssl/1.1.1n-1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/openssl/1.1.1n-1/ (for browsing the source)
+- https://sources.debian.net/src/openssl/1.1.1n-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/1.1.1n-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.24.0-6`
 
@@ -2266,20 +2259,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=250.3-2
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_250.3-2.dsc' systemd_250.3-2.dsc 5721 SHA256:1c764f2a4b7ecf3282ab13bab6918552d06aa5d2926a915c3e69d8f06e694ef2
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_250.3.orig.tar.gz' systemd_250.3.orig.tar.gz 11125151 SHA256:87b0eee7b6e5aaab2ab56d158f9536daa6bfd5de011f2a5fc6ccdd81ee1e7a24
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_250.3-2.debian.tar.xz' systemd_250.3-2.debian.tar.xz 165052 SHA256:47b504a06e84a5b6f818cb46135262383153c04ac3b2f4db90283824364ec5b5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/250.3-2/
 
-- https://sources.debian.net/src/systemd/250.3-2/ (for browsing the source)
-- https://sources.debian.net/src/systemd/250.3-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/250.3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.01-1`
 
