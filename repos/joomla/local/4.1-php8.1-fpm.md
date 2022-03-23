@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:01342f4b016fcc19032805d512e7838836b817a93b38fbf73e7605d4b6fd0f3e`
-- Created: `2022-03-11T13:24:26.546247396Z`
-- Virtual Size: ~ 527.89 Mb  
+- Image ID: `sha256:6b9f4cd0c7cca63db0c6f22a206d0d3175c9440a82ee3f9c0616b9a7921423a5`
+- Created: `2022-03-19T20:50:37.257020693Z`
+- Virtual Size: ~ 527.87 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD`
-  - `PHP_VERSION=8.1.3`
-  - `PHP_URL=https://www.php.net/distributions/php-8.1.3.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.3.tar.xz.asc`
-  - `PHP_SHA256=5d65a11071b47669c17452fb336c290b67c101efb745c1dbe7525b5caf546ec6`
+  - `PHP_VERSION=8.1.4`
+  - `PHP_URL=https://www.php.net/distributions/php-8.1.4.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.4.tar.xz.asc`
+  - `PHP_SHA256=05a8c0ac30008154fb38a305560543fc172ba79fb957084a99b8d3b10d5bdb4b`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
   - `JOOMLA_VERSION=4.1.0`
   - `JOOMLA_SHA512=44173170fb1598c465415cba919339c26624322621efed17c95fdffca7b62a1089863615e415f0ec36a6a4c4f5c746b7ec06dddd08929757f737e1a2a15ff714`
@@ -2030,11 +2030,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.4.8+dfsg-2.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.4.8+dfsg-2.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=5.10.92-1`
+### `dpkg` source package: `linux=5.10.103-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.10.92-1`
+- `linux-libc-dev:amd64=5.10.103-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2047,13 +2047,20 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `X11`
 - `Xen-interface`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris linux=5.10.103-1
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.103-1.dsc' linux_5.10.103-1.dsc 197238 SHA256:2227237f47950731487f8fc98b662863b6f8ea3b455e8ad2a518dca4f5cf8acd
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.103.orig.tar.xz' linux_5.10.103.orig.tar.xz 121685412 SHA256:d0384b92cbe88a4b02c8b0db4159ab491a658b010ff977bbcf5d95b75501c1f1
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.103-1.debian.tar.xz' linux_5.10.103-1.debian.tar.xz 1494304 SHA256:a92a88f37873cdc3550a8473a11af0a46b83a42594fd4ea8d62bcf57d3c62fd3
+```
 
-- http://snapshot.debian.org/package/linux/5.10.92-1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/linux/5.10.103-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/5.10.103-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/5.10.103-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=11.1.0`
 
@@ -2359,12 +2366,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openldap/2.4.57+dfsg-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openldap/2.4.57+dfsg-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=1.1.1k-1+deb11u1`
+### `dpkg` source package: `openssl=1.1.1k-1+deb11u2`
 
 Binary Packages:
 
-- `libssl1.1:amd64=1.1.1k-1+deb11u1`
-- `openssl=1.1.1k-1+deb11u1`
+- `libssl1.1:amd64=1.1.1k-1+deb11u2`
+- `openssl=1.1.1k-1+deb11u2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2373,18 +2380,18 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=1.1.1k-1+deb11u1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1k-1%2bdeb11u1.dsc' openssl_1.1.1k-1+deb11u1.dsc 2652 SHA256:6515a9f1250c42bd42d8439820dde65fbd6f4fbb4a9673bff58e37168a7d3228
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1k.orig.tar.gz' openssl_1.1.1k.orig.tar.gz 9823400 SHA256:892a0875b9872acd04a9fde79b1f943075d5ea162415de3047c327df33fbaee5
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1k.orig.tar.gz.asc' openssl_1.1.1k.orig.tar.gz.asc 488 SHA256:addeaa197444a62c6063d7f819512c2c22b42141dec9d8ec3bff7e4518e1d1c9
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1k-1%2bdeb11u1.debian.tar.xz' openssl_1.1.1k-1+deb11u1.debian.tar.xz 94244 SHA256:68e00f47162ecea0273b4ba453503307b8430bb2d163f92cbbec6f51b11061fd
+$ apt-get source -qq --print-uris openssl=1.1.1k-1+deb11u2
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1k-1%2bdeb11u2.dsc' openssl_1.1.1k-1+deb11u2.dsc 2652 SHA256:74ff1b57ceb869f53516bba85fc746f392c4931dcfbe1c8fa0eb5484d723e966
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1k.orig.tar.gz' openssl_1.1.1k.orig.tar.gz 9823400 SHA256:892a0875b9872acd04a9fde79b1f943075d5ea162415de3047c327df33fbaee5
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1k.orig.tar.gz.asc' openssl_1.1.1k.orig.tar.gz.asc 488 SHA256:addeaa197444a62c6063d7f819512c2c22b42141dec9d8ec3bff7e4518e1d1c9
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1k-1%2bdeb11u2.debian.tar.xz' openssl_1.1.1k-1+deb11u2.debian.tar.xz 98172 SHA256:43d986c7cb4e48bbe094d185a58c8fc4de54253cf2783f03fa3c4676cab98926
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssl/1.1.1k-1+deb11u1/ (for browsing the source)
-- https://sources.debian.net/src/openssl/1.1.1k-1+deb11u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/1.1.1k-1+deb11u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssl/1.1.1k-1+deb11u2/ (for browsing the source)
+- https://sources.debian.net/src/openssl/1.1.1k-1+deb11u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/1.1.1k-1+deb11u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.23.22-1`
 
