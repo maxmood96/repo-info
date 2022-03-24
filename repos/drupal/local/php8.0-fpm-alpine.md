@@ -1,9 +1,9 @@
-# `drupal:9.3.8-php8.0-fpm-alpine3.15`
+# `drupal:9.3.9-php8.0-fpm-alpine3.15`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ed69d16714bb590fcf5ec8862f4b5348de31b12f57940b561bd3447f2da41fa2`
-- Created: `2022-03-19T15:20:20.298784268Z`
+- Image ID: `sha256:c90bb45d71e23424af7c5d31b53757b0ce2a53efd1af6d9ccd338c82098d2ee0`
+- Created: `2022-03-23T22:21:52.786786547Z`
 - Virtual Size: ~ 160.46 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -21,7 +21,7 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.0.17.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.0.17.tar.xz.asc`
   - `PHP_SHA256=4e7d94bb3d144412cb8b2adeb599fb1c6c1d7b357b0d0d0478dc5ef53532ebc5`
-  - `DRUPAL_VERSION=9.3.8`
+  - `DRUPAL_VERSION=9.3.9`
 
 ## `apk` (`.apk`-based packages)
 
@@ -351,16 +351,16 @@ PostgreSQL
 ### `apk` package: `libretls`
 
 ```console
-libretls-3.3.4-r2 description:
+libretls-3.3.4-r3 description:
 port of libtls from libressl to openssl
 
-libretls-3.3.4-r2 webpage:
+libretls-3.3.4-r3 webpage:
 https://git.causal.agency/libretls/
 
-libretls-3.3.4-r2 installed size:
+libretls-3.3.4-r3 installed size:
 84 KiB
 
-libretls-3.3.4-r2 license:
+libretls-3.3.4-r3 license:
 ISC AND (BSD-3-Clause OR MIT)
 
 ```
