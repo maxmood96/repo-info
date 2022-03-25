@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0c7ba10885d02e8c390226d0ee588c2151884b11041df24f18ecf57865d3adaf`
-- Created: `2022-03-19T18:30:48.823080509Z`
-- Virtual Size: ~ 190.70 Mb  
+- Image ID: `sha256:57ef747f7335aa68b40519c3eeb86d19f9dd67395998b00e265825d7d19f789c`
+- Created: `2022-03-23T22:16:46.681760309Z`
+- Virtual Size: ~ 190.63 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -489,16 +489,16 @@ ISC AND (BSD-3-Clause OR MIT)
 ### `apk` package: `libsasl`
 
 ```console
-libsasl-2.1.27-r14 description:
+libsasl-2.1.28-r0 description:
 Cyrus Simple Authentication and Security Layer (SASL) library
 
-libsasl-2.1.27-r14 webpage:
+libsasl-2.1.28-r0 webpage:
 https://www.cyrusimap.org/sasl/
 
-libsasl-2.1.27-r14 installed size:
+libsasl-2.1.28-r0 installed size:
 192 KiB
 
-libsasl-2.1.27-r14 license:
+libsasl-2.1.28-r0 license:
 custom
 
 ```
