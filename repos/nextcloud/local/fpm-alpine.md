@@ -1,10 +1,10 @@
-# `nextcloud:23.0.2-fpm-alpine`
+# `nextcloud:23.0.3-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:11e1f5ec334c9876764b7ab14f9a2eaede2a5c65715dd939369aba88fd87217a`
-- Created: `2022-03-19T19:31:22.216037721Z`
-- Virtual Size: ~ 567.05 Mb  
+- Image ID: `sha256:eecca948050cca42e88c9130217601539e5af6aacd52abaa8bac57da6f2e5681`
+- Created: `2022-03-24T01:11:10.437688499Z`
+- Virtual Size: ~ 568.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -23,7 +23,7 @@
   - `PHP_SHA256=4e7d94bb3d144412cb8b2adeb599fb1c6c1d7b357b0d0d0478dc5ef53532ebc5`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
-  - `NEXTCLOUD_VERSION=23.0.2`
+  - `NEXTCLOUD_VERSION=23.0.3`
 
 ## `apk` (`.apk`-based packages)
 
@@ -591,16 +591,16 @@ PostgreSQL
 ### `apk` package: `libretls`
 
 ```console
-libretls-3.3.4-r2 description:
+libretls-3.3.4-r3 description:
 port of libtls from libressl to openssl
 
-libretls-3.3.4-r2 webpage:
+libretls-3.3.4-r3 webpage:
 https://git.causal.agency/libretls/
 
-libretls-3.3.4-r2 installed size:
+libretls-3.3.4-r3 installed size:
 84 KiB
 
-libretls-3.3.4-r2 license:
+libretls-3.3.4-r3 license:
 ISC AND (BSD-3-Clause OR MIT)
 
 ```
@@ -608,16 +608,16 @@ ISC AND (BSD-3-Clause OR MIT)
 ### `apk` package: `libsasl`
 
 ```console
-libsasl-2.1.27-r14 description:
+libsasl-2.1.28-r0 description:
 Cyrus Simple Authentication and Security Layer (SASL) library
 
-libsasl-2.1.27-r14 webpage:
+libsasl-2.1.28-r0 webpage:
 https://www.cyrusimap.org/sasl/
 
-libsasl-2.1.27-r14 installed size:
+libsasl-2.1.28-r0 installed size:
 192 KiB
 
-libsasl-2.1.27-r14 license:
+libsasl-2.1.28-r0 license:
 custom
 
 ```
