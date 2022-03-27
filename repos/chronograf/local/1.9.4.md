@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b8ce596678bbf826cb544ef02c5deff44ba8028894ded7ba4a172ac61ca0a4da`
-- Created: `2022-03-17T08:40:00.804385161Z`
-- Virtual Size: ~ 181.53 Mb  
+- Image ID: `sha256:81f95ec4358baed27d07bf7c3ac87f695f89b4e129cde586350ab0eae8c4e7de`
+- Created: `2022-03-24T21:23:07.206068317Z`
+- Virtual Size: ~ 181.57 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["chronograf"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `CHRONOGRAF_VERSION=1.9.3`
+  - `CHRONOGRAF_VERSION=1.9.4`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -294,11 +294,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/cdebconf/0.227/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/cdebconf/0.227/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `chronograf=1.9.3-1`
+### `dpkg` source package: `chronograf=1.9.4-1`
 
 Binary Packages:
 
-- `chronograf=1.9.3-1`
+- `chronograf=1.9.4-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1587,23 +1587,30 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openldap/2.4.44+dfsg-5+deb9u8/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openldap/2.4.44+dfsg-5+deb9u8/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl1.0=1.0.2u-1~deb9u6`
+### `dpkg` source package: `openssl1.0=1.0.2u-1~deb9u7`
 
 Binary Packages:
 
-- `libssl1.0.2:amd64=1.0.2u-1~deb9u6`
+- `libssl1.0.2:amd64=1.0.2u-1~deb9u7`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris openssl1.0=1.0.2u-1~deb9u7
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl1.0/openssl1.0_1.0.2u-1%7edeb9u7.dsc' openssl1.0_1.0.2u-1~deb9u7.dsc 2304 SHA256:ae5c98694b9e3124447c50db1527bb8c5ba8d8ed8850308f099c1def9c7d32c8
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl1.0/openssl1.0_1.0.2u.orig.tar.gz' openssl1.0_1.0.2u.orig.tar.gz 5355412 SHA256:ecd0c6ffb493dd06707d38b14bb4d8c2288bb7033735606569d8f90f89669d16
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl1.0/openssl1.0_1.0.2u-1%7edeb9u7.debian.tar.xz' openssl1.0_1.0.2u-1~deb9u7.debian.tar.xz 107300 SHA256:5ae9f8274909202f77894d7909df4b76b5f5fd20edf5cb098725688f5e8eddb7
+```
 
-- http://snapshot.debian.org/package/openssl1.0/1.0.2u-1~deb9u6/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/openssl1.0/1.0.2u-1~deb9u7/ (for browsing the source)
+- https://sources.debian.net/src/openssl1.0/1.0.2u-1~deb9u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl1.0/1.0.2u-1~deb9u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=1.1.0l-1~deb9u4`
 

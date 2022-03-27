@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:05122c1e82764e1758d99585ed5624a08d49871f2ae09a234ff20d3a931a9d4c`
-- Created: `2022-03-19T00:59:37.748349398Z`
-- Virtual Size: ~ 82.28 Mb  
+- Image ID: `sha256:6f3401e531ec61aed808da0727baa9130cf7e7df9eab77fadadf896ad494c0c8`
+- Created: `2022-03-24T21:23:16.637259505Z`
+- Virtual Size: ~ 82.32 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["chronograf"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `CHRONOGRAF_VERSION=1.9.3`
+  - `CHRONOGRAF_VERSION=1.9.4`
 
 ## `apk` (`.apk`-based packages)
 
