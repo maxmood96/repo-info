@@ -1992,19 +1992,13 @@ Licenses: (parsed from: `/usr/share/doc/media-types/copyright`)
 
 - `ad-hoc`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris media-types=6.0.0
-'http://deb.debian.org/debian/pool/main/m/media-types/media-types_6.0.0.dsc' media-types_6.0.0.dsc 1620 SHA256:ec7505be45bc784d207439e064bb9578fd8481691a4496541f6b6d53f5ae7cc9
-'http://deb.debian.org/debian/pool/main/m/media-types/media-types_6.0.0.tar.xz' media-types_6.0.0.tar.xz 55448 SHA256:61222b7b9d0bb4189d877e061282eb448fa1ff8321d7bec1160051cb0fb8bd26
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/media-types/6.0.0/
 
-- https://sources.debian.net/src/media-types/6.0.0/ (for browsing the source)
-- https://sources.debian.net/src/media-types/6.0.0/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/media-types/6.0.0/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mercurial=6.0.2-1`
 

@@ -901,19 +901,13 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`, `/usr/share/doc/dpkg-de
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.21.2
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.21.2.dsc' dpkg_1.21.2.dsc 2120 SHA256:c284379b51c65d9e7352505b40ee8369f307c60ec99b9783207a3808ad1cbb1c
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.21.2.tar.xz' dpkg_1.21.2.tar.xz 5051548 SHA256:b8fc67fca696c6bea2f40f737c80574d53384db25202f72effc7e4de4662e1ac
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dpkg/1.21.2/
 
-- https://sources.debian.net/src/dpkg/1.21.2/ (for browsing the source)
-- https://sources.debian.net/src/dpkg/1.21.2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dpkg/1.21.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `e2fsprogs=1.46.5-2`
 
@@ -1423,20 +1417,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-gdkpixbuf-2.0/copyright`, `/usr/s
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gdk-pixbuf=2.42.6+dfsg-2
-'http://deb.debian.org/debian/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.42.6%2bdfsg-2.dsc' gdk-pixbuf_2.42.6+dfsg-2.dsc 3406 SHA256:ecdc7c011dbf6497cbed36ed634d87f79e30e133013ecf7db5c7b84ed5e481b5
-'http://deb.debian.org/debian/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.42.6%2bdfsg.orig.tar.xz' gdk-pixbuf_2.42.6+dfsg.orig.tar.xz 6527432 SHA256:9f73b7d60d88f0bf6108731d7751934e6a6dc2eb44c6714aefe740b82221ffbb
-'http://deb.debian.org/debian/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.42.6%2bdfsg-2.debian.tar.xz' gdk-pixbuf_2.42.6+dfsg-2.debian.tar.xz 29756 SHA256:9344e3c9dc787f83a3b53ec4392c96f0295a60115a7dfc18f8116136fd62029e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gdk-pixbuf/2.42.6+dfsg-2/
 
-- https://sources.debian.net/src/gdk-pixbuf/2.42.6+dfsg-2/ (for browsing the source)
-- https://sources.debian.net/src/gdk-pixbuf/2.42.6+dfsg-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gdk-pixbuf/2.42.6+dfsg-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `git=1:2.35.1-1`
 
@@ -4024,21 +4011,13 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mercurial=6.0.2-1
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.0.2-1.dsc' mercurial_6.0.2-1.dsc 2799 SHA256:cb572b9668a7b639e12894ee249baf68e241be0bd0307bbc6749edef6aa55ce8
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.0.2.orig.tar.gz' mercurial_6.0.2.orig.tar.gz 8089180 SHA256:5fb4c36d3856292ebf584051d59306d96ad8aa32b5537452b1d9c476f95ab11a
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.0.2.orig.tar.gz.asc' mercurial_6.0.2.orig.tar.gz.asc 659 SHA256:1eb4697e4847cee637eae38ada61fa9326ed840bd47247304953512858c0f5bc
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.0.2-1.debian.tar.xz' mercurial_6.0.2-1.debian.tar.xz 68420 SHA256:bc0dc4a170748be3d63076b1aa4d9f3097b4525bd1db1d48144ca447122f5a66
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mercurial/6.0.2-1/
 
-- https://sources.debian.net/src/mercurial/6.0.2-1/ (for browsing the source)
-- https://sources.debian.net/src/mercurial/6.0.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mercurial/6.0.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mpclib3=1.2.1-1`
 
@@ -4871,19 +4850,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-defaults=3.9.8-1
-'http://deb.debian.org/debian/pool/main/p/python3-defaults/python3-defaults_3.9.8-1.dsc' python3-defaults_3.9.8-1.dsc 2879 SHA256:396f523c062fe7fccd14ea3a4e24d4943c690090511d15794555aaa4f18aef4d
-'http://deb.debian.org/debian/pool/main/p/python3-defaults/python3-defaults_3.9.8-1.tar.gz' python3-defaults_3.9.8-1.tar.gz 141222 SHA256:e9e9fb0d525d05f2790e89726d68425cb3469e1b157705752561bd62937f8fcd
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3-defaults/3.9.8-1/
 
-- https://sources.debian.net/src/python3-defaults/3.9.8-1/ (for browsing the source)
-- https://sources.debian.net/src/python3-defaults/3.9.8-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3-defaults/3.9.8-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3-stdlib-extensions=3.9.11-1`
 
@@ -5718,17 +5691,10 @@ Licenses: (parsed from: `/usr/share/doc/zlib1g/copyright`, `/usr/share/doc/zlib1
 
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris zlib=1:1.2.11.dfsg-3
-'http://deb.debian.org/debian/pool/main/z/zlib/zlib_1.2.11.dfsg-3.dsc' zlib_1.2.11.dfsg-3.dsc 2397 SHA256:477f9aab100e0cd9690fbc577911c3d5907ddbbf1e8e89a0c16b1f88708eca32
-'http://deb.debian.org/debian/pool/main/z/zlib/zlib_1.2.11.dfsg.orig.tar.gz' zlib_1.2.11.dfsg.orig.tar.gz 370248 SHA256:80c481411a4fe8463aeb8270149a0e80bb9eaf7da44132b6e16f2b5af01bc899
-'http://deb.debian.org/debian/pool/main/z/zlib/zlib_1.2.11.dfsg-3.debian.tar.xz' zlib_1.2.11.dfsg-3.debian.tar.xz 19380 SHA256:4c1609b975b36712cfefb592f5a29b04c18ef2b46aded1e615772c386daa5bb6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/zlib/1:1.2.11.dfsg-3/
 
-- https://sources.debian.net/src/zlib/1:1.2.11.dfsg-3/ (for browsing the source)
-- https://sources.debian.net/src/zlib/1:1.2.11.dfsg-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/zlib/1:1.2.11.dfsg-3/ (for access to the source package after it no longer exists in the archive)

@@ -583,19 +583,13 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.21.2
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.21.2.dsc' dpkg_1.21.2.dsc 2120 SHA256:c284379b51c65d9e7352505b40ee8369f307c60ec99b9783207a3808ad1cbb1c
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.21.2.tar.xz' dpkg_1.21.2.tar.xz 5051548 SHA256:b8fc67fca696c6bea2f40f737c80574d53384db25202f72effc7e4de4662e1ac
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dpkg/1.21.2/
 
-- https://sources.debian.net/src/dpkg/1.21.2/ (for browsing the source)
-- https://sources.debian.net/src/dpkg/1.21.2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dpkg/1.21.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `e2fsprogs=1.46.5-2`
 

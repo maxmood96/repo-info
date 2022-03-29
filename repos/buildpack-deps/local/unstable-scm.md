@@ -636,19 +636,13 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.21.2
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.21.2.dsc' dpkg_1.21.2.dsc 2120 SHA256:c284379b51c65d9e7352505b40ee8369f307c60ec99b9783207a3808ad1cbb1c
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.21.2.tar.xz' dpkg_1.21.2.tar.xz 5051548 SHA256:b8fc67fca696c6bea2f40f737c80574d53384db25202f72effc7e4de4662e1ac
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dpkg/1.21.2/
 
-- https://sources.debian.net/src/dpkg/1.21.2/ (for browsing the source)
-- https://sources.debian.net/src/dpkg/1.21.2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dpkg/1.21.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `e2fsprogs=1.46.5-2`
 
@@ -2064,21 +2058,13 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mercurial=6.0.2-1
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.0.2-1.dsc' mercurial_6.0.2-1.dsc 2799 SHA256:cb572b9668a7b639e12894ee249baf68e241be0bd0307bbc6749edef6aa55ce8
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.0.2.orig.tar.gz' mercurial_6.0.2.orig.tar.gz 8089180 SHA256:5fb4c36d3856292ebf584051d59306d96ad8aa32b5537452b1d9c476f95ab11a
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.0.2.orig.tar.gz.asc' mercurial_6.0.2.orig.tar.gz.asc 659 SHA256:1eb4697e4847cee637eae38ada61fa9326ed840bd47247304953512858c0f5bc
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.0.2-1.debian.tar.xz' mercurial_6.0.2-1.debian.tar.xz 68420 SHA256:bc0dc4a170748be3d63076b1aa4d9f3097b4525bd1db1d48144ca447122f5a66
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mercurial/6.0.2-1/
 
-- https://sources.debian.net/src/mercurial/6.0.2-1/ (for browsing the source)
-- https://sources.debian.net/src/mercurial/6.0.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mercurial/6.0.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mpdecimal=2.5.1-2`
 
@@ -2597,19 +2583,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-defaults=3.9.8-1
-'http://deb.debian.org/debian/pool/main/p/python3-defaults/python3-defaults_3.9.8-1.dsc' python3-defaults_3.9.8-1.dsc 2879 SHA256:396f523c062fe7fccd14ea3a4e24d4943c690090511d15794555aaa4f18aef4d
-'http://deb.debian.org/debian/pool/main/p/python3-defaults/python3-defaults_3.9.8-1.tar.gz' python3-defaults_3.9.8-1.tar.gz 141222 SHA256:e9e9fb0d525d05f2790e89726d68425cb3469e1b157705752561bd62937f8fcd
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3-defaults/3.9.8-1/
 
-- https://sources.debian.net/src/python3-defaults/3.9.8-1/ (for browsing the source)
-- https://sources.debian.net/src/python3-defaults/3.9.8-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3-defaults/3.9.8-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3.9=3.9.11-1`
 
