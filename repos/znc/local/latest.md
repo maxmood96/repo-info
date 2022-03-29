@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ea19fa174c286d3e8ab8a24365df4f2d9fe6a228e4d1abda45a39c993b3f3911`
-- Created: `2022-03-17T16:08:00.156003736Z`
+- Image ID: `sha256:e47cb054e40ad76dadb212c37f572341c36bca4732271f9f258aa77ba3cd33c1`
+- Created: `2022-03-29T16:12:28.088355724Z`
 - Virtual Size: ~ 408.18 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -732,16 +732,16 @@ BSD-3-Clause
 ### `apk` package: `cyrus-sasl`
 
 ```console
-cyrus-sasl-2.1.27-r10 description:
+cyrus-sasl-2.1.28-r0 description:
 Cyrus Simple Authentication Service Layer (SASL)
 
-cyrus-sasl-2.1.27-r10 webpage:
+cyrus-sasl-2.1.28-r0 webpage:
 https://www.cyrusimap.org/sasl/
 
-cyrus-sasl-2.1.27-r10 installed size:
+cyrus-sasl-2.1.28-r0 installed size:
 160 KiB
 
-cyrus-sasl-2.1.27-r10 license:
+cyrus-sasl-2.1.28-r0 license:
 custom
 
 ```
@@ -1208,16 +1208,16 @@ BSD-2-Clause
 ### `apk` package: `libsasl`
 
 ```console
-libsasl-2.1.27-r10 description:
+libsasl-2.1.28-r0 description:
 Cyrus Simple Authentication and Security Layer (SASL) library
 
-libsasl-2.1.27-r10 webpage:
+libsasl-2.1.28-r0 webpage:
 https://www.cyrusimap.org/sasl/
 
-libsasl-2.1.27-r10 installed size:
+libsasl-2.1.28-r0 installed size:
 192 KiB
 
-libsasl-2.1.27-r10 license:
+libsasl-2.1.28-r0 license:
 custom
 
 ```
@@ -1599,16 +1599,16 @@ rhash-libs-1.4.1-r0 license:
 ### `apk` package: `runtime-dependencies`
 
 ```console
-runtime-dependencies-20220317.160009 description:
+runtime-dependencies-20220329.160759 description:
 virtual meta package
 
-runtime-dependencies-20220317.160009 webpage:
+runtime-dependencies-20220329.160759 webpage:
 
 
-runtime-dependencies-20220317.160009 installed size:
+runtime-dependencies-20220329.160759 installed size:
 0 B
 
-runtime-dependencies-20220317.160009 license:
+runtime-dependencies-20220329.160759 license:
 
 
 ```
@@ -1735,16 +1735,16 @@ GPL-2.0-or-later AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.2.11-r3 description:
+zlib-1.2.12-r0 description:
 A compression/decompression Library
 
-zlib-1.2.11-r3 webpage:
+zlib-1.2.12-r0 webpage:
 https://zlib.net/
 
-zlib-1.2.11-r3 installed size:
+zlib-1.2.12-r0 installed size:
 108 KiB
 
-zlib-1.2.11-r3 license:
+zlib-1.2.12-r0 license:
 Zlib
 
 ```
