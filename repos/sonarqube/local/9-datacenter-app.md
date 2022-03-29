@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c3b464d5324bd7e591e456e3f69976b98f3b234b7bdcc671eb3778892271c812`
-- Created: `2022-03-17T15:41:44.395520995Z`
+- Image ID: `sha256:9df932e2ea8c49084ad4bb896300fd1edd072c7781277715764798e324384fd5`
+- Created: `2022-03-29T11:33:33.314624052Z`
 - Virtual Size: ~ 653.17 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -97,16 +97,16 @@ GPL-2.0-only
 ### `apk` package: `bash`
 
 ```console
-bash-5.1.4-r0 description:
+bash-5.1.16-r0 description:
 The GNU Bourne Again shell
 
-bash-5.1.4-r0 webpage:
+bash-5.1.16-r0 webpage:
 https://www.gnu.org/software/bash/bash.html
 
-bash-5.1.4-r0 installed size:
+bash-5.1.16-r0 installed size:
 1296 KiB
 
-bash-5.1.4-r0 license:
+bash-5.1.16-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -471,16 +471,16 @@ Libpng
 ### `apk` package: `libretls`
 
 ```console
-libretls-3.3.3p1-r2 description:
+libretls-3.3.3p1-r3 description:
 port of libtls from libressl to openssl
 
-libretls-3.3.3p1-r2 webpage:
+libretls-3.3.3p1-r3 webpage:
 https://git.causal.agency/libretls/
 
-libretls-3.3.3p1-r2 installed size:
+libretls-3.3.3p1-r3 installed size:
 84 KiB
 
-libretls-3.3.3p1-r2 license:
+libretls-3.3.3p1-r3 license:
 ISC AND (BSD-3-Clause OR MIT)
 
 ```
@@ -913,16 +913,16 @@ custom
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.2.11-r3 description:
+zlib-1.2.12-r0 description:
 A compression/decompression Library
 
-zlib-1.2.11-r3 webpage:
+zlib-1.2.12-r0 webpage:
 https://zlib.net/
 
-zlib-1.2.11-r3 installed size:
+zlib-1.2.12-r0 installed size:
 108 KiB
 
-zlib-1.2.11-r3 license:
+zlib-1.2.12-r0 license:
 Zlib
 
 ```
