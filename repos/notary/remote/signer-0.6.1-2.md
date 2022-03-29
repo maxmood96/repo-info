@@ -1,7 +1,7 @@
 ## `notary:signer-0.6.1-2`
 
 ```console
-$ docker pull notary@sha256:194021c381f3361ad775121c948810f29ea7215f732cca37e8672a45b05e18eb
+$ docker pull notary@sha256:52a7f223058c7b08efb6f9470acac2300dc36075ffaeee4d0e410a14f367b924
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -91,75 +91,75 @@ CMD ["notary-signer" "--help"]
 ### `notary:signer-0.6.1-2` - linux; arm variant v6
 
 ```console
-$ docker pull notary@sha256:f02b6731b76ee5f30e5863716264c5040ed35f6cae02a3d3689305d9bc7d7598
+$ docker pull notary@sha256:e43398af5a51dc91344e33abe8cc1b68c5877cd257a122abb30dc1385d78bd82
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.2 MB (7185127 bytes)**  
+-	Total Size: **7.2 MB (7182318 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5b2d35e37ca0a874a961232379a5f754678d48cdd957b46c2f7742b3031e3b73`
+-	Image ID: `sha256:5b32666262b52eb80dee7cf63f70dc6ad985b2ca0504e03407b78717525355f4`
 -	Entrypoint: `["entrypoint.sh"]`
 -	Default Command: `["notary-signer","--help"]`
 
 ```dockerfile
-# Thu, 17 Mar 2022 14:32:45 GMT
-ADD file:85dfb53147cadaa6ec9595f75c71284523f862af4b9edb32c7f8ccebb0ef50a8 in / 
-# Thu, 17 Mar 2022 14:32:45 GMT
+# Tue, 29 Mar 2022 00:49:56 GMT
+ADD file:23d913551f75313e359a4e93592ea0a9655e1a7c2bec5fddd210717d70c3114b in / 
+# Tue, 29 Mar 2022 00:49:57 GMT
 CMD ["/bin/sh"]
-# Thu, 17 Mar 2022 15:48:36 GMT
+# Tue, 29 Mar 2022 08:33:10 GMT
 ENV TAG=v0.6.1
-# Thu, 17 Mar 2022 15:48:37 GMT
+# Tue, 29 Mar 2022 08:33:11 GMT
 ENV NOTARYPKG=github.com/theupdateframework/notary
-# Thu, 17 Mar 2022 15:49:20 GMT
+# Tue, 29 Mar 2022 08:34:00 GMT
 ENV INSTALLDIR=/notary/signer
-# Thu, 17 Mar 2022 15:49:20 GMT
+# Tue, 29 Mar 2022 08:34:01 GMT
 EXPOSE 4444
-# Thu, 17 Mar 2022 15:49:21 GMT
+# Tue, 29 Mar 2022 08:34:01 GMT
 EXPOSE 7899
-# Thu, 17 Mar 2022 15:49:21 GMT
+# Tue, 29 Mar 2022 08:34:01 GMT
 WORKDIR /notary/signer
-# Thu, 17 Mar 2022 15:49:45 GMT
+# Tue, 29 Mar 2022 08:34:25 GMT
 RUN set -eux;     apk add --no-cache --virtual build-deps git go make musl-dev;     export GOPATH=/go GOCACHE=/go/cache;     mkdir -p ${GOPATH}/src/${NOTARYPKG};     git clone -b ${TAG} --depth 1 https://${NOTARYPKG} ${GOPATH}/src/${NOTARYPKG};     make -C ${GOPATH}/src/${NOTARYPKG} SKIPENVCHECK=1 PREFIX=. ./bin/static/notary-signer;     cp -vL ${GOPATH}/src/${NOTARYPKG}/bin/static/notary-signer ./;     apk del --no-network build-deps;     rm -rf ${GOPATH};     ./notary-signer --help
-# Thu, 17 Mar 2022 15:49:45 GMT
+# Tue, 29 Mar 2022 08:34:26 GMT
 COPY file:180643db1fd4154262e619c42c1255057d49a4c6cd56be3f475942fd0a35a236 in . 
-# Thu, 17 Mar 2022 15:49:46 GMT
+# Tue, 29 Mar 2022 08:34:26 GMT
 COPY file:849eab43398bc401ed08e75cbad3ea52969452506337a4135a0ef8144dff93ad in . 
-# Thu, 17 Mar 2022 15:49:47 GMT
+# Tue, 29 Mar 2022 08:34:28 GMT
 RUN adduser -D -H -g "" notary
-# Thu, 17 Mar 2022 15:49:48 GMT
+# Tue, 29 Mar 2022 08:34:28 GMT
 USER notary
-# Thu, 17 Mar 2022 15:49:48 GMT
+# Tue, 29 Mar 2022 08:34:29 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/notary/signer
-# Thu, 17 Mar 2022 15:49:49 GMT
+# Tue, 29 Mar 2022 08:34:29 GMT
 ENTRYPOINT ["entrypoint.sh"]
-# Thu, 17 Mar 2022 15:49:49 GMT
+# Tue, 29 Mar 2022 08:34:30 GMT
 CMD ["notary-signer" "--help"]
 ```
 
 -	Layers:
-	-	`sha256:84104bbf59c688eb09fa3dfa49f67ee18a001947cd8e75d4c8d09e92926d6b31`  
-		Last Modified: Thu, 17 Mar 2022 14:34:22 GMT  
-		Size: 2.6 MB (2627924 bytes)  
+	-	`sha256:eba0847afba90891ea7dae672f5dadfa405a822df0bc9c00b9e3328fd5fd889c`  
+		Last Modified: Tue, 29 Mar 2022 00:51:57 GMT  
+		Size: 2.6 MB (2625139 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a0219162766422e3078573c2bedb3e58a6c382a030a341c0bb5cc7c809483e5`  
-		Last Modified: Thu, 17 Mar 2022 15:50:37 GMT  
+	-	`sha256:66b26d26abde63c15b13e6af115c7c6fb9fc2d22d642357f055785de91cb6483`  
+		Last Modified: Tue, 29 Mar 2022 08:35:16 GMT  
 		Size: 151.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b0baa806a6307efe203e4cc07104f988519047d5e54e588eabd17413a65ac63`  
-		Last Modified: Thu, 17 Mar 2022 15:50:41 GMT  
-		Size: 4.6 MB (4555144 bytes)  
+	-	`sha256:1c91bc37bc68a86160c7f6ab4b50a14877de14d73ea8610a6f44e63e7abb6669`  
+		Last Modified: Tue, 29 Mar 2022 08:35:19 GMT  
+		Size: 4.6 MB (4555116 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2df18c0e7de69a12d8ed338050d124adb610886e7f132f89b534dc9f4ff08a7`  
-		Last Modified: Thu, 17 Mar 2022 15:50:37 GMT  
-		Size: 354.0 B  
+	-	`sha256:4902016b7476344058a8d7a4bba669b89b6270d157c495fbe967027f2de91d9c`  
+		Last Modified: Tue, 29 Mar 2022 08:35:15 GMT  
+		Size: 356.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f9666ead86a141412e43831ebd717f9899d1d3d36f5d97cc878be13cb584916e`  
-		Last Modified: Thu, 17 Mar 2022 15:50:37 GMT  
-		Size: 381.0 B  
+	-	`sha256:650c019ee1d8315a41d3aa9680e78efd657ec14b10b7de7ad84d2140ab8c539a`  
+		Last Modified: Tue, 29 Mar 2022 08:35:16 GMT  
+		Size: 383.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0f7f77d2a1cb189e2a82c3566cee8a48f598a6ba6209f5c562ae8c63de3c721e`  
-		Last Modified: Thu, 17 Mar 2022 15:50:37 GMT  
+	-	`sha256:0607eba904a7eb637730de293342b19501b3bb9a8af2563aa3cc3e7fb089ac7c`  
+		Last Modified: Tue, 29 Mar 2022 08:35:16 GMT  
 		Size: 1.2 KB (1173 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -241,224 +241,224 @@ CMD ["notary-signer" "--help"]
 ### `notary:signer-0.6.1-2` - linux; 386
 
 ```console
-$ docker pull notary@sha256:f1a3153a67989bd37c86a4c25288a3318a5017249ff65f7b6ee6b509306a7ecf
+$ docker pull notary@sha256:d1e41ca16127354a473ab50ecfe3dbb2218900e7bba3d58ad7848907e8b04b44
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.4 MB (7439005 bytes)**  
+-	Total Size: **7.4 MB (7435786 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e398effed680c166477c3f97f4abea77a8b12437d0b0d2566d8b906858f19132`
+-	Image ID: `sha256:b279ce042847ab5e2613ba443ddfadec0be78dc452c1685075cbb0f95c94cf5e`
 -	Entrypoint: `["entrypoint.sh"]`
 -	Default Command: `["notary-signer","--help"]`
 
 ```dockerfile
-# Wed, 23 Mar 2022 14:59:41 GMT
-ADD file:fbbd764c2b3ce734329c4dc8415d55b9cefc972125c5818e78698f7b894667da in / 
-# Wed, 23 Mar 2022 14:59:41 GMT
+# Tue, 29 Mar 2022 00:38:45 GMT
+ADD file:f1abe5c2930209c2d735059c8e767e630c0818cc18a4fd10b0b90e6efbc675e2 in / 
+# Tue, 29 Mar 2022 00:38:46 GMT
 CMD ["/bin/sh"]
-# Wed, 23 Mar 2022 19:33:40 GMT
+# Tue, 29 Mar 2022 06:00:06 GMT
 ENV TAG=v0.6.1
-# Wed, 23 Mar 2022 19:33:41 GMT
+# Tue, 29 Mar 2022 06:00:07 GMT
 ENV NOTARYPKG=github.com/theupdateframework/notary
-# Wed, 23 Mar 2022 19:34:11 GMT
+# Tue, 29 Mar 2022 06:00:37 GMT
 ENV INSTALLDIR=/notary/signer
-# Wed, 23 Mar 2022 19:34:12 GMT
+# Tue, 29 Mar 2022 06:00:38 GMT
 EXPOSE 4444
-# Wed, 23 Mar 2022 19:34:13 GMT
+# Tue, 29 Mar 2022 06:00:39 GMT
 EXPOSE 7899
-# Wed, 23 Mar 2022 19:34:14 GMT
+# Tue, 29 Mar 2022 06:00:40 GMT
 WORKDIR /notary/signer
-# Wed, 23 Mar 2022 19:34:25 GMT
+# Tue, 29 Mar 2022 06:00:51 GMT
 RUN set -eux;     apk add --no-cache --virtual build-deps git go make musl-dev;     export GOPATH=/go GOCACHE=/go/cache;     mkdir -p ${GOPATH}/src/${NOTARYPKG};     git clone -b ${TAG} --depth 1 https://${NOTARYPKG} ${GOPATH}/src/${NOTARYPKG};     make -C ${GOPATH}/src/${NOTARYPKG} SKIPENVCHECK=1 PREFIX=. ./bin/static/notary-signer;     cp -vL ${GOPATH}/src/${NOTARYPKG}/bin/static/notary-signer ./;     apk del --no-network build-deps;     rm -rf ${GOPATH};     ./notary-signer --help
-# Wed, 23 Mar 2022 19:34:27 GMT
+# Tue, 29 Mar 2022 06:00:53 GMT
 COPY file:180643db1fd4154262e619c42c1255057d49a4c6cd56be3f475942fd0a35a236 in . 
-# Wed, 23 Mar 2022 19:34:28 GMT
+# Tue, 29 Mar 2022 06:00:54 GMT
 COPY file:849eab43398bc401ed08e75cbad3ea52969452506337a4135a0ef8144dff93ad in . 
-# Wed, 23 Mar 2022 19:34:28 GMT
+# Tue, 29 Mar 2022 06:00:54 GMT
 RUN adduser -D -H -g "" notary
-# Wed, 23 Mar 2022 19:34:29 GMT
+# Tue, 29 Mar 2022 06:00:55 GMT
 USER notary
-# Wed, 23 Mar 2022 19:34:30 GMT
+# Tue, 29 Mar 2022 06:00:56 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/notary/signer
-# Wed, 23 Mar 2022 19:34:31 GMT
+# Tue, 29 Mar 2022 06:00:57 GMT
 ENTRYPOINT ["entrypoint.sh"]
-# Wed, 23 Mar 2022 19:34:32 GMT
+# Tue, 29 Mar 2022 06:00:58 GMT
 CMD ["notary-signer" "--help"]
 ```
 
 -	Layers:
-	-	`sha256:4fcf0d6f8c0dc4a27651b1a8218d9febdd0bc510d8a2eb8474b17c87b284c5bd`  
-		Last Modified: Thu, 17 Mar 2022 16:35:37 GMT  
-		Size: 2.8 MB (2823620 bytes)  
+	-	`sha256:dadad3128a09e6d507e89afe042cb1d48da14a72b28ca79dec7c6acf971bd9e6`  
+		Last Modified: Tue, 29 Mar 2022 00:40:03 GMT  
+		Size: 2.8 MB (2820388 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2d6aef6ed724e0124900f916acdfef3b116d77afb80ec1f3e1ce6871c9ea786`  
-		Last Modified: Wed, 23 Mar 2022 19:35:01 GMT  
-		Size: 116.0 B  
+	-	`sha256:007901d388885795e87bab30fa93738b38540997491c7aa9d5394e7dff978b44`  
+		Last Modified: Tue, 29 Mar 2022 06:01:33 GMT  
+		Size: 118.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7c38bf2957bc752d6b21a07fec5798d1e06c3f06011a64f4f04cfac788d34cff`  
-		Last Modified: Wed, 23 Mar 2022 19:35:02 GMT  
-		Size: 4.6 MB (4613363 bytes)  
+	-	`sha256:4523fcd851d986eca1f25991fe3c80057aed1c4903505b2483a87641d32d7343`  
+		Last Modified: Tue, 29 Mar 2022 06:01:34 GMT  
+		Size: 4.6 MB (4613377 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3119ce3975f393843ebd76f03c4360d26ad79f127d4382f3b25f88983f198269`  
-		Last Modified: Wed, 23 Mar 2022 19:35:02 GMT  
+	-	`sha256:3f6d2f8bbfc6dcd19caf60def2df525745794e7a9333ca5d643ad3d725dd7a0b`  
+		Last Modified: Tue, 29 Mar 2022 06:01:33 GMT  
 		Size: 353.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c988d844bd70d3a0532b840f0bcb63b46f3317bf25f1cbb777a8a453b3164123`  
-		Last Modified: Wed, 23 Mar 2022 19:35:02 GMT  
-		Size: 382.0 B  
+	-	`sha256:36549517e1365949e5f08a32766861b7173556953c36fe39bf205238d2222057`  
+		Last Modified: Tue, 29 Mar 2022 06:01:33 GMT  
+		Size: 377.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35878f3cc734e8b72571b7f3277611cdde75eff636f9c74a21cb5933707efce1`  
-		Last Modified: Wed, 23 Mar 2022 19:35:03 GMT  
-		Size: 1.2 KB (1171 bytes)  
+	-	`sha256:0245f15cec6fc67c4540204f8a118c234d2dd595864055da21543eb145d79d7e`  
+		Last Modified: Tue, 29 Mar 2022 06:01:33 GMT  
+		Size: 1.2 KB (1173 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `notary:signer-0.6.1-2` - linux; ppc64le
 
 ```console
-$ docker pull notary@sha256:de4c14d3a29714f73f754f969dbbf2beb4ce95db388215fafc90f5d1a30f04ac
+$ docker pull notary@sha256:28d32bbc4575f6f5b205f3c8d731c9c7fe4f5d18539add28757e9da27d57e65c
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.2 MB (7157781 bytes)**  
+-	Total Size: **7.2 MB (7154680 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3102e51fbf419258c142913b3edb4a3588a019f7f90afac6aeae54c7474e682b`
+-	Image ID: `sha256:ab1b5007de5cc8d26eacefb2bbd7fc47b0d52ad52826d8183409a33bc26f9aec`
 -	Entrypoint: `["entrypoint.sh"]`
 -	Default Command: `["notary-signer","--help"]`
 
 ```dockerfile
-# Thu, 17 Mar 2022 18:19:00 GMT
-ADD file:06587cebee2131b88da0944eb4be5128053d97f4d51a175881625be110548874 in / 
-# Thu, 17 Mar 2022 18:19:03 GMT
+# Tue, 29 Mar 2022 00:17:21 GMT
+ADD file:0f301305d95e2e1e0580ec71f76edab57a1c18ed0adba5d09708b587ec19e622 in / 
+# Tue, 29 Mar 2022 00:17:25 GMT
 CMD ["/bin/sh"]
-# Fri, 18 Mar 2022 08:43:59 GMT
+# Tue, 29 Mar 2022 12:40:53 GMT
 ENV TAG=v0.6.1
-# Fri, 18 Mar 2022 08:44:04 GMT
+# Tue, 29 Mar 2022 12:40:54 GMT
 ENV NOTARYPKG=github.com/theupdateframework/notary
-# Fri, 18 Mar 2022 08:45:40 GMT
+# Tue, 29 Mar 2022 12:42:06 GMT
 ENV INSTALLDIR=/notary/signer
-# Fri, 18 Mar 2022 08:45:43 GMT
+# Tue, 29 Mar 2022 12:42:09 GMT
 EXPOSE 4444
-# Fri, 18 Mar 2022 08:45:46 GMT
+# Tue, 29 Mar 2022 12:42:12 GMT
 EXPOSE 7899
-# Fri, 18 Mar 2022 08:45:48 GMT
+# Tue, 29 Mar 2022 12:42:15 GMT
 WORKDIR /notary/signer
-# Fri, 18 Mar 2022 08:46:10 GMT
+# Tue, 29 Mar 2022 12:42:39 GMT
 RUN set -eux;     apk add --no-cache --virtual build-deps git go make musl-dev;     export GOPATH=/go GOCACHE=/go/cache;     mkdir -p ${GOPATH}/src/${NOTARYPKG};     git clone -b ${TAG} --depth 1 https://${NOTARYPKG} ${GOPATH}/src/${NOTARYPKG};     make -C ${GOPATH}/src/${NOTARYPKG} SKIPENVCHECK=1 PREFIX=. ./bin/static/notary-signer;     cp -vL ${GOPATH}/src/${NOTARYPKG}/bin/static/notary-signer ./;     apk del --no-network build-deps;     rm -rf ${GOPATH};     ./notary-signer --help
-# Fri, 18 Mar 2022 08:46:13 GMT
+# Tue, 29 Mar 2022 12:42:40 GMT
 COPY file:180643db1fd4154262e619c42c1255057d49a4c6cd56be3f475942fd0a35a236 in . 
-# Fri, 18 Mar 2022 08:46:14 GMT
+# Tue, 29 Mar 2022 12:42:42 GMT
 COPY file:849eab43398bc401ed08e75cbad3ea52969452506337a4135a0ef8144dff93ad in . 
-# Fri, 18 Mar 2022 08:46:22 GMT
+# Tue, 29 Mar 2022 12:42:50 GMT
 RUN adduser -D -H -g "" notary
-# Fri, 18 Mar 2022 08:46:26 GMT
+# Tue, 29 Mar 2022 12:42:59 GMT
 USER notary
-# Fri, 18 Mar 2022 08:46:31 GMT
+# Tue, 29 Mar 2022 12:43:04 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/notary/signer
-# Fri, 18 Mar 2022 08:46:37 GMT
+# Tue, 29 Mar 2022 12:43:09 GMT
 ENTRYPOINT ["entrypoint.sh"]
-# Fri, 18 Mar 2022 08:46:40 GMT
+# Tue, 29 Mar 2022 12:43:13 GMT
 CMD ["notary-signer" "--help"]
 ```
 
 -	Layers:
-	-	`sha256:9ba546239a73b7ff261e6813d8f1cf9e477de8825b6ae341227f315ea3a4cd51`  
-		Last Modified: Thu, 17 Mar 2022 18:20:15 GMT  
-		Size: 2.8 MB (2817924 bytes)  
+	-	`sha256:77fcf2c0cc10658b5d6b4e43a75682b8bebbdc2e47895412dd1241c0422b8368`  
+		Last Modified: Tue, 29 Mar 2022 00:18:56 GMT  
+		Size: 2.8 MB (2814846 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6519366b6c543b5c27978b58b1bdbf51a51a1038c4ab4d1aa7002483f4826bbf`  
-		Last Modified: Fri, 18 Mar 2022 08:47:15 GMT  
+	-	`sha256:3cacff4a4ed250261b3768bbfc9708d3da1b5331717d25f86c4c0928e2609079`  
+		Last Modified: Tue, 29 Mar 2022 12:43:53 GMT  
 		Size: 151.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:91a2e73001e44fa11162adab15d4d0b363529ce8439a50dd3ac5762fd8777c90`  
-		Last Modified: Fri, 18 Mar 2022 08:47:17 GMT  
-		Size: 4.3 MB (4337794 bytes)  
+	-	`sha256:222b02a3c69a5071e2847e33f670374acb913d4475da9ba50a6783ba1d451b25`  
+		Last Modified: Tue, 29 Mar 2022 12:43:54 GMT  
+		Size: 4.3 MB (4337776 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f80ea1b5096245f8380e1415126eab080b4f8d40a0f3e4127ff928d60e49303`  
-		Last Modified: Fri, 18 Mar 2022 08:47:15 GMT  
+	-	`sha256:295ab1754665b939a567857c6fbcf38d773ba83562ac53546e1e3246c54cd41a`  
+		Last Modified: Tue, 29 Mar 2022 12:43:53 GMT  
 		Size: 354.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e471f9c1dd512097136b165c33d6f00f0a5972d50ff6ece2d34c364aa4546ded`  
-		Last Modified: Fri, 18 Mar 2022 08:47:15 GMT  
-		Size: 384.0 B  
+	-	`sha256:542bb77cdd69cc247f93a9cdef415bbd42df299d501c84c773cb89c00c8d133c`  
+		Last Modified: Tue, 29 Mar 2022 12:43:53 GMT  
+		Size: 382.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0282f22781a1e838a98578170128714b6a92e4323547f3026c5c13524c4b81b8`  
-		Last Modified: Fri, 18 Mar 2022 08:47:15 GMT  
-		Size: 1.2 KB (1174 bytes)  
+	-	`sha256:7634254911f718d0571952c1c88cdbcf08b66ce4a7266e150a10dda53d468bed`  
+		Last Modified: Tue, 29 Mar 2022 12:43:53 GMT  
+		Size: 1.2 KB (1171 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `notary:signer-0.6.1-2` - linux; s390x
 
 ```console
-$ docker pull notary@sha256:8e1a224c239605e0b3ff0e45299f029fa955adbea193bd0f18e2416ac23bdd20
+$ docker pull notary@sha256:4297e4e5302259953bbfd0747d42575db953ab665fcaf1a6b76c6a0fc9f9ffe3
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.3 MB (7314919 bytes)**  
+-	Total Size: **7.3 MB (7313790 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d12aa8a2e10c86edbd24bd1d6caf4956f278e2e2dbaad55593c0a56cc7b87414`
+-	Image ID: `sha256:17bf63d014899545474153c839259f8d7003c462d6119e39f30bcf88bc7105b9`
 -	Entrypoint: `["entrypoint.sh"]`
 -	Default Command: `["notary-signer","--help"]`
 
 ```dockerfile
-# Thu, 17 Mar 2022 14:36:02 GMT
-ADD file:cc3c2ea972c5b5d1135d0a82f5d1a6cc97fcc81f3006bb6c6b8580f1e9f4c238 in / 
-# Thu, 17 Mar 2022 14:36:02 GMT
+# Tue, 29 Mar 2022 00:41:45 GMT
+ADD file:08b65c73088f2cc387829e0ce9aa160db404a3e5fa0e4fda048cdbc02d8f64c2 in / 
+# Tue, 29 Mar 2022 00:41:46 GMT
 CMD ["/bin/sh"]
-# Thu, 17 Mar 2022 16:48:38 GMT
+# Tue, 29 Mar 2022 11:18:16 GMT
 ENV TAG=v0.6.1
-# Thu, 17 Mar 2022 16:48:39 GMT
+# Tue, 29 Mar 2022 11:18:16 GMT
 ENV NOTARYPKG=github.com/theupdateframework/notary
-# Thu, 17 Mar 2022 16:48:59 GMT
+# Tue, 29 Mar 2022 11:18:38 GMT
 ENV INSTALLDIR=/notary/signer
-# Thu, 17 Mar 2022 16:48:59 GMT
+# Tue, 29 Mar 2022 11:18:38 GMT
 EXPOSE 4444
-# Thu, 17 Mar 2022 16:48:59 GMT
+# Tue, 29 Mar 2022 11:18:38 GMT
 EXPOSE 7899
-# Thu, 17 Mar 2022 16:48:59 GMT
+# Tue, 29 Mar 2022 11:18:38 GMT
 WORKDIR /notary/signer
-# Thu, 17 Mar 2022 16:49:10 GMT
+# Tue, 29 Mar 2022 11:18:53 GMT
 RUN set -eux;     apk add --no-cache --virtual build-deps git go make musl-dev;     export GOPATH=/go GOCACHE=/go/cache;     mkdir -p ${GOPATH}/src/${NOTARYPKG};     git clone -b ${TAG} --depth 1 https://${NOTARYPKG} ${GOPATH}/src/${NOTARYPKG};     make -C ${GOPATH}/src/${NOTARYPKG} SKIPENVCHECK=1 PREFIX=. ./bin/static/notary-signer;     cp -vL ${GOPATH}/src/${NOTARYPKG}/bin/static/notary-signer ./;     apk del --no-network build-deps;     rm -rf ${GOPATH};     ./notary-signer --help
-# Thu, 17 Mar 2022 16:49:10 GMT
+# Tue, 29 Mar 2022 11:18:54 GMT
 COPY file:180643db1fd4154262e619c42c1255057d49a4c6cd56be3f475942fd0a35a236 in . 
-# Thu, 17 Mar 2022 16:49:10 GMT
+# Tue, 29 Mar 2022 11:18:54 GMT
 COPY file:849eab43398bc401ed08e75cbad3ea52969452506337a4135a0ef8144dff93ad in . 
-# Thu, 17 Mar 2022 16:49:11 GMT
+# Tue, 29 Mar 2022 11:18:54 GMT
 RUN adduser -D -H -g "" notary
-# Thu, 17 Mar 2022 16:49:11 GMT
+# Tue, 29 Mar 2022 11:18:54 GMT
 USER notary
-# Thu, 17 Mar 2022 16:49:11 GMT
+# Tue, 29 Mar 2022 11:18:54 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/notary/signer
-# Thu, 17 Mar 2022 16:49:11 GMT
+# Tue, 29 Mar 2022 11:18:54 GMT
 ENTRYPOINT ["entrypoint.sh"]
-# Thu, 17 Mar 2022 16:49:11 GMT
+# Tue, 29 Mar 2022 11:18:55 GMT
 CMD ["notary-signer" "--help"]
 ```
 
 -	Layers:
-	-	`sha256:3bb5875ccb136d6c7691dcf2927e52a66c831ce80fd5140d92e0a158400a4cfe`  
-		Last Modified: Thu, 17 Mar 2022 14:36:53 GMT  
-		Size: 2.6 MB (2606212 bytes)  
+	-	`sha256:89a2ea5c1a3e1d541ae66fbd95d215b39b560c537460c3fc76ad6826582893fe`  
+		Last Modified: Tue, 29 Mar 2022 00:47:35 GMT  
+		Size: 2.6 MB (2605074 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6c965ece0ded347f0522934cfa75df1d2e16714a9443dcc7f5d38b0b7af8041b`  
-		Last Modified: Thu, 17 Mar 2022 16:49:37 GMT  
+	-	`sha256:48ac5d8b5943f179b16c64910bc48fd499aa21c41988b7624c0dc68d00722ae6`  
+		Last Modified: Tue, 29 Mar 2022 11:21:19 GMT  
 		Size: 151.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3dff2e6efbb33014d9f833e935ad719dff7dc9e6c074fac6b629b815030c2056`  
-		Last Modified: Thu, 17 Mar 2022 16:49:38 GMT  
-		Size: 4.7 MB (4706649 bytes)  
+	-	`sha256:f8cdafac6ccb7a2b11c2a1af545276b22159c24598c08634bc09222e69d5c613`  
+		Last Modified: Tue, 29 Mar 2022 11:21:19 GMT  
+		Size: 4.7 MB (4706660 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fefeffb3ff1831061255068b4e6cba2f0d39ae66375ed18a45d5d52f44e70e4b`  
-		Last Modified: Thu, 17 Mar 2022 16:49:37 GMT  
-		Size: 354.0 B  
+	-	`sha256:1d3a581a27946ea536cc943d404787a0689ce4cf258d70b8b332f6395775953b`  
+		Last Modified: Tue, 29 Mar 2022 11:21:15 GMT  
+		Size: 353.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e55341d4f63ac695e765283a65696d4267e5f55c448e28d93414c41d61d89883`  
-		Last Modified: Thu, 17 Mar 2022 16:49:37 GMT  
-		Size: 380.0 B  
+	-	`sha256:318594e20762541b71ff092618a6ee9c9ff373980c82bc3b65e5adaff577df54`  
+		Last Modified: Tue, 29 Mar 2022 11:21:19 GMT  
+		Size: 379.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:39329f747ee8ad6602f00a8158f4ab462f51553147a651aedb5f1e763f6279b0`  
-		Last Modified: Thu, 17 Mar 2022 16:49:37 GMT  
+	-	`sha256:6b195fb8bc296e2295a27228fe70d834c0317902f1d723e80b5fe606ad4d950b`  
+		Last Modified: Tue, 29 Mar 2022 11:21:19 GMT  
 		Size: 1.2 KB (1173 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
