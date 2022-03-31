@@ -1,7 +1,7 @@
 ## `buildpack-deps:bookworm`
 
 ```console
-$ docker pull buildpack-deps@sha256:2c05072473d11e3a6535017d741e0dc4e357a03b92ec58c02d7b00664c01d19e
+$ docker pull buildpack-deps@sha256:3e55fa32d024bf0a3228e0a624380c6c8759bff9c3b19e3979b9744cd4459893
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -118,51 +118,51 @@ RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		auto
 ### `buildpack-deps:bookworm` - linux; arm variant v7
 
 ```console
-$ docker pull buildpack-deps@sha256:3057c536c7c6f68c195471d1f40f37b857d336191dbeb3b5b7fc48e7283edd80
+$ docker pull buildpack-deps@sha256:1b7f006eb3a57bab345054192acd054f943cf3cfd7bb6b115c103509d1e19365
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **294.5 MB (294548530 bytes)**  
+-	Total Size: **290.9 MB (290939687 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c14b81fb84e8c247b2f7829800640a92be07e0c24c2aec452bd0333aae527c5a`
+-	Image ID: `sha256:e85b20281cfcd48c8a697a638e28485625d00ccb49f6dd5663dad8efe495e27b`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Thu, 17 Mar 2022 09:29:27 GMT
-ADD file:819f7eacc6077672fc50aade09ce96ce0ef1e2b4d9bd84e706ea22d90d73799a in / 
-# Thu, 17 Mar 2022 09:29:28 GMT
+# Tue, 29 Mar 2022 02:16:59 GMT
+ADD file:5ab9a8a4847f677425562eebef8854e58592bb57501d4bc6f521315d90815c3c in / 
+# Tue, 29 Mar 2022 02:17:01 GMT
 CMD ["bash"]
-# Sat, 19 Mar 2022 02:48:57 GMT
+# Wed, 30 Mar 2022 20:02:48 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Sat, 19 Mar 2022 02:49:10 GMT
+# Wed, 30 Mar 2022 20:03:02 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Sat, 19 Mar 2022 02:50:00 GMT
+# Wed, 30 Mar 2022 20:03:49 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 19 Mar 2022 02:51:57 GMT
+# Wed, 30 Mar 2022 20:05:45 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:7fca9c92eb5afd37d0b08a4fba4dd30ea576686d945af655ae46133854768127`  
-		Last Modified: Thu, 17 Mar 2022 09:44:45 GMT  
-		Size: 50.8 MB (50761706 bytes)  
+	-	`sha256:c7c8b286eb908a262d0005e4560150fabc15db4a3531f7e00f77b76643457e6c`  
+		Last Modified: Tue, 29 Mar 2022 02:32:14 GMT  
+		Size: 50.6 MB (50609802 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc5383ea443f2740a52246a5eee4a417a2b1244a1f912208d4c96428520670a4`  
-		Last Modified: Sat, 19 Mar 2022 03:26:13 GMT  
-		Size: 5.0 MB (5030714 bytes)  
+	-	`sha256:d739161e2986c208982baa48eed3572da3097ebf10a7f4e51faf03c0273ea371`  
+		Last Modified: Wed, 30 Mar 2022 20:27:35 GMT  
+		Size: 5.0 MB (5023298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3d3f50feb52a7829302a09f9e4f362e90c5b18f7be314c43c43c6b1cbb89dea`  
-		Last Modified: Sat, 19 Mar 2022 03:26:14 GMT  
-		Size: 10.5 MB (10475768 bytes)  
+	-	`sha256:d94e98cfbaf9038f43192a4328368893d374a691bbc690dd7b94222d51e41dfd`  
+		Last Modified: Wed, 30 Mar 2022 20:27:37 GMT  
+		Size: 10.2 MB (10244161 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b66566945e25367a4d188cff5f444e5c148cf8c32c44b9a8b417c7c6950ce026`  
-		Last Modified: Sat, 19 Mar 2022 03:27:01 GMT  
-		Size: 52.8 MB (52827968 bytes)  
+	-	`sha256:99ff68e3ac47baa10b1f98b0d5f14dbfc37964e7a2b10b452927f86c64fd0f84`  
+		Last Modified: Wed, 30 Mar 2022 20:28:25 GMT  
+		Size: 52.8 MB (52780274 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d5f449907892961828b09d71a6087b74860f8462bc407f9f83ee68955421731`  
-		Last Modified: Sat, 19 Mar 2022 03:28:50 GMT  
-		Size: 175.5 MB (175452374 bytes)  
+	-	`sha256:634e25a466b6069d9f5828e16523e475d6d14db70495b310c406383c5070ebff`  
+		Last Modified: Wed, 30 Mar 2022 20:30:14 GMT  
+		Size: 172.3 MB (172282152 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:bookworm` - linux; arm64 variant v8
