@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3af94504849c9b8df23f2900cf1bd27356fab42166b27e302c07749b473a5553`
-- Created: `2022-03-23T21:00:10.157710189Z`
-- Virtual Size: ~ 158.94 Mb  
+- Image ID: `sha256:695f931d78c966c5a91aacfc2c7f10fb57fc06dde12a553e079a1127f58cf820`
+- Created: `2022-03-31T04:43:29.269855878Z`
+- Virtual Size: ~ 203.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-varnish-entrypoint"]`
@@ -663,16 +663,16 @@ GPL-2.0-or-later AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.2.11-r3 description:
+zlib-1.2.12-r0 description:
 A compression/decompression Library
 
-zlib-1.2.11-r3 webpage:
+zlib-1.2.12-r0 webpage:
 https://zlib.net/
 
-zlib-1.2.11-r3 installed size:
+zlib-1.2.12-r0 installed size:
 108 KiB
 
-zlib-1.2.11-r3 license:
+zlib-1.2.12-r0 license:
 Zlib
 
 ```
