@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1713aedcfacda1824acf68266494bc494026a6c04179dee743f0c04f07027624`
-- Created: `2022-03-23T18:35:10.2516018Z`
-- Virtual Size: ~ 76.70 Mb  
+- Image ID: `sha256:5b185619b7b1a46f1a9bc82d2a83f4e1e4909fb91ff4d4dae130d42a47bcabe3`
+- Created: `2022-03-29T05:01:09.476245804Z`
+- Virtual Size: ~ 78.07 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -651,16 +651,33 @@ GPL-2.0-or-later AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.2.11-r3 description:
+zlib-1.2.12-r0 description:
 A compression/decompression Library
 
-zlib-1.2.11-r3 webpage:
+zlib-1.2.12-r0 webpage:
 https://zlib.net/
 
-zlib-1.2.11-r3 installed size:
+zlib-1.2.12-r0 installed size:
 108 KiB
 
-zlib-1.2.11-r3 license:
+zlib-1.2.12-r0 license:
 Zlib
+
+```
+
+### `apk` package: `zstd`
+
+```console
+zstd-1.5.0-r0 description:
+Zstandard - Fast real-time compression algorithm
+
+zstd-1.5.0-r0 webpage:
+https://www.zstd.net/
+
+zstd-1.5.0-r0 installed size:
+1356 KiB
+
+zstd-1.5.0-r0 license:
+BSD-3-Clause GPL-2.0-or-later
 
 ```
