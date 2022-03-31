@@ -1,4 +1,4 @@
-## `percona:psmdb-4.2`
+## `percona:psmdb-4.2.19`
 
 ```console
 $ docker pull percona@sha256:003a874f42f7e29e7254641204793a1c97ac373640b102584f751e085c1d2b86
@@ -8,7 +8,7 @@ $ docker pull percona@sha256:003a874f42f7e29e7254641204793a1c97ac373640b102584f7
 -	Platforms: 1
 	-	linux; amd64
 
-### `percona:psmdb-4.2` - linux; amd64
+### `percona:psmdb-4.2.19` - linux; amd64
 
 ```console
 $ docker pull percona@sha256:3b923727402cfcf1b03c76310fcf9c93e436a13e846b0bafae8ad8c771882514
