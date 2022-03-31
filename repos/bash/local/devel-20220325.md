@@ -1,9 +1,9 @@
-# `bash:devel-20220321`
+# `bash:devel-20220325`
 
 ## Docker Metadata
 
-- Image ID: `sha256:cace72b09a07750932daa23289c816171fe4a10f0976e4578b9ab375b19093c6`
-- Created: `2022-03-23T15:55:26.959092037Z`
+- Image ID: `sha256:e415ea97b0716c72bff748fb3d86d6a6f4b36eb1ac09e8bbf301c66d9da6db99`
+- Created: `2022-03-31T02:38:00.23233117Z`
 - Virtual Size: ~ 13.40 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,8 +11,8 @@
 - Command: `["bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `_BASH_COMMIT=5bba60397c6b92457e0a0d59cc9ad6efedff9076`
-  - `_BASH_VERSION=devel-20220321`
+  - `_BASH_COMMIT=8f68f9f0ff2544d03a9f38a368451e9cddcb9ece`
+  - `_BASH_VERSION=devel-20220325`
 
 ## `apk` (`.apk`-based packages)
 
@@ -274,16 +274,16 @@ GPL-2.0-only
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.2.11-r3 description:
+zlib-1.2.12-r0 description:
 A compression/decompression Library
 
-zlib-1.2.11-r3 webpage:
+zlib-1.2.12-r0 webpage:
 https://zlib.net/
 
-zlib-1.2.11-r3 installed size:
+zlib-1.2.12-r0 installed size:
 108 KiB
 
-zlib-1.2.11-r3 license:
+zlib-1.2.12-r0 license:
 Zlib
 
 ```
