@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:30a9bb3b21091c0db35acc7b54c0ccf35a9fda40586a033f86497632c3ba39b5`
-- Created: `2022-03-25T01:18:32.510402273Z`
+- Image ID: `sha256:34aba91dbd1358ac48d86995dad4620c73ead6466f94f8dfce622a59892fcb5f`
+- Created: `2022-03-29T23:09:19.902289563Z`
 - Virtual Size: ~ 471.44 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1020,15 +1020,15 @@ $ dnf --quiet download --source --url openldap-2.4.46-18.el8
 https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackageSource/openldap-2.4.46-18.el8.src.rpm
 ```
 
-### `rpm` package: `openssl-libs-1.1.1k-5.0.1.el8_5.x86_64`
+### `rpm` package: `openssl-libs-1.1.1k-6.el8_5.x86_64`
 
 Licenses (from `rpm --query`): OpenSSL and ASL 2.0
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url openssl-libs-1.1.1k-5.0.1.el8_5
-https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackageSource/openssl-1.1.1k-5.0.1.el8_5.src.rpm
+$ dnf --quiet download --source --url openssl-libs-1.1.1k-6.el8_5
+https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackageSource/openssl-1.1.1k-6.el8_5.src.rpm
 ```
 
 ### `rpm` package: `oraclelinux-release-8.5-1.0.8.el8.x86_64`

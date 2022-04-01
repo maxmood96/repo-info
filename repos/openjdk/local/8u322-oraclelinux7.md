@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:86ae4197e3e1d22fccfff6c5710e702217408c6be3a4e88a740248b0f8bd3371`
-- Created: `2022-03-25T01:20:30.958292861Z`
+- Image ID: `sha256:4c2812282852e8ab88b9322347eddcd89823ed81c6b962cea440bb0e91246656`
+- Created: `2022-03-29T23:13:06.890982375Z`
 - Virtual Size: ~ 381.14 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -181,15 +181,15 @@ $ dnf --quiet download --source --url elfutils-libelf-0.176-5.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/elfutils-0.176-5.el7.src.rpm
 ```
 
-### `rpm` package: `expat-2.1.0-12.0.1.el7.x86_64`
+### `rpm` package: `expat-2.1.0-14.0.1.el7_9.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url expat-2.1.0-12.0.1.el7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/expat-2.1.0-12.0.1.el7.src.rpm
+$ dnf --quiet download --source --url expat-2.1.0-14.0.1.el7_9
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/expat-2.1.0-14.0.1.el7_9.src.rpm
 ```
 
 ### `rpm` package: `file-libs-5.11-37.el7.x86_64`
@@ -853,15 +853,15 @@ $ dnf --quiet download --source --url openldap-2.4.44-25.el7_9
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/openldap-2.4.44-25.el7_9.src.rpm
 ```
 
-### `rpm` package: `openssl-libs-1.0.2k-24.0.3.el7_9.x86_64`
+### `rpm` package: `openssl-libs-1.0.2k-25.el7_9.x86_64`
 
 Licenses (from `rpm --query`): OpenSSL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url openssl-libs-1.0.2k-24.0.3.el7_9
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/openssl-1.0.2k-24.0.3.el7_9.src.rpm
+$ dnf --quiet download --source --url openssl-libs-1.0.2k-25.el7_9
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/openssl-1.0.2k-25.el7_9.src.rpm
 ```
 
 ### `rpm` package: `oraclelinux-release-7.9-1.0.9.el7.x86_64`
