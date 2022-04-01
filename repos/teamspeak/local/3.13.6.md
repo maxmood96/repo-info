@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b592cea3c0af4fd718ddf4428a24f69d22e19edf642b76099d710af2b96769eb`
-- Created: `2022-03-17T15:55:13.499005773Z`
+- Image ID: `sha256:50c7be0fb4ff4760cd623839b4668ebc77d3fea0a8ea3131f3b703e14b22e631`
+- Created: `2022-03-29T11:40:53.51352216Z`
 - Virtual Size: ~ 26.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -221,16 +221,16 @@ PostgreSQL
 ### `apk` package: `libsasl`
 
 ```console
-libsasl-2.1.27-r10 description:
+libsasl-2.1.28-r0 description:
 Cyrus Simple Authentication and Security Layer (SASL) library
 
-libsasl-2.1.27-r10 webpage:
+libsasl-2.1.28-r0 webpage:
 https://www.cyrusimap.org/sasl/
 
-libsasl-2.1.27-r10 installed size:
+libsasl-2.1.28-r0 installed size:
 192 KiB
 
-libsasl-2.1.27-r10 license:
+libsasl-2.1.28-r0 license:
 custom
 
 ```
@@ -374,16 +374,16 @@ MIT
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.2.11-r3 description:
+zlib-1.2.12-r0 description:
 A compression/decompression Library
 
-zlib-1.2.11-r3 webpage:
+zlib-1.2.12-r0 webpage:
 https://zlib.net/
 
-zlib-1.2.11-r3 installed size:
+zlib-1.2.12-r0 installed size:
 108 KiB
 
-zlib-1.2.11-r3 license:
+zlib-1.2.12-r0 license:
 Zlib
 
 ```
