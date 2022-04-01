@@ -10679,14 +10679,9 @@ Licenses: (parsed from: `/usr/share/doc/python3-twisted/copyright`, `/usr/share/
 
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris twisted=18.9.0-11ubuntu0.20.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/twisted/twisted_18.9.0-11ubuntu0.20.04.1.dsc' twisted_18.9.0-11ubuntu0.20.04.1.dsc 2593 SHA512:d84151e510bf88e306aa556c3d0c912a28f3f8d20b6fa76f7a863cd854fee9bb6c661ec11c2c93810e1d2fe71c8a7641318bda34694ee78b6ee0003618eab2a6
-'http://archive.ubuntu.com/ubuntu/pool/main/t/twisted/twisted_18.9.0.orig.tar.bz2' twisted_18.9.0.orig.tar.bz2 3088398 SHA512:a9878750f46207b8758f5407a0e4332d9e367bd3ed4e18001825982c3ba78c56372934e634f1866805b9b9bc452698ad36396285172b61cf84da0de5efa7cc29
-'http://archive.ubuntu.com/ubuntu/pool/main/t/twisted/twisted_18.9.0-11ubuntu0.20.04.1.debian.tar.xz' twisted_18.9.0-11ubuntu0.20.04.1.debian.tar.xz 40884 SHA512:ed71de2b7a6ecf55d23e275161ead28a25b935f294eadb796d68c2578dd290ccd24d6e779dbcd2b3cde52ca82bff89c8f943e0f2795d9756c0491b22e2e5acd0
-```
 
 ### `dpkg` source package: `twolame=0.4.0-2`
 
@@ -11462,14 +11457,9 @@ Licenses: (parsed from: `/usr/share/doc/zlib1g/copyright`, `/usr/share/doc/zlib1
 
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris zlib=1:1.2.11.dfsg-2ubuntu1.2
-'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.11.dfsg-2ubuntu1.2.dsc' zlib_1.2.11.dfsg-2ubuntu1.2.dsc 2953 SHA512:aa6c4c9bebb54f713912130e9484272027d530e6c0294444474b729828c5a610bc37bbdd6a6193753c5c52b20986956003c62b3daf426ee0fe52955ace35ae9f
-'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.11.dfsg.orig.tar.gz' zlib_1.2.11.dfsg.orig.tar.gz 370248 SHA512:92819807c0b8de655021bb2d5d182f9b6b381d3072d8c8dc1df34bbaa25d36bcba140c85f754a43cc466aac65850b7a7366aa0c93e804180e5b255e61d5748de
-'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.11.dfsg-2ubuntu1.2.debian.tar.xz' zlib_1.2.11.dfsg-2ubuntu1.2.debian.tar.xz 50828 SHA512:aecfe27ac946a24f4dc0bffc0656a1dac5fb4c0e1d1e884eaec43139669d2fb34fea307e0a896b16056944c86e4a691bae4804df5d8e77b00d00696dce2b4964
-```
 
 ### `dpkg` source package: `zope.interface=4.7.1-1`
 

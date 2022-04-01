@@ -10379,14 +10379,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris twisted=17.9.0-2ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/twisted/twisted_17.9.0-2ubuntu0.1.dsc' twisted_17.9.0-2ubuntu0.1.dsc 3667 SHA512:072ee18e192c1f196f326087ef5b54ee7ac978cfcd083e315b34150672b26867523a3022676d0550e9c7e745f628da5c64be10f25b167280d2039967401eb79e
-'http://archive.ubuntu.com/ubuntu/pool/main/t/twisted/twisted_17.9.0.orig.tar.bz2' twisted_17.9.0.orig.tar.bz2 3019243 SHA512:0fb854db1044bfdb208594a379a0f8df0193326a9974e193266e82113488d49220648d4a50b323fa144654e94976f5848e1d60efed13ab2668b02cc795720345
-'http://archive.ubuntu.com/ubuntu/pool/main/t/twisted/twisted_17.9.0-2ubuntu0.1.debian.tar.xz' twisted_17.9.0-2ubuntu0.1.debian.tar.xz 40052 SHA512:73c43348009b87cbdc354b8559e33ae9690b704b25d8023032c7475bbfe8e6528011410da1057adbdae008a289126340858917aa711883229a3041d73e5dce67
-```
 
 ### `dpkg` source package: `twolame=0.3.13-3`
 
