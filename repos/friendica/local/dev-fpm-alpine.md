@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:065a1c06048cf5c67bca5f4c29768d6b68f835a87b605f4223cee0774d5d23f9`
-- Created: `2022-03-24T00:17:37.882289681Z`
-- Virtual Size: ~ 109.97 Mb  
+- Image ID: `sha256:da60315406ff4b1c4aeee22a7ab292e89fdff7549883deb70491ae4ee770e5a2`
+- Created: `2022-03-30T06:58:13.690463614Z`
+- Virtual Size: ~ 109.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint-dev.sh"]`
@@ -220,16 +220,16 @@ MIT
 ### `apk` package: `freetype`
 
 ```console
-freetype-2.11.0-r0 description:
+freetype-2.11.1-r0 description:
 TrueType font rendering library
 
-freetype-2.11.0-r0 webpage:
+freetype-2.11.1-r0 webpage:
 https://www.freetype.org/
 
-freetype-2.11.0-r0 installed size:
+freetype-2.11.1-r0 installed size:
 748 KiB
 
-freetype-2.11.0-r0 license:
+freetype-2.11.1-r0 license:
 FTL GPL-2.0-or-later
 
 ```
@@ -1580,16 +1580,16 @@ GPL-2.0-or-later AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.2.11-r3 description:
+zlib-1.2.12-r0 description:
 A compression/decompression Library
 
-zlib-1.2.11-r3 webpage:
+zlib-1.2.12-r0 webpage:
 https://zlib.net/
 
-zlib-1.2.11-r3 installed size:
+zlib-1.2.12-r0 installed size:
 108 KiB
 
-zlib-1.2.11-r3 license:
+zlib-1.2.12-r0 license:
 Zlib
 
 ```
