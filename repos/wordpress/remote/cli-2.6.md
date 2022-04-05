@@ -1,7 +1,7 @@
 ## `wordpress:cli-2.6`
 
 ```console
-$ docker pull wordpress@sha256:dbfe9eee6ff891813cae3d0758b38189f0db83f1b19996860a09b7c286da10e7
+$ docker pull wordpress@sha256:64183cd887ce4793ab56b432a8f18348756c7711183220664ac1203aa3de81ed
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -166,150 +166,150 @@ CMD ["wp" "shell"]
 ### `wordpress:cli-2.6` - linux; arm variant v6
 
 ```console
-$ docker pull wordpress@sha256:9c12d15446749eb1eefc02f4a1c354073740569ac38acb44416a63d73f60cedc
+$ docker pull wordpress@sha256:fd2e59d4c43a6c2301605ec25cbc42e36544e6bd2f03470a39818357954404a4
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **58.3 MB (58347877 bytes)**  
+-	Total Size: **58.3 MB (58347998 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9ddca32604d197824bacb9447467361e46954cb5c8fb21854c735794e9898976`
+-	Image ID: `sha256:b8952a56480028ab763268b608f6cb2bb5543a71e7b1ea937e5da2876a1f653a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["wp","shell"]`
 
 ```dockerfile
-# Tue, 29 Mar 2022 00:49:32 GMT
-ADD file:44acf536d487bec7f7bf16561f4ec90e60d4447b3cbabfeca66953c4491aabeb in / 
-# Tue, 29 Mar 2022 00:49:33 GMT
+# Mon, 04 Apr 2022 23:49:42 GMT
+ADD file:159dcddaab900372df882a4e94615ed84250e9cea3e74bc0479d98280342f596 in / 
+# Mon, 04 Apr 2022 23:49:42 GMT
 CMD ["/bin/sh"]
-# Tue, 29 Mar 2022 00:52:56 GMT
+# Mon, 04 Apr 2022 23:53:09 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c
-# Tue, 29 Mar 2022 00:52:59 GMT
+# Mon, 04 Apr 2022 23:53:13 GMT
 RUN apk add --no-cache 		ca-certificates 		curl 		tar 		xz 		openssl
-# Tue, 29 Mar 2022 00:53:01 GMT
+# Mon, 04 Apr 2022 23:53:14 GMT
 RUN set -eux; 	adduser -u 82 -D -S -G www-data www-data
-# Tue, 29 Mar 2022 00:53:01 GMT
+# Mon, 04 Apr 2022 23:53:15 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Tue, 29 Mar 2022 00:53:03 GMT
+# Mon, 04 Apr 2022 23:53:16 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 777 /var/www/html
-# Tue, 29 Mar 2022 00:53:03 GMT
+# Mon, 04 Apr 2022 23:53:17 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Tue, 29 Mar 2022 00:53:04 GMT
+# Mon, 04 Apr 2022 23:53:17 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Tue, 29 Mar 2022 00:53:04 GMT
+# Mon, 04 Apr 2022 23:53:17 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Tue, 29 Mar 2022 01:32:45 GMT
+# Tue, 05 Apr 2022 00:55:21 GMT
 ENV GPG_KEYS=42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312
-# Tue, 29 Mar 2022 01:32:45 GMT
+# Tue, 05 Apr 2022 00:55:21 GMT
 ENV PHP_VERSION=7.4.28
-# Tue, 29 Mar 2022 01:32:45 GMT
+# Tue, 05 Apr 2022 00:55:22 GMT
 ENV PHP_URL=https://www.php.net/distributions/php-7.4.28.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-7.4.28.tar.xz.asc
-# Tue, 29 Mar 2022 01:32:46 GMT
+# Tue, 05 Apr 2022 00:55:22 GMT
 ENV PHP_SHA256=9cc3b6f6217b60582f78566b3814532c4b71d517876c25013ae51811e65d8fce
-# Tue, 29 Mar 2022 01:32:54 GMT
+# Tue, 05 Apr 2022 00:55:30 GMT
 RUN set -eux; 		apk add --no-cache --virtual .fetch-deps gnupg; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apk del --no-network .fetch-deps
-# Tue, 29 Mar 2022 01:32:55 GMT
+# Tue, 05 Apr 2022 00:55:30 GMT
 COPY file:ce57c04b70896f77cc11eb2766417d8a1240fcffe5bba92179ec78c458844110 in /usr/local/bin/ 
-# Tue, 29 Mar 2022 01:37:15 GMT
+# Tue, 05 Apr 2022 01:00:12 GMT
 RUN set -eux; 	apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		argon2-dev 		coreutils 		curl-dev 		gnu-libiconv-dev 		libsodium-dev 		libxml2-dev 		linux-headers 		oniguruma-dev 		openssl-dev 		readline-dev 		sqlite-dev 	; 		rm -vf /usr/include/iconv.h; 	ln -sv /usr/include/gnu-libiconv/*.h /usr/include/; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv=/usr 		--with-openssl 		--with-readline 		--with-zlib 				--enable-phpdbg 		--enable-phpdbg-readline 				--with-pear 				$(test "$gnuArch" = 's390x-linux-musl' && echo '--without-pcre-jit') 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache $runDeps; 		apk del --no-network .build-deps; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version
-# Tue, 29 Mar 2022 01:37:17 GMT
+# Tue, 05 Apr 2022 01:00:13 GMT
 COPY multi:6edd033b037aa2d7697fc3b9f82c2f162146c1920a0c6d25a165dc56783204db in /usr/local/bin/ 
-# Tue, 29 Mar 2022 01:37:19 GMT
+# Tue, 05 Apr 2022 01:00:16 GMT
 RUN docker-php-ext-enable sodium
-# Tue, 29 Mar 2022 01:37:20 GMT
+# Tue, 05 Apr 2022 01:00:17 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 29 Mar 2022 01:37:20 GMT
+# Tue, 05 Apr 2022 01:00:17 GMT
 CMD ["php" "-a"]
-# Tue, 29 Mar 2022 04:20:20 GMT
+# Tue, 05 Apr 2022 17:22:22 GMT
 RUN apk add --no-cache 		bash 		less 		mysql-client
-# Tue, 29 Mar 2022 04:20:22 GMT
+# Tue, 05 Apr 2022 17:22:24 GMT
 RUN set -ex; 	mkdir -p /var/www/html; 	chown -R www-data:www-data /var/www/html
-# Tue, 29 Mar 2022 04:20:22 GMT
+# Tue, 05 Apr 2022 17:22:24 GMT
 WORKDIR /var/www/html
-# Tue, 29 Mar 2022 04:22:31 GMT
+# Tue, 05 Apr 2022 17:24:32 GMT
 RUN set -ex; 		apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		freetype-dev 		icu-dev 		imagemagick-dev 		libjpeg-turbo-dev 		libpng-dev 		libwebp-dev 		libzip-dev 	; 		docker-php-ext-configure gd 		--with-freetype 		--with-jpeg 		--with-webp 	; 	docker-php-ext-install -j "$(nproc)" 		bcmath 		exif 		gd 		intl 		mysqli 		zip 	; 	pecl install imagick-3.6.0; 	docker-php-ext-enable imagick; 	rm -r /tmp/pear; 		out="$(php -r 'exit(0);')"; 	[ -z "$out" ]; 	err="$(php -r 'exit(0);' 3>&1 1>&2 2>&3)"; 	[ -z "$err" ]; 		extDir="$(php -r 'echo ini_get("extension_dir");')"; 	[ -d "$extDir" ]; 	runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive "$extDir" 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .wordpress-phpexts-rundeps $runDeps; 	apk del --no-network .build-deps; 		! { ldd "$extDir"/*.so | grep 'not found'; }; 	err="$(php --version 3>&1 1>&2 2>&3)"; 	[ -z "$err" ]
-# Tue, 29 Mar 2022 04:22:33 GMT
+# Tue, 05 Apr 2022 17:24:34 GMT
 RUN { 		echo 'error_reporting = E_ERROR | E_WARNING | E_PARSE | E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_COMPILE_WARNING | E_RECOVERABLE_ERROR'; 		echo 'display_errors = Off'; 		echo 'display_startup_errors = Off'; 		echo 'log_errors = On'; 		echo 'error_log = /dev/stderr'; 		echo 'log_errors_max_len = 1024'; 		echo 'ignore_repeated_errors = On'; 		echo 'ignore_repeated_source = Off'; 		echo 'html_errors = Off'; 	} > /usr/local/etc/php/conf.d/error-logging.ini
-# Tue, 29 Mar 2022 04:22:33 GMT
+# Tue, 05 Apr 2022 17:24:34 GMT
 ENV WORDPRESS_CLI_GPG_KEY=63AF7AA15067C05616FDDD88A3A2E8F226F0BC06
-# Tue, 29 Mar 2022 04:22:34 GMT
+# Tue, 05 Apr 2022 17:24:35 GMT
 ENV WORDPRESS_CLI_VERSION=2.6.0
-# Tue, 29 Mar 2022 04:22:34 GMT
+# Tue, 05 Apr 2022 17:24:35 GMT
 ENV WORDPRESS_CLI_SHA512=d73f9161a1f03b8ecaac7b196b6051fe847b3c402b9c92b1f6f3acbe5b1cf91f7260c0e499b8947bab75920ecec918b39533ca65fa5a1fd3eb6ce7b8e2c58e7d
-# Tue, 29 Mar 2022 04:22:40 GMT
+# Tue, 05 Apr 2022 17:24:39 GMT
 RUN set -ex; 		apk add --no-cache --virtual .fetch-deps 		gnupg 	; 		curl -o /usr/local/bin/wp.gpg -fL "https://github.com/wp-cli/wp-cli/releases/download/v${WORDPRESS_CLI_VERSION}/wp-cli-${WORDPRESS_CLI_VERSION}.phar.gpg"; 		GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$WORDPRESS_CLI_GPG_KEY"; 	gpg --batch --decrypt --output /usr/local/bin/wp /usr/local/bin/wp.gpg; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/wp.gpg; unset GNUPGHOME; 		echo "$WORDPRESS_CLI_SHA512 */usr/local/bin/wp" | sha512sum -c -; 	chmod +x /usr/local/bin/wp; 		apk del --no-network .fetch-deps; 		wp --allow-root --version
-# Tue, 29 Mar 2022 04:22:40 GMT
+# Tue, 05 Apr 2022 17:24:40 GMT
 VOLUME [/var/www/html]
-# Tue, 29 Mar 2022 04:22:41 GMT
+# Tue, 05 Apr 2022 17:24:40 GMT
 COPY file:b6efa5ff0423d61c2df0c8941b896844a8272d8516cdda0fcae8daaf56baac18 in /usr/local/bin/ 
-# Tue, 29 Mar 2022 04:22:41 GMT
+# Tue, 05 Apr 2022 17:24:41 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 29 Mar 2022 04:22:42 GMT
+# Tue, 05 Apr 2022 17:24:41 GMT
 USER www-data
-# Tue, 29 Mar 2022 04:22:42 GMT
+# Tue, 05 Apr 2022 17:24:42 GMT
 CMD ["wp" "shell"]
 ```
 
 -	Layers:
-	-	`sha256:84f033dabe5013c0dfae4263abd951011719d0a15adc3c7312c5be994deff030`  
-		Last Modified: Tue, 29 Mar 2022 00:51:25 GMT  
-		Size: 2.6 MB (2621943 bytes)  
+	-	`sha256:c319b1fc4ed70b8241a7ce6ac0c4015d354bf5cf8c01eb73c50b6709c0c46e49`  
+		Last Modified: Mon, 04 Apr 2022 19:09:22 GMT  
+		Size: 2.6 MB (2621972 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d3fe53ded3c8dfed18c755c20bde3fa9baf5de7bd4585f13c4f7d88f7362e56b`  
-		Last Modified: Tue, 29 Mar 2022 02:09:02 GMT  
-		Size: 1.7 MB (1688709 bytes)  
+	-	`sha256:59f4857007e05a14c6f648dc95eb29cd4faae7806674bb49c86a9c22bf5c828e`  
+		Last Modified: Tue, 05 Apr 2022 01:33:30 GMT  
+		Size: 1.7 MB (1688742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9299665eb6bcbd5348bac0dc47eda3eafbe3b85a84ee7ccf8682387951cadd91`  
-		Last Modified: Tue, 29 Mar 2022 02:09:02 GMT  
+	-	`sha256:3bb0f12cd34ba09b6e733247467586fb1354d26dfc93308155099ca243578518`  
+		Last Modified: Tue, 05 Apr 2022 01:33:29 GMT  
 		Size: 1.3 KB (1259 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8aadf0c132610db01f4060b07461c5b046a4afbca928ee871168737de0ac046d`  
-		Last Modified: Tue, 29 Mar 2022 02:09:01 GMT  
+	-	`sha256:6ebc724c09cd88ae23080a3eb4cc057c4cbe9cbd5c83048ea54c647cbcc8f040`  
+		Last Modified: Tue, 05 Apr 2022 01:33:29 GMT  
 		Size: 267.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e541357f66a87753162d0d6730c212642ac3f47e9bc81160f6935acc642de70c`  
-		Last Modified: Tue, 29 Mar 2022 02:14:18 GMT  
-		Size: 10.4 MB (10438275 bytes)  
+	-	`sha256:13c97bcc795104c2de98712535c04ef105d204ecc5928136f935f1779267adab`  
+		Last Modified: Tue, 05 Apr 2022 01:40:46 GMT  
+		Size: 10.4 MB (10438279 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:81ffb92d7032b0696a5105e8b076505a414f9b55685be5426c01223353f66477`  
-		Last Modified: Tue, 29 Mar 2022 02:14:16 GMT  
-		Size: 495.0 B  
+	-	`sha256:439911d36b1c5c4c6b268d38a81c986cc80221ea2d276cd24c3540473e010541`  
+		Last Modified: Tue, 05 Apr 2022 01:40:44 GMT  
+		Size: 499.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5cf2cbd3d97c6329b2c314fdff39cf8496482dd030a70c140db1365ead07d0fc`  
-		Last Modified: Tue, 29 Mar 2022 02:14:26 GMT  
-		Size: 14.0 MB (14026753 bytes)  
+	-	`sha256:4e63a434cfe86dc1e6f3f57ab5a08d318d971e42a5c07c4699bc7c86e20747ed`  
+		Last Modified: Tue, 05 Apr 2022 01:40:54 GMT  
+		Size: 14.0 MB (14026808 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4bda4c700dd48948994a8a57d6f5c050e0b24d1777c183ec4ed931b7af92f348`  
-		Last Modified: Tue, 29 Mar 2022 02:14:16 GMT  
-		Size: 2.4 KB (2448 bytes)  
+	-	`sha256:6447999d6a32fbdcfa828c6484d36c1d03a237cdeaec50af7faace8b2dafbb39`  
+		Last Modified: Tue, 05 Apr 2022 01:40:44 GMT  
+		Size: 2.4 KB (2449 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27fd6ee5d9634a509d76daf1093df2fb0f0fe294587165f45fa91336e13091ec`  
-		Last Modified: Tue, 29 Mar 2022 02:14:16 GMT  
+	-	`sha256:39fefdf67d2fdab571731beda0323a80b2459c43818a96f389d5e6b27c7aa3ad`  
+		Last Modified: Tue, 05 Apr 2022 01:40:44 GMT  
 		Size: 18.4 KB (18390 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9d7080d605b1f6dde063d3492140f6c2ee4a22b01402c86d9558a3324796b039`  
-		Last Modified: Tue, 29 Mar 2022 04:33:32 GMT  
-		Size: 8.9 MB (8895289 bytes)  
+	-	`sha256:4819def83ef041219e6bc2048baa87ad3718742acccccb718c7bc61aeacec143`  
+		Last Modified: Tue, 05 Apr 2022 17:40:54 GMT  
+		Size: 8.9 MB (8895314 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:19a06afa3b2c42e780b66ddce933d3bd7fdce8ba7deda1f730fc97fe23d852ec`  
-		Last Modified: Tue, 29 Mar 2022 04:33:24 GMT  
+	-	`sha256:4370343a4664df0ef79d691841433e81dd249764131cd962411f651bc74fb9be`  
+		Last Modified: Tue, 05 Apr 2022 17:40:46 GMT  
 		Size: 144.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4fdfbe7e21fb82f1876ac2aad2e627c55fffa765c5251d6a132d364988bd4f60`  
-		Last Modified: Tue, 29 Mar 2022 04:33:35 GMT  
-		Size: 19.3 MB (19269413 bytes)  
+	-	`sha256:188cfb6604bcd083e7a109bdf81cd825a7f1fd04c1f2a9ccd69d35f9ef37dad2`  
+		Last Modified: Tue, 05 Apr 2022 17:40:57 GMT  
+		Size: 19.3 MB (19269387 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0bdb348d745e55a5fec2bc3ad255b0354893ef15e33bc1d658ce03d119a9bd19`  
-		Last Modified: Tue, 29 Mar 2022 04:33:24 GMT  
-		Size: 393.0 B  
+	-	`sha256:ee77a4431cd96163d63e4b96363c43c0b442dd7d2a3eba52c77957fac1179b36`  
+		Last Modified: Tue, 05 Apr 2022 17:40:47 GMT  
+		Size: 390.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27c78921dd5b1d0ff365be4a9624c9de7ea7dc876e8527c534da90bff2253eea`  
-		Last Modified: Tue, 29 Mar 2022 04:33:26 GMT  
-		Size: 1.4 MB (1383688 bytes)  
+	-	`sha256:3a0bc62a9f16a516cc28c802c84262b2617f5036d37fe636e365728bf4cf1a3f`  
+		Last Modified: Tue, 05 Apr 2022 17:40:48 GMT  
+		Size: 1.4 MB (1383689 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d56809a77220a90fcd89dfc6715aa89b2563756574210bc7e546c162c642da8`  
-		Last Modified: Tue, 29 Mar 2022 04:33:24 GMT  
-		Size: 411.0 B  
+	-	`sha256:963b3434a4cf578547dcbbe26e56467f577dd4808ecbb162223c8213288128dc`  
+		Last Modified: Tue, 05 Apr 2022 17:40:46 GMT  
+		Size: 409.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `wordpress:cli-2.6` - linux; arm variant v7
