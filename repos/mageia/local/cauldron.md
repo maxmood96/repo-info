@@ -227,23 +227,13 @@ Licenses (from `rpm --query`): Unicode
 
 Licenses (from `rpm --query`): GPLv2+
 
-Source:
-
-```console
-$ dnf --quiet download --source --url ifmetric-0.3-19.mga8
-http://ftp.sun.ac.za/ftp/pub/mirrors/mageia/distrib/cauldron/SRPMS/core/release/ifmetric-0.3-19.mga8.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `ifplugd-0.28-23.mga8.x86_64`
 
 Licenses (from `rpm --query`): GPL
 
-Source:
-
-```console
-$ dnf --quiet download --source --url ifplugd-0.28-23.mga8
-http://ftp.sun.ac.za/ftp/pub/mirrors/mageia/distrib/cauldron/SRPMS/core/release/ifplugd-0.28-23.mga8.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `initscripts-9.78-27.mga8.x86_64`
 
@@ -277,7 +267,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url kbd-2.4.0-1.mga8
-http://ftp.sun.ac.za/ftp/pub/mirrors/mageia/distrib/cauldron/SRPMS/core/release/kbd-2.4.0-1.mga8.src.rpm
+https://mirror.isoc.org.il/pub/mageia/distrib/cauldron/SRPMS/core/release/kbd-2.4.0-1.mga8.src.rpm
 ```
 
 ### `rpm` package: `kmod-28-1.mga8.x86_64`
@@ -732,7 +722,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url lib64pam_userpass1-1.0.2-15.mga8
-http://ftp.sun.ac.za/ftp/pub/mirrors/mageia/distrib/cauldron/SRPMS/core/release/pam_userpass-1.0.2-15.mga8.src.rpm
+https://mirror.isoc.org.il/pub/mageia/distrib/cauldron/SRPMS/core/release/pam_userpass-1.0.2-15.mga8.src.rpm
 ```
 
 ### `rpm` package: `lib64pcre1-8.44-1.mga8.x86_64`
@@ -1159,12 +1149,7 @@ Licenses (from `rpm --query`): BSD or GPL+
 
 Licenses (from `rpm --query`): BSD
 
-Source:
-
-```console
-$ dnf --quiet download --source --url passwd-0.80-2.mga8
-http://ftp.sun.ac.za/ftp/pub/mirrors/mageia/distrib/cauldron/SRPMS/core/release/passwd-0.80-2.mga8.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `perl-5.32.1-4.mga9.x86_64`
 
@@ -1474,7 +1459,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url shared-mime-info-2.1-2.mga8
-http://ftp.sun.ac.za/ftp/pub/mirrors/mageia/distrib/cauldron/SRPMS/core/release/shared-mime-info-2.1-2.mga8.src.rpm
+https://mirror.isoc.org.il/pub/mageia/distrib/cauldron/SRPMS/core/release/shared-mime-info-2.1-2.mga8.src.rpm
 ```
 
 ### `rpm` package: `systemd-248-2.mga9.x86_64`
@@ -1491,7 +1476,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url tar-1.34-1.mga9
-http://ftp.sun.ac.za/ftp/pub/mirrors/mageia/distrib/cauldron/SRPMS/core/release/tar-1.34-1.mga9.src.rpm
+https://mirror.isoc.org.il/pub/mageia/distrib/cauldron/SRPMS/core/release/tar-1.34-1.mga9.src.rpm
 ```
 
 ### `rpm` package: `tcb-1.1-12.mga8.x86_64`
