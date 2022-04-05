@@ -1,9 +1,9 @@
-# `gradle:7.4.1-jdk11-alpine`
+# `gradle:7.4.2-jdk11-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0a58b99df73306e2f159e59a69eb3b7f55a1b13c46dc1cb7e0caac53cd20200a`
-- Created: `2022-03-30T13:28:41.744461347Z`
+- Image ID: `sha256:9092a98c2d3f6bfd1b1dd76fbc634417202c6761d005068d8ba931c85ff55a7c`
+- Created: `2022-04-01T17:21:10.354203091Z`
 - Virtual Size: ~ 551.80 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -16,7 +16,7 @@
   - `JAVA_VERSION=jdk-11.0.14.1+1`
   - `JAVA_HOME=/opt/java/openjdk`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=7.4.1`
+  - `GRADLE_VERSION=7.4.2`
 
 ## `apk` (`.apk`-based packages)
 
