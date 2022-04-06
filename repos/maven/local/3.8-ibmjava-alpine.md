@@ -1,10 +1,10 @@
-# `maven:3.8.4-ibmjava-8-alpine`
+# `maven:3.8.5-ibmjava-8-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b2f47a27ce1212ab0dd12b619f52d3a79248ba7d8e99860f957f3411ab52dcc7`
-- Created: `2022-02-23T18:57:07.187622142Z`
-- Virtual Size: ~ 272.49 Mb  
+- Image ID: `sha256:a55f34ca128e5c496763e9e4fa0b5a40aef7b74d3de31e79c09e7b39038ddf81`
+- Created: `2022-04-05T16:57:02.102355568Z`
+- Virtual Size: ~ 272.03 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -56,16 +56,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-2.10.8-r0 description:
+apk-tools-2.10.8-r1 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-2.10.8-r0 webpage:
+apk-tools-2.10.8-r1 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-2.10.8-r0 installed size:
+apk-tools-2.10.8-r1 installed size:
 260 KiB
 
-apk-tools-2.10.8-r0 license:
+apk-tools-2.10.8-r1 license:
 GPL-2.0-only
 
 ```
@@ -90,16 +90,16 @@ GPL-3.0-or-later
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.31.1-r21 description:
+busybox-1.31.1-r22 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.31.1-r21 webpage:
+busybox-1.31.1-r22 webpage:
 https://busybox.net/
 
-busybox-1.31.1-r21 installed size:
+busybox-1.31.1-r22 installed size:
 940 KiB
 
-busybox-1.31.1-r21 license:
+busybox-1.31.1-r22 license:
 GPL-2.0-only
 
 ```
@@ -107,16 +107,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20191127-r4 description:
+ca-certificates-20211220-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20191127-r4 webpage:
+ca-certificates-20211220-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20191127-r4 installed size:
-672 KiB
+ca-certificates-20211220-r0 installed size:
+652 KiB
 
-ca-certificates-20191127-r4 license:
+ca-certificates-20211220-r0 license:
 MPL-2.0 GPL-2.0-or-later
 
 ```
@@ -124,16 +124,16 @@ MPL-2.0 GPL-2.0-or-later
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20191127-r4 description:
+ca-certificates-bundle-20211220-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20191127-r4 webpage:
+ca-certificates-bundle-20211220-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20191127-r4 installed size:
-228 KiB
+ca-certificates-bundle-20211220-r0 installed size:
+216 KiB
 
-ca-certificates-bundle-20191127-r4 license:
+ca-certificates-bundle-20211220-r0 license:
 MPL-2.0 GPL-2.0-or-later
 
 ```
@@ -209,16 +209,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1l-r0 description:
+libcrypto1.1-1.1.1n-r0 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1l-r0 webpage:
+libcrypto1.1-1.1.1n-r0 webpage:
 https://www.openssl.org/
 
-libcrypto1.1-1.1.1l-r0 installed size:
+libcrypto1.1-1.1.1n-r0 installed size:
 2700 KiB
 
-libcrypto1.1-1.1.1l-r0 license:
+libcrypto1.1-1.1.1n-r0 license:
 OpenSSL
 
 ```
@@ -277,16 +277,16 @@ GPL-2.0 LGPL-2.1+
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1l-r0 description:
+libssl1.1-1.1.1n-r0 description:
 SSL shared libraries
 
-libssl1.1-1.1.1l-r0 webpage:
+libssl1.1-1.1.1n-r0 webpage:
 https://www.openssl.org/
 
-libssl1.1-1.1.1l-r0 installed size:
+libssl1.1-1.1.1n-r0 installed size:
 528 KiB
 
-libssl1.1-1.1.1l-r0 license:
+libssl1.1-1.1.1n-r0 license:
 OpenSSL
 
 ```
@@ -396,16 +396,16 @@ MIT
 ### `apk` package: `openssl`
 
 ```console
-openssl-1.1.1l-r0 description:
+openssl-1.1.1n-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-1.1.1l-r0 webpage:
+openssl-1.1.1n-r0 webpage:
 https://www.openssl.org/
 
-openssl-1.1.1l-r0 installed size:
-660 KiB
+openssl-1.1.1n-r0 installed size:
+664 KiB
 
-openssl-1.1.1l-r0 license:
+openssl-1.1.1n-r0 license:
 OpenSSL
 
 ```
@@ -464,16 +464,16 @@ GPL-2.0-only
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.31.1-r21 description:
+ssl_client-1.31.1-r22 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.31.1-r21 webpage:
+ssl_client-1.31.1-r22 webpage:
 https://busybox.net/
 
-ssl_client-1.31.1-r21 installed size:
+ssl_client-1.31.1-r22 installed size:
 28 KiB
 
-ssl_client-1.31.1-r21 license:
+ssl_client-1.31.1-r22 license:
 GPL-2.0-only
 
 ```
@@ -498,16 +498,16 @@ GPL-3.0-or-later
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.2.11-r3 description:
+zlib-1.2.12-r0 description:
 A compression/decompression Library
 
-zlib-1.2.11-r3 webpage:
+zlib-1.2.12-r0 webpage:
 https://zlib.net/
 
-zlib-1.2.11-r3 installed size:
+zlib-1.2.12-r0 installed size:
 108 KiB
 
-zlib-1.2.11-r3 license:
+zlib-1.2.12-r0 license:
 Zlib
 
 ```

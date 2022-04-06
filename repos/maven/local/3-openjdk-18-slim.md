@@ -1,19 +1,19 @@
-# `maven:3.8.5-openjdk-17-slim`
+# `maven:3.8.5-openjdk-18-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3fee5996a46938d88b9f7fcae0334b2797a1e83cc6bf0323a804329bb338d557`
-- Created: `2022-04-05T16:55:11.305140329Z`
-- Virtual Size: ~ 424.12 Mb  
+- Image ID: `sha256:6504b7c0ba40d4f87acc86af333104b1c3215e03857367e51e40fc953955d9a3`
+- Created: `2022-04-05T16:56:10.091704536Z`
+- Virtual Size: ~ 426.35 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
 - Command: `["mvn"]`
 - Environment:
-  - `PATH=/usr/local/openjdk-17/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_HOME=/usr/local/openjdk-17`
+  - `PATH=/usr/local/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `JAVA_HOME=/usr/local/openjdk-18`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=17.0.2`
+  - `JAVA_VERSION=18`
   - `MAVEN_HOME=/usr/share/maven`
   - `MAVEN_CONFIG=/root/.m2`
 

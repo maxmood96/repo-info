@@ -1,10 +1,10 @@
-# `maven:3.8.4-ibmjava-8`
+# `maven:3.8.5-ibmjava-8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a811cf206616322d965e937d84514eac49cd3df9e74fcdd4c65477e6825bce2d`
-- Created: `2022-02-23T18:56:58.450425682Z`
-- Virtual Size: ~ 369.02 Mb  
+- Image ID: `sha256:5dd13932dbd6fb7b8b5569ff89a1afb1d0bfaa2cc7dea608deaa838481992c9a`
+- Created: `2022-04-05T16:56:56.302509712Z`
+- Virtual Size: ~ 369.23 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -487,21 +487,26 @@ $ apt-get source -qq --print-uris gcc-8=8.4.0-1ubuntu1~18.04
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-8/gcc-8_8.4.0-1ubuntu1%7e18.04.diff.gz' gcc-8_8.4.0-1ubuntu1~18.04.diff.gz 510634 SHA512:7bd97a04eccd35c3483a82b238d8d54c91071c4d1361cb30fb3fbf7b512c84b9d0bc80499373f2da3e17520d112125ebfebae6b93746feede78f9eecc1ccd4ac
 ```
 
-### `dpkg` source package: `glibc=2.27-3ubuntu1.4`
+### `dpkg` source package: `glibc=2.27-3ubuntu1.5`
 
 Binary Packages:
 
-- `libc-bin=2.27-3ubuntu1.4`
-- `libc6:amd64=2.27-3ubuntu1.4`
+- `libc-bin=2.27-3ubuntu1.5`
+- `libc6:amd64=2.27-3ubuntu1.5`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glibc=2.27-3ubuntu1.5
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.27-3ubuntu1.5.dsc' glibc_2.27-3ubuntu1.5.dsc 9599 SHA512:0714e1691a9fe30f6e961993f6726c4096ccc4451ba780faef9301a4ada2568292af4223b6d0dc9427fc125dc42a3d894c7eb0a45ea1ee10db54f7154a2ec027
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.27.orig.tar.xz' glibc_2.27.orig.tar.xz 15923832 SHA512:a0580fb52bc4ea8bb6e6734086b0dc66bd661060cdd837965880b989866490063c2420f250fb19b54e3547c58a5a7f8e012699e6513ce413746fd236ddd239e8
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.27-3ubuntu1.5.debian.tar.xz' glibc_2.27-3ubuntu1.5.debian.tar.xz 1110832 SHA512:db1249563b20cea5e4b6c733782d0b9617e7e37705f8038098240bb0a742635d8561c06bbdd3aef510342eda09e93c70bebee762c5929f11f8f2c021f5dbfb5c
+```
 
 ### `dpkg` source package: `gmp=2:6.1.2+dfsg-2`
 
@@ -1180,20 +1185,25 @@ $ apt-get source -qq --print-uris openldap=2.4.45+dfsg-1ubuntu1.10
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.45%2bdfsg-1ubuntu1.10.debian.tar.xz' openldap_2.4.45+dfsg-1ubuntu1.10.debian.tar.xz 183732 SHA512:41b401e4a4d42653dcf016c685402e8866262c050131bf5aa5436643ed14d6979a9bbacca40a3d8be9115e0aa0b0839156c490f3b1f50ca64ecebde25cb84375
 ```
 
-### `dpkg` source package: `openssl=1.1.1-1ubuntu2.1~18.04.14`
+### `dpkg` source package: `openssl=1.1.1-1ubuntu2.1~18.04.15`
 
 Binary Packages:
 
-- `libssl1.1:amd64=1.1.1-1ubuntu2.1~18.04.14`
-- `openssl=1.1.1-1ubuntu2.1~18.04.14`
+- `libssl1.1:amd64=1.1.1-1ubuntu2.1~18.04.15`
+- `openssl=1.1.1-1ubuntu2.1~18.04.15`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.1.1-1ubuntu2.1~18.04.15
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1-1ubuntu2.1%7e18.04.15.dsc' openssl_1.1.1-1ubuntu2.1~18.04.15.dsc 2514 SHA512:92b17c14f7236914aaf9198a20a2f252052d6a3d5a8911cf4f5e19b1cd7d1265dfb6966658c7a5000f4bbb7a7424301c93bec89c4aaba77c7159ce331dbe05d4
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1.orig.tar.gz' openssl_1.1.1.orig.tar.gz 8337920 SHA512:c0284a4fe84bdf765ca5bc5148da4441ffc36392cfecaf9d372af00cf93b6de5681cab1248b6f8246474532155dc205da5ad49549ad7c61c07c917145e7c9c71
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1-1ubuntu2.1%7e18.04.15.debian.tar.xz' openssl_1.1.1-1ubuntu2.1~18.04.15.debian.tar.xz 131628 SHA512:7e4617d11f7f0ddc1c56c5e072c9f9642db3298ed2419d7ca1b109e4fa88c21ff8b64764d078249b4897ad061b0ad20475ae32e5c812c50353d845380bbaca47
+```
 
 ### `dpkg` source package: `p11-kit=0.23.9-2ubuntu0.1`
 
@@ -1479,20 +1489,25 @@ $ apt-get source -qq --print-uris sysvinit=2.88dsf-59.10ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sysvinit/sysvinit_2.88dsf-59.10ubuntu1.debian.tar.xz' sysvinit_2.88dsf-59.10ubuntu1.debian.tar.xz 132736 SHA256:faee591309aa0065aa43f44a1e840eb01db7f55379af2b45949534bd0317b734
 ```
 
-### `dpkg` source package: `tar=1.29b-2ubuntu0.2`
+### `dpkg` source package: `tar=1.29b-2ubuntu0.3`
 
 Binary Packages:
 
-- `tar=1.29b-2ubuntu0.2`
+- `tar=1.29b-2ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 
 - `GPL-2`
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tar=1.29b-2ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.29b-2ubuntu0.3.dsc' tar_1.29b-2ubuntu0.3.dsc 1776 SHA512:d67785fa916988ddc357d3de81486b8dce4995e68b852ba5dae36527a846fb2431e902c0b036d287d0fc35a95ca2def3aade4facec29c2834c70c77db02c5998
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.29b.orig.tar.xz' tar_1.29b.orig.tar.xz 1822008 SHA512:6814c906f3bf3d1421d46e63aff7921acffbd2b2a0a7e5c20b472a821eab839d6eab93653d964ae16376b65da223c57a92455f44793522c84c8b1343af20b106
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.29b-2ubuntu0.3.debian.tar.xz' tar_1.29b-2ubuntu0.3.debian.tar.xz 35080 SHA512:4808285a3ea5903a7c61be297e2c2cb41654facd68397966a91ae5ebd2381e196cb159c2cec3bcf8f26b24d913764fd4d178670a324ca4daf8ee78050acd7cb2
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2018.09.18.1~18.04.2`
 
