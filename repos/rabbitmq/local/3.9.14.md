@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4c3b72b5e4f66def0aec040f6e1a0a819a59e68f057d341e319d837eb07fb9fa`
-- Created: `2022-03-31T02:50:52.620322902Z`
+- Image ID: `sha256:36c95fa21f566633ffa25059f3e57331ee719ed26c352142861c45e6f7f4ce93`
+- Created: `2022-04-06T02:02:21.707166289Z`
 - Virtual Size: ~ 223.53 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1441,16 +1441,21 @@ $ apt-get source -qq --print-uris xz-utils=5.2.4-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.2.4-1ubuntu1.debian.tar.xz' xz-utils_5.2.4-1ubuntu1.debian.tar.xz 135512 SHA512:9ec339da084b6aedd5d9dfafe879f7b90ae6dc473458dd8eda234e087f3aa80480b7b0792b54588d57e1b41a2c42f28ef87b8e6a8cd4bb51d43e2517f701724f
 ```
 
-### `dpkg` source package: `zlib=1:1.2.11.dfsg-2ubuntu1.2`
+### `dpkg` source package: `zlib=1:1.2.11.dfsg-2ubuntu1.3`
 
 Binary Packages:
 
-- `zlib1g:amd64=1:1.2.11.dfsg-2ubuntu1.2`
+- `zlib1g:amd64=1:1.2.11.dfsg-2ubuntu1.3`
 
 Licenses: (parsed from: `/usr/share/doc/zlib1g/copyright`)
 
 - `Zlib`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris zlib=1:1.2.11.dfsg-2ubuntu1.3
+'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.11.dfsg-2ubuntu1.3.dsc' zlib_1.2.11.dfsg-2ubuntu1.3.dsc 2953 SHA512:9502158754878cd6aa11c381f121b99da42815bd77f64c44c0b41f1dc22433a1996d7628072b552ba614f71f47e1a5e3df6c348c90b5a6a30c8e6b402926b749
+'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.11.dfsg.orig.tar.gz' zlib_1.2.11.dfsg.orig.tar.gz 370248 SHA512:92819807c0b8de655021bb2d5d182f9b6b381d3072d8c8dc1df34bbaa25d36bcba140c85f754a43cc466aac65850b7a7366aa0c93e804180e5b255e61d5748de
+'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.11.dfsg-2ubuntu1.3.debian.tar.xz' zlib_1.2.11.dfsg-2ubuntu1.3.debian.tar.xz 54636 SHA512:14b53a8aaf4bb0cbc3ab844a338f091dfc89c245d967c85275ab6fe8da95738a5863217b98db28f85501e52f158bb6fefa9f8c354d112999e626de1191abb42b
+```
