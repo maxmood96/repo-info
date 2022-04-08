@@ -1,11 +1,11 @@
 ## `debian:experimental`
 
 ```console
-$ docker pull debian@sha256:99abedf0140f390fad69ef7fec26c1cf2feccb21490865e35818e3a816e26bb8
+$ docker pull debian@sha256:1dce03f467555e9512f0061d28b58ca3902dd64ab3c443718b056b6c5878d83d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 8
+-	Platforms: 9
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
@@ -13,6 +13,7 @@ $ docker pull debian@sha256:99abedf0140f390fad69ef7fec26c1cf2feccb21490865e35818
 	-	linux; 386
 	-	linux; mips64le
 	-	linux; ppc64le
+	-	linux; riscv64
 	-	linux; s390x
 
 ### `debian:experimental` - linux; amd64
@@ -237,6 +238,38 @@ RUN echo 'deb http://deb.debian.org/debian experimental main' > /etc/apt/sources
 	-	`sha256:a61927c852a7804b2882117724b4852d1a3087be0b4e5b4071b4cc768cabc779`  
 		Last Modified: Tue, 29 Mar 2022 00:41:02 GMT  
 		Size: 223.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `debian:experimental` - linux; riscv64
+
+```console
+$ docker pull debian@sha256:3e247b79e6c31e836d6f3074fdffeb131cfb9e84dceb15446a108f3fa5279084
+```
+
+-	Docker Version: 20.10.12
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **51.5 MB (51465440 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:417f377d098e1e7f64440be3198519bc878a4594b2077d1061be83309e054f7a`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Tue, 29 Mar 2022 01:25:18 GMT
+ADD file:72e5cc2e596dab72d06a6ec9f23332cdfeb19daa6790c3ef1b2a5fcf55c5122a in / 
+# Tue, 29 Mar 2022 01:25:20 GMT
+CMD ["bash"]
+# Tue, 29 Mar 2022 01:28:59 GMT
+RUN echo 'deb http://deb.debian.org/debian-ports experimental main' > /etc/apt/sources.list.d/experimental.list
+```
+
+-	Layers:
+	-	`sha256:2107c9da7566bc704c0d272d4732bffb6d12ac87c905dce976d06386294b01c3`  
+		Last Modified: Tue, 29 Mar 2022 01:43:37 GMT  
+		Size: 51.5 MB (51465211 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:92f762c9e3ec44ff4bd91e9d65ad58ddf9ba2190a66ff6ace802bab4d2571f75`  
+		Last Modified: Tue, 29 Mar 2022 01:46:39 GMT  
+		Size: 229.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `debian:experimental` - linux; s390x
