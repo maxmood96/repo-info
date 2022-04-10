@@ -1,20 +1,20 @@
-# `clojure:openjdk-17-bullseye`
+# `clojure:openjdk-18-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a5302592dda1c70771adde2b5431ca2e4955ba6b48fd04ef6744f628c3d829c8`
-- Created: `2022-04-04T21:29:24.003337732Z`
-- Virtual Size: ~ 692.58 Mb  
+- Image ID: `sha256:17faa31f5635e3e5f20d960c0df90eaa60a6a912f3d37736f0f3cb7895a340f5`
+- Created: `2022-04-07T17:26:01.485021781Z`
+- Virtual Size: ~ 694.82 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint"]`
 - Command: `["-M","--repl"]`
 - Environment:
-  - `PATH=/usr/local/openjdk-17/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_HOME=/usr/local/openjdk-17`
+  - `PATH=/usr/local/openjdk-18/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `JAVA_HOME=/usr/local/openjdk-18`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=17.0.2`
-  - `CLOJURE_VERSION=1.11.0.1100`
+  - `JAVA_VERSION=18`
+  - `CLOJURE_VERSION=1.11.1.1105`
 
 ## `dpkg` (`.deb`-based packages)
 

@@ -1,20 +1,19 @@
-# `clojure:openjdk-17`
+# `clojure:openjdk-11`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0a1b504d39d29b01eeb477767541378413df0fcc8235d01f2d1d2ba786fb9204`
-- Created: `2022-04-04T21:29:12.182893681Z`
-- Virtual Size: ~ 544.18 Mb  
+- Image ID: `sha256:ee3554f8cfbf27ea89d06b72053105130bc913c2285c478c080223b567d0d63b`
+- Created: `2022-04-07T17:24:36.658550438Z`
+- Virtual Size: ~ 565.76 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Entrypoint: `["entrypoint"]`
-- Command: `["-M","--repl"]`
+- Command: `["clj"]`
 - Environment:
-  - `PATH=/usr/local/openjdk-17/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_HOME=/usr/local/openjdk-17`
+  - `PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `JAVA_HOME=/usr/local/openjdk-11`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=17.0.2`
-  - `CLOJURE_VERSION=1.11.0.1100`
+  - `JAVA_VERSION=11.0.14.1`
+  - `CLOJURE_VERSION=1.11.1.1105`
 
 ## `dpkg` (`.deb`-based packages)
 
