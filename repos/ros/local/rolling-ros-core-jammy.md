@@ -70,13 +70,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.4.3
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.4.3.dsc' apt_2.4.3.dsc 2797 SHA512:88a0367f1a6472443daaad6fe5780857fac93aad5f5ac68629341ec35a38442d706f4b6f7bf2cf6f93ca47e63528b3a68c420bac44946538c30157e72a6cd193
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.4.3.tar.xz' apt_2.4.3.tar.xz 2216172 SHA512:91ecbfa6262c9f68231f1443ab5929642d88fe89632b4836ed5c9618a94fbdf8408845ad444e7ac7053aa612849210e3aad48438e38be990e80ee9a7f074eb16
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/apt/2.4.3/
+
 
 ### `dpkg` source package: `attr=1:2.5.1-1build1`
 
@@ -952,15 +952,9 @@ Licenses: (parsed from: `/usr/share/doc/gzip/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gzip=1.10-4ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.10-4ubuntu3.dsc' gzip_1.10-4ubuntu3.dsc 1924 SHA512:5576c6a2e0898c39ea980e5e98c145fdb67d735574b615b51f4998f6c09dcc2d16a19b32f408b50e701b09fb455bcd97a5136b1bba3c1205e23e03d1463e5b14
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.10.orig.tar.gz' gzip_1.10.orig.tar.gz 1201421 SHA512:7939043e74554ced0c1c05d354ab4eb36cd6dce89ad79d02ccdc5ed6b7ee390759689b2d47c07227b9b44a62851afe7c76c4cae9f92527d999f3f1b4df1cccff
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.10.orig.tar.gz.asc' gzip_1.10.orig.tar.gz.asc 833 SHA512:74727fb3a8b64f81b4dd2d941fa750a789c482d7ae604d0ecfbe5ec623780efc7c5f0e51d65e7b99c2f097c5cd6585cc3a0f1b31abb03306156e0d410d9f0186
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.10-4ubuntu3.debian.tar.xz' gzip_1.10-4ubuntu3.debian.tar.xz 34524 SHA512:2b05833bb4eaf550f2742c0f37aab90e249834a9fa854285756af934ddf87a1103ad23b443336c2c6f7eb8a52cd28b7df04060dca0a57dc43c9195145ccf0c74
-```
 
 ### `dpkg` source package: `hostname=3.23ubuntu2`
 
@@ -2861,14 +2855,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-stdlib-extensions=3.9.10-2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.9.10-2.dsc' python3-stdlib-extensions_3.9.10-2.dsc 2571 SHA512:3940c4a99c8e15f8e0bc2fe90ca11b24ca53003df73f363b5ef55ae6c545f5faf864851012f4c9fb41203434d26fc7463e2f0dff938562bd0d966c059885515f
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.9.10.orig.tar.xz' python3-stdlib-extensions_3.9.10.orig.tar.xz 1113008 SHA512:6a334816defc3c3e98045d7e8adb1d3f9bf96a14e5151a6174900247aba8cc9ec6b8ce15ec02bf39986584512d1aac2caf36e654c52ffdbbe33125b9c01b24e5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.9.10-2.debian.tar.xz' python3-stdlib-extensions_3.9.10-2.debian.tar.xz 25200 SHA512:697f9aa75daa7be244272d3d32661a444e89b12ff288fef9743de72b7bfc345cd796c68a32fd5c6879dcea624ddcd4292d3bd5e26e286912c975d9a5ad5d2ea4
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/python3-stdlib-extensions/3.9.10-2/
+
 
 ### `dpkg` source package: `python3.10=3.10.4-3`
 
@@ -5288,14 +5281,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=249.11-0ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu2.dsc' systemd_249.11-0ubuntu2.dsc 5681 SHA512:bc5cc25be9b8e06cbbbff2cf3a65819a79c2f82710c4f1d09e461084b66413cb049151fe21c481976692b61b4fc110aac366ce62941c51cc8713fb6eb1240c95
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11.orig.tar.gz' systemd_249.11.orig.tar.gz 10622702 SHA512:fed7f81933648945a4bfac9fb12150ecd84d32181f79be0e14e0b3a789343a87569f868670e0b8dfc2801fab39f7490f95ee8c29ba831d7611f78c14ace5ddd8
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu2.debian.tar.xz' systemd_249.11-0ubuntu2.debian.tar.xz 225452 SHA512:0228ab776eb7fd28aa842b19cec8b11d326e70518b8fe3c05d6883f127d302567b319cfbf94cde5d083a6dfe442803fbe79ae6b9fc5f4fa914b6de76dca1e9bb
-```
 
 ### `dpkg` source package: `sysvinit=3.01-1ubuntu1`
 

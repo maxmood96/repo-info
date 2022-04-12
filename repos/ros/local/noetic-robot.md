@@ -1863,15 +1863,9 @@ Licenses: (parsed from: `/usr/share/doc/libarchive13/copyright`)
 - `Expat`
 - `PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libarchive=3.4.0-2ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.4.0-2ubuntu1.1.dsc' libarchive_3.4.0-2ubuntu1.1.dsc 2617 SHA512:0831abdc38246fa5b377cd2c87dd6a855a98b24be1b4ef09a8b623a9244838ef358810749303aa643d3b9ed279d3fb9db4dd0548eaacd03838630f19e3e4b87f
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.4.0.orig.tar.gz' libarchive_3.4.0.orig.tar.gz 6908093 SHA512:2f9e2a551a6bcab56fb1a030b5d656df7299a3d151465aa02f0420d344d2fada49dee4755b3abff9095f62519e14dc9af8afa1695ecc6d5fdb4f0b28e6ede852
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.4.0.orig.tar.gz.asc' libarchive_3.4.0.orig.tar.gz.asc 833 SHA512:9225e17345eec49af5a143d0a5bf69d68eaf0b1ffc635384f0c3b93cb4cbb99f052afce3f88bef38f4bb74d1a826e7277e6f4deef5f0b1e75e032e2f82f9e435
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.4.0-2ubuntu1.1.debian.tar.xz' libarchive_3.4.0-2ubuntu1.1.debian.tar.xz 52172 SHA512:e808abcaea0bd0956b393602b6651745abb1843cec2660538f8b0cc4e4d841eee3b5b293b1680d70d25e91c3130ec6438c5eb20186f6b7f5fb0af5d6213c11d1
-```
 
 ### `dpkg` source package: `libassuan=2.5.3-7ubuntu2`
 
