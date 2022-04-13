@@ -1,10 +1,10 @@
-# `api-firewall:0.6.7`
+# `api-firewall:0.6.8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6c3918e571c2ab2f2834d5656c6abd2ca1d213db1865d53c723d99cd03b5ea87`
-- Created: `2022-04-05T04:00:50.347783196Z`
-- Virtual Size: ~ 16.96 Mb  
+- Image ID: `sha256:9cb80b988cf464b9a73d669e0b895b129bca1285e74393622c5613392ef25b85`
+- Created: `2022-04-11T21:42:00.16498788Z`
+- Virtual Size: ~ 17.17 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -12,7 +12,7 @@
 - Environment:
   - `PATH=/opt/api-firewall:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `APIFW_PATH=/opt/api-firewall`
-  - `APIFIREWALL_VERSION=v0.6.7`
+  - `APIFIREWALL_VERSION=v0.6.8`
 
 ## `apk` (`.apk`-based packages)
 
