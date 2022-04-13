@@ -2,17 +2,17 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:543479162c86f09f3dd624d4b79bc52861431a62fd96eb2ee0727c395cc0d99e`
-- Created: `2022-03-31T01:15:10.310357237Z`
-- Virtual Size: ~ 917.66 Mb  
+- Image ID: `sha256:94da9ff52a346c28e933655b1ab1032c8b92965bccc125b48ea97676d11987d8`
+- Created: `2022-04-11T19:28:49.224012011Z`
+- Virtual Size: ~ 917.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=12.22.11`
-  - `YARN_VERSION=1.22.17`
+  - `NODE_VERSION=12.22.12`
+  - `YARN_VERSION=1.22.18`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1870,9 +1870,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gzip=1.6-5
-'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.6-5.dsc' gzip_1.6-5.dsc 1867 SHA256:922751ee5fc426d623e824c55f7822fa60f26f35b5389b37c8b15feff639608c
-'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.6.orig.tar.gz' gzip_1.6.orig.tar.gz 1074924 SHA256:97eb83b763d9e5ad35f351fe5517e6b71521d7aac7acf3e3cacdb6b1496d8f7e
-'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.6-5.debian.tar.xz' gzip_1.6-5.debian.tar.xz 14684 SHA256:ac5282c32083ff58fc01317ee402b687b3806555aa1d4e80a62bb0f2ad93167e
+'http://security.debian.org/debian-security/pool/updates/main/g/gzip/gzip_1.6-5%2bdeb9u1.dsc' gzip_1.6-5+deb9u1.dsc 1946 SHA256:ba2e9a0443b6befcc2bd5d6f82679f18eb05e1c6429766422cab47c53d25dc93
+'http://security.debian.org/debian-security/pool/updates/main/g/gzip/gzip_1.6.orig.tar.gz' gzip_1.6.orig.tar.gz 1074924 SHA256:97eb83b763d9e5ad35f351fe5517e6b71521d7aac7acf3e3cacdb6b1496d8f7e
+'http://security.debian.org/debian-security/pool/updates/main/g/gzip/gzip_1.6-5%2bdeb9u1.debian.tar.xz' gzip_1.6-5+deb9u1.debian.tar.xz 16004 SHA256:6ec66e03a1bc272a00b19c94d4d90f1e4d6b4970f0faa4dd29118b52ed1ed1a2
 ```
 
 Other potentially useful URLs:
@@ -4439,20 +4439,13 @@ Licenses: (parsed from: `/usr/share/doc/libopenjp2-7/copyright`, `/usr/share/doc
 - `ZLIB`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjpeg2=2.1.2-1.1+deb9u6
-'http://security.debian.org/debian-security/pool/updates/main/o/openjpeg2/openjpeg2_2.1.2-1.1%2bdeb9u6.dsc' openjpeg2_2.1.2-1.1+deb9u6.dsc 2797 SHA256:d53d34aae6b64f554e98639faec5ff58fcdd2b72118f8f15ac3b8807b152e063
-'http://security.debian.org/debian-security/pool/updates/main/o/openjpeg2/openjpeg2_2.1.2.orig.tar.gz' openjpeg2_2.1.2.orig.tar.gz 1987071 SHA256:4ce77b6ef538ef090d9bde1d5eeff8b3069ab56c4906f083475517c2c023dfa7
-'http://security.debian.org/debian-security/pool/updates/main/o/openjpeg2/openjpeg2_2.1.2-1.1%2bdeb9u6.debian.tar.xz' openjpeg2_2.1.2-1.1+deb9u6.debian.tar.xz 30240 SHA256:2eca1f4dcabef3ab1695f6b309bddb1aefbfca6e48c8f8189d425b17cb5685e4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openjpeg2/2.1.2-1.1+deb9u6/
 
-- https://sources.debian.net/src/openjpeg2/2.1.2-1.1+deb9u6/ (for browsing the source)
-- https://sources.debian.net/src/openjpeg2/2.1.2-1.1+deb9u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjpeg2/2.1.2-1.1+deb9u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.4.44+dfsg-5+deb9u8`
 
@@ -5823,10 +5816,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris xz-utils=5.2.2-1.2
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.2.2-1.2.dsc' xz-utils_5.2.2-1.2.dsc 2550 SHA256:13c8d8d0c243af78dc89b6e2cd670c8d8a2522379e1fcd196957c95d988d5961
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.2.2.orig.tar.xz' xz-utils_5.2.2.orig.tar.xz 1016404 SHA256:f341b1906ebcdde291dd619399ae944600edc9193619dd0c0110a5f05bfcc89e
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.2.2.orig.tar.xz.asc' xz-utils_5.2.2.orig.tar.xz.asc 543 SHA256:2cc0575556e1331b3f468e6e7dca5969ce86efcc315d62672279b4e68b2e449f
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.2.2-1.2.debian.tar.xz' xz-utils_5.2.2-1.2.debian.tar.xz 108632 SHA256:231c08d5c2c4e5c8ef5d6d58cac91aaeb2e4fcddc35e1ed3c69d730a2375c948
+'http://security.debian.org/debian-security/pool/updates/main/x/xz-utils/xz-utils_5.2.2-1.2%2bdeb9u1.dsc' xz-utils_5.2.2-1.2+deb9u1.dsc 2603 SHA256:fc38d8ae04cf8bd29da50ee7bdff3a6b3ccc02585cfa334ce36a05aa5fb71f2e
+'http://security.debian.org/debian-security/pool/updates/main/x/xz-utils/xz-utils_5.2.2.orig.tar.xz' xz-utils_5.2.2.orig.tar.xz 1016404 SHA256:f341b1906ebcdde291dd619399ae944600edc9193619dd0c0110a5f05bfcc89e
+'http://security.debian.org/debian-security/pool/updates/main/x/xz-utils/xz-utils_5.2.2.orig.tar.xz.asc' xz-utils_5.2.2.orig.tar.xz.asc 543 SHA256:2cc0575556e1331b3f468e6e7dca5969ce86efcc315d62672279b4e68b2e449f
+'http://security.debian.org/debian-security/pool/updates/main/x/xz-utils/xz-utils_5.2.2-1.2%2bdeb9u1.debian.tar.xz' xz-utils_5.2.2-1.2+deb9u1.debian.tar.xz 109876 SHA256:d9a1006df8a0c5c18306cf20db497e68923781360e6b08c72fb122b3a9abeccb
 ```
 
 Other potentially useful URLs:
