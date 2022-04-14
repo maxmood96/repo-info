@@ -1,9 +1,9 @@
-# `swift:5.6.0-centos7-slim`
+# `swift:5.6.1-centos7-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:39ab08b410e83df1604de2b87225b7edebe5c3c6c27fb2f74eebfc62be9846d5`
-- Created: `2022-03-16T19:13:46.138643527Z`
+- Image ID: `sha256:efc819aed8296bd2333f1af6a985109e39b2f7e8cd9bf258aa510995a243fc48`
+- Created: `2022-04-11T19:43:32.835617339Z`
 - Virtual Size: ~ 452.92 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561`
   - `SWIFT_PLATFORM=centos7`
-  - `SWIFT_BRANCH=swift-5.6-release`
-  - `SWIFT_VERSION=swift-5.6-RELEASE`
+  - `SWIFT_BRANCH=swift-5.6.1-release`
+  - `SWIFT_VERSION=swift-5.6.1-RELEASE`
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `description=Docker Container for the Swift programming language`
@@ -632,8 +632,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url krb5-libs-1.15.1-50.el7
-http://vault.centos.org/centos/7/updates/Source/SPackages/krb5-1.15.1-50.el7.src.rpm
 http://vault.centos.org/centos/7/os/Source/SPackages/krb5-1.15.1-50.el7.src.rpm
+http://vault.centos.org/centos/7/updates/Source/SPackages/krb5-1.15.1-50.el7.src.rpm
 ```
 
 ### `rpm` package: `libacl-2.2.51-15.el7.x86_64`
