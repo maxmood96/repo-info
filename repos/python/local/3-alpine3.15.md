@@ -2,15 +2,14 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7290c84c02263dac6fcf756ded2ae1864310fcbfcd7152ccfec186f74fd0254d`
-- Created: `2022-04-07T04:02:12.158210466Z`
-- Virtual Size: ~ 47.80 Mb  
+- Image ID: `sha256:8642a97eba622f06522fb02467758834e2bc2de7f1b665a4d4764c022f943ced`
+- Created: `2022-04-14T05:02:49.392294148Z`
+- Virtual Size: ~ 47.81 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python3"]`
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `LANG=C.UTF-8`
   - `GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696D`
   - `PYTHON_VERSION=3.10.4`
   - `PYTHON_PIP_VERSION=22.0.4`
@@ -584,16 +583,16 @@ Public-Domain
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.2.5-r0 description:
+xz-libs-5.2.5-r1 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.2.5-r0 webpage:
+xz-libs-5.2.5-r1 webpage:
 https://tukaani.org/xz
 
-xz-libs-5.2.5-r0 installed size:
+xz-libs-5.2.5-r1 installed size:
 148 KiB
 
-xz-libs-5.2.5-r0 license:
+xz-libs-5.2.5-r1 license:
 GPL-2.0-or-later AND Public-Domain AND LGPL-2.1-or-later
 
 ```
