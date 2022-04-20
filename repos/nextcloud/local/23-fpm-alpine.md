@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:caad334ca8c6cbfaf2e0b3ccaf040c12239a7e5ab50bc42c556908241929e4a1`
-- Created: `2022-04-05T12:25:49.210722345Z`
-- Virtual Size: ~ 568.25 Mb  
+- Image ID: `sha256:69e74bd8263eccb4640b04bc7c41864dbe9df89cea175403853ea82b83bc7953`
+- Created: `2022-04-19T04:40:03.405240938Z`
+- Virtual Size: ~ 568.49 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F`
-  - `PHP_VERSION=8.0.17`
-  - `PHP_URL=https://www.php.net/distributions/php-8.0.17.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.0.17.tar.xz.asc`
-  - `PHP_SHA256=4e7d94bb3d144412cb8b2adeb599fb1c6c1d7b357b0d0d0478dc5ef53532ebc5`
+  - `PHP_VERSION=8.0.18`
+  - `PHP_URL=https://www.php.net/distributions/php-8.0.18.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.0.18.tar.xz.asc`
+  - `PHP_SHA256=db161652cacae4b31c347fbf2e17b80656473cb365f2bb3460c4552f5647e2e7`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `NEXTCLOUD_VERSION=23.0.3`
@@ -1101,16 +1101,16 @@ GPL-2.0-or-later AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.2.5-r0 description:
+xz-libs-5.2.5-r1 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.2.5-r0 webpage:
+xz-libs-5.2.5-r1 webpage:
 https://tukaani.org/xz
 
-xz-libs-5.2.5-r0 installed size:
+xz-libs-5.2.5-r1 installed size:
 148 KiB
 
-xz-libs-5.2.5-r0 license:
+xz-libs-5.2.5-r1 license:
 GPL-2.0-or-later AND Public-Domain AND LGPL-2.1-or-later
 
 ```
