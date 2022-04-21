@@ -20,7 +20,7 @@
 ## `geonetwork:3`
 
 ```console
-$ docker pull geonetwork@sha256:4b23b5a37e1eae9fb37ae93352eb818ebfb4bb232f18d638dfa1a910d7b2f771
+$ docker pull geonetwork@sha256:c1c3988101b1636db68361b6631decdea803e72ae6055bf3d5172b99991f0f39
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -170,142 +170,142 @@ CMD ["catalina.sh" "run"]
 ### `geonetwork:3` - linux; arm64 variant v8
 
 ```console
-$ docker pull geonetwork@sha256:a193bb4e3b9ddaaf78dadd4468019b9f7959b5fe29321cb664f96a1e7639d94c
+$ docker pull geonetwork@sha256:b5174145d8e6624f72a96046b3f78a582d831f0ef05a966ad2b9d96a55f2ce66
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **473.0 MB (472967352 bytes)**  
+-	Total Size: **473.0 MB (472968162 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3607cd6a2eb2f66d536731be1139a3f266096434211faf011007521519367c63`
+-	Image ID: `sha256:9533939a6d1fe469e331583df9397b37e2541de561d6a695b46b42917ac71560`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
-# Tue, 29 Mar 2022 00:43:01 GMT
-ADD file:5e8f8c10da6d37a727fb5e1ed13b3dd78769f0ca7e91f0c3510e2edd25177117 in / 
-# Tue, 29 Mar 2022 00:43:03 GMT
+# Wed, 20 Apr 2022 04:28:55 GMT
+ADD file:ece192802cbdaf1a141d04f0c2e90cfd3479e5e3e82c6a00206970684494cf48 in / 
+# Wed, 20 Apr 2022 04:28:56 GMT
 CMD ["bash"]
-# Wed, 30 Mar 2022 02:13:10 GMT
+# Wed, 20 Apr 2022 06:44:07 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 30 Mar 2022 02:13:17 GMT
+# Wed, 20 Apr 2022 06:44:12 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 30 Mar 2022 02:13:41 GMT
+# Wed, 20 Apr 2022 06:44:33 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 30 Mar 2022 09:05:31 GMT
+# Wed, 20 Apr 2022 10:30:27 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				fontconfig libfreetype6 				ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 30 Mar 2022 09:09:00 GMT
+# Wed, 20 Apr 2022 10:34:55 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Wed, 30 Mar 2022 09:09:01 GMT
+# Wed, 20 Apr 2022 10:34:56 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
-# Wed, 30 Mar 2022 09:09:01 GMT
+# Wed, 20 Apr 2022 10:34:57 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 30 Mar 2022 09:09:02 GMT
+# Wed, 20 Apr 2022 10:34:58 GMT
 ENV LANG=C.UTF-8
-# Wed, 30 Mar 2022 09:09:03 GMT
+# Wed, 20 Apr 2022 10:34:59 GMT
 ENV JAVA_VERSION=8u322
-# Wed, 30 Mar 2022 09:09:10 GMT
+# Wed, 20 Apr 2022 10:35:10 GMT
 RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u322-b06/OpenJDK8U-jdk_x64_linux_8u322b06.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u322-b06/OpenJDK8U-jdk_aarch64_linux_8u322b06.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/jre/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		javac -version; 	java -version
-# Wed, 30 Mar 2022 12:15:45 GMT
+# Thu, 21 Apr 2022 06:11:09 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Wed, 30 Mar 2022 12:15:45 GMT
+# Thu, 21 Apr 2022 06:11:10 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 30 Mar 2022 12:15:47 GMT
+# Thu, 21 Apr 2022 06:11:11 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Wed, 30 Mar 2022 12:15:47 GMT
+# Thu, 21 Apr 2022 06:11:12 GMT
 WORKDIR /usr/local/tomcat
-# Wed, 30 Mar 2022 12:15:48 GMT
+# Thu, 21 Apr 2022 06:11:13 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Wed, 30 Mar 2022 12:15:49 GMT
+# Thu, 21 Apr 2022 06:11:14 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Wed, 30 Mar 2022 12:40:06 GMT
+# Thu, 21 Apr 2022 06:35:11 GMT
 ENV GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 5C3C5F3E314C866292F359A8F3AD5C94A67F707E 765908099ACF92702C7D949BFA0C35EA8AA299F1 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23
-# Wed, 30 Mar 2022 12:40:06 GMT
+# Thu, 21 Apr 2022 06:35:12 GMT
 ENV TOMCAT_MAJOR=8
-# Fri, 01 Apr 2022 20:15:40 GMT
+# Thu, 21 Apr 2022 06:35:13 GMT
 ENV TOMCAT_VERSION=8.5.78
-# Fri, 01 Apr 2022 20:15:41 GMT
+# Thu, 21 Apr 2022 06:35:14 GMT
 ENV TOMCAT_SHA512=b50213e64cc1fd3da2847deda1ca13bee4c26663093c11d53c5ecfe4cdec8856e743b4a1d8488e0c0cbe9bf149e755df40a4140f3b155e2195e3bc6335de3512
-# Fri, 01 Apr 2022 20:16:06 GMT
+# Thu, 21 Apr 2022 06:35:39 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		dirmngr 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work; 		catalina.sh version
-# Fri, 01 Apr 2022 20:16:07 GMT
+# Thu, 21 Apr 2022 06:35:41 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Fri, 01 Apr 2022 20:16:08 GMT
+# Thu, 21 Apr 2022 06:35:42 GMT
 EXPOSE 8080
-# Fri, 01 Apr 2022 20:16:09 GMT
+# Thu, 21 Apr 2022 06:35:43 GMT
 CMD ["catalina.sh" "run"]
-# Fri, 01 Apr 2022 22:07:38 GMT
+# Thu, 21 Apr 2022 13:47:44 GMT
 ENV GN_FILE=geonetwork.war
-# Fri, 01 Apr 2022 22:07:38 GMT
+# Thu, 21 Apr 2022 13:47:44 GMT
 ENV DATA_DIR=/usr/local/tomcat/webapps/geonetwork/WEB-INF/data
-# Fri, 01 Apr 2022 22:07:39 GMT
+# Thu, 21 Apr 2022 13:47:45 GMT
 ENV JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -server -Xms512m -Xmx2024m -XX:NewSize=512m -XX:MaxNewSize=1024m -XX:+UseConcMarkSweepGC
-# Fri, 01 Apr 2022 22:08:31 GMT
+# Thu, 21 Apr 2022 13:49:30 GMT
 ENV GN_VERSION=3.12.3
-# Fri, 01 Apr 2022 22:08:31 GMT
+# Thu, 21 Apr 2022 13:49:30 GMT
 ENV GN_DOWNLOAD_MD5=ecbbff832c8a6edf22e06aa1870dddab
-# Fri, 01 Apr 2022 22:08:32 GMT
+# Thu, 21 Apr 2022 13:49:31 GMT
 WORKDIR /usr/local/tomcat/webapps
-# Fri, 01 Apr 2022 22:08:47 GMT
+# Thu, 21 Apr 2022 13:50:23 GMT
 RUN curl -fSL -o $GN_FILE      https://sourceforge.net/projects/geonetwork/files/GeoNetwork_opensource/v${GN_VERSION}/${GN_FILE}/download &&      echo "${GN_DOWNLOAD_MD5} *${GN_FILE}" | md5sum -c &&      mkdir -p geonetwork &&      unzip -e $GN_FILE -d geonetwork &&      rm $GN_FILE
-# Fri, 01 Apr 2022 22:08:48 GMT
+# Thu, 21 Apr 2022 13:50:24 GMT
 COPY file:0804862fd42c05f06dfa65cb1e5dad9a956d8ac6a3ddd4d962847ba159f5cfe6 in /entrypoint.sh 
-# Fri, 01 Apr 2022 22:08:49 GMT
+# Thu, 21 Apr 2022 13:50:25 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 01 Apr 2022 22:08:49 GMT
+# Thu, 21 Apr 2022 13:50:26 GMT
 CMD ["catalina.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:fa223d8c149d7beec8e997e1415ee4961473cafaf88a932f70baf3da56f2c564`  
-		Last Modified: Tue, 29 Mar 2022 00:49:33 GMT  
-		Size: 53.6 MB (53633710 bytes)  
+	-	`sha256:83d5dcfea08e6927083bc886bf182fc39d87bb04b54b63002ac0c4c0b9aab682`  
+		Last Modified: Wed, 20 Apr 2022 04:35:19 GMT  
+		Size: 53.6 MB (53633096 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:17ffbd2ab15985c19f9e1e3199cdce06090266d20d11dbd3d55fba45de2fcc27`  
-		Last Modified: Wed, 30 Mar 2022 02:24:13 GMT  
-		Size: 4.9 MB (4938638 bytes)  
+	-	`sha256:45cfa86b7b1aca6d694057e4d42ee1440527f41c00b9e577df729244380c9eba`  
+		Last Modified: Wed, 20 Apr 2022 06:54:10 GMT  
+		Size: 4.9 MB (4938663 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3953e76cee2ab175d909ccec1a3399912a690ad621ae88cff787d98419b97bb`  
-		Last Modified: Wed, 30 Mar 2022 02:24:14 GMT  
-		Size: 10.7 MB (10656993 bytes)  
+	-	`sha256:5c79b19335f27cc78840bf9159e875322f3252ac06113c73756f9d4fba905f9b`  
+		Last Modified: Wed, 20 Apr 2022 06:54:10 GMT  
+		Size: 10.7 MB (10656971 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f906570592fdd65a2fcfae6164990d0422e03ccadba25c5b1d1268a29f7c530`  
-		Last Modified: Wed, 30 Mar 2022 02:24:36 GMT  
-		Size: 54.7 MB (54671703 bytes)  
+	-	`sha256:350ecaf08eac09037b05465ab97a1b8f7bc9b7a9b1fcef900dedd7dba9bbcf4d`  
+		Last Modified: Wed, 20 Apr 2022 06:54:32 GMT  
+		Size: 54.7 MB (54672934 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cb0dde9809fd5f6e3d3e4fc107af8e143572e8701eace9892a8bab6f572fec84`  
-		Last Modified: Wed, 30 Mar 2022 09:29:35 GMT  
-		Size: 5.4 MB (5420457 bytes)  
+	-	`sha256:407c0a935588e2739ecb408509326d6d25e59a373d13cbab359a43902f17dc33`  
+		Last Modified: Wed, 20 Apr 2022 10:54:38 GMT  
+		Size: 5.4 MB (5420689 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:805b6d6d0eb2fd9fa975957708b76f89cf5fdf51a3374507410ccde1da279d1f`  
-		Last Modified: Wed, 30 Mar 2022 09:33:30 GMT  
-		Size: 211.0 B  
+	-	`sha256:0d3971bf6f6e2464a1d2bd8645f5667de6af7962283cdf8d4925ba8e2204e744`  
+		Last Modified: Wed, 20 Apr 2022 11:00:13 GMT  
+		Size: 209.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6c24bbeba3624fc1dd635cf4cd7fc8a11956944e9d3ec5b0608292e644730e94`  
-		Last Modified: Wed, 30 Mar 2022 09:33:39 GMT  
-		Size: 105.1 MB (105086335 bytes)  
+	-	`sha256:ff56446fd45724f062d831fd8b00f60e76ad0a54c14ecb7f17bd4f9ac70db51d`  
+		Last Modified: Wed, 20 Apr 2022 11:00:23 GMT  
+		Size: 105.1 MB (105086376 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:026ba8534b219d948da368ebe9ad038e75b2f67114856d6e9e3cad5aca7e193a`  
-		Last Modified: Wed, 30 Mar 2022 13:15:57 GMT  
-		Size: 137.0 B  
+	-	`sha256:f32bf0ed92b8797af023c9bfdc1fb2b5538be8ac562c47fd681d4eee6d6e666f`  
+		Last Modified: Thu, 21 Apr 2022 08:48:58 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d99cde55ef53bac9332c954b51bf91fc58d9a27a513dde213ba6f87eee813547`  
-		Last Modified: Fri, 01 Apr 2022 21:18:16 GMT  
-		Size: 11.3 MB (11288064 bytes)  
+	-	`sha256:83db1b2c5f6aa232ab744fb260c6b8ba1ce59da6827c17c43f5c485f3363172e`  
+		Last Modified: Thu, 21 Apr 2022 09:06:28 GMT  
+		Size: 11.3 MB (11288032 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e22616a0d144b186442eaa48d4fd44fc5430dd82e58ab286130e1b2f78ef2b4c`  
-		Last Modified: Fri, 01 Apr 2022 22:09:56 GMT  
-		Size: 227.3 MB (227270855 bytes)  
+	-	`sha256:3039ecca67342c1e4fb193bd77ffd776fc6c9eb5df876ea772a24ed0fee2f796`  
+		Last Modified: Thu, 21 Apr 2022 13:53:07 GMT  
+		Size: 227.3 MB (227270805 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2d1e1ced46bcba7c969634723d45a4612f0621f6eb2bdae9849ef97434c7db94`  
-		Last Modified: Fri, 01 Apr 2022 22:09:39 GMT  
-		Size: 249.0 B  
+	-	`sha256:0bbca03137c6058ab703cebb62999322411d6f4083b393b905d9db7b6c67c8c2`  
+		Last Modified: Thu, 21 Apr 2022 13:52:51 GMT  
+		Size: 248.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `geonetwork:3-postgres`
 
 ```console
-$ docker pull geonetwork@sha256:4d1edb7cf866d8eb617871b046f489d5f1df6aa0b8f5cc56a419b8b01510445b
+$ docker pull geonetwork@sha256:474aede19ab9a16551b7bf12ad554fae0c68240d8b53e2c6db110fbaec91f8e9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -483,164 +483,164 @@ CMD ["catalina.sh" "run"]
 ### `geonetwork:3-postgres` - linux; arm64 variant v8
 
 ```console
-$ docker pull geonetwork@sha256:33b3cb33fcdcd15002c38c4e1cedab6bb472a11503c1f21a7aa0027d10d86671
+$ docker pull geonetwork@sha256:0fedf172d0285b2da8630669e74d438d2c9c2f73c85872328d9585e142a1b9b3
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **476.2 MB (476232008 bytes)**  
+-	Total Size: **476.2 MB (476232764 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d1c97e60997cc76ec7d6355a2fa52ca54177652a74bd0049d79df6a962f29561`
+-	Image ID: `sha256:d8883d598fbe5f66c16849edf3e4d2867f91973065dad568a15759789e9f4fd8`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
-# Tue, 29 Mar 2022 00:43:01 GMT
-ADD file:5e8f8c10da6d37a727fb5e1ed13b3dd78769f0ca7e91f0c3510e2edd25177117 in / 
-# Tue, 29 Mar 2022 00:43:03 GMT
+# Wed, 20 Apr 2022 04:28:55 GMT
+ADD file:ece192802cbdaf1a141d04f0c2e90cfd3479e5e3e82c6a00206970684494cf48 in / 
+# Wed, 20 Apr 2022 04:28:56 GMT
 CMD ["bash"]
-# Wed, 30 Mar 2022 02:13:10 GMT
+# Wed, 20 Apr 2022 06:44:07 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 30 Mar 2022 02:13:17 GMT
+# Wed, 20 Apr 2022 06:44:12 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 30 Mar 2022 02:13:41 GMT
+# Wed, 20 Apr 2022 06:44:33 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 30 Mar 2022 09:05:31 GMT
+# Wed, 20 Apr 2022 10:30:27 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				fontconfig libfreetype6 				ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 30 Mar 2022 09:09:00 GMT
+# Wed, 20 Apr 2022 10:34:55 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Wed, 30 Mar 2022 09:09:01 GMT
+# Wed, 20 Apr 2022 10:34:56 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
-# Wed, 30 Mar 2022 09:09:01 GMT
+# Wed, 20 Apr 2022 10:34:57 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 30 Mar 2022 09:09:02 GMT
+# Wed, 20 Apr 2022 10:34:58 GMT
 ENV LANG=C.UTF-8
-# Wed, 30 Mar 2022 09:09:03 GMT
+# Wed, 20 Apr 2022 10:34:59 GMT
 ENV JAVA_VERSION=8u322
-# Wed, 30 Mar 2022 09:09:10 GMT
+# Wed, 20 Apr 2022 10:35:10 GMT
 RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u322-b06/OpenJDK8U-jdk_x64_linux_8u322b06.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u322-b06/OpenJDK8U-jdk_aarch64_linux_8u322b06.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/jre/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		javac -version; 	java -version
-# Wed, 30 Mar 2022 12:15:45 GMT
+# Thu, 21 Apr 2022 06:11:09 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Wed, 30 Mar 2022 12:15:45 GMT
+# Thu, 21 Apr 2022 06:11:10 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 30 Mar 2022 12:15:47 GMT
+# Thu, 21 Apr 2022 06:11:11 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Wed, 30 Mar 2022 12:15:47 GMT
+# Thu, 21 Apr 2022 06:11:12 GMT
 WORKDIR /usr/local/tomcat
-# Wed, 30 Mar 2022 12:15:48 GMT
+# Thu, 21 Apr 2022 06:11:13 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Wed, 30 Mar 2022 12:15:49 GMT
+# Thu, 21 Apr 2022 06:11:14 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Wed, 30 Mar 2022 12:40:06 GMT
+# Thu, 21 Apr 2022 06:35:11 GMT
 ENV GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 5C3C5F3E314C866292F359A8F3AD5C94A67F707E 765908099ACF92702C7D949BFA0C35EA8AA299F1 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23
-# Wed, 30 Mar 2022 12:40:06 GMT
+# Thu, 21 Apr 2022 06:35:12 GMT
 ENV TOMCAT_MAJOR=8
-# Fri, 01 Apr 2022 20:15:40 GMT
+# Thu, 21 Apr 2022 06:35:13 GMT
 ENV TOMCAT_VERSION=8.5.78
-# Fri, 01 Apr 2022 20:15:41 GMT
+# Thu, 21 Apr 2022 06:35:14 GMT
 ENV TOMCAT_SHA512=b50213e64cc1fd3da2847deda1ca13bee4c26663093c11d53c5ecfe4cdec8856e743b4a1d8488e0c0cbe9bf149e755df40a4140f3b155e2195e3bc6335de3512
-# Fri, 01 Apr 2022 20:16:06 GMT
+# Thu, 21 Apr 2022 06:35:39 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		dirmngr 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work; 		catalina.sh version
-# Fri, 01 Apr 2022 20:16:07 GMT
+# Thu, 21 Apr 2022 06:35:41 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Fri, 01 Apr 2022 20:16:08 GMT
+# Thu, 21 Apr 2022 06:35:42 GMT
 EXPOSE 8080
-# Fri, 01 Apr 2022 20:16:09 GMT
+# Thu, 21 Apr 2022 06:35:43 GMT
 CMD ["catalina.sh" "run"]
-# Fri, 01 Apr 2022 22:07:38 GMT
+# Thu, 21 Apr 2022 13:47:44 GMT
 ENV GN_FILE=geonetwork.war
-# Fri, 01 Apr 2022 22:07:38 GMT
+# Thu, 21 Apr 2022 13:47:44 GMT
 ENV DATA_DIR=/usr/local/tomcat/webapps/geonetwork/WEB-INF/data
-# Fri, 01 Apr 2022 22:07:39 GMT
+# Thu, 21 Apr 2022 13:47:45 GMT
 ENV JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -server -Xms512m -Xmx2024m -XX:NewSize=512m -XX:MaxNewSize=1024m -XX:+UseConcMarkSweepGC
-# Fri, 01 Apr 2022 22:08:31 GMT
+# Thu, 21 Apr 2022 13:49:30 GMT
 ENV GN_VERSION=3.12.3
-# Fri, 01 Apr 2022 22:08:31 GMT
+# Thu, 21 Apr 2022 13:49:30 GMT
 ENV GN_DOWNLOAD_MD5=ecbbff832c8a6edf22e06aa1870dddab
-# Fri, 01 Apr 2022 22:08:32 GMT
+# Thu, 21 Apr 2022 13:49:31 GMT
 WORKDIR /usr/local/tomcat/webapps
-# Fri, 01 Apr 2022 22:08:47 GMT
+# Thu, 21 Apr 2022 13:50:23 GMT
 RUN curl -fSL -o $GN_FILE      https://sourceforge.net/projects/geonetwork/files/GeoNetwork_opensource/v${GN_VERSION}/${GN_FILE}/download &&      echo "${GN_DOWNLOAD_MD5} *${GN_FILE}" | md5sum -c &&      mkdir -p geonetwork &&      unzip -e $GN_FILE -d geonetwork &&      rm $GN_FILE
-# Fri, 01 Apr 2022 22:08:48 GMT
+# Thu, 21 Apr 2022 13:50:24 GMT
 COPY file:0804862fd42c05f06dfa65cb1e5dad9a956d8ac6a3ddd4d962847ba159f5cfe6 in /entrypoint.sh 
-# Fri, 01 Apr 2022 22:08:49 GMT
+# Thu, 21 Apr 2022 13:50:25 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 01 Apr 2022 22:08:49 GMT
+# Thu, 21 Apr 2022 13:50:26 GMT
 CMD ["catalina.sh" "run"]
-# Fri, 01 Apr 2022 22:09:01 GMT
+# Thu, 21 Apr 2022 13:50:36 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends postgresql-client &&     rm -rf /var/lib/apt/lists/*
-# Fri, 01 Apr 2022 22:09:03 GMT
+# Thu, 21 Apr 2022 13:50:38 GMT
 RUN sed -i -e 's#<import resource="../config-db/${geonetwork.db.type:h2}.xml"/>#<!--<import resource="../config-db/${geonetwork.db.type:h2}.xml"/-->#g' "${CATALINA_HOME}/webapps/geonetwork/WEB-INF/config-node/srv.xml" && sed -i -e 's#<!--<import resource="../config-db/postgres.xml"/>-->#<import resource="../config-db/postgres.xml"/>#g' "${CATALINA_HOME}/webapps/geonetwork/WEB-INF/config-node/srv.xml"
-# Fri, 01 Apr 2022 22:09:04 GMT
+# Thu, 21 Apr 2022 13:50:39 GMT
 COPY file:83f69d2041e5fb378033b0db57e096c81ba0725102ab4da4f089685e748fcce3 in /usr/local/tomcat/webapps/geonetwork/WEB-INF/config-db/jdbc.properties 
-# Fri, 01 Apr 2022 22:09:05 GMT
+# Thu, 21 Apr 2022 13:50:40 GMT
 COPY file:c88411abba7ad9b7bb75019f08755dbfa163d2fc7fdd80676bf9350c4c56a19c in /entrypoint.sh 
-# Fri, 01 Apr 2022 22:09:05 GMT
+# Thu, 21 Apr 2022 13:50:40 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 01 Apr 2022 22:09:06 GMT
+# Thu, 21 Apr 2022 13:50:41 GMT
 CMD ["catalina.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:fa223d8c149d7beec8e997e1415ee4961473cafaf88a932f70baf3da56f2c564`  
-		Last Modified: Tue, 29 Mar 2022 00:49:33 GMT  
-		Size: 53.6 MB (53633710 bytes)  
+	-	`sha256:83d5dcfea08e6927083bc886bf182fc39d87bb04b54b63002ac0c4c0b9aab682`  
+		Last Modified: Wed, 20 Apr 2022 04:35:19 GMT  
+		Size: 53.6 MB (53633096 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:17ffbd2ab15985c19f9e1e3199cdce06090266d20d11dbd3d55fba45de2fcc27`  
-		Last Modified: Wed, 30 Mar 2022 02:24:13 GMT  
-		Size: 4.9 MB (4938638 bytes)  
+	-	`sha256:45cfa86b7b1aca6d694057e4d42ee1440527f41c00b9e577df729244380c9eba`  
+		Last Modified: Wed, 20 Apr 2022 06:54:10 GMT  
+		Size: 4.9 MB (4938663 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3953e76cee2ab175d909ccec1a3399912a690ad621ae88cff787d98419b97bb`  
-		Last Modified: Wed, 30 Mar 2022 02:24:14 GMT  
-		Size: 10.7 MB (10656993 bytes)  
+	-	`sha256:5c79b19335f27cc78840bf9159e875322f3252ac06113c73756f9d4fba905f9b`  
+		Last Modified: Wed, 20 Apr 2022 06:54:10 GMT  
+		Size: 10.7 MB (10656971 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f906570592fdd65a2fcfae6164990d0422e03ccadba25c5b1d1268a29f7c530`  
-		Last Modified: Wed, 30 Mar 2022 02:24:36 GMT  
-		Size: 54.7 MB (54671703 bytes)  
+	-	`sha256:350ecaf08eac09037b05465ab97a1b8f7bc9b7a9b1fcef900dedd7dba9bbcf4d`  
+		Last Modified: Wed, 20 Apr 2022 06:54:32 GMT  
+		Size: 54.7 MB (54672934 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cb0dde9809fd5f6e3d3e4fc107af8e143572e8701eace9892a8bab6f572fec84`  
-		Last Modified: Wed, 30 Mar 2022 09:29:35 GMT  
-		Size: 5.4 MB (5420457 bytes)  
+	-	`sha256:407c0a935588e2739ecb408509326d6d25e59a373d13cbab359a43902f17dc33`  
+		Last Modified: Wed, 20 Apr 2022 10:54:38 GMT  
+		Size: 5.4 MB (5420689 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:805b6d6d0eb2fd9fa975957708b76f89cf5fdf51a3374507410ccde1da279d1f`  
-		Last Modified: Wed, 30 Mar 2022 09:33:30 GMT  
-		Size: 211.0 B  
+	-	`sha256:0d3971bf6f6e2464a1d2bd8645f5667de6af7962283cdf8d4925ba8e2204e744`  
+		Last Modified: Wed, 20 Apr 2022 11:00:13 GMT  
+		Size: 209.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6c24bbeba3624fc1dd635cf4cd7fc8a11956944e9d3ec5b0608292e644730e94`  
-		Last Modified: Wed, 30 Mar 2022 09:33:39 GMT  
-		Size: 105.1 MB (105086335 bytes)  
+	-	`sha256:ff56446fd45724f062d831fd8b00f60e76ad0a54c14ecb7f17bd4f9ac70db51d`  
+		Last Modified: Wed, 20 Apr 2022 11:00:23 GMT  
+		Size: 105.1 MB (105086376 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:026ba8534b219d948da368ebe9ad038e75b2f67114856d6e9e3cad5aca7e193a`  
-		Last Modified: Wed, 30 Mar 2022 13:15:57 GMT  
-		Size: 137.0 B  
+	-	`sha256:f32bf0ed92b8797af023c9bfdc1fb2b5538be8ac562c47fd681d4eee6d6e666f`  
+		Last Modified: Thu, 21 Apr 2022 08:48:58 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d99cde55ef53bac9332c954b51bf91fc58d9a27a513dde213ba6f87eee813547`  
-		Last Modified: Fri, 01 Apr 2022 21:18:16 GMT  
-		Size: 11.3 MB (11288064 bytes)  
+	-	`sha256:83db1b2c5f6aa232ab744fb260c6b8ba1ce59da6827c17c43f5c485f3363172e`  
+		Last Modified: Thu, 21 Apr 2022 09:06:28 GMT  
+		Size: 11.3 MB (11288032 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e22616a0d144b186442eaa48d4fd44fc5430dd82e58ab286130e1b2f78ef2b4c`  
-		Last Modified: Fri, 01 Apr 2022 22:09:56 GMT  
-		Size: 227.3 MB (227270855 bytes)  
+	-	`sha256:3039ecca67342c1e4fb193bd77ffd776fc6c9eb5df876ea772a24ed0fee2f796`  
+		Last Modified: Thu, 21 Apr 2022 13:53:07 GMT  
+		Size: 227.3 MB (227270805 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2d1e1ced46bcba7c969634723d45a4612f0621f6eb2bdae9849ef97434c7db94`  
-		Last Modified: Fri, 01 Apr 2022 22:09:39 GMT  
-		Size: 249.0 B  
+	-	`sha256:0bbca03137c6058ab703cebb62999322411d6f4083b393b905d9db7b6c67c8c2`  
+		Last Modified: Thu, 21 Apr 2022 13:52:51 GMT  
+		Size: 248.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:100953a3dba541a589005c2d20a110aefde79bc72c11607a5d607cb10c3d75ab`  
-		Last Modified: Fri, 01 Apr 2022 22:10:11 GMT  
-		Size: 3.3 MB (3261285 bytes)  
+	-	`sha256:3f8bf9ca5b4608e1aa4d1ffdcc47d66d3611da4282c9a1b887e11cb49a31d94b`  
+		Last Modified: Thu, 21 Apr 2022 13:53:23 GMT  
+		Size: 3.3 MB (3261235 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2ad15b02dcc293914eb0d461c27d21f7a3e71ad073ac845e29846cc97ef9802c`  
-		Last Modified: Fri, 01 Apr 2022 22:10:11 GMT  
-		Size: 1.3 KB (1270 bytes)  
+	-	`sha256:c0c3f233f7d92a22b66ce5493c31ab12023d7695c1f225f037d217e1a3691415`  
+		Last Modified: Thu, 21 Apr 2022 13:53:22 GMT  
+		Size: 1.3 KB (1268 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:58fe6e8e21e8ad6840766f5bc1b6d041ffe0b7bdd27197e1137f2d6975e0be8d`  
-		Last Modified: Fri, 01 Apr 2022 22:10:11 GMT  
-		Size: 1.1 KB (1128 bytes)  
+	-	`sha256:85ba545d18f32be670d53ae6edb6c782e3bf9c6e8f3614a98794547254ebd30c`  
+		Last Modified: Thu, 21 Apr 2022 13:53:22 GMT  
+		Size: 1.1 KB (1125 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eeefedcbc67f604ce5578bfb7d8f94e3a9f48dd7e50204d52a35f8af7608033f`  
-		Last Modified: Fri, 01 Apr 2022 22:10:10 GMT  
-		Size: 973.0 B  
+	-	`sha256:3fdbdf6d50b0f03ce955fc2d16b03633764f478c51afeb5629102fbf20acf267`  
+		Last Modified: Thu, 21 Apr 2022 13:53:22 GMT  
+		Size: 974.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `geonetwork:3.10`
@@ -1930,7 +1930,7 @@ CMD ["catalina.sh" "run"]
 ## `geonetwork:3.12`
 
 ```console
-$ docker pull geonetwork@sha256:4b23b5a37e1eae9fb37ae93352eb818ebfb4bb232f18d638dfa1a910d7b2f771
+$ docker pull geonetwork@sha256:c1c3988101b1636db68361b6631decdea803e72ae6055bf3d5172b99991f0f39
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2080,142 +2080,142 @@ CMD ["catalina.sh" "run"]
 ### `geonetwork:3.12` - linux; arm64 variant v8
 
 ```console
-$ docker pull geonetwork@sha256:a193bb4e3b9ddaaf78dadd4468019b9f7959b5fe29321cb664f96a1e7639d94c
+$ docker pull geonetwork@sha256:b5174145d8e6624f72a96046b3f78a582d831f0ef05a966ad2b9d96a55f2ce66
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **473.0 MB (472967352 bytes)**  
+-	Total Size: **473.0 MB (472968162 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3607cd6a2eb2f66d536731be1139a3f266096434211faf011007521519367c63`
+-	Image ID: `sha256:9533939a6d1fe469e331583df9397b37e2541de561d6a695b46b42917ac71560`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
-# Tue, 29 Mar 2022 00:43:01 GMT
-ADD file:5e8f8c10da6d37a727fb5e1ed13b3dd78769f0ca7e91f0c3510e2edd25177117 in / 
-# Tue, 29 Mar 2022 00:43:03 GMT
+# Wed, 20 Apr 2022 04:28:55 GMT
+ADD file:ece192802cbdaf1a141d04f0c2e90cfd3479e5e3e82c6a00206970684494cf48 in / 
+# Wed, 20 Apr 2022 04:28:56 GMT
 CMD ["bash"]
-# Wed, 30 Mar 2022 02:13:10 GMT
+# Wed, 20 Apr 2022 06:44:07 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 30 Mar 2022 02:13:17 GMT
+# Wed, 20 Apr 2022 06:44:12 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 30 Mar 2022 02:13:41 GMT
+# Wed, 20 Apr 2022 06:44:33 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 30 Mar 2022 09:05:31 GMT
+# Wed, 20 Apr 2022 10:30:27 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				fontconfig libfreetype6 				ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 30 Mar 2022 09:09:00 GMT
+# Wed, 20 Apr 2022 10:34:55 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Wed, 30 Mar 2022 09:09:01 GMT
+# Wed, 20 Apr 2022 10:34:56 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
-# Wed, 30 Mar 2022 09:09:01 GMT
+# Wed, 20 Apr 2022 10:34:57 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 30 Mar 2022 09:09:02 GMT
+# Wed, 20 Apr 2022 10:34:58 GMT
 ENV LANG=C.UTF-8
-# Wed, 30 Mar 2022 09:09:03 GMT
+# Wed, 20 Apr 2022 10:34:59 GMT
 ENV JAVA_VERSION=8u322
-# Wed, 30 Mar 2022 09:09:10 GMT
+# Wed, 20 Apr 2022 10:35:10 GMT
 RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u322-b06/OpenJDK8U-jdk_x64_linux_8u322b06.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u322-b06/OpenJDK8U-jdk_aarch64_linux_8u322b06.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/jre/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		javac -version; 	java -version
-# Wed, 30 Mar 2022 12:15:45 GMT
+# Thu, 21 Apr 2022 06:11:09 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Wed, 30 Mar 2022 12:15:45 GMT
+# Thu, 21 Apr 2022 06:11:10 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 30 Mar 2022 12:15:47 GMT
+# Thu, 21 Apr 2022 06:11:11 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Wed, 30 Mar 2022 12:15:47 GMT
+# Thu, 21 Apr 2022 06:11:12 GMT
 WORKDIR /usr/local/tomcat
-# Wed, 30 Mar 2022 12:15:48 GMT
+# Thu, 21 Apr 2022 06:11:13 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Wed, 30 Mar 2022 12:15:49 GMT
+# Thu, 21 Apr 2022 06:11:14 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Wed, 30 Mar 2022 12:40:06 GMT
+# Thu, 21 Apr 2022 06:35:11 GMT
 ENV GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 5C3C5F3E314C866292F359A8F3AD5C94A67F707E 765908099ACF92702C7D949BFA0C35EA8AA299F1 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23
-# Wed, 30 Mar 2022 12:40:06 GMT
+# Thu, 21 Apr 2022 06:35:12 GMT
 ENV TOMCAT_MAJOR=8
-# Fri, 01 Apr 2022 20:15:40 GMT
+# Thu, 21 Apr 2022 06:35:13 GMT
 ENV TOMCAT_VERSION=8.5.78
-# Fri, 01 Apr 2022 20:15:41 GMT
+# Thu, 21 Apr 2022 06:35:14 GMT
 ENV TOMCAT_SHA512=b50213e64cc1fd3da2847deda1ca13bee4c26663093c11d53c5ecfe4cdec8856e743b4a1d8488e0c0cbe9bf149e755df40a4140f3b155e2195e3bc6335de3512
-# Fri, 01 Apr 2022 20:16:06 GMT
+# Thu, 21 Apr 2022 06:35:39 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		dirmngr 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work; 		catalina.sh version
-# Fri, 01 Apr 2022 20:16:07 GMT
+# Thu, 21 Apr 2022 06:35:41 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Fri, 01 Apr 2022 20:16:08 GMT
+# Thu, 21 Apr 2022 06:35:42 GMT
 EXPOSE 8080
-# Fri, 01 Apr 2022 20:16:09 GMT
+# Thu, 21 Apr 2022 06:35:43 GMT
 CMD ["catalina.sh" "run"]
-# Fri, 01 Apr 2022 22:07:38 GMT
+# Thu, 21 Apr 2022 13:47:44 GMT
 ENV GN_FILE=geonetwork.war
-# Fri, 01 Apr 2022 22:07:38 GMT
+# Thu, 21 Apr 2022 13:47:44 GMT
 ENV DATA_DIR=/usr/local/tomcat/webapps/geonetwork/WEB-INF/data
-# Fri, 01 Apr 2022 22:07:39 GMT
+# Thu, 21 Apr 2022 13:47:45 GMT
 ENV JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -server -Xms512m -Xmx2024m -XX:NewSize=512m -XX:MaxNewSize=1024m -XX:+UseConcMarkSweepGC
-# Fri, 01 Apr 2022 22:08:31 GMT
+# Thu, 21 Apr 2022 13:49:30 GMT
 ENV GN_VERSION=3.12.3
-# Fri, 01 Apr 2022 22:08:31 GMT
+# Thu, 21 Apr 2022 13:49:30 GMT
 ENV GN_DOWNLOAD_MD5=ecbbff832c8a6edf22e06aa1870dddab
-# Fri, 01 Apr 2022 22:08:32 GMT
+# Thu, 21 Apr 2022 13:49:31 GMT
 WORKDIR /usr/local/tomcat/webapps
-# Fri, 01 Apr 2022 22:08:47 GMT
+# Thu, 21 Apr 2022 13:50:23 GMT
 RUN curl -fSL -o $GN_FILE      https://sourceforge.net/projects/geonetwork/files/GeoNetwork_opensource/v${GN_VERSION}/${GN_FILE}/download &&      echo "${GN_DOWNLOAD_MD5} *${GN_FILE}" | md5sum -c &&      mkdir -p geonetwork &&      unzip -e $GN_FILE -d geonetwork &&      rm $GN_FILE
-# Fri, 01 Apr 2022 22:08:48 GMT
+# Thu, 21 Apr 2022 13:50:24 GMT
 COPY file:0804862fd42c05f06dfa65cb1e5dad9a956d8ac6a3ddd4d962847ba159f5cfe6 in /entrypoint.sh 
-# Fri, 01 Apr 2022 22:08:49 GMT
+# Thu, 21 Apr 2022 13:50:25 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 01 Apr 2022 22:08:49 GMT
+# Thu, 21 Apr 2022 13:50:26 GMT
 CMD ["catalina.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:fa223d8c149d7beec8e997e1415ee4961473cafaf88a932f70baf3da56f2c564`  
-		Last Modified: Tue, 29 Mar 2022 00:49:33 GMT  
-		Size: 53.6 MB (53633710 bytes)  
+	-	`sha256:83d5dcfea08e6927083bc886bf182fc39d87bb04b54b63002ac0c4c0b9aab682`  
+		Last Modified: Wed, 20 Apr 2022 04:35:19 GMT  
+		Size: 53.6 MB (53633096 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:17ffbd2ab15985c19f9e1e3199cdce06090266d20d11dbd3d55fba45de2fcc27`  
-		Last Modified: Wed, 30 Mar 2022 02:24:13 GMT  
-		Size: 4.9 MB (4938638 bytes)  
+	-	`sha256:45cfa86b7b1aca6d694057e4d42ee1440527f41c00b9e577df729244380c9eba`  
+		Last Modified: Wed, 20 Apr 2022 06:54:10 GMT  
+		Size: 4.9 MB (4938663 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3953e76cee2ab175d909ccec1a3399912a690ad621ae88cff787d98419b97bb`  
-		Last Modified: Wed, 30 Mar 2022 02:24:14 GMT  
-		Size: 10.7 MB (10656993 bytes)  
+	-	`sha256:5c79b19335f27cc78840bf9159e875322f3252ac06113c73756f9d4fba905f9b`  
+		Last Modified: Wed, 20 Apr 2022 06:54:10 GMT  
+		Size: 10.7 MB (10656971 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f906570592fdd65a2fcfae6164990d0422e03ccadba25c5b1d1268a29f7c530`  
-		Last Modified: Wed, 30 Mar 2022 02:24:36 GMT  
-		Size: 54.7 MB (54671703 bytes)  
+	-	`sha256:350ecaf08eac09037b05465ab97a1b8f7bc9b7a9b1fcef900dedd7dba9bbcf4d`  
+		Last Modified: Wed, 20 Apr 2022 06:54:32 GMT  
+		Size: 54.7 MB (54672934 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cb0dde9809fd5f6e3d3e4fc107af8e143572e8701eace9892a8bab6f572fec84`  
-		Last Modified: Wed, 30 Mar 2022 09:29:35 GMT  
-		Size: 5.4 MB (5420457 bytes)  
+	-	`sha256:407c0a935588e2739ecb408509326d6d25e59a373d13cbab359a43902f17dc33`  
+		Last Modified: Wed, 20 Apr 2022 10:54:38 GMT  
+		Size: 5.4 MB (5420689 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:805b6d6d0eb2fd9fa975957708b76f89cf5fdf51a3374507410ccde1da279d1f`  
-		Last Modified: Wed, 30 Mar 2022 09:33:30 GMT  
-		Size: 211.0 B  
+	-	`sha256:0d3971bf6f6e2464a1d2bd8645f5667de6af7962283cdf8d4925ba8e2204e744`  
+		Last Modified: Wed, 20 Apr 2022 11:00:13 GMT  
+		Size: 209.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6c24bbeba3624fc1dd635cf4cd7fc8a11956944e9d3ec5b0608292e644730e94`  
-		Last Modified: Wed, 30 Mar 2022 09:33:39 GMT  
-		Size: 105.1 MB (105086335 bytes)  
+	-	`sha256:ff56446fd45724f062d831fd8b00f60e76ad0a54c14ecb7f17bd4f9ac70db51d`  
+		Last Modified: Wed, 20 Apr 2022 11:00:23 GMT  
+		Size: 105.1 MB (105086376 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:026ba8534b219d948da368ebe9ad038e75b2f67114856d6e9e3cad5aca7e193a`  
-		Last Modified: Wed, 30 Mar 2022 13:15:57 GMT  
-		Size: 137.0 B  
+	-	`sha256:f32bf0ed92b8797af023c9bfdc1fb2b5538be8ac562c47fd681d4eee6d6e666f`  
+		Last Modified: Thu, 21 Apr 2022 08:48:58 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d99cde55ef53bac9332c954b51bf91fc58d9a27a513dde213ba6f87eee813547`  
-		Last Modified: Fri, 01 Apr 2022 21:18:16 GMT  
-		Size: 11.3 MB (11288064 bytes)  
+	-	`sha256:83db1b2c5f6aa232ab744fb260c6b8ba1ce59da6827c17c43f5c485f3363172e`  
+		Last Modified: Thu, 21 Apr 2022 09:06:28 GMT  
+		Size: 11.3 MB (11288032 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e22616a0d144b186442eaa48d4fd44fc5430dd82e58ab286130e1b2f78ef2b4c`  
-		Last Modified: Fri, 01 Apr 2022 22:09:56 GMT  
-		Size: 227.3 MB (227270855 bytes)  
+	-	`sha256:3039ecca67342c1e4fb193bd77ffd776fc6c9eb5df876ea772a24ed0fee2f796`  
+		Last Modified: Thu, 21 Apr 2022 13:53:07 GMT  
+		Size: 227.3 MB (227270805 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2d1e1ced46bcba7c969634723d45a4612f0621f6eb2bdae9849ef97434c7db94`  
-		Last Modified: Fri, 01 Apr 2022 22:09:39 GMT  
-		Size: 249.0 B  
+	-	`sha256:0bbca03137c6058ab703cebb62999322411d6f4083b393b905d9db7b6c67c8c2`  
+		Last Modified: Thu, 21 Apr 2022 13:52:51 GMT  
+		Size: 248.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `geonetwork:3.12-postgres`
 
 ```console
-$ docker pull geonetwork@sha256:4d1edb7cf866d8eb617871b046f489d5f1df6aa0b8f5cc56a419b8b01510445b
+$ docker pull geonetwork@sha256:474aede19ab9a16551b7bf12ad554fae0c68240d8b53e2c6db110fbaec91f8e9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2393,170 +2393,170 @@ CMD ["catalina.sh" "run"]
 ### `geonetwork:3.12-postgres` - linux; arm64 variant v8
 
 ```console
-$ docker pull geonetwork@sha256:33b3cb33fcdcd15002c38c4e1cedab6bb472a11503c1f21a7aa0027d10d86671
+$ docker pull geonetwork@sha256:0fedf172d0285b2da8630669e74d438d2c9c2f73c85872328d9585e142a1b9b3
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **476.2 MB (476232008 bytes)**  
+-	Total Size: **476.2 MB (476232764 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d1c97e60997cc76ec7d6355a2fa52ca54177652a74bd0049d79df6a962f29561`
+-	Image ID: `sha256:d8883d598fbe5f66c16849edf3e4d2867f91973065dad568a15759789e9f4fd8`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
-# Tue, 29 Mar 2022 00:43:01 GMT
-ADD file:5e8f8c10da6d37a727fb5e1ed13b3dd78769f0ca7e91f0c3510e2edd25177117 in / 
-# Tue, 29 Mar 2022 00:43:03 GMT
+# Wed, 20 Apr 2022 04:28:55 GMT
+ADD file:ece192802cbdaf1a141d04f0c2e90cfd3479e5e3e82c6a00206970684494cf48 in / 
+# Wed, 20 Apr 2022 04:28:56 GMT
 CMD ["bash"]
-# Wed, 30 Mar 2022 02:13:10 GMT
+# Wed, 20 Apr 2022 06:44:07 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 30 Mar 2022 02:13:17 GMT
+# Wed, 20 Apr 2022 06:44:12 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 30 Mar 2022 02:13:41 GMT
+# Wed, 20 Apr 2022 06:44:33 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 30 Mar 2022 09:05:31 GMT
+# Wed, 20 Apr 2022 10:30:27 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				fontconfig libfreetype6 				ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 30 Mar 2022 09:09:00 GMT
+# Wed, 20 Apr 2022 10:34:55 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Wed, 30 Mar 2022 09:09:01 GMT
+# Wed, 20 Apr 2022 10:34:56 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
-# Wed, 30 Mar 2022 09:09:01 GMT
+# Wed, 20 Apr 2022 10:34:57 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 30 Mar 2022 09:09:02 GMT
+# Wed, 20 Apr 2022 10:34:58 GMT
 ENV LANG=C.UTF-8
-# Wed, 30 Mar 2022 09:09:03 GMT
+# Wed, 20 Apr 2022 10:34:59 GMT
 ENV JAVA_VERSION=8u322
-# Wed, 30 Mar 2022 09:09:10 GMT
+# Wed, 20 Apr 2022 10:35:10 GMT
 RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u322-b06/OpenJDK8U-jdk_x64_linux_8u322b06.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u322-b06/OpenJDK8U-jdk_aarch64_linux_8u322b06.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/jre/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		javac -version; 	java -version
-# Wed, 30 Mar 2022 12:15:45 GMT
+# Thu, 21 Apr 2022 06:11:09 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Wed, 30 Mar 2022 12:15:45 GMT
+# Thu, 21 Apr 2022 06:11:10 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 30 Mar 2022 12:15:47 GMT
+# Thu, 21 Apr 2022 06:11:11 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Wed, 30 Mar 2022 12:15:47 GMT
+# Thu, 21 Apr 2022 06:11:12 GMT
 WORKDIR /usr/local/tomcat
-# Wed, 30 Mar 2022 12:15:48 GMT
+# Thu, 21 Apr 2022 06:11:13 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Wed, 30 Mar 2022 12:15:49 GMT
+# Thu, 21 Apr 2022 06:11:14 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Wed, 30 Mar 2022 12:40:06 GMT
+# Thu, 21 Apr 2022 06:35:11 GMT
 ENV GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 5C3C5F3E314C866292F359A8F3AD5C94A67F707E 765908099ACF92702C7D949BFA0C35EA8AA299F1 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23
-# Wed, 30 Mar 2022 12:40:06 GMT
+# Thu, 21 Apr 2022 06:35:12 GMT
 ENV TOMCAT_MAJOR=8
-# Fri, 01 Apr 2022 20:15:40 GMT
+# Thu, 21 Apr 2022 06:35:13 GMT
 ENV TOMCAT_VERSION=8.5.78
-# Fri, 01 Apr 2022 20:15:41 GMT
+# Thu, 21 Apr 2022 06:35:14 GMT
 ENV TOMCAT_SHA512=b50213e64cc1fd3da2847deda1ca13bee4c26663093c11d53c5ecfe4cdec8856e743b4a1d8488e0c0cbe9bf149e755df40a4140f3b155e2195e3bc6335de3512
-# Fri, 01 Apr 2022 20:16:06 GMT
+# Thu, 21 Apr 2022 06:35:39 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		dirmngr 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work; 		catalina.sh version
-# Fri, 01 Apr 2022 20:16:07 GMT
+# Thu, 21 Apr 2022 06:35:41 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Fri, 01 Apr 2022 20:16:08 GMT
+# Thu, 21 Apr 2022 06:35:42 GMT
 EXPOSE 8080
-# Fri, 01 Apr 2022 20:16:09 GMT
+# Thu, 21 Apr 2022 06:35:43 GMT
 CMD ["catalina.sh" "run"]
-# Fri, 01 Apr 2022 22:07:38 GMT
+# Thu, 21 Apr 2022 13:47:44 GMT
 ENV GN_FILE=geonetwork.war
-# Fri, 01 Apr 2022 22:07:38 GMT
+# Thu, 21 Apr 2022 13:47:44 GMT
 ENV DATA_DIR=/usr/local/tomcat/webapps/geonetwork/WEB-INF/data
-# Fri, 01 Apr 2022 22:07:39 GMT
+# Thu, 21 Apr 2022 13:47:45 GMT
 ENV JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -server -Xms512m -Xmx2024m -XX:NewSize=512m -XX:MaxNewSize=1024m -XX:+UseConcMarkSweepGC
-# Fri, 01 Apr 2022 22:08:31 GMT
+# Thu, 21 Apr 2022 13:49:30 GMT
 ENV GN_VERSION=3.12.3
-# Fri, 01 Apr 2022 22:08:31 GMT
+# Thu, 21 Apr 2022 13:49:30 GMT
 ENV GN_DOWNLOAD_MD5=ecbbff832c8a6edf22e06aa1870dddab
-# Fri, 01 Apr 2022 22:08:32 GMT
+# Thu, 21 Apr 2022 13:49:31 GMT
 WORKDIR /usr/local/tomcat/webapps
-# Fri, 01 Apr 2022 22:08:47 GMT
+# Thu, 21 Apr 2022 13:50:23 GMT
 RUN curl -fSL -o $GN_FILE      https://sourceforge.net/projects/geonetwork/files/GeoNetwork_opensource/v${GN_VERSION}/${GN_FILE}/download &&      echo "${GN_DOWNLOAD_MD5} *${GN_FILE}" | md5sum -c &&      mkdir -p geonetwork &&      unzip -e $GN_FILE -d geonetwork &&      rm $GN_FILE
-# Fri, 01 Apr 2022 22:08:48 GMT
+# Thu, 21 Apr 2022 13:50:24 GMT
 COPY file:0804862fd42c05f06dfa65cb1e5dad9a956d8ac6a3ddd4d962847ba159f5cfe6 in /entrypoint.sh 
-# Fri, 01 Apr 2022 22:08:49 GMT
+# Thu, 21 Apr 2022 13:50:25 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 01 Apr 2022 22:08:49 GMT
+# Thu, 21 Apr 2022 13:50:26 GMT
 CMD ["catalina.sh" "run"]
-# Fri, 01 Apr 2022 22:09:01 GMT
+# Thu, 21 Apr 2022 13:50:36 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends postgresql-client &&     rm -rf /var/lib/apt/lists/*
-# Fri, 01 Apr 2022 22:09:03 GMT
+# Thu, 21 Apr 2022 13:50:38 GMT
 RUN sed -i -e 's#<import resource="../config-db/${geonetwork.db.type:h2}.xml"/>#<!--<import resource="../config-db/${geonetwork.db.type:h2}.xml"/-->#g' "${CATALINA_HOME}/webapps/geonetwork/WEB-INF/config-node/srv.xml" && sed -i -e 's#<!--<import resource="../config-db/postgres.xml"/>-->#<import resource="../config-db/postgres.xml"/>#g' "${CATALINA_HOME}/webapps/geonetwork/WEB-INF/config-node/srv.xml"
-# Fri, 01 Apr 2022 22:09:04 GMT
+# Thu, 21 Apr 2022 13:50:39 GMT
 COPY file:83f69d2041e5fb378033b0db57e096c81ba0725102ab4da4f089685e748fcce3 in /usr/local/tomcat/webapps/geonetwork/WEB-INF/config-db/jdbc.properties 
-# Fri, 01 Apr 2022 22:09:05 GMT
+# Thu, 21 Apr 2022 13:50:40 GMT
 COPY file:c88411abba7ad9b7bb75019f08755dbfa163d2fc7fdd80676bf9350c4c56a19c in /entrypoint.sh 
-# Fri, 01 Apr 2022 22:09:05 GMT
+# Thu, 21 Apr 2022 13:50:40 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 01 Apr 2022 22:09:06 GMT
+# Thu, 21 Apr 2022 13:50:41 GMT
 CMD ["catalina.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:fa223d8c149d7beec8e997e1415ee4961473cafaf88a932f70baf3da56f2c564`  
-		Last Modified: Tue, 29 Mar 2022 00:49:33 GMT  
-		Size: 53.6 MB (53633710 bytes)  
+	-	`sha256:83d5dcfea08e6927083bc886bf182fc39d87bb04b54b63002ac0c4c0b9aab682`  
+		Last Modified: Wed, 20 Apr 2022 04:35:19 GMT  
+		Size: 53.6 MB (53633096 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:17ffbd2ab15985c19f9e1e3199cdce06090266d20d11dbd3d55fba45de2fcc27`  
-		Last Modified: Wed, 30 Mar 2022 02:24:13 GMT  
-		Size: 4.9 MB (4938638 bytes)  
+	-	`sha256:45cfa86b7b1aca6d694057e4d42ee1440527f41c00b9e577df729244380c9eba`  
+		Last Modified: Wed, 20 Apr 2022 06:54:10 GMT  
+		Size: 4.9 MB (4938663 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3953e76cee2ab175d909ccec1a3399912a690ad621ae88cff787d98419b97bb`  
-		Last Modified: Wed, 30 Mar 2022 02:24:14 GMT  
-		Size: 10.7 MB (10656993 bytes)  
+	-	`sha256:5c79b19335f27cc78840bf9159e875322f3252ac06113c73756f9d4fba905f9b`  
+		Last Modified: Wed, 20 Apr 2022 06:54:10 GMT  
+		Size: 10.7 MB (10656971 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f906570592fdd65a2fcfae6164990d0422e03ccadba25c5b1d1268a29f7c530`  
-		Last Modified: Wed, 30 Mar 2022 02:24:36 GMT  
-		Size: 54.7 MB (54671703 bytes)  
+	-	`sha256:350ecaf08eac09037b05465ab97a1b8f7bc9b7a9b1fcef900dedd7dba9bbcf4d`  
+		Last Modified: Wed, 20 Apr 2022 06:54:32 GMT  
+		Size: 54.7 MB (54672934 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cb0dde9809fd5f6e3d3e4fc107af8e143572e8701eace9892a8bab6f572fec84`  
-		Last Modified: Wed, 30 Mar 2022 09:29:35 GMT  
-		Size: 5.4 MB (5420457 bytes)  
+	-	`sha256:407c0a935588e2739ecb408509326d6d25e59a373d13cbab359a43902f17dc33`  
+		Last Modified: Wed, 20 Apr 2022 10:54:38 GMT  
+		Size: 5.4 MB (5420689 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:805b6d6d0eb2fd9fa975957708b76f89cf5fdf51a3374507410ccde1da279d1f`  
-		Last Modified: Wed, 30 Mar 2022 09:33:30 GMT  
-		Size: 211.0 B  
+	-	`sha256:0d3971bf6f6e2464a1d2bd8645f5667de6af7962283cdf8d4925ba8e2204e744`  
+		Last Modified: Wed, 20 Apr 2022 11:00:13 GMT  
+		Size: 209.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6c24bbeba3624fc1dd635cf4cd7fc8a11956944e9d3ec5b0608292e644730e94`  
-		Last Modified: Wed, 30 Mar 2022 09:33:39 GMT  
-		Size: 105.1 MB (105086335 bytes)  
+	-	`sha256:ff56446fd45724f062d831fd8b00f60e76ad0a54c14ecb7f17bd4f9ac70db51d`  
+		Last Modified: Wed, 20 Apr 2022 11:00:23 GMT  
+		Size: 105.1 MB (105086376 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:026ba8534b219d948da368ebe9ad038e75b2f67114856d6e9e3cad5aca7e193a`  
-		Last Modified: Wed, 30 Mar 2022 13:15:57 GMT  
-		Size: 137.0 B  
+	-	`sha256:f32bf0ed92b8797af023c9bfdc1fb2b5538be8ac562c47fd681d4eee6d6e666f`  
+		Last Modified: Thu, 21 Apr 2022 08:48:58 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d99cde55ef53bac9332c954b51bf91fc58d9a27a513dde213ba6f87eee813547`  
-		Last Modified: Fri, 01 Apr 2022 21:18:16 GMT  
-		Size: 11.3 MB (11288064 bytes)  
+	-	`sha256:83db1b2c5f6aa232ab744fb260c6b8ba1ce59da6827c17c43f5c485f3363172e`  
+		Last Modified: Thu, 21 Apr 2022 09:06:28 GMT  
+		Size: 11.3 MB (11288032 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e22616a0d144b186442eaa48d4fd44fc5430dd82e58ab286130e1b2f78ef2b4c`  
-		Last Modified: Fri, 01 Apr 2022 22:09:56 GMT  
-		Size: 227.3 MB (227270855 bytes)  
+	-	`sha256:3039ecca67342c1e4fb193bd77ffd776fc6c9eb5df876ea772a24ed0fee2f796`  
+		Last Modified: Thu, 21 Apr 2022 13:53:07 GMT  
+		Size: 227.3 MB (227270805 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2d1e1ced46bcba7c969634723d45a4612f0621f6eb2bdae9849ef97434c7db94`  
-		Last Modified: Fri, 01 Apr 2022 22:09:39 GMT  
-		Size: 249.0 B  
+	-	`sha256:0bbca03137c6058ab703cebb62999322411d6f4083b393b905d9db7b6c67c8c2`  
+		Last Modified: Thu, 21 Apr 2022 13:52:51 GMT  
+		Size: 248.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:100953a3dba541a589005c2d20a110aefde79bc72c11607a5d607cb10c3d75ab`  
-		Last Modified: Fri, 01 Apr 2022 22:10:11 GMT  
-		Size: 3.3 MB (3261285 bytes)  
+	-	`sha256:3f8bf9ca5b4608e1aa4d1ffdcc47d66d3611da4282c9a1b887e11cb49a31d94b`  
+		Last Modified: Thu, 21 Apr 2022 13:53:23 GMT  
+		Size: 3.3 MB (3261235 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2ad15b02dcc293914eb0d461c27d21f7a3e71ad073ac845e29846cc97ef9802c`  
-		Last Modified: Fri, 01 Apr 2022 22:10:11 GMT  
-		Size: 1.3 KB (1270 bytes)  
+	-	`sha256:c0c3f233f7d92a22b66ce5493c31ab12023d7695c1f225f037d217e1a3691415`  
+		Last Modified: Thu, 21 Apr 2022 13:53:22 GMT  
+		Size: 1.3 KB (1268 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:58fe6e8e21e8ad6840766f5bc1b6d041ffe0b7bdd27197e1137f2d6975e0be8d`  
-		Last Modified: Fri, 01 Apr 2022 22:10:11 GMT  
-		Size: 1.1 KB (1128 bytes)  
+	-	`sha256:85ba545d18f32be670d53ae6edb6c782e3bf9c6e8f3614a98794547254ebd30c`  
+		Last Modified: Thu, 21 Apr 2022 13:53:22 GMT  
+		Size: 1.1 KB (1125 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eeefedcbc67f604ce5578bfb7d8f94e3a9f48dd7e50204d52a35f8af7608033f`  
-		Last Modified: Fri, 01 Apr 2022 22:10:10 GMT  
-		Size: 973.0 B  
+	-	`sha256:3fdbdf6d50b0f03ce955fc2d16b03633764f478c51afeb5629102fbf20acf267`  
+		Last Modified: Thu, 21 Apr 2022 13:53:22 GMT  
+		Size: 974.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `geonetwork:3.12.3`
 
 ```console
-$ docker pull geonetwork@sha256:4b23b5a37e1eae9fb37ae93352eb818ebfb4bb232f18d638dfa1a910d7b2f771
+$ docker pull geonetwork@sha256:c1c3988101b1636db68361b6631decdea803e72ae6055bf3d5172b99991f0f39
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2706,142 +2706,142 @@ CMD ["catalina.sh" "run"]
 ### `geonetwork:3.12.3` - linux; arm64 variant v8
 
 ```console
-$ docker pull geonetwork@sha256:a193bb4e3b9ddaaf78dadd4468019b9f7959b5fe29321cb664f96a1e7639d94c
+$ docker pull geonetwork@sha256:b5174145d8e6624f72a96046b3f78a582d831f0ef05a966ad2b9d96a55f2ce66
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **473.0 MB (472967352 bytes)**  
+-	Total Size: **473.0 MB (472968162 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3607cd6a2eb2f66d536731be1139a3f266096434211faf011007521519367c63`
+-	Image ID: `sha256:9533939a6d1fe469e331583df9397b37e2541de561d6a695b46b42917ac71560`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
-# Tue, 29 Mar 2022 00:43:01 GMT
-ADD file:5e8f8c10da6d37a727fb5e1ed13b3dd78769f0ca7e91f0c3510e2edd25177117 in / 
-# Tue, 29 Mar 2022 00:43:03 GMT
+# Wed, 20 Apr 2022 04:28:55 GMT
+ADD file:ece192802cbdaf1a141d04f0c2e90cfd3479e5e3e82c6a00206970684494cf48 in / 
+# Wed, 20 Apr 2022 04:28:56 GMT
 CMD ["bash"]
-# Wed, 30 Mar 2022 02:13:10 GMT
+# Wed, 20 Apr 2022 06:44:07 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 30 Mar 2022 02:13:17 GMT
+# Wed, 20 Apr 2022 06:44:12 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 30 Mar 2022 02:13:41 GMT
+# Wed, 20 Apr 2022 06:44:33 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 30 Mar 2022 09:05:31 GMT
+# Wed, 20 Apr 2022 10:30:27 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				fontconfig libfreetype6 				ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 30 Mar 2022 09:09:00 GMT
+# Wed, 20 Apr 2022 10:34:55 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Wed, 30 Mar 2022 09:09:01 GMT
+# Wed, 20 Apr 2022 10:34:56 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
-# Wed, 30 Mar 2022 09:09:01 GMT
+# Wed, 20 Apr 2022 10:34:57 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 30 Mar 2022 09:09:02 GMT
+# Wed, 20 Apr 2022 10:34:58 GMT
 ENV LANG=C.UTF-8
-# Wed, 30 Mar 2022 09:09:03 GMT
+# Wed, 20 Apr 2022 10:34:59 GMT
 ENV JAVA_VERSION=8u322
-# Wed, 30 Mar 2022 09:09:10 GMT
+# Wed, 20 Apr 2022 10:35:10 GMT
 RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u322-b06/OpenJDK8U-jdk_x64_linux_8u322b06.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u322-b06/OpenJDK8U-jdk_aarch64_linux_8u322b06.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/jre/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		javac -version; 	java -version
-# Wed, 30 Mar 2022 12:15:45 GMT
+# Thu, 21 Apr 2022 06:11:09 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Wed, 30 Mar 2022 12:15:45 GMT
+# Thu, 21 Apr 2022 06:11:10 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 30 Mar 2022 12:15:47 GMT
+# Thu, 21 Apr 2022 06:11:11 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Wed, 30 Mar 2022 12:15:47 GMT
+# Thu, 21 Apr 2022 06:11:12 GMT
 WORKDIR /usr/local/tomcat
-# Wed, 30 Mar 2022 12:15:48 GMT
+# Thu, 21 Apr 2022 06:11:13 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Wed, 30 Mar 2022 12:15:49 GMT
+# Thu, 21 Apr 2022 06:11:14 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Wed, 30 Mar 2022 12:40:06 GMT
+# Thu, 21 Apr 2022 06:35:11 GMT
 ENV GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 5C3C5F3E314C866292F359A8F3AD5C94A67F707E 765908099ACF92702C7D949BFA0C35EA8AA299F1 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23
-# Wed, 30 Mar 2022 12:40:06 GMT
+# Thu, 21 Apr 2022 06:35:12 GMT
 ENV TOMCAT_MAJOR=8
-# Fri, 01 Apr 2022 20:15:40 GMT
+# Thu, 21 Apr 2022 06:35:13 GMT
 ENV TOMCAT_VERSION=8.5.78
-# Fri, 01 Apr 2022 20:15:41 GMT
+# Thu, 21 Apr 2022 06:35:14 GMT
 ENV TOMCAT_SHA512=b50213e64cc1fd3da2847deda1ca13bee4c26663093c11d53c5ecfe4cdec8856e743b4a1d8488e0c0cbe9bf149e755df40a4140f3b155e2195e3bc6335de3512
-# Fri, 01 Apr 2022 20:16:06 GMT
+# Thu, 21 Apr 2022 06:35:39 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		dirmngr 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work; 		catalina.sh version
-# Fri, 01 Apr 2022 20:16:07 GMT
+# Thu, 21 Apr 2022 06:35:41 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Fri, 01 Apr 2022 20:16:08 GMT
+# Thu, 21 Apr 2022 06:35:42 GMT
 EXPOSE 8080
-# Fri, 01 Apr 2022 20:16:09 GMT
+# Thu, 21 Apr 2022 06:35:43 GMT
 CMD ["catalina.sh" "run"]
-# Fri, 01 Apr 2022 22:07:38 GMT
+# Thu, 21 Apr 2022 13:47:44 GMT
 ENV GN_FILE=geonetwork.war
-# Fri, 01 Apr 2022 22:07:38 GMT
+# Thu, 21 Apr 2022 13:47:44 GMT
 ENV DATA_DIR=/usr/local/tomcat/webapps/geonetwork/WEB-INF/data
-# Fri, 01 Apr 2022 22:07:39 GMT
+# Thu, 21 Apr 2022 13:47:45 GMT
 ENV JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -server -Xms512m -Xmx2024m -XX:NewSize=512m -XX:MaxNewSize=1024m -XX:+UseConcMarkSweepGC
-# Fri, 01 Apr 2022 22:08:31 GMT
+# Thu, 21 Apr 2022 13:49:30 GMT
 ENV GN_VERSION=3.12.3
-# Fri, 01 Apr 2022 22:08:31 GMT
+# Thu, 21 Apr 2022 13:49:30 GMT
 ENV GN_DOWNLOAD_MD5=ecbbff832c8a6edf22e06aa1870dddab
-# Fri, 01 Apr 2022 22:08:32 GMT
+# Thu, 21 Apr 2022 13:49:31 GMT
 WORKDIR /usr/local/tomcat/webapps
-# Fri, 01 Apr 2022 22:08:47 GMT
+# Thu, 21 Apr 2022 13:50:23 GMT
 RUN curl -fSL -o $GN_FILE      https://sourceforge.net/projects/geonetwork/files/GeoNetwork_opensource/v${GN_VERSION}/${GN_FILE}/download &&      echo "${GN_DOWNLOAD_MD5} *${GN_FILE}" | md5sum -c &&      mkdir -p geonetwork &&      unzip -e $GN_FILE -d geonetwork &&      rm $GN_FILE
-# Fri, 01 Apr 2022 22:08:48 GMT
+# Thu, 21 Apr 2022 13:50:24 GMT
 COPY file:0804862fd42c05f06dfa65cb1e5dad9a956d8ac6a3ddd4d962847ba159f5cfe6 in /entrypoint.sh 
-# Fri, 01 Apr 2022 22:08:49 GMT
+# Thu, 21 Apr 2022 13:50:25 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 01 Apr 2022 22:08:49 GMT
+# Thu, 21 Apr 2022 13:50:26 GMT
 CMD ["catalina.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:fa223d8c149d7beec8e997e1415ee4961473cafaf88a932f70baf3da56f2c564`  
-		Last Modified: Tue, 29 Mar 2022 00:49:33 GMT  
-		Size: 53.6 MB (53633710 bytes)  
+	-	`sha256:83d5dcfea08e6927083bc886bf182fc39d87bb04b54b63002ac0c4c0b9aab682`  
+		Last Modified: Wed, 20 Apr 2022 04:35:19 GMT  
+		Size: 53.6 MB (53633096 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:17ffbd2ab15985c19f9e1e3199cdce06090266d20d11dbd3d55fba45de2fcc27`  
-		Last Modified: Wed, 30 Mar 2022 02:24:13 GMT  
-		Size: 4.9 MB (4938638 bytes)  
+	-	`sha256:45cfa86b7b1aca6d694057e4d42ee1440527f41c00b9e577df729244380c9eba`  
+		Last Modified: Wed, 20 Apr 2022 06:54:10 GMT  
+		Size: 4.9 MB (4938663 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3953e76cee2ab175d909ccec1a3399912a690ad621ae88cff787d98419b97bb`  
-		Last Modified: Wed, 30 Mar 2022 02:24:14 GMT  
-		Size: 10.7 MB (10656993 bytes)  
+	-	`sha256:5c79b19335f27cc78840bf9159e875322f3252ac06113c73756f9d4fba905f9b`  
+		Last Modified: Wed, 20 Apr 2022 06:54:10 GMT  
+		Size: 10.7 MB (10656971 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f906570592fdd65a2fcfae6164990d0422e03ccadba25c5b1d1268a29f7c530`  
-		Last Modified: Wed, 30 Mar 2022 02:24:36 GMT  
-		Size: 54.7 MB (54671703 bytes)  
+	-	`sha256:350ecaf08eac09037b05465ab97a1b8f7bc9b7a9b1fcef900dedd7dba9bbcf4d`  
+		Last Modified: Wed, 20 Apr 2022 06:54:32 GMT  
+		Size: 54.7 MB (54672934 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cb0dde9809fd5f6e3d3e4fc107af8e143572e8701eace9892a8bab6f572fec84`  
-		Last Modified: Wed, 30 Mar 2022 09:29:35 GMT  
-		Size: 5.4 MB (5420457 bytes)  
+	-	`sha256:407c0a935588e2739ecb408509326d6d25e59a373d13cbab359a43902f17dc33`  
+		Last Modified: Wed, 20 Apr 2022 10:54:38 GMT  
+		Size: 5.4 MB (5420689 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:805b6d6d0eb2fd9fa975957708b76f89cf5fdf51a3374507410ccde1da279d1f`  
-		Last Modified: Wed, 30 Mar 2022 09:33:30 GMT  
-		Size: 211.0 B  
+	-	`sha256:0d3971bf6f6e2464a1d2bd8645f5667de6af7962283cdf8d4925ba8e2204e744`  
+		Last Modified: Wed, 20 Apr 2022 11:00:13 GMT  
+		Size: 209.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6c24bbeba3624fc1dd635cf4cd7fc8a11956944e9d3ec5b0608292e644730e94`  
-		Last Modified: Wed, 30 Mar 2022 09:33:39 GMT  
-		Size: 105.1 MB (105086335 bytes)  
+	-	`sha256:ff56446fd45724f062d831fd8b00f60e76ad0a54c14ecb7f17bd4f9ac70db51d`  
+		Last Modified: Wed, 20 Apr 2022 11:00:23 GMT  
+		Size: 105.1 MB (105086376 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:026ba8534b219d948da368ebe9ad038e75b2f67114856d6e9e3cad5aca7e193a`  
-		Last Modified: Wed, 30 Mar 2022 13:15:57 GMT  
-		Size: 137.0 B  
+	-	`sha256:f32bf0ed92b8797af023c9bfdc1fb2b5538be8ac562c47fd681d4eee6d6e666f`  
+		Last Modified: Thu, 21 Apr 2022 08:48:58 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d99cde55ef53bac9332c954b51bf91fc58d9a27a513dde213ba6f87eee813547`  
-		Last Modified: Fri, 01 Apr 2022 21:18:16 GMT  
-		Size: 11.3 MB (11288064 bytes)  
+	-	`sha256:83db1b2c5f6aa232ab744fb260c6b8ba1ce59da6827c17c43f5c485f3363172e`  
+		Last Modified: Thu, 21 Apr 2022 09:06:28 GMT  
+		Size: 11.3 MB (11288032 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e22616a0d144b186442eaa48d4fd44fc5430dd82e58ab286130e1b2f78ef2b4c`  
-		Last Modified: Fri, 01 Apr 2022 22:09:56 GMT  
-		Size: 227.3 MB (227270855 bytes)  
+	-	`sha256:3039ecca67342c1e4fb193bd77ffd776fc6c9eb5df876ea772a24ed0fee2f796`  
+		Last Modified: Thu, 21 Apr 2022 13:53:07 GMT  
+		Size: 227.3 MB (227270805 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2d1e1ced46bcba7c969634723d45a4612f0621f6eb2bdae9849ef97434c7db94`  
-		Last Modified: Fri, 01 Apr 2022 22:09:39 GMT  
-		Size: 249.0 B  
+	-	`sha256:0bbca03137c6058ab703cebb62999322411d6f4083b393b905d9db7b6c67c8c2`  
+		Last Modified: Thu, 21 Apr 2022 13:52:51 GMT  
+		Size: 248.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `geonetwork:3.12.3-postgres`
 
 ```console
-$ docker pull geonetwork@sha256:4d1edb7cf866d8eb617871b046f489d5f1df6aa0b8f5cc56a419b8b01510445b
+$ docker pull geonetwork@sha256:474aede19ab9a16551b7bf12ad554fae0c68240d8b53e2c6db110fbaec91f8e9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3019,170 +3019,170 @@ CMD ["catalina.sh" "run"]
 ### `geonetwork:3.12.3-postgres` - linux; arm64 variant v8
 
 ```console
-$ docker pull geonetwork@sha256:33b3cb33fcdcd15002c38c4e1cedab6bb472a11503c1f21a7aa0027d10d86671
+$ docker pull geonetwork@sha256:0fedf172d0285b2da8630669e74d438d2c9c2f73c85872328d9585e142a1b9b3
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **476.2 MB (476232008 bytes)**  
+-	Total Size: **476.2 MB (476232764 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d1c97e60997cc76ec7d6355a2fa52ca54177652a74bd0049d79df6a962f29561`
+-	Image ID: `sha256:d8883d598fbe5f66c16849edf3e4d2867f91973065dad568a15759789e9f4fd8`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
-# Tue, 29 Mar 2022 00:43:01 GMT
-ADD file:5e8f8c10da6d37a727fb5e1ed13b3dd78769f0ca7e91f0c3510e2edd25177117 in / 
-# Tue, 29 Mar 2022 00:43:03 GMT
+# Wed, 20 Apr 2022 04:28:55 GMT
+ADD file:ece192802cbdaf1a141d04f0c2e90cfd3479e5e3e82c6a00206970684494cf48 in / 
+# Wed, 20 Apr 2022 04:28:56 GMT
 CMD ["bash"]
-# Wed, 30 Mar 2022 02:13:10 GMT
+# Wed, 20 Apr 2022 06:44:07 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 30 Mar 2022 02:13:17 GMT
+# Wed, 20 Apr 2022 06:44:12 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 30 Mar 2022 02:13:41 GMT
+# Wed, 20 Apr 2022 06:44:33 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 30 Mar 2022 09:05:31 GMT
+# Wed, 20 Apr 2022 10:30:27 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				fontconfig libfreetype6 				ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 30 Mar 2022 09:09:00 GMT
+# Wed, 20 Apr 2022 10:34:55 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Wed, 30 Mar 2022 09:09:01 GMT
+# Wed, 20 Apr 2022 10:34:56 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
-# Wed, 30 Mar 2022 09:09:01 GMT
+# Wed, 20 Apr 2022 10:34:57 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 30 Mar 2022 09:09:02 GMT
+# Wed, 20 Apr 2022 10:34:58 GMT
 ENV LANG=C.UTF-8
-# Wed, 30 Mar 2022 09:09:03 GMT
+# Wed, 20 Apr 2022 10:34:59 GMT
 ENV JAVA_VERSION=8u322
-# Wed, 30 Mar 2022 09:09:10 GMT
+# Wed, 20 Apr 2022 10:35:10 GMT
 RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u322-b06/OpenJDK8U-jdk_x64_linux_8u322b06.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u322-b06/OpenJDK8U-jdk_aarch64_linux_8u322b06.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/jre/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		javac -version; 	java -version
-# Wed, 30 Mar 2022 12:15:45 GMT
+# Thu, 21 Apr 2022 06:11:09 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Wed, 30 Mar 2022 12:15:45 GMT
+# Thu, 21 Apr 2022 06:11:10 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 30 Mar 2022 12:15:47 GMT
+# Thu, 21 Apr 2022 06:11:11 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Wed, 30 Mar 2022 12:15:47 GMT
+# Thu, 21 Apr 2022 06:11:12 GMT
 WORKDIR /usr/local/tomcat
-# Wed, 30 Mar 2022 12:15:48 GMT
+# Thu, 21 Apr 2022 06:11:13 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Wed, 30 Mar 2022 12:15:49 GMT
+# Thu, 21 Apr 2022 06:11:14 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Wed, 30 Mar 2022 12:40:06 GMT
+# Thu, 21 Apr 2022 06:35:11 GMT
 ENV GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 5C3C5F3E314C866292F359A8F3AD5C94A67F707E 765908099ACF92702C7D949BFA0C35EA8AA299F1 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23
-# Wed, 30 Mar 2022 12:40:06 GMT
+# Thu, 21 Apr 2022 06:35:12 GMT
 ENV TOMCAT_MAJOR=8
-# Fri, 01 Apr 2022 20:15:40 GMT
+# Thu, 21 Apr 2022 06:35:13 GMT
 ENV TOMCAT_VERSION=8.5.78
-# Fri, 01 Apr 2022 20:15:41 GMT
+# Thu, 21 Apr 2022 06:35:14 GMT
 ENV TOMCAT_SHA512=b50213e64cc1fd3da2847deda1ca13bee4c26663093c11d53c5ecfe4cdec8856e743b4a1d8488e0c0cbe9bf149e755df40a4140f3b155e2195e3bc6335de3512
-# Fri, 01 Apr 2022 20:16:06 GMT
+# Thu, 21 Apr 2022 06:35:39 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		dirmngr 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl=yes 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 777 logs temp work; 		catalina.sh version
-# Fri, 01 Apr 2022 20:16:07 GMT
+# Thu, 21 Apr 2022 06:35:41 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Fri, 01 Apr 2022 20:16:08 GMT
+# Thu, 21 Apr 2022 06:35:42 GMT
 EXPOSE 8080
-# Fri, 01 Apr 2022 20:16:09 GMT
+# Thu, 21 Apr 2022 06:35:43 GMT
 CMD ["catalina.sh" "run"]
-# Fri, 01 Apr 2022 22:07:38 GMT
+# Thu, 21 Apr 2022 13:47:44 GMT
 ENV GN_FILE=geonetwork.war
-# Fri, 01 Apr 2022 22:07:38 GMT
+# Thu, 21 Apr 2022 13:47:44 GMT
 ENV DATA_DIR=/usr/local/tomcat/webapps/geonetwork/WEB-INF/data
-# Fri, 01 Apr 2022 22:07:39 GMT
+# Thu, 21 Apr 2022 13:47:45 GMT
 ENV JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -server -Xms512m -Xmx2024m -XX:NewSize=512m -XX:MaxNewSize=1024m -XX:+UseConcMarkSweepGC
-# Fri, 01 Apr 2022 22:08:31 GMT
+# Thu, 21 Apr 2022 13:49:30 GMT
 ENV GN_VERSION=3.12.3
-# Fri, 01 Apr 2022 22:08:31 GMT
+# Thu, 21 Apr 2022 13:49:30 GMT
 ENV GN_DOWNLOAD_MD5=ecbbff832c8a6edf22e06aa1870dddab
-# Fri, 01 Apr 2022 22:08:32 GMT
+# Thu, 21 Apr 2022 13:49:31 GMT
 WORKDIR /usr/local/tomcat/webapps
-# Fri, 01 Apr 2022 22:08:47 GMT
+# Thu, 21 Apr 2022 13:50:23 GMT
 RUN curl -fSL -o $GN_FILE      https://sourceforge.net/projects/geonetwork/files/GeoNetwork_opensource/v${GN_VERSION}/${GN_FILE}/download &&      echo "${GN_DOWNLOAD_MD5} *${GN_FILE}" | md5sum -c &&      mkdir -p geonetwork &&      unzip -e $GN_FILE -d geonetwork &&      rm $GN_FILE
-# Fri, 01 Apr 2022 22:08:48 GMT
+# Thu, 21 Apr 2022 13:50:24 GMT
 COPY file:0804862fd42c05f06dfa65cb1e5dad9a956d8ac6a3ddd4d962847ba159f5cfe6 in /entrypoint.sh 
-# Fri, 01 Apr 2022 22:08:49 GMT
+# Thu, 21 Apr 2022 13:50:25 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 01 Apr 2022 22:08:49 GMT
+# Thu, 21 Apr 2022 13:50:26 GMT
 CMD ["catalina.sh" "run"]
-# Fri, 01 Apr 2022 22:09:01 GMT
+# Thu, 21 Apr 2022 13:50:36 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends postgresql-client &&     rm -rf /var/lib/apt/lists/*
-# Fri, 01 Apr 2022 22:09:03 GMT
+# Thu, 21 Apr 2022 13:50:38 GMT
 RUN sed -i -e 's#<import resource="../config-db/${geonetwork.db.type:h2}.xml"/>#<!--<import resource="../config-db/${geonetwork.db.type:h2}.xml"/-->#g' "${CATALINA_HOME}/webapps/geonetwork/WEB-INF/config-node/srv.xml" && sed -i -e 's#<!--<import resource="../config-db/postgres.xml"/>-->#<import resource="../config-db/postgres.xml"/>#g' "${CATALINA_HOME}/webapps/geonetwork/WEB-INF/config-node/srv.xml"
-# Fri, 01 Apr 2022 22:09:04 GMT
+# Thu, 21 Apr 2022 13:50:39 GMT
 COPY file:83f69d2041e5fb378033b0db57e096c81ba0725102ab4da4f089685e748fcce3 in /usr/local/tomcat/webapps/geonetwork/WEB-INF/config-db/jdbc.properties 
-# Fri, 01 Apr 2022 22:09:05 GMT
+# Thu, 21 Apr 2022 13:50:40 GMT
 COPY file:c88411abba7ad9b7bb75019f08755dbfa163d2fc7fdd80676bf9350c4c56a19c in /entrypoint.sh 
-# Fri, 01 Apr 2022 22:09:05 GMT
+# Thu, 21 Apr 2022 13:50:40 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 01 Apr 2022 22:09:06 GMT
+# Thu, 21 Apr 2022 13:50:41 GMT
 CMD ["catalina.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:fa223d8c149d7beec8e997e1415ee4961473cafaf88a932f70baf3da56f2c564`  
-		Last Modified: Tue, 29 Mar 2022 00:49:33 GMT  
-		Size: 53.6 MB (53633710 bytes)  
+	-	`sha256:83d5dcfea08e6927083bc886bf182fc39d87bb04b54b63002ac0c4c0b9aab682`  
+		Last Modified: Wed, 20 Apr 2022 04:35:19 GMT  
+		Size: 53.6 MB (53633096 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:17ffbd2ab15985c19f9e1e3199cdce06090266d20d11dbd3d55fba45de2fcc27`  
-		Last Modified: Wed, 30 Mar 2022 02:24:13 GMT  
-		Size: 4.9 MB (4938638 bytes)  
+	-	`sha256:45cfa86b7b1aca6d694057e4d42ee1440527f41c00b9e577df729244380c9eba`  
+		Last Modified: Wed, 20 Apr 2022 06:54:10 GMT  
+		Size: 4.9 MB (4938663 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3953e76cee2ab175d909ccec1a3399912a690ad621ae88cff787d98419b97bb`  
-		Last Modified: Wed, 30 Mar 2022 02:24:14 GMT  
-		Size: 10.7 MB (10656993 bytes)  
+	-	`sha256:5c79b19335f27cc78840bf9159e875322f3252ac06113c73756f9d4fba905f9b`  
+		Last Modified: Wed, 20 Apr 2022 06:54:10 GMT  
+		Size: 10.7 MB (10656971 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f906570592fdd65a2fcfae6164990d0422e03ccadba25c5b1d1268a29f7c530`  
-		Last Modified: Wed, 30 Mar 2022 02:24:36 GMT  
-		Size: 54.7 MB (54671703 bytes)  
+	-	`sha256:350ecaf08eac09037b05465ab97a1b8f7bc9b7a9b1fcef900dedd7dba9bbcf4d`  
+		Last Modified: Wed, 20 Apr 2022 06:54:32 GMT  
+		Size: 54.7 MB (54672934 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cb0dde9809fd5f6e3d3e4fc107af8e143572e8701eace9892a8bab6f572fec84`  
-		Last Modified: Wed, 30 Mar 2022 09:29:35 GMT  
-		Size: 5.4 MB (5420457 bytes)  
+	-	`sha256:407c0a935588e2739ecb408509326d6d25e59a373d13cbab359a43902f17dc33`  
+		Last Modified: Wed, 20 Apr 2022 10:54:38 GMT  
+		Size: 5.4 MB (5420689 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:805b6d6d0eb2fd9fa975957708b76f89cf5fdf51a3374507410ccde1da279d1f`  
-		Last Modified: Wed, 30 Mar 2022 09:33:30 GMT  
-		Size: 211.0 B  
+	-	`sha256:0d3971bf6f6e2464a1d2bd8645f5667de6af7962283cdf8d4925ba8e2204e744`  
+		Last Modified: Wed, 20 Apr 2022 11:00:13 GMT  
+		Size: 209.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6c24bbeba3624fc1dd635cf4cd7fc8a11956944e9d3ec5b0608292e644730e94`  
-		Last Modified: Wed, 30 Mar 2022 09:33:39 GMT  
-		Size: 105.1 MB (105086335 bytes)  
+	-	`sha256:ff56446fd45724f062d831fd8b00f60e76ad0a54c14ecb7f17bd4f9ac70db51d`  
+		Last Modified: Wed, 20 Apr 2022 11:00:23 GMT  
+		Size: 105.1 MB (105086376 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:026ba8534b219d948da368ebe9ad038e75b2f67114856d6e9e3cad5aca7e193a`  
-		Last Modified: Wed, 30 Mar 2022 13:15:57 GMT  
-		Size: 137.0 B  
+	-	`sha256:f32bf0ed92b8797af023c9bfdc1fb2b5538be8ac562c47fd681d4eee6d6e666f`  
+		Last Modified: Thu, 21 Apr 2022 08:48:58 GMT  
+		Size: 139.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d99cde55ef53bac9332c954b51bf91fc58d9a27a513dde213ba6f87eee813547`  
-		Last Modified: Fri, 01 Apr 2022 21:18:16 GMT  
-		Size: 11.3 MB (11288064 bytes)  
+	-	`sha256:83db1b2c5f6aa232ab744fb260c6b8ba1ce59da6827c17c43f5c485f3363172e`  
+		Last Modified: Thu, 21 Apr 2022 09:06:28 GMT  
+		Size: 11.3 MB (11288032 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e22616a0d144b186442eaa48d4fd44fc5430dd82e58ab286130e1b2f78ef2b4c`  
-		Last Modified: Fri, 01 Apr 2022 22:09:56 GMT  
-		Size: 227.3 MB (227270855 bytes)  
+	-	`sha256:3039ecca67342c1e4fb193bd77ffd776fc6c9eb5df876ea772a24ed0fee2f796`  
+		Last Modified: Thu, 21 Apr 2022 13:53:07 GMT  
+		Size: 227.3 MB (227270805 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2d1e1ced46bcba7c969634723d45a4612f0621f6eb2bdae9849ef97434c7db94`  
-		Last Modified: Fri, 01 Apr 2022 22:09:39 GMT  
-		Size: 249.0 B  
+	-	`sha256:0bbca03137c6058ab703cebb62999322411d6f4083b393b905d9db7b6c67c8c2`  
+		Last Modified: Thu, 21 Apr 2022 13:52:51 GMT  
+		Size: 248.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:100953a3dba541a589005c2d20a110aefde79bc72c11607a5d607cb10c3d75ab`  
-		Last Modified: Fri, 01 Apr 2022 22:10:11 GMT  
-		Size: 3.3 MB (3261285 bytes)  
+	-	`sha256:3f8bf9ca5b4608e1aa4d1ffdcc47d66d3611da4282c9a1b887e11cb49a31d94b`  
+		Last Modified: Thu, 21 Apr 2022 13:53:23 GMT  
+		Size: 3.3 MB (3261235 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2ad15b02dcc293914eb0d461c27d21f7a3e71ad073ac845e29846cc97ef9802c`  
-		Last Modified: Fri, 01 Apr 2022 22:10:11 GMT  
-		Size: 1.3 KB (1270 bytes)  
+	-	`sha256:c0c3f233f7d92a22b66ce5493c31ab12023d7695c1f225f037d217e1a3691415`  
+		Last Modified: Thu, 21 Apr 2022 13:53:22 GMT  
+		Size: 1.3 KB (1268 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:58fe6e8e21e8ad6840766f5bc1b6d041ffe0b7bdd27197e1137f2d6975e0be8d`  
-		Last Modified: Fri, 01 Apr 2022 22:10:11 GMT  
-		Size: 1.1 KB (1128 bytes)  
+	-	`sha256:85ba545d18f32be670d53ae6edb6c782e3bf9c6e8f3614a98794547254ebd30c`  
+		Last Modified: Thu, 21 Apr 2022 13:53:22 GMT  
+		Size: 1.1 KB (1125 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eeefedcbc67f604ce5578bfb7d8f94e3a9f48dd7e50204d52a35f8af7608033f`  
-		Last Modified: Fri, 01 Apr 2022 22:10:10 GMT  
-		Size: 973.0 B  
+	-	`sha256:3fdbdf6d50b0f03ce955fc2d16b03633764f478c51afeb5629102fbf20acf267`  
+		Last Modified: Thu, 21 Apr 2022 13:53:22 GMT  
+		Size: 974.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `geonetwork:4`
 
 ```console
-$ docker pull geonetwork@sha256:5d11d35efa4ccb9df755686c19251ec02a5393d74c1ae8a998d4f88dfd111062
+$ docker pull geonetwork@sha256:59e7e5d3e1fe0573f1f7ca44c8efdda5f72ab5c32685d57c71dc91ea08b5e4ec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3332,146 +3332,146 @@ VOLUME [/catalogue-data]
 ### `geonetwork:4` - linux; arm64 variant v8
 
 ```console
-$ docker pull geonetwork@sha256:fdd84f65785abd8846b2b935345ee09cf5e806d6500a24d65d6472f83c5e0143
+$ docker pull geonetwork@sha256:065019f4420a09720b57283c6ba9c6466c74abfe70633a3b327b2d3a6f3df16c
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **481.8 MB (481807871 bytes)**  
+-	Total Size: **481.8 MB (481807675 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:778149f647b49f26cb235e09864b77ab50edd5ca06702f4bbb0e50bb2208f6e8`
+-	Image ID: `sha256:c68f9d6076902bee8292e975b8279376a24169b99c2da2007f51ebf805db2be3`
 -	Entrypoint: `["\/geonetwork-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
 ```dockerfile
-# Tue, 29 Mar 2022 00:43:01 GMT
-ADD file:5e8f8c10da6d37a727fb5e1ed13b3dd78769f0ca7e91f0c3510e2edd25177117 in / 
-# Tue, 29 Mar 2022 00:43:03 GMT
+# Wed, 20 Apr 2022 04:28:55 GMT
+ADD file:ece192802cbdaf1a141d04f0c2e90cfd3479e5e3e82c6a00206970684494cf48 in / 
+# Wed, 20 Apr 2022 04:28:56 GMT
 CMD ["bash"]
-# Wed, 30 Mar 2022 02:13:10 GMT
+# Wed, 20 Apr 2022 06:44:07 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 30 Mar 2022 02:13:17 GMT
+# Wed, 20 Apr 2022 06:44:12 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 30 Mar 2022 09:07:16 GMT
+# Wed, 20 Apr 2022 10:33:20 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				fontconfig libfreetype6 				ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 30 Mar 2022 09:09:57 GMT
+# Wed, 20 Apr 2022 10:36:28 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Wed, 30 Mar 2022 09:09:58 GMT
+# Wed, 20 Apr 2022 10:36:28 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
-# Wed, 30 Mar 2022 09:09:59 GMT
+# Wed, 20 Apr 2022 10:36:29 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 30 Mar 2022 09:10:00 GMT
+# Wed, 20 Apr 2022 10:36:30 GMT
 ENV LANG=C.UTF-8
-# Wed, 30 Mar 2022 09:10:01 GMT
+# Wed, 20 Apr 2022 10:36:31 GMT
 ENV JAVA_VERSION=8u322
-# Wed, 30 Mar 2022 09:10:08 GMT
+# Wed, 20 Apr 2022 10:36:37 GMT
 RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u322-b06/OpenJDK8U-jre_x64_linux_8u322b06.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u322-b06/OpenJDK8U-jre_aarch64_linux_8u322b06.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -version
-# Tue, 05 Apr 2022 17:49:09 GMT
+# Thu, 21 Apr 2022 04:15:44 GMT
 ENV JETTY_VERSION=9.4.46.v20220331
-# Tue, 05 Apr 2022 17:49:10 GMT
+# Thu, 21 Apr 2022 04:15:44 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 05 Apr 2022 17:49:11 GMT
+# Thu, 21 Apr 2022 04:15:45 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 05 Apr 2022 17:49:12 GMT
+# Thu, 21 Apr 2022 04:15:46 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 05 Apr 2022 17:49:13 GMT
+# Thu, 21 Apr 2022 04:15:47 GMT
 ENV PATH=/usr/local/jetty/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 05 Apr 2022 17:49:14 GMT
+# Thu, 21 Apr 2022 04:15:48 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/9.4.46.v20220331/jetty-home-9.4.46.v20220331.tar.gz
-# Tue, 05 Apr 2022 17:49:15 GMT
+# Thu, 21 Apr 2022 04:15:49 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	FBA2B18D238AB852DF95745C76157BDF03D0DCD6 	5C9579B3DB2E506429319AAEF33B071B29559E1E 	F254B35617DC255D9344BCFA873A8E86B4372146
-# Tue, 05 Apr 2022 17:49:25 GMT
+# Thu, 21 Apr 2022 04:15:58 GMT
 RUN set -xe ; 	mkdir -p $TMPDIR ; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="server,http,deploy,jsp,jstl,ext,resources,websocket" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ;
-# Tue, 05 Apr 2022 17:49:25 GMT
+# Thu, 21 Apr 2022 04:15:59 GMT
 WORKDIR /var/lib/jetty
-# Tue, 05 Apr 2022 17:49:27 GMT
+# Thu, 21 Apr 2022 04:16:01 GMT
 COPY multi:a6bf79f83e3ff0c7dc5946cd61ca0413cd3191ce9671725a647923d97a115fae in / 
-# Tue, 05 Apr 2022 17:49:27 GMT
+# Thu, 21 Apr 2022 04:16:01 GMT
 USER jetty
-# Tue, 05 Apr 2022 17:49:28 GMT
+# Thu, 21 Apr 2022 04:16:02 GMT
 EXPOSE 8080
-# Tue, 05 Apr 2022 17:49:29 GMT
+# Thu, 21 Apr 2022 04:16:03 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 05 Apr 2022 17:49:30 GMT
+# Thu, 21 Apr 2022 04:16:04 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
-# Tue, 05 Apr 2022 19:15:46 GMT
+# Thu, 21 Apr 2022 13:50:47 GMT
 ENV DATA_DIR=/catalogue-data
-# Tue, 05 Apr 2022 19:15:47 GMT
+# Thu, 21 Apr 2022 13:50:48 GMT
 ENV JAVA_OPTS=-Dorg.eclipse.jetty.annotations.AnnotationParser.LEVEL=OFF         -Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true         -Xms512M -Xss512M -Xmx2G -XX:+UseConcMarkSweepGC         -Dgeonetwork.resources.dir=/catalogue-data/resources         -Dgeonetwork.data.dir=/catalogue-data         -Dgeonetwork.codeList.dir=/var/lib/jetty/webapps/geonetwork/WEB-INF/data/config/codelist         -Dgeonetwork.schema.dir=/var/lib/jetty/webapps/geonetwork/WEB-INF/data/config/schema_plugins
-# Tue, 05 Apr 2022 19:15:48 GMT
+# Thu, 21 Apr 2022 13:50:49 GMT
 USER root
-# Tue, 05 Apr 2022 19:15:52 GMT
+# Thu, 21 Apr 2022 13:50:53 GMT
 RUN apt-get -y update &&     apt-get -y install curl &&     rm -rf /var/lib/apt/lists/* &&     mkdir -p /${DATA_DIR} &&     chown -R jetty:jetty ${DATA_DIR} &&     mkdir -p /var/lib/jetty/webapps/geonetwork &&     chown -R jetty:jetty /var/lib/jetty/webapps/geonetwork
-# Tue, 05 Apr 2022 19:15:52 GMT
+# Thu, 21 Apr 2022 13:50:53 GMT
 USER jetty
-# Tue, 05 Apr 2022 19:15:53 GMT
+# Thu, 21 Apr 2022 13:50:54 GMT
 ENV GN_FILE=geonetwork.war
-# Tue, 05 Apr 2022 19:15:54 GMT
+# Thu, 21 Apr 2022 13:50:55 GMT
 ENV GN_VERSION=4.0.6
-# Tue, 05 Apr 2022 19:15:55 GMT
+# Thu, 21 Apr 2022 13:50:56 GMT
 ENV GN_DOWNLOAD_MD5=793732cb9c723e73857a4da73b78451b
-# Tue, 05 Apr 2022 19:17:14 GMT
+# Thu, 21 Apr 2022 13:52:14 GMT
 RUN cd /var/lib/jetty/webapps/geonetwork/ &&      curl -fSL -o geonetwork.war      https://sourceforge.net/projects/geonetwork/files/GeoNetwork_opensource/v${GN_VERSION}/${GN_FILE}/download &&      echo "${GN_DOWNLOAD_MD5} *geonetwork.war" | md5sum -c &&      unzip -q geonetwork.war &&      rm geonetwork.war
-# Tue, 05 Apr 2022 19:17:15 GMT
+# Thu, 21 Apr 2022 13:52:16 GMT
 COPY file:ca46ab251df3dfc253cb04cf962e7266e42428fab31ad2f583a7c86b06d5f778 in /geonetwork-entrypoint.sh 
-# Tue, 05 Apr 2022 19:17:15 GMT
+# Thu, 21 Apr 2022 13:52:16 GMT
 ENTRYPOINT ["/geonetwork-entrypoint.sh"]
-# Tue, 05 Apr 2022 19:17:16 GMT
+# Thu, 21 Apr 2022 13:52:17 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
-# Tue, 05 Apr 2022 19:17:17 GMT
+# Thu, 21 Apr 2022 13:52:18 GMT
 VOLUME [/catalogue-data]
 ```
 
 -	Layers:
-	-	`sha256:fa223d8c149d7beec8e997e1415ee4961473cafaf88a932f70baf3da56f2c564`  
-		Last Modified: Tue, 29 Mar 2022 00:49:33 GMT  
-		Size: 53.6 MB (53633710 bytes)  
+	-	`sha256:83d5dcfea08e6927083bc886bf182fc39d87bb04b54b63002ac0c4c0b9aab682`  
+		Last Modified: Wed, 20 Apr 2022 04:35:19 GMT  
+		Size: 53.6 MB (53633096 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:17ffbd2ab15985c19f9e1e3199cdce06090266d20d11dbd3d55fba45de2fcc27`  
-		Last Modified: Wed, 30 Mar 2022 02:24:13 GMT  
-		Size: 4.9 MB (4938638 bytes)  
+	-	`sha256:45cfa86b7b1aca6d694057e4d42ee1440527f41c00b9e577df729244380c9eba`  
+		Last Modified: Wed, 20 Apr 2022 06:54:10 GMT  
+		Size: 4.9 MB (4938663 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3953e76cee2ab175d909ccec1a3399912a690ad621ae88cff787d98419b97bb`  
-		Last Modified: Wed, 30 Mar 2022 02:24:14 GMT  
-		Size: 10.7 MB (10656993 bytes)  
+	-	`sha256:5c79b19335f27cc78840bf9159e875322f3252ac06113c73756f9d4fba905f9b`  
+		Last Modified: Wed, 20 Apr 2022 06:54:10 GMT  
+		Size: 10.7 MB (10656971 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6a7231566decf8fbce03d4780325fa68b475237a1f9fa0638d4178aa8c09aa71`  
-		Last Modified: Wed, 30 Mar 2022 09:31:31 GMT  
-		Size: 5.6 MB (5649049 bytes)  
+	-	`sha256:579ba6ed012bb5067169efabd19955cc8bc89ef5df54b8aac8fa222e892c1e88`  
+		Last Modified: Wed, 20 Apr 2022 10:58:19 GMT  
+		Size: 5.6 MB (5649495 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0f7d2aecfeabca96ca23febcdac6ae00782336d0eca6ae914bbbe4e77ee86bd7`  
-		Last Modified: Wed, 30 Mar 2022 09:34:37 GMT  
-		Size: 209.0 B  
+	-	`sha256:755e558edd97c18a34166be3c67f631c203f345ef3b3369335202ce71db8b957`  
+		Last Modified: Wed, 20 Apr 2022 11:02:14 GMT  
+		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:112cd66392a9cb85905ca9fa430b7dd08123fa3fdf678b82a1e7c386df8e5255`  
-		Last Modified: Wed, 30 Mar 2022 09:34:42 GMT  
-		Size: 40.7 MB (40653745 bytes)  
+	-	`sha256:84c5920902c15c039903a1feea0bad9ce94bc8651ec697b98e01216aa9f1dd3c`  
+		Last Modified: Wed, 20 Apr 2022 11:02:20 GMT  
+		Size: 40.7 MB (40653697 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8b7dc0e30be4dabf0ab31630b9cf2b9fedc37a8877e2a93c927cea6f179c50c5`  
-		Last Modified: Tue, 05 Apr 2022 18:16:14 GMT  
-		Size: 9.9 MB (9907182 bytes)  
+	-	`sha256:b08470cca8315674d7f5cdbecd2e878e69feb5e274282da69dafc2709f206124`  
+		Last Modified: Thu, 21 Apr 2022 04:38:03 GMT  
+		Size: 9.9 MB (9907183 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e847d799b3b8d2ec3d63d127dd138c5516aac483e9a9c878d191c43951f78af`  
-		Last Modified: Tue, 05 Apr 2022 18:16:13 GMT  
-		Size: 1.4 KB (1441 bytes)  
+	-	`sha256:0718ef2b72452c3b823614506b631ac8ac7a619fe5e747142758c7d44faa9e26`  
+		Last Modified: Thu, 21 Apr 2022 04:38:02 GMT  
+		Size: 1.4 KB (1440 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dcaa97543c39ebd8d357a0249f390b815758a8a61d5a172014802d7e604f98fb`  
-		Last Modified: Tue, 05 Apr 2022 19:17:55 GMT  
-		Size: 219.0 B  
+	-	`sha256:c222ff3a65e8da33ac802325c5c5267f08695534ba55ba730ad8b00fd86b5ba9`  
+		Last Modified: Thu, 21 Apr 2022 13:53:52 GMT  
+		Size: 220.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f23d4b42ea40764617971d073808447f88b845db1a715daa2b9f9b8a4f21ecc6`  
-		Last Modified: Tue, 05 Apr 2022 19:18:20 GMT  
-		Size: 356.4 MB (356365728 bytes)  
+	-	`sha256:34ec88ec0a3f5383404c4f5a7e6fc28de6fe873bac48d867c6361a57092e9c04`  
+		Last Modified: Thu, 21 Apr 2022 13:54:16 GMT  
+		Size: 356.4 MB (356365742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b65c82e6b14a777b84b88ad6a0cf4d948378462f6f1bf664abf6a5f56e27afa7`  
-		Last Modified: Tue, 05 Apr 2022 19:17:55 GMT  
+	-	`sha256:d1e49b7ff201b881dbda52224eed45b67998482641f376c15d5b1854f2961b80`  
+		Last Modified: Thu, 21 Apr 2022 13:53:52 GMT  
 		Size: 957.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `geonetwork:4.0`
 
 ```console
-$ docker pull geonetwork@sha256:5d11d35efa4ccb9df755686c19251ec02a5393d74c1ae8a998d4f88dfd111062
+$ docker pull geonetwork@sha256:59e7e5d3e1fe0573f1f7ca44c8efdda5f72ab5c32685d57c71dc91ea08b5e4ec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3621,146 +3621,146 @@ VOLUME [/catalogue-data]
 ### `geonetwork:4.0` - linux; arm64 variant v8
 
 ```console
-$ docker pull geonetwork@sha256:fdd84f65785abd8846b2b935345ee09cf5e806d6500a24d65d6472f83c5e0143
+$ docker pull geonetwork@sha256:065019f4420a09720b57283c6ba9c6466c74abfe70633a3b327b2d3a6f3df16c
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **481.8 MB (481807871 bytes)**  
+-	Total Size: **481.8 MB (481807675 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:778149f647b49f26cb235e09864b77ab50edd5ca06702f4bbb0e50bb2208f6e8`
+-	Image ID: `sha256:c68f9d6076902bee8292e975b8279376a24169b99c2da2007f51ebf805db2be3`
 -	Entrypoint: `["\/geonetwork-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
 ```dockerfile
-# Tue, 29 Mar 2022 00:43:01 GMT
-ADD file:5e8f8c10da6d37a727fb5e1ed13b3dd78769f0ca7e91f0c3510e2edd25177117 in / 
-# Tue, 29 Mar 2022 00:43:03 GMT
+# Wed, 20 Apr 2022 04:28:55 GMT
+ADD file:ece192802cbdaf1a141d04f0c2e90cfd3479e5e3e82c6a00206970684494cf48 in / 
+# Wed, 20 Apr 2022 04:28:56 GMT
 CMD ["bash"]
-# Wed, 30 Mar 2022 02:13:10 GMT
+# Wed, 20 Apr 2022 06:44:07 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 30 Mar 2022 02:13:17 GMT
+# Wed, 20 Apr 2022 06:44:12 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 30 Mar 2022 09:07:16 GMT
+# Wed, 20 Apr 2022 10:33:20 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				fontconfig libfreetype6 				ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 30 Mar 2022 09:09:57 GMT
+# Wed, 20 Apr 2022 10:36:28 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Wed, 30 Mar 2022 09:09:58 GMT
+# Wed, 20 Apr 2022 10:36:28 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
-# Wed, 30 Mar 2022 09:09:59 GMT
+# Wed, 20 Apr 2022 10:36:29 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 30 Mar 2022 09:10:00 GMT
+# Wed, 20 Apr 2022 10:36:30 GMT
 ENV LANG=C.UTF-8
-# Wed, 30 Mar 2022 09:10:01 GMT
+# Wed, 20 Apr 2022 10:36:31 GMT
 ENV JAVA_VERSION=8u322
-# Wed, 30 Mar 2022 09:10:08 GMT
+# Wed, 20 Apr 2022 10:36:37 GMT
 RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u322-b06/OpenJDK8U-jre_x64_linux_8u322b06.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u322-b06/OpenJDK8U-jre_aarch64_linux_8u322b06.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -version
-# Tue, 05 Apr 2022 17:49:09 GMT
+# Thu, 21 Apr 2022 04:15:44 GMT
 ENV JETTY_VERSION=9.4.46.v20220331
-# Tue, 05 Apr 2022 17:49:10 GMT
+# Thu, 21 Apr 2022 04:15:44 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 05 Apr 2022 17:49:11 GMT
+# Thu, 21 Apr 2022 04:15:45 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 05 Apr 2022 17:49:12 GMT
+# Thu, 21 Apr 2022 04:15:46 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 05 Apr 2022 17:49:13 GMT
+# Thu, 21 Apr 2022 04:15:47 GMT
 ENV PATH=/usr/local/jetty/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 05 Apr 2022 17:49:14 GMT
+# Thu, 21 Apr 2022 04:15:48 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/9.4.46.v20220331/jetty-home-9.4.46.v20220331.tar.gz
-# Tue, 05 Apr 2022 17:49:15 GMT
+# Thu, 21 Apr 2022 04:15:49 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	FBA2B18D238AB852DF95745C76157BDF03D0DCD6 	5C9579B3DB2E506429319AAEF33B071B29559E1E 	F254B35617DC255D9344BCFA873A8E86B4372146
-# Tue, 05 Apr 2022 17:49:25 GMT
+# Thu, 21 Apr 2022 04:15:58 GMT
 RUN set -xe ; 	mkdir -p $TMPDIR ; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="server,http,deploy,jsp,jstl,ext,resources,websocket" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ;
-# Tue, 05 Apr 2022 17:49:25 GMT
+# Thu, 21 Apr 2022 04:15:59 GMT
 WORKDIR /var/lib/jetty
-# Tue, 05 Apr 2022 17:49:27 GMT
+# Thu, 21 Apr 2022 04:16:01 GMT
 COPY multi:a6bf79f83e3ff0c7dc5946cd61ca0413cd3191ce9671725a647923d97a115fae in / 
-# Tue, 05 Apr 2022 17:49:27 GMT
+# Thu, 21 Apr 2022 04:16:01 GMT
 USER jetty
-# Tue, 05 Apr 2022 17:49:28 GMT
+# Thu, 21 Apr 2022 04:16:02 GMT
 EXPOSE 8080
-# Tue, 05 Apr 2022 17:49:29 GMT
+# Thu, 21 Apr 2022 04:16:03 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 05 Apr 2022 17:49:30 GMT
+# Thu, 21 Apr 2022 04:16:04 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
-# Tue, 05 Apr 2022 19:15:46 GMT
+# Thu, 21 Apr 2022 13:50:47 GMT
 ENV DATA_DIR=/catalogue-data
-# Tue, 05 Apr 2022 19:15:47 GMT
+# Thu, 21 Apr 2022 13:50:48 GMT
 ENV JAVA_OPTS=-Dorg.eclipse.jetty.annotations.AnnotationParser.LEVEL=OFF         -Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true         -Xms512M -Xss512M -Xmx2G -XX:+UseConcMarkSweepGC         -Dgeonetwork.resources.dir=/catalogue-data/resources         -Dgeonetwork.data.dir=/catalogue-data         -Dgeonetwork.codeList.dir=/var/lib/jetty/webapps/geonetwork/WEB-INF/data/config/codelist         -Dgeonetwork.schema.dir=/var/lib/jetty/webapps/geonetwork/WEB-INF/data/config/schema_plugins
-# Tue, 05 Apr 2022 19:15:48 GMT
+# Thu, 21 Apr 2022 13:50:49 GMT
 USER root
-# Tue, 05 Apr 2022 19:15:52 GMT
+# Thu, 21 Apr 2022 13:50:53 GMT
 RUN apt-get -y update &&     apt-get -y install curl &&     rm -rf /var/lib/apt/lists/* &&     mkdir -p /${DATA_DIR} &&     chown -R jetty:jetty ${DATA_DIR} &&     mkdir -p /var/lib/jetty/webapps/geonetwork &&     chown -R jetty:jetty /var/lib/jetty/webapps/geonetwork
-# Tue, 05 Apr 2022 19:15:52 GMT
+# Thu, 21 Apr 2022 13:50:53 GMT
 USER jetty
-# Tue, 05 Apr 2022 19:15:53 GMT
+# Thu, 21 Apr 2022 13:50:54 GMT
 ENV GN_FILE=geonetwork.war
-# Tue, 05 Apr 2022 19:15:54 GMT
+# Thu, 21 Apr 2022 13:50:55 GMT
 ENV GN_VERSION=4.0.6
-# Tue, 05 Apr 2022 19:15:55 GMT
+# Thu, 21 Apr 2022 13:50:56 GMT
 ENV GN_DOWNLOAD_MD5=793732cb9c723e73857a4da73b78451b
-# Tue, 05 Apr 2022 19:17:14 GMT
+# Thu, 21 Apr 2022 13:52:14 GMT
 RUN cd /var/lib/jetty/webapps/geonetwork/ &&      curl -fSL -o geonetwork.war      https://sourceforge.net/projects/geonetwork/files/GeoNetwork_opensource/v${GN_VERSION}/${GN_FILE}/download &&      echo "${GN_DOWNLOAD_MD5} *geonetwork.war" | md5sum -c &&      unzip -q geonetwork.war &&      rm geonetwork.war
-# Tue, 05 Apr 2022 19:17:15 GMT
+# Thu, 21 Apr 2022 13:52:16 GMT
 COPY file:ca46ab251df3dfc253cb04cf962e7266e42428fab31ad2f583a7c86b06d5f778 in /geonetwork-entrypoint.sh 
-# Tue, 05 Apr 2022 19:17:15 GMT
+# Thu, 21 Apr 2022 13:52:16 GMT
 ENTRYPOINT ["/geonetwork-entrypoint.sh"]
-# Tue, 05 Apr 2022 19:17:16 GMT
+# Thu, 21 Apr 2022 13:52:17 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
-# Tue, 05 Apr 2022 19:17:17 GMT
+# Thu, 21 Apr 2022 13:52:18 GMT
 VOLUME [/catalogue-data]
 ```
 
 -	Layers:
-	-	`sha256:fa223d8c149d7beec8e997e1415ee4961473cafaf88a932f70baf3da56f2c564`  
-		Last Modified: Tue, 29 Mar 2022 00:49:33 GMT  
-		Size: 53.6 MB (53633710 bytes)  
+	-	`sha256:83d5dcfea08e6927083bc886bf182fc39d87bb04b54b63002ac0c4c0b9aab682`  
+		Last Modified: Wed, 20 Apr 2022 04:35:19 GMT  
+		Size: 53.6 MB (53633096 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:17ffbd2ab15985c19f9e1e3199cdce06090266d20d11dbd3d55fba45de2fcc27`  
-		Last Modified: Wed, 30 Mar 2022 02:24:13 GMT  
-		Size: 4.9 MB (4938638 bytes)  
+	-	`sha256:45cfa86b7b1aca6d694057e4d42ee1440527f41c00b9e577df729244380c9eba`  
+		Last Modified: Wed, 20 Apr 2022 06:54:10 GMT  
+		Size: 4.9 MB (4938663 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3953e76cee2ab175d909ccec1a3399912a690ad621ae88cff787d98419b97bb`  
-		Last Modified: Wed, 30 Mar 2022 02:24:14 GMT  
-		Size: 10.7 MB (10656993 bytes)  
+	-	`sha256:5c79b19335f27cc78840bf9159e875322f3252ac06113c73756f9d4fba905f9b`  
+		Last Modified: Wed, 20 Apr 2022 06:54:10 GMT  
+		Size: 10.7 MB (10656971 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6a7231566decf8fbce03d4780325fa68b475237a1f9fa0638d4178aa8c09aa71`  
-		Last Modified: Wed, 30 Mar 2022 09:31:31 GMT  
-		Size: 5.6 MB (5649049 bytes)  
+	-	`sha256:579ba6ed012bb5067169efabd19955cc8bc89ef5df54b8aac8fa222e892c1e88`  
+		Last Modified: Wed, 20 Apr 2022 10:58:19 GMT  
+		Size: 5.6 MB (5649495 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0f7d2aecfeabca96ca23febcdac6ae00782336d0eca6ae914bbbe4e77ee86bd7`  
-		Last Modified: Wed, 30 Mar 2022 09:34:37 GMT  
-		Size: 209.0 B  
+	-	`sha256:755e558edd97c18a34166be3c67f631c203f345ef3b3369335202ce71db8b957`  
+		Last Modified: Wed, 20 Apr 2022 11:02:14 GMT  
+		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:112cd66392a9cb85905ca9fa430b7dd08123fa3fdf678b82a1e7c386df8e5255`  
-		Last Modified: Wed, 30 Mar 2022 09:34:42 GMT  
-		Size: 40.7 MB (40653745 bytes)  
+	-	`sha256:84c5920902c15c039903a1feea0bad9ce94bc8651ec697b98e01216aa9f1dd3c`  
+		Last Modified: Wed, 20 Apr 2022 11:02:20 GMT  
+		Size: 40.7 MB (40653697 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8b7dc0e30be4dabf0ab31630b9cf2b9fedc37a8877e2a93c927cea6f179c50c5`  
-		Last Modified: Tue, 05 Apr 2022 18:16:14 GMT  
-		Size: 9.9 MB (9907182 bytes)  
+	-	`sha256:b08470cca8315674d7f5cdbecd2e878e69feb5e274282da69dafc2709f206124`  
+		Last Modified: Thu, 21 Apr 2022 04:38:03 GMT  
+		Size: 9.9 MB (9907183 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e847d799b3b8d2ec3d63d127dd138c5516aac483e9a9c878d191c43951f78af`  
-		Last Modified: Tue, 05 Apr 2022 18:16:13 GMT  
-		Size: 1.4 KB (1441 bytes)  
+	-	`sha256:0718ef2b72452c3b823614506b631ac8ac7a619fe5e747142758c7d44faa9e26`  
+		Last Modified: Thu, 21 Apr 2022 04:38:02 GMT  
+		Size: 1.4 KB (1440 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dcaa97543c39ebd8d357a0249f390b815758a8a61d5a172014802d7e604f98fb`  
-		Last Modified: Tue, 05 Apr 2022 19:17:55 GMT  
-		Size: 219.0 B  
+	-	`sha256:c222ff3a65e8da33ac802325c5c5267f08695534ba55ba730ad8b00fd86b5ba9`  
+		Last Modified: Thu, 21 Apr 2022 13:53:52 GMT  
+		Size: 220.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f23d4b42ea40764617971d073808447f88b845db1a715daa2b9f9b8a4f21ecc6`  
-		Last Modified: Tue, 05 Apr 2022 19:18:20 GMT  
-		Size: 356.4 MB (356365728 bytes)  
+	-	`sha256:34ec88ec0a3f5383404c4f5a7e6fc28de6fe873bac48d867c6361a57092e9c04`  
+		Last Modified: Thu, 21 Apr 2022 13:54:16 GMT  
+		Size: 356.4 MB (356365742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b65c82e6b14a777b84b88ad6a0cf4d948378462f6f1bf664abf6a5f56e27afa7`  
-		Last Modified: Tue, 05 Apr 2022 19:17:55 GMT  
+	-	`sha256:d1e49b7ff201b881dbda52224eed45b67998482641f376c15d5b1854f2961b80`  
+		Last Modified: Thu, 21 Apr 2022 13:53:52 GMT  
 		Size: 957.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `geonetwork:4.0.6`
 
 ```console
-$ docker pull geonetwork@sha256:5d11d35efa4ccb9df755686c19251ec02a5393d74c1ae8a998d4f88dfd111062
+$ docker pull geonetwork@sha256:59e7e5d3e1fe0573f1f7ca44c8efdda5f72ab5c32685d57c71dc91ea08b5e4ec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3910,146 +3910,146 @@ VOLUME [/catalogue-data]
 ### `geonetwork:4.0.6` - linux; arm64 variant v8
 
 ```console
-$ docker pull geonetwork@sha256:fdd84f65785abd8846b2b935345ee09cf5e806d6500a24d65d6472f83c5e0143
+$ docker pull geonetwork@sha256:065019f4420a09720b57283c6ba9c6466c74abfe70633a3b327b2d3a6f3df16c
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **481.8 MB (481807871 bytes)**  
+-	Total Size: **481.8 MB (481807675 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:778149f647b49f26cb235e09864b77ab50edd5ca06702f4bbb0e50bb2208f6e8`
+-	Image ID: `sha256:c68f9d6076902bee8292e975b8279376a24169b99c2da2007f51ebf805db2be3`
 -	Entrypoint: `["\/geonetwork-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
 ```dockerfile
-# Tue, 29 Mar 2022 00:43:01 GMT
-ADD file:5e8f8c10da6d37a727fb5e1ed13b3dd78769f0ca7e91f0c3510e2edd25177117 in / 
-# Tue, 29 Mar 2022 00:43:03 GMT
+# Wed, 20 Apr 2022 04:28:55 GMT
+ADD file:ece192802cbdaf1a141d04f0c2e90cfd3479e5e3e82c6a00206970684494cf48 in / 
+# Wed, 20 Apr 2022 04:28:56 GMT
 CMD ["bash"]
-# Wed, 30 Mar 2022 02:13:10 GMT
+# Wed, 20 Apr 2022 06:44:07 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 30 Mar 2022 02:13:17 GMT
+# Wed, 20 Apr 2022 06:44:12 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 30 Mar 2022 09:07:16 GMT
+# Wed, 20 Apr 2022 10:33:20 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				fontconfig libfreetype6 				ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 30 Mar 2022 09:09:57 GMT
+# Wed, 20 Apr 2022 10:36:28 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Wed, 30 Mar 2022 09:09:58 GMT
+# Wed, 20 Apr 2022 10:36:28 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
-# Wed, 30 Mar 2022 09:09:59 GMT
+# Wed, 20 Apr 2022 10:36:29 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 30 Mar 2022 09:10:00 GMT
+# Wed, 20 Apr 2022 10:36:30 GMT
 ENV LANG=C.UTF-8
-# Wed, 30 Mar 2022 09:10:01 GMT
+# Wed, 20 Apr 2022 10:36:31 GMT
 ENV JAVA_VERSION=8u322
-# Wed, 30 Mar 2022 09:10:08 GMT
+# Wed, 20 Apr 2022 10:36:37 GMT
 RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u322-b06/OpenJDK8U-jre_x64_linux_8u322b06.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u322-b06/OpenJDK8U-jre_aarch64_linux_8u322b06.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -version
-# Tue, 05 Apr 2022 17:49:09 GMT
+# Thu, 21 Apr 2022 04:15:44 GMT
 ENV JETTY_VERSION=9.4.46.v20220331
-# Tue, 05 Apr 2022 17:49:10 GMT
+# Thu, 21 Apr 2022 04:15:44 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 05 Apr 2022 17:49:11 GMT
+# Thu, 21 Apr 2022 04:15:45 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 05 Apr 2022 17:49:12 GMT
+# Thu, 21 Apr 2022 04:15:46 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 05 Apr 2022 17:49:13 GMT
+# Thu, 21 Apr 2022 04:15:47 GMT
 ENV PATH=/usr/local/jetty/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 05 Apr 2022 17:49:14 GMT
+# Thu, 21 Apr 2022 04:15:48 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/9.4.46.v20220331/jetty-home-9.4.46.v20220331.tar.gz
-# Tue, 05 Apr 2022 17:49:15 GMT
+# Thu, 21 Apr 2022 04:15:49 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	FBA2B18D238AB852DF95745C76157BDF03D0DCD6 	5C9579B3DB2E506429319AAEF33B071B29559E1E 	F254B35617DC255D9344BCFA873A8E86B4372146
-# Tue, 05 Apr 2022 17:49:25 GMT
+# Thu, 21 Apr 2022 04:15:58 GMT
 RUN set -xe ; 	mkdir -p $TMPDIR ; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="server,http,deploy,jsp,jstl,ext,resources,websocket" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ;
-# Tue, 05 Apr 2022 17:49:25 GMT
+# Thu, 21 Apr 2022 04:15:59 GMT
 WORKDIR /var/lib/jetty
-# Tue, 05 Apr 2022 17:49:27 GMT
+# Thu, 21 Apr 2022 04:16:01 GMT
 COPY multi:a6bf79f83e3ff0c7dc5946cd61ca0413cd3191ce9671725a647923d97a115fae in / 
-# Tue, 05 Apr 2022 17:49:27 GMT
+# Thu, 21 Apr 2022 04:16:01 GMT
 USER jetty
-# Tue, 05 Apr 2022 17:49:28 GMT
+# Thu, 21 Apr 2022 04:16:02 GMT
 EXPOSE 8080
-# Tue, 05 Apr 2022 17:49:29 GMT
+# Thu, 21 Apr 2022 04:16:03 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 05 Apr 2022 17:49:30 GMT
+# Thu, 21 Apr 2022 04:16:04 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
-# Tue, 05 Apr 2022 19:15:46 GMT
+# Thu, 21 Apr 2022 13:50:47 GMT
 ENV DATA_DIR=/catalogue-data
-# Tue, 05 Apr 2022 19:15:47 GMT
+# Thu, 21 Apr 2022 13:50:48 GMT
 ENV JAVA_OPTS=-Dorg.eclipse.jetty.annotations.AnnotationParser.LEVEL=OFF         -Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true         -Xms512M -Xss512M -Xmx2G -XX:+UseConcMarkSweepGC         -Dgeonetwork.resources.dir=/catalogue-data/resources         -Dgeonetwork.data.dir=/catalogue-data         -Dgeonetwork.codeList.dir=/var/lib/jetty/webapps/geonetwork/WEB-INF/data/config/codelist         -Dgeonetwork.schema.dir=/var/lib/jetty/webapps/geonetwork/WEB-INF/data/config/schema_plugins
-# Tue, 05 Apr 2022 19:15:48 GMT
+# Thu, 21 Apr 2022 13:50:49 GMT
 USER root
-# Tue, 05 Apr 2022 19:15:52 GMT
+# Thu, 21 Apr 2022 13:50:53 GMT
 RUN apt-get -y update &&     apt-get -y install curl &&     rm -rf /var/lib/apt/lists/* &&     mkdir -p /${DATA_DIR} &&     chown -R jetty:jetty ${DATA_DIR} &&     mkdir -p /var/lib/jetty/webapps/geonetwork &&     chown -R jetty:jetty /var/lib/jetty/webapps/geonetwork
-# Tue, 05 Apr 2022 19:15:52 GMT
+# Thu, 21 Apr 2022 13:50:53 GMT
 USER jetty
-# Tue, 05 Apr 2022 19:15:53 GMT
+# Thu, 21 Apr 2022 13:50:54 GMT
 ENV GN_FILE=geonetwork.war
-# Tue, 05 Apr 2022 19:15:54 GMT
+# Thu, 21 Apr 2022 13:50:55 GMT
 ENV GN_VERSION=4.0.6
-# Tue, 05 Apr 2022 19:15:55 GMT
+# Thu, 21 Apr 2022 13:50:56 GMT
 ENV GN_DOWNLOAD_MD5=793732cb9c723e73857a4da73b78451b
-# Tue, 05 Apr 2022 19:17:14 GMT
+# Thu, 21 Apr 2022 13:52:14 GMT
 RUN cd /var/lib/jetty/webapps/geonetwork/ &&      curl -fSL -o geonetwork.war      https://sourceforge.net/projects/geonetwork/files/GeoNetwork_opensource/v${GN_VERSION}/${GN_FILE}/download &&      echo "${GN_DOWNLOAD_MD5} *geonetwork.war" | md5sum -c &&      unzip -q geonetwork.war &&      rm geonetwork.war
-# Tue, 05 Apr 2022 19:17:15 GMT
+# Thu, 21 Apr 2022 13:52:16 GMT
 COPY file:ca46ab251df3dfc253cb04cf962e7266e42428fab31ad2f583a7c86b06d5f778 in /geonetwork-entrypoint.sh 
-# Tue, 05 Apr 2022 19:17:15 GMT
+# Thu, 21 Apr 2022 13:52:16 GMT
 ENTRYPOINT ["/geonetwork-entrypoint.sh"]
-# Tue, 05 Apr 2022 19:17:16 GMT
+# Thu, 21 Apr 2022 13:52:17 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
-# Tue, 05 Apr 2022 19:17:17 GMT
+# Thu, 21 Apr 2022 13:52:18 GMT
 VOLUME [/catalogue-data]
 ```
 
 -	Layers:
-	-	`sha256:fa223d8c149d7beec8e997e1415ee4961473cafaf88a932f70baf3da56f2c564`  
-		Last Modified: Tue, 29 Mar 2022 00:49:33 GMT  
-		Size: 53.6 MB (53633710 bytes)  
+	-	`sha256:83d5dcfea08e6927083bc886bf182fc39d87bb04b54b63002ac0c4c0b9aab682`  
+		Last Modified: Wed, 20 Apr 2022 04:35:19 GMT  
+		Size: 53.6 MB (53633096 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:17ffbd2ab15985c19f9e1e3199cdce06090266d20d11dbd3d55fba45de2fcc27`  
-		Last Modified: Wed, 30 Mar 2022 02:24:13 GMT  
-		Size: 4.9 MB (4938638 bytes)  
+	-	`sha256:45cfa86b7b1aca6d694057e4d42ee1440527f41c00b9e577df729244380c9eba`  
+		Last Modified: Wed, 20 Apr 2022 06:54:10 GMT  
+		Size: 4.9 MB (4938663 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3953e76cee2ab175d909ccec1a3399912a690ad621ae88cff787d98419b97bb`  
-		Last Modified: Wed, 30 Mar 2022 02:24:14 GMT  
-		Size: 10.7 MB (10656993 bytes)  
+	-	`sha256:5c79b19335f27cc78840bf9159e875322f3252ac06113c73756f9d4fba905f9b`  
+		Last Modified: Wed, 20 Apr 2022 06:54:10 GMT  
+		Size: 10.7 MB (10656971 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6a7231566decf8fbce03d4780325fa68b475237a1f9fa0638d4178aa8c09aa71`  
-		Last Modified: Wed, 30 Mar 2022 09:31:31 GMT  
-		Size: 5.6 MB (5649049 bytes)  
+	-	`sha256:579ba6ed012bb5067169efabd19955cc8bc89ef5df54b8aac8fa222e892c1e88`  
+		Last Modified: Wed, 20 Apr 2022 10:58:19 GMT  
+		Size: 5.6 MB (5649495 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0f7d2aecfeabca96ca23febcdac6ae00782336d0eca6ae914bbbe4e77ee86bd7`  
-		Last Modified: Wed, 30 Mar 2022 09:34:37 GMT  
-		Size: 209.0 B  
+	-	`sha256:755e558edd97c18a34166be3c67f631c203f345ef3b3369335202ce71db8b957`  
+		Last Modified: Wed, 20 Apr 2022 11:02:14 GMT  
+		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:112cd66392a9cb85905ca9fa430b7dd08123fa3fdf678b82a1e7c386df8e5255`  
-		Last Modified: Wed, 30 Mar 2022 09:34:42 GMT  
-		Size: 40.7 MB (40653745 bytes)  
+	-	`sha256:84c5920902c15c039903a1feea0bad9ce94bc8651ec697b98e01216aa9f1dd3c`  
+		Last Modified: Wed, 20 Apr 2022 11:02:20 GMT  
+		Size: 40.7 MB (40653697 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8b7dc0e30be4dabf0ab31630b9cf2b9fedc37a8877e2a93c927cea6f179c50c5`  
-		Last Modified: Tue, 05 Apr 2022 18:16:14 GMT  
-		Size: 9.9 MB (9907182 bytes)  
+	-	`sha256:b08470cca8315674d7f5cdbecd2e878e69feb5e274282da69dafc2709f206124`  
+		Last Modified: Thu, 21 Apr 2022 04:38:03 GMT  
+		Size: 9.9 MB (9907183 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e847d799b3b8d2ec3d63d127dd138c5516aac483e9a9c878d191c43951f78af`  
-		Last Modified: Tue, 05 Apr 2022 18:16:13 GMT  
-		Size: 1.4 KB (1441 bytes)  
+	-	`sha256:0718ef2b72452c3b823614506b631ac8ac7a619fe5e747142758c7d44faa9e26`  
+		Last Modified: Thu, 21 Apr 2022 04:38:02 GMT  
+		Size: 1.4 KB (1440 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dcaa97543c39ebd8d357a0249f390b815758a8a61d5a172014802d7e604f98fb`  
-		Last Modified: Tue, 05 Apr 2022 19:17:55 GMT  
-		Size: 219.0 B  
+	-	`sha256:c222ff3a65e8da33ac802325c5c5267f08695534ba55ba730ad8b00fd86b5ba9`  
+		Last Modified: Thu, 21 Apr 2022 13:53:52 GMT  
+		Size: 220.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f23d4b42ea40764617971d073808447f88b845db1a715daa2b9f9b8a4f21ecc6`  
-		Last Modified: Tue, 05 Apr 2022 19:18:20 GMT  
-		Size: 356.4 MB (356365728 bytes)  
+	-	`sha256:34ec88ec0a3f5383404c4f5a7e6fc28de6fe873bac48d867c6361a57092e9c04`  
+		Last Modified: Thu, 21 Apr 2022 13:54:16 GMT  
+		Size: 356.4 MB (356365742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b65c82e6b14a777b84b88ad6a0cf4d948378462f6f1bf664abf6a5f56e27afa7`  
-		Last Modified: Tue, 05 Apr 2022 19:17:55 GMT  
+	-	`sha256:d1e49b7ff201b881dbda52224eed45b67998482641f376c15d5b1854f2961b80`  
+		Last Modified: Thu, 21 Apr 2022 13:53:52 GMT  
 		Size: 957.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `geonetwork:latest`
 
 ```console
-$ docker pull geonetwork@sha256:5d11d35efa4ccb9df755686c19251ec02a5393d74c1ae8a998d4f88dfd111062
+$ docker pull geonetwork@sha256:59e7e5d3e1fe0573f1f7ca44c8efdda5f72ab5c32685d57c71dc91ea08b5e4ec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4199,138 +4199,138 @@ VOLUME [/catalogue-data]
 ### `geonetwork:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull geonetwork@sha256:fdd84f65785abd8846b2b935345ee09cf5e806d6500a24d65d6472f83c5e0143
+$ docker pull geonetwork@sha256:065019f4420a09720b57283c6ba9c6466c74abfe70633a3b327b2d3a6f3df16c
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **481.8 MB (481807871 bytes)**  
+-	Total Size: **481.8 MB (481807675 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:778149f647b49f26cb235e09864b77ab50edd5ca06702f4bbb0e50bb2208f6e8`
+-	Image ID: `sha256:c68f9d6076902bee8292e975b8279376a24169b99c2da2007f51ebf805db2be3`
 -	Entrypoint: `["\/geonetwork-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
 ```dockerfile
-# Tue, 29 Mar 2022 00:43:01 GMT
-ADD file:5e8f8c10da6d37a727fb5e1ed13b3dd78769f0ca7e91f0c3510e2edd25177117 in / 
-# Tue, 29 Mar 2022 00:43:03 GMT
+# Wed, 20 Apr 2022 04:28:55 GMT
+ADD file:ece192802cbdaf1a141d04f0c2e90cfd3479e5e3e82c6a00206970684494cf48 in / 
+# Wed, 20 Apr 2022 04:28:56 GMT
 CMD ["bash"]
-# Wed, 30 Mar 2022 02:13:10 GMT
+# Wed, 20 Apr 2022 06:44:07 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 30 Mar 2022 02:13:17 GMT
+# Wed, 20 Apr 2022 06:44:12 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 30 Mar 2022 09:07:16 GMT
+# Wed, 20 Apr 2022 10:33:20 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				fontconfig libfreetype6 				ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 30 Mar 2022 09:09:57 GMT
+# Wed, 20 Apr 2022 10:36:28 GMT
 ENV JAVA_HOME=/usr/local/openjdk-8
-# Wed, 30 Mar 2022 09:09:58 GMT
+# Wed, 20 Apr 2022 10:36:28 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
-# Wed, 30 Mar 2022 09:09:59 GMT
+# Wed, 20 Apr 2022 10:36:29 GMT
 ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 30 Mar 2022 09:10:00 GMT
+# Wed, 20 Apr 2022 10:36:30 GMT
 ENV LANG=C.UTF-8
-# Wed, 30 Mar 2022 09:10:01 GMT
+# Wed, 20 Apr 2022 10:36:31 GMT
 ENV JAVA_VERSION=8u322
-# Wed, 30 Mar 2022 09:10:08 GMT
+# Wed, 20 Apr 2022 10:36:37 GMT
 RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u322-b06/OpenJDK8U-jre_x64_linux_8u322b06.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u322-b06/OpenJDK8U-jre_aarch64_linux_8u322b06.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -version
-# Tue, 05 Apr 2022 17:49:09 GMT
+# Thu, 21 Apr 2022 04:15:44 GMT
 ENV JETTY_VERSION=9.4.46.v20220331
-# Tue, 05 Apr 2022 17:49:10 GMT
+# Thu, 21 Apr 2022 04:15:44 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 05 Apr 2022 17:49:11 GMT
+# Thu, 21 Apr 2022 04:15:45 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 05 Apr 2022 17:49:12 GMT
+# Thu, 21 Apr 2022 04:15:46 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 05 Apr 2022 17:49:13 GMT
+# Thu, 21 Apr 2022 04:15:47 GMT
 ENV PATH=/usr/local/jetty/bin:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 05 Apr 2022 17:49:14 GMT
+# Thu, 21 Apr 2022 04:15:48 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/9.4.46.v20220331/jetty-home-9.4.46.v20220331.tar.gz
-# Tue, 05 Apr 2022 17:49:15 GMT
+# Thu, 21 Apr 2022 04:15:49 GMT
 ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	FBA2B18D238AB852DF95745C76157BDF03D0DCD6 	5C9579B3DB2E506429319AAEF33B071B29559E1E 	F254B35617DC255D9344BCFA873A8E86B4372146
-# Tue, 05 Apr 2022 17:49:25 GMT
+# Thu, 21 Apr 2022 04:15:58 GMT
 RUN set -xe ; 	mkdir -p $TMPDIR ; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="server,http,deploy,jsp,jstl,ext,resources,websocket" ; 	groupadd -r jetty && useradd -r -g jetty jetty ; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	usermod -d $JETTY_BASE jetty ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ;
-# Tue, 05 Apr 2022 17:49:25 GMT
+# Thu, 21 Apr 2022 04:15:59 GMT
 WORKDIR /var/lib/jetty
-# Tue, 05 Apr 2022 17:49:27 GMT
+# Thu, 21 Apr 2022 04:16:01 GMT
 COPY multi:a6bf79f83e3ff0c7dc5946cd61ca0413cd3191ce9671725a647923d97a115fae in / 
-# Tue, 05 Apr 2022 17:49:27 GMT
+# Thu, 21 Apr 2022 04:16:01 GMT
 USER jetty
-# Tue, 05 Apr 2022 17:49:28 GMT
+# Thu, 21 Apr 2022 04:16:02 GMT
 EXPOSE 8080
-# Tue, 05 Apr 2022 17:49:29 GMT
+# Thu, 21 Apr 2022 04:16:03 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 05 Apr 2022 17:49:30 GMT
+# Thu, 21 Apr 2022 04:16:04 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
-# Tue, 05 Apr 2022 19:15:46 GMT
+# Thu, 21 Apr 2022 13:50:47 GMT
 ENV DATA_DIR=/catalogue-data
-# Tue, 05 Apr 2022 19:15:47 GMT
+# Thu, 21 Apr 2022 13:50:48 GMT
 ENV JAVA_OPTS=-Dorg.eclipse.jetty.annotations.AnnotationParser.LEVEL=OFF         -Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true         -Xms512M -Xss512M -Xmx2G -XX:+UseConcMarkSweepGC         -Dgeonetwork.resources.dir=/catalogue-data/resources         -Dgeonetwork.data.dir=/catalogue-data         -Dgeonetwork.codeList.dir=/var/lib/jetty/webapps/geonetwork/WEB-INF/data/config/codelist         -Dgeonetwork.schema.dir=/var/lib/jetty/webapps/geonetwork/WEB-INF/data/config/schema_plugins
-# Tue, 05 Apr 2022 19:15:48 GMT
+# Thu, 21 Apr 2022 13:50:49 GMT
 USER root
-# Tue, 05 Apr 2022 19:15:52 GMT
+# Thu, 21 Apr 2022 13:50:53 GMT
 RUN apt-get -y update &&     apt-get -y install curl &&     rm -rf /var/lib/apt/lists/* &&     mkdir -p /${DATA_DIR} &&     chown -R jetty:jetty ${DATA_DIR} &&     mkdir -p /var/lib/jetty/webapps/geonetwork &&     chown -R jetty:jetty /var/lib/jetty/webapps/geonetwork
-# Tue, 05 Apr 2022 19:15:52 GMT
+# Thu, 21 Apr 2022 13:50:53 GMT
 USER jetty
-# Tue, 05 Apr 2022 19:15:53 GMT
+# Thu, 21 Apr 2022 13:50:54 GMT
 ENV GN_FILE=geonetwork.war
-# Tue, 05 Apr 2022 19:15:54 GMT
+# Thu, 21 Apr 2022 13:50:55 GMT
 ENV GN_VERSION=4.0.6
-# Tue, 05 Apr 2022 19:15:55 GMT
+# Thu, 21 Apr 2022 13:50:56 GMT
 ENV GN_DOWNLOAD_MD5=793732cb9c723e73857a4da73b78451b
-# Tue, 05 Apr 2022 19:17:14 GMT
+# Thu, 21 Apr 2022 13:52:14 GMT
 RUN cd /var/lib/jetty/webapps/geonetwork/ &&      curl -fSL -o geonetwork.war      https://sourceforge.net/projects/geonetwork/files/GeoNetwork_opensource/v${GN_VERSION}/${GN_FILE}/download &&      echo "${GN_DOWNLOAD_MD5} *geonetwork.war" | md5sum -c &&      unzip -q geonetwork.war &&      rm geonetwork.war
-# Tue, 05 Apr 2022 19:17:15 GMT
+# Thu, 21 Apr 2022 13:52:16 GMT
 COPY file:ca46ab251df3dfc253cb04cf962e7266e42428fab31ad2f583a7c86b06d5f778 in /geonetwork-entrypoint.sh 
-# Tue, 05 Apr 2022 19:17:15 GMT
+# Thu, 21 Apr 2022 13:52:16 GMT
 ENTRYPOINT ["/geonetwork-entrypoint.sh"]
-# Tue, 05 Apr 2022 19:17:16 GMT
+# Thu, 21 Apr 2022 13:52:17 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
-# Tue, 05 Apr 2022 19:17:17 GMT
+# Thu, 21 Apr 2022 13:52:18 GMT
 VOLUME [/catalogue-data]
 ```
 
 -	Layers:
-	-	`sha256:fa223d8c149d7beec8e997e1415ee4961473cafaf88a932f70baf3da56f2c564`  
-		Last Modified: Tue, 29 Mar 2022 00:49:33 GMT  
-		Size: 53.6 MB (53633710 bytes)  
+	-	`sha256:83d5dcfea08e6927083bc886bf182fc39d87bb04b54b63002ac0c4c0b9aab682`  
+		Last Modified: Wed, 20 Apr 2022 04:35:19 GMT  
+		Size: 53.6 MB (53633096 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:17ffbd2ab15985c19f9e1e3199cdce06090266d20d11dbd3d55fba45de2fcc27`  
-		Last Modified: Wed, 30 Mar 2022 02:24:13 GMT  
-		Size: 4.9 MB (4938638 bytes)  
+	-	`sha256:45cfa86b7b1aca6d694057e4d42ee1440527f41c00b9e577df729244380c9eba`  
+		Last Modified: Wed, 20 Apr 2022 06:54:10 GMT  
+		Size: 4.9 MB (4938663 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3953e76cee2ab175d909ccec1a3399912a690ad621ae88cff787d98419b97bb`  
-		Last Modified: Wed, 30 Mar 2022 02:24:14 GMT  
-		Size: 10.7 MB (10656993 bytes)  
+	-	`sha256:5c79b19335f27cc78840bf9159e875322f3252ac06113c73756f9d4fba905f9b`  
+		Last Modified: Wed, 20 Apr 2022 06:54:10 GMT  
+		Size: 10.7 MB (10656971 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6a7231566decf8fbce03d4780325fa68b475237a1f9fa0638d4178aa8c09aa71`  
-		Last Modified: Wed, 30 Mar 2022 09:31:31 GMT  
-		Size: 5.6 MB (5649049 bytes)  
+	-	`sha256:579ba6ed012bb5067169efabd19955cc8bc89ef5df54b8aac8fa222e892c1e88`  
+		Last Modified: Wed, 20 Apr 2022 10:58:19 GMT  
+		Size: 5.6 MB (5649495 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0f7d2aecfeabca96ca23febcdac6ae00782336d0eca6ae914bbbe4e77ee86bd7`  
-		Last Modified: Wed, 30 Mar 2022 09:34:37 GMT  
-		Size: 209.0 B  
+	-	`sha256:755e558edd97c18a34166be3c67f631c203f345ef3b3369335202ce71db8b957`  
+		Last Modified: Wed, 20 Apr 2022 11:02:14 GMT  
+		Size: 211.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:112cd66392a9cb85905ca9fa430b7dd08123fa3fdf678b82a1e7c386df8e5255`  
-		Last Modified: Wed, 30 Mar 2022 09:34:42 GMT  
-		Size: 40.7 MB (40653745 bytes)  
+	-	`sha256:84c5920902c15c039903a1feea0bad9ce94bc8651ec697b98e01216aa9f1dd3c`  
+		Last Modified: Wed, 20 Apr 2022 11:02:20 GMT  
+		Size: 40.7 MB (40653697 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8b7dc0e30be4dabf0ab31630b9cf2b9fedc37a8877e2a93c927cea6f179c50c5`  
-		Last Modified: Tue, 05 Apr 2022 18:16:14 GMT  
-		Size: 9.9 MB (9907182 bytes)  
+	-	`sha256:b08470cca8315674d7f5cdbecd2e878e69feb5e274282da69dafc2709f206124`  
+		Last Modified: Thu, 21 Apr 2022 04:38:03 GMT  
+		Size: 9.9 MB (9907183 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e847d799b3b8d2ec3d63d127dd138c5516aac483e9a9c878d191c43951f78af`  
-		Last Modified: Tue, 05 Apr 2022 18:16:13 GMT  
-		Size: 1.4 KB (1441 bytes)  
+	-	`sha256:0718ef2b72452c3b823614506b631ac8ac7a619fe5e747142758c7d44faa9e26`  
+		Last Modified: Thu, 21 Apr 2022 04:38:02 GMT  
+		Size: 1.4 KB (1440 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dcaa97543c39ebd8d357a0249f390b815758a8a61d5a172014802d7e604f98fb`  
-		Last Modified: Tue, 05 Apr 2022 19:17:55 GMT  
-		Size: 219.0 B  
+	-	`sha256:c222ff3a65e8da33ac802325c5c5267f08695534ba55ba730ad8b00fd86b5ba9`  
+		Last Modified: Thu, 21 Apr 2022 13:53:52 GMT  
+		Size: 220.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f23d4b42ea40764617971d073808447f88b845db1a715daa2b9f9b8a4f21ecc6`  
-		Last Modified: Tue, 05 Apr 2022 19:18:20 GMT  
-		Size: 356.4 MB (356365728 bytes)  
+	-	`sha256:34ec88ec0a3f5383404c4f5a7e6fc28de6fe873bac48d867c6361a57092e9c04`  
+		Last Modified: Thu, 21 Apr 2022 13:54:16 GMT  
+		Size: 356.4 MB (356365742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b65c82e6b14a777b84b88ad6a0cf4d948378462f6f1bf664abf6a5f56e27afa7`  
-		Last Modified: Tue, 05 Apr 2022 19:17:55 GMT  
+	-	`sha256:d1e49b7ff201b881dbda52224eed45b67998482641f376c15d5b1854f2961b80`  
+		Last Modified: Thu, 21 Apr 2022 13:53:52 GMT  
 		Size: 957.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
