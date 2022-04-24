@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:390d8258071beeb22a999fbc9fe95fc5f4a6c4558671e7a8a1f9e103d4d8fa0f`
-- Created: `2022-04-05T23:17:06.49002837Z`
+- Image ID: `sha256:514e0e592ac07ce88f87d2c278f7625e54b1c78c6ba225ec07f95415243a0b39`
+- Created: `2022-04-22T01:51:00.800115904Z`
 - Virtual Size: ~ 1.02 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -169,14 +169,9 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bash=5.0-6ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.0-6ubuntu1.1.dsc' bash_5.0-6ubuntu1.1.dsc 2418 SHA512:283e6fa78ac1a13e6e3a70efa6f67817871b12c1fe099475dfe6b87fd9f2926406446fabb72a66d8546ad320976761ffe68867a1e90bd6a5f97c07e851df9933
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.0.orig.tar.xz' bash_5.0.orig.tar.xz 5554808 SHA512:f3a719997a8515bae7e84701afafc9b2cdd23c95d29533adb678000b08eba968450b93d5576c3cffbeccbdcd95b713db830e8efeda689258dcfe6f15f0c5dec4
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.0-6ubuntu1.1.debian.tar.xz' bash_5.0-6ubuntu1.1.debian.tar.xz 74356 SHA512:450eacea5316075107da9951356021091dfc96889057769590ae8505fa851a99d2f48ce300281b8a448c87e9573cfa2f68a04369ee97955be204e73fa2fd6385
-```
 
 ### `dpkg` source package: `bzip2=1.0.8-2`
 
@@ -627,11 +622,11 @@ $ apt-get source -qq --print-uris grep=3.4-1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/grep/grep_3.4-1.debian.tar.xz' grep_3.4-1.debian.tar.xz 104364 SHA256:582d181804ce72fcfc4c6a9f13ea1dd73ad04c2723b5da346b69ee5cd24a7d08
 ```
 
-### `dpkg` source package: `gzip=1.10-0ubuntu4`
+### `dpkg` source package: `gzip=1.10-0ubuntu4.1`
 
 Binary Packages:
 
-- `gzip=1.10-0ubuntu4`
+- `gzip=1.10-0ubuntu4.1`
 
 Licenses: (parsed from: `/usr/share/doc/gzip/copyright`)
 
@@ -640,10 +635,10 @@ Licenses: (parsed from: `/usr/share/doc/gzip/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gzip=1.10-0ubuntu4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.10-0ubuntu4.dsc' gzip_1.10-0ubuntu4.dsc 2134 SHA256:b1b05c873448fe2ae1029f55cfea8ae5139d0d88a66ed97768da911e833c9578
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.10.orig.tar.gz' gzip_1.10.orig.tar.gz 1201421 SHA256:c91f74430bf7bc20402e1f657d0b252cb80aa66ba333a25704512af346633c68
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.10-0ubuntu4.debian.tar.xz' gzip_1.10-0ubuntu4.debian.tar.xz 26592 SHA256:da4c6907f9769be8622349c1a5b81ba5d2ab03c82f1e116c2f3f1a9f00bb8055
+$ apt-get source -qq --print-uris gzip=1.10-0ubuntu4.1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.10-0ubuntu4.1.dsc' gzip_1.10-0ubuntu4.1.dsc 2113 SHA512:27a7c1871b33b62f6cada63d43f43eae1f3a9a3d92b10a28a28ef7f85893aba3a9513ac031c96a0dedbdaa0507aafe8922631460ff2890ab663fb732283ba073
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.10.orig.tar.gz' gzip_1.10.orig.tar.gz 1201421 SHA512:7939043e74554ced0c1c05d354ab4eb36cd6dce89ad79d02ccdc5ed6b7ee390759689b2d47c07227b9b44a62851afe7c76c4cae9f92527d999f3f1b4df1cccff
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.10-0ubuntu4.1.debian.tar.xz' gzip_1.10-0ubuntu4.1.debian.tar.xz 31144 SHA512:26096584c400dc78d892f1721ad28778aa1a0c0476337bd37589c6d985f8636aad9c7fde55385c25ce1c8420a40c6ca33c06887f18b855ba8a5f45b980fe6c99
 ```
 
 ### `dpkg` source package: `hostname=3.23`
@@ -1587,12 +1582,12 @@ $ apt-get source -qq --print-uris sysstat=12.2.0-2ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sysstat/sysstat_12.2.0-2ubuntu0.1.debian.tar.xz' sysstat_12.2.0-2ubuntu0.1.debian.tar.xz 34848 SHA512:6c8bc728a7d6c4eb613f68366c8852349cceac058b56af764d8145d7c787877a9395e02b819402fa904e27aff4b3857ba2697db28f5635e156f9aa38d891b992
 ```
 
-### `dpkg` source package: `systemd=245.4-4ubuntu3.15`
+### `dpkg` source package: `systemd=245.4-4ubuntu3.16`
 
 Binary Packages:
 
-- `libsystemd0:amd64=245.4-4ubuntu3.15`
-- `libudev1:amd64=245.4-4ubuntu3.15`
+- `libsystemd0:amd64=245.4-4ubuntu3.16`
+- `libudev1:amd64=245.4-4ubuntu3.16`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1608,10 +1603,10 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris systemd=245.4-4ubuntu3.15
-'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.15.dsc' systemd_245.4-4ubuntu3.15.dsc 4954 SHA512:996d262b9ce6febe25690e087bc12c2da957a9a1554dd4d186346187d0af144c3759f14e46cc052601684c9c1c65dd76ffaca0fbaad19d7819ade41d4f045e26
-'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4.orig.tar.gz' systemd_245.4.orig.tar.gz 9000780 SHA512:02036bb1ab05301a9d0dfdd4b9c9376e90134474482531e6e292122380be2f24f99177493dd3af6f8af1a8ed2599ee0996da91a3b1b7872bbfaf26a1c3e61b4c
-'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.15.debian.tar.xz' systemd_245.4-4ubuntu3.15.debian.tar.xz 273168 SHA512:775ee33b35d6a9891ded16b381fb788f9d0cb01020720de5102175a9e4024a53a358d8b13928f2a2fb7cc2b05bf20bd80a913b314e69111b9dfa167a1ec89e45
+$ apt-get source -qq --print-uris systemd=245.4-4ubuntu3.16
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.16.dsc' systemd_245.4-4ubuntu3.16.dsc 5262 SHA512:15c9908fcefaffd7d6ad5fa47d5dd6f7049a64b86bd1d440d9d8e207486b660d206f62b53e6e26f62eda9a899f0259557cc0252f5f59dde63630829a70d3ebfb
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4.orig.tar.gz' systemd_245.4.orig.tar.gz 9000780 SHA512:02036bb1ab05301a9d0dfdd4b9c9376e90134474482531e6e292122380be2f24f99177493dd3af6f8af1a8ed2599ee0996da91a3b1b7872bbfaf26a1c3e61b4c
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.16.debian.tar.xz' systemd_245.4-4ubuntu3.16.debian.tar.xz 275576 SHA512:070a7299594ec7ab0c36a005b42823f2a7db3d1612272b6e73ac034a96321b5d5f2ede3f6b1fc578105f9ad87223b96e490291da2b722fc9b6be4985258ee262
 ```
 
 ### `dpkg` source package: `sysvinit=2.96-2.1ubuntu1`
@@ -1811,12 +1806,12 @@ $ apt-get source -qq --print-uris wget=1.20.3-1ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.20.3-1ubuntu2.debian.tar.xz' wget_1.20.3-1ubuntu2.debian.tar.xz 64192 SHA512:39bcd9010374f8f99778e12cee5df9af16c734c14229b96c4d74de222207966c99448ff539257f8a642d92b67e7656618bd1b29a29ed1ac2c58df68ce1496af4
 ```
 
-### `dpkg` source package: `xz-utils=5.2.4-1ubuntu1`
+### `dpkg` source package: `xz-utils=5.2.4-1ubuntu1.1`
 
 Binary Packages:
 
-- `liblzma5:amd64=5.2.4-1ubuntu1`
-- `xz-utils=5.2.4-1ubuntu1`
+- `liblzma5:amd64=5.2.4-1ubuntu1.1`
+- `xz-utils=5.2.4-1ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`, `/usr/share/doc/xz-utils/copyright`)
 
@@ -1836,9 +1831,15 @@ Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`, `/usr/share/doc/xz-
 - `permissive-nowarranty`
 - `probably-PD`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris xz-utils=5.2.4-1ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.2.4-1ubuntu1.1.dsc' xz-utils_5.2.4-1ubuntu1.1.dsc 2604 SHA512:458e4bd7a0823dc7e5f1dcf11bd4d0653b5c3f2474835a8422918faa25ab5b5ad005aa42af70bb9a993480ae1fe4e787965b19bd2ba4bee2ddedcaa24c10376c
+'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.2.4.orig.tar.xz' xz-utils_5.2.4.orig.tar.xz 1053868 SHA512:00db7dd31a61541b1ce6946e0f21106f418dd1ac3f27cdb8682979cbc3bd777cd6dd1f04f9ba257a0a7e24041e15ca40d0dd5c130380dce62280af67a0beb97f
+'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.2.4.orig.tar.xz.asc' xz-utils_5.2.4.orig.tar.xz.asc 879 SHA512:dbfce0556bc85545ce3566a01c25e4876f560409fc2d48f2dc382b10fbd2538c61d8f2c3667d86fc7313aec86c05e53926015000320f19615e97875adae42450
+'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.2.4-1ubuntu1.1.debian.tar.xz' xz-utils_5.2.4-1ubuntu1.1.debian.tar.xz 136944 SHA512:627df70d2ff3b0227d6dd74137a660c5d722cce059ee36c1db8a50105ba6c236910bba5687290a7d88c9a53ead2a3b3ab00216f279f26a57d7e4020c6db23a24
+```
 
 ### `dpkg` source package: `zlib=1:1.2.11.dfsg-2ubuntu1.3`
 
