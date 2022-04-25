@@ -212,7 +212,7 @@ CMD ["help"]
 ## `flink:1.11-java11`
 
 ```console
-$ docker pull flink@sha256:ef7ad3abf75e977d894452b05a63dafd402c7b29a4f1acf928a16b08ed5bf857
+$ docker pull flink@sha256:204786be592691de0deaec2fa000cfd0092613e91c145ae74e64dc2ae1c27f43
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -222,14 +222,14 @@ $ docker pull flink@sha256:ef7ad3abf75e977d894452b05a63dafd402c7b29a4f1acf928a16
 ### `flink:1.11-java11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:2deeb7af83a03302c30a23fd5677fad1878e2107698919d7dcf680ee1087b316
+$ docker pull flink@sha256:d5c8e70e9ec2ced03645fd0058b1044597ce8cd59e4908b2ba25601013ea2a12
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **435.4 MB (435385361 bytes)**  
+-	Total Size: **435.7 MB (435702568 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c43fb14b3abe02286bd84a85c56b65e16041c11cf7883ffe52b6d4e5e4de89d3`
+-	Image ID: `sha256:131863eeb3f76149f8c73e617a95e64ac4f3462aba052bb1880a279eab195d1b`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -252,35 +252,35 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 20 Apr 2022 10:53:58 GMT
 ENV LANG=C.UTF-8
-# Wed, 20 Apr 2022 10:53:58 GMT
-ENV JAVA_VERSION=11.0.14.1
-# Wed, 20 Apr 2022 10:54:05 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_x64_linux_11.0.14.1_1.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_aarch64_linux_11.0.14.1_1.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Thu, 21 Apr 2022 01:23:21 GMT
+# Mon, 25 Apr 2022 18:27:13 GMT
+ENV JAVA_VERSION=11.0.15
+# Mon, 25 Apr 2022 18:27:19 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_x64_linux_11.0.15_10.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_aarch64_linux_11.0.15_10.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
+# Mon, 25 Apr 2022 19:25:05 GMT
 RUN set -ex;   apt-get update;   apt-get -y install libsnappy1v5 gettext-base;   rm -rf /var/lib/apt/lists/*
-# Thu, 21 Apr 2022 01:23:21 GMT
+# Mon, 25 Apr 2022 19:25:05 GMT
 ENV GOSU_VERSION=1.11
-# Thu, 21 Apr 2022 01:23:57 GMT
+# Mon, 25 Apr 2022 19:25:47 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in ha.pool.sks-keyservers.net $(shuf -e                           hkp://p80.pool.sks-keyservers.net:80                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Thu, 21 Apr 2022 01:23:57 GMT
+# Mon, 25 Apr 2022 19:25:47 GMT
 ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.11.6/flink-1.11.6-bin-scala_2.12.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.11.6/flink-1.11.6-bin-scala_2.12.tgz.asc GPG_KEY=19F2195E1B4816D765A2C324C2EED7B111D464BA CHECK_GPG=true
-# Thu, 21 Apr 2022 01:23:57 GMT
+# Mon, 25 Apr 2022 19:25:47 GMT
 ENV FLINK_HOME=/opt/flink
-# Thu, 21 Apr 2022 01:23:57 GMT
+# Mon, 25 Apr 2022 19:25:47 GMT
 ENV PATH=/opt/flink/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 21 Apr 2022 01:23:58 GMT
+# Mon, 25 Apr 2022 19:25:47 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Thu, 21 Apr 2022 01:23:58 GMT
+# Mon, 25 Apr 2022 19:25:47 GMT
 WORKDIR /opt/flink
-# Thu, 21 Apr 2022 01:24:29 GMT
+# Mon, 25 Apr 2022 19:27:01 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in ha.pool.sks-keyservers.net $(shuf -e                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;
-# Thu, 21 Apr 2022 01:24:30 GMT
+# Mon, 25 Apr 2022 19:27:02 GMT
 COPY file:5118b9265b7774ef32131b2cbf42fd9bf26c640be3ebb42b4972a3ae8ed5125e in / 
-# Thu, 21 Apr 2022 01:24:30 GMT
+# Mon, 25 Apr 2022 19:27:02 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 21 Apr 2022 01:24:30 GMT
+# Mon, 25 Apr 2022 19:27:02 GMT
 EXPOSE 6123 8081
-# Thu, 21 Apr 2022 01:24:30 GMT
+# Mon, 25 Apr 2022 19:27:02 GMT
 CMD ["help"]
 ```
 
@@ -305,33 +305,33 @@ CMD ["help"]
 		Last Modified: Wed, 20 Apr 2022 11:12:19 GMT  
 		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3adba0a35f28cdd034bef4df08d640578ed8f0c6b971084706a9203183d6387c`  
-		Last Modified: Wed, 20 Apr 2022 11:12:26 GMT  
-		Size: 46.9 MB (46880152 bytes)  
+	-	`sha256:ffa59d9ab33cd135fc03bd1449112beaf19d1eb922727cb5c81008ff68b12f95`  
+		Last Modified: Mon, 25 Apr 2022 18:41:27 GMT  
+		Size: 47.2 MB (47197425 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:26f374c1bb5c9222c84ccb239360746ff9ee8a466d78d1bf0a3db2276c0a39c9`  
-		Last Modified: Thu, 21 Apr 2022 01:37:10 GMT  
-		Size: 568.7 KB (568729 bytes)  
+	-	`sha256:42f33b442930d9c4898594904d7ccc87ce6d8af7ec09222e30c3d9891db74a63`  
+		Last Modified: Mon, 25 Apr 2022 19:33:09 GMT  
+		Size: 568.7 KB (568713 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0908e4bf21d0297b8aaa642a50135ae9d59e9103cee9ed5d8ff4d64c44af7f9d`  
-		Last Modified: Thu, 21 Apr 2022 01:37:08 GMT  
-		Size: 900.5 KB (900511 bytes)  
+	-	`sha256:9f46d5414ea9e1ceb1686cc900c6645e1324f954736413145e3eb8bac9dc3d2b`  
+		Last Modified: Mon, 25 Apr 2022 19:33:07 GMT  
+		Size: 900.5 KB (900509 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7873b981bf1bef35a6e37dcc1d499b312f61a954481f707907ff178e580bfd68`  
-		Last Modified: Thu, 21 Apr 2022 01:37:07 GMT  
-		Size: 4.6 KB (4605 bytes)  
+	-	`sha256:e43b303e27907a35a428feb1c3ccbfef927a11bfd220ff5c1660e5e6ef71ca1b`  
+		Last Modified: Mon, 25 Apr 2022 19:33:06 GMT  
+		Size: 4.6 KB (4604 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d009ca12ed08a1e46c14453a406ff9a9abcf10f5fc976821c7091b14f7d895c`  
-		Last Modified: Thu, 21 Apr 2022 01:37:07 GMT  
-		Size: 147.0 B  
+	-	`sha256:da0c79a7a02767556bbe5e3867101792a798ece1d1540107ed10707d5257cc6c`  
+		Last Modified: Mon, 25 Apr 2022 19:33:06 GMT  
+		Size: 148.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6dddf279ca88bd0dc5b3e5ac42e16a4031f894c4f4983cd8fd0be329b301333f`  
-		Last Modified: Thu, 21 Apr 2022 01:37:22 GMT  
-		Size: 310.4 MB (310399471 bytes)  
+	-	`sha256:50adef860d9028419129cc0e21d8827011ecefc49fea0622d20e29a97eb7e1a9`  
+		Last Modified: Mon, 25 Apr 2022 19:33:20 GMT  
+		Size: 310.4 MB (310399422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:681db9e385c6baed252fc98c553f420f037b4712ecd2f620da086a696e87a079`  
-		Last Modified: Thu, 21 Apr 2022 01:37:07 GMT  
-		Size: 1.7 KB (1688 bytes)  
+	-	`sha256:9847519b5ca896421893532195df0a9674c8f5b6f19e59b340ffddadfb292114`  
+		Last Modified: Mon, 25 Apr 2022 19:33:06 GMT  
+		Size: 1.7 KB (1689 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `flink:1.11-java8`
@@ -587,7 +587,7 @@ CMD ["help"]
 ## `flink:1.11-scala_2.11-java11`
 
 ```console
-$ docker pull flink@sha256:535235327bab75dd1cdb29a0662d80facfdf9d942a05578e78b5a42ee34eb7d5
+$ docker pull flink@sha256:411cb28c21a356a065adac70dff4850f001432cfa38d7b1dcb448d041b46d7ba
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -597,14 +597,14 @@ $ docker pull flink@sha256:535235327bab75dd1cdb29a0662d80facfdf9d942a05578e78b5a
 ### `flink:1.11-scala_2.11-java11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:beb7152936ec5482621abfacf3b9972bcb2eb6b04cb11759abfe45f651d9977a
+$ docker pull flink@sha256:4a45e3d304505bb1bbae58e0b7d2c98a2a07ca4b0537efce00f35029b30d9439
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **444.8 MB (444768676 bytes)**  
+-	Total Size: **445.1 MB (445085929 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1ccdda080d622be199e4580eaf0d4985d25dc78168cc2b8703dcc872397802b4`
+-	Image ID: `sha256:b6e0118d04d17a3d4bfc81160809359f66bb69547cf64442fbb959c50e2ff80b`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -627,35 +627,35 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 20 Apr 2022 10:53:58 GMT
 ENV LANG=C.UTF-8
-# Wed, 20 Apr 2022 10:53:58 GMT
-ENV JAVA_VERSION=11.0.14.1
-# Wed, 20 Apr 2022 10:54:05 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_x64_linux_11.0.14.1_1.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_aarch64_linux_11.0.14.1_1.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Thu, 21 Apr 2022 01:23:21 GMT
+# Mon, 25 Apr 2022 18:27:13 GMT
+ENV JAVA_VERSION=11.0.15
+# Mon, 25 Apr 2022 18:27:19 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_x64_linux_11.0.15_10.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_aarch64_linux_11.0.15_10.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
+# Mon, 25 Apr 2022 19:25:05 GMT
 RUN set -ex;   apt-get update;   apt-get -y install libsnappy1v5 gettext-base;   rm -rf /var/lib/apt/lists/*
-# Thu, 21 Apr 2022 01:23:21 GMT
+# Mon, 25 Apr 2022 19:25:05 GMT
 ENV GOSU_VERSION=1.11
-# Thu, 21 Apr 2022 01:23:57 GMT
+# Mon, 25 Apr 2022 19:25:47 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in ha.pool.sks-keyservers.net $(shuf -e                           hkp://p80.pool.sks-keyservers.net:80                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Thu, 21 Apr 2022 01:26:18 GMT
+# Mon, 25 Apr 2022 19:27:11 GMT
 ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.11.6/flink-1.11.6-bin-scala_2.11.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.11.6/flink-1.11.6-bin-scala_2.11.tgz.asc GPG_KEY=19F2195E1B4816D765A2C324C2EED7B111D464BA CHECK_GPG=true
-# Thu, 21 Apr 2022 01:26:18 GMT
+# Mon, 25 Apr 2022 19:27:11 GMT
 ENV FLINK_HOME=/opt/flink
-# Thu, 21 Apr 2022 01:26:18 GMT
+# Mon, 25 Apr 2022 19:27:12 GMT
 ENV PATH=/opt/flink/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 21 Apr 2022 01:26:19 GMT
+# Mon, 25 Apr 2022 19:27:12 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Thu, 21 Apr 2022 01:26:19 GMT
+# Mon, 25 Apr 2022 19:27:12 GMT
 WORKDIR /opt/flink
-# Thu, 21 Apr 2022 01:27:27 GMT
+# Mon, 25 Apr 2022 19:28:20 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in ha.pool.sks-keyservers.net $(shuf -e                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;
-# Thu, 21 Apr 2022 01:27:28 GMT
+# Mon, 25 Apr 2022 19:28:20 GMT
 COPY file:5118b9265b7774ef32131b2cbf42fd9bf26c640be3ebb42b4972a3ae8ed5125e in / 
-# Thu, 21 Apr 2022 01:27:28 GMT
+# Mon, 25 Apr 2022 19:28:20 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 21 Apr 2022 01:27:28 GMT
+# Mon, 25 Apr 2022 19:28:20 GMT
 EXPOSE 6123 8081
-# Thu, 21 Apr 2022 01:27:28 GMT
+# Mon, 25 Apr 2022 19:28:21 GMT
 CMD ["help"]
 ```
 
@@ -680,32 +680,32 @@ CMD ["help"]
 		Last Modified: Wed, 20 Apr 2022 11:12:19 GMT  
 		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3adba0a35f28cdd034bef4df08d640578ed8f0c6b971084706a9203183d6387c`  
-		Last Modified: Wed, 20 Apr 2022 11:12:26 GMT  
-		Size: 46.9 MB (46880152 bytes)  
+	-	`sha256:ffa59d9ab33cd135fc03bd1449112beaf19d1eb922727cb5c81008ff68b12f95`  
+		Last Modified: Mon, 25 Apr 2022 18:41:27 GMT  
+		Size: 47.2 MB (47197425 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:26f374c1bb5c9222c84ccb239360746ff9ee8a466d78d1bf0a3db2276c0a39c9`  
-		Last Modified: Thu, 21 Apr 2022 01:37:10 GMT  
-		Size: 568.7 KB (568729 bytes)  
+	-	`sha256:42f33b442930d9c4898594904d7ccc87ce6d8af7ec09222e30c3d9891db74a63`  
+		Last Modified: Mon, 25 Apr 2022 19:33:09 GMT  
+		Size: 568.7 KB (568713 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0908e4bf21d0297b8aaa642a50135ae9d59e9103cee9ed5d8ff4d64c44af7f9d`  
-		Last Modified: Thu, 21 Apr 2022 01:37:08 GMT  
-		Size: 900.5 KB (900511 bytes)  
+	-	`sha256:9f46d5414ea9e1ceb1686cc900c6645e1324f954736413145e3eb8bac9dc3d2b`  
+		Last Modified: Mon, 25 Apr 2022 19:33:07 GMT  
+		Size: 900.5 KB (900509 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a1403fffa7c7e3cb5de7c06485c786692a960309be670ff77602d1b02e15f8b0`  
-		Last Modified: Thu, 21 Apr 2022 01:38:11 GMT  
-		Size: 4.6 KB (4602 bytes)  
+	-	`sha256:70a9a76217f2a01cde359c761f12db8dd34de32d227cf57fda5f5fc6226fa68c`  
+		Last Modified: Mon, 25 Apr 2022 19:33:38 GMT  
+		Size: 4.6 KB (4601 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:559001a40b933c3fd2015a9f40af8da124a6d4eb6598f13ad119dabf7307f585`  
-		Last Modified: Thu, 21 Apr 2022 01:38:11 GMT  
+	-	`sha256:f2dda53900a86a4672a3a0d30aa298cfd61e91828cc0c8442edb5b889cc49b66`  
+		Last Modified: Mon, 25 Apr 2022 19:33:39 GMT  
 		Size: 148.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6cc7211a5e4bead61b5de3f9ba34d7f2d5a85a2b486ce63c769de705dc81176`  
-		Last Modified: Thu, 21 Apr 2022 01:38:26 GMT  
-		Size: 319.8 MB (319782788 bytes)  
+	-	`sha256:1f291455d836eeeb6a79bb8d6cc1078f77804a3afa9487ec882aa1a3d65a9252`  
+		Last Modified: Mon, 25 Apr 2022 19:33:54 GMT  
+		Size: 319.8 MB (319782787 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7c9e7af1af4be5f2da8a6744606428745e5fe567460f3eec532a5192872dadc1`  
-		Last Modified: Thu, 21 Apr 2022 01:38:11 GMT  
+	-	`sha256:e0a2dc7ce656c7aa5e1eef01032e5edcfd7b8bb07273c0f8ddf79f1c6182d13b`  
+		Last Modified: Mon, 25 Apr 2022 19:33:38 GMT  
 		Size: 1.7 KB (1688 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -962,7 +962,7 @@ CMD ["help"]
 ## `flink:1.11-scala_2.12-java11`
 
 ```console
-$ docker pull flink@sha256:ef7ad3abf75e977d894452b05a63dafd402c7b29a4f1acf928a16b08ed5bf857
+$ docker pull flink@sha256:204786be592691de0deaec2fa000cfd0092613e91c145ae74e64dc2ae1c27f43
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -972,14 +972,14 @@ $ docker pull flink@sha256:ef7ad3abf75e977d894452b05a63dafd402c7b29a4f1acf928a16
 ### `flink:1.11-scala_2.12-java11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:2deeb7af83a03302c30a23fd5677fad1878e2107698919d7dcf680ee1087b316
+$ docker pull flink@sha256:d5c8e70e9ec2ced03645fd0058b1044597ce8cd59e4908b2ba25601013ea2a12
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **435.4 MB (435385361 bytes)**  
+-	Total Size: **435.7 MB (435702568 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c43fb14b3abe02286bd84a85c56b65e16041c11cf7883ffe52b6d4e5e4de89d3`
+-	Image ID: `sha256:131863eeb3f76149f8c73e617a95e64ac4f3462aba052bb1880a279eab195d1b`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -1002,35 +1002,35 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 20 Apr 2022 10:53:58 GMT
 ENV LANG=C.UTF-8
-# Wed, 20 Apr 2022 10:53:58 GMT
-ENV JAVA_VERSION=11.0.14.1
-# Wed, 20 Apr 2022 10:54:05 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_x64_linux_11.0.14.1_1.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_aarch64_linux_11.0.14.1_1.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Thu, 21 Apr 2022 01:23:21 GMT
+# Mon, 25 Apr 2022 18:27:13 GMT
+ENV JAVA_VERSION=11.0.15
+# Mon, 25 Apr 2022 18:27:19 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_x64_linux_11.0.15_10.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_aarch64_linux_11.0.15_10.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
+# Mon, 25 Apr 2022 19:25:05 GMT
 RUN set -ex;   apt-get update;   apt-get -y install libsnappy1v5 gettext-base;   rm -rf /var/lib/apt/lists/*
-# Thu, 21 Apr 2022 01:23:21 GMT
+# Mon, 25 Apr 2022 19:25:05 GMT
 ENV GOSU_VERSION=1.11
-# Thu, 21 Apr 2022 01:23:57 GMT
+# Mon, 25 Apr 2022 19:25:47 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in ha.pool.sks-keyservers.net $(shuf -e                           hkp://p80.pool.sks-keyservers.net:80                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Thu, 21 Apr 2022 01:23:57 GMT
+# Mon, 25 Apr 2022 19:25:47 GMT
 ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.11.6/flink-1.11.6-bin-scala_2.12.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.11.6/flink-1.11.6-bin-scala_2.12.tgz.asc GPG_KEY=19F2195E1B4816D765A2C324C2EED7B111D464BA CHECK_GPG=true
-# Thu, 21 Apr 2022 01:23:57 GMT
+# Mon, 25 Apr 2022 19:25:47 GMT
 ENV FLINK_HOME=/opt/flink
-# Thu, 21 Apr 2022 01:23:57 GMT
+# Mon, 25 Apr 2022 19:25:47 GMT
 ENV PATH=/opt/flink/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 21 Apr 2022 01:23:58 GMT
+# Mon, 25 Apr 2022 19:25:47 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Thu, 21 Apr 2022 01:23:58 GMT
+# Mon, 25 Apr 2022 19:25:47 GMT
 WORKDIR /opt/flink
-# Thu, 21 Apr 2022 01:24:29 GMT
+# Mon, 25 Apr 2022 19:27:01 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in ha.pool.sks-keyservers.net $(shuf -e                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;
-# Thu, 21 Apr 2022 01:24:30 GMT
+# Mon, 25 Apr 2022 19:27:02 GMT
 COPY file:5118b9265b7774ef32131b2cbf42fd9bf26c640be3ebb42b4972a3ae8ed5125e in / 
-# Thu, 21 Apr 2022 01:24:30 GMT
+# Mon, 25 Apr 2022 19:27:02 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 21 Apr 2022 01:24:30 GMT
+# Mon, 25 Apr 2022 19:27:02 GMT
 EXPOSE 6123 8081
-# Thu, 21 Apr 2022 01:24:30 GMT
+# Mon, 25 Apr 2022 19:27:02 GMT
 CMD ["help"]
 ```
 
@@ -1055,33 +1055,33 @@ CMD ["help"]
 		Last Modified: Wed, 20 Apr 2022 11:12:19 GMT  
 		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3adba0a35f28cdd034bef4df08d640578ed8f0c6b971084706a9203183d6387c`  
-		Last Modified: Wed, 20 Apr 2022 11:12:26 GMT  
-		Size: 46.9 MB (46880152 bytes)  
+	-	`sha256:ffa59d9ab33cd135fc03bd1449112beaf19d1eb922727cb5c81008ff68b12f95`  
+		Last Modified: Mon, 25 Apr 2022 18:41:27 GMT  
+		Size: 47.2 MB (47197425 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:26f374c1bb5c9222c84ccb239360746ff9ee8a466d78d1bf0a3db2276c0a39c9`  
-		Last Modified: Thu, 21 Apr 2022 01:37:10 GMT  
-		Size: 568.7 KB (568729 bytes)  
+	-	`sha256:42f33b442930d9c4898594904d7ccc87ce6d8af7ec09222e30c3d9891db74a63`  
+		Last Modified: Mon, 25 Apr 2022 19:33:09 GMT  
+		Size: 568.7 KB (568713 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0908e4bf21d0297b8aaa642a50135ae9d59e9103cee9ed5d8ff4d64c44af7f9d`  
-		Last Modified: Thu, 21 Apr 2022 01:37:08 GMT  
-		Size: 900.5 KB (900511 bytes)  
+	-	`sha256:9f46d5414ea9e1ceb1686cc900c6645e1324f954736413145e3eb8bac9dc3d2b`  
+		Last Modified: Mon, 25 Apr 2022 19:33:07 GMT  
+		Size: 900.5 KB (900509 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7873b981bf1bef35a6e37dcc1d499b312f61a954481f707907ff178e580bfd68`  
-		Last Modified: Thu, 21 Apr 2022 01:37:07 GMT  
-		Size: 4.6 KB (4605 bytes)  
+	-	`sha256:e43b303e27907a35a428feb1c3ccbfef927a11bfd220ff5c1660e5e6ef71ca1b`  
+		Last Modified: Mon, 25 Apr 2022 19:33:06 GMT  
+		Size: 4.6 KB (4604 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d009ca12ed08a1e46c14453a406ff9a9abcf10f5fc976821c7091b14f7d895c`  
-		Last Modified: Thu, 21 Apr 2022 01:37:07 GMT  
-		Size: 147.0 B  
+	-	`sha256:da0c79a7a02767556bbe5e3867101792a798ece1d1540107ed10707d5257cc6c`  
+		Last Modified: Mon, 25 Apr 2022 19:33:06 GMT  
+		Size: 148.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6dddf279ca88bd0dc5b3e5ac42e16a4031f894c4f4983cd8fd0be329b301333f`  
-		Last Modified: Thu, 21 Apr 2022 01:37:22 GMT  
-		Size: 310.4 MB (310399471 bytes)  
+	-	`sha256:50adef860d9028419129cc0e21d8827011ecefc49fea0622d20e29a97eb7e1a9`  
+		Last Modified: Mon, 25 Apr 2022 19:33:20 GMT  
+		Size: 310.4 MB (310399422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:681db9e385c6baed252fc98c553f420f037b4712ecd2f620da086a696e87a079`  
-		Last Modified: Thu, 21 Apr 2022 01:37:07 GMT  
-		Size: 1.7 KB (1688 bytes)  
+	-	`sha256:9847519b5ca896421893532195df0a9674c8f5b6f19e59b340ffddadfb292114`  
+		Last Modified: Mon, 25 Apr 2022 19:33:06 GMT  
+		Size: 1.7 KB (1689 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `flink:1.11-scala_2.12-java8`
@@ -1337,7 +1337,7 @@ CMD ["help"]
 ## `flink:1.11.6-java11`
 
 ```console
-$ docker pull flink@sha256:ef7ad3abf75e977d894452b05a63dafd402c7b29a4f1acf928a16b08ed5bf857
+$ docker pull flink@sha256:204786be592691de0deaec2fa000cfd0092613e91c145ae74e64dc2ae1c27f43
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1347,14 +1347,14 @@ $ docker pull flink@sha256:ef7ad3abf75e977d894452b05a63dafd402c7b29a4f1acf928a16
 ### `flink:1.11.6-java11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:2deeb7af83a03302c30a23fd5677fad1878e2107698919d7dcf680ee1087b316
+$ docker pull flink@sha256:d5c8e70e9ec2ced03645fd0058b1044597ce8cd59e4908b2ba25601013ea2a12
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **435.4 MB (435385361 bytes)**  
+-	Total Size: **435.7 MB (435702568 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c43fb14b3abe02286bd84a85c56b65e16041c11cf7883ffe52b6d4e5e4de89d3`
+-	Image ID: `sha256:131863eeb3f76149f8c73e617a95e64ac4f3462aba052bb1880a279eab195d1b`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -1377,35 +1377,35 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 20 Apr 2022 10:53:58 GMT
 ENV LANG=C.UTF-8
-# Wed, 20 Apr 2022 10:53:58 GMT
-ENV JAVA_VERSION=11.0.14.1
-# Wed, 20 Apr 2022 10:54:05 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_x64_linux_11.0.14.1_1.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_aarch64_linux_11.0.14.1_1.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Thu, 21 Apr 2022 01:23:21 GMT
+# Mon, 25 Apr 2022 18:27:13 GMT
+ENV JAVA_VERSION=11.0.15
+# Mon, 25 Apr 2022 18:27:19 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_x64_linux_11.0.15_10.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_aarch64_linux_11.0.15_10.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
+# Mon, 25 Apr 2022 19:25:05 GMT
 RUN set -ex;   apt-get update;   apt-get -y install libsnappy1v5 gettext-base;   rm -rf /var/lib/apt/lists/*
-# Thu, 21 Apr 2022 01:23:21 GMT
+# Mon, 25 Apr 2022 19:25:05 GMT
 ENV GOSU_VERSION=1.11
-# Thu, 21 Apr 2022 01:23:57 GMT
+# Mon, 25 Apr 2022 19:25:47 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in ha.pool.sks-keyservers.net $(shuf -e                           hkp://p80.pool.sks-keyservers.net:80                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Thu, 21 Apr 2022 01:23:57 GMT
+# Mon, 25 Apr 2022 19:25:47 GMT
 ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.11.6/flink-1.11.6-bin-scala_2.12.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.11.6/flink-1.11.6-bin-scala_2.12.tgz.asc GPG_KEY=19F2195E1B4816D765A2C324C2EED7B111D464BA CHECK_GPG=true
-# Thu, 21 Apr 2022 01:23:57 GMT
+# Mon, 25 Apr 2022 19:25:47 GMT
 ENV FLINK_HOME=/opt/flink
-# Thu, 21 Apr 2022 01:23:57 GMT
+# Mon, 25 Apr 2022 19:25:47 GMT
 ENV PATH=/opt/flink/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 21 Apr 2022 01:23:58 GMT
+# Mon, 25 Apr 2022 19:25:47 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Thu, 21 Apr 2022 01:23:58 GMT
+# Mon, 25 Apr 2022 19:25:47 GMT
 WORKDIR /opt/flink
-# Thu, 21 Apr 2022 01:24:29 GMT
+# Mon, 25 Apr 2022 19:27:01 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in ha.pool.sks-keyservers.net $(shuf -e                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;
-# Thu, 21 Apr 2022 01:24:30 GMT
+# Mon, 25 Apr 2022 19:27:02 GMT
 COPY file:5118b9265b7774ef32131b2cbf42fd9bf26c640be3ebb42b4972a3ae8ed5125e in / 
-# Thu, 21 Apr 2022 01:24:30 GMT
+# Mon, 25 Apr 2022 19:27:02 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 21 Apr 2022 01:24:30 GMT
+# Mon, 25 Apr 2022 19:27:02 GMT
 EXPOSE 6123 8081
-# Thu, 21 Apr 2022 01:24:30 GMT
+# Mon, 25 Apr 2022 19:27:02 GMT
 CMD ["help"]
 ```
 
@@ -1430,33 +1430,33 @@ CMD ["help"]
 		Last Modified: Wed, 20 Apr 2022 11:12:19 GMT  
 		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3adba0a35f28cdd034bef4df08d640578ed8f0c6b971084706a9203183d6387c`  
-		Last Modified: Wed, 20 Apr 2022 11:12:26 GMT  
-		Size: 46.9 MB (46880152 bytes)  
+	-	`sha256:ffa59d9ab33cd135fc03bd1449112beaf19d1eb922727cb5c81008ff68b12f95`  
+		Last Modified: Mon, 25 Apr 2022 18:41:27 GMT  
+		Size: 47.2 MB (47197425 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:26f374c1bb5c9222c84ccb239360746ff9ee8a466d78d1bf0a3db2276c0a39c9`  
-		Last Modified: Thu, 21 Apr 2022 01:37:10 GMT  
-		Size: 568.7 KB (568729 bytes)  
+	-	`sha256:42f33b442930d9c4898594904d7ccc87ce6d8af7ec09222e30c3d9891db74a63`  
+		Last Modified: Mon, 25 Apr 2022 19:33:09 GMT  
+		Size: 568.7 KB (568713 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0908e4bf21d0297b8aaa642a50135ae9d59e9103cee9ed5d8ff4d64c44af7f9d`  
-		Last Modified: Thu, 21 Apr 2022 01:37:08 GMT  
-		Size: 900.5 KB (900511 bytes)  
+	-	`sha256:9f46d5414ea9e1ceb1686cc900c6645e1324f954736413145e3eb8bac9dc3d2b`  
+		Last Modified: Mon, 25 Apr 2022 19:33:07 GMT  
+		Size: 900.5 KB (900509 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7873b981bf1bef35a6e37dcc1d499b312f61a954481f707907ff178e580bfd68`  
-		Last Modified: Thu, 21 Apr 2022 01:37:07 GMT  
-		Size: 4.6 KB (4605 bytes)  
+	-	`sha256:e43b303e27907a35a428feb1c3ccbfef927a11bfd220ff5c1660e5e6ef71ca1b`  
+		Last Modified: Mon, 25 Apr 2022 19:33:06 GMT  
+		Size: 4.6 KB (4604 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d009ca12ed08a1e46c14453a406ff9a9abcf10f5fc976821c7091b14f7d895c`  
-		Last Modified: Thu, 21 Apr 2022 01:37:07 GMT  
-		Size: 147.0 B  
+	-	`sha256:da0c79a7a02767556bbe5e3867101792a798ece1d1540107ed10707d5257cc6c`  
+		Last Modified: Mon, 25 Apr 2022 19:33:06 GMT  
+		Size: 148.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6dddf279ca88bd0dc5b3e5ac42e16a4031f894c4f4983cd8fd0be329b301333f`  
-		Last Modified: Thu, 21 Apr 2022 01:37:22 GMT  
-		Size: 310.4 MB (310399471 bytes)  
+	-	`sha256:50adef860d9028419129cc0e21d8827011ecefc49fea0622d20e29a97eb7e1a9`  
+		Last Modified: Mon, 25 Apr 2022 19:33:20 GMT  
+		Size: 310.4 MB (310399422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:681db9e385c6baed252fc98c553f420f037b4712ecd2f620da086a696e87a079`  
-		Last Modified: Thu, 21 Apr 2022 01:37:07 GMT  
-		Size: 1.7 KB (1688 bytes)  
+	-	`sha256:9847519b5ca896421893532195df0a9674c8f5b6f19e59b340ffddadfb292114`  
+		Last Modified: Mon, 25 Apr 2022 19:33:06 GMT  
+		Size: 1.7 KB (1689 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `flink:1.11.6-java8`
@@ -1712,7 +1712,7 @@ CMD ["help"]
 ## `flink:1.11.6-scala_2.11-java11`
 
 ```console
-$ docker pull flink@sha256:535235327bab75dd1cdb29a0662d80facfdf9d942a05578e78b5a42ee34eb7d5
+$ docker pull flink@sha256:411cb28c21a356a065adac70dff4850f001432cfa38d7b1dcb448d041b46d7ba
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1722,14 +1722,14 @@ $ docker pull flink@sha256:535235327bab75dd1cdb29a0662d80facfdf9d942a05578e78b5a
 ### `flink:1.11.6-scala_2.11-java11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:beb7152936ec5482621abfacf3b9972bcb2eb6b04cb11759abfe45f651d9977a
+$ docker pull flink@sha256:4a45e3d304505bb1bbae58e0b7d2c98a2a07ca4b0537efce00f35029b30d9439
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **444.8 MB (444768676 bytes)**  
+-	Total Size: **445.1 MB (445085929 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1ccdda080d622be199e4580eaf0d4985d25dc78168cc2b8703dcc872397802b4`
+-	Image ID: `sha256:b6e0118d04d17a3d4bfc81160809359f66bb69547cf64442fbb959c50e2ff80b`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -1752,35 +1752,35 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 20 Apr 2022 10:53:58 GMT
 ENV LANG=C.UTF-8
-# Wed, 20 Apr 2022 10:53:58 GMT
-ENV JAVA_VERSION=11.0.14.1
-# Wed, 20 Apr 2022 10:54:05 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_x64_linux_11.0.14.1_1.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_aarch64_linux_11.0.14.1_1.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Thu, 21 Apr 2022 01:23:21 GMT
+# Mon, 25 Apr 2022 18:27:13 GMT
+ENV JAVA_VERSION=11.0.15
+# Mon, 25 Apr 2022 18:27:19 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_x64_linux_11.0.15_10.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_aarch64_linux_11.0.15_10.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
+# Mon, 25 Apr 2022 19:25:05 GMT
 RUN set -ex;   apt-get update;   apt-get -y install libsnappy1v5 gettext-base;   rm -rf /var/lib/apt/lists/*
-# Thu, 21 Apr 2022 01:23:21 GMT
+# Mon, 25 Apr 2022 19:25:05 GMT
 ENV GOSU_VERSION=1.11
-# Thu, 21 Apr 2022 01:23:57 GMT
+# Mon, 25 Apr 2022 19:25:47 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in ha.pool.sks-keyservers.net $(shuf -e                           hkp://p80.pool.sks-keyservers.net:80                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Thu, 21 Apr 2022 01:26:18 GMT
+# Mon, 25 Apr 2022 19:27:11 GMT
 ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.11.6/flink-1.11.6-bin-scala_2.11.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.11.6/flink-1.11.6-bin-scala_2.11.tgz.asc GPG_KEY=19F2195E1B4816D765A2C324C2EED7B111D464BA CHECK_GPG=true
-# Thu, 21 Apr 2022 01:26:18 GMT
+# Mon, 25 Apr 2022 19:27:11 GMT
 ENV FLINK_HOME=/opt/flink
-# Thu, 21 Apr 2022 01:26:18 GMT
+# Mon, 25 Apr 2022 19:27:12 GMT
 ENV PATH=/opt/flink/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 21 Apr 2022 01:26:19 GMT
+# Mon, 25 Apr 2022 19:27:12 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Thu, 21 Apr 2022 01:26:19 GMT
+# Mon, 25 Apr 2022 19:27:12 GMT
 WORKDIR /opt/flink
-# Thu, 21 Apr 2022 01:27:27 GMT
+# Mon, 25 Apr 2022 19:28:20 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in ha.pool.sks-keyservers.net $(shuf -e                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;
-# Thu, 21 Apr 2022 01:27:28 GMT
+# Mon, 25 Apr 2022 19:28:20 GMT
 COPY file:5118b9265b7774ef32131b2cbf42fd9bf26c640be3ebb42b4972a3ae8ed5125e in / 
-# Thu, 21 Apr 2022 01:27:28 GMT
+# Mon, 25 Apr 2022 19:28:20 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 21 Apr 2022 01:27:28 GMT
+# Mon, 25 Apr 2022 19:28:20 GMT
 EXPOSE 6123 8081
-# Thu, 21 Apr 2022 01:27:28 GMT
+# Mon, 25 Apr 2022 19:28:21 GMT
 CMD ["help"]
 ```
 
@@ -1805,32 +1805,32 @@ CMD ["help"]
 		Last Modified: Wed, 20 Apr 2022 11:12:19 GMT  
 		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3adba0a35f28cdd034bef4df08d640578ed8f0c6b971084706a9203183d6387c`  
-		Last Modified: Wed, 20 Apr 2022 11:12:26 GMT  
-		Size: 46.9 MB (46880152 bytes)  
+	-	`sha256:ffa59d9ab33cd135fc03bd1449112beaf19d1eb922727cb5c81008ff68b12f95`  
+		Last Modified: Mon, 25 Apr 2022 18:41:27 GMT  
+		Size: 47.2 MB (47197425 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:26f374c1bb5c9222c84ccb239360746ff9ee8a466d78d1bf0a3db2276c0a39c9`  
-		Last Modified: Thu, 21 Apr 2022 01:37:10 GMT  
-		Size: 568.7 KB (568729 bytes)  
+	-	`sha256:42f33b442930d9c4898594904d7ccc87ce6d8af7ec09222e30c3d9891db74a63`  
+		Last Modified: Mon, 25 Apr 2022 19:33:09 GMT  
+		Size: 568.7 KB (568713 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0908e4bf21d0297b8aaa642a50135ae9d59e9103cee9ed5d8ff4d64c44af7f9d`  
-		Last Modified: Thu, 21 Apr 2022 01:37:08 GMT  
-		Size: 900.5 KB (900511 bytes)  
+	-	`sha256:9f46d5414ea9e1ceb1686cc900c6645e1324f954736413145e3eb8bac9dc3d2b`  
+		Last Modified: Mon, 25 Apr 2022 19:33:07 GMT  
+		Size: 900.5 KB (900509 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a1403fffa7c7e3cb5de7c06485c786692a960309be670ff77602d1b02e15f8b0`  
-		Last Modified: Thu, 21 Apr 2022 01:38:11 GMT  
-		Size: 4.6 KB (4602 bytes)  
+	-	`sha256:70a9a76217f2a01cde359c761f12db8dd34de32d227cf57fda5f5fc6226fa68c`  
+		Last Modified: Mon, 25 Apr 2022 19:33:38 GMT  
+		Size: 4.6 KB (4601 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:559001a40b933c3fd2015a9f40af8da124a6d4eb6598f13ad119dabf7307f585`  
-		Last Modified: Thu, 21 Apr 2022 01:38:11 GMT  
+	-	`sha256:f2dda53900a86a4672a3a0d30aa298cfd61e91828cc0c8442edb5b889cc49b66`  
+		Last Modified: Mon, 25 Apr 2022 19:33:39 GMT  
 		Size: 148.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6cc7211a5e4bead61b5de3f9ba34d7f2d5a85a2b486ce63c769de705dc81176`  
-		Last Modified: Thu, 21 Apr 2022 01:38:26 GMT  
-		Size: 319.8 MB (319782788 bytes)  
+	-	`sha256:1f291455d836eeeb6a79bb8d6cc1078f77804a3afa9487ec882aa1a3d65a9252`  
+		Last Modified: Mon, 25 Apr 2022 19:33:54 GMT  
+		Size: 319.8 MB (319782787 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7c9e7af1af4be5f2da8a6744606428745e5fe567460f3eec532a5192872dadc1`  
-		Last Modified: Thu, 21 Apr 2022 01:38:11 GMT  
+	-	`sha256:e0a2dc7ce656c7aa5e1eef01032e5edcfd7b8bb07273c0f8ddf79f1c6182d13b`  
+		Last Modified: Mon, 25 Apr 2022 19:33:38 GMT  
 		Size: 1.7 KB (1688 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -2087,7 +2087,7 @@ CMD ["help"]
 ## `flink:1.11.6-scala_2.12-java11`
 
 ```console
-$ docker pull flink@sha256:ef7ad3abf75e977d894452b05a63dafd402c7b29a4f1acf928a16b08ed5bf857
+$ docker pull flink@sha256:204786be592691de0deaec2fa000cfd0092613e91c145ae74e64dc2ae1c27f43
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2097,14 +2097,14 @@ $ docker pull flink@sha256:ef7ad3abf75e977d894452b05a63dafd402c7b29a4f1acf928a16
 ### `flink:1.11.6-scala_2.12-java11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:2deeb7af83a03302c30a23fd5677fad1878e2107698919d7dcf680ee1087b316
+$ docker pull flink@sha256:d5c8e70e9ec2ced03645fd0058b1044597ce8cd59e4908b2ba25601013ea2a12
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **435.4 MB (435385361 bytes)**  
+-	Total Size: **435.7 MB (435702568 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c43fb14b3abe02286bd84a85c56b65e16041c11cf7883ffe52b6d4e5e4de89d3`
+-	Image ID: `sha256:131863eeb3f76149f8c73e617a95e64ac4f3462aba052bb1880a279eab195d1b`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -2127,35 +2127,35 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 20 Apr 2022 10:53:58 GMT
 ENV LANG=C.UTF-8
-# Wed, 20 Apr 2022 10:53:58 GMT
-ENV JAVA_VERSION=11.0.14.1
-# Wed, 20 Apr 2022 10:54:05 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_x64_linux_11.0.14.1_1.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_aarch64_linux_11.0.14.1_1.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Thu, 21 Apr 2022 01:23:21 GMT
+# Mon, 25 Apr 2022 18:27:13 GMT
+ENV JAVA_VERSION=11.0.15
+# Mon, 25 Apr 2022 18:27:19 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_x64_linux_11.0.15_10.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_aarch64_linux_11.0.15_10.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
+# Mon, 25 Apr 2022 19:25:05 GMT
 RUN set -ex;   apt-get update;   apt-get -y install libsnappy1v5 gettext-base;   rm -rf /var/lib/apt/lists/*
-# Thu, 21 Apr 2022 01:23:21 GMT
+# Mon, 25 Apr 2022 19:25:05 GMT
 ENV GOSU_VERSION=1.11
-# Thu, 21 Apr 2022 01:23:57 GMT
+# Mon, 25 Apr 2022 19:25:47 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in ha.pool.sks-keyservers.net $(shuf -e                           hkp://p80.pool.sks-keyservers.net:80                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Thu, 21 Apr 2022 01:23:57 GMT
+# Mon, 25 Apr 2022 19:25:47 GMT
 ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.11.6/flink-1.11.6-bin-scala_2.12.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.11.6/flink-1.11.6-bin-scala_2.12.tgz.asc GPG_KEY=19F2195E1B4816D765A2C324C2EED7B111D464BA CHECK_GPG=true
-# Thu, 21 Apr 2022 01:23:57 GMT
+# Mon, 25 Apr 2022 19:25:47 GMT
 ENV FLINK_HOME=/opt/flink
-# Thu, 21 Apr 2022 01:23:57 GMT
+# Mon, 25 Apr 2022 19:25:47 GMT
 ENV PATH=/opt/flink/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 21 Apr 2022 01:23:58 GMT
+# Mon, 25 Apr 2022 19:25:47 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Thu, 21 Apr 2022 01:23:58 GMT
+# Mon, 25 Apr 2022 19:25:47 GMT
 WORKDIR /opt/flink
-# Thu, 21 Apr 2022 01:24:29 GMT
+# Mon, 25 Apr 2022 19:27:01 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in ha.pool.sks-keyservers.net $(shuf -e                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;
-# Thu, 21 Apr 2022 01:24:30 GMT
+# Mon, 25 Apr 2022 19:27:02 GMT
 COPY file:5118b9265b7774ef32131b2cbf42fd9bf26c640be3ebb42b4972a3ae8ed5125e in / 
-# Thu, 21 Apr 2022 01:24:30 GMT
+# Mon, 25 Apr 2022 19:27:02 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 21 Apr 2022 01:24:30 GMT
+# Mon, 25 Apr 2022 19:27:02 GMT
 EXPOSE 6123 8081
-# Thu, 21 Apr 2022 01:24:30 GMT
+# Mon, 25 Apr 2022 19:27:02 GMT
 CMD ["help"]
 ```
 
@@ -2180,33 +2180,33 @@ CMD ["help"]
 		Last Modified: Wed, 20 Apr 2022 11:12:19 GMT  
 		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3adba0a35f28cdd034bef4df08d640578ed8f0c6b971084706a9203183d6387c`  
-		Last Modified: Wed, 20 Apr 2022 11:12:26 GMT  
-		Size: 46.9 MB (46880152 bytes)  
+	-	`sha256:ffa59d9ab33cd135fc03bd1449112beaf19d1eb922727cb5c81008ff68b12f95`  
+		Last Modified: Mon, 25 Apr 2022 18:41:27 GMT  
+		Size: 47.2 MB (47197425 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:26f374c1bb5c9222c84ccb239360746ff9ee8a466d78d1bf0a3db2276c0a39c9`  
-		Last Modified: Thu, 21 Apr 2022 01:37:10 GMT  
-		Size: 568.7 KB (568729 bytes)  
+	-	`sha256:42f33b442930d9c4898594904d7ccc87ce6d8af7ec09222e30c3d9891db74a63`  
+		Last Modified: Mon, 25 Apr 2022 19:33:09 GMT  
+		Size: 568.7 KB (568713 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0908e4bf21d0297b8aaa642a50135ae9d59e9103cee9ed5d8ff4d64c44af7f9d`  
-		Last Modified: Thu, 21 Apr 2022 01:37:08 GMT  
-		Size: 900.5 KB (900511 bytes)  
+	-	`sha256:9f46d5414ea9e1ceb1686cc900c6645e1324f954736413145e3eb8bac9dc3d2b`  
+		Last Modified: Mon, 25 Apr 2022 19:33:07 GMT  
+		Size: 900.5 KB (900509 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7873b981bf1bef35a6e37dcc1d499b312f61a954481f707907ff178e580bfd68`  
-		Last Modified: Thu, 21 Apr 2022 01:37:07 GMT  
-		Size: 4.6 KB (4605 bytes)  
+	-	`sha256:e43b303e27907a35a428feb1c3ccbfef927a11bfd220ff5c1660e5e6ef71ca1b`  
+		Last Modified: Mon, 25 Apr 2022 19:33:06 GMT  
+		Size: 4.6 KB (4604 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d009ca12ed08a1e46c14453a406ff9a9abcf10f5fc976821c7091b14f7d895c`  
-		Last Modified: Thu, 21 Apr 2022 01:37:07 GMT  
-		Size: 147.0 B  
+	-	`sha256:da0c79a7a02767556bbe5e3867101792a798ece1d1540107ed10707d5257cc6c`  
+		Last Modified: Mon, 25 Apr 2022 19:33:06 GMT  
+		Size: 148.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6dddf279ca88bd0dc5b3e5ac42e16a4031f894c4f4983cd8fd0be329b301333f`  
-		Last Modified: Thu, 21 Apr 2022 01:37:22 GMT  
-		Size: 310.4 MB (310399471 bytes)  
+	-	`sha256:50adef860d9028419129cc0e21d8827011ecefc49fea0622d20e29a97eb7e1a9`  
+		Last Modified: Mon, 25 Apr 2022 19:33:20 GMT  
+		Size: 310.4 MB (310399422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:681db9e385c6baed252fc98c553f420f037b4712ecd2f620da086a696e87a079`  
-		Last Modified: Thu, 21 Apr 2022 01:37:07 GMT  
-		Size: 1.7 KB (1688 bytes)  
+	-	`sha256:9847519b5ca896421893532195df0a9674c8f5b6f19e59b340ffddadfb292114`  
+		Last Modified: Mon, 25 Apr 2022 19:33:06 GMT  
+		Size: 1.7 KB (1689 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `flink:1.11.6-scala_2.12-java8`
@@ -2462,7 +2462,7 @@ CMD ["help"]
 ## `flink:1.12-java11`
 
 ```console
-$ docker pull flink@sha256:da660222cb2e3a3987e4be877cf286f45ae88b92b151a990bf9a2d624f35ffe9
+$ docker pull flink@sha256:a5d5e478203665d7b279faca1fab9332caa600e92725241f0f2c3daf1861d930
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2472,14 +2472,14 @@ $ docker pull flink@sha256:da660222cb2e3a3987e4be877cf286f45ae88b92b151a990bf9a2
 ### `flink:1.12-java11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:61cca08b06b18c7c48c3ba62b91c5062fd83a9282fdbb8d57e604d141d5671c8
+$ docker pull flink@sha256:6454e946d35aabc80dd562d2259745dcffd1f5ff019e8ea0935dfa409c378b5a
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **450.9 MB (450943257 bytes)**  
+-	Total Size: **451.3 MB (451260543 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4c3774a8131fba3bebcf44e7c53fe2a6550843e0948760a3b23c76718712b1c1`
+-	Image ID: `sha256:a47b620b8ca8dbe63f9e6205b24158f58689b9eba9d19d5c118099e460eb12ac`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -2502,35 +2502,35 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 20 Apr 2022 10:53:58 GMT
 ENV LANG=C.UTF-8
-# Wed, 20 Apr 2022 10:53:58 GMT
-ENV JAVA_VERSION=11.0.14.1
-# Wed, 20 Apr 2022 10:54:05 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_x64_linux_11.0.14.1_1.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_aarch64_linux_11.0.14.1_1.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Thu, 21 Apr 2022 01:06:22 GMT
+# Mon, 25 Apr 2022 18:27:13 GMT
+ENV JAVA_VERSION=11.0.15
+# Mon, 25 Apr 2022 18:27:19 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_x64_linux_11.0.15_10.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_aarch64_linux_11.0.15_10.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
+# Mon, 25 Apr 2022 19:16:40 GMT
 RUN set -ex;   apt-get update;   apt-get -y install libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/*
-# Thu, 21 Apr 2022 01:06:22 GMT
+# Mon, 25 Apr 2022 19:16:40 GMT
 ENV GOSU_VERSION=1.11
-# Thu, 21 Apr 2022 01:07:16 GMT
+# Mon, 25 Apr 2022 19:17:29 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in ha.pool.sks-keyservers.net $(shuf -e                           hkp://p80.pool.sks-keyservers.net:80                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Thu, 21 Apr 2022 01:17:00 GMT
+# Mon, 25 Apr 2022 19:22:38 GMT
 ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.12.7/flink-1.12.7-bin-scala_2.12.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.12.7/flink-1.12.7-bin-scala_2.12.tgz.asc GPG_KEY=19F2195E1B4816D765A2C324C2EED7B111D464BA CHECK_GPG=true
-# Thu, 21 Apr 2022 01:17:00 GMT
+# Mon, 25 Apr 2022 19:22:38 GMT
 ENV FLINK_HOME=/opt/flink
-# Thu, 21 Apr 2022 01:17:00 GMT
+# Mon, 25 Apr 2022 19:22:38 GMT
 ENV PATH=/opt/flink/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 21 Apr 2022 01:17:01 GMT
+# Mon, 25 Apr 2022 19:22:39 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Thu, 21 Apr 2022 01:17:01 GMT
+# Mon, 25 Apr 2022 19:22:39 GMT
 WORKDIR /opt/flink
-# Thu, 21 Apr 2022 01:18:06 GMT
+# Mon, 25 Apr 2022 19:23:41 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in ha.pool.sks-keyservers.net $(shuf -e                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;
-# Thu, 21 Apr 2022 01:18:06 GMT
+# Mon, 25 Apr 2022 19:23:42 GMT
 COPY file:169fc968df81e9941ad72fb5a70e8f5ef9e97e9bc4e58e8f596f13fbaaf8ab4f in / 
-# Thu, 21 Apr 2022 01:18:06 GMT
+# Mon, 25 Apr 2022 19:23:42 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 21 Apr 2022 01:18:06 GMT
+# Mon, 25 Apr 2022 19:23:42 GMT
 EXPOSE 6123 8081
-# Thu, 21 Apr 2022 01:18:07 GMT
+# Mon, 25 Apr 2022 19:23:42 GMT
 CMD ["help"]
 ```
 
@@ -2555,33 +2555,33 @@ CMD ["help"]
 		Last Modified: Wed, 20 Apr 2022 11:12:19 GMT  
 		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3adba0a35f28cdd034bef4df08d640578ed8f0c6b971084706a9203183d6387c`  
-		Last Modified: Wed, 20 Apr 2022 11:12:26 GMT  
-		Size: 46.9 MB (46880152 bytes)  
+	-	`sha256:ffa59d9ab33cd135fc03bd1449112beaf19d1eb922727cb5c81008ff68b12f95`  
+		Last Modified: Mon, 25 Apr 2022 18:41:27 GMT  
+		Size: 47.2 MB (47197425 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c9cff9eec7d2c6bd0f4e96d712bd19418edf20d9e67bb691ef23c644d48431f`  
-		Last Modified: Thu, 21 Apr 2022 01:29:51 GMT  
-		Size: 1.7 MB (1689687 bytes)  
+	-	`sha256:57169ac226acc0b97cefcf5d0c4611ad7464e516a0abbe839ddd7add7c2e9f80`  
+		Last Modified: Mon, 25 Apr 2022 19:29:51 GMT  
+		Size: 1.7 MB (1689665 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:856ec9413034d6e6a730861ad35d2981ef32cbc6cb8a30996766983c104a269b`  
-		Last Modified: Thu, 21 Apr 2022 01:29:49 GMT  
-		Size: 900.5 KB (900512 bytes)  
+	-	`sha256:8118a2fa03079b7c9cb68aff8c797f98bd9f46d52e809802d79e9521c121732b`  
+		Last Modified: Mon, 25 Apr 2022 19:29:48 GMT  
+		Size: 900.5 KB (900508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:82a4d8652c54c73e59ff8d979ac88d49f4337fba87ef1f6b57dafb0983f233bf`  
-		Last Modified: Thu, 21 Apr 2022 01:34:50 GMT  
-		Size: 4.6 KB (4601 bytes)  
+	-	`sha256:9ce098206661ee33668f0708a90e01c68f5747a05a71399c727cfbc3caf89bba`  
+		Last Modified: Mon, 25 Apr 2022 19:32:05 GMT  
+		Size: 4.6 KB (4602 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:49cbd9c6f79847c8c16430da803999d506218808420e7d0c54bd41d67dec1c53`  
-		Last Modified: Thu, 21 Apr 2022 01:34:50 GMT  
+	-	`sha256:aaf38530bcbf135377490c8118caf88cb4a1624021509b2954d72bf9b68c105f`  
+		Last Modified: Mon, 25 Apr 2022 19:32:05 GMT  
 		Size: 148.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a70797693964f57a700a26fd2b6ac232194c82ad4a77da63383b18977cfb07f7`  
-		Last Modified: Thu, 21 Apr 2022 01:35:05 GMT  
-		Size: 324.8 MB (324835930 bytes)  
+	-	`sha256:f6be9891614bcf00c7f77f7d1efb546996ba56ff7912c638e512b3455fbdf704`  
+		Last Modified: Mon, 25 Apr 2022 19:32:20 GMT  
+		Size: 324.8 MB (324835967 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a461f3c04a3ef434958edc11ccf524cf28bb64ef2b77f597bdec90d2278d8f2`  
-		Last Modified: Thu, 21 Apr 2022 01:34:50 GMT  
-		Size: 2.2 KB (2169 bytes)  
+	-	`sha256:971bfb22da9b0f183d84ca603c2f67011f7791a463cbfa64cb3434bafdeacdc4`  
+		Last Modified: Mon, 25 Apr 2022 19:32:05 GMT  
+		Size: 2.2 KB (2170 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `flink:1.12-java8`
@@ -2837,7 +2837,7 @@ CMD ["help"]
 ## `flink:1.12-scala_2.11-java11`
 
 ```console
-$ docker pull flink@sha256:538578f91110bd2f34751d33bee47b672a77f3196992e52246d40d1faaf4b3f8
+$ docker pull flink@sha256:f9b8c0669f1579604a7793180c35f34617ded2424f4cc0f22477ff72de2649c5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2847,14 +2847,14 @@ $ docker pull flink@sha256:538578f91110bd2f34751d33bee47b672a77f3196992e52246d40
 ### `flink:1.12-scala_2.11-java11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:6dd71433ffc40e83cbfbe5a885286d58390521663e391a78ed11478da8dff680
+$ docker pull flink@sha256:b4bc7ddff6def9289a231824abd6bb291e0854cc0382d319957625dc6873be3f
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **460.3 MB (460341465 bytes)**  
+-	Total Size: **460.7 MB (460658676 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6c92ccc1c3f3c6d7e94f6716dbfcf8e9e4d267e75bb95a15045f86071b79f5ac`
+-	Image ID: `sha256:fe7497ef0d9f817d733416a159c7c826db0100c8076a98047fae7089718a1756`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -2877,35 +2877,35 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 20 Apr 2022 10:53:58 GMT
 ENV LANG=C.UTF-8
-# Wed, 20 Apr 2022 10:53:58 GMT
-ENV JAVA_VERSION=11.0.14.1
-# Wed, 20 Apr 2022 10:54:05 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_x64_linux_11.0.14.1_1.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_aarch64_linux_11.0.14.1_1.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Thu, 21 Apr 2022 01:06:22 GMT
+# Mon, 25 Apr 2022 18:27:13 GMT
+ENV JAVA_VERSION=11.0.15
+# Mon, 25 Apr 2022 18:27:19 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_x64_linux_11.0.15_10.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_aarch64_linux_11.0.15_10.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
+# Mon, 25 Apr 2022 19:16:40 GMT
 RUN set -ex;   apt-get update;   apt-get -y install libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/*
-# Thu, 21 Apr 2022 01:06:22 GMT
+# Mon, 25 Apr 2022 19:16:40 GMT
 ENV GOSU_VERSION=1.11
-# Thu, 21 Apr 2022 01:07:16 GMT
+# Mon, 25 Apr 2022 19:17:29 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in ha.pool.sks-keyservers.net $(shuf -e                           hkp://p80.pool.sks-keyservers.net:80                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Thu, 21 Apr 2022 01:19:32 GMT
+# Mon, 25 Apr 2022 19:23:49 GMT
 ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.12.7/flink-1.12.7-bin-scala_2.11.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.12.7/flink-1.12.7-bin-scala_2.11.tgz.asc GPG_KEY=19F2195E1B4816D765A2C324C2EED7B111D464BA CHECK_GPG=true
-# Thu, 21 Apr 2022 01:19:32 GMT
+# Mon, 25 Apr 2022 19:23:50 GMT
 ENV FLINK_HOME=/opt/flink
-# Thu, 21 Apr 2022 01:19:32 GMT
+# Mon, 25 Apr 2022 19:23:50 GMT
 ENV PATH=/opt/flink/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 21 Apr 2022 01:19:33 GMT
+# Mon, 25 Apr 2022 19:23:50 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Thu, 21 Apr 2022 01:19:33 GMT
+# Mon, 25 Apr 2022 19:23:50 GMT
 WORKDIR /opt/flink
-# Thu, 21 Apr 2022 01:20:57 GMT
+# Mon, 25 Apr 2022 19:24:52 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in ha.pool.sks-keyservers.net $(shuf -e                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;
-# Thu, 21 Apr 2022 01:20:58 GMT
+# Mon, 25 Apr 2022 19:24:53 GMT
 COPY file:169fc968df81e9941ad72fb5a70e8f5ef9e97e9bc4e58e8f596f13fbaaf8ab4f in / 
-# Thu, 21 Apr 2022 01:20:58 GMT
+# Mon, 25 Apr 2022 19:24:53 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 21 Apr 2022 01:20:58 GMT
+# Mon, 25 Apr 2022 19:24:53 GMT
 EXPOSE 6123 8081
-# Thu, 21 Apr 2022 01:20:58 GMT
+# Mon, 25 Apr 2022 19:24:53 GMT
 CMD ["help"]
 ```
 
@@ -2930,33 +2930,33 @@ CMD ["help"]
 		Last Modified: Wed, 20 Apr 2022 11:12:19 GMT  
 		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3adba0a35f28cdd034bef4df08d640578ed8f0c6b971084706a9203183d6387c`  
-		Last Modified: Wed, 20 Apr 2022 11:12:26 GMT  
-		Size: 46.9 MB (46880152 bytes)  
+	-	`sha256:ffa59d9ab33cd135fc03bd1449112beaf19d1eb922727cb5c81008ff68b12f95`  
+		Last Modified: Mon, 25 Apr 2022 18:41:27 GMT  
+		Size: 47.2 MB (47197425 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c9cff9eec7d2c6bd0f4e96d712bd19418edf20d9e67bb691ef23c644d48431f`  
-		Last Modified: Thu, 21 Apr 2022 01:29:51 GMT  
-		Size: 1.7 MB (1689687 bytes)  
+	-	`sha256:57169ac226acc0b97cefcf5d0c4611ad7464e516a0abbe839ddd7add7c2e9f80`  
+		Last Modified: Mon, 25 Apr 2022 19:29:51 GMT  
+		Size: 1.7 MB (1689665 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:856ec9413034d6e6a730861ad35d2981ef32cbc6cb8a30996766983c104a269b`  
-		Last Modified: Thu, 21 Apr 2022 01:29:49 GMT  
-		Size: 900.5 KB (900512 bytes)  
+	-	`sha256:8118a2fa03079b7c9cb68aff8c797f98bd9f46d52e809802d79e9521c121732b`  
+		Last Modified: Mon, 25 Apr 2022 19:29:48 GMT  
+		Size: 900.5 KB (900508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:17b6cae27064325f62608012e5cb40e845054f88b9d9d8afd0bd94a9ce9790d3`  
-		Last Modified: Thu, 21 Apr 2022 01:35:54 GMT  
-		Size: 4.6 KB (4603 bytes)  
+	-	`sha256:6b14e5cdcbe36092838e9967ded0b942cf6cfa24c39afb447ac17a879cb2bf0c`  
+		Last Modified: Mon, 25 Apr 2022 19:32:37 GMT  
+		Size: 4.6 KB (4604 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6ef512e952b974cc0351792890a7aa7b2fad6b5874bbeda3e21f7d25b299075`  
-		Last Modified: Thu, 21 Apr 2022 01:35:54 GMT  
+	-	`sha256:fbe9d8e1428758c99767112f8eb2a7eb0af6020a4ec13ef0afd6fa862d6abb64`  
+		Last Modified: Mon, 25 Apr 2022 19:32:37 GMT  
 		Size: 148.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:caf4e0434b197cac1cef8182f55fd40b255e69737239ff6a8bba426b47d44189`  
-		Last Modified: Thu, 21 Apr 2022 01:36:13 GMT  
-		Size: 334.2 MB (334234136 bytes)  
+	-	`sha256:72a1ddfa684c7ef614502ad6721b4169d95867a55f262530c9ebb651e6b45a90`  
+		Last Modified: Mon, 25 Apr 2022 19:32:53 GMT  
+		Size: 334.2 MB (334234098 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:58a4120713b443c8b085a3aafd1ff43184d285b8fff2938689c4c5e273dac851`  
-		Last Modified: Thu, 21 Apr 2022 01:35:54 GMT  
-		Size: 2.2 KB (2169 bytes)  
+	-	`sha256:77f5d829e82da4f44abef7e8e45ae802f423d1026fddc72990917c17e0282299`  
+		Last Modified: Mon, 25 Apr 2022 19:32:37 GMT  
+		Size: 2.2 KB (2170 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `flink:1.12-scala_2.11-java8`
@@ -3212,7 +3212,7 @@ CMD ["help"]
 ## `flink:1.12-scala_2.12-java11`
 
 ```console
-$ docker pull flink@sha256:da660222cb2e3a3987e4be877cf286f45ae88b92b151a990bf9a2d624f35ffe9
+$ docker pull flink@sha256:a5d5e478203665d7b279faca1fab9332caa600e92725241f0f2c3daf1861d930
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3222,14 +3222,14 @@ $ docker pull flink@sha256:da660222cb2e3a3987e4be877cf286f45ae88b92b151a990bf9a2
 ### `flink:1.12-scala_2.12-java11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:61cca08b06b18c7c48c3ba62b91c5062fd83a9282fdbb8d57e604d141d5671c8
+$ docker pull flink@sha256:6454e946d35aabc80dd562d2259745dcffd1f5ff019e8ea0935dfa409c378b5a
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **450.9 MB (450943257 bytes)**  
+-	Total Size: **451.3 MB (451260543 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4c3774a8131fba3bebcf44e7c53fe2a6550843e0948760a3b23c76718712b1c1`
+-	Image ID: `sha256:a47b620b8ca8dbe63f9e6205b24158f58689b9eba9d19d5c118099e460eb12ac`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -3252,35 +3252,35 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 20 Apr 2022 10:53:58 GMT
 ENV LANG=C.UTF-8
-# Wed, 20 Apr 2022 10:53:58 GMT
-ENV JAVA_VERSION=11.0.14.1
-# Wed, 20 Apr 2022 10:54:05 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_x64_linux_11.0.14.1_1.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_aarch64_linux_11.0.14.1_1.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Thu, 21 Apr 2022 01:06:22 GMT
+# Mon, 25 Apr 2022 18:27:13 GMT
+ENV JAVA_VERSION=11.0.15
+# Mon, 25 Apr 2022 18:27:19 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_x64_linux_11.0.15_10.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_aarch64_linux_11.0.15_10.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
+# Mon, 25 Apr 2022 19:16:40 GMT
 RUN set -ex;   apt-get update;   apt-get -y install libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/*
-# Thu, 21 Apr 2022 01:06:22 GMT
+# Mon, 25 Apr 2022 19:16:40 GMT
 ENV GOSU_VERSION=1.11
-# Thu, 21 Apr 2022 01:07:16 GMT
+# Mon, 25 Apr 2022 19:17:29 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in ha.pool.sks-keyservers.net $(shuf -e                           hkp://p80.pool.sks-keyservers.net:80                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Thu, 21 Apr 2022 01:17:00 GMT
+# Mon, 25 Apr 2022 19:22:38 GMT
 ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.12.7/flink-1.12.7-bin-scala_2.12.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.12.7/flink-1.12.7-bin-scala_2.12.tgz.asc GPG_KEY=19F2195E1B4816D765A2C324C2EED7B111D464BA CHECK_GPG=true
-# Thu, 21 Apr 2022 01:17:00 GMT
+# Mon, 25 Apr 2022 19:22:38 GMT
 ENV FLINK_HOME=/opt/flink
-# Thu, 21 Apr 2022 01:17:00 GMT
+# Mon, 25 Apr 2022 19:22:38 GMT
 ENV PATH=/opt/flink/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 21 Apr 2022 01:17:01 GMT
+# Mon, 25 Apr 2022 19:22:39 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Thu, 21 Apr 2022 01:17:01 GMT
+# Mon, 25 Apr 2022 19:22:39 GMT
 WORKDIR /opt/flink
-# Thu, 21 Apr 2022 01:18:06 GMT
+# Mon, 25 Apr 2022 19:23:41 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in ha.pool.sks-keyservers.net $(shuf -e                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;
-# Thu, 21 Apr 2022 01:18:06 GMT
+# Mon, 25 Apr 2022 19:23:42 GMT
 COPY file:169fc968df81e9941ad72fb5a70e8f5ef9e97e9bc4e58e8f596f13fbaaf8ab4f in / 
-# Thu, 21 Apr 2022 01:18:06 GMT
+# Mon, 25 Apr 2022 19:23:42 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 21 Apr 2022 01:18:06 GMT
+# Mon, 25 Apr 2022 19:23:42 GMT
 EXPOSE 6123 8081
-# Thu, 21 Apr 2022 01:18:07 GMT
+# Mon, 25 Apr 2022 19:23:42 GMT
 CMD ["help"]
 ```
 
@@ -3305,33 +3305,33 @@ CMD ["help"]
 		Last Modified: Wed, 20 Apr 2022 11:12:19 GMT  
 		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3adba0a35f28cdd034bef4df08d640578ed8f0c6b971084706a9203183d6387c`  
-		Last Modified: Wed, 20 Apr 2022 11:12:26 GMT  
-		Size: 46.9 MB (46880152 bytes)  
+	-	`sha256:ffa59d9ab33cd135fc03bd1449112beaf19d1eb922727cb5c81008ff68b12f95`  
+		Last Modified: Mon, 25 Apr 2022 18:41:27 GMT  
+		Size: 47.2 MB (47197425 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c9cff9eec7d2c6bd0f4e96d712bd19418edf20d9e67bb691ef23c644d48431f`  
-		Last Modified: Thu, 21 Apr 2022 01:29:51 GMT  
-		Size: 1.7 MB (1689687 bytes)  
+	-	`sha256:57169ac226acc0b97cefcf5d0c4611ad7464e516a0abbe839ddd7add7c2e9f80`  
+		Last Modified: Mon, 25 Apr 2022 19:29:51 GMT  
+		Size: 1.7 MB (1689665 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:856ec9413034d6e6a730861ad35d2981ef32cbc6cb8a30996766983c104a269b`  
-		Last Modified: Thu, 21 Apr 2022 01:29:49 GMT  
-		Size: 900.5 KB (900512 bytes)  
+	-	`sha256:8118a2fa03079b7c9cb68aff8c797f98bd9f46d52e809802d79e9521c121732b`  
+		Last Modified: Mon, 25 Apr 2022 19:29:48 GMT  
+		Size: 900.5 KB (900508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:82a4d8652c54c73e59ff8d979ac88d49f4337fba87ef1f6b57dafb0983f233bf`  
-		Last Modified: Thu, 21 Apr 2022 01:34:50 GMT  
-		Size: 4.6 KB (4601 bytes)  
+	-	`sha256:9ce098206661ee33668f0708a90e01c68f5747a05a71399c727cfbc3caf89bba`  
+		Last Modified: Mon, 25 Apr 2022 19:32:05 GMT  
+		Size: 4.6 KB (4602 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:49cbd9c6f79847c8c16430da803999d506218808420e7d0c54bd41d67dec1c53`  
-		Last Modified: Thu, 21 Apr 2022 01:34:50 GMT  
+	-	`sha256:aaf38530bcbf135377490c8118caf88cb4a1624021509b2954d72bf9b68c105f`  
+		Last Modified: Mon, 25 Apr 2022 19:32:05 GMT  
 		Size: 148.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a70797693964f57a700a26fd2b6ac232194c82ad4a77da63383b18977cfb07f7`  
-		Last Modified: Thu, 21 Apr 2022 01:35:05 GMT  
-		Size: 324.8 MB (324835930 bytes)  
+	-	`sha256:f6be9891614bcf00c7f77f7d1efb546996ba56ff7912c638e512b3455fbdf704`  
+		Last Modified: Mon, 25 Apr 2022 19:32:20 GMT  
+		Size: 324.8 MB (324835967 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a461f3c04a3ef434958edc11ccf524cf28bb64ef2b77f597bdec90d2278d8f2`  
-		Last Modified: Thu, 21 Apr 2022 01:34:50 GMT  
-		Size: 2.2 KB (2169 bytes)  
+	-	`sha256:971bfb22da9b0f183d84ca603c2f67011f7791a463cbfa64cb3434bafdeacdc4`  
+		Last Modified: Mon, 25 Apr 2022 19:32:05 GMT  
+		Size: 2.2 KB (2170 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `flink:1.12-scala_2.12-java8`
@@ -3587,7 +3587,7 @@ CMD ["help"]
 ## `flink:1.12.7-java11`
 
 ```console
-$ docker pull flink@sha256:da660222cb2e3a3987e4be877cf286f45ae88b92b151a990bf9a2d624f35ffe9
+$ docker pull flink@sha256:a5d5e478203665d7b279faca1fab9332caa600e92725241f0f2c3daf1861d930
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3597,14 +3597,14 @@ $ docker pull flink@sha256:da660222cb2e3a3987e4be877cf286f45ae88b92b151a990bf9a2
 ### `flink:1.12.7-java11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:61cca08b06b18c7c48c3ba62b91c5062fd83a9282fdbb8d57e604d141d5671c8
+$ docker pull flink@sha256:6454e946d35aabc80dd562d2259745dcffd1f5ff019e8ea0935dfa409c378b5a
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **450.9 MB (450943257 bytes)**  
+-	Total Size: **451.3 MB (451260543 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4c3774a8131fba3bebcf44e7c53fe2a6550843e0948760a3b23c76718712b1c1`
+-	Image ID: `sha256:a47b620b8ca8dbe63f9e6205b24158f58689b9eba9d19d5c118099e460eb12ac`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -3627,35 +3627,35 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 20 Apr 2022 10:53:58 GMT
 ENV LANG=C.UTF-8
-# Wed, 20 Apr 2022 10:53:58 GMT
-ENV JAVA_VERSION=11.0.14.1
-# Wed, 20 Apr 2022 10:54:05 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_x64_linux_11.0.14.1_1.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_aarch64_linux_11.0.14.1_1.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Thu, 21 Apr 2022 01:06:22 GMT
+# Mon, 25 Apr 2022 18:27:13 GMT
+ENV JAVA_VERSION=11.0.15
+# Mon, 25 Apr 2022 18:27:19 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_x64_linux_11.0.15_10.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_aarch64_linux_11.0.15_10.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
+# Mon, 25 Apr 2022 19:16:40 GMT
 RUN set -ex;   apt-get update;   apt-get -y install libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/*
-# Thu, 21 Apr 2022 01:06:22 GMT
+# Mon, 25 Apr 2022 19:16:40 GMT
 ENV GOSU_VERSION=1.11
-# Thu, 21 Apr 2022 01:07:16 GMT
+# Mon, 25 Apr 2022 19:17:29 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in ha.pool.sks-keyservers.net $(shuf -e                           hkp://p80.pool.sks-keyservers.net:80                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Thu, 21 Apr 2022 01:17:00 GMT
+# Mon, 25 Apr 2022 19:22:38 GMT
 ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.12.7/flink-1.12.7-bin-scala_2.12.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.12.7/flink-1.12.7-bin-scala_2.12.tgz.asc GPG_KEY=19F2195E1B4816D765A2C324C2EED7B111D464BA CHECK_GPG=true
-# Thu, 21 Apr 2022 01:17:00 GMT
+# Mon, 25 Apr 2022 19:22:38 GMT
 ENV FLINK_HOME=/opt/flink
-# Thu, 21 Apr 2022 01:17:00 GMT
+# Mon, 25 Apr 2022 19:22:38 GMT
 ENV PATH=/opt/flink/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 21 Apr 2022 01:17:01 GMT
+# Mon, 25 Apr 2022 19:22:39 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Thu, 21 Apr 2022 01:17:01 GMT
+# Mon, 25 Apr 2022 19:22:39 GMT
 WORKDIR /opt/flink
-# Thu, 21 Apr 2022 01:18:06 GMT
+# Mon, 25 Apr 2022 19:23:41 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in ha.pool.sks-keyservers.net $(shuf -e                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;
-# Thu, 21 Apr 2022 01:18:06 GMT
+# Mon, 25 Apr 2022 19:23:42 GMT
 COPY file:169fc968df81e9941ad72fb5a70e8f5ef9e97e9bc4e58e8f596f13fbaaf8ab4f in / 
-# Thu, 21 Apr 2022 01:18:06 GMT
+# Mon, 25 Apr 2022 19:23:42 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 21 Apr 2022 01:18:06 GMT
+# Mon, 25 Apr 2022 19:23:42 GMT
 EXPOSE 6123 8081
-# Thu, 21 Apr 2022 01:18:07 GMT
+# Mon, 25 Apr 2022 19:23:42 GMT
 CMD ["help"]
 ```
 
@@ -3680,33 +3680,33 @@ CMD ["help"]
 		Last Modified: Wed, 20 Apr 2022 11:12:19 GMT  
 		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3adba0a35f28cdd034bef4df08d640578ed8f0c6b971084706a9203183d6387c`  
-		Last Modified: Wed, 20 Apr 2022 11:12:26 GMT  
-		Size: 46.9 MB (46880152 bytes)  
+	-	`sha256:ffa59d9ab33cd135fc03bd1449112beaf19d1eb922727cb5c81008ff68b12f95`  
+		Last Modified: Mon, 25 Apr 2022 18:41:27 GMT  
+		Size: 47.2 MB (47197425 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c9cff9eec7d2c6bd0f4e96d712bd19418edf20d9e67bb691ef23c644d48431f`  
-		Last Modified: Thu, 21 Apr 2022 01:29:51 GMT  
-		Size: 1.7 MB (1689687 bytes)  
+	-	`sha256:57169ac226acc0b97cefcf5d0c4611ad7464e516a0abbe839ddd7add7c2e9f80`  
+		Last Modified: Mon, 25 Apr 2022 19:29:51 GMT  
+		Size: 1.7 MB (1689665 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:856ec9413034d6e6a730861ad35d2981ef32cbc6cb8a30996766983c104a269b`  
-		Last Modified: Thu, 21 Apr 2022 01:29:49 GMT  
-		Size: 900.5 KB (900512 bytes)  
+	-	`sha256:8118a2fa03079b7c9cb68aff8c797f98bd9f46d52e809802d79e9521c121732b`  
+		Last Modified: Mon, 25 Apr 2022 19:29:48 GMT  
+		Size: 900.5 KB (900508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:82a4d8652c54c73e59ff8d979ac88d49f4337fba87ef1f6b57dafb0983f233bf`  
-		Last Modified: Thu, 21 Apr 2022 01:34:50 GMT  
-		Size: 4.6 KB (4601 bytes)  
+	-	`sha256:9ce098206661ee33668f0708a90e01c68f5747a05a71399c727cfbc3caf89bba`  
+		Last Modified: Mon, 25 Apr 2022 19:32:05 GMT  
+		Size: 4.6 KB (4602 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:49cbd9c6f79847c8c16430da803999d506218808420e7d0c54bd41d67dec1c53`  
-		Last Modified: Thu, 21 Apr 2022 01:34:50 GMT  
+	-	`sha256:aaf38530bcbf135377490c8118caf88cb4a1624021509b2954d72bf9b68c105f`  
+		Last Modified: Mon, 25 Apr 2022 19:32:05 GMT  
 		Size: 148.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a70797693964f57a700a26fd2b6ac232194c82ad4a77da63383b18977cfb07f7`  
-		Last Modified: Thu, 21 Apr 2022 01:35:05 GMT  
-		Size: 324.8 MB (324835930 bytes)  
+	-	`sha256:f6be9891614bcf00c7f77f7d1efb546996ba56ff7912c638e512b3455fbdf704`  
+		Last Modified: Mon, 25 Apr 2022 19:32:20 GMT  
+		Size: 324.8 MB (324835967 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a461f3c04a3ef434958edc11ccf524cf28bb64ef2b77f597bdec90d2278d8f2`  
-		Last Modified: Thu, 21 Apr 2022 01:34:50 GMT  
-		Size: 2.2 KB (2169 bytes)  
+	-	`sha256:971bfb22da9b0f183d84ca603c2f67011f7791a463cbfa64cb3434bafdeacdc4`  
+		Last Modified: Mon, 25 Apr 2022 19:32:05 GMT  
+		Size: 2.2 KB (2170 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `flink:1.12.7-java8`
@@ -3962,7 +3962,7 @@ CMD ["help"]
 ## `flink:1.12.7-scala_2.11-java11`
 
 ```console
-$ docker pull flink@sha256:538578f91110bd2f34751d33bee47b672a77f3196992e52246d40d1faaf4b3f8
+$ docker pull flink@sha256:f9b8c0669f1579604a7793180c35f34617ded2424f4cc0f22477ff72de2649c5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3972,14 +3972,14 @@ $ docker pull flink@sha256:538578f91110bd2f34751d33bee47b672a77f3196992e52246d40
 ### `flink:1.12.7-scala_2.11-java11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:6dd71433ffc40e83cbfbe5a885286d58390521663e391a78ed11478da8dff680
+$ docker pull flink@sha256:b4bc7ddff6def9289a231824abd6bb291e0854cc0382d319957625dc6873be3f
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **460.3 MB (460341465 bytes)**  
+-	Total Size: **460.7 MB (460658676 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6c92ccc1c3f3c6d7e94f6716dbfcf8e9e4d267e75bb95a15045f86071b79f5ac`
+-	Image ID: `sha256:fe7497ef0d9f817d733416a159c7c826db0100c8076a98047fae7089718a1756`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -4002,35 +4002,35 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 20 Apr 2022 10:53:58 GMT
 ENV LANG=C.UTF-8
-# Wed, 20 Apr 2022 10:53:58 GMT
-ENV JAVA_VERSION=11.0.14.1
-# Wed, 20 Apr 2022 10:54:05 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_x64_linux_11.0.14.1_1.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_aarch64_linux_11.0.14.1_1.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Thu, 21 Apr 2022 01:06:22 GMT
+# Mon, 25 Apr 2022 18:27:13 GMT
+ENV JAVA_VERSION=11.0.15
+# Mon, 25 Apr 2022 18:27:19 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_x64_linux_11.0.15_10.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_aarch64_linux_11.0.15_10.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
+# Mon, 25 Apr 2022 19:16:40 GMT
 RUN set -ex;   apt-get update;   apt-get -y install libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/*
-# Thu, 21 Apr 2022 01:06:22 GMT
+# Mon, 25 Apr 2022 19:16:40 GMT
 ENV GOSU_VERSION=1.11
-# Thu, 21 Apr 2022 01:07:16 GMT
+# Mon, 25 Apr 2022 19:17:29 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in ha.pool.sks-keyservers.net $(shuf -e                           hkp://p80.pool.sks-keyservers.net:80                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Thu, 21 Apr 2022 01:19:32 GMT
+# Mon, 25 Apr 2022 19:23:49 GMT
 ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.12.7/flink-1.12.7-bin-scala_2.11.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.12.7/flink-1.12.7-bin-scala_2.11.tgz.asc GPG_KEY=19F2195E1B4816D765A2C324C2EED7B111D464BA CHECK_GPG=true
-# Thu, 21 Apr 2022 01:19:32 GMT
+# Mon, 25 Apr 2022 19:23:50 GMT
 ENV FLINK_HOME=/opt/flink
-# Thu, 21 Apr 2022 01:19:32 GMT
+# Mon, 25 Apr 2022 19:23:50 GMT
 ENV PATH=/opt/flink/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 21 Apr 2022 01:19:33 GMT
+# Mon, 25 Apr 2022 19:23:50 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Thu, 21 Apr 2022 01:19:33 GMT
+# Mon, 25 Apr 2022 19:23:50 GMT
 WORKDIR /opt/flink
-# Thu, 21 Apr 2022 01:20:57 GMT
+# Mon, 25 Apr 2022 19:24:52 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in ha.pool.sks-keyservers.net $(shuf -e                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;
-# Thu, 21 Apr 2022 01:20:58 GMT
+# Mon, 25 Apr 2022 19:24:53 GMT
 COPY file:169fc968df81e9941ad72fb5a70e8f5ef9e97e9bc4e58e8f596f13fbaaf8ab4f in / 
-# Thu, 21 Apr 2022 01:20:58 GMT
+# Mon, 25 Apr 2022 19:24:53 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 21 Apr 2022 01:20:58 GMT
+# Mon, 25 Apr 2022 19:24:53 GMT
 EXPOSE 6123 8081
-# Thu, 21 Apr 2022 01:20:58 GMT
+# Mon, 25 Apr 2022 19:24:53 GMT
 CMD ["help"]
 ```
 
@@ -4055,33 +4055,33 @@ CMD ["help"]
 		Last Modified: Wed, 20 Apr 2022 11:12:19 GMT  
 		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3adba0a35f28cdd034bef4df08d640578ed8f0c6b971084706a9203183d6387c`  
-		Last Modified: Wed, 20 Apr 2022 11:12:26 GMT  
-		Size: 46.9 MB (46880152 bytes)  
+	-	`sha256:ffa59d9ab33cd135fc03bd1449112beaf19d1eb922727cb5c81008ff68b12f95`  
+		Last Modified: Mon, 25 Apr 2022 18:41:27 GMT  
+		Size: 47.2 MB (47197425 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c9cff9eec7d2c6bd0f4e96d712bd19418edf20d9e67bb691ef23c644d48431f`  
-		Last Modified: Thu, 21 Apr 2022 01:29:51 GMT  
-		Size: 1.7 MB (1689687 bytes)  
+	-	`sha256:57169ac226acc0b97cefcf5d0c4611ad7464e516a0abbe839ddd7add7c2e9f80`  
+		Last Modified: Mon, 25 Apr 2022 19:29:51 GMT  
+		Size: 1.7 MB (1689665 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:856ec9413034d6e6a730861ad35d2981ef32cbc6cb8a30996766983c104a269b`  
-		Last Modified: Thu, 21 Apr 2022 01:29:49 GMT  
-		Size: 900.5 KB (900512 bytes)  
+	-	`sha256:8118a2fa03079b7c9cb68aff8c797f98bd9f46d52e809802d79e9521c121732b`  
+		Last Modified: Mon, 25 Apr 2022 19:29:48 GMT  
+		Size: 900.5 KB (900508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:17b6cae27064325f62608012e5cb40e845054f88b9d9d8afd0bd94a9ce9790d3`  
-		Last Modified: Thu, 21 Apr 2022 01:35:54 GMT  
-		Size: 4.6 KB (4603 bytes)  
+	-	`sha256:6b14e5cdcbe36092838e9967ded0b942cf6cfa24c39afb447ac17a879cb2bf0c`  
+		Last Modified: Mon, 25 Apr 2022 19:32:37 GMT  
+		Size: 4.6 KB (4604 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6ef512e952b974cc0351792890a7aa7b2fad6b5874bbeda3e21f7d25b299075`  
-		Last Modified: Thu, 21 Apr 2022 01:35:54 GMT  
+	-	`sha256:fbe9d8e1428758c99767112f8eb2a7eb0af6020a4ec13ef0afd6fa862d6abb64`  
+		Last Modified: Mon, 25 Apr 2022 19:32:37 GMT  
 		Size: 148.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:caf4e0434b197cac1cef8182f55fd40b255e69737239ff6a8bba426b47d44189`  
-		Last Modified: Thu, 21 Apr 2022 01:36:13 GMT  
-		Size: 334.2 MB (334234136 bytes)  
+	-	`sha256:72a1ddfa684c7ef614502ad6721b4169d95867a55f262530c9ebb651e6b45a90`  
+		Last Modified: Mon, 25 Apr 2022 19:32:53 GMT  
+		Size: 334.2 MB (334234098 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:58a4120713b443c8b085a3aafd1ff43184d285b8fff2938689c4c5e273dac851`  
-		Last Modified: Thu, 21 Apr 2022 01:35:54 GMT  
-		Size: 2.2 KB (2169 bytes)  
+	-	`sha256:77f5d829e82da4f44abef7e8e45ae802f423d1026fddc72990917c17e0282299`  
+		Last Modified: Mon, 25 Apr 2022 19:32:37 GMT  
+		Size: 2.2 KB (2170 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `flink:1.12.7-scala_2.11-java8`
@@ -4337,7 +4337,7 @@ CMD ["help"]
 ## `flink:1.12.7-scala_2.12-java11`
 
 ```console
-$ docker pull flink@sha256:da660222cb2e3a3987e4be877cf286f45ae88b92b151a990bf9a2d624f35ffe9
+$ docker pull flink@sha256:a5d5e478203665d7b279faca1fab9332caa600e92725241f0f2c3daf1861d930
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4347,14 +4347,14 @@ $ docker pull flink@sha256:da660222cb2e3a3987e4be877cf286f45ae88b92b151a990bf9a2
 ### `flink:1.12.7-scala_2.12-java11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:61cca08b06b18c7c48c3ba62b91c5062fd83a9282fdbb8d57e604d141d5671c8
+$ docker pull flink@sha256:6454e946d35aabc80dd562d2259745dcffd1f5ff019e8ea0935dfa409c378b5a
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **450.9 MB (450943257 bytes)**  
+-	Total Size: **451.3 MB (451260543 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4c3774a8131fba3bebcf44e7c53fe2a6550843e0948760a3b23c76718712b1c1`
+-	Image ID: `sha256:a47b620b8ca8dbe63f9e6205b24158f58689b9eba9d19d5c118099e460eb12ac`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -4377,35 +4377,35 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 20 Apr 2022 10:53:58 GMT
 ENV LANG=C.UTF-8
-# Wed, 20 Apr 2022 10:53:58 GMT
-ENV JAVA_VERSION=11.0.14.1
-# Wed, 20 Apr 2022 10:54:05 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_x64_linux_11.0.14.1_1.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_aarch64_linux_11.0.14.1_1.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Thu, 21 Apr 2022 01:06:22 GMT
+# Mon, 25 Apr 2022 18:27:13 GMT
+ENV JAVA_VERSION=11.0.15
+# Mon, 25 Apr 2022 18:27:19 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_x64_linux_11.0.15_10.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_aarch64_linux_11.0.15_10.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
+# Mon, 25 Apr 2022 19:16:40 GMT
 RUN set -ex;   apt-get update;   apt-get -y install libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/*
-# Thu, 21 Apr 2022 01:06:22 GMT
+# Mon, 25 Apr 2022 19:16:40 GMT
 ENV GOSU_VERSION=1.11
-# Thu, 21 Apr 2022 01:07:16 GMT
+# Mon, 25 Apr 2022 19:17:29 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in ha.pool.sks-keyservers.net $(shuf -e                           hkp://p80.pool.sks-keyservers.net:80                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Thu, 21 Apr 2022 01:17:00 GMT
+# Mon, 25 Apr 2022 19:22:38 GMT
 ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.12.7/flink-1.12.7-bin-scala_2.12.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.12.7/flink-1.12.7-bin-scala_2.12.tgz.asc GPG_KEY=19F2195E1B4816D765A2C324C2EED7B111D464BA CHECK_GPG=true
-# Thu, 21 Apr 2022 01:17:00 GMT
+# Mon, 25 Apr 2022 19:22:38 GMT
 ENV FLINK_HOME=/opt/flink
-# Thu, 21 Apr 2022 01:17:00 GMT
+# Mon, 25 Apr 2022 19:22:38 GMT
 ENV PATH=/opt/flink/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 21 Apr 2022 01:17:01 GMT
+# Mon, 25 Apr 2022 19:22:39 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Thu, 21 Apr 2022 01:17:01 GMT
+# Mon, 25 Apr 2022 19:22:39 GMT
 WORKDIR /opt/flink
-# Thu, 21 Apr 2022 01:18:06 GMT
+# Mon, 25 Apr 2022 19:23:41 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in ha.pool.sks-keyservers.net $(shuf -e                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;
-# Thu, 21 Apr 2022 01:18:06 GMT
+# Mon, 25 Apr 2022 19:23:42 GMT
 COPY file:169fc968df81e9941ad72fb5a70e8f5ef9e97e9bc4e58e8f596f13fbaaf8ab4f in / 
-# Thu, 21 Apr 2022 01:18:06 GMT
+# Mon, 25 Apr 2022 19:23:42 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 21 Apr 2022 01:18:06 GMT
+# Mon, 25 Apr 2022 19:23:42 GMT
 EXPOSE 6123 8081
-# Thu, 21 Apr 2022 01:18:07 GMT
+# Mon, 25 Apr 2022 19:23:42 GMT
 CMD ["help"]
 ```
 
@@ -4430,33 +4430,33 @@ CMD ["help"]
 		Last Modified: Wed, 20 Apr 2022 11:12:19 GMT  
 		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3adba0a35f28cdd034bef4df08d640578ed8f0c6b971084706a9203183d6387c`  
-		Last Modified: Wed, 20 Apr 2022 11:12:26 GMT  
-		Size: 46.9 MB (46880152 bytes)  
+	-	`sha256:ffa59d9ab33cd135fc03bd1449112beaf19d1eb922727cb5c81008ff68b12f95`  
+		Last Modified: Mon, 25 Apr 2022 18:41:27 GMT  
+		Size: 47.2 MB (47197425 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c9cff9eec7d2c6bd0f4e96d712bd19418edf20d9e67bb691ef23c644d48431f`  
-		Last Modified: Thu, 21 Apr 2022 01:29:51 GMT  
-		Size: 1.7 MB (1689687 bytes)  
+	-	`sha256:57169ac226acc0b97cefcf5d0c4611ad7464e516a0abbe839ddd7add7c2e9f80`  
+		Last Modified: Mon, 25 Apr 2022 19:29:51 GMT  
+		Size: 1.7 MB (1689665 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:856ec9413034d6e6a730861ad35d2981ef32cbc6cb8a30996766983c104a269b`  
-		Last Modified: Thu, 21 Apr 2022 01:29:49 GMT  
-		Size: 900.5 KB (900512 bytes)  
+	-	`sha256:8118a2fa03079b7c9cb68aff8c797f98bd9f46d52e809802d79e9521c121732b`  
+		Last Modified: Mon, 25 Apr 2022 19:29:48 GMT  
+		Size: 900.5 KB (900508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:82a4d8652c54c73e59ff8d979ac88d49f4337fba87ef1f6b57dafb0983f233bf`  
-		Last Modified: Thu, 21 Apr 2022 01:34:50 GMT  
-		Size: 4.6 KB (4601 bytes)  
+	-	`sha256:9ce098206661ee33668f0708a90e01c68f5747a05a71399c727cfbc3caf89bba`  
+		Last Modified: Mon, 25 Apr 2022 19:32:05 GMT  
+		Size: 4.6 KB (4602 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:49cbd9c6f79847c8c16430da803999d506218808420e7d0c54bd41d67dec1c53`  
-		Last Modified: Thu, 21 Apr 2022 01:34:50 GMT  
+	-	`sha256:aaf38530bcbf135377490c8118caf88cb4a1624021509b2954d72bf9b68c105f`  
+		Last Modified: Mon, 25 Apr 2022 19:32:05 GMT  
 		Size: 148.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a70797693964f57a700a26fd2b6ac232194c82ad4a77da63383b18977cfb07f7`  
-		Last Modified: Thu, 21 Apr 2022 01:35:05 GMT  
-		Size: 324.8 MB (324835930 bytes)  
+	-	`sha256:f6be9891614bcf00c7f77f7d1efb546996ba56ff7912c638e512b3455fbdf704`  
+		Last Modified: Mon, 25 Apr 2022 19:32:20 GMT  
+		Size: 324.8 MB (324835967 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a461f3c04a3ef434958edc11ccf524cf28bb64ef2b77f597bdec90d2278d8f2`  
-		Last Modified: Thu, 21 Apr 2022 01:34:50 GMT  
-		Size: 2.2 KB (2169 bytes)  
+	-	`sha256:971bfb22da9b0f183d84ca603c2f67011f7791a463cbfa64cb3434bafdeacdc4`  
+		Last Modified: Mon, 25 Apr 2022 19:32:05 GMT  
+		Size: 2.2 KB (2170 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `flink:1.12.7-scala_2.12-java8`
@@ -4712,7 +4712,7 @@ CMD ["help"]
 ## `flink:1.13-java11`
 
 ```console
-$ docker pull flink@sha256:1b07e0a68842bfb17c7baa6198cfb4227cbf2a1063bce3978af4429ced112cec
+$ docker pull flink@sha256:da4792fc1cb22361c4e0719dd697176b5beb94cc0a8dbdd6e7e75ee13a2ec410
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4722,14 +4722,14 @@ $ docker pull flink@sha256:1b07e0a68842bfb17c7baa6198cfb4227cbf2a1063bce3978af44
 ### `flink:1.13-java11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:3f4ba5c6ad1804dffc9f58c30161c62173a8ec0a6df5b825fa53ca865d534be1
+$ docker pull flink@sha256:2773dc4f749e0e4a1feadd3079756edcb221ad9a40caaf6e12edc3378aced6f1
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **431.4 MB (431427363 bytes)**  
+-	Total Size: **431.7 MB (431744599 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:de1a152e4cc4b2b9148fef7cbbf4d5a44bc8b988253ef9d98694e847c15a433e`
+-	Image ID: `sha256:c893e7820f8956b787b54b75138597fa0a85f9e450bc251387c8bbe8598eb540`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -4752,35 +4752,35 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 20 Apr 2022 10:53:58 GMT
 ENV LANG=C.UTF-8
-# Wed, 20 Apr 2022 10:53:58 GMT
-ENV JAVA_VERSION=11.0.14.1
-# Wed, 20 Apr 2022 10:54:05 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_x64_linux_11.0.14.1_1.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_aarch64_linux_11.0.14.1_1.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Thu, 21 Apr 2022 01:06:22 GMT
+# Mon, 25 Apr 2022 18:27:13 GMT
+ENV JAVA_VERSION=11.0.15
+# Mon, 25 Apr 2022 18:27:19 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_x64_linux_11.0.15_10.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_aarch64_linux_11.0.15_10.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
+# Mon, 25 Apr 2022 19:16:40 GMT
 RUN set -ex;   apt-get update;   apt-get -y install libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/*
-# Thu, 21 Apr 2022 01:06:22 GMT
+# Mon, 25 Apr 2022 19:16:40 GMT
 ENV GOSU_VERSION=1.11
-# Thu, 21 Apr 2022 01:07:16 GMT
+# Mon, 25 Apr 2022 19:17:29 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in ha.pool.sks-keyservers.net $(shuf -e                           hkp://p80.pool.sks-keyservers.net:80                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Thu, 21 Apr 2022 01:11:55 GMT
+# Mon, 25 Apr 2022 19:20:27 GMT
 ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.13.6/flink-1.13.6-bin-scala_2.12.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.13.6/flink-1.13.6-bin-scala_2.12.tgz.asc GPG_KEY=CCFA852FD039380AB3EC36D08C3FB007FE60DEFA CHECK_GPG=true
-# Thu, 21 Apr 2022 01:11:55 GMT
+# Mon, 25 Apr 2022 19:20:27 GMT
 ENV FLINK_HOME=/opt/flink
-# Thu, 21 Apr 2022 01:11:55 GMT
+# Mon, 25 Apr 2022 19:20:27 GMT
 ENV PATH=/opt/flink/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 21 Apr 2022 01:11:56 GMT
+# Mon, 25 Apr 2022 19:20:28 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Thu, 21 Apr 2022 01:11:56 GMT
+# Mon, 25 Apr 2022 19:20:28 GMT
 WORKDIR /opt/flink
-# Thu, 21 Apr 2022 01:12:52 GMT
+# Mon, 25 Apr 2022 19:21:24 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in ha.pool.sks-keyservers.net $(shuf -e                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;
-# Thu, 21 Apr 2022 01:12:53 GMT
+# Mon, 25 Apr 2022 19:21:24 GMT
 COPY file:5cd5e39f1e46b85ff32fa26e988fe4d93983dcbef27712cf760efc65655f7310 in / 
-# Thu, 21 Apr 2022 01:12:53 GMT
+# Mon, 25 Apr 2022 19:21:25 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 21 Apr 2022 01:12:53 GMT
+# Mon, 25 Apr 2022 19:21:25 GMT
 EXPOSE 6123 8081
-# Thu, 21 Apr 2022 01:12:53 GMT
+# Mon, 25 Apr 2022 19:21:25 GMT
 CMD ["help"]
 ```
 
@@ -4805,33 +4805,33 @@ CMD ["help"]
 		Last Modified: Wed, 20 Apr 2022 11:12:19 GMT  
 		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3adba0a35f28cdd034bef4df08d640578ed8f0c6b971084706a9203183d6387c`  
-		Last Modified: Wed, 20 Apr 2022 11:12:26 GMT  
-		Size: 46.9 MB (46880152 bytes)  
+	-	`sha256:ffa59d9ab33cd135fc03bd1449112beaf19d1eb922727cb5c81008ff68b12f95`  
+		Last Modified: Mon, 25 Apr 2022 18:41:27 GMT  
+		Size: 47.2 MB (47197425 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c9cff9eec7d2c6bd0f4e96d712bd19418edf20d9e67bb691ef23c644d48431f`  
-		Last Modified: Thu, 21 Apr 2022 01:29:51 GMT  
-		Size: 1.7 MB (1689687 bytes)  
+	-	`sha256:57169ac226acc0b97cefcf5d0c4611ad7464e516a0abbe839ddd7add7c2e9f80`  
+		Last Modified: Mon, 25 Apr 2022 19:29:51 GMT  
+		Size: 1.7 MB (1689665 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:856ec9413034d6e6a730861ad35d2981ef32cbc6cb8a30996766983c104a269b`  
-		Last Modified: Thu, 21 Apr 2022 01:29:49 GMT  
-		Size: 900.5 KB (900512 bytes)  
+	-	`sha256:8118a2fa03079b7c9cb68aff8c797f98bd9f46d52e809802d79e9521c121732b`  
+		Last Modified: Mon, 25 Apr 2022 19:29:48 GMT  
+		Size: 900.5 KB (900508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7db1ab980bca9e31ec34e63d1499a35c8380df8cce69306fb559b86de5f9cf9a`  
-		Last Modified: Thu, 21 Apr 2022 01:32:37 GMT  
-		Size: 4.6 KB (4601 bytes)  
+	-	`sha256:aa93a2793dabd2fb2d0e48e6fc5f18765aea11b92e0a21523fc62d3dccbce46d`  
+		Last Modified: Mon, 25 Apr 2022 19:31:04 GMT  
+		Size: 4.6 KB (4604 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2dc6ba0409b1a2b1f6660df040f9ae6829395c4e59051dbc43df8446a34d0d8`  
-		Last Modified: Thu, 21 Apr 2022 01:32:37 GMT  
+	-	`sha256:3d9e2371081232774735cc8da7d5588df4c3687efc492b8e18d40aa2a9a4e581`  
+		Last Modified: Mon, 25 Apr 2022 19:31:04 GMT  
 		Size: 148.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e3eee6929b1d580c1f52a1a2e04e46120f6220dcbc474e475b3b1a4ced51d84f`  
-		Last Modified: Thu, 21 Apr 2022 01:32:51 GMT  
-		Size: 305.3 MB (305320258 bytes)  
+	-	`sha256:54c5741dce388a9ce0f7075ebe140b571b9a12607f00fb2293e372b8fb8e4fc4`  
+		Last Modified: Mon, 25 Apr 2022 19:31:18 GMT  
+		Size: 305.3 MB (305320242 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:83496bab98fb871d21085dbc23bbe62ddeee264c55d1e68d1ad8cc6f7e521c8f`  
-		Last Modified: Thu, 21 Apr 2022 01:32:37 GMT  
-		Size: 1.9 KB (1947 bytes)  
+	-	`sha256:833cf63cf3eea3d8d7dac4ea27c68bc72a90a7955d344123eaa004a68c66b20c`  
+		Last Modified: Mon, 25 Apr 2022 19:31:04 GMT  
+		Size: 1.9 KB (1949 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `flink:1.13-java8`
@@ -5087,7 +5087,7 @@ CMD ["help"]
 ## `flink:1.13-scala_2.11-java11`
 
 ```console
-$ docker pull flink@sha256:c496b4dc2b23c52b7d89b35127efa43bf9a465133954014a42379022c8bd2e9c
+$ docker pull flink@sha256:8f71e391bcb56bef1d42178a4939276cf30584d48e274019f09cf8014100d783
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5097,14 +5097,14 @@ $ docker pull flink@sha256:c496b4dc2b23c52b7d89b35127efa43bf9a465133954014a42379
 ### `flink:1.13-scala_2.11-java11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:722eb26b64f88e26f954c061a99372d0e3cbe6dce167b5a5bacb5e134d8e419a
+$ docker pull flink@sha256:921cb8e6b2262e00874c496ce80bcc347f6a6ce6317cea6500c13d7277be46e6
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **440.8 MB (440769593 bytes)**  
+-	Total Size: **441.1 MB (441086836 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5ff1f6ea513f214931f31843c44e7937e9d236d96fad70f0bf52e2eb6bcf5d29`
+-	Image ID: `sha256:86a0ac224e23c22604338a32ff979485eded4a71dd5d9b20e70c8d30855359cc`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -5127,35 +5127,35 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 20 Apr 2022 10:53:58 GMT
 ENV LANG=C.UTF-8
-# Wed, 20 Apr 2022 10:53:58 GMT
-ENV JAVA_VERSION=11.0.14.1
-# Wed, 20 Apr 2022 10:54:05 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_x64_linux_11.0.14.1_1.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_aarch64_linux_11.0.14.1_1.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Thu, 21 Apr 2022 01:06:22 GMT
+# Mon, 25 Apr 2022 18:27:13 GMT
+ENV JAVA_VERSION=11.0.15
+# Mon, 25 Apr 2022 18:27:19 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_x64_linux_11.0.15_10.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_aarch64_linux_11.0.15_10.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
+# Mon, 25 Apr 2022 19:16:40 GMT
 RUN set -ex;   apt-get update;   apt-get -y install libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/*
-# Thu, 21 Apr 2022 01:06:22 GMT
+# Mon, 25 Apr 2022 19:16:40 GMT
 ENV GOSU_VERSION=1.11
-# Thu, 21 Apr 2022 01:07:16 GMT
+# Mon, 25 Apr 2022 19:17:29 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in ha.pool.sks-keyservers.net $(shuf -e                           hkp://p80.pool.sks-keyservers.net:80                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Thu, 21 Apr 2022 01:14:13 GMT
+# Mon, 25 Apr 2022 19:21:38 GMT
 ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.13.6/flink-1.13.6-bin-scala_2.11.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.13.6/flink-1.13.6-bin-scala_2.11.tgz.asc GPG_KEY=CCFA852FD039380AB3EC36D08C3FB007FE60DEFA CHECK_GPG=true
-# Thu, 21 Apr 2022 01:14:13 GMT
+# Mon, 25 Apr 2022 19:21:38 GMT
 ENV FLINK_HOME=/opt/flink
-# Thu, 21 Apr 2022 01:14:13 GMT
+# Mon, 25 Apr 2022 19:21:38 GMT
 ENV PATH=/opt/flink/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 21 Apr 2022 01:14:14 GMT
+# Mon, 25 Apr 2022 19:21:39 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Thu, 21 Apr 2022 01:14:14 GMT
+# Mon, 25 Apr 2022 19:21:39 GMT
 WORKDIR /opt/flink
-# Thu, 21 Apr 2022 01:15:10 GMT
+# Mon, 25 Apr 2022 19:22:31 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in ha.pool.sks-keyservers.net $(shuf -e                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;
-# Thu, 21 Apr 2022 01:15:11 GMT
+# Mon, 25 Apr 2022 19:22:32 GMT
 COPY file:5cd5e39f1e46b85ff32fa26e988fe4d93983dcbef27712cf760efc65655f7310 in / 
-# Thu, 21 Apr 2022 01:15:11 GMT
+# Mon, 25 Apr 2022 19:22:32 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 21 Apr 2022 01:15:11 GMT
+# Mon, 25 Apr 2022 19:22:32 GMT
 EXPOSE 6123 8081
-# Thu, 21 Apr 2022 01:15:11 GMT
+# Mon, 25 Apr 2022 19:22:32 GMT
 CMD ["help"]
 ```
 
@@ -5180,33 +5180,33 @@ CMD ["help"]
 		Last Modified: Wed, 20 Apr 2022 11:12:19 GMT  
 		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3adba0a35f28cdd034bef4df08d640578ed8f0c6b971084706a9203183d6387c`  
-		Last Modified: Wed, 20 Apr 2022 11:12:26 GMT  
-		Size: 46.9 MB (46880152 bytes)  
+	-	`sha256:ffa59d9ab33cd135fc03bd1449112beaf19d1eb922727cb5c81008ff68b12f95`  
+		Last Modified: Mon, 25 Apr 2022 18:41:27 GMT  
+		Size: 47.2 MB (47197425 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c9cff9eec7d2c6bd0f4e96d712bd19418edf20d9e67bb691ef23c644d48431f`  
-		Last Modified: Thu, 21 Apr 2022 01:29:51 GMT  
-		Size: 1.7 MB (1689687 bytes)  
+	-	`sha256:57169ac226acc0b97cefcf5d0c4611ad7464e516a0abbe839ddd7add7c2e9f80`  
+		Last Modified: Mon, 25 Apr 2022 19:29:51 GMT  
+		Size: 1.7 MB (1689665 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:856ec9413034d6e6a730861ad35d2981ef32cbc6cb8a30996766983c104a269b`  
-		Last Modified: Thu, 21 Apr 2022 01:29:49 GMT  
-		Size: 900.5 KB (900512 bytes)  
+	-	`sha256:8118a2fa03079b7c9cb68aff8c797f98bd9f46d52e809802d79e9521c121732b`  
+		Last Modified: Mon, 25 Apr 2022 19:29:48 GMT  
+		Size: 900.5 KB (900508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:32a24843f384393a448ad02414afc533ff8d58eb50f683b8d7f4a3b60dc8ba55`  
-		Last Modified: Thu, 21 Apr 2022 01:33:38 GMT  
-		Size: 4.6 KB (4600 bytes)  
+	-	`sha256:f65195a0068e7703045797eb50d3b922bfea3e6e03ca2e941972c44d4776a70b`  
+		Last Modified: Mon, 25 Apr 2022 19:31:37 GMT  
+		Size: 4.6 KB (4603 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68debfaa146bdc3b2325ff08152c9c7131b01ab0dcedc0d914ae49d0791cf9df`  
-		Last Modified: Thu, 21 Apr 2022 01:33:38 GMT  
+	-	`sha256:72b013f3db32f91bfd961ef7d6545e33064836843cc6283c89cf25918d581414`  
+		Last Modified: Mon, 25 Apr 2022 19:31:37 GMT  
 		Size: 148.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc6fa008bfc5e31e3e00fb681b0bfd7a051366153181f63ea3cb8ad659c45a1e`  
-		Last Modified: Thu, 21 Apr 2022 01:33:53 GMT  
-		Size: 314.7 MB (314662487 bytes)  
+	-	`sha256:ecaeb4c3ee4f9e23589d14490b368e550567f3f32a3278e90e3b1b95898ccd5b`  
+		Last Modified: Mon, 25 Apr 2022 19:31:51 GMT  
+		Size: 314.7 MB (314662482 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:19d6afe243f678684693810e41649ab7e5afe19c964d06323f1697e2cd539492`  
-		Last Modified: Thu, 21 Apr 2022 01:33:38 GMT  
-		Size: 1.9 KB (1949 bytes)  
+	-	`sha256:c5447210b13f100f189f32a434879df61e507a86d6d734111f2462972be640b5`  
+		Last Modified: Mon, 25 Apr 2022 19:31:37 GMT  
+		Size: 1.9 KB (1947 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `flink:1.13-scala_2.11-java8`
@@ -5462,7 +5462,7 @@ CMD ["help"]
 ## `flink:1.13-scala_2.12-java11`
 
 ```console
-$ docker pull flink@sha256:1b07e0a68842bfb17c7baa6198cfb4227cbf2a1063bce3978af4429ced112cec
+$ docker pull flink@sha256:da4792fc1cb22361c4e0719dd697176b5beb94cc0a8dbdd6e7e75ee13a2ec410
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5472,14 +5472,14 @@ $ docker pull flink@sha256:1b07e0a68842bfb17c7baa6198cfb4227cbf2a1063bce3978af44
 ### `flink:1.13-scala_2.12-java11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:3f4ba5c6ad1804dffc9f58c30161c62173a8ec0a6df5b825fa53ca865d534be1
+$ docker pull flink@sha256:2773dc4f749e0e4a1feadd3079756edcb221ad9a40caaf6e12edc3378aced6f1
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **431.4 MB (431427363 bytes)**  
+-	Total Size: **431.7 MB (431744599 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:de1a152e4cc4b2b9148fef7cbbf4d5a44bc8b988253ef9d98694e847c15a433e`
+-	Image ID: `sha256:c893e7820f8956b787b54b75138597fa0a85f9e450bc251387c8bbe8598eb540`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -5502,35 +5502,35 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 20 Apr 2022 10:53:58 GMT
 ENV LANG=C.UTF-8
-# Wed, 20 Apr 2022 10:53:58 GMT
-ENV JAVA_VERSION=11.0.14.1
-# Wed, 20 Apr 2022 10:54:05 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_x64_linux_11.0.14.1_1.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_aarch64_linux_11.0.14.1_1.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Thu, 21 Apr 2022 01:06:22 GMT
+# Mon, 25 Apr 2022 18:27:13 GMT
+ENV JAVA_VERSION=11.0.15
+# Mon, 25 Apr 2022 18:27:19 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_x64_linux_11.0.15_10.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_aarch64_linux_11.0.15_10.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
+# Mon, 25 Apr 2022 19:16:40 GMT
 RUN set -ex;   apt-get update;   apt-get -y install libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/*
-# Thu, 21 Apr 2022 01:06:22 GMT
+# Mon, 25 Apr 2022 19:16:40 GMT
 ENV GOSU_VERSION=1.11
-# Thu, 21 Apr 2022 01:07:16 GMT
+# Mon, 25 Apr 2022 19:17:29 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in ha.pool.sks-keyservers.net $(shuf -e                           hkp://p80.pool.sks-keyservers.net:80                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Thu, 21 Apr 2022 01:11:55 GMT
+# Mon, 25 Apr 2022 19:20:27 GMT
 ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.13.6/flink-1.13.6-bin-scala_2.12.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.13.6/flink-1.13.6-bin-scala_2.12.tgz.asc GPG_KEY=CCFA852FD039380AB3EC36D08C3FB007FE60DEFA CHECK_GPG=true
-# Thu, 21 Apr 2022 01:11:55 GMT
+# Mon, 25 Apr 2022 19:20:27 GMT
 ENV FLINK_HOME=/opt/flink
-# Thu, 21 Apr 2022 01:11:55 GMT
+# Mon, 25 Apr 2022 19:20:27 GMT
 ENV PATH=/opt/flink/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 21 Apr 2022 01:11:56 GMT
+# Mon, 25 Apr 2022 19:20:28 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Thu, 21 Apr 2022 01:11:56 GMT
+# Mon, 25 Apr 2022 19:20:28 GMT
 WORKDIR /opt/flink
-# Thu, 21 Apr 2022 01:12:52 GMT
+# Mon, 25 Apr 2022 19:21:24 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in ha.pool.sks-keyservers.net $(shuf -e                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;
-# Thu, 21 Apr 2022 01:12:53 GMT
+# Mon, 25 Apr 2022 19:21:24 GMT
 COPY file:5cd5e39f1e46b85ff32fa26e988fe4d93983dcbef27712cf760efc65655f7310 in / 
-# Thu, 21 Apr 2022 01:12:53 GMT
+# Mon, 25 Apr 2022 19:21:25 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 21 Apr 2022 01:12:53 GMT
+# Mon, 25 Apr 2022 19:21:25 GMT
 EXPOSE 6123 8081
-# Thu, 21 Apr 2022 01:12:53 GMT
+# Mon, 25 Apr 2022 19:21:25 GMT
 CMD ["help"]
 ```
 
@@ -5555,33 +5555,33 @@ CMD ["help"]
 		Last Modified: Wed, 20 Apr 2022 11:12:19 GMT  
 		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3adba0a35f28cdd034bef4df08d640578ed8f0c6b971084706a9203183d6387c`  
-		Last Modified: Wed, 20 Apr 2022 11:12:26 GMT  
-		Size: 46.9 MB (46880152 bytes)  
+	-	`sha256:ffa59d9ab33cd135fc03bd1449112beaf19d1eb922727cb5c81008ff68b12f95`  
+		Last Modified: Mon, 25 Apr 2022 18:41:27 GMT  
+		Size: 47.2 MB (47197425 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c9cff9eec7d2c6bd0f4e96d712bd19418edf20d9e67bb691ef23c644d48431f`  
-		Last Modified: Thu, 21 Apr 2022 01:29:51 GMT  
-		Size: 1.7 MB (1689687 bytes)  
+	-	`sha256:57169ac226acc0b97cefcf5d0c4611ad7464e516a0abbe839ddd7add7c2e9f80`  
+		Last Modified: Mon, 25 Apr 2022 19:29:51 GMT  
+		Size: 1.7 MB (1689665 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:856ec9413034d6e6a730861ad35d2981ef32cbc6cb8a30996766983c104a269b`  
-		Last Modified: Thu, 21 Apr 2022 01:29:49 GMT  
-		Size: 900.5 KB (900512 bytes)  
+	-	`sha256:8118a2fa03079b7c9cb68aff8c797f98bd9f46d52e809802d79e9521c121732b`  
+		Last Modified: Mon, 25 Apr 2022 19:29:48 GMT  
+		Size: 900.5 KB (900508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7db1ab980bca9e31ec34e63d1499a35c8380df8cce69306fb559b86de5f9cf9a`  
-		Last Modified: Thu, 21 Apr 2022 01:32:37 GMT  
-		Size: 4.6 KB (4601 bytes)  
+	-	`sha256:aa93a2793dabd2fb2d0e48e6fc5f18765aea11b92e0a21523fc62d3dccbce46d`  
+		Last Modified: Mon, 25 Apr 2022 19:31:04 GMT  
+		Size: 4.6 KB (4604 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2dc6ba0409b1a2b1f6660df040f9ae6829395c4e59051dbc43df8446a34d0d8`  
-		Last Modified: Thu, 21 Apr 2022 01:32:37 GMT  
+	-	`sha256:3d9e2371081232774735cc8da7d5588df4c3687efc492b8e18d40aa2a9a4e581`  
+		Last Modified: Mon, 25 Apr 2022 19:31:04 GMT  
 		Size: 148.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e3eee6929b1d580c1f52a1a2e04e46120f6220dcbc474e475b3b1a4ced51d84f`  
-		Last Modified: Thu, 21 Apr 2022 01:32:51 GMT  
-		Size: 305.3 MB (305320258 bytes)  
+	-	`sha256:54c5741dce388a9ce0f7075ebe140b571b9a12607f00fb2293e372b8fb8e4fc4`  
+		Last Modified: Mon, 25 Apr 2022 19:31:18 GMT  
+		Size: 305.3 MB (305320242 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:83496bab98fb871d21085dbc23bbe62ddeee264c55d1e68d1ad8cc6f7e521c8f`  
-		Last Modified: Thu, 21 Apr 2022 01:32:37 GMT  
-		Size: 1.9 KB (1947 bytes)  
+	-	`sha256:833cf63cf3eea3d8d7dac4ea27c68bc72a90a7955d344123eaa004a68c66b20c`  
+		Last Modified: Mon, 25 Apr 2022 19:31:04 GMT  
+		Size: 1.9 KB (1949 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `flink:1.13-scala_2.12-java8`
@@ -5837,7 +5837,7 @@ CMD ["help"]
 ## `flink:1.13.6-java11`
 
 ```console
-$ docker pull flink@sha256:1b07e0a68842bfb17c7baa6198cfb4227cbf2a1063bce3978af4429ced112cec
+$ docker pull flink@sha256:da4792fc1cb22361c4e0719dd697176b5beb94cc0a8dbdd6e7e75ee13a2ec410
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5847,14 +5847,14 @@ $ docker pull flink@sha256:1b07e0a68842bfb17c7baa6198cfb4227cbf2a1063bce3978af44
 ### `flink:1.13.6-java11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:3f4ba5c6ad1804dffc9f58c30161c62173a8ec0a6df5b825fa53ca865d534be1
+$ docker pull flink@sha256:2773dc4f749e0e4a1feadd3079756edcb221ad9a40caaf6e12edc3378aced6f1
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **431.4 MB (431427363 bytes)**  
+-	Total Size: **431.7 MB (431744599 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:de1a152e4cc4b2b9148fef7cbbf4d5a44bc8b988253ef9d98694e847c15a433e`
+-	Image ID: `sha256:c893e7820f8956b787b54b75138597fa0a85f9e450bc251387c8bbe8598eb540`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -5877,35 +5877,35 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 20 Apr 2022 10:53:58 GMT
 ENV LANG=C.UTF-8
-# Wed, 20 Apr 2022 10:53:58 GMT
-ENV JAVA_VERSION=11.0.14.1
-# Wed, 20 Apr 2022 10:54:05 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_x64_linux_11.0.14.1_1.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_aarch64_linux_11.0.14.1_1.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Thu, 21 Apr 2022 01:06:22 GMT
+# Mon, 25 Apr 2022 18:27:13 GMT
+ENV JAVA_VERSION=11.0.15
+# Mon, 25 Apr 2022 18:27:19 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_x64_linux_11.0.15_10.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_aarch64_linux_11.0.15_10.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
+# Mon, 25 Apr 2022 19:16:40 GMT
 RUN set -ex;   apt-get update;   apt-get -y install libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/*
-# Thu, 21 Apr 2022 01:06:22 GMT
+# Mon, 25 Apr 2022 19:16:40 GMT
 ENV GOSU_VERSION=1.11
-# Thu, 21 Apr 2022 01:07:16 GMT
+# Mon, 25 Apr 2022 19:17:29 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in ha.pool.sks-keyservers.net $(shuf -e                           hkp://p80.pool.sks-keyservers.net:80                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Thu, 21 Apr 2022 01:11:55 GMT
+# Mon, 25 Apr 2022 19:20:27 GMT
 ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.13.6/flink-1.13.6-bin-scala_2.12.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.13.6/flink-1.13.6-bin-scala_2.12.tgz.asc GPG_KEY=CCFA852FD039380AB3EC36D08C3FB007FE60DEFA CHECK_GPG=true
-# Thu, 21 Apr 2022 01:11:55 GMT
+# Mon, 25 Apr 2022 19:20:27 GMT
 ENV FLINK_HOME=/opt/flink
-# Thu, 21 Apr 2022 01:11:55 GMT
+# Mon, 25 Apr 2022 19:20:27 GMT
 ENV PATH=/opt/flink/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 21 Apr 2022 01:11:56 GMT
+# Mon, 25 Apr 2022 19:20:28 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Thu, 21 Apr 2022 01:11:56 GMT
+# Mon, 25 Apr 2022 19:20:28 GMT
 WORKDIR /opt/flink
-# Thu, 21 Apr 2022 01:12:52 GMT
+# Mon, 25 Apr 2022 19:21:24 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in ha.pool.sks-keyservers.net $(shuf -e                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;
-# Thu, 21 Apr 2022 01:12:53 GMT
+# Mon, 25 Apr 2022 19:21:24 GMT
 COPY file:5cd5e39f1e46b85ff32fa26e988fe4d93983dcbef27712cf760efc65655f7310 in / 
-# Thu, 21 Apr 2022 01:12:53 GMT
+# Mon, 25 Apr 2022 19:21:25 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 21 Apr 2022 01:12:53 GMT
+# Mon, 25 Apr 2022 19:21:25 GMT
 EXPOSE 6123 8081
-# Thu, 21 Apr 2022 01:12:53 GMT
+# Mon, 25 Apr 2022 19:21:25 GMT
 CMD ["help"]
 ```
 
@@ -5930,33 +5930,33 @@ CMD ["help"]
 		Last Modified: Wed, 20 Apr 2022 11:12:19 GMT  
 		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3adba0a35f28cdd034bef4df08d640578ed8f0c6b971084706a9203183d6387c`  
-		Last Modified: Wed, 20 Apr 2022 11:12:26 GMT  
-		Size: 46.9 MB (46880152 bytes)  
+	-	`sha256:ffa59d9ab33cd135fc03bd1449112beaf19d1eb922727cb5c81008ff68b12f95`  
+		Last Modified: Mon, 25 Apr 2022 18:41:27 GMT  
+		Size: 47.2 MB (47197425 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c9cff9eec7d2c6bd0f4e96d712bd19418edf20d9e67bb691ef23c644d48431f`  
-		Last Modified: Thu, 21 Apr 2022 01:29:51 GMT  
-		Size: 1.7 MB (1689687 bytes)  
+	-	`sha256:57169ac226acc0b97cefcf5d0c4611ad7464e516a0abbe839ddd7add7c2e9f80`  
+		Last Modified: Mon, 25 Apr 2022 19:29:51 GMT  
+		Size: 1.7 MB (1689665 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:856ec9413034d6e6a730861ad35d2981ef32cbc6cb8a30996766983c104a269b`  
-		Last Modified: Thu, 21 Apr 2022 01:29:49 GMT  
-		Size: 900.5 KB (900512 bytes)  
+	-	`sha256:8118a2fa03079b7c9cb68aff8c797f98bd9f46d52e809802d79e9521c121732b`  
+		Last Modified: Mon, 25 Apr 2022 19:29:48 GMT  
+		Size: 900.5 KB (900508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7db1ab980bca9e31ec34e63d1499a35c8380df8cce69306fb559b86de5f9cf9a`  
-		Last Modified: Thu, 21 Apr 2022 01:32:37 GMT  
-		Size: 4.6 KB (4601 bytes)  
+	-	`sha256:aa93a2793dabd2fb2d0e48e6fc5f18765aea11b92e0a21523fc62d3dccbce46d`  
+		Last Modified: Mon, 25 Apr 2022 19:31:04 GMT  
+		Size: 4.6 KB (4604 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2dc6ba0409b1a2b1f6660df040f9ae6829395c4e59051dbc43df8446a34d0d8`  
-		Last Modified: Thu, 21 Apr 2022 01:32:37 GMT  
+	-	`sha256:3d9e2371081232774735cc8da7d5588df4c3687efc492b8e18d40aa2a9a4e581`  
+		Last Modified: Mon, 25 Apr 2022 19:31:04 GMT  
 		Size: 148.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e3eee6929b1d580c1f52a1a2e04e46120f6220dcbc474e475b3b1a4ced51d84f`  
-		Last Modified: Thu, 21 Apr 2022 01:32:51 GMT  
-		Size: 305.3 MB (305320258 bytes)  
+	-	`sha256:54c5741dce388a9ce0f7075ebe140b571b9a12607f00fb2293e372b8fb8e4fc4`  
+		Last Modified: Mon, 25 Apr 2022 19:31:18 GMT  
+		Size: 305.3 MB (305320242 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:83496bab98fb871d21085dbc23bbe62ddeee264c55d1e68d1ad8cc6f7e521c8f`  
-		Last Modified: Thu, 21 Apr 2022 01:32:37 GMT  
-		Size: 1.9 KB (1947 bytes)  
+	-	`sha256:833cf63cf3eea3d8d7dac4ea27c68bc72a90a7955d344123eaa004a68c66b20c`  
+		Last Modified: Mon, 25 Apr 2022 19:31:04 GMT  
+		Size: 1.9 KB (1949 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `flink:1.13.6-java8`
@@ -6212,7 +6212,7 @@ CMD ["help"]
 ## `flink:1.13.6-scala_2.11-java11`
 
 ```console
-$ docker pull flink@sha256:c496b4dc2b23c52b7d89b35127efa43bf9a465133954014a42379022c8bd2e9c
+$ docker pull flink@sha256:8f71e391bcb56bef1d42178a4939276cf30584d48e274019f09cf8014100d783
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6222,14 +6222,14 @@ $ docker pull flink@sha256:c496b4dc2b23c52b7d89b35127efa43bf9a465133954014a42379
 ### `flink:1.13.6-scala_2.11-java11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:722eb26b64f88e26f954c061a99372d0e3cbe6dce167b5a5bacb5e134d8e419a
+$ docker pull flink@sha256:921cb8e6b2262e00874c496ce80bcc347f6a6ce6317cea6500c13d7277be46e6
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **440.8 MB (440769593 bytes)**  
+-	Total Size: **441.1 MB (441086836 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5ff1f6ea513f214931f31843c44e7937e9d236d96fad70f0bf52e2eb6bcf5d29`
+-	Image ID: `sha256:86a0ac224e23c22604338a32ff979485eded4a71dd5d9b20e70c8d30855359cc`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -6252,35 +6252,35 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 20 Apr 2022 10:53:58 GMT
 ENV LANG=C.UTF-8
-# Wed, 20 Apr 2022 10:53:58 GMT
-ENV JAVA_VERSION=11.0.14.1
-# Wed, 20 Apr 2022 10:54:05 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_x64_linux_11.0.14.1_1.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_aarch64_linux_11.0.14.1_1.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Thu, 21 Apr 2022 01:06:22 GMT
+# Mon, 25 Apr 2022 18:27:13 GMT
+ENV JAVA_VERSION=11.0.15
+# Mon, 25 Apr 2022 18:27:19 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_x64_linux_11.0.15_10.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_aarch64_linux_11.0.15_10.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
+# Mon, 25 Apr 2022 19:16:40 GMT
 RUN set -ex;   apt-get update;   apt-get -y install libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/*
-# Thu, 21 Apr 2022 01:06:22 GMT
+# Mon, 25 Apr 2022 19:16:40 GMT
 ENV GOSU_VERSION=1.11
-# Thu, 21 Apr 2022 01:07:16 GMT
+# Mon, 25 Apr 2022 19:17:29 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in ha.pool.sks-keyservers.net $(shuf -e                           hkp://p80.pool.sks-keyservers.net:80                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Thu, 21 Apr 2022 01:14:13 GMT
+# Mon, 25 Apr 2022 19:21:38 GMT
 ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.13.6/flink-1.13.6-bin-scala_2.11.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.13.6/flink-1.13.6-bin-scala_2.11.tgz.asc GPG_KEY=CCFA852FD039380AB3EC36D08C3FB007FE60DEFA CHECK_GPG=true
-# Thu, 21 Apr 2022 01:14:13 GMT
+# Mon, 25 Apr 2022 19:21:38 GMT
 ENV FLINK_HOME=/opt/flink
-# Thu, 21 Apr 2022 01:14:13 GMT
+# Mon, 25 Apr 2022 19:21:38 GMT
 ENV PATH=/opt/flink/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 21 Apr 2022 01:14:14 GMT
+# Mon, 25 Apr 2022 19:21:39 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Thu, 21 Apr 2022 01:14:14 GMT
+# Mon, 25 Apr 2022 19:21:39 GMT
 WORKDIR /opt/flink
-# Thu, 21 Apr 2022 01:15:10 GMT
+# Mon, 25 Apr 2022 19:22:31 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in ha.pool.sks-keyservers.net $(shuf -e                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;
-# Thu, 21 Apr 2022 01:15:11 GMT
+# Mon, 25 Apr 2022 19:22:32 GMT
 COPY file:5cd5e39f1e46b85ff32fa26e988fe4d93983dcbef27712cf760efc65655f7310 in / 
-# Thu, 21 Apr 2022 01:15:11 GMT
+# Mon, 25 Apr 2022 19:22:32 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 21 Apr 2022 01:15:11 GMT
+# Mon, 25 Apr 2022 19:22:32 GMT
 EXPOSE 6123 8081
-# Thu, 21 Apr 2022 01:15:11 GMT
+# Mon, 25 Apr 2022 19:22:32 GMT
 CMD ["help"]
 ```
 
@@ -6305,33 +6305,33 @@ CMD ["help"]
 		Last Modified: Wed, 20 Apr 2022 11:12:19 GMT  
 		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3adba0a35f28cdd034bef4df08d640578ed8f0c6b971084706a9203183d6387c`  
-		Last Modified: Wed, 20 Apr 2022 11:12:26 GMT  
-		Size: 46.9 MB (46880152 bytes)  
+	-	`sha256:ffa59d9ab33cd135fc03bd1449112beaf19d1eb922727cb5c81008ff68b12f95`  
+		Last Modified: Mon, 25 Apr 2022 18:41:27 GMT  
+		Size: 47.2 MB (47197425 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c9cff9eec7d2c6bd0f4e96d712bd19418edf20d9e67bb691ef23c644d48431f`  
-		Last Modified: Thu, 21 Apr 2022 01:29:51 GMT  
-		Size: 1.7 MB (1689687 bytes)  
+	-	`sha256:57169ac226acc0b97cefcf5d0c4611ad7464e516a0abbe839ddd7add7c2e9f80`  
+		Last Modified: Mon, 25 Apr 2022 19:29:51 GMT  
+		Size: 1.7 MB (1689665 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:856ec9413034d6e6a730861ad35d2981ef32cbc6cb8a30996766983c104a269b`  
-		Last Modified: Thu, 21 Apr 2022 01:29:49 GMT  
-		Size: 900.5 KB (900512 bytes)  
+	-	`sha256:8118a2fa03079b7c9cb68aff8c797f98bd9f46d52e809802d79e9521c121732b`  
+		Last Modified: Mon, 25 Apr 2022 19:29:48 GMT  
+		Size: 900.5 KB (900508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:32a24843f384393a448ad02414afc533ff8d58eb50f683b8d7f4a3b60dc8ba55`  
-		Last Modified: Thu, 21 Apr 2022 01:33:38 GMT  
-		Size: 4.6 KB (4600 bytes)  
+	-	`sha256:f65195a0068e7703045797eb50d3b922bfea3e6e03ca2e941972c44d4776a70b`  
+		Last Modified: Mon, 25 Apr 2022 19:31:37 GMT  
+		Size: 4.6 KB (4603 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68debfaa146bdc3b2325ff08152c9c7131b01ab0dcedc0d914ae49d0791cf9df`  
-		Last Modified: Thu, 21 Apr 2022 01:33:38 GMT  
+	-	`sha256:72b013f3db32f91bfd961ef7d6545e33064836843cc6283c89cf25918d581414`  
+		Last Modified: Mon, 25 Apr 2022 19:31:37 GMT  
 		Size: 148.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc6fa008bfc5e31e3e00fb681b0bfd7a051366153181f63ea3cb8ad659c45a1e`  
-		Last Modified: Thu, 21 Apr 2022 01:33:53 GMT  
-		Size: 314.7 MB (314662487 bytes)  
+	-	`sha256:ecaeb4c3ee4f9e23589d14490b368e550567f3f32a3278e90e3b1b95898ccd5b`  
+		Last Modified: Mon, 25 Apr 2022 19:31:51 GMT  
+		Size: 314.7 MB (314662482 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:19d6afe243f678684693810e41649ab7e5afe19c964d06323f1697e2cd539492`  
-		Last Modified: Thu, 21 Apr 2022 01:33:38 GMT  
-		Size: 1.9 KB (1949 bytes)  
+	-	`sha256:c5447210b13f100f189f32a434879df61e507a86d6d734111f2462972be640b5`  
+		Last Modified: Mon, 25 Apr 2022 19:31:37 GMT  
+		Size: 1.9 KB (1947 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `flink:1.13.6-scala_2.11-java8`
@@ -6587,7 +6587,7 @@ CMD ["help"]
 ## `flink:1.13.6-scala_2.12-java11`
 
 ```console
-$ docker pull flink@sha256:1b07e0a68842bfb17c7baa6198cfb4227cbf2a1063bce3978af4429ced112cec
+$ docker pull flink@sha256:da4792fc1cb22361c4e0719dd697176b5beb94cc0a8dbdd6e7e75ee13a2ec410
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6597,14 +6597,14 @@ $ docker pull flink@sha256:1b07e0a68842bfb17c7baa6198cfb4227cbf2a1063bce3978af44
 ### `flink:1.13.6-scala_2.12-java11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:3f4ba5c6ad1804dffc9f58c30161c62173a8ec0a6df5b825fa53ca865d534be1
+$ docker pull flink@sha256:2773dc4f749e0e4a1feadd3079756edcb221ad9a40caaf6e12edc3378aced6f1
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **431.4 MB (431427363 bytes)**  
+-	Total Size: **431.7 MB (431744599 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:de1a152e4cc4b2b9148fef7cbbf4d5a44bc8b988253ef9d98694e847c15a433e`
+-	Image ID: `sha256:c893e7820f8956b787b54b75138597fa0a85f9e450bc251387c8bbe8598eb540`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -6627,35 +6627,35 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 20 Apr 2022 10:53:58 GMT
 ENV LANG=C.UTF-8
-# Wed, 20 Apr 2022 10:53:58 GMT
-ENV JAVA_VERSION=11.0.14.1
-# Wed, 20 Apr 2022 10:54:05 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_x64_linux_11.0.14.1_1.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_aarch64_linux_11.0.14.1_1.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Thu, 21 Apr 2022 01:06:22 GMT
+# Mon, 25 Apr 2022 18:27:13 GMT
+ENV JAVA_VERSION=11.0.15
+# Mon, 25 Apr 2022 18:27:19 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_x64_linux_11.0.15_10.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_aarch64_linux_11.0.15_10.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
+# Mon, 25 Apr 2022 19:16:40 GMT
 RUN set -ex;   apt-get update;   apt-get -y install libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/*
-# Thu, 21 Apr 2022 01:06:22 GMT
+# Mon, 25 Apr 2022 19:16:40 GMT
 ENV GOSU_VERSION=1.11
-# Thu, 21 Apr 2022 01:07:16 GMT
+# Mon, 25 Apr 2022 19:17:29 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in ha.pool.sks-keyservers.net $(shuf -e                           hkp://p80.pool.sks-keyservers.net:80                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Thu, 21 Apr 2022 01:11:55 GMT
+# Mon, 25 Apr 2022 19:20:27 GMT
 ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.13.6/flink-1.13.6-bin-scala_2.12.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.13.6/flink-1.13.6-bin-scala_2.12.tgz.asc GPG_KEY=CCFA852FD039380AB3EC36D08C3FB007FE60DEFA CHECK_GPG=true
-# Thu, 21 Apr 2022 01:11:55 GMT
+# Mon, 25 Apr 2022 19:20:27 GMT
 ENV FLINK_HOME=/opt/flink
-# Thu, 21 Apr 2022 01:11:55 GMT
+# Mon, 25 Apr 2022 19:20:27 GMT
 ENV PATH=/opt/flink/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 21 Apr 2022 01:11:56 GMT
+# Mon, 25 Apr 2022 19:20:28 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Thu, 21 Apr 2022 01:11:56 GMT
+# Mon, 25 Apr 2022 19:20:28 GMT
 WORKDIR /opt/flink
-# Thu, 21 Apr 2022 01:12:52 GMT
+# Mon, 25 Apr 2022 19:21:24 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in ha.pool.sks-keyservers.net $(shuf -e                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;
-# Thu, 21 Apr 2022 01:12:53 GMT
+# Mon, 25 Apr 2022 19:21:24 GMT
 COPY file:5cd5e39f1e46b85ff32fa26e988fe4d93983dcbef27712cf760efc65655f7310 in / 
-# Thu, 21 Apr 2022 01:12:53 GMT
+# Mon, 25 Apr 2022 19:21:25 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 21 Apr 2022 01:12:53 GMT
+# Mon, 25 Apr 2022 19:21:25 GMT
 EXPOSE 6123 8081
-# Thu, 21 Apr 2022 01:12:53 GMT
+# Mon, 25 Apr 2022 19:21:25 GMT
 CMD ["help"]
 ```
 
@@ -6680,33 +6680,33 @@ CMD ["help"]
 		Last Modified: Wed, 20 Apr 2022 11:12:19 GMT  
 		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3adba0a35f28cdd034bef4df08d640578ed8f0c6b971084706a9203183d6387c`  
-		Last Modified: Wed, 20 Apr 2022 11:12:26 GMT  
-		Size: 46.9 MB (46880152 bytes)  
+	-	`sha256:ffa59d9ab33cd135fc03bd1449112beaf19d1eb922727cb5c81008ff68b12f95`  
+		Last Modified: Mon, 25 Apr 2022 18:41:27 GMT  
+		Size: 47.2 MB (47197425 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c9cff9eec7d2c6bd0f4e96d712bd19418edf20d9e67bb691ef23c644d48431f`  
-		Last Modified: Thu, 21 Apr 2022 01:29:51 GMT  
-		Size: 1.7 MB (1689687 bytes)  
+	-	`sha256:57169ac226acc0b97cefcf5d0c4611ad7464e516a0abbe839ddd7add7c2e9f80`  
+		Last Modified: Mon, 25 Apr 2022 19:29:51 GMT  
+		Size: 1.7 MB (1689665 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:856ec9413034d6e6a730861ad35d2981ef32cbc6cb8a30996766983c104a269b`  
-		Last Modified: Thu, 21 Apr 2022 01:29:49 GMT  
-		Size: 900.5 KB (900512 bytes)  
+	-	`sha256:8118a2fa03079b7c9cb68aff8c797f98bd9f46d52e809802d79e9521c121732b`  
+		Last Modified: Mon, 25 Apr 2022 19:29:48 GMT  
+		Size: 900.5 KB (900508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7db1ab980bca9e31ec34e63d1499a35c8380df8cce69306fb559b86de5f9cf9a`  
-		Last Modified: Thu, 21 Apr 2022 01:32:37 GMT  
-		Size: 4.6 KB (4601 bytes)  
+	-	`sha256:aa93a2793dabd2fb2d0e48e6fc5f18765aea11b92e0a21523fc62d3dccbce46d`  
+		Last Modified: Mon, 25 Apr 2022 19:31:04 GMT  
+		Size: 4.6 KB (4604 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2dc6ba0409b1a2b1f6660df040f9ae6829395c4e59051dbc43df8446a34d0d8`  
-		Last Modified: Thu, 21 Apr 2022 01:32:37 GMT  
+	-	`sha256:3d9e2371081232774735cc8da7d5588df4c3687efc492b8e18d40aa2a9a4e581`  
+		Last Modified: Mon, 25 Apr 2022 19:31:04 GMT  
 		Size: 148.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e3eee6929b1d580c1f52a1a2e04e46120f6220dcbc474e475b3b1a4ced51d84f`  
-		Last Modified: Thu, 21 Apr 2022 01:32:51 GMT  
-		Size: 305.3 MB (305320258 bytes)  
+	-	`sha256:54c5741dce388a9ce0f7075ebe140b571b9a12607f00fb2293e372b8fb8e4fc4`  
+		Last Modified: Mon, 25 Apr 2022 19:31:18 GMT  
+		Size: 305.3 MB (305320242 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:83496bab98fb871d21085dbc23bbe62ddeee264c55d1e68d1ad8cc6f7e521c8f`  
-		Last Modified: Thu, 21 Apr 2022 01:32:37 GMT  
-		Size: 1.9 KB (1947 bytes)  
+	-	`sha256:833cf63cf3eea3d8d7dac4ea27c68bc72a90a7955d344123eaa004a68c66b20c`  
+		Last Modified: Mon, 25 Apr 2022 19:31:04 GMT  
+		Size: 1.9 KB (1949 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `flink:1.13.6-scala_2.12-java8`
@@ -7078,7 +7078,7 @@ CMD ["help"]
 ## `flink:1.14-java11`
 
 ```console
-$ docker pull flink@sha256:3fa746fed51f05d3c7d2bffa476b739f6a6b4defd4e8ed0c6597e1432332c1a8
+$ docker pull flink@sha256:85d0e6d613362c544279836f853f69bd8c742ebb02db882f3487d2a415ddb2af
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7089,14 +7089,14 @@ $ docker pull flink@sha256:3fa746fed51f05d3c7d2bffa476b739f6a6b4defd4e8ed0c6597e
 ### `flink:1.14-java11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:e3572d1fba81e036e08640416dc1c85b3f2afe8a3ba1dca2f76082950c8853de
+$ docker pull flink@sha256:4ca7f1d3f99664078174577ebf039c7517093f9b0ada5943af48562f8015db67
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **466.0 MB (465965090 bytes)**  
+-	Total Size: **466.3 MB (466282293 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8ebedf9b2b3191db14e2bf85de78eaa3322867d6cc8d2500dbfc02cd104e6d35`
+-	Image ID: `sha256:94ffd89a5c5a5d10b6950e92cdcbc7737d58b8bc363e1bede6428fbc509aaf42`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -7119,35 +7119,35 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 20 Apr 2022 10:53:58 GMT
 ENV LANG=C.UTF-8
-# Wed, 20 Apr 2022 10:53:58 GMT
-ENV JAVA_VERSION=11.0.14.1
-# Wed, 20 Apr 2022 10:54:05 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_x64_linux_11.0.14.1_1.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_aarch64_linux_11.0.14.1_1.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Thu, 21 Apr 2022 01:06:22 GMT
+# Mon, 25 Apr 2022 18:27:13 GMT
+ENV JAVA_VERSION=11.0.15
+# Mon, 25 Apr 2022 18:27:19 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_x64_linux_11.0.15_10.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_aarch64_linux_11.0.15_10.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
+# Mon, 25 Apr 2022 19:16:40 GMT
 RUN set -ex;   apt-get update;   apt-get -y install libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/*
-# Thu, 21 Apr 2022 01:06:22 GMT
+# Mon, 25 Apr 2022 19:16:40 GMT
 ENV GOSU_VERSION=1.11
-# Thu, 21 Apr 2022 01:07:16 GMT
+# Mon, 25 Apr 2022 19:17:29 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in ha.pool.sks-keyservers.net $(shuf -e                           hkp://p80.pool.sks-keyservers.net:80                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Thu, 21 Apr 2022 01:07:16 GMT
+# Mon, 25 Apr 2022 19:17:29 GMT
 ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.14.4/flink-1.14.4-bin-scala_2.12.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.14.4/flink-1.14.4-bin-scala_2.12.tgz.asc GPG_KEY=CCFA852FD039380AB3EC36D08C3FB007FE60DEFA CHECK_GPG=true
-# Thu, 21 Apr 2022 01:07:16 GMT
+# Mon, 25 Apr 2022 19:17:30 GMT
 ENV FLINK_HOME=/opt/flink
-# Thu, 21 Apr 2022 01:07:16 GMT
+# Mon, 25 Apr 2022 19:17:30 GMT
 ENV PATH=/opt/flink/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 21 Apr 2022 01:07:17 GMT
+# Mon, 25 Apr 2022 19:17:30 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Thu, 21 Apr 2022 01:07:17 GMT
+# Mon, 25 Apr 2022 19:17:30 GMT
 WORKDIR /opt/flink
-# Thu, 21 Apr 2022 01:08:16 GMT
+# Mon, 25 Apr 2022 19:18:53 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in ha.pool.sks-keyservers.net $(shuf -e                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;
-# Thu, 21 Apr 2022 01:08:17 GMT
+# Mon, 25 Apr 2022 19:18:54 GMT
 COPY file:e308297ef6ffd9c3cff00834ffd8c0f8baacafe7ea8ed0b19a897eb03baceb28 in / 
-# Thu, 21 Apr 2022 01:08:17 GMT
+# Mon, 25 Apr 2022 19:18:54 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 21 Apr 2022 01:08:17 GMT
+# Mon, 25 Apr 2022 19:18:54 GMT
 EXPOSE 6123 8081
-# Thu, 21 Apr 2022 01:08:17 GMT
+# Mon, 25 Apr 2022 19:18:54 GMT
 CMD ["help"]
 ```
 
@@ -7172,33 +7172,33 @@ CMD ["help"]
 		Last Modified: Wed, 20 Apr 2022 11:12:19 GMT  
 		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3adba0a35f28cdd034bef4df08d640578ed8f0c6b971084706a9203183d6387c`  
-		Last Modified: Wed, 20 Apr 2022 11:12:26 GMT  
-		Size: 46.9 MB (46880152 bytes)  
+	-	`sha256:ffa59d9ab33cd135fc03bd1449112beaf19d1eb922727cb5c81008ff68b12f95`  
+		Last Modified: Mon, 25 Apr 2022 18:41:27 GMT  
+		Size: 47.2 MB (47197425 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c9cff9eec7d2c6bd0f4e96d712bd19418edf20d9e67bb691ef23c644d48431f`  
-		Last Modified: Thu, 21 Apr 2022 01:29:51 GMT  
-		Size: 1.7 MB (1689687 bytes)  
+	-	`sha256:57169ac226acc0b97cefcf5d0c4611ad7464e516a0abbe839ddd7add7c2e9f80`  
+		Last Modified: Mon, 25 Apr 2022 19:29:51 GMT  
+		Size: 1.7 MB (1689665 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:856ec9413034d6e6a730861ad35d2981ef32cbc6cb8a30996766983c104a269b`  
-		Last Modified: Thu, 21 Apr 2022 01:29:49 GMT  
-		Size: 900.5 KB (900512 bytes)  
+	-	`sha256:8118a2fa03079b7c9cb68aff8c797f98bd9f46d52e809802d79e9521c121732b`  
+		Last Modified: Mon, 25 Apr 2022 19:29:48 GMT  
+		Size: 900.5 KB (900508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9474a4e680e6e0a16e72edffbd33a592bc0b1f729a23dd11c080a3084a63dc0e`  
-		Last Modified: Thu, 21 Apr 2022 01:29:49 GMT  
+	-	`sha256:38fff0ce2adabb9cd1f8e6b03109ee8c2669ff428797dcc95c701511c052d7a2`  
+		Last Modified: Mon, 25 Apr 2022 19:29:48 GMT  
 		Size: 4.6 KB (4603 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c4cd99b6470eaa44cf8ae8ad185f2432dc7e120ddc6640ed8fa0e12640aadddc`  
-		Last Modified: Thu, 21 Apr 2022 01:29:48 GMT  
-		Size: 147.0 B  
+	-	`sha256:38a90e631dc43b646bc76c2c4aab8f3ca1aa20d4bd318fcd1c8940b2a7e9ac5f`  
+		Last Modified: Mon, 25 Apr 2022 19:29:48 GMT  
+		Size: 148.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9467369e60e20e0ffb0e18b6d9a92b9d0739f056fc7bb026684e11e68a2bba4f`  
-		Last Modified: Thu, 21 Apr 2022 01:30:04 GMT  
-		Size: 339.9 MB (339857986 bytes)  
+	-	`sha256:f814b36c2395104b1733aa4bd8b9c7e8d1b0a9c7cdbf9fa6618d9c43a7d482c4`  
+		Last Modified: Mon, 25 Apr 2022 19:30:04 GMT  
+		Size: 339.9 MB (339857940 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:94fc45272a0935c2a82d7b2fc46556d3f97a338e3b10fa1f544dba79859618cf`  
-		Last Modified: Thu, 21 Apr 2022 01:29:49 GMT  
-		Size: 1.9 KB (1945 bytes)  
+	-	`sha256:9317c322e22e7a3a49d4cc8665e8b7271feafd320ca4e53029225eab52e0323c`  
+		Last Modified: Mon, 25 Apr 2022 19:29:48 GMT  
+		Size: 1.9 KB (1946 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `flink:1.14-java11` - linux; arm64 variant v8
@@ -7801,7 +7801,7 @@ CMD ["help"]
 ## `flink:1.14-scala_2.11-java11`
 
 ```console
-$ docker pull flink@sha256:e92b051d328c99fd2812700ab6a847da8b4b09c85eeeee7bfd5e83aac7aa3981
+$ docker pull flink@sha256:b9da3567dd6579a3fb3adf2e983e0f0b004602b38ce1e31d92b5206bc0aeeb08
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7812,14 +7812,14 @@ $ docker pull flink@sha256:e92b051d328c99fd2812700ab6a847da8b4b09c85eeeee7bfd5e8
 ### `flink:1.14-scala_2.11-java11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:1100741cc73d144a40df304a8e082f8ebec5485583f3aa3c8e5431159aa5af1a
+$ docker pull flink@sha256:1445dbc13ac6310d8849b9b3669bb415d09d1dee08229b1dd8cfa02df66ccfc0
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **473.7 MB (473669221 bytes)**  
+-	Total Size: **474.0 MB (473986468 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8b470b26637e877cc0d9caf53f3f456337040089e6e3aa0b69629f25cc1a3f18`
+-	Image ID: `sha256:2bc1c904b833505c95f49b785a46d56c33193d2c091d039da0a389317411ea97`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -7842,35 +7842,35 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 20 Apr 2022 10:53:58 GMT
 ENV LANG=C.UTF-8
-# Wed, 20 Apr 2022 10:53:58 GMT
-ENV JAVA_VERSION=11.0.14.1
-# Wed, 20 Apr 2022 10:54:05 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_x64_linux_11.0.14.1_1.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_aarch64_linux_11.0.14.1_1.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Thu, 21 Apr 2022 01:06:22 GMT
+# Mon, 25 Apr 2022 18:27:13 GMT
+ENV JAVA_VERSION=11.0.15
+# Mon, 25 Apr 2022 18:27:19 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_x64_linux_11.0.15_10.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_aarch64_linux_11.0.15_10.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
+# Mon, 25 Apr 2022 19:16:40 GMT
 RUN set -ex;   apt-get update;   apt-get -y install libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/*
-# Thu, 21 Apr 2022 01:06:22 GMT
+# Mon, 25 Apr 2022 19:16:40 GMT
 ENV GOSU_VERSION=1.11
-# Thu, 21 Apr 2022 01:07:16 GMT
+# Mon, 25 Apr 2022 19:17:29 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in ha.pool.sks-keyservers.net $(shuf -e                           hkp://p80.pool.sks-keyservers.net:80                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Thu, 21 Apr 2022 01:09:49 GMT
+# Mon, 25 Apr 2022 19:19:01 GMT
 ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.14.4/flink-1.14.4-bin-scala_2.11.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.14.4/flink-1.14.4-bin-scala_2.11.tgz.asc GPG_KEY=CCFA852FD039380AB3EC36D08C3FB007FE60DEFA CHECK_GPG=true
-# Thu, 21 Apr 2022 01:09:49 GMT
+# Mon, 25 Apr 2022 19:19:01 GMT
 ENV FLINK_HOME=/opt/flink
-# Thu, 21 Apr 2022 01:09:49 GMT
+# Mon, 25 Apr 2022 19:19:01 GMT
 ENV PATH=/opt/flink/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 21 Apr 2022 01:09:49 GMT
+# Mon, 25 Apr 2022 19:19:02 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Thu, 21 Apr 2022 01:09:49 GMT
+# Mon, 25 Apr 2022 19:19:02 GMT
 WORKDIR /opt/flink
-# Thu, 21 Apr 2022 01:10:47 GMT
+# Mon, 25 Apr 2022 19:20:12 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in ha.pool.sks-keyservers.net $(shuf -e                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;
-# Thu, 21 Apr 2022 01:10:48 GMT
+# Mon, 25 Apr 2022 19:20:12 GMT
 COPY file:e308297ef6ffd9c3cff00834ffd8c0f8baacafe7ea8ed0b19a897eb03baceb28 in / 
-# Thu, 21 Apr 2022 01:10:48 GMT
+# Mon, 25 Apr 2022 19:20:12 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 21 Apr 2022 01:10:48 GMT
+# Mon, 25 Apr 2022 19:20:13 GMT
 EXPOSE 6123 8081
-# Thu, 21 Apr 2022 01:10:48 GMT
+# Mon, 25 Apr 2022 19:20:13 GMT
 CMD ["help"]
 ```
 
@@ -7895,33 +7895,33 @@ CMD ["help"]
 		Last Modified: Wed, 20 Apr 2022 11:12:19 GMT  
 		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3adba0a35f28cdd034bef4df08d640578ed8f0c6b971084706a9203183d6387c`  
-		Last Modified: Wed, 20 Apr 2022 11:12:26 GMT  
-		Size: 46.9 MB (46880152 bytes)  
+	-	`sha256:ffa59d9ab33cd135fc03bd1449112beaf19d1eb922727cb5c81008ff68b12f95`  
+		Last Modified: Mon, 25 Apr 2022 18:41:27 GMT  
+		Size: 47.2 MB (47197425 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c9cff9eec7d2c6bd0f4e96d712bd19418edf20d9e67bb691ef23c644d48431f`  
-		Last Modified: Thu, 21 Apr 2022 01:29:51 GMT  
-		Size: 1.7 MB (1689687 bytes)  
+	-	`sha256:57169ac226acc0b97cefcf5d0c4611ad7464e516a0abbe839ddd7add7c2e9f80`  
+		Last Modified: Mon, 25 Apr 2022 19:29:51 GMT  
+		Size: 1.7 MB (1689665 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:856ec9413034d6e6a730861ad35d2981ef32cbc6cb8a30996766983c104a269b`  
-		Last Modified: Thu, 21 Apr 2022 01:29:49 GMT  
-		Size: 900.5 KB (900512 bytes)  
+	-	`sha256:8118a2fa03079b7c9cb68aff8c797f98bd9f46d52e809802d79e9521c121732b`  
+		Last Modified: Mon, 25 Apr 2022 19:29:48 GMT  
+		Size: 900.5 KB (900508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:92e68aaf3fff83a7990e3f3ade3fdd73fd6621c8d543ce4eb859045d43ea9b84`  
-		Last Modified: Thu, 21 Apr 2022 01:31:21 GMT  
-		Size: 4.6 KB (4602 bytes)  
+	-	`sha256:bdbd2ad50daa91515eb36819968c6fbe483ff9f88fd84896dc65af0830a23c03`  
+		Last Modified: Mon, 25 Apr 2022 19:30:29 GMT  
+		Size: 4.6 KB (4604 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35e7314d4633e299b16226e1c1f99468d33666690a6634c85ff8c15077278294`  
-		Last Modified: Thu, 21 Apr 2022 01:31:21 GMT  
+	-	`sha256:ced53aef1eded8c740fb348cf9b27ae0ce63417923bb16d75f02230cf0f6fb7d`  
+		Last Modified: Mon, 25 Apr 2022 19:30:29 GMT  
 		Size: 148.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c6aa3a4bb8f893d83137f2624447842a530c45cfcf2754148f120ab32a8abe3`  
-		Last Modified: Thu, 21 Apr 2022 01:31:37 GMT  
+	-	`sha256:a22d1197c9ba60eba65e65fcad0e86b646e703fe85e9457ef53b779657b4703a`  
+		Last Modified: Mon, 25 Apr 2022 19:30:48 GMT  
 		Size: 347.6 MB (347562115 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:60a495fcf5afec3fea5729699521796d8cd1968cf2f04b21d86629a90a745acb`  
-		Last Modified: Thu, 21 Apr 2022 01:31:21 GMT  
-		Size: 1.9 KB (1947 bytes)  
+	-	`sha256:08ca2085b2e192e44f0251bb81e7a8ea385557f5806bed791aaed49cbe03ee60`  
+		Last Modified: Mon, 25 Apr 2022 19:30:29 GMT  
+		Size: 1.9 KB (1945 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `flink:1.14-scala_2.11-java11` - linux; arm64 variant v8
@@ -8524,7 +8524,7 @@ CMD ["help"]
 ## `flink:1.14-scala_2.12-java11`
 
 ```console
-$ docker pull flink@sha256:3fa746fed51f05d3c7d2bffa476b739f6a6b4defd4e8ed0c6597e1432332c1a8
+$ docker pull flink@sha256:85d0e6d613362c544279836f853f69bd8c742ebb02db882f3487d2a415ddb2af
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8535,14 +8535,14 @@ $ docker pull flink@sha256:3fa746fed51f05d3c7d2bffa476b739f6a6b4defd4e8ed0c6597e
 ### `flink:1.14-scala_2.12-java11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:e3572d1fba81e036e08640416dc1c85b3f2afe8a3ba1dca2f76082950c8853de
+$ docker pull flink@sha256:4ca7f1d3f99664078174577ebf039c7517093f9b0ada5943af48562f8015db67
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **466.0 MB (465965090 bytes)**  
+-	Total Size: **466.3 MB (466282293 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8ebedf9b2b3191db14e2bf85de78eaa3322867d6cc8d2500dbfc02cd104e6d35`
+-	Image ID: `sha256:94ffd89a5c5a5d10b6950e92cdcbc7737d58b8bc363e1bede6428fbc509aaf42`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -8565,35 +8565,35 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 20 Apr 2022 10:53:58 GMT
 ENV LANG=C.UTF-8
-# Wed, 20 Apr 2022 10:53:58 GMT
-ENV JAVA_VERSION=11.0.14.1
-# Wed, 20 Apr 2022 10:54:05 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_x64_linux_11.0.14.1_1.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_aarch64_linux_11.0.14.1_1.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Thu, 21 Apr 2022 01:06:22 GMT
+# Mon, 25 Apr 2022 18:27:13 GMT
+ENV JAVA_VERSION=11.0.15
+# Mon, 25 Apr 2022 18:27:19 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_x64_linux_11.0.15_10.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_aarch64_linux_11.0.15_10.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
+# Mon, 25 Apr 2022 19:16:40 GMT
 RUN set -ex;   apt-get update;   apt-get -y install libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/*
-# Thu, 21 Apr 2022 01:06:22 GMT
+# Mon, 25 Apr 2022 19:16:40 GMT
 ENV GOSU_VERSION=1.11
-# Thu, 21 Apr 2022 01:07:16 GMT
+# Mon, 25 Apr 2022 19:17:29 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in ha.pool.sks-keyservers.net $(shuf -e                           hkp://p80.pool.sks-keyservers.net:80                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Thu, 21 Apr 2022 01:07:16 GMT
+# Mon, 25 Apr 2022 19:17:29 GMT
 ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.14.4/flink-1.14.4-bin-scala_2.12.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.14.4/flink-1.14.4-bin-scala_2.12.tgz.asc GPG_KEY=CCFA852FD039380AB3EC36D08C3FB007FE60DEFA CHECK_GPG=true
-# Thu, 21 Apr 2022 01:07:16 GMT
+# Mon, 25 Apr 2022 19:17:30 GMT
 ENV FLINK_HOME=/opt/flink
-# Thu, 21 Apr 2022 01:07:16 GMT
+# Mon, 25 Apr 2022 19:17:30 GMT
 ENV PATH=/opt/flink/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 21 Apr 2022 01:07:17 GMT
+# Mon, 25 Apr 2022 19:17:30 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Thu, 21 Apr 2022 01:07:17 GMT
+# Mon, 25 Apr 2022 19:17:30 GMT
 WORKDIR /opt/flink
-# Thu, 21 Apr 2022 01:08:16 GMT
+# Mon, 25 Apr 2022 19:18:53 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in ha.pool.sks-keyservers.net $(shuf -e                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;
-# Thu, 21 Apr 2022 01:08:17 GMT
+# Mon, 25 Apr 2022 19:18:54 GMT
 COPY file:e308297ef6ffd9c3cff00834ffd8c0f8baacafe7ea8ed0b19a897eb03baceb28 in / 
-# Thu, 21 Apr 2022 01:08:17 GMT
+# Mon, 25 Apr 2022 19:18:54 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 21 Apr 2022 01:08:17 GMT
+# Mon, 25 Apr 2022 19:18:54 GMT
 EXPOSE 6123 8081
-# Thu, 21 Apr 2022 01:08:17 GMT
+# Mon, 25 Apr 2022 19:18:54 GMT
 CMD ["help"]
 ```
 
@@ -8618,33 +8618,33 @@ CMD ["help"]
 		Last Modified: Wed, 20 Apr 2022 11:12:19 GMT  
 		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3adba0a35f28cdd034bef4df08d640578ed8f0c6b971084706a9203183d6387c`  
-		Last Modified: Wed, 20 Apr 2022 11:12:26 GMT  
-		Size: 46.9 MB (46880152 bytes)  
+	-	`sha256:ffa59d9ab33cd135fc03bd1449112beaf19d1eb922727cb5c81008ff68b12f95`  
+		Last Modified: Mon, 25 Apr 2022 18:41:27 GMT  
+		Size: 47.2 MB (47197425 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c9cff9eec7d2c6bd0f4e96d712bd19418edf20d9e67bb691ef23c644d48431f`  
-		Last Modified: Thu, 21 Apr 2022 01:29:51 GMT  
-		Size: 1.7 MB (1689687 bytes)  
+	-	`sha256:57169ac226acc0b97cefcf5d0c4611ad7464e516a0abbe839ddd7add7c2e9f80`  
+		Last Modified: Mon, 25 Apr 2022 19:29:51 GMT  
+		Size: 1.7 MB (1689665 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:856ec9413034d6e6a730861ad35d2981ef32cbc6cb8a30996766983c104a269b`  
-		Last Modified: Thu, 21 Apr 2022 01:29:49 GMT  
-		Size: 900.5 KB (900512 bytes)  
+	-	`sha256:8118a2fa03079b7c9cb68aff8c797f98bd9f46d52e809802d79e9521c121732b`  
+		Last Modified: Mon, 25 Apr 2022 19:29:48 GMT  
+		Size: 900.5 KB (900508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9474a4e680e6e0a16e72edffbd33a592bc0b1f729a23dd11c080a3084a63dc0e`  
-		Last Modified: Thu, 21 Apr 2022 01:29:49 GMT  
+	-	`sha256:38fff0ce2adabb9cd1f8e6b03109ee8c2669ff428797dcc95c701511c052d7a2`  
+		Last Modified: Mon, 25 Apr 2022 19:29:48 GMT  
 		Size: 4.6 KB (4603 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c4cd99b6470eaa44cf8ae8ad185f2432dc7e120ddc6640ed8fa0e12640aadddc`  
-		Last Modified: Thu, 21 Apr 2022 01:29:48 GMT  
-		Size: 147.0 B  
+	-	`sha256:38a90e631dc43b646bc76c2c4aab8f3ca1aa20d4bd318fcd1c8940b2a7e9ac5f`  
+		Last Modified: Mon, 25 Apr 2022 19:29:48 GMT  
+		Size: 148.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9467369e60e20e0ffb0e18b6d9a92b9d0739f056fc7bb026684e11e68a2bba4f`  
-		Last Modified: Thu, 21 Apr 2022 01:30:04 GMT  
-		Size: 339.9 MB (339857986 bytes)  
+	-	`sha256:f814b36c2395104b1733aa4bd8b9c7e8d1b0a9c7cdbf9fa6618d9c43a7d482c4`  
+		Last Modified: Mon, 25 Apr 2022 19:30:04 GMT  
+		Size: 339.9 MB (339857940 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:94fc45272a0935c2a82d7b2fc46556d3f97a338e3b10fa1f544dba79859618cf`  
-		Last Modified: Thu, 21 Apr 2022 01:29:49 GMT  
-		Size: 1.9 KB (1945 bytes)  
+	-	`sha256:9317c322e22e7a3a49d4cc8665e8b7271feafd320ca4e53029225eab52e0323c`  
+		Last Modified: Mon, 25 Apr 2022 19:29:48 GMT  
+		Size: 1.9 KB (1946 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `flink:1.14-scala_2.12-java11` - linux; arm64 variant v8
@@ -9247,7 +9247,7 @@ CMD ["help"]
 ## `flink:1.14.4-java11`
 
 ```console
-$ docker pull flink@sha256:3fa746fed51f05d3c7d2bffa476b739f6a6b4defd4e8ed0c6597e1432332c1a8
+$ docker pull flink@sha256:85d0e6d613362c544279836f853f69bd8c742ebb02db882f3487d2a415ddb2af
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9258,14 +9258,14 @@ $ docker pull flink@sha256:3fa746fed51f05d3c7d2bffa476b739f6a6b4defd4e8ed0c6597e
 ### `flink:1.14.4-java11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:e3572d1fba81e036e08640416dc1c85b3f2afe8a3ba1dca2f76082950c8853de
+$ docker pull flink@sha256:4ca7f1d3f99664078174577ebf039c7517093f9b0ada5943af48562f8015db67
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **466.0 MB (465965090 bytes)**  
+-	Total Size: **466.3 MB (466282293 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8ebedf9b2b3191db14e2bf85de78eaa3322867d6cc8d2500dbfc02cd104e6d35`
+-	Image ID: `sha256:94ffd89a5c5a5d10b6950e92cdcbc7737d58b8bc363e1bede6428fbc509aaf42`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -9288,35 +9288,35 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 20 Apr 2022 10:53:58 GMT
 ENV LANG=C.UTF-8
-# Wed, 20 Apr 2022 10:53:58 GMT
-ENV JAVA_VERSION=11.0.14.1
-# Wed, 20 Apr 2022 10:54:05 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_x64_linux_11.0.14.1_1.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_aarch64_linux_11.0.14.1_1.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Thu, 21 Apr 2022 01:06:22 GMT
+# Mon, 25 Apr 2022 18:27:13 GMT
+ENV JAVA_VERSION=11.0.15
+# Mon, 25 Apr 2022 18:27:19 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_x64_linux_11.0.15_10.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_aarch64_linux_11.0.15_10.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
+# Mon, 25 Apr 2022 19:16:40 GMT
 RUN set -ex;   apt-get update;   apt-get -y install libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/*
-# Thu, 21 Apr 2022 01:06:22 GMT
+# Mon, 25 Apr 2022 19:16:40 GMT
 ENV GOSU_VERSION=1.11
-# Thu, 21 Apr 2022 01:07:16 GMT
+# Mon, 25 Apr 2022 19:17:29 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in ha.pool.sks-keyservers.net $(shuf -e                           hkp://p80.pool.sks-keyservers.net:80                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Thu, 21 Apr 2022 01:07:16 GMT
+# Mon, 25 Apr 2022 19:17:29 GMT
 ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.14.4/flink-1.14.4-bin-scala_2.12.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.14.4/flink-1.14.4-bin-scala_2.12.tgz.asc GPG_KEY=CCFA852FD039380AB3EC36D08C3FB007FE60DEFA CHECK_GPG=true
-# Thu, 21 Apr 2022 01:07:16 GMT
+# Mon, 25 Apr 2022 19:17:30 GMT
 ENV FLINK_HOME=/opt/flink
-# Thu, 21 Apr 2022 01:07:16 GMT
+# Mon, 25 Apr 2022 19:17:30 GMT
 ENV PATH=/opt/flink/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 21 Apr 2022 01:07:17 GMT
+# Mon, 25 Apr 2022 19:17:30 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Thu, 21 Apr 2022 01:07:17 GMT
+# Mon, 25 Apr 2022 19:17:30 GMT
 WORKDIR /opt/flink
-# Thu, 21 Apr 2022 01:08:16 GMT
+# Mon, 25 Apr 2022 19:18:53 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in ha.pool.sks-keyservers.net $(shuf -e                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;
-# Thu, 21 Apr 2022 01:08:17 GMT
+# Mon, 25 Apr 2022 19:18:54 GMT
 COPY file:e308297ef6ffd9c3cff00834ffd8c0f8baacafe7ea8ed0b19a897eb03baceb28 in / 
-# Thu, 21 Apr 2022 01:08:17 GMT
+# Mon, 25 Apr 2022 19:18:54 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 21 Apr 2022 01:08:17 GMT
+# Mon, 25 Apr 2022 19:18:54 GMT
 EXPOSE 6123 8081
-# Thu, 21 Apr 2022 01:08:17 GMT
+# Mon, 25 Apr 2022 19:18:54 GMT
 CMD ["help"]
 ```
 
@@ -9341,33 +9341,33 @@ CMD ["help"]
 		Last Modified: Wed, 20 Apr 2022 11:12:19 GMT  
 		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3adba0a35f28cdd034bef4df08d640578ed8f0c6b971084706a9203183d6387c`  
-		Last Modified: Wed, 20 Apr 2022 11:12:26 GMT  
-		Size: 46.9 MB (46880152 bytes)  
+	-	`sha256:ffa59d9ab33cd135fc03bd1449112beaf19d1eb922727cb5c81008ff68b12f95`  
+		Last Modified: Mon, 25 Apr 2022 18:41:27 GMT  
+		Size: 47.2 MB (47197425 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c9cff9eec7d2c6bd0f4e96d712bd19418edf20d9e67bb691ef23c644d48431f`  
-		Last Modified: Thu, 21 Apr 2022 01:29:51 GMT  
-		Size: 1.7 MB (1689687 bytes)  
+	-	`sha256:57169ac226acc0b97cefcf5d0c4611ad7464e516a0abbe839ddd7add7c2e9f80`  
+		Last Modified: Mon, 25 Apr 2022 19:29:51 GMT  
+		Size: 1.7 MB (1689665 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:856ec9413034d6e6a730861ad35d2981ef32cbc6cb8a30996766983c104a269b`  
-		Last Modified: Thu, 21 Apr 2022 01:29:49 GMT  
-		Size: 900.5 KB (900512 bytes)  
+	-	`sha256:8118a2fa03079b7c9cb68aff8c797f98bd9f46d52e809802d79e9521c121732b`  
+		Last Modified: Mon, 25 Apr 2022 19:29:48 GMT  
+		Size: 900.5 KB (900508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9474a4e680e6e0a16e72edffbd33a592bc0b1f729a23dd11c080a3084a63dc0e`  
-		Last Modified: Thu, 21 Apr 2022 01:29:49 GMT  
+	-	`sha256:38fff0ce2adabb9cd1f8e6b03109ee8c2669ff428797dcc95c701511c052d7a2`  
+		Last Modified: Mon, 25 Apr 2022 19:29:48 GMT  
 		Size: 4.6 KB (4603 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c4cd99b6470eaa44cf8ae8ad185f2432dc7e120ddc6640ed8fa0e12640aadddc`  
-		Last Modified: Thu, 21 Apr 2022 01:29:48 GMT  
-		Size: 147.0 B  
+	-	`sha256:38a90e631dc43b646bc76c2c4aab8f3ca1aa20d4bd318fcd1c8940b2a7e9ac5f`  
+		Last Modified: Mon, 25 Apr 2022 19:29:48 GMT  
+		Size: 148.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9467369e60e20e0ffb0e18b6d9a92b9d0739f056fc7bb026684e11e68a2bba4f`  
-		Last Modified: Thu, 21 Apr 2022 01:30:04 GMT  
-		Size: 339.9 MB (339857986 bytes)  
+	-	`sha256:f814b36c2395104b1733aa4bd8b9c7e8d1b0a9c7cdbf9fa6618d9c43a7d482c4`  
+		Last Modified: Mon, 25 Apr 2022 19:30:04 GMT  
+		Size: 339.9 MB (339857940 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:94fc45272a0935c2a82d7b2fc46556d3f97a338e3b10fa1f544dba79859618cf`  
-		Last Modified: Thu, 21 Apr 2022 01:29:49 GMT  
-		Size: 1.9 KB (1945 bytes)  
+	-	`sha256:9317c322e22e7a3a49d4cc8665e8b7271feafd320ca4e53029225eab52e0323c`  
+		Last Modified: Mon, 25 Apr 2022 19:29:48 GMT  
+		Size: 1.9 KB (1946 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `flink:1.14.4-java11` - linux; arm64 variant v8
@@ -9970,7 +9970,7 @@ CMD ["help"]
 ## `flink:1.14.4-scala_2.11-java11`
 
 ```console
-$ docker pull flink@sha256:e92b051d328c99fd2812700ab6a847da8b4b09c85eeeee7bfd5e83aac7aa3981
+$ docker pull flink@sha256:b9da3567dd6579a3fb3adf2e983e0f0b004602b38ce1e31d92b5206bc0aeeb08
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9981,14 +9981,14 @@ $ docker pull flink@sha256:e92b051d328c99fd2812700ab6a847da8b4b09c85eeeee7bfd5e8
 ### `flink:1.14.4-scala_2.11-java11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:1100741cc73d144a40df304a8e082f8ebec5485583f3aa3c8e5431159aa5af1a
+$ docker pull flink@sha256:1445dbc13ac6310d8849b9b3669bb415d09d1dee08229b1dd8cfa02df66ccfc0
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **473.7 MB (473669221 bytes)**  
+-	Total Size: **474.0 MB (473986468 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8b470b26637e877cc0d9caf53f3f456337040089e6e3aa0b69629f25cc1a3f18`
+-	Image ID: `sha256:2bc1c904b833505c95f49b785a46d56c33193d2c091d039da0a389317411ea97`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -10011,35 +10011,35 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 20 Apr 2022 10:53:58 GMT
 ENV LANG=C.UTF-8
-# Wed, 20 Apr 2022 10:53:58 GMT
-ENV JAVA_VERSION=11.0.14.1
-# Wed, 20 Apr 2022 10:54:05 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_x64_linux_11.0.14.1_1.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_aarch64_linux_11.0.14.1_1.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Thu, 21 Apr 2022 01:06:22 GMT
+# Mon, 25 Apr 2022 18:27:13 GMT
+ENV JAVA_VERSION=11.0.15
+# Mon, 25 Apr 2022 18:27:19 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_x64_linux_11.0.15_10.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_aarch64_linux_11.0.15_10.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
+# Mon, 25 Apr 2022 19:16:40 GMT
 RUN set -ex;   apt-get update;   apt-get -y install libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/*
-# Thu, 21 Apr 2022 01:06:22 GMT
+# Mon, 25 Apr 2022 19:16:40 GMT
 ENV GOSU_VERSION=1.11
-# Thu, 21 Apr 2022 01:07:16 GMT
+# Mon, 25 Apr 2022 19:17:29 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in ha.pool.sks-keyservers.net $(shuf -e                           hkp://p80.pool.sks-keyservers.net:80                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Thu, 21 Apr 2022 01:09:49 GMT
+# Mon, 25 Apr 2022 19:19:01 GMT
 ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.14.4/flink-1.14.4-bin-scala_2.11.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.14.4/flink-1.14.4-bin-scala_2.11.tgz.asc GPG_KEY=CCFA852FD039380AB3EC36D08C3FB007FE60DEFA CHECK_GPG=true
-# Thu, 21 Apr 2022 01:09:49 GMT
+# Mon, 25 Apr 2022 19:19:01 GMT
 ENV FLINK_HOME=/opt/flink
-# Thu, 21 Apr 2022 01:09:49 GMT
+# Mon, 25 Apr 2022 19:19:01 GMT
 ENV PATH=/opt/flink/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 21 Apr 2022 01:09:49 GMT
+# Mon, 25 Apr 2022 19:19:02 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Thu, 21 Apr 2022 01:09:49 GMT
+# Mon, 25 Apr 2022 19:19:02 GMT
 WORKDIR /opt/flink
-# Thu, 21 Apr 2022 01:10:47 GMT
+# Mon, 25 Apr 2022 19:20:12 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in ha.pool.sks-keyservers.net $(shuf -e                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;
-# Thu, 21 Apr 2022 01:10:48 GMT
+# Mon, 25 Apr 2022 19:20:12 GMT
 COPY file:e308297ef6ffd9c3cff00834ffd8c0f8baacafe7ea8ed0b19a897eb03baceb28 in / 
-# Thu, 21 Apr 2022 01:10:48 GMT
+# Mon, 25 Apr 2022 19:20:12 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 21 Apr 2022 01:10:48 GMT
+# Mon, 25 Apr 2022 19:20:13 GMT
 EXPOSE 6123 8081
-# Thu, 21 Apr 2022 01:10:48 GMT
+# Mon, 25 Apr 2022 19:20:13 GMT
 CMD ["help"]
 ```
 
@@ -10064,33 +10064,33 @@ CMD ["help"]
 		Last Modified: Wed, 20 Apr 2022 11:12:19 GMT  
 		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3adba0a35f28cdd034bef4df08d640578ed8f0c6b971084706a9203183d6387c`  
-		Last Modified: Wed, 20 Apr 2022 11:12:26 GMT  
-		Size: 46.9 MB (46880152 bytes)  
+	-	`sha256:ffa59d9ab33cd135fc03bd1449112beaf19d1eb922727cb5c81008ff68b12f95`  
+		Last Modified: Mon, 25 Apr 2022 18:41:27 GMT  
+		Size: 47.2 MB (47197425 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c9cff9eec7d2c6bd0f4e96d712bd19418edf20d9e67bb691ef23c644d48431f`  
-		Last Modified: Thu, 21 Apr 2022 01:29:51 GMT  
-		Size: 1.7 MB (1689687 bytes)  
+	-	`sha256:57169ac226acc0b97cefcf5d0c4611ad7464e516a0abbe839ddd7add7c2e9f80`  
+		Last Modified: Mon, 25 Apr 2022 19:29:51 GMT  
+		Size: 1.7 MB (1689665 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:856ec9413034d6e6a730861ad35d2981ef32cbc6cb8a30996766983c104a269b`  
-		Last Modified: Thu, 21 Apr 2022 01:29:49 GMT  
-		Size: 900.5 KB (900512 bytes)  
+	-	`sha256:8118a2fa03079b7c9cb68aff8c797f98bd9f46d52e809802d79e9521c121732b`  
+		Last Modified: Mon, 25 Apr 2022 19:29:48 GMT  
+		Size: 900.5 KB (900508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:92e68aaf3fff83a7990e3f3ade3fdd73fd6621c8d543ce4eb859045d43ea9b84`  
-		Last Modified: Thu, 21 Apr 2022 01:31:21 GMT  
-		Size: 4.6 KB (4602 bytes)  
+	-	`sha256:bdbd2ad50daa91515eb36819968c6fbe483ff9f88fd84896dc65af0830a23c03`  
+		Last Modified: Mon, 25 Apr 2022 19:30:29 GMT  
+		Size: 4.6 KB (4604 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35e7314d4633e299b16226e1c1f99468d33666690a6634c85ff8c15077278294`  
-		Last Modified: Thu, 21 Apr 2022 01:31:21 GMT  
+	-	`sha256:ced53aef1eded8c740fb348cf9b27ae0ce63417923bb16d75f02230cf0f6fb7d`  
+		Last Modified: Mon, 25 Apr 2022 19:30:29 GMT  
 		Size: 148.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c6aa3a4bb8f893d83137f2624447842a530c45cfcf2754148f120ab32a8abe3`  
-		Last Modified: Thu, 21 Apr 2022 01:31:37 GMT  
+	-	`sha256:a22d1197c9ba60eba65e65fcad0e86b646e703fe85e9457ef53b779657b4703a`  
+		Last Modified: Mon, 25 Apr 2022 19:30:48 GMT  
 		Size: 347.6 MB (347562115 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:60a495fcf5afec3fea5729699521796d8cd1968cf2f04b21d86629a90a745acb`  
-		Last Modified: Thu, 21 Apr 2022 01:31:21 GMT  
-		Size: 1.9 KB (1947 bytes)  
+	-	`sha256:08ca2085b2e192e44f0251bb81e7a8ea385557f5806bed791aaed49cbe03ee60`  
+		Last Modified: Mon, 25 Apr 2022 19:30:29 GMT  
+		Size: 1.9 KB (1945 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `flink:1.14.4-scala_2.11-java11` - linux; arm64 variant v8
@@ -10693,7 +10693,7 @@ CMD ["help"]
 ## `flink:1.14.4-scala_2.12-java11`
 
 ```console
-$ docker pull flink@sha256:3fa746fed51f05d3c7d2bffa476b739f6a6b4defd4e8ed0c6597e1432332c1a8
+$ docker pull flink@sha256:85d0e6d613362c544279836f853f69bd8c742ebb02db882f3487d2a415ddb2af
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10704,14 +10704,14 @@ $ docker pull flink@sha256:3fa746fed51f05d3c7d2bffa476b739f6a6b4defd4e8ed0c6597e
 ### `flink:1.14.4-scala_2.12-java11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:e3572d1fba81e036e08640416dc1c85b3f2afe8a3ba1dca2f76082950c8853de
+$ docker pull flink@sha256:4ca7f1d3f99664078174577ebf039c7517093f9b0ada5943af48562f8015db67
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **466.0 MB (465965090 bytes)**  
+-	Total Size: **466.3 MB (466282293 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8ebedf9b2b3191db14e2bf85de78eaa3322867d6cc8d2500dbfc02cd104e6d35`
+-	Image ID: `sha256:94ffd89a5c5a5d10b6950e92cdcbc7737d58b8bc363e1bede6428fbc509aaf42`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -10734,35 +10734,35 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 20 Apr 2022 10:53:58 GMT
 ENV LANG=C.UTF-8
-# Wed, 20 Apr 2022 10:53:58 GMT
-ENV JAVA_VERSION=11.0.14.1
-# Wed, 20 Apr 2022 10:54:05 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_x64_linux_11.0.14.1_1.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_aarch64_linux_11.0.14.1_1.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Thu, 21 Apr 2022 01:06:22 GMT
+# Mon, 25 Apr 2022 18:27:13 GMT
+ENV JAVA_VERSION=11.0.15
+# Mon, 25 Apr 2022 18:27:19 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_x64_linux_11.0.15_10.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_aarch64_linux_11.0.15_10.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
+# Mon, 25 Apr 2022 19:16:40 GMT
 RUN set -ex;   apt-get update;   apt-get -y install libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/*
-# Thu, 21 Apr 2022 01:06:22 GMT
+# Mon, 25 Apr 2022 19:16:40 GMT
 ENV GOSU_VERSION=1.11
-# Thu, 21 Apr 2022 01:07:16 GMT
+# Mon, 25 Apr 2022 19:17:29 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in ha.pool.sks-keyservers.net $(shuf -e                           hkp://p80.pool.sks-keyservers.net:80                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Thu, 21 Apr 2022 01:07:16 GMT
+# Mon, 25 Apr 2022 19:17:29 GMT
 ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.14.4/flink-1.14.4-bin-scala_2.12.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.14.4/flink-1.14.4-bin-scala_2.12.tgz.asc GPG_KEY=CCFA852FD039380AB3EC36D08C3FB007FE60DEFA CHECK_GPG=true
-# Thu, 21 Apr 2022 01:07:16 GMT
+# Mon, 25 Apr 2022 19:17:30 GMT
 ENV FLINK_HOME=/opt/flink
-# Thu, 21 Apr 2022 01:07:16 GMT
+# Mon, 25 Apr 2022 19:17:30 GMT
 ENV PATH=/opt/flink/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 21 Apr 2022 01:07:17 GMT
+# Mon, 25 Apr 2022 19:17:30 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Thu, 21 Apr 2022 01:07:17 GMT
+# Mon, 25 Apr 2022 19:17:30 GMT
 WORKDIR /opt/flink
-# Thu, 21 Apr 2022 01:08:16 GMT
+# Mon, 25 Apr 2022 19:18:53 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in ha.pool.sks-keyservers.net $(shuf -e                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;
-# Thu, 21 Apr 2022 01:08:17 GMT
+# Mon, 25 Apr 2022 19:18:54 GMT
 COPY file:e308297ef6ffd9c3cff00834ffd8c0f8baacafe7ea8ed0b19a897eb03baceb28 in / 
-# Thu, 21 Apr 2022 01:08:17 GMT
+# Mon, 25 Apr 2022 19:18:54 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 21 Apr 2022 01:08:17 GMT
+# Mon, 25 Apr 2022 19:18:54 GMT
 EXPOSE 6123 8081
-# Thu, 21 Apr 2022 01:08:17 GMT
+# Mon, 25 Apr 2022 19:18:54 GMT
 CMD ["help"]
 ```
 
@@ -10787,33 +10787,33 @@ CMD ["help"]
 		Last Modified: Wed, 20 Apr 2022 11:12:19 GMT  
 		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3adba0a35f28cdd034bef4df08d640578ed8f0c6b971084706a9203183d6387c`  
-		Last Modified: Wed, 20 Apr 2022 11:12:26 GMT  
-		Size: 46.9 MB (46880152 bytes)  
+	-	`sha256:ffa59d9ab33cd135fc03bd1449112beaf19d1eb922727cb5c81008ff68b12f95`  
+		Last Modified: Mon, 25 Apr 2022 18:41:27 GMT  
+		Size: 47.2 MB (47197425 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c9cff9eec7d2c6bd0f4e96d712bd19418edf20d9e67bb691ef23c644d48431f`  
-		Last Modified: Thu, 21 Apr 2022 01:29:51 GMT  
-		Size: 1.7 MB (1689687 bytes)  
+	-	`sha256:57169ac226acc0b97cefcf5d0c4611ad7464e516a0abbe839ddd7add7c2e9f80`  
+		Last Modified: Mon, 25 Apr 2022 19:29:51 GMT  
+		Size: 1.7 MB (1689665 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:856ec9413034d6e6a730861ad35d2981ef32cbc6cb8a30996766983c104a269b`  
-		Last Modified: Thu, 21 Apr 2022 01:29:49 GMT  
-		Size: 900.5 KB (900512 bytes)  
+	-	`sha256:8118a2fa03079b7c9cb68aff8c797f98bd9f46d52e809802d79e9521c121732b`  
+		Last Modified: Mon, 25 Apr 2022 19:29:48 GMT  
+		Size: 900.5 KB (900508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9474a4e680e6e0a16e72edffbd33a592bc0b1f729a23dd11c080a3084a63dc0e`  
-		Last Modified: Thu, 21 Apr 2022 01:29:49 GMT  
+	-	`sha256:38fff0ce2adabb9cd1f8e6b03109ee8c2669ff428797dcc95c701511c052d7a2`  
+		Last Modified: Mon, 25 Apr 2022 19:29:48 GMT  
 		Size: 4.6 KB (4603 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c4cd99b6470eaa44cf8ae8ad185f2432dc7e120ddc6640ed8fa0e12640aadddc`  
-		Last Modified: Thu, 21 Apr 2022 01:29:48 GMT  
-		Size: 147.0 B  
+	-	`sha256:38a90e631dc43b646bc76c2c4aab8f3ca1aa20d4bd318fcd1c8940b2a7e9ac5f`  
+		Last Modified: Mon, 25 Apr 2022 19:29:48 GMT  
+		Size: 148.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9467369e60e20e0ffb0e18b6d9a92b9d0739f056fc7bb026684e11e68a2bba4f`  
-		Last Modified: Thu, 21 Apr 2022 01:30:04 GMT  
-		Size: 339.9 MB (339857986 bytes)  
+	-	`sha256:f814b36c2395104b1733aa4bd8b9c7e8d1b0a9c7cdbf9fa6618d9c43a7d482c4`  
+		Last Modified: Mon, 25 Apr 2022 19:30:04 GMT  
+		Size: 339.9 MB (339857940 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:94fc45272a0935c2a82d7b2fc46556d3f97a338e3b10fa1f544dba79859618cf`  
-		Last Modified: Thu, 21 Apr 2022 01:29:49 GMT  
-		Size: 1.9 KB (1945 bytes)  
+	-	`sha256:9317c322e22e7a3a49d4cc8665e8b7271feafd320ca4e53029225eab52e0323c`  
+		Last Modified: Mon, 25 Apr 2022 19:29:48 GMT  
+		Size: 1.9 KB (1946 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `flink:1.14.4-scala_2.12-java11` - linux; arm64 variant v8
@@ -11175,7 +11175,7 @@ CMD ["help"]
 ## `flink:java11`
 
 ```console
-$ docker pull flink@sha256:3fa746fed51f05d3c7d2bffa476b739f6a6b4defd4e8ed0c6597e1432332c1a8
+$ docker pull flink@sha256:85d0e6d613362c544279836f853f69bd8c742ebb02db882f3487d2a415ddb2af
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11186,14 +11186,14 @@ $ docker pull flink@sha256:3fa746fed51f05d3c7d2bffa476b739f6a6b4defd4e8ed0c6597e
 ### `flink:java11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:e3572d1fba81e036e08640416dc1c85b3f2afe8a3ba1dca2f76082950c8853de
+$ docker pull flink@sha256:4ca7f1d3f99664078174577ebf039c7517093f9b0ada5943af48562f8015db67
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **466.0 MB (465965090 bytes)**  
+-	Total Size: **466.3 MB (466282293 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8ebedf9b2b3191db14e2bf85de78eaa3322867d6cc8d2500dbfc02cd104e6d35`
+-	Image ID: `sha256:94ffd89a5c5a5d10b6950e92cdcbc7737d58b8bc363e1bede6428fbc509aaf42`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -11216,35 +11216,35 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 20 Apr 2022 10:53:58 GMT
 ENV LANG=C.UTF-8
-# Wed, 20 Apr 2022 10:53:58 GMT
-ENV JAVA_VERSION=11.0.14.1
-# Wed, 20 Apr 2022 10:54:05 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_x64_linux_11.0.14.1_1.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_aarch64_linux_11.0.14.1_1.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Thu, 21 Apr 2022 01:06:22 GMT
+# Mon, 25 Apr 2022 18:27:13 GMT
+ENV JAVA_VERSION=11.0.15
+# Mon, 25 Apr 2022 18:27:19 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_x64_linux_11.0.15_10.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_aarch64_linux_11.0.15_10.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
+# Mon, 25 Apr 2022 19:16:40 GMT
 RUN set -ex;   apt-get update;   apt-get -y install libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/*
-# Thu, 21 Apr 2022 01:06:22 GMT
+# Mon, 25 Apr 2022 19:16:40 GMT
 ENV GOSU_VERSION=1.11
-# Thu, 21 Apr 2022 01:07:16 GMT
+# Mon, 25 Apr 2022 19:17:29 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in ha.pool.sks-keyservers.net $(shuf -e                           hkp://p80.pool.sks-keyservers.net:80                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Thu, 21 Apr 2022 01:07:16 GMT
+# Mon, 25 Apr 2022 19:17:29 GMT
 ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.14.4/flink-1.14.4-bin-scala_2.12.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.14.4/flink-1.14.4-bin-scala_2.12.tgz.asc GPG_KEY=CCFA852FD039380AB3EC36D08C3FB007FE60DEFA CHECK_GPG=true
-# Thu, 21 Apr 2022 01:07:16 GMT
+# Mon, 25 Apr 2022 19:17:30 GMT
 ENV FLINK_HOME=/opt/flink
-# Thu, 21 Apr 2022 01:07:16 GMT
+# Mon, 25 Apr 2022 19:17:30 GMT
 ENV PATH=/opt/flink/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 21 Apr 2022 01:07:17 GMT
+# Mon, 25 Apr 2022 19:17:30 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Thu, 21 Apr 2022 01:07:17 GMT
+# Mon, 25 Apr 2022 19:17:30 GMT
 WORKDIR /opt/flink
-# Thu, 21 Apr 2022 01:08:16 GMT
+# Mon, 25 Apr 2022 19:18:53 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in ha.pool.sks-keyservers.net $(shuf -e                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;
-# Thu, 21 Apr 2022 01:08:17 GMT
+# Mon, 25 Apr 2022 19:18:54 GMT
 COPY file:e308297ef6ffd9c3cff00834ffd8c0f8baacafe7ea8ed0b19a897eb03baceb28 in / 
-# Thu, 21 Apr 2022 01:08:17 GMT
+# Mon, 25 Apr 2022 19:18:54 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 21 Apr 2022 01:08:17 GMT
+# Mon, 25 Apr 2022 19:18:54 GMT
 EXPOSE 6123 8081
-# Thu, 21 Apr 2022 01:08:17 GMT
+# Mon, 25 Apr 2022 19:18:54 GMT
 CMD ["help"]
 ```
 
@@ -11269,33 +11269,33 @@ CMD ["help"]
 		Last Modified: Wed, 20 Apr 2022 11:12:19 GMT  
 		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3adba0a35f28cdd034bef4df08d640578ed8f0c6b971084706a9203183d6387c`  
-		Last Modified: Wed, 20 Apr 2022 11:12:26 GMT  
-		Size: 46.9 MB (46880152 bytes)  
+	-	`sha256:ffa59d9ab33cd135fc03bd1449112beaf19d1eb922727cb5c81008ff68b12f95`  
+		Last Modified: Mon, 25 Apr 2022 18:41:27 GMT  
+		Size: 47.2 MB (47197425 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c9cff9eec7d2c6bd0f4e96d712bd19418edf20d9e67bb691ef23c644d48431f`  
-		Last Modified: Thu, 21 Apr 2022 01:29:51 GMT  
-		Size: 1.7 MB (1689687 bytes)  
+	-	`sha256:57169ac226acc0b97cefcf5d0c4611ad7464e516a0abbe839ddd7add7c2e9f80`  
+		Last Modified: Mon, 25 Apr 2022 19:29:51 GMT  
+		Size: 1.7 MB (1689665 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:856ec9413034d6e6a730861ad35d2981ef32cbc6cb8a30996766983c104a269b`  
-		Last Modified: Thu, 21 Apr 2022 01:29:49 GMT  
-		Size: 900.5 KB (900512 bytes)  
+	-	`sha256:8118a2fa03079b7c9cb68aff8c797f98bd9f46d52e809802d79e9521c121732b`  
+		Last Modified: Mon, 25 Apr 2022 19:29:48 GMT  
+		Size: 900.5 KB (900508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9474a4e680e6e0a16e72edffbd33a592bc0b1f729a23dd11c080a3084a63dc0e`  
-		Last Modified: Thu, 21 Apr 2022 01:29:49 GMT  
+	-	`sha256:38fff0ce2adabb9cd1f8e6b03109ee8c2669ff428797dcc95c701511c052d7a2`  
+		Last Modified: Mon, 25 Apr 2022 19:29:48 GMT  
 		Size: 4.6 KB (4603 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c4cd99b6470eaa44cf8ae8ad185f2432dc7e120ddc6640ed8fa0e12640aadddc`  
-		Last Modified: Thu, 21 Apr 2022 01:29:48 GMT  
-		Size: 147.0 B  
+	-	`sha256:38a90e631dc43b646bc76c2c4aab8f3ca1aa20d4bd318fcd1c8940b2a7e9ac5f`  
+		Last Modified: Mon, 25 Apr 2022 19:29:48 GMT  
+		Size: 148.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9467369e60e20e0ffb0e18b6d9a92b9d0739f056fc7bb026684e11e68a2bba4f`  
-		Last Modified: Thu, 21 Apr 2022 01:30:04 GMT  
-		Size: 339.9 MB (339857986 bytes)  
+	-	`sha256:f814b36c2395104b1733aa4bd8b9c7e8d1b0a9c7cdbf9fa6618d9c43a7d482c4`  
+		Last Modified: Mon, 25 Apr 2022 19:30:04 GMT  
+		Size: 339.9 MB (339857940 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:94fc45272a0935c2a82d7b2fc46556d3f97a338e3b10fa1f544dba79859618cf`  
-		Last Modified: Thu, 21 Apr 2022 01:29:49 GMT  
-		Size: 1.9 KB (1945 bytes)  
+	-	`sha256:9317c322e22e7a3a49d4cc8665e8b7271feafd320ca4e53029225eab52e0323c`  
+		Last Modified: Mon, 25 Apr 2022 19:29:48 GMT  
+		Size: 1.9 KB (1946 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `flink:java11` - linux; arm64 variant v8
@@ -12139,7 +12139,7 @@ CMD ["help"]
 ## `flink:scala_2.11-java11`
 
 ```console
-$ docker pull flink@sha256:e92b051d328c99fd2812700ab6a847da8b4b09c85eeeee7bfd5e83aac7aa3981
+$ docker pull flink@sha256:b9da3567dd6579a3fb3adf2e983e0f0b004602b38ce1e31d92b5206bc0aeeb08
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12150,14 +12150,14 @@ $ docker pull flink@sha256:e92b051d328c99fd2812700ab6a847da8b4b09c85eeeee7bfd5e8
 ### `flink:scala_2.11-java11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:1100741cc73d144a40df304a8e082f8ebec5485583f3aa3c8e5431159aa5af1a
+$ docker pull flink@sha256:1445dbc13ac6310d8849b9b3669bb415d09d1dee08229b1dd8cfa02df66ccfc0
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **473.7 MB (473669221 bytes)**  
+-	Total Size: **474.0 MB (473986468 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8b470b26637e877cc0d9caf53f3f456337040089e6e3aa0b69629f25cc1a3f18`
+-	Image ID: `sha256:2bc1c904b833505c95f49b785a46d56c33193d2c091d039da0a389317411ea97`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -12180,35 +12180,35 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 20 Apr 2022 10:53:58 GMT
 ENV LANG=C.UTF-8
-# Wed, 20 Apr 2022 10:53:58 GMT
-ENV JAVA_VERSION=11.0.14.1
-# Wed, 20 Apr 2022 10:54:05 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_x64_linux_11.0.14.1_1.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_aarch64_linux_11.0.14.1_1.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Thu, 21 Apr 2022 01:06:22 GMT
+# Mon, 25 Apr 2022 18:27:13 GMT
+ENV JAVA_VERSION=11.0.15
+# Mon, 25 Apr 2022 18:27:19 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_x64_linux_11.0.15_10.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_aarch64_linux_11.0.15_10.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
+# Mon, 25 Apr 2022 19:16:40 GMT
 RUN set -ex;   apt-get update;   apt-get -y install libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/*
-# Thu, 21 Apr 2022 01:06:22 GMT
+# Mon, 25 Apr 2022 19:16:40 GMT
 ENV GOSU_VERSION=1.11
-# Thu, 21 Apr 2022 01:07:16 GMT
+# Mon, 25 Apr 2022 19:17:29 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in ha.pool.sks-keyservers.net $(shuf -e                           hkp://p80.pool.sks-keyservers.net:80                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Thu, 21 Apr 2022 01:09:49 GMT
+# Mon, 25 Apr 2022 19:19:01 GMT
 ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.14.4/flink-1.14.4-bin-scala_2.11.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.14.4/flink-1.14.4-bin-scala_2.11.tgz.asc GPG_KEY=CCFA852FD039380AB3EC36D08C3FB007FE60DEFA CHECK_GPG=true
-# Thu, 21 Apr 2022 01:09:49 GMT
+# Mon, 25 Apr 2022 19:19:01 GMT
 ENV FLINK_HOME=/opt/flink
-# Thu, 21 Apr 2022 01:09:49 GMT
+# Mon, 25 Apr 2022 19:19:01 GMT
 ENV PATH=/opt/flink/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 21 Apr 2022 01:09:49 GMT
+# Mon, 25 Apr 2022 19:19:02 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Thu, 21 Apr 2022 01:09:49 GMT
+# Mon, 25 Apr 2022 19:19:02 GMT
 WORKDIR /opt/flink
-# Thu, 21 Apr 2022 01:10:47 GMT
+# Mon, 25 Apr 2022 19:20:12 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in ha.pool.sks-keyservers.net $(shuf -e                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;
-# Thu, 21 Apr 2022 01:10:48 GMT
+# Mon, 25 Apr 2022 19:20:12 GMT
 COPY file:e308297ef6ffd9c3cff00834ffd8c0f8baacafe7ea8ed0b19a897eb03baceb28 in / 
-# Thu, 21 Apr 2022 01:10:48 GMT
+# Mon, 25 Apr 2022 19:20:12 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 21 Apr 2022 01:10:48 GMT
+# Mon, 25 Apr 2022 19:20:13 GMT
 EXPOSE 6123 8081
-# Thu, 21 Apr 2022 01:10:48 GMT
+# Mon, 25 Apr 2022 19:20:13 GMT
 CMD ["help"]
 ```
 
@@ -12233,33 +12233,33 @@ CMD ["help"]
 		Last Modified: Wed, 20 Apr 2022 11:12:19 GMT  
 		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3adba0a35f28cdd034bef4df08d640578ed8f0c6b971084706a9203183d6387c`  
-		Last Modified: Wed, 20 Apr 2022 11:12:26 GMT  
-		Size: 46.9 MB (46880152 bytes)  
+	-	`sha256:ffa59d9ab33cd135fc03bd1449112beaf19d1eb922727cb5c81008ff68b12f95`  
+		Last Modified: Mon, 25 Apr 2022 18:41:27 GMT  
+		Size: 47.2 MB (47197425 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c9cff9eec7d2c6bd0f4e96d712bd19418edf20d9e67bb691ef23c644d48431f`  
-		Last Modified: Thu, 21 Apr 2022 01:29:51 GMT  
-		Size: 1.7 MB (1689687 bytes)  
+	-	`sha256:57169ac226acc0b97cefcf5d0c4611ad7464e516a0abbe839ddd7add7c2e9f80`  
+		Last Modified: Mon, 25 Apr 2022 19:29:51 GMT  
+		Size: 1.7 MB (1689665 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:856ec9413034d6e6a730861ad35d2981ef32cbc6cb8a30996766983c104a269b`  
-		Last Modified: Thu, 21 Apr 2022 01:29:49 GMT  
-		Size: 900.5 KB (900512 bytes)  
+	-	`sha256:8118a2fa03079b7c9cb68aff8c797f98bd9f46d52e809802d79e9521c121732b`  
+		Last Modified: Mon, 25 Apr 2022 19:29:48 GMT  
+		Size: 900.5 KB (900508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:92e68aaf3fff83a7990e3f3ade3fdd73fd6621c8d543ce4eb859045d43ea9b84`  
-		Last Modified: Thu, 21 Apr 2022 01:31:21 GMT  
-		Size: 4.6 KB (4602 bytes)  
+	-	`sha256:bdbd2ad50daa91515eb36819968c6fbe483ff9f88fd84896dc65af0830a23c03`  
+		Last Modified: Mon, 25 Apr 2022 19:30:29 GMT  
+		Size: 4.6 KB (4604 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35e7314d4633e299b16226e1c1f99468d33666690a6634c85ff8c15077278294`  
-		Last Modified: Thu, 21 Apr 2022 01:31:21 GMT  
+	-	`sha256:ced53aef1eded8c740fb348cf9b27ae0ce63417923bb16d75f02230cf0f6fb7d`  
+		Last Modified: Mon, 25 Apr 2022 19:30:29 GMT  
 		Size: 148.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c6aa3a4bb8f893d83137f2624447842a530c45cfcf2754148f120ab32a8abe3`  
-		Last Modified: Thu, 21 Apr 2022 01:31:37 GMT  
+	-	`sha256:a22d1197c9ba60eba65e65fcad0e86b646e703fe85e9457ef53b779657b4703a`  
+		Last Modified: Mon, 25 Apr 2022 19:30:48 GMT  
 		Size: 347.6 MB (347562115 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:60a495fcf5afec3fea5729699521796d8cd1968cf2f04b21d86629a90a745acb`  
-		Last Modified: Thu, 21 Apr 2022 01:31:21 GMT  
-		Size: 1.9 KB (1947 bytes)  
+	-	`sha256:08ca2085b2e192e44f0251bb81e7a8ea385557f5806bed791aaed49cbe03ee60`  
+		Last Modified: Mon, 25 Apr 2022 19:30:29 GMT  
+		Size: 1.9 KB (1945 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `flink:scala_2.11-java11` - linux; arm64 variant v8
@@ -12862,7 +12862,7 @@ CMD ["help"]
 ## `flink:scala_2.12-java11`
 
 ```console
-$ docker pull flink@sha256:3fa746fed51f05d3c7d2bffa476b739f6a6b4defd4e8ed0c6597e1432332c1a8
+$ docker pull flink@sha256:85d0e6d613362c544279836f853f69bd8c742ebb02db882f3487d2a415ddb2af
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12873,14 +12873,14 @@ $ docker pull flink@sha256:3fa746fed51f05d3c7d2bffa476b739f6a6b4defd4e8ed0c6597e
 ### `flink:scala_2.12-java11` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:e3572d1fba81e036e08640416dc1c85b3f2afe8a3ba1dca2f76082950c8853de
+$ docker pull flink@sha256:4ca7f1d3f99664078174577ebf039c7517093f9b0ada5943af48562f8015db67
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **466.0 MB (465965090 bytes)**  
+-	Total Size: **466.3 MB (466282293 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8ebedf9b2b3191db14e2bf85de78eaa3322867d6cc8d2500dbfc02cd104e6d35`
+-	Image ID: `sha256:94ffd89a5c5a5d10b6950e92cdcbc7737d58b8bc363e1bede6428fbc509aaf42`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -12903,35 +12903,35 @@ RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 20 Apr 2022 10:53:58 GMT
 ENV LANG=C.UTF-8
-# Wed, 20 Apr 2022 10:53:58 GMT
-ENV JAVA_VERSION=11.0.14.1
-# Wed, 20 Apr 2022 10:54:05 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_x64_linux_11.0.14.1_1.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.14.1%2B1/OpenJDK11U-jre_aarch64_linux_11.0.14.1_1.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Thu, 21 Apr 2022 01:06:22 GMT
+# Mon, 25 Apr 2022 18:27:13 GMT
+ENV JAVA_VERSION=11.0.15
+# Mon, 25 Apr 2022 18:27:19 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_x64_linux_11.0.15_10.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_aarch64_linux_11.0.15_10.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
+# Mon, 25 Apr 2022 19:16:40 GMT
 RUN set -ex;   apt-get update;   apt-get -y install libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/*
-# Thu, 21 Apr 2022 01:06:22 GMT
+# Mon, 25 Apr 2022 19:16:40 GMT
 ENV GOSU_VERSION=1.11
-# Thu, 21 Apr 2022 01:07:16 GMT
+# Mon, 25 Apr 2022 19:17:29 GMT
 RUN set -ex;   wget -nv -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -nv -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   for server in ha.pool.sks-keyservers.net $(shuf -e                           hkp://p80.pool.sks-keyservers.net:80                           keyserver.ubuntu.com                           hkp://keyserver.ubuntu.com:80                           pgp.mit.edu) ; do       gpg --batch --keyserver "$server" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && break || : ;   done &&   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   gpgconf --kill all;   rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
-# Thu, 21 Apr 2022 01:07:16 GMT
+# Mon, 25 Apr 2022 19:17:29 GMT
 ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.14.4/flink-1.14.4-bin-scala_2.12.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.14.4/flink-1.14.4-bin-scala_2.12.tgz.asc GPG_KEY=CCFA852FD039380AB3EC36D08C3FB007FE60DEFA CHECK_GPG=true
-# Thu, 21 Apr 2022 01:07:16 GMT
+# Mon, 25 Apr 2022 19:17:30 GMT
 ENV FLINK_HOME=/opt/flink
-# Thu, 21 Apr 2022 01:07:16 GMT
+# Mon, 25 Apr 2022 19:17:30 GMT
 ENV PATH=/opt/flink/bin:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 21 Apr 2022 01:07:17 GMT
+# Mon, 25 Apr 2022 19:17:30 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Thu, 21 Apr 2022 01:07:17 GMT
+# Mon, 25 Apr 2022 19:17:30 GMT
 WORKDIR /opt/flink
-# Thu, 21 Apr 2022 01:08:16 GMT
+# Mon, 25 Apr 2022 19:18:53 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in ha.pool.sks-keyservers.net $(shuf -e                             hkp://p80.pool.sks-keyservers.net:80                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;
-# Thu, 21 Apr 2022 01:08:17 GMT
+# Mon, 25 Apr 2022 19:18:54 GMT
 COPY file:e308297ef6ffd9c3cff00834ffd8c0f8baacafe7ea8ed0b19a897eb03baceb28 in / 
-# Thu, 21 Apr 2022 01:08:17 GMT
+# Mon, 25 Apr 2022 19:18:54 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 21 Apr 2022 01:08:17 GMT
+# Mon, 25 Apr 2022 19:18:54 GMT
 EXPOSE 6123 8081
-# Thu, 21 Apr 2022 01:08:17 GMT
+# Mon, 25 Apr 2022 19:18:54 GMT
 CMD ["help"]
 ```
 
@@ -12956,33 +12956,33 @@ CMD ["help"]
 		Last Modified: Wed, 20 Apr 2022 11:12:19 GMT  
 		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3adba0a35f28cdd034bef4df08d640578ed8f0c6b971084706a9203183d6387c`  
-		Last Modified: Wed, 20 Apr 2022 11:12:26 GMT  
-		Size: 46.9 MB (46880152 bytes)  
+	-	`sha256:ffa59d9ab33cd135fc03bd1449112beaf19d1eb922727cb5c81008ff68b12f95`  
+		Last Modified: Mon, 25 Apr 2022 18:41:27 GMT  
+		Size: 47.2 MB (47197425 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c9cff9eec7d2c6bd0f4e96d712bd19418edf20d9e67bb691ef23c644d48431f`  
-		Last Modified: Thu, 21 Apr 2022 01:29:51 GMT  
-		Size: 1.7 MB (1689687 bytes)  
+	-	`sha256:57169ac226acc0b97cefcf5d0c4611ad7464e516a0abbe839ddd7add7c2e9f80`  
+		Last Modified: Mon, 25 Apr 2022 19:29:51 GMT  
+		Size: 1.7 MB (1689665 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:856ec9413034d6e6a730861ad35d2981ef32cbc6cb8a30996766983c104a269b`  
-		Last Modified: Thu, 21 Apr 2022 01:29:49 GMT  
-		Size: 900.5 KB (900512 bytes)  
+	-	`sha256:8118a2fa03079b7c9cb68aff8c797f98bd9f46d52e809802d79e9521c121732b`  
+		Last Modified: Mon, 25 Apr 2022 19:29:48 GMT  
+		Size: 900.5 KB (900508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9474a4e680e6e0a16e72edffbd33a592bc0b1f729a23dd11c080a3084a63dc0e`  
-		Last Modified: Thu, 21 Apr 2022 01:29:49 GMT  
+	-	`sha256:38fff0ce2adabb9cd1f8e6b03109ee8c2669ff428797dcc95c701511c052d7a2`  
+		Last Modified: Mon, 25 Apr 2022 19:29:48 GMT  
 		Size: 4.6 KB (4603 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c4cd99b6470eaa44cf8ae8ad185f2432dc7e120ddc6640ed8fa0e12640aadddc`  
-		Last Modified: Thu, 21 Apr 2022 01:29:48 GMT  
-		Size: 147.0 B  
+	-	`sha256:38a90e631dc43b646bc76c2c4aab8f3ca1aa20d4bd318fcd1c8940b2a7e9ac5f`  
+		Last Modified: Mon, 25 Apr 2022 19:29:48 GMT  
+		Size: 148.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9467369e60e20e0ffb0e18b6d9a92b9d0739f056fc7bb026684e11e68a2bba4f`  
-		Last Modified: Thu, 21 Apr 2022 01:30:04 GMT  
-		Size: 339.9 MB (339857986 bytes)  
+	-	`sha256:f814b36c2395104b1733aa4bd8b9c7e8d1b0a9c7cdbf9fa6618d9c43a7d482c4`  
+		Last Modified: Mon, 25 Apr 2022 19:30:04 GMT  
+		Size: 339.9 MB (339857940 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:94fc45272a0935c2a82d7b2fc46556d3f97a338e3b10fa1f544dba79859618cf`  
-		Last Modified: Thu, 21 Apr 2022 01:29:49 GMT  
-		Size: 1.9 KB (1945 bytes)  
+	-	`sha256:9317c322e22e7a3a49d4cc8665e8b7271feafd320ca4e53029225eab52e0323c`  
+		Last Modified: Mon, 25 Apr 2022 19:29:48 GMT  
+		Size: 1.9 KB (1946 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `flink:scala_2.12-java11` - linux; arm64 variant v8
