@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d042ee932aa4cb97b935341aa0b45c82f9815b9deba87d839ff765598cea5a40`
-- Created: `2022-04-21T03:58:27.947664184Z`
-- Virtual Size: ~ 441.14 Mb  
+- Image ID: `sha256:2409ad0c6d7b77714c46576c086a8d24e4884a6bee7e7c069b53ec661489a5ae`
+- Created: `2022-04-25T21:41:42.836605346Z`
+- Virtual Size: ~ 440.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,7 +13,7 @@
   - `PATH=/opt/solr/bin:/opt/docker-solr/scripts:/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/local/openjdk-11`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=11.0.14.1`
+  - `JAVA_VERSION=11.0.15`
   - `SOLR_USER=solr`
   - `SOLR_UID=8983`
   - `SOLR_GROUP=solr`
