@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3fc7ce49919442da33dd428f6a681ef80cfe0278187f11d1a2d4e1b2b9e7b1dd`
-- Created: `2022-04-22T04:19:47.138598968Z`
+- Image ID: `sha256:a79761efa81115ab70a7c63b75f0650512103cfb0b1f2a4bcc7d74f680786494`
+- Created: `2022-04-30T03:32:04.247754663Z`
 - Virtual Size: ~ 3.21 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -436,19 +436,24 @@ $ apt-get source -qq --print-uris base-passwd=3.5.47
 'http://archive.ubuntu.com/ubuntu/pool/main/b/base-passwd/base-passwd_3.5.47.tar.xz' base-passwd_3.5.47.tar.xz 53024 SHA256:9810ae0216e96bf9fc7ca6163d47ef8ec7d1677f533451af5911d8202a490a23
 ```
 
-### `dpkg` source package: `bash=5.0-6ubuntu1.1`
+### `dpkg` source package: `bash=5.0-6ubuntu1.2`
 
 Binary Packages:
 
-- `bash=5.0-6ubuntu1.1`
+- `bash=5.0-6ubuntu1.2`
 
 Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris bash=5.0-6ubuntu1.2
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.0-6ubuntu1.2.dsc' bash_5.0-6ubuntu1.2.dsc 2296 SHA512:d93b919ae7b8e67e3b4e31d205e13006a37aa2a42378744599c3214ecab6544084856a739b38aaeb06742524e2ea302c8147f7a88dbc738e1e7ac0a29be0c0b8
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.0.orig.tar.xz' bash_5.0.orig.tar.xz 5554808 SHA512:f3a719997a8515bae7e84701afafc9b2cdd23c95d29533adb678000b08eba968450b93d5576c3cffbeccbdcd95b713db830e8efeda689258dcfe6f15f0c5dec4
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.0-6ubuntu1.2.debian.tar.xz' bash_5.0-6ubuntu1.2.debian.tar.xz 75200 SHA512:50de22a6cd140fcb95eca9172e9927a4eeddd90bfbd23072d5e209db1675f331716dfd54ef3281caa7020e3fa1aef9ca7caafc6a8d3067741b1ae41f7dff7724
+```
 
 ### `dpkg` source package: `boost1.71=1.71.0-6ubuntu6`
 
@@ -832,13 +837,13 @@ $ apt-get source -qq --print-uris cups=2.3.1-9ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.3.1-9ubuntu1.1.debian.tar.xz' cups_2.3.1-9ubuntu1.1.debian.tar.xz 356268 SHA512:376d76abe39fbec9a206cdb3544e71d8e4a3aa18188e175d4a996be7be05733be00487d0240e0cbbf21592ee657f686f3205384d98ee277fc5b548ac4642911e
 ```
 
-### `dpkg` source package: `curl=7.68.0-1ubuntu2.7`
+### `dpkg` source package: `curl=7.68.0-1ubuntu2.10`
 
 Binary Packages:
 
-- `curl=7.68.0-1ubuntu2.7`
-- `libcurl3-gnutls:amd64=7.68.0-1ubuntu2.7`
-- `libcurl4:amd64=7.68.0-1ubuntu2.7`
+- `curl=7.68.0-1ubuntu2.10`
+- `libcurl3-gnutls:amd64=7.68.0-1ubuntu2.10`
+- `libcurl4:amd64=7.68.0-1ubuntu2.10`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -852,10 +857,10 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=7.68.0-1ubuntu2.7
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.7.dsc' curl_7.68.0-1ubuntu2.7.dsc 2733 SHA512:e125a9af90ed2bc17af45f0b23b2c145820a1fb61e8836e0aae2c13c43a4b4fff66c65b7464df47ccd0d54addc8062197afa61fe8a62a03e0a4c43b338301537
+$ apt-get source -qq --print-uris curl=7.68.0-1ubuntu2.10
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.10.dsc' curl_7.68.0-1ubuntu2.10.dsc 2737 SHA512:c7e59b48d6743b2c0bd9fcfa76605cb4b9693bb467df2e2aabf25e38b0349f4d28aa50136efc25535f971a70a9c252d053a88539b9b0f0fdc36302f6ed145c2c
 'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0.orig.tar.gz' curl_7.68.0.orig.tar.gz 4096350 SHA512:58b42c08b1cf4cb6e68f8e469d5b5f6298eebe286ba2677ad29e1a7eefd15b8609af54544f4c5a7dadebbd3b23bd77700830f2f60fbea7ae3f2f306e640010b0
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.7.debian.tar.xz' curl_7.68.0-1ubuntu2.7.debian.tar.xz 48080 SHA512:9312b57d9adee8f77462aa222ae403c87f38f4729b73929b1ca5444c8e7c42c19102753dccefccdf7bfbff96f475aac61cda3600b630989b0f1bd5de8aa68699
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.10.debian.tar.xz' curl_7.68.0-1ubuntu2.10.debian.tar.xz 52592 SHA512:2ed50fea6923e23c83b08a4c5eba4d1475f9d46308bd664804759a6bf8b187d9d649bcf59e171c853bbe65ab1b6403a4e00d29a3369bcf8fa21ca8a1d5275fe0
 ```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-2ubuntu0.1`
@@ -7349,11 +7354,11 @@ $ apt-get source -qq --print-uris nettle=3.5.1+really3.5.1-2ubuntu0.2
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.5.1%2breally3.5.1-2ubuntu0.2.debian.tar.xz' nettle_3.5.1+really3.5.1-2ubuntu0.2.debian.tar.xz 27228 SHA512:389c303e679b6b6714f824f22bc8675c1ea4bdab0108b69e9514613109573d01592e3f80bf9a144866a159a9a09fa0f3218d62b9f6978bdfe5e95a18bcfe3a88
 ```
 
-### `dpkg` source package: `networkd-dispatcher=2.1-2~ubuntu20.04.1`
+### `dpkg` source package: `networkd-dispatcher=2.1-2~ubuntu20.04.2`
 
 Binary Packages:
 
-- `networkd-dispatcher=2.1-2~ubuntu20.04.1`
+- `networkd-dispatcher=2.1-2~ubuntu20.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/networkd-dispatcher/copyright`)
 
@@ -7363,10 +7368,10 @@ Licenses: (parsed from: `/usr/share/doc/networkd-dispatcher/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris networkd-dispatcher=2.1-2~ubuntu20.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/n/networkd-dispatcher/networkd-dispatcher_2.1-2%7eubuntu20.04.1.dsc' networkd-dispatcher_2.1-2~ubuntu20.04.1.dsc 2236 SHA512:3cf61c7e6cdcad316d48ed4e7fa469f74c707a125a1413469ff50fc952bd3d4fc45519205b60512e0df408fc261fccc3ef07e934cf34547bbb211af91586279c
+$ apt-get source -qq --print-uris networkd-dispatcher=2.1-2~ubuntu20.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/n/networkd-dispatcher/networkd-dispatcher_2.1-2%7eubuntu20.04.2.dsc' networkd-dispatcher_2.1-2~ubuntu20.04.2.dsc 1932 SHA512:c2c0df74be56c81cfa1ed749254d55588932a22689f6293fe20c913c8a7accb8f29407c43a8bece5f8ee62452a1555e446d52b728fb2c62ed42540be3816756b
 'http://archive.ubuntu.com/ubuntu/pool/main/n/networkd-dispatcher/networkd-dispatcher_2.1.orig.tar.gz' networkd-dispatcher_2.1.orig.tar.gz 29650 SHA512:99c456bbb82158dd0dd18a24825d7303f14c650851f9848ad288dcd00af3ec4c4c175c2d54945e1670d4eb5288612f0ec6fb37ec7b9cbca3fd1cc66231cd634d
-'http://archive.ubuntu.com/ubuntu/pool/main/n/networkd-dispatcher/networkd-dispatcher_2.1-2%7eubuntu20.04.1.debian.tar.xz' networkd-dispatcher_2.1-2~ubuntu20.04.1.debian.tar.xz 5176 SHA512:830e5f41d4cc05a4b38b24d586e4f2e0db6a8699e65bbb6cb2ab18363744228608b76286085a9dc60fb0dc99f9761c5acbd64436bf6b441a57303bf85c498271
+'http://archive.ubuntu.com/ubuntu/pool/main/n/networkd-dispatcher/networkd-dispatcher_2.1-2%7eubuntu20.04.2.debian.tar.xz' networkd-dispatcher_2.1-2~ubuntu20.04.2.debian.tar.xz 8848 SHA512:eab240cf47d0c0d6747476f565341ac3562771662798867c8d5596bddc924262c49a335a3cc207a235b29053b1a14e0e2eba115e0a250d4006b76f3b4ff691d9
 ```
 
 ### `dpkg` source package: `nghttp2=1.40.0-1build1`
@@ -7569,14 +7574,14 @@ $ apt-get source -qq --print-uris openexr=2.3.0-6ubuntu0.5
 'http://archive.ubuntu.com/ubuntu/pool/universe/o/openexr/openexr_2.3.0-6ubuntu0.5.debian.tar.xz' openexr_2.3.0-6ubuntu0.5.debian.tar.xz 40348 SHA512:a7454052906c5b683ab905a80933a323de29dfbbbe9ed2b5160e7c5fe6db4197c03d6bb463b428c7e706702a2f0c9112debbfdc5f9a430225e81b57f949c9200
 ```
 
-### `dpkg` source package: `openjdk-lts=11.0.14.1+1-0ubuntu1~20.04`
+### `dpkg` source package: `openjdk-lts=11.0.15+10-0ubuntu0.20.04.1`
 
 Binary Packages:
 
-- `openjdk-11-jdk:amd64=11.0.14.1+1-0ubuntu1~20.04`
-- `openjdk-11-jdk-headless:amd64=11.0.14.1+1-0ubuntu1~20.04`
-- `openjdk-11-jre:amd64=11.0.14.1+1-0ubuntu1~20.04`
-- `openjdk-11-jre-headless:amd64=11.0.14.1+1-0ubuntu1~20.04`
+- `openjdk-11-jdk:amd64=11.0.15+10-0ubuntu0.20.04.1`
+- `openjdk-11-jdk-headless:amd64=11.0.15+10-0ubuntu0.20.04.1`
+- `openjdk-11-jre:amd64=11.0.15+10-0ubuntu0.20.04.1`
+- `openjdk-11-jre-headless:amd64=11.0.15+10-0ubuntu0.20.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-11-jdk/copyright`, `/usr/share/doc/openjdk-11-jdk-headless/copyright`, `/usr/share/doc/openjdk-11-jre/copyright`, `/usr/share/doc/openjdk-11-jre-headless/copyright`)
 
@@ -7585,9 +7590,14 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-11-jdk/copyright`, `/usr/share/d
 - `LGPL-2`
 - `LGPL-2-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openjdk-lts=11.0.15+10-0ubuntu0.20.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.15%2b10-0ubuntu0.20.04.1.dsc' openjdk-lts_11.0.15+10-0ubuntu0.20.04.1.dsc 4712 SHA512:bda3411052a9636c8ffc5ba3020e22a9b3132c96f33db6272e48ea58eca82cc35c8c1220fe5a1e4b36a50efd0c849ebd40d4576214b8086cc60d0ab9420e5293
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.15%2b10.orig.tar.bz2' openjdk-lts_11.0.15+10.orig.tar.bz2 96380955 SHA512:1cf69f34ed4823f60a7a037e377e0d8f5a05c7c52e76155a2710f48960d21b075ae921860a9f1f68bdb77eb616a8854d2a9032ab5a60c9a0f127e7568d52597f
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.15%2b10-0ubuntu0.20.04.1.debian.tar.xz' openjdk-lts_11.0.15+10-0ubuntu0.20.04.1.debian.tar.xz 171444 SHA512:ca9e5cf1c7102ab9ff992ac09755d67dfdc47232aa5422670083a1d796856f9e4fb6ca67a88e8deb1c731e7491840836a8380f24d9492b93627e83d7bd308947
+```
 
 ### `dpkg` source package: `openjpeg2=2.3.1-1ubuntu4.20.04.1`
 
