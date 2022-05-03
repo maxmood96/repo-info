@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2597942848a56626bcf3b9707cceeb51f2b6d9099f365e1787130008c4a23b0f`
-- Created: `2022-04-22T01:37:39.557802334Z`
+- Image ID: `sha256:c0fea455216bed7a159018407b8fb77411b664f79aa7280b733225a71beba725`
+- Created: `2022-04-29T23:54:33.191304676Z`
 - Virtual Size: ~ 1.06 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -465,14 +465,14 @@ $ apt-get source -qq --print-uris coreutils=8.32-4ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4ubuntu2.debian.tar.xz' coreutils_8.32-4ubuntu2.debian.tar.xz 40876 SHA512:261a5c2dbb677dcb69b7ad38a0311613549733b330c9266b90328b0f99ac6127be73d45c981e40bf7ca21dcc3aecc6872df041c118315c75fdccea65dd97fc15
 ```
 
-### `dpkg` source package: `curl=7.74.0-1.3ubuntu2`
+### `dpkg` source package: `curl=7.74.0-1.3ubuntu2.1`
 
 Binary Packages:
 
-- `curl=7.74.0-1.3ubuntu2`
-- `libcurl3-gnutls:amd64=7.74.0-1.3ubuntu2`
-- `libcurl4:amd64=7.74.0-1.3ubuntu2`
-- `libcurl4-openssl-dev:amd64=7.74.0-1.3ubuntu2`
+- `curl=7.74.0-1.3ubuntu2.1`
+- `libcurl3-gnutls:amd64=7.74.0-1.3ubuntu2.1`
+- `libcurl4:amd64=7.74.0-1.3ubuntu2.1`
+- `libcurl4-openssl-dev:amd64=7.74.0-1.3ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
 
@@ -486,10 +486,10 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=7.74.0-1.3ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.74.0-1.3ubuntu2.dsc' curl_7.74.0-1.3ubuntu2.dsc 2771 SHA512:8284fc92404648c2af19daaf495dacda5d83558b7d624ecc8a0336e018f9989962c70c4631d4fd96c3a499e5c693049d1a40500e5181bed1298c1e03ce4d6e7a
+$ apt-get source -qq --print-uris curl=7.74.0-1.3ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.74.0-1.3ubuntu2.1.dsc' curl_7.74.0-1.3ubuntu2.1.dsc 2779 SHA512:6f180001fed0611ec8db899351c15678519caa2d55833ae627c37f3238a18b76ded476f362562438044efa10f09f96b7b2a79cb502058d230980abebe426960d
 'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.74.0.orig.tar.gz' curl_7.74.0.orig.tar.gz 4043409 SHA512:4b61a23463315dce5529aa5f1dc7d21d7876347912c68855c9cfcb01e06492af1510975fafb213c67ac7b9764287767da69043a79376a4be366aa23ace09f163
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.74.0-1.3ubuntu2.debian.tar.xz' curl_7.74.0-1.3ubuntu2.debian.tar.xz 45780 SHA512:d347fa37ab8bc8c434aefa04b9c387948c8e62f90e6a0ebfaf7b499995dad91ca9313abcd4b5893bd904abad6de10ab7e86554935b34953543c9338d1324c7fe
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.74.0-1.3ubuntu2.1.debian.tar.xz' curl_7.74.0-1.3ubuntu2.1.debian.tar.xz 50148 SHA512:1d4573be3a8f9aef50400ddbff4dc518a6df49dadbc95717a66a2d0c3579cf98856c517531185bedb54fe8b4e1a3a369e539783a1377cb9578e6c41a6402122d
 ```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-2.1ubuntu0.1`
@@ -1061,12 +1061,12 @@ $ apt-get source -qq --print-uris gdk-pixbuf=2.42.6+dfsg-1build2
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.42.6%2bdfsg-1build2.debian.tar.xz' gdk-pixbuf_2.42.6+dfsg-1build2.debian.tar.xz 29768 SHA512:8f7f586289e05aff8502413171d5e5a1d9746c25c75279b8781cfd932e05010b79c22bb47be71baaa191e8536d65aae0058de45f5ac03f10b13418296cc9c666
 ```
 
-### `dpkg` source package: `git=1:2.32.0-1ubuntu1.1`
+### `dpkg` source package: `git=1:2.32.0-1ubuntu1.2`
 
 Binary Packages:
 
-- `git=1:2.32.0-1ubuntu1.1`
-- `git-man=1:2.32.0-1ubuntu1.1`
+- `git=1:2.32.0-1ubuntu1.2`
+- `git-man=1:2.32.0-1ubuntu1.2`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -1088,9 +1088,14 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris git=1:2.32.0-1ubuntu1.2
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.32.0-1ubuntu1.2.dsc' git_2.32.0-1ubuntu1.2.dsc 2927 SHA512:e5e974dfed7a52bb4c9cc87cf288f3f40d4e62695d0fa9c7cd96257dce5ee02b534e853e5dd4c4d7de76b771e76c000cc14aa68ebc93813618869b5f1ef4da47
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.32.0.orig.tar.xz' git_2.32.0.orig.tar.xz 6551348 SHA512:1ab3e7022ccee411d14a7da5c37d6259ef5c0f85ebed8f49698e25c65cbc7a46f8096919fcb6568360bfe284dd7475b596eee1a167db966096255a405853837c
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.32.0-1ubuntu1.2.debian.tar.xz' git_2.32.0-1ubuntu1.2.debian.tar.xz 692668 SHA512:fa2eacb32fa3b5687e05bdbef53292ce815e29a683526651bb3331dfe8feddec84816eaa4f7aaf76346bad0647c0f6075b7e452d49728552842999404ce9cfd4
+```
 
 ### `dpkg` source package: `glib2.0=2.68.4-1ubuntu1`
 
@@ -2435,12 +2440,12 @@ $ apt-get source -qq --print-uris libsemanage=3.1-1ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_3.1-1ubuntu2.debian.tar.xz' libsemanage_3.1-1ubuntu2.debian.tar.xz 17876 SHA512:d06cb8c40ada4e854e2283b768217e924b4e2e59b3197418d4361d803e0f6e368ddb671ab5eb04c2f5d1fee1dadeae323044a04242586116f271ff266fa7b9d7
 ```
 
-### `dpkg` source package: `libsepol=3.1-1ubuntu2`
+### `dpkg` source package: `libsepol=3.1-1ubuntu2.1`
 
 Binary Packages:
 
-- `libsepol1:amd64=3.1-1ubuntu2`
-- `libsepol1-dev:amd64=3.1-1ubuntu2`
+- `libsepol1:amd64=3.1-1ubuntu2.1`
+- `libsepol1-dev:amd64=3.1-1ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/libsepol1/copyright`, `/usr/share/doc/libsepol1-dev/copyright`)
 
@@ -2450,10 +2455,10 @@ Licenses: (parsed from: `/usr/share/doc/libsepol1/copyright`, `/usr/share/doc/li
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libsepol=3.1-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsepol/libsepol_3.1-1ubuntu2.dsc' libsepol_3.1-1ubuntu2.dsc 2150 SHA512:ef1d2e5c03dfaab2895570e0798894dac489ea0ccd6c05d38b0db1ed418a0b8090c5432cc6a81325c9bc1ae2f3ee97e957a098d9842129d69125c1e0b381d3a4
+$ apt-get source -qq --print-uris libsepol=3.1-1ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsepol/libsepol_3.1-1ubuntu2.1.dsc' libsepol_3.1-1ubuntu2.1.dsc 2090 SHA512:a004ffa2e83083cf056a7876a2380f6f29a33295ee71c6fb068afe21b1aedafb7ca4113b67eedbfa72876b00c119a014b23abed7c38737a0920e4610539fcee9
 'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsepol/libsepol_3.1.orig.tar.gz' libsepol_3.1.orig.tar.gz 473842 SHA512:4b5f4e82853ff3e9b4fac2dbdea5c2fc3bb7b508af912217ac4b75da6540fbcd77aa314ab95cd9dfa94fbc4a885000656a663c1a152f65b4cf6970ea0b6034ab
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsepol/libsepol_3.1-1ubuntu2.debian.tar.xz' libsepol_3.1-1ubuntu2.debian.tar.xz 14812 SHA512:b76a2dc19431d19295fb5841ad9ddf92ad42c8a851b23e7df932ad71d5e4a2dc4865d5e0bdd5438f5b88a127b9e3fc79a8134361fdb16d7360bbd1c095b22b5c
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsepol/libsepol_3.1-1ubuntu2.1.debian.tar.xz' libsepol_3.1-1ubuntu2.1.debian.tar.xz 17556 SHA512:1b1492311eddcca4de1cf5a2d153b8eade384b703904ccbc32f5a7b7d3cc6858d705c5ba51b12274258901ecd3b0e6fa5f8b74938506d36fec17793c0fcbacb2
 ```
 
 ### `dpkg` source package: `libsigsegv=2.13-1ubuntu2`
@@ -3207,12 +3212,12 @@ $ apt-get source -qq --print-uris mpfr4=4.1.0-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mpfr4/mpfr4_4.1.0-3build1.debian.tar.xz' mpfr4_4.1.0-3build1.debian.tar.xz 12424 SHA512:1cb8790b81f42f36db85850da25695ab47673e6fbfcace1e108665274fcd6feb5ad2e66a518f779e49b1d04ff7a179fb3a6a255dee3a194c2478c62064a56114
 ```
 
-### `dpkg` source package: `mysql-8.0=8.0.28-0ubuntu0.21.10.3`
+### `dpkg` source package: `mysql-8.0=8.0.28-0ubuntu0.21.10.4`
 
 Binary Packages:
 
-- `libmysqlclient-dev=8.0.28-0ubuntu0.21.10.3`
-- `libmysqlclient21:amd64=8.0.28-0ubuntu0.21.10.3`
+- `libmysqlclient-dev=8.0.28-0ubuntu0.21.10.4`
+- `libmysqlclient21:amd64=8.0.28-0ubuntu0.21.10.4`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/share/doc/libmysqlclient21/copyright`)
 
@@ -3229,14 +3234,9 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mysql-8.0=8.0.28-0ubuntu0.21.10.3
-'http://security.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.28-0ubuntu0.21.10.3.dsc' mysql-8.0_8.0.28-0ubuntu0.21.10.3.dsc 3517 SHA512:4220d832cc692b4337021c78985fe7dcaf42840212132dfb72b1ac7b560a7765847fb6f4c8341e7617e4f25a05b3acb08cb4a3a99a09af7c4839280b5000b988
-'http://security.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.28.orig.tar.gz' mysql-8.0_8.0.28.orig.tar.gz 298044027 SHA512:4473678619a03a6c1349ce7330127f03d2da70b5b598375015abe871a0591171fc206f6e248b20085b46a0f465c52408bcadcb732ff72a737c012364d1e46297
-'http://security.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.28-0ubuntu0.21.10.3.debian.tar.xz' mysql-8.0_8.0.28-0ubuntu0.21.10.3.debian.tar.xz 159012 SHA512:65704eb381b2e71964650202dbc15d2f7a1ddeac6a6f322ebfcc04b6a4b6f89e57efbb9153d19f965de80ee8d653cf2e54049e75591d8df3e1bde4a868d6af3a
-```
 
 ### `dpkg` source package: `mysql-defaults=1.0.5ubuntu2`
 
