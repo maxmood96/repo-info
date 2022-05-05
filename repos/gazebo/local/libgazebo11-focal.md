@@ -5611,14 +5611,9 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mysql-8.0=8.0.28-0ubuntu0.20.04.3
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.28-0ubuntu0.20.04.3.dsc' mysql-8.0_8.0.28-0ubuntu0.20.04.3.dsc 3446 SHA512:1cedaeffabf690dc4d8fc255ef9df57183cf0fc4bf2de824adb2858c90050ffb4b053b3705c0e1f05b36b175349906bbe6ba271ace9dd877f96afe07407437d5
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.28.orig.tar.gz' mysql-8.0_8.0.28.orig.tar.gz 298044027 SHA512:4473678619a03a6c1349ce7330127f03d2da70b5b598375015abe871a0591171fc206f6e248b20085b46a0f465c52408bcadcb732ff72a737c012364d1e46297
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.28-0ubuntu0.20.04.3.debian.tar.xz' mysql-8.0_8.0.28-0ubuntu0.20.04.3.debian.tar.xz 161064 SHA512:34061567953a5241caa0edcdce20aba48113151c7710ab9bd33eb9f562450f1f68e5cf6e72e5245b353ba9a3ec4fdb2a3feb1daebc4bcd929ce0e712c07f04ba
-```
 
 ### `dpkg` source package: `mysql-defaults=1.0.5ubuntu2`
 
@@ -6178,14 +6173,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.1.1f-1ubuntu2.12
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.12.dsc' openssl_1.1.1f-1ubuntu2.12.dsc 2470 SHA512:d6439e1d598089b7115b55643f3042078d6440ff78b8f72db0abed892aa510873d2a456f1e92ff67fffaa541813149aa870e13c6557358dd4596c140f159b63f
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f.orig.tar.gz' openssl_1.1.1f.orig.tar.gz 9792828 SHA512:b00bd9b5ad5298fbceeec6bb19c1ab0c106ca5cfb31178497c58bf7e0e0cf30fcc19c20f84e23af31cc126bf2447d3e4f8461db97bafa7bd78f69561932f000c
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.12.debian.tar.xz' openssl_1.1.1f-1ubuntu2.12.debian.tar.xz 173140 SHA512:a265a6227dfc61d9dc9f3b32b522135df5bc3fa1adaa8aba90b4acba0710f245e435d50ffe5d3ef74dff1cc4ac52bfde9bc9cfd60b5b115e8d5d3abb2a29efec
-```
 
 ### `dpkg` source package: `opus=1.3.1-0ubuntu1`
 
@@ -6507,9 +6497,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris postgresql-12=12.9-0ubuntu0.20.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-12/postgresql-12_12.9-0ubuntu0.20.04.1.dsc' postgresql-12_12.9-0ubuntu0.20.04.1.dsc 3760 SHA512:5a1459865a1bbea0d4db041ee86706ca3904ca2131560228987da95bbba8ab8b3ef52c7275aa26de5a4c47db3fed9d87668e68ab7f1686c4ea99aa0d5d409c59
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-12/postgresql-12_12.9.orig.tar.bz2' postgresql-12_12.9.orig.tar.bz2 20904260 SHA512:11697d8283f5df5a9c74c2406e94d1b6da6df8358ad48f3b773825aab98e8395f9fd4e3fc8b1e6ebad3743c3dadbda8b795d4fe84a447d7913223e136cf2b88f
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-12/postgresql-12_12.9-0ubuntu0.20.04.1.debian.tar.xz' postgresql-12_12.9-0ubuntu0.20.04.1.debian.tar.xz 26256 SHA512:27a0e204900c6cdeb4ba50f32512b2d1591acb460489bec67d1535a7fe775fc981371052a44d3dcf6b0227835b53d801ba6ae091464e3babd10f4ae36f9cd769
+'http://security.ubuntu.com/ubuntu/pool/main/p/postgresql-12/postgresql-12_12.9-0ubuntu0.20.04.1.dsc' postgresql-12_12.9-0ubuntu0.20.04.1.dsc 3760 SHA512:5a1459865a1bbea0d4db041ee86706ca3904ca2131560228987da95bbba8ab8b3ef52c7275aa26de5a4c47db3fed9d87668e68ab7f1686c4ea99aa0d5d409c59
+'http://security.ubuntu.com/ubuntu/pool/main/p/postgresql-12/postgresql-12_12.9.orig.tar.bz2' postgresql-12_12.9.orig.tar.bz2 20904260 SHA512:11697d8283f5df5a9c74c2406e94d1b6da6df8358ad48f3b773825aab98e8395f9fd4e3fc8b1e6ebad3743c3dadbda8b795d4fe84a447d7913223e136cf2b88f
+'http://security.ubuntu.com/ubuntu/pool/main/p/postgresql-12/postgresql-12_12.9-0ubuntu0.20.04.1.debian.tar.xz' postgresql-12_12.9-0ubuntu0.20.04.1.debian.tar.xz 26256 SHA512:27a0e204900c6cdeb4ba50f32512b2d1591acb460489bec67d1535a7fe775fc981371052a44d3dcf6b0227835b53d801ba6ae091464e3babd10f4ae36f9cd769
 ```
 
 ### `dpkg` source package: `procps=2:3.3.16-1ubuntu2.3`
@@ -7498,15 +7488,9 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.31.1-4ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1-4ubuntu0.2.dsc' sqlite3_3.31.1-4ubuntu0.2.dsc 2519 SHA512:d7adfe86e7996d2a45238bc3b782de6894a585bba1498b3747aacb15313160354bc072ab2e257a2a034ce44921bd07329b8a9172290428f753274b6d7b00326e
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1.orig-www.tar.xz' sqlite3_3.31.1.orig-www.tar.xz 5764424 SHA512:a47adacd46c673cfd674cb64fb54b054e69560aed8c8c429773f0eccdcdbce4be538397506eca8e2d169f4b46d0d47442b273e12d82f8c87e1aadf3ade458db6
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1.orig.tar.xz' sqlite3_3.31.1.orig.tar.xz 7108036 SHA512:67e1050efe2988fa3d0d7e4a87e147a8114c6ff9b6ca5307a068befb38e861930eaee0135048ff1abb1e6323b507cbc68a0aac3a8fe5f095d6fcea1547a7efaf
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1-4ubuntu0.2.debian.tar.xz' sqlite3_3.31.1-4ubuntu0.2.debian.tar.xz 33492 SHA512:87cc51bce108d6306d815683a1825b43a6e7a7d8dc2bade8ce34d3850b8a4437034b1383f5e60b8d9c4569e8ab5bb3eb28febda7745f4a9db01b5e1b0b11d5ae
-```
 
 ### `dpkg` source package: `sratom=0.6.4-1`
 
