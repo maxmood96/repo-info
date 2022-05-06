@@ -2190,20 +2190,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.5.11+dfsg-1
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.5.11%2bdfsg-1.dsc' openldap_2.5.11+dfsg-1.dsc 3179 SHA256:19759b4b8305a8afc784e5669ce4c6eb960827b2d479ae5879ad7afd47b31dc5
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.5.11%2bdfsg.orig.tar.gz' openldap_2.5.11+dfsg.orig.tar.gz 5609424 SHA256:a159eece6577fd97aaa894b72e08f94d6d404155d05bf4653602418a88b20904
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.5.11%2bdfsg-1.debian.tar.xz' openldap_2.5.11+dfsg-1.debian.tar.xz 157864 SHA256:6e430b7ce7007bd83d79f2dafe38fcf85f43b1c30c3bcbc86e24ad0f4641e66f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openldap/2.5.11+dfsg-1/
 
-- https://sources.debian.net/src/openldap/2.5.11+dfsg-1/ (for browsing the source)
-- https://sources.debian.net/src/openldap/2.5.11+dfsg-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openldap/2.5.11+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssh=1:9.0p1-1`
 

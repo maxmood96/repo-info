@@ -967,20 +967,13 @@ Licenses: (parsed from: `/usr/share/doc/libelf1/copyright`)
 - `GPL-3`
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris elfutils=0.186-1
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.186-1.dsc' elfutils_0.186-1.dsc 3218 SHA256:4c0ca6bcb28afcb9e699b1407c238ac2c79455048beaa7728c8ad36ffb8074e1
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.186.orig.tar.bz2' elfutils_0.186.orig.tar.bz2 9230491 SHA256:7f6fb9149b1673d38d9178a0d3e0fb8a1ec4f53a9f4c2ff89469609879641177
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.186-1.debian.tar.xz' elfutils_0.186-1.debian.tar.xz 37876 SHA256:57e5af03ac34314ffd81393a8b7b148795655d767bfe488ecc8a6a1ce3876270
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/elfutils/0.186-1/
 
-- https://sources.debian.net/src/elfutils/0.186-1/ (for browsing the source)
-- https://sources.debian.net/src/elfutils/0.186-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/elfutils/0.186-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `expat=2.4.8-1`
 
@@ -3253,20 +3246,13 @@ Licenses: (parsed from: `/usr/share/doc/libltdl-dev/copyright`, `/usr/share/doc/
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libtool=2.4.7-3
-'http://deb.debian.org/debian/pool/main/libt/libtool/libtool_2.4.7-3.dsc' libtool_2.4.7-3.dsc 2257 SHA256:47a8a7723638c142770206388011bb8ba1f5e8141326220c613161775667109b
-'http://deb.debian.org/debian/pool/main/libt/libtool/libtool_2.4.7.orig.tar.xz' libtool_2.4.7.orig.tar.xz 1026028 SHA256:dd637e270439b208907ceead3f163470ed2ce5723ef97ffbda6463c64b57128a
-'http://deb.debian.org/debian/pool/main/libt/libtool/libtool_2.4.7-3.debian.tar.xz' libtool_2.4.7-3.debian.tar.xz 40084 SHA256:d123e4a1eedc3ea1b5af570528d9296b98ea7a6d76acca18774630e572acdb28
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libtool/2.4.7-3/
 
-- https://sources.debian.net/src/libtool/2.4.7-3/ (for browsing the source)
-- https://sources.debian.net/src/libtool/2.4.7-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libtool/2.4.7-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libunistring=1.0-1`
 
@@ -3539,20 +3525,13 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`, `/usr/share/doc/libx
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.13+dfsg-1
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg-1.dsc' libxml2_2.9.13+dfsg-1.dsc 2915 SHA256:69856be4a01059f9d90caa6ce113144c26c5e7f147d2c2f5b99cb1815a943dc2
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg.orig.tar.xz' libxml2_2.9.13+dfsg.orig.tar.xz 2351356 SHA256:13cf2e55e603c34143486f4082cbf202859ac1eec5130b8d8e5e3c06a9902d8a
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg-1.debian.tar.xz' libxml2_2.9.13+dfsg-1.debian.tar.xz 28612 SHA256:002978945be94a15fb6ad5634481f6007cf35ae5e41cde7d98b8269f96a2ca48
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libxml2/2.9.13+dfsg-1/
 
-- https://sources.debian.net/src/libxml2/2.9.13+dfsg-1/ (for browsing the source)
-- https://sources.debian.net/src/libxml2/2.9.13+dfsg-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxml2/2.9.13+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxrender=1:0.9.10-1`
 
@@ -4314,20 +4293,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.5.11+dfsg-1
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.5.11%2bdfsg-1.dsc' openldap_2.5.11+dfsg-1.dsc 3179 SHA256:19759b4b8305a8afc784e5669ce4c6eb960827b2d479ae5879ad7afd47b31dc5
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.5.11%2bdfsg.orig.tar.gz' openldap_2.5.11+dfsg.orig.tar.gz 5609424 SHA256:a159eece6577fd97aaa894b72e08f94d6d404155d05bf4653602418a88b20904
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.5.11%2bdfsg-1.debian.tar.xz' openldap_2.5.11+dfsg-1.debian.tar.xz 157864 SHA256:6e430b7ce7007bd83d79f2dafe38fcf85f43b1c30c3bcbc86e24ad0f4641e66f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openldap/2.5.11+dfsg-1/
 
-- https://sources.debian.net/src/openldap/2.5.11+dfsg-1/ (for browsing the source)
-- https://sources.debian.net/src/openldap/2.5.11+dfsg-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openldap/2.5.11+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssh=1:9.0p1-1`
 
@@ -4480,20 +4452,13 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 - `TCL`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pango1.0=1.50.6+ds-2
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.50.6%2bds-2.dsc' pango1.0_1.50.6+ds-2.dsc 3771 SHA256:df3cf5a96e1dea302897bf89d5bc34af9f0ccb96969493ed2bfc752c8bd44481
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.50.6%2bds.orig.tar.xz' pango1.0_1.50.6+ds.orig.tar.xz 2673480 SHA256:70f0323d6270ee12e8ae14a2959b7227088e3146801d09309558bebb1f2f9df7
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.50.6%2bds-2.debian.tar.xz' pango1.0_1.50.6+ds-2.debian.tar.xz 50280 SHA256:a469aac0ca9f30a41580975218fd81c318f0b2816bc1223ae28d0f9e7fff4f54
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pango1.0/1.50.6+ds-2/
 
-- https://sources.debian.net/src/pango1.0/1.50.6+ds-2/ (for browsing the source)
-- https://sources.debian.net/src/pango1.0/1.50.6+ds-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pango1.0/1.50.6+ds-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `patch=2.7.6-7`
 
