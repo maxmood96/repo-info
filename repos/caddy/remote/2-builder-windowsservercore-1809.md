@@ -1,7 +1,7 @@
 ## `caddy:2-builder-windowsservercore-1809`
 
 ```console
-$ docker pull caddy@sha256:b9480bf84ce2dace3248013b5c66c97e54e689c11831f8ab0c4d5f1849780caf
+$ docker pull caddy@sha256:297259d2e0426c87b6aa996a3da76199e9bd9af3b33e4ead7c80bba1609fa814
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull caddy@sha256:b9480bf84ce2dace3248013b5c66c97e54e689c11831f8ab0c4d5
 ### `caddy:2-builder-windowsservercore-1809` - windows version 10.0.17763.2803; amd64
 
 ```console
-$ docker pull caddy@sha256:5e1112c2b251cd713257f116402a8b08c70b02536221f1c00e35ede48df2712f
+$ docker pull caddy@sha256:b91a2ac78bc0f63fe0175ba7ac16de3f3d856b7fa106d17ae7b270474d07b37d
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 GB (2888993144 bytes)**  
+-	Total Size: **2.9 GB (2888992378 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a554cab996e7da76ef02819ef330a4fb26f3f9c493a7491141f84a9a33cfdce8`
+-	Image ID: `sha256:1059e347ee3241cd3b6191ed2329d2290939e4729a013c8a7981a70bcee3120e`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -53,13 +53,13 @@ WORKDIR C:\go
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
 # Mon, 25 Apr 2022 21:18:48 GMT
 ENV XCADDY_VERSION=v0.3.0
-# Mon, 25 Apr 2022 21:18:49 GMT
-ENV CADDY_VERSION=v2.5.0
-# Mon, 25 Apr 2022 21:18:50 GMT
+# Fri, 06 May 2022 19:21:06 GMT
+ENV CADDY_VERSION=v2.5.1
+# Fri, 06 May 2022 19:21:07 GMT
 ENV XCADDY_SKIP_CLEANUP=1
-# Mon, 25 Apr 2022 21:19:57 GMT
+# Fri, 06 May 2022 19:22:15 GMT
 RUN [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;     Invoke-WebRequest         -Uri "https://github.com/caddyserver/xcaddy/releases/download/v0.3.0/xcaddy_0.3.0_windows_amd64.zip"         -OutFile "/xcaddy.zip";     if (!(Get-FileHash -Path /xcaddy.zip -Algorithm SHA512).Hash.ToLower().Equals('63d60531a924a0618a15907a276a67745186a1f92077a48aff2fb68b549b7b80a92238f8a8dca6af82e1840dcdac479e32672b7d62f118c77363be6fae5281a6')) { exit 1; };     Expand-Archive -Path "/xcaddy.zip" -DestinationPath "/" -Force;     Remove-Item "/xcaddy.zip" -Force
-# Mon, 25 Apr 2022 21:19:58 GMT
+# Fri, 06 May 2022 19:22:16 GMT
 WORKDIR C:\
 ```
 
@@ -122,19 +122,19 @@ WORKDIR C:\
 		Last Modified: Mon, 25 Apr 2022 21:22:30 GMT  
 		Size: 1.4 KB (1419 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0141d6a6f4de9ad79b32cd3b282f72556c753906066f6c959c90b9c98ed469f3`  
-		Last Modified: Mon, 25 Apr 2022 21:22:30 GMT  
-		Size: 1.4 KB (1418 bytes)  
+	-	`sha256:2367bfca39261c4b3d391856c7da8d005d9d7d2c9ace277f1fd76f99473b4e43`  
+		Last Modified: Fri, 06 May 2022 19:24:35 GMT  
+		Size: 1.4 KB (1415 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:151094a4fbe124963e13c2d1fb1c5868cfbaa169c003276af989cacbfe5d34b8`  
-		Last Modified: Mon, 25 Apr 2022 21:22:29 GMT  
-		Size: 1.4 KB (1416 bytes)  
+	-	`sha256:531f07286dd14777c96ea7623415ac55a2b48d436878dac0dbd3db0f9538fb9d`  
+		Last Modified: Fri, 06 May 2022 19:24:35 GMT  
+		Size: 1.4 KB (1379 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:765cbaf262dc38339a50daa75e2a3bfdc536965075ef0683019b9c561b043cec`  
-		Last Modified: Mon, 25 Apr 2022 21:22:30 GMT  
-		Size: 1.7 MB (1694161 bytes)  
+	-	`sha256:025fcfa342193f7e1b3edf3a9b9c13f8ec4726b42540efc5b6e1241345a0a4e7`  
+		Last Modified: Fri, 06 May 2022 19:24:36 GMT  
+		Size: 1.7 MB (1693452 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2df9d46dbf2556d53c3e38d0059f2c965b2ec2ec1362b393b4b1f1f9faeeec55`  
-		Last Modified: Mon, 25 Apr 2022 21:22:30 GMT  
-		Size: 1.4 KB (1396 bytes)  
+	-	`sha256:3d5e330f5d77004ba83ca4ffe781aa7d69c2a4851e88660642a70f294afec100`  
+		Last Modified: Fri, 06 May 2022 19:24:35 GMT  
+		Size: 1.4 KB (1379 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
