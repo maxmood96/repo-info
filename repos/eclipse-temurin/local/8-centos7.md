@@ -1,10 +1,10 @@
-# `eclipse-temurin:8u322-b06-jdk-centos7`
+# `eclipse-temurin:8u332-b09-jdk-centos7`
 
 ## Docker Metadata
 
-- Image ID: `sha256:30e59aee57c04216fd3e1b4fdaa1d602f574b1bed76bac24e0ad34ebd2a8f1dd`
-- Created: `2022-02-01T22:21:21.880164836Z`
-- Virtual Size: ~ 446.11 Mb  
+- Image ID: `sha256:31c8d12b6dda91996cd592ecfcf648651987b0e3308fb180aef12e3e30def9bc`
+- Created: `2022-05-05T18:27:32.198009092Z`
+- Virtual Size: ~ 445.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -13,7 +13,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk8u322-b06`
+  - `JAVA_VERSION=jdk8u332-b09`
   - `JAVA_HOME=/opt/java/openjdk`
 - Labels:
   - `org.label-schema.build-date=20201113`
@@ -691,8 +691,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url krb5-libs-1.15.1-50.el7
-http://vault.centos.org/centos/7/os/Source/SPackages/krb5-1.15.1-50.el7.src.rpm
 http://vault.centos.org/centos/7/updates/Source/SPackages/krb5-1.15.1-50.el7.src.rpm
+http://vault.centos.org/centos/7/os/Source/SPackages/krb5-1.15.1-50.el7.src.rpm
 ```
 
 ### `rpm` package: `libacl-2.2.51-15.el7.x86_64`
