@@ -1,7 +1,7 @@
 ## `cirros:latest`
 
 ```console
-$ docker pull cirros@sha256:1e695eb2772a2b511ccab70091962d1efb9501fdca804eb1d52d21c0933e7f47
+$ docker pull cirros@sha256:7b3e8db2c7501cdbf4b670335bbea911e30a21d502b4b0c179f6efc7912281b2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -91,24 +91,24 @@ CMD ["/sbin/init"]
 ### `cirros:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull cirros@sha256:b0ec901435d6335a85b3e006ab78249678c4fc07d8b88d40b861b874a6c57d84
+$ docker pull cirros@sha256:ab30156e31b5921bc17060725729a67058a27cdf3d65f9432a1d5d9c843a8e26
 ```
 
--	Docker Version: 19.03.12
+-	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 MB (5381564 bytes)**  
+-	Total Size: **5.4 MB (5381559 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:386fdcd60643778716b35204149f94e4bf2e0de7e26d06ff7b44d88d0a8b9f0a`
+-	Image ID: `sha256:a296a5a9b16435a4be2f250deda463c75cf9a250fa1a2c4d4a235a69c91a79b4`
 -	Default Command: `["\/sbin\/init"]`
 
 ```dockerfile
-# Mon, 08 Mar 2021 21:43:00 GMT
+# Sun, 08 May 2022 19:54:27 GMT
 ADD file:7f294f3d60585f86a27be204f949a663c79c9187a153fe00b725e8fa062cf493 in / 
-# Mon, 08 Mar 2021 21:43:03 GMT
+# Sun, 08 May 2022 19:54:28 GMT
 RUN rm /etc/rc3.d/S40-network
-# Mon, 08 Mar 2021 21:43:05 GMT
+# Sun, 08 May 2022 19:54:29 GMT
 RUN sed -i '/is_lxc && lxc_netdown/d' /etc/init.d/rc.sysinit
-# Mon, 08 Mar 2021 21:43:06 GMT
+# Sun, 08 May 2022 19:54:30 GMT
 CMD ["/sbin/init"]
 ```
 
@@ -117,13 +117,13 @@ CMD ["/sbin/init"]
 		Last Modified: Mon, 08 Mar 2021 21:43:20 GMT  
 		Size: 5.4 MB (5380157 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e68e3274d10a80782e64941f22cfe57491bed55fc8bd3fd3f305f3d8ad8df009`  
-		Last Modified: Mon, 08 Mar 2021 21:43:19 GMT  
-		Size: 157.0 B  
+	-	`sha256:7ba64309d602fc578d19f836f771c1f346a9823aa59b2d615e8d64618333b0fa`  
+		Last Modified: Sun, 08 May 2022 19:55:41 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b8e38f2754882d4495b5338215d4e23127ee0041eef571cdcfc2b4ff53c16a24`  
-		Last Modified: Mon, 08 Mar 2021 21:43:19 GMT  
-		Size: 1.2 KB (1250 bytes)  
+	-	`sha256:d98d987dcf6805875debbc870ea35c21d3c980949d403f0f31f57f965437259e`  
+		Last Modified: Sun, 08 May 2022 19:55:41 GMT  
+		Size: 1.2 KB (1248 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `cirros:latest` - linux; 386
