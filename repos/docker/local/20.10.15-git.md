@@ -1,17 +1,17 @@
-# `docker:20.10.14-git`
+# `docker:20.10.15-git`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f668d0ecb09af29b085f8e3c1311c8f0ffa2262544158e522a0ebcc3a6756a5b`
-- Created: `2022-04-05T11:03:24.861641393Z`
-- Virtual Size: ~ 231.21 Mb  
+- Image ID: `sha256:6fab5c0486985bc8353e1d7a63df75a1e7885b6b1f9885f835cbb1bdc8653b90`
+- Created: `2022-05-06T01:19:50.696518295Z`
+- Virtual Size: ~ 232.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=20.10.14`
+  - `DOCKER_VERSION=20.10.15`
   - `DOCKER_TLS_CERTDIR=/certs`
 
 ## `apk` (`.apk`-based packages)
@@ -155,16 +155,16 @@ MIT
 ### `apk` package: `git`
 
 ```console
-git-2.34.1-r0 description:
+git-2.34.2-r0 description:
 Distributed version control system
 
-git-2.34.1-r0 webpage:
+git-2.34.2-r0 webpage:
 https://www.git-scm.com/
 
-git-2.34.1-r0 installed size:
+git-2.34.2-r0 installed size:
 10 MiB
 
-git-2.34.1-r0 license:
+git-2.34.2-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -223,16 +223,16 @@ OpenSSL
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.80.0-r0 description:
+libcurl-7.80.0-r1 description:
 The multiprotocol file transfer library
 
-libcurl-7.80.0-r0 webpage:
+libcurl-7.80.0-r1 webpage:
 https://curl.se/
 
-libcurl-7.80.0-r0 installed size:
+libcurl-7.80.0-r1 installed size:
 504 KiB
 
-libcurl-7.80.0-r0 license:
+libcurl-7.80.0-r1 license:
 MIT
 
 ```
