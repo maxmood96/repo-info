@@ -361,21 +361,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.82.0-2
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.82.0-2.dsc' curl_7.82.0-2.dsc 2959 SHA256:24a96282104be5121b28374b16919ff0ad4dd2d05e471d322a1ad9cba43c6b60
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.82.0.orig.tar.gz' curl_7.82.0.orig.tar.gz 4106857 SHA256:910cc5fe279dc36e2cca534172c94364cf3fcf7d6494ba56e6c61a390881ddce
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.82.0.orig.tar.gz.asc' curl_7.82.0.orig.tar.gz.asc 488 SHA256:c1799877d4d45e733f2c88373d5b6399f169133551e8968f131bb8447e673004
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.82.0-2.debian.tar.xz' curl_7.82.0-2.debian.tar.xz 35712 SHA256:5c2a64a00bc251fb0755cb459fd2772ce0d81b39ccc21e4ed398a31331592ad2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/7.82.0-2/
 
-- https://sources.debian.net/src/curl/7.82.0-2/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.82.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.82.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg-3`
 
@@ -2077,21 +2069,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.38.2-1
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.38.2-1.dsc' sqlite3_3.38.2-1.dsc 2487 SHA256:8368eadb7b63373c1b3915f800675b758b67b12867ee685e7dce5ec3f859639c
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.38.2.orig-www.tar.xz' sqlite3_3.38.2.orig-www.tar.xz 5732088 SHA256:0ed623feebd1819eafa3bb05d8ab8063757d92a64b8e3290d9f671880af3ab61
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.38.2.orig.tar.xz' sqlite3_3.38.2.orig.tar.xz 7669272 SHA256:9f40700d9b0e80bed3439da313216fa277c13ea9cf263f3b6ebff328fafcae4c
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.38.2-1.debian.tar.xz' sqlite3_3.38.2-1.debian.tar.xz 28720 SHA256:9900bfab52f2f59b389d764d1d57259612fdae0acf328150b95c1b735fc739c5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sqlite3/3.38.2-1/
 
-- https://sources.debian.net/src/sqlite3/3.38.2-1/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.38.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.38.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=250.4-1`
 

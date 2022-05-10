@@ -818,20 +818,13 @@ Licenses: (parsed from: `/usr/share/doc/debianutils/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debianutils=5.7-0.1
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_5.7-0.1.dsc' debianutils_5.7-0.1.dsc 1542 SHA256:437dd4a5bae8a592ca1b844f98975605497009cd45fdca9325178c382d49bca1
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_5.7.orig.tar.gz' debianutils_5.7.orig.tar.gz 257231 SHA256:27ec9e0e7e44dc8ab611aa576330471bacb07e4491ffecf0d3aa6909c92f9022
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_5.7-0.1.debian.tar.xz' debianutils_5.7-0.1.debian.tar.xz 21564 SHA256:43e959668d0731072613ff910e4c9354164ee7c8df7d805505ca0e2604bea8c4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debianutils/5.7-0.1/
 
-- https://sources.debian.net/src/debianutils/5.7-0.1/ (for browsing the source)
-- https://sources.debian.net/src/debianutils/5.7-0.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debianutils/5.7-0.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `diffutils=1:3.7-5`
 
@@ -961,20 +954,13 @@ Licenses: (parsed from: `/usr/share/doc/libelf1/copyright`)
 - `GPL-3`
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris elfutils=0.186-1
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.186-1.dsc' elfutils_0.186-1.dsc 3218 SHA256:4c0ca6bcb28afcb9e699b1407c238ac2c79455048beaa7728c8ad36ffb8074e1
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.186.orig.tar.bz2' elfutils_0.186.orig.tar.bz2 9230491 SHA256:7f6fb9149b1673d38d9178a0d3e0fb8a1ec4f53a9f4c2ff89469609879641177
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.186-1.debian.tar.xz' elfutils_0.186-1.debian.tar.xz 37876 SHA256:57e5af03ac34314ffd81393a8b7b148795655d767bfe488ecc8a6a1ce3876270
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/elfutils/0.186-1/
 
-- https://sources.debian.net/src/elfutils/0.186-1/ (for browsing the source)
-- https://sources.debian.net/src/elfutils/0.186-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/elfutils/0.186-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `expat=2.4.8-1`
 
@@ -3201,20 +3187,13 @@ Licenses: (parsed from: `/usr/share/doc/libltdl-dev/copyright`, `/usr/share/doc/
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libtool=2.4.7-3
-'http://deb.debian.org/debian/pool/main/libt/libtool/libtool_2.4.7-3.dsc' libtool_2.4.7-3.dsc 2257 SHA256:47a8a7723638c142770206388011bb8ba1f5e8141326220c613161775667109b
-'http://deb.debian.org/debian/pool/main/libt/libtool/libtool_2.4.7.orig.tar.xz' libtool_2.4.7.orig.tar.xz 1026028 SHA256:dd637e270439b208907ceead3f163470ed2ce5723ef97ffbda6463c64b57128a
-'http://deb.debian.org/debian/pool/main/libt/libtool/libtool_2.4.7-3.debian.tar.xz' libtool_2.4.7-3.debian.tar.xz 40084 SHA256:d123e4a1eedc3ea1b5af570528d9296b98ea7a6d76acca18774630e572acdb28
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libtool/2.4.7-3/
 
-- https://sources.debian.net/src/libtool/2.4.7-3/ (for browsing the source)
-- https://sources.debian.net/src/libtool/2.4.7-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libtool/2.4.7-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libunistring=1.0-1`
 
@@ -3487,20 +3466,13 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`, `/usr/share/doc/libx
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.13+dfsg-1
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg-1.dsc' libxml2_2.9.13+dfsg-1.dsc 2915 SHA256:69856be4a01059f9d90caa6ce113144c26c5e7f147d2c2f5b99cb1815a943dc2
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg.orig.tar.xz' libxml2_2.9.13+dfsg.orig.tar.xz 2351356 SHA256:13cf2e55e603c34143486f4082cbf202859ac1eec5130b8d8e5e3c06a9902d8a
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg-1.debian.tar.xz' libxml2_2.9.13+dfsg-1.debian.tar.xz 28612 SHA256:002978945be94a15fb6ad5634481f6007cf35ae5e41cde7d98b8269f96a2ca48
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libxml2/2.9.13+dfsg-1/
 
-- https://sources.debian.net/src/libxml2/2.9.13+dfsg-1/ (for browsing the source)
-- https://sources.debian.net/src/libxml2/2.9.13+dfsg-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxml2/2.9.13+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxrender=1:0.9.10-1`
 
@@ -4321,21 +4293,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=1.1.1n-1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1n-1.dsc' openssl_1.1.1n-1.dsc 2620 SHA256:6e71c3e498c23c730491f9ff8506f85183eb9761a5dd8973fe8ea262bfe612b5
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1n.orig.tar.gz' openssl_1.1.1n.orig.tar.gz 9850712 SHA256:40dceb51a4f6a5275bde0e6bf20ef4b91bfc32ed57c0552e2e8e15463372b17a
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1n.orig.tar.gz.asc' openssl_1.1.1n.orig.tar.gz.asc 488 SHA256:e0e89e9467102880ee6f2ee8c1413933eb1268969afb97b9bec61e2190a62fd0
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1n-1.debian.tar.xz' openssl_1.1.1n-1.debian.tar.xz 85872 SHA256:7e08f8cb1835366898179e0f54a54d3cc1d7185c7d522b472aadc8ad38423026
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssl/1.1.1n-1/
 
-- https://sources.debian.net/src/openssl/1.1.1n-1/ (for browsing the source)
-- https://sources.debian.net/src/openssl/1.1.1n-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/1.1.1n-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.24.0-6`
 

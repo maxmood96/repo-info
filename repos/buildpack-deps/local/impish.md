@@ -2966,9 +2966,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=5.13.0-40.45
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.13.0-40.45.dsc' linux_5.13.0-40.45.dsc 8465 SHA512:ac59358b27dac7c2fccfe25d599a192f1a58d36c7ef7b36e4f5df2cafc5c401f8076d6ef8dd717a1201bbb2edd31bfbf9349162df6f580fea4b7b8fd4f08d1de
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.13.0.orig.tar.gz' linux_5.13.0.orig.tar.gz 189652704 SHA512:e7aff485ac9f5752df4a35fbb7668fd0a60597d3cd63c3bc78933f9fbf509ed83f8d2516c8441e6136157c5efe9a4745f97ba74b3b4353c26c1e44ca0eaa0b87
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.13.0-40.45.diff.gz' linux_5.13.0-40.45.diff.gz 6685349 SHA512:b33a3f3335d71ebb1967321fa0f348eaf588357855b4610f4974aa8e2447a6d9eefe3a2c81b2e35028cbd1af80e43e42bbacf37a4379e6c207aac989ff3536f3
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.13.0-40.45.dsc' linux_5.13.0-40.45.dsc 8465 SHA512:ac59358b27dac7c2fccfe25d599a192f1a58d36c7ef7b36e4f5df2cafc5c401f8076d6ef8dd717a1201bbb2edd31bfbf9349162df6f580fea4b7b8fd4f08d1de
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.13.0.orig.tar.gz' linux_5.13.0.orig.tar.gz 189652704 SHA512:e7aff485ac9f5752df4a35fbb7668fd0a60597d3cd63c3bc78933f9fbf509ed83f8d2516c8441e6136157c5efe9a4745f97ba74b3b4353c26c1e44ca0eaa0b87
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.13.0-40.45.diff.gz' linux_5.13.0-40.45.diff.gz 6685349 SHA512:b33a3f3335d71ebb1967321fa0f348eaf588357855b4610f4974aa8e2447a6d9eefe3a2c81b2e35028cbd1af80e43e42bbacf37a4379e6c207aac989ff3536f3
 ```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu3`
@@ -4151,14 +4151,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=248.3-1ubuntu8.5
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_248.3-1ubuntu8.5.dsc' systemd_248.3-1ubuntu8.5.dsc 5374 SHA512:76815d7d467542c88f13c618d6edd821ea00d4cd90ee4be77a89e9bf02ef1befbaa7642af2b6d8965984040dfb29ef0d5bec67dec49e8659a417264b979f6f95
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_248.3.orig.tar.gz' systemd_248.3.orig.tar.gz 10320940 SHA512:8e7ff0d5e63cc933e4dc23f7e0bef9707fde90396605eb8822d34de90d7abe8fd37e5739e33b657868218aa7281147cc944c096c007324c3e6fb54d833a83485
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_248.3-1ubuntu8.5.debian.tar.xz' systemd_248.3-1ubuntu8.5.debian.tar.xz 221820 SHA512:0ea9e098af62a309590152ad5d6763201a3c75b6e9842f9bdf921e413336dd66d94c363b345c8dfc4edcbd29b7b6f13cbca5b1e89aa1567740a07a919ea4616f
-```
 
 ### `dpkg` source package: `sysvinit=2.96-7ubuntu1`
 
