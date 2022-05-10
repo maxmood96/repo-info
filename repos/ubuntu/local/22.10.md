@@ -1213,14 +1213,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pcre2=10.39-3build1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.39-3build1.dsc' pcre2_10.39-3build1.dsc 2278 SHA512:a05d17265743dfa2166694be4c6c5e26830bc90e1b6b0bfa84814abedae1b5b53ad7cac663a09cfffd7bdfe23de06398fcf02cab205caa7d86f0073bc4e1f783
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.39.orig.tar.gz' pcre2_10.39.orig.tar.gz 2309964 SHA512:fe17ea0191a91d4e4fe88a44a07883db594941376a6e38556e03ff3b594820596fd3e43be2d73b700ca68cd0c44e38c33cc891a57b8ed65e34cd832196bc09b2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.39-3build1.diff.gz' pcre2_10.39-3build1.diff.gz 7214 SHA512:2d51ad9e53863b885f32154e91d086b08ba554b177521e2318d5072f00aa253a684f61a0757b448528b9e7dc802c3b77c287547fd785dd3456aeb176774d3312
-```
 
 ### `dpkg` source package: `pcre3=2:8.39-13build5`
 
