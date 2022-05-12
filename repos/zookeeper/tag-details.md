@@ -15,7 +15,7 @@
 ## `zookeeper:3.5`
 
 ```console
-$ docker pull zookeeper@sha256:699f1908b0b6e59c301f8bc33ec6e7c903b07a757de12ab8906fe688bfc38368
+$ docker pull zookeeper@sha256:3e1ffba1d72df7bb1c837c1be2f81b5c718bef7216d3f2059d5e60e7a9c79ec9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -124,105 +124,105 @@ CMD ["zkServer.sh" "start-foreground"]
 ### `zookeeper:3.5` - linux; arm64 variant v8
 
 ```console
-$ docker pull zookeeper@sha256:ff28418e2f0af45434764adea09fda14c0b17a89881622373042862928b28655
+$ docker pull zookeeper@sha256:eb94060e6fbd948d38e1a2adc22e274da868bc2c7c4f32213877fc9df0f952b3
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **93.1 MB (93073762 bytes)**  
+-	Total Size: **93.1 MB (93071484 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2c5c403ec60f4a5b1078b4d2754ba5617318865145d5e170a50e5f6812c3763c`
+-	Image ID: `sha256:7f704667ed481d2ac7678d9445520e59da3be1e79d9bbcd37d1fd0bb3ecb7882`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
 ```dockerfile
-# Wed, 20 Apr 2022 04:29:10 GMT
-ADD file:84523b5820128293b713ef35d8db618921162250da1e4c72bf9923f34ad7d87d in / 
-# Wed, 20 Apr 2022 04:29:11 GMT
+# Wed, 11 May 2022 00:46:59 GMT
+ADD file:158a0e401328bd7c0d49b9e8539186098967218f1b1a8c811f4398d29b74397f in / 
+# Wed, 11 May 2022 00:47:00 GMT
 CMD ["bash"]
-# Wed, 20 Apr 2022 10:24:38 GMT
+# Wed, 11 May 2022 14:15:56 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 20 Apr 2022 10:31:22 GMT
+# Wed, 11 May 2022 14:20:16 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Wed, 20 Apr 2022 10:31:23 GMT
+# Wed, 11 May 2022 14:20:17 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
-# Wed, 20 Apr 2022 10:31:24 GMT
+# Wed, 11 May 2022 14:20:18 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 20 Apr 2022 10:31:25 GMT
+# Wed, 11 May 2022 14:20:19 GMT
 ENV LANG=C.UTF-8
-# Mon, 25 Apr 2022 18:45:51 GMT
+# Wed, 11 May 2022 14:20:20 GMT
 ENV JAVA_VERSION=11.0.15
-# Mon, 25 Apr 2022 18:47:31 GMT
+# Wed, 11 May 2022 14:22:40 GMT
 RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_x64_linux_11.0.15_10.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_aarch64_linux_11.0.15_10.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Tue, 26 Apr 2022 00:29:10 GMT
+# Thu, 12 May 2022 04:27:04 GMT
 ENV ZOO_CONF_DIR=/conf ZOO_DATA_DIR=/data ZOO_DATA_LOG_DIR=/datalog ZOO_LOG_DIR=/logs ZOO_TICK_TIME=2000 ZOO_INIT_LIMIT=5 ZOO_SYNC_LIMIT=2 ZOO_AUTOPURGE_PURGEINTERVAL=0 ZOO_AUTOPURGE_SNAPRETAINCOUNT=3 ZOO_MAX_CLIENT_CNXNS=60 ZOO_STANDALONE_ENABLED=true ZOO_ADMINSERVER_ENABLED=true
-# Tue, 26 Apr 2022 00:29:11 GMT
+# Thu, 12 May 2022 04:27:04 GMT
 RUN set -eux;     groupadd -r zookeeper --gid=1000;     useradd -r -g zookeeper --uid=1000 zookeeper;     mkdir -p "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR";     chown zookeeper:zookeeper "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR"
-# Tue, 26 Apr 2022 00:29:17 GMT
+# Thu, 12 May 2022 04:27:10 GMT
 RUN set -eux;     apt-get -qq update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         dirmngr         gosu         gnupg         netcat         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true
-# Tue, 26 Apr 2022 00:29:18 GMT
+# Thu, 12 May 2022 04:27:11 GMT
 ARG GPG_KEY=3D296268A36FACA1B7EAF110792D43153B5B5147
-# Tue, 26 Apr 2022 00:29:19 GMT
+# Thu, 12 May 2022 04:27:12 GMT
 ARG SHORT_DISTRO_NAME=zookeeper-3.5.9
-# Tue, 26 Apr 2022 00:29:20 GMT
+# Thu, 12 May 2022 04:27:13 GMT
 ARG DISTRO_NAME=apache-zookeeper-3.5.9-bin
-# Tue, 26 Apr 2022 00:29:28 GMT
+# Thu, 12 May 2022 04:27:22 GMT
 # ARGS: DISTRO_NAME=apache-zookeeper-3.5.9-bin GPG_KEY=3D296268A36FACA1B7EAF110792D43153B5B5147 SHORT_DISTRO_NAME=zookeeper-3.5.9
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver hkps://keyserver.pgp.com --recv-key "$GPG_KEY" ||     gpg --keyserver hkps://keyserver.ubuntu.com --recv-keys "$GPG_KEY" ||     gpg --keyserver hkps://pgp.mit.edu --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -zxf "$DISTRO_NAME.tar.gz";     mv "$DISTRO_NAME/conf/"* "$ZOO_CONF_DIR";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R zookeeper:zookeeper "/$DISTRO_NAME"
-# Tue, 26 Apr 2022 00:29:28 GMT
+# Thu, 12 May 2022 04:27:22 GMT
 WORKDIR /apache-zookeeper-3.5.9-bin
-# Tue, 26 Apr 2022 00:29:29 GMT
+# Thu, 12 May 2022 04:27:23 GMT
 VOLUME [/data /datalog /logs]
-# Tue, 26 Apr 2022 00:29:30 GMT
+# Thu, 12 May 2022 04:27:24 GMT
 EXPOSE 2181 2888 3888 8080
-# Tue, 26 Apr 2022 00:29:31 GMT
+# Thu, 12 May 2022 04:27:25 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-zookeeper-3.5.9-bin/bin ZOOCFGDIR=/conf
-# Tue, 26 Apr 2022 00:29:33 GMT
+# Thu, 12 May 2022 04:27:27 GMT
 COPY file:97ce87618885d3ddb3bea4e29e2422218111befae5783e3f1adaccd2191a05c6 in / 
-# Tue, 26 Apr 2022 00:29:33 GMT
+# Thu, 12 May 2022 04:27:27 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 26 Apr 2022 00:29:34 GMT
+# Thu, 12 May 2022 04:27:28 GMT
 CMD ["zkServer.sh" "start-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:6d4a449ac69c579312443ded09f57c4894e7adb42f7406abd364f95982fafc59`  
-		Last Modified: Wed, 20 Apr 2022 04:35:49 GMT  
-		Size: 30.1 MB (30065801 bytes)  
+	-	`sha256:dfdd5ffb257742b891ccad9400a77dad2a6260b2451e0f5e48a9ade1d17a87ec`  
+		Last Modified: Wed, 11 May 2022 00:53:46 GMT  
+		Size: 30.1 MB (30065693 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a59f13dc084e185af417a4c6d1be2534adaff0c4f35ac2166a539260f4e8e945`  
-		Last Modified: Wed, 20 Apr 2022 10:46:08 GMT  
-		Size: 1.4 MB (1361221 bytes)  
+	-	`sha256:eb5ad7be01b68fe78dada799da391fe706a6e51b7a0ec158e40069f53de08619`  
+		Last Modified: Wed, 11 May 2022 14:33:48 GMT  
+		Size: 1.4 MB (1361175 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fcdf4ab95342437da8931d526aab4bab60e3e04fce8d75594e5915cef331c64`  
-		Last Modified: Wed, 20 Apr 2022 10:55:27 GMT  
-		Size: 210.0 B  
+	-	`sha256:d8acb5edbf912b614d8422de4c52b9ce05abfd1b213fa1f211981f0ccf726f18`  
+		Last Modified: Wed, 11 May 2022 14:41:15 GMT  
+		Size: 212.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fba0b44002647d25d1e34ead55c2f851eb1197e3cd2ee484347537b2ddb489dc`  
-		Last Modified: Mon, 25 Apr 2022 19:08:09 GMT  
-		Size: 46.6 MB (46558407 bytes)  
+	-	`sha256:41aadabd6a0e6ee394320c2556bde036004cb45c3964dd1b8c52f66d5ec6243f`  
+		Last Modified: Wed, 11 May 2022 14:44:09 GMT  
+		Size: 46.6 MB (46556265 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8554b5ba14baa63f7b93df0ba08f3d5c13dceacab38009ae4d2d39219dd48182`  
-		Last Modified: Tue, 26 Apr 2022 00:31:16 GMT  
-		Size: 1.7 KB (1690 bytes)  
+	-	`sha256:35acd524fbe6243a9196723bb9764e6c8461a19777e2d7708e3b8ba5525de51b`  
+		Last Modified: Thu, 12 May 2022 04:29:12 GMT  
+		Size: 1.7 KB (1687 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8773a794b9cd91337c6f7b5341cdc84e594920a2e46858d24aac44dda0e08d3d`  
-		Last Modified: Tue, 26 Apr 2022 00:31:17 GMT  
-		Size: 5.5 MB (5504100 bytes)  
+	-	`sha256:12ab287390327e4834ff9fdfc9f1921b72400fef4fd37204e227f2e109398edb`  
+		Last Modified: Thu, 12 May 2022 04:29:13 GMT  
+		Size: 5.5 MB (5504103 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc76a4f824be77e8e5e2a07f02c514b2aee0201eb9593c4cdb6bc7a894d32cc0`  
-		Last Modified: Tue, 26 Apr 2022 00:31:17 GMT  
-		Size: 9.6 MB (9581558 bytes)  
+	-	`sha256:1f5236a186fb10512cdd86986f066e1f3b60643a496b5a07658c403d0908566e`  
+		Last Modified: Thu, 12 May 2022 04:29:13 GMT  
+		Size: 9.6 MB (9581575 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8bf3da3a126fbeb991601e7f739a45e3d6c462b9f022f989d61333ec371dce0`  
-		Last Modified: Tue, 26 Apr 2022 00:31:16 GMT  
-		Size: 775.0 B  
+	-	`sha256:d53179695c0afd40d09bf540b0843ae9223c82ae6377d35ca0cef4a2bdfb9790`  
+		Last Modified: Thu, 12 May 2022 04:29:11 GMT  
+		Size: 774.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `zookeeper:3.5.9`
 
 ```console
-$ docker pull zookeeper@sha256:699f1908b0b6e59c301f8bc33ec6e7c903b07a757de12ab8906fe688bfc38368
+$ docker pull zookeeper@sha256:3e1ffba1d72df7bb1c837c1be2f81b5c718bef7216d3f2059d5e60e7a9c79ec9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -331,105 +331,105 @@ CMD ["zkServer.sh" "start-foreground"]
 ### `zookeeper:3.5.9` - linux; arm64 variant v8
 
 ```console
-$ docker pull zookeeper@sha256:ff28418e2f0af45434764adea09fda14c0b17a89881622373042862928b28655
+$ docker pull zookeeper@sha256:eb94060e6fbd948d38e1a2adc22e274da868bc2c7c4f32213877fc9df0f952b3
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **93.1 MB (93073762 bytes)**  
+-	Total Size: **93.1 MB (93071484 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2c5c403ec60f4a5b1078b4d2754ba5617318865145d5e170a50e5f6812c3763c`
+-	Image ID: `sha256:7f704667ed481d2ac7678d9445520e59da3be1e79d9bbcd37d1fd0bb3ecb7882`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
 ```dockerfile
-# Wed, 20 Apr 2022 04:29:10 GMT
-ADD file:84523b5820128293b713ef35d8db618921162250da1e4c72bf9923f34ad7d87d in / 
-# Wed, 20 Apr 2022 04:29:11 GMT
+# Wed, 11 May 2022 00:46:59 GMT
+ADD file:158a0e401328bd7c0d49b9e8539186098967218f1b1a8c811f4398d29b74397f in / 
+# Wed, 11 May 2022 00:47:00 GMT
 CMD ["bash"]
-# Wed, 20 Apr 2022 10:24:38 GMT
+# Wed, 11 May 2022 14:15:56 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 20 Apr 2022 10:31:22 GMT
+# Wed, 11 May 2022 14:20:16 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Wed, 20 Apr 2022 10:31:23 GMT
+# Wed, 11 May 2022 14:20:17 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
-# Wed, 20 Apr 2022 10:31:24 GMT
+# Wed, 11 May 2022 14:20:18 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 20 Apr 2022 10:31:25 GMT
+# Wed, 11 May 2022 14:20:19 GMT
 ENV LANG=C.UTF-8
-# Mon, 25 Apr 2022 18:45:51 GMT
+# Wed, 11 May 2022 14:20:20 GMT
 ENV JAVA_VERSION=11.0.15
-# Mon, 25 Apr 2022 18:47:31 GMT
+# Wed, 11 May 2022 14:22:40 GMT
 RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_x64_linux_11.0.15_10.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_aarch64_linux_11.0.15_10.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Tue, 26 Apr 2022 00:29:10 GMT
+# Thu, 12 May 2022 04:27:04 GMT
 ENV ZOO_CONF_DIR=/conf ZOO_DATA_DIR=/data ZOO_DATA_LOG_DIR=/datalog ZOO_LOG_DIR=/logs ZOO_TICK_TIME=2000 ZOO_INIT_LIMIT=5 ZOO_SYNC_LIMIT=2 ZOO_AUTOPURGE_PURGEINTERVAL=0 ZOO_AUTOPURGE_SNAPRETAINCOUNT=3 ZOO_MAX_CLIENT_CNXNS=60 ZOO_STANDALONE_ENABLED=true ZOO_ADMINSERVER_ENABLED=true
-# Tue, 26 Apr 2022 00:29:11 GMT
+# Thu, 12 May 2022 04:27:04 GMT
 RUN set -eux;     groupadd -r zookeeper --gid=1000;     useradd -r -g zookeeper --uid=1000 zookeeper;     mkdir -p "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR";     chown zookeeper:zookeeper "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR"
-# Tue, 26 Apr 2022 00:29:17 GMT
+# Thu, 12 May 2022 04:27:10 GMT
 RUN set -eux;     apt-get -qq update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         dirmngr         gosu         gnupg         netcat         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true
-# Tue, 26 Apr 2022 00:29:18 GMT
+# Thu, 12 May 2022 04:27:11 GMT
 ARG GPG_KEY=3D296268A36FACA1B7EAF110792D43153B5B5147
-# Tue, 26 Apr 2022 00:29:19 GMT
+# Thu, 12 May 2022 04:27:12 GMT
 ARG SHORT_DISTRO_NAME=zookeeper-3.5.9
-# Tue, 26 Apr 2022 00:29:20 GMT
+# Thu, 12 May 2022 04:27:13 GMT
 ARG DISTRO_NAME=apache-zookeeper-3.5.9-bin
-# Tue, 26 Apr 2022 00:29:28 GMT
+# Thu, 12 May 2022 04:27:22 GMT
 # ARGS: DISTRO_NAME=apache-zookeeper-3.5.9-bin GPG_KEY=3D296268A36FACA1B7EAF110792D43153B5B5147 SHORT_DISTRO_NAME=zookeeper-3.5.9
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver hkps://keyserver.pgp.com --recv-key "$GPG_KEY" ||     gpg --keyserver hkps://keyserver.ubuntu.com --recv-keys "$GPG_KEY" ||     gpg --keyserver hkps://pgp.mit.edu --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -zxf "$DISTRO_NAME.tar.gz";     mv "$DISTRO_NAME/conf/"* "$ZOO_CONF_DIR";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R zookeeper:zookeeper "/$DISTRO_NAME"
-# Tue, 26 Apr 2022 00:29:28 GMT
+# Thu, 12 May 2022 04:27:22 GMT
 WORKDIR /apache-zookeeper-3.5.9-bin
-# Tue, 26 Apr 2022 00:29:29 GMT
+# Thu, 12 May 2022 04:27:23 GMT
 VOLUME [/data /datalog /logs]
-# Tue, 26 Apr 2022 00:29:30 GMT
+# Thu, 12 May 2022 04:27:24 GMT
 EXPOSE 2181 2888 3888 8080
-# Tue, 26 Apr 2022 00:29:31 GMT
+# Thu, 12 May 2022 04:27:25 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-zookeeper-3.5.9-bin/bin ZOOCFGDIR=/conf
-# Tue, 26 Apr 2022 00:29:33 GMT
+# Thu, 12 May 2022 04:27:27 GMT
 COPY file:97ce87618885d3ddb3bea4e29e2422218111befae5783e3f1adaccd2191a05c6 in / 
-# Tue, 26 Apr 2022 00:29:33 GMT
+# Thu, 12 May 2022 04:27:27 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 26 Apr 2022 00:29:34 GMT
+# Thu, 12 May 2022 04:27:28 GMT
 CMD ["zkServer.sh" "start-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:6d4a449ac69c579312443ded09f57c4894e7adb42f7406abd364f95982fafc59`  
-		Last Modified: Wed, 20 Apr 2022 04:35:49 GMT  
-		Size: 30.1 MB (30065801 bytes)  
+	-	`sha256:dfdd5ffb257742b891ccad9400a77dad2a6260b2451e0f5e48a9ade1d17a87ec`  
+		Last Modified: Wed, 11 May 2022 00:53:46 GMT  
+		Size: 30.1 MB (30065693 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a59f13dc084e185af417a4c6d1be2534adaff0c4f35ac2166a539260f4e8e945`  
-		Last Modified: Wed, 20 Apr 2022 10:46:08 GMT  
-		Size: 1.4 MB (1361221 bytes)  
+	-	`sha256:eb5ad7be01b68fe78dada799da391fe706a6e51b7a0ec158e40069f53de08619`  
+		Last Modified: Wed, 11 May 2022 14:33:48 GMT  
+		Size: 1.4 MB (1361175 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fcdf4ab95342437da8931d526aab4bab60e3e04fce8d75594e5915cef331c64`  
-		Last Modified: Wed, 20 Apr 2022 10:55:27 GMT  
-		Size: 210.0 B  
+	-	`sha256:d8acb5edbf912b614d8422de4c52b9ce05abfd1b213fa1f211981f0ccf726f18`  
+		Last Modified: Wed, 11 May 2022 14:41:15 GMT  
+		Size: 212.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fba0b44002647d25d1e34ead55c2f851eb1197e3cd2ee484347537b2ddb489dc`  
-		Last Modified: Mon, 25 Apr 2022 19:08:09 GMT  
-		Size: 46.6 MB (46558407 bytes)  
+	-	`sha256:41aadabd6a0e6ee394320c2556bde036004cb45c3964dd1b8c52f66d5ec6243f`  
+		Last Modified: Wed, 11 May 2022 14:44:09 GMT  
+		Size: 46.6 MB (46556265 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8554b5ba14baa63f7b93df0ba08f3d5c13dceacab38009ae4d2d39219dd48182`  
-		Last Modified: Tue, 26 Apr 2022 00:31:16 GMT  
-		Size: 1.7 KB (1690 bytes)  
+	-	`sha256:35acd524fbe6243a9196723bb9764e6c8461a19777e2d7708e3b8ba5525de51b`  
+		Last Modified: Thu, 12 May 2022 04:29:12 GMT  
+		Size: 1.7 KB (1687 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8773a794b9cd91337c6f7b5341cdc84e594920a2e46858d24aac44dda0e08d3d`  
-		Last Modified: Tue, 26 Apr 2022 00:31:17 GMT  
-		Size: 5.5 MB (5504100 bytes)  
+	-	`sha256:12ab287390327e4834ff9fdfc9f1921b72400fef4fd37204e227f2e109398edb`  
+		Last Modified: Thu, 12 May 2022 04:29:13 GMT  
+		Size: 5.5 MB (5504103 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc76a4f824be77e8e5e2a07f02c514b2aee0201eb9593c4cdb6bc7a894d32cc0`  
-		Last Modified: Tue, 26 Apr 2022 00:31:17 GMT  
-		Size: 9.6 MB (9581558 bytes)  
+	-	`sha256:1f5236a186fb10512cdd86986f066e1f3b60643a496b5a07658c403d0908566e`  
+		Last Modified: Thu, 12 May 2022 04:29:13 GMT  
+		Size: 9.6 MB (9581575 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8bf3da3a126fbeb991601e7f739a45e3d6c462b9f022f989d61333ec371dce0`  
-		Last Modified: Tue, 26 Apr 2022 00:31:16 GMT  
-		Size: 775.0 B  
+	-	`sha256:d53179695c0afd40d09bf540b0843ae9223c82ae6377d35ca0cef4a2bdfb9790`  
+		Last Modified: Thu, 12 May 2022 04:29:11 GMT  
+		Size: 774.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `zookeeper:3.6`
 
 ```console
-$ docker pull zookeeper@sha256:4064df6ecc3e0ca3c3d6f6c72012d346313c0186215bef228cc037fccc73847b
+$ docker pull zookeeper@sha256:ee713023ebc479cd0004c8155aca2e3193b6ec78c9e5fbec0646a65231999d19
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -538,105 +538,105 @@ CMD ["zkServer.sh" "start-foreground"]
 ### `zookeeper:3.6` - linux; arm64 variant v8
 
 ```console
-$ docker pull zookeeper@sha256:52e04b82afc37d4febb803790e237825bee1e157eee21a00264242d09a503862
+$ docker pull zookeeper@sha256:09f9048bb2abd62b6884e4c36c51601cf4c6c8332609115f54f5c5c614501462
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **96.0 MB (95959347 bytes)**  
+-	Total Size: **96.0 MB (95957032 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c5fe84bfa02f5daa50f10b6180d552aa9d01e1a9e1c23ee71486b7826d9f057d`
+-	Image ID: `sha256:a6e6d1ca01ef48a44e2e21a2903ce688ffda408bd6be2109d4312a47636795e3`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
 ```dockerfile
-# Wed, 20 Apr 2022 04:29:10 GMT
-ADD file:84523b5820128293b713ef35d8db618921162250da1e4c72bf9923f34ad7d87d in / 
-# Wed, 20 Apr 2022 04:29:11 GMT
+# Wed, 11 May 2022 00:46:59 GMT
+ADD file:158a0e401328bd7c0d49b9e8539186098967218f1b1a8c811f4398d29b74397f in / 
+# Wed, 11 May 2022 00:47:00 GMT
 CMD ["bash"]
-# Wed, 20 Apr 2022 10:24:38 GMT
+# Wed, 11 May 2022 14:15:56 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 20 Apr 2022 10:31:22 GMT
+# Wed, 11 May 2022 14:20:16 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Wed, 20 Apr 2022 10:31:23 GMT
+# Wed, 11 May 2022 14:20:17 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
-# Wed, 20 Apr 2022 10:31:24 GMT
+# Wed, 11 May 2022 14:20:18 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 20 Apr 2022 10:31:25 GMT
+# Wed, 11 May 2022 14:20:19 GMT
 ENV LANG=C.UTF-8
-# Mon, 25 Apr 2022 18:45:51 GMT
+# Wed, 11 May 2022 14:20:20 GMT
 ENV JAVA_VERSION=11.0.15
-# Mon, 25 Apr 2022 18:47:31 GMT
+# Wed, 11 May 2022 14:22:40 GMT
 RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_x64_linux_11.0.15_10.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_aarch64_linux_11.0.15_10.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Tue, 26 Apr 2022 00:29:10 GMT
+# Thu, 12 May 2022 04:27:04 GMT
 ENV ZOO_CONF_DIR=/conf ZOO_DATA_DIR=/data ZOO_DATA_LOG_DIR=/datalog ZOO_LOG_DIR=/logs ZOO_TICK_TIME=2000 ZOO_INIT_LIMIT=5 ZOO_SYNC_LIMIT=2 ZOO_AUTOPURGE_PURGEINTERVAL=0 ZOO_AUTOPURGE_SNAPRETAINCOUNT=3 ZOO_MAX_CLIENT_CNXNS=60 ZOO_STANDALONE_ENABLED=true ZOO_ADMINSERVER_ENABLED=true
-# Tue, 26 Apr 2022 00:29:11 GMT
+# Thu, 12 May 2022 04:27:04 GMT
 RUN set -eux;     groupadd -r zookeeper --gid=1000;     useradd -r -g zookeeper --uid=1000 zookeeper;     mkdir -p "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR";     chown zookeeper:zookeeper "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR"
-# Tue, 26 Apr 2022 00:29:47 GMT
+# Thu, 12 May 2022 04:27:40 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         dirmngr         gosu         gnupg         netcat         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true
-# Tue, 26 Apr 2022 00:29:48 GMT
+# Thu, 12 May 2022 04:27:41 GMT
 ARG GPG_KEY=DFF24FB8323ADAC90E3CF36F729E61230EA917E9
-# Tue, 26 Apr 2022 00:29:49 GMT
+# Thu, 12 May 2022 04:27:42 GMT
 ARG SHORT_DISTRO_NAME=zookeeper-3.6.3
-# Tue, 26 Apr 2022 00:29:50 GMT
+# Thu, 12 May 2022 04:27:43 GMT
 ARG DISTRO_NAME=apache-zookeeper-3.6.3-bin
-# Tue, 26 Apr 2022 00:29:59 GMT
+# Thu, 12 May 2022 04:27:52 GMT
 # ARGS: DISTRO_NAME=apache-zookeeper-3.6.3-bin GPG_KEY=DFF24FB8323ADAC90E3CF36F729E61230EA917E9 SHORT_DISTRO_NAME=zookeeper-3.6.3
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver hkps://keyserver.pgp.com --recv-key "$GPG_KEY" ||     gpg --keyserver hkps://keyserver.ubuntu.com --recv-keys "$GPG_KEY" ||     gpg --keyserver hkps://pgp.mit.edu --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -zxf "$DISTRO_NAME.tar.gz";     mv "$DISTRO_NAME/conf/"* "$ZOO_CONF_DIR";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R zookeeper:zookeeper "/$DISTRO_NAME"
-# Tue, 26 Apr 2022 00:29:59 GMT
+# Thu, 12 May 2022 04:27:52 GMT
 WORKDIR /apache-zookeeper-3.6.3-bin
-# Tue, 26 Apr 2022 00:30:00 GMT
+# Thu, 12 May 2022 04:27:53 GMT
 VOLUME [/data /datalog /logs]
-# Tue, 26 Apr 2022 00:30:01 GMT
+# Thu, 12 May 2022 04:27:54 GMT
 EXPOSE 2181 2888 3888 8080
-# Tue, 26 Apr 2022 00:30:02 GMT
+# Thu, 12 May 2022 04:27:55 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-zookeeper-3.6.3-bin/bin ZOOCFGDIR=/conf
-# Tue, 26 Apr 2022 00:30:04 GMT
+# Thu, 12 May 2022 04:27:57 GMT
 COPY file:97ce87618885d3ddb3bea4e29e2422218111befae5783e3f1adaccd2191a05c6 in / 
-# Tue, 26 Apr 2022 00:30:04 GMT
+# Thu, 12 May 2022 04:27:57 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 26 Apr 2022 00:30:05 GMT
+# Thu, 12 May 2022 04:27:58 GMT
 CMD ["zkServer.sh" "start-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:6d4a449ac69c579312443ded09f57c4894e7adb42f7406abd364f95982fafc59`  
-		Last Modified: Wed, 20 Apr 2022 04:35:49 GMT  
-		Size: 30.1 MB (30065801 bytes)  
+	-	`sha256:dfdd5ffb257742b891ccad9400a77dad2a6260b2451e0f5e48a9ade1d17a87ec`  
+		Last Modified: Wed, 11 May 2022 00:53:46 GMT  
+		Size: 30.1 MB (30065693 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a59f13dc084e185af417a4c6d1be2534adaff0c4f35ac2166a539260f4e8e945`  
-		Last Modified: Wed, 20 Apr 2022 10:46:08 GMT  
-		Size: 1.4 MB (1361221 bytes)  
+	-	`sha256:eb5ad7be01b68fe78dada799da391fe706a6e51b7a0ec158e40069f53de08619`  
+		Last Modified: Wed, 11 May 2022 14:33:48 GMT  
+		Size: 1.4 MB (1361175 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fcdf4ab95342437da8931d526aab4bab60e3e04fce8d75594e5915cef331c64`  
-		Last Modified: Wed, 20 Apr 2022 10:55:27 GMT  
-		Size: 210.0 B  
+	-	`sha256:d8acb5edbf912b614d8422de4c52b9ce05abfd1b213fa1f211981f0ccf726f18`  
+		Last Modified: Wed, 11 May 2022 14:41:15 GMT  
+		Size: 212.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fba0b44002647d25d1e34ead55c2f851eb1197e3cd2ee484347537b2ddb489dc`  
-		Last Modified: Mon, 25 Apr 2022 19:08:09 GMT  
-		Size: 46.6 MB (46558407 bytes)  
+	-	`sha256:41aadabd6a0e6ee394320c2556bde036004cb45c3964dd1b8c52f66d5ec6243f`  
+		Last Modified: Wed, 11 May 2022 14:44:09 GMT  
+		Size: 46.6 MB (46556265 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8554b5ba14baa63f7b93df0ba08f3d5c13dceacab38009ae4d2d39219dd48182`  
-		Last Modified: Tue, 26 Apr 2022 00:31:16 GMT  
-		Size: 1.7 KB (1690 bytes)  
+	-	`sha256:35acd524fbe6243a9196723bb9764e6c8461a19777e2d7708e3b8ba5525de51b`  
+		Last Modified: Thu, 12 May 2022 04:29:12 GMT  
+		Size: 1.7 KB (1687 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb7990d4572afd3c811c8cb10816c2dc629de66806452a2fc1f128013c28156b`  
-		Last Modified: Tue, 26 Apr 2022 00:31:28 GMT  
-		Size: 5.5 MB (5504101 bytes)  
+	-	`sha256:d8e387d057de465270307a623d09c2762cd47289d0d89ba0bc12056d95198f7f`  
+		Last Modified: Thu, 12 May 2022 04:29:25 GMT  
+		Size: 5.5 MB (5504085 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e2c90c6f3303cbc02f7a21a552e766ade51a863683e6c10611e8d269a633d52c`  
-		Last Modified: Tue, 26 Apr 2022 00:31:29 GMT  
-		Size: 12.5 MB (12467142 bytes)  
+	-	`sha256:85cc47123351ab7144c366e8d6cdac5a104d42d9088892486bf77cefc030a87a`  
+		Last Modified: Thu, 12 May 2022 04:29:26 GMT  
+		Size: 12.5 MB (12467140 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5cbae51f0706bcaab6476b1f8ab9d099d63a3d634085dcae0b489e7f5f6d9c5f`  
-		Last Modified: Tue, 26 Apr 2022 00:31:27 GMT  
+	-	`sha256:8c21a7b11c42f41ee478623b28e23c38fcb62c7f1cd7b05c035b0e185c5710db`  
+		Last Modified: Thu, 12 May 2022 04:29:24 GMT  
 		Size: 775.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `zookeeper:3.6.3`
 
 ```console
-$ docker pull zookeeper@sha256:4064df6ecc3e0ca3c3d6f6c72012d346313c0186215bef228cc037fccc73847b
+$ docker pull zookeeper@sha256:ee713023ebc479cd0004c8155aca2e3193b6ec78c9e5fbec0646a65231999d19
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -745,105 +745,105 @@ CMD ["zkServer.sh" "start-foreground"]
 ### `zookeeper:3.6.3` - linux; arm64 variant v8
 
 ```console
-$ docker pull zookeeper@sha256:52e04b82afc37d4febb803790e237825bee1e157eee21a00264242d09a503862
+$ docker pull zookeeper@sha256:09f9048bb2abd62b6884e4c36c51601cf4c6c8332609115f54f5c5c614501462
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **96.0 MB (95959347 bytes)**  
+-	Total Size: **96.0 MB (95957032 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c5fe84bfa02f5daa50f10b6180d552aa9d01e1a9e1c23ee71486b7826d9f057d`
+-	Image ID: `sha256:a6e6d1ca01ef48a44e2e21a2903ce688ffda408bd6be2109d4312a47636795e3`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
 ```dockerfile
-# Wed, 20 Apr 2022 04:29:10 GMT
-ADD file:84523b5820128293b713ef35d8db618921162250da1e4c72bf9923f34ad7d87d in / 
-# Wed, 20 Apr 2022 04:29:11 GMT
+# Wed, 11 May 2022 00:46:59 GMT
+ADD file:158a0e401328bd7c0d49b9e8539186098967218f1b1a8c811f4398d29b74397f in / 
+# Wed, 11 May 2022 00:47:00 GMT
 CMD ["bash"]
-# Wed, 20 Apr 2022 10:24:38 GMT
+# Wed, 11 May 2022 14:15:56 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 20 Apr 2022 10:31:22 GMT
+# Wed, 11 May 2022 14:20:16 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Wed, 20 Apr 2022 10:31:23 GMT
+# Wed, 11 May 2022 14:20:17 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
-# Wed, 20 Apr 2022 10:31:24 GMT
+# Wed, 11 May 2022 14:20:18 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 20 Apr 2022 10:31:25 GMT
+# Wed, 11 May 2022 14:20:19 GMT
 ENV LANG=C.UTF-8
-# Mon, 25 Apr 2022 18:45:51 GMT
+# Wed, 11 May 2022 14:20:20 GMT
 ENV JAVA_VERSION=11.0.15
-# Mon, 25 Apr 2022 18:47:31 GMT
+# Wed, 11 May 2022 14:22:40 GMT
 RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_x64_linux_11.0.15_10.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_aarch64_linux_11.0.15_10.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Tue, 26 Apr 2022 00:29:10 GMT
+# Thu, 12 May 2022 04:27:04 GMT
 ENV ZOO_CONF_DIR=/conf ZOO_DATA_DIR=/data ZOO_DATA_LOG_DIR=/datalog ZOO_LOG_DIR=/logs ZOO_TICK_TIME=2000 ZOO_INIT_LIMIT=5 ZOO_SYNC_LIMIT=2 ZOO_AUTOPURGE_PURGEINTERVAL=0 ZOO_AUTOPURGE_SNAPRETAINCOUNT=3 ZOO_MAX_CLIENT_CNXNS=60 ZOO_STANDALONE_ENABLED=true ZOO_ADMINSERVER_ENABLED=true
-# Tue, 26 Apr 2022 00:29:11 GMT
+# Thu, 12 May 2022 04:27:04 GMT
 RUN set -eux;     groupadd -r zookeeper --gid=1000;     useradd -r -g zookeeper --uid=1000 zookeeper;     mkdir -p "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR";     chown zookeeper:zookeeper "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR"
-# Tue, 26 Apr 2022 00:29:47 GMT
+# Thu, 12 May 2022 04:27:40 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         dirmngr         gosu         gnupg         netcat         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true
-# Tue, 26 Apr 2022 00:29:48 GMT
+# Thu, 12 May 2022 04:27:41 GMT
 ARG GPG_KEY=DFF24FB8323ADAC90E3CF36F729E61230EA917E9
-# Tue, 26 Apr 2022 00:29:49 GMT
+# Thu, 12 May 2022 04:27:42 GMT
 ARG SHORT_DISTRO_NAME=zookeeper-3.6.3
-# Tue, 26 Apr 2022 00:29:50 GMT
+# Thu, 12 May 2022 04:27:43 GMT
 ARG DISTRO_NAME=apache-zookeeper-3.6.3-bin
-# Tue, 26 Apr 2022 00:29:59 GMT
+# Thu, 12 May 2022 04:27:52 GMT
 # ARGS: DISTRO_NAME=apache-zookeeper-3.6.3-bin GPG_KEY=DFF24FB8323ADAC90E3CF36F729E61230EA917E9 SHORT_DISTRO_NAME=zookeeper-3.6.3
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver hkps://keyserver.pgp.com --recv-key "$GPG_KEY" ||     gpg --keyserver hkps://keyserver.ubuntu.com --recv-keys "$GPG_KEY" ||     gpg --keyserver hkps://pgp.mit.edu --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -zxf "$DISTRO_NAME.tar.gz";     mv "$DISTRO_NAME/conf/"* "$ZOO_CONF_DIR";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R zookeeper:zookeeper "/$DISTRO_NAME"
-# Tue, 26 Apr 2022 00:29:59 GMT
+# Thu, 12 May 2022 04:27:52 GMT
 WORKDIR /apache-zookeeper-3.6.3-bin
-# Tue, 26 Apr 2022 00:30:00 GMT
+# Thu, 12 May 2022 04:27:53 GMT
 VOLUME [/data /datalog /logs]
-# Tue, 26 Apr 2022 00:30:01 GMT
+# Thu, 12 May 2022 04:27:54 GMT
 EXPOSE 2181 2888 3888 8080
-# Tue, 26 Apr 2022 00:30:02 GMT
+# Thu, 12 May 2022 04:27:55 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-zookeeper-3.6.3-bin/bin ZOOCFGDIR=/conf
-# Tue, 26 Apr 2022 00:30:04 GMT
+# Thu, 12 May 2022 04:27:57 GMT
 COPY file:97ce87618885d3ddb3bea4e29e2422218111befae5783e3f1adaccd2191a05c6 in / 
-# Tue, 26 Apr 2022 00:30:04 GMT
+# Thu, 12 May 2022 04:27:57 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 26 Apr 2022 00:30:05 GMT
+# Thu, 12 May 2022 04:27:58 GMT
 CMD ["zkServer.sh" "start-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:6d4a449ac69c579312443ded09f57c4894e7adb42f7406abd364f95982fafc59`  
-		Last Modified: Wed, 20 Apr 2022 04:35:49 GMT  
-		Size: 30.1 MB (30065801 bytes)  
+	-	`sha256:dfdd5ffb257742b891ccad9400a77dad2a6260b2451e0f5e48a9ade1d17a87ec`  
+		Last Modified: Wed, 11 May 2022 00:53:46 GMT  
+		Size: 30.1 MB (30065693 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a59f13dc084e185af417a4c6d1be2534adaff0c4f35ac2166a539260f4e8e945`  
-		Last Modified: Wed, 20 Apr 2022 10:46:08 GMT  
-		Size: 1.4 MB (1361221 bytes)  
+	-	`sha256:eb5ad7be01b68fe78dada799da391fe706a6e51b7a0ec158e40069f53de08619`  
+		Last Modified: Wed, 11 May 2022 14:33:48 GMT  
+		Size: 1.4 MB (1361175 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fcdf4ab95342437da8931d526aab4bab60e3e04fce8d75594e5915cef331c64`  
-		Last Modified: Wed, 20 Apr 2022 10:55:27 GMT  
-		Size: 210.0 B  
+	-	`sha256:d8acb5edbf912b614d8422de4c52b9ce05abfd1b213fa1f211981f0ccf726f18`  
+		Last Modified: Wed, 11 May 2022 14:41:15 GMT  
+		Size: 212.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fba0b44002647d25d1e34ead55c2f851eb1197e3cd2ee484347537b2ddb489dc`  
-		Last Modified: Mon, 25 Apr 2022 19:08:09 GMT  
-		Size: 46.6 MB (46558407 bytes)  
+	-	`sha256:41aadabd6a0e6ee394320c2556bde036004cb45c3964dd1b8c52f66d5ec6243f`  
+		Last Modified: Wed, 11 May 2022 14:44:09 GMT  
+		Size: 46.6 MB (46556265 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8554b5ba14baa63f7b93df0ba08f3d5c13dceacab38009ae4d2d39219dd48182`  
-		Last Modified: Tue, 26 Apr 2022 00:31:16 GMT  
-		Size: 1.7 KB (1690 bytes)  
+	-	`sha256:35acd524fbe6243a9196723bb9764e6c8461a19777e2d7708e3b8ba5525de51b`  
+		Last Modified: Thu, 12 May 2022 04:29:12 GMT  
+		Size: 1.7 KB (1687 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb7990d4572afd3c811c8cb10816c2dc629de66806452a2fc1f128013c28156b`  
-		Last Modified: Tue, 26 Apr 2022 00:31:28 GMT  
-		Size: 5.5 MB (5504101 bytes)  
+	-	`sha256:d8e387d057de465270307a623d09c2762cd47289d0d89ba0bc12056d95198f7f`  
+		Last Modified: Thu, 12 May 2022 04:29:25 GMT  
+		Size: 5.5 MB (5504085 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e2c90c6f3303cbc02f7a21a552e766ade51a863683e6c10611e8d269a633d52c`  
-		Last Modified: Tue, 26 Apr 2022 00:31:29 GMT  
-		Size: 12.5 MB (12467142 bytes)  
+	-	`sha256:85cc47123351ab7144c366e8d6cdac5a104d42d9088892486bf77cefc030a87a`  
+		Last Modified: Thu, 12 May 2022 04:29:26 GMT  
+		Size: 12.5 MB (12467140 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5cbae51f0706bcaab6476b1f8ab9d099d63a3d634085dcae0b489e7f5f6d9c5f`  
-		Last Modified: Tue, 26 Apr 2022 00:31:27 GMT  
+	-	`sha256:8c21a7b11c42f41ee478623b28e23c38fcb62c7f1cd7b05c035b0e185c5710db`  
+		Last Modified: Thu, 12 May 2022 04:29:24 GMT  
 		Size: 775.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `zookeeper:3.7`
 
 ```console
-$ docker pull zookeeper@sha256:d83a1bdf9cf0a2f5789c5041e00759c5c331189fe0cc00ef926b43dd36d9e983
+$ docker pull zookeeper@sha256:2c631dec05865eabf80d9c1a7e52cdeb6abaaeb9d5182776a841b4ad522a0d5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -952,105 +952,105 @@ CMD ["zkServer.sh" "start-foreground"]
 ### `zookeeper:3.7` - linux; arm64 variant v8
 
 ```console
-$ docker pull zookeeper@sha256:4df2cf1034884284a7e3ce91c1ea1ffba4a8d25afbaf6f8d024d8fbdc890f090
+$ docker pull zookeeper@sha256:f33bf1d997692ac267b6bd84f1d237df6e3764cd86f96e719872260fba925433
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **95.9 MB (95940566 bytes)**  
+-	Total Size: **95.9 MB (95938275 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8e2e7840550bc72a6702daa75baa8fb8d7c70c766ca49eec9422f15ffd5ba4c9`
+-	Image ID: `sha256:f6bcbe5712d1aaed45e20783a0068c972834f733b6e3137d4162fdb43a0d5e5f`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
 ```dockerfile
-# Wed, 20 Apr 2022 04:29:10 GMT
-ADD file:84523b5820128293b713ef35d8db618921162250da1e4c72bf9923f34ad7d87d in / 
-# Wed, 20 Apr 2022 04:29:11 GMT
+# Wed, 11 May 2022 00:46:59 GMT
+ADD file:158a0e401328bd7c0d49b9e8539186098967218f1b1a8c811f4398d29b74397f in / 
+# Wed, 11 May 2022 00:47:00 GMT
 CMD ["bash"]
-# Wed, 20 Apr 2022 10:24:38 GMT
+# Wed, 11 May 2022 14:15:56 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 20 Apr 2022 10:31:22 GMT
+# Wed, 11 May 2022 14:20:16 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Wed, 20 Apr 2022 10:31:23 GMT
+# Wed, 11 May 2022 14:20:17 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
-# Wed, 20 Apr 2022 10:31:24 GMT
+# Wed, 11 May 2022 14:20:18 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 20 Apr 2022 10:31:25 GMT
+# Wed, 11 May 2022 14:20:19 GMT
 ENV LANG=C.UTF-8
-# Mon, 25 Apr 2022 18:45:51 GMT
+# Wed, 11 May 2022 14:20:20 GMT
 ENV JAVA_VERSION=11.0.15
-# Mon, 25 Apr 2022 18:47:31 GMT
+# Wed, 11 May 2022 14:22:40 GMT
 RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_x64_linux_11.0.15_10.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_aarch64_linux_11.0.15_10.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Tue, 26 Apr 2022 00:29:10 GMT
+# Thu, 12 May 2022 04:27:04 GMT
 ENV ZOO_CONF_DIR=/conf ZOO_DATA_DIR=/data ZOO_DATA_LOG_DIR=/datalog ZOO_LOG_DIR=/logs ZOO_TICK_TIME=2000 ZOO_INIT_LIMIT=5 ZOO_SYNC_LIMIT=2 ZOO_AUTOPURGE_PURGEINTERVAL=0 ZOO_AUTOPURGE_SNAPRETAINCOUNT=3 ZOO_MAX_CLIENT_CNXNS=60 ZOO_STANDALONE_ENABLED=true ZOO_ADMINSERVER_ENABLED=true
-# Tue, 26 Apr 2022 00:29:11 GMT
+# Thu, 12 May 2022 04:27:04 GMT
 RUN set -eux;     groupadd -r zookeeper --gid=1000;     useradd -r -g zookeeper --uid=1000 zookeeper;     mkdir -p "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR";     chown zookeeper:zookeeper "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR"
-# Tue, 26 Apr 2022 00:29:47 GMT
+# Thu, 12 May 2022 04:27:40 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         dirmngr         gosu         gnupg         netcat         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true
-# Tue, 26 Apr 2022 00:30:12 GMT
+# Thu, 12 May 2022 04:28:06 GMT
 ARG GPG_KEY=AF3D175EC05DB249738D01AC8D8C3C3ED0B02E66
-# Tue, 26 Apr 2022 00:30:13 GMT
+# Thu, 12 May 2022 04:28:07 GMT
 ARG SHORT_DISTRO_NAME=zookeeper-3.7.0
-# Tue, 26 Apr 2022 00:30:14 GMT
+# Thu, 12 May 2022 04:28:08 GMT
 ARG DISTRO_NAME=apache-zookeeper-3.7.0-bin
-# Tue, 26 Apr 2022 00:30:21 GMT
+# Thu, 12 May 2022 04:28:18 GMT
 # ARGS: DISTRO_NAME=apache-zookeeper-3.7.0-bin GPG_KEY=AF3D175EC05DB249738D01AC8D8C3C3ED0B02E66 SHORT_DISTRO_NAME=zookeeper-3.7.0
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver hkps://keyserver.pgp.com --recv-key "$GPG_KEY" ||     gpg --keyserver hkps://keyserver.ubuntu.com --recv-keys "$GPG_KEY" ||     gpg --keyserver hkps://pgp.mit.edu --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -zxf "$DISTRO_NAME.tar.gz";     mv "$DISTRO_NAME/conf/"* "$ZOO_CONF_DIR";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R zookeeper:zookeeper "/$DISTRO_NAME"
-# Tue, 26 Apr 2022 00:30:21 GMT
+# Thu, 12 May 2022 04:28:18 GMT
 WORKDIR /apache-zookeeper-3.7.0-bin
-# Tue, 26 Apr 2022 00:30:22 GMT
+# Thu, 12 May 2022 04:28:19 GMT
 VOLUME [/data /datalog /logs]
-# Tue, 26 Apr 2022 00:30:23 GMT
+# Thu, 12 May 2022 04:28:20 GMT
 EXPOSE 2181 2888 3888 8080
-# Tue, 26 Apr 2022 00:30:24 GMT
+# Thu, 12 May 2022 04:28:21 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-zookeeper-3.7.0-bin/bin ZOOCFGDIR=/conf
-# Tue, 26 Apr 2022 00:30:26 GMT
+# Thu, 12 May 2022 04:28:23 GMT
 COPY file:15946498c7ecbfe405350ae22386ab548cb62ffb5e51b384938a3e1d87a02052 in / 
-# Tue, 26 Apr 2022 00:30:26 GMT
+# Thu, 12 May 2022 04:28:23 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 26 Apr 2022 00:30:27 GMT
+# Thu, 12 May 2022 04:28:24 GMT
 CMD ["zkServer.sh" "start-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:6d4a449ac69c579312443ded09f57c4894e7adb42f7406abd364f95982fafc59`  
-		Last Modified: Wed, 20 Apr 2022 04:35:49 GMT  
-		Size: 30.1 MB (30065801 bytes)  
+	-	`sha256:dfdd5ffb257742b891ccad9400a77dad2a6260b2451e0f5e48a9ade1d17a87ec`  
+		Last Modified: Wed, 11 May 2022 00:53:46 GMT  
+		Size: 30.1 MB (30065693 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a59f13dc084e185af417a4c6d1be2534adaff0c4f35ac2166a539260f4e8e945`  
-		Last Modified: Wed, 20 Apr 2022 10:46:08 GMT  
-		Size: 1.4 MB (1361221 bytes)  
+	-	`sha256:eb5ad7be01b68fe78dada799da391fe706a6e51b7a0ec158e40069f53de08619`  
+		Last Modified: Wed, 11 May 2022 14:33:48 GMT  
+		Size: 1.4 MB (1361175 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fcdf4ab95342437da8931d526aab4bab60e3e04fce8d75594e5915cef331c64`  
-		Last Modified: Wed, 20 Apr 2022 10:55:27 GMT  
-		Size: 210.0 B  
+	-	`sha256:d8acb5edbf912b614d8422de4c52b9ce05abfd1b213fa1f211981f0ccf726f18`  
+		Last Modified: Wed, 11 May 2022 14:41:15 GMT  
+		Size: 212.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fba0b44002647d25d1e34ead55c2f851eb1197e3cd2ee484347537b2ddb489dc`  
-		Last Modified: Mon, 25 Apr 2022 19:08:09 GMT  
-		Size: 46.6 MB (46558407 bytes)  
+	-	`sha256:41aadabd6a0e6ee394320c2556bde036004cb45c3964dd1b8c52f66d5ec6243f`  
+		Last Modified: Wed, 11 May 2022 14:44:09 GMT  
+		Size: 46.6 MB (46556265 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8554b5ba14baa63f7b93df0ba08f3d5c13dceacab38009ae4d2d39219dd48182`  
-		Last Modified: Tue, 26 Apr 2022 00:31:16 GMT  
-		Size: 1.7 KB (1690 bytes)  
+	-	`sha256:35acd524fbe6243a9196723bb9764e6c8461a19777e2d7708e3b8ba5525de51b`  
+		Last Modified: Thu, 12 May 2022 04:29:12 GMT  
+		Size: 1.7 KB (1687 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb7990d4572afd3c811c8cb10816c2dc629de66806452a2fc1f128013c28156b`  
-		Last Modified: Tue, 26 Apr 2022 00:31:28 GMT  
-		Size: 5.5 MB (5504101 bytes)  
+	-	`sha256:d8e387d057de465270307a623d09c2762cd47289d0d89ba0bc12056d95198f7f`  
+		Last Modified: Thu, 12 May 2022 04:29:25 GMT  
+		Size: 5.5 MB (5504085 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e391d7c3979466b7f2703a089c02ec4da34f9f536645027d200ba895465de4f5`  
-		Last Modified: Tue, 26 Apr 2022 00:31:41 GMT  
-		Size: 12.4 MB (12448362 bytes)  
+	-	`sha256:66429e0868ea8d9fbf710c10c37e60ac3aaf77c54af476afa80bb75b1b8b921e`  
+		Last Modified: Thu, 12 May 2022 04:29:38 GMT  
+		Size: 12.4 MB (12448383 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c960807155545d1498ae92f3fbbfdd29792b537df05451d1003411f04d5aaa8`  
-		Last Modified: Tue, 26 Apr 2022 00:31:40 GMT  
-		Size: 774.0 B  
+	-	`sha256:e5e3f557a64225796f06cfc3a11c166a4202165e39c61bff8c552a8f02e60f26`  
+		Last Modified: Thu, 12 May 2022 04:29:36 GMT  
+		Size: 775.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `zookeeper:3.7.0`
 
 ```console
-$ docker pull zookeeper@sha256:d83a1bdf9cf0a2f5789c5041e00759c5c331189fe0cc00ef926b43dd36d9e983
+$ docker pull zookeeper@sha256:2c631dec05865eabf80d9c1a7e52cdeb6abaaeb9d5182776a841b4ad522a0d5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1159,105 +1159,105 @@ CMD ["zkServer.sh" "start-foreground"]
 ### `zookeeper:3.7.0` - linux; arm64 variant v8
 
 ```console
-$ docker pull zookeeper@sha256:4df2cf1034884284a7e3ce91c1ea1ffba4a8d25afbaf6f8d024d8fbdc890f090
+$ docker pull zookeeper@sha256:f33bf1d997692ac267b6bd84f1d237df6e3764cd86f96e719872260fba925433
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **95.9 MB (95940566 bytes)**  
+-	Total Size: **95.9 MB (95938275 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8e2e7840550bc72a6702daa75baa8fb8d7c70c766ca49eec9422f15ffd5ba4c9`
+-	Image ID: `sha256:f6bcbe5712d1aaed45e20783a0068c972834f733b6e3137d4162fdb43a0d5e5f`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
 ```dockerfile
-# Wed, 20 Apr 2022 04:29:10 GMT
-ADD file:84523b5820128293b713ef35d8db618921162250da1e4c72bf9923f34ad7d87d in / 
-# Wed, 20 Apr 2022 04:29:11 GMT
+# Wed, 11 May 2022 00:46:59 GMT
+ADD file:158a0e401328bd7c0d49b9e8539186098967218f1b1a8c811f4398d29b74397f in / 
+# Wed, 11 May 2022 00:47:00 GMT
 CMD ["bash"]
-# Wed, 20 Apr 2022 10:24:38 GMT
+# Wed, 11 May 2022 14:15:56 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 20 Apr 2022 10:31:22 GMT
+# Wed, 11 May 2022 14:20:16 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Wed, 20 Apr 2022 10:31:23 GMT
+# Wed, 11 May 2022 14:20:17 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
-# Wed, 20 Apr 2022 10:31:24 GMT
+# Wed, 11 May 2022 14:20:18 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 20 Apr 2022 10:31:25 GMT
+# Wed, 11 May 2022 14:20:19 GMT
 ENV LANG=C.UTF-8
-# Mon, 25 Apr 2022 18:45:51 GMT
+# Wed, 11 May 2022 14:20:20 GMT
 ENV JAVA_VERSION=11.0.15
-# Mon, 25 Apr 2022 18:47:31 GMT
+# Wed, 11 May 2022 14:22:40 GMT
 RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_x64_linux_11.0.15_10.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_aarch64_linux_11.0.15_10.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Tue, 26 Apr 2022 00:29:10 GMT
+# Thu, 12 May 2022 04:27:04 GMT
 ENV ZOO_CONF_DIR=/conf ZOO_DATA_DIR=/data ZOO_DATA_LOG_DIR=/datalog ZOO_LOG_DIR=/logs ZOO_TICK_TIME=2000 ZOO_INIT_LIMIT=5 ZOO_SYNC_LIMIT=2 ZOO_AUTOPURGE_PURGEINTERVAL=0 ZOO_AUTOPURGE_SNAPRETAINCOUNT=3 ZOO_MAX_CLIENT_CNXNS=60 ZOO_STANDALONE_ENABLED=true ZOO_ADMINSERVER_ENABLED=true
-# Tue, 26 Apr 2022 00:29:11 GMT
+# Thu, 12 May 2022 04:27:04 GMT
 RUN set -eux;     groupadd -r zookeeper --gid=1000;     useradd -r -g zookeeper --uid=1000 zookeeper;     mkdir -p "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR";     chown zookeeper:zookeeper "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR"
-# Tue, 26 Apr 2022 00:29:47 GMT
+# Thu, 12 May 2022 04:27:40 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         dirmngr         gosu         gnupg         netcat         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true
-# Tue, 26 Apr 2022 00:30:12 GMT
+# Thu, 12 May 2022 04:28:06 GMT
 ARG GPG_KEY=AF3D175EC05DB249738D01AC8D8C3C3ED0B02E66
-# Tue, 26 Apr 2022 00:30:13 GMT
+# Thu, 12 May 2022 04:28:07 GMT
 ARG SHORT_DISTRO_NAME=zookeeper-3.7.0
-# Tue, 26 Apr 2022 00:30:14 GMT
+# Thu, 12 May 2022 04:28:08 GMT
 ARG DISTRO_NAME=apache-zookeeper-3.7.0-bin
-# Tue, 26 Apr 2022 00:30:21 GMT
+# Thu, 12 May 2022 04:28:18 GMT
 # ARGS: DISTRO_NAME=apache-zookeeper-3.7.0-bin GPG_KEY=AF3D175EC05DB249738D01AC8D8C3C3ED0B02E66 SHORT_DISTRO_NAME=zookeeper-3.7.0
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver hkps://keyserver.pgp.com --recv-key "$GPG_KEY" ||     gpg --keyserver hkps://keyserver.ubuntu.com --recv-keys "$GPG_KEY" ||     gpg --keyserver hkps://pgp.mit.edu --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -zxf "$DISTRO_NAME.tar.gz";     mv "$DISTRO_NAME/conf/"* "$ZOO_CONF_DIR";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R zookeeper:zookeeper "/$DISTRO_NAME"
-# Tue, 26 Apr 2022 00:30:21 GMT
+# Thu, 12 May 2022 04:28:18 GMT
 WORKDIR /apache-zookeeper-3.7.0-bin
-# Tue, 26 Apr 2022 00:30:22 GMT
+# Thu, 12 May 2022 04:28:19 GMT
 VOLUME [/data /datalog /logs]
-# Tue, 26 Apr 2022 00:30:23 GMT
+# Thu, 12 May 2022 04:28:20 GMT
 EXPOSE 2181 2888 3888 8080
-# Tue, 26 Apr 2022 00:30:24 GMT
+# Thu, 12 May 2022 04:28:21 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-zookeeper-3.7.0-bin/bin ZOOCFGDIR=/conf
-# Tue, 26 Apr 2022 00:30:26 GMT
+# Thu, 12 May 2022 04:28:23 GMT
 COPY file:15946498c7ecbfe405350ae22386ab548cb62ffb5e51b384938a3e1d87a02052 in / 
-# Tue, 26 Apr 2022 00:30:26 GMT
+# Thu, 12 May 2022 04:28:23 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 26 Apr 2022 00:30:27 GMT
+# Thu, 12 May 2022 04:28:24 GMT
 CMD ["zkServer.sh" "start-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:6d4a449ac69c579312443ded09f57c4894e7adb42f7406abd364f95982fafc59`  
-		Last Modified: Wed, 20 Apr 2022 04:35:49 GMT  
-		Size: 30.1 MB (30065801 bytes)  
+	-	`sha256:dfdd5ffb257742b891ccad9400a77dad2a6260b2451e0f5e48a9ade1d17a87ec`  
+		Last Modified: Wed, 11 May 2022 00:53:46 GMT  
+		Size: 30.1 MB (30065693 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a59f13dc084e185af417a4c6d1be2534adaff0c4f35ac2166a539260f4e8e945`  
-		Last Modified: Wed, 20 Apr 2022 10:46:08 GMT  
-		Size: 1.4 MB (1361221 bytes)  
+	-	`sha256:eb5ad7be01b68fe78dada799da391fe706a6e51b7a0ec158e40069f53de08619`  
+		Last Modified: Wed, 11 May 2022 14:33:48 GMT  
+		Size: 1.4 MB (1361175 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fcdf4ab95342437da8931d526aab4bab60e3e04fce8d75594e5915cef331c64`  
-		Last Modified: Wed, 20 Apr 2022 10:55:27 GMT  
-		Size: 210.0 B  
+	-	`sha256:d8acb5edbf912b614d8422de4c52b9ce05abfd1b213fa1f211981f0ccf726f18`  
+		Last Modified: Wed, 11 May 2022 14:41:15 GMT  
+		Size: 212.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fba0b44002647d25d1e34ead55c2f851eb1197e3cd2ee484347537b2ddb489dc`  
-		Last Modified: Mon, 25 Apr 2022 19:08:09 GMT  
-		Size: 46.6 MB (46558407 bytes)  
+	-	`sha256:41aadabd6a0e6ee394320c2556bde036004cb45c3964dd1b8c52f66d5ec6243f`  
+		Last Modified: Wed, 11 May 2022 14:44:09 GMT  
+		Size: 46.6 MB (46556265 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8554b5ba14baa63f7b93df0ba08f3d5c13dceacab38009ae4d2d39219dd48182`  
-		Last Modified: Tue, 26 Apr 2022 00:31:16 GMT  
-		Size: 1.7 KB (1690 bytes)  
+	-	`sha256:35acd524fbe6243a9196723bb9764e6c8461a19777e2d7708e3b8ba5525de51b`  
+		Last Modified: Thu, 12 May 2022 04:29:12 GMT  
+		Size: 1.7 KB (1687 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb7990d4572afd3c811c8cb10816c2dc629de66806452a2fc1f128013c28156b`  
-		Last Modified: Tue, 26 Apr 2022 00:31:28 GMT  
-		Size: 5.5 MB (5504101 bytes)  
+	-	`sha256:d8e387d057de465270307a623d09c2762cd47289d0d89ba0bc12056d95198f7f`  
+		Last Modified: Thu, 12 May 2022 04:29:25 GMT  
+		Size: 5.5 MB (5504085 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e391d7c3979466b7f2703a089c02ec4da34f9f536645027d200ba895465de4f5`  
-		Last Modified: Tue, 26 Apr 2022 00:31:41 GMT  
-		Size: 12.4 MB (12448362 bytes)  
+	-	`sha256:66429e0868ea8d9fbf710c10c37e60ac3aaf77c54af476afa80bb75b1b8b921e`  
+		Last Modified: Thu, 12 May 2022 04:29:38 GMT  
+		Size: 12.4 MB (12448383 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c960807155545d1498ae92f3fbbfdd29792b537df05451d1003411f04d5aaa8`  
-		Last Modified: Tue, 26 Apr 2022 00:31:40 GMT  
-		Size: 774.0 B  
+	-	`sha256:e5e3f557a64225796f06cfc3a11c166a4202165e39c61bff8c552a8f02e60f26`  
+		Last Modified: Thu, 12 May 2022 04:29:36 GMT  
+		Size: 775.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `zookeeper:3.8`
 
 ```console
-$ docker pull zookeeper@sha256:45e707c4b4198c0c0d90873fd57c7859faf85cc3bfdcd53aaa1a85bdcecb7dc9
+$ docker pull zookeeper@sha256:b540c5a173766064a5490e28a1ac00e94bd5f574f0288caf11352e43243a6832
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1366,105 +1366,105 @@ CMD ["zkServer.sh" "start-foreground"]
 ### `zookeeper:3.8` - linux; arm64 variant v8
 
 ```console
-$ docker pull zookeeper@sha256:0e434df83f304579aa37c2722a083a91f00c36d60f764c3cdfcef9edc0c7fb6a
+$ docker pull zookeeper@sha256:b2e3f0c11d1b645d83909886b59fb008a21d7eeaf46706ea001932a874690605
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **96.8 MB (96757451 bytes)**  
+-	Total Size: **96.8 MB (96755141 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cf68f407741d03e7c577690e0ec3bd984a4053c15ea3fb3817f5ba95d85ab98a`
+-	Image ID: `sha256:7d64c28efcaca388d5b39577f1f2a42560f149d262a1d30c8099a652e487cd1c`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
 ```dockerfile
-# Wed, 20 Apr 2022 04:29:10 GMT
-ADD file:84523b5820128293b713ef35d8db618921162250da1e4c72bf9923f34ad7d87d in / 
-# Wed, 20 Apr 2022 04:29:11 GMT
+# Wed, 11 May 2022 00:46:59 GMT
+ADD file:158a0e401328bd7c0d49b9e8539186098967218f1b1a8c811f4398d29b74397f in / 
+# Wed, 11 May 2022 00:47:00 GMT
 CMD ["bash"]
-# Wed, 20 Apr 2022 10:24:38 GMT
+# Wed, 11 May 2022 14:15:56 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 20 Apr 2022 10:31:22 GMT
+# Wed, 11 May 2022 14:20:16 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Wed, 20 Apr 2022 10:31:23 GMT
+# Wed, 11 May 2022 14:20:17 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
-# Wed, 20 Apr 2022 10:31:24 GMT
+# Wed, 11 May 2022 14:20:18 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 20 Apr 2022 10:31:25 GMT
+# Wed, 11 May 2022 14:20:19 GMT
 ENV LANG=C.UTF-8
-# Mon, 25 Apr 2022 18:45:51 GMT
+# Wed, 11 May 2022 14:20:20 GMT
 ENV JAVA_VERSION=11.0.15
-# Mon, 25 Apr 2022 18:47:31 GMT
+# Wed, 11 May 2022 14:22:40 GMT
 RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_x64_linux_11.0.15_10.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_aarch64_linux_11.0.15_10.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Tue, 26 Apr 2022 00:29:10 GMT
+# Thu, 12 May 2022 04:27:04 GMT
 ENV ZOO_CONF_DIR=/conf ZOO_DATA_DIR=/data ZOO_DATA_LOG_DIR=/datalog ZOO_LOG_DIR=/logs ZOO_TICK_TIME=2000 ZOO_INIT_LIMIT=5 ZOO_SYNC_LIMIT=2 ZOO_AUTOPURGE_PURGEINTERVAL=0 ZOO_AUTOPURGE_SNAPRETAINCOUNT=3 ZOO_MAX_CLIENT_CNXNS=60 ZOO_STANDALONE_ENABLED=true ZOO_ADMINSERVER_ENABLED=true
-# Tue, 26 Apr 2022 00:29:11 GMT
+# Thu, 12 May 2022 04:27:04 GMT
 RUN set -eux;     groupadd -r zookeeper --gid=1000;     useradd -r -g zookeeper --uid=1000 zookeeper;     mkdir -p "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR";     chown zookeeper:zookeeper "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR"
-# Tue, 26 Apr 2022 00:29:47 GMT
+# Thu, 12 May 2022 04:27:40 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         dirmngr         gosu         gnupg         netcat         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true
-# Tue, 26 Apr 2022 00:30:32 GMT
+# Thu, 12 May 2022 04:28:29 GMT
 ARG GPG_KEY=BBE7232D7991050B54C8EA0ADC08637CA615D22C
-# Tue, 26 Apr 2022 00:30:33 GMT
+# Thu, 12 May 2022 04:28:30 GMT
 ARG SHORT_DISTRO_NAME=zookeeper-3.8.0
-# Tue, 26 Apr 2022 00:30:34 GMT
+# Thu, 12 May 2022 04:28:31 GMT
 ARG DISTRO_NAME=apache-zookeeper-3.8.0-bin
-# Tue, 26 Apr 2022 00:30:42 GMT
+# Thu, 12 May 2022 04:28:40 GMT
 # ARGS: DISTRO_NAME=apache-zookeeper-3.8.0-bin GPG_KEY=BBE7232D7991050B54C8EA0ADC08637CA615D22C SHORT_DISTRO_NAME=zookeeper-3.8.0
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver hkps://keyserver.pgp.com --recv-key "$GPG_KEY" ||     gpg --keyserver hkps://keyserver.ubuntu.com --recv-keys "$GPG_KEY" ||     gpg --keyserver hkps://pgp.mit.edu --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -zxf "$DISTRO_NAME.tar.gz";     mv "$DISTRO_NAME/conf/"* "$ZOO_CONF_DIR";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R zookeeper:zookeeper "/$DISTRO_NAME"
-# Tue, 26 Apr 2022 00:30:43 GMT
+# Thu, 12 May 2022 04:28:40 GMT
 WORKDIR /apache-zookeeper-3.8.0-bin
-# Tue, 26 Apr 2022 00:30:44 GMT
+# Thu, 12 May 2022 04:28:41 GMT
 VOLUME [/data /datalog /logs]
-# Tue, 26 Apr 2022 00:30:45 GMT
+# Thu, 12 May 2022 04:28:42 GMT
 EXPOSE 2181 2888 3888 8080
-# Tue, 26 Apr 2022 00:30:46 GMT
+# Thu, 12 May 2022 04:28:43 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-zookeeper-3.8.0-bin/bin ZOOCFGDIR=/conf
-# Tue, 26 Apr 2022 00:30:48 GMT
+# Thu, 12 May 2022 04:28:45 GMT
 COPY file:15946498c7ecbfe405350ae22386ab548cb62ffb5e51b384938a3e1d87a02052 in / 
-# Tue, 26 Apr 2022 00:30:48 GMT
+# Thu, 12 May 2022 04:28:45 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 26 Apr 2022 00:30:49 GMT
+# Thu, 12 May 2022 04:28:46 GMT
 CMD ["zkServer.sh" "start-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:6d4a449ac69c579312443ded09f57c4894e7adb42f7406abd364f95982fafc59`  
-		Last Modified: Wed, 20 Apr 2022 04:35:49 GMT  
-		Size: 30.1 MB (30065801 bytes)  
+	-	`sha256:dfdd5ffb257742b891ccad9400a77dad2a6260b2451e0f5e48a9ade1d17a87ec`  
+		Last Modified: Wed, 11 May 2022 00:53:46 GMT  
+		Size: 30.1 MB (30065693 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a59f13dc084e185af417a4c6d1be2534adaff0c4f35ac2166a539260f4e8e945`  
-		Last Modified: Wed, 20 Apr 2022 10:46:08 GMT  
-		Size: 1.4 MB (1361221 bytes)  
+	-	`sha256:eb5ad7be01b68fe78dada799da391fe706a6e51b7a0ec158e40069f53de08619`  
+		Last Modified: Wed, 11 May 2022 14:33:48 GMT  
+		Size: 1.4 MB (1361175 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fcdf4ab95342437da8931d526aab4bab60e3e04fce8d75594e5915cef331c64`  
-		Last Modified: Wed, 20 Apr 2022 10:55:27 GMT  
-		Size: 210.0 B  
+	-	`sha256:d8acb5edbf912b614d8422de4c52b9ce05abfd1b213fa1f211981f0ccf726f18`  
+		Last Modified: Wed, 11 May 2022 14:41:15 GMT  
+		Size: 212.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fba0b44002647d25d1e34ead55c2f851eb1197e3cd2ee484347537b2ddb489dc`  
-		Last Modified: Mon, 25 Apr 2022 19:08:09 GMT  
-		Size: 46.6 MB (46558407 bytes)  
+	-	`sha256:41aadabd6a0e6ee394320c2556bde036004cb45c3964dd1b8c52f66d5ec6243f`  
+		Last Modified: Wed, 11 May 2022 14:44:09 GMT  
+		Size: 46.6 MB (46556265 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8554b5ba14baa63f7b93df0ba08f3d5c13dceacab38009ae4d2d39219dd48182`  
-		Last Modified: Tue, 26 Apr 2022 00:31:16 GMT  
-		Size: 1.7 KB (1690 bytes)  
+	-	`sha256:35acd524fbe6243a9196723bb9764e6c8461a19777e2d7708e3b8ba5525de51b`  
+		Last Modified: Thu, 12 May 2022 04:29:12 GMT  
+		Size: 1.7 KB (1687 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb7990d4572afd3c811c8cb10816c2dc629de66806452a2fc1f128013c28156b`  
-		Last Modified: Tue, 26 Apr 2022 00:31:28 GMT  
-		Size: 5.5 MB (5504101 bytes)  
+	-	`sha256:d8e387d057de465270307a623d09c2762cd47289d0d89ba0bc12056d95198f7f`  
+		Last Modified: Thu, 12 May 2022 04:29:25 GMT  
+		Size: 5.5 MB (5504085 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:426cf325b0778bdf5f973055fb7e8ef6a570e61f6debc17a9dcbd60890d80258`  
-		Last Modified: Tue, 26 Apr 2022 00:31:53 GMT  
-		Size: 13.3 MB (13265246 bytes)  
+	-	`sha256:8845b95019e1067f2d07fd3790a2da1de27287c6098db719a443dfabd4406997`  
+		Last Modified: Thu, 12 May 2022 04:29:50 GMT  
+		Size: 13.3 MB (13265250 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:951dfb14c4dfe5d95a43a8e1d2d5e23653d3042e484508a7dcfa79e4ba1806b4`  
-		Last Modified: Tue, 26 Apr 2022 00:31:51 GMT  
-		Size: 775.0 B  
+	-	`sha256:da9f69f0c6a04d3ee5ea6c9e63ff307a447d17154d0b2d3410d60f796baf035f`  
+		Last Modified: Thu, 12 May 2022 04:29:49 GMT  
+		Size: 774.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `zookeeper:3.8.0`
 
 ```console
-$ docker pull zookeeper@sha256:45e707c4b4198c0c0d90873fd57c7859faf85cc3bfdcd53aaa1a85bdcecb7dc9
+$ docker pull zookeeper@sha256:b540c5a173766064a5490e28a1ac00e94bd5f574f0288caf11352e43243a6832
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1573,105 +1573,105 @@ CMD ["zkServer.sh" "start-foreground"]
 ### `zookeeper:3.8.0` - linux; arm64 variant v8
 
 ```console
-$ docker pull zookeeper@sha256:0e434df83f304579aa37c2722a083a91f00c36d60f764c3cdfcef9edc0c7fb6a
+$ docker pull zookeeper@sha256:b2e3f0c11d1b645d83909886b59fb008a21d7eeaf46706ea001932a874690605
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **96.8 MB (96757451 bytes)**  
+-	Total Size: **96.8 MB (96755141 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cf68f407741d03e7c577690e0ec3bd984a4053c15ea3fb3817f5ba95d85ab98a`
+-	Image ID: `sha256:7d64c28efcaca388d5b39577f1f2a42560f149d262a1d30c8099a652e487cd1c`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
 ```dockerfile
-# Wed, 20 Apr 2022 04:29:10 GMT
-ADD file:84523b5820128293b713ef35d8db618921162250da1e4c72bf9923f34ad7d87d in / 
-# Wed, 20 Apr 2022 04:29:11 GMT
+# Wed, 11 May 2022 00:46:59 GMT
+ADD file:158a0e401328bd7c0d49b9e8539186098967218f1b1a8c811f4398d29b74397f in / 
+# Wed, 11 May 2022 00:47:00 GMT
 CMD ["bash"]
-# Wed, 20 Apr 2022 10:24:38 GMT
+# Wed, 11 May 2022 14:15:56 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 20 Apr 2022 10:31:22 GMT
+# Wed, 11 May 2022 14:20:16 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Wed, 20 Apr 2022 10:31:23 GMT
+# Wed, 11 May 2022 14:20:17 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
-# Wed, 20 Apr 2022 10:31:24 GMT
+# Wed, 11 May 2022 14:20:18 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 20 Apr 2022 10:31:25 GMT
+# Wed, 11 May 2022 14:20:19 GMT
 ENV LANG=C.UTF-8
-# Mon, 25 Apr 2022 18:45:51 GMT
+# Wed, 11 May 2022 14:20:20 GMT
 ENV JAVA_VERSION=11.0.15
-# Mon, 25 Apr 2022 18:47:31 GMT
+# Wed, 11 May 2022 14:22:40 GMT
 RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_x64_linux_11.0.15_10.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_aarch64_linux_11.0.15_10.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Tue, 26 Apr 2022 00:29:10 GMT
+# Thu, 12 May 2022 04:27:04 GMT
 ENV ZOO_CONF_DIR=/conf ZOO_DATA_DIR=/data ZOO_DATA_LOG_DIR=/datalog ZOO_LOG_DIR=/logs ZOO_TICK_TIME=2000 ZOO_INIT_LIMIT=5 ZOO_SYNC_LIMIT=2 ZOO_AUTOPURGE_PURGEINTERVAL=0 ZOO_AUTOPURGE_SNAPRETAINCOUNT=3 ZOO_MAX_CLIENT_CNXNS=60 ZOO_STANDALONE_ENABLED=true ZOO_ADMINSERVER_ENABLED=true
-# Tue, 26 Apr 2022 00:29:11 GMT
+# Thu, 12 May 2022 04:27:04 GMT
 RUN set -eux;     groupadd -r zookeeper --gid=1000;     useradd -r -g zookeeper --uid=1000 zookeeper;     mkdir -p "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR";     chown zookeeper:zookeeper "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR"
-# Tue, 26 Apr 2022 00:29:47 GMT
+# Thu, 12 May 2022 04:27:40 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         dirmngr         gosu         gnupg         netcat         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true
-# Tue, 26 Apr 2022 00:30:32 GMT
+# Thu, 12 May 2022 04:28:29 GMT
 ARG GPG_KEY=BBE7232D7991050B54C8EA0ADC08637CA615D22C
-# Tue, 26 Apr 2022 00:30:33 GMT
+# Thu, 12 May 2022 04:28:30 GMT
 ARG SHORT_DISTRO_NAME=zookeeper-3.8.0
-# Tue, 26 Apr 2022 00:30:34 GMT
+# Thu, 12 May 2022 04:28:31 GMT
 ARG DISTRO_NAME=apache-zookeeper-3.8.0-bin
-# Tue, 26 Apr 2022 00:30:42 GMT
+# Thu, 12 May 2022 04:28:40 GMT
 # ARGS: DISTRO_NAME=apache-zookeeper-3.8.0-bin GPG_KEY=BBE7232D7991050B54C8EA0ADC08637CA615D22C SHORT_DISTRO_NAME=zookeeper-3.8.0
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver hkps://keyserver.pgp.com --recv-key "$GPG_KEY" ||     gpg --keyserver hkps://keyserver.ubuntu.com --recv-keys "$GPG_KEY" ||     gpg --keyserver hkps://pgp.mit.edu --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -zxf "$DISTRO_NAME.tar.gz";     mv "$DISTRO_NAME/conf/"* "$ZOO_CONF_DIR";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R zookeeper:zookeeper "/$DISTRO_NAME"
-# Tue, 26 Apr 2022 00:30:43 GMT
+# Thu, 12 May 2022 04:28:40 GMT
 WORKDIR /apache-zookeeper-3.8.0-bin
-# Tue, 26 Apr 2022 00:30:44 GMT
+# Thu, 12 May 2022 04:28:41 GMT
 VOLUME [/data /datalog /logs]
-# Tue, 26 Apr 2022 00:30:45 GMT
+# Thu, 12 May 2022 04:28:42 GMT
 EXPOSE 2181 2888 3888 8080
-# Tue, 26 Apr 2022 00:30:46 GMT
+# Thu, 12 May 2022 04:28:43 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-zookeeper-3.8.0-bin/bin ZOOCFGDIR=/conf
-# Tue, 26 Apr 2022 00:30:48 GMT
+# Thu, 12 May 2022 04:28:45 GMT
 COPY file:15946498c7ecbfe405350ae22386ab548cb62ffb5e51b384938a3e1d87a02052 in / 
-# Tue, 26 Apr 2022 00:30:48 GMT
+# Thu, 12 May 2022 04:28:45 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 26 Apr 2022 00:30:49 GMT
+# Thu, 12 May 2022 04:28:46 GMT
 CMD ["zkServer.sh" "start-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:6d4a449ac69c579312443ded09f57c4894e7adb42f7406abd364f95982fafc59`  
-		Last Modified: Wed, 20 Apr 2022 04:35:49 GMT  
-		Size: 30.1 MB (30065801 bytes)  
+	-	`sha256:dfdd5ffb257742b891ccad9400a77dad2a6260b2451e0f5e48a9ade1d17a87ec`  
+		Last Modified: Wed, 11 May 2022 00:53:46 GMT  
+		Size: 30.1 MB (30065693 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a59f13dc084e185af417a4c6d1be2534adaff0c4f35ac2166a539260f4e8e945`  
-		Last Modified: Wed, 20 Apr 2022 10:46:08 GMT  
-		Size: 1.4 MB (1361221 bytes)  
+	-	`sha256:eb5ad7be01b68fe78dada799da391fe706a6e51b7a0ec158e40069f53de08619`  
+		Last Modified: Wed, 11 May 2022 14:33:48 GMT  
+		Size: 1.4 MB (1361175 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fcdf4ab95342437da8931d526aab4bab60e3e04fce8d75594e5915cef331c64`  
-		Last Modified: Wed, 20 Apr 2022 10:55:27 GMT  
-		Size: 210.0 B  
+	-	`sha256:d8acb5edbf912b614d8422de4c52b9ce05abfd1b213fa1f211981f0ccf726f18`  
+		Last Modified: Wed, 11 May 2022 14:41:15 GMT  
+		Size: 212.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fba0b44002647d25d1e34ead55c2f851eb1197e3cd2ee484347537b2ddb489dc`  
-		Last Modified: Mon, 25 Apr 2022 19:08:09 GMT  
-		Size: 46.6 MB (46558407 bytes)  
+	-	`sha256:41aadabd6a0e6ee394320c2556bde036004cb45c3964dd1b8c52f66d5ec6243f`  
+		Last Modified: Wed, 11 May 2022 14:44:09 GMT  
+		Size: 46.6 MB (46556265 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8554b5ba14baa63f7b93df0ba08f3d5c13dceacab38009ae4d2d39219dd48182`  
-		Last Modified: Tue, 26 Apr 2022 00:31:16 GMT  
-		Size: 1.7 KB (1690 bytes)  
+	-	`sha256:35acd524fbe6243a9196723bb9764e6c8461a19777e2d7708e3b8ba5525de51b`  
+		Last Modified: Thu, 12 May 2022 04:29:12 GMT  
+		Size: 1.7 KB (1687 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb7990d4572afd3c811c8cb10816c2dc629de66806452a2fc1f128013c28156b`  
-		Last Modified: Tue, 26 Apr 2022 00:31:28 GMT  
-		Size: 5.5 MB (5504101 bytes)  
+	-	`sha256:d8e387d057de465270307a623d09c2762cd47289d0d89ba0bc12056d95198f7f`  
+		Last Modified: Thu, 12 May 2022 04:29:25 GMT  
+		Size: 5.5 MB (5504085 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:426cf325b0778bdf5f973055fb7e8ef6a570e61f6debc17a9dcbd60890d80258`  
-		Last Modified: Tue, 26 Apr 2022 00:31:53 GMT  
-		Size: 13.3 MB (13265246 bytes)  
+	-	`sha256:8845b95019e1067f2d07fd3790a2da1de27287c6098db719a443dfabd4406997`  
+		Last Modified: Thu, 12 May 2022 04:29:50 GMT  
+		Size: 13.3 MB (13265250 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:951dfb14c4dfe5d95a43a8e1d2d5e23653d3042e484508a7dcfa79e4ba1806b4`  
-		Last Modified: Tue, 26 Apr 2022 00:31:51 GMT  
-		Size: 775.0 B  
+	-	`sha256:da9f69f0c6a04d3ee5ea6c9e63ff307a447d17154d0b2d3410d60f796baf035f`  
+		Last Modified: Thu, 12 May 2022 04:29:49 GMT  
+		Size: 774.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `zookeeper:latest`
 
 ```console
-$ docker pull zookeeper@sha256:45e707c4b4198c0c0d90873fd57c7859faf85cc3bfdcd53aaa1a85bdcecb7dc9
+$ docker pull zookeeper@sha256:b540c5a173766064a5490e28a1ac00e94bd5f574f0288caf11352e43243a6832
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1780,97 +1780,97 @@ CMD ["zkServer.sh" "start-foreground"]
 ### `zookeeper:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull zookeeper@sha256:0e434df83f304579aa37c2722a083a91f00c36d60f764c3cdfcef9edc0c7fb6a
+$ docker pull zookeeper@sha256:b2e3f0c11d1b645d83909886b59fb008a21d7eeaf46706ea001932a874690605
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **96.8 MB (96757451 bytes)**  
+-	Total Size: **96.8 MB (96755141 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cf68f407741d03e7c577690e0ec3bd984a4053c15ea3fb3817f5ba95d85ab98a`
+-	Image ID: `sha256:7d64c28efcaca388d5b39577f1f2a42560f149d262a1d30c8099a652e487cd1c`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["zkServer.sh","start-foreground"]`
 
 ```dockerfile
-# Wed, 20 Apr 2022 04:29:10 GMT
-ADD file:84523b5820128293b713ef35d8db618921162250da1e4c72bf9923f34ad7d87d in / 
-# Wed, 20 Apr 2022 04:29:11 GMT
+# Wed, 11 May 2022 00:46:59 GMT
+ADD file:158a0e401328bd7c0d49b9e8539186098967218f1b1a8c811f4398d29b74397f in / 
+# Wed, 11 May 2022 00:47:00 GMT
 CMD ["bash"]
-# Wed, 20 Apr 2022 10:24:38 GMT
+# Wed, 11 May 2022 14:15:56 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 20 Apr 2022 10:31:22 GMT
+# Wed, 11 May 2022 14:20:16 GMT
 ENV JAVA_HOME=/usr/local/openjdk-11
-# Wed, 20 Apr 2022 10:31:23 GMT
+# Wed, 11 May 2022 14:20:17 GMT
 RUN { echo '#/bin/sh'; echo 'echo "$JAVA_HOME"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ "$JAVA_HOME" = "$(docker-java-home)" ] # backwards compatibility
-# Wed, 20 Apr 2022 10:31:24 GMT
+# Wed, 11 May 2022 14:20:18 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 20 Apr 2022 10:31:25 GMT
+# Wed, 11 May 2022 14:20:19 GMT
 ENV LANG=C.UTF-8
-# Mon, 25 Apr 2022 18:45:51 GMT
+# Wed, 11 May 2022 14:20:20 GMT
 ENV JAVA_VERSION=11.0.15
-# Mon, 25 Apr 2022 18:47:31 GMT
+# Wed, 11 May 2022 14:22:40 GMT
 RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_x64_linux_11.0.15_10.tar.gz'; 			;; 		'arm64') 			downloadUrl='https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_aarch64_linux_11.0.15_10.tar.gz'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dirmngr 		gnupg 		wget 	; 	rm -rf /var/lib/apt/lists/*; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	wget --progress=dot:giga -O openjdk.tgz.asc "$downloadUrl.sign"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; 	gpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; 	gpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F 		| tee /dev/stderr 		| grep '0xA5CD6035332FA671' 		| grep 'Andrew Haley'; 	gpg --batch --verify openjdk.tgz.asc openjdk.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		java --version
-# Tue, 26 Apr 2022 00:29:10 GMT
+# Thu, 12 May 2022 04:27:04 GMT
 ENV ZOO_CONF_DIR=/conf ZOO_DATA_DIR=/data ZOO_DATA_LOG_DIR=/datalog ZOO_LOG_DIR=/logs ZOO_TICK_TIME=2000 ZOO_INIT_LIMIT=5 ZOO_SYNC_LIMIT=2 ZOO_AUTOPURGE_PURGEINTERVAL=0 ZOO_AUTOPURGE_SNAPRETAINCOUNT=3 ZOO_MAX_CLIENT_CNXNS=60 ZOO_STANDALONE_ENABLED=true ZOO_ADMINSERVER_ENABLED=true
-# Tue, 26 Apr 2022 00:29:11 GMT
+# Thu, 12 May 2022 04:27:04 GMT
 RUN set -eux;     groupadd -r zookeeper --gid=1000;     useradd -r -g zookeeper --uid=1000 zookeeper;     mkdir -p "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR";     chown zookeeper:zookeeper "$ZOO_DATA_LOG_DIR" "$ZOO_DATA_DIR" "$ZOO_CONF_DIR" "$ZOO_LOG_DIR"
-# Tue, 26 Apr 2022 00:29:47 GMT
+# Thu, 12 May 2022 04:27:40 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         ca-certificates         dirmngr         gosu         gnupg         netcat         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true
-# Tue, 26 Apr 2022 00:30:32 GMT
+# Thu, 12 May 2022 04:28:29 GMT
 ARG GPG_KEY=BBE7232D7991050B54C8EA0ADC08637CA615D22C
-# Tue, 26 Apr 2022 00:30:33 GMT
+# Thu, 12 May 2022 04:28:30 GMT
 ARG SHORT_DISTRO_NAME=zookeeper-3.8.0
-# Tue, 26 Apr 2022 00:30:34 GMT
+# Thu, 12 May 2022 04:28:31 GMT
 ARG DISTRO_NAME=apache-zookeeper-3.8.0-bin
-# Tue, 26 Apr 2022 00:30:42 GMT
+# Thu, 12 May 2022 04:28:40 GMT
 # ARGS: DISTRO_NAME=apache-zookeeper-3.8.0-bin GPG_KEY=BBE7232D7991050B54C8EA0ADC08637CA615D22C SHORT_DISTRO_NAME=zookeeper-3.8.0
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "zookeeper/$SHORT_DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver hkps://keyserver.pgp.com --recv-key "$GPG_KEY" ||     gpg --keyserver hkps://keyserver.ubuntu.com --recv-keys "$GPG_KEY" ||     gpg --keyserver hkps://pgp.mit.edu --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -zxf "$DISTRO_NAME.tar.gz";     mv "$DISTRO_NAME/conf/"* "$ZOO_CONF_DIR";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R zookeeper:zookeeper "/$DISTRO_NAME"
-# Tue, 26 Apr 2022 00:30:43 GMT
+# Thu, 12 May 2022 04:28:40 GMT
 WORKDIR /apache-zookeeper-3.8.0-bin
-# Tue, 26 Apr 2022 00:30:44 GMT
+# Thu, 12 May 2022 04:28:41 GMT
 VOLUME [/data /datalog /logs]
-# Tue, 26 Apr 2022 00:30:45 GMT
+# Thu, 12 May 2022 04:28:42 GMT
 EXPOSE 2181 2888 3888 8080
-# Tue, 26 Apr 2022 00:30:46 GMT
+# Thu, 12 May 2022 04:28:43 GMT
 ENV PATH=/usr/local/openjdk-11/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-zookeeper-3.8.0-bin/bin ZOOCFGDIR=/conf
-# Tue, 26 Apr 2022 00:30:48 GMT
+# Thu, 12 May 2022 04:28:45 GMT
 COPY file:15946498c7ecbfe405350ae22386ab548cb62ffb5e51b384938a3e1d87a02052 in / 
-# Tue, 26 Apr 2022 00:30:48 GMT
+# Thu, 12 May 2022 04:28:45 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 26 Apr 2022 00:30:49 GMT
+# Thu, 12 May 2022 04:28:46 GMT
 CMD ["zkServer.sh" "start-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:6d4a449ac69c579312443ded09f57c4894e7adb42f7406abd364f95982fafc59`  
-		Last Modified: Wed, 20 Apr 2022 04:35:49 GMT  
-		Size: 30.1 MB (30065801 bytes)  
+	-	`sha256:dfdd5ffb257742b891ccad9400a77dad2a6260b2451e0f5e48a9ade1d17a87ec`  
+		Last Modified: Wed, 11 May 2022 00:53:46 GMT  
+		Size: 30.1 MB (30065693 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a59f13dc084e185af417a4c6d1be2534adaff0c4f35ac2166a539260f4e8e945`  
-		Last Modified: Wed, 20 Apr 2022 10:46:08 GMT  
-		Size: 1.4 MB (1361221 bytes)  
+	-	`sha256:eb5ad7be01b68fe78dada799da391fe706a6e51b7a0ec158e40069f53de08619`  
+		Last Modified: Wed, 11 May 2022 14:33:48 GMT  
+		Size: 1.4 MB (1361175 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fcdf4ab95342437da8931d526aab4bab60e3e04fce8d75594e5915cef331c64`  
-		Last Modified: Wed, 20 Apr 2022 10:55:27 GMT  
-		Size: 210.0 B  
+	-	`sha256:d8acb5edbf912b614d8422de4c52b9ce05abfd1b213fa1f211981f0ccf726f18`  
+		Last Modified: Wed, 11 May 2022 14:41:15 GMT  
+		Size: 212.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fba0b44002647d25d1e34ead55c2f851eb1197e3cd2ee484347537b2ddb489dc`  
-		Last Modified: Mon, 25 Apr 2022 19:08:09 GMT  
-		Size: 46.6 MB (46558407 bytes)  
+	-	`sha256:41aadabd6a0e6ee394320c2556bde036004cb45c3964dd1b8c52f66d5ec6243f`  
+		Last Modified: Wed, 11 May 2022 14:44:09 GMT  
+		Size: 46.6 MB (46556265 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8554b5ba14baa63f7b93df0ba08f3d5c13dceacab38009ae4d2d39219dd48182`  
-		Last Modified: Tue, 26 Apr 2022 00:31:16 GMT  
-		Size: 1.7 KB (1690 bytes)  
+	-	`sha256:35acd524fbe6243a9196723bb9764e6c8461a19777e2d7708e3b8ba5525de51b`  
+		Last Modified: Thu, 12 May 2022 04:29:12 GMT  
+		Size: 1.7 KB (1687 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb7990d4572afd3c811c8cb10816c2dc629de66806452a2fc1f128013c28156b`  
-		Last Modified: Tue, 26 Apr 2022 00:31:28 GMT  
-		Size: 5.5 MB (5504101 bytes)  
+	-	`sha256:d8e387d057de465270307a623d09c2762cd47289d0d89ba0bc12056d95198f7f`  
+		Last Modified: Thu, 12 May 2022 04:29:25 GMT  
+		Size: 5.5 MB (5504085 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:426cf325b0778bdf5f973055fb7e8ef6a570e61f6debc17a9dcbd60890d80258`  
-		Last Modified: Tue, 26 Apr 2022 00:31:53 GMT  
-		Size: 13.3 MB (13265246 bytes)  
+	-	`sha256:8845b95019e1067f2d07fd3790a2da1de27287c6098db719a443dfabd4406997`  
+		Last Modified: Thu, 12 May 2022 04:29:50 GMT  
+		Size: 13.3 MB (13265250 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:951dfb14c4dfe5d95a43a8e1d2d5e23653d3042e484508a7dcfa79e4ba1806b4`  
-		Last Modified: Tue, 26 Apr 2022 00:31:51 GMT  
-		Size: 775.0 B  
+	-	`sha256:da9f69f0c6a04d3ee5ea6c9e63ff307a447d17154d0b2d3410d60f796baf035f`  
+		Last Modified: Thu, 12 May 2022 04:29:49 GMT  
+		Size: 774.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
