@@ -1,4 +1,4 @@
-## `rethinkdb:2`
+## `rethinkdb:bullseye-slim`
 
 ```console
 $ docker pull rethinkdb@sha256:fea7cad2443b36569cdc3c71c1b648bf61b3faaa5b73073b597797ff32efc031
@@ -9,7 +9,7 @@ $ docker pull rethinkdb@sha256:fea7cad2443b36569cdc3c71c1b648bf61b3faaa5b73073b5
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
-### `rethinkdb:2` - linux; amd64
+### `rethinkdb:bullseye-slim` - linux; amd64
 
 ```console
 $ docker pull rethinkdb@sha256:9569972071c8147960897d43d09bf948cb2100cca9770f06832040190a28f389
@@ -67,7 +67,7 @@ EXPOSE 28015 29015 8080
 		Size: 127.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `rethinkdb:2` - linux; arm64 variant v8
+### `rethinkdb:bullseye-slim` - linux; arm64 variant v8
 
 ```console
 $ docker pull rethinkdb@sha256:bf95420e43aa6aa84e57a8c1a6343389ab259f9d6030f1558acf770290c79d1c
