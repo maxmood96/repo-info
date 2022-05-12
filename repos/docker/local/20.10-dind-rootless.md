@@ -2,15 +2,17 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8a239d1857bccd44eed94b793dd59c922d68b1571007ec14b854f1aa09a3e8b1`
-- Created: `2022-05-06T01:19:47.18163829Z`
-- Virtual Size: ~ 290.64 Mb  
+- Image ID: `sha256:92f1b93e523ccc3bb545467872a43f2a1bbc5a8a20a515cc7a9d0b643a52093a`
+- Created: `2022-05-11T01:31:01.812544173Z`
+- Virtual Size: ~ 364.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `DOCKER_VERSION=20.10.15`
+  - `DOCKER_BUILDX_VERSION=0.8.2`
+  - `DOCKER_COMPOSE_VERSION=2.5.0`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=42b1175eda071c0e9121e1d64345928384a93df1`
 
@@ -954,16 +956,16 @@ GPL-2.0-or-later AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `zfs`
 
 ```console
-zfs-2.1.2-r0 description:
+zfs-2.1.4-r0 description:
 ZFS for Linux
 
-zfs-2.1.2-r0 webpage:
+zfs-2.1.4-r0 webpage:
 https://zfsonlinux.org
 
-zfs-2.1.2-r0 installed size:
-1356 KiB
+zfs-2.1.4-r0 installed size:
+1368 KiB
 
-zfs-2.1.2-r0 license:
+zfs-2.1.4-r0 license:
 CDDL-1.0
 
 ```
@@ -971,16 +973,16 @@ CDDL-1.0
 ### `apk` package: `zfs-libs`
 
 ```console
-zfs-libs-2.1.2-r0 description:
+zfs-libs-2.1.4-r0 description:
 ZFS for Linux (libraries)
 
-zfs-libs-2.1.2-r0 webpage:
+zfs-libs-2.1.4-r0 webpage:
 https://zfsonlinux.org
 
-zfs-libs-2.1.2-r0 installed size:
-4084 KiB
+zfs-libs-2.1.4-r0 installed size:
+4088 KiB
 
-zfs-libs-2.1.2-r0 license:
+zfs-libs-2.1.4-r0 license:
 CDDL-1.0
 
 ```
