@@ -499,14 +499,9 @@ Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.68.0-1ubuntu2.10
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.10.dsc' curl_7.68.0-1ubuntu2.10.dsc 2737 SHA512:c7e59b48d6743b2c0bd9fcfa76605cb4b9693bb467df2e2aabf25e38b0349f4d28aa50136efc25535f971a70a9c252d053a88539b9b0f0fdc36302f6ed145c2c
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0.orig.tar.gz' curl_7.68.0.orig.tar.gz 4096350 SHA512:58b42c08b1cf4cb6e68f8e469d5b5f6298eebe286ba2677ad29e1a7eefd15b8609af54544f4c5a7dadebbd3b23bd77700830f2f60fbea7ae3f2f306e640010b0
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.10.debian.tar.xz' curl_7.68.0-1ubuntu2.10.debian.tar.xz 52592 SHA512:2ed50fea6923e23c83b08a4c5eba4d1475f9d46308bd664804759a6bf8b187d9d649bcf59e171c853bbe65ab1b6403a4e00d29a3369bcf8fa21ca8a1d5275fe0
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-2ubuntu0.1`
 
@@ -1146,9 +1141,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris glibc=2.31-0ubuntu9.7
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31-0ubuntu9.7.dsc' glibc_2.31-0ubuntu9.7.dsc 9561 SHA512:1d67eee4c20e9a236b4ffc706a8ac3b53d9837be2c8dd4f52edd52ca97082284d7ed8d74bb2d533efb024a8e3596d8ca3fd12e0acfcfa2923a26ee9dd25931bb
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17317924 SHA512:2ff56628fe935cacbdf1825534f15d45cb87a159cbdb2e6a981590eeb6174ed4b3ff7041519cdecbd4f624ac20b745e2dd9614c420dd3ea186b8f36bc4c2453c
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31-0ubuntu9.7.debian.tar.xz' glibc_2.31-0ubuntu9.7.debian.tar.xz 870504 SHA512:8653d4a47043ef759662e5451410740f2e8dac3d7845fe6434ebb6f0bf013b3eb40cfe873c7e742d0856bce219c0f7898fd8cf3d0f0f7144637dd110b9302243
+'http://security.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31-0ubuntu9.7.dsc' glibc_2.31-0ubuntu9.7.dsc 9561 SHA512:1d67eee4c20e9a236b4ffc706a8ac3b53d9837be2c8dd4f52edd52ca97082284d7ed8d74bb2d533efb024a8e3596d8ca3fd12e0acfcfa2923a26ee9dd25931bb
+'http://security.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17317924 SHA512:2ff56628fe935cacbdf1825534f15d45cb87a159cbdb2e6a981590eeb6174ed4b3ff7041519cdecbd4f624ac20b745e2dd9614c420dd3ea186b8f36bc4c2453c
+'http://security.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31-0ubuntu9.7.debian.tar.xz' glibc_2.31-0ubuntu9.7.debian.tar.xz 870504 SHA512:8653d4a47043ef759662e5451410740f2e8dac3d7845fe6434ebb6f0bf013b3eb40cfe873c7e742d0856bce219c0f7898fd8cf3d0f0f7144637dd110b9302243
 ```
 
 ### `dpkg` source package: `gmp=2:6.2.0+dfsg-4`
@@ -2725,14 +2720,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.4.0-109.123
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-109.123.dsc' linux_5.4.0-109.123.dsc 6990 SHA512:54e8cda3ba363213e3e2be06fb4de48145eb99ff03234cd91455dd37f80938cf6dd6a83683924a0e7af3d5d75b349100ff5a1db3268c3c5d00e317165610c284
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA512:62b09a7231fd793973c5f59b16c4f6ffce621188b02a71915874b05e8e3f956fb6146d4a4fb1a4475bebe463949ca5a18da12842c3ce7c52e996e6bc4012a074
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-109.123.diff.gz' linux_5.4.0-109.123.diff.gz 9316079 SHA512:505f2a54fcffc9677da4e3b9979a4074be2dcbc0c2ad069b3a6c5224e2240b2a7145dcf6a6457eaa74731fc1e5361035bf275275b903554323e2f61395adf95a
-```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu2`
 
@@ -4028,14 +4018,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-catkin-pkg-modules=0.4.24-1
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-catkin-pkg-modules/python3-catkin-pkg-modules_0.4.24-1.debian.tar.xz' python3-catkin-pkg-modules_0.4.24-1.debian.tar.xz 2024 SHA512:34839c06efbaceccbfa6fe15e8d62264ca9fd1271f500389df7358b81830e82337f5c526e9935ddd147526dd3da35e8692761d86313f1bdabaca52670a919039
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-catkin-pkg-modules/python3-catkin-pkg-modules_0.4.24-1.dsc' python3-catkin-pkg-modules_0.4.24-1.dsc 1026 SHA512:02c8c18ec94c70bf39670ee4a61a6a8374adc3abcfc93424d4db323da3b14af729e1c83313546a724b78d1629d1a79ec33ada5434575f53e4594004c44d01393
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-catkin-pkg-modules/python3-catkin-pkg-modules_0.4.24.orig.tar.gz' python3-catkin-pkg-modules_0.4.24.orig.tar.gz 61189 SHA512:77336a9221cfccca22782dd111bea6ce34ccd6cfdf288bb523b66b7999023af8a53125f0fe97d8ccf54ff665aac1bca32248136662a0ab4743f893e962c270cd
-```
 
 ### `dpkg` source package: `python3-catkin-pkg=0.4.24-100`
 
@@ -4047,14 +4032,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-catkin-pkg=0.4.24-100
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-catkin-pkg/python3-catkin-pkg_0.4.24-100.debian.tar.xz' python3-catkin-pkg_0.4.24-100.debian.tar.xz 2012 SHA512:3db57a92e09b3d7406df2299fb3ced667e78ef7b20273da740c453b81075af75173850f31c20b2d550be9fc1b2d047b567f87b0438736c619742f2cb9046f944
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-catkin-pkg/python3-catkin-pkg_0.4.24-100.dsc' python3-catkin-pkg_0.4.24-100.dsc 962 SHA512:48deef0904ca87c021eece7ec5ac1d3cce205b0790140117c42c84c9c0bac9ceb0f95bf3bf0b3642a2f0ff5744ff5d5d632eb675c7c6b7c114197aa35660188d
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-catkin-pkg/python3-catkin-pkg_0.4.24.orig.tar.gz' python3-catkin-pkg_0.4.24.orig.tar.gz 14786 SHA512:f37d1a1285115d125a8ad3cfd67f7f969b6ab7ad0452eefc5d690832a19623e5e9418fa35841139a952b3883ea5406348fae741e09ae3273546212a35489cc59
-```
 
 ### `dpkg` source package: `python3-colcon-argcomplete=0.3.3-1`
 
@@ -7442,14 +7422,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=245.4-4ubuntu3.16
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.16.dsc' systemd_245.4-4ubuntu3.16.dsc 5262 SHA512:15c9908fcefaffd7d6ad5fa47d5dd6f7049a64b86bd1d440d9d8e207486b660d206f62b53e6e26f62eda9a899f0259557cc0252f5f59dde63630829a70d3ebfb
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4.orig.tar.gz' systemd_245.4.orig.tar.gz 9000780 SHA512:02036bb1ab05301a9d0dfdd4b9c9376e90134474482531e6e292122380be2f24f99177493dd3af6f8af1a8ed2599ee0996da91a3b1b7872bbfaf26a1c3e61b4c
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.16.debian.tar.xz' systemd_245.4-4ubuntu3.16.debian.tar.xz 275576 SHA512:070a7299594ec7ab0c36a005b42823f2a7db3d1612272b6e73ac034a96321b5d5f2ede3f6b1fc578105f9ad87223b96e490291da2b722fc9b6be4985258ee262
-```
 
 ### `dpkg` source package: `sysvinit=2.96-2.1ubuntu1`
 

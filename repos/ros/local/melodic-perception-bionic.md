@@ -972,14 +972,9 @@ Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.58.0-2ubuntu3.17
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0-2ubuntu3.17.dsc' curl_7.58.0-2ubuntu3.17.dsc 2781 SHA512:beb9619bcbab80622a8d88ffc2b7ff8a3230d7d1401e53a2c0e601bd5c77ffa55ed0d58d02978d34c9dfe84c401d5e5a522ba46bb25fc8a1b0e928cfc5ba0066
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0.orig.tar.gz' curl_7.58.0.orig.tar.gz 3879728 SHA512:7b12b79107558bb266672d6e128615fe5a8149c37f4ae540197e3298f5d312beb2d78fbb23e3ea84ea7afc41549898a1e5cd38509f0388b11707b48d5efb8ca3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0-2ubuntu3.17.debian.tar.xz' curl_7.58.0-2ubuntu3.17.debian.tar.xz 68604 SHA512:6bf7a659b49bc1460f6eb6a2165d4bcfe23435d6d7df3c8a3fd705d00ea3bf5fed65be11636d568017a0b019340fade1acf5457971288af42fa4731b75d19bab
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3ubuntu2.4`
 
@@ -5215,14 +5210,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.15.0-176.185
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-176.185.dsc' linux_4.15.0-176.185.dsc 7426 SHA512:cff0725b7236c7eb0f751057878ce4f905a7b1ffdf5e23e7574741ac3e41ec4ea5625a112fc8d97d745c63ec86e84d6c684f35a91c4159e23540c148a590bf8f
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0.orig.tar.gz' linux_4.15.0.orig.tar.gz 157656459 SHA512:0fab606a295e0857f774f8adaa9d56bf2cb227fbab2daed374415da216391b156f49e606ba37ac402987c5796d408807da5d1a42c0d85a8552f109a3e279443d
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-176.185.diff.gz' linux_4.15.0-176.185.diff.gz 12988174 SHA512:5399789331f16a777ac3a0f093b651242cb39b7cbc8216f0f7b26ff8b0e0ab5537ffc245cb775cb6ac9600198c614954e495ac019858499d6bf3fe10a78fa330
-```
 
 ### `dpkg` source package: `lksctp-tools=1.0.17+dfsg-2`
 
@@ -5920,14 +5910,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nss=2:3.35-2ubuntu2.13
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.35-2ubuntu2.13.dsc' nss_3.35-2ubuntu2.13.dsc 2354 SHA512:65e0716cbdc78a2b7ee3de6e3c7cfd7e34a9496b9a06f65e23a62c6f5017d8a4e5dca6ea56cec8d23915a1e0a075d6ed9973602344198f0d1de2280cc37fbfb0
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.35.orig.tar.gz' nss_3.35.orig.tar.gz 9620041 SHA512:8d466f4602427d278b6aa28af0e6bdb99326fc40c94ac6d517d1cbe7ce6b9332dadba52ea092762fac2fd6e72f17cb880cf81e1cf86bf6b4f7913a755419626d
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.35-2ubuntu2.13.debian.tar.xz' nss_3.35-2ubuntu2.13.debian.tar.xz 220588 SHA512:d5752347a026b611ebd7baa7e489e3bdf3468556dc6c366f1248ae4c048bc8e9fa4701c245aac689b450be64991e7bb7e3a4cf06ff5bb7ee94a5f642a94165d2
-```
 
 ### `dpkg` source package: `numactl=2.0.11-2.1ubuntu0.1`
 
@@ -6653,9 +6638,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris postgresql-10=10.19-0ubuntu0.18.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-10/postgresql-10_10.19-0ubuntu0.18.04.1.dsc' postgresql-10_10.19-0ubuntu0.18.04.1.dsc 3620 SHA512:590a30c676d82b39016e03f2bf54b5b7db7623abd336eaf8af163bcdd912243967e6925c98cf8729a0a32784eae7a5b62af3fdba2dc2df7eaa99e21bf7cb2d50
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-10/postgresql-10_10.19.orig.tar.bz2' postgresql-10_10.19.orig.tar.bz2 19261478 SHA512:41b0f5026be7d563e41b54e9ea7199dd466a132d355be0b71a91d41f533d97fbf550eccf2a2ece3d60c5dab5921ebeea3ac4780c18c54b924df52d7423305a22
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-10/postgresql-10_10.19-0ubuntu0.18.04.1.debian.tar.xz' postgresql-10_10.19-0ubuntu0.18.04.1.debian.tar.xz 35932 SHA512:7daf904ea64672a45a7ec1d11990574be202bbb114392d1ab303c4ffec48d98cb0a75df37a388076a414ade2a52955112f100579abbfad921ae0b896191228b5
+'http://security.ubuntu.com/ubuntu/pool/main/p/postgresql-10/postgresql-10_10.19-0ubuntu0.18.04.1.dsc' postgresql-10_10.19-0ubuntu0.18.04.1.dsc 3620 SHA512:590a30c676d82b39016e03f2bf54b5b7db7623abd336eaf8af163bcdd912243967e6925c98cf8729a0a32784eae7a5b62af3fdba2dc2df7eaa99e21bf7cb2d50
+'http://security.ubuntu.com/ubuntu/pool/main/p/postgresql-10/postgresql-10_10.19.orig.tar.bz2' postgresql-10_10.19.orig.tar.bz2 19261478 SHA512:41b0f5026be7d563e41b54e9ea7199dd466a132d355be0b71a91d41f533d97fbf550eccf2a2ece3d60c5dab5921ebeea3ac4780c18c54b924df52d7423305a22
+'http://security.ubuntu.com/ubuntu/pool/main/p/postgresql-10/postgresql-10_10.19-0ubuntu0.18.04.1.debian.tar.xz' postgresql-10_10.19-0ubuntu0.18.04.1.debian.tar.xz 35932 SHA512:7daf904ea64672a45a7ec1d11990574be202bbb114392d1ab303c4ffec48d98cb0a75df37a388076a414ade2a52955112f100579abbfad921ae0b896191228b5
 ```
 
 ### `dpkg` source package: `procps=2:3.3.12-3ubuntu1.2`
@@ -6864,14 +6849,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-catkin-pkg-modules=0.4.24-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.24-1.debian.tar.xz' python-catkin-pkg-modules_0.4.24-1.debian.tar.xz 2036 SHA512:3c76c9064d4a648c8fa9834358986d5928b71cc312b3c5631f10adb60654e681a8bc8f82bab50f0f81957c4a70cbe81b92e94a0fc8ec2886d22af1c7d7ba8fcb
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.24-1.dsc' python-catkin-pkg-modules_0.4.24-1.dsc 1039 SHA512:a65b123e9665634db3858e00af730aaa78326d6e81dee91f2ebaf261fbf144364510e7dbb90aa7a3a5ae209fea9f991e48357e7d1bd5a60a9cc69b352b4ac25b
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.24.orig.tar.gz' python-catkin-pkg-modules_0.4.24.orig.tar.gz 60318 SHA512:499877331f2b1085479085d813283610e6dc00b73e38d5c75a5a61251606d2eb79cbe0185434567f19ea6c38e1fdf6b975f8e0bc281a038c6963a4fd95ee2890
-```
 
 ### `dpkg` source package: `python-catkin-pkg=0.4.24-100`
 
@@ -6883,14 +6863,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-catkin-pkg=0.4.24-100
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.24-100.debian.tar.xz' python-catkin-pkg_0.4.24-100.debian.tar.xz 2024 SHA512:eb76cb6800439bc65c548c4b1b3d60c54ea4aba4f5d9802bffc3c1dc12c75097c65411f870a7ffdba89d53b68cc3968c4342f87659f24241cba7b93603f96fe9
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.24-100.dsc' python-catkin-pkg_0.4.24-100.dsc 975 SHA512:19b524f6659d3383d6c2ea011742a7204004ce17160807eb55eea2e4bf32a34498686b765850ca051e1c3e22189c6d4fb7280b718bdca361b72776d41e67927d
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.24.orig.tar.gz' python-catkin-pkg_0.4.24.orig.tar.gz 13893 SHA512:631ac863859c84e026d93ebfb9573f30279fa7c8c24ddb7dbc73519b0948b8d2792f0902f3dbafad92c7cbe4e685358a1dbeb0d9a80c0bdd1bd483d0c99afe64
-```
 
 ### `dpkg` source package: `python-cbor=1.0.0-1`
 

@@ -784,14 +784,9 @@ Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.58.0-2ubuntu3.17
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0-2ubuntu3.17.dsc' curl_7.58.0-2ubuntu3.17.dsc 2781 SHA512:beb9619bcbab80622a8d88ffc2b7ff8a3230d7d1401e53a2c0e601bd5c77ffa55ed0d58d02978d34c9dfe84c401d5e5a522ba46bb25fc8a1b0e928cfc5ba0066
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0.orig.tar.gz' curl_7.58.0.orig.tar.gz 3879728 SHA512:7b12b79107558bb266672d6e128615fe5a8149c37f4ae540197e3298f5d312beb2d78fbb23e3ea84ea7afc41549898a1e5cd38509f0388b11707b48d5efb8ca3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0-2ubuntu3.17.debian.tar.xz' curl_7.58.0-2ubuntu3.17.debian.tar.xz 68604 SHA512:6bf7a659b49bc1460f6eb6a2165d4bcfe23435d6d7df3c8a3fd705d00ea3bf5fed65be11636d568017a0b019340fade1acf5457971288af42fa4731b75d19bab
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3ubuntu2.4`
 
@@ -3410,14 +3405,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=4.15.0-176.185
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-176.185.dsc' linux_4.15.0-176.185.dsc 7426 SHA512:cff0725b7236c7eb0f751057878ce4f905a7b1ffdf5e23e7574741ac3e41ec4ea5625a112fc8d97d745c63ec86e84d6c684f35a91c4159e23540c148a590bf8f
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0.orig.tar.gz' linux_4.15.0.orig.tar.gz 157656459 SHA512:0fab606a295e0857f774f8adaa9d56bf2cb227fbab2daed374415da216391b156f49e606ba37ac402987c5796d408807da5d1a42c0d85a8552f109a3e279443d
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-176.185.diff.gz' linux_4.15.0-176.185.diff.gz 12988174 SHA512:5399789331f16a777ac3a0f093b651242cb39b7cbc8216f0f7b26ff8b0e0ab5537ffc245cb775cb6ac9600198c614954e495ac019858499d6bf3fe10a78fa330
-```
 
 ### `dpkg` source package: `lksctp-tools=1.0.17+dfsg-2`
 
@@ -4425,14 +4415,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-catkin-pkg-modules=0.4.24-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.24-1.debian.tar.xz' python-catkin-pkg-modules_0.4.24-1.debian.tar.xz 2036 SHA512:3c76c9064d4a648c8fa9834358986d5928b71cc312b3c5631f10adb60654e681a8bc8f82bab50f0f81957c4a70cbe81b92e94a0fc8ec2886d22af1c7d7ba8fcb
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.24-1.dsc' python-catkin-pkg-modules_0.4.24-1.dsc 1039 SHA512:a65b123e9665634db3858e00af730aaa78326d6e81dee91f2ebaf261fbf144364510e7dbb90aa7a3a5ae209fea9f991e48357e7d1bd5a60a9cc69b352b4ac25b
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.4.24.orig.tar.gz' python-catkin-pkg-modules_0.4.24.orig.tar.gz 60318 SHA512:499877331f2b1085479085d813283610e6dc00b73e38d5c75a5a61251606d2eb79cbe0185434567f19ea6c38e1fdf6b975f8e0bc281a038c6963a4fd95ee2890
-```
 
 ### `dpkg` source package: `python-catkin-pkg=0.4.24-100`
 
@@ -4444,14 +4429,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-catkin-pkg=0.4.24-100
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.24-100.debian.tar.xz' python-catkin-pkg_0.4.24-100.debian.tar.xz 2024 SHA512:eb76cb6800439bc65c548c4b1b3d60c54ea4aba4f5d9802bffc3c1dc12c75097c65411f870a7ffdba89d53b68cc3968c4342f87659f24241cba7b93603f96fe9
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.24-100.dsc' python-catkin-pkg_0.4.24-100.dsc 975 SHA512:19b524f6659d3383d6c2ea011742a7204004ce17160807eb55eea2e4bf32a34498686b765850ca051e1c3e22189c6d4fb7280b718bdca361b72776d41e67927d
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.4.24.orig.tar.gz' python-catkin-pkg_0.4.24.orig.tar.gz 13893 SHA512:631ac863859c84e026d93ebfb9573f30279fa7c8c24ddb7dbc73519b0948b8d2792f0902f3dbafad92c7cbe4e685358a1dbeb0d9a80c0bdd1bd483d0c99afe64
-```
 
 ### `dpkg` source package: `python-cffi=1.11.5-1`
 
