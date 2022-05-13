@@ -1,7 +1,7 @@
 ## `monica:3-fpm`
 
 ```console
-$ docker pull monica@sha256:5c2e830e5f2d055cdbbe2e85b5b4b8c020fba8ac7cd1b33870659cd830081546
+$ docker pull monica@sha256:30049ebaa559908bc1dfda5956d5ca187083a766fa2b73062b6480ee1ef8b57f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -336,14 +336,14 @@ CMD ["php-fpm"]
 ### `monica:3-fpm` - linux; arm variant v7
 
 ```console
-$ docker pull monica@sha256:bd19c9dd460105cc3c5222dcd50fcb95bb68e3a557273ec922658e5018ca7ca6
+$ docker pull monica@sha256:11dbd1e8078581f0ee434778b8ba1f7e4cf8a31bd12650380100fc0b709070e9
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **171.0 MB (171009970 bytes)**  
+-	Total Size: **170.9 MB (170918575 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:835f74f2d5406ec8235b36594fc431b95f161a15d7572ad8f02974994f651077`
+-	Image ID: `sha256:8648a5df437da30b2b5dd6943bb2840329b125f0bb9a2a1597b8874e5631a249`
 -	Entrypoint: `["\/usr\/local\/bin\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -370,59 +370,59 @@ ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
 # Wed, 11 May 2022 15:03:47 GMT
 ENV GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F
-# Wed, 11 May 2022 15:45:05 GMT
-ENV PHP_VERSION=8.0.18
-# Wed, 11 May 2022 15:45:05 GMT
-ENV PHP_URL=https://www.php.net/distributions/php-8.0.18.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.0.18.tar.xz.asc
-# Wed, 11 May 2022 15:45:06 GMT
-ENV PHP_SHA256=db161652cacae4b31c347fbf2e17b80656473cb365f2bb3460c4552f5647e2e7
-# Wed, 11 May 2022 15:45:26 GMT
+# Fri, 13 May 2022 06:14:37 GMT
+ENV PHP_VERSION=8.0.19
+# Fri, 13 May 2022 06:14:38 GMT
+ENV PHP_URL=https://www.php.net/distributions/php-8.0.19.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.0.19.tar.xz.asc
+# Fri, 13 May 2022 06:14:38 GMT
+ENV PHP_SHA256=ba62219c4b0486cbb2a04f0796749a46b0ee1f5a142ed454212b4e2460cb0fab
+# Fri, 13 May 2022 06:14:58 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg dirmngr; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
-# Wed, 11 May 2022 15:45:27 GMT
+# Fri, 13 May 2022 06:14:59 GMT
 COPY file:ce57c04b70896f77cc11eb2766417d8a1240fcffe5bba92179ec78c458844110 in /usr/local/bin/ 
-# Wed, 11 May 2022 15:59:32 GMT
+# Fri, 13 May 2022 06:29:03 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--enable-fpm 		--with-fpm-user=www-data 		--with-fpm-group=www-data 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version
-# Wed, 11 May 2022 15:59:33 GMT
+# Fri, 13 May 2022 06:29:05 GMT
 COPY multi:869bde9dbeae74886a05c9e2107b3e3b4877116db8c6d9adbaff2719f9fb5262 in /usr/local/bin/ 
-# Wed, 11 May 2022 15:59:34 GMT
+# Fri, 13 May 2022 06:29:06 GMT
 RUN docker-php-ext-enable sodium
-# Wed, 11 May 2022 15:59:35 GMT
+# Fri, 13 May 2022 06:29:06 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Wed, 11 May 2022 15:59:35 GMT
+# Fri, 13 May 2022 06:29:07 GMT
 WORKDIR /var/www/html
-# Wed, 11 May 2022 15:59:37 GMT
+# Fri, 13 May 2022 06:29:08 GMT
 RUN set -eux; 	cd /usr/local/etc; 	if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi; 	{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Wed, 11 May 2022 15:59:37 GMT
+# Fri, 13 May 2022 06:29:09 GMT
 STOPSIGNAL SIGQUIT
-# Wed, 11 May 2022 15:59:38 GMT
+# Fri, 13 May 2022 06:29:09 GMT
 EXPOSE 9000
-# Wed, 11 May 2022 15:59:38 GMT
+# Fri, 13 May 2022 06:29:10 GMT
 CMD ["php-fpm"]
-# Fri, 13 May 2022 03:11:56 GMT
+# Fri, 13 May 2022 13:00:19 GMT
 LABEL org.opencontainers.image.authors=Alexis Saettler <alexis@saettler.org> org.opencontainers.image.title=MonicaHQ, the Personal Relationship Manager org.opencontainers.image.description=This is MonicaHQ, your personal memory! MonicaHQ is like a CRM but for the friends, family, and acquaintances around you. org.opencontainers.image.url=https://monicahq.com org.opencontainers.image.source=https://github.com/monicahq/docker org.opencontainers.image.vendor=Monica
-# Fri, 13 May 2022 03:12:04 GMT
+# Fri, 13 May 2022 13:00:27 GMT
 RUN set -ex;         apt-get update;     apt-get install -y --no-install-recommends         bash         busybox-static     ;     rm -rf /var/lib/apt/lists/*
-# Fri, 13 May 2022 03:16:14 GMT
+# Fri, 13 May 2022 13:04:39 GMT
 RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         libicu-dev         zlib1g-dev         libzip-dev         libpng-dev         libxml2-dev         libfreetype6-dev         libjpeg62-turbo-dev         libgmp-dev         libmemcached-dev         libwebp-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     if [ ! -e /usr/include/gmp.h ]; then ln -s /usr/include/$debMultiarch/gmp.h /usr/include/gmp.h; fi;    docker-php-ext-configure intl;     docker-php-ext-configure gd --with-jpeg --with-freetype --with-webp;     docker-php-ext-configure gmp;     docker-php-ext-install -j$(nproc)         intl         zip         bcmath         gd         gmp         pdo_mysql         mysqli         soap     ;         pecl install APCu-5.1.21;     pecl install memcached-3.1.5;     pecl install redis-5.3.6;         docker-php-ext-enable         apcu         memcached         redis     ;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;         ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;             apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*
-# Fri, 13 May 2022 03:16:16 GMT
+# Fri, 13 May 2022 13:04:41 GMT
 RUN set -ex;         mkdir -p /var/spool/cron/crontabs;     rm -f /var/spool/cron/crontabs/root;     echo '*/5 * * * * php /var/www/html/artisan schedule:run -v' > /var/spool/cron/crontabs/www-data
-# Fri, 13 May 2022 03:16:16 GMT
+# Fri, 13 May 2022 13:04:41 GMT
 ENV PHP_OPCACHE_VALIDATE_TIMESTAMPS=0 PHP_OPCACHE_MAX_ACCELERATED_FILES=20000 PHP_OPCACHE_MEMORY_CONSUMPTION=192 PHP_OPCACHE_MAX_WASTED_PERCENTAGE=10
-# Fri, 13 May 2022 03:16:18 GMT
+# Fri, 13 May 2022 13:04:43 GMT
 RUN set -ex;         docker-php-ext-enable opcache;     {         echo '[opcache]';         echo 'opcache.enable=1';         echo 'opcache.revalidate_freq=0';         echo 'opcache.validate_timestamps=${PHP_OPCACHE_VALIDATE_TIMESTAMPS}';         echo 'opcache.max_accelerated_files=${PHP_OPCACHE_MAX_ACCELERATED_FILES}';         echo 'opcache.memory_consumption=${PHP_OPCACHE_MEMORY_CONSUMPTION}';         echo 'opcache.max_wasted_percentage=${PHP_OPCACHE_MAX_WASTED_PERCENTAGE}';         echo 'opcache.interned_strings_buffer=16';         echo 'opcache.fast_shutdown=1';     } > $PHP_INI_DIR/conf.d/opcache-recommended.ini;         echo 'apc.enable_cli=1' >> $PHP_INI_DIR/conf.d/docker-php-ext-apcu.ini;         echo 'memory_limit=512M' > $PHP_INI_DIR/conf.d/memory-limit.ini
-# Fri, 13 May 2022 03:16:18 GMT
+# Fri, 13 May 2022 13:04:43 GMT
 WORKDIR /var/www/html
-# Fri, 13 May 2022 03:16:19 GMT
+# Fri, 13 May 2022 13:04:44 GMT
 ENV MONICA_VERSION=v3.7.0
-# Fri, 13 May 2022 03:16:19 GMT
+# Fri, 13 May 2022 13:04:44 GMT
 LABEL org.opencontainers.image.revision=a07317f309f25772925436346b4ebb23b6e69b43 org.opencontainers.image.version=v3.7.0
-# Fri, 13 May 2022 03:17:18 GMT
+# Fri, 13 May 2022 13:05:41 GMT
 RUN set -ex;     fetchDeps="         gnupg     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         for ext in tar.bz2 tar.bz2.asc; do         curl -fsSL -o monica-${MONICA_VERSION}.$ext "https://github.com/monicahq/monica/releases/download/${MONICA_VERSION}/monica-${MONICA_VERSION}.$ext";     done;         GPGKEY='BDAB0D0D36A00466A2964E85DE15667131EA6018';     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPGKEY";     gpg --batch --verify monica-${MONICA_VERSION}.tar.bz2.asc monica-${MONICA_VERSION}.tar.bz2;         tar -xf monica-${MONICA_VERSION}.tar.bz2 -C /var/www/html --strip-components=1;         gpgconf --kill all;     rm -rf "$GNUPGHOME" monica-${MONICA_VERSION}.tar.bz2 monica-${MONICA_VERSION}.tar.bz2.asc;         cp /var/www/html/.env.example /var/www/html/.env;     chown -R www-data:www-data /var/www/html;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     rm -rf /var/lib/apt/lists/*
-# Fri, 13 May 2022 03:17:20 GMT
+# Fri, 13 May 2022 13:05:44 GMT
 COPY multi:72e8bce953fdf60df31c4a1bb50faa001efd8f7eaaf696121cf35f8ea9080af7 in /usr/local/bin/ 
-# Fri, 13 May 2022 03:17:21 GMT
+# Fri, 13 May 2022 13:05:44 GMT
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
-# Fri, 13 May 2022 03:17:21 GMT
+# Fri, 13 May 2022 13:05:45 GMT
 CMD ["php-fpm"]
 ```
 
@@ -443,52 +443,52 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 11 May 2022 17:27:23 GMT  
 		Size: 271.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:abf52bb36371bf6f691f0cd50c9681a1246aedfce8e26e9c04dcf7c4f72477c0`  
-		Last Modified: Wed, 11 May 2022 17:50:00 GMT  
-		Size: 11.2 MB (11189018 bytes)  
+	-	`sha256:ec49f9e997418ef766a2c47da95e4b03b9ac45aad2a25cd3b7874e75b2426741`  
+		Last Modified: Fri, 13 May 2022 07:48:46 GMT  
+		Size: 11.1 MB (11095661 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21a5e3b9a1bb60d181e0a83e90831c028c130aa623fdc4ecb66184cadae97af1`  
-		Last Modified: Wed, 11 May 2022 17:49:57 GMT  
-		Size: 495.0 B  
+	-	`sha256:a00930c740de1a8998a53225e478855016df38837c12122df47ca369f3870a36`  
+		Last Modified: Fri, 13 May 2022 07:48:43 GMT  
+		Size: 494.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:086c97c2674e3e3e02740a78efd5cfbf00b2f0731de4c2ae88a237e2e3fea0ab`  
-		Last Modified: Wed, 11 May 2022 17:51:34 GMT  
-		Size: 23.8 MB (23752907 bytes)  
+	-	`sha256:41fb08c676019bd31933994ee1da9bd53705b6293fc0b4a949d93f68c3eef5ab`  
+		Last Modified: Fri, 13 May 2022 07:50:21 GMT  
+		Size: 23.8 MB (23754942 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8285668f942060e4900a24dcc5ac8edf23c5e6c1ccfd73c9b3d64ed33ac84770`  
-		Last Modified: Wed, 11 May 2022 17:51:19 GMT  
-		Size: 2.5 KB (2453 bytes)  
+	-	`sha256:cdc81e92531a005a55584ed20dfbfcc2845b504e8ba7bc32947ebd8082d867ce`  
+		Last Modified: Fri, 13 May 2022 07:50:06 GMT  
+		Size: 2.5 KB (2455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dec1278926c04725b254b8a6eede101c536a0535b47c05f0468cda9b83946529`  
-		Last Modified: Wed, 11 May 2022 17:51:19 GMT  
-		Size: 247.0 B  
+	-	`sha256:5d86614181350b63d8925560ef9a7ea3f002add7257a856ad5af7503e30705a6`  
+		Last Modified: Fri, 13 May 2022 07:50:06 GMT  
+		Size: 249.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:609a37e284d3ceab46189e4364406f3778515bec6582fc6fa698486cf66b77f9`  
-		Last Modified: Wed, 11 May 2022 17:51:19 GMT  
-		Size: 8.6 KB (8575 bytes)  
+	-	`sha256:f1e3c76826c3af6fc974f3efc3b1cefb7411e134593fa16c2d51ae7d5a1becdf`  
+		Last Modified: Fri, 13 May 2022 07:50:06 GMT  
+		Size: 8.6 KB (8576 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:69e2eb4bb419fef3a4b28beb23b68cb0195ef8e4dda55d09444d4473b2bee190`  
-		Last Modified: Fri, 13 May 2022 03:20:26 GMT  
-		Size: 1.2 MB (1195339 bytes)  
+	-	`sha256:1042b64a28866ca46ebb0d38663fa313dad048cf81b921081e187011451624f4`  
+		Last Modified: Fri, 13 May 2022 13:13:47 GMT  
+		Size: 1.2 MB (1195342 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:009da28c7b7e8655205b3cd8b57c8560c2c1ff4642be46d4499bdc4d40c4977a`  
-		Last Modified: Fri, 13 May 2022 03:20:26 GMT  
-		Size: 3.7 MB (3653644 bytes)  
+	-	`sha256:4ff3494f941049f246afd2c53f330a20f512233d89c3cf13a07bc93844efabf0`  
+		Last Modified: Fri, 13 May 2022 13:13:47 GMT  
+		Size: 3.7 MB (3653657 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c650001739fef5accbd0cb9cef8a527f84251f309a3fc428dba4685e06d449d6`  
-		Last Modified: Fri, 13 May 2022 03:20:24 GMT  
-		Size: 264.0 B  
+	-	`sha256:126616550c5bb9e4f8be0994c7f850cb54ae5eb0ea41622340a5738f8555d0ba`  
+		Last Modified: Fri, 13 May 2022 13:13:45 GMT  
+		Size: 263.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d50d12460cc070100c35e6fd918c242b4d02e4cf0ad149327d07d4f486d0aa5c`  
-		Last Modified: Fri, 13 May 2022 03:20:24 GMT  
-		Size: 587.0 B  
+	-	`sha256:31bf126e81529149c0c8d42dd813134d230dc634f55dea06c866878c6721d96b`  
+		Last Modified: Fri, 13 May 2022 13:13:45 GMT  
+		Size: 588.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:097cd9f749ebac6e16f1c0989dceff84cf75949e5337cee543e662f83d84b46c`  
-		Last Modified: Fri, 13 May 2022 03:21:10 GMT  
-		Size: 35.3 MB (35311453 bytes)  
+	-	`sha256:c8f76821b709806f86a119bc47c5661f5567864dd31b8c8354a1d3342f411636`  
+		Last Modified: Fri, 13 May 2022 13:14:30 GMT  
+		Size: 35.3 MB (35311360 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7b308b34a0cf41b088f7c4593808e26fcec8ec06432900789287295d0eaaaeee`  
-		Last Modified: Fri, 13 May 2022 03:20:24 GMT  
+	-	`sha256:e26a91f70132374085d8866b8bd0aedea9fb7fa8fb3b04878c3ba0eaa2272a39`  
+		Last Modified: Fri, 13 May 2022 13:13:45 GMT  
 		Size: 2.0 KB (2026 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -813,14 +813,14 @@ CMD ["php-fpm"]
 ### `monica:3-fpm` - linux; mips64le
 
 ```console
-$ docker pull monica@sha256:48a3adf83bb663edde897077c381514f836285d214baa3cc2130a445b473db8d
+$ docker pull monica@sha256:93682da7785f35c635d87e7656853831147b48cbe4a3b1633fa5238f112b8c0d
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **177.5 MB (177473485 bytes)**  
+-	Total Size: **177.4 MB (177383710 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f3a452fba478fbc727c83d88df18c6d861ca55ed09aea02debeb60f381a79e20`
+-	Image ID: `sha256:7dafc1195d12a834c125e532fbcd6ab2770f56e4bfc31dad1888456f56ced46b`
 -	Entrypoint: `["\/usr\/local\/bin\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -847,59 +847,59 @@ ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
 # Wed, 11 May 2022 17:50:19 GMT
 ENV GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F
-# Wed, 11 May 2022 19:40:26 GMT
-ENV PHP_VERSION=8.0.18
-# Wed, 11 May 2022 19:40:29 GMT
-ENV PHP_URL=https://www.php.net/distributions/php-8.0.18.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.0.18.tar.xz.asc
-# Wed, 11 May 2022 19:40:32 GMT
-ENV PHP_SHA256=db161652cacae4b31c347fbf2e17b80656473cb365f2bb3460c4552f5647e2e7
-# Wed, 11 May 2022 19:41:20 GMT
+# Fri, 13 May 2022 08:30:35 GMT
+ENV PHP_VERSION=8.0.19
+# Fri, 13 May 2022 08:30:39 GMT
+ENV PHP_URL=https://www.php.net/distributions/php-8.0.19.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.0.19.tar.xz.asc
+# Fri, 13 May 2022 08:30:42 GMT
+ENV PHP_SHA256=ba62219c4b0486cbb2a04f0796749a46b0ee1f5a142ed454212b4e2460cb0fab
+# Fri, 13 May 2022 08:31:37 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg dirmngr; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
-# Wed, 11 May 2022 19:41:23 GMT
+# Fri, 13 May 2022 08:31:40 GMT
 COPY file:ce57c04b70896f77cc11eb2766417d8a1240fcffe5bba92179ec78c458844110 in /usr/local/bin/ 
-# Wed, 11 May 2022 20:21:32 GMT
+# Fri, 13 May 2022 09:13:00 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--enable-fpm 		--with-fpm-user=www-data 		--with-fpm-group=www-data 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version
-# Wed, 11 May 2022 20:21:35 GMT
+# Fri, 13 May 2022 09:13:04 GMT
 COPY multi:869bde9dbeae74886a05c9e2107b3e3b4877116db8c6d9adbaff2719f9fb5262 in /usr/local/bin/ 
-# Wed, 11 May 2022 20:21:42 GMT
+# Fri, 13 May 2022 09:13:10 GMT
 RUN docker-php-ext-enable sodium
-# Wed, 11 May 2022 20:21:45 GMT
+# Fri, 13 May 2022 09:13:14 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Wed, 11 May 2022 20:21:49 GMT
+# Fri, 13 May 2022 09:13:17 GMT
 WORKDIR /var/www/html
-# Wed, 11 May 2022 20:21:56 GMT
+# Fri, 13 May 2022 09:13:24 GMT
 RUN set -eux; 	cd /usr/local/etc; 	if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi; 	{ 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; echo '; https://github.com/docker-library/php/pull/725#issuecomment-443540114'; echo 'log_limit = 8192'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 		echo 'decorate_workers_output = no'; 	} | tee php-fpm.d/docker.conf; 	{ 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = 9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Wed, 11 May 2022 20:21:59 GMT
+# Fri, 13 May 2022 09:13:28 GMT
 STOPSIGNAL SIGQUIT
-# Wed, 11 May 2022 20:22:02 GMT
+# Fri, 13 May 2022 09:13:31 GMT
 EXPOSE 9000
-# Wed, 11 May 2022 20:22:05 GMT
+# Fri, 13 May 2022 09:13:35 GMT
 CMD ["php-fpm"]
-# Fri, 13 May 2022 07:31:43 GMT
+# Fri, 13 May 2022 13:16:24 GMT
 LABEL org.opencontainers.image.authors=Alexis Saettler <alexis@saettler.org> org.opencontainers.image.title=MonicaHQ, the Personal Relationship Manager org.opencontainers.image.description=This is MonicaHQ, your personal memory! MonicaHQ is like a CRM but for the friends, family, and acquaintances around you. org.opencontainers.image.url=https://monicahq.com org.opencontainers.image.source=https://github.com/monicahq/docker org.opencontainers.image.vendor=Monica
-# Fri, 13 May 2022 07:32:01 GMT
+# Fri, 13 May 2022 13:16:42 GMT
 RUN set -ex;         apt-get update;     apt-get install -y --no-install-recommends         bash         busybox-static     ;     rm -rf /var/lib/apt/lists/*
-# Fri, 13 May 2022 07:37:52 GMT
+# Fri, 13 May 2022 13:22:31 GMT
 RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         libicu-dev         zlib1g-dev         libzip-dev         libpng-dev         libxml2-dev         libfreetype6-dev         libjpeg62-turbo-dev         libgmp-dev         libmemcached-dev         libwebp-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     if [ ! -e /usr/include/gmp.h ]; then ln -s /usr/include/$debMultiarch/gmp.h /usr/include/gmp.h; fi;    docker-php-ext-configure intl;     docker-php-ext-configure gd --with-jpeg --with-freetype --with-webp;     docker-php-ext-configure gmp;     docker-php-ext-install -j$(nproc)         intl         zip         bcmath         gd         gmp         pdo_mysql         mysqli         soap     ;         pecl install APCu-5.1.21;     pecl install memcached-3.1.5;     pecl install redis-5.3.6;         docker-php-ext-enable         apcu         memcached         redis     ;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;         ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;             apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*
-# Fri, 13 May 2022 07:37:59 GMT
+# Fri, 13 May 2022 13:22:38 GMT
 RUN set -ex;         mkdir -p /var/spool/cron/crontabs;     rm -f /var/spool/cron/crontabs/root;     echo '*/5 * * * * php /var/www/html/artisan schedule:run -v' > /var/spool/cron/crontabs/www-data
-# Fri, 13 May 2022 07:38:02 GMT
+# Fri, 13 May 2022 13:22:42 GMT
 ENV PHP_OPCACHE_VALIDATE_TIMESTAMPS=0 PHP_OPCACHE_MAX_ACCELERATED_FILES=20000 PHP_OPCACHE_MEMORY_CONSUMPTION=192 PHP_OPCACHE_MAX_WASTED_PERCENTAGE=10
-# Fri, 13 May 2022 07:38:10 GMT
+# Fri, 13 May 2022 13:22:49 GMT
 RUN set -ex;         docker-php-ext-enable opcache;     {         echo '[opcache]';         echo 'opcache.enable=1';         echo 'opcache.revalidate_freq=0';         echo 'opcache.validate_timestamps=${PHP_OPCACHE_VALIDATE_TIMESTAMPS}';         echo 'opcache.max_accelerated_files=${PHP_OPCACHE_MAX_ACCELERATED_FILES}';         echo 'opcache.memory_consumption=${PHP_OPCACHE_MEMORY_CONSUMPTION}';         echo 'opcache.max_wasted_percentage=${PHP_OPCACHE_MAX_WASTED_PERCENTAGE}';         echo 'opcache.interned_strings_buffer=16';         echo 'opcache.fast_shutdown=1';     } > $PHP_INI_DIR/conf.d/opcache-recommended.ini;         echo 'apc.enable_cli=1' >> $PHP_INI_DIR/conf.d/docker-php-ext-apcu.ini;         echo 'memory_limit=512M' > $PHP_INI_DIR/conf.d/memory-limit.ini
-# Fri, 13 May 2022 07:38:14 GMT
+# Fri, 13 May 2022 13:22:53 GMT
 WORKDIR /var/www/html
-# Fri, 13 May 2022 07:38:17 GMT
+# Fri, 13 May 2022 13:22:57 GMT
 ENV MONICA_VERSION=v3.7.0
-# Fri, 13 May 2022 07:38:21 GMT
+# Fri, 13 May 2022 13:23:00 GMT
 LABEL org.opencontainers.image.revision=a07317f309f25772925436346b4ebb23b6e69b43 org.opencontainers.image.version=v3.7.0
-# Fri, 13 May 2022 07:40:01 GMT
+# Fri, 13 May 2022 13:24:40 GMT
 RUN set -ex;     fetchDeps="         gnupg     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         for ext in tar.bz2 tar.bz2.asc; do         curl -fsSL -o monica-${MONICA_VERSION}.$ext "https://github.com/monicahq/monica/releases/download/${MONICA_VERSION}/monica-${MONICA_VERSION}.$ext";     done;         GPGKEY='BDAB0D0D36A00466A2964E85DE15667131EA6018';     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPGKEY";     gpg --batch --verify monica-${MONICA_VERSION}.tar.bz2.asc monica-${MONICA_VERSION}.tar.bz2;         tar -xf monica-${MONICA_VERSION}.tar.bz2 -C /var/www/html --strip-components=1;         gpgconf --kill all;     rm -rf "$GNUPGHOME" monica-${MONICA_VERSION}.tar.bz2 monica-${MONICA_VERSION}.tar.bz2.asc;         cp /var/www/html/.env.example /var/www/html/.env;     chown -R www-data:www-data /var/www/html;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     rm -rf /var/lib/apt/lists/*
-# Fri, 13 May 2022 07:40:11 GMT
+# Fri, 13 May 2022 13:24:50 GMT
 COPY multi:72e8bce953fdf60df31c4a1bb50faa001efd8f7eaaf696121cf35f8ea9080af7 in /usr/local/bin/ 
-# Fri, 13 May 2022 07:40:18 GMT
+# Fri, 13 May 2022 13:24:57 GMT
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
-# Fri, 13 May 2022 07:40:26 GMT
+# Fri, 13 May 2022 13:25:04 GMT
 CMD ["php-fpm"]
 ```
 
@@ -920,53 +920,53 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 11 May 2022 22:55:30 GMT  
 		Size: 223.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2ea34279c2a6f1333de907229d17951c47dfff106d9ce052e57a0a1da3584e69`  
-		Last Modified: Wed, 11 May 2022 23:10:43 GMT  
-		Size: 11.0 MB (10972094 bytes)  
+	-	`sha256:4074472d6e182676a0d014e69ac04d27eeb94a182a6be980ef1c168995e78f2f`  
+		Last Modified: Fri, 13 May 2022 10:25:05 GMT  
+		Size: 10.9 MB (10879255 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e3a3bef17492e05248a0673edc86cb2d1684354295082a6996df730d9725abad`  
-		Last Modified: Wed, 11 May 2022 23:10:40 GMT  
+	-	`sha256:5e0822501f2dc574980407e897d22815bd0cb968dce948f6eff17d97116c02e9`  
+		Last Modified: Fri, 13 May 2022 10:25:01 GMT  
 		Size: 494.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2fb1017a0b87d17202ec8e3631e06972c54e641d5bd02acd204ab191637e2b0`  
-		Last Modified: Wed, 11 May 2022 23:12:11 GMT  
-		Size: 25.0 MB (24957581 bytes)  
+	-	`sha256:13409f6ca0002e6162b5fa3804a7b1cf19ff0b74345117f41fbfaf206a5e733b`  
+		Last Modified: Fri, 13 May 2022 10:26:30 GMT  
+		Size: 25.0 MB (24960648 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e9db659ca9a984a37e609b5db5169d98a0a80257d5a2378b1b4543446a44d3d5`  
-		Last Modified: Wed, 11 May 2022 23:11:55 GMT  
+	-	`sha256:6d7660ece2ad750fe10fd1579b399ef13f261d8c8ed5251319e8a1c208eb2ca0`  
+		Last Modified: Fri, 13 May 2022 10:26:15 GMT  
 		Size: 2.5 KB (2454 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6203fa3badc00cbfd1f3efedba1f85ae0c022cf48a6280ec1581adc57dd0fd5`  
-		Last Modified: Wed, 11 May 2022 23:11:55 GMT  
-		Size: 248.0 B  
+	-	`sha256:206f520449002d7d157329fb30675a7266f26fb87cc7d5a5eb924c983e365ae4`  
+		Last Modified: Fri, 13 May 2022 10:26:15 GMT  
+		Size: 249.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2aaaf5262ebc5548ce49cef2b9dc830eb799a02e59ee98419b9cc2e935d76431`  
-		Last Modified: Wed, 11 May 2022 23:11:55 GMT  
-		Size: 8.6 KB (8574 bytes)  
+	-	`sha256:f286076bec31f36b76c593d4a515df5f0310a65f099128ac51dc0636ecc40af1`  
+		Last Modified: Fri, 13 May 2022 10:26:15 GMT  
+		Size: 8.6 KB (8573 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3406fd1839a4ae596aa7926265cace0a4641aea733ef42e6c0e879de8efebf13`  
-		Last Modified: Fri, 13 May 2022 07:42:11 GMT  
-		Size: 1.2 MB (1219951 bytes)  
+	-	`sha256:b172b8a3b712cc5d9b99f5263f76229d17a701340fdd9a81a89274502b6a5a47`  
+		Last Modified: Fri, 13 May 2022 13:26:41 GMT  
+		Size: 1.2 MB (1219991 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9582d84bfa918a43de365875e6411d28473146fff7f560921750f573d39d7f77`  
-		Last Modified: Fri, 13 May 2022 07:42:10 GMT  
-		Size: 3.8 MB (3762615 bytes)  
+	-	`sha256:ca5768a01f14c2a3cd26e0796d6f1223119dfdbc73919421f8ec385f989b2e9b`  
+		Last Modified: Fri, 13 May 2022 13:26:40 GMT  
+		Size: 3.8 MB (3762432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d2640a6cd21b170a955c8760762404ea14a4c515926060d763768ae389e79674`  
-		Last Modified: Fri, 13 May 2022 07:42:07 GMT  
+	-	`sha256:37b14a1a3ff088e963b4806b532c7120a3852b4c1ac6c242d5336c9c623a9113`  
+		Last Modified: Fri, 13 May 2022 13:26:38 GMT  
 		Size: 235.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:97eaf72f333c2deb63ac5dedd4bea3fc8c7bf0f1ac8d43fc186de8c7dba79b53`  
-		Last Modified: Fri, 13 May 2022 07:42:07 GMT  
-		Size: 586.0 B  
+	-	`sha256:6e9d5fcc20e9006c2f33bcb255eae27aeb4bb584c57b8ce81cc7274c2aaf7378`  
+		Last Modified: Fri, 13 May 2022 13:26:38 GMT  
+		Size: 587.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1bcd5c34e8b2e2d38c244e948b3af9b80bbf75f3e5a9f9b8ad6eb2e318a10666`  
-		Last Modified: Fri, 13 May 2022 07:42:44 GMT  
-		Size: 35.1 MB (35094908 bytes)  
+	-	`sha256:fc983b230d9779ed5b98b5d8697931ded4b3dc2db9d58d080a81cb8607616678`  
+		Last Modified: Fri, 13 May 2022 13:27:15 GMT  
+		Size: 35.1 MB (35095046 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bfce2444b2c71faf91b8c83357a7e0427adbbdde924b5f12ab39e2e1aedc6add`  
-		Last Modified: Fri, 13 May 2022 07:42:07 GMT  
-		Size: 2.0 KB (2027 bytes)  
+	-	`sha256:1eea7450f20da64ce4ef3c5fcdd7d39a90dc36eb8301d89e35d8b7c0350e79bd`  
+		Last Modified: Fri, 13 May 2022 13:26:38 GMT  
+		Size: 2.0 KB (2028 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `monica:3-fpm` - linux; ppc64le
