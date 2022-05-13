@@ -1,7 +1,7 @@
 ## `fedora:latest`
 
 ```console
-$ docker pull fedora@sha256:60b3d787a399071c47ca7b030135753b27430c149a082f07b93aaef6328f52b6
+$ docker pull fedora@sha256:cbf627299e327f564233aac6b97030f9023ca41d3453c497be2f5e8f7762d185
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -45,31 +45,31 @@ CMD ["/bin/bash"]
 ### `fedora:latest` - linux; arm variant v7
 
 ```console
-$ docker pull fedora@sha256:e576ebd3ec779d2bfae418ed723be9ba7dfb9cdafc1a03dea6f9d511371ddab0
+$ docker pull fedora@sha256:8cb5ad423ddd454aa5e8a57b89a8b0e1649a0f842afc72deb00b0082ec752c26
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.4 MB (51355675 bytes)**  
+-	Total Size: **54.5 MB (54512637 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5a474422f8a81a8da2dcef2ddeacf2d66b20ed6e66a2dcb76dd168e0ec4a198c`
+-	Image ID: `sha256:7309af8ce9b32329a2c1507a65b8bc14b29becc4d8f1f0f43b3eb816c3b88934`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
 # Fri, 23 Jul 2021 19:03:21 GMT
 LABEL maintainer=Clement Verna <cverna@fedoraproject.org>
-# Sat, 02 Oct 2021 18:49:21 GMT
-ENV DISTTAG=f35container FGC=f35 FBR=f35
-# Sun, 20 Mar 2022 09:15:03 GMT
-ADD file:126156355713512eb4dcf8a5c74f98cfee582ab1009b6a2ebb7f80df18c1cf04 in / 
-# Sun, 20 Mar 2022 09:15:04 GMT
+# Sun, 20 Mar 2022 09:15:23 GMT
+ENV DISTTAG=f36container FGC=f36 FBR=f36
+# Fri, 13 May 2022 06:02:41 GMT
+ADD file:4da01c2c8938b46f74a3273a1c03bd7efe82ca3fdb1ed254950662b2e0e24fa7 in / 
+# Fri, 13 May 2022 06:02:42 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:a15b8bae470bd37a7407e54b1c65921b9bac5bd4e7f29c6b2bf43c3102058a78`  
-		Last Modified: Sun, 20 Mar 2022 09:17:37 GMT  
-		Size: 51.4 MB (51355675 bytes)  
+	-	`sha256:39bffb763041b4b02d51f0d98fd46f75f82998d57b57b851c2a64a1d06669bb2`  
+		Last Modified: Fri, 13 May 2022 06:03:54 GMT  
+		Size: 54.5 MB (54512637 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `fedora:latest` - linux; arm64 variant v8
