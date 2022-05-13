@@ -1,9 +1,9 @@
-# `amazonlinux:2018.03.0.20220419.0-with-sources`
+# `amazonlinux:2018.03.0.20220503.0-with-sources`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5f74812e89dff5d7417f213101574bcafb217529538925d94bd5522e5df5ef86`
-- Created: `2022-04-23T01:21:23.363580353Z`
+- Image ID: `sha256:9d05eec4707c75703bdce6abd77c2fb00614c233b683e9af819205c335b2e666`
+- Created: `2022-05-12T22:53:03.178633366Z`
 - Virtual Size: ~ 620.11 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -517,25 +517,25 @@ Licenses (from `rpm --query`): GPLv3+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `rpm-4.11.3-40.79.amzn1.x86_64`
+### `rpm` package: `rpm-4.11.3-40.80.amzn1.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `rpm-build-libs-4.11.3-40.79.amzn1.x86_64`
+### `rpm` package: `rpm-build-libs-4.11.3-40.80.amzn1.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ and LGPLv2+ with exceptions
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `rpm-libs-4.11.3-40.79.amzn1.x86_64`
+### `rpm` package: `rpm-libs-4.11.3-40.80.amzn1.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ and LGPLv2+ with exceptions
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `rpm-python27-4.11.3-40.79.amzn1.x86_64`
+### `rpm` package: `rpm-python27-4.11.3-40.80.amzn1.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
