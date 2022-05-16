@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7619c1a0561f44994c5527d453687ac411749a02708aae7e966ce8407ad7a2b8`
-- Created: `2022-04-27T22:20:23.707223847Z`
-- Virtual Size: ~ 426.80 Mb  
+- Image ID: `sha256:23eb9a154db6b6e6b0ba7c0a0f656d5741f848b3d2ac66af2bf6113d5ba1d209`
+- Created: `2022-05-12T22:40:22.365179063Z`
+- Virtual Size: ~ 426.95 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -305,15 +305,15 @@ $ dnf --quiet download --source --url grep-2.20-3.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/grep-2.20-3.el7.src.rpm
 ```
 
-### `rpm` package: `gzip-1.5-10.el7.x86_64`
+### `rpm` package: `gzip-1.5-11.el7_9.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url gzip-1.5-10.el7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/gzip-1.5-10.el7.src.rpm
+$ dnf --quiet download --source --url gzip-1.5-11.el7_9
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/gzip-1.5-11.el7_9.src.rpm
 ```
 
 ### `rpm` package: `info-5.1-5.el7.x86_64`
@@ -1269,13 +1269,13 @@ $ dnf --quiet download --source --url yum-utils-1.1.31-54.0.1.el7_8.noarch
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/yum-utils-1.1.31-54.0.1.el7_8.src.rpm
 ```
 
-### `rpm` package: `zlib-1.2.7-19.el7_9.x86_64`
+### `rpm` package: `zlib-1.2.7-20.el7_9.x86_64`
 
 Licenses (from `rpm --query`): zlib and Boost
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url zlib-1.2.7-19.el7_9
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/zlib-1.2.7-19.el7_9.src.rpm
+$ dnf --quiet download --source --url zlib-1.2.7-20.el7_9
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/zlib-1.2.7-20.el7_9.src.rpm
 ```
