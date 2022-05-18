@@ -1,14 +1,15 @@
 ## `buildpack-deps:kinetic`
 
 ```console
-$ docker pull buildpack-deps@sha256:17afb36630053ded9a7f5346d3c5960c91844dbce4340c35e30cc0981b9e99ad
+$ docker pull buildpack-deps@sha256:844f92d2f65a4ae0d258412da5587a55a3b3fa5c69b689b7c44d56bcd5173978
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 4
+-	Platforms: 5
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
+	-	linux; riscv64
 	-	linux; s390x
 
 ### `buildpack-deps:kinetic` - linux; amd64
@@ -159,6 +160,56 @@ RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		auto
 	-	`sha256:7b24717fdc92b09bfb3f6a6447619030376dff0f1b563d993e1ecefd5fab6280`  
 		Last Modified: Wed, 18 May 2022 18:46:54 GMT  
 		Size: 168.6 MB (168579649 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `buildpack-deps:kinetic` - linux; riscv64
+
+```console
+$ docker pull buildpack-deps@sha256:317b3f038b229781dff2d87ee158f5084aeac6d1ba14f8f0b2baae9cd5731948
+```
+
+-	Docker Version: 20.10.12
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **278.9 MB (278859212 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:153840b2928ee53edda31e139391c257a1be29375fd1f7d5b1ff253977d88b45`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Fri, 29 Apr 2022 23:21:28 GMT
+ADD file:88e52fba8a3ffc283333df24e0d115ab58328ac1d5f6cf585d17422676e146d3 in / 
+# Fri, 29 Apr 2022 23:21:30 GMT
+CMD ["bash"]
+# Wed, 18 May 2022 18:33:01 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
+# Wed, 18 May 2022 18:33:44 GMT
+RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
+# Wed, 18 May 2022 18:37:29 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
+# Wed, 18 May 2022 18:44:12 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+```
+
+-	Layers:
+	-	`sha256:5e53595b65ef34f5f4d764d94e324a0b884612b1b49f768cdd94321c4f22fefd`  
+		Last Modified: Fri, 29 Apr 2022 23:44:55 GMT  
+		Size: 27.7 MB (27745108 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d71e2b3e035fbf74038baa262139105344a466094a8b69c84a3e3808b2d77a1e`  
+		Last Modified: Wed, 18 May 2022 19:13:17 GMT  
+		Size: 5.7 MB (5664247 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b2de7c23d6a5c7c3e733b1cbad086084a34c74a8d01aaa7df95a4245c3f5e875`  
+		Last Modified: Wed, 18 May 2022 19:13:14 GMT  
+		Size: 3.8 MB (3782735 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7fccda12cae526874d6fbdb368003a21309c6a0f4c332aac35b3b8d73dec90d9`  
+		Last Modified: Wed, 18 May 2022 19:15:25 GMT  
+		Size: 42.1 MB (42102501 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d8948cb781a7b0661cb9c3d803d602bde6e3966b43476702f87ee702f200489c`  
+		Last Modified: Wed, 18 May 2022 19:21:35 GMT  
+		Size: 199.6 MB (199564621 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:kinetic` - linux; s390x
