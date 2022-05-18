@@ -1,10 +1,10 @@
-# `tomcat:10.0.20-jdk8-openjdk-buster`
+# `tomcat:10.0.21-jdk8-openjdk-buster`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c59614c974c1f242a626a8929ae72cd19347dd9b07869453fff9b6bcd79b98f8`
-- Created: `2022-05-11T23:56:16.935315739Z`
-- Virtual Size: ~ 534.35 Mb  
+- Image ID: `sha256:635dd09d735b77b63bdd2a7f056037d02b584fb566216b3576ea27efad520b8f`
+- Created: `2022-05-18T03:09:29.021443073Z`
+- Virtual Size: ~ 539.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -18,8 +18,8 @@
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `GPG_KEYS=A9C5DF4D22E99998D9875A5110C01C5A2F6059E7`
   - `TOMCAT_MAJOR=10`
-  - `TOMCAT_VERSION=10.0.20`
-  - `TOMCAT_SHA512=53bfdbac2e6af5cca97dc01fffb0428380fbe21d8375f45d015c16a57017ff946fdc555ebad9e9fcbcb97b438c4f6daf3aa39d36ca79fd5a372cfc1a80b7117f`
+  - `TOMCAT_VERSION=10.0.21`
+  - `TOMCAT_SHA512=a20d905486fc446bcc67501418520ab8a30425944fe30f30fb3306ef975573cd0a6c439c0b764bcec9144083684668ebe4aa0c80ccc7dd931af6c2f487f2fdba`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2285,7 +2285,6 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libssl1.1:amd64=1.1.1n-0+deb10u1`
 - `openssl=1.1.1n-0+deb10u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
@@ -2307,6 +2306,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openssl/1.1.1n-0+deb10u1/ (for browsing the source)
 - https://sources.debian.net/src/openssl/1.1.1n-0+deb10u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openssl/1.1.1n-0+deb10u1/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `openssl=1.1.1n-0+deb10u2`
+
+Binary Packages:
+
+- `libssl1.1:amd64=1.1.1n-0+deb10u2`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris openssl=1.1.1n-0+deb10u2
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1n-0%2bdeb10u2.dsc' openssl_1.1.1n-0+deb10u2.dsc 2679 SHA256:d24c2d4aaf3b3725ab9955193f63a0dd683f40ef8a2b196b2d83069a6bdfd94b
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1n.orig.tar.gz' openssl_1.1.1n.orig.tar.gz 9850712 SHA256:40dceb51a4f6a5275bde0e6bf20ef4b91bfc32ed57c0552e2e8e15463372b17a
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1n.orig.tar.gz.asc' openssl_1.1.1n.orig.tar.gz.asc 488 SHA256:e0e89e9467102880ee6f2ee8c1413933eb1268969afb97b9bec61e2190a62fd0
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1n-0%2bdeb10u2.debian.tar.xz' openssl_1.1.1n-0+deb10u2.debian.tar.xz 85144 SHA256:cc4c68db09310d6c5c2758de71f93c050267408fcc2f7a64e9cd02f874e4f012
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/openssl/1.1.1n-0+deb10u2/ (for browsing the source)
+- https://sources.debian.net/src/openssl/1.1.1n-0+deb10u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/1.1.1n-0+deb10u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.23.15-2+deb10u1`
 
