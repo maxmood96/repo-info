@@ -1,10 +1,10 @@
-# `cassandra:4.0.3`
+# `cassandra:4.0.4`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3f3ee8142ca419b4884a5683bc05a043a7717e6e5d25cf88bda3925c041591f6`
-- Created: `2022-04-30T04:05:58.859017475Z`
-- Virtual Size: ~ 341.23 Mb  
+- Image ID: `sha256:08ae7756cb782881171f63098c2641abd04cc5914ba4f1f2b79a83e62ac7da41`
+- Created: `2022-05-18T01:38:48.4677525Z`
+- Virtual Size: ~ 341.30 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -20,8 +20,8 @@
   - `CASSANDRA_HOME=/opt/cassandra`
   - `CASSANDRA_CONF=/etc/cassandra`
   - `GPG_KEYS=CEC86BB4A0BA9D0F90397CAEF8358FA2F2833C93 	C4965EE9E3015D192CCCF2B6F758CE318D77295D 	5AED1BF378E9A19DADE1BCB34BD736A82B5C1B00 	514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB 	9E66CEC6106D578D0B1EB9BFF1000962B7F6840C 	C4009872C59B49561310D966D0062876AF30F054 	B7842CDAF36E6A3214FAE35D5E85B9AE0B84C041 	3E9C876907A560ACA00964F363E9BAD215BBF5F0 	F8B7FD00E05C932991A2CD6150EE103D162C5A55`
-  - `CASSANDRA_VERSION=4.0.3`
-  - `CASSANDRA_SHA512=b328a6bed9bf2d92f1e44a540bf1d800e26163257ca8e69d6f43ca792aeefe5bacf61b6e5bf2cf7233e34a168ab19de96a52fb3fe82304b7749fde2d7baa81d9`
+  - `CASSANDRA_VERSION=4.0.4`
+  - `CASSANDRA_SHA512=67a7830d32851bd8b7b02731a331a7640f5d7ab2a4d0b7caf1dee6e301c7508ce5209bd60faf42db915462d0796df833c021a4a964efce55561df57e91c27432`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -78,13 +78,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.0.6
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.0.6.dsc' apt_2.0.6.dsc 2835 SHA512:71a27905e35c3c53ed7e7cb255c203ff24b49a53e81d802425eca2ec6b3b587b54d54046f8970e79b51d2d23034b15509dda517d54cfd3699ab0f22111763a23
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.0.6.tar.xz' apt_2.0.6.tar.xz 2176328 SHA512:a62ca7245039791384137cc5a417a876346e570e1a6c3d9856242003ee393e91c013fe7df2154792ba0b222a95cfda31847a654c444061587353d9020d69a167
-```
 
 ### `dpkg` source package: `attr=1:2.4.48-5`
 
@@ -1605,14 +1601,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.4.49+dfsg-2ubuntu1.8
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.49%2bdfsg-2ubuntu1.8.dsc' openldap_2.4.49+dfsg-2ubuntu1.8.dsc 3136 SHA512:fce0af3ba41daa23607c15ff9152277f27b185ec6e9ebfa8b1bfe1817cf13c6f00b86ad93b597a0c283ab2ea326194259aff83fb49fac99454b260dff317f350
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.49%2bdfsg.orig.tar.gz' openldap_2.4.49+dfsg.orig.tar.gz 4844726 SHA512:c2096f6e37bae8e4d4dcc5cc8dad783996bc8677e7e62a06b9f55857f8950726ca3e3b0d8368563c8985123175f63625354ad5ac271db8b55d3ac62e8906d4c7
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.49%2bdfsg-2ubuntu1.8.debian.tar.xz' openldap_2.4.49+dfsg-2ubuntu1.8.debian.tar.xz 187956 SHA512:918483e21af3233daa5a8b04da0c87fc010049ad5e66230d36a3737f511cd395f5f1f6753139f13520266f9fe86c07ae9c06c90128ca800680ecd3d23bc4b9a4
-```
 
 ### `dpkg` source package: `openssl=1.1.1f-1ubuntu2.12`
 
@@ -1935,14 +1926,9 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.8.1-1ubuntu5.20.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1-1ubuntu5.20.04.1.dsc' shadow_4.8.1-1ubuntu5.20.04.1.dsc 2377 SHA512:e82923df5238b076edab6dda322213e2231e156c0c571d404fde0e7a91e1ee3491948af13acb40f3405b54169935411357b4b878849dac04bee7d73e13a42bb8
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1.orig.tar.xz' shadow_4.8.1.orig.tar.xz 1611196 SHA512:780a983483d847ed3c91c82064a0fa902b6f4185225978241bc3bc03fcc3aa143975b46aee43151c6ba43efcfdb1819516b76ba7ad3d1d3c34fcc38ea42e917b
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1-1ubuntu5.20.04.1.debian.tar.xz' shadow_4.8.1-1ubuntu5.20.04.1.debian.tar.xz 86252 SHA512:cd31ba719b2555f8465f36889253bd9fbe997e97010f2e1f40961d55cb4ff08a438e6b1a5e3560028e81e8616338af3888620a058743bb113e1464ec4c01949b
-```
 
 ### `dpkg` source package: `sqlite3=3.31.1-4ubuntu0.2`
 
