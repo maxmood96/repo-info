@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:72a153898ad6882b35217ab25274ce23450c2ac8fee9d45562ef8261ea1a6e7e`
-- Created: `2022-05-12T19:20:02.559161788Z`
+- Image ID: `sha256:2d0b965a04fddb418a588503a4317c72b10f1bf4be47415b6a9a0d6de14abd8b`
+- Created: `2022-05-18T19:19:49.829955119Z`
 - Virtual Size: ~ 307.15 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `DOCKER_VERSION=20.10.16`
   - `DOCKER_BUILDX_VERSION=0.8.2`
-  - `DOCKER_COMPOSE_VERSION=2.5.0`
+  - `DOCKER_COMPOSE_VERSION=2.5.1`
   - `DOCKER_TLS_CERTDIR=/certs`
 
 ## `apk` (`.apk`-based packages)
