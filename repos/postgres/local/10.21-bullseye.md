@@ -1,10 +1,10 @@
-# `postgres:10.20-bullseye`
+# `postgres:10.21-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f17a7e423ab991da6978a927908d0fd56b0bf0fef9ef085df6e0748dcef9f6e1`
-- Created: `2022-05-11T12:25:27.298322852Z`
-- Virtual Size: ~ 241.08 Mb  
+- Image ID: `sha256:b83536304adeb87d6319a56a9c29550d718a6262c11c6ac1c9607e20104e1bb5`
+- Created: `2022-05-18T00:51:39.121481361Z`
+- Virtual Size: ~ 241.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,5 +14,5 @@
   - `GOSU_VERSION=1.14`
   - `LANG=en_US.utf8`
   - `PG_MAJOR=10`
-  - `PG_VERSION=10.20-1.pgdg110+1`
+  - `PG_VERSION=10.21-1.pgdg110+1`
   - `PGDATA=/var/lib/postgresql/data`

@@ -1,10 +1,10 @@
-# `postgres:12.10-alpine`
+# `postgres:12.11-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d8e3d21aa57119dbabaffc74d25cdf1681b0f09d337c4f44a14c98264056af01`
-- Created: `2022-04-05T07:39:22.621321813Z`
-- Virtual Size: ~ 205.54 Mb  
+- Image ID: `sha256:b76727572d69fbddea3ca4db53bb736a10cadae687656b464cc27473bfeda5bb`
+- Created: `2022-05-18T00:46:55.073973979Z`
+- Virtual Size: ~ 208.87 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,8 +13,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=en_US.utf8`
   - `PG_MAJOR=12`
-  - `PG_VERSION=12.10`
-  - `PG_SHA256=83dd192e6034951192b9a86dc19cf3717a8b82120e2f11a0a36723c820d2b257`
+  - `PG_VERSION=12.11`
+  - `PG_SHA256=1026248a5fd2beeaf43e4c7236ac817e56d58b681a335856465dfbc75b3e8302`
   - `PGDATA=/var/lib/postgresql/data`
 
 ## `apk` (`.apk`-based packages)
@@ -243,16 +243,16 @@ GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1n-r0 description:
+libcrypto1.1-1.1.1o-r0 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1n-r0 webpage:
+libcrypto1.1-1.1.1o-r0 webpage:
 https://www.openssl.org/
 
-libcrypto1.1-1.1.1n-r0 installed size:
+libcrypto1.1-1.1.1o-r0 installed size:
 2676 KiB
 
-libcrypto1.1-1.1.1n-r0 license:
+libcrypto1.1-1.1.1o-r0 license:
 OpenSSL
 
 ```
@@ -396,16 +396,16 @@ custom
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1n-r0 description:
+libssl1.1-1.1.1o-r0 description:
 SSL shared libraries
 
-libssl1.1-1.1.1n-r0 webpage:
+libssl1.1-1.1.1o-r0 webpage:
 https://www.openssl.org/
 
-libssl1.1-1.1.1n-r0 installed size:
+libssl1.1-1.1.1o-r0 installed size:
 528 KiB
 
-libssl1.1-1.1.1n-r0 license:
+libssl1.1-1.1.1o-r0 license:
 OpenSSL
 
 ```
@@ -464,16 +464,16 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.9.13-r0 description:
+libxml2-2.9.14-r0 description:
 XML parsing library, version 2
 
-libxml2-2.9.13-r0 webpage:
+libxml2-2.9.14-r0 webpage:
 http://www.xmlsoft.org/
 
-libxml2-2.9.13-r0 installed size:
+libxml2-2.9.14-r0 installed size:
 1200 KiB
 
-libxml2-2.9.13-r0 license:
+libxml2-2.9.14-r0 license:
 MIT
 
 ```
@@ -668,16 +668,16 @@ Public-Domain
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.2.5-r0 description:
+xz-libs-5.2.5-r1 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.2.5-r0 webpage:
+xz-libs-5.2.5-r1 webpage:
 https://tukaani.org/xz
 
-xz-libs-5.2.5-r0 installed size:
+xz-libs-5.2.5-r1 installed size:
 148 KiB
 
-xz-libs-5.2.5-r0 license:
+xz-libs-5.2.5-r1 license:
 GPL-2.0-or-later AND Public-Domain AND LGPL-2.1-or-later
 
 ```
@@ -685,16 +685,16 @@ GPL-2.0-or-later AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.2.12-r0 description:
+zlib-1.2.12-r1 description:
 A compression/decompression Library
 
-zlib-1.2.12-r0 webpage:
+zlib-1.2.12-r1 webpage:
 https://zlib.net/
 
-zlib-1.2.12-r0 installed size:
+zlib-1.2.12-r1 installed size:
 108 KiB
 
-zlib-1.2.12-r0 license:
+zlib-1.2.12-r1 license:
 Zlib
 
 ```
