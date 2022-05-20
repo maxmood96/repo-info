@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:37fbd7de393c9fa1c5d16718411a58b917678cc30a476005fa3ef7716b0dbd70`
-- Created: `2022-04-30T05:34:11.421615749Z`
-- Virtual Size: ~ 311.29 Mb  
+- Image ID: `sha256:8f1f908e89b691de90792afcf4431fa3649b0de1a8b748362e3ce71ffcfc3d46`
+- Created: `2022-05-18T01:11:45.708673879Z`
+- Virtual Size: ~ 311.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ibm/helpers/runtime/docker-server.sh"]`
@@ -14,24 +14,24 @@
   - `JAVA_VERSION=8.0.7.6`
   - `JAVA_HOME=/opt/ibm/java/jre`
   - `IBM_JAVA_OPTIONS=-Xshareclasses:name=liberty,readonly,nonfatal,cacheDir=/output/.classCache/ -Dosgi.checkConfiguration=false -XX:+UseContainerSupport`
-  - `LIBERTY_VERSION=22.0.0_04`
+  - `LIBERTY_VERSION=22.0.0_05`
   - `LOG_DIR=/logs`
   - `WLP_OUTPUT_DIR=/opt/ibm/wlp/output`
   - `OPENJ9_SCC=true`
   - `RANDFILE=/tmp/.rnd`
 - Labels:
-  - `BuildLabel=cl220420220328-1303`
+  - `BuildLabel=cl220520220425-0301`
   - `ProductID=fbf6a96d49214c0abc6a3bc5da6e48cd`
   - `ProductName=WebSphere Application Server Liberty`
-  - `ProductVersion=22.0.0.4`
+  - `ProductVersion=22.0.0.5`
   - `org.opencontainers.image.authors=Leo Christy Jesuraj, Arthur De Magalhaes, Chris Potter`
   - `org.opencontainers.image.description=This image contains the WebSphere Liberty runtime with IBM's Java and Ubuntu as the base OS.  For more information on this image please see https://github.com/WASdev/ci.docker#building-an-application-image`
   - `org.opencontainers.image.documentation=https://www.ibm.com/support/knowledgecenter/SSAW57_liberty/com.ibm.websphere.wlp.nd.multiplatform.doc/ae/cwlp_about.html`
-  - `org.opencontainers.image.revision=cl220420220328-1303`
+  - `org.opencontainers.image.revision=cl220520220425-0301`
   - `org.opencontainers.image.title=IBM WebSphere Liberty`
   - `org.opencontainers.image.url=http://wasdev.net`
   - `org.opencontainers.image.vendor=IBM`
-  - `org.opencontainers.image.version=22.0.0.4`
+  - `org.opencontainers.image.version=22.0.0.5`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1017,7 +1017,6 @@ $ apt-get source -qq --print-uris nettle=3.4.1-0ubuntu0.18.04.1
 Binary Packages:
 
 - `libssl1.1:amd64=1.1.1-1ubuntu2.1~18.04.15`
-- `openssl=1.1.1-1ubuntu2.1~18.04.15`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1026,6 +1025,25 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+
+### `dpkg` source package: `openssl=1.1.1-1ubuntu2.1~18.04.17`
+
+Binary Packages:
+
+- `openssl=1.1.1-1ubuntu2.1~18.04.17`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris openssl=1.1.1-1ubuntu2.1~18.04.17
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1-1ubuntu2.1%7e18.04.17.dsc' openssl_1.1.1-1ubuntu2.1~18.04.17.dsc 2514 SHA512:2e4b0ee1b449678a71a372ea802f0146addfbb0c79ada15f27670104e84040e424694e5b581ebc8e30a616fc528e8bb71d1c67dc18fbcf11e3e6239758c55d5a
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1.orig.tar.gz' openssl_1.1.1.orig.tar.gz 8337920 SHA512:c0284a4fe84bdf765ca5bc5148da4441ffc36392cfecaf9d372af00cf93b6de5681cab1248b6f8246474532155dc205da5ad49549ad7c61c07c917145e7c9c71
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1-1ubuntu2.1%7e18.04.17.debian.tar.xz' openssl_1.1.1-1ubuntu2.1~18.04.17.debian.tar.xz 132180 SHA512:97ef504bc9680313e616982bec9515c8681cafba78afeab53db8b99ee88c0273e0cc08a564b6c884f04d1d2f11adf032f109e119a189d7af3d6365c87055f833
+```
 
 ### `dpkg` source package: `p11-kit=0.23.9-2ubuntu0.1`
 

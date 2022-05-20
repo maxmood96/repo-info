@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2d9ac487745fd6a53d8dd6a5e29f6edea909b02996f88fa86d659c61660dd036`
-- Created: `2022-04-30T05:47:45.444788341Z`
-- Virtual Size: ~ 682.41 Mb  
+- Image ID: `sha256:9c06bbbaef41c2375d126477563b7ebddfd8ff1de606e8855837f5028075148e`
+- Created: `2022-05-18T01:35:12.551862507Z`
+- Virtual Size: ~ 683.46 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ibm/helpers/runtime/docker-server.sh"]`
@@ -17,25 +17,25 @@
   - `JAVA_VERSION=jdk-17.0.3+7_openj9-0.32.0`
   - `JAVA_HOME=/opt/java/openjdk`
   - `JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal`
-  - `LIBERTY_VERSION=22.0.0_04`
+  - `LIBERTY_VERSION=22.0.0_05`
   - `LOG_DIR=/logs`
   - `WLP_OUTPUT_DIR=/opt/ibm/wlp/output`
   - `OPENJ9_SCC=true`
   - `RANDFILE=/tmp/.rnd`
   - `OPENJ9_JAVA_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal -Dosgi.checkConfiguration=false`
 - Labels:
-  - `BuildLabel=cl220420220328-1303`
+  - `BuildLabel=cl220520220425-0301`
   - `ProductID=fbf6a96d49214c0abc6a3bc5da6e48cd`
   - `ProductName=WebSphere Application Server Liberty`
-  - `ProductVersion=22.0.0.4`
+  - `ProductVersion=22.0.0.5`
   - `org.opencontainers.image.authors=Chris Potter, Christy Jesuraj, Melissa Lee`
   - `org.opencontainers.image.description=This image contains the WebSphere Liberty runtime with IBM Semeru Runtime Open Edition OpenJDK with OpenJ9 and Ubuntu as the base OS.  For more information on this image please see https://github.com/WASdev/ci.docker#building-an-application-image`
   - `org.opencontainers.image.documentation=https://www.ibm.com/support/knowledgecenter/SSAW57_liberty/com.ibm.websphere.wlp.nd.multiplatform.doc/ae/cwlp_about.html`
-  - `org.opencontainers.image.revision=cl220420220328-1303`
+  - `org.opencontainers.image.revision=cl220520220425-0301`
   - `org.opencontainers.image.title=IBM WebSphere Liberty`
   - `org.opencontainers.image.url=http://wasdev.net`
   - `org.opencontainers.image.vendor=IBM`
-  - `org.opencontainers.image.version=22.0.0.4`
+  - `org.opencontainers.image.version=22.0.0.5`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1397,7 +1397,6 @@ This is *usually* due to a new package version being released and the old versio
 Binary Packages:
 
 - `libssl1.1:amd64=1.1.1f-1ubuntu2.12`
-- `openssl=1.1.1f-1ubuntu2.12`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1406,6 +1405,25 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+
+### `dpkg` source package: `openssl=1.1.1f-1ubuntu2.13`
+
+Binary Packages:
+
+- `openssl=1.1.1f-1ubuntu2.13`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris openssl=1.1.1f-1ubuntu2.13
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.13.dsc' openssl_1.1.1f-1ubuntu2.13.dsc 2470 SHA512:123a6be01f4c4e9f282b4ec5851428f6271672489dab3cfcea0e38da9b680c032415be792877767818b93b1f82c0707d1afce8b72fc60c85587e13139881e0b9
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f.orig.tar.gz' openssl_1.1.1f.orig.tar.gz 9792828 SHA512:b00bd9b5ad5298fbceeec6bb19c1ab0c106ca5cfb31178497c58bf7e0e0cf30fcc19c20f84e23af31cc126bf2447d3e4f8461db97bafa7bd78f69561932f000c
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.13.debian.tar.xz' openssl_1.1.1f-1ubuntu2.13.debian.tar.xz 173700 SHA512:e074e6051de63add4a2e75dcc44f3adad949be90d2a6e36cccbb01d620e65a655667fb520e9c2e8ece2b96cfeb89a426157cfae43f67730bf08176e3f1deabd3
+```
 
 ### `dpkg` source package: `p11-kit=0.23.20-1ubuntu0.1`
 
@@ -1634,14 +1652,9 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.8.1-1ubuntu5.20.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1-1ubuntu5.20.04.1.dsc' shadow_4.8.1-1ubuntu5.20.04.1.dsc 2377 SHA512:e82923df5238b076edab6dda322213e2231e156c0c571d404fde0e7a91e1ee3491948af13acb40f3405b54169935411357b4b878849dac04bee7d73e13a42bb8
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1.orig.tar.xz' shadow_4.8.1.orig.tar.xz 1611196 SHA512:780a983483d847ed3c91c82064a0fa902b6f4185225978241bc3bc03fcc3aa143975b46aee43151c6ba43efcfdb1819516b76ba7ad3d1d3c34fcc38ea42e917b
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1-1ubuntu5.20.04.1.debian.tar.xz' shadow_4.8.1-1ubuntu5.20.04.1.debian.tar.xz 86252 SHA512:cd31ba719b2555f8465f36889253bd9fbe997e97010f2e1f40961d55cb4ff08a438e6b1a5e3560028e81e8616338af3888620a058743bb113e1464ec4c01949b
-```
 
 ### `dpkg` source package: `sqlite3=3.31.1-4ubuntu0.2`
 
