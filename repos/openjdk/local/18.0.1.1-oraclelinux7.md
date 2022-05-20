@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:df66c475908626d98ef1060ef9990ae99112e8b138fc0d5d6d116f035464a536`
-- Created: `2022-05-12T22:42:48.462129566Z`
+- Image ID: `sha256:53b0747f1b12fdd46d9f713df2361695edff1392c0e0123acb334d8af4475d5d`
+- Created: `2022-05-19T18:23:42.954418766Z`
 - Virtual Size: ~ 495.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -291,26 +291,26 @@ $ dnf --quiet download --source --url glib2-2.56.1-9.el7_9
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/glib2-2.56.1-9.el7_9.src.rpm
 ```
 
-### `rpm` package: `glibc-2.17-325.0.1.el7_9.x86_64`
+### `rpm` package: `glibc-2.17-325.0.3.el7_9.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-2.17-325.0.1.el7_9
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/glibc-2.17-325.0.1.el7_9.src.rpm
+$ dnf --quiet download --source --url glibc-2.17-325.0.3.el7_9
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/glibc-2.17-325.0.3.el7_9.src.rpm
 ```
 
-### `rpm` package: `glibc-common-2.17-325.0.1.el7_9.x86_64`
+### `rpm` package: `glibc-common-2.17-325.0.3.el7_9.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-common-2.17-325.0.1.el7_9
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/glibc-2.17-325.0.1.el7_9.src.rpm
+$ dnf --quiet download --source --url glibc-common-2.17-325.0.3.el7_9
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/glibc-2.17-325.0.3.el7_9.src.rpm
 ```
 
 ### `rpm` package: `gmp-6.0.0-15.el7.x86_64`
