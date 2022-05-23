@@ -16,6 +16,11 @@
 -	[`ros:galactic-ros-core-focal`](#rosgalactic-ros-core-focal)
 -	[`ros:galactic-ros1-bridge`](#rosgalactic-ros1-bridge)
 -	[`ros:galactic-ros1-bridge-focal`](#rosgalactic-ros1-bridge-focal)
+-	[`ros:humble`](#roshumble)
+-	[`ros:humble-ros-base`](#roshumble-ros-base)
+-	[`ros:humble-ros-base-jammy`](#roshumble-ros-base-jammy)
+-	[`ros:humble-ros-core`](#roshumble-ros-core)
+-	[`ros:humble-ros-core-jammy`](#roshumble-ros-core-jammy)
 -	[`ros:latest`](#roslatest)
 -	[`ros:melodic`](#rosmelodic)
 -	[`ros:melodic-perception`](#rosmelodic-perception)
@@ -2978,6 +2983,51 @@ COPY file:f2fca591c0e2a31379c7ea28a9948ef5ee9d4a95b4831016253c1ef1a4f39718 in /
 		Last Modified: Sat, 30 Apr 2022 00:43:28 GMT  
 		Size: 246.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `ros:humble`
+
+```console
+$ docker pull ros@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `ros:humble-ros-base`
+
+```console
+$ docker pull ros@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `ros:humble-ros-base-jammy`
+
+```console
+$ docker pull ros@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `ros:humble-ros-core`
+
+```console
+$ docker pull ros@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
+
+## `ros:humble-ros-core-jammy`
+
+```console
+$ docker pull ros@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `ros:latest`
 
