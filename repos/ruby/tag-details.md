@@ -1749,7 +1749,12 @@ CMD ["irb"]
 
 ## `ruby:2-alpine3.16`
 
-**does not exist** (yet?)
+```console
+$ docker pull ruby@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `ruby:2-bullseye`
 
@@ -6411,7 +6416,12 @@ CMD ["irb"]
 
 ## `ruby:2.7-alpine3.16`
 
-**does not exist** (yet?)
+```console
+$ docker pull ruby@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `ruby:2.7-bullseye`
 
@@ -11073,7 +11083,12 @@ CMD ["irb"]
 
 ## `ruby:2.7.6-alpine3.16`
 
-**does not exist** (yet?)
+```console
+$ docker pull ruby@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `ruby:2.7.6-bullseye`
 
@@ -15735,7 +15750,12 @@ CMD ["irb"]
 
 ## `ruby:3-alpine3.16`
 
-**does not exist** (yet?)
+```console
+$ docker pull ruby@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `ruby:3-bullseye`
 
@@ -20397,7 +20417,12 @@ CMD ["irb"]
 
 ## `ruby:3.0-alpine3.16`
 
-**does not exist** (yet?)
+```console
+$ docker pull ruby@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `ruby:3.0-bullseye`
 
@@ -25059,7 +25084,12 @@ CMD ["irb"]
 
 ## `ruby:3.0.4-alpine3.16`
 
-**does not exist** (yet?)
+```console
+$ docker pull ruby@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `ruby:3.0.4-bullseye`
 
@@ -29721,7 +29751,12 @@ CMD ["irb"]
 
 ## `ruby:3.1-alpine3.16`
 
-**does not exist** (yet?)
+```console
+$ docker pull ruby@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `ruby:3.1-bullseye`
 
@@ -34383,7 +34418,12 @@ CMD ["irb"]
 
 ## `ruby:3.1.2-alpine3.16`
 
-**does not exist** (yet?)
+```console
+$ docker pull ruby@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `ruby:3.1.2-bullseye`
 
@@ -39045,7 +39085,12 @@ CMD ["irb"]
 
 ## `ruby:3.2-rc-alpine3.16`
 
-**does not exist** (yet?)
+```console
+$ docker pull ruby@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `ruby:3.2-rc-bullseye`
 
@@ -43707,7 +43752,12 @@ CMD ["irb"]
 
 ## `ruby:3.2.0-preview1-alpine3.16`
 
-**does not exist** (yet?)
+```console
+$ docker pull ruby@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `ruby:3.2.0-preview1-bullseye`
 
@@ -47680,7 +47730,12 @@ CMD ["irb"]
 
 ## `ruby:alpine3.16`
 
-**does not exist** (yet?)
+```console
+$ docker pull ruby@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `ruby:bullseye`
 
