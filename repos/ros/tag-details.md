@@ -17,6 +17,8 @@
 -	[`ros:galactic-ros1-bridge`](#rosgalactic-ros1-bridge)
 -	[`ros:galactic-ros1-bridge-focal`](#rosgalactic-ros1-bridge-focal)
 -	[`ros:humble`](#roshumble)
+-	[`ros:humble-perception`](#roshumble-perception)
+-	[`ros:humble-perception-jammy`](#roshumble-perception-jammy)
 -	[`ros:humble-ros-base`](#roshumble-ros-base)
 -	[`ros:humble-ros-base-jammy`](#roshumble-ros-base-jammy)
 -	[`ros:humble-ros-core`](#roshumble-ros-core)
@@ -45,6 +47,8 @@
 -	[`ros:noetic-ros-core-buster`](#rosnoetic-ros-core-buster)
 -	[`ros:noetic-ros-core-focal`](#rosnoetic-ros-core-focal)
 -	[`ros:rolling`](#rosrolling)
+-	[`ros:rolling-perception`](#rosrolling-perception)
+-	[`ros:rolling-perception-jammy`](#rosrolling-perception-jammy)
 -	[`ros:rolling-ros-base`](#rosrolling-ros-base)
 -	[`ros:rolling-ros-base-jammy`](#rosrolling-ros-base-jammy)
 -	[`ros:rolling-ros-core`](#rosrolling-ros-core)
@@ -3188,6 +3192,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-humble-
 		Last Modified: Mon, 23 May 2022 22:48:49 GMT  
 		Size: 22.4 MB (22425004 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `ros:humble-perception`
+
+**does not exist** (yet?)
+
+## `ros:humble-perception-jammy`
+
+**does not exist** (yet?)
 
 ## `ros:humble-ros-base`
 
@@ -10092,6 +10104,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling
 		Last Modified: Sat, 30 Apr 2022 00:44:28 GMT  
 		Size: 22.5 MB (22494500 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `ros:rolling-perception`
+
+**does not exist** (yet?)
+
+## `ros:rolling-perception-jammy`
+
+**does not exist** (yet?)
 
 ## `ros:rolling-ros-base`
 
