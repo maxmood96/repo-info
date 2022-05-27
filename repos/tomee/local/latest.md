@@ -1,4 +1,4 @@
-# `tomee:11-jre-8.0.11-webprofile`
+# `tomee:8.0.11-jre11-OpenJDK-debian-webprofile`
 
 ## Docker Metadata
 
