@@ -1,12 +1,13 @@
 ## `debian:experimental-20220527`
 
 ```console
-$ docker pull debian@sha256:791b5439f499780b11ec12e81bcd5987adde26d5c6376e3d7a8614854431a552
+$ docker pull debian@sha256:3c9d0d6473d4db810fafb3442455d6ff6fbec119f34adc2bdd2863ba5136f657
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 8
+-	Platforms: 9
 	-	linux; amd64
+	-	linux; arm variant v5
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	linux; 386
@@ -44,6 +45,38 @@ RUN echo 'deb http://deb.debian.org/debian experimental main' > /etc/apt/sources
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:724808e91286c41b803afdd235f8da465ea6108236b99d3fee65b159188df447`  
 		Last Modified: Sat, 28 May 2022 01:30:23 GMT  
+		Size: 221.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `debian:experimental-20220527` - linux; arm variant v5
+
+```console
+$ docker pull debian@sha256:ae369d3e6622caf32c7f7424fa8c7a51e1351a726a4cbf2a9a5ba008c61be0a7
+```
+
+-	Docker Version: 20.10.12
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **51.0 MB (50961685 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a698af473e69f4ac6c3078bc07541c8c6b94fc14a913054dd52b06ecbeb530b9`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Sat, 28 May 2022 02:10:21 GMT
+ADD file:55e33392508c2f2de6ec288235683efb7e8d15c3d96f4258084d3abca28d18cc in / 
+# Sat, 28 May 2022 02:10:22 GMT
+CMD ["bash"]
+# Sat, 28 May 2022 02:10:55 GMT
+RUN echo 'deb http://deb.debian.org/debian experimental main' > /etc/apt/sources.list.d/experimental.list
+```
+
+-	Layers:
+	-	`sha256:a36a5ba911733974c0faa6b7c13de50dd7da0597a6bafed5697f5107e2a4ed82`  
+		Last Modified: Sat, 28 May 2022 02:27:58 GMT  
+		Size: 51.0 MB (50961464 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9dd588102e3d4da5bfeb20ee70a8431b33d1e9a66ea3ab07b77dc32256eb1d76`  
+		Last Modified: Sat, 28 May 2022 02:28:34 GMT  
 		Size: 221.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
