@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:68be3b4949f839ac73f1a5a1f04ddc0a6fd493c8fcea54a60954491d93ebb184`
-- Created: `2022-05-11T05:14:47.991578265Z`
+- Image ID: `sha256:adb25d09ee6101c8fd82b862089b7d2377cbf0afd9ddbc7d47abb65ce55cd839`
+- Created: `2022-05-28T05:50:59.773847766Z`
 - Virtual Size: ~ 216.50 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -442,11 +442,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/diffutils/1:3.5-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/diffutils/1:3.5-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `dpkg=1.18.25`
+### `dpkg` source package: `dpkg=1.18.26`
 
 Binary Packages:
 
-- `dpkg=1.18.25`
+- `dpkg=1.18.26`
 
 Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 
@@ -459,16 +459,16 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris dpkg=1.18.25
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.18.25.dsc' dpkg_1.18.25.dsc 2048 SHA256:5cf6ac260dc3adae91516b777f9e3b6fcb783d867f811fa8fd0787f570a059a6
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.18.25.tar.xz' dpkg_1.18.25.tar.xz 4541640 SHA256:c49c371953aea03f543814dcae37c069e86069333fb2e24e9252e76647663492
+$ apt-get source -qq --print-uris dpkg=1.18.26
+'http://security.debian.org/debian-security/pool/updates/main/d/dpkg/dpkg_1.18.26.dsc' dpkg_1.18.26.dsc 2048 SHA256:263e1dfe67164601ae0416d3361cc3aad5ab93a8280fc9175a01059ca807442c
+'http://security.debian.org/debian-security/pool/updates/main/d/dpkg/dpkg_1.18.26.tar.xz' dpkg_1.18.26.tar.xz 4529136 SHA256:a72d6bf530bd8fd17c011187aa34c8c01de8ff1eea2b47b377d09a39988d08d4
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/dpkg/1.18.25/ (for browsing the source)
-- https://sources.debian.net/src/dpkg/1.18.25/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dpkg/1.18.25/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/dpkg/1.18.26/ (for browsing the source)
+- https://sources.debian.net/src/dpkg/1.18.26/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/dpkg/1.18.26/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `e2fsprogs=1.43.4-2+deb9u2`
 
