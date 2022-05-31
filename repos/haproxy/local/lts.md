@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d76d44f387e92a60d8d2a15eaba6e81d4f60d331d8b55a4ae57861403caa8d10`
-- Created: `2022-05-18T01:43:46.751130162Z`
-- Virtual Size: ~ 105.05 Mb  
+- Image ID: `sha256:7ed331900aa97c1cca2c9bd703ae600799f2d97b22744133f08bc1e086463c5e`
+- Created: `2022-05-28T05:08:17.831331645Z`
+- Virtual Size: ~ 101.07 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -459,11 +459,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/diffutils/1:3.7-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/diffutils/1:3.7-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `dpkg=1.20.9`
+### `dpkg` source package: `dpkg=1.20.10`
 
 Binary Packages:
 
-- `dpkg=1.20.9`
+- `dpkg=1.20.10`
 
 Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 
@@ -476,16 +476,16 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris dpkg=1.20.9
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.20.9.dsc' dpkg_1.20.9.dsc 2120 SHA256:87f21320f3165d1c57dae2314b7fd1849b49da9416fee3fb57c4b1e4192b4285
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.20.9.tar.xz' dpkg_1.20.9.tar.xz 4954428 SHA256:5ce242830f213b5620f08e6c4183adb1ef4dc9da28d31988a27c87c71fe534ce
+$ apt-get source -qq --print-uris dpkg=1.20.10
+'http://security.debian.org/debian-security/pool/updates/main/d/dpkg/dpkg_1.20.10.dsc' dpkg_1.20.10.dsc 2124 SHA256:a745aa20f87499c555748072cb49ea251e7c32a952126ebdadf44b3be2b2e021
+'http://security.debian.org/debian-security/pool/updates/main/d/dpkg/dpkg_1.20.10.tar.xz' dpkg_1.20.10.tar.xz 5002416 SHA256:b2d909e1ffc58d60c13cbda2b2039248b69598a70351fbb20b0fdd335023c9bc
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/dpkg/1.20.9/ (for browsing the source)
-- https://sources.debian.net/src/dpkg/1.20.9/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dpkg/1.20.9/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/dpkg/1.20.10/ (for browsing the source)
+- https://sources.debian.net/src/dpkg/1.20.10/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/dpkg/1.20.10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `e2fsprogs=1.46.2-2`
 
