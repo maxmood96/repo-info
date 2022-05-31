@@ -2726,14 +2726,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-catkin-pkg-modules=0.5.1-1
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-catkin-pkg-modules/python3-catkin-pkg-modules_0.5.1-1.debian.tar.xz' python3-catkin-pkg-modules_0.5.1-1.debian.tar.xz 2004 SHA512:54e5aedde5681c4524ada4948c01d4aac74bc8297cc2fadc0852ddcabb5d007af2423192c760fc2e2898fc80961971362327b55f90ecb987e34d39da5742632f
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-catkin-pkg-modules/python3-catkin-pkg-modules_0.5.1-1.dsc' python3-catkin-pkg-modules_0.5.1-1.dsc 1019 SHA512:e2ebf78d5967305c7788a671a464e264719e6abbd171c109513186ccf937f060bf8921421d96a5d73559e719d83e3f7b1322540cc5cbfec36ac21142141c4008
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-catkin-pkg-modules/python3-catkin-pkg-modules_0.5.1.orig.tar.gz' python3-catkin-pkg-modules_0.5.1.orig.tar.gz 62739 SHA512:89829ef007fbcd14870b58f81aa9a4f3349a6089aa5d3368e2ebbfea83c8d0a9e60b9777048f4a030b26f44a34f85d1cd5d6eb0ff5be31e355d37ee1c196f7c1
-```
 
 ### `dpkg` source package: `python3-defaults=3.10.4-0ubuntu2`
 
