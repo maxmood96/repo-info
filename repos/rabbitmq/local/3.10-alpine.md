@@ -1,10 +1,10 @@
-# `rabbitmq:3.10.2-alpine`
+# `rabbitmq:3.10.5-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b12b7f7edbbefde0a7f55101f0319dfcbdbb5ddf91d0a25ad04fa411ad5acc0b`
-- Created: `2022-05-25T22:01:07.295872563Z`
-- Virtual Size: ~ 124.25 Mb  
+- Image ID: `sha256:b50134d31bc8cbeee709588c25ba094a6effa7bc9e959f37d8cc55a754d386d3`
+- Created: `2022-06-02T20:28:53.185788804Z`
+- Virtual Size: ~ 124.24 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `OTP_VERSION=24.3.4`
   - `OTP_SOURCE_SHA256=76fcca5ba6f11eb9caac32bf053badc46b5d66f867150eef077f4f0d7944ecd7`
   - `RABBITMQ_DATA_DIR=/var/lib/rabbitmq`
-  - `RABBITMQ_VERSION=3.10.2`
+  - `RABBITMQ_VERSION=3.10.5`
   - `RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA`
   - `RABBITMQ_HOME=/opt/rabbitmq`
   - `HOME=/var/lib/rabbitmq`
