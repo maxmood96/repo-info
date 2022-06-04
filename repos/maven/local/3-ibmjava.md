@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6b87ef3130a28a4b1e9f988a4cb07f607c4974040d00119f3acef275837e2bcb`
-- Created: `2022-04-30T05:07:42.465793358Z`
-- Virtual Size: ~ 369.66 Mb  
+- Image ID: `sha256:60475715c77b6a72a6e310bf392ab9d6a4eb5203ee4195c4e55c21e2a39f866c`
+- Created: `2022-06-01T17:49:35.548106107Z`
+- Virtual Size: ~ 370.15 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
 - Command: `["mvn"]`
 - Environment:
   - `PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_VERSION=8.0.7.6`
+  - `JAVA_VERSION=8.0.7.10`
   - `JAVA_HOME=/opt/ibm/java/jre`
   - `IBM_JAVA_OPTIONS=-XX:+UseContainerSupport`
   - `MAVEN_HOME=/usr/share/maven`
@@ -253,12 +253,12 @@ $ apt-get source -qq --print-uris coreutils=8.28-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.28-1ubuntu1.debian.tar.xz' coreutils_8.28-1ubuntu1.debian.tar.xz 37940 SHA256:71ba2e83edc675a79e1e0556aff326ab2ae812332692e3db29615e8ed1b427f4
 ```
 
-### `dpkg` source package: `curl=7.58.0-2ubuntu3.17`
+### `dpkg` source package: `curl=7.58.0-2ubuntu3.18`
 
 Binary Packages:
 
-- `curl=7.58.0-2ubuntu3.17`
-- `libcurl4:amd64=7.58.0-2ubuntu3.17`
+- `curl=7.58.0-2ubuntu3.18`
+- `libcurl4:amd64=7.58.0-2ubuntu3.18`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -269,9 +269,14 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.58.0-2ubuntu3.18
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0-2ubuntu3.18.dsc' curl_7.58.0-2ubuntu3.18.dsc 2781 SHA512:5572956c5665df9060465ec168aad39c7813c19afbd93f900fea5c54477cb0edd629b0b8386422315dc19b6f14a59e282326bd04fb64bcad96f4cc8688baa121
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0.orig.tar.gz' curl_7.58.0.orig.tar.gz 3879728 SHA512:7b12b79107558bb266672d6e128615fe5a8149c37f4ae540197e3298f5d312beb2d78fbb23e3ea84ea7afc41549898a1e5cd38509f0388b11707b48d5efb8ca3
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0-2ubuntu3.18.debian.tar.xz' curl_7.58.0-2ubuntu3.18.debian.tar.xz 71844 SHA512:296f47afff237b6c330cd8c5248cd0662988e4a0a5c8aa064053a4fefab67e658a5a778367e23abe3a8191b6324df63ff6481a5b00b6a216d4f606e29311ef65
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3ubuntu2.4`
 
@@ -1150,20 +1155,25 @@ $ apt-get source -qq --print-uris nghttp2=1.30.0-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.30.0-1ubuntu1.debian.tar.xz' nghttp2_1.30.0-1ubuntu1.debian.tar.xz 13244 SHA256:eb99f2c10cd872ce750964fc59734aa70b89ad04179291a23bfbee0e1a2903d3
 ```
 
-### `dpkg` source package: `openldap=2.4.45+dfsg-1ubuntu1.10`
+### `dpkg` source package: `openldap=2.4.45+dfsg-1ubuntu1.11`
 
 Binary Packages:
 
-- `libldap-2.4-2:amd64=2.4.45+dfsg-1ubuntu1.10`
-- `libldap-common=2.4.45+dfsg-1ubuntu1.10`
+- `libldap-2.4-2:amd64=2.4.45+dfsg-1ubuntu1.11`
+- `libldap-common=2.4.45+dfsg-1ubuntu1.11`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openldap=2.4.45+dfsg-1ubuntu1.11
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.45%2bdfsg-1ubuntu1.11.dsc' openldap_2.4.45+dfsg-1ubuntu1.11.dsc 2888 SHA512:5bb7107e4edef2110b854ab51293be2c8363fb75c07f5bb954e712b967cd9237f71a9ab48874d234459eabcddd81f1fda045c14c9b2daef4a776c6e3d3375794
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.45%2bdfsg.orig.tar.gz' openldap_2.4.45+dfsg.orig.tar.gz 4846458 SHA512:fb2089aa6949ecced1d48242b203bc2f744e920ecea41559209f7d3a1cfe626c1d81e8a9234b6997b2379832d62e439ca1f674a8a06635fdaa359fc09d1b414e
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.45%2bdfsg-1ubuntu1.11.debian.tar.xz' openldap_2.4.45+dfsg-1ubuntu1.11.debian.tar.xz 185504 SHA512:f4552c4b7c4e8d21fadbcbdcc4a616756b75394d3fed9586e0ece9c3d20f8b40bd3c8b1e91f7391b0acdaaa4caa885978ba963498db94861abf9f726af282e38
+```
 
 ### `dpkg` source package: `openssl=1.1.1-1ubuntu2.1~18.04.15`
 
@@ -1397,11 +1407,11 @@ $ apt-get source -qq --print-uris shadow=1:4.5-1ubuntu2.2
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.5-1ubuntu2.2.debian.tar.xz' shadow_4.5-1ubuntu2.2.debian.tar.xz 473640 SHA512:2f1b28b796e1157164859d63e129b8e08dc297610580396993e4fae6f491ed5d56581461540e3a020ea44838431e36e828ac15d575f3b1849789415493095d6e
 ```
 
-### `dpkg` source package: `sqlite3=3.22.0-1ubuntu0.4`
+### `dpkg` source package: `sqlite3=3.22.0-1ubuntu0.5`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.22.0-1ubuntu0.4`
+- `libsqlite3-0:amd64=3.22.0-1ubuntu0.5`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -1409,9 +1419,15 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris sqlite3=3.22.0-1ubuntu0.5
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.22.0-1ubuntu0.5.dsc' sqlite3_3.22.0-1ubuntu0.5.dsc 2390 SHA512:d3e0f49122dcaaaecb37309b2e116d582a6409f5b1edf6cbdb544c94b8e260ddaa3cf354c0fbd2adc5403557674412c8a367d5c5ab6dd6f9d5ea164fd450a2f6
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.22.0.orig-www.tar.xz' sqlite3_3.22.0.orig-www.tar.xz 3564688 SHA512:e469878137ec3d06886fe096c4325451e8c9b73f6841d28fac9bed45e698bdc1222739570abf2ce456e0853b0c6876b1c79ca0896826295f64d27b276541c1f8
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.22.0.orig.tar.xz' sqlite3_3.22.0.orig.tar.xz 6019648 SHA512:ce3b05cb9f75a5c7a5e8562b70e72e23c043222fd61995f795cbcc40f3f8efcac2660e57b588a15bfdce28c8eb644745bb73af35f5b98ba956dd77457d661dfa
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.22.0-1ubuntu0.5.debian.tar.xz' sqlite3_3.22.0-1ubuntu0.5.debian.tar.xz 48200 SHA512:3c73310fa7b9ebf5176e2c112d6d227c53ff559a75fdc18821023b471d191c6b73b8fd1b65cfb17e82ed371b44ab57f80b89c5e2a374590464ab5cef0afa3dd1
+```
 
 ### `dpkg` source package: `systemd=237-3ubuntu10.53`
 
