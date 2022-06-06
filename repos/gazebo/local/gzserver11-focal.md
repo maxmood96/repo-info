@@ -1769,13 +1769,9 @@ Licenses: (parsed from: `/usr/share/doc/libignition-common3/copyright`)
 - `Apache`
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ignition-common3=3.14.0-1~focal
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-common3/ignition-common3_3.14.0-1%7efocal.dsc' ignition-common3_3.14.0-1~focal.dsc 1891 SHA256:deac168fb7f6da9a1bdd782841f083e3d8dc5b13dd759c9d998de96d15af3c8f
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-common3/ignition-common3_3.14.0-1%7efocal.tar.xz' ignition-common3_3.14.0-1~focal.tar.xz 6730304 SHA256:523f3ecd32e9a77f2896d08da78ac3f20ddb5e1a34c66fe4988ac07b843a5606
-```
 
 ### `dpkg` source package: `ignition-fuel-tools4=4.4.0-1~focal`
 
@@ -1788,14 +1784,9 @@ Licenses: (parsed from: `/usr/share/doc/libignition-fuel-tools4/copyright`)
 - `Apache`
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ignition-fuel-tools4=4.4.0-1~focal
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-fuel-tools4/ignition-fuel-tools4_4.4.0-1%7efocal.dsc' ignition-fuel-tools4_4.4.0-1~focal.dsc 1429 SHA256:1bc3af3fe62001c413e0510474c9e42658e80cb5f89deb519295bc1d53507d11
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-fuel-tools4/ignition-fuel-tools4_4.4.0.orig.tar.bz2' ignition-fuel-tools4_4.4.0.orig.tar.bz2 303013 SHA256:ac1bd48e87a97e67aff3076d8eb5fa76612afc60be27c2e78daa47542fffa686
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-fuel-tools4/ignition-fuel-tools4_4.4.0-1%7efocal.debian.tar.xz' ignition-fuel-tools4_4.4.0-1~focal.debian.tar.xz 1732 SHA256:4245c96b9fc508567284c89b549902996e9da24e3dcd3227b4506b597d04bfd2
-```
 
 ### `dpkg` source package: `ignition-math6=6.11.0-1~focal`
 

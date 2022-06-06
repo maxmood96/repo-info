@@ -1692,13 +1692,9 @@ Licenses: (parsed from: `/usr/share/doc/libignition-common3/copyright`)
 - `Apache`
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ignition-common3=3.14.0-1~bionic
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-common3/ignition-common3_3.14.0-1%7ebionic.dsc' ignition-common3_3.14.0-1~bionic.dsc 1895 SHA256:d503f1d74f8f11283e6788018a33e36bb16ced6d77488039407dc137bfee8e96
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-common3/ignition-common3_3.14.0-1%7ebionic.tar.xz' ignition-common3_3.14.0-1~bionic.tar.xz 6730268 SHA256:44b6d56fc723fd58da5f5ba78ec2e81b49b73a7d86db31148b790c1e42f72601
-```
 
 ### `dpkg` source package: `ignition-fuel-tools4=4.4.0-1~bionic`
 
@@ -1711,14 +1707,9 @@ Licenses: (parsed from: `/usr/share/doc/libignition-fuel-tools4/copyright`)
 - `Apache`
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ignition-fuel-tools4=4.4.0-1~bionic
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-fuel-tools4/ignition-fuel-tools4_4.4.0-1%7ebionic.dsc' ignition-fuel-tools4_4.4.0-1~bionic.dsc 1433 SHA256:4e5b5029a3ac780d68ee3b94af8fe49f2da0b5f853989ef2670dfd4dee0b3358
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-fuel-tools4/ignition-fuel-tools4_4.4.0.orig.tar.bz2' ignition-fuel-tools4_4.4.0.orig.tar.bz2 303013 SHA256:ac1bd48e87a97e67aff3076d8eb5fa76612afc60be27c2e78daa47542fffa686
-'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/i/ignition-fuel-tools4/ignition-fuel-tools4_4.4.0-1%7ebionic.debian.tar.xz' ignition-fuel-tools4_4.4.0-1~bionic.debian.tar.xz 1752 SHA256:cd6f9ddebf0b86b6df620d754139990aa94587297db9f2cddf01cf70befb5784
-```
 
 ### `dpkg` source package: `ignition-math6=6.11.0-1~bionic`
 
