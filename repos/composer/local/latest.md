@@ -1,10 +1,10 @@
-# `composer:2.3.5`
+# `composer:2.3.7`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9e416c6634d5242a43c5475274fc09bfb357d8ccb0a722ec0679aed1d6c10c74`
-- Created: `2022-05-25T23:44:18.186314825Z`
-- Virtual Size: ~ 199.12 Mb  
+- Image ID: `sha256:9131fbe9b17ab199aac515030cdd0ba34f07980b4851f8d3775462a612dbce2d`
+- Created: `2022-06-06T18:25:42.167219684Z`
+- Virtual Size: ~ 199.39 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -23,23 +23,23 @@
   - `PHP_SHA256=da38d65bb0d5dd56f711cd478204f2b62a74a2c2b0d2d523a78d6eb865b2364c`
   - `COMPOSER_ALLOW_SUPERUSER=1`
   - `COMPOSER_HOME=/tmp`
-  - `COMPOSER_VERSION=2.3.5`
+  - `COMPOSER_VERSION=2.3.7`
 
 ## `apk` (`.apk`-based packages)
 
 ### `apk` package: `alpine-baselayout`
 
 ```console
-alpine-baselayout-3.2.0-r20 description:
+alpine-baselayout-3.2.0-r21 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-3.2.0-r20 webpage:
+alpine-baselayout-3.2.0-r21 webpage:
 https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
-alpine-baselayout-3.2.0-r20 installed size:
+alpine-baselayout-3.2.0-r21 installed size:
 340 KiB
 
-alpine-baselayout-3.2.0-r20 license:
+alpine-baselayout-3.2.0-r21 license:
 GPL-2.0-only
 
 ```
@@ -47,16 +47,16 @@ GPL-2.0-only
 ### `apk` package: `alpine-baselayout-data`
 
 ```console
-alpine-baselayout-data-3.2.0-r20 description:
+alpine-baselayout-data-3.2.0-r21 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-data-3.2.0-r20 webpage:
+alpine-baselayout-data-3.2.0-r21 webpage:
 https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
-alpine-baselayout-data-3.2.0-r20 installed size:
+alpine-baselayout-data-3.2.0-r21 installed size:
 72 KiB
 
-alpine-baselayout-data-3.2.0-r20 license:
+alpine-baselayout-data-3.2.0-r21 license:
 GPL-2.0-only
 
 ```
@@ -98,16 +98,16 @@ GPL-2.0-only
 ### `apk` package: `apr`
 
 ```console
-apr-1.7.0-r1 description:
+apr-1.7.0-r2 description:
 The Apache Portable Runtime
 
-apr-1.7.0-r1 webpage:
+apr-1.7.0-r2 webpage:
 https://apr.apache.org/
 
-apr-1.7.0-r1 installed size:
+apr-1.7.0-r2 installed size:
 220 KiB
 
-apr-1.7.0-r1 license:
+apr-1.7.0-r2 license:
 Apache-2.0
 
 ```
