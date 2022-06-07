@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:69b05cfca190afc0c6ecb720510a777a044bfbcd136e2769fd98ffdfd3b015ee`
-- Created: `2022-05-27T01:51:00.625616259Z`
-- Virtual Size: ~ 3.16 Gb  
+- Image ID: `sha256:3eb421c82f61f4ddcb96ad27e58f55f19f2e80c5085cb95fcb6ce621276f5d4e`
+- Created: `2022-06-07T01:40:11.656593229Z`
+- Virtual Size: ~ 3.15 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
@@ -1148,11 +1148,11 @@ $ apt-get source -qq --print-uris cryptsetup=2:2.4.3-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_2.4.3-1ubuntu1.debian.tar.xz' cryptsetup_2.4.3-1ubuntu1.debian.tar.xz 139416 SHA512:b431c90e496611112bbd7cbf6738e341b356ae00266385ab42e109683959d7793c87d7bba6b411c55454b6843c873d634d87955b8cc9e32114b922c9a14dac0f
 ```
 
-### `dpkg` source package: `cups=2.4.1op1-1ubuntu4`
+### `dpkg` source package: `cups=2.4.1op1-1ubuntu4.1`
 
 Binary Packages:
 
-- `libcups2:amd64=2.4.1op1-1ubuntu4`
+- `libcups2:amd64=2.4.1op1-1ubuntu4.1`
 
 Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 
@@ -1166,10 +1166,10 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris cups=2.4.1op1-1ubuntu4
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.1op1-1ubuntu4.dsc' cups_2.4.1op1-1ubuntu4.dsc 2408 SHA512:cf42239a5cbdce218f8c9774de5a4c9ba33c77b7c6f78409dcedcfff3f880788c6862bddc89e77ab4ac6b6aeb55030d1a0bd314c292c47cbc54a8d8ee1693793
+$ apt-get source -qq --print-uris cups=2.4.1op1-1ubuntu4.1
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.1op1-1ubuntu4.1.dsc' cups_2.4.1op1-1ubuntu4.1.dsc 3135 SHA512:f9724ea693fdadd2dba77d4ce6692eed1dce40ab5eaf1f331ac98a3e2201c444f05a079da2a97a09c82b6bf5ef3083b57efdfaffefca3661dca4180ab786cd80
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.1op1.orig.tar.gz' cups_2.4.1op1.orig.tar.gz 8113914 SHA512:74e83728fcc3baf709176442b26711250fd4d4ede1e81e35b02a5607711067e28cd5a05d5bc3337953f6b2236c5a429b13f3a7f1218a08a2d3c30a8c9b0d96fd
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.1op1-1ubuntu4.debian.tar.xz' cups_2.4.1op1-1ubuntu4.debian.tar.xz 354780 SHA512:4f75807f9cd6461c56379aa586731a5ad097c9e4cd614e206d0e2cc4356e4629c23b40402f10d701016f155e99dffc33b90b236f84b218d27ade66e18950ebeb
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.1op1-1ubuntu4.1.debian.tar.xz' cups_2.4.1op1-1ubuntu4.1.debian.tar.xz 355704 SHA512:a77a7170ffbb55c94f98c44d3b188b21a0d02b2c2a9250a109a22f85dc28860a7b924d284a7ee9b45b85aebab80c490a49058147ac7894a1c0b1fa46436f234c
 ```
 
 ### `dpkg` source package: `curl=7.81.0-1ubuntu1.2`
@@ -1514,13 +1514,13 @@ $ apt-get source -qq --print-uris double-conversion=3.1.7-4
 'http://archive.ubuntu.com/ubuntu/pool/universe/d/double-conversion/double-conversion_3.1.7-4.debian.tar.xz' double-conversion_3.1.7-4.debian.tar.xz 8940 SHA512:1bc5f984cb761aabd0d956e2ab24ca29f4c6a1ede1f21ce9e17cac3f19964f64a182e317099876e0959b860e6e07e9da547a24e3c191b86af5ee6e5f529a12fc
 ```
 
-### `dpkg` source package: `dpkg=1.21.1ubuntu2`
+### `dpkg` source package: `dpkg=1.21.1ubuntu2.1`
 
 Binary Packages:
 
-- `dpkg=1.21.1ubuntu2`
-- `dpkg-dev=1.21.1ubuntu2`
-- `libdpkg-perl=1.21.1ubuntu2`
+- `dpkg=1.21.1ubuntu2.1`
+- `dpkg-dev=1.21.1ubuntu2.1`
+- `libdpkg-perl=1.21.1ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`, `/usr/share/doc/dpkg-dev/copyright`, `/usr/share/doc/libdpkg-perl/copyright`)
 
@@ -1533,9 +1533,9 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`, `/usr/share/doc/dpkg-de
 Source:
 
 ```console
-$ apt-get source -qq --print-uris dpkg=1.21.1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.21.1ubuntu2.dsc' dpkg_1.21.1ubuntu2.dsc 2246 SHA512:b9b9ea238ee2d063c70f3b3bb90d3e1358ee052eea1dd0ffc0e51260c4d868181cc527c19aa74eacc3fc87feb3416b2e29928dff272947177c7ac0dff513aa2a
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.21.1ubuntu2.tar.xz' dpkg_1.21.1ubuntu2.tar.xz 5015720 SHA512:5e2720db7d7776dec1a2e9d9f726cd2eb14a5b7ee5ac96082cd67b5f314bd55bd62f3d8914450dcef7ef4c190b00674a490e24128f426813e0fb6eb0461b841c
+$ apt-get source -qq --print-uris dpkg=1.21.1ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.21.1ubuntu2.1.dsc' dpkg_1.21.1ubuntu2.1.dsc 2254 SHA512:cead7c93dd00b68f9d6f551c3d30f0044e5890ef4c963343aaa6d7c0b6f8f1f8858826caacf0f64e2f26fcea2d0ab3ba36c2327ec7c1fc93f89627b3480aa1b4
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.21.1ubuntu2.1.tar.xz' dpkg_1.21.1ubuntu2.1.tar.xz 5016620 SHA512:501119f7725ca55bbf982f6f8413fcfe01bdac2e3cc8f2cbc7148e6d90d599c5734f6939764531baa606b467a39062b5773e1c71b7b3df2ba5d7a9b940a9fb3c
 ```
 
 ### `dpkg` source package: `e2fsprogs=1.46.5-2ubuntu1`
@@ -5751,11 +5751,11 @@ $ apt-get source -qq --print-uris libzstd=1.4.8+dfsg-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.8%2bdfsg-3build1.debian.tar.xz' libzstd_1.4.8+dfsg-3build1.debian.tar.xz 12316 SHA512:8123965a6e73c5ddd8d535e78ed1074e2eabd7f8ed090d215a89feedffae9391cf472d2395242d3cb0351cbf76603448dae93ad70d0989806b42b03c65b22db0
 ```
 
-### `dpkg` source package: `linux=5.15.0-33.34`
+### `dpkg` source package: `linux=5.15.0-35.36`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.15.0-33.34`
+- `linux-libc-dev:amd64=5.15.0-35.36`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -5764,10 +5764,10 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=5.15.0-33.34
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-33.34.dsc' linux_5.15.0-33.34.dsc 7191 SHA512:cad0e5e5ca200c775cc3eff67f0f4a7eb01f6f14d8db17184ee087f9bead451bc748539656b9a9a42ca2671774348f8eddda6cd473e6ac8d4194621d99ecb66b
+$ apt-get source -qq --print-uris linux=5.15.0-35.36
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-35.36.dsc' linux_5.15.0-35.36.dsc 6878 SHA512:0af143320e0d356704b122b259c90fd70d6e8da7a233bf6473b5ea86d1d2a319d27b959d6a2dd3b013456fbeabdceabfe0b0a9373d541d14c1de01d7e5f4bd66
 'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-33.34.diff.gz' linux_5.15.0-33.34.diff.gz 5859067 SHA512:e022a47896ac41ea9d97018644a2e5147a2e5b988587923ab88fe5cd87704e8b4eb9e0cd74d8fd9d1c0ec294b464b7b76c2aef7f8b3f382609568033e03d300f
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-35.36.diff.gz' linux_5.15.0-35.36.diff.gz 6470335 SHA512:11ee6ec7757871b5a8b81489b2b5a5a365193210d229fae3e45d2374b0beb73125335301ee172343ec9ce284c7aec07690626387651876e652ffb4c1469db208
 ```
 
 ### `dpkg` source package: `llvm-toolchain-13=1:13.0.1-2ubuntu2`
@@ -6048,16 +6048,16 @@ $ apt-get source -qq --print-uris media-types=7.0.0
 'http://archive.ubuntu.com/ubuntu/pool/main/m/media-types/media-types_7.0.0.tar.xz' media-types_7.0.0.tar.xz 55660 SHA512:ce4b07388c490c7e3e1bdd1dcdd28c685eee81cb9d167cc903f427a28bf972210b8d5ad3d33af06530b4dba0ac7f2a2b6e914c1d88bc1e88db589de6b4490071
 ```
 
-### `dpkg` source package: `mesa=22.0.1-1ubuntu2`
+### `dpkg` source package: `mesa=22.0.1-1ubuntu2.1`
 
 Binary Packages:
 
-- `libegl-mesa0:amd64=22.0.1-1ubuntu2`
-- `libgbm1:amd64=22.0.1-1ubuntu2`
-- `libgl1-mesa-dev:amd64=22.0.1-1ubuntu2`
-- `libgl1-mesa-dri:amd64=22.0.1-1ubuntu2`
-- `libglapi-mesa:amd64=22.0.1-1ubuntu2`
-- `libglx-mesa0:amd64=22.0.1-1ubuntu2`
+- `libegl-mesa0:amd64=22.0.1-1ubuntu2.1`
+- `libgbm1:amd64=22.0.1-1ubuntu2.1`
+- `libgl1-mesa-dev:amd64=22.0.1-1ubuntu2.1`
+- `libgl1-mesa-dri:amd64=22.0.1-1ubuntu2.1`
+- `libglapi-mesa:amd64=22.0.1-1ubuntu2.1`
+- `libglx-mesa0:amd64=22.0.1-1ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/libegl-mesa0/copyright`, `/usr/share/doc/libgbm1/copyright`, `/usr/share/doc/libgl1-mesa-dev/copyright`, `/usr/share/doc/libgl1-mesa-dri/copyright`, `/usr/share/doc/libglapi-mesa/copyright`, `/usr/share/doc/libglx-mesa0/copyright`)
 
@@ -6074,10 +6074,10 @@ Licenses: (parsed from: `/usr/share/doc/libegl-mesa0/copyright`, `/usr/share/doc
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mesa=22.0.1-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_22.0.1-1ubuntu2.dsc' mesa_22.0.1-1ubuntu2.dsc 5343 SHA512:19c33e056e11987297657b2b23edec08a52429bd42a64c6021972a281144cd056fc79c4272feea55eb21947fe7c3de2e109466767499e21c1dc9afae24a9d930
+$ apt-get source -qq --print-uris mesa=22.0.1-1ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_22.0.1-1ubuntu2.1.dsc' mesa_22.0.1-1ubuntu2.1.dsc 5351 SHA512:5312fdedb283da2224b40bec9f6bc3dfeb07e3204d01059e388961d24b59047a305a6e0f0e06b3021a11a14d6d01cc288d8ed89a4a1b07205a56795f1203cabd
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_22.0.1.orig.tar.gz' mesa_22.0.1.orig.tar.gz 24821428 SHA512:c48a6b5c6afef0974002a5a54e6db18883dc33f1ae92ced0ea2f86b82f83fd53b275461450c4c2e0d93ef79dd2b413ee99d4abf2d64cc2957bafc649e9777b15
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_22.0.1-1ubuntu2.diff.gz' mesa_22.0.1-1ubuntu2.diff.gz 113512 SHA512:008b72a4353ba6589fd9097a4458a1b2512c06022e160f48c89143233cd7da488c53eb77f091bef1d6749556ae9a88ca8624a30ef2dbd8e4ec75f5fdfe8a0523
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_22.0.1-1ubuntu2.1.diff.gz' mesa_22.0.1-1ubuntu2.1.diff.gz 149769 SHA512:3aa03c3a7bef3e8b751b12c1469ca15044799fce08e52780de986f61f1c90b885be6347b07d28099ad7e3dbabdfcb3f2d5906142be70fe235677f024c1259c0d
 ```
 
 ### `dpkg` source package: `minizip=1.1-8build1`
@@ -6854,11 +6854,11 @@ $ apt-get source -qq --print-uris openjpeg2=2.4.0-6
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openjpeg2/openjpeg2_2.4.0-6.debian.tar.xz' openjpeg2_2.4.0-6.debian.tar.xz 21124 SHA512:cdd8a1d29388d02c37612183fef2ff679133630871323894f46e7f4a56480118e1e03573b2eea2179ce0f92d6aca6a15ee8e9f382e036d7ff0cb0f1744f2df3e
 ```
 
-### `dpkg` source package: `openldap=2.5.11+dfsg-1~exp1ubuntu3`
+### `dpkg` source package: `openldap=2.5.11+dfsg-1~exp1ubuntu3.1`
 
 Binary Packages:
 
-- `libldap-2.5-0:amd64=2.5.11+dfsg-1~exp1ubuntu3`
+- `libldap-2.5-0:amd64=2.5.11+dfsg-1~exp1ubuntu3.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6867,10 +6867,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openldap=2.5.11+dfsg-1~exp1ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.11%2bdfsg-1%7eexp1ubuntu3.dsc' openldap_2.5.11+dfsg-1~exp1ubuntu3.dsc 3298 SHA512:728ad98af8644cb3a41e762343935acc3897191b58a5ab2f6861d46f23d98340defe434c65aa67b5f97c461f6bfadd9ff2041cc4e6f4702b882cd03fab11f482
+$ apt-get source -qq --print-uris openldap=2.5.11+dfsg-1~exp1ubuntu3.1
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.11%2bdfsg-1%7eexp1ubuntu3.1.dsc' openldap_2.5.11+dfsg-1~exp1ubuntu3.1.dsc 3306 SHA512:ad0d21a3e74f25e26172f617915ae695afe552a64a1f8288d79c5f4a1fc53d844b28b9e62d28458a398673b9cffc1be620756ac0fdd3957ef12413f0bf98c5ec
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.11%2bdfsg.orig.tar.gz' openldap_2.5.11+dfsg.orig.tar.gz 5609424 SHA512:a728d66c8a6bfa34d8e80eab86c2612685cab1358008cc10f9d9862a03aff46a5a19cd6487732131222efae6b86c27d5446fd829e89a4cadeb79161fd9ed437c
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.11%2bdfsg-1%7eexp1ubuntu3.debian.tar.xz' openldap_2.5.11+dfsg-1~exp1ubuntu3.debian.tar.xz 170932 SHA512:2dc8db44e01d3a1a884faa70c7c461d77319f890dd022f52861c87ec8dc007e7d772bdcac6296d9d25687aa53adcdb7f86d64dc86518227d0afefa709fe68bdf
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.11%2bdfsg-1%7eexp1ubuntu3.1.debian.tar.xz' openldap_2.5.11+dfsg-1~exp1ubuntu3.1.debian.tar.xz 173000 SHA512:00e1c35ad8cbd78cded1d1039bdd280f59f238ac3a19d28c3e0575abcec08da2267a3f0d3ffe1df5f53726522fac410516637e044c3237cb63ae3bd4ed843593
 ```
 
 ### `dpkg` source package: `openmpi=4.1.2-2ubuntu1`
@@ -7241,11 +7241,11 @@ $ apt-get source -qq --print-uris pcre2=10.39-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.39-3build1.diff.gz' pcre2_10.39-3build1.diff.gz 7214 SHA512:2d51ad9e53863b885f32154e91d086b08ba554b177521e2318d5072f00aa253a684f61a0757b448528b9e7dc802c3b77c287547fd785dd3456aeb176774d3312
 ```
 
-### `dpkg` source package: `pcre3=2:8.39-13build5`
+### `dpkg` source package: `pcre3=2:8.39-13ubuntu0.22.04.1`
 
 Binary Packages:
 
-- `libpcre3:amd64=2:8.39-13build5`
+- `libpcre3:amd64=2:8.39-13ubuntu0.22.04.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7254,10 +7254,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris pcre3=2:8.39-13build5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39-13build5.dsc' pcre3_8.39-13build5.dsc 2216 SHA512:93626e95ea712cb499376b3696530de7e625ddc72eb85e1efec539726474a6b59964b8bca3f48b3aa7b56ebc50b1048bf9c1771be10b26efe31a84910b7447bd
+$ apt-get source -qq --print-uris pcre3=2:8.39-13ubuntu0.22.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39-13ubuntu0.22.04.1.dsc' pcre3_8.39-13ubuntu0.22.04.1.dsc 2101 SHA512:c2b619e559192c367485fec01cf65dbc49a67ec8f2fb9d5785fdf7dba052540d70c16b4316afc83f4765ef9b57f3e2c0e6f245500866476df8a8a90310584f62
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39.orig.tar.bz2' pcre3_8.39.orig.tar.bz2 1560758 SHA512:8b0f14ae5947c4b2d74876a795b04e532fd71c2479a64dbe0ed817e7c7894ea3cae533413de8c17322d305cb7f4e275d72b43e4e828eaca77dc4bcaf04529cf6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39-13build5.debian.tar.gz' pcre3_8.39-13build5.debian.tar.gz 27849 SHA512:80b99e42ed8cdc14d2459d5a7d5127891eae7dfc9db2a70b82da77b0188243403b2cfaf947a6fdf0eb0bbdbbb36f36fd20edd2be71eafe30fc438a12aad7fb37
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39-13ubuntu0.22.04.1.debian.tar.gz' pcre3_8.39-13ubuntu0.22.04.1.debian.tar.gz 28251 SHA512:50aa437187fd45632213fe7b09a69dfbe2a58ad568a7f71c47ddab204db49850b732f17c8295788afd0c58d8134620a11aaa9fa259a980a0ab85ce043098a659
 ```
 
 ### `dpkg` source package: `pcsc-lite=1.9.5-3`
@@ -8094,33 +8094,43 @@ $ apt-get source -qq --print-uris python-zipp=1.0.0-3
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python-zipp/python-zipp_1.0.0-3.debian.tar.xz' python-zipp_1.0.0-3.debian.tar.xz 2332 SHA512:851fbfb71c97c508c58cc5cc8ef00542b9b1aab4e15e40e969172171c6f72c4b4fb61187dcbaad7f545604bc94c5fa628bf24763903df1ad1743761d7e8583fa
 ```
 
-### `dpkg` source package: `python3-catkin-pkg-modules=0.5.0-1`
+### `dpkg` source package: `python3-catkin-pkg-modules=0.5.2-1`
 
 Binary Packages:
 
-- `python3-catkin-pkg-modules=0.5.0-1`
+- `python3-catkin-pkg-modules=0.5.2-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3-catkin-pkg-modules=0.5.2-1
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-catkin-pkg-modules/python3-catkin-pkg-modules_0.5.2-1.debian.tar.xz' python3-catkin-pkg-modules_0.5.2-1.debian.tar.xz 2004 SHA512:3cac65ab1e8334b4ccec07609b28359f561e07cb27bd842b0634d1c24f788866e3c102f629586ff9c55d5663bc19e28384ff03cdbabc7c6674dea2bdaa6310f4
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-catkin-pkg-modules/python3-catkin-pkg-modules_0.5.2-1.dsc' python3-catkin-pkg-modules_0.5.2-1.dsc 1019 SHA512:513f451e379cb105fb01559ede2e9c58734b1e21ed048676fc5544c16d8b9e540c5d2330d1f2c2607bc3e0bf22dae737ae1727fba49924608c5dc6c63cbd3ccf
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-catkin-pkg-modules/python3-catkin-pkg-modules_0.5.2.orig.tar.gz' python3-catkin-pkg-modules_0.5.2.orig.tar.gz 62745 SHA512:cef4a8f79828c221cb07924a7f724a547d7fd60a0a7690b8a5bf7bb663e263e27ef7fbce55ef46f17319d3bfe8d61941eb2fd63d4323f01e35b73a3d0b26fdf5
+```
 
-### `dpkg` source package: `python3-catkin-pkg=0.5.0-100`
+### `dpkg` source package: `python3-catkin-pkg=0.5.2-100`
 
 Binary Packages:
 
-- `python3-catkin-pkg=0.5.0-100`
+- `python3-catkin-pkg=0.5.2-100`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3-catkin-pkg=0.5.2-100
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-catkin-pkg/python3-catkin-pkg_0.5.2-100.debian.tar.xz' python3-catkin-pkg_0.5.2-100.debian.tar.xz 1996 SHA512:87e947e9cb996f820f3e7133457a2bd516a0303dfa5534d2c79ef8e366c5441feafe8c2672aa8d022e7c406fc97d1b83fa95115864ad1ea342281b14eff7ece6
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-catkin-pkg/python3-catkin-pkg_0.5.2-100.dsc' python3-catkin-pkg_0.5.2-100.dsc 955 SHA512:a28d0439bb9d5613d5a001560e6ca004dc3dedf5b54b5e4decd6862e7e0c269b1597da63f90d324ceefefdd7ff16f708e31c8805523a395e30b8acaa10e8ed9b
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-catkin-pkg/python3-catkin-pkg_0.5.2.orig.tar.gz' python3-catkin-pkg_0.5.2.orig.tar.gz 15512 SHA512:2c1958d19538dd9afed9819464d452db401b32f50e8f83c75e8512906c2adfceb1ef03781b1cb4b2579118cdca7ee727f9ab36ca09b48424206f1c8128004ef9
+```
 
 ### `dpkg` source package: `python3-colcon-argcomplete=0.3.3-1`
 
