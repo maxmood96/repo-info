@@ -1,7 +1,7 @@
 ## `tomee:8-jre17-microprofile`
 
 ```console
-$ docker pull tomee@sha256:b3fc1b058ac760aafcc96120d3cdc5d1d483d7ebd8b2e5c7cef9c4ca56e90971
+$ docker pull tomee@sha256:4b2a086a8e5318dc1ee8106c030525f2df56ce1464a99a61cb16cdb86d839580
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -98,85 +98,85 @@ CMD ["catalina.sh" "run"]
 ### `tomee:8-jre17-microprofile` - linux; arm64 variant v8
 
 ```console
-$ docker pull tomee@sha256:1544648e21f364bf059357c7d2bde2c1e211418ec1a59b3a0702ccd42247446d
+$ docker pull tomee@sha256:c34cf89a96982a8af5040c0f8032284ed45119f6a0abf1420b2198f154acf414
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **162.3 MB (162313092 bytes)**  
+-	Total Size: **162.3 MB (162337193 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:062649c6d52d575f1d5c09c7290342e288a3f7861ae8b9960c42e9d5d6736863`
+-	Image ID: `sha256:c7432f5a0b631f7503520ec4cba5b58a5f585c85f811f1a8ee7335bd4918fda9`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
-# Fri, 29 Apr 2022 22:49:34 GMT
-ADD file:ccdde790bb849fe101367f2b541f1062b3544d21f99a5acc535bf2b0884cc0eb in / 
-# Fri, 29 Apr 2022 22:49:35 GMT
+# Tue, 07 Jun 2022 01:25:15 GMT
+ADD file:8bb0809a8ac8e978274cf731cff7529372088d22c5b0233a28f01ef414aefbca in / 
+# Tue, 07 Jun 2022 01:25:16 GMT
 CMD ["bash"]
-# Fri, 29 Apr 2022 23:28:34 GMT
+# Tue, 07 Jun 2022 04:59:51 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 29 Apr 2022 23:30:47 GMT
+# Tue, 07 Jun 2022 05:06:48 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales binutils     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 29 Apr 2022 23:30:47 GMT
+# Tue, 07 Jun 2022 06:36:39 GMT
 ENV JAVA_VERSION=jdk-17.0.3+7
-# Fri, 29 Apr 2022 23:31:28 GMT
+# Tue, 07 Jun 2022 06:37:50 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='b32bf4e18a0befea32c0ff377da7a1753b91477617a9921ceb3dee6964d2799b';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.3%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.3_7.tar.gz';          ;;        armhf|arm)          ESUM='fda34743f1ad8b629f42773f6519e87d13876d4b10f98b76cd47b1aa9ad18572';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.3%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.3_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='257325f38546ce34645f6e8d7e566df401c97a9ae5f107583f9ac71f0f1b04e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.3%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.3_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='6790e3995a7fb8db99974d213f750bfd1631bfc0dad9946334be34d7b78fdbee';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.3%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.3_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='446b1ac5504d51c2ff9b0cccff079be3ce800cf8c3a3f13bab07f2656aa1fd27';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.3%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.3_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 29 Apr 2022 23:31:29 GMT
+# Tue, 07 Jun 2022 06:37:50 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 29 Apr 2022 23:31:30 GMT
+# Tue, 07 Jun 2022 06:37:51 GMT
 RUN echo Verifying install ...     && echo java --version && java --version     && echo Complete.
-# Tue, 24 May 2022 17:44:13 GMT
+# Tue, 07 Jun 2022 08:26:42 GMT
 ENV PATH=/usr/local/tomee/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 24 May 2022 17:44:13 GMT
+# Tue, 07 Jun 2022 08:26:43 GMT
 RUN mkdir -p /usr/local/tomee
-# Tue, 24 May 2022 17:44:14 GMT
+# Tue, 07 Jun 2022 08:26:44 GMT
 WORKDIR /usr/local/tomee
-# Tue, 24 May 2022 17:44:24 GMT
+# Tue, 07 Jun 2022 08:26:53 GMT
 RUN apt-get update   && apt-get install -y  gpg   && rm -rf /var/lib/apt/lists/*
-# Tue, 24 May 2022 17:44:33 GMT
+# Tue, 07 Jun 2022 08:27:02 GMT
 RUN set -xe;   for key in   9056B710F1E332780DE7AF34CBAEBE39A46C4CA1   F067B8140F5DD80E1D3B5D92318242FE9A0B1183   223D3A74B068ECA354DC385CE126833F9CF64915   DBCCD103B8B24F86FFAAB025C8BB472CD297D428   7A2744A8A9AAF063C23EB7868EBE7DBE8D050EEF   B8B301E6105DF628076BD92C5483E55897ABD9B9   FAA603D58B1BA4EDF65896D0ED340E0E6D545F97   A57DAF81C1B69921F4BA8723A8DE0A4DB863A7C1   82D8419BA697F0E7FB85916EE91287822FDB81B1   B7574789F5018690043E6DD9C212662E12F3E1DD   C23A3F6F595EBD0F960270CC997C8F1A5BE6E4C1   678F2D98F1FD9643811639FB622B8F2D043F71D8   BDD0BBEB753192957EFC5F896A62FC8EF17D8FEF   D11DF12CC2CA4894BDE638B967C1227A2678363C   C92604B0DEC5C62CFF5801E73D4683C24EDC64D1   626C542EDA7C113814B77AF09C04914D63645D20   3948829384B269D333CC5B98358807C52B4B0E23   B83D15E72253ED1104EB4FBBDAB472F0E5B8A431   ; do     gpg --batch --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys "$key" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done
-# Tue, 24 May 2022 17:44:34 GMT
+# Tue, 07 Jun 2022 08:27:03 GMT
 ENV TOMEE_VER=8.0.11
-# Tue, 24 May 2022 17:45:15 GMT
+# Tue, 07 Jun 2022 08:27:42 GMT
 ENV TOMEE_BUILD=microprofile
-# Tue, 24 May 2022 17:45:22 GMT
+# Tue, 07 Jun 2022 08:27:47 GMT
 RUN set -x   && curl -fSL https://dist.apache.org/repos/dist/release/tomee/tomee-${TOMEE_VER}/apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz.asc -o tomee.tar.gz.asc   && curl -fSL https://dist.apache.org/repos/dist/release/tomee/tomee-${TOMEE_VER}/apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz.sha512 -o tomee.tar.gz.sha512   && curl -fSL https://dist.apache.org/repos/dist/release/tomee/tomee-${TOMEE_VER}/apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz -o apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && gpg --batch --verify tomee.tar.gz.asc apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && echo `cat tomee.tar.gz.sha512` apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz | sha512sum -c -   && tar -zxf apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && mv apache-tomee-${TOMEE_BUILD}-${TOMEE_VER}/* /usr/local/tomee   && rm apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && rm -Rf apache-tomee-${TOMEE_BUILD}-${TOMEE_VER}   && rm bin/*.bat   && rm bin/*.exe   && rm bin/*.tar.gz*   && rm tomee.tar.gz.asc   && rm tomee.tar.gz*
-# Tue, 24 May 2022 17:45:22 GMT
+# Tue, 07 Jun 2022 08:27:48 GMT
 EXPOSE 8080
-# Tue, 24 May 2022 17:45:23 GMT
+# Tue, 07 Jun 2022 08:27:48 GMT
 CMD ["catalina.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:d4ba87bb7858f0dd4a60003f011338f3a58b87d0add985652856007fe5ca5034`  
-		Last Modified: Fri, 29 Apr 2022 22:51:32 GMT  
-		Size: 27.2 MB (27169388 bytes)  
+	-	`sha256:11e23ac719b33170b39b7e30b8027dc09c9cbad6b503b2b6b3ebbd9d33f4adad`  
+		Last Modified: Thu, 02 Jun 2022 08:33:07 GMT  
+		Size: 27.2 MB (27191210 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11b467f4b58f0fff42ab91803fe1a7c56675eed1a58f67991e9e7b0e445b91c1`  
-		Last Modified: Fri, 29 Apr 2022 23:35:19 GMT  
-		Size: 20.5 MB (20499354 bytes)  
+	-	`sha256:68e4a04805fb472806936ea1417715c9eeb219259a6a6fc44afc367c1d8c5b69`  
+		Last Modified: Tue, 07 Jun 2022 05:12:45 GMT  
+		Size: 20.5 MB (20500981 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bec67f097ff34e42214a096abc801c87c94bf54ec712dd7c8c7cfa9c4cce2294`  
-		Last Modified: Fri, 29 Apr 2022 23:36:00 GMT  
-		Size: 46.3 MB (46273208 bytes)  
+	-	`sha256:e41ee0d8f3dce0b9899541d38046fddeb37199fc18fd7a0f1bce768cbb028cec`  
+		Last Modified: Tue, 07 Jun 2022 06:45:57 GMT  
+		Size: 46.3 MB (46273239 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9bba9689c028433e009befa69f8a6455447aa1ec9b056853669def5568774a96`  
-		Last Modified: Fri, 29 Apr 2022 23:35:53 GMT  
+	-	`sha256:bdd3adec87ea73d8389e852dfa694f418fee963829aa520b51a0c0053b13682f`  
+		Last Modified: Tue, 07 Jun 2022 06:45:51 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5089e7636b98220b68493ef86febec29cb097b8d7d63fcae6f890a8c352c3cee`  
-		Last Modified: Tue, 24 May 2022 18:36:08 GMT  
+	-	`sha256:5800725d9dea473d734feb6827c343ddae52c0be0718f4b46af202055f50b1ad`  
+		Last Modified: Tue, 07 Jun 2022 09:08:21 GMT  
 		Size: 139.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dfcd11222335f999e94ec474644939e6cdb0c36e64f0ee46cc2d1f44fc9a5c34`  
-		Last Modified: Tue, 24 May 2022 18:36:09 GMT  
-		Size: 3.4 MB (3397649 bytes)  
+	-	`sha256:6219defee3d8d5204f578a336d28c1e44eabe025eff414006110b738f73bc00d`  
+		Last Modified: Tue, 07 Jun 2022 09:08:23 GMT  
+		Size: 3.4 MB (3398275 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f17c860bf52d044cbcecddd05b568b319f9d07329e5e44c5fb1653c1e9d4a100`  
-		Last Modified: Tue, 24 May 2022 18:36:08 GMT  
-		Size: 62.9 KB (62866 bytes)  
+	-	`sha256:10becc5c9b8120299bcd09601a48cbbee128533e5e49165824c4fcf17a910bbf`  
+		Last Modified: Tue, 07 Jun 2022 09:08:21 GMT  
+		Size: 62.9 KB (62863 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b20a811625955e2971f157bc73b5d7883b535f10916103dd6c888ab2e70e91ed`  
-		Last Modified: Tue, 24 May 2022 18:39:19 GMT  
-		Size: 64.9 MB (64910361 bytes)  
+	-	`sha256:bd522144523be28b623682018d042080a0e8b2bd217011598178beb7de7fbb99`  
+		Last Modified: Tue, 07 Jun 2022 09:11:33 GMT  
+		Size: 64.9 MB (64910359 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
