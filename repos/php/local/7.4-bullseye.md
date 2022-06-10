@@ -1,9 +1,9 @@
-# `php:7.4.29-cli-bullseye`
+# `php:7.4.30-cli-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:96324ce6cf40b3b55b51f0ee7c72ca44f7671ba858778326ef1cada8afa154d4`
-- Created: `2022-05-28T09:29:19.711770825Z`
+- Image ID: `sha256:d5fa11247cdb3097f7cb7af55356ee430eed9d4b4e0079e70f5685954f4cca46`
+- Created: `2022-06-09T23:03:45.624677417Z`
 - Virtual Size: ~ 473.40 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312`
-  - `PHP_VERSION=7.4.29`
-  - `PHP_URL=https://www.php.net/distributions/php-7.4.29.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.29.tar.xz.asc`
-  - `PHP_SHA256=7d0f07869f33311ff3fe1138dc0d6c0d673c37fcb737eaed2c6c10a949f1aed6`
+  - `PHP_VERSION=7.4.30`
+  - `PHP_URL=https://www.php.net/distributions/php-7.4.30.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.30.tar.xz.asc`
+  - `PHP_SHA256=ea72a34f32c67e79ac2da7dfe96177f3c451c3eefae5810ba13312ed398ba70d`
 
 ## `dpkg` (`.deb`-based packages)
 
