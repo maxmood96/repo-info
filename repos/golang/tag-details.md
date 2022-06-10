@@ -67,6 +67,32 @@
 -	[`golang:1.18.3-windowsservercore`](#golang1183-windowsservercore)
 -	[`golang:1.18.3-windowsservercore-1809`](#golang1183-windowsservercore-1809)
 -	[`golang:1.18.3-windowsservercore-ltsc2022`](#golang1183-windowsservercore-ltsc2022)
+-	[`golang:1.19-rc`](#golang119-rc)
+-	[`golang:1.19-rc-alpine`](#golang119-rc-alpine)
+-	[`golang:1.19-rc-alpine3.15`](#golang119-rc-alpine315)
+-	[`golang:1.19-rc-alpine3.16`](#golang119-rc-alpine316)
+-	[`golang:1.19-rc-bullseye`](#golang119-rc-bullseye)
+-	[`golang:1.19-rc-buster`](#golang119-rc-buster)
+-	[`golang:1.19-rc-nanoserver`](#golang119-rc-nanoserver)
+-	[`golang:1.19-rc-nanoserver-1809`](#golang119-rc-nanoserver-1809)
+-	[`golang:1.19-rc-nanoserver-ltsc2022`](#golang119-rc-nanoserver-ltsc2022)
+-	[`golang:1.19-rc-stretch`](#golang119-rc-stretch)
+-	[`golang:1.19-rc-windowsservercore`](#golang119-rc-windowsservercore)
+-	[`golang:1.19-rc-windowsservercore-1809`](#golang119-rc-windowsservercore-1809)
+-	[`golang:1.19-rc-windowsservercore-ltsc2022`](#golang119-rc-windowsservercore-ltsc2022)
+-	[`golang:1.19beta1`](#golang119beta1)
+-	[`golang:1.19beta1-alpine`](#golang119beta1-alpine)
+-	[`golang:1.19beta1-alpine3.15`](#golang119beta1-alpine315)
+-	[`golang:1.19beta1-alpine3.16`](#golang119beta1-alpine316)
+-	[`golang:1.19beta1-bullseye`](#golang119beta1-bullseye)
+-	[`golang:1.19beta1-buster`](#golang119beta1-buster)
+-	[`golang:1.19beta1-nanoserver`](#golang119beta1-nanoserver)
+-	[`golang:1.19beta1-nanoserver-1809`](#golang119beta1-nanoserver-1809)
+-	[`golang:1.19beta1-nanoserver-ltsc2022`](#golang119beta1-nanoserver-ltsc2022)
+-	[`golang:1.19beta1-stretch`](#golang119beta1-stretch)
+-	[`golang:1.19beta1-windowsservercore`](#golang119beta1-windowsservercore)
+-	[`golang:1.19beta1-windowsservercore-1809`](#golang119beta1-windowsservercore-1809)
+-	[`golang:1.19beta1-windowsservercore-ltsc2022`](#golang119beta1-windowsservercore-ltsc2022)
 -	[`golang:alpine`](#golangalpine)
 -	[`golang:alpine3.15`](#golangalpine315)
 -	[`golang:alpine3.16`](#golangalpine316)
@@ -21750,6 +21776,110 @@ WORKDIR C:\go
 		Last Modified: Wed, 01 Jun 2022 23:45:48 GMT  
 		Size: 1.5 KB (1520 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `golang:1.19-rc`
+
+**does not exist** (yet?)
+
+## `golang:1.19-rc-alpine`
+
+**does not exist** (yet?)
+
+## `golang:1.19-rc-alpine3.15`
+
+**does not exist** (yet?)
+
+## `golang:1.19-rc-alpine3.16`
+
+**does not exist** (yet?)
+
+## `golang:1.19-rc-bullseye`
+
+**does not exist** (yet?)
+
+## `golang:1.19-rc-buster`
+
+**does not exist** (yet?)
+
+## `golang:1.19-rc-nanoserver`
+
+**does not exist** (yet?)
+
+## `golang:1.19-rc-nanoserver-1809`
+
+**does not exist** (yet?)
+
+## `golang:1.19-rc-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
+## `golang:1.19-rc-stretch`
+
+**does not exist** (yet?)
+
+## `golang:1.19-rc-windowsservercore`
+
+**does not exist** (yet?)
+
+## `golang:1.19-rc-windowsservercore-1809`
+
+**does not exist** (yet?)
+
+## `golang:1.19-rc-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
+
+## `golang:1.19beta1`
+
+**does not exist** (yet?)
+
+## `golang:1.19beta1-alpine`
+
+**does not exist** (yet?)
+
+## `golang:1.19beta1-alpine3.15`
+
+**does not exist** (yet?)
+
+## `golang:1.19beta1-alpine3.16`
+
+**does not exist** (yet?)
+
+## `golang:1.19beta1-bullseye`
+
+**does not exist** (yet?)
+
+## `golang:1.19beta1-buster`
+
+**does not exist** (yet?)
+
+## `golang:1.19beta1-nanoserver`
+
+**does not exist** (yet?)
+
+## `golang:1.19beta1-nanoserver-1809`
+
+**does not exist** (yet?)
+
+## `golang:1.19beta1-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
+## `golang:1.19beta1-stretch`
+
+**does not exist** (yet?)
+
+## `golang:1.19beta1-windowsservercore`
+
+**does not exist** (yet?)
+
+## `golang:1.19beta1-windowsservercore-1809`
+
+**does not exist** (yet?)
+
+## `golang:1.19beta1-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
 
 ## `golang:alpine`
 
