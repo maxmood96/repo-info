@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bef2e776b57c1436caefaefde15826b638527cdec9b36bdb701863fe3671cf02`
-- Created: `2022-06-08T23:21:28.515747902Z`
-- Virtual Size: ~ 167.02 Mb  
+- Image ID: `sha256:8e6d5d6ded52df34856d955db7ee27605604b3b45909c4a598e6bd734e1912e3`
+- Created: `2022-06-10T02:04:04.081227279Z`
+- Virtual Size: ~ 167.03 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD`
-  - `PHP_VERSION=8.1.6`
-  - `PHP_URL=https://www.php.net/distributions/php-8.1.6.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.6.tar.xz.asc`
-  - `PHP_SHA256=da38d65bb0d5dd56f711cd478204f2b62a74a2c2b0d2d523a78d6eb865b2364c`
+  - `PHP_VERSION=8.1.7`
+  - `PHP_URL=https://www.php.net/distributions/php-8.1.7.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.7.tar.xz.asc`
+  - `PHP_SHA256=f042322f1b5a9f7c2decb84b7086ef676896c2f7178739b9672afafa964ed0e5`
   - `DRUPAL_VERSION=10.0.0-alpha5`
 
 ## `apk` (`.apk`-based packages)
@@ -181,16 +181,16 @@ MIT
 ### `apk` package: `freetype`
 
 ```console
-freetype-2.11.1-r1 description:
+freetype-2.11.1-r2 description:
 TrueType font rendering library
 
-freetype-2.11.1-r1 webpage:
+freetype-2.11.1-r2 webpage:
 https://www.freetype.org/
 
-freetype-2.11.1-r1 installed size:
+freetype-2.11.1-r2 installed size:
 748 KiB
 
-freetype-2.11.1-r1 license:
+freetype-2.11.1-r2 license:
 FTL GPL-2.0-or-later
 
 ```
@@ -351,16 +351,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-14.2-r0 description:
+libpq-14.3-r0 description:
 PostgreSQL client library
 
-libpq-14.2-r0 webpage:
+libpq-14.3-r0 webpage:
 https://www.postgresql.org/
 
-libpq-14.2-r0 installed size:
+libpq-14.3-r0 installed size:
 328 KiB
 
-libpq-14.2-r0 license:
+libpq-14.3-r0 license:
 PostgreSQL
 
 ```
