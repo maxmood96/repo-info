@@ -1,7 +1,7 @@
 ## `redis:7-alpine3.16`
 
 ```console
-$ docker pull redis@sha256:d4527f2bd5e0019f1ca6b0a659f9105f5df35f68d4e8aa071698e3333c4aeb67
+$ docker pull redis@sha256:5916c280afae05baf0dc9a0cc82fa8e51477bdbfc72f60a5c14fd2b7735bcf07
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -382,14 +382,14 @@ CMD ["redis-server"]
 ### `redis:7-alpine3.16` - linux; ppc64le
 
 ```console
-$ docker pull redis@sha256:ee8ff9c93b606e2b95a82c13ff9111759727f7d012ce863d9dde12839bf9a204
+$ docker pull redis@sha256:9a8b33076b11e4bd0016930eccb27c066275e5811c907513631d17641f6b64bd
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **12.5 MB (12457081 bytes)**  
+-	Total Size: **12.5 MB (12457033 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:103f5330403f3ae6321a0a97f3b764d85feebfcfc6621fc23465211a26799654`
+-	Image ID: `sha256:c68e152d2188e5cb8820aa391ab0e9e1db90a7b8eb70d51231f495b496124cf8`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -402,27 +402,27 @@ CMD ["/bin/sh"]
 RUN addgroup -S -g 1000 redis && adduser -S -G redis -u 999 redis
 # Thu, 26 May 2022 00:20:34 GMT
 RUN apk add --no-cache 		'su-exec>=0.2' 		tzdata
-# Wed, 08 Jun 2022 19:41:05 GMT
-ENV REDIS_VERSION=7.0.1
-# Wed, 08 Jun 2022 19:41:07 GMT
-ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-7.0.1.tar.gz
-# Wed, 08 Jun 2022 19:41:09 GMT
-ENV REDIS_DOWNLOAD_SHA=ca1820d527e4759884620be2917079e61e996fa81da5fbe5c07c4a7b507264dc
-# Wed, 08 Jun 2022 19:42:22 GMT
+# Mon, 13 Jun 2022 21:55:23 GMT
+ENV REDIS_VERSION=7.0.2
+# Mon, 13 Jun 2022 21:55:27 GMT
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-7.0.2.tar.gz
+# Mon, 13 Jun 2022 21:55:31 GMT
+ENV REDIS_DOWNLOAD_SHA=5e57eafe7d4ac5ecb6a7d64d6b61db775616dbf903293b3fcc660716dbda5eeb
+# Mon, 13 Jun 2022 21:56:48 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		coreutils 		dpkg-dev dpkg 		gcc 		linux-headers 		make 		musl-dev 		openssl-dev 		wget 	; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .redis-rundeps $runDeps; 	apk del --no-network .build-deps; 		redis-cli --version; 	redis-server --version
-# Wed, 08 Jun 2022 19:42:35 GMT
+# Mon, 13 Jun 2022 21:56:59 GMT
 RUN mkdir /data && chown redis:redis /data
-# Wed, 08 Jun 2022 19:42:38 GMT
+# Mon, 13 Jun 2022 21:57:08 GMT
 VOLUME [/data]
-# Wed, 08 Jun 2022 19:42:44 GMT
+# Mon, 13 Jun 2022 21:57:15 GMT
 WORKDIR /data
-# Wed, 08 Jun 2022 19:42:46 GMT
+# Mon, 13 Jun 2022 21:57:18 GMT
 COPY file:a9e7249f657e2eec627bb4be492ad18aae3e5e1f0e47d22644eaf1ef2138c0ce in /usr/local/bin/ 
-# Wed, 08 Jun 2022 19:42:49 GMT
+# Mon, 13 Jun 2022 21:57:22 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 08 Jun 2022 19:42:52 GMT
+# Mon, 13 Jun 2022 21:57:27 GMT
 EXPOSE 6379
-# Wed, 08 Jun 2022 19:42:56 GMT
+# Mon, 13 Jun 2022 21:57:30 GMT
 CMD ["redis-server"]
 ```
 
@@ -439,17 +439,17 @@ CMD ["redis-server"]
 		Last Modified: Thu, 26 May 2022 00:35:11 GMT  
 		Size: 413.6 KB (413623 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cde997f81a7301a4b21eb08eb7a5d4c2db561f702dae66ae5b99c0aa7c5ff837`  
-		Last Modified: Wed, 08 Jun 2022 19:45:56 GMT  
-		Size: 9.3 MB (9251719 bytes)  
+	-	`sha256:c3246c23c6bae83fc5abc0132491748019860799b925feb5fe33fc6a73635859`  
+		Last Modified: Mon, 13 Jun 2022 22:00:44 GMT  
+		Size: 9.3 MB (9251670 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2dd340ba1ed9eba349303af82545cf570adf80d36bcbb695f44c26a4dfe5aed1`  
-		Last Modified: Wed, 08 Jun 2022 19:45:54 GMT  
-		Size: 133.0 B  
+	-	`sha256:d62c1ac3c9d237bf493ca8d8ffe76a029c4967b6416f5b025baf337a188b6b02`  
+		Last Modified: Mon, 13 Jun 2022 22:00:42 GMT  
+		Size: 135.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5166f15cdcae88e0d5085d6bcf8704d85375e83d54bb7a6f2dc610e06b465133`  
-		Last Modified: Wed, 08 Jun 2022 19:45:54 GMT  
-		Size: 581.0 B  
+	-	`sha256:4b1692d0a41ec99f887ccc05b4343a8d1868da9c5d5af7fcf8f22e46e8c2c213`  
+		Last Modified: Mon, 13 Jun 2022 22:00:42 GMT  
+		Size: 580.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:7-alpine3.16` - linux; s390x
