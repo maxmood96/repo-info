@@ -1,7 +1,7 @@
 ## `telegraf:alpine`
 
 ```console
-$ docker pull telegraf@sha256:ce87289e52df0a03bca57c0ac9c80f6068412167e7a8463821a5fc63f5350cd5
+$ docker pull telegraf@sha256:482a7303dab8b771f241420d810e5de5c4bcea7daf386e36353f9cdcbd658a5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull telegraf@sha256:ce87289e52df0a03bca57c0ac9c80f6068412167e7a8463821
 ### `telegraf:alpine` - linux; amd64
 
 ```console
-$ docker pull telegraf@sha256:600fac5e153d3c3e1046a8fb004601f558cf769526ba03a69c0203685b7a3ed1
+$ docker pull telegraf@sha256:a708850dc3b06115695c409e749afd004b511bc82472a323ee58daf2eb30b23c
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **46.5 MB (46541684 bytes)**  
+-	Total Size: **46.7 MB (46670746 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2cae1eedb6f93b7a902ae2f13dea7922c8f2b9fd184bb0ae3ecbfc1e2f816b85`
+-	Image ID: `sha256:92e0c7252a564fbfe701ca2e50f3c8f7574e43593ba91cf4a5e292132fa7ab39`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["telegraf"]`
 
@@ -31,17 +31,17 @@ CMD ["/bin/sh"]
 RUN echo 'hosts: files dns' >> /etc/nsswitch.conf
 # Tue, 05 Apr 2022 09:42:03 GMT
 RUN apk add --no-cache iputils ca-certificates net-snmp-tools procps lm_sensors tzdata su-exec libcap &&     update-ca-certificates
-# Tue, 17 May 2022 19:38:14 GMT
-ENV TELEGRAF_VERSION=1.22.4
-# Tue, 17 May 2022 19:38:22 GMT
+# Mon, 13 Jun 2022 22:14:53 GMT
+ENV TELEGRAF_VERSION=1.23.0
+# Mon, 13 Jun 2022 22:15:00 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     apk add --no-cache --virtual .build-deps wget gnupg tar &&     for key in         05CE15085FC09D18E99EFB22684A14CF2582E0C5 ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done &&     wget --no-verbose https://dl.influxdata.com/telegraf/releases/telegraf-${TELEGRAF_VERSION}_static_linux_amd64.tar.gz.asc &&     wget --no-verbose https://dl.influxdata.com/telegraf/releases/telegraf-${TELEGRAF_VERSION}_static_linux_amd64.tar.gz &&     gpg --batch --verify telegraf-${TELEGRAF_VERSION}_static_linux_amd64.tar.gz.asc telegraf-${TELEGRAF_VERSION}_static_linux_amd64.tar.gz &&     mkdir -p /usr/src /etc/telegraf &&     tar -C /usr/src -xzf telegraf-${TELEGRAF_VERSION}_static_linux_amd64.tar.gz &&     mv /usr/src/telegraf*/etc/telegraf/telegraf.conf /etc/telegraf/ &&     mkdir /etc/telegraf/telegraf.d &&     cp -a /usr/src/telegraf*/usr/bin/telegraf /usr/bin/ &&     gpgconf --kill all &&     rm -rf *.tar.gz* /usr/src /root/.gnupg &&     apk del .build-deps &&     addgroup -S telegraf &&     adduser -S telegraf -G telegraf &&     chown -R telegraf:telegraf /etc/telegraf
-# Tue, 17 May 2022 19:38:22 GMT
+# Mon, 13 Jun 2022 22:15:00 GMT
 EXPOSE 8092/udp 8094 8125/udp
-# Tue, 17 May 2022 19:38:22 GMT
+# Mon, 13 Jun 2022 22:15:00 GMT
 COPY file:f41cb64129e03c46523c3acd2da77376a68d9785d775faf0d359051c20b4f1bf in /entrypoint.sh 
-# Tue, 17 May 2022 19:38:22 GMT
+# Mon, 13 Jun 2022 22:15:00 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 17 May 2022 19:38:22 GMT
+# Mon, 13 Jun 2022 22:15:01 GMT
 CMD ["telegraf"]
 ```
 
@@ -58,11 +58,11 @@ CMD ["telegraf"]
 		Last Modified: Tue, 05 Apr 2022 09:42:52 GMT  
 		Size: 3.4 MB (3372472 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68215b2eb23e62150caa8eea3b5416684ae67938dc95e8b72c6b0c964a9f07d3`  
-		Last Modified: Tue, 17 May 2022 19:39:12 GMT  
-		Size: 40.4 MB (40354171 bytes)  
+	-	`sha256:7e9da2e3b7510f892c8df5618f02fbd069f1ebf0ac2bf87c1013940b468603d6`  
+		Last Modified: Mon, 13 Jun 2022 22:15:47 GMT  
+		Size: 40.5 MB (40483234 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ce8eaca9a63ce57ea8091ba06ad669599288a7267785f0dd9f0d16ead220c40`  
-		Last Modified: Tue, 17 May 2022 19:39:05 GMT  
-		Size: 328.0 B  
+	-	`sha256:1373e95e3d909a53431f6df1b0a2cd34257540eb2fd145677f8551d30b0281af`  
+		Last Modified: Mon, 13 Jun 2022 22:15:40 GMT  
+		Size: 327.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
