@@ -1543,20 +1543,13 @@ Licenses: (parsed from: `/usr/share/doc/libgmp-dev/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gmp=2:6.2.1+dfsg-3
-'http://deb.debian.org/debian/pool/main/g/gmp/gmp_6.2.1%2bdfsg-3.dsc' gmp_6.2.1+dfsg-3.dsc 2223 SHA256:b91dae1d6298e5ff75dee503c7f8128e822000e343e0a5b5d5146cc1713334bb
-'http://deb.debian.org/debian/pool/main/g/gmp/gmp_6.2.1%2bdfsg.orig.tar.xz' gmp_6.2.1+dfsg.orig.tar.xz 1853476 SHA256:c6ba08e3f079260ab90ff44ab8801eae134cd62cd78f4aa56317c0e70daa40cb
-'http://deb.debian.org/debian/pool/main/g/gmp/gmp_6.2.1%2bdfsg-3.debian.tar.xz' gmp_6.2.1+dfsg-3.debian.tar.xz 18356 SHA256:32d75d4e7a383a5cea701aff4a4bf609933c4d15d1f5e3b6168eed51857bc8f0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gmp/2:6.2.1+dfsg-3/
 
-- https://sources.debian.net/src/gmp/2:6.2.1+dfsg-3/ (for browsing the source)
-- https://sources.debian.net/src/gmp/2:6.2.1+dfsg-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gmp/2:6.2.1+dfsg-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnupg2=2.2.35-2`
 
@@ -4013,21 +4006,13 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mercurial=6.1.2-1
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.1.2-1.dsc' mercurial_6.1.2-1.dsc 2799 SHA256:b5e79cabf538b80ec9a01681b294dfa0a03f354e1e3f367f8cd4bef3b856d838
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.1.2.orig.tar.gz' mercurial_6.1.2.orig.tar.gz 8066147 SHA256:a52810fc01409828c4974d0bc2cbb5c80e948d5b584cfb1a7699623e924a2f2a
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.1.2.orig.tar.gz.asc' mercurial_6.1.2.orig.tar.gz.asc 659 SHA256:c34f8f2aec5e6e7caf17c54c82c206efc7974b56047989cd08fcfd11b390e130
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.1.2-1.debian.tar.xz' mercurial_6.1.2-1.debian.tar.xz 73832 SHA256:2a56ce2f684bade5da6833fe7ed37dc7f7bc7f0658bc29f84a281b3d30f7115d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mercurial/6.1.2-1/
 
-- https://sources.debian.net/src/mercurial/6.1.2-1/ (for browsing the source)
-- https://sources.debian.net/src/mercurial/6.1.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mercurial/6.1.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mpclib3=1.2.1-2`
 

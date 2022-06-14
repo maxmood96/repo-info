@@ -611,21 +611,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.83.0-1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.83.0-1.dsc' curl_7.83.0-1.dsc 2959 SHA256:0e797893ae93c544b30b06e6b04ca7ae5bf32339e4b194906225d2bb5115fc62
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.83.0.orig.tar.gz' curl_7.83.0.orig.tar.gz 4162166 SHA256:c0e64302a33d2fb79e0fc4e674260a22941e92ee2f11b894bf94d32b8f5531af
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.83.0.orig.tar.gz.asc' curl_7.83.0.orig.tar.gz.asc 488 SHA256:f6ca16283d7713e38a4210044c9dc06ba6ac1d924a7ed4f47abcf95d626ba365
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.83.0-1.debian.tar.xz' curl_7.83.0-1.debian.tar.xz 35460 SHA256:beab6cdce7bc9dfe3bbc05810188abc93309b7e84eade72f54189017bc4882eb
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/7.83.0-1/
 
-- https://sources.debian.net/src/curl/7.83.0-1/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.83.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.83.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg-4`
 
@@ -656,20 +648,13 @@ Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/l
 - `RSA-MD`
 - `SSLeay`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cyrus-sasl2=2.1.28+dfsg-4
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg-4.dsc' cyrus-sasl2_2.1.28+dfsg-4.dsc 3212 SHA256:f1c1f6d94c192d22ad9c73bf3655497338910151948732fd44903d355fdbb58d
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg.orig.tar.xz' cyrus-sasl2_2.1.28+dfsg.orig.tar.xz 797472 SHA256:a15886d7da5958bd27f35b7c871dd872f6dc5b9917c9b6b15e3de014c7dab3d9
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg-4.debian.tar.xz' cyrus-sasl2_2.1.28+dfsg-4.debian.tar.xz 86508 SHA256:c0ec8e39eb2e89742ce0f39ef3c78b898d4e4d3e03d537167f18348e3fed1095
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cyrus-sasl2/2.1.28+dfsg-4/
 
-- https://sources.debian.net/src/cyrus-sasl2/2.1.28+dfsg-4/ (for browsing the source)
-- https://sources.debian.net/src/cyrus-sasl2/2.1.28+dfsg-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cyrus-sasl2/2.1.28+dfsg-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dash=0.5.11+git20210903+057cd650a4ed-8`
 
@@ -2519,21 +2504,13 @@ Licenses: (parsed from: `/usr/share/doc/libfido2-1/copyright`)
 - `ISC`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libfido2=1.10.0-1
-'http://deb.debian.org/debian/pool/main/libf/libfido2/libfido2_1.10.0-1.dsc' libfido2_1.10.0-1.dsc 2588 SHA256:b138152c6697d51750fad315cf4ac445b7ad063d665579b06b0631cb378a2093
-'http://deb.debian.org/debian/pool/main/libf/libfido2/libfido2_1.10.0.orig.tar.gz' libfido2_1.10.0.orig.tar.gz 591372 SHA256:526efd3d56af706c05d09f3d21f18ee3b0b15ac0c1f5c5da1acbc27c2730b99b
-'http://deb.debian.org/debian/pool/main/libf/libfido2/libfido2_1.10.0.orig.tar.gz.asc' libfido2_1.10.0.orig.tar.gz.asc 833 SHA256:cb37e6950164449ca7034c2f926c133ff2a9d2731540c34f6b53ff551a983ca8
-'http://deb.debian.org/debian/pool/main/libf/libfido2/libfido2_1.10.0-1.debian.tar.xz' libfido2_1.10.0-1.debian.tar.xz 52432 SHA256:99ecd71741e1157b1e35cf133d2a9f1292978d28075708568c3922e0077a398c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libfido2/1.10.0-1/
 
-- https://sources.debian.net/src/libfido2/1.10.0-1/ (for browsing the source)
-- https://sources.debian.net/src/libfido2/1.10.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libfido2/1.10.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libgcrypt20=1.10.1-2`
 
@@ -3925,20 +3902,13 @@ Licenses: (parsed from: `/usr/share/doc/libmariadb-dev/copyright`, `/usr/share/d
 - `unlimited-free-doc`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mariadb-10.6=1:10.6.7-3
-'http://deb.debian.org/debian/pool/main/m/mariadb-10.6/mariadb-10.6_10.6.7-3.dsc' mariadb-10.6_10.6.7-3.dsc 4548 SHA256:13896a1b1fcf2fc9683683d58dfb5c2568e84660246695eccdcc628c9d9e1709
-'http://deb.debian.org/debian/pool/main/m/mariadb-10.6/mariadb-10.6_10.6.7.orig.tar.gz' mariadb-10.6_10.6.7.orig.tar.gz 82653881 SHA256:dfa096e02884c33ba14cd109aae43a5c65d1853561ccb3667ab983d854f73ad9
-'http://deb.debian.org/debian/pool/main/m/mariadb-10.6/mariadb-10.6_10.6.7-3.debian.tar.xz' mariadb-10.6_10.6.7-3.debian.tar.xz 229412 SHA256:5496d3e0832a54628eba77e6e2883b829c810b15a3d0837a4d5c921566d0f20d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mariadb-10.6/1:10.6.7-3/
 
-- https://sources.debian.net/src/mariadb-10.6/1:10.6.7-3/ (for browsing the source)
-- https://sources.debian.net/src/mariadb-10.6/1:10.6.7-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mariadb-10.6/1:10.6.7-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mawk=1.3.4.20200120-3`
 
@@ -4918,20 +4888,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.10=3.10.4-1
-'http://deb.debian.org/debian/pool/main/p/python3.10/python3.10_3.10.4-1.dsc' python3.10_3.10.4-1.dsc 3544 SHA256:c67dc7c159dabf6502454f5f399c4519066c9b592f3f3c974d810b8a8b97d487
-'http://deb.debian.org/debian/pool/main/p/python3.10/python3.10_3.10.4.orig.tar.xz' python3.10_3.10.4.orig.tar.xz 19342692 SHA256:80bf925f571da436b35210886cf79f6eb5fa5d6c571316b73568343451f77a19
-'http://deb.debian.org/debian/pool/main/p/python3.10/python3.10_3.10.4-1.debian.tar.xz' python3.10_3.10.4-1.debian.tar.xz 215436 SHA256:24e3b7525739c4afc4e0ec3d09c8c4a63ba31db270d121100c03d766e30dae52
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3.10/3.10.4-1/
 
-- https://sources.debian.net/src/python3.10/3.10.4-1/ (for browsing the source)
-- https://sources.debian.net/src/python3.10/3.10.4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.10/3.10.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=8.1.2-1.2`
 
