@@ -3187,14 +3187,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-rosdistro-modules=0.8.3-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro-modules/python-rosdistro-modules_0.8.3-1.debian.tar.xz' python-rosdistro-modules_0.8.3-1.debian.tar.xz 1988 SHA512:1f69a29cf781c0b373a2059a2ec44e8e3075650a4e5af12042c4d234e4b143ba7617c340967e03854ee50c411cd1bc2e5f7fcd2362ad68f60769400c47bb922f
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro-modules/python-rosdistro-modules_0.8.3-1.dsc' python-rosdistro-modules_0.8.3-1.dsc 982 SHA512:58fb5f1d23fbdec90aff70273f2f0344a1d26dfa20b43497d4efef4ea7ecff19942b6553ec3272574473267e21e3f2704c2c6560d65bdfa532aa1a79d5e4f4f0
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro-modules/python-rosdistro-modules_0.8.3.orig.tar.gz' python-rosdistro-modules_0.8.3.orig.tar.gz 42605 SHA512:b4d6924d4bc26bbd5d83cbcbba7f3c1e157561d7fbd51c55f66e7f99a4361542e433372788bf4cf0bcc57b6eb8526b1e77cf0f77b8cde06d363324aba6545047
-```
 
 ### `dpkg` source package: `python-rosdistro=0.8.3-100`
 
@@ -3206,14 +3201,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-rosdistro=0.8.3-100
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro/python-rosdistro_0.8.3-100.debian.tar.xz' python-rosdistro_0.8.3-100.debian.tar.xz 1972 SHA512:8a2fd23c0888d7d43f8752999fb2b4c38ff06ce2e0e428fbde2d49bd7a5fc3fdf7ff47388268aab4ac6407a96d97e3944743fb2adb43b246544c4f322d28ec59
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro/python-rosdistro_0.8.3-100.dsc' python-rosdistro_0.8.3-100.dsc 919 SHA512:a4f576dab1f64e0b0ae2c95ad846e20da40ac2ad369f4903ce23fc4e79b0a00ca07fcbcbfe11a3035d3586d13b298891d897c441e22c5dd39b5133bebad2ca07
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro/python-rosdistro_0.8.3.orig.tar.gz' python-rosdistro_0.8.3.orig.tar.gz 9994 SHA512:d654191e0e4ab10314986e6a5d10d8ac5b81dcd7c9996e0083141d9248b9a44591b8f52b829ddd77f9031b47b7bfd21e6d9400fde04b73121c3c25b2c22734a2
-```
 
 ### `dpkg` source package: `python-rospkg-modules=1.4.0-1`
 

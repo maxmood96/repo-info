@@ -2706,14 +2706,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-rosdistro-modules=0.8.3-1
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rosdistro-modules/python3-rosdistro-modules_0.8.3-1.debian.tar.xz' python3-rosdistro-modules_0.8.3-1.debian.tar.xz 1988 SHA512:e49a29255db6e09432cef75a251ac970b9b39f0477b1cc7b98bc81cd852b9c925246890fc4efd8e49a971f6116e8ae8f0636c42aef31eea6017aaa0dd817b7a0
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rosdistro-modules/python3-rosdistro-modules_0.8.3-1.dsc' python3-rosdistro-modules_0.8.3-1.dsc 969 SHA512:db5c2fa5b081101bfae373665da88243f517e548e87e3639edce2e65b6e68d3a3879b60b7db5ef63452dd001517471cf5cf5820fcf8f407efc23775a5c888560
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rosdistro-modules/python3-rosdistro-modules_0.8.3.orig.tar.gz' python3-rosdistro-modules_0.8.3.orig.tar.gz 44498 SHA512:824b76a2bc35767e49c2d3046c18e0e6f45000d2a27c95020cd72c941fd4331a12193507cd4a641f33f801621a6e3ecff7bf6c22f979d7c293273dc22697bd49
-```
 
 ### `dpkg` source package: `python3-rospkg-modules=1.4.0-1`
 

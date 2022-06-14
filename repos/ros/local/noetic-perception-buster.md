@@ -9855,14 +9855,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-rosdistro-modules=0.8.3-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python3-rosdistro-modules/python3-rosdistro-modules_0.8.3-1.debian.tar.xz' python3-rosdistro-modules_0.8.3-1.debian.tar.xz 1988 SHA512:e49a29255db6e09432cef75a251ac970b9b39f0477b1cc7b98bc81cd852b9c925246890fc4efd8e49a971f6116e8ae8f0636c42aef31eea6017aaa0dd817b7a0
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python3-rosdistro-modules/python3-rosdistro-modules_0.8.3-1.dsc' python3-rosdistro-modules_0.8.3-1.dsc 969 SHA512:db5c2fa5b081101bfae373665da88243f517e548e87e3639edce2e65b6e68d3a3879b60b7db5ef63452dd001517471cf5cf5820fcf8f407efc23775a5c888560
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python3-rosdistro-modules/python3-rosdistro-modules_0.8.3.orig.tar.gz' python3-rosdistro-modules_0.8.3.orig.tar.gz 44498 SHA512:824b76a2bc35767e49c2d3046c18e0e6f45000d2a27c95020cd72c941fd4331a12193507cd4a641f33f801621a6e3ecff7bf6c22f979d7c293273dc22697bd49
-```
 
 ### `dpkg` source package: `python3-rosdistro=0.8.3-100`
 
@@ -9874,14 +9869,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-rosdistro=0.8.3-100
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python3-rosdistro/python3-rosdistro_0.8.3-100.debian.tar.xz' python3-rosdistro_0.8.3-100.debian.tar.xz 1972 SHA512:ded23ea58ca452f4f9fddf7583d1b943ef961496a77c6257214a69fefed7ac1232dc79bb701fb9454dc924c4f4dee8a698e2f813e71519649d573dac9913e3ef
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python3-rosdistro/python3-rosdistro_0.8.3-100.dsc' python3-rosdistro_0.8.3-100.dsc 909 SHA512:cdb9a09c1659154cde6d4b287f3fd814c3c16fef80142b44ee875c08605e8f47a93a90536bab5004ced6611d110f62a447d9f7ad7c527cdc04021c92339a0cd8
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python3-rosdistro/python3-rosdistro_0.8.3.orig.tar.gz' python3-rosdistro_0.8.3.orig.tar.gz 10568 SHA512:153e0880576d0ac8ccb56cb18a4f08fb1cf14d987fa376e64c0df62f4e067486e5e925dac11d315e13f4e9714a72945d1596be27b6cf43fdb4f2ebe214bf0b64
-```
 
 ### `dpkg` source package: `python3-rospkg-modules=1.4.0-1`
 
@@ -13087,21 +13077,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2021a-0+deb10u4
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2021a-0%2bdeb10u4.dsc' tzdata_2021a-0+deb10u4.dsc 2264 SHA256:cab69d662b3950c5679d4e25f5a07d7c68eaa15ceb5784f7ebe64e63bd3ce64e
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2021a.orig.tar.gz' tzdata_2021a.orig.tar.gz 411892 SHA256:39e7d2ba08c68cbaefc8de3227aab0dec2521be8042cf56855f7dc3a9fb14e08
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2021a.orig.tar.gz.asc' tzdata_2021a.orig.tar.gz.asc 833 SHA256:9dc5f54674166f4ffbc2d4485e656227430ab5f39c9006e6ed9986281117f058
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2021a-0%2bdeb10u4.debian.tar.xz' tzdata_2021a-0+deb10u4.debian.tar.xz 110768 SHA256:fd6fce77e1f9314e0f61f3100bc5cadd606010146a65d4a3c7bf8e34b7c8026f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2021a-0+deb10u4/
 
-- https://sources.debian.net/src/tzdata/2021a-0+deb10u4/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2021a-0+deb10u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2021a-0+deb10u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `u-msgpack-python=2.1-1`
 
