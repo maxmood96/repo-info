@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6a3d4038bd6404332d2a585ccd74ecd9ae1242c0683762825cc466e52ceff2ac`
-- Created: `2022-04-04T21:58:32.882602368Z`
+- Image ID: `sha256:623e01e73d869ade6d0a8fca85ebdd81e25c1e3321e28c53c9fffb767fd9d094`
+- Created: `2022-06-10T17:43:56.771010217Z`
 - Virtual Size: ~ 601.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -115,16 +115,16 @@ MIT
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.32.1-r7 description:
+busybox-1.32.1-r8 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.32.1-r7 webpage:
+busybox-1.32.1-r8 webpage:
 https://busybox.net/
 
-busybox-1.32.1-r7 installed size:
+busybox-1.32.1-r8 installed size:
 924 KiB
 
-busybox-1.32.1-r7 license:
+busybox-1.32.1-r8 license:
 GPL-2.0-only
 
 ```
@@ -200,16 +200,16 @@ MIT
 ### `apk` package: `freetype`
 
 ```console
-freetype-2.10.4-r1 description:
+freetype-2.10.4-r3 description:
 TrueType font rendering library
 
-freetype-2.10.4-r1 webpage:
+freetype-2.10.4-r3 webpage:
 https://www.freetype.org/
 
-freetype-2.10.4-r1 installed size:
+freetype-2.10.4-r3 installed size:
 728 KiB
 
-freetype-2.10.4-r1 license:
+freetype-2.10.4-r3 license:
 FTL GPL-2.0-or-later
 
 ```
@@ -523,16 +523,16 @@ GPL-2.0-only
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.32.1-r7 description:
+ssl_client-1.32.1-r8 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.32.1-r7 webpage:
+ssl_client-1.32.1-r8 webpage:
 https://busybox.net/
 
-ssl_client-1.32.1-r7 installed size:
+ssl_client-1.32.1-r8 installed size:
 28 KiB
 
-ssl_client-1.32.1-r7 license:
+ssl_client-1.32.1-r8 license:
 GPL-2.0-only
 
 ```

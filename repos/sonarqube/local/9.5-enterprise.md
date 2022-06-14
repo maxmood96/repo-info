@@ -1,10 +1,10 @@
-# `sonarqube:9.4.0-enterprise`
+# `sonarqube:9.5.0-enterprise`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7de8f9953694f2a55eae2f3fdf89493ca46d4d93660899b9b5ad2d73d122d5fb`
-- Created: `2022-04-04T22:00:42.089574388Z`
-- Virtual Size: ~ 650.45 Mb  
+- Image ID: `sha256:dea781628a9ed169dcabf793a68add615a4ce009695992e6456cb10822dbf329`
+- Created: `2022-06-10T17:46:15.287520009Z`
+- Virtual Size: ~ 654.64 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/sonarqube/bin/run.sh"]`
@@ -16,7 +16,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_HOME=/usr/lib/jvm/java-11-openjdk`
   - `SONARQUBE_HOME=/opt/sonarqube`
-  - `SONAR_VERSION=9.4.0.54424`
+  - `SONAR_VERSION=9.5.0.56709`
   - `SQ_DATA_DIR=/opt/sonarqube/data`
   - `SQ_EXTENSIONS_DIR=/opt/sonarqube/extensions`
   - `SQ_LOGS_DIR=/opt/sonarqube/logs`
@@ -129,16 +129,16 @@ MIT
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.33.1-r6 description:
+busybox-1.33.1-r7 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.33.1-r6 webpage:
+busybox-1.33.1-r7 webpage:
 https://busybox.net/
 
-busybox-1.33.1-r6 installed size:
+busybox-1.33.1-r7 installed size:
 928 KiB
 
-busybox-1.33.1-r6 license:
+busybox-1.33.1-r7 license:
 GPL-2.0-only
 
 ```
@@ -231,16 +231,16 @@ MIT
 ### `apk` package: `freetype`
 
 ```console
-freetype-2.10.4-r1 description:
+freetype-2.10.4-r3 description:
 TrueType font rendering library
 
-freetype-2.10.4-r1 webpage:
+freetype-2.10.4-r3 webpage:
 https://www.freetype.org/
 
-freetype-2.10.4-r1 installed size:
+freetype-2.10.4-r3 installed size:
 728 KiB
 
-freetype-2.10.4-r1 license:
+freetype-2.10.4-r3 license:
 FTL GPL-2.0-or-later
 
 ```
@@ -860,16 +860,16 @@ GPL-2.0-only
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.33.1-r6 description:
+ssl_client-1.33.1-r7 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.33.1-r6 webpage:
+ssl_client-1.33.1-r7 webpage:
 https://busybox.net/
 
-ssl_client-1.33.1-r6 installed size:
+ssl_client-1.33.1-r7 installed size:
 28 KiB
 
-ssl_client-1.33.1-r6 license:
+ssl_client-1.33.1-r7 license:
 GPL-2.0-only
 
 ```
