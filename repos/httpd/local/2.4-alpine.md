@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:da944a62fd6daa2dd0a93649a759701a35807a4631b2bff4dcc37a7b3385220b`
-- Created: `2022-06-08T18:47:20.046203819Z`
-- Virtual Size: ~ 54.90 Mb  
+- Image ID: `sha256:148b7e25daf66b50d5a54ff0e6151b7917abc8f28702dbd1059db56d862f9c31`
+- Created: `2022-06-13T23:36:42.555524479Z`
+- Virtual Size: ~ 54.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["httpd-foreground"]`
@@ -88,16 +88,16 @@ GPL-2.0-only
 ### `apk` package: `apr`
 
 ```console
-apr-1.7.0-r1 description:
+apr-1.7.0-r2 description:
 The Apache Portable Runtime
 
-apr-1.7.0-r1 webpage:
+apr-1.7.0-r2 webpage:
 https://apr.apache.org/
 
-apr-1.7.0-r1 installed size:
+apr-1.7.0-r2 installed size:
 220 KiB
 
-apr-1.7.0-r1 license:
+apr-1.7.0-r2 license:
 Apache-2.0
 
 ```
