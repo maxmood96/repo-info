@@ -1,9 +1,9 @@
-# `clojure:openjdk-11-tools-deps-1.11.1.1113-buster`
+# `clojure:openjdk-11-buster`
 
 ## Docker Metadata
 
-- Image ID: `sha256:819e1e0fa07a65000734bd9a26f146ddb76ccb9f48b60960119a3c95cb548836`
-- Created: `2022-05-28T20:03:22.820472903Z`
+- Image ID: `sha256:cc94a83d13acfc51d001a557af423964872a09c3fe9f6e2d5dcb3a739dbd25b9`
+- Created: `2022-06-15T20:23:12.190429111Z`
 - Virtual Size: ~ 699.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,7 +13,7 @@
   - `JAVA_HOME=/usr/local/openjdk-11`
   - `LANG=C.UTF-8`
   - `JAVA_VERSION=11.0.15`
-  - `CLOJURE_VERSION=1.11.1.1113`
+  - `CLOJURE_VERSION=1.11.1.1129`
 
 ## `dpkg` (`.deb`-based packages)
 

@@ -1,10 +1,10 @@
-# `clojure:openjdk-8-tools-deps-1.11.1.1113-slim-buster`
+# `clojure:openjdk-8-slim-buster`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a26b05b3b4522b2bcd910ea09fa45e72575c9577ed13e7e60d892c77f6e7314a`
-- Created: `2022-05-28T19:57:59.744472729Z`
-- Virtual Size: ~ 432.34 Mb  
+- Image ID: `sha256:3fca775c2f8fa440f42f81083361e35a2378722654e0578525c0fc5af67ba9c7`
+- Created: `2022-06-15T20:22:10.848697437Z`
+- Virtual Size: ~ 432.35 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["clj"]`
@@ -13,7 +13,7 @@
   - `JAVA_HOME=/usr/local/openjdk-8`
   - `LANG=C.UTF-8`
   - `JAVA_VERSION=8u332`
-  - `CLOJURE_VERSION=1.11.1.1113`
+  - `CLOJURE_VERSION=1.11.1.1129`
 
 ## `dpkg` (`.deb`-based packages)
 

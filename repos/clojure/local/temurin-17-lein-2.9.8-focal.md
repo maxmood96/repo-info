@@ -1,10 +1,10 @@
-# `clojure:temurin-17-lein-focal`
+# `clojure:lein-2.9.8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5bd5b9c7c88049ceeb7efd0ed772fc8a9eefc3e35b4aeb8aa6a526f649041a79`
-- Created: `2022-06-07T04:44:14.866346701Z`
-- Virtual Size: ~ 477.33 Mb  
+- Image ID: `sha256:02ab2838f27ecc625df410a826bbebd502b02ba6d9d2abfa63702bdfa94fec70`
+- Created: `2022-06-15T20:24:10.65600524Z`
+- Virtual Size: ~ 477.53 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint"]`
@@ -75,13 +75,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.0.8
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.0.8.dsc' apt_2.0.8.dsc 2835 SHA512:376a12bb238002c0d52cb38925460b4f52a8e3b48bc75ef4707bfc4514cd2bee437c6cab2b8df1f804402497b6c085b57560506ccb82a5ef6bdb060ab4455108
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.0.8.tar.xz' apt_2.0.8.tar.xz 2176288 SHA512:abab5206313839126fdca8a8726600e37f4190cd0268d124d0849d34494bd2e453755086d4637722c505f52f9d1db684b7c50e4281d08721710cde0300c77680
-```
 
 ### `dpkg` source package: `attr=1:2.4.48-5`
 

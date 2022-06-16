@@ -1,4 +1,4 @@
-# `clojure:temurin-18-boot-alpine`
+# `clojure:temurin-18-boot-2.8.3-alpine`
 
 ## Docker Metadata
 

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:95b93a3831147d4d51ad71c2ae3936553239f6b71e5db9ee7a6b959b6791ed51`
-- Created: `2022-05-28T19:56:02.842938512Z`
-- Virtual Size: ~ 546.38 Mb  
+- Image ID: `sha256:fb26c2f3f8dd3fe7310b413d57613ff1e397f16a7cabf76c41925a2757cd6a0c`
+- Created: `2022-06-15T20:20:41.805653423Z`
+- Virtual Size: ~ 546.59 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["lein","repl"]`

@@ -1,9 +1,9 @@
-# `clojure:openjdk-8-tools-deps-1.11.1.1113-bullseye`
+# `clojure:openjdk-8-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:dfcd9075f6bd30fc2d172d0111c06a7bb3cf59c66ca03ec7388a03c3b1b9c068`
-- Created: `2022-05-28T19:57:04.310609103Z`
+- Image ID: `sha256:f6e21761d4d1c701eafb44e3e7f10318950215d11e2b7b014f2f77ef603e0642`
+- Created: `2022-06-15T20:21:11.46622049Z`
 - Virtual Size: ~ 554.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,7 +13,7 @@
   - `JAVA_HOME=/usr/local/openjdk-8`
   - `LANG=C.UTF-8`
   - `JAVA_VERSION=8u332`
-  - `CLOJURE_VERSION=1.11.1.1113`
+  - `CLOJURE_VERSION=1.11.1.1129`
 
 ## `dpkg` (`.deb`-based packages)
 

@@ -1,10 +1,10 @@
-# `clojure:openjdk-11-lein-bullseye`
+# `clojure:openjdk-11-lein-2.9.8-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9da44ff7fff84f07df09b5e4eb350a6c064d95dac9e6777b5c0178fb3900b937`
-- Created: `2022-05-28T20:02:11.099589792Z`
-- Virtual Size: ~ 680.07 Mb  
+- Image ID: `sha256:a74e190aef24eb4cd3f09f873de8304fe5a4f748ac12277cffdc31d3e1011e80`
+- Created: `2022-06-15T20:22:27.668851359Z`
+- Virtual Size: ~ 680.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["lein","repl"]`

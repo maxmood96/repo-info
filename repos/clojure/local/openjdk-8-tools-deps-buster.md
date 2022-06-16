@@ -1,9 +1,9 @@
-# `clojure:openjdk-8-tools-deps-buster`
+# `clojure:openjdk-8-buster`
 
 ## Docker Metadata
 
-- Image ID: `sha256:17cb6448682f92a4c1151c29ce5629a90cf754026a1e3adde12e618549eed773`
-- Created: `2022-05-28T19:57:18.842999136Z`
+- Image ID: `sha256:fe4e92866cd9ef2cf1a11c24e434c2444b29eb274def7c740db5a00d7ff7ca21`
+- Created: `2022-06-15T20:21:26.076040751Z`
 - Virtual Size: ~ 566.30 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,7 +13,7 @@
   - `JAVA_HOME=/usr/local/openjdk-8`
   - `LANG=C.UTF-8`
   - `JAVA_VERSION=8u332`
-  - `CLOJURE_VERSION=1.11.1.1113`
+  - `CLOJURE_VERSION=1.11.1.1129`
 
 ## `dpkg` (`.deb`-based packages)
 

@@ -1,10 +1,10 @@
-# `clojure:temurin-17-lein-2.9.8-alpine`
+# `clojure:lein-2.9.8-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:be69fd775b97068b09748ab5b1f779773c47c9a01a398ae47745dbdd85ce1944`
-- Created: `2022-06-08T19:04:46.90727697Z`
-- Virtual Size: ~ 354.79 Mb  
+- Image ID: `sha256:37f885cd247b2ae6ac185a422f09715b5e83322fdd7da79f6e13844bd38d3be3`
+- Created: `2022-06-15T20:24:04.771824861Z`
+- Virtual Size: ~ 355.00 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint"]`

@@ -1,10 +1,10 @@
-# `clojure:temurin-18-tools-deps-1.11.1.1113-alpine`
+# `clojure:temurin-17-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:152ac8a2a6f285efbd973c203e8928e432d818107d5b46823f77891a43b85567`
-- Created: `2022-06-08T19:06:17.167226474Z`
-- Virtual Size: ~ 378.03 Mb  
+- Image ID: `sha256:55750548d341c29084552cf05d37ebff8013ee253838ed51c37139f9bba27192`
+- Created: `2022-06-15T20:24:18.977148615Z`
+- Virtual Size: ~ 376.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint"]`
@@ -14,9 +14,9 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-18.0.1+10`
+  - `JAVA_VERSION=jdk-17.0.3+7`
   - `JAVA_HOME=/opt/java/openjdk`
-  - `CLOJURE_VERSION=1.11.1.1113`
+  - `CLOJURE_VERSION=1.11.1.1129`
 
 ## `apk` (`.apk`-based packages)
 
@@ -414,16 +414,16 @@ MIT
 ### `apk` package: `pcre2`
 
 ```console
-pcre2-10.39-r0 description:
+pcre2-10.40-r0 description:
 Perl-compatible regular expression library
 
-pcre2-10.39-r0 webpage:
+pcre2-10.40-r0 webpage:
 https://pcre.org/
 
-pcre2-10.39-r0 installed size:
-652 KiB
+pcre2-10.40-r0 installed size:
+664 KiB
 
-pcre2-10.39-r0 license:
+pcre2-10.40-r0 license:
 BSD-3-Clause
 
 ```

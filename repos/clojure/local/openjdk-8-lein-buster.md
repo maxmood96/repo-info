@@ -1,10 +1,10 @@
-# `clojure:openjdk-8-lein-buster`
+# `clojure:openjdk-8-lein-2.9.8-buster`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2b909e55597beac25b1a16f0320b39f1bf0d0f8c20058991d4125b7a043ff475`
-- Created: `2022-05-28T19:56:18.980786728Z`
-- Virtual Size: ~ 534.06 Mb  
+- Image ID: `sha256:056bcbccd6262c9a86f2b86de8958ce565c247b0b9e903f517a9b8ad7431599c`
+- Created: `2022-06-15T20:20:48.550730481Z`
+- Virtual Size: ~ 534.26 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["lein","repl"]`
