@@ -1,9 +1,9 @@
-# `drupal:9.3.15-php8.0-apache-buster`
+# `drupal:9.3.16-php8.0-apache-buster`
 
 ## Docker Metadata
 
-- Image ID: `sha256:58289041009e606ea5b83afad79a17f53f0323aca5cc2c061eb0ebca4086b949`
-- Created: `2022-06-10T02:09:17.095920056Z`
+- Image ID: `sha256:30da1d3c9497b7f303db4253e63625f109d945e2407cdce444c0552f81bf3a88`
+- Created: `2022-06-13T19:22:30.893331396Z`
 - Virtual Size: ~ 493.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -23,7 +23,7 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.0.20.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.0.20.tar.xz.asc`
   - `PHP_SHA256=973fec765336ee01f47536a5db1c2eee98df9d34a41522b7b6c760159bf0a77b`
-  - `DRUPAL_VERSION=9.3.15`
+  - `DRUPAL_VERSION=9.3.16`
 
 ## `dpkg` (`.deb`-based packages)
 
