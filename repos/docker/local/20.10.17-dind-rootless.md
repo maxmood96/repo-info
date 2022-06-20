@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8475d2a876361c1765ccfcd694b66a7a121b34b3d75a04f55d5b94a7437da1c3`
-- Created: `2022-06-07T18:24:15.267071866Z`
-- Virtual Size: ~ 365.92 Mb  
+- Image ID: `sha256:3b41566b7e62df73439bdd825aed0a72c8c55ec04a4cf50276c73aa01568f878`
+- Created: `2022-06-16T21:19:57.113629401Z`
+- Virtual Size: ~ 366.28 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
@@ -236,6 +236,74 @@ fts-1.2.7-r1 installed size:
 
 fts-1.2.7-r1 license:
 BSD-3-Clause
+
+```
+
+### `apk` package: `fuse-common`
+
+```console
+fuse-common-3.11.0-r0 description:
+Common files for fuse2 and fuse3
+
+fuse-common-3.11.0-r0 webpage:
+https://github.com/libfuse/libfuse
+
+fuse-common-3.11.0-r0 installed size:
+12 KiB
+
+fuse-common-3.11.0-r0 license:
+GPL-2.0-only LGPL-2.1-only
+
+```
+
+### `apk` package: `fuse-overlayfs`
+
+```console
+fuse-overlayfs-1.8.2-r0 description:
+FUSE implementation for overlayfs
+
+fuse-overlayfs-1.8.2-r0 webpage:
+https://github.com/containers/fuse-overlayfs
+
+fuse-overlayfs-1.8.2-r0 installed size:
+108 KiB
+
+fuse-overlayfs-1.8.2-r0 license:
+GPL-3.0-or-later
+
+```
+
+### `apk` package: `fuse3`
+
+```console
+fuse3-3.11.0-r0 description:
+The reference implementation of the Linux FUSE (Filesystem in Userspace) interface
+
+fuse3-3.11.0-r0 webpage:
+https://github.com/libfuse/libfuse
+
+fuse3-3.11.0-r0 installed size:
+92 KiB
+
+fuse3-3.11.0-r0 license:
+GPL-2.0-only LGPL-2.1-only
+
+```
+
+### `apk` package: `fuse3-libs`
+
+```console
+fuse3-libs-3.11.0-r0 description:
+The reference implementation of the Linux FUSE (Filesystem in Userspace) interface (libraries)
+
+fuse3-libs-3.11.0-r0 webpage:
+https://github.com/libfuse/libfuse
+
+fuse3-libs-3.11.0-r0 installed size:
+236 KiB
+
+fuse3-libs-3.11.0-r0 license:
+GPL-2.0-only LGPL-2.1-only
 
 ```
 
