@@ -1569,9 +1569,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openldap=2.5.11+dfsg-1~exp1ubuntu3.1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.11%2bdfsg-1%7eexp1ubuntu3.1.dsc' openldap_2.5.11+dfsg-1~exp1ubuntu3.1.dsc 3306 SHA512:ad0d21a3e74f25e26172f617915ae695afe552a64a1f8288d79c5f4a1fc53d844b28b9e62d28458a398673b9cffc1be620756ac0fdd3957ef12413f0bf98c5ec
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.11%2bdfsg.orig.tar.gz' openldap_2.5.11+dfsg.orig.tar.gz 5609424 SHA512:a728d66c8a6bfa34d8e80eab86c2612685cab1358008cc10f9d9862a03aff46a5a19cd6487732131222efae6b86c27d5446fd829e89a4cadeb79161fd9ed437c
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.11%2bdfsg-1%7eexp1ubuntu3.1.debian.tar.xz' openldap_2.5.11+dfsg-1~exp1ubuntu3.1.debian.tar.xz 173000 SHA512:00e1c35ad8cbd78cded1d1039bdd280f59f238ac3a19d28c3e0575abcec08da2267a3f0d3ffe1df5f53726522fac410516637e044c3237cb63ae3bd4ed843593
+'http://security.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.11%2bdfsg-1%7eexp1ubuntu3.1.dsc' openldap_2.5.11+dfsg-1~exp1ubuntu3.1.dsc 3306 SHA512:ad0d21a3e74f25e26172f617915ae695afe552a64a1f8288d79c5f4a1fc53d844b28b9e62d28458a398673b9cffc1be620756ac0fdd3957ef12413f0bf98c5ec
+'http://security.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.11%2bdfsg.orig.tar.gz' openldap_2.5.11+dfsg.orig.tar.gz 5609424 SHA512:a728d66c8a6bfa34d8e80eab86c2612685cab1358008cc10f9d9862a03aff46a5a19cd6487732131222efae6b86c27d5446fd829e89a4cadeb79161fd9ed437c
+'http://security.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.11%2bdfsg-1%7eexp1ubuntu3.1.debian.tar.xz' openldap_2.5.11+dfsg-1~exp1ubuntu3.1.debian.tar.xz 173000 SHA512:00e1c35ad8cbd78cded1d1039bdd280f59f238ac3a19d28c3e0575abcec08da2267a3f0d3ffe1df5f53726522fac410516637e044c3237cb63ae3bd4ed843593
 ```
 
 ### `dpkg` source package: `openssl=3.0.2-0ubuntu1.2`
@@ -1588,15 +1588,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.2
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.2.dsc' openssl_3.0.2-0ubuntu1.2.dsc 2726 SHA512:afa84c40ac171d699f200d7fd629874bec9a174d06344e6f3d5772e9db88fdaecc3696653d7025c54de710b4d0674cc659d413d625e1ee1a5fd1ae21289fdfc4
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.2.debian.tar.xz' openssl_3.0.2-0ubuntu1.2.debian.tar.xz 122660 SHA512:d361905bc8c0d0e2c8de65aa7a0b719dcae9027f0d301221716364066c1d995132332a2083e96f81b4798239c644f0a2169daa9567a38e888e1a5c4bfef7c5cd
-```
 
 ### `dpkg` source package: `p11-kit=0.24.0-6build1`
 
