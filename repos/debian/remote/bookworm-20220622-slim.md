@@ -1,21 +1,19 @@
-## `debian:bookworm-slim`
+## `debian:bookworm-20220622-slim`
 
 ```console
-$ docker pull debian@sha256:1c5442b25817089bf405c230db3227789799fdf840592b635af3b422ecd3d083
+$ docker pull debian@sha256:110377ba5641a751ec89688a80da1df00811f00fffbbfa4d1fbb438d719e0648
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 8
+-	Platforms: 6
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	linux; 386
-	-	linux; mips64le
-	-	linux; ppc64le
 	-	linux; s390x
 
-### `debian:bookworm-slim` - linux; amd64
+### `debian:bookworm-20220622-slim` - linux; amd64
 
 ```console
 $ docker pull debian@sha256:67f5a66b7d31a1eb725271b7f02f3128aade7ea1f675978fb09ba00cb4a5a980
@@ -41,7 +39,7 @@ CMD ["bash"]
 		Size: 29.7 MB (29662921 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:bookworm-slim` - linux; arm variant v5
+### `debian:bookworm-20220622-slim` - linux; arm variant v5
 
 ```console
 $ docker pull debian@sha256:ee9f7fbf72d9f53a0cc9aee2a814ec7cf5029667d569f79e881ef76607e24923
@@ -67,7 +65,7 @@ CMD ["bash"]
 		Size: 27.4 MB (27435638 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:bookworm-slim` - linux; arm variant v7
+### `debian:bookworm-20220622-slim` - linux; arm variant v7
 
 ```console
 $ docker pull debian@sha256:cf2a28e4c7f6b58abda7b2427bf64a56cdb6446b4db5c5b3b34f646149979c04
@@ -93,7 +91,7 @@ CMD ["bash"]
 		Size: 25.2 MB (25174020 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:bookworm-slim` - linux; arm64 variant v8
+### `debian:bookworm-20220622-slim` - linux; arm64 variant v8
 
 ```console
 $ docker pull debian@sha256:0750cc4ce18bf86055954ce810cb1ca15d17b80e7fd69ec2bf9fdee186f7ab07
@@ -119,7 +117,7 @@ CMD ["bash"]
 		Size: 28.7 MB (28742761 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:bookworm-slim` - linux; 386
+### `debian:bookworm-20220622-slim` - linux; 386
 
 ```console
 $ docker pull debian@sha256:415f88325b303615d3c36cf1b0b3aac23cdae083245ff6a2c162f4dc37e14c0e
@@ -145,59 +143,7 @@ CMD ["bash"]
 		Size: 30.6 MB (30638587 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:bookworm-slim` - linux; mips64le
-
-```console
-$ docker pull debian@sha256:87a5b21c49eee30c34118117bef6b2a164d5659c22f721f17aa9066de3fba393
-```
-
--	Docker Version: 20.10.12
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **28.7 MB (28740887 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ca8a268e9c7c938b240bb1fdb83b685a72d5c7a859b98731fc3cbe743425f204`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Sat, 28 May 2022 01:10:01 GMT
-ADD file:cfc2ab1587c14d56e718c662d97d19e6bca607def07d8f5092d49229973cf733 in / 
-# Sat, 28 May 2022 01:10:05 GMT
-CMD ["bash"]
-```
-
--	Layers:
-	-	`sha256:926340ebf5b71491937b5f854eb894b9aceccf9d2bc3366e2628c4b972173a5c`  
-		Last Modified: Sat, 28 May 2022 01:20:10 GMT  
-		Size: 28.7 MB (28740887 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-### `debian:bookworm-slim` - linux; ppc64le
-
-```console
-$ docker pull debian@sha256:137a3d9235149cd1dd05b30f7ef56779d3919ff3d702716f52f9951ff141d2bf
-```
-
--	Docker Version: 20.10.12
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.8 MB (33836177 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d10dad9de26c550f617de8e14a1866437c9f8e9758bccc700f25cfa853e47e01`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Sat, 28 May 2022 01:22:00 GMT
-ADD file:0698e018281d66f519ceb28c782d9e24aeb2c1be01cb4c5e1c4786849da3f3f1 in / 
-# Sat, 28 May 2022 01:22:03 GMT
-CMD ["bash"]
-```
-
--	Layers:
-	-	`sha256:72c56f95b20d60ea04cc6803c7c839085320461e588660da377e1ee69dd52051`  
-		Last Modified: Sat, 28 May 2022 01:31:23 GMT  
-		Size: 33.8 MB (33836177 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-### `debian:bookworm-slim` - linux; s390x
+### `debian:bookworm-20220622-slim` - linux; s390x
 
 ```console
 $ docker pull debian@sha256:034d1ff5e1b067c212be2250aac104b07bcce5e0a614dc7e02e888167bc5ecbe
