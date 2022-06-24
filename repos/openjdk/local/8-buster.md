@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:940ea6cf87b1ef9dd560c3d08fba70145c32f6cc83f513e5a51741d09b176ea7`
-- Created: `2022-05-28T19:39:41.238816468Z`
+- Image ID: `sha256:6c9e3dc54d1a316a25285d134655a14d3217c95f98dd503c72b04173c06fcaef`
+- Created: `2022-06-23T05:01:02.061243048Z`
 - Virtual Size: ~ 513.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2902,23 +2902,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.30+dfsg-6/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.30+dfsg-6/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2021a-0+deb10u4`
+### `dpkg` source package: `tzdata=2021a-0+deb10u5`
 
 Binary Packages:
 
-- `tzdata=2021a-0+deb10u4`
+- `tzdata=2021a-0+deb10u5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris tzdata=2021a-0+deb10u5
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2021a-0%2bdeb10u5.dsc' tzdata_2021a-0+deb10u5.dsc 2264 SHA256:a994b9adbb5623bbee257dcdbbd9494ec732d508e857fb38cc6a966447d9d20b
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2021a.orig.tar.gz' tzdata_2021a.orig.tar.gz 411892 SHA256:39e7d2ba08c68cbaefc8de3227aab0dec2521be8042cf56855f7dc3a9fb14e08
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2021a.orig.tar.gz.asc' tzdata_2021a.orig.tar.gz.asc 833 SHA256:9dc5f54674166f4ffbc2d4485e656227430ab5f39c9006e6ed9986281117f058
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2021a-0%2bdeb10u5.debian.tar.xz' tzdata_2021a-0+deb10u5.debian.tar.xz 110812 SHA256:3e75987d349081fc6bf76e46404e6aded0ff96ee0ffd5bed5dca0bfb8fcf7fa3
+```
 
-- http://snapshot.debian.org/package/tzdata/2021a-0+deb10u4/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/tzdata/2021a-0+deb10u5/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2021a-0+deb10u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2021a-0+deb10u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0038+nmu1`
 
