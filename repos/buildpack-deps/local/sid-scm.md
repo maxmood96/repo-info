@@ -2331,21 +2331,13 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.4-1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.4-1.dsc' openssl_3.0.4-1.dsc 2601 SHA256:515222c375a2ba60e8854c2a69f3753f897c901c7d17f2577b8541ea0800f360
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.4.orig.tar.gz' openssl_3.0.4.orig.tar.gz 15069605 SHA256:2831843e9a668a0ab478e7020ad63d2d65e51f72977472dc73efcefbafc0c00f
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.4.orig.tar.gz.asc' openssl_3.0.4.orig.tar.gz.asc 488 SHA256:a4c23366369c3e9e1abd2af47c1658581d1d4e58fa9b453e5b959d550cf974e1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.4-1.debian.tar.xz' openssl_3.0.4-1.debian.tar.xz 68748 SHA256:91d88411d6fe2e7d2bce0a219dcf12f7afd21f2d00f16850f51d80289b67a119
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssl/3.0.4-1/
 
-- https://sources.debian.net/src/openssl/3.0.4-1/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.0.4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.0.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.24.1-1`
 
@@ -2527,21 +2519,13 @@ Licenses: (parsed from: `/usr/share/doc/pinentry-curses/copyright`)
 - `LGPL-3+`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pinentry=1.2.0-1
-'http://deb.debian.org/debian/pool/main/p/pinentry/pinentry_1.2.0-1.dsc' pinentry_1.2.0-1.dsc 2242 SHA256:07c0230be5aa4162acc8b74436a32719accba46e26545bef120baac849e88c74
-'http://deb.debian.org/debian/pool/main/p/pinentry/pinentry_1.2.0.orig.tar.bz2' pinentry_1.2.0.orig.tar.bz2 498390 SHA256:10072045a3e043d0581f91cd5676fcac7ffee957a16636adedaa4f583a616470
-'http://deb.debian.org/debian/pool/main/p/pinentry/pinentry_1.2.0.orig.tar.bz2.asc' pinentry_1.2.0.orig.tar.bz2.asc 228 SHA256:d917a96c24e796daba7bab36bacc75d8106ef24d2afc485d13448d3cf8bd8a86
-'http://deb.debian.org/debian/pool/main/p/pinentry/pinentry_1.2.0-1.debian.tar.xz' pinentry_1.2.0-1.debian.tar.xz 18744 SHA256:68d6feda4f1c4ce9de84c289debbf98c37c5cb48fa3e1afcd029f3e6636e2bcf
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pinentry/1.2.0-1/
 
-- https://sources.debian.net/src/pinentry/1.2.0-1/ (for browsing the source)
-- https://sources.debian.net/src/pinentry/1.2.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pinentry/1.2.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:3.3.17-7`
 

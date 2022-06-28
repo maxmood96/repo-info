@@ -2341,20 +2341,13 @@ Licenses: (parsed from: `/usr/share/doc/libdeflate-dev/copyright`, `/usr/share/d
 
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libdeflate=1.10-2
-'http://deb.debian.org/debian/pool/main/libd/libdeflate/libdeflate_1.10-2.dsc' libdeflate_1.10-2.dsc 2206 SHA256:6a95997089f007d7ef3aabc77f3fa9cbe7123fcc375f4d6f7c678b3c4fa6c9ca
-'http://deb.debian.org/debian/pool/main/libd/libdeflate/libdeflate_1.10.orig.tar.gz' libdeflate_1.10.orig.tar.gz 158379 SHA256:5c1f75c285cd87202226f4de49985dcb75732f527eefba2b3ddd70a8865f2533
-'http://deb.debian.org/debian/pool/main/libd/libdeflate/libdeflate_1.10-2.debian.tar.xz' libdeflate_1.10-2.debian.tar.xz 4584 SHA256:8d82ef22c43bb846893fb305b56a1ddd67d79db30b28d928f9f7304a144f664a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libdeflate/1.10-2/
 
-- https://sources.debian.net/src/libdeflate/1.10-2/ (for browsing the source)
-- https://sources.debian.net/src/libdeflate/1.10-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libdeflate/1.10-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libedit=3.1-20210910-1`
 
@@ -4365,20 +4358,13 @@ Licenses: (parsed from: `/usr/share/doc/libopenjp2-7/copyright`, `/usr/share/doc
 - `ZLIB`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjpeg2=2.4.0-6
-'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.4.0-6.dsc' openjpeg2_2.4.0-6.dsc 2822 SHA256:e52e5d7f5bc73eeecb564f6e481b11c262ff16149a2981cce73f229220ef0fb6
-'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.4.0.orig.tar.xz' openjpeg2_2.4.0.orig.tar.xz 1396964 SHA256:4b89da8abea5ea4e8dd5b214f1633a492554d784b5aebc22cb6495a1e5fe681c
-'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.4.0-6.debian.tar.xz' openjpeg2_2.4.0-6.debian.tar.xz 21124 SHA256:ec2682f72281e3f4d71e1f3bcb5010b48dbc1436b54a749ccad20360449a93f9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openjpeg2/2.4.0-6/
 
-- https://sources.debian.net/src/openjpeg2/2.4.0-6/ (for browsing the source)
-- https://sources.debian.net/src/openjpeg2/2.4.0-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjpeg2/2.4.0-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.5.12+dfsg-2`
 
@@ -4733,21 +4719,13 @@ Licenses: (parsed from: `/usr/share/doc/pinentry-curses/copyright`)
 - `LGPL-3+`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pinentry=1.2.0-1
-'http://deb.debian.org/debian/pool/main/p/pinentry/pinentry_1.2.0-1.dsc' pinentry_1.2.0-1.dsc 2242 SHA256:07c0230be5aa4162acc8b74436a32719accba46e26545bef120baac849e88c74
-'http://deb.debian.org/debian/pool/main/p/pinentry/pinentry_1.2.0.orig.tar.bz2' pinentry_1.2.0.orig.tar.bz2 498390 SHA256:10072045a3e043d0581f91cd5676fcac7ffee957a16636adedaa4f583a616470
-'http://deb.debian.org/debian/pool/main/p/pinentry/pinentry_1.2.0.orig.tar.bz2.asc' pinentry_1.2.0.orig.tar.bz2.asc 228 SHA256:d917a96c24e796daba7bab36bacc75d8106ef24d2afc485d13448d3cf8bd8a86
-'http://deb.debian.org/debian/pool/main/p/pinentry/pinentry_1.2.0-1.debian.tar.xz' pinentry_1.2.0-1.debian.tar.xz 18744 SHA256:68d6feda4f1c4ce9de84c289debbf98c37c5cb48fa3e1afcd029f3e6636e2bcf
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pinentry/1.2.0-1/
 
-- https://sources.debian.net/src/pinentry/1.2.0-1/ (for browsing the source)
-- https://sources.debian.net/src/pinentry/1.2.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pinentry/1.2.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pixman=0.40.0-1`
 
@@ -5271,20 +5249,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=251.2-5
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_251.2-5.dsc' systemd_251.2-5.dsc 6082 SHA256:23413c8c7f99176729713cd6da7170a6431f44b81acb0d79ccdbe372ff2a26bb
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_251.2.orig.tar.gz' systemd_251.2.orig.tar.gz 11434645 SHA256:5b371e824fe3e3128f2338b8db8cd37171f8e249eea88077eea468f73d833545
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_251.2-5.debian.tar.xz' systemd_251.2-5.debian.tar.xz 170568 SHA256:b91af2d2881a8a30cfd3d44234fcbadd4f2c8fe6aafe06138a5abb081aaf6713
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/251.2-5/
 
-- https://sources.debian.net/src/systemd/251.2-5/ (for browsing the source)
-- https://sources.debian.net/src/systemd/251.2-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/251.2-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.03-1`
 

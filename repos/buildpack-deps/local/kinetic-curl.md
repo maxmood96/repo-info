@@ -1476,15 +1476,9 @@ Licenses: (parsed from: `/usr/share/doc/pinentry-curses/copyright`)
 - `LGPL-3+`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pinentry=1.2.0-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pinentry/pinentry_1.2.0-1ubuntu1.dsc' pinentry_1.2.0-1ubuntu1.dsc 2999 SHA512:0808c1cff863c9d5429665b5595217a2363c3e2487447c283e285bc995af5e065545671726b84e37de2443fe3c689b0ee0683228ab5df6f52a657eee32b54c82
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pinentry/pinentry_1.2.0.orig.tar.bz2' pinentry_1.2.0.orig.tar.bz2 498390 SHA512:19cea79aa3982d1f0d75220c8e24ca38d6c49475c6f4c5aa7101151b4690db23ed316096a4a411136e716ba4eb471f48f9b09556e5c9837533c2356b9b384b63
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pinentry/pinentry_1.2.0.orig.tar.bz2.asc' pinentry_1.2.0.orig.tar.bz2.asc 228 SHA512:2548e62a7d18688c763a044e07d2e3ec52b9f57054ebd869e781aae4c64b50d36032f45931914e5e3c6645ca12c3ed8dcc285ce58f52c9770bb20ad8f895ef24
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pinentry/pinentry_1.2.0-1ubuntu1.debian.tar.xz' pinentry_1.2.0-1ubuntu1.debian.tar.xz 18936 SHA512:2d77b795e564bf86286216a6bd6c454a540c77c932a7ee676063ad1ab0e9faf4f5506b965b01204b6535497ddbf3adc00cf0bf88410a923f551a9bc1818e7f39
-```
 
 ### `dpkg` source package: `procps=2:3.3.17-6ubuntu2`
 

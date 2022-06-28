@@ -3429,14 +3429,13 @@ Licenses: (parsed from: `/usr/share/doc/libopenjp2-7/copyright`, `/usr/share/doc
 - `ZLIB`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjpeg2=2.4.0-6
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjpeg2/openjpeg2_2.4.0-6.dsc' openjpeg2_2.4.0-6.dsc 2822 SHA512:d3057b995fa94759b0e4f294dfbd26e745c56c32f8dcd22c7f457e3cf1f7b14590c7ac6be2edc078e7a61281512fbaebb3366bd346773d015f874925ecabaa32
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjpeg2/openjpeg2_2.4.0.orig.tar.xz' openjpeg2_2.4.0.orig.tar.xz 1396964 SHA512:717ead13e0805d52138bedef1a77d51b676c5a2b882ca7f2206b665b3ba5ea2b435fd81c09780e6c1f14400a49c82fcd1eb2cbea1e1d207b541e98797ecd684f
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjpeg2/openjpeg2_2.4.0-6.debian.tar.xz' openjpeg2_2.4.0-6.debian.tar.xz 21124 SHA512:cdd8a1d29388d02c37612183fef2ff679133630871323894f46e7f4a56480118e1e03573b2eea2179ce0f92d6aca6a15ee8e9f382e036d7ff0cb0f1744f2df3e
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/openjpeg2/2.4.0-6/
+
 
 ### `dpkg` source package: `openldap=2.5.11+dfsg-1~exp1ubuntu3`
 
@@ -3720,15 +3719,9 @@ Licenses: (parsed from: `/usr/share/doc/pinentry-curses/copyright`)
 - `LGPL-3+`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pinentry=1.2.0-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pinentry/pinentry_1.2.0-1ubuntu1.dsc' pinentry_1.2.0-1ubuntu1.dsc 2999 SHA512:0808c1cff863c9d5429665b5595217a2363c3e2487447c283e285bc995af5e065545671726b84e37de2443fe3c689b0ee0683228ab5df6f52a657eee32b54c82
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pinentry/pinentry_1.2.0.orig.tar.bz2' pinentry_1.2.0.orig.tar.bz2 498390 SHA512:19cea79aa3982d1f0d75220c8e24ca38d6c49475c6f4c5aa7101151b4690db23ed316096a4a411136e716ba4eb471f48f9b09556e5c9837533c2356b9b384b63
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pinentry/pinentry_1.2.0.orig.tar.bz2.asc' pinentry_1.2.0.orig.tar.bz2.asc 228 SHA512:2548e62a7d18688c763a044e07d2e3ec52b9f57054ebd869e781aae4c64b50d36032f45931914e5e3c6645ca12c3ed8dcc285ce58f52c9770bb20ad8f895ef24
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pinentry/pinentry_1.2.0-1ubuntu1.debian.tar.xz' pinentry_1.2.0-1ubuntu1.debian.tar.xz 18936 SHA512:2d77b795e564bf86286216a6bd6c454a540c77c932a7ee676063ad1ab0e9faf4f5506b965b01204b6535497ddbf3adc00cf0bf88410a923f551a9bc1818e7f39
-```
 
 ### `dpkg` source package: `pixman=0.40.0-1build4`
 
