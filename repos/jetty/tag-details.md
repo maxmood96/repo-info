@@ -6246,79 +6246,174 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 
 ## `jetty:10.0.11`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:10.0.11-amazoncorretto`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:10.0.11-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:10.0.11-jdk11`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:10.0.11-jdk11-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:10.0.11-jdk11-alpine-amazoncorretto`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:10.0.11-jdk11-alpine-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:10.0.11-jdk11-amazoncorretto`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:10.0.11-jdk11-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:10.0.11-jdk11-openjdk`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:10.0.11-jdk11-slim-openjdk`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:10.0.11-jdk17`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:10.0.11-jdk17-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:10.0.11-jdk17-alpine-amazoncorretto`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:10.0.11-jdk17-alpine-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:10.0.11-jdk17-amazoncorretto`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:10.0.11-jdk17-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:10.0.11-jre11-openjdk`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:10.0.11-jre11-slim-openjdk`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:11`
 
@@ -12360,79 +12455,174 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 
 ## `jetty:11.0.11`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:11.0.11-amazoncorretto`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:11.0.11-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:11.0.11-jdk11`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:11.0.11-jdk11-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:11.0.11-jdk11-alpine-amazoncorretto`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:11.0.11-jdk11-alpine-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:11.0.11-jdk11-amazoncorretto`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:11.0.11-jdk11-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:11.0.11-jdk11-openjdk`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:11.0.11-jdk11-slim-openjdk`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:11.0.11-jdk17`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:11.0.11-jdk17-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:11.0.11-jdk17-alpine-amazoncorretto`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:11.0.11-jdk17-alpine-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:11.0.11-jdk17-amazoncorretto`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:11.0.11-jdk17-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:11.0.11-jre11-openjdk`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:11.0.11-jre11-slim-openjdk`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:9`
 
@@ -22626,111 +22816,246 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 
 ## `jetty:9.4.48`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:9.4.48-amazoncorretto`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:9.4.48-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:9.4.48-jdk-8-slim-openjdk`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:9.4.48-jdk11`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:9.4.48-jdk11-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:9.4.48-jdk11-alpine-amazoncorretto`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:9.4.48-jdk11-alpine-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:9.4.48-jdk11-amazoncorretto`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:9.4.48-jdk11-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:9.4.48-jdk11-openjdk`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:9.4.48-jdk11-slim-openjdk`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:9.4.48-jdk17`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:9.4.48-jdk17-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:9.4.48-jdk17-alpine-amazoncorretto`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:9.4.48-jdk17-alpine-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:9.4.48-jdk17-amazoncorretto`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:9.4.48-jdk17-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:9.4.48-jdk8`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:9.4.48-jdk8-alpine-amazoncorretto`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:9.4.48-jdk8-amazoncorretto`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:9.4.48-jdk8-eclipse-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:9.4.48-jdk8-openjdk`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:9.4.48-jre11-openjdk`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:9.4.48-jre11-slim-openjdk`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:9.4.48-jre8-openjdk`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:9.4.48-jre8-slim-openjdk`
 
-**does not exist** (yet?)
+```console
+$ docker pull jetty@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `jetty:jdk17`
 
