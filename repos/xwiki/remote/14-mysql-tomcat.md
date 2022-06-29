@@ -1,7 +1,7 @@
 ## `xwiki:14-mysql-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:28b35326399d78397a7bef661ad12a28fffcfac6f4ab8fb2ee4152dd77148f8e
+$ docker pull xwiki@sha256:bcb5c8df516c12b91377e89d24f885cae9d9a427955317152054e800a86e4934
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,14 +12,14 @@ $ docker pull xwiki@sha256:28b35326399d78397a7bef661ad12a28fffcfac6f4ab8fb2ee415
 ### `xwiki:14-mysql-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:b4330f17dd6e69d0ac161c77383049d8663cd1e3b34cf25bf6267330a77c2d26
+$ docker pull xwiki@sha256:df429b1882f9fd38a59639f7be786a959a284cf056b19a756ed23584073a3569
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **574.1 MB (574075128 bytes)**  
+-	Total Size: **583.3 MB (583259038 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:81a83e58271c1a1bd8fe050f501b1c797abe5faf26c61f92a1f95c039b27b2fc`
+-	Image ID: `sha256:ed2d157a025a981e5fd5b692e0362213bebf86e64b15993e49aaad35d282fae1`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -84,39 +84,39 @@ LABEL org.opencontainers.image.vendor=xwiki.org
 LABEL org.opencontainers.image.licenses=LGPL-2.1
 # Tue, 28 Jun 2022 02:36:18 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/*
-# Tue, 28 Jun 2022 02:36:19 GMT
-ENV XWIKI_VERSION=14.4.1
-# Tue, 28 Jun 2022 02:36:19 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/14.4.1
-# Tue, 28 Jun 2022 02:36:19 GMT
-ENV XWIKI_DOWNLOAD_SHA256=8e20eba50acee0f157d3cc160306d65e0995b453833c8923f833030f0a469fb4
-# Tue, 28 Jun 2022 02:37:55 GMT
+# Wed, 29 Jun 2022 18:37:39 GMT
+ENV XWIKI_VERSION=14.5
+# Wed, 29 Jun 2022 18:37:39 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/14.5
+# Wed, 29 Jun 2022 18:37:39 GMT
+ENV XWIKI_DOWNLOAD_SHA256=fdf6397ebb0036920953d5e7f6d3896b3b8744517b8f00822c31380c24a3e170
+# Wed, 29 Jun 2022 18:38:17 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Tue, 28 Jun 2022 02:37:56 GMT
+# Wed, 29 Jun 2022 18:38:18 GMT
 ENV MYSQL_JDBC_VERSION=8.0.29
-# Tue, 28 Jun 2022 02:37:56 GMT
+# Wed, 29 Jun 2022 18:38:18 GMT
 ENV MYSQL_JDBC_SHA256=d4e32d2a6026b5acc00300b73a86c28fb92681ae9629b21048ee67014c911db6
-# Tue, 28 Jun 2022 02:37:56 GMT
+# Wed, 29 Jun 2022 18:38:18 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.29
-# Tue, 28 Jun 2022 02:37:56 GMT
+# Wed, 29 Jun 2022 18:38:18 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-java-8.0.29.jar
-# Tue, 28 Jun 2022 02:37:56 GMT
+# Wed, 29 Jun 2022 18:38:18 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-java-8.0.29.jar
-# Tue, 28 Jun 2022 02:37:57 GMT
+# Wed, 29 Jun 2022 18:38:19 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c -
-# Tue, 28 Jun 2022 02:37:57 GMT
+# Wed, 29 Jun 2022 18:38:19 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Tue, 28 Jun 2022 02:37:57 GMT
+# Wed, 29 Jun 2022 18:38:19 GMT
 COPY file:1b8409986f3e4eb79a7a0b18472cb2692a61d504fb5ef34292bc997b79fd760d in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Tue, 28 Jun 2022 02:37:58 GMT
+# Wed, 29 Jun 2022 18:38:20 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Tue, 28 Jun 2022 02:37:58 GMT
+# Wed, 29 Jun 2022 18:38:20 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Tue, 28 Jun 2022 02:37:58 GMT
+# Wed, 29 Jun 2022 18:38:20 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 28 Jun 2022 02:37:58 GMT
+# Wed, 29 Jun 2022 18:38:20 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 28 Jun 2022 02:37:58 GMT
+# Wed, 29 Jun 2022 18:38:20 GMT
 CMD ["xwiki"]
 ```
 
@@ -157,29 +157,29 @@ CMD ["xwiki"]
 		Last Modified: Tue, 28 Jun 2022 02:42:13 GMT  
 		Size: 178.8 MB (178751857 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8e8752518c2497aa38bc13d2d7d42a42e92a428d1f746d948ea6935277bce32a`  
-		Last Modified: Tue, 28 Jun 2022 02:42:05 GMT  
-		Size: 292.0 MB (291982556 bytes)  
+	-	`sha256:c52cec4e318d4bc2f9bfa955bcf44a32de601bc3277ef9ceaab506103649763c`  
+		Last Modified: Wed, 29 Jun 2022 18:40:25 GMT  
+		Size: 301.2 MB (301166426 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5da5e6becb618f3b28c2014e22cd7741d662db38ce1bdff77393798974838602`  
-		Last Modified: Tue, 28 Jun 2022 02:41:47 GMT  
-		Size: 2.4 MB (2381176 bytes)  
+	-	`sha256:262a82c4778a0bb7c03bcfdab56f482f535392190778cc33cfaa4dcd9da2d1fd`  
+		Last Modified: Wed, 29 Jun 2022 18:40:08 GMT  
+		Size: 2.4 MB (2381189 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6789ccbc69b1b6a341313048b3d980e305f0edaba5e5a82fed8104aa12f6c0ff`  
-		Last Modified: Tue, 28 Jun 2022 02:41:46 GMT  
-		Size: 1.3 KB (1344 bytes)  
+	-	`sha256:bb18f27bd06e2a2759d8404b805ef71f77eb26ba8f8e5c438edf30dcdedb8ff8`  
+		Last Modified: Wed, 29 Jun 2022 18:40:07 GMT  
+		Size: 1.3 KB (1347 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf9c5ccad50bc93c69606e134a807be4ca8ed25a87f437849b4666396c2f4041`  
-		Last Modified: Tue, 28 Jun 2022 02:41:46 GMT  
-		Size: 2.3 KB (2305 bytes)  
+	-	`sha256:1a960c469fda606b4315bb034836c4c0cd45da88fdcec3001c7aae9f21a46770`  
+		Last Modified: Wed, 29 Jun 2022 18:40:07 GMT  
+		Size: 2.3 KB (2310 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7b072f5d34cad21aa0a15fef7311ac22a908c0fd23c3888aa6672b8da5d09bbe`  
-		Last Modified: Tue, 28 Jun 2022 02:41:46 GMT  
-		Size: 5.9 KB (5855 bytes)  
+	-	`sha256:772c90fe27a09060e57dc48113b0e987e7c91e0a939c1dcd19787025afbdafa5`  
+		Last Modified: Wed, 29 Jun 2022 18:40:08 GMT  
+		Size: 5.9 KB (5873 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aabe21a9e6be8515e4e8985c3fd89cc97164ed36302caec517f36686aeb50296`  
-		Last Modified: Tue, 28 Jun 2022 02:41:46 GMT  
-		Size: 2.5 KB (2504 bytes)  
+	-	`sha256:debd7784c56522078ff23d33df450f43d282b6e4eea4928a9c1e1015cb4a223a`  
+		Last Modified: Wed, 29 Jun 2022 18:40:07 GMT  
+		Size: 2.5 KB (2505 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `xwiki:14-mysql-tomcat` - linux; arm64 variant v8
