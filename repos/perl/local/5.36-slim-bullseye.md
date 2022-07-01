@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7d8bb916cd3391456dfb5550833a4f30bea08641e6080a1788bd467cc02044fd`
-- Created: `2022-06-23T05:36:33.829484933Z`
-- Virtual Size: ~ 139.54 Mb  
+- Image ID: `sha256:7fa45dc78f741862bb828c71b47d31fdb793a5d21974f8b59e8a82d7fd390e0e`
+- Created: `2022-06-30T19:33:03.762908908Z`
+- Virtual Size: ~ 175.82 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["perl5.36.0","-de0"]`
@@ -250,6 +250,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/bzip2/1.0.8-4/ (for browsing the source)
 - https://sources.debian.net/src/bzip2/1.0.8-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/bzip2/1.0.8-4/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `ca-certificates=20210119`
+
+Binary Packages:
+
+- `ca-certificates=20210119`
+
+Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
+
+- `GPL-2`
+- `GPL-2+`
+- `MPL-2.0`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris ca-certificates=20210119
+'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20210119.dsc' ca-certificates_20210119.dsc 1868 SHA256:51e5c099ab976f50f4d2f3c5ea0ad49853024cdb3e630322cbd7e02b05a034f4
+'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20210119.tar.xz' ca-certificates_20210119.tar.xz 232964 SHA256:daa3afae563711c30a0586ddae4336e8e3974c2b627faaca404c4e0141b64665
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/ca-certificates/20210119/ (for browsing the source)
+- https://sources.debian.net/src/ca-certificates/20210119/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ca-certificates/20210119/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cdebconf=0.260`
 
@@ -611,9 +637,11 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libc-bin=2.31-13+deb11u3`
+- `libc-dev-bin=2.31-13+deb11u3`
 - `libc6:amd64=2.31-13+deb11u3`
+- `libc6-dev:amd64=2.31-13+deb11u3`
 
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
@@ -1043,9 +1071,10 @@ Other potentially useful URLs:
 
 Binary Packages:
 
+- `libnsl-dev:amd64=1.3.0-2`
 - `libnsl2:amd64=1.3.0-2`
 
-Licenses: (parsed from: `/usr/share/doc/libnsl2/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libnsl-dev/copyright`, `/usr/share/doc/libnsl2/copyright`)
 
 - `BSD-3-clause`
 - `GPL-2`
@@ -1216,9 +1245,10 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libtirpc-common=1.3.1-1`
+- `libtirpc-dev:amd64=1.3.1-1`
 - `libtirpc3:amd64=1.3.1-1`
 
-Licenses: (parsed from: `/usr/share/doc/libtirpc-common/copyright`, `/usr/share/doc/libtirpc3/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libtirpc-common/copyright`, `/usr/share/doc/libtirpc-dev/copyright`, `/usr/share/doc/libtirpc3/copyright`)
 
 - `BSD-2-Clause`
 - `BSD-3-Clause`
@@ -1284,6 +1314,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
+- `libcrypt-dev:amd64=1:4.4.18-4`
 - `libcrypt1:amd64=1:4.4.18-4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
@@ -1332,6 +1363,38 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.4.8+dfsg-2.1/ (for browsing the source)
 - https://sources.debian.net/src/libzstd/1.4.8+dfsg-2.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.4.8+dfsg-2.1/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `linux=5.10.120-1`
+
+Binary Packages:
+
+- `linux-libc-dev:amd64=5.10.120-1`
+
+Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
+
+- `BSD-2-clause`
+- `CRYPTOGAMS`
+- `GPL-2`
+- `GPL-2+`
+- `LGPL-2.1`
+- `Unicode-data`
+- `X11`
+- `Xen-interface`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris linux=5.10.120-1
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.120-1.dsc' linux_5.10.120-1.dsc 197238 SHA256:3b6266370e311ae267aba3032ebaf4648939dd44d80c7b48cd6e0892e130383b
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.120.orig.tar.xz' linux_5.10.120.orig.tar.xz 121713740 SHA256:9ae857e7cbd7e1a878cf89b44e4d3f0aa97f205fbe089df2d8b16b87e9aa9de2
+'http://security.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.120-1.debian.tar.xz' linux_5.10.120-1.debian.tar.xz 1507604 SHA256:cde1e57fd8ad5c20ca6cd2767a5147e73567ca10bac607dd67c7a6d53eee66b2
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/linux/5.10.120-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/5.10.120-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/5.10.120-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=11.1.0`
 
@@ -1527,23 +1590,33 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nettle/3.7.3-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nettle/3.7.3-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=1.1.1n-0+deb11u2`
+### `dpkg` source package: `openssl=1.1.1n-0+deb11u3`
 
 Binary Packages:
 
-- `libssl1.1:amd64=1.1.1n-0+deb11u2`
+- `libssl-dev:amd64=1.1.1n-0+deb11u3`
+- `libssl1.1:amd64=1.1.1n-0+deb11u3`
+- `openssl=1.1.1n-0+deb11u3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris openssl=1.1.1n-0+deb11u3
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1n-0%2bdeb11u3.dsc' openssl_1.1.1n-0+deb11u3.dsc 2655 SHA256:cbf06993d1dc8c4e59e2f7f0456cc07a005c17274a33eb29135e9fdd7f6b2941
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1n.orig.tar.gz' openssl_1.1.1n.orig.tar.gz 9850712 SHA256:40dceb51a4f6a5275bde0e6bf20ef4b91bfc32ed57c0552e2e8e15463372b17a
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1n.orig.tar.gz.asc' openssl_1.1.1n.orig.tar.gz.asc 488 SHA256:e0e89e9467102880ee6f2ee8c1413933eb1268969afb97b9bec61e2190a62fd0
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1n-0%2bdeb11u3.debian.tar.xz' openssl_1.1.1n-0+deb11u3.debian.tar.xz 118952 SHA256:0eed2dc1f8d472291511f386fc0a3c5fe70ec50440b1c252fd99934bf2cddd4a
+```
 
-- http://snapshot.debian.org/package/openssl/1.1.1n-0+deb11u2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/openssl/1.1.1n-0+deb11u3/ (for browsing the source)
+- https://sources.debian.net/src/openssl/1.1.1n-0+deb11u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/1.1.1n-0+deb11u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.23.22-1`
 
@@ -1984,8 +2057,9 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `zlib1g:amd64=1:1.2.11.dfsg-2+deb11u1`
+- `zlib1g-dev:amd64=1:1.2.11.dfsg-2+deb11u1`
 
-Licenses: (parsed from: `/usr/share/doc/zlib1g/copyright`)
+Licenses: (parsed from: `/usr/share/doc/zlib1g/copyright`, `/usr/share/doc/zlib1g-dev/copyright`)
 
 - `Zlib`
 
