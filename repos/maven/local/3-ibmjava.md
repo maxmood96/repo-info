@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1176ea68650f72fbee9fe70a2a6efaafadb47a14983792213336e82417b0e9bb`
-- Created: `2022-06-15T18:22:29.513495531Z`
-- Virtual Size: ~ 370.15 Mb  
+- Image ID: `sha256:577c28adae06b9d34d76db53758ce6ada901b4d70e9859dfe36b0bdd742d264f`
+- Created: `2022-06-29T18:43:45.53490028Z`
+- Virtual Size: ~ 370.93 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
 - Command: `["mvn"]`
 - Environment:
   - `PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_VERSION=8.0.7.10`
+  - `JAVA_VERSION=8.0.7.11`
   - `JAVA_HOME=/opt/ibm/java/jre`
   - `IBM_JAVA_OPTIONS=-XX:+UseContainerSupport`
   - `MAVEN_HOME=/usr/share/maven`
@@ -249,12 +249,12 @@ $ apt-get source -qq --print-uris coreutils=8.28-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.28-1ubuntu1.debian.tar.xz' coreutils_8.28-1ubuntu1.debian.tar.xz 37940 SHA256:71ba2e83edc675a79e1e0556aff326ab2ae812332692e3db29615e8ed1b427f4
 ```
 
-### `dpkg` source package: `curl=7.58.0-2ubuntu3.18`
+### `dpkg` source package: `curl=7.58.0-2ubuntu3.19`
 
 Binary Packages:
 
-- `curl=7.58.0-2ubuntu3.18`
-- `libcurl4:amd64=7.58.0-2ubuntu3.18`
+- `curl=7.58.0-2ubuntu3.19`
+- `libcurl4:amd64=7.58.0-2ubuntu3.19`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -265,9 +265,14 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.58.0-2ubuntu3.19
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0-2ubuntu3.19.dsc' curl_7.58.0-2ubuntu3.19.dsc 2781 SHA512:f4bec87a79c46eea30aba006402bc867f8b6258ef5c6b68723406e14cc1b087c33feb5b4c376551ce0ed695043c6acfa491ccc97f8b5033e5674c7b11ca74e67
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0.orig.tar.gz' curl_7.58.0.orig.tar.gz 3879728 SHA512:7b12b79107558bb266672d6e128615fe5a8149c37f4ae540197e3298f5d312beb2d78fbb23e3ea84ea7afc41549898a1e5cd38509f0388b11707b48d5efb8ca3
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0-2ubuntu3.19.debian.tar.xz' curl_7.58.0-2ubuntu3.19.debian.tar.xz 72556 SHA512:7d868e966977ea224f1f853db2c8941b4723d84a0a88ef0391a3f22ec0518f39b36b2946c033faf63ae8ef964bc0ea9bbbbb627a76265354ac19347bae07d588
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3ubuntu2.4`
 
@@ -1397,9 +1402,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris shadow=1:4.5-1ubuntu2.2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.5-1ubuntu2.2.dsc' shadow_4.5-1ubuntu2.2.dsc 2401 SHA512:edc71f8392ffedba675d403d2c54084bbbc4b05be63ec6b77055a7fa82647779f26a427d3c12392567e27da3b831b506b5b34ffa75c92b64162133098dd666f0
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.5.orig.tar.xz' shadow_4.5.orig.tar.xz 1344524 SHA512:4278544efdd6d800a3c46cfcb144f209ace14ebe017ba1c0d05425fac7868062a73afa8522036a2bc0a16f6f1e7c16373a204463221012367ce0e8e9ef4c4a4d
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.5-1ubuntu2.2.debian.tar.xz' shadow_4.5-1ubuntu2.2.debian.tar.xz 473640 SHA512:2f1b28b796e1157164859d63e129b8e08dc297610580396993e4fae6f491ed5d56581461540e3a020ea44838431e36e828ac15d575f3b1849789415493095d6e
+'http://security.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.5-1ubuntu2.2.dsc' shadow_4.5-1ubuntu2.2.dsc 2401 SHA512:edc71f8392ffedba675d403d2c54084bbbc4b05be63ec6b77055a7fa82647779f26a427d3c12392567e27da3b831b506b5b34ffa75c92b64162133098dd666f0
+'http://security.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.5.orig.tar.xz' shadow_4.5.orig.tar.xz 1344524 SHA512:4278544efdd6d800a3c46cfcb144f209ace14ebe017ba1c0d05425fac7868062a73afa8522036a2bc0a16f6f1e7c16373a204463221012367ce0e8e9ef4c4a4d
+'http://security.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.5-1ubuntu2.2.debian.tar.xz' shadow_4.5-1ubuntu2.2.debian.tar.xz 473640 SHA512:2f1b28b796e1157164859d63e129b8e08dc297610580396993e4fae6f491ed5d56581461540e3a020ea44838431e36e828ac15d575f3b1849789415493095d6e
 ```
 
 ### `dpkg` source package: `sqlite3=3.22.0-1ubuntu0.5`
