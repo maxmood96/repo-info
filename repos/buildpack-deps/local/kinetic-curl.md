@@ -67,13 +67,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.5.0
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.5.0.dsc' apt_2.5.0.dsc 2933 SHA512:9195e965411d9c5d037f9b4417815cd4d33159484c2cf907076c3f3eec071903b8f9d3aa30a254aecfae74142a2392b8482ccd6d421cbf1c4aa5e805c2db859d
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.5.0.tar.xz' apt_2.5.0.tar.xz 2218792 SHA512:9631e1435cb2ec124872e112d59e748fc48077c56906d797a36bfeeaf53b8e923f3c9d48da02ec6a030f7d0004828a3a9fe493e1a1aec6a93319a9e3f50c334e
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/apt/2.5.0/
+
 
 ### `dpkg` source package: `attr=1:2.5.1-1build1`
 
@@ -500,14 +500,9 @@ Licenses: (parsed from: `/usr/share/doc/gcc-12-base/copyright`, `/usr/share/doc/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-12=12.1.0-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.1.0-2ubuntu1.dsc' gcc-12_12.1.0-2ubuntu1.dsc 27746 SHA512:2e86d82a816f394dc267fd03e2e51939cf4d7111458983eac035450a3578abb40b610d2c791396eddc2441af353c8c481bfbbfbe364832b015d84dc8600811b7
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.1.0.orig.tar.gz' gcc-12_12.1.0.orig.tar.gz 89394971 SHA512:9132ef095fcc5d683c71b9dc1b77b3af0f4f09b4b00d0e1f6ae1a46d5a4f7faf9e1112967722b6e3fcf72b6692326d036b1d370103b5362a7e19cd430b1ad18d
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.1.0-2ubuntu1.debian.tar.xz' gcc-12_12.1.0-2ubuntu1.debian.tar.xz 1661116 SHA512:042b8fb73ca91a531ca3046b844f0d8a4a53e8d07f1129290317151b12dbb5b9fa02975dd9bc01ef886ea8fa5dbe192f19ac8a587e0d761a573362899fe66a91
-```
 
 ### `dpkg` source package: `glibc=2.35-0ubuntu3`
 
@@ -763,15 +758,13 @@ Licenses: (parsed from: `/usr/share/doc/libassuan0/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libassuan=2.5.5-3
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libassuan/libassuan_2.5.5-3.dsc' libassuan_2.5.5-3.dsc 1997 SHA512:4b936672d6fd1a12e8d7b6c326f690c4d702df61ba9127ccb840e1eb5abb9387f8a7ac0bbe6fa6352c18a73d0cf1ca20a17fabaa5769db9ca83aa2c31b4eea62
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libassuan/libassuan_2.5.5.orig.tar.bz2' libassuan_2.5.5.orig.tar.bz2 572263 SHA512:70117f77aa43bbbe0ed28da5ef23834c026780a74076a92ec775e30f851badb423e9a2cb9e8d142c94e4f6f8a794988c1b788fd4bd2271e562071adf0ab16403
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libassuan/libassuan_2.5.5.orig.tar.bz2.asc' libassuan_2.5.5.orig.tar.bz2.asc 228 SHA512:343336ea5dffa113cd934167f548faf4e85d31bf64a46541ee6828b4d0995a8cc9d0668995812d9c4d3ab73347d5b1bbfff0d6ed586fbf4bbc57ac42e828e8d5
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libassuan/libassuan_2.5.5-3.debian.tar.xz' libassuan_2.5.5-3.debian.tar.xz 13940 SHA512:f40b55e1dda3ac1da2c5f348a25e6d21803050a355a3890bd2fdac7a2a10e467b7b3c44621d2a2078bad8f930ce5e93190ac4d93e9f423616ba9fcfbdf208872
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libassuan/2.5.5-3/
+
 
 ### `dpkg` source package: `libcap-ng=0.7.9-2.2build3`
 
@@ -1624,15 +1617,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.38.5-1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.38.5-1.dsc' sqlite3_3.38.5-1.dsc 2487 SHA512:66fdd8c56a5715160599f40038a81311092882a04c38e7bc56d48cd3c0597242d022fa7be2247401bd719c8561afe14c33935be1ad0f33720f43a90bbe2337af
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.38.5.orig-www.tar.xz' sqlite3_3.38.5.orig-www.tar.xz 5739536 SHA512:9790ff45220f7f5e9c4cb1a590f9d4e42a4a06ec2fde656a154668d670d725442d9f5cd169eed54b85f1d0b52ff7fb76236d93c2c7aa4196d3d659462c0121f8
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.38.5.orig.tar.xz' sqlite3_3.38.5.orig.tar.xz 7670860 SHA512:e15e2f9a3fc612f90e0bb71ff3664eb5aa78539856906267bfc0119dbe8302bb9764545a925e938a63f690e48c9c2b90102be2b91587cc1308fcc31ad9f2ba20
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.38.5-1.debian.tar.xz' sqlite3_3.38.5-1.debian.tar.xz 28960 SHA512:c5f54f4b8abec5fce7d945b9240ebacf6024c5537ea9c41db26764d2acc08e4a09f32f185a5835cad96c54b445520f04ae52e4bbb134e5138f75acb4f86069bb
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/sqlite3/3.38.5-1/
+
 
 ### `dpkg` source package: `systemd=249.11-0ubuntu3.1`
 

@@ -129,13 +129,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.5.0
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.5.0.dsc' apt_2.5.0.dsc 2933 SHA512:9195e965411d9c5d037f9b4417815cd4d33159484c2cf907076c3f3eec071903b8f9d3aa30a254aecfae74142a2392b8482ccd6d421cbf1c4aa5e805c2db859d
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.5.0.tar.xz' apt_2.5.0.tar.xz 2218792 SHA512:9631e1435cb2ec124872e112d59e748fc48077c56906d797a36bfeeaf53b8e923f3c9d48da02ec6a030f7d0004828a3a9fe493e1a1aec6a93319a9e3f50c334e
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/apt/2.5.0/
+
 
 ### `dpkg` source package: `attr=1:2.5.1-1build1`
 
@@ -994,14 +994,9 @@ Licenses: (parsed from: `/usr/share/doc/gcc-12-base/copyright`, `/usr/share/doc/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-12=12.1.0-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.1.0-2ubuntu1.dsc' gcc-12_12.1.0-2ubuntu1.dsc 27746 SHA512:2e86d82a816f394dc267fd03e2e51939cf4d7111458983eac035450a3578abb40b610d2c791396eddc2441af353c8c481bfbbfbe364832b015d84dc8600811b7
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.1.0.orig.tar.gz' gcc-12_12.1.0.orig.tar.gz 89394971 SHA512:9132ef095fcc5d683c71b9dc1b77b3af0f4f09b4b00d0e1f6ae1a46d5a4f7faf9e1112967722b6e3fcf72b6692326d036b1d370103b5362a7e19cd430b1ad18d
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.1.0-2ubuntu1.debian.tar.xz' gcc-12_12.1.0-2ubuntu1.debian.tar.xz 1661116 SHA512:042b8fb73ca91a531ca3046b844f0d8a4a53e8d07f1129290317151b12dbb5b9fa02975dd9bc01ef886ea8fa5dbe192f19ac8a587e0d761a573362899fe66a91
-```
 
 ### `dpkg` source package: `gcc-defaults=1.193ubuntu1`
 
