@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7e4bd2e80ac9af52ec7295ef2bacf5e553972bf611c416bd7f157d373d5810ab`
-- Created: `2022-06-27T21:19:50.103961868Z`
+- Image ID: `sha256:adc947c3b07fea35a553b393135e900cffbf02d44c6545d7e33bc089de162ecc`
+- Created: `2022-07-05T18:24:29.982903878Z`
 - Virtual Size: ~ 36.95 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 - Labels:
-  - `build-date=20220624`
+  - `build-date=20220701`
   - `name=Photon OS x86_64/4.0 Base Image`
   - `vendor=VMware`
 
@@ -41,13 +41,13 @@ Licenses (from `rpm --query`): Custom
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `curl-7.82.0-4.ph4.x86_64`
+### `rpm` package: `curl-7.83.1-1.ph4.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `curl-libs-7.82.0-4.ph4.x86_64`
+### `rpm` package: `curl-libs-7.83.1-1.ph4.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
