@@ -3,14 +3,19 @@
 # Tags of `rockylinux`
 
 -	[`rockylinux:8`](#rockylinux8)
+-	[`rockylinux:8-minimal`](#rockylinux8-minimal)
 -	[`rockylinux:8.5`](#rockylinux85)
 -	[`rockylinux:8.5.20220308`](#rockylinux8520220308)
+-	[`rockylinux:8.6`](#rockylinux86)
+-	[`rockylinux:8.6-minimal`](#rockylinux86-minimal)
+-	[`rockylinux:8.6.20220707-minimal`](#rockylinux8620220707-minimal)
+-	[`rockylinux:8.6.20227707`](#rockylinux8620227707)
 -	[`rockylinux:latest`](#rockylinuxlatest)
 
 ## `rockylinux:8`
 
 ```console
-$ docker pull rockylinux@sha256:c7d13ea4d57355aaad6b6ebcdcca50f5be65fc821f54161430f5c25641d68c5c
+$ docker pull rockylinux@sha256:04cfa97d7bc6f9b8e68cb28092e9cc8e2c2aed736af403925bee64cd519977fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -21,27 +26,27 @@ $ docker pull rockylinux@sha256:c7d13ea4d57355aaad6b6ebcdcca50f5be65fc821f541614
 ### `rockylinux:8` - linux; amd64
 
 ```console
-$ docker pull rockylinux@sha256:72afc2e1a20c9ddf56a81c51148ebcbe927c0a879849efe813bee77d69df1dd8
+$ docker pull rockylinux@sha256:b820932e70edf6559d190a1f2e7b19f080ff45a61fc485bb4aad2d1b38b64e5d
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **74.9 MB (74863057 bytes)**  
+-	Total Size: **71.9 MB (71916295 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c830f8e8f82b147e6a537c54256ec9cdafec254d408f894d754a2412b298240d`
+-	Image ID: `sha256:8cf70153e06229087a76d2a36c833efba1ee71fa89fedec60cd2661947446fd8`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 15 Mar 2022 22:20:23 GMT
-ADD file:a783ff0835684a24fd43b2f2abc9a4775b6ac086cbf9155b536dfd384a989642 in / 
-# Tue, 15 Mar 2022 22:20:23 GMT
+# Thu, 07 Jul 2022 20:26:54 GMT
+ADD file:75088d32e57ed1f2d9b8c2c1cf83cd479b2e4dc59c1acfa440c4f35125227a0c in / 
+# Thu, 07 Jul 2022 20:26:55 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:1a930d163dcafa193dc2c3c005d9c220ae1c07a48cad5f7feed0066ada0b998f`  
-		Last Modified: Tue, 15 Mar 2022 22:20:49 GMT  
-		Size: 74.9 MB (74863057 bytes)  
+	-	`sha256:0049b869cecbf5a63c6c44309977fe51f061082d985e3c35ac186455e302b237`  
+		Last Modified: Thu, 07 Jul 2022 20:27:33 GMT  
+		Size: 71.9 MB (71916295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rockylinux:8` - linux; arm64 variant v8
@@ -68,6 +73,42 @@ CMD ["/bin/bash"]
 	-	`sha256:793c530fa840becae2f18711b07acac126db34dd6c98d160ce0c7e2ee4a3f752`  
 		Last Modified: Tue, 15 Mar 2022 22:41:18 GMT  
 		Size: 75.2 MB (75225784 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `rockylinux:8-minimal`
+
+```console
+$ docker pull rockylinux@sha256:4880b94567c231af6d8fe9de0c39ce94ca417555fa59f34c7ad5f8655f310b1a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 1
+	-	linux; amd64
+
+### `rockylinux:8-minimal` - linux; amd64
+
+```console
+$ docker pull rockylinux@sha256:8935a0fba7d861680800f40b69ea24fb0d21d90b63aa169ccec34e47ff551900
+```
+
+-	Docker Version: 20.10.12
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **36.2 MB (36185851 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:dcd7b53ccf2be3a90d1f6df12384f4d9939ebda3cb31e8fad7bc6975d7f3caab`
+-	Default Command: `["\/bin\/bash"]`
+
+```dockerfile
+# Thu, 07 Jul 2022 20:27:04 GMT
+ADD file:43e37359c4d02513dbb3ff51c842fb32eba5288fb8def01660d84c43d180198e in / 
+# Thu, 07 Jul 2022 20:27:05 GMT
+CMD ["/bin/bash"]
+```
+
+-	Layers:
+	-	`sha256:ca4a129398b9430d2a66e15064d0ac724b61211d08ebf4c7bd90348cbd56a913`  
+		Last Modified: Thu, 07 Jul 2022 20:27:53 GMT  
+		Size: 36.2 MB (36185851 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rockylinux:8.5`
@@ -196,10 +237,154 @@ CMD ["/bin/bash"]
 		Size: 75.2 MB (75225784 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `rockylinux:8.6`
+
+```console
+$ docker pull rockylinux@sha256:e4dc1ae4eb263e3acd2009fee2d88d05b1174fed3dccd2a82eb4777cafbb41e1
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 1
+	-	linux; amd64
+
+### `rockylinux:8.6` - linux; amd64
+
+```console
+$ docker pull rockylinux@sha256:b820932e70edf6559d190a1f2e7b19f080ff45a61fc485bb4aad2d1b38b64e5d
+```
+
+-	Docker Version: 20.10.12
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **71.9 MB (71916295 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:8cf70153e06229087a76d2a36c833efba1ee71fa89fedec60cd2661947446fd8`
+-	Default Command: `["\/bin\/bash"]`
+
+```dockerfile
+# Thu, 07 Jul 2022 20:26:54 GMT
+ADD file:75088d32e57ed1f2d9b8c2c1cf83cd479b2e4dc59c1acfa440c4f35125227a0c in / 
+# Thu, 07 Jul 2022 20:26:55 GMT
+CMD ["/bin/bash"]
+```
+
+-	Layers:
+	-	`sha256:0049b869cecbf5a63c6c44309977fe51f061082d985e3c35ac186455e302b237`  
+		Last Modified: Thu, 07 Jul 2022 20:27:33 GMT  
+		Size: 71.9 MB (71916295 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `rockylinux:8.6-minimal`
+
+```console
+$ docker pull rockylinux@sha256:4880b94567c231af6d8fe9de0c39ce94ca417555fa59f34c7ad5f8655f310b1a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 1
+	-	linux; amd64
+
+### `rockylinux:8.6-minimal` - linux; amd64
+
+```console
+$ docker pull rockylinux@sha256:8935a0fba7d861680800f40b69ea24fb0d21d90b63aa169ccec34e47ff551900
+```
+
+-	Docker Version: 20.10.12
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **36.2 MB (36185851 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:dcd7b53ccf2be3a90d1f6df12384f4d9939ebda3cb31e8fad7bc6975d7f3caab`
+-	Default Command: `["\/bin\/bash"]`
+
+```dockerfile
+# Thu, 07 Jul 2022 20:27:04 GMT
+ADD file:43e37359c4d02513dbb3ff51c842fb32eba5288fb8def01660d84c43d180198e in / 
+# Thu, 07 Jul 2022 20:27:05 GMT
+CMD ["/bin/bash"]
+```
+
+-	Layers:
+	-	`sha256:ca4a129398b9430d2a66e15064d0ac724b61211d08ebf4c7bd90348cbd56a913`  
+		Last Modified: Thu, 07 Jul 2022 20:27:53 GMT  
+		Size: 36.2 MB (36185851 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `rockylinux:8.6.20220707-minimal`
+
+```console
+$ docker pull rockylinux@sha256:4880b94567c231af6d8fe9de0c39ce94ca417555fa59f34c7ad5f8655f310b1a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 1
+	-	linux; amd64
+
+### `rockylinux:8.6.20220707-minimal` - linux; amd64
+
+```console
+$ docker pull rockylinux@sha256:8935a0fba7d861680800f40b69ea24fb0d21d90b63aa169ccec34e47ff551900
+```
+
+-	Docker Version: 20.10.12
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **36.2 MB (36185851 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:dcd7b53ccf2be3a90d1f6df12384f4d9939ebda3cb31e8fad7bc6975d7f3caab`
+-	Default Command: `["\/bin\/bash"]`
+
+```dockerfile
+# Thu, 07 Jul 2022 20:27:04 GMT
+ADD file:43e37359c4d02513dbb3ff51c842fb32eba5288fb8def01660d84c43d180198e in / 
+# Thu, 07 Jul 2022 20:27:05 GMT
+CMD ["/bin/bash"]
+```
+
+-	Layers:
+	-	`sha256:ca4a129398b9430d2a66e15064d0ac724b61211d08ebf4c7bd90348cbd56a913`  
+		Last Modified: Thu, 07 Jul 2022 20:27:53 GMT  
+		Size: 36.2 MB (36185851 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `rockylinux:8.6.20227707`
+
+```console
+$ docker pull rockylinux@sha256:e4dc1ae4eb263e3acd2009fee2d88d05b1174fed3dccd2a82eb4777cafbb41e1
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 1
+	-	linux; amd64
+
+### `rockylinux:8.6.20227707` - linux; amd64
+
+```console
+$ docker pull rockylinux@sha256:b820932e70edf6559d190a1f2e7b19f080ff45a61fc485bb4aad2d1b38b64e5d
+```
+
+-	Docker Version: 20.10.12
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **71.9 MB (71916295 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:8cf70153e06229087a76d2a36c833efba1ee71fa89fedec60cd2661947446fd8`
+-	Default Command: `["\/bin\/bash"]`
+
+```dockerfile
+# Thu, 07 Jul 2022 20:26:54 GMT
+ADD file:75088d32e57ed1f2d9b8c2c1cf83cd479b2e4dc59c1acfa440c4f35125227a0c in / 
+# Thu, 07 Jul 2022 20:26:55 GMT
+CMD ["/bin/bash"]
+```
+
+-	Layers:
+	-	`sha256:0049b869cecbf5a63c6c44309977fe51f061082d985e3c35ac186455e302b237`  
+		Last Modified: Thu, 07 Jul 2022 20:27:33 GMT  
+		Size: 71.9 MB (71916295 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
 ## `rockylinux:latest`
 
 ```console
-$ docker pull rockylinux@sha256:c7d13ea4d57355aaad6b6ebcdcca50f5be65fc821f54161430f5c25641d68c5c
+$ docker pull rockylinux@sha256:04cfa97d7bc6f9b8e68cb28092e9cc8e2c2aed736af403925bee64cd519977fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -210,27 +395,27 @@ $ docker pull rockylinux@sha256:c7d13ea4d57355aaad6b6ebcdcca50f5be65fc821f541614
 ### `rockylinux:latest` - linux; amd64
 
 ```console
-$ docker pull rockylinux@sha256:72afc2e1a20c9ddf56a81c51148ebcbe927c0a879849efe813bee77d69df1dd8
+$ docker pull rockylinux@sha256:b820932e70edf6559d190a1f2e7b19f080ff45a61fc485bb4aad2d1b38b64e5d
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **74.9 MB (74863057 bytes)**  
+-	Total Size: **71.9 MB (71916295 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c830f8e8f82b147e6a537c54256ec9cdafec254d408f894d754a2412b298240d`
+-	Image ID: `sha256:8cf70153e06229087a76d2a36c833efba1ee71fa89fedec60cd2661947446fd8`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 15 Mar 2022 22:20:23 GMT
-ADD file:a783ff0835684a24fd43b2f2abc9a4775b6ac086cbf9155b536dfd384a989642 in / 
-# Tue, 15 Mar 2022 22:20:23 GMT
+# Thu, 07 Jul 2022 20:26:54 GMT
+ADD file:75088d32e57ed1f2d9b8c2c1cf83cd479b2e4dc59c1acfa440c4f35125227a0c in / 
+# Thu, 07 Jul 2022 20:26:55 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:1a930d163dcafa193dc2c3c005d9c220ae1c07a48cad5f7feed0066ada0b998f`  
-		Last Modified: Tue, 15 Mar 2022 22:20:49 GMT  
-		Size: 74.9 MB (74863057 bytes)  
+	-	`sha256:0049b869cecbf5a63c6c44309977fe51f061082d985e3c35ac186455e302b237`  
+		Last Modified: Thu, 07 Jul 2022 20:27:33 GMT  
+		Size: 71.9 MB (71916295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rockylinux:latest` - linux; arm64 variant v8
