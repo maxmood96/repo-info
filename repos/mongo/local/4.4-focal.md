@@ -1,10 +1,10 @@
-# `mongo:4.4.14-focal`
+# `mongo:4.4.15-focal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4efbd72d3ba64025b5ee74b2c3ff71967ce30d10f4343c60ea5060c85437346a`
-- Created: `2022-06-13T22:09:22.502255126Z`
-- Virtual Size: ~ 443.39 Mb  
+- Image ID: `sha256:1767a7f3a960f2e7d95c39e6d393b070adb7aec5c6fe8cf8f29463ca9a6b2592`
+- Created: `2022-07-05T23:20:32.541034494Z`
+- Virtual Size: ~ 443.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `MONGO_PACKAGE=mongodb-org`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=4.4`
-  - `MONGO_VERSION=4.4.14`
+  - `MONGO_VERSION=4.4.15`
   - `HOME=/data/db`
 
 ## `dpkg` (`.deb`-based packages)
@@ -272,11 +272,11 @@ $ apt-get source -qq --print-uris coreutils=8.30-3ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.30-3ubuntu2.debian.tar.xz' coreutils_8.30-3ubuntu2.debian.tar.xz 39636 SHA256:98204ef9d94e5c567880cd0245fdb7940eaf7592d6c6830c300ad117628b351f
 ```
 
-### `dpkg` source package: `curl=7.68.0-1ubuntu2.11`
+### `dpkg` source package: `curl=7.68.0-1ubuntu2.12`
 
 Binary Packages:
 
-- `libcurl4:amd64=7.68.0-1ubuntu2.11`
+- `libcurl4:amd64=7.68.0-1ubuntu2.12`
 
 Licenses: (parsed from: `/usr/share/doc/libcurl4/copyright`)
 
@@ -287,9 +287,14 @@ Licenses: (parsed from: `/usr/share/doc/libcurl4/copyright`)
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.68.0-1ubuntu2.12
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.12.dsc' curl_7.68.0-1ubuntu2.12.dsc 2737 SHA512:84528e71fc1255976191077cc6aff67116e777688549311f15fbbdf22aea31e1a1f3ac109a3b4ce843102e34ee3d1df529a34584a32f5d6b220b901fbc143734
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0.orig.tar.gz' curl_7.68.0.orig.tar.gz 4096350 SHA512:58b42c08b1cf4cb6e68f8e469d5b5f6298eebe286ba2677ad29e1a7eefd15b8609af54544f4c5a7dadebbd3b23bd77700830f2f60fbea7ae3f2f306e640010b0
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.12.debian.tar.xz' curl_7.68.0-1ubuntu2.12.debian.tar.xz 56832 SHA512:b2e162c390cd6b6384ad8bc2f55352c9bd650644eac607238da17ebb9e691339eb7543f08d800b5c2280f2af87f96ca622e9600b7a3d29564f7ec2e5648ceb53
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-2ubuntu0.1`
 
@@ -575,15 +580,9 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnup
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.2.19-3ubuntu2.1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.19-3ubuntu2.1.dsc' gnupg2_2.2.19-3ubuntu2.1.dsc 3939 SHA512:d756d6b7a95ec68c9fbe7c0369d36248c72921a2742014cef4d7313a2c18c96df251f87ba164c25c8ac2b0e9dda2ee72d154705660aeb57fce70d175770a0e49
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.19.orig.tar.bz2' gnupg2_2.2.19.orig.tar.bz2 6754972 SHA512:d7700136ac9f0a8cf04b33da4023a42427fced648c2f90d76250c92904353b85fe728bdd89a713d847e8d38e5900c98d46075614492fdc3d1421f927a92f49dd
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.19.orig.tar.bz2.asc' gnupg2_2.2.19.orig.tar.bz2.asc 906 SHA512:8b02ce09a50d2aa0c263f7042424ea815386fac56a8d8cea102d1aea2e75802f91bb2ebc7dc2d7a3157126d748ece554e0693d3bf355f908586cbadbe80c68fb
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.19-3ubuntu2.1.debian.tar.xz' gnupg2_2.2.19-3ubuntu2.1.debian.tar.xz 65572 SHA512:ea863eeb3d823a8ed0aad76bd9e76d9452d2061dd1170357dd73f3f7251b11c2ceed29209cfe42adc0c7a7fc17232df121192cfc976d7a7d48e7b43ef1deb3e3
-```
 
 ### `dpkg` source package: `gnutls28=3.6.13-2ubuntu1.6`
 
@@ -1268,16 +1267,16 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-org=4.4.14`
+### `dpkg` source package: `mongodb-org=4.4.15`
 
 Binary Packages:
 
-- `mongodb-org=4.4.14`
-- `mongodb-org-database-tools-extra=4.4.14`
-- `mongodb-org-mongos=4.4.14`
-- `mongodb-org-server=4.4.14`
-- `mongodb-org-shell=4.4.14`
-- `mongodb-org-tools=4.4.14`
+- `mongodb-org=4.4.15`
+- `mongodb-org-database-tools-extra=4.4.15`
+- `mongodb-org-mongos=4.4.15`
+- `mongodb-org-server=4.4.15`
+- `mongodb-org-shell=4.4.15`
+- `mongodb-org-tools=4.4.15`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
