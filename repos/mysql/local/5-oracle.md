@@ -1,10 +1,10 @@
-# `mysql:5.7.38-oracle`
+# `mysql:5.7.38`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5958a947375b1e5db8071ec2f5332b72526229a8a0699d64078c3f7baf60687b`
-- Created: `2022-06-28T00:22:57.193733588Z`
-- Virtual Size: ~ 428.88 Mb  
+- Image ID: `sha256:34e82e62381842f555f6e8b347645650c8b154746957044cd28c1f28b8817216`
+- Created: `2022-07-05T22:40:25.830862208Z`
+- Virtual Size: ~ 428.90 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -355,15 +355,15 @@ $ dnf --quiet download --source --url keyutils-libs-1.5.8-3.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/keyutils-1.5.8-3.el7.src.rpm
 ```
 
-### `rpm` package: `krb5-libs-1.15.1-51.0.3.el7_9.x86_64`
+### `rpm` package: `krb5-libs-1.15.1-54.0.1.el7_9.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url krb5-libs-1.15.1-51.0.3.el7_9
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/krb5-1.15.1-51.0.3.el7_9.src.rpm
+$ dnf --quiet download --source --url krb5-libs-1.15.1-54.0.1.el7_9
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/krb5-1.15.1-54.0.1.el7_9.src.rpm
 ```
 
 ### `rpm` package: `libacl-2.2.51-15.el7.x86_64`
@@ -983,15 +983,15 @@ $ dnf --quiet download --source --url pyliblzma-0.5.3-11.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/pyliblzma-0.5.3-11.el7.src.rpm
 ```
 
-### `rpm` package: `python-2.7.5-90.0.3.el7.x86_64`
+### `rpm` package: `python-2.7.5-92.0.1.el7_9.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python-2.7.5-90.0.3.el7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/python-2.7.5-90.0.3.el7.src.rpm
+$ dnf --quiet download --source --url python-2.7.5-92.0.1.el7_9
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/python-2.7.5-92.0.1.el7_9.src.rpm
 ```
 
 ### `rpm` package: `python-chardet-2.2.1-3.el7.noarch`
@@ -1027,15 +1027,15 @@ $ dnf --quiet download --source --url python-kitchen-1.1.1-5.el7.noarch
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/python-kitchen-1.1.1-5.el7.src.rpm
 ```
 
-### `rpm` package: `python-libs-2.7.5-90.0.3.el7.x86_64`
+### `rpm` package: `python-libs-2.7.5-92.0.1.el7_9.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python-libs-2.7.5-90.0.3.el7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/python-2.7.5-90.0.3.el7.src.rpm
+$ dnf --quiet download --source --url python-libs-2.7.5-92.0.1.el7_9
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/python-2.7.5-92.0.1.el7_9.src.rpm
 ```
 
 ### `rpm` package: `python-pycurl-7.19.0-19.el7.x86_64`
