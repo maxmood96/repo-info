@@ -1,19 +1,18 @@
-# `aerospike:ee-6.0.0.1`
+# `aerospike:ce-6.0.0.2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:337e76ac840fd3214a45640ad0de76554c6425c13ec3f2e496b027a1f3d15b61`
-- Created: `2022-06-23T00:47:09.526801265Z`
-- Virtual Size: ~ 257.22 Mb  
+- Image ID: `sha256:1b498e4572705802f84b46e8f0b10ce3841f9ccdb1e4d9d1b95a344b1a312206`
+- Created: `2022-07-06T18:20:11.705092509Z`
+- Virtual Size: ~ 250.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Entrypoint: `["/usr/bin/as-tini-static","-r","SIGUSR1","-t","SIGTERM","--","/entrypoint.sh"]`
+- Entrypoint: `["/usr/bin/dumb-init","--","/entrypoint.sh"]`
 - Command: `["asd"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `AEROSPIKE_VERSION=6.0.0.1`
-  - `AEROSPIKE_SHA256=d470ca9717b563726e8084ab6fc89f2889aefd1f6aa8ef9145ac38e0b42945a1`
-  - `AS_TINI_SHA256=d1f6826dd70cdd88dde3d5a20d8ed248883a3bc2caba3071c8a3a9b0e0de5940`
+  - `AEROSPIKE_VERSION=6.0.0.2`
+  - `AEROSPIKE_SHA256=c521897b21909dde726e067f5164a6397177feb84ae52712e224f2b694dbf7ad`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -70,11 +69,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/adduser/3.118/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/adduser/3.118/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `aerospike-server-enterprise=6.0.0.1-1`
+### `dpkg` source package: `aerospike-server-community=6.0.0.2-1`
 
 Binary Packages:
 
-- `aerospike-server-enterprise=6.0.0.1-1`
+- `aerospike-server-community=6.0.0.2-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -566,6 +565,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/dpkg/1.19.8/ (for browsing the source)
 - https://sources.debian.net/src/dpkg/1.19.8/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/dpkg/1.19.8/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `dumb-init=1.2.2-1.1`
+
+Binary Packages:
+
+- `dumb-init=1.2.2-1.1`
+
+Licenses: (parsed from: `/usr/share/doc/dumb-init/copyright`)
+
+- `Expat`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris dumb-init=1.2.2-1.1
+'http://deb.debian.org/debian/pool/main/d/dumb-init/dumb-init_1.2.2-1.1.dsc' dumb-init_1.2.2-1.1.dsc 1613 SHA256:6e3b3554b27624140fdcec89051de4664cabb07a19d2a15772699d741e833af3
+'http://deb.debian.org/debian/pool/main/d/dumb-init/dumb-init_1.2.2.orig.tar.xz' dumb-init_1.2.2.orig.tar.xz 22488 SHA256:c8a00ca238832502c4fdd8914af5a4636c1760bcbe04b18dba353d3ff9571f52
+'http://deb.debian.org/debian/pool/main/d/dumb-init/dumb-init_1.2.2-1.1.debian.tar.xz' dumb-init_1.2.2-1.1.debian.tar.xz 3684 SHA256:2968b02f556fe5ba6f68bcbe9f85640324220c0aeaf9f01aa432db124ef1ed70
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/dumb-init/1.2.2-1.1/ (for browsing the source)
+- https://sources.debian.net/src/dumb-init/1.2.2-1.1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/dumb-init/1.2.2-1.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `e2fsprogs=1.44.5-1+deb10u3`
 
@@ -1862,7 +1886,6 @@ Binary Packages:
 
 - `libldap-2.4-2:amd64=2.4.47+dfsg-3+deb10u7`
 - `libldap-common=2.4.47+dfsg-3+deb10u7`
-- `libldap2-dev:amd64=2.4.47+dfsg-3+deb10u7`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1883,23 +1906,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openldap/2.4.47+dfsg-3+deb10u7/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openldap/2.4.47+dfsg-3+deb10u7/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=1.1.1n-0+deb10u2`
+### `dpkg` source package: `openssl=1.1.1n-0+deb10u3`
 
 Binary Packages:
 
-- `libssl1.1:amd64=1.1.1n-0+deb10u2`
+- `libssl1.1:amd64=1.1.1n-0+deb10u3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris openssl=1.1.1n-0+deb10u3
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1n-0%2bdeb10u3.dsc' openssl_1.1.1n-0+deb10u3.dsc 2649 SHA256:190bf508730e7c95342e726953f0551affd6dfe98a011f278b1cc19c9cfd0824
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1n.orig.tar.gz' openssl_1.1.1n.orig.tar.gz 9850712 SHA256:40dceb51a4f6a5275bde0e6bf20ef4b91bfc32ed57c0552e2e8e15463372b17a
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1n.orig.tar.gz.asc' openssl_1.1.1n.orig.tar.gz.asc 488 SHA256:e0e89e9467102880ee6f2ee8c1413933eb1268969afb97b9bec61e2190a62fd0
+'http://security.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1n-0%2bdeb10u3.debian.tar.xz' openssl_1.1.1n-0+deb10u3.debian.tar.xz 118660 SHA256:629424b95612e36d45260bb0e3e4bb880cec355ae893ccd2294f642f82cca2a9
+```
 
-- http://snapshot.debian.org/package/openssl/1.1.1n-0+deb10u2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/openssl/1.1.1n-0+deb10u3/ (for browsing the source)
+- https://sources.debian.net/src/openssl/1.1.1n-0+deb10u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/1.1.1n-0+deb10u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.23.15-2+deb10u1`
 
