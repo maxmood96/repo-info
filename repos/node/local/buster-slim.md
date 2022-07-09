@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b21d47d7bd6cde953a8450e756f6637f517aafd73e8ea368f9ed7273e5414289`
-- Created: `2022-06-23T04:24:48.106612483Z`
-- Virtual Size: ~ 236.17 Mb  
+- Image ID: `sha256:7cac38f53b9998fddf70211d544efbaef9a91353b398ee28f983d19a812dd761`
+- Created: `2022-07-08T18:23:06.153437321Z`
+- Virtual Size: ~ 236.63 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=18.4.0`
+  - `NODE_VERSION=18.5.0`
   - `YARN_VERSION=1.22.19`
 
 ## `dpkg` (`.deb`-based packages)
@@ -620,11 +620,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gmp/2:6.1.2+dfsg-4+deb10u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gmp/2:6.1.2+dfsg-4+deb10u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gnupg2=2.2.12-1+deb10u1`
+### `dpkg` source package: `gnupg2=2.2.12-1+deb10u2`
 
 Binary Packages:
 
-- `gpgv=2.2.12-1+deb10u1`
+- `gpgv=2.2.12-1+deb10u2`
 
 Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 
@@ -644,18 +644,18 @@ Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnupg2=2.2.12-1+deb10u1
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.12-1%2bdeb10u1.dsc' gnupg2_2.2.12-1+deb10u1.dsc 3261 SHA256:2e1ca8d194593c151228f6b54da51ccd0b17036a532c7724bfcab17594c886ed
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.12.orig.tar.bz2' gnupg2_2.2.12.orig.tar.bz2 6682303 SHA256:db030f8b4c98640e91300d36d516f1f4f8fe09514a94ea9fc7411ee1a34082cb
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.12.orig.tar.bz2.asc' gnupg2_2.2.12.orig.tar.bz2.asc 3204 SHA256:97c8dc25c4c2fe9a39b2ffd81b65b6f3dc4ad359c9a81ca4bb9b4bdeb6167c60
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.12-1%2bdeb10u1.debian.tar.xz' gnupg2_2.2.12-1+deb10u1.debian.tar.xz 123224 SHA256:f8cd4f8a2b63208fd05ae433dc9cb11d2483a72ef057cfe5fcfe2385b7c63f38
+$ apt-get source -qq --print-uris gnupg2=2.2.12-1+deb10u2
+'http://security.debian.org/debian-security/pool/updates/main/g/gnupg2/gnupg2_2.2.12-1%2bdeb10u2.dsc' gnupg2_2.2.12-1+deb10u2.dsc 3258 SHA256:63c9e0edbfd5772bc19eb722278445818f77e6506191def7a88748ffbd5226eb
+'http://security.debian.org/debian-security/pool/updates/main/g/gnupg2/gnupg2_2.2.12.orig.tar.bz2' gnupg2_2.2.12.orig.tar.bz2 6682303 SHA256:db030f8b4c98640e91300d36d516f1f4f8fe09514a94ea9fc7411ee1a34082cb
+'http://security.debian.org/debian-security/pool/updates/main/g/gnupg2/gnupg2_2.2.12.orig.tar.bz2.asc' gnupg2_2.2.12.orig.tar.bz2.asc 3204 SHA256:97c8dc25c4c2fe9a39b2ffd81b65b6f3dc4ad359c9a81ca4bb9b4bdeb6167c60
+'http://security.debian.org/debian-security/pool/updates/main/g/gnupg2/gnupg2_2.2.12-1%2bdeb10u2.debian.tar.xz' gnupg2_2.2.12-1+deb10u2.debian.tar.xz 123852 SHA256:e4959380382661227462a88c5f56b2b3b1fbb36717e32f1be6fc3187e6234c22
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/gnupg2/2.2.12-1+deb10u1/ (for browsing the source)
-- https://sources.debian.net/src/gnupg2/2.2.12-1+deb10u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnupg2/2.2.12-1+deb10u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/gnupg2/2.2.12-1+deb10u2/ (for browsing the source)
+- https://sources.debian.net/src/gnupg2/2.2.12-1+deb10u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gnupg2/2.2.12-1+deb10u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnutls28=3.6.7-4+deb10u7`
 
