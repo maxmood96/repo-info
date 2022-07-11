@@ -1,10 +1,10 @@
-# `drupal:9.4.1-php8.0-fpm-alpine3.15`
+# `drupal:9.4.2-php8.0-fpm-alpine3.15`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a856d989e1ee896ee844daceb8b3d4adf092e677917a48b071bb38dcd2e8c9c1`
-- Created: `2022-06-22T00:42:27.368057419Z`
-- Virtual Size: ~ 171.20 Mb  
+- Image ID: `sha256:c7fa954a2291734cf7aeff83e52fb18c3249f6e065bd14760caa79d64f79b91b`
+- Created: `2022-07-08T01:07:52.793126793Z`
+- Virtual Size: ~ 171.15 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -17,11 +17,11 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F`
-  - `PHP_VERSION=8.0.20`
-  - `PHP_URL=https://www.php.net/distributions/php-8.0.20.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.0.20.tar.xz.asc`
-  - `PHP_SHA256=973fec765336ee01f47536a5db1c2eee98df9d34a41522b7b6c760159bf0a77b`
-  - `DRUPAL_VERSION=9.4.1`
+  - `PHP_VERSION=8.0.21`
+  - `PHP_URL=https://www.php.net/distributions/php-8.0.21.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.0.21.tar.xz.asc`
+  - `PHP_SHA256=e87a598f157e0cf0606e64382bb91c8b30c47d4a0fc96b2c17ad547a27869b3b`
+  - `DRUPAL_VERSION=9.4.2`
 
 ## `apk` (`.apk`-based packages)
 
@@ -266,16 +266,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1o-r0 description:
+libcrypto1.1-1.1.1q-r0 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1o-r0 webpage:
+libcrypto1.1-1.1.1q-r0 webpage:
 https://www.openssl.org/
 
-libcrypto1.1-1.1.1o-r0 installed size:
+libcrypto1.1-1.1.1q-r0 installed size:
 2676 KiB
 
-libcrypto1.1-1.1.1o-r0 license:
+libcrypto1.1-1.1.1q-r0 license:
 OpenSSL
 
 ```
@@ -283,16 +283,16 @@ OpenSSL
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.80.0-r1 description:
+libcurl-7.80.0-r2 description:
 The multiprotocol file transfer library
 
-libcurl-7.80.0-r1 webpage:
+libcurl-7.80.0-r2 webpage:
 https://curl.se/
 
-libcurl-7.80.0-r1 installed size:
+libcurl-7.80.0-r2 installed size:
 504 KiB
 
-libcurl-7.80.0-r1 license:
+libcurl-7.80.0-r2 license:
 MIT
 
 ```
@@ -334,16 +334,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-14.3-r0 description:
+libpq-14.4-r0 description:
 PostgreSQL client library
 
-libpq-14.3-r0 webpage:
+libpq-14.4-r0 webpage:
 https://www.postgresql.org/
 
-libpq-14.3-r0 installed size:
+libpq-14.4-r0 installed size:
 328 KiB
 
-libpq-14.3-r0 license:
+libpq-14.4-r0 license:
 PostgreSQL
 
 ```
@@ -385,16 +385,16 @@ ISC
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1o-r0 description:
+libssl1.1-1.1.1q-r0 description:
 SSL shared libraries
 
-libssl1.1-1.1.1o-r0 webpage:
+libssl1.1-1.1.1q-r0 webpage:
 https://www.openssl.org/
 
-libssl1.1-1.1.1o-r0 installed size:
+libssl1.1-1.1.1q-r0 installed size:
 528 KiB
 
-libssl1.1-1.1.1o-r0 license:
+libssl1.1-1.1.1q-r0 license:
 OpenSSL
 
 ```
