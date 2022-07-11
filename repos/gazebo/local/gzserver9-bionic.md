@@ -4522,14 +4522,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nss=2:3.35-2ubuntu2.14
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.35-2ubuntu2.14.dsc' nss_3.35-2ubuntu2.14.dsc 2232 SHA512:41b02958b313df05da28ee75895a883816c6257395005bfbd501fee38d584c3c3aa67e02247f53dbe3ad5833c927f9407f52e1b1780381be1eee6f0779cdbaa1
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.35.orig.tar.gz' nss_3.35.orig.tar.gz 9620041 SHA512:8d466f4602427d278b6aa28af0e6bdb99326fc40c94ac6d517d1cbe7ce6b9332dadba52ea092762fac2fd6e72f17cb880cf81e1cf86bf6b4f7913a755419626d
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.35-2ubuntu2.14.debian.tar.xz' nss_3.35-2ubuntu2.14.debian.tar.xz 220516 SHA512:2b233caeb40769b217e4973009e4403164f36b84374c657d40cb470463ed61046edbe90ee21434eb93fdb9f19d64baefb56bc28e54ab0f1ad11cb6231fb530bf
-```
 
 ### `dpkg` source package: `numactl=2.0.11-2.1ubuntu0.1`
 
