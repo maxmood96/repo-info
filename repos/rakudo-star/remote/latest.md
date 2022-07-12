@@ -1,7 +1,7 @@
 ## `rakudo-star:latest`
 
 ```console
-$ docker pull rakudo-star@sha256:92ade6b21f6ef1053d6059b1c44b2bc6a424f03d396132c778628d77d7e3e8a9
+$ docker pull rakudo-star@sha256:e50a2164e089ac49740b4aa68fc07df3815df5be5498c944473021246eef1dc6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -78,65 +78,65 @@ CMD ["raku"]
 ### `rakudo-star:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull rakudo-star@sha256:e1c71cba81dc997a1d8d8e79dcf693f2c9812d96831a02e9ee65af02fd746606
+$ docker pull rakudo-star@sha256:e29450910f3e24f74bb8a136482ee8849d2831a1c6b518d39dae88f8db529def
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **160.2 MB (160208674 bytes)**  
+-	Total Size: **160.2 MB (160166173 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:976dce0b320a6874672f7726ebf5c72c7f431cc6fb3627675eadb18e0cda96ee`
+-	Image ID: `sha256:99592661bda8ac0c44c13ad3230b568b09a45e26c4adc5e59883a68fb3e322d2`
 -	Default Command: `["raku"]`
 
 ```dockerfile
-# Thu, 23 Jun 2022 00:40:54 GMT
-ADD file:a5e3c0ffa9f9754a6d77fafd8288e699a70f7f6ff7c5912a065f1c69f1393e99 in / 
-# Thu, 23 Jun 2022 00:40:55 GMT
+# Tue, 12 Jul 2022 00:40:46 GMT
+ADD file:ea39534c5e9a548d7938f6b0e2459383caaf3906f3cc5eafe8bf66053b19f2d5 in / 
+# Tue, 12 Jul 2022 00:40:47 GMT
 CMD ["bash"]
-# Thu, 23 Jun 2022 01:12:47 GMT
+# Tue, 12 Jul 2022 02:34:53 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 23 Jun 2022 01:12:52 GMT
+# Tue, 12 Jul 2022 02:34:58 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 23 Jun 2022 01:13:09 GMT
+# Tue, 12 Jul 2022 02:35:18 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 23 Jun 2022 19:57:13 GMT
+# Tue, 12 Jul 2022 21:35:21 GMT
 MAINTAINER Rob Hoelz
-# Thu, 23 Jun 2022 19:57:14 GMT
+# Tue, 12 Jul 2022 21:35:22 GMT
 RUN groupadd -r raku && useradd -m -r -g raku raku
-# Thu, 23 Jun 2022 19:57:14 GMT
+# Tue, 12 Jul 2022 21:35:22 GMT
 ARG rakudo_version=2021.04
-# Thu, 23 Jun 2022 19:57:15 GMT
+# Tue, 12 Jul 2022 21:35:23 GMT
 ENV rakudo_version=2021.04
-# Thu, 23 Jun 2022 20:07:19 GMT
+# Tue, 12 Jul 2022 21:45:49 GMT
 RUN buildDeps='         gcc         libc6-dev         make     '         url="https://rakudo.org/dl/star/rakudo-star-${rakudo_version}.tar.gz"     keyserver='ha.pool.sks-keyservers.net'     keyfp='B6F697742EFCAF5F23CE51D5031D65902E840821'     tmpdir="$(mktemp -d)"     && set -eux     && export GNUPGHOME="$tmpdir"     && apt-get update     && apt-get install -y --no-install-recommends $buildDeps     && rm -rf /var/lib/apt/lists/*     && mkdir ${tmpdir}/rakudo         && curl -fsSL ${url}.asc -o ${tmpdir}/rakudo.tar.gz.asc     && curl -fsSL $url -o ${tmpdir}/rakudo.tar.gz     && gpg --batch --keyserver $keyserver --recv-keys $keyfp     && gpg --batch --verify ${tmpdir}/rakudo.tar.gz.asc ${tmpdir}/rakudo.tar.gz         && tar xzf ${tmpdir}/rakudo.tar.gz --strip-components=1 -C ${tmpdir}/rakudo     && (         cd ${tmpdir}/rakudo         && bash bin/rstar install -p /usr     )     && rm -rf $tmpdir     && apt-get purge -y --auto-remove $buildDeps
-# Thu, 23 Jun 2022 20:07:19 GMT
+# Tue, 12 Jul 2022 21:45:50 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share/perl6/core/bin:/usr/share/perl6/site/bin:/usr/share/perl6/vendor/bin
-# Thu, 23 Jun 2022 20:07:20 GMT
+# Tue, 12 Jul 2022 21:45:50 GMT
 CMD ["raku"]
 ```
 
 -	Layers:
-	-	`sha256:8d6f1451981514e25c21542f5c7ee9bb90052b8856b484ce47294cbf1fd5a234`  
-		Last Modified: Thu, 23 Jun 2022 00:47:46 GMT  
-		Size: 49.2 MB (49229092 bytes)  
+	-	`sha256:891a1587d3644a8b4b6dab3726ef380a725a0e19bfbf0eac02a275f711985862`  
+		Last Modified: Tue, 12 Jul 2022 00:46:46 GMT  
+		Size: 49.2 MB (49228928 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8ccc9fb4baf6e7f2e6ee18ed689c8ee1171c6751c8bbd317d580a193da27a5f1`  
-		Last Modified: Thu, 23 Jun 2022 01:23:09 GMT  
-		Size: 7.7 MB (7719858 bytes)  
+	-	`sha256:6a5d1ed6a27dab15e77b7afa9c8697a170f017a73ec9ea8f3f00d5f322e1d3ab`  
+		Last Modified: Tue, 12 Jul 2022 02:43:49 GMT  
+		Size: 7.7 MB (7720027 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:620d55693ed5943ab298346d9ccafefdd6d6f33994e6820a857737df89b65f3a`  
-		Last Modified: Thu, 23 Jun 2022 01:23:08 GMT  
-		Size: 9.8 MB (9767307 bytes)  
+	-	`sha256:1186afd5d5e89c602b988d31dd5210c9e3c19435f849f6cc4a6a22a2388e83cf`  
+		Last Modified: Tue, 12 Jul 2022 02:43:46 GMT  
+		Size: 9.8 MB (9768648 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:82dcb0fa2b6020cd95c3972ec0fe03da38862f57574fe03a49360713d6f415d6`  
-		Last Modified: Thu, 23 Jun 2022 01:23:28 GMT  
-		Size: 52.2 MB (52174988 bytes)  
+	-	`sha256:a5359768b018a374b04e8bf19e97c814527cb448f87c25de12fbabbb2ff3556d`  
+		Last Modified: Tue, 12 Jul 2022 02:44:07 GMT  
+		Size: 52.2 MB (52174846 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6700afd1728f8155a040ac511292139ac9702e3ca452727192c612924a2c5c34`  
-		Last Modified: Thu, 23 Jun 2022 20:07:47 GMT  
-		Size: 4.0 KB (4011 bytes)  
+	-	`sha256:d37afd77f0e48394b1223a8f47c83d585e07b3abb5aab0ea463d9b9d9162a9f4`  
+		Last Modified: Tue, 12 Jul 2022 21:46:20 GMT  
+		Size: 4.0 KB (4005 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:41fc5228b751a20451cea24a18b790c087eab31527100e11c143f2a1349788da`  
-		Last Modified: Thu, 23 Jun 2022 20:07:55 GMT  
-		Size: 41.3 MB (41313418 bytes)  
+	-	`sha256:3bafac35dca14d8b40e1c8b10e0405d8cdde88583733fd03498753532dc1fd33`  
+		Last Modified: Tue, 12 Jul 2022 21:46:29 GMT  
+		Size: 41.3 MB (41269719 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
