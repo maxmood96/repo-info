@@ -1,7 +1,7 @@
 ## `julia:1-buster`
 
 ```console
-$ docker pull julia@sha256:245c110daf6fc7cbe99754728834f8ff9ee854f42b951f784a383de3f5634627
+$ docker pull julia@sha256:490100ce6c6e8de4fd7938a8af0f7fa8d1e2097338ab3d73844bd37b6d391162
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14,49 +14,49 @@ $ docker pull julia@sha256:245c110daf6fc7cbe99754728834f8ff9ee854f42b951f784a383
 ### `julia:1-buster` - linux; amd64
 
 ```console
-$ docker pull julia@sha256:75ad5fef9213950826300483eff5ad95a23cb6e36f0192c1f67c5a8b9df7db20
+$ docker pull julia@sha256:84053480ac4bdd4b16d3496d3bc6ee24559c0a13469140816425afec6d068c96
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **164.0 MB (163984873 bytes)**  
+-	Total Size: **164.0 MB (163984821 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5b5873d0c9e06c6bef436116e4a4ae441ad5e7c39d25270b632b023a3869f570`
+-	Image ID: `sha256:5c955de18891c5d0b6bc7c0975ffe320e0ecdbd75c3aabeaf697d03de4ad7344`
 -	Default Command: `["julia"]`
 
 ```dockerfile
-# Thu, 23 Jun 2022 00:20:46 GMT
-ADD file:0ae121f9805d31a4ad0ed63e1fc397167a23656a285572fe68bfc51ea91ecfdd in / 
-# Thu, 23 Jun 2022 00:20:46 GMT
+# Tue, 12 Jul 2022 01:20:32 GMT
+ADD file:7f2320197e75c5169402827ce0c47d93629331875d76b9f0ddd389244747eccd in / 
+# Tue, 12 Jul 2022 01:20:33 GMT
 CMD ["bash"]
-# Thu, 23 Jun 2022 03:48:46 GMT
+# Tue, 12 Jul 2022 04:35:54 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 23 Jun 2022 03:48:46 GMT
+# Tue, 12 Jul 2022 04:35:55 GMT
 ENV JULIA_PATH=/usr/local/julia
-# Thu, 23 Jun 2022 03:48:46 GMT
+# Tue, 12 Jul 2022 04:35:55 GMT
 ENV PATH=/usr/local/julia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 23 Jun 2022 03:48:46 GMT
+# Tue, 12 Jul 2022 04:35:55 GMT
 ENV JULIA_GPG=3673DF529D9049477F76B37566E3C7DC03D6E495
-# Thu, 23 Jun 2022 03:49:32 GMT
+# Tue, 12 Jul 2022 04:36:40 GMT
 ENV JULIA_VERSION=1.7.3
-# Thu, 23 Jun 2022 03:49:47 GMT
+# Tue, 12 Jul 2022 04:36:55 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			url='https://julialang-s3.julialang.org/bin/linux/x64/1.7/julia-1.7.3-linux-x86_64.tar.gz'; 			sha256='9b2f4fa12d92b4dcc5d11dc66fb118c47681a76d3df8da064cc97573f2f5c739'; 			;; 		'armhf') 			url='https://julialang-s3.julialang.org/bin/linux/armv7l/1.7/julia-1.7.3-linux-armv7l.tar.gz'; 			sha256='e9de15c56b9b62727c69d10da4b8e90fa6609d2e94e9cfb9f99128dfb59a8677'; 			;; 		'arm64') 			url='https://julialang-s3.julialang.org/bin/linux/aarch64/1.7/julia-1.7.3-linux-aarch64.tar.gz'; 			sha256='d9e8b342c80ad1371520ed6d11f55b78aa60746737fbf57ecafd6a23b52dd71d'; 			;; 		'i386') 			url='https://julialang-s3.julialang.org/bin/linux/x86/1.7/julia-1.7.3-linux-i686.tar.gz'; 			sha256='c1e1a4f9a53affee269c7e740cb8bd46740f9021414459c3ab3bb2c540d9d499'; 			;; 		*) 			echo >&2 "error: current architecture ($arch) does not have a corresponding Julia binary release"; 			exit 1; 			;; 	esac; 		curl -fL -o julia.tar.gz.asc "$url.asc"; 	curl -fL -o julia.tar.gz "$url"; 		echo "$sha256 *julia.tar.gz" | sha256sum --strict --check -; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$JULIA_GPG"; 	gpg --batch --verify julia.tar.gz.asc julia.tar.gz; 	command -v gpgconf > /dev/null && gpgconf --kill all; 	rm -rf "$GNUPGHOME" julia.tar.gz.asc; 		mkdir "$JULIA_PATH"; 	tar -xzf julia.tar.gz -C "$JULIA_PATH" --strip-components 1; 	rm julia.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		julia --version
-# Thu, 23 Jun 2022 03:49:48 GMT
+# Tue, 12 Jul 2022 04:36:56 GMT
 CMD ["julia"]
 ```
 
 -	Layers:
-	-	`sha256:824b15f81d6568adc139263c39805e52d9880758b907f40144bbb1938ca59323`  
-		Last Modified: Thu, 23 Jun 2022 00:26:03 GMT  
-		Size: 27.1 MB (27140043 bytes)  
+	-	`sha256:ac2fb615420c18b61e0693f2569a3d38e3b9b58456b691bac44405e08389a591`  
+		Last Modified: Tue, 12 Jul 2022 01:25:22 GMT  
+		Size: 27.1 MB (27139850 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46b048d90a912a30e070c32b2a0684599a11aa8b964ab322a5f91ddeb4e86d02`  
-		Last Modified: Thu, 23 Jun 2022 03:52:04 GMT  
-		Size: 4.5 MB (4468159 bytes)  
+	-	`sha256:2f212a149a1ab42d538fdd3b3d5b842ae7105eb9feca6c1a764292f90182a638`  
+		Last Modified: Tue, 12 Jul 2022 04:39:12 GMT  
+		Size: 4.5 MB (4468228 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:57b611cc1792a0a876379bd4a72f7fbcc1a951542355792296a894865982d68e`  
-		Last Modified: Thu, 23 Jun 2022 03:53:36 GMT  
-		Size: 132.4 MB (132376671 bytes)  
+	-	`sha256:e4ae576e4bc4b10998b7e100b9d8881ac2036c8d12a94aace36be36174569b6e`  
+		Last Modified: Tue, 12 Jul 2022 04:40:45 GMT  
+		Size: 132.4 MB (132376743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `julia:1-buster` - linux; arm variant v7
