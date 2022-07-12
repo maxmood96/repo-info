@@ -1,7 +1,7 @@
 ## `mono:latest`
 
 ```console
-$ docker pull mono@sha256:ea2e5fce7163b2143e13b9924e33b4c37bbb909f9bd1f515d1a0ba9c2361248c
+$ docker pull mono@sha256:07357a53da3024bdc5261a2676e7aefd65fbcb5f32573943237c6287f63fe41b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -246,45 +246,45 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 ### `mono:latest` - linux; ppc64le
 
 ```console
-$ docker pull mono@sha256:a36a61a79a75faac96928984c885e16dc5341bae264940f42a5be34a44e737f3
+$ docker pull mono@sha256:fd56d67e5650bc23896acd8626cebdc5fc6292ec6db305f6fc36559502bd40ce
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **204.2 MB (204233859 bytes)**  
+-	Total Size: **204.2 MB (204235041 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f5dfb0f938c8562bad3d2e08a792165c349021fcffaf26d84b85331d22b8cfd9`
+-	Image ID: `sha256:94e67b7dd1d92196c1183ed6ac0d048ad98ff0f0f6a571372a4cce4478c123f9`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Thu, 23 Jun 2022 02:03:29 GMT
-ADD file:72c3739ee19c484811115caacd1b2bf903a764246b77af65c098817e5a13f8ca in / 
-# Thu, 23 Jun 2022 02:03:32 GMT
+# Tue, 12 Jul 2022 01:26:17 GMT
+ADD file:a6b8aff01d22eb4bfa373d809109de5f0a6a7cf7327f2f711c368ba2ecfcb529 in / 
+# Tue, 12 Jul 2022 01:26:25 GMT
 CMD ["bash"]
-# Thu, 23 Jun 2022 08:22:22 GMT
+# Tue, 12 Jul 2022 06:17:45 GMT
 ENV MONO_VERSION=6.12.0.182
-# Thu, 23 Jun 2022 08:23:15 GMT
+# Tue, 12 Jul 2022 06:19:39 GMT
 RUN apt-get update   && apt-get install -y --no-install-recommends gnupg dirmngr ca-certificates   && rm -rf /var/lib/apt/lists/*   && export GNUPGHOME="$(mktemp -d)"   && gpg --batch --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF   && gpg --batch --export --armor 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF > /etc/apt/trusted.gpg.d/mono.gpg.asc   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && apt-key list | grep Xamarin   && apt-get purge -y --auto-remove gnupg dirmngr
-# Thu, 23 Jun 2022 08:24:15 GMT
+# Tue, 12 Jul 2022 06:21:28 GMT
 RUN echo "deb https://download.mono-project.com/repo/debian stable-buster/snapshots/$MONO_VERSION main" > /etc/apt/sources.list.d/mono-official-stable.list   && apt-get update   && apt-get install -y mono-runtime   && rm -rf /var/lib/apt/lists/* /tmp/*
-# Thu, 23 Jun 2022 08:31:16 GMT
+# Tue, 12 Jul 2022 06:33:25 GMT
 RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certificates-mono fsharp mono-vbnc nuget referenceassemblies-pcl   && rm -rf /var/lib/apt/lists/* /tmp/*
 ```
 
 -	Layers:
-	-	`sha256:18188ef7804b6b81fced393814287e8c6e18656751108acdbbd364d57775a243`  
-		Last Modified: Thu, 23 Jun 2022 02:17:52 GMT  
-		Size: 30.6 MB (30560321 bytes)  
+	-	`sha256:6397b3c9c600936bac0b5fca48461dde424703aa59318fe69c30e207bad2e0b7`  
+		Last Modified: Tue, 12 Jul 2022 01:38:08 GMT  
+		Size: 30.6 MB (30560087 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35c5e74ddd7a50265c26382df8e6d39f1275c29ebc1710420f1a8de23ad6022b`  
-		Last Modified: Thu, 23 Jun 2022 08:38:24 GMT  
-		Size: 2.9 MB (2892723 bytes)  
+	-	`sha256:9c0f3e5226b53b59df7411861d3f650ff0f48af746a0b1df435e38c302d67be8`  
+		Last Modified: Tue, 12 Jul 2022 06:42:26 GMT  
+		Size: 2.9 MB (2892915 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc549645d7f42d930bbcfad7b0dfad17c219dc5b38c2d6b5ff362ed0cb7d8cd8`  
-		Last Modified: Thu, 23 Jun 2022 08:38:29 GMT  
-		Size: 26.9 MB (26897013 bytes)  
+	-	`sha256:c924cf165e3b691d1c36aada4b36d31074afbccf4126f2f74b4dfd7115445c3d`  
+		Last Modified: Tue, 12 Jul 2022 06:42:31 GMT  
+		Size: 26.9 MB (26897285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1cb9975e82a149a6eaee70df67907a8f1fd670cdd0ecffe8cd999f41b5074cb9`  
-		Last Modified: Thu, 23 Jun 2022 08:39:38 GMT  
-		Size: 143.9 MB (143883802 bytes)  
+	-	`sha256:948d3f3ec9ef6bac1813c2c395f7cc103bdc54f06e25cf2c467b32a583e7c591`  
+		Last Modified: Tue, 12 Jul 2022 06:43:55 GMT  
+		Size: 143.9 MB (143884754 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
