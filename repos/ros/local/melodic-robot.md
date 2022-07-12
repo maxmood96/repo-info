@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:522a284b486243807f15fe56d2723bfd034c2b99de4104f787840cc842ff2f1a`
-- Created: `2022-06-07T01:05:05.900627957Z`
+- Image ID: `sha256:11a156832690c9d261ec63f8c0b509d8acbd23bdf34db5b0ad338a887b555fd2`
+- Created: `2022-07-11T23:23:15.757563923Z`
 - Virtual Size: ~ 1.31 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -790,10 +790,9 @@ $ apt-get source -qq --print-uris cups=2.2.7-1ubuntu2.9
 
 Binary Packages:
 
-- `libcurl3-gnutls:amd64=7.58.0-2ubuntu3.18`
 - `libcurl4:amd64=7.58.0-2ubuntu3.18`
 
-Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libcurl4/copyright`)
 
 - `BSD-3-Clause`
 - `BSD-4-Clause`
@@ -805,6 +804,30 @@ Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+
+### `dpkg` source package: `curl=7.58.0-2ubuntu3.19`
+
+Binary Packages:
+
+- `libcurl3-gnutls:amd64=7.58.0-2ubuntu3.19`
+
+Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`)
+
+- `BSD-3-Clause`
+- `BSD-4-Clause`
+- `ISC`
+- `curl`
+- `other`
+- `public-domain`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris curl=7.58.0-2ubuntu3.19
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0-2ubuntu3.19.dsc' curl_7.58.0-2ubuntu3.19.dsc 2781 SHA512:f4bec87a79c46eea30aba006402bc867f8b6258ef5c6b68723406e14cc1b087c33feb5b4c376551ce0ed695043c6acfa491ccc97f8b5033e5674c7b11ca74e67
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0.orig.tar.gz' curl_7.58.0.orig.tar.gz 3879728 SHA512:7b12b79107558bb266672d6e128615fe5a8149c37f4ae540197e3298f5d312beb2d78fbb23e3ea84ea7afc41549898a1e5cd38509f0388b11707b48d5efb8ca3
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0-2ubuntu3.19.debian.tar.xz' curl_7.58.0-2ubuntu3.19.debian.tar.xz 72556 SHA512:7d868e966977ea224f1f853db2c8941b4723d84a0a88ef0391a3f22ec0518f39b36b2946c033faf63ae8ef964bc0ea9bbbbb627a76265354ac19347bae07d588
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3ubuntu2.4`
 
@@ -4900,33 +4923,43 @@ $ apt-get source -qq --print-uris python-roman=2.0.0-3
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python-roman/python-roman_2.0.0-3.debian.tar.xz' python-roman_2.0.0-3.debian.tar.xz 8596 SHA256:fa6c16b3e4d328a8cfe16fbed994add1a2c9cb5a5955bff374244794a6cddf31
 ```
 
-### `dpkg` source package: `python-rosdep-modules=0.21.0-1`
+### `dpkg` source package: `python-rosdep-modules=0.22.1-1`
 
 Binary Packages:
 
-- `python-rosdep-modules=0.21.0-1`
+- `python-rosdep-modules=0.22.1-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-rosdep-modules=0.22.1-1
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdep-modules/python-rosdep-modules_0.22.1-1.debian.tar.xz' python-rosdep-modules_0.22.1-1.debian.tar.xz 2028 SHA512:4c8c51da005393a6d843aa08c34e684385a641ab7728939b834c6fc95f7f36b0c0b5bffa6c57a649c9828bfbc90b4c676299f8245ef6f6eb1d7dac499e3c37a0
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdep-modules/python-rosdep-modules_0.22.1-1.dsc' python-rosdep-modules_0.22.1-1.dsc 1010 SHA512:b8b27a5dcbdee8ef0cff9aa6749f88087aa86712bc87ce56b1d4acb859bed52c47a58e831da09594ecb8f9f242cd3e23db8a5d9c99c3dd8734547dd7f360e22b
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdep-modules/python-rosdep-modules_0.22.1.orig.tar.gz' python-rosdep-modules_0.22.1.orig.tar.gz 92398 SHA512:a211844a6a7ededfa25ef44e00026d040cfb70c856daf6fe73f9c02a60e896f74a9e85b7a7a2782148c9abc19ce504bf063316066396ccbc3c8722bdfb88ec8d
+```
 
-### `dpkg` source package: `python-rosdep=0.21.0-1`
+### `dpkg` source package: `python-rosdep=0.22.1-1`
 
 Binary Packages:
 
-- `python-rosdep=0.21.0-1`
+- `python-rosdep=0.22.1-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-rosdep=0.22.1-1
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdep/python-rosdep_0.22.1-1.debian.tar.xz' python-rosdep_0.22.1-1.debian.tar.xz 1968 SHA512:2a57ac9071ea8764c978b99a12af4d5301ec306b9da374ca750c46ef6c75cc307ebb45998d0a01c5140cf9ddffaca3d1710e46e95c88102462d7478077e90983
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdep/python-rosdep_0.22.1-1.dsc' python-rosdep_0.22.1-1.dsc 938 SHA512:d6300f241922ff04d5202af5670cc86ebb65a3fb4277f22996c2f725f96265e2a3f2ce7661f5606633cb7e15288376d2038e6a6b7f0ad446cb534e4beba358b0
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdep/python-rosdep_0.22.1.orig.tar.gz' python-rosdep_0.22.1.orig.tar.gz 33065 SHA512:d6c41508e2fb649f5e637f66c4f61ad07d52d7ece2071b05e3eb3b8baf5378e23e0556aeaa2c88172ce06eee3b510732980400ba5cc85bad75913d799a757ab0
+```
 
 ### `dpkg` source package: `python-rosdistro-modules=0.8.3-1`
 
@@ -5548,11 +5581,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-dynamic-reconfigure=1.6.4-1bionic.20220222.182805`
+### `dpkg` source package: `ros-melodic-dynamic-reconfigure=1.6.5-1bionic.20220517.175931`
 
 Binary Packages:
 
-- `ros-melodic-dynamic-reconfigure=1.6.4-1bionic.20220222.182805`
+- `ros-melodic-dynamic-reconfigure=1.6.5-1bionic.20220517.175931`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5590,15 +5623,15 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-filters=1.8.2-1bionic.20220127.150446`
+### `dpkg` source package: `ros-melodic-filters=1.8.3-1bionic.20220512.133227`
 
 Binary Packages:
 
-- `ros-melodic-filters=1.8.2-1bionic.20220127.150446`
+- `ros-melodic-filters=1.8.3-1bionic.20220512.133227`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
+Licenses: (parsed from: `/usr/share/doc/ros-melodic-filters/copyright`)
 
+- `BSD`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
@@ -5842,11 +5875,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-nodelet-core=1.9.16-0bionic.20220222.193640`
+### `dpkg` source package: `ros-melodic-nodelet-core=1.9.16-0bionic.20220517.190439`
 
 Binary Packages:
 
-- `ros-melodic-nodelet-core=1.9.16-0bionic.20220222.193640`
+- `ros-melodic-nodelet-core=1.9.16-0bionic.20220517.190439`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5856,11 +5889,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-nodelet-topic-tools=1.9.16-0bionic.20220222.190202`
+### `dpkg` source package: `ros-melodic-nodelet-topic-tools=1.9.16-0bionic.20220517.183057`
 
 Binary Packages:
 
-- `ros-melodic-nodelet-topic-tools=1.9.16-0bionic.20220222.190202`
+- `ros-melodic-nodelet-topic-tools=1.9.16-0bionic.20220517.183057`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5940,11 +5973,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-robot=1.4.1-0bionic.20220413.173635`
+### `dpkg` source package: `ros-melodic-robot=1.4.1-0bionic.20220517.192954`
 
 Binary Packages:
 
-- `ros-melodic-robot=1.4.1-0bionic.20220413.173635`
+- `ros-melodic-robot=1.4.1-0bionic.20220517.192954`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5954,11 +5987,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-melodic-ros-base=1.4.1-0bionic.20220222.193734`
+### `dpkg` source package: `ros-melodic-ros-base=1.4.1-0bionic.20220517.192906`
 
 Binary Packages:
 
-- `ros-melodic-ros-base=1.4.1-0bionic.20220222.193734`
+- `ros-melodic-ros-base=1.4.1-0bionic.20220517.192906`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
