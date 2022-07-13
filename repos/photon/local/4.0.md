@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:adc947c3b07fea35a553b393135e900cffbf02d44c6545d7e33bc089de162ecc`
-- Created: `2022-07-05T18:24:29.982903878Z`
+- Image ID: `sha256:102af95b85f3fd3491bca57c83c435c0563a6e4a33f6e036e5eb11ad51c732dc`
+- Created: `2022-07-11T21:20:31.155804461Z`
 - Virtual Size: ~ 36.95 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 - Labels:
-  - `build-date=20220701`
+  - `build-date=20220708`
   - `name=Photon OS x86_64/4.0 Base Image`
   - `vendor=VMware`
 
@@ -41,13 +41,13 @@ Licenses (from `rpm --query`): Custom
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `curl-7.83.1-1.ph4.x86_64`
+### `rpm` package: `curl-7.83.1-2.ph4.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `curl-libs-7.83.1-1.ph4.x86_64`
+### `rpm` package: `curl-libs-7.83.1-2.ph4.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
@@ -155,7 +155,7 @@ Licenses (from `rpm --query`): MPLv2.0
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `openssl-3.0.3-2.ph4.x86_64`
+### `rpm` package: `openssl-3.0.3-3.ph4.x86_64`
 
 Licenses (from `rpm --query`): OpenSSL
 
