@@ -1,16 +1,16 @@
-# `caddy:2.5.1-alpine`
+# `caddy:2.5.2-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e63f36e9049faf60b3a47c774237eddacb8916cacb003e418f2591de1a3bee29`
-- Created: `2022-05-06T19:19:28.24997057Z`
-- Virtual Size: ~ 44.35 Mb  
+- Image ID: `sha256:e99e5e593f69a4c70d75271117799e5796754e07429560f8f70a6a62a9c09b8e`
+- Created: `2022-07-13T07:46:58.57177087Z`
+- Virtual Size: ~ 44.92 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["caddy","run","--config","/etc/caddy/Caddyfile","--adapter","caddyfile"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `CADDY_VERSION=v2.5.1`
+  - `CADDY_VERSION=v2.5.2`
   - `XDG_CONFIG_HOME=/config`
   - `XDG_DATA_HOME=/data`
 - Labels:
@@ -21,23 +21,40 @@
   - `org.opencontainers.image.title=Caddy`
   - `org.opencontainers.image.url=https://caddyserver.com`
   - `org.opencontainers.image.vendor=Light Code Labs`
-  - `org.opencontainers.image.version=v2.5.1`
+  - `org.opencontainers.image.version=v2.5.2`
 
 ## `apk` (`.apk`-based packages)
 
 ### `apk` package: `alpine-baselayout`
 
 ```console
-alpine-baselayout-3.2.0-r18 description:
+alpine-baselayout-3.2.0-r20 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-3.2.0-r18 webpage:
+alpine-baselayout-3.2.0-r20 webpage:
 https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
-alpine-baselayout-3.2.0-r18 installed size:
-404 KiB
+alpine-baselayout-3.2.0-r20 installed size:
+340 KiB
 
-alpine-baselayout-3.2.0-r18 license:
+alpine-baselayout-3.2.0-r20 license:
+GPL-2.0-only
+
+```
+
+### `apk` package: `alpine-baselayout-data`
+
+```console
+alpine-baselayout-data-3.2.0-r20 description:
+Alpine base dir structure and init scripts
+
+alpine-baselayout-data-3.2.0-r20 webpage:
+https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
+
+alpine-baselayout-data-3.2.0-r20 installed size:
+72 KiB
+
+alpine-baselayout-data-3.2.0-r20 license:
 GPL-2.0-only
 
 ```
@@ -62,16 +79,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-2.12.7-r3 description:
+apk-tools-2.12.9-r3 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-2.12.7-r3 webpage:
+apk-tools-2.12.9-r3 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-2.12.7-r3 installed size:
-304 KiB
+apk-tools-2.12.9-r3 installed size:
+300 KiB
 
-apk-tools-2.12.7-r3 license:
+apk-tools-2.12.9-r3 license:
 GPL-2.0-only
 
 ```
@@ -79,16 +96,16 @@ GPL-2.0-only
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.34.1-r5 description:
+busybox-1.35.0-r13 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.34.1-r5 webpage:
+busybox-1.35.0-r13 webpage:
 https://busybox.net/
 
-busybox-1.34.1-r5 installed size:
-924 KiB
+busybox-1.35.0-r13 installed size:
+936 KiB
 
-busybox-1.34.1-r5 license:
+busybox-1.35.0-r13 license:
 GPL-2.0-only
 
 ```
@@ -147,50 +164,33 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1n-r0 description:
+libcrypto1.1-1.1.1o-r0 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1n-r0 webpage:
+libcrypto1.1-1.1.1o-r0 webpage:
 https://www.openssl.org/
 
-libcrypto1.1-1.1.1n-r0 installed size:
-2676 KiB
+libcrypto1.1-1.1.1o-r0 installed size:
+2708 KiB
 
-libcrypto1.1-1.1.1n-r0 license:
+libcrypto1.1-1.1.1o-r0 license:
 OpenSSL
-
-```
-
-### `apk` package: `libretls`
-
-```console
-libretls-3.3.4-r3 description:
-port of libtls from libressl to openssl
-
-libretls-3.3.4-r3 webpage:
-https://git.causal.agency/libretls/
-
-libretls-3.3.4-r3 installed size:
-84 KiB
-
-libretls-3.3.4-r3 license:
-ISC AND (BSD-3-Clause OR MIT)
 
 ```
 
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1n-r0 description:
+libssl1.1-1.1.1o-r0 description:
 SSL shared libraries
 
-libssl1.1-1.1.1n-r0 webpage:
+libssl1.1-1.1.1o-r0 webpage:
 https://www.openssl.org/
 
-libssl1.1-1.1.1n-r0 installed size:
+libssl1.1-1.1.1o-r0 installed size:
 528 KiB
 
-libssl1.1-1.1.1n-r0 license:
+libssl1.1-1.1.1o-r0 license:
 OpenSSL
 
 ```
@@ -198,16 +198,16 @@ OpenSSL
 ### `apk` package: `mailcap`
 
 ```console
-mailcap-2.1.52-r0 description:
+mailcap-2.1.53-r0 description:
 Helper application and MIME type associations for file types
 
-mailcap-2.1.52-r0 webpage:
+mailcap-2.1.53-r0 webpage:
 https://pagure.io/mailcap
 
-mailcap-2.1.52-r0 installed size:
-80 KiB
+mailcap-2.1.53-r0 installed size:
+84 KiB
 
-mailcap-2.1.52-r0 license:
+mailcap-2.1.53-r0 license:
 Public-Domain and MIT
 
 ```
@@ -215,16 +215,16 @@ Public-Domain and MIT
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.2-r7 description:
+musl-1.2.3-r0 description:
 the musl c library (libc) implementation
 
-musl-1.2.2-r7 webpage:
+musl-1.2.3-r0 webpage:
 https://musl.libc.org/
 
-musl-1.2.2-r7 installed size:
+musl-1.2.3-r0 installed size:
 608 KiB
 
-musl-1.2.2-r7 license:
+musl-1.2.3-r0 license:
 MIT
 
 ```
@@ -232,16 +232,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.2-r7 description:
+musl-utils-1.2.3-r0 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.2-r7 webpage:
+musl-utils-1.2.3-r0 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.2-r7 installed size:
-140 KiB
+musl-utils-1.2.3-r0 installed size:
+132 KiB
 
-musl-utils-1.2.2-r7 license:
+musl-utils-1.2.3-r0 license:
 MIT BSD GPL2+
 
 ```
@@ -249,16 +249,16 @@ MIT BSD GPL2+
 ### `apk` package: `scanelf`
 
 ```console
-scanelf-1.3.3-r0 description:
+scanelf-1.3.4-r0 description:
 Scan ELF binaries for stuff
 
-scanelf-1.3.3-r0 webpage:
+scanelf-1.3.4-r0 webpage:
 https://wiki.gentoo.org/wiki/Hardened/PaX_Utilities
 
-scanelf-1.3.3-r0 installed size:
+scanelf-1.3.4-r0 installed size:
 92 KiB
 
-scanelf-1.3.3-r0 license:
+scanelf-1.3.4-r0 license:
 GPL-2.0-only
 
 ```
@@ -266,16 +266,16 @@ GPL-2.0-only
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.34.1-r5 description:
+ssl_client-1.35.0-r13 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.34.1-r5 webpage:
+ssl_client-1.35.0-r13 webpage:
 https://busybox.net/
 
-ssl_client-1.34.1-r5 installed size:
+ssl_client-1.35.0-r13 installed size:
 28 KiB
 
-ssl_client-1.34.1-r5 license:
+ssl_client-1.35.0-r13 license:
 GPL-2.0-only
 
 ```
@@ -283,16 +283,16 @@ GPL-2.0-only
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.2.12-r0 description:
+zlib-1.2.12-r1 description:
 A compression/decompression Library
 
-zlib-1.2.12-r0 webpage:
+zlib-1.2.12-r1 webpage:
 https://zlib.net/
 
-zlib-1.2.12-r0 installed size:
+zlib-1.2.12-r1 installed size:
 108 KiB
 
-zlib-1.2.12-r0 license:
+zlib-1.2.12-r1 license:
 Zlib
 
 ```

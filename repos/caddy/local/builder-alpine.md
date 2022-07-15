@@ -1,19 +1,19 @@
-# `caddy:2.5.1-builder-alpine`
+# `caddy:2.5.2-builder-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c80070b3eb6003cffb12fd895325316a7ad91a7f7116a69ce3970897ef0742d3`
-- Created: `2022-06-01T22:49:18.129816833Z`
-- Virtual Size: ~ 344.32 Mb  
+- Image ID: `sha256:b7a1b98417a84b3a24a165471d7d84c070cc923dac2d4c9d1f893e347b24d418`
+- Created: `2022-07-13T07:47:04.813488661Z`
+- Virtual Size: ~ 344.48 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
 - Environment:
   - `PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GOLANG_VERSION=1.18.3`
+  - `GOLANG_VERSION=1.18.4`
   - `GOPATH=/go`
   - `XCADDY_VERSION=v0.3.0`
-  - `CADDY_VERSION=v2.5.1`
+  - `CADDY_VERSION=v2.5.2`
   - `XCADDY_SKIP_CLEANUP=1`
 
 ## `apk` (`.apk`-based packages)
@@ -174,16 +174,16 @@ MIT
 ### `apk` package: `git`
 
 ```console
-git-2.36.1-r0 description:
+git-2.36.2-r0 description:
 Distributed version control system
 
-git-2.36.1-r0 webpage:
+git-2.36.2-r0 webpage:
 https://www.git-scm.com/
 
-git-2.36.1-r0 installed size:
+git-2.36.2-r0 installed size:
 10 MiB
 
-git-2.36.1-r0 license:
+git-2.36.2-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -225,16 +225,16 @@ OpenSSL
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.83.1-r1 description:
+libcurl-7.83.1-r2 description:
 The multiprotocol file transfer library
 
-libcurl-7.83.1-r1 webpage:
+libcurl-7.83.1-r2 webpage:
 https://curl.se/
 
-libcurl-7.83.1-r1 installed size:
-508 KiB
+libcurl-7.83.1-r2 installed size:
+512 KiB
 
-libcurl-7.83.1-r1 license:
+libcurl-7.83.1-r2 license:
 curl
 
 ```
@@ -310,16 +310,16 @@ MIT
 ### `apk` package: `pcre2`
 
 ```console
-pcre2-10.39-r0 description:
+pcre2-10.40-r0 description:
 Perl-compatible regular expression library
 
-pcre2-10.39-r0 webpage:
+pcre2-10.40-r0 webpage:
 https://pcre.org/
 
-pcre2-10.39-r0 installed size:
-656 KiB
+pcre2-10.40-r0 installed size:
+672 KiB
 
-pcre2-10.39-r0 license:
+pcre2-10.40-r0 license:
 BSD-3-Clause
 
 ```
