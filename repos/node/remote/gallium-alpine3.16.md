@@ -1,7 +1,7 @@
 ## `node:gallium-alpine3.16`
 
 ```console
-$ docker pull node@sha256:20cdb8322c05db92df7e40d9227fe785034ebd9195f07cc5c05c96f0a6a781a5
+$ docker pull node@sha256:da32af0cf608622b1550678b2552b7d997def7d0ada00e0eca0166ed2ea42186
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -122,54 +122,54 @@ CMD ["node"]
 ### `node:gallium-alpine3.16` - linux; arm variant v7
 
 ```console
-$ docker pull node@sha256:43bc024bc664fe63856b9ee8d69a98e66228f622b4453e28eef1881fb558c002
+$ docker pull node@sha256:9c6112ee0af38f64c68354aebe1f52824da37227e574dcda72e74f760ad527c6
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.1 MB (39069856 bytes)**  
+-	Total Size: **39.1 MB (39070847 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:da83b6a76a27f96b8cf30edfe3db04b3ad3a18c81dfa51cb54623deb751df734`
+-	Image ID: `sha256:af808e2d3b45b749ff307ff13416c3aabd96e76d0c99e0f006f8f099fc0ccd3a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node"]`
 
 ```dockerfile
-# Mon, 23 May 2022 18:57:46 GMT
-ADD file:72698cc08524b911ebaacf992490707e5a951ddd2fe6edb3fb598e9dc7155049 in / 
-# Mon, 23 May 2022 18:57:47 GMT
+# Mon, 18 Jul 2022 21:24:47 GMT
+ADD file:68590e866bc6db27ad54d23de7dd275d0389cb86e4e6291a1243fcc234f2f7a1 in / 
+# Mon, 18 Jul 2022 21:24:47 GMT
 CMD ["/bin/sh"]
-# Fri, 08 Jul 2022 19:46:37 GMT
+# Tue, 19 Jul 2022 03:41:51 GMT
 ENV NODE_VERSION=16.16.0
-# Fri, 08 Jul 2022 20:16:25 GMT
+# Tue, 19 Jul 2022 04:03:26 GMT
 RUN addgroup -g 1000 node     && adduser -u 1000 -G node -s /bin/sh -D node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         curl     && ARCH= && alpineArch="$(apk --print-arch)"       && case "${alpineArch##*-}" in         x86_64)           ARCH='x64'           CHECKSUM="2b74f0baaaa931ffc46573874a7d7435b642d28f1f283104ac297499fba99f0a"           ;;         *) ;;       esac   && if [ -n "${CHECKSUM}" ]; then     set -eu;     curl -fsSLO --compressed "https://unofficial-builds.nodejs.org/download/release/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz";     echo "$CHECKSUM  node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" | sha256sum -c -       && tar -xJf "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" -C /usr/local --strip-components=1 --no-same-owner       && ln -s /usr/local/bin/node /usr/local/bin/nodejs;   else     echo "Building from source"     && apk add --no-cache --virtual .build-deps-full         binutils-gold         g++         gcc         gnupg         libgcc         linux-headers         make         python3     && for key in       4ED778F539E3634C779C87C6D7062848A1AB005C       141F07595B7B3FFE74309A937405533BE57C7D57       94AE36675C464D64BAFA68DD7434390BDBE9B9C5       74F12602B6F1C4E913FAA37AD3A89613643B6201       71DCFD284A79C3B38668286BC97EC7A07EDE3FC1       61FC681DFB92A079F1685E77973F295594EC4689       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       DD8F2338BAE7501E3DD5AC78C273792F7D83545D       A48C2BEE680E841632CD4E44F07496B3EB3C1762       108F52B48DB57BB0CC439B2997B01419BD92F80A       B9E2F5981AA6E0CD28160D9FF13993A75599653C     ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && grep " node-v$NODE_VERSION.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.xz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN) V=     && make install     && apk del .build-deps-full     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt;   fi   && rm -f "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz"   && apk del .build-deps   && node --version   && npm --version
-# Fri, 08 Jul 2022 20:16:27 GMT
+# Tue, 19 Jul 2022 04:03:27 GMT
 ENV YARN_VERSION=1.22.19
-# Fri, 08 Jul 2022 20:16:36 GMT
+# Tue, 19 Jul 2022 04:03:36 GMT
 RUN apk add --no-cache --virtual .build-deps-yarn curl gnupg tar   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apk del .build-deps-yarn   && yarn --version
-# Fri, 08 Jul 2022 20:16:37 GMT
+# Tue, 19 Jul 2022 04:03:37 GMT
 COPY file:4d192565a7220e135cab6c77fbc1c73211b69f3d9fb37e62857b2c6eb9363d51 in /usr/local/bin/ 
-# Fri, 08 Jul 2022 20:16:38 GMT
+# Tue, 19 Jul 2022 04:03:37 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 08 Jul 2022 20:16:39 GMT
+# Tue, 19 Jul 2022 04:03:38 GMT
 CMD ["node"]
 ```
 
 -	Layers:
-	-	`sha256:6366ba92f08e2418e90171f1e34bd86ecd50fdc95953b3f33b8943c143518eca`  
-		Last Modified: Mon, 23 May 2022 18:59:17 GMT  
-		Size: 2.4 MB (2411648 bytes)  
+	-	`sha256:a6b45ace95f42a930d15c33679ab9c85d46019b7e73954cadc73bb9ba176509b`  
+		Last Modified: Mon, 18 Jul 2022 19:08:56 GMT  
+		Size: 2.4 MB (2412307 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f4767b96c8d106908799712c40d6f1f81051a6bd00761be078cbe02376241394`  
-		Last Modified: Fri, 08 Jul 2022 21:21:52 GMT  
-		Size: 34.2 MB (34235256 bytes)  
+	-	`sha256:066c131989181f2d851c293a8947b866e8eaee7de555d0170c00f2e447417172`  
+		Last Modified: Tue, 19 Jul 2022 04:31:07 GMT  
+		Size: 34.2 MB (34235469 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d94c96c37a744c70d1e92b612ff2027ce4abfc67449992cb0b5331267e09cce0`  
-		Last Modified: Fri, 08 Jul 2022 21:21:32 GMT  
-		Size: 2.4 MB (2422503 bytes)  
+	-	`sha256:54984460d888cf5e1ee6035a5b583533adb2a67a6bce78e284002701ddf60ed0`  
+		Last Modified: Tue, 19 Jul 2022 04:30:48 GMT  
+		Size: 2.4 MB (2422624 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1bf202e057e4c6028a88f5fa31141e9bfab6d38ffea3d08eeddca9384a8384a6`  
-		Last Modified: Fri, 08 Jul 2022 21:21:30 GMT  
-		Size: 449.0 B  
+	-	`sha256:2561f28a38d0e8f36a688a838057eab11fcad915827b2d58d27aee8ff408f9f3`  
+		Last Modified: Tue, 19 Jul 2022 04:30:46 GMT  
+		Size: 447.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `node:gallium-alpine3.16` - linux; arm64 variant v8
@@ -228,54 +228,54 @@ CMD ["node"]
 ### `node:gallium-alpine3.16` - linux; ppc64le
 
 ```console
-$ docker pull node@sha256:5c8037993dd5dce5f4086bed56172f61d523f8e25bd2624520001a749407bf7b
+$ docker pull node@sha256:a9e5488f618831048651c15898b1acef591039e7715222d06dbd7e779da76fc7
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **43.3 MB (43328867 bytes)**  
+-	Total Size: **43.3 MB (43328289 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ddebf72c9ed481e8a189741676b7ba2618d9a813948cb7f41000bb9cac84e4c4`
+-	Image ID: `sha256:0f02480f5ff25cf817dc872823f01122901906b786c54af7849b0ca7e2bef75e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node"]`
 
 ```dockerfile
-# Mon, 23 May 2022 19:16:51 GMT
-ADD file:6a5450c8a7cee3ceda59e7cb350c54df4139b0f7b7cf49c8b31bb9c01646c3cd in / 
-# Mon, 23 May 2022 19:16:53 GMT
+# Mon, 18 Jul 2022 21:29:30 GMT
+ADD file:69e4080f15f54e2d8f8aa25fdcba9c01dde149d43592edd5023106675e54a769 in / 
+# Mon, 18 Jul 2022 21:29:31 GMT
 CMD ["/bin/sh"]
-# Fri, 08 Jul 2022 20:43:25 GMT
+# Tue, 19 Jul 2022 02:15:25 GMT
 ENV NODE_VERSION=16.16.0
-# Fri, 08 Jul 2022 21:17:03 GMT
+# Tue, 19 Jul 2022 02:48:56 GMT
 RUN addgroup -g 1000 node     && adduser -u 1000 -G node -s /bin/sh -D node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         curl     && ARCH= && alpineArch="$(apk --print-arch)"       && case "${alpineArch##*-}" in         x86_64)           ARCH='x64'           CHECKSUM="2b74f0baaaa931ffc46573874a7d7435b642d28f1f283104ac297499fba99f0a"           ;;         *) ;;       esac   && if [ -n "${CHECKSUM}" ]; then     set -eu;     curl -fsSLO --compressed "https://unofficial-builds.nodejs.org/download/release/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz";     echo "$CHECKSUM  node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" | sha256sum -c -       && tar -xJf "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" -C /usr/local --strip-components=1 --no-same-owner       && ln -s /usr/local/bin/node /usr/local/bin/nodejs;   else     echo "Building from source"     && apk add --no-cache --virtual .build-deps-full         binutils-gold         g++         gcc         gnupg         libgcc         linux-headers         make         python3     && for key in       4ED778F539E3634C779C87C6D7062848A1AB005C       141F07595B7B3FFE74309A937405533BE57C7D57       94AE36675C464D64BAFA68DD7434390BDBE9B9C5       74F12602B6F1C4E913FAA37AD3A89613643B6201       71DCFD284A79C3B38668286BC97EC7A07EDE3FC1       61FC681DFB92A079F1685E77973F295594EC4689       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       DD8F2338BAE7501E3DD5AC78C273792F7D83545D       A48C2BEE680E841632CD4E44F07496B3EB3C1762       108F52B48DB57BB0CC439B2997B01419BD92F80A       B9E2F5981AA6E0CD28160D9FF13993A75599653C     ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && grep " node-v$NODE_VERSION.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.xz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN) V=     && make install     && apk del .build-deps-full     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt;   fi   && rm -f "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz"   && apk del .build-deps   && node --version   && npm --version
-# Fri, 08 Jul 2022 21:17:14 GMT
+# Tue, 19 Jul 2022 02:49:07 GMT
 ENV YARN_VERSION=1.22.19
-# Fri, 08 Jul 2022 21:17:26 GMT
+# Tue, 19 Jul 2022 02:49:28 GMT
 RUN apk add --no-cache --virtual .build-deps-yarn curl gnupg tar   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apk del .build-deps-yarn   && yarn --version
-# Fri, 08 Jul 2022 21:17:27 GMT
+# Tue, 19 Jul 2022 02:49:30 GMT
 COPY file:4d192565a7220e135cab6c77fbc1c73211b69f3d9fb37e62857b2c6eb9363d51 in /usr/local/bin/ 
-# Fri, 08 Jul 2022 21:17:29 GMT
+# Tue, 19 Jul 2022 02:49:33 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 08 Jul 2022 21:17:31 GMT
+# Tue, 19 Jul 2022 02:49:36 GMT
 CMD ["node"]
 ```
 
 -	Layers:
-	-	`sha256:d3deabf2a506ef6f5fa7c2a68bf27047574cef9908b30a97ff2d01ae539b089a`  
-		Last Modified: Mon, 23 May 2022 19:09:13 GMT  
-		Size: 2.8 MB (2789745 bytes)  
+	-	`sha256:602896d442490cd3fbb6599f0f862d3673b7cd58eca3ac842b8e09bf8d012443`  
+		Last Modified: Mon, 18 Jul 2022 19:09:09 GMT  
+		Size: 2.8 MB (2789923 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:977fcbe6acca90018696a50d0d87097bf047127353816bb3152468883922ddcc`  
-		Last Modified: Fri, 08 Jul 2022 22:40:00 GMT  
-		Size: 38.1 MB (38108477 bytes)  
+	-	`sha256:b78b728f7c631279bc33bac4abab42f820258c002c68a7538922562025e4d398`  
+		Last Modified: Tue, 19 Jul 2022 03:21:09 GMT  
+		Size: 38.1 MB (38107709 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b24d03c974f96a2a08577a3f94d9920979da720a048fd4d38e941d5606bda7fd`  
-		Last Modified: Fri, 08 Jul 2022 22:39:52 GMT  
-		Size: 2.4 MB (2430195 bytes)  
+	-	`sha256:24bb3b44cab9c049390096968823f494c2aba67e93bc3a39a006bdef6368ee0d`  
+		Last Modified: Tue, 19 Jul 2022 03:21:02 GMT  
+		Size: 2.4 MB (2430212 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8313f84f1d075e4f935fd3dafe88339b6607748f7d47ff753277f850e1c9f0d`  
-		Last Modified: Fri, 08 Jul 2022 22:39:51 GMT  
-		Size: 450.0 B  
+	-	`sha256:3c29b91071bf571eb8f378635f1af2193d6eb5e82ec407eba7cda1bb3152d0dc`  
+		Last Modified: Tue, 19 Jul 2022 03:21:01 GMT  
+		Size: 445.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `node:gallium-alpine3.16` - linux; s390x
