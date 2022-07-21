@@ -1,10 +1,10 @@
-# `drupal:9.4.2-php8.0-fpm-alpine3.16`
+# `drupal:9.4.3-php8.0-fpm-alpine3.16`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a88991c2b38086c3f9b4f22c3065df40ea836a102247375d4a04c4fbbaff1ee0`
-- Created: `2022-07-08T01:06:14.944484748Z`
-- Virtual Size: ~ 170.52 Mb  
+- Image ID: `sha256:74e1317c10cd0ebacf7335a8ff805d83e51724dfbe398de1dedc0de50df6c52d`
+- Created: `2022-07-20T23:34:50.38340845Z`
+- Virtual Size: ~ 166.59 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -21,23 +21,23 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.0.21.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.0.21.tar.xz.asc`
   - `PHP_SHA256=e87a598f157e0cf0606e64382bb91c8b30c47d4a0fc96b2c17ad547a27869b3b`
-  - `DRUPAL_VERSION=9.4.2`
+  - `DRUPAL_VERSION=9.4.3`
 
 ## `apk` (`.apk`-based packages)
 
 ### `apk` package: `alpine-baselayout`
 
 ```console
-alpine-baselayout-3.2.0-r20 description:
+alpine-baselayout-3.2.0-r22 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-3.2.0-r20 webpage:
+alpine-baselayout-3.2.0-r22 webpage:
 https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
-alpine-baselayout-3.2.0-r20 installed size:
+alpine-baselayout-3.2.0-r22 installed size:
 340 KiB
 
-alpine-baselayout-3.2.0-r20 license:
+alpine-baselayout-3.2.0-r22 license:
 GPL-2.0-only
 
 ```
@@ -45,16 +45,16 @@ GPL-2.0-only
 ### `apk` package: `alpine-baselayout-data`
 
 ```console
-alpine-baselayout-data-3.2.0-r20 description:
+alpine-baselayout-data-3.2.0-r22 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-data-3.2.0-r20 webpage:
+alpine-baselayout-data-3.2.0-r22 webpage:
 https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
-alpine-baselayout-data-3.2.0-r20 installed size:
+alpine-baselayout-data-3.2.0-r22 installed size:
 72 KiB
 
-alpine-baselayout-data-3.2.0-r20 license:
+alpine-baselayout-data-3.2.0-r22 license:
 GPL-2.0-only
 
 ```
@@ -130,16 +130,16 @@ MIT
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.35.0-r13 description:
+busybox-1.35.0-r15 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.35.0-r13 webpage:
+busybox-1.35.0-r15 webpage:
 https://busybox.net/
 
-busybox-1.35.0-r13 installed size:
+busybox-1.35.0-r15 installed size:
 936 KiB
 
-busybox-1.35.0-r13 license:
+busybox-1.35.0-r15 license:
 GPL-2.0-only
 
 ```
@@ -181,16 +181,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-7.83.1-r1 description:
+curl-7.83.1-r2 description:
 URL retrival utility and library
 
-curl-7.83.1-r1 webpage:
+curl-7.83.1-r2 webpage:
 https://curl.se/
 
-curl-7.83.1-r1 installed size:
+curl-7.83.1-r2 installed size:
 256 KiB
 
-curl-7.83.1-r1 license:
+curl-7.83.1-r2 license:
 curl
 
 ```
@@ -402,16 +402,16 @@ OpenSSL
 ### `apk` package: `libwebp`
 
 ```console
-libwebp-1.2.2-r0 description:
+libwebp-1.2.3-r0 description:
 Libraries for working with WebP images
 
-libwebp-1.2.2-r0 webpage:
+libwebp-1.2.3-r0 webpage:
 https://developers.google.com/speed/webp
 
-libwebp-1.2.2-r0 installed size:
-580 KiB
+libwebp-1.2.3-r0 installed size:
+584 KiB
 
-libwebp-1.2.2-r0 license:
+libwebp-1.2.3-r0 license:
 BSD-3-Clause
 
 ```
@@ -555,16 +555,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-1.1.1o-r0 description:
+openssl-1.1.1q-r0 description:
 toolkit for transport layer security (TLS) - version 1.1
 
-openssl-1.1.1o-r0 webpage:
+openssl-1.1.1q-r0 webpage:
 https://www.openssl.org/
 
-openssl-1.1.1o-r0 installed size:
+openssl-1.1.1q-r0 installed size:
 660 KiB
 
-openssl-1.1.1o-r0 license:
+openssl-1.1.1q-r0 license:
 OpenSSL
 
 ```
@@ -623,16 +623,16 @@ blessing
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.35.0-r13 description:
+ssl_client-1.35.0-r15 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.35.0-r13 webpage:
+ssl_client-1.35.0-r15 webpage:
 https://busybox.net/
 
-ssl_client-1.35.0-r13 installed size:
+ssl_client-1.35.0-r15 installed size:
 28 KiB
 
-ssl_client-1.35.0-r13 license:
+ssl_client-1.35.0-r15 license:
 GPL-2.0-only
 
 ```
