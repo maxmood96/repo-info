@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9ff9e1dd68f646b4e44eaf33f4855e48f9c5770fcddfd9418fc369bdaf66dd82`
-- Created: `2022-07-12T02:38:04.628769071Z`
-- Virtual Size: ~ 444.69 Mb  
+- Image ID: `sha256:3f53acab2c252122f6977c695f52d1c1f5d606bbde191e0f8c2e44f6356110d7`
+- Created: `2022-07-20T05:29:03.158576051Z`
+- Virtual Size: ~ 441.03 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -200,16 +200,16 @@ MIT
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.34.1-r5 description:
+busybox-1.34.1-r7 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.34.1-r5 webpage:
+busybox-1.34.1-r7 webpage:
 https://busybox.net/
 
-busybox-1.34.1-r5 installed size:
+busybox-1.34.1-r7 installed size:
 924 KiB
 
-busybox-1.34.1-r5 license:
+busybox-1.34.1-r7 license:
 GPL-2.0-only
 
 ```
@@ -506,16 +506,16 @@ GPL
 ### `apk` package: `git`
 
 ```console
-git-2.34.2-r0 description:
+git-2.34.4-r0 description:
 Distributed version control system
 
-git-2.34.2-r0 webpage:
+git-2.34.4-r0 webpage:
 https://www.git-scm.com/
 
-git-2.34.2-r0 installed size:
+git-2.34.4-r0 installed size:
 10 MiB
 
-git-2.34.2-r0 license:
+git-2.34.4-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -1475,16 +1475,16 @@ MIT BSD GPL2+
 ### `apk` package: `ncurses-libs`
 
 ```console
-ncurses-libs-6.3_p20211120-r0 description:
+ncurses-libs-6.3_p20211120-r1 description:
 Ncurses libraries
 
-ncurses-libs-6.3_p20211120-r0 webpage:
+ncurses-libs-6.3_p20211120-r1 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-libs-6.3_p20211120-r0 installed size:
-500 KiB
+ncurses-libs-6.3_p20211120-r1 installed size:
+504 KiB
 
-ncurses-libs-6.3_p20211120-r0 license:
+ncurses-libs-6.3_p20211120-r1 license:
 MIT
 
 ```
@@ -1492,16 +1492,16 @@ MIT
 ### `apk` package: `ncurses-terminfo-base`
 
 ```console
-ncurses-terminfo-base-6.3_p20211120-r0 description:
+ncurses-terminfo-base-6.3_p20211120-r1 description:
 Descriptions of common terminals
 
-ncurses-terminfo-base-6.3_p20211120-r0 webpage:
+ncurses-terminfo-base-6.3_p20211120-r1 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-terminfo-base-6.3_p20211120-r0 installed size:
+ncurses-terminfo-base-6.3_p20211120-r1 installed size:
 216 KiB
 
-ncurses-terminfo-base-6.3_p20211120-r0 license:
+ncurses-terminfo-base-6.3_p20211120-r1 license:
 MIT
 
 ```
@@ -1917,16 +1917,16 @@ blessing
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.34.1-r5 description:
+ssl_client-1.34.1-r7 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.34.1-r5 webpage:
+ssl_client-1.34.1-r7 webpage:
 https://busybox.net/
 
-ssl_client-1.34.1-r5 installed size:
+ssl_client-1.34.1-r7 installed size:
 28 KiB
 
-ssl_client-1.34.1-r5 license:
+ssl_client-1.34.1-r7 license:
 GPL-2.0-only
 
 ```
@@ -2138,16 +2138,16 @@ MIT
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.2.12-r0 description:
+zlib-1.2.12-r1 description:
 A compression/decompression Library
 
-zlib-1.2.12-r0 webpage:
+zlib-1.2.12-r1 webpage:
 https://zlib.net/
 
-zlib-1.2.12-r0 installed size:
+zlib-1.2.12-r1 installed size:
 108 KiB
 
-zlib-1.2.12-r0 license:
+zlib-1.2.12-r1 license:
 Zlib
 
 ```
@@ -2155,16 +2155,16 @@ Zlib
 ### `apk` package: `zlib-dev`
 
 ```console
-zlib-dev-1.2.12-r0 description:
+zlib-dev-1.2.12-r1 description:
 A compression/decompression Library (development files)
 
-zlib-dev-1.2.12-r0 webpage:
+zlib-dev-1.2.12-r1 webpage:
 https://zlib.net/
 
-zlib-dev-1.2.12-r0 installed size:
+zlib-dev-1.2.12-r1 installed size:
 140 KiB
 
-zlib-dev-1.2.12-r0 license:
+zlib-dev-1.2.12-r1 license:
 Zlib
 
 ```
