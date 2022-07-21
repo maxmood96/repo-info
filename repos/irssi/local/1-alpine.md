@@ -1,9 +1,9 @@
-# `irssi:1.4.1-alpine`
+# `irssi:1.4.2-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7b51295eeb0956aa8e84c402e47d5228790cf42a8e9f0761c2cc7c59a09e6afd`
-- Created: `2022-06-13T19:51:00.995417381Z`
+- Image ID: `sha256:28f85f9670eee79491099fe67fa0e6ffc8d1f9222f94eac0129863c809506224`
+- Created: `2022-07-19T00:23:58.97174619Z`
 - Virtual Size: ~ 54.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,23 +12,23 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `HOME=/home/user`
   - `LANG=C.UTF-8`
-  - `IRSSI_VERSION=1.4.1`
+  - `IRSSI_VERSION=1.4.2`
 
 ## `apk` (`.apk`-based packages)
 
 ### `apk` package: `alpine-baselayout`
 
 ```console
-alpine-baselayout-3.2.0-r20 description:
+alpine-baselayout-3.2.0-r22 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-3.2.0-r20 webpage:
+alpine-baselayout-3.2.0-r22 webpage:
 https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
-alpine-baselayout-3.2.0-r20 installed size:
+alpine-baselayout-3.2.0-r22 installed size:
 340 KiB
 
-alpine-baselayout-3.2.0-r20 license:
+alpine-baselayout-3.2.0-r22 license:
 GPL-2.0-only
 
 ```
@@ -36,16 +36,16 @@ GPL-2.0-only
 ### `apk` package: `alpine-baselayout-data`
 
 ```console
-alpine-baselayout-data-3.2.0-r20 description:
+alpine-baselayout-data-3.2.0-r22 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-data-3.2.0-r20 webpage:
+alpine-baselayout-data-3.2.0-r22 webpage:
 https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
-alpine-baselayout-data-3.2.0-r20 installed size:
+alpine-baselayout-data-3.2.0-r22 installed size:
 72 KiB
 
-alpine-baselayout-data-3.2.0-r20 license:
+alpine-baselayout-data-3.2.0-r22 license:
 GPL-2.0-only
 
 ```
@@ -87,16 +87,16 @@ GPL-2.0-only
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.35.0-r13 description:
+busybox-1.35.0-r15 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.35.0-r13 webpage:
+busybox-1.35.0-r15 webpage:
 https://busybox.net/
 
-busybox-1.35.0-r13 installed size:
+busybox-1.35.0-r15 installed size:
 936 KiB
 
-busybox-1.35.0-r13 license:
+busybox-1.35.0-r15 license:
 GPL-2.0-only
 
 ```
@@ -206,16 +206,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1o-r0 description:
+libcrypto1.1-1.1.1q-r0 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1o-r0 webpage:
+libcrypto1.1-1.1.1q-r0 webpage:
 https://www.openssl.org/
 
-libcrypto1.1-1.1.1o-r0 installed size:
+libcrypto1.1-1.1.1q-r0 installed size:
 2708 KiB
 
-libcrypto1.1-1.1.1o-r0 license:
+libcrypto1.1-1.1.1q-r0 license:
 OpenSSL
 
 ```
@@ -274,16 +274,16 @@ GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1o-r0 description:
+libssl1.1-1.1.1q-r0 description:
 SSL shared libraries
 
-libssl1.1-1.1.1o-r0 webpage:
+libssl1.1-1.1.1q-r0 webpage:
 https://www.openssl.org/
 
-libssl1.1-1.1.1o-r0 installed size:
+libssl1.1-1.1.1q-r0 installed size:
 528 KiB
 
-libssl1.1-1.1.1o-r0 license:
+libssl1.1-1.1.1q-r0 license:
 OpenSSL
 
 ```
@@ -767,16 +767,16 @@ GPL-2.0-only
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.35.0-r13 description:
+ssl_client-1.35.0-r15 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.35.0-r13 webpage:
+ssl_client-1.35.0-r15 webpage:
 https://busybox.net/
 
-ssl_client-1.35.0-r13 installed size:
+ssl_client-1.35.0-r15 installed size:
 28 KiB
 
-ssl_client-1.35.0-r13 license:
+ssl_client-1.35.0-r15 license:
 GPL-2.0-only
 
 ```
