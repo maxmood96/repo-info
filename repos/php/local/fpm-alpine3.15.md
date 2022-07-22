@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:31af23f7c729c6bbd4682f76c7040f6af4bba0f0a06d19fa9dcfbfb3f00c3fc6`
-- Created: `2022-07-07T23:06:42.970149473Z`
-- Virtual Size: ~ 77.26 Mb  
+- Image ID: `sha256:d661e6067780ed47979a82c29cc520109eb349596363d048cf82f3b513f1ffe5`
+- Created: `2022-07-20T00:17:33.734497325Z`
+- Virtual Size: ~ 73.31 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -112,16 +112,16 @@ MIT
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.34.1-r5 description:
+busybox-1.34.1-r7 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.34.1-r5 webpage:
+busybox-1.34.1-r7 webpage:
 https://busybox.net/
 
-busybox-1.34.1-r5 installed size:
+busybox-1.34.1-r7 installed size:
 924 KiB
 
-busybox-1.34.1-r5 license:
+busybox-1.34.1-r7 license:
 GPL-2.0-only
 
 ```
@@ -163,16 +163,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-7.80.0-r0 description:
+curl-7.80.0-r2 description:
 URL retrival utility and library
 
-curl-7.80.0-r0 webpage:
+curl-7.80.0-r2 webpage:
 https://curl.se/
 
-curl-7.80.0-r0 installed size:
+curl-7.80.0-r2 installed size:
 248 KiB
 
-curl-7.80.0-r0 license:
+curl-7.80.0-r2 license:
 MIT
 
 ```
@@ -384,16 +384,16 @@ MIT BSD GPL2+
 ### `apk` package: `ncurses-libs`
 
 ```console
-ncurses-libs-6.3_p20211120-r0 description:
+ncurses-libs-6.3_p20211120-r1 description:
 Ncurses libraries
 
-ncurses-libs-6.3_p20211120-r0 webpage:
+ncurses-libs-6.3_p20211120-r1 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-libs-6.3_p20211120-r0 installed size:
-500 KiB
+ncurses-libs-6.3_p20211120-r1 installed size:
+504 KiB
 
-ncurses-libs-6.3_p20211120-r0 license:
+ncurses-libs-6.3_p20211120-r1 license:
 MIT
 
 ```
@@ -401,16 +401,16 @@ MIT
 ### `apk` package: `ncurses-terminfo-base`
 
 ```console
-ncurses-terminfo-base-6.3_p20211120-r0 description:
+ncurses-terminfo-base-6.3_p20211120-r1 description:
 Descriptions of common terminals
 
-ncurses-terminfo-base-6.3_p20211120-r0 webpage:
+ncurses-terminfo-base-6.3_p20211120-r1 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-terminfo-base-6.3_p20211120-r0 installed size:
+ncurses-terminfo-base-6.3_p20211120-r1 installed size:
 216 KiB
 
-ncurses-terminfo-base-6.3_p20211120-r0 license:
+ncurses-terminfo-base-6.3_p20211120-r1 license:
 MIT
 
 ```
@@ -452,16 +452,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-1.1.1n-r0 description:
+openssl-1.1.1q-r0 description:
 toolkit for transport layer security (TLS) - version 1.1
 
-openssl-1.1.1n-r0 webpage:
+openssl-1.1.1q-r0 webpage:
 https://www.openssl.org/
 
-openssl-1.1.1n-r0 installed size:
+openssl-1.1.1q-r0 installed size:
 664 KiB
 
-openssl-1.1.1n-r0 license:
+openssl-1.1.1q-r0 license:
 OpenSSL
 
 ```
@@ -520,16 +520,16 @@ blessing
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.34.1-r5 description:
+ssl_client-1.34.1-r7 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.34.1-r5 webpage:
+ssl_client-1.34.1-r7 webpage:
 https://busybox.net/
 
-ssl_client-1.34.1-r5 installed size:
+ssl_client-1.34.1-r7 installed size:
 28 KiB
 
-ssl_client-1.34.1-r5 license:
+ssl_client-1.34.1-r7 license:
 GPL-2.0-only
 
 ```
@@ -554,16 +554,16 @@ GPL-3.0-or-later
 ### `apk` package: `xz`
 
 ```console
-xz-5.2.5-r0 description:
+xz-5.2.5-r1 description:
 Library and CLI tools for XZ and LZMA compressed files
 
-xz-5.2.5-r0 webpage:
+xz-5.2.5-r1 webpage:
 https://tukaani.org/xz
 
-xz-5.2.5-r0 installed size:
+xz-5.2.5-r1 installed size:
 160 KiB
 
-xz-5.2.5-r0 license:
+xz-5.2.5-r1 license:
 GPL-2.0-or-later AND Public-Domain AND LGPL-2.1-or-later
 
 ```

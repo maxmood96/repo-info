@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f92a21f9f58cd60472089fc7092eaecacc2403fcda0b791385b09630aa9806b7`
-- Created: `2022-06-09T23:34:57.871034122Z`
-- Virtual Size: ~ 87.39 Mb  
+- Image ID: `sha256:7c8876678052ec8149f0c23cdd6650cd29383989fe126e7689e937a4b179d44a`
+- Created: `2022-07-20T00:37:59.789804878Z`
+- Virtual Size: ~ 83.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -112,16 +112,16 @@ MIT
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.34.1-r5 description:
+busybox-1.34.1-r7 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.34.1-r5 webpage:
+busybox-1.34.1-r7 webpage:
 https://busybox.net/
 
-busybox-1.34.1-r5 installed size:
+busybox-1.34.1-r7 installed size:
 924 KiB
 
-busybox-1.34.1-r5 license:
+busybox-1.34.1-r7 license:
 GPL-2.0-only
 
 ```
@@ -163,16 +163,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-7.80.0-r0 description:
+curl-7.80.0-r2 description:
 URL retrival utility and library
 
-curl-7.80.0-r0 webpage:
+curl-7.80.0-r2 webpage:
 https://curl.se/
 
-curl-7.80.0-r0 installed size:
+curl-7.80.0-r2 installed size:
 248 KiB
 
-curl-7.80.0-r0 license:
+curl-7.80.0-r2 license:
 MIT
 
 ```
@@ -231,16 +231,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1o-r0 description:
+libcrypto1.1-1.1.1q-r0 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1o-r0 webpage:
+libcrypto1.1-1.1.1q-r0 webpage:
 https://www.openssl.org/
 
-libcrypto1.1-1.1.1o-r0 installed size:
+libcrypto1.1-1.1.1q-r0 installed size:
 2676 KiB
 
-libcrypto1.1-1.1.1o-r0 license:
+libcrypto1.1-1.1.1q-r0 license:
 OpenSSL
 
 ```
@@ -248,16 +248,16 @@ OpenSSL
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.80.0-r1 description:
+libcurl-7.80.0-r2 description:
 The multiprotocol file transfer library
 
-libcurl-7.80.0-r1 webpage:
+libcurl-7.80.0-r2 webpage:
 https://curl.se/
 
-libcurl-7.80.0-r1 installed size:
+libcurl-7.80.0-r2 installed size:
 504 KiB
 
-libcurl-7.80.0-r1 license:
+libcurl-7.80.0-r2 license:
 MIT
 
 ```
@@ -299,16 +299,16 @@ ISC
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1o-r0 description:
+libssl1.1-1.1.1q-r0 description:
 SSL shared libraries
 
-libssl1.1-1.1.1o-r0 webpage:
+libssl1.1-1.1.1q-r0 webpage:
 https://www.openssl.org/
 
-libssl1.1-1.1.1o-r0 installed size:
+libssl1.1-1.1.1q-r0 installed size:
 528 KiB
 
-libssl1.1-1.1.1o-r0 license:
+libssl1.1-1.1.1q-r0 license:
 OpenSSL
 
 ```
@@ -367,16 +367,16 @@ MIT BSD GPL2+
 ### `apk` package: `ncurses-libs`
 
 ```console
-ncurses-libs-6.3_p20211120-r0 description:
+ncurses-libs-6.3_p20211120-r1 description:
 Ncurses libraries
 
-ncurses-libs-6.3_p20211120-r0 webpage:
+ncurses-libs-6.3_p20211120-r1 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-libs-6.3_p20211120-r0 installed size:
-500 KiB
+ncurses-libs-6.3_p20211120-r1 installed size:
+504 KiB
 
-ncurses-libs-6.3_p20211120-r0 license:
+ncurses-libs-6.3_p20211120-r1 license:
 MIT
 
 ```
@@ -384,16 +384,16 @@ MIT
 ### `apk` package: `ncurses-terminfo-base`
 
 ```console
-ncurses-terminfo-base-6.3_p20211120-r0 description:
+ncurses-terminfo-base-6.3_p20211120-r1 description:
 Descriptions of common terminals
 
-ncurses-terminfo-base-6.3_p20211120-r0 webpage:
+ncurses-terminfo-base-6.3_p20211120-r1 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-terminfo-base-6.3_p20211120-r0 installed size:
+ncurses-terminfo-base-6.3_p20211120-r1 installed size:
 216 KiB
 
-ncurses-terminfo-base-6.3_p20211120-r0 license:
+ncurses-terminfo-base-6.3_p20211120-r1 license:
 MIT
 
 ```
@@ -435,16 +435,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-1.1.1n-r0 description:
+openssl-1.1.1q-r0 description:
 toolkit for transport layer security (TLS) - version 1.1
 
-openssl-1.1.1n-r0 webpage:
+openssl-1.1.1q-r0 webpage:
 https://www.openssl.org/
 
-openssl-1.1.1n-r0 installed size:
+openssl-1.1.1q-r0 installed size:
 664 KiB
 
-openssl-1.1.1n-r0 license:
+openssl-1.1.1q-r0 license:
 OpenSSL
 
 ```
@@ -503,16 +503,16 @@ blessing
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.34.1-r5 description:
+ssl_client-1.34.1-r7 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.34.1-r5 webpage:
+ssl_client-1.34.1-r7 webpage:
 https://busybox.net/
 
-ssl_client-1.34.1-r5 installed size:
+ssl_client-1.34.1-r7 installed size:
 28 KiB
 
-ssl_client-1.34.1-r5 license:
+ssl_client-1.34.1-r7 license:
 GPL-2.0-only
 
 ```
@@ -537,16 +537,16 @@ GPL-3.0-or-later
 ### `apk` package: `xz`
 
 ```console
-xz-5.2.5-r0 description:
+xz-5.2.5-r1 description:
 Library and CLI tools for XZ and LZMA compressed files
 
-xz-5.2.5-r0 webpage:
+xz-5.2.5-r1 webpage:
 https://tukaani.org/xz
 
-xz-5.2.5-r0 installed size:
+xz-5.2.5-r1 installed size:
 160 KiB
 
-xz-5.2.5-r0 license:
+xz-5.2.5-r1 license:
 GPL-2.0-or-later AND Public-Domain AND LGPL-2.1-or-later
 
 ```
