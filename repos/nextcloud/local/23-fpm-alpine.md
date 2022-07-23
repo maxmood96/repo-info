@@ -1,10 +1,10 @@
-# `nextcloud:23.0.6-fpm-alpine`
+# `nextcloud:23.0.7-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:be7135b1f977adba06d75d2c0d90a9822a0d5f2e8942cd36500426e9aa0f582b`
-- Created: `2022-07-08T02:40:09.778223788Z`
-- Virtual Size: ~ 544.41 Mb  
+- Image ID: `sha256:8535adbf496fe343221da254617f637e68f9300ea9acb28d8cc9970775f28bef`
+- Created: `2022-07-19T03:19:51.741723689Z`
+- Virtual Size: ~ 540.84 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -23,23 +23,23 @@
   - `PHP_SHA256=e87a598f157e0cf0606e64382bb91c8b30c47d4a0fc96b2c17ad547a27869b3b`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
-  - `NEXTCLOUD_VERSION=23.0.6`
+  - `NEXTCLOUD_VERSION=23.0.7`
 
 ## `apk` (`.apk`-based packages)
 
 ### `apk` package: `alpine-baselayout`
 
 ```console
-alpine-baselayout-3.2.0-r20 description:
+alpine-baselayout-3.2.0-r22 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-3.2.0-r20 webpage:
+alpine-baselayout-3.2.0-r22 webpage:
 https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
-alpine-baselayout-3.2.0-r20 installed size:
+alpine-baselayout-3.2.0-r22 installed size:
 340 KiB
 
-alpine-baselayout-3.2.0-r20 license:
+alpine-baselayout-3.2.0-r22 license:
 GPL-2.0-only
 
 ```
@@ -47,16 +47,16 @@ GPL-2.0-only
 ### `apk` package: `alpine-baselayout-data`
 
 ```console
-alpine-baselayout-data-3.2.0-r20 description:
+alpine-baselayout-data-3.2.0-r22 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-data-3.2.0-r20 webpage:
+alpine-baselayout-data-3.2.0-r22 webpage:
 https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
-alpine-baselayout-data-3.2.0-r20 installed size:
+alpine-baselayout-data-3.2.0-r22 installed size:
 72 KiB
 
-alpine-baselayout-data-3.2.0-r20 license:
+alpine-baselayout-data-3.2.0-r22 license:
 GPL-2.0-only
 
 ```
@@ -132,16 +132,16 @@ MIT
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.35.0-r13 description:
+busybox-1.35.0-r15 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.35.0-r13 webpage:
+busybox-1.35.0-r15 webpage:
 https://busybox.net/
 
-busybox-1.35.0-r13 installed size:
+busybox-1.35.0-r15 installed size:
 936 KiB
 
-busybox-1.35.0-r13 license:
+busybox-1.35.0-r15 license:
 GPL-2.0-only
 
 ```
@@ -183,16 +183,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-7.83.1-r1 description:
+curl-7.83.1-r2 description:
 URL retrival utility and library
 
-curl-7.83.1-r1 webpage:
+curl-7.83.1-r2 webpage:
 https://curl.se/
 
-curl-7.83.1-r1 installed size:
+curl-7.83.1-r2 installed size:
 256 KiB
 
-curl-7.83.1-r1 license:
+curl-7.83.1-r2 license:
 curl
 
 ```
@@ -506,16 +506,16 @@ BSD-3-Clause IJG Zlib
 ### `apk` package: `libldap`
 
 ```console
-libldap-2.6.2-r0 description:
+libldap-2.6.3-r0 description:
 OpenLDAP libraries
 
-libldap-2.6.2-r0 webpage:
+libldap-2.6.3-r0 webpage:
 https://www.openldap.org/
 
-libldap-2.6.2-r0 installed size:
+libldap-2.6.3-r0 installed size:
 400 KiB
 
-libldap-2.6.2-r0 license:
+libldap-2.6.3-r0 license:
 OLDAP-2.8
 
 ```
@@ -659,16 +659,16 @@ GPL-2.0-or-later LGPL-2.1-or-later
 ### `apk` package: `libwebp`
 
 ```console
-libwebp-1.2.2-r0 description:
+libwebp-1.2.3-r0 description:
 Libraries for working with WebP images
 
-libwebp-1.2.2-r0 webpage:
+libwebp-1.2.3-r0 webpage:
 https://developers.google.com/speed/webp
 
-libwebp-1.2.2-r0 installed size:
-580 KiB
+libwebp-1.2.3-r0 installed size:
+584 KiB
 
-libwebp-1.2.2-r0 license:
+libwebp-1.2.3-r0 license:
 BSD-3-Clause
 
 ```
@@ -914,16 +914,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-1.1.1o-r0 description:
+openssl-1.1.1q-r0 description:
 toolkit for transport layer security (TLS) - version 1.1
 
-openssl-1.1.1o-r0 webpage:
+openssl-1.1.1q-r0 webpage:
 https://www.openssl.org/
 
-openssl-1.1.1o-r0 installed size:
+openssl-1.1.1q-r0 installed size:
 660 KiB
 
-openssl-1.1.1o-r0 license:
+openssl-1.1.1q-r0 license:
 OpenSSL
 
 ```
@@ -965,16 +965,16 @@ GPL-2.0-or-later
 ### `apk` package: `rsync`
 
 ```console
-rsync-3.2.4-r0 description:
+rsync-3.2.4-r1 description:
 A file transfer program to keep remote files in sync
 
-rsync-3.2.4-r0 webpage:
+rsync-3.2.4-r1 webpage:
 https://rsync.samba.org/
 
-rsync-3.2.4-r0 installed size:
+rsync-3.2.4-r1 installed size:
 436 KiB
 
-rsync-3.2.4-r0 license:
+rsync-3.2.4-r1 license:
 GPL-3.0-or-later
 
 ```
@@ -1016,16 +1016,16 @@ blessing
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.35.0-r13 description:
+ssl_client-1.35.0-r15 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.35.0-r13 webpage:
+ssl_client-1.35.0-r15 webpage:
 https://busybox.net/
 
-ssl_client-1.35.0-r13 installed size:
+ssl_client-1.35.0-r15 installed size:
 28 KiB
 
-ssl_client-1.35.0-r13 license:
+ssl_client-1.35.0-r15 license:
 GPL-2.0-only
 
 ```
