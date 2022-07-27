@@ -1,7 +1,7 @@
 ## `eclipse-temurin:8-jdk-centos7`
 
 ```console
-$ docker pull eclipse-temurin@sha256:0c35fbcb891ebe7f77e7e1b6790ce3184aa743c187b828faf89841821ec6e3d1
+$ docker pull eclipse-temurin@sha256:95e815fc6adc5776e4a5b3a3f826e5fdf21d543965b67ce5389c6d96efe09c99
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -117,14 +117,14 @@ RUN echo Verifying install ...     && echo javac -version && javac -version     
 ### `eclipse-temurin:8-jdk-centos7` - linux; ppc64le
 
 ```console
-$ docker pull eclipse-temurin@sha256:322f58bb66a1fde0d43bc0e375a2c6e32527465a83f8d9d741c394b6e9c577d2
+$ docker pull eclipse-temurin@sha256:8bea0abd7b12bb2258226c0928ebaf85380d8b4a5a0e402ddf025b84e21a9a8a
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **194.1 MB (194138419 bytes)**  
+-	Total Size: **195.0 MB (195032288 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a0e9b9ef7c1ce2b462d2e98c2cffc25d8fa6bb1d3c6cb5de786168b49e3c0b6a`
+-	Image ID: `sha256:f92da8d948cfc13fd2a1fa8bbebe6220c40563945b84b6501a8171f218e7e998`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -134,17 +134,17 @@ ADD file:7f21ae7d20a8e347d8b678bcf26be83abb1ee27d3b567c9cddd993e45ce8ac34 in /
 LABEL org.label-schema.schema-version=1.0 org.label-schema.name=CentOS Base Image org.label-schema.vendor=CentOS org.label-schema.license=GPLv2 org.label-schema.build-date=20201113 org.opencontainers.image.title=CentOS Base Image org.opencontainers.image.vendor=CentOS org.opencontainers.image.licenses=GPL-2.0-only org.opencontainers.image.created=2020-11-13 00:00:00+00:00
 # Wed, 15 Sep 2021 18:29:40 GMT
 CMD ["/bin/bash"]
-# Wed, 15 Sep 2021 21:27:25 GMT
+# Wed, 27 Jul 2022 00:36:22 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 15 Sep 2021 21:29:19 GMT
+# Wed, 27 Jul 2022 00:37:19 GMT
 RUN yum install -y tzdata openssl curl ca-certificates fontconfig gzip tar     && yum clean all
-# Thu, 05 May 2022 18:18:09 GMT
+# Wed, 27 Jul 2022 00:37:20 GMT
 ENV JAVA_VERSION=jdk8u332-b09
-# Thu, 05 May 2022 18:18:31 GMT
+# Wed, 27 Jul 2022 00:37:34 GMT
 RUN set -eux;     ARCH="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')";     case "${ARCH}" in        aarch64|arm64)          ESUM='d10efb2afad3ed3d7bac9d3249cea77928aca6acb973cac0f90a2dd3606a3533';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u332-b09/OpenJDK8U-jdk_aarch64_linux_hotspot_8u332b09.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1df8c12fd97e76c388d64e4df16893f4285e000e6ff837d1e39969e5428aafa0';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u332-b09/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u332b09.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='adc13a0a0540d77f0a3481b48f10d61eb203e5ad4914507d489c2de3bd3d83da';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u332-b09/OpenJDK8U-jdk_x64_linux_hotspot_8u332b09.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Thu, 05 May 2022 18:18:36 GMT
+# Wed, 27 Jul 2022 00:37:36 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 05 May 2022 18:18:43 GMT
+# Wed, 27 Jul 2022 00:37:38 GMT
 RUN echo Verifying install ...     && echo javac -version && javac -version     && echo java -version && java -version     && echo Complete.
 ```
 
@@ -153,15 +153,15 @@ RUN echo Verifying install ...     && echo javac -version && javac -version     
 		Last Modified: Tue, 17 Nov 2020 04:06:20 GMT  
 		Size: 80.5 MB (80516460 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35f502386ff4e2195af1b6b4432c6ccd0fabc7a63dd38550f635eacaa707c74a`  
-		Last Modified: Wed, 15 Sep 2021 21:38:40 GMT  
-		Size: 12.6 MB (12616024 bytes)  
+	-	`sha256:67d09697c3a630c35e8d45ccb0233578c9ad68f0448605800b3e2f3c500fa3a5`  
+		Last Modified: Wed, 27 Jul 2022 00:51:05 GMT  
+		Size: 13.5 MB (13509908 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdfacebb7907393222f0d71774b2426d3966d069f19e30ec235f790ebac0a35a`  
-		Last Modified: Thu, 05 May 2022 18:24:16 GMT  
-		Size: 101.0 MB (101005774 bytes)  
+	-	`sha256:fb419beed014fdc4084e90ec7e583554ad6858b2bb52112545bff0298171e090`  
+		Last Modified: Wed, 27 Jul 2022 00:51:16 GMT  
+		Size: 101.0 MB (101005760 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b4355531e2176edfec58d3ff73f0447a7431043ab5296eb068a02a2da3032cc`  
-		Last Modified: Thu, 05 May 2022 18:24:03 GMT  
-		Size: 161.0 B  
+	-	`sha256:b9088c4b45a6192e9dd23b9aba6ed9cc50ded293497ecb65665845efe29c950d`  
+		Last Modified: Wed, 27 Jul 2022 00:51:02 GMT  
+		Size: 160.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
