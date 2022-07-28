@@ -1,7 +1,7 @@
 ## `eclipse-temurin:11-jdk-centos7`
 
 ```console
-$ docker pull eclipse-temurin@sha256:75d2664ec83268710a3fe4bfa5f74ce3d2bec66ce8386ea3005b2510a37bbcc6
+$ docker pull eclipse-temurin@sha256:2f6e7605f3f01a7f2ec87325180ba0f88d541d09855508e4dd64a08b9dd7e72c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -67,14 +67,14 @@ CMD ["jshell"]
 ### `eclipse-temurin:11-jdk-centos7` - linux; arm64 variant v8
 
 ```console
-$ docker pull eclipse-temurin@sha256:f120b2501a97be036f7364ded5250e7725b66397eb1a986260aace31de546df8
+$ docker pull eclipse-temurin@sha256:e36426b42ff4b71e6ea4b8d8f17270d70235872930cb15a573cb8a3bf5438645
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **312.3 MB (312257607 bytes)**  
+-	Total Size: **312.8 MB (312783326 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bb668d8e515f3ff7bb99674fa1db9a2b6bdf052d6d269ace7bde335a75126c5c`
+-	Image ID: `sha256:7abaaa384339e39479dce1f7c11654659f457814b9607f641a899563b8889889`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -88,15 +88,15 @@ CMD ["/bin/bash"]
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Mon, 14 Feb 2022 19:59:30 GMT
 RUN yum install -y tzdata openssl curl ca-certificates fontconfig gzip tar     && yum clean all
-# Wed, 27 Apr 2022 18:40:34 GMT
-ENV JAVA_VERSION=jdk-11.0.15+10
-# Wed, 27 Apr 2022 18:40:48 GMT
-RUN set -eux;     ARCH="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')";     case "${ARCH}" in        aarch64|arm64)          ESUM='999fbd90b070f9896142f0eb28354abbeb367cbe49fd86885c626e2999189e0a';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.15_10.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='a8fba686f6eb8ae1d1a9566821dbd5a85a1108b96ad857fdbac5c1e4649fc56f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.15_10.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='5fdb4d5a1662f0cca73fec30f99e67662350b1fa61460fa72e91eb9f66b54d0b';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jdk_x64_linux_hotspot_11.0.15_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Wed, 27 Apr 2022 18:40:49 GMT
+# Thu, 28 Jul 2022 15:41:17 GMT
+ENV JAVA_VERSION=jdk-11.0.16+8
+# Thu, 28 Jul 2022 15:41:43 GMT
+RUN set -eux;     ARCH="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')";     case "${ARCH}" in        aarch64|arm64)          ESUM='bb345cabf3e305ff3ce390918d5f69e5cfbced3d9844e0b0531c2690f9ed06ef';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.16%2B8/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.16_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='40dea12da26443ad731f9348187b65451711659337e83b6409a2bcf0f057cd2a';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.16%2B8/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.16_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='f79506f80c796d8e6a382f00bd8c528a330c5e29581aaf5cb61e1831742d166f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.16%2B8/OpenJDK11U-jdk_x64_linux_hotspot_11.0.16_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Thu, 28 Jul 2022 15:41:43 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 27 Apr 2022 18:40:51 GMT
+# Thu, 28 Jul 2022 15:41:45 GMT
 RUN echo Verifying install ...     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Wed, 27 Apr 2022 18:40:51 GMT
+# Thu, 28 Jul 2022 15:41:45 GMT
 CMD ["jshell"]
 ```
 
@@ -109,13 +109,13 @@ CMD ["jshell"]
 		Last Modified: Mon, 14 Feb 2022 20:04:32 GMT  
 		Size: 13.1 MB (13059526 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cd12c41e4efcf59b751bd1a6138fb4a03c6f76c17e0309db73dcbb4615b4c17f`  
-		Last Modified: Wed, 27 Apr 2022 18:45:40 GMT  
-		Size: 190.8 MB (190823007 bytes)  
+	-	`sha256:34cb856d6502d5f97751e943aa597e09dbea55d126e5e7bc3b886bbfa43ecc42`  
+		Last Modified: Thu, 28 Jul 2022 15:48:21 GMT  
+		Size: 191.3 MB (191348728 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:831c8831e960617f17d3573b07439feaa9bf08a8bd76143e348f6341dfc8a485`  
-		Last Modified: Wed, 27 Apr 2022 18:45:23 GMT  
-		Size: 129.0 B  
+	-	`sha256:464c60cff2a36e1113887c457d91181b739ff4eb19724c8bf0449e9c8550862e`  
+		Last Modified: Thu, 28 Jul 2022 15:48:05 GMT  
+		Size: 127.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:11-jdk-centos7` - linux; ppc64le
