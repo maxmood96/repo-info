@@ -1,7 +1,7 @@
 ## `tomee:8-Temurin-ubuntu`
 
 ```console
-$ docker pull tomee@sha256:8dbcc175ff9dfc1a4fe5a2be77aab21680f14a54345118f8d7d5eb42dcadc0ce
+$ docker pull tomee@sha256:495c69427db5fdd1cc5da7801affbda3295454adf54795d4ba49ea44c172aace
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,14 +12,14 @@ $ docker pull tomee@sha256:8dbcc175ff9dfc1a4fe5a2be77aab21680f14a54345118f8d7d5e
 ### `tomee:8-Temurin-ubuntu` - linux; amd64
 
 ```console
-$ docker pull tomee@sha256:b8973730c2f347df60556ba634938fb937408eb384ea9af66bf9fd965cd28bcc
+$ docker pull tomee@sha256:e45bda3131bf04386b7ad0b8dc7632ef73e849579ceeda84ee5fcedd3aa8c2d3
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **145.7 MB (145711310 bytes)**  
+-	Total Size: **145.9 MB (145909475 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4334a6a87b68afc4bc75060a14c32a629f611da55bb829b79f135e08b0eea9ba`
+-	Image ID: `sha256:963dfa457b48b676d3f94748296d17884659fb7a4bc648d02cbaf79941a79b49`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -31,33 +31,33 @@ CMD ["bash"]
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Tue, 07 Jun 2022 00:15:30 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales binutils     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jun 2022 00:15:30 GMT
-ENV JAVA_VERSION=jdk-17.0.3+7
-# Tue, 07 Jun 2022 00:16:21 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='b32bf4e18a0befea32c0ff377da7a1753b91477617a9921ceb3dee6964d2799b';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.3%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.3_7.tar.gz';          ;;        armhf|arm)          ESUM='fda34743f1ad8b629f42773f6519e87d13876d4b10f98b76cd47b1aa9ad18572';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.3%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.3_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='257325f38546ce34645f6e8d7e566df401c97a9ae5f107583f9ac71f0f1b04e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.3%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.3_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='6790e3995a7fb8db99974d213f750bfd1631bfc0dad9946334be34d7b78fdbee';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.3%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.3_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='446b1ac5504d51c2ff9b0cccff079be3ce800cf8c3a3f13bab07f2656aa1fd27';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.3%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.3_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Tue, 07 Jun 2022 00:16:22 GMT
+# Thu, 28 Jul 2022 16:22:08 GMT
+ENV JAVA_VERSION=jdk-17.0.4+8
+# Thu, 28 Jul 2022 16:23:01 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='d0fc84cb9627641d5a3c85aef9e7e26e4874e37524f9425112c6def5b12b7892';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.4%2B8/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.4_8.tar.gz';          ;;        armhf|arm)          ESUM='6a559ec6186ae74c362115cab36057db40e0c6e9e50763f5b485240109a226ec';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.4%2B8/OpenJDK17U-jre_arm_linux_hotspot_17.0.4_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='a5d055cbdb1f8ef537afc66a6315e865646305420cb96ab08dc239074f88ad1d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.4%2B8/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.4_8.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='79a9f3193721ddea74e7a8aa8fe870bcef85cca6c5870835e8517bc61251f50a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.4%2B8/OpenJDK17U-jre_s390x_linux_hotspot_17.0.4_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='616b137b87fa84211ac2f5c23dfcf3a8c5df9d0fd7ea3c872a0bf394b2f6c464';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.4%2B8/OpenJDK17U-jre_x64_linux_hotspot_17.0.4_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Thu, 28 Jul 2022 16:23:01 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jun 2022 00:16:22 GMT
+# Thu, 28 Jul 2022 16:23:01 GMT
 RUN echo Verifying install ...     && echo java --version && java --version     && echo Complete.
-# Tue, 07 Jun 2022 05:10:16 GMT
+# Thu, 28 Jul 2022 17:38:16 GMT
 ENV PATH=/usr/local/tomee/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jun 2022 05:10:16 GMT
+# Thu, 28 Jul 2022 17:38:17 GMT
 RUN mkdir -p /usr/local/tomee
-# Tue, 07 Jun 2022 05:10:16 GMT
+# Thu, 28 Jul 2022 17:38:17 GMT
 WORKDIR /usr/local/tomee
-# Tue, 07 Jun 2022 05:10:24 GMT
+# Thu, 28 Jul 2022 17:38:23 GMT
 RUN apt-get update   && apt-get install -y  gpg   && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jun 2022 05:10:34 GMT
+# Thu, 28 Jul 2022 17:38:32 GMT
 RUN set -xe;   for key in   9056B710F1E332780DE7AF34CBAEBE39A46C4CA1   F067B8140F5DD80E1D3B5D92318242FE9A0B1183   223D3A74B068ECA354DC385CE126833F9CF64915   DBCCD103B8B24F86FFAAB025C8BB472CD297D428   7A2744A8A9AAF063C23EB7868EBE7DBE8D050EEF   B8B301E6105DF628076BD92C5483E55897ABD9B9   FAA603D58B1BA4EDF65896D0ED340E0E6D545F97   A57DAF81C1B69921F4BA8723A8DE0A4DB863A7C1   82D8419BA697F0E7FB85916EE91287822FDB81B1   B7574789F5018690043E6DD9C212662E12F3E1DD   C23A3F6F595EBD0F960270CC997C8F1A5BE6E4C1   678F2D98F1FD9643811639FB622B8F2D043F71D8   BDD0BBEB753192957EFC5F896A62FC8EF17D8FEF   D11DF12CC2CA4894BDE638B967C1227A2678363C   C92604B0DEC5C62CFF5801E73D4683C24EDC64D1   626C542EDA7C113814B77AF09C04914D63645D20   3948829384B269D333CC5B98358807C52B4B0E23   B83D15E72253ED1104EB4FBBDAB472F0E5B8A431   ; do     gpg --batch --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys "$key" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done
-# Tue, 28 Jun 2022 23:23:51 GMT
+# Thu, 28 Jul 2022 17:38:32 GMT
 ENV TOMEE_VER=8.0.12
-# Tue, 28 Jun 2022 23:23:51 GMT
+# Thu, 28 Jul 2022 17:38:33 GMT
 ENV TOMEE_BUILD=webprofile
-# Tue, 28 Jun 2022 23:23:57 GMT
+# Thu, 28 Jul 2022 17:38:38 GMT
 RUN set -x   && curl -fSL https://dist.apache.org/repos/dist/release/tomee/tomee-${TOMEE_VER}/apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz.asc -o tomee.tar.gz.asc   && curl -fSL https://dist.apache.org/repos/dist/release/tomee/tomee-${TOMEE_VER}/apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz.sha512 -o tomee.tar.gz.sha512   && curl -fSL https://dist.apache.org/repos/dist/release/tomee/tomee-${TOMEE_VER}/apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz -o apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && gpg --batch --verify tomee.tar.gz.asc apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && echo `cat tomee.tar.gz.sha512` | sha512sum -c -   && tar -zxf apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && mv apache-tomee-${TOMEE_BUILD}-${TOMEE_VER}/* /usr/local/tomee   && rm apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && rm -Rf apache-tomee-${TOMEE_BUILD}-${TOMEE_VER}   && rm bin/*.bat   && rm bin/*.exe   && rm bin/*.tar.gz*   && rm tomee.tar.gz.asc   && rm tomee.tar.gz*
-# Tue, 28 Jun 2022 23:23:57 GMT
+# Thu, 28 Jul 2022 17:38:38 GMT
 EXPOSE 8080
-# Tue, 28 Jun 2022 23:23:57 GMT
+# Thu, 28 Jul 2022 17:38:39 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -70,42 +70,42 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Tue, 07 Jun 2022 00:22:05 GMT  
 		Size: 19.8 MB (19773881 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c96f165def119d706c2e86c082214c93a07343edb524cc95a4c7701447e5f3d`  
-		Last Modified: Tue, 07 Jun 2022 00:23:04 GMT  
-		Size: 46.8 MB (46840961 bytes)  
+	-	`sha256:33dae87d926696962d1edf6648739950f08788ba84ed28f8059c3359a861970e`  
+		Last Modified: Thu, 28 Jul 2022 16:30:24 GMT  
+		Size: 46.8 MB (46809114 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2880df797d0653bf59426d2fef27e7c6fdb9bb8b8aa0c402b64feac76a60c9a0`  
-		Last Modified: Tue, 07 Jun 2022 00:22:57 GMT  
+	-	`sha256:f383e70a4ca356e88017e4add1069623cfc3ae0bf3373faf01a8d33b89344050`  
+		Last Modified: Thu, 28 Jul 2022 16:30:17 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5bfe78a9f6b3a86975d0e84bb3161732e5ba01285bb1a6ae73bb954bd7265674`  
-		Last Modified: Tue, 07 Jun 2022 05:36:20 GMT  
-		Size: 170.0 B  
+	-	`sha256:991bdf23176d388a854fa70b1939798ddb7f87c4d29fff0fe0b647d34126c2ec`  
+		Last Modified: Thu, 28 Jul 2022 18:04:42 GMT  
+		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:58004d6f9a4171ea223dc2112ecba8a0f76ac3f1cbc06be1a14d1ead6ee5f867`  
-		Last Modified: Tue, 07 Jun 2022 05:36:21 GMT  
-		Size: 3.7 MB (3660191 bytes)  
+	-	`sha256:5eaf2fc7fbe60987db4ae8062d3f83d076203c46caf704d32780a420fcbda686`  
+		Last Modified: Thu, 28 Jul 2022 18:04:42 GMT  
+		Size: 3.9 MB (3890152 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2024ed319db54955606f82a59f3fa9bc2ecc33041e08ce892b7f570543b95dd6`  
-		Last Modified: Tue, 07 Jun 2022 05:36:20 GMT  
-		Size: 62.9 KB (62886 bytes)  
+	-	`sha256:79bc989a93d5e44c7faa2cf908bc6965c81b5e7ea799529ed943177a1d4109e4`  
+		Last Modified: Thu, 28 Jul 2022 18:04:42 GMT  
+		Size: 62.9 KB (62894 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b9233b6fa606f98e7ad78d88dce1ea3b049a0fe28603547823d00a8ebac30d8f`  
-		Last Modified: Tue, 28 Jun 2022 23:59:49 GMT  
-		Size: 46.8 MB (46800427 bytes)  
+	-	`sha256:bb08c653daa286612c5e03ddeff277e5c38571082c99468d0b461281081ea582`  
+		Last Modified: Thu, 28 Jul 2022 18:04:44 GMT  
+		Size: 46.8 MB (46800469 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `tomee:8-Temurin-ubuntu` - linux; arm64 variant v8
 
 ```console
-$ docker pull tomee@sha256:d8520cccedc5d9dd57ac06247a9a643dbddae6689a041e6846f048219d962933
+$ docker pull tomee@sha256:5038221a6ec0331fef5b65c6020c41fbd8517c236c9516e93ec5c743bf60c8d8
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **144.2 MB (144226687 bytes)**  
+-	Total Size: **144.4 MB (144429750 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5292bb30df8da151ff36806fd11ab8c101dba2f3458f8f1845a9b2f01b5adfaf`
+-	Image ID: `sha256:576d6c83553d1459daaca6fe23032a5d885c80c26daff69a7e44a32df9811da4`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -117,33 +117,33 @@ CMD ["bash"]
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Tue, 07 Jun 2022 05:06:48 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales binutils     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jun 2022 06:36:39 GMT
-ENV JAVA_VERSION=jdk-17.0.3+7
-# Tue, 07 Jun 2022 06:37:50 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='b32bf4e18a0befea32c0ff377da7a1753b91477617a9921ceb3dee6964d2799b';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.3%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.3_7.tar.gz';          ;;        armhf|arm)          ESUM='fda34743f1ad8b629f42773f6519e87d13876d4b10f98b76cd47b1aa9ad18572';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.3%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.3_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='257325f38546ce34645f6e8d7e566df401c97a9ae5f107583f9ac71f0f1b04e9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.3%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.3_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='6790e3995a7fb8db99974d213f750bfd1631bfc0dad9946334be34d7b78fdbee';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.3%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.3_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='446b1ac5504d51c2ff9b0cccff079be3ce800cf8c3a3f13bab07f2656aa1fd27';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.3%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.3_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Tue, 07 Jun 2022 06:37:50 GMT
+# Thu, 28 Jul 2022 15:42:26 GMT
+ENV JAVA_VERSION=jdk-17.0.4+8
+# Thu, 28 Jul 2022 15:43:34 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='d0fc84cb9627641d5a3c85aef9e7e26e4874e37524f9425112c6def5b12b7892';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.4%2B8/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.4_8.tar.gz';          ;;        armhf|arm)          ESUM='6a559ec6186ae74c362115cab36057db40e0c6e9e50763f5b485240109a226ec';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.4%2B8/OpenJDK17U-jre_arm_linux_hotspot_17.0.4_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='a5d055cbdb1f8ef537afc66a6315e865646305420cb96ab08dc239074f88ad1d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.4%2B8/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.4_8.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='79a9f3193721ddea74e7a8aa8fe870bcef85cca6c5870835e8517bc61251f50a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.4%2B8/OpenJDK17U-jre_s390x_linux_hotspot_17.0.4_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='616b137b87fa84211ac2f5c23dfcf3a8c5df9d0fd7ea3c872a0bf394b2f6c464';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.4%2B8/OpenJDK17U-jre_x64_linux_hotspot_17.0.4_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Thu, 28 Jul 2022 15:43:34 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jun 2022 06:37:51 GMT
+# Thu, 28 Jul 2022 15:43:35 GMT
 RUN echo Verifying install ...     && echo java --version && java --version     && echo Complete.
-# Tue, 07 Jun 2022 08:26:42 GMT
+# Thu, 28 Jul 2022 18:32:43 GMT
 ENV PATH=/usr/local/tomee/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jun 2022 08:26:43 GMT
+# Thu, 28 Jul 2022 18:32:44 GMT
 RUN mkdir -p /usr/local/tomee
-# Tue, 07 Jun 2022 08:26:44 GMT
+# Thu, 28 Jul 2022 18:32:45 GMT
 WORKDIR /usr/local/tomee
-# Tue, 07 Jun 2022 08:26:53 GMT
+# Thu, 28 Jul 2022 18:32:54 GMT
 RUN apt-get update   && apt-get install -y  gpg   && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jun 2022 08:27:02 GMT
+# Thu, 28 Jul 2022 18:33:03 GMT
 RUN set -xe;   for key in   9056B710F1E332780DE7AF34CBAEBE39A46C4CA1   F067B8140F5DD80E1D3B5D92318242FE9A0B1183   223D3A74B068ECA354DC385CE126833F9CF64915   DBCCD103B8B24F86FFAAB025C8BB472CD297D428   7A2744A8A9AAF063C23EB7868EBE7DBE8D050EEF   B8B301E6105DF628076BD92C5483E55897ABD9B9   FAA603D58B1BA4EDF65896D0ED340E0E6D545F97   A57DAF81C1B69921F4BA8723A8DE0A4DB863A7C1   82D8419BA697F0E7FB85916EE91287822FDB81B1   B7574789F5018690043E6DD9C212662E12F3E1DD   C23A3F6F595EBD0F960270CC997C8F1A5BE6E4C1   678F2D98F1FD9643811639FB622B8F2D043F71D8   BDD0BBEB753192957EFC5F896A62FC8EF17D8FEF   D11DF12CC2CA4894BDE638B967C1227A2678363C   C92604B0DEC5C62CFF5801E73D4683C24EDC64D1   626C542EDA7C113814B77AF09C04914D63645D20   3948829384B269D333CC5B98358807C52B4B0E23   B83D15E72253ED1104EB4FBBDAB472F0E5B8A431   ; do     gpg --batch --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys "$key" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done
-# Tue, 28 Jun 2022 23:45:20 GMT
+# Thu, 28 Jul 2022 18:33:04 GMT
 ENV TOMEE_VER=8.0.12
-# Tue, 28 Jun 2022 23:45:21 GMT
+# Thu, 28 Jul 2022 18:33:05 GMT
 ENV TOMEE_BUILD=webprofile
-# Tue, 28 Jun 2022 23:45:28 GMT
+# Thu, 28 Jul 2022 18:33:12 GMT
 RUN set -x   && curl -fSL https://dist.apache.org/repos/dist/release/tomee/tomee-${TOMEE_VER}/apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz.asc -o tomee.tar.gz.asc   && curl -fSL https://dist.apache.org/repos/dist/release/tomee/tomee-${TOMEE_VER}/apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz.sha512 -o tomee.tar.gz.sha512   && curl -fSL https://dist.apache.org/repos/dist/release/tomee/tomee-${TOMEE_VER}/apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz -o apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && gpg --batch --verify tomee.tar.gz.asc apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && echo `cat tomee.tar.gz.sha512` | sha512sum -c -   && tar -zxf apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && mv apache-tomee-${TOMEE_BUILD}-${TOMEE_VER}/* /usr/local/tomee   && rm apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && rm -Rf apache-tomee-${TOMEE_BUILD}-${TOMEE_VER}   && rm bin/*.bat   && rm bin/*.exe   && rm bin/*.tar.gz*   && rm tomee.tar.gz.asc   && rm tomee.tar.gz*
-# Tue, 28 Jun 2022 23:45:28 GMT
+# Thu, 28 Jul 2022 18:33:12 GMT
 EXPOSE 8080
-# Tue, 28 Jun 2022 23:45:29 GMT
+# Thu, 28 Jul 2022 18:33:13 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -156,27 +156,27 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Tue, 07 Jun 2022 05:12:45 GMT  
 		Size: 20.5 MB (20500981 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e41ee0d8f3dce0b9899541d38046fddeb37199fc18fd7a0f1bce768cbb028cec`  
-		Last Modified: Tue, 07 Jun 2022 06:45:57 GMT  
-		Size: 46.3 MB (46273239 bytes)  
+	-	`sha256:01c0286cd74cabdf7729cd3adab1ed971f891050f2eb189ef00eb6c14152e884`  
+		Last Modified: Thu, 28 Jul 2022 15:51:22 GMT  
+		Size: 46.2 MB (46245602 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bdd3adec87ea73d8389e852dfa694f418fee963829aa520b51a0c0053b13682f`  
-		Last Modified: Tue, 07 Jun 2022 06:45:51 GMT  
-		Size: 127.0 B  
+	-	`sha256:f4beeff86fbb8f0a143e4ebb54a952be8beba0bf4539b95ccea8e53216955996`  
+		Last Modified: Thu, 28 Jul 2022 15:51:15 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5800725d9dea473d734feb6827c343ddae52c0be0718f4b46af202055f50b1ad`  
-		Last Modified: Tue, 07 Jun 2022 09:08:21 GMT  
+	-	`sha256:e1c988265c2fee224fa7a7467e5a0870ff8a4f88542c93c2f1e2a171a3b162c0`  
+		Last Modified: Thu, 28 Jul 2022 19:10:17 GMT  
 		Size: 139.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6219defee3d8d5204f578a336d28c1e44eabe025eff414006110b738f73bc00d`  
-		Last Modified: Tue, 07 Jun 2022 09:08:23 GMT  
-		Size: 3.4 MB (3398275 bytes)  
+	-	`sha256:14ae2e3fb60fee503b5a998558a0ea8d87ec737167b39a23de11b693af196c2a`  
+		Last Modified: Thu, 28 Jul 2022 19:10:17 GMT  
+		Size: 3.6 MB (3628959 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:10becc5c9b8120299bcd09601a48cbbee128533e5e49165824c4fcf17a910bbf`  
-		Last Modified: Tue, 07 Jun 2022 09:08:21 GMT  
-		Size: 62.9 KB (62863 bytes)  
+	-	`sha256:d36d9336cd78a14f383a82ab7e0a56a72a823e1109638d5a092be5feefb6edf9`  
+		Last Modified: Thu, 28 Jul 2022 19:10:17 GMT  
+		Size: 62.9 KB (62866 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3f48c9d843cbbac8e38d54a765a52e22e34eb1e278307eb61e08577c5d0a82fa`  
-		Last Modified: Wed, 29 Jun 2022 00:34:58 GMT  
-		Size: 46.8 MB (46799853 bytes)  
+	-	`sha256:3a485888e8a93e96c6341c5a7e3e7e4689176e748331f8616795b9191db5a9d6`  
+		Last Modified: Thu, 28 Jul 2022 19:10:20 GMT  
+		Size: 46.8 MB (46799865 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
