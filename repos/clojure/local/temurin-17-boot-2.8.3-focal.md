@@ -1,4 +1,4 @@
-# `clojure:boot-2.8.3`
+# `clojure:boot-2.8.3-focal`
 
 ## Docker Metadata
 

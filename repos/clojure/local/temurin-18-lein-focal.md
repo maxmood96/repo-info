@@ -1,4 +1,4 @@
-# `clojure:temurin-18-lein-2.9.8`
+# `clojure:temurin-18-lein-2.9.8-focal`
 
 ## Docker Metadata
 

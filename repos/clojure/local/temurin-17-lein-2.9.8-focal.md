@@ -1,4 +1,4 @@
-# `clojure:lein-2.9.8`
+# `clojure:lein-2.9.8-focal`
 
 ## Docker Metadata
 
