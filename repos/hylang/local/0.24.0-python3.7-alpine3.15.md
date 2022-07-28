@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4ebd247525c39961e08a6fa76e5a0cd4acbe36a471a157e9db0b7f794afb76b2`
-- Created: `2022-07-20T05:21:41.561603542Z`
-- Virtual Size: ~ 54.81 Mb  
+- Image ID: `sha256:aeee49be0d2aee876ce4f499b1c86d8887be56a84493e924254393bd1e2d4f8e`
+- Created: `2022-07-27T02:24:31.712330917Z`
+- Virtual Size: ~ 54.83 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`
@@ -15,8 +15,8 @@
   - `PYTHON_VERSION=3.7.13`
   - `PYTHON_PIP_VERSION=22.0.4`
   - `PYTHON_SETUPTOOLS_VERSION=57.5.0`
-  - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/6ce3639da143c5d79b44f94b04080abf2531fd6e/public/get-pip.py`
-  - `PYTHON_GET_PIP_SHA256=ba3ab8267d91fd41c58dbce08f76db99f747f716d85ce1865813842bb035524d`
+  - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/49ca29908cfd49683da12f2d5a4fa5689539f9d9/public/get-pip.py`
+  - `PYTHON_GET_PIP_SHA256=d077d469ce4c0beaf9cc97b73f8164ad20e68e0519f14dd886ce35d053721501`
   - `HY_VERSION=0.24.0`
   - `HYRULE_VERSION=0.2`
 
