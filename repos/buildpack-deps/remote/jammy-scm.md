@@ -1,7 +1,7 @@
 ## `buildpack-deps:jammy-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:6fc830a385443f83c403103340178f546f0ccfe1ad1fb2f1a875f5f22c137a24
+$ docker pull buildpack-deps@sha256:f68bfaa6cfeb9895fd067b7cee0344f83806457e89f0961c18b5b22cbf0035fd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -60,14 +60,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercuri
 ### `buildpack-deps:jammy-scm` - linux; arm variant v7
 
 ```console
-$ docker pull buildpack-deps@sha256:8461a1258d01328d03479c732e29a5ebdfc4fa1f531b17cd939aad54f2a8c847
+$ docker pull buildpack-deps@sha256:c073bc7d6d5dc90d0f5efb152d103147c1b524d76fb4e5183af60d9dd0e7526e
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **76.2 MB (76198883 bytes)**  
+-	Total Size: **76.4 MB (76398354 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f20d57af7f867b45de082b4c99d8c3123e860e34cce8cbbbaf2953c43aaa62bd`
+-	Image ID: `sha256:20fbd82b9f0ac09aaf49e47847d8d6817739cf69be8fd92832e2de3bb2e3d485`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -75,11 +75,11 @@ $ docker pull buildpack-deps@sha256:8461a1258d01328d03479c732e29a5ebdfc4fa1f531b
 ADD file:26c86cfcbc153addbca421974e648a7af07234cb3f741bfb030aa0db90b6a7c6 in / 
 # Tue, 07 Jun 2022 05:51:36 GMT
 CMD ["bash"]
-# Tue, 07 Jun 2022 09:06:21 GMT
+# Thu, 28 Jul 2022 13:40:03 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jun 2022 09:06:37 GMT
+# Thu, 28 Jul 2022 13:40:16 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 07 Jun 2022 09:07:26 GMT
+# Thu, 28 Jul 2022 13:40:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 ```
 
@@ -88,17 +88,17 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercuri
 		Last Modified: Tue, 07 Jun 2022 05:56:03 GMT  
 		Size: 27.0 MB (27017432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b45c90ba572bc21702aa900361eb375e489774d4b4e6ed6de286e452ca54f45a`  
-		Last Modified: Tue, 07 Jun 2022 09:27:53 GMT  
-		Size: 3.6 MB (3571068 bytes)  
+	-	`sha256:11ae1200b85869148ec2ccc96108e9afadd9b35842db2ffc6c68e698f7b28939`  
+		Last Modified: Thu, 28 Jul 2022 14:02:21 GMT  
+		Size: 3.6 MB (3571388 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6a804f93703587d0a692de1b12d12224b7248f7d60cd7b0e150aa3772a6901c`  
-		Last Modified: Tue, 07 Jun 2022 09:27:52 GMT  
-		Size: 3.7 MB (3712830 bytes)  
+	-	`sha256:0830edfa34eddc4f218d51b9dbcb0a3a05e93b8e2cfc40d4e6595fa4e51b2ae8`  
+		Last Modified: Thu, 28 Jul 2022 14:02:20 GMT  
+		Size: 3.9 MB (3903482 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90fbbe91aa9e7a72b185ad5ae041ad2b5a069cdef4e9ecbec52cb2e6268ede15`  
-		Last Modified: Tue, 07 Jun 2022 09:28:33 GMT  
-		Size: 41.9 MB (41897553 bytes)  
+	-	`sha256:ec5ddf9431301c2e11f60aa38393f9a80ad5905a96ec49a163f1202bdaf6798c`  
+		Last Modified: Thu, 28 Jul 2022 14:02:48 GMT  
+		Size: 41.9 MB (41906052 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:jammy-scm` - linux; arm64 variant v8
