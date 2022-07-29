@@ -1,7 +1,7 @@
 ## `python:3-buster`
 
 ```console
-$ docker pull python@sha256:98039e7deff196fd0840777e6c4c7c52f293e12219f6fc6c26e6548685d4dbae
+$ docker pull python@sha256:aae9dc38e0f061f89d5c3132ecc1071f21dab2911be2d935ae32974506eff208
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -202,14 +202,14 @@ CMD ["python3"]
 ### `python:3-buster` - linux; arm variant v7
 
 ```console
-$ docker pull python@sha256:3902164080bf2176ca719db089a2e6468ccd0aa90a44b04f4f1e04382f706484
+$ docker pull python@sha256:e548e9ac54ba7e9ae1e2ba65d65bd3640218ad253aa99cd8efd869f08be6026c
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **306.4 MB (306438039 bytes)**  
+-	Total Size: **306.4 MB (306436456 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:64f6f2c837ec09b2108b25f48795ee1da69cba903be37b57fd552ac74533ccf3`
+-	Image ID: `sha256:56398341ee26e0a36600296e79b54a083b2fe20427c68606264eab29f9666dee`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -217,39 +217,39 @@ $ docker pull python@sha256:3902164080bf2176ca719db089a2e6468ccd0aa90a44b04f4f1e
 ADD file:8795228d7a914d37160bb846066961f7c4c5f5da1452e6ae888a2a766cd8739f in / 
 # Tue, 12 Jul 2022 01:00:26 GMT
 CMD ["bash"]
-# Tue, 12 Jul 2022 03:31:57 GMT
+# Thu, 28 Jul 2022 13:28:23 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 12 Jul 2022 03:32:10 GMT
+# Thu, 28 Jul 2022 13:28:32 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 12 Jul 2022 03:32:59 GMT
+# Thu, 28 Jul 2022 13:29:08 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 12 Jul 2022 03:35:19 GMT
+# Thu, 28 Jul 2022 13:30:38 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 27 Jul 2022 02:27:05 GMT
+# Fri, 29 Jul 2022 17:28:38 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 27 Jul 2022 02:27:05 GMT
+# Fri, 29 Jul 2022 17:28:38 GMT
 ENV LANG=C.UTF-8
-# Wed, 27 Jul 2022 02:27:16 GMT
+# Fri, 29 Jul 2022 17:28:45 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libbluetooth-dev 		tk-dev 		uuid-dev 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 27 Jul 2022 02:27:16 GMT
+# Fri, 29 Jul 2022 17:28:45 GMT
 ENV GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696D
-# Wed, 27 Jul 2022 06:23:58 GMT
+# Fri, 29 Jul 2022 18:08:06 GMT
 ENV PYTHON_VERSION=3.10.5
-# Wed, 27 Jul 2022 06:45:34 GMT
+# Fri, 29 Jul 2022 18:23:34 GMT
 RUN set -eux; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPG_KEY"; 	gpg --batch --verify python.tar.xz.asc python.tar.xz; 	command -v gpgconf > /dev/null && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" python.tar.xz.asc; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-optimizations 		--enable-option-checking=fatal 		--enable-shared 		--with-lto 		--with-system-expat 		--without-ensurepip 	; 	nproc="$(nproc)"; 	make -j "$nproc" 	; 	make install; 		bin="$(readlink -ve /usr/local/bin/python3)"; 	dir="$(dirname "$bin")"; 	mkdir -p "/usr/share/gdb/auto-load/$dir"; 	cp -vL Tools/gdb/libpython.py "/usr/share/gdb/auto-load/$bin-gdb.py"; 		cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name 'libpython*.a' \) \) 		\) -exec rm -rf '{}' + 	; 		ldconfig; 		python3 --version
-# Wed, 27 Jul 2022 06:45:35 GMT
+# Fri, 29 Jul 2022 18:23:34 GMT
 RUN set -eux; 	for src in idle3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "$src" "/usr/local/bin/$dst"; 	done
-# Wed, 27 Jul 2022 06:45:35 GMT
+# Fri, 29 Jul 2022 18:23:35 GMT
 ENV PYTHON_PIP_VERSION=22.0.4
-# Wed, 27 Jul 2022 06:45:35 GMT
+# Fri, 29 Jul 2022 18:23:35 GMT
 ENV PYTHON_SETUPTOOLS_VERSION=58.1.0
-# Wed, 27 Jul 2022 06:45:35 GMT
+# Fri, 29 Jul 2022 18:23:35 GMT
 ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/49ca29908cfd49683da12f2d5a4fa5689539f9d9/public/get-pip.py
-# Wed, 27 Jul 2022 06:45:35 GMT
+# Fri, 29 Jul 2022 18:23:35 GMT
 ENV PYTHON_GET_PIP_SHA256=d077d469ce4c0beaf9cc97b73f8164ad20e68e0519f14dd886ce35d053721501
-# Wed, 27 Jul 2022 06:45:47 GMT
+# Fri, 29 Jul 2022 18:23:41 GMT
 RUN set -eux; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		export PYTHONDONTWRITEBYTECODE=1; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		--no-compile 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	rm -f get-pip.py; 		pip --version
-# Wed, 27 Jul 2022 06:45:47 GMT
+# Fri, 29 Jul 2022 18:23:41 GMT
 CMD ["python3"]
 ```
 
@@ -258,37 +258,37 @@ CMD ["python3"]
 		Last Modified: Tue, 12 Jul 2022 01:13:22 GMT  
 		Size: 45.9 MB (45915505 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:525e505a19435bf490d65092c38e434c5b90129a826855854ab0bab373208ace`  
-		Last Modified: Tue, 12 Jul 2022 03:53:27 GMT  
-		Size: 7.1 MB (7145444 bytes)  
+	-	`sha256:c6ee655d152d3acb35f3825891e9643f3691ede0af3d9d3d2148308272ad147e`  
+		Last Modified: Thu, 28 Jul 2022 13:54:29 GMT  
+		Size: 7.1 MB (7145473 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74eb3461c907077e216d2575b36b77057a62649a28cab0194edc3b42b2cf3340`  
-		Last Modified: Tue, 12 Jul 2022 03:53:27 GMT  
-		Size: 9.3 MB (9344369 bytes)  
+	-	`sha256:69443875e8fdb06680327c732654bbfa6b479a256d0d865012b3f931609bd0f3`  
+		Last Modified: Thu, 28 Jul 2022 13:54:29 GMT  
+		Size: 9.3 MB (9344322 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d286da4a3ac5357b49551fdf376045505b768736b4ca3ccebab01075c0f6c516`  
-		Last Modified: Tue, 12 Jul 2022 03:54:09 GMT  
-		Size: 47.4 MB (47360183 bytes)  
+	-	`sha256:92bdfec5c03781bcb3c6813122f21d30df45bbedb3c172824b93ddba76a9bfe0`  
+		Last Modified: Thu, 28 Jul 2022 13:54:59 GMT  
+		Size: 47.4 MB (47359742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3016782b2d1ae4471176454d19c3f9a73ba8a1314d11bfa01a1813b14a3b61c1`  
-		Last Modified: Tue, 12 Jul 2022 03:55:53 GMT  
-		Size: 168.7 MB (168702030 bytes)  
+	-	`sha256:51e1289d0371ca17ca0d7650b282d29970a2f2621a5aaf40a56ee9a5c710233d`  
+		Last Modified: Thu, 28 Jul 2022 13:55:59 GMT  
+		Size: 168.7 MB (168699581 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1b4849f783e6329af6d978ade7eba59fa80adbd00f743b0e25711d120917d829`  
-		Last Modified: Wed, 27 Jul 2022 10:54:19 GMT  
-		Size: 5.5 MB (5536675 bytes)  
+	-	`sha256:0b797e24b0d25016a025bbc75a981c11d0fa974d5ad8bb50ca3ff2095bdc26e5`  
+		Last Modified: Fri, 29 Jul 2022 19:23:20 GMT  
+		Size: 5.5 MB (5536445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f9adf2ba0c8c64620d286f68120d7402bc824f4aaede73de6c6194abad387c07`  
-		Last Modified: Wed, 27 Jul 2022 10:56:17 GMT  
-		Size: 19.6 MB (19551176 bytes)  
+	-	`sha256:66c1868bcbef99124db38c6e5aafef0b8d75f8ee60d0ee6548ce6de99408ef07`  
+		Last Modified: Fri, 29 Jul 2022 19:24:12 GMT  
+		Size: 19.6 MB (19552754 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7c7c5ca97e0234b0ed3fb4c233c54e5247f1503813472756ab204f549004650f`  
-		Last Modified: Wed, 27 Jul 2022 10:56:13 GMT  
+	-	`sha256:399ce2cb7ac08ec20a791cc44dca4be30bcca2c697f9e374248c6704980a2abf`  
+		Last Modified: Fri, 29 Jul 2022 19:24:08 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:76d59efd70d4cb0aa606bba072fc5549e5312a8c84ae90d969f746e0e323ac63`  
-		Last Modified: Wed, 27 Jul 2022 10:56:14 GMT  
-		Size: 2.9 MB (2882424 bytes)  
+	-	`sha256:583b4ea756227af39f1d321d0ead4d4a18843281ab21e65463595a99f7de00d5`  
+		Last Modified: Fri, 29 Jul 2022 19:24:09 GMT  
+		Size: 2.9 MB (2882401 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `python:3-buster` - linux; arm64 variant v8
