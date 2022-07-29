@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:435ee7ee66722c11de0310af9b0b1c9f7ead4bbadf9913635288f153811866ad`
-- Created: `2022-07-19T04:15:34.886530412Z`
-- Virtual Size: ~ 239.67 Mb  
+- Image ID: `sha256:e5c5bafaead2443b3b6a6479c50c857916d22939d12d2635192d2ddd7a67c4cd`
+- Created: `2022-07-28T17:47:34.972535026Z`
+- Virtual Size: ~ 260.36 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -13,7 +13,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-11.0.15+10`
+  - `JAVA_VERSION=jdk-11.0.16+8`
   - `JAVA_HOME=/opt/java/openjdk`
   - `TOMEE_VER=9.0.0-M8`
   - `TOMEE_BUILD=plume`
@@ -170,6 +170,74 @@ curl-7.83.1-r2 installed size:
 
 curl-7.83.1-r2 license:
 curl
+
+```
+
+### `apk` package: `encodings`
+
+```console
+encodings-1.0.5-r0 description:
+X.org font encoding files
+
+encodings-1.0.5-r0 webpage:
+http://xorg.freedesktop.org/
+
+encodings-1.0.5-r0 installed size:
+788 KiB
+
+encodings-1.0.5-r0 license:
+custom
+
+```
+
+### `apk` package: `expat`
+
+```console
+expat-2.4.8-r0 description:
+XML Parser library written in C
+
+expat-2.4.8-r0 webpage:
+https://libexpat.github.io/
+
+expat-2.4.8-r0 installed size:
+192 KiB
+
+expat-2.4.8-r0 license:
+MIT
+
+```
+
+### `apk` package: `fontconfig`
+
+```console
+fontconfig-2.14.0-r0 description:
+Library for configuring and customizing font access
+
+fontconfig-2.14.0-r0 webpage:
+https://www.freedesktop.org/wiki/Software/fontconfig
+
+fontconfig-2.14.0-r0 installed size:
+708 KiB
+
+fontconfig-2.14.0-r0 license:
+MIT
+
+```
+
+### `apk` package: `freetype`
+
+```console
+freetype-2.12.1-r0 description:
+TrueType font rendering library
+
+freetype-2.12.1-r0 webpage:
+https://www.freetype.org/
+
+freetype-2.12.1-r0 installed size:
+752 KiB
+
+freetype-2.12.1-r0 license:
+FTL GPL-2.0-or-later
 
 ```
 
@@ -411,6 +479,23 @@ MIT
 
 ```
 
+### `apk` package: `libfontenc`
+
+```console
+libfontenc-1.1.4-r0 description:
+X11 font encoding library
+
+libfontenc-1.1.4-r0 webpage:
+http://xorg.freedesktop.org/
+
+libfontenc-1.1.4-r0 installed size:
+48 KiB
+
+libfontenc-1.1.4-r0 license:
+MIT
+
+```
+
 ### `apk` package: `libgcrypt`
 
 ```console
@@ -476,6 +561,23 @@ libldap-2.6.3-r0 installed size:
 
 libldap-2.6.3-r0 license:
 OLDAP-2.8
+
+```
+
+### `apk` package: `libpng`
+
+```console
+libpng-1.6.37-r1 description:
+Portable Network Graphics library
+
+libpng-1.6.37-r1 webpage:
+http://www.libpng.org
+
+libpng-1.6.37-r1 installed size:
+204 KiB
+
+libpng-1.6.37-r1 license:
+Libpng
 
 ```
 
@@ -561,6 +663,23 @@ libunistring-1.0-r0 installed size:
 
 libunistring-1.0-r0 license:
 GPL-2.0-or-later OR LGPL-3.0-or-later
+
+```
+
+### `apk` package: `mkfontscale`
+
+```console
+mkfontscale-1.2.2-r0 description:
+Scalable font index generator for X
+
+mkfontscale-1.2.2-r0 webpage:
+http://xorg.freedesktop.org
+
+mkfontscale-1.2.2-r0 installed size:
+56 KiB
+
+mkfontscale-1.2.2-r0 license:
+MIT
 
 ```
 
@@ -799,6 +918,23 @@ ssl_client-1.35.0-r15 installed size:
 
 ssl_client-1.35.0-r15 license:
 GPL-2.0-only
+
+```
+
+### `apk` package: `ttf-dejavu`
+
+```console
+ttf-dejavu-2.37-r1 description:
+Font family based on the Bitstream Vera Fonts with a wider range of characters
+
+ttf-dejavu-2.37-r1 webpage:
+https://dejavu-fonts.github.io/
+
+ttf-dejavu-2.37-r1 installed size:
+17 MiB
+
+ttf-dejavu-2.37-r1 license:
+custom
 
 ```
 
