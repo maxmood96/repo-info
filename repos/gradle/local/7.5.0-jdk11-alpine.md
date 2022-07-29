@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:29b9a51eb6743c0b2bcf80964cf8557869d9a01200a8807c9fa55460800b5e5c`
-- Created: `2022-07-19T05:00:08.562408594Z`
-- Virtual Size: ~ 560.73 Mb  
+- Image ID: `sha256:110b668574a21eede93b2da0aeddd393faf3ad6321a25ee56fc911228829db90`
+- Created: `2022-07-28T17:06:23.889679752Z`
+- Virtual Size: ~ 581.12 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
@@ -13,7 +13,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-11.0.15+10`
+  - `JAVA_VERSION=jdk-11.0.16+8`
   - `JAVA_HOME=/opt/java/openjdk`
   - `GRADLE_HOME=/opt/gradle`
   - `GRADLE_VERSION=7.5`
@@ -190,6 +190,23 @@ MPL-2.0 AND MIT
 
 ```
 
+### `apk` package: `encodings`
+
+```console
+encodings-1.0.5-r0 description:
+X.org font encoding files
+
+encodings-1.0.5-r0 webpage:
+http://xorg.freedesktop.org/
+
+encodings-1.0.5-r0 installed size:
+788 KiB
+
+encodings-1.0.5-r0 license:
+custom
+
+```
+
 ### `apk` package: `expat`
 
 ```console
@@ -204,6 +221,40 @@ expat-2.4.8-r0 installed size:
 
 expat-2.4.8-r0 license:
 MIT
+
+```
+
+### `apk` package: `fontconfig`
+
+```console
+fontconfig-2.14.0-r0 description:
+Library for configuring and customizing font access
+
+fontconfig-2.14.0-r0 webpage:
+https://www.freedesktop.org/wiki/Software/fontconfig
+
+fontconfig-2.14.0-r0 installed size:
+708 KiB
+
+fontconfig-2.14.0-r0 license:
+MIT
+
+```
+
+### `apk` package: `freetype`
+
+```console
+freetype-2.12.1-r0 description:
+TrueType font rendering library
+
+freetype-2.12.1-r0 webpage:
+https://www.freetype.org/
+
+freetype-2.12.1-r0 installed size:
+752 KiB
+
+freetype-2.12.1-r0 license:
+FTL GPL-2.0-or-later
 
 ```
 
@@ -244,16 +295,16 @@ GPL-2.0-or-later
 ### `apk` package: `git-lfs`
 
 ```console
-git-lfs-3.1.4-r1 description:
+git-lfs-3.1.4-r2 description:
 Git extension for versioning large files
 
-git-lfs-3.1.4-r1 webpage:
+git-lfs-3.1.4-r2 webpage:
 https://git-lfs.github.io/
 
-git-lfs-3.1.4-r1 installed size:
+git-lfs-3.1.4-r2 installed size:
 10 MiB
 
-git-lfs-3.1.4-r1 license:
+git-lfs-3.1.4-r2 license:
 MIT
 
 ```
@@ -343,6 +394,23 @@ MIT
 
 ```
 
+### `apk` package: `libfontenc`
+
+```console
+libfontenc-1.1.4-r0 description:
+X11 font encoding library
+
+libfontenc-1.1.4-r0 webpage:
+http://xorg.freedesktop.org/
+
+libfontenc-1.1.4-r0 installed size:
+48 KiB
+
+libfontenc-1.1.4-r0 license:
+MIT
+
+```
+
 ### `apk` package: `libgcc`
 
 ```console
@@ -357,6 +425,23 @@ libgcc-11.2.1_git20220219-r2 installed size:
 
 libgcc-11.2.1_git20220219-r2 license:
 GPL-2.0-or-later LGPL-2.1-or-later
+
+```
+
+### `apk` package: `libpng`
+
+```console
+libpng-1.6.37-r1 description:
+Portable Network Graphics library
+
+libpng-1.6.37-r1 webpage:
+http://www.libpng.org
+
+libpng-1.6.37-r1 installed size:
+204 KiB
+
+libpng-1.6.37-r1 license:
+Libpng
 
 ```
 
@@ -476,6 +561,23 @@ mercurial-6.1.1-r0 installed size:
 
 mercurial-6.1.1-r0 license:
 GPL-2.0-or-later
+
+```
+
+### `apk` package: `mkfontscale`
+
+```console
+mkfontscale-1.2.2-r0 description:
+Scalable font index generator for X
+
+mkfontscale-1.2.2-r0 webpage:
+http://xorg.freedesktop.org
+
+mkfontscale-1.2.2-r0 installed size:
+56 KiB
+
+mkfontscale-1.2.2-r0 license:
+MIT
 
 ```
 
@@ -635,16 +737,16 @@ BSD-3-Clause
 ### `apk` package: `python3`
 
 ```console
-python3-3.10.4-r0 description:
+python3-3.10.5-r0 description:
 A high-level scripting language
 
-python3-3.10.4-r0 webpage:
+python3-3.10.5-r0 webpage:
 https://www.python.org/
 
-python3-3.10.4-r0 installed size:
+python3-3.10.5-r0 installed size:
 47 MiB
 
-python3-3.10.4-r0 license:
+python3-3.10.5-r0 license:
 PSF-2.0
 
 ```
@@ -765,6 +867,23 @@ subversion-libs-1.14.2-r1 installed size:
 
 subversion-libs-1.14.2-r1 license:
 Apache-2.0 BSD
+
+```
+
+### `apk` package: `ttf-dejavu`
+
+```console
+ttf-dejavu-2.37-r1 description:
+Font family based on the Bitstream Vera Fonts with a wider range of characters
+
+ttf-dejavu-2.37-r1 webpage:
+https://dejavu-fonts.github.io/
+
+ttf-dejavu-2.37-r1 installed size:
+17 MiB
+
+ttf-dejavu-2.37-r1 license:
+custom
 
 ```
 

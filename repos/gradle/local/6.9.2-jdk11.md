@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a632c7cf139cbc98c4f30a63fc3dffd2caf724b9df83fa735de96cdbd08becec`
-- Created: `2022-06-07T04:22:32.462389413Z`
-- Virtual Size: ~ 714.33 Mb  
+- Image ID: `sha256:7237ec47535e1789679d009d5bf438b544c00e253878665a37a442981d5cb854`
+- Created: `2022-07-28T17:08:00.479694774Z`
+- Virtual Size: ~ 715.20 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
@@ -13,7 +13,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-11.0.15+10`
+  - `JAVA_VERSION=jdk-11.0.16+8`
   - `JAVA_HOME=/opt/java/openjdk`
   - `GRADLE_HOME=/opt/gradle`
   - `GRADLE_VERSION=6.9.2`
@@ -383,10 +383,9 @@ $ apt-get source -qq --print-uris coreutils=8.32-4.1ubuntu1
 Binary Packages:
 
 - `curl=7.81.0-1ubuntu1.2`
-- `libcurl3-gnutls:amd64=7.81.0-1ubuntu1.2`
 - `libcurl4:amd64=7.81.0-1ubuntu1.2`
 
-Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4/copyright`)
+Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
 - `BSD-3-Clause`
 - `BSD-4-Clause`
@@ -398,6 +397,31 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+
+### `dpkg` source package: `curl=7.81.0-1ubuntu1.3`
+
+Binary Packages:
+
+- `libcurl3-gnutls:amd64=7.81.0-1ubuntu1.3`
+
+Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`)
+
+- `BSD-3-Clause`
+- `BSD-4-Clause`
+- `ISC`
+- `curl`
+- `other`
+- `public-domain`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.3
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.3.dsc' curl_7.81.0-1ubuntu1.3.dsc 3139 SHA512:71317249af787a0cbb7e25ec4670a19572a4fafb8195bc8b4e1d68855fe044c5558b7b7294bde5a22af7031db1a7a03eff4e23a7f2cbef9cdcfd32449cc7a8a8
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz' curl_7.81.0.orig.tar.gz 4188040 SHA512:e3084f0fa083f7f93eac923edbfdddb5fd0a372b94673ba9d4427a2b95508898c15ecdf63b99a1c1f6cf3215e27b06cbaa2b7073df038d43b362e586f92495d3
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz.asc' curl_7.81.0.orig.tar.gz.asc 488 SHA512:92bc5ede831551285d67b03abe8400c609ad31c9d33e324ee5c41b92dd5c2a0245a09a396bd76807b3e44bcfef944b1e16ac266264f7b85d27cc1c072a6e82bd
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.3.debian.tar.xz' curl_7.81.0-1ubuntu1.3.debian.tar.xz 50984 SHA512:9e3294c374f5fcca421ce8053a86794a1056053cd5a14d9e2f760478dc19e6b0eeccacac485c5f5dda797857b6235cece735376d7471ff89ef3c8e5771ec989e
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg2-3ubuntu1`
 
@@ -794,12 +818,12 @@ $ apt-get source -qq --print-uris git-lfs=3.0.2-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/g/git-lfs/git-lfs_3.0.2-1.debian.tar.xz' git-lfs_3.0.2-1.debian.tar.xz 4224 SHA512:da41545c240220fb92dbd5d38218ed3f0a0e609f5d9aab2d6d0e550cd908d87e2bacd5d22a146a7157836f23308c9c36f0b941fec3e8e799c2a75ce6dbd08ffd
 ```
 
-### `dpkg` source package: `git=1:2.34.1-1ubuntu1.2`
+### `dpkg` source package: `git=1:2.34.1-1ubuntu1.4`
 
 Binary Packages:
 
-- `git=1:2.34.1-1ubuntu1.2`
-- `git-man=1:2.34.1-1ubuntu1.2`
+- `git=1:2.34.1-1ubuntu1.4`
+- `git-man=1:2.34.1-1ubuntu1.4`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -821,9 +845,14 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris git=1:2.34.1-1ubuntu1.4
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.34.1-1ubuntu1.4.dsc' git_2.34.1-1ubuntu1.4.dsc 2927 SHA512:a5cafdf105caeb9cd109c87d0a416464d734bb994a2689ff424da74913c4dcb4e5243b58649a4faf1faeda4067edd4f0425573d8ea22c4cf78062550052e020a
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.34.1.orig.tar.xz' git_2.34.1.orig.tar.xz 6623760 SHA512:a1a8e9e6f64b1da25508fbd2f783564dcdbe181fb5ff1ebab3bdac6db6094e18acc334479a1abf22ac17ce4f733cc3e10a664db9ab234cd523735a3f027b42db
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.34.1-1ubuntu1.4.debian.tar.xz' git_2.34.1-1ubuntu1.4.debian.tar.xz 716400 SHA512:652965092b6079306a70215f16df7e52278a2bd166821d6876fb847d4c5bae29649f91791b48f1b91113b2da9a4c1f971d3be78cb02135d543fec4206c6c11e6
+```
 
 ### `dpkg` source package: `glibc=2.35-0ubuntu3`
 
@@ -2171,14 +2200,14 @@ $ apt-get source -qq --print-uris python3-defaults=3.10.4-0ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.10.4-0ubuntu2.tar.gz' python3-defaults_3.10.4-0ubuntu2.tar.gz 145230 SHA512:e7d652225cbd08c8cdf367948c479cc2315883032d34c68ce5b688908ba535345d18e66bd124a4eba3828d37ce4c6efd6b8764f0bbc6518740e70bc5e3eef521
 ```
 
-### `dpkg` source package: `python3.10=3.10.4-3`
+### `dpkg` source package: `python3.10=3.10.4-3ubuntu0.1`
 
 Binary Packages:
 
-- `libpython3.10-minimal:amd64=3.10.4-3`
-- `libpython3.10-stdlib:amd64=3.10.4-3`
-- `python3.10=3.10.4-3`
-- `python3.10-minimal=3.10.4-3`
+- `libpython3.10-minimal:amd64=3.10.4-3ubuntu0.1`
+- `libpython3.10-stdlib:amd64=3.10.4-3ubuntu0.1`
+- `python3.10=3.10.4-3ubuntu0.1`
+- `python3.10-minimal=3.10.4-3ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/share/doc/libpython3.10-stdlib/copyright`, `/usr/share/doc/python3.10/copyright`, `/usr/share/doc/python3.10-minimal/copyright`)
 
@@ -2203,10 +2232,10 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python3.10=3.10.4-3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.4-3.dsc' python3.10_3.10.4-3.dsc 3609 SHA512:4b327e8d523ad2c24de23fc66191eb1b4d2957c142f8b1ad056104ba19e5a0858210e4b7828529f127061cdd8ecf6c0bda302aad0e1af024d90abadb2cae35a9
+$ apt-get source -qq --print-uris python3.10=3.10.4-3ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.4-3ubuntu0.1.dsc' python3.10_3.10.4-3ubuntu0.1.dsc 3704 SHA512:da635e036b2c7e88dd95e8e09402ebebdf2d8ba6061511853ae75570a136e9af6f0ef3ee114270783307c816bc79e9e041972b218c4ec5cfe34973c5fd2d9574
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.4.orig.tar.xz' python3.10_3.10.4.orig.tar.xz 19342692 SHA512:6c9aeecddc55c7896b2e8527fca131c7b2b6127d56ce1a001ccedfebf590334e0c0bb7c517ed3cf1da3c1910e002552b56aa7e03eeb672f42ff0bd8150799113
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.4-3.debian.tar.xz' python3.10_3.10.4-3.debian.tar.xz 217284 SHA512:de20223150b760fa60faa8e8af2442086a7757c48a1c192300d16ed78035e91836ed52cdf15282ce272d702f14b66b6c4797adcf9df01fa95dd03f72f6795106
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.4-3ubuntu0.1.debian.tar.xz' python3.10_3.10.4-3ubuntu0.1.debian.tar.xz 219136 SHA512:b80eb1291c0aef65c6c313e780d7dcf13b874743cde6c16c4a4e0f6683670d54a23c58115270d49781c25d543b7efe273c89466a04f505850adf66c45dba5bea
 ```
 
 ### `dpkg` source package: `readline=8.1.2-1`
