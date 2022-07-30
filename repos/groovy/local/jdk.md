@@ -1,10 +1,10 @@
-# `groovy:3.0.11-jdk17`
+# `groovy:3.0.12-jdk17`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a8e1a2f62d40d17b3a4c30ad22765840ad6a2ffde15c946ee922739eeda72a0a`
-- Created: `2022-06-07T04:52:16.29613165Z`
-- Virtual Size: ~ 513.28 Mb  
+- Image ID: `sha256:ccf577befc9b358f374af70e09d37b6c5bd1e3f4e8812c24d6bf315e6398841a`
+- Created: `2022-07-28T17:20:07.823423236Z`
+- Virtual Size: ~ 513.16 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["groovysh"]`
@@ -13,10 +13,10 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-17.0.3+7`
+  - `JAVA_VERSION=jdk-17.0.4+8`
   - `JAVA_HOME=/opt/java/openjdk`
   - `GROOVY_HOME=/opt/groovy`
-  - `GROOVY_VERSION=3.0.11`
+  - `GROOVY_VERSION=3.0.12`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -136,13 +136,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=12ubuntu4.1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_12ubuntu4.1.dsc' base-files_12ubuntu4.1.dsc 1277 SHA512:565061fbc9a6565a15ae571d3c378fcb377a00324a09b4926d8a290c46b57cd36993c8da649a143f425028c2cccd80beda1d893f6cd7fb14065cf4f3fed769a4
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_12ubuntu4.1.tar.xz' base-files_12ubuntu4.1.tar.xz 81772 SHA512:2076b8b9baab0eea592bb52486269daa748892068aa059441da027e5cf986de29cbd88410466615654eb270e248edf95318939badfe0b72758ae31f2d78bee91
-```
 
 ### `dpkg` source package: `base-passwd=3.5.52build1`
 
@@ -700,21 +696,21 @@ $ apt-get source -qq --print-uris gmp=2:6.2.1+dfsg-3ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gmp/gmp_6.2.1%2bdfsg-3ubuntu1.debian.tar.xz' gmp_6.2.1+dfsg-3ubuntu1.debian.tar.xz 40996 SHA512:d7e0a1165a42b11a26a0f9232193db41ce2e7b1f5ea50d258e156fc9d80f9a74b6739491ec73cc1e909a3d09e029f90c3be1460c993690c5081ef8c6a169a4c3
 ```
 
-### `dpkg` source package: `gnupg2=2.2.27-3ubuntu2`
+### `dpkg` source package: `gnupg2=2.2.27-3ubuntu2.1`
 
 Binary Packages:
 
-- `dirmngr=2.2.27-3ubuntu2`
-- `gnupg=2.2.27-3ubuntu2`
-- `gnupg-l10n=2.2.27-3ubuntu2`
-- `gnupg-utils=2.2.27-3ubuntu2`
-- `gpg=2.2.27-3ubuntu2`
-- `gpg-agent=2.2.27-3ubuntu2`
-- `gpg-wks-client=2.2.27-3ubuntu2`
-- `gpg-wks-server=2.2.27-3ubuntu2`
-- `gpgconf=2.2.27-3ubuntu2`
-- `gpgsm=2.2.27-3ubuntu2`
-- `gpgv=2.2.27-3ubuntu2`
+- `dirmngr=2.2.27-3ubuntu2.1`
+- `gnupg=2.2.27-3ubuntu2.1`
+- `gnupg-l10n=2.2.27-3ubuntu2.1`
+- `gnupg-utils=2.2.27-3ubuntu2.1`
+- `gpg=2.2.27-3ubuntu2.1`
+- `gpg-agent=2.2.27-3ubuntu2.1`
+- `gpg-wks-client=2.2.27-3ubuntu2.1`
+- `gpg-wks-server=2.2.27-3ubuntu2.1`
+- `gpgconf=2.2.27-3ubuntu2.1`
+- `gpgsm=2.2.27-3ubuntu2.1`
+- `gpgv=2.2.27-3ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gnupg-l10n/copyright`, `/usr/share/doc/gnupg-utils/copyright`, `/usr/share/doc/gpg/copyright`, `/usr/share/doc/gpg-agent/copyright`, `/usr/share/doc/gpg-wks-client/copyright`, `/usr/share/doc/gpg-wks-server/copyright`, `/usr/share/doc/gpgconf/copyright`, `/usr/share/doc/gpgsm/copyright`, `/usr/share/doc/gpgv/copyright`)
 
@@ -734,10 +730,10 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnup
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnupg2=2.2.27-3ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.27-3ubuntu2.dsc' gnupg2_2.2.27-3ubuntu2.dsc 3373 SHA512:fbe7a583145d47a71228fa102a687f46f0506a03fc7a77ff3a73dd7c850f3e1d53cafb164ea0299bc82f93cb95774b95c1d71b4e6bdeaabde19caba87ab46175
+$ apt-get source -qq --print-uris gnupg2=2.2.27-3ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.27-3ubuntu2.1.dsc' gnupg2_2.2.27-3ubuntu2.1.dsc 3726 SHA512:ed001ea6507654af663bfb1bfc051cd8a2deb9b8bb5b16273f7c3aa82141bdbc1cb2e85bf0cb61a26ea474f0df43e9a34c687722f757ed99bbd86b9a08866744
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.27.orig.tar.bz2' gnupg2_2.2.27.orig.tar.bz2 7191555 SHA512:cf336962116c9c08ac80b1299654b94948033ef51d6d5e7f54c2f07bbf7d92c7b0bddb606ceee2cdd837063f519b8d59af5a82816b840a0fc47d90c07b0e95ab
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.27-3ubuntu2.debian.tar.xz' gnupg2_2.2.27-3ubuntu2.debian.tar.xz 66056 SHA512:84dcd0406f9ee7d890c18736dfe674aa3719ccda93288fdbcc36de9969f7fcca4bd3e54a347a37b85d0537fbbd8e5f9218da9a2a01c9bab3de64408cf7743491
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.27-3ubuntu2.1.debian.tar.xz' gnupg2_2.2.27-3ubuntu2.1.debian.tar.xz 66676 SHA512:6f8aea12b515ef1b8558ac925bb84ae6f1743739c0edfc64e02952479d4a1271f8f6ee8fc23461164116f3f8396376009ed1ea609c55a59e4936f7d02b1f828a
 ```
 
 ### `dpkg` source package: `gnutls28=3.7.3-4ubuntu1`
