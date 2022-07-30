@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9506f2e8d3ed1e133fc9bdda0b1f907506cf32123e4fec81ed5cd5592def6cc6`
-- Created: `2022-07-22T22:20:13.075331516Z`
-- Virtual Size: ~ 36.95 Mb  
+- Image ID: `sha256:baf06d14bcc13554634d9bbcdda51aa429defaa5ddaa85c8e56445e8dd0f8eb5`
+- Created: `2022-07-30T00:20:06.954001007Z`
+- Virtual Size: ~ 37.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 - Labels:
-  - `build-date=20220722`
+  - `build-date=20220729`
   - `name=Photon OS x86_64/4.0 Base Image`
   - `vendor=VMware`
 
@@ -59,7 +59,7 @@ Licenses (from `rpm --query`): GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `elfutils-libelf-0.181-4.ph4.x86_64`
+### `rpm` package: `elfutils-libelf-0.181-5.ph4.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ or LGPLv3+
 
@@ -149,7 +149,7 @@ Licenses (from `rpm --query`): MPLv2.0
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `nss-libs-3.72-1.ph4.x86_64`
+### `rpm` package: `nss-libs-3.72-2.ph4.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
@@ -185,13 +185,13 @@ Licenses (from `rpm --query`): GPLv3+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `rpm-libs-4.16.1.3-9.ph4.x86_64`
+### `rpm` package: `rpm-libs-4.16.1.3-10.ph4.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `sqlite-libs-3.33.0-1.ph4.x86_64`
+### `rpm` package: `sqlite-libs-3.38.5-1.ph4.x86_64`
 
 Licenses (from `rpm --query`): Public Domain
 
