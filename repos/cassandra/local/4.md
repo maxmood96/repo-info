@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:efe0d8614dc7247689655c782cdd633b281b14af34893d6d7b09a2c0310252cb`
-- Created: `2022-07-20T23:24:49.334164599Z`
-- Virtual Size: ~ 343.08 Mb  
+- Image ID: `sha256:64d85619fc43fb219709f1b0fb6b196fcdf87319fa81b269e028aa9643998114`
+- Created: `2022-07-28T16:47:51.632505356Z`
+- Virtual Size: ~ 343.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-11.0.15+10`
+  - `JAVA_VERSION=jdk-11.0.16+8`
   - `JAVA_HOME=/opt/java/openjdk`
   - `GOSU_VERSION=1.14`
   - `CASSANDRA_HOME=/opt/cassandra`
@@ -1790,14 +1790,14 @@ $ apt-get source -qq --print-uris python3-defaults=3.8.2-0ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.8.2-0ubuntu2.tar.gz' python3-defaults_3.8.2-0ubuntu2.tar.gz 138226 SHA256:e4969a54306421ebfd195d0c064935db7c53f9f152d8abaae63da33819235e9a
 ```
 
-### `dpkg` source package: `python3.8=3.8.10-0ubuntu1~20.04.4`
+### `dpkg` source package: `python3.8=3.8.10-0ubuntu1~20.04.5`
 
 Binary Packages:
 
-- `libpython3.8-minimal:amd64=3.8.10-0ubuntu1~20.04.4`
-- `libpython3.8-stdlib:amd64=3.8.10-0ubuntu1~20.04.4`
-- `python3.8=3.8.10-0ubuntu1~20.04.4`
-- `python3.8-minimal=3.8.10-0ubuntu1~20.04.4`
+- `libpython3.8-minimal:amd64=3.8.10-0ubuntu1~20.04.5`
+- `libpython3.8-stdlib:amd64=3.8.10-0ubuntu1~20.04.5`
+- `python3.8=3.8.10-0ubuntu1~20.04.5`
+- `python3.8-minimal=3.8.10-0ubuntu1~20.04.5`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.8-minimal/copyright`, `/usr/share/doc/libpython3.8-stdlib/copyright`, `/usr/share/doc/python3.8/copyright`, `/usr/share/doc/python3.8-minimal/copyright`)
 
@@ -1819,9 +1819,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.8-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.8=3.8.10-0ubuntu1~20.04.5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.10-0ubuntu1%7e20.04.5.dsc' python3.8_3.8.10-0ubuntu1~20.04.5.dsc 3504 SHA512:907b3bef5ace2b3b6fbfa701ea22d082d9d978dfff7ed5ef7e71b81db9499d079a5899269f7ae547f59163cd7106352d11ad38cec1c97821daf28249f698f195
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.10.orig.tar.xz' python3.8_3.8.10.orig.tar.xz 18433456 SHA512:0be69705483ff9692e12048a96180e586f9d84c8d53066629f7fb2389585eb75c0f3506bb8182936e322508f58b71f4d8c6dfebbab9049b31b49da11d3b98e80
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.10-0ubuntu1%7e20.04.5.debian.tar.xz' python3.8_3.8.10-0ubuntu1~20.04.5.debian.tar.xz 218000 SHA512:13893c5418ffd262b2f92e53b22253689dd00202ea18fda257337e7821cde67be68d9d3b3653bd532c86ae3e5245aed8cce9b93e6208bd7ec5bad4a4a1520331
+```
 
 ### `dpkg` source package: `readline=8.0-4`
 
