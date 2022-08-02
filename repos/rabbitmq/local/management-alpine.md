@@ -1,10 +1,10 @@
-# `rabbitmq:3.10.6-management-alpine`
+# `rabbitmq:3.10.7-management-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:234819f7c6f66cb9409596a858eb3e68edf43f0d7b40525bfc13a8fe5617cf10`
-- Created: `2022-07-18T23:53:18.353033612Z`
-- Virtual Size: ~ 170.77 Mb  
+- Image ID: `sha256:d9b9f6da06043acc22ede7df1031ccaebb9535af6157cd69083fdfc5e3546c1e`
+- Created: `2022-08-02T20:46:38.84146965Z`
+- Virtual Size: ~ 170.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `OTP_VERSION=24.3.4.2`
   - `OTP_SOURCE_SHA256=0376d50f867a29426d47600056e8cc49c95b51ef172b6b9030628e35aecd46af`
   - `RABBITMQ_DATA_DIR=/var/lib/rabbitmq`
-  - `RABBITMQ_VERSION=3.10.6`
+  - `RABBITMQ_VERSION=3.10.7`
   - `RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA`
   - `RABBITMQ_HOME=/opt/rabbitmq`
   - `HOME=/var/lib/rabbitmq`
@@ -438,16 +438,16 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 ### `apk` package: `python3`
 
 ```console
-python3-3.10.4-r0 description:
+python3-3.10.5-r0 description:
 A high-level scripting language
 
-python3-3.10.4-r0 webpage:
+python3-3.10.5-r0 webpage:
 https://www.python.org/
 
-python3-3.10.4-r0 installed size:
+python3-3.10.5-r0 installed size:
 47 MiB
 
-python3-3.10.4-r0 license:
+python3-3.10.5-r0 license:
 PSF-2.0
 
 ```
