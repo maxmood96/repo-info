@@ -1,7 +1,7 @@
 ## `ros:galactic-ros-base`
 
 ```console
-$ docker pull ros@sha256:232b547a3b5a4e37b9b348c6968f0497059af64cd335999e727034592710dc7b
+$ docker pull ros@sha256:b63cde11f0c07569e7d81bd7495993d35797ddf95f2c04de01f8ff641f580aea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -109,96 +109,96 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-galacti
 ### `ros:galactic-ros-base` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:c1d264eb10ace68b46c567ac3e2b3d4a693fc9e5ed6c29ff6f52f516557969ea
+$ docker pull ros@sha256:d75f46e141a80f9b7cff2cf238925c2af89d02ac8adef6b989645cc01ce2eef2
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **223.1 MB (223116814 bytes)**  
+-	Total Size: **223.1 MB (223132370 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:75bdf35b32ef24656ee3da69d30e7659542b10f06f55d51ebbfa6753742a7e2a`
+-	Image ID: `sha256:c5ac4a489929fe9fffc868878c7d4ec54fa785d4d765c1994394c108c9ab7395`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 07 Jun 2022 01:25:15 GMT
-ADD file:8bb0809a8ac8e978274cf731cff7529372088d22c5b0233a28f01ef414aefbca in / 
-# Tue, 07 Jun 2022 01:25:16 GMT
+# Tue, 02 Aug 2022 01:18:51 GMT
+ADD file:151548d1bfac57d762f2c0b18b2378c363ffd1568da9fecd4be611db4832e8e2 in / 
+# Tue, 02 Aug 2022 01:18:51 GMT
 CMD ["bash"]
-# Tue, 07 Jun 2022 05:53:05 GMT
+# Tue, 02 Aug 2022 15:08:52 GMT
 RUN echo 'Etc/UTC' > /etc/timezone &&     ln -s /usr/share/zoneinfo/Etc/UTC /etc/localtime &&     apt-get update &&     apt-get install -q -y --no-install-recommends tzdata &&     rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jun 2022 05:53:14 GMT
+# Tue, 02 Aug 2022 15:09:02 GMT
 RUN apt-get update && apt-get install -q -y --no-install-recommends     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/*
-# Tue, 07 Jun 2022 05:58:09 GMT
+# Tue, 02 Aug 2022 15:20:59 GMT
 RUN echo "deb http://packages.ros.org/ros2/ubuntu focal main" > /etc/apt/sources.list.d/ros2-latest.list
-# Tue, 07 Jun 2022 05:58:11 GMT
+# Tue, 02 Aug 2022 15:21:00 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
-# Tue, 07 Jun 2022 05:58:12 GMT
+# Tue, 02 Aug 2022 15:21:01 GMT
 ENV LANG=C.UTF-8
-# Tue, 07 Jun 2022 05:58:13 GMT
+# Tue, 02 Aug 2022 15:21:02 GMT
 ENV LC_ALL=C.UTF-8
-# Tue, 07 Jun 2022 06:01:24 GMT
+# Tue, 02 Aug 2022 15:24:13 GMT
 ENV ROS_DISTRO=galactic
-# Tue, 07 Jun 2022 06:02:12 GMT
+# Tue, 02 Aug 2022 15:25:03 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     ros-galactic-ros-core=0.9.3-2*     && rm -rf /var/lib/apt/lists/*
-# Mon, 11 Jul 2022 23:59:03 GMT
+# Tue, 02 Aug 2022 15:25:05 GMT
 COPY file:ec5b16a0e777d7d7d041a72ffc817bf5f7b375662afa0c404f3ca36fad1afb90 in / 
-# Mon, 11 Jul 2022 23:59:04 GMT
+# Tue, 02 Aug 2022 15:25:06 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Mon, 11 Jul 2022 23:59:05 GMT
+# Tue, 02 Aug 2022 15:25:07 GMT
 CMD ["bash"]
-# Mon, 11 Jul 2022 23:59:30 GMT
+# Tue, 02 Aug 2022 15:25:36 GMT
 RUN apt-get update && apt-get install --no-install-recommends -y     build-essential     git     python3-colcon-common-extensions     python3-colcon-mixin     python3-rosdep     python3-vcstool     && rm -rf /var/lib/apt/lists/*
-# Mon, 11 Jul 2022 23:59:35 GMT
+# Tue, 02 Aug 2022 15:25:41 GMT
 RUN rosdep init &&   rosdep update --rosdistro $ROS_DISTRO
-# Mon, 11 Jul 2022 23:59:38 GMT
+# Tue, 02 Aug 2022 15:25:44 GMT
 RUN colcon mixin add default       https://raw.githubusercontent.com/colcon/colcon-mixin-repository/master/index.yaml &&     colcon mixin update &&     colcon metadata add default       https://raw.githubusercontent.com/colcon/colcon-metadata-repository/master/index.yaml &&     colcon metadata update
-# Mon, 11 Jul 2022 23:59:58 GMT
+# Tue, 02 Aug 2022 15:26:04 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     ros-galactic-ros-base=0.9.3-2*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:11e23ac719b33170b39b7e30b8027dc09c9cbad6b503b2b6b3ebbd9d33f4adad`  
-		Last Modified: Thu, 02 Jun 2022 08:33:07 GMT  
-		Size: 27.2 MB (27191210 bytes)  
+	-	`sha256:a749a280e3e905de447c3d95a39e8aa1ede5835a6eadeb0c11596051592b675b`  
+		Last Modified: Tue, 02 Aug 2022 01:20:32 GMT  
+		Size: 27.2 MB (27191804 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:260269f7c7c500761ab4d24037f4187c4da07bfe2287a50d134b0421fad862ac`  
-		Last Modified: Tue, 07 Jun 2022 06:18:02 GMT  
-		Size: 1.2 MB (1182691 bytes)  
+	-	`sha256:87c8ebbb56369bd1ed2d75b8a0a88d9d1bc47b0a1cfccb1e93dc48e9a8625ef5`  
+		Last Modified: Tue, 02 Aug 2022 15:41:24 GMT  
+		Size: 1.2 MB (1182921 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3124e11618c0a455d11e98a3c2abad2b0dfa785eb7e7e709b4e9880836df1802`  
-		Last Modified: Tue, 07 Jun 2022 06:18:00 GMT  
-		Size: 5.3 MB (5322854 bytes)  
+	-	`sha256:a3c3f36ad7dd9a934fe1ffaa3cdb30e2f32f650f9c0809903abc7be683bd8be9`  
+		Last Modified: Tue, 02 Aug 2022 15:41:22 GMT  
+		Size: 5.3 MB (5323455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:696ba1af7accc591a88c8a5f7fcf1bf476eff87854e2eac51402705fb2a99e6d`  
-		Last Modified: Tue, 07 Jun 2022 06:20:40 GMT  
-		Size: 229.0 B  
+	-	`sha256:2c5618f497b1c1b8a6eae1767e0c0d3f9a8a2fb26c2f1602b04c31fb91968169`  
+		Last Modified: Tue, 02 Aug 2022 15:46:29 GMT  
+		Size: 228.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3de599d7de9bc16e737c7d0bfa8e04fbc3af9a6e8c01427667056cf9b535382b`  
-		Last Modified: Tue, 07 Jun 2022 06:20:40 GMT  
-		Size: 1.9 KB (1946 bytes)  
+	-	`sha256:486f2f820ed7564680a0acfc7dec6a13bd355944a9bc517c80dce4d3e58691fe`  
+		Last Modified: Tue, 02 Aug 2022 15:46:29 GMT  
+		Size: 1.9 KB (1948 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45025b4c3908f5af9c9a4562800e13737a9d64436d4921a61e77eb06ce9d36d8`  
-		Last Modified: Tue, 07 Jun 2022 06:22:18 GMT  
-		Size: 100.3 MB (100299397 bytes)  
+	-	`sha256:2ec24629b846176e31ddaaf8b24b1ddfa5c013c36a5adc644cc1ea9cbfaf1f0d`  
+		Last Modified: Tue, 02 Aug 2022 15:48:08 GMT  
+		Size: 100.3 MB (100301595 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43434c2c4bf4a9d1242279f72a2e62ab35041d7aa84cd079ecc46a811f90f735`  
-		Last Modified: Tue, 12 Jul 2022 00:17:33 GMT  
-		Size: 196.0 B  
+	-	`sha256:1fb6c32d186e05482bc0d52ca6d3348f8f2135fe0ce5cb80694cbf0c402904ab`  
+		Last Modified: Tue, 02 Aug 2022 15:47:51 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03f9fae1de6cc90dc59e2a4530cc5a385af707745c1af9d18fb1631b2d616d53`  
-		Last Modified: Tue, 12 Jul 2022 00:17:53 GMT  
-		Size: 67.4 MB (67391927 bytes)  
+	-	`sha256:c1f1bc7aab31ae221d1d0a204692f57529cc52be37d783e9408e6091c9140e30`  
+		Last Modified: Tue, 02 Aug 2022 15:48:30 GMT  
+		Size: 67.4 MB (67403003 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d4727d441bd369009c099e7653d2b46e14deaef5255ea226be5ff95fcc17b9b`  
-		Last Modified: Tue, 12 Jul 2022 00:17:44 GMT  
-		Size: 271.1 KB (271077 bytes)  
+	-	`sha256:8728db5450b6ae980d219774ae0acd473093c7203a814add3754b37fa58d2f16`  
+		Last Modified: Tue, 02 Aug 2022 15:48:20 GMT  
+		Size: 271.8 KB (271758 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44ce88d6c5986ba9310ee5c65c1582a636c916d2afe1d18e384f6bfea066e7e6`  
-		Last Modified: Tue, 12 Jul 2022 00:17:44 GMT  
-		Size: 2.2 KB (2183 bytes)  
+	-	`sha256:58b3c45ed46817bdd81a5f97bc0ac2f937e60aba727035f3fda0c52b1e8d3766`  
+		Last Modified: Tue, 02 Aug 2022 15:48:20 GMT  
+		Size: 2.2 KB (2208 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a774d280c626b294f9c30ddb8c793f49732dfc848f8a129c774390ef8c63ba8d`  
-		Last Modified: Tue, 12 Jul 2022 00:17:47 GMT  
-		Size: 21.5 MB (21453104 bytes)  
+	-	`sha256:0fb12350bd7ee355d38d341f83cd1fc612133c69ea151b66e1784eeb2e27e4a4`  
+		Last Modified: Tue, 02 Aug 2022 15:48:23 GMT  
+		Size: 21.5 MB (21453253 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
