@@ -485,13 +485,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=12ubuntu4.1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_12ubuntu4.1.dsc' base-files_12ubuntu4.1.dsc 1277 SHA512:565061fbc9a6565a15ae571d3c378fcb377a00324a09b4926d8a290c46b57cd36993c8da649a143f425028c2cccd80beda1d893f6cd7fb14065cf4f3fed769a4
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_12ubuntu4.1.tar.xz' base-files_12ubuntu4.1.tar.xz 81772 SHA512:2076b8b9baab0eea592bb52486269daa748892068aa059441da027e5cf986de29cbd88410466615654eb270e248edf95318939badfe0b72758ae31f2d78bee91
-```
 
 ### `dpkg` source package: `base-passwd=3.5.52build1`
 
@@ -6061,14 +6057,9 @@ Licenses: (parsed from: `/usr/share/doc/libegl-mesa0/copyright`, `/usr/share/doc
 - `MLAA`
 - `SGI`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mesa=22.0.1-1ubuntu2.1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_22.0.1-1ubuntu2.1.dsc' mesa_22.0.1-1ubuntu2.1.dsc 5351 SHA512:5312fdedb283da2224b40bec9f6bc3dfeb07e3204d01059e388961d24b59047a305a6e0f0e06b3021a11a14d6d01cc288d8ed89a4a1b07205a56795f1203cabd
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_22.0.1.orig.tar.gz' mesa_22.0.1.orig.tar.gz 24821428 SHA512:c48a6b5c6afef0974002a5a54e6db18883dc33f1ae92ced0ea2f86b82f83fd53b275461450c4c2e0d93ef79dd2b413ee99d4abf2d64cc2957bafc649e9777b15
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_22.0.1-1ubuntu2.1.diff.gz' mesa_22.0.1-1ubuntu2.1.diff.gz 149769 SHA512:3aa03c3a7bef3e8b751b12c1469ca15044799fce08e52780de986f61f1c90b885be6347b07d28099ad7e3dbabdfcb3f2d5906142be70fe235677f024c1259c0d
-```
 
 ### `dpkg` source package: `minizip=1.1-8build1`
 
