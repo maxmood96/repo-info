@@ -1,7 +1,7 @@
 ## `eclipse-temurin:17-jdk-jammy`
 
 ```console
-$ docker pull eclipse-temurin@sha256:49b05f350d1654692e83e807d363219625568880e5832effb2f4433607a87697
+$ docker pull eclipse-temurin@sha256:092d316cac28c2bba304b45d71428c39cdfe32009fa7ba47b40a1817a44a0b4e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -171,53 +171,53 @@ CMD ["jshell"]
 ### `eclipse-temurin:17-jdk-jammy` - linux; ppc64le
 
 ```console
-$ docker pull eclipse-temurin@sha256:a8c967417a6babdea971c710294c40f624f8d8714412a58317ebb8e9b4fe61f0
+$ docker pull eclipse-temurin@sha256:3f728a7ba069f8153d61adb0bdbb3fa13b0898f86a600efb2d1e2a61f1bf018a
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **245.0 MB (245038896 bytes)**  
+-	Total Size: **245.0 MB (245040203 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3584a5297ab0ee34c1a34835b50f2c0ad6e57fd9f46c39f1c001ae7fe7436291`
+-	Image ID: `sha256:f5ee2436379970ef4941c4810e34575c931bf2be8f555d3133dbda3a83c4eb25`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Tue, 07 Jun 2022 05:46:49 GMT
-ADD file:62ec907c651e833838867bd541cf824f5f609ea4e2b19c4b26cec74a57b60470 in / 
-# Tue, 07 Jun 2022 05:46:54 GMT
+# Tue, 02 Aug 2022 01:31:12 GMT
+ADD file:b6916c28c03568df4c2efc3da91ea6320f639cdbd2fa3f6741fcea7acad4fd5f in / 
+# Tue, 02 Aug 2022 01:31:14 GMT
 CMD ["bash"]
-# Wed, 27 Jul 2022 00:35:22 GMT
+# Wed, 03 Aug 2022 03:20:49 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 27 Jul 2022 00:42:12 GMT
+# Wed, 03 Aug 2022 03:26:59 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales binutils     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Thu, 28 Jul 2022 16:20:08 GMT
+# Wed, 03 Aug 2022 03:27:00 GMT
 ENV JAVA_VERSION=jdk-17.0.4+8
-# Thu, 28 Jul 2022 16:20:26 GMT
+# Wed, 03 Aug 2022 03:27:22 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='8c23b0b9c65cfe223a07edb8752026afd1e8ec1682630c2d92db4dd5aa039204';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.4%2B8/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.4_8.tar.gz';          ;;        armhf|arm)          ESUM='f499656e581517e62aa954965a7a19bbb0ea8c2e6bd84050527b88efbaa1d96d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.4%2B8/OpenJDK17U-jdk_arm_linux_hotspot_17.0.4_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='e80a0f6626bd28ea20c43524b3ab10af48b3789317aea5b7019c146fe6268d94';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.4%2B8/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.4_8.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='40b09e8fa473f194030a85c059ba768abf5635a9a6d4dbeb79a87113ee8f4ece';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.4%2B8/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.4_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='c0851d610b03cb51e9b360fef3e9ec2026c62837a143e7786649ba94f38cc0d1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.4%2B8/OpenJDK17U-jdk_x64_linux_hotspot_17.0.4_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Thu, 28 Jul 2022 16:20:30 GMT
+# Wed, 03 Aug 2022 03:27:25 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 28 Jul 2022 16:20:31 GMT
+# Wed, 03 Aug 2022 03:27:27 GMT
 RUN echo Verifying install ...     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Thu, 28 Jul 2022 16:20:31 GMT
+# Wed, 03 Aug 2022 03:27:27 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:b851cfa9fcbcb74629241502e21ebbae255fe40a2f26949573f278672b65c308`  
-		Last Modified: Tue, 07 Jun 2022 05:49:53 GMT  
-		Size: 35.7 MB (35717509 bytes)  
+	-	`sha256:6f8c2fc0a4f976c1c0bd1c0e14022b3ed8b7c83cdb247c83016052c3678aaf28`  
+		Last Modified: Tue, 02 Aug 2022 01:33:53 GMT  
+		Size: 35.7 MB (35718004 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:271d3996199a8c9ad9db4f7588a0b27613eb16f8a0ebaef74b5c3f327011070a`  
-		Last Modified: Wed, 27 Jul 2022 00:56:12 GMT  
-		Size: 17.9 MB (17867147 bytes)  
+	-	`sha256:b415449d41b9dcf3446ca4a7c8cd4460dfe52b1b9da2299c0dee989c007c98fe`  
+		Last Modified: Wed, 03 Aug 2022 03:38:49 GMT  
+		Size: 17.9 MB (17867978 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08077974618353cf925465ff3c489bf9ce38e07ecb39ef97cc8a2ce4a590a9fc`  
-		Last Modified: Thu, 28 Jul 2022 16:29:16 GMT  
-		Size: 191.5 MB (191454078 bytes)  
+	-	`sha256:b47a250aca32b54d3293aa909415c63f1b3b45b77986e82c4999d6e0271d262f`  
+		Last Modified: Wed, 03 Aug 2022 03:39:10 GMT  
+		Size: 191.5 MB (191454061 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a9828dd21a667779a9bddf4f09aed1c0157e10a31230da9b5d79ff38deeeeb8e`  
-		Last Modified: Thu, 28 Jul 2022 16:28:52 GMT  
-		Size: 162.0 B  
+	-	`sha256:21bf72b35869d648077ace71b46d58a301c242dcf81a98bb99607db967e28c2f`  
+		Last Modified: Wed, 03 Aug 2022 03:38:44 GMT  
+		Size: 160.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:17-jdk-jammy` - linux; s390x
