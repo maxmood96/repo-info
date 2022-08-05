@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7ebeecb194ff446ad015534ea0965af9ff57867e85733460a74ff879e29e61c9`
-- Created: `2022-07-18T20:43:14.866466697Z`
+- Image ID: `sha256:0140bacce7d4f9c9a36c4803bf579995517b961ca04766a12dfcc078985a4ad4`
+- Created: `2022-08-03T02:28:11.556416628Z`
 - Virtual Size: ~ 1.46 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1011,14 +1011,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/cups/2.3.3op2-3+deb11u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/cups/2.3.3op2-3+deb11u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.74.0-1.3+deb11u1`
+### `dpkg` source package: `curl=7.74.0-1.3+deb11u2`
 
 Binary Packages:
 
-- `curl=7.74.0-1.3+deb11u1`
-- `libcurl3-gnutls:amd64=7.74.0-1.3+deb11u1`
-- `libcurl4:amd64=7.74.0-1.3+deb11u1`
-- `libcurl4-openssl-dev:amd64=7.74.0-1.3+deb11u1`
+- `curl=7.74.0-1.3+deb11u2`
+- `libcurl3-gnutls:amd64=7.74.0-1.3+deb11u2`
+- `libcurl4:amd64=7.74.0-1.3+deb11u2`
+- `libcurl4-openssl-dev:amd64=7.74.0-1.3+deb11u2`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
 
@@ -1032,17 +1032,17 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=7.74.0-1.3+deb11u1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.74.0-1.3%2bdeb11u1.dsc' curl_7.74.0-1.3+deb11u1.dsc 2699 SHA256:7983845054585d56348bc262cee1f4fff96866fe23ca864db3c9d43e829139fc
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.74.0.orig.tar.gz' curl_7.74.0.orig.tar.gz 4043409 SHA256:e56b3921eeb7a2951959c02db0912b5fcd5fdba5aca071da819e1accf338bbd7
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.74.0-1.3%2bdeb11u1.debian.tar.xz' curl_7.74.0-1.3+deb11u1.debian.tar.xz 37024 SHA256:eac5deff2b2511443ba4995daa8afe8985aaa5f62a24d672e9715fcabe0069b2
+$ apt-get source -qq --print-uris curl=7.74.0-1.3+deb11u2
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.74.0-1.3%2bdeb11u2.dsc' curl_7.74.0-1.3+deb11u2.dsc 2850 SHA256:3399df07e4d03f86229f9d24a1119fdd14c11651fbd48d9d5f5a111e8b4253a6
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.74.0.orig.tar.gz' curl_7.74.0.orig.tar.gz 4043409 SHA256:e56b3921eeb7a2951959c02db0912b5fcd5fdba5aca071da819e1accf338bbd7
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.74.0-1.3%2bdeb11u2.debian.tar.xz' curl_7.74.0-1.3+deb11u2.debian.tar.xz 56456 SHA256:dd4151f63e97989e260c60ab2bf8b2e84bd9eea73686b6b2b12ff48e967ebe8e
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/curl/7.74.0-1.3+deb11u1/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.74.0-1.3+deb11u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.74.0-1.3+deb11u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/curl/7.74.0-1.3+deb11u2/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.74.0-1.3+deb11u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.74.0-1.3+deb11u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-2.1+deb11u1`
 
@@ -5931,11 +5931,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.4.8+dfsg-2.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.4.8+dfsg-2.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=5.10.127-1`
+### `dpkg` source package: `linux=5.10.127-2`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.10.127-1`
+- `linux-libc-dev:amd64=5.10.127-2`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -5951,17 +5951,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=5.10.127-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_5.10.127-1.dsc' linux_5.10.127-1.dsc 197238 SHA256:19690274cafdf0c0aab607579654a6bf027dddd3991c32eaa76d27a64b512005
-'http://deb.debian.org/debian/pool/main/l/linux/linux_5.10.127.orig.tar.xz' linux_5.10.127.orig.tar.xz 121727816 SHA256:488af1775ba0402293482346589d1b19462c236201c6c873f6d297707074c19d
-'http://deb.debian.org/debian/pool/main/l/linux/linux_5.10.127-1.debian.tar.xz' linux_5.10.127-1.debian.tar.xz 1518552 SHA256:907e49dd2f6ea189fe8b7d03b95ae20b642833811a03a7b024b38c86f4387e43
+$ apt-get source -qq --print-uris linux=5.10.127-2
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.127-2.dsc' linux_5.10.127-2.dsc 197083 SHA256:3dad248c5d2bb2e2c6d15bc6085d2b0fd6080be0c6ecf1300f4693f57f157df3
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.127.orig.tar.xz' linux_5.10.127.orig.tar.xz 121727816 SHA256:488af1775ba0402293482346589d1b19462c236201c6c873f6d297707074c19d
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.127-2.debian.tar.xz' linux_5.10.127-2.debian.tar.xz 3450468 SHA256:8b89a32daf57c1c9326db0228c26122338d958ccf1ab4098f2587f26d240dacb
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/5.10.127-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/5.10.127-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/5.10.127-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/5.10.127-2/ (for browsing the source)
+- https://sources.debian.net/src/linux/5.10.127-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/5.10.127-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lksctp-tools=1.0.18+dfsg-1`
 
@@ -8200,12 +8200,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/wayland/1.18.0-2~exp1.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/wayland/1.18.0-2~exp1.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `webkit2gtk=2.36.3-1~deb11u1`
+### `dpkg` source package: `webkit2gtk=2.36.4-1~deb11u1`
 
 Binary Packages:
 
-- `libjavascriptcoregtk-4.0-18:amd64=2.36.3-1~deb11u1`
-- `libwebkit2gtk-4.0-37:amd64=2.36.3-1~deb11u1`
+- `libjavascriptcoregtk-4.0-18:amd64=2.36.4-1~deb11u1`
+- `libwebkit2gtk-4.0-37:amd64=2.36.4-1~deb11u1`
 
 Licenses: (parsed from: `/usr/share/doc/libjavascriptcoregtk-4.0-18/copyright`, `/usr/share/doc/libwebkit2gtk-4.0-37/copyright`)
 
@@ -8244,18 +8244,18 @@ Licenses: (parsed from: `/usr/share/doc/libjavascriptcoregtk-4.0-18/copyright`, 
 Source:
 
 ```console
-$ apt-get source -qq --print-uris webkit2gtk=2.36.3-1~deb11u1
-'http://deb.debian.org/debian/pool/main/w/webkit2gtk/webkit2gtk_2.36.3-1%7edeb11u1.dsc' webkit2gtk_2.36.3-1~deb11u1.dsc 4265 SHA256:ac5a10822a1b80e1fb89d749bd505fd6b05760efe0ab00952d307ce7e9186527
-'http://deb.debian.org/debian/pool/main/w/webkit2gtk/webkit2gtk_2.36.3.orig.tar.xz' webkit2gtk_2.36.3.orig.tar.xz 26600236 SHA256:732fcf8c4ec644b8ed28b46ebbd7c1ebab9d9e0afea9bdf5e5d12786afc478d1
-'http://deb.debian.org/debian/pool/main/w/webkit2gtk/webkit2gtk_2.36.3.orig.tar.xz.asc' webkit2gtk_2.36.3.orig.tar.xz.asc 195 SHA256:f76c713e99bc4db5c7195fc9bb6fb22b7024bbf211b960130211d85d7234039b
-'http://deb.debian.org/debian/pool/main/w/webkit2gtk/webkit2gtk_2.36.3-1%7edeb11u1.debian.tar.xz' webkit2gtk_2.36.3-1~deb11u1.debian.tar.xz 76032 SHA256:33287d03d644fa6ce49a96d6a51148a80d201935a336e2b8eff2c07147f4762a
+$ apt-get source -qq --print-uris webkit2gtk=2.36.4-1~deb11u1
+'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.36.4-1%7edeb11u1.dsc' webkit2gtk_2.36.4-1~deb11u1.dsc 4265 SHA256:08a0691c7e05c47389090899112052f050384a69072639989f0bc263ddc3e2bb
+'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.36.4.orig.tar.xz' webkit2gtk_2.36.4.orig.tar.xz 26598964 SHA256:b6bebe1f85a479d968c19e44a4704622ef8cef61636ad1b2406b77d16ae2e2a8
+'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.36.4.orig.tar.xz.asc' webkit2gtk_2.36.4.orig.tar.xz.asc 195 SHA256:51f8f88248861c2d7c25658f738fc38be1019bbfbc92ac402094cce6a264994e
+'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.36.4-1%7edeb11u1.debian.tar.xz' webkit2gtk_2.36.4-1~deb11u1.debian.tar.xz 76348 SHA256:d6efc4c449fb1bf4b51606cdf1259c3d4d9d1894237ff63dc661475c07cdc37e
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/webkit2gtk/2.36.3-1~deb11u1/ (for browsing the source)
-- https://sources.debian.net/src/webkit2gtk/2.36.3-1~deb11u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/webkit2gtk/2.36.3-1~deb11u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/webkit2gtk/2.36.4-1~deb11u1/ (for browsing the source)
+- https://sources.debian.net/src/webkit2gtk/2.36.4-1~deb11u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/webkit2gtk/2.36.4-1~deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.21-1+deb11u1`
 
