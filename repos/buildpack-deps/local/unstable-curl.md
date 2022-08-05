@@ -870,13 +870,21 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris gnutls28=3.7.7-2
+'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.7-2.dsc' gnutls28_3.7.7-2.dsc 3442 SHA256:caf3872d06109c778a247fa690c5056105095cb1e182541e251550675af8fd60
+'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.7.orig.tar.xz' gnutls28_3.7.7.orig.tar.xz 6351664 SHA256:be9143d0d58eab64dba9b77114aaafac529b6c0d7e81de6bdf1c9b59027d2106
+'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.7.orig.tar.xz.asc' gnutls28_3.7.7.orig.tar.xz.asc 996 SHA256:2ca7cc33027c6a2316db52869a4b721f73560e0ade2b7bd758228dbbcebc36e0
+'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.7-2.debian.tar.xz' gnutls28_3.7.7-2.debian.tar.xz 67348 SHA256:54f6f6fc220ad9df6acbb17b6a8d50152eed2150120d4ed2ca89d982c1ccb6ee
+```
 
-- http://snapshot.debian.org/package/gnutls28/3.7.7-2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/gnutls28/3.7.7-2/ (for browsing the source)
+- https://sources.debian.net/src/gnutls28/3.7.7-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gnutls28/3.7.7-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `grep=3.7-1`
 

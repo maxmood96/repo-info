@@ -130,13 +130,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.5.1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.5.1.dsc' apt_2.5.1.dsc 2933 SHA512:efcb5c42c71d02dc4c12a9412e12db09a647447ae5a827c591bbd9744d52bc94c6589223abc594f27236e31b77bcda7e2eaa60d525fb67d86e8b34bda89990ec
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.5.1.tar.xz' apt_2.5.1.tar.xz 2221352 SHA512:a711daa0a99927ae5d042fbb543cfa38e6b64963b44643ea29e77a57f081f0c0e39d59ff1cac6c00eb57a5592506c25517e60e37e0a4294a98908e8f7facbb75
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/apt/2.5.1/
+
 
 ### `dpkg` source package: `attr=1:2.5.1-1build1`
 
@@ -4205,15 +4205,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.39.0-1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.39.0-1.dsc' sqlite3_3.39.0-1.dsc 2487 SHA512:227495eaaa5466e478c61108ea4dd81d3b3fcfe9c77d44c01f03d6e16b50e07507d6033fe1ddbfca09a8942cf52b4b513f8a32301ad4cf89effd70aa23ac636c
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.39.0.orig-www.tar.xz' sqlite3_3.39.0.orig-www.tar.xz 5733868 SHA512:c6ba218fc6eb212108ad47b7e8b2545a9c2dd603268257fce6a9cbf2af14a718a0dda080e40ae2bf3d95d3cd5a7df77ca1e76f069de6b33731d02e542e382765
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.39.0.orig.tar.xz' sqlite3_3.39.0.orig.tar.xz 7820104 SHA512:514485c6a46ed8593cc816644e007b98f5b7eb5e04febbcfbd2a635909fbb6f7dcde6d333f418cb1bc590c7cd5ac5a529c9dc69ab2ae707088981bf7ef02b9d1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.39.0-1.debian.tar.xz' sqlite3_3.39.0-1.debian.tar.xz 29044 SHA512:a94b14a6c18451320b5ec3374ea52edcf4d73ce99943c06da1b72e877186a1d66f1faca6f1435fc9d8438baa158e28a15c4fe7423c4226b07d860cb154ffc090
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/sqlite3/3.39.0-1/
+
 
 ### `dpkg` source package: `subversion=1.14.2-3`
 
