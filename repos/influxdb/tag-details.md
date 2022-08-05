@@ -2,6 +2,14 @@
 
 # Tags of `influxdb`
 
+-	[`influxdb:1.10-data`](#influxdb110-data)
+-	[`influxdb:1.10-data-alpine`](#influxdb110-data-alpine)
+-	[`influxdb:1.10-meta`](#influxdb110-meta)
+-	[`influxdb:1.10-meta-alpine`](#influxdb110-meta-alpine)
+-	[`influxdb:1.10.0-data`](#influxdb1100-data)
+-	[`influxdb:1.10.0-data-alpine`](#influxdb1100-data-alpine)
+-	[`influxdb:1.10.0-meta`](#influxdb1100-meta)
+-	[`influxdb:1.10.0-meta-alpine`](#influxdb1100-meta-alpine)
 -	[`influxdb:1.8`](#influxdb18)
 -	[`influxdb:1.8-alpine`](#influxdb18-alpine)
 -	[`influxdb:1.8-data`](#influxdb18-data)
@@ -40,6 +48,38 @@
 -	[`influxdb:latest`](#influxdblatest)
 -	[`influxdb:meta`](#influxdbmeta)
 -	[`influxdb:meta-alpine`](#influxdbmeta-alpine)
+
+## `influxdb:1.10-data`
+
+**does not exist** (yet?)
+
+## `influxdb:1.10-data-alpine`
+
+**does not exist** (yet?)
+
+## `influxdb:1.10-meta`
+
+**does not exist** (yet?)
+
+## `influxdb:1.10-meta-alpine`
+
+**does not exist** (yet?)
+
+## `influxdb:1.10.0-data`
+
+**does not exist** (yet?)
+
+## `influxdb:1.10.0-data-alpine`
+
+**does not exist** (yet?)
+
+## `influxdb:1.10.0-meta`
+
+**does not exist** (yet?)
+
+## `influxdb:1.10.0-meta-alpine`
+
+**does not exist** (yet?)
 
 ## `influxdb:1.8`
 
