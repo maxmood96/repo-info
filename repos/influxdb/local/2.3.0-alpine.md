@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:163d2f4ddfcbf084e6c1e09418530a05955f68e07e87235ad6c5d534454b1b65`
-- Created: `2022-07-20T03:32:01.803973362Z`
-- Virtual Size: ~ 324.52 Mb  
+- Image ID: `sha256:04e62816c06e4eadf6f66d12d52bffdd65638771bfafaf21c47a725ff3122490`
+- Created: `2022-08-09T20:37:25.259607157Z`
+- Virtual Size: ~ 324.56 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -109,16 +109,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20211220-r0 description:
+ca-certificates-20220614-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20211220-r0 webpage:
+ca-certificates-20220614-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20211220-r0 installed size:
-652 KiB
+ca-certificates-20220614-r0 installed size:
+684 KiB
 
-ca-certificates-20211220-r0 license:
+ca-certificates-20220614-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -126,16 +126,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20211220-r0 description:
+ca-certificates-bundle-20220614-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20211220-r0 webpage:
+ca-certificates-bundle-20220614-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20211220-r0 installed size:
-216 KiB
+ca-certificates-bundle-20220614-r0 installed size:
+228 KiB
 
-ca-certificates-bundle-20211220-r0 license:
+ca-certificates-bundle-20220614-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -211,16 +211,16 @@ GPL-3.0-or-later
 ### `apk` package: `gnutls`
 
 ```console
-gnutls-3.7.1-r0 description:
+gnutls-3.7.1-r1 description:
 TLS protocol implementation
 
-gnutls-3.7.1-r0 webpage:
+gnutls-3.7.1-r1 webpage:
 https://www.gnutls.org/
 
-gnutls-3.7.1-r0 installed size:
+gnutls-3.7.1-r1 installed size:
 1848 KiB
 
-gnutls-3.7.1-r0 license:
+gnutls-3.7.1-r1 license:
 LGPL-2.1-or-later
 
 ```
@@ -806,16 +806,16 @@ Public-Domain
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.2.12-r1 description:
+zlib-1.2.12-r3 description:
 A compression/decompression Library
 
-zlib-1.2.12-r1 webpage:
+zlib-1.2.12-r3 webpage:
 https://zlib.net/
 
-zlib-1.2.12-r1 installed size:
+zlib-1.2.12-r3 installed size:
 108 KiB
 
-zlib-1.2.12-r1 license:
+zlib-1.2.12-r3 license:
 Zlib
 
 ```
