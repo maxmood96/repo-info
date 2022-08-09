@@ -2049,14 +2049,9 @@ Licenses: (parsed from: `/usr/share/doc/libgdk-pixbuf2.0-0/copyright`, `/usr/sha
 - `LGPL-2+`
 - `MPL-1.1-or-LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gdk-pixbuf=2.40.0+dfsg-3ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.40.0%2bdfsg-3ubuntu0.2.dsc' gdk-pixbuf_2.40.0+dfsg-3ubuntu0.2.dsc 3062 SHA512:95ab33c59837774b9f77348e876a8b8f8ed904a7967f5db3c54aa70b65c0209a218075fcdfe4f9b76cc2b8a7269e8f383eba832ada35c23de0895710f12fc555
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.40.0%2bdfsg.orig.tar.xz' gdk-pixbuf_2.40.0+dfsg.orig.tar.xz 5626144 SHA512:bb8a9d1837bffdc5f50307dba1a1e6f1ac015e6e670ea6cae6d0bc997afa106ff0d928cb847d76848c480a06e1ad3945274b4913eaa4d9a8074797fc82bb7c1f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.40.0%2bdfsg-3ubuntu0.2.debian.tar.xz' gdk-pixbuf_2.40.0+dfsg-3ubuntu0.2.debian.tar.xz 18560 SHA512:64bbaa7879a19745af00cf4c45a800ccbf43362c2ce11d87af519e05129f65110f94587ca1ef0bcbd0d5fe7a42ee9a68720d53ad4a81ade9041608d3d4be9d54
-```
 
 ### `dpkg` source package: `geos=3.8.0-1build1`
 
@@ -2474,14 +2469,9 @@ Licenses: (parsed from: `/usr/share/doc/libgstreamer-plugins-base1.0-0/copyright
 - `LGPL-2+`
 - `MIT/X11 (BSD like) LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gst-plugins-base1.0=1.16.2-4ubuntu0.1
-'http://security.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.16.2-4ubuntu0.1.dsc' gst-plugins-base1.0_1.16.2-4ubuntu0.1.dsc 4152 SHA512:abab009285c50c474daf3f59de1e2aab058c34defe26e670e68435e1e3bbc7fda28eff72ca9a8068706f2dbb5810192533a606a90f89b5d48d396291a3ff84fd
-'http://security.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.16.2.orig.tar.xz' gst-plugins-base1.0_1.16.2.orig.tar.xz 3939868 SHA512:f28e71bba8ba25d4f18ba3a196f057721151f1ebf1309d808bd6771a3f9a68facfa1970dc4353b6f2fd1e8945edf5272854d328ea11ef399544f8b330f754a42
-'http://security.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.16.2-4ubuntu0.1.debian.tar.xz' gst-plugins-base1.0_1.16.2-4ubuntu0.1.debian.tar.xz 46460 SHA512:26ac713e4ba54ca6dd203ebf2bf6bd7f70ef1ee460954cacff66b51634264042e4c00169d66a5aa9f8b6a8df4c012ab2c111bb0637c10a85597daf83c6fec559
-```
 
 ### `dpkg` source package: `gstreamer1.0=1.16.2-2`
 
