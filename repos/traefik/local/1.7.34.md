@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:43de28b34d397393ca2d0ec8bd6923735fab787f8c3bd3dab0719cd256fcc010`
-- Created: `2022-03-18T06:23:39.894500746Z`
-- Virtual Size: ~ 82.97 Mb  
+- Image ID: `sha256:fd7cc9150335f309f34597c684d908b517b7aa428c550fa8f63dd1a19bafbfe4`
+- Created: `2022-08-10T01:25:20.826296762Z`
+- Virtual Size: ~ 82.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/traefik"]`
