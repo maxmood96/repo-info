@@ -22,7 +22,7 @@
 ## `phpmyadmin:5`
 
 ```console
-$ docker pull phpmyadmin@sha256:bd2030ed69462e8a86322a856ca10c4a5a826dce0e631c967d9fcfb52cc817f2
+$ docker pull phpmyadmin@sha256:e80a577513870cdc6a406802919221fe5f4aa0b57ea2fb0ac2b455ba642f3394
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -218,14 +218,14 @@ CMD ["apache2-foreground"]
 ### `phpmyadmin:5` - linux; arm variant v5
 
 ```console
-$ docker pull phpmyadmin@sha256:831724f96d1a2b07c28d967777b84a18491f9374480e2a3dcaf5be2053ca5bf5
+$ docker pull phpmyadmin@sha256:301105f7bb58743facc0315c377f5034716c4b03efd7fd883f31637c46123b54
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **157.3 MB (157301555 bytes)**  
+-	Total Size: **157.3 MB (157301705 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f52141f8502d0886e02a800abde57c07503fdd4108cffc943dfa379e832ceef6`
+-	Image ID: `sha256:11ff00bbf4ac95e29c3c4a7835b66880bbaa93d7459c9e5d3d25a22caf4f40e8`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -312,11 +312,11 @@ LABEL org.opencontainers.image.title=Official phpMyAdmin Docker image org.openco
 RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         gnupg         dirmngr     ;         export GNUPGHOME="$(mktemp -d)";     export GPGKEY="3D06A59ECE730EB71B511C17CE752F178259BD92";     curl -fsSL -o phpMyAdmin.tar.xz $URL;     curl -fsSL -o phpMyAdmin.tar.xz.asc $URL.asc;     echo "$SHA256 *phpMyAdmin.tar.xz" | sha256sum -c -;     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$GPGKEY"         || gpg --batch --keyserver pgp.mit.edu --recv-keys "$GPGKEY"         || gpg --batch --keyserver keyserver.pgp.com --recv-keys "$GPGKEY"         || gpg --batch --keyserver keys.openpgp.org --recv-keys "$GPGKEY";     gpg --batch --verify phpMyAdmin.tar.xz.asc phpMyAdmin.tar.xz;     tar -xf phpMyAdmin.tar.xz -C /var/www/html --strip-components=1;     mkdir -p /var/www/html/tmp;     chown www-data:www-data /var/www/html/tmp;     gpgconf --kill all;     rm -r "$GNUPGHOME" phpMyAdmin.tar.xz phpMyAdmin.tar.xz.asc;     rm -r -v /var/www/html/setup/ /var/www/html/examples/ /var/www/html/js/src/ /var/www/html/templates/test/ /var/www/html/babel.config.json /var/www/html/doc/html/_sources/ /var/www/html/RELEASE-DATE-$VERSION /var/www/html/CONTRIBUTING.md;     grep -q -F "'configFile' => ROOT_PATH . 'config.inc.php'," /var/www/html/libraries/vendor_config.php;     sed -i "s@'configFile' => .*@'configFile' => '/etc/phpmyadmin/config.inc.php',@" /var/www/html/libraries/vendor_config.php;     grep -q -F "'configFile' => '/etc/phpmyadmin/config.inc.php'," /var/www/html/libraries/vendor_config.php;     php -l /var/www/html/libraries/vendor_config.php;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*
 # Fri, 05 Aug 2022 00:54:05 GMT
 COPY file:74e988fef607090521e63cea57b4c61ab22b3a2a131bc55f0cf4a0d9c36ce65d in /etc/phpmyadmin/config.inc.php 
-# Fri, 05 Aug 2022 00:54:05 GMT
-COPY file:7a1864d35a5b72dc75fa085c7d09497f417e1ef1eacb8597037c366f1978b5fa in /docker-entrypoint.sh 
-# Fri, 05 Aug 2022 00:54:06 GMT
+# Wed, 10 Aug 2022 00:48:37 GMT
+COPY file:fac46acd9e26942fe760a12972b08cbdccf211d0b6a699831af11badb14f3125 in /docker-entrypoint.sh 
+# Wed, 10 Aug 2022 00:48:37 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 05 Aug 2022 00:54:06 GMT
+# Wed, 10 Aug 2022 00:48:37 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -389,9 +389,9 @@ CMD ["apache2-foreground"]
 		Last Modified: Fri, 05 Aug 2022 00:57:38 GMT  
 		Size: 1.5 KB (1526 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccfdbdbf18420959c563a05fb7b604ef23e34ea053c42b1b07f7600d52e91330`  
-		Last Modified: Fri, 05 Aug 2022 00:57:38 GMT  
-		Size: 771.0 B  
+	-	`sha256:bf70e9ade542196843025db71dabd1b3d647ef7cdbadc898214f1f161a68d7fc`  
+		Last Modified: Wed, 10 Aug 2022 00:49:43 GMT  
+		Size: 921.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `phpmyadmin:5` - linux; arm variant v7
@@ -1471,7 +1471,7 @@ CMD ["apache2-foreground"]
 ## `phpmyadmin:5-apache`
 
 ```console
-$ docker pull phpmyadmin@sha256:bd2030ed69462e8a86322a856ca10c4a5a826dce0e631c967d9fcfb52cc817f2
+$ docker pull phpmyadmin@sha256:e80a577513870cdc6a406802919221fe5f4aa0b57ea2fb0ac2b455ba642f3394
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1667,14 +1667,14 @@ CMD ["apache2-foreground"]
 ### `phpmyadmin:5-apache` - linux; arm variant v5
 
 ```console
-$ docker pull phpmyadmin@sha256:831724f96d1a2b07c28d967777b84a18491f9374480e2a3dcaf5be2053ca5bf5
+$ docker pull phpmyadmin@sha256:301105f7bb58743facc0315c377f5034716c4b03efd7fd883f31637c46123b54
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **157.3 MB (157301555 bytes)**  
+-	Total Size: **157.3 MB (157301705 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f52141f8502d0886e02a800abde57c07503fdd4108cffc943dfa379e832ceef6`
+-	Image ID: `sha256:11ff00bbf4ac95e29c3c4a7835b66880bbaa93d7459c9e5d3d25a22caf4f40e8`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -1761,11 +1761,11 @@ LABEL org.opencontainers.image.title=Official phpMyAdmin Docker image org.openco
 RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         gnupg         dirmngr     ;         export GNUPGHOME="$(mktemp -d)";     export GPGKEY="3D06A59ECE730EB71B511C17CE752F178259BD92";     curl -fsSL -o phpMyAdmin.tar.xz $URL;     curl -fsSL -o phpMyAdmin.tar.xz.asc $URL.asc;     echo "$SHA256 *phpMyAdmin.tar.xz" | sha256sum -c -;     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$GPGKEY"         || gpg --batch --keyserver pgp.mit.edu --recv-keys "$GPGKEY"         || gpg --batch --keyserver keyserver.pgp.com --recv-keys "$GPGKEY"         || gpg --batch --keyserver keys.openpgp.org --recv-keys "$GPGKEY";     gpg --batch --verify phpMyAdmin.tar.xz.asc phpMyAdmin.tar.xz;     tar -xf phpMyAdmin.tar.xz -C /var/www/html --strip-components=1;     mkdir -p /var/www/html/tmp;     chown www-data:www-data /var/www/html/tmp;     gpgconf --kill all;     rm -r "$GNUPGHOME" phpMyAdmin.tar.xz phpMyAdmin.tar.xz.asc;     rm -r -v /var/www/html/setup/ /var/www/html/examples/ /var/www/html/js/src/ /var/www/html/templates/test/ /var/www/html/babel.config.json /var/www/html/doc/html/_sources/ /var/www/html/RELEASE-DATE-$VERSION /var/www/html/CONTRIBUTING.md;     grep -q -F "'configFile' => ROOT_PATH . 'config.inc.php'," /var/www/html/libraries/vendor_config.php;     sed -i "s@'configFile' => .*@'configFile' => '/etc/phpmyadmin/config.inc.php',@" /var/www/html/libraries/vendor_config.php;     grep -q -F "'configFile' => '/etc/phpmyadmin/config.inc.php'," /var/www/html/libraries/vendor_config.php;     php -l /var/www/html/libraries/vendor_config.php;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*
 # Fri, 05 Aug 2022 00:54:05 GMT
 COPY file:74e988fef607090521e63cea57b4c61ab22b3a2a131bc55f0cf4a0d9c36ce65d in /etc/phpmyadmin/config.inc.php 
-# Fri, 05 Aug 2022 00:54:05 GMT
-COPY file:7a1864d35a5b72dc75fa085c7d09497f417e1ef1eacb8597037c366f1978b5fa in /docker-entrypoint.sh 
-# Fri, 05 Aug 2022 00:54:06 GMT
+# Wed, 10 Aug 2022 00:48:37 GMT
+COPY file:fac46acd9e26942fe760a12972b08cbdccf211d0b6a699831af11badb14f3125 in /docker-entrypoint.sh 
+# Wed, 10 Aug 2022 00:48:37 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 05 Aug 2022 00:54:06 GMT
+# Wed, 10 Aug 2022 00:48:37 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1838,9 +1838,9 @@ CMD ["apache2-foreground"]
 		Last Modified: Fri, 05 Aug 2022 00:57:38 GMT  
 		Size: 1.5 KB (1526 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccfdbdbf18420959c563a05fb7b604ef23e34ea053c42b1b07f7600d52e91330`  
-		Last Modified: Fri, 05 Aug 2022 00:57:38 GMT  
-		Size: 771.0 B  
+	-	`sha256:bf70e9ade542196843025db71dabd1b3d647ef7cdbadc898214f1f161a68d7fc`  
+		Last Modified: Wed, 10 Aug 2022 00:49:43 GMT  
+		Size: 921.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `phpmyadmin:5-apache` - linux; arm variant v7
@@ -2920,7 +2920,7 @@ CMD ["apache2-foreground"]
 ## `phpmyadmin:5-fpm`
 
 ```console
-$ docker pull phpmyadmin@sha256:771d68215a81e7494504aa70a8383f2c10a78697f6dc142adb750a64d40159a1
+$ docker pull phpmyadmin@sha256:a0ffd91699710cff0666702a57fb41a1c417b8a36360da9566259f870ad83814
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3094,14 +3094,14 @@ CMD ["php-fpm"]
 ### `phpmyadmin:5-fpm` - linux; arm variant v5
 
 ```console
-$ docker pull phpmyadmin@sha256:6aea4880bd205ef5b815edee6bc3eb87f7d7c9f3780d49b8b2d51232f78c73b9
+$ docker pull phpmyadmin@sha256:677baca7d0e369473202c682fadbc28bc0c1993c97cff8d17cf0b028484a54c1
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **153.4 MB (153433114 bytes)**  
+-	Total Size: **153.4 MB (153433124 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:59cbdb598e06967468d00e06057c42a0075fb8ef946831a2813e0c02c5bcd47b`
+-	Image ID: `sha256:d0abe3ef660413c8b03b4d5e167dfdfd935354736c1315d96d28f77e9018770b`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -3178,11 +3178,11 @@ LABEL org.opencontainers.image.title=Official phpMyAdmin Docker image org.openco
 RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         gnupg         dirmngr     ;         export GNUPGHOME="$(mktemp -d)";     export GPGKEY="3D06A59ECE730EB71B511C17CE752F178259BD92";     curl -fsSL -o phpMyAdmin.tar.xz $URL;     curl -fsSL -o phpMyAdmin.tar.xz.asc $URL.asc;     echo "$SHA256 *phpMyAdmin.tar.xz" | sha256sum -c -;     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$GPGKEY"         || gpg --batch --keyserver pgp.mit.edu --recv-keys "$GPGKEY"         || gpg --batch --keyserver keyserver.pgp.com --recv-keys "$GPGKEY"         || gpg --batch --keyserver keys.openpgp.org --recv-keys "$GPGKEY";     gpg --batch --verify phpMyAdmin.tar.xz.asc phpMyAdmin.tar.xz;     tar -xf phpMyAdmin.tar.xz -C /var/www/html --strip-components=1;     mkdir -p /var/www/html/tmp;     chown www-data:www-data /var/www/html/tmp;     gpgconf --kill all;     rm -r "$GNUPGHOME" phpMyAdmin.tar.xz phpMyAdmin.tar.xz.asc;     rm -r -v /var/www/html/setup/ /var/www/html/examples/ /var/www/html/js/src/ /var/www/html/templates/test/ /var/www/html/babel.config.json /var/www/html/doc/html/_sources/ /var/www/html/RELEASE-DATE-$VERSION /var/www/html/CONTRIBUTING.md;     grep -q -F "'configFile' => ROOT_PATH . 'config.inc.php'," /var/www/html/libraries/vendor_config.php;     sed -i "s@'configFile' => .*@'configFile' => '/etc/phpmyadmin/config.inc.php',@" /var/www/html/libraries/vendor_config.php;     grep -q -F "'configFile' => '/etc/phpmyadmin/config.inc.php'," /var/www/html/libraries/vendor_config.php;     php -l /var/www/html/libraries/vendor_config.php;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*
 # Fri, 05 Aug 2022 00:56:41 GMT
 COPY file:74e988fef607090521e63cea57b4c61ab22b3a2a131bc55f0cf4a0d9c36ce65d in /etc/phpmyadmin/config.inc.php 
-# Fri, 05 Aug 2022 00:56:41 GMT
-COPY file:7a1864d35a5b72dc75fa085c7d09497f417e1ef1eacb8597037c366f1978b5fa in /docker-entrypoint.sh 
-# Fri, 05 Aug 2022 00:56:41 GMT
+# Wed, 10 Aug 2022 00:48:50 GMT
+COPY file:d8c9f50886f5865fe589f64cb31544582913bb98f2cfa51a8828d71871363ce9 in /docker-entrypoint.sh 
+# Wed, 10 Aug 2022 00:48:50 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 05 Aug 2022 00:56:41 GMT
+# Wed, 10 Aug 2022 00:48:50 GMT
 CMD ["php-fpm"]
 ```
 
@@ -3243,9 +3243,9 @@ CMD ["php-fpm"]
 		Last Modified: Fri, 05 Aug 2022 00:58:28 GMT  
 		Size: 1.5 KB (1531 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea822b795bc9a5df49172d220d5f5506f36c5c88856a6fdbce2bcc6152487bf1`  
-		Last Modified: Fri, 05 Aug 2022 00:58:29 GMT  
-		Size: 772.0 B  
+	-	`sha256:5dc0d66584fa48597e9835bdf8a0f444b53107c6c3a531adb9972712132e419f`  
+		Last Modified: Wed, 10 Aug 2022 00:50:26 GMT  
+		Size: 782.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `phpmyadmin:5-fpm` - linux; arm variant v7
@@ -5350,7 +5350,7 @@ CMD ["php-fpm"]
 ## `phpmyadmin:5.2`
 
 ```console
-$ docker pull phpmyadmin@sha256:bd2030ed69462e8a86322a856ca10c4a5a826dce0e631c967d9fcfb52cc817f2
+$ docker pull phpmyadmin@sha256:e80a577513870cdc6a406802919221fe5f4aa0b57ea2fb0ac2b455ba642f3394
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5546,14 +5546,14 @@ CMD ["apache2-foreground"]
 ### `phpmyadmin:5.2` - linux; arm variant v5
 
 ```console
-$ docker pull phpmyadmin@sha256:831724f96d1a2b07c28d967777b84a18491f9374480e2a3dcaf5be2053ca5bf5
+$ docker pull phpmyadmin@sha256:301105f7bb58743facc0315c377f5034716c4b03efd7fd883f31637c46123b54
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **157.3 MB (157301555 bytes)**  
+-	Total Size: **157.3 MB (157301705 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f52141f8502d0886e02a800abde57c07503fdd4108cffc943dfa379e832ceef6`
+-	Image ID: `sha256:11ff00bbf4ac95e29c3c4a7835b66880bbaa93d7459c9e5d3d25a22caf4f40e8`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -5640,11 +5640,11 @@ LABEL org.opencontainers.image.title=Official phpMyAdmin Docker image org.openco
 RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         gnupg         dirmngr     ;         export GNUPGHOME="$(mktemp -d)";     export GPGKEY="3D06A59ECE730EB71B511C17CE752F178259BD92";     curl -fsSL -o phpMyAdmin.tar.xz $URL;     curl -fsSL -o phpMyAdmin.tar.xz.asc $URL.asc;     echo "$SHA256 *phpMyAdmin.tar.xz" | sha256sum -c -;     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$GPGKEY"         || gpg --batch --keyserver pgp.mit.edu --recv-keys "$GPGKEY"         || gpg --batch --keyserver keyserver.pgp.com --recv-keys "$GPGKEY"         || gpg --batch --keyserver keys.openpgp.org --recv-keys "$GPGKEY";     gpg --batch --verify phpMyAdmin.tar.xz.asc phpMyAdmin.tar.xz;     tar -xf phpMyAdmin.tar.xz -C /var/www/html --strip-components=1;     mkdir -p /var/www/html/tmp;     chown www-data:www-data /var/www/html/tmp;     gpgconf --kill all;     rm -r "$GNUPGHOME" phpMyAdmin.tar.xz phpMyAdmin.tar.xz.asc;     rm -r -v /var/www/html/setup/ /var/www/html/examples/ /var/www/html/js/src/ /var/www/html/templates/test/ /var/www/html/babel.config.json /var/www/html/doc/html/_sources/ /var/www/html/RELEASE-DATE-$VERSION /var/www/html/CONTRIBUTING.md;     grep -q -F "'configFile' => ROOT_PATH . 'config.inc.php'," /var/www/html/libraries/vendor_config.php;     sed -i "s@'configFile' => .*@'configFile' => '/etc/phpmyadmin/config.inc.php',@" /var/www/html/libraries/vendor_config.php;     grep -q -F "'configFile' => '/etc/phpmyadmin/config.inc.php'," /var/www/html/libraries/vendor_config.php;     php -l /var/www/html/libraries/vendor_config.php;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*
 # Fri, 05 Aug 2022 00:54:05 GMT
 COPY file:74e988fef607090521e63cea57b4c61ab22b3a2a131bc55f0cf4a0d9c36ce65d in /etc/phpmyadmin/config.inc.php 
-# Fri, 05 Aug 2022 00:54:05 GMT
-COPY file:7a1864d35a5b72dc75fa085c7d09497f417e1ef1eacb8597037c366f1978b5fa in /docker-entrypoint.sh 
-# Fri, 05 Aug 2022 00:54:06 GMT
+# Wed, 10 Aug 2022 00:48:37 GMT
+COPY file:fac46acd9e26942fe760a12972b08cbdccf211d0b6a699831af11badb14f3125 in /docker-entrypoint.sh 
+# Wed, 10 Aug 2022 00:48:37 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 05 Aug 2022 00:54:06 GMT
+# Wed, 10 Aug 2022 00:48:37 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -5717,9 +5717,9 @@ CMD ["apache2-foreground"]
 		Last Modified: Fri, 05 Aug 2022 00:57:38 GMT  
 		Size: 1.5 KB (1526 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccfdbdbf18420959c563a05fb7b604ef23e34ea053c42b1b07f7600d52e91330`  
-		Last Modified: Fri, 05 Aug 2022 00:57:38 GMT  
-		Size: 771.0 B  
+	-	`sha256:bf70e9ade542196843025db71dabd1b3d647ef7cdbadc898214f1f161a68d7fc`  
+		Last Modified: Wed, 10 Aug 2022 00:49:43 GMT  
+		Size: 921.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `phpmyadmin:5.2` - linux; arm variant v7
@@ -6799,7 +6799,7 @@ CMD ["apache2-foreground"]
 ## `phpmyadmin:5.2-apache`
 
 ```console
-$ docker pull phpmyadmin@sha256:bd2030ed69462e8a86322a856ca10c4a5a826dce0e631c967d9fcfb52cc817f2
+$ docker pull phpmyadmin@sha256:e80a577513870cdc6a406802919221fe5f4aa0b57ea2fb0ac2b455ba642f3394
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6995,14 +6995,14 @@ CMD ["apache2-foreground"]
 ### `phpmyadmin:5.2-apache` - linux; arm variant v5
 
 ```console
-$ docker pull phpmyadmin@sha256:831724f96d1a2b07c28d967777b84a18491f9374480e2a3dcaf5be2053ca5bf5
+$ docker pull phpmyadmin@sha256:301105f7bb58743facc0315c377f5034716c4b03efd7fd883f31637c46123b54
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **157.3 MB (157301555 bytes)**  
+-	Total Size: **157.3 MB (157301705 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f52141f8502d0886e02a800abde57c07503fdd4108cffc943dfa379e832ceef6`
+-	Image ID: `sha256:11ff00bbf4ac95e29c3c4a7835b66880bbaa93d7459c9e5d3d25a22caf4f40e8`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -7089,11 +7089,11 @@ LABEL org.opencontainers.image.title=Official phpMyAdmin Docker image org.openco
 RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         gnupg         dirmngr     ;         export GNUPGHOME="$(mktemp -d)";     export GPGKEY="3D06A59ECE730EB71B511C17CE752F178259BD92";     curl -fsSL -o phpMyAdmin.tar.xz $URL;     curl -fsSL -o phpMyAdmin.tar.xz.asc $URL.asc;     echo "$SHA256 *phpMyAdmin.tar.xz" | sha256sum -c -;     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$GPGKEY"         || gpg --batch --keyserver pgp.mit.edu --recv-keys "$GPGKEY"         || gpg --batch --keyserver keyserver.pgp.com --recv-keys "$GPGKEY"         || gpg --batch --keyserver keys.openpgp.org --recv-keys "$GPGKEY";     gpg --batch --verify phpMyAdmin.tar.xz.asc phpMyAdmin.tar.xz;     tar -xf phpMyAdmin.tar.xz -C /var/www/html --strip-components=1;     mkdir -p /var/www/html/tmp;     chown www-data:www-data /var/www/html/tmp;     gpgconf --kill all;     rm -r "$GNUPGHOME" phpMyAdmin.tar.xz phpMyAdmin.tar.xz.asc;     rm -r -v /var/www/html/setup/ /var/www/html/examples/ /var/www/html/js/src/ /var/www/html/templates/test/ /var/www/html/babel.config.json /var/www/html/doc/html/_sources/ /var/www/html/RELEASE-DATE-$VERSION /var/www/html/CONTRIBUTING.md;     grep -q -F "'configFile' => ROOT_PATH . 'config.inc.php'," /var/www/html/libraries/vendor_config.php;     sed -i "s@'configFile' => .*@'configFile' => '/etc/phpmyadmin/config.inc.php',@" /var/www/html/libraries/vendor_config.php;     grep -q -F "'configFile' => '/etc/phpmyadmin/config.inc.php'," /var/www/html/libraries/vendor_config.php;     php -l /var/www/html/libraries/vendor_config.php;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*
 # Fri, 05 Aug 2022 00:54:05 GMT
 COPY file:74e988fef607090521e63cea57b4c61ab22b3a2a131bc55f0cf4a0d9c36ce65d in /etc/phpmyadmin/config.inc.php 
-# Fri, 05 Aug 2022 00:54:05 GMT
-COPY file:7a1864d35a5b72dc75fa085c7d09497f417e1ef1eacb8597037c366f1978b5fa in /docker-entrypoint.sh 
-# Fri, 05 Aug 2022 00:54:06 GMT
+# Wed, 10 Aug 2022 00:48:37 GMT
+COPY file:fac46acd9e26942fe760a12972b08cbdccf211d0b6a699831af11badb14f3125 in /docker-entrypoint.sh 
+# Wed, 10 Aug 2022 00:48:37 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 05 Aug 2022 00:54:06 GMT
+# Wed, 10 Aug 2022 00:48:37 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -7166,9 +7166,9 @@ CMD ["apache2-foreground"]
 		Last Modified: Fri, 05 Aug 2022 00:57:38 GMT  
 		Size: 1.5 KB (1526 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccfdbdbf18420959c563a05fb7b604ef23e34ea053c42b1b07f7600d52e91330`  
-		Last Modified: Fri, 05 Aug 2022 00:57:38 GMT  
-		Size: 771.0 B  
+	-	`sha256:bf70e9ade542196843025db71dabd1b3d647ef7cdbadc898214f1f161a68d7fc`  
+		Last Modified: Wed, 10 Aug 2022 00:49:43 GMT  
+		Size: 921.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `phpmyadmin:5.2-apache` - linux; arm variant v7
@@ -8248,7 +8248,7 @@ CMD ["apache2-foreground"]
 ## `phpmyadmin:5.2-fpm`
 
 ```console
-$ docker pull phpmyadmin@sha256:771d68215a81e7494504aa70a8383f2c10a78697f6dc142adb750a64d40159a1
+$ docker pull phpmyadmin@sha256:a0ffd91699710cff0666702a57fb41a1c417b8a36360da9566259f870ad83814
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8422,14 +8422,14 @@ CMD ["php-fpm"]
 ### `phpmyadmin:5.2-fpm` - linux; arm variant v5
 
 ```console
-$ docker pull phpmyadmin@sha256:6aea4880bd205ef5b815edee6bc3eb87f7d7c9f3780d49b8b2d51232f78c73b9
+$ docker pull phpmyadmin@sha256:677baca7d0e369473202c682fadbc28bc0c1993c97cff8d17cf0b028484a54c1
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **153.4 MB (153433114 bytes)**  
+-	Total Size: **153.4 MB (153433124 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:59cbdb598e06967468d00e06057c42a0075fb8ef946831a2813e0c02c5bcd47b`
+-	Image ID: `sha256:d0abe3ef660413c8b03b4d5e167dfdfd935354736c1315d96d28f77e9018770b`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -8506,11 +8506,11 @@ LABEL org.opencontainers.image.title=Official phpMyAdmin Docker image org.openco
 RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         gnupg         dirmngr     ;         export GNUPGHOME="$(mktemp -d)";     export GPGKEY="3D06A59ECE730EB71B511C17CE752F178259BD92";     curl -fsSL -o phpMyAdmin.tar.xz $URL;     curl -fsSL -o phpMyAdmin.tar.xz.asc $URL.asc;     echo "$SHA256 *phpMyAdmin.tar.xz" | sha256sum -c -;     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$GPGKEY"         || gpg --batch --keyserver pgp.mit.edu --recv-keys "$GPGKEY"         || gpg --batch --keyserver keyserver.pgp.com --recv-keys "$GPGKEY"         || gpg --batch --keyserver keys.openpgp.org --recv-keys "$GPGKEY";     gpg --batch --verify phpMyAdmin.tar.xz.asc phpMyAdmin.tar.xz;     tar -xf phpMyAdmin.tar.xz -C /var/www/html --strip-components=1;     mkdir -p /var/www/html/tmp;     chown www-data:www-data /var/www/html/tmp;     gpgconf --kill all;     rm -r "$GNUPGHOME" phpMyAdmin.tar.xz phpMyAdmin.tar.xz.asc;     rm -r -v /var/www/html/setup/ /var/www/html/examples/ /var/www/html/js/src/ /var/www/html/templates/test/ /var/www/html/babel.config.json /var/www/html/doc/html/_sources/ /var/www/html/RELEASE-DATE-$VERSION /var/www/html/CONTRIBUTING.md;     grep -q -F "'configFile' => ROOT_PATH . 'config.inc.php'," /var/www/html/libraries/vendor_config.php;     sed -i "s@'configFile' => .*@'configFile' => '/etc/phpmyadmin/config.inc.php',@" /var/www/html/libraries/vendor_config.php;     grep -q -F "'configFile' => '/etc/phpmyadmin/config.inc.php'," /var/www/html/libraries/vendor_config.php;     php -l /var/www/html/libraries/vendor_config.php;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*
 # Fri, 05 Aug 2022 00:56:41 GMT
 COPY file:74e988fef607090521e63cea57b4c61ab22b3a2a131bc55f0cf4a0d9c36ce65d in /etc/phpmyadmin/config.inc.php 
-# Fri, 05 Aug 2022 00:56:41 GMT
-COPY file:7a1864d35a5b72dc75fa085c7d09497f417e1ef1eacb8597037c366f1978b5fa in /docker-entrypoint.sh 
-# Fri, 05 Aug 2022 00:56:41 GMT
+# Wed, 10 Aug 2022 00:48:50 GMT
+COPY file:d8c9f50886f5865fe589f64cb31544582913bb98f2cfa51a8828d71871363ce9 in /docker-entrypoint.sh 
+# Wed, 10 Aug 2022 00:48:50 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 05 Aug 2022 00:56:41 GMT
+# Wed, 10 Aug 2022 00:48:50 GMT
 CMD ["php-fpm"]
 ```
 
@@ -8571,9 +8571,9 @@ CMD ["php-fpm"]
 		Last Modified: Fri, 05 Aug 2022 00:58:28 GMT  
 		Size: 1.5 KB (1531 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea822b795bc9a5df49172d220d5f5506f36c5c88856a6fdbce2bcc6152487bf1`  
-		Last Modified: Fri, 05 Aug 2022 00:58:29 GMT  
-		Size: 772.0 B  
+	-	`sha256:5dc0d66584fa48597e9835bdf8a0f444b53107c6c3a531adb9972712132e419f`  
+		Last Modified: Wed, 10 Aug 2022 00:50:26 GMT  
+		Size: 782.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `phpmyadmin:5.2-fpm` - linux; arm variant v7
@@ -10678,7 +10678,7 @@ CMD ["php-fpm"]
 ## `phpmyadmin:5.2.0`
 
 ```console
-$ docker pull phpmyadmin@sha256:bd2030ed69462e8a86322a856ca10c4a5a826dce0e631c967d9fcfb52cc817f2
+$ docker pull phpmyadmin@sha256:e80a577513870cdc6a406802919221fe5f4aa0b57ea2fb0ac2b455ba642f3394
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10874,14 +10874,14 @@ CMD ["apache2-foreground"]
 ### `phpmyadmin:5.2.0` - linux; arm variant v5
 
 ```console
-$ docker pull phpmyadmin@sha256:831724f96d1a2b07c28d967777b84a18491f9374480e2a3dcaf5be2053ca5bf5
+$ docker pull phpmyadmin@sha256:301105f7bb58743facc0315c377f5034716c4b03efd7fd883f31637c46123b54
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **157.3 MB (157301555 bytes)**  
+-	Total Size: **157.3 MB (157301705 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f52141f8502d0886e02a800abde57c07503fdd4108cffc943dfa379e832ceef6`
+-	Image ID: `sha256:11ff00bbf4ac95e29c3c4a7835b66880bbaa93d7459c9e5d3d25a22caf4f40e8`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -10968,11 +10968,11 @@ LABEL org.opencontainers.image.title=Official phpMyAdmin Docker image org.openco
 RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         gnupg         dirmngr     ;         export GNUPGHOME="$(mktemp -d)";     export GPGKEY="3D06A59ECE730EB71B511C17CE752F178259BD92";     curl -fsSL -o phpMyAdmin.tar.xz $URL;     curl -fsSL -o phpMyAdmin.tar.xz.asc $URL.asc;     echo "$SHA256 *phpMyAdmin.tar.xz" | sha256sum -c -;     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$GPGKEY"         || gpg --batch --keyserver pgp.mit.edu --recv-keys "$GPGKEY"         || gpg --batch --keyserver keyserver.pgp.com --recv-keys "$GPGKEY"         || gpg --batch --keyserver keys.openpgp.org --recv-keys "$GPGKEY";     gpg --batch --verify phpMyAdmin.tar.xz.asc phpMyAdmin.tar.xz;     tar -xf phpMyAdmin.tar.xz -C /var/www/html --strip-components=1;     mkdir -p /var/www/html/tmp;     chown www-data:www-data /var/www/html/tmp;     gpgconf --kill all;     rm -r "$GNUPGHOME" phpMyAdmin.tar.xz phpMyAdmin.tar.xz.asc;     rm -r -v /var/www/html/setup/ /var/www/html/examples/ /var/www/html/js/src/ /var/www/html/templates/test/ /var/www/html/babel.config.json /var/www/html/doc/html/_sources/ /var/www/html/RELEASE-DATE-$VERSION /var/www/html/CONTRIBUTING.md;     grep -q -F "'configFile' => ROOT_PATH . 'config.inc.php'," /var/www/html/libraries/vendor_config.php;     sed -i "s@'configFile' => .*@'configFile' => '/etc/phpmyadmin/config.inc.php',@" /var/www/html/libraries/vendor_config.php;     grep -q -F "'configFile' => '/etc/phpmyadmin/config.inc.php'," /var/www/html/libraries/vendor_config.php;     php -l /var/www/html/libraries/vendor_config.php;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*
 # Fri, 05 Aug 2022 00:54:05 GMT
 COPY file:74e988fef607090521e63cea57b4c61ab22b3a2a131bc55f0cf4a0d9c36ce65d in /etc/phpmyadmin/config.inc.php 
-# Fri, 05 Aug 2022 00:54:05 GMT
-COPY file:7a1864d35a5b72dc75fa085c7d09497f417e1ef1eacb8597037c366f1978b5fa in /docker-entrypoint.sh 
-# Fri, 05 Aug 2022 00:54:06 GMT
+# Wed, 10 Aug 2022 00:48:37 GMT
+COPY file:fac46acd9e26942fe760a12972b08cbdccf211d0b6a699831af11badb14f3125 in /docker-entrypoint.sh 
+# Wed, 10 Aug 2022 00:48:37 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 05 Aug 2022 00:54:06 GMT
+# Wed, 10 Aug 2022 00:48:37 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -11045,9 +11045,9 @@ CMD ["apache2-foreground"]
 		Last Modified: Fri, 05 Aug 2022 00:57:38 GMT  
 		Size: 1.5 KB (1526 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccfdbdbf18420959c563a05fb7b604ef23e34ea053c42b1b07f7600d52e91330`  
-		Last Modified: Fri, 05 Aug 2022 00:57:38 GMT  
-		Size: 771.0 B  
+	-	`sha256:bf70e9ade542196843025db71dabd1b3d647ef7cdbadc898214f1f161a68d7fc`  
+		Last Modified: Wed, 10 Aug 2022 00:49:43 GMT  
+		Size: 921.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `phpmyadmin:5.2.0` - linux; arm variant v7
@@ -12127,7 +12127,7 @@ CMD ["apache2-foreground"]
 ## `phpmyadmin:5.2.0-apache`
 
 ```console
-$ docker pull phpmyadmin@sha256:bd2030ed69462e8a86322a856ca10c4a5a826dce0e631c967d9fcfb52cc817f2
+$ docker pull phpmyadmin@sha256:e80a577513870cdc6a406802919221fe5f4aa0b57ea2fb0ac2b455ba642f3394
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12323,14 +12323,14 @@ CMD ["apache2-foreground"]
 ### `phpmyadmin:5.2.0-apache` - linux; arm variant v5
 
 ```console
-$ docker pull phpmyadmin@sha256:831724f96d1a2b07c28d967777b84a18491f9374480e2a3dcaf5be2053ca5bf5
+$ docker pull phpmyadmin@sha256:301105f7bb58743facc0315c377f5034716c4b03efd7fd883f31637c46123b54
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **157.3 MB (157301555 bytes)**  
+-	Total Size: **157.3 MB (157301705 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f52141f8502d0886e02a800abde57c07503fdd4108cffc943dfa379e832ceef6`
+-	Image ID: `sha256:11ff00bbf4ac95e29c3c4a7835b66880bbaa93d7459c9e5d3d25a22caf4f40e8`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -12417,11 +12417,11 @@ LABEL org.opencontainers.image.title=Official phpMyAdmin Docker image org.openco
 RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         gnupg         dirmngr     ;         export GNUPGHOME="$(mktemp -d)";     export GPGKEY="3D06A59ECE730EB71B511C17CE752F178259BD92";     curl -fsSL -o phpMyAdmin.tar.xz $URL;     curl -fsSL -o phpMyAdmin.tar.xz.asc $URL.asc;     echo "$SHA256 *phpMyAdmin.tar.xz" | sha256sum -c -;     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$GPGKEY"         || gpg --batch --keyserver pgp.mit.edu --recv-keys "$GPGKEY"         || gpg --batch --keyserver keyserver.pgp.com --recv-keys "$GPGKEY"         || gpg --batch --keyserver keys.openpgp.org --recv-keys "$GPGKEY";     gpg --batch --verify phpMyAdmin.tar.xz.asc phpMyAdmin.tar.xz;     tar -xf phpMyAdmin.tar.xz -C /var/www/html --strip-components=1;     mkdir -p /var/www/html/tmp;     chown www-data:www-data /var/www/html/tmp;     gpgconf --kill all;     rm -r "$GNUPGHOME" phpMyAdmin.tar.xz phpMyAdmin.tar.xz.asc;     rm -r -v /var/www/html/setup/ /var/www/html/examples/ /var/www/html/js/src/ /var/www/html/templates/test/ /var/www/html/babel.config.json /var/www/html/doc/html/_sources/ /var/www/html/RELEASE-DATE-$VERSION /var/www/html/CONTRIBUTING.md;     grep -q -F "'configFile' => ROOT_PATH . 'config.inc.php'," /var/www/html/libraries/vendor_config.php;     sed -i "s@'configFile' => .*@'configFile' => '/etc/phpmyadmin/config.inc.php',@" /var/www/html/libraries/vendor_config.php;     grep -q -F "'configFile' => '/etc/phpmyadmin/config.inc.php'," /var/www/html/libraries/vendor_config.php;     php -l /var/www/html/libraries/vendor_config.php;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*
 # Fri, 05 Aug 2022 00:54:05 GMT
 COPY file:74e988fef607090521e63cea57b4c61ab22b3a2a131bc55f0cf4a0d9c36ce65d in /etc/phpmyadmin/config.inc.php 
-# Fri, 05 Aug 2022 00:54:05 GMT
-COPY file:7a1864d35a5b72dc75fa085c7d09497f417e1ef1eacb8597037c366f1978b5fa in /docker-entrypoint.sh 
-# Fri, 05 Aug 2022 00:54:06 GMT
+# Wed, 10 Aug 2022 00:48:37 GMT
+COPY file:fac46acd9e26942fe760a12972b08cbdccf211d0b6a699831af11badb14f3125 in /docker-entrypoint.sh 
+# Wed, 10 Aug 2022 00:48:37 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 05 Aug 2022 00:54:06 GMT
+# Wed, 10 Aug 2022 00:48:37 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -12494,9 +12494,9 @@ CMD ["apache2-foreground"]
 		Last Modified: Fri, 05 Aug 2022 00:57:38 GMT  
 		Size: 1.5 KB (1526 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccfdbdbf18420959c563a05fb7b604ef23e34ea053c42b1b07f7600d52e91330`  
-		Last Modified: Fri, 05 Aug 2022 00:57:38 GMT  
-		Size: 771.0 B  
+	-	`sha256:bf70e9ade542196843025db71dabd1b3d647ef7cdbadc898214f1f161a68d7fc`  
+		Last Modified: Wed, 10 Aug 2022 00:49:43 GMT  
+		Size: 921.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `phpmyadmin:5.2.0-apache` - linux; arm variant v7
@@ -13576,7 +13576,7 @@ CMD ["apache2-foreground"]
 ## `phpmyadmin:5.2.0-fpm`
 
 ```console
-$ docker pull phpmyadmin@sha256:771d68215a81e7494504aa70a8383f2c10a78697f6dc142adb750a64d40159a1
+$ docker pull phpmyadmin@sha256:a0ffd91699710cff0666702a57fb41a1c417b8a36360da9566259f870ad83814
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13750,14 +13750,14 @@ CMD ["php-fpm"]
 ### `phpmyadmin:5.2.0-fpm` - linux; arm variant v5
 
 ```console
-$ docker pull phpmyadmin@sha256:6aea4880bd205ef5b815edee6bc3eb87f7d7c9f3780d49b8b2d51232f78c73b9
+$ docker pull phpmyadmin@sha256:677baca7d0e369473202c682fadbc28bc0c1993c97cff8d17cf0b028484a54c1
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **153.4 MB (153433114 bytes)**  
+-	Total Size: **153.4 MB (153433124 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:59cbdb598e06967468d00e06057c42a0075fb8ef946831a2813e0c02c5bcd47b`
+-	Image ID: `sha256:d0abe3ef660413c8b03b4d5e167dfdfd935354736c1315d96d28f77e9018770b`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -13834,11 +13834,11 @@ LABEL org.opencontainers.image.title=Official phpMyAdmin Docker image org.openco
 RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         gnupg         dirmngr     ;         export GNUPGHOME="$(mktemp -d)";     export GPGKEY="3D06A59ECE730EB71B511C17CE752F178259BD92";     curl -fsSL -o phpMyAdmin.tar.xz $URL;     curl -fsSL -o phpMyAdmin.tar.xz.asc $URL.asc;     echo "$SHA256 *phpMyAdmin.tar.xz" | sha256sum -c -;     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$GPGKEY"         || gpg --batch --keyserver pgp.mit.edu --recv-keys "$GPGKEY"         || gpg --batch --keyserver keyserver.pgp.com --recv-keys "$GPGKEY"         || gpg --batch --keyserver keys.openpgp.org --recv-keys "$GPGKEY";     gpg --batch --verify phpMyAdmin.tar.xz.asc phpMyAdmin.tar.xz;     tar -xf phpMyAdmin.tar.xz -C /var/www/html --strip-components=1;     mkdir -p /var/www/html/tmp;     chown www-data:www-data /var/www/html/tmp;     gpgconf --kill all;     rm -r "$GNUPGHOME" phpMyAdmin.tar.xz phpMyAdmin.tar.xz.asc;     rm -r -v /var/www/html/setup/ /var/www/html/examples/ /var/www/html/js/src/ /var/www/html/templates/test/ /var/www/html/babel.config.json /var/www/html/doc/html/_sources/ /var/www/html/RELEASE-DATE-$VERSION /var/www/html/CONTRIBUTING.md;     grep -q -F "'configFile' => ROOT_PATH . 'config.inc.php'," /var/www/html/libraries/vendor_config.php;     sed -i "s@'configFile' => .*@'configFile' => '/etc/phpmyadmin/config.inc.php',@" /var/www/html/libraries/vendor_config.php;     grep -q -F "'configFile' => '/etc/phpmyadmin/config.inc.php'," /var/www/html/libraries/vendor_config.php;     php -l /var/www/html/libraries/vendor_config.php;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*
 # Fri, 05 Aug 2022 00:56:41 GMT
 COPY file:74e988fef607090521e63cea57b4c61ab22b3a2a131bc55f0cf4a0d9c36ce65d in /etc/phpmyadmin/config.inc.php 
-# Fri, 05 Aug 2022 00:56:41 GMT
-COPY file:7a1864d35a5b72dc75fa085c7d09497f417e1ef1eacb8597037c366f1978b5fa in /docker-entrypoint.sh 
-# Fri, 05 Aug 2022 00:56:41 GMT
+# Wed, 10 Aug 2022 00:48:50 GMT
+COPY file:d8c9f50886f5865fe589f64cb31544582913bb98f2cfa51a8828d71871363ce9 in /docker-entrypoint.sh 
+# Wed, 10 Aug 2022 00:48:50 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 05 Aug 2022 00:56:41 GMT
+# Wed, 10 Aug 2022 00:48:50 GMT
 CMD ["php-fpm"]
 ```
 
@@ -13899,9 +13899,9 @@ CMD ["php-fpm"]
 		Last Modified: Fri, 05 Aug 2022 00:58:28 GMT  
 		Size: 1.5 KB (1531 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea822b795bc9a5df49172d220d5f5506f36c5c88856a6fdbce2bcc6152487bf1`  
-		Last Modified: Fri, 05 Aug 2022 00:58:29 GMT  
-		Size: 772.0 B  
+	-	`sha256:5dc0d66584fa48597e9835bdf8a0f444b53107c6c3a531adb9972712132e419f`  
+		Last Modified: Wed, 10 Aug 2022 00:50:26 GMT  
+		Size: 782.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `phpmyadmin:5.2.0-fpm` - linux; arm variant v7
@@ -16006,7 +16006,7 @@ CMD ["php-fpm"]
 ## `phpmyadmin:apache`
 
 ```console
-$ docker pull phpmyadmin@sha256:bd2030ed69462e8a86322a856ca10c4a5a826dce0e631c967d9fcfb52cc817f2
+$ docker pull phpmyadmin@sha256:e80a577513870cdc6a406802919221fe5f4aa0b57ea2fb0ac2b455ba642f3394
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16202,14 +16202,14 @@ CMD ["apache2-foreground"]
 ### `phpmyadmin:apache` - linux; arm variant v5
 
 ```console
-$ docker pull phpmyadmin@sha256:831724f96d1a2b07c28d967777b84a18491f9374480e2a3dcaf5be2053ca5bf5
+$ docker pull phpmyadmin@sha256:301105f7bb58743facc0315c377f5034716c4b03efd7fd883f31637c46123b54
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **157.3 MB (157301555 bytes)**  
+-	Total Size: **157.3 MB (157301705 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f52141f8502d0886e02a800abde57c07503fdd4108cffc943dfa379e832ceef6`
+-	Image ID: `sha256:11ff00bbf4ac95e29c3c4a7835b66880bbaa93d7459c9e5d3d25a22caf4f40e8`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -16296,11 +16296,11 @@ LABEL org.opencontainers.image.title=Official phpMyAdmin Docker image org.openco
 RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         gnupg         dirmngr     ;         export GNUPGHOME="$(mktemp -d)";     export GPGKEY="3D06A59ECE730EB71B511C17CE752F178259BD92";     curl -fsSL -o phpMyAdmin.tar.xz $URL;     curl -fsSL -o phpMyAdmin.tar.xz.asc $URL.asc;     echo "$SHA256 *phpMyAdmin.tar.xz" | sha256sum -c -;     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$GPGKEY"         || gpg --batch --keyserver pgp.mit.edu --recv-keys "$GPGKEY"         || gpg --batch --keyserver keyserver.pgp.com --recv-keys "$GPGKEY"         || gpg --batch --keyserver keys.openpgp.org --recv-keys "$GPGKEY";     gpg --batch --verify phpMyAdmin.tar.xz.asc phpMyAdmin.tar.xz;     tar -xf phpMyAdmin.tar.xz -C /var/www/html --strip-components=1;     mkdir -p /var/www/html/tmp;     chown www-data:www-data /var/www/html/tmp;     gpgconf --kill all;     rm -r "$GNUPGHOME" phpMyAdmin.tar.xz phpMyAdmin.tar.xz.asc;     rm -r -v /var/www/html/setup/ /var/www/html/examples/ /var/www/html/js/src/ /var/www/html/templates/test/ /var/www/html/babel.config.json /var/www/html/doc/html/_sources/ /var/www/html/RELEASE-DATE-$VERSION /var/www/html/CONTRIBUTING.md;     grep -q -F "'configFile' => ROOT_PATH . 'config.inc.php'," /var/www/html/libraries/vendor_config.php;     sed -i "s@'configFile' => .*@'configFile' => '/etc/phpmyadmin/config.inc.php',@" /var/www/html/libraries/vendor_config.php;     grep -q -F "'configFile' => '/etc/phpmyadmin/config.inc.php'," /var/www/html/libraries/vendor_config.php;     php -l /var/www/html/libraries/vendor_config.php;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*
 # Fri, 05 Aug 2022 00:54:05 GMT
 COPY file:74e988fef607090521e63cea57b4c61ab22b3a2a131bc55f0cf4a0d9c36ce65d in /etc/phpmyadmin/config.inc.php 
-# Fri, 05 Aug 2022 00:54:05 GMT
-COPY file:7a1864d35a5b72dc75fa085c7d09497f417e1ef1eacb8597037c366f1978b5fa in /docker-entrypoint.sh 
-# Fri, 05 Aug 2022 00:54:06 GMT
+# Wed, 10 Aug 2022 00:48:37 GMT
+COPY file:fac46acd9e26942fe760a12972b08cbdccf211d0b6a699831af11badb14f3125 in /docker-entrypoint.sh 
+# Wed, 10 Aug 2022 00:48:37 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 05 Aug 2022 00:54:06 GMT
+# Wed, 10 Aug 2022 00:48:37 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -16373,9 +16373,9 @@ CMD ["apache2-foreground"]
 		Last Modified: Fri, 05 Aug 2022 00:57:38 GMT  
 		Size: 1.5 KB (1526 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccfdbdbf18420959c563a05fb7b604ef23e34ea053c42b1b07f7600d52e91330`  
-		Last Modified: Fri, 05 Aug 2022 00:57:38 GMT  
-		Size: 771.0 B  
+	-	`sha256:bf70e9ade542196843025db71dabd1b3d647ef7cdbadc898214f1f161a68d7fc`  
+		Last Modified: Wed, 10 Aug 2022 00:49:43 GMT  
+		Size: 921.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `phpmyadmin:apache` - linux; arm variant v7
@@ -17455,7 +17455,7 @@ CMD ["apache2-foreground"]
 ## `phpmyadmin:fpm`
 
 ```console
-$ docker pull phpmyadmin@sha256:771d68215a81e7494504aa70a8383f2c10a78697f6dc142adb750a64d40159a1
+$ docker pull phpmyadmin@sha256:a0ffd91699710cff0666702a57fb41a1c417b8a36360da9566259f870ad83814
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17629,14 +17629,14 @@ CMD ["php-fpm"]
 ### `phpmyadmin:fpm` - linux; arm variant v5
 
 ```console
-$ docker pull phpmyadmin@sha256:6aea4880bd205ef5b815edee6bc3eb87f7d7c9f3780d49b8b2d51232f78c73b9
+$ docker pull phpmyadmin@sha256:677baca7d0e369473202c682fadbc28bc0c1993c97cff8d17cf0b028484a54c1
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **153.4 MB (153433114 bytes)**  
+-	Total Size: **153.4 MB (153433124 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:59cbdb598e06967468d00e06057c42a0075fb8ef946831a2813e0c02c5bcd47b`
+-	Image ID: `sha256:d0abe3ef660413c8b03b4d5e167dfdfd935354736c1315d96d28f77e9018770b`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -17713,11 +17713,11 @@ LABEL org.opencontainers.image.title=Official phpMyAdmin Docker image org.openco
 RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         gnupg         dirmngr     ;         export GNUPGHOME="$(mktemp -d)";     export GPGKEY="3D06A59ECE730EB71B511C17CE752F178259BD92";     curl -fsSL -o phpMyAdmin.tar.xz $URL;     curl -fsSL -o phpMyAdmin.tar.xz.asc $URL.asc;     echo "$SHA256 *phpMyAdmin.tar.xz" | sha256sum -c -;     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$GPGKEY"         || gpg --batch --keyserver pgp.mit.edu --recv-keys "$GPGKEY"         || gpg --batch --keyserver keyserver.pgp.com --recv-keys "$GPGKEY"         || gpg --batch --keyserver keys.openpgp.org --recv-keys "$GPGKEY";     gpg --batch --verify phpMyAdmin.tar.xz.asc phpMyAdmin.tar.xz;     tar -xf phpMyAdmin.tar.xz -C /var/www/html --strip-components=1;     mkdir -p /var/www/html/tmp;     chown www-data:www-data /var/www/html/tmp;     gpgconf --kill all;     rm -r "$GNUPGHOME" phpMyAdmin.tar.xz phpMyAdmin.tar.xz.asc;     rm -r -v /var/www/html/setup/ /var/www/html/examples/ /var/www/html/js/src/ /var/www/html/templates/test/ /var/www/html/babel.config.json /var/www/html/doc/html/_sources/ /var/www/html/RELEASE-DATE-$VERSION /var/www/html/CONTRIBUTING.md;     grep -q -F "'configFile' => ROOT_PATH . 'config.inc.php'," /var/www/html/libraries/vendor_config.php;     sed -i "s@'configFile' => .*@'configFile' => '/etc/phpmyadmin/config.inc.php',@" /var/www/html/libraries/vendor_config.php;     grep -q -F "'configFile' => '/etc/phpmyadmin/config.inc.php'," /var/www/html/libraries/vendor_config.php;     php -l /var/www/html/libraries/vendor_config.php;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*
 # Fri, 05 Aug 2022 00:56:41 GMT
 COPY file:74e988fef607090521e63cea57b4c61ab22b3a2a131bc55f0cf4a0d9c36ce65d in /etc/phpmyadmin/config.inc.php 
-# Fri, 05 Aug 2022 00:56:41 GMT
-COPY file:7a1864d35a5b72dc75fa085c7d09497f417e1ef1eacb8597037c366f1978b5fa in /docker-entrypoint.sh 
-# Fri, 05 Aug 2022 00:56:41 GMT
+# Wed, 10 Aug 2022 00:48:50 GMT
+COPY file:d8c9f50886f5865fe589f64cb31544582913bb98f2cfa51a8828d71871363ce9 in /docker-entrypoint.sh 
+# Wed, 10 Aug 2022 00:48:50 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 05 Aug 2022 00:56:41 GMT
+# Wed, 10 Aug 2022 00:48:50 GMT
 CMD ["php-fpm"]
 ```
 
@@ -17778,9 +17778,9 @@ CMD ["php-fpm"]
 		Last Modified: Fri, 05 Aug 2022 00:58:28 GMT  
 		Size: 1.5 KB (1531 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea822b795bc9a5df49172d220d5f5506f36c5c88856a6fdbce2bcc6152487bf1`  
-		Last Modified: Fri, 05 Aug 2022 00:58:29 GMT  
-		Size: 772.0 B  
+	-	`sha256:5dc0d66584fa48597e9835bdf8a0f444b53107c6c3a531adb9972712132e419f`  
+		Last Modified: Wed, 10 Aug 2022 00:50:26 GMT  
+		Size: 782.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `phpmyadmin:fpm` - linux; arm variant v7
@@ -19885,7 +19885,7 @@ CMD ["php-fpm"]
 ## `phpmyadmin:latest`
 
 ```console
-$ docker pull phpmyadmin@sha256:bd2030ed69462e8a86322a856ca10c4a5a826dce0e631c967d9fcfb52cc817f2
+$ docker pull phpmyadmin@sha256:e80a577513870cdc6a406802919221fe5f4aa0b57ea2fb0ac2b455ba642f3394
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -20081,14 +20081,14 @@ CMD ["apache2-foreground"]
 ### `phpmyadmin:latest` - linux; arm variant v5
 
 ```console
-$ docker pull phpmyadmin@sha256:831724f96d1a2b07c28d967777b84a18491f9374480e2a3dcaf5be2053ca5bf5
+$ docker pull phpmyadmin@sha256:301105f7bb58743facc0315c377f5034716c4b03efd7fd883f31637c46123b54
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **157.3 MB (157301555 bytes)**  
+-	Total Size: **157.3 MB (157301705 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f52141f8502d0886e02a800abde57c07503fdd4108cffc943dfa379e832ceef6`
+-	Image ID: `sha256:11ff00bbf4ac95e29c3c4a7835b66880bbaa93d7459c9e5d3d25a22caf4f40e8`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -20175,11 +20175,11 @@ LABEL org.opencontainers.image.title=Official phpMyAdmin Docker image org.openco
 RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         gnupg         dirmngr     ;         export GNUPGHOME="$(mktemp -d)";     export GPGKEY="3D06A59ECE730EB71B511C17CE752F178259BD92";     curl -fsSL -o phpMyAdmin.tar.xz $URL;     curl -fsSL -o phpMyAdmin.tar.xz.asc $URL.asc;     echo "$SHA256 *phpMyAdmin.tar.xz" | sha256sum -c -;     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$GPGKEY"         || gpg --batch --keyserver pgp.mit.edu --recv-keys "$GPGKEY"         || gpg --batch --keyserver keyserver.pgp.com --recv-keys "$GPGKEY"         || gpg --batch --keyserver keys.openpgp.org --recv-keys "$GPGKEY";     gpg --batch --verify phpMyAdmin.tar.xz.asc phpMyAdmin.tar.xz;     tar -xf phpMyAdmin.tar.xz -C /var/www/html --strip-components=1;     mkdir -p /var/www/html/tmp;     chown www-data:www-data /var/www/html/tmp;     gpgconf --kill all;     rm -r "$GNUPGHOME" phpMyAdmin.tar.xz phpMyAdmin.tar.xz.asc;     rm -r -v /var/www/html/setup/ /var/www/html/examples/ /var/www/html/js/src/ /var/www/html/templates/test/ /var/www/html/babel.config.json /var/www/html/doc/html/_sources/ /var/www/html/RELEASE-DATE-$VERSION /var/www/html/CONTRIBUTING.md;     grep -q -F "'configFile' => ROOT_PATH . 'config.inc.php'," /var/www/html/libraries/vendor_config.php;     sed -i "s@'configFile' => .*@'configFile' => '/etc/phpmyadmin/config.inc.php',@" /var/www/html/libraries/vendor_config.php;     grep -q -F "'configFile' => '/etc/phpmyadmin/config.inc.php'," /var/www/html/libraries/vendor_config.php;     php -l /var/www/html/libraries/vendor_config.php;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*
 # Fri, 05 Aug 2022 00:54:05 GMT
 COPY file:74e988fef607090521e63cea57b4c61ab22b3a2a131bc55f0cf4a0d9c36ce65d in /etc/phpmyadmin/config.inc.php 
-# Fri, 05 Aug 2022 00:54:05 GMT
-COPY file:7a1864d35a5b72dc75fa085c7d09497f417e1ef1eacb8597037c366f1978b5fa in /docker-entrypoint.sh 
-# Fri, 05 Aug 2022 00:54:06 GMT
+# Wed, 10 Aug 2022 00:48:37 GMT
+COPY file:fac46acd9e26942fe760a12972b08cbdccf211d0b6a699831af11badb14f3125 in /docker-entrypoint.sh 
+# Wed, 10 Aug 2022 00:48:37 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 05 Aug 2022 00:54:06 GMT
+# Wed, 10 Aug 2022 00:48:37 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -20252,9 +20252,9 @@ CMD ["apache2-foreground"]
 		Last Modified: Fri, 05 Aug 2022 00:57:38 GMT  
 		Size: 1.5 KB (1526 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccfdbdbf18420959c563a05fb7b604ef23e34ea053c42b1b07f7600d52e91330`  
-		Last Modified: Fri, 05 Aug 2022 00:57:38 GMT  
-		Size: 771.0 B  
+	-	`sha256:bf70e9ade542196843025db71dabd1b3d647ef7cdbadc898214f1f161a68d7fc`  
+		Last Modified: Wed, 10 Aug 2022 00:49:43 GMT  
+		Size: 921.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `phpmyadmin:latest` - linux; arm variant v7
