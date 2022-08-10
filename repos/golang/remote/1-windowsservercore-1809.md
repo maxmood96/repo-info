@@ -1,53 +1,53 @@
 ## `golang:1-windowsservercore-1809`
 
 ```console
-$ docker pull golang@sha256:6099e92b818a7dece3c24892c0b6cf2c6dbd8d20623ebd20c02c4d54fa823e23
+$ docker pull golang@sha256:48cc7f3b5197fd305d940070f8d6cfc55799dce5403520b8ac3749655ac478be
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.17763.3165; amd64
+	-	windows version 10.0.17763.3287; amd64
 
-### `golang:1-windowsservercore-1809` - windows version 10.0.17763.3165; amd64
+### `golang:1-windowsservercore-1809` - windows version 10.0.17763.3287; amd64
 
 ```console
-$ docker pull golang@sha256:8dc72d8ed3a469f91e61da245ec3c0e80695f5bfb460fe34b0f6d3153c4be1fd
+$ docker pull golang@sha256:7263db2b2f729cb165908b1641ea76b6c4f96499763046edef82bf955398579d
 ```
 
 -	Docker Version: 20.10.8
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 GB (2855383922 bytes)**  
+-	Total Size: **2.9 GB (2861015800 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:90b9e9d4bd1131bbc3453c1ac3bed635658fff34095edb1891f87c13ed206a7b`
+-	Image ID: `sha256:fac720c99a1352d507e16327183112afdc273adb22a1b0b2ffb8bb9b2cca132b`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Fri, 22 Apr 2022 01:27:13 GMT
 RUN Apply image 10.0.17763.2803
-# Wed, 06 Jul 2022 22:37:15 GMT
-RUN Install update 10.0.17763.3165
-# Tue, 12 Jul 2022 19:32:43 GMT
+# Sat, 06 Aug 2022 18:30:32 GMT
+RUN Install update 10.0.17763.3287
+# Wed, 10 Aug 2022 12:16:16 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Tue, 12 Jul 2022 19:32:44 GMT
+# Wed, 10 Aug 2022 12:53:43 GMT
 ENV GIT_VERSION=2.23.0
-# Tue, 12 Jul 2022 19:32:45 GMT
+# Wed, 10 Aug 2022 12:53:44 GMT
 ENV GIT_TAG=v2.23.0.windows.1
-# Tue, 12 Jul 2022 19:32:46 GMT
+# Wed, 10 Aug 2022 12:53:45 GMT
 ENV GIT_DOWNLOAD_URL=https://github.com/git-for-windows/git/releases/download/v2.23.0.windows.1/MinGit-2.23.0-64-bit.zip
-# Tue, 12 Jul 2022 19:32:47 GMT
+# Wed, 10 Aug 2022 12:53:46 GMT
 ENV GIT_DOWNLOAD_SHA256=8f65208f92c0b4c3ae4c0cf02d4b5f6791d539cd1a07b2df62b7116467724735
-# Tue, 12 Jul 2022 19:34:46 GMT
+# Wed, 10 Aug 2022 12:55:11 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:GIT_DOWNLOAD_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:GIT_DOWNLOAD_URL -OutFile 'git.zip'; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:GIT_DOWNLOAD_SHA256); 	if ((Get-FileHash git.zip -Algorithm sha256).Hash -ne $env:GIT_DOWNLOAD_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive -Path git.zip -DestinationPath C:\git\.; 		Write-Host 'Removing ...'; 	Remove-Item git.zip -Force; 		Write-Host 'Updating PATH ...'; 	$env:PATH = 'C:\git\cmd;C:\git\mingw64\bin;C:\git\usr\bin;' + $env:PATH; 	[Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine); 		Write-Host 'Verifying install ("git version") ...'; 	git version; 		Write-Host 'Complete.';
-# Tue, 12 Jul 2022 19:34:47 GMT
+# Wed, 10 Aug 2022 12:55:12 GMT
 ENV GOPATH=C:\go
-# Tue, 12 Jul 2022 19:35:43 GMT
+# Wed, 10 Aug 2022 12:56:14 GMT
 RUN $newPath = ('{0}\bin;C:\Program Files\Go\bin;{1}' -f $env:GOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Tue, 02 Aug 2022 19:19:12 GMT
+# Wed, 10 Aug 2022 12:56:15 GMT
 ENV GOLANG_VERSION=1.19
-# Tue, 02 Aug 2022 19:23:04 GMT
+# Wed, 10 Aug 2022 12:59:43 GMT
 RUN $url = 'https://dl.google.com/go/go1.19.windows-amd64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = 'bcaaf966f91980d35ae93c37a8fe890e4ddfca19448c0d9f66c027d287e2823a'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Moving ...'; 	Move-Item -Path C:\go -Destination 'C:\Program Files\Go'; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Complete.';
-# Tue, 02 Aug 2022 19:23:06 GMT
+# Wed, 10 Aug 2022 12:59:45 GMT
 WORKDIR C:\go
 ```
 
@@ -55,50 +55,50 @@ WORKDIR C:\go
 	-	`sha256:b111c3320c949bea81612bf4554f1b6592c2f504920b5bf57ba340a1d4d52c93`  
 		Size: 1.9 GB (1877166088 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:7aca8de30754f19fe03ee4c21eed0762efb5e91bf684b0cc36cc92b2af13446d`  
-		Size: 794.9 MB (794877652 bytes)  
+	-	`sha256:294d77ac553d7210b662d07674ef9e39a6c2e88dc15b9d2788d51e509bc8b54e`  
+		Size: 800.5 MB (800546641 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:912efe6370f7047e630e1f70d9201e3143571e3ed1fe50a1e61754d2d536ea95`  
-		Last Modified: Tue, 12 Jul 2022 20:21:55 GMT  
-		Size: 1.4 KB (1428 bytes)  
+	-	`sha256:d64f32398ff5e4ac4cbab317ffed87a2fbf4e4a37210284dba19f2929d631a95`  
+		Last Modified: Wed, 10 Aug 2022 12:42:57 GMT  
+		Size: 1.4 KB (1430 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fbf35cf37677487b3a6263174b47b2e2b56cd7a9e53be5c11d3c44ff42ce4500`  
-		Last Modified: Tue, 12 Jul 2022 20:21:54 GMT  
-		Size: 1.4 KB (1432 bytes)  
+	-	`sha256:da3c8de3c3b75d5e4df16d5b51d2629a7ea48fef427269b895425ddf83e4648f`  
+		Last Modified: Wed, 10 Aug 2022 13:25:13 GMT  
+		Size: 1.4 KB (1419 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eeeb9d045cdffa8a8f052a2b2a83961e9c8b42408047a0e4caf49a35dec69063`  
-		Last Modified: Tue, 12 Jul 2022 20:21:50 GMT  
-		Size: 1.4 KB (1433 bytes)  
+	-	`sha256:1379e9d7c93c53a7225d517ef3bbf5ac5db662822c6b033ba0f86e57f553f9f1`  
+		Last Modified: Wed, 10 Aug 2022 13:25:10 GMT  
+		Size: 1.4 KB (1423 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9078894caf6ef326c788d2591406f4c187fd8bb3f04777662cee4de51953442b`  
-		Last Modified: Tue, 12 Jul 2022 20:21:50 GMT  
-		Size: 1.4 KB (1408 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:552005f37f1004b0ce2427123b219106e791fb4df589640814f54ef4cc0b8325`  
-		Last Modified: Tue, 12 Jul 2022 20:21:50 GMT  
+	-	`sha256:7c04c4fbebbd0c6b7ec0d088c9f85358565ade6536be3c27ec839439c70b3300`  
+		Last Modified: Wed, 10 Aug 2022 13:25:10 GMT  
 		Size: 1.4 KB (1417 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:196c468260d62ca4878a4416003505afc60f2b02253764d9a9ab38e194f10d12`  
-		Last Modified: Tue, 12 Jul 2022 20:21:58 GMT  
-		Size: 25.5 MB (25450252 bytes)  
+	-	`sha256:345f3fbeaf81942e1e576c351394bee7910b1bd200d739562499849161810b00`  
+		Last Modified: Wed, 10 Aug 2022 13:25:09 GMT  
+		Size: 1.4 KB (1412 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61b8b80e2b89fe7312f50d8be1134a7813d8e24dfbb78b82b5ddcba129025c15`  
-		Last Modified: Tue, 12 Jul 2022 20:21:48 GMT  
-		Size: 1.4 KB (1425 bytes)  
+	-	`sha256:9daa4ce5f809aaf1eb408a95c9c6bb87f8b8971efb28085fb12419172bc3769b`  
+		Last Modified: Wed, 10 Aug 2022 13:25:17 GMT  
+		Size: 25.4 MB (25441513 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d48a66cfa3d41dc889396fcadc5aa4d650bb9b6e4bd8700436e2667186182b5a`  
-		Last Modified: Tue, 12 Jul 2022 20:21:48 GMT  
-		Size: 317.5 KB (317481 bytes)  
+	-	`sha256:94a64bd2b96a29fef52e63363ec6219a5a846d18825d515fdd5c5a45d62eaf71`  
+		Last Modified: Wed, 10 Aug 2022 13:25:07 GMT  
+		Size: 1.4 KB (1422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e6ff0188197bd6877a185c824922cddec794b14fe956fdb10ac2160acf714d7`  
-		Last Modified: Tue, 02 Aug 2022 19:33:00 GMT  
-		Size: 1.4 KB (1417 bytes)  
+	-	`sha256:db4ccb61f1f7e4a0d3ecd876f61280913525a4ef70cc4b82b16a164f4fe7f982`  
+		Last Modified: Wed, 10 Aug 2022 13:25:07 GMT  
+		Size: 315.2 KB (315177 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6a79444648dcebfc77918cd47b3cda1396e9d03ff18a8e31b5b50c09567eb803`  
-		Last Modified: Tue, 02 Aug 2022 19:33:35 GMT  
-		Size: 157.6 MB (157560928 bytes)  
+	-	`sha256:e01fd09706e986a5b233efd7b3c784b3b140f0eca2f0f29e17c1c5e3109a0727`  
+		Last Modified: Wed, 10 Aug 2022 13:25:07 GMT  
+		Size: 1.4 KB (1426 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9a03ad73504f210589f15640b588a38661bd89c0b7b2d854f33241647150918`  
-		Last Modified: Tue, 02 Aug 2022 19:33:00 GMT  
-		Size: 1.6 KB (1561 bytes)  
+	-	`sha256:1aa455d8815fa04892b104fb76b8ae072872a55a69ec1617d311d4f093e52f27`  
+		Last Modified: Wed, 10 Aug 2022 13:26:00 GMT  
+		Size: 157.5 MB (157534853 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b3e1f95133cea3ac7fb16f81eb7e614f14b842926e28028548c7d231b24d943b`  
+		Last Modified: Wed, 10 Aug 2022 13:25:07 GMT  
+		Size: 1.6 KB (1579 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
