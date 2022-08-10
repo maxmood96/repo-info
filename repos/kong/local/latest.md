@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ac914d61e19c72a49fd1d32d6e2a58367034c48af55fe776c1ae56ab2271228b`
-- Created: `2022-07-19T00:24:46.744350346Z`
-- Virtual Size: ~ 139.25 Mb  
+- Image ID: `sha256:bf394ffed022e33afd4c01e0f69d77671361bb35c0e0d391a7bf102860dafbfd`
+- Created: `2022-08-09T20:50:55.028887508Z`
+- Virtual Size: ~ 139.29 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -123,16 +123,16 @@ MIT
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.35.0-r15 description:
+busybox-1.35.0-r17 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.35.0-r15 webpage:
+busybox-1.35.0-r17 webpage:
 https://busybox.net/
 
-busybox-1.35.0-r15 installed size:
-936 KiB
+busybox-1.35.0-r17 installed size:
+940 KiB
 
-busybox-1.35.0-r15 license:
+busybox-1.35.0-r17 license:
 GPL-2.0-only
 
 ```
@@ -140,16 +140,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20211220-r0 description:
+ca-certificates-20220614-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20211220-r0 webpage:
+ca-certificates-20220614-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20211220-r0 installed size:
-656 KiB
+ca-certificates-20220614-r0 installed size:
+688 KiB
 
-ca-certificates-20211220-r0 license:
+ca-certificates-20220614-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -157,16 +157,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20211220-r0 description:
+ca-certificates-bundle-20220614-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20211220-r0 webpage:
+ca-certificates-bundle-20220614-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20211220-r0 installed size:
-216 KiB
+ca-certificates-bundle-20220614-r0 installed size:
+228 KiB
 
-ca-certificates-bundle-20211220-r0 license:
+ca-certificates-bundle-20220614-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -548,16 +548,16 @@ GPL-2.0-or-later
 ### `apk` package: `pkgconf`
 
 ```console
-pkgconf-1.8.0-r0 description:
+pkgconf-1.8.0-r1 description:
 development framework configuration tools
 
-pkgconf-1.8.0-r0 webpage:
+pkgconf-1.8.0-r1 webpage:
 https://git.sr.ht/~kaniini/pkgconf
 
-pkgconf-1.8.0-r0 installed size:
+pkgconf-1.8.0-r1 installed size:
 140 KiB
 
-pkgconf-1.8.0-r0 license:
+pkgconf-1.8.0-r1 license:
 ISC
 
 ```
@@ -599,16 +599,16 @@ GPL-2.0-only
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.35.0-r15 description:
+ssl_client-1.35.0-r17 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.35.0-r15 webpage:
+ssl_client-1.35.0-r17 webpage:
 https://busybox.net/
 
-ssl_client-1.35.0-r15 installed size:
+ssl_client-1.35.0-r17 installed size:
 28 KiB
 
-ssl_client-1.35.0-r15 license:
+ssl_client-1.35.0-r17 license:
 GPL-2.0-only
 
 ```
@@ -667,16 +667,16 @@ Info-ZIP
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.2.12-r1 description:
+zlib-1.2.12-r3 description:
 A compression/decompression Library
 
-zlib-1.2.12-r1 webpage:
+zlib-1.2.12-r3 webpage:
 https://zlib.net/
 
-zlib-1.2.12-r1 installed size:
+zlib-1.2.12-r3 installed size:
 108 KiB
 
-zlib-1.2.12-r1 license:
+zlib-1.2.12-r3 license:
 Zlib
 
 ```
@@ -684,16 +684,16 @@ Zlib
 ### `apk` package: `zlib-dev`
 
 ```console
-zlib-dev-1.2.12-r1 description:
+zlib-dev-1.2.12-r3 description:
 A compression/decompression Library (development files)
 
-zlib-dev-1.2.12-r1 webpage:
+zlib-dev-1.2.12-r3 webpage:
 https://zlib.net/
 
-zlib-dev-1.2.12-r1 installed size:
+zlib-dev-1.2.12-r3 installed size:
 140 KiB
 
-zlib-dev-1.2.12-r1 license:
+zlib-dev-1.2.12-r3 license:
 Zlib
 
 ```
