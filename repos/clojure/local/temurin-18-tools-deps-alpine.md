@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e3ec6d76527e1625a9d23a77a52295e1f087594cc778738c1e34073124cbde0b`
-- Created: `2022-08-03T12:20:03.974707482Z`
-- Virtual Size: ~ 399.44 Mb  
+- Image ID: `sha256:52d30e2cc4c1abf1d1adf8f330ff13c9e3234992ab8994e76003d171a7251891`
+- Created: `2022-08-10T06:02:08.311697618Z`
+- Virtual Size: ~ 399.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint"]`
@@ -125,16 +125,16 @@ MIT
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.35.0-r15 description:
+busybox-1.35.0-r17 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.35.0-r15 webpage:
+busybox-1.35.0-r17 webpage:
 https://busybox.net/
 
-busybox-1.35.0-r15 installed size:
-936 KiB
+busybox-1.35.0-r17 installed size:
+940 KiB
 
-busybox-1.35.0-r15 license:
+busybox-1.35.0-r17 license:
 GPL-2.0-only
 
 ```
@@ -159,16 +159,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20211220-r0 description:
+ca-certificates-bundle-20220614-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20211220-r0 webpage:
+ca-certificates-bundle-20220614-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20211220-r0 installed size:
-216 KiB
+ca-certificates-bundle-20220614-r0 installed size:
+228 KiB
 
-ca-certificates-bundle-20211220-r0 license:
+ca-certificates-bundle-20220614-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -601,16 +601,16 @@ GPL-2.0-only
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.35.0-r15 description:
+ssl_client-1.35.0-r17 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.35.0-r15 webpage:
+ssl_client-1.35.0-r17 webpage:
 https://busybox.net/
 
-ssl_client-1.35.0-r15 installed size:
+ssl_client-1.35.0-r17 installed size:
 28 KiB
 
-ssl_client-1.35.0-r15 license:
+ssl_client-1.35.0-r17 license:
 GPL-2.0-only
 
 ```
@@ -652,16 +652,16 @@ Public-Domain
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.2.12-r1 description:
+zlib-1.2.12-r3 description:
 A compression/decompression Library
 
-zlib-1.2.12-r1 webpage:
+zlib-1.2.12-r3 webpage:
 https://zlib.net/
 
-zlib-1.2.12-r1 installed size:
+zlib-1.2.12-r3 installed size:
 108 KiB
 
-zlib-1.2.12-r1 license:
+zlib-1.2.12-r3 license:
 Zlib
 
 ```
