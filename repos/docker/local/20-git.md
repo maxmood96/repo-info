@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9249078eb69272d01b5972df91434385f01b5018cb90849079b6a4727dc96b54`
-- Created: `2022-08-02T00:20:43.962653348Z`
-- Virtual Size: ~ 148.61 Mb  
+- Image ID: `sha256:5a2e3f6b5b6dbd22793f1d14c514090e2eab9f3bf0981bff0a606aa63a3c0a6f`
+- Created: `2022-08-09T18:21:57.860247731Z`
+- Virtual Size: ~ 148.65 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -106,16 +106,16 @@ MIT
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.35.0-r15 description:
+busybox-1.35.0-r17 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.35.0-r15 webpage:
+busybox-1.35.0-r17 webpage:
 https://busybox.net/
 
-busybox-1.35.0-r15 installed size:
-936 KiB
+busybox-1.35.0-r17 installed size:
+940 KiB
 
-busybox-1.35.0-r15 license:
+busybox-1.35.0-r17 license:
 GPL-2.0-only
 
 ```
@@ -123,16 +123,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20211220-r0 description:
+ca-certificates-20220614-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20211220-r0 webpage:
+ca-certificates-20220614-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20211220-r0 installed size:
-656 KiB
+ca-certificates-20220614-r0 installed size:
+688 KiB
 
-ca-certificates-20211220-r0 license:
+ca-certificates-20220614-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -140,16 +140,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20211220-r0 description:
+ca-certificates-bundle-20220614-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20211220-r0 webpage:
+ca-certificates-bundle-20220614-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20211220-r0 installed size:
-216 KiB
+ca-certificates-bundle-20220614-r0 installed size:
+228 KiB
 
-ca-certificates-bundle-20211220-r0 license:
+ca-certificates-bundle-20220614-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -378,16 +378,16 @@ MIT
 ### `apk` package: `openssh-client-common`
 
 ```console
-openssh-client-common-9.0_p1-r1 description:
+openssh-client-common-9.0_p1-r2 description:
 OpenBSD's SSH client common files
 
-openssh-client-common-9.0_p1-r1 webpage:
+openssh-client-common-9.0_p1-r2 webpage:
 https://www.openssh.com/portable.html
 
-openssh-client-common-9.0_p1-r1 installed size:
+openssh-client-common-9.0_p1-r2 installed size:
 2688 KiB
 
-openssh-client-common-9.0_p1-r1 license:
+openssh-client-common-9.0_p1-r2 license:
 BSD
 
 ```
@@ -395,16 +395,16 @@ BSD
 ### `apk` package: `openssh-client-default`
 
 ```console
-openssh-client-default-9.0_p1-r1 description:
+openssh-client-default-9.0_p1-r2 description:
 OpenBSD's SSH client
 
-openssh-client-default-9.0_p1-r1 webpage:
+openssh-client-default-9.0_p1-r2 webpage:
 https://www.openssh.com/portable.html
 
-openssh-client-default-9.0_p1-r1 installed size:
+openssh-client-default-9.0_p1-r2 installed size:
 896 KiB
 
-openssh-client-default-9.0_p1-r1 license:
+openssh-client-default-9.0_p1-r2 license:
 BSD
 
 ```
@@ -412,16 +412,16 @@ BSD
 ### `apk` package: `openssh-keygen`
 
 ```console
-openssh-keygen-9.0_p1-r1 description:
+openssh-keygen-9.0_p1-r2 description:
 ssh helper program for generating keys
 
-openssh-keygen-9.0_p1-r1 webpage:
+openssh-keygen-9.0_p1-r2 webpage:
 https://www.openssh.com/portable.html
 
-openssh-keygen-9.0_p1-r1 installed size:
+openssh-keygen-9.0_p1-r2 installed size:
 540 KiB
 
-openssh-keygen-9.0_p1-r1 license:
+openssh-keygen-9.0_p1-r2 license:
 BSD
 
 ```
@@ -463,16 +463,16 @@ GPL-2.0-only
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.35.0-r15 description:
+ssl_client-1.35.0-r17 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.35.0-r15 webpage:
+ssl_client-1.35.0-r17 webpage:
 https://busybox.net/
 
-ssl_client-1.35.0-r15 installed size:
+ssl_client-1.35.0-r17 installed size:
 28 KiB
 
-ssl_client-1.35.0-r15 license:
+ssl_client-1.35.0-r17 license:
 GPL-2.0-only
 
 ```
@@ -480,16 +480,16 @@ GPL-2.0-only
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.2.12-r1 description:
+zlib-1.2.12-r3 description:
 A compression/decompression Library
 
-zlib-1.2.12-r1 webpage:
+zlib-1.2.12-r3 webpage:
 https://zlib.net/
 
-zlib-1.2.12-r1 installed size:
+zlib-1.2.12-r3 installed size:
 108 KiB
 
-zlib-1.2.12-r1 license:
+zlib-1.2.12-r3 license:
 Zlib
 
 ```
