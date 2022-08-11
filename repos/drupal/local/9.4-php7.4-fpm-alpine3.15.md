@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:eaa16e5ec2a6cd7a31217d9170abfb7a077fd7609c5eca94d0d63d5dd436886a`
-- Created: `2022-08-04T19:25:13.546469771Z`
-- Virtual Size: ~ 165.42 Mb  
+- Image ID: `sha256:a5f68f7216db1dcfa4f935be09235828d7b00343663ee1a20468fa6ed9c5b867`
+- Created: `2022-08-10T04:26:58.342039522Z`
+- Virtual Size: ~ 165.46 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -130,16 +130,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20211220-r0 description:
+ca-certificates-20220614-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20211220-r0 webpage:
+ca-certificates-20220614-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20211220-r0 installed size:
-656 KiB
+ca-certificates-20220614-r0 installed size:
+688 KiB
 
-ca-certificates-20211220-r0 license:
+ca-certificates-20220614-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -147,16 +147,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20211220-r0 description:
+ca-certificates-bundle-20220614-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20211220-r0 webpage:
+ca-certificates-bundle-20220614-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20211220-r0 installed size:
-216 KiB
+ca-certificates-bundle-20220614-r0 installed size:
+228 KiB
 
-ca-certificates-bundle-20211220-r0 license:
+ca-certificates-bundle-20220614-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -691,16 +691,16 @@ GPL-2.0-or-later AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.2.12-r1 description:
+zlib-1.2.12-r3 description:
 A compression/decompression Library
 
-zlib-1.2.12-r1 webpage:
+zlib-1.2.12-r3 webpage:
 https://zlib.net/
 
-zlib-1.2.12-r1 installed size:
+zlib-1.2.12-r3 installed size:
 108 KiB
 
-zlib-1.2.12-r1 license:
+zlib-1.2.12-r3 license:
 Zlib
 
 ```

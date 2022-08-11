@@ -1,10 +1,10 @@
-# `drupal:10.0.0-alpha6-php8.1-fpm-alpine3.15`
+# `drupal:10.0.0-alpha7-php8.1-fpm-alpine3.15`
 
 ## Docker Metadata
 
-- Image ID: `sha256:bc6c1ca888d030b5d1168704f9fa354fed1366252cf7961d86ac87e9c6344225`
-- Created: `2022-08-04T23:36:46.122267951Z`
-- Virtual Size: ~ 164.13 Mb  
+- Image ID: `sha256:6fdde5050649f1508008c1c1bbccfd5ae6c5539744cefd8d87bd80490c46a860`
+- Created: `2022-08-10T04:21:03.392786776Z`
+- Virtual Size: ~ 164.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -21,7 +21,7 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.1.9.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.9.tar.xz.asc`
   - `PHP_SHA256=53477e73e6254dc942b68913a58d815ffdbf6946baf61a1f8ef854de524c27bf`
-  - `DRUPAL_VERSION=10.0.0-alpha6`
+  - `DRUPAL_VERSION=10.0.0-alpha7`
 
 ## `apk` (`.apk`-based packages)
 
@@ -130,16 +130,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20211220-r0 description:
+ca-certificates-20220614-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20211220-r0 webpage:
+ca-certificates-20220614-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20211220-r0 installed size:
-656 KiB
+ca-certificates-20220614-r0 installed size:
+688 KiB
 
-ca-certificates-20211220-r0 license:
+ca-certificates-20220614-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -147,16 +147,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20211220-r0 description:
+ca-certificates-bundle-20220614-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20211220-r0 webpage:
+ca-certificates-bundle-20220614-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20211220-r0 installed size:
-216 KiB
+ca-certificates-bundle-20220614-r0 installed size:
+228 KiB
 
-ca-certificates-bundle-20211220-r0 license:
+ca-certificates-bundle-20220614-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -708,16 +708,16 @@ GPL-2.0-or-later AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.2.12-r1 description:
+zlib-1.2.12-r3 description:
 A compression/decompression Library
 
-zlib-1.2.12-r1 webpage:
+zlib-1.2.12-r3 webpage:
 https://zlib.net/
 
-zlib-1.2.12-r1 installed size:
+zlib-1.2.12-r3 installed size:
 108 KiB
 
-zlib-1.2.12-r1 license:
+zlib-1.2.12-r3 license:
 Zlib
 
 ```
