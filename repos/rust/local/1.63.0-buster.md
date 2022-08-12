@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2faece17c0fc4e4fdf05d0c8cd590b382722e8ed4aedca97c380df016ba42cc1`
-- Created: `2022-08-02T14:54:19.463673705Z`
+- Image ID: `sha256:3b85cdb414676e592e536928298c59c7297eb4f21c6bb2b73864df316a27de6e`
+- Created: `2022-08-11T19:42:02.442173631Z`
 - Virtual Size: ~ 1.28 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `RUSTUP_HOME=/usr/local/rustup`
   - `CARGO_HOME=/usr/local/cargo`
-  - `RUST_VERSION=1.62.1`
+  - `RUST_VERSION=1.63.0`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -4512,20 +4512,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-11=11.16-0+deb10u1
-'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-11/postgresql-11_11.16-0%2bdeb10u1.dsc' postgresql-11_11.16-0+deb10u1.dsc 3745 SHA256:a5260ef4b2622d0c2c1ea8bcadade0c03824f5455fe2475db713edb80f522e5a
-'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-11/postgresql-11_11.16.orig.tar.bz2' postgresql-11_11.16.orig.tar.bz2 20347100 SHA256:2dd9e111f0a5949ee7cacc065cea0fb21092929bae310ce05bf01b4ffc5103a5
-'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-11/postgresql-11_11.16-0%2bdeb10u1.debian.tar.xz' postgresql-11_11.16-0+deb10u1.debian.tar.xz 28300 SHA256:7fcd14f517983bea39a6f97dcd99333e359be6c6f2985e12aa7ccf637c6c504b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/postgresql-11/11.16-0+deb10u1/
 
-- https://sources.debian.net/src/postgresql-11/11.16-0+deb10u1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-11/11.16-0+deb10u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-11/11.16-0+deb10u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:3.3.15-2`
 
