@@ -1,7 +1,7 @@
 ## `solr:latest`
 
 ```console
-$ docker pull solr@sha256:791877b8ddb85a2dc040b05f6b1c60a77e20f6b1b286f4c39c2a92457e390d1c
+$ docker pull solr@sha256:b5a216e350d2d2b4ffd62128eb3f54ec30688312a5c9939fdd719dd4109895bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -149,14 +149,14 @@ CMD ["solr-foreground"]
 ### `solr:latest` - linux; arm variant v7
 
 ```console
-$ docker pull solr@sha256:734398b70228f6426acc941d1941694a16f7fb8397c1a9b1a9bd201122ee7f1c
+$ docker pull solr@sha256:f8009e5c5229a756fa58e1a34967d6bdc973c243b502a88b5f4216a2b1aaac58
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **317.2 MB (317229008 bytes)**  
+-	Total Size: **317.9 MB (317900065 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b12eabb94d5a1a4895da745cbb8eeeee310595bdeedf537135ad443db9bc2ce2`
+-	Image ID: `sha256:1a4b4fc8343d6ca9cf69091b5264072ae902b4662f66e2f3455f00e58accf41e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
@@ -171,74 +171,74 @@ ENV JAVA_HOME=/opt/java/openjdk
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Thu, 11 Aug 2022 18:58:20 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 11 Aug 2022 19:01:30 GMT
-RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata wget ca-certificates fontconfig locales binutils     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Thu, 11 Aug 2022 19:01:31 GMT
+# Fri, 12 Aug 2022 17:01:58 GMT
+RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl wget ca-certificates fontconfig locales binutils     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 12 Aug 2022 17:01:58 GMT
 ENV JAVA_VERSION=jdk-17.0.4+8
-# Thu, 11 Aug 2022 19:02:06 GMT
+# Fri, 12 Aug 2022 17:02:35 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='d0fc84cb9627641d5a3c85aef9e7e26e4874e37524f9425112c6def5b12b7892';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.4%2B8/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.4_8.tar.gz';          ;;        armhf|arm)          ESUM='6a559ec6186ae74c362115cab36057db40e0c6e9e50763f5b485240109a226ec';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.4%2B8/OpenJDK17U-jre_arm_linux_hotspot_17.0.4_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='a5d055cbdb1f8ef537afc66a6315e865646305420cb96ab08dc239074f88ad1d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.4%2B8/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.4_8.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='79a9f3193721ddea74e7a8aa8fe870bcef85cca6c5870835e8517bc61251f50a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.4%2B8/OpenJDK17U-jre_s390x_linux_hotspot_17.0.4_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='616b137b87fa84211ac2f5c23dfcf3a8c5df9d0fd7ea3c872a0bf394b2f6c464';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.4%2B8/OpenJDK17U-jre_x64_linux_hotspot_17.0.4_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
-# Thu, 11 Aug 2022 19:02:07 GMT
+# Fri, 12 Aug 2022 17:02:35 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo java --version && java --version     && echo Complete.
-# Thu, 11 Aug 2022 20:06:56 GMT
+# Fri, 12 Aug 2022 18:06:03 GMT
 ARG SOLR_VERSION=9.0.0
-# Thu, 11 Aug 2022 20:06:56 GMT
+# Fri, 12 Aug 2022 18:06:03 GMT
 ARG SOLR_SHA512=383c6b6f352f2a385ece99b2b0a82e1552430aea65c6c33e5569da422138844192db4e06f58699325af55ee631694e16f836a5bbf8556f86fdeabc0cfa0533d5
-# Thu, 11 Aug 2022 20:06:56 GMT
+# Fri, 12 Aug 2022 18:06:03 GMT
 ARG SOLR_KEYS=3558857D1F5754B78C7F8B5A71A45A3D0D8D0B93
-# Thu, 11 Aug 2022 20:06:56 GMT
+# Fri, 12 Aug 2022 18:06:03 GMT
 ARG SOLR_DOWNLOAD_URL
-# Thu, 11 Aug 2022 20:06:56 GMT
+# Fri, 12 Aug 2022 18:06:03 GMT
 ARG SOLR_DOWNLOAD_SERVER
-# Thu, 11 Aug 2022 20:06:56 GMT
+# Fri, 12 Aug 2022 18:06:03 GMT
 ARG SOLR_CLOSER_URL=http://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr/9.0.0/solr-9.0.0.tgz
-# Thu, 11 Aug 2022 20:06:56 GMT
+# Fri, 12 Aug 2022 18:06:03 GMT
 ARG SOLR_DIST_URL=https://www.apache.org/dist/solr/solr/9.0.0/solr-9.0.0.tgz
-# Thu, 11 Aug 2022 20:06:56 GMT
+# Fri, 12 Aug 2022 18:06:03 GMT
 ARG SOLR_ARCHIVE_URL=https://archive.apache.org/dist/solr/solr/9.0.0/solr-9.0.0.tgz
-# Thu, 11 Aug 2022 20:07:29 GMT
+# Fri, 12 Aug 2022 18:06:38 GMT
 # ARGS: SOLR_ARCHIVE_URL=https://archive.apache.org/dist/solr/solr/9.0.0/solr-9.0.0.tgz SOLR_CLOSER_URL=http://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr/9.0.0/solr-9.0.0.tgz SOLR_DIST_URL=https://www.apache.org/dist/solr/solr/9.0.0/solr-9.0.0.tgz SOLR_KEYS=3558857D1F5754B78C7F8B5A71A45A3D0D8D0B93 SOLR_SHA512=383c6b6f352f2a385ece99b2b0a82e1552430aea65c6c33e5569da422138844192db4e06f58699325af55ee631694e16f836a5bbf8556f86fdeabc0cfa0533d5 SOLR_VERSION=9.0.0
 RUN set -ex;   apt-get update;   apt-get -y install wget gpg dirmngr;   rm -rf /var/lib/apt/lists/*;   export GNUPGHOME="/tmp/gnupg_home";   mkdir -p "$GNUPGHOME";   chmod 700 "$GNUPGHOME";   echo "disable-ipv6" >> "$GNUPGHOME/dirmngr.conf";   if [ -n "$SOLR_KEYS" ]; then     wget -nv "https://downloads.apache.org/solr/KEYS" -O- |       gpg --batch --import --key-origin 'url,https://downloads.apache.org/solr/KEYS';     release_keys="$(gpg --batch --export -a ${SOLR_KEYS})";     rm -rf "$GNUPGHOME"/*;     echo "${release_keys}" | gpg --batch --import;   fi;   MAX_REDIRECTS=2;   if [ -n "$SOLR_DOWNLOAD_URL" ]; then     MAX_REDIRECTS=4;     SKIP_GPG_CHECK=true;   elif [ -n "$SOLR_DOWNLOAD_SERVER" ]; then     SOLR_DOWNLOAD_URL="$SOLR_DOWNLOAD_SERVER/$SOLR_VERSION/solr-$SOLR_VERSION.tgz";   fi;   for url in $SOLR_DOWNLOAD_URL $SOLR_CLOSER_URL $SOLR_DIST_URL $SOLR_ARCHIVE_URL; do     if [ -f "/opt/solr-$SOLR_VERSION.tgz" ]; then break; fi;     echo "downloading $url";     if wget -t 10 --max-redirect $MAX_REDIRECTS --retry-connrefused -nv "$url" -O "/opt/solr-$SOLR_VERSION.tgz"; then break; else rm -f "/opt/solr-$SOLR_VERSION.tgz"; fi;   done;   if [ ! -f "/opt/solr-$SOLR_VERSION.tgz" ]; then echo "failed all download attempts for solr-$SOLR_VERSION.tgz"; exit 1; fi;   if [ -z "$SKIP_GPG_CHECK" ]; then     echo "downloading $SOLR_ARCHIVE_URL.asc";     wget -nv "$SOLR_ARCHIVE_URL.asc" -O "/opt/solr-$SOLR_VERSION.tgz.asc";     echo "$SOLR_SHA512 */opt/solr-$SOLR_VERSION.tgz" | sha512sum -c -;     (>&2 ls -l "/opt/solr-$SOLR_VERSION.tgz" "/opt/solr-$SOLR_VERSION.tgz.asc");     gpg --batch --verify "/opt/solr-$SOLR_VERSION.tgz.asc" "/opt/solr-$SOLR_VERSION.tgz";   else     echo "Skipping GPG validation due to non-Apache build";   fi;   { command -v gpgconf; gpgconf --kill all || :; };   rm -r "$GNUPGHOME";   tar -C /opt --extract --preserve-permissions --file "/opt/solr-$SOLR_VERSION.tgz";   rm "/opt/solr-$SOLR_VERSION.tgz"*;
-# Thu, 11 Aug 2022 20:07:29 GMT
+# Fri, 12 Aug 2022 18:06:38 GMT
 LABEL org.opencontainers.image.title=Apache Solr
-# Thu, 11 Aug 2022 20:07:29 GMT
+# Fri, 12 Aug 2022 18:06:38 GMT
 LABEL org.opencontainers.image.description=Apache Solr is the popular, blazing-fast, open source search platform built on Apache Lucene.
-# Thu, 11 Aug 2022 20:07:29 GMT
+# Fri, 12 Aug 2022 18:06:38 GMT
 LABEL org.opencontainers.image.authors=The Apache Solr Project
-# Thu, 11 Aug 2022 20:07:29 GMT
+# Fri, 12 Aug 2022 18:06:39 GMT
 LABEL org.opencontainers.image.url=https://solr.apache.org
-# Thu, 11 Aug 2022 20:07:29 GMT
+# Fri, 12 Aug 2022 18:06:39 GMT
 LABEL org.opencontainers.image.source=https://github.com/apache/solr
-# Thu, 11 Aug 2022 20:07:29 GMT
+# Fri, 12 Aug 2022 18:06:39 GMT
 LABEL org.opencontainers.image.documentation=https://solr.apache.org/guide/
-# Thu, 11 Aug 2022 20:07:29 GMT
+# Fri, 12 Aug 2022 18:06:39 GMT
 LABEL org.opencontainers.image.version=9.0.0
-# Thu, 11 Aug 2022 20:07:30 GMT
+# Fri, 12 Aug 2022 18:06:39 GMT
 LABEL org.opencontainers.image.licenses=Apache-2.0
-# Thu, 11 Aug 2022 20:07:30 GMT
+# Fri, 12 Aug 2022 18:06:39 GMT
 ENV SOLR_USER=solr SOLR_UID=8983 SOLR_GROUP=solr SOLR_GID=8983 PATH=/opt/solr/bin:/opt/solr/docker/scripts:/opt/solr/prometheus-exporter/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SOLR_INCLUDE=/etc/default/solr.in.sh SOLR_HOME=/var/solr/data SOLR_PID_DIR=/var/solr SOLR_LOGS_DIR=/var/solr/logs LOG4J_PROPS=/var/solr/log4j2.xml SOLR_JETTY_HOST=0.0.0.0
-# Thu, 11 Aug 2022 20:07:30 GMT
+# Fri, 12 Aug 2022 18:06:39 GMT
 # ARGS: SOLR_ARCHIVE_URL=https://archive.apache.org/dist/solr/solr/9.0.0/solr-9.0.0.tgz SOLR_CLOSER_URL=http://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr/9.0.0/solr-9.0.0.tgz SOLR_DIST_URL=https://www.apache.org/dist/solr/solr/9.0.0/solr-9.0.0.tgz SOLR_KEYS=3558857D1F5754B78C7F8B5A71A45A3D0D8D0B93 SOLR_SHA512=383c6b6f352f2a385ece99b2b0a82e1552430aea65c6c33e5569da422138844192db4e06f58699325af55ee631694e16f836a5bbf8556f86fdeabc0cfa0533d5 SOLR_VERSION=9.0.0
 RUN set -ex;   groupadd -r --gid "$SOLR_GID" "$SOLR_GROUP";   useradd -r --uid "$SOLR_UID" --gid "$SOLR_GID" "$SOLR_USER"
-# Thu, 11 Aug 2022 20:07:31 GMT
+# Fri, 12 Aug 2022 18:06:40 GMT
 # ARGS: SOLR_ARCHIVE_URL=https://archive.apache.org/dist/solr/solr/9.0.0/solr-9.0.0.tgz SOLR_CLOSER_URL=http://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr/9.0.0/solr-9.0.0.tgz SOLR_DIST_URL=https://www.apache.org/dist/solr/solr/9.0.0/solr-9.0.0.tgz SOLR_KEYS=3558857D1F5754B78C7F8B5A71A45A3D0D8D0B93 SOLR_SHA512=383c6b6f352f2a385ece99b2b0a82e1552430aea65c6c33e5569da422138844192db4e06f58699325af55ee631694e16f836a5bbf8556f86fdeabc0cfa0533d5 SOLR_VERSION=9.0.0
 RUN set -ex;   (cd /opt; ln -s solr-*/ solr);   rm -Rf /opt/solr/docs /opt/solr/docker/Dockerfile;
-# Thu, 11 Aug 2022 20:07:31 GMT
+# Fri, 12 Aug 2022 18:06:40 GMT
 # ARGS: SOLR_ARCHIVE_URL=https://archive.apache.org/dist/solr/solr/9.0.0/solr-9.0.0.tgz SOLR_CLOSER_URL=http://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr/9.0.0/solr-9.0.0.tgz SOLR_DIST_URL=https://www.apache.org/dist/solr/solr/9.0.0/solr-9.0.0.tgz SOLR_KEYS=3558857D1F5754B78C7F8B5A71A45A3D0D8D0B93 SOLR_SHA512=383c6b6f352f2a385ece99b2b0a82e1552430aea65c6c33e5569da422138844192db4e06f58699325af55ee631694e16f836a5bbf8556f86fdeabc0cfa0533d5 SOLR_VERSION=9.0.0
 RUN set -ex;   mkdir -p /opt/solr/server/solr/lib /docker-entrypoint-initdb.d;   cp /opt/solr/bin/solr.in.sh /etc/default/solr.in.sh;   mv /opt/solr/bin/solr.in.sh /opt/solr/bin/solr.in.sh.orig;   mv /opt/solr/bin/solr.in.cmd /opt/solr/bin/solr.in.cmd.orig;   chmod 0664 /etc/default/solr.in.sh;   mkdir -p -m0770 /var/solr;   chown -R "$SOLR_USER:0" /var/solr;   ln -s /opt/solr/modules /opt/solr/contrib;   ln -s /opt/solr/prometheus-exporter /opt/solr/modules/prometheus-exporter;
-# Thu, 11 Aug 2022 20:07:39 GMT
+# Fri, 12 Aug 2022 18:06:49 GMT
 # ARGS: SOLR_ARCHIVE_URL=https://archive.apache.org/dist/solr/solr/9.0.0/solr-9.0.0.tgz SOLR_CLOSER_URL=http://www.apache.org/dyn/closer.lua?action=download&filename=/solr/solr/9.0.0/solr-9.0.0.tgz SOLR_DIST_URL=https://www.apache.org/dist/solr/solr/9.0.0/solr-9.0.0.tgz SOLR_KEYS=3558857D1F5754B78C7F8B5A71A45A3D0D8D0B93 SOLR_SHA512=383c6b6f352f2a385ece99b2b0a82e1552430aea65c6c33e5569da422138844192db4e06f58699325af55ee631694e16f836a5bbf8556f86fdeabc0cfa0533d5 SOLR_VERSION=9.0.0
 RUN set -ex;     apt-get update;     apt-get -y install acl dirmngr lsof procps wget netcat gosu tini jattach;     rm -rf /var/lib/apt/lists/*;
-# Thu, 11 Aug 2022 20:07:40 GMT
+# Fri, 12 Aug 2022 18:06:49 GMT
 VOLUME [/var/solr]
-# Thu, 11 Aug 2022 20:07:40 GMT
+# Fri, 12 Aug 2022 18:06:49 GMT
 EXPOSE 8983
-# Thu, 11 Aug 2022 20:07:40 GMT
+# Fri, 12 Aug 2022 18:06:49 GMT
 WORKDIR /opt/solr
-# Thu, 11 Aug 2022 20:07:40 GMT
+# Fri, 12 Aug 2022 18:06:49 GMT
 USER solr
-# Thu, 11 Aug 2022 20:07:40 GMT
+# Fri, 12 Aug 2022 18:06:49 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 11 Aug 2022 20:07:40 GMT
+# Fri, 12 Aug 2022 18:06:49 GMT
 CMD ["solr-foreground"]
 ```
 
@@ -247,37 +247,37 @@ CMD ["solr-foreground"]
 		Last Modified: Tue, 02 Aug 2022 01:43:32 GMT  
 		Size: 27.0 MB (27017015 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6bdc21463582df08214227eedd7862deca32d3f5675ba7fd1684b4424481b5ac`  
-		Last Modified: Thu, 11 Aug 2022 19:09:17 GMT  
-		Size: 16.2 MB (16161781 bytes)  
+	-	`sha256:09dd167a0b7cc931e49cc2a09061de397cac03ab1875bd03eaa1d8df203fc32f`  
+		Last Modified: Fri, 12 Aug 2022 17:09:47 GMT  
+		Size: 17.1 MB (17123513 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ed16a1c509d9ec31a846cd993fed0577a828f51afb84f1dbe5f5660772b53ec`  
-		Last Modified: Thu, 11 Aug 2022 19:10:14 GMT  
-		Size: 44.3 MB (44341535 bytes)  
+	-	`sha256:810c5716227d0cfb1e40b559d24966c51cbdb32d4393b50c7c32d5f3d69f31b5`  
+		Last Modified: Fri, 12 Aug 2022 17:10:43 GMT  
+		Size: 44.3 MB (44341511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db39afd7b118da93200f7ba0cf4ada3b6aa49a2e7499360cbfa6e294e83499cc`  
-		Last Modified: Thu, 11 Aug 2022 19:10:06 GMT  
-		Size: 159.0 B  
+	-	`sha256:f0f85073bd70f7414bc77cc13555d1172f59abd1035359b1fd40fbf449ec3767`  
+		Last Modified: Fri, 12 Aug 2022 17:10:36 GMT  
+		Size: 160.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6298a2fa12ac194ad52f7e8ef18388d777a7f4e1f0a81f69fa8ea852afac1a4a`  
-		Last Modified: Thu, 11 Aug 2022 20:08:12 GMT  
-		Size: 228.0 MB (228040557 bytes)  
+	-	`sha256:72de2d1fada0fc0284898efdda66e120065ccb083ff97af084501e10779c64eb`  
+		Last Modified: Fri, 12 Aug 2022 18:07:28 GMT  
+		Size: 227.7 MB (227746091 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9af70c98ef103d48eb492c817007e8302698657db3e4fb130e83dc37261000f6`  
-		Last Modified: Thu, 11 Aug 2022 20:07:58 GMT  
-		Size: 4.2 KB (4220 bytes)  
+	-	`sha256:b7abc9cfcf4f14e002464f15703e8127926470579179d7298e1c45cfb003dae8`  
+		Last Modified: Fri, 12 Aug 2022 18:07:15 GMT  
+		Size: 4.2 KB (4224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4b8175ceee8ed3e1da0a19dcffcab35f293d42d04e896a2d36a4b93bfcdbd980`  
-		Last Modified: Thu, 11 Aug 2022 20:07:59 GMT  
+	-	`sha256:0e02b43b9731538e8a40a23f074fc2bd30f0a2bde2841a1d78b266f6ad83f79b`  
+		Last Modified: Fri, 12 Aug 2022 18:07:14 GMT  
 		Size: 219.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84ac2b5594161d16ec9bd7b8b82db77ebf3a797ac35688a77ec43be3faef6c3b`  
-		Last Modified: Thu, 11 Aug 2022 20:07:58 GMT  
-		Size: 7.9 KB (7899 bytes)  
+	-	`sha256:756ad1eb00d5e24574ccf34524c99333f324133a3f9a2417ad5b5f52694dbe34`  
+		Last Modified: Fri, 12 Aug 2022 18:07:14 GMT  
+		Size: 7.9 KB (7896 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:de584ef856c2bc1183acfe87baaa02f42abccda5670672a1a48a9e67662da032`  
-		Last Modified: Thu, 11 Aug 2022 20:07:59 GMT  
-		Size: 1.7 MB (1655623 bytes)  
+	-	`sha256:8020d31697a83cdff60559181f2915b1a41f67b90083b63fa25d38c4f239b129`  
+		Last Modified: Fri, 12 Aug 2022 18:07:14 GMT  
+		Size: 1.7 MB (1659436 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `solr:latest` - linux; arm64 variant v8
