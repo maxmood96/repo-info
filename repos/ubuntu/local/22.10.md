@@ -317,14 +317,13 @@ Licenses: (parsed from: `/usr/share/doc/debianutils/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debianutils=5.7-0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/d/debianutils/debianutils_5.7-0.2.dsc' debianutils_5.7-0.2.dsc 1542 SHA512:ef393fe10de8d84dedc38e60ca4760c93b02ecdcf6b1930d30f2e230dfbc002a5113459f430ac850df90285f534553db4e6ee6c533c9b25b8eb99594d533ce58
-'http://archive.ubuntu.com/ubuntu/pool/main/d/debianutils/debianutils_5.7.orig.tar.gz' debianutils_5.7.orig.tar.gz 257231 SHA512:79acd8885abca93842d696167171a359011c49a40f38deeb25bc94d62905f95afa3a7b2540d3bd4b0ffd363c5c48a439a1a68139a29d6c033980b019cea75d92
-'http://archive.ubuntu.com/ubuntu/pool/main/d/debianutils/debianutils_5.7-0.2.debian.tar.xz' debianutils_5.7-0.2.debian.tar.xz 21664 SHA512:9984de24acd5a8cb9dfad84ba5d26689a808a0a9a23f231c099f30a3dbe1ade2e3eaec758b0f4e358d0f79d0b2d97ad164df78f58b776afcf76085ddf47a4172
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/debianutils/5.7-0.2/
+
 
 ### `dpkg` source package: `diffutils=1:3.8-0ubuntu2`
 
@@ -538,15 +537,9 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.7.6-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.6-2ubuntu1.dsc' gnutls28_3.7.6-2ubuntu1.dsc 3549 SHA512:bf3dc17da48ab359c35c2003253878dbcc7a1bd9948a86936f86d2bbaefa0df2960baefac5ed542f195e8df9b0aa74903348bbc322f2f15fab80c16c548300e2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.6.orig.tar.xz' gnutls28_3.7.6.orig.tar.xz 6338276 SHA512:f872339df80ec31d292821ff00eaafbe50e0bd4cdbb86e21e4f78541cd0a26d843596d5e69c91de4db8ce7d027fc639ae6462b57d89fb116162ae63c5a97486a
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.6.orig.tar.xz.asc' gnutls28_3.7.6.orig.tar.xz.asc 996 SHA512:9bc54b6418d10341a2dea774599a85783fd242eb33058e013598632ca3389f3ffdb7eaf0cf2d26c6cb7079a0baed5d5b87046203d1ac945f33eded89d8f87fec
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.6-2ubuntu1.debian.tar.xz' gnutls28_3.7.6-2ubuntu1.debian.tar.xz 68880 SHA512:6edfc6492ba656cceb88ba0b6591ae67942ec219ee108e04a5045e83bcf98b928f564de9f520c54d387ef5a6085bd313f6cfceaf2a0b3c11226ecd1a54472bec
-```
 
 ### `dpkg` source package: `grep=3.7-1build1`
 
