@@ -2,19 +2,19 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7951119315cecf022f2584270bde2fb2ff6147ffd8bc7a592297a0668c172d79`
-- Created: `2022-08-03T12:13:54.130604922Z`
-- Virtual Size: ~ 440.40 Mb  
+- Image ID: `sha256:e1f65c79ceac5ec81d25eb83fc7f0a8ab02b222dae1ab1a22d3a10d5289d9adb`
+- Created: `2022-08-12T17:58:54.987269807Z`
+- Virtual Size: ~ 441.03 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["clj"]`
 - Environment:
   - `PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `JAVA_HOME=/opt/java/openjdk`
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk8u342-b07`
-  - `JAVA_HOME=/opt/java/openjdk`
+  - `JAVA_VERSION=jdk8u345-b01`
   - `CLOJURE_VERSION=1.11.1.1149`
 
 ## `dpkg` (`.deb`-based packages)
@@ -72,13 +72,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.4.6
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.4.6.dsc' apt_2.4.6.dsc 2805 SHA512:079d2bb56c058c713640624082e151a10649ec9013e8df0aa85a1f681ad831ca73f973ba33741507840cd92f45180513f1016ba0029456eadeb7b2cff2a41dc2
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.4.6.tar.xz' apt_2.4.6.tar.xz 2217752 SHA512:b107c2f39c5e31aa25c5e826a84a3d187e38cd0b3c449bc7fe90b075bd568785c2d6f7f8f93a946e9a9d92c864e7cfa2bdf93a42146a05e7080344a7d3d49aa4
-```
 
 ### `dpkg` source package: `attr=1:2.5.1-1build1`
 
