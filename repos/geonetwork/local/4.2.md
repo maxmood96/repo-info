@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:be9c8c16b9ac060a82de213d73b2871b707bce8556d68f88a8a9509c709d7b00`
-- Created: `2022-08-11T23:00:43.981430846Z`
-- Virtual Size: ~ 761.48 Mb  
+- Image ID: `sha256:c8edab9f8e1618624fedc5babf95c993421e92d4682f5032261b7c4ae6ad5f21`
+- Created: `2022-08-12T21:12:03.316743271Z`
+- Virtual Size: ~ 761.28 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/geonetwork-entrypoint.sh"]`
@@ -319,10 +319,9 @@ $ apt-get source -qq --print-uris curl=7.68.0-1ubuntu2.12
 Binary Packages:
 
 - `libsasl2-2:amd64=2.1.27+dfsg-2ubuntu0.1`
-- `libsasl2-modules:amd64=2.1.27+dfsg-2ubuntu0.1`
 - `libsasl2-modules-db:amd64=2.1.27+dfsg-2ubuntu0.1`
 
-Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/libsasl2-modules/copyright`, `/usr/share/doc/libsasl2-modules-db/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/libsasl2-modules-db/copyright`)
 
 - `BSD-4-clause`
 - `GPL-3`
@@ -861,13 +860,12 @@ $ apt-get source -qq --print-uris keyutils=1.6-6ubuntu1.1
 
 Binary Packages:
 
-- `krb5-locales=1.17-6ubuntu4.1`
 - `libgssapi-krb5-2:amd64=1.17-6ubuntu4.1`
 - `libk5crypto3:amd64=1.17-6ubuntu4.1`
 - `libkrb5-3:amd64=1.17-6ubuntu4.1`
 - `libkrb5support0:amd64=1.17-6ubuntu4.1`
 
-Licenses: (parsed from: `/usr/share/doc/krb5-locales/copyright`, `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
 - `GPL-2`
 
