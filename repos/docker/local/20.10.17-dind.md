@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e1a3d5b85ecd82b20045c0dc8733c8429087f2c6aefc8a74d7c9942c6722953c`
-- Created: `2022-08-09T18:21:46.310042985Z`
-- Virtual Size: ~ 311.42 Mb  
+- Image ID: `sha256:c6bedc1ef641d36f119e75bb9a710c2bc7be657997bb3643943068206cbe36b8`
+- Created: `2022-08-17T01:38:55.774868507Z`
+- Virtual Size: ~ 310.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `DOCKER_VERSION=20.10.17`
-  - `DOCKER_BUILDX_VERSION=0.8.2`
+  - `DOCKER_BUILDX_VERSION=0.9.0`
   - `DOCKER_COMPOSE_VERSION=2.9.0`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=42b1175eda071c0e9121e1d64345928384a93df1`
@@ -463,16 +463,16 @@ LGPL-2.1-or-later
 ### `apk` package: `libnftnl`
 
 ```console
-libnftnl-1.2.1-r0 description:
+libnftnl-1.2.3-r0 description:
 Netfilter library providing interface to the nf_tables subsystem
 
-libnftnl-1.2.1-r0 webpage:
+libnftnl-1.2.3-r0 webpage:
 https://netfilter.org/projects/libnftnl
 
-libnftnl-1.2.1-r0 installed size:
+libnftnl-1.2.3-r0 installed size:
 200 KiB
 
-libnftnl-1.2.1-r0 license:
+libnftnl-1.2.3-r0 license:
 GPL-2.0-or-later
 
 ```
