@@ -1,10 +1,10 @@
-# `clojure:lein-2.9.8-alpine`
+# `clojure:lein-2.9.10-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8eb13eb55dd21754dd33bf3a3961b306775caceb4b9f2c1f9f565e95ca6f09d2`
-- Created: `2022-08-11T20:10:18.609865215Z`
-- Virtual Size: ~ 376.49 Mb  
+- Image ID: `sha256:444f7557e3cb1acd4180ffd52565401ffcd39035ecd9cd357755746cbf50b871`
+- Created: `2022-08-17T01:24:38.64987946Z`
+- Virtual Size: ~ 376.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint"]`
@@ -16,7 +16,7 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-17.0.4+8`
-  - `LEIN_VERSION=2.9.8`
+  - `LEIN_VERSION=2.9.10`
   - `LEIN_INSTALL=/usr/local/bin/`
   - `LEIN_ROOT=1`
 

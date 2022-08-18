@@ -1,10 +1,10 @@
-# `clojure:lein-2.9.8-focal`
+# `clojure:lein-2.9.10-focal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e3dbfdf618cfc2c83f7c048ebf038a07fdd374a771008ea72f1795311f8a0566`
-- Created: `2022-08-12T18:01:59.753382874Z`
-- Virtual Size: ~ 477.74 Mb  
+- Image ID: `sha256:61e33e030b4ce22baa3c394cfec44abcbe7ad30135f616476fc9dc947b1191e5`
+- Created: `2022-08-17T01:24:58.284854455Z`
+- Virtual Size: ~ 478.11 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint"]`
@@ -16,7 +16,7 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-17.0.4+8`
-  - `LEIN_VERSION=2.9.8`
+  - `LEIN_VERSION=2.9.10`
   - `LEIN_INSTALL=/usr/local/bin/`
   - `LEIN_ROOT=1`
 

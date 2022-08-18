@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:14b8e8c05949ff2a7a87108cdf31e1a4dd94d718d6e7b4eafe4a3534681102e2`
-- Created: `2022-08-12T17:56:36.580681353Z`
-- Virtual Size: ~ 658.46 Mb  
+- Image ID: `sha256:22963d6f913eaba9c8a6795a0a3e3633fa34eedc1e17651c3d2116fa43beaacf`
+- Created: `2022-08-17T01:20:27.186036236Z`
+- Virtual Size: ~ 659.08 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint"]`
@@ -19,10 +19,10 @@
   - `BOOT_VERSION=2.8.3`
   - `BOOT_INSTALL=/usr/local/bin/`
   - `BOOT_AS_ROOT=yes`
-  - `LEIN_VERSION=2.9.8`
+  - `LEIN_VERSION=2.9.10`
   - `LEIN_INSTALL=/usr/local/bin/`
   - `LEIN_ROOT=1`
-  - `CLOJURE_VERSION=1.11.1.1149`
+  - `CLOJURE_VERSION=1.11.1.1155`
 
 ## `dpkg` (`.deb`-based packages)
 
