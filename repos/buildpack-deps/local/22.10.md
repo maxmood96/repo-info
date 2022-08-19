@@ -291,13 +291,9 @@ Licenses: (parsed from: `/usr/share/doc/base-passwd/copyright`)
 - `GPL-2`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-passwd=3.5.52build1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-passwd/base-passwd_3.5.52build1.dsc' base-passwd_3.5.52build1.dsc 1320 SHA512:2071171adf14d276664526662fab08d34a45a259ebcdbee7ae57bb004d3d12793e629006a37b649f16c0f04856e9f7bb79fb92fe304525167f48e73dec0cc4fd
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-passwd/base-passwd_3.5.52build1.tar.xz' base-passwd_3.5.52build1.tar.xz 54252 SHA512:699ffe50f4a7fbdea2c0b25d3b2452d538598870cf39b84668d9b7efa20ec41284c331513e89c966e7248732b1ec1abdfdb871e31f8e9efa026c691e89236ffe
-```
 
 ### `dpkg` source package: `bash=5.1-6ubuntu1`
 
@@ -336,14 +332,9 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.38.90.20220713-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38.90.20220713-2ubuntu1.dsc' binutils_2.38.90.20220713-2ubuntu1.dsc 8999 SHA512:d4a47a942665ac7c45536b6c032bf0a1d093c6ab243076de28bace92fd3edec43153a1a71fc3c20b074d302419c8715d96a39fd58d34a68c4bac4e735e243e18
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38.90.20220713.orig.tar.xz' binutils_2.38.90.20220713.orig.tar.xz 22975816 SHA512:a54ae6cfddba0e08397b42f450f0ce69bed30553f83008fb33d71f0377b6a0c10fc9a86aaa593adb9b68423e72a258e93cd265d3b28ae3b04569d7a67ccb3f2f
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38.90.20220713-2ubuntu1.debian.tar.xz' binutils_2.38.90.20220713-2ubuntu1.debian.tar.xz 110420 SHA512:6d0f009fa60644297fac0516bcff631a2e54c9867f2c1de72273cdd2166ec59a289b792c03896b64e42bf044efbf8d6aa9b6c4725aa84aeaa05907dad2bb222e
-```
 
 ### `dpkg` source package: `brotli=1.0.9-2build6`
 
@@ -953,14 +944,9 @@ Licenses: (parsed from: `/usr/share/doc/libfribidi0/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris fribidi=1.0.8-2ubuntu3.1
-'http://archive.ubuntu.com/ubuntu/pool/main/f/fribidi/fribidi_1.0.8-2ubuntu3.1.dsc' fribidi_1.0.8-2ubuntu3.1.dsc 2442 SHA512:977cb7df4e1877f0f6d5f58620cfacbb1e25090c2bfd70c71576ada3c9f11f260ed11fb0fd64a5f5bf8cfc8c419a865e0e9b9084f224deb9dfadf1b2e3bd17e9
-'http://archive.ubuntu.com/ubuntu/pool/main/f/fribidi/fribidi_1.0.8.orig.tar.bz2' fribidi_1.0.8.orig.tar.bz2 2077095 SHA512:d66b1524b26d227fd6a628f438efb875c023ae3be708acaaad11f1f62d0902de0a5f57124458291ef2b0fcd89356c52ab8ae5559b0b5a93fa435b92f1d098ba2
-'http://archive.ubuntu.com/ubuntu/pool/main/f/fribidi/fribidi_1.0.8-2ubuntu3.1.debian.tar.xz' fribidi_1.0.8-2ubuntu3.1.debian.tar.xz 10888 SHA512:16e448db2038b60b3a086117774e734b1d3ed08ae09cfa1b591f5a95c6372778705ba8940dd464537d5a6e932528c1c1e01376670992580529090f20142d171a
-```
 
 ### `dpkg` source package: `gcc-11=11.3.0-5ubuntu1`
 
@@ -1092,14 +1078,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-gdkpixbuf-2.0/copyright`, `/usr/s
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gdk-pixbuf=2.42.8+dfsg-2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.42.8%2bdfsg-2.dsc' gdk-pixbuf_2.42.8+dfsg-2.dsc 3123 SHA512:ee2b3fedb75f777be90afc3364bdfa62b6fe7d830d82c25ed0e7bc776429d75c660ada2b580af21a4e9ee280616e29a1b821ea82de0cffe7f5c8fffed3fdcc27
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.42.8%2bdfsg.orig.tar.xz' gdk-pixbuf_2.42.8+dfsg.orig.tar.xz 6439548 SHA512:d77093ac4bd5c8f9a5267e67958dd99db009e16f94c44be95a547cd291b6d03fcc35c4a02327dd9f4341af1ae2ecdaa6a1bec02dcf1116ec5a440d22b3f68924
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.42.8%2bdfsg-2.debian.tar.xz' gdk-pixbuf_2.42.8+dfsg-2.debian.tar.xz 20288 SHA512:492bc293046660a18b5a1ea4c34faf2fce55398529de9da75115153df14e4f8cdc9c44d73720ffbf65f476298ca0cf9cffb268defcb29f1f76fac4e64c7d0900
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/gdk-pixbuf/2.42.8+dfsg-2/
+
 
 ### `dpkg` source package: `git=1:2.36.1-1ubuntu2`
 
@@ -3362,14 +3347,9 @@ Licenses: (parsed from: `/usr/share/doc/libhogweed6/copyright`, `/usr/share/doc/
 - `LGPL-3+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nettle=3.7.3-1build2
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.7.3-1build2.dsc' nettle_3.7.3-1build2.dsc 2165 SHA512:3f774011dd48205720ac7e6aa9a44b5afa64c24fce825d6583b58c02f3c8f500ecafa265d18d5deb1ab65d6e938dd76a7917f1d5c3dab0aea28148d531fa26cd
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.7.3.orig.tar.gz' nettle_3.7.3.orig.tar.gz 2383985 SHA512:9901eba305421adff6d551ac7f478dff3f68a339d444c776724ab0b977fe6be792b1d2950c8705acbe76bd924fd6d898a65eded546777884be3b436d0e052437
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.7.3-1build2.debian.tar.xz' nettle_3.7.3-1build2.debian.tar.xz 22100 SHA512:c1935d35e9f04798273053ab92c7405ec225a5d72ba6c2869b0f2bf54b459ac428e113bc149796e91834a8b56082f8bbfbb906a6cd6787142b8932bd1dd83cec
-```
 
 ### `dpkg` source package: `nghttp2=1.48.0-1`
 

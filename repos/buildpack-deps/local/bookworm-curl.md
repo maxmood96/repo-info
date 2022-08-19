@@ -1783,21 +1783,13 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.4-2
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.4-2.dsc' openssl_3.0.4-2.dsc 2601 SHA256:554c23961bee37a4c15e3301beda4b1f16b6a9b708db9a186c20a9b0b1a99aa9
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.4.orig.tar.gz' openssl_3.0.4.orig.tar.gz 15069605 SHA256:2831843e9a668a0ab478e7020ad63d2d65e51f72977472dc73efcefbafc0c00f
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.4.orig.tar.gz.asc' openssl_3.0.4.orig.tar.gz.asc 488 SHA256:a4c23366369c3e9e1abd2af47c1658581d1d4e58fa9b453e5b959d550cf974e1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.4-2.debian.tar.xz' openssl_3.0.4-2.debian.tar.xz 69160 SHA256:bbc257f5eb3e01619c854f95d30f36ce2961aeea72d7d5b81abf0c431a701cb4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssl/3.0.4-2/
 
-- https://sources.debian.net/src/openssl/3.0.4-2/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.0.4-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.0.4-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.24.1-1`
 
@@ -2235,21 +2227,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2022a-1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2022a-1.dsc' tzdata_2022a-1.dsc 2205 SHA256:f316f1b551570c26c7001c8ee18396838289e709993d6b0e9f1a18a5378c514b
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2022a.orig.tar.gz' tzdata_2022a.orig.tar.gz 425833 SHA256:ef7fffd9f4f50f4f58328b35022a32a5a056b245c5cb3d6791dddb342f871664
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2022a.orig.tar.gz.asc' tzdata_2022a.orig.tar.gz.asc 833 SHA256:f8180c9943426d5e53ada60ebb44114c8f1763034c4cc8fc87ba5d493ab39a92
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2022a-1.debian.tar.xz' tzdata_2022a-1.debian.tar.xz 111804 SHA256:83f21a59c4f4dd773de30b044f0f68911594e23d374ca14a5eb2edd254b5578e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2022a-1/
 
-- https://sources.debian.net/src/tzdata/2022a-1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2022a-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2022a-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `util-linux=2.38-6`
 
