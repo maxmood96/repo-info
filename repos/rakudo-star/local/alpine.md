@@ -2,31 +2,48 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c98d295ccbe395a02f8f40aac0e43859b3c824f4b1d076a99c9b95a871ec5981`
-- Created: `2022-08-10T01:50:20.354782868Z`
-- Virtual Size: ~ 168.12 Mb  
+- Image ID: `sha256:1d548cd26f934e750c1057f757f67e97d8ec0ef8ea390785da25cd9d93b10750`
+- Created: `2022-08-18T21:38:46.571351529Z`
+- Virtual Size: ~ 132.65 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["raku"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share/perl6/core/bin:/usr/share/perl6/site/bin:/usr/share/perl6/vendor/bin`
-  - `rakudo_version=2021.04`
+  - `rakudo_version=2022.07-01`
 
 ## `apk` (`.apk`-based packages)
 
 ### `apk` package: `alpine-baselayout`
 
 ```console
-alpine-baselayout-3.2.0-r8 description:
+alpine-baselayout-3.2.0-r22 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-3.2.0-r8 webpage:
+alpine-baselayout-3.2.0-r22 webpage:
 https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
-alpine-baselayout-3.2.0-r8 installed size:
-400 KiB
+alpine-baselayout-3.2.0-r22 installed size:
+340 KiB
 
-alpine-baselayout-3.2.0-r8 license:
+alpine-baselayout-3.2.0-r22 license:
+GPL-2.0-only
+
+```
+
+### `apk` package: `alpine-baselayout-data`
+
+```console
+alpine-baselayout-data-3.2.0-r22 description:
+Alpine base dir structure and init scripts
+
+alpine-baselayout-data-3.2.0-r22 webpage:
+https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
+
+alpine-baselayout-data-3.2.0-r22 installed size:
+72 KiB
+
+alpine-baselayout-data-3.2.0-r22 license:
 GPL-2.0-only
 
 ```
@@ -34,16 +51,16 @@ GPL-2.0-only
 ### `apk` package: `alpine-keys`
 
 ```console
-alpine-keys-2.4-r0 description:
+alpine-keys-2.4-r1 description:
 Public keys for Alpine Linux packages
 
-alpine-keys-2.4-r0 webpage:
+alpine-keys-2.4-r1 webpage:
 https://alpinelinux.org
 
-alpine-keys-2.4-r0 installed size:
+alpine-keys-2.4-r1 installed size:
 156 KiB
 
-alpine-keys-2.4-r0 license:
+alpine-keys-2.4-r1 license:
 MIT
 
 ```
@@ -51,16 +68,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-2.12.7-r0 description:
+apk-tools-2.12.9-r3 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-2.12.7-r0 webpage:
+apk-tools-2.12.9-r3 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-2.12.7-r0 installed size:
-304 KiB
+apk-tools-2.12.9-r3 installed size:
+300 KiB
 
-apk-tools-2.12.7-r0 license:
+apk-tools-2.12.9-r3 license:
 GPL-2.0-only
 
 ```
@@ -68,16 +85,16 @@ GPL-2.0-only
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.32.1-r9 description:
+busybox-1.35.0-r17 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.32.1-r9 webpage:
+busybox-1.35.0-r17 webpage:
 https://busybox.net/
 
-busybox-1.32.1-r9 installed size:
-924 KiB
+busybox-1.35.0-r17 installed size:
+940 KiB
 
-busybox-1.32.1-r9 license:
+busybox-1.35.0-r17 license:
 GPL-2.0-only
 
 ```
@@ -126,7 +143,7 @@ libcrypto1.1-1.1.1q-r0 webpage:
 https://www.openssl.org/
 
 libcrypto1.1-1.1.1q-r0 installed size:
-2704 KiB
+2708 KiB
 
 libcrypto1.1-1.1.1q-r0 license:
 OpenSSL
@@ -150,36 +167,19 @@ OpenSSL
 
 ```
 
-### `apk` package: `libtls-standalone`
-
-```console
-libtls-standalone-2.9.1-r1 description:
-libtls extricated from libressl sources
-
-libtls-standalone-2.9.1-r1 webpage:
-https://www.libressl.org/
-
-libtls-standalone-2.9.1-r1 installed size:
-108 KiB
-
-libtls-standalone-2.9.1-r1 license:
-ISC
-
-```
-
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.2-r1 description:
+musl-1.2.3-r0 description:
 the musl c library (libc) implementation
 
-musl-1.2.2-r1 webpage:
+musl-1.2.3-r0 webpage:
 https://musl.libc.org/
 
-musl-1.2.2-r1 installed size:
+musl-1.2.3-r0 installed size:
 608 KiB
 
-musl-1.2.2-r1 license:
+musl-1.2.3-r0 license:
 MIT
 
 ```
@@ -187,16 +187,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.2-r1 description:
+musl-utils-1.2.3-r0 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.2-r1 webpage:
+musl-utils-1.2.3-r0 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.2-r1 installed size:
-140 KiB
+musl-utils-1.2.3-r0 installed size:
+132 KiB
 
-musl-utils-1.2.2-r1 license:
+musl-utils-1.2.3-r0 license:
 MIT BSD GPL2+
 
 ```
@@ -204,16 +204,16 @@ MIT BSD GPL2+
 ### `apk` package: `scanelf`
 
 ```console
-scanelf-1.2.8-r0 description:
+scanelf-1.3.4-r0 description:
 Scan ELF binaries for stuff
 
-scanelf-1.2.8-r0 webpage:
+scanelf-1.3.4-r0 webpage:
 https://wiki.gentoo.org/wiki/Hardened/PaX_Utilities
 
-scanelf-1.2.8-r0 installed size:
+scanelf-1.3.4-r0 installed size:
 92 KiB
 
-scanelf-1.2.8-r0 license:
+scanelf-1.3.4-r0 license:
 GPL-2.0-only
 
 ```
@@ -221,16 +221,16 @@ GPL-2.0-only
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.32.1-r9 description:
+ssl_client-1.35.0-r17 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.32.1-r9 webpage:
+ssl_client-1.35.0-r17 webpage:
 https://busybox.net/
 
-ssl_client-1.32.1-r9 installed size:
+ssl_client-1.35.0-r17 installed size:
 28 KiB
 
-ssl_client-1.32.1-r9 license:
+ssl_client-1.35.0-r17 license:
 GPL-2.0-only
 
 ```
