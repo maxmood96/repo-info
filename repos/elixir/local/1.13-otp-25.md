@@ -2,21 +2,21 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0140bacce7d4f9c9a36c4803bf579995517b961ca04766a12dfcc078985a4ad4`
-- Created: `2022-08-03T02:28:11.556416628Z`
+- Image ID: `sha256:c9acf3377b19523d8199b71636bf647569f2bf171fafba134199f92d5836c0bf`
+- Created: `2022-08-19T19:21:03.803445581Z`
 - Virtual Size: ~ 1.46 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["iex"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=25.0.3`
+  - `OTP_VERSION=25.0.4`
   - `REBAR3_VERSION=3.18.0`
   - `REBAR_VERSION=2.6.4`
   - `ELIXIR_VERSION=v1.13.4`
   - `LANG=C.UTF-8`
 - Labels:
-  - `org.opencontainers.image.version=25.0.3`
+  - `org.opencontainers.image.version=25.0.4`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2444,11 +2444,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gst-plugins-base1.0/1.18.4-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gst-plugins-base1.0/1.18.4-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gst-plugins-good1.0=1.18.4-2`
+### `dpkg` source package: `gst-plugins-good1.0=1.18.4-2+deb11u1`
 
 Binary Packages:
 
-- `gstreamer1.0-plugins-good:amd64=1.18.4-2`
+- `gstreamer1.0-plugins-good:amd64=1.18.4-2+deb11u1`
 
 Licenses: (parsed from: `/usr/share/doc/gstreamer1.0-plugins-good/copyright`)
 
@@ -2464,17 +2464,17 @@ Licenses: (parsed from: `/usr/share/doc/gstreamer1.0-plugins-good/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gst-plugins-good1.0=1.18.4-2
-'http://deb.debian.org/debian/pool/main/g/gst-plugins-good1.0/gst-plugins-good1.0_1.18.4-2.dsc' gst-plugins-good1.0_1.18.4-2.dsc 3707 SHA256:ed7324abbccb9a412cc917d73c7669f2d94b463d5aeb97cef59419f51a5cfc9e
-'http://deb.debian.org/debian/pool/main/g/gst-plugins-good1.0/gst-plugins-good1.0_1.18.4.orig.tar.xz' gst-plugins-good1.0_1.18.4.orig.tar.xz 3277572 SHA256:b6e50e3a9bbcd56ee6ec71c33aa8332cc9c926b0c1fae995aac8b3040ebe39b0
-'http://deb.debian.org/debian/pool/main/g/gst-plugins-good1.0/gst-plugins-good1.0_1.18.4-2.debian.tar.xz' gst-plugins-good1.0_1.18.4-2.debian.tar.xz 34344 SHA256:97360f928c285a77e623842129f1c34a60f86913bd3d0b43d3703774086b925e
+$ apt-get source -qq --print-uris gst-plugins-good1.0=1.18.4-2+deb11u1
+'http://deb.debian.org/debian-security/pool/updates/main/g/gst-plugins-good1.0/gst-plugins-good1.0_1.18.4-2%2bdeb11u1.dsc' gst-plugins-good1.0_1.18.4-2+deb11u1.dsc 3739 SHA256:c35fb5c6cc5fed51a158dd43c9acbdfd261c7690d132fe0792ea6612abf16d1d
+'http://deb.debian.org/debian-security/pool/updates/main/g/gst-plugins-good1.0/gst-plugins-good1.0_1.18.4.orig.tar.xz' gst-plugins-good1.0_1.18.4.orig.tar.xz 3277572 SHA256:b6e50e3a9bbcd56ee6ec71c33aa8332cc9c926b0c1fae995aac8b3040ebe39b0
+'http://deb.debian.org/debian-security/pool/updates/main/g/gst-plugins-good1.0/gst-plugins-good1.0_1.18.4-2%2bdeb11u1.debian.tar.xz' gst-plugins-good1.0_1.18.4-2+deb11u1.debian.tar.xz 37644 SHA256:37260edd5afe7b57e1a7234c20c2f119c575ce775cad6efe88511481257149b5
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/gst-plugins-good1.0/1.18.4-2/ (for browsing the source)
-- https://sources.debian.net/src/gst-plugins-good1.0/1.18.4-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gst-plugins-good1.0/1.18.4-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/gst-plugins-good1.0/1.18.4-2+deb11u1/ (for browsing the source)
+- https://sources.debian.net/src/gst-plugins-good1.0/1.18.4-2+deb11u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gst-plugins-good1.0/1.18.4-2+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gstreamer1.0=1.18.4-2.1`
 
@@ -8200,12 +8200,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/wayland/1.18.0-2~exp1.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/wayland/1.18.0-2~exp1.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `webkit2gtk=2.36.4-1~deb11u1`
+### `dpkg` source package: `webkit2gtk=2.36.6-1~deb11u1`
 
 Binary Packages:
 
-- `libjavascriptcoregtk-4.0-18:amd64=2.36.4-1~deb11u1`
-- `libwebkit2gtk-4.0-37:amd64=2.36.4-1~deb11u1`
+- `libjavascriptcoregtk-4.0-18:amd64=2.36.6-1~deb11u1`
+- `libwebkit2gtk-4.0-37:amd64=2.36.6-1~deb11u1`
 
 Licenses: (parsed from: `/usr/share/doc/libjavascriptcoregtk-4.0-18/copyright`, `/usr/share/doc/libwebkit2gtk-4.0-37/copyright`)
 
@@ -8244,18 +8244,18 @@ Licenses: (parsed from: `/usr/share/doc/libjavascriptcoregtk-4.0-18/copyright`, 
 Source:
 
 ```console
-$ apt-get source -qq --print-uris webkit2gtk=2.36.4-1~deb11u1
-'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.36.4-1%7edeb11u1.dsc' webkit2gtk_2.36.4-1~deb11u1.dsc 4265 SHA256:08a0691c7e05c47389090899112052f050384a69072639989f0bc263ddc3e2bb
-'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.36.4.orig.tar.xz' webkit2gtk_2.36.4.orig.tar.xz 26598964 SHA256:b6bebe1f85a479d968c19e44a4704622ef8cef61636ad1b2406b77d16ae2e2a8
-'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.36.4.orig.tar.xz.asc' webkit2gtk_2.36.4.orig.tar.xz.asc 195 SHA256:51f8f88248861c2d7c25658f738fc38be1019bbfbc92ac402094cce6a264994e
-'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.36.4-1%7edeb11u1.debian.tar.xz' webkit2gtk_2.36.4-1~deb11u1.debian.tar.xz 76348 SHA256:d6efc4c449fb1bf4b51606cdf1259c3d4d9d1894237ff63dc661475c07cdc37e
+$ apt-get source -qq --print-uris webkit2gtk=2.36.6-1~deb11u1
+'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.36.6-1%7edeb11u1.dsc' webkit2gtk_2.36.6-1~deb11u1.dsc 4265 SHA256:7a354381e728b1d322583ae0b7020d95429f3b45ba6def3a8a93efd39c4304cc
+'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.36.6.orig.tar.xz' webkit2gtk_2.36.6.orig.tar.xz 26593904 SHA256:1193bc821946336776f0dfa5e0dca5651f1e57157eda12da4721d2441f24a61a
+'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.36.6.orig.tar.xz.asc' webkit2gtk_2.36.6.orig.tar.xz.asc 195 SHA256:0a8144270f17200eab1a2cc605a90c6e0143edc57ac2d676a34f24c741d971fe
+'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.36.6-1%7edeb11u1.debian.tar.xz' webkit2gtk_2.36.6-1~deb11u1.debian.tar.xz 76404 SHA256:573e32aba5ad185127cb007ae0970a930ba8715fef2dbce59b30ebbc23540957
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/webkit2gtk/2.36.4-1~deb11u1/ (for browsing the source)
-- https://sources.debian.net/src/webkit2gtk/2.36.4-1~deb11u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/webkit2gtk/2.36.4-1~deb11u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/webkit2gtk/2.36.6-1~deb11u1/ (for browsing the source)
+- https://sources.debian.net/src/webkit2gtk/2.36.6-1~deb11u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/webkit2gtk/2.36.6-1~deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.21-1+deb11u1`
 
