@@ -963,19 +963,39 @@ CMD ["mariadbd"]
 
 ## `mariadb:10.10-rc`
 
-**does not exist** (yet?)
+```console
+$ docker pull mariadb@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `mariadb:10.10-rc-jammy`
 
-**does not exist** (yet?)
+```console
+$ docker pull mariadb@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `mariadb:10.10.1-rc`
 
-**does not exist** (yet?)
+```console
+$ docker pull mariadb@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `mariadb:10.10.1-rc-jammy`
 
-**does not exist** (yet?)
+```console
+$ docker pull mariadb@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `mariadb:10.3`
 
@@ -1717,11 +1737,21 @@ CMD ["mysqld"]
 
 ## `mariadb:10.3.36`
 
-**does not exist** (yet?)
+```console
+$ docker pull mariadb@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `mariadb:10.3.36-focal`
 
-**does not exist** (yet?)
+```console
+$ docker pull mariadb@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `mariadb:10.4`
 
@@ -2463,11 +2493,21 @@ CMD ["mysqld"]
 
 ## `mariadb:10.4.26`
 
-**does not exist** (yet?)
+```console
+$ docker pull mariadb@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `mariadb:10.4.26-focal`
 
-**does not exist** (yet?)
+```console
+$ docker pull mariadb@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `mariadb:10.5`
 
@@ -3393,11 +3433,21 @@ CMD ["mysqld"]
 
 ## `mariadb:10.5.17`
 
-**does not exist** (yet?)
+```console
+$ docker pull mariadb@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `mariadb:10.5.17-focal`
 
-**does not exist** (yet?)
+```console
+$ docker pull mariadb@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `mariadb:10.6`
 
@@ -4323,11 +4373,21 @@ CMD ["mariadbd"]
 
 ## `mariadb:10.6.9`
 
-**does not exist** (yet?)
+```console
+$ docker pull mariadb@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `mariadb:10.6.9-focal`
 
-**does not exist** (yet?)
+```console
+$ docker pull mariadb@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `mariadb:10.7`
 
@@ -5253,11 +5313,21 @@ CMD ["mariadbd"]
 
 ## `mariadb:10.7.5`
 
-**does not exist** (yet?)
+```console
+$ docker pull mariadb@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `mariadb:10.7.5-focal`
 
-**does not exist** (yet?)
+```console
+$ docker pull mariadb@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `mariadb:10.8`
 
@@ -6183,27 +6253,57 @@ CMD ["mariadbd"]
 
 ## `mariadb:10.8.4`
 
-**does not exist** (yet?)
+```console
+$ docker pull mariadb@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `mariadb:10.8.4-jammy`
 
-**does not exist** (yet?)
+```console
+$ docker pull mariadb@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `mariadb:10.9`
 
-**does not exist** (yet?)
+```console
+$ docker pull mariadb@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `mariadb:10.9-jammy`
 
-**does not exist** (yet?)
+```console
+$ docker pull mariadb@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `mariadb:10.9.2`
 
-**does not exist** (yet?)
+```console
+$ docker pull mariadb@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `mariadb:10.9.2-jammy`
 
-**does not exist** (yet?)
+```console
+$ docker pull mariadb@sha256:a8409dff6597f2ef5f7ecd3c672671bb2af9a390073efd74f95c54aa41cba22a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 0
 
 ## `mariadb:jammy`
 
