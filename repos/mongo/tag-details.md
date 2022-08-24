@@ -82,6 +82,30 @@
 -	[`mongo:5.0.11-windowsservercore`](#mongo5011-windowsservercore)
 -	[`mongo:5.0.11-windowsservercore-1809`](#mongo5011-windowsservercore-1809)
 -	[`mongo:5.0.11-windowsservercore-ltsc2022`](#mongo5011-windowsservercore-ltsc2022)
+-	[`mongo:6`](#mongo6)
+-	[`mongo:6-focal`](#mongo6-focal)
+-	[`mongo:6-nanoserver`](#mongo6-nanoserver)
+-	[`mongo:6-nanoserver-1809`](#mongo6-nanoserver-1809)
+-	[`mongo:6-nanoserver-ltsc2022`](#mongo6-nanoserver-ltsc2022)
+-	[`mongo:6-windowsservercore`](#mongo6-windowsservercore)
+-	[`mongo:6-windowsservercore-1809`](#mongo6-windowsservercore-1809)
+-	[`mongo:6-windowsservercore-ltsc2022`](#mongo6-windowsservercore-ltsc2022)
+-	[`mongo:6.0`](#mongo60)
+-	[`mongo:6.0-focal`](#mongo60-focal)
+-	[`mongo:6.0-nanoserver`](#mongo60-nanoserver)
+-	[`mongo:6.0-nanoserver-1809`](#mongo60-nanoserver-1809)
+-	[`mongo:6.0-nanoserver-ltsc2022`](#mongo60-nanoserver-ltsc2022)
+-	[`mongo:6.0-windowsservercore`](#mongo60-windowsservercore)
+-	[`mongo:6.0-windowsservercore-1809`](#mongo60-windowsservercore-1809)
+-	[`mongo:6.0-windowsservercore-ltsc2022`](#mongo60-windowsservercore-ltsc2022)
+-	[`mongo:6.0.1`](#mongo601)
+-	[`mongo:6.0.1-focal`](#mongo601-focal)
+-	[`mongo:6.0.1-nanoserver`](#mongo601-nanoserver)
+-	[`mongo:6.0.1-nanoserver-1809`](#mongo601-nanoserver-1809)
+-	[`mongo:6.0.1-nanoserver-ltsc2022`](#mongo601-nanoserver-ltsc2022)
+-	[`mongo:6.0.1-windowsservercore`](#mongo601-windowsservercore)
+-	[`mongo:6.0.1-windowsservercore-1809`](#mongo601-windowsservercore-1809)
+-	[`mongo:6.0.1-windowsservercore-ltsc2022`](#mongo601-windowsservercore-ltsc2022)
 -	[`mongo:focal`](#mongofocal)
 -	[`mongo:latest`](#mongolatest)
 -	[`mongo:nanoserver`](#mongonanoserver)
@@ -13274,6 +13298,102 @@ CMD ["mongod" "--bind_ip_all"]
 		Last Modified: Sat, 20 Aug 2022 01:37:59 GMT  
 		Size: 1.4 KB (1396 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `mongo:6`
+
+**does not exist** (yet?)
+
+## `mongo:6-focal`
+
+**does not exist** (yet?)
+
+## `mongo:6-nanoserver`
+
+**does not exist** (yet?)
+
+## `mongo:6-nanoserver-1809`
+
+**does not exist** (yet?)
+
+## `mongo:6-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
+## `mongo:6-windowsservercore`
+
+**does not exist** (yet?)
+
+## `mongo:6-windowsservercore-1809`
+
+**does not exist** (yet?)
+
+## `mongo:6-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
+
+## `mongo:6.0`
+
+**does not exist** (yet?)
+
+## `mongo:6.0-focal`
+
+**does not exist** (yet?)
+
+## `mongo:6.0-nanoserver`
+
+**does not exist** (yet?)
+
+## `mongo:6.0-nanoserver-1809`
+
+**does not exist** (yet?)
+
+## `mongo:6.0-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
+## `mongo:6.0-windowsservercore`
+
+**does not exist** (yet?)
+
+## `mongo:6.0-windowsservercore-1809`
+
+**does not exist** (yet?)
+
+## `mongo:6.0-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
+
+## `mongo:6.0.1`
+
+**does not exist** (yet?)
+
+## `mongo:6.0.1-focal`
+
+**does not exist** (yet?)
+
+## `mongo:6.0.1-nanoserver`
+
+**does not exist** (yet?)
+
+## `mongo:6.0.1-nanoserver-1809`
+
+**does not exist** (yet?)
+
+## `mongo:6.0.1-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
+## `mongo:6.0.1-windowsservercore`
+
+**does not exist** (yet?)
+
+## `mongo:6.0.1-windowsservercore-1809`
+
+**does not exist** (yet?)
+
+## `mongo:6.0.1-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
 
 ## `mongo:focal`
 
