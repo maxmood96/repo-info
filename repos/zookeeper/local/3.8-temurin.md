@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:85e72a42861e3a0c2d51c412bfdce513fb58b5cd95437effa2df5968d175ec1a`
-- Created: `2022-08-12T20:11:12.5094628Z`
+- Image ID: `sha256:d093def538a8047419ce32f711bd8f41b097b406838113e4abb8fcb0f8c4e2ab`
+- Created: `2022-08-24T22:42:10.443411269Z`
 - Virtual Size: ~ 300.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-11.0.16+8`
+  - `JAVA_VERSION=jdk-11.0.16.1+1`
   - `ZOO_CONF_DIR=/conf`
   - `ZOO_DATA_DIR=/data`
   - `ZOO_DATA_LOG_DIR=/datalog`
