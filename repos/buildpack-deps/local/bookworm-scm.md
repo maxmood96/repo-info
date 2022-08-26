@@ -2359,20 +2359,13 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.4.0-13
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.4.0-13.dsc' pam_1.4.0-13.dsc 2543 SHA256:68bda3114461faffe7611327462fc83c4f26a0c03e603bff4f5c245041b9f7ee
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.4.0.orig.tar.xz' pam_1.4.0.orig.tar.xz 988908 SHA256:cd6d928c51e64139be3bdb38692c68183a509b83d4f2c221024ccd4bcddfd034
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.4.0-13.debian.tar.xz' pam_1.4.0-13.debian.tar.xz 121432 SHA256:c9127a49a7995c405a8b8a6298764c4459d169eb68ac25a2d150c6b4b8a2b922
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pam/1.4.0-13/
 
-- https://sources.debian.net/src/pam/1.4.0-13/ (for browsing the source)
-- https://sources.debian.net/src/pam/1.4.0-13/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pam/1.4.0-13/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pcre2=10.40-1`
 
@@ -2552,19 +2545,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-defaults=3.10.5-3
-'http://deb.debian.org/debian/pool/main/p/python3-defaults/python3-defaults_3.10.5-3.dsc' python3-defaults_3.10.5-3.dsc 2944 SHA256:7dae13c7712fe7e3889f6a62852a26077e262103bfd4ce7e1be579abb871a1d0
-'http://deb.debian.org/debian/pool/main/p/python3-defaults/python3-defaults_3.10.5-3.tar.gz' python3-defaults_3.10.5-3.tar.gz 145209 SHA256:a235746fa25b6c99967c2a968d4bff4871e95e694052c81385d3299b9f1de467
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3-defaults/3.10.5-3/
 
-- https://sources.debian.net/src/python3-defaults/3.10.5-3/ (for browsing the source)
-- https://sources.debian.net/src/python3-defaults/3.10.5-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3-defaults/3.10.5-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3.10=3.10.6-1`
 

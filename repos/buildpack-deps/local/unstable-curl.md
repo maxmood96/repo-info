@@ -53,19 +53,13 @@ Licenses: (parsed from: `/usr/share/doc/adduser/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris adduser=3.123
-'http://deb.debian.org/debian/pool/main/a/adduser/adduser_3.123.dsc' adduser_3.123.dsc 1683 SHA256:cf3508f50a329b1a892d5d1fb1bb87c4a66ab8b4958b81d34723d6cb45a188d5
-'http://deb.debian.org/debian/pool/main/a/adduser/adduser_3.123.tar.xz' adduser_3.123.tar.xz 231624 SHA256:e1befb7845dcfb240946e1016ca44c82f80fa9672ed44f2f22ab97dd4a0f5af4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/adduser/3.123/
 
-- https://sources.debian.net/src/adduser/3.123/ (for browsing the source)
-- https://sources.debian.net/src/adduser/3.123/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/adduser/3.123/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apt=2.5.2`
 
@@ -1719,13 +1713,20 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris nghttp2=1.48.0-2
+'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.48.0-2.dsc' nghttp2_1.48.0-2.dsc 2511 SHA256:bede93f2a0445789371dc65b5a014f0f92aa7f62945d51880f451801c096e81c
+'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.48.0.orig.tar.bz2' nghttp2_1.48.0.orig.tar.bz2 4700059 SHA256:b97ebe1c75f3311c76a9b196fa1f81314c6f52c0c6b267d8aae60cf2aeb7dff7
+'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.48.0-2.debian.tar.xz' nghttp2_1.48.0-2.debian.tar.xz 16164 SHA256:07ecbdcbf69dd00b82287f8f7c1d3e69702fe4a95b8c9f0f8fd31ddfa34b3bce
+```
 
-- http://snapshot.debian.org/package/nghttp2/1.48.0-2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/nghttp2/1.48.0-2/ (for browsing the source)
+- https://sources.debian.net/src/nghttp2/1.48.0-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/nghttp2/1.48.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `npth=1.6-3`
 
