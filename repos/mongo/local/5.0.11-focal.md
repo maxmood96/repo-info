@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:061981e35b46baece097fb47a7229093c6c9e320015b2714dd1597f732dbdbdd`
-- Created: `2022-08-24T23:37:55.571034632Z`
+- Image ID: `sha256:ae98e14b339d6f3acdd4490a7585f1678d888fe08616e6c6643e6e1a7e961d67`
+- Created: `2022-08-25T19:04:45.564935021Z`
 - Virtual Size: ~ 696.48 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -137,13 +137,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=11ubuntu5.5
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_11ubuntu5.5.dsc' base-files_11ubuntu5.5.dsc 1676 SHA512:a96414af9c3a120ce23f854ab5e80807319d820825ae9027b0ff6f5be621c6aff2941eb31b7f05523b5015d6702d973e628a6e70cb17bf9312b6cf5256b98962
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_11ubuntu5.5.tar.xz' base-files_11ubuntu5.5.tar.xz 80616 SHA512:682851e1d0001fd0d79a4d61357a6ce8de8d46367259619c5c66b289fc471901d70eb47d64289a8ad63d6b784ecad912f92ef005421f732ad9d3a3ddc97a0e74
-```
 
 ### `dpkg` source package: `base-passwd=3.5.47`
 
