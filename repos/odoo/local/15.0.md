@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:565bc47ebd32b0fd5e9509643cf1bce18145015c1a00ddfdbfb127d58e96c80c`
-- Created: `2022-08-23T04:20:37.052296303Z`
+- Image ID: `sha256:5a844f3a4a8287e42a6eaf55443a978d45e580a8691230fe1b23eba50a5e9345`
+- Created: `2022-08-26T19:25:49.828615307Z`
 - Virtual Size: ~ 1.53 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -3308,11 +3308,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libxrender/1:0.9.10-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libxrender/1:0.9.10-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libxslt=1.1.34-4`
+### `dpkg` source package: `libxslt=1.1.34-4+deb11u1`
 
 Binary Packages:
 
-- `libxslt1.1:amd64=1.1.34-4`
+- `libxslt1.1:amd64=1.1.34-4+deb11u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3321,18 +3321,18 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libxslt=1.1.34-4
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.34-4.dsc' libxslt_1.1.34-4.dsc 2375 SHA256:29447f928b2fd534bd819aaf74005ff286f3786689a2684b9cbc61c1c65c2212
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.34.orig.tar.gz' libxslt_1.1.34.orig.tar.gz 3552258 SHA256:98b1bd46d6792925ad2dfe9a87452ea2adebf69dcb9919ffd55bf926a7f93f7f
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.34.orig.tar.gz.asc' libxslt_1.1.34.orig.tar.gz.asc 488 SHA256:673d1477552bdd5b0cc665704e77ca70e6be5d2f257e6a5a341c846719d747cf
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.34-4.debian.tar.xz' libxslt_1.1.34-4.debian.tar.xz 21464 SHA256:24d5490d6e33f42391d2ce449dd8fec0830ced115a6af886ee03af985a727dc9
+$ apt-get source -qq --print-uris libxslt=1.1.34-4+deb11u1
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxslt/libxslt_1.1.34-4%2bdeb11u1.dsc' libxslt_1.1.34-4+deb11u1.dsc 2562 SHA256:0dec0521f4d7cfc08bd61c4d4aa82866881962c12f1429f730830c79c6678e93
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxslt/libxslt_1.1.34.orig.tar.gz' libxslt_1.1.34.orig.tar.gz 3552258 SHA256:98b1bd46d6792925ad2dfe9a87452ea2adebf69dcb9919ffd55bf926a7f93f7f
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxslt/libxslt_1.1.34.orig.tar.gz.asc' libxslt_1.1.34.orig.tar.gz.asc 488 SHA256:673d1477552bdd5b0cc665704e77ca70e6be5d2f257e6a5a341c846719d747cf
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxslt/libxslt_1.1.34-4%2bdeb11u1.debian.tar.xz' libxslt_1.1.34-4+deb11u1.debian.tar.xz 23152 SHA256:0272cab003bb5fe7105d54f3023c806062c818082df4d791fd45dbf526b801f8
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libxslt/1.1.34-4/ (for browsing the source)
-- https://sources.debian.net/src/libxslt/1.1.34-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxslt/1.1.34-4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libxslt/1.1.34-4+deb11u1/ (for browsing the source)
+- https://sources.debian.net/src/libxslt/1.1.34-4+deb11u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libxslt/1.1.34-4+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxt=1:1.2.0-1`
 
@@ -8025,11 +8025,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/npth/1.6-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/npth/1.6-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `odoo=15.0.20220819`
+### `dpkg` source package: `odoo=15.0.20220826`
 
 Binary Packages:
 
-- `odoo=15.0.20220819`
+- `odoo=15.0.20220826`
 
 Licenses: (parsed from: `/usr/share/doc/odoo/copyright`)
 
