@@ -1,10 +1,10 @@
-# `sonarqube:9.6.0-community`
+# `sonarqube:9.6.1-community`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e543676fb9a244d1d5659fac2f078efa6f8f1a351759f5d52f3f2ed401738fd2`
-- Created: `2022-08-12T22:42:07.601018304Z`
-- Virtual Size: ~ 534.45 Mb  
+- Image ID: `sha256:2cf2f249469570cf3791c0603e86c060a0365c23ee0f5cfcabf2593d77b11040`
+- Created: `2022-08-29T18:36:44.65484701Z`
+- Virtual Size: ~ 534.31 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/sonarqube/bin/run.sh"]`
@@ -16,7 +16,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_HOME=/usr/lib/jvm/java-11-openjdk`
   - `SONARQUBE_HOME=/opt/sonarqube`
-  - `SONAR_VERSION=9.6.0.59041`
+  - `SONAR_VERSION=9.6.1.59531`
   - `SQ_DATA_DIR=/opt/sonarqube/data`
   - `SQ_EXTENSIONS_DIR=/opt/sonarqube/extensions`
   - `SQ_LOGS_DIR=/opt/sonarqube/logs`
