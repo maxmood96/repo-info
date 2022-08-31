@@ -1,7 +1,7 @@
 ## `wordpress:6-php8.1-fpm-alpine`
 
 ```console
-$ docker pull wordpress@sha256:36b43bd5b8cd4839575e82bfce94e93f58b21f1dd72b825392fd076d3c97d164
+$ docker pull wordpress@sha256:86bdabc9de6af177520a3444dc4697b201b21942644e86eddcd9cdc615289d0d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -488,14 +488,14 @@ CMD ["php-fpm"]
 ### `wordpress:6-php8.1-fpm-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull wordpress@sha256:5a1ad6107fa751d9811aa779728357697302c27b8a5dfbd12bd5b6b5812fd635
+$ docker pull wordpress@sha256:22710d71ae0fa5af7d667673ed97fa2944a53f1114cc8d7578778ab76633a0e6
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **100.1 MB (100149673 bytes)**  
+-	Total Size: **100.2 MB (100152011 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cb4ded075fd3c10843fe71e67fe108b0896746ca06fcbf57c029e8a40b7329be`
+-	Image ID: `sha256:8e0ae7634776eb437f356b128b51f611a31f3c2709a6c97ba93e9ff9169c565a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -558,17 +558,17 @@ RUN set -ex; 		apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		freetyp
 RUN set -eux; 	docker-php-ext-enable opcache; 	{ 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
 # Wed, 10 Aug 2022 08:48:25 GMT
 RUN { 		echo 'error_reporting = E_ERROR | E_WARNING | E_PARSE | E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_COMPILE_WARNING | E_RECOVERABLE_ERROR'; 		echo 'display_errors = Off'; 		echo 'display_startup_errors = Off'; 		echo 'log_errors = On'; 		echo 'error_log = /dev/stderr'; 		echo 'log_errors_max_len = 1024'; 		echo 'ignore_repeated_errors = On'; 		echo 'ignore_repeated_source = Off'; 		echo 'html_errors = Off'; 	} > /usr/local/etc/php/conf.d/error-logging.ini
-# Wed, 10 Aug 2022 08:48:29 GMT
-RUN set -eux; 	version='6.0.1'; 	sha1='a1c02b6b754d74c08a70d5a8b604bdb72f1b276a'; 		curl -o wordpress.tar.gz -fL "https://wordpress.org/wordpress-$version.tar.gz"; 	echo "$sha1 *wordpress.tar.gz" | sha1sum -c -; 		tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 		[ ! -e /usr/src/wordpress/.htaccess ]; 	{ 		echo '# BEGIN WordPress'; 		echo ''; 		echo 'RewriteEngine On'; 		echo 'RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]'; 		echo 'RewriteBase /'; 		echo 'RewriteRule ^index\.php$ - [L]'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-f'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-d'; 		echo 'RewriteRule . /index.php [L]'; 		echo ''; 		echo '# END WordPress'; 	} > /usr/src/wordpress/.htaccess; 		chown -R www-data:www-data /usr/src/wordpress; 	mkdir wp-content; 	for dir in /usr/src/wordpress/wp-content/*/ cache; do 		dir="$(basename "${dir%/}")"; 		mkdir "wp-content/$dir"; 	done; 	chown -R www-data:www-data wp-content; 	chmod -R 777 wp-content
-# Wed, 10 Aug 2022 08:48:30 GMT
+# Wed, 31 Aug 2022 19:19:16 GMT
+RUN set -eux; 	version='6.0.2'; 	sha1='9348f0757c21504d085a6c866ccbb86573b39d6f'; 		curl -o wordpress.tar.gz -fL "https://wordpress.org/wordpress-$version.tar.gz"; 	echo "$sha1 *wordpress.tar.gz" | sha1sum -c -; 		tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 		[ ! -e /usr/src/wordpress/.htaccess ]; 	{ 		echo '# BEGIN WordPress'; 		echo ''; 		echo 'RewriteEngine On'; 		echo 'RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]'; 		echo 'RewriteBase /'; 		echo 'RewriteRule ^index\.php$ - [L]'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-f'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-d'; 		echo 'RewriteRule . /index.php [L]'; 		echo ''; 		echo '# END WordPress'; 	} > /usr/src/wordpress/.htaccess; 		chown -R www-data:www-data /usr/src/wordpress; 	mkdir wp-content; 	for dir in /usr/src/wordpress/wp-content/*/ cache; do 		dir="$(basename "${dir%/}")"; 		mkdir "wp-content/$dir"; 	done; 	chown -R www-data:www-data wp-content; 	chmod -R 777 wp-content
+# Wed, 31 Aug 2022 19:19:16 GMT
 VOLUME [/var/www/html]
-# Wed, 10 Aug 2022 08:48:31 GMT
+# Wed, 31 Aug 2022 19:19:18 GMT
 COPY --chown=www-data:www-datafile:f95ddeaad9b50ddddf288560052a9de4f33fa6297ea70870e396f6d99c482b7a in /usr/src/wordpress/ 
-# Wed, 10 Aug 2022 08:48:32 GMT
+# Wed, 31 Aug 2022 19:19:19 GMT
 COPY file:5be6bcc31206cb827f037769d89fd092037ed61a1e10d6cae7939a37055beb4c in /usr/local/bin/ 
-# Wed, 10 Aug 2022 08:48:32 GMT
+# Wed, 31 Aug 2022 19:19:19 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 10 Aug 2022 08:48:33 GMT
+# Wed, 31 Aug 2022 19:19:20 GMT
 CMD ["php-fpm"]
 ```
 
@@ -629,17 +629,17 @@ CMD ["php-fpm"]
 		Last Modified: Wed, 10 Aug 2022 08:57:02 GMT  
 		Size: 390.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2d306df59cfa6ae1e7c457c6e782d250e360204ded53b69f1bb4ad03421ec38e`  
-		Last Modified: Wed, 10 Aug 2022 08:57:05 GMT  
-		Size: 21.0 MB (20996691 bytes)  
+	-	`sha256:99f9c4fb280d01a4bac00be0baea0353151a72a9c0efb3395580993e1caf086e`  
+		Last Modified: Wed, 31 Aug 2022 19:27:05 GMT  
+		Size: 21.0 MB (20999022 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dd062fc117c5e4e773202b76123989ef574a059b2a81509623d913cdc5a3684a`  
-		Last Modified: Wed, 10 Aug 2022 08:57:02 GMT  
-		Size: 2.3 KB (2338 bytes)  
+	-	`sha256:9f3c146fb6e460a202612f8acc92c599917cf2f08150e6e29fe572aba362e80f`  
+		Last Modified: Wed, 31 Aug 2022 19:27:01 GMT  
+		Size: 2.3 KB (2341 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3d83876efb7bf83174435cbf00bd90226efd34d21c399fd2c79e5f1a4e5de79`  
-		Last Modified: Wed, 10 Aug 2022 08:57:02 GMT  
-		Size: 1.7 KB (1730 bytes)  
+	-	`sha256:4cc66a211012d4a792a6669839d925be96eef8e08b9c5ed68170a4ab26a90977`  
+		Last Modified: Wed, 31 Aug 2022 19:27:01 GMT  
+		Size: 1.7 KB (1734 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `wordpress:6-php8.1-fpm-alpine` - linux; 386
