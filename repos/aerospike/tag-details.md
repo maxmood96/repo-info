@@ -2,30 +2,30 @@
 
 # Tags of `aerospike`
 
--	[`aerospike:ce-6.0.0.5`](#aerospikece-6005)
--	[`aerospike:ee-6.0.0.5`](#aerospikeee-6005)
+-	[`aerospike:ce-6.1.0.1`](#aerospikece-6101)
+-	[`aerospike:ee-6.1.0.1`](#aerospikeee-6101)
 
-## `aerospike:ce-6.0.0.5`
+## `aerospike:ce-6.1.0.1`
 
 ```console
-$ docker pull aerospike@sha256:6b5b0f1008549bf539e4292aa568eb9959440b61fac6712f78684b5dacc190c9
+$ docker pull aerospike@sha256:07138ce6ce111f54604577efd12b8ec700af4211e311dfd8714ee31055898181
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
 	-	linux; amd64
 
-### `aerospike:ce-6.0.0.5` - linux; amd64
+### `aerospike:ce-6.1.0.1` - linux; amd64
 
 ```console
-$ docker pull aerospike@sha256:67eefc6dba75d1e7800bbd78bd0b9bfaf033b089dde57353b76fe2b4da38af84
+$ docker pull aerospike@sha256:ee5185c4f5d18c3962a4834a65f3e19dd3fe53ef0f935f630c388d86e3545f13
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **120.6 MB (120641203 bytes)**  
+-	Total Size: **121.4 MB (121429673 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8236853af7854786976c9550310f1271b6290c6f79fd115b417f5d7d9b5840e8`
+-	Image ID: `sha256:c711573f7ac94f0840a714415f84aff9056ccf7124ac86cca0aa22a7b542d841`
 -	Entrypoint: `["\/usr\/bin\/dumb-init","--","\/entrypoint.sh"]`
 -	Default Command: `["asd"]`
 
@@ -34,21 +34,21 @@ $ docker pull aerospike@sha256:67eefc6dba75d1e7800bbd78bd0b9bfaf033b089dde57353b
 ADD file:baca493d7744d12304f6d9c7b6ec0800453a0ba02cbf4005ec35c7b921adf0c4 in / 
 # Tue, 23 Aug 2022 00:21:10 GMT
 CMD ["bash"]
-# Wed, 24 Aug 2022 23:07:02 GMT
-ENV AEROSPIKE_VERSION=6.0.0.5
-# Wed, 24 Aug 2022 23:07:30 GMT
-ENV AEROSPIKE_SHA256=2eb30e08fd5fa5055e328ee5e652f59efd99af66f2b9e8eede5ffb532b7bd99a
-# Mon, 29 Aug 2022 18:20:13 GMT
+# Wed, 31 Aug 2022 17:19:22 GMT
+ENV AEROSPIKE_VERSION=6.1.0.1
+# Wed, 31 Aug 2022 17:19:50 GMT
+ENV AEROSPIKE_SHA256=e100c35ce9b42bf1daebf668f134de444dfc3f6fcef60479f1e9469d9761e791
+# Wed, 31 Aug 2022 17:20:14 GMT
 RUN apt-get update -y   && apt-get install -y iproute2 procps dumb-init wget python python3 python3-distutils lua5.2 gettext-base libcurl4-openssl-dev    && wget "https://www.aerospike.com/artifacts/aerospike-server-community/${AEROSPIKE_VERSION}/aerospike-server-community-${AEROSPIKE_VERSION}-debian10.tgz" -O aerospike-server.tgz   && echo "$AEROSPIKE_SHA256 *aerospike-server.tgz" | sha256sum -c -   && mkdir aerospike   && tar xzf aerospike-server.tgz --strip-components=1 -C aerospike   && dpkg -i aerospike/aerospike-server-*.deb   && dpkg -i aerospike/aerospike-tools-*.deb   && mkdir -p /var/log/aerospike/   && mkdir -p /var/run/aerospike/   && rm -rf aerospike-server.tgz aerospike /var/lib/apt/lists/*   && rm -rf /opt/aerospike/lib/java   && dpkg -r wget ca-certificates openssl xz-utils  && dpkg --purge wget ca-certificates openssl xz-utils  && apt-get purge -y   && apt autoremove -y   && find /usr/bin/ -lname '/opt/aerospike/bin/*' -delete   && find /opt/aerospike/bin/ -user aerospike -group aerospike -exec chown root:root {} +   && if [ -d '/opt/aerospike/bin/asadm' ];   then   mv /opt/aerospike/bin/asadm /usr/lib/;   ln -s /usr/lib/asadm/asadm /usr/bin/asadm;     if [ -f /usr/lib/asadm/asinfo ];     then     ln -s /usr/lib/asadm/asinfo /usr/bin/asinfo;     fi   fi   && mv /opt/aerospike/bin/* /usr/bin/   && rm -rf /opt/aerospike/bin
-# Mon, 29 Aug 2022 18:20:14 GMT
+# Wed, 31 Aug 2022 17:20:15 GMT
 COPY file:f497c4c6974a190f79a562efd9c9c0d6b753efe43e62c3fcc2536f74ad08238d in /etc/aerospike/aerospike.template.conf 
-# Mon, 29 Aug 2022 18:20:14 GMT
+# Wed, 31 Aug 2022 17:20:15 GMT
 COPY file:fe302e12e47afe1731a34ed4ed29328c6901a3f2c9e32e307220e65cb76d53a2 in /entrypoint.sh 
-# Mon, 29 Aug 2022 18:20:14 GMT
+# Wed, 31 Aug 2022 17:20:15 GMT
 EXPOSE 3000 3001 3002
-# Mon, 29 Aug 2022 18:20:14 GMT
+# Wed, 31 Aug 2022 17:20:16 GMT
 ENTRYPOINT ["/usr/bin/dumb-init" "--" "/entrypoint.sh"]
-# Mon, 29 Aug 2022 18:20:14 GMT
+# Wed, 31 Aug 2022 17:20:16 GMT
 CMD ["asd"]
 ```
 
@@ -57,40 +57,40 @@ CMD ["asd"]
 		Last Modified: Tue, 23 Aug 2022 00:25:43 GMT  
 		Size: 27.1 MB (27138330 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:298717f91f531abeb29871fc8ae073a7f1f04f690363942413552747699b6067`  
-		Last Modified: Mon, 29 Aug 2022 18:21:01 GMT  
-		Size: 93.5 MB (93501044 bytes)  
+	-	`sha256:f77868dd47c2a7ad9d4f4f3b1f2d99fc3ec8b23de5090e5bfbc9f7588e713c56`  
+		Last Modified: Wed, 31 Aug 2022 17:20:59 GMT  
+		Size: 94.3 MB (94289515 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3330cf91ce75b827b745ae8dae39d275d13bd94eb9f6271173b08ece25a9c8be`  
-		Last Modified: Mon, 29 Aug 2022 18:20:47 GMT  
+	-	`sha256:a2ac4e0f4c07f3d3a2cd61e3dcba5fb339c6bd287a767913783f47fd4f748589`  
+		Last Modified: Wed, 31 Aug 2022 17:20:45 GMT  
 		Size: 1.0 KB (1019 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:937dd25cea4d8e3dbd980c5063020d4a6248a1a3a3e55e1a41faa59bc8d663cf`  
-		Last Modified: Mon, 29 Aug 2022 18:20:47 GMT  
-		Size: 810.0 B  
+	-	`sha256:9fded977726c2dfab9364bc58247780761c0630d82a1f1c2bf27ea717c0fe173`  
+		Last Modified: Wed, 31 Aug 2022 17:20:45 GMT  
+		Size: 809.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `aerospike:ee-6.0.0.5`
+## `aerospike:ee-6.1.0.1`
 
 ```console
-$ docker pull aerospike@sha256:5b2d689c96b5d436a7ddbed684b572b136627306dd32f63fc234882b7e456264
+$ docker pull aerospike@sha256:cfe965a8cf8247fe0908c035a629222804c6cc69d23add78117e95befa58bcc4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
 	-	linux; amd64
 
-### `aerospike:ee-6.0.0.5` - linux; amd64
+### `aerospike:ee-6.1.0.1` - linux; amd64
 
 ```console
-$ docker pull aerospike@sha256:4ef77e1a6a748428cd4fc7a4d7cf3083613ba948d2dd45d3cb31a9feb73e4ff7
+$ docker pull aerospike@sha256:e992efed0ad5d6c98d7bdf7d6b56bd1fc1ce28481939cb9b1177dd67d90604fb
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **123.0 MB (123034040 bytes)**  
+-	Total Size: **123.8 MB (123846873 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:41490154c4200ab6b152d2224a8148274fe7a98dcbd046be693f5f997c636431`
+-	Image ID: `sha256:4d0211ce73876b17d46c2f733de560e5b7bc8ff87e14f8bbc1c4760f3253d28d`
 -	Entrypoint: `["\/usr\/bin\/as-tini-static","-r","SIGUSR1","-t","SIGTERM","--","\/entrypoint.sh"]`
 -	Default Command: `["asd"]`
 
@@ -99,23 +99,23 @@ $ docker pull aerospike@sha256:4ef77e1a6a748428cd4fc7a4d7cf3083613ba948d2dd45d3c
 ADD file:baca493d7744d12304f6d9c7b6ec0800453a0ba02cbf4005ec35c7b921adf0c4 in / 
 # Tue, 23 Aug 2022 00:21:10 GMT
 CMD ["bash"]
-# Wed, 24 Aug 2022 23:07:02 GMT
-ENV AEROSPIKE_VERSION=6.0.0.5
-# Wed, 24 Aug 2022 23:07:02 GMT
-ENV AEROSPIKE_SHA256=3b40c4aec82a93e1b2d04db47efce7d7a5f7ad29c82f66cf1d0c83775f5f4f9c
-# Wed, 24 Aug 2022 23:07:03 GMT
+# Wed, 31 Aug 2022 17:19:22 GMT
+ENV AEROSPIKE_VERSION=6.1.0.1
+# Wed, 31 Aug 2022 17:19:22 GMT
+ENV AEROSPIKE_SHA256=fc699a0d6458efdc61d7cb1db7ee14f882dd9356bc6d07d5387ce4cdf0f453e9
+# Wed, 31 Aug 2022 17:19:22 GMT
 ENV AS_TINI_SHA256=d1f6826dd70cdd88dde3d5a20d8ed248883a3bc2caba3071c8a3a9b0e0de5940
-# Mon, 29 Aug 2022 18:19:45 GMT
+# Wed, 31 Aug 2022 17:19:46 GMT
 RUN apt-get update -y   && apt-get install -y iproute2 procps wget python python3 python3-distutils lua5.2 gettext-base libldap-dev libcurl4-openssl-dev   && wget https://github.com/aerospike/tini/releases/download/1.0.1/as-tini-static -O /usr/bin/as-tini-static   && echo "$AS_TINI_SHA256 /usr/bin/as-tini-static" | sha256sum -c -   && chmod +x /usr/bin/as-tini-static   && wget "https://download.aerospike.com/artifacts/aerospike-server-enterprise/${AEROSPIKE_VERSION}/aerospike-server-enterprise-${AEROSPIKE_VERSION}-debian10.tgz" -O aerospike-server.tgz   && echo "$AEROSPIKE_SHA256 *aerospike-server.tgz" | sha256sum -c -   && mkdir aerospike   && tar xzf aerospike-server.tgz --strip-components=1 -C aerospike   && dpkg -i aerospike/aerospike-server-*.deb   && dpkg -i aerospike/aerospike-tools-*.deb   && mkdir -p /var/log/aerospike/   && mkdir -p /var/run/aerospike/   && rm -rf aerospike-server.tgz aerospike /var/lib/apt/lists/*   && rm -rf /opt/aerospike/lib/java   && dpkg -r wget ca-certificates openssl xz-utils  && dpkg --purge wget ca-certificates openssl xz-utils  && apt-get purge -y   && apt autoremove -y   && find /usr/bin/ -lname '/opt/aerospike/bin/*' -delete   && find /opt/aerospike/bin/ -user aerospike -group aerospike -exec chown root:root {} +   && if [ -d '/opt/aerospike/bin/asadm' ];   then   mv /opt/aerospike/bin/asadm /usr/lib/;   ln -s /usr/lib/asadm/asadm /usr/bin/asadm;     if [ -f /usr/lib/asadm/asinfo ];     then     ln -s /usr/lib/asadm/asinfo /usr/bin/asinfo;     fi   fi   && mv /opt/aerospike/bin/* /usr/bin/   && rm -rf /opt/aerospike/bin
-# Mon, 29 Aug 2022 18:19:46 GMT
+# Wed, 31 Aug 2022 17:19:46 GMT
 COPY file:f56e2e33c0b4bb66affff75053eaed44661e723b8b33d3ef3c10e305b506c350 in /etc/aerospike/aerospike.template.conf 
-# Mon, 29 Aug 2022 18:19:46 GMT
+# Wed, 31 Aug 2022 17:19:46 GMT
 COPY file:697e2123680798e87da7a3f98d1d70e76ffec66f0e1aafa90ff25047a11cca52 in /entrypoint.sh 
-# Mon, 29 Aug 2022 18:19:46 GMT
+# Wed, 31 Aug 2022 17:19:47 GMT
 EXPOSE 3000 3001 3002
-# Mon, 29 Aug 2022 18:19:46 GMT
+# Wed, 31 Aug 2022 17:19:47 GMT
 ENTRYPOINT ["/usr/bin/as-tini-static" "-r" "SIGUSR1" "-t" "SIGTERM" "--" "/entrypoint.sh"]
-# Mon, 29 Aug 2022 18:19:46 GMT
+# Wed, 31 Aug 2022 17:19:47 GMT
 CMD ["asd"]
 ```
 
@@ -124,15 +124,15 @@ CMD ["asd"]
 		Last Modified: Tue, 23 Aug 2022 00:25:43 GMT  
 		Size: 27.1 MB (27138330 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6a14d0f61e807c640a893d3ebcb1a96659e37792195f57cbaf189ceed714b7fa`  
-		Last Modified: Mon, 29 Aug 2022 18:20:40 GMT  
-		Size: 95.9 MB (95893825 bytes)  
+	-	`sha256:694f19bb1baf11132c77a0b12c356ddc4fc202126a18d50b73e20f2112951a13`  
+		Last Modified: Wed, 31 Aug 2022 17:20:38 GMT  
+		Size: 96.7 MB (96706661 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85cc95b04d74c978af01a003565b9ca5ec4d96d221a016d683b346347e22ad88`  
-		Last Modified: Mon, 29 Aug 2022 18:20:26 GMT  
-		Size: 1.0 KB (1045 bytes)  
+	-	`sha256:d1ceea19f0796292f48720728ffc5086bfee63092591e5d37e649ed0b23e0be5`  
+		Last Modified: Wed, 31 Aug 2022 17:20:23 GMT  
+		Size: 1.0 KB (1043 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ac0dd5931f0f612eb70d0f33a7e3a4622c0a6eaf78c30432a12440cba6385c9a`  
-		Last Modified: Mon, 29 Aug 2022 18:20:26 GMT  
-		Size: 840.0 B  
+	-	`sha256:4a9c6c83d482345728127f99696d06f9e1e9b7369edcc5253924cce6cad119ff`  
+		Last Modified: Wed, 31 Aug 2022 17:20:23 GMT  
+		Size: 839.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
