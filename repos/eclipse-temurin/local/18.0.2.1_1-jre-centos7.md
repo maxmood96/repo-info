@@ -1,10 +1,10 @@
-# `eclipse-temurin:18.0.2_9-jre-centos7`
+# `eclipse-temurin:18.0.2.1_1-jre-centos7`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7964e42f29a9352b91b03ee8017fb679579ac504a3ae0ed34c4386c3f2ac9778`
-- Created: `2022-08-12T17:26:28.382110496Z`
-- Virtual Size: ~ 398.85 Mb  
+- Image ID: `sha256:e845870580f6faf6d8acccf76e485f4c8930c53c5e10d2e5a12e4c5faabbf006`
+- Created: `2022-08-29T18:29:09.624800303Z`
+- Virtual Size: ~ 398.84 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-18.0.2+9`
+  - `JAVA_VERSION=jdk-18.0.2.1+1`
 - Labels:
   - `org.label-schema.build-date=20201113`
   - `org.label-schema.license=GPLv2`
