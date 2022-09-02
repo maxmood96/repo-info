@@ -301,14 +301,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.68.0-1ubuntu2.12
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.12.dsc' curl_7.68.0-1ubuntu2.12.dsc 2737 SHA512:84528e71fc1255976191077cc6aff67116e777688549311f15fbbdf22aea31e1a1f3ac109a3b4ce843102e34ee3d1df529a34584a32f5d6b220b901fbc143734
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0.orig.tar.gz' curl_7.68.0.orig.tar.gz 4096350 SHA512:58b42c08b1cf4cb6e68f8e469d5b5f6298eebe286ba2677ad29e1a7eefd15b8609af54544f4c5a7dadebbd3b23bd77700830f2f60fbea7ae3f2f306e640010b0
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.12.debian.tar.xz' curl_7.68.0-1ubuntu2.12.debian.tar.xz 56832 SHA512:b2e162c390cd6b6384ad8bc2f55352c9bd650644eac607238da17ebb9e691339eb7543f08d800b5c2280f2af87f96ca622e9600b7a3d29564f7ec2e5648ceb53
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-2ubuntu0.1`
 
@@ -1747,9 +1742,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris tzdata=2022a-0ubuntu0.20.04
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022a-0ubuntu0.20.04.dsc' tzdata_2022a-0ubuntu0.20.04.dsc 2109 SHA512:bc96329a1c0d62a8e4060d8bc6add8651db7f34c0aee6788230c2c87a1528287daeee1a8913db8e5623bc67a3a224a864a863e6895037990fbec15ed9fffdd30
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022a.orig.tar.gz' tzdata_2022a.orig.tar.gz 425833 SHA512:542e4559beac8fd8c4af7d08d816fd12cfe7ffcb6f20bba4ff1c20eba717749ef96e5cf599b2fe03b5b8469c0467f8cb1c893008160da281055a123dd9e810d9
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022a-0ubuntu0.20.04.debian.tar.xz' tzdata_2022a-0ubuntu0.20.04.debian.tar.xz 167756 SHA512:983d605613453304cc7c74162697d7d6064a402beaec08cfde47079d5054c953455c8588294948164e253661015929dc56fe4356db47761222e6601a05844dde
+'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022a-0ubuntu0.20.04.dsc' tzdata_2022a-0ubuntu0.20.04.dsc 2109 SHA512:bc96329a1c0d62a8e4060d8bc6add8651db7f34c0aee6788230c2c87a1528287daeee1a8913db8e5623bc67a3a224a864a863e6895037990fbec15ed9fffdd30
+'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022a.orig.tar.gz' tzdata_2022a.orig.tar.gz 425833 SHA512:542e4559beac8fd8c4af7d08d816fd12cfe7ffcb6f20bba4ff1c20eba717749ef96e5cf599b2fe03b5b8469c0467f8cb1c893008160da281055a123dd9e810d9
+'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022a-0ubuntu0.20.04.debian.tar.xz' tzdata_2022a-0ubuntu0.20.04.debian.tar.xz 167756 SHA512:983d605613453304cc7c74162697d7d6064a402beaec08cfde47079d5054c953455c8588294948164e253661015929dc56fe4356db47761222e6601a05844dde
 ```
 
 ### `dpkg` source package: `ubuntu-keyring=2020.02.11.4`
