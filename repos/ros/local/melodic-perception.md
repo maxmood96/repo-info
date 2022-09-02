@@ -972,14 +972,9 @@ Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.58.0-2ubuntu3.19
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0-2ubuntu3.19.dsc' curl_7.58.0-2ubuntu3.19.dsc 2781 SHA512:f4bec87a79c46eea30aba006402bc867f8b6258ef5c6b68723406e14cc1b087c33feb5b4c376551ce0ed695043c6acfa491ccc97f8b5033e5674c7b11ca74e67
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0.orig.tar.gz' curl_7.58.0.orig.tar.gz 3879728 SHA512:7b12b79107558bb266672d6e128615fe5a8149c37f4ae540197e3298f5d312beb2d78fbb23e3ea84ea7afc41549898a1e5cd38509f0388b11707b48d5efb8ca3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0-2ubuntu3.19.debian.tar.xz' curl_7.58.0-2ubuntu3.19.debian.tar.xz 72556 SHA512:7d868e966977ea224f1f853db2c8941b4723d84a0a88ef0391a3f22ec0518f39b36b2946c033faf63ae8ef964bc0ea9bbbbb627a76265354ac19347bae07d588
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3ubuntu2.4`
 
@@ -10148,9 +10143,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=237-3ubuntu10.53
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.53.dsc' systemd_237-3ubuntu10.53.dsc 5187 SHA512:67bec5ef899046e4dac8d004d456a4320acf2865b66c697040f54f7e04ce1dd31d4abb331b77f5beffdcf4281a4b44eb29746d68b796be4e55c7865afbbf5c9f
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237.orig.tar.gz' systemd_237.orig.tar.gz 6871350 SHA512:15ef4b92815a6dd9a6c51672dbc00fd7cd0f08068ef0cbeaca574f68d330b28bc67ba1946f24f75ef3d9e7b63843a73eea700db54688061dbf5c9f8470394c3b
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.53.debian.tar.xz' systemd_237-3ubuntu10.53.debian.tar.xz 302640 SHA512:5b2fbb5ec3ca3030e64326af2281b42aedad040edc44595d41f7ea2d06c91a1fdee6e2e4c1bc6c513332ddae6d89bbbc2ff4584e6c59c20e43e2ee0ed27d64bd
+```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10ubuntu1`
 
@@ -10412,9 +10412,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris tzdata=2022a-0ubuntu0.18.04
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022a-0ubuntu0.18.04.dsc' tzdata_2022a-0ubuntu0.18.04.dsc 2090 SHA512:cba2e9d26b96d99d0262d0de0c5bb0f9792fd47359e9a4883fd0658a4a91be10b54ed5bfbc7c7f31e11a461f93fad3860cece030b056f7be53f8ee0aa9245a5d
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022a.orig.tar.gz' tzdata_2022a.orig.tar.gz 425833 SHA512:542e4559beac8fd8c4af7d08d816fd12cfe7ffcb6f20bba4ff1c20eba717749ef96e5cf599b2fe03b5b8469c0467f8cb1c893008160da281055a123dd9e810d9
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022a-0ubuntu0.18.04.debian.tar.xz' tzdata_2022a-0ubuntu0.18.04.debian.tar.xz 106700 SHA512:e619e8bd7435f5f2eb8272d797936d49625b88b33024ed78b087f51df6c805e69561438327cf29b078a2a38d3e9df9ccbd48ed66463dfd8367dbcf6df4baa475
+'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022a-0ubuntu0.18.04.dsc' tzdata_2022a-0ubuntu0.18.04.dsc 2090 SHA512:cba2e9d26b96d99d0262d0de0c5bb0f9792fd47359e9a4883fd0658a4a91be10b54ed5bfbc7c7f31e11a461f93fad3860cece030b056f7be53f8ee0aa9245a5d
+'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022a.orig.tar.gz' tzdata_2022a.orig.tar.gz 425833 SHA512:542e4559beac8fd8c4af7d08d816fd12cfe7ffcb6f20bba4ff1c20eba717749ef96e5cf599b2fe03b5b8469c0467f8cb1c893008160da281055a123dd9e810d9
+'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022a-0ubuntu0.18.04.debian.tar.xz' tzdata_2022a-0ubuntu0.18.04.debian.tar.xz 106700 SHA512:e619e8bd7435f5f2eb8272d797936d49625b88b33024ed78b087f51df6c805e69561438327cf29b078a2a38d3e9df9ccbd48ed66463dfd8367dbcf6df4baa475
 ```
 
 ### `dpkg` source package: `u-msgpack-python=2.1-1`
