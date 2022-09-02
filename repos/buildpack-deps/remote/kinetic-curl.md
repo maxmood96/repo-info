@@ -1,7 +1,7 @@
 ## `buildpack-deps:kinetic-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:d61388490d8be9cf6be4acc81c77e1145a25c6b4dd40256752b0c8b6bfbe5dec
+$ docker pull buildpack-deps@sha256:fbadf017868b978bb0f183a345be3b63fb1fe70738386dfc8bb9e93d1effd5f8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -54,39 +54,39 @@ RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get 
 ### `buildpack-deps:kinetic-curl` - linux; arm variant v7
 
 ```console
-$ docker pull buildpack-deps@sha256:9b85bb80fdffb064474fb1505988584cc2962e0070e5f35f08fe58ab5f498f17
+$ docker pull buildpack-deps@sha256:fc9add13cbee66aac1a50ef350bb1f7a61fbff4028de3ec5aa3853f52186f69f
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **34.5 MB (34512271 bytes)**  
+-	Total Size: **35.6 MB (35595513 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0fea3f676032be24f5daaf4e9824da2d7e0aa8a0907d7fda8e82b01cd4860b3b`
+-	Image ID: `sha256:19e80e45169f55fa54c17989c92f2067a23b1748bc1d414f7ad0adcc3be10c10`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 02 Aug 2022 01:41:08 GMT
-ADD file:66e6471f52fc58fc2800d34f1d39716910c1cda3611b70b14120742c855b63ad in / 
-# Tue, 02 Aug 2022 01:41:09 GMT
+# Fri, 02 Sep 2022 06:08:44 GMT
+ADD file:6fea481ddc80754c10680e7c291055af82ef815eb0fdaf745c49c4f4cdf2afa1 in / 
+# Fri, 02 Sep 2022 06:08:44 GMT
 CMD ["bash"]
-# Tue, 02 Aug 2022 02:01:20 GMT
+# Fri, 02 Sep 2022 09:35:32 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 02 Aug 2022 02:01:31 GMT
+# Fri, 02 Sep 2022 09:35:42 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 ```
 
 -	Layers:
-	-	`sha256:4f8bc5dc03fab2ee54b70f6218aaaa0c6cd0f00b7df0e688df71d48899d1633c`  
-		Last Modified: Tue, 02 Aug 2022 01:43:57 GMT  
-		Size: 24.8 MB (24813035 bytes)  
+	-	`sha256:1f63be4c3b8fca43746377bd8a99dd9b04acdd942d8464feaae1671e6363d920`  
+		Last Modified: Fri, 02 Sep 2022 06:10:58 GMT  
+		Size: 25.8 MB (25845683 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0730d1b5a4dded6f7fae7ef8804e621785ca732706a3a9cfcd18833cf802fad`  
-		Last Modified: Tue, 02 Aug 2022 02:17:55 GMT  
-		Size: 6.0 MB (5975718 bytes)  
+	-	`sha256:09c94aedbe9250aab4e90e8e88c1f2af520548789812f567b90a81f67dc9145e`  
+		Last Modified: Fri, 02 Sep 2022 09:43:15 GMT  
+		Size: 5.9 MB (5948408 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:783bb70087bc78639e7d81451739990ad377e2a52f9f4dbd7ff7beca3a622906`  
-		Last Modified: Tue, 02 Aug 2022 02:17:54 GMT  
-		Size: 3.7 MB (3723518 bytes)  
+	-	`sha256:f78166495a53038ebe64fd164f5d7e26607173735e8a0e096424b99f947d93cb`  
+		Last Modified: Fri, 02 Sep 2022 09:43:14 GMT  
+		Size: 3.8 MB (3801422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:kinetic-curl` - linux; arm64 variant v8
