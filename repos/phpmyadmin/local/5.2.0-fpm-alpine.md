@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:73448235c9d6d364cfb2f31d4534d34b79cfc939a60deb64b801653519018a75`
-- Created: `2022-08-10T05:10:59.083601013Z`
-- Virtual Size: ~ 127.94 Mb  
+- Image ID: `sha256:2ac5e0dc8f9015ff30470c7eb6857f31ac36046371fdf03c0b16d4d053252779`
+- Created: `2022-09-02T00:48:52.309616372Z`
+- Virtual Size: ~ 128.48 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F`
-  - `PHP_VERSION=8.0.22`
-  - `PHP_URL=https://www.php.net/distributions/php-8.0.22.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.0.22.tar.xz.asc`
-  - `PHP_SHA256=130937c0fa3050cd33d6c415402f6ccbf0682ae83eb8d39c91164224ddfe57f1`
+  - `PHP_VERSION=8.0.23`
+  - `PHP_URL=https://www.php.net/distributions/php-8.0.23.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.0.23.tar.xz.asc`
+  - `PHP_SHA256=65e474b6bd8cfc9d4a8a56268a755e2f9d3e7499e1687e6401a9f2b047600f87`
   - `MAX_EXECUTION_TIME=600`
   - `MEMORY_LIMIT=512M`
   - `UPLOAD_LIMIT=2048K`
@@ -332,16 +332,16 @@ OpenSSL
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.83.1-r2 description:
+libcurl-7.83.1-r3 description:
 The multiprotocol file transfer library
 
-libcurl-7.83.1-r2 webpage:
+libcurl-7.83.1-r3 webpage:
 https://curl.se/
 
-libcurl-7.83.1-r2 installed size:
-512 KiB
+libcurl-7.83.1-r3 installed size:
+516 KiB
 
-libcurl-7.83.1-r2 license:
+libcurl-7.83.1-r3 license:
 curl
 
 ```
@@ -570,16 +570,16 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.9.14-r0 description:
+libxml2-2.9.14-r1 description:
 XML parsing library, version 2
 
-libxml2-2.9.14-r0 webpage:
+libxml2-2.9.14-r1 webpage:
 http://www.xmlsoft.org/
 
-libxml2-2.9.14-r0 installed size:
+libxml2-2.9.14-r1 installed size:
 1200 KiB
 
-libxml2-2.9.14-r0 license:
+libxml2-2.9.14-r1 license:
 MIT
 
 ```
@@ -842,16 +842,16 @@ GPL-3.0-or-later
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2022a-r0 description:
+tzdata-2022c-r0 description:
 Timezone data
 
-tzdata-2022a-r0 webpage:
+tzdata-2022c-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2022a-r0 installed size:
-3376 KiB
+tzdata-2022c-r0 installed size:
+3208 KiB
 
-tzdata-2022a-r0 license:
+tzdata-2022c-r0 license:
 Public-Domain
 
 ```
