@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:39281028ab3e90cd389cb850f227d5502948f90932e66c33d52ece116bbe460f`
-- Created: `2022-08-23T21:12:16.513675109Z`
-- Virtual Size: ~ 132.01 Mb  
+- Image ID: `sha256:4ce4329b669bf8fc896ec7907addeca2719637988f9e3590674a5f41c7aca765`
+- Created: `2022-09-08T01:29:46.510687751Z`
+- Virtual Size: ~ 132.14 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D`
-  - `PYTHON_VERSION=3.7.13`
+  - `PYTHON_VERSION=3.7.14`
   - `PYTHON_PIP_VERSION=22.0.4`
   - `PYTHON_SETUPTOOLS_VERSION=57.5.0`
   - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/5eaac1050023df1f5c98b173b248c260023f2278/public/get-pip.py`
@@ -2106,11 +2106,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/xz-utils/5.2.5-2.1~deb11u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/xz-utils/5.2.5-2.1~deb11u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `zlib=1:1.2.11.dfsg-2+deb11u1`
+### `dpkg` source package: `zlib=1:1.2.11.dfsg-2+deb11u2`
 
 Binary Packages:
 
-- `zlib1g:amd64=1:1.2.11.dfsg-2+deb11u1`
+- `zlib1g:amd64=1:1.2.11.dfsg-2+deb11u2`
 
 Licenses: (parsed from: `/usr/share/doc/zlib1g/copyright`)
 
@@ -2119,14 +2119,14 @@ Licenses: (parsed from: `/usr/share/doc/zlib1g/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris zlib=1:1.2.11.dfsg-2+deb11u1
-'http://deb.debian.org/debian/pool/main/z/zlib/zlib_1.2.11.dfsg-2%2bdeb11u1.dsc' zlib_1.2.11.dfsg-2+deb11u1.dsc 2905 SHA256:4be50e6655d32da16f6fa663946838a7c60d68e3421510e64ab77067d1eb6e54
-'http://deb.debian.org/debian/pool/main/z/zlib/zlib_1.2.11.dfsg.orig.tar.gz' zlib_1.2.11.dfsg.orig.tar.gz 370248 SHA256:80c481411a4fe8463aeb8270149a0e80bb9eaf7da44132b6e16f2b5af01bc899
-'http://deb.debian.org/debian/pool/main/z/zlib/zlib_1.2.11.dfsg-2%2bdeb11u1.debian.tar.xz' zlib_1.2.11.dfsg-2+deb11u1.debian.tar.xz 23356 SHA256:7380daff57172ae036210c74dabef77dbab7489ff24eb68eb1b770445eb28dc6
+$ apt-get source -qq --print-uris zlib=1:1.2.11.dfsg-2+deb11u2
+'http://deb.debian.org/debian-security/pool/updates/main/z/zlib/zlib_1.2.11.dfsg-2%2bdeb11u2.dsc' zlib_1.2.11.dfsg-2+deb11u2.dsc 2905 SHA256:ec2ee2fc4dfd1f799dfa6a95133ebccbd7531886de38b0a8e3e58b66706a6dc7
+'http://deb.debian.org/debian-security/pool/updates/main/z/zlib/zlib_1.2.11.dfsg.orig.tar.gz' zlib_1.2.11.dfsg.orig.tar.gz 370248 SHA256:80c481411a4fe8463aeb8270149a0e80bb9eaf7da44132b6e16f2b5af01bc899
+'http://deb.debian.org/debian-security/pool/updates/main/z/zlib/zlib_1.2.11.dfsg-2%2bdeb11u2.debian.tar.xz' zlib_1.2.11.dfsg-2+deb11u2.debian.tar.xz 23984 SHA256:c19794df214f0c2571b19f7dea853c066410232abe9f0ddad77231fabccde0da
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/zlib/1:1.2.11.dfsg-2+deb11u1/ (for browsing the source)
-- https://sources.debian.net/src/zlib/1:1.2.11.dfsg-2+deb11u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/zlib/1:1.2.11.dfsg-2+deb11u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/zlib/1:1.2.11.dfsg-2+deb11u2/ (for browsing the source)
+- https://sources.debian.net/src/zlib/1:1.2.11.dfsg-2+deb11u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/zlib/1:1.2.11.dfsg-2+deb11u2/ (for access to the source package after it no longer exists in the archive)
