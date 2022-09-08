@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e603935aca8bb3dd545803c0ff6ff53e5059d4f251d5c5c47e59358465b39db9`
-- Created: `2022-09-02T03:03:30.678327265Z`
+- Image ID: `sha256:d421756f4abc6a04744d9a4781e193351641f3ac0d3499f566a567bdf81836f8`
+- Created: `2022-09-06T20:15:52.514884148Z`
 - Virtual Size: ~ 1.56 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -7079,12 +7079,12 @@ $ apt-get source -qq --print-uris superlu=5.2.1+dfsg1-3
 'http://archive.ubuntu.com/ubuntu/pool/universe/s/superlu/superlu_5.2.1%2bdfsg1-3.debian.tar.xz' superlu_5.2.1+dfsg1-3.debian.tar.xz 6100 SHA256:143d97303271ad64e69a3166452bc3a79bf76a2bff19a8f91df44579b8ead65c
 ```
 
-### `dpkg` source package: `systemd=237-3ubuntu10.54`
+### `dpkg` source package: `systemd=237-3ubuntu10.53`
 
 Binary Packages:
 
-- `libsystemd0:amd64=237-3ubuntu10.54`
-- `libudev1:amd64=237-3ubuntu10.54`
+- `libsystemd0:amd64=237-3ubuntu10.53`
+- `libudev1:amd64=237-3ubuntu10.53`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -7096,9 +7096,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=237-3ubuntu10.53
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.53.dsc' systemd_237-3ubuntu10.53.dsc 5187 SHA512:67bec5ef899046e4dac8d004d456a4320acf2865b66c697040f54f7e04ce1dd31d4abb331b77f5beffdcf4281a4b44eb29746d68b796be4e55c7865afbbf5c9f
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237.orig.tar.gz' systemd_237.orig.tar.gz 6871350 SHA512:15ef4b92815a6dd9a6c51672dbc00fd7cd0f08068ef0cbeaca574f68d330b28bc67ba1946f24f75ef3d9e7b63843a73eea700db54688061dbf5c9f8470394c3b
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.53.debian.tar.xz' systemd_237-3ubuntu10.53.debian.tar.xz 302640 SHA512:5b2fbb5ec3ca3030e64326af2281b42aedad040edc44595d41f7ea2d06c91a1fdee6e2e4c1bc6c513332ddae6d89bbbc2ff4584e6c59c20e43e2ee0ed27d64bd
+```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10ubuntu1`
 
