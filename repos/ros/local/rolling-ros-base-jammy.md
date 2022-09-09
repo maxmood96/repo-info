@@ -4149,14 +4149,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-colcon-cmake=0.2.26-2
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-cmake/python3-colcon-cmake_0.2.26-2.debian.tar.xz' python3-colcon-cmake_0.2.26-2.debian.tar.xz 1120 SHA512:08d27f880ffcfe001f02dd3489fa25aa5483db1e4b2686bc91a3b6eec67862e4e0b2ce0a1994f327d956cd0a21fbee749185caefdcff3f022dfeaa1cdaa52b5f
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-cmake/python3-colcon-cmake_0.2.26-2.dsc' python3-colcon-cmake_0.2.26-2.dsc 965 SHA512:ac8b8231287b57ca2c88ddf2ab964a5e0c97802619d2b15b1ee3ecbfbe336f1f1c2def00127dcd8dce6fd59b10118bae9ec8d7f278f6f92a187c72bd18cecbd0
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-cmake/python3-colcon-cmake_0.2.26.orig.tar.gz' python3-colcon-cmake_0.2.26.orig.tar.gz 16858 SHA512:71334a2c2dac64b82f48a78a853f7030a4a027161e9a4c2cc3eead4037fb50b2120efe4f4c66226f665157cbc45d979826b63319826d8de285b9d37f0a7d511f
-```
 
 ### `dpkg` source package: `python3-colcon-common-extensions=0.3.0-1`
 
@@ -4301,14 +4296,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-colcon-notification=0.2.13-1
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-notification/python3-colcon-notification_0.2.13-1.debian.tar.xz' python3-colcon-notification_0.2.13-1.debian.tar.xz 1596 SHA512:c2357d364eb5c8481d795e503005160f789a41556c34ad1046d5d7205cb7e6c2faaf09c71f4955a8c299017f73dfeb124eacdba95da72ea4ff62115be10108f6
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-notification/python3-colcon-notification_0.2.13-1.dsc' python3-colcon-notification_0.2.13-1.dsc 988 SHA512:22f3506620a501e67c9131bca8565c3137fe50a4ac0039adbec937ff1f0d9d0e2bca75e03e83e8e32cfa6f491ea62bfbcd66d3b277bfef20a5f4cb3d415f56c5
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-notification/python3-colcon-notification_0.2.13.orig.tar.gz' python3-colcon-notification_0.2.13.orig.tar.gz 54427 SHA512:b406b72b53085888c4a3393e4a3d01245828dca7bbf58679004a0fa0c14cad7cfd661b06360b66ade77dc11bd19c9d0108fc34a27cf03d7884bcbd9479a981fd
-```
 
 ### `dpkg` source package: `python3-colcon-output=0.2.12-2`
 

@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a8721d889104c51a26ed1d5208079740f172ba6c73512808b54b32fa72fc2397`
-- Created: `2022-09-02T04:25:07.032998111Z`
+- Image ID: `sha256:9451de89a9d5383a73849bcfa7a7f2b0c416563112e5da5a606180788d2dfa18`
+- Created: `2022-09-06T20:47:43.799145283Z`
 - Virtual Size: ~ 1.31 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2782,11 +2782,11 @@ $ apt-get source -qq --print-uris libnl3=3.2.29-0ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/libn/libnl3/libnl3_3.2.29-0ubuntu3.debian.tar.xz' libnl3_3.2.29-0ubuntu3.debian.tar.xz 20156 SHA256:77b157013f0274525580b17d97b057c1600eda8a256eec07cbd0d2e9cc442d6b
 ```
 
-### `dpkg` source package: `libnotify=0.7.7-3`
+### `dpkg` source package: `libnotify=0.7.7-3ubuntu0.18.04.1`
 
 Binary Packages:
 
-- `libnotify4:amd64=0.7.7-3`
+- `libnotify4:amd64=0.7.7-3ubuntu0.18.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libnotify4/copyright`)
 
@@ -2795,10 +2795,10 @@ Licenses: (parsed from: `/usr/share/doc/libnotify4/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libnotify=0.7.7-3
-'http://archive.ubuntu.com/ubuntu/pool/main/libn/libnotify/libnotify_0.7.7-3.dsc' libnotify_0.7.7-3.dsc 2579 SHA256:7265c5c911ad5380c5135e55aaacd2d770d2ffa2fb413429999b3afb44672bfb
-'http://archive.ubuntu.com/ubuntu/pool/main/libn/libnotify/libnotify_0.7.7.orig.tar.xz' libnotify_0.7.7.orig.tar.xz 285356 SHA256:9cb4ce315b2655860c524d46b56010874214ec27e854086c1a1d0260137efc04
-'http://archive.ubuntu.com/ubuntu/pool/main/libn/libnotify/libnotify_0.7.7-3.debian.tar.xz' libnotify_0.7.7-3.debian.tar.xz 8340 SHA256:6cd1fbf01cb48d491e03e7699ccee6ba85df794e6125092887f8b2e402ff1e2a
+$ apt-get source -qq --print-uris libnotify=0.7.7-3ubuntu0.18.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/libn/libnotify/libnotify_0.7.7-3ubuntu0.18.04.1.dsc' libnotify_0.7.7-3ubuntu0.18.04.1.dsc 2893 SHA512:2a90f3016f773dae46dde5973e9d36b8e9b41103460d09165ea357f3500410d82ce304cf32ac9688f934be4d3c3ed663098d30bc1cad2951323c836657bd779b
+'http://archive.ubuntu.com/ubuntu/pool/main/libn/libnotify/libnotify_0.7.7.orig.tar.xz' libnotify_0.7.7.orig.tar.xz 285356 SHA512:133874114407bf12267ef609f5941657181760bc7cf115c5973b1810cb72bf55072b621c143e32be1e7e8b49f244851925d14bc3f9f26457747b8a8695ee9954
+'http://archive.ubuntu.com/ubuntu/pool/main/libn/libnotify/libnotify_0.7.7-3ubuntu0.18.04.1.debian.tar.xz' libnotify_0.7.7-3ubuntu0.18.04.1.debian.tar.xz 12696 SHA512:e5d85f024c5aae60f8227dbe6e69fc115fa18407279285d664e296f5d873e96c4ca706088a30c7d0bdd5883bbfd08856f64555f4fc2d93f7af8d2381ea6355ca
 ```
 
 ### `dpkg` source package: `libpciaccess=0.14-1`
@@ -7187,12 +7187,12 @@ $ apt-get source -qq --print-uris sudo=1.8.21p2-3ubuntu1.4
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.8.21p2-3ubuntu1.4.debian.tar.xz' sudo_1.8.21p2-3ubuntu1.4.debian.tar.xz 39836 SHA512:aac2fcffff8e448263c9eae2742dfe9dc82fe2a2af1cc17edc82af84b9b1825611091817caa6c60610b766d4d13b0817793544c33d0b647e28efa22c1456433e
 ```
 
-### `dpkg` source package: `systemd=237-3ubuntu10.54`
+### `dpkg` source package: `systemd=237-3ubuntu10.53`
 
 Binary Packages:
 
-- `libsystemd0:amd64=237-3ubuntu10.54`
-- `libudev1:amd64=237-3ubuntu10.54`
+- `libsystemd0:amd64=237-3ubuntu10.53`
+- `libudev1:amd64=237-3ubuntu10.53`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -7204,9 +7204,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=237-3ubuntu10.53
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.53.dsc' systemd_237-3ubuntu10.53.dsc 5187 SHA512:67bec5ef899046e4dac8d004d456a4320acf2865b66c697040f54f7e04ce1dd31d4abb331b77f5beffdcf4281a4b44eb29746d68b796be4e55c7865afbbf5c9f
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237.orig.tar.gz' systemd_237.orig.tar.gz 6871350 SHA512:15ef4b92815a6dd9a6c51672dbc00fd7cd0f08068ef0cbeaca574f68d330b28bc67ba1946f24f75ef3d9e7b63843a73eea700db54688061dbf5c9f8470394c3b
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.53.debian.tar.xz' systemd_237-3ubuntu10.53.debian.tar.xz 302640 SHA512:5b2fbb5ec3ca3030e64326af2281b42aedad040edc44595d41f7ea2d06c91a1fdee6e2e4c1bc6c513332ddae6d89bbbc2ff4584e6c59c20e43e2ee0ed27d64bd
+```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10ubuntu1`
 
