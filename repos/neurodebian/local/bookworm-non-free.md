@@ -310,20 +310,13 @@ Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/l
 - `RSA-MD`
 - `SSLeay`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cyrus-sasl2=2.1.28+dfsg-7
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg-7.dsc' cyrus-sasl2_2.1.28+dfsg-7.dsc 3313 SHA256:72ac6327b01131766434486d5e5608aad20bd2827e812dba38910916615427e9
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg.orig.tar.xz' cyrus-sasl2_2.1.28+dfsg.orig.tar.xz 797472 SHA256:a15886d7da5958bd27f35b7c871dd872f6dc5b9917c9b6b15e3de014c7dab3d9
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg-7.debian.tar.xz' cyrus-sasl2_2.1.28+dfsg-7.debian.tar.xz 94272 SHA256:7156de1bf3a3ed57d991f16ddd5d2786687bec372d68d962e4a9bf4bc070ed7c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cyrus-sasl2/2.1.28+dfsg-7/
 
-- https://sources.debian.net/src/cyrus-sasl2/2.1.28+dfsg-7/ (for browsing the source)
-- https://sources.debian.net/src/cyrus-sasl2/2.1.28+dfsg-7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cyrus-sasl2/2.1.28+dfsg-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dash=0.5.11+git20210903+057cd650a4ed-8`
 
@@ -692,21 +685,13 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnup
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.2.35-3
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.35-3.dsc' gnupg2_2.2.35-3.dsc 3219 SHA256:107fa3b78c2a7a23ffda6f6ef9fa2023f09f9d83ed5ed82f9a92f57114b6b532
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.35.orig.tar.bz2' gnupg2_2.2.35.orig.tar.bz2 7262687 SHA256:340bc255938971e6e729b3d9956fa2ef4db8215d77693bf300df2bb302498690
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.35.orig.tar.bz2.asc' gnupg2_2.2.35.orig.tar.bz2.asc 228 SHA256:433176d7c36c03fcef5888248fed9209ebe87246b996e263c3b0f923ba99e137
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.35-3.debian.tar.xz' gnupg2_2.2.35-3.debian.tar.xz 62416 SHA256:ede72827e0acafafd67f9adef995d2917ee107253729cdfae6b825f4f5302085
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnupg2/2.2.35-3/
 
-- https://sources.debian.net/src/gnupg2/2.2.35-3/ (for browsing the source)
-- https://sources.debian.net/src/gnupg2/2.2.35-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnupg2/2.2.35-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnutls28=3.7.7-2`
 
