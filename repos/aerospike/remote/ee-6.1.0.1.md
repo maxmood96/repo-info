@@ -1,7 +1,7 @@
 ## `aerospike:ee-6.1.0.1`
 
 ```console
-$ docker pull aerospike@sha256:cfe965a8cf8247fe0908c035a629222804c6cc69d23add78117e95befa58bcc4
+$ docker pull aerospike@sha256:292d85df1825c9f12cb924a7e55c3c6a9e36251ae7301c1289414fb2caaf051c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,56 +11,56 @@ $ docker pull aerospike@sha256:cfe965a8cf8247fe0908c035a629222804c6cc69d23add781
 ### `aerospike:ee-6.1.0.1` - linux; amd64
 
 ```console
-$ docker pull aerospike@sha256:e992efed0ad5d6c98d7bdf7d6b56bd1fc1ce28481939cb9b1177dd67d90604fb
+$ docker pull aerospike@sha256:8e65fd9b7433b791dda536b78029a30f2de900962e5ff2153b44f59cbaee858b
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **123.8 MB (123846873 bytes)**  
+-	Total Size: **123.8 MB (123843854 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4d0211ce73876b17d46c2f733de560e5b7bc8ff87e14f8bbc1c4760f3253d28d`
+-	Image ID: `sha256:749170bfa1b7dd551e00d01c8f23f83f1f88cf67381c1e855491d88201264a07`
 -	Entrypoint: `["\/usr\/bin\/as-tini-static","-r","SIGUSR1","-t","SIGTERM","--","\/entrypoint.sh"]`
 -	Default Command: `["asd"]`
 
 ```dockerfile
-# Tue, 23 Aug 2022 00:21:10 GMT
-ADD file:baca493d7744d12304f6d9c7b6ec0800453a0ba02cbf4005ec35c7b921adf0c4 in / 
-# Tue, 23 Aug 2022 00:21:10 GMT
+# Tue, 13 Sep 2022 00:56:48 GMT
+ADD file:782d864aa72c2d5fb599311ebae56db4067d2e91ff532c1aaf1a291c3dbce5bb in / 
+# Tue, 13 Sep 2022 00:56:49 GMT
 CMD ["bash"]
-# Wed, 31 Aug 2022 17:19:22 GMT
+# Tue, 13 Sep 2022 03:39:11 GMT
 ENV AEROSPIKE_VERSION=6.1.0.1
-# Wed, 31 Aug 2022 17:19:22 GMT
+# Tue, 13 Sep 2022 03:39:11 GMT
 ENV AEROSPIKE_SHA256=fc699a0d6458efdc61d7cb1db7ee14f882dd9356bc6d07d5387ce4cdf0f453e9
-# Wed, 31 Aug 2022 17:19:22 GMT
+# Tue, 13 Sep 2022 03:39:11 GMT
 ENV AS_TINI_SHA256=d1f6826dd70cdd88dde3d5a20d8ed248883a3bc2caba3071c8a3a9b0e0de5940
-# Wed, 31 Aug 2022 17:19:46 GMT
+# Tue, 13 Sep 2022 03:39:35 GMT
 RUN apt-get update -y   && apt-get install -y iproute2 procps wget python python3 python3-distutils lua5.2 gettext-base libldap-dev libcurl4-openssl-dev   && wget https://github.com/aerospike/tini/releases/download/1.0.1/as-tini-static -O /usr/bin/as-tini-static   && echo "$AS_TINI_SHA256 /usr/bin/as-tini-static" | sha256sum -c -   && chmod +x /usr/bin/as-tini-static   && wget "https://download.aerospike.com/artifacts/aerospike-server-enterprise/${AEROSPIKE_VERSION}/aerospike-server-enterprise-${AEROSPIKE_VERSION}-debian10.tgz" -O aerospike-server.tgz   && echo "$AEROSPIKE_SHA256 *aerospike-server.tgz" | sha256sum -c -   && mkdir aerospike   && tar xzf aerospike-server.tgz --strip-components=1 -C aerospike   && dpkg -i aerospike/aerospike-server-*.deb   && dpkg -i aerospike/aerospike-tools-*.deb   && mkdir -p /var/log/aerospike/   && mkdir -p /var/run/aerospike/   && rm -rf aerospike-server.tgz aerospike /var/lib/apt/lists/*   && rm -rf /opt/aerospike/lib/java   && dpkg -r wget ca-certificates openssl xz-utils  && dpkg --purge wget ca-certificates openssl xz-utils  && apt-get purge -y   && apt autoremove -y   && find /usr/bin/ -lname '/opt/aerospike/bin/*' -delete   && find /opt/aerospike/bin/ -user aerospike -group aerospike -exec chown root:root {} +   && if [ -d '/opt/aerospike/bin/asadm' ];   then   mv /opt/aerospike/bin/asadm /usr/lib/;   ln -s /usr/lib/asadm/asadm /usr/bin/asadm;     if [ -f /usr/lib/asadm/asinfo ];     then     ln -s /usr/lib/asadm/asinfo /usr/bin/asinfo;     fi   fi   && mv /opt/aerospike/bin/* /usr/bin/   && rm -rf /opt/aerospike/bin
-# Wed, 31 Aug 2022 17:19:46 GMT
+# Tue, 13 Sep 2022 03:39:36 GMT
 COPY file:f56e2e33c0b4bb66affff75053eaed44661e723b8b33d3ef3c10e305b506c350 in /etc/aerospike/aerospike.template.conf 
-# Wed, 31 Aug 2022 17:19:46 GMT
+# Tue, 13 Sep 2022 03:39:36 GMT
 COPY file:697e2123680798e87da7a3f98d1d70e76ffec66f0e1aafa90ff25047a11cca52 in /entrypoint.sh 
-# Wed, 31 Aug 2022 17:19:47 GMT
+# Tue, 13 Sep 2022 03:39:36 GMT
 EXPOSE 3000 3001 3002
-# Wed, 31 Aug 2022 17:19:47 GMT
+# Tue, 13 Sep 2022 03:39:36 GMT
 ENTRYPOINT ["/usr/bin/as-tini-static" "-r" "SIGUSR1" "-t" "SIGTERM" "--" "/entrypoint.sh"]
-# Wed, 31 Aug 2022 17:19:47 GMT
+# Tue, 13 Sep 2022 03:39:37 GMT
 CMD ["asd"]
 ```
 
 -	Layers:
-	-	`sha256:2238450926aa858e592e60bb5d68dd26eeab8a984eee45505ca89d2022e3b450`  
-		Last Modified: Tue, 23 Aug 2022 00:25:43 GMT  
-		Size: 27.1 MB (27138330 bytes)  
+	-	`sha256:4b7b4a8876e2f677668e51b8473f97a237d3d4df201b9df4031bcaa8068370b1`  
+		Last Modified: Tue, 13 Sep 2022 01:01:16 GMT  
+		Size: 27.1 MB (27130552 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:694f19bb1baf11132c77a0b12c356ddc4fc202126a18d50b73e20f2112951a13`  
-		Last Modified: Wed, 31 Aug 2022 17:20:38 GMT  
-		Size: 96.7 MB (96706661 bytes)  
+	-	`sha256:db777cc2d1ca04ecc49518d42bf196fcc34f7b7f3470e4360202acf934281d79`  
+		Last Modified: Tue, 13 Sep 2022 03:40:28 GMT  
+		Size: 96.7 MB (96711416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d1ceea19f0796292f48720728ffc5086bfee63092591e5d37e649ed0b23e0be5`  
-		Last Modified: Wed, 31 Aug 2022 17:20:23 GMT  
-		Size: 1.0 KB (1043 bytes)  
+	-	`sha256:18480ee3dc1a67c96093a5f112c9681b5d5a052d1cc0e99075d435ec0cab40b3`  
+		Last Modified: Tue, 13 Sep 2022 03:40:14 GMT  
+		Size: 1.0 KB (1045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4a9c6c83d482345728127f99696d06f9e1e9b7369edcc5253924cce6cad119ff`  
-		Last Modified: Wed, 31 Aug 2022 17:20:23 GMT  
-		Size: 839.0 B  
+	-	`sha256:06d9a55041555af0a3389cf19ec4ad1bc70c0ca1e604a0691b3a76815aa081cf`  
+		Last Modified: Tue, 13 Sep 2022 03:40:14 GMT  
+		Size: 841.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
