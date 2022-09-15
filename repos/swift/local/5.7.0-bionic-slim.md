@@ -1,10 +1,10 @@
-# `swift:5.6.2-slim`
+# `swift:5.7.0-bionic-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:749e3e291954840ab0689616876ad020295313b100ac51ba25a858775dbc8941`
-- Created: `2022-09-06T20:58:12.877277563Z`
-- Virtual Size: ~ 364.66 Mb  
+- Image ID: `sha256:5493e611392139bf29b993931cfbcc7c4ebb09fc520ebf8d21a097571090638b`
+- Created: `2022-09-14T00:32:55.72578863Z`
+- Virtual Size: ~ 377.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561`
   - `SWIFT_PLATFORM=ubuntu18.04`
-  - `SWIFT_BRANCH=swift-5.6.2-release`
-  - `SWIFT_VERSION=swift-5.6.2-RELEASE`
+  - `SWIFT_BRANCH=swift-5.7-release`
+  - `SWIFT_VERSION=swift-5.7-RELEASE`
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `Description=Docker Container for the Swift programming language`
@@ -1522,14 +1522,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=237-3ubuntu10.53
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.53.dsc' systemd_237-3ubuntu10.53.dsc 5187 SHA512:67bec5ef899046e4dac8d004d456a4320acf2865b66c697040f54f7e04ce1dd31d4abb331b77f5beffdcf4281a4b44eb29746d68b796be4e55c7865afbbf5c9f
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237.orig.tar.gz' systemd_237.orig.tar.gz 6871350 SHA512:15ef4b92815a6dd9a6c51672dbc00fd7cd0f08068ef0cbeaca574f68d330b28bc67ba1946f24f75ef3d9e7b63843a73eea700db54688061dbf5c9f8470394c3b
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.53.debian.tar.xz' systemd_237-3ubuntu10.53.debian.tar.xz 302640 SHA512:5b2fbb5ec3ca3030e64326af2281b42aedad040edc44595d41f7ea2d06c91a1fdee6e2e4c1bc6c513332ddae6d89bbbc2ff4584e6c59c20e43e2ee0ed27d64bd
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10ubuntu1`
 
