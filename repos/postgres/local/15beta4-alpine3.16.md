@@ -1,10 +1,10 @@
-# `postgres:15beta3-alpine`
+# `postgres:15beta4-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:951bea73383bd8ba97f6cd9c314489eca26a196f282b18914502afb8e0134642`
-- Created: `2022-08-12T00:43:40.573771187Z`
-- Virtual Size: ~ 218.37 Mb  
+- Image ID: `sha256:24cad2537b26b6c6ee7cf473be63e58c1f8a6df76d4b1803cc189cfc60512be2`
+- Created: `2022-09-12T22:49:16.945044978Z`
+- Virtual Size: ~ 217.87 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,8 +13,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=en_US.utf8`
   - `PG_MAJOR=15`
-  - `PG_VERSION=15beta3`
-  - `PG_SHA256=1a6e2a454b6bcdf76aa4e50573d2fa1ea8db2cdfaa3282a7538830bd285b27bf`
+  - `PG_VERSION=15beta4`
+  - `PG_SHA256=d84d18ef26a64e76f189b7efb05179920eb0e8ae5d68cdbdbbe966305aee4416`
   - `PGDATA=/var/lib/postgresql/data`
 
 ## `apk` (`.apk`-based packages)
@@ -481,16 +481,16 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.9.14-r0 description:
+libxml2-2.9.14-r1 description:
 XML parsing library, version 2
 
-libxml2-2.9.14-r0 webpage:
+libxml2-2.9.14-r1 webpage:
 http://www.xmlsoft.org/
 
-libxml2-2.9.14-r0 installed size:
+libxml2-2.9.14-r1 installed size:
 1200 KiB
 
-libxml2-2.9.14-r0 license:
+libxml2-2.9.14-r1 license:
 MIT
 
 ```
@@ -685,16 +685,16 @@ MIT
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2022a-r0 description:
+tzdata-2022c-r0 description:
 Timezone data
 
-tzdata-2022a-r0 webpage:
+tzdata-2022c-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2022a-r0 installed size:
-3376 KiB
+tzdata-2022c-r0 installed size:
+3208 KiB
 
-tzdata-2022a-r0 license:
+tzdata-2022c-r0 license:
 Public-Domain
 
 ```
