@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cfae12f0828bacdf2c7a5c6d58e4297c013c2c080bba7f4b6c5cd2bc24e0c049`
-- Created: `2022-09-13T06:07:27.330965138Z`
+- Image ID: `sha256:42336b34c513f995233303991cd2e4d474409dbcd7ef2c7547d571e4de734c73`
+- Created: `2022-09-14T17:21:51.414031171Z`
 - Virtual Size: ~ 85.24 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -816,12 +816,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gzip/1.10-4+deb11u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gzip/1.10-4+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `hitch=1.7.2-1~bullseye`
+### `dpkg` source package: `hitch=1.7.3-1~bullseye`
 
 Binary Packages:
 
-- `hitch=1.7.2-1~bullseye`
-- `hitch-dbgsym=1.7.2-1~bullseye`
+- `hitch=1.7.3-1~bullseye`
+- `hitch-dbgsym=1.7.3-1~bullseye`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
