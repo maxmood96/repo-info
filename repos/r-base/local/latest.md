@@ -3012,20 +3012,13 @@ Licenses: (parsed from: `/usr/share/doc/libopenblas0-pthread/copyright`)
 - `BSD-3-clause`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openblas=0.3.20+ds-2
-'http://deb.debian.org/debian/pool/main/o/openblas/openblas_0.3.20%2bds-2.dsc' openblas_0.3.20+ds-2.dsc 5007 SHA256:93967629e83ff43714a8787d56c5e488a28503278113a628cdf4ab6abbfee99c
-'http://deb.debian.org/debian/pool/main/o/openblas/openblas_0.3.20%2bds.orig.tar.xz' openblas_0.3.20+ds.orig.tar.xz 1816992 SHA256:1011e1f66c183cf483eeae7a65014b7730ad03e6324e0611c38f266fd2d06849
-'http://deb.debian.org/debian/pool/main/o/openblas/openblas_0.3.20%2bds-2.debian.tar.xz' openblas_0.3.20+ds-2.debian.tar.xz 23500 SHA256:985cc117515bc056920f03bb30bf03c998f6b574b8c7c64d1739ba0cbe5633e8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openblas/0.3.20+ds-2/
 
-- https://sources.debian.net/src/openblas/0.3.20+ds-2/ (for browsing the source)
-- https://sources.debian.net/src/openblas/0.3.20+ds-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openblas/0.3.20+ds-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.5.12+dfsg-2`
 
