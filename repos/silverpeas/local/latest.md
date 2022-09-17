@@ -8599,15 +8599,9 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.31.1-4ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1-4ubuntu0.3.dsc' sqlite3_3.31.1-4ubuntu0.3.dsc 2397 SHA512:1455afcf567dac1762dfdbface1dcfd0e6e9cb185700fea66be92a6925173f6a597fac99ac137f9708e789bce783a4b17d35aab8a29a9f777516119c71e2ec0c
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1.orig-www.tar.xz' sqlite3_3.31.1.orig-www.tar.xz 5764424 SHA512:a47adacd46c673cfd674cb64fb54b054e69560aed8c8c429773f0eccdcdbce4be538397506eca8e2d169f4b46d0d47442b273e12d82f8c87e1aadf3ade458db6
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1.orig.tar.xz' sqlite3_3.31.1.orig.tar.xz 7108036 SHA512:67e1050efe2988fa3d0d7e4a87e147a8114c6ff9b6ca5307a068befb38e861930eaee0135048ff1abb1e6323b507cbc68a0aac3a8fe5f095d6fcea1547a7efaf
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1-4ubuntu0.3.debian.tar.xz' sqlite3_3.31.1-4ubuntu0.3.debian.tar.xz 34124 SHA512:7ce6a2158cf794d25c34ffe1134356f1b8ccff2c818218cf2e37c5533455b1732f3e9462d9e0dadc0d9dc5a8e73cadcdeb1b91c813275bba4e4fbd320de494cc
-```
 
 ### `dpkg` source package: `sratom=0.6.4-1`
 
@@ -8983,14 +8977,9 @@ Licenses: (parsed from: `/usr/share/doc/vim/copyright`, `/usr/share/doc/vim-comm
 - `XPM`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris vim=2:8.1.2269-1ubuntu5.7
-'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_8.1.2269-1ubuntu5.7.dsc' vim_8.1.2269-1ubuntu5.7.dsc 2936 SHA512:0e9387096287debf34f56d053956487adf1551cc49615b83d568c30ed0fb87f29c8fed56251a998cb9b352d05ca62da610883ab9319b52fb6f8bacb4efc9d87d
-'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_8.1.2269.orig.tar.gz' vim_8.1.2269.orig.tar.gz 14590233 SHA512:5194817a5665e08816e87e3b10219e19510ca87c5c377ddc0a50aa84ffd4d7391badad3e993f83802d6da5e9da8834635c1acbdd4a909e75b4947f99f13c1746
-'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_8.1.2269-1ubuntu5.7.debian.tar.xz' vim_8.1.2269-1ubuntu5.7.debian.tar.xz 214960 SHA512:4d77e9912878df3f5eaf85d00a6a0a201393530b3681b30d43a15812d5aebc0795ff810863f3955b5a2fac499b40965d531c5cce9567918c5dd4a6cb5836e25a
-```
 
 ### `dpkg` source package: `vulkan-loader=1.2.131.2-1`
 
