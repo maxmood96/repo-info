@@ -1,7 +1,7 @@
 ## `groovy:jdk8-jammy`
 
 ```console
-$ docker pull groovy@sha256:1c350e4d40d9e41738216b23c809f6f3e7efa7ec7ac74fdd353cd11a5a5706d3
+$ docker pull groovy@sha256:186f0098cde4097a55e1ecdeba2b7ecca2de81aca490abae73bd81e2a9e0f549
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -102,14 +102,14 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ### `groovy:jdk8-jammy` - linux; arm variant v7
 
 ```console
-$ docker pull groovy@sha256:08eefa7f88961eed9e148f4ba8d069ff274f250e7ef3c23288eae4b66d4cb24a
+$ docker pull groovy@sha256:9c3830b05c413b86cfee38a496483941b29d2aa1c55fec7790790aa58dca9031
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **186.4 MB (186387114 bytes)**  
+-	Total Size: **186.3 MB (186320072 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9883a1dafebbe197280da57fdcab15e58d6c623049718f408b40a6680a5f5370`
+-	Image ID: `sha256:e90257dccb88c25029d2c534f314ca25ba67c77cd4798dbc49d2b8d88ab3e4c4`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
@@ -143,13 +143,13 @@ VOLUME [/home/groovy/.groovy/grapes]
 WORKDIR /home/groovy
 # Fri, 02 Sep 2022 18:24:30 GMT
 RUN apt-get update     && echo "Installing build dependencies"     && apt-get install --yes --no-install-recommends         dirmngr         gnupg         unzip         wget     && rm --recursive --force /var/lib/apt/lists/*
-# Fri, 02 Sep 2022 18:24:31 GMT
-ENV GROOVY_VERSION=3.0.12
-# Fri, 02 Sep 2022 18:24:42 GMT
+# Mon, 19 Sep 2022 21:00:56 GMT
+ENV GROOVY_VERSION=3.0.13
+# Mon, 19 Sep 2022 21:01:08 GMT
 RUN set -o errexit -o nounset     && echo "Downloading Groovy"     && wget --no-verbose --output-document=groovy.zip "https://archive.apache.org/dist/groovy/${GROOVY_VERSION}/distribution/apache-groovy-binary-${GROOVY_VERSION}.zip"         && echo "Importing keys listed in http://www.apache.org/dist/groovy/KEYS from key server"     && export GNUPGHOME="$(mktemp -d)"     && gpg --batch --no-tty --keyserver keyserver.ubuntu.com --recv-keys         7FAA0F2206DE228F0DB01AD741321490758AAD6F         331224E1D7BE883D16E8A685825C06C827AF6B66         34441E504A937F43EB0DAEF96A65176A0FB1CD0B         9A810E3B766E089FFB27C70F11B595CEDC4AEBB5         81CABC23EECA0790E8989B361FF96E10F0E13706         && echo "Checking download signature"     && wget --no-verbose --output-document=groovy.zip.asc "https://archive.apache.org/dist/groovy/${GROOVY_VERSION}/distribution/apache-groovy-binary-${GROOVY_VERSION}.zip.asc"     && gpg --batch --no-tty --verify groovy.zip.asc groovy.zip     && rm --recursive --force "${GNUPGHOME}"     && rm groovy.zip.asc         && echo "Installing Groovy"     && unzip groovy.zip     && rm groovy.zip     && mv "groovy-${GROOVY_VERSION}" "${GROOVY_HOME}/"     && ln --symbolic "${GROOVY_HOME}/bin/grape" /usr/bin/grape     && ln --symbolic "${GROOVY_HOME}/bin/groovy" /usr/bin/groovy     && ln --symbolic "${GROOVY_HOME}/bin/groovyc" /usr/bin/groovyc     && ln --symbolic "${GROOVY_HOME}/bin/groovyConsole" /usr/bin/groovyConsole     && ln --symbolic "${GROOVY_HOME}/bin/groovydoc" /usr/bin/groovydoc     && ln --symbolic "${GROOVY_HOME}/bin/groovysh" /usr/bin/groovysh     && ln --symbolic "${GROOVY_HOME}/bin/java2groovy" /usr/bin/java2groovy
-# Fri, 02 Sep 2022 18:24:42 GMT
+# Mon, 19 Sep 2022 21:01:08 GMT
 USER groovy
-# Fri, 02 Sep 2022 18:24:44 GMT
+# Mon, 19 Sep 2022 21:01:10 GMT
 RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && groovy --version
 ```
 
@@ -178,26 +178,26 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 		Last Modified: Fri, 02 Sep 2022 18:29:37 GMT  
 		Size: 3.9 MB (3875298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa378c4da5967f9e3ec1eeefcdc3f3467fd9ee211430d757716c4f17d6d2bc46`  
-		Last Modified: Fri, 02 Sep 2022 18:29:39 GMT  
-		Size: 44.3 MB (44297162 bytes)  
+	-	`sha256:b8e7493260fead6d8b0f471fe847e71fe39918be5a47c0f9d3c8355a3c88226e`  
+		Last Modified: Mon, 19 Sep 2022 21:04:42 GMT  
+		Size: 44.2 MB (44230116 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f490e8057275e4a57d653b0f848713a039fb9287808772020fdf67db99b8c9c2`  
-		Last Modified: Fri, 02 Sep 2022 18:29:36 GMT  
-		Size: 169.0 B  
+	-	`sha256:a19c96579d132fcb4da6ec842b9f008272b5cef20bc5c6087d917dd81b384227`  
+		Last Modified: Mon, 19 Sep 2022 21:04:39 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `groovy:jdk8-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull groovy@sha256:ef467e13ddca55ca68bd3fc5732b7490f2472fc13d215ae8379146f6d3450437
+$ docker pull groovy@sha256:fd92d4ac2fb160b3a1a0803036ec326dee48839903d40b53e2000267d174a1df
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **191.2 MB (191161530 bytes)**  
+-	Total Size: **191.1 MB (191094438 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:113ed8d23debba63c414d9e675f8d8af90fe53c3f6ea308d2301046ab0ae2d35`
+-	Image ID: `sha256:d2b4a4cba8dbe85f5d54b4d5ec7863cc06e942843646f4085f9bcddb2e85b5a4`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
@@ -231,13 +231,13 @@ VOLUME [/home/groovy/.groovy/grapes]
 WORKDIR /home/groovy
 # Fri, 02 Sep 2022 08:24:26 GMT
 RUN apt-get update     && echo "Installing build dependencies"     && apt-get install --yes --no-install-recommends         dirmngr         gnupg         unzip         wget     && rm --recursive --force /var/lib/apt/lists/*
-# Fri, 02 Sep 2022 08:24:26 GMT
-ENV GROOVY_VERSION=3.0.12
-# Fri, 02 Sep 2022 08:24:39 GMT
+# Mon, 19 Sep 2022 20:45:57 GMT
+ENV GROOVY_VERSION=3.0.13
+# Mon, 19 Sep 2022 20:46:07 GMT
 RUN set -o errexit -o nounset     && echo "Downloading Groovy"     && wget --no-verbose --output-document=groovy.zip "https://archive.apache.org/dist/groovy/${GROOVY_VERSION}/distribution/apache-groovy-binary-${GROOVY_VERSION}.zip"         && echo "Importing keys listed in http://www.apache.org/dist/groovy/KEYS from key server"     && export GNUPGHOME="$(mktemp -d)"     && gpg --batch --no-tty --keyserver keyserver.ubuntu.com --recv-keys         7FAA0F2206DE228F0DB01AD741321490758AAD6F         331224E1D7BE883D16E8A685825C06C827AF6B66         34441E504A937F43EB0DAEF96A65176A0FB1CD0B         9A810E3B766E089FFB27C70F11B595CEDC4AEBB5         81CABC23EECA0790E8989B361FF96E10F0E13706         && echo "Checking download signature"     && wget --no-verbose --output-document=groovy.zip.asc "https://archive.apache.org/dist/groovy/${GROOVY_VERSION}/distribution/apache-groovy-binary-${GROOVY_VERSION}.zip.asc"     && gpg --batch --no-tty --verify groovy.zip.asc groovy.zip     && rm --recursive --force "${GNUPGHOME}"     && rm groovy.zip.asc         && echo "Installing Groovy"     && unzip groovy.zip     && rm groovy.zip     && mv "groovy-${GROOVY_VERSION}" "${GROOVY_HOME}/"     && ln --symbolic "${GROOVY_HOME}/bin/grape" /usr/bin/grape     && ln --symbolic "${GROOVY_HOME}/bin/groovy" /usr/bin/groovy     && ln --symbolic "${GROOVY_HOME}/bin/groovyc" /usr/bin/groovyc     && ln --symbolic "${GROOVY_HOME}/bin/groovyConsole" /usr/bin/groovyConsole     && ln --symbolic "${GROOVY_HOME}/bin/groovydoc" /usr/bin/groovydoc     && ln --symbolic "${GROOVY_HOME}/bin/groovysh" /usr/bin/groovysh     && ln --symbolic "${GROOVY_HOME}/bin/java2groovy" /usr/bin/java2groovy
-# Fri, 02 Sep 2022 08:24:40 GMT
+# Mon, 19 Sep 2022 20:46:07 GMT
 USER groovy
-# Fri, 02 Sep 2022 08:24:42 GMT
+# Mon, 19 Sep 2022 20:46:09 GMT
 RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && groovy --version
 ```
 
@@ -266,26 +266,26 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 		Last Modified: Fri, 02 Sep 2022 08:29:55 GMT  
 		Size: 3.5 MB (3465742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:091de853d2d9732d5fb235f68a362574bb7d73e423b2b7aba58a78e2406c53fb`  
-		Last Modified: Fri, 02 Sep 2022 08:29:58 GMT  
-		Size: 44.3 MB (44297056 bytes)  
+	-	`sha256:1fc5b428bf20da85cdbed01a3e8b9081ab5404fec88221f7008d5c346d040c24`  
+		Last Modified: Mon, 19 Sep 2022 20:49:08 GMT  
+		Size: 44.2 MB (44229964 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74b5f57f77f7ff98dacf05c750bad87e3fa76af7b9de33d96f1028f4ab8c86b9`  
-		Last Modified: Fri, 02 Sep 2022 08:29:55 GMT  
+	-	`sha256:a327e50db7861d2f644d4a58d1e6037e99e29c03ea52fb7dff8c927836188be4`  
+		Last Modified: Mon, 19 Sep 2022 20:49:05 GMT  
 		Size: 140.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `groovy:jdk8-jammy` - linux; ppc64le
 
 ```console
-$ docker pull groovy@sha256:4963f1e3153e665002affcd666c21f3c2466b1cf2d27681057313db540c75e37
+$ docker pull groovy@sha256:4b94624c24fb21e206a1dd55864030145e2c49d7d1e9e37b96ddcc3d9157554b
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **198.7 MB (198744025 bytes)**  
+-	Total Size: **198.7 MB (198677006 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dac00ff4c8499dcecbeb13a44ed8d0dc97c0a3e67a88f3a16bc40e1ef4f3f9b8`
+-	Image ID: `sha256:dd892e0bee99645df1d92d69f26846c4e3016d433b1fce1e4fec96f44a049981`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
@@ -319,13 +319,13 @@ VOLUME [/home/groovy/.groovy/grapes]
 WORKDIR /home/groovy
 # Fri, 02 Sep 2022 06:02:22 GMT
 RUN apt-get update     && echo "Installing build dependencies"     && apt-get install --yes --no-install-recommends         dirmngr         gnupg         unzip         wget     && rm --recursive --force /var/lib/apt/lists/*
-# Fri, 02 Sep 2022 06:02:23 GMT
-ENV GROOVY_VERSION=3.0.12
-# Fri, 02 Sep 2022 06:02:36 GMT
+# Mon, 19 Sep 2022 21:20:40 GMT
+ENV GROOVY_VERSION=3.0.13
+# Mon, 19 Sep 2022 21:20:51 GMT
 RUN set -o errexit -o nounset     && echo "Downloading Groovy"     && wget --no-verbose --output-document=groovy.zip "https://archive.apache.org/dist/groovy/${GROOVY_VERSION}/distribution/apache-groovy-binary-${GROOVY_VERSION}.zip"         && echo "Importing keys listed in http://www.apache.org/dist/groovy/KEYS from key server"     && export GNUPGHOME="$(mktemp -d)"     && gpg --batch --no-tty --keyserver keyserver.ubuntu.com --recv-keys         7FAA0F2206DE228F0DB01AD741321490758AAD6F         331224E1D7BE883D16E8A685825C06C827AF6B66         34441E504A937F43EB0DAEF96A65176A0FB1CD0B         9A810E3B766E089FFB27C70F11B595CEDC4AEBB5         81CABC23EECA0790E8989B361FF96E10F0E13706         && echo "Checking download signature"     && wget --no-verbose --output-document=groovy.zip.asc "https://archive.apache.org/dist/groovy/${GROOVY_VERSION}/distribution/apache-groovy-binary-${GROOVY_VERSION}.zip.asc"     && gpg --batch --no-tty --verify groovy.zip.asc groovy.zip     && rm --recursive --force "${GNUPGHOME}"     && rm groovy.zip.asc         && echo "Installing Groovy"     && unzip groovy.zip     && rm groovy.zip     && mv "groovy-${GROOVY_VERSION}" "${GROOVY_HOME}/"     && ln --symbolic "${GROOVY_HOME}/bin/grape" /usr/bin/grape     && ln --symbolic "${GROOVY_HOME}/bin/groovy" /usr/bin/groovy     && ln --symbolic "${GROOVY_HOME}/bin/groovyc" /usr/bin/groovyc     && ln --symbolic "${GROOVY_HOME}/bin/groovyConsole" /usr/bin/groovyConsole     && ln --symbolic "${GROOVY_HOME}/bin/groovydoc" /usr/bin/groovydoc     && ln --symbolic "${GROOVY_HOME}/bin/groovysh" /usr/bin/groovysh     && ln --symbolic "${GROOVY_HOME}/bin/java2groovy" /usr/bin/java2groovy
-# Fri, 02 Sep 2022 06:02:37 GMT
+# Mon, 19 Sep 2022 21:20:52 GMT
 USER groovy
-# Fri, 02 Sep 2022 06:02:40 GMT
+# Mon, 19 Sep 2022 21:20:56 GMT
 RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && groovy --version
 ```
 
@@ -354,11 +354,11 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 		Last Modified: Fri, 02 Sep 2022 06:07:48 GMT  
 		Size: 4.4 MB (4446164 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0896d74378074db7334d8f4be8fc746248ca945882b77e28cd84300a4fb6ae8f`  
-		Last Modified: Fri, 02 Sep 2022 06:07:51 GMT  
-		Size: 44.3 MB (44297154 bytes)  
+	-	`sha256:53e5590c559eb9a4f9c41795ff414a23ce7b938690fde2cb71b714a6fc654a10`  
+		Last Modified: Mon, 19 Sep 2022 21:24:13 GMT  
+		Size: 44.2 MB (44230135 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c43f9302d4271c0d984c315ed1684b526b44905ad7222f35c30676fce14cfbcf`  
-		Last Modified: Fri, 02 Sep 2022 06:07:47 GMT  
+	-	`sha256:73a071217f7fa5841f4bb53c84872d9a861086a22c7b6832032df85b27e7c611`  
+		Last Modified: Mon, 19 Sep 2022 21:24:09 GMT  
 		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
