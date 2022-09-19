@@ -1,7 +1,7 @@
 ## `geonetwork:latest`
 
 ```console
-$ docker pull geonetwork@sha256:1e5a666b6b892994a0c089ddf32eaaf6fbfdb962960cd045f2c78bdd07c3dd0d
+$ docker pull geonetwork@sha256:be6c94a25459a837b23920b3f10ad492b28b7bbf3774e40c8b28672670b69458
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -139,14 +139,14 @@ VOLUME [/catalogue-data]
 ### `geonetwork:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull geonetwork@sha256:571ea7d0fa6180f4c5a773db6f5bb598f4cc08fc9b0452468f0af14ff9832e39
+$ docker pull geonetwork@sha256:b2a25098e83715c46fe39ae4d8e31c05fe8e0fe5a4fc53c36e77e2a02a3d87dc
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **484.7 MB (484666788 bytes)**  
+-	Total Size: **475.6 MB (475554935 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a6523971673683fd64ae5258945ac1622023bbd2d937e08df4453dad0adeeefd`
+-	Image ID: `sha256:6c5e048ae292a42058a057ca7088e588fba7e3006253662e11281a70f7b66e26`
 -	Entrypoint: `["\/geonetwork-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -203,25 +203,25 @@ ENV DATA_DIR=/catalogue-data
 ENV JAVA_OPTS=-Dorg.eclipse.jetty.annotations.AnnotationParser.LEVEL=OFF         -Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true         -Xms512M -Xss512M -Xmx2G -XX:+UseConcMarkSweepGC         -Dgeonetwork.resources.dir=/catalogue-data/resources         -Dgeonetwork.data.dir=/catalogue-data         -Dgeonetwork.codeList.dir=/var/lib/jetty/webapps/geonetwork/WEB-INF/data/config/codelist         -Dgeonetwork.schema.dir=/var/lib/jetty/webapps/geonetwork/WEB-INF/data/config/schema_plugins
 # Mon, 19 Sep 2022 18:01:13 GMT
 USER root
-# Mon, 19 Sep 2022 18:02:45 GMT
-RUN apt-get -y update &&     apt-get -y install       curl       unzip &&     rm -rf /var/lib/apt/lists/* &&     mkdir -p /${DATA_DIR} &&     chown -R jetty:jetty ${DATA_DIR} &&     mkdir -p /var/lib/jetty/webapps/geonetwork &&     chown -R jetty:jetty /var/lib/jetty/webapps/geonetwork
-# Mon, 19 Sep 2022 18:02:46 GMT
+# Mon, 19 Sep 2022 20:42:04 GMT
+RUN apt-get -y update &&     apt-get -y install --no-install-recommends         curl         unzip &&     rm -rf /var/lib/apt/lists/* &&     mkdir -p /${DATA_DIR} &&     chown -R jetty:jetty ${DATA_DIR} &&     mkdir -p /var/lib/jetty/webapps/geonetwork &&     chown -R jetty:jetty /var/lib/jetty/webapps/geonetwork
+# Mon, 19 Sep 2022 20:42:05 GMT
 USER jetty
-# Mon, 19 Sep 2022 18:02:47 GMT
+# Mon, 19 Sep 2022 20:42:06 GMT
 ENV GN_FILE=geonetwork.war
-# Mon, 19 Sep 2022 18:02:48 GMT
-ENV GN_VERSION=4.2.0
-# Mon, 19 Sep 2022 18:02:49 GMT
-ENV GN_DOWNLOAD_MD5=5300f81f24f1585d969e667d922e8e8e
-# Mon, 19 Sep 2022 18:04:33 GMT
+# Mon, 19 Sep 2022 20:42:07 GMT
+ENV GN_VERSION=4.2.1
+# Mon, 19 Sep 2022 20:42:08 GMT
+ENV GN_DOWNLOAD_MD5=152b8cfb7806a74dc4e186e0426072e1
+# Mon, 19 Sep 2022 20:43:22 GMT
 RUN cd /var/lib/jetty/webapps/geonetwork/ &&      curl -fSL -o geonetwork.war      https://sourceforge.net/projects/geonetwork/files/GeoNetwork_opensource/v${GN_VERSION}/${GN_FILE}/download &&      echo "${GN_DOWNLOAD_MD5} *geonetwork.war" | md5sum -c &&      unzip -q geonetwork.war &&      rm geonetwork.war
-# Mon, 19 Sep 2022 18:04:35 GMT
+# Mon, 19 Sep 2022 20:43:23 GMT
 COPY file:ca46ab251df3dfc253cb04cf962e7266e42428fab31ad2f583a7c86b06d5f778 in /geonetwork-entrypoint.sh 
-# Mon, 19 Sep 2022 18:04:35 GMT
+# Mon, 19 Sep 2022 20:43:23 GMT
 ENTRYPOINT ["/geonetwork-entrypoint.sh"]
-# Mon, 19 Sep 2022 18:04:36 GMT
+# Mon, 19 Sep 2022 20:43:24 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
-# Mon, 19 Sep 2022 18:04:37 GMT
+# Mon, 19 Sep 2022 20:43:25 GMT
 VOLUME [/catalogue-data]
 ```
 
@@ -250,15 +250,15 @@ VOLUME [/catalogue-data]
 		Last Modified: Mon, 19 Sep 2022 17:29:58 GMT  
 		Size: 1.4 KB (1442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:486646b315a467c2b29c0a21af8c9065184f346dcc70d7cf5a870fdbe7147198`  
-		Last Modified: Mon, 19 Sep 2022 18:05:56 GMT  
-		Size: 244.8 KB (244782 bytes)  
+	-	`sha256:d4e3aed7dfb73197bf1c437fdfed2615c50188f1c5fc58a358a67ca67656eca5`  
+		Last Modified: Mon, 19 Sep 2022 20:45:01 GMT  
+		Size: 244.8 KB (244769 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e70fa6bf38e2e3db7eab6c63cd36dd4c300811f4a1303feae1564f6e605702a4`  
-		Last Modified: Mon, 19 Sep 2022 18:06:19 GMT  
-		Size: 328.4 MB (328398862 bytes)  
+	-	`sha256:4d5b9dae6018f8d811e221ae0427dd5379426aa4a68a5badd6dcf6abe73ed5ab`  
+		Last Modified: Mon, 19 Sep 2022 20:45:23 GMT  
+		Size: 319.3 MB (319287023 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f925d3873d1b9e00ff43bdae690584c9835f4427c4ffea77ad6286a84834aa88`  
-		Last Modified: Mon, 19 Sep 2022 18:05:57 GMT  
-		Size: 958.0 B  
+	-	`sha256:748cb885b17791787f8b084ba6111d4f1169d5f7f43d7ad75d7c3456d735893b`  
+		Last Modified: Mon, 19 Sep 2022 20:45:01 GMT  
+		Size: 957.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
