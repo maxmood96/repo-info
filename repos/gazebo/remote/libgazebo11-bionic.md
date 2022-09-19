@@ -1,7 +1,7 @@
 ## `gazebo:libgazebo11-bionic`
 
 ```console
-$ docker pull gazebo@sha256:da2e88d68f88e95ee520b1e7b9c915d949fb8f827c9e934f9d9397c85e1ebc83
+$ docker pull gazebo@sha256:8e67d90bb2ea34be0acb0dada693513d0f0f5719e275549574922d86fefb0548
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull gazebo@sha256:da2e88d68f88e95ee520b1e7b9c915d949fb8f827c9e934f9d93
 ### `gazebo:libgazebo11-bionic` - linux; amd64
 
 ```console
-$ docker pull gazebo@sha256:376632d09733dcdc466ac31817023ea9385dc82b38d9318fab5d801822d1470b
+$ docker pull gazebo@sha256:a97c94538c113238d0e5d4649a40dd528367fcf820b1d113f3e65a6da10e49df
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **547.2 MB (547198350 bytes)**  
+-	Total Size: **547.8 MB (547814533 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d421756f4abc6a04744d9a4781e193351641f3ac0d3499f566a567bdf81836f8`
+-	Image ID: `sha256:e2d3f1db3ce33002e5f2d9a9930f0c22fefad674a5d8c13f11d15358ccb2cbb1`
 -	Entrypoint: `["\/gzserver_entrypoint.sh"]`
 -	Default Command: `["gzserver"]`
 
@@ -35,18 +35,18 @@ RUN apt-get update && apt-get install -q -y --no-install-recommends     dirmngr 
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D2486D2DD83DB69272AFE98867170598AF249743
 # Tue, 06 Sep 2022 20:08:14 GMT
 RUN . /etc/os-release     && echo "deb http://packages.osrfoundation.org/gazebo/$ID-stable `lsb_release -sc` main" > /etc/apt/sources.list.d/gazebo-latest.list
-# Tue, 06 Sep 2022 20:13:46 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends     gazebo11=11.11.0-1*     && rm -rf /var/lib/apt/lists/*
-# Tue, 06 Sep 2022 20:13:47 GMT
+# Mon, 19 Sep 2022 17:50:24 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends     gazebo11=11.12.0-1*     && rm -rf /var/lib/apt/lists/*
+# Mon, 19 Sep 2022 17:50:25 GMT
 EXPOSE 11345
-# Tue, 06 Sep 2022 20:13:47 GMT
+# Mon, 19 Sep 2022 17:50:26 GMT
 COPY file:b79966dec12c55a0a5c9e673326cc3faf9cbbeee0ea5f172e863df237eb8a601 in / 
-# Tue, 06 Sep 2022 20:13:48 GMT
+# Mon, 19 Sep 2022 17:50:26 GMT
 ENTRYPOINT ["/gzserver_entrypoint.sh"]
-# Tue, 06 Sep 2022 20:13:48 GMT
+# Mon, 19 Sep 2022 17:50:26 GMT
 CMD ["gzserver"]
-# Tue, 06 Sep 2022 20:15:52 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends     libgazebo11-dev=11.11.0-1*     && rm -rf /var/lib/apt/lists/*
+# Mon, 19 Sep 2022 17:54:37 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends     libgazebo11-dev=11.12.0-1*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -70,15 +70,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends     libgazebo11
 		Last Modified: Tue, 06 Sep 2022 20:16:24 GMT  
 		Size: 5.5 KB (5460 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ffbb9399606d3a91bc04f0bc0605e3938ff58ba848caeead21cfe19100cc63e`  
-		Last Modified: Tue, 06 Sep 2022 20:18:10 GMT  
-		Size: 235.5 MB (235544046 bytes)  
+	-	`sha256:1f1c8bc11a68c99a64df89b9f4c0b8193b751768fc8d020c5a3ec49f6ac27750`  
+		Last Modified: Mon, 19 Sep 2022 18:04:07 GMT  
+		Size: 235.6 MB (235557634 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8b81ef8e906dd52baf683359b621caee90d12359b0c6410bdef0de7b04885d62`  
-		Last Modified: Tue, 06 Sep 2022 20:17:41 GMT  
-		Size: 188.0 B  
+	-	`sha256:490e421e2cc97d820799d8191b4c0b1558294fe116e960c737334c56e79b3667`  
+		Last Modified: Mon, 19 Sep 2022 18:03:38 GMT  
+		Size: 189.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5fe746b285d6350c55ea5d5e7630972963971ed7dc1023881cfea7f4d1f0592e`  
-		Last Modified: Tue, 06 Sep 2022 20:18:55 GMT  
-		Size: 269.4 MB (269396222 bytes)  
+	-	`sha256:96a1f2c84f5ed5d2e5d35be54034037b6b6fd522436d467fa0518e132f78a8ad`  
+		Last Modified: Mon, 19 Sep 2022 18:04:53 GMT  
+		Size: 270.0 MB (269998816 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
