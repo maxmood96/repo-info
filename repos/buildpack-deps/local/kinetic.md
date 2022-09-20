@@ -778,14 +778,13 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`, `/usr/share/doc/li
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.4.8-1
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.8-1.dsc' expat_2.4.8-1.dsc 1981 SHA512:78c3bc4c124233d38a690e6dc9e4db0df055fd0e75c75829537b5f62354c08e5a67f14ac6da99d8e070f615f64fa602f3f8062dad14aecc12262ad21d959690a
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.8.orig.tar.gz' expat_2.4.8.orig.tar.gz 8316762 SHA512:452982888e993937dc37968f27eed080d8fb8c8d98935051b195e11051de8fe31217a4d40ae3e7df53fe3265b897823a2a7793af794fd066e0ead4535b5cbc99
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.8-1.debian.tar.xz' expat_2.4.8-1.debian.tar.xz 12556 SHA512:29e304ea46382a34d543a4b079968d493b927ea3272e97e45dffbc5885e39b999bede568628e58e5fc8e973d9c0382d17b114f26d506806577a9497789d850ed
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/expat/2.4.8-1/
+
 
 ### `dpkg` source package: `fftw3=3.3.8-2ubuntu8`
 
@@ -3602,14 +3601,13 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 - `TCL`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pango1.0=1.50.9+ds-1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.50.9%2bds-1.dsc' pango1.0_1.50.9+ds-1.dsc 3857 SHA512:e0be9fb56f74c4b62dcd5dd891d96f52e7222e3b1adc7b2bd3acf2d94efef2ace5cff1e25193cade9774e5b7529f1293867874101e3e8b94a3c73fd9d1945bbd
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.50.9%2bds.orig.tar.xz' pango1.0_1.50.9+ds.orig.tar.xz 2671752 SHA512:50a6e069414cb1ddf54c742001547fcb1589548f71df3ef67f872bc59f66bd71e4f2420857dd1d75a78c7a293731748b1a2e3ad09780bd027c7bbd86e29624e7
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.50.9%2bds-1.debian.tar.xz' pango1.0_1.50.9+ds-1.debian.tar.xz 49320 SHA512:0b0d6d9f4ff8af3b4b6bd4a2388737d466d4ddcbdb7a847a40c3c36dd19f77ac0f8d1938de7b1747e337538037ee6ae65165cd6bcbc49bcb69dbd64259ec613d
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/pango1.0/1.50.9+ds-1/
+
 
 ### `dpkg` source package: `patch=2.7.6-7build2`
 

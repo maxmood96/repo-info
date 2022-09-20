@@ -82,20 +82,13 @@ Licenses: (parsed from: `/usr/share/doc/libaom3/copyright`)
 - `ISC`
 - `public-domain-md5`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris aom=3.4.0-1
-'http://deb.debian.org/debian/pool/main/a/aom/aom_3.4.0-1.dsc' aom_3.4.0-1.dsc 2207 SHA256:dbb01b8c33ba782b6b773687bdc0b239e5886e7adf8639522781dc3a138eced8
-'http://deb.debian.org/debian/pool/main/a/aom/aom_3.4.0.orig.tar.xz' aom_3.4.0.orig.tar.xz 3662848 SHA256:94fcfaca096fc4b0b5a23d64b8bf621ab1b8673449275d132d7d9c93d5f530a0
-'http://deb.debian.org/debian/pool/main/a/aom/aom_3.4.0-1.debian.tar.xz' aom_3.4.0-1.debian.tar.xz 12352 SHA256:f24b7e6ddaff844ab39650c85815d1c3cd4cb1b7286083b7f04528e27fb631d8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/aom/3.4.0-1/
 
-- https://sources.debian.net/src/aom/3.4.0-1/ (for browsing the source)
-- https://sources.debian.net/src/aom/3.4.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/aom/3.4.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apr-util=1.6.1-5`
 
@@ -1277,20 +1270,13 @@ Licenses: (parsed from: `/usr/share/doc/cpp-12/copyright`, `/usr/share/doc/g++-1
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-12=12.2.0-1
-'http://deb.debian.org/debian/pool/main/g/gcc-12/gcc-12_12.2.0-1.dsc' gcc-12_12.2.0-1.dsc 27402 SHA256:d5ffc52331e61b30b66bec7738e4633ee67dc7ea86f52debbff944043bb49693
-'http://deb.debian.org/debian/pool/main/g/gcc-12/gcc-12_12.2.0.orig.tar.gz' gcc-12_12.2.0.orig.tar.gz 87090343 SHA256:b8298be16aeeb96a889c6afed0a8e2241b47452e89cc81fe65ea849d5c740fcb
-'http://deb.debian.org/debian/pool/main/g/gcc-12/gcc-12_12.2.0-1.debian.tar.xz' gcc-12_12.2.0-1.debian.tar.xz 561988 SHA256:8712924fdd34bbb405680e2ab0d4bad70a44501fa9d4bcdbddb217bf39f2833b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-12/12.2.0-1/
 
-- https://sources.debian.net/src/gcc-12/12.2.0-1/ (for browsing the source)
-- https://sources.debian.net/src/gcc-12/12.2.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-12/12.2.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-defaults=1.201`
 
@@ -3239,21 +3225,13 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 - `LGPL`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libtasn1-6=4.18.0-4
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.18.0-4.dsc' libtasn1-6_4.18.0-4.dsc 2662 SHA256:bcb8a762bee62682d90c706bd1d03776e321d34a71e1847a9a3257cfcb99c557
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.18.0.orig.tar.gz' libtasn1-6_4.18.0.orig.tar.gz 1724441 SHA256:4365c154953563d64c67a024b607d1ee75c6db76e0d0f65709ea80a334cd1898
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.18.0.orig.tar.gz.asc' libtasn1-6_4.18.0.orig.tar.gz.asc 228 SHA256:68edccaf988071e0c0154495e82be0b783553a49762381435accc79f2fdb463d
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.18.0-4.debian.tar.xz' libtasn1-6_4.18.0-4.debian.tar.xz 22020 SHA256:2a8dc71e52182787a53954fd3aca3195dc78173d13a1dc61ddda2719ce88014a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libtasn1-6/4.18.0-4/
 
-- https://sources.debian.net/src/libtasn1-6/4.18.0-4/ (for browsing the source)
-- https://sources.debian.net/src/libtasn1-6/4.18.0-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libtasn1-6/4.18.0-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libthai=0.1.29-1`
 
@@ -4925,20 +4903,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-stdlib-extensions=3.10.6-1
-'http://deb.debian.org/debian/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.10.6-1.dsc' python3-stdlib-extensions_3.10.6-1.dsc 2575 SHA256:1bfc0fe364796429c91e51a36ef7f55306db860e057bb2209bdd4a31331d212b
-'http://deb.debian.org/debian/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.10.6.orig.tar.xz' python3-stdlib-extensions_3.10.6.orig.tar.xz 1087948 SHA256:d954b0f50efe2209f3c757edc36d4ec029b11a40c5f56b7c123d00c9713ed74c
-'http://deb.debian.org/debian/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.10.6-1.debian.tar.xz' python3-stdlib-extensions_3.10.6-1.debian.tar.xz 25748 SHA256:8cd03374241c651e40fb96d9618298997a9f0a91490421a2f0d2f56ccf82f9fb
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3-stdlib-extensions/3.10.6-1/
 
-- https://sources.debian.net/src/python3-stdlib-extensions/3.10.6-1/ (for browsing the source)
-- https://sources.debian.net/src/python3-stdlib-extensions/3.10.6-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3-stdlib-extensions/3.10.6-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3.10=3.10.7-1`
 
@@ -5469,19 +5440,13 @@ Licenses: (parsed from: `/usr/share/doc/usr-is-merged/copyright`)
 - `GPL-2`
 - `later (please see /usr/share/common-licenses/GPL-2)`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris usrmerge=29
-'http://deb.debian.org/debian/pool/main/u/usrmerge/usrmerge_29.dsc' usrmerge_29.dsc 938 SHA256:22b1ecaf78e426deec34d74d4597687130111bc912dba58228ccf78d4041d4a7
-'http://deb.debian.org/debian/pool/main/u/usrmerge/usrmerge_29.tar.xz' usrmerge_29.tar.xz 12680 SHA256:a1276993476bbeaf2573a17123e7f8ea76c518eaa78eb0154bae132c42eb3baf
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/usrmerge/29/
 
-- https://sources.debian.net/src/usrmerge/29/ (for browsing the source)
-- https://sources.debian.net/src/usrmerge/29/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/usrmerge/29/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `utf8proc=2.7.0-3`
 
