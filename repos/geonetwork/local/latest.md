@@ -1,10 +1,10 @@
-# `geonetwork:4.2.0`
+# `geonetwork:4.2.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:289e6656e5ce70543c3a365343d7ed4cd64a54c7c751f69f74434bf15cc43bcf`
-- Created: `2022-09-02T12:11:53.764244029Z`
-- Virtual Size: ~ 761.18 Mb  
+- Image ID: `sha256:cb1884138a31453b1baca663decba8eb6756a73c6ce02398b38df712c20fa6d6`
+- Created: `2022-09-19T21:23:40.763534579Z`
+- Virtual Size: ~ 749.23 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/geonetwork-entrypoint.sh"]`
@@ -16,17 +16,17 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk8u345-b01`
-  - `JETTY_VERSION=9.4.48.v20220622`
+  - `JETTY_VERSION=9.4.49.v20220914`
   - `JETTY_HOME=/usr/local/jetty`
   - `JETTY_BASE=/var/lib/jetty`
   - `TMPDIR=/tmp/jetty`
-  - `JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/9.4.48.v20220622/jetty-home-9.4.48.v20220622.tar.gz`
+  - `JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/9.4.49.v20220914/jetty-home-9.4.49.v20220914.tar.gz`
   - `JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	FBA2B18D238AB852DF95745C76157BDF03D0DCD6 	5C9579B3DB2E506429319AAEF33B071B29559E1E 	F254B35617DC255D9344BCFA873A8E86B4372146`
   - `DATA_DIR=/catalogue-data`
   - `JAVA_OPTS=-Dorg.eclipse.jetty.annotations.AnnotationParser.LEVEL=OFF         -Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true         -Xms512M -Xss512M -Xmx2G -XX:+UseConcMarkSweepGC         -Dgeonetwork.resources.dir=/catalogue-data/resources         -Dgeonetwork.data.dir=/catalogue-data         -Dgeonetwork.codeList.dir=/var/lib/jetty/webapps/geonetwork/WEB-INF/data/config/codelist         -Dgeonetwork.schema.dir=/var/lib/jetty/webapps/geonetwork/WEB-INF/data/config/schema_plugins`
   - `GN_FILE=geonetwork.war`
-  - `GN_VERSION=4.2.0`
-  - `GN_DOWNLOAD_MD5=5300f81f24f1585d969e667d922e8e8e`
+  - `GN_VERSION=4.2.1`
+  - `GN_DOWNLOAD_MD5=152b8cfb7806a74dc4e186e0426072e1`
 
 ## `dpkg` (`.deb`-based packages)
 
