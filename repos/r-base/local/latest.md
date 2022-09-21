@@ -2263,21 +2263,13 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 - `LGPL`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libtasn1-6=4.18.0-4
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.18.0-4.dsc' libtasn1-6_4.18.0-4.dsc 2662 SHA256:bcb8a762bee62682d90c706bd1d03776e321d34a71e1847a9a3257cfcb99c557
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.18.0.orig.tar.gz' libtasn1-6_4.18.0.orig.tar.gz 1724441 SHA256:4365c154953563d64c67a024b607d1ee75c6db76e0d0f65709ea80a334cd1898
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.18.0.orig.tar.gz.asc' libtasn1-6_4.18.0.orig.tar.gz.asc 228 SHA256:68edccaf988071e0c0154495e82be0b783553a49762381435accc79f2fdb463d
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.18.0-4.debian.tar.xz' libtasn1-6_4.18.0-4.debian.tar.xz 22020 SHA256:2a8dc71e52182787a53954fd3aca3195dc78173d13a1dc61ddda2719ce88014a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libtasn1-6/4.18.0-4/
 
-- https://sources.debian.net/src/libtasn1-6/4.18.0-4/ (for browsing the source)
-- https://sources.debian.net/src/libtasn1-6/4.18.0-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libtasn1-6/4.18.0-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libthai=0.1.29-1`
 
@@ -3535,20 +3527,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-matrix/copyright`)
 - `GPL-2+`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rmatrix=1.4-1-1
-'http://deb.debian.org/debian/pool/main/r/rmatrix/rmatrix_1.4-1-1.dsc' rmatrix_1.4-1-1.dsc 1860 SHA256:3bf52317694a0f93d9a4167be39bf50226a50196660126a882f5e31ef961db4a
-'http://deb.debian.org/debian/pool/main/r/rmatrix/rmatrix_1.4-1.orig.tar.gz' rmatrix_1.4-1.orig.tar.gz 2862737 SHA256:42b24f1d1e94482b0ff0ef1292e2df29f69694bdbee47b3d6bfeec46fafb2f7e
-'http://deb.debian.org/debian/pool/main/r/rmatrix/rmatrix_1.4-1-1.debian.tar.xz' rmatrix_1.4-1-1.debian.tar.xz 5720 SHA256:cb4f5c17fd7271267b90c967f4d5d38fe039351e26f277de1dd598c20ddb9dce
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/rmatrix/1.4-1-1/
 
-- https://sources.debian.net/src/rmatrix/1.4-1-1/ (for browsing the source)
-- https://sources.debian.net/src/rmatrix/1.4-1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rmatrix/1.4-1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rpart=4.1.16-1`
 
