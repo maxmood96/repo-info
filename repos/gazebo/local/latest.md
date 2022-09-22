@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:93a1f3c52903ed0e9660d6f5ee60643c316a9121decc0de6f58237b6e0dbe877`
-- Created: `2022-09-02T03:12:23.018742065Z`
-- Virtual Size: ~ 1.95 Gb  
+- Image ID: `sha256:c6efb92c7dbbb8171cec25faae0f51a4dbdfca952d117c717a1f0db33fa8cd9c`
+- Created: `2022-09-19T18:03:03.145139978Z`
+- Virtual Size: ~ 1.96 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/gzserver_entrypoint.sh"]`
@@ -1661,15 +1661,15 @@ $ apt-get source -qq --print-uris game-music-emu=0.6.2-1build1
 'http://archive.ubuntu.com/ubuntu/pool/universe/g/game-music-emu/game-music-emu_0.6.2-1build1.debian.tar.xz' game-music-emu_0.6.2-1build1.debian.tar.xz 4496 SHA256:e338369a1656f0ade5b014f714fd5bac196489ac937cf8c5276a005953b92aa8
 ```
 
-### `dpkg` source package: `gazebo11=11.11.0-1~focal`
+### `dpkg` source package: `gazebo11=11.12.0-1~focal`
 
 Binary Packages:
 
-- `gazebo11=11.11.0-1~focal`
-- `gazebo11-common=11.11.0-1~focal`
-- `gazebo11-plugin-base=11.11.0-1~focal`
-- `libgazebo11:amd64=11.11.0-1~focal`
-- `libgazebo11-dev:amd64=11.11.0-1~focal`
+- `gazebo11=11.12.0-1~focal`
+- `gazebo11-common=11.12.0-1~focal`
+- `gazebo11-plugin-base=11.12.0-1~focal`
+- `libgazebo11:amd64=11.12.0-1~focal`
+- `libgazebo11-dev:amd64=11.12.0-1~focal`
 
 Licenses: (parsed from: `/usr/share/doc/gazebo11/copyright`, `/usr/share/doc/gazebo11-common/copyright`, `/usr/share/doc/gazebo11-plugin-base/copyright`, `/usr/share/doc/libgazebo11/copyright`, `/usr/share/doc/libgazebo11-dev/copyright`)
 
@@ -1685,9 +1685,14 @@ Licenses: (parsed from: `/usr/share/doc/gazebo11/copyright`, `/usr/share/doc/gaz
 - `LGPL-3+`
 - `ZLIB`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gazebo11=11.12.0-1~focal
+'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/g/gazebo11/gazebo11_11.12.0-1%7efocal.dsc' gazebo11_11.12.0-1~focal.dsc 2682 SHA256:44142c0360cb68edacafc054ed14e6b1c7b8c760e970f50f8bf2f0f6f2553591
+'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/g/gazebo11/gazebo11_11.12.0.orig.tar.bz2' gazebo11_11.12.0.orig.tar.bz2 56542859 SHA256:c40ca1ec71b6ab427e7feb83c922bfb262e84e11ebf6bb91f99bc3cca75bcd97
+'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/g/gazebo11/gazebo11_11.12.0-1%7efocal.debian.tar.xz' gazebo11_11.12.0-1~focal.debian.tar.xz 6956 SHA256:f389f67af5ffbd1c1192e6cfb05eabd2979f7fbcb8a75cf3f9ae48d2f5139fe4
+```
 
 ### `dpkg` source package: `gcc-10=10.3.0-1ubuntu1~20.04`
 
@@ -1881,12 +1886,12 @@ $ apt-get source -qq --print-uris gdbm=1.18.1-5
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.18.1-5.debian.tar.xz' gdbm_1.18.1-5.debian.tar.xz 16348 SHA256:3c1a0e05b40a97ee51ce77c736c72c37738ba31b2720111d3bc99175a2c3a3ed
 ```
 
-### `dpkg` source package: `gdk-pixbuf=2.40.0+dfsg-3ubuntu0.3`
+### `dpkg` source package: `gdk-pixbuf=2.40.0+dfsg-3ubuntu0.4`
 
 Binary Packages:
 
-- `libgdk-pixbuf2.0-0:amd64=2.40.0+dfsg-3ubuntu0.3`
-- `libgdk-pixbuf2.0-common=2.40.0+dfsg-3ubuntu0.3`
+- `libgdk-pixbuf2.0-0:amd64=2.40.0+dfsg-3ubuntu0.4`
+- `libgdk-pixbuf2.0-common=2.40.0+dfsg-3ubuntu0.4`
 
 Licenses: (parsed from: `/usr/share/doc/libgdk-pixbuf2.0-0/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-common/copyright`)
 
@@ -1896,9 +1901,14 @@ Licenses: (parsed from: `/usr/share/doc/libgdk-pixbuf2.0-0/copyright`, `/usr/sha
 - `LGPL-2+`
 - `MPL-1.1-or-LGPL-2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gdk-pixbuf=2.40.0+dfsg-3ubuntu0.4
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.40.0%2bdfsg-3ubuntu0.4.dsc' gdk-pixbuf_2.40.0+dfsg-3ubuntu0.4.dsc 3062 SHA512:d3492c156f517e8c54c9136bbcd9a8caa3e6a34e9947150e0201dbc8b40d7dc8090ec777fcbf752ef5da275e321328b4470a04d43ef79f83adf95bfecde6a6d3
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.40.0%2bdfsg.orig.tar.xz' gdk-pixbuf_2.40.0+dfsg.orig.tar.xz 5626144 SHA512:bb8a9d1837bffdc5f50307dba1a1e6f1ac015e6e670ea6cae6d0bc997afa106ff0d928cb847d76848c480a06e1ad3945274b4913eaa4d9a8074797fc82bb7c1f
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.40.0%2bdfsg-3ubuntu0.4.debian.tar.xz' gdk-pixbuf_2.40.0+dfsg-3ubuntu0.4.debian.tar.xz 21108 SHA512:77c5f1b213dcead327039f121ed6334aef33e73370489d496de4381921c29447bdd425a6fdb286a24f675dca95f45eecf354e791a8fc74ff628bf6e356393fb1
+```
 
 ### `dpkg` source package: `geos=3.8.0-1build1`
 
@@ -5255,14 +5265,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.4.0-125.141
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-125.141.dsc' linux_5.4.0-125.141.dsc 7335 SHA512:9f3512909cb82ba419e6307b79c27ced30766b5676525a8b0ed32bdf529c3b0a560b110fc482d5aec0e9a8bfd6899dbaa40b8ef4032796217a9457ca769c344f
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA512:62b09a7231fd793973c5f59b16c4f6ffce621188b02a71915874b05e8e3f956fb6146d4a4fb1a4475bebe463949ca5a18da12842c3ce7c52e996e6bc4012a074
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-125.141.diff.gz' linux_5.4.0-125.141.diff.gz 9648574 SHA512:80d1e620d48d39868b7597f7a61fa3a97756c477e38cba2bf7e926c102f88d0624175894ba754747811e6c27abfdd4b5f372dc9c523303d2d58ca4cee203f17a
-```
 
 ### `dpkg` source package: `llvm-toolchain-12=1:12.0.0-3ubuntu1~20.04.5`
 
@@ -6448,13 +6453,13 @@ $ apt-get source -qq --print-uris pmix=3.1.5-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/p/pmix/pmix_3.1.5-1.debian.tar.xz' pmix_3.1.5-1.debian.tar.xz 7656 SHA256:84150e848320f8d8c87f987f99f05ba19ec942d711385fff1f0e2ec6c9af9936
 ```
 
-### `dpkg` source package: `poppler=0.86.1-0ubuntu1`
+### `dpkg` source package: `poppler=0.86.1-0ubuntu1.1`
 
 Binary Packages:
 
-- `libpoppler-dev:amd64=0.86.1-0ubuntu1`
-- `libpoppler-private-dev:amd64=0.86.1-0ubuntu1`
-- `libpoppler97:amd64=0.86.1-0ubuntu1`
+- `libpoppler-dev:amd64=0.86.1-0ubuntu1.1`
+- `libpoppler-private-dev:amd64=0.86.1-0ubuntu1.1`
+- `libpoppler97:amd64=0.86.1-0ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/libpoppler-dev/copyright`, `/usr/share/doc/libpoppler-private-dev/copyright`, `/usr/share/doc/libpoppler97/copyright`)
 
@@ -6464,10 +6469,10 @@ Licenses: (parsed from: `/usr/share/doc/libpoppler-dev/copyright`, `/usr/share/d
 Source:
 
 ```console
-$ apt-get source -qq --print-uris poppler=0.86.1-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.86.1-0ubuntu1.dsc' poppler_0.86.1-0ubuntu1.dsc 2658 SHA256:e279f4042e1dd99d6f52ad235e9463b61f63b217e6414f368567c8428162749f
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.86.1.orig.tar.xz' poppler_0.86.1.orig.tar.xz 1593856 SHA256:af630a277c8e194c31339c5446241834aed6ed3d4b4dc7080311e51c66257f6c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.86.1-0ubuntu1.debian.tar.xz' poppler_0.86.1-0ubuntu1.debian.tar.xz 34832 SHA256:fe88ed5df596c68ecf5ffa7e2ff6dc4cdedea4ae3ba8c79b7fefc9689a9b6db9
+$ apt-get source -qq --print-uris poppler=0.86.1-0ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.86.1-0ubuntu1.1.dsc' poppler_0.86.1-0ubuntu1.1.dsc 3320 SHA512:32be68069d284c5bf372574de05bbcc98efe27b018cdc85bde89346c3868a82174e05cac7a2a32027024a364d8b5d6b870871d599a202c315dfeaeeb33705df5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.86.1.orig.tar.xz' poppler_0.86.1.orig.tar.xz 1593856 SHA512:435fc1e7f3e8123e0adde9aa60c0d7dc17db367cde8908932abfef913cee6f27efeb1c4f2d6f316019a69a87f1fa5251be4216d0a81a681a24f24a70ac571670
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.86.1-0ubuntu1.1.debian.tar.xz' poppler_0.86.1-0ubuntu1.1.debian.tar.xz 35408 SHA512:b2e9660f0dd0f3c46043ba638177d8b62e523fedc58da320018e84fab967edddb55ab3b4dab08a7fb5750eddc7c478ed5139724b9714318920e276a049f5d903
 ```
 
 ### `dpkg` source package: `postgresql-12=12.12-0ubuntu0.20.04.1`
@@ -7477,12 +7482,12 @@ $ apt-get source -qq --print-uris speex=1.2~rc1.2-1.1ubuntu1.20.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/speex/speex_1.2%7erc1.2-1.1ubuntu1.20.04.1.diff.gz' speex_1.2~rc1.2-1.1ubuntu1.20.04.1.diff.gz 10743 SHA512:1d1c91ae387186538dde92a21a65ac4b429039b24c5dae9cedfbae42cc631919e6416b6100d116e142beea89eb56559afa551f76f0a32c82bc8193e03033360c
 ```
 
-### `dpkg` source package: `sqlite3=3.31.1-4ubuntu0.3`
+### `dpkg` source package: `sqlite3=3.31.1-4ubuntu0.4`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.31.1-4ubuntu0.3`
-- `libsqlite3-dev:amd64=3.31.1-4ubuntu0.3`
+- `libsqlite3-0:amd64=3.31.1-4ubuntu0.4`
+- `libsqlite3-dev:amd64=3.31.1-4ubuntu0.4`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`, `/usr/share/doc/libsqlite3-dev/copyright`)
 
@@ -7490,9 +7495,15 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris sqlite3=3.31.1-4ubuntu0.4
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1-4ubuntu0.4.dsc' sqlite3_3.31.1-4ubuntu0.4.dsc 2519 SHA512:63501762b9e3d411213f88c158653246350e4f5d537fd868f57b1468f62ed270906b4f767bf7e70c8422d0ada35409a86ef8e98022f66f291dcad1d957ee6b46
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1.orig-www.tar.xz' sqlite3_3.31.1.orig-www.tar.xz 5764424 SHA512:a47adacd46c673cfd674cb64fb54b054e69560aed8c8c429773f0eccdcdbce4be538397506eca8e2d169f4b46d0d47442b273e12d82f8c87e1aadf3ade458db6
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1.orig.tar.xz' sqlite3_3.31.1.orig.tar.xz 7108036 SHA512:67e1050efe2988fa3d0d7e4a87e147a8114c6ff9b6ca5307a068befb38e861930eaee0135048ff1abb1e6323b507cbc68a0aac3a8fe5f095d6fcea1547a7efaf
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1-4ubuntu0.4.debian.tar.xz' sqlite3_3.31.1-4ubuntu0.4.debian.tar.xz 35468 SHA512:a4974f917c0f94142472bbaee2590be3baf9e5881db6df598ca4267bb823bd9934d5af30ea2e4b513044ab465ad9ebca2d1d7ae47cb41080edbd963a0a1fd227
+```
 
 ### `dpkg` source package: `sratom=0.6.4-1`
 
@@ -7646,13 +7657,13 @@ $ apt-get source -qq --print-uris tcp-wrappers=7.6.q-30
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tcp-wrappers/tcp-wrappers_7.6.q-30.debian.tar.xz' tcp-wrappers_7.6.q-30.debian.tar.xz 36204 SHA256:71661be900202a909144ba1f49f7dceb83a619b88a11aca3b9d867934c0dbb36
 ```
 
-### `dpkg` source package: `tiff=4.1.0+git191117-2ubuntu0.20.04.3`
+### `dpkg` source package: `tiff=4.1.0+git191117-2ubuntu0.20.04.4`
 
 Binary Packages:
 
-- `libtiff-dev:amd64=4.1.0+git191117-2ubuntu0.20.04.3`
-- `libtiff5:amd64=4.1.0+git191117-2ubuntu0.20.04.3`
-- `libtiffxx5:amd64=4.1.0+git191117-2ubuntu0.20.04.3`
+- `libtiff-dev:amd64=4.1.0+git191117-2ubuntu0.20.04.4`
+- `libtiff5:amd64=4.1.0+git191117-2ubuntu0.20.04.4`
+- `libtiffxx5:amd64=4.1.0+git191117-2ubuntu0.20.04.4`
 
 Licenses: (parsed from: `/usr/share/doc/libtiff-dev/copyright`, `/usr/share/doc/libtiff5/copyright`, `/usr/share/doc/libtiffxx5/copyright`)
 
@@ -7960,14 +7971,14 @@ $ apt-get source -qq --print-uris wavpack=5.2.0-1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/w/wavpack/wavpack_5.2.0-1ubuntu0.1.debian.tar.xz' wavpack_5.2.0-1ubuntu0.1.debian.tar.xz 7076 SHA512:9e0ae292c78f9697eac6217f613c7f0cf89ed7b6305683f0be0573e42c35e5582686bd35e2637d73a07ead3c68473cfa0082ef1ef1a905bdfaebf808c83a6280
 ```
 
-### `dpkg` source package: `wayland=1.18.0-1`
+### `dpkg` source package: `wayland=1.18.0-1ubuntu0.1`
 
 Binary Packages:
 
-- `libwayland-client0:amd64=1.18.0-1`
-- `libwayland-cursor0:amd64=1.18.0-1`
-- `libwayland-egl1:amd64=1.18.0-1`
-- `libwayland-server0:amd64=1.18.0-1`
+- `libwayland-client0:amd64=1.18.0-1ubuntu0.1`
+- `libwayland-cursor0:amd64=1.18.0-1ubuntu0.1`
+- `libwayland-egl1:amd64=1.18.0-1ubuntu0.1`
+- `libwayland-server0:amd64=1.18.0-1ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libwayland-client0/copyright`, `/usr/share/doc/libwayland-cursor0/copyright`, `/usr/share/doc/libwayland-egl1/copyright`, `/usr/share/doc/libwayland-server0/copyright`)
 
@@ -7976,10 +7987,10 @@ Licenses: (parsed from: `/usr/share/doc/libwayland-client0/copyright`, `/usr/sha
 Source:
 
 ```console
-$ apt-get source -qq --print-uris wayland=1.18.0-1
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.18.0-1.dsc' wayland_1.18.0-1.dsc 2565 SHA256:c3a7625f8ed02443815aa607e8875f4c01f41f4037b48d1cc97689500c7083e7
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.18.0.orig.tar.gz' wayland_1.18.0.orig.tar.gz 736301 SHA256:102d5556db1524a7737ab76e358b03e5b92a7718f1ac1520bf9686bfd09c8e4a
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.18.0-1.diff.gz' wayland_1.18.0-1.diff.gz 16180 SHA256:3c93bd642992a55340bcf24d4f20f9e77a0bf4ab188fb76f78117e704e3a3fba
+$ apt-get source -qq --print-uris wayland=1.18.0-1ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.18.0-1ubuntu0.1.dsc' wayland_1.18.0-1ubuntu0.1.dsc 2680 SHA512:1487bb25e04324a952064d06460f319d206a0dfc9d87a483b7a91cb964ee6c89b3d026d9682b8a2af7c15f0ec58bb0d431fcd15ed27c346b199c07a89ca2d6bf
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.18.0.orig.tar.gz' wayland_1.18.0.orig.tar.gz 736301 SHA512:365b7065d71ee6f30dea3a68cafadf95f13480e80424481fec6027d041a9d20e1c645ee7c114500bb0767c2a79b8cabd9fd51c3f54ebca7fe577b9c8b98c08be
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.18.0-1ubuntu0.1.diff.gz' wayland_1.18.0-1ubuntu0.1.diff.gz 17774 SHA512:66abab279133ab9d7d669025b497b9261056ee5380d9d8c40334d822dd416076fcdb2a400b83f800f7f2fa0caf91981d2a71c8aa26e6c7c3973e13125727bd01
 ```
 
 ### `dpkg` source package: `x264=2:0.155.2917+git0a84d98-2`

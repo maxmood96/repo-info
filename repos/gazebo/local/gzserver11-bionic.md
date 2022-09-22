@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6075f291c6b8be3d3e0fd7118eb243d2634b2fa25dc6a3546e27ffc6eb1beaec`
-- Created: `2022-09-06T20:13:48.180995637Z`
-- Virtual Size: ~ 681.67 Mb  
+- Image ID: `sha256:d9d91773bf1a362f22a4e11e0e03966287887adb6dd041e8e853a0a1499c9bec`
+- Created: `2022-09-19T17:50:26.19209201Z`
+- Virtual Size: ~ 681.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/gzserver_entrypoint.sh"]`
@@ -1150,13 +1150,13 @@ $ apt-get source -qq --print-uris game-music-emu=0.6.2-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/g/game-music-emu/game-music-emu_0.6.2-1.debian.tar.xz' game-music-emu_0.6.2-1.debian.tar.xz 4412 SHA256:8ea69035bd72261ec85e5f0486707d448f7491733ae055040a9995cebb0ea820
 ```
 
-### `dpkg` source package: `gazebo11=11.11.0-1~bionic`
+### `dpkg` source package: `gazebo11=11.12.0-1~bionic`
 
 Binary Packages:
 
-- `gazebo11=11.11.0-1~bionic`
-- `gazebo11-common=11.11.0-1~bionic`
-- `libgazebo11:amd64=11.11.0-1~bionic`
+- `gazebo11=11.12.0-1~bionic`
+- `gazebo11-common=11.12.0-1~bionic`
+- `libgazebo11:amd64=11.12.0-1~bionic`
 
 Licenses: (parsed from: `/usr/share/doc/gazebo11/copyright`, `/usr/share/doc/gazebo11-common/copyright`, `/usr/share/doc/libgazebo11/copyright`)
 
@@ -1172,9 +1172,14 @@ Licenses: (parsed from: `/usr/share/doc/gazebo11/copyright`, `/usr/share/doc/gaz
 - `LGPL-3+`
 - `ZLIB`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gazebo11=11.12.0-1~bionic
+'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/g/gazebo11/gazebo11_11.12.0-1%7ebionic.dsc' gazebo11_11.12.0-1~bionic.dsc 2372 SHA256:15c77ac2d396f5e7555d42c45570f416fa11763a7ed73b297fb85ef46e6e2679
+'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/g/gazebo11/gazebo11_11.12.0.orig.tar.bz2' gazebo11_11.12.0.orig.tar.bz2 56542859 SHA256:c40ca1ec71b6ab427e7feb83c922bfb262e84e11ebf6bb91f99bc3cca75bcd97
+'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/g/gazebo11/gazebo11_11.12.0-1%7ebionic.debian.tar.xz' gazebo11_11.12.0-1~bionic.debian.tar.xz 6892 SHA256:8b5902ae384a7b2d10e3abad13b14a2a429e49d177630dd2fc0b9bb935f0a7a6
+```
 
 ### `dpkg` source package: `gcc-7=7.5.0-3ubuntu1~18.04`
 
@@ -5086,19 +5091,24 @@ $ apt-get source -qq --print-uris pixman=0.34.0-2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pixman/pixman_0.34.0-2.diff.gz' pixman_0.34.0-2.diff.gz 315460 SHA256:e81ec91d58776d804a2c56cbebb8c80fa3318a45a6a7246005bc96985f7dd805
 ```
 
-### `dpkg` source package: `poppler=0.62.0-2ubuntu2.12`
+### `dpkg` source package: `poppler=0.62.0-2ubuntu2.14`
 
 Binary Packages:
 
-- `libpoppler73:amd64=0.62.0-2ubuntu2.12`
+- `libpoppler73:amd64=0.62.0-2ubuntu2.14`
 
 Licenses: (parsed from: `/usr/share/doc/libpoppler73/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris poppler=0.62.0-2ubuntu2.14
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.62.0-2ubuntu2.14.dsc' poppler_0.62.0-2ubuntu2.14.dsc 3374 SHA512:852f2bfbaa6ca846a2d60ca3947365bf28499924a47cc20a0a73a7483b4a75a623e7dd519a690bb6eb24a611fdd0fc5556ae630590b1772ca7622759f34ec42a
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.62.0.orig.tar.xz' poppler_0.62.0.orig.tar.xz 1423372 SHA512:91f7eae7b05965ae97a34e658bed2a676be8a6e4d34f82148ece6eb58932632dcf9a34d50c66412f93f560ce575abf5c608ed6b1e5184604b96024801886c706
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.62.0-2ubuntu2.14.debian.tar.xz' poppler_0.62.0-2ubuntu2.14.debian.tar.xz 46652 SHA512:2fcb65b8090ad26190232beeba1e285b49396de3ba07a4a5f9b8a4c53ad281895977e2c6acc1467b85eab7eeafd308f37539dfbae3886f6d2ec78f8a387270fd
+```
 
 ### `dpkg` source package: `postgresql-10=10.22-0ubuntu0.18.04.1`
 
@@ -5863,11 +5873,11 @@ $ apt-get source -qq --print-uris tcp-wrappers=7.6.q-27
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tcp-wrappers/tcp-wrappers_7.6.q-27.debian.tar.xz' tcp-wrappers_7.6.q-27.debian.tar.xz 36060 SHA256:b73487b0faf59dfcc1074b9f11a91556713d9ae210033536f20cfd3c8bc73b36
 ```
 
-### `dpkg` source package: `tiff=4.0.9-5ubuntu0.5`
+### `dpkg` source package: `tiff=4.0.9-5ubuntu0.6`
 
 Binary Packages:
 
-- `libtiff5:amd64=4.0.9-5ubuntu0.5`
+- `libtiff5:amd64=4.0.9-5ubuntu0.6`
 
 Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 
@@ -6101,22 +6111,26 @@ $ apt-get source -qq --print-uris wavpack=5.1.0-2ubuntu1.5
 'http://archive.ubuntu.com/ubuntu/pool/main/w/wavpack/wavpack_5.1.0-2ubuntu1.5.debian.tar.xz' wavpack_5.1.0-2ubuntu1.5.debian.tar.xz 12020 SHA512:15aa44aa1d74adc9a90b0a4bd4d183b2b43deba047b82feda46393d736649802353753800dd3e0db5735b8a26472fd67e70df108aa69dc2fd0e5bbeb4905a40b
 ```
 
-### `dpkg` source package: `wayland=1.16.0-1ubuntu1.1~18.04.3`
+### `dpkg` source package: `wayland=1.16.0-1ubuntu1.1~18.04.4`
 
 Binary Packages:
 
-- `libwayland-client0:amd64=1.16.0-1ubuntu1.1~18.04.3`
-- `libwayland-cursor0:amd64=1.16.0-1ubuntu1.1~18.04.3`
-- `libwayland-egl1:amd64=1.16.0-1ubuntu1.1~18.04.3`
-- `libwayland-server0:amd64=1.16.0-1ubuntu1.1~18.04.3`
+- `libwayland-client0:amd64=1.16.0-1ubuntu1.1~18.04.4`
+- `libwayland-cursor0:amd64=1.16.0-1ubuntu1.1~18.04.4`
+- `libwayland-egl1:amd64=1.16.0-1ubuntu1.1~18.04.4`
+- `libwayland-server0:amd64=1.16.0-1ubuntu1.1~18.04.4`
 
 Licenses: (parsed from: `/usr/share/doc/libwayland-client0/copyright`, `/usr/share/doc/libwayland-cursor0/copyright`, `/usr/share/doc/libwayland-egl1/copyright`, `/usr/share/doc/libwayland-server0/copyright`)
 
 - `X11`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris wayland=1.16.0-1ubuntu1.1~18.04.4
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.16.0-1ubuntu1.1%7e18.04.4.dsc' wayland_1.16.0-1ubuntu1.1~18.04.4.dsc 2468 SHA512:ef2d1dc712a8aa12ecc3a7afc3ded0c7c8a022bb8b7bea6b02c2efc4e16af5dd4ff20a9e9f8253f1b194d5d9817010483f8870c103ae104e28562ce2a8bf11b5
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.16.0-1ubuntu1.1%7e18.04.4.tar.gz' wayland_1.16.0-1ubuntu1.1~18.04.4.tar.gz 326458 SHA512:d70d238c1a4e6e36895639075fe09577ba1c6b7fc4ac8016ab371466c537aa035d89ce2c234a98460bd1a0d8028110ec6fee249b62667ab9dec1c7a8353c6d80
+```
 
 ### `dpkg` source package: `x264=2:0.152.2854+gite9a5903-2`
 
