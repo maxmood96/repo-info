@@ -1,16 +1,16 @@
-# `sapmachine:18`
+# `sapmachine:19`
 
 ## Docker Metadata
 
-- Image ID: `sha256:81d9c5b2554c8ddae80962502888a87ec2c842cdbaac5009de66ab84f76c8d21`
-- Created: `2022-09-02T05:19:57.574593476Z`
-- Virtual Size: ~ 434.13 Mb  
+- Image ID: `sha256:db9859c560a01e2113842c4b7120655be3105acc5fa1e1fa1f29c66957b96caf`
+- Created: `2022-09-21T18:43:44.032438248Z`
+- Virtual Size: ~ 448.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_HOME=/usr/lib/jvm/sapmachine-18`
+  - `JAVA_HOME=/usr/lib/jvm/sapmachine-19`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1776,11 +1776,11 @@ $ apt-get source -qq --print-uris readline=8.0-4
 'http://archive.ubuntu.com/ubuntu/pool/main/r/readline/readline_8.0-4.debian.tar.xz' readline_8.0-4.debian.tar.xz 30408 SHA256:60ed18dab6d6b7fc998a263d917f06d9cce6e1ccd19cd8bf4a9d33c5350cf8d6
 ```
 
-### `dpkg` source package: `sapmachine-18-jdk=18.0.2.1`
+### `dpkg` source package: `sapmachine-19-jdk=19`
 
 Binary Packages:
 
-- `sapmachine-18-jdk=18.0.2.1`
+- `sapmachine-19-jdk=19`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1885,14 +1885,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=245.4-4ubuntu3.17
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.17.dsc' systemd_245.4-4ubuntu3.17.dsc 5262 SHA512:6166835188335fbe62c85d52afda555f4afa29795c9782911da108b8f7cf8925e2c00cdf8571e873ce4a1aa6482b9a150cd518beefa7c152ebc10dfe24382803
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4.orig.tar.gz' systemd_245.4.orig.tar.gz 9000780 SHA512:02036bb1ab05301a9d0dfdd4b9c9376e90134474482531e6e292122380be2f24f99177493dd3af6f8af1a8ed2599ee0996da91a3b1b7872bbfaf26a1c3e61b4c
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.17.debian.tar.xz' systemd_245.4-4ubuntu3.17.debian.tar.xz 276524 SHA512:61c326fe328318a32e2805aa1222d7664751d251abd7469329502c5e3bedc22113b954f1fc9440a9a5c8776d075f8eb6b7fd2de77e42adf4a8377c4f67e8207e
-```
 
 ### `dpkg` source package: `sysvinit=2.96-2.1ubuntu1`
 
