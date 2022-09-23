@@ -1,10 +1,10 @@
-# `openjdk:20-ea-14-jdk-oraclelinux7`
+# `openjdk:20-ea-16-jdk-oraclelinux7`
 
 ## Docker Metadata
 
-- Image ID: `sha256:670938e52e7a872b8e7299cb37c022a2fc4ec5ca2821791b0b4551285a28ab06`
-- Created: `2022-09-12T22:36:14.353099784Z`
-- Virtual Size: ~ 511.26 Mb  
+- Image ID: `sha256:1a511fe90c925d11d4617bfeaee3803a3a25a8efc692f78ff60b4ca5c4da0919`
+- Created: `2022-09-23T00:33:26.9360756Z`
+- Virtual Size: ~ 513.53 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/java/openjdk-20/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/java/openjdk-20`
   - `LANG=en_US.UTF-8`
-  - `JAVA_VERSION=20-ea+14`
+  - `JAVA_VERSION=20-ea+16`
 
 ## `rpm` (`.rpm`-based packages)
 
@@ -71,15 +71,15 @@ $ dnf --quiet download --source --url bzip2-libs-1.0.6-13.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/bzip2-1.0.6-13.el7.src.rpm
 ```
 
-### `rpm` package: `ca-certificates-2021.2.50-72.el7_9.noarch`
+### `rpm` package: `ca-certificates-2022.2.54-74.el7_9.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url ca-certificates-2021.2.50-72.el7_9.noarch
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/ca-certificates-2021.2.50-72.el7_9.src.rpm
+$ dnf --quiet download --source --url ca-certificates-2022.2.54-74.el7_9.noarch
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/ca-certificates-2022.2.54-74.el7_9.src.rpm
 ```
 
 ### `rpm` package: `chkconfig-1.7.6-1.el7.x86_64`
