@@ -1,10 +1,10 @@
-# `consul:1.13.1`
+# `consul:1.13.2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d39b419c474e3fe863ee3d71ade346dfe37eaf23d1971b00bd9f925dcf8562b1`
-- Created: `2022-08-11T23:19:39.019565008Z`
-- Virtual Size: ~ 137.83 Mb  
+- Image ID: `sha256:c3d9adf47b726d5beec999918b325fd05a164405191545c9220b0d73d377bdec`
+- Created: `2022-09-21T18:19:40.206511109Z`
+- Virtual Size: ~ 138.28 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -20,7 +20,7 @@
   - `org.opencontainers.image.title=consul`
   - `org.opencontainers.image.url=https://www.consul.io/`
   - `org.opencontainers.image.vendor=HashiCorp`
-  - `org.opencontainers.image.version=1.13.1`
+  - `org.opencontainers.image.version=1.13.2`
 
 ## `apk` (`.apk`-based packages)
 
@@ -146,16 +146,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-7.80.0-r2 description:
+curl-7.80.0-r3 description:
 URL retrival utility and library
 
-curl-7.80.0-r2 webpage:
+curl-7.80.0-r3 webpage:
 https://curl.se/
 
-curl-7.80.0-r2 installed size:
+curl-7.80.0-r3 installed size:
 248 KiB
 
-curl-7.80.0-r2 license:
+curl-7.80.0-r3 license:
 MIT
 
 ```
@@ -299,16 +299,16 @@ OpenSSL
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.80.0-r2 description:
+libcurl-7.80.0-r3 description:
 The multiprotocol file transfer library
 
-libcurl-7.80.0-r2 webpage:
+libcurl-7.80.0-r3 webpage:
 https://curl.se/
 
-libcurl-7.80.0-r2 installed size:
+libcurl-7.80.0-r3 installed size:
 504 KiB
 
-libcurl-7.80.0-r2 license:
+libcurl-7.80.0-r3 license:
 MIT
 
 ```
@@ -503,16 +503,16 @@ MIT
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2022a-r0 description:
+tzdata-2022c-r0 description:
 Timezone data
 
-tzdata-2022a-r0 webpage:
+tzdata-2022c-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2022a-r0 installed size:
-3376 KiB
+tzdata-2022c-r0 installed size:
+3208 KiB
 
-tzdata-2022a-r0 license:
+tzdata-2022c-r0 license:
 Public-Domain
 
 ```
