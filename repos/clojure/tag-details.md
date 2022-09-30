@@ -23,108 +23,164 @@
 -	[`clojure:temurin-11-boot`](#clojuretemurin-11-boot)
 -	[`clojure:temurin-11-boot-2.8.3`](#clojuretemurin-11-boot-283)
 -	[`clojure:temurin-11-boot-2.8.3-alpine`](#clojuretemurin-11-boot-283-alpine)
+-	[`clojure:temurin-11-boot-2.8.3-bullseye`](#clojuretemurin-11-boot-283-bullseye)
+-	[`clojure:temurin-11-boot-2.8.3-bullseye-slim`](#clojuretemurin-11-boot-283-bullseye-slim)
 -	[`clojure:temurin-11-boot-2.8.3-focal`](#clojuretemurin-11-boot-283-focal)
 -	[`clojure:temurin-11-boot-2.8.3-jammy`](#clojuretemurin-11-boot-283-jammy)
 -	[`clojure:temurin-11-boot-alpine`](#clojuretemurin-11-boot-alpine)
+-	[`clojure:temurin-11-boot-bullseye`](#clojuretemurin-11-boot-bullseye)
+-	[`clojure:temurin-11-boot-bullseye-slim`](#clojuretemurin-11-boot-bullseye-slim)
 -	[`clojure:temurin-11-boot-focal`](#clojuretemurin-11-boot-focal)
 -	[`clojure:temurin-11-boot-jammy`](#clojuretemurin-11-boot-jammy)
+-	[`clojure:temurin-11-bullseye`](#clojuretemurin-11-bullseye)
+-	[`clojure:temurin-11-bullseye-slim`](#clojuretemurin-11-bullseye-slim)
 -	[`clojure:temurin-11-focal`](#clojuretemurin-11-focal)
 -	[`clojure:temurin-11-jammy`](#clojuretemurin-11-jammy)
 -	[`clojure:temurin-11-lein`](#clojuretemurin-11-lein)
 -	[`clojure:temurin-11-lein-2.9.10`](#clojuretemurin-11-lein-2910)
 -	[`clojure:temurin-11-lein-2.9.10-alpine`](#clojuretemurin-11-lein-2910-alpine)
+-	[`clojure:temurin-11-lein-2.9.10-bullseye`](#clojuretemurin-11-lein-2910-bullseye)
+-	[`clojure:temurin-11-lein-2.9.10-bullseye-slim`](#clojuretemurin-11-lein-2910-bullseye-slim)
 -	[`clojure:temurin-11-lein-2.9.10-focal`](#clojuretemurin-11-lein-2910-focal)
 -	[`clojure:temurin-11-lein-2.9.10-jammy`](#clojuretemurin-11-lein-2910-jammy)
 -	[`clojure:temurin-11-lein-alpine`](#clojuretemurin-11-lein-alpine)
+-	[`clojure:temurin-11-lein-bullseye`](#clojuretemurin-11-lein-bullseye)
+-	[`clojure:temurin-11-lein-bullseye-slim`](#clojuretemurin-11-lein-bullseye-slim)
 -	[`clojure:temurin-11-lein-focal`](#clojuretemurin-11-lein-focal)
 -	[`clojure:temurin-11-lein-jammy`](#clojuretemurin-11-lein-jammy)
 -	[`clojure:temurin-11-tools-deps`](#clojuretemurin-11-tools-deps)
 -	[`clojure:temurin-11-tools-deps-1.11.1.1165`](#clojuretemurin-11-tools-deps-11111165)
 -	[`clojure:temurin-11-tools-deps-1.11.1.1165-alpine`](#clojuretemurin-11-tools-deps-11111165-alpine)
+-	[`clojure:temurin-11-tools-deps-1.11.1.1165-bullseye`](#clojuretemurin-11-tools-deps-11111165-bullseye)
+-	[`clojure:temurin-11-tools-deps-1.11.1.1165-bullseye-slim`](#clojuretemurin-11-tools-deps-11111165-bullseye-slim)
 -	[`clojure:temurin-11-tools-deps-1.11.1.1165-focal`](#clojuretemurin-11-tools-deps-11111165-focal)
 -	[`clojure:temurin-11-tools-deps-1.11.1.1165-jammy`](#clojuretemurin-11-tools-deps-11111165-jammy)
 -	[`clojure:temurin-11-tools-deps-alpine`](#clojuretemurin-11-tools-deps-alpine)
+-	[`clojure:temurin-11-tools-deps-bullseye`](#clojuretemurin-11-tools-deps-bullseye)
+-	[`clojure:temurin-11-tools-deps-bullseye-slim`](#clojuretemurin-11-tools-deps-bullseye-slim)
 -	[`clojure:temurin-11-tools-deps-focal`](#clojuretemurin-11-tools-deps-focal)
 -	[`clojure:temurin-11-tools-deps-jammy`](#clojuretemurin-11-tools-deps-jammy)
 -	[`clojure:temurin-17-alpine`](#clojuretemurin-17-alpine)
 -	[`clojure:temurin-17-boot`](#clojuretemurin-17-boot)
 -	[`clojure:temurin-17-boot-2.8.3`](#clojuretemurin-17-boot-283)
 -	[`clojure:temurin-17-boot-2.8.3-alpine`](#clojuretemurin-17-boot-283-alpine)
+-	[`clojure:temurin-17-boot-2.8.3-bullseye`](#clojuretemurin-17-boot-283-bullseye)
+-	[`clojure:temurin-17-boot-2.8.3-bullseye-slim`](#clojuretemurin-17-boot-283-bullseye-slim)
 -	[`clojure:temurin-17-boot-2.8.3-focal`](#clojuretemurin-17-boot-283-focal)
 -	[`clojure:temurin-17-boot-2.8.3-jammy`](#clojuretemurin-17-boot-283-jammy)
 -	[`clojure:temurin-17-boot-alpine`](#clojuretemurin-17-boot-alpine)
+-	[`clojure:temurin-17-boot-bullseye`](#clojuretemurin-17-boot-bullseye)
+-	[`clojure:temurin-17-boot-bullseye-slim`](#clojuretemurin-17-boot-bullseye-slim)
 -	[`clojure:temurin-17-boot-focal`](#clojuretemurin-17-boot-focal)
 -	[`clojure:temurin-17-boot-jammy`](#clojuretemurin-17-boot-jammy)
+-	[`clojure:temurin-17-bullseye`](#clojuretemurin-17-bullseye)
+-	[`clojure:temurin-17-bullseye-slim`](#clojuretemurin-17-bullseye-slim)
 -	[`clojure:temurin-17-focal`](#clojuretemurin-17-focal)
 -	[`clojure:temurin-17-jammy`](#clojuretemurin-17-jammy)
 -	[`clojure:temurin-17-lein`](#clojuretemurin-17-lein)
 -	[`clojure:temurin-17-lein-2.9.10`](#clojuretemurin-17-lein-2910)
 -	[`clojure:temurin-17-lein-2.9.10-alpine`](#clojuretemurin-17-lein-2910-alpine)
+-	[`clojure:temurin-17-lein-2.9.10-bullseye`](#clojuretemurin-17-lein-2910-bullseye)
+-	[`clojure:temurin-17-lein-2.9.10-bullseye-slim`](#clojuretemurin-17-lein-2910-bullseye-slim)
 -	[`clojure:temurin-17-lein-2.9.10-focal`](#clojuretemurin-17-lein-2910-focal)
 -	[`clojure:temurin-17-lein-2.9.10-jammy`](#clojuretemurin-17-lein-2910-jammy)
 -	[`clojure:temurin-17-lein-alpine`](#clojuretemurin-17-lein-alpine)
+-	[`clojure:temurin-17-lein-bullseye`](#clojuretemurin-17-lein-bullseye)
+-	[`clojure:temurin-17-lein-bullseye-slim`](#clojuretemurin-17-lein-bullseye-slim)
 -	[`clojure:temurin-17-lein-focal`](#clojuretemurin-17-lein-focal)
 -	[`clojure:temurin-17-lein-jammy`](#clojuretemurin-17-lein-jammy)
 -	[`clojure:temurin-17-tools-deps`](#clojuretemurin-17-tools-deps)
 -	[`clojure:temurin-17-tools-deps-1.11.1.1165`](#clojuretemurin-17-tools-deps-11111165)
 -	[`clojure:temurin-17-tools-deps-1.11.1.1165-alpine`](#clojuretemurin-17-tools-deps-11111165-alpine)
+-	[`clojure:temurin-17-tools-deps-1.11.1.1165-bullseye`](#clojuretemurin-17-tools-deps-11111165-bullseye)
+-	[`clojure:temurin-17-tools-deps-1.11.1.1165-bullseye-slim`](#clojuretemurin-17-tools-deps-11111165-bullseye-slim)
 -	[`clojure:temurin-17-tools-deps-1.11.1.1165-focal`](#clojuretemurin-17-tools-deps-11111165-focal)
 -	[`clojure:temurin-17-tools-deps-1.11.1.1165-jammy`](#clojuretemurin-17-tools-deps-11111165-jammy)
 -	[`clojure:temurin-17-tools-deps-alpine`](#clojuretemurin-17-tools-deps-alpine)
+-	[`clojure:temurin-17-tools-deps-bullseye`](#clojuretemurin-17-tools-deps-bullseye)
+-	[`clojure:temurin-17-tools-deps-bullseye-slim`](#clojuretemurin-17-tools-deps-bullseye-slim)
 -	[`clojure:temurin-17-tools-deps-focal`](#clojuretemurin-17-tools-deps-focal)
 -	[`clojure:temurin-17-tools-deps-jammy`](#clojuretemurin-17-tools-deps-jammy)
 -	[`clojure:temurin-19-alpine`](#clojuretemurin-19-alpine)
 -	[`clojure:temurin-19-boot`](#clojuretemurin-19-boot)
 -	[`clojure:temurin-19-boot-2.8.3`](#clojuretemurin-19-boot-283)
 -	[`clojure:temurin-19-boot-2.8.3-alpine`](#clojuretemurin-19-boot-283-alpine)
+-	[`clojure:temurin-19-boot-2.8.3-bullseye`](#clojuretemurin-19-boot-283-bullseye)
+-	[`clojure:temurin-19-boot-2.8.3-bullseye-slim`](#clojuretemurin-19-boot-283-bullseye-slim)
 -	[`clojure:temurin-19-boot-2.8.3-focal`](#clojuretemurin-19-boot-283-focal)
 -	[`clojure:temurin-19-boot-2.8.3-jammy`](#clojuretemurin-19-boot-283-jammy)
 -	[`clojure:temurin-19-boot-alpine`](#clojuretemurin-19-boot-alpine)
+-	[`clojure:temurin-19-boot-bullseye`](#clojuretemurin-19-boot-bullseye)
+-	[`clojure:temurin-19-boot-bullseye-slim`](#clojuretemurin-19-boot-bullseye-slim)
 -	[`clojure:temurin-19-boot-focal`](#clojuretemurin-19-boot-focal)
 -	[`clojure:temurin-19-boot-jammy`](#clojuretemurin-19-boot-jammy)
+-	[`clojure:temurin-19-bullseye`](#clojuretemurin-19-bullseye)
+-	[`clojure:temurin-19-bullseye-slim`](#clojuretemurin-19-bullseye-slim)
 -	[`clojure:temurin-19-focal`](#clojuretemurin-19-focal)
 -	[`clojure:temurin-19-jammy`](#clojuretemurin-19-jammy)
 -	[`clojure:temurin-19-lein`](#clojuretemurin-19-lein)
 -	[`clojure:temurin-19-lein-2.9.10`](#clojuretemurin-19-lein-2910)
 -	[`clojure:temurin-19-lein-2.9.10-alpine`](#clojuretemurin-19-lein-2910-alpine)
+-	[`clojure:temurin-19-lein-2.9.10-bullseye`](#clojuretemurin-19-lein-2910-bullseye)
+-	[`clojure:temurin-19-lein-2.9.10-bullseye-slim`](#clojuretemurin-19-lein-2910-bullseye-slim)
 -	[`clojure:temurin-19-lein-2.9.10-focal`](#clojuretemurin-19-lein-2910-focal)
 -	[`clojure:temurin-19-lein-2.9.10-jammy`](#clojuretemurin-19-lein-2910-jammy)
 -	[`clojure:temurin-19-lein-alpine`](#clojuretemurin-19-lein-alpine)
+-	[`clojure:temurin-19-lein-bullseye`](#clojuretemurin-19-lein-bullseye)
+-	[`clojure:temurin-19-lein-bullseye-slim`](#clojuretemurin-19-lein-bullseye-slim)
 -	[`clojure:temurin-19-lein-focal`](#clojuretemurin-19-lein-focal)
 -	[`clojure:temurin-19-lein-jammy`](#clojuretemurin-19-lein-jammy)
 -	[`clojure:temurin-19-tools-deps`](#clojuretemurin-19-tools-deps)
 -	[`clojure:temurin-19-tools-deps-1.11.1.1165`](#clojuretemurin-19-tools-deps-11111165)
 -	[`clojure:temurin-19-tools-deps-1.11.1.1165-alpine`](#clojuretemurin-19-tools-deps-11111165-alpine)
+-	[`clojure:temurin-19-tools-deps-1.11.1.1165-bullseye`](#clojuretemurin-19-tools-deps-11111165-bullseye)
+-	[`clojure:temurin-19-tools-deps-1.11.1.1165-bullseye-slim`](#clojuretemurin-19-tools-deps-11111165-bullseye-slim)
 -	[`clojure:temurin-19-tools-deps-1.11.1.1165-focal`](#clojuretemurin-19-tools-deps-11111165-focal)
 -	[`clojure:temurin-19-tools-deps-1.11.1.1165-jammy`](#clojuretemurin-19-tools-deps-11111165-jammy)
 -	[`clojure:temurin-19-tools-deps-alpine`](#clojuretemurin-19-tools-deps-alpine)
+-	[`clojure:temurin-19-tools-deps-bullseye`](#clojuretemurin-19-tools-deps-bullseye)
+-	[`clojure:temurin-19-tools-deps-bullseye-slim`](#clojuretemurin-19-tools-deps-bullseye-slim)
 -	[`clojure:temurin-19-tools-deps-focal`](#clojuretemurin-19-tools-deps-focal)
 -	[`clojure:temurin-19-tools-deps-jammy`](#clojuretemurin-19-tools-deps-jammy)
 -	[`clojure:temurin-8-alpine`](#clojuretemurin-8-alpine)
 -	[`clojure:temurin-8-boot`](#clojuretemurin-8-boot)
 -	[`clojure:temurin-8-boot-2.8.3`](#clojuretemurin-8-boot-283)
 -	[`clojure:temurin-8-boot-2.8.3-alpine`](#clojuretemurin-8-boot-283-alpine)
+-	[`clojure:temurin-8-boot-2.8.3-bullseye`](#clojuretemurin-8-boot-283-bullseye)
+-	[`clojure:temurin-8-boot-2.8.3-bullseye-slim`](#clojuretemurin-8-boot-283-bullseye-slim)
 -	[`clojure:temurin-8-boot-2.8.3-focal`](#clojuretemurin-8-boot-283-focal)
 -	[`clojure:temurin-8-boot-2.8.3-jammy`](#clojuretemurin-8-boot-283-jammy)
 -	[`clojure:temurin-8-boot-alpine`](#clojuretemurin-8-boot-alpine)
+-	[`clojure:temurin-8-boot-bullseye`](#clojuretemurin-8-boot-bullseye)
+-	[`clojure:temurin-8-boot-bullseye-slim`](#clojuretemurin-8-boot-bullseye-slim)
 -	[`clojure:temurin-8-boot-focal`](#clojuretemurin-8-boot-focal)
 -	[`clojure:temurin-8-boot-jammy`](#clojuretemurin-8-boot-jammy)
+-	[`clojure:temurin-8-bullseye`](#clojuretemurin-8-bullseye)
+-	[`clojure:temurin-8-bullseye-slim`](#clojuretemurin-8-bullseye-slim)
 -	[`clojure:temurin-8-focal`](#clojuretemurin-8-focal)
 -	[`clojure:temurin-8-jammy`](#clojuretemurin-8-jammy)
 -	[`clojure:temurin-8-lein`](#clojuretemurin-8-lein)
 -	[`clojure:temurin-8-lein-2.9.10`](#clojuretemurin-8-lein-2910)
 -	[`clojure:temurin-8-lein-2.9.10-alpine`](#clojuretemurin-8-lein-2910-alpine)
+-	[`clojure:temurin-8-lein-2.9.10-bullseye`](#clojuretemurin-8-lein-2910-bullseye)
+-	[`clojure:temurin-8-lein-2.9.10-bullseye-slim`](#clojuretemurin-8-lein-2910-bullseye-slim)
 -	[`clojure:temurin-8-lein-2.9.10-focal`](#clojuretemurin-8-lein-2910-focal)
 -	[`clojure:temurin-8-lein-2.9.10-jammy`](#clojuretemurin-8-lein-2910-jammy)
 -	[`clojure:temurin-8-lein-alpine`](#clojuretemurin-8-lein-alpine)
+-	[`clojure:temurin-8-lein-bullseye`](#clojuretemurin-8-lein-bullseye)
+-	[`clojure:temurin-8-lein-bullseye-slim`](#clojuretemurin-8-lein-bullseye-slim)
 -	[`clojure:temurin-8-lein-focal`](#clojuretemurin-8-lein-focal)
 -	[`clojure:temurin-8-lein-jammy`](#clojuretemurin-8-lein-jammy)
 -	[`clojure:temurin-8-tools-deps`](#clojuretemurin-8-tools-deps)
 -	[`clojure:temurin-8-tools-deps-1.11.1.1165`](#clojuretemurin-8-tools-deps-11111165)
 -	[`clojure:temurin-8-tools-deps-1.11.1.1165-alpine`](#clojuretemurin-8-tools-deps-11111165-alpine)
+-	[`clojure:temurin-8-tools-deps-1.11.1.1165-bullseye`](#clojuretemurin-8-tools-deps-11111165-bullseye)
+-	[`clojure:temurin-8-tools-deps-1.11.1.1165-bullseye-slim`](#clojuretemurin-8-tools-deps-11111165-bullseye-slim)
 -	[`clojure:temurin-8-tools-deps-1.11.1.1165-focal`](#clojuretemurin-8-tools-deps-11111165-focal)
 -	[`clojure:temurin-8-tools-deps-1.11.1.1165-jammy`](#clojuretemurin-8-tools-deps-11111165-jammy)
 -	[`clojure:temurin-8-tools-deps-alpine`](#clojuretemurin-8-tools-deps-alpine)
+-	[`clojure:temurin-8-tools-deps-bullseye`](#clojuretemurin-8-tools-deps-bullseye)
+-	[`clojure:temurin-8-tools-deps-bullseye-slim`](#clojuretemurin-8-tools-deps-bullseye-slim)
 -	[`clojure:temurin-8-tools-deps-focal`](#clojuretemurin-8-tools-deps-focal)
 -	[`clojure:temurin-8-tools-deps-jammy`](#clojuretemurin-8-tools-deps-jammy)
 -	[`clojure:tools-deps`](#clojuretools-deps)
@@ -3509,6 +3565,14 @@ CMD ["boot" "repl"]
 		Size: 58.8 MB (58820492 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `clojure:temurin-11-boot-2.8.3-bullseye`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-11-boot-2.8.3-bullseye-slim`
+
+**does not exist** (yet?)
+
 ## `clojure:temurin-11-boot-2.8.3-focal`
 
 ```console
@@ -3931,6 +3995,14 @@ CMD ["boot" "repl"]
 		Size: 58.8 MB (58820492 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `clojure:temurin-11-boot-bullseye`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-11-boot-bullseye-slim`
+
+**does not exist** (yet?)
+
 ## `clojure:temurin-11-boot-focal`
 
 ```console
@@ -4264,6 +4336,14 @@ CMD ["boot" "repl"]
 		Last Modified: Fri, 02 Sep 2022 12:01:34 GMT  
 		Size: 58.8 MB (58815383 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `clojure:temurin-11-bullseye`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-11-bullseye-slim`
+
+**does not exist** (yet?)
 
 ## `clojure:temurin-11-focal`
 
@@ -4997,6 +5077,14 @@ CMD ["lein" "repl"]
 		Size: 4.4 MB (4398672 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `clojure:temurin-11-lein-2.9.10-bullseye`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-11-lein-2.9.10-bullseye-slim`
+
+**does not exist** (yet?)
+
 ## `clojure:temurin-11-lein-2.9.10-focal`
 
 ```console
@@ -5418,6 +5506,14 @@ CMD ["lein" "repl"]
 		Last Modified: Wed, 24 Aug 2022 21:58:16 GMT  
 		Size: 4.4 MB (4398672 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `clojure:temurin-11-lein-bullseye`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-11-lein-bullseye-slim`
+
+**does not exist** (yet?)
 
 ## `clojure:temurin-11-lein-focal`
 
@@ -6145,6 +6241,14 @@ CMD ["clj"]
 		Size: 625.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `clojure:temurin-11-tools-deps-1.11.1.1165-bullseye`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-11-tools-deps-1.11.1.1165-bullseye-slim`
+
+**does not exist** (yet?)
+
 ## `clojure:temurin-11-tools-deps-1.11.1.1165-focal`
 
 ```console
@@ -6536,6 +6640,14 @@ CMD ["clj"]
 		Last Modified: Mon, 19 Sep 2022 19:28:20 GMT  
 		Size: 625.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `clojure:temurin-11-tools-deps-bullseye`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-11-tools-deps-bullseye-slim`
+
+**does not exist** (yet?)
 
 ## `clojure:temurin-11-tools-deps-focal`
 
@@ -7405,6 +7517,14 @@ CMD ["repl"]
 		Size: 402.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `clojure:temurin-17-boot-2.8.3-bullseye`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-17-boot-2.8.3-bullseye-slim`
+
+**does not exist** (yet?)
+
 ## `clojure:temurin-17-boot-2.8.3-focal`
 
 ```console
@@ -7872,6 +7992,14 @@ CMD ["repl"]
 		Size: 402.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `clojure:temurin-17-boot-bullseye`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-17-boot-bullseye-slim`
+
+**does not exist** (yet?)
+
 ## `clojure:temurin-17-boot-focal`
 
 ```console
@@ -8241,6 +8369,14 @@ CMD ["repl"]
 		Last Modified: Fri, 02 Sep 2022 12:03:32 GMT  
 		Size: 403.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `clojure:temurin-17-bullseye`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-17-bullseye-slim`
+
+**does not exist** (yet?)
 
 ## `clojure:temurin-17-focal`
 
@@ -9055,6 +9191,14 @@ CMD ["repl"]
 		Size: 406.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `clojure:temurin-17-lein-2.9.10-bullseye`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-17-lein-2.9.10-bullseye-slim`
+
+**does not exist** (yet?)
+
 ## `clojure:temurin-17-lein-2.9.10-focal`
 
 ```console
@@ -9521,6 +9665,14 @@ CMD ["repl"]
 		Last Modified: Wed, 24 Aug 2022 22:00:59 GMT  
 		Size: 406.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `clojure:temurin-17-lein-bullseye`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-17-lein-bullseye-slim`
+
+**does not exist** (yet?)
 
 ## `clojure:temurin-17-lein-focal`
 
@@ -10329,6 +10481,14 @@ CMD ["-M" "--repl"]
 		Size: 406.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `clojure:temurin-17-tools-deps-1.11.1.1165-bullseye`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-17-tools-deps-1.11.1.1165-bullseye-slim`
+
+**does not exist** (yet?)
+
 ## `clojure:temurin-17-tools-deps-1.11.1.1165-focal`
 
 ```console
@@ -10765,6 +10925,14 @@ CMD ["-M" "--repl"]
 		Last Modified: Mon, 19 Sep 2022 19:29:34 GMT  
 		Size: 406.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `clojure:temurin-17-tools-deps-bullseye`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-17-tools-deps-bullseye-slim`
+
+**does not exist** (yet?)
 
 ## `clojure:temurin-17-tools-deps-focal`
 
@@ -11670,6 +11838,14 @@ CMD ["repl"]
 		Size: 402.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `clojure:temurin-19-boot-2.8.3-bullseye`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-19-boot-2.8.3-bullseye-slim`
+
+**does not exist** (yet?)
+
 ## `clojure:temurin-19-boot-2.8.3-focal`
 
 ```console
@@ -12137,6 +12313,14 @@ CMD ["repl"]
 		Size: 402.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `clojure:temurin-19-boot-bullseye`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-19-boot-bullseye-slim`
+
+**does not exist** (yet?)
+
 ## `clojure:temurin-19-boot-focal`
 
 ```console
@@ -12506,6 +12690,14 @@ CMD ["repl"]
 		Last Modified: Wed, 28 Sep 2022 17:15:58 GMT  
 		Size: 402.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `clojure:temurin-19-bullseye`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-19-bullseye-slim`
+
+**does not exist** (yet?)
 
 ## `clojure:temurin-19-focal`
 
@@ -13320,6 +13512,14 @@ CMD ["repl"]
 		Size: 404.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `clojure:temurin-19-lein-2.9.10-bullseye`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-19-lein-2.9.10-bullseye-slim`
+
+**does not exist** (yet?)
+
 ## `clojure:temurin-19-lein-2.9.10-focal`
 
 ```console
@@ -13786,6 +13986,14 @@ CMD ["repl"]
 		Last Modified: Wed, 28 Sep 2022 00:32:49 GMT  
 		Size: 404.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `clojure:temurin-19-lein-bullseye`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-19-lein-bullseye-slim`
+
+**does not exist** (yet?)
 
 ## `clojure:temurin-19-lein-focal`
 
@@ -14594,6 +14802,14 @@ CMD ["-M" "--repl"]
 		Size: 407.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `clojure:temurin-19-tools-deps-1.11.1.1165-bullseye`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-19-tools-deps-1.11.1.1165-bullseye-slim`
+
+**does not exist** (yet?)
+
 ## `clojure:temurin-19-tools-deps-1.11.1.1165-focal`
 
 ```console
@@ -15030,6 +15246,14 @@ CMD ["-M" "--repl"]
 		Last Modified: Wed, 28 Sep 2022 00:33:24 GMT  
 		Size: 407.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `clojure:temurin-19-tools-deps-bullseye`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-19-tools-deps-bullseye-slim`
+
+**does not exist** (yet?)
 
 ## `clojure:temurin-19-tools-deps-focal`
 
@@ -15869,6 +16093,14 @@ CMD ["boot" "repl"]
 		Size: 58.8 MB (58820327 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `clojure:temurin-8-boot-2.8.3-bullseye`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-8-boot-2.8.3-bullseye-slim`
+
+**does not exist** (yet?)
+
 ## `clojure:temurin-8-boot-2.8.3-focal`
 
 ```console
@@ -16281,6 +16513,14 @@ CMD ["boot" "repl"]
 		Size: 58.8 MB (58820327 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `clojure:temurin-8-boot-bullseye`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-8-boot-bullseye-slim`
+
+**does not exist** (yet?)
+
 ## `clojure:temurin-8-boot-focal`
 
 ```console
@@ -16606,6 +16846,14 @@ CMD ["boot" "repl"]
 		Last Modified: Fri, 02 Sep 2022 11:59:39 GMT  
 		Size: 58.8 MB (58815554 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `clojure:temurin-8-bullseye`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-8-bullseye-slim`
+
+**does not exist** (yet?)
 
 ## `clojure:temurin-8-focal`
 
@@ -17321,6 +17569,14 @@ CMD ["lein" "repl"]
 		Size: 4.4 MB (4398680 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `clojure:temurin-8-lein-2.9.10-bullseye`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-8-lein-2.9.10-bullseye-slim`
+
+**does not exist** (yet?)
+
 ## `clojure:temurin-8-lein-2.9.10-focal`
 
 ```console
@@ -17732,6 +17988,14 @@ CMD ["lein" "repl"]
 		Last Modified: Wed, 17 Aug 2022 01:30:13 GMT  
 		Size: 4.4 MB (4398680 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `clojure:temurin-8-lein-bullseye`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-8-lein-bullseye-slim`
+
+**does not exist** (yet?)
 
 ## `clojure:temurin-8-lein-focal`
 
@@ -18441,6 +18705,14 @@ CMD ["clj"]
 		Size: 623.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `clojure:temurin-8-tools-deps-1.11.1.1165-bullseye`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-8-tools-deps-1.11.1.1165-bullseye-slim`
+
+**does not exist** (yet?)
+
 ## `clojure:temurin-8-tools-deps-1.11.1.1165-focal`
 
 ```console
@@ -18822,6 +19094,14 @@ CMD ["clj"]
 		Last Modified: Mon, 19 Sep 2022 19:27:13 GMT  
 		Size: 623.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `clojure:temurin-8-tools-deps-bullseye`
+
+**does not exist** (yet?)
+
+## `clojure:temurin-8-tools-deps-bullseye-slim`
+
+**does not exist** (yet?)
 
 ## `clojure:temurin-8-tools-deps-focal`
 
