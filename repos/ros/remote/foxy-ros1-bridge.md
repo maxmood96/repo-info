@@ -1,7 +1,7 @@
 ## `ros:foxy-ros1-bridge`
 
 ```console
-$ docker pull ros@sha256:b2604bfd133b7e3dc6b3dd10db191684904699c854f403e04b861d4285f2f6d0
+$ docker pull ros@sha256:1a0b97402c0b17b026f801539b4c59642771e4187f67b47edfebe3ee3cc516e3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,14 +12,14 @@ $ docker pull ros@sha256:b2604bfd133b7e3dc6b3dd10db191684904699c854f403e04b861d4
 ### `ros:foxy-ros1-bridge` - linux; amd64
 
 ```console
-$ docker pull ros@sha256:3f78e8a90b6e387d4514aaae5162af4052a93d94d9c4239f3e53d3954232b05a
+$ docker pull ros@sha256:7019bf6482c82838ed0e91214627c6b969f61da10bb2c27884d90fb7a15a390f
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **348.6 MB (348586994 bytes)**  
+-	Total Size: **348.7 MB (348722353 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2511058a237dd47bcb3f87129403b6fda84704691af09610879963ae37bfb1de`
+-	Image ID: `sha256:91e922dc01501314e74cd8258962b6dae77a06d6dd4a0f671266dd32d410966f`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -68,9 +68,9 @@ ENV ROS1_DISTRO=noetic
 ENV ROS2_DISTRO=foxy
 # Fri, 02 Sep 2022 04:44:42 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     ros-noetic-ros-comm=1.15.14-1*     ros-noetic-roscpp-tutorials=0.10.2-1*     ros-noetic-rospy-tutorials=0.10.2-1*     && rm -rf /var/lib/apt/lists/*
-# Fri, 02 Sep 2022 04:44:53 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends     ros-foxy-ros1-bridge=0.9.6-1*     ros-foxy-demo-nodes-cpp=0.9.3-1*     ros-foxy-demo-nodes-py=0.9.3-1*     && rm -rf /var/lib/apt/lists/*
-# Fri, 02 Sep 2022 04:44:53 GMT
+# Fri, 30 Sep 2022 19:28:33 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends     ros-foxy-ros1-bridge=0.9.6-1*     ros-foxy-demo-nodes-cpp=0.9.4-1*     ros-foxy-demo-nodes-py=0.9.4-1*     && rm -rf /var/lib/apt/lists/*
+# Fri, 30 Sep 2022 19:28:33 GMT
 COPY file:196e0ab4e3b32a1af101eff4dfa0110eb39feb70f4f9f2df3de2e22162513085 in / 
 ```
 
@@ -131,26 +131,26 @@ COPY file:196e0ab4e3b32a1af101eff4dfa0110eb39feb70f4f9f2df3de2e22162513085 in /
 		Last Modified: Fri, 02 Sep 2022 05:10:29 GMT  
 		Size: 76.4 MB (76429691 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a059b78d35d8a1d65a5ccf510075adf5ea99daa2406f4d49535cefc53a951c2f`  
-		Last Modified: Fri, 02 Sep 2022 05:10:19 GMT  
-		Size: 21.5 MB (21536176 bytes)  
+	-	`sha256:91a182809698758bdcf53b2c3c31151c1759efd1a6c0674ade2e99e9ceca3221`  
+		Last Modified: Fri, 30 Sep 2022 19:30:05 GMT  
+		Size: 21.7 MB (21671536 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8666bcd29d3c8ee38ee47d39511a6abd61f7528a39d1298f59510fa77ece2ec6`  
-		Last Modified: Fri, 02 Sep 2022 05:10:15 GMT  
-		Size: 248.0 B  
+	-	`sha256:58e34e252b2cc92d5a035b080702553e67908606bd07788afa774bc23a7db2e5`  
+		Last Modified: Fri, 30 Sep 2022 19:30:00 GMT  
+		Size: 247.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ros:foxy-ros1-bridge` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:93324f0bbf50d7c100828255acace9d27a2f96869f1a518f64b9979a1b3401d3
+$ docker pull ros@sha256:2aae4ed32137ebeef84ed5c1fb571d1130ea4aef9fd955ca09e50f31dfc6326a
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **316.3 MB (316260468 bytes)**  
+-	Total Size: **316.4 MB (316402985 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:28974b4228d1ba4a1d1b9c027a3034eae9f83a201f4bcce4594f696c5aed09b5`
+-	Image ID: `sha256:deecf343d9441be7dd5f7f4e27af589e8f2af1c72feb0775c5e2f462e90e848f`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -199,9 +199,9 @@ ENV ROS1_DISTRO=noetic
 ENV ROS2_DISTRO=foxy
 # Fri, 02 Sep 2022 06:12:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     ros-noetic-ros-comm=1.15.14-1*     ros-noetic-roscpp-tutorials=0.10.2-1*     ros-noetic-rospy-tutorials=0.10.2-1*     && rm -rf /var/lib/apt/lists/*
-# Fri, 02 Sep 2022 06:12:25 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends     ros-foxy-ros1-bridge=0.9.6-1*     ros-foxy-demo-nodes-cpp=0.9.3-1*     ros-foxy-demo-nodes-py=0.9.3-1*     && rm -rf /var/lib/apt/lists/*
-# Fri, 02 Sep 2022 06:12:27 GMT
+# Fri, 30 Sep 2022 19:05:17 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends     ros-foxy-ros1-bridge=0.9.6-1*     ros-foxy-demo-nodes-cpp=0.9.4-1*     ros-foxy-demo-nodes-py=0.9.4-1*     && rm -rf /var/lib/apt/lists/*
+# Fri, 30 Sep 2022 19:05:19 GMT
 COPY file:196e0ab4e3b32a1af101eff4dfa0110eb39feb70f4f9f2df3de2e22162513085 in / 
 ```
 
@@ -258,11 +258,11 @@ COPY file:196e0ab4e3b32a1af101eff4dfa0110eb39feb70f4f9f2df3de2e22162513085 in /
 		Last Modified: Fri, 02 Sep 2022 06:32:57 GMT  
 		Size: 76.3 MB (76272363 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:70eb24295f6999a7615200529277faaa909fe8e54299869367a29d93d3dd292b`  
-		Last Modified: Fri, 02 Sep 2022 06:32:45 GMT  
-		Size: 14.0 MB (13957088 bytes)  
+	-	`sha256:2b9e3a5fcc9fb676a59a0869e49e77e55c8a8c438e9734c2bf6a146128223188`  
+		Last Modified: Fri, 30 Sep 2022 19:07:56 GMT  
+		Size: 14.1 MB (14099602 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7845311198d12e618960114780dc461e807ac599281d889b1da242ecd02d0575`  
-		Last Modified: Fri, 02 Sep 2022 06:32:42 GMT  
-		Size: 246.0 B  
+	-	`sha256:47403f1e8c6016ef023fadd7d95a9ccfe4cb67cc7ec15170b7fe9b9363e5c6d4`  
+		Last Modified: Fri, 30 Sep 2022 19:07:53 GMT  
+		Size: 249.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
