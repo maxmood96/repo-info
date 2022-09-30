@@ -3000,20 +3000,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-rsvg-2.0/copyright`, `/usr/share/
 - `Unlicense,`
 - `zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris librsvg=2.54.4+dfsg-1
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.54.4%2bdfsg-1.dsc' librsvg_2.54.4+dfsg-1.dsc 2879 SHA256:d338eeaba5672e52acf1403bce42cbff438ef2c22c5cf57edd41d962de023b1f
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.54.4%2bdfsg.orig.tar.xz' librsvg_2.54.4+dfsg.orig.tar.xz 20610076 SHA256:1ed186ce708c867f0fa8ed2c2b9e4ed9b41db86f56ffcf2e4520e94b1aa98f39
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.54.4%2bdfsg-1.debian.tar.xz' librsvg_2.54.4+dfsg-1.debian.tar.xz 34352 SHA256:067d28674c2341e423741c102c417a8e3484c25b12a1ca86aaebcc1eae3bf232
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/librsvg/2.54.4+dfsg-1/
 
-- https://sources.debian.net/src/librsvg/2.54.4+dfsg-1/ (for browsing the source)
-- https://sources.debian.net/src/librsvg/2.54.4+dfsg-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/librsvg/2.54.4+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libseccomp=2.5.4-1`
 
@@ -3896,20 +3889,13 @@ Licenses: (parsed from: `/usr/share/doc/libmariadb-dev/copyright`, `/usr/share/d
 - `unlimited-free-doc`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mariadb-10.6=1:10.6.9-1
-'http://deb.debian.org/debian/pool/main/m/mariadb-10.6/mariadb-10.6_10.6.9-1.dsc' mariadb-10.6_10.6.9-1.dsc 4556 SHA256:51d299372cabb789862db3d05e03bd57a8c7fec027b153bad803696e8bc11a72
-'http://deb.debian.org/debian/pool/main/m/mariadb-10.6/mariadb-10.6_10.6.9.orig.tar.gz' mariadb-10.6_10.6.9.orig.tar.gz 93226650 SHA256:c6bb57c5685d97374c7a7f0e020a79d6112df81da69a8e8bc3158f07bd3a0a1d
-'http://deb.debian.org/debian/pool/main/m/mariadb-10.6/mariadb-10.6_10.6.9-1.debian.tar.xz' mariadb-10.6_10.6.9-1.debian.tar.xz 221704 SHA256:917439de7eb824537488a35f3ba2b866ba12a7879cc2d37c6d3083b6c5e316a0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mariadb-10.6/1:10.6.9-1/
 
-- https://sources.debian.net/src/mariadb-10.6/1:10.6.9-1/ (for browsing the source)
-- https://sources.debian.net/src/mariadb-10.6/1:10.6.9-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mariadb-10.6/1:10.6.9-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mawk=1.3.4.20200120-3.1`
 
@@ -4209,20 +4195,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.49.0-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.49.0-1.dsc' nghttp2_1.49.0-1.dsc 2511 SHA256:6bb4bb3bb6c19afab6ab25da4232ba3c941820aea838c6358a472c3cdc5b7fae
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.49.0.orig.tar.bz2' nghttp2_1.49.0.orig.tar.bz2 4690333 SHA256:2cd4db7d75f71494153249cbe94a092da4c6ecd74240f8ab18cf644d9d65f6ee
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.49.0-1.debian.tar.xz' nghttp2_1.49.0-1.debian.tar.xz 12860 SHA256:9d3b2bdf7d0952aa6e2c8f030c7d6a33105805806d07cc73403a5db0efa4ba8f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nghttp2/1.49.0-1/
 
-- https://sources.debian.net/src/nghttp2/1.49.0-1/ (for browsing the source)
-- https://sources.debian.net/src/nghttp2/1.49.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nghttp2/1.49.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `npth=1.6-3`
 

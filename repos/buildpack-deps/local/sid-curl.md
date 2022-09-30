@@ -1656,20 +1656,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.49.0-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.49.0-1.dsc' nghttp2_1.49.0-1.dsc 2511 SHA256:6bb4bb3bb6c19afab6ab25da4232ba3c941820aea838c6358a472c3cdc5b7fae
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.49.0.orig.tar.bz2' nghttp2_1.49.0.orig.tar.bz2 4690333 SHA256:2cd4db7d75f71494153249cbe94a092da4c6ecd74240f8ab18cf644d9d65f6ee
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.49.0-1.debian.tar.xz' nghttp2_1.49.0-1.debian.tar.xz 12860 SHA256:9d3b2bdf7d0952aa6e2c8f030c7d6a33105805806d07cc73403a5db0efa4ba8f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nghttp2/1.49.0-1/
 
-- https://sources.debian.net/src/nghttp2/1.49.0-1/ (for browsing the source)
-- https://sources.debian.net/src/nghttp2/1.49.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nghttp2/1.49.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `npth=1.6-3`
 
@@ -2141,21 +2134,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2022c-1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2022c-1.dsc' tzdata_2022c-1.dsc 2205 SHA256:77cd066ea4b32eebb1f0bcd940760ee798d296d9f41e47d63a57e01f3fe14861
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2022c.orig.tar.gz' tzdata_2022c.orig.tar.gz 432721 SHA256:6974f4e348bf2323274b56dff9e7500247e3159eaa4b485dfa0cd66e75c14bfe
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2022c.orig.tar.gz.asc' tzdata_2022c.orig.tar.gz.asc 833 SHA256:f68abba02768861fd6c77800fffacfb298270a60eebf9f4c3078aa9be53adec9
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2022c-1.debian.tar.xz' tzdata_2022c-1.debian.tar.xz 111928 SHA256:a9404aed669281a24dfe637846efe067e7600456c5935286998beb7260a7d7c2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2022c-1/
 
-- https://sources.debian.net/src/tzdata/2022c-1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2022c-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2022c-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `usrmerge=29`
 
