@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:75bfa5a51d59b712fb85ae35e20432f5b3c36ead7161dfb7f33c9d022382d791`
-- Created: `2022-09-07T20:34:04.851054865Z`
-- Virtual Size: ~ 318.17 Mb  
+- Image ID: `sha256:3d83b1dcfa3e725d2c342d94f56276c2ccc4d0abb6c33764548cc600ffbef39d`
+- Created: `2022-09-29T16:56:46.308719447Z`
+- Virtual Size: ~ 318.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312`
-  - `PHP_VERSION=7.4.30`
-  - `PHP_URL=https://www.php.net/distributions/php-7.4.30.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.30.tar.xz.asc`
-  - `PHP_SHA256=ea72a34f32c67e79ac2da7dfe96177f3c451c3eefae5810ba13312ed398ba70d`
+  - `PHP_VERSION=7.4.32`
+  - `PHP_URL=https://www.php.net/distributions/php-7.4.32.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.32.tar.xz.asc`
+  - `PHP_SHA256=323332c991e8ef30b1d219cb10f5e30f11b5f319ce4c6642a5470d75ade7864a`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
   - `JOOMLA_VERSION=4.2.2`
   - `JOOMLA_SHA512=388e91bacee7ff1e07d7fc02df9fb8b5728f960fb4eb8f75679891b029d27ecb7f692b420259bae107e212ca88cecc4804ae0f61a1e771c7b6dd0208cdb04d7b`
@@ -321,16 +321,16 @@ AFL-2.1 OR GPL-2.0-or-later
 ### `apk` package: `expat`
 
 ```console
-expat-2.4.8-r0 description:
+expat-2.4.9-r0 description:
 XML Parser library written in C
 
-expat-2.4.8-r0 webpage:
+expat-2.4.9-r0 webpage:
 https://libexpat.github.io/
 
-expat-2.4.8-r0 installed size:
+expat-2.4.9-r0 installed size:
 192 KiB
 
-expat-2.4.8-r0 license:
+expat-2.4.9-r0 license:
 MIT
 
 ```
@@ -729,16 +729,16 @@ OpenSSL
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.83.1-r2 description:
+libcurl-7.83.1-r3 description:
 The multiprotocol file transfer library
 
-libcurl-7.83.1-r2 webpage:
+libcurl-7.83.1-r3 webpage:
 https://curl.se/
 
-libcurl-7.83.1-r2 installed size:
-512 KiB
+libcurl-7.83.1-r3 installed size:
+516 KiB
 
-libcurl-7.83.1-r2 license:
+libcurl-7.83.1-r3 license:
 curl
 
 ```
@@ -882,16 +882,16 @@ Apache-2.0
 ### `apk` package: `libldap`
 
 ```console
-libldap-2.6.3-r0 description:
+libldap-2.6.3-r1 description:
 OpenLDAP libraries
 
-libldap-2.6.3-r0 webpage:
+libldap-2.6.3-r1 webpage:
 https://www.openldap.org/
 
-libldap-2.6.3-r0 installed size:
+libldap-2.6.3-r1 installed size:
 400 KiB
 
-libldap-2.6.3-r0 license:
+libldap-2.6.3-r1 license:
 OLDAP-2.8
 
 ```
@@ -967,16 +967,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-14.4-r1 description:
+libpq-14.5-r0 description:
 PostgreSQL client library
 
-libpq-14.4-r1 webpage:
+libpq-14.5-r0 webpage:
 https://www.postgresql.org/
 
-libpq-14.4-r1 installed size:
+libpq-14.5-r0 installed size:
 328 KiB
 
-libpq-14.4-r1 license:
+libpq-14.5-r0 license:
 PostgreSQL
 
 ```
@@ -1222,16 +1222,16 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.9.14-r0 description:
+libxml2-2.9.14-r1 description:
 XML parsing library, version 2
 
-libxml2-2.9.14-r0 webpage:
+libxml2-2.9.14-r1 webpage:
 http://www.xmlsoft.org/
 
-libxml2-2.9.14-r0 installed size:
+libxml2-2.9.14-r1 installed size:
 1200 KiB
 
-libxml2-2.9.14-r0 license:
+libxml2-2.9.14-r1 license:
 MIT
 
 ```

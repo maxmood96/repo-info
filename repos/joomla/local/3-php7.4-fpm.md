@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7a8215c12f74ace312770bb43611df29df0650b9ba540bd7764ef1337390aaec`
-- Created: `2022-09-13T20:24:25.158671706Z`
+- Image ID: `sha256:771baa097de6ed68041e33fffe5cc52319bb9b9a9f8841c5d50d17f16996c069`
+- Created: `2022-09-29T17:06:23.994108121Z`
 - Virtual Size: ~ 581.75 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312`
-  - `PHP_VERSION=7.4.30`
-  - `PHP_URL=https://www.php.net/distributions/php-7.4.30.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.30.tar.xz.asc`
-  - `PHP_SHA256=ea72a34f32c67e79ac2da7dfe96177f3c451c3eefae5810ba13312ed398ba70d`
+  - `PHP_VERSION=7.4.32`
+  - `PHP_URL=https://www.php.net/distributions/php-7.4.32.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.32.tar.xz.asc`
+  - `PHP_SHA256=323332c991e8ef30b1d219cb10f5e30f11b5f319ce4c6642a5470d75ade7864a`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
   - `JOOMLA_VERSION=3.10.11`
   - `JOOMLA_SHA512=2c7db516ea07fa869cfff0ee01c9d141a8ac513c8040db6502e111a3d34cc681f6fee033006eeff0aa7f507a30280276c68af61c4d7595166bf9fd57728a9b44`
@@ -895,11 +895,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/e2fsprogs/1.46.2-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/e2fsprogs/1.46.2-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `expat=2.2.10-2+deb11u3`
+### `dpkg` source package: `expat=2.2.10-2+deb11u4`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.2.10-2+deb11u3`
+- `libexpat1:amd64=2.2.10-2+deb11u4`
 
 Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
@@ -908,17 +908,17 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris expat=2.2.10-2+deb11u3
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.10-2%2bdeb11u3.dsc' expat_2.2.10-2+deb11u3.dsc 2175 SHA256:bf66d8eca15055af1961c95703204fb71f48c0bfbb9db7b2a7eccce19e444555
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.10.orig.tar.gz' expat_2.2.10.orig.tar.gz 8276395 SHA256:62e280f5fd29a5b70973f623e20a7412c3e3912c2684cb0e462e2c881be129e1
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.10-2%2bdeb11u3.debian.tar.xz' expat_2.2.10-2+deb11u3.debian.tar.xz 27188 SHA256:03a961cdbe42a5ebee68e072090821995730502cb3822fb59f0c642688fb9f51
+$ apt-get source -qq --print-uris expat=2.2.10-2+deb11u4
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.2.10-2%2bdeb11u4.dsc' expat_2.2.10-2+deb11u4.dsc 2020 SHA256:a86fa66526a76b784044975e978a070d5b17154c0b76e264fda802811ca7ec74
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.2.10.orig.tar.gz' expat_2.2.10.orig.tar.gz 8276395 SHA256:62e280f5fd29a5b70973f623e20a7412c3e3912c2684cb0e462e2c881be129e1
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.2.10-2%2bdeb11u4.debian.tar.xz' expat_2.2.10-2+deb11u4.debian.tar.xz 28500 SHA256:54ecdf492d5c77cefe6aab7ea5cff6e448f073a258fc7031cafe2c76fd699d09
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/expat/2.2.10-2+deb11u3/ (for browsing the source)
-- https://sources.debian.net/src/expat/2.2.10-2+deb11u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/expat/2.2.10-2+deb11u3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/expat/2.2.10-2+deb11u4/ (for browsing the source)
+- https://sources.debian.net/src/expat/2.2.10-2+deb11u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/expat/2.2.10-2+deb11u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `fftw3=3.3.8-2`
 

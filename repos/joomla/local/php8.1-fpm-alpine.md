@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5f4bb86a000fbf7fe73037de43c6947f0449fc6ed6e9a8ef476d1d0d5ac97168`
-- Created: `2022-09-07T20:35:08.707129372Z`
-- Virtual Size: ~ 325.31 Mb  
+- Image ID: `sha256:e600375700ff558d880a4a6f9342964c18efc916bb2503804262c596a93d2460`
+- Created: `2022-09-29T21:04:47.805714307Z`
+- Virtual Size: ~ 325.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD`
-  - `PHP_VERSION=8.1.10`
-  - `PHP_URL=https://www.php.net/distributions/php-8.1.10.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.10.tar.xz.asc`
-  - `PHP_SHA256=90e7120c77ee83630e6ac928d23bc6396603d62d83a3cf5df8a450d2e3070162`
+  - `PHP_VERSION=8.1.11`
+  - `PHP_URL=https://www.php.net/distributions/php-8.1.11.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.11.tar.xz.asc`
+  - `PHP_SHA256=3005198d7303f87ab31bc30695de76e8ad62783f806b6ab9744da59fe41cc5bd`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
   - `JOOMLA_VERSION=4.2.2`
   - `JOOMLA_SHA512=388e91bacee7ff1e07d7fc02df9fb8b5728f960fb4eb8f75679891b029d27ecb7f692b420259bae107e212ca88cecc4804ae0f61a1e771c7b6dd0208cdb04d7b`
@@ -321,16 +321,16 @@ AFL-2.1 OR GPL-2.0-or-later
 ### `apk` package: `expat`
 
 ```console
-expat-2.4.8-r0 description:
+expat-2.4.9-r0 description:
 XML Parser library written in C
 
-expat-2.4.8-r0 webpage:
+expat-2.4.9-r0 webpage:
 https://libexpat.github.io/
 
-expat-2.4.8-r0 installed size:
+expat-2.4.9-r0 installed size:
 192 KiB
 
-expat-2.4.8-r0 license:
+expat-2.4.9-r0 license:
 MIT
 
 ```
@@ -882,16 +882,16 @@ Apache-2.0
 ### `apk` package: `libldap`
 
 ```console
-libldap-2.6.3-r0 description:
+libldap-2.6.3-r1 description:
 OpenLDAP libraries
 
-libldap-2.6.3-r0 webpage:
+libldap-2.6.3-r1 webpage:
 https://www.openldap.org/
 
-libldap-2.6.3-r0 installed size:
+libldap-2.6.3-r1 installed size:
 400 KiB
 
-libldap-2.6.3-r0 license:
+libldap-2.6.3-r1 license:
 OLDAP-2.8
 
 ```
