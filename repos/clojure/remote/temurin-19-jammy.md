@@ -1,7 +1,7 @@
 ## `clojure:temurin-19-jammy`
 
 ```console
-$ docker pull clojure@sha256:e6040b2e10ec7b761116c95b252b0c4dc41d48d0a8c7113dce574a46fd6d8fcd
+$ docker pull clojure@sha256:6d6da0304a75cfcbe63980ad65b58c78ff33dc2c4f19a268e71caf3a8285a94c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -93,14 +93,14 @@ CMD ["-M" "--repl"]
 ### `clojure:temurin-19-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:2ff2a1ab6a042a13f68b32cc7d1af51dec6d29d58e5173d604ea3787c1d15f9c
+$ docker pull clojure@sha256:8201244ca0df8310a0c4a7eff4b44e50637f7934b031eea63819e99e31ce662b
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **300.5 MB (300544478 bytes)**  
+-	Total Size: **300.5 MB (300544143 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3bcf287cb2a503f022ce293cb2d0c776fd83849e3e0671bb27d30e555a992d07`
+-	Image ID: `sha256:d911f5181df35a274ac1876b4b0cd8d1fa2d4190abc068aec2721ab43cfd58ac`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
@@ -119,25 +119,25 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl wget ca-certificates fontconfig locales binutils     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
 # Mon, 26 Sep 2022 22:41:42 GMT
 ENV JAVA_VERSION=jdk-19+36
-# Wed, 28 Sep 2022 16:43:51 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='9b5de40b0f6fe0ab32e8d035720dbbc87bf41b758ed67351ad781ca6505f5294';          BINARY_URL='https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19%2B36/OpenJDK19U-jdk_aarch64_linux_hotspot_19_36.tar.gz';          ;;        armhf|arm)          ESUM='34a786548033391de80b857fe02a9c7bd42fcb94243e7273e89012df73f1adef';          BINARY_URL='https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19%2B36/OpenJDK19U-jdk_arm_linux_hotspot_19_36.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='55cc9382227433fa7cc1486a12af59d5bcbea9c40eaeae9608278e056b7d86db';          BINARY_URL='https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19%2B36/OpenJDK19U-jdk_ppc64le_linux_hotspot_19_36.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='d10becfc1ea6586180246455ee8d462875f97655416a7d7c5a1c60d0570dbc8f';          BINARY_URL='https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19%2B36/OpenJDK19U-jdk_x64_linux_hotspot_19_36.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
-# Wed, 28 Sep 2022 16:43:54 GMT
+# Mon, 03 Oct 2022 22:41:57 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='9b5de40b0f6fe0ab32e8d035720dbbc87bf41b758ed67351ad781ca6505f5294';          BINARY_URL='https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19%2B36/OpenJDK19U-jdk_aarch64_linux_hotspot_19_36.tar.gz';          ;;        armhf|arm)          ESUM='34a786548033391de80b857fe02a9c7bd42fcb94243e7273e89012df73f1adef';          BINARY_URL='https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19%2B36/OpenJDK19U-jdk_arm_linux_hotspot_19_36.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='55cc9382227433fa7cc1486a12af59d5bcbea9c40eaeae9608278e056b7d86db';          BINARY_URL='https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19%2B36/OpenJDK19U-jdk_ppc64le_linux_hotspot_19_36.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='a5452599d0172ff6a72ae92436042ee8ce0598583197d6ca5c3501a1b379eb0c';          BINARY_URL='https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19%2B36/OpenJDK19U-jdk_s390x_linux_hotspot_19_36.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='d10becfc1ea6586180246455ee8d462875f97655416a7d7c5a1c60d0570dbc8f';          BINARY_URL='https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19%2B36/OpenJDK19U-jdk_x64_linux_hotspot_19_36.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
+# Mon, 03 Oct 2022 22:42:00 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Wed, 28 Sep 2022 16:43:54 GMT
+# Mon, 03 Oct 2022 22:42:01 GMT
 CMD ["jshell"]
-# Wed, 28 Sep 2022 17:11:26 GMT
+# Mon, 03 Oct 2022 23:10:56 GMT
 ENV CLOJURE_VERSION=1.11.1.1165
-# Wed, 28 Sep 2022 17:11:27 GMT
+# Mon, 03 Oct 2022 23:10:56 GMT
 WORKDIR /tmp
-# Wed, 28 Sep 2022 17:11:46 GMT
+# Mon, 03 Oct 2022 23:11:16 GMT
 RUN apt-get update && apt-get install -y make git rlwrap wget && rm -rf /var/lib/apt/lists/* && wget https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "72d662bdc99b79037f9e34996272384de35e01e0416d8eb79cc940ee0f0fc808 *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" && apt-get purge -y --auto-remove wget
-# Wed, 28 Sep 2022 17:11:48 GMT
+# Mon, 03 Oct 2022 23:11:17 GMT
 COPY file:b0aef3ea203de7b5c2ea645debf58c8231445a2e3070b72749b54614f4a89b82 in /usr/local/bin/rlwrap 
-# Wed, 28 Sep 2022 17:11:49 GMT
+# Mon, 03 Oct 2022 23:11:18 GMT
 COPY file:137b40904568e30898cd031ef34f77e7f132846ba4eec91d04ae4b93dddfbb8d in /usr/local/bin/entrypoint 
-# Wed, 28 Sep 2022 17:11:49 GMT
+# Mon, 03 Oct 2022 23:11:18 GMT
 ENTRYPOINT ["entrypoint"]
-# Wed, 28 Sep 2022 17:11:50 GMT
+# Mon, 03 Oct 2022 23:11:19 GMT
 CMD ["-M" "--repl"]
 ```
 
@@ -150,23 +150,23 @@ CMD ["-M" "--repl"]
 		Last Modified: Fri, 02 Sep 2022 05:07:45 GMT  
 		Size: 18.4 MB (18417910 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:980237442ed35d703ed110f523c1dc0cad40f02d14a9d1621d5d480c9c71ffde`  
-		Last Modified: Wed, 28 Sep 2022 16:48:35 GMT  
-		Size: 199.6 MB (199590008 bytes)  
+	-	`sha256:80329949140dc0d2f9a97d9eac377fbb3291ffcce12f40d76fea7ba52accd506`  
+		Last Modified: Mon, 03 Oct 2022 22:46:16 GMT  
+		Size: 199.6 MB (199589995 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:965373d43f3d984e35d04cb6e68f2b3fb078b6def26b06def7e80458570f07bb`  
-		Last Modified: Wed, 28 Sep 2022 16:48:14 GMT  
-		Size: 157.0 B  
+	-	`sha256:5c37d3be7dcba222cfee36149ecf0c4d558d89c529b0a45a29b7c1f1afd7d25f`  
+		Last Modified: Mon, 03 Oct 2022 22:45:56 GMT  
+		Size: 158.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e60056be1827890cddb7193467d1fc76f9d2377d2adac3f0214c992b6cc7a9fb`  
-		Last Modified: Wed, 28 Sep 2022 17:17:20 GMT  
-		Size: 54.2 MB (54154044 bytes)  
+	-	`sha256:4eb115cce56c9b02f1cb532a97ba7fe63747faf5074ad8357664ec6bf54d8d33`  
+		Last Modified: Mon, 03 Oct 2022 23:19:19 GMT  
+		Size: 54.2 MB (54153714 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a4407350512be0bbdf44b47705cb8db0f76928c57d864859df59c90483edd4e`  
-		Last Modified: Wed, 28 Sep 2022 17:17:13 GMT  
-		Size: 617.0 B  
+	-	`sha256:542e9a56608457ac4ec16d10cb6588966cf0b7666af2dab0ff55e007870e70cf`  
+		Last Modified: Mon, 03 Oct 2022 23:19:12 GMT  
+		Size: 622.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a1c61795ba617e7e87c97ad2e43c39c8dd3882568b5ebb822c2c1e7b9e52610`  
-		Last Modified: Wed, 28 Sep 2022 17:17:13 GMT  
-		Size: 402.0 B  
+	-	`sha256:f8494976deb7d3bbfd05df7d871eb5f20f43a307a61c08c997b66c8aceee194d`  
+		Last Modified: Mon, 03 Oct 2022 23:19:12 GMT  
+		Size: 404.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
