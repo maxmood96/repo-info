@@ -67,13 +67,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.5.2
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.5.2.dsc' apt_2.5.2.dsc 2933 SHA512:cd7d847720e087fd1797009432695ab3aa305b3c9b8064d8e24f8f673f70cddff2c3da307a64f00004fc69a5989a41bae3b4a42447475afc352b79113bee7a5d
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.5.2.tar.xz' apt_2.5.2.tar.xz 2252960 SHA512:a0c7ec62078bbde5e62f3c565df675c1cac7974a3a5b045d91aa694b3091a92b31f540bd5d1c054b8b0b132048c47f7ec79c4e287432f05c80b7473c29d3f35e
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/apt/2.5.2/
+
 
 ### `dpkg` source package: `attr=1:2.5.1-1build1`
 
@@ -628,15 +628,9 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.7.7-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.7-2ubuntu1.dsc' gnutls28_3.7.7-2ubuntu1.dsc 3549 SHA512:bdd9498b8574b0982b7dfd5c542d5198cdb460517f2fcc47c971252a12dbdfb0fbce75674e8271b3e23ec58ee63abb2bf43709786149b6b9012e25250126531f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.7.orig.tar.xz' gnutls28_3.7.7.orig.tar.xz 6351664 SHA512:ba00b20126379ec7e96c6bfa606cfb7bb0d9a5853318b29b5278a42a85ae40d39d8442778938e1f165debcdb1adaf9c63bcec59a4eb3387dd1ac99b08bcc5c08
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.7.orig.tar.xz.asc' gnutls28_3.7.7.orig.tar.xz.asc 996 SHA512:641da6364b46a20c36f685a618b9108bf65fd4e8901da7594edfdaf369e8a97698ab349de416b919d3e15c452db6d15e94e6dfdfe9fa2b91ce2e9b787829a366
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.7-2ubuntu1.debian.tar.xz' gnutls28_3.7.7-2ubuntu1.debian.tar.xz 69492 SHA512:6024bc56d3913c5ecbdb25e72c8da54e9a914363ea437917231b8e3ee08c32269d50123f22f1879e184e816910a01e1b4e59f8d39221915abc7b3ec7c64708ff
-```
 
 ### `dpkg` source package: `grep=3.7-1build1`
 
@@ -1411,15 +1405,9 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 - `permissive-like-automake-output`
 - `same-as-rest-of-p11kit`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris p11-kit=0.24.1-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.24.1-1ubuntu1.dsc' p11-kit_0.24.1-1ubuntu1.dsc 2434 SHA512:ac34e9a2fa912fe4cd01e9ba2dcc33bcd06a63f9abfcdf1dde5b782f183ec79b90b9c19dd8d78c98aaee341159d72a05a83d0883e0849bcd77d829be626c4237
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.24.1.orig.tar.xz' p11-kit_0.24.1.orig.tar.xz 838304 SHA512:8cf170c714bb9e0cf3df93e8ec55b8e3c55cabf2c6a27f177ac6de8b8028985df2ca0216d3215d6828dc2ae3095c4e1a4febe8cb26b88ec321defc66bb011e81
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.24.1.orig.tar.xz.asc' p11-kit_0.24.1.orig.tar.xz.asc 833 SHA512:c9cb909a9443cc554c32d7816add59a1b1225186517a0bc8dc267a638a93de070a6ce57c0bafaf1a2b0a03acbdb0a3c1fdd88a615f402ade13e41d20463a7803
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.24.1-1ubuntu1.debian.tar.xz' p11-kit_0.24.1-1ubuntu1.debian.tar.xz 30420 SHA512:d94471c75f03e26d409693378ecab6b58b1995ca3619783a9b8034550f6fa845b375297bd34742bbeff111b9e17dd6a4df9c6d2ce4153b31e273971ad24ecbad
-```
 
 ### `dpkg` source package: `pam=1.5.2-2ubuntu1`
 
@@ -1588,14 +1576,13 @@ Licenses: (parsed from: `/usr/share/doc/libreadline8/copyright`, `/usr/share/doc
 - `GFDL`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris readline=8.2~rc2-2
-'http://archive.ubuntu.com/ubuntu/pool/main/r/readline/readline_8.2%7erc2-2.dsc' readline_8.2~rc2-2.dsc 2640 SHA512:cd7245196d4b11b06e0b7dbfa2d07098828af81d8aed6426c0a31f166ef7c96180e501969b307f35734849abc276c55f64858de3b8eb4f8f28399284fd059b20
-'http://archive.ubuntu.com/ubuntu/pool/main/r/readline/readline_8.2%7erc2.orig.tar.gz' readline_8.2~rc2.orig.tar.gz 3041602 SHA512:cc327569e138a6d4a5fd41c6092d6229fba89befd2d68996b6b2b60baa2d2f7805666260327779571a5f82670c55daa36c9bd773ea818e5722ad808bbc6eeddd
-'http://archive.ubuntu.com/ubuntu/pool/main/r/readline/readline_8.2%7erc2-2.debian.tar.xz' readline_8.2~rc2-2.debian.tar.xz 29112 SHA512:efc0877777d8add0f82134074e50f4b8c19898fc94dc5b51bee40139fb7607e5f4044945e508d60a64fec7b63111cbdd2a813bd977419ade500239e08e4de18b
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/readline/8.2~rc2-2/
+
 
 ### `dpkg` source package: `rtmpdump=2.4+20151223.gitfa8646d.1-2build4`
 

@@ -154,19 +154,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.5.2
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.5.2.dsc' apt_2.5.2.dsc 2933 SHA256:5bc7d3737d6e281a32ca59c785747cc9f23eafaa5b71ee2d9016b7290f2c54fe
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.5.2.tar.xz' apt_2.5.2.tar.xz 2252960 SHA256:cc5c374c2831c9e390d9c5f08029a81c3ca2b778abc0dd1426c81c657628fe9d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/2.5.2/
 
-- https://sources.debian.net/src/apt/2.5.2/ (for browsing the source)
-- https://sources.debian.net/src/apt/2.5.2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/2.5.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.1-1`
 
@@ -558,21 +552,13 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris coreutils=8.32-4.1
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_8.32-4.1.dsc' coreutils_8.32-4.1.dsc 2104 SHA256:3f518b32292c1be81069ee884acd1aac09f3d949280dc1a7fc1488160eeb495e
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_8.32.orig.tar.xz' coreutils_8.32.orig.tar.xz 5547836 SHA256:4458d8de7849df44ccab15e16b1548b285224dbba5f08fac070c1c0e0bcc4cfa
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_8.32.orig.tar.xz.asc' coreutils_8.32.orig.tar.xz.asc 833 SHA256:71b944375b322ba77c9c56b687b48df885c676d4fd7c465b3706713a9b62ce0a
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_8.32-4.1.debian.tar.xz' coreutils_8.32-4.1.debian.tar.xz 33124 SHA256:79fb30407aa09ed82a37deb11c8f105d7bda6a731a92f6274ceee6ac610aacf6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/coreutils/8.32-4.1/
 
-- https://sources.debian.net/src/coreutils/8.32-4.1/ (for browsing the source)
-- https://sources.debian.net/src/coreutils/8.32-4.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/coreutils/8.32-4.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `curl=7.85.0-1`
 
@@ -970,20 +956,13 @@ Licenses: (parsed from: `/usr/share/doc/libelf1/copyright`)
 - `GPL-3`
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris elfutils=0.187-2
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.187-2.dsc' elfutils_0.187-2.dsc 3222 SHA256:db68829670454a9999f9f7f6577ca30549c4fbd1ff1696ba4721eadf588e00f1
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.187.orig.tar.bz2' elfutils_0.187.orig.tar.bz2 9240221 SHA256:e70b0dfbe610f90c4d1fe0d71af142a4e25c3c4ef9ebab8d2d72b65159d454c8
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.187-2.debian.tar.xz' elfutils_0.187-2.debian.tar.xz 37372 SHA256:de95d5e7d69aec17a09a9136457f012cb5a499df92e8e3e75d0a4bc9eb3efe6b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/elfutils/0.187-2/
 
-- https://sources.debian.net/src/elfutils/0.187-2/ (for browsing the source)
-- https://sources.debian.net/src/elfutils/0.187-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/elfutils/0.187-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `expat=2.4.8-1`
 
@@ -5280,21 +5259,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2022c-1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2022c-1.dsc' tzdata_2022c-1.dsc 2205 SHA256:77cd066ea4b32eebb1f0bcd940760ee798d296d9f41e47d63a57e01f3fe14861
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2022c.orig.tar.gz' tzdata_2022c.orig.tar.gz 432721 SHA256:6974f4e348bf2323274b56dff9e7500247e3159eaa4b485dfa0cd66e75c14bfe
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2022c.orig.tar.gz.asc' tzdata_2022c.orig.tar.gz.asc 833 SHA256:f68abba02768861fd6c77800fffacfb298270a60eebf9f4c3078aa9be53adec9
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2022c-1.debian.tar.xz' tzdata_2022c-1.debian.tar.xz 111928 SHA256:a9404aed669281a24dfe637846efe067e7600456c5935286998beb7260a7d7c2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2022c-1/
 
-- https://sources.debian.net/src/tzdata/2022c-1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2022c-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2022c-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0043`
 
