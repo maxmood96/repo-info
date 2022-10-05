@@ -456,21 +456,13 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris coreutils=8.32-4.1
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_8.32-4.1.dsc' coreutils_8.32-4.1.dsc 2104 SHA256:3f518b32292c1be81069ee884acd1aac09f3d949280dc1a7fc1488160eeb495e
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_8.32.orig.tar.xz' coreutils_8.32.orig.tar.xz 5547836 SHA256:4458d8de7849df44ccab15e16b1548b285224dbba5f08fac070c1c0e0bcc4cfa
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_8.32.orig.tar.xz.asc' coreutils_8.32.orig.tar.xz.asc 833 SHA256:71b944375b322ba77c9c56b687b48df885c676d4fd7c465b3706713a9b62ce0a
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_8.32-4.1.debian.tar.xz' coreutils_8.32-4.1.debian.tar.xz 33124 SHA256:79fb30407aa09ed82a37deb11c8f105d7bda6a731a92f6274ceee6ac610aacf6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/coreutils/8.32-4.1/
 
-- https://sources.debian.net/src/coreutils/8.32-4.1/ (for browsing the source)
-- https://sources.debian.net/src/coreutils/8.32-4.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/coreutils/8.32-4.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `curl=7.83.1-2`
 
@@ -854,20 +846,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-foreign/copyright`)
 - `GPL`
 - `GPL `
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris foreign=0.8.82-1
-'http://deb.debian.org/debian/pool/main/f/foreign/foreign_0.8.82-1.dsc' foreign_0.8.82-1.dsc 1838 SHA256:2722081f98a59fb4dd40e052ca17dcf7408d1a904ffaf10f1132c5489502dd22
-'http://deb.debian.org/debian/pool/main/f/foreign/foreign_0.8.82.orig.tar.gz' foreign_0.8.82.orig.tar.gz 361598 SHA256:f8ed0684d59bec7f3a39cde1aa5ec7b3e6e36aaecacb28120c9c54f7b13f80fb
-'http://deb.debian.org/debian/pool/main/f/foreign/foreign_0.8.82-1.debian.tar.xz' foreign_0.8.82-1.debian.tar.xz 4288 SHA256:c91ca94f537050502a95f023d6ae00b762a4495f2584018a9c071876f82336c7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/foreign/0.8.82-1/
 
-- https://sources.debian.net/src/foreign/0.8.82-1/ (for browsing the source)
-- https://sources.debian.net/src/foreign/0.8.82-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/foreign/0.8.82-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `freetype=2.12.1+dfsg-3`
 
@@ -959,20 +944,13 @@ Licenses: (parsed from: `/usr/share/doc/cpp-11/copyright`, `/usr/share/doc/g++-1
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-11=11.3.0-3
-'http://deb.debian.org/debian/pool/main/g/gcc-11/gcc-11_11.3.0-3.dsc' gcc-11_11.3.0-3.dsc 22374 SHA256:eaa617f480f557ab8a3a115fffb6848692146c88093798670a104127bee310bc
-'http://deb.debian.org/debian/pool/main/g/gcc-11/gcc-11_11.3.0.orig.tar.gz' gcc-11_11.3.0.orig.tar.gz 83887816 SHA256:6190e4bdef10a2a1832dde8e96b3ae2bc38fbd5a3dcf4659f37d64823a45c4a6
-'http://deb.debian.org/debian/pool/main/g/gcc-11/gcc-11_11.3.0-3.debian.tar.xz' gcc-11_11.3.0-3.debian.tar.xz 590556 SHA256:6dc5cefbc0468e33cc3caa1ed4cb6cb2ac4a2dd0231c9a1a9fd01ee2923dce8f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-11/11.3.0-3/
 
-- https://sources.debian.net/src/gcc-11/11.3.0-3/ (for browsing the source)
-- https://sources.debian.net/src/gcc-11/11.3.0-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-11/11.3.0-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-12=12.1.0-2`
 
@@ -3411,20 +3389,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-nnet/copyright`)
 - `GPL-2`
 - `GPL-2 | GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris r-cran-nnet=7.3-17-1
-'http://deb.debian.org/debian/pool/main/r/r-cran-nnet/r-cran-nnet_7.3-17-1.dsc' r-cran-nnet_7.3-17-1.dsc 1848 SHA256:3e098e2c9f19fbd5f7efde7b114116972d11db3f0901d377e4f78a73fc50617a
-'http://deb.debian.org/debian/pool/main/r/r-cran-nnet/r-cran-nnet_7.3-17.orig.tar.gz' r-cran-nnet_7.3-17.orig.tar.gz 29099 SHA256:ee750bb8164aa058edf93823af987ab2c7ec64128dce2abeaae1b7d3661e9a67
-'http://deb.debian.org/debian/pool/main/r/r-cran-nnet/r-cran-nnet_7.3-17-1.debian.tar.xz' r-cran-nnet_7.3-17-1.debian.tar.xz 3256 SHA256:ce23a6b2a4ec588bdaa9916274cd61781500964ab049ab7eac0a58124a557a11
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/r-cran-nnet/7.3-17-1/
 
-- https://sources.debian.net/src/r-cran-nnet/7.3-17-1/ (for browsing the source)
-- https://sources.debian.net/src/r-cran-nnet/7.3-17-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/r-cran-nnet/7.3-17-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `r-cran-spatial=7.3-15-1`
 
