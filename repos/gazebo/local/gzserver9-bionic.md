@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:99dcb7d538c9b52e5c885c9d07e99eee94362be30667b004df46fceba5530f86`
-- Created: `2022-09-06T20:10:45.364250354Z`
+- Image ID: `sha256:e08ef6384878d7516792c561b620be6e4ea567ebbdf13be81ee7ff191ef85a09`
+- Created: `2022-10-05T17:43:53.963047594Z`
 - Virtual Size: ~ 647.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2696,20 +2696,25 @@ $ apt-get source -qq --print-uris libinput=1.10.4-1ubuntu0.18.04.3
 'http://archive.ubuntu.com/ubuntu/pool/main/libi/libinput/libinput_1.10.4-1ubuntu0.18.04.3.debian.tar.xz' libinput_1.10.4-1ubuntu0.18.04.3.debian.tar.xz 12672 SHA512:6cef510f9b8797d06364266c937ee514abf60d5d7d014d333a84489a18f65ede18103de5efa68e88a868f08f8c9f8fc9eba2934292f4d5574ef5ca6caf2db4f0
 ```
 
-### `dpkg` source package: `libjpeg-turbo=1.5.2-0ubuntu5.18.04.4`
+### `dpkg` source package: `libjpeg-turbo=1.5.2-0ubuntu5.18.04.6`
 
 Binary Packages:
 
-- `libjpeg-turbo8:amd64=1.5.2-0ubuntu5.18.04.4`
+- `libjpeg-turbo8:amd64=1.5.2-0ubuntu5.18.04.6`
 
 Licenses: (parsed from: `/usr/share/doc/libjpeg-turbo8/copyright`)
 
 - `JPEG`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libjpeg-turbo=1.5.2-0ubuntu5.18.04.6
+'http://archive.ubuntu.com/ubuntu/pool/main/libj/libjpeg-turbo/libjpeg-turbo_1.5.2-0ubuntu5.18.04.6.dsc' libjpeg-turbo_1.5.2-0ubuntu5.18.04.6.dsc 2391 SHA512:96ce8a45cffa62c4026fa739e00490c77c65fe423bd4b67945775b733cdcc22ddfcc7d808d70735f2ffa3ef24bbbf170c1d592263e81a1f03458f47b1f49c1f9
+'http://archive.ubuntu.com/ubuntu/pool/main/libj/libjpeg-turbo/libjpeg-turbo_1.5.2.orig.tar.gz' libjpeg-turbo_1.5.2.orig.tar.gz 1657235 SHA512:c7fe5cc77e38fad33af3f10e6db961c8edf033a86c09541121f49bfa20547179760924e6d3e397f0add7030459ff3babadd3457ab2da4a40a2147dc1574aa444
+'http://archive.ubuntu.com/ubuntu/pool/main/libj/libjpeg-turbo/libjpeg-turbo_1.5.2-0ubuntu5.18.04.6.debian.tar.xz' libjpeg-turbo_1.5.2-0ubuntu5.18.04.6.debian.tar.xz 42484 SHA512:829a5bc3e5dd58f0adbf5e73a5446bc51f7b3d5d5d764c3169dcb307917413d2bf1a11df73a17eaef259cab69bb5efd31dc0bc8fad616ea1b521a9dc79ff5291
+```
 
 ### `dpkg` source package: `libjpeg8-empty=8c-2ubuntu8`
 
@@ -4944,19 +4949,24 @@ $ apt-get source -qq --print-uris pixman=0.34.0-2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pixman/pixman_0.34.0-2.diff.gz' pixman_0.34.0-2.diff.gz 315460 SHA256:e81ec91d58776d804a2c56cbebb8c80fa3318a45a6a7246005bc96985f7dd805
 ```
 
-### `dpkg` source package: `poppler=0.62.0-2ubuntu2.12`
+### `dpkg` source package: `poppler=0.62.0-2ubuntu2.14`
 
 Binary Packages:
 
-- `libpoppler73:amd64=0.62.0-2ubuntu2.12`
+- `libpoppler73:amd64=0.62.0-2ubuntu2.14`
 
 Licenses: (parsed from: `/usr/share/doc/libpoppler73/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris poppler=0.62.0-2ubuntu2.14
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.62.0-2ubuntu2.14.dsc' poppler_0.62.0-2ubuntu2.14.dsc 3374 SHA512:852f2bfbaa6ca846a2d60ca3947365bf28499924a47cc20a0a73a7483b4a75a623e7dd519a690bb6eb24a611fdd0fc5556ae630590b1772ca7622759f34ec42a
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.62.0.orig.tar.xz' poppler_0.62.0.orig.tar.xz 1423372 SHA512:91f7eae7b05965ae97a34e658bed2a676be8a6e4d34f82148ece6eb58932632dcf9a34d50c66412f93f560ce575abf5c608ed6b1e5184604b96024801886c706
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.62.0-2ubuntu2.14.debian.tar.xz' poppler_0.62.0-2ubuntu2.14.debian.tar.xz 46652 SHA512:2fcb65b8090ad26190232beeba1e285b49396de3ba07a4a5f9b8a4c53ad281895977e2c6acc1467b85eab7eeafd308f37539dfbae3886f6d2ec78f8a387270fd
+```
 
 ### `dpkg` source package: `postgresql-10=10.22-0ubuntu0.18.04.1`
 
@@ -5583,11 +5593,11 @@ $ apt-get source -qq --print-uris speex=1.2~rc1.2-1ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/speex/speex_1.2%7erc1.2-1ubuntu2.1.diff.gz' speex_1.2~rc1.2-1ubuntu2.1.diff.gz 10577 SHA512:4118b1f2cffe4ba01c0bc38c50cd515cb0f92cf28d27801b219a6cf0f1333ac194fa888ae4d1aae78bdbeb9d6108dc06a939e114c4833e54620d42d6ca6ef785
 ```
 
-### `dpkg` source package: `sqlite3=3.22.0-1ubuntu0.5`
+### `dpkg` source package: `sqlite3=3.22.0-1ubuntu0.6`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.22.0-1ubuntu0.5`
+- `libsqlite3-0:amd64=3.22.0-1ubuntu0.6`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -5595,9 +5605,15 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris sqlite3=3.22.0-1ubuntu0.6
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.22.0-1ubuntu0.6.dsc' sqlite3_3.22.0-1ubuntu0.6.dsc 2512 SHA512:7bfdae09ad535e1ea06dd3fa552476c1cb27508b85e3f063c9b6922de8684f7f2ce4d83ff5686436bae8201b64c10e1d4b2b8d44f36c1498114a7036489f829a
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.22.0.orig-www.tar.xz' sqlite3_3.22.0.orig-www.tar.xz 3564688 SHA512:e469878137ec3d06886fe096c4325451e8c9b73f6841d28fac9bed45e698bdc1222739570abf2ce456e0853b0c6876b1c79ca0896826295f64d27b276541c1f8
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.22.0.orig.tar.xz' sqlite3_3.22.0.orig.tar.xz 6019648 SHA512:ce3b05cb9f75a5c7a5e8562b70e72e23c043222fd61995f795cbcc40f3f8efcac2660e57b588a15bfdce28c8eb644745bb73af35f5b98ba956dd77457d661dfa
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.22.0-1ubuntu0.6.debian.tar.xz' sqlite3_3.22.0-1ubuntu0.6.debian.tar.xz 48452 SHA512:aaac0cf8fd993702e7dceb01ef85e16318e727a33aa4f15fb6fcc27b82d4b429b4a20fa73981ceebf1799e403bca551f473a2827f897d409243bf0f56bab1400
+```
 
 ### `dpkg` source package: `superlu=5.2.1+dfsg1-3`
 
@@ -5622,12 +5638,12 @@ $ apt-get source -qq --print-uris superlu=5.2.1+dfsg1-3
 'http://archive.ubuntu.com/ubuntu/pool/universe/s/superlu/superlu_5.2.1%2bdfsg1-3.debian.tar.xz' superlu_5.2.1+dfsg1-3.debian.tar.xz 6100 SHA256:143d97303271ad64e69a3166452bc3a79bf76a2bff19a8f91df44579b8ead65c
 ```
 
-### `dpkg` source package: `systemd=237-3ubuntu10.53`
+### `dpkg` source package: `systemd=237-3ubuntu10.56`
 
 Binary Packages:
 
-- `libsystemd0:amd64=237-3ubuntu10.53`
-- `libudev1:amd64=237-3ubuntu10.53`
+- `libsystemd0:amd64=237-3ubuntu10.56`
+- `libudev1:amd64=237-3ubuntu10.56`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -5639,9 +5655,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=237-3ubuntu10.56
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.56.dsc' systemd_237-3ubuntu10.56.dsc 5057 SHA512:f2f70add1d9b4a56b677a7078365c8263dccac069affb765c3cf8c00b33c9854d4ef8f34023a40a550bc6fe8360519ece0829892f348b31215b2770e712424ac
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237.orig.tar.gz' systemd_237.orig.tar.gz 6871350 SHA512:15ef4b92815a6dd9a6c51672dbc00fd7cd0f08068ef0cbeaca574f68d330b28bc67ba1946f24f75ef3d9e7b63843a73eea700db54688061dbf5c9f8470394c3b
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.56.debian.tar.xz' systemd_237-3ubuntu10.56.debian.tar.xz 304208 SHA512:4ebcb84f31d046a0bd97b551c90e0c25112ebf1f4ca3e94a2c046d02ba4a4208963a78fa98b9bbf2dbd7e0f635dc0f9e7f8641657f451f70784b2624a3aec0d4
+```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10ubuntu1`
 
@@ -5721,19 +5742,24 @@ $ apt-get source -qq --print-uris tcp-wrappers=7.6.q-27
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tcp-wrappers/tcp-wrappers_7.6.q-27.debian.tar.xz' tcp-wrappers_7.6.q-27.debian.tar.xz 36060 SHA256:b73487b0faf59dfcc1074b9f11a91556713d9ae210033536f20cfd3c8bc73b36
 ```
 
-### `dpkg` source package: `tiff=4.0.9-5ubuntu0.5`
+### `dpkg` source package: `tiff=4.0.9-5ubuntu0.7`
 
 Binary Packages:
 
-- `libtiff5:amd64=4.0.9-5ubuntu0.5`
+- `libtiff5:amd64=4.0.9-5ubuntu0.7`
 
 Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 
 - `Hylafax`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tiff=4.0.9-5ubuntu0.7
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.9-5ubuntu0.7.dsc' tiff_4.0.9-5ubuntu0.7.dsc 2169 SHA512:f1057f4eb5f053f1a7abec8ca5bd00350f8ff83aeb2a6306eafad1f84d024cf40eb33523fb95b66fabe8b48f91deb6d76b376ae98e371ba6d5871f1d8b4204e9
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.9.orig.tar.gz' tiff_4.0.9.orig.tar.gz 2305681 SHA512:04f3d5eefccf9c1a0393659fe27f3dddd31108c401ba0dc587bca152a1c1f6bc844ba41622ff5572da8cc278593eff8c402b44e7af0a0090e91d326c2d79f6cd
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.9-5ubuntu0.7.debian.tar.xz' tiff_4.0.9-5ubuntu0.7.debian.tar.xz 41264 SHA512:60218bfcbea9bcbba5d4ad78196d5956b9cf4fccb50537015a8a55719155dc31f6207558f9ba86e387ab270330b12a6ce15db556220a51eaecff769f8a63c5d2
+```
 
 ### `dpkg` source package: `tinyxml2=6.0.0+dfsg-1`
 
@@ -5959,22 +5985,26 @@ $ apt-get source -qq --print-uris wavpack=5.1.0-2ubuntu1.5
 'http://archive.ubuntu.com/ubuntu/pool/main/w/wavpack/wavpack_5.1.0-2ubuntu1.5.debian.tar.xz' wavpack_5.1.0-2ubuntu1.5.debian.tar.xz 12020 SHA512:15aa44aa1d74adc9a90b0a4bd4d183b2b43deba047b82feda46393d736649802353753800dd3e0db5735b8a26472fd67e70df108aa69dc2fd0e5bbeb4905a40b
 ```
 
-### `dpkg` source package: `wayland=1.16.0-1ubuntu1.1~18.04.3`
+### `dpkg` source package: `wayland=1.16.0-1ubuntu1.1~18.04.4`
 
 Binary Packages:
 
-- `libwayland-client0:amd64=1.16.0-1ubuntu1.1~18.04.3`
-- `libwayland-cursor0:amd64=1.16.0-1ubuntu1.1~18.04.3`
-- `libwayland-egl1:amd64=1.16.0-1ubuntu1.1~18.04.3`
-- `libwayland-server0:amd64=1.16.0-1ubuntu1.1~18.04.3`
+- `libwayland-client0:amd64=1.16.0-1ubuntu1.1~18.04.4`
+- `libwayland-cursor0:amd64=1.16.0-1ubuntu1.1~18.04.4`
+- `libwayland-egl1:amd64=1.16.0-1ubuntu1.1~18.04.4`
+- `libwayland-server0:amd64=1.16.0-1ubuntu1.1~18.04.4`
 
 Licenses: (parsed from: `/usr/share/doc/libwayland-client0/copyright`, `/usr/share/doc/libwayland-cursor0/copyright`, `/usr/share/doc/libwayland-egl1/copyright`, `/usr/share/doc/libwayland-server0/copyright`)
 
 - `X11`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris wayland=1.16.0-1ubuntu1.1~18.04.4
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.16.0-1ubuntu1.1%7e18.04.4.dsc' wayland_1.16.0-1ubuntu1.1~18.04.4.dsc 2468 SHA512:ef2d1dc712a8aa12ecc3a7afc3ded0c7c8a022bb8b7bea6b02c2efc4e16af5dd4ff20a9e9f8253f1b194d5d9817010483f8870c103ae104e28562ce2a8bf11b5
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.16.0-1ubuntu1.1%7e18.04.4.tar.gz' wayland_1.16.0-1ubuntu1.1~18.04.4.tar.gz 326458 SHA512:d70d238c1a4e6e36895639075fe09577ba1c6b7fc4ac8016ab371466c537aa035d89ce2c234a98460bd1a0d8028110ec6fee249b62667ab9dec1c7a8353c6d80
+```
 
 ### `dpkg` source package: `x264=2:0.152.2854+gite9a5903-2`
 

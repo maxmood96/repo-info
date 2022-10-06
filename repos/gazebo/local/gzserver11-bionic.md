@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d9d91773bf1a362f22a4e11e0e03966287887adb6dd041e8e853a0a1499c9bec`
-- Created: `2022-09-19T17:50:26.19209201Z`
-- Virtual Size: ~ 681.68 Mb  
+- Image ID: `sha256:ce0a700010f0f66bcdc565acac95d2b6173253c050d72af088af4b4dadb0bf0f`
+- Created: `2022-10-05T17:47:56.275232592Z`
+- Virtual Size: ~ 681.70 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/gzserver_entrypoint.sh"]`
@@ -2791,20 +2791,25 @@ $ apt-get source -qq --print-uris libinput=1.10.4-1ubuntu0.18.04.3
 'http://archive.ubuntu.com/ubuntu/pool/main/libi/libinput/libinput_1.10.4-1ubuntu0.18.04.3.debian.tar.xz' libinput_1.10.4-1ubuntu0.18.04.3.debian.tar.xz 12672 SHA512:6cef510f9b8797d06364266c937ee514abf60d5d7d014d333a84489a18f65ede18103de5efa68e88a868f08f8c9f8fc9eba2934292f4d5574ef5ca6caf2db4f0
 ```
 
-### `dpkg` source package: `libjpeg-turbo=1.5.2-0ubuntu5.18.04.4`
+### `dpkg` source package: `libjpeg-turbo=1.5.2-0ubuntu5.18.04.6`
 
 Binary Packages:
 
-- `libjpeg-turbo8:amd64=1.5.2-0ubuntu5.18.04.4`
+- `libjpeg-turbo8:amd64=1.5.2-0ubuntu5.18.04.6`
 
 Licenses: (parsed from: `/usr/share/doc/libjpeg-turbo8/copyright`)
 
 - `JPEG`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libjpeg-turbo=1.5.2-0ubuntu5.18.04.6
+'http://archive.ubuntu.com/ubuntu/pool/main/libj/libjpeg-turbo/libjpeg-turbo_1.5.2-0ubuntu5.18.04.6.dsc' libjpeg-turbo_1.5.2-0ubuntu5.18.04.6.dsc 2391 SHA512:96ce8a45cffa62c4026fa739e00490c77c65fe423bd4b67945775b733cdcc22ddfcc7d808d70735f2ffa3ef24bbbf170c1d592263e81a1f03458f47b1f49c1f9
+'http://archive.ubuntu.com/ubuntu/pool/main/libj/libjpeg-turbo/libjpeg-turbo_1.5.2.orig.tar.gz' libjpeg-turbo_1.5.2.orig.tar.gz 1657235 SHA512:c7fe5cc77e38fad33af3f10e6db961c8edf033a86c09541121f49bfa20547179760924e6d3e397f0add7030459ff3babadd3457ab2da4a40a2147dc1574aa444
+'http://archive.ubuntu.com/ubuntu/pool/main/libj/libjpeg-turbo/libjpeg-turbo_1.5.2-0ubuntu5.18.04.6.debian.tar.xz' libjpeg-turbo_1.5.2-0ubuntu5.18.04.6.debian.tar.xz 42484 SHA512:829a5bc3e5dd58f0adbf5e73a5446bc51f7b3d5d5d764c3169dcb307917413d2bf1a11df73a17eaef259cab69bb5efd31dc0bc8fad616ea1b521a9dc79ff5291
+```
 
 ### `dpkg` source package: `libjpeg8-empty=8c-2ubuntu8`
 
@@ -5477,12 +5482,12 @@ $ apt-get source -qq --print-uris rubberband=1.8.1-7ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/universe/r/rubberband/rubberband_1.8.1-7ubuntu2.debian.tar.xz' rubberband_1.8.1-7ubuntu2.debian.tar.xz 9424 SHA256:2e1af1831dc0223fc5df26d131e633fc5f9ccbb68c705cfa95823db9584df15f
 ```
 
-### `dpkg` source package: `sdformat9=9.8.0-1~bionic`
+### `dpkg` source package: `sdformat9=9.9.0-1~bionic`
 
 Binary Packages:
 
-- `libsdformat9:amd64=9.8.0-1~bionic`
-- `sdformat9-sdf=9.8.0-1~bionic`
+- `libsdformat9:amd64=9.9.0-1~bionic`
+- `sdformat9-sdf=9.9.0-1~bionic`
 
 Licenses: (parsed from: `/usr/share/doc/libsdformat9/copyright`, `/usr/share/doc/sdformat9-sdf/copyright`)
 
@@ -5490,9 +5495,14 @@ Licenses: (parsed from: `/usr/share/doc/libsdformat9/copyright`, `/usr/share/doc
 - `Apache-2.0`
 - `BSD-3-clause`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris sdformat9=9.9.0-1~bionic
+'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/s/sdformat9/sdformat9_9.9.0-1%7ebionic.dsc' sdformat9_9.9.0-1~bionic.dsc 1366 SHA256:e07d62d97b7b1d6ddbcb6a30164efc8bb9430487b0442c0e4241ba24ad25afac
+'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/s/sdformat9/sdformat9_9.9.0.orig.tar.bz2' sdformat9_9.9.0.orig.tar.bz2 715487 SHA256:fd57fbc6459f7a12732dc012e890d39391ee0b8b4bd29dc89867eaeff3aeb59c
+'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/s/sdformat9/sdformat9_9.9.0-1%7ebionic.debian.tar.xz' sdformat9_9.9.0-1~bionic.debian.tar.xz 3532 SHA256:56b980c9a34294921b7e49f0d5421594109029aa608fd16da7a71a8a8126d4d7
+```
 
 ### `dpkg` source package: `sed=4.4-2`
 
@@ -5725,11 +5735,11 @@ $ apt-get source -qq --print-uris speex=1.2~rc1.2-1ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/speex/speex_1.2%7erc1.2-1ubuntu2.1.diff.gz' speex_1.2~rc1.2-1ubuntu2.1.diff.gz 10577 SHA512:4118b1f2cffe4ba01c0bc38c50cd515cb0f92cf28d27801b219a6cf0f1333ac194fa888ae4d1aae78bdbeb9d6108dc06a939e114c4833e54620d42d6ca6ef785
 ```
 
-### `dpkg` source package: `sqlite3=3.22.0-1ubuntu0.5`
+### `dpkg` source package: `sqlite3=3.22.0-1ubuntu0.6`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.22.0-1ubuntu0.5`
+- `libsqlite3-0:amd64=3.22.0-1ubuntu0.6`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -5737,9 +5747,15 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris sqlite3=3.22.0-1ubuntu0.6
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.22.0-1ubuntu0.6.dsc' sqlite3_3.22.0-1ubuntu0.6.dsc 2512 SHA512:7bfdae09ad535e1ea06dd3fa552476c1cb27508b85e3f063c9b6922de8684f7f2ce4d83ff5686436bae8201b64c10e1d4b2b8d44f36c1498114a7036489f829a
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.22.0.orig-www.tar.xz' sqlite3_3.22.0.orig-www.tar.xz 3564688 SHA512:e469878137ec3d06886fe096c4325451e8c9b73f6841d28fac9bed45e698bdc1222739570abf2ce456e0853b0c6876b1c79ca0896826295f64d27b276541c1f8
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.22.0.orig.tar.xz' sqlite3_3.22.0.orig.tar.xz 6019648 SHA512:ce3b05cb9f75a5c7a5e8562b70e72e23c043222fd61995f795cbcc40f3f8efcac2660e57b588a15bfdce28c8eb644745bb73af35f5b98ba956dd77457d661dfa
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.22.0-1ubuntu0.6.debian.tar.xz' sqlite3_3.22.0-1ubuntu0.6.debian.tar.xz 48452 SHA512:aaac0cf8fd993702e7dceb01ef85e16318e727a33aa4f15fb6fcc27b82d4b429b4a20fa73981ceebf1799e403bca551f473a2827f897d409243bf0f56bab1400
+```
 
 ### `dpkg` source package: `superlu=5.2.1+dfsg1-3`
 
@@ -5764,12 +5780,12 @@ $ apt-get source -qq --print-uris superlu=5.2.1+dfsg1-3
 'http://archive.ubuntu.com/ubuntu/pool/universe/s/superlu/superlu_5.2.1%2bdfsg1-3.debian.tar.xz' superlu_5.2.1+dfsg1-3.debian.tar.xz 6100 SHA256:143d97303271ad64e69a3166452bc3a79bf76a2bff19a8f91df44579b8ead65c
 ```
 
-### `dpkg` source package: `systemd=237-3ubuntu10.53`
+### `dpkg` source package: `systemd=237-3ubuntu10.56`
 
 Binary Packages:
 
-- `libsystemd0:amd64=237-3ubuntu10.53`
-- `libudev1:amd64=237-3ubuntu10.53`
+- `libsystemd0:amd64=237-3ubuntu10.56`
+- `libudev1:amd64=237-3ubuntu10.56`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -5781,9 +5797,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=237-3ubuntu10.56
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.56.dsc' systemd_237-3ubuntu10.56.dsc 5057 SHA512:f2f70add1d9b4a56b677a7078365c8263dccac069affb765c3cf8c00b33c9854d4ef8f34023a40a550bc6fe8360519ece0829892f348b31215b2770e712424ac
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237.orig.tar.gz' systemd_237.orig.tar.gz 6871350 SHA512:15ef4b92815a6dd9a6c51672dbc00fd7cd0f08068ef0cbeaca574f68d330b28bc67ba1946f24f75ef3d9e7b63843a73eea700db54688061dbf5c9f8470394c3b
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.56.debian.tar.xz' systemd_237-3ubuntu10.56.debian.tar.xz 304208 SHA512:4ebcb84f31d046a0bd97b551c90e0c25112ebf1f4ca3e94a2c046d02ba4a4208963a78fa98b9bbf2dbd7e0f635dc0f9e7f8641657f451f70784b2624a3aec0d4
+```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10ubuntu1`
 
@@ -5863,19 +5884,24 @@ $ apt-get source -qq --print-uris tcp-wrappers=7.6.q-27
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tcp-wrappers/tcp-wrappers_7.6.q-27.debian.tar.xz' tcp-wrappers_7.6.q-27.debian.tar.xz 36060 SHA256:b73487b0faf59dfcc1074b9f11a91556713d9ae210033536f20cfd3c8bc73b36
 ```
 
-### `dpkg` source package: `tiff=4.0.9-5ubuntu0.6`
+### `dpkg` source package: `tiff=4.0.9-5ubuntu0.7`
 
 Binary Packages:
 
-- `libtiff5:amd64=4.0.9-5ubuntu0.6`
+- `libtiff5:amd64=4.0.9-5ubuntu0.7`
 
 Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 
 - `Hylafax`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tiff=4.0.9-5ubuntu0.7
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.9-5ubuntu0.7.dsc' tiff_4.0.9-5ubuntu0.7.dsc 2169 SHA512:f1057f4eb5f053f1a7abec8ca5bd00350f8ff83aeb2a6306eafad1f84d024cf40eb33523fb95b66fabe8b48f91deb6d76b376ae98e371ba6d5871f1d8b4204e9
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.9.orig.tar.gz' tiff_4.0.9.orig.tar.gz 2305681 SHA512:04f3d5eefccf9c1a0393659fe27f3dddd31108c401ba0dc587bca152a1c1f6bc844ba41622ff5572da8cc278593eff8c402b44e7af0a0090e91d326c2d79f6cd
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.9-5ubuntu0.7.debian.tar.xz' tiff_4.0.9-5ubuntu0.7.debian.tar.xz 41264 SHA512:60218bfcbea9bcbba5d4ad78196d5956b9cf4fccb50537015a8a55719155dc31f6207558f9ba86e387ab270330b12a6ce15db556220a51eaecff769f8a63c5d2
+```
 
 ### `dpkg` source package: `tinyxml2=6.0.0+dfsg-1`
 

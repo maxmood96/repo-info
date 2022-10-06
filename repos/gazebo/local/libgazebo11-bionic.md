@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e2d3f1db3ce33002e5f2d9a9930f0c22fefad674a5d8c13f11d15358ccb2cbb1`
-- Created: `2022-09-19T17:54:37.493285751Z`
-- Virtual Size: ~ 1.57 Gb  
+- Image ID: `sha256:48185b92c48f4d66febf1b90802f82d0b649f88d475de14878ce549b21f501c4`
+- Created: `2022-10-05T17:50:05.723120438Z`
+- Virtual Size: ~ 1.56 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/gzserver_entrypoint.sh"]`
@@ -3401,21 +3401,26 @@ $ apt-get source -qq --print-uris libinput=1.10.4-1ubuntu0.18.04.3
 'http://archive.ubuntu.com/ubuntu/pool/main/libi/libinput/libinput_1.10.4-1ubuntu0.18.04.3.debian.tar.xz' libinput_1.10.4-1ubuntu0.18.04.3.debian.tar.xz 12672 SHA512:6cef510f9b8797d06364266c937ee514abf60d5d7d014d333a84489a18f65ede18103de5efa68e88a868f08f8c9f8fc9eba2934292f4d5574ef5ca6caf2db4f0
 ```
 
-### `dpkg` source package: `libjpeg-turbo=1.5.2-0ubuntu5.18.04.4`
+### `dpkg` source package: `libjpeg-turbo=1.5.2-0ubuntu5.18.04.6`
 
 Binary Packages:
 
-- `libjpeg-turbo8:amd64=1.5.2-0ubuntu5.18.04.4`
-- `libjpeg-turbo8-dev:amd64=1.5.2-0ubuntu5.18.04.4`
+- `libjpeg-turbo8:amd64=1.5.2-0ubuntu5.18.04.6`
+- `libjpeg-turbo8-dev:amd64=1.5.2-0ubuntu5.18.04.6`
 
 Licenses: (parsed from: `/usr/share/doc/libjpeg-turbo8/copyright`, `/usr/share/doc/libjpeg-turbo8-dev/copyright`)
 
 - `JPEG`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libjpeg-turbo=1.5.2-0ubuntu5.18.04.6
+'http://archive.ubuntu.com/ubuntu/pool/main/libj/libjpeg-turbo/libjpeg-turbo_1.5.2-0ubuntu5.18.04.6.dsc' libjpeg-turbo_1.5.2-0ubuntu5.18.04.6.dsc 2391 SHA512:96ce8a45cffa62c4026fa739e00490c77c65fe423bd4b67945775b733cdcc22ddfcc7d808d70735f2ffa3ef24bbbf170c1d592263e81a1f03458f47b1f49c1f9
+'http://archive.ubuntu.com/ubuntu/pool/main/libj/libjpeg-turbo/libjpeg-turbo_1.5.2.orig.tar.gz' libjpeg-turbo_1.5.2.orig.tar.gz 1657235 SHA512:c7fe5cc77e38fad33af3f10e6db961c8edf033a86c09541121f49bfa20547179760924e6d3e397f0add7030459ff3babadd3457ab2da4a40a2147dc1574aa444
+'http://archive.ubuntu.com/ubuntu/pool/main/libj/libjpeg-turbo/libjpeg-turbo_1.5.2-0ubuntu5.18.04.6.debian.tar.xz' libjpeg-turbo_1.5.2-0ubuntu5.18.04.6.debian.tar.xz 42484 SHA512:829a5bc3e5dd58f0adbf5e73a5446bc51f7b3d5d5d764c3169dcb307917413d2bf1a11df73a17eaef259cab69bb5efd31dc0bc8fad616ea1b521a9dc79ff5291
+```
 
 ### `dpkg` source package: `libjpeg8-empty=8c-2ubuntu8`
 
@@ -4882,19 +4887,24 @@ $ apt-get source -qq --print-uris libzstd=1.3.3+dfsg-2ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.3.3%2bdfsg-2ubuntu1.2.debian.tar.xz' libzstd_1.3.3+dfsg-2ubuntu1.2.debian.tar.xz 13764 SHA512:f14aa9e453c7041a79dd90a52b5955b86fa86886b89ef26d4d257aa017a50d97410e8b875593992ad7d4b7e8e8d55743b8c66706be62cd4234f81e49c8bfc05d
 ```
 
-### `dpkg` source package: `linux=4.15.0-192.203`
+### `dpkg` source package: `linux=4.15.0-193.204`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.15.0-192.203`
+- `linux-libc-dev:amd64=4.15.0-193.204`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=4.15.0-193.204
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-193.204.dsc' linux_4.15.0-193.204.dsc 7426 SHA512:709f42eaafd7fe1675f92ad1a5f9c0ca8e24fb3a0280b70986d3d5c56f089cd697fda9cb1be9cb6ee51471231ef4689a3389ce7eaccddc357141fe009a22036f
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0.orig.tar.gz' linux_4.15.0.orig.tar.gz 157656459 SHA512:0fab606a295e0857f774f8adaa9d56bf2cb227fbab2daed374415da216391b156f49e606ba37ac402987c5796d408807da5d1a42c0d85a8552f109a3e279443d
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-193.204.diff.gz' linux_4.15.0-193.204.diff.gz 13232410 SHA512:9768db4f6b8eadef691dca624e465ec8d0c66d3d8daed018b2667bba6e838b0d48df7a30eaa24c93f582831953ebe61aeacb03b729698632dec3d73b7a557a4f
+```
 
 ### `dpkg` source package: `llvm-toolchain-10=1:10.0.0-4ubuntu1~18.04.2`
 
@@ -6766,13 +6776,13 @@ $ apt-get source -qq --print-uris rubygems-integration=1.11
 'http://archive.ubuntu.com/ubuntu/pool/main/r/rubygems-integration/rubygems-integration_1.11.tar.xz' rubygems-integration_1.11.tar.xz 4804 SHA256:e6039a18a87a748a996cd48bc4b903c62377613d8e2e0a67cd6de2c60c18698a
 ```
 
-### `dpkg` source package: `sdformat9=9.8.0-1~bionic`
+### `dpkg` source package: `sdformat9=9.9.0-1~bionic`
 
 Binary Packages:
 
-- `libsdformat9:amd64=9.8.0-1~bionic`
-- `libsdformat9-dev:amd64=9.8.0-1~bionic`
-- `sdformat9-sdf=9.8.0-1~bionic`
+- `libsdformat9:amd64=9.9.0-1~bionic`
+- `libsdformat9-dev:amd64=9.9.0-1~bionic`
+- `sdformat9-sdf=9.9.0-1~bionic`
 
 Licenses: (parsed from: `/usr/share/doc/libsdformat9/copyright`, `/usr/share/doc/libsdformat9-dev/copyright`, `/usr/share/doc/sdformat9-sdf/copyright`)
 
@@ -6780,9 +6790,14 @@ Licenses: (parsed from: `/usr/share/doc/libsdformat9/copyright`, `/usr/share/doc
 - `Apache-2.0`
 - `BSD-3-clause`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris sdformat9=9.9.0-1~bionic
+'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/s/sdformat9/sdformat9_9.9.0-1%7ebionic.dsc' sdformat9_9.9.0-1~bionic.dsc 1366 SHA256:e07d62d97b7b1d6ddbcb6a30164efc8bb9430487b0442c0e4241ba24ad25afac
+'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/s/sdformat9/sdformat9_9.9.0.orig.tar.bz2' sdformat9_9.9.0.orig.tar.bz2 715487 SHA256:fd57fbc6459f7a12732dc012e890d39391ee0b8b4bd29dc89867eaeff3aeb59c
+'http://packages.osrfoundation.org/gazebo/ubuntu-stable/pool/main/s/sdformat9/sdformat9_9.9.0-1%7ebionic.debian.tar.xz' sdformat9_9.9.0-1~bionic.debian.tar.xz 3532 SHA256:56b980c9a34294921b7e49f0d5421594109029aa608fd16da7a71a8a8126d4d7
+```
 
 ### `dpkg` source package: `sed=4.4-2`
 
@@ -7064,12 +7079,12 @@ $ apt-get source -qq --print-uris superlu=5.2.1+dfsg1-3
 'http://archive.ubuntu.com/ubuntu/pool/universe/s/superlu/superlu_5.2.1%2bdfsg1-3.debian.tar.xz' superlu_5.2.1+dfsg1-3.debian.tar.xz 6100 SHA256:143d97303271ad64e69a3166452bc3a79bf76a2bff19a8f91df44579b8ead65c
 ```
 
-### `dpkg` source package: `systemd=237-3ubuntu10.53`
+### `dpkg` source package: `systemd=237-3ubuntu10.56`
 
 Binary Packages:
 
-- `libsystemd0:amd64=237-3ubuntu10.53`
-- `libudev1:amd64=237-3ubuntu10.53`
+- `libsystemd0:amd64=237-3ubuntu10.56`
+- `libudev1:amd64=237-3ubuntu10.56`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -7081,9 +7096,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=237-3ubuntu10.56
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.56.dsc' systemd_237-3ubuntu10.56.dsc 5057 SHA512:f2f70add1d9b4a56b677a7078365c8263dccac069affb765c3cf8c00b33c9854d4ef8f34023a40a550bc6fe8360519ece0829892f348b31215b2770e712424ac
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237.orig.tar.gz' systemd_237.orig.tar.gz 6871350 SHA512:15ef4b92815a6dd9a6c51672dbc00fd7cd0f08068ef0cbeaca574f68d330b28bc67ba1946f24f75ef3d9e7b63843a73eea700db54688061dbf5c9f8470394c3b
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.56.debian.tar.xz' systemd_237-3ubuntu10.56.debian.tar.xz 304208 SHA512:4ebcb84f31d046a0bd97b551c90e0c25112ebf1f4ca3e94a2c046d02ba4a4208963a78fa98b9bbf2dbd7e0f635dc0f9e7f8641657f451f70784b2624a3aec0d4
+```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10ubuntu1`
 
@@ -7164,22 +7184,27 @@ $ apt-get source -qq --print-uris tcp-wrappers=7.6.q-27
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tcp-wrappers/tcp-wrappers_7.6.q-27.debian.tar.xz' tcp-wrappers_7.6.q-27.debian.tar.xz 36060 SHA256:b73487b0faf59dfcc1074b9f11a91556713d9ae210033536f20cfd3c8bc73b36
 ```
 
-### `dpkg` source package: `tiff=4.0.9-5ubuntu0.6`
+### `dpkg` source package: `tiff=4.0.9-5ubuntu0.7`
 
 Binary Packages:
 
-- `libtiff-dev=4.0.9-5ubuntu0.6`
-- `libtiff5:amd64=4.0.9-5ubuntu0.6`
-- `libtiff5-dev:amd64=4.0.9-5ubuntu0.6`
-- `libtiffxx5:amd64=4.0.9-5ubuntu0.6`
+- `libtiff-dev=4.0.9-5ubuntu0.7`
+- `libtiff5:amd64=4.0.9-5ubuntu0.7`
+- `libtiff5-dev:amd64=4.0.9-5ubuntu0.7`
+- `libtiffxx5:amd64=4.0.9-5ubuntu0.7`
 
 Licenses: (parsed from: `/usr/share/doc/libtiff-dev/copyright`, `/usr/share/doc/libtiff5/copyright`, `/usr/share/doc/libtiff5-dev/copyright`, `/usr/share/doc/libtiffxx5/copyright`)
 
 - `Hylafax`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tiff=4.0.9-5ubuntu0.7
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.9-5ubuntu0.7.dsc' tiff_4.0.9-5ubuntu0.7.dsc 2169 SHA512:f1057f4eb5f053f1a7abec8ca5bd00350f8ff83aeb2a6306eafad1f84d024cf40eb33523fb95b66fabe8b48f91deb6d76b376ae98e371ba6d5871f1d8b4204e9
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.9.orig.tar.gz' tiff_4.0.9.orig.tar.gz 2305681 SHA512:04f3d5eefccf9c1a0393659fe27f3dddd31108c401ba0dc587bca152a1c1f6bc844ba41622ff5572da8cc278593eff8c402b44e7af0a0090e91d326c2d79f6cd
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.9-5ubuntu0.7.debian.tar.xz' tiff_4.0.9-5ubuntu0.7.debian.tar.xz 41264 SHA512:60218bfcbea9bcbba5d4ad78196d5956b9cf4fccb50537015a8a55719155dc31f6207558f9ba86e387ab270330b12a6ce15db556220a51eaecff769f8a63c5d2
+```
 
 ### `dpkg` source package: `tinyxml2=6.0.0+dfsg-1`
 
