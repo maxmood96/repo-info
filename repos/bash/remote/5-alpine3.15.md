@@ -1,7 +1,7 @@
 ## `bash:5-alpine3.15`
 
 ```console
-$ docker pull bash@sha256:e4624241e953934fc4c396217253d8322ebda53be3b1863cd7795541d168034f
+$ docker pull bash@sha256:46c89f45c40d7a8b6fcfaaf7477701c10c3bd4e06f1deda80c5571cd696dddf4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -256,14 +256,14 @@ CMD ["bash"]
 ### `bash:5-alpine3.15` - linux; ppc64le
 
 ```console
-$ docker pull bash@sha256:15524888394a591c7f3768013c6fbfee131e7a2697ddb67d8299b5f96cdd66ee
+$ docker pull bash@sha256:aa7cd7bb12abfe4712941c4033404341fcda158adcbb6a6a9e759df671ae91c8
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.8 MB (5780076 bytes)**  
+-	Total Size: **5.8 MB (5780335 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f211c28e767f73b8307ab9fd43f4e58e6a83aae3dc0c4b96f49e39731eab9093`
+-	Image ID: `sha256:1b1ea419e07084eead8edd209c07641040b59f10f13544547f85730adc7c5c02`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -272,17 +272,19 @@ $ docker pull bash@sha256:15524888394a591c7f3768013c6fbfee131e7a2697ddb67d8299b5
 ADD file:be31abb0aba89ed5ff9200736a1c46091abc3845d0e332efd5e5c874ef2c99d1 in / 
 # Tue, 09 Aug 2022 17:17:21 GMT
 CMD ["/bin/sh"]
-# Tue, 27 Sep 2022 01:16:31 GMT
-ENV _BASH_VERSION=5.2.0
-# Tue, 27 Sep 2022 01:16:32 GMT
+# Thu, 06 Oct 2022 03:36:33 GMT
+ENV _BASH_VERSION=5.2.2
+# Thu, 06 Oct 2022 03:36:33 GMT
 ENV _BASH_BASELINE=5.2
-# Tue, 27 Sep 2022 01:17:35 GMT
+# Thu, 06 Oct 2022 03:36:33 GMT
+ENV _BASH_LATEST_PATCH=2
+# Thu, 06 Oct 2022 03:37:41 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		bison 		coreutils 		dpkg-dev dpkg 		gcc 		libc-dev 		make 		ncurses-dev 		tar 	; 		wget -O bash.tar.gz "https://ftp.gnu.org/gnu/bash/bash-$_BASH_BASELINE.tar.gz"; 	wget -O bash.tar.gz.sig "https://ftp.gnu.org/gnu/bash/bash-$_BASH_BASELINE.tar.gz.sig"; 		: "${_BASH_BASELINE_PATCH:=0}" "${_BASH_LATEST_PATCH:=0}"; 	if [ "$_BASH_LATEST_PATCH" -gt "$_BASH_BASELINE_PATCH" ]; then 		mkdir -p bash-patches; 		first="$(printf '%03d' "$(( _BASH_BASELINE_PATCH + 1 ))")"; 		last="$(printf '%03d' "$_BASH_LATEST_PATCH")"; 		majorMinor="${_BASH_VERSION%.*}"; 		for patch in $(seq -w "$first" "$last"); do 			url="https://ftp.gnu.org/gnu/bash/bash-$majorMinor-patches/bash${majorMinor//./}-$patch"; 			wget -O "bash-patches/$patch" "$url"; 			wget -O "bash-patches/$patch.sig" "$url.sig"; 		done; 	fi; 		apk add --no-cache --virtual .gpg-deps gnupg; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7C0135FB088AAF6C66C650B9BB5869F064EA74AB; 	gpg --batch --verify bash.tar.gz.sig bash.tar.gz; 	rm bash.tar.gz.sig; 	if [ -d bash-patches ]; then 		for sig in bash-patches/*.sig; do 			p="${sig%.sig}"; 			gpg --batch --verify "$sig" "$p"; 			rm "$sig"; 		done; 	fi; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	apk del --no-network .gpg-deps; 		mkdir -p /usr/src/bash; 	tar 		--extract 		--file=bash.tar.gz 		--strip-components=1 		--directory=/usr/src/bash 	; 	rm bash.tar.gz; 		if [ -d bash-patches ]; then 		apk add --no-cache --virtual .patch-deps patch; 		for p in bash-patches/*; do 			patch 				--directory=/usr/src/bash 				--input="$(readlink -f "$p")" 				--strip=0 			; 			rm "$p"; 		done; 		rmdir bash-patches; 		apk del --no-network .patch-deps; 	fi; 		cd /usr/src/bash; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-readline 		--with-curses 		--without-bash-malloc 	|| { 		cat >&2 config.log; 		false; 	}; 	make -j "$(nproc)"; 	make install; 	cd /; 	rm -r /usr/src/bash; 		rm -rf 		/usr/local/share/doc/bash/*.html 		/usr/local/share/info 		/usr/local/share/locale 		/usr/local/share/man 	; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .bash-rundeps $runDeps; 	apk del --no-network .build-deps; 		[ "$(which bash)" = '/usr/local/bin/bash' ]; 	bash --version; 	[ "$(bash -c 'echo "${BASH_VERSION%%[^0-9.]*}"')" = "$_BASH_VERSION" ]; 	bash -c 'help' > /dev/null
-# Tue, 27 Sep 2022 01:17:35 GMT
+# Thu, 06 Oct 2022 03:37:42 GMT
 COPY file:651b3bebeba8be9162c56b3eb561199905235f3e1c7811232b6c9f48ac333651 in /usr/local/bin/ 
-# Tue, 27 Sep 2022 01:17:35 GMT
+# Thu, 06 Oct 2022 03:37:42 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 27 Sep 2022 01:17:36 GMT
+# Thu, 06 Oct 2022 03:37:42 GMT
 CMD ["bash"]
 ```
 
@@ -291,13 +293,13 @@ CMD ["bash"]
 		Last Modified: Tue, 09 Aug 2022 17:18:45 GMT  
 		Size: 2.8 MB (2812989 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1abcfae330ee53e94cb0a10a9c826764acd847898c048d96289616e711a1cf0d`  
-		Last Modified: Tue, 27 Sep 2022 01:20:31 GMT  
-		Size: 3.0 MB (2966748 bytes)  
+	-	`sha256:b354db4f7b362c68fc1b65b086e6e87e18b5221217c5f36e2d9039e8f6a883d1`  
+		Last Modified: Thu, 06 Oct 2022 03:41:00 GMT  
+		Size: 3.0 MB (2967005 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa1e895ff951d984ba3f03849e2a6f40a1b4a43c942c39e53effd10dd801af59`  
-		Last Modified: Tue, 27 Sep 2022 01:20:30 GMT  
-		Size: 339.0 B  
+	-	`sha256:788ffdc368b3a9086d3cdf9cfe11986555f9d94193e00437a9f3940b50c7adf3`  
+		Last Modified: Thu, 06 Oct 2022 03:40:59 GMT  
+		Size: 341.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `bash:5-alpine3.15` - linux; s390x
