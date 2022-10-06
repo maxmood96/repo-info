@@ -1,7 +1,7 @@
 ## `clojure:temurin-11-boot-2.8.3-bullseye`
 
 ```console
-$ docker pull clojure@sha256:3178a6edd8a4c43264317947de0ee5c72e742d038ca14a23882a2a721b73e6e1
+$ docker pull clojure@sha256:998a09a0676681c391b76db72347f4010bdd7228793c36fbe5a33b15cfbe4b3d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,14 +12,14 @@ $ docker pull clojure@sha256:3178a6edd8a4c43264317947de0ee5c72e742d038ca14a23882
 ### `clojure:temurin-11-boot-2.8.3-bullseye` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:9afdb38b79f944f5bca3879003bf24d5930cab7a86c5ead50eff93b167fc404f
+$ docker pull clojure@sha256:284849da4eb28ed39a64d8898388b224c30ba8d957595725f382157bd01273cf
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **314.4 MB (314352493 bytes)**  
+-	Total Size: **314.4 MB (314352728 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4ee396b7c8de89a65bee1d92ac2e1e5cf1d39f1f3a5c2a75a8e202c9df43713f`
+-	Image ID: `sha256:013bb54d446adc7ac2c590e4462bb2b87c01b2bd1318e38c78d9840755c68ca6`
 -	Default Command: `["boot","repl"]`
 
 ```dockerfile
@@ -29,25 +29,25 @@ ADD file:d1268789456d2cdace6e50149e60404ad5a849b7c61e8fc8bc7b6e0eb6eeb7ca in /
 CMD ["bash"]
 # Wed, 05 Oct 2022 01:30:18 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 05 Oct 2022 01:33:50 GMT
-COPY dir:36d56a3b4865ff200a9bbbcc21ae60c89418e4eae9d60cbccb611641838bf98e in /opt/java/openjdk 
-# Wed, 05 Oct 2022 01:33:52 GMT
+# Thu, 06 Oct 2022 03:50:38 GMT
+COPY dir:e3c63d67b32fccda756dd62000a0cf47da966d18fe6f1f25cd1f37b60881f0ec in /opt/java/openjdk 
+# Thu, 06 Oct 2022 03:50:39 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 05 Oct 2022 01:33:52 GMT
+# Thu, 06 Oct 2022 03:50:39 GMT
 ENV BOOT_VERSION=2.8.3
-# Wed, 05 Oct 2022 01:33:52 GMT
+# Thu, 06 Oct 2022 03:50:40 GMT
 ENV BOOT_INSTALL=/usr/local/bin/
-# Wed, 05 Oct 2022 01:33:52 GMT
+# Thu, 06 Oct 2022 03:50:40 GMT
 WORKDIR /tmp
-# Wed, 05 Oct 2022 01:33:58 GMT
+# Thu, 06 Oct 2022 03:50:46 GMT
 RUN apt-get update && apt-get install -y make wget && rm -rf /var/lib/apt/lists/* && mkdir -p $BOOT_INSTALL && wget -q https://github.com/boot-clj/boot-bin/releases/download/latest/boot.sh && echo "Comparing installer checksum..." && sha256sum boot.sh && echo "0ccd697f2027e7e1cd3be3d62721057cbc841585740d0aaa9fbb485d7b1f17c3 *boot.sh" | sha256sum -c - && mv boot.sh $BOOT_INSTALL/boot && chmod 0755 $BOOT_INSTALL/boot && apt-get purge -y --auto-remove wget
-# Wed, 05 Oct 2022 01:33:59 GMT
+# Thu, 06 Oct 2022 03:50:46 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Wed, 05 Oct 2022 01:33:59 GMT
+# Thu, 06 Oct 2022 03:50:46 GMT
 ENV BOOT_AS_ROOT=yes
-# Wed, 05 Oct 2022 01:34:23 GMT
+# Thu, 06 Oct 2022 03:51:10 GMT
 RUN boot
-# Wed, 05 Oct 2022 01:34:23 GMT
+# Thu, 06 Oct 2022 03:51:10 GMT
 CMD ["boot" "repl"]
 ```
 
@@ -56,17 +56,17 @@ CMD ["boot" "repl"]
 		Last Modified: Tue, 04 Oct 2022 23:30:27 GMT  
 		Size: 55.0 MB (55046248 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1a4ca2823c2d209cf0f2e558aa4af2216e66a915bea0f57552265e9d46d73fa6`  
-		Last Modified: Wed, 05 Oct 2022 01:47:40 GMT  
-		Size: 198.1 MB (198124887 bytes)  
+	-	`sha256:3983f63d3e4b8776b5231e0bc9c49c468ccec1c53f32fc062195bdfef9cc693c`  
+		Last Modified: Thu, 06 Oct 2022 04:08:30 GMT  
+		Size: 198.1 MB (198125022 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b6e665f838905a407e09136eee0a80f95b68b6e3cbb2ccf737d83dd485a4fbba`  
-		Last Modified: Wed, 05 Oct 2022 01:47:25 GMT  
-		Size: 2.4 MB (2360748 bytes)  
+	-	`sha256:003e3e1c06e3a752c10b16c31f6c900d6e76a9084f0fe19aa1aa14799096777d`  
+		Last Modified: Thu, 06 Oct 2022 04:08:15 GMT  
+		Size: 2.4 MB (2360764 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:387178cbe4c62530b8d96d4d2de501075a3f82c5b97bf9b0a5e49f8bc1da0e67`  
-		Last Modified: Wed, 05 Oct 2022 01:47:29 GMT  
-		Size: 58.8 MB (58820610 bytes)  
+	-	`sha256:fca37bacfb0f55d66bbe55c0f977a438d5997e01f0fdaaee7bd7f6d3d17284d8`  
+		Last Modified: Thu, 06 Oct 2022 04:08:19 GMT  
+		Size: 58.8 MB (58820694 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `clojure:temurin-11-boot-2.8.3-bullseye` - linux; arm64 variant v8
