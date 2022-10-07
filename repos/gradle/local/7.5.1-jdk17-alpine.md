@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3c068362a3e9d66d03d3884fe7813901de292c43de2bf441c6acb875b3bb0d3d`
-- Created: `2022-08-24T19:52:22.092009536Z`
+- Image ID: `sha256:f411b31fac344f7abe858b949f4b96fe2e241f71f5338def2b0d8727acdca5a4`
+- Created: `2022-10-07T05:18:38.768450772Z`
 - Virtual Size: ~ 588.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -295,16 +295,16 @@ GPL-2.0-or-later
 ### `apk` package: `git-lfs`
 
 ```console
-git-lfs-3.1.4-r3 description:
+git-lfs-3.1.4-r4 description:
 Git extension for versioning large files
 
-git-lfs-3.1.4-r3 webpage:
+git-lfs-3.1.4-r4 webpage:
 https://git-lfs.github.io/
 
-git-lfs-3.1.4-r3 installed size:
+git-lfs-3.1.4-r4 installed size:
 10 MiB
 
-git-lfs-3.1.4-r3 license:
+git-lfs-3.1.4-r4 license:
 MIT
 
 ```
@@ -363,16 +363,16 @@ OpenSSL
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.83.1-r2 description:
+libcurl-7.83.1-r3 description:
 The multiprotocol file transfer library
 
-libcurl-7.83.1-r2 webpage:
+libcurl-7.83.1-r3 webpage:
 https://curl.se/
 
-libcurl-7.83.1-r2 installed size:
-512 KiB
+libcurl-7.83.1-r3 installed size:
+516 KiB
 
-libcurl-7.83.1-r2 license:
+libcurl-7.83.1-r3 license:
 curl
 
 ```
