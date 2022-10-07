@@ -10,6 +10,8 @@
 -	[`cassandra:4`](#cassandra4)
 -	[`cassandra:4.0`](#cassandra40)
 -	[`cassandra:4.0.6`](#cassandra406)
+-	[`cassandra:4.1`](#cassandra41)
+-	[`cassandra:4.1-beta1`](#cassandra41-beta1)
 -	[`cassandra:latest`](#cassandralatest)
 
 ## `cassandra:3`
@@ -3913,6 +3915,14 @@ CMD ["cassandra" "-f"]
 		Last Modified: Wed, 05 Oct 2022 17:46:27 GMT  
 		Size: 1.2 KB (1221 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `cassandra:4.1`
+
+**does not exist** (yet?)
+
+## `cassandra:4.1-beta1`
+
+**does not exist** (yet?)
 
 ## `cassandra:latest`
 
