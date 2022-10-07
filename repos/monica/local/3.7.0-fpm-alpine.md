@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c52511a933de430c255de435b28c73bde4ce0532052783a3d15d118a91103aed`
-- Created: `2022-09-29T20:40:36.467065478Z`
-- Virtual Size: ~ 314.00 Mb  
+- Image ID: `sha256:c98d2f7f3fa8de430a0921c79034e7bbf9895c5181f6ea4f9df6d7f0b7871543`
+- Created: `2022-10-07T08:03:48.619532595Z`
+- Virtual Size: ~ 313.50 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/entrypoint.sh"]`
@@ -228,16 +228,16 @@ GPL-3.0-or-later
 ### `apk` package: `curl`
 
 ```console
-curl-7.83.1-r2 description:
+curl-7.83.1-r3 description:
 URL retrival utility and library
 
-curl-7.83.1-r2 webpage:
+curl-7.83.1-r3 webpage:
 https://curl.se/
 
-curl-7.83.1-r2 installed size:
+curl-7.83.1-r3 installed size:
 256 KiB
 
-curl-7.83.1-r2 license:
+curl-7.83.1-r3 license:
 curl
 
 ```
