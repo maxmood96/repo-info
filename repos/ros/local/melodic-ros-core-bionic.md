@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:10ce6b7e1471453c06fcdf849fdc152f6898d2164ed14ed9f2ee15f09b354e9a`
-- Created: `2022-09-06T20:45:55.937641902Z`
-- Virtual Size: ~ 862.80 Mb  
+- Image ID: `sha256:367edf3bdb41bd746cf1277a348f7424c9dc06cbba560ee413e58c4a8375791d`
+- Created: `2022-10-05T09:53:41.249501173Z`
+- Virtual Size: ~ 862.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
@@ -2078,19 +2078,24 @@ $ apt-get source -qq --print-uris libzstd=1.3.3+dfsg-2ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.3.3%2bdfsg-2ubuntu1.2.debian.tar.xz' libzstd_1.3.3+dfsg-2ubuntu1.2.debian.tar.xz 13764 SHA512:f14aa9e453c7041a79dd90a52b5955b86fa86886b89ef26d4d257aa017a50d97410e8b875593992ad7d4b7e8e8d55743b8c66706be62cd4234f81e49c8bfc05d
 ```
 
-### `dpkg` source package: `linux=4.15.0-192.203`
+### `dpkg` source package: `linux=4.15.0-193.204`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.15.0-192.203`
+- `linux-libc-dev:amd64=4.15.0-193.204`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=4.15.0-193.204
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-193.204.dsc' linux_4.15.0-193.204.dsc 7426 SHA512:709f42eaafd7fe1675f92ad1a5f9c0ca8e24fb3a0280b70986d3d5c56f089cd697fda9cb1be9cb6ee51471231ef4689a3389ce7eaccddc357141fe009a22036f
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0.orig.tar.gz' linux_4.15.0.orig.tar.gz 157656459 SHA512:0fab606a295e0857f774f8adaa9d56bf2cb227fbab2daed374415da216391b156f49e606ba37ac402987c5796d408807da5d1a42c0d85a8552f109a3e279443d
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-193.204.diff.gz' linux_4.15.0-193.204.diff.gz 13232410 SHA512:9768db4f6b8eadef691dca624e465ec8d0c66d3d8daed018b2667bba6e838b0d48df7a30eaa24c93f582831953ebe61aeacb03b729698632dec3d73b7a557a4f
+```
 
 ### `dpkg` source package: `lksctp-tools=1.0.17+dfsg-2`
 
@@ -4571,12 +4576,12 @@ $ apt-get source -qq --print-uris six=1.11.0-2
 'http://archive.ubuntu.com/ubuntu/pool/main/s/six/six_1.11.0-2.debian.tar.xz' six_1.11.0-2.debian.tar.xz 4176 SHA256:bbd91dcb509a1f083bf531062b77dfdf2cbd2badca0fbe5d81957fe852ac4a7a
 ```
 
-### `dpkg` source package: `sqlite3=3.22.0-1ubuntu0.5`
+### `dpkg` source package: `sqlite3=3.22.0-1ubuntu0.6`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.22.0-1ubuntu0.5`
-- `libsqlite3-dev:amd64=3.22.0-1ubuntu0.5`
+- `libsqlite3-0:amd64=3.22.0-1ubuntu0.6`
+- `libsqlite3-dev:amd64=3.22.0-1ubuntu0.6`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`, `/usr/share/doc/libsqlite3-dev/copyright`)
 
@@ -4584,9 +4589,15 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris sqlite3=3.22.0-1ubuntu0.6
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.22.0-1ubuntu0.6.dsc' sqlite3_3.22.0-1ubuntu0.6.dsc 2512 SHA512:7bfdae09ad535e1ea06dd3fa552476c1cb27508b85e3f063c9b6922de8684f7f2ce4d83ff5686436bae8201b64c10e1d4b2b8d44f36c1498114a7036489f829a
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.22.0.orig-www.tar.xz' sqlite3_3.22.0.orig-www.tar.xz 3564688 SHA512:e469878137ec3d06886fe096c4325451e8c9b73f6841d28fac9bed45e698bdc1222739570abf2ce456e0853b0c6876b1c79ca0896826295f64d27b276541c1f8
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.22.0.orig.tar.xz' sqlite3_3.22.0.orig.tar.xz 6019648 SHA512:ce3b05cb9f75a5c7a5e8562b70e72e23c043222fd61995f795cbcc40f3f8efcac2660e57b588a15bfdce28c8eb644745bb73af35f5b98ba956dd77457d661dfa
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.22.0-1ubuntu0.6.debian.tar.xz' sqlite3_3.22.0-1ubuntu0.6.debian.tar.xz 48452 SHA512:aaac0cf8fd993702e7dceb01ef85e16318e727a33aa4f15fb6fcc27b82d4b429b4a20fa73981ceebf1799e403bca551f473a2827f897d409243bf0f56bab1400
+```
 
 ### `dpkg` source package: `sudo=1.8.21p2-3ubuntu1.4`
 
@@ -4607,12 +4618,12 @@ $ apt-get source -qq --print-uris sudo=1.8.21p2-3ubuntu1.4
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.8.21p2-3ubuntu1.4.debian.tar.xz' sudo_1.8.21p2-3ubuntu1.4.debian.tar.xz 39836 SHA512:aac2fcffff8e448263c9eae2742dfe9dc82fe2a2af1cc17edc82af84b9b1825611091817caa6c60610b766d4d13b0817793544c33d0b647e28efa22c1456433e
 ```
 
-### `dpkg` source package: `systemd=237-3ubuntu10.53`
+### `dpkg` source package: `systemd=237-3ubuntu10.56`
 
 Binary Packages:
 
-- `libsystemd0:amd64=237-3ubuntu10.53`
-- `libudev1:amd64=237-3ubuntu10.53`
+- `libsystemd0:amd64=237-3ubuntu10.56`
+- `libudev1:amd64=237-3ubuntu10.56`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -4624,9 +4635,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=237-3ubuntu10.56
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.56.dsc' systemd_237-3ubuntu10.56.dsc 5057 SHA512:f2f70add1d9b4a56b677a7078365c8263dccac069affb765c3cf8c00b33c9854d4ef8f34023a40a550bc6fe8360519ece0829892f348b31215b2770e712424ac
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237.orig.tar.gz' systemd_237.orig.tar.gz 6871350 SHA512:15ef4b92815a6dd9a6c51672dbc00fd7cd0f08068ef0cbeaca574f68d330b28bc67ba1946f24f75ef3d9e7b63843a73eea700db54688061dbf5c9f8470394c3b
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_237-3ubuntu10.56.debian.tar.xz' systemd_237-3ubuntu10.56.debian.tar.xz 304208 SHA512:4ebcb84f31d046a0bd97b551c90e0c25112ebf1f4ca3e94a2c046d02ba4a4208963a78fa98b9bbf2dbd7e0f635dc0f9e7f8641657f451f70784b2624a3aec0d4
+```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.10ubuntu1`
 
