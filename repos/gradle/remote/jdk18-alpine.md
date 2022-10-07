@@ -1,7 +1,7 @@
 ## `gradle:jdk18-alpine`
 
 ```console
-$ docker pull gradle@sha256:a022af79fcabc3060070408e849c879af0faf0362bd8032b718ba3c41dc59c96
+$ docker pull gradle@sha256:4d3a06b389955c490bb04683152032853503345cfa772e4d9c62e98317465479
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull gradle@sha256:a022af79fcabc3060070408e849c879af0faf0362bd8032b718b
 ### `gradle:jdk18-alpine` - linux; amd64
 
 ```console
-$ docker pull gradle@sha256:a6f7ff56b2750db2cf7ae20ba4b60658b8b517304e6156538aed3e5050f2c5dc
+$ docker pull gradle@sha256:3a7b395b25100376c3b89c4cec797c289f8428ff5c7de7c829c240038a1fcf47
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **365.1 MB (365082239 bytes)**  
+-	Total Size: **365.1 MB (365079970 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2d46be29c467b477ed67ef5c4eec438a1d3d62711a17873c4e5fda7286454bcf`
+-	Image ID: `sha256:e482b9d0b2c76f02433f559d45933f23f166dec8ca2213a0f036fd55147f0b98`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -42,23 +42,23 @@ RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
 # Mon, 29 Aug 2022 18:27:45 GMT
 CMD ["jshell"]
-# Mon, 29 Aug 2022 19:03:38 GMT
+# Fri, 07 Oct 2022 17:31:58 GMT
 CMD ["gradle"]
-# Mon, 29 Aug 2022 19:03:38 GMT
+# Fri, 07 Oct 2022 17:31:58 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Mon, 29 Aug 2022 19:03:38 GMT
+# Fri, 07 Oct 2022 17:31:59 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && addgroup --system --gid 1000 gradle     && adduser --system --ingroup gradle --uid 1000 --shell /bin/ash gradle     && mkdir /home/gradle/.gradle     && chown -R gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln -s /home/gradle/.gradle /root/.gradle
-# Mon, 29 Aug 2022 19:03:38 GMT
+# Fri, 07 Oct 2022 17:31:59 GMT
 VOLUME [/home/gradle/.gradle]
-# Mon, 29 Aug 2022 19:03:39 GMT
+# Fri, 07 Oct 2022 17:31:59 GMT
 WORKDIR /home/gradle
-# Mon, 29 Aug 2022 19:03:42 GMT
+# Fri, 07 Oct 2022 17:32:03 GMT
 RUN set -o errexit -o nounset     && echo "Installing VCSes"     && apk add --no-cache       git       git-lfs       mercurial       subversion         && echo "Testing VCSes"     && which git     && which git-lfs     && which hg     && which svn
-# Mon, 29 Aug 2022 19:03:43 GMT
+# Fri, 07 Oct 2022 17:32:03 GMT
 ENV GRADLE_VERSION=7.5.1
-# Mon, 29 Aug 2022 19:03:43 GMT
+# Fri, 07 Oct 2022 17:32:03 GMT
 ARG GRADLE_DOWNLOAD_SHA256=f6b8596b10cce501591e92f229816aa4046424f3b24d771751b06779d58c8ec4
-# Mon, 29 Aug 2022 19:03:48 GMT
+# Fri, 07 Oct 2022 17:32:09 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=f6b8596b10cce501591e92f229816aa4046424f3b24d771751b06779d58c8ec4
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum -c -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln -s "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -80,15 +80,15 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Mon, 29 Aug 2022 18:31:26 GMT  
 		Size: 178.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5c468b7b2b75595de71731e1f586664e98b7d4a138142303208162d14c51c7d8`  
-		Last Modified: Mon, 29 Aug 2022 19:07:55 GMT  
+	-	`sha256:81e474ab35b9271284933c6a9c72980c31f31d441eb99dd309c3964eb73f47a4`  
+		Last Modified: Fri, 07 Oct 2022 17:36:19 GMT  
 		Size: 1.3 KB (1333 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6775b8806ab8ee738471946803fcebc22bdc40090622f4be297cd3b3d593c60`  
-		Last Modified: Mon, 29 Aug 2022 19:08:02 GMT  
-		Size: 36.7 MB (36654980 bytes)  
+	-	`sha256:5da0ffb6e07e518718ba5f176ad16db1fd2b74e252165a24a76db2d043085f76`  
+		Last Modified: Fri, 07 Oct 2022 17:36:26 GMT  
+		Size: 36.7 MB (36652711 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d9b7d4b8a74eb4207c7d16cd51ec4f883c1bb5691541c39460b9f60833a6b510`  
-		Last Modified: Mon, 29 Aug 2022 19:08:02 GMT  
+	-	`sha256:2bca747a641c4966d8c650d4a86506474f95b25753d0247ea665bf8d60d323f5`  
+		Last Modified: Fri, 07 Oct 2022 17:36:26 GMT  
 		Size: 120.7 MB (120657915 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
