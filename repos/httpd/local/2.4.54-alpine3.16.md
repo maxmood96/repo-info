@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:081d5350025f46a5b05ebb977b89028afaf2c9d7c62cdaf960c801dc24c361e1`
-- Created: `2022-08-09T20:33:58.792146877Z`
+- Image ID: `sha256:ddb24f700640e0fe592b7210b932af516cadc8d644165382bce0860fa5d0725c`
+- Created: `2022-10-06T22:38:57.653260022Z`
 - Virtual Size: ~ 54.96 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -207,16 +207,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `expat`
 
 ```console
-expat-2.4.8-r0 description:
+expat-2.4.9-r0 description:
 XML Parser library written in C
 
-expat-2.4.8-r0 webpage:
+expat-2.4.9-r0 webpage:
 https://libexpat.github.io/
 
-expat-2.4.8-r0 installed size:
+expat-2.4.9-r0 installed size:
 192 KiB
 
-expat-2.4.8-r0 license:
+expat-2.4.9-r0 license:
 MIT
 
 ```
@@ -309,16 +309,16 @@ OpenSSL
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.83.1-r2 description:
+libcurl-7.83.1-r3 description:
 The multiprotocol file transfer library
 
-libcurl-7.83.1-r2 webpage:
+libcurl-7.83.1-r3 webpage:
 https://curl.se/
 
-libcurl-7.83.1-r2 installed size:
-512 KiB
+libcurl-7.83.1-r3 installed size:
+516 KiB
 
-libcurl-7.83.1-r2 license:
+libcurl-7.83.1-r3 license:
 curl
 
 ```
@@ -326,16 +326,16 @@ curl
 ### `apk` package: `libldap`
 
 ```console
-libldap-2.6.3-r0 description:
+libldap-2.6.3-r1 description:
 OpenLDAP libraries
 
-libldap-2.6.3-r0 webpage:
+libldap-2.6.3-r1 webpage:
 https://www.openldap.org/
 
-libldap-2.6.3-r0 installed size:
+libldap-2.6.3-r1 installed size:
 400 KiB
 
-libldap-2.6.3-r0 license:
+libldap-2.6.3-r1 license:
 OLDAP-2.8
 
 ```
@@ -394,16 +394,16 @@ GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.9.14-r0 description:
+libxml2-2.9.14-r1 description:
 XML parsing library, version 2
 
-libxml2-2.9.14-r0 webpage:
+libxml2-2.9.14-r1 webpage:
 http://www.xmlsoft.org/
 
-libxml2-2.9.14-r0 installed size:
+libxml2-2.9.14-r1 installed size:
 1200 KiB
 
-libxml2-2.9.14-r0 license:
+libxml2-2.9.14-r1 license:
 MIT
 
 ```
