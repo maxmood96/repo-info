@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f49dfb905a1564c8f23d8f911f989612b803696b1e6140339199dc3ee0ae33be`
-- Created: `2022-09-02T05:46:02.000235708Z`
+- Image ID: `sha256:4285add3122aab64976f1f4b4a93f2da8673515a570ff2999cc5bae1ede207dd`
+- Created: `2022-10-05T18:46:55.094018501Z`
 - Virtual Size: ~ 3.21 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1847,13 +1847,13 @@ $ apt-get source -qq --print-uris gdbm=1.18.1-5
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.18.1-5.debian.tar.xz' gdbm_1.18.1-5.debian.tar.xz 16348 SHA256:3c1a0e05b40a97ee51ce77c736c72c37738ba31b2720111d3bc99175a2c3a3ed
 ```
 
-### `dpkg` source package: `gdk-pixbuf=2.40.0+dfsg-3ubuntu0.3`
+### `dpkg` source package: `gdk-pixbuf=2.40.0+dfsg-3ubuntu0.4`
 
 Binary Packages:
 
-- `libgdk-pixbuf2.0-0:amd64=2.40.0+dfsg-3ubuntu0.3`
-- `libgdk-pixbuf2.0-bin=2.40.0+dfsg-3ubuntu0.3`
-- `libgdk-pixbuf2.0-common=2.40.0+dfsg-3ubuntu0.3`
+- `libgdk-pixbuf2.0-0:amd64=2.40.0+dfsg-3ubuntu0.4`
+- `libgdk-pixbuf2.0-bin=2.40.0+dfsg-3ubuntu0.4`
+- `libgdk-pixbuf2.0-common=2.40.0+dfsg-3ubuntu0.4`
 
 Licenses: (parsed from: `/usr/share/doc/libgdk-pixbuf2.0-0/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-bin/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-common/copyright`)
 
@@ -1863,17 +1863,22 @@ Licenses: (parsed from: `/usr/share/doc/libgdk-pixbuf2.0-0/copyright`, `/usr/sha
 - `LGPL-2+`
 - `MPL-1.1-or-LGPL-2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gdk-pixbuf=2.40.0+dfsg-3ubuntu0.4
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.40.0%2bdfsg-3ubuntu0.4.dsc' gdk-pixbuf_2.40.0+dfsg-3ubuntu0.4.dsc 3062 SHA512:d3492c156f517e8c54c9136bbcd9a8caa3e6a34e9947150e0201dbc8b40d7dc8090ec777fcbf752ef5da275e321328b4470a04d43ef79f83adf95bfecde6a6d3
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.40.0%2bdfsg.orig.tar.xz' gdk-pixbuf_2.40.0+dfsg.orig.tar.xz 5626144 SHA512:bb8a9d1837bffdc5f50307dba1a1e6f1ac015e6e670ea6cae6d0bc997afa106ff0d928cb847d76848c480a06e1ad3945274b4913eaa4d9a8074797fc82bb7c1f
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.40.0%2bdfsg-3ubuntu0.4.debian.tar.xz' gdk-pixbuf_2.40.0+dfsg-3ubuntu0.4.debian.tar.xz 21108 SHA512:77c5f1b213dcead327039f121ed6334aef33e73370489d496de4381921c29447bdd425a6fdb286a24f675dca95f45eecf354e791a8fc74ff628bf6e356393fb1
+```
 
-### `dpkg` source package: `ghostscript=9.50~dfsg-5ubuntu4.5`
+### `dpkg` source package: `ghostscript=9.50~dfsg-5ubuntu4.6`
 
 Binary Packages:
 
-- `ghostscript=9.50~dfsg-5ubuntu4.5`
-- `libgs9:amd64=9.50~dfsg-5ubuntu4.5`
-- `libgs9-common=9.50~dfsg-5ubuntu4.5`
+- `ghostscript=9.50~dfsg-5ubuntu4.6`
+- `libgs9:amd64=9.50~dfsg-5ubuntu4.6`
+- `libgs9-common=9.50~dfsg-5ubuntu4.6`
 
 Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/libgs9/copyright`, `/usr/share/doc/libgs9-common/copyright`)
 
@@ -1903,9 +1908,14 @@ Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris ghostscript=9.50~dfsg-5ubuntu4.6
+'http://archive.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.50%7edfsg-5ubuntu4.6.dsc' ghostscript_9.50~dfsg-5ubuntu4.6.dsc 2914 SHA512:0d1a3d9bf236866cd1d6f435da5c7038db8b6df0b3662129a5f4d159d4dd03a424b44bb07696bf2716fc0ab1deeb750e7928af7942d9a7b984b7642b8bc6f6f8
+'http://archive.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.50%7edfsg.orig.tar.xz' ghostscript_9.50~dfsg.orig.tar.xz 19139148 SHA512:75730872b02fe7341bf6c84fc4b53002f88d2c4c538dee62f749816a4963740f2a369e3a3760175e0f5b73547d5df805a152f5f0120db79ffecc871f5f14be86
+'http://archive.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.50%7edfsg-5ubuntu4.6.debian.tar.xz' ghostscript_9.50~dfsg-5ubuntu4.6.debian.tar.xz 132968 SHA512:e3b8cf4b47cd9c3c938dc0ef70c4bdd137747ed13369f1481515069cad9c8292dbe2f1e2374070944ef0aed01f9b249641166758cfbda87af11578d76d85bc55
+```
 
 ### `dpkg` source package: `giflib=5.1.9-1`
 
@@ -4584,20 +4594,25 @@ $ apt-get source -qq --print-uris libipc-system-simple-perl=1.26-1
 'http://archive.ubuntu.com/ubuntu/pool/main/libi/libipc-system-simple-perl/libipc-system-simple-perl_1.26-1.debian.tar.xz' libipc-system-simple-perl_1.26-1.debian.tar.xz 3304 SHA256:057db1c853f431de5ce244131cd46043b8409e703baef9568ddb978fd2f84674
 ```
 
-### `dpkg` source package: `libjpeg-turbo=2.0.3-0ubuntu1.20.04.1`
+### `dpkg` source package: `libjpeg-turbo=2.0.3-0ubuntu1.20.04.3`
 
 Binary Packages:
 
-- `libjpeg-turbo8:amd64=2.0.3-0ubuntu1.20.04.1`
+- `libjpeg-turbo8:amd64=2.0.3-0ubuntu1.20.04.3`
 
 Licenses: (parsed from: `/usr/share/doc/libjpeg-turbo8/copyright`)
 
 - `JPEG`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libjpeg-turbo=2.0.3-0ubuntu1.20.04.3
+'http://archive.ubuntu.com/ubuntu/pool/main/libj/libjpeg-turbo/libjpeg-turbo_2.0.3-0ubuntu1.20.04.3.dsc' libjpeg-turbo_2.0.3-0ubuntu1.20.04.3.dsc 2337 SHA512:0855a6f5af33892e285752fc44766d902424b8390777b2432dbdff56a6e8275832010018012a54b395c64c0233cbd35f080000cc6780a4546549215638e4abc6
+'http://archive.ubuntu.com/ubuntu/pool/main/libj/libjpeg-turbo/libjpeg-turbo_2.0.3.orig.tar.gz' libjpeg-turbo_2.0.3.orig.tar.gz 2161279 SHA512:745cc3d50b43dd84721bc3c341d561ffd7f54eda5bbe2d56cad62f4b51ea76da3b18aba9ca694a9db79379aba7a9971cb146387979e96ca6ece950871276cf2f
+'http://archive.ubuntu.com/ubuntu/pool/main/libj/libjpeg-turbo/libjpeg-turbo_2.0.3-0ubuntu1.20.04.3.debian.tar.xz' libjpeg-turbo_2.0.3-0ubuntu1.20.04.3.debian.tar.xz 26328 SHA512:ce0f3f9e924cb24d114bccc65bada8f3f767e2a04f33d89f53cbbb59f884c87519e1d07d1610fa40af8dde5231a7d392e5483a30f563433fc41eef61fab32267
+```
 
 ### `dpkg` source package: `libjpeg8-empty=8c-2ubuntu8`
 
@@ -5233,17 +5248,9 @@ Licenses: (parsed from: `/usr/share/doc/fonts-opensymbol/copyright`, `/usr/share
 - `MPL-2.0`
 - `other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libreoffice=1:6.4.7-0ubuntu0.20.04.4
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_6.4.7-0ubuntu0.20.04.4.dsc' libreoffice_6.4.7-0ubuntu0.20.04.4.dsc 30509 SHA512:b2f8fa985499e555aba9b23342231561c6d31366e8b8d7529684a3069d7ce54d502e5b378c582d7c0765eb8cda8d8f5e45e8b6c05a81443c4a3700335087d1c9
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_6.4.7.orig-helpcontent2.tar.xz' libreoffice_6.4.7.orig-helpcontent2.tar.xz 88073752 SHA512:3d6459cd4eab764d1fc15eb6edd6c1b16272f51869de1e9379328e81e03adb146d73c2acaf147d13b8ccc9a99721e023d404a0cf2f99a05264cc5536604828da
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_6.4.7.orig-tarballs.tar.xz' libreoffice_6.4.7.orig-tarballs.tar.xz 200916520 SHA512:10dc6e7b0521dff9aea57859312bb9802e1671f52d97f0f3fb7e030e779f778842088160ee14f446a8cc457d67b21b683c90c94bf0aa797ff890b2dea344f5ab
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_6.4.7.orig-translations.tar.xz' libreoffice_6.4.7.orig-translations.tar.xz 179847328 SHA512:6496ce816b136504c9511aeac5e881f329360e144ea48f28e9b56720ed727719339703431e0e0cee931d721c0e2b308366f0a3af771ebc980952c410f400c1cd
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_6.4.7.orig.tar.xz' libreoffice_6.4.7.orig.tar.xz 211530416 SHA512:a0ee0c0e617b33655dce0fbb14e2af12c3d810a3a9631d4b2204a75c8ac64c8797ab52735b799d078e1fff5a14d188ee850c239dab7bce4035a7ca704d6caa97
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_6.4.7-0ubuntu0.20.04.4.debian.tar.xz' libreoffice_6.4.7-0ubuntu0.20.04.4.debian.tar.xz 2406048 SHA512:bffe8cd0af85f73592559932ad2b8907f473828ed21b8e0cecd7ed3b19756da34ed7d5e07c8cf06d89540cee9b8f85494522e37424e8a3968c3f88552cc8f194
-```
 
 ### `dpkg` source package: `librest=0.8.1-1`
 
@@ -7763,11 +7770,11 @@ $ apt-get source -qq --print-uris pango1.0=1.44.7-2ubuntu4
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.44.7-2ubuntu4.debian.tar.xz' pango1.0_1.44.7-2ubuntu4.debian.tar.xz 33516 SHA256:6f5f8c66299af90a94c4dbdfa146e840eec8bc2d183cd1fb42e8e7de6f335df5
 ```
 
-### `dpkg` source package: `pcre2=10.34-7`
+### `dpkg` source package: `pcre2=10.34-7ubuntu0.1`
 
 Binary Packages:
 
-- `libpcre2-8-0:amd64=10.34-7`
+- `libpcre2-8-0:amd64=10.34-7ubuntu0.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7776,10 +7783,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris pcre2=10.34-7
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.34-7.dsc' pcre2_10.34-7.dsc 2286 SHA256:c3e2bfd8fabf594238b3f17074dc8ac483aaf80a9f12dbfe927b80a74558732e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.34.orig.tar.gz' pcre2_10.34.orig.tar.gz 2271533 SHA256:da6aba7ba2509e918e41f4f744a59fa41a2425c59a298a232e7fe85691e00379
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.34-7.diff.gz' pcre2_10.34-7.diff.gz 7068 SHA256:7d44ac1b171ef7f7051213a3a8505b28f3809ed3e2fb348567a29fdf5f2b5fdf
+$ apt-get source -qq --print-uris pcre2=10.34-7ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.34-7ubuntu0.1.dsc' pcre2_10.34-7ubuntu0.1.dsc 2142 SHA512:f37aadf191246ca9e4605a57e9a15e3bac768649c19970259b03b5792b52ca848206866be5b5b79fec659c6b2defa50dd263d2e0ff41d706e613c707cb5540fc
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.34.orig.tar.gz' pcre2_10.34.orig.tar.gz 2271533 SHA512:820b3805fc7fcf3a80dfd42ff570efc8518fe3c50f3feb720319b95316619e5b8f6601b3c9522606315aecd5558ccfc8a04a89fab9921fdfc3400dc2caf17c22
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.34-7ubuntu0.1.diff.gz' pcre2_10.34-7ubuntu0.1.diff.gz 10945 SHA512:92f25dddec9ca30dc7221ee09e5b401c59fbf86acd3612451f6c64e55f7a9f96fd9752ac7398f05aa59214d9649f63324ec0f6ede2f178653f361ae9adeb7e70
 ```
 
 ### `dpkg` source package: `pcre3=2:8.39-12ubuntu0.1`
@@ -7959,11 +7966,11 @@ $ apt-get source -qq --print-uris poppler-data=0.4.9-2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler-data/poppler-data_0.4.9-2.debian.tar.xz' poppler-data_0.4.9-2.debian.tar.xz 19504 SHA256:300792a153c1bfcf2413807875e333c7ba31a30a71f64d97bca58de307589d70
 ```
 
-### `dpkg` source package: `poppler=0.86.1-0ubuntu1`
+### `dpkg` source package: `poppler=0.86.1-0ubuntu1.1`
 
 Binary Packages:
 
-- `libpoppler97:amd64=0.86.1-0ubuntu1`
+- `libpoppler97:amd64=0.86.1-0ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/libpoppler97/copyright`)
 
@@ -7973,10 +7980,10 @@ Licenses: (parsed from: `/usr/share/doc/libpoppler97/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris poppler=0.86.1-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.86.1-0ubuntu1.dsc' poppler_0.86.1-0ubuntu1.dsc 2658 SHA256:e279f4042e1dd99d6f52ad235e9463b61f63b217e6414f368567c8428162749f
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.86.1.orig.tar.xz' poppler_0.86.1.orig.tar.xz 1593856 SHA256:af630a277c8e194c31339c5446241834aed6ed3d4b4dc7080311e51c66257f6c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.86.1-0ubuntu1.debian.tar.xz' poppler_0.86.1-0ubuntu1.debian.tar.xz 34832 SHA256:fe88ed5df596c68ecf5ffa7e2ff6dc4cdedea4ae3ba8c79b7fefc9689a9b6db9
+$ apt-get source -qq --print-uris poppler=0.86.1-0ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.86.1-0ubuntu1.1.dsc' poppler_0.86.1-0ubuntu1.1.dsc 3320 SHA512:32be68069d284c5bf372574de05bbcc98efe27b018cdc85bde89346c3868a82174e05cac7a2a32027024a364d8b5d6b870871d599a202c315dfeaeeb33705df5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.86.1.orig.tar.xz' poppler_0.86.1.orig.tar.xz 1593856 SHA512:435fc1e7f3e8123e0adde9aa60c0d7dc17db367cde8908932abfef913cee6f27efeb1c4f2d6f316019a69a87f1fa5251be4216d0a81a681a24f24a70ac571670
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.86.1-0ubuntu1.1.debian.tar.xz' poppler_0.86.1-0ubuntu1.1.debian.tar.xz 35408 SHA512:b2e9660f0dd0f3c46043ba638177d8b62e523fedc58da320018e84fab967edddb55ab3b4dab08a7fb5750eddc7c478ed5139724b9714318920e276a049f5d903
 ```
 
 ### `dpkg` source package: `postgresql-12=12.12-0ubuntu0.20.04.1`
@@ -8577,11 +8584,11 @@ $ apt-get source -qq --print-uris speex=1.2~rc1.2-1.1ubuntu1.20.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/speex/speex_1.2%7erc1.2-1.1ubuntu1.20.04.1.diff.gz' speex_1.2~rc1.2-1.1ubuntu1.20.04.1.diff.gz 10743 SHA512:1d1c91ae387186538dde92a21a65ac4b429039b24c5dae9cedfbae42cc631919e6416b6100d116e142beea89eb56559afa551f76f0a32c82bc8193e03033360c
 ```
 
-### `dpkg` source package: `sqlite3=3.31.1-4ubuntu0.3`
+### `dpkg` source package: `sqlite3=3.31.1-4ubuntu0.4`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.31.1-4ubuntu0.3`
+- `libsqlite3-0:amd64=3.31.1-4ubuntu0.4`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -8589,9 +8596,15 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris sqlite3=3.31.1-4ubuntu0.4
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1-4ubuntu0.4.dsc' sqlite3_3.31.1-4ubuntu0.4.dsc 2519 SHA512:63501762b9e3d411213f88c158653246350e4f5d537fd868f57b1468f62ed270906b4f767bf7e70c8422d0ada35409a86ef8e98022f66f291dcad1d957ee6b46
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1.orig-www.tar.xz' sqlite3_3.31.1.orig-www.tar.xz 5764424 SHA512:a47adacd46c673cfd674cb64fb54b054e69560aed8c8c429773f0eccdcdbce4be538397506eca8e2d169f4b46d0d47442b273e12d82f8c87e1aadf3ade458db6
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1.orig.tar.xz' sqlite3_3.31.1.orig.tar.xz 7108036 SHA512:67e1050efe2988fa3d0d7e4a87e147a8114c6ff9b6ca5307a068befb38e861930eaee0135048ff1abb1e6323b507cbc68a0aac3a8fe5f095d6fcea1547a7efaf
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1-4ubuntu0.4.debian.tar.xz' sqlite3_3.31.1-4ubuntu0.4.debian.tar.xz 35468 SHA512:a4974f917c0f94142472bbaee2590be3baf9e5881db6df598ca4267bb823bd9934d5af30ea2e4b513044ab465ad9ebca2d1d7ae47cb41080edbd963a0a1fd227
+```
 
 ### `dpkg` source package: `sratom=0.6.4-1`
 
@@ -8644,17 +8657,17 @@ $ apt-get source -qq --print-uris suitesparse=1:5.7.1+dfsg-2
 'http://archive.ubuntu.com/ubuntu/pool/main/s/suitesparse/suitesparse_5.7.1%2bdfsg-2.debian.tar.xz' suitesparse_5.7.1+dfsg-2.debian.tar.xz 42744 SHA256:c8c1681fa3a2518795c31f482ebd15160d33f0f9edff81558a09f84c701516f9
 ```
 
-### `dpkg` source package: `systemd=245.4-4ubuntu3.17`
+### `dpkg` source package: `systemd=245.4-4ubuntu3.18`
 
 Binary Packages:
 
-- `libnss-systemd:amd64=245.4-4ubuntu3.17`
-- `libpam-systemd:amd64=245.4-4ubuntu3.17`
-- `libsystemd0:amd64=245.4-4ubuntu3.17`
-- `libudev1:amd64=245.4-4ubuntu3.17`
-- `systemd=245.4-4ubuntu3.17`
-- `systemd-sysv=245.4-4ubuntu3.17`
-- `systemd-timesyncd=245.4-4ubuntu3.17`
+- `libnss-systemd:amd64=245.4-4ubuntu3.18`
+- `libpam-systemd:amd64=245.4-4ubuntu3.18`
+- `libsystemd0:amd64=245.4-4ubuntu3.18`
+- `libudev1:amd64=245.4-4ubuntu3.18`
+- `systemd=245.4-4ubuntu3.18`
+- `systemd-sysv=245.4-4ubuntu3.18`
+- `systemd-timesyncd=245.4-4ubuntu3.18`
 
 Licenses: (parsed from: `/usr/share/doc/libnss-systemd/copyright`, `/usr/share/doc/libpam-systemd/copyright`, `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-sysv/copyright`, `/usr/share/doc/systemd-timesyncd/copyright`)
 
@@ -8667,9 +8680,14 @@ Licenses: (parsed from: `/usr/share/doc/libnss-systemd/copyright`, `/usr/share/d
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=245.4-4ubuntu3.18
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.18.dsc' systemd_245.4-4ubuntu3.18.dsc 5262 SHA512:54fdd08eb54669496a545c1bbacad81ebc174d32cf3247c9620e3b79cec9c5714e91025a6bd8284f863011dda8f5fa6059d5598c27ba050d20b6cfd810a12b71
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4.orig.tar.gz' systemd_245.4.orig.tar.gz 9000780 SHA512:02036bb1ab05301a9d0dfdd4b9c9376e90134474482531e6e292122380be2f24f99177493dd3af6f8af1a8ed2599ee0996da91a3b1b7872bbfaf26a1c3e61b4c
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.18.debian.tar.xz' systemd_245.4-4ubuntu3.18.debian.tar.xz 279672 SHA512:fb32658af3f684336e05270c4b10cf17c11830dc5ec1e7c1b1a3ed4b50fdcc8a89db6a05488d24b5bec4a8996ab716b0fec73d464d25b3a464f10b4d11f3380b
+```
 
 ### `dpkg` source package: `sysvinit=2.96-2.1ubuntu1`
 
@@ -8756,19 +8774,24 @@ $ apt-get source -qq --print-uris tdb=1.4.3-0ubuntu0.20.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tdb/tdb_1.4.3-0ubuntu0.20.04.1.debian.tar.xz' tdb_1.4.3-0ubuntu0.20.04.1.debian.tar.xz 18052 SHA512:3e72fdba99e7bd1fa1b615546530344669141c8c149eb7126bfdc1b5ae130ac5e2283cf32e76319bf104cf721f90bf5d6e8b77a686fdb818e6ed9b71b45331fc
 ```
 
-### `dpkg` source package: `tiff=4.1.0+git191117-2ubuntu0.20.04.3`
+### `dpkg` source package: `tiff=4.1.0+git191117-2ubuntu0.20.04.5`
 
 Binary Packages:
 
-- `libtiff5:amd64=4.1.0+git191117-2ubuntu0.20.04.3`
+- `libtiff5:amd64=4.1.0+git191117-2ubuntu0.20.04.5`
 
 Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 
 - `Hylafax`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tiff=4.1.0+git191117-2ubuntu0.20.04.5
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.1.0%2bgit191117-2ubuntu0.20.04.5.dsc' tiff_4.1.0+git191117-2ubuntu0.20.04.5.dsc 2251 SHA512:31bfbdb4148d6931b1f7f68ca42a00e873fcd001956bf037f82707d1d550b6c7134e8b02be0664de402fc5a9ad475d00b1a602253b0eb2e5d8756239d0906518
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.1.0%2bgit191117.orig.tar.xz' tiff_4.1.0+git191117.orig.tar.xz 1533524 SHA512:25b4bc4522fc2e7f3ca6857b87acd4481d8643566b1120c755020afc8b48949238ee2078bc43dd3ba7407eaa4e36b1b712d7056f101ddaf60f94dab8607870b8
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.1.0%2bgit191117-2ubuntu0.20.04.5.debian.tar.xz' tiff_4.1.0+git191117-2ubuntu0.20.04.5.debian.tar.xz 29960 SHA512:d5a1d8b5d449795312124bdac56c267fa753302ed9ac3c9dd061214235a86ceeb0478193dee1a9c75807e910b8a7a6d1def59799c9edc870e2d305f98f12c10b
+```
 
 ### `dpkg` source package: `twolame=0.4.0-2`
 
@@ -8927,14 +8950,14 @@ $ apt-get source -qq --print-uris util-linux=2.34-0.1ubuntu9.3
 'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.34-0.1ubuntu9.3.debian.tar.xz' util-linux_2.34-0.1ubuntu9.3.debian.tar.xz 94976 SHA512:b6e55588aea32de6481dad01f194e6f71b8a859019e5c8d6d816c65f32c8b31821d1ab73f13ec34c5d3551311c43b7e24ac01c2af5878a85df72326293c3a71a
 ```
 
-### `dpkg` source package: `vim=2:8.1.2269-1ubuntu5.7`
+### `dpkg` source package: `vim=2:8.1.2269-1ubuntu5.9`
 
 Binary Packages:
 
-- `vim=2:8.1.2269-1ubuntu5.7`
-- `vim-common=2:8.1.2269-1ubuntu5.7`
-- `vim-runtime=2:8.1.2269-1ubuntu5.7`
-- `xxd=2:8.1.2269-1ubuntu5.7`
+- `vim=2:8.1.2269-1ubuntu5.9`
+- `vim-common=2:8.1.2269-1ubuntu5.9`
+- `vim-runtime=2:8.1.2269-1ubuntu5.9`
+- `xxd=2:8.1.2269-1ubuntu5.9`
 
 Licenses: (parsed from: `/usr/share/doc/vim/copyright`, `/usr/share/doc/vim-common/copyright`, `/usr/share/doc/vim-runtime/copyright`, `/usr/share/doc/xxd/copyright`)
 
@@ -8962,9 +8985,14 @@ Licenses: (parsed from: `/usr/share/doc/vim/copyright`, `/usr/share/doc/vim-comm
 - `XPM`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris vim=2:8.1.2269-1ubuntu5.9
+'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_8.1.2269-1ubuntu5.9.dsc' vim_8.1.2269-1ubuntu5.9.dsc 2769 SHA512:478e38921238638c195806921f30dc4767aae013cde8777f1ff0c8be4fafe5ea7049eaf1ee2caaa1d96ed160d8ba4a58214f8bbaf3067936f953fc738011da31
+'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_8.1.2269.orig.tar.gz' vim_8.1.2269.orig.tar.gz 14590233 SHA512:5194817a5665e08816e87e3b10219e19510ca87c5c377ddc0a50aa84ffd4d7391badad3e993f83802d6da5e9da8834635c1acbdd4a909e75b4947f99f13c1746
+'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_8.1.2269-1ubuntu5.9.debian.tar.xz' vim_8.1.2269-1ubuntu5.9.debian.tar.xz 217248 SHA512:c6cc3eee5d189fc0c68b19912423d16b87f0d8280615d5bcef58aa569f1b94a4c918f93aa79c64c15b561f26784d3cbbc796d4d47f9c0c5c3669fab0e40d5064
+```
 
 ### `dpkg` source package: `vulkan-loader=1.2.131.2-1`
 
@@ -9007,14 +9035,14 @@ $ apt-get source -qq --print-uris wavpack=5.2.0-1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/w/wavpack/wavpack_5.2.0-1ubuntu0.1.debian.tar.xz' wavpack_5.2.0-1ubuntu0.1.debian.tar.xz 7076 SHA512:9e0ae292c78f9697eac6217f613c7f0cf89ed7b6305683f0be0573e42c35e5582686bd35e2637d73a07ead3c68473cfa0082ef1ef1a905bdfaebf808c83a6280
 ```
 
-### `dpkg` source package: `wayland=1.18.0-1`
+### `dpkg` source package: `wayland=1.18.0-1ubuntu0.1`
 
 Binary Packages:
 
-- `libwayland-client0:amd64=1.18.0-1`
-- `libwayland-cursor0:amd64=1.18.0-1`
-- `libwayland-egl1:amd64=1.18.0-1`
-- `libwayland-server0:amd64=1.18.0-1`
+- `libwayland-client0:amd64=1.18.0-1ubuntu0.1`
+- `libwayland-cursor0:amd64=1.18.0-1ubuntu0.1`
+- `libwayland-egl1:amd64=1.18.0-1ubuntu0.1`
+- `libwayland-server0:amd64=1.18.0-1ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libwayland-client0/copyright`, `/usr/share/doc/libwayland-cursor0/copyright`, `/usr/share/doc/libwayland-egl1/copyright`, `/usr/share/doc/libwayland-server0/copyright`)
 
@@ -9023,10 +9051,10 @@ Licenses: (parsed from: `/usr/share/doc/libwayland-client0/copyright`, `/usr/sha
 Source:
 
 ```console
-$ apt-get source -qq --print-uris wayland=1.18.0-1
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.18.0-1.dsc' wayland_1.18.0-1.dsc 2565 SHA256:c3a7625f8ed02443815aa607e8875f4c01f41f4037b48d1cc97689500c7083e7
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.18.0.orig.tar.gz' wayland_1.18.0.orig.tar.gz 736301 SHA256:102d5556db1524a7737ab76e358b03e5b92a7718f1ac1520bf9686bfd09c8e4a
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.18.0-1.diff.gz' wayland_1.18.0-1.diff.gz 16180 SHA256:3c93bd642992a55340bcf24d4f20f9e77a0bf4ab188fb76f78117e704e3a3fba
+$ apt-get source -qq --print-uris wayland=1.18.0-1ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.18.0-1ubuntu0.1.dsc' wayland_1.18.0-1ubuntu0.1.dsc 2680 SHA512:1487bb25e04324a952064d06460f319d206a0dfc9d87a483b7a91cb964ee6c89b3d026d9682b8a2af7c15f0ec58bb0d431fcd15ed27c346b199c07a89ca2d6bf
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.18.0.orig.tar.gz' wayland_1.18.0.orig.tar.gz 736301 SHA512:365b7065d71ee6f30dea3a68cafadf95f13480e80424481fec6027d041a9d20e1c645ee7c114500bb0767c2a79b8cabd9fd51c3f54ebca7fe577b9c8b98c08be
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.18.0-1ubuntu0.1.diff.gz' wayland_1.18.0-1ubuntu0.1.diff.gz 17774 SHA512:66abab279133ab9d7d669025b497b9261056ee5380d9d8c40334d822dd416076fcdb2a400b83f800f7f2fa0caf91981d2a71c8aa26e6c7c3973e13125727bd01
 ```
 
 ### `dpkg` source package: `websocket-api=1.1-1`
