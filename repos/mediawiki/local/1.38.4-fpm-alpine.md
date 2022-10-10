@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:25ebe8330cd7ef2659ebd6a842b28154735aa89ed951fce62bc03e9bdcb4f9ef`
-- Created: `2022-09-30T19:20:53.581164033Z`
-- Virtual Size: ~ 525.09 Mb  
+- Image ID: `sha256:f2def29104777b84adf5a7b0fba052934e95260d76826ff31eb70e6c76510d50`
+- Created: `2022-10-07T07:58:53.499731948Z`
+- Virtual Size: ~ 524.59 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -267,16 +267,16 @@ GPL-2.0-only
 ### `apk` package: `curl`
 
 ```console
-curl-7.83.1-r2 description:
+curl-7.83.1-r3 description:
 URL retrival utility and library
 
-curl-7.83.1-r2 webpage:
+curl-7.83.1-r3 webpage:
 https://curl.se/
 
-curl-7.83.1-r2 installed size:
+curl-7.83.1-r3 installed size:
 256 KiB
 
-curl-7.83.1-r2 license:
+curl-7.83.1-r3 license:
 curl
 
 ```
@@ -284,16 +284,16 @@ curl
 ### `apk` package: `dbus-libs`
 
 ```console
-dbus-libs-1.14.0-r1 description:
+dbus-libs-1.14.4-r0 description:
 D-BUS access libraries
 
-dbus-libs-1.14.0-r1 webpage:
+dbus-libs-1.14.4-r0 webpage:
 https://www.freedesktop.org/Software/dbus
 
-dbus-libs-1.14.0-r1 installed size:
+dbus-libs-1.14.4-r0 installed size:
 308 KiB
 
-dbus-libs-1.14.0-r1 license:
+dbus-libs-1.14.4-r0 license:
 AFL-2.1 OR GPL-2.0-or-later
 
 ```
@@ -1559,16 +1559,16 @@ GPL-3.0-or-later
 ### `apk` package: `tiff`
 
 ```console
-tiff-4.3.0-r1 description:
+tiff-4.4.0-r0 description:
 Provides support for the Tag Image File Format or TIFF
 
-tiff-4.3.0-r1 webpage:
+tiff-4.4.0-r0 webpage:
 https://gitlab.com/libtiff/libtiff
 
-tiff-4.3.0-r1 installed size:
-472 KiB
+tiff-4.4.0-r0 installed size:
+480 KiB
 
-tiff-4.3.0-r1 license:
+tiff-4.4.0-r0 license:
 libtiff
 
 ```
