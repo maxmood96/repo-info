@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a29b4814588660cc5d93eb4189efbc821338998dbe33d84f13d75774d7b54363`
-- Created: `2022-10-03T23:43:44.780527358Z`
-- Virtual Size: ~ 441.94 Mb  
+- Image ID: `sha256:777f990b27bdfee6f7703f2fde708179d3fc5794ec1a4dd9396ca72170363007`
+- Created: `2022-10-08T00:00:18.659830969Z`
+- Virtual Size: ~ 441.89 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -319,16 +319,16 @@ GPL-2.0-only
 ### `apk` package: `dbus-libs`
 
 ```console
-dbus-libs-1.12.20-r4 description:
+dbus-libs-1.12.24-r0 description:
 D-BUS access libraries
 
-dbus-libs-1.12.20-r4 webpage:
+dbus-libs-1.12.24-r0 webpage:
 https://www.freedesktop.org/Software/dbus
 
-dbus-libs-1.12.20-r4 installed size:
+dbus-libs-1.12.24-r0 installed size:
 304 KiB
 
-dbus-libs-1.12.20-r4 license:
+dbus-libs-1.12.24-r0 license:
 AFL-2.1 OR GPL-2.0-or-later
 
 ```
@@ -336,16 +336,16 @@ AFL-2.1 OR GPL-2.0-or-later
 ### `apk` package: `expat`
 
 ```console
-expat-2.4.7-r0 description:
+expat-2.4.9-r0 description:
 XML Parser library written in C
 
-expat-2.4.7-r0 webpage:
+expat-2.4.9-r0 webpage:
 http://www.libexpat.org/
 
-expat-2.4.7-r0 installed size:
+expat-2.4.9-r0 installed size:
 192 KiB
 
-expat-2.4.7-r0 license:
+expat-2.4.9-r0 license:
 MIT
 
 ```
@@ -778,16 +778,16 @@ OpenSSL
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.80.0-r2 description:
+libcurl-7.80.0-r3 description:
 The multiprotocol file transfer library
 
-libcurl-7.80.0-r2 webpage:
+libcurl-7.80.0-r3 webpage:
 https://curl.se/
 
-libcurl-7.80.0-r2 installed size:
+libcurl-7.80.0-r3 installed size:
 504 KiB
 
-libcurl-7.80.0-r2 license:
+libcurl-7.80.0-r3 license:
 MIT
 
 ```
@@ -1322,16 +1322,16 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.9.14-r0 description:
+libxml2-2.9.14-r1 description:
 XML parsing library, version 2
 
-libxml2-2.9.14-r0 webpage:
+libxml2-2.9.14-r1 webpage:
 http://www.xmlsoft.org/
 
-libxml2-2.9.14-r0 installed size:
+libxml2-2.9.14-r1 installed size:
 1200 KiB
 
-libxml2-2.9.14-r0 license:
+libxml2-2.9.14-r1 license:
 MIT
 
 ```
@@ -1985,16 +1985,16 @@ Apache-2.0 BSD
 ### `apk` package: `tiff`
 
 ```console
-tiff-4.3.0-r1 description:
+tiff-4.4.0-r0 description:
 Provides support for the Tag Image File Format or TIFF
 
-tiff-4.3.0-r1 webpage:
+tiff-4.4.0-r0 webpage:
 https://gitlab.com/libtiff/libtiff
 
-tiff-4.3.0-r1 installed size:
-472 KiB
+tiff-4.4.0-r0 installed size:
+476 KiB
 
-tiff-4.3.0-r1 license:
+tiff-4.4.0-r0 license:
 libtiff
 
 ```
@@ -2019,16 +2019,16 @@ MIT
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2022a-r0 description:
+tzdata-2022c-r0 description:
 Timezone data
 
-tzdata-2022a-r0 webpage:
+tzdata-2022c-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2022a-r0 installed size:
-3376 KiB
+tzdata-2022c-r0 installed size:
+3208 KiB
 
-tzdata-2022a-r0 license:
+tzdata-2022c-r0 license:
 Public-Domain
 
 ```
