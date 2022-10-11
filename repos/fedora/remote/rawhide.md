@@ -1,7 +1,7 @@
 ## `fedora:rawhide`
 
 ```console
-$ docker pull fedora@sha256:fe82569cff7745d2bb9ce8259bd72afb4377679a32c1295ecc6e035276a1d3f6
+$ docker pull fedora@sha256:d77066d7b4f27b2a344c67db237fbfe27f51d5b963c4a56dbf7bee80cfedba5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -74,24 +74,24 @@ CMD ["/bin/bash"]
 ### `fedora:rawhide` - linux; ppc64le
 
 ```console
-$ docker pull fedora@sha256:a7d27e30a4cc1532fba269935e65fd00bb3c7c69dfbbc1f0a2203919bfb7b633
+$ docker pull fedora@sha256:2e654720f503e00a51896d0bbf6be86f5a4cdc74b8af3b15df754aa119338adc
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **65.1 MB (65082437 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:512d07e9730d26ca2c92b5dc1f3d6c5febd25a4be709be7184eac0c3b3d25473`
+-	Image ID: `sha256:f4ce470833537fd2e5edce21188b4d5d38fab63351bc3b631c456b7923ef6d0d`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 23 Jul 2021 23:32:50 GMT
+# Tue, 11 Oct 2022 12:16:45 GMT
 LABEL maintainer=Clement Verna <cverna@fedoraproject.org>
-# Sun, 20 Mar 2022 04:53:18 GMT
+# Tue, 11 Oct 2022 12:17:51 GMT
 ENV DISTTAG=f37container FGC=f37 FBR=f37
-# Thu, 12 May 2022 22:31:30 GMT
+# Tue, 11 Oct 2022 12:18:02 GMT
 ADD file:f7c6a76f76aa4f0057ce16cf3e83d5b5c9296ce5b33995dc1208bd2b4fcd7548 in / 
-# Thu, 12 May 2022 22:31:36 GMT
+# Tue, 11 Oct 2022 12:18:05 GMT
 CMD ["/bin/bash"]
 ```
 
