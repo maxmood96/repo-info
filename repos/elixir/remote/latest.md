@@ -1,7 +1,7 @@
 ## `elixir:latest`
 
 ```console
-$ docker pull elixir@sha256:aa4147ec0884092db26c21b7d1fd16a31007a8e57b0a495abc64b8c150274aa3
+$ docker pull elixir@sha256:47633262bf54ec79cf3c3c600eecf0ce634ced039c6d18dc3974a53357955fec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -102,14 +102,14 @@ CMD ["iex"]
 ### `elixir:latest` - linux; arm variant v7
 
 ```console
-$ docker pull elixir@sha256:a64910c9bac1a22cccf0b227bc05d3f7e910941b20131a15ab707fa4f953e924
+$ docker pull elixir@sha256:33a28748cb761a3334bc72ab6b60c6f7181d6303a3c0c04b1fda58c1670eb95d
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **504.1 MB (504139806 bytes)**  
+-	Total Size: **504.1 MB (504144542 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aeb66c8e4ca99c5e5b1fa004e226c84ce7dc8cce12f2c6d79b4d96cea560cc1f`
+-	Image ID: `sha256:950b7e1c95d80391a38cc86ef42f363933a7946dedb5d5ed3db4f7e306fcb9be`
 -	Default Command: `["iex"]`
 
 ```dockerfile
@@ -139,11 +139,11 @@ ENV REBAR_VERSION=2.6.4
 RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src
 # Wed, 05 Oct 2022 01:32:35 GMT
 RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="ff9ef42c737480477ebdf0dd9d95ece534a14c96f05edafbf32e9af973280bc3" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src
-# Thu, 06 Oct 2022 16:44:31 GMT
-ENV ELIXIR_VERSION=v1.14.0 LANG=C.UTF-8
-# Thu, 06 Oct 2022 16:45:31 GMT
-RUN set -xe 	&& ELIXIR_DOWNLOAD_URL="https://github.com/elixir-lang/elixir/archive/${ELIXIR_VERSION}.tar.gz" 	&& ELIXIR_DOWNLOAD_SHA256="ac129e266a1e04cdc389551843ec3dbdf36086bb2174d3d7e7936e820735003b" 	&& curl -fSL -o elixir-src.tar.gz $ELIXIR_DOWNLOAD_URL 	&& echo "$ELIXIR_DOWNLOAD_SHA256  elixir-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/local/src/elixir 	&& tar -xzC /usr/local/src/elixir --strip-components=1 -f elixir-src.tar.gz 	&& rm elixir-src.tar.gz 	&& cd /usr/local/src/elixir 	&& make install clean 	&& find /usr/local/src/elixir/ -type f -not -regex "/usr/local/src/elixir/lib/[^\/]*/lib.*" -exec rm -rf {} + 	&& find /usr/local/src/elixir/ -type d -depth -empty -delete
-# Thu, 06 Oct 2022 16:45:31 GMT
+# Wed, 12 Oct 2022 22:57:55 GMT
+ENV ELIXIR_VERSION=v1.14.1 LANG=C.UTF-8
+# Wed, 12 Oct 2022 22:58:52 GMT
+RUN set -xe 	&& ELIXIR_DOWNLOAD_URL="https://github.com/elixir-lang/elixir/archive/${ELIXIR_VERSION}.tar.gz" 	&& ELIXIR_DOWNLOAD_SHA256="8ad537eb84471c24c3e6984c37884f06a7834ff2efd72c436c222baee8df9a11" 	&& curl -fSL -o elixir-src.tar.gz $ELIXIR_DOWNLOAD_URL 	&& echo "$ELIXIR_DOWNLOAD_SHA256  elixir-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/local/src/elixir 	&& tar -xzC /usr/local/src/elixir --strip-components=1 -f elixir-src.tar.gz 	&& rm elixir-src.tar.gz 	&& cd /usr/local/src/elixir 	&& make install clean 	&& find /usr/local/src/elixir/ -type f -not -regex "/usr/local/src/elixir/lib/[^\/]*/lib.*" -exec rm -rf {} + 	&& find /usr/local/src/elixir/ -type d -depth -empty -delete
+# Wed, 12 Oct 2022 22:58:52 GMT
 CMD ["iex"]
 ```
 
@@ -180,9 +180,9 @@ CMD ["iex"]
 		Last Modified: Wed, 05 Oct 2022 04:35:16 GMT  
 		Size: 988.3 KB (988301 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e36ca12b50b756be11e396b001bb528946f42d146f68f6ff6be4be49717e4c17`  
-		Last Modified: Thu, 06 Oct 2022 17:19:42 GMT  
-		Size: 6.2 MB (6193785 bytes)  
+	-	`sha256:be0facaa5671f0a20db21b5df68c447fb44474fcb659ca73767592f964ba8717`  
+		Last Modified: Wed, 12 Oct 2022 23:05:28 GMT  
+		Size: 6.2 MB (6198521 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `elixir:latest` - linux; arm64 variant v8
