@@ -1,49 +1,49 @@
 ## `pypy:3-7-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull pypy@sha256:b71fafe4edd86541b8b47df677206d61d79711ee49efdad9c49801411ac7ca48
+$ docker pull pypy@sha256:666ee6e2ec1a95a019dcadba3aff78d5dd6bcfc1f6028db6d14c623e64376c63
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.1006; amd64
+	-	windows version 10.0.20348.1129; amd64
 
-### `pypy:3-7-windowsservercore-ltsc2022` - windows version 10.0.20348.1006; amd64
+### `pypy:3-7-windowsservercore-ltsc2022` - windows version 10.0.20348.1129; amd64
 
 ```console
-$ docker pull pypy@sha256:2e4e9f2e5a2e17b77e1b23d8e36f3916ad3677f6ca6adba9319fb11c02711b64
+$ docker pull pypy@sha256:5b5460c3e092996969ddf91b4a182a155dc74e37313245446bcfe69aa9f43fab
 ```
 
 -	Docker Version: 20.10.17
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.4 GB (2392768409 bytes)**  
+-	Total Size: **2.5 GB (2462067246 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:588bac83a5d35b6aab5001d9205c97bcb38493506e7118d7f4e8585d31eacd78`
+-	Image ID: `sha256:fd9d5cb7f3500b323d4963cab44ed53322e1f1e905f8e4ad3fa9daa749172679`
 -	Default Command: `["pypy3"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
 # Fri, 22 Apr 2022 01:12:09 GMT
 RUN Apply image 10.0.20348.643
-# Thu, 08 Sep 2022 20:30:55 GMT
-RUN Install update 10.0.20348.1006
-# Wed, 14 Sep 2022 12:09:34 GMT
+# Fri, 07 Oct 2022 22:13:48 GMT
+RUN Install update 10.0.20348.1129
+# Tue, 11 Oct 2022 20:20:35 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 14 Sep 2022 12:10:50 GMT
+# Wed, 12 Oct 2022 12:04:07 GMT
 RUN $newPath = ('C:\pypy;C:\pypy\Scripts;{0}' -f $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine); 	Write-Host 'Complete.'
-# Wed, 14 Sep 2022 12:11:29 GMT
+# Wed, 12 Oct 2022 12:04:37 GMT
 RUN $url = 'https://download.microsoft.com/download/6/A/A/6AA4EDFF-645B-48C5-81CC-ED5963AEAD48/vc_redist.x64.exe'; 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'vc.exe'; 		$sha256 = 'da66717784c192f1004e856bbcf7b3e13b7bf3ea45932c48e4c9b9a50ca80965'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash vc.exe -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process 		-NoNewWindow 		-Wait 		-FilePath .\vc.exe 		-ArgumentList @( 			'/install', 			'/quiet', 			'/norestart' 		); 		Write-Host 'Removing ...'; 	Remove-Item vc.exe -Force; 		Write-Host 'Complete.'
-# Wed, 14 Sep 2022 12:11:30 GMT
+# Wed, 12 Oct 2022 12:04:38 GMT
 ENV PYPY_VERSION=7.3.9
-# Wed, 14 Sep 2022 12:21:08 GMT
+# Wed, 12 Oct 2022 12:13:30 GMT
 RUN $url = 'https://downloads.python.org/pypy/pypy3.8-v7.3.9-win64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'pypy.zip'; 		$sha256 = '05022baaa55db2b60880f2422312d9e4025e1267303ac57f33e8253559d0be88'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash pypy.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive pypy.zip -DestinationPath C:\; 		Write-Host 'Removing ...'; 	Remove-Item pypy.zip -Force; 		Write-Host 'Renaming ...'; 	Rename-Item -Path C:\pypy3.8-v7.3.9-win64 -NewName C:\pypy; 		Write-Host 'Verifying install ("pypy3 --version") ...'; 	pypy3 --version; 		Write-Host 'Cleanup install ...'; 	Get-ChildItem 		-Path C:\pypy 		-Include @( 'test', 'tests' ) 		-Directory 		-Recurse 		| Remove-Item -Force -Recurse; 	Get-ChildItem 		-Path C:\pypy 		-Include @( '*.pyc', '*.pyo' ) 		-File 		-Recurse 		| Remove-Item -Force; 		Write-Host 'Complete.'
-# Wed, 14 Sep 2022 12:21:10 GMT
+# Wed, 12 Oct 2022 12:13:31 GMT
 ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/3843bff3a0a61da5b63ea0b7d34794c5c51a2f11/get-pip.py
-# Wed, 14 Sep 2022 12:21:11 GMT
+# Wed, 12 Oct 2022 12:13:32 GMT
 ENV PYTHON_GET_PIP_SHA256=95c5ee602b2f3cc50ae053d716c3c89bea62c58568f64d7d25924d399b2d5218
-# Wed, 14 Sep 2022 12:22:12 GMT
+# Wed, 12 Oct 2022 12:14:35 GMT
 RUN Write-Host ('Downloading get-pip.py ({0}) ...' -f $env:PYTHON_GET_PIP_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:PYTHON_GET_PIP_URL -OutFile 'get-pip.py'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:PYTHON_GET_PIP_SHA256); 	if ((Get-FileHash 'get-pip.py' -Algorithm sha256).Hash -ne $env:PYTHON_GET_PIP_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		$pipVersion = & pypy3 -c 'import ensurepip; print(ensurepip._PIP_VERSION)'; 	$setuptoolsVersion = & pypy3 -c 'import ensurepip; print(ensurepip._SETUPTOOLS_VERSION)'; 		Write-Host ('Installing "pip == {0}", "setuptools == {1}" ...' -f $pipVersion, $setuptoolsVersion); 	pypy3 get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		('pip == {0}' -f $pipVersion) 		('setuptools == {0}' -f $setuptoolsVersion) 	; 	Remove-Item get-pip.py -Force; 		Write-Host 'Verifying pip install ...'; 	pip --version; 		Write-Host 'Cleanup install ...'; 	Get-ChildItem 		-Path C:\pypy 		-Include @( 'test', 'tests' ) 		-Directory 		-Recurse 		| Remove-Item -Force -Recurse; 	Get-ChildItem 		-Path C:\pypy 		-Include @( '*.pyc', '*.pyo' ) 		-File 		-Recurse 		| Remove-Item -Force; 		Write-Host 'Complete.'
-# Wed, 14 Sep 2022 12:22:13 GMT
+# Wed, 12 Oct 2022 12:14:36 GMT
 CMD ["pypy3"]
 ```
 
@@ -51,42 +51,42 @@ CMD ["pypy3"]
 	-	`sha256:97f65a0ec59e643faf84024aa713a9be059322380315fda829756bbbd96d6258`  
 		Size: 1.4 GB (1436863614 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:4486102fd3820ed9527fa3e7bfefa8305c2f054e65b46dffe9675755e3d8f288`  
-		Size: 910.1 MB (910085953 bytes)  
+	-	`sha256:7ab91661ce2a2a2c14684a2ba0f543a81d7896773f88200b31be0e37c589de38`  
+		Size: 979.4 MB (979359717 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:c5da8902b0918fe9bb0d466157622ccaf8209e4becbdd188ec41ecb563c068e6`  
-		Last Modified: Wed, 14 Sep 2022 12:41:36 GMT  
-		Size: 1.4 KB (1437 bytes)  
+	-	`sha256:15e15cecc9c7498ee7335091ed603347777bb2f7810e8b701327779faaae1712`  
+		Last Modified: Tue, 11 Oct 2022 20:34:44 GMT  
+		Size: 1.4 KB (1423 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7e460f0c0c7ee727eeb93f2eb40787e81e93f999a397e348b74bca2cae53f8b7`  
-		Last Modified: Wed, 14 Sep 2022 12:41:35 GMT  
-		Size: 591.1 KB (591057 bytes)  
+	-	`sha256:6bec735a16d36ae9c9cd5e87faa5656e5cace8877f521133a6b6bd1136d75590`  
+		Last Modified: Wed, 12 Oct 2022 12:34:12 GMT  
+		Size: 607.9 KB (607925 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5fd2b0843067e20b75d3385c988077ca77d367e75fbe61001844d3a4793b40f1`  
-		Last Modified: Wed, 14 Sep 2022 12:41:38 GMT  
-		Size: 15.7 MB (15713302 bytes)  
+	-	`sha256:9cface38f1db9952101b50b0a605fd022fac1a060318b71fe84756537bbdec04`  
+		Last Modified: Wed, 12 Oct 2022 12:34:15 GMT  
+		Size: 15.7 MB (15712043 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:13435f2e920de3cfab893b75c3339f2e2700e558eea6daacc3da20de44e63e32`  
-		Last Modified: Wed, 14 Sep 2022 12:41:34 GMT  
-		Size: 1.4 KB (1432 bytes)  
+	-	`sha256:74530431188d6a2f4c246c3ced949d8ef3b9ef89ec3fdda5ac1037f322bfaa75`  
+		Last Modified: Wed, 12 Oct 2022 12:34:12 GMT  
+		Size: 1.4 KB (1433 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4789c1d2bceeb3ede48a16f28b67b50379e191a575f0d2b9bf6a8545f6272e02`  
-		Last Modified: Wed, 14 Sep 2022 12:42:30 GMT  
-		Size: 26.3 MB (26331239 bytes)  
+	-	`sha256:2b2c0da2553fb914cb8497068cada4d8ec1926341b64649659043c40d8ad927e`  
+		Last Modified: Wed, 12 Oct 2022 12:35:02 GMT  
+		Size: 26.3 MB (26334463 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f9e378803016a237928a3ab96dca11683921df3e8f3bc65c496dd45c88d6fb9`  
-		Last Modified: Wed, 14 Sep 2022 12:42:22 GMT  
+	-	`sha256:471edc905e3bf7a8efb1c20d50f8f21b461eb252ae81e273926f8bffcde347af`  
+		Last Modified: Wed, 12 Oct 2022 12:34:56 GMT  
+		Size: 1.4 KB (1421 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:46d36f4ca7e633b2eb78ad565d7f51cc5e578109be58aa14f664ca8e14460f5c`  
+		Last Modified: Wed, 12 Oct 2022 12:34:55 GMT  
+		Size: 1.4 KB (1383 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f05a28d5ad386c04eea12903c532a685304c948264f7099c5b34661669343dc1`  
+		Last Modified: Wed, 12 Oct 2022 12:34:58 GMT  
+		Size: 3.2 MB (3182407 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c6eb91253c93090d92e88adea96e9a2d9f4846b1d3de44fb8a90bfd92248bb87`  
+		Last Modified: Wed, 12 Oct 2022 12:34:56 GMT  
 		Size: 1.4 KB (1417 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9488550be28c42ba619c3971f1641e260fbb5832c0ca268b3eb6dd0d155fbcdf`  
-		Last Modified: Wed, 14 Sep 2022 12:42:22 GMT  
-		Size: 1.4 KB (1394 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e804d55ec6cba4f1e6f6e6ca6e8dd7b846ff84ef1fcbcb1af44ca949022e1a6c`  
-		Last Modified: Wed, 14 Sep 2022 12:42:24 GMT  
-		Size: 3.2 MB (3176164 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4f7a7d9982ebb3f1313927e9db59026bd049efb39d56340b93a5aef7d82b2d27`  
-		Last Modified: Wed, 14 Sep 2022 12:42:22 GMT  
-		Size: 1.4 KB (1400 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
