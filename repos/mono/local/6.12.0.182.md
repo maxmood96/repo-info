@@ -2634,14 +2634,9 @@ Licenses: (parsed from: `/usr/share/doc/nuget/copyright`)
 - `Apache-2.0`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nuget=6.2.1.2.bin-0xamarin1+debian10b1
-'https://download.mono-project.com/repo/debian/pool/main/n/nuget/nuget_6.2.1.2.bin-0xamarin1%2bdebian10b1.dsc' nuget_6.2.1.2.bin-0xamarin1+debian10b1.dsc 1174 SHA256:28bca43d5046c76f9db769ae19d997924b1c1fa3ca7ed8c682a1900c3d7b2258
-'https://download.mono-project.com/repo/debian/pool/main/n/nuget/nuget_6.2.1.2.bin.orig.tar.xz' nuget_6.2.1.2.bin.orig.tar.xz 1547940 SHA256:7fa19b3cff7e9bf2c4866f8bb0a8ab59d1cebd23592f1a2aee90cf5fc552d153
-'https://download.mono-project.com/repo/debian/pool/main/n/nuget/nuget_6.2.1.2.bin-0xamarin1%2bdebian10b1.debian.tar.xz' nuget_6.2.1.2.bin-0xamarin1+debian10b1.debian.tar.xz 3388 SHA256:5c25a6b0c5ec652005c10cd5a9848d481de8befcaea3e35a40d65bfc2b876790
-```
 
 ### `dpkg` source package: `openldap=2.4.47+dfsg-3+deb10u7`
 
