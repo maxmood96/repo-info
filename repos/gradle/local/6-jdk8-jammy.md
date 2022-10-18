@@ -1,9 +1,9 @@
-# `gradle:6.9.2-jdk8`
+# `gradle:6.9.3-jdk8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9df97250ab7a87203ed54562eaaccd5dc0972436bc765571ea993b35cdcf32c8`
-- Created: `2022-10-06T04:34:59.816171198Z`
+- Image ID: `sha256:b6686a428002ffa1b52c97aaf9738e497df2ab72e342c2db28c27fedfaa9f51a`
+- Created: `2022-10-17T21:22:00.763615126Z`
 - Virtual Size: ~ 596.78 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -16,7 +16,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk8u345-b01`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=6.9.2`
+  - `GRADLE_VERSION=6.9.3`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2726,11 +2726,6 @@ Licenses: (parsed from: `/usr/share/doc/zlib1g/copyright`)
 
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris zlib=1:1.2.11.dfsg-2ubuntu9.1
-'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.11.dfsg-2ubuntu9.1.dsc' zlib_1.2.11.dfsg-2ubuntu9.1.dsc 2953 SHA512:443edb665eee245314a768ee579e68684078aa3c2cb3295fca1fb8a06bb72b00975efb66d2cf1d14cf820044feba75442080c5a8d4b97ea9a5b2fc942cd43e9c
-'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.11.dfsg.orig.tar.gz' zlib_1.2.11.dfsg.orig.tar.gz 370248 SHA512:92819807c0b8de655021bb2d5d182f9b6b381d3072d8c8dc1df34bbaa25d36bcba140c85f754a43cc466aac65850b7a7366aa0c93e804180e5b255e61d5748de
-'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.11.dfsg-2ubuntu9.1.debian.tar.xz' zlib_1.2.11.dfsg-2ubuntu9.1.debian.tar.xz 59368 SHA512:53c6b7bcc37c1e93ac2ceb33b5db917fd6251dd59f7dd02f2eea77f23f6b6a7a7467d942ae90163b953b970b147b4e3c4dcd5359a19481aeb941f77bec94c974
-```
