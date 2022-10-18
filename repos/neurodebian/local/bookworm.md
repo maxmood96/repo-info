@@ -1482,13 +1482,9 @@ Licenses: (parsed from: `/usr/share/doc/neurodebian-freeze/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris neurodebian=0.41.1~nd120+1
-'http://neuro.debian.net/debian/pool/main/n/neurodebian/neurodebian_0.41.1%7end120%2b1.dsc' neurodebian_0.41.1~nd120+1.dsc 1535 SHA256:dacdd75487e54deca165ee0ac3b9085232bb9ab3505bfb7b251b6e643c13d29b
-'http://neuro.debian.net/debian/pool/main/n/neurodebian/neurodebian_0.41.1%7end120%2b1.tar.xz' neurodebian_0.41.1~nd120+1.tar.xz 8318940 SHA256:92d97945a7f39258c014e91e1163027cddd8b88b7ff3affeee42114fb6adda22
-```
 
 ### `dpkg` source package: `npth=1.6-3`
 
@@ -1972,19 +1968,13 @@ Licenses: (parsed from: `/usr/share/doc/usr-is-merged/copyright`)
 - `GPL-2`
 - `later (please see /usr/share/common-licenses/GPL-2)`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris usrmerge=31
-'http://deb.debian.org/debian/pool/main/u/usrmerge/usrmerge_31.dsc' usrmerge_31.dsc 938 SHA256:1264e130de7fe082f6ec4079fdaa95f0276224ce4168e1082df110a7bdee902c
-'http://deb.debian.org/debian/pool/main/u/usrmerge/usrmerge_31.tar.xz' usrmerge_31.tar.xz 13448 SHA256:d429b0756f4668a5ebb1b6f2e750a7107fcb9bcf2344e536272f792c4c76e7ff
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/usrmerge/31/
 
-- https://sources.debian.net/src/usrmerge/31/ (for browsing the source)
-- https://sources.debian.net/src/usrmerge/31/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/usrmerge/31/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `util-linux=2.38.1-1`
 
