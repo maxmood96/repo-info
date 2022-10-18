@@ -1,10 +1,10 @@
-# `amazonlinux:2022.0.20220928.0-with-sources`
+# `amazonlinux:2022.0.20221012.0-with-sources`
 
 ## Docker Metadata
 
-- Image ID: `sha256:24aa2c8214c206b8a8e0a99b00da665da27d4cb6bb77ce01dce4765330f6ef82`
-- Created: `2022-10-04T23:19:59.059748283Z`
-- Virtual Size: ~ 492.12 Mb  
+- Image ID: `sha256:ef5dbe9498109f5c7575eef6c4776278d4c5ea3c83f9ed55211873a5c38c1410`
+- Created: `2022-10-18T00:20:00.603619108Z`
+- Virtual Size: ~ 486.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -13,92 +13,92 @@
 
 ## `rpm` (`.rpm`-based packages)
 
-### `rpm` package: `alternatives-1.15-2.amzn2022.x86_64`
+### `rpm` package: `alternatives-1.15-2.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url alternatives-1.15-2.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/f614102bd188c1a561bc18e36c12454bc972e848c3a5d3865e767aac294f2640/chkconfig-1.15-2.amzn2022.src.rpm
+$ dnf --quiet download --source --url alternatives-1.15-2.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/b7b26b7d7a4f1b20b9feba360caa3f12f61181378891aecd8b35135d30829c79/chkconfig-1.15-2.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `audit-libs-3.0.6-1.amzn2022.x86_64`
+### `rpm` package: `audit-libs-3.0.6-1.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url audit-libs-3.0.6-1.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/b666f02faee33d1970ac39701e4a173163e949bc257e21e2093693414dbf1513/audit-3.0.6-1.amzn2022.src.rpm
+$ dnf --quiet download --source --url audit-libs-3.0.6-1.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/bffbb9daebf820d34fac68994fff0f62c6684b66ea35eb93c5f35c8104485552/audit-3.0.6-1.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `basesystem-11-11.amzn2022.noarch`
+### `rpm` package: `basesystem-11-11.amzn2022.0.1.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url basesystem-11-11.amzn2022.noarch
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/a7c541837e041713b71b780fd749cc3d1bd4b4eec476edb3f2a853ffcf7ae132/basesystem-11-11.amzn2022.src.rpm
+$ dnf --quiet download --source --url basesystem-11-11.amzn2022.0.1.noarch
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/e21a2968516d5ab71b5979d8d31ffb5a8757aef1b6f27cfa6e821dc5f2331cbe/basesystem-11-11.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `bash-5.1.8-2.amzn2022.x86_64`
+### `rpm` package: `bash-5.1.8-2.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url bash-5.1.8-2.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/24f01d83db3a31106b6d5d734802ccc45ab9e2b9ec90ee9fefdbe89ba87710c8/bash-5.1.8-2.amzn2022.src.rpm
+$ dnf --quiet download --source --url bash-5.1.8-2.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/eecaf7159b27b44e6d282abaffcf28a828ec071893fa8a798b9e82e828ce9dc8/bash-5.1.8-2.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `bzip2-libs-1.0.8-6.amzn2022.x86_64`
+### `rpm` package: `bzip2-libs-1.0.8-6.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url bzip2-libs-1.0.8-6.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/cf3010463be72a63374a09e3eb038365b0249828c611db0c3618b09a9648879e/bzip2-1.0.8-6.amzn2022.src.rpm
+$ dnf --quiet download --source --url bzip2-libs-1.0.8-6.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/3b9978fe7e1f576d0bc5970ff4b5cacb499c23eb73a6b27c7862dea6256df45a/bzip2-1.0.8-6.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `ca-certificates-2021.2.50-1.0.amzn2022.0.2.noarch`
+### `rpm` package: `ca-certificates-2021.2.50-1.0.amzn2022.0.3.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url ca-certificates-2021.2.50-1.0.amzn2022.0.2.noarch
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/51bb2859908c609f272bf659063b2dfef6dafaea2ce977b3c9ea5e9d582f144e/ca-certificates-2021.2.50-1.0.amzn2022.0.2.src.rpm
+$ dnf --quiet download --source --url ca-certificates-2021.2.50-1.0.amzn2022.0.3.noarch
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/f0371dc92009b13a9d5d6157a20e36696ff21752ea314c4fdf6f22afc0b62084/ca-certificates-2021.2.50-1.0.amzn2022.0.3.src.rpm
 ```
 
-### `rpm` package: `coreutils-8.32-30.amzn2022.0.1.x86_64`
+### `rpm` package: `coreutils-8.32-30.amzn2022.0.2.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url coreutils-8.32-30.amzn2022.0.1
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/8fb94c53f8e137c0bebdc5484bb8410cba9615cf7b9ed4e2ff4655af45c4d4bc/coreutils-8.32-30.amzn2022.0.1.src.rpm
+$ dnf --quiet download --source --url coreutils-8.32-30.amzn2022.0.2
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/9e191fe0bb2efff115932cb9e7c0d024c03e67ef914f3f68b29bd8cee59e1eec/coreutils-8.32-30.amzn2022.0.2.src.rpm
 ```
 
-### `rpm` package: `coreutils-common-8.32-30.amzn2022.0.1.x86_64`
+### `rpm` package: `coreutils-common-8.32-30.amzn2022.0.2.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url coreutils-common-8.32-30.amzn2022.0.1
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/8fb94c53f8e137c0bebdc5484bb8410cba9615cf7b9ed4e2ff4655af45c4d4bc/coreutils-8.32-30.amzn2022.0.1.src.rpm
+$ dnf --quiet download --source --url coreutils-common-8.32-30.amzn2022.0.2
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/9e191fe0bb2efff115932cb9e7c0d024c03e67ef914f3f68b29bd8cee59e1eec/coreutils-8.32-30.amzn2022.0.2.src.rpm
 ```
 
 ### `rpm` package: `crypto-policies-20210213-1.git5c710c0.amzn2022.noarch`
@@ -109,128 +109,128 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url crypto-policies-20210213-1.git5c710c0.amzn2022.noarch
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/69261d4799a17069c7f0439041dd0dbc65de5f28baeda0433754e4c461839d98/crypto-policies-20210213-1.git5c710c0.amzn2022.src.rpm
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/69261d4799a17069c7f0439041dd0dbc65de5f28baeda0433754e4c461839d98/crypto-policies-20210213-1.git5c710c0.amzn2022.src.rpm
 ```
 
-### `rpm` package: `curl-minimal-7.83.1-1.amzn2022.x86_64`
+### `rpm` package: `curl-minimal-7.85.0-1.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url curl-minimal-7.83.1-1.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/6ee512206965b9c5596ec0001f1b25422e1a4390ba1feabda7913ba5d786b8a7/curl-7.83.1-1.amzn2022.src.rpm
+$ dnf --quiet download --source --url curl-minimal-7.85.0-1.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/d251bed899e759df86d5fcbe8ac26d6cef5807e7e486cd596a26cce70c6c1f3b/curl-7.85.0-1.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `dnf-4.12.0-2.amzn2022.0.1.noarch`
+### `rpm` package: `dnf-4.12.0-2.amzn2022.0.2.noarch`
 
 Licenses (from `rpm --query`): GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url dnf-4.12.0-2.amzn2022.0.1.noarch
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/0802f825b7e510998e1f9682ea9fe2d7b4120b0900913cffd91f1c9ef010384b/dnf-4.12.0-2.amzn2022.0.1.src.rpm
+$ dnf --quiet download --source --url dnf-4.12.0-2.amzn2022.0.2.noarch
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/37f9b6a7f9448244e2e8845e2695fd48dfdf6b42c06241e8c704b6b97750dbce/dnf-4.12.0-2.amzn2022.0.2.src.rpm
 ```
 
-### `rpm` package: `dnf-data-4.12.0-2.amzn2022.0.1.noarch`
+### `rpm` package: `dnf-data-4.12.0-2.amzn2022.0.2.noarch`
 
 Licenses (from `rpm --query`): GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url dnf-data-4.12.0-2.amzn2022.0.1.noarch
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/0802f825b7e510998e1f9682ea9fe2d7b4120b0900913cffd91f1c9ef010384b/dnf-4.12.0-2.amzn2022.0.1.src.rpm
+$ dnf --quiet download --source --url dnf-data-4.12.0-2.amzn2022.0.2.noarch
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/37f9b6a7f9448244e2e8845e2695fd48dfdf6b42c06241e8c704b6b97750dbce/dnf-4.12.0-2.amzn2022.0.2.src.rpm
 ```
 
-### `rpm` package: `elfutils-default-yama-scope-0.187-5.amzn2022.0.2.noarch`
+### `rpm` package: `elfutils-default-yama-scope-0.187-5.amzn2022.0.3.noarch`
 
 Licenses (from `rpm --query`): GPLv2+ or LGPLv3+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url elfutils-default-yama-scope-0.187-5.amzn2022.0.2.noarch
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/124e996c74f172a5bc50d2392b96462dbc16e04741d4a791d7542f8d50834d0d/elfutils-0.187-5.amzn2022.0.2.src.rpm
+$ dnf --quiet download --source --url elfutils-default-yama-scope-0.187-5.amzn2022.0.3.noarch
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/5411c271ba6818860d85af975ec63c6e63837a6ed6467b52cb511eca971f0d1d/elfutils-0.187-5.amzn2022.0.3.src.rpm
 ```
 
-### `rpm` package: `elfutils-libelf-0.187-5.amzn2022.0.2.x86_64`
+### `rpm` package: `elfutils-libelf-0.187-5.amzn2022.0.3.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ or LGPLv3+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url elfutils-libelf-0.187-5.amzn2022.0.2
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/124e996c74f172a5bc50d2392b96462dbc16e04741d4a791d7542f8d50834d0d/elfutils-0.187-5.amzn2022.0.2.src.rpm
+$ dnf --quiet download --source --url elfutils-libelf-0.187-5.amzn2022.0.3
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/5411c271ba6818860d85af975ec63c6e63837a6ed6467b52cb511eca971f0d1d/elfutils-0.187-5.amzn2022.0.3.src.rpm
 ```
 
-### `rpm` package: `elfutils-libs-0.187-5.amzn2022.0.2.x86_64`
+### `rpm` package: `elfutils-libs-0.187-5.amzn2022.0.3.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ or LGPLv3+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url elfutils-libs-0.187-5.amzn2022.0.2
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/124e996c74f172a5bc50d2392b96462dbc16e04741d4a791d7542f8d50834d0d/elfutils-0.187-5.amzn2022.0.2.src.rpm
+$ dnf --quiet download --source --url elfutils-libs-0.187-5.amzn2022.0.3
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/5411c271ba6818860d85af975ec63c6e63837a6ed6467b52cb511eca971f0d1d/elfutils-0.187-5.amzn2022.0.3.src.rpm
 ```
 
-### `rpm` package: `expat-2.4.7-1.amzn2022.x86_64`
+### `rpm` package: `expat-2.4.7-1.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url expat-2.4.7-1.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/43949e216bca827a5119c55d4cdbd2124526b235fb7ec152fe39ac953988a9d9/expat-2.4.7-1.amzn2022.src.rpm
+$ dnf --quiet download --source --url expat-2.4.7-1.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/c6b1551853cff1fa44b710fb779de0107efcf42f010a2efc018efd8547321308/expat-2.4.7-1.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `file-libs-5.39-7.amzn2022.x86_64`
+### `rpm` package: `file-libs-5.39-7.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url file-libs-5.39-7.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/60a1895fa5475ff0ce3aed22531a3677d1805cc1cc75041742cc8a15d51771c8/file-5.39-7.amzn2022.src.rpm
+$ dnf --quiet download --source --url file-libs-5.39-7.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/c59cb41f3d624b46764e82b586e7b6f8c313f7dae7683e03adba070aa17e3e47/file-5.39-7.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `filesystem-3.14-5.amzn2022.x86_64`
+### `rpm` package: `filesystem-3.14-5.amzn2022.0.2.x86_64`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url filesystem-3.14-5.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/f5295cb1f41a0ddf36208a87f94c7eb11bb8c14bd1330a7a8f061282a83f0605/filesystem-3.14-5.amzn2022.src.rpm
+$ dnf --quiet download --source --url filesystem-3.14-5.amzn2022.0.2
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/714c57614c770914b06524da9852280bb339659158e31a86e8098dbf9738dd4b/filesystem-3.14-5.amzn2022.0.2.src.rpm
 ```
 
-### `rpm` package: `gawk-5.1.0-3.amzn2022.x86_64`
+### `rpm` package: `gawk-5.1.0-3.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and GPLv2+ and LGPLv2+ and BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url gawk-5.1.0-3.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/a040594052d57072244306e528ad63e95b1994ca7383312702fe6c8060a5352f/gawk-5.1.0-3.amzn2022.src.rpm
+$ dnf --quiet download --source --url gawk-5.1.0-3.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/375c2d19ad2448df1e1aa1bdbc1125c7f7629576b2fa8c3364addc60c2e16ff5/gawk-5.1.0-3.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `gdbm-libs-1.19-2.amzn2022.x86_64`
+### `rpm` package: `gdbm-libs-1.19-2.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url gdbm-libs-1.19-2.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/4a4d89304264f82f8648813b4cdfba903db45e4a6584c7afcc6414d27ad0dd29/gdbm-1.19-2.amzn2022.src.rpm
+$ dnf --quiet download --source --url gdbm-libs-1.19-2.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/bfd0efa59efb4676a6313f861375e50fa1e7376d7f4cd867baa74f4eb1bd1823/gdbm-1.19-2.amzn2022.0.1.src.rpm
 ```
 
 ### `rpm` package: `glib2-2.73.2-678.amzn2022.x86_64`
@@ -241,918 +241,918 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url glib2-2.73.2-678.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/0366f6474e9a6a917d9a63455acf7f8e2cefa801a84da80ab71dfe576f87dddf/glib2-2.73.2-678.amzn2022.src.rpm
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/0366f6474e9a6a917d9a63455acf7f8e2cefa801a84da80ab71dfe576f87dddf/glib2-2.73.2-678.amzn2022.src.rpm
 ```
 
-### `rpm` package: `glibc-2.34-40.amzn2022.0.1.x86_64`
+### `rpm` package: `glibc-2.34-40.amzn2022.0.2.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-2.34-40.amzn2022.0.1
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/daff6bae70077010b32bd04eeb1aefcde75c0e2da608b939984f9d80ae491d4e/glibc-2.34-40.amzn2022.0.1.src.rpm
+$ dnf --quiet download --source --url glibc-2.34-40.amzn2022.0.2
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/537b8f201f90df8fcf97b7490f8caec4b6489aae71ad3e778dadaf65f8584653/glibc-2.34-40.amzn2022.0.2.src.rpm
 ```
 
-### `rpm` package: `glibc-common-2.34-40.amzn2022.0.1.x86_64`
+### `rpm` package: `glibc-common-2.34-40.amzn2022.0.2.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-common-2.34-40.amzn2022.0.1
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/daff6bae70077010b32bd04eeb1aefcde75c0e2da608b939984f9d80ae491d4e/glibc-2.34-40.amzn2022.0.1.src.rpm
+$ dnf --quiet download --source --url glibc-common-2.34-40.amzn2022.0.2
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/537b8f201f90df8fcf97b7490f8caec4b6489aae71ad3e778dadaf65f8584653/glibc-2.34-40.amzn2022.0.2.src.rpm
 ```
 
-### `rpm` package: `glibc-minimal-langpack-2.34-40.amzn2022.0.1.x86_64`
+### `rpm` package: `glibc-minimal-langpack-2.34-40.amzn2022.0.2.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-minimal-langpack-2.34-40.amzn2022.0.1
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/daff6bae70077010b32bd04eeb1aefcde75c0e2da608b939984f9d80ae491d4e/glibc-2.34-40.amzn2022.0.1.src.rpm
+$ dnf --quiet download --source --url glibc-minimal-langpack-2.34-40.amzn2022.0.2
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/537b8f201f90df8fcf97b7490f8caec4b6489aae71ad3e778dadaf65f8584653/glibc-2.34-40.amzn2022.0.2.src.rpm
 ```
 
-### `rpm` package: `gmp-6.2.1-2.amzn2022.x86_64`
+### `rpm` package: `gmp-6.2.1-2.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv3+ or GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url gmp-6.2.1-2.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/1dafa8ab7d3641e30e0aef790eabc065264f8523c1cda82dc0c67df370e9c6db/gmp-6.2.1-2.amzn2022.src.rpm
+$ dnf --quiet download --source --url gmp-6.2.1-2.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/0e2e6312082ccc0316b4f819cf0adacb92fa3257627a22a9bd99c92242cbe2c8/gmp-6.2.1-2.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `gnupg2-minimal-2.3.7-1.amzn2022.0.1.x86_64`
+### `rpm` package: `gnupg2-minimal-2.3.7-1.amzn2022.0.2.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url gnupg2-minimal-2.3.7-1.amzn2022.0.1
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/5678131d2c0b860d9d2fa2032a0beeb80648ec7298f376ee7a2d1c7f867d5f99/gnupg2-2.3.7-1.amzn2022.0.1.src.rpm
+$ dnf --quiet download --source --url gnupg2-minimal-2.3.7-1.amzn2022.0.2
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/4abafab955dec8608a4abf81dac6e9a7fcead9f0bd5980eb1d25b1ea47b8f869/gnupg2-2.3.7-1.amzn2022.0.2.src.rpm
 ```
 
-### `rpm` package: `gpgme-1.15.1-6.amzn2022.0.1.x86_64`
+### `rpm` package: `gpgme-1.15.1-6.amzn2022.0.2.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url gpgme-1.15.1-6.amzn2022.0.1
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/e4cd00988b412dfc2466a412a755bb5027e30c03ad7ab4193b379f20a011b835/gpgme-1.15.1-6.amzn2022.0.1.src.rpm
+$ dnf --quiet download --source --url gpgme-1.15.1-6.amzn2022.0.2
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/a6b4a3d3c9fba0200ac067d7f8a99057b7ee0618b43027edb3d1458b8bd865ab/gpgme-1.15.1-6.amzn2022.0.2.src.rpm
 ```
 
-### `rpm` package: `grep-3.8-1.amzn2022.0.1.x86_64`
+### `rpm` package: `grep-3.8-1.amzn2022.0.3.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url grep-3.8-1.amzn2022.0.1
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/7c17f37e98e6f01c5d9e250ea286df3b491d7c558b8780c0bdaf6b7a5be108e2/grep-3.8-1.amzn2022.0.1.src.rpm
+$ dnf --quiet download --source --url grep-3.8-1.amzn2022.0.3
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/c13f02291f4d822c129f22e00e49d226e838e3885445715ac6820aa47246df6d/grep-3.8-1.amzn2022.0.3.src.rpm
 ```
 
-### `rpm` package: `json-c-0.14-8.amzn2022.x86_64`
+### `rpm` package: `json-c-0.14-8.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url json-c-0.14-8.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/d24e6b78da99df2e2f3a81e22075e96585e492b96e8bf9de4976375bf93211f4/json-c-0.14-8.amzn2022.src.rpm
+$ dnf --quiet download --source --url json-c-0.14-8.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/bae006f34371e2342bd34da4d9b4c93cc7f9c2ae795638d8343b502d6b461ea8/json-c-0.14-8.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `keyutils-libs-1.6.1-2.amzn2022.x86_64`
+### `rpm` package: `keyutils-libs-1.6.1-2.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ and LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url keyutils-libs-1.6.1-2.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/3956070303ba98c4f56c3f05571901f2f35af96e698f31cca2d39d13ba2b3b0e/keyutils-1.6.1-2.amzn2022.src.rpm
+$ dnf --quiet download --source --url keyutils-libs-1.6.1-2.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/12c72e0edd83b8e1768fe963f0f29575e681dfda53496fbbe7fe2a4cae8e9bdc/keyutils-1.6.1-2.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `krb5-libs-1.19.2-5.amzn2022.x86_64`
+### `rpm` package: `krb5-libs-1.19.2-5.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url krb5-libs-1.19.2-5.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/2781b0ce87c9b00d651f1d1ec63327214db73f612da3f6c22d3b964d6b402ac6/krb5-1.19.2-5.amzn2022.src.rpm
+$ dnf --quiet download --source --url krb5-libs-1.19.2-5.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/03d2f02a24f1e5c1d4bb984cacb56c4504aad0f6161d9929f425623344bca407/krb5-1.19.2-5.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `libacl-2.3.1-2.amzn2022.x86_64`
+### `rpm` package: `libacl-2.3.1-2.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libacl-2.3.1-2.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/c17af338796cd7dc84a3663746f7e1cf3b1dea7b0745acf6301099d8c261facc/acl-2.3.1-2.amzn2022.src.rpm
+$ dnf --quiet download --source --url libacl-2.3.1-2.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/c0c94efac15548dcb89114ce2b0131591e116531d35161d3a6d1c30b0a19f35a/acl-2.3.1-2.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `libarchive-3.5.3-2.amzn2022.x86_64`
+### `rpm` package: `libarchive-3.5.3-2.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libarchive-3.5.3-2.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/429381a25af2779dc5eb2c076ea9a88376ca834b1586e697b801cb3870ff6cff/libarchive-3.5.3-2.amzn2022.src.rpm
+$ dnf --quiet download --source --url libarchive-3.5.3-2.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/76dfaa93fbedf062fc528019ed10dd7a234c45e51c31ab9e122a52f30cc098f5/libarchive-3.5.3-2.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `libassuan-2.5.5-1.amzn2022.x86_64`
+### `rpm` package: `libassuan-2.5.5-1.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and GPLv3+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libassuan-2.5.5-1.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/6b0ca571d1f2e69e353fb78bb11b5f2a353d39916eb7b7d987aeb821c3fff428/libassuan-2.5.5-1.amzn2022.src.rpm
+$ dnf --quiet download --source --url libassuan-2.5.5-1.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/3d91fde17d236265a697fa681f2d8410eae82e808daad1632db45bbc30b097ce/libassuan-2.5.5-1.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `libattr-2.5.1-3.amzn2022.x86_64`
+### `rpm` package: `libattr-2.5.1-3.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libattr-2.5.1-3.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/ee52149a0c188ccfc8075ec25c1a566a08055ca4130a1b8a7cc9bbec0318cc37/attr-2.5.1-3.amzn2022.src.rpm
+$ dnf --quiet download --source --url libattr-2.5.1-3.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/8a654190a6b733a368e3a9e48750f2925c8c2d39867bcf43fd0c3d610510befd/attr-2.5.1-3.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `libblkid-2.37.4-1.amzn2022.0.1.x86_64`
+### `rpm` package: `libblkid-2.37.4-1.amzn2022.0.2.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libblkid-2.37.4-1.amzn2022.0.1
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/a579ba8b9234d85f7ce967259d92cfa0550ea2e837c9e665a6ae46272d44cfab/util-linux-2.37.4-1.amzn2022.0.1.src.rpm
+$ dnf --quiet download --source --url libblkid-2.37.4-1.amzn2022.0.2
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/91a0064faa5e5819956a8d8629729a35f1526610e6d5d71f41a28842367e63dd/util-linux-2.37.4-1.amzn2022.0.2.src.rpm
 ```
 
-### `rpm` package: `libcap-2.48-2.amzn2022.x86_64`
+### `rpm` package: `libcap-2.48-2.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): BSD or GPLv2
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libcap-2.48-2.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/2a006984d6f0586787555e3ff4d353c04611c2b5ee1822b284a1ae80adad86c1/libcap-2.48-2.amzn2022.src.rpm
+$ dnf --quiet download --source --url libcap-2.48-2.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/f1521cf607b3dfdcd22f5e91a4c5877ae4ed6fb2391f810e82e63fcac6e0ea42/libcap-2.48-2.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `libcap-ng-0.8.2-4.amzn2022.x86_64`
+### `rpm` package: `libcap-ng-0.8.2-4.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libcap-ng-0.8.2-4.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/7a4495edd5029a6e007aba29610171cf832b84e18cb7305277b28432f1e43a44/libcap-ng-0.8.2-4.amzn2022.src.rpm
+$ dnf --quiet download --source --url libcap-ng-0.8.2-4.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/1d76d8d7c6b699f485fb22670ccb0fe10dc0d6a1e66f82c97b8d87e7da6ce135/libcap-ng-0.8.2-4.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `libcom_err-1.45.6-5.amzn2022.x86_64`
+### `rpm` package: `libcom_err-1.45.6-5.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libcom_err-1.45.6-5.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/6172831d762b8518066bafb6785b3cac9ac757cfe94e621ac880d847b9b6c696/e2fsprogs-1.45.6-5.amzn2022.src.rpm
+$ dnf --quiet download --source --url libcom_err-1.45.6-5.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/544734e9a43ea47010ee55d0b58d4b83c621bb5d1c560311d51af4ff83027ed0/e2fsprogs-1.45.6-5.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `libcomps-0.1.18-1.amzn2022.x86_64`
+### `rpm` package: `libcomps-0.1.18-1.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libcomps-0.1.18-1.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/97a5191b6a2a4a8199072b5b44e9d908bd597ece6acc7af2d70511162a593bd2/libcomps-0.1.18-1.amzn2022.src.rpm
+$ dnf --quiet download --source --url libcomps-0.1.18-1.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/1c79fd66fac43510b22061d5e49a0dfd19427baed1c189c5bfe595fbd356c6a0/libcomps-0.1.18-1.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `libcurl-minimal-7.83.1-1.amzn2022.x86_64`
+### `rpm` package: `libcurl-minimal-7.85.0-1.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libcurl-minimal-7.83.1-1.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/6ee512206965b9c5596ec0001f1b25422e1a4390ba1feabda7913ba5d786b8a7/curl-7.83.1-1.amzn2022.src.rpm
+$ dnf --quiet download --source --url libcurl-minimal-7.85.0-1.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/d251bed899e759df86d5fcbe8ac26d6cef5807e7e486cd596a26cce70c6c1f3b/curl-7.85.0-1.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `libdnf-0.67.0-1.amzn2022.0.2.x86_64`
+### `rpm` package: `libdnf-0.67.0-1.amzn2022.0.4.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libdnf-0.67.0-1.amzn2022.0.2
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/a70f9b63216d077d42ee8d2ced6a7948877365f6fe8a21fc152630920220661e/libdnf-0.67.0-1.amzn2022.0.2.src.rpm
+$ dnf --quiet download --source --url libdnf-0.67.0-1.amzn2022.0.4
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/44304271a0eb3a8ec2bd7ed26a99b3fd8024d9b5b910ebb3275b71a73493c0b9/libdnf-0.67.0-1.amzn2022.0.4.src.rpm
 ```
 
-### `rpm` package: `libffi-3.1-28.amzn2022.x86_64`
+### `rpm` package: `libffi-3.1-28.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libffi-3.1-28.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/1eac95b801785b2068b4d91ccac3dd5fc9ec4ed432cc05848cb597f6f2b0010f/libffi-3.1-28.amzn2022.src.rpm
+$ dnf --quiet download --source --url libffi-3.1-28.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/feacdb97fa747c7196ffb8710be206618c7ad21f43bc64b6b5c1771145335929/libffi-3.1-28.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `libgcc-11.3.1-2.amzn2022.0.6.x86_64`
+### `rpm` package: `libgcc-11.3.1-2.amzn2022.0.8.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and GPLv3+ with exceptions and GPLv2+ with exceptions and LGPLv2+ and BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libgcc-11.3.1-2.amzn2022.0.6
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/f5996f8a4fdfd5d8cb42b70313d2fffddaa6254a81cdb73f146833b541c90a53/gcc-11.3.1-2.amzn2022.0.6.src.rpm
+$ dnf --quiet download --source --url libgcc-11.3.1-2.amzn2022.0.8
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/456c8335c7d991a9cc309756fd5ea60525afe236c59cab0cd8e813cae1df83ca/gcc-11.3.1-2.amzn2022.0.8.src.rpm
 ```
 
-### `rpm` package: `libgcrypt-1.9.3-3.amzn2022.0.1.x86_64`
+### `rpm` package: `libgcrypt-1.9.3-3.amzn2022.0.2.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libgcrypt-1.9.3-3.amzn2022.0.1
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/323ffe6bd637b1cecf97b2c98ae9af783473d6b773ae2acbcd3d00062f4c71dd/libgcrypt-1.9.3-3.amzn2022.0.1.src.rpm
+$ dnf --quiet download --source --url libgcrypt-1.9.3-3.amzn2022.0.2
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/46b0ea8b97e2ebed2e5bd00291d99d0ba86c2f5f116d74389c31abc68d643b38/libgcrypt-1.9.3-3.amzn2022.0.2.src.rpm
 ```
 
-### `rpm` package: `libgomp-11.3.1-2.amzn2022.0.6.x86_64`
+### `rpm` package: `libgomp-11.3.1-2.amzn2022.0.8.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and GPLv3+ with exceptions and GPLv2+ with exceptions and LGPLv2+ and BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libgomp-11.3.1-2.amzn2022.0.6
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/f5996f8a4fdfd5d8cb42b70313d2fffddaa6254a81cdb73f146833b541c90a53/gcc-11.3.1-2.amzn2022.0.6.src.rpm
+$ dnf --quiet download --source --url libgomp-11.3.1-2.amzn2022.0.8
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/456c8335c7d991a9cc309756fd5ea60525afe236c59cab0cd8e813cae1df83ca/gcc-11.3.1-2.amzn2022.0.8.src.rpm
 ```
 
-### `rpm` package: `libgpg-error-1.42-1.amzn2022.x86_64`
+### `rpm` package: `libgpg-error-1.42-1.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libgpg-error-1.42-1.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/efaca4e0246b8894b0146346916975d79a3541529f76c9029e40dbb713a93793/libgpg-error-1.42-1.amzn2022.src.rpm
+$ dnf --quiet download --source --url libgpg-error-1.42-1.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/029866b57bae7642f109157303270e18c6d7a51cd4bc8af4d7b0aa0c095792a3/libgpg-error-1.42-1.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `libidn2-2.3.2-1.amzn2022.x86_64`
+### `rpm` package: `libidn2-2.3.2-1.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): (GPLv2+ or LGPLv3+) and GPLv3+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libidn2-2.3.2-1.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/15b9f0d8d6346ba1b33b4d4e03159d513bef9dabdda41b4feefd8e3c1cd4abcb/libidn2-2.3.2-1.amzn2022.src.rpm
+$ dnf --quiet download --source --url libidn2-2.3.2-1.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/a1c523fa81b7275efad459b91654cdcb604f6d5bfe872e63f74b213fdf98affd/libidn2-2.3.2-1.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `libmodulemd-2.13.0-2.amzn2022.x86_64`
+### `rpm` package: `libmodulemd-2.13.0-2.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libmodulemd-2.13.0-2.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/cc5d1a08fe64c7207fec281f75b0da68f578d29c487a6d7dae51ea1337e071c6/libmodulemd-2.13.0-2.amzn2022.src.rpm
+$ dnf --quiet download --source --url libmodulemd-2.13.0-2.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/84cb660ceb18231f62a7e2515709f3ec4ddd7f5a761a69520cb90a3b8a1e31d6/libmodulemd-2.13.0-2.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `libmount-2.37.4-1.amzn2022.0.1.x86_64`
+### `rpm` package: `libmount-2.37.4-1.amzn2022.0.2.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libmount-2.37.4-1.amzn2022.0.1
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/a579ba8b9234d85f7ce967259d92cfa0550ea2e837c9e665a6ae46272d44cfab/util-linux-2.37.4-1.amzn2022.0.1.src.rpm
+$ dnf --quiet download --source --url libmount-2.37.4-1.amzn2022.0.2
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/91a0064faa5e5819956a8d8629729a35f1526610e6d5d71f41a28842367e63dd/util-linux-2.37.4-1.amzn2022.0.2.src.rpm
 ```
 
-### `rpm` package: `libnghttp2-1.45.1-1.amzn2022.0.1.x86_64`
+### `rpm` package: `libnghttp2-1.45.1-1.amzn2022.0.2.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libnghttp2-1.45.1-1.amzn2022.0.1
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/2c828c9b032e8571105e3198995022d6310e8571e533b80ee8659f5af2e35ae3/nghttp2-1.45.1-1.amzn2022.0.1.src.rpm
+$ dnf --quiet download --source --url libnghttp2-1.45.1-1.amzn2022.0.2
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/b36cd65b5b1f6a595b359e4f97a624cafbafd9857f1bd815a1a3aa6fb31eca2c/nghttp2-1.45.1-1.amzn2022.0.2.src.rpm
 ```
 
-### `rpm` package: `librepo-1.14.2-1.amzn2022.0.2.x86_64`
+### `rpm` package: `librepo-1.14.2-1.amzn2022.0.3.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url librepo-1.14.2-1.amzn2022.0.2
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/31b7687484cc8488b40abd059e8a1ab4f25a2a0362114b236c7a2d688bb91a41/librepo-1.14.2-1.amzn2022.0.2.src.rpm
+$ dnf --quiet download --source --url librepo-1.14.2-1.amzn2022.0.3
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/3ec8d62a7138df78b791afc73e3e21a40bccac1c6a3343739f00c05932eec7f1/librepo-1.14.2-1.amzn2022.0.3.src.rpm
 ```
 
-### `rpm` package: `libreport-filesystem-2.15.2-2.amzn2022.noarch`
+### `rpm` package: `libreport-filesystem-2.15.2-2.amzn2022.0.1.noarch`
 
 Licenses (from `rpm --query`): GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libreport-filesystem-2.15.2-2.amzn2022.noarch
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/7ef6b01ad87f243dfe8f2a996091fc7fd2f4e84ed38796d3b294438f189fc377/libreport-2.15.2-2.amzn2022.src.rpm
+$ dnf --quiet download --source --url libreport-filesystem-2.15.2-2.amzn2022.0.1.noarch
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/bb02abe7e2102e24b8d72ccb8ddeaa5cafa50bc08a29c03e40922c47017dfa18/libreport-2.15.2-2.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `libselinux-3.2-1.amzn2022.0.1.x86_64`
+### `rpm` package: `libselinux-3.2-1.amzn2022.0.2.x86_64`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libselinux-3.2-1.amzn2022.0.1
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/9ddd50f3dcdcb5406e375669b5bf4bbff10818bad9c4ef52d5ffe4c85b16c2c2/libselinux-3.2-1.amzn2022.0.1.src.rpm
+$ dnf --quiet download --source --url libselinux-3.2-1.amzn2022.0.2
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/415579bdc8d88bfd931b31f63d5c5893f4abc01099d474b6a089b73123294574/libselinux-3.2-1.amzn2022.0.2.src.rpm
 ```
 
-### `rpm` package: `libsepol-3.3-2.amzn2022.x86_64`
+### `rpm` package: `libsepol-3.3-2.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libsepol-3.3-2.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/e54f1b5b86ed630aad20a92c12189bc3aea2d2d9e27997f9d73594ef4bfd5bc2/libsepol-3.3-2.amzn2022.src.rpm
+$ dnf --quiet download --source --url libsepol-3.3-2.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/34a4357ea6cb82c8468156d59cf50acf60bcaf2d7cf1e342fb600361b7bc35b8/libsepol-3.3-2.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `libsigsegv-2.13-2.amzn2022.x86_64`
+### `rpm` package: `libsigsegv-2.13-2.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libsigsegv-2.13-2.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/3b2951e1d22200bbae872b34f4fb6bdc0e29bc02d47e0a54de089d4285c76ac1/libsigsegv-2.13-2.amzn2022.src.rpm
+$ dnf --quiet download --source --url libsigsegv-2.13-2.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/1035b0efb9159dff3f4bf16b22b746193b11d6a4b2909e69ee73bbd60b6c3f9f/libsigsegv-2.13-2.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `libsmartcols-2.37.4-1.amzn2022.0.1.x86_64`
+### `rpm` package: `libsmartcols-2.37.4-1.amzn2022.0.2.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libsmartcols-2.37.4-1.amzn2022.0.1
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/a579ba8b9234d85f7ce967259d92cfa0550ea2e837c9e665a6ae46272d44cfab/util-linux-2.37.4-1.amzn2022.0.1.src.rpm
+$ dnf --quiet download --source --url libsmartcols-2.37.4-1.amzn2022.0.2
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/91a0064faa5e5819956a8d8629729a35f1526610e6d5d71f41a28842367e63dd/util-linux-2.37.4-1.amzn2022.0.2.src.rpm
 ```
 
-### `rpm` package: `libsolv-0.7.22-1.amzn2022.x86_64`
+### `rpm` package: `libsolv-0.7.22-1.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libsolv-0.7.22-1.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/74b670f1f25d9645015f815fb55633c98d8bc8eb50e38def8d4bdf51dea1c3d4/libsolv-0.7.22-1.amzn2022.src.rpm
+$ dnf --quiet download --source --url libsolv-0.7.22-1.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/466a316454256b751a0c23d39005243017daba65df00a903788a33e726392203/libsolv-0.7.22-1.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `libstdc++-11.3.1-2.amzn2022.0.6.x86_64`
+### `rpm` package: `libstdc++-11.3.1-2.amzn2022.0.8.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and GPLv3+ with exceptions and GPLv2+ with exceptions and LGPLv2+ and BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libstdc++-11.3.1-2.amzn2022.0.6
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/f5996f8a4fdfd5d8cb42b70313d2fffddaa6254a81cdb73f146833b541c90a53/gcc-11.3.1-2.amzn2022.0.6.src.rpm
+$ dnf --quiet download --source --url libstdc++-11.3.1-2.amzn2022.0.8
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/456c8335c7d991a9cc309756fd5ea60525afe236c59cab0cd8e813cae1df83ca/gcc-11.3.1-2.amzn2022.0.8.src.rpm
 ```
 
-### `rpm` package: `libtasn1-4.16.0-4.amzn2022.x86_64`
+### `rpm` package: `libtasn1-4.16.0-4.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libtasn1-4.16.0-4.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/b4ce534dd70279b58c3f9359035067d7ce71546f33017e4e11b365046ff90dae/libtasn1-4.16.0-4.amzn2022.src.rpm
+$ dnf --quiet download --source --url libtasn1-4.16.0-4.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/f2fd100bd7ecd25de48807c7f6d8f35cb97ae086325365dfe8ab8e8e208e027b/libtasn1-4.16.0-4.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `libunistring-0.9.10-10.amzn2022.x86_64`
+### `rpm` package: `libunistring-0.9.10-10.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): GPLV2+ or LGPLv3+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libunistring-0.9.10-10.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/71cdb9b7e4dbe0f4ad6c95a788831f722fb10b54383d47c05d20cb3bc201db45/libunistring-0.9.10-10.amzn2022.src.rpm
+$ dnf --quiet download --source --url libunistring-0.9.10-10.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/198489e48b2bfd9d85da8c2ff33247d198648da8dee8dc8ecb1ab6b0584c3039/libunistring-0.9.10-10.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `libuuid-2.37.4-1.amzn2022.0.1.x86_64`
+### `rpm` package: `libuuid-2.37.4-1.amzn2022.0.2.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libuuid-2.37.4-1.amzn2022.0.1
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/a579ba8b9234d85f7ce967259d92cfa0550ea2e837c9e665a6ae46272d44cfab/util-linux-2.37.4-1.amzn2022.0.1.src.rpm
+$ dnf --quiet download --source --url libuuid-2.37.4-1.amzn2022.0.2
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/91a0064faa5e5819956a8d8629729a35f1526610e6d5d71f41a28842367e63dd/util-linux-2.37.4-1.amzn2022.0.2.src.rpm
 ```
 
-### `rpm` package: `libverto-0.3.2-1.amzn2022.x86_64`
+### `rpm` package: `libverto-0.3.2-1.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libverto-0.3.2-1.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/a6fed426420761310f0e32dd83cf4391ea3d5ddfab808eaf2b77af7584ffa826/libverto-0.3.2-1.amzn2022.src.rpm
+$ dnf --quiet download --source --url libverto-0.3.2-1.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/abf0ce6f8ca080054f0edbc6a365fc6065091ce943cd40e16c504fe49ebca687/libverto-0.3.2-1.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `libxcrypt-4.4.26-4.amzn2022.x86_64`
+### `rpm` package: `libxcrypt-4.4.26-4.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and BSD and Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libxcrypt-4.4.26-4.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/332904a7a9cacc58a81e4b5ecabe582769d6afeb2c6f9b950fa722ebab6bad54/libxcrypt-4.4.26-4.amzn2022.src.rpm
+$ dnf --quiet download --source --url libxcrypt-4.4.26-4.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/6aef0f34f0a55b9d49b708a3cf1d7903102a890257558c0324d6c9d7c187a953/libxcrypt-4.4.26-4.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `libxml2-2.9.14-1.amzn2022.x86_64`
+### `rpm` package: `libxml2-2.9.14-1.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libxml2-2.9.14-1.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/750b6bffb59adaead98ef28a4e7c11170ef6ce297efa78d627298748de7aa039/libxml2-2.9.14-1.amzn2022.src.rpm
+$ dnf --quiet download --source --url libxml2-2.9.14-1.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/663d68955df609de1ab1d595e2e66c21bfb9e8a5ed1d2c2d5eb07a2a98bcea6a/libxml2-2.9.14-1.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `libyaml-0.2.5-5.amzn2022.x86_64`
+### `rpm` package: `libyaml-0.2.5-5.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libyaml-0.2.5-5.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/ed0c59995227b07677ac52b2fd8eff06e9103234977ae7505ae0ba80b8a581c6/libyaml-0.2.5-5.amzn2022.src.rpm
+$ dnf --quiet download --source --url libyaml-0.2.5-5.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/20f34886e49d86a10a613a70231a7eb687ebc665a59d2f3f3cf1d486c86f2e74/libyaml-0.2.5-5.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `libzstd-1.5.2-1.amzn2022.x86_64`
+### `rpm` package: `libzstd-1.5.2-1.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): BSD and GPLv2
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libzstd-1.5.2-1.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/c52e04ac44e7aa0e92426d1fd0dc750113f3cf17894b1c531c626b9a67d4648d/zstd-1.5.2-1.amzn2022.src.rpm
+$ dnf --quiet download --source --url libzstd-1.5.2-1.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/a099b50eef5f5b61335ac0d6bdf3879cc41b507f8cee5ba9fe599955f64d94ad/zstd-1.5.2-1.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `lua-libs-5.4.4-1.amzn2022.x86_64`
+### `rpm` package: `lua-libs-5.4.4-3.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url lua-libs-5.4.4-1.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/c5465ddb22c34605fc45bb4908cc744ef5389e490a99a1ba1681cf70b2abcc87/lua-5.4.4-1.amzn2022.src.rpm
+$ dnf --quiet download --source --url lua-libs-5.4.4-3.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/e53d1bae804c83267436378776b7ed1e221444b14d69d2c6a2e73cd760257552/lua-5.4.4-3.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `lz4-libs-1.9.4-1.amzn2022.x86_64`
+### `rpm` package: `lz4-libs-1.9.4-1.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ and BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url lz4-libs-1.9.4-1.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/c9691c4b9fc9ffb67b62565f4be9f5d3bfe7ec53895091f09672903109b7881b/lz4-1.9.4-1.amzn2022.src.rpm
+$ dnf --quiet download --source --url lz4-libs-1.9.4-1.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/4369febd15395f3b490a4100e69f1a55b51d2f22bf79b379284d54f0fabe338c/lz4-1.9.4-1.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `mpfr-4.1.0-7.amzn2022.x86_64`
+### `rpm` package: `mpfr-4.1.0-7.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv3+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url mpfr-4.1.0-7.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/f624e8283f7b53b62c37a161ef8fa940ca1a091f1400ba63a8af93ea25eb22cf/mpfr-4.1.0-7.amzn2022.src.rpm
+$ dnf --quiet download --source --url mpfr-4.1.0-7.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/ce6e035a3f5e2fa32bcaf9949d53fa83ac0d784ee6a257af6b77793e21d0c79d/mpfr-4.1.0-7.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `ncurses-base-6.2-4.20200222.amzn2022.noarch`
+### `rpm` package: `ncurses-base-6.2-4.20200222.amzn2022.0.1.noarch`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url ncurses-base-6.2-4.20200222.amzn2022.noarch
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/7ebd801b3fd2795efa4096e2afd624004a2feb70342552dfc6eff5b7aaf58836/ncurses-6.2-4.20200222.amzn2022.src.rpm
+$ dnf --quiet download --source --url ncurses-base-6.2-4.20200222.amzn2022.0.1.noarch
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/07ac796c9c0e42f0da26c390461b808f685a5d5fe7e412c26943d8312ad20f3b/ncurses-6.2-4.20200222.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `ncurses-libs-6.2-4.20200222.amzn2022.x86_64`
+### `rpm` package: `ncurses-libs-6.2-4.20200222.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url ncurses-libs-6.2-4.20200222.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/7ebd801b3fd2795efa4096e2afd624004a2feb70342552dfc6eff5b7aaf58836/ncurses-6.2-4.20200222.amzn2022.src.rpm
+$ dnf --quiet download --source --url ncurses-libs-6.2-4.20200222.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/07ac796c9c0e42f0da26c390461b808f685a5d5fe7e412c26943d8312ad20f3b/ncurses-6.2-4.20200222.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `npth-1.6-6.amzn2022.x86_64`
+### `rpm` package: `npth-1.6-6.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url npth-1.6-6.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/1ea09556cade385b538fff53b432200a9ddb11ead26a3ec0bd659ac548b19762/npth-1.6-6.amzn2022.src.rpm
+$ dnf --quiet download --source --url npth-1.6-6.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/475b3992a1c9a911087c47de4219fa6f3cccd70b232020dbd8df41160db89676/npth-1.6-6.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `openssl-libs-3.0.3-1.amzn2022.0.2.x86_64`
+### `rpm` package: `openssl-libs-3.0.5-1.amzn2022.0.2.x86_64`
 
 Licenses (from `rpm --query`): ASL 2.0
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url openssl-libs-3.0.3-1.amzn2022.0.2
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/50830184e532b80d490bf49bc34adb6efb75458bf72a47915af9dc06c4820823/openssl-3.0.3-1.amzn2022.0.2.src.rpm
+$ dnf --quiet download --source --url openssl-libs-3.0.5-1.amzn2022.0.2
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/1f585cafccd29fe9d954950106fe3e864ab08575e301f7fe235c5f6aacdd7161/openssl-3.0.5-1.amzn2022.0.2.src.rpm
 ```
 
-### `rpm` package: `p11-kit-0.23.22-3.amzn2022.x86_64`
+### `rpm` package: `p11-kit-0.24.1-2.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url p11-kit-0.23.22-3.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/4fcf04013d370d13c930741f39c1e10b56093a882897c9d79c3cb07d6f2a1d57/p11-kit-0.23.22-3.amzn2022.src.rpm
+$ dnf --quiet download --source --url p11-kit-0.24.1-2.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/7e8f4100276ceccae50bf69f1ab5d009c8accae389727517715bff3fb7f43501/p11-kit-0.24.1-2.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `p11-kit-trust-0.23.22-3.amzn2022.x86_64`
+### `rpm` package: `p11-kit-trust-0.24.1-2.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url p11-kit-trust-0.23.22-3.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/4fcf04013d370d13c930741f39c1e10b56093a882897c9d79c3cb07d6f2a1d57/p11-kit-0.23.22-3.amzn2022.src.rpm
+$ dnf --quiet download --source --url p11-kit-trust-0.24.1-2.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/7e8f4100276ceccae50bf69f1ab5d009c8accae389727517715bff3fb7f43501/p11-kit-0.24.1-2.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `pcre2-10.40-1.amzn2022.x86_64`
+### `rpm` package: `pcre2-10.40-1.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url pcre2-10.40-1.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/f3a6fffe34acca5ada60d44c3e7b85c0733c733e8085c2abb4e09694e81f2feb/pcre2-10.40-1.amzn2022.src.rpm
+$ dnf --quiet download --source --url pcre2-10.40-1.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/e2db8175198079f3e328c250847f8030f2be29a342c8d5f87cb5e719d8c04b83/pcre2-10.40-1.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `pcre2-syntax-10.40-1.amzn2022.noarch`
+### `rpm` package: `pcre2-syntax-10.40-1.amzn2022.0.1.noarch`
 
 Licenses (from `rpm --query`): BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url pcre2-syntax-10.40-1.amzn2022.noarch
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/f3a6fffe34acca5ada60d44c3e7b85c0733c733e8085c2abb4e09694e81f2feb/pcre2-10.40-1.amzn2022.src.rpm
+$ dnf --quiet download --source --url pcre2-syntax-10.40-1.amzn2022.0.1.noarch
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/e2db8175198079f3e328c250847f8030f2be29a342c8d5f87cb5e719d8c04b83/pcre2-10.40-1.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `popt-1.18-6.amzn2022.x86_64`
+### `rpm` package: `popt-1.18-6.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url popt-1.18-6.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/53af3b0c6473313f25f64fb8b366c2b601f1a71b6352c3d488073a00dde2168f/popt-1.18-6.amzn2022.src.rpm
+$ dnf --quiet download --source --url popt-1.18-6.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/bbce888512dff2aa06844075cf2f2654efcd260c63aa1fdcb6846791158a1c23/popt-1.18-6.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `python3-3.9.13-1.amzn2022.0.2.x86_64`
+### `rpm` package: `python3-3.9.13-1.amzn2022.0.3.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python3-3.9.13-1.amzn2022.0.2
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/86eacfa242c4602c4eee48cf6537f16e4eb32d0012551d8f303bc852917d46b9/python3.9-3.9.13-1.amzn2022.0.2.src.rpm
+$ dnf --quiet download --source --url python3-3.9.13-1.amzn2022.0.3
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/b10f3fb2cdc37b6cfd8f36dab0bb2f128557b8b94b9c98c6b177a851c5652351/python3.9-3.9.13-1.amzn2022.0.3.src.rpm
 ```
 
-### `rpm` package: `python3-dnf-4.12.0-2.amzn2022.0.1.noarch`
+### `rpm` package: `python3-dnf-4.12.0-2.amzn2022.0.2.noarch`
 
 Licenses (from `rpm --query`): GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python3-dnf-4.12.0-2.amzn2022.0.1.noarch
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/0802f825b7e510998e1f9682ea9fe2d7b4120b0900913cffd91f1c9ef010384b/dnf-4.12.0-2.amzn2022.0.1.src.rpm
+$ dnf --quiet download --source --url python3-dnf-4.12.0-2.amzn2022.0.2.noarch
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/37f9b6a7f9448244e2e8845e2695fd48dfdf6b42c06241e8c704b6b97750dbce/dnf-4.12.0-2.amzn2022.0.2.src.rpm
 ```
 
-### `rpm` package: `python3-gpg-1.15.1-6.amzn2022.0.1.x86_64`
+### `rpm` package: `python3-gpg-1.15.1-6.amzn2022.0.2.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python3-gpg-1.15.1-6.amzn2022.0.1
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/e4cd00988b412dfc2466a412a755bb5027e30c03ad7ab4193b379f20a011b835/gpgme-1.15.1-6.amzn2022.0.1.src.rpm
+$ dnf --quiet download --source --url python3-gpg-1.15.1-6.amzn2022.0.2
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/a6b4a3d3c9fba0200ac067d7f8a99057b7ee0618b43027edb3d1458b8bd865ab/gpgme-1.15.1-6.amzn2022.0.2.src.rpm
 ```
 
-### `rpm` package: `python3-hawkey-0.67.0-1.amzn2022.0.2.x86_64`
+### `rpm` package: `python3-hawkey-0.67.0-1.amzn2022.0.4.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python3-hawkey-0.67.0-1.amzn2022.0.2
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/a70f9b63216d077d42ee8d2ced6a7948877365f6fe8a21fc152630920220661e/libdnf-0.67.0-1.amzn2022.0.2.src.rpm
+$ dnf --quiet download --source --url python3-hawkey-0.67.0-1.amzn2022.0.4
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/44304271a0eb3a8ec2bd7ed26a99b3fd8024d9b5b910ebb3275b71a73493c0b9/libdnf-0.67.0-1.amzn2022.0.4.src.rpm
 ```
 
-### `rpm` package: `python3-libcomps-0.1.18-1.amzn2022.x86_64`
+### `rpm` package: `python3-libcomps-0.1.18-1.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python3-libcomps-0.1.18-1.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/97a5191b6a2a4a8199072b5b44e9d908bd597ece6acc7af2d70511162a593bd2/libcomps-0.1.18-1.amzn2022.src.rpm
+$ dnf --quiet download --source --url python3-libcomps-0.1.18-1.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/1c79fd66fac43510b22061d5e49a0dfd19427baed1c189c5bfe595fbd356c6a0/libcomps-0.1.18-1.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `python3-libdnf-0.67.0-1.amzn2022.0.2.x86_64`
+### `rpm` package: `python3-libdnf-0.67.0-1.amzn2022.0.4.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python3-libdnf-0.67.0-1.amzn2022.0.2
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/a70f9b63216d077d42ee8d2ced6a7948877365f6fe8a21fc152630920220661e/libdnf-0.67.0-1.amzn2022.0.2.src.rpm
+$ dnf --quiet download --source --url python3-libdnf-0.67.0-1.amzn2022.0.4
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/44304271a0eb3a8ec2bd7ed26a99b3fd8024d9b5b910ebb3275b71a73493c0b9/libdnf-0.67.0-1.amzn2022.0.4.src.rpm
 ```
 
-### `rpm` package: `python3-libs-3.9.13-1.amzn2022.0.2.x86_64`
+### `rpm` package: `python3-libs-3.9.13-1.amzn2022.0.3.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python3-libs-3.9.13-1.amzn2022.0.2
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/86eacfa242c4602c4eee48cf6537f16e4eb32d0012551d8f303bc852917d46b9/python3.9-3.9.13-1.amzn2022.0.2.src.rpm
+$ dnf --quiet download --source --url python3-libs-3.9.13-1.amzn2022.0.3
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/b10f3fb2cdc37b6cfd8f36dab0bb2f128557b8b94b9c98c6b177a851c5652351/python3.9-3.9.13-1.amzn2022.0.3.src.rpm
 ```
 
-### `rpm` package: `python3-pip-wheel-21.3.1-2.amzn2022.0.2.noarch`
+### `rpm` package: `python3-pip-wheel-21.3.1-2.amzn2022.0.3.noarch`
 
 Licenses (from `rpm --query`): MIT and Python and ASL 2.0 and BSD and ISC and LGPLv2 and MPLv2.0 and (ASL 2.0 or BSD)
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python3-pip-wheel-21.3.1-2.amzn2022.0.2.noarch
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/df8d128f7909d4b1ee548ed26704c8e3ad9250adcc7393674926c6d081fd549e/python-pip-21.3.1-2.amzn2022.0.2.src.rpm
+$ dnf --quiet download --source --url python3-pip-wheel-21.3.1-2.amzn2022.0.3.noarch
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/3677db328f7d246ef1544bd44bf7c0247c9513ee55d88ad032d789a1170cd33d/python-pip-21.3.1-2.amzn2022.0.3.src.rpm
 ```
 
-### `rpm` package: `python3-rpm-4.16.1.3-12.amzn2022.0.2.x86_64`
+### `rpm` package: `python3-rpm-4.16.1.3-12.amzn2022.0.3.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python3-rpm-4.16.1.3-12.amzn2022.0.2
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/6ac1d4230d5856724f840dd50c8d769e415374240042c9f34d7642894fb973b6/rpm-4.16.1.3-12.amzn2022.0.2.src.rpm
+$ dnf --quiet download --source --url python3-rpm-4.16.1.3-12.amzn2022.0.3
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/facdca52f0ea2061d79f75b039b479394a257699b5d6d6442509c873435ff5a5/rpm-4.16.1.3-12.amzn2022.0.3.src.rpm
 ```
 
-### `rpm` package: `python3-setuptools-wheel-59.6.0-2.amzn2022.0.1.noarch`
+### `rpm` package: `python3-setuptools-wheel-59.6.0-2.amzn2022.0.2.noarch`
 
 Licenses (from `rpm --query`): MIT and (BSD or ASL 2.0)
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python3-setuptools-wheel-59.6.0-2.amzn2022.0.1.noarch
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/dbebcaaa1cd65af6fc71dd6105e4be3a65bb047f0f80848337fa48db8f98c500/python-setuptools-59.6.0-2.amzn2022.0.1.src.rpm
+$ dnf --quiet download --source --url python3-setuptools-wheel-59.6.0-2.amzn2022.0.2.noarch
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/bfcb49c8daf78ea27b7ef17b5ff0a5f72006fee123c3c8a6d4235b7cd9ccf5b3/python-setuptools-59.6.0-2.amzn2022.0.2.src.rpm
 ```
 
-### `rpm` package: `readline-8.1-2.amzn2022.x86_64`
+### `rpm` package: `readline-8.1-2.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url readline-8.1-2.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/8225aae48c2a81d6033feda267aad64ce3eadc69ec4b7ef5743ea3501e3dff41/readline-8.1-2.amzn2022.src.rpm
+$ dnf --quiet download --source --url readline-8.1-2.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/ac1dc20f09b08f5d813248a99dcfc271728f82b1663fdc4c2a2249a6c90bb51e/readline-8.1-2.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `rpm-4.16.1.3-12.amzn2022.0.2.x86_64`
+### `rpm` package: `rpm-4.16.1.3-12.amzn2022.0.3.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url rpm-4.16.1.3-12.amzn2022.0.2
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/6ac1d4230d5856724f840dd50c8d769e415374240042c9f34d7642894fb973b6/rpm-4.16.1.3-12.amzn2022.0.2.src.rpm
+$ dnf --quiet download --source --url rpm-4.16.1.3-12.amzn2022.0.3
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/facdca52f0ea2061d79f75b039b479394a257699b5d6d6442509c873435ff5a5/rpm-4.16.1.3-12.amzn2022.0.3.src.rpm
 ```
 
-### `rpm` package: `rpm-build-libs-4.16.1.3-12.amzn2022.0.2.x86_64`
+### `rpm` package: `rpm-build-libs-4.16.1.3-12.amzn2022.0.3.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ and LGPLv2+ with exceptions
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url rpm-build-libs-4.16.1.3-12.amzn2022.0.2
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/6ac1d4230d5856724f840dd50c8d769e415374240042c9f34d7642894fb973b6/rpm-4.16.1.3-12.amzn2022.0.2.src.rpm
+$ dnf --quiet download --source --url rpm-build-libs-4.16.1.3-12.amzn2022.0.3
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/facdca52f0ea2061d79f75b039b479394a257699b5d6d6442509c873435ff5a5/rpm-4.16.1.3-12.amzn2022.0.3.src.rpm
 ```
 
-### `rpm` package: `rpm-libs-4.16.1.3-12.amzn2022.0.2.x86_64`
+### `rpm` package: `rpm-libs-4.16.1.3-12.amzn2022.0.3.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ and LGPLv2+ with exceptions
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url rpm-libs-4.16.1.3-12.amzn2022.0.2
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/6ac1d4230d5856724f840dd50c8d769e415374240042c9f34d7642894fb973b6/rpm-4.16.1.3-12.amzn2022.0.2.src.rpm
+$ dnf --quiet download --source --url rpm-libs-4.16.1.3-12.amzn2022.0.3
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/facdca52f0ea2061d79f75b039b479394a257699b5d6d6442509c873435ff5a5/rpm-4.16.1.3-12.amzn2022.0.3.src.rpm
 ```
 
-### `rpm` package: `rpm-sign-libs-4.16.1.3-12.amzn2022.0.2.x86_64`
+### `rpm` package: `rpm-sign-libs-4.16.1.3-12.amzn2022.0.3.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ and LGPLv2+ with exceptions
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url rpm-sign-libs-4.16.1.3-12.amzn2022.0.2
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/6ac1d4230d5856724f840dd50c8d769e415374240042c9f34d7642894fb973b6/rpm-4.16.1.3-12.amzn2022.0.2.src.rpm
+$ dnf --quiet download --source --url rpm-sign-libs-4.16.1.3-12.amzn2022.0.3
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/facdca52f0ea2061d79f75b039b479394a257699b5d6d6442509c873435ff5a5/rpm-4.16.1.3-12.amzn2022.0.3.src.rpm
 ```
 
-### `rpm` package: `sed-4.8-7.amzn2022.x86_64`
+### `rpm` package: `sed-4.8-7.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url sed-4.8-7.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/43a2129fcefa3a8b47b68df6eec7950188ab96394c794483bbbf45c0e5888b34/sed-4.8-7.amzn2022.src.rpm
+$ dnf --quiet download --source --url sed-4.8-7.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/85397aac6f9759f884a775177c6236503f3933896e7814087506e00f722364ca/sed-4.8-7.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `setup-2.13.7-3.amzn2022.noarch`
+### `rpm` package: `setup-2.13.7-3.amzn2022.0.1.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url setup-2.13.7-3.amzn2022.noarch
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/a70ba2c507415c5773e5fc3635463c204f52a051599cebf7e3d8a221ec49e6a1/setup-2.13.7-3.amzn2022.src.rpm
+$ dnf --quiet download --source --url setup-2.13.7-3.amzn2022.0.1.noarch
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/3e977722d152726a8c43304b382b1f59e04756ace43ac4366a6e5067b7afe2ef/setup-2.13.7-3.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `sqlite-libs-3.34.1-2.amzn2022.x86_64`
+### `rpm` package: `sqlite-libs-3.34.1-2.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url sqlite-libs-3.34.1-2.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/0a92ca553dc438988cc12437e625595d0d87d526898675edc7f4c114d9af7761/sqlite-3.34.1-2.amzn2022.src.rpm
+$ dnf --quiet download --source --url sqlite-libs-3.34.1-2.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/5686212f4f1184dd2756c1678bf004c15554bd8a0e9652c47cb89befffbb87a1/sqlite-3.34.1-2.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `system-release-2022.0.20220928-0.amzn2022.noarch`
+### `rpm` package: `system-release-2022.0.20221012-0.amzn2022.noarch`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url system-release-2022.0.20220928-0.amzn2022.noarch
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/7b259a1038f7e52f397fced12a8864204f9f2a71588bae38fa024d033c55265e/system-release-2022.0.20220928-0.amzn2022.src.rpm
+$ dnf --quiet download --source --url system-release-2022.0.20221012-0.amzn2022.noarch
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/b29a3b49be90b40220c0b97601a81eee7d21b4374e07a0ee936acac2f3677a1b/system-release-2022.0.20221012-0.amzn2022.src.rpm
 ```
 
-### `rpm` package: `tzdata-2022c-1.amzn2022.0.1.noarch`
+### `rpm` package: `tzdata-2022d-1.amzn2022.0.1.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url tzdata-2022c-1.amzn2022.0.1.noarch
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/3c2bd64615a62a586499e83eb25899976c5e8a060ee42a19b4f48e3a447f9850/tzdata-2022c-1.amzn2022.0.1.src.rpm
+$ dnf --quiet download --source --url tzdata-2022d-1.amzn2022.0.1.noarch
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/3909386b17d35c7271177a80c21198c343866ecdadd2adc42f39e7b8ee2354fb/tzdata-2022d-1.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `vim-data-9.0.327-1.amzn2022.0.1.noarch`
+### `rpm` package: `vim-data-9.0.327-1.amzn2022.0.2.noarch`
 
 Licenses (from `rpm --query`): Vim and MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url vim-data-9.0.327-1.amzn2022.0.1.noarch
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/1fe648761000bc7029e94d381cb3088e736ca13a04e533e3c0b78fbff415247a/vim-9.0.327-1.amzn2022.0.1.src.rpm
+$ dnf --quiet download --source --url vim-data-9.0.327-1.amzn2022.0.2.noarch
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/c2374f532534106dde91222200dabb5753cb1d61caaa749530977e0a93ec2239/vim-9.0.327-1.amzn2022.0.2.src.rpm
 ```
 
-### `rpm` package: `vim-minimal-9.0.327-1.amzn2022.0.1.x86_64`
+### `rpm` package: `vim-minimal-9.0.327-1.amzn2022.0.2.x86_64`
 
 Licenses (from `rpm --query`): Vim and MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url vim-minimal-9.0.327-1.amzn2022.0.1
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/1fe648761000bc7029e94d381cb3088e736ca13a04e533e3c0b78fbff415247a/vim-9.0.327-1.amzn2022.0.1.src.rpm
+$ dnf --quiet download --source --url vim-minimal-9.0.327-1.amzn2022.0.2
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/c2374f532534106dde91222200dabb5753cb1d61caaa749530977e0a93ec2239/vim-9.0.327-1.amzn2022.0.2.src.rpm
 ```
 
-### `rpm` package: `xz-libs-5.2.5-9.amzn2022.x86_64`
+### `rpm` package: `xz-libs-5.2.5-9.amzn2022.0.1.x86_64`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url xz-libs-5.2.5-9.amzn2022
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/d58762c1818017369e9d5e4d723a0c960d731eacd3cf389218b70843aacba66b/xz-5.2.5-9.amzn2022.src.rpm
+$ dnf --quiet download --source --url xz-libs-5.2.5-9.amzn2022.0.1
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/f0257d84e9719142bf2e60e1a375943f7620263945e93bd74b0c5cd93d644f7e/xz-5.2.5-9.amzn2022.0.1.src.rpm
 ```
 
-### `rpm` package: `yum-4.12.0-2.amzn2022.0.1.noarch`
+### `rpm` package: `yum-4.12.0-2.amzn2022.0.2.noarch`
 
 Licenses (from `rpm --query`): GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url yum-4.12.0-2.amzn2022.0.1.noarch
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/0802f825b7e510998e1f9682ea9fe2d7b4120b0900913cffd91f1c9ef010384b/dnf-4.12.0-2.amzn2022.0.1.src.rpm
+$ dnf --quiet download --source --url yum-4.12.0-2.amzn2022.0.2.noarch
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/37f9b6a7f9448244e2e8845e2695fd48dfdf6b42c06241e8c704b6b97750dbce/dnf-4.12.0-2.amzn2022.0.2.src.rpm
 ```
 
-### `rpm` package: `zlib-1.2.11-32.amzn2022.0.2.x86_64`
+### `rpm` package: `zlib-1.2.11-32.amzn2022.0.3.x86_64`
 
 Licenses (from `rpm --query`): zlib and Boost
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url zlib-1.2.11-32.amzn2022.0.2
-https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/7fb526f487b6704f6ab46e4e17e9acccb88ea7e483cc419cc8afea0463e01d05/SRPMS/../../../../blobstore/acb69f56e51c9ce7beff1e0f4b8220e4f346437b0aedc3ad1d714e2d3036eb47/zlib-1.2.11-32.amzn2022.0.2.src.rpm
+$ dnf --quiet download --source --url zlib-1.2.11-32.amzn2022.0.3
+https://al2022-repos-us-west-2-9761ab97.s3.dualstack.us-west-2.amazonaws.com/core/guids/3639f46a50c6c4978d36ecda0895b164e42fa86ff7fd8dc984898128901b9962/SRPMS/../../../../blobstore/0541ce5c323fdaa2f7471dcd04c9297f94b5be96e1848a42790b3a3a8b3f52dc/zlib-1.2.11-32.amzn2022.0.3.src.rpm
 ```
