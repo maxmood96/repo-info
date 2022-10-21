@@ -1495,19 +1495,13 @@ Licenses: (parsed from: `/usr/share/doc/neurodebian-freeze/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris neurodebian=0.41.1+nmu1
-'http://deb.debian.org/debian/pool/main/n/neurodebian/neurodebian_0.41.1%2bnmu1.dsc' neurodebian_0.41.1+nmu1.dsc 1932 SHA256:c236618708cc17507286bcb47bd6e484756adbf4579de996e2b0122efc54174e
-'http://deb.debian.org/debian/pool/main/n/neurodebian/neurodebian_0.41.1%2bnmu1.tar.xz' neurodebian_0.41.1+nmu1.tar.xz 8319336 SHA256:300acb70670ae62c5dcd9cb5bbbbddd721ce0033291514bc90fe66d03c6c8d6f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/neurodebian/0.41.1+nmu1/
 
-- https://sources.debian.net/src/neurodebian/0.41.1+nmu1/ (for browsing the source)
-- https://sources.debian.net/src/neurodebian/0.41.1+nmu1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/neurodebian/0.41.1+nmu1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `npth=1.6-3`
 
@@ -1728,21 +1722,13 @@ Licenses: (parsed from: `/usr/share/doc/pinentry-curses/copyright`)
 - `LGPL-3+`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pinentry=1.2.0-2
-'http://deb.debian.org/debian/pool/main/p/pinentry/pinentry_1.2.0-2.dsc' pinentry_1.2.0-2.dsc 2242 SHA256:43d974d725f0e261449ea1aa340b00e9e53c0e567f12db7da41942ecc07bd755
-'http://deb.debian.org/debian/pool/main/p/pinentry/pinentry_1.2.0.orig.tar.bz2' pinentry_1.2.0.orig.tar.bz2 498390 SHA256:10072045a3e043d0581f91cd5676fcac7ffee957a16636adedaa4f583a616470
-'http://deb.debian.org/debian/pool/main/p/pinentry/pinentry_1.2.0.orig.tar.bz2.asc' pinentry_1.2.0.orig.tar.bz2.asc 228 SHA256:d917a96c24e796daba7bab36bacc75d8106ef24d2afc485d13448d3cf8bd8a86
-'http://deb.debian.org/debian/pool/main/p/pinentry/pinentry_1.2.0-2.debian.tar.xz' pinentry_1.2.0-2.debian.tar.xz 19160 SHA256:628541197becd30a5da77a79b878d9e9df4954334792db7b4f740bc3109bdc4d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pinentry/1.2.0-2/
 
-- https://sources.debian.net/src/pinentry/1.2.0-2/ (for browsing the source)
-- https://sources.debian.net/src/pinentry/1.2.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pinentry/1.2.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=8.2-1`
 
