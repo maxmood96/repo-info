@@ -2,11 +2,12 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9abf5b0b7bbc388655b6555168e61f5c1a7de354aeb23740b8dfb0496c80e8b6`
-- Created: `2022-10-05T04:13:53.769424852Z`
+- Image ID: `sha256:0b193a555975dff1ac2c85397020e35a44fa4ad456f7e4ae7fe630fda6d9e9a6`
+- Created: `2022-10-20T20:20:08.341651222Z`
 - Virtual Size: ~ 560.32 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
+- Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["julia"]`
 - Environment:
   - `PATH=/usr/local/julia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
