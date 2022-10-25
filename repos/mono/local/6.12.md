@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ea48581096b0332590a2597dd2cb99b463337dd24fbfc28bde0d07749f35159b`
-- Created: `2022-10-05T12:36:06.706607286Z`
-- Virtual Size: ~ 787.54 Mb  
+- Image ID: `sha256:023f91ebd2597e7802d6e5c1e03393213e7cfce4facf0bc8617e48d20b1b2f35`
+- Created: `2022-10-25T10:14:43.326007515Z`
+- Virtual Size: ~ 787.51 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -996,12 +996,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/glib2.0/2.58.3-2+deb10u4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/glib2.0/2.58.3-2+deb10u4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `glibc=2.28-10+deb10u1`
+### `dpkg` source package: `glibc=2.28-10+deb10u2`
 
 Binary Packages:
 
-- `libc-bin=2.28-10+deb10u1`
-- `libc6:amd64=2.28-10+deb10u1`
+- `libc-bin=2.28-10+deb10u2`
+- `libc6:amd64=2.28-10+deb10u2`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
@@ -1011,17 +1011,17 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glibc=2.28-10+deb10u1
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.28-10%2bdeb10u1.dsc' glibc_2.28-10+deb10u1.dsc 8921 SHA256:9bb410368ec00f6c6d2b281e97244337fb3513c885c250c0bd5caab694f4f62f
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.28.orig.tar.xz' glibc_2.28.orig.tar.xz 17061292 SHA256:53d3c1c7bff0fb25d4c7874bf13435dc44a71fd7dd5ffc9bfdcb513cdfc36854
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.28-10%2bdeb10u1.debian.tar.xz' glibc_2.28-10+deb10u1.debian.tar.xz 899676 SHA256:2f8b22a99965eafcfbb65f14bfb2dbe2400b06cb8e646e909eb22317c222dfe7
+$ apt-get source -qq --print-uris glibc=2.28-10+deb10u2
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.28-10%2bdeb10u2.dsc' glibc_2.28-10+deb10u2.dsc 8921 SHA256:1db9443dcf591e7c3980686ebf782400658761c6dcf832c704efbd592e203418
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.28.orig.tar.xz' glibc_2.28.orig.tar.xz 17061292 SHA256:53d3c1c7bff0fb25d4c7874bf13435dc44a71fd7dd5ffc9bfdcb513cdfc36854
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.28-10%2bdeb10u2.debian.tar.xz' glibc_2.28-10+deb10u2.debian.tar.xz 922792 SHA256:e9e8a1512517faa1cab5a5fe0231dcae3d410ad3f981a8db5e1494ed68bee15a
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/glibc/2.28-10+deb10u1/ (for browsing the source)
-- https://sources.debian.net/src/glibc/2.28-10+deb10u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glibc/2.28-10+deb10u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/glibc/2.28-10+deb10u2/ (for browsing the source)
+- https://sources.debian.net/src/glibc/2.28-10+deb10u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glibc/2.28-10+deb10u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.1.2+dfsg-4+deb10u1`
 
@@ -2623,20 +2623,25 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nghttp2/1.36.0-2+deb10u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nghttp2/1.36.0-2+deb10u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nuget=6.2.1.2.bin-0xamarin1+debian10b1`
+### `dpkg` source package: `nuget=6.3.1.1.bin-0xamarin1+debian10b1`
 
 Binary Packages:
 
-- `nuget=6.2.1.2.bin-0xamarin1+debian10b1`
+- `nuget=6.3.1.1.bin-0xamarin1+debian10b1`
 
 Licenses: (parsed from: `/usr/share/doc/nuget/copyright`)
 
 - `Apache-2.0`
 - `MIT`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris nuget=6.3.1.1.bin-0xamarin1+debian10b1
+'https://download.mono-project.com/repo/debian/pool/main/n/nuget/nuget_6.3.1.1.bin-0xamarin1%2bdebian10b1.dsc' nuget_6.3.1.1.bin-0xamarin1+debian10b1.dsc 1174 SHA256:b9132e4af422ab7dedcca3d9cbb2800c57b518d92c1e704f4c42f482db3a5138
+'https://download.mono-project.com/repo/debian/pool/main/n/nuget/nuget_6.3.1.1.bin.orig.tar.xz' nuget_6.3.1.1.bin.orig.tar.xz 1544960 SHA256:1d38c854fe9008298e5ab7e41e756aa3d551455fce226cf086ddeaafd2a972cb
+'https://download.mono-project.com/repo/debian/pool/main/n/nuget/nuget_6.3.1.1.bin-0xamarin1%2bdebian10b1.debian.tar.xz' nuget_6.3.1.1.bin-0xamarin1+debian10b1.debian.tar.xz 3400 SHA256:b9a84f0531e1bd74a3f9c096e3c5f73996dfe817d9dfcaaa6b3d82d38167f9d6
+```
 
 ### `dpkg` source package: `openldap=2.4.47+dfsg-3+deb10u7`
 
