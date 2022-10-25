@@ -1,7 +1,7 @@
 ## `swift:bionic-slim`
 
 ```console
-$ docker pull swift@sha256:84fb7c6ee950c4aaa8ad68dd19a075c0fc5dd26ca566e1020106fb12294496c6
+$ docker pull swift@sha256:b48a24c11032c841c978d51d4ec71dbb8715c1f4bb3610b5f5515bd03b719d0b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,53 +11,53 @@ $ docker pull swift@sha256:84fb7c6ee950c4aaa8ad68dd19a075c0fc5dd26ca566e1020106f
 ### `swift:bionic-slim` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:903b89b320cfc8a312c09a246910445630fcf718083d9d6ea96eca9b969d4b04
+$ docker pull swift@sha256:e97424755b77fba9468b47e06fe4df58f0ac834fb2be9a6d2faa00711faf1886
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **136.6 MB (136612554 bytes)**  
+-	Total Size: **136.6 MB (136614516 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:08e332be8dfeadd3567722c6cec13a9485b6bb7d79554873076f59ed88e342da`
+-	Image ID: `sha256:00359f6e55e5d0016dbe65dd4d4af2ec3266c47f4bce7b950e6622ae88926405`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 04 Oct 2022 23:35:04 GMT
-ADD file:ed601c56cf74241eeb1971b24ed969fb855cd2b9330276d3c5779ecdb0b28364 in / 
-# Tue, 04 Oct 2022 23:35:04 GMT
+# Tue, 25 Oct 2022 01:53:28 GMT
+ADD file:fc5d658c47ede58827812b75a311353be776e41e2dd339b8906839527c9b5247 in / 
+# Tue, 25 Oct 2022 01:53:28 GMT
 CMD ["bash"]
-# Tue, 04 Oct 2022 23:47:27 GMT
+# Tue, 25 Oct 2022 18:36:03 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
-# Tue, 04 Oct 2022 23:47:27 GMT
+# Tue, 25 Oct 2022 18:36:03 GMT
 LABEL Description=Docker Container for the Swift programming language
-# Tue, 04 Oct 2022 23:50:45 GMT
+# Tue, 25 Oct 2022 18:39:22 GMT
 RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && apt-get -q update &&     apt-get -q install -y     libatomic1     libcurl4     libxml2     tzdata     && rm -r /var/lib/apt/lists/*
-# Tue, 04 Oct 2022 23:50:45 GMT
+# Tue, 25 Oct 2022 18:39:22 GMT
 ARG SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561
-# Tue, 04 Oct 2022 23:50:45 GMT
+# Tue, 25 Oct 2022 18:39:22 GMT
 ARG SWIFT_PLATFORM=ubuntu18.04
-# Tue, 04 Oct 2022 23:50:46 GMT
+# Tue, 25 Oct 2022 18:39:22 GMT
 ARG SWIFT_BRANCH=swift-5.7-release
-# Tue, 04 Oct 2022 23:50:46 GMT
+# Tue, 25 Oct 2022 18:39:22 GMT
 ARG SWIFT_VERSION=swift-5.7-RELEASE
-# Tue, 04 Oct 2022 23:50:46 GMT
+# Tue, 25 Oct 2022 18:39:22 GMT
 ARG SWIFT_WEBROOT=https://download.swift.org
-# Tue, 04 Oct 2022 23:50:46 GMT
+# Tue, 25 Oct 2022 18:39:22 GMT
 ENV SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561 SWIFT_PLATFORM=ubuntu18.04 SWIFT_BRANCH=swift-5.7-release SWIFT_VERSION=swift-5.7-RELEASE SWIFT_WEBROOT=https://download.swift.org
-# Tue, 04 Oct 2022 23:51:23 GMT
+# Tue, 25 Oct 2022 18:39:59 GMT
 RUN set -e;     SWIFT_WEBDIR="$SWIFT_WEBROOT/$SWIFT_BRANCH/$(echo $SWIFT_PLATFORM | tr -d .)"     && SWIFT_BIN_URL="$SWIFT_WEBDIR/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM.tar.gz"     && SWIFT_SIG_URL="$SWIFT_BIN_URL.sig"     && export DEBIAN_FRONTEND=noninteractive     && apt-get -q update && apt-get -q install -y curl gnupg && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && curl -fsSL "$SWIFT_BIN_URL" -o swift.tar.gz "$SWIFT_SIG_URL" -o swift.tar.gz.sig     && gpg --batch --quiet --keyserver keyserver.ubuntu.com --recv-keys "$SWIFT_SIGNING_KEY"     && gpg --batch --verify swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1 $SWIFT_VERSION-$SWIFT_PLATFORM/usr/lib/swift/linux     && chmod -R o+r /usr/lib/swift     && rm -rf "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz     && apt-get purge --auto-remove -y curl gnupg
 ```
 
 -	Layers:
-	-	`sha256:e706e0a9f42365312b366bf4caa22f3cdd8fc7fd8f6f49b4dd3782711f66aca7`  
-		Last Modified: Tue, 04 Oct 2022 11:37:26 GMT  
-		Size: 26.7 MB (26711852 bytes)  
+	-	`sha256:a404e54162968593b8d92b571f3cdd673e4c9eab5d9be28d7c494595c0aa6682`  
+		Last Modified: Wed, 19 Oct 2022 22:03:02 GMT  
+		Size: 26.7 MB (26712500 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4a0ab0f83f617ce2fb9098621290a831f6f2320951dd753d528e04ed1b2e427`  
-		Last Modified: Wed, 05 Oct 2022 00:27:31 GMT  
-		Size: 20.5 MB (20479412 bytes)  
+	-	`sha256:2dfb95f072a7f36744d8274b0648c3079c9bac9fd91f1219d1b834d4774c8b25`  
+		Last Modified: Tue, 25 Oct 2022 19:15:44 GMT  
+		Size: 20.5 MB (20480703 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:77d57cb5b7ef9c5f0b930a25635289dd40f8f4e89142e9c9cd1f3e86fe6826c4`  
-		Last Modified: Wed, 05 Oct 2022 00:27:41 GMT  
-		Size: 89.4 MB (89421290 bytes)  
+	-	`sha256:a2ce4e3b236dc3308a615e4314e143d7bd78c83fb9be788f8aaaef1a6d785a94`  
+		Last Modified: Tue, 25 Oct 2022 19:15:54 GMT  
+		Size: 89.4 MB (89421313 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
