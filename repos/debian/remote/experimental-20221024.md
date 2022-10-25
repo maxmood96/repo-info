@@ -1,14 +1,15 @@
 ## `debian:experimental-20221024`
 
 ```console
-$ docker pull debian@sha256:04b8c10d1b493e159b759cc4ec0f7bcadfc29847742f5054962bf2acd7d85a42
+$ docker pull debian@sha256:51b1486b3d5e4c6bfd714b92d81a8bf1f101009ceeaaaaa58aa4c25509398741
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 8
+-	Platforms: 9
 	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
+	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; mips64le
 	-	linux; ppc64le
@@ -109,6 +110,38 @@ RUN echo 'deb http://deb.debian.org/debian experimental main' > /etc/apt/sources
 	-	`sha256:6e6d60b3efe8a4d25cdaccd3c899e16f08aea22bf0a6068dc4a16850e5ba22b0`  
 		Last Modified: Tue, 25 Oct 2022 03:25:57 GMT  
 		Size: 222.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `debian:experimental-20221024` - linux; arm64 variant v8
+
+```console
+$ docker pull debian@sha256:9805e3401c67f510c965c4a6db805a5137a5eb5ff5ddf28265776236560e4cce
+```
+
+-	Docker Version: 20.10.17
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **50.6 MB (50644015 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:9614c08d783bf6ff8cac3a7362dc3683b688a71fa9a8382e2a400ca6752b2ea7`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Tue, 25 Oct 2022 05:47:01 GMT
+ADD file:ae7dce1abee07b40819fc829a8fd5d64f8c27538fbf9d84de8af614ce90b36cf in / 
+# Tue, 25 Oct 2022 05:47:02 GMT
+CMD ["bash"]
+# Tue, 25 Oct 2022 05:47:08 GMT
+RUN echo 'deb http://deb.debian.org/debian experimental main' > /etc/apt/sources.list.d/experimental.list
+```
+
+-	Layers:
+	-	`sha256:ea60ca5adaf8bfceb8acf66ce18e03650528972b95957980dc35247bfe0a306b`  
+		Last Modified: Tue, 25 Oct 2022 05:52:10 GMT  
+		Size: 50.6 MB (50643794 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:830bb60eb47e025723feaf59b2939317a0a4e0fc85765ba7efb6958005c533c3`  
+		Last Modified: Tue, 25 Oct 2022 05:52:32 GMT  
+		Size: 221.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `debian:experimental-20221024` - linux; 386
