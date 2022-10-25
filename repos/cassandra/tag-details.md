@@ -17,7 +17,7 @@
 ## `cassandra:3`
 
 ```console
-$ docker pull cassandra@sha256:a96d4de702c3ef4f27b6477ae48c4805cc0868bb359ac2b03eace0c304a80442
+$ docker pull cassandra@sha256:d758400df20eb643f56b750fb6a364f5b98d9abb5343ca71df5fa0621458eccd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -363,14 +363,14 @@ CMD ["cassandra" "-f"]
 ### `cassandra:3` - linux; ppc64le
 
 ```console
-$ docker pull cassandra@sha256:63f3763dc9b13683b378679ca91f4e71b027aa45734babbba90536dbe7cc451b
+$ docker pull cassandra@sha256:0c9713bee51d188ef675671bb707de3417c2ade471fdce0220feaa132ce57b04
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **136.2 MB (136211403 bytes)**  
+-	Total Size: **136.2 MB (136216765 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:401d2122dab835e403219003400386b602fcffc08681920665e1cd4a9ebb5f55`
+-	Image ID: `sha256:83f11eab7aca172bd33691bfe633d088f6709a9e5a7b6a8d94d8d48fd9a44c2f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -409,23 +409,23 @@ ENV CASSANDRA_CONF=/etc/cassandra
 ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Thu, 06 Oct 2022 01:10:36 GMT
 ENV GPG_KEYS=CEC86BB4A0BA9D0F90397CAEF8358FA2F2833C93 	C4965EE9E3015D192CCCF2B6F758CE318D77295D 	5AED1BF378E9A19DADE1BCB34BD736A82B5C1B00 	514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB 	9E66CEC6106D578D0B1EB9BFF1000962B7F6840C 	C4009872C59B49561310D966D0062876AF30F054 	B7842CDAF36E6A3214FAE35D5E85B9AE0B84C041 	3E9C876907A560ACA00964F363E9BAD215BBF5F0 	F8B7FD00E05C932991A2CD6150EE103D162C5A55
-# Thu, 06 Oct 2022 01:10:36 GMT
-ENV CASSANDRA_VERSION=3.11.13
-# Thu, 06 Oct 2022 01:10:36 GMT
-ENV CASSANDRA_SHA512=d356a27a355797f490a36ef14f6e0062c0f77e180ca29debbaa8a92b073e8a922010ad91b911c2a075117d0399d712bda2ac90724430884dd1e3297b6c5e064d
-# Thu, 06 Oct 2022 01:11:04 GMT
+# Tue, 25 Oct 2022 02:37:41 GMT
+ENV CASSANDRA_VERSION=3.11.14
+# Tue, 25 Oct 2022 02:37:42 GMT
+ENV CASSANDRA_SHA512=04ee6fa283079e58c9e8eb36bafa8a56ac1373a8845cad55e6f23e508f8bb19955b7bc70ad571ee351bb580c87181c521beeaadce14adbd9d9c87e86c2d15ec2
+# Tue, 25 Oct 2022 02:38:14 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			grep -- '^-Xss256k$' "$CASSANDRA_CONF/jvm.options"; 			sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONF/jvm.options"; 			grep -- '^-Xss512k$' "$CASSANDRA_CONF/jvm.options"; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod -R a+rwX "$CASSANDRA_CONF"; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v
-# Thu, 06 Oct 2022 01:11:05 GMT
+# Tue, 25 Oct 2022 02:38:15 GMT
 VOLUME [/var/lib/cassandra]
-# Thu, 06 Oct 2022 01:11:05 GMT
+# Tue, 25 Oct 2022 02:38:15 GMT
 COPY file:a8d4fc10252d8783a105c235b3eef2315dbe3b0b1be0f1e4650f19fa5a56ab29 in /usr/local/bin/ 
-# Thu, 06 Oct 2022 01:11:08 GMT
+# Tue, 25 Oct 2022 02:38:16 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat
-# Thu, 06 Oct 2022 01:11:08 GMT
+# Tue, 25 Oct 2022 02:38:17 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 06 Oct 2022 01:11:09 GMT
+# Tue, 25 Oct 2022 02:38:17 GMT
 EXPOSE 7000 7001 7199 9042 9160
-# Thu, 06 Oct 2022 01:11:09 GMT
+# Tue, 25 Oct 2022 02:38:17 GMT
 CMD ["cassandra" "-f"]
 ```
 
@@ -458,23 +458,23 @@ CMD ["cassandra" "-f"]
 		Last Modified: Thu, 06 Oct 2022 01:12:47 GMT  
 		Size: 1.2 MB (1186882 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8b8eab54b8fa45721dacc3483e284c555eb700f2a8c4a6c070741db61d5b42a3`  
-		Last Modified: Thu, 06 Oct 2022 01:12:51 GMT  
-		Size: 32.5 MB (32522666 bytes)  
+	-	`sha256:26c8169ffb6181084c7e2abe69735b23047d6864ada898f4d018bb6f0e647a58`  
+		Last Modified: Tue, 25 Oct 2022 02:39:55 GMT  
+		Size: 32.5 MB (32528027 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0debda83ca58927b331a7540d53c8742b7fa9846aa1855d4a6823a41397436de`  
-		Last Modified: Thu, 06 Oct 2022 01:12:47 GMT  
-		Size: 1.2 KB (1222 bytes)  
+	-	`sha256:3dc094674333f89b6b439a416962e816f8083fc80a456f08ee6232f0f7dec921`  
+		Last Modified: Tue, 25 Oct 2022 02:39:51 GMT  
+		Size: 1.2 KB (1223 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bad99d9ebf5acd57eae9bc7a7de74f101be5b2268a563f8f345f284dfd05a3d2`  
-		Last Modified: Thu, 06 Oct 2022 01:12:47 GMT  
+	-	`sha256:2c5b4859c4af77b37bbbb24d8adb0bd43990cc1d62232e95e68d11c3fbe3143f`  
+		Last Modified: Tue, 25 Oct 2022 02:39:51 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `cassandra:3.0`
 
 ```console
-$ docker pull cassandra@sha256:7c53b95ac1e6d75238d3f69e215f4b6454ef991f5b2d6d6c79685e0b81c4c8f6
+$ docker pull cassandra@sha256:bcf958c735e6e21cf4b6e1f29e275be749f057a3bccf30671f11e189f15c14b4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -820,14 +820,14 @@ CMD ["cassandra" "-f"]
 ### `cassandra:3.0` - linux; ppc64le
 
 ```console
-$ docker pull cassandra@sha256:9d729f09840c547b5d87dc2236257fb57eb0cfceb51bf3be1d191655261b7498
+$ docker pull cassandra@sha256:68eb04fa991e2be49e0d1531e464cdb04c7218f0940af6c9b70f81ec6e5d4cad
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **130.9 MB (130870997 bytes)**  
+-	Total Size: **130.9 MB (130875124 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5b5914433403b8caab64c21a731d41c7d8382c3331796ef7ac5248829146e636`
+-	Image ID: `sha256:b2db1c8e1492a617e5297e8fc1472e7370bf9eed5e69c47d25e188c1913e89a8`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -866,23 +866,23 @@ ENV CASSANDRA_CONF=/etc/cassandra
 ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Thu, 06 Oct 2022 01:10:36 GMT
 ENV GPG_KEYS=CEC86BB4A0BA9D0F90397CAEF8358FA2F2833C93 	C4965EE9E3015D192CCCF2B6F758CE318D77295D 	5AED1BF378E9A19DADE1BCB34BD736A82B5C1B00 	514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB 	9E66CEC6106D578D0B1EB9BFF1000962B7F6840C 	C4009872C59B49561310D966D0062876AF30F054 	B7842CDAF36E6A3214FAE35D5E85B9AE0B84C041 	3E9C876907A560ACA00964F363E9BAD215BBF5F0 	F8B7FD00E05C932991A2CD6150EE103D162C5A55
-# Thu, 06 Oct 2022 01:11:18 GMT
-ENV CASSANDRA_VERSION=3.0.27
-# Thu, 06 Oct 2022 01:11:18 GMT
-ENV CASSANDRA_SHA512=3848241517197b815e219af5c3cabdf6303d7bbabf9e21afdbd979c7e07ece8c49d8cdefb558013a451c1ef386a35440c647147731521d2ec6aa1887b37cacf1
-# Thu, 06 Oct 2022 01:11:46 GMT
+# Tue, 25 Oct 2022 02:38:23 GMT
+ENV CASSANDRA_VERSION=3.0.28
+# Tue, 25 Oct 2022 02:38:24 GMT
+ENV CASSANDRA_SHA512=60e041241e6f91bf729a4922f84b5a6bdb6c7d76700a84e505932c6fda7ebefc007bf38fb6477d83aac525d14771eecd38e2e45a007b434ab6495ec1d617cfd4
+# Tue, 25 Oct 2022 02:38:51 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			grep -- '-Xss256k' "$CASSANDRA_CONF/cassandra-env.sh"; 			sed -ri 's/-Xss256k/-Xss512k/g' "$CASSANDRA_CONF/cassandra-env.sh"; 			grep -- '-Xss512k' "$CASSANDRA_CONF/cassandra-env.sh"; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod -R a+rwX "$CASSANDRA_CONF"; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v
-# Thu, 06 Oct 2022 01:11:47 GMT
+# Tue, 25 Oct 2022 02:38:51 GMT
 VOLUME [/var/lib/cassandra]
-# Thu, 06 Oct 2022 01:11:47 GMT
+# Tue, 25 Oct 2022 02:38:51 GMT
 COPY file:a8d4fc10252d8783a105c235b3eef2315dbe3b0b1be0f1e4650f19fa5a56ab29 in /usr/local/bin/ 
-# Thu, 06 Oct 2022 01:11:48 GMT
+# Tue, 25 Oct 2022 02:38:52 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat
-# Thu, 06 Oct 2022 01:11:49 GMT
+# Tue, 25 Oct 2022 02:38:53 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 06 Oct 2022 01:11:49 GMT
+# Tue, 25 Oct 2022 02:38:53 GMT
 EXPOSE 7000 7001 7199 9042 9160
-# Thu, 06 Oct 2022 01:11:49 GMT
+# Tue, 25 Oct 2022 02:38:53 GMT
 CMD ["cassandra" "-f"]
 ```
 
@@ -915,29 +915,30 @@ CMD ["cassandra" "-f"]
 		Last Modified: Thu, 06 Oct 2022 01:12:47 GMT  
 		Size: 1.2 MB (1186882 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:326a9f2da7f24564903a297b3a4644dc64c4314a3f69615c66703b1852fbee87`  
-		Last Modified: Thu, 06 Oct 2022 01:13:10 GMT  
-		Size: 27.2 MB (27182261 bytes)  
+	-	`sha256:fcb8bfc1881d4e11da33fb3a7ce0dfd12be5e2e5c57c91dadff0bf39a5ddd5d0`  
+		Last Modified: Tue, 25 Oct 2022 02:40:14 GMT  
+		Size: 27.2 MB (27186390 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:79120ded4e76f2f6501c413e285b3d1ee259bef0e8300d3a088e35cf97193496`  
-		Last Modified: Thu, 06 Oct 2022 01:13:07 GMT  
-		Size: 1.2 KB (1221 bytes)  
+	-	`sha256:23a53bfab7d3222777210ca2a4f692c0e9dc3fcf29e94f36bed9cb55afbe17d1`  
+		Last Modified: Tue, 25 Oct 2022 02:40:11 GMT  
+		Size: 1.2 KB (1219 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4221e42918decb527fb9fbc31af5692eabea836845e94cd80061b130fe0921fa`  
-		Last Modified: Thu, 06 Oct 2022 01:13:07 GMT  
+	-	`sha256:27d8927645dd5295885caaa4bd88e0283c760eb4ba2150793c9acad54c05ea6e`  
+		Last Modified: Tue, 25 Oct 2022 02:40:11 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `cassandra:3.0.28`
 
 ```console
-$ docker pull cassandra@sha256:215a0bb4da57a4510bf0bd65dae40c9dd8efe754ae7944cc29e3241bc21af1fe
+$ docker pull cassandra@sha256:5ad214b389879a1e48ca2735956f9da103caf39962e26c42b1cd3dd509b98fff
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 2
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm64 variant v8
+	-	linux; ppc64le
 
 ### `cassandra:3.0.28` - linux; amd64
 
@@ -1161,10 +1162,121 @@ CMD ["cassandra" "-f"]
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+### `cassandra:3.0.28` - linux; ppc64le
+
+```console
+$ docker pull cassandra@sha256:68eb04fa991e2be49e0d1531e464cdb04c7218f0940af6c9b70f81ec6e5d4cad
+```
+
+-	Docker Version: 20.10.12
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **130.9 MB (130875124 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:b2db1c8e1492a617e5297e8fc1472e7370bf9eed5e69c47d25e188c1913e89a8`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["cassandra","-f"]`
+
+```dockerfile
+# Wed, 05 Oct 2022 10:52:08 GMT
+ADD file:75224b75d955b3021df8214497d6835e1aff42b5ce83f96b779b63c4a8e15faf in / 
+# Wed, 05 Oct 2022 10:52:10 GMT
+CMD ["bash"]
+# Wed, 05 Oct 2022 19:57:41 GMT
+ENV JAVA_HOME=/opt/java/openjdk
+# Wed, 05 Oct 2022 19:57:41 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 05 Oct 2022 19:57:42 GMT
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+# Wed, 05 Oct 2022 19:58:21 GMT
+RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl wget ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Wed, 05 Oct 2022 19:58:23 GMT
+ENV JAVA_VERSION=jdk8u345-b01
+# Wed, 05 Oct 2022 19:59:55 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='65b8bd74382d6514d2458ff4375468651791a55a186a5bffe0803204801e9c94';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u345-b01/OpenJDK8U-jre_aarch64_linux_hotspot_8u345b01.tar.gz';          ;;        armhf|arm)          ESUM='a9dd1ea4280a85158191101688bbf1920c4676a3849e22dc7783fb61f60d6199';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u345-b01/OpenJDK8U-jre_arm_linux_hotspot_8u345b01.tar.gz';          apt-get update          && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1          && rm -rf /var/lib/apt/lists/*          ;;        ppc64el|powerpc:common64)          ESUM='0e58c3fb39303969d7d6ff660c0b63997ab0ee68af3452f3d17f2892c61a58f6';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u345-b01/OpenJDK8U-jre_ppc64le_linux_hotspot_8u345b01.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='2422a8831fe414b9dba4c443ee3562431dfcde27577124f0db58ec903afc262a';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u345-b01/OpenJDK8U-jre_x64_linux_hotspot_8u345b01.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;
+# Wed, 05 Oct 2022 19:59:57 GMT
+RUN echo Verifying install ...     && echo java -version && java -version     && echo Complete.
+# Thu, 06 Oct 2022 01:09:54 GMT
+RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra
+# Thu, 06 Oct 2022 01:10:16 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libjemalloc2 		procps 		python 		iproute2 		numactl 	; 	rm -rf /var/lib/apt/lists/*; 	libjemalloc="$(readlink -e /usr/lib/*/libjemalloc.so.2)"; 	ln -sT "$libjemalloc" /usr/local/lib/libjemalloc.so; 	ldconfig
+# Thu, 06 Oct 2022 01:10:17 GMT
+ENV GOSU_VERSION=1.14
+# Thu, 06 Oct 2022 01:10:34 GMT
+RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
+# Thu, 06 Oct 2022 01:10:34 GMT
+ENV CASSANDRA_HOME=/opt/cassandra
+# Thu, 06 Oct 2022 01:10:34 GMT
+ENV CASSANDRA_CONF=/etc/cassandra
+# Thu, 06 Oct 2022 01:10:35 GMT
+ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Thu, 06 Oct 2022 01:10:36 GMT
+ENV GPG_KEYS=CEC86BB4A0BA9D0F90397CAEF8358FA2F2833C93 	C4965EE9E3015D192CCCF2B6F758CE318D77295D 	5AED1BF378E9A19DADE1BCB34BD736A82B5C1B00 	514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB 	9E66CEC6106D578D0B1EB9BFF1000962B7F6840C 	C4009872C59B49561310D966D0062876AF30F054 	B7842CDAF36E6A3214FAE35D5E85B9AE0B84C041 	3E9C876907A560ACA00964F363E9BAD215BBF5F0 	F8B7FD00E05C932991A2CD6150EE103D162C5A55
+# Tue, 25 Oct 2022 02:38:23 GMT
+ENV CASSANDRA_VERSION=3.0.28
+# Tue, 25 Oct 2022 02:38:24 GMT
+ENV CASSANDRA_SHA512=60e041241e6f91bf729a4922f84b5a6bdb6c7d76700a84e505932c6fda7ebefc007bf38fb6477d83aac525d14771eecd38e2e45a007b434ab6495ec1d617cfd4
+# Tue, 25 Oct 2022 02:38:51 GMT
+RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			grep -- '-Xss256k' "$CASSANDRA_CONF/cassandra-env.sh"; 			sed -ri 's/-Xss256k/-Xss512k/g' "$CASSANDRA_CONF/cassandra-env.sh"; 			grep -- '-Xss512k' "$CASSANDRA_CONF/cassandra-env.sh"; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod -R a+rwX "$CASSANDRA_CONF"; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v
+# Tue, 25 Oct 2022 02:38:51 GMT
+VOLUME [/var/lib/cassandra]
+# Tue, 25 Oct 2022 02:38:51 GMT
+COPY file:a8d4fc10252d8783a105c235b3eef2315dbe3b0b1be0f1e4650f19fa5a56ab29 in /usr/local/bin/ 
+# Tue, 25 Oct 2022 02:38:52 GMT
+RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat
+# Tue, 25 Oct 2022 02:38:53 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Tue, 25 Oct 2022 02:38:53 GMT
+EXPOSE 7000 7001 7199 9042 9160
+# Tue, 25 Oct 2022 02:38:53 GMT
+CMD ["cassandra" "-f"]
+```
+
+-	Layers:
+	-	`sha256:ecaa0fe591301d50850e37b61a6fac5429c04a3c39272da2f7b748eaed7f5c52`  
+		Last Modified: Wed, 05 Oct 2022 10:54:26 GMT  
+		Size: 33.3 MB (33296076 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1231f16afe1ccf89e36d1e55903168c95a55078bc7ebeddfd61d4e2dfb4772b9`  
+		Last Modified: Wed, 05 Oct 2022 20:10:10 GMT  
+		Size: 17.6 MB (17591263 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:58e5cc57e8fcbbc33359c95ca72a89ab816ebf3a59fb05011b58c17c041cf000`  
+		Last Modified: Wed, 05 Oct 2022 20:11:16 GMT  
+		Size: 41.2 MB (41195276 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f6714d87e92386d61252aabd5f68a20d084ec2e62a02d57cc3f451fa60fa5161`  
+		Last Modified: Wed, 05 Oct 2022 20:11:08 GMT  
+		Size: 162.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fb654f549cdd9d8a6876eef0d18b780e2ba568aa862199852c239eea14614890`  
+		Last Modified: Thu, 06 Oct 2022 01:12:49 GMT  
+		Size: 1.8 KB (1765 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ae43105fbd461f86ba5de196b2ae616cb1cda90d4bb346484c199be6614d3eb9`  
+		Last Modified: Thu, 06 Oct 2022 01:12:50 GMT  
+		Size: 10.4 MB (10415970 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b9a38600dd6c15967636edd191141624b700c87cc7ba4577ba6244b228e51fdb`  
+		Last Modified: Thu, 06 Oct 2022 01:12:47 GMT  
+		Size: 1.2 MB (1186882 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fcb8bfc1881d4e11da33fb3a7ce0dfd12be5e2e5c57c91dadff0bf39a5ddd5d0`  
+		Last Modified: Tue, 25 Oct 2022 02:40:14 GMT  
+		Size: 27.2 MB (27186390 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:23a53bfab7d3222777210ca2a4f692c0e9dc3fcf29e94f36bed9cb55afbe17d1`  
+		Last Modified: Tue, 25 Oct 2022 02:40:11 GMT  
+		Size: 1.2 KB (1219 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:27d8927645dd5295885caaa4bd88e0283c760eb4ba2150793c9acad54c05ea6e`  
+		Last Modified: Tue, 25 Oct 2022 02:40:11 GMT  
+		Size: 121.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
 ## `cassandra:3.11`
 
 ```console
-$ docker pull cassandra@sha256:a96d4de702c3ef4f27b6477ae48c4805cc0868bb359ac2b03eace0c304a80442
+$ docker pull cassandra@sha256:d758400df20eb643f56b750fb6a364f5b98d9abb5343ca71df5fa0621458eccd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1510,14 +1622,14 @@ CMD ["cassandra" "-f"]
 ### `cassandra:3.11` - linux; ppc64le
 
 ```console
-$ docker pull cassandra@sha256:63f3763dc9b13683b378679ca91f4e71b027aa45734babbba90536dbe7cc451b
+$ docker pull cassandra@sha256:0c9713bee51d188ef675671bb707de3417c2ade471fdce0220feaa132ce57b04
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **136.2 MB (136211403 bytes)**  
+-	Total Size: **136.2 MB (136216765 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:401d2122dab835e403219003400386b602fcffc08681920665e1cd4a9ebb5f55`
+-	Image ID: `sha256:83f11eab7aca172bd33691bfe633d088f6709a9e5a7b6a8d94d8d48fd9a44c2f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -1556,23 +1668,23 @@ ENV CASSANDRA_CONF=/etc/cassandra
 ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Thu, 06 Oct 2022 01:10:36 GMT
 ENV GPG_KEYS=CEC86BB4A0BA9D0F90397CAEF8358FA2F2833C93 	C4965EE9E3015D192CCCF2B6F758CE318D77295D 	5AED1BF378E9A19DADE1BCB34BD736A82B5C1B00 	514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB 	9E66CEC6106D578D0B1EB9BFF1000962B7F6840C 	C4009872C59B49561310D966D0062876AF30F054 	B7842CDAF36E6A3214FAE35D5E85B9AE0B84C041 	3E9C876907A560ACA00964F363E9BAD215BBF5F0 	F8B7FD00E05C932991A2CD6150EE103D162C5A55
-# Thu, 06 Oct 2022 01:10:36 GMT
-ENV CASSANDRA_VERSION=3.11.13
-# Thu, 06 Oct 2022 01:10:36 GMT
-ENV CASSANDRA_SHA512=d356a27a355797f490a36ef14f6e0062c0f77e180ca29debbaa8a92b073e8a922010ad91b911c2a075117d0399d712bda2ac90724430884dd1e3297b6c5e064d
-# Thu, 06 Oct 2022 01:11:04 GMT
+# Tue, 25 Oct 2022 02:37:41 GMT
+ENV CASSANDRA_VERSION=3.11.14
+# Tue, 25 Oct 2022 02:37:42 GMT
+ENV CASSANDRA_SHA512=04ee6fa283079e58c9e8eb36bafa8a56ac1373a8845cad55e6f23e508f8bb19955b7bc70ad571ee351bb580c87181c521beeaadce14adbd9d9c87e86c2d15ec2
+# Tue, 25 Oct 2022 02:38:14 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			grep -- '^-Xss256k$' "$CASSANDRA_CONF/jvm.options"; 			sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONF/jvm.options"; 			grep -- '^-Xss512k$' "$CASSANDRA_CONF/jvm.options"; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod -R a+rwX "$CASSANDRA_CONF"; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v
-# Thu, 06 Oct 2022 01:11:05 GMT
+# Tue, 25 Oct 2022 02:38:15 GMT
 VOLUME [/var/lib/cassandra]
-# Thu, 06 Oct 2022 01:11:05 GMT
+# Tue, 25 Oct 2022 02:38:15 GMT
 COPY file:a8d4fc10252d8783a105c235b3eef2315dbe3b0b1be0f1e4650f19fa5a56ab29 in /usr/local/bin/ 
-# Thu, 06 Oct 2022 01:11:08 GMT
+# Tue, 25 Oct 2022 02:38:16 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat
-# Thu, 06 Oct 2022 01:11:08 GMT
+# Tue, 25 Oct 2022 02:38:17 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 06 Oct 2022 01:11:09 GMT
+# Tue, 25 Oct 2022 02:38:17 GMT
 EXPOSE 7000 7001 7199 9042 9160
-# Thu, 06 Oct 2022 01:11:09 GMT
+# Tue, 25 Oct 2022 02:38:17 GMT
 CMD ["cassandra" "-f"]
 ```
 
@@ -1605,29 +1717,30 @@ CMD ["cassandra" "-f"]
 		Last Modified: Thu, 06 Oct 2022 01:12:47 GMT  
 		Size: 1.2 MB (1186882 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8b8eab54b8fa45721dacc3483e284c555eb700f2a8c4a6c070741db61d5b42a3`  
-		Last Modified: Thu, 06 Oct 2022 01:12:51 GMT  
-		Size: 32.5 MB (32522666 bytes)  
+	-	`sha256:26c8169ffb6181084c7e2abe69735b23047d6864ada898f4d018bb6f0e647a58`  
+		Last Modified: Tue, 25 Oct 2022 02:39:55 GMT  
+		Size: 32.5 MB (32528027 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0debda83ca58927b331a7540d53c8742b7fa9846aa1855d4a6823a41397436de`  
-		Last Modified: Thu, 06 Oct 2022 01:12:47 GMT  
-		Size: 1.2 KB (1222 bytes)  
+	-	`sha256:3dc094674333f89b6b439a416962e816f8083fc80a456f08ee6232f0f7dec921`  
+		Last Modified: Tue, 25 Oct 2022 02:39:51 GMT  
+		Size: 1.2 KB (1223 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bad99d9ebf5acd57eae9bc7a7de74f101be5b2268a563f8f345f284dfd05a3d2`  
-		Last Modified: Thu, 06 Oct 2022 01:12:47 GMT  
+	-	`sha256:2c5b4859c4af77b37bbbb24d8adb0bd43990cc1d62232e95e68d11c3fbe3143f`  
+		Last Modified: Tue, 25 Oct 2022 02:39:51 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `cassandra:3.11.14`
 
 ```console
-$ docker pull cassandra@sha256:9f6e28da11b5e9dd2ddd5f7869fa55682be11a75088f27f4253787dd38d8e662
+$ docker pull cassandra@sha256:ce9dafbe842aed2d96d6dbb0c6fdfe6cfb7db6d9564bbc7b612550bd8081c5e4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 2
+-	Platforms: 3
 	-	linux; amd64
 	-	linux; arm64 variant v8
+	-	linux; ppc64le
 
 ### `cassandra:3.11.14` - linux; amd64
 
@@ -1851,10 +1964,121 @@ CMD ["cassandra" "-f"]
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+### `cassandra:3.11.14` - linux; ppc64le
+
+```console
+$ docker pull cassandra@sha256:0c9713bee51d188ef675671bb707de3417c2ade471fdce0220feaa132ce57b04
+```
+
+-	Docker Version: 20.10.12
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **136.2 MB (136216765 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:83f11eab7aca172bd33691bfe633d088f6709a9e5a7b6a8d94d8d48fd9a44c2f`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["cassandra","-f"]`
+
+```dockerfile
+# Wed, 05 Oct 2022 10:52:08 GMT
+ADD file:75224b75d955b3021df8214497d6835e1aff42b5ce83f96b779b63c4a8e15faf in / 
+# Wed, 05 Oct 2022 10:52:10 GMT
+CMD ["bash"]
+# Wed, 05 Oct 2022 19:57:41 GMT
+ENV JAVA_HOME=/opt/java/openjdk
+# Wed, 05 Oct 2022 19:57:41 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 05 Oct 2022 19:57:42 GMT
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+# Wed, 05 Oct 2022 19:58:21 GMT
+RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl wget ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Wed, 05 Oct 2022 19:58:23 GMT
+ENV JAVA_VERSION=jdk8u345-b01
+# Wed, 05 Oct 2022 19:59:55 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='65b8bd74382d6514d2458ff4375468651791a55a186a5bffe0803204801e9c94';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u345-b01/OpenJDK8U-jre_aarch64_linux_hotspot_8u345b01.tar.gz';          ;;        armhf|arm)          ESUM='a9dd1ea4280a85158191101688bbf1920c4676a3849e22dc7783fb61f60d6199';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u345-b01/OpenJDK8U-jre_arm_linux_hotspot_8u345b01.tar.gz';          apt-get update          && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1          && rm -rf /var/lib/apt/lists/*          ;;        ppc64el|powerpc:common64)          ESUM='0e58c3fb39303969d7d6ff660c0b63997ab0ee68af3452f3d17f2892c61a58f6';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u345-b01/OpenJDK8U-jre_ppc64le_linux_hotspot_8u345b01.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='2422a8831fe414b9dba4c443ee3562431dfcde27577124f0db58ec903afc262a';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u345-b01/OpenJDK8U-jre_x64_linux_hotspot_8u345b01.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;
+# Wed, 05 Oct 2022 19:59:57 GMT
+RUN echo Verifying install ...     && echo java -version && java -version     && echo Complete.
+# Thu, 06 Oct 2022 01:09:54 GMT
+RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra
+# Thu, 06 Oct 2022 01:10:16 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libjemalloc2 		procps 		python 		iproute2 		numactl 	; 	rm -rf /var/lib/apt/lists/*; 	libjemalloc="$(readlink -e /usr/lib/*/libjemalloc.so.2)"; 	ln -sT "$libjemalloc" /usr/local/lib/libjemalloc.so; 	ldconfig
+# Thu, 06 Oct 2022 01:10:17 GMT
+ENV GOSU_VERSION=1.14
+# Thu, 06 Oct 2022 01:10:34 GMT
+RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
+# Thu, 06 Oct 2022 01:10:34 GMT
+ENV CASSANDRA_HOME=/opt/cassandra
+# Thu, 06 Oct 2022 01:10:34 GMT
+ENV CASSANDRA_CONF=/etc/cassandra
+# Thu, 06 Oct 2022 01:10:35 GMT
+ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Thu, 06 Oct 2022 01:10:36 GMT
+ENV GPG_KEYS=CEC86BB4A0BA9D0F90397CAEF8358FA2F2833C93 	C4965EE9E3015D192CCCF2B6F758CE318D77295D 	5AED1BF378E9A19DADE1BCB34BD736A82B5C1B00 	514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB 	9E66CEC6106D578D0B1EB9BFF1000962B7F6840C 	C4009872C59B49561310D966D0062876AF30F054 	B7842CDAF36E6A3214FAE35D5E85B9AE0B84C041 	3E9C876907A560ACA00964F363E9BAD215BBF5F0 	F8B7FD00E05C932991A2CD6150EE103D162C5A55
+# Tue, 25 Oct 2022 02:37:41 GMT
+ENV CASSANDRA_VERSION=3.11.14
+# Tue, 25 Oct 2022 02:37:42 GMT
+ENV CASSANDRA_SHA512=04ee6fa283079e58c9e8eb36bafa8a56ac1373a8845cad55e6f23e508f8bb19955b7bc70ad571ee351bb580c87181c521beeaadce14adbd9d9c87e86c2d15ec2
+# Tue, 25 Oct 2022 02:38:14 GMT
+RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			grep -- '^-Xss256k$' "$CASSANDRA_CONF/jvm.options"; 			sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONF/jvm.options"; 			grep -- '^-Xss512k$' "$CASSANDRA_CONF/jvm.options"; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod -R a+rwX "$CASSANDRA_CONF"; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v
+# Tue, 25 Oct 2022 02:38:15 GMT
+VOLUME [/var/lib/cassandra]
+# Tue, 25 Oct 2022 02:38:15 GMT
+COPY file:a8d4fc10252d8783a105c235b3eef2315dbe3b0b1be0f1e4650f19fa5a56ab29 in /usr/local/bin/ 
+# Tue, 25 Oct 2022 02:38:16 GMT
+RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat
+# Tue, 25 Oct 2022 02:38:17 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Tue, 25 Oct 2022 02:38:17 GMT
+EXPOSE 7000 7001 7199 9042 9160
+# Tue, 25 Oct 2022 02:38:17 GMT
+CMD ["cassandra" "-f"]
+```
+
+-	Layers:
+	-	`sha256:ecaa0fe591301d50850e37b61a6fac5429c04a3c39272da2f7b748eaed7f5c52`  
+		Last Modified: Wed, 05 Oct 2022 10:54:26 GMT  
+		Size: 33.3 MB (33296076 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1231f16afe1ccf89e36d1e55903168c95a55078bc7ebeddfd61d4e2dfb4772b9`  
+		Last Modified: Wed, 05 Oct 2022 20:10:10 GMT  
+		Size: 17.6 MB (17591263 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:58e5cc57e8fcbbc33359c95ca72a89ab816ebf3a59fb05011b58c17c041cf000`  
+		Last Modified: Wed, 05 Oct 2022 20:11:16 GMT  
+		Size: 41.2 MB (41195276 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f6714d87e92386d61252aabd5f68a20d084ec2e62a02d57cc3f451fa60fa5161`  
+		Last Modified: Wed, 05 Oct 2022 20:11:08 GMT  
+		Size: 162.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fb654f549cdd9d8a6876eef0d18b780e2ba568aa862199852c239eea14614890`  
+		Last Modified: Thu, 06 Oct 2022 01:12:49 GMT  
+		Size: 1.8 KB (1765 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ae43105fbd461f86ba5de196b2ae616cb1cda90d4bb346484c199be6614d3eb9`  
+		Last Modified: Thu, 06 Oct 2022 01:12:50 GMT  
+		Size: 10.4 MB (10415970 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b9a38600dd6c15967636edd191141624b700c87cc7ba4577ba6244b228e51fdb`  
+		Last Modified: Thu, 06 Oct 2022 01:12:47 GMT  
+		Size: 1.2 MB (1186882 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:26c8169ffb6181084c7e2abe69735b23047d6864ada898f4d018bb6f0e647a58`  
+		Last Modified: Tue, 25 Oct 2022 02:39:55 GMT  
+		Size: 32.5 MB (32528027 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3dc094674333f89b6b439a416962e816f8083fc80a456f08ee6232f0f7dec921`  
+		Last Modified: Tue, 25 Oct 2022 02:39:51 GMT  
+		Size: 1.2 KB (1223 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2c5b4859c4af77b37bbbb24d8adb0bd43990cc1d62232e95e68d11c3fbe3143f`  
+		Last Modified: Tue, 25 Oct 2022 02:39:51 GMT  
+		Size: 121.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
 ## `cassandra:4`
 
 ```console
-$ docker pull cassandra@sha256:d24fc4a0e49a60cc8f797a0f7c3e38bafba5e2d1ec9267797a22d619465b2a99
+$ docker pull cassandra@sha256:a9bf3c0fc74ed2797b0a3559461990870d9309d2206158f477cf7aab5bc67e6d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2183,14 +2407,14 @@ CMD ["cassandra" "-f"]
 ### `cassandra:4` - linux; ppc64le
 
 ```console
-$ docker pull cassandra@sha256:19a72c7d051f414757cc9edb1c4c89bdc70af0a33cca8c237fbdd78e78e64751
+$ docker pull cassandra@sha256:6b64028f9701597b73ceed3aefe844a6a80a507f7477ea71b94463ae534c63c0
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **156.0 MB (156028059 bytes)**  
+-	Total Size: **156.0 MB (156044576 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd7051d8569340e4b296cc4063b19b149ac029e00c1227892c02c429fe779d40`
+-	Image ID: `sha256:813e960cc5a91dfaaa8fb3837d0e418dcce01456400c7210d78422d4c16782ae`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -2229,21 +2453,21 @@ ENV CASSANDRA_CONF=/etc/cassandra
 ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Thu, 06 Oct 2022 01:09:02 GMT
 ENV GPG_KEYS=CEC86BB4A0BA9D0F90397CAEF8358FA2F2833C93 	C4965EE9E3015D192CCCF2B6F758CE318D77295D 	5AED1BF378E9A19DADE1BCB34BD736A82B5C1B00 	514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB 	9E66CEC6106D578D0B1EB9BFF1000962B7F6840C 	C4009872C59B49561310D966D0062876AF30F054 	B7842CDAF36E6A3214FAE35D5E85B9AE0B84C041 	3E9C876907A560ACA00964F363E9BAD215BBF5F0 	F8B7FD00E05C932991A2CD6150EE103D162C5A55
-# Thu, 06 Oct 2022 01:09:03 GMT
-ENV CASSANDRA_VERSION=4.0.6
-# Thu, 06 Oct 2022 01:09:03 GMT
-ENV CASSANDRA_SHA512=07c2a2f018c5921bfe0d7afba877a23d0ac5bbda05b9414abc60b4fae761115d0fb650eb226247b66d62c450d7eeadc95b6e270ebf0339d8263222fe5d49b07b
-# Thu, 06 Oct 2022 01:09:34 GMT
+# Tue, 25 Oct 2022 02:36:51 GMT
+ENV CASSANDRA_VERSION=4.0.7
+# Tue, 25 Oct 2022 02:36:52 GMT
+ENV CASSANDRA_SHA512=99e5fe5411fb2f82dc588091923a192211f9fda911c3b9da8371fe803155063d2f46bbe57c4c118dc1a2971b37f939dad57ec5ab164da91646fbea26798153b2
+# Tue, 25 Oct 2022 02:37:30 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			grep -- '^-Xss256k$' "$CASSANDRA_CONF/jvm-server.options"; 			sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONF/jvm-server.options"; 			grep -- '^-Xss512k$' "$CASSANDRA_CONF/jvm-server.options"; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod -R a+rwX "$CASSANDRA_CONF"; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v
-# Thu, 06 Oct 2022 01:09:35 GMT
+# Tue, 25 Oct 2022 02:37:30 GMT
 VOLUME [/var/lib/cassandra]
-# Thu, 06 Oct 2022 01:09:36 GMT
+# Tue, 25 Oct 2022 02:37:31 GMT
 COPY file:a8d4fc10252d8783a105c235b3eef2315dbe3b0b1be0f1e4650f19fa5a56ab29 in /usr/local/bin/ 
-# Thu, 06 Oct 2022 01:09:36 GMT
+# Tue, 25 Oct 2022 02:37:31 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 06 Oct 2022 01:09:36 GMT
+# Tue, 25 Oct 2022 02:37:31 GMT
 EXPOSE 7000 7001 7199 9042 9160
-# Thu, 06 Oct 2022 01:09:37 GMT
+# Tue, 25 Oct 2022 02:37:32 GMT
 CMD ["cassandra" "-f"]
 ```
 
@@ -2276,12 +2500,12 @@ CMD ["cassandra" "-f"]
 		Last Modified: Thu, 06 Oct 2022 01:12:23 GMT  
 		Size: 1.2 MB (1185640 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44f792b2ffab4c044e81abd04e1c5a57b4aad8d1a6747359807583d6ef6630aa`  
-		Last Modified: Thu, 06 Oct 2022 01:12:27 GMT  
-		Size: 50.1 MB (50104640 bytes)  
+	-	`sha256:2ad322c7cab9d81ee72184c85d48afffc97d2e7b0a82b30a1fe28b2a9ed6e8ad`  
+		Last Modified: Tue, 25 Oct 2022 02:39:32 GMT  
+		Size: 50.1 MB (50121157 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f19c044bcc0f390a7f40f992e46e8026459bbc0a27a32a383108697f134ba9e`  
-		Last Modified: Thu, 06 Oct 2022 01:12:22 GMT  
+	-	`sha256:2b46d8b81e430bece3a0fcaf929633c2e38486a71677de26bf14d16f269ea2d3`  
+		Last Modified: Tue, 25 Oct 2022 02:39:27 GMT  
 		Size: 1.2 KB (1221 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -2393,7 +2617,7 @@ CMD ["cassandra" "-f"]
 ## `cassandra:4.0`
 
 ```console
-$ docker pull cassandra@sha256:d24fc4a0e49a60cc8f797a0f7c3e38bafba5e2d1ec9267797a22d619465b2a99
+$ docker pull cassandra@sha256:a9bf3c0fc74ed2797b0a3559461990870d9309d2206158f477cf7aab5bc67e6d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2722,14 +2946,14 @@ CMD ["cassandra" "-f"]
 ### `cassandra:4.0` - linux; ppc64le
 
 ```console
-$ docker pull cassandra@sha256:19a72c7d051f414757cc9edb1c4c89bdc70af0a33cca8c237fbdd78e78e64751
+$ docker pull cassandra@sha256:6b64028f9701597b73ceed3aefe844a6a80a507f7477ea71b94463ae534c63c0
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **156.0 MB (156028059 bytes)**  
+-	Total Size: **156.0 MB (156044576 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd7051d8569340e4b296cc4063b19b149ac029e00c1227892c02c429fe779d40`
+-	Image ID: `sha256:813e960cc5a91dfaaa8fb3837d0e418dcce01456400c7210d78422d4c16782ae`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -2768,21 +2992,21 @@ ENV CASSANDRA_CONF=/etc/cassandra
 ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Thu, 06 Oct 2022 01:09:02 GMT
 ENV GPG_KEYS=CEC86BB4A0BA9D0F90397CAEF8358FA2F2833C93 	C4965EE9E3015D192CCCF2B6F758CE318D77295D 	5AED1BF378E9A19DADE1BCB34BD736A82B5C1B00 	514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB 	9E66CEC6106D578D0B1EB9BFF1000962B7F6840C 	C4009872C59B49561310D966D0062876AF30F054 	B7842CDAF36E6A3214FAE35D5E85B9AE0B84C041 	3E9C876907A560ACA00964F363E9BAD215BBF5F0 	F8B7FD00E05C932991A2CD6150EE103D162C5A55
-# Thu, 06 Oct 2022 01:09:03 GMT
-ENV CASSANDRA_VERSION=4.0.6
-# Thu, 06 Oct 2022 01:09:03 GMT
-ENV CASSANDRA_SHA512=07c2a2f018c5921bfe0d7afba877a23d0ac5bbda05b9414abc60b4fae761115d0fb650eb226247b66d62c450d7eeadc95b6e270ebf0339d8263222fe5d49b07b
-# Thu, 06 Oct 2022 01:09:34 GMT
+# Tue, 25 Oct 2022 02:36:51 GMT
+ENV CASSANDRA_VERSION=4.0.7
+# Tue, 25 Oct 2022 02:36:52 GMT
+ENV CASSANDRA_SHA512=99e5fe5411fb2f82dc588091923a192211f9fda911c3b9da8371fe803155063d2f46bbe57c4c118dc1a2971b37f939dad57ec5ab164da91646fbea26798153b2
+# Tue, 25 Oct 2022 02:37:30 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			grep -- '^-Xss256k$' "$CASSANDRA_CONF/jvm-server.options"; 			sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONF/jvm-server.options"; 			grep -- '^-Xss512k$' "$CASSANDRA_CONF/jvm-server.options"; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod -R a+rwX "$CASSANDRA_CONF"; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v
-# Thu, 06 Oct 2022 01:09:35 GMT
+# Tue, 25 Oct 2022 02:37:30 GMT
 VOLUME [/var/lib/cassandra]
-# Thu, 06 Oct 2022 01:09:36 GMT
+# Tue, 25 Oct 2022 02:37:31 GMT
 COPY file:a8d4fc10252d8783a105c235b3eef2315dbe3b0b1be0f1e4650f19fa5a56ab29 in /usr/local/bin/ 
-# Thu, 06 Oct 2022 01:09:36 GMT
+# Tue, 25 Oct 2022 02:37:31 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 06 Oct 2022 01:09:36 GMT
+# Tue, 25 Oct 2022 02:37:31 GMT
 EXPOSE 7000 7001 7199 9042 9160
-# Thu, 06 Oct 2022 01:09:37 GMT
+# Tue, 25 Oct 2022 02:37:32 GMT
 CMD ["cassandra" "-f"]
 ```
 
@@ -2815,12 +3039,12 @@ CMD ["cassandra" "-f"]
 		Last Modified: Thu, 06 Oct 2022 01:12:23 GMT  
 		Size: 1.2 MB (1185640 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44f792b2ffab4c044e81abd04e1c5a57b4aad8d1a6747359807583d6ef6630aa`  
-		Last Modified: Thu, 06 Oct 2022 01:12:27 GMT  
-		Size: 50.1 MB (50104640 bytes)  
+	-	`sha256:2ad322c7cab9d81ee72184c85d48afffc97d2e7b0a82b30a1fe28b2a9ed6e8ad`  
+		Last Modified: Tue, 25 Oct 2022 02:39:32 GMT  
+		Size: 50.1 MB (50121157 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f19c044bcc0f390a7f40f992e46e8026459bbc0a27a32a383108697f134ba9e`  
-		Last Modified: Thu, 06 Oct 2022 01:12:22 GMT  
+	-	`sha256:2b46d8b81e430bece3a0fcaf929633c2e38486a71677de26bf14d16f269ea2d3`  
+		Last Modified: Tue, 25 Oct 2022 02:39:27 GMT  
 		Size: 1.2 KB (1221 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -2932,13 +3156,14 @@ CMD ["cassandra" "-f"]
 ## `cassandra:4.0.7`
 
 ```console
-$ docker pull cassandra@sha256:02e07befc6d41480752a02a188b14b0a3ce2d77909784188e1a3dff81f355e3c
+$ docker pull cassandra@sha256:bb813c21ac30e3cf1e92304c986949347f8b1a8defa772d6fd87426b97b5de8b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 3
+-	Platforms: 4
 	-	linux; amd64
 	-	linux; arm64 variant v8
+	-	linux; ppc64le
 	-	linux; s390x
 
 ### `cassandra:4.0.7` - linux; amd64
@@ -3148,6 +3373,111 @@ CMD ["cassandra" "-f"]
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a9cd47ca3fd201fd28f03f45ea6cd8c53477b471ccf23a69c96b7a6c303528ff`  
 		Last Modified: Tue, 25 Oct 2022 00:25:36 GMT  
+		Size: 1.2 KB (1221 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `cassandra:4.0.7` - linux; ppc64le
+
+```console
+$ docker pull cassandra@sha256:6b64028f9701597b73ceed3aefe844a6a80a507f7477ea71b94463ae534c63c0
+```
+
+-	Docker Version: 20.10.12
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **156.0 MB (156044576 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:813e960cc5a91dfaaa8fb3837d0e418dcce01456400c7210d78422d4c16782ae`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["cassandra","-f"]`
+
+```dockerfile
+# Wed, 05 Oct 2022 10:52:08 GMT
+ADD file:75224b75d955b3021df8214497d6835e1aff42b5ce83f96b779b63c4a8e15faf in / 
+# Wed, 05 Oct 2022 10:52:10 GMT
+CMD ["bash"]
+# Wed, 05 Oct 2022 19:57:41 GMT
+ENV JAVA_HOME=/opt/java/openjdk
+# Wed, 05 Oct 2022 19:57:41 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 05 Oct 2022 19:57:42 GMT
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+# Wed, 05 Oct 2022 19:58:21 GMT
+RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl wget ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Wed, 05 Oct 2022 20:00:22 GMT
+ENV JAVA_VERSION=jdk-11.0.16.1+1
+# Wed, 05 Oct 2022 20:01:48 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='b6607f28fa2906d612d517f0babe4f0f895aa1c3f901edcddb493e33c1e27364';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.16.1%2B1/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.16.1_1.tar.gz';          ;;        armhf|arm)          ESUM='2ee7fe636a6a57e4718dfe597e8097b93ef8d976e4b05384433777c9f0526f5a';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.16.1%2B1/OpenJDK11U-jre_arm_linux_hotspot_11.0.16.1_1.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='f76b64b201b64ff37f77f73ead546ebcf2af9862b7cd1a1f4e0e5628e3f6a7fc';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.16.1%2B1/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.16.1_1.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='bf01489459135ab0ce1ad346a56f0dfeb2d6fe4e59854ef76a6bb989ac403f91';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.16.1%2B1/OpenJDK11U-jre_s390x_linux_hotspot_11.0.16.1_1.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='1ffe1a682e8179e35238bf3f93aba0cb185850e202c676f41d38cb0561883eda';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.16.1%2B1/OpenJDK11U-jre_x64_linux_hotspot_11.0.16.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
+# Wed, 05 Oct 2022 20:01:51 GMT
+RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo java --version && java --version     && echo Complete.
+# Thu, 06 Oct 2022 01:08:14 GMT
+RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra
+# Thu, 06 Oct 2022 01:08:40 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libjemalloc2 		procps 		python3 		iproute2 		numactl 	; 	rm -rf /var/lib/apt/lists/*; 	libjemalloc="$(readlink -e /usr/lib/*/libjemalloc.so.2)"; 	ln -sT "$libjemalloc" /usr/local/lib/libjemalloc.so; 	ldconfig
+# Thu, 06 Oct 2022 01:08:41 GMT
+ENV GOSU_VERSION=1.14
+# Thu, 06 Oct 2022 01:09:01 GMT
+RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
+# Thu, 06 Oct 2022 01:09:02 GMT
+ENV CASSANDRA_HOME=/opt/cassandra
+# Thu, 06 Oct 2022 01:09:02 GMT
+ENV CASSANDRA_CONF=/etc/cassandra
+# Thu, 06 Oct 2022 01:09:02 GMT
+ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Thu, 06 Oct 2022 01:09:02 GMT
+ENV GPG_KEYS=CEC86BB4A0BA9D0F90397CAEF8358FA2F2833C93 	C4965EE9E3015D192CCCF2B6F758CE318D77295D 	5AED1BF378E9A19DADE1BCB34BD736A82B5C1B00 	514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB 	9E66CEC6106D578D0B1EB9BFF1000962B7F6840C 	C4009872C59B49561310D966D0062876AF30F054 	B7842CDAF36E6A3214FAE35D5E85B9AE0B84C041 	3E9C876907A560ACA00964F363E9BAD215BBF5F0 	F8B7FD00E05C932991A2CD6150EE103D162C5A55
+# Tue, 25 Oct 2022 02:36:51 GMT
+ENV CASSANDRA_VERSION=4.0.7
+# Tue, 25 Oct 2022 02:36:52 GMT
+ENV CASSANDRA_SHA512=99e5fe5411fb2f82dc588091923a192211f9fda911c3b9da8371fe803155063d2f46bbe57c4c118dc1a2971b37f939dad57ec5ab164da91646fbea26798153b2
+# Tue, 25 Oct 2022 02:37:30 GMT
+RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			grep -- '^-Xss256k$' "$CASSANDRA_CONF/jvm-server.options"; 			sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONF/jvm-server.options"; 			grep -- '^-Xss512k$' "$CASSANDRA_CONF/jvm-server.options"; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod -R a+rwX "$CASSANDRA_CONF"; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v
+# Tue, 25 Oct 2022 02:37:30 GMT
+VOLUME [/var/lib/cassandra]
+# Tue, 25 Oct 2022 02:37:31 GMT
+COPY file:a8d4fc10252d8783a105c235b3eef2315dbe3b0b1be0f1e4650f19fa5a56ab29 in /usr/local/bin/ 
+# Tue, 25 Oct 2022 02:37:31 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Tue, 25 Oct 2022 02:37:31 GMT
+EXPOSE 7000 7001 7199 9042 9160
+# Tue, 25 Oct 2022 02:37:32 GMT
+CMD ["cassandra" "-f"]
+```
+
+-	Layers:
+	-	`sha256:ecaa0fe591301d50850e37b61a6fac5429c04a3c39272da2f7b748eaed7f5c52`  
+		Last Modified: Wed, 05 Oct 2022 10:54:26 GMT  
+		Size: 33.3 MB (33296076 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1231f16afe1ccf89e36d1e55903168c95a55078bc7ebeddfd61d4e2dfb4772b9`  
+		Last Modified: Wed, 05 Oct 2022 20:10:10 GMT  
+		Size: 17.6 MB (17591263 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4a04989e71002f1f41bc973200ffef088de60c43019b26ac6099b585e8840f36`  
+		Last Modified: Wed, 05 Oct 2022 20:13:19 GMT  
+		Size: 41.9 MB (41885865 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6da716c3b0d0b26c49957d153d12a3a5722d2ca0c0ddec9001ee40a3448c0507`  
+		Last Modified: Wed, 05 Oct 2022 20:13:09 GMT  
+		Size: 160.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ccf2de49a2c84a4df9563d1d5cc917c4a788e0c665adb44bbc550793ca845f86`  
+		Last Modified: Thu, 06 Oct 2022 01:12:22 GMT  
+		Size: 1.8 KB (1759 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:cdbafc885f26038c4a9aaf116c8269ae688ecdae28854737286d26f817146b26`  
+		Last Modified: Thu, 06 Oct 2022 01:12:26 GMT  
+		Size: 12.0 MB (11961435 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7973dfaa5532ff7b6264e151994a2eef10790cb59f11b2099720bea4a01d761a`  
+		Last Modified: Thu, 06 Oct 2022 01:12:23 GMT  
+		Size: 1.2 MB (1185640 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2ad322c7cab9d81ee72184c85d48afffc97d2e7b0a82b30a1fe28b2a9ed6e8ad`  
+		Last Modified: Tue, 25 Oct 2022 02:39:32 GMT  
+		Size: 50.1 MB (50121157 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2b46d8b81e430bece3a0fcaf929633c2e38486a71677de26bf14d16f269ea2d3`  
+		Last Modified: Tue, 25 Oct 2022 02:39:27 GMT  
 		Size: 1.2 KB (1221 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -4337,7 +4667,7 @@ CMD ["cassandra" "-f"]
 ## `cassandra:latest`
 
 ```console
-$ docker pull cassandra@sha256:d24fc4a0e49a60cc8f797a0f7c3e38bafba5e2d1ec9267797a22d619465b2a99
+$ docker pull cassandra@sha256:a9bf3c0fc74ed2797b0a3559461990870d9309d2206158f477cf7aab5bc67e6d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4666,14 +4996,14 @@ CMD ["cassandra" "-f"]
 ### `cassandra:latest` - linux; ppc64le
 
 ```console
-$ docker pull cassandra@sha256:19a72c7d051f414757cc9edb1c4c89bdc70af0a33cca8c237fbdd78e78e64751
+$ docker pull cassandra@sha256:6b64028f9701597b73ceed3aefe844a6a80a507f7477ea71b94463ae534c63c0
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **156.0 MB (156028059 bytes)**  
+-	Total Size: **156.0 MB (156044576 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd7051d8569340e4b296cc4063b19b149ac029e00c1227892c02c429fe779d40`
+-	Image ID: `sha256:813e960cc5a91dfaaa8fb3837d0e418dcce01456400c7210d78422d4c16782ae`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -4712,21 +5042,21 @@ ENV CASSANDRA_CONF=/etc/cassandra
 ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Thu, 06 Oct 2022 01:09:02 GMT
 ENV GPG_KEYS=CEC86BB4A0BA9D0F90397CAEF8358FA2F2833C93 	C4965EE9E3015D192CCCF2B6F758CE318D77295D 	5AED1BF378E9A19DADE1BCB34BD736A82B5C1B00 	514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB 	9E66CEC6106D578D0B1EB9BFF1000962B7F6840C 	C4009872C59B49561310D966D0062876AF30F054 	B7842CDAF36E6A3214FAE35D5E85B9AE0B84C041 	3E9C876907A560ACA00964F363E9BAD215BBF5F0 	F8B7FD00E05C932991A2CD6150EE103D162C5A55
-# Thu, 06 Oct 2022 01:09:03 GMT
-ENV CASSANDRA_VERSION=4.0.6
-# Thu, 06 Oct 2022 01:09:03 GMT
-ENV CASSANDRA_SHA512=07c2a2f018c5921bfe0d7afba877a23d0ac5bbda05b9414abc60b4fae761115d0fb650eb226247b66d62c450d7eeadc95b6e270ebf0339d8263222fe5d49b07b
-# Thu, 06 Oct 2022 01:09:34 GMT
+# Tue, 25 Oct 2022 02:36:51 GMT
+ENV CASSANDRA_VERSION=4.0.7
+# Tue, 25 Oct 2022 02:36:52 GMT
+ENV CASSANDRA_SHA512=99e5fe5411fb2f82dc588091923a192211f9fda911c3b9da8371fe803155063d2f46bbe57c4c118dc1a2971b37f939dad57ec5ab164da91646fbea26798153b2
+# Tue, 25 Oct 2022 02:37:30 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			'https://www.apache.org/dyn/closer.cgi?action=download&filename=' 			https://www-us.apache.org/dist/ 			https://www.apache.org/dist/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			grep -- '^-Xss256k$' "$CASSANDRA_CONF/jvm-server.options"; 			sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONF/jvm-server.options"; 			grep -- '^-Xss512k$' "$CASSANDRA_CONF/jvm-server.options"; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod -R a+rwX "$CASSANDRA_CONF"; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v
-# Thu, 06 Oct 2022 01:09:35 GMT
+# Tue, 25 Oct 2022 02:37:30 GMT
 VOLUME [/var/lib/cassandra]
-# Thu, 06 Oct 2022 01:09:36 GMT
+# Tue, 25 Oct 2022 02:37:31 GMT
 COPY file:a8d4fc10252d8783a105c235b3eef2315dbe3b0b1be0f1e4650f19fa5a56ab29 in /usr/local/bin/ 
-# Thu, 06 Oct 2022 01:09:36 GMT
+# Tue, 25 Oct 2022 02:37:31 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 06 Oct 2022 01:09:36 GMT
+# Tue, 25 Oct 2022 02:37:31 GMT
 EXPOSE 7000 7001 7199 9042 9160
-# Thu, 06 Oct 2022 01:09:37 GMT
+# Tue, 25 Oct 2022 02:37:32 GMT
 CMD ["cassandra" "-f"]
 ```
 
@@ -4759,12 +5089,12 @@ CMD ["cassandra" "-f"]
 		Last Modified: Thu, 06 Oct 2022 01:12:23 GMT  
 		Size: 1.2 MB (1185640 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44f792b2ffab4c044e81abd04e1c5a57b4aad8d1a6747359807583d6ef6630aa`  
-		Last Modified: Thu, 06 Oct 2022 01:12:27 GMT  
-		Size: 50.1 MB (50104640 bytes)  
+	-	`sha256:2ad322c7cab9d81ee72184c85d48afffc97d2e7b0a82b30a1fe28b2a9ed6e8ad`  
+		Last Modified: Tue, 25 Oct 2022 02:39:32 GMT  
+		Size: 50.1 MB (50121157 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f19c044bcc0f390a7f40f992e46e8026459bbc0a27a32a383108697f134ba9e`  
-		Last Modified: Thu, 06 Oct 2022 01:12:22 GMT  
+	-	`sha256:2b46d8b81e430bece3a0fcaf929633c2e38486a71677de26bf14d16f269ea2d3`  
+		Last Modified: Tue, 25 Oct 2022 02:39:27 GMT  
 		Size: 1.2 KB (1221 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
