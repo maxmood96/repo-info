@@ -1,7 +1,7 @@
 ## `neurodebian:bookworm-non-free`
 
 ```console
-$ docker pull neurodebian@sha256:3ea988997505442ea4c7f1572a70cf413248a845a230784f4f876c23cca4cc77
+$ docker pull neurodebian@sha256:98773f718a48235f89d964bde01215bc08da419ab6ae1edc05193b982d06ed60
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -69,56 +69,56 @@ RUN [ -e /etc/apt/sources.list.d/debian.sources ] && srcs=/etc/apt/sources.list.
 ### `neurodebian:bookworm-non-free` - linux; arm64 variant v8
 
 ```console
-$ docker pull neurodebian@sha256:9fb15b3ee57c8ecf0c6fad7fbc5ce41d2124d2363d6d2532d4c74192ed6f5e4d
+$ docker pull neurodebian@sha256:d05f2c34da188a1ffae437161c4ac1491b086670661898b428209a87b527c2c7
 ```
 
--	Docker Version: 20.10.12
+-	Docker Version: 20.10.17
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **64.6 MB (64610704 bytes)**  
+-	Total Size: **63.8 MB (63765041 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a146677dea1903a8763fe0202bdc02ac58275e1db107f7d1a45d48d360d56b1a`
+-	Image ID: `sha256:feb4aff6b45282316f7383e7ec9ea34b7293108fa747e14c2c21e6d6dd8c055a`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 04 Oct 2022 23:44:00 GMT
-ADD file:269c8bec4871d84b9133706a2f391209619d53c0bfa56121c740757cf5798fcb in / 
-# Tue, 04 Oct 2022 23:44:02 GMT
+# Tue, 25 Oct 2022 05:45:44 GMT
+ADD file:83253dd857c3f1ea456b2b77494a2d865a467a36c188ecaeaf493faa5afb4c1c in / 
+# Tue, 25 Oct 2022 05:45:44 GMT
 CMD ["bash"]
-# Wed, 05 Oct 2022 03:59:17 GMT
+# Wed, 26 Oct 2022 00:34:03 GMT
 RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-install-recommends gnupg 	; } 	&& { 		gpg --version | grep -q '^gpg (GnuPG) 1\.' 		|| apt-get install -y --no-install-recommends dirmngr 	; } 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 05 Oct 2022 03:59:18 GMT
+# Wed, 26 Oct 2022 00:34:04 GMT
 RUN set -x 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --batch --keyserver keyserver.ubuntu.com --recv-keys DD95CC430502E37EF840ACEEA5D32F012649A5A9 	&& gpg --batch --export DD95CC430502E37EF840ACEEA5D32F012649A5A9 > /etc/apt/trusted.gpg.d/neurodebian.gpg 	&& rm -rf "$GNUPGHOME" 	&& apt-key list | grep neurodebian
-# Wed, 05 Oct 2022 03:59:19 GMT
+# Wed, 26 Oct 2022 00:34:04 GMT
 RUN { 	echo 'deb http://neuro.debian.net/debian bookworm main'; 	echo 'deb http://neuro.debian.net/debian data main'; 	echo '#deb-src http://neuro.debian.net/debian-devel bookworm main'; } > /etc/apt/sources.list.d/neurodebian.sources.list
-# Wed, 05 Oct 2022 03:59:23 GMT
+# Wed, 26 Oct 2022 00:34:07 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends neurodebian-freeze eatmydata 	&& ln -s /usr/bin/eatmydata /usr/local/bin/apt-get 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 05 Oct 2022 03:59:30 GMT
+# Wed, 26 Oct 2022 00:34:10 GMT
 RUN [ -e /etc/apt/sources.list.d/debian.sources ] && srcs=/etc/apt/sources.list.d/debian.sources || srcs=/etc/apt/sources.list; sed -i -e 's,main *$,main contrib non-free,g' /etc/apt/sources.list.d/neurodebian.sources.list $srcs
 ```
 
 -	Layers:
-	-	`sha256:2debf9e7f23054c81a936da9b01c5db9f72a55d4810f7bf0e5641bd1748d90b7`  
-		Last Modified: Tue, 04 Oct 2022 23:49:11 GMT  
-		Size: 53.0 MB (52980389 bytes)  
+	-	`sha256:bec7a4c1eec818efa32bedb19eba072edfb65db7384f73efc2a6ee7b13a3ca49`  
+		Last Modified: Tue, 25 Oct 2022 05:48:08 GMT  
+		Size: 51.3 MB (51263048 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f0ef51f5528c6564ff374a45d9cb4c4c6eaf535c3565cbb4ba763bc55b22343`  
-		Last Modified: Wed, 05 Oct 2022 04:03:24 GMT  
-		Size: 11.5 MB (11531064 bytes)  
+	-	`sha256:1723568161154c8a1c5890e3ce59627ef36108ab8f1b4d99c9b2a2593c7ce12a`  
+		Last Modified: Wed, 26 Oct 2022 00:37:23 GMT  
+		Size: 12.2 MB (12218453 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:469c79e490be5fc87427c713b2cff0a58e2d249f09613ea11f6d6a02ed9e62f7`  
-		Last Modified: Wed, 05 Oct 2022 04:03:22 GMT  
-		Size: 1.7 KB (1740 bytes)  
+	-	`sha256:ceb9e6308b2c7aa6f129f2c580eea76efca3428e3cca3a11accaff5c5211f3e5`  
+		Last Modified: Wed, 26 Oct 2022 00:37:22 GMT  
+		Size: 1.8 KB (1764 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a52a22ac0a033238596c38df2f9af0747aa62ed9470c2a82f61ed8978d6ccc5f`  
-		Last Modified: Wed, 05 Oct 2022 04:03:23 GMT  
-		Size: 247.0 B  
+	-	`sha256:0df3151237adde53d2e6f8acf2b356fa4d7efd659cab945b1984170665c6b2ed`  
+		Last Modified: Wed, 26 Oct 2022 00:37:22 GMT  
+		Size: 246.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e8bc59e065b02635051c28a8a2b68751fbdc3486f83ce39b848da35674d67b13`  
-		Last Modified: Wed, 05 Oct 2022 04:03:23 GMT  
-		Size: 96.9 KB (96904 bytes)  
+	-	`sha256:3f848c50fe0958198467bb825dd4a463c873a4490fb65ae5270d3e4a0e4c2f6c`  
+		Last Modified: Wed, 26 Oct 2022 00:37:22 GMT  
+		Size: 281.2 KB (281170 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86addfd21f29a2b3cc2f2d4caa2e71233a7f3263674e19b65321fcf5e03cc560`  
-		Last Modified: Wed, 05 Oct 2022 04:03:36 GMT  
+	-	`sha256:00e727a7c6de4adca9fb02746e64154c31f0e1eaaf31740a7099ec78ecbd4a23`  
+		Last Modified: Wed, 26 Oct 2022 00:37:32 GMT  
 		Size: 360.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
