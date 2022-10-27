@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:af09965068b75c35feb648bc54aebb42eba92a1e6a90fafb57dec3277eeb8e4d`
-- Created: `2022-10-18T21:19:59.40583663Z`
-- Virtual Size: ~ 143.25 Mb  
+- Image ID: `sha256:5f7f611c785f958e58a81fcc39b98f89f3c4edb2b5e1898d392c88d294c1241e`
+- Created: `2022-10-25T01:30:37.245226839Z`
+- Virtual Size: ~ 143.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `DOCKER_VERSION=22.06.0-beta.0`
   - `DOCKER_BUILDX_VERSION=0.9.1`
-  - `DOCKER_COMPOSE_VERSION=2.12.0`
+  - `DOCKER_COMPOSE_VERSION=2.12.2`
   - `DOCKER_TLS_CERTDIR=/certs`
 
 ## `apk` (`.apk`-based packages)
@@ -174,16 +174,16 @@ MIT
 ### `apk` package: `git`
 
 ```console
-git-2.36.2-r0 description:
+git-2.36.3-r0 description:
 Distributed version control system
 
-git-2.36.2-r0 webpage:
+git-2.36.3-r0 webpage:
 https://www.git-scm.com/
 
-git-2.36.2-r0 installed size:
+git-2.36.3-r0 installed size:
 10 MiB
 
-git-2.36.2-r0 license:
+git-2.36.3-r0 license:
 GPL-2.0-or-later
 
 ```
