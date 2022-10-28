@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a565f412c169c509918d7910d2b507e182a8b97109ab9cc2e42146fe2152b95a`
-- Created: `2022-10-05T10:16:49.743963785Z`
-- Virtual Size: ~ 893.33 Mb  
+- Image ID: `sha256:6517633704986256d83bc929f469d3f13adec737859a7b4c1e04b3251f94a064`
+- Created: `2022-10-25T07:18:59.314271265Z`
+- Virtual Size: ~ 893.35 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
@@ -957,20 +957,13 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`, `/usr/share/doc/li
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.2.6-2+deb10u5
-'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.2.6-2%2bdeb10u5.dsc' expat_2.2.6-2+deb10u5.dsc 2140 SHA256:2eee1ea4da8668417e03851c3934773e7b39bacd3f2c4da35644a8b7f472b6da
-'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.2.6.orig.tar.gz' expat_2.2.6.orig.tar.gz 8275473 SHA256:574499cba22a599393e28d99ecfa1e7fc85be7d6651d543045244d5b561cb7ff
-'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.2.6-2%2bdeb10u5.debian.tar.xz' expat_2.2.6-2+deb10u5.debian.tar.xz 28464 SHA256:102e9c7195796b831942b8b380b6396906a49b54426c5082baea4602dd07ef4c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/expat/2.2.6-2+deb10u5/
 
-- https://sources.debian.net/src/expat/2.2.6-2+deb10u5/ (for browsing the source)
-- https://sources.debian.net/src/expat/2.2.6-2+deb10u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/expat/2.2.6-2+deb10u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `findutils=4.6.0+git+20190209-2`
 
@@ -1101,14 +1094,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/glib2.0/2.58.3-2+deb10u4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/glib2.0/2.58.3-2+deb10u4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `glibc=2.28-10+deb10u1`
+### `dpkg` source package: `glibc=2.28-10+deb10u2`
 
 Binary Packages:
 
-- `libc-bin=2.28-10+deb10u1`
-- `libc-dev-bin=2.28-10+deb10u1`
-- `libc6:amd64=2.28-10+deb10u1`
-- `libc6-dev:amd64=2.28-10+deb10u1`
+- `libc-bin=2.28-10+deb10u2`
+- `libc-dev-bin=2.28-10+deb10u2`
+- `libc6:amd64=2.28-10+deb10u2`
+- `libc6-dev:amd64=2.28-10+deb10u2`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`)
 
@@ -1118,17 +1111,17 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glibc=2.28-10+deb10u1
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.28-10%2bdeb10u1.dsc' glibc_2.28-10+deb10u1.dsc 8921 SHA256:9bb410368ec00f6c6d2b281e97244337fb3513c885c250c0bd5caab694f4f62f
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.28.orig.tar.xz' glibc_2.28.orig.tar.xz 17061292 SHA256:53d3c1c7bff0fb25d4c7874bf13435dc44a71fd7dd5ffc9bfdcb513cdfc36854
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.28-10%2bdeb10u1.debian.tar.xz' glibc_2.28-10+deb10u1.debian.tar.xz 899676 SHA256:2f8b22a99965eafcfbb65f14bfb2dbe2400b06cb8e646e909eb22317c222dfe7
+$ apt-get source -qq --print-uris glibc=2.28-10+deb10u2
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.28-10%2bdeb10u2.dsc' glibc_2.28-10+deb10u2.dsc 8921 SHA256:1db9443dcf591e7c3980686ebf782400658761c6dcf832c704efbd592e203418
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.28.orig.tar.xz' glibc_2.28.orig.tar.xz 17061292 SHA256:53d3c1c7bff0fb25d4c7874bf13435dc44a71fd7dd5ffc9bfdcb513cdfc36854
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.28-10%2bdeb10u2.debian.tar.xz' glibc_2.28-10+deb10u2.debian.tar.xz 922792 SHA256:e9e8a1512517faa1cab5a5fe0231dcae3d410ad3f981a8db5e1494ed68bee15a
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/glibc/2.28-10+deb10u1/ (for browsing the source)
-- https://sources.debian.net/src/glibc/2.28-10+deb10u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glibc/2.28-10+deb10u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/glibc/2.28-10+deb10u2/ (for browsing the source)
+- https://sources.debian.net/src/glibc/2.28-10+deb10u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glibc/2.28-10+deb10u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.1.2+dfsg-4+deb10u1`
 
@@ -1893,11 +1886,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libjsoncpp/1.7.4-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libjsoncpp/1.7.4-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libksba=1.3.5-2`
+### `dpkg` source package: `libksba=1.3.5-2+deb10u1`
 
 Binary Packages:
 
-- `libksba8:amd64=1.3.5-2`
+- `libksba8:amd64=1.3.5-2+deb10u1`
 
 Licenses: (parsed from: `/usr/share/doc/libksba8/copyright`)
 
@@ -1906,18 +1899,18 @@ Licenses: (parsed from: `/usr/share/doc/libksba8/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libksba=1.3.5-2
-'http://deb.debian.org/debian/pool/main/libk/libksba/libksba_1.3.5-2.dsc' libksba_1.3.5-2.dsc 2526 SHA256:4fd08fd129f97ab1df86c220b88b7b2c6e4e04aa90bfd3ae364d18022256bef8
-'http://deb.debian.org/debian/pool/main/libk/libksba/libksba_1.3.5.orig.tar.bz2' libksba_1.3.5.orig.tar.bz2 620649 SHA256:41444fd7a6ff73a79ad9728f985e71c9ba8cd3e5e53358e70d5f066d35c1a340
-'http://deb.debian.org/debian/pool/main/libk/libksba/libksba_1.3.5.orig.tar.bz2.asc' libksba_1.3.5.orig.tar.bz2.asc 287 SHA256:a954b03144ee882c838853da24fd7b6868b78df72a18c71079217d968698a76f
-'http://deb.debian.org/debian/pool/main/libk/libksba/libksba_1.3.5-2.debian.tar.xz' libksba_1.3.5-2.debian.tar.xz 13852 SHA256:98c985bff973be1aecc702fa15887ff1e5b8de481d1dc3e99423a587754eaabd
+$ apt-get source -qq --print-uris libksba=1.3.5-2+deb10u1
+'http://deb.debian.org/debian-security/pool/updates/main/libk/libksba/libksba_1.3.5-2%2bdeb10u1.dsc' libksba_1.3.5-2+deb10u1.dsc 2741 SHA256:c2bb7c3fc5078bf257e66db890a5ff1ed0c31bee09072ad3f75b0739e336868e
+'http://deb.debian.org/debian-security/pool/updates/main/libk/libksba/libksba_1.3.5.orig.tar.bz2' libksba_1.3.5.orig.tar.bz2 620649 SHA256:41444fd7a6ff73a79ad9728f985e71c9ba8cd3e5e53358e70d5f066d35c1a340
+'http://deb.debian.org/debian-security/pool/updates/main/libk/libksba/libksba_1.3.5.orig.tar.bz2.asc' libksba_1.3.5.orig.tar.bz2.asc 287 SHA256:a954b03144ee882c838853da24fd7b6868b78df72a18c71079217d968698a76f
+'http://deb.debian.org/debian-security/pool/updates/main/libk/libksba/libksba_1.3.5-2%2bdeb10u1.debian.tar.xz' libksba_1.3.5-2+deb10u1.debian.tar.xz 14344 SHA256:e1b466bf16e79d24c2addde1b96a54dd3d67be7480fbe7eeb8b3223adaf1b387
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libksba/1.3.5-2/ (for browsing the source)
-- https://sources.debian.net/src/libksba/1.3.5-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libksba/1.3.5-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libksba/1.3.5-2+deb10u1/ (for browsing the source)
+- https://sources.debian.net/src/libksba/1.3.5-2+deb10u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libksba/1.3.5-2+deb10u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libmnl=1.0.4-2`
 
@@ -5198,20 +5191,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2021a-0+deb10u7
-'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2021a-0%2bdeb10u7.dsc' tzdata_2021a-0+deb10u7.dsc 2023 SHA256:c7464bc7872aa0b43653a38c1f131d31531bbb18d7ed3e34e3a47b2b62dc0801
-'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2021a.orig.tar.gz' tzdata_2021a.orig.tar.gz 411892 SHA256:39e7d2ba08c68cbaefc8de3227aab0dec2521be8042cf56855f7dc3a9fb14e08
-'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2021a-0%2bdeb10u7.debian.tar.xz' tzdata_2021a-0+deb10u7.debian.tar.xz 114484 SHA256:808028fadf6f8a2e3349c29c761ea3063571e1f286ac4e27460b0fbe87bd27a4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2021a-0+deb10u7/
 
-- https://sources.debian.net/src/tzdata/2021a-0+deb10u7/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2021a-0+deb10u7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2021a-0+deb10u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `unbound=1.9.0-2+deb10u2`
 
