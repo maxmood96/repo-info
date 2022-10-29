@@ -1,10 +1,10 @@
-# `joomla:4.2.2-php8.0-fpm-alpine`
+# `joomla:4.2.3-php8.0-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:94359964b833a722608b12668873562572717848cdd3ee3cc1242f05fb4741e6`
-- Created: `2022-10-07T07:46:33.84656888Z`
-- Virtual Size: ~ 319.81 Mb  
+- Image ID: `sha256:dca1a92d68b7feb2b977c384a132eda4dac107f7f74e36e61621e0605e5d0fa5`
+- Created: `2022-10-28T21:55:20.420602535Z`
+- Virtual Size: ~ 320.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -16,14 +16,14 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
-  - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F`
-  - `PHP_VERSION=8.0.24`
-  - `PHP_URL=https://www.php.net/distributions/php-8.0.24.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.0.24.tar.xz.asc`
-  - `PHP_SHA256=8e6a63ac9cdabe4c345b32a54b18f348d9e50a1decda217faf2d61278d22f08b`
+  - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F 2C16C765DBE54A088130F1BC4B9B5F600B55F3B4`
+  - `PHP_VERSION=8.0.25`
+  - `PHP_URL=https://www.php.net/distributions/php-8.0.25.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.0.25.tar.xz.asc`
+  - `PHP_SHA256=a291b71d0498707fc5514eb5b9513e88f0f1d4890bcdefd67282ded8a2bfb941`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
-  - `JOOMLA_VERSION=4.2.2`
-  - `JOOMLA_SHA512=388e91bacee7ff1e07d7fc02df9fb8b5728f960fb4eb8f75679891b029d27ecb7f692b420259bae107e212ca88cecc4804ae0f61a1e771c7b6dd0208cdb04d7b`
+  - `JOOMLA_VERSION=4.2.3`
+  - `JOOMLA_SHA512=8d24be3f0f1dd616d4ddc84ace89f7944b23bb32037a198b5c04c1f9e39c59a4496c760b5dd71bafe5b081799be630f2a905b11093760a9eb183e8f62db6d0bb`
 - Labels:
   - `maintainer=Llewellyn van der Merwe <llewellyn.van-der-merwe@community.joomla.org> (@Llewellynvdm), Harald Leithner <harald.leithner@community.joomla.org> (@HLeithner)`
 
@@ -321,16 +321,16 @@ AFL-2.1 OR GPL-2.0-or-later
 ### `apk` package: `expat`
 
 ```console
-expat-2.4.9-r0 description:
+expat-2.5.0-r0 description:
 XML Parser library written in C
 
-expat-2.4.9-r0 webpage:
+expat-2.5.0-r0 webpage:
 https://libexpat.github.io/
 
-expat-2.4.9-r0 installed size:
+expat-2.5.0-r0 installed size:
 192 KiB
 
-expat-2.4.9-r0 license:
+expat-2.5.0-r0 license:
 MIT
 
 ```
@@ -576,16 +576,16 @@ MIT ICU Unicode-TOU
 ### `apk` package: `imagemagick`
 
 ```console
-imagemagick-7.1.0.35-r0 description:
+imagemagick-7.1.0.50-r0 description:
 Collection of tools and libraries for many image formats
 
-imagemagick-7.1.0.35-r0 webpage:
+imagemagick-7.1.0.50-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-7.1.0.35-r0 installed size:
-4664 KiB
+imagemagick-7.1.0.50-r0 installed size:
+4700 KiB
 
-imagemagick-7.1.0.35-r0 license:
+imagemagick-7.1.0.50-r0 license:
 ImageMagick
 
 ```
@@ -593,16 +593,16 @@ ImageMagick
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.0.35-r0 description:
+imagemagick-libs-7.1.0.50-r0 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.0.35-r0 webpage:
+imagemagick-libs-7.1.0.50-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.0.35-r0 installed size:
-3280 KiB
+imagemagick-libs-7.1.0.50-r0 installed size:
+3296 KiB
 
-imagemagick-libs-7.1.0.35-r0 license:
+imagemagick-libs-7.1.0.50-r0 license:
 ImageMagick
 
 ```
@@ -729,16 +729,16 @@ OpenSSL
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.83.1-r3 description:
+libcurl-7.83.1-r4 description:
 The multiprotocol file transfer library
 
-libcurl-7.83.1-r3 webpage:
+libcurl-7.83.1-r4 webpage:
 https://curl.se/
 
-libcurl-7.83.1-r3 installed size:
-516 KiB
+libcurl-7.83.1-r4 installed size:
+512 KiB
 
-libcurl-7.83.1-r3 license:
+libcurl-7.83.1-r4 license:
 curl
 
 ```
@@ -1222,16 +1222,16 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.9.14-r1 description:
+libxml2-2.9.14-r2 description:
 XML parsing library, version 2
 
-libxml2-2.9.14-r1 webpage:
+libxml2-2.9.14-r2 webpage:
 http://www.xmlsoft.org/
 
-libxml2-2.9.14-r1 installed size:
+libxml2-2.9.14-r2 installed size:
 1200 KiB
 
-libxml2-2.9.14-r1 license:
+libxml2-2.9.14-r2 license:
 MIT
 
 ```
@@ -1545,16 +1545,16 @@ GPL-2.0-only
 ### `apk` package: `shared-mime-info`
 
 ```console
-shared-mime-info-2.2-r0 description:
+shared-mime-info-2.2-r1 description:
 Freedesktop.org Shared MIME Info
 
-shared-mime-info-2.2-r0 webpage:
+shared-mime-info-2.2-r1 webpage:
 http://freedesktop.org/Software/shared-mime-info
 
-shared-mime-info-2.2-r0 installed size:
+shared-mime-info-2.2-r1 installed size:
 2452 KiB
 
-shared-mime-info-2.2-r0 license:
+shared-mime-info-2.2-r1 license:
 GPL-2.0-or-later
 
 ```
