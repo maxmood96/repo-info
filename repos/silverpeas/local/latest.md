@@ -854,14 +854,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.68.0-1ubuntu2.13
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.13.dsc' curl_7.68.0-1ubuntu2.13.dsc 2774 SHA512:c9923fdd3da424677dd5ef0d900b1baaac4ad85733fecfbe58c3a1dbb4476fa5b266c63f40d04593625bcfc702578b2203066e54099e452707ce0e7c0cf3fda4
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0.orig.tar.gz' curl_7.68.0.orig.tar.gz 4096350 SHA512:58b42c08b1cf4cb6e68f8e469d5b5f6298eebe286ba2677ad29e1a7eefd15b8609af54544f4c5a7dadebbd3b23bd77700830f2f60fbea7ae3f2f306e640010b0
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.13.debian.tar.xz' curl_7.68.0-1ubuntu2.13.debian.tar.xz 57632 SHA512:f26590690e4280644c3fca2f3cbeb13df42b75d621d4b673ccc82619cac67563963d735df2d808db4810dfa0d66dc985143dc44396e07311ee1010ca9d518d69
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-2ubuntu0.1`
 
@@ -967,15 +962,9 @@ Licenses: (parsed from: `/usr/share/doc/dbus/copyright`, `/usr/share/doc/dbus-us
 - `Tcl-BSDish`
 - `g10-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dbus=1.12.16-2ubuntu2.2
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.12.16-2ubuntu2.2.dsc' dbus_1.12.16-2ubuntu2.2.dsc 3745 SHA512:e4b3d3c00b1290e221b22f5b6903a0e76924f3256800f1faf881c5507ec1d5944d0b579c6f9d3b6ee34a76104eb1398067a784f1adf2aeca5da65ea67e8d40ac
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.12.16.orig.tar.gz' dbus_1.12.16.orig.tar.gz 2093296 SHA512:27ae805170e9515a8bb0fba5f29d414edc70e3b6b28b7b65bbea47035b8eafa9ac4820cdc92645be6035f6748f8aa45679e1ffc84ba74a64859a3056d318b9bb
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.12.16.orig.tar.gz.asc' dbus_1.12.16.orig.tar.gz.asc 833 SHA512:6d19bf7be86ae1dc70550ba472e5761f3ed1a71007c00679e3a586d567776e82cf9869c9a7021c1324990615657a054b949dc5bbd8e60b0a8843ef6d977eda24
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.12.16-2ubuntu2.2.debian.tar.xz' dbus_1.12.16-2ubuntu2.2.debian.tar.xz 71296 SHA512:ea714cfd0b6a19a3a1705bc185fdb6a5e404de84c48205abee81ba6ea965c526caa8ad3f0a2c21c2ba376dcd55dd592058a1aad4f0674cca45e56dd6980cc102
-```
 
 ### `dpkg` source package: `dconf=0.36.0-1`
 
