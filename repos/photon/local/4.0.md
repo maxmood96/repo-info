@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7b4019a3a6277ce714a13928ea8cb58cadcbaced0fff6cdb3bb1fb3063b8fdd6`
-- Created: `2022-10-24T21:32:53.992977125Z`
-- Virtual Size: ~ 37.05 Mb  
+- Image ID: `sha256:3562ceb2d38df1345b5758313e0ce03ab7aba906c452cbb04f386ac7289cc6da`
+- Created: `2022-10-31T19:29:19.239154291Z`
+- Virtual Size: ~ 37.07 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 - Labels:
-  - `build-date=20221021`
+  - `build-date=20221029`
   - `name=Photon OS x86_64/4.0 Base Image`
   - `vendor=VMware`
 
@@ -41,13 +41,13 @@ Licenses (from `rpm --query`): Custom
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `curl-7.83.1-3.ph4.x86_64`
+### `rpm` package: `curl-7.86.0-1.ph4.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `curl-libs-7.83.1-3.ph4.x86_64`
+### `rpm` package: `curl-libs-7.86.0-1.ph4.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
@@ -65,7 +65,7 @@ Licenses (from `rpm --query`): GPLv2+ or LGPLv3+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `expat-libs-2.2.9-10.ph4.x86_64`
+### `rpm` package: `expat-libs-2.2.9-11.ph4.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
