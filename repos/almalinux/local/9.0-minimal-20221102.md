@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:414d2c321be7f623f2d835b674b4e26cf26ce8998ca58974dbb41cbfc3b97bc9`
-- Created: `2022-10-03T21:24:20.144836577Z`
-- Virtual Size: ~ 85.50 Mb  
+- Image ID: `sha256:0c3c3980685776a9eaf7dee7c6b6483256a7c02ea21de04e9dce124b97ebf05e`
+- Created: `2022-11-02T17:20:02.912118978Z`
+- Virtual Size: ~ 86.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -277,15 +277,16 @@ $ dnf --quiet download --source --url gnupg2-2.3.3-2.el9_0
 http://repo.almalinux.org/vault/9/BaseOS/Source/Packages/gnupg2-2.3.3-2.el9_0.src.rpm
 ```
 
-### `rpm` package: `gnutls-3.7.3-9.el9.x86_64`
+### `rpm` package: `gnutls-3.7.6-12.el9_0.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url gnutls-3.7.3-9.el9
-http://repo.almalinux.org/vault/9/BaseOS/Source/Packages/gnutls-3.7.3-9.el9.src.rpm
+$ dnf --quiet download --source --url gnutls-3.7.6-12.el9_0
+http://repo.almalinux.org/vault/9/AppStream/Source/Packages/gnutls-3.7.6-12.el9_0.src.rpm
+http://repo.almalinux.org/vault/9/BaseOS/Source/Packages/gnutls-3.7.6-12.el9_0.src.rpm
 ```
 
 ### `rpm` package: `gobject-introspection-1.68.0-10.el9.x86_64`
@@ -536,15 +537,15 @@ $ dnf --quiet download --source --url libidn2-2.3.0-7.el9
 http://repo.almalinux.org/vault/9/BaseOS/Source/Packages/libidn2-2.3.0-7.el9.src.rpm
 ```
 
-### `rpm` package: `libksba-1.5.1-4.el9.x86_64`
+### `rpm` package: `libksba-1.5.1-5.el9_0.x86_64`
 
 Licenses (from `rpm --query`): (LGPLv3+ or GPLv2+) and GPLv3+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libksba-1.5.1-4.el9
-http://repo.almalinux.org/vault/9/BaseOS/Source/Packages/libksba-1.5.1-4.el9.src.rpm
+$ dnf --quiet download --source --url libksba-1.5.1-5.el9_0
+http://repo.almalinux.org/vault/9/BaseOS/Source/Packages/libksba-1.5.1-5.el9_0.src.rpm
 ```
 
 ### `rpm` package: `libmodulemd-2.13.0-2.el9.x86_64`
@@ -844,15 +845,15 @@ $ dnf --quiet download --source --url ncurses-libs-6.2-8.20210508.el9
 http://repo.almalinux.org/vault/9/BaseOS/Source/Packages/ncurses-6.2-8.20210508.el9.src.rpm
 ```
 
-### `rpm` package: `nettle-3.7.3-2.el9.x86_64`
+### `rpm` package: `nettle-3.8-3.el9_0.x86_64`
 
 Licenses (from `rpm --query`): LGPLv3+ or GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url nettle-3.7.3-2.el9
-http://repo.almalinux.org/vault/9/BaseOS/Source/Packages/nettle-3.7.3-2.el9.src.rpm
+$ dnf --quiet download --source --url nettle-3.8-3.el9_0
+http://repo.almalinux.org/vault/9/BaseOS/Source/Packages/nettle-3.8-3.el9_0.src.rpm
 ```
 
 ### `rpm` package: `npth-1.6-8.el9.x86_64`
@@ -888,15 +889,15 @@ $ dnf --quiet download --source --url openldap-compat-2.6.2-1.el9_0
 http://repo.almalinux.org/vault/9/BaseOS/Source/Packages/openldap-2.6.2-1.el9_0.src.rpm
 ```
 
-### `rpm` package: `openssl-libs-3.0.1-41.el9_0.x86_64`
+### `rpm` package: `openssl-libs-3.0.1-43.el9_0.x86_64`
 
 Licenses (from `rpm --query`): ASL 2.0
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url openssl-libs-3.0.1-41.el9_0
-http://repo.almalinux.org/vault/9/BaseOS/Source/Packages/openssl-3.0.1-41.el9_0.src.rpm
+$ dnf --quiet download --source --url openssl-libs-3.0.1-43.el9_0
+http://repo.almalinux.org/vault/9/BaseOS/Source/Packages/openssl-3.0.1-43.el9_0.src.rpm
 ```
 
 ### `rpm` package: `p11-kit-0.24.1-2.el9.x86_64`
@@ -1053,15 +1054,15 @@ $ dnf --quiet download --source --url systemd-libs-250-6.el9_0.1
 http://repo.almalinux.org/vault/9/BaseOS/Source/Packages/systemd-250-6.el9_0.1.src.rpm
 ```
 
-### `rpm` package: `tzdata-2022c-1.el9_0.noarch`
+### `rpm` package: `tzdata-2022e-1.el9_0.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url tzdata-2022c-1.el9_0.noarch
-http://repo.almalinux.org/vault/9/BaseOS/Source/Packages/tzdata-2022c-1.el9_0.src.rpm
+$ dnf --quiet download --source --url tzdata-2022e-1.el9_0.noarch
+http://repo.almalinux.org/vault/9/BaseOS/Source/Packages/tzdata-2022e-1.el9_0.src.rpm
 ```
 
 ### `rpm` package: `xz-libs-5.2.5-8.el9_0.x86_64`
