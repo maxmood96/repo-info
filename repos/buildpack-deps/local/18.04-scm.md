@@ -2092,15 +2092,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2022c-0ubuntu0.18.04.0
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022c-0ubuntu0.18.04.0.dsc' tzdata_2022c-0ubuntu0.18.04.0.dsc 2165 SHA512:93f397292ad375638ed1792a56d7d98b7799678849d412deb6d76a9c7ef038066db546d8b43c21e19e200db16f90bae2dbfcdc1c8a60e949780ff285bae4f7ff
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022c.orig.tar.gz' tzdata_2022c.orig.tar.gz 432721 SHA512:e2ae92abac6d87ce4ab4ba9012e868e1791b842e083293489debc0c671b9cf135b5b70426dacb6dbebbf6eba24463205225ae45bb7df891a086b25475f85ee0b
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022c.orig.tar.gz.asc' tzdata_2022c.orig.tar.gz.asc 833 SHA512:8485b30e93782c76444b07c18c3032e91293edcb4a79b536b7d561de7981e5a4861b83ea3cae7e6efe7340ce8de313cb34a493d7ef46547f7f63f29eb0452da9
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022c-0ubuntu0.18.04.0.debian.tar.xz' tzdata_2022c-0ubuntu0.18.04.0.debian.tar.xz 106772 SHA512:5e3f4835a6cfc533ecf78f96ecc74c9af24eb86db8b3f2960b12ad663af62b1b9ce747b56728cdcaa9ac69315a9365c0d80da517c0a2b6c276c855864cbc73aa
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2018.09.18.1~18.04.2`
 

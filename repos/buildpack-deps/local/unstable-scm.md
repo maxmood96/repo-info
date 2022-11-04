@@ -1166,21 +1166,13 @@ Licenses: (parsed from: `/usr/share/doc/libassuan0/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libassuan=2.5.5-4
-'http://deb.debian.org/debian/pool/main/liba/libassuan/libassuan_2.5.5-4.dsc' libassuan_2.5.5-4.dsc 1997 SHA256:c4f06cdb1684b44ca17acb7804ee593e2164db5b6911b0a9ed338f840931630f
-'http://deb.debian.org/debian/pool/main/liba/libassuan/libassuan_2.5.5.orig.tar.bz2' libassuan_2.5.5.orig.tar.bz2 572263 SHA256:8e8c2fcc982f9ca67dcbb1d95e2dc746b1739a4668bc20b3a3c5be632edb34e4
-'http://deb.debian.org/debian/pool/main/liba/libassuan/libassuan_2.5.5.orig.tar.bz2.asc' libassuan_2.5.5.orig.tar.bz2.asc 228 SHA256:8bb0d1d818ac91fa27a8ebed2975dac12eac9a6e075dfba225cc488ac9b4133f
-'http://deb.debian.org/debian/pool/main/liba/libassuan/libassuan_2.5.5-4.debian.tar.xz' libassuan_2.5.5-4.debian.tar.xz 13976 SHA256:d9d46edba0c5bff1aec978fb9a894662fe144b1abe2f2e21bea8c98dae3e508c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libassuan/2.5.5-4/
 
-- https://sources.debian.net/src/libassuan/2.5.5-4/ (for browsing the source)
-- https://sources.debian.net/src/libassuan/2.5.5-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libassuan/2.5.5-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libbsd=0.11.7-1`
 
@@ -1313,20 +1305,13 @@ Licenses: (parsed from: `/usr/share/doc/libedit2/copyright`)
 
 - `BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libedit=3.1-20221009-1
-'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20221009-1.dsc' libedit_3.1-20221009-1.dsc 2208 SHA256:ebfaec3678747c937390ab446450ac2ee484d7d0a94081d9f0dc7f54960f31ae
-'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20221009.orig.tar.gz' libedit_3.1-20221009.orig.tar.gz 533260 SHA256:b7b135a5112ce4344c9ac3dff57cc057b2b0e1b912619a36cf1d13fce8e88626
-'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20221009-1.debian.tar.xz' libedit_3.1-20221009-1.debian.tar.xz 15080 SHA256:6586f6b30a4696716c8bd74b13560867ace106a79cc2980c8bf17c36fca5f1d2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libedit/3.1-20221009-1/
 
-- https://sources.debian.net/src/libedit/3.1-20221009-1/ (for browsing the source)
-- https://sources.debian.net/src/libedit/3.1-20221009-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libedit/3.1-20221009-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `liberror-perl=0.17029-2`
 
@@ -2290,21 +2275,13 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.5-4
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.5-4.dsc' openssl_3.0.5-4.dsc 2604 SHA256:83a7c544870e652dac2213cf0ff8eeb8d9d890ba76e9706fa6675e0b2f0f2dbc
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.5.orig.tar.gz' openssl_3.0.5.orig.tar.gz 15074407 SHA256:aa7d8d9bef71ad6525c55ba11e5f4397889ce49c2c9349dcea6d3e4f0b024a7a
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.5.orig.tar.gz.asc' openssl_3.0.5.orig.tar.gz.asc 862 SHA256:95f23bb4eb6faa8d0f1ca1b83cfb00a2bed4b53e124a4f13e1499abc0b426129
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.5-4.debian.tar.xz' openssl_3.0.5-4.debian.tar.xz 121912 SHA256:6d0231e1b9166333adfd854fa9433c9d809733bf4c10eb3656e0b37531272e7a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssl/3.0.5-4/
 
-- https://sources.debian.net/src/openssl/3.0.5-4/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.0.5-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.0.5-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.24.1-1`
 
