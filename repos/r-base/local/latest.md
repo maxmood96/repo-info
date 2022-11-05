@@ -1369,21 +1369,13 @@ Licenses: (parsed from: `/usr/share/doc/grep/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris grep=3.7-1
-'http://deb.debian.org/debian/pool/main/g/grep/grep_3.7-1.dsc' grep_3.7-1.dsc 1644 SHA256:f1fbf4f6d2362e6057bae9e09d6672d221f9efec41dade6ec3c294c6dd8e99e9
-'http://deb.debian.org/debian/pool/main/g/grep/grep_3.7.orig.tar.xz' grep_3.7.orig.tar.xz 1641196 SHA256:5c10da312460aec721984d5d83246d24520ec438dd48d7ab5a05dbc0d6d6823c
-'http://deb.debian.org/debian/pool/main/g/grep/grep_3.7.orig.tar.xz.asc' grep_3.7.orig.tar.xz.asc 833 SHA256:d79a0137eb803938ff47dc366825d05d1a042457f74acc264a361a84428a5de7
-'http://deb.debian.org/debian/pool/main/g/grep/grep_3.7-1.debian.tar.xz' grep_3.7-1.debian.tar.xz 18104 SHA256:064cfebccc2f5a66978f72ea0b601fa9e5d59588b6e9ff86bf2b4ea7f303ca3f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/grep/3.7-1/
 
-- https://sources.debian.net/src/grep/3.7-1/ (for browsing the source)
-- https://sources.debian.net/src/grep/3.7-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/grep/3.7-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gzip=1.12-1`
 
@@ -2877,20 +2869,13 @@ Licenses: (parsed from: `/usr/share/doc/littler/copyright`, `/usr/share/doc/r-cr
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris littler=0.3.16-1
-'http://deb.debian.org/debian/pool/main/l/littler/littler_0.3.16-1.dsc' littler_0.3.16-1.dsc 1874 SHA256:9bde76704da31f49d48589c3772f00e27f67390a17625b348d8ce51e70a7a4f8
-'http://deb.debian.org/debian/pool/main/l/littler/littler_0.3.16.orig.tar.gz' littler_0.3.16.orig.tar.gz 117899 SHA256:655a9065c3667394ea0a79a61e7446cc345dd3af9856f3e658fb14a53c9b0661
-'http://deb.debian.org/debian/pool/main/l/littler/littler_0.3.16-1.debian.tar.xz' littler_0.3.16-1.debian.tar.xz 6984 SHA256:ba519207fc41554065f1ea9935eb7bdf155ad6c5148a4bf56b3877de6c8e88fd
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/littler/0.3.16-1/
 
-- https://sources.debian.net/src/littler/0.3.16-1/ (for browsing the source)
-- https://sources.debian.net/src/littler/0.3.16-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/littler/0.3.16-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.9.4-1`
 
@@ -3754,20 +3739,13 @@ Licenses: (parsed from: `/usr/share/doc/libreadline-dev/copyright`, `/usr/share/
 - `GFDL`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris readline=8.2-1
-'http://deb.debian.org/debian/pool/main/r/readline/readline_8.2-1.dsc' readline_8.2-1.dsc 2612 SHA256:74198798c8b2844d44173cbaf6e0a6d715fe09d8fc9bb77ed464dc40b1c91210
-'http://deb.debian.org/debian/pool/main/r/readline/readline_8.2.orig.tar.gz' readline_8.2.orig.tar.gz 3043952 SHA256:3feb7171f16a84ee82ca18a36d7b9be109a52c04f492a053331d7d1095007c35
-'http://deb.debian.org/debian/pool/main/r/readline/readline_8.2-1.debian.tar.xz' readline_8.2-1.debian.tar.xz 29136 SHA256:4305e3679be17f31ae6aed06406b7c54140ccc0b3c21f32f05bccdc654085384
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/readline/8.2-1/
 
-- https://sources.debian.net/src/readline/8.2-1/ (for browsing the source)
-- https://sources.debian.net/src/readline/8.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/readline/8.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rmatrix=1.5-1-1`
 
@@ -4003,20 +3981,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=251.6-1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_251.6-1.dsc' systemd_251.6-1.dsc 6242 SHA256:9c3f4d0419ba96164b52711255f28083638782284d653671cc8280b1cb90e519
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_251.6.orig.tar.gz' systemd_251.6.orig.tar.gz 11448383 SHA256:74d7deb6e20635d58ca8837d917a171ae694a07837db0632b93e27aa3550a2c1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_251.6-1.debian.tar.xz' systemd_251.6-1.debian.tar.xz 174628 SHA256:624397d939f83fb70354edb80b33ce347617139f33648fb2bd7d628daa0f750c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/251.6-1/
 
-- https://sources.debian.net/src/systemd/251.6-1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/251.6-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/251.6-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.05-6`
 
@@ -4136,20 +4107,13 @@ Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.4.0-4
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.4.0-4.dsc' tiff_4.4.0-4.dsc 2238 SHA256:5c7d396d178b96476aacd71e5f57dd935a8b8bbae5cf7ac3d2822ad29d942824
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.4.0.orig.tar.bz2' tiff_4.4.0.orig.tar.bz2 2072723 SHA256:ce0848109b627eb5442187b6362a8e4809728e4f28fcc5a04940e5afb464caba
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.4.0-4.debian.tar.xz' tiff_4.4.0-4.debian.tar.xz 23344 SHA256:06d7a994e9dff6efbfabb998f87d6ae824e4e97669e4ae8e51aa6fb60515c837
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tiff/4.4.0-4/
 
-- https://sources.debian.net/src/tiff/4.4.0-4/ (for browsing the source)
-- https://sources.debian.net/src/tiff/4.4.0-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tiff/4.4.0-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tk8.6=8.6.12-1`
 
@@ -4350,20 +4314,13 @@ Licenses: (parsed from: `/usr/share/doc/vim-common/copyright`, `/usr/share/doc/v
 - `XPM`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris vim=2:9.0.0626-1
-'http://deb.debian.org/debian/pool/main/v/vim/vim_9.0.0626-1.dsc' vim_9.0.0626-1.dsc 3168 SHA256:8e91f66c3563c22e04be41c797270916a0e1aa39bf0b7a6a52b299a8fc03fc3e
-'http://deb.debian.org/debian/pool/main/v/vim/vim_9.0.0626.orig.tar.xz' vim_9.0.0626.orig.tar.xz 10982684 SHA256:6034a8e0cf376f73bdf24c695ff89667cabb2e56c792f8f1607dccb3e0c54cc6
-'http://deb.debian.org/debian/pool/main/v/vim/vim_9.0.0626-1.debian.tar.xz' vim_9.0.0626-1.debian.tar.xz 167560 SHA256:ea89c742706af2176264d3a5e801818ccf0a5b844cb2a9f7d612386bf405327f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/vim/2:9.0.0626-1/
 
-- https://sources.debian.net/src/vim/2:9.0.0626-1/ (for browsing the source)
-- https://sources.debian.net/src/vim/2:9.0.0626-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/vim/2:9.0.0626-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.21.3-1`
 
