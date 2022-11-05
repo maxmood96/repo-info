@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:83859a05524ac663fd0f7a51acafa53f63e8371953d702b5687f441ce0c917c4`
-- Created: `2022-10-07T17:43:45.083674295Z`
+- Image ID: `sha256:006a143553666952e73d18ae37477e43525fdae74f10771ec51cc6d5f9d8ade8`
+- Created: `2022-11-05T00:13:03.281177152Z`
 - Virtual Size: ~ 164.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk8u345-b01`
+  - `JAVA_VERSION=jdk8u352-b08`
   - `JETTY_VERSION=9.4.49.v20220914`
   - `JETTY_HOME=/usr/local/jetty`
   - `JETTY_BASE=/var/lib/jetty`
@@ -164,16 +164,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-7.83.1-r3 description:
+curl-7.83.1-r4 description:
 URL retrival utility and library
 
-curl-7.83.1-r3 webpage:
+curl-7.83.1-r4 webpage:
 https://curl.se/
 
-curl-7.83.1-r3 installed size:
+curl-7.83.1-r4 installed size:
 256 KiB
 
-curl-7.83.1-r3 license:
+curl-7.83.1-r4 license:
 curl
 
 ```
@@ -555,16 +555,16 @@ OpenSSL
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.83.1-r3 description:
+libcurl-7.83.1-r4 description:
 The multiprotocol file transfer library
 
-libcurl-7.83.1-r3 webpage:
+libcurl-7.83.1-r4 webpage:
 https://curl.se/
 
-libcurl-7.83.1-r3 installed size:
-516 KiB
+libcurl-7.83.1-r4 installed size:
+512 KiB
 
-libcurl-7.83.1-r3 license:
+libcurl-7.83.1-r4 license:
 curl
 
 ```
