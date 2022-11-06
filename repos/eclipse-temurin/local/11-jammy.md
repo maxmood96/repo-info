@@ -1,10 +1,10 @@
-# `eclipse-temurin:11.0.16.1_1-jdk-jammy`
+# `eclipse-temurin:11.0.17_8-jdk-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c375b2fb7bd9c5c3acc644cc97a15d77f1dab7f73508c61a681ec7dbe19a3fe5`
-- Created: `2022-11-02T18:44:55.266830754Z`
-- Virtual Size: ~ 446.70 Mb  
+- Image ID: `sha256:d72c817d0ab6bdc74217d6aa4e6f06983baea2555840126ab06abefd7b8493f8`
+- Created: `2022-11-04T23:21:52.334662455Z`
+- Virtual Size: ~ 447.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-11.0.16.1+1`
+  - `JAVA_VERSION=jdk-11.0.17+8`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1805,15 +1805,9 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2022e-0ubuntu0.22.04.0
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022e-0ubuntu0.22.04.0.dsc' tzdata_2022e-0ubuntu0.22.04.0.dsc 2383 SHA512:0911ad087bc93c66a16e3f622a1fe8e072d0a8f256666ffed4a81c481d69874e0855fbad0410e331832dff1788bab0d6a6db360b505ff3b517e65dbebe980dcb
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022e.orig.tar.gz' tzdata_2022e.orig.tar.gz 433785 SHA512:3b63ba2662930ee13dec79290f57545d71d21d4ddb76f94498a7096edaee0b3150e501c221c4d596df6af7c1d770c211f88feb5add13c5e3bed979218b4544da
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022e.orig.tar.gz.asc' tzdata_2022e.orig.tar.gz.asc 833 SHA512:d1fbc609370e1fd2a6aded16fe2c6705ee422fd1caffc12941d38acd8eca31bac5fa244af71c2427ce122a0d20cb53b6286ead675c25a7922fc5feda3daacf3c
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022e-0ubuntu0.22.04.0.debian.tar.xz' tzdata_2022e-0ubuntu0.22.04.0.debian.tar.xz 171324 SHA512:d4f42c20e09cb6e05fb1b117ff5b50511304c2b36eed775375a397f3dbb48be0f52036dddc327be4f2d9388807b2458bca5a0658096306842c120de5c9fb8d7b
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2021.03.26`
 
