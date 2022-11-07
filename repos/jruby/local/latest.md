@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ef1f90a45d6373abab7601d0e68675844213f06d51536d5b6d200c4f94d24e8a`
-- Created: `2022-10-26T23:30:35.317087434Z`
-- Virtual Size: ~ 297.03 Mb  
+- Image ID: `sha256:c587c020e9ab1ac467eb09d934f69e7f14198014aa19e0a43d40b03de29e2ac0`
+- Created: `2022-11-05T00:06:11.96655216Z`
+- Virtual Size: ~ 297.04 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["irb"]`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk8u345-b01`
+  - `JAVA_VERSION=jdk8u352-b08`
   - `JRUBY_VERSION=9.3.9.0`
   - `JRUBY_SHA256=251e6dd8d1d2f82922c8c778d7857e1bef82fe5ca2cf77bc09356421d0b05ab8`
   - `GEM_HOME=/usr/local/bundle`
@@ -1679,10 +1679,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris sqlite3=3.31.1-4ubuntu0.4
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1-4ubuntu0.4.dsc' sqlite3_3.31.1-4ubuntu0.4.dsc 2519 SHA512:63501762b9e3d411213f88c158653246350e4f5d537fd868f57b1468f62ed270906b4f767bf7e70c8422d0ada35409a86ef8e98022f66f291dcad1d957ee6b46
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1.orig-www.tar.xz' sqlite3_3.31.1.orig-www.tar.xz 5764424 SHA512:a47adacd46c673cfd674cb64fb54b054e69560aed8c8c429773f0eccdcdbce4be538397506eca8e2d169f4b46d0d47442b273e12d82f8c87e1aadf3ade458db6
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1.orig.tar.xz' sqlite3_3.31.1.orig.tar.xz 7108036 SHA512:67e1050efe2988fa3d0d7e4a87e147a8114c6ff9b6ca5307a068befb38e861930eaee0135048ff1abb1e6323b507cbc68a0aac3a8fe5f095d6fcea1547a7efaf
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1-4ubuntu0.4.debian.tar.xz' sqlite3_3.31.1-4ubuntu0.4.debian.tar.xz 35468 SHA512:a4974f917c0f94142472bbaee2590be3baf9e5881db6df598ca4267bb823bd9934d5af30ea2e4b513044ab465ad9ebca2d1d7ae47cb41080edbd963a0a1fd227
+'http://security.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1-4ubuntu0.4.dsc' sqlite3_3.31.1-4ubuntu0.4.dsc 2519 SHA512:63501762b9e3d411213f88c158653246350e4f5d537fd868f57b1468f62ed270906b4f767bf7e70c8422d0ada35409a86ef8e98022f66f291dcad1d957ee6b46
+'http://security.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1.orig-www.tar.xz' sqlite3_3.31.1.orig-www.tar.xz 5764424 SHA512:a47adacd46c673cfd674cb64fb54b054e69560aed8c8c429773f0eccdcdbce4be538397506eca8e2d169f4b46d0d47442b273e12d82f8c87e1aadf3ade458db6
+'http://security.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1.orig.tar.xz' sqlite3_3.31.1.orig.tar.xz 7108036 SHA512:67e1050efe2988fa3d0d7e4a87e147a8114c6ff9b6ca5307a068befb38e861930eaee0135048ff1abb1e6323b507cbc68a0aac3a8fe5f095d6fcea1547a7efaf
+'http://security.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1-4ubuntu0.4.debian.tar.xz' sqlite3_3.31.1-4ubuntu0.4.debian.tar.xz 35468 SHA512:a4974f917c0f94142472bbaee2590be3baf9e5881db6df598ca4267bb823bd9934d5af30ea2e4b513044ab465ad9ebca2d1d7ae47cb41080edbd963a0a1fd227
 ```
 
 ### `dpkg` source package: `systemd=245.4-4ubuntu3.18`
