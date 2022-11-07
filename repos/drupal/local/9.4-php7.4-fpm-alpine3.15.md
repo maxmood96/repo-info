@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:222a680ae4d55bb7b7db3255d55b0dee124176558cbfe61c5ee20bc0e6ebb5cf`
-- Created: `2022-10-28T17:43:30.592965509Z`
-- Virtual Size: ~ 165.72 Mb  
+- Image ID: `sha256:7bf8229e31875b09c58927d707097cc31cdb22219092e7b7b84653bbf484a13d`
+- Created: `2022-11-03T19:49:44.191141921Z`
+- Virtual Size: ~ 169.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312`
-  - `PHP_VERSION=7.4.32`
-  - `PHP_URL=https://www.php.net/distributions/php-7.4.32.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.32.tar.xz.asc`
-  - `PHP_SHA256=323332c991e8ef30b1d219cb10f5e30f11b5f319ce4c6642a5470d75ade7864a`
+  - `PHP_VERSION=7.4.33`
+  - `PHP_URL=https://www.php.net/distributions/php-7.4.33.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-7.4.33.tar.xz.asc`
+  - `PHP_SHA256=924846abf93bc613815c55dd3f5809377813ac62a9ec4eb3778675b82a27b927`
   - `DRUPAL_VERSION=9.4.8`
 
 ## `apk` (`.apk`-based packages)
@@ -266,16 +266,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1q-r0 description:
+libcrypto1.1-1.1.1s-r1 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1q-r0 webpage:
+libcrypto1.1-1.1.1s-r1 webpage:
 https://www.openssl.org/
 
-libcrypto1.1-1.1.1q-r0 installed size:
+libcrypto1.1-1.1.1s-r1 installed size:
 2676 KiB
 
-libcrypto1.1-1.1.1q-r0 license:
+libcrypto1.1-1.1.1s-r1 license:
 OpenSSL
 
 ```
@@ -283,16 +283,16 @@ OpenSSL
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.80.0-r3 description:
+libcurl-7.80.0-r4 description:
 The multiprotocol file transfer library
 
-libcurl-7.80.0-r3 webpage:
+libcurl-7.80.0-r4 webpage:
 https://curl.se/
 
-libcurl-7.80.0-r3 installed size:
+libcurl-7.80.0-r4 installed size:
 504 KiB
 
-libcurl-7.80.0-r3 license:
+libcurl-7.80.0-r4 license:
 MIT
 
 ```
@@ -385,16 +385,16 @@ ISC
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1q-r0 description:
+libssl1.1-1.1.1s-r1 description:
 SSL shared libraries
 
-libssl1.1-1.1.1q-r0 webpage:
+libssl1.1-1.1.1s-r1 webpage:
 https://www.openssl.org/
 
-libssl1.1-1.1.1q-r0 installed size:
+libssl1.1-1.1.1s-r1 installed size:
 528 KiB
 
-libssl1.1-1.1.1q-r0 license:
+libssl1.1-1.1.1s-r1 license:
 OpenSSL
 
 ```
@@ -419,16 +419,16 @@ BSD-3-Clause
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.9.14-r1 description:
+libxml2-2.9.14-r2 description:
 XML parsing library, version 2
 
-libxml2-2.9.14-r1 webpage:
+libxml2-2.9.14-r2 webpage:
 http://www.xmlsoft.org/
 
-libxml2-2.9.14-r1 installed size:
+libxml2-2.9.14-r2 installed size:
 1200 KiB
 
-libxml2-2.9.14-r1 license:
+libxml2-2.9.14-r2 license:
 MIT
 
 ```
