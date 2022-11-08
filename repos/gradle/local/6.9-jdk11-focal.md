@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c0f1219d281f2e11d64f7bfd3f2a4efcde195ca8e81762927d12e095557ad391`
-- Created: `2022-10-26T22:20:50.624893921Z`
-- Virtual Size: ~ 764.90 Mb  
+- Image ID: `sha256:3b8ba98339655939677c37b71129bb78a0db3bf7c2fb72dc7365bf9c86a8d693`
+- Created: `2022-11-04T23:53:13.025911736Z`
+- Virtual Size: ~ 765.47 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-11.0.16.1+1`
+  - `JAVA_VERSION=jdk-11.0.17+8`
   - `GRADLE_HOME=/opt/gradle`
   - `GRADLE_VERSION=6.9.3`
 
@@ -2318,15 +2318,9 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.31.1-4ubuntu0.4
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1-4ubuntu0.4.dsc' sqlite3_3.31.1-4ubuntu0.4.dsc 2519 SHA512:63501762b9e3d411213f88c158653246350e4f5d537fd868f57b1468f62ed270906b4f767bf7e70c8422d0ada35409a86ef8e98022f66f291dcad1d957ee6b46
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1.orig-www.tar.xz' sqlite3_3.31.1.orig-www.tar.xz 5764424 SHA512:a47adacd46c673cfd674cb64fb54b054e69560aed8c8c429773f0eccdcdbce4be538397506eca8e2d169f4b46d0d47442b273e12d82f8c87e1aadf3ade458db6
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1.orig.tar.xz' sqlite3_3.31.1.orig.tar.xz 7108036 SHA512:67e1050efe2988fa3d0d7e4a87e147a8114c6ff9b6ca5307a068befb38e861930eaee0135048ff1abb1e6323b507cbc68a0aac3a8fe5f095d6fcea1547a7efaf
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1-4ubuntu0.4.debian.tar.xz' sqlite3_3.31.1-4ubuntu0.4.debian.tar.xz 35468 SHA512:a4974f917c0f94142472bbaee2590be3baf9e5881db6df598ca4267bb823bd9934d5af30ea2e4b513044ab465ad9ebca2d1d7ae47cb41080edbd963a0a1fd227
-```
 
 ### `dpkg` source package: `subversion=1.13.0-3ubuntu0.2`
 

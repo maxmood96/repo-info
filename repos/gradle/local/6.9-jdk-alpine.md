@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a852cd59b74c938cb66b9f66ab1b337a82a0f330698a21c64c757ddc52f820d1`
-- Created: `2022-10-17T21:23:03.476043797Z`
-- Virtual Size: ~ 576.10 Mb  
+- Image ID: `sha256:da31952dc420e543505c7de1be53a6b824a9a331064aa7de701d2d98d509689f`
+- Created: `2022-11-07T21:06:03.817669718Z`
+- Virtual Size: ~ 576.59 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-17.0.4.1+1`
+  - `JAVA_VERSION=jdk-17.0.5+8`
   - `GRADLE_HOME=/opt/gradle`
   - `GRADLE_VERSION=6.9.3`
 
@@ -278,16 +278,16 @@ GPL-3.0-or-later
 ### `apk` package: `git`
 
 ```console
-git-2.36.2-r0 description:
+git-2.36.3-r0 description:
 Distributed version control system
 
-git-2.36.2-r0 webpage:
+git-2.36.3-r0 webpage:
 https://www.git-scm.com/
 
-git-2.36.2-r0 installed size:
+git-2.36.3-r0 installed size:
 10 MiB
 
-git-2.36.2-r0 license:
+git-2.36.3-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -295,16 +295,16 @@ GPL-2.0-or-later
 ### `apk` package: `git-lfs`
 
 ```console
-git-lfs-3.1.4-r4 description:
+git-lfs-3.1.4-r5 description:
 Git extension for versioning large files
 
-git-lfs-3.1.4-r4 webpage:
+git-lfs-3.1.4-r5 webpage:
 https://git-lfs.github.io/
 
-git-lfs-3.1.4-r4 installed size:
+git-lfs-3.1.4-r5 installed size:
 10 MiB
 
-git-lfs-3.1.4-r4 license:
+git-lfs-3.1.4-r5 license:
 MIT
 
 ```
@@ -363,16 +363,16 @@ OpenSSL
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.83.1-r3 description:
+libcurl-7.83.1-r4 description:
 The multiprotocol file transfer library
 
-libcurl-7.83.1-r3 webpage:
+libcurl-7.83.1-r4 webpage:
 https://curl.se/
 
-libcurl-7.83.1-r3 installed size:
-516 KiB
+libcurl-7.83.1-r4 installed size:
+512 KiB
 
-libcurl-7.83.1-r3 license:
+libcurl-7.83.1-r4 license:
 curl
 
 ```
@@ -465,16 +465,16 @@ ISC AND ( BSD-3-Clause OR MIT )
 ### `apk` package: `libsasl`
 
 ```console
-libsasl-2.1.28-r0 description:
+libsasl-2.1.28-r1 description:
 Cyrus Simple Authentication and Security Layer (SASL) library
 
-libsasl-2.1.28-r0 webpage:
+libsasl-2.1.28-r1 webpage:
 https://www.cyrusimap.org/sasl/
 
-libsasl-2.1.28-r0 installed size:
+libsasl-2.1.28-r1 installed size:
 192 KiB
 
-libsasl-2.1.28-r0 license:
+libsasl-2.1.28-r1 license:
 custom
 
 ```

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0e2511cdbc2bf8f14570ac4e623b83a0deaa68c2df706174e2ab42b39c1a2db6`
-- Created: `2022-11-02T20:38:41.927258699Z`
-- Virtual Size: ~ 608.43 Mb  
+- Image ID: `sha256:787840feef8a7186d1e0ba7c359a22a64ff4d17df93df31dba9c62780bbcee50`
+- Created: `2022-11-04T23:50:24.18271635Z`
+- Virtual Size: ~ 608.44 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk8u345-b01`
+  - `JAVA_VERSION=jdk8u352-b08`
   - `GRADLE_HOME=/opt/gradle`
   - `GRADLE_VERSION=7.5.1`
 
@@ -2188,14 +2188,14 @@ $ apt-get source -qq --print-uris python3-defaults=3.10.6-1~22.04
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.10.6-1%7e22.04.tar.gz' python3-defaults_3.10.6-1~22.04.tar.gz 145325 SHA512:4dce1fcadb47a3fbd72e489e78c6543aa4b35a0480eb4e10617b3afd223cdd244e97f79db55f2abf28367848658ae46a3cda895d3d9dcf21c530149207f080dd
 ```
 
-### `dpkg` source package: `python3.10=3.10.6-1~22.04`
+### `dpkg` source package: `python3.10=3.10.6-1~22.04.1`
 
 Binary Packages:
 
-- `libpython3.10-minimal:amd64=3.10.6-1~22.04`
-- `libpython3.10-stdlib:amd64=3.10.6-1~22.04`
-- `python3.10=3.10.6-1~22.04`
-- `python3.10-minimal=3.10.6-1~22.04`
+- `libpython3.10-minimal:amd64=3.10.6-1~22.04.1`
+- `libpython3.10-stdlib:amd64=3.10.6-1~22.04.1`
+- `python3.10=3.10.6-1~22.04.1`
+- `python3.10-minimal=3.10.6-1~22.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/share/doc/libpython3.10-stdlib/copyright`, `/usr/share/doc/python3.10/copyright`, `/usr/share/doc/python3.10-minimal/copyright`)
 
@@ -2217,9 +2217,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.10=3.10.6-1~22.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.6-1%7e22.04.1.dsc' python3.10_3.10.6-1~22.04.1.dsc 3646 SHA512:142babe9542367ccf62192cf5f029f7fb0d3c386ec2cfdf4be6f85e1f47a22c6fada10d91f87c39ced6398de763d0717b78f902f3f797963eae6528522b7d26d
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.6.orig.tar.xz' python3.10_3.10.6.orig.tar.xz 19600672 SHA512:f2bf424bf4f4caa524ee1248b431e8e06d0745c3fc3ba457710d75f3698e653733feb4b059cd124f1de2a9e851c30d847f567aa47abef12898c9dc8a6507b476
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.6-1%7e22.04.1.debian.tar.xz' python3.10_3.10.6-1~22.04.1.debian.tar.xz 220664 SHA512:41ab703ff68b768dba43709a93baf333b12bd860db2bc25b359d8f8beef8813971a0190d03c320d32f323bf21a5f1b4a3d33a40aac776a180ffb1335469bd81c
+```
 
 ### `dpkg` source package: `readline=8.1.2-1`
 

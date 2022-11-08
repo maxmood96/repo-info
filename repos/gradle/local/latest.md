@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:50a9b42fa5788362c07bb694f5a9292ea9d66d1b3d105c44f67f3f7f4ed04554`
-- Created: `2022-11-02T20:39:42.625800691Z`
-- Virtual Size: ~ 746.85 Mb  
+- Image ID: `sha256:f437a649a4cd7e29f6e79371fe035210e9b0c2d4280a5a126647bb962dd5d87a`
+- Created: `2022-11-07T21:04:22.187738563Z`
+- Virtual Size: ~ 747.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-17.0.4.1+1`
+  - `JAVA_VERSION=jdk-17.0.5+8`
   - `GRADLE_HOME=/opt/gradle`
   - `GRADLE_VERSION=7.5.1`
 
@@ -2214,14 +2214,14 @@ $ apt-get source -qq --print-uris python3-defaults=3.10.6-1~22.04
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.10.6-1%7e22.04.tar.gz' python3-defaults_3.10.6-1~22.04.tar.gz 145325 SHA512:4dce1fcadb47a3fbd72e489e78c6543aa4b35a0480eb4e10617b3afd223cdd244e97f79db55f2abf28367848658ae46a3cda895d3d9dcf21c530149207f080dd
 ```
 
-### `dpkg` source package: `python3.10=3.10.6-1~22.04`
+### `dpkg` source package: `python3.10=3.10.6-1~22.04.1`
 
 Binary Packages:
 
-- `libpython3.10-minimal:amd64=3.10.6-1~22.04`
-- `libpython3.10-stdlib:amd64=3.10.6-1~22.04`
-- `python3.10=3.10.6-1~22.04`
-- `python3.10-minimal=3.10.6-1~22.04`
+- `libpython3.10-minimal:amd64=3.10.6-1~22.04.1`
+- `libpython3.10-stdlib:amd64=3.10.6-1~22.04.1`
+- `python3.10=3.10.6-1~22.04.1`
+- `python3.10-minimal=3.10.6-1~22.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/share/doc/libpython3.10-stdlib/copyright`, `/usr/share/doc/python3.10/copyright`, `/usr/share/doc/python3.10-minimal/copyright`)
 
@@ -2243,9 +2243,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.10=3.10.6-1~22.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.6-1%7e22.04.1.dsc' python3.10_3.10.6-1~22.04.1.dsc 3646 SHA512:142babe9542367ccf62192cf5f029f7fb0d3c386ec2cfdf4be6f85e1f47a22c6fada10d91f87c39ced6398de763d0717b78f902f3f797963eae6528522b7d26d
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.6.orig.tar.xz' python3.10_3.10.6.orig.tar.xz 19600672 SHA512:f2bf424bf4f4caa524ee1248b431e8e06d0745c3fc3ba457710d75f3698e653733feb4b059cd124f1de2a9e851c30d847f567aa47abef12898c9dc8a6507b476
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.6-1%7e22.04.1.debian.tar.xz' python3.10_3.10.6-1~22.04.1.debian.tar.xz 220664 SHA512:41ab703ff68b768dba43709a93baf333b12bd860db2bc25b359d8f8beef8813971a0190d03c320d32f323bf21a5f1b4a3d33a40aac776a180ffb1335469bd81c
+```
 
 ### `dpkg` source package: `readline=8.1.2-1`
 
@@ -2385,11 +2390,11 @@ $ apt-get source -qq --print-uris six=1.16.0-3ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/six/six_1.16.0-3ubuntu1.debian.tar.xz' six_1.16.0-3ubuntu1.debian.tar.xz 5072 SHA512:790dfd825c173fbfe6d54bc0e6bf8f6161b065ba1da561cb4e1fc8050e629f8d344a2e84e895855b7da696cf62acb2daf92aca8548a00f12e6eb239f30057e1c
 ```
 
-### `dpkg` source package: `sqlite3=3.37.2-2`
+### `dpkg` source package: `sqlite3=3.37.2-2ubuntu0.1`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.37.2-2`
+- `libsqlite3-0:amd64=3.37.2-2ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -2400,11 +2405,11 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris sqlite3=3.37.2-2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2-2.dsc' sqlite3_3.37.2-2.dsc 2487 SHA512:d542b60afedb0556cc0c56622934bbd5d6ac456c00bca4ba38ef47245c7b798b871382c2b48b9a9b8a3aa12133b0d19bcc3a81aeebfb3619dca139493586b61f
+$ apt-get source -qq --print-uris sqlite3=3.37.2-2ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2-2ubuntu0.1.dsc' sqlite3_3.37.2-2ubuntu0.1.dsc 2602 SHA512:d497f7faceb2ac77ecd3eab51f0bd8844deef1f77ebd6d318ac2f2f677e7f66bb8b31685d4c7710a5015e1769f8fd96b2c751177313c5a2000bcf9d1a49a233d
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2.orig-www.tar.xz' sqlite3_3.37.2.orig-www.tar.xz 5694016 SHA512:577e34b4ae18a3c73be6d955a2e2321e993f61decefbcca5112170072ea556eca93dcf55f3059fbcd96147124442b368150de7f68c603e84b80cbe0228ae78f8
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2.orig.tar.xz' sqlite3_3.37.2.orig.tar.xz 7623768 SHA512:dfa51b0a32ab0597cd00ae7abdb53bb255102f397ff8409f3fdbefaad17bc7d5a25f53db90bed47feb1bf4a9a1a4707bc40440c6c5303f3ef5c49ded61558fed
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2-2.debian.tar.xz' sqlite3_3.37.2-2.debian.tar.xz 28536 SHA512:244fccac20d6c63c4897c04bf490603b0ee54d522aa2040d5ff5e41cc4665c8a32ac95e67fbc9961978b67dcbc64f84999b1502fb1696e138a1944aff113cd2f
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2-2ubuntu0.1.debian.tar.xz' sqlite3_3.37.2-2ubuntu0.1.debian.tar.xz 29208 SHA512:db22aee842a2bbeae82d43909e357fb8e0985b1410decf82240d1f86939fd5ac10b116512566d87f2250e7a99e36c3736675d23111e851a7c1cb0d0192157955
 ```
 
 ### `dpkg` source package: `subversion=1.14.1-3ubuntu0.22.04.1`

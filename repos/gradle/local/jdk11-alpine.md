@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f5c07decb2ee0968a7adbc3c187a58346b8979180658204e9e89c0eb3a325e53`
-- Created: `2022-10-07T17:31:27.099658116Z`
-- Virtual Size: ~ 581.12 Mb  
+- Image ID: `sha256:3147bc93ad940430f15d5bd31c45e6b747250a3990064fa400c9879887d9c8f6`
+- Created: `2022-11-04T23:52:29.602525698Z`
+- Virtual Size: ~ 581.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-11.0.16.1+1`
+  - `JAVA_VERSION=jdk-11.0.17+8`
   - `GRADLE_HOME=/opt/gradle`
   - `GRADLE_VERSION=7.5.1`
 
@@ -278,16 +278,16 @@ GPL-3.0-or-later
 ### `apk` package: `git`
 
 ```console
-git-2.36.2-r0 description:
+git-2.36.3-r0 description:
 Distributed version control system
 
-git-2.36.2-r0 webpage:
+git-2.36.3-r0 webpage:
 https://www.git-scm.com/
 
-git-2.36.2-r0 installed size:
+git-2.36.3-r0 installed size:
 10 MiB
 
-git-2.36.2-r0 license:
+git-2.36.3-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -295,16 +295,16 @@ GPL-2.0-or-later
 ### `apk` package: `git-lfs`
 
 ```console
-git-lfs-3.1.4-r4 description:
+git-lfs-3.1.4-r5 description:
 Git extension for versioning large files
 
-git-lfs-3.1.4-r4 webpage:
+git-lfs-3.1.4-r5 webpage:
 https://git-lfs.github.io/
 
-git-lfs-3.1.4-r4 installed size:
+git-lfs-3.1.4-r5 installed size:
 10 MiB
 
-git-lfs-3.1.4-r4 license:
+git-lfs-3.1.4-r5 license:
 MIT
 
 ```
@@ -363,16 +363,16 @@ OpenSSL
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.83.1-r3 description:
+libcurl-7.83.1-r4 description:
 The multiprotocol file transfer library
 
-libcurl-7.83.1-r3 webpage:
+libcurl-7.83.1-r4 webpage:
 https://curl.se/
 
-libcurl-7.83.1-r3 installed size:
-516 KiB
+libcurl-7.83.1-r4 installed size:
+512 KiB
 
-libcurl-7.83.1-r3 license:
+libcurl-7.83.1-r4 license:
 curl
 
 ```
