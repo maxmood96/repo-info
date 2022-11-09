@@ -1,10 +1,10 @@
-# `amazonlinux:2018.03.0.20220907.3-with-sources`
+# `amazonlinux:2018.03.0.20221018.0-with-sources`
 
 ## Docker Metadata
 
-- Image ID: `sha256:27784d8c4b05aa4fbb3556fe55ae176abb2c16639f09575e40dd65f617d9cc57`
-- Created: `2022-10-18T23:20:02.442573633Z`
-- Virtual Size: ~ 620.02 Mb  
+- Image ID: `sha256:cbce77f59d1e6d589eafa0793b60aa0bb0b16dd1eec9459f1c2dd975d4e7ef69`
+- Created: `2022-11-09T00:20:47.653017204Z`
+- Virtual Size: ~ 620.01 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -583,7 +583,7 @@ Licenses (from `rpm --query`): GPLv3+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `tzdata-2022c-1.80.amzn1.noarch`
+### `rpm` package: `tzdata-2022e-1.81.amzn1.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
