@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3562ceb2d38df1345b5758313e0ce03ab7aba906c452cbb04f386ac7289cc6da`
-- Created: `2022-10-31T19:29:19.239154291Z`
+- Image ID: `sha256:9cc45c395fa80a4953809f627fc75df93f399c5f84058a95639f86ef9713204f`
+- Created: `2022-11-07T22:32:56.461519835Z`
 - Virtual Size: ~ 37.07 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 - Labels:
-  - `build-date=20221029`
+  - `build-date=20221105`
   - `name=Photon OS x86_64/4.0 Base Image`
   - `vendor=VMware`
 
@@ -155,7 +155,7 @@ Licenses (from `rpm --query`): MPLv2.0
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `openssl-3.0.6-1.ph4.x86_64`
+### `rpm` package: `openssl-3.0.7-1.ph4.x86_64`
 
 Licenses (from `rpm --query`): OpenSSL
 
