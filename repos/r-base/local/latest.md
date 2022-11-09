@@ -87,19 +87,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.5.3
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.5.3.dsc' apt_2.5.3.dsc 2933 SHA256:0b3236a168d0038731fb4c98fc06512a2de2599c2d28d0ad85a0754d169bfebb
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.5.3.tar.xz' apt_2.5.3.tar.xz 2322196 SHA256:e5b14a37125b7caf9534aad0670e0686b516e2fe9d4d441408397bb498c5c10a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/2.5.3/
 
-- https://sources.debian.net/src/apt/2.5.3/ (for browsing the source)
-- https://sources.debian.net/src/apt/2.5.3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/2.5.3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.1-1`
 
@@ -537,21 +531,13 @@ Licenses: (parsed from: `/usr/share/doc/libcurl4/copyright`)
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.85.0-1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.85.0-1.dsc' curl_7.85.0-1.dsc 2955 SHA256:d0855261f69992255ecd9dd39dae1067df8625821a73589a6405f86ea77fdee7
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.85.0.orig.tar.gz' curl_7.85.0.orig.tar.gz 4182153 SHA256:78a06f918bd5fde3c4573ef4f9806f56372b32ec1829c9ec474799eeee641c27
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.85.0.orig.tar.gz.asc' curl_7.85.0.orig.tar.gz.asc 488 SHA256:6794e4b59dea9dee2c6373be4e1b1cded5c8a9aea8bbf58c3e97f3adfe8d8474
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.85.0-1.debian.tar.xz' curl_7.85.0-1.debian.tar.xz 38160 SHA256:fed9ef7fab87ab12a8290c1a059c05cdfe6ef706d077601bbb30d5a978404be5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/7.85.0-1/
 
-- https://sources.debian.net/src/curl/7.85.0-1/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.85.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.85.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg-8`
 
@@ -1203,20 +1189,13 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.35-4
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.35-4.dsc' glibc_2.35-4.dsc 9731 SHA256:3380c7312e9a2c30a23127a3f368d7b87c42a281d9741cafb270b1a6babf7732
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.35.orig.tar.xz' glibc_2.35.orig.tar.xz 18943876 SHA256:bacb01a162ccf9a683c26684dbf8f077fe9b445db5be439db4e69bbcbc3adb49
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.35-4.debian.tar.xz' glibc_2.35-4.debian.tar.xz 920512 SHA256:dbf4632ab6a78bf51485ce8cd110a9627804bd5fec449f2113995766e0b522e1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glibc/2.35-4/
 
-- https://sources.debian.net/src/glibc/2.35-4/ (for browsing the source)
-- https://sources.debian.net/src/glibc/2.35-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glibc/2.35-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg1-1.1`
 
@@ -3253,21 +3232,13 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.5-4
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.5-4.dsc' openssl_3.0.5-4.dsc 2604 SHA256:83a7c544870e652dac2213cf0ff8eeb8d9d890ba76e9706fa6675e0b2f0f2dbc
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.5.orig.tar.gz' openssl_3.0.5.orig.tar.gz 15074407 SHA256:aa7d8d9bef71ad6525c55ba11e5f4397889ce49c2c9349dcea6d3e4f0b024a7a
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.5.orig.tar.gz.asc' openssl_3.0.5.orig.tar.gz.asc 862 SHA256:95f23bb4eb6faa8d0f1ca1b83cfb00a2bed4b53e124a4f13e1499abc0b426129
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.0.5-4.debian.tar.xz' openssl_3.0.5-4.debian.tar.xz 121912 SHA256:6d0231e1b9166333adfd854fa9433c9d809733bf4c10eb3656e0b37531272e7a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssl/3.0.5-4/
 
-- https://sources.debian.net/src/openssl/3.0.5-4/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.0.5-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.0.5-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.24.1-1`
 
