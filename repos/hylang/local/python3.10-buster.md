@@ -1,10 +1,10 @@
-# `hylang:0.24.0-python3.10-buster`
+# `hylang:0.25.0-python3.10-buster`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b2c1d1d152087dd2de86de45f92273a594af3801a2e8d69da42db15c872ff897`
-- Created: `2022-10-25T20:01:22.450821503Z`
-- Virtual Size: ~ 128.77 Mb  
+- Image ID: `sha256:a87597199a48b260e310cbad95db8659d2a03cf4ba493c454c07efc6ced62354`
+- Created: `2022-11-09T00:32:53.952505036Z`
+- Virtual Size: ~ 128.78 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`
@@ -17,8 +17,8 @@
   - `PYTHON_SETUPTOOLS_VERSION=63.2.0`
   - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/6d265be7a6b5bc4e9c5c07646aee0bf0394be03d/public/get-pip.py`
   - `PYTHON_GET_PIP_SHA256=36c6f6214694ef64cc70f4127ac0ccec668408a93825359d998fb31d24968d67`
-  - `HY_VERSION=0.24.0`
-  - `HYRULE_VERSION=0.2`
+  - `HY_VERSION=0.25.0`
+  - `HYRULE_VERSION=0.2.1`
 
 ## `dpkg` (`.deb`-based packages)
 
