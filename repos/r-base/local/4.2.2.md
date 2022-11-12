@@ -708,20 +708,13 @@ Licenses: (parsed from: `/usr/share/doc/debianutils/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debianutils=5.7-0.3
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_5.7-0.3.dsc' debianutils_5.7-0.3.dsc 1887 SHA256:134707c6467fb895332cf7520dbb2da33fb8b38b7844dec88e64ceb50647512a
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_5.7.orig.tar.gz' debianutils_5.7.orig.tar.gz 257231 SHA256:27ec9e0e7e44dc8ab611aa576330471bacb07e4491ffecf0d3aa6909c92f9022
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_5.7-0.3.debian.tar.xz' debianutils_5.7-0.3.debian.tar.xz 22120 SHA256:c7117659c2913660e2ffa83aa1362c7a2b49a3f1e20fadcf72e64e589540ffe9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debianutils/5.7-0.3/
 
-- https://sources.debian.net/src/debianutils/5.7-0.3/ (for browsing the source)
-- https://sources.debian.net/src/debianutils/5.7-0.3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debianutils/5.7-0.3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `diffutils=1:3.8-1`
 
@@ -1161,17 +1154,11 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris glib2.0=2.74.1-1
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.74.1-1.dsc' glib2.0_2.74.1-1.dsc 3736 SHA256:d4927964a01efbb3d72406d282262b836e1ae58e240596611c9dc05573d52378
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.74.1.orig-unicode-data.tar.xz' glib2.0_2.74.1.orig-unicode-data.tar.xz 266184 SHA256:7c3e36ec1356ac025a92169b74c4c3e6858345f59ed4ea4cf0db300dec4fa21a
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.74.1.orig.tar.xz' glib2.0_2.74.1.orig.tar.xz 5189452 SHA256:0ab981618d1db47845e56417b0d7c123f81a3427b2b9c93f5a46ff5bbb964964
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.74.1-1.debian.tar.xz' glib2.0_2.74.1-1.debian.tar.xz 115012 SHA256:8cf7f72044dd85b89ccda7d49d445ad464d51fce5757d4143d936382cf228f63
+'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.74.1-1.dsc' glib2.0_2.74.1-1.dsc 3736 SHA256:d4927964a01efbb3d72406d282262b836e1ae58e240596611c9dc05573d52378
+'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.74.1.orig-unicode-data.tar.xz' glib2.0_2.74.1.orig-unicode-data.tar.xz 266184 SHA256:7c3e36ec1356ac025a92169b74c4c3e6858345f59ed4ea4cf0db300dec4fa21a
+'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.74.1.orig.tar.xz' glib2.0_2.74.1.orig.tar.xz 5189452 SHA256:0ab981618d1db47845e56417b0d7c123f81a3427b2b9c93f5a46ff5bbb964964
+'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.74.1-1.debian.tar.xz' glib2.0_2.74.1-1.debian.tar.xz 115012 SHA256:8cf7f72044dd85b89ccda7d49d445ad464d51fce5757d4143d936382cf228f63
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/glib2.0/2.74.1-1/ (for browsing the source)
-- https://sources.debian.net/src/glib2.0/2.74.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glib2.0/2.74.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.35-4`
 
