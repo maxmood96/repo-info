@@ -1,7 +1,7 @@
 ## `debian:testing-backports`
 
 ```console
-$ docker pull debian@sha256:ff1579d5a33bfa6c012214ab26b2840d470a3129f5840d09387475449e88456b
+$ docker pull debian@sha256:7825a6a4c65744bac8ab699a781747aac00a42c8d84930ec8f3816dedd031907
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -210,33 +210,33 @@ RUN echo 'deb http://deb.debian.org/debian testing-backports main' > /etc/apt/so
 ### `debian:testing-backports` - linux; ppc64le
 
 ```console
-$ docker pull debian@sha256:7ee3fe003c021425348daeccf242502c1e9ca531a1b7599664a2823946e56121
+$ docker pull debian@sha256:2b47a155eb27a58697dc1ae9bcd56b82d3a6d87bd0d0d2626eaa5918d1fdad13
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **55.3 MB (55338954 bytes)**  
+-	Total Size: **54.4 MB (54361005 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f07a04ffb30db62f97b9948132c41c34cde8bcbe0858c8537ab3a77f4dcaf889`
+-	Image ID: `sha256:7994c0d145089d6f96970079066dfa8d59a60d56b00fa1a992399f8e00dc5cbc`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 25 Oct 2022 03:15:17 GMT
-ADD file:eb3294b440b1de7e5e420328a146136657392ed0568fcc54a574e171e31558a1 in / 
-# Tue, 25 Oct 2022 03:15:20 GMT
+# Tue, 15 Nov 2022 05:20:13 GMT
+ADD file:b31f9696272eafbeb845655f88bb0209d2485cd554d783c62ed79fe03df3b6f1 in / 
+# Tue, 15 Nov 2022 05:20:16 GMT
 CMD ["bash"]
-# Tue, 25 Oct 2022 03:15:25 GMT
+# Tue, 15 Nov 2022 05:20:22 GMT
 RUN echo 'deb http://deb.debian.org/debian testing-backports main' > /etc/apt/sources.list.d/backports.list
 ```
 
 -	Layers:
-	-	`sha256:e78937113e3c6d6902831ab5c7cb1ac7b54dd956b0a882adb2b81160f0cd0833`  
-		Last Modified: Tue, 25 Oct 2022 03:21:41 GMT  
-		Size: 55.3 MB (55338729 bytes)  
+	-	`sha256:a6eac7feede1f3b6d49faead3dce146ea6ba6e6b2e30ff170b0f63eff617cc5c`  
+		Last Modified: Tue, 15 Nov 2022 05:26:20 GMT  
+		Size: 54.4 MB (54360783 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a4b811f6057e845be5e7ea7cc69391617926f6d6ba7e24914e26685e9cc4851`  
-		Last Modified: Tue, 25 Oct 2022 03:21:53 GMT  
-		Size: 225.0 B  
+	-	`sha256:c58e994193dd42b4a1eefe6c8c6734c1a7def558fe4897bc3e9ee4c623eb21ca`  
+		Last Modified: Tue, 15 Nov 2022 05:26:29 GMT  
+		Size: 222.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `debian:testing-backports` - linux; s390x
