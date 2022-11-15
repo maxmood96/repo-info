@@ -1,10 +1,10 @@
-# `tomee:9.0.0-M8-jre17-Temurin-ubuntu-plus`
+# `tomee:9.0.0.RC1-jre17-Temurin-ubuntu-plus`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2cae820bef4bc0d2fdef1fa24d11bda671bd8072635bb825c774446cfb155891`
-- Created: `2022-10-26T20:49:16.642984962Z`
-- Virtual Size: ~ 359.90 Mb  
+- Image ID: `sha256:d1ce1af57266023bb0fadf1b35152a5b9db1d77a55059ca8074f39861b7505d7`
+- Created: `2022-11-14T21:34:10.047520514Z`
+- Virtual Size: ~ 361.14 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -14,8 +14,8 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-17.0.4.1+1`
-  - `TOMEE_VER=9.0.0-M8`
+  - `JAVA_VERSION=jdk-17.0.5+8`
+  - `TOMEE_VER=9.0.0.RC1`
   - `TOMEE_BUILD=plus`
 
 ## `dpkg` (`.deb`-based packages)
