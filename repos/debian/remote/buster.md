@@ -1,7 +1,7 @@
 ## `debian:buster`
 
 ```console
-$ docker pull debian@sha256:e83854c9fb469daa7273d73c43a3fe5ae2da77cb40d3d34282a9af09a9db49f9
+$ docker pull debian@sha256:6c153b6c1b042fb70140a465e6d7c9c4a6112062afdc843c6a4d9c5bbfe5d0d5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14,103 +14,103 @@ $ docker pull debian@sha256:e83854c9fb469daa7273d73c43a3fe5ae2da77cb40d3d34282a9
 ### `debian:buster` - linux; amd64
 
 ```console
-$ docker pull debian@sha256:67bce7e2696486db71ea150f90ab1595dbecca20c5561af85f82428d09029131
+$ docker pull debian@sha256:d0b2ae07eb30bf2ba9575f30beddc778b2b6349a973c6f9037eba5ba862524b8
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.4 MB (50447742 bytes)**  
+-	Total Size: **50.4 MB (50448823 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:47db89e06601df06acb765980f55842fe978c61e8c40d93498b47dbcc3e86245`
+-	Image ID: `sha256:1036dd27958085662ced18b1ef7dfd128314735601d6024be5eed77552ec0a27`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 25 Oct 2022 01:44:02 GMT
-ADD file:259be79d94a2549a667ad08a093fe18f15a6c93d66a0723292f49294e31fc7a1 in / 
-# Tue, 25 Oct 2022 01:44:02 GMT
+# Tue, 15 Nov 2022 04:05:03 GMT
+ADD file:96ca7e18b6141668321140f8ae1a496641f631313035513f1f9314e9dad2cd71 in / 
+# Tue, 15 Nov 2022 04:05:04 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:fd31ec14dccdcda8f2472547f1a94ef0a23b8dabb764cd7b1d48aeee0afea7c8`  
-		Last Modified: Tue, 25 Oct 2022 01:48:15 GMT  
-		Size: 50.4 MB (50447742 bytes)  
+	-	`sha256:2730d739afad9b8ff3e3029e23fd69d9533603751d6e42053ce0068c2b58e258`  
+		Last Modified: Tue, 15 Nov 2022 04:09:05 GMT  
+		Size: 50.4 MB (50448823 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `debian:buster` - linux; arm variant v7
 
 ```console
-$ docker pull debian@sha256:5d1cc5e14ba686366a6483c814d0ddf2e0b56f7d914a74226217b3412ce1e9cf
+$ docker pull debian@sha256:643317b4799f740f497daf7de3a50631d99efe79ac688948db0843cd5cab110b
 ```
 
 -	Docker Version: 20.10.17
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **45.9 MB (45916231 bytes)**  
+-	Total Size: **45.9 MB (45915517 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:96aaac9e9407dd97ae663949473dbc91d44be07c236cedac67eae73dc87a38d2`
+-	Image ID: `sha256:169f143adb041d3554562dd4fa86d44837427ff761f82f138e0424cf6bed705c`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 25 Oct 2022 03:14:44 GMT
-ADD file:68e8c9a779cffc9968c1d577e6367eb14306b9cb1ef195c63c2def986afcec06 in / 
-# Tue, 25 Oct 2022 03:14:45 GMT
+# Tue, 15 Nov 2022 03:43:39 GMT
+ADD file:dd20342abf0e323bf49e7c1f16394f9467c3f5acd35fbae31fc75c86cba3fb75 in / 
+# Tue, 15 Nov 2022 03:43:40 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:a96a0f5b8ad36dd704fa61a4d79f60b2467017919db6ccc83b23de2d450aa97c`  
-		Last Modified: Tue, 25 Oct 2022 03:21:42 GMT  
-		Size: 45.9 MB (45916231 bytes)  
+	-	`sha256:1a476f56def6dfc092fe7a3c33ef48873726f9a805dbf52045aedcba97457b05`  
+		Last Modified: Tue, 15 Nov 2022 03:50:35 GMT  
+		Size: 45.9 MB (45915517 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `debian:buster` - linux; arm64 variant v8
 
 ```console
-$ docker pull debian@sha256:7606bfe436672f9b9c172527bc61a665066ddf1033505da8aca25ab9ed93cdfd
+$ docker pull debian@sha256:5fb6d294a4e1af778e459a514e5b7db71424838b274278a9115b5b3f4407dd99
 ```
 
 -	Docker Version: 20.10.17
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.2 MB (49233280 bytes)**  
+-	Total Size: **49.2 MB (49233786 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:186413d58f996cd4984a376e26277bb92a320c3ce5f6800b9db20c811b9476e2`
+-	Image ID: `sha256:be82c627fbdbfafd819f961a52a53366988ff0829c06d27f744cd7f90acc6fa1`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 25 Oct 2022 05:46:07 GMT
-ADD file:21afa32c0395cc5046d09741d6821d21cfd9b77bce46ebcfc8fd9aca57c73648 in / 
-# Tue, 25 Oct 2022 05:46:08 GMT
+# Tue, 15 Nov 2022 01:41:26 GMT
+ADD file:2122642b8ad9a333f73cba41ff9cc829542740e0e3c88379a7c9511fbfc28991 in / 
+# Tue, 15 Nov 2022 01:41:27 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:3ba81f4c3c21f92780061ee116827d64ac4edbcd02b056845c2aaa3097b730ed`  
-		Last Modified: Tue, 25 Oct 2022 05:49:24 GMT  
-		Size: 49.2 MB (49233280 bytes)  
+	-	`sha256:34983cc1fd1c67f0d8b7b8b4320539206a1c098388b3a671abe88b45f157978d`  
+		Last Modified: Tue, 15 Nov 2022 01:44:52 GMT  
+		Size: 49.2 MB (49233786 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `debian:buster` - linux; 386
 
 ```console
-$ docker pull debian@sha256:e65d1bc329b02b4319d3be960bef39ec8455264cb100b3d1311a2562259b1857
+$ docker pull debian@sha256:1484e73dc959adf76039013b3912d3f0a909410f65d59ffa9d5d1405856f196d
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.2 MB (51207943 bytes)**  
+-	Total Size: **51.2 MB (51207653 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b2950f227db62bdbd9ea508a58c0ec576f7097521c4f0c44955200309c3378e2`
+-	Image ID: `sha256:bad47829aab4b8140b7c545c52b11327cb186945c818b83befb08e6424305379`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 25 Oct 2022 02:22:47 GMT
-ADD file:7e14d4afa5499129c959c5ae5dc270e2fa04659c2c9b0527094cda3494c02d0f in / 
-# Tue, 25 Oct 2022 02:22:47 GMT
+# Tue, 15 Nov 2022 01:41:38 GMT
+ADD file:e8c5010609ee5ceb22093e461dbe3f9748a4d6ca2fd436e635276b0f99e777e8 in / 
+# Tue, 15 Nov 2022 01:41:39 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:76a731c42f665e7334a622f65117ef9389e97a878b7c74bb4a10dfe9cdb296c6`  
-		Last Modified: Tue, 25 Oct 2022 02:28:50 GMT  
-		Size: 51.2 MB (51207943 bytes)  
+	-	`sha256:a9674eda0741cb717f181697e2f2695ea87fdaf557d253407a096f80ad4f9fb3`  
+		Last Modified: Tue, 15 Nov 2022 01:47:27 GMT  
+		Size: 51.2 MB (51207653 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
