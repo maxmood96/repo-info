@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9b4887ef82ef64c7b0ac1af5aba3c442d5a0e5d1859da9852bef41e117752d2d`
-- Created: `2022-10-26T00:00:17.071392475Z`
-- Virtual Size: ~ 1.46 Gb  
+- Image ID: `sha256:b35166170fadf5e1089e76baa18adff542f77975f0277ff50155a09d321326f3`
+- Created: `2022-11-15T10:46:23.724464324Z`
+- Virtual Size: ~ 1.45 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["erl"]`
@@ -1547,24 +1547,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/enchant-2/2.2.15-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/enchant-2/2.2.15-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `expat=2.2.10-2+deb11u4`
+### `dpkg` source package: `expat=2.2.10-2+deb11u5`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.2.10-2+deb11u4`
-- `libexpat1-dev:amd64=2.2.10-2+deb11u4`
+- `libexpat1:amd64=2.2.10-2+deb11u5`
+- `libexpat1-dev:amd64=2.2.10-2+deb11u5`
 
 Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`, `/usr/share/doc/libexpat1-dev/copyright`)
 
 - `MIT`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris expat=2.2.10-2+deb11u5
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.2.10-2%2bdeb11u5.dsc' expat_2.2.10-2+deb11u5.dsc 2175 SHA256:5bbf7d1df4aa4fb5d31141b58dc08a687918c1685c48300bc3f67a8f56fe3071
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.2.10.orig.tar.gz' expat_2.2.10.orig.tar.gz 8276395 SHA256:62e280f5fd29a5b70973f623e20a7412c3e3912c2684cb0e462e2c881be129e1
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.2.10-2%2bdeb11u5.debian.tar.xz' expat_2.2.10-2+deb11u5.debian.tar.xz 29468 SHA256:b24f586a155c207b2dbf6db1b6e4106427150acdd3a654c00c52d400da70d23d
+```
 
-- http://snapshot.debian.org/package/expat/2.2.10-2+deb11u4/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/expat/2.2.10-2+deb11u5/ (for browsing the source)
+- https://sources.debian.net/src/expat/2.2.10-2+deb11u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/expat/2.2.10-2+deb11u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `fftw3=3.3.8-2`
 
@@ -5685,12 +5692,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libxkbcommon/1.0.3-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libxkbcommon/1.0.3-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libxml2=2.9.10+dfsg-6.7+deb11u2`
+### `dpkg` source package: `libxml2=2.9.10+dfsg-6.7+deb11u3`
 
 Binary Packages:
 
-- `libxml2:amd64=2.9.10+dfsg-6.7+deb11u2`
-- `libxml2-dev:amd64=2.9.10+dfsg-6.7+deb11u2`
+- `libxml2:amd64=2.9.10+dfsg-6.7+deb11u3`
+- `libxml2-dev:amd64=2.9.10+dfsg-6.7+deb11u3`
 
 Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`, `/usr/share/doc/libxml2-dev/copyright`)
 
@@ -5700,17 +5707,17 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`, `/usr/share/doc/libx
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libxml2=2.9.10+dfsg-6.7+deb11u2
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.10%2bdfsg-6.7%2bdeb11u2.dsc' libxml2_2.9.10+dfsg-6.7+deb11u2.dsc 2859 SHA256:f80a2929c91dc06cfa84e7e555d5d76c9b9df848d9b3e561e59f1338417feba3
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.10%2bdfsg.orig.tar.xz' libxml2_2.9.10+dfsg.orig.tar.xz 2503560 SHA256:65ee7a2f5e100c64ddf7beb92297c9b2a30b994a76cd1fab67470cf22db6b7d0
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.10%2bdfsg-6.7%2bdeb11u2.debian.tar.xz' libxml2_2.9.10+dfsg-6.7+deb11u2.debian.tar.xz 36368 SHA256:76bb4df309fbb02b26a6d5ab1bc32e158c709f0e7fb255ec734be5efe3cb78d5
+$ apt-get source -qq --print-uris libxml2=2.9.10+dfsg-6.7+deb11u3
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.10%2bdfsg-6.7%2bdeb11u3.dsc' libxml2_2.9.10+dfsg-6.7+deb11u3.dsc 2859 SHA256:92c6d3646f72080370da38a84ee1b4a8c49f99d0254f81ea4e344a25c349915a
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.10%2bdfsg.orig.tar.xz' libxml2_2.9.10+dfsg.orig.tar.xz 2503560 SHA256:65ee7a2f5e100c64ddf7beb92297c9b2a30b994a76cd1fab67470cf22db6b7d0
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.10%2bdfsg-6.7%2bdeb11u3.debian.tar.xz' libxml2_2.9.10+dfsg-6.7+deb11u3.debian.tar.xz 40092 SHA256:af3a4b06a555f9a39d7f7487c330787795d0878c0e28313fcff44904f99a291c
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libxml2/2.9.10+dfsg-6.7+deb11u2/ (for browsing the source)
-- https://sources.debian.net/src/libxml2/2.9.10+dfsg-6.7+deb11u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxml2/2.9.10+dfsg-6.7+deb11u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libxml2/2.9.10+dfsg-6.7+deb11u3/ (for browsing the source)
+- https://sources.debian.net/src/libxml2/2.9.10+dfsg-6.7+deb11u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libxml2/2.9.10+dfsg-6.7+deb11u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxrandr=2:1.5.1-1`
 
@@ -7134,12 +7141,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pinentry/1.1.0-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pinentry/1.1.0-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `pixman=0.40.0-1`
+### `dpkg` source package: `pixman=0.40.0-1.1~deb11u1`
 
 Binary Packages:
 
-- `libpixman-1-0:amd64=0.40.0-1`
-- `libpixman-1-dev:amd64=0.40.0-1`
+- `libpixman-1-0:amd64=0.40.0-1.1~deb11u1`
+- `libpixman-1-dev:amd64=0.40.0-1.1~deb11u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7148,17 +7155,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris pixman=0.40.0-1
-'http://deb.debian.org/debian/pool/main/p/pixman/pixman_0.40.0-1.dsc' pixman_0.40.0-1.dsc 2021 SHA256:908752b9c69211606daa8ee92bd929d80ad5f1c4d68f87b98f4fb33e01d4e455
-'http://deb.debian.org/debian/pool/main/p/pixman/pixman_0.40.0.orig.tar.gz' pixman_0.40.0.orig.tar.gz 913976 SHA256:6d200dec3740d9ec4ec8d1180e25779c00bc749f94278c8b9021f5534db223fc
-'http://deb.debian.org/debian/pool/main/p/pixman/pixman_0.40.0-1.diff.gz' pixman_0.40.0-1.diff.gz 319428 SHA256:66a769eee187ce84ff416752f6913ad2ac6165f3bb61696cf1b43bdef48c41ab
+$ apt-get source -qq --print-uris pixman=0.40.0-1.1~deb11u1
+'http://deb.debian.org/debian-security/pool/updates/main/p/pixman/pixman_0.40.0-1.1%7edeb11u1.dsc' pixman_0.40.0-1.1~deb11u1.dsc 2216 SHA256:f7a628fbfcb5dae5178daab6e0225be55dbf6ffd8efa60429d1d3dd59584d334
+'http://deb.debian.org/debian-security/pool/updates/main/p/pixman/pixman_0.40.0.orig.tar.gz' pixman_0.40.0.orig.tar.gz 913976 SHA256:6d200dec3740d9ec4ec8d1180e25779c00bc749f94278c8b9021f5534db223fc
+'http://deb.debian.org/debian-security/pool/updates/main/p/pixman/pixman_0.40.0-1.1%7edeb11u1.diff.gz' pixman_0.40.0-1.1~deb11u1.diff.gz 320106 SHA256:11dad4be11db34aab221a324b78a5f7a88ac96596f5ac39d4fe3b634325b00b7
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/pixman/0.40.0-1/ (for browsing the source)
-- https://sources.debian.net/src/pixman/0.40.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pixman/0.40.0-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/pixman/0.40.0-1.1~deb11u1/ (for browsing the source)
+- https://sources.debian.net/src/pixman/0.40.0-1.1~deb11u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/pixman/0.40.0-1.1~deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pkg-config=0.29.2-1`
 
@@ -7899,23 +7906,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/twolame/0.4.0-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/twolame/0.4.0-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2021a-1+deb11u7`
+### `dpkg` source package: `tzdata=2021a-1+deb11u8`
 
 Binary Packages:
 
-- `tzdata=2021a-1+deb11u7`
+- `tzdata=2021a-1+deb11u8`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris tzdata=2021a-1+deb11u8
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2021a-1%2bdeb11u8.dsc' tzdata_2021a-1+deb11u8.dsc 2269 SHA256:14db9f37ed6c5d294081edc708f262a4dcd627d22e08789362c88d4a3988f63d
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2021a.orig.tar.gz' tzdata_2021a.orig.tar.gz 411892 SHA256:39e7d2ba08c68cbaefc8de3227aab0dec2521be8042cf56855f7dc3a9fb14e08
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2021a.orig.tar.gz.asc' tzdata_2021a.orig.tar.gz.asc 833 SHA256:9dc5f54674166f4ffbc2d4485e656227430ab5f39c9006e6ed9986281117f058
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2021a-1%2bdeb11u8.debian.tar.xz' tzdata_2021a-1+deb11u8.debian.tar.xz 116136 SHA256:36ec850e434ba28da2a525f3a068c8b17fdddec05c65fd3093505750d0890c8d
+```
 
-- http://snapshot.debian.org/package/tzdata/2021a-1+deb11u7/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/tzdata/2021a-1+deb11u8/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2021a-1+deb11u8/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2021a-1+deb11u8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0043`
 
@@ -8183,12 +8198,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/wayland/1.18.0-2~exp1.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/wayland/1.18.0-2~exp1.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `webkit2gtk=2.38.0-1~deb11u1`
+### `dpkg` source package: `webkit2gtk=2.38.2-1~deb11u1`
 
 Binary Packages:
 
-- `libjavascriptcoregtk-4.0-18:amd64=2.38.0-1~deb11u1`
-- `libwebkit2gtk-4.0-37:amd64=2.38.0-1~deb11u1`
+- `libjavascriptcoregtk-4.0-18:amd64=2.38.2-1~deb11u1`
+- `libwebkit2gtk-4.0-37:amd64=2.38.2-1~deb11u1`
 
 Licenses: (parsed from: `/usr/share/doc/libjavascriptcoregtk-4.0-18/copyright`, `/usr/share/doc/libwebkit2gtk-4.0-37/copyright`)
 
@@ -8224,13 +8239,21 @@ Licenses: (parsed from: `/usr/share/doc/libjavascriptcoregtk-4.0-18/copyright`, 
 - `MPL-2.0`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris webkit2gtk=2.38.2-1~deb11u1
+'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.38.2-1%7edeb11u1.dsc' webkit2gtk_2.38.2-1~deb11u1.dsc 4137 SHA256:af46f58691f15671648bf8e32522d7d95dbaa0e659451fa6c475eb913cdf8d0e
+'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.38.2.orig.tar.xz' webkit2gtk_2.38.2.orig.tar.xz 33006668 SHA256:f3eb82899651f583b4d99cacd16af784a1a7710fce9e7b6807bd6ccde909fe3e
+'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.38.2.orig.tar.xz.asc' webkit2gtk_2.38.2.orig.tar.xz.asc 195 SHA256:23c11b6b5debda8b61bfdf2f05a53b134b9a6f2ffd9be7fe973f8cc55f43c9f4
+'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.38.2-1%7edeb11u1.debian.tar.xz' webkit2gtk_2.38.2-1~deb11u1.debian.tar.xz 77904 SHA256:795d4bb0f6f115f193db702d10baeaa80463bac8fed09deb8a26255e3ac192d6
+```
 
-- http://snapshot.debian.org/package/webkit2gtk/2.38.0-1~deb11u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/webkit2gtk/2.38.2-1~deb11u1/ (for browsing the source)
+- https://sources.debian.net/src/webkit2gtk/2.38.2-1~deb11u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/webkit2gtk/2.38.2-1~deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.21-1+deb11u1`
 
