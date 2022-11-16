@@ -1,10 +1,10 @@
-# `tomcat:9.0.68-jre8-temurin-jammy`
+# `tomcat:9.0.69-jre8-temurin-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5adf181d5b32db8f33a6afa0ae60e943c73145dc146f05d11370c7b99f430de5`
-- Created: `2022-11-05T01:41:32.009978864Z`
-- Virtual Size: ~ 240.98 Mb  
+- Image ID: `sha256:dceef25ef970d31cc46cb7b434e0143acef6c6eab9199d5956dc0f6ec23bc2a8`
+- Created: `2022-11-15T03:09:13.196951098Z`
+- Virtual Size: ~ 241.00 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -20,8 +20,8 @@
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.68`
-  - `TOMCAT_SHA512=840b21c5cd2bfea7bbfed99741c166608fa1515bb00475ebd4eccfd4f3ed2a1be6bfffd590b2a6600003205b62f271b6ba0937e557fc65a536df61cb4f7b7c8f`
+  - `TOMCAT_VERSION=9.0.69`
+  - `TOMCAT_SHA512=8c883c54ce9ce43eba37756a6404cdf3477879883a3e6d146dc8a7aa5e0425f487466afe6b6da4a895927cb7cb59177b9379cec18000f2de12785be57408c779`
 
 ## `dpkg` (`.deb`-based packages)
 
