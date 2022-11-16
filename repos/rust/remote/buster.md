@@ -1,7 +1,7 @@
 ## `rust:buster`
 
 ```console
-$ docker pull rust@sha256:37c4a0e21a7027e5c1162d950c3c6361c05e48220dca257d0f738abfd0a31c6a
+$ docker pull rust@sha256:051bdf5606decd8860508b71ea28454ec18e0125ccedc2f1a0391e5e81596ac7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -72,59 +72,59 @@ RUN set -eux;     dpkgArch="$(dpkg --print-architecture)";     case "${dpkgArch#
 ### `rust:buster` - linux; arm variant v7
 
 ```console
-$ docker pull rust@sha256:b9a755a59ebc51169b17b34372fa5530edadb8f55b3513cab00a8901f1ff9a67
+$ docker pull rust@sha256:3a15ff173a2f4deae29cef69cdc7d19f1180dfc7215a82f1c77a81292719b18c
 ```
 
 -	Docker Version: 20.10.17
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **472.5 MB (472520299 bytes)**  
+-	Total Size: **471.9 MB (471908339 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:60c8bc1fa3fdd52cef77d12a904ca918dde04868099217401c534c11764e6c8d`
+-	Image ID: `sha256:c2abf734a240bdd35562de997f1fdd46820ee9ff8c9fa59dbe628ff725c330c9`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 25 Oct 2022 03:14:44 GMT
-ADD file:68e8c9a779cffc9968c1d577e6367eb14306b9cb1ef195c63c2def986afcec06 in / 
-# Tue, 25 Oct 2022 03:14:45 GMT
+# Tue, 15 Nov 2022 03:43:39 GMT
+ADD file:dd20342abf0e323bf49e7c1f16394f9467c3f5acd35fbae31fc75c86cba3fb75 in / 
+# Tue, 15 Nov 2022 03:43:40 GMT
 CMD ["bash"]
-# Wed, 26 Oct 2022 04:37:37 GMT
+# Tue, 15 Nov 2022 12:19:44 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 26 Oct 2022 04:37:43 GMT
+# Tue, 15 Nov 2022 12:19:50 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Wed, 26 Oct 2022 04:38:04 GMT
+# Tue, 15 Nov 2022 12:20:15 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 26 Oct 2022 04:38:58 GMT
+# Tue, 15 Nov 2022 12:21:23 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 03 Nov 2022 21:07:44 GMT
+# Wed, 16 Nov 2022 09:36:55 GMT
 ENV RUSTUP_HOME=/usr/local/rustup CARGO_HOME=/usr/local/cargo PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin RUST_VERSION=1.65.0
-# Thu, 03 Nov 2022 21:08:05 GMT
+# Wed, 16 Nov 2022 09:37:13 GMT
 RUN set -eux;     dpkgArch="$(dpkg --print-architecture)";     case "${dpkgArch##*-}" in         amd64) rustArch='x86_64-unknown-linux-gnu'; rustupSha256='5cc9ffd1026e82e7fb2eec2121ad71f4b0f044e88bca39207b3f6b769aaa799c' ;;         armhf) rustArch='armv7-unknown-linux-gnueabihf'; rustupSha256='48c5ecfd1409da93164af20cf4ac2c6f00688b15eb6ba65047f654060c844d85' ;;         arm64) rustArch='aarch64-unknown-linux-gnu'; rustupSha256='e189948e396d47254103a49c987e7fb0e5dd8e34b200aa4481ecc4b8e41fb929' ;;         i386) rustArch='i686-unknown-linux-gnu'; rustupSha256='0e0be29c560ad958ba52fcf06b3ea04435cb3cd674fbe11ce7d954093b9504fd' ;;         *) echo >&2 "unsupported architecture: ${dpkgArch}"; exit 1 ;;     esac;     url="https://static.rust-lang.org/rustup/archive/1.25.1/${rustArch}/rustup-init";     wget "$url";     echo "${rustupSha256} *rustup-init" | sha256sum -c -;     chmod +x rustup-init;     ./rustup-init -y --no-modify-path --profile minimal --default-toolchain $RUST_VERSION --default-host ${rustArch};     rm rustup-init;     chmod -R a+w $RUSTUP_HOME $CARGO_HOME;     rustup --version;     cargo --version;     rustc --version;
 ```
 
 -	Layers:
-	-	`sha256:a96a0f5b8ad36dd704fa61a4d79f60b2467017919db6ccc83b23de2d450aa97c`  
-		Last Modified: Tue, 25 Oct 2022 03:21:42 GMT  
-		Size: 45.9 MB (45916231 bytes)  
+	-	`sha256:1a476f56def6dfc092fe7a3c33ef48873726f9a805dbf52045aedcba97457b05`  
+		Last Modified: Tue, 15 Nov 2022 03:50:35 GMT  
+		Size: 45.9 MB (45915517 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:effd5ac5b158fe16c9f433d43a240f34a43c487c5068e15f63e4b8d39950d235`  
-		Last Modified: Wed, 26 Oct 2022 05:12:02 GMT  
-		Size: 7.1 MB (7147662 bytes)  
+	-	`sha256:352fbea97a15bd26dc5e44787bd6f5113c66c38056282e909b7d724ea8eb559a`  
+		Last Modified: Tue, 15 Nov 2022 12:29:48 GMT  
+		Size: 7.1 MB (7147618 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42c96180c4ced7c4701fea5d141a40207e07023179440f5fae4f42b21f491bda`  
-		Last Modified: Wed, 26 Oct 2022 05:12:03 GMT  
-		Size: 9.3 MB (9348913 bytes)  
+	-	`sha256:9b55a093d0723b63c17033c473fcfb5e4f6d9fb39dbc4536d3f443ac3cd3cfa0`  
+		Last Modified: Tue, 15 Nov 2022 12:29:48 GMT  
+		Size: 9.3 MB (9348784 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5c4ec861b1eb1e561a265ce55e567d76fca7afe8f12be70c3994efc67e7e578e`  
-		Last Modified: Wed, 26 Oct 2022 05:12:24 GMT  
-		Size: 47.4 MB (47377145 bytes)  
+	-	`sha256:66539f69ff6db301e9797504ede773958b307f5aa07600994a0c08260a1a5db3`  
+		Last Modified: Tue, 15 Nov 2022 12:30:08 GMT  
+		Size: 47.4 MB (47379004 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:312a0015e4c0d2af580cce4ba48f5caf0086e8c1cd391412dd6d6ee023cc4d42`  
-		Last Modified: Wed, 26 Oct 2022 05:13:05 GMT  
-		Size: 168.7 MB (168690570 bytes)  
+	-	`sha256:f4e294bcd4569e0666ea603ca7bedb3173e02916a07709de98ae44a93c20fde6`  
+		Last Modified: Tue, 15 Nov 2022 12:30:44 GMT  
+		Size: 168.1 MB (168077591 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:65cc4d3714369d1ad3b8459829bb019deffed3d9140a8dce0a777d8a81648ea2`  
-		Last Modified: Thu, 03 Nov 2022 21:11:45 GMT  
-		Size: 194.0 MB (194039778 bytes)  
+	-	`sha256:9cd452e0365c546f6b1e7427d750231adac39da45ab49032399338e5611696ca`  
+		Last Modified: Wed, 16 Nov 2022 09:40:55 GMT  
+		Size: 194.0 MB (194039825 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rust:buster` - linux; arm64 variant v8
