@@ -1,7 +1,7 @@
 ## `python:3-slim`
 
 ```console
-$ docker pull python@sha256:c320377f5b91624b80aae3a8925aa32793bd0272339848ef7f26053908ccbfd2
+$ docker pull python@sha256:255f44d6ca7e7d3f64d3c76346ec887fd6267428837613cb2b35e1da20ff26ae
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17,14 +17,14 @@ $ docker pull python@sha256:c320377f5b91624b80aae3a8925aa32793bd0272339848ef7f26
 ### `python:3-slim` - linux; amd64
 
 ```console
-$ docker pull python@sha256:c0a0e5d5944544e39e11eb9502b1278de1972f38356342cedd69881bf1e3cf4e
+$ docker pull python@sha256:b59417e37f49eaf8f60a68193f1b27ea4f4c996394e88535b45509c8322a0f8a
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **48.4 MB (48425740 bytes)**  
+-	Total Size: **48.4 MB (48425815 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e43fcceba8c7af7a3e12cd5ca97cd1f0667b87fe089dcc3ea9c7236d4687a098`
+-	Image ID: `sha256:626d06aea4906f626376189a2a74cd109a149b1aa2f1a2ae8130f8e92c5b24d2`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -50,13 +50,13 @@ RUN set -eux; 	for src in idle3 pydoc3 python3 python3-config; do 		dst="$(echo 
 ENV PYTHON_PIP_VERSION=22.3
 # Tue, 15 Nov 2022 20:16:53 GMT
 ENV PYTHON_SETUPTOOLS_VERSION=65.5.0
-# Tue, 15 Nov 2022 20:16:54 GMT
-ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/6d265be7a6b5bc4e9c5c07646aee0bf0394be03d/public/get-pip.py
-# Tue, 15 Nov 2022 20:16:54 GMT
-ENV PYTHON_GET_PIP_SHA256=36c6f6214694ef64cc70f4127ac0ccec668408a93825359d998fb31d24968d67
-# Tue, 15 Nov 2022 20:17:06 GMT
+# Wed, 16 Nov 2022 06:55:31 GMT
+ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/66030fa03382b4914d4c4d0896961a0bdeeeb274/public/get-pip.py
+# Wed, 16 Nov 2022 06:55:32 GMT
+ENV PYTHON_GET_PIP_SHA256=1e501cf004eac1b7eb1f97266d28f995ae835d30250bec7f8850562703067dc6
+# Wed, 16 Nov 2022 06:55:42 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		export PYTHONDONTWRITEBYTECODE=1; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		--no-compile 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	rm -f get-pip.py; 		pip --version
-# Tue, 15 Nov 2022 20:17:06 GMT
+# Wed, 16 Nov 2022 06:55:42 GMT
 CMD ["python3"]
 ```
 
@@ -77,9 +77,9 @@ CMD ["python3"]
 		Last Modified: Tue, 15 Nov 2022 22:59:22 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:573f0ae308837a043f8246d03c707224f4032dfd982265e82658f31b47454d7f`  
-		Last Modified: Tue, 15 Nov 2022 22:59:23 GMT  
-		Size: 3.3 MB (3348878 bytes)  
+	-	`sha256:3f7bf64971b8ca870b8bc8476ffc783c777f6bb3bb53e50d8e719f1ea1bad697`  
+		Last Modified: Wed, 16 Nov 2022 07:04:31 GMT  
+		Size: 3.3 MB (3348953 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `python:3-slim` - linux; arm variant v5
@@ -357,14 +357,14 @@ CMD ["python3"]
 ### `python:3-slim` - linux; ppc64le
 
 ```console
-$ docker pull python@sha256:7c872458b04d31a3d647ae853498fdc2300279991b6fbea44bd28158c40897d0
+$ docker pull python@sha256:416248335dcd82189870458eebffd13bae75d51bad98b6cfe893b6263063f09e
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **52.7 MB (52686460 bytes)**  
+-	Total Size: **52.7 MB (52686469 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0561fdaf21bbb6af429471f8e928e009e9256988fe10389009eeeec80415cce9`
+-	Image ID: `sha256:7905f439e8fd17c7dbb082b855167a525d756e4a68daf63a2236278447921227`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -390,13 +390,13 @@ RUN set -eux; 	for src in idle3 pydoc3 python3 python3-config; do 		dst="$(echo 
 ENV PYTHON_PIP_VERSION=22.3
 # Tue, 15 Nov 2022 15:25:31 GMT
 ENV PYTHON_SETUPTOOLS_VERSION=65.5.0
-# Tue, 15 Nov 2022 15:25:31 GMT
-ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/6d265be7a6b5bc4e9c5c07646aee0bf0394be03d/public/get-pip.py
-# Tue, 15 Nov 2022 15:25:31 GMT
-ENV PYTHON_GET_PIP_SHA256=36c6f6214694ef64cc70f4127ac0ccec668408a93825359d998fb31d24968d67
-# Tue, 15 Nov 2022 15:25:52 GMT
+# Wed, 16 Nov 2022 06:27:45 GMT
+ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/66030fa03382b4914d4c4d0896961a0bdeeeb274/public/get-pip.py
+# Wed, 16 Nov 2022 06:27:46 GMT
+ENV PYTHON_GET_PIP_SHA256=1e501cf004eac1b7eb1f97266d28f995ae835d30250bec7f8850562703067dc6
+# Wed, 16 Nov 2022 06:28:06 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		export PYTHONDONTWRITEBYTECODE=1; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		--no-compile 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	rm -f get-pip.py; 		pip --version
-# Tue, 15 Nov 2022 15:25:53 GMT
+# Wed, 16 Nov 2022 06:28:07 GMT
 CMD ["python3"]
 ```
 
@@ -417,9 +417,9 @@ CMD ["python3"]
 		Last Modified: Tue, 15 Nov 2022 17:58:50 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:78a049d0002a1dbdd1fdc8390a7a2e72083bfc59afc5daea0fd59f0e5fb56a2e`  
-		Last Modified: Tue, 15 Nov 2022 17:58:51 GMT  
-		Size: 3.3 MB (3349121 bytes)  
+	-	`sha256:a76a75d59183d172f23c152a8f9b934d52c2bbe4e381b7d98e6254342b65c9ad`  
+		Last Modified: Wed, 16 Nov 2022 07:01:30 GMT  
+		Size: 3.3 MB (3349130 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `python:3-slim` - linux; s390x
