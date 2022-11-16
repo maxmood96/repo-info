@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:371a122d4760cc3eeb4437cc8a1892a8c073d4446d1ea8b37fb300cceed77254`
-- Created: `2022-11-09T21:20:29.367050033Z`
-- Virtual Size: ~ 322.69 Mb  
+- Image ID: `sha256:7c4683f9e270dc89739f5000c035eb6eda0b4bc694d83be7214c6fb9bab1c4c0`
+- Created: `2022-11-12T12:45:46.756707512Z`
+- Virtual Size: ~ 319.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -32,16 +32,16 @@
 ### `apk` package: `alpine-baselayout`
 
 ```console
-alpine-baselayout-3.2.0-r22 description:
+alpine-baselayout-3.2.0-r23 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-3.2.0-r22 webpage:
+alpine-baselayout-3.2.0-r23 webpage:
 https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
-alpine-baselayout-3.2.0-r22 installed size:
+alpine-baselayout-3.2.0-r23 installed size:
 340 KiB
 
-alpine-baselayout-3.2.0-r22 license:
+alpine-baselayout-3.2.0-r23 license:
 GPL-2.0-only
 
 ```
@@ -49,16 +49,16 @@ GPL-2.0-only
 ### `apk` package: `alpine-baselayout-data`
 
 ```console
-alpine-baselayout-data-3.2.0-r22 description:
+alpine-baselayout-data-3.2.0-r23 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-data-3.2.0-r22 webpage:
+alpine-baselayout-data-3.2.0-r23 webpage:
 https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
-alpine-baselayout-data-3.2.0-r22 installed size:
-72 KiB
+alpine-baselayout-data-3.2.0-r23 installed size:
+76 KiB
 
-alpine-baselayout-data-3.2.0-r22 license:
+alpine-baselayout-data-3.2.0-r23 license:
 GPL-2.0-only
 
 ```
@@ -287,16 +287,16 @@ GPL-2.0-only
 ### `apk` package: `curl`
 
 ```console
-curl-7.83.1-r3 description:
+curl-7.83.1-r4 description:
 URL retrival utility and library
 
-curl-7.83.1-r3 webpage:
+curl-7.83.1-r4 webpage:
 https://curl.se/
 
-curl-7.83.1-r3 installed size:
+curl-7.83.1-r4 installed size:
 256 KiB
 
-curl-7.83.1-r3 license:
+curl-7.83.1-r4 license:
 curl
 
 ```
@@ -882,16 +882,16 @@ Apache-2.0
 ### `apk` package: `libldap`
 
 ```console
-libldap-2.6.3-r1 description:
+libldap-2.6.3-r3 description:
 OpenLDAP libraries
 
-libldap-2.6.3-r1 webpage:
+libldap-2.6.3-r3 webpage:
 https://www.openldap.org/
 
-libldap-2.6.3-r1 installed size:
+libldap-2.6.3-r3 installed size:
 400 KiB
 
-libldap-2.6.3-r1 license:
+libldap-2.6.3-r3 license:
 OLDAP-2.8
 
 ```
@@ -1001,16 +1001,16 @@ LGPL-2.1-or-later
 ### `apk` package: `libsasl`
 
 ```console
-libsasl-2.1.28-r0 description:
+libsasl-2.1.28-r1 description:
 Cyrus Simple Authentication and Security Layer (SASL) library
 
-libsasl-2.1.28-r0 webpage:
+libsasl-2.1.28-r1 webpage:
 https://www.cyrusimap.org/sasl/
 
-libsasl-2.1.28-r0 installed size:
+libsasl-2.1.28-r1 installed size:
 192 KiB
 
-libsasl-2.1.28-r0 license:
+libsasl-2.1.28-r1 license:
 custom
 
 ```
@@ -1273,16 +1273,16 @@ BSD-3-Clause
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.3-r0 description:
+musl-1.2.3-r2 description:
 the musl c library (libc) implementation
 
-musl-1.2.3-r0 webpage:
+musl-1.2.3-r2 webpage:
 https://musl.libc.org/
 
-musl-1.2.3-r0 installed size:
+musl-1.2.3-r2 installed size:
 608 KiB
 
-musl-1.2.3-r0 license:
+musl-1.2.3-r2 license:
 MIT
 
 ```
@@ -1290,16 +1290,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.3-r0 description:
+musl-utils-1.2.3-r1 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.3-r0 webpage:
+musl-utils-1.2.3-r1 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.3-r0 installed size:
+musl-utils-1.2.3-r1 installed size:
 132 KiB
 
-musl-utils-1.2.3-r0 license:
+musl-utils-1.2.3-r1 license:
 MIT BSD GPL2+
 
 ```
@@ -1409,16 +1409,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-1.1.1q-r0 description:
+openssl-1.1.1s-r0 description:
 toolkit for transport layer security (TLS) - version 1.1
 
-openssl-1.1.1q-r0 webpage:
+openssl-1.1.1s-r0 webpage:
 https://www.openssl.org/
 
-openssl-1.1.1q-r0 installed size:
+openssl-1.1.1s-r0 installed size:
 660 KiB
 
-openssl-1.1.1q-r0 license:
+openssl-1.1.1s-r0 license:
 OpenSSL
 
 ```
@@ -1477,16 +1477,16 @@ BSD-3-Clause
 ### `apk` package: `pixman`
 
 ```console
-pixman-0.40.0-r3 description:
+pixman-0.40.0-r4 description:
 Low-level pixel manipulation library
 
-pixman-0.40.0-r3 webpage:
+pixman-0.40.0-r4 webpage:
 https://gitlab.freedesktop.org/pixman
 
-pixman-0.40.0-r3 installed size:
+pixman-0.40.0-r4 installed size:
 604 KiB
 
-pixman-0.40.0-r3 license:
+pixman-0.40.0-r4 license:
 MIT
 
 ```
