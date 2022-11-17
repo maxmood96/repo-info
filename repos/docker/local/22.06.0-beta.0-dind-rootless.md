@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:815b86844c41c4bd8941387250657a6f47bfd4481536d3bf4338351ffcbb4d3c`
-- Created: `2022-10-25T01:30:33.545484155Z`
-- Virtual Size: ~ 357.76 Mb  
+- Image ID: `sha256:ace2bd7e96b7cfbf5afddcce8207fef05e863a0cdb403bde14d9aea4abfc03b8`
+- Created: `2022-11-16T20:20:02.755287513Z`
+- Virtual Size: ~ 358.36 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
@@ -14,23 +14,23 @@
   - `DOCKER_BUILDX_VERSION=0.9.1`
   - `DOCKER_COMPOSE_VERSION=2.12.2`
   - `DOCKER_TLS_CERTDIR=/certs`
-  - `DIND_COMMIT=42b1175eda071c0e9121e1d64345928384a93df1`
+  - `DIND_COMMIT=1f32e3c95d72a29b3eaacba156ed675dba976cb5`
 
 ## `apk` (`.apk`-based packages)
 
 ### `apk` package: `alpine-baselayout`
 
 ```console
-alpine-baselayout-3.2.0-r22 description:
+alpine-baselayout-3.2.0-r23 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-3.2.0-r22 webpage:
+alpine-baselayout-3.2.0-r23 webpage:
 https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
-alpine-baselayout-3.2.0-r22 installed size:
+alpine-baselayout-3.2.0-r23 installed size:
 340 KiB
 
-alpine-baselayout-3.2.0-r22 license:
+alpine-baselayout-3.2.0-r23 license:
 GPL-2.0-only
 
 ```
@@ -38,16 +38,16 @@ GPL-2.0-only
 ### `apk` package: `alpine-baselayout-data`
 
 ```console
-alpine-baselayout-data-3.2.0-r22 description:
+alpine-baselayout-data-3.2.0-r23 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-data-3.2.0-r22 webpage:
+alpine-baselayout-data-3.2.0-r23 webpage:
 https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
-alpine-baselayout-data-3.2.0-r22 installed size:
-72 KiB
+alpine-baselayout-data-3.2.0-r23 installed size:
+76 KiB
 
-alpine-baselayout-data-3.2.0-r22 license:
+alpine-baselayout-data-3.2.0-r23 license:
 GPL-2.0-only
 
 ```
@@ -531,16 +531,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libc6-compat`
 
 ```console
-libc6-compat-1.2.3-r0 description:
+libc6-compat-1.2.3-r2 description:
 compatibility libraries for glibc
 
-libc6-compat-1.2.3-r0 webpage:
+libc6-compat-1.2.3-r2 webpage:
 https://musl.libc.org/
 
-libc6-compat-1.2.3-r0 installed size:
+libc6-compat-1.2.3-r2 installed size:
 12 KiB
 
-libc6-compat-1.2.3-r0 license:
+libc6-compat-1.2.3-r2 license:
 MIT
 
 ```
@@ -582,16 +582,16 @@ GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1q-r0 description:
+libcrypto1.1-1.1.1s-r0 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1q-r0 webpage:
+libcrypto1.1-1.1.1s-r0 webpage:
 https://www.openssl.org/
 
-libcrypto1.1-1.1.1q-r0 installed size:
+libcrypto1.1-1.1.1s-r0 installed size:
 2708 KiB
 
-libcrypto1.1-1.1.1q-r0 license:
+libcrypto1.1-1.1.1s-r0 license:
 OpenSSL
 
 ```
@@ -684,16 +684,16 @@ GPL-2.0-or-later
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1q-r0 description:
+libssl1.1-1.1.1s-r0 description:
 SSL shared libraries
 
-libssl1.1-1.1.1q-r0 webpage:
+libssl1.1-1.1.1s-r0 webpage:
 https://www.openssl.org/
 
-libssl1.1-1.1.1q-r0 installed size:
+libssl1.1-1.1.1s-r0 installed size:
 528 KiB
 
-libssl1.1-1.1.1q-r0 license:
+libssl1.1-1.1.1s-r0 license:
 OpenSSL
 
 ```
@@ -803,16 +803,16 @@ GPL-2.0-or-later
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.3-r0 description:
+musl-1.2.3-r2 description:
 the musl c library (libc) implementation
 
-musl-1.2.3-r0 webpage:
+musl-1.2.3-r2 webpage:
 https://musl.libc.org/
 
-musl-1.2.3-r0 installed size:
+musl-1.2.3-r2 installed size:
 608 KiB
 
-musl-1.2.3-r0 license:
+musl-1.2.3-r2 license:
 MIT
 
 ```
@@ -820,16 +820,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.3-r0 description:
+musl-utils-1.2.3-r1 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.3-r0 webpage:
+musl-utils-1.2.3-r1 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.3-r0 installed size:
+musl-utils-1.2.3-r1 installed size:
 132 KiB
 
-musl-utils-1.2.3-r0 license:
+musl-utils-1.2.3-r1 license:
 MIT BSD GPL2+
 
 ```
@@ -922,16 +922,16 @@ BSD
 ### `apk` package: `openssl`
 
 ```console
-openssl-1.1.1q-r0 description:
+openssl-1.1.1s-r0 description:
 toolkit for transport layer security (TLS) - version 1.1
 
-openssl-1.1.1q-r0 webpage:
+openssl-1.1.1s-r0 webpage:
 https://www.openssl.org/
 
-openssl-1.1.1q-r0 installed size:
+openssl-1.1.1s-r0 installed size:
 660 KiB
 
-openssl-1.1.1q-r0 license:
+openssl-1.1.1s-r0 license:
 OpenSSL
 
 ```
