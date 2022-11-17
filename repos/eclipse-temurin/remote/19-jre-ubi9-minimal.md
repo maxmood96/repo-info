@@ -1,3 +1,372 @@
 ## `eclipse-temurin:19-jre-ubi9-minimal`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:afeaaa6664ec2d82d5d3383a751111b4c9e0469b8963621d37c4d3450f793172
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 4
+	-	linux; amd64
+	-	linux; arm64 variant v8
+	-	linux; ppc64le
+	-	linux; s390x
+
+### `eclipse-temurin:19-jre-ubi9-minimal` - linux; amd64
+
+```console
+$ docker pull eclipse-temurin@sha256:80319dfb166425f741f74f7726a8c375ed7e1989567fa00395bcd8dc1313d41c
+```
+
+-	Docker Version: 20.10.12
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **117.1 MB (117051645 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:8f92eb7f60d0d7a7b97de6e31896e5806397099a5e87529c4f0b677cedee0fb9`
+-	Default Command: `["\/bin\/bash"]`
+
+```dockerfile
+# Wed, 09 Nov 2022 13:44:42 GMT
+ADD file:7b3aab3c25c29047a9bd11941a3e9ccfde01adc9bbbbf15bbdd780231892edc1 in / 
+# Wed, 09 Nov 2022 13:44:42 GMT
+ADD file:214c1de395c24e4a86ef9a706069ef30a9e804c63f851c37c35655e16fea3ced in /tmp/tls-ca-bundle.pem 
+# Wed, 09 Nov 2022 13:44:42 GMT
+ADD multi:30ff6a02e0f899d3bc68d3fabc66b2b79dc0a64adc0f1b34ed26fe13df185b90 in /etc/yum.repos.d/ 
+# Wed, 09 Nov 2022 13:44:42 GMT
+LABEL maintainer="Red Hat, Inc."
+# Wed, 09 Nov 2022 13:44:42 GMT
+LABEL com.redhat.component="ubi9-minimal-container"       name="ubi9-minimal"       version="9.1.0"
+# Wed, 09 Nov 2022 13:44:42 GMT
+LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
+# Wed, 09 Nov 2022 13:44:42 GMT
+LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 9."
+# Wed, 09 Nov 2022 13:44:42 GMT
+LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
+# Wed, 09 Nov 2022 13:44:42 GMT
+LABEL io.k8s.display-name="Red Hat Universal Base Image 9 Minimal"
+# Wed, 09 Nov 2022 13:44:42 GMT
+LABEL io.openshift.expose-services=""
+# Wed, 09 Nov 2022 13:44:42 GMT
+LABEL io.openshift.tags="minimal rhel9"
+# Wed, 09 Nov 2022 13:44:42 GMT
+ENV container oci
+# Wed, 09 Nov 2022 13:44:42 GMT
+ENV PATH /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 09 Nov 2022 13:44:42 GMT
+CMD ["/bin/bash"]
+# Wed, 09 Nov 2022 13:44:43 GMT
+RUN rm -rf /var/log/*
+# Wed, 09 Nov 2022 13:44:43 GMT
+LABEL release=1656
+# Wed, 09 Nov 2022 13:44:44 GMT
+ADD file:2ee23fa79b125669153ba526f3027c406136fcda77f38f5b972b6909b03bd62b in /root/buildinfo/content_manifests/ubi9-minimal-container-9.1.0-1656.json 
+# Wed, 09 Nov 2022 13:44:44 GMT
+ADD file:cba9034625dcd3d13a92da2b903766954a174dea51345b8298bf1b82d79d01be in /root/buildinfo/Dockerfile-ubi9-minimal-9.1.0-1656 
+# Wed, 09 Nov 2022 13:44:44 GMT
+LABEL "distribution-scope"="public" "vendor"="Red Hat, Inc." "build-date"="2022-11-09T13:34:12" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="befaf1f5ec7b874aef2651ee1384d51828504eb9" "io.k8s.description"="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly." "url"="https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9-minimal/images/9.1.0-1656"
+# Wed, 09 Nov 2022 13:44:45 GMT
+RUN rm -f '/etc/yum.repos.d/repo-f4c1a.repo' '/etc/yum.repos.d/repo-33b3b.repo'
+# Wed, 09 Nov 2022 13:44:47 GMT
+RUN rm -f /tmp/tls-ca-bundle.pem
+# Thu, 17 Nov 2022 00:20:15 GMT
+ENV JAVA_HOME=/opt/java/openjdk
+# Thu, 17 Nov 2022 00:20:15 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Thu, 17 Nov 2022 00:20:15 GMT
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+# Thu, 17 Nov 2022 00:20:24 GMT
+RUN microdnf install -y binutils tzdata openssl wget ca-certificates fontconfig glibc-langpack-en gzip tar     && microdnf clean all
+# Thu, 17 Nov 2022 00:22:25 GMT
+ENV JAVA_VERSION=jdk-19.0.1+10
+# Thu, 17 Nov 2022 00:23:06 GMT
+RUN set -eux;     ARCH="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')";     case "${ARCH}" in        aarch64|arm64)          ESUM='c69ffc5474be076b200e8cc72417b838e4f830b36603d593fb8ca6d11b81969b';          BINARY_URL='https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19.0.1%2B10/OpenJDK19U-jre_aarch64_linux_hotspot_19.0.1_10.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='c5f3d67edfa0d9b5ec935f944c177c0ee4b2d7a2b5846feaf187b77e954f4242';          BINARY_URL='https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19.0.1%2B10/OpenJDK19U-jre_ppc64le_linux_hotspot_19.0.1_10.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='6293529eba7872b47dfaa1ccfd321661720d538d22a0abfe53259d61f348d070';          BINARY_URL='https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19.0.1%2B10/OpenJDK19U-jre_s390x_linux_hotspot_19.0.1_10.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='68cae46c973e48ca6777cd0026bbf25f3457bd3d6730c36bd79d4f3b398c8338';          BINARY_URL='https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19.0.1%2B10/OpenJDK19U-jre_x64_linux_hotspot_19.0.1_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm /tmp/openjdk.tar.gz;
+# Thu, 17 Nov 2022 00:23:07 GMT
+RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo java --version && java --version     && echo Complete.
+```
+
+-	Layers:
+	-	`sha256:370b922a565a4b8fc293d71dfab1a9b03877e7981e294fb4d032629cff2908ea`  
+		Last Modified: Wed, 16 Nov 2022 03:31:29 GMT  
+		Size: 37.9 MB (37924180 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3a4a315172de5e471c299b202c75ad450791e6a58aafc696280fdde7bf9de66a`  
+		Last Modified: Thu, 17 Nov 2022 00:25:05 GMT  
+		Size: 29.7 MB (29681415 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:480d66497bc1219aeeeaf2ff82bd9fd62ce6c8bfd562f95260a5a3e83ed7042d`  
+		Last Modified: Thu, 17 Nov 2022 00:27:58 GMT  
+		Size: 49.4 MB (49445890 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d94fd2cf04fe57bb338c3d5afc90a3bbb74f34c828653c5438505cf2a71a94ab`  
+		Last Modified: Thu, 17 Nov 2022 00:27:51 GMT  
+		Size: 160.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `eclipse-temurin:19-jre-ubi9-minimal` - linux; arm64 variant v8
+
+```console
+$ docker pull eclipse-temurin@sha256:006efa517c5bba612098bcb041569b17f0ce946457e290389e1477fdfe8293f6
+```
+
+-	Docker Version: 20.10.17
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **115.1 MB (115078498 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:2d8007ec5fb90eaf18afd55285df93949e1554b9a604c65f3cc4b82f14aca1a0`
+-	Default Command: `["\/bin\/bash"]`
+
+```dockerfile
+# Wed, 09 Nov 2022 13:44:44 GMT
+ADD file:4bdffe661347b90e953f55c24556c3b4f4e5ba3f83e11ba255b6991fc4388f0d in / 
+# Wed, 09 Nov 2022 13:44:44 GMT
+ADD file:214c1de395c24e4a86ef9a706069ef30a9e804c63f851c37c35655e16fea3ced in /tmp/tls-ca-bundle.pem 
+# Wed, 09 Nov 2022 13:44:44 GMT
+ADD multi:30ff6a02e0f899d3bc68d3fabc66b2b79dc0a64adc0f1b34ed26fe13df185b90 in /etc/yum.repos.d/ 
+# Wed, 09 Nov 2022 13:44:44 GMT
+LABEL maintainer="Red Hat, Inc."
+# Wed, 09 Nov 2022 13:44:44 GMT
+LABEL com.redhat.component="ubi9-minimal-container"       name="ubi9-minimal"       version="9.1.0"
+# Wed, 09 Nov 2022 13:44:44 GMT
+LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
+# Wed, 09 Nov 2022 13:44:44 GMT
+LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 9."
+# Wed, 09 Nov 2022 13:44:44 GMT
+LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
+# Wed, 09 Nov 2022 13:44:44 GMT
+LABEL io.k8s.display-name="Red Hat Universal Base Image 9 Minimal"
+# Wed, 09 Nov 2022 13:44:44 GMT
+LABEL io.openshift.expose-services=""
+# Wed, 09 Nov 2022 13:44:44 GMT
+LABEL io.openshift.tags="minimal rhel9"
+# Wed, 09 Nov 2022 13:44:44 GMT
+ENV container oci
+# Wed, 09 Nov 2022 13:44:44 GMT
+ENV PATH /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 09 Nov 2022 13:44:44 GMT
+CMD ["/bin/bash"]
+# Wed, 09 Nov 2022 13:44:45 GMT
+RUN rm -rf /var/log/*
+# Wed, 09 Nov 2022 13:44:45 GMT
+LABEL release=1656
+# Wed, 09 Nov 2022 13:44:46 GMT
+ADD file:92a16ecbaa8d380506f46b78ebac1017789d726f830c1562f9310d3e5dbec611 in /root/buildinfo/content_manifests/ubi9-minimal-container-9.1.0-1656.json 
+# Wed, 09 Nov 2022 13:44:46 GMT
+ADD file:01629bc17614a262eab3033c276469803729534b11886fd19242e772ccb80ca8 in /root/buildinfo/Dockerfile-ubi9-minimal-9.1.0-1656 
+# Wed, 09 Nov 2022 13:44:46 GMT
+LABEL "distribution-scope"="public" "vendor"="Red Hat, Inc." "build-date"="2022-11-09T13:34:12" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="befaf1f5ec7b874aef2651ee1384d51828504eb9" "io.k8s.description"="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly." "url"="https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9-minimal/images/9.1.0-1656"
+# Wed, 09 Nov 2022 13:44:47 GMT
+RUN rm -f '/etc/yum.repos.d/repo-f4c1a.repo' '/etc/yum.repos.d/repo-33b3b.repo'
+# Wed, 09 Nov 2022 13:44:49 GMT
+RUN rm -f /tmp/tls-ca-bundle.pem
+# Wed, 16 Nov 2022 23:39:50 GMT
+ENV JAVA_HOME=/opt/java/openjdk
+# Wed, 16 Nov 2022 23:39:50 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 16 Nov 2022 23:39:50 GMT
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+# Wed, 16 Nov 2022 23:40:00 GMT
+RUN microdnf install -y binutils tzdata openssl wget ca-certificates fontconfig glibc-langpack-en gzip tar     && microdnf clean all
+# Wed, 16 Nov 2022 23:41:56 GMT
+ENV JAVA_VERSION=jdk-19.0.1+10
+# Wed, 16 Nov 2022 23:42:27 GMT
+RUN set -eux;     ARCH="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')";     case "${ARCH}" in        aarch64|arm64)          ESUM='c69ffc5474be076b200e8cc72417b838e4f830b36603d593fb8ca6d11b81969b';          BINARY_URL='https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19.0.1%2B10/OpenJDK19U-jre_aarch64_linux_hotspot_19.0.1_10.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='c5f3d67edfa0d9b5ec935f944c177c0ee4b2d7a2b5846feaf187b77e954f4242';          BINARY_URL='https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19.0.1%2B10/OpenJDK19U-jre_ppc64le_linux_hotspot_19.0.1_10.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='6293529eba7872b47dfaa1ccfd321661720d538d22a0abfe53259d61f348d070';          BINARY_URL='https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19.0.1%2B10/OpenJDK19U-jre_s390x_linux_hotspot_19.0.1_10.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='68cae46c973e48ca6777cd0026bbf25f3457bd3d6730c36bd79d4f3b398c8338';          BINARY_URL='https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19.0.1%2B10/OpenJDK19U-jre_x64_linux_hotspot_19.0.1_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm /tmp/openjdk.tar.gz;
+# Wed, 16 Nov 2022 23:42:29 GMT
+RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo java --version && java --version     && echo Complete.
+```
+
+-	Layers:
+	-	`sha256:017404579d24b362f0902de606e00d1778350beb20d740b3d5a93e9fce757028`  
+		Last Modified: Wed, 16 Nov 2022 03:31:28 GMT  
+		Size: 36.1 MB (36113178 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6c9c397b088b3d30bce459b5efbcc1ca184b7cceeeca6ef7742a3d5a65d9cf86`  
+		Last Modified: Wed, 16 Nov 2022 23:44:11 GMT  
+		Size: 30.1 MB (30068286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c30f254b95bce502fb36ba5d7eaca86f42514143d0d2a546f11a2931dea480d3`  
+		Last Modified: Wed, 16 Nov 2022 23:46:35 GMT  
+		Size: 48.9 MB (48896873 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7cf9c4eeb2ee9f4f02454d22d773e9fcdd40235d3da3cbc7c4f76b7000e52407`  
+		Last Modified: Wed, 16 Nov 2022 23:46:29 GMT  
+		Size: 161.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `eclipse-temurin:19-jre-ubi9-minimal` - linux; ppc64le
+
+```console
+$ docker pull eclipse-temurin@sha256:482081508ea0d6b5d1f82dc67750ea23c71c1ba8289f176528c605a9dc778226
+```
+
+-	Docker Version: 20.10.12
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **122.5 MB (122455088 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:33e60a78bacf05275f3d265463773799d84dc19a167b78f51c3174b605f26320`
+-	Default Command: `["\/bin\/bash"]`
+
+```dockerfile
+# Wed, 09 Nov 2022 13:44:29 GMT
+ADD file:b7fa848956dba9d5b7e47ce28fe09611e7916334adb166f4d923d2acc3b62dfa in / 
+# Wed, 09 Nov 2022 13:44:29 GMT
+ADD file:214c1de395c24e4a86ef9a706069ef30a9e804c63f851c37c35655e16fea3ced in /tmp/tls-ca-bundle.pem 
+# Wed, 09 Nov 2022 13:44:30 GMT
+ADD multi:30ff6a02e0f899d3bc68d3fabc66b2b79dc0a64adc0f1b34ed26fe13df185b90 in /etc/yum.repos.d/ 
+# Wed, 09 Nov 2022 13:44:30 GMT
+LABEL maintainer="Red Hat, Inc."
+# Wed, 09 Nov 2022 13:44:30 GMT
+LABEL com.redhat.component="ubi9-minimal-container"       name="ubi9-minimal"       version="9.1.0"
+# Wed, 09 Nov 2022 13:44:30 GMT
+LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
+# Wed, 09 Nov 2022 13:44:30 GMT
+LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 9."
+# Wed, 09 Nov 2022 13:44:30 GMT
+LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
+# Wed, 09 Nov 2022 13:44:30 GMT
+LABEL io.k8s.display-name="Red Hat Universal Base Image 9 Minimal"
+# Wed, 09 Nov 2022 13:44:30 GMT
+LABEL io.openshift.expose-services=""
+# Wed, 09 Nov 2022 13:44:30 GMT
+LABEL io.openshift.tags="minimal rhel9"
+# Wed, 09 Nov 2022 13:44:30 GMT
+ENV container oci
+# Wed, 09 Nov 2022 13:44:30 GMT
+ENV PATH /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 09 Nov 2022 13:44:30 GMT
+CMD ["/bin/bash"]
+# Wed, 09 Nov 2022 13:44:32 GMT
+RUN rm -rf /var/log/*
+# Wed, 09 Nov 2022 13:44:32 GMT
+LABEL release=1656
+# Wed, 09 Nov 2022 13:44:32 GMT
+ADD file:67f707548ff6615b646dd023e0a11ef26064bb17ff187cf60508cfd387c8dd94 in /root/buildinfo/content_manifests/ubi9-minimal-container-9.1.0-1656.json 
+# Wed, 09 Nov 2022 13:44:33 GMT
+ADD file:4ddcfe8ebb6a1157eb414014a1ed71157dfc0268903635f6ab7da5807eb88547 in /root/buildinfo/Dockerfile-ubi9-minimal-9.1.0-1656 
+# Wed, 09 Nov 2022 13:44:33 GMT
+LABEL "distribution-scope"="public" "vendor"="Red Hat, Inc." "build-date"="2022-11-09T13:34:12" "architecture"="ppc64le" "vcs-type"="git" "vcs-ref"="befaf1f5ec7b874aef2651ee1384d51828504eb9" "io.k8s.description"="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly." "url"="https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9-minimal/images/9.1.0-1656"
+# Wed, 09 Nov 2022 13:44:34 GMT
+RUN rm -f '/etc/yum.repos.d/repo-f4c1a.repo' '/etc/yum.repos.d/repo-33b3b.repo'
+# Wed, 09 Nov 2022 13:44:37 GMT
+RUN rm -f /tmp/tls-ca-bundle.pem
+# Thu, 17 Nov 2022 01:13:03 GMT
+ENV JAVA_HOME=/opt/java/openjdk
+# Thu, 17 Nov 2022 01:13:03 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Thu, 17 Nov 2022 01:13:03 GMT
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+# Thu, 17 Nov 2022 01:13:30 GMT
+RUN microdnf install -y binutils tzdata openssl wget ca-certificates fontconfig glibc-langpack-en gzip tar     && microdnf clean all
+# Thu, 17 Nov 2022 01:17:35 GMT
+ENV JAVA_VERSION=jdk-19.0.1+10
+# Thu, 17 Nov 2022 01:18:35 GMT
+RUN set -eux;     ARCH="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')";     case "${ARCH}" in        aarch64|arm64)          ESUM='c69ffc5474be076b200e8cc72417b838e4f830b36603d593fb8ca6d11b81969b';          BINARY_URL='https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19.0.1%2B10/OpenJDK19U-jre_aarch64_linux_hotspot_19.0.1_10.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='c5f3d67edfa0d9b5ec935f944c177c0ee4b2d7a2b5846feaf187b77e954f4242';          BINARY_URL='https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19.0.1%2B10/OpenJDK19U-jre_ppc64le_linux_hotspot_19.0.1_10.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='6293529eba7872b47dfaa1ccfd321661720d538d22a0abfe53259d61f348d070';          BINARY_URL='https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19.0.1%2B10/OpenJDK19U-jre_s390x_linux_hotspot_19.0.1_10.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='68cae46c973e48ca6777cd0026bbf25f3457bd3d6730c36bd79d4f3b398c8338';          BINARY_URL='https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19.0.1%2B10/OpenJDK19U-jre_x64_linux_hotspot_19.0.1_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm /tmp/openjdk.tar.gz;
+# Thu, 17 Nov 2022 01:18:38 GMT
+RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo java --version && java --version     && echo Complete.
+```
+
+-	Layers:
+	-	`sha256:f67e11af6c0f957f8aaf4aa1c82d719ae236aea00d1ce0b61e682e04bbf8f8f8`  
+		Last Modified: Wed, 16 Nov 2022 12:27:18 GMT  
+		Size: 40.8 MB (40829227 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5281831dd83348105313170c050e6e082e67c269bbc07976066171a271af40cc`  
+		Last Modified: Thu, 17 Nov 2022 01:22:08 GMT  
+		Size: 32.4 MB (32431799 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9aa7067ba8ed3136167177302e937c18480855cf99e9882fb387b79582dea3a7`  
+		Last Modified: Thu, 17 Nov 2022 01:26:15 GMT  
+		Size: 49.2 MB (49193902 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:02c987a6beef9b63a4a39b1feb02186b5868968fcf07aaeb38668d8914c8d08e`  
+		Last Modified: Thu, 17 Nov 2022 01:26:03 GMT  
+		Size: 160.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `eclipse-temurin:19-jre-ubi9-minimal` - linux; s390x
+
+```console
+$ docker pull eclipse-temurin@sha256:7641c432f33775c325ab21f223ac32453b206a7b6ce3e744e541172c5d3fdcb0
+```
+
+-	Docker Version: 20.10.12
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **117.8 MB (117848985 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:b6ddc59a6d01b6861244716df4dc71770a118752c3a0eaa8008bc9f388d0e3c4`
+-	Default Command: `["\/bin\/bash"]`
+
+```dockerfile
+# Wed, 09 Nov 2022 13:45:00 GMT
+ADD file:c696a6975b26d0bc58510e6f82144dd22f1da20d6144a50ea8acfbcf6c722471 in / 
+# Wed, 09 Nov 2022 13:45:01 GMT
+ADD file:214c1de395c24e4a86ef9a706069ef30a9e804c63f851c37c35655e16fea3ced in /tmp/tls-ca-bundle.pem 
+# Wed, 09 Nov 2022 13:45:01 GMT
+ADD multi:30ff6a02e0f899d3bc68d3fabc66b2b79dc0a64adc0f1b34ed26fe13df185b90 in /etc/yum.repos.d/ 
+# Wed, 09 Nov 2022 13:45:01 GMT
+LABEL maintainer="Red Hat, Inc."
+# Wed, 09 Nov 2022 13:45:01 GMT
+LABEL com.redhat.component="ubi9-minimal-container"       name="ubi9-minimal"       version="9.1.0"
+# Wed, 09 Nov 2022 13:45:01 GMT
+LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
+# Wed, 09 Nov 2022 13:45:01 GMT
+LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 9."
+# Wed, 09 Nov 2022 13:45:01 GMT
+LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
+# Wed, 09 Nov 2022 13:45:01 GMT
+LABEL io.k8s.display-name="Red Hat Universal Base Image 9 Minimal"
+# Wed, 09 Nov 2022 13:45:01 GMT
+LABEL io.openshift.expose-services=""
+# Wed, 09 Nov 2022 13:45:01 GMT
+LABEL io.openshift.tags="minimal rhel9"
+# Wed, 09 Nov 2022 13:45:01 GMT
+ENV container oci
+# Wed, 09 Nov 2022 13:45:01 GMT
+ENV PATH /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 09 Nov 2022 13:45:01 GMT
+CMD ["/bin/bash"]
+# Wed, 09 Nov 2022 13:45:03 GMT
+RUN rm -rf /var/log/*
+# Wed, 09 Nov 2022 13:45:03 GMT
+LABEL release=1656
+# Wed, 09 Nov 2022 13:45:04 GMT
+ADD file:d59ff54c102e6e4131f19b9acc93224b25457c4205967321323811051c1b9360 in /root/buildinfo/content_manifests/ubi9-minimal-container-9.1.0-1656.json 
+# Wed, 09 Nov 2022 13:45:04 GMT
+ADD file:a669e390d7b1390e068b1d844ee5b8733c2383a9853cba6cbc831aca94110042 in /root/buildinfo/Dockerfile-ubi9-minimal-9.1.0-1656 
+# Wed, 09 Nov 2022 13:45:04 GMT
+LABEL "distribution-scope"="public" "vendor"="Red Hat, Inc." "build-date"="2022-11-09T13:34:12" "architecture"="s390x" "vcs-type"="git" "vcs-ref"="befaf1f5ec7b874aef2651ee1384d51828504eb9" "io.k8s.description"="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly." "url"="https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9-minimal/images/9.1.0-1656"
+# Wed, 09 Nov 2022 13:45:06 GMT
+RUN rm -f '/etc/yum.repos.d/repo-f4c1a.repo' '/etc/yum.repos.d/repo-33b3b.repo'
+# Wed, 09 Nov 2022 13:45:08 GMT
+RUN rm -f /tmp/tls-ca-bundle.pem
+# Wed, 16 Nov 2022 23:59:19 GMT
+ENV JAVA_HOME=/opt/java/openjdk
+# Wed, 16 Nov 2022 23:59:19 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 16 Nov 2022 23:59:19 GMT
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+# Wed, 16 Nov 2022 23:59:42 GMT
+RUN microdnf install -y binutils tzdata openssl wget ca-certificates fontconfig glibc-langpack-en gzip tar     && microdnf clean all
+# Thu, 17 Nov 2022 00:01:48 GMT
+ENV JAVA_VERSION=jdk-19.0.1+10
+# Thu, 17 Nov 2022 00:02:26 GMT
+RUN set -eux;     ARCH="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')";     case "${ARCH}" in        aarch64|arm64)          ESUM='c69ffc5474be076b200e8cc72417b838e4f830b36603d593fb8ca6d11b81969b';          BINARY_URL='https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19.0.1%2B10/OpenJDK19U-jre_aarch64_linux_hotspot_19.0.1_10.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='c5f3d67edfa0d9b5ec935f944c177c0ee4b2d7a2b5846feaf187b77e954f4242';          BINARY_URL='https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19.0.1%2B10/OpenJDK19U-jre_ppc64le_linux_hotspot_19.0.1_10.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='6293529eba7872b47dfaa1ccfd321661720d538d22a0abfe53259d61f348d070';          BINARY_URL='https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19.0.1%2B10/OpenJDK19U-jre_s390x_linux_hotspot_19.0.1_10.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='68cae46c973e48ca6777cd0026bbf25f3457bd3d6730c36bd79d4f3b398c8338';          BINARY_URL='https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19.0.1%2B10/OpenJDK19U-jre_x64_linux_hotspot_19.0.1_10.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm /tmp/openjdk.tar.gz;
+# Thu, 17 Nov 2022 00:02:28 GMT
+RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo java --version && java --version     && echo Complete.
+```
+
+-	Layers:
+	-	`sha256:f1551d58b2309089dfc342db62ee900f5b92a06b0a749d6b8700e31e9fb5f0d8`  
+		Last Modified: Wed, 16 Nov 2022 12:27:26 GMT  
+		Size: 36.2 MB (36198583 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2fdb8f863ee656899ec04a324225fe008cc6737be0bdf34580d6e057d74cb1df`  
+		Last Modified: Thu, 17 Nov 2022 00:04:36 GMT  
+		Size: 35.6 MB (35623466 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:99cd257a6f2db78fd69971bc06d0fe265ae3774e01e993166852dda00c3df003`  
+		Last Modified: Thu, 17 Nov 2022 00:06:28 GMT  
+		Size: 46.0 MB (46026776 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b7c0711550609c51434c177dc491beaa5963789e99f3e806a1610f6d18fc11f9`  
+		Last Modified: Thu, 17 Nov 2022 00:06:22 GMT  
+		Size: 160.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
