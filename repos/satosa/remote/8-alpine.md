@@ -1,7 +1,7 @@
 ## `satosa:8-alpine`
 
 ```console
-$ docker pull satosa@sha256:67b7b0993fbce2f24cd22a7840dc4f1e0c8751eadd42961aec0cfe602b1b049b
+$ docker pull satosa@sha256:774f5457d31e5ab35b93b1fa02ce348d2da68157f296891b35a9f4871ffe4188
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16,14 +16,14 @@ $ docker pull satosa@sha256:67b7b0993fbce2f24cd22a7840dc4f1e0c8751eadd42961aec0c
 ### `satosa:8-alpine` - linux; amd64
 
 ```console
-$ docker pull satosa@sha256:095f04c41513a3ee092741c4c7be19fdf23f5ecb05ec0ff9528c838efb651c9b
+$ docker pull satosa@sha256:6e3e4da73ae0c0d1ee3192a90d4e47dd1711df0f3e2d5cda5ec9b5d0146dc48b
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **42.9 MB (42934691 bytes)**  
+-	Total Size: **47.8 MB (47771235 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4a71543e54a3433074043eca904db23f095492b14ffac407911e1c9ad887eb53`
+-	Image ID: `sha256:53c03699dd38f4ddbe3655ace3de96f6a1cef874a71cdabefd8c2f24970096df`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["gunicorn","-b0.0.0.0:8080","satosa.wsgi:app"]`
 
@@ -40,43 +40,43 @@ ENV LANG=C.UTF-8
 RUN set -eux; 	apk add --no-cache 		ca-certificates 		tzdata 	;
 # Sat, 12 Nov 2022 06:57:28 GMT
 ENV GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696D
-# Sat, 12 Nov 2022 07:16:32 GMT
-ENV PYTHON_VERSION=3.10.8
-# Sat, 12 Nov 2022 07:28:24 GMT
+# Sat, 12 Nov 2022 06:57:28 GMT
+ENV PYTHON_VERSION=3.11.0
+# Sat, 12 Nov 2022 07:15:58 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		gnupg 		tar 		xz 				bluez-dev 		bzip2-dev 		dpkg-dev dpkg 		expat-dev 		findutils 		gcc 		gdbm-dev 		libc-dev 		libffi-dev 		libnsl-dev 		libtirpc-dev 		linux-headers 		make 		ncurses-dev 		openssl-dev 		pax-utils 		readline-dev 		sqlite-dev 		tcl-dev 		tk 		tk-dev 		util-linux-dev 		xz-dev 		zlib-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPG_KEY"; 	gpg --batch --verify python.tar.xz.asc python.tar.xz; 	command -v gpgconf > /dev/null && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" python.tar.xz.asc; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-optimizations 		--enable-option-checking=fatal 		--enable-shared 		--with-lto 		--with-system-expat 		--without-ensurepip 	; 	nproc="$(nproc)"; 	make -j "$nproc" 		EXTRA_CFLAGS="-DTHREAD_STACK_SIZE=0x100000" 		LDFLAGS="-Wl,--strip-all" 	; 	make install; 		cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name 'libpython*.a' \) \) 		\) -exec rm -rf '{}' + 	; 		find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec scanelf --needed --nobanner --format '%n#p' '{}' ';' 		| tr ',' '\n' 		| sort -u 		| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 		| xargs -rt apk add --no-network --virtual .python-rundeps 	; 	apk del --no-network .build-deps; 		python3 --version
-# Sat, 12 Nov 2022 07:28:25 GMT
+# Sat, 12 Nov 2022 07:15:59 GMT
 RUN set -eux; 	for src in idle3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "$src" "/usr/local/bin/$dst"; 	done
-# Sat, 12 Nov 2022 07:28:25 GMT
-ENV PYTHON_PIP_VERSION=22.2.2
-# Sat, 12 Nov 2022 07:28:25 GMT
-ENV PYTHON_SETUPTOOLS_VERSION=63.2.0
-# Wed, 16 Nov 2022 06:57:12 GMT
+# Sat, 12 Nov 2022 07:15:59 GMT
+ENV PYTHON_PIP_VERSION=22.3
+# Sat, 12 Nov 2022 07:15:59 GMT
+ENV PYTHON_SETUPTOOLS_VERSION=65.5.0
+# Wed, 16 Nov 2022 06:56:08 GMT
 ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/66030fa03382b4914d4c4d0896961a0bdeeeb274/public/get-pip.py
-# Wed, 16 Nov 2022 06:57:12 GMT
+# Wed, 16 Nov 2022 06:56:08 GMT
 ENV PYTHON_GET_PIP_SHA256=1e501cf004eac1b7eb1f97266d28f995ae835d30250bec7f8850562703067dc6
-# Wed, 16 Nov 2022 06:57:18 GMT
+# Wed, 16 Nov 2022 06:56:15 GMT
 RUN set -eux; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		export PYTHONDONTWRITEBYTECODE=1; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		--no-compile 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	rm -f get-pip.py; 		pip --version
-# Wed, 16 Nov 2022 06:57:19 GMT
+# Wed, 16 Nov 2022 06:56:15 GMT
 CMD ["python3"]
-# Wed, 16 Nov 2022 07:23:48 GMT
+# Fri, 18 Nov 2022 18:22:15 GMT
 RUN set -eux; 	addgroup --gid 1000 satosa; 	adduser -D -G satosa --uid 1000 satosa; 	apk add --no-cache 		bash 		jq 		libxml2-utils 		openssl 		xmlsec 	; 	pip install --no-cache-dir 		yq 	;
-# Wed, 16 Nov 2022 07:23:48 GMT
-ENV SATOSA_VERSION=8.1.1
-# Wed, 16 Nov 2022 07:24:30 GMT
+# Fri, 18 Nov 2022 18:22:15 GMT
+ENV SATOSA_VERSION=8.2.0
+# Fri, 18 Nov 2022 18:22:59 GMT
 RUN set -eux; 	apk add --no-cache --virtual .build-deps 		bluez-dev 		bzip2-dev 		cargo 		coreutils 		dpkg-dev dpkg 		expat-dev 		findutils 		gcc 		gdbm-dev 		libc-dev 		libffi-dev 		libnsl-dev 		libtirpc-dev 		linux-headers 		make 		musl-dev 		ncurses-dev 		openssl-dev 		pax-utils 		python3-dev 		readline-dev 		sqlite-dev 		tcl-dev 		tk 		tk-dev 		util-linux-dev 		xz-dev 		zlib-dev 	; 	pip install --no-cache-dir 		satosa==${SATOSA_VERSION} 	; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec scanelf --needed --nobanner --format '%n#p' '{}' ';' 		| tr ',' '\n' 		| sort -u 		| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 		| fgrep -v libgcc_s- 		| xargs -rt apk add --no-network --virtual .satosa-rundeps 	; 	apk del --no-network .build-deps; 	mkdir /etc/satosa; 	chown -R satosa:satosa /etc/satosa
-# Wed, 16 Nov 2022 07:24:31 GMT
+# Fri, 18 Nov 2022 18:23:00 GMT
 RUN set -eux; 	python -c 'import urllib.request; urllib.request.urlretrieve("https://github.com/IdentityPython/SATOSA/archive/refs/tags/v'${SATOSA_VERSION%%[a-z]*}'.tar.gz","/tmp/satosa.tgz")'; 	mkdir /usr/share/satosa; 	tar --extract --directory /usr/share/satosa --strip-components=1 --file /tmp/satosa.tgz SATOSA-${SATOSA_VERSION%%[a-z]*}/example/; 	rm /tmp/satosa.tgz
-# Wed, 16 Nov 2022 07:24:31 GMT
+# Fri, 18 Nov 2022 18:23:00 GMT
 WORKDIR /etc/satosa
-# Wed, 16 Nov 2022 07:24:32 GMT
-COPY file:052229d57447119afa18a76253b740426943fcd4cf1c553c23df3445a5ed9f32 in /usr/local/bin/ 
-# Wed, 16 Nov 2022 07:24:32 GMT
+# Fri, 18 Nov 2022 18:23:00 GMT
+COPY file:c55013587aaf85deb9d4e88a802c99946f6d607afbf641c34429da762c1aa229 in /usr/local/bin/ 
+# Fri, 18 Nov 2022 18:23:00 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 16 Nov 2022 07:24:32 GMT
+# Fri, 18 Nov 2022 18:23:01 GMT
 EXPOSE 8080
-# Wed, 16 Nov 2022 07:24:32 GMT
+# Fri, 18 Nov 2022 18:23:01 GMT
 USER satosa:satosa
-# Wed, 16 Nov 2022 07:24:32 GMT
+# Fri, 18 Nov 2022 18:23:01 GMT
 CMD ["gunicorn" "-b0.0.0.0:8080" "satosa.wsgi:app"]
 ```
 
@@ -89,33 +89,33 @@ CMD ["gunicorn" "-b0.0.0.0:8080" "satosa.wsgi:app"]
 		Last Modified: Sat, 12 Nov 2022 07:47:59 GMT  
 		Size: 661.8 KB (661831 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3667c4d827e97aa06741a79b6a5b8444ea762d4372f2a10b9ee4bacf5a627ba6`  
-		Last Modified: Sat, 12 Nov 2022 07:48:56 GMT  
-		Size: 12.5 MB (12512097 bytes)  
+	-	`sha256:86456952aa287ca80ac7d7f349dc9edbabda9393ab022d20f2e4c2263cd7d2e7`  
+		Last Modified: Sat, 12 Nov 2022 07:48:26 GMT  
+		Size: 13.0 MB (12998794 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:322b5bc612d6683753d719b7852326e5da092685ba59d73b8bf491d17c7ed12e`  
-		Last Modified: Sat, 12 Nov 2022 07:48:54 GMT  
+	-	`sha256:4ece9ef7a5797feb2ddaf23aee223848643c0baaedaaa203c721aecb6b272b25`  
+		Last Modified: Sat, 12 Nov 2022 07:48:24 GMT  
 		Size: 231.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ab28a729facaf412f86928b04a4ba07cea16a35266e4b01d89f6637a761c6670`  
-		Last Modified: Wed, 16 Nov 2022 07:07:03 GMT  
-		Size: 3.0 MB (3043667 bytes)  
+	-	`sha256:ef27b859822294ab1253f8e09a8712d63ea9939eadd1dc4b595d52726c0b020d`  
+		Last Modified: Wed, 16 Nov 2022 07:05:43 GMT  
+		Size: 3.1 MB (3056443 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec2a949811256372e3674bfe9de845e00ab6f1cb7d26e8fc709af68617b56c96`  
-		Last Modified: Wed, 16 Nov 2022 07:25:13 GMT  
-		Size: 9.4 MB (9414045 bytes)  
+	-	`sha256:824935fc626e0971164be442423360798c85d529053e967a909cd1273bda190e`  
+		Last Modified: Fri, 18 Nov 2022 18:23:39 GMT  
+		Size: 10.9 MB (10872324 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f60e1552a6e200650e2228c994e3c32122663bd6a7ff69a80f6b8df705e9b7fa`  
-		Last Modified: Wed, 16 Nov 2022 07:25:15 GMT  
-		Size: 14.5 MB (14484993 bytes)  
+	-	`sha256:e2fed4aaf1a18111683af619a1e71edd5804307567ed23a83f6f40d15d2794af`  
+		Last Modified: Fri, 18 Nov 2022 18:23:41 GMT  
+		Size: 17.4 MB (17363712 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b90fee94f06383d2646bc4c8c066017987f22592fb5f71165d4b8b3abc1f1051`  
-		Last Modified: Wed, 16 Nov 2022 07:25:12 GMT  
-		Size: 9.4 KB (9438 bytes)  
+	-	`sha256:0e090e2c9c7e5d74822d9f71487ec5a71f3058a6f2d8bf756ddaaed8180da06e`  
+		Last Modified: Fri, 18 Nov 2022 18:23:38 GMT  
+		Size: 9.5 KB (9482 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e63b3adbde0f095d35d3516ba5b10b2675bee494776358b9dc9768f207956b63`  
-		Last Modified: Wed, 16 Nov 2022 07:25:12 GMT  
-		Size: 2.1 KB (2117 bytes)  
+	-	`sha256:41247ef96bde894139c620ba77d7e56bed539612bc8605d4495a7b78bd90ebfb`  
+		Last Modified: Fri, 18 Nov 2022 18:23:38 GMT  
+		Size: 2.1 KB (2146 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `satosa:8-alpine` - linux; arm variant v6
@@ -541,14 +541,14 @@ CMD ["gunicorn" "-b0.0.0.0:8080" "satosa.wsgi:app"]
 ### `satosa:8-alpine` - linux; ppc64le
 
 ```console
-$ docker pull satosa@sha256:19d6e4313254af950df055d275d6f1ce92366a8097cee46ca2daacead5a9b39d
+$ docker pull satosa@sha256:78f6a669461f794f0b3dd8e4ed981afb6864275142dd4e3e84b2c9d9e502f748
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **316.7 MB (316695669 bytes)**  
+-	Total Size: **328.4 MB (328360558 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0b7e44039ab3258d41d1b64352122e6c17c76d32e28be3aaf92a2da8b4f4e701`
+-	Image ID: `sha256:c362cb6cae301a29e6e4675274c3ec62a3fab9aa0ca147eb8167fb57c2d3c92e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["gunicorn","-b0.0.0.0:8080","satosa.wsgi:app"]`
 
@@ -565,43 +565,43 @@ ENV LANG=C.UTF-8
 RUN set -eux; 	apk add --no-cache 		ca-certificates 		tzdata 	;
 # Sat, 12 Nov 2022 09:49:12 GMT
 ENV GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696D
-# Sat, 12 Nov 2022 10:30:29 GMT
-ENV PYTHON_VERSION=3.10.8
-# Sat, 12 Nov 2022 10:55:09 GMT
+# Sat, 12 Nov 2022 09:49:13 GMT
+ENV PYTHON_VERSION=3.11.0
+# Sat, 12 Nov 2022 10:29:44 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		gnupg 		tar 		xz 				bluez-dev 		bzip2-dev 		dpkg-dev dpkg 		expat-dev 		findutils 		gcc 		gdbm-dev 		libc-dev 		libffi-dev 		libnsl-dev 		libtirpc-dev 		linux-headers 		make 		ncurses-dev 		openssl-dev 		pax-utils 		readline-dev 		sqlite-dev 		tcl-dev 		tk 		tk-dev 		util-linux-dev 		xz-dev 		zlib-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPG_KEY"; 	gpg --batch --verify python.tar.xz.asc python.tar.xz; 	command -v gpgconf > /dev/null && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" python.tar.xz.asc; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-optimizations 		--enable-option-checking=fatal 		--enable-shared 		--with-lto 		--with-system-expat 		--without-ensurepip 	; 	nproc="$(nproc)"; 	make -j "$nproc" 		EXTRA_CFLAGS="-DTHREAD_STACK_SIZE=0x100000" 		LDFLAGS="-Wl,--strip-all" 	; 	make install; 		cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name 'libpython*.a' \) \) 		\) -exec rm -rf '{}' + 	; 		find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec scanelf --needed --nobanner --format '%n#p' '{}' ';' 		| tr ',' '\n' 		| sort -u 		| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 		| xargs -rt apk add --no-network --virtual .python-rundeps 	; 	apk del --no-network .build-deps; 		python3 --version
-# Sat, 12 Nov 2022 10:55:12 GMT
+# Sat, 12 Nov 2022 10:29:46 GMT
 RUN set -eux; 	for src in idle3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "$src" "/usr/local/bin/$dst"; 	done
-# Sat, 12 Nov 2022 10:55:12 GMT
-ENV PYTHON_PIP_VERSION=22.2.2
-# Sat, 12 Nov 2022 10:55:12 GMT
-ENV PYTHON_SETUPTOOLS_VERSION=63.2.0
-# Wed, 16 Nov 2022 06:29:42 GMT
+# Sat, 12 Nov 2022 10:29:47 GMT
+ENV PYTHON_PIP_VERSION=22.3
+# Sat, 12 Nov 2022 10:29:47 GMT
+ENV PYTHON_SETUPTOOLS_VERSION=65.5.0
+# Wed, 16 Nov 2022 06:28:15 GMT
 ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/66030fa03382b4914d4c4d0896961a0bdeeeb274/public/get-pip.py
-# Wed, 16 Nov 2022 06:29:43 GMT
+# Wed, 16 Nov 2022 06:28:15 GMT
 ENV PYTHON_GET_PIP_SHA256=1e501cf004eac1b7eb1f97266d28f995ae835d30250bec7f8850562703067dc6
-# Wed, 16 Nov 2022 06:29:53 GMT
+# Wed, 16 Nov 2022 06:28:26 GMT
 RUN set -eux; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		export PYTHONDONTWRITEBYTECODE=1; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		--no-compile 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	rm -f get-pip.py; 		pip --version
-# Wed, 16 Nov 2022 06:29:54 GMT
+# Wed, 16 Nov 2022 06:28:27 GMT
 CMD ["python3"]
-# Wed, 16 Nov 2022 09:11:04 GMT
+# Fri, 18 Nov 2022 18:25:31 GMT
 RUN set -eux; 	addgroup --gid 1000 satosa; 	adduser -D -G satosa --uid 1000 satosa; 	apk add --no-cache 		bash 		jq 		libxml2-utils 		openssl 		xmlsec 	; 	pip install --no-cache-dir 		yq 	;
-# Wed, 16 Nov 2022 09:11:04 GMT
-ENV SATOSA_VERSION=8.1.1
-# Wed, 16 Nov 2022 09:19:11 GMT
+# Fri, 18 Nov 2022 18:25:31 GMT
+ENV SATOSA_VERSION=8.2.0
+# Fri, 18 Nov 2022 18:33:53 GMT
 RUN set -eux; 	apk add --no-cache --virtual .build-deps 		bluez-dev 		bzip2-dev 		cargo 		coreutils 		dpkg-dev dpkg 		expat-dev 		findutils 		gcc 		gdbm-dev 		libc-dev 		libffi-dev 		libnsl-dev 		libtirpc-dev 		linux-headers 		make 		musl-dev 		ncurses-dev 		openssl-dev 		pax-utils 		python3-dev 		readline-dev 		sqlite-dev 		tcl-dev 		tk 		tk-dev 		util-linux-dev 		xz-dev 		zlib-dev 	; 	pip install --no-cache-dir 		satosa==${SATOSA_VERSION} 	; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec scanelf --needed --nobanner --format '%n#p' '{}' ';' 		| tr ',' '\n' 		| sort -u 		| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 		| fgrep -v libgcc_s- 		| xargs -rt apk add --no-network --virtual .satosa-rundeps 	; 	apk del --no-network .build-deps; 	mkdir /etc/satosa; 	chown -R satosa:satosa /etc/satosa
-# Wed, 16 Nov 2022 09:19:19 GMT
+# Fri, 18 Nov 2022 18:34:00 GMT
 RUN set -eux; 	python -c 'import urllib.request; urllib.request.urlretrieve("https://github.com/IdentityPython/SATOSA/archive/refs/tags/v'${SATOSA_VERSION%%[a-z]*}'.tar.gz","/tmp/satosa.tgz")'; 	mkdir /usr/share/satosa; 	tar --extract --directory /usr/share/satosa --strip-components=1 --file /tmp/satosa.tgz SATOSA-${SATOSA_VERSION%%[a-z]*}/example/; 	rm /tmp/satosa.tgz
-# Wed, 16 Nov 2022 09:19:19 GMT
+# Fri, 18 Nov 2022 18:34:01 GMT
 WORKDIR /etc/satosa
-# Wed, 16 Nov 2022 09:19:20 GMT
-COPY file:052229d57447119afa18a76253b740426943fcd4cf1c553c23df3445a5ed9f32 in /usr/local/bin/ 
-# Wed, 16 Nov 2022 09:19:20 GMT
+# Fri, 18 Nov 2022 18:34:01 GMT
+COPY file:c55013587aaf85deb9d4e88a802c99946f6d607afbf641c34429da762c1aa229 in /usr/local/bin/ 
+# Fri, 18 Nov 2022 18:34:01 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 16 Nov 2022 09:19:20 GMT
+# Fri, 18 Nov 2022 18:34:02 GMT
 EXPOSE 8080
-# Wed, 16 Nov 2022 09:19:21 GMT
+# Fri, 18 Nov 2022 18:34:02 GMT
 USER satosa:satosa
-# Wed, 16 Nov 2022 09:19:21 GMT
+# Fri, 18 Nov 2022 18:34:02 GMT
 CMD ["gunicorn" "-b0.0.0.0:8080" "satosa.wsgi:app"]
 ```
 
@@ -614,31 +614,31 @@ CMD ["gunicorn" "-b0.0.0.0:8080" "satosa.wsgi:app"]
 		Last Modified: Sat, 12 Nov 2022 11:31:49 GMT  
 		Size: 670.3 KB (670297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:97e4ce52ee1e2c952cf9c4fba79ccf12053a788b24610081ded0e259a41a46f6`  
-		Last Modified: Sat, 12 Nov 2022 11:33:04 GMT  
-		Size: 12.8 MB (12822091 bytes)  
+	-	`sha256:10bcec55fc14204d6d5b10511d2dcb4b565f19ea0c07a815947bf4616259786f`  
+		Last Modified: Sat, 12 Nov 2022 11:32:23 GMT  
+		Size: 13.3 MB (13307557 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a54c2b755b2ff2e0bbb237e70fba35daed6298653e5a13f64c0a4f285d4aea12`  
-		Last Modified: Sat, 12 Nov 2022 11:33:01 GMT  
-		Size: 230.0 B  
+	-	`sha256:ffd9e47c00af72c31f09498bcdbb9f23c6b599d96b3262a847fd18af79d8ec83`  
+		Last Modified: Sat, 12 Nov 2022 11:32:20 GMT  
+		Size: 231.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2c266aa9c323633db17dc9c41e3c14d616f6da1f5d5a0fb18cd044713459ef16`  
-		Last Modified: Wed, 16 Nov 2022 07:03:18 GMT  
-		Size: 3.0 MB (3043651 bytes)  
+	-	`sha256:bbba60b66096fca5cbb93d7c032bf2aa7755ea3c73fcddca01bb6d3af1fb0f86`  
+		Last Modified: Wed, 16 Nov 2022 07:01:58 GMT  
+		Size: 3.1 MB (3056418 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c07e74672c98301373075f47585ee15d2630935a7ac850d2ac9af8ddec26d0b`  
-		Last Modified: Wed, 16 Nov 2022 09:19:51 GMT  
-		Size: 8.5 MB (8492407 bytes)  
+	-	`sha256:59aba7b954790c375454d90d43b7e21ef374bf3fc2cfbca50b660cb08066a22b`  
+		Last Modified: Fri, 18 Nov 2022 18:35:37 GMT  
+		Size: 10.0 MB (9950742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb4cf014b9b9d9a8854f07453924334e9b4d9910970528a8355eb4239558cf4d`  
-		Last Modified: Wed, 16 Nov 2022 09:20:23 GMT  
-		Size: 288.9 MB (288853879 bytes)  
+	-	`sha256:840cb6e59e4841e4831f3736de75cdf2d9a9d41a587a37d4f6eb185bc212f816`  
+		Last Modified: Fri, 18 Nov 2022 18:36:05 GMT  
+		Size: 298.6 MB (298562127 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f43c03ffc3ca7490d773ffc4b17e272983f9ed572ce6c38e18e75e71ce33c9c`  
-		Last Modified: Wed, 16 Nov 2022 09:19:49 GMT  
-		Size: 9.4 KB (9441 bytes)  
+	-	`sha256:605fa8f9b6826c59c0ecc11cc54f8a7a6193c33cee3839935c7409ec2c4bd610`  
+		Last Modified: Fri, 18 Nov 2022 18:35:34 GMT  
+		Size: 9.5 KB (9484 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f3a927226ddee80105e96168a04d10ad0dcfe52d4d062ba1baba0ad5b9953f3`  
-		Last Modified: Wed, 16 Nov 2022 09:19:49 GMT  
-		Size: 2.1 KB (2122 bytes)  
+	-	`sha256:b9f7512564d5a154d9f72c5ff30f44cfb66410e160250b0ffba25e4abaaaacd1`  
+		Last Modified: Fri, 18 Nov 2022 18:35:34 GMT  
+		Size: 2.2 KB (2151 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
