@@ -1,7 +1,7 @@
 ## `convertigo:latest`
 
 ```console
-$ docker pull convertigo@sha256:85d84ee8b71aa1c9ea396b6bf841a21d64e8582c9eff1b81c7120c4d46f717b6
+$ docker pull convertigo@sha256:4cb181f058f038adf6483ac63c7d12fe85da23b21bf0af92056beb3fcdf9cc75
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull convertigo@sha256:85d84ee8b71aa1c9ea396b6bf841a21d64e8582c9eff1b81
 ### `convertigo:latest` - linux; amd64
 
 ```console
-$ docker pull convertigo@sha256:468a620637d69a08aa37c6d5b5c483a48b37f8b5ce9d5c0ddee23f87ae738d91
+$ docker pull convertigo@sha256:6cce9192012c04316e5b1565e8a30247d5923df3c017fa033a70a3a827a2d8df
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **353.8 MB (353768399 bytes)**  
+-	Total Size: **355.3 MB (355290764 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9e188e1ad46f0934b1ea7cb74db4800c02507c95181ae645eff23a2adb51df5f`
+-	Image ID: `sha256:62dfe1f43bb57a74a924e556517efa424cc63e616177c14a7c397f08b721699b`
 -	Entrypoint: `["tini","--","\/docker-entrypoint.sh"]`
 -	Default Command: `["convertigo"]`
 
@@ -91,33 +91,33 @@ ENV GOSU_GPG_KEYS=B42F6819007F00F88E364FD4036A9C25BF357DD4
 ENV TINI_VERSION=0.19.0
 # Tue, 15 Nov 2022 09:38:46 GMT
 ENV TINI_GPG_KEYS=6380DC428747F6C393FEACA59A84159D7001A4E5
-# Tue, 15 Nov 2022 09:39:17 GMT
-RUN export GNUPGHOME="$(mktemp -d)"   && ( gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$GOSU_GPG_KEYS"   || gpg --batch --keyserver pgp.mit.edu --recv-keys "$GOSU_GPG_KEYS"   || gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$GOSU_GPG_KEYS"   || gpg --batch --keyserver keyserver.pgp.com --recv-keys "$GOSU_GPG_KEYS" )   && curl -o /usr/local/bin/gosu -fSL "https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-$(dpkg --print-architecture | awk -F- '{ print $NF }')"   && curl -o /usr/local/bin/gosu.asc -fSL "https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-$(dpkg --print-architecture | awk -F- '{ print $NF }').asc"   && gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu   && rm /usr/local/bin/gosu.asc   && chmod +x /usr/local/bin/gosu   && ( gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$TINI_GPG_KEYS"   || gpg --batch --keyserver pgp.mit.edu --recv-keys "$TINI_GPG_KEYS"   || gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$TINI_GPG_KEYS"   || gpg --batch --keyserver keyserver.pgp.com --recv-keys "$TINI_GPG_KEYS" )   && curl -o /usr/local/bin/tini -fSL "https://github.com/krallin/tini/releases/download/v${TINI_VERSION}/tini-$(dpkg --print-architecture | awk -F- '{ print $NF }')"   && curl -o /usr/local/bin/tini.asc -fSL "https://github.com/krallin/tini/releases/download/v${TINI_VERSION}/tini-$(dpkg --print-architecture | awk -F- '{ print $NF }').asc"   && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini   && rm /usr/local/bin/tini.asc   && chmod +x /usr/local/bin/tini   && rm -rf /tmp/*
-# Tue, 15 Nov 2022 09:39:18 GMT
+# Thu, 17 Nov 2022 23:19:34 GMT
+RUN export GNUPGHOME="$(mktemp -d)"   && ( gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$GOSU_GPG_KEYS"   || gpg --batch --keyserver keyserver.pgp.com --recv-keys "$GOSU_GPG_KEYS" )   && curl -o /usr/local/bin/gosu -fSL "https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-$(dpkg --print-architecture | awk -F- '{ print $NF }')"   && curl -o /usr/local/bin/gosu.asc -fSL "https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-$(dpkg --print-architecture | awk -F- '{ print $NF }').asc"   && gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu   && rm /usr/local/bin/gosu.asc   && chmod +x /usr/local/bin/gosu   && ( gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$TINI_GPG_KEYS"   || gpg --batch --keyserver keyserver.pgp.com --recv-keys "$TINI_GPG_KEYS" )   && curl -o /usr/local/bin/tini -fSL "https://github.com/krallin/tini/releases/download/v${TINI_VERSION}/tini-$(dpkg --print-architecture | awk -F- '{ print $NF }')"   && curl -o /usr/local/bin/tini.asc -fSL "https://github.com/krallin/tini/releases/download/v${TINI_VERSION}/tini-$(dpkg --print-architecture | awk -F- '{ print $NF }').asc"   && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini   && rm /usr/local/bin/tini.asc   && chmod +x /usr/local/bin/tini   && rm -rf /tmp/*
+# Thu, 17 Nov 2022 23:19:34 GMT
 RUN useradd -s /bin/false -m convertigo     && mkdir -p /workspace/lib /workspace/classes     && chown -R convertigo:convertigo /workspace     && echo "convertigo ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/convertigo     && chmod 0440 /etc/sudoers.d/convertigo
-# Tue, 15 Nov 2022 09:39:18 GMT
-RUN sed -i.bak         -e '/protocol="AJP/d'         -e '/AprLifecycleListener/d'         -e '/JasperListener/d'         -e 's/port="8080"/port="28080" maxThreads="64000" relaxedQueryChars="{}[]|"/'         -e 's,</Host>,  <Valve className="org.apache.catalina.valves.RemoteIpValve" />\n      </Host>,'         conf/server.xml     && sed -i.bak         -e 's,<Context>,<Context sessionCookiePath="/">,'         -e 's,</Context>,<Manager pathname="" /><CookieProcessor sameSiteCookies="unset" /></Context>,'         conf/context.xml     && rm -rf webapps/* bin/*.bat conf/server.xml.bak /tmp/*     && mkdir webapps/ROOT     && chown -R convertigo:convertigo conf temp work logs     && chmod -w conf/*
-# Tue, 15 Nov 2022 09:39:19 GMT
-ENV CONVERTIGO_VERSION=8.0.2
-# Tue, 15 Nov 2022 09:39:19 GMT
-ENV CONVERTIGO_WAR_URL=https://github.com/convertigo/convertigo/releases/download/8.0.2/convertigo-8.0.2.war
-# Tue, 15 Nov 2022 09:39:19 GMT
+# Thu, 17 Nov 2022 23:19:35 GMT
+RUN sed -i.bak         -e '/protocol="AJP/d'         -e '/JasperListener/d'         -e 's/port="8080"/port="28080" maxThreads="64000" relaxedQueryChars="{}[]|"/'         -e 's,</Host>,  <Valve className="org.apache.catalina.valves.RemoteIpValve" />\n      </Host>,'         -e 's,</Service>,<!--SSL<Connector port="28443" protocol="org.apache.coyote.http11.Http11AprProtocol" SSLEnabled="true" maxThreads="64000" relaxedQueryChars="{}[]|">\n      <UpgradeProtocol className="org.apache.coyote.http2.Http2Protocol" />\n      <SSLHostConfig>\n        <Certificate certificateKeyFile="/certs/key.pem"\n                     certificateFile="/certs/cert.pem"\n                     certificateChainFile="/certs/chain.pem"\n                     type="RSA" />\n      </SSLHostConfig>\n    </Connector>SSL-->\n  </Service>,'         conf/server.xml     && sed -i.bak         -e 's,<Context>,<Context sessionCookiePath="/">,'         -e 's,</Context>,<Manager pathname="" /><CookieProcessor sameSiteCookies="unset" /></Context>,'         conf/context.xml     && rm -rf webapps/* bin/*.bat conf/server.xml.bak /tmp/*     && mkdir webapps/ROOT     && chown -R convertigo:convertigo conf temp work logs     && chmod -w conf/*
+# Thu, 17 Nov 2022 23:19:35 GMT
+ENV CONVERTIGO_VERSION=8.1.0
+# Thu, 17 Nov 2022 23:19:35 GMT
+ENV CONVERTIGO_WAR_URL=https://github.com/convertigo/convertigo/releases/download/8.1.0/convertigo-8.1.0.war
+# Thu, 17 Nov 2022 23:19:35 GMT
 ENV CONVERTIGO_GPG_KEYS=6A7779BB78FE368DF74B708FD4DA8FBEB64BF75F
-# Tue, 15 Nov 2022 09:39:43 GMT
-RUN export GNUPGHOME="$(mktemp -d)"     && ( gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$CONVERTIGO_GPG_KEYS"     || gpg --batch --keyserver pgp.mit.edu --recv-keys "$CONVERTIGO_GPG_KEYS"     || gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$CONVERTIGO_GPG_KEYS"     || gpg --batch --keyserver keyserver.pgp.com --recv-keys "$CONVERTIGO_GPG_KEYS" )     && curl -fSL -o /tmp/convertigo.war $CONVERTIGO_WAR_URL     && curl -fSL -o /tmp/convertigo.war.asc $CONVERTIGO_WAR_URL.asc     && gpg --batch --verify /tmp/convertigo.war.asc /tmp/convertigo.war     && mkdir -p webapps/ROOT webapps/convertigo     && (cd webapps/convertigo         && unzip -q /tmp/convertigo.war         && (chmod -f a+x WEB-INF/xvnc/* || true)         && (test "$(dpkg --print-architecture)" != "i386" && rm -rf WEB-INF/xulrunner WEB-INF/xvnc WEB-INF/lib/swt_* || true)         && rm -rf /tmp/*)
-# Tue, 15 Nov 2022 09:39:44 GMT
+# Thu, 17 Nov 2022 23:19:45 GMT
+RUN export GNUPGHOME="$(mktemp -d)"     && ( gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$CONVERTIGO_GPG_KEYS"     || gpg --batch --keyserver keyserver.pgp.com --recv-keys "$CONVERTIGO_GPG_KEYS" )     && curl -fSL -o /tmp/convertigo.war $CONVERTIGO_WAR_URL     && curl -fSL -o /tmp/convertigo.war.asc $CONVERTIGO_WAR_URL.asc     && gpg --batch --verify /tmp/convertigo.war.asc /tmp/convertigo.war     && mkdir -p webapps/ROOT webapps/convertigo     && mkdir /certs     && (cd webapps/convertigo         && unzip -q /tmp/convertigo.war         && (chmod -f a+x WEB-INF/xvnc/* || true)         && (test "$(dpkg --print-architecture)" != "i386" && rm -rf WEB-INF/xulrunner WEB-INF/xvnc WEB-INF/lib/swt_* || true)         && rm -rf /tmp/*)
+# Thu, 17 Nov 2022 23:19:45 GMT
 COPY file:394d5b837e94d77b6fb87e0ca8bd50995186aaed1c5f3ab5bc0b482f0f769cc3 in webapps/ROOT/index.html 
-# Tue, 15 Nov 2022 09:39:44 GMT
-COPY file:4ad3aea0c0d804794214363082a62ec38380e1ab5e72b5b3fd619030091384c6 in / 
-# Tue, 15 Nov 2022 09:39:44 GMT
+# Thu, 17 Nov 2022 23:19:45 GMT
+COPY file:40e66800235c89768f5b8eac3270bd5566fed223b3756435078348512ce00756 in / 
+# Thu, 17 Nov 2022 23:19:45 GMT
 WORKDIR /workspace
-# Tue, 15 Nov 2022 09:39:44 GMT
+# Thu, 17 Nov 2022 23:19:45 GMT
 VOLUME [/workspace]
-# Tue, 15 Nov 2022 09:39:44 GMT
+# Thu, 17 Nov 2022 23:19:45 GMT
 EXPOSE 28080
-# Tue, 15 Nov 2022 09:39:44 GMT
+# Thu, 17 Nov 2022 23:19:46 GMT
 ENTRYPOINT ["tini" "--" "/docker-entrypoint.sh"]
-# Tue, 15 Nov 2022 09:39:44 GMT
+# Thu, 17 Nov 2022 23:19:46 GMT
 CMD ["convertigo"]
 ```
 
@@ -154,27 +154,27 @@ CMD ["convertigo"]
 		Last Modified: Tue, 15 Nov 2022 09:40:03 GMT  
 		Size: 4.4 MB (4399529 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ffcab1dc9207acbf6ac2f2a2e7e4255978b076ffefc701cd588359d142e3339`  
-		Last Modified: Tue, 15 Nov 2022 09:40:02 GMT  
-		Size: 938.7 KB (938676 bytes)  
+	-	`sha256:19d8a1e329b8e5265f868c09ae97ebc8c77b65fd00a728e492361fcf2637516c`  
+		Last Modified: Thu, 17 Nov 2022 23:19:57 GMT  
+		Size: 938.7 KB (938673 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fad5f91266fe38c415a3535b683e9d8e77ef202f836b8fc02c1fb2a08cee880c`  
-		Last Modified: Tue, 15 Nov 2022 09:39:59 GMT  
+	-	`sha256:21230cc04d0746ff9e1c6787354014786f076ac455aaffac0915c4e9d3d93aca`  
+		Last Modified: Thu, 17 Nov 2022 23:19:54 GMT  
 		Size: 4.6 KB (4589 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9b0414c6d8fe972cbc18fcff0ca209f3c88e5aed4fdff50081cf0101dc99598e`  
-		Last Modified: Tue, 15 Nov 2022 09:40:00 GMT  
-		Size: 27.6 KB (27558 bytes)  
+	-	`sha256:741464b9b35f293491c1181dbc06c2413e0805351ba020f01213b7ad94fb6fbd`  
+		Last Modified: Thu, 17 Nov 2022 23:19:55 GMT  
+		Size: 27.7 KB (27660 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f79ac14d32c97268d984246294fe6dcdd82cad90f4f45684610798798abbba2`  
-		Last Modified: Tue, 15 Nov 2022 09:40:05 GMT  
-		Size: 94.1 MB (94122194 bytes)  
+	-	`sha256:c2affd5c0d266409bb906609459bc74aec71ef23571432b4ab7328f5d5f97d2d`  
+		Last Modified: Thu, 17 Nov 2022 23:20:01 GMT  
+		Size: 95.6 MB (95643779 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6b004d4ae10259b20f76ed0140c796056562fb7309213ba50a0bdcf6c0a6da21`  
-		Last Modified: Tue, 15 Nov 2022 09:39:59 GMT  
-		Size: 458.0 B  
+	-	`sha256:1fc19d8ae33d30d289c2e8d19cd22a376e576ff88fc649bc5aebc87455e624a8`  
+		Last Modified: Thu, 17 Nov 2022 23:19:55 GMT  
+		Size: 457.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:694d9efca2f0fc58444c8eb5590f83ef393540d2946bde4803f1acde45a8e81c`  
-		Last Modified: Tue, 15 Nov 2022 09:39:59 GMT  
-		Size: 1.5 KB (1491 bytes)  
+	-	`sha256:e9721840428c21d34021318c33d4a0e94b6f57c9901d570c5aa2919a49ce1e42`  
+		Last Modified: Thu, 17 Nov 2022 23:19:55 GMT  
+		Size: 2.2 KB (2173 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
