@@ -464,14 +464,9 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.2.5-3ubuntu0.7
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.5-3ubuntu0.7.dsc' expat_2.2.5-3ubuntu0.7.dsc 2214 SHA512:92501860b0eaba70da80b4891df4e630b1b1c106a0d9ab680c9ede8beffadd11aff3d50c1fce7ea0013bb15d8310674b606c41af752d0fc76f1594bd9e160b4b
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.5.orig.tar.gz' expat_2.2.5.orig.tar.gz 8273003 SHA512:61ce2a479521412e0c56c352106c4adfb61a6bedb883921aba3ebccc29311ddd192646ac2c51b41572728d4de6ab4cb60a1dbc71515d742a80a8b59d89ca74d6
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.5-3ubuntu0.7.debian.tar.xz' expat_2.2.5-3ubuntu0.7.debian.tar.xz 25800 SHA512:c813288c179eea85f56bd4742be81148d6c2bdb7c80283a5dfb4803a870cdc4c3a600adb29c9e8f7b2f0174762a15f4bf78db61b83b2debb0bc88eb55bfc7e02
-```
 
 ### `dpkg` source package: `findutils=4.6.0+git+20170828-2`
 
@@ -2195,14 +2190,9 @@ Licenses: (parsed from: `/usr/share/doc/libnginx-mod-http-geoip/copyright`, `/us
 - `BSD-4-clause`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nginx=1.14.0-0ubuntu1.10
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nginx/nginx_1.14.0-0ubuntu1.10.dsc' nginx_1.14.0-0ubuntu1.10.dsc 4187 SHA512:0b5ccf943a7a5d407ac72acbf6ac59bafb8d1c246ae39fe91913cba0fa1463f329dcfc9da16f52aa43acaa18daffe0b9a5b5bdd7f4fb4958a31fc834def9e46b
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nginx/nginx_1.14.0.orig.tar.gz' nginx_1.14.0.orig.tar.gz 1016272 SHA512:40f086c9f741727e6f55802b6c3a66f081f7c49c38646dc1491aa3e3c35bae12b65ea6594386609fc849bcd99a60d7cd8ecb3f8d519e0e9ab8db01d653e930e9
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nginx/nginx_1.14.0-0ubuntu1.10.debian.tar.xz' nginx_1.14.0-0ubuntu1.10.debian.tar.xz 928676 SHA512:59da2f74aef639f581a733d13774ce3c5b3c55e6e837333d0abea073c36dd8465e3abd22346fc4ee04b923b7049c6aa53527f9d3a873de69858a5c89c01461fa
-```
 
 ### `dpkg` source package: `npth=1.5-3`
 
