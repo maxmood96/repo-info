@@ -1,10 +1,10 @@
-# `clojure:temurin-17-jammy`
+# `clojure:temurin-19-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9ff34f7b84be1164115b93af31c27fdca7589a60fc9b69306ced1e672a93446d`
-- Created: `2022-11-07T20:52:41.771630001Z`
-- Virtual Size: ~ 579.91 Mb  
+- Image ID: `sha256:2b758209c5379e4172932b09007abae01dd0d54b63662a008c6c28f78edf9cc0`
+- Created: `2022-11-18T22:29:01.064887702Z`
+- Virtual Size: ~ 596.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint"]`
@@ -15,8 +15,8 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-17.0.5+8`
-  - `CLOJURE_VERSION=1.11.1.1189`
+  - `JAVA_VERSION=jdk-19.0.1+10`
+  - `CLOJURE_VERSION=1.11.1.1200`
 
 ## `dpkg` (`.deb`-based packages)
 

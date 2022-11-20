@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:08dde88c6ae5d1918feb893ff88e508d350dd541b345e3d59ca524f5c4515764`
-- Created: `2022-11-05T01:17:41.789333553Z`
-- Virtual Size: ~ 597.05 Mb  
+- Image ID: `sha256:dbd4c44c3b6e978025a3514e887f6d158117f150d97c68173552392d85273d7d`
+- Created: `2022-11-18T22:24:48.356883079Z`
+- Virtual Size: ~ 597.06 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["clj"]`
@@ -15,7 +15,7 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-11.0.17+8`
-  - `CLOJURE_VERSION=1.11.1.1189`
+  - `CLOJURE_VERSION=1.11.1.1200`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -495,14 +495,9 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.2.9-1ubuntu0.4
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.9-1ubuntu0.4.dsc' expat_2.2.9-1ubuntu0.4.dsc 2064 SHA512:e8fa4c5bd395f58c262075cc80f94c33c9386898809b3959812a9f01413aadacb1dfc34d1ca3f03045571e6eba125f4d6d18b0a14808862832136af12e4aea3c
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.9.orig.tar.gz' expat_2.2.9.orig.tar.gz 8273174 SHA512:e274fa7f30630450cb3ca681b266d765dbb7f5d00d1275ff9d9b2e2f6e1095893b8af4e3f4172ae6297c7a8a831a0a6becd484fe4bcdca09c37922f630780ef0
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.9-1ubuntu0.4.debian.tar.xz' expat_2.2.9-1ubuntu0.4.debian.tar.xz 25972 SHA512:e9ee861e786b5811684233a5e5c8c3ba1f0713519e1084f0801088a5d0f29e00483b60e4e3d3024d9400ac78aee7b7a4198c30c6c2ea5c146c9947a71d237864
-```
 
 ### `dpkg` source package: `file=1:5.38-4`
 
