@@ -1,7 +1,7 @@
 ## `neo4j:latest`
 
 ```console
-$ docker pull neo4j@sha256:8e5d3d32ab4d18544694091a825a13a8e7a48af35a177a6e7645f74a9186de4a
+$ docker pull neo4j@sha256:1fa5c9c426cfd5e625fa4947b6bc338caebfd27686e763ffedfd8bdf6988dd0e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,14 +12,14 @@ $ docker pull neo4j@sha256:8e5d3d32ab4d18544694091a825a13a8e7a48af35a177a6e7645f
 ### `neo4j:latest` - linux; amd64
 
 ```console
-$ docker pull neo4j@sha256:5e5c440f695613322027b9eaf99858692dcb6edf9cd70567c48d230214245a56
+$ docker pull neo4j@sha256:00d19bb846618f4a014868c6ed1e9c16bb37b3cd08cabb60a16348d8fed6a978
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **334.6 MB (334564066 bytes)**  
+-	Total Size: **336.8 MB (336774481 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:43eb20e91b26463d9a206c03ae97182ee6a83e63b83255bba256fb5f517603ef`
+-	Image ID: `sha256:bee0b833f524df181bc1cdb33a65c9d7d40ba34452e1bd2b7a7323c751659023`
 -	Entrypoint: `["tini","-g","--","\/startup\/docker-entrypoint.sh"]`
 -	Default Command: `["neo4j"]`
 
@@ -32,29 +32,29 @@ CMD ["bash"]
 ENV JAVA_HOME=/opt/java/openjdk
 # Tue, 15 Nov 2022 13:05:21 GMT
 COPY dir:fa15c3254735d08fe4cb4c940d6fc08efc9755ff0499a6eb8e51c961cea48d5c in /opt/java/openjdk 
-# Tue, 15 Nov 2022 13:05:23 GMT
-ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin NEO4J_SHA256=c8086d1f8558376754e7248a7d12838f024ca2699aa59e0aba30816b229ed4f4 NEO4J_TARBALL=neo4j-community-5.1.0-unix.tar.gz NEO4J_EDITION=community NEO4J_HOME=/var/lib/neo4j
-# Tue, 15 Nov 2022 13:05:23 GMT
-ARG NEO4J_URI=https://dist.neo4j.org/neo4j-community-5.1.0-unix.tar.gz
-# Tue, 15 Nov 2022 13:05:24 GMT
-# ARGS: NEO4J_URI=https://dist.neo4j.org/neo4j-community-5.1.0-unix.tar.gz
+# Mon, 21 Nov 2022 19:25:13 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin NEO4J_SHA256=5fe22a0ff4cb11152b40b7ba0228f0e9af6a0b899006c413adf498314fd4b4f9 NEO4J_TARBALL=neo4j-community-5.2.0-unix.tar.gz NEO4J_EDITION=community NEO4J_HOME=/var/lib/neo4j
+# Mon, 21 Nov 2022 19:25:13 GMT
+ARG NEO4J_URI=https://dist.neo4j.org/neo4j-community-5.2.0-unix.tar.gz
+# Mon, 21 Nov 2022 19:25:13 GMT
+# ARGS: NEO4J_URI=https://dist.neo4j.org/neo4j-community-5.2.0-unix.tar.gz
 RUN addgroup --gid 7474 --system neo4j && adduser --uid 7474 --system --no-create-home --home "${NEO4J_HOME}" --ingroup neo4j neo4j
-# Tue, 15 Nov 2022 13:05:24 GMT
-COPY multi:a11635e58e35f289c454771630762b2132b546d160631e2fe7ed78f034b4cc21 in /startup/ 
-# Tue, 15 Nov 2022 13:05:36 GMT
-# ARGS: NEO4J_URI=https://dist.neo4j.org/neo4j-community-5.1.0-unix.tar.gz
+# Mon, 21 Nov 2022 19:25:14 GMT
+COPY multi:4c38b038fb207d3b3e018c6de201a35723320a0beef5d4b7a28a0fdf507334bd in /startup/ 
+# Mon, 21 Nov 2022 19:25:26 GMT
+# ARGS: NEO4J_URI=https://dist.neo4j.org/neo4j-community-5.2.0-unix.tar.gz
 RUN apt update     && apt install -y curl gosu jq tini wget     && curl --fail --silent --show-error --location --remote-name ${NEO4J_URI}     && echo "${NEO4J_SHA256}  ${NEO4J_TARBALL}" | sha256sum -c --strict --quiet     && tar --extract --file ${NEO4J_TARBALL} --directory /var/lib     && mv /var/lib/neo4j-* "${NEO4J_HOME}"     && rm ${NEO4J_TARBALL}     && mv "${NEO4J_HOME}"/data /data     && mv "${NEO4J_HOME}"/logs /logs     && chown -R neo4j:neo4j /data     && chmod -R 777 /data     && chown -R neo4j:neo4j /logs     && chmod -R 777 /logs     && chown -R neo4j:neo4j "${NEO4J_HOME}"     && chmod -R 777 "${NEO4J_HOME}"     && ln -s /data "${NEO4J_HOME}"/data     && ln -s /logs "${NEO4J_HOME}"/logs     && apt-get -y purge --auto-remove curl     && rm -rf /var/lib/apt/lists/*
-# Tue, 15 Nov 2022 13:05:36 GMT
+# Mon, 21 Nov 2022 19:25:27 GMT
 ENV PATH=/var/lib/neo4j/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 15 Nov 2022 13:05:36 GMT
+# Mon, 21 Nov 2022 19:25:27 GMT
 WORKDIR /var/lib/neo4j
-# Tue, 15 Nov 2022 13:05:37 GMT
+# Mon, 21 Nov 2022 19:25:27 GMT
 VOLUME [/data /logs]
-# Tue, 15 Nov 2022 13:05:37 GMT
+# Mon, 21 Nov 2022 19:25:27 GMT
 EXPOSE 7473 7474 7687
-# Tue, 15 Nov 2022 13:05:37 GMT
+# Mon, 21 Nov 2022 19:25:27 GMT
 ENTRYPOINT ["tini" "-g" "--" "/startup/docker-entrypoint.sh"]
-# Tue, 15 Nov 2022 13:05:37 GMT
+# Mon, 21 Nov 2022 19:25:27 GMT
 CMD ["neo4j"]
 ```
 
@@ -67,30 +67,30 @@ CMD ["neo4j"]
 		Last Modified: Tue, 15 Nov 2022 13:08:12 GMT  
 		Size: 192.4 MB (192431277 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4097fb40ffd02e078eb31036cdefbefcc64ffaf9b2801adf0dc4362131d7c46b`  
-		Last Modified: Tue, 15 Nov 2022 13:07:56 GMT  
-		Size: 3.9 KB (3853 bytes)  
+	-	`sha256:398f7542920d6bd98a9af713e2d7e2ebbaface91042b0e3a29e211ade0a827a3`  
+		Last Modified: Mon, 21 Nov 2022 19:26:32 GMT  
+		Size: 3.9 KB (3859 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1004255c301f882573df1701e7693c77689a03afe84c818153d9ebc38026c7fa`  
-		Last Modified: Tue, 15 Nov 2022 13:07:56 GMT  
-		Size: 7.6 KB (7632 bytes)  
+	-	`sha256:beacdd549a219adcf7daa416dea38438cd91e610c033800425bb922605d8d85a`  
+		Last Modified: Mon, 21 Nov 2022 19:26:32 GMT  
+		Size: 8.2 KB (8165 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fec93de14207dfa807546e3a466d248baa036d79b741e496e4562a5564dd4c43`  
-		Last Modified: Tue, 15 Nov 2022 13:08:03 GMT  
-		Size: 110.7 MB (110708674 bytes)  
+	-	`sha256:ee9d107c6cefe664bd054035614d7cfacaab9910ea18031f603011c1591b60c0`  
+		Last Modified: Mon, 21 Nov 2022 19:26:37 GMT  
+		Size: 112.9 MB (112918550 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `neo4j:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull neo4j@sha256:3f362f0cc80d965d0966dc0bf9252155b046333a74cbd8a84a2c35367107146f
+$ docker pull neo4j@sha256:7a0516c8692b1b4bd64f9099b68f15a0771fc09d18ee27b721bf45821bc291be
 ```
 
 -	Docker Version: 20.10.17
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **331.9 MB (331853378 bytes)**  
+-	Total Size: **334.1 MB (334063701 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f3230080245d200ff5241b110caab1fbdbbeec8c222358642e851e0f9978375e`
+-	Image ID: `sha256:4b8f621045d66bdcfd60f7917996d89dd1263b70a9e9b77dea6cb1da6fd5a7bb`
 -	Entrypoint: `["tini","-g","--","\/startup\/docker-entrypoint.sh"]`
 -	Default Command: `["neo4j"]`
 
@@ -103,29 +103,29 @@ CMD ["bash"]
 ENV JAVA_HOME=/opt/java/openjdk
 # Tue, 15 Nov 2022 05:54:33 GMT
 COPY dir:36850aee002fdc5445f17d75b8266c48f8e705973ece815c3b53d28b6656ac3e in /opt/java/openjdk 
-# Tue, 15 Nov 2022 12:20:52 GMT
-ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin NEO4J_SHA256=c8086d1f8558376754e7248a7d12838f024ca2699aa59e0aba30816b229ed4f4 NEO4J_TARBALL=neo4j-community-5.1.0-unix.tar.gz NEO4J_EDITION=community NEO4J_HOME=/var/lib/neo4j
-# Tue, 15 Nov 2022 12:20:52 GMT
-ARG NEO4J_URI=https://dist.neo4j.org/neo4j-community-5.1.0-unix.tar.gz
-# Tue, 15 Nov 2022 12:20:52 GMT
-# ARGS: NEO4J_URI=https://dist.neo4j.org/neo4j-community-5.1.0-unix.tar.gz
+# Mon, 21 Nov 2022 19:40:07 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin NEO4J_SHA256=5fe22a0ff4cb11152b40b7ba0228f0e9af6a0b899006c413adf498314fd4b4f9 NEO4J_TARBALL=neo4j-community-5.2.0-unix.tar.gz NEO4J_EDITION=community NEO4J_HOME=/var/lib/neo4j
+# Mon, 21 Nov 2022 19:40:07 GMT
+ARG NEO4J_URI=https://dist.neo4j.org/neo4j-community-5.2.0-unix.tar.gz
+# Mon, 21 Nov 2022 19:40:08 GMT
+# ARGS: NEO4J_URI=https://dist.neo4j.org/neo4j-community-5.2.0-unix.tar.gz
 RUN addgroup --gid 7474 --system neo4j && adduser --uid 7474 --system --no-create-home --home "${NEO4J_HOME}" --ingroup neo4j neo4j
-# Tue, 15 Nov 2022 12:20:52 GMT
-COPY multi:a11635e58e35f289c454771630762b2132b546d160631e2fe7ed78f034b4cc21 in /startup/ 
-# Tue, 15 Nov 2022 12:21:02 GMT
-# ARGS: NEO4J_URI=https://dist.neo4j.org/neo4j-community-5.1.0-unix.tar.gz
+# Mon, 21 Nov 2022 19:40:08 GMT
+COPY multi:4c38b038fb207d3b3e018c6de201a35723320a0beef5d4b7a28a0fdf507334bd in /startup/ 
+# Mon, 21 Nov 2022 19:40:20 GMT
+# ARGS: NEO4J_URI=https://dist.neo4j.org/neo4j-community-5.2.0-unix.tar.gz
 RUN apt update     && apt install -y curl gosu jq tini wget     && curl --fail --silent --show-error --location --remote-name ${NEO4J_URI}     && echo "${NEO4J_SHA256}  ${NEO4J_TARBALL}" | sha256sum -c --strict --quiet     && tar --extract --file ${NEO4J_TARBALL} --directory /var/lib     && mv /var/lib/neo4j-* "${NEO4J_HOME}"     && rm ${NEO4J_TARBALL}     && mv "${NEO4J_HOME}"/data /data     && mv "${NEO4J_HOME}"/logs /logs     && chown -R neo4j:neo4j /data     && chmod -R 777 /data     && chown -R neo4j:neo4j /logs     && chmod -R 777 /logs     && chown -R neo4j:neo4j "${NEO4J_HOME}"     && chmod -R 777 "${NEO4J_HOME}"     && ln -s /data "${NEO4J_HOME}"/data     && ln -s /logs "${NEO4J_HOME}"/logs     && apt-get -y purge --auto-remove curl     && rm -rf /var/lib/apt/lists/*
-# Tue, 15 Nov 2022 12:21:03 GMT
+# Mon, 21 Nov 2022 19:40:20 GMT
 ENV PATH=/var/lib/neo4j/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 15 Nov 2022 12:21:03 GMT
+# Mon, 21 Nov 2022 19:40:20 GMT
 WORKDIR /var/lib/neo4j
-# Tue, 15 Nov 2022 12:21:03 GMT
+# Mon, 21 Nov 2022 19:40:20 GMT
 VOLUME [/data /logs]
-# Tue, 15 Nov 2022 12:21:03 GMT
+# Mon, 21 Nov 2022 19:40:20 GMT
 EXPOSE 7473 7474 7687
-# Tue, 15 Nov 2022 12:21:03 GMT
+# Mon, 21 Nov 2022 19:40:20 GMT
 ENTRYPOINT ["tini" "-g" "--" "/startup/docker-entrypoint.sh"]
-# Tue, 15 Nov 2022 12:21:03 GMT
+# Mon, 21 Nov 2022 19:40:20 GMT
 CMD ["neo4j"]
 ```
 
@@ -138,15 +138,15 @@ CMD ["neo4j"]
 		Last Modified: Tue, 15 Nov 2022 06:05:10 GMT  
 		Size: 191.2 MB (191215234 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a541d4fef37acaf6ba2a36b5437072fc9756a773232ffdd6158a82cd9a199142`  
-		Last Modified: Tue, 15 Nov 2022 12:22:36 GMT  
-		Size: 3.9 KB (3884 bytes)  
+	-	`sha256:d5e7be394efde6b5629df89dc3ce48d9d5a9faadb65769e7a47d5e84ff5f7ce4`  
+		Last Modified: Mon, 21 Nov 2022 19:41:04 GMT  
+		Size: 3.9 KB (3892 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:600737c98725b80518b3e4ae1a41b20c21c95374a66b17d5c147cde7d809d2d9`  
-		Last Modified: Tue, 15 Nov 2022 12:22:35 GMT  
-		Size: 7.6 KB (7631 bytes)  
+	-	`sha256:61dd87a5f84782ac540555ebeabe25f86592b46bd4f1915c74db2d4826271710`  
+		Last Modified: Mon, 21 Nov 2022 19:41:04 GMT  
+		Size: 8.2 KB (8163 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7c4b6302268e74ac4f37dca88586cdf80e4165522d824686cdfeeec61c597315`  
-		Last Modified: Tue, 15 Nov 2022 12:22:40 GMT  
-		Size: 110.6 MB (110566024 bytes)  
+	-	`sha256:bd4f72cf8853347f8ee5b80ca5b41cbb1a2bd71adc2eff267bf2a7da739d07a3`  
+		Last Modified: Mon, 21 Nov 2022 19:41:09 GMT  
+		Size: 112.8 MB (112775807 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
