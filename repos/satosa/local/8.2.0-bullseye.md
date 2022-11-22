@@ -1,10 +1,10 @@
-# `satosa:8.1.1-bullseye`
+# `satosa:8.2.0-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0f85410f1215a356e3bf0bc40c5c71474a97a7903ed3994fbcd205512fb31f6c`
-- Created: `2022-11-16T07:23:32.766731886Z`
-- Virtual Size: ~ 224.54 Mb  
+- Image ID: `sha256:da994718d5841d288b6e518373ab9111b96651fc972c162c8ec1e737bb52fd08`
+- Created: `2022-11-21T19:28:36.837885961Z`
+- Virtual Size: ~ 239.55 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,12 +13,12 @@
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696D`
-  - `PYTHON_VERSION=3.10.8`
-  - `PYTHON_PIP_VERSION=22.2.2`
-  - `PYTHON_SETUPTOOLS_VERSION=63.2.0`
+  - `PYTHON_VERSION=3.11.0`
+  - `PYTHON_PIP_VERSION=22.3`
+  - `PYTHON_SETUPTOOLS_VERSION=65.5.0`
   - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/66030fa03382b4914d4c4d0896961a0bdeeeb274/public/get-pip.py`
   - `PYTHON_GET_PIP_SHA256=1e501cf004eac1b7eb1f97266d28f995ae835d30250bec7f8850562703067dc6`
-  - `SATOSA_VERSION=8.1.1`
+  - `SATOSA_VERSION=8.2.0`
 
 ## `dpkg` (`.deb`-based packages)
 
