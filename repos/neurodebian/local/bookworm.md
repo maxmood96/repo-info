@@ -1141,21 +1141,13 @@ Licenses: (parsed from: `/usr/share/doc/libksba8/copyright`)
 - `GPL-3`
 - `LGPL-2.1-or-later`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libksba=1.6.2-2
-'http://deb.debian.org/debian/pool/main/libk/libksba/libksba_1.6.2-2.dsc' libksba_1.6.2-2.dsc 2472 SHA256:4ee5d09c9eccf68727d48827b9354f358287fac6dfff80b13aba7cab6e3027eb
-'http://deb.debian.org/debian/pool/main/libk/libksba/libksba_1.6.2.orig.tar.bz2' libksba_1.6.2.orig.tar.bz2 667846 SHA256:fce01ccac59812bddadffacff017dac2e4762bdb6ebc6ffe06f6ed4f6192c971
-'http://deb.debian.org/debian/pool/main/libk/libksba/libksba_1.6.2.orig.tar.bz2.asc' libksba_1.6.2.orig.tar.bz2.asc 228 SHA256:f12b91764d619a9b2d66a7c49b2e5563c39f91bf3b0fbb6b7dc4a445a18878d6
-'http://deb.debian.org/debian/pool/main/libk/libksba/libksba_1.6.2-2.debian.tar.xz' libksba_1.6.2-2.debian.tar.xz 14560 SHA256:5ecf11f00d6d5a551eaf1deabb95e9bbd38d818645843d0e54a35af6279db882
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libksba/1.6.2-2/
 
-- https://sources.debian.net/src/libksba/1.6.2-2/ (for browsing the source)
-- https://sources.debian.net/src/libksba/1.6.2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libksba/1.6.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libseccomp=2.5.4-1`
 
@@ -1340,20 +1332,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxcrypt=1:4.4.30-1
-'http://deb.debian.org/debian/pool/main/libx/libxcrypt/libxcrypt_4.4.30-1.dsc' libxcrypt_4.4.30-1.dsc 1591 SHA256:7324f6d1e155fcd98e0a2da84280f1630987a64563b74be8dae04f5bc91b9e4f
-'http://deb.debian.org/debian/pool/main/libx/libxcrypt/libxcrypt_4.4.30.orig.tar.xz' libxcrypt_4.4.30.orig.tar.xz 391672 SHA256:ef9894e5ee94d6dba2d268ba3cf89550f05096f97487eaded0b16b9178705f5e
-'http://deb.debian.org/debian/pool/main/libx/libxcrypt/libxcrypt_4.4.30-1.debian.tar.xz' libxcrypt_4.4.30-1.debian.tar.xz 8076 SHA256:44a674897dddf90aaa76a811954812574b60b7efd80271873a829395216cd82e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libxcrypt/1:4.4.30-1/
 
-- https://sources.debian.net/src/libxcrypt/1:4.4.30-1/ (for browsing the source)
-- https://sources.debian.net/src/libxcrypt/1:4.4.30-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxcrypt/1:4.4.30-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libzstd=1.5.2+dfsg-1`
 
@@ -1867,21 +1852,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.39.4-1
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.39.4-1.dsc' sqlite3_3.39.4-1.dsc 2487 SHA256:07a4a14c522e6a2a28e3165226cd101c442af64a53d49187c68499a8b913d0ac
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.39.4.orig-www.tar.xz' sqlite3_3.39.4.orig-www.tar.xz 5745632 SHA256:3bc15fa2c5df4f2849d83d76d9fc9eba7214209c4a10b577aea07f9e5be52004
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.39.4.orig.tar.xz' sqlite3_3.39.4.orig.tar.xz 7821660 SHA256:1201c9283346381d9ae7fc6c40d44af3f932480421de094345bf6fbcac5bb145
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.39.4-1.debian.tar.xz' sqlite3_3.39.4-1.debian.tar.xz 29596 SHA256:37dcbed7cdbbb6ab76e606a80bbe59732ce0aa58411fae6cea3de40b8b33d3a9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sqlite3/3.39.4-1/
 
-- https://sources.debian.net/src/sqlite3/3.39.4-1/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.39.4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.39.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=252.1-1`
 
@@ -1930,20 +1907,13 @@ Licenses: (parsed from: `/usr/share/doc/sysvinit-utils/copyright`)
 - `GPL-3`
 - `GPL-3.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sysvinit=3.05-6
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.05-6.dsc' sysvinit_3.05-6.dsc 2373 SHA256:7653d028e6f5e001140da6178ec7b01d2ad260454534972d20f297b9f4366c95
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.05.orig.tar.gz' sysvinit_3.05.orig.tar.gz 435554 SHA256:1e15471afdd550e88c121e5030707d9f00ca66b29fa91eacdaae072bde53f6bc
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.05-6.debian.tar.xz' sysvinit_3.05-6.debian.tar.xz 134276 SHA256:88b77f119f85ac3afe059f045c679793373b6b62764acc0a8886934f2a9c8eda
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sysvinit/3.05-6/
 
-- https://sources.debian.net/src/sysvinit/3.05-6/ (for browsing the source)
-- https://sources.debian.net/src/sysvinit/3.05-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sysvinit/3.05-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tar=1.34+dfsg-1`
 
