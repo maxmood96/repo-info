@@ -1,14 +1,14 @@
-# `solr:9.0.0`
+# `solr:9.1.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:78f7f1b9197f7e657294abeed2269d8b033d9d19d8069bebd9729a08fd1c5e97`
-- Created: `2022-11-07T22:07:12.749884588Z`
-- Virtual Size: ~ 540.08 Mb  
+- Image ID: `sha256:54e3db3b09c403ad4027eae579181b3c1f638a826770dad5928a65b394437d2c`
+- Created: `2022-11-22T22:43:36.874419326Z`
+- Virtual Size: ~ 545.84 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
-- Command: `["solr-foreground","-a","-XX:CompileCommand=exclude,com.github.benmanes.caffeine.cache.BoundedLocalCache::put"]`
+- Command: `["solr-foreground"]`
 - Environment:
   - `PATH=/opt/solr/bin:/opt/solr/docker/scripts:/opt/solr/prometheus-exporter/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/opt/java/openjdk`
@@ -34,7 +34,7 @@
   - `org.opencontainers.image.source=https://github.com/apache/solr`
   - `org.opencontainers.image.title=Apache Solr`
   - `org.opencontainers.image.url=https://solr.apache.org`
-  - `org.opencontainers.image.version=9.0.0`
+  - `org.opencontainers.image.version=9.1.0`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -766,20 +766,25 @@ $ apt-get source -qq --print-uris gnutls28=3.6.13-2ubuntu1.7
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13-2ubuntu1.7.debian.tar.xz' gnutls28_3.6.13-2ubuntu1.7.debian.tar.xz 73256 SHA512:6927fc815c0358ee20ca5c851f97b524e62a292948812db58f60864d98993ba9ee5b7f443f6efd544e6cb379398d95c937f6c937bb8687694b17d237f4da6692
 ```
 
-### `dpkg` source package: `gosu=1.10-1ubuntu0.20.04.1`
+### `dpkg` source package: `gosu=1.10-1ubuntu0.20.04.2`
 
 Binary Packages:
 
-- `gosu=1.10-1ubuntu0.20.04.1`
+- `gosu=1.10-1ubuntu0.20.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/gosu/copyright`)
 
 - `GPL-3`
 - `GPL-3+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gosu=1.10-1ubuntu0.20.04.2
+'http://archive.ubuntu.com/ubuntu/pool/universe/g/gosu/gosu_1.10-1ubuntu0.20.04.2.dsc' gosu_1.10-1ubuntu0.20.04.2.dsc 2167 SHA512:a6c5169ac40bf64ce1b0289da2c21025e8715f7949e38c966c188a35d6aa18036d7246d954753ba9d003eec3cc25d1943dfc427c3518b6c6dfed8f58a23c699a
+'http://archive.ubuntu.com/ubuntu/pool/universe/g/gosu/gosu_1.10.orig.tar.gz' gosu_1.10.orig.tar.gz 17683 SHA512:435a76e8c0dcdbeb5b11fcfb8246676031f3c2e6e085b65552c58e71a81acfbd8a9db9ae24c6943ae90062792aacf9c71586b7a0bf62179b2e046f50951c130a
+'http://archive.ubuntu.com/ubuntu/pool/universe/g/gosu/gosu_1.10-1ubuntu0.20.04.2.debian.tar.xz' gosu_1.10-1ubuntu0.20.04.2.debian.tar.xz 3068 SHA512:18bc4156d50abc63adf5df116834fca35e9074afeb7738cb05a411eb3bb29a2dcf1b7c0d5a0228554fa5b0df808426cc84933c7400ce3bf26fe40510da097ba4
+```
 
 ### `dpkg` source package: `grep=3.4-1`
 
@@ -1954,14 +1959,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=245.4-4ubuntu3.18
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.18.dsc' systemd_245.4-4ubuntu3.18.dsc 5262 SHA512:54fdd08eb54669496a545c1bbacad81ebc174d32cf3247c9620e3b79cec9c5714e91025a6bd8284f863011dda8f5fa6059d5598c27ba050d20b6cfd810a12b71
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4.orig.tar.gz' systemd_245.4.orig.tar.gz 9000780 SHA512:02036bb1ab05301a9d0dfdd4b9c9376e90134474482531e6e292122380be2f24f99177493dd3af6f8af1a8ed2599ee0996da91a3b1b7872bbfaf26a1c3e61b4c
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.18.debian.tar.xz' systemd_245.4-4ubuntu3.18.debian.tar.xz 279672 SHA512:fb32658af3f684336e05270c4b10cf17c11830dc5ec1e7c1b1a3ed4b50fdcc8a89db6a05488d24b5bec4a8996ab716b0fec73d464d25b3a464f10b4d11f3380b
-```
 
 ### `dpkg` source package: `sysvinit=2.96-2.1ubuntu1`
 
