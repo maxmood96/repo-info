@@ -1455,14 +1455,9 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `TatcherUlrichPublicDomain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:6.9.7.4+dfsg-16ubuntu6.13
-'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.9.7.4%2bdfsg-16ubuntu6.13.dsc' imagemagick_6.9.7.4+dfsg-16ubuntu6.13.dsc 5238 SHA512:55015d07d1c8c02f2374fea810feca6e811eeea6ef338c6f57ac32d3da681ef79d5a96c526b18f8820dd0c4e508b6eab421e335dc64825418273882c63e39865
-'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.9.7.4%2bdfsg.orig.tar.xz' imagemagick_6.9.7.4+dfsg.orig.tar.xz 8929800 SHA512:c1696b80cb95f00c32079110b84df9a125730f336cca5c04caf4aeb4b2f48ba8014dfd808b8a5cef221d5be4da4ffa1472548aa6885c5f756f04db64baf6fbd3
-'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.9.7.4%2bdfsg-16ubuntu6.13.debian.tar.xz' imagemagick_6.9.7.4+dfsg-16ubuntu6.13.debian.tar.xz 314788 SHA512:90118b2c9b8fc7aec3ec78d138bdb721d6df1fdd3933af56b79345af971207a26870fa8c747f8bd857f036048c0f1dd430051065d2fb3ac370197a912fb55912
-```
 
 ### `dpkg` source package: `init-system-helpers=1.51`
 

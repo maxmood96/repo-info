@@ -467,20 +467,13 @@ Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/l
 - `RSA-MD`
 - `SSLeay`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cyrus-sasl2=2.1.28+dfsg-9
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg-9.dsc' cyrus-sasl2_2.1.28+dfsg-9.dsc 3306 SHA256:173670779db23e5999b719b22b3a617b05a5a3f9b4aa13af30c2d6d46f91bd13
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg.orig.tar.xz' cyrus-sasl2_2.1.28+dfsg.orig.tar.xz 797472 SHA256:a15886d7da5958bd27f35b7c871dd872f6dc5b9917c9b6b15e3de014c7dab3d9
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg-9.debian.tar.xz' cyrus-sasl2_2.1.28+dfsg-9.debian.tar.xz 97024 SHA256:2542f723a6795bee72bdc8bab0056ef31794b5412ca9a1994d5fde60f743eedb
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cyrus-sasl2/2.1.28+dfsg-9/
 
-- https://sources.debian.net/src/cyrus-sasl2/2.1.28+dfsg-9/ (for browsing the source)
-- https://sources.debian.net/src/cyrus-sasl2/2.1.28+dfsg-9/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cyrus-sasl2/2.1.28+dfsg-9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dash=0.5.11+git20210903+057cd650a4ed-9`
 
@@ -1336,20 +1329,13 @@ Licenses: (parsed from: `/usr/share/doc/libedit2/copyright`)
 
 - `BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libedit=3.1-20221030-1
-'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20221030-1.dsc' libedit_3.1-20221030-1.dsc 2208 SHA256:5dae2bea8aae504c5d3d6d0f164b52a371057225533d86852946af9d9ecf2707
-'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20221030.orig.tar.gz' libedit_3.1-20221030.orig.tar.gz 533261 SHA256:f0925a5adf4b1bf116ee19766b7daa766917aec198747943b1c4edf67a4be2bb
-'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20221030-1.debian.tar.xz' libedit_3.1-20221030-1.debian.tar.xz 15132 SHA256:e6b32bc7cbc3158efd582e1ac8ba1074a99e817dcf6ab2ff6674d8e0be0ffa31
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libedit/3.1-20221030-1/
 
-- https://sources.debian.net/src/libedit/3.1-20221030-1/ (for browsing the source)
-- https://sources.debian.net/src/libedit/3.1-20221030-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libedit/3.1-20221030-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `liberror-perl=0.17029-2`
 
