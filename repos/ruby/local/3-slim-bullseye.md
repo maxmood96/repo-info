@@ -1,10 +1,10 @@
-# `ruby:3.1.2-slim-bullseye`
+# `ruby:3.1.3-slim-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a33c88723d85278ff48e0b3843798d2ce8045253b0cab9a570cd86f3186b7314`
-- Created: `2022-11-15T09:10:20.474382768Z`
-- Virtual Size: ~ 173.95 Mb  
+- Image ID: `sha256:8b74b12294a55b0458fa886a13a388a8ee947b39e4a1413fd9f0810a4d351cb7`
+- Created: `2022-11-25T21:39:22.3691197Z`
+- Virtual Size: ~ 174.41 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["irb"]`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `RUBY_MAJOR=3.1`
-  - `RUBY_VERSION=3.1.2`
-  - `RUBY_DOWNLOAD_SHA256=ca10d017f8a1b6d247556622c841fc56b90c03b1803f87198da1e4fd3ec3bf2a`
+  - `RUBY_VERSION=3.1.3`
+  - `RUBY_DOWNLOAD_SHA256=4ee161939826bcdfdafa757cf8e293a7f14e357f62be7144f040335cc8c7371a`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`

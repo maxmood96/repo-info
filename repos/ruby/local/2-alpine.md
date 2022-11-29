@@ -1,10 +1,10 @@
-# `ruby:2.7.6-alpine3.16`
+# `ruby:2.7.7-alpine3.16`
 
 ## Docker Metadata
 
-- Image ID: `sha256:99b63c4cd90b661ca24bbe1c49c5103a46afa66f0920530d5c35f25aed5a693d`
-- Created: `2022-11-12T08:27:38.92700607Z`
-- Virtual Size: ~ 45.34 Mb  
+- Image ID: `sha256:15ec996d33196c45484ca29d4a4e2a796f7e9f5bf580e77edaa43c814597245b`
+- Created: `2022-11-25T22:11:59.442429154Z`
+- Virtual Size: ~ 45.95 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["irb"]`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `RUBY_MAJOR=2.7`
-  - `RUBY_VERSION=2.7.6`
-  - `RUBY_DOWNLOAD_SHA256=54dcd3044726c4ab75a9d4604720501442b229a3aed6a55fe909567da8807f24`
+  - `RUBY_VERSION=2.7.7`
+  - `RUBY_DOWNLOAD_SHA256=b38dff2e1f8ce6e5b7d433f8758752987a6b2adfd9bc7571dbc42ea5d04e3e4c`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
@@ -397,16 +397,16 @@ GPL-2.0-only
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.3-r1 description:
+musl-1.2.3-r2 description:
 the musl c library (libc) implementation
 
-musl-1.2.3-r1 webpage:
+musl-1.2.3-r2 webpage:
 https://musl.libc.org/
 
-musl-1.2.3-r1 installed size:
+musl-1.2.3-r2 installed size:
 608 KiB
 
-musl-1.2.3-r1 license:
+musl-1.2.3-r2 license:
 MIT
 
 ```
