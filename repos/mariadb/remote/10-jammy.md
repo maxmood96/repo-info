@@ -1,7 +1,7 @@
 ## `mariadb:10-jammy`
 
 ```console
-$ docker pull mariadb@sha256:940985c1cf37812ffb3bb6c7b34b4e40233e0907fc786ec7d63c49553d7d1454
+$ docker pull mariadb@sha256:e2516ecfde15aa7ffb5d69088e8109dc56b8db552f98a75eb5be5171105ba5cd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -109,14 +109,14 @@ CMD ["mariadbd"]
 ### `mariadb:10-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull mariadb@sha256:922dfb1c4f15c63c0ff30f2404a68a340ce3d34fd73f4a24282583d80f75c9bd
+$ docker pull mariadb@sha256:81c18e252b58a0db631f6d7b6396db7ff823b5ca0307c9fbb1b14ad50bae01db
 ```
 
 -	Docker Version: 20.10.17
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **120.2 MB (120198910 bytes)**  
+-	Total Size: **120.2 MB (120198929 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:19b05bf035f44dcec1469e1a3598f44ed73f7df247260b1e51c75a0427e27db9`
+-	Image ID: `sha256:e58a7fa9d4f3b75973498f41c2f9b7f53b3b7ede40bd25665e89db4ae9bbd2b2`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mariadbd"]`
 
@@ -157,13 +157,13 @@ RUN set -ex; 	{ 		echo "mariadb-server" mysql-server/root_password password 'unu
 VOLUME [/var/lib/mysql]
 # Fri, 18 Nov 2022 00:42:07 GMT
 COPY file:889339e755ad928a437caeaa979e26ba168ae42039fb519e6d5b31d29bcce082 in /usr/local/bin/healthcheck.sh 
-# Fri, 18 Nov 2022 00:42:07 GMT
-COPY file:8ff49c407a76d8990281701d57bd3af69835977acdff7e2905ae6052323b3ebd in /usr/local/bin/ 
-# Fri, 18 Nov 2022 00:42:07 GMT
+# Wed, 30 Nov 2022 22:55:38 GMT
+COPY file:ebdfbcbc74dda1874f1c75d86e1c32733edb402d13440b2b7140a952010bc21f in /usr/local/bin/ 
+# Wed, 30 Nov 2022 22:55:38 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 18 Nov 2022 00:42:07 GMT
+# Wed, 30 Nov 2022 22:55:38 GMT
 EXPOSE 3306
-# Fri, 18 Nov 2022 00:42:07 GMT
+# Wed, 30 Nov 2022 22:55:38 GMT
 CMD ["mariadbd"]
 ```
 
@@ -196,9 +196,9 @@ CMD ["mariadbd"]
 		Last Modified: Fri, 18 Nov 2022 00:43:29 GMT  
 		Size: 3.5 KB (3490 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68df3718692233ce0ebe53c9bbd9bdebf97e61a0f582f5683d33bcfe60555d29`  
-		Last Modified: Fri, 18 Nov 2022 00:43:28 GMT  
-		Size: 6.9 KB (6948 bytes)  
+	-	`sha256:32b9029fd6fc8902aafadd98d625919f0b0d64b07e4ed12c23c41a3461011b6b`  
+		Last Modified: Wed, 30 Nov 2022 22:56:56 GMT  
+		Size: 7.0 KB (6967 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mariadb:10-jammy` - linux; ppc64le
