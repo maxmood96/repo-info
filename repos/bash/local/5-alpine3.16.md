@@ -1,20 +1,20 @@
-# `bash:5.2.9`
+# `bash:5.2.12`
 
 ## Docker Metadata
 
-- Image ID: `sha256:018f8f38ad921776c6d37516085c601ace239ec8b6f40e0995978bed3dfb666c`
-- Created: `2022-11-12T04:47:10.939735479Z`
-- Virtual Size: ~ 12.25 Mb  
+- Image ID: `sha256:68db3b0d9ed2b811c10dcab4569a2ad12c7d2f788a1c878a8e119f789b261213`
+- Created: `2022-11-29T01:24:16.177291321Z`
+- Virtual Size: ~ 12.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `_BASH_VERSION=5.2.9`
+  - `_BASH_VERSION=5.2.12`
   - `_BASH_BASELINE=5.2.9`
   - `_BASH_BASELINE_PATCH=9`
-  - `_BASH_LATEST_PATCH=9`
+  - `_BASH_LATEST_PATCH=12`
 
 ## `apk` (`.apk`-based packages)
 
@@ -174,16 +174,16 @@ OpenSSL
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.3-r1 description:
+musl-1.2.3-r2 description:
 the musl c library (libc) implementation
 
-musl-1.2.3-r1 webpage:
+musl-1.2.3-r2 webpage:
 https://musl.libc.org/
 
-musl-1.2.3-r1 installed size:
+musl-1.2.3-r2 installed size:
 608 KiB
 
-musl-1.2.3-r1 license:
+musl-1.2.3-r2 license:
 MIT
 
 ```
