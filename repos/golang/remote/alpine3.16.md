@@ -1,7 +1,7 @@
 ## `golang:alpine3.16`
 
 ```console
-$ docker pull golang@sha256:d171aa333fb386089206252503bc6ab545072670e0286e3d1bbc644362825c6e
+$ docker pull golang@sha256:e3c076c378a7301550c741711d6d5d3b1e490104bbb5751b58a7de70820c3ec2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17,14 +17,14 @@ $ docker pull golang@sha256:d171aa333fb386089206252503bc6ab545072670e0286e3d1bbc
 ### `golang:alpine3.16` - linux; amd64
 
 ```console
-$ docker pull golang@sha256:27a9653759f44afd08c94418307a26d2db9cf78af12933200bc2ca63c4844316
+$ docker pull golang@sha256:16b1fb18ff2a1f76068d3abfe09a904ced0bd6e5d05645a7a5b92467d7327022
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **125.7 MB (125746020 bytes)**  
+-	Total Size: **125.7 MB (125746513 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d2745094e3b1859e11768218164d87cf80aa66c919355086af3a0c82a4dedf01`
+-	Image ID: `sha256:f51c49a20f6bea3f7c3037a70d765a324e3f7d7fafcae0c9d858a594e3e65e00`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -34,21 +34,19 @@ ADD file:ceeb6e8632fafc657116cbf3afbd522185a16963230b57881073dad22eb0e1a3 in /
 CMD ["/bin/sh"]
 # Sat, 12 Nov 2022 05:48:10 GMT
 RUN apk add --no-cache ca-certificates
-# Wed, 16 Nov 2022 20:24:32 GMT
-RUN set -eux; 	if [ -e /etc/nsswitch.conf ]; then 		grep '^hosts: files dns' /etc/nsswitch.conf; 	else 		echo 'hosts: files dns' > /etc/nsswitch.conf; 	fi
-# Wed, 16 Nov 2022 20:24:32 GMT
+# Thu, 01 Dec 2022 20:32:24 GMT
 ENV PATH=/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 16 Nov 2022 20:24:32 GMT
+# Thu, 01 Dec 2022 20:32:24 GMT
 ENV GOLANG_VERSION=1.19.3
-# Wed, 16 Nov 2022 20:26:09 GMT
+# Thu, 01 Dec 2022 20:34:02 GMT
 RUN set -eux; 	apk add --no-cache --virtual .fetch-deps gnupg; 	arch="$(apk --print-arch)"; 	url=; 	case "$arch" in 		'x86_64') 			export GOAMD64='v1' GOARCH='amd64' GOOS='linux'; 			;; 		'armhf') 			export GOARCH='arm' GOARM='6' GOOS='linux'; 			;; 		'armv7') 			export GOARCH='arm' GOARM='7' GOOS='linux'; 			;; 		'aarch64') 			export GOARCH='arm64' GOOS='linux'; 			;; 		'x86') 			export GO386='softfloat' GOARCH='386' GOOS='linux'; 			;; 		'ppc64le') 			export GOARCH='ppc64le' GOOS='linux'; 			;; 		's390x') 			export GOARCH='s390x' GOOS='linux'; 			;; 		*) echo >&2 "error: unsupported architecture '$arch' (likely packaging update needed)"; exit 1 ;; 	esac; 	build=; 	if [ -z "$url" ]; then 		build=1; 		url='https://dl.google.com/go/go1.19.3.src.tar.gz'; 		sha256='18ac263e39210bcf68d85f4370e97fb1734166995a1f63fb38b4f6e07d90d212'; 	fi; 		wget -O go.tgz.asc "$url.asc"; 	wget -O go.tgz "$url"; 	echo "$sha256 *go.tgz" | sha256sum -c -; 		GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 'EB4C 1BFD 4F04 2F6D DDCC  EC91 7721 F63B D38B 4796'; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys '2F52 8D36 D67B 69ED F998  D857 78BD 6547 3CB3 BD13'; 	gpg --batch --verify go.tgz.asc go.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" go.tgz.asc; 		tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		if [ -n "$build" ]; then 		apk add --no-cache --virtual .build-deps 			bash 			gcc 			go 			musl-dev 		; 				export GOCACHE='/tmp/gocache'; 				( 			cd /usr/local/go/src; 			export GOROOT_BOOTSTRAP="$(go env GOROOT)" GOHOSTOS="$GOOS" GOHOSTARCH="$GOARCH"; 			if [ "${GOARCH:-}" = '386' ]; then 				export CGO_CFLAGS='-fno-stack-protector'; 			fi; 			./make.bash; 		); 				apk del --no-network .build-deps; 				rm -rf 			/usr/local/go/pkg/*/cmd 			/usr/local/go/pkg/bootstrap 			/usr/local/go/pkg/obj 			/usr/local/go/pkg/tool/*/api 			/usr/local/go/pkg/tool/*/go_bootstrap 			/usr/local/go/src/cmd/dist/dist 			"$GOCACHE" 		; 	fi; 		apk del --no-network .fetch-deps; 		go version
-# Wed, 16 Nov 2022 20:26:11 GMT
+# Thu, 01 Dec 2022 20:34:03 GMT
 ENV GOPATH=/go
-# Wed, 16 Nov 2022 20:26:11 GMT
+# Thu, 01 Dec 2022 20:34:03 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 16 Nov 2022 20:26:11 GMT
+# Thu, 01 Dec 2022 20:34:04 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Wed, 16 Nov 2022 20:26:11 GMT
+# Thu, 01 Dec 2022 20:34:04 GMT
 WORKDIR /go
 ```
 
@@ -61,26 +59,26 @@ WORKDIR /go
 		Last Modified: Sat, 12 Nov 2022 10:00:55 GMT  
 		Size: 284.7 KB (284748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:15b491bbc2fee14d5914da432332ef2992302d2895ae90466c778c259e643fe0`  
-		Last Modified: Wed, 16 Nov 2022 20:32:45 GMT  
-		Size: 122.7 MB (122654844 bytes)  
+	-	`sha256:78c439d7dfa8da59a735ff7b8d1c30727458d709976deac35467be0a714f3393`  
+		Last Modified: Thu, 01 Dec 2022 20:39:09 GMT  
+		Size: 122.7 MB (122655338 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8cce5c603bfa087147c080777ac9cfd91f8c48a1a9dd2a8f416be618ca0b672a`  
-		Last Modified: Wed, 16 Nov 2022 20:32:28 GMT  
-		Size: 156.0 B  
+	-	`sha256:5f95585a4da8ec248e15ab7eb458b72940d7582491526a5d985f7def7ec1866e`  
+		Last Modified: Thu, 01 Dec 2022 20:38:53 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `golang:alpine3.16` - linux; arm variant v6
 
 ```console
-$ docker pull golang@sha256:0532b7d142a167e919b105c89534da673f9aaabbf9be6568323d34b9c23cea9e
+$ docker pull golang@sha256:8112dbf2476a745d6131ce2a094af980ca222a3bf86bf2fb27033cb690d4adfc
 ```
 
 -	Docker Version: 20.10.17
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **121.9 MB (121930936 bytes)**  
+-	Total Size: **121.9 MB (121931880 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:79d1fa2bdc0709eba6dda801dd90355d125fa92d42a5da4e894e332cd3e63807`
+-	Image ID: `sha256:1a39b3f7814c76103bca6cd7a4fa63ef47601559393fe870eae608206507a5e2`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -90,21 +88,19 @@ ADD file:493290ed8856fa13463defe63da0d30ab3de5dde042c87ef7c0701d66ebb8892 in /
 CMD ["/bin/sh"]
 # Sat, 12 Nov 2022 08:12:13 GMT
 RUN apk add --no-cache ca-certificates
-# Wed, 16 Nov 2022 19:55:42 GMT
-RUN set -eux; 	if [ -e /etc/nsswitch.conf ]; then 		grep '^hosts: files dns' /etc/nsswitch.conf; 	else 		echo 'hosts: files dns' > /etc/nsswitch.conf; 	fi
-# Wed, 16 Nov 2022 19:55:42 GMT
+# Thu, 01 Dec 2022 20:59:57 GMT
 ENV PATH=/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 16 Nov 2022 19:55:42 GMT
+# Thu, 01 Dec 2022 20:59:57 GMT
 ENV GOLANG_VERSION=1.19.3
-# Wed, 16 Nov 2022 19:57:45 GMT
+# Thu, 01 Dec 2022 21:02:10 GMT
 RUN set -eux; 	apk add --no-cache --virtual .fetch-deps gnupg; 	arch="$(apk --print-arch)"; 	url=; 	case "$arch" in 		'x86_64') 			export GOAMD64='v1' GOARCH='amd64' GOOS='linux'; 			;; 		'armhf') 			export GOARCH='arm' GOARM='6' GOOS='linux'; 			;; 		'armv7') 			export GOARCH='arm' GOARM='7' GOOS='linux'; 			;; 		'aarch64') 			export GOARCH='arm64' GOOS='linux'; 			;; 		'x86') 			export GO386='softfloat' GOARCH='386' GOOS='linux'; 			;; 		'ppc64le') 			export GOARCH='ppc64le' GOOS='linux'; 			;; 		's390x') 			export GOARCH='s390x' GOOS='linux'; 			;; 		*) echo >&2 "error: unsupported architecture '$arch' (likely packaging update needed)"; exit 1 ;; 	esac; 	build=; 	if [ -z "$url" ]; then 		build=1; 		url='https://dl.google.com/go/go1.19.3.src.tar.gz'; 		sha256='18ac263e39210bcf68d85f4370e97fb1734166995a1f63fb38b4f6e07d90d212'; 	fi; 		wget -O go.tgz.asc "$url.asc"; 	wget -O go.tgz "$url"; 	echo "$sha256 *go.tgz" | sha256sum -c -; 		GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 'EB4C 1BFD 4F04 2F6D DDCC  EC91 7721 F63B D38B 4796'; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys '2F52 8D36 D67B 69ED F998  D857 78BD 6547 3CB3 BD13'; 	gpg --batch --verify go.tgz.asc go.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" go.tgz.asc; 		tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		if [ -n "$build" ]; then 		apk add --no-cache --virtual .build-deps 			bash 			gcc 			go 			musl-dev 		; 				export GOCACHE='/tmp/gocache'; 				( 			cd /usr/local/go/src; 			export GOROOT_BOOTSTRAP="$(go env GOROOT)" GOHOSTOS="$GOOS" GOHOSTARCH="$GOARCH"; 			if [ "${GOARCH:-}" = '386' ]; then 				export CGO_CFLAGS='-fno-stack-protector'; 			fi; 			./make.bash; 		); 				apk del --no-network .build-deps; 				rm -rf 			/usr/local/go/pkg/*/cmd 			/usr/local/go/pkg/bootstrap 			/usr/local/go/pkg/obj 			/usr/local/go/pkg/tool/*/api 			/usr/local/go/pkg/tool/*/go_bootstrap 			/usr/local/go/src/cmd/dist/dist 			"$GOCACHE" 		; 	fi; 		apk del --no-network .fetch-deps; 		go version
-# Wed, 16 Nov 2022 19:57:47 GMT
+# Thu, 01 Dec 2022 21:02:11 GMT
 ENV GOPATH=/go
-# Wed, 16 Nov 2022 19:57:47 GMT
+# Thu, 01 Dec 2022 21:02:11 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 16 Nov 2022 19:57:48 GMT
+# Thu, 01 Dec 2022 21:02:12 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Wed, 16 Nov 2022 19:57:48 GMT
+# Thu, 01 Dec 2022 21:02:12 GMT
 WORKDIR /go
 ```
 
@@ -117,13 +113,13 @@ WORKDIR /go
 		Last Modified: Sat, 12 Nov 2022 08:12:36 GMT  
 		Size: 284.6 KB (284637 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c502412ddb3aa0e5b66db4c5e0a150fe7dfc7294e1ee50a54abfa46ed21cad2`  
-		Last Modified: Wed, 16 Nov 2022 20:05:50 GMT  
-		Size: 119.0 MB (119031069 bytes)  
+	-	`sha256:b62684fe345031f0188362c63897a8133a39e4edd186998fc1e090c162a45075`  
+		Last Modified: Thu, 01 Dec 2022 21:08:51 GMT  
+		Size: 119.0 MB (119032012 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf74032e53aaf8ae404b0de5260e8b511ddc464585399918d78e4537bea8f507`  
-		Last Modified: Wed, 16 Nov 2022 20:05:28 GMT  
-		Size: 125.0 B  
+	-	`sha256:78454c978d47570fb71a902fd8ef23859d810bc1e1109c8cba5de721189bb522`  
+		Last Modified: Thu, 01 Dec 2022 21:08:25 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `golang:alpine3.16` - linux; arm variant v7
@@ -185,14 +181,14 @@ WORKDIR /go
 ### `golang:alpine3.16` - linux; arm64 variant v8
 
 ```console
-$ docker pull golang@sha256:2f7a323a7ea917eafe3a54d4530981155ca6ff1feb296cebeba47dd0d2415387
+$ docker pull golang@sha256:c550f29a980663834d66b4d8a4a50e77c76a5674b60df65f367b2bd1785bc3b5
 ```
 
 -	Docker Version: 20.10.17
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **120.2 MB (120237526 bytes)**  
+-	Total Size: **120.2 MB (120238207 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c50491847fcb3ccc886f761132a65ff671ed8db0c51047e3f186f94d3a349dff`
+-	Image ID: `sha256:c848ca5d5d3a3f6f4cbdeda3c808ec3a29e34c50d4fcfc1ac232ea551d96efe9`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -202,21 +198,19 @@ ADD file:57d621536158358b14d15155826ef2dd4ca034278044111ec0aaf6717016e569 in /
 CMD ["/bin/sh"]
 # Sat, 12 Nov 2022 04:24:49 GMT
 RUN apk add --no-cache ca-certificates
-# Wed, 16 Nov 2022 19:57:13 GMT
-RUN set -eux; 	if [ -e /etc/nsswitch.conf ]; then 		grep '^hosts: files dns' /etc/nsswitch.conf; 	else 		echo 'hosts: files dns' > /etc/nsswitch.conf; 	fi
-# Wed, 16 Nov 2022 19:57:14 GMT
+# Thu, 01 Dec 2022 20:52:15 GMT
 ENV PATH=/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 16 Nov 2022 19:57:14 GMT
+# Thu, 01 Dec 2022 20:52:15 GMT
 ENV GOLANG_VERSION=1.19.3
-# Wed, 16 Nov 2022 19:58:27 GMT
+# Thu, 01 Dec 2022 20:53:27 GMT
 RUN set -eux; 	apk add --no-cache --virtual .fetch-deps gnupg; 	arch="$(apk --print-arch)"; 	url=; 	case "$arch" in 		'x86_64') 			export GOAMD64='v1' GOARCH='amd64' GOOS='linux'; 			;; 		'armhf') 			export GOARCH='arm' GOARM='6' GOOS='linux'; 			;; 		'armv7') 			export GOARCH='arm' GOARM='7' GOOS='linux'; 			;; 		'aarch64') 			export GOARCH='arm64' GOOS='linux'; 			;; 		'x86') 			export GO386='softfloat' GOARCH='386' GOOS='linux'; 			;; 		'ppc64le') 			export GOARCH='ppc64le' GOOS='linux'; 			;; 		's390x') 			export GOARCH='s390x' GOOS='linux'; 			;; 		*) echo >&2 "error: unsupported architecture '$arch' (likely packaging update needed)"; exit 1 ;; 	esac; 	build=; 	if [ -z "$url" ]; then 		build=1; 		url='https://dl.google.com/go/go1.19.3.src.tar.gz'; 		sha256='18ac263e39210bcf68d85f4370e97fb1734166995a1f63fb38b4f6e07d90d212'; 	fi; 		wget -O go.tgz.asc "$url.asc"; 	wget -O go.tgz "$url"; 	echo "$sha256 *go.tgz" | sha256sum -c -; 		GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 'EB4C 1BFD 4F04 2F6D DDCC  EC91 7721 F63B D38B 4796'; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys '2F52 8D36 D67B 69ED F998  D857 78BD 6547 3CB3 BD13'; 	gpg --batch --verify go.tgz.asc go.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" go.tgz.asc; 		tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		if [ -n "$build" ]; then 		apk add --no-cache --virtual .build-deps 			bash 			gcc 			go 			musl-dev 		; 				export GOCACHE='/tmp/gocache'; 				( 			cd /usr/local/go/src; 			export GOROOT_BOOTSTRAP="$(go env GOROOT)" GOHOSTOS="$GOOS" GOHOSTARCH="$GOARCH"; 			if [ "${GOARCH:-}" = '386' ]; then 				export CGO_CFLAGS='-fno-stack-protector'; 			fi; 			./make.bash; 		); 				apk del --no-network .build-deps; 				rm -rf 			/usr/local/go/pkg/*/cmd 			/usr/local/go/pkg/bootstrap 			/usr/local/go/pkg/obj 			/usr/local/go/pkg/tool/*/api 			/usr/local/go/pkg/tool/*/go_bootstrap 			/usr/local/go/src/cmd/dist/dist 			"$GOCACHE" 		; 	fi; 		apk del --no-network .fetch-deps; 		go version
-# Wed, 16 Nov 2022 19:58:29 GMT
+# Thu, 01 Dec 2022 20:53:30 GMT
 ENV GOPATH=/go
-# Wed, 16 Nov 2022 19:58:29 GMT
+# Thu, 01 Dec 2022 20:53:30 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 16 Nov 2022 19:58:29 GMT
+# Thu, 01 Dec 2022 20:53:30 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Wed, 16 Nov 2022 19:58:29 GMT
+# Thu, 01 Dec 2022 20:53:30 GMT
 WORKDIR /go
 ```
 
@@ -229,26 +223,26 @@ WORKDIR /go
 		Last Modified: Sat, 12 Nov 2022 09:24:18 GMT  
 		Size: 284.7 KB (284749 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fad4c2d051525589fdff6a7cde1b4412ee51a97f26203ea6a9458db1a5aa6107`  
-		Last Modified: Wed, 16 Nov 2022 20:03:45 GMT  
-		Size: 117.2 MB (117244865 bytes)  
+	-	`sha256:e075731a9b48d40780f5e3ffb3570164850af059c3db1f81b6cc9542915a8d42`  
+		Last Modified: Thu, 01 Dec 2022 20:57:38 GMT  
+		Size: 117.2 MB (117245547 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:79321fa00f92df9640f7fc86f993f06f134bd58ffafef06341c7575eb8f9788e`  
-		Last Modified: Wed, 16 Nov 2022 20:03:32 GMT  
-		Size: 156.0 B  
+	-	`sha256:12fe455fbcdae911184601bdb6c5e66c326c36df68922a5828cc166467d64931`  
+		Last Modified: Thu, 01 Dec 2022 20:57:25 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `golang:alpine3.16` - linux; 386
 
 ```console
-$ docker pull golang@sha256:771e768042c50bfc6c7ae99ef039b02897da4606fb4bea83b85f14a51ed46cd7
+$ docker pull golang@sha256:22430d28a187990935622e0de15f7f633d31336a51fcf886e230dc12851a55a1
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **125.7 MB (125682601 bytes)**  
+-	Total Size: **125.7 MB (125682967 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8405d244b7717308ecba20bad9e299c4c7294f2aeb3e21774e6fc8462e12b6f8`
+-	Image ID: `sha256:ab289623c03a2997f228e9a3d771691883cf545d3420f08f07cc88f01f8d71fd`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -258,21 +252,19 @@ ADD file:561637cbdd23fdd69f555dbc938902d79be2b123eb244d2cfd35b337878b63df in /
 CMD ["/bin/sh"]
 # Tue, 15 Nov 2022 20:46:36 GMT
 RUN apk add --no-cache ca-certificates
-# Wed, 16 Nov 2022 19:43:41 GMT
-RUN set -eux; 	if [ -e /etc/nsswitch.conf ]; then 		grep '^hosts: files dns' /etc/nsswitch.conf; 	else 		echo 'hosts: files dns' > /etc/nsswitch.conf; 	fi
-# Wed, 16 Nov 2022 19:43:42 GMT
+# Thu, 01 Dec 2022 21:12:24 GMT
 ENV PATH=/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 16 Nov 2022 19:43:43 GMT
+# Thu, 01 Dec 2022 21:12:25 GMT
 ENV GOLANG_VERSION=1.19.3
-# Wed, 16 Nov 2022 19:45:35 GMT
+# Thu, 01 Dec 2022 21:14:15 GMT
 RUN set -eux; 	apk add --no-cache --virtual .fetch-deps gnupg; 	arch="$(apk --print-arch)"; 	url=; 	case "$arch" in 		'x86_64') 			export GOAMD64='v1' GOARCH='amd64' GOOS='linux'; 			;; 		'armhf') 			export GOARCH='arm' GOARM='6' GOOS='linux'; 			;; 		'armv7') 			export GOARCH='arm' GOARM='7' GOOS='linux'; 			;; 		'aarch64') 			export GOARCH='arm64' GOOS='linux'; 			;; 		'x86') 			export GO386='softfloat' GOARCH='386' GOOS='linux'; 			;; 		'ppc64le') 			export GOARCH='ppc64le' GOOS='linux'; 			;; 		's390x') 			export GOARCH='s390x' GOOS='linux'; 			;; 		*) echo >&2 "error: unsupported architecture '$arch' (likely packaging update needed)"; exit 1 ;; 	esac; 	build=; 	if [ -z "$url" ]; then 		build=1; 		url='https://dl.google.com/go/go1.19.3.src.tar.gz'; 		sha256='18ac263e39210bcf68d85f4370e97fb1734166995a1f63fb38b4f6e07d90d212'; 	fi; 		wget -O go.tgz.asc "$url.asc"; 	wget -O go.tgz "$url"; 	echo "$sha256 *go.tgz" | sha256sum -c -; 		GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 'EB4C 1BFD 4F04 2F6D DDCC  EC91 7721 F63B D38B 4796'; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys '2F52 8D36 D67B 69ED F998  D857 78BD 6547 3CB3 BD13'; 	gpg --batch --verify go.tgz.asc go.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" go.tgz.asc; 		tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		if [ -n "$build" ]; then 		apk add --no-cache --virtual .build-deps 			bash 			gcc 			go 			musl-dev 		; 				export GOCACHE='/tmp/gocache'; 				( 			cd /usr/local/go/src; 			export GOROOT_BOOTSTRAP="$(go env GOROOT)" GOHOSTOS="$GOOS" GOHOSTARCH="$GOARCH"; 			if [ "${GOARCH:-}" = '386' ]; then 				export CGO_CFLAGS='-fno-stack-protector'; 			fi; 			./make.bash; 		); 				apk del --no-network .build-deps; 				rm -rf 			/usr/local/go/pkg/*/cmd 			/usr/local/go/pkg/bootstrap 			/usr/local/go/pkg/obj 			/usr/local/go/pkg/tool/*/api 			/usr/local/go/pkg/tool/*/go_bootstrap 			/usr/local/go/src/cmd/dist/dist 			"$GOCACHE" 		; 	fi; 		apk del --no-network .fetch-deps; 		go version
-# Wed, 16 Nov 2022 19:45:36 GMT
+# Thu, 01 Dec 2022 21:14:15 GMT
 ENV GOPATH=/go
-# Wed, 16 Nov 2022 19:45:36 GMT
+# Thu, 01 Dec 2022 21:14:16 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 16 Nov 2022 19:45:37 GMT
+# Thu, 01 Dec 2022 21:14:17 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Wed, 16 Nov 2022 19:45:38 GMT
+# Thu, 01 Dec 2022 21:14:18 GMT
 WORKDIR /go
 ```
 
@@ -285,26 +277,26 @@ WORKDIR /go
 		Last Modified: Wed, 16 Nov 2022 19:53:19 GMT  
 		Size: 285.0 KB (285005 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4f5c79e0aa95c7d6b23c3cbe7257396916951c6f74757ea14e905e0c021c29e5`  
-		Last Modified: Wed, 16 Nov 2022 19:53:34 GMT  
-		Size: 122.6 MB (122589122 bytes)  
+	-	`sha256:9fb0d61d60b8d237e53ff2021b3514f0244512f6df3f522cd65a9370d829a0ee`  
+		Last Modified: Thu, 01 Dec 2022 21:20:45 GMT  
+		Size: 122.6 MB (122589489 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:630d2f7ebc11fc3e85e58e490ab3e01aab58e763bad6f510e9437b421d21251d`  
-		Last Modified: Wed, 16 Nov 2022 19:53:19 GMT  
-		Size: 126.0 B  
+	-	`sha256:c79fea5e30286da27e9a70b5fdbf7ba7c22bda56b697af9ced4ebe01ac14bf4e`  
+		Last Modified: Thu, 01 Dec 2022 21:20:30 GMT  
+		Size: 125.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `golang:alpine3.16` - linux; ppc64le
 
 ```console
-$ docker pull golang@sha256:e8895670a34920d6a071a77d4f4503d8f1b3c5a9987d0f1780b6339c0f2d00b2
+$ docker pull golang@sha256:52ed8c6e3def84aa6ba6f89ced4c5e132c603d920df0e6a7e69d0b87c91d2224
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **120.7 MB (120707419 bytes)**  
+-	Total Size: **120.7 MB (120706655 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:657f1bed7ac33e4767c4e7b68fd16f54152aef43fcab6ef151d8b10de592347e`
+-	Image ID: `sha256:ac2d965719f47dcdd3bde91482fbfb0eaaffdeeaefaff3bf22e44ad281a96e7c`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -314,21 +306,19 @@ ADD file:6f7965319fe0caaea57086835c0c2212284c6850f33e3c4d522c758e43acbc98 in /
 CMD ["/bin/sh"]
 # Sat, 12 Nov 2022 04:58:49 GMT
 RUN apk add --no-cache ca-certificates
-# Wed, 16 Nov 2022 20:16:43 GMT
-RUN set -eux; 	if [ -e /etc/nsswitch.conf ]; then 		grep '^hosts: files dns' /etc/nsswitch.conf; 	else 		echo 'hosts: files dns' > /etc/nsswitch.conf; 	fi
-# Wed, 16 Nov 2022 20:16:43 GMT
+# Thu, 01 Dec 2022 20:36:58 GMT
 ENV PATH=/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 16 Nov 2022 20:16:43 GMT
+# Thu, 01 Dec 2022 20:36:59 GMT
 ENV GOLANG_VERSION=1.19.3
-# Wed, 16 Nov 2022 20:19:32 GMT
+# Thu, 01 Dec 2022 20:39:47 GMT
 RUN set -eux; 	apk add --no-cache --virtual .fetch-deps gnupg; 	arch="$(apk --print-arch)"; 	url=; 	case "$arch" in 		'x86_64') 			export GOAMD64='v1' GOARCH='amd64' GOOS='linux'; 			;; 		'armhf') 			export GOARCH='arm' GOARM='6' GOOS='linux'; 			;; 		'armv7') 			export GOARCH='arm' GOARM='7' GOOS='linux'; 			;; 		'aarch64') 			export GOARCH='arm64' GOOS='linux'; 			;; 		'x86') 			export GO386='softfloat' GOARCH='386' GOOS='linux'; 			;; 		'ppc64le') 			export GOARCH='ppc64le' GOOS='linux'; 			;; 		's390x') 			export GOARCH='s390x' GOOS='linux'; 			;; 		*) echo >&2 "error: unsupported architecture '$arch' (likely packaging update needed)"; exit 1 ;; 	esac; 	build=; 	if [ -z "$url" ]; then 		build=1; 		url='https://dl.google.com/go/go1.19.3.src.tar.gz'; 		sha256='18ac263e39210bcf68d85f4370e97fb1734166995a1f63fb38b4f6e07d90d212'; 	fi; 		wget -O go.tgz.asc "$url.asc"; 	wget -O go.tgz "$url"; 	echo "$sha256 *go.tgz" | sha256sum -c -; 		GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 'EB4C 1BFD 4F04 2F6D DDCC  EC91 7721 F63B D38B 4796'; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys '2F52 8D36 D67B 69ED F998  D857 78BD 6547 3CB3 BD13'; 	gpg --batch --verify go.tgz.asc go.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" go.tgz.asc; 		tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		if [ -n "$build" ]; then 		apk add --no-cache --virtual .build-deps 			bash 			gcc 			go 			musl-dev 		; 				export GOCACHE='/tmp/gocache'; 				( 			cd /usr/local/go/src; 			export GOROOT_BOOTSTRAP="$(go env GOROOT)" GOHOSTOS="$GOOS" GOHOSTARCH="$GOARCH"; 			if [ "${GOARCH:-}" = '386' ]; then 				export CGO_CFLAGS='-fno-stack-protector'; 			fi; 			./make.bash; 		); 				apk del --no-network .build-deps; 				rm -rf 			/usr/local/go/pkg/*/cmd 			/usr/local/go/pkg/bootstrap 			/usr/local/go/pkg/obj 			/usr/local/go/pkg/tool/*/api 			/usr/local/go/pkg/tool/*/go_bootstrap 			/usr/local/go/src/cmd/dist/dist 			"$GOCACHE" 		; 	fi; 		apk del --no-network .fetch-deps; 		go version
-# Wed, 16 Nov 2022 20:19:37 GMT
+# Thu, 01 Dec 2022 20:39:52 GMT
 ENV GOPATH=/go
-# Wed, 16 Nov 2022 20:19:38 GMT
+# Thu, 01 Dec 2022 20:39:53 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 16 Nov 2022 20:19:39 GMT
+# Thu, 01 Dec 2022 20:39:54 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Wed, 16 Nov 2022 20:19:39 GMT
+# Thu, 01 Dec 2022 20:39:55 GMT
 WORKDIR /go
 ```
 
@@ -341,26 +331,26 @@ WORKDIR /go
 		Last Modified: Sat, 12 Nov 2022 11:44:35 GMT  
 		Size: 286.8 KB (286754 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fad64a86d4d06a1df45378b715b4cda88d9a91ae5d2f63f1070c9b4f9c3e7469`  
-		Last Modified: Wed, 16 Nov 2022 20:30:44 GMT  
-		Size: 117.6 MB (117618958 bytes)  
+	-	`sha256:264cbb1f4411c06e657af30df5f7ec7edce2326abb7d49b6a3fc93a36dbd9176`  
+		Last Modified: Thu, 01 Dec 2022 20:48:16 GMT  
+		Size: 117.6 MB (117618194 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cdcb7e31c1917bc1b0b83c718697092d8a8cd4a0e877303f6872ff8174cb7b2f`  
-		Last Modified: Wed, 16 Nov 2022 20:30:16 GMT  
+	-	`sha256:591aedcb035da04a95e8b72d3dcce384c753b0591c2160485d5aa6cc87e59582`  
+		Last Modified: Thu, 01 Dec 2022 20:47:48 GMT  
 		Size: 156.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `golang:alpine3.16` - linux; s390x
 
 ```console
-$ docker pull golang@sha256:de58b24df4a7ff3afd17dada77baffe5c18ad4bcf2e69db9420761b35b00dcf7
+$ docker pull golang@sha256:61c101cbec67d36638fd80f6d54b8538616ff9499ce3288184640e9b1cab7d71
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **124.0 MB (124012971 bytes)**  
+-	Total Size: **124.0 MB (124013320 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f24c2690b8bb6672f379417d5d8fe2d4e3d2802f709db5e0010c108f3426912d`
+-	Image ID: `sha256:33931f263c0d6129566223203616057457d3611bf08fc8eda84136e79a40b77a`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -370,21 +360,19 @@ ADD file:b78ae95cbacd853e398f187adaf3be51d9e301a66de8f7a4b6c60a9733075cb5 in /
 CMD ["/bin/sh"]
 # Sat, 12 Nov 2022 05:09:33 GMT
 RUN apk add --no-cache ca-certificates
-# Wed, 16 Nov 2022 19:56:16 GMT
-RUN set -eux; 	if [ -e /etc/nsswitch.conf ]; then 		grep '^hosts: files dns' /etc/nsswitch.conf; 	else 		echo 'hosts: files dns' > /etc/nsswitch.conf; 	fi
-# Wed, 16 Nov 2022 19:56:16 GMT
+# Thu, 01 Dec 2022 20:58:58 GMT
 ENV PATH=/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 16 Nov 2022 19:56:16 GMT
+# Thu, 01 Dec 2022 20:58:58 GMT
 ENV GOLANG_VERSION=1.19.3
-# Wed, 16 Nov 2022 19:57:56 GMT
+# Thu, 01 Dec 2022 21:00:47 GMT
 RUN set -eux; 	apk add --no-cache --virtual .fetch-deps gnupg; 	arch="$(apk --print-arch)"; 	url=; 	case "$arch" in 		'x86_64') 			export GOAMD64='v1' GOARCH='amd64' GOOS='linux'; 			;; 		'armhf') 			export GOARCH='arm' GOARM='6' GOOS='linux'; 			;; 		'armv7') 			export GOARCH='arm' GOARM='7' GOOS='linux'; 			;; 		'aarch64') 			export GOARCH='arm64' GOOS='linux'; 			;; 		'x86') 			export GO386='softfloat' GOARCH='386' GOOS='linux'; 			;; 		'ppc64le') 			export GOARCH='ppc64le' GOOS='linux'; 			;; 		's390x') 			export GOARCH='s390x' GOOS='linux'; 			;; 		*) echo >&2 "error: unsupported architecture '$arch' (likely packaging update needed)"; exit 1 ;; 	esac; 	build=; 	if [ -z "$url" ]; then 		build=1; 		url='https://dl.google.com/go/go1.19.3.src.tar.gz'; 		sha256='18ac263e39210bcf68d85f4370e97fb1734166995a1f63fb38b4f6e07d90d212'; 	fi; 		wget -O go.tgz.asc "$url.asc"; 	wget -O go.tgz "$url"; 	echo "$sha256 *go.tgz" | sha256sum -c -; 		GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 'EB4C 1BFD 4F04 2F6D DDCC  EC91 7721 F63B D38B 4796'; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys '2F52 8D36 D67B 69ED F998  D857 78BD 6547 3CB3 BD13'; 	gpg --batch --verify go.tgz.asc go.tgz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" go.tgz.asc; 		tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		if [ -n "$build" ]; then 		apk add --no-cache --virtual .build-deps 			bash 			gcc 			go 			musl-dev 		; 				export GOCACHE='/tmp/gocache'; 				( 			cd /usr/local/go/src; 			export GOROOT_BOOTSTRAP="$(go env GOROOT)" GOHOSTOS="$GOOS" GOHOSTARCH="$GOARCH"; 			if [ "${GOARCH:-}" = '386' ]; then 				export CGO_CFLAGS='-fno-stack-protector'; 			fi; 			./make.bash; 		); 				apk del --no-network .build-deps; 				rm -rf 			/usr/local/go/pkg/*/cmd 			/usr/local/go/pkg/bootstrap 			/usr/local/go/pkg/obj 			/usr/local/go/pkg/tool/*/api 			/usr/local/go/pkg/tool/*/go_bootstrap 			/usr/local/go/src/cmd/dist/dist 			"$GOCACHE" 		; 	fi; 		apk del --no-network .fetch-deps; 		go version
-# Wed, 16 Nov 2022 19:58:01 GMT
+# Thu, 01 Dec 2022 21:00:53 GMT
 ENV GOPATH=/go
-# Wed, 16 Nov 2022 19:58:01 GMT
+# Thu, 01 Dec 2022 21:00:53 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 16 Nov 2022 19:58:02 GMT
+# Thu, 01 Dec 2022 21:00:54 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Wed, 16 Nov 2022 19:58:02 GMT
+# Thu, 01 Dec 2022 21:00:54 GMT
 WORKDIR /go
 ```
 
@@ -397,11 +385,11 @@ WORKDIR /go
 		Last Modified: Sat, 12 Nov 2022 08:32:21 GMT  
 		Size: 285.0 KB (284983 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1928a495301eeda11f39f36dc8522e72f25357a572426af00eacae62d7c8ef2c`  
-		Last Modified: Wed, 16 Nov 2022 20:05:22 GMT  
-		Size: 121.1 MB (121136706 bytes)  
+	-	`sha256:64d5344ef04ed6820cd906d73028842bea18517e1b0ab52732be43545b628b9a`  
+		Last Modified: Thu, 01 Dec 2022 21:07:50 GMT  
+		Size: 121.1 MB (121137055 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:09f9fb1d22ef320caa8a60cf0484d709b88871b78c66e775413eaca84ab1d518`  
-		Last Modified: Wed, 16 Nov 2022 20:05:06 GMT  
+	-	`sha256:3bcec3fa880bdd3cabb007f0c43343dd2bf41feaf18bcc8d6f6e6dd7304e14f8`  
+		Last Modified: Thu, 01 Dec 2022 21:07:35 GMT  
 		Size: 156.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
