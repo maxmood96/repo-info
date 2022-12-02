@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f252e92049b4fdcb606444485947fc6eb0faa9e2c65765572e10b86d40673c7a`
-- Created: `2022-11-15T09:45:27.668001546Z`
-- Virtual Size: ~ 1.17 Gb  
+- Image ID: `sha256:c9b8da894e313b90fa9e07b96a89d46944a37de23b3a8abfb81247db9b487939`
+- Created: `2022-11-29T21:46:30.960182542Z`
+- Virtual Size: ~ 1.16 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -23,9 +23,9 @@
   - `TOMCAT_MAJOR=9`
   - `TOMCAT_VERSION=9.0.69`
   - `TOMCAT_SHA512=8c883c54ce9ce43eba37756a6404cdf3477879883a3e6d146dc8a7aa5e0425f487466afe6b6da4a895927cb7cb59177b9379cec18000f2de12785be57408c779`
-  - `XWIKI_VERSION=14.9`
-  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/14.9`
-  - `XWIKI_DOWNLOAD_SHA256=9a8639b590b2612c1603ac6788fe83b4d79dbaad484cc5c60230c00f16781460`
+  - `XWIKI_VERSION=14.10`
+  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/14.10`
+  - `XWIKI_DOWNLOAD_SHA256=5e412e550c31255de1500631d9dcf46f7d746e6758717f63a90fa5c807429937`
 - Labels:
   - `org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>`
   - `org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki`
@@ -3776,15 +3776,9 @@ Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.3.0-6ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0-6ubuntu0.2.dsc' tiff_4.3.0-6ubuntu0.2.dsc 2402 SHA512:8f5796cc9dbace8f5bd04f538bd5877e564561414053a31aea1641d6e04593ff8a4837ebc7144d5efec67e5def86f0ef06eabb4e391ff0e39add933fcb19b72b
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0.orig.tar.gz' tiff_4.3.0.orig.tar.gz 2808254 SHA512:e04a4a6c542e58a174c1e9516af3908acf1d3d3e1096648c5514f4963f73e7af27387a76b0fbabe43cf867a18874088f963796a7cd6e45deb998692e3e235493
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0.orig.tar.gz.asc' tiff_4.3.0.orig.tar.gz.asc 488 SHA512:115a4c5714b52d0fbea800c494d83c8a96b70b2c9ce84a8df03205d9afc517faa17963f5f9508c013d7d3e2be6675b84b594a771a829406473234c4bd85e469e
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0-6ubuntu0.2.debian.tar.xz' tiff_4.3.0-6ubuntu0.2.debian.tar.xz 35976 SHA512:dad60b4c39f1bcc3ff93b921f8cc9d162f8850c8ac9904aa783c09e2b0f7416923083f5fdbe18ce70196946c1354b07bad17b6a96aa1b29b1d02a98268400b1f
-```
 
 ### `dpkg` source package: `tzdata=2022e-0ubuntu0.22.04.0`
 
