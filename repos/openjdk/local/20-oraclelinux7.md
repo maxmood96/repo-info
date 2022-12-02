@@ -1,10 +1,10 @@
-# `openjdk:20-ea-24-jdk-oraclelinux7`
+# `openjdk:20-ea-26-jdk-oraclelinux7`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ac92724b00f801dffa493a89eb86899cde27bf8e41f711802ff1493a71b0ea81`
-- Created: `2022-11-18T01:42:05.190394933Z`
-- Virtual Size: ~ 515.96 Mb  
+- Image ID: `sha256:790c29adbcf83bcff86ef4363a6548d826c78a693100ff4dc7420bbf03e7c9c4`
+- Created: `2022-12-02T00:21:48.763912227Z`
+- Virtual Size: ~ 515.46 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/java/openjdk-20/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/java/openjdk-20`
   - `LANG=en_US.UTF-8`
-  - `JAVA_VERSION=20-ea+24`
+  - `JAVA_VERSION=20-ea+26`
 
 ## `rpm` (`.rpm`-based packages)
 
@@ -402,15 +402,15 @@ $ dnf --quiet download --source --url keyutils-libs-1.5.8-3.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/keyutils-1.5.8-3.el7.src.rpm
 ```
 
-### `rpm` package: `krb5-libs-1.15.1-54.0.1.el7_9.x86_64`
+### `rpm` package: `krb5-libs-1.15.1-55.0.1.el7_9.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url krb5-libs-1.15.1-54.0.1.el7_9
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/krb5-1.15.1-54.0.1.el7_9.src.rpm
+$ dnf --quiet download --source --url krb5-libs-1.15.1-55.0.1.el7_9
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/krb5-1.15.1-55.0.1.el7_9.src.rpm
 ```
 
 ### `rpm` package: `libacl-2.2.51-15.el7.x86_64`
@@ -1271,13 +1271,13 @@ $ dnf --quiet download --source --url yum-utils-1.1.31-54.0.1.el7_8.noarch
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/yum-utils-1.1.31-54.0.1.el7_8.src.rpm
 ```
 
-### `rpm` package: `zlib-1.2.7-20.el7_9.x86_64`
+### `rpm` package: `zlib-1.2.7-20.0.1.el7_9.x86_64`
 
 Licenses (from `rpm --query`): zlib and Boost
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url zlib-1.2.7-20.el7_9
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/zlib-1.2.7-20.el7_9.src.rpm
+$ dnf --quiet download --source --url zlib-1.2.7-20.0.1.el7_9
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/zlib-1.2.7-20.0.1.el7_9.src.rpm
 ```
