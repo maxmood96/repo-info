@@ -1136,15 +1136,13 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`)
 - `Unicode-DFS-2016`
 - `bzip2-1.0.6`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.74.1-1
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.74.1-1.dsc' glib2.0_2.74.1-1.dsc 3736 SHA256:d4927964a01efbb3d72406d282262b836e1ae58e240596611c9dc05573d52378
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.74.1.orig-unicode-data.tar.xz' glib2.0_2.74.1.orig-unicode-data.tar.xz 266184 SHA256:7c3e36ec1356ac025a92169b74c4c3e6858345f59ed4ea4cf0db300dec4fa21a
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.74.1.orig.tar.xz' glib2.0_2.74.1.orig.tar.xz 5189452 SHA256:0ab981618d1db47845e56417b0d7c123f81a3427b2b9c93f5a46ff5bbb964964
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.74.1-1.debian.tar.xz' glib2.0_2.74.1-1.debian.tar.xz 115012 SHA256:8cf7f72044dd85b89ccda7d49d445ad464d51fce5757d4143d936382cf228f63
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/glib2.0/2.74.1-1/
+
 
 ### `dpkg` source package: `glibc=2.35-4`
 
@@ -3961,20 +3959,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tcl8.6=8.6.12+dfsg-1
-'http://deb.debian.org/debian/pool/main/t/tcl8.6/tcl8.6_8.6.12%2bdfsg-1.dsc' tcl8.6_8.6.12+dfsg-1.dsc 2118 SHA256:2d3d155437fc21a2c4ce4117d4176ba3f0a125685c5c9c5f32d1707798e59033
-'http://deb.debian.org/debian/pool/main/t/tcl8.6/tcl8.6_8.6.12%2bdfsg.orig.tar.gz' tcl8.6_8.6.12+dfsg.orig.tar.gz 6075478 SHA256:63e5d1392c5b1d0135cdf845542b1b6be821207c2991f76280657716bb271ae1
-'http://deb.debian.org/debian/pool/main/t/tcl8.6/tcl8.6_8.6.12%2bdfsg-1.debian.tar.xz' tcl8.6_8.6.12+dfsg-1.debian.tar.xz 14388 SHA256:795fd4e564558ca450662b01ae3cbe83aae96d283b4945ee2d276641926ef61b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tcl8.6/8.6.12+dfsg-1/
 
-- https://sources.debian.net/src/tcl8.6/8.6.12+dfsg-1/ (for browsing the source)
-- https://sources.debian.net/src/tcl8.6/8.6.12+dfsg-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tcl8.6/8.6.12+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tex-gyre=20180621-6`
 
@@ -4032,20 +4023,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tk8.6=8.6.12-1
-'http://deb.debian.org/debian/pool/main/t/tk8.6/tk8.6_8.6.12-1.dsc' tk8.6_8.6.12-1.dsc 2153 SHA256:dcc8a036fe87bff6079d030a614983bde5e418e70f57587cf7cb87fb45db77f4
-'http://deb.debian.org/debian/pool/main/t/tk8.6/tk8.6_8.6.12.orig.tar.gz' tk8.6_8.6.12.orig.tar.gz 4515393 SHA256:12395c1f3fcb6bed2938689f797ea3cdf41ed5cb6c4766eec8ac949560310630
-'http://deb.debian.org/debian/pool/main/t/tk8.6/tk8.6_8.6.12-1.debian.tar.xz' tk8.6_8.6.12-1.debian.tar.xz 10764 SHA256:b0f5f3c6d29ffb51067b855b4355ed084705a041ecaec30f12d3d07146afb7a2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tk8.6/8.6.12-1/
 
-- https://sources.debian.net/src/tk8.6/8.6.12-1/ (for browsing the source)
-- https://sources.debian.net/src/tk8.6/8.6.12-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tk8.6/8.6.12-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tzdata=2022e-1`
 
