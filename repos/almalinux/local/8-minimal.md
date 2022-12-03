@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:06a52e37ea7f3a6d652cca147c78e8dc2c8ca7a67b7f79e38d1f73a98f9e08e0`
-- Created: `2022-11-11T01:29:53.510353311Z`
+- Image ID: `sha256:5b2805b3ae49fa2c29e43c0c2260d5fbb0fc0b934221d776b608765a79fb8d9b`
+- Created: `2022-12-01T23:20:10.792629695Z`
 - Virtual Size: ~ 93.70 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,15 +13,15 @@
 
 ## `rpm` (`.rpm`-based packages)
 
-### `rpm` package: `almalinux-release-8.7-2.el8.x86_64`
+### `rpm` package: `almalinux-release-8.7-3.el8.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url almalinux-release-8.7-2.el8
-http://repo.almalinux.org/vault/8.7/BaseOS/Source/Packages/almalinux-release-8.7-2.el8.src.rpm
+$ dnf --quiet download --source --url almalinux-release-8.7-3.el8
+http://repo.almalinux.org/vault/8.7/BaseOS/Source/Packages/almalinux-release-8.7-3.el8.src.rpm
 ```
 
 ### `rpm` package: `audit-libs-3.0.7-4.el8.x86_64`
@@ -338,15 +338,15 @@ $ dnf --quiet download --source --url keyutils-libs-1.5.10-9.el8
 http://repo.almalinux.org/vault/8.7/BaseOS/Source/Packages/keyutils-1.5.10-9.el8.src.rpm
 ```
 
-### `rpm` package: `krb5-libs-1.18.2-21.el8.x86_64`
+### `rpm` package: `krb5-libs-1.18.2-22.el8_7.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url krb5-libs-1.18.2-21.el8
-http://repo.almalinux.org/vault/8.7/BaseOS/Source/Packages/krb5-1.18.2-21.el8.src.rpm
+$ dnf --quiet download --source --url krb5-libs-1.18.2-22.el8_7
+http://repo.almalinux.org/vault/8.7/BaseOS/Source/Packages/krb5-1.18.2-22.el8_7.src.rpm
 ```
 
 ### `rpm` package: `langpacks-en-1.0-12.el8.noarch`
@@ -1009,26 +1009,26 @@ $ dnf --quiet download --source --url rootfiles-8.1-22.el8.noarch
 http://repo.almalinux.org/vault/8.7/BaseOS/Source/Packages/rootfiles-8.1-22.el8.src.rpm
 ```
 
-### `rpm` package: `rpm-4.14.3-24.el8_6.x86_64`
+### `rpm` package: `rpm-4.14.3-24.el8_7.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url rpm-4.14.3-24.el8_6
-http://repo.almalinux.org/vault/8.7/BaseOS/Source/Packages/rpm-4.14.3-24.el8_6.src.rpm
+$ dnf --quiet download --source --url rpm-4.14.3-24.el8_7
+http://repo.almalinux.org/vault/8.7/BaseOS/Source/Packages/rpm-4.14.3-24.el8_7.src.rpm
 ```
 
-### `rpm` package: `rpm-libs-4.14.3-24.el8_6.x86_64`
+### `rpm` package: `rpm-libs-4.14.3-24.el8_7.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ and LGPLv2+ with exceptions
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url rpm-libs-4.14.3-24.el8_6
-http://repo.almalinux.org/vault/8.7/BaseOS/Source/Packages/rpm-4.14.3-24.el8_6.src.rpm
+$ dnf --quiet download --source --url rpm-libs-4.14.3-24.el8_7
+http://repo.almalinux.org/vault/8.7/BaseOS/Source/Packages/rpm-4.14.3-24.el8_7.src.rpm
 ```
 
 ### `rpm` package: `sed-4.5-5.el8.x86_64`

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:39f63d416992d46ed21e2e871d67a852338c8b18f461657c50e15e34277f098b`
-- Created: `2022-11-11T01:29:36.667756985Z`
-- Virtual Size: ~ 189.79 Mb  
+- Image ID: `sha256:acaca326f3b3e2d31c8dfaf17c57b84690def04e76ce5450f90907292d1d4f84`
+- Created: `2022-12-01T23:19:59.202834137Z`
+- Virtual Size: ~ 189.78 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -24,15 +24,15 @@ $ dnf --quiet download --source --url acl-2.2.53-1.el8
 http://repo.almalinux.org/vault/8.7/BaseOS/Source/Packages/acl-2.2.53-1.el8.src.rpm
 ```
 
-### `rpm` package: `almalinux-release-8.7-2.el8.x86_64`
+### `rpm` package: `almalinux-release-8.7-3.el8.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url almalinux-release-8.7-2.el8
-http://repo.almalinux.org/vault/8.7/BaseOS/Source/Packages/almalinux-release-8.7-2.el8.src.rpm
+$ dnf --quiet download --source --url almalinux-release-8.7-3.el8
+http://repo.almalinux.org/vault/8.7/BaseOS/Source/Packages/almalinux-release-8.7-3.el8.src.rpm
 ```
 
 ### `rpm` package: `audit-libs-3.0.7-4.el8.x86_64`
@@ -591,15 +591,15 @@ $ dnf --quiet download --source --url kmod-libs-25-19.el8
 http://repo.almalinux.org/vault/8.7/BaseOS/Source/Packages/kmod-25-19.el8.src.rpm
 ```
 
-### `rpm` package: `krb5-libs-1.18.2-21.el8.x86_64`
+### `rpm` package: `krb5-libs-1.18.2-22.el8_7.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url krb5-libs-1.18.2-21.el8
-http://repo.almalinux.org/vault/8.7/BaseOS/Source/Packages/krb5-1.18.2-21.el8.src.rpm
+$ dnf --quiet download --source --url krb5-libs-1.18.2-22.el8_7
+http://repo.almalinux.org/vault/8.7/BaseOS/Source/Packages/krb5-1.18.2-22.el8_7.src.rpm
 ```
 
 ### `rpm` package: `langpacks-en-1.0-12.el8.noarch`
@@ -1284,15 +1284,15 @@ $ dnf --quiet download --source --url pcre2-10.32-3.el8_6
 http://repo.almalinux.org/vault/8.7/BaseOS/Source/Packages/pcre2-10.32-3.el8_6.src.rpm
 ```
 
-### `rpm` package: `platform-python-3.6.8-47.el8_6.alma.x86_64`
+### `rpm` package: `platform-python-3.6.8-48.el8_7.alma.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url platform-python-3.6.8-47.el8_6.alma
-http://repo.almalinux.org/vault/8.7/BaseOS/Source/Packages/python3-3.6.8-47.el8_6.alma.src.rpm
+$ dnf --quiet download --source --url platform-python-3.6.8-48.el8_7.alma
+http://repo.almalinux.org/vault/8.7/BaseOS/Source/Packages/python3-3.6.8-48.el8_7.alma.src.rpm
 ```
 
 ### `rpm` package: `platform-python-setuptools-39.2.0-6.el8.noarch`
@@ -1372,15 +1372,15 @@ $ dnf --quiet download --source --url python3-libdnf-0.63.0-11.1.el8.alma
 http://repo.almalinux.org/vault/8.7/BaseOS/Source/Packages/libdnf-0.63.0-11.1.el8.alma.src.rpm
 ```
 
-### `rpm` package: `python3-libs-3.6.8-47.el8_6.alma.x86_64`
+### `rpm` package: `python3-libs-3.6.8-48.el8_7.alma.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python3-libs-3.6.8-47.el8_6.alma
-http://repo.almalinux.org/vault/8.7/BaseOS/Source/Packages/python3-3.6.8-47.el8_6.alma.src.rpm
+$ dnf --quiet download --source --url python3-libs-3.6.8-48.el8_7.alma
+http://repo.almalinux.org/vault/8.7/BaseOS/Source/Packages/python3-3.6.8-48.el8_7.alma.src.rpm
 ```
 
 ### `rpm` package: `python3-pip-wheel-9.0.3-22.el8.noarch`
@@ -1394,15 +1394,15 @@ $ dnf --quiet download --source --url python3-pip-wheel-9.0.3-22.el8.noarch
 http://repo.almalinux.org/vault/8.7/BaseOS/Source/Packages/python-pip-9.0.3-22.el8.src.rpm
 ```
 
-### `rpm` package: `python3-rpm-4.14.3-24.el8_6.x86_64`
+### `rpm` package: `python3-rpm-4.14.3-24.el8_7.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python3-rpm-4.14.3-24.el8_6
-http://repo.almalinux.org/vault/8.7/BaseOS/Source/Packages/rpm-4.14.3-24.el8_6.src.rpm
+$ dnf --quiet download --source --url python3-rpm-4.14.3-24.el8_7
+http://repo.almalinux.org/vault/8.7/BaseOS/Source/Packages/rpm-4.14.3-24.el8_7.src.rpm
 ```
 
 ### `rpm` package: `python3-setuptools-wheel-39.2.0-6.el8.noarch`
@@ -1438,37 +1438,37 @@ $ dnf --quiet download --source --url rootfiles-8.1-22.el8.noarch
 http://repo.almalinux.org/vault/8.7/BaseOS/Source/Packages/rootfiles-8.1-22.el8.src.rpm
 ```
 
-### `rpm` package: `rpm-4.14.3-24.el8_6.x86_64`
+### `rpm` package: `rpm-4.14.3-24.el8_7.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url rpm-4.14.3-24.el8_6
-http://repo.almalinux.org/vault/8.7/BaseOS/Source/Packages/rpm-4.14.3-24.el8_6.src.rpm
+$ dnf --quiet download --source --url rpm-4.14.3-24.el8_7
+http://repo.almalinux.org/vault/8.7/BaseOS/Source/Packages/rpm-4.14.3-24.el8_7.src.rpm
 ```
 
-### `rpm` package: `rpm-build-libs-4.14.3-24.el8_6.x86_64`
+### `rpm` package: `rpm-build-libs-4.14.3-24.el8_7.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ and LGPLv2+ with exceptions
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url rpm-build-libs-4.14.3-24.el8_6
-http://repo.almalinux.org/vault/8.7/BaseOS/Source/Packages/rpm-4.14.3-24.el8_6.src.rpm
+$ dnf --quiet download --source --url rpm-build-libs-4.14.3-24.el8_7
+http://repo.almalinux.org/vault/8.7/BaseOS/Source/Packages/rpm-4.14.3-24.el8_7.src.rpm
 ```
 
-### `rpm` package: `rpm-libs-4.14.3-24.el8_6.x86_64`
+### `rpm` package: `rpm-libs-4.14.3-24.el8_7.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ and LGPLv2+ with exceptions
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url rpm-libs-4.14.3-24.el8_6
-http://repo.almalinux.org/vault/8.7/BaseOS/Source/Packages/rpm-4.14.3-24.el8_6.src.rpm
+$ dnf --quiet download --source --url rpm-libs-4.14.3-24.el8_7
+http://repo.almalinux.org/vault/8.7/BaseOS/Source/Packages/rpm-4.14.3-24.el8_7.src.rpm
 ```
 
 ### `rpm` package: `sed-4.5-5.el8.x86_64`
