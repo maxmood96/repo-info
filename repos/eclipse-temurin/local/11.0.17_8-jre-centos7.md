@@ -32,13 +32,23 @@
 
 Licenses (from `rpm --query`): GPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url acl-2.2.51-15.el7
+http://vault.centos.org/centos/7/os/Source/SPackages/acl-2.2.51-15.el7.src.rpm
+```
 
 ### `rpm` package: `audit-libs-2.8.5-4.el7.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url audit-libs-2.8.5-4.el7
+http://vault.centos.org/centos/7/os/Source/SPackages/audit-2.8.5-4.el7.src.rpm
+```
 
 ### `rpm` package: `basesystem-10.0-7.el7.centos.noarch`
 
