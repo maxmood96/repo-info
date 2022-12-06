@@ -1,7 +1,7 @@
 ## `notary:server`
 
 ```console
-$ docker pull notary@sha256:f3f84d5f7afe21737791d069153932095867585f11a002dfc40212593e01afe7
+$ docker pull notary@sha256:dc13c99f4db5e0960080286655122b6504dd071654878ba47792027704cc80bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -90,13 +90,13 @@ CMD ["notary-server" "--version"]
 ### `notary:server` - linux; arm variant v6
 
 ```console
-$ docker pull notary@sha256:8d8a1dd6ee5145dc225136e949d33be02829998678ab255572e6ab8ef3254e62
+$ docker pull notary@sha256:3146b5c8da4d09711ddd0816964521e23a6676f501e88ec1a7e5280e6fb6c3da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.5 MB (7505612 bytes)**  
+-	Total Size: **7.5 MB (7506156 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:81472a503fcf990f31d46859094a7126ce3194bf712cb419ff499c9d7de868fc`
+-	Image ID: `sha256:8b595c4018f5c0f9f198478455f457bd2a87f12123d337367494e497b3537f8c`
 -	Entrypoint: `["entrypoint.sh"]`
 -	Default Command: `["notary-server","--version"]`
 
@@ -115,19 +115,19 @@ ENV INSTALLDIR=/notary/server
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/notary/server
 # Sat, 12 Nov 2022 04:53:33 GMT
 WORKDIR /notary/server
-# Thu, 01 Dec 2022 21:29:49 GMT
+# Tue, 06 Dec 2022 21:18:58 GMT
 COPY /notary-server ./ # buildkit
-# Thu, 01 Dec 2022 21:29:49 GMT
+# Tue, 06 Dec 2022 21:18:58 GMT
 RUN ./notary-server --version # buildkit
-# Thu, 01 Dec 2022 21:29:49 GMT
+# Tue, 06 Dec 2022 21:18:58 GMT
 COPY ./server-config.json . # buildkit
-# Thu, 01 Dec 2022 21:29:50 GMT
+# Tue, 06 Dec 2022 21:18:58 GMT
 COPY ./entrypoint.sh . # buildkit
-# Thu, 01 Dec 2022 21:29:50 GMT
+# Tue, 06 Dec 2022 21:18:58 GMT
 USER notary
-# Thu, 01 Dec 2022 21:29:50 GMT
+# Tue, 06 Dec 2022 21:18:58 GMT
 ENTRYPOINT ["entrypoint.sh"]
-# Thu, 01 Dec 2022 21:29:50 GMT
+# Tue, 06 Dec 2022 21:18:58 GMT
 CMD ["notary-server" "--version"]
 ```
 
@@ -144,33 +144,33 @@ CMD ["notary-server" "--version"]
 		Last Modified: Sat, 12 Nov 2022 04:54:05 GMT  
 		Size: 118.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03931c55e6c9467510c658de352fc3d440933ce1b875add15973ad4926e089a2`  
-		Last Modified: Thu, 01 Dec 2022 21:30:23 GMT  
-		Size: 4.9 MB (4888310 bytes)  
+	-	`sha256:7f373478af2347219011c0a63ee63a10f99b52f8d1e4b83f02dca2691cf95bff`  
+		Last Modified: Tue, 06 Dec 2022 21:19:35 GMT  
+		Size: 4.9 MB (4888849 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ada81a7b17cb6304bf451a594dcadee8f42e345844b0a0363574e2f8fe18fcb`  
-		Last Modified: Thu, 01 Dec 2022 21:30:22 GMT  
+	-	`sha256:02428edbdcee48cb0bf71f76e386c61819ae4fce65ca829e50a0fd3ba61682bc`  
+		Last Modified: Tue, 06 Dec 2022 21:19:34 GMT  
 		Size: 92.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:088666050c46bbc2e0d257e2fc2fe1937809a0a1e43f8452bd8da290aec3ca1d`  
-		Last Modified: Thu, 01 Dec 2022 21:30:22 GMT  
-		Size: 421.0 B  
+	-	`sha256:66362a79c0f28dce86af1f18d61313a41c72531aaa3359870d69a996b41ffae6`  
+		Last Modified: Tue, 06 Dec 2022 21:19:34 GMT  
+		Size: 423.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc05f0f93e9db20e9c5d608de4a6080d2cc37d20f391b5e8440acd19425b820f`  
-		Last Modified: Thu, 01 Dec 2022 21:30:22 GMT  
-		Size: 382.0 B  
+	-	`sha256:733fa05cbe8c1083a808d762f996214acab0377cddcebf49cb605830c2eace6b`  
+		Last Modified: Tue, 06 Dec 2022 21:19:34 GMT  
+		Size: 385.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `notary:server` - linux; arm64 variant v8
 
 ```console
-$ docker pull notary@sha256:6d1c91559b1a3fa9b99d0a26fbd8d353ce2643ee8cbf414fbab11a0bf91221c5
+$ docker pull notary@sha256:f05e8c5a28e1eaa92e1d08575df17069b1c8b40cba4fc9af94fccff61227204d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.4 MB (7441471 bytes)**  
+-	Total Size: **7.4 MB (7441002 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c51c6583708b7f5c5375ade6c4155ac45dadc8c744c2d6faf5ad92d4457db900`
+-	Image ID: `sha256:eb806eabc1b3de405d164516cd49f831dec3216418e00241aea46ad4f6c26579`
 -	Entrypoint: `["entrypoint.sh"]`
 -	Default Command: `["notary-server","--version"]`
 
@@ -189,19 +189,19 @@ ENV INSTALLDIR=/notary/server
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/notary/server
 # Sat, 12 Nov 2022 04:36:49 GMT
 WORKDIR /notary/server
-# Thu, 01 Dec 2022 21:25:01 GMT
+# Tue, 06 Dec 2022 21:06:36 GMT
 COPY /notary-server ./ # buildkit
-# Thu, 01 Dec 2022 21:25:02 GMT
+# Tue, 06 Dec 2022 21:06:36 GMT
 RUN ./notary-server --version # buildkit
-# Thu, 01 Dec 2022 21:25:02 GMT
+# Tue, 06 Dec 2022 21:06:36 GMT
 COPY ./server-config.json . # buildkit
-# Thu, 01 Dec 2022 21:25:02 GMT
+# Tue, 06 Dec 2022 21:06:36 GMT
 COPY ./entrypoint.sh . # buildkit
-# Thu, 01 Dec 2022 21:25:02 GMT
+# Tue, 06 Dec 2022 21:06:36 GMT
 USER notary
-# Thu, 01 Dec 2022 21:25:02 GMT
+# Tue, 06 Dec 2022 21:06:36 GMT
 ENTRYPOINT ["entrypoint.sh"]
-# Thu, 01 Dec 2022 21:25:02 GMT
+# Tue, 06 Dec 2022 21:06:36 GMT
 CMD ["notary-server" "--version"]
 ```
 
@@ -218,20 +218,20 @@ CMD ["notary-server" "--version"]
 		Last Modified: Sat, 12 Nov 2022 04:37:05 GMT  
 		Size: 151.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df89c28a607657c6db51dd765b4275074016fbe91701a6ec9e8116b436210268`  
-		Last Modified: Thu, 01 Dec 2022 21:25:20 GMT  
-		Size: 4.7 MB (4731484 bytes)  
+	-	`sha256:d8322efb1986526da186f315eb1c9217b454f528b438fb0ccbb9b2e26a6dd779`  
+		Last Modified: Tue, 06 Dec 2022 21:06:55 GMT  
+		Size: 4.7 MB (4731016 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8d023b24f9587158dd752045a76d04f54d2fad5b7fc3436e7f0167da186a261`  
-		Last Modified: Thu, 01 Dec 2022 21:25:19 GMT  
+	-	`sha256:e469014c48d96eadbf5458c8c85dbfd82081dc8e52d889c151052649d3173076`  
+		Last Modified: Tue, 06 Dec 2022 21:06:54 GMT  
 		Size: 92.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:37acca650392c767479659c3a34eb3a50e4521ef6a931280fa2c1c3964fc9074`  
-		Last Modified: Thu, 01 Dec 2022 21:25:19 GMT  
-		Size: 422.0 B  
+	-	`sha256:927dd11231f23e8ed46141d2ddc4ce7ae5a6b71e05e2423d45012ddd0181437f`  
+		Last Modified: Tue, 06 Dec 2022 21:06:54 GMT  
+		Size: 421.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7486e0c1fa93bc01acddcabce35a565b0a64dcf1f77c323a3dc22f81ebb4c283`  
-		Last Modified: Thu, 01 Dec 2022 21:25:19 GMT  
+	-	`sha256:cf19af448572ae46b5e1af524723da74a570d244844541d80b166f543cfffe62`  
+		Last Modified: Tue, 06 Dec 2022 21:06:54 GMT  
 		Size: 382.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -383,13 +383,13 @@ CMD ["notary-server" "--version"]
 ### `notary:server` - linux; s390x
 
 ```console
-$ docker pull notary@sha256:440ccaeba070f526eec025ceca2d78a017bcb7150ab1d54d65f0c26b737a9843
+$ docker pull notary@sha256:5ad68984308f4e58bae487ca7952af8a853e785260f504ac14cbecc2b6dfe3ea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.6 MB (7562092 bytes)**  
+-	Total Size: **7.6 MB (7563431 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b52ae88acc1fc3f444febc651b9c089bfda6d451c178f4ee439f4360293e8a82`
+-	Image ID: `sha256:64e85201719660e9f6380da1b1fb6e5f962e93d1f922edf5140ff5f5e2796335`
 -	Entrypoint: `["entrypoint.sh"]`
 -	Default Command: `["notary-server","--version"]`
 
@@ -408,19 +408,19 @@ ENV INSTALLDIR=/notary/server
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/notary/server
 # Sat, 12 Nov 2022 05:29:11 GMT
 WORKDIR /notary/server
-# Thu, 01 Dec 2022 21:33:44 GMT
+# Tue, 06 Dec 2022 21:11:42 GMT
 COPY /notary-server ./ # buildkit
-# Thu, 01 Dec 2022 21:33:45 GMT
+# Tue, 06 Dec 2022 21:11:43 GMT
 RUN ./notary-server --version # buildkit
-# Thu, 01 Dec 2022 21:33:45 GMT
+# Tue, 06 Dec 2022 21:11:43 GMT
 COPY ./server-config.json . # buildkit
-# Thu, 01 Dec 2022 21:33:45 GMT
+# Tue, 06 Dec 2022 21:11:43 GMT
 COPY ./entrypoint.sh . # buildkit
-# Thu, 01 Dec 2022 21:33:45 GMT
+# Tue, 06 Dec 2022 21:11:43 GMT
 USER notary
-# Thu, 01 Dec 2022 21:33:45 GMT
+# Tue, 06 Dec 2022 21:11:43 GMT
 ENTRYPOINT ["entrypoint.sh"]
-# Thu, 01 Dec 2022 21:33:45 GMT
+# Tue, 06 Dec 2022 21:11:43 GMT
 CMD ["notary-server" "--version"]
 ```
 
@@ -437,19 +437,19 @@ CMD ["notary-server" "--version"]
 		Last Modified: Sat, 12 Nov 2022 05:29:47 GMT  
 		Size: 151.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2ca9fe47baeaa63d6e98b88f0efe6bd243f32113042769a11a0926f506eb1bae`  
-		Last Modified: Thu, 01 Dec 2022 21:34:18 GMT  
-		Size: 5.0 MB (4968733 bytes)  
+	-	`sha256:2551ed8601cbe43a55def52b8e69eda72eac7f885e2c7887f7c2fe356c3ed40c`  
+		Last Modified: Tue, 06 Dec 2022 21:12:14 GMT  
+		Size: 5.0 MB (4970070 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad9fc0dc309f527f60bbec45fe5da7bd8904f8c3ca26eb96d5d8185b52024261`  
-		Last Modified: Thu, 01 Dec 2022 21:34:17 GMT  
+	-	`sha256:18a6d35a1a6dfca332775b11c7e795872b345e57ef74e2d993f7e265a6e5fa53`  
+		Last Modified: Tue, 06 Dec 2022 21:12:14 GMT  
 		Size: 92.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d59633cbd4d45296699b2fad8dde298dd60466c888b3f4c8b7fbeb4abb449b19`  
-		Last Modified: Thu, 01 Dec 2022 21:34:17 GMT  
-		Size: 422.0 B  
+	-	`sha256:d6fb22baeef1a59d2f6f94f7ebf2c67b74cf62e078c7453b3133693d5c480a5b`  
+		Last Modified: Tue, 06 Dec 2022 21:12:13 GMT  
+		Size: 423.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f01fe8b01794b9f20daa0c86ac241000234ac1f62971e0a083bf4dd6c7eb3836`  
-		Last Modified: Thu, 01 Dec 2022 21:34:17 GMT  
-		Size: 384.0 B  
+	-	`sha256:604b38c3dfdfe07a93622e1f8c465cfd58a0bb2284df0fd332a3ddeffe44fa76`  
+		Last Modified: Tue, 06 Dec 2022 21:12:13 GMT  
+		Size: 385.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
