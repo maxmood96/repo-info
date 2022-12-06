@@ -23,7 +23,7 @@
 ## `varnish:6.0`
 
 ```console
-$ docker pull varnish@sha256:2db820562fdd6f05cb4fd9fae36ee6cea782687983cb05dee5ee4d498e6fb851
+$ docker pull varnish@sha256:f6bd602524d3277d861c5fcc04fc78577abb6c7d9557cf014aa763795f113ba2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -38,50 +38,50 @@ $ docker pull varnish@sha256:2db820562fdd6f05cb4fd9fae36ee6cea782687983cb05dee5e
 ### `varnish:6.0` - linux; amd64
 
 ```console
-$ docker pull varnish@sha256:0a7117a6c267c88300763851cdc4a7c1ee93e8d16eab317fe0370075a18e3319
+$ docker pull varnish@sha256:254b26bac7d0418b45b7ac9901cbed6c98b462e42f786b6765f02c36fc897428
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **100.7 MB (100656470 bytes)**  
+-	Total Size: **100.7 MB (100656506 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:17d9552661716474b203f578be5706b17466120d45bfe77619c508c179329283`
+-	Image ID: `sha256:1ae4640eb2d5ca206dc7b68fec63597c903fea56c78e359760c5d4a05ebabb9a`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-varnish-entrypoint"]`
 -	Default Command: `[]`
 
 ```dockerfile
-# Tue, 15 Nov 2022 04:04:54 GMT
-ADD file:d08e242792caa7f842fcf39a09ad59c97a856660e2013d5aed3e4a29197e9aaa in / 
-# Tue, 15 Nov 2022 04:04:54 GMT
+# Tue, 06 Dec 2022 01:20:54 GMT
+ADD file:1f1efd56601ebc26a041a7b994a380ef68112b91a078e225753bee7b3196d22c in / 
+# Tue, 06 Dec 2022 01:20:54 GMT
 CMD ["bash"]
-# Tue, 15 Nov 2022 14:36:45 GMT
+# Tue, 06 Dec 2022 08:30:43 GMT
 ENV VARNISH_SIZE=100M
-# Tue, 15 Nov 2022 14:38:56 GMT
+# Tue, 06 Dec 2022 08:32:54 GMT
 RUN set -e;     BASE_PKGS="curl dpkg-dev debhelper devscripts equivs git pkg-config apt-utils fakeroot";     export DEBIAN_FRONTEND=noninteractive;     export DEBCONF_NONINTERACTIVE_SEEN=true;     tmpdir="$(mktemp -d)";     cd "$tmpdir";     apt-get update;     apt-get install -y $BASE_PKGS;     git clone https://github.com/varnishcache/pkg-varnish-cache.git;     cd pkg-varnish-cache;     git checkout 10da6a585eb7d8defe9d273a51df5b133500eb6b;     rm -rf .git;     curl -f https://varnish-cache.org/downloads/varnish-6.0.11.tgz -o $tmpdir/orig.tgz;     echo "02f56f360c6bbed663e712edef961384e6003cfe73307c7ea50f805ac4b4df0d26958179170401a2254a69ab623acc172da42926d82189bfa724a4e8a78597ea  $tmpdir/orig.tgz" | sha512sum -c -;     tar xavf $tmpdir/orig.tgz --strip 1;     sed -i -e "s|@VERSION@|6.0.11|"  "debian/changelog";     mk-build-deps --install --tool="apt-get -o Debug::pkgProblemResolver=yes --yes" debian/control;     sed -i '' debian/varnish*;     dpkg-buildpackage -us -uc -j"$(nproc)";     apt-get -y install ../*.deb;     apt-get -y purge --auto-remove varnish-build-deps $BASE_PKGS;     mkdir /pkgs;     mv ../*dev*.deb /pkgs;     rm -rf /var/lib/apt/lists/* "$tmpdir";
-# Tue, 15 Nov 2022 14:38:56 GMT
+# Tue, 06 Dec 2022 08:32:54 GMT
 WORKDIR /etc/varnish
-# Tue, 15 Nov 2022 14:38:57 GMT
+# Tue, 06 Dec 2022 08:32:54 GMT
 COPY dir:81cfdf3570a33a2213eb3396395161c2375769c233d0e51a4b70c65b389fabfa in /usr/local/bin/ 
-# Tue, 15 Nov 2022 14:38:57 GMT
+# Tue, 06 Dec 2022 08:32:54 GMT
 ENTRYPOINT ["/usr/local/bin/docker-varnish-entrypoint"]
-# Tue, 15 Nov 2022 14:38:57 GMT
+# Tue, 06 Dec 2022 08:32:54 GMT
 EXPOSE 80 8443
-# Tue, 15 Nov 2022 14:38:57 GMT
+# Tue, 06 Dec 2022 08:32:55 GMT
 CMD []
 ```
 
 -	Layers:
-	-	`sha256:a603fa5e3b4127f210503aaa6189abf6286ee5a73deeaab460f8f33ebc6b64e2`  
-		Last Modified: Tue, 15 Nov 2022 04:08:47 GMT  
-		Size: 31.4 MB (31412630 bytes)  
+	-	`sha256:025c56f98b679f70b7a54241917e56da7b59ab9d2defecc6ebdb0bf2750484bb`  
+		Last Modified: Tue, 06 Dec 2022 01:25:12 GMT  
+		Size: 31.4 MB (31412852 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc500d1322d810ff7d6279d7c555ae615aaf02ceef2d3678b129dd2a803f278a`  
-		Last Modified: Tue, 15 Nov 2022 14:40:23 GMT  
-		Size: 69.2 MB (69243139 bytes)  
+	-	`sha256:687427cdb9c9008e26d5eeb25b0430a0b1b39ffef4dd46c96736d7b88e5a1b61`  
+		Last Modified: Tue, 06 Dec 2022 08:34:18 GMT  
+		Size: 69.2 MB (69242950 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:255f171ba69e80b6f87e9f01d19ac782af52a23a533623e5a22db882b36a4aaa`  
-		Last Modified: Tue, 15 Nov 2022 14:40:13 GMT  
-		Size: 701.0 B  
+	-	`sha256:fc2fdbd9793b1d17807de32eec8fdc9951233ef405e02db13a484d88b07bde4a`  
+		Last Modified: Tue, 06 Dec 2022 08:34:08 GMT  
+		Size: 704.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `varnish:6.0` - linux; arm variant v7
@@ -234,50 +234,50 @@ CMD []
 ### `varnish:6.0` - linux; ppc64le
 
 ```console
-$ docker pull varnish@sha256:120ab0c5e5805eed77200e5c07a4d32093c7ed6550f9424f4f07b8f6d03f7989
+$ docker pull varnish@sha256:a6000c11b37ca7ae9796f0f938994d4615cfd5a21c9480a00c1b34b48e40f4f7
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **99.8 MB (99792426 bytes)**  
+-	Total Size: **99.8 MB (99792620 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e4fcde9059efb158af9896db3f6b28ed2b34620d3cccf0db2b9bbfa00f28103a`
+-	Image ID: `sha256:5366c08f81a9027c7def36a863180e9d87c680e8bd1567f28de696e466c6b072`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-varnish-entrypoint"]`
 -	Default Command: `[]`
 
 ```dockerfile
-# Tue, 15 Nov 2022 05:18:45 GMT
-ADD file:520926164fdc762143905745329e568c67289232bec450e48645d82a4613dccf in / 
-# Tue, 15 Nov 2022 05:18:47 GMT
+# Tue, 06 Dec 2022 01:18:04 GMT
+ADD file:2231a44ea52d93df58e23883ba6b6911d4c554f4c1d172d80fb21c751ddcbbfc in / 
+# Tue, 06 Dec 2022 01:18:06 GMT
 CMD ["bash"]
-# Tue, 15 Nov 2022 18:57:43 GMT
+# Tue, 06 Dec 2022 09:14:02 GMT
 ENV VARNISH_SIZE=100M
-# Tue, 15 Nov 2022 19:02:21 GMT
+# Tue, 06 Dec 2022 09:18:39 GMT
 RUN set -e;     BASE_PKGS="curl dpkg-dev debhelper devscripts equivs git pkg-config apt-utils fakeroot";     export DEBIAN_FRONTEND=noninteractive;     export DEBCONF_NONINTERACTIVE_SEEN=true;     tmpdir="$(mktemp -d)";     cd "$tmpdir";     apt-get update;     apt-get install -y $BASE_PKGS;     git clone https://github.com/varnishcache/pkg-varnish-cache.git;     cd pkg-varnish-cache;     git checkout 10da6a585eb7d8defe9d273a51df5b133500eb6b;     rm -rf .git;     curl -f https://varnish-cache.org/downloads/varnish-6.0.11.tgz -o $tmpdir/orig.tgz;     echo "02f56f360c6bbed663e712edef961384e6003cfe73307c7ea50f805ac4b4df0d26958179170401a2254a69ab623acc172da42926d82189bfa724a4e8a78597ea  $tmpdir/orig.tgz" | sha512sum -c -;     tar xavf $tmpdir/orig.tgz --strip 1;     sed -i -e "s|@VERSION@|6.0.11|"  "debian/changelog";     mk-build-deps --install --tool="apt-get -o Debug::pkgProblemResolver=yes --yes" debian/control;     sed -i '' debian/varnish*;     dpkg-buildpackage -us -uc -j"$(nproc)";     apt-get -y install ../*.deb;     apt-get -y purge --auto-remove varnish-build-deps $BASE_PKGS;     mkdir /pkgs;     mv ../*dev*.deb /pkgs;     rm -rf /var/lib/apt/lists/* "$tmpdir";
-# Tue, 15 Nov 2022 19:02:23 GMT
+# Tue, 06 Dec 2022 09:18:41 GMT
 WORKDIR /etc/varnish
-# Tue, 15 Nov 2022 19:02:24 GMT
+# Tue, 06 Dec 2022 09:18:41 GMT
 COPY dir:81cfdf3570a33a2213eb3396395161c2375769c233d0e51a4b70c65b389fabfa in /usr/local/bin/ 
-# Tue, 15 Nov 2022 19:02:24 GMT
+# Tue, 06 Dec 2022 09:18:42 GMT
 ENTRYPOINT ["/usr/local/bin/docker-varnish-entrypoint"]
-# Tue, 15 Nov 2022 19:02:25 GMT
+# Tue, 06 Dec 2022 09:18:42 GMT
 EXPOSE 80 8443
-# Tue, 15 Nov 2022 19:02:25 GMT
+# Tue, 06 Dec 2022 09:18:42 GMT
 CMD []
 ```
 
 -	Layers:
-	-	`sha256:c57913b7d0318ef1a47f0348ce54d9865316776aa1ffb2c7871b1473b3d29407`  
-		Last Modified: Tue, 15 Nov 2022 05:24:22 GMT  
-		Size: 35.3 MB (35285140 bytes)  
+	-	`sha256:1f72e1168976861c676bf86a6c149129baba7e13200e8b70e6f24dc2ac2797df`  
+		Last Modified: Tue, 06 Dec 2022 01:24:18 GMT  
+		Size: 35.3 MB (35285293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2c9c08d506feae4d91723f94b2d45a378c2363e011b64711488020be7d01a14c`  
-		Last Modified: Thu, 17 Nov 2022 00:01:25 GMT  
-		Size: 64.5 MB (64506586 bytes)  
+	-	`sha256:9e2022d883b54568096f070ba8b23b46147bd85e0c1822e02aaf4e92c529830d`  
+		Last Modified: Tue, 06 Dec 2022 09:20:09 GMT  
+		Size: 64.5 MB (64506628 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9d19a18f871d057eb71a88742d79afa5ff6296e5fbd0af8e083fa43820e52440`  
-		Last Modified: Thu, 17 Nov 2022 00:01:05 GMT  
-		Size: 700.0 B  
+	-	`sha256:6a2ce64a959a5ae6d0f80bf4a5246a21abab96524f9e5ecee837bbda704c5fea`  
+		Last Modified: Tue, 06 Dec 2022 09:19:52 GMT  
+		Size: 699.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `varnish:6.0` - linux; s390x
@@ -332,7 +332,7 @@ CMD []
 ## `varnish:6.0.11`
 
 ```console
-$ docker pull varnish@sha256:2db820562fdd6f05cb4fd9fae36ee6cea782687983cb05dee5ee4d498e6fb851
+$ docker pull varnish@sha256:f6bd602524d3277d861c5fcc04fc78577abb6c7d9557cf014aa763795f113ba2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -347,50 +347,50 @@ $ docker pull varnish@sha256:2db820562fdd6f05cb4fd9fae36ee6cea782687983cb05dee5e
 ### `varnish:6.0.11` - linux; amd64
 
 ```console
-$ docker pull varnish@sha256:0a7117a6c267c88300763851cdc4a7c1ee93e8d16eab317fe0370075a18e3319
+$ docker pull varnish@sha256:254b26bac7d0418b45b7ac9901cbed6c98b462e42f786b6765f02c36fc897428
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **100.7 MB (100656470 bytes)**  
+-	Total Size: **100.7 MB (100656506 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:17d9552661716474b203f578be5706b17466120d45bfe77619c508c179329283`
+-	Image ID: `sha256:1ae4640eb2d5ca206dc7b68fec63597c903fea56c78e359760c5d4a05ebabb9a`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-varnish-entrypoint"]`
 -	Default Command: `[]`
 
 ```dockerfile
-# Tue, 15 Nov 2022 04:04:54 GMT
-ADD file:d08e242792caa7f842fcf39a09ad59c97a856660e2013d5aed3e4a29197e9aaa in / 
-# Tue, 15 Nov 2022 04:04:54 GMT
+# Tue, 06 Dec 2022 01:20:54 GMT
+ADD file:1f1efd56601ebc26a041a7b994a380ef68112b91a078e225753bee7b3196d22c in / 
+# Tue, 06 Dec 2022 01:20:54 GMT
 CMD ["bash"]
-# Tue, 15 Nov 2022 14:36:45 GMT
+# Tue, 06 Dec 2022 08:30:43 GMT
 ENV VARNISH_SIZE=100M
-# Tue, 15 Nov 2022 14:38:56 GMT
+# Tue, 06 Dec 2022 08:32:54 GMT
 RUN set -e;     BASE_PKGS="curl dpkg-dev debhelper devscripts equivs git pkg-config apt-utils fakeroot";     export DEBIAN_FRONTEND=noninteractive;     export DEBCONF_NONINTERACTIVE_SEEN=true;     tmpdir="$(mktemp -d)";     cd "$tmpdir";     apt-get update;     apt-get install -y $BASE_PKGS;     git clone https://github.com/varnishcache/pkg-varnish-cache.git;     cd pkg-varnish-cache;     git checkout 10da6a585eb7d8defe9d273a51df5b133500eb6b;     rm -rf .git;     curl -f https://varnish-cache.org/downloads/varnish-6.0.11.tgz -o $tmpdir/orig.tgz;     echo "02f56f360c6bbed663e712edef961384e6003cfe73307c7ea50f805ac4b4df0d26958179170401a2254a69ab623acc172da42926d82189bfa724a4e8a78597ea  $tmpdir/orig.tgz" | sha512sum -c -;     tar xavf $tmpdir/orig.tgz --strip 1;     sed -i -e "s|@VERSION@|6.0.11|"  "debian/changelog";     mk-build-deps --install --tool="apt-get -o Debug::pkgProblemResolver=yes --yes" debian/control;     sed -i '' debian/varnish*;     dpkg-buildpackage -us -uc -j"$(nproc)";     apt-get -y install ../*.deb;     apt-get -y purge --auto-remove varnish-build-deps $BASE_PKGS;     mkdir /pkgs;     mv ../*dev*.deb /pkgs;     rm -rf /var/lib/apt/lists/* "$tmpdir";
-# Tue, 15 Nov 2022 14:38:56 GMT
+# Tue, 06 Dec 2022 08:32:54 GMT
 WORKDIR /etc/varnish
-# Tue, 15 Nov 2022 14:38:57 GMT
+# Tue, 06 Dec 2022 08:32:54 GMT
 COPY dir:81cfdf3570a33a2213eb3396395161c2375769c233d0e51a4b70c65b389fabfa in /usr/local/bin/ 
-# Tue, 15 Nov 2022 14:38:57 GMT
+# Tue, 06 Dec 2022 08:32:54 GMT
 ENTRYPOINT ["/usr/local/bin/docker-varnish-entrypoint"]
-# Tue, 15 Nov 2022 14:38:57 GMT
+# Tue, 06 Dec 2022 08:32:54 GMT
 EXPOSE 80 8443
-# Tue, 15 Nov 2022 14:38:57 GMT
+# Tue, 06 Dec 2022 08:32:55 GMT
 CMD []
 ```
 
 -	Layers:
-	-	`sha256:a603fa5e3b4127f210503aaa6189abf6286ee5a73deeaab460f8f33ebc6b64e2`  
-		Last Modified: Tue, 15 Nov 2022 04:08:47 GMT  
-		Size: 31.4 MB (31412630 bytes)  
+	-	`sha256:025c56f98b679f70b7a54241917e56da7b59ab9d2defecc6ebdb0bf2750484bb`  
+		Last Modified: Tue, 06 Dec 2022 01:25:12 GMT  
+		Size: 31.4 MB (31412852 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc500d1322d810ff7d6279d7c555ae615aaf02ceef2d3678b129dd2a803f278a`  
-		Last Modified: Tue, 15 Nov 2022 14:40:23 GMT  
-		Size: 69.2 MB (69243139 bytes)  
+	-	`sha256:687427cdb9c9008e26d5eeb25b0430a0b1b39ffef4dd46c96736d7b88e5a1b61`  
+		Last Modified: Tue, 06 Dec 2022 08:34:18 GMT  
+		Size: 69.2 MB (69242950 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:255f171ba69e80b6f87e9f01d19ac782af52a23a533623e5a22db882b36a4aaa`  
-		Last Modified: Tue, 15 Nov 2022 14:40:13 GMT  
-		Size: 701.0 B  
+	-	`sha256:fc2fdbd9793b1d17807de32eec8fdc9951233ef405e02db13a484d88b07bde4a`  
+		Last Modified: Tue, 06 Dec 2022 08:34:08 GMT  
+		Size: 704.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `varnish:6.0.11` - linux; arm variant v7
@@ -543,50 +543,50 @@ CMD []
 ### `varnish:6.0.11` - linux; ppc64le
 
 ```console
-$ docker pull varnish@sha256:120ab0c5e5805eed77200e5c07a4d32093c7ed6550f9424f4f07b8f6d03f7989
+$ docker pull varnish@sha256:a6000c11b37ca7ae9796f0f938994d4615cfd5a21c9480a00c1b34b48e40f4f7
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **99.8 MB (99792426 bytes)**  
+-	Total Size: **99.8 MB (99792620 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e4fcde9059efb158af9896db3f6b28ed2b34620d3cccf0db2b9bbfa00f28103a`
+-	Image ID: `sha256:5366c08f81a9027c7def36a863180e9d87c680e8bd1567f28de696e466c6b072`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-varnish-entrypoint"]`
 -	Default Command: `[]`
 
 ```dockerfile
-# Tue, 15 Nov 2022 05:18:45 GMT
-ADD file:520926164fdc762143905745329e568c67289232bec450e48645d82a4613dccf in / 
-# Tue, 15 Nov 2022 05:18:47 GMT
+# Tue, 06 Dec 2022 01:18:04 GMT
+ADD file:2231a44ea52d93df58e23883ba6b6911d4c554f4c1d172d80fb21c751ddcbbfc in / 
+# Tue, 06 Dec 2022 01:18:06 GMT
 CMD ["bash"]
-# Tue, 15 Nov 2022 18:57:43 GMT
+# Tue, 06 Dec 2022 09:14:02 GMT
 ENV VARNISH_SIZE=100M
-# Tue, 15 Nov 2022 19:02:21 GMT
+# Tue, 06 Dec 2022 09:18:39 GMT
 RUN set -e;     BASE_PKGS="curl dpkg-dev debhelper devscripts equivs git pkg-config apt-utils fakeroot";     export DEBIAN_FRONTEND=noninteractive;     export DEBCONF_NONINTERACTIVE_SEEN=true;     tmpdir="$(mktemp -d)";     cd "$tmpdir";     apt-get update;     apt-get install -y $BASE_PKGS;     git clone https://github.com/varnishcache/pkg-varnish-cache.git;     cd pkg-varnish-cache;     git checkout 10da6a585eb7d8defe9d273a51df5b133500eb6b;     rm -rf .git;     curl -f https://varnish-cache.org/downloads/varnish-6.0.11.tgz -o $tmpdir/orig.tgz;     echo "02f56f360c6bbed663e712edef961384e6003cfe73307c7ea50f805ac4b4df0d26958179170401a2254a69ab623acc172da42926d82189bfa724a4e8a78597ea  $tmpdir/orig.tgz" | sha512sum -c -;     tar xavf $tmpdir/orig.tgz --strip 1;     sed -i -e "s|@VERSION@|6.0.11|"  "debian/changelog";     mk-build-deps --install --tool="apt-get -o Debug::pkgProblemResolver=yes --yes" debian/control;     sed -i '' debian/varnish*;     dpkg-buildpackage -us -uc -j"$(nproc)";     apt-get -y install ../*.deb;     apt-get -y purge --auto-remove varnish-build-deps $BASE_PKGS;     mkdir /pkgs;     mv ../*dev*.deb /pkgs;     rm -rf /var/lib/apt/lists/* "$tmpdir";
-# Tue, 15 Nov 2022 19:02:23 GMT
+# Tue, 06 Dec 2022 09:18:41 GMT
 WORKDIR /etc/varnish
-# Tue, 15 Nov 2022 19:02:24 GMT
+# Tue, 06 Dec 2022 09:18:41 GMT
 COPY dir:81cfdf3570a33a2213eb3396395161c2375769c233d0e51a4b70c65b389fabfa in /usr/local/bin/ 
-# Tue, 15 Nov 2022 19:02:24 GMT
+# Tue, 06 Dec 2022 09:18:42 GMT
 ENTRYPOINT ["/usr/local/bin/docker-varnish-entrypoint"]
-# Tue, 15 Nov 2022 19:02:25 GMT
+# Tue, 06 Dec 2022 09:18:42 GMT
 EXPOSE 80 8443
-# Tue, 15 Nov 2022 19:02:25 GMT
+# Tue, 06 Dec 2022 09:18:42 GMT
 CMD []
 ```
 
 -	Layers:
-	-	`sha256:c57913b7d0318ef1a47f0348ce54d9865316776aa1ffb2c7871b1473b3d29407`  
-		Last Modified: Tue, 15 Nov 2022 05:24:22 GMT  
-		Size: 35.3 MB (35285140 bytes)  
+	-	`sha256:1f72e1168976861c676bf86a6c149129baba7e13200e8b70e6f24dc2ac2797df`  
+		Last Modified: Tue, 06 Dec 2022 01:24:18 GMT  
+		Size: 35.3 MB (35285293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2c9c08d506feae4d91723f94b2d45a378c2363e011b64711488020be7d01a14c`  
-		Last Modified: Thu, 17 Nov 2022 00:01:25 GMT  
-		Size: 64.5 MB (64506586 bytes)  
+	-	`sha256:9e2022d883b54568096f070ba8b23b46147bd85e0c1822e02aaf4e92c529830d`  
+		Last Modified: Tue, 06 Dec 2022 09:20:09 GMT  
+		Size: 64.5 MB (64506628 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9d19a18f871d057eb71a88742d79afa5ff6296e5fbd0af8e083fa43820e52440`  
-		Last Modified: Thu, 17 Nov 2022 00:01:05 GMT  
-		Size: 700.0 B  
+	-	`sha256:6a2ce64a959a5ae6d0f80bf4a5246a21abab96524f9e5ecee837bbda704c5fea`  
+		Last Modified: Tue, 06 Dec 2022 09:19:52 GMT  
+		Size: 699.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `varnish:6.0.11` - linux; s390x
@@ -641,7 +641,7 @@ CMD []
 ## `varnish:7.1`
 
 ```console
-$ docker pull varnish@sha256:ebd10fa21103eba0584c1dab7fde651ce83f3c23f65baab6045eb9af001522e2
+$ docker pull varnish@sha256:f7d2568be44220033e1f2b5419a0b44da070267d944624f2e5c8cda4acecc339
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -656,73 +656,73 @@ $ docker pull varnish@sha256:ebd10fa21103eba0584c1dab7fde651ce83f3c23f65baab6045
 ### `varnish:7.1` - linux; amd64
 
 ```console
-$ docker pull varnish@sha256:b375b415d9a2e3e57e6921a2f47ece2ef9cf2c92f8c78cf1473973dbe14ee333
+$ docker pull varnish@sha256:83e2e9f3f661fb23423ebd72393662b32b42520363cc00a7a20d055b3ac00827
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **106.5 MB (106534972 bytes)**  
+-	Total Size: **106.5 MB (106535062 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:38f09b7e20e2789f2cf1ae6d5984581b1a14933e46e8e0d0dd43639250bc7192`
+-	Image ID: `sha256:42b5851a1b84dbb530e67126c4716743a48bee5862d472ed41badddae54b8063`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-varnish-entrypoint"]`
 -	Default Command: `[]`
 
 ```dockerfile
-# Tue, 15 Nov 2022 04:04:54 GMT
-ADD file:d08e242792caa7f842fcf39a09ad59c97a856660e2013d5aed3e4a29197e9aaa in / 
-# Tue, 15 Nov 2022 04:04:54 GMT
+# Tue, 06 Dec 2022 01:20:54 GMT
+ADD file:1f1efd56601ebc26a041a7b994a380ef68112b91a078e225753bee7b3196d22c in / 
+# Tue, 06 Dec 2022 01:20:54 GMT
 CMD ["bash"]
-# Tue, 15 Nov 2022 14:33:32 GMT
+# Tue, 06 Dec 2022 08:27:47 GMT
 ARG PKG_COMMIT=3ba24a8eee8cc5c082714034145b907402bbdb83
-# Tue, 15 Nov 2022 14:33:32 GMT
+# Tue, 06 Dec 2022 08:27:47 GMT
 ARG VARNISH_VERSION=7.1.2
-# Tue, 15 Nov 2022 14:33:32 GMT
+# Tue, 06 Dec 2022 08:27:48 GMT
 ARG DIST_SHA512=e16a4b75ede25f3812dfc4e95545e39a80022835b9155a4e42118f911e41b691cbedd296db48d307ba4a4d0d01df1149306d752de07cabe459ccbf5bcdd49238
-# Tue, 15 Nov 2022 14:33:32 GMT
+# Tue, 06 Dec 2022 08:27:48 GMT
 ARG VARNISH_MODULES_VERSION=0.20.0
-# Tue, 15 Nov 2022 14:33:32 GMT
+# Tue, 06 Dec 2022 08:27:48 GMT
 ARG VARNISH_MODULES_SHA512SUM=e63d6da8f63a5ce56bc7a5a1dd1a908e4ab0f6a36b5bdc5709dca2aa9c0b474bd8a06491ed3dee23636d335241ced4c7ef017b57413b05792ad382f6306a0b36
-# Tue, 15 Nov 2022 14:33:32 GMT
+# Tue, 06 Dec 2022 08:27:48 GMT
 ARG VMOD_DYNAMIC_VERSION=2.6.0
-# Tue, 15 Nov 2022 14:33:33 GMT
+# Tue, 06 Dec 2022 08:27:48 GMT
 ARG VMOD_DYNAMIC_COMMIT=025e9918f6cba33135e16e0fb0d86b4c34b6dd5a
-# Tue, 15 Nov 2022 14:33:33 GMT
+# Tue, 06 Dec 2022 08:27:48 GMT
 ARG VMOD_DYNAMIC_SHA512SUM=89b7251529c4c63c408b83c59e32b54b94b0f31f83614a34b3ffc4fb96ebdac5b6f8b5fe5b95056d5952a3c0a0217c935c5073c38415f7680af748e58c041816
-# Tue, 15 Nov 2022 14:33:33 GMT
+# Tue, 06 Dec 2022 08:27:48 GMT
 ARG TOOLBOX_COMMIT=96bab07cf58b6e04824ffec608199f1780ff0d04
-# Tue, 15 Nov 2022 14:33:33 GMT
+# Tue, 06 Dec 2022 08:27:48 GMT
 ENV VMOD_DEPS=automake curl libtool make pkg-config python3-sphinx
-# Tue, 15 Nov 2022 14:33:33 GMT
+# Tue, 06 Dec 2022 08:27:48 GMT
 ENV VARNISH_SIZE=100M
-# Tue, 15 Nov 2022 14:36:23 GMT
+# Tue, 06 Dec 2022 08:30:37 GMT
 # ARGS: DIST_SHA512=e16a4b75ede25f3812dfc4e95545e39a80022835b9155a4e42118f911e41b691cbedd296db48d307ba4a4d0d01df1149306d752de07cabe459ccbf5bcdd49238 PKG_COMMIT=3ba24a8eee8cc5c082714034145b907402bbdb83 TOOLBOX_COMMIT=96bab07cf58b6e04824ffec608199f1780ff0d04 VARNISH_MODULES_SHA512SUM=e63d6da8f63a5ce56bc7a5a1dd1a908e4ab0f6a36b5bdc5709dca2aa9c0b474bd8a06491ed3dee23636d335241ced4c7ef017b57413b05792ad382f6306a0b36 VARNISH_MODULES_VERSION=0.20.0 VARNISH_VERSION=7.1.2 VMOD_DYNAMIC_COMMIT=025e9918f6cba33135e16e0fb0d86b4c34b6dd5a VMOD_DYNAMIC_SHA512SUM=89b7251529c4c63c408b83c59e32b54b94b0f31f83614a34b3ffc4fb96ebdac5b6f8b5fe5b95056d5952a3c0a0217c935c5073c38415f7680af748e58c041816 VMOD_DYNAMIC_VERSION=2.6.0
 RUN set -e;     BASE_PKGS="curl dpkg-dev debhelper devscripts equivs git pkg-config apt-utils fakeroot libgetdns-dev";     export DEBIAN_FRONTEND=noninteractive;     export DEBCONF_NONINTERACTIVE_SEEN=true;     mkdir -p /work/varnish /pkgs;     apt-get update;     apt-get install -y $BASE_PKGS libgetdns10;     cd /work/varnish;     git clone https://github.com/varnishcache/pkg-varnish-cache.git;     cd pkg-varnish-cache;     git checkout 3ba24a8eee8cc5c082714034145b907402bbdb83;     rm -rf .git;     curl -f https://varnish-cache.org/downloads/varnish-7.1.2.tgz -o $tmpdir/orig.tgz;     echo "e16a4b75ede25f3812dfc4e95545e39a80022835b9155a4e42118f911e41b691cbedd296db48d307ba4a4d0d01df1149306d752de07cabe459ccbf5bcdd49238  $tmpdir/orig.tgz" | sha512sum -c -;     tar xavf $tmpdir/orig.tgz --strip 1;     sed -i -e "s|@VERSION@|$VARNISH_VERSION|"  "debian/changelog";     mk-build-deps --install --tool="apt-get -o Debug::pkgProblemResolver=yes --yes" debian/control;     sed -i '' debian/varnish*;     dpkg-buildpackage -us -uc -j"$(nproc)";     apt-get -y install ../*.deb;     mv ../*dev*.deb /pkgs;         git clone https://github.com/varnish/toolbox.git;     cd toolbox;     git checkout $TOOLBOX_COMMIT;     cp install-vmod/install-vmod /usr/local/bin/;         install-vmod https://github.com/varnish/varnish-modules/releases/download/$VARNISH_MODULES_VERSION/varnish-modules-$VARNISH_MODULES_VERSION.tar.gz $VARNISH_MODULES_SHA512SUM;         install-vmod https://github.com/nigoroll/libvmod-dynamic/archive/$VMOD_DYNAMIC_COMMIT.tar.gz $VMOD_DYNAMIC_SHA512SUM;         apt-get -y purge --auto-remove varnish-build-deps $BASE_PKGS;     rm -rf /var/lib/apt/lists/* /work/ /usr/lib/varnish/vmods/libvmod_*.la;     chown varnish /var/lib/varnish;
-# Tue, 15 Nov 2022 14:36:24 GMT
+# Tue, 06 Dec 2022 08:30:37 GMT
 WORKDIR /etc/varnish
-# Tue, 15 Nov 2022 14:36:24 GMT
+# Tue, 06 Dec 2022 08:30:37 GMT
 COPY dir:6dcb75fa0bc26d4afaf5dc722b0827803ad6d52fba8af98ee9fcd0dd74a868f3 in /usr/local/bin/ 
-# Tue, 15 Nov 2022 14:36:24 GMT
+# Tue, 06 Dec 2022 08:30:37 GMT
 ENTRYPOINT ["/usr/local/bin/docker-varnish-entrypoint"]
-# Tue, 15 Nov 2022 14:36:24 GMT
+# Tue, 06 Dec 2022 08:30:37 GMT
 USER varnish
-# Tue, 15 Nov 2022 14:36:24 GMT
+# Tue, 06 Dec 2022 08:30:37 GMT
 EXPOSE 80 8443
-# Tue, 15 Nov 2022 14:36:24 GMT
+# Tue, 06 Dec 2022 08:30:38 GMT
 CMD []
 ```
 
 -	Layers:
-	-	`sha256:a603fa5e3b4127f210503aaa6189abf6286ee5a73deeaab460f8f33ebc6b64e2`  
-		Last Modified: Tue, 15 Nov 2022 04:08:47 GMT  
-		Size: 31.4 MB (31412630 bytes)  
+	-	`sha256:025c56f98b679f70b7a54241917e56da7b59ab9d2defecc6ebdb0bf2750484bb`  
+		Last Modified: Tue, 06 Dec 2022 01:25:12 GMT  
+		Size: 31.4 MB (31412852 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bfba13295cbf511fdfc326769cdaf1da721fb3375fed512b1341637f675d25b6`  
-		Last Modified: Tue, 15 Nov 2022 14:40:02 GMT  
-		Size: 75.1 MB (75121851 bytes)  
+	-	`sha256:0e8199a7f921128089306a5ac5c047d4485f39df65fe273f3edda0dbf33b1457`  
+		Last Modified: Tue, 06 Dec 2022 08:33:58 GMT  
+		Size: 75.1 MB (75121717 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c646155e919faa9d98d62f7d9d110544e3e3820c501d0b1efd7304256e37952b`  
-		Last Modified: Tue, 15 Nov 2022 14:39:52 GMT  
-		Size: 491.0 B  
+	-	`sha256:f4eedd96e7604194d06df174e2f6ee3ddc2d6f131aae9d8a85c7293a41fb8519`  
+		Last Modified: Tue, 06 Dec 2022 08:33:47 GMT  
+		Size: 493.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `varnish:7.1` - linux; arm variant v7
@@ -944,73 +944,73 @@ CMD []
 ### `varnish:7.1` - linux; ppc64le
 
 ```console
-$ docker pull varnish@sha256:ad92040a282de8ba23b9e7cc3ddb39248bd504942796105a916161119f6a46b5
+$ docker pull varnish@sha256:2aa3d14792491b0050ef574838cb5090f28080426052f38cc78b8b0123048473
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **105.8 MB (105814757 bytes)**  
+-	Total Size: **105.8 MB (105814861 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4631e1c3f5b2c976110c38779953050bc88b74659f9130fdda2e182cb9a51ba6`
+-	Image ID: `sha256:cb8d86848f03c52fd3462c35c76e78c2a9bb3de00e1ef78e72979e8543d9388b`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-varnish-entrypoint"]`
 -	Default Command: `[]`
 
 ```dockerfile
-# Tue, 15 Nov 2022 05:18:45 GMT
-ADD file:520926164fdc762143905745329e568c67289232bec450e48645d82a4613dccf in / 
-# Tue, 15 Nov 2022 05:18:47 GMT
+# Tue, 06 Dec 2022 01:18:04 GMT
+ADD file:2231a44ea52d93df58e23883ba6b6911d4c554f4c1d172d80fb21c751ddcbbfc in / 
+# Tue, 06 Dec 2022 01:18:06 GMT
 CMD ["bash"]
-# Tue, 15 Nov 2022 18:51:42 GMT
+# Tue, 06 Dec 2022 09:08:01 GMT
 ARG PKG_COMMIT=3ba24a8eee8cc5c082714034145b907402bbdb83
-# Tue, 15 Nov 2022 18:51:43 GMT
+# Tue, 06 Dec 2022 09:08:01 GMT
 ARG VARNISH_VERSION=7.1.2
-# Tue, 15 Nov 2022 18:51:43 GMT
+# Tue, 06 Dec 2022 09:08:02 GMT
 ARG DIST_SHA512=e16a4b75ede25f3812dfc4e95545e39a80022835b9155a4e42118f911e41b691cbedd296db48d307ba4a4d0d01df1149306d752de07cabe459ccbf5bcdd49238
-# Tue, 15 Nov 2022 18:51:43 GMT
+# Tue, 06 Dec 2022 09:08:02 GMT
 ARG VARNISH_MODULES_VERSION=0.20.0
-# Tue, 15 Nov 2022 18:51:44 GMT
+# Tue, 06 Dec 2022 09:08:02 GMT
 ARG VARNISH_MODULES_SHA512SUM=e63d6da8f63a5ce56bc7a5a1dd1a908e4ab0f6a36b5bdc5709dca2aa9c0b474bd8a06491ed3dee23636d335241ced4c7ef017b57413b05792ad382f6306a0b36
-# Tue, 15 Nov 2022 18:51:44 GMT
+# Tue, 06 Dec 2022 09:08:03 GMT
 ARG VMOD_DYNAMIC_VERSION=2.6.0
-# Tue, 15 Nov 2022 18:51:44 GMT
+# Tue, 06 Dec 2022 09:08:03 GMT
 ARG VMOD_DYNAMIC_COMMIT=025e9918f6cba33135e16e0fb0d86b4c34b6dd5a
-# Tue, 15 Nov 2022 18:51:45 GMT
+# Tue, 06 Dec 2022 09:08:04 GMT
 ARG VMOD_DYNAMIC_SHA512SUM=89b7251529c4c63c408b83c59e32b54b94b0f31f83614a34b3ffc4fb96ebdac5b6f8b5fe5b95056d5952a3c0a0217c935c5073c38415f7680af748e58c041816
-# Tue, 15 Nov 2022 18:51:45 GMT
+# Tue, 06 Dec 2022 09:08:04 GMT
 ARG TOOLBOX_COMMIT=96bab07cf58b6e04824ffec608199f1780ff0d04
-# Tue, 15 Nov 2022 18:51:45 GMT
+# Tue, 06 Dec 2022 09:08:05 GMT
 ENV VMOD_DEPS=automake curl libtool make pkg-config python3-sphinx
-# Tue, 15 Nov 2022 18:51:45 GMT
+# Tue, 06 Dec 2022 09:08:05 GMT
 ENV VARNISH_SIZE=100M
-# Tue, 15 Nov 2022 18:57:16 GMT
+# Tue, 06 Dec 2022 09:13:46 GMT
 # ARGS: DIST_SHA512=e16a4b75ede25f3812dfc4e95545e39a80022835b9155a4e42118f911e41b691cbedd296db48d307ba4a4d0d01df1149306d752de07cabe459ccbf5bcdd49238 PKG_COMMIT=3ba24a8eee8cc5c082714034145b907402bbdb83 TOOLBOX_COMMIT=96bab07cf58b6e04824ffec608199f1780ff0d04 VARNISH_MODULES_SHA512SUM=e63d6da8f63a5ce56bc7a5a1dd1a908e4ab0f6a36b5bdc5709dca2aa9c0b474bd8a06491ed3dee23636d335241ced4c7ef017b57413b05792ad382f6306a0b36 VARNISH_MODULES_VERSION=0.20.0 VARNISH_VERSION=7.1.2 VMOD_DYNAMIC_COMMIT=025e9918f6cba33135e16e0fb0d86b4c34b6dd5a VMOD_DYNAMIC_SHA512SUM=89b7251529c4c63c408b83c59e32b54b94b0f31f83614a34b3ffc4fb96ebdac5b6f8b5fe5b95056d5952a3c0a0217c935c5073c38415f7680af748e58c041816 VMOD_DYNAMIC_VERSION=2.6.0
 RUN set -e;     BASE_PKGS="curl dpkg-dev debhelper devscripts equivs git pkg-config apt-utils fakeroot libgetdns-dev";     export DEBIAN_FRONTEND=noninteractive;     export DEBCONF_NONINTERACTIVE_SEEN=true;     mkdir -p /work/varnish /pkgs;     apt-get update;     apt-get install -y $BASE_PKGS libgetdns10;     cd /work/varnish;     git clone https://github.com/varnishcache/pkg-varnish-cache.git;     cd pkg-varnish-cache;     git checkout 3ba24a8eee8cc5c082714034145b907402bbdb83;     rm -rf .git;     curl -f https://varnish-cache.org/downloads/varnish-7.1.2.tgz -o $tmpdir/orig.tgz;     echo "e16a4b75ede25f3812dfc4e95545e39a80022835b9155a4e42118f911e41b691cbedd296db48d307ba4a4d0d01df1149306d752de07cabe459ccbf5bcdd49238  $tmpdir/orig.tgz" | sha512sum -c -;     tar xavf $tmpdir/orig.tgz --strip 1;     sed -i -e "s|@VERSION@|$VARNISH_VERSION|"  "debian/changelog";     mk-build-deps --install --tool="apt-get -o Debug::pkgProblemResolver=yes --yes" debian/control;     sed -i '' debian/varnish*;     dpkg-buildpackage -us -uc -j"$(nproc)";     apt-get -y install ../*.deb;     mv ../*dev*.deb /pkgs;         git clone https://github.com/varnish/toolbox.git;     cd toolbox;     git checkout $TOOLBOX_COMMIT;     cp install-vmod/install-vmod /usr/local/bin/;         install-vmod https://github.com/varnish/varnish-modules/releases/download/$VARNISH_MODULES_VERSION/varnish-modules-$VARNISH_MODULES_VERSION.tar.gz $VARNISH_MODULES_SHA512SUM;         install-vmod https://github.com/nigoroll/libvmod-dynamic/archive/$VMOD_DYNAMIC_COMMIT.tar.gz $VMOD_DYNAMIC_SHA512SUM;         apt-get -y purge --auto-remove varnish-build-deps $BASE_PKGS;     rm -rf /var/lib/apt/lists/* /work/ /usr/lib/varnish/vmods/libvmod_*.la;     chown varnish /var/lib/varnish;
-# Tue, 15 Nov 2022 18:57:19 GMT
+# Tue, 06 Dec 2022 09:13:49 GMT
 WORKDIR /etc/varnish
-# Tue, 15 Nov 2022 18:57:19 GMT
+# Tue, 06 Dec 2022 09:13:49 GMT
 COPY dir:6dcb75fa0bc26d4afaf5dc722b0827803ad6d52fba8af98ee9fcd0dd74a868f3 in /usr/local/bin/ 
-# Tue, 15 Nov 2022 18:57:19 GMT
+# Tue, 06 Dec 2022 09:13:49 GMT
 ENTRYPOINT ["/usr/local/bin/docker-varnish-entrypoint"]
-# Tue, 15 Nov 2022 18:57:20 GMT
+# Tue, 06 Dec 2022 09:13:50 GMT
 USER varnish
-# Tue, 15 Nov 2022 18:57:20 GMT
+# Tue, 06 Dec 2022 09:13:50 GMT
 EXPOSE 80 8443
-# Tue, 15 Nov 2022 18:57:20 GMT
+# Tue, 06 Dec 2022 09:13:51 GMT
 CMD []
 ```
 
 -	Layers:
-	-	`sha256:c57913b7d0318ef1a47f0348ce54d9865316776aa1ffb2c7871b1473b3d29407`  
-		Last Modified: Tue, 15 Nov 2022 05:24:22 GMT  
-		Size: 35.3 MB (35285140 bytes)  
+	-	`sha256:1f72e1168976861c676bf86a6c149129baba7e13200e8b70e6f24dc2ac2797df`  
+		Last Modified: Tue, 06 Dec 2022 01:24:18 GMT  
+		Size: 35.3 MB (35285293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08193cfb52626e9eab2412dd9391933e147afe4ca8b0a66e5fa4704ddab785f1`  
-		Last Modified: Thu, 17 Nov 2022 00:00:49 GMT  
-		Size: 70.5 MB (70529126 bytes)  
+	-	`sha256:4364415eb140c2c5d5856c787dce2703751c5ea560725dbf9f1986d2f5c3738a`  
+		Last Modified: Tue, 06 Dec 2022 09:19:36 GMT  
+		Size: 70.5 MB (70529080 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a684770525b010f91af346a5c02f02ead5b65c959096dfc7d6588b71d4094aa1`  
-		Last Modified: Thu, 17 Nov 2022 00:00:30 GMT  
-		Size: 491.0 B  
+	-	`sha256:c5da49c97e52919e48dbdbef6f998956958f4f94e3aeddf0ff187d9e7566098c`  
+		Last Modified: Tue, 06 Dec 2022 09:19:19 GMT  
+		Size: 488.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `varnish:7.1` - linux; s390x
@@ -1535,7 +1535,7 @@ CMD []
 ## `varnish:7.1.2`
 
 ```console
-$ docker pull varnish@sha256:ebd10fa21103eba0584c1dab7fde651ce83f3c23f65baab6045eb9af001522e2
+$ docker pull varnish@sha256:f7d2568be44220033e1f2b5419a0b44da070267d944624f2e5c8cda4acecc339
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1550,73 +1550,73 @@ $ docker pull varnish@sha256:ebd10fa21103eba0584c1dab7fde651ce83f3c23f65baab6045
 ### `varnish:7.1.2` - linux; amd64
 
 ```console
-$ docker pull varnish@sha256:b375b415d9a2e3e57e6921a2f47ece2ef9cf2c92f8c78cf1473973dbe14ee333
+$ docker pull varnish@sha256:83e2e9f3f661fb23423ebd72393662b32b42520363cc00a7a20d055b3ac00827
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **106.5 MB (106534972 bytes)**  
+-	Total Size: **106.5 MB (106535062 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:38f09b7e20e2789f2cf1ae6d5984581b1a14933e46e8e0d0dd43639250bc7192`
+-	Image ID: `sha256:42b5851a1b84dbb530e67126c4716743a48bee5862d472ed41badddae54b8063`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-varnish-entrypoint"]`
 -	Default Command: `[]`
 
 ```dockerfile
-# Tue, 15 Nov 2022 04:04:54 GMT
-ADD file:d08e242792caa7f842fcf39a09ad59c97a856660e2013d5aed3e4a29197e9aaa in / 
-# Tue, 15 Nov 2022 04:04:54 GMT
+# Tue, 06 Dec 2022 01:20:54 GMT
+ADD file:1f1efd56601ebc26a041a7b994a380ef68112b91a078e225753bee7b3196d22c in / 
+# Tue, 06 Dec 2022 01:20:54 GMT
 CMD ["bash"]
-# Tue, 15 Nov 2022 14:33:32 GMT
+# Tue, 06 Dec 2022 08:27:47 GMT
 ARG PKG_COMMIT=3ba24a8eee8cc5c082714034145b907402bbdb83
-# Tue, 15 Nov 2022 14:33:32 GMT
+# Tue, 06 Dec 2022 08:27:47 GMT
 ARG VARNISH_VERSION=7.1.2
-# Tue, 15 Nov 2022 14:33:32 GMT
+# Tue, 06 Dec 2022 08:27:48 GMT
 ARG DIST_SHA512=e16a4b75ede25f3812dfc4e95545e39a80022835b9155a4e42118f911e41b691cbedd296db48d307ba4a4d0d01df1149306d752de07cabe459ccbf5bcdd49238
-# Tue, 15 Nov 2022 14:33:32 GMT
+# Tue, 06 Dec 2022 08:27:48 GMT
 ARG VARNISH_MODULES_VERSION=0.20.0
-# Tue, 15 Nov 2022 14:33:32 GMT
+# Tue, 06 Dec 2022 08:27:48 GMT
 ARG VARNISH_MODULES_SHA512SUM=e63d6da8f63a5ce56bc7a5a1dd1a908e4ab0f6a36b5bdc5709dca2aa9c0b474bd8a06491ed3dee23636d335241ced4c7ef017b57413b05792ad382f6306a0b36
-# Tue, 15 Nov 2022 14:33:32 GMT
+# Tue, 06 Dec 2022 08:27:48 GMT
 ARG VMOD_DYNAMIC_VERSION=2.6.0
-# Tue, 15 Nov 2022 14:33:33 GMT
+# Tue, 06 Dec 2022 08:27:48 GMT
 ARG VMOD_DYNAMIC_COMMIT=025e9918f6cba33135e16e0fb0d86b4c34b6dd5a
-# Tue, 15 Nov 2022 14:33:33 GMT
+# Tue, 06 Dec 2022 08:27:48 GMT
 ARG VMOD_DYNAMIC_SHA512SUM=89b7251529c4c63c408b83c59e32b54b94b0f31f83614a34b3ffc4fb96ebdac5b6f8b5fe5b95056d5952a3c0a0217c935c5073c38415f7680af748e58c041816
-# Tue, 15 Nov 2022 14:33:33 GMT
+# Tue, 06 Dec 2022 08:27:48 GMT
 ARG TOOLBOX_COMMIT=96bab07cf58b6e04824ffec608199f1780ff0d04
-# Tue, 15 Nov 2022 14:33:33 GMT
+# Tue, 06 Dec 2022 08:27:48 GMT
 ENV VMOD_DEPS=automake curl libtool make pkg-config python3-sphinx
-# Tue, 15 Nov 2022 14:33:33 GMT
+# Tue, 06 Dec 2022 08:27:48 GMT
 ENV VARNISH_SIZE=100M
-# Tue, 15 Nov 2022 14:36:23 GMT
+# Tue, 06 Dec 2022 08:30:37 GMT
 # ARGS: DIST_SHA512=e16a4b75ede25f3812dfc4e95545e39a80022835b9155a4e42118f911e41b691cbedd296db48d307ba4a4d0d01df1149306d752de07cabe459ccbf5bcdd49238 PKG_COMMIT=3ba24a8eee8cc5c082714034145b907402bbdb83 TOOLBOX_COMMIT=96bab07cf58b6e04824ffec608199f1780ff0d04 VARNISH_MODULES_SHA512SUM=e63d6da8f63a5ce56bc7a5a1dd1a908e4ab0f6a36b5bdc5709dca2aa9c0b474bd8a06491ed3dee23636d335241ced4c7ef017b57413b05792ad382f6306a0b36 VARNISH_MODULES_VERSION=0.20.0 VARNISH_VERSION=7.1.2 VMOD_DYNAMIC_COMMIT=025e9918f6cba33135e16e0fb0d86b4c34b6dd5a VMOD_DYNAMIC_SHA512SUM=89b7251529c4c63c408b83c59e32b54b94b0f31f83614a34b3ffc4fb96ebdac5b6f8b5fe5b95056d5952a3c0a0217c935c5073c38415f7680af748e58c041816 VMOD_DYNAMIC_VERSION=2.6.0
 RUN set -e;     BASE_PKGS="curl dpkg-dev debhelper devscripts equivs git pkg-config apt-utils fakeroot libgetdns-dev";     export DEBIAN_FRONTEND=noninteractive;     export DEBCONF_NONINTERACTIVE_SEEN=true;     mkdir -p /work/varnish /pkgs;     apt-get update;     apt-get install -y $BASE_PKGS libgetdns10;     cd /work/varnish;     git clone https://github.com/varnishcache/pkg-varnish-cache.git;     cd pkg-varnish-cache;     git checkout 3ba24a8eee8cc5c082714034145b907402bbdb83;     rm -rf .git;     curl -f https://varnish-cache.org/downloads/varnish-7.1.2.tgz -o $tmpdir/orig.tgz;     echo "e16a4b75ede25f3812dfc4e95545e39a80022835b9155a4e42118f911e41b691cbedd296db48d307ba4a4d0d01df1149306d752de07cabe459ccbf5bcdd49238  $tmpdir/orig.tgz" | sha512sum -c -;     tar xavf $tmpdir/orig.tgz --strip 1;     sed -i -e "s|@VERSION@|$VARNISH_VERSION|"  "debian/changelog";     mk-build-deps --install --tool="apt-get -o Debug::pkgProblemResolver=yes --yes" debian/control;     sed -i '' debian/varnish*;     dpkg-buildpackage -us -uc -j"$(nproc)";     apt-get -y install ../*.deb;     mv ../*dev*.deb /pkgs;         git clone https://github.com/varnish/toolbox.git;     cd toolbox;     git checkout $TOOLBOX_COMMIT;     cp install-vmod/install-vmod /usr/local/bin/;         install-vmod https://github.com/varnish/varnish-modules/releases/download/$VARNISH_MODULES_VERSION/varnish-modules-$VARNISH_MODULES_VERSION.tar.gz $VARNISH_MODULES_SHA512SUM;         install-vmod https://github.com/nigoroll/libvmod-dynamic/archive/$VMOD_DYNAMIC_COMMIT.tar.gz $VMOD_DYNAMIC_SHA512SUM;         apt-get -y purge --auto-remove varnish-build-deps $BASE_PKGS;     rm -rf /var/lib/apt/lists/* /work/ /usr/lib/varnish/vmods/libvmod_*.la;     chown varnish /var/lib/varnish;
-# Tue, 15 Nov 2022 14:36:24 GMT
+# Tue, 06 Dec 2022 08:30:37 GMT
 WORKDIR /etc/varnish
-# Tue, 15 Nov 2022 14:36:24 GMT
+# Tue, 06 Dec 2022 08:30:37 GMT
 COPY dir:6dcb75fa0bc26d4afaf5dc722b0827803ad6d52fba8af98ee9fcd0dd74a868f3 in /usr/local/bin/ 
-# Tue, 15 Nov 2022 14:36:24 GMT
+# Tue, 06 Dec 2022 08:30:37 GMT
 ENTRYPOINT ["/usr/local/bin/docker-varnish-entrypoint"]
-# Tue, 15 Nov 2022 14:36:24 GMT
+# Tue, 06 Dec 2022 08:30:37 GMT
 USER varnish
-# Tue, 15 Nov 2022 14:36:24 GMT
+# Tue, 06 Dec 2022 08:30:37 GMT
 EXPOSE 80 8443
-# Tue, 15 Nov 2022 14:36:24 GMT
+# Tue, 06 Dec 2022 08:30:38 GMT
 CMD []
 ```
 
 -	Layers:
-	-	`sha256:a603fa5e3b4127f210503aaa6189abf6286ee5a73deeaab460f8f33ebc6b64e2`  
-		Last Modified: Tue, 15 Nov 2022 04:08:47 GMT  
-		Size: 31.4 MB (31412630 bytes)  
+	-	`sha256:025c56f98b679f70b7a54241917e56da7b59ab9d2defecc6ebdb0bf2750484bb`  
+		Last Modified: Tue, 06 Dec 2022 01:25:12 GMT  
+		Size: 31.4 MB (31412852 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bfba13295cbf511fdfc326769cdaf1da721fb3375fed512b1341637f675d25b6`  
-		Last Modified: Tue, 15 Nov 2022 14:40:02 GMT  
-		Size: 75.1 MB (75121851 bytes)  
+	-	`sha256:0e8199a7f921128089306a5ac5c047d4485f39df65fe273f3edda0dbf33b1457`  
+		Last Modified: Tue, 06 Dec 2022 08:33:58 GMT  
+		Size: 75.1 MB (75121717 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c646155e919faa9d98d62f7d9d110544e3e3820c501d0b1efd7304256e37952b`  
-		Last Modified: Tue, 15 Nov 2022 14:39:52 GMT  
-		Size: 491.0 B  
+	-	`sha256:f4eedd96e7604194d06df174e2f6ee3ddc2d6f131aae9d8a85c7293a41fb8519`  
+		Last Modified: Tue, 06 Dec 2022 08:33:47 GMT  
+		Size: 493.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `varnish:7.1.2` - linux; arm variant v7
@@ -1838,73 +1838,73 @@ CMD []
 ### `varnish:7.1.2` - linux; ppc64le
 
 ```console
-$ docker pull varnish@sha256:ad92040a282de8ba23b9e7cc3ddb39248bd504942796105a916161119f6a46b5
+$ docker pull varnish@sha256:2aa3d14792491b0050ef574838cb5090f28080426052f38cc78b8b0123048473
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **105.8 MB (105814757 bytes)**  
+-	Total Size: **105.8 MB (105814861 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4631e1c3f5b2c976110c38779953050bc88b74659f9130fdda2e182cb9a51ba6`
+-	Image ID: `sha256:cb8d86848f03c52fd3462c35c76e78c2a9bb3de00e1ef78e72979e8543d9388b`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-varnish-entrypoint"]`
 -	Default Command: `[]`
 
 ```dockerfile
-# Tue, 15 Nov 2022 05:18:45 GMT
-ADD file:520926164fdc762143905745329e568c67289232bec450e48645d82a4613dccf in / 
-# Tue, 15 Nov 2022 05:18:47 GMT
+# Tue, 06 Dec 2022 01:18:04 GMT
+ADD file:2231a44ea52d93df58e23883ba6b6911d4c554f4c1d172d80fb21c751ddcbbfc in / 
+# Tue, 06 Dec 2022 01:18:06 GMT
 CMD ["bash"]
-# Tue, 15 Nov 2022 18:51:42 GMT
+# Tue, 06 Dec 2022 09:08:01 GMT
 ARG PKG_COMMIT=3ba24a8eee8cc5c082714034145b907402bbdb83
-# Tue, 15 Nov 2022 18:51:43 GMT
+# Tue, 06 Dec 2022 09:08:01 GMT
 ARG VARNISH_VERSION=7.1.2
-# Tue, 15 Nov 2022 18:51:43 GMT
+# Tue, 06 Dec 2022 09:08:02 GMT
 ARG DIST_SHA512=e16a4b75ede25f3812dfc4e95545e39a80022835b9155a4e42118f911e41b691cbedd296db48d307ba4a4d0d01df1149306d752de07cabe459ccbf5bcdd49238
-# Tue, 15 Nov 2022 18:51:43 GMT
+# Tue, 06 Dec 2022 09:08:02 GMT
 ARG VARNISH_MODULES_VERSION=0.20.0
-# Tue, 15 Nov 2022 18:51:44 GMT
+# Tue, 06 Dec 2022 09:08:02 GMT
 ARG VARNISH_MODULES_SHA512SUM=e63d6da8f63a5ce56bc7a5a1dd1a908e4ab0f6a36b5bdc5709dca2aa9c0b474bd8a06491ed3dee23636d335241ced4c7ef017b57413b05792ad382f6306a0b36
-# Tue, 15 Nov 2022 18:51:44 GMT
+# Tue, 06 Dec 2022 09:08:03 GMT
 ARG VMOD_DYNAMIC_VERSION=2.6.0
-# Tue, 15 Nov 2022 18:51:44 GMT
+# Tue, 06 Dec 2022 09:08:03 GMT
 ARG VMOD_DYNAMIC_COMMIT=025e9918f6cba33135e16e0fb0d86b4c34b6dd5a
-# Tue, 15 Nov 2022 18:51:45 GMT
+# Tue, 06 Dec 2022 09:08:04 GMT
 ARG VMOD_DYNAMIC_SHA512SUM=89b7251529c4c63c408b83c59e32b54b94b0f31f83614a34b3ffc4fb96ebdac5b6f8b5fe5b95056d5952a3c0a0217c935c5073c38415f7680af748e58c041816
-# Tue, 15 Nov 2022 18:51:45 GMT
+# Tue, 06 Dec 2022 09:08:04 GMT
 ARG TOOLBOX_COMMIT=96bab07cf58b6e04824ffec608199f1780ff0d04
-# Tue, 15 Nov 2022 18:51:45 GMT
+# Tue, 06 Dec 2022 09:08:05 GMT
 ENV VMOD_DEPS=automake curl libtool make pkg-config python3-sphinx
-# Tue, 15 Nov 2022 18:51:45 GMT
+# Tue, 06 Dec 2022 09:08:05 GMT
 ENV VARNISH_SIZE=100M
-# Tue, 15 Nov 2022 18:57:16 GMT
+# Tue, 06 Dec 2022 09:13:46 GMT
 # ARGS: DIST_SHA512=e16a4b75ede25f3812dfc4e95545e39a80022835b9155a4e42118f911e41b691cbedd296db48d307ba4a4d0d01df1149306d752de07cabe459ccbf5bcdd49238 PKG_COMMIT=3ba24a8eee8cc5c082714034145b907402bbdb83 TOOLBOX_COMMIT=96bab07cf58b6e04824ffec608199f1780ff0d04 VARNISH_MODULES_SHA512SUM=e63d6da8f63a5ce56bc7a5a1dd1a908e4ab0f6a36b5bdc5709dca2aa9c0b474bd8a06491ed3dee23636d335241ced4c7ef017b57413b05792ad382f6306a0b36 VARNISH_MODULES_VERSION=0.20.0 VARNISH_VERSION=7.1.2 VMOD_DYNAMIC_COMMIT=025e9918f6cba33135e16e0fb0d86b4c34b6dd5a VMOD_DYNAMIC_SHA512SUM=89b7251529c4c63c408b83c59e32b54b94b0f31f83614a34b3ffc4fb96ebdac5b6f8b5fe5b95056d5952a3c0a0217c935c5073c38415f7680af748e58c041816 VMOD_DYNAMIC_VERSION=2.6.0
 RUN set -e;     BASE_PKGS="curl dpkg-dev debhelper devscripts equivs git pkg-config apt-utils fakeroot libgetdns-dev";     export DEBIAN_FRONTEND=noninteractive;     export DEBCONF_NONINTERACTIVE_SEEN=true;     mkdir -p /work/varnish /pkgs;     apt-get update;     apt-get install -y $BASE_PKGS libgetdns10;     cd /work/varnish;     git clone https://github.com/varnishcache/pkg-varnish-cache.git;     cd pkg-varnish-cache;     git checkout 3ba24a8eee8cc5c082714034145b907402bbdb83;     rm -rf .git;     curl -f https://varnish-cache.org/downloads/varnish-7.1.2.tgz -o $tmpdir/orig.tgz;     echo "e16a4b75ede25f3812dfc4e95545e39a80022835b9155a4e42118f911e41b691cbedd296db48d307ba4a4d0d01df1149306d752de07cabe459ccbf5bcdd49238  $tmpdir/orig.tgz" | sha512sum -c -;     tar xavf $tmpdir/orig.tgz --strip 1;     sed -i -e "s|@VERSION@|$VARNISH_VERSION|"  "debian/changelog";     mk-build-deps --install --tool="apt-get -o Debug::pkgProblemResolver=yes --yes" debian/control;     sed -i '' debian/varnish*;     dpkg-buildpackage -us -uc -j"$(nproc)";     apt-get -y install ../*.deb;     mv ../*dev*.deb /pkgs;         git clone https://github.com/varnish/toolbox.git;     cd toolbox;     git checkout $TOOLBOX_COMMIT;     cp install-vmod/install-vmod /usr/local/bin/;         install-vmod https://github.com/varnish/varnish-modules/releases/download/$VARNISH_MODULES_VERSION/varnish-modules-$VARNISH_MODULES_VERSION.tar.gz $VARNISH_MODULES_SHA512SUM;         install-vmod https://github.com/nigoroll/libvmod-dynamic/archive/$VMOD_DYNAMIC_COMMIT.tar.gz $VMOD_DYNAMIC_SHA512SUM;         apt-get -y purge --auto-remove varnish-build-deps $BASE_PKGS;     rm -rf /var/lib/apt/lists/* /work/ /usr/lib/varnish/vmods/libvmod_*.la;     chown varnish /var/lib/varnish;
-# Tue, 15 Nov 2022 18:57:19 GMT
+# Tue, 06 Dec 2022 09:13:49 GMT
 WORKDIR /etc/varnish
-# Tue, 15 Nov 2022 18:57:19 GMT
+# Tue, 06 Dec 2022 09:13:49 GMT
 COPY dir:6dcb75fa0bc26d4afaf5dc722b0827803ad6d52fba8af98ee9fcd0dd74a868f3 in /usr/local/bin/ 
-# Tue, 15 Nov 2022 18:57:19 GMT
+# Tue, 06 Dec 2022 09:13:49 GMT
 ENTRYPOINT ["/usr/local/bin/docker-varnish-entrypoint"]
-# Tue, 15 Nov 2022 18:57:20 GMT
+# Tue, 06 Dec 2022 09:13:50 GMT
 USER varnish
-# Tue, 15 Nov 2022 18:57:20 GMT
+# Tue, 06 Dec 2022 09:13:50 GMT
 EXPOSE 80 8443
-# Tue, 15 Nov 2022 18:57:20 GMT
+# Tue, 06 Dec 2022 09:13:51 GMT
 CMD []
 ```
 
 -	Layers:
-	-	`sha256:c57913b7d0318ef1a47f0348ce54d9865316776aa1ffb2c7871b1473b3d29407`  
-		Last Modified: Tue, 15 Nov 2022 05:24:22 GMT  
-		Size: 35.3 MB (35285140 bytes)  
+	-	`sha256:1f72e1168976861c676bf86a6c149129baba7e13200e8b70e6f24dc2ac2797df`  
+		Last Modified: Tue, 06 Dec 2022 01:24:18 GMT  
+		Size: 35.3 MB (35285293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08193cfb52626e9eab2412dd9391933e147afe4ca8b0a66e5fa4704ddab785f1`  
-		Last Modified: Thu, 17 Nov 2022 00:00:49 GMT  
-		Size: 70.5 MB (70529126 bytes)  
+	-	`sha256:4364415eb140c2c5d5856c787dce2703751c5ea560725dbf9f1986d2f5c3738a`  
+		Last Modified: Tue, 06 Dec 2022 09:19:36 GMT  
+		Size: 70.5 MB (70529080 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a684770525b010f91af346a5c02f02ead5b65c959096dfc7d6588b71d4094aa1`  
-		Last Modified: Thu, 17 Nov 2022 00:00:30 GMT  
-		Size: 491.0 B  
+	-	`sha256:c5da49c97e52919e48dbdbef6f998956958f4f94e3aeddf0ff187d9e7566098c`  
+		Last Modified: Tue, 06 Dec 2022 09:19:19 GMT  
+		Size: 488.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `varnish:7.1.2` - linux; s390x
@@ -2429,7 +2429,7 @@ CMD []
 ## `varnish:7.2`
 
 ```console
-$ docker pull varnish@sha256:53f48d4663fe8910778760a018e2faadfb59e2f60fa7521ac866b94c62f75e99
+$ docker pull varnish@sha256:fa9657812ea2c9581c447e4433e950254f909f2c0623b034ac81042858f2c3b5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2441,73 +2441,73 @@ $ docker pull varnish@sha256:53f48d4663fe8910778760a018e2faadfb59e2f60fa7521ac86
 ### `varnish:7.2` - linux; amd64
 
 ```console
-$ docker pull varnish@sha256:0bfb5f63d842342fc42f19bf593526c207f4ff5e5313ae8a821d5b7a690d3e34
+$ docker pull varnish@sha256:0e0b5e77195b000295df3c14e7294136cd3deda184533872876ab693724af434
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **106.8 MB (106841695 bytes)**  
+-	Total Size: **106.8 MB (106842009 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1cfb60a5f6116e7e1b7f38755d1fab3a71afa2bffe3a796512b5489a31a2678c`
+-	Image ID: `sha256:99f668a86eddb1abc8fa0a8f068b11bc2d77a73b1fcd0509675a3400187e7abd`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-varnish-entrypoint"]`
 -	Default Command: `[]`
 
 ```dockerfile
-# Tue, 15 Nov 2022 04:04:54 GMT
-ADD file:d08e242792caa7f842fcf39a09ad59c97a856660e2013d5aed3e4a29197e9aaa in / 
-# Tue, 15 Nov 2022 04:04:54 GMT
+# Tue, 06 Dec 2022 01:20:54 GMT
+ADD file:1f1efd56601ebc26a041a7b994a380ef68112b91a078e225753bee7b3196d22c in / 
+# Tue, 06 Dec 2022 01:20:54 GMT
 CMD ["bash"]
-# Tue, 15 Nov 2022 14:29:22 GMT
+# Tue, 06 Dec 2022 08:24:07 GMT
 ARG PKG_COMMIT=ffc59a345217b599fd49f7f0442b5f653fbe6fc2
-# Tue, 15 Nov 2022 14:29:22 GMT
+# Tue, 06 Dec 2022 08:24:07 GMT
 ARG VARNISH_VERSION=7.2.1
-# Tue, 15 Nov 2022 14:29:22 GMT
+# Tue, 06 Dec 2022 08:24:07 GMT
 ARG DIST_SHA512=7b9b837a8bafdf5798e81bc38163457b3bca16d933a9492800cdd2cde35c9b524a10b7e5ec931217e11d72f32feb05157a7eecfd9cf2c5856e717b634e51d089
-# Tue, 15 Nov 2022 14:29:22 GMT
+# Tue, 06 Dec 2022 08:24:07 GMT
 ARG VARNISH_MODULES_VERSION=0.21.0
-# Tue, 15 Nov 2022 14:29:22 GMT
+# Tue, 06 Dec 2022 08:24:07 GMT
 ARG VARNISH_MODULES_SHA512SUM=a442f58968b471d713c99a94e5b80302c07ea163d3d5022d768eb0b39ab081f18744fd529b04283b0c6ec942f362197935d8ef1aa04f26eff10a81425a63bd35
-# Tue, 15 Nov 2022 14:29:22 GMT
+# Tue, 06 Dec 2022 08:24:08 GMT
 ARG VMOD_DYNAMIC_VERSION=2.6.0
-# Tue, 15 Nov 2022 14:29:22 GMT
+# Tue, 06 Dec 2022 08:24:08 GMT
 ARG VMOD_DYNAMIC_COMMIT=9666973952f62110c872d720af3dae0b85b4b597
-# Tue, 15 Nov 2022 14:29:22 GMT
+# Tue, 06 Dec 2022 08:24:08 GMT
 ARG VMOD_DYNAMIC_SHA512SUM=e62f1ee801ab2c9e22f5554bbe40c239257e2c46ea3d2ae19b465b1c82edad6f675417be8f7351d4f9eddafc9ad6c0149f88edc44dd0b922ad82e5d75b6b15a5
-# Tue, 15 Nov 2022 14:29:22 GMT
+# Tue, 06 Dec 2022 08:24:08 GMT
 ARG TOOLBOX_COMMIT=96bab07cf58b6e04824ffec608199f1780ff0d04
-# Tue, 15 Nov 2022 14:29:22 GMT
+# Tue, 06 Dec 2022 08:24:08 GMT
 ENV VMOD_DEPS=automake curl libtool make pkg-config python3-sphinx
-# Tue, 15 Nov 2022 14:29:23 GMT
+# Tue, 06 Dec 2022 08:24:08 GMT
 ENV VARNISH_SIZE=100M
-# Tue, 15 Nov 2022 14:33:17 GMT
+# Tue, 06 Dec 2022 08:27:28 GMT
 # ARGS: DIST_SHA512=7b9b837a8bafdf5798e81bc38163457b3bca16d933a9492800cdd2cde35c9b524a10b7e5ec931217e11d72f32feb05157a7eecfd9cf2c5856e717b634e51d089 PKG_COMMIT=ffc59a345217b599fd49f7f0442b5f653fbe6fc2 TOOLBOX_COMMIT=96bab07cf58b6e04824ffec608199f1780ff0d04 VARNISH_MODULES_SHA512SUM=a442f58968b471d713c99a94e5b80302c07ea163d3d5022d768eb0b39ab081f18744fd529b04283b0c6ec942f362197935d8ef1aa04f26eff10a81425a63bd35 VARNISH_MODULES_VERSION=0.21.0 VARNISH_VERSION=7.2.1 VMOD_DYNAMIC_COMMIT=9666973952f62110c872d720af3dae0b85b4b597 VMOD_DYNAMIC_SHA512SUM=e62f1ee801ab2c9e22f5554bbe40c239257e2c46ea3d2ae19b465b1c82edad6f675417be8f7351d4f9eddafc9ad6c0149f88edc44dd0b922ad82e5d75b6b15a5 VMOD_DYNAMIC_VERSION=2.6.0
 RUN set -e;     BASE_PKGS="curl dpkg-dev debhelper devscripts equivs git pkg-config apt-utils fakeroot libgetdns-dev";     export DEBIAN_FRONTEND=noninteractive;     export DEBCONF_NONINTERACTIVE_SEEN=true;     mkdir -p /work/varnish /pkgs;     apt-get update;     apt-get install -y $BASE_PKGS libgetdns10;     cd /work/varnish;     git clone https://github.com/varnishcache/pkg-varnish-cache.git;     cd pkg-varnish-cache;     git checkout ffc59a345217b599fd49f7f0442b5f653fbe6fc2;     rm -rf .git;     curl -f https://varnish-cache.org/downloads/varnish-7.2.1.tgz -o $tmpdir/orig.tgz;     echo "7b9b837a8bafdf5798e81bc38163457b3bca16d933a9492800cdd2cde35c9b524a10b7e5ec931217e11d72f32feb05157a7eecfd9cf2c5856e717b634e51d089  $tmpdir/orig.tgz" | sha512sum -c -;     tar xavf $tmpdir/orig.tgz --strip 1;     sed -i -e "s|@VERSION@|$VARNISH_VERSION|"  "debian/changelog";     mk-build-deps --install --tool="apt-get -o Debug::pkgProblemResolver=yes --yes" debian/control;     sed -i '' debian/varnish*;     dpkg-buildpackage -us -uc -j"$(nproc)";     apt-get -y install ../*.deb;     mv ../*dev*.deb /pkgs;         git clone https://github.com/varnish/toolbox.git;     cd toolbox;     git checkout $TOOLBOX_COMMIT;     cp install-vmod/install-vmod /usr/local/bin/;         install-vmod https://github.com/varnish/varnish-modules/releases/download/$VARNISH_MODULES_VERSION/varnish-modules-$VARNISH_MODULES_VERSION.tar.gz $VARNISH_MODULES_SHA512SUM;         install-vmod https://github.com/nigoroll/libvmod-dynamic/archive/$VMOD_DYNAMIC_COMMIT.tar.gz $VMOD_DYNAMIC_SHA512SUM;         apt-get -y purge --auto-remove varnish-build-deps $BASE_PKGS;     rm -rf /var/lib/apt/lists/* /work/ /usr/lib/varnish/vmods/libvmod_*.la;     chown varnish /var/lib/varnish;
-# Tue, 15 Nov 2022 14:33:17 GMT
+# Tue, 06 Dec 2022 08:27:29 GMT
 WORKDIR /etc/varnish
-# Tue, 15 Nov 2022 14:33:17 GMT
+# Tue, 06 Dec 2022 08:27:29 GMT
 COPY dir:6dcb75fa0bc26d4afaf5dc722b0827803ad6d52fba8af98ee9fcd0dd74a868f3 in /usr/local/bin/ 
-# Tue, 15 Nov 2022 14:33:18 GMT
+# Tue, 06 Dec 2022 08:27:29 GMT
 ENTRYPOINT ["/usr/local/bin/docker-varnish-entrypoint"]
-# Tue, 15 Nov 2022 14:33:18 GMT
+# Tue, 06 Dec 2022 08:27:29 GMT
 USER varnish
-# Tue, 15 Nov 2022 14:33:18 GMT
+# Tue, 06 Dec 2022 08:27:29 GMT
 EXPOSE 80 8443
-# Tue, 15 Nov 2022 14:33:18 GMT
+# Tue, 06 Dec 2022 08:27:30 GMT
 CMD []
 ```
 
 -	Layers:
-	-	`sha256:a603fa5e3b4127f210503aaa6189abf6286ee5a73deeaab460f8f33ebc6b64e2`  
-		Last Modified: Tue, 15 Nov 2022 04:08:47 GMT  
-		Size: 31.4 MB (31412630 bytes)  
+	-	`sha256:025c56f98b679f70b7a54241917e56da7b59ab9d2defecc6ebdb0bf2750484bb`  
+		Last Modified: Tue, 06 Dec 2022 01:25:12 GMT  
+		Size: 31.4 MB (31412852 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdc8857cdaad3e95e58f5ef355c86e593862bd22f3bb7fbe06b928d95382a4a1`  
-		Last Modified: Tue, 15 Nov 2022 14:39:39 GMT  
-		Size: 75.4 MB (75428574 bytes)  
+	-	`sha256:d51716e63caa196859d45a32b0b0bfabbde741ea3ed4781c14cea184047dd9dd`  
+		Last Modified: Tue, 06 Dec 2022 08:33:34 GMT  
+		Size: 75.4 MB (75428665 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:12a8ce9e46927fb0674f7f9e4506a89f6ef5d41f575204a7d9c79295a0544b3a`  
-		Last Modified: Tue, 15 Nov 2022 14:39:26 GMT  
-		Size: 491.0 B  
+	-	`sha256:8074a33de85c3a0c0f26127e5aa892946c048b33f157621243ded234cbc60d34`  
+		Last Modified: Tue, 06 Dec 2022 08:33:24 GMT  
+		Size: 492.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `varnish:7.2` - linux; arm variant v7
@@ -2885,7 +2885,7 @@ CMD []
 ## `varnish:7.2.1`
 
 ```console
-$ docker pull varnish@sha256:53f48d4663fe8910778760a018e2faadfb59e2f60fa7521ac866b94c62f75e99
+$ docker pull varnish@sha256:fa9657812ea2c9581c447e4433e950254f909f2c0623b034ac81042858f2c3b5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2897,73 +2897,73 @@ $ docker pull varnish@sha256:53f48d4663fe8910778760a018e2faadfb59e2f60fa7521ac86
 ### `varnish:7.2.1` - linux; amd64
 
 ```console
-$ docker pull varnish@sha256:0bfb5f63d842342fc42f19bf593526c207f4ff5e5313ae8a821d5b7a690d3e34
+$ docker pull varnish@sha256:0e0b5e77195b000295df3c14e7294136cd3deda184533872876ab693724af434
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **106.8 MB (106841695 bytes)**  
+-	Total Size: **106.8 MB (106842009 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1cfb60a5f6116e7e1b7f38755d1fab3a71afa2bffe3a796512b5489a31a2678c`
+-	Image ID: `sha256:99f668a86eddb1abc8fa0a8f068b11bc2d77a73b1fcd0509675a3400187e7abd`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-varnish-entrypoint"]`
 -	Default Command: `[]`
 
 ```dockerfile
-# Tue, 15 Nov 2022 04:04:54 GMT
-ADD file:d08e242792caa7f842fcf39a09ad59c97a856660e2013d5aed3e4a29197e9aaa in / 
-# Tue, 15 Nov 2022 04:04:54 GMT
+# Tue, 06 Dec 2022 01:20:54 GMT
+ADD file:1f1efd56601ebc26a041a7b994a380ef68112b91a078e225753bee7b3196d22c in / 
+# Tue, 06 Dec 2022 01:20:54 GMT
 CMD ["bash"]
-# Tue, 15 Nov 2022 14:29:22 GMT
+# Tue, 06 Dec 2022 08:24:07 GMT
 ARG PKG_COMMIT=ffc59a345217b599fd49f7f0442b5f653fbe6fc2
-# Tue, 15 Nov 2022 14:29:22 GMT
+# Tue, 06 Dec 2022 08:24:07 GMT
 ARG VARNISH_VERSION=7.2.1
-# Tue, 15 Nov 2022 14:29:22 GMT
+# Tue, 06 Dec 2022 08:24:07 GMT
 ARG DIST_SHA512=7b9b837a8bafdf5798e81bc38163457b3bca16d933a9492800cdd2cde35c9b524a10b7e5ec931217e11d72f32feb05157a7eecfd9cf2c5856e717b634e51d089
-# Tue, 15 Nov 2022 14:29:22 GMT
+# Tue, 06 Dec 2022 08:24:07 GMT
 ARG VARNISH_MODULES_VERSION=0.21.0
-# Tue, 15 Nov 2022 14:29:22 GMT
+# Tue, 06 Dec 2022 08:24:07 GMT
 ARG VARNISH_MODULES_SHA512SUM=a442f58968b471d713c99a94e5b80302c07ea163d3d5022d768eb0b39ab081f18744fd529b04283b0c6ec942f362197935d8ef1aa04f26eff10a81425a63bd35
-# Tue, 15 Nov 2022 14:29:22 GMT
+# Tue, 06 Dec 2022 08:24:08 GMT
 ARG VMOD_DYNAMIC_VERSION=2.6.0
-# Tue, 15 Nov 2022 14:29:22 GMT
+# Tue, 06 Dec 2022 08:24:08 GMT
 ARG VMOD_DYNAMIC_COMMIT=9666973952f62110c872d720af3dae0b85b4b597
-# Tue, 15 Nov 2022 14:29:22 GMT
+# Tue, 06 Dec 2022 08:24:08 GMT
 ARG VMOD_DYNAMIC_SHA512SUM=e62f1ee801ab2c9e22f5554bbe40c239257e2c46ea3d2ae19b465b1c82edad6f675417be8f7351d4f9eddafc9ad6c0149f88edc44dd0b922ad82e5d75b6b15a5
-# Tue, 15 Nov 2022 14:29:22 GMT
+# Tue, 06 Dec 2022 08:24:08 GMT
 ARG TOOLBOX_COMMIT=96bab07cf58b6e04824ffec608199f1780ff0d04
-# Tue, 15 Nov 2022 14:29:22 GMT
+# Tue, 06 Dec 2022 08:24:08 GMT
 ENV VMOD_DEPS=automake curl libtool make pkg-config python3-sphinx
-# Tue, 15 Nov 2022 14:29:23 GMT
+# Tue, 06 Dec 2022 08:24:08 GMT
 ENV VARNISH_SIZE=100M
-# Tue, 15 Nov 2022 14:33:17 GMT
+# Tue, 06 Dec 2022 08:27:28 GMT
 # ARGS: DIST_SHA512=7b9b837a8bafdf5798e81bc38163457b3bca16d933a9492800cdd2cde35c9b524a10b7e5ec931217e11d72f32feb05157a7eecfd9cf2c5856e717b634e51d089 PKG_COMMIT=ffc59a345217b599fd49f7f0442b5f653fbe6fc2 TOOLBOX_COMMIT=96bab07cf58b6e04824ffec608199f1780ff0d04 VARNISH_MODULES_SHA512SUM=a442f58968b471d713c99a94e5b80302c07ea163d3d5022d768eb0b39ab081f18744fd529b04283b0c6ec942f362197935d8ef1aa04f26eff10a81425a63bd35 VARNISH_MODULES_VERSION=0.21.0 VARNISH_VERSION=7.2.1 VMOD_DYNAMIC_COMMIT=9666973952f62110c872d720af3dae0b85b4b597 VMOD_DYNAMIC_SHA512SUM=e62f1ee801ab2c9e22f5554bbe40c239257e2c46ea3d2ae19b465b1c82edad6f675417be8f7351d4f9eddafc9ad6c0149f88edc44dd0b922ad82e5d75b6b15a5 VMOD_DYNAMIC_VERSION=2.6.0
 RUN set -e;     BASE_PKGS="curl dpkg-dev debhelper devscripts equivs git pkg-config apt-utils fakeroot libgetdns-dev";     export DEBIAN_FRONTEND=noninteractive;     export DEBCONF_NONINTERACTIVE_SEEN=true;     mkdir -p /work/varnish /pkgs;     apt-get update;     apt-get install -y $BASE_PKGS libgetdns10;     cd /work/varnish;     git clone https://github.com/varnishcache/pkg-varnish-cache.git;     cd pkg-varnish-cache;     git checkout ffc59a345217b599fd49f7f0442b5f653fbe6fc2;     rm -rf .git;     curl -f https://varnish-cache.org/downloads/varnish-7.2.1.tgz -o $tmpdir/orig.tgz;     echo "7b9b837a8bafdf5798e81bc38163457b3bca16d933a9492800cdd2cde35c9b524a10b7e5ec931217e11d72f32feb05157a7eecfd9cf2c5856e717b634e51d089  $tmpdir/orig.tgz" | sha512sum -c -;     tar xavf $tmpdir/orig.tgz --strip 1;     sed -i -e "s|@VERSION@|$VARNISH_VERSION|"  "debian/changelog";     mk-build-deps --install --tool="apt-get -o Debug::pkgProblemResolver=yes --yes" debian/control;     sed -i '' debian/varnish*;     dpkg-buildpackage -us -uc -j"$(nproc)";     apt-get -y install ../*.deb;     mv ../*dev*.deb /pkgs;         git clone https://github.com/varnish/toolbox.git;     cd toolbox;     git checkout $TOOLBOX_COMMIT;     cp install-vmod/install-vmod /usr/local/bin/;         install-vmod https://github.com/varnish/varnish-modules/releases/download/$VARNISH_MODULES_VERSION/varnish-modules-$VARNISH_MODULES_VERSION.tar.gz $VARNISH_MODULES_SHA512SUM;         install-vmod https://github.com/nigoroll/libvmod-dynamic/archive/$VMOD_DYNAMIC_COMMIT.tar.gz $VMOD_DYNAMIC_SHA512SUM;         apt-get -y purge --auto-remove varnish-build-deps $BASE_PKGS;     rm -rf /var/lib/apt/lists/* /work/ /usr/lib/varnish/vmods/libvmod_*.la;     chown varnish /var/lib/varnish;
-# Tue, 15 Nov 2022 14:33:17 GMT
+# Tue, 06 Dec 2022 08:27:29 GMT
 WORKDIR /etc/varnish
-# Tue, 15 Nov 2022 14:33:17 GMT
+# Tue, 06 Dec 2022 08:27:29 GMT
 COPY dir:6dcb75fa0bc26d4afaf5dc722b0827803ad6d52fba8af98ee9fcd0dd74a868f3 in /usr/local/bin/ 
-# Tue, 15 Nov 2022 14:33:18 GMT
+# Tue, 06 Dec 2022 08:27:29 GMT
 ENTRYPOINT ["/usr/local/bin/docker-varnish-entrypoint"]
-# Tue, 15 Nov 2022 14:33:18 GMT
+# Tue, 06 Dec 2022 08:27:29 GMT
 USER varnish
-# Tue, 15 Nov 2022 14:33:18 GMT
+# Tue, 06 Dec 2022 08:27:29 GMT
 EXPOSE 80 8443
-# Tue, 15 Nov 2022 14:33:18 GMT
+# Tue, 06 Dec 2022 08:27:30 GMT
 CMD []
 ```
 
 -	Layers:
-	-	`sha256:a603fa5e3b4127f210503aaa6189abf6286ee5a73deeaab460f8f33ebc6b64e2`  
-		Last Modified: Tue, 15 Nov 2022 04:08:47 GMT  
-		Size: 31.4 MB (31412630 bytes)  
+	-	`sha256:025c56f98b679f70b7a54241917e56da7b59ab9d2defecc6ebdb0bf2750484bb`  
+		Last Modified: Tue, 06 Dec 2022 01:25:12 GMT  
+		Size: 31.4 MB (31412852 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdc8857cdaad3e95e58f5ef355c86e593862bd22f3bb7fbe06b928d95382a4a1`  
-		Last Modified: Tue, 15 Nov 2022 14:39:39 GMT  
-		Size: 75.4 MB (75428574 bytes)  
+	-	`sha256:d51716e63caa196859d45a32b0b0bfabbde741ea3ed4781c14cea184047dd9dd`  
+		Last Modified: Tue, 06 Dec 2022 08:33:34 GMT  
+		Size: 75.4 MB (75428665 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:12a8ce9e46927fb0674f7f9e4506a89f6ef5d41f575204a7d9c79295a0544b3a`  
-		Last Modified: Tue, 15 Nov 2022 14:39:26 GMT  
-		Size: 491.0 B  
+	-	`sha256:8074a33de85c3a0c0f26127e5aa892946c048b33f157621243ded234cbc60d34`  
+		Last Modified: Tue, 06 Dec 2022 08:33:24 GMT  
+		Size: 492.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `varnish:7.2.1` - linux; arm variant v7
@@ -3788,7 +3788,7 @@ CMD []
 ## `varnish:fresh`
 
 ```console
-$ docker pull varnish@sha256:05a083f4713169344c5c5bda5440466992684fd4ee344e81f9a25cbb08bc1ba9
+$ docker pull varnish@sha256:b9f0e13e0f2384d7d866786bc54444f584820f259702f1a89b0b9763e42e6b80
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3803,73 +3803,73 @@ $ docker pull varnish@sha256:05a083f4713169344c5c5bda5440466992684fd4ee344e81f9a
 ### `varnish:fresh` - linux; amd64
 
 ```console
-$ docker pull varnish@sha256:0bfb5f63d842342fc42f19bf593526c207f4ff5e5313ae8a821d5b7a690d3e34
+$ docker pull varnish@sha256:0e0b5e77195b000295df3c14e7294136cd3deda184533872876ab693724af434
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **106.8 MB (106841695 bytes)**  
+-	Total Size: **106.8 MB (106842009 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1cfb60a5f6116e7e1b7f38755d1fab3a71afa2bffe3a796512b5489a31a2678c`
+-	Image ID: `sha256:99f668a86eddb1abc8fa0a8f068b11bc2d77a73b1fcd0509675a3400187e7abd`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-varnish-entrypoint"]`
 -	Default Command: `[]`
 
 ```dockerfile
-# Tue, 15 Nov 2022 04:04:54 GMT
-ADD file:d08e242792caa7f842fcf39a09ad59c97a856660e2013d5aed3e4a29197e9aaa in / 
-# Tue, 15 Nov 2022 04:04:54 GMT
+# Tue, 06 Dec 2022 01:20:54 GMT
+ADD file:1f1efd56601ebc26a041a7b994a380ef68112b91a078e225753bee7b3196d22c in / 
+# Tue, 06 Dec 2022 01:20:54 GMT
 CMD ["bash"]
-# Tue, 15 Nov 2022 14:29:22 GMT
+# Tue, 06 Dec 2022 08:24:07 GMT
 ARG PKG_COMMIT=ffc59a345217b599fd49f7f0442b5f653fbe6fc2
-# Tue, 15 Nov 2022 14:29:22 GMT
+# Tue, 06 Dec 2022 08:24:07 GMT
 ARG VARNISH_VERSION=7.2.1
-# Tue, 15 Nov 2022 14:29:22 GMT
+# Tue, 06 Dec 2022 08:24:07 GMT
 ARG DIST_SHA512=7b9b837a8bafdf5798e81bc38163457b3bca16d933a9492800cdd2cde35c9b524a10b7e5ec931217e11d72f32feb05157a7eecfd9cf2c5856e717b634e51d089
-# Tue, 15 Nov 2022 14:29:22 GMT
+# Tue, 06 Dec 2022 08:24:07 GMT
 ARG VARNISH_MODULES_VERSION=0.21.0
-# Tue, 15 Nov 2022 14:29:22 GMT
+# Tue, 06 Dec 2022 08:24:07 GMT
 ARG VARNISH_MODULES_SHA512SUM=a442f58968b471d713c99a94e5b80302c07ea163d3d5022d768eb0b39ab081f18744fd529b04283b0c6ec942f362197935d8ef1aa04f26eff10a81425a63bd35
-# Tue, 15 Nov 2022 14:29:22 GMT
+# Tue, 06 Dec 2022 08:24:08 GMT
 ARG VMOD_DYNAMIC_VERSION=2.6.0
-# Tue, 15 Nov 2022 14:29:22 GMT
+# Tue, 06 Dec 2022 08:24:08 GMT
 ARG VMOD_DYNAMIC_COMMIT=9666973952f62110c872d720af3dae0b85b4b597
-# Tue, 15 Nov 2022 14:29:22 GMT
+# Tue, 06 Dec 2022 08:24:08 GMT
 ARG VMOD_DYNAMIC_SHA512SUM=e62f1ee801ab2c9e22f5554bbe40c239257e2c46ea3d2ae19b465b1c82edad6f675417be8f7351d4f9eddafc9ad6c0149f88edc44dd0b922ad82e5d75b6b15a5
-# Tue, 15 Nov 2022 14:29:22 GMT
+# Tue, 06 Dec 2022 08:24:08 GMT
 ARG TOOLBOX_COMMIT=96bab07cf58b6e04824ffec608199f1780ff0d04
-# Tue, 15 Nov 2022 14:29:22 GMT
+# Tue, 06 Dec 2022 08:24:08 GMT
 ENV VMOD_DEPS=automake curl libtool make pkg-config python3-sphinx
-# Tue, 15 Nov 2022 14:29:23 GMT
+# Tue, 06 Dec 2022 08:24:08 GMT
 ENV VARNISH_SIZE=100M
-# Tue, 15 Nov 2022 14:33:17 GMT
+# Tue, 06 Dec 2022 08:27:28 GMT
 # ARGS: DIST_SHA512=7b9b837a8bafdf5798e81bc38163457b3bca16d933a9492800cdd2cde35c9b524a10b7e5ec931217e11d72f32feb05157a7eecfd9cf2c5856e717b634e51d089 PKG_COMMIT=ffc59a345217b599fd49f7f0442b5f653fbe6fc2 TOOLBOX_COMMIT=96bab07cf58b6e04824ffec608199f1780ff0d04 VARNISH_MODULES_SHA512SUM=a442f58968b471d713c99a94e5b80302c07ea163d3d5022d768eb0b39ab081f18744fd529b04283b0c6ec942f362197935d8ef1aa04f26eff10a81425a63bd35 VARNISH_MODULES_VERSION=0.21.0 VARNISH_VERSION=7.2.1 VMOD_DYNAMIC_COMMIT=9666973952f62110c872d720af3dae0b85b4b597 VMOD_DYNAMIC_SHA512SUM=e62f1ee801ab2c9e22f5554bbe40c239257e2c46ea3d2ae19b465b1c82edad6f675417be8f7351d4f9eddafc9ad6c0149f88edc44dd0b922ad82e5d75b6b15a5 VMOD_DYNAMIC_VERSION=2.6.0
 RUN set -e;     BASE_PKGS="curl dpkg-dev debhelper devscripts equivs git pkg-config apt-utils fakeroot libgetdns-dev";     export DEBIAN_FRONTEND=noninteractive;     export DEBCONF_NONINTERACTIVE_SEEN=true;     mkdir -p /work/varnish /pkgs;     apt-get update;     apt-get install -y $BASE_PKGS libgetdns10;     cd /work/varnish;     git clone https://github.com/varnishcache/pkg-varnish-cache.git;     cd pkg-varnish-cache;     git checkout ffc59a345217b599fd49f7f0442b5f653fbe6fc2;     rm -rf .git;     curl -f https://varnish-cache.org/downloads/varnish-7.2.1.tgz -o $tmpdir/orig.tgz;     echo "7b9b837a8bafdf5798e81bc38163457b3bca16d933a9492800cdd2cde35c9b524a10b7e5ec931217e11d72f32feb05157a7eecfd9cf2c5856e717b634e51d089  $tmpdir/orig.tgz" | sha512sum -c -;     tar xavf $tmpdir/orig.tgz --strip 1;     sed -i -e "s|@VERSION@|$VARNISH_VERSION|"  "debian/changelog";     mk-build-deps --install --tool="apt-get -o Debug::pkgProblemResolver=yes --yes" debian/control;     sed -i '' debian/varnish*;     dpkg-buildpackage -us -uc -j"$(nproc)";     apt-get -y install ../*.deb;     mv ../*dev*.deb /pkgs;         git clone https://github.com/varnish/toolbox.git;     cd toolbox;     git checkout $TOOLBOX_COMMIT;     cp install-vmod/install-vmod /usr/local/bin/;         install-vmod https://github.com/varnish/varnish-modules/releases/download/$VARNISH_MODULES_VERSION/varnish-modules-$VARNISH_MODULES_VERSION.tar.gz $VARNISH_MODULES_SHA512SUM;         install-vmod https://github.com/nigoroll/libvmod-dynamic/archive/$VMOD_DYNAMIC_COMMIT.tar.gz $VMOD_DYNAMIC_SHA512SUM;         apt-get -y purge --auto-remove varnish-build-deps $BASE_PKGS;     rm -rf /var/lib/apt/lists/* /work/ /usr/lib/varnish/vmods/libvmod_*.la;     chown varnish /var/lib/varnish;
-# Tue, 15 Nov 2022 14:33:17 GMT
+# Tue, 06 Dec 2022 08:27:29 GMT
 WORKDIR /etc/varnish
-# Tue, 15 Nov 2022 14:33:17 GMT
+# Tue, 06 Dec 2022 08:27:29 GMT
 COPY dir:6dcb75fa0bc26d4afaf5dc722b0827803ad6d52fba8af98ee9fcd0dd74a868f3 in /usr/local/bin/ 
-# Tue, 15 Nov 2022 14:33:18 GMT
+# Tue, 06 Dec 2022 08:27:29 GMT
 ENTRYPOINT ["/usr/local/bin/docker-varnish-entrypoint"]
-# Tue, 15 Nov 2022 14:33:18 GMT
+# Tue, 06 Dec 2022 08:27:29 GMT
 USER varnish
-# Tue, 15 Nov 2022 14:33:18 GMT
+# Tue, 06 Dec 2022 08:27:29 GMT
 EXPOSE 80 8443
-# Tue, 15 Nov 2022 14:33:18 GMT
+# Tue, 06 Dec 2022 08:27:30 GMT
 CMD []
 ```
 
 -	Layers:
-	-	`sha256:a603fa5e3b4127f210503aaa6189abf6286ee5a73deeaab460f8f33ebc6b64e2`  
-		Last Modified: Tue, 15 Nov 2022 04:08:47 GMT  
-		Size: 31.4 MB (31412630 bytes)  
+	-	`sha256:025c56f98b679f70b7a54241917e56da7b59ab9d2defecc6ebdb0bf2750484bb`  
+		Last Modified: Tue, 06 Dec 2022 01:25:12 GMT  
+		Size: 31.4 MB (31412852 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdc8857cdaad3e95e58f5ef355c86e593862bd22f3bb7fbe06b928d95382a4a1`  
-		Last Modified: Tue, 15 Nov 2022 14:39:39 GMT  
-		Size: 75.4 MB (75428574 bytes)  
+	-	`sha256:d51716e63caa196859d45a32b0b0bfabbde741ea3ed4781c14cea184047dd9dd`  
+		Last Modified: Tue, 06 Dec 2022 08:33:34 GMT  
+		Size: 75.4 MB (75428665 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:12a8ce9e46927fb0674f7f9e4506a89f6ef5d41f575204a7d9c79295a0544b3a`  
-		Last Modified: Tue, 15 Nov 2022 14:39:26 GMT  
-		Size: 491.0 B  
+	-	`sha256:8074a33de85c3a0c0f26127e5aa892946c048b33f157621243ded234cbc60d34`  
+		Last Modified: Tue, 06 Dec 2022 08:33:24 GMT  
+		Size: 492.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `varnish:fresh` - linux; arm variant v7
@@ -4682,7 +4682,7 @@ CMD []
 ## `varnish:latest`
 
 ```console
-$ docker pull varnish@sha256:05a083f4713169344c5c5bda5440466992684fd4ee344e81f9a25cbb08bc1ba9
+$ docker pull varnish@sha256:b9f0e13e0f2384d7d866786bc54444f584820f259702f1a89b0b9763e42e6b80
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4697,73 +4697,73 @@ $ docker pull varnish@sha256:05a083f4713169344c5c5bda5440466992684fd4ee344e81f9a
 ### `varnish:latest` - linux; amd64
 
 ```console
-$ docker pull varnish@sha256:0bfb5f63d842342fc42f19bf593526c207f4ff5e5313ae8a821d5b7a690d3e34
+$ docker pull varnish@sha256:0e0b5e77195b000295df3c14e7294136cd3deda184533872876ab693724af434
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **106.8 MB (106841695 bytes)**  
+-	Total Size: **106.8 MB (106842009 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1cfb60a5f6116e7e1b7f38755d1fab3a71afa2bffe3a796512b5489a31a2678c`
+-	Image ID: `sha256:99f668a86eddb1abc8fa0a8f068b11bc2d77a73b1fcd0509675a3400187e7abd`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-varnish-entrypoint"]`
 -	Default Command: `[]`
 
 ```dockerfile
-# Tue, 15 Nov 2022 04:04:54 GMT
-ADD file:d08e242792caa7f842fcf39a09ad59c97a856660e2013d5aed3e4a29197e9aaa in / 
-# Tue, 15 Nov 2022 04:04:54 GMT
+# Tue, 06 Dec 2022 01:20:54 GMT
+ADD file:1f1efd56601ebc26a041a7b994a380ef68112b91a078e225753bee7b3196d22c in / 
+# Tue, 06 Dec 2022 01:20:54 GMT
 CMD ["bash"]
-# Tue, 15 Nov 2022 14:29:22 GMT
+# Tue, 06 Dec 2022 08:24:07 GMT
 ARG PKG_COMMIT=ffc59a345217b599fd49f7f0442b5f653fbe6fc2
-# Tue, 15 Nov 2022 14:29:22 GMT
+# Tue, 06 Dec 2022 08:24:07 GMT
 ARG VARNISH_VERSION=7.2.1
-# Tue, 15 Nov 2022 14:29:22 GMT
+# Tue, 06 Dec 2022 08:24:07 GMT
 ARG DIST_SHA512=7b9b837a8bafdf5798e81bc38163457b3bca16d933a9492800cdd2cde35c9b524a10b7e5ec931217e11d72f32feb05157a7eecfd9cf2c5856e717b634e51d089
-# Tue, 15 Nov 2022 14:29:22 GMT
+# Tue, 06 Dec 2022 08:24:07 GMT
 ARG VARNISH_MODULES_VERSION=0.21.0
-# Tue, 15 Nov 2022 14:29:22 GMT
+# Tue, 06 Dec 2022 08:24:07 GMT
 ARG VARNISH_MODULES_SHA512SUM=a442f58968b471d713c99a94e5b80302c07ea163d3d5022d768eb0b39ab081f18744fd529b04283b0c6ec942f362197935d8ef1aa04f26eff10a81425a63bd35
-# Tue, 15 Nov 2022 14:29:22 GMT
+# Tue, 06 Dec 2022 08:24:08 GMT
 ARG VMOD_DYNAMIC_VERSION=2.6.0
-# Tue, 15 Nov 2022 14:29:22 GMT
+# Tue, 06 Dec 2022 08:24:08 GMT
 ARG VMOD_DYNAMIC_COMMIT=9666973952f62110c872d720af3dae0b85b4b597
-# Tue, 15 Nov 2022 14:29:22 GMT
+# Tue, 06 Dec 2022 08:24:08 GMT
 ARG VMOD_DYNAMIC_SHA512SUM=e62f1ee801ab2c9e22f5554bbe40c239257e2c46ea3d2ae19b465b1c82edad6f675417be8f7351d4f9eddafc9ad6c0149f88edc44dd0b922ad82e5d75b6b15a5
-# Tue, 15 Nov 2022 14:29:22 GMT
+# Tue, 06 Dec 2022 08:24:08 GMT
 ARG TOOLBOX_COMMIT=96bab07cf58b6e04824ffec608199f1780ff0d04
-# Tue, 15 Nov 2022 14:29:22 GMT
+# Tue, 06 Dec 2022 08:24:08 GMT
 ENV VMOD_DEPS=automake curl libtool make pkg-config python3-sphinx
-# Tue, 15 Nov 2022 14:29:23 GMT
+# Tue, 06 Dec 2022 08:24:08 GMT
 ENV VARNISH_SIZE=100M
-# Tue, 15 Nov 2022 14:33:17 GMT
+# Tue, 06 Dec 2022 08:27:28 GMT
 # ARGS: DIST_SHA512=7b9b837a8bafdf5798e81bc38163457b3bca16d933a9492800cdd2cde35c9b524a10b7e5ec931217e11d72f32feb05157a7eecfd9cf2c5856e717b634e51d089 PKG_COMMIT=ffc59a345217b599fd49f7f0442b5f653fbe6fc2 TOOLBOX_COMMIT=96bab07cf58b6e04824ffec608199f1780ff0d04 VARNISH_MODULES_SHA512SUM=a442f58968b471d713c99a94e5b80302c07ea163d3d5022d768eb0b39ab081f18744fd529b04283b0c6ec942f362197935d8ef1aa04f26eff10a81425a63bd35 VARNISH_MODULES_VERSION=0.21.0 VARNISH_VERSION=7.2.1 VMOD_DYNAMIC_COMMIT=9666973952f62110c872d720af3dae0b85b4b597 VMOD_DYNAMIC_SHA512SUM=e62f1ee801ab2c9e22f5554bbe40c239257e2c46ea3d2ae19b465b1c82edad6f675417be8f7351d4f9eddafc9ad6c0149f88edc44dd0b922ad82e5d75b6b15a5 VMOD_DYNAMIC_VERSION=2.6.0
 RUN set -e;     BASE_PKGS="curl dpkg-dev debhelper devscripts equivs git pkg-config apt-utils fakeroot libgetdns-dev";     export DEBIAN_FRONTEND=noninteractive;     export DEBCONF_NONINTERACTIVE_SEEN=true;     mkdir -p /work/varnish /pkgs;     apt-get update;     apt-get install -y $BASE_PKGS libgetdns10;     cd /work/varnish;     git clone https://github.com/varnishcache/pkg-varnish-cache.git;     cd pkg-varnish-cache;     git checkout ffc59a345217b599fd49f7f0442b5f653fbe6fc2;     rm -rf .git;     curl -f https://varnish-cache.org/downloads/varnish-7.2.1.tgz -o $tmpdir/orig.tgz;     echo "7b9b837a8bafdf5798e81bc38163457b3bca16d933a9492800cdd2cde35c9b524a10b7e5ec931217e11d72f32feb05157a7eecfd9cf2c5856e717b634e51d089  $tmpdir/orig.tgz" | sha512sum -c -;     tar xavf $tmpdir/orig.tgz --strip 1;     sed -i -e "s|@VERSION@|$VARNISH_VERSION|"  "debian/changelog";     mk-build-deps --install --tool="apt-get -o Debug::pkgProblemResolver=yes --yes" debian/control;     sed -i '' debian/varnish*;     dpkg-buildpackage -us -uc -j"$(nproc)";     apt-get -y install ../*.deb;     mv ../*dev*.deb /pkgs;         git clone https://github.com/varnish/toolbox.git;     cd toolbox;     git checkout $TOOLBOX_COMMIT;     cp install-vmod/install-vmod /usr/local/bin/;         install-vmod https://github.com/varnish/varnish-modules/releases/download/$VARNISH_MODULES_VERSION/varnish-modules-$VARNISH_MODULES_VERSION.tar.gz $VARNISH_MODULES_SHA512SUM;         install-vmod https://github.com/nigoroll/libvmod-dynamic/archive/$VMOD_DYNAMIC_COMMIT.tar.gz $VMOD_DYNAMIC_SHA512SUM;         apt-get -y purge --auto-remove varnish-build-deps $BASE_PKGS;     rm -rf /var/lib/apt/lists/* /work/ /usr/lib/varnish/vmods/libvmod_*.la;     chown varnish /var/lib/varnish;
-# Tue, 15 Nov 2022 14:33:17 GMT
+# Tue, 06 Dec 2022 08:27:29 GMT
 WORKDIR /etc/varnish
-# Tue, 15 Nov 2022 14:33:17 GMT
+# Tue, 06 Dec 2022 08:27:29 GMT
 COPY dir:6dcb75fa0bc26d4afaf5dc722b0827803ad6d52fba8af98ee9fcd0dd74a868f3 in /usr/local/bin/ 
-# Tue, 15 Nov 2022 14:33:18 GMT
+# Tue, 06 Dec 2022 08:27:29 GMT
 ENTRYPOINT ["/usr/local/bin/docker-varnish-entrypoint"]
-# Tue, 15 Nov 2022 14:33:18 GMT
+# Tue, 06 Dec 2022 08:27:29 GMT
 USER varnish
-# Tue, 15 Nov 2022 14:33:18 GMT
+# Tue, 06 Dec 2022 08:27:29 GMT
 EXPOSE 80 8443
-# Tue, 15 Nov 2022 14:33:18 GMT
+# Tue, 06 Dec 2022 08:27:30 GMT
 CMD []
 ```
 
 -	Layers:
-	-	`sha256:a603fa5e3b4127f210503aaa6189abf6286ee5a73deeaab460f8f33ebc6b64e2`  
-		Last Modified: Tue, 15 Nov 2022 04:08:47 GMT  
-		Size: 31.4 MB (31412630 bytes)  
+	-	`sha256:025c56f98b679f70b7a54241917e56da7b59ab9d2defecc6ebdb0bf2750484bb`  
+		Last Modified: Tue, 06 Dec 2022 01:25:12 GMT  
+		Size: 31.4 MB (31412852 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdc8857cdaad3e95e58f5ef355c86e593862bd22f3bb7fbe06b928d95382a4a1`  
-		Last Modified: Tue, 15 Nov 2022 14:39:39 GMT  
-		Size: 75.4 MB (75428574 bytes)  
+	-	`sha256:d51716e63caa196859d45a32b0b0bfabbde741ea3ed4781c14cea184047dd9dd`  
+		Last Modified: Tue, 06 Dec 2022 08:33:34 GMT  
+		Size: 75.4 MB (75428665 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:12a8ce9e46927fb0674f7f9e4506a89f6ef5d41f575204a7d9c79295a0544b3a`  
-		Last Modified: Tue, 15 Nov 2022 14:39:26 GMT  
-		Size: 491.0 B  
+	-	`sha256:8074a33de85c3a0c0f26127e5aa892946c048b33f157621243ded234cbc60d34`  
+		Last Modified: Tue, 06 Dec 2022 08:33:24 GMT  
+		Size: 492.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `varnish:latest` - linux; arm variant v7
@@ -5129,7 +5129,7 @@ CMD []
 ## `varnish:old`
 
 ```console
-$ docker pull varnish@sha256:ebd10fa21103eba0584c1dab7fde651ce83f3c23f65baab6045eb9af001522e2
+$ docker pull varnish@sha256:f7d2568be44220033e1f2b5419a0b44da070267d944624f2e5c8cda4acecc339
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5144,73 +5144,73 @@ $ docker pull varnish@sha256:ebd10fa21103eba0584c1dab7fde651ce83f3c23f65baab6045
 ### `varnish:old` - linux; amd64
 
 ```console
-$ docker pull varnish@sha256:b375b415d9a2e3e57e6921a2f47ece2ef9cf2c92f8c78cf1473973dbe14ee333
+$ docker pull varnish@sha256:83e2e9f3f661fb23423ebd72393662b32b42520363cc00a7a20d055b3ac00827
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **106.5 MB (106534972 bytes)**  
+-	Total Size: **106.5 MB (106535062 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:38f09b7e20e2789f2cf1ae6d5984581b1a14933e46e8e0d0dd43639250bc7192`
+-	Image ID: `sha256:42b5851a1b84dbb530e67126c4716743a48bee5862d472ed41badddae54b8063`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-varnish-entrypoint"]`
 -	Default Command: `[]`
 
 ```dockerfile
-# Tue, 15 Nov 2022 04:04:54 GMT
-ADD file:d08e242792caa7f842fcf39a09ad59c97a856660e2013d5aed3e4a29197e9aaa in / 
-# Tue, 15 Nov 2022 04:04:54 GMT
+# Tue, 06 Dec 2022 01:20:54 GMT
+ADD file:1f1efd56601ebc26a041a7b994a380ef68112b91a078e225753bee7b3196d22c in / 
+# Tue, 06 Dec 2022 01:20:54 GMT
 CMD ["bash"]
-# Tue, 15 Nov 2022 14:33:32 GMT
+# Tue, 06 Dec 2022 08:27:47 GMT
 ARG PKG_COMMIT=3ba24a8eee8cc5c082714034145b907402bbdb83
-# Tue, 15 Nov 2022 14:33:32 GMT
+# Tue, 06 Dec 2022 08:27:47 GMT
 ARG VARNISH_VERSION=7.1.2
-# Tue, 15 Nov 2022 14:33:32 GMT
+# Tue, 06 Dec 2022 08:27:48 GMT
 ARG DIST_SHA512=e16a4b75ede25f3812dfc4e95545e39a80022835b9155a4e42118f911e41b691cbedd296db48d307ba4a4d0d01df1149306d752de07cabe459ccbf5bcdd49238
-# Tue, 15 Nov 2022 14:33:32 GMT
+# Tue, 06 Dec 2022 08:27:48 GMT
 ARG VARNISH_MODULES_VERSION=0.20.0
-# Tue, 15 Nov 2022 14:33:32 GMT
+# Tue, 06 Dec 2022 08:27:48 GMT
 ARG VARNISH_MODULES_SHA512SUM=e63d6da8f63a5ce56bc7a5a1dd1a908e4ab0f6a36b5bdc5709dca2aa9c0b474bd8a06491ed3dee23636d335241ced4c7ef017b57413b05792ad382f6306a0b36
-# Tue, 15 Nov 2022 14:33:32 GMT
+# Tue, 06 Dec 2022 08:27:48 GMT
 ARG VMOD_DYNAMIC_VERSION=2.6.0
-# Tue, 15 Nov 2022 14:33:33 GMT
+# Tue, 06 Dec 2022 08:27:48 GMT
 ARG VMOD_DYNAMIC_COMMIT=025e9918f6cba33135e16e0fb0d86b4c34b6dd5a
-# Tue, 15 Nov 2022 14:33:33 GMT
+# Tue, 06 Dec 2022 08:27:48 GMT
 ARG VMOD_DYNAMIC_SHA512SUM=89b7251529c4c63c408b83c59e32b54b94b0f31f83614a34b3ffc4fb96ebdac5b6f8b5fe5b95056d5952a3c0a0217c935c5073c38415f7680af748e58c041816
-# Tue, 15 Nov 2022 14:33:33 GMT
+# Tue, 06 Dec 2022 08:27:48 GMT
 ARG TOOLBOX_COMMIT=96bab07cf58b6e04824ffec608199f1780ff0d04
-# Tue, 15 Nov 2022 14:33:33 GMT
+# Tue, 06 Dec 2022 08:27:48 GMT
 ENV VMOD_DEPS=automake curl libtool make pkg-config python3-sphinx
-# Tue, 15 Nov 2022 14:33:33 GMT
+# Tue, 06 Dec 2022 08:27:48 GMT
 ENV VARNISH_SIZE=100M
-# Tue, 15 Nov 2022 14:36:23 GMT
+# Tue, 06 Dec 2022 08:30:37 GMT
 # ARGS: DIST_SHA512=e16a4b75ede25f3812dfc4e95545e39a80022835b9155a4e42118f911e41b691cbedd296db48d307ba4a4d0d01df1149306d752de07cabe459ccbf5bcdd49238 PKG_COMMIT=3ba24a8eee8cc5c082714034145b907402bbdb83 TOOLBOX_COMMIT=96bab07cf58b6e04824ffec608199f1780ff0d04 VARNISH_MODULES_SHA512SUM=e63d6da8f63a5ce56bc7a5a1dd1a908e4ab0f6a36b5bdc5709dca2aa9c0b474bd8a06491ed3dee23636d335241ced4c7ef017b57413b05792ad382f6306a0b36 VARNISH_MODULES_VERSION=0.20.0 VARNISH_VERSION=7.1.2 VMOD_DYNAMIC_COMMIT=025e9918f6cba33135e16e0fb0d86b4c34b6dd5a VMOD_DYNAMIC_SHA512SUM=89b7251529c4c63c408b83c59e32b54b94b0f31f83614a34b3ffc4fb96ebdac5b6f8b5fe5b95056d5952a3c0a0217c935c5073c38415f7680af748e58c041816 VMOD_DYNAMIC_VERSION=2.6.0
 RUN set -e;     BASE_PKGS="curl dpkg-dev debhelper devscripts equivs git pkg-config apt-utils fakeroot libgetdns-dev";     export DEBIAN_FRONTEND=noninteractive;     export DEBCONF_NONINTERACTIVE_SEEN=true;     mkdir -p /work/varnish /pkgs;     apt-get update;     apt-get install -y $BASE_PKGS libgetdns10;     cd /work/varnish;     git clone https://github.com/varnishcache/pkg-varnish-cache.git;     cd pkg-varnish-cache;     git checkout 3ba24a8eee8cc5c082714034145b907402bbdb83;     rm -rf .git;     curl -f https://varnish-cache.org/downloads/varnish-7.1.2.tgz -o $tmpdir/orig.tgz;     echo "e16a4b75ede25f3812dfc4e95545e39a80022835b9155a4e42118f911e41b691cbedd296db48d307ba4a4d0d01df1149306d752de07cabe459ccbf5bcdd49238  $tmpdir/orig.tgz" | sha512sum -c -;     tar xavf $tmpdir/orig.tgz --strip 1;     sed -i -e "s|@VERSION@|$VARNISH_VERSION|"  "debian/changelog";     mk-build-deps --install --tool="apt-get -o Debug::pkgProblemResolver=yes --yes" debian/control;     sed -i '' debian/varnish*;     dpkg-buildpackage -us -uc -j"$(nproc)";     apt-get -y install ../*.deb;     mv ../*dev*.deb /pkgs;         git clone https://github.com/varnish/toolbox.git;     cd toolbox;     git checkout $TOOLBOX_COMMIT;     cp install-vmod/install-vmod /usr/local/bin/;         install-vmod https://github.com/varnish/varnish-modules/releases/download/$VARNISH_MODULES_VERSION/varnish-modules-$VARNISH_MODULES_VERSION.tar.gz $VARNISH_MODULES_SHA512SUM;         install-vmod https://github.com/nigoroll/libvmod-dynamic/archive/$VMOD_DYNAMIC_COMMIT.tar.gz $VMOD_DYNAMIC_SHA512SUM;         apt-get -y purge --auto-remove varnish-build-deps $BASE_PKGS;     rm -rf /var/lib/apt/lists/* /work/ /usr/lib/varnish/vmods/libvmod_*.la;     chown varnish /var/lib/varnish;
-# Tue, 15 Nov 2022 14:36:24 GMT
+# Tue, 06 Dec 2022 08:30:37 GMT
 WORKDIR /etc/varnish
-# Tue, 15 Nov 2022 14:36:24 GMT
+# Tue, 06 Dec 2022 08:30:37 GMT
 COPY dir:6dcb75fa0bc26d4afaf5dc722b0827803ad6d52fba8af98ee9fcd0dd74a868f3 in /usr/local/bin/ 
-# Tue, 15 Nov 2022 14:36:24 GMT
+# Tue, 06 Dec 2022 08:30:37 GMT
 ENTRYPOINT ["/usr/local/bin/docker-varnish-entrypoint"]
-# Tue, 15 Nov 2022 14:36:24 GMT
+# Tue, 06 Dec 2022 08:30:37 GMT
 USER varnish
-# Tue, 15 Nov 2022 14:36:24 GMT
+# Tue, 06 Dec 2022 08:30:37 GMT
 EXPOSE 80 8443
-# Tue, 15 Nov 2022 14:36:24 GMT
+# Tue, 06 Dec 2022 08:30:38 GMT
 CMD []
 ```
 
 -	Layers:
-	-	`sha256:a603fa5e3b4127f210503aaa6189abf6286ee5a73deeaab460f8f33ebc6b64e2`  
-		Last Modified: Tue, 15 Nov 2022 04:08:47 GMT  
-		Size: 31.4 MB (31412630 bytes)  
+	-	`sha256:025c56f98b679f70b7a54241917e56da7b59ab9d2defecc6ebdb0bf2750484bb`  
+		Last Modified: Tue, 06 Dec 2022 01:25:12 GMT  
+		Size: 31.4 MB (31412852 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bfba13295cbf511fdfc326769cdaf1da721fb3375fed512b1341637f675d25b6`  
-		Last Modified: Tue, 15 Nov 2022 14:40:02 GMT  
-		Size: 75.1 MB (75121851 bytes)  
+	-	`sha256:0e8199a7f921128089306a5ac5c047d4485f39df65fe273f3edda0dbf33b1457`  
+		Last Modified: Tue, 06 Dec 2022 08:33:58 GMT  
+		Size: 75.1 MB (75121717 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c646155e919faa9d98d62f7d9d110544e3e3820c501d0b1efd7304256e37952b`  
-		Last Modified: Tue, 15 Nov 2022 14:39:52 GMT  
-		Size: 491.0 B  
+	-	`sha256:f4eedd96e7604194d06df174e2f6ee3ddc2d6f131aae9d8a85c7293a41fb8519`  
+		Last Modified: Tue, 06 Dec 2022 08:33:47 GMT  
+		Size: 493.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `varnish:old` - linux; arm variant v7
@@ -5432,73 +5432,73 @@ CMD []
 ### `varnish:old` - linux; ppc64le
 
 ```console
-$ docker pull varnish@sha256:ad92040a282de8ba23b9e7cc3ddb39248bd504942796105a916161119f6a46b5
+$ docker pull varnish@sha256:2aa3d14792491b0050ef574838cb5090f28080426052f38cc78b8b0123048473
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **105.8 MB (105814757 bytes)**  
+-	Total Size: **105.8 MB (105814861 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4631e1c3f5b2c976110c38779953050bc88b74659f9130fdda2e182cb9a51ba6`
+-	Image ID: `sha256:cb8d86848f03c52fd3462c35c76e78c2a9bb3de00e1ef78e72979e8543d9388b`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-varnish-entrypoint"]`
 -	Default Command: `[]`
 
 ```dockerfile
-# Tue, 15 Nov 2022 05:18:45 GMT
-ADD file:520926164fdc762143905745329e568c67289232bec450e48645d82a4613dccf in / 
-# Tue, 15 Nov 2022 05:18:47 GMT
+# Tue, 06 Dec 2022 01:18:04 GMT
+ADD file:2231a44ea52d93df58e23883ba6b6911d4c554f4c1d172d80fb21c751ddcbbfc in / 
+# Tue, 06 Dec 2022 01:18:06 GMT
 CMD ["bash"]
-# Tue, 15 Nov 2022 18:51:42 GMT
+# Tue, 06 Dec 2022 09:08:01 GMT
 ARG PKG_COMMIT=3ba24a8eee8cc5c082714034145b907402bbdb83
-# Tue, 15 Nov 2022 18:51:43 GMT
+# Tue, 06 Dec 2022 09:08:01 GMT
 ARG VARNISH_VERSION=7.1.2
-# Tue, 15 Nov 2022 18:51:43 GMT
+# Tue, 06 Dec 2022 09:08:02 GMT
 ARG DIST_SHA512=e16a4b75ede25f3812dfc4e95545e39a80022835b9155a4e42118f911e41b691cbedd296db48d307ba4a4d0d01df1149306d752de07cabe459ccbf5bcdd49238
-# Tue, 15 Nov 2022 18:51:43 GMT
+# Tue, 06 Dec 2022 09:08:02 GMT
 ARG VARNISH_MODULES_VERSION=0.20.0
-# Tue, 15 Nov 2022 18:51:44 GMT
+# Tue, 06 Dec 2022 09:08:02 GMT
 ARG VARNISH_MODULES_SHA512SUM=e63d6da8f63a5ce56bc7a5a1dd1a908e4ab0f6a36b5bdc5709dca2aa9c0b474bd8a06491ed3dee23636d335241ced4c7ef017b57413b05792ad382f6306a0b36
-# Tue, 15 Nov 2022 18:51:44 GMT
+# Tue, 06 Dec 2022 09:08:03 GMT
 ARG VMOD_DYNAMIC_VERSION=2.6.0
-# Tue, 15 Nov 2022 18:51:44 GMT
+# Tue, 06 Dec 2022 09:08:03 GMT
 ARG VMOD_DYNAMIC_COMMIT=025e9918f6cba33135e16e0fb0d86b4c34b6dd5a
-# Tue, 15 Nov 2022 18:51:45 GMT
+# Tue, 06 Dec 2022 09:08:04 GMT
 ARG VMOD_DYNAMIC_SHA512SUM=89b7251529c4c63c408b83c59e32b54b94b0f31f83614a34b3ffc4fb96ebdac5b6f8b5fe5b95056d5952a3c0a0217c935c5073c38415f7680af748e58c041816
-# Tue, 15 Nov 2022 18:51:45 GMT
+# Tue, 06 Dec 2022 09:08:04 GMT
 ARG TOOLBOX_COMMIT=96bab07cf58b6e04824ffec608199f1780ff0d04
-# Tue, 15 Nov 2022 18:51:45 GMT
+# Tue, 06 Dec 2022 09:08:05 GMT
 ENV VMOD_DEPS=automake curl libtool make pkg-config python3-sphinx
-# Tue, 15 Nov 2022 18:51:45 GMT
+# Tue, 06 Dec 2022 09:08:05 GMT
 ENV VARNISH_SIZE=100M
-# Tue, 15 Nov 2022 18:57:16 GMT
+# Tue, 06 Dec 2022 09:13:46 GMT
 # ARGS: DIST_SHA512=e16a4b75ede25f3812dfc4e95545e39a80022835b9155a4e42118f911e41b691cbedd296db48d307ba4a4d0d01df1149306d752de07cabe459ccbf5bcdd49238 PKG_COMMIT=3ba24a8eee8cc5c082714034145b907402bbdb83 TOOLBOX_COMMIT=96bab07cf58b6e04824ffec608199f1780ff0d04 VARNISH_MODULES_SHA512SUM=e63d6da8f63a5ce56bc7a5a1dd1a908e4ab0f6a36b5bdc5709dca2aa9c0b474bd8a06491ed3dee23636d335241ced4c7ef017b57413b05792ad382f6306a0b36 VARNISH_MODULES_VERSION=0.20.0 VARNISH_VERSION=7.1.2 VMOD_DYNAMIC_COMMIT=025e9918f6cba33135e16e0fb0d86b4c34b6dd5a VMOD_DYNAMIC_SHA512SUM=89b7251529c4c63c408b83c59e32b54b94b0f31f83614a34b3ffc4fb96ebdac5b6f8b5fe5b95056d5952a3c0a0217c935c5073c38415f7680af748e58c041816 VMOD_DYNAMIC_VERSION=2.6.0
 RUN set -e;     BASE_PKGS="curl dpkg-dev debhelper devscripts equivs git pkg-config apt-utils fakeroot libgetdns-dev";     export DEBIAN_FRONTEND=noninteractive;     export DEBCONF_NONINTERACTIVE_SEEN=true;     mkdir -p /work/varnish /pkgs;     apt-get update;     apt-get install -y $BASE_PKGS libgetdns10;     cd /work/varnish;     git clone https://github.com/varnishcache/pkg-varnish-cache.git;     cd pkg-varnish-cache;     git checkout 3ba24a8eee8cc5c082714034145b907402bbdb83;     rm -rf .git;     curl -f https://varnish-cache.org/downloads/varnish-7.1.2.tgz -o $tmpdir/orig.tgz;     echo "e16a4b75ede25f3812dfc4e95545e39a80022835b9155a4e42118f911e41b691cbedd296db48d307ba4a4d0d01df1149306d752de07cabe459ccbf5bcdd49238  $tmpdir/orig.tgz" | sha512sum -c -;     tar xavf $tmpdir/orig.tgz --strip 1;     sed -i -e "s|@VERSION@|$VARNISH_VERSION|"  "debian/changelog";     mk-build-deps --install --tool="apt-get -o Debug::pkgProblemResolver=yes --yes" debian/control;     sed -i '' debian/varnish*;     dpkg-buildpackage -us -uc -j"$(nproc)";     apt-get -y install ../*.deb;     mv ../*dev*.deb /pkgs;         git clone https://github.com/varnish/toolbox.git;     cd toolbox;     git checkout $TOOLBOX_COMMIT;     cp install-vmod/install-vmod /usr/local/bin/;         install-vmod https://github.com/varnish/varnish-modules/releases/download/$VARNISH_MODULES_VERSION/varnish-modules-$VARNISH_MODULES_VERSION.tar.gz $VARNISH_MODULES_SHA512SUM;         install-vmod https://github.com/nigoroll/libvmod-dynamic/archive/$VMOD_DYNAMIC_COMMIT.tar.gz $VMOD_DYNAMIC_SHA512SUM;         apt-get -y purge --auto-remove varnish-build-deps $BASE_PKGS;     rm -rf /var/lib/apt/lists/* /work/ /usr/lib/varnish/vmods/libvmod_*.la;     chown varnish /var/lib/varnish;
-# Tue, 15 Nov 2022 18:57:19 GMT
+# Tue, 06 Dec 2022 09:13:49 GMT
 WORKDIR /etc/varnish
-# Tue, 15 Nov 2022 18:57:19 GMT
+# Tue, 06 Dec 2022 09:13:49 GMT
 COPY dir:6dcb75fa0bc26d4afaf5dc722b0827803ad6d52fba8af98ee9fcd0dd74a868f3 in /usr/local/bin/ 
-# Tue, 15 Nov 2022 18:57:19 GMT
+# Tue, 06 Dec 2022 09:13:49 GMT
 ENTRYPOINT ["/usr/local/bin/docker-varnish-entrypoint"]
-# Tue, 15 Nov 2022 18:57:20 GMT
+# Tue, 06 Dec 2022 09:13:50 GMT
 USER varnish
-# Tue, 15 Nov 2022 18:57:20 GMT
+# Tue, 06 Dec 2022 09:13:50 GMT
 EXPOSE 80 8443
-# Tue, 15 Nov 2022 18:57:20 GMT
+# Tue, 06 Dec 2022 09:13:51 GMT
 CMD []
 ```
 
 -	Layers:
-	-	`sha256:c57913b7d0318ef1a47f0348ce54d9865316776aa1ffb2c7871b1473b3d29407`  
-		Last Modified: Tue, 15 Nov 2022 05:24:22 GMT  
-		Size: 35.3 MB (35285140 bytes)  
+	-	`sha256:1f72e1168976861c676bf86a6c149129baba7e13200e8b70e6f24dc2ac2797df`  
+		Last Modified: Tue, 06 Dec 2022 01:24:18 GMT  
+		Size: 35.3 MB (35285293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08193cfb52626e9eab2412dd9391933e147afe4ca8b0a66e5fa4704ddab785f1`  
-		Last Modified: Thu, 17 Nov 2022 00:00:49 GMT  
-		Size: 70.5 MB (70529126 bytes)  
+	-	`sha256:4364415eb140c2c5d5856c787dce2703751c5ea560725dbf9f1986d2f5c3738a`  
+		Last Modified: Tue, 06 Dec 2022 09:19:36 GMT  
+		Size: 70.5 MB (70529080 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a684770525b010f91af346a5c02f02ead5b65c959096dfc7d6588b71d4094aa1`  
-		Last Modified: Thu, 17 Nov 2022 00:00:30 GMT  
-		Size: 491.0 B  
+	-	`sha256:c5da49c97e52919e48dbdbef6f998956958f4f94e3aeddf0ff187d9e7566098c`  
+		Last Modified: Tue, 06 Dec 2022 09:19:19 GMT  
+		Size: 488.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `varnish:old` - linux; s390x
@@ -6023,7 +6023,7 @@ CMD []
 ## `varnish:stable`
 
 ```console
-$ docker pull varnish@sha256:2db820562fdd6f05cb4fd9fae36ee6cea782687983cb05dee5ee4d498e6fb851
+$ docker pull varnish@sha256:f6bd602524d3277d861c5fcc04fc78577abb6c7d9557cf014aa763795f113ba2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6038,50 +6038,50 @@ $ docker pull varnish@sha256:2db820562fdd6f05cb4fd9fae36ee6cea782687983cb05dee5e
 ### `varnish:stable` - linux; amd64
 
 ```console
-$ docker pull varnish@sha256:0a7117a6c267c88300763851cdc4a7c1ee93e8d16eab317fe0370075a18e3319
+$ docker pull varnish@sha256:254b26bac7d0418b45b7ac9901cbed6c98b462e42f786b6765f02c36fc897428
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **100.7 MB (100656470 bytes)**  
+-	Total Size: **100.7 MB (100656506 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:17d9552661716474b203f578be5706b17466120d45bfe77619c508c179329283`
+-	Image ID: `sha256:1ae4640eb2d5ca206dc7b68fec63597c903fea56c78e359760c5d4a05ebabb9a`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-varnish-entrypoint"]`
 -	Default Command: `[]`
 
 ```dockerfile
-# Tue, 15 Nov 2022 04:04:54 GMT
-ADD file:d08e242792caa7f842fcf39a09ad59c97a856660e2013d5aed3e4a29197e9aaa in / 
-# Tue, 15 Nov 2022 04:04:54 GMT
+# Tue, 06 Dec 2022 01:20:54 GMT
+ADD file:1f1efd56601ebc26a041a7b994a380ef68112b91a078e225753bee7b3196d22c in / 
+# Tue, 06 Dec 2022 01:20:54 GMT
 CMD ["bash"]
-# Tue, 15 Nov 2022 14:36:45 GMT
+# Tue, 06 Dec 2022 08:30:43 GMT
 ENV VARNISH_SIZE=100M
-# Tue, 15 Nov 2022 14:38:56 GMT
+# Tue, 06 Dec 2022 08:32:54 GMT
 RUN set -e;     BASE_PKGS="curl dpkg-dev debhelper devscripts equivs git pkg-config apt-utils fakeroot";     export DEBIAN_FRONTEND=noninteractive;     export DEBCONF_NONINTERACTIVE_SEEN=true;     tmpdir="$(mktemp -d)";     cd "$tmpdir";     apt-get update;     apt-get install -y $BASE_PKGS;     git clone https://github.com/varnishcache/pkg-varnish-cache.git;     cd pkg-varnish-cache;     git checkout 10da6a585eb7d8defe9d273a51df5b133500eb6b;     rm -rf .git;     curl -f https://varnish-cache.org/downloads/varnish-6.0.11.tgz -o $tmpdir/orig.tgz;     echo "02f56f360c6bbed663e712edef961384e6003cfe73307c7ea50f805ac4b4df0d26958179170401a2254a69ab623acc172da42926d82189bfa724a4e8a78597ea  $tmpdir/orig.tgz" | sha512sum -c -;     tar xavf $tmpdir/orig.tgz --strip 1;     sed -i -e "s|@VERSION@|6.0.11|"  "debian/changelog";     mk-build-deps --install --tool="apt-get -o Debug::pkgProblemResolver=yes --yes" debian/control;     sed -i '' debian/varnish*;     dpkg-buildpackage -us -uc -j"$(nproc)";     apt-get -y install ../*.deb;     apt-get -y purge --auto-remove varnish-build-deps $BASE_PKGS;     mkdir /pkgs;     mv ../*dev*.deb /pkgs;     rm -rf /var/lib/apt/lists/* "$tmpdir";
-# Tue, 15 Nov 2022 14:38:56 GMT
+# Tue, 06 Dec 2022 08:32:54 GMT
 WORKDIR /etc/varnish
-# Tue, 15 Nov 2022 14:38:57 GMT
+# Tue, 06 Dec 2022 08:32:54 GMT
 COPY dir:81cfdf3570a33a2213eb3396395161c2375769c233d0e51a4b70c65b389fabfa in /usr/local/bin/ 
-# Tue, 15 Nov 2022 14:38:57 GMT
+# Tue, 06 Dec 2022 08:32:54 GMT
 ENTRYPOINT ["/usr/local/bin/docker-varnish-entrypoint"]
-# Tue, 15 Nov 2022 14:38:57 GMT
+# Tue, 06 Dec 2022 08:32:54 GMT
 EXPOSE 80 8443
-# Tue, 15 Nov 2022 14:38:57 GMT
+# Tue, 06 Dec 2022 08:32:55 GMT
 CMD []
 ```
 
 -	Layers:
-	-	`sha256:a603fa5e3b4127f210503aaa6189abf6286ee5a73deeaab460f8f33ebc6b64e2`  
-		Last Modified: Tue, 15 Nov 2022 04:08:47 GMT  
-		Size: 31.4 MB (31412630 bytes)  
+	-	`sha256:025c56f98b679f70b7a54241917e56da7b59ab9d2defecc6ebdb0bf2750484bb`  
+		Last Modified: Tue, 06 Dec 2022 01:25:12 GMT  
+		Size: 31.4 MB (31412852 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc500d1322d810ff7d6279d7c555ae615aaf02ceef2d3678b129dd2a803f278a`  
-		Last Modified: Tue, 15 Nov 2022 14:40:23 GMT  
-		Size: 69.2 MB (69243139 bytes)  
+	-	`sha256:687427cdb9c9008e26d5eeb25b0430a0b1b39ffef4dd46c96736d7b88e5a1b61`  
+		Last Modified: Tue, 06 Dec 2022 08:34:18 GMT  
+		Size: 69.2 MB (69242950 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:255f171ba69e80b6f87e9f01d19ac782af52a23a533623e5a22db882b36a4aaa`  
-		Last Modified: Tue, 15 Nov 2022 14:40:13 GMT  
-		Size: 701.0 B  
+	-	`sha256:fc2fdbd9793b1d17807de32eec8fdc9951233ef405e02db13a484d88b07bde4a`  
+		Last Modified: Tue, 06 Dec 2022 08:34:08 GMT  
+		Size: 704.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `varnish:stable` - linux; arm variant v7
@@ -6234,50 +6234,50 @@ CMD []
 ### `varnish:stable` - linux; ppc64le
 
 ```console
-$ docker pull varnish@sha256:120ab0c5e5805eed77200e5c07a4d32093c7ed6550f9424f4f07b8f6d03f7989
+$ docker pull varnish@sha256:a6000c11b37ca7ae9796f0f938994d4615cfd5a21c9480a00c1b34b48e40f4f7
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **99.8 MB (99792426 bytes)**  
+-	Total Size: **99.8 MB (99792620 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e4fcde9059efb158af9896db3f6b28ed2b34620d3cccf0db2b9bbfa00f28103a`
+-	Image ID: `sha256:5366c08f81a9027c7def36a863180e9d87c680e8bd1567f28de696e466c6b072`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-varnish-entrypoint"]`
 -	Default Command: `[]`
 
 ```dockerfile
-# Tue, 15 Nov 2022 05:18:45 GMT
-ADD file:520926164fdc762143905745329e568c67289232bec450e48645d82a4613dccf in / 
-# Tue, 15 Nov 2022 05:18:47 GMT
+# Tue, 06 Dec 2022 01:18:04 GMT
+ADD file:2231a44ea52d93df58e23883ba6b6911d4c554f4c1d172d80fb21c751ddcbbfc in / 
+# Tue, 06 Dec 2022 01:18:06 GMT
 CMD ["bash"]
-# Tue, 15 Nov 2022 18:57:43 GMT
+# Tue, 06 Dec 2022 09:14:02 GMT
 ENV VARNISH_SIZE=100M
-# Tue, 15 Nov 2022 19:02:21 GMT
+# Tue, 06 Dec 2022 09:18:39 GMT
 RUN set -e;     BASE_PKGS="curl dpkg-dev debhelper devscripts equivs git pkg-config apt-utils fakeroot";     export DEBIAN_FRONTEND=noninteractive;     export DEBCONF_NONINTERACTIVE_SEEN=true;     tmpdir="$(mktemp -d)";     cd "$tmpdir";     apt-get update;     apt-get install -y $BASE_PKGS;     git clone https://github.com/varnishcache/pkg-varnish-cache.git;     cd pkg-varnish-cache;     git checkout 10da6a585eb7d8defe9d273a51df5b133500eb6b;     rm -rf .git;     curl -f https://varnish-cache.org/downloads/varnish-6.0.11.tgz -o $tmpdir/orig.tgz;     echo "02f56f360c6bbed663e712edef961384e6003cfe73307c7ea50f805ac4b4df0d26958179170401a2254a69ab623acc172da42926d82189bfa724a4e8a78597ea  $tmpdir/orig.tgz" | sha512sum -c -;     tar xavf $tmpdir/orig.tgz --strip 1;     sed -i -e "s|@VERSION@|6.0.11|"  "debian/changelog";     mk-build-deps --install --tool="apt-get -o Debug::pkgProblemResolver=yes --yes" debian/control;     sed -i '' debian/varnish*;     dpkg-buildpackage -us -uc -j"$(nproc)";     apt-get -y install ../*.deb;     apt-get -y purge --auto-remove varnish-build-deps $BASE_PKGS;     mkdir /pkgs;     mv ../*dev*.deb /pkgs;     rm -rf /var/lib/apt/lists/* "$tmpdir";
-# Tue, 15 Nov 2022 19:02:23 GMT
+# Tue, 06 Dec 2022 09:18:41 GMT
 WORKDIR /etc/varnish
-# Tue, 15 Nov 2022 19:02:24 GMT
+# Tue, 06 Dec 2022 09:18:41 GMT
 COPY dir:81cfdf3570a33a2213eb3396395161c2375769c233d0e51a4b70c65b389fabfa in /usr/local/bin/ 
-# Tue, 15 Nov 2022 19:02:24 GMT
+# Tue, 06 Dec 2022 09:18:42 GMT
 ENTRYPOINT ["/usr/local/bin/docker-varnish-entrypoint"]
-# Tue, 15 Nov 2022 19:02:25 GMT
+# Tue, 06 Dec 2022 09:18:42 GMT
 EXPOSE 80 8443
-# Tue, 15 Nov 2022 19:02:25 GMT
+# Tue, 06 Dec 2022 09:18:42 GMT
 CMD []
 ```
 
 -	Layers:
-	-	`sha256:c57913b7d0318ef1a47f0348ce54d9865316776aa1ffb2c7871b1473b3d29407`  
-		Last Modified: Tue, 15 Nov 2022 05:24:22 GMT  
-		Size: 35.3 MB (35285140 bytes)  
+	-	`sha256:1f72e1168976861c676bf86a6c149129baba7e13200e8b70e6f24dc2ac2797df`  
+		Last Modified: Tue, 06 Dec 2022 01:24:18 GMT  
+		Size: 35.3 MB (35285293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2c9c08d506feae4d91723f94b2d45a378c2363e011b64711488020be7d01a14c`  
-		Last Modified: Thu, 17 Nov 2022 00:01:25 GMT  
-		Size: 64.5 MB (64506586 bytes)  
+	-	`sha256:9e2022d883b54568096f070ba8b23b46147bd85e0c1822e02aaf4e92c529830d`  
+		Last Modified: Tue, 06 Dec 2022 09:20:09 GMT  
+		Size: 64.5 MB (64506628 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9d19a18f871d057eb71a88742d79afa5ff6296e5fbd0af8e083fa43820e52440`  
-		Last Modified: Thu, 17 Nov 2022 00:01:05 GMT  
-		Size: 700.0 B  
+	-	`sha256:6a2ce64a959a5ae6d0f80bf4a5246a21abab96524f9e5ecee837bbda704c5fea`  
+		Last Modified: Tue, 06 Dec 2022 09:19:52 GMT  
+		Size: 699.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `varnish:stable` - linux; s390x
