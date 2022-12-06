@@ -1,7 +1,7 @@
 ## `buildpack-deps:latest`
 
 ```console
-$ docker pull buildpack-deps@sha256:54a3dd0f592c047b9f25455baecaf425aa53289c4226f4d8af470bd65295d892
+$ docker pull buildpack-deps@sha256:b4dc6569661cd53f3f22c2095cd92d0715803bba90b35fae69408c1004b732e3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -68,51 +68,51 @@ RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		auto
 ### `buildpack-deps:latest` - linux; arm variant v5
 
 ```console
-$ docker pull buildpack-deps@sha256:40a20160d406fd45146615392b398ae734385a222a11cee393bb1528d0d77081
+$ docker pull buildpack-deps@sha256:d417ea8b64e9ac5249f15f34924f74df89ba21d79783f960ca2fe3e5f94ca0fd
 ```
 
 -	Docker Version: 20.10.17
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **295.6 MB (295554989 bytes)**  
+-	Total Size: **295.6 MB (295557582 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7e960b27ba6e0255daa64045c15fa9b02a8cf230057a5f49bdfce94cc7410dfe`
+-	Image ID: `sha256:ba4ee121131d4dc77c99577b8c933da9cbab7ce1b658f83e1de46cfbeec9d6d7`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 15 Nov 2022 01:49:01 GMT
-ADD file:1301cc1a3eec72236eb8cfb02c81a3e956e32a32025a89995435b641e1d9330d in / 
-# Tue, 15 Nov 2022 01:49:02 GMT
+# Tue, 06 Dec 2022 01:49:07 GMT
+ADD file:92bc802977fb4abf65d3a11a702509aece192d088d815bf79a0e6bdb5a8b57c8 in / 
+# Tue, 06 Dec 2022 01:49:08 GMT
 CMD ["bash"]
-# Tue, 15 Nov 2022 05:42:09 GMT
+# Tue, 06 Dec 2022 02:16:51 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 15 Nov 2022 05:42:17 GMT
+# Tue, 06 Dec 2022 02:16:59 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 15 Nov 2022 05:42:44 GMT
+# Tue, 06 Dec 2022 02:17:27 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 15 Nov 2022 05:43:43 GMT
+# Tue, 06 Dec 2022 02:18:28 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:0655cdb20ead0094190060645bdf853e9427b58a64f0c7d92ae439b80ca81fdf`  
-		Last Modified: Tue, 15 Nov 2022 01:53:55 GMT  
-		Size: 52.5 MB (52542295 bytes)  
+	-	`sha256:0eeca4d47a0d9a966ac355f8eb8d728ca02c90f2db97fac6164fb9dd7eee639f`  
+		Last Modified: Tue, 06 Dec 2022 01:54:02 GMT  
+		Size: 52.5 MB (52544799 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8bbb37740fe3185bdb0707209ff5ad54853d540c2a95c40ae3d998c9d4dcbe26`  
-		Last Modified: Tue, 15 Nov 2022 05:48:21 GMT  
-		Size: 5.1 MB (5072242 bytes)  
+	-	`sha256:2c330e998bf60345da71330a458334a9904ec525dcfd0b830b9ff405076e5e9f`  
+		Last Modified: Tue, 06 Dec 2022 02:23:07 GMT  
+		Size: 5.1 MB (5072274 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ce25a37fc4ddb3f5200d17fea7e9ac780e294a18828ae0381ccb9c923c0d0f4f`  
-		Last Modified: Tue, 15 Nov 2022 05:48:22 GMT  
-		Size: 10.6 MB (10574332 bytes)  
+	-	`sha256:a963630613496775b31748fdc26130adc20eebd435f6c83acf2d9901566ec2f5`  
+		Last Modified: Tue, 06 Dec 2022 02:23:07 GMT  
+		Size: 10.6 MB (10574287 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:28570b06bbb5d744b44244a4402740ce8f46ce1521152a97286cf795ccd833ff`  
-		Last Modified: Tue, 15 Nov 2022 05:48:46 GMT  
-		Size: 52.3 MB (52322588 bytes)  
+	-	`sha256:3e44d8829d6a73032763e8aefb6237c9972206128230789679a163bc113c6fbc`  
+		Last Modified: Tue, 06 Dec 2022 02:23:32 GMT  
+		Size: 52.3 MB (52322314 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e0e615eccf33dd8f0357cf8753f2820b809b923fd77333de02aede7b12d01186`  
-		Last Modified: Tue, 15 Nov 2022 05:49:30 GMT  
-		Size: 175.0 MB (175043532 bytes)  
+	-	`sha256:8be2b372bdbc9c1a8b0e596c98992c98c67ccb38fd56fceaf2a27e9dbfb4ff1b`  
+		Last Modified: Tue, 06 Dec 2022 02:24:14 GMT  
+		Size: 175.0 MB (175043908 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:latest` - linux; arm variant v7
