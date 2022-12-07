@@ -646,19 +646,13 @@ Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 
 - `BSD-2-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debconf=1.5.79
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.79.dsc' debconf_1.5.79.dsc 2082 SHA256:b6a438542c61b8ff8a58cc33dca17859875783945a0e516239369b7d80e3ca7c
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.79.tar.xz' debconf_1.5.79.tar.xz 570588 SHA256:3456338d4bc329b4140c87d91e76068852c3d354348f77aa3cfb98619c069164
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debconf/1.5.79/
 
-- https://sources.debian.net/src/debconf/1.5.79/ (for browsing the source)
-- https://sources.debian.net/src/debconf/1.5.79/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debconf/1.5.79/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debian-archive-keyring=2021.1.1`
 
@@ -2116,20 +2110,13 @@ Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/l
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.38-2
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.38-2.dsc' libpng1.6_1.6.38-2.dsc 2225 SHA256:a6c93b0e83646913cfab6a8a46d471ca311356a5cdd4b11a6d165c460e0cb616
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.38.orig.tar.gz' libpng1.6_1.6.38.orig.tar.gz 1523840 SHA256:d4160037fa5d09fa7cff555037f2a7f2fefc99ca01e21723b19bfcda33015234
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.38-2.debian.tar.xz' libpng1.6_1.6.38-2.debian.tar.xz 31008 SHA256:02fd5b018aea1a2e73df7566ed481827ea3e87745c0022db07e2cf685146caeb
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libpng1.6/1.6.38-2/
 
-- https://sources.debian.net/src/libpng1.6/1.6.38-2/ (for browsing the source)
-- https://sources.debian.net/src/libpng1.6/1.6.38-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libpng1.6/1.6.38-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpsl=0.21.0-1.2`
 
@@ -3104,20 +3091,13 @@ Licenses: (parsed from: `/usr/share/doc/libopenblas0-pthread/copyright`)
 - `BSD-3-clause`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openblas=0.3.21+ds-2
-'http://deb.debian.org/debian/pool/main/o/openblas/openblas_0.3.21%2bds-2.dsc' openblas_0.3.21+ds-2.dsc 4815 SHA256:fec435a12545e5b8fe4e01a0cf790b66e5a152f86dc68dc059781958afa36480
-'http://deb.debian.org/debian/pool/main/o/openblas/openblas_0.3.21%2bds.orig.tar.xz' openblas_0.3.21+ds.orig.tar.xz 1885884 SHA256:bbec5cca61c8033b2d57aaecde205d709323a0b35a5f193290081dbb3826848a
-'http://deb.debian.org/debian/pool/main/o/openblas/openblas_0.3.21%2bds-2.debian.tar.xz' openblas_0.3.21+ds-2.debian.tar.xz 24496 SHA256:188ef8b7e7d7a941c616fcd3478e0e5c4e120fb842d071f92f920e92794ede3a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openblas/0.3.21+ds-2/
 
-- https://sources.debian.net/src/openblas/0.3.21+ds-2/ (for browsing the source)
-- https://sources.debian.net/src/openblas/0.3.21+ds-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openblas/0.3.21+ds-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.5.13+dfsg-2`
 
