@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:62dfe1f43bb57a74a924e556517efa424cc63e616177c14a7c397f08b721699b`
-- Created: `2022-11-17T23:19:46.183165069Z`
-- Virtual Size: ~ 616.27 Mb  
+- Image ID: `sha256:6acbcb6166420e162bfd97a5bb937dccd09c3e7761dcb0af6158a2f35c0e70b0`
+- Created: `2022-12-05T23:12:56.907499154Z`
+- Virtual Size: ~ 617.65 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","--","/docker-entrypoint.sh"]`
@@ -21,8 +21,8 @@
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.69`
-  - `TOMCAT_SHA512=8c883c54ce9ce43eba37756a6404cdf3477879883a3e6d146dc8a7aa5e0425f487466afe6b6da4a895927cb7cb59177b9379cec18000f2de12785be57408c779`
+  - `TOMCAT_VERSION=9.0.70`
+  - `TOMCAT_SHA512=9b57b332f4cfb2c4b9250b95924314507ebafec44f732e755be96d35e1a50d98ca3ea11a8c62e0c6fde2541d31a981f5ca792ea9931b2551b81b495932474726`
   - `SWT_GTK3=0`
   - `GOSU_VERSION=1.14`
   - `GOSU_GPG_KEYS=B42F6819007F00F88E364FD4036A9C25BF357DD4`
@@ -233,14 +233,9 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.34-6ubuntu1.3
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.34-6ubuntu1.3.dsc' binutils_2.34-6ubuntu1.3.dsc 8829 SHA512:4bc4408053e8a0b1a4f97dba2ef1ff20f4c44a34a068e48e0e3e7414d36b968b09d9db50a8430e2527f979216c4e326a6548d75d0baed1b886adb743c5046f25
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.34.orig.tar.xz' binutils_2.34.orig.tar.xz 21637796 SHA512:2c7976939dcf5e8c5b7374cccd39bfe803b1bec73c6abfa0eb17c24e1942574c6bdb874c66a092a82adc443182eacd8a5a8001c19a76101f0c7ba40c27de0bbd
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.34-6ubuntu1.3.debian.tar.xz' binutils_2.34-6ubuntu1.3.debian.tar.xz 158192 SHA512:9d182ac514e5383892a2a9bbc2267c5439c699557a7392003bdfd43e2fc5c66fb10b793a25c8f17c763d377c1628d070c5a29bf7213513da3e769305517683e2
-```
 
 ### `dpkg` source package: `brotli=1.0.7-6ubuntu0.1`
 
@@ -282,11 +277,11 @@ $ apt-get source -qq --print-uris bzip2=1.0.8-2
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.8-2.debian.tar.bz2' bzip2_1.0.8-2.debian.tar.bz2 26032 SHA256:237c8619bc9bc16f357b1077064a3e58aa1a230dadb4b9bb3bd8dc8f454afc0b
 ```
 
-### `dpkg` source package: `ca-certificates=20211016~20.04.1`
+### `dpkg` source package: `ca-certificates=20211016ubuntu0.20.04.1`
 
 Binary Packages:
 
-- `ca-certificates=20211016~20.04.1`
+- `ca-certificates=20211016ubuntu0.20.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -297,9 +292,9 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ca-certificates=20211016~20.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20211016%7e20.04.1.dsc' ca-certificates_20211016~20.04.1.dsc 1917 SHA512:136bf6a197dbae1b560a0302c9a0dd6b58bb25f2d284680ad59486eb8ad9be5c340ad2eabb448fd7284971bb8358a83cc23868a8e64e6c21368edbf9978ce2d9
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20211016%7e20.04.1.tar.xz' ca-certificates_20211016~20.04.1.tar.xz 239236 SHA512:8a8a96eeae0dc4a117f7b73f8d0823b0e3b99cae555538fd5ab7cab0216107656cd61a10e92a244482227568c695a52ac5debf2203ae419e0c9e24ca1f1c7beb
+$ apt-get source -qq --print-uris ca-certificates=20211016ubuntu0.20.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20211016ubuntu0.20.04.1.dsc' ca-certificates_20211016ubuntu0.20.04.1.dsc 1945 SHA512:0b5042d12f3bae34aacf5a7818825d0a7599004a46c7259d92523ccacfbd9d5198322fe0eeaf6326e20cf7a4ce921ee78b31810be23f236d6b3934662097dfd2
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20211016ubuntu0.20.04.1.tar.xz' ca-certificates_20211016ubuntu0.20.04.1.tar.xz 239136 SHA512:4c277cc5d56f1b1bb7c715db8a0040e9fb87dba66c584c466c6960dd152c07da7810df06fee2d8247665668d81cb258ffb7f5bd91da77742a348a080b18740a1
 ```
 
 ### `dpkg` source package: `cdebconf=0.251ubuntu1`
