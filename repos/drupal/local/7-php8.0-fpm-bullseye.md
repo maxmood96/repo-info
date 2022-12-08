@@ -1,10 +1,10 @@
-# `drupal:7.92-php8.0-fpm-bullseye`
+# `drupal:7.93-php8.0-fpm-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a44f5f5dfe2d885de2b3a5755be39a9c0e3129761f1cd8d824fcb1ed4ffee130`
-- Created: `2022-11-29T05:07:08.005735101Z`
-- Virtual Size: ~ 463.64 Mb  
+- Image ID: `sha256:03a45630c87cf576e6736a0909cec405e4e05f888c0236f8a651883384557045`
+- Created: `2022-12-08T04:49:02.702937224Z`
+- Virtual Size: ~ 463.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -21,8 +21,8 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.0.26.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.0.26.tar.xz.asc`
   - `PHP_SHA256=0765bfbe640dba37ccc36d2bc7c7b7ba3d2c3381c9cd4305f66eca83e82a40b3`
-  - `DRUPAL_VERSION=7.92`
-  - `DRUPAL_MD5=7f95bd4a6693ed5215aba4038c23c933`
+  - `DRUPAL_VERSION=7.93`
+  - `DRUPAL_MD5=617617081b622a3b32757c7166cbf88f`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1323,14 +1323,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/keyutils/1.6.1-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/keyutils/1.6.1-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `krb5=1.18.3-6+deb11u2`
+### `dpkg` source package: `krb5=1.18.3-6+deb11u3`
 
 Binary Packages:
 
-- `libgssapi-krb5-2:amd64=1.18.3-6+deb11u2`
-- `libk5crypto3:amd64=1.18.3-6+deb11u2`
-- `libkrb5-3:amd64=1.18.3-6+deb11u2`
-- `libkrb5support0:amd64=1.18.3-6+deb11u2`
+- `libgssapi-krb5-2:amd64=1.18.3-6+deb11u3`
+- `libk5crypto3:amd64=1.18.3-6+deb11u3`
+- `libkrb5-3:amd64=1.18.3-6+deb11u3`
+- `libkrb5support0:amd64=1.18.3-6+deb11u3`
 
 Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
@@ -1339,17 +1339,18 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 Source:
 
 ```console
-$ apt-get source -qq --print-uris krb5=1.18.3-6+deb11u2
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.18.3-6%2bdeb11u2.dsc' krb5_1.18.3-6+deb11u2.dsc 2971 SHA256:ffb0d0aaaa3afa704e2539190f0ab163287ac393809fb0be260a3fdad6b89d1d
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.18.3.orig.tar.gz' krb5_1.18.3.orig.tar.gz 8715312 SHA256:e61783c292b5efd9afb45c555a80dd267ac67eebabca42185362bee6c4fbd719
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.18.3-6%2bdeb11u2.debian.tar.xz' krb5_1.18.3-6+deb11u2.debian.tar.xz 107620 SHA256:21c3b08446145a9308f39568cfbeb1bf801d8428d8e8243158069a1fdf73be9a
+$ apt-get source -qq --print-uris krb5=1.18.3-6+deb11u3
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.18.3-6%2bdeb11u3.dsc' krb5_1.18.3-6+deb11u3.dsc 3209 SHA256:539d8a8df5c181b5c16cab487fef4d192f934a170dcfe507e76020132fdb5399
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.18.3.orig.tar.gz' krb5_1.18.3.orig.tar.gz 8715312 SHA256:e61783c292b5efd9afb45c555a80dd267ac67eebabca42185362bee6c4fbd719
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.18.3.orig.tar.gz.asc' krb5_1.18.3.orig.tar.gz.asc 833 SHA256:ded19808ba7320ad0bb3ddfb5202845b2ff36a50613af7832f78dd3cb4437419
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.18.3-6%2bdeb11u3.debian.tar.xz' krb5_1.18.3-6+deb11u3.debian.tar.xz 108804 SHA256:5efc82324430be1c2e12a6f0b40dd27b149f5f77cfe10a9ed0b8567a07f08981
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/krb5/1.18.3-6+deb11u2/ (for browsing the source)
-- https://sources.debian.net/src/krb5/1.18.3-6+deb11u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/krb5/1.18.3-6+deb11u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/krb5/1.18.3-6+deb11u3/ (for browsing the source)
+- https://sources.debian.net/src/krb5/1.18.3-6+deb11u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/krb5/1.18.3-6+deb11u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libcap-ng=0.7.9-2.2`
 

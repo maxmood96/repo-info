@@ -1,10 +1,10 @@
-# `drupal:7.92-php8.0-apache-buster`
+# `drupal:7.93-php8.0-apache-buster`
 
 ## Docker Metadata
 
-- Image ID: `sha256:646176420ca136b374a8bfe1dc643141e15b3d9fb40a4c6292fb750d0250ca97`
-- Created: `2022-11-29T05:07:11.988754521Z`
-- Virtual Size: ~ 419.25 Mb  
+- Image ID: `sha256:d959029a331a484831d60dc752cd424756ee29459924ba757d07719a718348f0`
+- Created: `2022-12-08T04:49:07.651523255Z`
+- Virtual Size: ~ 419.28 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -23,8 +23,8 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.0.26.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.0.26.tar.xz.asc`
   - `PHP_SHA256=0765bfbe640dba37ccc36d2bc7c7b7ba3d2c3381c9cd4305f66eca83e82a40b3`
-  - `DRUPAL_VERSION=7.92`
-  - `DRUPAL_MD5=7f95bd4a6693ed5215aba4038c23c933`
+  - `DRUPAL_VERSION=7.93`
+  - `DRUPAL_MD5=617617081b622a3b32757c7166cbf88f`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1419,14 +1419,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/keyutils/1.6-6/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/keyutils/1.6-6/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `krb5=1.17-3+deb10u4`
+### `dpkg` source package: `krb5=1.17-3+deb10u5`
 
 Binary Packages:
 
-- `libgssapi-krb5-2:amd64=1.17-3+deb10u4`
-- `libk5crypto3:amd64=1.17-3+deb10u4`
-- `libkrb5-3:amd64=1.17-3+deb10u4`
-- `libkrb5support0:amd64=1.17-3+deb10u4`
+- `libgssapi-krb5-2:amd64=1.17-3+deb10u5`
+- `libk5crypto3:amd64=1.17-3+deb10u5`
+- `libkrb5-3:amd64=1.17-3+deb10u5`
+- `libkrb5support0:amd64=1.17-3+deb10u5`
 
 Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
@@ -1435,17 +1435,17 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 Source:
 
 ```console
-$ apt-get source -qq --print-uris krb5=1.17-3+deb10u4
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.17-3%2bdeb10u4.dsc' krb5_1.17-3+deb10u4.dsc 2968 SHA256:7b2d47d17563e72841d353010442ff56b9ec87a8f83ac0e0aef68dff23c5da9d
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.17.orig.tar.gz' krb5_1.17.orig.tar.gz 8761763 SHA256:5a6e2284a53de5702d3dc2be3b9339c963f9b5397d3fbbc53beb249380a781f5
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.17-3%2bdeb10u4.debian.tar.xz' krb5_1.17-3+deb10u4.debian.tar.xz 104736 SHA256:69e9f59958fc0c2d7aa7540e93280b67a2e2377efbfd7b3c0c8411b8994df181
+$ apt-get source -qq --print-uris krb5=1.17-3+deb10u5
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.17-3%2bdeb10u5.dsc' krb5_1.17-3+deb10u5.dsc 3573 SHA256:9c077e4e8be514692b32bfb3cbfe9de1b660fac9fd2686aae15cb75bf1be4edf
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.17.orig.tar.gz' krb5_1.17.orig.tar.gz 8761763 SHA256:5a6e2284a53de5702d3dc2be3b9339c963f9b5397d3fbbc53beb249380a781f5
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.17-3%2bdeb10u5.debian.tar.xz' krb5_1.17-3+deb10u5.debian.tar.xz 105892 SHA256:b5d9785d100eab8a0de448e39ce0f830d823d5d00d76ee0ffeae6e8d3ca51a9a
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/krb5/1.17-3+deb10u4/ (for browsing the source)
-- https://sources.debian.net/src/krb5/1.17-3+deb10u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/krb5/1.17-3+deb10u4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/krb5/1.17-3+deb10u5/ (for browsing the source)
+- https://sources.debian.net/src/krb5/1.17-3+deb10u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/krb5/1.17-3+deb10u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libcap-ng=0.7.9-2`
 
