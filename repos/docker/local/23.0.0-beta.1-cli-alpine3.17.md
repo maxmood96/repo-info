@@ -1,19 +1,19 @@
-# `docker:22.06.0-beta.0-cli`
+# `docker:23.0.0-beta.1-cli`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9d6b2568057867495bc87a8a037dddeb2f2f6d5349a16731dda5ccd003e53ff0`
-- Created: `2022-11-29T01:27:12.23913202Z`
-- Virtual Size: ~ 131.97 Mb  
+- Image ID: `sha256:efc51e8759c19a2cf7a404965a0a806bd4f06e8f2d572e83acb94f82fdcd12c2`
+- Created: `2022-12-07T01:27:04.620112962Z`
+- Virtual Size: ~ 138.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=22.06.0-beta.0`
+  - `DOCKER_VERSION=23.0.0-beta.1`
   - `DOCKER_BUILDX_VERSION=0.9.1`
-  - `DOCKER_COMPOSE_VERSION=2.13.0`
+  - `DOCKER_COMPOSE_VERSION=2.14.0`
   - `DOCKER_TLS_CERTDIR=/certs`
 
 ## `apk` (`.apk`-based packages)

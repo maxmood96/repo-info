@@ -1,19 +1,19 @@
-# `docker:22.06.0-beta.0-git`
+# `docker:23.0.0-beta.1-git`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0f615304fcea74018be74e76e58425396ae1be93df99a063fe5f0346d610e3f9`
-- Created: `2022-11-29T01:27:37.259347313Z`
-- Virtual Size: ~ 140.28 Mb  
+- Image ID: `sha256:e582042be72097869779c3308f88b7bf148dbcf37f36d9fa7e09d39bc5ad739f`
+- Created: `2022-12-07T01:27:29.840252692Z`
+- Virtual Size: ~ 147.04 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=22.06.0-beta.0`
+  - `DOCKER_VERSION=23.0.0-beta.1`
   - `DOCKER_BUILDX_VERSION=0.9.1`
-  - `DOCKER_COMPOSE_VERSION=2.13.0`
+  - `DOCKER_COMPOSE_VERSION=2.14.0`
   - `DOCKER_TLS_CERTDIR=/certs`
 
 ## `apk` (`.apk`-based packages)
@@ -446,16 +446,16 @@ BSD
 ### `apk` package: `pcre2`
 
 ```console
-pcre2-10.40-r0 description:
+pcre2-10.41-r0 description:
 Perl-compatible regular expression library
 
-pcre2-10.40-r0 webpage:
+pcre2-10.41-r0 webpage:
 https://pcre.org/
 
-pcre2-10.40-r0 installed size:
+pcre2-10.41-r0 installed size:
 672 KiB
 
-pcre2-10.40-r0 license:
+pcre2-10.41-r0 license:
 BSD-3-Clause
 
 ```

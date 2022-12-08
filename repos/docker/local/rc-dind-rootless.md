@@ -1,18 +1,18 @@
-# `docker:22.06.0-beta.0-dind-rootless`
+# `docker:23.0.0-beta.1-dind-rootless`
 
 ## Docker Metadata
 
-- Image ID: `sha256:39d6e2bae06df0da052b551bd93dc039b2c309c0476c257e54394368757e1c22`
-- Created: `2022-11-29T01:27:33.191217614Z`
-- Virtual Size: ~ 360.03 Mb  
+- Image ID: `sha256:c9a404d188f86c1e5722b7636eafb832f35ea33a030be9a1fc126f80f3c2ea18`
+- Created: `2022-12-07T01:27:25.758472108Z`
+- Virtual Size: ~ 364.33 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=22.06.0-beta.0`
+  - `DOCKER_VERSION=23.0.0-beta.1`
   - `DOCKER_BUILDX_VERSION=0.9.1`
-  - `DOCKER_COMPOSE_VERSION=2.13.0`
+  - `DOCKER_COMPOSE_VERSION=2.14.0`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=1f32e3c95d72a29b3eaacba156ed675dba976cb5`
 
@@ -1075,16 +1075,16 @@ LGPL-2.1-or-later
 ### `apk` package: `xz`
 
 ```console
-xz-5.2.8-r0 description:
+xz-5.2.9-r0 description:
 Library and CLI tools for XZ and LZMA compressed files
 
-xz-5.2.8-r0 webpage:
+xz-5.2.9-r0 webpage:
 https://tukaani.org/xz
 
-xz-5.2.8-r0 installed size:
+xz-5.2.9-r0 installed size:
 172 KiB
 
-xz-5.2.8-r0 license:
+xz-5.2.9-r0 license:
 GPL-2.0-or-later AND Public-Domain AND LGPL-2.1-or-later
 
 ```
@@ -1092,16 +1092,16 @@ GPL-2.0-or-later AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.2.8-r0 description:
+xz-libs-5.2.9-r0 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.2.8-r0 webpage:
+xz-libs-5.2.9-r0 webpage:
 https://tukaani.org/xz
 
-xz-libs-5.2.8-r0 installed size:
+xz-libs-5.2.9-r0 installed size:
 176 KiB
 
-xz-libs-5.2.8-r0 license:
+xz-libs-5.2.9-r0 license:
 GPL-2.0-or-later AND Public-Domain AND LGPL-2.1-or-later
 
 ```
@@ -1109,16 +1109,16 @@ GPL-2.0-or-later AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `zfs`
 
 ```console
-zfs-2.1.6-r0 description:
+zfs-2.1.7-r0 description:
 Advanced filesystem and volume manager
 
-zfs-2.1.6-r0 webpage:
+zfs-2.1.7-r0 webpage:
 https://openzfs.org
 
-zfs-2.1.6-r0 installed size:
+zfs-2.1.7-r0 installed size:
 1372 KiB
 
-zfs-2.1.6-r0 license:
+zfs-2.1.7-r0 license:
 CDDL-1.0
 
 ```
@@ -1126,16 +1126,16 @@ CDDL-1.0
 ### `apk` package: `zfs-libs`
 
 ```console
-zfs-libs-2.1.6-r0 description:
+zfs-libs-2.1.7-r0 description:
 Advanced filesystem and volume manager (libraries)
 
-zfs-libs-2.1.6-r0 webpage:
+zfs-libs-2.1.7-r0 webpage:
 https://openzfs.org
 
-zfs-libs-2.1.6-r0 installed size:
-4068 KiB
+zfs-libs-2.1.7-r0 installed size:
+4080 KiB
 
-zfs-libs-2.1.6-r0 license:
+zfs-libs-2.1.7-r0 license:
 CDDL-1.0
 
 ```
