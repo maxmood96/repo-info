@@ -200,14 +200,9 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.38-4ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38-4ubuntu2.dsc' binutils_2.38-4ubuntu2.dsc 8799 SHA512:3d089063e9fafa561419ea304f1ca662553b5de3b6a6e4a3a05e32634105e519f24ba43f8bb6654ddd31e0aeb1d0e36fa1079ee16f617c7c09383f657d291e0c
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38.orig.tar.xz' binutils_2.38.orig.tar.xz 23651408 SHA512:8bf0b0d193c9c010e0518ee2b2e5a830898af206510992483b427477ed178396cd210235e85fd7bd99a96fc6d5eedbeccbd48317a10f752b7336ada8b2bb826d
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38-4ubuntu2.debian.tar.xz' binutils_2.38-4ubuntu2.debian.tar.xz 288676 SHA512:c8ba0beba773bb63f3a598c5795ee361fa9bb99c188b649c23931a05737983503267165f02654654b31088846078800fed3fc39282b230e7494ac2dfd5feb1e7
-```
 
 ### `dpkg` source package: `brotli=1.0.9-2build6`
 
@@ -1989,14 +1984,9 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`, `/usr/share/doc/libx
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.13+dfsg-1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg-1ubuntu0.1.dsc' libxml2_2.9.13+dfsg-1ubuntu0.1.dsc 3030 SHA512:45cb30900a6c97f5f00ebd437ae31bf4e2523b20c7dd46df1a8f8b9fa7794aa44eede40ae607159f73aace752968f9e4a42fb43b58e34a46480b55ad6b251591
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg.orig.tar.xz' libxml2_2.9.13+dfsg.orig.tar.xz 2351356 SHA512:6283071de4934c856c7ff5202ac1a2ed5892d7fcde82a364d40c8bc2bf3d3201fbcbb5f6983d8bf6b962026bc216b8182d71efe280f1dcef2931b277314e6e89
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg-1ubuntu0.1.debian.tar.xz' libxml2_2.9.13+dfsg-1ubuntu0.1.debian.tar.xz 31008 SHA512:91eb2e56e4d6250f8416824eb488617383719d3de812fe07bb9f5d1fec2bfddca5553f657b10bbc4f69550e78218b19f7f327b873b5596e3ba3b0f89b7bd684f
-```
 
 ### `dpkg` source package: `libxmu=2:1.1.3-3`
 
