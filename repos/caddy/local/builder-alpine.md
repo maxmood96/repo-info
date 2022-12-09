@@ -2,15 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2ca939d62adde78eb05076776ab16d7890c79738190532c2e80acf85952d4687`
-- Created: `2022-12-01T21:07:45.659268875Z`
-- Virtual Size: ~ 364.82 Mb  
+- Image ID: `sha256:7b29f30b3b47e46c7bab120d80b58ea21c084cb7d8d46343a3bc75a92c7a23c8`
+- Created: `2022-12-07T00:18:35.162979516Z`
+- Virtual Size: ~ 364.87 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
 - Environment:
   - `PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GOLANG_VERSION=1.19.3`
+  - `GOLANG_VERSION=1.19.4`
   - `GOPATH=/go`
   - `XCADDY_VERSION=v0.3.1`
   - `CADDY_VERSION=v2.6.2`
@@ -327,16 +327,16 @@ MIT
 ### `apk` package: `pcre2`
 
 ```console
-pcre2-10.40-r0 description:
+pcre2-10.41-r0 description:
 Perl-compatible regular expression library
 
-pcre2-10.40-r0 webpage:
+pcre2-10.41-r0 webpage:
 https://pcre.org/
 
-pcre2-10.40-r0 installed size:
+pcre2-10.41-r0 installed size:
 672 KiB
 
-pcre2-10.40-r0 license:
+pcre2-10.41-r0 license:
 BSD-3-Clause
 
 ```
