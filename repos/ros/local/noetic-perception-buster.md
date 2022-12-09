@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:77653b5d1e9b5d88058239b1aebe5dfb81ab1d095ba7163a1c9b303ba382d0ea`
-- Created: `2022-11-15T14:15:35.888623712Z`
+- Image ID: `sha256:7f30b5cf76969ed0bb4daaab735b75d184434fd14d9e16b9b48b489d1bcb7bdc`
+- Created: `2022-12-06T07:02:14.353689945Z`
 - Virtual Size: ~ 2.89 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2572,12 +2572,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/geos/3.7.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/geos/3.7.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `giflib=5.1.4-3`
+### `dpkg` source package: `giflib=5.1.4-3+deb10u1`
 
 Binary Packages:
 
-- `libgif-dev=5.1.4-3`
-- `libgif7:amd64=5.1.4-3`
+- `libgif-dev=5.1.4-3+deb10u1`
+- `libgif7:amd64=5.1.4-3+deb10u1`
 
 Licenses: (parsed from: `/usr/share/doc/libgif-dev/copyright`, `/usr/share/doc/libgif7/copyright`)
 
@@ -2586,17 +2586,17 @@ Licenses: (parsed from: `/usr/share/doc/libgif-dev/copyright`, `/usr/share/doc/l
 Source:
 
 ```console
-$ apt-get source -qq --print-uris giflib=5.1.4-3
-'http://deb.debian.org/debian/pool/main/g/giflib/giflib_5.1.4-3.dsc' giflib_5.1.4-3.dsc 2074 SHA256:f138ee9a50c93aa7b9a1417d818175409a429b8abe3f12465d8738d80033fc13
-'http://deb.debian.org/debian/pool/main/g/giflib/giflib_5.1.4.orig.tar.bz2' giflib_5.1.4.orig.tar.bz2 639703 SHA256:df27ec3ff24671f80b29e6ab1c4971059c14ac3db95406884fc26574631ba8d5
-'http://deb.debian.org/debian/pool/main/g/giflib/giflib_5.1.4-3.debian.tar.xz' giflib_5.1.4-3.debian.tar.xz 7664 SHA256:767ea03c1948fa203626107ead3d8b08687a3478d6fbe4690986d545fb1d60bf
+$ apt-get source -qq --print-uris giflib=5.1.4-3+deb10u1
+'http://deb.debian.org/debian-security/pool/updates/main/g/giflib/giflib_5.1.4-3%2bdeb10u1.dsc' giflib_5.1.4-3+deb10u1.dsc 1951 SHA256:3286f34a902c1abf2059bdacc6ab9848c6fa7436dcb639993142557490d71486
+'http://deb.debian.org/debian-security/pool/updates/main/g/giflib/giflib_5.1.4.orig.tar.bz2' giflib_5.1.4.orig.tar.bz2 639703 SHA256:df27ec3ff24671f80b29e6ab1c4971059c14ac3db95406884fc26574631ba8d5
+'http://deb.debian.org/debian-security/pool/updates/main/g/giflib/giflib_5.1.4-3%2bdeb10u1.debian.tar.xz' giflib_5.1.4-3+deb10u1.debian.tar.xz 8616 SHA256:6813adb9128b5eb2cf59b339aa521fbe707d010813239ea830a435ef13cdb9f7
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/giflib/5.1.4-3/ (for browsing the source)
-- https://sources.debian.net/src/giflib/5.1.4-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/giflib/5.1.4-3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/giflib/5.1.4-3+deb10u1/ (for browsing the source)
+- https://sources.debian.net/src/giflib/5.1.4-3+deb10u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/giflib/5.1.4-3+deb10u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `git=1:2.20.1-2+deb10u4`
 
@@ -3821,14 +3821,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/kmod/26-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/kmod/26-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `krb5=1.17-3+deb10u4`
+### `dpkg` source package: `krb5=1.17-3+deb10u5`
 
 Binary Packages:
 
-- `libgssapi-krb5-2:amd64=1.17-3+deb10u4`
-- `libk5crypto3:amd64=1.17-3+deb10u4`
-- `libkrb5-3:amd64=1.17-3+deb10u4`
-- `libkrb5support0:amd64=1.17-3+deb10u4`
+- `libgssapi-krb5-2:amd64=1.17-3+deb10u5`
+- `libk5crypto3:amd64=1.17-3+deb10u5`
+- `libkrb5-3:amd64=1.17-3+deb10u5`
+- `libkrb5support0:amd64=1.17-3+deb10u5`
 
 Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
@@ -3837,17 +3837,17 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 Source:
 
 ```console
-$ apt-get source -qq --print-uris krb5=1.17-3+deb10u4
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.17-3%2bdeb10u4.dsc' krb5_1.17-3+deb10u4.dsc 2968 SHA256:7b2d47d17563e72841d353010442ff56b9ec87a8f83ac0e0aef68dff23c5da9d
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.17.orig.tar.gz' krb5_1.17.orig.tar.gz 8761763 SHA256:5a6e2284a53de5702d3dc2be3b9339c963f9b5397d3fbbc53beb249380a781f5
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.17-3%2bdeb10u4.debian.tar.xz' krb5_1.17-3+deb10u4.debian.tar.xz 104736 SHA256:69e9f59958fc0c2d7aa7540e93280b67a2e2377efbfd7b3c0c8411b8994df181
+$ apt-get source -qq --print-uris krb5=1.17-3+deb10u5
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.17-3%2bdeb10u5.dsc' krb5_1.17-3+deb10u5.dsc 3573 SHA256:9c077e4e8be514692b32bfb3cbfe9de1b660fac9fd2686aae15cb75bf1be4edf
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.17.orig.tar.gz' krb5_1.17.orig.tar.gz 8761763 SHA256:5a6e2284a53de5702d3dc2be3b9339c963f9b5397d3fbbc53beb249380a781f5
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.17-3%2bdeb10u5.debian.tar.xz' krb5_1.17-3+deb10u5.debian.tar.xz 105892 SHA256:b5d9785d100eab8a0de448e39ce0f830d823d5d00d76ee0ffeae6e8d3ca51a9a
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/krb5/1.17-3+deb10u4/ (for browsing the source)
-- https://sources.debian.net/src/krb5/1.17-3+deb10u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/krb5/1.17-3+deb10u4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/krb5/1.17-3+deb10u5/ (for browsing the source)
+- https://sources.debian.net/src/krb5/1.17-3+deb10u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/krb5/1.17-3+deb10u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lame=3.100-2`
 
@@ -3989,11 +3989,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libaec/1.0.2-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libaec/1.0.2-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libarchive=3.3.3-4+deb10u1`
+### `dpkg` source package: `libarchive=3.3.3-4+deb10u2`
 
 Binary Packages:
 
-- `libarchive13:amd64=3.3.3-4+deb10u1`
+- `libarchive13:amd64=3.3.3-4+deb10u2`
 
 Licenses: (parsed from: `/usr/share/doc/libarchive13/copyright`)
 
@@ -4009,17 +4009,17 @@ Licenses: (parsed from: `/usr/share/doc/libarchive13/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libarchive=3.3.3-4+deb10u1
-'http://deb.debian.org/debian/pool/main/liba/libarchive/libarchive_3.3.3-4%2bdeb10u1.dsc' libarchive_3.3.3-4+deb10u1.dsc 2548 SHA256:e7d1aaa2866bb72a6c11fa3306243399d3265702a58a6e9711012bbe15d16479
-'http://deb.debian.org/debian/pool/main/liba/libarchive/libarchive_3.3.3.orig.tar.gz' libarchive_3.3.3.orig.tar.gz 6535598 SHA256:ba7eb1781c9fbbae178c4c6bad1c6eb08edab9a1496c64833d1715d022b30e2e
-'http://deb.debian.org/debian/pool/main/liba/libarchive/libarchive_3.3.3-4%2bdeb10u1.debian.tar.xz' libarchive_3.3.3-4+deb10u1.debian.tar.xz 19876 SHA256:fefbe7c0686d6496bb526be4c00634d2992355dfab7d9be6bb2eb53dcf1f8bc7
+$ apt-get source -qq --print-uris libarchive=3.3.3-4+deb10u2
+'http://deb.debian.org/debian-security/pool/updates/main/liba/libarchive/libarchive_3.3.3-4%2bdeb10u2.dsc' libarchive_3.3.3-4+deb10u2.dsc 2389 SHA256:06691583f7308cbee040af499751507d8c197d85e92bf20b268adb2ff12e7d30
+'http://deb.debian.org/debian-security/pool/updates/main/liba/libarchive/libarchive_3.3.3.orig.tar.gz' libarchive_3.3.3.orig.tar.gz 6535598 SHA256:ba7eb1781c9fbbae178c4c6bad1c6eb08edab9a1496c64833d1715d022b30e2e
+'http://deb.debian.org/debian-security/pool/updates/main/liba/libarchive/libarchive_3.3.3-4%2bdeb10u2.debian.tar.xz' libarchive_3.3.3-4+deb10u2.debian.tar.xz 24592 SHA256:895a83cc3c6de67969e1063ee3f51b3337a7dd128cedbb34e7132ea56c5431ae
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libarchive/3.3.3-4+deb10u1/ (for browsing the source)
-- https://sources.debian.net/src/libarchive/3.3.3-4+deb10u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libarchive/3.3.3-4+deb10u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libarchive/3.3.3-4+deb10u2/ (for browsing the source)
+- https://sources.debian.net/src/libarchive/3.3.3-4+deb10u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libarchive/3.3.3-4+deb10u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libassuan=2.5.2-1`
 
@@ -10514,11 +10514,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-actionlib=1.13.2-1buster.20220926.193950`
+### `dpkg` source package: `ros-noetic-actionlib=1.13.2-1buster.20221124.025754`
 
 Binary Packages:
 
-- `ros-noetic-actionlib=1.13.2-1buster.20220926.193950`
+- `ros-noetic-actionlib=1.13.2-1buster.20221124.025754`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -10542,11 +10542,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-bond-core=1.8.6-1buster.20220926.185733`
+### `dpkg` source package: `ros-noetic-bond-core=1.8.6-1buster.20221124.024228`
 
 Binary Packages:
 
-- `ros-noetic-bond-core=1.8.6-1buster.20220926.185733`
+- `ros-noetic-bond-core=1.8.6-1buster.20221124.024228`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -10570,11 +10570,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-bondcpp=1.8.6-1buster.20220926.182831`
+### `dpkg` source package: `ros-noetic-bondcpp=1.8.6-1buster.20221124.023237`
 
 Binary Packages:
 
-- `ros-noetic-bondcpp=1.8.6-1buster.20220926.182831`
+- `ros-noetic-bondcpp=1.8.6-1buster.20221124.023237`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -10584,11 +10584,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-bondpy=1.8.6-1buster.20220926.185436`
+### `dpkg` source package: `ros-noetic-bondpy=1.8.6-1buster.20221124.023943`
 
 Binary Packages:
 
-- `ros-noetic-bondpy=1.8.6-1buster.20220926.185436`
+- `ros-noetic-bondpy=1.8.6-1buster.20221124.023943`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -10598,11 +10598,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-camera-calibration-parsers=1.12.0-1buster.20220926.192356`
+### `dpkg` source package: `ros-noetic-camera-calibration-parsers=1.12.0-1buster.20221124.032610`
 
 Binary Packages:
 
-- `ros-noetic-camera-calibration-parsers=1.12.0-1buster.20220926.192356`
+- `ros-noetic-camera-calibration-parsers=1.12.0-1buster.20221124.032610`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -10612,25 +10612,25 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-camera-calibration=1.16.0-1buster.20221003.134409`
+### `dpkg` source package: `ros-noetic-camera-calibration=1.17.0-1buster.20221124.050104`
 
 Binary Packages:
 
-- `ros-noetic-camera-calibration=1.16.0-1buster.20221003.134409`
+- `ros-noetic-camera-calibration=1.17.0-1buster.20221124.050104`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
+Licenses: (parsed from: `/usr/share/doc/ros-noetic-camera-calibration/copyright`)
 
+- `BSD`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-camera-info-manager=1.12.0-1buster.20220926.193009`
+### `dpkg` source package: `ros-noetic-camera-info-manager=1.12.0-1buster.20221124.033036`
 
 Binary Packages:
 
-- `ros-noetic-camera-info-manager=1.12.0-1buster.20220926.193009`
+- `ros-noetic-camera-info-manager=1.12.0-1buster.20221124.033036`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -10682,11 +10682,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-common-msgs=1.13.1-1buster.20220926.192139`
+### `dpkg` source package: `ros-noetic-common-msgs=1.13.1-1buster.20221124.051943`
 
 Binary Packages:
 
-- `ros-noetic-common-msgs=1.13.1-1buster.20220926.192139`
+- `ros-noetic-common-msgs=1.13.1-1buster.20221124.051943`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -10696,11 +10696,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-compressed-depth-image-transport=1.14.0-1buster.20221003.140211`
+### `dpkg` source package: `ros-noetic-compressed-depth-image-transport=1.14.0-1buster.20221124.055056`
 
 Binary Packages:
 
-- `ros-noetic-compressed-depth-image-transport=1.14.0-1buster.20221003.140211`
+- `ros-noetic-compressed-depth-image-transport=1.14.0-1buster.20221124.055056`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -10710,11 +10710,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-compressed-image-transport=1.14.0-1buster.20221003.140224`
+### `dpkg` source package: `ros-noetic-compressed-image-transport=1.14.0-1buster.20221124.055116`
 
 Binary Packages:
 
-- `ros-noetic-compressed-image-transport=1.14.0-1buster.20221003.140224`
+- `ros-noetic-compressed-image-transport=1.14.0-1buster.20221124.055116`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -10738,11 +10738,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-cv-bridge=1.16.2-1buster.20221003.133658`
+### `dpkg` source package: `ros-noetic-cv-bridge=1.16.2-1buster.20221124.035142`
 
 Binary Packages:
 
-- `ros-noetic-cv-bridge=1.16.2-1buster.20221003.133658`
+- `ros-noetic-cv-bridge=1.16.2-1buster.20221124.035142`
 
 Licenses: (parsed from: `/usr/share/doc/ros-noetic-cv-bridge/copyright`)
 
@@ -10752,15 +10752,15 @@ Licenses: (parsed from: `/usr/share/doc/ros-noetic-cv-bridge/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-depth-image-proc=1.16.0-1buster.20221003.134500`
+### `dpkg` source package: `ros-noetic-depth-image-proc=1.17.0-1buster.20221124.051802`
 
 Binary Packages:
 
-- `ros-noetic-depth-image-proc=1.16.0-1buster.20221003.134500`
+- `ros-noetic-depth-image-proc=1.17.0-1buster.20221124.051802`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
+Licenses: (parsed from: `/usr/share/doc/ros-noetic-depth-image-proc/copyright`)
 
+- `BSD`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
@@ -10780,11 +10780,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-dynamic-reconfigure=1.7.3-1buster.20220926.191550`
+### `dpkg` source package: `ros-noetic-dynamic-reconfigure=1.7.3-1buster.20221124.032750`
 
 Binary Packages:
 
-- `ros-noetic-dynamic-reconfigure=1.7.3-1buster.20220926.191550`
+- `ros-noetic-dynamic-reconfigure=1.7.3-1buster.20221124.032750`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -10808,11 +10808,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-filters=1.9.2-1buster.20220926.190423`
+### `dpkg` source package: `ros-noetic-filters=1.9.2-1buster.20221124.024751`
 
 Binary Packages:
 
-- `ros-noetic-filters=1.9.2-1buster.20220926.190423`
+- `ros-noetic-filters=1.9.2-1buster.20221124.024751`
 
 Licenses: (parsed from: `/usr/share/doc/ros-noetic-filters/copyright`)
 
@@ -10920,11 +10920,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-image-common=1.12.0-1buster.20220926.210805`
+### `dpkg` source package: `ros-noetic-image-common=1.12.0-1buster.20221124.055043`
 
 Binary Packages:
 
-- `ros-noetic-image-common=1.12.0-1buster.20220926.210805`
+- `ros-noetic-image-common=1.12.0-1buster.20221124.055043`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -10934,11 +10934,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-image-geometry=1.16.2-1buster.20221003.133758`
+### `dpkg` source package: `ros-noetic-image-geometry=1.16.2-1buster.20221124.045503`
 
 Binary Packages:
 
-- `ros-noetic-image-geometry=1.16.2-1buster.20221003.133758`
+- `ros-noetic-image-geometry=1.16.2-1buster.20221124.045503`
 
 Licenses: (parsed from: `/usr/share/doc/ros-noetic-image-geometry/copyright`)
 
@@ -10948,11 +10948,67 @@ Licenses: (parsed from: `/usr/share/doc/ros-noetic-image-geometry/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-image-pipeline=1.16.0-1buster.20221003.142610`
+### `dpkg` source package: `ros-noetic-image-pipeline=1.17.0-1buster.20221124.055737`
 
 Binary Packages:
 
-- `ros-noetic-image-pipeline=1.16.0-1buster.20221003.142610`
+- `ros-noetic-image-pipeline=1.17.0-1buster.20221124.055737`
+
+Licenses: (parsed from: `/usr/share/doc/ros-noetic-image-pipeline/copyright`)
+
+- `BSD`
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `ros-noetic-image-proc=1.17.0-1buster.20221124.045950`
+
+Binary Packages:
+
+- `ros-noetic-image-proc=1.17.0-1buster.20221124.045950`
+
+Licenses: (parsed from: `/usr/share/doc/ros-noetic-image-proc/copyright`)
+
+- `BSD`
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `ros-noetic-image-publisher=1.17.0-1buster.20221124.035605`
+
+Binary Packages:
+
+- `ros-noetic-image-publisher=1.17.0-1buster.20221124.035605`
+
+Licenses: (parsed from: `/usr/share/doc/ros-noetic-image-publisher/copyright`)
+
+- `BSD`
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `ros-noetic-image-rotate=1.17.0-1buster.20221124.040241`
+
+Binary Packages:
+
+- `ros-noetic-image-rotate=1.17.0-1buster.20221124.040241`
+
+Licenses: (parsed from: `/usr/share/doc/ros-noetic-image-rotate/copyright`)
+
+- `BSD`
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `ros-noetic-image-transport-plugins=1.14.0-1buster.20221124.055851`
+
+Binary Packages:
+
+- `ros-noetic-image-transport-plugins=1.14.0-1buster.20221124.055851`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -10962,11 +11018,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-image-proc=1.16.0-1buster.20221003.134225`
+### `dpkg` source package: `ros-noetic-image-transport=1.12.0-1buster.20221124.032625`
 
 Binary Packages:
 
-- `ros-noetic-image-proc=1.16.0-1buster.20221003.134225`
+- `ros-noetic-image-transport=1.12.0-1buster.20221124.032625`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -10976,11 +11032,25 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-image-publisher=1.16.0-1buster.20221003.140143`
+### `dpkg` source package: `ros-noetic-image-view=1.17.0-1buster.20221124.050042`
 
 Binary Packages:
 
-- `ros-noetic-image-publisher=1.16.0-1buster.20221003.140143`
+- `ros-noetic-image-view=1.17.0-1buster.20221124.050042`
+
+Licenses: (parsed from: `/usr/share/doc/ros-noetic-image-view/copyright`)
+
+- `BSD`
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `ros-noetic-laser-assembler=1.7.8-1buster.20221124.040911`
+
+Binary Packages:
+
+- `ros-noetic-laser-assembler=1.7.8-1buster.20221124.040911`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -10990,11 +11060,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-image-rotate=1.16.0-1buster.20221003.135500`
+### `dpkg` source package: `ros-noetic-laser-filters=1.9.0-1buster.20221124.040912`
 
 Binary Packages:
 
-- `ros-noetic-image-rotate=1.16.0-1buster.20221003.135500`
+- `ros-noetic-laser-filters=1.9.0-1buster.20221124.040912`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -11004,11 +11074,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-image-transport-plugins=1.14.0-1buster.20221003.143345`
+### `dpkg` source package: `ros-noetic-laser-geometry=1.6.7-1buster.20221124.040533`
 
 Binary Packages:
 
-- `ros-noetic-image-transport-plugins=1.14.0-1buster.20221003.143345`
+- `ros-noetic-laser-geometry=1.6.7-1buster.20221124.040533`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -11018,11 +11088,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-image-transport=1.12.0-1buster.20220926.192413`
+### `dpkg` source package: `ros-noetic-laser-pipeline=1.6.4-1buster.20221124.060125`
 
 Binary Packages:
 
-- `ros-noetic-image-transport=1.12.0-1buster.20220926.192413`
+- `ros-noetic-laser-pipeline=1.6.4-1buster.20221124.060125`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -11032,81 +11102,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-image-view=1.16.0-1buster.20221003.140141`
+### `dpkg` source package: `ros-noetic-message-filters=1.15.15-1buster.20221124.024618`
 
 Binary Packages:
 
-- `ros-noetic-image-view=1.16.0-1buster.20221003.140141`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
-### `dpkg` source package: `ros-noetic-laser-assembler=1.7.8-1buster.20220926.202131`
-
-Binary Packages:
-
-- `ros-noetic-laser-assembler=1.7.8-1buster.20220926.202131`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
-### `dpkg` source package: `ros-noetic-laser-filters=1.9.0-1buster.20220926.202257`
-
-Binary Packages:
-
-- `ros-noetic-laser-filters=1.9.0-1buster.20220926.202257`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
-### `dpkg` source package: `ros-noetic-laser-geometry=1.6.7-1buster.20220926.201802`
-
-Binary Packages:
-
-- `ros-noetic-laser-geometry=1.6.7-1buster.20220926.201802`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
-### `dpkg` source package: `ros-noetic-laser-pipeline=1.6.4-1buster.20220926.211816`
-
-Binary Packages:
-
-- `ros-noetic-laser-pipeline=1.6.4-1buster.20220926.211816`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
-### `dpkg` source package: `ros-noetic-message-filters=1.15.14-1buster.20220926.190437`
-
-Binary Packages:
-
-- `ros-noetic-message-filters=1.15.14-1buster.20220926.190437`
+- `ros-noetic-message-filters=1.15.15-1buster.20221124.024618`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -11172,11 +11172,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-nodelet-core=1.10.2-1buster.20220926.193315`
+### `dpkg` source package: `ros-noetic-nodelet-core=1.10.2-1buster.20221124.033814`
 
 Binary Packages:
 
-- `ros-noetic-nodelet-core=1.10.2-1buster.20220926.193315`
+- `ros-noetic-nodelet-core=1.10.2-1buster.20221124.033814`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -11186,11 +11186,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-nodelet-topic-tools=1.10.2-1buster.20220926.192422`
+### `dpkg` source package: `ros-noetic-nodelet-topic-tools=1.10.2-1buster.20221124.033053`
 
 Binary Packages:
 
-- `ros-noetic-nodelet-topic-tools=1.10.2-1buster.20220926.192422`
+- `ros-noetic-nodelet-topic-tools=1.10.2-1buster.20221124.033053`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -11200,11 +11200,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-nodelet=1.10.2-1buster.20220926.191228`
+### `dpkg` source package: `ros-noetic-nodelet=1.10.2-1buster.20221124.024231`
 
 Binary Packages:
 
-- `ros-noetic-nodelet=1.10.2-1buster.20220926.191228`
+- `ros-noetic-nodelet=1.10.2-1buster.20221124.024231`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -11214,11 +11214,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-pcl-conversions=1.7.4-1buster.20220926.192127`
+### `dpkg` source package: `ros-noetic-pcl-conversions=1.7.4-1buster.20221124.050042`
 
 Binary Packages:
 
-- `ros-noetic-pcl-conversions=1.7.4-1buster.20220926.192127`
+- `ros-noetic-pcl-conversions=1.7.4-1buster.20221124.050042`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -11228,11 +11228,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-pcl-msgs=0.3.0-1buster.20220926.191706`
+### `dpkg` source package: `ros-noetic-pcl-msgs=0.3.0-1buster.20221124.045745`
 
 Binary Packages:
 
-- `ros-noetic-pcl-msgs=0.3.0-1buster.20220926.191706`
+- `ros-noetic-pcl-msgs=0.3.0-1buster.20221124.045745`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -11242,11 +11242,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-pcl-ros=1.7.4-1buster.20220926.200052`
+### `dpkg` source package: `ros-noetic-pcl-ros=1.7.4-1buster.20221124.051312`
 
 Binary Packages:
 
-- `ros-noetic-pcl-ros=1.7.4-1buster.20220926.200052`
+- `ros-noetic-pcl-ros=1.7.4-1buster.20221124.051312`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -11256,11 +11256,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-perception-pcl=1.7.4-1buster.20220926.205440`
+### `dpkg` source package: `ros-noetic-perception-pcl=1.7.4-1buster.20221124.062311`
 
 Binary Packages:
 
-- `ros-noetic-perception-pcl=1.7.4-1buster.20220926.205440`
+- `ros-noetic-perception-pcl=1.7.4-1buster.20221124.062311`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -11270,11 +11270,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-perception=1.5.0-1buster.20221003.143427`
+### `dpkg` source package: `ros-noetic-perception=1.5.0-1buster.20221124.062612`
 
 Binary Packages:
 
-- `ros-noetic-perception=1.5.0-1buster.20221003.143427`
+- `ros-noetic-perception=1.5.0-1buster.20221124.062612`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -11298,11 +11298,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-polled-camera=1.12.0-1buster.20220926.192811`
+### `dpkg` source package: `ros-noetic-polled-camera=1.12.0-1buster.20221124.033049`
 
 Binary Packages:
 
-- `ros-noetic-polled-camera=1.12.0-1buster.20220926.192811`
+- `ros-noetic-polled-camera=1.12.0-1buster.20221124.033049`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -11312,11 +11312,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-ros-base=1.5.0-1buster.20220926.204153`
+### `dpkg` source package: `ros-noetic-ros-base=1.5.0-1buster.20221124.052130`
 
 Binary Packages:
 
-- `ros-noetic-ros-base=1.5.0-1buster.20220926.204153`
+- `ros-noetic-ros-base=1.5.0-1buster.20221124.052130`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -11326,11 +11326,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-ros-comm=1.15.14-1buster.20220926.194137`
+### `dpkg` source package: `ros-noetic-ros-comm=1.15.15-1buster.20221124.031333`
 
 Binary Packages:
 
-- `ros-noetic-ros-comm=1.15.14-1buster.20220926.194137`
+- `ros-noetic-ros-comm=1.15.15-1buster.20221124.031333`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -11340,11 +11340,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-ros-core=1.5.0-1buster.20220926.194220`
+### `dpkg` source package: `ros-noetic-ros-core=1.5.0-1buster.20221124.052038`
 
 Binary Packages:
 
-- `ros-noetic-ros-core=1.5.0-1buster.20220926.194220`
+- `ros-noetic-ros-core=1.5.0-1buster.20221124.052038`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -11396,11 +11396,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-rosbag-storage=1.15.14-1buster.20220926.190345`
+### `dpkg` source package: `ros-noetic-rosbag-storage=1.15.15-1buster.20221124.024618`
 
 Binary Packages:
 
-- `ros-noetic-rosbag-storage=1.15.14-1buster.20220926.190345`
+- `ros-noetic-rosbag-storage=1.15.15-1buster.20221124.024618`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -11410,11 +11410,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-rosbag=1.15.14-1buster.20220926.190737`
+### `dpkg` source package: `ros-noetic-rosbag=1.15.15-1buster.20221124.025010`
 
 Binary Packages:
 
-- `ros-noetic-rosbag=1.15.14-1buster.20220926.190737`
+- `ros-noetic-rosbag=1.15.15-1buster.20221124.025010`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -11550,11 +11550,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-roscpp=1.15.14-1buster.20220926.182050`
+### `dpkg` source package: `ros-noetic-roscpp=1.15.15-1buster.20221124.021222`
 
 Binary Packages:
 
-- `ros-noetic-roscpp=1.15.14-1buster.20220926.182050`
+- `ros-noetic-roscpp=1.15.15-1buster.20221124.021222`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -11592,11 +11592,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-rosgraph=1.15.14-1buster.20220107.001020`
+### `dpkg` source package: `ros-noetic-rosgraph=1.15.15-1buster.20221124.021026`
 
 Binary Packages:
 
-- `ros-noetic-rosgraph=1.15.14-1buster.20220107.001020`
+- `ros-noetic-rosgraph=1.15.15-1buster.20221124.021026`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -11620,11 +11620,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-roslaunch=1.15.14-1buster.20220926.183135`
+### `dpkg` source package: `ros-noetic-roslaunch=1.15.15-1buster.20221124.024239`
 
 Binary Packages:
 
-- `ros-noetic-roslaunch=1.15.14-1buster.20220926.183135`
+- `ros-noetic-roslaunch=1.15.15-1buster.20221124.024239`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -11662,11 +11662,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-roslz4=1.15.14-1buster.20220106.234007`
+### `dpkg` source package: `ros-noetic-roslz4=1.15.15-1buster.20221124.021024`
 
 Binary Packages:
 
-- `ros-noetic-roslz4=1.15.14-1buster.20220106.234007`
+- `ros-noetic-roslz4=1.15.15-1buster.20221124.021024`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -11690,11 +11690,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-rosmaster=1.15.14-1buster.20220107.001222`
+### `dpkg` source package: `ros-noetic-rosmaster=1.15.15-1buster.20221124.021330`
 
 Binary Packages:
 
-- `ros-noetic-rosmaster=1.15.14-1buster.20220107.001222`
+- `ros-noetic-rosmaster=1.15.15-1buster.20221124.021330`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -11704,11 +11704,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-rosmsg=1.15.14-1buster.20220926.191118`
+### `dpkg` source package: `ros-noetic-rosmsg=1.15.15-1buster.20221124.030820`
 
 Binary Packages:
 
-- `ros-noetic-rosmsg=1.15.14-1buster.20220926.191118`
+- `ros-noetic-rosmsg=1.15.15-1buster.20221124.030820`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -11718,11 +11718,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-rosnode=1.15.14-1buster.20220926.193702`
+### `dpkg` source package: `ros-noetic-rosnode=1.15.15-1buster.20221124.025627`
 
 Binary Packages:
 
-- `ros-noetic-rosnode=1.15.14-1buster.20220926.193702`
+- `ros-noetic-rosnode=1.15.15-1buster.20221124.025627`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -11732,11 +11732,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-rosout=1.15.14-1buster.20220926.182929`
+### `dpkg` source package: `ros-noetic-rosout=1.15.15-1buster.20221124.023537`
 
 Binary Packages:
 
-- `ros-noetic-rosout=1.15.14-1buster.20220926.182929`
+- `ros-noetic-rosout=1.15.15-1buster.20221124.023537`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -11760,11 +11760,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-rosparam=1.15.14-1buster.20220107.001422`
+### `dpkg` source package: `ros-noetic-rosparam=1.15.15-1buster.20221124.021522`
 
 Binary Packages:
 
-- `ros-noetic-rosparam=1.15.14-1buster.20220107.001422`
+- `ros-noetic-rosparam=1.15.15-1buster.20221124.021522`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -11774,11 +11774,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-rospy=1.15.14-1buster.20220926.185218`
+### `dpkg` source package: `ros-noetic-rospy=1.15.15-1buster.20221124.023548`
 
 Binary Packages:
 
-- `ros-noetic-rospy=1.15.14-1buster.20220926.185218`
+- `ros-noetic-rospy=1.15.15-1buster.20221124.023548`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -11788,11 +11788,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-rosservice=1.15.14-1buster.20220926.191359`
+### `dpkg` source package: `ros-noetic-rosservice=1.15.15-1buster.20221124.031020`
 
 Binary Packages:
 
-- `ros-noetic-rosservice=1.15.14-1buster.20220926.191359`
+- `ros-noetic-rosservice=1.15.15-1buster.20221124.031020`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -11802,11 +11802,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-rostest=1.15.14-1buster.20220926.190003`
+### `dpkg` source package: `ros-noetic-rostest=1.15.15-1buster.20221124.024418`
 
 Binary Packages:
 
-- `ros-noetic-rostest=1.15.14-1buster.20220926.190003`
+- `ros-noetic-rostest=1.15.15-1buster.20221124.024418`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -11830,11 +11830,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-rostopic=1.15.14-1buster.20220926.191133`
+### `dpkg` source package: `ros-noetic-rostopic=1.15.15-1buster.20221124.025421`
 
 Binary Packages:
 
-- `ros-noetic-rostopic=1.15.14-1buster.20220926.191133`
+- `ros-noetic-rostopic=1.15.15-1buster.20221124.025421`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -11858,11 +11858,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-roswtf=1.15.14-1buster.20220926.193941`
+### `dpkg` source package: `ros-noetic-roswtf=1.15.15-1buster.20221124.031148`
 
 Binary Packages:
 
-- `ros-noetic-roswtf=1.15.14-1buster.20220926.193941`
+- `ros-noetic-roswtf=1.15.15-1buster.20221124.031148`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -11872,11 +11872,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-sensor-msgs=1.13.1-1buster.20220926.191143`
+### `dpkg` source package: `ros-noetic-sensor-msgs=1.13.1-1buster.20221124.030820`
 
 Binary Packages:
 
-- `ros-noetic-sensor-msgs=1.13.1-1buster.20220926.191143`
+- `ros-noetic-sensor-msgs=1.13.1-1buster.20221124.030820`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -11942,11 +11942,25 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-stereo-image-proc=1.16.0-1buster.20221003.134738`
+### `dpkg` source package: `ros-noetic-stereo-image-proc=1.17.0-1buster.20221124.051801`
 
 Binary Packages:
 
-- `ros-noetic-stereo-image-proc=1.16.0-1buster.20221003.134738`
+- `ros-noetic-stereo-image-proc=1.17.0-1buster.20221124.051801`
+
+Licenses: (parsed from: `/usr/share/doc/ros-noetic-stereo-image-proc/copyright`)
+
+- `BSD`
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `ros-noetic-stereo-msgs=1.13.1-1buster.20221124.045813`
+
+Binary Packages:
+
+- `ros-noetic-stereo-msgs=1.13.1-1buster.20221124.045813`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -11956,11 +11970,95 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-stereo-msgs=1.13.1-1buster.20220926.191714`
+### `dpkg` source package: `ros-noetic-tf2-eigen=0.7.6-1buster.20221014.221738`
 
 Binary Packages:
 
-- `ros-noetic-stereo-msgs=1.13.1-1buster.20220926.191714`
+- `ros-noetic-tf2-eigen=0.7.6-1buster.20221014.221738`
+
+Licenses: (parsed from: `/usr/share/doc/ros-noetic-tf2-eigen/copyright`)
+
+- `BSD`
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `ros-noetic-tf2-geometry-msgs=0.7.6-1buster.20221124.035946`
+
+Binary Packages:
+
+- `ros-noetic-tf2-geometry-msgs=0.7.6-1buster.20221124.035946`
+
+Licenses: (parsed from: `/usr/share/doc/ros-noetic-tf2-geometry-msgs/copyright`)
+
+- `BSD`
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `ros-noetic-tf2-msgs=0.7.6-1buster.20221014.221244`
+
+Binary Packages:
+
+- `ros-noetic-tf2-msgs=0.7.6-1buster.20221014.221244`
+
+Licenses: (parsed from: `/usr/share/doc/ros-noetic-tf2-msgs/copyright`)
+
+- `BSD`
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `ros-noetic-tf2-py=0.7.6-1buster.20221124.024043`
+
+Binary Packages:
+
+- `ros-noetic-tf2-py=0.7.6-1buster.20221124.024043`
+
+Licenses: (parsed from: `/usr/share/doc/ros-noetic-tf2-py/copyright`)
+
+- `BSD`
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `ros-noetic-tf2-ros=0.7.6-1buster.20221124.035404`
+
+Binary Packages:
+
+- `ros-noetic-tf2-ros=0.7.6-1buster.20221124.035404`
+
+Licenses: (parsed from: `/usr/share/doc/ros-noetic-tf2-ros/copyright`)
+
+- `BSD`
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `ros-noetic-tf2=0.7.6-1buster.20221014.221501`
+
+Binary Packages:
+
+- `ros-noetic-tf2=0.7.6-1buster.20221014.221501`
+
+Licenses: (parsed from: `/usr/share/doc/ros-noetic-tf2/copyright`)
+
+- `BSD`
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `ros-noetic-tf=1.13.2-1buster.20221124.035748`
+
+Binary Packages:
+
+- `ros-noetic-tf=1.13.2-1buster.20221124.035748`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -11970,11 +12068,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-tf2-eigen=0.7.5-1buster.20220926.182121`
+### `dpkg` source package: `ros-noetic-theora-image-transport=1.14.0-1buster.20221124.035714`
 
 Binary Packages:
 
-- `ros-noetic-tf2-eigen=0.7.5-1buster.20220926.182121`
+- `ros-noetic-theora-image-transport=1.14.0-1buster.20221124.035714`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -11984,109 +12082,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-tf2-geometry-msgs=0.7.5-1buster.20220926.195033`
+### `dpkg` source package: `ros-noetic-topic-tools=1.15.15-1buster.20221124.024622`
 
 Binary Packages:
 
-- `ros-noetic-tf2-geometry-msgs=0.7.5-1buster.20220926.195033`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
-### `dpkg` source package: `ros-noetic-tf2-msgs=0.7.5-1buster.20220926.181732`
-
-Binary Packages:
-
-- `ros-noetic-tf2-msgs=0.7.5-1buster.20220926.181732`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
-### `dpkg` source package: `ros-noetic-tf2-py=0.7.5-1buster.20220926.185611`
-
-Binary Packages:
-
-- `ros-noetic-tf2-py=0.7.5-1buster.20220926.185611`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
-### `dpkg` source package: `ros-noetic-tf2-ros=0.7.5-1buster.20220926.194539`
-
-Binary Packages:
-
-- `ros-noetic-tf2-ros=0.7.5-1buster.20220926.194539`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
-### `dpkg` source package: `ros-noetic-tf2=0.7.5-1buster.20220926.181922`
-
-Binary Packages:
-
-- `ros-noetic-tf2=0.7.5-1buster.20220926.181922`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
-### `dpkg` source package: `ros-noetic-tf=1.13.2-1buster.20220926.195008`
-
-Binary Packages:
-
-- `ros-noetic-tf=1.13.2-1buster.20220926.195008`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
-### `dpkg` source package: `ros-noetic-theora-image-transport=1.14.0-1buster.20221003.140341`
-
-Binary Packages:
-
-- `ros-noetic-theora-image-transport=1.14.0-1buster.20221003.140341`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
-### `dpkg` source package: `ros-noetic-topic-tools=1.15.14-1buster.20220926.190326`
-
-Binary Packages:
-
-- `ros-noetic-topic-tools=1.15.14-1buster.20220926.190326`
+- `ros-noetic-topic-tools=1.15.15-1buster.20221124.024622`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -12110,11 +12110,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-vision-opencv=1.16.2-1buster.20221003.134105`
+### `dpkg` source package: `ros-noetic-vision-opencv=1.16.2-1buster.20221124.055615`
 
 Binary Packages:
 
-- `ros-noetic-vision-opencv=1.16.2-1buster.20221003.134105`
+- `ros-noetic-vision-opencv=1.16.2-1buster.20221124.055615`
 
 Licenses: (parsed from: `/usr/share/doc/ros-noetic-vision-opencv/copyright`)
 
@@ -12138,11 +12138,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-noetic-xmlrpcpp=1.15.14-1buster.20220107.000417`
+### `dpkg` source package: `ros-noetic-xmlrpcpp=1.15.15-1buster.20221124.021036`
 
 Binary Packages:
 
-- `ros-noetic-xmlrpcpp=1.15.14-1buster.20220107.000417`
+- `ros-noetic-xmlrpcpp=1.15.15-1buster.20221124.021036`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -13025,12 +13025,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tk8.6/8.6.9-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tk8.6/8.6.9-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `twisted=18.9.0-3+deb10u1`
+### `dpkg` source package: `twisted=18.9.0-3+deb10u2`
 
 Binary Packages:
 
-- `python3-twisted=18.9.0-3+deb10u1`
-- `python3-twisted-bin:amd64=18.9.0-3+deb10u1`
+- `python3-twisted=18.9.0-3+deb10u2`
+- `python3-twisted-bin:amd64=18.9.0-3+deb10u2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -13039,17 +13039,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris twisted=18.9.0-3+deb10u1
-'http://deb.debian.org/debian/pool/main/t/twisted/twisted_18.9.0-3%2bdeb10u1.dsc' twisted_18.9.0-3+deb10u1.dsc 3007 SHA256:cfcdc1a6ff8c46407ba2c355db16b39e085391d1775f956401dae4b51844be5b
-'http://deb.debian.org/debian/pool/main/t/twisted/twisted_18.9.0.orig.tar.bz2' twisted_18.9.0.orig.tar.bz2 3088398 SHA256:294be2c6bf84ae776df2fc98e7af7d6537e1c5e60a46d33c3ce2a197677da395
-'http://deb.debian.org/debian/pool/main/t/twisted/twisted_18.9.0-3%2bdeb10u1.debian.tar.xz' twisted_18.9.0-3+deb10u1.debian.tar.xz 52252 SHA256:d8f9a768dc53473d396886ac967d3fb68493400da59d2efe02c52cad51be0602
+$ apt-get source -qq --print-uris twisted=18.9.0-3+deb10u2
+'http://deb.debian.org/debian-security/pool/updates/main/t/twisted/twisted_18.9.0-3%2bdeb10u2.dsc' twisted_18.9.0-3+deb10u2.dsc 3048 SHA256:cbd9723de3216481e59633794b9974aa606d03eeb93db6756d95e21135f85d20
+'http://deb.debian.org/debian-security/pool/updates/main/t/twisted/twisted_18.9.0.orig.tar.bz2' twisted_18.9.0.orig.tar.bz2 3088398 SHA256:294be2c6bf84ae776df2fc98e7af7d6537e1c5e60a46d33c3ce2a197677da395
+'http://deb.debian.org/debian-security/pool/updates/main/t/twisted/twisted_18.9.0-3%2bdeb10u2.debian.tar.xz' twisted_18.9.0-3+deb10u2.debian.tar.xz 52768 SHA256:d8a6c5ee7d84f473a64d46c3e6c02738bb222a350dff14b92cb63fa815ef6691
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/twisted/18.9.0-3+deb10u1/ (for browsing the source)
-- https://sources.debian.net/src/twisted/18.9.0-3+deb10u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/twisted/18.9.0-3+deb10u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/twisted/18.9.0-3+deb10u2/ (for browsing the source)
+- https://sources.debian.net/src/twisted/18.9.0-3+deb10u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/twisted/18.9.0-3+deb10u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `twolame=0.3.13-4`
 
