@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ddca7e4aac2a7164b1a670f8259506615e53f253b7a14ae1aec0c1688eda4afc`
-- Created: `2022-12-06T01:30:45.094148596Z`
+- Image ID: `sha256:4318aabd7fa84a82c7a453ef74ff66f10bd5dd22ba4be77488f7824e98821cac`
+- Created: `2022-12-09T02:38:17.000950489Z`
 - Virtual Size: ~ 703.01 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -670,19 +670,19 @@ $ apt-get source -qq --print-uris gzip=1.10-0ubuntu4.1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.10-0ubuntu4.1.debian.tar.xz' gzip_1.10-0ubuntu4.1.debian.tar.xz 31144 SHA512:26096584c400dc78d892f1721ad28778aa1a0c0476337bd37589c6d985f8636aad9c7fde55385c25ce1c8420a40c6ca33c06887f18b855ba8a5f45b980fe6c99
 ```
 
-### `dpkg` source package: `heimdal=7.7.0+dfsg-1ubuntu1.1`
+### `dpkg` source package: `heimdal=7.7.0+dfsg-1ubuntu1.2`
 
 Binary Packages:
 
-- `libasn1-8-heimdal:amd64=7.7.0+dfsg-1ubuntu1.1`
-- `libgssapi3-heimdal:amd64=7.7.0+dfsg-1ubuntu1.1`
-- `libhcrypto4-heimdal:amd64=7.7.0+dfsg-1ubuntu1.1`
-- `libheimbase1-heimdal:amd64=7.7.0+dfsg-1ubuntu1.1`
-- `libheimntlm0-heimdal:amd64=7.7.0+dfsg-1ubuntu1.1`
-- `libhx509-5-heimdal:amd64=7.7.0+dfsg-1ubuntu1.1`
-- `libkrb5-26-heimdal:amd64=7.7.0+dfsg-1ubuntu1.1`
-- `libroken18-heimdal:amd64=7.7.0+dfsg-1ubuntu1.1`
-- `libwind0-heimdal:amd64=7.7.0+dfsg-1ubuntu1.1`
+- `libasn1-8-heimdal:amd64=7.7.0+dfsg-1ubuntu1.2`
+- `libgssapi3-heimdal:amd64=7.7.0+dfsg-1ubuntu1.2`
+- `libhcrypto4-heimdal:amd64=7.7.0+dfsg-1ubuntu1.2`
+- `libheimbase1-heimdal:amd64=7.7.0+dfsg-1ubuntu1.2`
+- `libheimntlm0-heimdal:amd64=7.7.0+dfsg-1ubuntu1.2`
+- `libhx509-5-heimdal:amd64=7.7.0+dfsg-1ubuntu1.2`
+- `libkrb5-26-heimdal:amd64=7.7.0+dfsg-1ubuntu1.2`
+- `libroken18-heimdal:amd64=7.7.0+dfsg-1ubuntu1.2`
+- `libwind0-heimdal:amd64=7.7.0+dfsg-1ubuntu1.2`
 
 Licenses: (parsed from: `/usr/share/doc/libasn1-8-heimdal/copyright`, `/usr/share/doc/libgssapi3-heimdal/copyright`, `/usr/share/doc/libhcrypto4-heimdal/copyright`, `/usr/share/doc/libheimbase1-heimdal/copyright`, `/usr/share/doc/libheimntlm0-heimdal/copyright`, `/usr/share/doc/libhx509-5-heimdal/copyright`, `/usr/share/doc/libkrb5-26-heimdal/copyright`, `/usr/share/doc/libroken18-heimdal/copyright`, `/usr/share/doc/libwind0-heimdal/copyright`)
 
@@ -692,9 +692,14 @@ Licenses: (parsed from: `/usr/share/doc/libasn1-8-heimdal/copyright`, `/usr/shar
 - `custom`
 - `none`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris heimdal=7.7.0+dfsg-1ubuntu1.2
+'http://archive.ubuntu.com/ubuntu/pool/main/h/heimdal/heimdal_7.7.0%2bdfsg-1ubuntu1.2.dsc' heimdal_7.7.0+dfsg-1ubuntu1.2.dsc 3391 SHA512:fb1f48d402dcc3b7e514f6f95c4b086eb00527194c86e1c7acbc5eb250cbba01e5dc28e114995c0b5fcc161281488db1969543e6de81aa48298fe266bf995d95
+'http://archive.ubuntu.com/ubuntu/pool/main/h/heimdal/heimdal_7.7.0%2bdfsg.orig.tar.xz' heimdal_7.7.0+dfsg.orig.tar.xz 5945252 SHA512:14141f3fff264c9516f736bcc51c998df69cfaa7108d2387921299efd7e82d79b918dee4029905dc221c204d3340ffc17da9472baf80029372d7c13de328ec0a
+'http://archive.ubuntu.com/ubuntu/pool/main/h/heimdal/heimdal_7.7.0%2bdfsg-1ubuntu1.2.debian.tar.xz' heimdal_7.7.0+dfsg-1ubuntu1.2.debian.tar.xz 130884 SHA512:72cabaa0c299e821da0290cc4bca35de824a36ab6eb4b07eb536e950065bc984d9c590f573d8562c237af194215d0ef841175583102853ae93dd2eb7126f1b3d
+```
 
 ### `dpkg` source package: `hostname=3.23`
 
@@ -1751,20 +1756,25 @@ $ apt-get source -qq --print-uris sensible-utils=0.0.12+nmu1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sensible-utils/sensible-utils_0.0.12%2bnmu1.tar.xz' sensible-utils_0.0.12+nmu1.tar.xz 61988 SHA256:53c6606facf083adbbf0da04e6d774b31ff3f46c7ba36a82d3f182779f4c3f5b
 ```
 
-### `dpkg` source package: `shadow=1:4.8.1-1ubuntu5.20.04.2`
+### `dpkg` source package: `shadow=1:4.8.1-1ubuntu5.20.04.4`
 
 Binary Packages:
 
-- `login=1:4.8.1-1ubuntu5.20.04.2`
-- `passwd=1:4.8.1-1ubuntu5.20.04.2`
+- `login=1:4.8.1-1ubuntu5.20.04.4`
+- `passwd=1:4.8.1-1ubuntu5.20.04.4`
 
 Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris shadow=1:4.8.1-1ubuntu5.20.04.4
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1-1ubuntu5.20.04.4.dsc' shadow_4.8.1-1ubuntu5.20.04.4.dsc 2081 SHA512:1968b47f4f96a0e846e478225362e29f2531dd1b4ded802bef531f989ce8972dfccf13e5a8f538a5e8d9f83ce2b9572cc7d7b57dcad59dcbc0d6bb2318cd51a6
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1.orig.tar.xz' shadow_4.8.1.orig.tar.xz 1611196 SHA512:780a983483d847ed3c91c82064a0fa902b6f4185225978241bc3bc03fcc3aa143975b46aee43151c6ba43efcfdb1819516b76ba7ad3d1d3c34fcc38ea42e917b
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1-1ubuntu5.20.04.4.debian.tar.xz' shadow_4.8.1-1ubuntu5.20.04.4.debian.tar.xz 86684 SHA512:8e70ed00983db7bf2b182812cfa9d8c6151de836bacfdf23fbefea37419a72b6be0e126ad2f085ea46aff25de99e66470206cb91259a09b1f6852cb83ca1fb3f
+```
 
 ### `dpkg` source package: `sqlite3=3.31.1-4ubuntu0.5`
 
@@ -1788,12 +1798,12 @@ $ apt-get source -qq --print-uris sqlite3=3.31.1-4ubuntu0.5
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1-4ubuntu0.5.debian.tar.xz' sqlite3_3.31.1-4ubuntu0.5.debian.tar.xz 35824 SHA512:9a0a273044c4dd39856ba378c3c70c3bf3796179bb4e8e66e38b1895148cf286eceb1aac8fd8a45a026c4c6c9a311f64e3baee93d82fdb1b844806df1f41c20a
 ```
 
-### `dpkg` source package: `systemd=245.4-4ubuntu3.18`
+### `dpkg` source package: `systemd=245.4-4ubuntu3.19`
 
 Binary Packages:
 
-- `libsystemd0:amd64=245.4-4ubuntu3.18`
-- `libudev1:amd64=245.4-4ubuntu3.18`
+- `libsystemd0:amd64=245.4-4ubuntu3.19`
+- `libudev1:amd64=245.4-4ubuntu3.19`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1806,9 +1816,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=245.4-4ubuntu3.19
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.19.dsc' systemd_245.4-4ubuntu3.19.dsc 5262 SHA512:aca2dbafb5592e58c927579f33e8640e38fb060a64a810cff913bfdd98e027ecae5721d1e0297a4ec92ea59c5741a79b688953f6ae97a0c9fdc62a02108a3bd3
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4.orig.tar.gz' systemd_245.4.orig.tar.gz 9000780 SHA512:02036bb1ab05301a9d0dfdd4b9c9376e90134474482531e6e292122380be2f24f99177493dd3af6f8af1a8ed2599ee0996da91a3b1b7872bbfaf26a1c3e61b4c
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.19.debian.tar.xz' systemd_245.4-4ubuntu3.19.debian.tar.xz 283052 SHA512:449accbf74d703448dec6ebdcefcb51c56d921f13799843ffbbccaecddef6a117fceb353f13f3e24516da978e0b19daee1de64b4a38382f15913cbf3fb896ba8
+```
 
 ### `dpkg` source package: `sysvinit=2.96-2.1ubuntu1`
 
