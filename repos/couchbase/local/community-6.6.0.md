@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e90f2ecc7c1d1a8125c5eee0ac919ccafcf279b235374a70bedb052ac4ede914`
-- Created: `2022-10-25T16:05:32.736892392Z`
-- Virtual Size: ~ 775.38 Mb  
+- Image ID: `sha256:923dd5bef970725d87573f3f56551267ab8c9b44b601de11fe65a833763d405c`
+- Created: `2022-12-09T06:20:20.132574257Z`
+- Virtual Size: ~ 775.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -192,11 +192,11 @@ $ apt-get source -qq --print-uris bzip2=1.0.6-8.1ubuntu0.2
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.6-8.1ubuntu0.2.debian.tar.bz2' bzip2_1.0.6-8.1ubuntu0.2.debian.tar.bz2 61477 SHA512:f895cded216bd210eed7356be97630de75f650bb40d3bb0c7a26b0fadf9991188005ab1c5438e4b8f95614e6ff8c2ad5b2a94f0cc048580bcdc387a219ba7495
 ```
 
-### `dpkg` source package: `ca-certificates=20211016~18.04.1`
+### `dpkg` source package: `ca-certificates=20211016ubuntu0.18.04.1`
 
 Binary Packages:
 
-- `ca-certificates=20211016~18.04.1`
+- `ca-certificates=20211016ubuntu0.18.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -204,9 +204,13 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris ca-certificates=20211016ubuntu0.18.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20211016ubuntu0.18.04.1.dsc' ca-certificates_20211016ubuntu0.18.04.1.dsc 1937 SHA512:6fb280d77de73d651e65b9c40f08c906516e5210e77bf87a06e81890124eb821f6db5998d0956af2ad07de930ac0c16086db6216062b8d7a8d16061db489f497
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20211016ubuntu0.18.04.1.tar.xz' ca-certificates_20211016ubuntu0.18.04.1.tar.xz 238868 SHA512:35d6b660088d22c90322eb01fd49349b85883f34a43a69faea011c936021d41ab961ac71053ab46ebc17a39026aca1c121c86bfec3b698bf11b0279ab072a24c
+```
 
 ### `dpkg` source package: `cdebconf=0.213ubuntu1`
 
@@ -1447,35 +1451,45 @@ $ apt-get source -qq --print-uris sensible-utils=0.0.12
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sensible-utils/sensible-utils_0.0.12.tar.xz' sensible-utils_0.0.12.tar.xz 62152 SHA256:99ba2ebf8c57447c69d426b99b84ff9dc817be0bc4988ec6890a14558c529e2e
 ```
 
-### `dpkg` source package: `shadow=1:4.5-1ubuntu2.3`
+### `dpkg` source package: `shadow=1:4.5-1ubuntu2.5`
 
 Binary Packages:
 
-- `login=1:4.5-1ubuntu2.3`
-- `passwd=1:4.5-1ubuntu2.3`
+- `login=1:4.5-1ubuntu2.5`
+- `passwd=1:4.5-1ubuntu2.5`
 
 Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris shadow=1:4.5-1ubuntu2.5
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.5-1ubuntu2.5.dsc' shadow_4.5-1ubuntu2.5.dsc 2105 SHA512:5753e1aebcc18abe88c5143ca18e6a8da3aa622a601aa785bbc44ff01bb57030de02d2c59f8f4cff7da77b0dc77725b7a52bed6622cce8c01c908e5692c8bf8a
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.5.orig.tar.xz' shadow_4.5.orig.tar.xz 1344524 SHA512:4278544efdd6d800a3c46cfcb144f209ace14ebe017ba1c0d05425fac7868062a73afa8522036a2bc0a16f6f1e7c16373a204463221012367ce0e8e9ef4c4a4d
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.5-1ubuntu2.5.debian.tar.xz' shadow_4.5-1ubuntu2.5.debian.tar.xz 473964 SHA512:9bfcc493e74c384e7fc6c54616590283b00972c853862999659e88c521fe38b81a8ad1ea7a910aabdc293bbd4eefffe46d1624c823c3f239a4eb7dd509ec929c
+```
 
-### `dpkg` source package: `sysstat=11.6.1-1ubuntu0.1`
+### `dpkg` source package: `sysstat=11.6.1-1ubuntu0.2`
 
 Binary Packages:
 
-- `sysstat=11.6.1-1ubuntu0.1`
+- `sysstat=11.6.1-1ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/sysstat/copyright`)
 
 - `GPL-2`
 - `GPL-2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris sysstat=11.6.1-1ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sysstat/sysstat_11.6.1-1ubuntu0.2.dsc' sysstat_11.6.1-1ubuntu0.2.dsc 2066 SHA512:7b7974e0c6399e3f5a26ca80d015b12d6998301fabc27582efc3c0b2e2037d69d9530fb5c7ea004c6c77b41e59cf835b7c16716c466a87a5e9920a112ea2f30a
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sysstat/sysstat_11.6.1.orig.tar.xz' sysstat_11.6.1.orig.tar.xz 470584 SHA512:55b3c361f7cda3d5efc0a42bef26d154c159a465ef45b56d2567f38aeec8c935c4e3b65a92eaf996abbf2d6a2604b2b8bba95741d707e8f387c9fadc05fafa93
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sysstat/sysstat_11.6.1-1ubuntu0.2.debian.tar.xz' sysstat_11.6.1-1ubuntu0.2.debian.tar.xz 33556 SHA512:079f6d39702710614dbaecb954776409fe1d37a9ce645ed4db9c18c35c2f3a471bf356e55f6b6314e27107040d7272fec2ef939501073de4376bf5ebfb3217bc
+```
 
 ### `dpkg` source package: `systemd=237-3ubuntu10.56`
 
@@ -1542,19 +1556,25 @@ $ apt-get source -qq --print-uris tar=1.29b-2ubuntu0.3
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.29b-2ubuntu0.3.debian.tar.xz' tar_1.29b-2ubuntu0.3.debian.tar.xz 35080 SHA512:4808285a3ea5903a7c61be297e2c2cb41654facd68397966a91ae5ebd2381e196cb159c2cec3bcf8f26b24d913764fd4d178670a324ca4daf8ee78050acd7cb2
 ```
 
-### `dpkg` source package: `tzdata=2022c-0ubuntu0.18.04.0`
+### `dpkg` source package: `tzdata=2022f-0ubuntu0.18.04.0`
 
 Binary Packages:
 
-- `tzdata=2022c-0ubuntu0.18.04.0`
+- `tzdata=2022f-0ubuntu0.18.04.0`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2022f-0ubuntu0.18.04.0
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022f-0ubuntu0.18.04.0.dsc' tzdata_2022f-0ubuntu0.18.04.0.dsc 2376 SHA512:d233aa9474b5668a8c3ca6c44d2ac74eba0cce85d760a5e97d98ee0e8f686744174cdfacbec98b69d59ae6c1194bc1e91071ac6effec8363cd8be234908990b5
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022f.orig.tar.gz' tzdata_2022f.orig.tar.gz 436352 SHA512:72d05d05be999075cdf57b896c0f4238b1b862d4d0ed92cc611736592a4ada14d47bd7f0fc8be39e7938a7f5940a903c8af41e87859482bcfab787d889d429f6
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022f.orig.tar.gz.asc' tzdata_2022f.orig.tar.gz.asc 833 SHA512:51a8bd86a94f36f6c1bae4929b9f9370153bf68d75fdfe44b94edd2204dcfa421dcb714357879e81a8f327fc24a6a0281420343795cb220ba5f6a656ac548c9e
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022f-0ubuntu0.18.04.0.debian.tar.xz' tzdata_2022f-0ubuntu0.18.04.0.debian.tar.xz 107004 SHA512:92645d4427fe7d266aa155752565d13a0f9cbc57653a78d95a1403bc8e55ba0ec29815130f2fdb3f2b91f754a1ebc333bde8a62a1f0b28a0eeb0ce25e3c54891
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2018.09.18.1~18.04.2`
 

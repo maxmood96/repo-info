@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:963f25a429eb63c59a94b76e4243e00d3b1cbf41c85283651b91d185c214fbe7`
-- Created: `2022-10-25T16:04:10.772985067Z`
+- Image ID: `sha256:5fae86ee58b690ce1bbe419c0f330662ee59c03bf9bb4b833832b01b01ad4573`
+- Created: `2022-12-09T06:18:44.760300473Z`
 - Virtual Size: ~ 1.16 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -199,11 +199,11 @@ $ apt-get source -qq --print-uris bzip2=1.0.8-2
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.8-2.debian.tar.bz2' bzip2_1.0.8-2.debian.tar.bz2 26032 SHA256:237c8619bc9bc16f357b1077064a3e58aa1a230dadb4b9bb3bd8dc8f454afc0b
 ```
 
-### `dpkg` source package: `ca-certificates=20211016~20.04.1`
+### `dpkg` source package: `ca-certificates=20211016ubuntu0.20.04.1`
 
 Binary Packages:
 
-- `ca-certificates=20211016~20.04.1`
+- `ca-certificates=20211016ubuntu0.20.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -211,9 +211,13 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris ca-certificates=20211016ubuntu0.20.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20211016ubuntu0.20.04.1.dsc' ca-certificates_20211016ubuntu0.20.04.1.dsc 1945 SHA512:0b5042d12f3bae34aacf5a7818825d0a7599004a46c7259d92523ccacfbd9d5198322fe0eeaf6326e20cf7a4ce921ee78b31810be23f236d6b3934662097dfd2
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20211016ubuntu0.20.04.1.tar.xz' ca-certificates_20211016ubuntu0.20.04.1.tar.xz 239136 SHA512:4c277cc5d56f1b1bb7c715db8a0040e9fb87dba66c584c466c6960dd152c07da7810df06fee2d8247665668d81cb258ffb7f5bd91da77742a348a080b18740a1
+```
 
 ### `dpkg` source package: `cdebconf=0.251ubuntu1`
 
@@ -1524,42 +1528,52 @@ $ apt-get source -qq --print-uris sensible-utils=0.0.12+nmu1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sensible-utils/sensible-utils_0.0.12%2bnmu1.tar.xz' sensible-utils_0.0.12+nmu1.tar.xz 61988 SHA256:53c6606facf083adbbf0da04e6d774b31ff3f46c7ba36a82d3f182779f4c3f5b
 ```
 
-### `dpkg` source package: `shadow=1:4.8.1-1ubuntu5.20.04.2`
+### `dpkg` source package: `shadow=1:4.8.1-1ubuntu5.20.04.4`
 
 Binary Packages:
 
-- `login=1:4.8.1-1ubuntu5.20.04.2`
-- `passwd=1:4.8.1-1ubuntu5.20.04.2`
+- `login=1:4.8.1-1ubuntu5.20.04.4`
+- `passwd=1:4.8.1-1ubuntu5.20.04.4`
 
 Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris shadow=1:4.8.1-1ubuntu5.20.04.4
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1-1ubuntu5.20.04.4.dsc' shadow_4.8.1-1ubuntu5.20.04.4.dsc 2081 SHA512:1968b47f4f96a0e846e478225362e29f2531dd1b4ded802bef531f989ce8972dfccf13e5a8f538a5e8d9f83ce2b9572cc7d7b57dcad59dcbc0d6bb2318cd51a6
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1.orig.tar.xz' shadow_4.8.1.orig.tar.xz 1611196 SHA512:780a983483d847ed3c91c82064a0fa902b6f4185225978241bc3bc03fcc3aa143975b46aee43151c6ba43efcfdb1819516b76ba7ad3d1d3c34fcc38ea42e917b
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1-1ubuntu5.20.04.4.debian.tar.xz' shadow_4.8.1-1ubuntu5.20.04.4.debian.tar.xz 86684 SHA512:8e70ed00983db7bf2b182812cfa9d8c6151de836bacfdf23fbefea37419a72b6be0e126ad2f085ea46aff25de99e66470206cb91259a09b1f6852cb83ca1fb3f
+```
 
-### `dpkg` source package: `sysstat=12.2.0-2ubuntu0.1`
+### `dpkg` source package: `sysstat=12.2.0-2ubuntu0.2`
 
 Binary Packages:
 
-- `sysstat=12.2.0-2ubuntu0.1`
+- `sysstat=12.2.0-2ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/sysstat/copyright`)
 
 - `GPL-2`
 - `GPL-2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris sysstat=12.2.0-2ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sysstat/sysstat_12.2.0-2ubuntu0.2.dsc' sysstat_12.2.0-2ubuntu0.2.dsc 2041 SHA512:38af45b5b7e811cb3bc7a9c3c2c8e69b7fee46ae8b5e53cf4a5f6eccf82a415a907d34fa15ae64ee5a9bcfb62ef4c6211df830f0f22a388c2cec26b4acd5fd0a
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sysstat/sysstat_12.2.0.orig.tar.xz' sysstat_12.2.0.orig.tar.xz 700716 SHA512:65b4c895fd8a05babf0cf34dffed96eebb6b429bd8b28a635b25e764901d0cb791e00f7d489998cb8ab53025ead8c516ab5f6e2996a48da6d490b0d8a1a63e51
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sysstat/sysstat_12.2.0-2ubuntu0.2.debian.tar.xz' sysstat_12.2.0-2ubuntu0.2.debian.tar.xz 36592 SHA512:0b7c643ca8b599cfaef433573f13c752dcec7997eb40b14a57eb90ff9038debc63e678d95ee0c00f9ac2cce08f7535a7fa3e691807467e150678a7707b6eb6cf
+```
 
-### `dpkg` source package: `systemd=245.4-4ubuntu3.18`
+### `dpkg` source package: `systemd=245.4-4ubuntu3.19`
 
 Binary Packages:
 
-- `libsystemd0:amd64=245.4-4ubuntu3.18`
-- `libudev1:amd64=245.4-4ubuntu3.18`
+- `libsystemd0:amd64=245.4-4ubuntu3.19`
+- `libudev1:amd64=245.4-4ubuntu3.19`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1572,9 +1586,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=245.4-4ubuntu3.19
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.19.dsc' systemd_245.4-4ubuntu3.19.dsc 5262 SHA512:aca2dbafb5592e58c927579f33e8640e38fb060a64a810cff913bfdd98e027ecae5721d1e0297a4ec92ea59c5741a79b688953f6ae97a0c9fdc62a02108a3bd3
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4.orig.tar.gz' systemd_245.4.orig.tar.gz 9000780 SHA512:02036bb1ab05301a9d0dfdd4b9c9376e90134474482531e6e292122380be2f24f99177493dd3af6f8af1a8ed2599ee0996da91a3b1b7872bbfaf26a1c3e61b4c
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.19.debian.tar.xz' systemd_245.4-4ubuntu3.19.debian.tar.xz 283052 SHA512:449accbf74d703448dec6ebdcefcb51c56d921f13799843ffbbccaecddef6a117fceb353f13f3e24516da978e0b19daee1de64b4a38382f15913cbf3fb896ba8
+```
 
 ### `dpkg` source package: `sysvinit=2.96-2.1ubuntu1`
 
@@ -1617,19 +1636,25 @@ $ apt-get source -qq --print-uris tar=1.30+dfsg-7ubuntu0.20.04.2
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.30%2bdfsg-7ubuntu0.20.04.2.debian.tar.xz' tar_1.30+dfsg-7ubuntu0.20.04.2.debian.tar.xz 23580 SHA512:2c9999bff0257251eb7d09a702898e42ce45b117d8e3595d68bf0a6ffdeb1d4a1d69202a2674d93a9193576f65dad4de4e094479228bfb4efc4a7931f00d3875
 ```
 
-### `dpkg` source package: `tzdata=2022c-0ubuntu0.20.04.0`
+### `dpkg` source package: `tzdata=2022f-0ubuntu0.20.04.1`
 
 Binary Packages:
 
-- `tzdata=2022c-0ubuntu0.20.04.0`
+- `tzdata=2022f-0ubuntu0.20.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2022f-0ubuntu0.20.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022f-0ubuntu0.20.04.1.dsc' tzdata_2022f-0ubuntu0.20.04.1.dsc 2358 SHA512:1e1e7f0ca8eec93366dd81f5caf901cd49caab14c8d13dff08ba9b9ec377adfeaa2a9e1895a102e55084fcd3515e6e9f61ec18291e660d91873e6413aebeee7a
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022f.orig.tar.gz' tzdata_2022f.orig.tar.gz 436352 SHA512:72d05d05be999075cdf57b896c0f4238b1b862d4d0ed92cc611736592a4ada14d47bd7f0fc8be39e7938a7f5940a903c8af41e87859482bcfab787d889d429f6
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022f.orig.tar.gz.asc' tzdata_2022f.orig.tar.gz.asc 833 SHA512:51a8bd86a94f36f6c1bae4929b9f9370153bf68d75fdfe44b94edd2204dcfa421dcb714357879e81a8f327fc24a6a0281420343795cb220ba5f6a656ac548c9e
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022f-0ubuntu0.20.04.1.debian.tar.xz' tzdata_2022f-0ubuntu0.20.04.1.debian.tar.xz 166732 SHA512:7ea2259563e12a3d1344bb22669c1be15b997c90abcaacdab6d3c133e2d75019faca57d73d6da154255d24dc483113b3dbdb86eb86dd5e7bd91044b16da71907
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2020.02.11.4`
 
