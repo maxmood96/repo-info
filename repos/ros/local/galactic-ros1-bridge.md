@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c78c7b66cd880b608109882497c59e6b1e28838f8e0c9948b971b8a5327be7d0`
-- Created: `2022-12-09T05:14:29.783063397Z`
+- Image ID: `sha256:4e657f26897db359d6ce72d70068770a0a3eebb04a19d7bca0ad845929a9dd61`
+- Created: `2022-12-12T21:12:34.711759447Z`
 - Virtual Size: ~ 1.15 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -5726,29 +5726,29 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-demo-nodes-cpp=0.14.3-1focal.20220825.161229`
+### `dpkg` source package: `ros-galactic-demo-nodes-cpp=0.14.4-1focal.20221208.065018`
 
 Binary Packages:
 
-- `ros-galactic-demo-nodes-cpp=0.14.3-1focal.20220825.161229`
+- `ros-galactic-demo-nodes-cpp=0.14.4-1focal.20221208.065018`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
+Licenses: (parsed from: `/usr/share/doc/ros-galactic-demo-nodes-cpp/copyright`)
 
+- `Apache License 2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-demo-nodes-py=0.14.3-1focal.20220825.153952`
+### `dpkg` source package: `ros-galactic-demo-nodes-py=0.14.4-1focal.20221207.065758`
 
 Binary Packages:
 
-- `ros-galactic-demo-nodes-py=0.14.3-1focal.20220825.153952`
+- `ros-galactic-demo-nodes-py=0.14.4-1focal.20221207.065758`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
+Licenses: (parsed from: `/usr/share/doc/ros-galactic-demo-nodes-py/copyright`)
 
+- `Apache License 2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
@@ -5796,11 +5796,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-example-interfaces=0.9.2-2focal.20220825.141405`
+### `dpkg` source package: `ros-galactic-example-interfaces=0.9.2-2focal.20221203.094936`
 
 Binary Packages:
 
-- `ros-galactic-example-interfaces=0.9.2-2focal.20220825.141405`
+- `ros-galactic-example-interfaces=0.9.2-2focal.20221203.094936`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5824,11 +5824,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-gazebo-msgs=3.5.2-5focal.20220825.145155`
+### `dpkg` source package: `ros-galactic-gazebo-msgs=3.5.2-5focal.20221203.101837`
 
 Binary Packages:
 
-- `ros-galactic-gazebo-msgs=3.5.2-5focal.20220825.145155`
+- `ros-galactic-gazebo-msgs=3.5.2-5focal.20221203.101837`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6525,11 +6525,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ros1-bridge=0.10.1-2focal.20220825.180515`
+### `dpkg` source package: `ros-galactic-ros1-bridge=0.10.1-2focal.20221208.105608`
 
 Binary Packages:
 
-- `ros-galactic-ros1-bridge=0.10.1-2focal.20220825.180515`
+- `ros-galactic-ros1-bridge=0.10.1-2focal.20221208.105608`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -9054,10 +9054,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris tzdata=2022f-0ubuntu0.20.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022f-0ubuntu0.20.04.1.dsc' tzdata_2022f-0ubuntu0.20.04.1.dsc 2358 SHA512:1e1e7f0ca8eec93366dd81f5caf901cd49caab14c8d13dff08ba9b9ec377adfeaa2a9e1895a102e55084fcd3515e6e9f61ec18291e660d91873e6413aebeee7a
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022f.orig.tar.gz' tzdata_2022f.orig.tar.gz 436352 SHA512:72d05d05be999075cdf57b896c0f4238b1b862d4d0ed92cc611736592a4ada14d47bd7f0fc8be39e7938a7f5940a903c8af41e87859482bcfab787d889d429f6
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022f.orig.tar.gz.asc' tzdata_2022f.orig.tar.gz.asc 833 SHA512:51a8bd86a94f36f6c1bae4929b9f9370153bf68d75fdfe44b94edd2204dcfa421dcb714357879e81a8f327fc24a6a0281420343795cb220ba5f6a656ac548c9e
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022f-0ubuntu0.20.04.1.debian.tar.xz' tzdata_2022f-0ubuntu0.20.04.1.debian.tar.xz 166732 SHA512:7ea2259563e12a3d1344bb22669c1be15b997c90abcaacdab6d3c133e2d75019faca57d73d6da154255d24dc483113b3dbdb86eb86dd5e7bd91044b16da71907
+'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022f-0ubuntu0.20.04.1.dsc' tzdata_2022f-0ubuntu0.20.04.1.dsc 2358 SHA512:1e1e7f0ca8eec93366dd81f5caf901cd49caab14c8d13dff08ba9b9ec377adfeaa2a9e1895a102e55084fcd3515e6e9f61ec18291e660d91873e6413aebeee7a
+'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022f.orig.tar.gz' tzdata_2022f.orig.tar.gz 436352 SHA512:72d05d05be999075cdf57b896c0f4238b1b862d4d0ed92cc611736592a4ada14d47bd7f0fc8be39e7938a7f5940a903c8af41e87859482bcfab787d889d429f6
+'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022f.orig.tar.gz.asc' tzdata_2022f.orig.tar.gz.asc 833 SHA512:51a8bd86a94f36f6c1bae4929b9f9370153bf68d75fdfe44b94edd2204dcfa421dcb714357879e81a8f327fc24a6a0281420343795cb220ba5f6a656ac548c9e
+'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022f-0ubuntu0.20.04.1.debian.tar.xz' tzdata_2022f-0ubuntu0.20.04.1.debian.tar.xz 166732 SHA512:7ea2259563e12a3d1344bb22669c1be15b997c90abcaacdab6d3c133e2d75019faca57d73d6da154255d24dc483113b3dbdb86eb86dd5e7bd91044b16da71907
 ```
 
 ### `dpkg` source package: `ubuntu-keyring=2020.02.11.4`
