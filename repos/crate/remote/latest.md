@@ -1,7 +1,7 @@
 ## `crate:latest`
 
 ```console
-$ docker pull crate@sha256:98cab5b6105bc9be2ed08293168a442e9b606b2c17ec470094051a94d75ab438
+$ docker pull crate@sha256:83543df99b42e313df1089115ea3836d7aa63c5ef46c9c2c12bbcbecfb03c9d3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,14 +12,14 @@ $ docker pull crate@sha256:98cab5b6105bc9be2ed08293168a442e9b606b2c17ec470094051
 ### `crate:latest` - linux; amd64
 
 ```console
-$ docker pull crate@sha256:de7f76e018970611a56cd46a29cb4432da54f32f2f61bda179872bf65ece8a48
+$ docker pull crate@sha256:2cd5398daee77525c3a184dce9db477b2d8abd8c53ff6f88e7a74b1f12605a1e
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **374.1 MB (374134805 bytes)**  
+-	Total Size: **374.1 MB (374134614 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9500bdd78c00f1af16c5bc1c69adf9a57d16ffdbe503e0a382586597b2f69df5`
+-	Image ID: `sha256:ceabe86d912a32fcbf0102ec4879c0969765a12e02055ef4548583b139c3567a`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["crate"]`
 
@@ -32,33 +32,33 @@ LABEL org.label-schema.schema-version=1.0 org.label-schema.name=CentOS Base Imag
 CMD ["/bin/bash"]
 # Mon, 12 Sep 2022 19:20:47 GMT
 RUN yum install -y yum-utils deltarpm     && yum makecache     && yum upgrade -y     && yum install -y python3 openssl     && pip3 install --upgrade pip     && yum clean all     && rm -rf /var/cache/yum
-# Fri, 11 Nov 2022 18:20:02 GMT
-RUN groupadd crate     && useradd -u 1000 -g crate -d /crate crate     && export PLATFORM="$(         case $(uname --m) in             x86_64)  echo x64_linux ;;             aarch64) echo aarch64_linux ;;         esac)"     && export CRATE_URL=https://cdn.crate.io/downloads/releases/cratedb/${PLATFORM}/crate-5.1.1.tar.gz     && curl -fSL -O ${CRATE_URL}     && curl -fSL -O ${CRATE_URL}.asc     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 90C23FC6585BC0717F8FBFC37FAAE51A06F6EAEB     && gpg --batch --verify crate-5.1.1.tar.gz.asc crate-5.1.1.tar.gz     && rm -rf "$GNUPGHOME" crate-5.1.1.tar.gz.asc     && tar -xf crate-5.1.1.tar.gz -C /crate --strip-components=1     && rm crate-5.1.1.tar.gz
-# Fri, 11 Nov 2022 18:20:05 GMT
+# Mon, 12 Dec 2022 20:27:04 GMT
+RUN groupadd crate     && useradd -u 1000 -g crate -d /crate crate     && export PLATFORM="$(         case $(uname --m) in             x86_64)  echo x64_linux ;;             aarch64) echo aarch64_linux ;;         esac)"     && export CRATE_URL=https://cdn.crate.io/downloads/releases/cratedb/${PLATFORM}/crate-5.1.2.tar.gz     && curl -fSL -O ${CRATE_URL}     && curl -fSL -O ${CRATE_URL}.asc     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 90C23FC6585BC0717F8FBFC37FAAE51A06F6EAEB     && gpg --batch --verify crate-5.1.2.tar.gz.asc crate-5.1.2.tar.gz     && rm -rf "$GNUPGHOME" crate-5.1.2.tar.gz.asc     && tar -xf crate-5.1.2.tar.gz -C /crate --strip-components=1     && rm crate-5.1.2.tar.gz
+# Mon, 12 Dec 2022 20:27:09 GMT
 RUN curl -fSL -O https://cdn.crate.io/downloads/releases/crash_standalone_0.28.0     && curl -fSL -O https://cdn.crate.io/downloads/releases/crash_standalone_0.28.0.asc     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 90C23FC6585BC0717F8FBFC37FAAE51A06F6EAEB     && gpg --batch --verify crash_standalone_0.28.0.asc crash_standalone_0.28.0     && rm -rf "$GNUPGHOME" crash_standalone_0.28.0.asc     && mv crash_standalone_0.28.0 /usr/local/bin/crash     && chmod +x /usr/local/bin/crash
-# Fri, 11 Nov 2022 18:20:05 GMT
+# Mon, 12 Dec 2022 20:27:09 GMT
 ENV PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 11 Nov 2022 18:20:05 GMT
+# Mon, 12 Dec 2022 20:27:09 GMT
 ENV CRATE_HEAP_SIZE=512M
-# Fri, 11 Nov 2022 18:20:06 GMT
+# Mon, 12 Dec 2022 20:27:10 GMT
 RUN mkdir -p /data/data /data/log
-# Fri, 11 Nov 2022 18:20:06 GMT
+# Mon, 12 Dec 2022 20:27:10 GMT
 VOLUME [/data]
-# Fri, 11 Nov 2022 18:20:06 GMT
+# Mon, 12 Dec 2022 20:27:10 GMT
 WORKDIR /data
-# Fri, 11 Nov 2022 18:20:06 GMT
+# Mon, 12 Dec 2022 20:27:10 GMT
 EXPOSE 4200 4300 5432
-# Fri, 11 Nov 2022 18:20:06 GMT
+# Mon, 12 Dec 2022 20:27:10 GMT
 COPY --chown=1000:0file:bff8d2f33b7a44d36fcd66fc7e7d92b0ee463d0eb0df2a56e42511d4f1b3e9b2 in /crate/config/crate.yml 
-# Fri, 11 Nov 2022 18:20:06 GMT
+# Mon, 12 Dec 2022 20:27:10 GMT
 COPY --chown=1000:0file:5f0d1b776d3a6517508a00a88f8053bd0933a642599374c9dff00dc3b632fd09 in /crate/config/log4j2.properties 
-# Fri, 11 Nov 2022 18:20:06 GMT
-LABEL maintainer=Crate.io <office@crate.io> org.opencontainers.image.created=2022-11-09T13:23:18.282783 org.opencontainers.image.title=crate org.opencontainers.image.description=CrateDB is a distributed SQL database that handles massive amounts of machine data in real-time. org.opencontainers.image.url=https://crate.io/products/cratedb/ org.opencontainers.image.source=https://github.com/crate/docker-crate org.opencontainers.image.vendor=Crate.io org.opencontainers.image.version=5.1.1
-# Fri, 11 Nov 2022 18:20:06 GMT
+# Mon, 12 Dec 2022 20:27:10 GMT
+LABEL maintainer=Crate.io <office@crate.io> org.opencontainers.image.created=2022-12-07T19:17:26.308963 org.opencontainers.image.title=crate org.opencontainers.image.description=CrateDB is a distributed SQL database that handles massive amounts of machine data in real-time. org.opencontainers.image.url=https://crate.io/products/cratedb/ org.opencontainers.image.source=https://github.com/crate/docker-crate org.opencontainers.image.vendor=Crate.io org.opencontainers.image.version=5.1.2
+# Mon, 12 Dec 2022 20:27:10 GMT
 COPY file:2e0f9e8c9006d6d56e9be42bd5646f68ec854481fcfbe51bafbf8695dc44b38a in / 
-# Fri, 11 Nov 2022 18:20:06 GMT
+# Mon, 12 Dec 2022 20:27:10 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 11 Nov 2022 18:20:07 GMT
+# Mon, 12 Dec 2022 20:27:11 GMT
 CMD ["crate"]
 ```
 
@@ -71,42 +71,42 @@ CMD ["crate"]
 		Last Modified: Mon, 12 Sep 2022 19:22:25 GMT  
 		Size: 77.1 MB (77149352 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d65806c2475f42ea6a8be6bbf50e16dabad768b38979655fc4dc4005231d1545`  
-		Last Modified: Fri, 11 Nov 2022 18:20:46 GMT  
-		Size: 219.2 MB (219175637 bytes)  
+	-	`sha256:d84e274cf7fc3088c0556a2fe1c7c88cd04e0f583b343ee74e5de5f2d2d4fb83`  
+		Last Modified: Mon, 12 Dec 2022 20:27:50 GMT  
+		Size: 219.2 MB (219175442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63d2644b5ddcf9bb1e533261ee841827aa62998302baab717af0a2f49d471307`  
-		Last Modified: Fri, 11 Nov 2022 18:20:27 GMT  
-		Size: 1.7 MB (1710776 bytes)  
+	-	`sha256:417d2f69bb4da3b188a3b243b8e888ced826b157c6dbcb640357d5535e4e1068`  
+		Last Modified: Mon, 12 Dec 2022 20:27:32 GMT  
+		Size: 1.7 MB (1710780 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:60e501c386acc29a71c1a15813971f09a53de86aad011d980b2f61c4f7528ff0`  
-		Last Modified: Fri, 11 Nov 2022 18:20:27 GMT  
-		Size: 157.0 B  
+	-	`sha256:d7964e9607eee9f43251f75eb47433aaf82dc38ca126e5420b10b93875592029`  
+		Last Modified: Mon, 12 Dec 2022 20:27:31 GMT  
+		Size: 156.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:505e1df9f72ed04267aed65b4b5d4f1ca579f76149bbc9d3441357399c0b80b9`  
-		Last Modified: Fri, 11 Nov 2022 18:20:27 GMT  
+	-	`sha256:dfe88ffd95ec5a3e0fb8cad56d129a4fd53aa85a34f081d98c5b11beb4798134`  
+		Last Modified: Mon, 12 Dec 2022 20:27:31 GMT  
 		Size: 265.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:850bf9a153cf60198d0d35e0928c6d1f473012b0ecf6e9f2c582498987633a99`  
-		Last Modified: Fri, 11 Nov 2022 18:20:27 GMT  
+	-	`sha256:bbd0c35d6995485b0b7378d5ad1ac4761d4011fc8b055cf0f17a7a46cc7baf9d`  
+		Last Modified: Mon, 12 Dec 2022 20:27:31 GMT  
 		Size: 957.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f81b897f76533cbf8e1f652d70ed103bb0eb176710eb689490af04891d7f9338`  
-		Last Modified: Fri, 11 Nov 2022 18:20:27 GMT  
-		Size: 504.0 B  
+	-	`sha256:7c3842da70b9fa49caf7f2b3d955cc49b1f550a0725c2f7bcb09a1ac8438bca7`  
+		Last Modified: Mon, 12 Dec 2022 20:27:31 GMT  
+		Size: 505.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `crate:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull crate@sha256:98eb5051fc6e6427cff2e28285567eb58fce68e0bb2dc600f2b06fc5d4efc865
+$ docker pull crate@sha256:1181d0c7b166b3928087d3739293059dd0808e21ce5de2077a4a2eadde52d34d
 ```
 
 -	Docker Version: 20.10.17
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **674.1 MB (674121062 bytes)**  
+-	Total Size: **674.1 MB (674120008 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2e4883c93c4d30c7579ea2321a440254a69a9e4c2f2f9f427598795b5d7b7348`
+-	Image ID: `sha256:49906881f3a6c6646fb6876152207c059ac2a9d62714737b7098728fc5107a3e`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["crate"]`
 
@@ -119,33 +119,33 @@ LABEL org.label-schema.schema-version=1.0 org.label-schema.name=CentOS Base Imag
 CMD ["/bin/bash"]
 # Mon, 24 Oct 2022 21:41:05 GMT
 RUN yum install -y yum-utils deltarpm     && yum makecache     && yum upgrade -y     && yum install -y python3 openssl     && pip3 install --upgrade pip     && yum clean all     && rm -rf /var/cache/yum
-# Fri, 11 Nov 2022 18:39:53 GMT
-RUN groupadd crate     && useradd -u 1000 -g crate -d /crate crate     && export PLATFORM="$(         case $(uname --m) in             x86_64)  echo x64_linux ;;             aarch64) echo aarch64_linux ;;         esac)"     && export CRATE_URL=https://cdn.crate.io/downloads/releases/cratedb/${PLATFORM}/crate-5.1.1.tar.gz     && curl -fSL -O ${CRATE_URL}     && curl -fSL -O ${CRATE_URL}.asc     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 90C23FC6585BC0717F8FBFC37FAAE51A06F6EAEB     && gpg --batch --verify crate-5.1.1.tar.gz.asc crate-5.1.1.tar.gz     && rm -rf "$GNUPGHOME" crate-5.1.1.tar.gz.asc     && tar -xf crate-5.1.1.tar.gz -C /crate --strip-components=1     && rm crate-5.1.1.tar.gz
-# Fri, 11 Nov 2022 18:39:57 GMT
+# Mon, 12 Dec 2022 20:39:50 GMT
+RUN groupadd crate     && useradd -u 1000 -g crate -d /crate crate     && export PLATFORM="$(         case $(uname --m) in             x86_64)  echo x64_linux ;;             aarch64) echo aarch64_linux ;;         esac)"     && export CRATE_URL=https://cdn.crate.io/downloads/releases/cratedb/${PLATFORM}/crate-5.1.2.tar.gz     && curl -fSL -O ${CRATE_URL}     && curl -fSL -O ${CRATE_URL}.asc     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 90C23FC6585BC0717F8FBFC37FAAE51A06F6EAEB     && gpg --batch --verify crate-5.1.2.tar.gz.asc crate-5.1.2.tar.gz     && rm -rf "$GNUPGHOME" crate-5.1.2.tar.gz.asc     && tar -xf crate-5.1.2.tar.gz -C /crate --strip-components=1     && rm crate-5.1.2.tar.gz
+# Mon, 12 Dec 2022 20:39:54 GMT
 RUN curl -fSL -O https://cdn.crate.io/downloads/releases/crash_standalone_0.28.0     && curl -fSL -O https://cdn.crate.io/downloads/releases/crash_standalone_0.28.0.asc     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 90C23FC6585BC0717F8FBFC37FAAE51A06F6EAEB     && gpg --batch --verify crash_standalone_0.28.0.asc crash_standalone_0.28.0     && rm -rf "$GNUPGHOME" crash_standalone_0.28.0.asc     && mv crash_standalone_0.28.0 /usr/local/bin/crash     && chmod +x /usr/local/bin/crash
-# Fri, 11 Nov 2022 18:39:57 GMT
+# Mon, 12 Dec 2022 20:39:54 GMT
 ENV PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 11 Nov 2022 18:39:57 GMT
+# Mon, 12 Dec 2022 20:39:54 GMT
 ENV CRATE_HEAP_SIZE=512M
-# Fri, 11 Nov 2022 18:39:57 GMT
+# Mon, 12 Dec 2022 20:39:54 GMT
 RUN mkdir -p /data/data /data/log
-# Fri, 11 Nov 2022 18:39:57 GMT
+# Mon, 12 Dec 2022 20:39:55 GMT
 VOLUME [/data]
-# Fri, 11 Nov 2022 18:39:57 GMT
+# Mon, 12 Dec 2022 20:39:55 GMT
 WORKDIR /data
-# Fri, 11 Nov 2022 18:39:58 GMT
+# Mon, 12 Dec 2022 20:39:55 GMT
 EXPOSE 4200 4300 5432
-# Fri, 11 Nov 2022 18:39:58 GMT
+# Mon, 12 Dec 2022 20:39:55 GMT
 COPY --chown=1000:0file:bff8d2f33b7a44d36fcd66fc7e7d92b0ee463d0eb0df2a56e42511d4f1b3e9b2 in /crate/config/crate.yml 
-# Fri, 11 Nov 2022 18:39:58 GMT
+# Mon, 12 Dec 2022 20:39:55 GMT
 COPY --chown=1000:0file:5f0d1b776d3a6517508a00a88f8053bd0933a642599374c9dff00dc3b632fd09 in /crate/config/log4j2.properties 
-# Fri, 11 Nov 2022 18:39:58 GMT
-LABEL maintainer=Crate.io <office@crate.io> org.opencontainers.image.created=2022-11-09T13:23:18.282783 org.opencontainers.image.title=crate org.opencontainers.image.description=CrateDB is a distributed SQL database that handles massive amounts of machine data in real-time. org.opencontainers.image.url=https://crate.io/products/cratedb/ org.opencontainers.image.source=https://github.com/crate/docker-crate org.opencontainers.image.vendor=Crate.io org.opencontainers.image.version=5.1.1
-# Fri, 11 Nov 2022 18:39:58 GMT
+# Mon, 12 Dec 2022 20:39:55 GMT
+LABEL maintainer=Crate.io <office@crate.io> org.opencontainers.image.created=2022-12-07T19:17:26.308963 org.opencontainers.image.title=crate org.opencontainers.image.description=CrateDB is a distributed SQL database that handles massive amounts of machine data in real-time. org.opencontainers.image.url=https://crate.io/products/cratedb/ org.opencontainers.image.source=https://github.com/crate/docker-crate org.opencontainers.image.vendor=Crate.io org.opencontainers.image.version=5.1.2
+# Mon, 12 Dec 2022 20:39:55 GMT
 COPY file:2e0f9e8c9006d6d56e9be42bd5646f68ec854481fcfbe51bafbf8695dc44b38a in / 
-# Fri, 11 Nov 2022 18:39:58 GMT
+# Mon, 12 Dec 2022 20:39:55 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 11 Nov 2022 18:39:58 GMT
+# Mon, 12 Dec 2022 20:39:55 GMT
 CMD ["crate"]
 ```
 
@@ -158,27 +158,27 @@ CMD ["crate"]
 		Last Modified: Mon, 24 Oct 2022 21:45:28 GMT  
 		Size: 346.0 MB (345996846 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e3f99bcffcd9dca3c19f311d57c30186e976e2a94c664a22892aa1f41aea71d8`  
-		Last Modified: Fri, 11 Nov 2022 18:40:30 GMT  
-		Size: 218.0 MB (218036624 bytes)  
+	-	`sha256:49c9c1555dfb0387041c808a2f798d13a6ecf5f56975151a9d99bc8cfa490c3d`  
+		Last Modified: Mon, 12 Dec 2022 20:40:28 GMT  
+		Size: 218.0 MB (218035564 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8eeee79bcbbf0e5b51406f81d3ea076d6102b651927d20ce94a9ee1cc29fc6b1`  
-		Last Modified: Fri, 11 Nov 2022 18:40:16 GMT  
-		Size: 1.7 MB (1710768 bytes)  
+	-	`sha256:2499e5c28e4efa20a416e4e3c2b3d7c2138f73c2fcfcac03b4c39a5fe103c88a`  
+		Last Modified: Mon, 12 Dec 2022 20:40:13 GMT  
+		Size: 1.7 MB (1710772 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d351b34c4b9259871e6c3ebf18eb81df7d9c25415e1d19835cae4da92d98bbd9`  
-		Last Modified: Fri, 11 Nov 2022 18:40:15 GMT  
-		Size: 156.0 B  
+	-	`sha256:96570e1e63584f5fac326134026d265ccff1fb5b6041a78878110d6ee54a5d91`  
+		Last Modified: Mon, 12 Dec 2022 20:40:12 GMT  
+		Size: 157.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5dd52e31b3dae22b13849018086703830ca4398fd04e710e3843c49097587b6b`  
-		Last Modified: Fri, 11 Nov 2022 18:40:15 GMT  
+	-	`sha256:66421385a4eb2fc89a70c4a252a1d5a90d58c8e5826a216a9cc24d093afae702`  
+		Last Modified: Mon, 12 Dec 2022 20:40:12 GMT  
 		Size: 264.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71a0c87a0bd08a2afe300af9bb873e86d92ff41d65063436412c0d72851b38e5`  
-		Last Modified: Fri, 11 Nov 2022 18:40:15 GMT  
+	-	`sha256:34ffc0cfa725fa624fa448da7bb226a7e547d6c7680d6863d6228eb12d824818`  
+		Last Modified: Mon, 12 Dec 2022 20:40:12 GMT  
 		Size: 956.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:24e4b6931a1f9aadefa5be7fc4c4952fff570e7362a686f727c05a347bc07b65`  
-		Last Modified: Fri, 11 Nov 2022 18:40:15 GMT  
-		Size: 503.0 B  
+	-	`sha256:fa6ee1dceab4c59275378a3d4a28fdc18fe99e19a673d8e3d6a3daa7d24ec582`  
+		Last Modified: Mon, 12 Dec 2022 20:40:12 GMT  
+		Size: 504.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
