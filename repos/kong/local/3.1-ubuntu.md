@@ -1,9 +1,9 @@
-# `kong:3.1.0-ubuntu`
+# `kong:3.1.1-ubuntu`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c1c3363408922c7c710be22906c1126376f87da071e321f35b815d030092b70e`
-- Created: `2022-12-09T02:19:53.637091742Z`
+- Image ID: `sha256:e312458a62a7e0d4e2617360ab2d5c03ca0e9673b1b480c2f5cb6b572568fed3`
+- Created: `2022-12-12T20:42:27.312794239Z`
 - Virtual Size: ~ 293.51 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,7 +12,7 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `ASSET=ce`
-  - `KONG_VERSION=3.1.0`
+  - `KONG_VERSION=3.1.1`
 - Labels:
   - `maintainer=Kong Docker Maintainers <docker@konghq.com> (@team-gateway-bot)`
 
@@ -833,11 +833,11 @@ $ apt-get source -qq --print-uris keyutils=1.6-6ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/k/keyutils/keyutils_1.6-6ubuntu1.1.debian.tar.xz' keyutils_1.6-6ubuntu1.1.debian.tar.xz 14556 SHA512:300ed4c9626de95616a7c799f14d4f8bf7dc0b765d1751d3c9d60f86b7c60801bfbb97bf26c5d0ab39e5e41d5f3021ca870748f9555433b0e6c4ba261f475c3b
 ```
 
-### `dpkg` source package: `kong=3.1.0`
+### `dpkg` source package: `kong=3.1.1`
 
 Binary Packages:
 
-- `kong=3.1.0`
+- `kong=3.1.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
