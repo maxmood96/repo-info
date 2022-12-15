@@ -1,10 +1,10 @@
-# `hylang:0.25.0-pypy3.8-buster`
+# `hylang:0.25.0-pypy3.9-buster`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5287d99b81d2020483e9dd20897e45027ba7650489fe524ce64c2cf51336f822`
-- Created: `2022-12-07T03:07:51.307498796Z`
-- Virtual Size: ~ 232.71 Mb  
+- Image ID: `sha256:05a25d32f838963c335916c9e5fc7f4cd050ad353c9f59c531d881f4b3a87153`
+- Created: `2022-12-07T03:06:38.19629135Z`
+- Virtual Size: ~ 233.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`
