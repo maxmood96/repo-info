@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1e025a03f3fa1631a2e6ea874b76beb5c6e2a67ba73dbebe1e024512a8da144c`
-- Created: `2022-11-30T22:15:17.51087491Z`
-- Virtual Size: ~ 241.60 Mb  
+- Image ID: `sha256:48ee10e2363b3d421af88e804041361edca6357b796d4df4742e0732a1110996`
+- Created: `2022-12-13T23:31:26.655536824Z`
+- Virtual Size: ~ 241.65 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -90,16 +90,16 @@ GPL-2.0-only
 ### `apk` package: `bash`
 
 ```console
-bash-5.2.9-r0 description:
+bash-5.2.12-r0 description:
 The GNU Bourne Again shell
 
-bash-5.2.9-r0 webpage:
+bash-5.2.12-r0 webpage:
 https://www.gnu.org/software/bash/bash.html
 
-bash-5.2.9-r0 installed size:
+bash-5.2.12-r0 installed size:
 1400 KiB
 
-bash-5.2.9-r0 license:
+bash-5.2.12-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -631,6 +631,23 @@ MIT
 
 ```
 
+### `apk` package: `nss_wrapper`
+
+```console
+nss_wrapper-1.1.12-r0 description:
+A wrapper for the user, group and hosts NSS API
+
+nss_wrapper-1.1.12-r0 webpage:
+https://cwrap.org/nss_wrapper.html
+
+nss_wrapper-1.1.12-r0 installed size:
+72 KiB
+
+nss_wrapper-1.1.12-r0 license:
+BSD-3-Clause
+
+```
+
 ### `apk` package: `readline`
 
 ```console
@@ -719,16 +736,16 @@ Public-Domain
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.2.8-r0 description:
+xz-libs-5.2.9-r0 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.2.8-r0 webpage:
+xz-libs-5.2.9-r0 webpage:
 https://tukaani.org/xz
 
-xz-libs-5.2.8-r0 installed size:
+xz-libs-5.2.9-r0 installed size:
 176 KiB
 
-xz-libs-5.2.8-r0 license:
+xz-libs-5.2.9-r0 license:
 GPL-2.0-or-later AND Public-Domain AND LGPL-2.1-or-later
 
 ```
