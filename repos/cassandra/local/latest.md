@@ -1,10 +1,10 @@
-# `cassandra:4.0.7`
+# `cassandra:4.1.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7055f42affe559ef3fd5e39977d981788651b57d0694ddf425b9437dc86811a4`
-- Created: `2022-12-09T06:29:04.814180466Z`
-- Virtual Size: ~ 353.23 Mb  
+- Image ID: `sha256:ce14e3630715e3fdb9860f34208eee72147779d9269225b0391def03cd82e016`
+- Created: `2022-12-13T22:19:50.919008227Z`
+- Virtual Size: ~ 356.00 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -20,8 +20,8 @@
   - `CASSANDRA_HOME=/opt/cassandra`
   - `CASSANDRA_CONF=/etc/cassandra`
   - `GPG_KEYS=CEC86BB4A0BA9D0F90397CAEF8358FA2F2833C93 	C4965EE9E3015D192CCCF2B6F758CE318D77295D 	5AED1BF378E9A19DADE1BCB34BD736A82B5C1B00 	514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB 	9E66CEC6106D578D0B1EB9BFF1000962B7F6840C 	C4009872C59B49561310D966D0062876AF30F054 	B7842CDAF36E6A3214FAE35D5E85B9AE0B84C041 	3E9C876907A560ACA00964F363E9BAD215BBF5F0 	F8B7FD00E05C932991A2CD6150EE103D162C5A55`
-  - `CASSANDRA_VERSION=4.0.7`
-  - `CASSANDRA_SHA512=99e5fe5411fb2f82dc588091923a192211f9fda911c3b9da8371fe803155063d2f46bbe57c4c118dc1a2971b37f939dad57ec5ab164da91646fbea26798153b2`
+  - `CASSANDRA_VERSION=4.1.0`
+  - `CASSANDRA_SHA512=d8cb800e99d8905e85a62d1d658c1c3056459e7ba0b27e0997e1c537918be8ab333f2a89cf38cafc04ab4d711fd8c542593548fb30bf6a81329f2b47370389e9`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2054,15 +2054,9 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2022f-0ubuntu0.20.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022f-0ubuntu0.20.04.1.dsc' tzdata_2022f-0ubuntu0.20.04.1.dsc 2358 SHA512:1e1e7f0ca8eec93366dd81f5caf901cd49caab14c8d13dff08ba9b9ec377adfeaa2a9e1895a102e55084fcd3515e6e9f61ec18291e660d91873e6413aebeee7a
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022f.orig.tar.gz' tzdata_2022f.orig.tar.gz 436352 SHA512:72d05d05be999075cdf57b896c0f4238b1b862d4d0ed92cc611736592a4ada14d47bd7f0fc8be39e7938a7f5940a903c8af41e87859482bcfab787d889d429f6
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022f.orig.tar.gz.asc' tzdata_2022f.orig.tar.gz.asc 833 SHA512:51a8bd86a94f36f6c1bae4929b9f9370153bf68d75fdfe44b94edd2204dcfa421dcb714357879e81a8f327fc24a6a0281420343795cb220ba5f6a656ac548c9e
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022f-0ubuntu0.20.04.1.debian.tar.xz' tzdata_2022f-0ubuntu0.20.04.1.debian.tar.xz 166732 SHA512:7ea2259563e12a3d1344bb22669c1be15b997c90abcaacdab6d3c133e2d75019faca57d73d6da154255d24dc483113b3dbdb86eb86dd5e7bd91044b16da71907
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2020.02.11.4`
 
