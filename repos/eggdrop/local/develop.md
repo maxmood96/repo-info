@@ -2,17 +2,17 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8d62289e6d48df02c3eccf815833a7761bedd9be6b341e801e799d52395f26ea`
-- Created: `2022-10-06T20:40:59.783468057Z`
-- Virtual Size: ~ 107.41 Mb  
+- Image ID: `sha256:a5b8df50611895b460125bdb521c1a558e5cc61721b96eea85af17354de1b18e`
+- Created: `2022-12-15T18:23:26.27384117Z`
+- Virtual Size: ~ 110.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/home/eggdrop/eggdrop/entrypoint.sh"]`
 - Command: `["eggdrop.conf"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `EGGDROP_SHA256=34915a9bf1870bb3759c68520df62443ba45e01558a53c991d2fb03db9b4ec72`
-  - `EGGDROP_COMMIT=47962f7f15a1840b3f3c9ad1a6c247647d16de56`
+  - `EGGDROP_SHA256=297c0dacb6c3ea03b260d863be9f0f34099f5ed6d4f4ba07b7493b0f66c2cbae`
+  - `EGGDROP_COMMIT=6f4309cdfb82cf0763c27d30a3db75dc96e4a8ab`
   - `NICK=`
   - `SERVER=`
   - `LISTEN=3333`
@@ -144,16 +144,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1q-r0 description:
+libcrypto1.1-1.1.1s-r1 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1q-r0 webpage:
+libcrypto1.1-1.1.1s-r1 webpage:
 https://www.openssl.org/
 
-libcrypto1.1-1.1.1q-r0 installed size:
+libcrypto1.1-1.1.1s-r1 installed size:
 2676 KiB
 
-libcrypto1.1-1.1.1q-r0 license:
+libcrypto1.1-1.1.1s-r1 license:
 OpenSSL
 
 ```
@@ -178,16 +178,16 @@ ISC AND (BSD-3-Clause OR MIT)
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1q-r0 description:
+libssl1.1-1.1.1s-r1 description:
 SSL shared libraries
 
-libssl1.1-1.1.1q-r0 webpage:
+libssl1.1-1.1.1s-r1 webpage:
 https://www.openssl.org/
 
-libssl1.1-1.1.1q-r0 installed size:
+libssl1.1-1.1.1s-r1 installed size:
 528 KiB
 
-libssl1.1-1.1.1q-r0 license:
+libssl1.1-1.1.1s-r1 license:
 OpenSSL
 
 ```
@@ -263,16 +263,16 @@ MIT
 ### `apk` package: `openssl`
 
 ```console
-openssl-1.1.1q-r0 description:
+openssl-1.1.1s-r1 description:
 toolkit for transport layer security (TLS) - version 1.1
 
-openssl-1.1.1q-r0 webpage:
+openssl-1.1.1s-r1 webpage:
 https://www.openssl.org/
 
-openssl-1.1.1q-r0 installed size:
+openssl-1.1.1s-r1 installed size:
 664 KiB
 
-openssl-1.1.1q-r0 license:
+openssl-1.1.1s-r1 license:
 OpenSSL
 
 ```
