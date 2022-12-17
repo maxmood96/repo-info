@@ -1,10 +1,10 @@
-# `amazonlinux:2018.03.0.20221018.0-with-sources`
+# `amazonlinux:2018.03.0.20221209.1-with-sources`
 
 ## Docker Metadata
 
-- Image ID: `sha256:cbce77f59d1e6d589eafa0793b60aa0bb0b16dd1eec9459f1c2dd975d4e7ef69`
-- Created: `2022-11-09T00:20:47.653017204Z`
-- Virtual Size: ~ 620.01 Mb  
+- Image ID: `sha256:c65483cadfaad0e8c9559b12bfca121754bb3040c9911402841d22eb712403c1`
+- Created: `2022-12-16T01:20:52.95867882Z`
+- Virtual Size: ~ 619.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -49,7 +49,7 @@ Licenses (from `rpm --query`): GPLv3+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `curl-7.61.1-12.100.amzn1.x86_64`
+### `rpm` package: `curl-7.61.1-12.101.amzn1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
@@ -79,7 +79,7 @@ Licenses (from `rpm --query`): GPLv2+ or LGPLv3+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `expat-2.1.0-14.31.amzn1.x86_64`
+### `rpm` package: `expat-2.1.0-15.33.amzn1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
@@ -211,7 +211,7 @@ Licenses (from `rpm --query`): MIT
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libcurl-7.61.1-12.100.amzn1.x86_64`
+### `rpm` package: `libcurl-7.61.1-12.101.amzn1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
@@ -583,7 +583,7 @@ Licenses (from `rpm --query`): GPLv3+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `tzdata-2022e-1.81.amzn1.noarch`
+### `rpm` package: `tzdata-2022f-1.83.amzn1.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
@@ -625,7 +625,7 @@ Licenses (from `rpm --query`): GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `zlib-1.2.8-7.19.amzn1.x86_64`
+### `rpm` package: `zlib-1.2.8-7.20.amzn1.x86_64`
 
 Licenses (from `rpm --query`): zlib and Boost
 
