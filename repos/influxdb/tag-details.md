@@ -52,7 +52,7 @@
 ## `influxdb:1.10-data`
 
 ```console
-$ docker pull influxdb@sha256:fb50f6b5ba0cf150dea51e459d98279f39dc9faaf86a468573a975ee5c69aef7
+$ docker pull influxdb@sha256:5b2be610b026e5278c5ca5b9f3b9e80f3cfcc3f1efb662b4a5a6414e0937ae65
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -62,80 +62,80 @@ $ docker pull influxdb@sha256:fb50f6b5ba0cf150dea51e459d98279f39dc9faaf86a468573
 ### `influxdb:1.10-data` - linux; amd64
 
 ```console
-$ docker pull influxdb@sha256:2c916bf671e06740d9a9b86f89b91f6718c585f111d903cc85833318760524a9
+$ docker pull influxdb@sha256:6b5f56ff4c2220a9a8637969c6da8a61bdf70b5705f9a0af15a1cca1028ca511
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **101.8 MB (101781655 bytes)**  
+-	Total Size: **101.8 MB (101763152 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:36a4029306702f41458200500a8184398d6db6db00dab20275b1671b61d5e1db`
+-	Image ID: `sha256:b89f76c584be5b1f0b942842bad7c84342b0b7db1adde619fc012ea2310d2cc4`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["influxd"]`
 
 ```dockerfile
-# Tue, 06 Dec 2022 01:20:41 GMT
-ADD file:553d20b03d45305e58cde07e0c259421bba044155ac90b4559e5cc0b69093347 in / 
-# Tue, 06 Dec 2022 01:20:41 GMT
+# Wed, 21 Dec 2022 01:20:21 GMT
+ADD file:c13b430c8699df107ffd9ea5230b92238bc037a8e1cbbe35d6ab664941d575da in / 
+# Wed, 21 Dec 2022 01:20:22 GMT
 CMD ["bash"]
-# Tue, 06 Dec 2022 02:13:26 GMT
+# Wed, 21 Dec 2022 11:13:51 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 06 Dec 2022 02:13:31 GMT
+# Wed, 21 Dec 2022 11:13:58 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 06 Dec 2022 16:59:54 GMT
+# Wed, 21 Dec 2022 20:00:55 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     for key in         05CE15085FC09D18E99EFB22684A14CF2582E0C5 ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done
-# Tue, 06 Dec 2022 17:00:38 GMT
+# Wed, 21 Dec 2022 20:01:43 GMT
 ENV INFLUXDB_VERSION=1.10.0-c1.10.0
-# Tue, 06 Dec 2022 17:00:42 GMT
+# Wed, 21 Dec 2022 20:01:48 GMT
 RUN wget --no-verbose https://dl.influxdata.com/enterprise/releases/influxdb-data_${INFLUXDB_VERSION}_amd64.deb.asc &&     wget --no-verbose https://dl.influxdata.com/enterprise/releases/influxdb-data_${INFLUXDB_VERSION}_amd64.deb &&     gpg --batch --verify influxdb-data_${INFLUXDB_VERSION}_amd64.deb.asc influxdb-data_${INFLUXDB_VERSION}_amd64.deb &&     dpkg -i influxdb-data_${INFLUXDB_VERSION}_amd64.deb &&     rm -f influxdb-data_${INFLUXDB_VERSION}_amd64.deb*
-# Tue, 06 Dec 2022 17:00:42 GMT
+# Wed, 21 Dec 2022 20:01:48 GMT
 COPY file:bf2f42b62a32a7ee3ab93d9a5e451b7d59af1a97e40dc4a76b8aaf2f64383d7a in /etc/influxdb/influxdb.conf 
-# Tue, 06 Dec 2022 17:00:42 GMT
+# Wed, 21 Dec 2022 20:01:48 GMT
 EXPOSE 8086
-# Tue, 06 Dec 2022 17:00:42 GMT
+# Wed, 21 Dec 2022 20:01:48 GMT
 VOLUME [/var/lib/influxdb]
-# Tue, 06 Dec 2022 17:00:43 GMT
+# Wed, 21 Dec 2022 20:01:48 GMT
 COPY file:182a0176834db40043100d082d05e5aded9887c94b02416f6e3154c827c07360 in /entrypoint.sh 
-# Tue, 06 Dec 2022 17:00:43 GMT
+# Wed, 21 Dec 2022 20:01:48 GMT
 COPY file:e7af69cde81ffb6eddc175488941183d1244772c36c27b74751d54389fb71701 in /init-influxdb.sh 
-# Tue, 06 Dec 2022 17:00:43 GMT
+# Wed, 21 Dec 2022 20:01:48 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 06 Dec 2022 17:00:43 GMT
+# Wed, 21 Dec 2022 20:01:49 GMT
 CMD ["influxd"]
 ```
 
 -	Layers:
-	-	`sha256:f2f58072e9ed1aa1b0143341c5ee83815c00ce47548309fa240155067ab0e698`  
-		Last Modified: Tue, 06 Dec 2022 01:24:48 GMT  
-		Size: 55.0 MB (55041342 bytes)  
+	-	`sha256:32de3c850997ce03b6ff4ae8fb00b34b9d7d7f9a35bfcdb8538e22cc7b77c29d`  
+		Last Modified: Wed, 21 Dec 2022 01:24:10 GMT  
+		Size: 55.0 MB (55025166 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5c8cfbf51e6e6869f1af2a1e7067b07fd6733036a333c9d29f743b0285e26037`  
-		Last Modified: Tue, 06 Dec 2022 02:21:44 GMT  
-		Size: 5.2 MB (5164910 bytes)  
+	-	`sha256:fa1d4c8d85a4e064e50cea74d4aa848dc5fc275aef223fcc1f21fbdb1b5dd182`  
+		Last Modified: Wed, 21 Dec 2022 11:21:24 GMT  
+		Size: 5.2 MB (5163298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa3a609d15798d35c1484072876b7d22a316e98de6a097de33b9dade6a689cd1`  
-		Last Modified: Tue, 06 Dec 2022 02:21:44 GMT  
-		Size: 10.9 MB (10877423 bytes)  
+	-	`sha256:c796299bbbddc7aeada9539a4e7874a75fa2b6ff421f8d5ad40f227b40ab4d86`  
+		Last Modified: Wed, 21 Dec 2022 11:21:24 GMT  
+		Size: 10.9 MB (10876681 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98d38c4f1653f44b974d6db545ca56dffde5e7e6f73647fa98ad4556b8b84547`  
-		Last Modified: Tue, 06 Dec 2022 17:02:37 GMT  
-		Size: 2.9 KB (2897 bytes)  
+	-	`sha256:d5d3e05d16cd1d3c21c0c1001e437e4bcebc7d4a5deae70b54d55948d6d99ab0`  
+		Last Modified: Wed, 21 Dec 2022 20:03:41 GMT  
+		Size: 2.9 KB (2903 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:23438adec1ce3e5bcf265ca3593bfe8e93e04da1e3ae0bd01f9a46567bada7b5`  
-		Last Modified: Tue, 06 Dec 2022 17:03:58 GMT  
-		Size: 30.7 MB (30693306 bytes)  
+	-	`sha256:9eca0d8703e5daf659308df1f916c61740f432cc2e780602a1c8701dac18c1ea`  
+		Last Modified: Wed, 21 Dec 2022 20:05:02 GMT  
+		Size: 30.7 MB (30693328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2245df77704ccb2be55e0dd67e13c7b8c333c98d43c1156b985c877d12a7752f`  
-		Last Modified: Tue, 06 Dec 2022 17:03:54 GMT  
+	-	`sha256:5975499d9720bd5da685aa037722fa27a3fd8a40c58998b778365b93c9a0fa53`  
+		Last Modified: Wed, 21 Dec 2022 20:04:58 GMT  
 		Size: 243.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed7c1b6d1cdb35736106726c16fb55f2f432c79ea90d581fd9955a742b79817a`  
-		Last Modified: Tue, 06 Dec 2022 17:03:53 GMT  
+	-	`sha256:67590b78c927bb3cc3e3ba02f4377e3361199dec136a4009c3834c090d63000f`  
+		Last Modified: Wed, 21 Dec 2022 20:04:57 GMT  
 		Size: 252.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4d3089f1cb6e917a16d1535c50a8f78c29a06a4bd160665077603f461a9d80da`  
-		Last Modified: Tue, 06 Dec 2022 17:03:53 GMT  
-		Size: 1.3 KB (1282 bytes)  
+	-	`sha256:39939c46902a73fe16cac37d827a41ef44b8c684c177bf667d62722fc8b94695`  
+		Last Modified: Wed, 21 Dec 2022 20:04:57 GMT  
+		Size: 1.3 KB (1281 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `influxdb:1.10-data-alpine`
@@ -224,7 +224,7 @@ CMD ["influxd"]
 ## `influxdb:1.10-meta`
 
 ```console
-$ docker pull influxdb@sha256:9d0ce83a31efc571787d7e1a260cced02d15cdc77d801d641cfa6567994444c3
+$ docker pull influxdb@sha256:160fce62fa91e281f3d9b5d3b3e677a7e230dba7a037b687255ce8bc0b448d2f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -234,74 +234,74 @@ $ docker pull influxdb@sha256:9d0ce83a31efc571787d7e1a260cced02d15cdc77d801d641c
 ### `influxdb:1.10-meta` - linux; amd64
 
 ```console
-$ docker pull influxdb@sha256:2e71177de2e9ede2f764e7631cefa4ed1173891ada16f5f4e6542b8444cff012
+$ docker pull influxdb@sha256:d039714deb3de5b8543a894b87a06ff3eb5f61b51711d586cfbf06cca1de9bf7
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **83.0 MB (82994345 bytes)**  
+-	Total Size: **83.0 MB (82975822 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2e65519ce0aa5ae3ec46772de594fc061d1425c18b4b07a174bab622f9c97a9b`
+-	Image ID: `sha256:92c7f0d22ea1fa14a6af2d0c79183340bbb259aad765b7897ac66b027b6f465a`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["influxd-meta"]`
 
 ```dockerfile
-# Tue, 06 Dec 2022 01:20:41 GMT
-ADD file:553d20b03d45305e58cde07e0c259421bba044155ac90b4559e5cc0b69093347 in / 
-# Tue, 06 Dec 2022 01:20:41 GMT
+# Wed, 21 Dec 2022 01:20:21 GMT
+ADD file:c13b430c8699df107ffd9ea5230b92238bc037a8e1cbbe35d6ab664941d575da in / 
+# Wed, 21 Dec 2022 01:20:22 GMT
 CMD ["bash"]
-# Tue, 06 Dec 2022 02:13:26 GMT
+# Wed, 21 Dec 2022 11:13:51 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 06 Dec 2022 02:13:31 GMT
+# Wed, 21 Dec 2022 11:13:58 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 06 Dec 2022 16:59:54 GMT
+# Wed, 21 Dec 2022 20:00:55 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     for key in         05CE15085FC09D18E99EFB22684A14CF2582E0C5 ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done
-# Tue, 06 Dec 2022 17:00:38 GMT
+# Wed, 21 Dec 2022 20:01:43 GMT
 ENV INFLUXDB_VERSION=1.10.0-c1.10.0
-# Tue, 06 Dec 2022 17:00:50 GMT
+# Wed, 21 Dec 2022 20:01:56 GMT
 RUN wget --no-verbose https://dl.influxdata.com/enterprise/releases/influxdb-meta_${INFLUXDB_VERSION}_amd64.deb.asc &&     wget --no-verbose https://dl.influxdata.com/enterprise/releases/influxdb-meta_${INFLUXDB_VERSION}_amd64.deb &&     gpg --batch --verify influxdb-meta_${INFLUXDB_VERSION}_amd64.deb.asc influxdb-meta_${INFLUXDB_VERSION}_amd64.deb &&     dpkg -i influxdb-meta_${INFLUXDB_VERSION}_amd64.deb &&     rm -f influxdb-meta_${INFLUXDB_VERSION}_amd64.deb*
-# Tue, 06 Dec 2022 17:00:50 GMT
+# Wed, 21 Dec 2022 20:01:56 GMT
 COPY file:5d8d1b0acfd7ca05cf6698246b28d240206fa448f4aa5ac839c9ad323adbeac2 in /etc/influxdb/influxdb-meta.conf 
-# Tue, 06 Dec 2022 17:00:50 GMT
+# Wed, 21 Dec 2022 20:01:56 GMT
 EXPOSE 8091
-# Tue, 06 Dec 2022 17:00:50 GMT
+# Wed, 21 Dec 2022 20:01:56 GMT
 VOLUME [/var/lib/influxdb]
-# Tue, 06 Dec 2022 17:00:50 GMT
+# Wed, 21 Dec 2022 20:01:56 GMT
 COPY file:126b1f7e41b4975cf2ce23037cf6a46253fb817023062317380c48ff5df47228 in /entrypoint.sh 
-# Tue, 06 Dec 2022 17:00:50 GMT
+# Wed, 21 Dec 2022 20:01:57 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 06 Dec 2022 17:00:50 GMT
+# Wed, 21 Dec 2022 20:01:57 GMT
 CMD ["influxd-meta"]
 ```
 
 -	Layers:
-	-	`sha256:f2f58072e9ed1aa1b0143341c5ee83815c00ce47548309fa240155067ab0e698`  
-		Last Modified: Tue, 06 Dec 2022 01:24:48 GMT  
-		Size: 55.0 MB (55041342 bytes)  
+	-	`sha256:32de3c850997ce03b6ff4ae8fb00b34b9d7d7f9a35bfcdb8538e22cc7b77c29d`  
+		Last Modified: Wed, 21 Dec 2022 01:24:10 GMT  
+		Size: 55.0 MB (55025166 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5c8cfbf51e6e6869f1af2a1e7067b07fd6733036a333c9d29f743b0285e26037`  
-		Last Modified: Tue, 06 Dec 2022 02:21:44 GMT  
-		Size: 5.2 MB (5164910 bytes)  
+	-	`sha256:fa1d4c8d85a4e064e50cea74d4aa848dc5fc275aef223fcc1f21fbdb1b5dd182`  
+		Last Modified: Wed, 21 Dec 2022 11:21:24 GMT  
+		Size: 5.2 MB (5163298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa3a609d15798d35c1484072876b7d22a316e98de6a097de33b9dade6a689cd1`  
-		Last Modified: Tue, 06 Dec 2022 02:21:44 GMT  
-		Size: 10.9 MB (10877423 bytes)  
+	-	`sha256:c796299bbbddc7aeada9539a4e7874a75fa2b6ff421f8d5ad40f227b40ab4d86`  
+		Last Modified: Wed, 21 Dec 2022 11:21:24 GMT  
+		Size: 10.9 MB (10876681 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98d38c4f1653f44b974d6db545ca56dffde5e7e6f73647fa98ad4556b8b84547`  
-		Last Modified: Tue, 06 Dec 2022 17:02:37 GMT  
-		Size: 2.9 KB (2897 bytes)  
+	-	`sha256:d5d3e05d16cd1d3c21c0c1001e437e4bcebc7d4a5deae70b54d55948d6d99ab0`  
+		Last Modified: Wed, 21 Dec 2022 20:03:41 GMT  
+		Size: 2.9 KB (2903 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d61069ce781bebd3c7a43ba7ac4f482789ab32ded82e424ab8f9d324c315a1a0`  
-		Last Modified: Tue, 06 Dec 2022 17:04:10 GMT  
-		Size: 11.9 MB (11907199 bytes)  
+	-	`sha256:151e41042c13fdacb282765f40406045d12c539e1121b70e162b24723cf0cfc1`  
+		Last Modified: Wed, 21 Dec 2022 20:05:13 GMT  
+		Size: 11.9 MB (11907203 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc96a7ae13dea66c9a71d6130bafc50e8e57820e8becf1fbaa23597338aa3879`  
-		Last Modified: Tue, 06 Dec 2022 17:04:08 GMT  
-		Size: 199.0 B  
+	-	`sha256:497731fcfeb430df2f67c577536d4780366b38c5a6821e03e30db002e5d7c512`  
+		Last Modified: Wed, 21 Dec 2022 20:05:11 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ce2457daf92b9e7edb9e70b901c8f4a080a1523695ca7420d3437c2855d54ce`  
-		Last Modified: Tue, 06 Dec 2022 17:04:08 GMT  
-		Size: 375.0 B  
+	-	`sha256:ed7fe90093f49d48b04cc44e61705bab769f7729e5f8857545e524e5e7182045`  
+		Last Modified: Wed, 21 Dec 2022 20:05:11 GMT  
+		Size: 374.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `influxdb:1.10-meta-alpine`
@@ -384,7 +384,7 @@ CMD ["influxd-meta"]
 ## `influxdb:1.10.0-data`
 
 ```console
-$ docker pull influxdb@sha256:fb50f6b5ba0cf150dea51e459d98279f39dc9faaf86a468573a975ee5c69aef7
+$ docker pull influxdb@sha256:5b2be610b026e5278c5ca5b9f3b9e80f3cfcc3f1efb662b4a5a6414e0937ae65
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -394,80 +394,80 @@ $ docker pull influxdb@sha256:fb50f6b5ba0cf150dea51e459d98279f39dc9faaf86a468573
 ### `influxdb:1.10.0-data` - linux; amd64
 
 ```console
-$ docker pull influxdb@sha256:2c916bf671e06740d9a9b86f89b91f6718c585f111d903cc85833318760524a9
+$ docker pull influxdb@sha256:6b5f56ff4c2220a9a8637969c6da8a61bdf70b5705f9a0af15a1cca1028ca511
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **101.8 MB (101781655 bytes)**  
+-	Total Size: **101.8 MB (101763152 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:36a4029306702f41458200500a8184398d6db6db00dab20275b1671b61d5e1db`
+-	Image ID: `sha256:b89f76c584be5b1f0b942842bad7c84342b0b7db1adde619fc012ea2310d2cc4`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["influxd"]`
 
 ```dockerfile
-# Tue, 06 Dec 2022 01:20:41 GMT
-ADD file:553d20b03d45305e58cde07e0c259421bba044155ac90b4559e5cc0b69093347 in / 
-# Tue, 06 Dec 2022 01:20:41 GMT
+# Wed, 21 Dec 2022 01:20:21 GMT
+ADD file:c13b430c8699df107ffd9ea5230b92238bc037a8e1cbbe35d6ab664941d575da in / 
+# Wed, 21 Dec 2022 01:20:22 GMT
 CMD ["bash"]
-# Tue, 06 Dec 2022 02:13:26 GMT
+# Wed, 21 Dec 2022 11:13:51 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 06 Dec 2022 02:13:31 GMT
+# Wed, 21 Dec 2022 11:13:58 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 06 Dec 2022 16:59:54 GMT
+# Wed, 21 Dec 2022 20:00:55 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     for key in         05CE15085FC09D18E99EFB22684A14CF2582E0C5 ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done
-# Tue, 06 Dec 2022 17:00:38 GMT
+# Wed, 21 Dec 2022 20:01:43 GMT
 ENV INFLUXDB_VERSION=1.10.0-c1.10.0
-# Tue, 06 Dec 2022 17:00:42 GMT
+# Wed, 21 Dec 2022 20:01:48 GMT
 RUN wget --no-verbose https://dl.influxdata.com/enterprise/releases/influxdb-data_${INFLUXDB_VERSION}_amd64.deb.asc &&     wget --no-verbose https://dl.influxdata.com/enterprise/releases/influxdb-data_${INFLUXDB_VERSION}_amd64.deb &&     gpg --batch --verify influxdb-data_${INFLUXDB_VERSION}_amd64.deb.asc influxdb-data_${INFLUXDB_VERSION}_amd64.deb &&     dpkg -i influxdb-data_${INFLUXDB_VERSION}_amd64.deb &&     rm -f influxdb-data_${INFLUXDB_VERSION}_amd64.deb*
-# Tue, 06 Dec 2022 17:00:42 GMT
+# Wed, 21 Dec 2022 20:01:48 GMT
 COPY file:bf2f42b62a32a7ee3ab93d9a5e451b7d59af1a97e40dc4a76b8aaf2f64383d7a in /etc/influxdb/influxdb.conf 
-# Tue, 06 Dec 2022 17:00:42 GMT
+# Wed, 21 Dec 2022 20:01:48 GMT
 EXPOSE 8086
-# Tue, 06 Dec 2022 17:00:42 GMT
+# Wed, 21 Dec 2022 20:01:48 GMT
 VOLUME [/var/lib/influxdb]
-# Tue, 06 Dec 2022 17:00:43 GMT
+# Wed, 21 Dec 2022 20:01:48 GMT
 COPY file:182a0176834db40043100d082d05e5aded9887c94b02416f6e3154c827c07360 in /entrypoint.sh 
-# Tue, 06 Dec 2022 17:00:43 GMT
+# Wed, 21 Dec 2022 20:01:48 GMT
 COPY file:e7af69cde81ffb6eddc175488941183d1244772c36c27b74751d54389fb71701 in /init-influxdb.sh 
-# Tue, 06 Dec 2022 17:00:43 GMT
+# Wed, 21 Dec 2022 20:01:48 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 06 Dec 2022 17:00:43 GMT
+# Wed, 21 Dec 2022 20:01:49 GMT
 CMD ["influxd"]
 ```
 
 -	Layers:
-	-	`sha256:f2f58072e9ed1aa1b0143341c5ee83815c00ce47548309fa240155067ab0e698`  
-		Last Modified: Tue, 06 Dec 2022 01:24:48 GMT  
-		Size: 55.0 MB (55041342 bytes)  
+	-	`sha256:32de3c850997ce03b6ff4ae8fb00b34b9d7d7f9a35bfcdb8538e22cc7b77c29d`  
+		Last Modified: Wed, 21 Dec 2022 01:24:10 GMT  
+		Size: 55.0 MB (55025166 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5c8cfbf51e6e6869f1af2a1e7067b07fd6733036a333c9d29f743b0285e26037`  
-		Last Modified: Tue, 06 Dec 2022 02:21:44 GMT  
-		Size: 5.2 MB (5164910 bytes)  
+	-	`sha256:fa1d4c8d85a4e064e50cea74d4aa848dc5fc275aef223fcc1f21fbdb1b5dd182`  
+		Last Modified: Wed, 21 Dec 2022 11:21:24 GMT  
+		Size: 5.2 MB (5163298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa3a609d15798d35c1484072876b7d22a316e98de6a097de33b9dade6a689cd1`  
-		Last Modified: Tue, 06 Dec 2022 02:21:44 GMT  
-		Size: 10.9 MB (10877423 bytes)  
+	-	`sha256:c796299bbbddc7aeada9539a4e7874a75fa2b6ff421f8d5ad40f227b40ab4d86`  
+		Last Modified: Wed, 21 Dec 2022 11:21:24 GMT  
+		Size: 10.9 MB (10876681 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98d38c4f1653f44b974d6db545ca56dffde5e7e6f73647fa98ad4556b8b84547`  
-		Last Modified: Tue, 06 Dec 2022 17:02:37 GMT  
-		Size: 2.9 KB (2897 bytes)  
+	-	`sha256:d5d3e05d16cd1d3c21c0c1001e437e4bcebc7d4a5deae70b54d55948d6d99ab0`  
+		Last Modified: Wed, 21 Dec 2022 20:03:41 GMT  
+		Size: 2.9 KB (2903 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:23438adec1ce3e5bcf265ca3593bfe8e93e04da1e3ae0bd01f9a46567bada7b5`  
-		Last Modified: Tue, 06 Dec 2022 17:03:58 GMT  
-		Size: 30.7 MB (30693306 bytes)  
+	-	`sha256:9eca0d8703e5daf659308df1f916c61740f432cc2e780602a1c8701dac18c1ea`  
+		Last Modified: Wed, 21 Dec 2022 20:05:02 GMT  
+		Size: 30.7 MB (30693328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2245df77704ccb2be55e0dd67e13c7b8c333c98d43c1156b985c877d12a7752f`  
-		Last Modified: Tue, 06 Dec 2022 17:03:54 GMT  
+	-	`sha256:5975499d9720bd5da685aa037722fa27a3fd8a40c58998b778365b93c9a0fa53`  
+		Last Modified: Wed, 21 Dec 2022 20:04:58 GMT  
 		Size: 243.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed7c1b6d1cdb35736106726c16fb55f2f432c79ea90d581fd9955a742b79817a`  
-		Last Modified: Tue, 06 Dec 2022 17:03:53 GMT  
+	-	`sha256:67590b78c927bb3cc3e3ba02f4377e3361199dec136a4009c3834c090d63000f`  
+		Last Modified: Wed, 21 Dec 2022 20:04:57 GMT  
 		Size: 252.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4d3089f1cb6e917a16d1535c50a8f78c29a06a4bd160665077603f461a9d80da`  
-		Last Modified: Tue, 06 Dec 2022 17:03:53 GMT  
-		Size: 1.3 KB (1282 bytes)  
+	-	`sha256:39939c46902a73fe16cac37d827a41ef44b8c684c177bf667d62722fc8b94695`  
+		Last Modified: Wed, 21 Dec 2022 20:04:57 GMT  
+		Size: 1.3 KB (1281 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `influxdb:1.10.0-data-alpine`
@@ -556,7 +556,7 @@ CMD ["influxd"]
 ## `influxdb:1.10.0-meta`
 
 ```console
-$ docker pull influxdb@sha256:9d0ce83a31efc571787d7e1a260cced02d15cdc77d801d641cfa6567994444c3
+$ docker pull influxdb@sha256:160fce62fa91e281f3d9b5d3b3e677a7e230dba7a037b687255ce8bc0b448d2f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -566,74 +566,74 @@ $ docker pull influxdb@sha256:9d0ce83a31efc571787d7e1a260cced02d15cdc77d801d641c
 ### `influxdb:1.10.0-meta` - linux; amd64
 
 ```console
-$ docker pull influxdb@sha256:2e71177de2e9ede2f764e7631cefa4ed1173891ada16f5f4e6542b8444cff012
+$ docker pull influxdb@sha256:d039714deb3de5b8543a894b87a06ff3eb5f61b51711d586cfbf06cca1de9bf7
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **83.0 MB (82994345 bytes)**  
+-	Total Size: **83.0 MB (82975822 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2e65519ce0aa5ae3ec46772de594fc061d1425c18b4b07a174bab622f9c97a9b`
+-	Image ID: `sha256:92c7f0d22ea1fa14a6af2d0c79183340bbb259aad765b7897ac66b027b6f465a`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["influxd-meta"]`
 
 ```dockerfile
-# Tue, 06 Dec 2022 01:20:41 GMT
-ADD file:553d20b03d45305e58cde07e0c259421bba044155ac90b4559e5cc0b69093347 in / 
-# Tue, 06 Dec 2022 01:20:41 GMT
+# Wed, 21 Dec 2022 01:20:21 GMT
+ADD file:c13b430c8699df107ffd9ea5230b92238bc037a8e1cbbe35d6ab664941d575da in / 
+# Wed, 21 Dec 2022 01:20:22 GMT
 CMD ["bash"]
-# Tue, 06 Dec 2022 02:13:26 GMT
+# Wed, 21 Dec 2022 11:13:51 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 06 Dec 2022 02:13:31 GMT
+# Wed, 21 Dec 2022 11:13:58 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 06 Dec 2022 16:59:54 GMT
+# Wed, 21 Dec 2022 20:00:55 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     for key in         05CE15085FC09D18E99EFB22684A14CF2582E0C5 ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done
-# Tue, 06 Dec 2022 17:00:38 GMT
+# Wed, 21 Dec 2022 20:01:43 GMT
 ENV INFLUXDB_VERSION=1.10.0-c1.10.0
-# Tue, 06 Dec 2022 17:00:50 GMT
+# Wed, 21 Dec 2022 20:01:56 GMT
 RUN wget --no-verbose https://dl.influxdata.com/enterprise/releases/influxdb-meta_${INFLUXDB_VERSION}_amd64.deb.asc &&     wget --no-verbose https://dl.influxdata.com/enterprise/releases/influxdb-meta_${INFLUXDB_VERSION}_amd64.deb &&     gpg --batch --verify influxdb-meta_${INFLUXDB_VERSION}_amd64.deb.asc influxdb-meta_${INFLUXDB_VERSION}_amd64.deb &&     dpkg -i influxdb-meta_${INFLUXDB_VERSION}_amd64.deb &&     rm -f influxdb-meta_${INFLUXDB_VERSION}_amd64.deb*
-# Tue, 06 Dec 2022 17:00:50 GMT
+# Wed, 21 Dec 2022 20:01:56 GMT
 COPY file:5d8d1b0acfd7ca05cf6698246b28d240206fa448f4aa5ac839c9ad323adbeac2 in /etc/influxdb/influxdb-meta.conf 
-# Tue, 06 Dec 2022 17:00:50 GMT
+# Wed, 21 Dec 2022 20:01:56 GMT
 EXPOSE 8091
-# Tue, 06 Dec 2022 17:00:50 GMT
+# Wed, 21 Dec 2022 20:01:56 GMT
 VOLUME [/var/lib/influxdb]
-# Tue, 06 Dec 2022 17:00:50 GMT
+# Wed, 21 Dec 2022 20:01:56 GMT
 COPY file:126b1f7e41b4975cf2ce23037cf6a46253fb817023062317380c48ff5df47228 in /entrypoint.sh 
-# Tue, 06 Dec 2022 17:00:50 GMT
+# Wed, 21 Dec 2022 20:01:57 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 06 Dec 2022 17:00:50 GMT
+# Wed, 21 Dec 2022 20:01:57 GMT
 CMD ["influxd-meta"]
 ```
 
 -	Layers:
-	-	`sha256:f2f58072e9ed1aa1b0143341c5ee83815c00ce47548309fa240155067ab0e698`  
-		Last Modified: Tue, 06 Dec 2022 01:24:48 GMT  
-		Size: 55.0 MB (55041342 bytes)  
+	-	`sha256:32de3c850997ce03b6ff4ae8fb00b34b9d7d7f9a35bfcdb8538e22cc7b77c29d`  
+		Last Modified: Wed, 21 Dec 2022 01:24:10 GMT  
+		Size: 55.0 MB (55025166 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5c8cfbf51e6e6869f1af2a1e7067b07fd6733036a333c9d29f743b0285e26037`  
-		Last Modified: Tue, 06 Dec 2022 02:21:44 GMT  
-		Size: 5.2 MB (5164910 bytes)  
+	-	`sha256:fa1d4c8d85a4e064e50cea74d4aa848dc5fc275aef223fcc1f21fbdb1b5dd182`  
+		Last Modified: Wed, 21 Dec 2022 11:21:24 GMT  
+		Size: 5.2 MB (5163298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa3a609d15798d35c1484072876b7d22a316e98de6a097de33b9dade6a689cd1`  
-		Last Modified: Tue, 06 Dec 2022 02:21:44 GMT  
-		Size: 10.9 MB (10877423 bytes)  
+	-	`sha256:c796299bbbddc7aeada9539a4e7874a75fa2b6ff421f8d5ad40f227b40ab4d86`  
+		Last Modified: Wed, 21 Dec 2022 11:21:24 GMT  
+		Size: 10.9 MB (10876681 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98d38c4f1653f44b974d6db545ca56dffde5e7e6f73647fa98ad4556b8b84547`  
-		Last Modified: Tue, 06 Dec 2022 17:02:37 GMT  
-		Size: 2.9 KB (2897 bytes)  
+	-	`sha256:d5d3e05d16cd1d3c21c0c1001e437e4bcebc7d4a5deae70b54d55948d6d99ab0`  
+		Last Modified: Wed, 21 Dec 2022 20:03:41 GMT  
+		Size: 2.9 KB (2903 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d61069ce781bebd3c7a43ba7ac4f482789ab32ded82e424ab8f9d324c315a1a0`  
-		Last Modified: Tue, 06 Dec 2022 17:04:10 GMT  
-		Size: 11.9 MB (11907199 bytes)  
+	-	`sha256:151e41042c13fdacb282765f40406045d12c539e1121b70e162b24723cf0cfc1`  
+		Last Modified: Wed, 21 Dec 2022 20:05:13 GMT  
+		Size: 11.9 MB (11907203 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc96a7ae13dea66c9a71d6130bafc50e8e57820e8becf1fbaa23597338aa3879`  
-		Last Modified: Tue, 06 Dec 2022 17:04:08 GMT  
-		Size: 199.0 B  
+	-	`sha256:497731fcfeb430df2f67c577536d4780366b38c5a6821e03e30db002e5d7c512`  
+		Last Modified: Wed, 21 Dec 2022 20:05:11 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ce2457daf92b9e7edb9e70b901c8f4a080a1523695ca7420d3437c2855d54ce`  
-		Last Modified: Tue, 06 Dec 2022 17:04:08 GMT  
-		Size: 375.0 B  
+	-	`sha256:ed7fe90093f49d48b04cc44e61705bab769f7729e5f8857545e524e5e7182045`  
+		Last Modified: Wed, 21 Dec 2022 20:05:11 GMT  
+		Size: 374.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `influxdb:1.10.0-meta-alpine`
@@ -716,7 +716,7 @@ CMD ["influxd-meta"]
 ## `influxdb:1.8`
 
 ```console
-$ docker pull influxdb@sha256:4f1b449205ab29b56e096581227cfe7647090e1d64c8a510d6089c3bf2706ffd
+$ docker pull influxdb@sha256:71e9ac9ee45ea28d25b28b3ba09245ce0e25e85dc84652ae197e32f6e787e12a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -728,80 +728,80 @@ $ docker pull influxdb@sha256:4f1b449205ab29b56e096581227cfe7647090e1d64c8a510d6
 ### `influxdb:1.8` - linux; amd64
 
 ```console
-$ docker pull influxdb@sha256:1ae78492b61983ae9331da8beb3912daf2bed91cd01f293b407f6217769085e2
+$ docker pull influxdb@sha256:4387101d2ece553398f9a1354560b7a8f67c95ef442ee121b42ea63b5414ac00
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **126.0 MB (125974042 bytes)**  
+-	Total Size: **126.0 MB (125955536 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:27bb5416e7117f7e62d94057908585104c8d7bc27a31120508d044452b90e3bb`
+-	Image ID: `sha256:d0b1cb103c926d62642683585ed30dc1ddb5f14494d55a64378031b3d1012bf0`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["influxd"]`
 
 ```dockerfile
-# Tue, 06 Dec 2022 01:20:41 GMT
-ADD file:553d20b03d45305e58cde07e0c259421bba044155ac90b4559e5cc0b69093347 in / 
-# Tue, 06 Dec 2022 01:20:41 GMT
+# Wed, 21 Dec 2022 01:20:21 GMT
+ADD file:c13b430c8699df107ffd9ea5230b92238bc037a8e1cbbe35d6ab664941d575da in / 
+# Wed, 21 Dec 2022 01:20:22 GMT
 CMD ["bash"]
-# Tue, 06 Dec 2022 02:13:26 GMT
+# Wed, 21 Dec 2022 11:13:51 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 06 Dec 2022 02:13:31 GMT
+# Wed, 21 Dec 2022 11:13:58 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 06 Dec 2022 16:59:54 GMT
+# Wed, 21 Dec 2022 20:00:55 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     for key in         05CE15085FC09D18E99EFB22684A14CF2582E0C5 ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done
-# Tue, 06 Dec 2022 16:59:54 GMT
+# Wed, 21 Dec 2022 20:00:56 GMT
 ENV INFLUXDB_VERSION=1.8.10
-# Tue, 06 Dec 2022 16:59:58 GMT
+# Wed, 21 Dec 2022 20:01:00 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     wget --no-verbose https://dl.influxdata.com/influxdb/releases/influxdb_${INFLUXDB_VERSION}_${ARCH}.deb.asc &&     wget --no-verbose https://dl.influxdata.com/influxdb/releases/influxdb_${INFLUXDB_VERSION}_${ARCH}.deb &&     gpg --batch --verify influxdb_${INFLUXDB_VERSION}_${ARCH}.deb.asc influxdb_${INFLUXDB_VERSION}_${ARCH}.deb &&     dpkg -i influxdb_${INFLUXDB_VERSION}_${ARCH}.deb &&     rm -f influxdb_${INFLUXDB_VERSION}_${ARCH}.deb*
-# Tue, 06 Dec 2022 16:59:58 GMT
+# Wed, 21 Dec 2022 20:01:00 GMT
 COPY file:3d8a606d61e1fc0042cf34d036eda4550a18d140c47376dacc02d96ee6f2dd8b in /etc/influxdb/influxdb.conf 
-# Tue, 06 Dec 2022 16:59:59 GMT
+# Wed, 21 Dec 2022 20:01:00 GMT
 EXPOSE 8086
-# Tue, 06 Dec 2022 16:59:59 GMT
+# Wed, 21 Dec 2022 20:01:00 GMT
 VOLUME [/var/lib/influxdb]
-# Tue, 06 Dec 2022 16:59:59 GMT
+# Wed, 21 Dec 2022 20:01:01 GMT
 COPY file:61c4af7a0e637328374ec46266ed6dde40adf7d14ac6c5081100924991beb7f3 in /entrypoint.sh 
-# Tue, 06 Dec 2022 16:59:59 GMT
+# Wed, 21 Dec 2022 20:01:01 GMT
 COPY file:e7af69cde81ffb6eddc175488941183d1244772c36c27b74751d54389fb71701 in /init-influxdb.sh 
-# Tue, 06 Dec 2022 16:59:59 GMT
+# Wed, 21 Dec 2022 20:01:01 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 06 Dec 2022 16:59:59 GMT
+# Wed, 21 Dec 2022 20:01:01 GMT
 CMD ["influxd"]
 ```
 
 -	Layers:
-	-	`sha256:f2f58072e9ed1aa1b0143341c5ee83815c00ce47548309fa240155067ab0e698`  
-		Last Modified: Tue, 06 Dec 2022 01:24:48 GMT  
-		Size: 55.0 MB (55041342 bytes)  
+	-	`sha256:32de3c850997ce03b6ff4ae8fb00b34b9d7d7f9a35bfcdb8538e22cc7b77c29d`  
+		Last Modified: Wed, 21 Dec 2022 01:24:10 GMT  
+		Size: 55.0 MB (55025166 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5c8cfbf51e6e6869f1af2a1e7067b07fd6733036a333c9d29f743b0285e26037`  
-		Last Modified: Tue, 06 Dec 2022 02:21:44 GMT  
-		Size: 5.2 MB (5164910 bytes)  
+	-	`sha256:fa1d4c8d85a4e064e50cea74d4aa848dc5fc275aef223fcc1f21fbdb1b5dd182`  
+		Last Modified: Wed, 21 Dec 2022 11:21:24 GMT  
+		Size: 5.2 MB (5163298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa3a609d15798d35c1484072876b7d22a316e98de6a097de33b9dade6a689cd1`  
-		Last Modified: Tue, 06 Dec 2022 02:21:44 GMT  
-		Size: 10.9 MB (10877423 bytes)  
+	-	`sha256:c796299bbbddc7aeada9539a4e7874a75fa2b6ff421f8d5ad40f227b40ab4d86`  
+		Last Modified: Wed, 21 Dec 2022 11:21:24 GMT  
+		Size: 10.9 MB (10876681 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98d38c4f1653f44b974d6db545ca56dffde5e7e6f73647fa98ad4556b8b84547`  
-		Last Modified: Tue, 06 Dec 2022 17:02:37 GMT  
-		Size: 2.9 KB (2897 bytes)  
+	-	`sha256:d5d3e05d16cd1d3c21c0c1001e437e4bcebc7d4a5deae70b54d55948d6d99ab0`  
+		Last Modified: Wed, 21 Dec 2022 20:03:41 GMT  
+		Size: 2.9 KB (2903 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5644cc08aefa3a356bbfe4c5d0adc8cf1e05b360f35b477c41b6f531e0dfebe3`  
-		Last Modified: Tue, 06 Dec 2022 17:02:44 GMT  
-		Size: 54.9 MB (54885754 bytes)  
+	-	`sha256:70b94764a22eb7b575b13d7ebf32b9ee04ac5a11487a25e03d45b240c61e45be`  
+		Last Modified: Wed, 21 Dec 2022 20:03:48 GMT  
+		Size: 54.9 MB (54885770 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:29a7b585ac9d0af01da7581306c9a21de42e9f4d1cb0184ecad86b5af7859e17`  
-		Last Modified: Tue, 06 Dec 2022 17:02:37 GMT  
-		Size: 225.0 B  
+	-	`sha256:e81cd77cc6a8962dbc1a4f034bacf0fb0d6b4ea10435d3327ead7d11c7698653`  
+		Last Modified: Wed, 21 Dec 2022 20:03:43 GMT  
+		Size: 226.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6b33b15a4a898166bb7b206df89a52a04214d7c89dbd8c20510084fee56c0747`  
-		Last Modified: Tue, 06 Dec 2022 17:02:37 GMT  
-		Size: 211.0 B  
+	-	`sha256:935d1d4d70f63557452e5056090afb165ddf8f982c6f5736b54473f53c150d0d`  
+		Last Modified: Wed, 21 Dec 2022 20:03:41 GMT  
+		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b88b55586f58a1c612ddb23a171fcd916ede7ead5f9799ee073ac889ec2d411`  
-		Last Modified: Tue, 06 Dec 2022 17:02:37 GMT  
-		Size: 1.3 KB (1280 bytes)  
+	-	`sha256:424d0ece5b3d4cabde1cccf413b845e24185b2f0e829b7b7aba6d39ad6f1a89d`  
+		Last Modified: Wed, 21 Dec 2022 20:03:41 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `influxdb:1.8` - linux; arm variant v7
@@ -1048,7 +1048,7 @@ CMD ["influxd"]
 ## `influxdb:1.8-data`
 
 ```console
-$ docker pull influxdb@sha256:5d8a14f894d50454dd27b62a219440d577c608dcc5efc3a50df19cbd74e0d52b
+$ docker pull influxdb@sha256:b8d023d1285c70cfebc10026dcb52ab0bf193e829c0889d75fdb49a2d409535a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1058,80 +1058,80 @@ $ docker pull influxdb@sha256:5d8a14f894d50454dd27b62a219440d577c608dcc5efc3a50d
 ### `influxdb:1.8-data` - linux; amd64
 
 ```console
-$ docker pull influxdb@sha256:8c28b446691639831f01f03e3e3ae472d6cf51d41012f5e2954a4a5a3adb0fb5
+$ docker pull influxdb@sha256:3b66c5c8ee6b2b8680349849451f0c84ac8346fe661404ed1130625ef7dec0a2
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **127.8 MB (127793429 bytes)**  
+-	Total Size: **127.8 MB (127774937 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ee7d723685c97cf7eb4980deaff6605bdc0d750becb4ce3eaa702dba866cffa8`
+-	Image ID: `sha256:df2be3f6981bd2b34e491930f37718182381a272da2f4747b43fd13be7ee3ec0`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["influxd"]`
 
 ```dockerfile
-# Tue, 06 Dec 2022 01:20:41 GMT
-ADD file:553d20b03d45305e58cde07e0c259421bba044155ac90b4559e5cc0b69093347 in / 
-# Tue, 06 Dec 2022 01:20:41 GMT
+# Wed, 21 Dec 2022 01:20:21 GMT
+ADD file:c13b430c8699df107ffd9ea5230b92238bc037a8e1cbbe35d6ab664941d575da in / 
+# Wed, 21 Dec 2022 01:20:22 GMT
 CMD ["bash"]
-# Tue, 06 Dec 2022 02:13:26 GMT
+# Wed, 21 Dec 2022 11:13:51 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 06 Dec 2022 02:13:31 GMT
+# Wed, 21 Dec 2022 11:13:58 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 06 Dec 2022 16:59:54 GMT
+# Wed, 21 Dec 2022 20:00:55 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     for key in         05CE15085FC09D18E99EFB22684A14CF2582E0C5 ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done
-# Tue, 06 Dec 2022 17:00:04 GMT
+# Wed, 21 Dec 2022 20:01:06 GMT
 ENV INFLUXDB_VERSION=1.8.10-c1.8.10
-# Tue, 06 Dec 2022 17:00:08 GMT
+# Wed, 21 Dec 2022 20:01:12 GMT
 RUN wget --no-verbose https://dl.influxdata.com/enterprise/releases/influxdb-data_${INFLUXDB_VERSION}_amd64.deb.asc &&     wget --no-verbose https://dl.influxdata.com/enterprise/releases/influxdb-data_${INFLUXDB_VERSION}_amd64.deb &&     gpg --batch --verify influxdb-data_${INFLUXDB_VERSION}_amd64.deb.asc influxdb-data_${INFLUXDB_VERSION}_amd64.deb &&     dpkg -i influxdb-data_${INFLUXDB_VERSION}_amd64.deb &&     rm -f influxdb-data_${INFLUXDB_VERSION}_amd64.deb*
-# Tue, 06 Dec 2022 17:00:08 GMT
+# Wed, 21 Dec 2022 20:01:13 GMT
 COPY file:bf2f42b62a32a7ee3ab93d9a5e451b7d59af1a97e40dc4a76b8aaf2f64383d7a in /etc/influxdb/influxdb.conf 
-# Tue, 06 Dec 2022 17:00:09 GMT
+# Wed, 21 Dec 2022 20:01:13 GMT
 EXPOSE 8086
-# Tue, 06 Dec 2022 17:00:09 GMT
+# Wed, 21 Dec 2022 20:01:13 GMT
 VOLUME [/var/lib/influxdb]
-# Tue, 06 Dec 2022 17:00:09 GMT
+# Wed, 21 Dec 2022 20:01:13 GMT
 COPY file:182a0176834db40043100d082d05e5aded9887c94b02416f6e3154c827c07360 in /entrypoint.sh 
-# Tue, 06 Dec 2022 17:00:09 GMT
+# Wed, 21 Dec 2022 20:01:13 GMT
 COPY file:e7af69cde81ffb6eddc175488941183d1244772c36c27b74751d54389fb71701 in /init-influxdb.sh 
-# Tue, 06 Dec 2022 17:00:09 GMT
+# Wed, 21 Dec 2022 20:01:13 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 06 Dec 2022 17:00:09 GMT
+# Wed, 21 Dec 2022 20:01:13 GMT
 CMD ["influxd"]
 ```
 
 -	Layers:
-	-	`sha256:f2f58072e9ed1aa1b0143341c5ee83815c00ce47548309fa240155067ab0e698`  
-		Last Modified: Tue, 06 Dec 2022 01:24:48 GMT  
-		Size: 55.0 MB (55041342 bytes)  
+	-	`sha256:32de3c850997ce03b6ff4ae8fb00b34b9d7d7f9a35bfcdb8538e22cc7b77c29d`  
+		Last Modified: Wed, 21 Dec 2022 01:24:10 GMT  
+		Size: 55.0 MB (55025166 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5c8cfbf51e6e6869f1af2a1e7067b07fd6733036a333c9d29f743b0285e26037`  
-		Last Modified: Tue, 06 Dec 2022 02:21:44 GMT  
-		Size: 5.2 MB (5164910 bytes)  
+	-	`sha256:fa1d4c8d85a4e064e50cea74d4aa848dc5fc275aef223fcc1f21fbdb1b5dd182`  
+		Last Modified: Wed, 21 Dec 2022 11:21:24 GMT  
+		Size: 5.2 MB (5163298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa3a609d15798d35c1484072876b7d22a316e98de6a097de33b9dade6a689cd1`  
-		Last Modified: Tue, 06 Dec 2022 02:21:44 GMT  
-		Size: 10.9 MB (10877423 bytes)  
+	-	`sha256:c796299bbbddc7aeada9539a4e7874a75fa2b6ff421f8d5ad40f227b40ab4d86`  
+		Last Modified: Wed, 21 Dec 2022 11:21:24 GMT  
+		Size: 10.9 MB (10876681 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98d38c4f1653f44b974d6db545ca56dffde5e7e6f73647fa98ad4556b8b84547`  
-		Last Modified: Tue, 06 Dec 2022 17:02:37 GMT  
-		Size: 2.9 KB (2897 bytes)  
+	-	`sha256:d5d3e05d16cd1d3c21c0c1001e437e4bcebc7d4a5deae70b54d55948d6d99ab0`  
+		Last Modified: Wed, 21 Dec 2022 20:03:41 GMT  
+		Size: 2.9 KB (2903 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae95131cb457a9ff37c6cc32fa694fe786421a433187e9df409879438e03ad45`  
-		Last Modified: Tue, 06 Dec 2022 17:03:01 GMT  
-		Size: 56.7 MB (56705082 bytes)  
+	-	`sha256:237578ced2c487cb6be41a98e661c8f75d953efdbac024482ee6b37bef8267e6`  
+		Last Modified: Wed, 21 Dec 2022 20:04:05 GMT  
+		Size: 56.7 MB (56705115 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b100dbabd0b6c04955eac9f232ac76885d708f02875c649bbf5d5ff6594b7c0c`  
-		Last Modified: Tue, 06 Dec 2022 17:02:54 GMT  
-		Size: 243.0 B  
+	-	`sha256:dc95bf8713df5bd0e84a26e388429a03fdc9518db60a1af74cdcbf165b8fe269`  
+		Last Modified: Wed, 21 Dec 2022 20:03:57 GMT  
+		Size: 242.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c0b46154af8ae949bc0eba50def161dd0207094c21b61fb3689dd8c6f1880d55`  
-		Last Modified: Tue, 06 Dec 2022 17:02:54 GMT  
-		Size: 252.0 B  
+	-	`sha256:d077efca810f9118484bf64834721e32fd40f5b177051c2b26fea3ddd1ed3188`  
+		Last Modified: Wed, 21 Dec 2022 20:03:57 GMT  
+		Size: 251.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f1ab112ff452ac9d0eb7ecaea0ce0a55c60fca45e6d029b72de217d14ff61a39`  
-		Last Modified: Tue, 06 Dec 2022 17:02:54 GMT  
-		Size: 1.3 KB (1280 bytes)  
+	-	`sha256:dc664d61eb087c3d1789223b39d7b8ba6cdc4250cdfdc67ccc2bd9f60db1c5c1`  
+		Last Modified: Wed, 21 Dec 2022 20:03:57 GMT  
+		Size: 1.3 KB (1281 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `influxdb:1.8-data-alpine`
@@ -1220,7 +1220,7 @@ CMD ["influxd"]
 ## `influxdb:1.8-meta`
 
 ```console
-$ docker pull influxdb@sha256:107920d3821003e1c1bdbed734785a929b05ba6e2e202dccd44e954bca53b020
+$ docker pull influxdb@sha256:a29aafcd859875db3d7a1305bc08047636f7da6c0d0693bce310a7ebdebf2892
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1230,74 +1230,74 @@ $ docker pull influxdb@sha256:107920d3821003e1c1bdbed734785a929b05ba6e2e202dccd4
 ### `influxdb:1.8-meta` - linux; amd64
 
 ```console
-$ docker pull influxdb@sha256:536141cb2fc369d3a3a239047bce1a8e3ce62742f3224c7c6275cbbebd69ec25
+$ docker pull influxdb@sha256:66b6208a988982f7d85bbe0767800de7b4e9a17abcb7473dc670fc221385e97f
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **94.5 MB (94499931 bytes)**  
+-	Total Size: **94.5 MB (94481454 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:09ceec4da767278293d67a5a1f4364babd005f6a8d176ea3f12e75c5f305bf5f`
+-	Image ID: `sha256:71fdddec88ff289dec24d20895c0b18865c0f575c318d001a6a0b631d5f96db0`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["influxd-meta"]`
 
 ```dockerfile
-# Tue, 06 Dec 2022 01:20:41 GMT
-ADD file:553d20b03d45305e58cde07e0c259421bba044155ac90b4559e5cc0b69093347 in / 
-# Tue, 06 Dec 2022 01:20:41 GMT
+# Wed, 21 Dec 2022 01:20:21 GMT
+ADD file:c13b430c8699df107ffd9ea5230b92238bc037a8e1cbbe35d6ab664941d575da in / 
+# Wed, 21 Dec 2022 01:20:22 GMT
 CMD ["bash"]
-# Tue, 06 Dec 2022 02:13:26 GMT
+# Wed, 21 Dec 2022 11:13:51 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 06 Dec 2022 02:13:31 GMT
+# Wed, 21 Dec 2022 11:13:58 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 06 Dec 2022 16:59:54 GMT
+# Wed, 21 Dec 2022 20:00:55 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     for key in         05CE15085FC09D18E99EFB22684A14CF2582E0C5 ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done
-# Tue, 06 Dec 2022 17:00:04 GMT
+# Wed, 21 Dec 2022 20:01:06 GMT
 ENV INFLUXDB_VERSION=1.8.10-c1.8.10
-# Tue, 06 Dec 2022 17:00:17 GMT
+# Wed, 21 Dec 2022 20:01:20 GMT
 RUN wget --no-verbose https://dl.influxdata.com/enterprise/releases/influxdb-meta_${INFLUXDB_VERSION}_amd64.deb.asc &&     wget --no-verbose https://dl.influxdata.com/enterprise/releases/influxdb-meta_${INFLUXDB_VERSION}_amd64.deb &&     gpg --batch --verify influxdb-meta_${INFLUXDB_VERSION}_amd64.deb.asc influxdb-meta_${INFLUXDB_VERSION}_amd64.deb &&     dpkg -i influxdb-meta_${INFLUXDB_VERSION}_amd64.deb &&     rm -f influxdb-meta_${INFLUXDB_VERSION}_amd64.deb*
-# Tue, 06 Dec 2022 17:00:17 GMT
+# Wed, 21 Dec 2022 20:01:21 GMT
 COPY file:5d8d1b0acfd7ca05cf6698246b28d240206fa448f4aa5ac839c9ad323adbeac2 in /etc/influxdb/influxdb-meta.conf 
-# Tue, 06 Dec 2022 17:00:17 GMT
+# Wed, 21 Dec 2022 20:01:21 GMT
 EXPOSE 8091
-# Tue, 06 Dec 2022 17:00:17 GMT
+# Wed, 21 Dec 2022 20:01:21 GMT
 VOLUME [/var/lib/influxdb]
-# Tue, 06 Dec 2022 17:00:17 GMT
+# Wed, 21 Dec 2022 20:01:21 GMT
 COPY file:126b1f7e41b4975cf2ce23037cf6a46253fb817023062317380c48ff5df47228 in /entrypoint.sh 
-# Tue, 06 Dec 2022 17:00:17 GMT
+# Wed, 21 Dec 2022 20:01:21 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 06 Dec 2022 17:00:17 GMT
+# Wed, 21 Dec 2022 20:01:21 GMT
 CMD ["influxd-meta"]
 ```
 
 -	Layers:
-	-	`sha256:f2f58072e9ed1aa1b0143341c5ee83815c00ce47548309fa240155067ab0e698`  
-		Last Modified: Tue, 06 Dec 2022 01:24:48 GMT  
-		Size: 55.0 MB (55041342 bytes)  
+	-	`sha256:32de3c850997ce03b6ff4ae8fb00b34b9d7d7f9a35bfcdb8538e22cc7b77c29d`  
+		Last Modified: Wed, 21 Dec 2022 01:24:10 GMT  
+		Size: 55.0 MB (55025166 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5c8cfbf51e6e6869f1af2a1e7067b07fd6733036a333c9d29f743b0285e26037`  
-		Last Modified: Tue, 06 Dec 2022 02:21:44 GMT  
-		Size: 5.2 MB (5164910 bytes)  
+	-	`sha256:fa1d4c8d85a4e064e50cea74d4aa848dc5fc275aef223fcc1f21fbdb1b5dd182`  
+		Last Modified: Wed, 21 Dec 2022 11:21:24 GMT  
+		Size: 5.2 MB (5163298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa3a609d15798d35c1484072876b7d22a316e98de6a097de33b9dade6a689cd1`  
-		Last Modified: Tue, 06 Dec 2022 02:21:44 GMT  
-		Size: 10.9 MB (10877423 bytes)  
+	-	`sha256:c796299bbbddc7aeada9539a4e7874a75fa2b6ff421f8d5ad40f227b40ab4d86`  
+		Last Modified: Wed, 21 Dec 2022 11:21:24 GMT  
+		Size: 10.9 MB (10876681 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98d38c4f1653f44b974d6db545ca56dffde5e7e6f73647fa98ad4556b8b84547`  
-		Last Modified: Tue, 06 Dec 2022 17:02:37 GMT  
-		Size: 2.9 KB (2897 bytes)  
+	-	`sha256:d5d3e05d16cd1d3c21c0c1001e437e4bcebc7d4a5deae70b54d55948d6d99ab0`  
+		Last Modified: Wed, 21 Dec 2022 20:03:41 GMT  
+		Size: 2.9 KB (2903 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:67bffb67fb84c28ccc643c0f0d4cca77a82c41907cb197d7e0b39f94cbe52301`  
-		Last Modified: Tue, 06 Dec 2022 17:03:16 GMT  
-		Size: 23.4 MB (23412788 bytes)  
+	-	`sha256:1b2a010b5dcfc2e3b0af2126c905d502623c566e27059f0f06398a27de82029f`  
+		Last Modified: Wed, 21 Dec 2022 20:04:20 GMT  
+		Size: 23.4 MB (23412834 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ae5240e9f29e22b23228ba9d3b5bcc5dbaf38983b4b0eda57af1b1e61cf065f`  
-		Last Modified: Tue, 06 Dec 2022 17:03:13 GMT  
-		Size: 196.0 B  
+	-	`sha256:4c9e8f1d231898e473998fe4a39ab26cdf5f4e58715a7fe311380c38f3460d92`  
+		Last Modified: Wed, 21 Dec 2022 20:04:17 GMT  
+		Size: 198.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9dd844b9be54263daf80ee9fabbd72b5b44aec54a2e7f5fbed25ecf25778b3c9`  
-		Last Modified: Tue, 06 Dec 2022 17:03:13 GMT  
-		Size: 375.0 B  
+	-	`sha256:40bfe205f10a0c42fb81e3317c3629829cf29fccabd20e5571f3880732a4d292`  
+		Last Modified: Wed, 21 Dec 2022 20:04:17 GMT  
+		Size: 374.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `influxdb:1.8-meta-alpine`
@@ -1380,7 +1380,7 @@ CMD ["influxd-meta"]
 ## `influxdb:1.8.10`
 
 ```console
-$ docker pull influxdb@sha256:4f1b449205ab29b56e096581227cfe7647090e1d64c8a510d6089c3bf2706ffd
+$ docker pull influxdb@sha256:71e9ac9ee45ea28d25b28b3ba09245ce0e25e85dc84652ae197e32f6e787e12a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1392,80 +1392,80 @@ $ docker pull influxdb@sha256:4f1b449205ab29b56e096581227cfe7647090e1d64c8a510d6
 ### `influxdb:1.8.10` - linux; amd64
 
 ```console
-$ docker pull influxdb@sha256:1ae78492b61983ae9331da8beb3912daf2bed91cd01f293b407f6217769085e2
+$ docker pull influxdb@sha256:4387101d2ece553398f9a1354560b7a8f67c95ef442ee121b42ea63b5414ac00
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **126.0 MB (125974042 bytes)**  
+-	Total Size: **126.0 MB (125955536 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:27bb5416e7117f7e62d94057908585104c8d7bc27a31120508d044452b90e3bb`
+-	Image ID: `sha256:d0b1cb103c926d62642683585ed30dc1ddb5f14494d55a64378031b3d1012bf0`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["influxd"]`
 
 ```dockerfile
-# Tue, 06 Dec 2022 01:20:41 GMT
-ADD file:553d20b03d45305e58cde07e0c259421bba044155ac90b4559e5cc0b69093347 in / 
-# Tue, 06 Dec 2022 01:20:41 GMT
+# Wed, 21 Dec 2022 01:20:21 GMT
+ADD file:c13b430c8699df107ffd9ea5230b92238bc037a8e1cbbe35d6ab664941d575da in / 
+# Wed, 21 Dec 2022 01:20:22 GMT
 CMD ["bash"]
-# Tue, 06 Dec 2022 02:13:26 GMT
+# Wed, 21 Dec 2022 11:13:51 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 06 Dec 2022 02:13:31 GMT
+# Wed, 21 Dec 2022 11:13:58 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 06 Dec 2022 16:59:54 GMT
+# Wed, 21 Dec 2022 20:00:55 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     for key in         05CE15085FC09D18E99EFB22684A14CF2582E0C5 ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done
-# Tue, 06 Dec 2022 16:59:54 GMT
+# Wed, 21 Dec 2022 20:00:56 GMT
 ENV INFLUXDB_VERSION=1.8.10
-# Tue, 06 Dec 2022 16:59:58 GMT
+# Wed, 21 Dec 2022 20:01:00 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     wget --no-verbose https://dl.influxdata.com/influxdb/releases/influxdb_${INFLUXDB_VERSION}_${ARCH}.deb.asc &&     wget --no-verbose https://dl.influxdata.com/influxdb/releases/influxdb_${INFLUXDB_VERSION}_${ARCH}.deb &&     gpg --batch --verify influxdb_${INFLUXDB_VERSION}_${ARCH}.deb.asc influxdb_${INFLUXDB_VERSION}_${ARCH}.deb &&     dpkg -i influxdb_${INFLUXDB_VERSION}_${ARCH}.deb &&     rm -f influxdb_${INFLUXDB_VERSION}_${ARCH}.deb*
-# Tue, 06 Dec 2022 16:59:58 GMT
+# Wed, 21 Dec 2022 20:01:00 GMT
 COPY file:3d8a606d61e1fc0042cf34d036eda4550a18d140c47376dacc02d96ee6f2dd8b in /etc/influxdb/influxdb.conf 
-# Tue, 06 Dec 2022 16:59:59 GMT
+# Wed, 21 Dec 2022 20:01:00 GMT
 EXPOSE 8086
-# Tue, 06 Dec 2022 16:59:59 GMT
+# Wed, 21 Dec 2022 20:01:00 GMT
 VOLUME [/var/lib/influxdb]
-# Tue, 06 Dec 2022 16:59:59 GMT
+# Wed, 21 Dec 2022 20:01:01 GMT
 COPY file:61c4af7a0e637328374ec46266ed6dde40adf7d14ac6c5081100924991beb7f3 in /entrypoint.sh 
-# Tue, 06 Dec 2022 16:59:59 GMT
+# Wed, 21 Dec 2022 20:01:01 GMT
 COPY file:e7af69cde81ffb6eddc175488941183d1244772c36c27b74751d54389fb71701 in /init-influxdb.sh 
-# Tue, 06 Dec 2022 16:59:59 GMT
+# Wed, 21 Dec 2022 20:01:01 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 06 Dec 2022 16:59:59 GMT
+# Wed, 21 Dec 2022 20:01:01 GMT
 CMD ["influxd"]
 ```
 
 -	Layers:
-	-	`sha256:f2f58072e9ed1aa1b0143341c5ee83815c00ce47548309fa240155067ab0e698`  
-		Last Modified: Tue, 06 Dec 2022 01:24:48 GMT  
-		Size: 55.0 MB (55041342 bytes)  
+	-	`sha256:32de3c850997ce03b6ff4ae8fb00b34b9d7d7f9a35bfcdb8538e22cc7b77c29d`  
+		Last Modified: Wed, 21 Dec 2022 01:24:10 GMT  
+		Size: 55.0 MB (55025166 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5c8cfbf51e6e6869f1af2a1e7067b07fd6733036a333c9d29f743b0285e26037`  
-		Last Modified: Tue, 06 Dec 2022 02:21:44 GMT  
-		Size: 5.2 MB (5164910 bytes)  
+	-	`sha256:fa1d4c8d85a4e064e50cea74d4aa848dc5fc275aef223fcc1f21fbdb1b5dd182`  
+		Last Modified: Wed, 21 Dec 2022 11:21:24 GMT  
+		Size: 5.2 MB (5163298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa3a609d15798d35c1484072876b7d22a316e98de6a097de33b9dade6a689cd1`  
-		Last Modified: Tue, 06 Dec 2022 02:21:44 GMT  
-		Size: 10.9 MB (10877423 bytes)  
+	-	`sha256:c796299bbbddc7aeada9539a4e7874a75fa2b6ff421f8d5ad40f227b40ab4d86`  
+		Last Modified: Wed, 21 Dec 2022 11:21:24 GMT  
+		Size: 10.9 MB (10876681 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98d38c4f1653f44b974d6db545ca56dffde5e7e6f73647fa98ad4556b8b84547`  
-		Last Modified: Tue, 06 Dec 2022 17:02:37 GMT  
-		Size: 2.9 KB (2897 bytes)  
+	-	`sha256:d5d3e05d16cd1d3c21c0c1001e437e4bcebc7d4a5deae70b54d55948d6d99ab0`  
+		Last Modified: Wed, 21 Dec 2022 20:03:41 GMT  
+		Size: 2.9 KB (2903 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5644cc08aefa3a356bbfe4c5d0adc8cf1e05b360f35b477c41b6f531e0dfebe3`  
-		Last Modified: Tue, 06 Dec 2022 17:02:44 GMT  
-		Size: 54.9 MB (54885754 bytes)  
+	-	`sha256:70b94764a22eb7b575b13d7ebf32b9ee04ac5a11487a25e03d45b240c61e45be`  
+		Last Modified: Wed, 21 Dec 2022 20:03:48 GMT  
+		Size: 54.9 MB (54885770 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:29a7b585ac9d0af01da7581306c9a21de42e9f4d1cb0184ecad86b5af7859e17`  
-		Last Modified: Tue, 06 Dec 2022 17:02:37 GMT  
-		Size: 225.0 B  
+	-	`sha256:e81cd77cc6a8962dbc1a4f034bacf0fb0d6b4ea10435d3327ead7d11c7698653`  
+		Last Modified: Wed, 21 Dec 2022 20:03:43 GMT  
+		Size: 226.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6b33b15a4a898166bb7b206df89a52a04214d7c89dbd8c20510084fee56c0747`  
-		Last Modified: Tue, 06 Dec 2022 17:02:37 GMT  
-		Size: 211.0 B  
+	-	`sha256:935d1d4d70f63557452e5056090afb165ddf8f982c6f5736b54473f53c150d0d`  
+		Last Modified: Wed, 21 Dec 2022 20:03:41 GMT  
+		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b88b55586f58a1c612ddb23a171fcd916ede7ead5f9799ee073ac889ec2d411`  
-		Last Modified: Tue, 06 Dec 2022 17:02:37 GMT  
-		Size: 1.3 KB (1280 bytes)  
+	-	`sha256:424d0ece5b3d4cabde1cccf413b845e24185b2f0e829b7b7aba6d39ad6f1a89d`  
+		Last Modified: Wed, 21 Dec 2022 20:03:41 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `influxdb:1.8.10` - linux; arm variant v7
@@ -1712,7 +1712,7 @@ CMD ["influxd"]
 ## `influxdb:1.8.10-data`
 
 ```console
-$ docker pull influxdb@sha256:5d8a14f894d50454dd27b62a219440d577c608dcc5efc3a50df19cbd74e0d52b
+$ docker pull influxdb@sha256:b8d023d1285c70cfebc10026dcb52ab0bf193e829c0889d75fdb49a2d409535a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1722,80 +1722,80 @@ $ docker pull influxdb@sha256:5d8a14f894d50454dd27b62a219440d577c608dcc5efc3a50d
 ### `influxdb:1.8.10-data` - linux; amd64
 
 ```console
-$ docker pull influxdb@sha256:8c28b446691639831f01f03e3e3ae472d6cf51d41012f5e2954a4a5a3adb0fb5
+$ docker pull influxdb@sha256:3b66c5c8ee6b2b8680349849451f0c84ac8346fe661404ed1130625ef7dec0a2
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **127.8 MB (127793429 bytes)**  
+-	Total Size: **127.8 MB (127774937 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ee7d723685c97cf7eb4980deaff6605bdc0d750becb4ce3eaa702dba866cffa8`
+-	Image ID: `sha256:df2be3f6981bd2b34e491930f37718182381a272da2f4747b43fd13be7ee3ec0`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["influxd"]`
 
 ```dockerfile
-# Tue, 06 Dec 2022 01:20:41 GMT
-ADD file:553d20b03d45305e58cde07e0c259421bba044155ac90b4559e5cc0b69093347 in / 
-# Tue, 06 Dec 2022 01:20:41 GMT
+# Wed, 21 Dec 2022 01:20:21 GMT
+ADD file:c13b430c8699df107ffd9ea5230b92238bc037a8e1cbbe35d6ab664941d575da in / 
+# Wed, 21 Dec 2022 01:20:22 GMT
 CMD ["bash"]
-# Tue, 06 Dec 2022 02:13:26 GMT
+# Wed, 21 Dec 2022 11:13:51 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 06 Dec 2022 02:13:31 GMT
+# Wed, 21 Dec 2022 11:13:58 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 06 Dec 2022 16:59:54 GMT
+# Wed, 21 Dec 2022 20:00:55 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     for key in         05CE15085FC09D18E99EFB22684A14CF2582E0C5 ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done
-# Tue, 06 Dec 2022 17:00:04 GMT
+# Wed, 21 Dec 2022 20:01:06 GMT
 ENV INFLUXDB_VERSION=1.8.10-c1.8.10
-# Tue, 06 Dec 2022 17:00:08 GMT
+# Wed, 21 Dec 2022 20:01:12 GMT
 RUN wget --no-verbose https://dl.influxdata.com/enterprise/releases/influxdb-data_${INFLUXDB_VERSION}_amd64.deb.asc &&     wget --no-verbose https://dl.influxdata.com/enterprise/releases/influxdb-data_${INFLUXDB_VERSION}_amd64.deb &&     gpg --batch --verify influxdb-data_${INFLUXDB_VERSION}_amd64.deb.asc influxdb-data_${INFLUXDB_VERSION}_amd64.deb &&     dpkg -i influxdb-data_${INFLUXDB_VERSION}_amd64.deb &&     rm -f influxdb-data_${INFLUXDB_VERSION}_amd64.deb*
-# Tue, 06 Dec 2022 17:00:08 GMT
+# Wed, 21 Dec 2022 20:01:13 GMT
 COPY file:bf2f42b62a32a7ee3ab93d9a5e451b7d59af1a97e40dc4a76b8aaf2f64383d7a in /etc/influxdb/influxdb.conf 
-# Tue, 06 Dec 2022 17:00:09 GMT
+# Wed, 21 Dec 2022 20:01:13 GMT
 EXPOSE 8086
-# Tue, 06 Dec 2022 17:00:09 GMT
+# Wed, 21 Dec 2022 20:01:13 GMT
 VOLUME [/var/lib/influxdb]
-# Tue, 06 Dec 2022 17:00:09 GMT
+# Wed, 21 Dec 2022 20:01:13 GMT
 COPY file:182a0176834db40043100d082d05e5aded9887c94b02416f6e3154c827c07360 in /entrypoint.sh 
-# Tue, 06 Dec 2022 17:00:09 GMT
+# Wed, 21 Dec 2022 20:01:13 GMT
 COPY file:e7af69cde81ffb6eddc175488941183d1244772c36c27b74751d54389fb71701 in /init-influxdb.sh 
-# Tue, 06 Dec 2022 17:00:09 GMT
+# Wed, 21 Dec 2022 20:01:13 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 06 Dec 2022 17:00:09 GMT
+# Wed, 21 Dec 2022 20:01:13 GMT
 CMD ["influxd"]
 ```
 
 -	Layers:
-	-	`sha256:f2f58072e9ed1aa1b0143341c5ee83815c00ce47548309fa240155067ab0e698`  
-		Last Modified: Tue, 06 Dec 2022 01:24:48 GMT  
-		Size: 55.0 MB (55041342 bytes)  
+	-	`sha256:32de3c850997ce03b6ff4ae8fb00b34b9d7d7f9a35bfcdb8538e22cc7b77c29d`  
+		Last Modified: Wed, 21 Dec 2022 01:24:10 GMT  
+		Size: 55.0 MB (55025166 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5c8cfbf51e6e6869f1af2a1e7067b07fd6733036a333c9d29f743b0285e26037`  
-		Last Modified: Tue, 06 Dec 2022 02:21:44 GMT  
-		Size: 5.2 MB (5164910 bytes)  
+	-	`sha256:fa1d4c8d85a4e064e50cea74d4aa848dc5fc275aef223fcc1f21fbdb1b5dd182`  
+		Last Modified: Wed, 21 Dec 2022 11:21:24 GMT  
+		Size: 5.2 MB (5163298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa3a609d15798d35c1484072876b7d22a316e98de6a097de33b9dade6a689cd1`  
-		Last Modified: Tue, 06 Dec 2022 02:21:44 GMT  
-		Size: 10.9 MB (10877423 bytes)  
+	-	`sha256:c796299bbbddc7aeada9539a4e7874a75fa2b6ff421f8d5ad40f227b40ab4d86`  
+		Last Modified: Wed, 21 Dec 2022 11:21:24 GMT  
+		Size: 10.9 MB (10876681 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98d38c4f1653f44b974d6db545ca56dffde5e7e6f73647fa98ad4556b8b84547`  
-		Last Modified: Tue, 06 Dec 2022 17:02:37 GMT  
-		Size: 2.9 KB (2897 bytes)  
+	-	`sha256:d5d3e05d16cd1d3c21c0c1001e437e4bcebc7d4a5deae70b54d55948d6d99ab0`  
+		Last Modified: Wed, 21 Dec 2022 20:03:41 GMT  
+		Size: 2.9 KB (2903 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae95131cb457a9ff37c6cc32fa694fe786421a433187e9df409879438e03ad45`  
-		Last Modified: Tue, 06 Dec 2022 17:03:01 GMT  
-		Size: 56.7 MB (56705082 bytes)  
+	-	`sha256:237578ced2c487cb6be41a98e661c8f75d953efdbac024482ee6b37bef8267e6`  
+		Last Modified: Wed, 21 Dec 2022 20:04:05 GMT  
+		Size: 56.7 MB (56705115 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b100dbabd0b6c04955eac9f232ac76885d708f02875c649bbf5d5ff6594b7c0c`  
-		Last Modified: Tue, 06 Dec 2022 17:02:54 GMT  
-		Size: 243.0 B  
+	-	`sha256:dc95bf8713df5bd0e84a26e388429a03fdc9518db60a1af74cdcbf165b8fe269`  
+		Last Modified: Wed, 21 Dec 2022 20:03:57 GMT  
+		Size: 242.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c0b46154af8ae949bc0eba50def161dd0207094c21b61fb3689dd8c6f1880d55`  
-		Last Modified: Tue, 06 Dec 2022 17:02:54 GMT  
-		Size: 252.0 B  
+	-	`sha256:d077efca810f9118484bf64834721e32fd40f5b177051c2b26fea3ddd1ed3188`  
+		Last Modified: Wed, 21 Dec 2022 20:03:57 GMT  
+		Size: 251.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f1ab112ff452ac9d0eb7ecaea0ce0a55c60fca45e6d029b72de217d14ff61a39`  
-		Last Modified: Tue, 06 Dec 2022 17:02:54 GMT  
-		Size: 1.3 KB (1280 bytes)  
+	-	`sha256:dc664d61eb087c3d1789223b39d7b8ba6cdc4250cdfdc67ccc2bd9f60db1c5c1`  
+		Last Modified: Wed, 21 Dec 2022 20:03:57 GMT  
+		Size: 1.3 KB (1281 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `influxdb:1.8.10-data-alpine`
@@ -1884,7 +1884,7 @@ CMD ["influxd"]
 ## `influxdb:1.8.10-meta`
 
 ```console
-$ docker pull influxdb@sha256:107920d3821003e1c1bdbed734785a929b05ba6e2e202dccd44e954bca53b020
+$ docker pull influxdb@sha256:a29aafcd859875db3d7a1305bc08047636f7da6c0d0693bce310a7ebdebf2892
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1894,74 +1894,74 @@ $ docker pull influxdb@sha256:107920d3821003e1c1bdbed734785a929b05ba6e2e202dccd4
 ### `influxdb:1.8.10-meta` - linux; amd64
 
 ```console
-$ docker pull influxdb@sha256:536141cb2fc369d3a3a239047bce1a8e3ce62742f3224c7c6275cbbebd69ec25
+$ docker pull influxdb@sha256:66b6208a988982f7d85bbe0767800de7b4e9a17abcb7473dc670fc221385e97f
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **94.5 MB (94499931 bytes)**  
+-	Total Size: **94.5 MB (94481454 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:09ceec4da767278293d67a5a1f4364babd005f6a8d176ea3f12e75c5f305bf5f`
+-	Image ID: `sha256:71fdddec88ff289dec24d20895c0b18865c0f575c318d001a6a0b631d5f96db0`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["influxd-meta"]`
 
 ```dockerfile
-# Tue, 06 Dec 2022 01:20:41 GMT
-ADD file:553d20b03d45305e58cde07e0c259421bba044155ac90b4559e5cc0b69093347 in / 
-# Tue, 06 Dec 2022 01:20:41 GMT
+# Wed, 21 Dec 2022 01:20:21 GMT
+ADD file:c13b430c8699df107ffd9ea5230b92238bc037a8e1cbbe35d6ab664941d575da in / 
+# Wed, 21 Dec 2022 01:20:22 GMT
 CMD ["bash"]
-# Tue, 06 Dec 2022 02:13:26 GMT
+# Wed, 21 Dec 2022 11:13:51 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 06 Dec 2022 02:13:31 GMT
+# Wed, 21 Dec 2022 11:13:58 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 06 Dec 2022 16:59:54 GMT
+# Wed, 21 Dec 2022 20:00:55 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     for key in         05CE15085FC09D18E99EFB22684A14CF2582E0C5 ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done
-# Tue, 06 Dec 2022 17:00:04 GMT
+# Wed, 21 Dec 2022 20:01:06 GMT
 ENV INFLUXDB_VERSION=1.8.10-c1.8.10
-# Tue, 06 Dec 2022 17:00:17 GMT
+# Wed, 21 Dec 2022 20:01:20 GMT
 RUN wget --no-verbose https://dl.influxdata.com/enterprise/releases/influxdb-meta_${INFLUXDB_VERSION}_amd64.deb.asc &&     wget --no-verbose https://dl.influxdata.com/enterprise/releases/influxdb-meta_${INFLUXDB_VERSION}_amd64.deb &&     gpg --batch --verify influxdb-meta_${INFLUXDB_VERSION}_amd64.deb.asc influxdb-meta_${INFLUXDB_VERSION}_amd64.deb &&     dpkg -i influxdb-meta_${INFLUXDB_VERSION}_amd64.deb &&     rm -f influxdb-meta_${INFLUXDB_VERSION}_amd64.deb*
-# Tue, 06 Dec 2022 17:00:17 GMT
+# Wed, 21 Dec 2022 20:01:21 GMT
 COPY file:5d8d1b0acfd7ca05cf6698246b28d240206fa448f4aa5ac839c9ad323adbeac2 in /etc/influxdb/influxdb-meta.conf 
-# Tue, 06 Dec 2022 17:00:17 GMT
+# Wed, 21 Dec 2022 20:01:21 GMT
 EXPOSE 8091
-# Tue, 06 Dec 2022 17:00:17 GMT
+# Wed, 21 Dec 2022 20:01:21 GMT
 VOLUME [/var/lib/influxdb]
-# Tue, 06 Dec 2022 17:00:17 GMT
+# Wed, 21 Dec 2022 20:01:21 GMT
 COPY file:126b1f7e41b4975cf2ce23037cf6a46253fb817023062317380c48ff5df47228 in /entrypoint.sh 
-# Tue, 06 Dec 2022 17:00:17 GMT
+# Wed, 21 Dec 2022 20:01:21 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 06 Dec 2022 17:00:17 GMT
+# Wed, 21 Dec 2022 20:01:21 GMT
 CMD ["influxd-meta"]
 ```
 
 -	Layers:
-	-	`sha256:f2f58072e9ed1aa1b0143341c5ee83815c00ce47548309fa240155067ab0e698`  
-		Last Modified: Tue, 06 Dec 2022 01:24:48 GMT  
-		Size: 55.0 MB (55041342 bytes)  
+	-	`sha256:32de3c850997ce03b6ff4ae8fb00b34b9d7d7f9a35bfcdb8538e22cc7b77c29d`  
+		Last Modified: Wed, 21 Dec 2022 01:24:10 GMT  
+		Size: 55.0 MB (55025166 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5c8cfbf51e6e6869f1af2a1e7067b07fd6733036a333c9d29f743b0285e26037`  
-		Last Modified: Tue, 06 Dec 2022 02:21:44 GMT  
-		Size: 5.2 MB (5164910 bytes)  
+	-	`sha256:fa1d4c8d85a4e064e50cea74d4aa848dc5fc275aef223fcc1f21fbdb1b5dd182`  
+		Last Modified: Wed, 21 Dec 2022 11:21:24 GMT  
+		Size: 5.2 MB (5163298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa3a609d15798d35c1484072876b7d22a316e98de6a097de33b9dade6a689cd1`  
-		Last Modified: Tue, 06 Dec 2022 02:21:44 GMT  
-		Size: 10.9 MB (10877423 bytes)  
+	-	`sha256:c796299bbbddc7aeada9539a4e7874a75fa2b6ff421f8d5ad40f227b40ab4d86`  
+		Last Modified: Wed, 21 Dec 2022 11:21:24 GMT  
+		Size: 10.9 MB (10876681 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98d38c4f1653f44b974d6db545ca56dffde5e7e6f73647fa98ad4556b8b84547`  
-		Last Modified: Tue, 06 Dec 2022 17:02:37 GMT  
-		Size: 2.9 KB (2897 bytes)  
+	-	`sha256:d5d3e05d16cd1d3c21c0c1001e437e4bcebc7d4a5deae70b54d55948d6d99ab0`  
+		Last Modified: Wed, 21 Dec 2022 20:03:41 GMT  
+		Size: 2.9 KB (2903 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:67bffb67fb84c28ccc643c0f0d4cca77a82c41907cb197d7e0b39f94cbe52301`  
-		Last Modified: Tue, 06 Dec 2022 17:03:16 GMT  
-		Size: 23.4 MB (23412788 bytes)  
+	-	`sha256:1b2a010b5dcfc2e3b0af2126c905d502623c566e27059f0f06398a27de82029f`  
+		Last Modified: Wed, 21 Dec 2022 20:04:20 GMT  
+		Size: 23.4 MB (23412834 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ae5240e9f29e22b23228ba9d3b5bcc5dbaf38983b4b0eda57af1b1e61cf065f`  
-		Last Modified: Tue, 06 Dec 2022 17:03:13 GMT  
-		Size: 196.0 B  
+	-	`sha256:4c9e8f1d231898e473998fe4a39ab26cdf5f4e58715a7fe311380c38f3460d92`  
+		Last Modified: Wed, 21 Dec 2022 20:04:17 GMT  
+		Size: 198.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9dd844b9be54263daf80ee9fabbd72b5b44aec54a2e7f5fbed25ecf25778b3c9`  
-		Last Modified: Tue, 06 Dec 2022 17:03:13 GMT  
-		Size: 375.0 B  
+	-	`sha256:40bfe205f10a0c42fb81e3317c3629829cf29fccabd20e5571f3880732a4d292`  
+		Last Modified: Wed, 21 Dec 2022 20:04:17 GMT  
+		Size: 374.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `influxdb:1.8.10-meta-alpine`
@@ -2044,7 +2044,7 @@ CMD ["influxd-meta"]
 ## `influxdb:1.9-data`
 
 ```console
-$ docker pull influxdb@sha256:78857192d3685ceb31d3513bf5a13d8a1f3e9f3a8f9ab1632b58ca7e81b380e0
+$ docker pull influxdb@sha256:e65298a67aa86b0bfdfc5691484525bf8c1df7a74c51a172b960de91ebfebfe1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2054,79 +2054,79 @@ $ docker pull influxdb@sha256:78857192d3685ceb31d3513bf5a13d8a1f3e9f3a8f9ab1632b
 ### `influxdb:1.9-data` - linux; amd64
 
 ```console
-$ docker pull influxdb@sha256:2d1ce119cfb9cdd0e7261c4fc713ea4087cafd2077efd052276395e01a73a569
+$ docker pull influxdb@sha256:ef711d42e11c6bfae23850dfb5242b4607efcb01ee3fb82cd0990153428dcb76
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **103.9 MB (103944637 bytes)**  
+-	Total Size: **103.9 MB (103926177 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:92ede64cfd5a79bb852bcb23a9a4e0083bc0e6b4124f0cfd6b001e39aa0cf36c`
+-	Image ID: `sha256:98f5a90c3824e76817a127897223728f6aa48bd2e2213a3eb50604984d9998f5`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["influxd"]`
 
 ```dockerfile
-# Tue, 06 Dec 2022 01:20:41 GMT
-ADD file:553d20b03d45305e58cde07e0c259421bba044155ac90b4559e5cc0b69093347 in / 
-# Tue, 06 Dec 2022 01:20:41 GMT
+# Wed, 21 Dec 2022 01:20:21 GMT
+ADD file:c13b430c8699df107ffd9ea5230b92238bc037a8e1cbbe35d6ab664941d575da in / 
+# Wed, 21 Dec 2022 01:20:22 GMT
 CMD ["bash"]
-# Tue, 06 Dec 2022 02:13:26 GMT
+# Wed, 21 Dec 2022 11:13:51 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 06 Dec 2022 02:13:31 GMT
+# Wed, 21 Dec 2022 11:13:58 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 06 Dec 2022 16:59:54 GMT
+# Wed, 21 Dec 2022 20:00:55 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     for key in         05CE15085FC09D18E99EFB22684A14CF2582E0C5 ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done
-# Fri, 16 Dec 2022 00:22:25 GMT
+# Wed, 21 Dec 2022 20:01:26 GMT
 ENV INFLUXDB_VERSION=1.9.9-c1.9.9
-# Fri, 16 Dec 2022 00:22:29 GMT
+# Wed, 21 Dec 2022 20:01:30 GMT
 RUN wget --no-verbose https://dl.influxdata.com/enterprise/releases/influxdb-data_${INFLUXDB_VERSION}_amd64.deb.asc &&     wget --no-verbose https://dl.influxdata.com/enterprise/releases/influxdb-data_${INFLUXDB_VERSION}_amd64.deb &&     gpg --batch --verify influxdb-data_${INFLUXDB_VERSION}_amd64.deb.asc influxdb-data_${INFLUXDB_VERSION}_amd64.deb &&     dpkg -i influxdb-data_${INFLUXDB_VERSION}_amd64.deb &&     rm -f influxdb-data_${INFLUXDB_VERSION}_amd64.deb*
-# Fri, 16 Dec 2022 00:22:30 GMT
+# Wed, 21 Dec 2022 20:01:31 GMT
 COPY file:bf2f42b62a32a7ee3ab93d9a5e451b7d59af1a97e40dc4a76b8aaf2f64383d7a in /etc/influxdb/influxdb.conf 
-# Fri, 16 Dec 2022 00:22:30 GMT
+# Wed, 21 Dec 2022 20:01:31 GMT
 EXPOSE 8086
-# Fri, 16 Dec 2022 00:22:30 GMT
+# Wed, 21 Dec 2022 20:01:31 GMT
 VOLUME [/var/lib/influxdb]
-# Fri, 16 Dec 2022 00:22:30 GMT
+# Wed, 21 Dec 2022 20:01:31 GMT
 COPY file:182a0176834db40043100d082d05e5aded9887c94b02416f6e3154c827c07360 in /entrypoint.sh 
-# Fri, 16 Dec 2022 00:22:30 GMT
+# Wed, 21 Dec 2022 20:01:31 GMT
 COPY file:e7af69cde81ffb6eddc175488941183d1244772c36c27b74751d54389fb71701 in /init-influxdb.sh 
-# Fri, 16 Dec 2022 00:22:30 GMT
+# Wed, 21 Dec 2022 20:01:31 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 16 Dec 2022 00:22:30 GMT
+# Wed, 21 Dec 2022 20:01:31 GMT
 CMD ["influxd"]
 ```
 
 -	Layers:
-	-	`sha256:f2f58072e9ed1aa1b0143341c5ee83815c00ce47548309fa240155067ab0e698`  
-		Last Modified: Tue, 06 Dec 2022 01:24:48 GMT  
-		Size: 55.0 MB (55041342 bytes)  
+	-	`sha256:32de3c850997ce03b6ff4ae8fb00b34b9d7d7f9a35bfcdb8538e22cc7b77c29d`  
+		Last Modified: Wed, 21 Dec 2022 01:24:10 GMT  
+		Size: 55.0 MB (55025166 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5c8cfbf51e6e6869f1af2a1e7067b07fd6733036a333c9d29f743b0285e26037`  
-		Last Modified: Tue, 06 Dec 2022 02:21:44 GMT  
-		Size: 5.2 MB (5164910 bytes)  
+	-	`sha256:fa1d4c8d85a4e064e50cea74d4aa848dc5fc275aef223fcc1f21fbdb1b5dd182`  
+		Last Modified: Wed, 21 Dec 2022 11:21:24 GMT  
+		Size: 5.2 MB (5163298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa3a609d15798d35c1484072876b7d22a316e98de6a097de33b9dade6a689cd1`  
-		Last Modified: Tue, 06 Dec 2022 02:21:44 GMT  
-		Size: 10.9 MB (10877423 bytes)  
+	-	`sha256:c796299bbbddc7aeada9539a4e7874a75fa2b6ff421f8d5ad40f227b40ab4d86`  
+		Last Modified: Wed, 21 Dec 2022 11:21:24 GMT  
+		Size: 10.9 MB (10876681 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98d38c4f1653f44b974d6db545ca56dffde5e7e6f73647fa98ad4556b8b84547`  
-		Last Modified: Tue, 06 Dec 2022 17:02:37 GMT  
-		Size: 2.9 KB (2897 bytes)  
+	-	`sha256:d5d3e05d16cd1d3c21c0c1001e437e4bcebc7d4a5deae70b54d55948d6d99ab0`  
+		Last Modified: Wed, 21 Dec 2022 20:03:41 GMT  
+		Size: 2.9 KB (2903 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:edd7874fa5cb5583e8df1e9d0136d838954a698b1959076cc3f521e33f6244f4`  
-		Last Modified: Fri, 16 Dec 2022 00:24:37 GMT  
-		Size: 32.9 MB (32856291 bytes)  
+	-	`sha256:6089861b76996cbc1af257c8c2e3ae8260a233d4de9a6108515a3cc277a6f649`  
+		Last Modified: Wed, 21 Dec 2022 20:04:37 GMT  
+		Size: 32.9 MB (32856355 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:73a7dff4376ffc102e2af2e48a50995b01a03a62afe852551053785cabea8043`  
-		Last Modified: Fri, 16 Dec 2022 00:24:32 GMT  
+	-	`sha256:51b9e878298e379c3838959f9eebbaf61c84e08ed3366929f715cd4d1ab13a57`  
+		Last Modified: Wed, 21 Dec 2022 20:04:31 GMT  
 		Size: 242.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:968f463bc2fa0b52558e9c70fe66abef6b96babb902b9eec5c7a17b861d1a2d9`  
-		Last Modified: Fri, 16 Dec 2022 00:24:32 GMT  
+	-	`sha256:a2083d3b9d46bd4493628d8631b38d3cbe4a338ba49bb9e7b208814b195188c0`  
+		Last Modified: Wed, 21 Dec 2022 20:04:31 GMT  
 		Size: 251.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:726fa617d426ea1fa97cab5c3387c5cf1c1602a52fbb36d21007a40c48e5d075`  
-		Last Modified: Fri, 16 Dec 2022 00:24:32 GMT  
+	-	`sha256:22db0a5dec094601c444ea81f5b26f91f97c4af0a44789652cd4609e1697f591`  
+		Last Modified: Wed, 21 Dec 2022 20:04:31 GMT  
 		Size: 1.3 KB (1281 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -2216,7 +2216,7 @@ CMD ["influxd"]
 ## `influxdb:1.9-meta`
 
 ```console
-$ docker pull influxdb@sha256:8faed92e929e64f4e866e47a561e3c8a2935ce4aac88665733396217edd635e0
+$ docker pull influxdb@sha256:4f4a9f8e84e92594f3aa98484e6164024afcbb79f2223575cde1188827242078
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2226,73 +2226,73 @@ $ docker pull influxdb@sha256:8faed92e929e64f4e866e47a561e3c8a2935ce4aac88665733
 ### `influxdb:1.9-meta` - linux; amd64
 
 ```console
-$ docker pull influxdb@sha256:8a357f8eca30dbd35a8f984973b0bdaf450d87e98ba5e7d81635988439256460
+$ docker pull influxdb@sha256:94dac828443e52cf6e3710aeecf166e57676f15c234f0d9134a87cfe7c249031
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **83.5 MB (83507084 bytes)**  
+-	Total Size: **83.5 MB (83488568 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:89e68e9dc630130875f4723fa61979ca7ab98c744d9aabef11fa126ef4976448`
+-	Image ID: `sha256:2cf8a59e264b32dc4017e2d9e10f3571cc635aeb8d315ba6087a5bec317f1ff1`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["influxd-meta"]`
 
 ```dockerfile
-# Tue, 06 Dec 2022 01:20:41 GMT
-ADD file:553d20b03d45305e58cde07e0c259421bba044155ac90b4559e5cc0b69093347 in / 
-# Tue, 06 Dec 2022 01:20:41 GMT
+# Wed, 21 Dec 2022 01:20:21 GMT
+ADD file:c13b430c8699df107ffd9ea5230b92238bc037a8e1cbbe35d6ab664941d575da in / 
+# Wed, 21 Dec 2022 01:20:22 GMT
 CMD ["bash"]
-# Tue, 06 Dec 2022 02:13:26 GMT
+# Wed, 21 Dec 2022 11:13:51 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 06 Dec 2022 02:13:31 GMT
+# Wed, 21 Dec 2022 11:13:58 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 06 Dec 2022 16:59:54 GMT
+# Wed, 21 Dec 2022 20:00:55 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     for key in         05CE15085FC09D18E99EFB22684A14CF2582E0C5 ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done
-# Fri, 16 Dec 2022 00:22:25 GMT
+# Wed, 21 Dec 2022 20:01:26 GMT
 ENV INFLUXDB_VERSION=1.9.9-c1.9.9
-# Fri, 16 Dec 2022 00:22:46 GMT
+# Wed, 21 Dec 2022 20:01:38 GMT
 RUN wget --no-verbose https://dl.influxdata.com/enterprise/releases/influxdb-meta_${INFLUXDB_VERSION}_amd64.deb.asc &&     wget --no-verbose https://dl.influxdata.com/enterprise/releases/influxdb-meta_${INFLUXDB_VERSION}_amd64.deb &&     gpg --batch --verify influxdb-meta_${INFLUXDB_VERSION}_amd64.deb.asc influxdb-meta_${INFLUXDB_VERSION}_amd64.deb &&     dpkg -i influxdb-meta_${INFLUXDB_VERSION}_amd64.deb &&     rm -f influxdb-meta_${INFLUXDB_VERSION}_amd64.deb*
-# Fri, 16 Dec 2022 00:22:46 GMT
+# Wed, 21 Dec 2022 20:01:39 GMT
 COPY file:5d8d1b0acfd7ca05cf6698246b28d240206fa448f4aa5ac839c9ad323adbeac2 in /etc/influxdb/influxdb-meta.conf 
-# Fri, 16 Dec 2022 00:22:46 GMT
+# Wed, 21 Dec 2022 20:01:39 GMT
 EXPOSE 8091
-# Fri, 16 Dec 2022 00:22:46 GMT
+# Wed, 21 Dec 2022 20:01:39 GMT
 VOLUME [/var/lib/influxdb]
-# Fri, 16 Dec 2022 00:22:46 GMT
+# Wed, 21 Dec 2022 20:01:39 GMT
 COPY file:126b1f7e41b4975cf2ce23037cf6a46253fb817023062317380c48ff5df47228 in /entrypoint.sh 
-# Fri, 16 Dec 2022 00:22:46 GMT
+# Wed, 21 Dec 2022 20:01:39 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 16 Dec 2022 00:22:47 GMT
+# Wed, 21 Dec 2022 20:01:39 GMT
 CMD ["influxd-meta"]
 ```
 
 -	Layers:
-	-	`sha256:f2f58072e9ed1aa1b0143341c5ee83815c00ce47548309fa240155067ab0e698`  
-		Last Modified: Tue, 06 Dec 2022 01:24:48 GMT  
-		Size: 55.0 MB (55041342 bytes)  
+	-	`sha256:32de3c850997ce03b6ff4ae8fb00b34b9d7d7f9a35bfcdb8538e22cc7b77c29d`  
+		Last Modified: Wed, 21 Dec 2022 01:24:10 GMT  
+		Size: 55.0 MB (55025166 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5c8cfbf51e6e6869f1af2a1e7067b07fd6733036a333c9d29f743b0285e26037`  
-		Last Modified: Tue, 06 Dec 2022 02:21:44 GMT  
-		Size: 5.2 MB (5164910 bytes)  
+	-	`sha256:fa1d4c8d85a4e064e50cea74d4aa848dc5fc275aef223fcc1f21fbdb1b5dd182`  
+		Last Modified: Wed, 21 Dec 2022 11:21:24 GMT  
+		Size: 5.2 MB (5163298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa3a609d15798d35c1484072876b7d22a316e98de6a097de33b9dade6a689cd1`  
-		Last Modified: Tue, 06 Dec 2022 02:21:44 GMT  
-		Size: 10.9 MB (10877423 bytes)  
+	-	`sha256:c796299bbbddc7aeada9539a4e7874a75fa2b6ff421f8d5ad40f227b40ab4d86`  
+		Last Modified: Wed, 21 Dec 2022 11:21:24 GMT  
+		Size: 10.9 MB (10876681 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98d38c4f1653f44b974d6db545ca56dffde5e7e6f73647fa98ad4556b8b84547`  
-		Last Modified: Tue, 06 Dec 2022 17:02:37 GMT  
-		Size: 2.9 KB (2897 bytes)  
+	-	`sha256:d5d3e05d16cd1d3c21c0c1001e437e4bcebc7d4a5deae70b54d55948d6d99ab0`  
+		Last Modified: Wed, 21 Dec 2022 20:03:41 GMT  
+		Size: 2.9 KB (2903 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:94cea1687f37f9da4a1cfb45c3d9a60f93a2d0294880f7173733c6696499d6d3`  
-		Last Modified: Fri, 16 Dec 2022 00:25:01 GMT  
-		Size: 12.4 MB (12419942 bytes)  
+	-	`sha256:3d1e26b33e0abd0408d12c30723c6c22c96d0523254d1d17c6534a356ea6d574`  
+		Last Modified: Wed, 21 Dec 2022 20:04:48 GMT  
+		Size: 12.4 MB (12419949 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:00ab8b4aeac1ef1d5fa903aac0d8719d08153bd0c660024a66382049e4587a9b`  
-		Last Modified: Fri, 16 Dec 2022 00:24:59 GMT  
-		Size: 195.0 B  
+	-	`sha256:43c9b32962328cbd004c247f5699299e8b56c012e188d636b96e7222e7b5799d`  
+		Last Modified: Wed, 21 Dec 2022 20:04:46 GMT  
+		Size: 196.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6a4ecf77369ebd0b4e6fe33762b4af1be7b3c4766e2b807575848ebd25a0bbf`  
-		Last Modified: Fri, 16 Dec 2022 00:24:59 GMT  
+	-	`sha256:3f08e54533c1297940093d21a729984d412460773011e8c8944cd2ff392db250`  
+		Last Modified: Wed, 21 Dec 2022 20:04:46 GMT  
 		Size: 375.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -2376,7 +2376,7 @@ CMD ["influxd-meta"]
 ## `influxdb:1.9.8-data`
 
 ```console
-$ docker pull influxdb@sha256:78857192d3685ceb31d3513bf5a13d8a1f3e9f3a8f9ab1632b58ca7e81b380e0
+$ docker pull influxdb@sha256:e65298a67aa86b0bfdfc5691484525bf8c1df7a74c51a172b960de91ebfebfe1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2386,79 +2386,79 @@ $ docker pull influxdb@sha256:78857192d3685ceb31d3513bf5a13d8a1f3e9f3a8f9ab1632b
 ### `influxdb:1.9.8-data` - linux; amd64
 
 ```console
-$ docker pull influxdb@sha256:2d1ce119cfb9cdd0e7261c4fc713ea4087cafd2077efd052276395e01a73a569
+$ docker pull influxdb@sha256:ef711d42e11c6bfae23850dfb5242b4607efcb01ee3fb82cd0990153428dcb76
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **103.9 MB (103944637 bytes)**  
+-	Total Size: **103.9 MB (103926177 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:92ede64cfd5a79bb852bcb23a9a4e0083bc0e6b4124f0cfd6b001e39aa0cf36c`
+-	Image ID: `sha256:98f5a90c3824e76817a127897223728f6aa48bd2e2213a3eb50604984d9998f5`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["influxd"]`
 
 ```dockerfile
-# Tue, 06 Dec 2022 01:20:41 GMT
-ADD file:553d20b03d45305e58cde07e0c259421bba044155ac90b4559e5cc0b69093347 in / 
-# Tue, 06 Dec 2022 01:20:41 GMT
+# Wed, 21 Dec 2022 01:20:21 GMT
+ADD file:c13b430c8699df107ffd9ea5230b92238bc037a8e1cbbe35d6ab664941d575da in / 
+# Wed, 21 Dec 2022 01:20:22 GMT
 CMD ["bash"]
-# Tue, 06 Dec 2022 02:13:26 GMT
+# Wed, 21 Dec 2022 11:13:51 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 06 Dec 2022 02:13:31 GMT
+# Wed, 21 Dec 2022 11:13:58 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 06 Dec 2022 16:59:54 GMT
+# Wed, 21 Dec 2022 20:00:55 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     for key in         05CE15085FC09D18E99EFB22684A14CF2582E0C5 ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done
-# Fri, 16 Dec 2022 00:22:25 GMT
+# Wed, 21 Dec 2022 20:01:26 GMT
 ENV INFLUXDB_VERSION=1.9.9-c1.9.9
-# Fri, 16 Dec 2022 00:22:29 GMT
+# Wed, 21 Dec 2022 20:01:30 GMT
 RUN wget --no-verbose https://dl.influxdata.com/enterprise/releases/influxdb-data_${INFLUXDB_VERSION}_amd64.deb.asc &&     wget --no-verbose https://dl.influxdata.com/enterprise/releases/influxdb-data_${INFLUXDB_VERSION}_amd64.deb &&     gpg --batch --verify influxdb-data_${INFLUXDB_VERSION}_amd64.deb.asc influxdb-data_${INFLUXDB_VERSION}_amd64.deb &&     dpkg -i influxdb-data_${INFLUXDB_VERSION}_amd64.deb &&     rm -f influxdb-data_${INFLUXDB_VERSION}_amd64.deb*
-# Fri, 16 Dec 2022 00:22:30 GMT
+# Wed, 21 Dec 2022 20:01:31 GMT
 COPY file:bf2f42b62a32a7ee3ab93d9a5e451b7d59af1a97e40dc4a76b8aaf2f64383d7a in /etc/influxdb/influxdb.conf 
-# Fri, 16 Dec 2022 00:22:30 GMT
+# Wed, 21 Dec 2022 20:01:31 GMT
 EXPOSE 8086
-# Fri, 16 Dec 2022 00:22:30 GMT
+# Wed, 21 Dec 2022 20:01:31 GMT
 VOLUME [/var/lib/influxdb]
-# Fri, 16 Dec 2022 00:22:30 GMT
+# Wed, 21 Dec 2022 20:01:31 GMT
 COPY file:182a0176834db40043100d082d05e5aded9887c94b02416f6e3154c827c07360 in /entrypoint.sh 
-# Fri, 16 Dec 2022 00:22:30 GMT
+# Wed, 21 Dec 2022 20:01:31 GMT
 COPY file:e7af69cde81ffb6eddc175488941183d1244772c36c27b74751d54389fb71701 in /init-influxdb.sh 
-# Fri, 16 Dec 2022 00:22:30 GMT
+# Wed, 21 Dec 2022 20:01:31 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 16 Dec 2022 00:22:30 GMT
+# Wed, 21 Dec 2022 20:01:31 GMT
 CMD ["influxd"]
 ```
 
 -	Layers:
-	-	`sha256:f2f58072e9ed1aa1b0143341c5ee83815c00ce47548309fa240155067ab0e698`  
-		Last Modified: Tue, 06 Dec 2022 01:24:48 GMT  
-		Size: 55.0 MB (55041342 bytes)  
+	-	`sha256:32de3c850997ce03b6ff4ae8fb00b34b9d7d7f9a35bfcdb8538e22cc7b77c29d`  
+		Last Modified: Wed, 21 Dec 2022 01:24:10 GMT  
+		Size: 55.0 MB (55025166 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5c8cfbf51e6e6869f1af2a1e7067b07fd6733036a333c9d29f743b0285e26037`  
-		Last Modified: Tue, 06 Dec 2022 02:21:44 GMT  
-		Size: 5.2 MB (5164910 bytes)  
+	-	`sha256:fa1d4c8d85a4e064e50cea74d4aa848dc5fc275aef223fcc1f21fbdb1b5dd182`  
+		Last Modified: Wed, 21 Dec 2022 11:21:24 GMT  
+		Size: 5.2 MB (5163298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa3a609d15798d35c1484072876b7d22a316e98de6a097de33b9dade6a689cd1`  
-		Last Modified: Tue, 06 Dec 2022 02:21:44 GMT  
-		Size: 10.9 MB (10877423 bytes)  
+	-	`sha256:c796299bbbddc7aeada9539a4e7874a75fa2b6ff421f8d5ad40f227b40ab4d86`  
+		Last Modified: Wed, 21 Dec 2022 11:21:24 GMT  
+		Size: 10.9 MB (10876681 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98d38c4f1653f44b974d6db545ca56dffde5e7e6f73647fa98ad4556b8b84547`  
-		Last Modified: Tue, 06 Dec 2022 17:02:37 GMT  
-		Size: 2.9 KB (2897 bytes)  
+	-	`sha256:d5d3e05d16cd1d3c21c0c1001e437e4bcebc7d4a5deae70b54d55948d6d99ab0`  
+		Last Modified: Wed, 21 Dec 2022 20:03:41 GMT  
+		Size: 2.9 KB (2903 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:edd7874fa5cb5583e8df1e9d0136d838954a698b1959076cc3f521e33f6244f4`  
-		Last Modified: Fri, 16 Dec 2022 00:24:37 GMT  
-		Size: 32.9 MB (32856291 bytes)  
+	-	`sha256:6089861b76996cbc1af257c8c2e3ae8260a233d4de9a6108515a3cc277a6f649`  
+		Last Modified: Wed, 21 Dec 2022 20:04:37 GMT  
+		Size: 32.9 MB (32856355 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:73a7dff4376ffc102e2af2e48a50995b01a03a62afe852551053785cabea8043`  
-		Last Modified: Fri, 16 Dec 2022 00:24:32 GMT  
+	-	`sha256:51b9e878298e379c3838959f9eebbaf61c84e08ed3366929f715cd4d1ab13a57`  
+		Last Modified: Wed, 21 Dec 2022 20:04:31 GMT  
 		Size: 242.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:968f463bc2fa0b52558e9c70fe66abef6b96babb902b9eec5c7a17b861d1a2d9`  
-		Last Modified: Fri, 16 Dec 2022 00:24:32 GMT  
+	-	`sha256:a2083d3b9d46bd4493628d8631b38d3cbe4a338ba49bb9e7b208814b195188c0`  
+		Last Modified: Wed, 21 Dec 2022 20:04:31 GMT  
 		Size: 251.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:726fa617d426ea1fa97cab5c3387c5cf1c1602a52fbb36d21007a40c48e5d075`  
-		Last Modified: Fri, 16 Dec 2022 00:24:32 GMT  
+	-	`sha256:22db0a5dec094601c444ea81f5b26f91f97c4af0a44789652cd4609e1697f591`  
+		Last Modified: Wed, 21 Dec 2022 20:04:31 GMT  
 		Size: 1.3 KB (1281 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -2548,7 +2548,7 @@ CMD ["influxd"]
 ## `influxdb:1.9.8-meta`
 
 ```console
-$ docker pull influxdb@sha256:8faed92e929e64f4e866e47a561e3c8a2935ce4aac88665733396217edd635e0
+$ docker pull influxdb@sha256:4f4a9f8e84e92594f3aa98484e6164024afcbb79f2223575cde1188827242078
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2558,73 +2558,73 @@ $ docker pull influxdb@sha256:8faed92e929e64f4e866e47a561e3c8a2935ce4aac88665733
 ### `influxdb:1.9.8-meta` - linux; amd64
 
 ```console
-$ docker pull influxdb@sha256:8a357f8eca30dbd35a8f984973b0bdaf450d87e98ba5e7d81635988439256460
+$ docker pull influxdb@sha256:94dac828443e52cf6e3710aeecf166e57676f15c234f0d9134a87cfe7c249031
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **83.5 MB (83507084 bytes)**  
+-	Total Size: **83.5 MB (83488568 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:89e68e9dc630130875f4723fa61979ca7ab98c744d9aabef11fa126ef4976448`
+-	Image ID: `sha256:2cf8a59e264b32dc4017e2d9e10f3571cc635aeb8d315ba6087a5bec317f1ff1`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["influxd-meta"]`
 
 ```dockerfile
-# Tue, 06 Dec 2022 01:20:41 GMT
-ADD file:553d20b03d45305e58cde07e0c259421bba044155ac90b4559e5cc0b69093347 in / 
-# Tue, 06 Dec 2022 01:20:41 GMT
+# Wed, 21 Dec 2022 01:20:21 GMT
+ADD file:c13b430c8699df107ffd9ea5230b92238bc037a8e1cbbe35d6ab664941d575da in / 
+# Wed, 21 Dec 2022 01:20:22 GMT
 CMD ["bash"]
-# Tue, 06 Dec 2022 02:13:26 GMT
+# Wed, 21 Dec 2022 11:13:51 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 06 Dec 2022 02:13:31 GMT
+# Wed, 21 Dec 2022 11:13:58 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 06 Dec 2022 16:59:54 GMT
+# Wed, 21 Dec 2022 20:00:55 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     for key in         05CE15085FC09D18E99EFB22684A14CF2582E0C5 ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done
-# Fri, 16 Dec 2022 00:22:25 GMT
+# Wed, 21 Dec 2022 20:01:26 GMT
 ENV INFLUXDB_VERSION=1.9.9-c1.9.9
-# Fri, 16 Dec 2022 00:22:46 GMT
+# Wed, 21 Dec 2022 20:01:38 GMT
 RUN wget --no-verbose https://dl.influxdata.com/enterprise/releases/influxdb-meta_${INFLUXDB_VERSION}_amd64.deb.asc &&     wget --no-verbose https://dl.influxdata.com/enterprise/releases/influxdb-meta_${INFLUXDB_VERSION}_amd64.deb &&     gpg --batch --verify influxdb-meta_${INFLUXDB_VERSION}_amd64.deb.asc influxdb-meta_${INFLUXDB_VERSION}_amd64.deb &&     dpkg -i influxdb-meta_${INFLUXDB_VERSION}_amd64.deb &&     rm -f influxdb-meta_${INFLUXDB_VERSION}_amd64.deb*
-# Fri, 16 Dec 2022 00:22:46 GMT
+# Wed, 21 Dec 2022 20:01:39 GMT
 COPY file:5d8d1b0acfd7ca05cf6698246b28d240206fa448f4aa5ac839c9ad323adbeac2 in /etc/influxdb/influxdb-meta.conf 
-# Fri, 16 Dec 2022 00:22:46 GMT
+# Wed, 21 Dec 2022 20:01:39 GMT
 EXPOSE 8091
-# Fri, 16 Dec 2022 00:22:46 GMT
+# Wed, 21 Dec 2022 20:01:39 GMT
 VOLUME [/var/lib/influxdb]
-# Fri, 16 Dec 2022 00:22:46 GMT
+# Wed, 21 Dec 2022 20:01:39 GMT
 COPY file:126b1f7e41b4975cf2ce23037cf6a46253fb817023062317380c48ff5df47228 in /entrypoint.sh 
-# Fri, 16 Dec 2022 00:22:46 GMT
+# Wed, 21 Dec 2022 20:01:39 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 16 Dec 2022 00:22:47 GMT
+# Wed, 21 Dec 2022 20:01:39 GMT
 CMD ["influxd-meta"]
 ```
 
 -	Layers:
-	-	`sha256:f2f58072e9ed1aa1b0143341c5ee83815c00ce47548309fa240155067ab0e698`  
-		Last Modified: Tue, 06 Dec 2022 01:24:48 GMT  
-		Size: 55.0 MB (55041342 bytes)  
+	-	`sha256:32de3c850997ce03b6ff4ae8fb00b34b9d7d7f9a35bfcdb8538e22cc7b77c29d`  
+		Last Modified: Wed, 21 Dec 2022 01:24:10 GMT  
+		Size: 55.0 MB (55025166 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5c8cfbf51e6e6869f1af2a1e7067b07fd6733036a333c9d29f743b0285e26037`  
-		Last Modified: Tue, 06 Dec 2022 02:21:44 GMT  
-		Size: 5.2 MB (5164910 bytes)  
+	-	`sha256:fa1d4c8d85a4e064e50cea74d4aa848dc5fc275aef223fcc1f21fbdb1b5dd182`  
+		Last Modified: Wed, 21 Dec 2022 11:21:24 GMT  
+		Size: 5.2 MB (5163298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa3a609d15798d35c1484072876b7d22a316e98de6a097de33b9dade6a689cd1`  
-		Last Modified: Tue, 06 Dec 2022 02:21:44 GMT  
-		Size: 10.9 MB (10877423 bytes)  
+	-	`sha256:c796299bbbddc7aeada9539a4e7874a75fa2b6ff421f8d5ad40f227b40ab4d86`  
+		Last Modified: Wed, 21 Dec 2022 11:21:24 GMT  
+		Size: 10.9 MB (10876681 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98d38c4f1653f44b974d6db545ca56dffde5e7e6f73647fa98ad4556b8b84547`  
-		Last Modified: Tue, 06 Dec 2022 17:02:37 GMT  
-		Size: 2.9 KB (2897 bytes)  
+	-	`sha256:d5d3e05d16cd1d3c21c0c1001e437e4bcebc7d4a5deae70b54d55948d6d99ab0`  
+		Last Modified: Wed, 21 Dec 2022 20:03:41 GMT  
+		Size: 2.9 KB (2903 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:94cea1687f37f9da4a1cfb45c3d9a60f93a2d0294880f7173733c6696499d6d3`  
-		Last Modified: Fri, 16 Dec 2022 00:25:01 GMT  
-		Size: 12.4 MB (12419942 bytes)  
+	-	`sha256:3d1e26b33e0abd0408d12c30723c6c22c96d0523254d1d17c6534a356ea6d574`  
+		Last Modified: Wed, 21 Dec 2022 20:04:48 GMT  
+		Size: 12.4 MB (12419949 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:00ab8b4aeac1ef1d5fa903aac0d8719d08153bd0c660024a66382049e4587a9b`  
-		Last Modified: Fri, 16 Dec 2022 00:24:59 GMT  
-		Size: 195.0 B  
+	-	`sha256:43c9b32962328cbd004c247f5699299e8b56c012e188d636b96e7222e7b5799d`  
+		Last Modified: Wed, 21 Dec 2022 20:04:46 GMT  
+		Size: 196.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6a4ecf77369ebd0b4e6fe33762b4af1be7b3c4766e2b807575848ebd25a0bbf`  
-		Last Modified: Fri, 16 Dec 2022 00:24:59 GMT  
+	-	`sha256:3f08e54533c1297940093d21a729984d412460773011e8c8944cd2ff392db250`  
+		Last Modified: Wed, 21 Dec 2022 20:04:46 GMT  
 		Size: 375.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -2708,7 +2708,7 @@ CMD ["influxd-meta"]
 ## `influxdb:2.4`
 
 ```console
-$ docker pull influxdb@sha256:45b36d6c66e5f07f4bec488f2509b1807e7f6865f707af9940e4830a7f208f94
+$ docker pull influxdb@sha256:00eb88069bd116e7946d5bd9b988588c9ff73d8775d6f24078ed2f0903d515ad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2719,104 +2719,104 @@ $ docker pull influxdb@sha256:45b36d6c66e5f07f4bec488f2509b1807e7f6865f707af9940
 ### `influxdb:2.4` - linux; amd64
 
 ```console
-$ docker pull influxdb@sha256:194424d7bb799a751cd52233d284a4d10d55c05349368cdd31bf98c017204573
+$ docker pull influxdb@sha256:9085f94be03888ff84783cd2a53ec42643ff328994ef0592d1041dbd7bb06126
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **261.2 MB (261151241 bytes)**  
+-	Total Size: **261.2 MB (261151182 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a0dd8df80c869f2f2fc9cce5cd079eaef2b28423c9f59e330ed6e0ba2aada10f`
+-	Image ID: `sha256:4f5cca0d3f590bccf68e37cf1a6c8140bc84475be446d4dfae172764bb8f09f1`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["influxd"]`
 
 ```dockerfile
-# Tue, 06 Dec 2022 01:21:05 GMT
-ADD file:00d8a84de32d523b936621886a10683664f38d8ec0846a60511fcf3a99d0e0c4 in / 
-# Tue, 06 Dec 2022 01:21:06 GMT
+# Wed, 21 Dec 2022 01:20:41 GMT
+ADD file:c865da7afcf35b5a9538e63633f7e99ae4c40933cb8a0235e9704713042fba66 in / 
+# Wed, 21 Dec 2022 01:20:42 GMT
 CMD ["bash"]
-# Tue, 06 Dec 2022 02:15:13 GMT
+# Wed, 21 Dec 2022 11:15:56 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 06 Dec 2022 02:15:21 GMT
+# Wed, 21 Dec 2022 11:16:03 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 06 Dec 2022 17:00:55 GMT
+# Wed, 21 Dec 2022 20:02:01 GMT
 RUN groupadd -r influxdb --gid=1000 &&     useradd -r -g influxdb --uid=1000 --home-dir=/home/influxdb --shell=/bin/bash influxdb &&     mkdir -p /home/influxdb &&     chown -R influxdb:influxdb /home/influxdb
-# Tue, 06 Dec 2022 17:00:55 GMT
+# Wed, 21 Dec 2022 20:02:01 GMT
 ENV GOSU_VER=1.12
-# Tue, 06 Dec 2022 17:00:58 GMT
+# Wed, 21 Dec 2022 20:02:05 GMT
 RUN set -eux;     dpkgArch="$(dpkg --print-architecture)" &&     wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VER/gosu-$dpkgArch" &&     wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VER/gosu-$dpkgArch.asc" &&     export GNUPGHOME="$(mktemp -d)" &&     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 &&     gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu &&     gpgconf --kill all &&     rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc &&     chmod +x /usr/local/bin/gosu &&     gosu --version &&     gosu nobody true
-# Tue, 06 Dec 2022 17:01:20 GMT
+# Wed, 21 Dec 2022 20:02:05 GMT
 ENV INFLUXDB_VERSION=2.4.0
-# Tue, 06 Dec 2022 17:01:27 GMT
+# Wed, 21 Dec 2022 20:02:15 GMT
 RUN set -eux &&     ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in         amd64) ARCH='amd64';;         arm64) ARCH='arm64';;         *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     wget --no-verbose https://dl.influxdata.com/influxdb/releases/influxdb2-${INFLUXDB_VERSION}-linux-${ARCH}.tar.gz.asc &&     wget --no-verbose https://dl.influxdata.com/influxdb/releases/influxdb2-${INFLUXDB_VERSION}-linux-${ARCH}.tar.gz &&     export GNUPGHOME="$(mktemp -d)" &&     echo "disable-ipv6" >> $GNUPGHOME/dirmngr.conf &&     gpg --batch --keyserver keys.openpgp.org --recv-keys 8C2D403D3C3BDB81A4C27C883C3E4B7317FFE40A &&     gpg --batch --verify influxdb2-${INFLUXDB_VERSION}-linux-${ARCH}.tar.gz.asc influxdb2-${INFLUXDB_VERSION}-linux-${ARCH}.tar.gz &&     tar xzf influxdb2-${INFLUXDB_VERSION}-linux-${ARCH}.tar.gz &&     cp influxdb2_linux_${ARCH}/influxd /usr/local/bin/influxd &&     gpgconf --kill all &&     rm -rf "$GNUPGHOME" influxdb2.key influxdb2-${INFLUXDB_VERSION}-linux-${ARCH}* &&     influxd version
-# Tue, 06 Dec 2022 17:01:28 GMT
+# Wed, 21 Dec 2022 20:02:16 GMT
 ENV INFLUX_CLI_VERSION=2.4.0
-# Tue, 06 Dec 2022 17:01:31 GMT
+# Wed, 21 Dec 2022 20:02:20 GMT
 RUN set -eux &&     ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in         amd64) ARCH='amd64';;         arm64) ARCH='arm64';;         *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     wget --no-verbose https://dl.influxdata.com/influxdb/releases/influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}.tar.gz.asc &&     wget --no-verbose https://dl.influxdata.com/influxdb/releases/influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}.tar.gz &&     export GNUPGHOME="$(mktemp -d)" &&     echo "disable-ipv6" >> $GNUPGHOME/dirmngr.conf &&     gpg --batch --keyserver keys.openpgp.org --recv-keys 8C2D403D3C3BDB81A4C27C883C3E4B7317FFE40A &&     gpg --batch --verify influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}.tar.gz.asc influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}.tar.gz &&     tar xzf influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}.tar.gz &&     cp influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}/influx /usr/local/bin/influx &&     gpgconf --kill all &&     rm -rf "$GNUPGHOME" influxdb2.key influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}* &&     influx version
-# Tue, 06 Dec 2022 17:01:32 GMT
+# Wed, 21 Dec 2022 20:02:21 GMT
 RUN mkdir /docker-entrypoint-initdb.d &&     mkdir -p /var/lib/influxdb2 &&     chown -R influxdb:influxdb /var/lib/influxdb2 &&     mkdir -p /etc/influxdb2 &&     chown -R influxdb:influxdb /etc/influxdb2
-# Tue, 06 Dec 2022 17:01:32 GMT
+# Wed, 21 Dec 2022 20:02:21 GMT
 VOLUME [/var/lib/influxdb2 /etc/influxdb2]
-# Tue, 06 Dec 2022 17:01:32 GMT
+# Wed, 21 Dec 2022 20:02:21 GMT
 COPY file:77129326da9464dfa98aab4911582df608de5d5bf6a6f6ed89619b704cac95bc in /etc/defaults/influxdb2/config.yml 
-# Tue, 06 Dec 2022 17:01:32 GMT
+# Wed, 21 Dec 2022 20:02:21 GMT
 COPY file:dbf3d010c7392537ae2b4c9b0d90a1ba01accd63948136585d5decc93bb52afc in /entrypoint.sh 
-# Tue, 06 Dec 2022 17:01:32 GMT
+# Wed, 21 Dec 2022 20:02:21 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 06 Dec 2022 17:01:32 GMT
+# Wed, 21 Dec 2022 20:02:21 GMT
 CMD ["influxd"]
-# Tue, 06 Dec 2022 17:01:32 GMT
+# Wed, 21 Dec 2022 20:02:21 GMT
 EXPOSE 8086
-# Tue, 06 Dec 2022 17:01:33 GMT
+# Wed, 21 Dec 2022 20:02:21 GMT
 ENV INFLUX_CONFIGS_PATH=/etc/influxdb2/influx-configs
-# Tue, 06 Dec 2022 17:01:33 GMT
+# Wed, 21 Dec 2022 20:02:21 GMT
 ENV INFLUXD_INIT_PORT=9999
-# Tue, 06 Dec 2022 17:01:33 GMT
+# Wed, 21 Dec 2022 20:02:22 GMT
 ENV INFLUXD_INIT_PING_ATTEMPTS=600
-# Tue, 06 Dec 2022 17:01:33 GMT
+# Wed, 21 Dec 2022 20:02:22 GMT
 ENV DOCKER_INFLUXDB_INIT_CLI_CONFIG_NAME=default
 ```
 
 -	Layers:
-	-	`sha256:620af4e91dbf80032eee9f1ff66a8b04119d7a329b2a13e007d69c8a0b337bf0`  
-		Last Modified: Tue, 06 Dec 2022 01:25:30 GMT  
-		Size: 50.4 MB (50448865 bytes)  
+	-	`sha256:c7c50787e2da71205402343dd1233b3ca6ebe70c7e790f6ba7d856b81b893200`  
+		Last Modified: Wed, 21 Dec 2022 01:24:55 GMT  
+		Size: 50.4 MB (50448893 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fae29f309a72482bf13fbb1a8f4889ab9107fcad0c9fda76586aa55445e93ded`  
-		Last Modified: Tue, 06 Dec 2022 02:22:49 GMT  
-		Size: 7.9 MB (7859378 bytes)  
+	-	`sha256:aff359114acb7d843de09375f87669fffb0abd1125c16f96431bc3c4173b48f8`  
+		Last Modified: Wed, 21 Dec 2022 11:22:32 GMT  
+		Size: 7.9 MB (7859309 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:28fca74d99b6532401bfe63d36e1bafb1ac839564d48aa4e6e0a6aa2706a4d12`  
-		Last Modified: Tue, 06 Dec 2022 02:22:49 GMT  
-		Size: 10.0 MB (10001409 bytes)  
+	-	`sha256:821dc261e045ba09851c52ed28be3b9ecc9fe8c923fba05854ab0fd2fa38ceca`  
+		Last Modified: Wed, 21 Dec 2022 11:22:32 GMT  
+		Size: 10.0 MB (10001385 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f72f7239d05382f875123b7701a9b8f046e57991ac382e3600cae19898be9ab`  
-		Last Modified: Tue, 06 Dec 2022 17:04:22 GMT  
-		Size: 1.8 KB (1806 bytes)  
+	-	`sha256:1ce0d350b4b4707d5ae574f46718bdba01e856caa4751da07db742c96cf3bf07`  
+		Last Modified: Wed, 21 Dec 2022 20:05:24 GMT  
+		Size: 1.8 KB (1805 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1b452aa99faf6a110eb189f03d75e819e130542d88549ff9683b32a72f9c1be1`  
-		Last Modified: Tue, 06 Dec 2022 17:04:22 GMT  
-		Size: 961.0 KB (960955 bytes)  
+	-	`sha256:1ea4dc0abfe6583740e64574c7b162187d05c4ee4f1c0bec4cdb86117bc9b6e0`  
+		Last Modified: Wed, 21 Dec 2022 20:05:24 GMT  
+		Size: 961.0 KB (960971 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ce3e4c89f0f3d3cf1146234582919382db2d1571e69b6eb4d8dd2b088ac2b797`  
-		Last Modified: Tue, 06 Dec 2022 17:04:56 GMT  
-		Size: 185.8 MB (185802095 bytes)  
+	-	`sha256:e78291f0a160ea705464908e8391dfd4e1a1cd3f3d2bd9ba17e3cd1cd4964060`  
+		Last Modified: Wed, 21 Dec 2022 20:05:36 GMT  
+		Size: 185.8 MB (185802075 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:180ffd28324d2d024fd4fcfd4f30129955f77d304dde43ff7b8fb2b9d2950d72`  
-		Last Modified: Tue, 06 Dec 2022 17:04:43 GMT  
-		Size: 6.1 MB (6071067 bytes)  
+	-	`sha256:6f5acf3b80d25fb813accf7c1df9d74fe700240ec42243478089a2225c020540`  
+		Last Modified: Wed, 21 Dec 2022 20:05:23 GMT  
+		Size: 6.1 MB (6071076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f911df179c6bb988ac6b94bc98d0e66e397b40241406fa4f37e2281b0aa6f3f5`  
-		Last Modified: Tue, 06 Dec 2022 17:04:42 GMT  
-		Size: 276.0 B  
+	-	`sha256:35b191ecfec8e06a9a2ce3497ae16de86bacbd5ae042a7a20b96967736a7b9f8`  
+		Last Modified: Wed, 21 Dec 2022 20:05:22 GMT  
+		Size: 278.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9d6c2206cee4a34a15707e5fde7df2788ea8a1301c02bda7cbc8b4f815555c71`  
-		Last Modified: Tue, 06 Dec 2022 17:04:42 GMT  
-		Size: 259.0 B  
+	-	`sha256:7892f3379bea2881fdbaf0925b219e512c1ef031ca34d29c5212fedeed5a70e6`  
+		Last Modified: Wed, 21 Dec 2022 20:05:22 GMT  
+		Size: 261.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b1e7082f1791c48ad648fb47dc055735c0138783e39a3534ccd2832104b8265`  
-		Last Modified: Tue, 06 Dec 2022 17:04:42 GMT  
-		Size: 5.1 KB (5131 bytes)  
+	-	`sha256:870ae6ccdcb8315b4b8db80a48041a6d295611d841fd060892e7ea5e4ce07b98`  
+		Last Modified: Wed, 21 Dec 2022 20:05:22 GMT  
+		Size: 5.1 KB (5129 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `influxdb:2.4` - linux; arm64 variant v8
@@ -3126,7 +3126,7 @@ ENV DOCKER_INFLUXDB_INIT_CLI_CONFIG_NAME=default
 ## `influxdb:2.4.0`
 
 ```console
-$ docker pull influxdb@sha256:45b36d6c66e5f07f4bec488f2509b1807e7f6865f707af9940e4830a7f208f94
+$ docker pull influxdb@sha256:00eb88069bd116e7946d5bd9b988588c9ff73d8775d6f24078ed2f0903d515ad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3137,104 +3137,104 @@ $ docker pull influxdb@sha256:45b36d6c66e5f07f4bec488f2509b1807e7f6865f707af9940
 ### `influxdb:2.4.0` - linux; amd64
 
 ```console
-$ docker pull influxdb@sha256:194424d7bb799a751cd52233d284a4d10d55c05349368cdd31bf98c017204573
+$ docker pull influxdb@sha256:9085f94be03888ff84783cd2a53ec42643ff328994ef0592d1041dbd7bb06126
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **261.2 MB (261151241 bytes)**  
+-	Total Size: **261.2 MB (261151182 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a0dd8df80c869f2f2fc9cce5cd079eaef2b28423c9f59e330ed6e0ba2aada10f`
+-	Image ID: `sha256:4f5cca0d3f590bccf68e37cf1a6c8140bc84475be446d4dfae172764bb8f09f1`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["influxd"]`
 
 ```dockerfile
-# Tue, 06 Dec 2022 01:21:05 GMT
-ADD file:00d8a84de32d523b936621886a10683664f38d8ec0846a60511fcf3a99d0e0c4 in / 
-# Tue, 06 Dec 2022 01:21:06 GMT
+# Wed, 21 Dec 2022 01:20:41 GMT
+ADD file:c865da7afcf35b5a9538e63633f7e99ae4c40933cb8a0235e9704713042fba66 in / 
+# Wed, 21 Dec 2022 01:20:42 GMT
 CMD ["bash"]
-# Tue, 06 Dec 2022 02:15:13 GMT
+# Wed, 21 Dec 2022 11:15:56 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 06 Dec 2022 02:15:21 GMT
+# Wed, 21 Dec 2022 11:16:03 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 06 Dec 2022 17:00:55 GMT
+# Wed, 21 Dec 2022 20:02:01 GMT
 RUN groupadd -r influxdb --gid=1000 &&     useradd -r -g influxdb --uid=1000 --home-dir=/home/influxdb --shell=/bin/bash influxdb &&     mkdir -p /home/influxdb &&     chown -R influxdb:influxdb /home/influxdb
-# Tue, 06 Dec 2022 17:00:55 GMT
+# Wed, 21 Dec 2022 20:02:01 GMT
 ENV GOSU_VER=1.12
-# Tue, 06 Dec 2022 17:00:58 GMT
+# Wed, 21 Dec 2022 20:02:05 GMT
 RUN set -eux;     dpkgArch="$(dpkg --print-architecture)" &&     wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VER/gosu-$dpkgArch" &&     wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VER/gosu-$dpkgArch.asc" &&     export GNUPGHOME="$(mktemp -d)" &&     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 &&     gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu &&     gpgconf --kill all &&     rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc &&     chmod +x /usr/local/bin/gosu &&     gosu --version &&     gosu nobody true
-# Tue, 06 Dec 2022 17:01:20 GMT
+# Wed, 21 Dec 2022 20:02:05 GMT
 ENV INFLUXDB_VERSION=2.4.0
-# Tue, 06 Dec 2022 17:01:27 GMT
+# Wed, 21 Dec 2022 20:02:15 GMT
 RUN set -eux &&     ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in         amd64) ARCH='amd64';;         arm64) ARCH='arm64';;         *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     wget --no-verbose https://dl.influxdata.com/influxdb/releases/influxdb2-${INFLUXDB_VERSION}-linux-${ARCH}.tar.gz.asc &&     wget --no-verbose https://dl.influxdata.com/influxdb/releases/influxdb2-${INFLUXDB_VERSION}-linux-${ARCH}.tar.gz &&     export GNUPGHOME="$(mktemp -d)" &&     echo "disable-ipv6" >> $GNUPGHOME/dirmngr.conf &&     gpg --batch --keyserver keys.openpgp.org --recv-keys 8C2D403D3C3BDB81A4C27C883C3E4B7317FFE40A &&     gpg --batch --verify influxdb2-${INFLUXDB_VERSION}-linux-${ARCH}.tar.gz.asc influxdb2-${INFLUXDB_VERSION}-linux-${ARCH}.tar.gz &&     tar xzf influxdb2-${INFLUXDB_VERSION}-linux-${ARCH}.tar.gz &&     cp influxdb2_linux_${ARCH}/influxd /usr/local/bin/influxd &&     gpgconf --kill all &&     rm -rf "$GNUPGHOME" influxdb2.key influxdb2-${INFLUXDB_VERSION}-linux-${ARCH}* &&     influxd version
-# Tue, 06 Dec 2022 17:01:28 GMT
+# Wed, 21 Dec 2022 20:02:16 GMT
 ENV INFLUX_CLI_VERSION=2.4.0
-# Tue, 06 Dec 2022 17:01:31 GMT
+# Wed, 21 Dec 2022 20:02:20 GMT
 RUN set -eux &&     ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in         amd64) ARCH='amd64';;         arm64) ARCH='arm64';;         *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     wget --no-verbose https://dl.influxdata.com/influxdb/releases/influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}.tar.gz.asc &&     wget --no-verbose https://dl.influxdata.com/influxdb/releases/influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}.tar.gz &&     export GNUPGHOME="$(mktemp -d)" &&     echo "disable-ipv6" >> $GNUPGHOME/dirmngr.conf &&     gpg --batch --keyserver keys.openpgp.org --recv-keys 8C2D403D3C3BDB81A4C27C883C3E4B7317FFE40A &&     gpg --batch --verify influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}.tar.gz.asc influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}.tar.gz &&     tar xzf influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}.tar.gz &&     cp influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}/influx /usr/local/bin/influx &&     gpgconf --kill all &&     rm -rf "$GNUPGHOME" influxdb2.key influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}* &&     influx version
-# Tue, 06 Dec 2022 17:01:32 GMT
+# Wed, 21 Dec 2022 20:02:21 GMT
 RUN mkdir /docker-entrypoint-initdb.d &&     mkdir -p /var/lib/influxdb2 &&     chown -R influxdb:influxdb /var/lib/influxdb2 &&     mkdir -p /etc/influxdb2 &&     chown -R influxdb:influxdb /etc/influxdb2
-# Tue, 06 Dec 2022 17:01:32 GMT
+# Wed, 21 Dec 2022 20:02:21 GMT
 VOLUME [/var/lib/influxdb2 /etc/influxdb2]
-# Tue, 06 Dec 2022 17:01:32 GMT
+# Wed, 21 Dec 2022 20:02:21 GMT
 COPY file:77129326da9464dfa98aab4911582df608de5d5bf6a6f6ed89619b704cac95bc in /etc/defaults/influxdb2/config.yml 
-# Tue, 06 Dec 2022 17:01:32 GMT
+# Wed, 21 Dec 2022 20:02:21 GMT
 COPY file:dbf3d010c7392537ae2b4c9b0d90a1ba01accd63948136585d5decc93bb52afc in /entrypoint.sh 
-# Tue, 06 Dec 2022 17:01:32 GMT
+# Wed, 21 Dec 2022 20:02:21 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 06 Dec 2022 17:01:32 GMT
+# Wed, 21 Dec 2022 20:02:21 GMT
 CMD ["influxd"]
-# Tue, 06 Dec 2022 17:01:32 GMT
+# Wed, 21 Dec 2022 20:02:21 GMT
 EXPOSE 8086
-# Tue, 06 Dec 2022 17:01:33 GMT
+# Wed, 21 Dec 2022 20:02:21 GMT
 ENV INFLUX_CONFIGS_PATH=/etc/influxdb2/influx-configs
-# Tue, 06 Dec 2022 17:01:33 GMT
+# Wed, 21 Dec 2022 20:02:21 GMT
 ENV INFLUXD_INIT_PORT=9999
-# Tue, 06 Dec 2022 17:01:33 GMT
+# Wed, 21 Dec 2022 20:02:22 GMT
 ENV INFLUXD_INIT_PING_ATTEMPTS=600
-# Tue, 06 Dec 2022 17:01:33 GMT
+# Wed, 21 Dec 2022 20:02:22 GMT
 ENV DOCKER_INFLUXDB_INIT_CLI_CONFIG_NAME=default
 ```
 
 -	Layers:
-	-	`sha256:620af4e91dbf80032eee9f1ff66a8b04119d7a329b2a13e007d69c8a0b337bf0`  
-		Last Modified: Tue, 06 Dec 2022 01:25:30 GMT  
-		Size: 50.4 MB (50448865 bytes)  
+	-	`sha256:c7c50787e2da71205402343dd1233b3ca6ebe70c7e790f6ba7d856b81b893200`  
+		Last Modified: Wed, 21 Dec 2022 01:24:55 GMT  
+		Size: 50.4 MB (50448893 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fae29f309a72482bf13fbb1a8f4889ab9107fcad0c9fda76586aa55445e93ded`  
-		Last Modified: Tue, 06 Dec 2022 02:22:49 GMT  
-		Size: 7.9 MB (7859378 bytes)  
+	-	`sha256:aff359114acb7d843de09375f87669fffb0abd1125c16f96431bc3c4173b48f8`  
+		Last Modified: Wed, 21 Dec 2022 11:22:32 GMT  
+		Size: 7.9 MB (7859309 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:28fca74d99b6532401bfe63d36e1bafb1ac839564d48aa4e6e0a6aa2706a4d12`  
-		Last Modified: Tue, 06 Dec 2022 02:22:49 GMT  
-		Size: 10.0 MB (10001409 bytes)  
+	-	`sha256:821dc261e045ba09851c52ed28be3b9ecc9fe8c923fba05854ab0fd2fa38ceca`  
+		Last Modified: Wed, 21 Dec 2022 11:22:32 GMT  
+		Size: 10.0 MB (10001385 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f72f7239d05382f875123b7701a9b8f046e57991ac382e3600cae19898be9ab`  
-		Last Modified: Tue, 06 Dec 2022 17:04:22 GMT  
-		Size: 1.8 KB (1806 bytes)  
+	-	`sha256:1ce0d350b4b4707d5ae574f46718bdba01e856caa4751da07db742c96cf3bf07`  
+		Last Modified: Wed, 21 Dec 2022 20:05:24 GMT  
+		Size: 1.8 KB (1805 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1b452aa99faf6a110eb189f03d75e819e130542d88549ff9683b32a72f9c1be1`  
-		Last Modified: Tue, 06 Dec 2022 17:04:22 GMT  
-		Size: 961.0 KB (960955 bytes)  
+	-	`sha256:1ea4dc0abfe6583740e64574c7b162187d05c4ee4f1c0bec4cdb86117bc9b6e0`  
+		Last Modified: Wed, 21 Dec 2022 20:05:24 GMT  
+		Size: 961.0 KB (960971 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ce3e4c89f0f3d3cf1146234582919382db2d1571e69b6eb4d8dd2b088ac2b797`  
-		Last Modified: Tue, 06 Dec 2022 17:04:56 GMT  
-		Size: 185.8 MB (185802095 bytes)  
+	-	`sha256:e78291f0a160ea705464908e8391dfd4e1a1cd3f3d2bd9ba17e3cd1cd4964060`  
+		Last Modified: Wed, 21 Dec 2022 20:05:36 GMT  
+		Size: 185.8 MB (185802075 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:180ffd28324d2d024fd4fcfd4f30129955f77d304dde43ff7b8fb2b9d2950d72`  
-		Last Modified: Tue, 06 Dec 2022 17:04:43 GMT  
-		Size: 6.1 MB (6071067 bytes)  
+	-	`sha256:6f5acf3b80d25fb813accf7c1df9d74fe700240ec42243478089a2225c020540`  
+		Last Modified: Wed, 21 Dec 2022 20:05:23 GMT  
+		Size: 6.1 MB (6071076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f911df179c6bb988ac6b94bc98d0e66e397b40241406fa4f37e2281b0aa6f3f5`  
-		Last Modified: Tue, 06 Dec 2022 17:04:42 GMT  
-		Size: 276.0 B  
+	-	`sha256:35b191ecfec8e06a9a2ce3497ae16de86bacbd5ae042a7a20b96967736a7b9f8`  
+		Last Modified: Wed, 21 Dec 2022 20:05:22 GMT  
+		Size: 278.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9d6c2206cee4a34a15707e5fde7df2788ea8a1301c02bda7cbc8b4f815555c71`  
-		Last Modified: Tue, 06 Dec 2022 17:04:42 GMT  
-		Size: 259.0 B  
+	-	`sha256:7892f3379bea2881fdbaf0925b219e512c1ef031ca34d29c5212fedeed5a70e6`  
+		Last Modified: Wed, 21 Dec 2022 20:05:22 GMT  
+		Size: 261.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b1e7082f1791c48ad648fb47dc055735c0138783e39a3534ccd2832104b8265`  
-		Last Modified: Tue, 06 Dec 2022 17:04:42 GMT  
-		Size: 5.1 KB (5131 bytes)  
+	-	`sha256:870ae6ccdcb8315b4b8db80a48041a6d295611d841fd060892e7ea5e4ce07b98`  
+		Last Modified: Wed, 21 Dec 2022 20:05:22 GMT  
+		Size: 5.1 KB (5129 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `influxdb:2.4.0` - linux; arm64 variant v8
@@ -3544,7 +3544,7 @@ ENV DOCKER_INFLUXDB_INIT_CLI_CONFIG_NAME=default
 ## `influxdb:2.5`
 
 ```console
-$ docker pull influxdb@sha256:c7db9b3628a37330676cf6f5d9d51feb1cad948c057ce8ec7aff2c3fc5bfd7f1
+$ docker pull influxdb@sha256:8002f6aa73ab051a3e5487c4b5d54294dc2a3b25deac864e6f5218ffea4bfca6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3555,104 +3555,104 @@ $ docker pull influxdb@sha256:c7db9b3628a37330676cf6f5d9d51feb1cad948c057ce8ec7a
 ### `influxdb:2.5` - linux; amd64
 
 ```console
-$ docker pull influxdb@sha256:1ddc46d69db843cd4e0134e96a1c4e5c449ef4e577288b9e6081b5441397aee4
+$ docker pull influxdb@sha256:ac8046c6f53ce37884932b701853626ec51467ad84138897597d67a203237fe9
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **169.8 MB (169818062 bytes)**  
+-	Total Size: **169.8 MB (169818020 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:efe394b6cd7a090cf98d2f317dea7258bc207d6e339abda2f849cfc9ca07a754`
+-	Image ID: `sha256:a7e35f041e0f821b40a681ca30a9065b0de5044aaadf24cbdfbf9f0e2b74afb5`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["influxd"]`
 
 ```dockerfile
-# Tue, 06 Dec 2022 01:21:05 GMT
-ADD file:00d8a84de32d523b936621886a10683664f38d8ec0846a60511fcf3a99d0e0c4 in / 
-# Tue, 06 Dec 2022 01:21:06 GMT
+# Wed, 21 Dec 2022 01:20:41 GMT
+ADD file:c865da7afcf35b5a9538e63633f7e99ae4c40933cb8a0235e9704713042fba66 in / 
+# Wed, 21 Dec 2022 01:20:42 GMT
 CMD ["bash"]
-# Tue, 06 Dec 2022 02:15:13 GMT
+# Wed, 21 Dec 2022 11:15:56 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 06 Dec 2022 02:15:21 GMT
+# Wed, 21 Dec 2022 11:16:03 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 06 Dec 2022 17:00:55 GMT
+# Wed, 21 Dec 2022 20:02:01 GMT
 RUN groupadd -r influxdb --gid=1000 &&     useradd -r -g influxdb --uid=1000 --home-dir=/home/influxdb --shell=/bin/bash influxdb &&     mkdir -p /home/influxdb &&     chown -R influxdb:influxdb /home/influxdb
-# Tue, 06 Dec 2022 17:00:55 GMT
+# Wed, 21 Dec 2022 20:02:01 GMT
 ENV GOSU_VER=1.12
-# Tue, 06 Dec 2022 17:00:58 GMT
+# Wed, 21 Dec 2022 20:02:05 GMT
 RUN set -eux;     dpkgArch="$(dpkg --print-architecture)" &&     wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VER/gosu-$dpkgArch" &&     wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VER/gosu-$dpkgArch.asc" &&     export GNUPGHOME="$(mktemp -d)" &&     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 &&     gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu &&     gpgconf --kill all &&     rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc &&     chmod +x /usr/local/bin/gosu &&     gosu --version &&     gosu nobody true
-# Tue, 06 Dec 2022 17:01:39 GMT
+# Wed, 21 Dec 2022 20:02:26 GMT
 ENV INFLUXDB_VERSION=2.5.1
-# Tue, 06 Dec 2022 17:01:44 GMT
+# Wed, 21 Dec 2022 20:02:33 GMT
 RUN set -eux &&     ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in         amd64) ARCH='amd64';;         arm64) ARCH='arm64';;         *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     wget --no-verbose https://dl.influxdata.com/influxdb/releases/influxdb2-${INFLUXDB_VERSION}-linux-${ARCH}.tar.gz.asc &&     wget --no-verbose https://dl.influxdata.com/influxdb/releases/influxdb2-${INFLUXDB_VERSION}-linux-${ARCH}.tar.gz &&     export GNUPGHOME="$(mktemp -d)" &&     echo "disable-ipv6" >> $GNUPGHOME/dirmngr.conf &&     gpg --batch --keyserver keys.openpgp.org --recv-keys 8C2D403D3C3BDB81A4C27C883C3E4B7317FFE40A &&     gpg --batch --verify influxdb2-${INFLUXDB_VERSION}-linux-${ARCH}.tar.gz.asc influxdb2-${INFLUXDB_VERSION}-linux-${ARCH}.tar.gz &&     tar xzf influxdb2-${INFLUXDB_VERSION}-linux-${ARCH}.tar.gz &&     cp influxdb2_linux_${ARCH}/influxd /usr/local/bin/influxd &&     gpgconf --kill all &&     rm -rf "$GNUPGHOME" influxdb2.key influxdb2-${INFLUXDB_VERSION}-linux-${ARCH}* &&     influxd version
-# Tue, 06 Dec 2022 17:01:45 GMT
+# Wed, 21 Dec 2022 20:02:34 GMT
 ENV INFLUX_CLI_VERSION=2.5.0
-# Tue, 06 Dec 2022 17:01:48 GMT
+# Wed, 21 Dec 2022 20:02:36 GMT
 RUN set -eux &&     ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in         amd64) ARCH='amd64';;         arm64) ARCH='arm64';;         *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     wget --no-verbose https://dl.influxdata.com/influxdb/releases/influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}.tar.gz.asc &&     wget --no-verbose https://dl.influxdata.com/influxdb/releases/influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}.tar.gz &&     export GNUPGHOME="$(mktemp -d)" &&     echo "disable-ipv6" >> $GNUPGHOME/dirmngr.conf &&     gpg --batch --keyserver keys.openpgp.org --recv-keys 8C2D403D3C3BDB81A4C27C883C3E4B7317FFE40A &&     gpg --batch --verify influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}.tar.gz.asc influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}.tar.gz &&     tar xzf influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}.tar.gz &&     cp influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}/influx /usr/local/bin/influx &&     gpgconf --kill all &&     rm -rf "$GNUPGHOME" influxdb2.key influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}* &&     influx version
-# Tue, 06 Dec 2022 17:01:49 GMT
+# Wed, 21 Dec 2022 20:02:37 GMT
 RUN mkdir /docker-entrypoint-initdb.d &&     mkdir -p /var/lib/influxdb2 &&     chown -R influxdb:influxdb /var/lib/influxdb2 &&     mkdir -p /etc/influxdb2 &&     chown -R influxdb:influxdb /etc/influxdb2
-# Tue, 06 Dec 2022 17:01:49 GMT
+# Wed, 21 Dec 2022 20:02:37 GMT
 VOLUME [/var/lib/influxdb2 /etc/influxdb2]
-# Tue, 06 Dec 2022 17:01:49 GMT
+# Wed, 21 Dec 2022 20:02:37 GMT
 COPY file:77129326da9464dfa98aab4911582df608de5d5bf6a6f6ed89619b704cac95bc in /etc/defaults/influxdb2/config.yml 
-# Tue, 06 Dec 2022 17:01:49 GMT
+# Wed, 21 Dec 2022 20:02:37 GMT
 COPY file:dbf3d010c7392537ae2b4c9b0d90a1ba01accd63948136585d5decc93bb52afc in /entrypoint.sh 
-# Tue, 06 Dec 2022 17:01:50 GMT
+# Wed, 21 Dec 2022 20:02:37 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 06 Dec 2022 17:01:50 GMT
+# Wed, 21 Dec 2022 20:02:37 GMT
 CMD ["influxd"]
-# Tue, 06 Dec 2022 17:01:50 GMT
+# Wed, 21 Dec 2022 20:02:37 GMT
 EXPOSE 8086
-# Tue, 06 Dec 2022 17:01:50 GMT
+# Wed, 21 Dec 2022 20:02:38 GMT
 ENV INFLUX_CONFIGS_PATH=/etc/influxdb2/influx-configs
-# Tue, 06 Dec 2022 17:01:50 GMT
+# Wed, 21 Dec 2022 20:02:38 GMT
 ENV INFLUXD_INIT_PORT=9999
-# Tue, 06 Dec 2022 17:01:50 GMT
+# Wed, 21 Dec 2022 20:02:38 GMT
 ENV INFLUXD_INIT_PING_ATTEMPTS=600
-# Tue, 06 Dec 2022 17:01:50 GMT
+# Wed, 21 Dec 2022 20:02:38 GMT
 ENV DOCKER_INFLUXDB_INIT_CLI_CONFIG_NAME=default
 ```
 
 -	Layers:
-	-	`sha256:620af4e91dbf80032eee9f1ff66a8b04119d7a329b2a13e007d69c8a0b337bf0`  
-		Last Modified: Tue, 06 Dec 2022 01:25:30 GMT  
-		Size: 50.4 MB (50448865 bytes)  
+	-	`sha256:c7c50787e2da71205402343dd1233b3ca6ebe70c7e790f6ba7d856b81b893200`  
+		Last Modified: Wed, 21 Dec 2022 01:24:55 GMT  
+		Size: 50.4 MB (50448893 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fae29f309a72482bf13fbb1a8f4889ab9107fcad0c9fda76586aa55445e93ded`  
-		Last Modified: Tue, 06 Dec 2022 02:22:49 GMT  
-		Size: 7.9 MB (7859378 bytes)  
+	-	`sha256:aff359114acb7d843de09375f87669fffb0abd1125c16f96431bc3c4173b48f8`  
+		Last Modified: Wed, 21 Dec 2022 11:22:32 GMT  
+		Size: 7.9 MB (7859309 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:28fca74d99b6532401bfe63d36e1bafb1ac839564d48aa4e6e0a6aa2706a4d12`  
-		Last Modified: Tue, 06 Dec 2022 02:22:49 GMT  
-		Size: 10.0 MB (10001409 bytes)  
+	-	`sha256:821dc261e045ba09851c52ed28be3b9ecc9fe8c923fba05854ab0fd2fa38ceca`  
+		Last Modified: Wed, 21 Dec 2022 11:22:32 GMT  
+		Size: 10.0 MB (10001385 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f72f7239d05382f875123b7701a9b8f046e57991ac382e3600cae19898be9ab`  
-		Last Modified: Tue, 06 Dec 2022 17:04:22 GMT  
-		Size: 1.8 KB (1806 bytes)  
+	-	`sha256:1ce0d350b4b4707d5ae574f46718bdba01e856caa4751da07db742c96cf3bf07`  
+		Last Modified: Wed, 21 Dec 2022 20:05:24 GMT  
+		Size: 1.8 KB (1805 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1b452aa99faf6a110eb189f03d75e819e130542d88549ff9683b32a72f9c1be1`  
-		Last Modified: Tue, 06 Dec 2022 17:04:22 GMT  
-		Size: 961.0 KB (960955 bytes)  
+	-	`sha256:1ea4dc0abfe6583740e64574c7b162187d05c4ee4f1c0bec4cdb86117bc9b6e0`  
+		Last Modified: Wed, 21 Dec 2022 20:05:24 GMT  
+		Size: 961.0 KB (960971 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:caa0322b90acec8c2511e2e9c75022912c4f2a645518009cb3601e06dc88c23f`  
-		Last Modified: Tue, 06 Dec 2022 17:05:17 GMT  
-		Size: 94.4 MB (94434201 bytes)  
+	-	`sha256:47fe9ca5333de4ae96da0e46298fd4cf7e2b8e1950698144c8d7594c69ef5fab`  
+		Last Modified: Wed, 21 Dec 2022 20:05:56 GMT  
+		Size: 94.4 MB (94434205 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4318433ceb72e6aa0e9526cd511dd70ba853e229adbc720f779c1b1947c9309d`  
-		Last Modified: Tue, 06 Dec 2022 17:05:08 GMT  
-		Size: 6.1 MB (6105782 bytes)  
+	-	`sha256:ed4b40dce437e1e89f85ba0c43a8fea85cbb0e8ee4d3ad3044e2262449df18f9`  
+		Last Modified: Wed, 21 Dec 2022 20:05:47 GMT  
+		Size: 6.1 MB (6105787 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5112021d11a3101fe7c2f297e4875d700918abc23e28004adab7b2a8329dfaca`  
-		Last Modified: Tue, 06 Dec 2022 17:05:07 GMT  
-		Size: 276.0 B  
+	-	`sha256:f2d1e5dc3862882ea2401dab74331e4f234f931ffda099993605961060d2a1c9`  
+		Last Modified: Wed, 21 Dec 2022 20:05:45 GMT  
+		Size: 277.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:97b98b65612c8652c5a00886beda3fcf2152c42de07ac9ca01dd082953ced351`  
-		Last Modified: Tue, 06 Dec 2022 17:05:07 GMT  
-		Size: 260.0 B  
+	-	`sha256:e2e043d172723d3fb35f59a36bf357f2ea2cf325ca6a27f725d883f46ca8ae39`  
+		Last Modified: Wed, 21 Dec 2022 20:05:45 GMT  
+		Size: 259.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:26f4c3161f45255b24073c3d5b868854127360ef106f6dd649b8e4971ee87ea8`  
-		Last Modified: Tue, 06 Dec 2022 17:05:07 GMT  
-		Size: 5.1 KB (5130 bytes)  
+	-	`sha256:46d6f4b4b0d410a6bfb63fab9f885398cdab90dc192fcd83ba95ff88f99c210f`  
+		Last Modified: Wed, 21 Dec 2022 20:05:45 GMT  
+		Size: 5.1 KB (5129 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `influxdb:2.5` - linux; arm64 variant v8
@@ -3962,7 +3962,7 @@ ENV DOCKER_INFLUXDB_INIT_CLI_CONFIG_NAME=default
 ## `influxdb:2.5.1`
 
 ```console
-$ docker pull influxdb@sha256:c7db9b3628a37330676cf6f5d9d51feb1cad948c057ce8ec7aff2c3fc5bfd7f1
+$ docker pull influxdb@sha256:8002f6aa73ab051a3e5487c4b5d54294dc2a3b25deac864e6f5218ffea4bfca6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3973,104 +3973,104 @@ $ docker pull influxdb@sha256:c7db9b3628a37330676cf6f5d9d51feb1cad948c057ce8ec7a
 ### `influxdb:2.5.1` - linux; amd64
 
 ```console
-$ docker pull influxdb@sha256:1ddc46d69db843cd4e0134e96a1c4e5c449ef4e577288b9e6081b5441397aee4
+$ docker pull influxdb@sha256:ac8046c6f53ce37884932b701853626ec51467ad84138897597d67a203237fe9
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **169.8 MB (169818062 bytes)**  
+-	Total Size: **169.8 MB (169818020 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:efe394b6cd7a090cf98d2f317dea7258bc207d6e339abda2f849cfc9ca07a754`
+-	Image ID: `sha256:a7e35f041e0f821b40a681ca30a9065b0de5044aaadf24cbdfbf9f0e2b74afb5`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["influxd"]`
 
 ```dockerfile
-# Tue, 06 Dec 2022 01:21:05 GMT
-ADD file:00d8a84de32d523b936621886a10683664f38d8ec0846a60511fcf3a99d0e0c4 in / 
-# Tue, 06 Dec 2022 01:21:06 GMT
+# Wed, 21 Dec 2022 01:20:41 GMT
+ADD file:c865da7afcf35b5a9538e63633f7e99ae4c40933cb8a0235e9704713042fba66 in / 
+# Wed, 21 Dec 2022 01:20:42 GMT
 CMD ["bash"]
-# Tue, 06 Dec 2022 02:15:13 GMT
+# Wed, 21 Dec 2022 11:15:56 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 06 Dec 2022 02:15:21 GMT
+# Wed, 21 Dec 2022 11:16:03 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 06 Dec 2022 17:00:55 GMT
+# Wed, 21 Dec 2022 20:02:01 GMT
 RUN groupadd -r influxdb --gid=1000 &&     useradd -r -g influxdb --uid=1000 --home-dir=/home/influxdb --shell=/bin/bash influxdb &&     mkdir -p /home/influxdb &&     chown -R influxdb:influxdb /home/influxdb
-# Tue, 06 Dec 2022 17:00:55 GMT
+# Wed, 21 Dec 2022 20:02:01 GMT
 ENV GOSU_VER=1.12
-# Tue, 06 Dec 2022 17:00:58 GMT
+# Wed, 21 Dec 2022 20:02:05 GMT
 RUN set -eux;     dpkgArch="$(dpkg --print-architecture)" &&     wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VER/gosu-$dpkgArch" &&     wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VER/gosu-$dpkgArch.asc" &&     export GNUPGHOME="$(mktemp -d)" &&     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 &&     gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu &&     gpgconf --kill all &&     rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc &&     chmod +x /usr/local/bin/gosu &&     gosu --version &&     gosu nobody true
-# Tue, 06 Dec 2022 17:01:39 GMT
+# Wed, 21 Dec 2022 20:02:26 GMT
 ENV INFLUXDB_VERSION=2.5.1
-# Tue, 06 Dec 2022 17:01:44 GMT
+# Wed, 21 Dec 2022 20:02:33 GMT
 RUN set -eux &&     ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in         amd64) ARCH='amd64';;         arm64) ARCH='arm64';;         *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     wget --no-verbose https://dl.influxdata.com/influxdb/releases/influxdb2-${INFLUXDB_VERSION}-linux-${ARCH}.tar.gz.asc &&     wget --no-verbose https://dl.influxdata.com/influxdb/releases/influxdb2-${INFLUXDB_VERSION}-linux-${ARCH}.tar.gz &&     export GNUPGHOME="$(mktemp -d)" &&     echo "disable-ipv6" >> $GNUPGHOME/dirmngr.conf &&     gpg --batch --keyserver keys.openpgp.org --recv-keys 8C2D403D3C3BDB81A4C27C883C3E4B7317FFE40A &&     gpg --batch --verify influxdb2-${INFLUXDB_VERSION}-linux-${ARCH}.tar.gz.asc influxdb2-${INFLUXDB_VERSION}-linux-${ARCH}.tar.gz &&     tar xzf influxdb2-${INFLUXDB_VERSION}-linux-${ARCH}.tar.gz &&     cp influxdb2_linux_${ARCH}/influxd /usr/local/bin/influxd &&     gpgconf --kill all &&     rm -rf "$GNUPGHOME" influxdb2.key influxdb2-${INFLUXDB_VERSION}-linux-${ARCH}* &&     influxd version
-# Tue, 06 Dec 2022 17:01:45 GMT
+# Wed, 21 Dec 2022 20:02:34 GMT
 ENV INFLUX_CLI_VERSION=2.5.0
-# Tue, 06 Dec 2022 17:01:48 GMT
+# Wed, 21 Dec 2022 20:02:36 GMT
 RUN set -eux &&     ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in         amd64) ARCH='amd64';;         arm64) ARCH='arm64';;         *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     wget --no-verbose https://dl.influxdata.com/influxdb/releases/influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}.tar.gz.asc &&     wget --no-verbose https://dl.influxdata.com/influxdb/releases/influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}.tar.gz &&     export GNUPGHOME="$(mktemp -d)" &&     echo "disable-ipv6" >> $GNUPGHOME/dirmngr.conf &&     gpg --batch --keyserver keys.openpgp.org --recv-keys 8C2D403D3C3BDB81A4C27C883C3E4B7317FFE40A &&     gpg --batch --verify influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}.tar.gz.asc influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}.tar.gz &&     tar xzf influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}.tar.gz &&     cp influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}/influx /usr/local/bin/influx &&     gpgconf --kill all &&     rm -rf "$GNUPGHOME" influxdb2.key influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}* &&     influx version
-# Tue, 06 Dec 2022 17:01:49 GMT
+# Wed, 21 Dec 2022 20:02:37 GMT
 RUN mkdir /docker-entrypoint-initdb.d &&     mkdir -p /var/lib/influxdb2 &&     chown -R influxdb:influxdb /var/lib/influxdb2 &&     mkdir -p /etc/influxdb2 &&     chown -R influxdb:influxdb /etc/influxdb2
-# Tue, 06 Dec 2022 17:01:49 GMT
+# Wed, 21 Dec 2022 20:02:37 GMT
 VOLUME [/var/lib/influxdb2 /etc/influxdb2]
-# Tue, 06 Dec 2022 17:01:49 GMT
+# Wed, 21 Dec 2022 20:02:37 GMT
 COPY file:77129326da9464dfa98aab4911582df608de5d5bf6a6f6ed89619b704cac95bc in /etc/defaults/influxdb2/config.yml 
-# Tue, 06 Dec 2022 17:01:49 GMT
+# Wed, 21 Dec 2022 20:02:37 GMT
 COPY file:dbf3d010c7392537ae2b4c9b0d90a1ba01accd63948136585d5decc93bb52afc in /entrypoint.sh 
-# Tue, 06 Dec 2022 17:01:50 GMT
+# Wed, 21 Dec 2022 20:02:37 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 06 Dec 2022 17:01:50 GMT
+# Wed, 21 Dec 2022 20:02:37 GMT
 CMD ["influxd"]
-# Tue, 06 Dec 2022 17:01:50 GMT
+# Wed, 21 Dec 2022 20:02:37 GMT
 EXPOSE 8086
-# Tue, 06 Dec 2022 17:01:50 GMT
+# Wed, 21 Dec 2022 20:02:38 GMT
 ENV INFLUX_CONFIGS_PATH=/etc/influxdb2/influx-configs
-# Tue, 06 Dec 2022 17:01:50 GMT
+# Wed, 21 Dec 2022 20:02:38 GMT
 ENV INFLUXD_INIT_PORT=9999
-# Tue, 06 Dec 2022 17:01:50 GMT
+# Wed, 21 Dec 2022 20:02:38 GMT
 ENV INFLUXD_INIT_PING_ATTEMPTS=600
-# Tue, 06 Dec 2022 17:01:50 GMT
+# Wed, 21 Dec 2022 20:02:38 GMT
 ENV DOCKER_INFLUXDB_INIT_CLI_CONFIG_NAME=default
 ```
 
 -	Layers:
-	-	`sha256:620af4e91dbf80032eee9f1ff66a8b04119d7a329b2a13e007d69c8a0b337bf0`  
-		Last Modified: Tue, 06 Dec 2022 01:25:30 GMT  
-		Size: 50.4 MB (50448865 bytes)  
+	-	`sha256:c7c50787e2da71205402343dd1233b3ca6ebe70c7e790f6ba7d856b81b893200`  
+		Last Modified: Wed, 21 Dec 2022 01:24:55 GMT  
+		Size: 50.4 MB (50448893 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fae29f309a72482bf13fbb1a8f4889ab9107fcad0c9fda76586aa55445e93ded`  
-		Last Modified: Tue, 06 Dec 2022 02:22:49 GMT  
-		Size: 7.9 MB (7859378 bytes)  
+	-	`sha256:aff359114acb7d843de09375f87669fffb0abd1125c16f96431bc3c4173b48f8`  
+		Last Modified: Wed, 21 Dec 2022 11:22:32 GMT  
+		Size: 7.9 MB (7859309 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:28fca74d99b6532401bfe63d36e1bafb1ac839564d48aa4e6e0a6aa2706a4d12`  
-		Last Modified: Tue, 06 Dec 2022 02:22:49 GMT  
-		Size: 10.0 MB (10001409 bytes)  
+	-	`sha256:821dc261e045ba09851c52ed28be3b9ecc9fe8c923fba05854ab0fd2fa38ceca`  
+		Last Modified: Wed, 21 Dec 2022 11:22:32 GMT  
+		Size: 10.0 MB (10001385 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f72f7239d05382f875123b7701a9b8f046e57991ac382e3600cae19898be9ab`  
-		Last Modified: Tue, 06 Dec 2022 17:04:22 GMT  
-		Size: 1.8 KB (1806 bytes)  
+	-	`sha256:1ce0d350b4b4707d5ae574f46718bdba01e856caa4751da07db742c96cf3bf07`  
+		Last Modified: Wed, 21 Dec 2022 20:05:24 GMT  
+		Size: 1.8 KB (1805 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1b452aa99faf6a110eb189f03d75e819e130542d88549ff9683b32a72f9c1be1`  
-		Last Modified: Tue, 06 Dec 2022 17:04:22 GMT  
-		Size: 961.0 KB (960955 bytes)  
+	-	`sha256:1ea4dc0abfe6583740e64574c7b162187d05c4ee4f1c0bec4cdb86117bc9b6e0`  
+		Last Modified: Wed, 21 Dec 2022 20:05:24 GMT  
+		Size: 961.0 KB (960971 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:caa0322b90acec8c2511e2e9c75022912c4f2a645518009cb3601e06dc88c23f`  
-		Last Modified: Tue, 06 Dec 2022 17:05:17 GMT  
-		Size: 94.4 MB (94434201 bytes)  
+	-	`sha256:47fe9ca5333de4ae96da0e46298fd4cf7e2b8e1950698144c8d7594c69ef5fab`  
+		Last Modified: Wed, 21 Dec 2022 20:05:56 GMT  
+		Size: 94.4 MB (94434205 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4318433ceb72e6aa0e9526cd511dd70ba853e229adbc720f779c1b1947c9309d`  
-		Last Modified: Tue, 06 Dec 2022 17:05:08 GMT  
-		Size: 6.1 MB (6105782 bytes)  
+	-	`sha256:ed4b40dce437e1e89f85ba0c43a8fea85cbb0e8ee4d3ad3044e2262449df18f9`  
+		Last Modified: Wed, 21 Dec 2022 20:05:47 GMT  
+		Size: 6.1 MB (6105787 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5112021d11a3101fe7c2f297e4875d700918abc23e28004adab7b2a8329dfaca`  
-		Last Modified: Tue, 06 Dec 2022 17:05:07 GMT  
-		Size: 276.0 B  
+	-	`sha256:f2d1e5dc3862882ea2401dab74331e4f234f931ffda099993605961060d2a1c9`  
+		Last Modified: Wed, 21 Dec 2022 20:05:45 GMT  
+		Size: 277.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:97b98b65612c8652c5a00886beda3fcf2152c42de07ac9ca01dd082953ced351`  
-		Last Modified: Tue, 06 Dec 2022 17:05:07 GMT  
-		Size: 260.0 B  
+	-	`sha256:e2e043d172723d3fb35f59a36bf357f2ea2cf325ca6a27f725d883f46ca8ae39`  
+		Last Modified: Wed, 21 Dec 2022 20:05:45 GMT  
+		Size: 259.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:26f4c3161f45255b24073c3d5b868854127360ef106f6dd649b8e4971ee87ea8`  
-		Last Modified: Tue, 06 Dec 2022 17:05:07 GMT  
-		Size: 5.1 KB (5130 bytes)  
+	-	`sha256:46d6f4b4b0d410a6bfb63fab9f885398cdab90dc192fcd83ba95ff88f99c210f`  
+		Last Modified: Wed, 21 Dec 2022 20:05:45 GMT  
+		Size: 5.1 KB (5129 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `influxdb:2.5.1` - linux; arm64 variant v8
@@ -4380,7 +4380,7 @@ ENV DOCKER_INFLUXDB_INIT_CLI_CONFIG_NAME=default
 ## `influxdb:2.6`
 
 ```console
-$ docker pull influxdb@sha256:6efc621cc68615b71d807e910eacc377f6f50422de79085d03add16253dcf5a8
+$ docker pull influxdb@sha256:67f83def1b55d135e9092271775ee851d7a1a6233f2dad796204abeeb3ac4f48
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4391,104 +4391,104 @@ $ docker pull influxdb@sha256:6efc621cc68615b71d807e910eacc377f6f50422de79085d03
 ### `influxdb:2.6` - linux; amd64
 
 ```console
-$ docker pull influxdb@sha256:bca158ede8b68ae864b71935c518028b82a9c8802bad623cefe9df0a068ebd89
+$ docker pull influxdb@sha256:1d0d3d954f64be0f969735302de8f2ee8951c5a290f7569980d66bc9d0c4150c
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **168.9 MB (168874810 bytes)**  
+-	Total Size: **168.9 MB (168874752 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df1c226db87e0a435f23472b152ab184acbc42350f89803efab5952494c5809e`
+-	Image ID: `sha256:07bf7f6c2aa117f1e7eb1e4e4599cd508aa4fc991a7c73e4972d0a6d7e931aa8`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["influxd"]`
 
 ```dockerfile
-# Tue, 06 Dec 2022 01:21:05 GMT
-ADD file:00d8a84de32d523b936621886a10683664f38d8ec0846a60511fcf3a99d0e0c4 in / 
-# Tue, 06 Dec 2022 01:21:06 GMT
+# Wed, 21 Dec 2022 01:20:41 GMT
+ADD file:c865da7afcf35b5a9538e63633f7e99ae4c40933cb8a0235e9704713042fba66 in / 
+# Wed, 21 Dec 2022 01:20:42 GMT
 CMD ["bash"]
-# Tue, 06 Dec 2022 02:15:13 GMT
+# Wed, 21 Dec 2022 11:15:56 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 06 Dec 2022 02:15:21 GMT
+# Wed, 21 Dec 2022 11:16:03 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 06 Dec 2022 17:00:55 GMT
+# Wed, 21 Dec 2022 20:02:01 GMT
 RUN groupadd -r influxdb --gid=1000 &&     useradd -r -g influxdb --uid=1000 --home-dir=/home/influxdb --shell=/bin/bash influxdb &&     mkdir -p /home/influxdb &&     chown -R influxdb:influxdb /home/influxdb
-# Tue, 06 Dec 2022 17:00:55 GMT
+# Wed, 21 Dec 2022 20:02:01 GMT
 ENV GOSU_VER=1.12
-# Tue, 06 Dec 2022 17:00:58 GMT
+# Wed, 21 Dec 2022 20:02:05 GMT
 RUN set -eux;     dpkgArch="$(dpkg --print-architecture)" &&     wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VER/gosu-$dpkgArch" &&     wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VER/gosu-$dpkgArch.asc" &&     export GNUPGHOME="$(mktemp -d)" &&     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 &&     gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu &&     gpgconf --kill all &&     rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc &&     chmod +x /usr/local/bin/gosu &&     gosu --version &&     gosu nobody true
-# Fri, 16 Dec 2022 00:23:15 GMT
+# Wed, 21 Dec 2022 20:02:41 GMT
 ENV INFLUXDB_VERSION=2.6.0
-# Fri, 16 Dec 2022 00:23:21 GMT
+# Wed, 21 Dec 2022 20:02:48 GMT
 RUN set -eux &&     ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in         amd64) ARCH='amd64';;         arm64) ARCH='arm64';;         *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     wget --no-verbose https://dl.influxdata.com/influxdb/releases/influxdb2-${INFLUXDB_VERSION}-linux-${ARCH}.tar.gz.asc &&     wget --no-verbose https://dl.influxdata.com/influxdb/releases/influxdb2-${INFLUXDB_VERSION}-linux-${ARCH}.tar.gz &&     export GNUPGHOME="$(mktemp -d)" &&     echo "disable-ipv6" >> $GNUPGHOME/dirmngr.conf &&     gpg --batch --keyserver keys.openpgp.org --recv-keys 8C2D403D3C3BDB81A4C27C883C3E4B7317FFE40A &&     gpg --batch --verify influxdb2-${INFLUXDB_VERSION}-linux-${ARCH}.tar.gz.asc influxdb2-${INFLUXDB_VERSION}-linux-${ARCH}.tar.gz &&     tar xzf influxdb2-${INFLUXDB_VERSION}-linux-${ARCH}.tar.gz &&     cp influxdb2_linux_${ARCH}/influxd /usr/local/bin/influxd &&     gpgconf --kill all &&     rm -rf "$GNUPGHOME" influxdb2.key influxdb2-${INFLUXDB_VERSION}-linux-${ARCH}* &&     influxd version
-# Fri, 16 Dec 2022 00:23:21 GMT
+# Wed, 21 Dec 2022 20:02:48 GMT
 ENV INFLUX_CLI_VERSION=2.6.0
-# Fri, 16 Dec 2022 00:23:24 GMT
+# Wed, 21 Dec 2022 20:02:52 GMT
 RUN set -eux &&     ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in         amd64) ARCH='amd64';;         arm64) ARCH='arm64';;         *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     wget --no-verbose https://dl.influxdata.com/influxdb/releases/influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}.tar.gz.asc &&     wget --no-verbose https://dl.influxdata.com/influxdb/releases/influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}.tar.gz &&     export GNUPGHOME="$(mktemp -d)" &&     echo "disable-ipv6" >> $GNUPGHOME/dirmngr.conf &&     gpg --batch --keyserver keys.openpgp.org --recv-keys 8C2D403D3C3BDB81A4C27C883C3E4B7317FFE40A &&     gpg --batch --verify influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}.tar.gz.asc influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}.tar.gz &&     tar xzf influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}.tar.gz &&     cp influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}/influx /usr/local/bin/influx &&     gpgconf --kill all &&     rm -rf "$GNUPGHOME" influxdb2.key influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}* &&     influx version
-# Fri, 16 Dec 2022 00:23:25 GMT
+# Wed, 21 Dec 2022 20:02:52 GMT
 RUN mkdir /docker-entrypoint-initdb.d &&     mkdir -p /var/lib/influxdb2 &&     chown -R influxdb:influxdb /var/lib/influxdb2 &&     mkdir -p /etc/influxdb2 &&     chown -R influxdb:influxdb /etc/influxdb2
-# Fri, 16 Dec 2022 00:23:25 GMT
+# Wed, 21 Dec 2022 20:02:52 GMT
 VOLUME [/var/lib/influxdb2 /etc/influxdb2]
-# Fri, 16 Dec 2022 00:23:25 GMT
+# Wed, 21 Dec 2022 20:02:53 GMT
 COPY file:77129326da9464dfa98aab4911582df608de5d5bf6a6f6ed89619b704cac95bc in /etc/defaults/influxdb2/config.yml 
-# Fri, 16 Dec 2022 00:23:25 GMT
+# Wed, 21 Dec 2022 20:02:53 GMT
 COPY file:dbf3d010c7392537ae2b4c9b0d90a1ba01accd63948136585d5decc93bb52afc in /entrypoint.sh 
-# Fri, 16 Dec 2022 00:23:25 GMT
+# Wed, 21 Dec 2022 20:02:53 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 16 Dec 2022 00:23:25 GMT
+# Wed, 21 Dec 2022 20:02:53 GMT
 CMD ["influxd"]
-# Fri, 16 Dec 2022 00:23:26 GMT
+# Wed, 21 Dec 2022 20:02:53 GMT
 EXPOSE 8086
-# Fri, 16 Dec 2022 00:23:26 GMT
+# Wed, 21 Dec 2022 20:02:53 GMT
 ENV INFLUX_CONFIGS_PATH=/etc/influxdb2/influx-configs
-# Fri, 16 Dec 2022 00:23:26 GMT
+# Wed, 21 Dec 2022 20:02:53 GMT
 ENV INFLUXD_INIT_PORT=9999
-# Fri, 16 Dec 2022 00:23:26 GMT
+# Wed, 21 Dec 2022 20:02:53 GMT
 ENV INFLUXD_INIT_PING_ATTEMPTS=600
-# Fri, 16 Dec 2022 00:23:26 GMT
+# Wed, 21 Dec 2022 20:02:53 GMT
 ENV DOCKER_INFLUXDB_INIT_CLI_CONFIG_NAME=default
 ```
 
 -	Layers:
-	-	`sha256:620af4e91dbf80032eee9f1ff66a8b04119d7a329b2a13e007d69c8a0b337bf0`  
-		Last Modified: Tue, 06 Dec 2022 01:25:30 GMT  
-		Size: 50.4 MB (50448865 bytes)  
+	-	`sha256:c7c50787e2da71205402343dd1233b3ca6ebe70c7e790f6ba7d856b81b893200`  
+		Last Modified: Wed, 21 Dec 2022 01:24:55 GMT  
+		Size: 50.4 MB (50448893 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fae29f309a72482bf13fbb1a8f4889ab9107fcad0c9fda76586aa55445e93ded`  
-		Last Modified: Tue, 06 Dec 2022 02:22:49 GMT  
-		Size: 7.9 MB (7859378 bytes)  
+	-	`sha256:aff359114acb7d843de09375f87669fffb0abd1125c16f96431bc3c4173b48f8`  
+		Last Modified: Wed, 21 Dec 2022 11:22:32 GMT  
+		Size: 7.9 MB (7859309 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:28fca74d99b6532401bfe63d36e1bafb1ac839564d48aa4e6e0a6aa2706a4d12`  
-		Last Modified: Tue, 06 Dec 2022 02:22:49 GMT  
-		Size: 10.0 MB (10001409 bytes)  
+	-	`sha256:821dc261e045ba09851c52ed28be3b9ecc9fe8c923fba05854ab0fd2fa38ceca`  
+		Last Modified: Wed, 21 Dec 2022 11:22:32 GMT  
+		Size: 10.0 MB (10001385 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f72f7239d05382f875123b7701a9b8f046e57991ac382e3600cae19898be9ab`  
-		Last Modified: Tue, 06 Dec 2022 17:04:22 GMT  
-		Size: 1.8 KB (1806 bytes)  
+	-	`sha256:1ce0d350b4b4707d5ae574f46718bdba01e856caa4751da07db742c96cf3bf07`  
+		Last Modified: Wed, 21 Dec 2022 20:05:24 GMT  
+		Size: 1.8 KB (1805 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1b452aa99faf6a110eb189f03d75e819e130542d88549ff9683b32a72f9c1be1`  
-		Last Modified: Tue, 06 Dec 2022 17:04:22 GMT  
-		Size: 961.0 KB (960955 bytes)  
+	-	`sha256:1ea4dc0abfe6583740e64574c7b162187d05c4ee4f1c0bec4cdb86117bc9b6e0`  
+		Last Modified: Wed, 21 Dec 2022 20:05:24 GMT  
+		Size: 961.0 KB (960971 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:635166a7c0c120985669f335069fe29d36f8fcee4428f7fdd8ff5cdc86817957`  
-		Last Modified: Fri, 16 Dec 2022 00:25:36 GMT  
-		Size: 93.5 MB (93490547 bytes)  
+	-	`sha256:d83e615adbe8c6bb4bd09bbddbbc5bcaa8d1667641631c93cef05a3163234b3b`  
+		Last Modified: Wed, 21 Dec 2022 20:06:15 GMT  
+		Size: 93.5 MB (93490539 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8604ca7ede783db92247ea054bd3835357d16d60e0a89d07b13868ad8e8df786`  
-		Last Modified: Fri, 16 Dec 2022 00:25:26 GMT  
-		Size: 6.1 MB (6106184 bytes)  
+	-	`sha256:7b580b43c38e66659e4149a07ea4e0f0cf8c85825e377be2ed8426923ada5674`  
+		Last Modified: Wed, 21 Dec 2022 20:06:06 GMT  
+		Size: 6.1 MB (6106186 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9add9c5ef692a0519d4f8fc593c479aed010901de975280b780c2de72b885325`  
-		Last Modified: Fri, 16 Dec 2022 00:25:25 GMT  
+	-	`sha256:9c88d3b840f886d6d623ee7edcdb1d94cc35549d359616b45f812ebd20f0f024`  
+		Last Modified: Wed, 21 Dec 2022 20:06:05 GMT  
 		Size: 276.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:34f57534d09bf184069894643dcd7e9bb6c6f9b037b97603a6157d9e160ea421`  
-		Last Modified: Fri, 16 Dec 2022 00:25:25 GMT  
-		Size: 260.0 B  
+	-	`sha256:2b29ec6c0b006680b817c0b0206011a8bf092b3230bf5a3a365e832e6f2d42d9`  
+		Last Modified: Wed, 21 Dec 2022 20:06:05 GMT  
+		Size: 259.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98ca38a3cde39ecd033ca9a1fc04b7109142cd3433ddeeb2f9b317ba34d96e4f`  
-		Last Modified: Fri, 16 Dec 2022 00:25:25 GMT  
-		Size: 5.1 KB (5130 bytes)  
+	-	`sha256:502e3cac45f6654a0966b5027dd7f38f8a141dbce9e1e473aadd3949ce9f3be8`  
+		Last Modified: Wed, 21 Dec 2022 20:06:05 GMT  
+		Size: 5.1 KB (5129 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `influxdb:2.6` - linux; arm64 variant v8
@@ -4798,7 +4798,7 @@ ENV DOCKER_INFLUXDB_INIT_CLI_CONFIG_NAME=default
 ## `influxdb:2.6.0`
 
 ```console
-$ docker pull influxdb@sha256:6efc621cc68615b71d807e910eacc377f6f50422de79085d03add16253dcf5a8
+$ docker pull influxdb@sha256:67f83def1b55d135e9092271775ee851d7a1a6233f2dad796204abeeb3ac4f48
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4809,104 +4809,104 @@ $ docker pull influxdb@sha256:6efc621cc68615b71d807e910eacc377f6f50422de79085d03
 ### `influxdb:2.6.0` - linux; amd64
 
 ```console
-$ docker pull influxdb@sha256:bca158ede8b68ae864b71935c518028b82a9c8802bad623cefe9df0a068ebd89
+$ docker pull influxdb@sha256:1d0d3d954f64be0f969735302de8f2ee8951c5a290f7569980d66bc9d0c4150c
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **168.9 MB (168874810 bytes)**  
+-	Total Size: **168.9 MB (168874752 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df1c226db87e0a435f23472b152ab184acbc42350f89803efab5952494c5809e`
+-	Image ID: `sha256:07bf7f6c2aa117f1e7eb1e4e4599cd508aa4fc991a7c73e4972d0a6d7e931aa8`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["influxd"]`
 
 ```dockerfile
-# Tue, 06 Dec 2022 01:21:05 GMT
-ADD file:00d8a84de32d523b936621886a10683664f38d8ec0846a60511fcf3a99d0e0c4 in / 
-# Tue, 06 Dec 2022 01:21:06 GMT
+# Wed, 21 Dec 2022 01:20:41 GMT
+ADD file:c865da7afcf35b5a9538e63633f7e99ae4c40933cb8a0235e9704713042fba66 in / 
+# Wed, 21 Dec 2022 01:20:42 GMT
 CMD ["bash"]
-# Tue, 06 Dec 2022 02:15:13 GMT
+# Wed, 21 Dec 2022 11:15:56 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 06 Dec 2022 02:15:21 GMT
+# Wed, 21 Dec 2022 11:16:03 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 06 Dec 2022 17:00:55 GMT
+# Wed, 21 Dec 2022 20:02:01 GMT
 RUN groupadd -r influxdb --gid=1000 &&     useradd -r -g influxdb --uid=1000 --home-dir=/home/influxdb --shell=/bin/bash influxdb &&     mkdir -p /home/influxdb &&     chown -R influxdb:influxdb /home/influxdb
-# Tue, 06 Dec 2022 17:00:55 GMT
+# Wed, 21 Dec 2022 20:02:01 GMT
 ENV GOSU_VER=1.12
-# Tue, 06 Dec 2022 17:00:58 GMT
+# Wed, 21 Dec 2022 20:02:05 GMT
 RUN set -eux;     dpkgArch="$(dpkg --print-architecture)" &&     wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VER/gosu-$dpkgArch" &&     wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VER/gosu-$dpkgArch.asc" &&     export GNUPGHOME="$(mktemp -d)" &&     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 &&     gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu &&     gpgconf --kill all &&     rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc &&     chmod +x /usr/local/bin/gosu &&     gosu --version &&     gosu nobody true
-# Fri, 16 Dec 2022 00:23:15 GMT
+# Wed, 21 Dec 2022 20:02:41 GMT
 ENV INFLUXDB_VERSION=2.6.0
-# Fri, 16 Dec 2022 00:23:21 GMT
+# Wed, 21 Dec 2022 20:02:48 GMT
 RUN set -eux &&     ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in         amd64) ARCH='amd64';;         arm64) ARCH='arm64';;         *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     wget --no-verbose https://dl.influxdata.com/influxdb/releases/influxdb2-${INFLUXDB_VERSION}-linux-${ARCH}.tar.gz.asc &&     wget --no-verbose https://dl.influxdata.com/influxdb/releases/influxdb2-${INFLUXDB_VERSION}-linux-${ARCH}.tar.gz &&     export GNUPGHOME="$(mktemp -d)" &&     echo "disable-ipv6" >> $GNUPGHOME/dirmngr.conf &&     gpg --batch --keyserver keys.openpgp.org --recv-keys 8C2D403D3C3BDB81A4C27C883C3E4B7317FFE40A &&     gpg --batch --verify influxdb2-${INFLUXDB_VERSION}-linux-${ARCH}.tar.gz.asc influxdb2-${INFLUXDB_VERSION}-linux-${ARCH}.tar.gz &&     tar xzf influxdb2-${INFLUXDB_VERSION}-linux-${ARCH}.tar.gz &&     cp influxdb2_linux_${ARCH}/influxd /usr/local/bin/influxd &&     gpgconf --kill all &&     rm -rf "$GNUPGHOME" influxdb2.key influxdb2-${INFLUXDB_VERSION}-linux-${ARCH}* &&     influxd version
-# Fri, 16 Dec 2022 00:23:21 GMT
+# Wed, 21 Dec 2022 20:02:48 GMT
 ENV INFLUX_CLI_VERSION=2.6.0
-# Fri, 16 Dec 2022 00:23:24 GMT
+# Wed, 21 Dec 2022 20:02:52 GMT
 RUN set -eux &&     ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in         amd64) ARCH='amd64';;         arm64) ARCH='arm64';;         *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     wget --no-verbose https://dl.influxdata.com/influxdb/releases/influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}.tar.gz.asc &&     wget --no-verbose https://dl.influxdata.com/influxdb/releases/influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}.tar.gz &&     export GNUPGHOME="$(mktemp -d)" &&     echo "disable-ipv6" >> $GNUPGHOME/dirmngr.conf &&     gpg --batch --keyserver keys.openpgp.org --recv-keys 8C2D403D3C3BDB81A4C27C883C3E4B7317FFE40A &&     gpg --batch --verify influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}.tar.gz.asc influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}.tar.gz &&     tar xzf influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}.tar.gz &&     cp influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}/influx /usr/local/bin/influx &&     gpgconf --kill all &&     rm -rf "$GNUPGHOME" influxdb2.key influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}* &&     influx version
-# Fri, 16 Dec 2022 00:23:25 GMT
+# Wed, 21 Dec 2022 20:02:52 GMT
 RUN mkdir /docker-entrypoint-initdb.d &&     mkdir -p /var/lib/influxdb2 &&     chown -R influxdb:influxdb /var/lib/influxdb2 &&     mkdir -p /etc/influxdb2 &&     chown -R influxdb:influxdb /etc/influxdb2
-# Fri, 16 Dec 2022 00:23:25 GMT
+# Wed, 21 Dec 2022 20:02:52 GMT
 VOLUME [/var/lib/influxdb2 /etc/influxdb2]
-# Fri, 16 Dec 2022 00:23:25 GMT
+# Wed, 21 Dec 2022 20:02:53 GMT
 COPY file:77129326da9464dfa98aab4911582df608de5d5bf6a6f6ed89619b704cac95bc in /etc/defaults/influxdb2/config.yml 
-# Fri, 16 Dec 2022 00:23:25 GMT
+# Wed, 21 Dec 2022 20:02:53 GMT
 COPY file:dbf3d010c7392537ae2b4c9b0d90a1ba01accd63948136585d5decc93bb52afc in /entrypoint.sh 
-# Fri, 16 Dec 2022 00:23:25 GMT
+# Wed, 21 Dec 2022 20:02:53 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 16 Dec 2022 00:23:25 GMT
+# Wed, 21 Dec 2022 20:02:53 GMT
 CMD ["influxd"]
-# Fri, 16 Dec 2022 00:23:26 GMT
+# Wed, 21 Dec 2022 20:02:53 GMT
 EXPOSE 8086
-# Fri, 16 Dec 2022 00:23:26 GMT
+# Wed, 21 Dec 2022 20:02:53 GMT
 ENV INFLUX_CONFIGS_PATH=/etc/influxdb2/influx-configs
-# Fri, 16 Dec 2022 00:23:26 GMT
+# Wed, 21 Dec 2022 20:02:53 GMT
 ENV INFLUXD_INIT_PORT=9999
-# Fri, 16 Dec 2022 00:23:26 GMT
+# Wed, 21 Dec 2022 20:02:53 GMT
 ENV INFLUXD_INIT_PING_ATTEMPTS=600
-# Fri, 16 Dec 2022 00:23:26 GMT
+# Wed, 21 Dec 2022 20:02:53 GMT
 ENV DOCKER_INFLUXDB_INIT_CLI_CONFIG_NAME=default
 ```
 
 -	Layers:
-	-	`sha256:620af4e91dbf80032eee9f1ff66a8b04119d7a329b2a13e007d69c8a0b337bf0`  
-		Last Modified: Tue, 06 Dec 2022 01:25:30 GMT  
-		Size: 50.4 MB (50448865 bytes)  
+	-	`sha256:c7c50787e2da71205402343dd1233b3ca6ebe70c7e790f6ba7d856b81b893200`  
+		Last Modified: Wed, 21 Dec 2022 01:24:55 GMT  
+		Size: 50.4 MB (50448893 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fae29f309a72482bf13fbb1a8f4889ab9107fcad0c9fda76586aa55445e93ded`  
-		Last Modified: Tue, 06 Dec 2022 02:22:49 GMT  
-		Size: 7.9 MB (7859378 bytes)  
+	-	`sha256:aff359114acb7d843de09375f87669fffb0abd1125c16f96431bc3c4173b48f8`  
+		Last Modified: Wed, 21 Dec 2022 11:22:32 GMT  
+		Size: 7.9 MB (7859309 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:28fca74d99b6532401bfe63d36e1bafb1ac839564d48aa4e6e0a6aa2706a4d12`  
-		Last Modified: Tue, 06 Dec 2022 02:22:49 GMT  
-		Size: 10.0 MB (10001409 bytes)  
+	-	`sha256:821dc261e045ba09851c52ed28be3b9ecc9fe8c923fba05854ab0fd2fa38ceca`  
+		Last Modified: Wed, 21 Dec 2022 11:22:32 GMT  
+		Size: 10.0 MB (10001385 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f72f7239d05382f875123b7701a9b8f046e57991ac382e3600cae19898be9ab`  
-		Last Modified: Tue, 06 Dec 2022 17:04:22 GMT  
-		Size: 1.8 KB (1806 bytes)  
+	-	`sha256:1ce0d350b4b4707d5ae574f46718bdba01e856caa4751da07db742c96cf3bf07`  
+		Last Modified: Wed, 21 Dec 2022 20:05:24 GMT  
+		Size: 1.8 KB (1805 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1b452aa99faf6a110eb189f03d75e819e130542d88549ff9683b32a72f9c1be1`  
-		Last Modified: Tue, 06 Dec 2022 17:04:22 GMT  
-		Size: 961.0 KB (960955 bytes)  
+	-	`sha256:1ea4dc0abfe6583740e64574c7b162187d05c4ee4f1c0bec4cdb86117bc9b6e0`  
+		Last Modified: Wed, 21 Dec 2022 20:05:24 GMT  
+		Size: 961.0 KB (960971 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:635166a7c0c120985669f335069fe29d36f8fcee4428f7fdd8ff5cdc86817957`  
-		Last Modified: Fri, 16 Dec 2022 00:25:36 GMT  
-		Size: 93.5 MB (93490547 bytes)  
+	-	`sha256:d83e615adbe8c6bb4bd09bbddbbc5bcaa8d1667641631c93cef05a3163234b3b`  
+		Last Modified: Wed, 21 Dec 2022 20:06:15 GMT  
+		Size: 93.5 MB (93490539 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8604ca7ede783db92247ea054bd3835357d16d60e0a89d07b13868ad8e8df786`  
-		Last Modified: Fri, 16 Dec 2022 00:25:26 GMT  
-		Size: 6.1 MB (6106184 bytes)  
+	-	`sha256:7b580b43c38e66659e4149a07ea4e0f0cf8c85825e377be2ed8426923ada5674`  
+		Last Modified: Wed, 21 Dec 2022 20:06:06 GMT  
+		Size: 6.1 MB (6106186 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9add9c5ef692a0519d4f8fc593c479aed010901de975280b780c2de72b885325`  
-		Last Modified: Fri, 16 Dec 2022 00:25:25 GMT  
+	-	`sha256:9c88d3b840f886d6d623ee7edcdb1d94cc35549d359616b45f812ebd20f0f024`  
+		Last Modified: Wed, 21 Dec 2022 20:06:05 GMT  
 		Size: 276.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:34f57534d09bf184069894643dcd7e9bb6c6f9b037b97603a6157d9e160ea421`  
-		Last Modified: Fri, 16 Dec 2022 00:25:25 GMT  
-		Size: 260.0 B  
+	-	`sha256:2b29ec6c0b006680b817c0b0206011a8bf092b3230bf5a3a365e832e6f2d42d9`  
+		Last Modified: Wed, 21 Dec 2022 20:06:05 GMT  
+		Size: 259.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98ca38a3cde39ecd033ca9a1fc04b7109142cd3433ddeeb2f9b317ba34d96e4f`  
-		Last Modified: Fri, 16 Dec 2022 00:25:25 GMT  
-		Size: 5.1 KB (5130 bytes)  
+	-	`sha256:502e3cac45f6654a0966b5027dd7f38f8a141dbce9e1e473aadd3949ce9f3be8`  
+		Last Modified: Wed, 21 Dec 2022 20:06:05 GMT  
+		Size: 5.1 KB (5129 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `influxdb:2.6.0` - linux; arm64 variant v8
@@ -5417,7 +5417,7 @@ ENV DOCKER_INFLUXDB_INIT_CLI_CONFIG_NAME=default
 ## `influxdb:data`
 
 ```console
-$ docker pull influxdb@sha256:5d8a14f894d50454dd27b62a219440d577c608dcc5efc3a50df19cbd74e0d52b
+$ docker pull influxdb@sha256:b8d023d1285c70cfebc10026dcb52ab0bf193e829c0889d75fdb49a2d409535a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5427,80 +5427,80 @@ $ docker pull influxdb@sha256:5d8a14f894d50454dd27b62a219440d577c608dcc5efc3a50d
 ### `influxdb:data` - linux; amd64
 
 ```console
-$ docker pull influxdb@sha256:8c28b446691639831f01f03e3e3ae472d6cf51d41012f5e2954a4a5a3adb0fb5
+$ docker pull influxdb@sha256:3b66c5c8ee6b2b8680349849451f0c84ac8346fe661404ed1130625ef7dec0a2
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **127.8 MB (127793429 bytes)**  
+-	Total Size: **127.8 MB (127774937 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ee7d723685c97cf7eb4980deaff6605bdc0d750becb4ce3eaa702dba866cffa8`
+-	Image ID: `sha256:df2be3f6981bd2b34e491930f37718182381a272da2f4747b43fd13be7ee3ec0`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["influxd"]`
 
 ```dockerfile
-# Tue, 06 Dec 2022 01:20:41 GMT
-ADD file:553d20b03d45305e58cde07e0c259421bba044155ac90b4559e5cc0b69093347 in / 
-# Tue, 06 Dec 2022 01:20:41 GMT
+# Wed, 21 Dec 2022 01:20:21 GMT
+ADD file:c13b430c8699df107ffd9ea5230b92238bc037a8e1cbbe35d6ab664941d575da in / 
+# Wed, 21 Dec 2022 01:20:22 GMT
 CMD ["bash"]
-# Tue, 06 Dec 2022 02:13:26 GMT
+# Wed, 21 Dec 2022 11:13:51 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 06 Dec 2022 02:13:31 GMT
+# Wed, 21 Dec 2022 11:13:58 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 06 Dec 2022 16:59:54 GMT
+# Wed, 21 Dec 2022 20:00:55 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     for key in         05CE15085FC09D18E99EFB22684A14CF2582E0C5 ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done
-# Tue, 06 Dec 2022 17:00:04 GMT
+# Wed, 21 Dec 2022 20:01:06 GMT
 ENV INFLUXDB_VERSION=1.8.10-c1.8.10
-# Tue, 06 Dec 2022 17:00:08 GMT
+# Wed, 21 Dec 2022 20:01:12 GMT
 RUN wget --no-verbose https://dl.influxdata.com/enterprise/releases/influxdb-data_${INFLUXDB_VERSION}_amd64.deb.asc &&     wget --no-verbose https://dl.influxdata.com/enterprise/releases/influxdb-data_${INFLUXDB_VERSION}_amd64.deb &&     gpg --batch --verify influxdb-data_${INFLUXDB_VERSION}_amd64.deb.asc influxdb-data_${INFLUXDB_VERSION}_amd64.deb &&     dpkg -i influxdb-data_${INFLUXDB_VERSION}_amd64.deb &&     rm -f influxdb-data_${INFLUXDB_VERSION}_amd64.deb*
-# Tue, 06 Dec 2022 17:00:08 GMT
+# Wed, 21 Dec 2022 20:01:13 GMT
 COPY file:bf2f42b62a32a7ee3ab93d9a5e451b7d59af1a97e40dc4a76b8aaf2f64383d7a in /etc/influxdb/influxdb.conf 
-# Tue, 06 Dec 2022 17:00:09 GMT
+# Wed, 21 Dec 2022 20:01:13 GMT
 EXPOSE 8086
-# Tue, 06 Dec 2022 17:00:09 GMT
+# Wed, 21 Dec 2022 20:01:13 GMT
 VOLUME [/var/lib/influxdb]
-# Tue, 06 Dec 2022 17:00:09 GMT
+# Wed, 21 Dec 2022 20:01:13 GMT
 COPY file:182a0176834db40043100d082d05e5aded9887c94b02416f6e3154c827c07360 in /entrypoint.sh 
-# Tue, 06 Dec 2022 17:00:09 GMT
+# Wed, 21 Dec 2022 20:01:13 GMT
 COPY file:e7af69cde81ffb6eddc175488941183d1244772c36c27b74751d54389fb71701 in /init-influxdb.sh 
-# Tue, 06 Dec 2022 17:00:09 GMT
+# Wed, 21 Dec 2022 20:01:13 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 06 Dec 2022 17:00:09 GMT
+# Wed, 21 Dec 2022 20:01:13 GMT
 CMD ["influxd"]
 ```
 
 -	Layers:
-	-	`sha256:f2f58072e9ed1aa1b0143341c5ee83815c00ce47548309fa240155067ab0e698`  
-		Last Modified: Tue, 06 Dec 2022 01:24:48 GMT  
-		Size: 55.0 MB (55041342 bytes)  
+	-	`sha256:32de3c850997ce03b6ff4ae8fb00b34b9d7d7f9a35bfcdb8538e22cc7b77c29d`  
+		Last Modified: Wed, 21 Dec 2022 01:24:10 GMT  
+		Size: 55.0 MB (55025166 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5c8cfbf51e6e6869f1af2a1e7067b07fd6733036a333c9d29f743b0285e26037`  
-		Last Modified: Tue, 06 Dec 2022 02:21:44 GMT  
-		Size: 5.2 MB (5164910 bytes)  
+	-	`sha256:fa1d4c8d85a4e064e50cea74d4aa848dc5fc275aef223fcc1f21fbdb1b5dd182`  
+		Last Modified: Wed, 21 Dec 2022 11:21:24 GMT  
+		Size: 5.2 MB (5163298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa3a609d15798d35c1484072876b7d22a316e98de6a097de33b9dade6a689cd1`  
-		Last Modified: Tue, 06 Dec 2022 02:21:44 GMT  
-		Size: 10.9 MB (10877423 bytes)  
+	-	`sha256:c796299bbbddc7aeada9539a4e7874a75fa2b6ff421f8d5ad40f227b40ab4d86`  
+		Last Modified: Wed, 21 Dec 2022 11:21:24 GMT  
+		Size: 10.9 MB (10876681 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98d38c4f1653f44b974d6db545ca56dffde5e7e6f73647fa98ad4556b8b84547`  
-		Last Modified: Tue, 06 Dec 2022 17:02:37 GMT  
-		Size: 2.9 KB (2897 bytes)  
+	-	`sha256:d5d3e05d16cd1d3c21c0c1001e437e4bcebc7d4a5deae70b54d55948d6d99ab0`  
+		Last Modified: Wed, 21 Dec 2022 20:03:41 GMT  
+		Size: 2.9 KB (2903 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae95131cb457a9ff37c6cc32fa694fe786421a433187e9df409879438e03ad45`  
-		Last Modified: Tue, 06 Dec 2022 17:03:01 GMT  
-		Size: 56.7 MB (56705082 bytes)  
+	-	`sha256:237578ced2c487cb6be41a98e661c8f75d953efdbac024482ee6b37bef8267e6`  
+		Last Modified: Wed, 21 Dec 2022 20:04:05 GMT  
+		Size: 56.7 MB (56705115 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b100dbabd0b6c04955eac9f232ac76885d708f02875c649bbf5d5ff6594b7c0c`  
-		Last Modified: Tue, 06 Dec 2022 17:02:54 GMT  
-		Size: 243.0 B  
+	-	`sha256:dc95bf8713df5bd0e84a26e388429a03fdc9518db60a1af74cdcbf165b8fe269`  
+		Last Modified: Wed, 21 Dec 2022 20:03:57 GMT  
+		Size: 242.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c0b46154af8ae949bc0eba50def161dd0207094c21b61fb3689dd8c6f1880d55`  
-		Last Modified: Tue, 06 Dec 2022 17:02:54 GMT  
-		Size: 252.0 B  
+	-	`sha256:d077efca810f9118484bf64834721e32fd40f5b177051c2b26fea3ddd1ed3188`  
+		Last Modified: Wed, 21 Dec 2022 20:03:57 GMT  
+		Size: 251.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f1ab112ff452ac9d0eb7ecaea0ce0a55c60fca45e6d029b72de217d14ff61a39`  
-		Last Modified: Tue, 06 Dec 2022 17:02:54 GMT  
-		Size: 1.3 KB (1280 bytes)  
+	-	`sha256:dc664d61eb087c3d1789223b39d7b8ba6cdc4250cdfdc67ccc2bd9f60db1c5c1`  
+		Last Modified: Wed, 21 Dec 2022 20:03:57 GMT  
+		Size: 1.3 KB (1281 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `influxdb:data-alpine`
@@ -5589,7 +5589,7 @@ CMD ["influxd"]
 ## `influxdb:latest`
 
 ```console
-$ docker pull influxdb@sha256:6efc621cc68615b71d807e910eacc377f6f50422de79085d03add16253dcf5a8
+$ docker pull influxdb@sha256:67f83def1b55d135e9092271775ee851d7a1a6233f2dad796204abeeb3ac4f48
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5600,104 +5600,104 @@ $ docker pull influxdb@sha256:6efc621cc68615b71d807e910eacc377f6f50422de79085d03
 ### `influxdb:latest` - linux; amd64
 
 ```console
-$ docker pull influxdb@sha256:bca158ede8b68ae864b71935c518028b82a9c8802bad623cefe9df0a068ebd89
+$ docker pull influxdb@sha256:1d0d3d954f64be0f969735302de8f2ee8951c5a290f7569980d66bc9d0c4150c
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **168.9 MB (168874810 bytes)**  
+-	Total Size: **168.9 MB (168874752 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df1c226db87e0a435f23472b152ab184acbc42350f89803efab5952494c5809e`
+-	Image ID: `sha256:07bf7f6c2aa117f1e7eb1e4e4599cd508aa4fc991a7c73e4972d0a6d7e931aa8`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["influxd"]`
 
 ```dockerfile
-# Tue, 06 Dec 2022 01:21:05 GMT
-ADD file:00d8a84de32d523b936621886a10683664f38d8ec0846a60511fcf3a99d0e0c4 in / 
-# Tue, 06 Dec 2022 01:21:06 GMT
+# Wed, 21 Dec 2022 01:20:41 GMT
+ADD file:c865da7afcf35b5a9538e63633f7e99ae4c40933cb8a0235e9704713042fba66 in / 
+# Wed, 21 Dec 2022 01:20:42 GMT
 CMD ["bash"]
-# Tue, 06 Dec 2022 02:15:13 GMT
+# Wed, 21 Dec 2022 11:15:56 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 06 Dec 2022 02:15:21 GMT
+# Wed, 21 Dec 2022 11:16:03 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 06 Dec 2022 17:00:55 GMT
+# Wed, 21 Dec 2022 20:02:01 GMT
 RUN groupadd -r influxdb --gid=1000 &&     useradd -r -g influxdb --uid=1000 --home-dir=/home/influxdb --shell=/bin/bash influxdb &&     mkdir -p /home/influxdb &&     chown -R influxdb:influxdb /home/influxdb
-# Tue, 06 Dec 2022 17:00:55 GMT
+# Wed, 21 Dec 2022 20:02:01 GMT
 ENV GOSU_VER=1.12
-# Tue, 06 Dec 2022 17:00:58 GMT
+# Wed, 21 Dec 2022 20:02:05 GMT
 RUN set -eux;     dpkgArch="$(dpkg --print-architecture)" &&     wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VER/gosu-$dpkgArch" &&     wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VER/gosu-$dpkgArch.asc" &&     export GNUPGHOME="$(mktemp -d)" &&     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 &&     gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu &&     gpgconf --kill all &&     rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc &&     chmod +x /usr/local/bin/gosu &&     gosu --version &&     gosu nobody true
-# Fri, 16 Dec 2022 00:23:15 GMT
+# Wed, 21 Dec 2022 20:02:41 GMT
 ENV INFLUXDB_VERSION=2.6.0
-# Fri, 16 Dec 2022 00:23:21 GMT
+# Wed, 21 Dec 2022 20:02:48 GMT
 RUN set -eux &&     ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in         amd64) ARCH='amd64';;         arm64) ARCH='arm64';;         *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     wget --no-verbose https://dl.influxdata.com/influxdb/releases/influxdb2-${INFLUXDB_VERSION}-linux-${ARCH}.tar.gz.asc &&     wget --no-verbose https://dl.influxdata.com/influxdb/releases/influxdb2-${INFLUXDB_VERSION}-linux-${ARCH}.tar.gz &&     export GNUPGHOME="$(mktemp -d)" &&     echo "disable-ipv6" >> $GNUPGHOME/dirmngr.conf &&     gpg --batch --keyserver keys.openpgp.org --recv-keys 8C2D403D3C3BDB81A4C27C883C3E4B7317FFE40A &&     gpg --batch --verify influxdb2-${INFLUXDB_VERSION}-linux-${ARCH}.tar.gz.asc influxdb2-${INFLUXDB_VERSION}-linux-${ARCH}.tar.gz &&     tar xzf influxdb2-${INFLUXDB_VERSION}-linux-${ARCH}.tar.gz &&     cp influxdb2_linux_${ARCH}/influxd /usr/local/bin/influxd &&     gpgconf --kill all &&     rm -rf "$GNUPGHOME" influxdb2.key influxdb2-${INFLUXDB_VERSION}-linux-${ARCH}* &&     influxd version
-# Fri, 16 Dec 2022 00:23:21 GMT
+# Wed, 21 Dec 2022 20:02:48 GMT
 ENV INFLUX_CLI_VERSION=2.6.0
-# Fri, 16 Dec 2022 00:23:24 GMT
+# Wed, 21 Dec 2022 20:02:52 GMT
 RUN set -eux &&     ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in         amd64) ARCH='amd64';;         arm64) ARCH='arm64';;         *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     wget --no-verbose https://dl.influxdata.com/influxdb/releases/influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}.tar.gz.asc &&     wget --no-verbose https://dl.influxdata.com/influxdb/releases/influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}.tar.gz &&     export GNUPGHOME="$(mktemp -d)" &&     echo "disable-ipv6" >> $GNUPGHOME/dirmngr.conf &&     gpg --batch --keyserver keys.openpgp.org --recv-keys 8C2D403D3C3BDB81A4C27C883C3E4B7317FFE40A &&     gpg --batch --verify influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}.tar.gz.asc influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}.tar.gz &&     tar xzf influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}.tar.gz &&     cp influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}/influx /usr/local/bin/influx &&     gpgconf --kill all &&     rm -rf "$GNUPGHOME" influxdb2.key influxdb2-client-${INFLUX_CLI_VERSION}-linux-${ARCH}* &&     influx version
-# Fri, 16 Dec 2022 00:23:25 GMT
+# Wed, 21 Dec 2022 20:02:52 GMT
 RUN mkdir /docker-entrypoint-initdb.d &&     mkdir -p /var/lib/influxdb2 &&     chown -R influxdb:influxdb /var/lib/influxdb2 &&     mkdir -p /etc/influxdb2 &&     chown -R influxdb:influxdb /etc/influxdb2
-# Fri, 16 Dec 2022 00:23:25 GMT
+# Wed, 21 Dec 2022 20:02:52 GMT
 VOLUME [/var/lib/influxdb2 /etc/influxdb2]
-# Fri, 16 Dec 2022 00:23:25 GMT
+# Wed, 21 Dec 2022 20:02:53 GMT
 COPY file:77129326da9464dfa98aab4911582df608de5d5bf6a6f6ed89619b704cac95bc in /etc/defaults/influxdb2/config.yml 
-# Fri, 16 Dec 2022 00:23:25 GMT
+# Wed, 21 Dec 2022 20:02:53 GMT
 COPY file:dbf3d010c7392537ae2b4c9b0d90a1ba01accd63948136585d5decc93bb52afc in /entrypoint.sh 
-# Fri, 16 Dec 2022 00:23:25 GMT
+# Wed, 21 Dec 2022 20:02:53 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 16 Dec 2022 00:23:25 GMT
+# Wed, 21 Dec 2022 20:02:53 GMT
 CMD ["influxd"]
-# Fri, 16 Dec 2022 00:23:26 GMT
+# Wed, 21 Dec 2022 20:02:53 GMT
 EXPOSE 8086
-# Fri, 16 Dec 2022 00:23:26 GMT
+# Wed, 21 Dec 2022 20:02:53 GMT
 ENV INFLUX_CONFIGS_PATH=/etc/influxdb2/influx-configs
-# Fri, 16 Dec 2022 00:23:26 GMT
+# Wed, 21 Dec 2022 20:02:53 GMT
 ENV INFLUXD_INIT_PORT=9999
-# Fri, 16 Dec 2022 00:23:26 GMT
+# Wed, 21 Dec 2022 20:02:53 GMT
 ENV INFLUXD_INIT_PING_ATTEMPTS=600
-# Fri, 16 Dec 2022 00:23:26 GMT
+# Wed, 21 Dec 2022 20:02:53 GMT
 ENV DOCKER_INFLUXDB_INIT_CLI_CONFIG_NAME=default
 ```
 
 -	Layers:
-	-	`sha256:620af4e91dbf80032eee9f1ff66a8b04119d7a329b2a13e007d69c8a0b337bf0`  
-		Last Modified: Tue, 06 Dec 2022 01:25:30 GMT  
-		Size: 50.4 MB (50448865 bytes)  
+	-	`sha256:c7c50787e2da71205402343dd1233b3ca6ebe70c7e790f6ba7d856b81b893200`  
+		Last Modified: Wed, 21 Dec 2022 01:24:55 GMT  
+		Size: 50.4 MB (50448893 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fae29f309a72482bf13fbb1a8f4889ab9107fcad0c9fda76586aa55445e93ded`  
-		Last Modified: Tue, 06 Dec 2022 02:22:49 GMT  
-		Size: 7.9 MB (7859378 bytes)  
+	-	`sha256:aff359114acb7d843de09375f87669fffb0abd1125c16f96431bc3c4173b48f8`  
+		Last Modified: Wed, 21 Dec 2022 11:22:32 GMT  
+		Size: 7.9 MB (7859309 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:28fca74d99b6532401bfe63d36e1bafb1ac839564d48aa4e6e0a6aa2706a4d12`  
-		Last Modified: Tue, 06 Dec 2022 02:22:49 GMT  
-		Size: 10.0 MB (10001409 bytes)  
+	-	`sha256:821dc261e045ba09851c52ed28be3b9ecc9fe8c923fba05854ab0fd2fa38ceca`  
+		Last Modified: Wed, 21 Dec 2022 11:22:32 GMT  
+		Size: 10.0 MB (10001385 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f72f7239d05382f875123b7701a9b8f046e57991ac382e3600cae19898be9ab`  
-		Last Modified: Tue, 06 Dec 2022 17:04:22 GMT  
-		Size: 1.8 KB (1806 bytes)  
+	-	`sha256:1ce0d350b4b4707d5ae574f46718bdba01e856caa4751da07db742c96cf3bf07`  
+		Last Modified: Wed, 21 Dec 2022 20:05:24 GMT  
+		Size: 1.8 KB (1805 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1b452aa99faf6a110eb189f03d75e819e130542d88549ff9683b32a72f9c1be1`  
-		Last Modified: Tue, 06 Dec 2022 17:04:22 GMT  
-		Size: 961.0 KB (960955 bytes)  
+	-	`sha256:1ea4dc0abfe6583740e64574c7b162187d05c4ee4f1c0bec4cdb86117bc9b6e0`  
+		Last Modified: Wed, 21 Dec 2022 20:05:24 GMT  
+		Size: 961.0 KB (960971 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:635166a7c0c120985669f335069fe29d36f8fcee4428f7fdd8ff5cdc86817957`  
-		Last Modified: Fri, 16 Dec 2022 00:25:36 GMT  
-		Size: 93.5 MB (93490547 bytes)  
+	-	`sha256:d83e615adbe8c6bb4bd09bbddbbc5bcaa8d1667641631c93cef05a3163234b3b`  
+		Last Modified: Wed, 21 Dec 2022 20:06:15 GMT  
+		Size: 93.5 MB (93490539 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8604ca7ede783db92247ea054bd3835357d16d60e0a89d07b13868ad8e8df786`  
-		Last Modified: Fri, 16 Dec 2022 00:25:26 GMT  
-		Size: 6.1 MB (6106184 bytes)  
+	-	`sha256:7b580b43c38e66659e4149a07ea4e0f0cf8c85825e377be2ed8426923ada5674`  
+		Last Modified: Wed, 21 Dec 2022 20:06:06 GMT  
+		Size: 6.1 MB (6106186 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9add9c5ef692a0519d4f8fc593c479aed010901de975280b780c2de72b885325`  
-		Last Modified: Fri, 16 Dec 2022 00:25:25 GMT  
+	-	`sha256:9c88d3b840f886d6d623ee7edcdb1d94cc35549d359616b45f812ebd20f0f024`  
+		Last Modified: Wed, 21 Dec 2022 20:06:05 GMT  
 		Size: 276.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:34f57534d09bf184069894643dcd7e9bb6c6f9b037b97603a6157d9e160ea421`  
-		Last Modified: Fri, 16 Dec 2022 00:25:25 GMT  
-		Size: 260.0 B  
+	-	`sha256:2b29ec6c0b006680b817c0b0206011a8bf092b3230bf5a3a365e832e6f2d42d9`  
+		Last Modified: Wed, 21 Dec 2022 20:06:05 GMT  
+		Size: 259.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98ca38a3cde39ecd033ca9a1fc04b7109142cd3433ddeeb2f9b317ba34d96e4f`  
-		Last Modified: Fri, 16 Dec 2022 00:25:25 GMT  
-		Size: 5.1 KB (5130 bytes)  
+	-	`sha256:502e3cac45f6654a0966b5027dd7f38f8a141dbce9e1e473aadd3949ce9f3be8`  
+		Last Modified: Wed, 21 Dec 2022 20:06:05 GMT  
+		Size: 5.1 KB (5129 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `influxdb:latest` - linux; arm64 variant v8
@@ -5806,7 +5806,7 @@ ENV DOCKER_INFLUXDB_INIT_CLI_CONFIG_NAME=default
 ## `influxdb:meta`
 
 ```console
-$ docker pull influxdb@sha256:107920d3821003e1c1bdbed734785a929b05ba6e2e202dccd44e954bca53b020
+$ docker pull influxdb@sha256:a29aafcd859875db3d7a1305bc08047636f7da6c0d0693bce310a7ebdebf2892
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5816,74 +5816,74 @@ $ docker pull influxdb@sha256:107920d3821003e1c1bdbed734785a929b05ba6e2e202dccd4
 ### `influxdb:meta` - linux; amd64
 
 ```console
-$ docker pull influxdb@sha256:536141cb2fc369d3a3a239047bce1a8e3ce62742f3224c7c6275cbbebd69ec25
+$ docker pull influxdb@sha256:66b6208a988982f7d85bbe0767800de7b4e9a17abcb7473dc670fc221385e97f
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **94.5 MB (94499931 bytes)**  
+-	Total Size: **94.5 MB (94481454 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:09ceec4da767278293d67a5a1f4364babd005f6a8d176ea3f12e75c5f305bf5f`
+-	Image ID: `sha256:71fdddec88ff289dec24d20895c0b18865c0f575c318d001a6a0b631d5f96db0`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["influxd-meta"]`
 
 ```dockerfile
-# Tue, 06 Dec 2022 01:20:41 GMT
-ADD file:553d20b03d45305e58cde07e0c259421bba044155ac90b4559e5cc0b69093347 in / 
-# Tue, 06 Dec 2022 01:20:41 GMT
+# Wed, 21 Dec 2022 01:20:21 GMT
+ADD file:c13b430c8699df107ffd9ea5230b92238bc037a8e1cbbe35d6ab664941d575da in / 
+# Wed, 21 Dec 2022 01:20:22 GMT
 CMD ["bash"]
-# Tue, 06 Dec 2022 02:13:26 GMT
+# Wed, 21 Dec 2022 11:13:51 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 06 Dec 2022 02:13:31 GMT
+# Wed, 21 Dec 2022 11:13:58 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Tue, 06 Dec 2022 16:59:54 GMT
+# Wed, 21 Dec 2022 20:00:55 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     for key in         05CE15085FC09D18E99EFB22684A14CF2582E0C5 ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done
-# Tue, 06 Dec 2022 17:00:04 GMT
+# Wed, 21 Dec 2022 20:01:06 GMT
 ENV INFLUXDB_VERSION=1.8.10-c1.8.10
-# Tue, 06 Dec 2022 17:00:17 GMT
+# Wed, 21 Dec 2022 20:01:20 GMT
 RUN wget --no-verbose https://dl.influxdata.com/enterprise/releases/influxdb-meta_${INFLUXDB_VERSION}_amd64.deb.asc &&     wget --no-verbose https://dl.influxdata.com/enterprise/releases/influxdb-meta_${INFLUXDB_VERSION}_amd64.deb &&     gpg --batch --verify influxdb-meta_${INFLUXDB_VERSION}_amd64.deb.asc influxdb-meta_${INFLUXDB_VERSION}_amd64.deb &&     dpkg -i influxdb-meta_${INFLUXDB_VERSION}_amd64.deb &&     rm -f influxdb-meta_${INFLUXDB_VERSION}_amd64.deb*
-# Tue, 06 Dec 2022 17:00:17 GMT
+# Wed, 21 Dec 2022 20:01:21 GMT
 COPY file:5d8d1b0acfd7ca05cf6698246b28d240206fa448f4aa5ac839c9ad323adbeac2 in /etc/influxdb/influxdb-meta.conf 
-# Tue, 06 Dec 2022 17:00:17 GMT
+# Wed, 21 Dec 2022 20:01:21 GMT
 EXPOSE 8091
-# Tue, 06 Dec 2022 17:00:17 GMT
+# Wed, 21 Dec 2022 20:01:21 GMT
 VOLUME [/var/lib/influxdb]
-# Tue, 06 Dec 2022 17:00:17 GMT
+# Wed, 21 Dec 2022 20:01:21 GMT
 COPY file:126b1f7e41b4975cf2ce23037cf6a46253fb817023062317380c48ff5df47228 in /entrypoint.sh 
-# Tue, 06 Dec 2022 17:00:17 GMT
+# Wed, 21 Dec 2022 20:01:21 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 06 Dec 2022 17:00:17 GMT
+# Wed, 21 Dec 2022 20:01:21 GMT
 CMD ["influxd-meta"]
 ```
 
 -	Layers:
-	-	`sha256:f2f58072e9ed1aa1b0143341c5ee83815c00ce47548309fa240155067ab0e698`  
-		Last Modified: Tue, 06 Dec 2022 01:24:48 GMT  
-		Size: 55.0 MB (55041342 bytes)  
+	-	`sha256:32de3c850997ce03b6ff4ae8fb00b34b9d7d7f9a35bfcdb8538e22cc7b77c29d`  
+		Last Modified: Wed, 21 Dec 2022 01:24:10 GMT  
+		Size: 55.0 MB (55025166 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5c8cfbf51e6e6869f1af2a1e7067b07fd6733036a333c9d29f743b0285e26037`  
-		Last Modified: Tue, 06 Dec 2022 02:21:44 GMT  
-		Size: 5.2 MB (5164910 bytes)  
+	-	`sha256:fa1d4c8d85a4e064e50cea74d4aa848dc5fc275aef223fcc1f21fbdb1b5dd182`  
+		Last Modified: Wed, 21 Dec 2022 11:21:24 GMT  
+		Size: 5.2 MB (5163298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa3a609d15798d35c1484072876b7d22a316e98de6a097de33b9dade6a689cd1`  
-		Last Modified: Tue, 06 Dec 2022 02:21:44 GMT  
-		Size: 10.9 MB (10877423 bytes)  
+	-	`sha256:c796299bbbddc7aeada9539a4e7874a75fa2b6ff421f8d5ad40f227b40ab4d86`  
+		Last Modified: Wed, 21 Dec 2022 11:21:24 GMT  
+		Size: 10.9 MB (10876681 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98d38c4f1653f44b974d6db545ca56dffde5e7e6f73647fa98ad4556b8b84547`  
-		Last Modified: Tue, 06 Dec 2022 17:02:37 GMT  
-		Size: 2.9 KB (2897 bytes)  
+	-	`sha256:d5d3e05d16cd1d3c21c0c1001e437e4bcebc7d4a5deae70b54d55948d6d99ab0`  
+		Last Modified: Wed, 21 Dec 2022 20:03:41 GMT  
+		Size: 2.9 KB (2903 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:67bffb67fb84c28ccc643c0f0d4cca77a82c41907cb197d7e0b39f94cbe52301`  
-		Last Modified: Tue, 06 Dec 2022 17:03:16 GMT  
-		Size: 23.4 MB (23412788 bytes)  
+	-	`sha256:1b2a010b5dcfc2e3b0af2126c905d502623c566e27059f0f06398a27de82029f`  
+		Last Modified: Wed, 21 Dec 2022 20:04:20 GMT  
+		Size: 23.4 MB (23412834 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ae5240e9f29e22b23228ba9d3b5bcc5dbaf38983b4b0eda57af1b1e61cf065f`  
-		Last Modified: Tue, 06 Dec 2022 17:03:13 GMT  
-		Size: 196.0 B  
+	-	`sha256:4c9e8f1d231898e473998fe4a39ab26cdf5f4e58715a7fe311380c38f3460d92`  
+		Last Modified: Wed, 21 Dec 2022 20:04:17 GMT  
+		Size: 198.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9dd844b9be54263daf80ee9fabbd72b5b44aec54a2e7f5fbed25ecf25778b3c9`  
-		Last Modified: Tue, 06 Dec 2022 17:03:13 GMT  
-		Size: 375.0 B  
+	-	`sha256:40bfe205f10a0c42fb81e3317c3629829cf29fccabd20e5571f3880732a4d292`  
+		Last Modified: Wed, 21 Dec 2022 20:04:17 GMT  
+		Size: 374.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `influxdb:meta-alpine`
