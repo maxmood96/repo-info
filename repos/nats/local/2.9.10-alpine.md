@@ -1,9 +1,9 @@
-# `nats:2.9.9-alpine3.17`
+# `nats:2.9.10-alpine3.17`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b5e3b6d7d2a01e46a077c00066353ec8f59dd1f7812c8dd98a987f5250bbd6b3`
-- Created: `2022-12-08T20:34:55.115850779Z`
+- Image ID: `sha256:db02bd912a427b14954a4ade0ea6698fb1caa8a48a8da9aa53e12064c7c7c0c3`
+- Created: `2022-12-20T22:19:56.15361178Z`
 - Virtual Size: ~ 19.92 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Command: `["nats-server","--config","/etc/nats/nats-server.conf"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NATS_SERVER=2.9.9`
+  - `NATS_SERVER=2.9.10`
 
 ## `apk` (`.apk`-based packages)
 
@@ -120,16 +120,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20220614-r2 description:
+ca-certificates-20220614-r3 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20220614-r2 webpage:
+ca-certificates-20220614-r3 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20220614-r2 installed size:
+ca-certificates-20220614-r3 installed size:
 688 KiB
 
-ca-certificates-20220614-r2 license:
+ca-certificates-20220614-r3 license:
 MPL-2.0 AND MIT
 
 ```
