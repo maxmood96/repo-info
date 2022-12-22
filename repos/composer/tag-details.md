@@ -12,7 +12,10 @@
 -	[`composer:2.3.10`](#composer2310)
 -	[`composer:2.4`](#composer24)
 -	[`composer:2.4.4`](#composer244)
+-	[`composer:2.5`](#composer25)
+-	[`composer:2.5.0`](#composer250)
 -	[`composer:latest`](#composerlatest)
+-	[`composer:lts`](#composerlts)
 
 ## `composer:1`
 
@@ -9764,6 +9767,14 @@ CMD ["composer"]
 		Size: 126.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `composer:2.5`
+
+**does not exist** (yet?)
+
+## `composer:2.5.0`
+
+**does not exist** (yet?)
+
 ## `composer:latest`
 
 ```console
@@ -10738,3 +10749,7 @@ CMD ["composer"]
 		Last Modified: Thu, 08 Dec 2022 21:20:21 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `composer:lts`
+
+**does not exist** (yet?)
