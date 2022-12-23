@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7f30b5cf76969ed0bb4daaab735b75d184434fd14d9e16b9b48b489d1bcb7bdc`
-- Created: `2022-12-06T07:02:14.353689945Z`
+- Image ID: `sha256:20541cbb2cb1454e3836c081c246aaf6c41c38f9e0f5e43524b27652476bfa79`
+- Created: `2022-12-21T11:07:01.301669178Z`
 - Virtual Size: ~ 2.89 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2598,12 +2598,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/giflib/5.1.4-3+deb10u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/giflib/5.1.4-3+deb10u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `git=1:2.20.1-2+deb10u4`
+### `dpkg` source package: `git=1:2.20.1-2+deb10u6`
 
 Binary Packages:
 
-- `git=1:2.20.1-2+deb10u4`
-- `git-man=1:2.20.1-2+deb10u4`
+- `git=1:2.20.1-2+deb10u6`
+- `git-man=1:2.20.1-2+deb10u6`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -2626,13 +2626,20 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris git=1:2.20.1-2+deb10u6
+'http://deb.debian.org/debian-security/pool/updates/main/g/git/git_2.20.1-2%2bdeb10u6.dsc' git_2.20.1-2+deb10u6.dsc 2894 SHA256:e4693cb9f20d2a7061b43bb30224ee41d779d027e15785e85f8f67eddf4ee3ae
+'http://deb.debian.org/debian-security/pool/updates/main/g/git/git_2.20.1.orig.tar.xz' git_2.20.1.orig.tar.xz 5359872 SHA256:9d2e91e2faa2ea61ba0a70201d023b36f54d846314591a002c610ea2ab81c3e9
+'http://deb.debian.org/debian-security/pool/updates/main/g/git/git_2.20.1-2%2bdeb10u6.debian.tar.xz' git_2.20.1-2+deb10u6.debian.tar.xz 676232 SHA256:ce8c8cb4a3f420589aeb2ac244bab88316e34641c7a3efceb049d2854b54196b
+```
 
-- http://snapshot.debian.org/package/git/1:2.20.1-2+deb10u4/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/git/1:2.20.1-2+deb10u6/ (for browsing the source)
+- https://sources.debian.net/src/git/1:2.20.1-2+deb10u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/git/1:2.20.1-2+deb10u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gl2ps=1.4.0+dfsg1-2`
 
@@ -3930,11 +3937,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/lcms2/2.9-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/lcms2/2.9-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `leptonlib=1.76.0-1+deb10u1`
+### `dpkg` source package: `leptonlib=1.76.0-1+deb10u2`
 
 Binary Packages:
 
-- `liblept5=1.76.0-1+deb10u1`
+- `liblept5=1.76.0-1+deb10u2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3943,17 +3950,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris leptonlib=1.76.0-1+deb10u1
-'http://deb.debian.org/debian/pool/main/l/leptonlib/leptonlib_1.76.0-1%2bdeb10u1.dsc' leptonlib_1.76.0-1+deb10u1.dsc 2135 SHA256:6a5ecd2fd3e1d758b6e38d65a209a3db363d3309c39153485a37f6595037e60b
-'http://deb.debian.org/debian/pool/main/l/leptonlib/leptonlib_1.76.0.orig.tar.gz' leptonlib_1.76.0.orig.tar.gz 12436958 SHA256:5e9a33b7ce33ab39fb03cee5a7ec353b044670176303265d7c64d51539616857
-'http://deb.debian.org/debian/pool/main/l/leptonlib/leptonlib_1.76.0-1%2bdeb10u1.debian.tar.xz' leptonlib_1.76.0-1+deb10u1.debian.tar.xz 7932 SHA256:3dc370ff39359c9886c89f3f1059cf4d5627c6c42c4dba73aafca4dac98ae4fb
+$ apt-get source -qq --print-uris leptonlib=1.76.0-1+deb10u2
+'http://deb.debian.org/debian-security/pool/updates/main/l/leptonlib/leptonlib_1.76.0-1%2bdeb10u2.dsc' leptonlib_1.76.0-1+deb10u2.dsc 1976 SHA256:1cfe3aaa20f976a76ad1065b033b61cebb597715e60436b54109679ef5018a6e
+'http://deb.debian.org/debian-security/pool/updates/main/l/leptonlib/leptonlib_1.76.0.orig.tar.gz' leptonlib_1.76.0.orig.tar.gz 12436958 SHA256:5e9a33b7ce33ab39fb03cee5a7ec353b044670176303265d7c64d51539616857
+'http://deb.debian.org/debian-security/pool/updates/main/l/leptonlib/leptonlib_1.76.0-1%2bdeb10u2.debian.tar.xz' leptonlib_1.76.0-1+deb10u2.debian.tar.xz 9600 SHA256:7f48b6e88f08de0ab7b3e99660af69ce06d3a654824852558c05d0c56ed9e27f
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/leptonlib/1.76.0-1+deb10u1/ (for browsing the source)
-- https://sources.debian.net/src/leptonlib/1.76.0-1+deb10u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/leptonlib/1.76.0-1+deb10u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/leptonlib/1.76.0-1+deb10u2/ (for browsing the source)
+- https://sources.debian.net/src/leptonlib/1.76.0-1+deb10u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/leptonlib/1.76.0-1+deb10u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libaec=1.0.2-1`
 
@@ -8030,12 +8037,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/opencv/3.2.0+dfsg-6/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/opencv/3.2.0+dfsg-6/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openexr=2.2.1-4.1+deb10u1`
+### `dpkg` source package: `openexr=2.2.1-4.1+deb10u2`
 
 Binary Packages:
 
-- `libopenexr-dev=2.2.1-4.1+deb10u1`
-- `libopenexr23:amd64=2.2.1-4.1+deb10u1`
+- `libopenexr-dev=2.2.1-4.1+deb10u2`
+- `libopenexr23:amd64=2.2.1-4.1+deb10u2`
 
 Licenses: (parsed from: `/usr/share/doc/libopenexr-dev/copyright`, `/usr/share/doc/libopenexr23/copyright`)
 
@@ -8044,17 +8051,17 @@ Licenses: (parsed from: `/usr/share/doc/libopenexr-dev/copyright`, `/usr/share/d
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openexr=2.2.1-4.1+deb10u1
-'http://deb.debian.org/debian/pool/main/o/openexr/openexr_2.2.1-4.1%2bdeb10u1.dsc' openexr_2.2.1-4.1+deb10u1.dsc 2302 SHA256:bf813e2e7c6baedd9068c02301511b2d05f14e511c18db827b16eca6bd7d9478
-'http://deb.debian.org/debian/pool/main/o/openexr/openexr_2.2.1.orig.tar.gz' openexr_2.2.1.orig.tar.gz 18176639 SHA256:8f9a5af6131583404261931d9a5c83de0a425cb4b8b25ddab2b169fbf113aecd
-'http://deb.debian.org/debian/pool/main/o/openexr/openexr_2.2.1-4.1%2bdeb10u1.debian.tar.xz' openexr_2.2.1-4.1+deb10u1.debian.tar.xz 27212 SHA256:c991df0bf7582a9ce9ddf2294793c68e1b2f381d1bcc429eb8bfb914161dc47a
+$ apt-get source -qq --print-uris openexr=2.2.1-4.1+deb10u2
+'http://deb.debian.org/debian-security/pool/updates/main/o/openexr/openexr_2.2.1-4.1%2bdeb10u2.dsc' openexr_2.2.1-4.1+deb10u2.dsc 2453 SHA256:d0462492a4d2177d5510446ebaf058c16bbc735a4ce851a0bd864ac741bffa35
+'http://deb.debian.org/debian-security/pool/updates/main/o/openexr/openexr_2.2.1.orig.tar.gz' openexr_2.2.1.orig.tar.gz 18176639 SHA256:8f9a5af6131583404261931d9a5c83de0a425cb4b8b25ddab2b169fbf113aecd
+'http://deb.debian.org/debian-security/pool/updates/main/o/openexr/openexr_2.2.1-4.1%2bdeb10u2.debian.tar.xz' openexr_2.2.1-4.1+deb10u2.debian.tar.xz 37452 SHA256:76695ba4b3f11b3f56a1e98f23bf72040f0a1afcb012021fc3367ab194cf26fd
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openexr/2.2.1-4.1+deb10u1/ (for browsing the source)
-- https://sources.debian.net/src/openexr/2.2.1-4.1+deb10u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openexr/2.2.1-4.1+deb10u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openexr/2.2.1-4.1+deb10u2/ (for browsing the source)
+- https://sources.debian.net/src/openexr/2.2.1-4.1+deb10u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openexr/2.2.1-4.1+deb10u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openjpeg2=2.3.0-2+deb10u2`
 
