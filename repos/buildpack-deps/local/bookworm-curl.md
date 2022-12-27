@@ -620,19 +620,13 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `GPL-2+`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.21.12
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.21.12.dsc' dpkg_1.21.12.dsc 2965 SHA256:67f0e7b1264b045f318825516d8deabd4c15384d3fceef6f907527054640811e
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.21.12.tar.xz' dpkg_1.21.12.tar.xz 5148020 SHA256:ec7a0e29898f457ea21cc89826601059bce2433d2b4e578a38b2a66d8768559a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dpkg/1.21.12/
 
-- https://sources.debian.net/src/dpkg/1.21.12/ (for browsing the source)
-- https://sources.debian.net/src/dpkg/1.21.12/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dpkg/1.21.12/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `e2fsprogs=1.46.6~rc1-1`
 
@@ -987,20 +981,13 @@ Licenses: (parsed from: `/usr/share/doc/libkeyutils1/copyright`)
 - `LGPL-2`
 - `LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris keyutils=1.6.3-1
-'http://deb.debian.org/debian/pool/main/k/keyutils/keyutils_1.6.3-1.dsc' keyutils_1.6.3-1.dsc 2055 SHA256:2c0e828b11a4483b5d1c949384f77d49412559c9f6a7193a1321476830f742be
-'http://deb.debian.org/debian/pool/main/k/keyutils/keyutils_1.6.3.orig.tar.gz' keyutils_1.6.3.orig.tar.gz 137022 SHA256:a61d5706136ae4c05bd48f86186bcfdbd88dd8bd5107e3e195c924cfc1b39bb4
-'http://deb.debian.org/debian/pool/main/k/keyutils/keyutils_1.6.3-1.debian.tar.xz' keyutils_1.6.3-1.debian.tar.xz 13136 SHA256:e11ef757e2db97c8c5cd381cc29f3e5e125aa485f8446dc62777ba5a16678a63
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/keyutils/1.6.3-1/
 
-- https://sources.debian.net/src/keyutils/1.6.3-1/ (for browsing the source)
-- https://sources.debian.net/src/keyutils/1.6.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/keyutils/1.6.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `krb5=1.20.1-1`
 
@@ -1257,21 +1244,13 @@ Licenses: (parsed from: `/usr/share/doc/libksba8/copyright`)
 - `GPL-3`
 - `LGPL-2.1-or-later`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libksba=1.6.2-4
-'http://deb.debian.org/debian/pool/main/libk/libksba/libksba_1.6.2-4.dsc' libksba_1.6.2-4.dsc 2482 SHA256:10d4b48393c7e4df4517b47c1e96ee8dfea9b7b93237e25bb4d16d97860178a7
-'http://deb.debian.org/debian/pool/main/libk/libksba/libksba_1.6.2.orig.tar.bz2' libksba_1.6.2.orig.tar.bz2 667846 SHA256:fce01ccac59812bddadffacff017dac2e4762bdb6ebc6ffe06f6ed4f6192c971
-'http://deb.debian.org/debian/pool/main/libk/libksba/libksba_1.6.2.orig.tar.bz2.asc' libksba_1.6.2.orig.tar.bz2.asc 228 SHA256:f12b91764d619a9b2d66a7c49b2e5563c39f91bf3b0fbb6b7dc4a445a18878d6
-'http://deb.debian.org/debian/pool/main/libk/libksba/libksba_1.6.2-4.debian.tar.xz' libksba_1.6.2-4.debian.tar.xz 16052 SHA256:0e6a5919e45f8329ec0931a83f734676b17e39826dcdf5c569a92a824c890738
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libksba/1.6.2-4/
 
-- https://sources.debian.net/src/libksba/1.6.2-4/ (for browsing the source)
-- https://sources.debian.net/src/libksba/1.6.2-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libksba/1.6.2-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libmd=1.0.4-2`
 
@@ -2433,21 +2412,13 @@ Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`)
 - `permissive-nowarranty`
 - `probably-PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris xz-utils=5.2.9-0.0
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.2.9-0.0.dsc' xz-utils_5.2.9-0.0.dsc 2494 SHA256:7c036733f89fc466e85ed25bdd515c9f5523d525c45b0818e789632cd3c470fd
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.2.9.orig.tar.xz' xz-utils_5.2.9.orig.tar.xz 1290516 SHA256:287ef163e7e57561e9de590b2a9037457af24f03a46bbd12bf84f3263679e8d2
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.2.9.orig.tar.xz.asc' xz-utils_5.2.9.orig.tar.xz.asc 833 SHA256:e14b1eb3cb53320bae1eddbc6f70d6657a52be8078f0b0d24b36ab663ee2291b
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.2.9-0.0.debian.tar.xz' xz-utils_5.2.9-0.0.debian.tar.xz 30448 SHA256:5ff25eae43f977de51eeefa3fd174cea1da1aa5c89c783ee6e0561d272cd08e0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/xz-utils/5.2.9-0.0/
 
-- https://sources.debian.net/src/xz-utils/5.2.9-0.0/ (for browsing the source)
-- https://sources.debian.net/src/xz-utils/5.2.9-0.0/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/xz-utils/5.2.9-0.0/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `zlib=1:1.2.13.dfsg-1`
 

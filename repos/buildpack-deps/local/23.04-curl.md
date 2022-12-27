@@ -111,14 +111,9 @@ Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris audit=1:3.0.7-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_3.0.7-1ubuntu2.dsc' audit_3.0.7-1ubuntu2.dsc 2829 SHA512:9af66d0bac56f7f00162575016e4c238f90f7f21f7184bcf1702c4a1460c90b942c48f5fe95238b94557339d3aa81ee5e57d2e5d713bdeabf56a8cf4dfe3646c
-'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_3.0.7.orig.tar.gz' audit_3.0.7.orig.tar.gz 1180226 SHA512:b5662b32082fc2ac54e247aa0db5442d76afa30134ebba1d624a17004e9ccf6856bb75344af4ce9d9a0a66c03e1c6f18b7d45658d7df13ea71af0c8362e08d70
-'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_3.0.7-1ubuntu2.debian.tar.xz' audit_3.0.7-1ubuntu2.debian.tar.xz 18856 SHA512:3cc94205d095d6a719c54dbd6273a7b4b7c5451918659416929cfceedf7393c100f83e7eeebb900ff8ad0b373850d0da946afb178cc57805bac4ad46ecef5cc7
-```
 
 ### `dpkg` source package: `base-files=12.3ubuntu1`
 

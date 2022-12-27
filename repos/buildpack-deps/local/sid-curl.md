@@ -377,21 +377,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.86.0-2
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.86.0-2.dsc' curl_7.86.0-2.dsc 2955 SHA256:e72d957a9d2098eb568ab259938d8dc31fbb970cbdd40842cc3fcab2232078d2
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.86.0.orig.tar.gz' curl_7.86.0.orig.tar.gz 4232231 SHA256:3dfdd39ba95e18847965cd3051ea6d22586609d9011d91df7bc5521288987a82
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.86.0.orig.tar.gz.asc' curl_7.86.0.orig.tar.gz.asc 488 SHA256:8e31713d4513023e44a2034af660b2af6240a8501cadf153f96431cd34f5fc31
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.86.0-2.debian.tar.xz' curl_7.86.0-2.debian.tar.xz 40508 SHA256:1a555a414051a86677389ab912c9328da9b94a74940fd51e8378d17a5a0d3b61
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/7.86.0-2/
 
-- https://sources.debian.net/src/curl/7.86.0-2/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.86.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.86.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg-10`
 
@@ -607,21 +599,13 @@ Licenses: (parsed from: `/usr/share/doc/diffutils/copyright`)
 - `X11`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris diffutils=1:3.8-2
-'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.8-2.dsc' diffutils_3.8-2.dsc 1705 SHA256:d3d384cf02ac034f5fd09d17e74ff1c87782ddf519d78ac66bbc7df9113b3a17
-'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.8.orig.tar.xz' diffutils_3.8.orig.tar.xz 1585120 SHA256:a6bdd7d1b31266d11c4f4de6c1b748d4607ab0231af5188fc2533d0ae2438fec
-'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.8.orig.tar.xz.asc' diffutils_3.8.orig.tar.xz.asc 833 SHA256:500f423d0ffa8d28966d916ed5fc6b79fb160a20ed5cb74eeb1c94a30c340311
-'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.8-2.debian.tar.xz' diffutils_3.8-2.debian.tar.xz 14140 SHA256:e7f5371956deec9c11d84f4de44b1af95d07283817f4d579a7e6a415e52d0de2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/diffutils/1:3.8-2/
 
-- https://sources.debian.net/src/diffutils/1:3.8-2/ (for browsing the source)
-- https://sources.debian.net/src/diffutils/1:3.8-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/diffutils/1:3.8-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dpkg=1.21.12`
 
@@ -1118,20 +1102,13 @@ Licenses: (parsed from: `/usr/share/doc/libcap2/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libcap2=1:2.66-2
-'http://deb.debian.org/debian/pool/main/libc/libcap2/libcap2_2.66-2.dsc' libcap2_2.66-2.dsc 2204 SHA256:f305bfb2bfd0a087afab235680c91141276d5e605fb902c8fbebebe15bcbafb1
-'http://deb.debian.org/debian/pool/main/libc/libcap2/libcap2_2.66.orig.tar.xz' libcap2_2.66.orig.tar.xz 181592 SHA256:15c40ededb3003d70a283fe587a36b7d19c8b3b554e33f86129c059a4bb466b2
-'http://deb.debian.org/debian/pool/main/libc/libcap2/libcap2_2.66-2.debian.tar.xz' libcap2_2.66-2.debian.tar.xz 20136 SHA256:70d066d700a596e6382861a69f80430bff54f6193f2faf1f2ddf080686a8f61c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libcap2/1:2.66-2/
 
-- https://sources.debian.net/src/libcap2/1:2.66-2/ (for browsing the source)
-- https://sources.debian.net/src/libcap2/1:2.66-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libcap2/1:2.66-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libffi=3.4.4-1`
 
@@ -2203,20 +2180,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=252.3-2
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_252.3-2.dsc' systemd_252.3-2.dsc 6355 SHA256:e5d5ae02251a9bccd3bf55c7874e78794eb5e074dca7abe28a38b75980f22b2c
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_252.3.orig.tar.gz' systemd_252.3.orig.tar.gz 11750469 SHA256:7996edd41f26fc077164a2c778e0d187601dd98bac702b873a28a8948ad92331
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_252.3-2.debian.tar.xz' systemd_252.3-2.debian.tar.xz 167652 SHA256:9fc40f503ecf81a0ef1223dc8e2febd9d914491a3db09ac53770df36d9b604c0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/252.3-2/
 
-- https://sources.debian.net/src/systemd/252.3-2/ (for browsing the source)
-- https://sources.debian.net/src/systemd/252.3-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/252.3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.05-7`
 

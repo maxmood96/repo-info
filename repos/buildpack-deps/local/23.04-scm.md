@@ -150,14 +150,9 @@ Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris audit=1:3.0.7-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_3.0.7-1ubuntu2.dsc' audit_3.0.7-1ubuntu2.dsc 2829 SHA512:9af66d0bac56f7f00162575016e4c238f90f7f21f7184bcf1702c4a1460c90b942c48f5fe95238b94557339d3aa81ee5e57d2e5d713bdeabf56a8cf4dfe3646c
-'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_3.0.7.orig.tar.gz' audit_3.0.7.orig.tar.gz 1180226 SHA512:b5662b32082fc2ac54e247aa0db5442d76afa30134ebba1d624a17004e9ccf6856bb75344af4ce9d9a0a66c03e1c6f18b7d45658d7df13ea71af0c8362e08d70
-'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_3.0.7-1ubuntu2.debian.tar.xz' audit_3.0.7-1ubuntu2.debian.tar.xz 18856 SHA512:3cc94205d095d6a719c54dbd6273a7b4b7c5451918659416929cfceedf7393c100f83e7eeebb900ff8ad0b373850d0da946afb178cc57805bac4ad46ecef5cc7
-```
 
 ### `dpkg` source package: `base-files=12.3ubuntu1`
 
@@ -870,14 +865,13 @@ Licenses: (parsed from: `/usr/share/doc/libkeyutils1/copyright`)
 - `LGPL-2`
 - `LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris keyutils=1.6.3-1
-'http://archive.ubuntu.com/ubuntu/pool/main/k/keyutils/keyutils_1.6.3-1.dsc' keyutils_1.6.3-1.dsc 2055 SHA512:2993bdabc94a91fc0bfb56c6f3091a5d5ca677a050f771fffacf3e6ce39f52343c04d3ac3ec2e863c8fd98ba592ff12259bbd3634af018beae649b3363aff279
-'http://archive.ubuntu.com/ubuntu/pool/main/k/keyutils/keyutils_1.6.3.orig.tar.gz' keyutils_1.6.3.orig.tar.gz 137022 SHA512:f65965b8566037078b8eeffa66c6fdbe121c8c2bea7fa5bce04cf7ba5ccc50d5b48e51f4a67ca91e4d5d9a12469e7e3eb3036c920ab25e3feba6e93b4c149cf9
-'http://archive.ubuntu.com/ubuntu/pool/main/k/keyutils/keyutils_1.6.3-1.debian.tar.xz' keyutils_1.6.3-1.debian.tar.xz 13136 SHA512:3662ff7f0f6eff7aac57182e7d9a763f1be032e9bf700208754eaa96eed9aad74a757b8c63b36b352bd6bfcf29a9c4c0a702da545b13c3708e44755554a7537f
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/keyutils/1.6.3-1/
+
 
 ### `dpkg` source package: `krb5=1.20.1-1`
 
