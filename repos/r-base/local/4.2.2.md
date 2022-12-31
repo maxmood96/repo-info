@@ -723,19 +723,13 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`, `/usr/share/doc/dpkg-de
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.21.9
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.21.9.dsc' dpkg_1.21.9.dsc 2120 SHA256:065ee6146fecf372c587fd6f2083cda8704f9b3e20d1816f0972307cdee0c0ac
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.21.9.tar.xz' dpkg_1.21.9.tar.xz 5084044 SHA256:a0aba375625459260cbc89933a12b3188a713c840e3aaefc14bf2d9adee19642
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dpkg/1.21.9/
 
-- https://sources.debian.net/src/dpkg/1.21.9/ (for browsing the source)
-- https://sources.debian.net/src/dpkg/1.21.9/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dpkg/1.21.9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `e2fsprogs=1.46.6~rc1-1`
 
@@ -1000,20 +994,13 @@ Licenses: (parsed from: `/usr/share/doc/cpp-12/copyright`, `/usr/share/doc/g++-1
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-12=12.2.0-3
-'http://deb.debian.org/debian/pool/main/g/gcc-12/gcc-12_12.2.0-3.dsc' gcc-12_12.2.0-3.dsc 27405 SHA256:91bb536dffcba8c20f98301e49c94a8285dec74577a5a716b6626386915121e8
-'http://deb.debian.org/debian/pool/main/g/gcc-12/gcc-12_12.2.0.orig.tar.gz' gcc-12_12.2.0.orig.tar.gz 87090343 SHA256:b8298be16aeeb96a889c6afed0a8e2241b47452e89cc81fe65ea849d5c740fcb
-'http://deb.debian.org/debian/pool/main/g/gcc-12/gcc-12_12.2.0-3.debian.tar.xz' gcc-12_12.2.0-3.debian.tar.xz 1560484 SHA256:d84888d1b8202c730e05df60318734ac2d2821e624f5141f2bd9676bfb60a780
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-12/12.2.0-3/
 
-- https://sources.debian.net/src/gcc-12/12.2.0-3/ (for browsing the source)
-- https://sources.debian.net/src/gcc-12/12.2.0-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-12/12.2.0-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-defaults=1.201`
 
@@ -1544,20 +1531,13 @@ Licenses: (parsed from: `/usr/share/doc/libblas-dev/copyright`, `/usr/share/doc/
 - `BSD-3-clause`
 - `BSD-3-clause-intel`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lapack=3.10.1-2
-'http://deb.debian.org/debian/pool/main/l/lapack/lapack_3.10.1-2.dsc' lapack_3.10.1-2.dsc 3367 SHA256:3db463dfc464a3024a943d7b47bd36fff564a54881b551a5d6883a52398f044a
-'http://deb.debian.org/debian/pool/main/l/lapack/lapack_3.10.1.orig.tar.gz' lapack_3.10.1.orig.tar.gz 7632257 SHA256:cd005cd021f144d7d5f7f33c943942db9f03a28d110d6a3b80d718a295f7f714
-'http://deb.debian.org/debian/pool/main/l/lapack/lapack_3.10.1-2.debian.tar.xz' lapack_3.10.1-2.debian.tar.xz 27308 SHA256:921fb9bfaeea2dbf7e5948e501d206a5362667d58f1f50095e648cac7bdce65d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/lapack/3.10.1-2/
 
-- https://sources.debian.net/src/lapack/3.10.1-2/ (for browsing the source)
-- https://sources.debian.net/src/lapack/3.10.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lapack/3.10.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lattice=0.20-45-3`
 
@@ -4290,20 +4270,13 @@ Licenses: (parsed from: `/usr/share/doc/liblzma-dev/copyright`, `/usr/share/doc/
 - `permissive-nowarranty`
 - `probably-PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris xz-utils=5.2.7-0.1
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.2.7-0.1.dsc' xz-utils_5.2.7-0.1.dsc 2247 SHA256:9324b210c29b9a9e0ae510e98d160d3c22e043bceafc16df0321a910f5769457
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.2.7.orig.tar.xz' xz-utils_5.2.7.orig.tar.xz 1282620 SHA256:8712e9acb0b6b49a97d443458a3067dc5c08a025e02dc5f773176c51dd7cfc69
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.2.7-0.1.debian.tar.xz' xz-utils_5.2.7-0.1.debian.tar.xz 31540 SHA256:9cf41fbe4f0048b8553ad7b4085f90ee671b24da77b4f630b4a149fcc43f613e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/xz-utils/5.2.7-0.1/
 
-- https://sources.debian.net/src/xz-utils/5.2.7-0.1/ (for browsing the source)
-- https://sources.debian.net/src/xz-utils/5.2.7-0.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/xz-utils/5.2.7-0.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `zip=3.0-12`
 
