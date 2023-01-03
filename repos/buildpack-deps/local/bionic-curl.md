@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:456e15cabe7032a5754df53651bfa0d0977c7a3beeb577ae95887307b5e5279b`
-- Created: `2022-12-09T03:53:36.725340801Z`
+- Image ID: `sha256:ee827e1a0d0bc8086be9ad2a403723233bb9975134a399da9fb9f651cab07ff0`
+- Created: `2023-01-02T19:09:53.580889276Z`
 - Virtual Size: ~ 86.53 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1643,19 +1643,25 @@ $ apt-get source -qq --print-uris tar=1.29b-2ubuntu0.3
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.29b-2ubuntu0.3.debian.tar.xz' tar_1.29b-2ubuntu0.3.debian.tar.xz 35080 SHA512:4808285a3ea5903a7c61be297e2c2cb41654facd68397966a91ae5ebd2381e196cb159c2cec3bcf8f26b24d913764fd4d178670a324ca4daf8ee78050acd7cb2
 ```
 
-### `dpkg` source package: `tzdata=2022f-0ubuntu0.18.04.0`
+### `dpkg` source package: `tzdata=2022g-0ubuntu0.18.04`
 
 Binary Packages:
 
-- `tzdata=2022f-0ubuntu0.18.04.0`
+- `tzdata=2022g-0ubuntu0.18.04`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2022g-0ubuntu0.18.04
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022g-0ubuntu0.18.04.dsc' tzdata_2022g-0ubuntu0.18.04.dsc 2331 SHA512:d047ce6a7b961ec55a903adca7059cfe67640ab0640ee78802bc04353b15601338b99ab433b2990c2e77b7d68abd2497d622ac62c3717c3eefbc6ce4d8851753
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022g.orig.tar.gz' tzdata_2022g.orig.tar.gz 439731 SHA512:7f79394295e00e3a24ebdbf9af3bc454a65f432a93b517e7e96c7f9db9949f6f5fdae9892a9d3789ff44ae0eb1bfe4744d36976b4624659af951d26414f94e65
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022g.orig.tar.gz.asc' tzdata_2022g.orig.tar.gz.asc 833 SHA512:3474a05373ec4397e17133c54708e1f9efd1f1c5e7ee6945f0972809ceda2214cc4962238773818d04ab4f29dcdf0b3e87247ab19795d06a62b8769dd85cf76b
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022g-0ubuntu0.18.04.debian.tar.xz' tzdata_2022g-0ubuntu0.18.04.debian.tar.xz 107104 SHA512:212b0f1d601b4bcc358647e3465864a4ace022e3fa0257986b720ae08cf24ab9750a901ca654548a7f4ed19467b2445a5d8a24bfebf4b3a70c443d1dd721e2f1
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2018.09.18.1~18.04.2`
 

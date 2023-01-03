@@ -2323,21 +2323,13 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 - `permissive-like-automake-output`
 - `same-as-rest-of-p11kit`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris p11-kit=0.24.1-1
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.24.1-1.dsc' p11-kit_0.24.1-1.dsc 2501 SHA256:6d4336ed2799503c65dfb0518d623e3af46bac03e0e1a0ea9ce432044261d55b
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.24.1.orig.tar.xz' p11-kit_0.24.1.orig.tar.xz 838304 SHA256:d8be783efd5cd4ae534cee4132338e3f40f182c3205d23b200094ec85faaaef8
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.24.1.orig.tar.xz.asc' p11-kit_0.24.1.orig.tar.xz.asc 833 SHA256:48041a234bac05f70519b0d4727e78a129ea80a51baf92c7d419f80b7cbdf0ab
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.24.1-1.debian.tar.xz' p11-kit_0.24.1-1.debian.tar.xz 23200 SHA256:769674df62c3caeada0e5885a992302cbde63a81a09972bf6b78f8797ebc40bd
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/p11-kit/0.24.1-1/
 
-- https://sources.debian.net/src/p11-kit/0.24.1-1/ (for browsing the source)
-- https://sources.debian.net/src/p11-kit/0.24.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/p11-kit/0.24.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pam=1.5.2-5`
 
@@ -2497,20 +2489,13 @@ Licenses: (parsed from: `/usr/share/doc/libprocps8/copyright`, `/usr/share/doc/p
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris procps=2:3.3.17-7.1
-'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.17-7.1.dsc' procps_3.3.17-7.1.dsc 2144 SHA256:789aba0b71ce3985ac7c9fb2f80a7a66afc5924590dba241e0b345c64136511e
-'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.17.orig.tar.xz' procps_3.3.17.orig.tar.xz 1008428 SHA256:4518b3e7aafd34ec07d0063d250fd474999b20b200218c3ae56f5d2113f141b4
-'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.17-7.1.debian.tar.xz' procps_3.3.17-7.1.debian.tar.xz 29244 SHA256:7c2cd3d0f83b74adc202e463fbc55591538a1f2e1cc775ebaa7f5bf7be48949e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/procps/2:3.3.17-7.1/
 
-- https://sources.debian.net/src/procps/2:3.3.17-7.1/ (for browsing the source)
-- https://sources.debian.net/src/procps/2:3.3.17-7.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/procps/2:3.3.17-7.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3-defaults=3.10.6-1`
 

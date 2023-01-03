@@ -382,20 +382,13 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bash=5.2-2
-'http://deb.debian.org/debian/pool/main/b/bash/bash_5.2-2.dsc' bash_5.2-2.dsc 2296 SHA256:29d400729f7eef31fb181ffc3cf1d1099b3432f70da46dd702ae5872a5990efa
-'http://deb.debian.org/debian/pool/main/b/bash/bash_5.2.orig.tar.xz' bash_5.2.orig.tar.xz 5886100 SHA256:f358a087da1f0c754f814172d8cd0b012ea68086d7aadd4eabff92074aa575d8
-'http://deb.debian.org/debian/pool/main/b/bash/bash_5.2-2.debian.tar.xz' bash_5.2-2.debian.tar.xz 86508 SHA256:c4ea6d58fc2c50a6d34ea06522983eab47fc41345a34373c37f67eb3d89c853f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/bash/5.2-2/
 
-- https://sources.debian.net/src/bash/5.2-2/ (for browsing the source)
-- https://sources.debian.net/src/bash/5.2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/bash/5.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `binutils=2.39.50.20221208-5`
 
@@ -799,19 +792,13 @@ Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 
 - `BSD-2-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debconf=1.5.80
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.80.dsc' debconf_1.5.80.dsc 2035 SHA256:6ac0151d82a50c972d7d0aaa9aa23c987b2e12e0ae04b3ceb268582a532472e6
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.80.tar.xz' debconf_1.5.80.tar.xz 571240 SHA256:8b8609fa013cda12916736b82c108063c2c11755e7cc1be7f5a03f473f663d38
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debconf/1.5.80/
 
-- https://sources.debian.net/src/debconf/1.5.80/ (for browsing the source)
-- https://sources.debian.net/src/debconf/1.5.80/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debconf/1.5.80/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debian-archive-keyring=2021.1.1`
 
@@ -1300,19 +1287,13 @@ Licenses: (parsed from: `/usr/share/doc/cpp/copyright`, `/usr/share/doc/g++/copy
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-defaults=1.201
-'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.201.dsc' gcc-defaults_1.201.dsc 12548 SHA256:493633304c0964cb318dc76102982d78ae8ec3927f1c9616f562c09c5596472b
-'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.201.tar.xz' gcc-defaults_1.201.tar.xz 45172 SHA256:99ca9832d64c48f93d39703536ad8338d030e4cf1be67f17b238b7edc5ab8d80
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-defaults/1.201/
 
-- https://sources.debian.net/src/gcc-defaults/1.201/ (for browsing the source)
-- https://sources.debian.net/src/gcc-defaults/1.201/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-defaults/1.201/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gdbm=1.23-3`
 
@@ -4046,20 +4027,13 @@ Licenses: (parsed from: `/usr/share/doc/libmpc3/copyright`)
 
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mpclib3=1.2.1-2
-'http://deb.debian.org/debian/pool/main/m/mpclib3/mpclib3_1.2.1-2.dsc' mpclib3_1.2.1-2.dsc 1877 SHA256:49618c3d1fa07943af102e92e72a5c5be9da6f03ff71b4898f6f4ae4ddb92246
-'http://deb.debian.org/debian/pool/main/m/mpclib3/mpclib3_1.2.1.orig.tar.gz' mpclib3_1.2.1.orig.tar.gz 838731 SHA256:17503d2c395dfcf106b622dc142683c1199431d095367c6aacba6eec30340459
-'http://deb.debian.org/debian/pool/main/m/mpclib3/mpclib3_1.2.1-2.debian.tar.xz' mpclib3_1.2.1-2.debian.tar.xz 4460 SHA256:ad040d5e5150d396e38720df0748b5fce055972d17068551bd6eaa5478537076
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mpclib3/1.2.1-2/
 
-- https://sources.debian.net/src/mpclib3/1.2.1-2/ (for browsing the source)
-- https://sources.debian.net/src/mpclib3/1.2.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mpclib3/1.2.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mpdecimal=2.5.1-2`
 
@@ -4099,20 +4073,13 @@ Licenses: (parsed from: `/usr/share/doc/libmpfr6/copyright`)
 - `GFDL-1.2`
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mpfr4=4.1.0-3
-'http://deb.debian.org/debian/pool/main/m/mpfr4/mpfr4_4.1.0-3.dsc' mpfr4_4.1.0-3.dsc 1959 SHA256:6d2727cf53e788020f671a2cba644ff5dd4e28a2531e66c3ed32d98ce2b5bf4e
-'http://deb.debian.org/debian/pool/main/m/mpfr4/mpfr4_4.1.0.orig.tar.xz' mpfr4_4.1.0.orig.tar.xz 1525476 SHA256:0c98a3f1732ff6ca4ea690552079da9c597872d30e96ec28414ee23c95558a7f
-'http://deb.debian.org/debian/pool/main/m/mpfr4/mpfr4_4.1.0-3.debian.tar.xz' mpfr4_4.1.0-3.debian.tar.xz 12372 SHA256:b329dd24cba377ed4160c0819a5ec110e029fb52c93e9a141847d5ed2a2068e8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mpfr4/4.1.0-3/
 
-- https://sources.debian.net/src/mpfr4/4.1.0-3/ (for browsing the source)
-- https://sources.debian.net/src/mpfr4/4.1.0-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mpfr4/4.1.0-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mysql-defaults=1.0.8`
 
@@ -4623,20 +4590,13 @@ Licenses: (parsed from: `/usr/share/doc/libpcre2-16-0/copyright`, `/usr/share/do
 - `X11`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pcre2=10.40-3
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.40-3.dsc' pcre2_10.40-3.dsc 2302 SHA256:5bf89d8451b21377b879c010d297b30593565fa5ad2c6ab10966284b023a56bc
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.40.orig.tar.gz' pcre2_10.40.orig.tar.gz 2359622 SHA256:ded42661cab30ada2e72ebff9e725e745b4b16ce831993635136f2ef86177724
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.40-3.diff.gz' pcre2_10.40-3.diff.gz 7889 SHA256:e73ec04ac1b59b395a67d4248ba1b9e1f21fd414b802e0f997aeca78c4ffb384
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pcre2/10.40-3/
 
-- https://sources.debian.net/src/pcre2/10.40-3/ (for browsing the source)
-- https://sources.debian.net/src/pcre2/10.40-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pcre2/10.40-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `perl=5.36.0-6`
 
@@ -4862,19 +4822,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-defaults=3.10.6-3
-'http://deb.debian.org/debian/pool/main/p/python3-defaults/python3-defaults_3.10.6-3.dsc' python3-defaults_3.10.6-3.dsc 2342 SHA256:b89248fcabbd460111f9028c5b1c429c0ff282169b6fc379f1a25c5e0b73b64e
-'http://deb.debian.org/debian/pool/main/p/python3-defaults/python3-defaults_3.10.6-3.tar.gz' python3-defaults_3.10.6-3.tar.gz 145783 SHA256:de8677c6bea36d645f36422eeca6f96844e14ef811a09f712e43586f4a6a11e9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3-defaults/3.10.6-3/
 
-- https://sources.debian.net/src/python3-defaults/3.10.6-3/ (for browsing the source)
-- https://sources.debian.net/src/python3-defaults/3.10.6-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3-defaults/3.10.6-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3-stdlib-extensions=3.10.8-1`
 
@@ -5177,21 +5131,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.40.0-2
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.40.0-2.dsc' sqlite3_3.40.0-2.dsc 2487 SHA256:947608ffde4cebea07a17d69f02cdc0bcdb5394f90d27a7e0313d04293d98c4a
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.40.0.orig-www.tar.xz' sqlite3_3.40.0.orig-www.tar.xz 5820724 SHA256:68f6fe79b29e8827f5afca2253ca8003f223b493c0183da37ba6c5dd1d90b384
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.40.0.orig.tar.xz' sqlite3_3.40.0.orig.tar.xz 8024516 SHA256:bf128951764cef3cab199cd6b962cb373336743f9bb791c6bb03ac467de08333
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.40.0-2.debian.tar.xz' sqlite3_3.40.0-2.debian.tar.xz 30308 SHA256:cc75f5a93571f6f979b22868de070ffe711462e39a94c54d720f1261aa4e7c85
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sqlite3/3.40.0-2/
 
-- https://sources.debian.net/src/sqlite3/3.40.0-2/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.40.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.40.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `subversion=1.14.2-4`
 
@@ -5348,21 +5294,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2022f-1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2022f-1.dsc' tzdata_2022f-1.dsc 2205 SHA256:ba9398a31794bf68a9ab08edc1560b6fc41644db67381fa1044cc7bec71eaeb7
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2022f.orig.tar.gz' tzdata_2022f.orig.tar.gz 436352 SHA256:9990d71f675d212567b931fe8aae1cab7027f89fefb8a79d808a6933a67af000
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2022f.orig.tar.gz.asc' tzdata_2022f.orig.tar.gz.asc 833 SHA256:2788b16875bbb5f8ccd1343352ed9bcf7cb98393ea6ecb49f48bb938ffc88854
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2022f-1.debian.tar.xz' tzdata_2022f-1.debian.tar.xz 112140 SHA256:e0780bbc953d605a30da7627ac3fd3bd738ef23aa5cad08d346367f2ef372b33
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2022f-1/
 
-- https://sources.debian.net/src/tzdata/2022f-1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2022f-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2022f-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0043`
 
