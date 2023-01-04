@@ -1,7 +1,7 @@
 ## `pypy:2-7-bullseye`
 
 ```console
-$ docker pull pypy@sha256:f60322269fc2ebae4248fa275514fa4c77d9365b877ffc4066f7cfd1a73500a3
+$ docker pull pypy@sha256:9fc1ab3a31d5d5073c21ff2005ba8dbb70ff267a77387f90032b0d26cff381db
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13,14 +13,14 @@ $ docker pull pypy@sha256:f60322269fc2ebae4248fa275514fa4c77d9365b877ffc4066f7cf
 ### `pypy:2-7-bullseye` - linux; amd64
 
 ```console
-$ docker pull pypy@sha256:bf1d8b05bf16c42b136d730e2b969f7f855d5ca392e5fbe2a73f9e5bb6cea8cf
+$ docker pull pypy@sha256:2ac3e84c64617b864d01cd0a99bf14d00692fde44e08947e9e1e6656e447054a
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **358.9 MB (358858724 bytes)**  
+-	Total Size: **358.9 MB (358862698 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0ccc509ea356360cf2754f39a4106ac4bfc225b55f6e0031285f6deb723f6fd8`
+-	Image ID: `sha256:06012fb377ac562f2c6753093cf536012ea7a40208fd54f42fd9827b8451638c`
 -	Default Command: `["pypy"]`
 
 ```dockerfile
@@ -42,17 +42,17 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tcl
 ENV LANG=C.UTF-8
 # Wed, 21 Dec 2022 12:25:23 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Dec 2022 12:25:23 GMT
-ENV PYPY_VERSION=7.3.10
-# Wed, 21 Dec 2022 12:31:33 GMT
-RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.10-linux64.tar.bz2'; 			sha256='461fb6df524208af9e94ffb16989f628b585bdb4b9e97d81e668899fc3a064a3'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.10-aarch64.tar.bz2'; 			sha256='274342f0e75e99d60ba7a0cfb0e13792e7664163e01450d2f7f2f7825603a0ae'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.10-linux32.tar.bz2'; 			sha256='0b17132f62d2a0c3c4572c57eb53820f25611afad71f3d6a310202942baed6e1'; 			;; 		's390x') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.10-s390x.tar.bz2'; 			sha256='0fac1ec1e05c70941f758be05d40ce7ffe6a42c0416e70b55d40a7523e3e70ae'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libexpat1 		libncurses5 		libncursesw6 		libsqlite3-0 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy' /usr/local/bin/; 		pypy --version; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy --version; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +
-# Wed, 21 Dec 2022 12:31:33 GMT
+# Wed, 04 Jan 2023 01:38:46 GMT
+ENV PYPY_VERSION=7.3.11
+# Wed, 04 Jan 2023 01:44:38 GMT
+RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.11-linux64.tar.bz2'; 			sha256='ba8ed958a905c0735a4cfff2875c25089954dc020e087d982b0ffa5b9da316cd'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.11-aarch64.tar.bz2'; 			sha256='ea924da1defe9325ef760e288b04f984614e405580f5321eb6a5c8f539bd415a'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.11-linux32.tar.bz2'; 			sha256='30fd245fab7068c96a75b9ff1323ac55174c64fc8c4751cceb4b7a9bedc1851e'; 			;; 		's390x') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.11-s390x.tar.bz2'; 			sha256='8fe9481c473178e53266983678684a70fe0c42bafc95f1807bf3ef28770316d4'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libexpat1 		libncurses5 		libncursesw6 		libsqlite3-0 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy' /usr/local/bin/; 		pypy --version; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy --version; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +
+# Wed, 04 Jan 2023 01:44:38 GMT
 ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/3843bff3a0a61da5b63ea0b7d34794c5c51a2f11/get-pip.py
-# Wed, 21 Dec 2022 12:31:33 GMT
+# Wed, 04 Jan 2023 01:44:39 GMT
 ENV PYTHON_GET_PIP_SHA256=95c5ee602b2f3cc50ae053d716c3c89bea62c58568f64d7d25924d399b2d5218
-# Wed, 21 Dec 2022 12:31:39 GMT
+# Wed, 04 Jan 2023 01:44:44 GMT
 RUN set -ex; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum --check --strict -; 		pipVersion="$(pypy -c 'import ensurepip; print(ensurepip._PIP_VERSION)')"; 	setuptoolsVersion="$(pypy -c 'import ensurepip; print(ensurepip._SETUPTOOLS_VERSION)')"; 		pypy get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip == $pipVersion" 		"setuptools == $setuptoolsVersion" 	; 	pip --version; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Wed, 21 Dec 2022 12:31:39 GMT
+# Wed, 04 Jan 2023 01:44:44 GMT
 CMD ["pypy"]
 ```
 
@@ -81,26 +81,26 @@ CMD ["pypy"]
 		Last Modified: Wed, 21 Dec 2022 12:34:42 GMT  
 		Size: 3.2 MB (3210677 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1727ea225f2175c0415561c3f05848967b7ec91ea211397de7f8fbf52eb12577`  
-		Last Modified: Wed, 21 Dec 2022 12:38:23 GMT  
-		Size: 31.2 MB (31224601 bytes)  
+	-	`sha256:5e714d96ffed218e69b8c62b4ca6e1c63ddec9f3b936cc8a930f708147187525`  
+		Last Modified: Wed, 04 Jan 2023 01:51:44 GMT  
+		Size: 31.2 MB (31228561 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed84b91a43e219e9bd918456add56adbb2da6b8ce881b1aa494fcdfcfb740730`  
-		Last Modified: Wed, 21 Dec 2022 12:38:18 GMT  
-		Size: 1.9 MB (1896552 bytes)  
+	-	`sha256:2c1338f8107f604297c8e312e167b2d6f867d99b366091c4e200ccf24131ea7e`  
+		Last Modified: Wed, 04 Jan 2023 01:51:39 GMT  
+		Size: 1.9 MB (1896566 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `pypy:2-7-bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull pypy@sha256:d06226fc819e7c45256cc8eb2829a89d7b3c6113bd3dc109c7856f54136731fc
+$ docker pull pypy@sha256:33f463a0ba667eba30bf7e7de9a543409d25df19142215f45dabe41f5b02076a
 ```
 
 -	Docker Version: 20.10.17
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **348.5 MB (348544607 bytes)**  
+-	Total Size: **348.6 MB (348553380 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1c1d198a2a4f73f983a1ef34dc9c4c5471663cea65f202b6773389f5bc5a3a45`
+-	Image ID: `sha256:bd43f5855fc3a879a3ea6e2c90bb61bb67966d649b6893e923ab70b4b7be72db`
 -	Default Command: `["pypy"]`
 
 ```dockerfile
@@ -122,17 +122,17 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tcl
 ENV LANG=C.UTF-8
 # Wed, 21 Dec 2022 08:18:56 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Dec 2022 08:18:56 GMT
-ENV PYPY_VERSION=7.3.10
-# Wed, 21 Dec 2022 08:24:14 GMT
-RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.10-linux64.tar.bz2'; 			sha256='461fb6df524208af9e94ffb16989f628b585bdb4b9e97d81e668899fc3a064a3'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.10-aarch64.tar.bz2'; 			sha256='274342f0e75e99d60ba7a0cfb0e13792e7664163e01450d2f7f2f7825603a0ae'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.10-linux32.tar.bz2'; 			sha256='0b17132f62d2a0c3c4572c57eb53820f25611afad71f3d6a310202942baed6e1'; 			;; 		's390x') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.10-s390x.tar.bz2'; 			sha256='0fac1ec1e05c70941f758be05d40ce7ffe6a42c0416e70b55d40a7523e3e70ae'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libexpat1 		libncurses5 		libncursesw6 		libsqlite3-0 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy' /usr/local/bin/; 		pypy --version; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy --version; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +
-# Wed, 21 Dec 2022 08:24:14 GMT
+# Wed, 04 Jan 2023 00:48:36 GMT
+ENV PYPY_VERSION=7.3.11
+# Wed, 04 Jan 2023 00:53:45 GMT
+RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.11-linux64.tar.bz2'; 			sha256='ba8ed958a905c0735a4cfff2875c25089954dc020e087d982b0ffa5b9da316cd'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.11-aarch64.tar.bz2'; 			sha256='ea924da1defe9325ef760e288b04f984614e405580f5321eb6a5c8f539bd415a'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.11-linux32.tar.bz2'; 			sha256='30fd245fab7068c96a75b9ff1323ac55174c64fc8c4751cceb4b7a9bedc1851e'; 			;; 		's390x') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.11-s390x.tar.bz2'; 			sha256='8fe9481c473178e53266983678684a70fe0c42bafc95f1807bf3ef28770316d4'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libexpat1 		libncurses5 		libncursesw6 		libsqlite3-0 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy' /usr/local/bin/; 		pypy --version; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy --version; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +
+# Wed, 04 Jan 2023 00:53:45 GMT
 ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/3843bff3a0a61da5b63ea0b7d34794c5c51a2f11/get-pip.py
-# Wed, 21 Dec 2022 08:24:15 GMT
+# Wed, 04 Jan 2023 00:53:45 GMT
 ENV PYTHON_GET_PIP_SHA256=95c5ee602b2f3cc50ae053d716c3c89bea62c58568f64d7d25924d399b2d5218
-# Wed, 21 Dec 2022 08:24:20 GMT
+# Wed, 04 Jan 2023 00:53:51 GMT
 RUN set -ex; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum --check --strict -; 		pipVersion="$(pypy -c 'import ensurepip; print(ensurepip._PIP_VERSION)')"; 	setuptoolsVersion="$(pypy -c 'import ensurepip; print(ensurepip._SETUPTOOLS_VERSION)')"; 		pypy get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip == $pipVersion" 		"setuptools == $setuptoolsVersion" 	; 	pip --version; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Wed, 21 Dec 2022 08:24:20 GMT
+# Wed, 04 Jan 2023 00:53:51 GMT
 CMD ["pypy"]
 ```
 
@@ -161,26 +161,26 @@ CMD ["pypy"]
 		Last Modified: Wed, 21 Dec 2022 08:27:29 GMT  
 		Size: 3.2 MB (3214657 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b403e747b865521802614f41a004a39957dbb7a3e6fcae61de7e7e88aa5ff21`  
-		Last Modified: Wed, 21 Dec 2022 08:30:54 GMT  
-		Size: 29.2 MB (29242629 bytes)  
+	-	`sha256:f3db09870ffca21bc1b7fb50b8d469d119308692813d966857f317bd459749e5`  
+		Last Modified: Wed, 04 Jan 2023 01:00:35 GMT  
+		Size: 29.3 MB (29251426 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7f938f1ae5a19304315c179255c58029fbb24e13c447c4362ee73d4e13e0d8fd`  
-		Last Modified: Wed, 21 Dec 2022 08:30:50 GMT  
-		Size: 1.9 MB (1896617 bytes)  
+	-	`sha256:f5ec8eeaf0713a4cc1193d8fb2be47b79a0f88f70f067e40a3d85727edff7823`  
+		Last Modified: Wed, 04 Jan 2023 01:00:32 GMT  
+		Size: 1.9 MB (1896593 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `pypy:2-7-bullseye` - linux; 386
 
 ```console
-$ docker pull pypy@sha256:bb3cf3b22e43b95fe055a7c61e4db10bd28aac3fbb4eeaf5bd26b141c298a857
+$ docker pull pypy@sha256:68a74152c144536e44412846011803b82109b3e0fb4faaefc9a24c0dde89041d
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **360.1 MB (360101994 bytes)**  
+-	Total Size: **360.1 MB (360103297 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f442592facc1244f63f48ec740732df0ff809c760ac0f640b1f3c2c4d72e08af`
+-	Image ID: `sha256:7471a2da640641a5f299c6a7be0bbca0f11f608545be043fc7bf45d684dc6fe9`
 -	Default Command: `["pypy"]`
 
 ```dockerfile
@@ -202,17 +202,17 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tcl
 ENV LANG=C.UTF-8
 # Wed, 21 Dec 2022 21:19:33 GMT
 ENV PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Dec 2022 21:19:34 GMT
-ENV PYPY_VERSION=7.3.10
-# Wed, 21 Dec 2022 21:23:08 GMT
-RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.10-linux64.tar.bz2'; 			sha256='461fb6df524208af9e94ffb16989f628b585bdb4b9e97d81e668899fc3a064a3'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.10-aarch64.tar.bz2'; 			sha256='274342f0e75e99d60ba7a0cfb0e13792e7664163e01450d2f7f2f7825603a0ae'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.10-linux32.tar.bz2'; 			sha256='0b17132f62d2a0c3c4572c57eb53820f25611afad71f3d6a310202942baed6e1'; 			;; 		's390x') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.10-s390x.tar.bz2'; 			sha256='0fac1ec1e05c70941f758be05d40ce7ffe6a42c0416e70b55d40a7523e3e70ae'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libexpat1 		libncurses5 		libncursesw6 		libsqlite3-0 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy' /usr/local/bin/; 		pypy --version; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy --version; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +
-# Wed, 21 Dec 2022 21:23:09 GMT
+# Wed, 04 Jan 2023 00:43:27 GMT
+ENV PYPY_VERSION=7.3.11
+# Wed, 04 Jan 2023 00:50:51 GMT
+RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		'amd64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.11-linux64.tar.bz2'; 			sha256='ba8ed958a905c0735a4cfff2875c25089954dc020e087d982b0ffa5b9da316cd'; 			;; 		'arm64') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.11-aarch64.tar.bz2'; 			sha256='ea924da1defe9325ef760e288b04f984614e405580f5321eb6a5c8f539bd415a'; 			;; 		'i386') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.11-linux32.tar.bz2'; 			sha256='30fd245fab7068c96a75b9ff1323ac55174c64fc8c4751cceb4b7a9bedc1851e'; 			;; 		's390x') 			url='https://downloads.python.org/pypy/pypy2.7-v7.3.11-s390x.tar.bz2'; 			sha256='8fe9481c473178e53266983678684a70fe0c42bafc95f1807bf3ef28770316d4'; 			;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libexpat1 		libncurses5 		libncursesw6 		libsqlite3-0 	; 		wget -O pypy.tar.bz2 "$url" --progress=dot:giga; 	echo "$sha256 *pypy.tar.bz2" | sha256sum --check --strict -; 	mkdir /opt/pypy; 	tar -xjC /opt/pypy --strip-components=1 -f pypy.tar.bz2; 	find /opt/pypy/lib* -depth -type d -a \( -name test -o -name tests \) -exec rm -rf '{}' +; 	rm pypy.tar.bz2; 		ln -sv '/opt/pypy/bin/pypy' /usr/local/bin/; 		pypy --version; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /opt/pypy -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 	pypy --version; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +
+# Wed, 04 Jan 2023 00:50:51 GMT
 ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/3843bff3a0a61da5b63ea0b7d34794c5c51a2f11/get-pip.py
-# Wed, 21 Dec 2022 21:23:10 GMT
+# Wed, 04 Jan 2023 00:50:52 GMT
 ENV PYTHON_GET_PIP_SHA256=95c5ee602b2f3cc50ae053d716c3c89bea62c58568f64d7d25924d399b2d5218
-# Wed, 21 Dec 2022 21:23:17 GMT
+# Wed, 04 Jan 2023 00:51:01 GMT
 RUN set -ex; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum --check --strict -; 		pipVersion="$(pypy -c 'import ensurepip; print(ensurepip._PIP_VERSION)')"; 	setuptoolsVersion="$(pypy -c 'import ensurepip; print(ensurepip._SETUPTOOLS_VERSION)')"; 		pypy get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip == $pipVersion" 		"setuptools == $setuptoolsVersion" 	; 	pip --version; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Wed, 21 Dec 2022 21:23:18 GMT
+# Wed, 04 Jan 2023 00:51:02 GMT
 CMD ["pypy"]
 ```
 
@@ -241,11 +241,11 @@ CMD ["pypy"]
 		Last Modified: Wed, 21 Dec 2022 21:27:39 GMT  
 		Size: 3.1 MB (3119927 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa10437d0e4ec09d63e002f01476f89b044793f3e06f6c3094f9740508940297`  
-		Last Modified: Wed, 21 Dec 2022 21:30:00 GMT  
-		Size: 27.0 MB (27046892 bytes)  
+	-	`sha256:fc17b7ed6288cb03e2de21d3cd8c7f10ba2bddf647c3d5d85795d4049fdcdbc5`  
+		Last Modified: Wed, 04 Jan 2023 01:01:07 GMT  
+		Size: 27.0 MB (27048178 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3844e216832b65a70355d80e7f6cb0ea2b870ed3813b08920e80e84515f6a5eb`  
-		Last Modified: Wed, 21 Dec 2022 21:29:56 GMT  
-		Size: 1.9 MB (1895801 bytes)  
+	-	`sha256:1ccbe04fbbddfbf4520ec3865d52e3f54da6edcfb358372ec3873e127201a588`  
+		Last Modified: Wed, 04 Jan 2023 01:01:04 GMT  
+		Size: 1.9 MB (1895818 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
