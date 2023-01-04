@@ -1,17 +1,17 @@
-# `pypy:3.9-7.3.10-bullseye`
+# `pypy:3.9-7.3.11-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:eb0cbe4b544faffed97777ada0be11a80f072815225830b57e98eed4a8b1caed`
-- Created: `2022-12-21T12:25:52.367649395Z`
-- Virtual Size: ~ 964.57 Mb  
+- Image ID: `sha256:8b58dd33948ea61258bd30c3cfe2368d0f8f20712290f8e8bfbe6f934f0752a4`
+- Created: `2023-01-04T01:39:15.572877673Z`
+- Virtual Size: ~ 964.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["pypy3"]`
 - Environment:
   - `PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `PYPY_VERSION=7.3.10`
+  - `PYPY_VERSION=7.3.11`
   - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/3843bff3a0a61da5b63ea0b7d34794c5c51a2f11/get-pip.py`
   - `PYTHON_GET_PIP_SHA256=95c5ee602b2f3cc50ae053d716c3c89bea62c58568f64d7d25924d399b2d5218`
 
