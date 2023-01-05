@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ccbf87d199d9ae31685880df8f3a20e3fe2f7da415511b7c087b6c1a1255440e`
-- Created: `2022-12-05T21:36:05.453615568Z`
-- Virtual Size: ~ 188.91 Mb  
+- Image ID: `sha256:ea7c4a25c916d0bf33d2547370fa87840720f6953b4666b04f87df8320dd26f3`
+- Created: `2023-01-03T20:20:40.76901575Z`
+- Virtual Size: ~ 188.87 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 - Labels:
-  - `build-date=20221205`
+  - `build-date=20230103`
   - `name=SL7 Base Image`
   - `vendor=Scientific Linux`
 
@@ -1492,15 +1492,15 @@ $ dnf --quiet download --source --url tar-1.26-35.el7
 http://ftp.scientificlinux.org/linux/scientific/7/SRPMS/vendor/tar-1.26-35.el7.src.rpm
 ```
 
-### `rpm` package: `tzdata-2022f-1.el7.noarch`
+### `rpm` package: `tzdata-2022g-1.el7.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url tzdata-2022f-1.el7.noarch
-http://ftp.scientificlinux.org/linux/scientific/7/SRPMS/vendor/tzdata-2022f-1.el7.src.rpm
+$ dnf --quiet download --source --url tzdata-2022g-1.el7.noarch
+http://ftp.scientificlinux.org/linux/scientific/7/SRPMS/vendor/tzdata-2022g-1.el7.src.rpm
 ```
 
 ### `rpm` package: `ustr-1.0.4-16.el7.x86_64`
