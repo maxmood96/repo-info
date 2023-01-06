@@ -1212,15 +1212,9 @@ Licenses: (parsed from: `/usr/share/doc/libksba8/copyright`)
 - `GPL-3`
 - `LGPL-2.1-or-later`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libksba=1.6.0-3ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/libk/libksba/libksba_1.6.0-3ubuntu1.dsc' libksba_1.6.0-3ubuntu1.dsc 2579 SHA512:2d6d6db0f38ba285eec7c05ad67e7e3b3f51e35a449cb0870bcda55ee33cb40e708dd8a3a0183c61bf90fbaac6556d17d8b7d69b5cfe56cb941d4fa7986afe69
-'http://archive.ubuntu.com/ubuntu/pool/main/libk/libksba/libksba_1.6.0.orig.tar.bz2' libksba_1.6.0.orig.tar.bz2 662120 SHA512:a7c76d41dfd8ec6383ac2de3c53848cd9f066b538f6f3cd43175e3c8095df51b96d0a24a573481c0c4856b09b7c224e2b562d88f5c0801e7acfb582ea2739c2b
-'http://archive.ubuntu.com/ubuntu/pool/main/libk/libksba/libksba_1.6.0.orig.tar.bz2.asc' libksba_1.6.0.orig.tar.bz2.asc 228 SHA512:fc381ea66eefdb431a5248fa3ac0751d7343d7f99cc7ebf7621b0763e6e31a80b45c5e17b09bbc7c1c1154e6a0152af1f13798f64959ac63f50b789ec046d7a3
-'http://archive.ubuntu.com/ubuntu/pool/main/libk/libksba/libksba_1.6.0-3ubuntu1.debian.tar.xz' libksba_1.6.0-3ubuntu1.debian.tar.xz 15696 SHA512:dfecaabcac7442274de46813e54ba75f70ff6f34d78d2a388bf8d7551660d8c8f43609f92b9e5901fb99d94c07ac4e677fce612a8ccf5f55df9f0569f14335be
-```
 
 ### `dpkg` source package: `libmd=1.0.4-2`
 
@@ -1747,14 +1741,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.50.0-1
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.50.0-1.dsc' nghttp2_1.50.0-1.dsc 2508 SHA512:3aca7c713f69f74a705771dca5a5c3614ad747c8f854239a7463f81eb1f276f818ccd801218552db8bbca72bd3b5967d377c8545b9d394e21a0a18b8c3e7f493
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.50.0.orig.tar.gz' nghttp2_1.50.0.orig.tar.gz 3885952 SHA512:0bc98be2e61940d78e9542d5391cecc24177a6a55012fb0df10c875d0daf5c6b480d12f00ead85f6d971d20f20af3a55abe4c8593f68c67ef3f016e87675f563
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.50.0-1.debian.tar.xz' nghttp2_1.50.0-1.debian.tar.xz 12912 SHA512:a22eadb6e7eec5ca12ae6d091302cfa7f846abd0403adcfdab3d2b0638a1b2236f516f4e190fff48df9cb2ed2edd9e9102c2731ad6a854d1963381e789695755
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/nghttp2/1.50.0-1/
+
 
 ### `dpkg` source package: `npth=1.6-3build2`
 

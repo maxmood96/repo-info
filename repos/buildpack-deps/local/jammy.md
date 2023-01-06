@@ -483,15 +483,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.6
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.6.dsc' curl_7.81.0-1ubuntu1.6.dsc 3139 SHA512:f8dadc5d836c69d24bab3272d28aeca71d73a9c5a1aec5302043fd0bf1870423de694580c38954f09100268f3094d678bc82aabcaa0362e95ff6ab893d122d47
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz' curl_7.81.0.orig.tar.gz 4188040 SHA512:e3084f0fa083f7f93eac923edbfdddb5fd0a372b94673ba9d4427a2b95508898c15ecdf63b99a1c1f6cf3215e27b06cbaa2b7073df038d43b362e586f92495d3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz.asc' curl_7.81.0.orig.tar.gz.asc 488 SHA512:92bc5ede831551285d67b03abe8400c609ad31c9d33e324ee5c41b92dd5c2a0245a09a396bd76807b3e44bcfef944b1e16ac266264f7b85d27cc1c072a6e82bd
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.6.debian.tar.xz' curl_7.81.0-1ubuntu1.6.debian.tar.xz 53192 SHA512:88bd319a13c8594ac6cccdddb0b499e7e9554dee2b16cae63bf6e023f983f6939a3c43f686798a329166e45e3c5d29f6d0c31ed59d4ae17b998f86c486670a2d
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg2-3ubuntu1`
 
@@ -2183,15 +2177,9 @@ Licenses: (parsed from: `/usr/share/doc/libksba8/copyright`)
 - `GPL-3`
 - `LGPL-2.1-or-later`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libksba=1.6.0-2ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libk/libksba/libksba_1.6.0-2ubuntu0.1.dsc' libksba_1.6.0-2ubuntu0.1.dsc 2585 SHA512:a37a73c251d4eaa5aa47cdccf00eb1d1616d9acf0999c1ec46747482f367d513afd5fc087c10e40279cd81c6741ea914e5be7ddf80d299624be58e4a08375e9e
-'http://archive.ubuntu.com/ubuntu/pool/main/libk/libksba/libksba_1.6.0.orig.tar.bz2' libksba_1.6.0.orig.tar.bz2 662120 SHA512:a7c76d41dfd8ec6383ac2de3c53848cd9f066b538f6f3cd43175e3c8095df51b96d0a24a573481c0c4856b09b7c224e2b562d88f5c0801e7acfb582ea2739c2b
-'http://archive.ubuntu.com/ubuntu/pool/main/libk/libksba/libksba_1.6.0.orig.tar.bz2.asc' libksba_1.6.0.orig.tar.bz2.asc 228 SHA512:fc381ea66eefdb431a5248fa3ac0751d7343d7f99cc7ebf7621b0763e6e31a80b45c5e17b09bbc7c1c1154e6a0152af1f13798f64959ac63f50b789ec046d7a3
-'http://archive.ubuntu.com/ubuntu/pool/main/libk/libksba/libksba_1.6.0-2ubuntu0.1.debian.tar.xz' libksba_1.6.0-2ubuntu0.1.debian.tar.xz 15320 SHA512:91f69cc5f7ceaf2e638825d0e4c76b48ae35538c1a16e39dc8e922cc4cf8e91ebf7c40e19aa83d2ec87c227ae4cc8ea11f2e983c4b3a5648d7fbb04fc161cd36
-```
 
 ### `dpkg` source package: `liblqr=0.4.2-2.1`
 
@@ -3004,14 +2992,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.15.0-56.62
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-56.62.dsc' linux_5.15.0-56.62.dsc 7332 SHA512:25ad766e004797243ee2a5962a8ca6fa05b252f583c0f25e1f77c7666e6123b97001dc7ae25e68ca9d2906e7cd8043a11d2f91d1c184a41027ab3f28bb74b87a
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-56.62.diff.gz' linux_5.15.0-56.62.diff.gz 8350146 SHA512:6a6e30fde64b27b4c64413d65289e2c6c4055085ca081413f28ead49eb3e1a52335791b039ede953bafa880676497d6f8fc59eba1764841e09a7912be4cc83be
-```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu4`
 
