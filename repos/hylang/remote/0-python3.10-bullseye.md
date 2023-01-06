@@ -1,7 +1,7 @@
 ## `hylang:0-python3.10-bullseye`
 
 ```console
-$ docker pull hylang@sha256:903eb91192c0ebfbad46cce16f09ed27c5087a9abcba979a0653ea4a2e2b0d25
+$ docker pull hylang@sha256:219eaebff21cd2d8945499409ddf6282ede5dc4e8818f49391a994593f62e7d6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -18,14 +18,14 @@ $ docker pull hylang@sha256:903eb91192c0ebfbad46cce16f09ed27c5087a9abcba979a0653
 ### `hylang:0-python3.10-bullseye` - linux; amd64
 
 ```console
-$ docker pull hylang@sha256:91b9d476ab4df0765a32e87c4e081e671f9cf5bdf7dc67f2fc45683ec18d11a9
+$ docker pull hylang@sha256:68c7f31707470c0fc65e34e851504222881c94149fbd1c6cc868984bcaace991
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **52.1 MB (52061338 bytes)**  
+-	Total Size: **52.1 MB (52061258 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:45f364e3ddd07e0a52ec9eea4139c9792977f7b96622f447054a5a37a574a3e7`
+-	Image ID: `sha256:082d2a00a6b7f928d05ddd8889a8d3a8c4d7e04b016cbf1c7fe2ab61102629dd`
 -	Default Command: `["hy"]`
 
 ```dockerfile
@@ -49,23 +49,23 @@ RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get
 RUN set -eux; 	for src in idle3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "$src" "/usr/local/bin/$dst"; 	done
 # Wed, 21 Dec 2022 08:53:59 GMT
 ENV PYTHON_PIP_VERSION=22.3.1
-# Wed, 21 Dec 2022 08:53:59 GMT
-ENV PYTHON_SETUPTOOLS_VERSION=65.5.0
-# Wed, 21 Dec 2022 08:53:59 GMT
+# Fri, 06 Jan 2023 18:42:50 GMT
+ENV PYTHON_SETUPTOOLS_VERSION=65.5.1
+# Fri, 06 Jan 2023 18:42:50 GMT
 ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/66030fa03382b4914d4c4d0896961a0bdeeeb274/public/get-pip.py
-# Wed, 21 Dec 2022 08:53:59 GMT
+# Fri, 06 Jan 2023 18:42:50 GMT
 ENV PYTHON_GET_PIP_SHA256=1e501cf004eac1b7eb1f97266d28f995ae835d30250bec7f8850562703067dc6
-# Wed, 21 Dec 2022 08:54:10 GMT
+# Fri, 06 Jan 2023 18:43:01 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		export PYTHONDONTWRITEBYTECODE=1; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		--no-compile 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	rm -f get-pip.py; 		pip --version
-# Wed, 21 Dec 2022 08:54:10 GMT
+# Fri, 06 Jan 2023 18:43:01 GMT
 CMD ["python3"]
-# Wed, 21 Dec 2022 15:35:49 GMT
+# Fri, 06 Jan 2023 19:06:52 GMT
 ENV HY_VERSION=0.25.0
-# Wed, 21 Dec 2022 15:35:49 GMT
+# Fri, 06 Jan 2023 19:06:53 GMT
 ENV HYRULE_VERSION=0.2.1
-# Wed, 21 Dec 2022 15:36:02 GMT
+# Fri, 06 Jan 2023 19:07:05 GMT
 RUN pip install --no-cache-dir "hy == $HY_VERSION" "hyrule == $HYRULE_VERSION"
-# Wed, 21 Dec 2022 15:36:02 GMT
+# Fri, 06 Jan 2023 19:07:05 GMT
 CMD ["hy"]
 ```
 
@@ -86,26 +86,26 @@ CMD ["hy"]
 		Last Modified: Wed, 21 Dec 2022 09:52:48 GMT  
 		Size: 234.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:268581bec5afca39a5fbd81034063caf7e8c18202ffc62d31c42fabedc888cc1`  
-		Last Modified: Wed, 21 Dec 2022 09:52:49 GMT  
-		Size: 3.3 MB (3348157 bytes)  
+	-	`sha256:2fd9a62851975dbc3fe410ecda2cb48e2e08c2adc8b2a26f7b8113ba73c86007`  
+		Last Modified: Fri, 06 Jan 2023 18:48:45 GMT  
+		Size: 3.3 MB (3348213 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4cf6d3169f996a19a0e79d5e3bb6eb35b6c45db175c85ca9d95e4d376ca811c1`  
-		Last Modified: Wed, 21 Dec 2022 15:44:15 GMT  
-		Size: 4.1 MB (4133803 bytes)  
+	-	`sha256:6d88786fe8fd3c25a7bd7e7fb93f7a1ba69f92b301b23bc1a743940e7a4fa28c`  
+		Last Modified: Fri, 06 Jan 2023 19:12:29 GMT  
+		Size: 4.1 MB (4133667 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `hylang:0-python3.10-bullseye` - linux; arm variant v5
 
 ```console
-$ docker pull hylang@sha256:3b65a688ddc72135a2e4e78d10475a8c40b73be981df4a46fbfa8ba31573955d
+$ docker pull hylang@sha256:8a5ac7a0288df40d33581b26c8a74e67b9121a6baa2967119b5916c5cea6046f
 ```
 
 -	Docker Version: 20.10.17
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.1 MB (49133451 bytes)**  
+-	Total Size: **49.1 MB (49133453 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6c2e629b2a97da14400d4ed9966bb1534ac134378e2202b58508a99e718d6910`
+-	Image ID: `sha256:98a2ab052c07014e32e4645722890b3caf795ca9bbbfd21d94ac0a6a3cf399c1`
 -	Default Command: `["hy"]`
 
 ```dockerfile
@@ -129,23 +129,23 @@ RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get
 RUN set -eux; 	for src in idle3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "$src" "/usr/local/bin/$dst"; 	done
 # Wed, 21 Dec 2022 07:56:48 GMT
 ENV PYTHON_PIP_VERSION=22.3.1
-# Wed, 21 Dec 2022 07:56:48 GMT
-ENV PYTHON_SETUPTOOLS_VERSION=65.5.0
-# Wed, 21 Dec 2022 07:56:48 GMT
+# Fri, 06 Jan 2023 18:50:12 GMT
+ENV PYTHON_SETUPTOOLS_VERSION=65.5.1
+# Fri, 06 Jan 2023 18:50:13 GMT
 ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/66030fa03382b4914d4c4d0896961a0bdeeeb274/public/get-pip.py
-# Wed, 21 Dec 2022 07:56:48 GMT
+# Fri, 06 Jan 2023 18:50:13 GMT
 ENV PYTHON_GET_PIP_SHA256=1e501cf004eac1b7eb1f97266d28f995ae835d30250bec7f8850562703067dc6
-# Wed, 21 Dec 2022 07:57:06 GMT
+# Fri, 06 Jan 2023 18:50:29 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		export PYTHONDONTWRITEBYTECODE=1; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		--no-compile 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	rm -f get-pip.py; 		pip --version
-# Wed, 21 Dec 2022 07:57:06 GMT
+# Fri, 06 Jan 2023 18:50:30 GMT
 CMD ["python3"]
-# Wed, 21 Dec 2022 15:28:42 GMT
+# Fri, 06 Jan 2023 19:11:12 GMT
 ENV HY_VERSION=0.25.0
-# Wed, 21 Dec 2022 15:28:42 GMT
+# Fri, 06 Jan 2023 19:11:12 GMT
 ENV HYRULE_VERSION=0.2.1
-# Wed, 21 Dec 2022 15:28:55 GMT
+# Fri, 06 Jan 2023 19:11:27 GMT
 RUN pip install --no-cache-dir "hy == $HY_VERSION" "hyrule == $HYRULE_VERSION"
-# Wed, 21 Dec 2022 15:28:55 GMT
+# Fri, 06 Jan 2023 19:11:28 GMT
 CMD ["hy"]
 ```
 
@@ -166,13 +166,13 @@ CMD ["hy"]
 		Last Modified: Wed, 21 Dec 2022 08:47:33 GMT  
 		Size: 234.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c68a36bc4c0d028d310fe34df5a7e0b72f65bb790f7b0e1becad6cfd1c6d10a0`  
-		Last Modified: Wed, 21 Dec 2022 08:47:34 GMT  
-		Size: 3.3 MB (3347395 bytes)  
+	-	`sha256:1f1569e2f7613a2447c3907bfb9c69a400d9c0c036b594a8ca0afca3bb7e36d5`  
+		Last Modified: Fri, 06 Jan 2023 18:54:45 GMT  
+		Size: 3.3 MB (3347465 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98b3ac1676e97dd4ea7f52ad81f8a7d96aaf87ac0302a8e293e7a6b7a63181b0`  
-		Last Modified: Wed, 21 Dec 2022 15:32:31 GMT  
-		Size: 4.1 MB (4131425 bytes)  
+	-	`sha256:60355d76393a6009d245dca9c3f0da08a578fa99803ee900fd67b07560a58367`  
+		Last Modified: Fri, 06 Jan 2023 19:14:20 GMT  
+		Size: 4.1 MB (4131357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `hylang:0-python3.10-bullseye` - linux; arm variant v7
@@ -258,14 +258,14 @@ CMD ["hy"]
 ### `hylang:0-python3.10-bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull hylang@sha256:deda7d397be97711903fc736e61eabc45e01fcdb0699db2e1ad03fd05fdb5461
+$ docker pull hylang@sha256:e9ba8739d6643deb11deb4e20669aab4b1d6a552be4adf9daacd6ff6ef9c051c
 ```
 
 -	Docker Version: 20.10.17
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.8 MB (50754338 bytes)**  
+-	Total Size: **50.8 MB (50754251 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ccc057ba20354c623e9bd283932913853a155b56dca72d3e992f8fa8accada1d`
+-	Image ID: `sha256:c672a3b317db4059302e0dffac46ad82e5684bc3df5d578054b0cc78cf437b84`
 -	Default Command: `["hy"]`
 
 ```dockerfile
@@ -289,23 +289,23 @@ RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get
 RUN set -eux; 	for src in idle3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "$src" "/usr/local/bin/$dst"; 	done
 # Wed, 21 Dec 2022 10:38:59 GMT
 ENV PYTHON_PIP_VERSION=22.3.1
-# Wed, 21 Dec 2022 10:39:00 GMT
-ENV PYTHON_SETUPTOOLS_VERSION=65.5.0
-# Wed, 21 Dec 2022 10:39:00 GMT
+# Fri, 06 Jan 2023 20:54:12 GMT
+ENV PYTHON_SETUPTOOLS_VERSION=65.5.1
+# Fri, 06 Jan 2023 20:54:12 GMT
 ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/66030fa03382b4914d4c4d0896961a0bdeeeb274/public/get-pip.py
-# Wed, 21 Dec 2022 10:39:00 GMT
+# Fri, 06 Jan 2023 20:54:12 GMT
 ENV PYTHON_GET_PIP_SHA256=1e501cf004eac1b7eb1f97266d28f995ae835d30250bec7f8850562703067dc6
-# Wed, 21 Dec 2022 10:39:09 GMT
+# Fri, 06 Jan 2023 20:54:22 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		export PYTHONDONTWRITEBYTECODE=1; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		--no-compile 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	rm -f get-pip.py; 		pip --version
-# Wed, 21 Dec 2022 10:39:09 GMT
+# Fri, 06 Jan 2023 20:54:22 GMT
 CMD ["python3"]
-# Wed, 21 Dec 2022 20:40:53 GMT
+# Fri, 06 Jan 2023 21:28:26 GMT
 ENV HY_VERSION=0.25.0
-# Wed, 21 Dec 2022 20:40:53 GMT
+# Fri, 06 Jan 2023 21:28:26 GMT
 ENV HYRULE_VERSION=0.2.1
-# Wed, 21 Dec 2022 20:41:04 GMT
+# Fri, 06 Jan 2023 21:28:36 GMT
 RUN pip install --no-cache-dir "hy == $HY_VERSION" "hyrule == $HYRULE_VERSION"
-# Wed, 21 Dec 2022 20:41:04 GMT
+# Fri, 06 Jan 2023 21:28:36 GMT
 CMD ["hy"]
 ```
 
@@ -326,26 +326,26 @@ CMD ["hy"]
 		Last Modified: Wed, 21 Dec 2022 12:03:50 GMT  
 		Size: 234.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b03019b4c7ec3ae79c38eb2ad8a0f302a968203bdff1b4f09f3854b6757b5922`  
-		Last Modified: Wed, 21 Dec 2022 12:03:51 GMT  
-		Size: 3.3 MB (3347806 bytes)  
+	-	`sha256:e9432d727a332bebc9b0c1d8eba76e909ff6bd0fee1af40237c2b9be3a862bc3`  
+		Last Modified: Fri, 06 Jan 2023 21:00:13 GMT  
+		Size: 3.3 MB (3347916 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8dbaafaeeee586b51821a9ef40640196321a19db87dcc66e04874fd2c1913514`  
-		Last Modified: Wed, 21 Dec 2022 20:48:54 GMT  
-		Size: 4.1 MB (4133774 bytes)  
+	-	`sha256:cb14358ff546e17e47896224ffc19d938d4c9063015cb130c8ceeb909ab71943`  
+		Last Modified: Fri, 06 Jan 2023 21:34:10 GMT  
+		Size: 4.1 MB (4133577 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `hylang:0-python3.10-bullseye` - linux; 386
 
 ```console
-$ docker pull hylang@sha256:50a2290726dc0ecfff19a600f4dc2a40cd044e7c0f5e987cc0977ed9b6cb8853
+$ docker pull hylang@sha256:6f201d2b76f616e9451a7c2bb60254e72191e25f1d1df84430e0b79294fb9c88
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **53.0 MB (52954930 bytes)**  
+-	Total Size: **53.0 MB (52955068 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:638d166a60d5b23314431e14a56f2fda1ffad82e97ee096118f4c9826b6c5915`
+-	Image ID: `sha256:a6e1d0e61ea9863152cc50cfbf94617fa5e71232c8de9c359796318bbd5065a6`
 -	Default Command: `["hy"]`
 
 ```dockerfile
@@ -369,23 +369,23 @@ RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get
 RUN set -eux; 	for src in idle3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "$src" "/usr/local/bin/$dst"; 	done
 # Wed, 21 Dec 2022 13:04:57 GMT
 ENV PYTHON_PIP_VERSION=22.3.1
-# Wed, 21 Dec 2022 13:04:58 GMT
-ENV PYTHON_SETUPTOOLS_VERSION=65.5.0
-# Wed, 21 Dec 2022 13:04:59 GMT
+# Fri, 06 Jan 2023 18:44:38 GMT
+ENV PYTHON_SETUPTOOLS_VERSION=65.5.1
+# Fri, 06 Jan 2023 18:44:39 GMT
 ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/66030fa03382b4914d4c4d0896961a0bdeeeb274/public/get-pip.py
-# Wed, 21 Dec 2022 13:05:00 GMT
+# Fri, 06 Jan 2023 18:44:40 GMT
 ENV PYTHON_GET_PIP_SHA256=1e501cf004eac1b7eb1f97266d28f995ae835d30250bec7f8850562703067dc6
-# Wed, 21 Dec 2022 13:05:14 GMT
+# Fri, 06 Jan 2023 18:44:53 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		export PYTHONDONTWRITEBYTECODE=1; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		--no-compile 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	rm -f get-pip.py; 		pip --version
-# Wed, 21 Dec 2022 13:05:14 GMT
+# Fri, 06 Jan 2023 18:44:54 GMT
 CMD ["python3"]
-# Wed, 21 Dec 2022 17:48:18 GMT
+# Fri, 06 Jan 2023 19:13:49 GMT
 ENV HY_VERSION=0.25.0
-# Wed, 21 Dec 2022 17:48:19 GMT
+# Fri, 06 Jan 2023 19:13:50 GMT
 ENV HYRULE_VERSION=0.2.1
-# Wed, 21 Dec 2022 17:48:35 GMT
+# Fri, 06 Jan 2023 19:14:06 GMT
 RUN pip install --no-cache-dir "hy == $HY_VERSION" "hyrule == $HYRULE_VERSION"
-# Wed, 21 Dec 2022 17:48:35 GMT
+# Fri, 06 Jan 2023 19:14:06 GMT
 CMD ["hy"]
 ```
 
@@ -406,26 +406,26 @@ CMD ["hy"]
 		Last Modified: Wed, 21 Dec 2022 15:07:00 GMT  
 		Size: 234.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f4be0bc6e99dbecc66f44083cf083ab0c7039a9c363d61f2e4d47a5a30646e06`  
-		Last Modified: Wed, 21 Dec 2022 15:07:01 GMT  
-		Size: 3.1 MB (3132302 bytes)  
+	-	`sha256:8f5724f2441b228ddd27ff15f03d4d75d2a25549cd715db39f540105298d3cbd`  
+		Last Modified: Fri, 06 Jan 2023 18:54:46 GMT  
+		Size: 3.1 MB (3132419 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:60980dab0c80a31b6260129baa36c320771e285f658c3dff2be87de5a4bf2464`  
-		Last Modified: Wed, 21 Dec 2022 18:02:02 GMT  
-		Size: 4.1 MB (4131291 bytes)  
+	-	`sha256:4f5c14313e50844a3001fc7cad288a5446aa509a6b31e035f5c3bea8f8543c42`  
+		Last Modified: Fri, 06 Jan 2023 19:23:47 GMT  
+		Size: 4.1 MB (4131312 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `hylang:0-python3.10-bullseye` - linux; mips64le
 
 ```console
-$ docker pull hylang@sha256:a52f181f2242c88d4be103e3766f98b90d06b4fa39133261dd0dfb5b5b01c63a
+$ docker pull hylang@sha256:6d0f0fb3dcf10a563db8e0328fe2d658a547439a934bb540779c39bd793cb606
 ```
 
 -	Docker Version: 20.10.17
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.1 MB (50068557 bytes)**  
+-	Total Size: **50.1 MB (50068751 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ebf42fa2f015cd2e617a14e5d9f83a61291d7026e6632e035b2f3d53bf23acca`
+-	Image ID: `sha256:feb6152fb58bff9998554f091adaace9fcd6745a3476607a606eaf2a928c4b1c`
 -	Default Command: `["hy"]`
 
 ```dockerfile
@@ -449,23 +449,23 @@ RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get
 RUN set -eux; 	for src in idle3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "$src" "/usr/local/bin/$dst"; 	done
 # Wed, 21 Dec 2022 12:22:33 GMT
 ENV PYTHON_PIP_VERSION=22.3.1
-# Wed, 21 Dec 2022 12:22:36 GMT
-ENV PYTHON_SETUPTOOLS_VERSION=65.5.0
-# Wed, 21 Dec 2022 12:22:39 GMT
+# Fri, 06 Jan 2023 19:08:49 GMT
+ENV PYTHON_SETUPTOOLS_VERSION=65.5.1
+# Fri, 06 Jan 2023 19:08:51 GMT
 ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/66030fa03382b4914d4c4d0896961a0bdeeeb274/public/get-pip.py
-# Wed, 21 Dec 2022 12:22:42 GMT
+# Fri, 06 Jan 2023 19:08:54 GMT
 ENV PYTHON_GET_PIP_SHA256=1e501cf004eac1b7eb1f97266d28f995ae835d30250bec7f8850562703067dc6
-# Wed, 21 Dec 2022 12:23:34 GMT
+# Fri, 06 Jan 2023 19:09:47 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		export PYTHONDONTWRITEBYTECODE=1; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		--no-compile 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	rm -f get-pip.py; 		pip --version
-# Wed, 21 Dec 2022 12:23:37 GMT
+# Fri, 06 Jan 2023 19:09:50 GMT
 CMD ["python3"]
-# Thu, 22 Dec 2022 01:01:13 GMT
+# Fri, 06 Jan 2023 19:26:34 GMT
 ENV HY_VERSION=0.25.0
-# Thu, 22 Dec 2022 01:01:16 GMT
+# Fri, 06 Jan 2023 19:26:37 GMT
 ENV HYRULE_VERSION=0.2.1
-# Thu, 22 Dec 2022 01:02:10 GMT
+# Fri, 06 Jan 2023 19:27:29 GMT
 RUN pip install --no-cache-dir "hy == $HY_VERSION" "hyrule == $HYRULE_VERSION"
-# Thu, 22 Dec 2022 01:02:13 GMT
+# Fri, 06 Jan 2023 19:27:32 GMT
 CMD ["hy"]
 ```
 
@@ -486,26 +486,26 @@ CMD ["hy"]
 		Last Modified: Wed, 21 Dec 2022 14:57:46 GMT  
 		Size: 234.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:83163e89c75519158db9d5b8b9b7495c5649fe89cc5c6f5e4c12ac1c6e7b179f`  
-		Last Modified: Wed, 21 Dec 2022 14:57:49 GMT  
-		Size: 3.1 MB (3133525 bytes)  
+	-	`sha256:5082cdce470cc95c5908e23205aea216e2f9d39f9ccf6eeb938c3e485788cb0f`  
+		Last Modified: Fri, 06 Jan 2023 19:10:55 GMT  
+		Size: 3.1 MB (3133606 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc76d6233a1a20ad6b937fdf3d6b7ac26108542eba8c08c0b824b9d07daa65ad`  
-		Last Modified: Thu, 22 Dec 2022 01:07:12 GMT  
-		Size: 4.1 MB (4131535 bytes)  
+	-	`sha256:3a7332292c4f5d13be729e409085467292ee759a77775f2c1c9f94bb2fd265b4`  
+		Last Modified: Fri, 06 Jan 2023 19:28:20 GMT  
+		Size: 4.1 MB (4131648 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `hylang:0-python3.10-bullseye` - linux; ppc64le
 
 ```console
-$ docker pull hylang@sha256:1467d63959168bce3b32b0ec94778f2ed968c02136ef2330d937944e8cba2887
+$ docker pull hylang@sha256:b71ba0dc877082bb15ce4f6e7ce803b808f443398197a418edaa7c3e0fc7cfa2
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **56.3 MB (56321539 bytes)**  
+-	Total Size: **56.3 MB (56321803 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e07d0b36f51c8d045ef0bc023ed00236b0a49e06e37c21b9929ada0f43f96647`
+-	Image ID: `sha256:f9d2ea8bb904ccab18451c75045a7e1e39470af30b0291b8817b15bec77b6c4f`
 -	Default Command: `["hy"]`
 
 ```dockerfile
@@ -529,23 +529,23 @@ RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get
 RUN set -eux; 	for src in idle3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "$src" "/usr/local/bin/$dst"; 	done
 # Wed, 21 Dec 2022 12:41:39 GMT
 ENV PYTHON_PIP_VERSION=22.3.1
-# Wed, 21 Dec 2022 12:41:39 GMT
-ENV PYTHON_SETUPTOOLS_VERSION=65.5.0
-# Wed, 21 Dec 2022 12:41:40 GMT
+# Fri, 06 Jan 2023 20:51:50 GMT
+ENV PYTHON_SETUPTOOLS_VERSION=65.5.1
+# Fri, 06 Jan 2023 20:51:51 GMT
 ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/66030fa03382b4914d4c4d0896961a0bdeeeb274/public/get-pip.py
-# Wed, 21 Dec 2022 12:41:40 GMT
+# Fri, 06 Jan 2023 20:51:51 GMT
 ENV PYTHON_GET_PIP_SHA256=1e501cf004eac1b7eb1f97266d28f995ae835d30250bec7f8850562703067dc6
-# Wed, 21 Dec 2022 12:42:01 GMT
+# Fri, 06 Jan 2023 20:52:13 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		export PYTHONDONTWRITEBYTECODE=1; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		--no-compile 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	rm -f get-pip.py; 		pip --version
-# Wed, 21 Dec 2022 12:42:02 GMT
+# Fri, 06 Jan 2023 20:52:13 GMT
 CMD ["python3"]
-# Wed, 21 Dec 2022 23:10:59 GMT
+# Fri, 06 Jan 2023 21:33:37 GMT
 ENV HY_VERSION=0.25.0
-# Wed, 21 Dec 2022 23:10:59 GMT
+# Fri, 06 Jan 2023 21:33:37 GMT
 ENV HYRULE_VERSION=0.2.1
-# Wed, 21 Dec 2022 23:11:25 GMT
+# Fri, 06 Jan 2023 21:34:02 GMT
 RUN pip install --no-cache-dir "hy == $HY_VERSION" "hyrule == $HYRULE_VERSION"
-# Wed, 21 Dec 2022 23:11:25 GMT
+# Fri, 06 Jan 2023 21:34:03 GMT
 CMD ["hy"]
 ```
 
@@ -566,13 +566,13 @@ CMD ["hy"]
 		Last Modified: Wed, 21 Dec 2022 14:10:55 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d3f89cdf239a272a920cb8cde676e44af20ba03d028ca84c0f2d23f879187748`  
-		Last Modified: Wed, 21 Dec 2022 14:10:56 GMT  
-		Size: 3.3 MB (3348286 bytes)  
+	-	`sha256:66fc5c375779b4dcefb7e37f1c24c1258675c4106983e39c9b6dd2808e236a59`  
+		Last Modified: Fri, 06 Jan 2023 20:59:29 GMT  
+		Size: 3.3 MB (3348379 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68fd4840b453acf9206786534b24f9033e30ad4787646a68d6db06f06022f5b4`  
-		Last Modified: Wed, 21 Dec 2022 23:18:01 GMT  
-		Size: 4.1 MB (4133795 bytes)  
+	-	`sha256:3ad93319feb1b1d3fed7ae403ad8e464380184e2c337c47a4c486672fb1439c4`  
+		Last Modified: Fri, 06 Jan 2023 21:41:45 GMT  
+		Size: 4.1 MB (4133966 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `hylang:0-python3.10-bullseye` - linux; s390x
