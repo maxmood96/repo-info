@@ -1,9 +1,9 @@
-# `nats:2.9.10-alpine3.17`
+# `nats:2.9.11-alpine3.17`
 
 ## Docker Metadata
 
-- Image ID: `sha256:db02bd912a427b14954a4ade0ea6698fb1caa8a48a8da9aa53e12064c7c7c0c3`
-- Created: `2022-12-20T22:19:56.15361178Z`
+- Image ID: `sha256:ec8333132a7c9a559bcdf54d6ddb9c171d92877d9df7a08bcd9265983c16b13d`
+- Created: `2023-01-06T19:19:48.316744836Z`
 - Virtual Size: ~ 19.92 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Command: `["nats-server","--config","/etc/nats/nats-server.conf"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NATS_SERVER=2.9.10`
+  - `NATS_SERVER=2.9.11`
 
 ## `apk` (`.apk`-based packages)
 
