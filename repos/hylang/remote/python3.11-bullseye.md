@@ -1,7 +1,7 @@
 ## `hylang:python3.11-bullseye`
 
 ```console
-$ docker pull hylang@sha256:e3cc98d98ae21c9da4e34e5f413785edc5391d2a7883122ca2aa6db24d6b6571
+$ docker pull hylang@sha256:fa9b6d3d5aa065c9e085ba29adad086b1cd83184be54fdd6b9d018b6bec2f25a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -497,14 +497,14 @@ CMD ["hy"]
 ### `hylang:python3.11-bullseye` - linux; s390x
 
 ```console
-$ docker pull hylang@sha256:a6fabc0df82ae0c55c4d56cb3f04e118986cf64e49ad4db32ac3e2b7db98e53c
+$ docker pull hylang@sha256:26d63820edde05b8d375a33e7b47b3b9730fbae113197a8e05e7a85be337b10a
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **52.6 MB (52555067 bytes)**  
+-	Total Size: **52.6 MB (52554950 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1659e3130e1bec17724e751f63f1d963a4f6e737d0e59622577a74337ad0700b`
+-	Image ID: `sha256:6653060ae318c73b9719b0032f14e2a08b43822d0ac648dfc82049077b9b4237`
 -	Default Command: `["hy"]`
 
 ```dockerfile
@@ -528,23 +528,23 @@ RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get
 RUN set -eux; 	for src in idle3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "$src" "/usr/local/bin/$dst"; 	done
 # Wed, 21 Dec 2022 04:05:34 GMT
 ENV PYTHON_PIP_VERSION=22.3.1
-# Wed, 21 Dec 2022 04:05:35 GMT
-ENV PYTHON_SETUPTOOLS_VERSION=65.5.0
-# Wed, 21 Dec 2022 04:05:35 GMT
+# Fri, 06 Jan 2023 23:42:26 GMT
+ENV PYTHON_SETUPTOOLS_VERSION=65.5.1
+# Fri, 06 Jan 2023 23:42:27 GMT
 ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/66030fa03382b4914d4c4d0896961a0bdeeeb274/public/get-pip.py
-# Wed, 21 Dec 2022 04:05:36 GMT
+# Fri, 06 Jan 2023 23:42:27 GMT
 ENV PYTHON_GET_PIP_SHA256=1e501cf004eac1b7eb1f97266d28f995ae835d30250bec7f8850562703067dc6
-# Wed, 21 Dec 2022 04:05:52 GMT
+# Fri, 06 Jan 2023 23:42:44 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		export PYTHONDONTWRITEBYTECODE=1; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		--no-compile 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	rm -f get-pip.py; 		pip --version
-# Wed, 21 Dec 2022 04:05:53 GMT
+# Fri, 06 Jan 2023 23:42:47 GMT
 CMD ["python3"]
-# Wed, 21 Dec 2022 11:05:02 GMT
+# Sat, 07 Jan 2023 00:08:26 GMT
 ENV HY_VERSION=0.25.0
-# Wed, 21 Dec 2022 11:05:03 GMT
+# Sat, 07 Jan 2023 00:08:27 GMT
 ENV HYRULE_VERSION=0.2.1
-# Wed, 21 Dec 2022 11:05:17 GMT
+# Sat, 07 Jan 2023 00:08:40 GMT
 RUN pip install --no-cache-dir "hy == $HY_VERSION" "hyrule == $HYRULE_VERSION"
-# Wed, 21 Dec 2022 11:05:18 GMT
+# Sat, 07 Jan 2023 00:08:41 GMT
 CMD ["hy"]
 ```
 
@@ -565,11 +565,11 @@ CMD ["hy"]
 		Last Modified: Wed, 21 Dec 2022 04:41:50 GMT  
 		Size: 240.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:70bd5e0c0cc6024d4e2eb5732c6bd4aa3d738e0c8a057cce74aacb0f6e09cc3b`  
-		Last Modified: Wed, 21 Dec 2022 04:41:51 GMT  
-		Size: 3.3 MB (3348179 bytes)  
+	-	`sha256:8cdf45a01b576e5fb019e0d207307ecbd8dfb56deb93f45d575dc84d979be438`  
+		Last Modified: Fri, 06 Jan 2023 23:50:29 GMT  
+		Size: 3.3 MB (3348244 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:760fe35990c732e4aa12510d27b9675de1f26e75a4e0e8704d4409577eef2bd7`  
-		Last Modified: Wed, 21 Dec 2022 11:12:21 GMT  
-		Size: 6.1 MB (6078625 bytes)  
+	-	`sha256:63f2d79fb4545e916d69bc421f5fb91b62afa110bdbc2642f0847b7f617edd36`  
+		Last Modified: Sat, 07 Jan 2023 00:15:56 GMT  
+		Size: 6.1 MB (6078443 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
