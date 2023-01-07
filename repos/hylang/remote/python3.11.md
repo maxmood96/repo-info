@@ -1,7 +1,7 @@
 ## `hylang:python3.11`
 
 ```console
-$ docker pull hylang@sha256:fa9b6d3d5aa065c9e085ba29adad086b1cd83184be54fdd6b9d018b6bec2f25a
+$ docker pull hylang@sha256:f76a1230f32768742dba3292b5c711aba222d219cb1410ba9b5849cc091415c7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -177,14 +177,14 @@ CMD ["hy"]
 ### `hylang:python3.11` - linux; arm variant v7
 
 ```console
-$ docker pull hylang@sha256:fab83f86fe65e87b36409f48436721ca6b729f37aaddbaa2614da0c93aceaa2e
+$ docker pull hylang@sha256:d61145c533a2370d0877298ebd0a8a1b4682190e0a884dea11211e174b411e2f
 ```
 
 -	Docker Version: 20.10.17
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **48.7 MB (48670862 bytes)**  
+-	Total Size: **48.7 MB (48670909 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bac213a549f785f470534b0a6dc36ad8537200d58e129fce9531e91edad8d17b`
+-	Image ID: `sha256:473668d3c30144701e86d99a8b1f97f053557ac9652c8d71294aebbd30e7b5b4`
 -	Default Command: `["hy"]`
 
 ```dockerfile
@@ -208,23 +208,23 @@ RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get
 RUN set -eux; 	for src in idle3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "$src" "/usr/local/bin/$dst"; 	done
 # Wed, 21 Dec 2022 09:25:02 GMT
 ENV PYTHON_PIP_VERSION=22.3.1
-# Wed, 21 Dec 2022 09:25:02 GMT
-ENV PYTHON_SETUPTOOLS_VERSION=65.5.0
-# Wed, 21 Dec 2022 09:25:02 GMT
+# Fri, 06 Jan 2023 23:34:04 GMT
+ENV PYTHON_SETUPTOOLS_VERSION=65.5.1
+# Fri, 06 Jan 2023 23:34:04 GMT
 ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/66030fa03382b4914d4c4d0896961a0bdeeeb274/public/get-pip.py
-# Wed, 21 Dec 2022 09:25:02 GMT
+# Fri, 06 Jan 2023 23:34:04 GMT
 ENV PYTHON_GET_PIP_SHA256=1e501cf004eac1b7eb1f97266d28f995ae835d30250bec7f8850562703067dc6
-# Wed, 21 Dec 2022 09:25:17 GMT
+# Fri, 06 Jan 2023 23:34:17 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		export PYTHONDONTWRITEBYTECODE=1; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		--no-compile 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	rm -f get-pip.py; 		pip --version
-# Wed, 21 Dec 2022 09:25:17 GMT
+# Fri, 06 Jan 2023 23:34:17 GMT
 CMD ["python3"]
-# Thu, 22 Dec 2022 02:59:22 GMT
+# Sat, 07 Jan 2023 00:21:46 GMT
 ENV HY_VERSION=0.25.0
-# Thu, 22 Dec 2022 02:59:22 GMT
+# Sat, 07 Jan 2023 00:21:46 GMT
 ENV HYRULE_VERSION=0.2.1
-# Thu, 22 Dec 2022 02:59:34 GMT
+# Sat, 07 Jan 2023 00:21:58 GMT
 RUN pip install --no-cache-dir "hy == $HY_VERSION" "hyrule == $HYRULE_VERSION"
-# Thu, 22 Dec 2022 02:59:34 GMT
+# Sat, 07 Jan 2023 00:21:59 GMT
 CMD ["hy"]
 ```
 
@@ -245,13 +245,13 @@ CMD ["hy"]
 		Last Modified: Wed, 21 Dec 2022 15:47:16 GMT  
 		Size: 234.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c80e03fd9a210e561475a066b463bd91b79edddac3b0d3bcdf3a234b7b76c0a`  
-		Last Modified: Wed, 21 Dec 2022 15:47:17 GMT  
-		Size: 3.3 MB (3347504 bytes)  
+	-	`sha256:0672c4cda79d9d649172ad532f750d7903572424c77cfaa6851123de211be10a`  
+		Last Modified: Fri, 06 Jan 2023 23:44:50 GMT  
+		Size: 3.3 MB (3347552 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:59fe57ce226644bb2f5934a7e21f0aa7b4fd764289dd5432ea33dd50582823e3`  
-		Last Modified: Thu, 22 Dec 2022 03:09:19 GMT  
-		Size: 6.1 MB (6075557 bytes)  
+	-	`sha256:cb1fda9a3791b393aef49fa430c1c96e34c7c2fb20ff905abb0151d36903ef0c`  
+		Last Modified: Sat, 07 Jan 2023 00:30:54 GMT  
+		Size: 6.1 MB (6075556 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `hylang:python3.11` - linux; arm64 variant v8
