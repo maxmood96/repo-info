@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:713bfe6acdc8578032855e8d2ff95a077037b4891c14cc968722b209aa923d35`
-- Created: `2022-12-01T19:42:34.245405085Z`
-- Virtual Size: ~ 600.40 Mb  
+- Image ID: `sha256:e2a9926d28ef59f2a54a7faa04e59159f736dea4312fdc39758b715e98cdf9a2`
+- Created: `2023-01-09T21:42:14.270073758Z`
+- Virtual Size: ~ 600.44 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
@@ -108,16 +108,16 @@ Apache-2.0
 ### `apk` package: `apr-util`
 
 ```console
-apr-util-1.6.1-r13 description:
+apr-util-1.6.1-r14 description:
 The Apache Portable Runtime Utility Library
 
-apr-util-1.6.1-r13 webpage:
+apr-util-1.6.1-r14 webpage:
 https://apr.apache.org/
 
-apr-util-1.6.1-r13 installed size:
+apr-util-1.6.1-r14 installed size:
 200 KiB
 
-apr-util-1.6.1-r13 license:
+apr-util-1.6.1-r14 license:
 Apache-2.0
 
 ```
@@ -176,16 +176,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20220614-r2 description:
+ca-certificates-20220614-r4 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20220614-r2 webpage:
+ca-certificates-20220614-r4 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20220614-r2 installed size:
+ca-certificates-20220614-r4 installed size:
 688 KiB
 
-ca-certificates-20220614-r2 license:
+ca-certificates-20220614-r4 license:
 MPL-2.0 AND MIT
 
 ```
@@ -193,16 +193,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20220614-r2 description:
+ca-certificates-bundle-20220614-r4 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20220614-r2 webpage:
+ca-certificates-bundle-20220614-r4 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20220614-r2 installed size:
+ca-certificates-bundle-20220614-r4 installed size:
 232 KiB
 
-ca-certificates-bundle-20220614-r2 license:
+ca-certificates-bundle-20220614-r4 license:
 MPL-2.0 AND MIT
 
 ```
@@ -295,16 +295,16 @@ GPL-3.0-or-later
 ### `apk` package: `git`
 
 ```console
-git-2.38.1-r0 description:
+git-2.38.2-r0 description:
 Distributed version control system
 
-git-2.38.1-r0 webpage:
+git-2.38.2-r0 webpage:
 https://www.git-scm.com/
 
-git-2.38.1-r0 installed size:
+git-2.38.2-r0 installed size:
 6060 KiB
 
-git-2.38.1-r0 license:
+git-2.38.2-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -312,16 +312,16 @@ GPL-2.0-or-later
 ### `apk` package: `git-lfs`
 
 ```console
-git-lfs-3.2.0-r2 description:
+git-lfs-3.2.0-r3 description:
 Git extension for versioning large files
 
-git-lfs-3.2.0-r2 webpage:
+git-lfs-3.2.0-r3 webpage:
 https://git-lfs.github.io/
 
-git-lfs-3.2.0-r2 installed size:
+git-lfs-3.2.0-r3 installed size:
 11 MiB
 
-git-lfs-3.2.0-r2 license:
+git-lfs-3.2.0-r3 license:
 MIT
 
 ```
@@ -363,16 +363,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.0.7-r0 description:
+libcrypto3-3.0.7-r2 description:
 Crypto library from openssl
 
-libcrypto3-3.0.7-r0 webpage:
+libcrypto3-3.0.7-r2 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.0.7-r0 installed size:
+libcrypto3-3.0.7-r2 installed size:
 4108 KiB
 
-libcrypto3-3.0.7-r0 license:
+libcrypto3-3.0.7-r2 license:
 Apache-2.0
 
 ```
@@ -380,16 +380,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.86.0-r1 description:
+libcurl-7.87.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-7.86.0-r1 webpage:
+libcurl-7.87.0-r0 webpage:
 https://curl.se/
 
-libcurl-7.86.0-r1 installed size:
-528 KiB
+libcurl-7.87.0-r0 installed size:
+540 KiB
 
-libcurl-7.86.0-r1 license:
+libcurl-7.87.0-r0 license:
 curl
 
 ```
@@ -516,16 +516,16 @@ custom
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.0.7-r0 description:
+libssl3-3.0.7-r2 description:
 SSL shared libraries
 
-libssl3-3.0.7-r0 webpage:
+libssl3-3.0.7-r2 webpage:
 https://www.openssl.org/
 
-libssl3-3.0.7-r0 installed size:
+libssl3-3.0.7-r2 installed size:
 608 KiB
 
-libssl3-3.0.7-r0 license:
+libssl3-3.0.7-r2 license:
 Apache-2.0
 
 ```
@@ -550,16 +550,16 @@ GPL-2.0-or-later LGPL-2.1-or-later
 ### `apk` package: `libuuid`
 
 ```console
-libuuid-2.38.1-r0 description:
+libuuid-2.38.1-r1 description:
 DCE compatible Universally Unique Identifier library
 
-libuuid-2.38.1-r0 webpage:
+libuuid-2.38.1-r1 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libuuid-2.38.1-r0 installed size:
+libuuid-2.38.1-r1 installed size:
 40 KiB
 
-libuuid-2.38.1-r0 license:
+libuuid-2.38.1-r1 license:
 BSD-3-Clause
 
 ```
@@ -754,16 +754,16 @@ MIT
 ### `apk` package: `pcre2`
 
 ```console
-pcre2-10.40-r0 description:
+pcre2-10.42-r0 description:
 Perl-compatible regular expression library
 
-pcre2-10.40-r0 webpage:
+pcre2-10.42-r0 webpage:
 https://pcre.org/
 
-pcre2-10.40-r0 installed size:
+pcre2-10.42-r0 installed size:
 672 KiB
 
-pcre2-10.40-r0 license:
+pcre2-10.42-r0 license:
 BSD-3-Clause
 
 ```
@@ -771,16 +771,16 @@ BSD-3-Clause
 ### `apk` package: `python3`
 
 ```console
-python3-3.10.8-r3 description:
+python3-3.10.9-r1 description:
 A high-level scripting language
 
-python3-3.10.8-r3 webpage:
+python3-3.10.9-r1 webpage:
 https://www.python.org/
 
-python3-3.10.8-r3 installed size:
+python3-3.10.9-r1 installed size:
 47 MiB
 
-python3-3.10.8-r3 license:
+python3-3.10.9-r1 license:
 PSF-2.0
 
 ```
@@ -839,16 +839,16 @@ Apache-2.0
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.40.0-r0 description:
+sqlite-libs-3.40.1-r0 description:
 Sqlite3 library
 
-sqlite-libs-3.40.0-r0 webpage:
+sqlite-libs-3.40.1-r0 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.40.0-r0 installed size:
+sqlite-libs-3.40.1-r0 installed size:
 1008 KiB
 
-sqlite-libs-3.40.0-r0 license:
+sqlite-libs-3.40.1-r0 license:
 blessing
 
 ```
