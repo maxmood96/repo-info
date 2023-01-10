@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e673db0714f41d72179c0d325804babff45e4f662ca37ba4c992c08f16648ee1`
-- Created: `2023-01-06T04:52:04.973620234Z`
-- Virtual Size: ~ 165.43 Mb  
+- Image ID: `sha256:999dc11bd6baa9ce9debed7f1e97cf76e2caa46c059206162d59eea0091c83f6`
+- Created: `2023-01-09T23:39:58.129661362Z`
+- Virtual Size: ~ 159.80 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -183,16 +183,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20220614-r2 description:
+ca-certificates-20220614-r4 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20220614-r2 webpage:
+ca-certificates-20220614-r4 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20220614-r2 installed size:
+ca-certificates-20220614-r4 installed size:
 688 KiB
 
-ca-certificates-20220614-r2 license:
+ca-certificates-20220614-r4 license:
 MPL-2.0 AND MIT
 
 ```
@@ -200,16 +200,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20220614-r2 description:
+ca-certificates-bundle-20220614-r4 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20220614-r2 webpage:
+ca-certificates-bundle-20220614-r4 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20220614-r2 installed size:
+ca-certificates-bundle-20220614-r4 installed size:
 232 KiB
 
-ca-certificates-bundle-20220614-r2 license:
+ca-certificates-bundle-20220614-r4 license:
 MPL-2.0 AND MIT
 
 ```
@@ -217,16 +217,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-7.86.0-r1 description:
+curl-7.87.0-r0 description:
 URL retrival utility and library
 
-curl-7.86.0-r1 webpage:
+curl-7.87.0-r0 webpage:
 https://curl.se/
 
-curl-7.86.0-r1 installed size:
-260 KiB
+curl-7.87.0-r0 installed size:
+264 KiB
 
-curl-7.86.0-r1 license:
+curl-7.87.0-r0 license:
 curl
 
 ```
@@ -931,16 +931,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.0.7-r0 description:
+openssl-3.0.7-r2 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.0.7-r0 webpage:
+openssl-3.0.7-r2 webpage:
 https://www.openssl.org/
 
-openssl-3.0.7-r0 installed size:
+openssl-3.0.7-r2 installed size:
 868 KiB
 
-openssl-3.0.7-r0 license:
+openssl-3.0.7-r2 license:
 Apache-2.0
 
 ```
@@ -1033,16 +1033,16 @@ GPL-3.0-or-later
 ### `apk` package: `xz`
 
 ```console
-xz-5.2.8-r0 description:
+xz-5.2.9-r0 description:
 Library and CLI tools for XZ and LZMA compressed files
 
-xz-5.2.8-r0 webpage:
+xz-5.2.9-r0 webpage:
 https://tukaani.org/xz
 
-xz-5.2.8-r0 installed size:
+xz-5.2.9-r0 installed size:
 172 KiB
 
-xz-5.2.8-r0 license:
+xz-5.2.9-r0 license:
 GPL-2.0-or-later AND Public-Domain AND LGPL-2.1-or-later
 
 ```
