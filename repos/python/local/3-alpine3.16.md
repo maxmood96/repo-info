@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ab74289091bf2475cd6a59815ef1507a7f5755fe4b89eea8fc2b7be16fd8e63f`
-- Created: `2022-12-08T01:27:13.80189673Z`
+- Image ID: `sha256:3313a498410bf90fd07b5d2d0cb8d2fb3df4cf81d75fe60e3fb23fa30b5947ac`
+- Created: `2023-01-06T18:42:38.710203313Z`
 - Virtual Size: ~ 51.64 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -14,7 +14,7 @@
   - `GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696D`
   - `PYTHON_VERSION=3.11.1`
   - `PYTHON_PIP_VERSION=22.3.1`
-  - `PYTHON_SETUPTOOLS_VERSION=65.5.0`
+  - `PYTHON_SETUPTOOLS_VERSION=65.5.1`
   - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/66030fa03382b4914d4c4d0896961a0bdeeeb274/public/get-pip.py`
   - `PYTHON_GET_PIP_SHA256=1e501cf004eac1b7eb1f97266d28f995ae835d30250bec7f8850562703067dc6`
 
