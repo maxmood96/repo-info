@@ -1,22 +1,18 @@
-## `debian:unstable-slim`
+## `debian:unstable-20230109-slim`
 
 ```console
-$ docker pull debian@sha256:0b8abe86644aa2cf45b11d3b9ee8298de7dbcbdc2cbbe60ba8f642542931a60b
+$ docker pull debian@sha256:fb0397d6117d813b59527cb2d45ce9f2869ec2f38ce39341a22f9d68bfff1615
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 9
+-	Platforms: 5
 	-	linux; amd64
 	-	linux; arm variant v5
-	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	linux; 386
-	-	linux; mips64le
-	-	linux; ppc64le
-	-	linux; riscv64
 	-	linux; s390x
 
-### `debian:unstable-slim` - linux; amd64
+### `debian:unstable-20230109-slim` - linux; amd64
 
 ```console
 $ docker pull debian@sha256:69e10d7ba95513185b0e650e8f8f1c36152c7d35ae7baee43585a29f652ccf7a
@@ -42,7 +38,7 @@ CMD ["bash"]
 		Size: 29.0 MB (29019949 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:unstable-slim` - linux; arm variant v5
+### `debian:unstable-20230109-slim` - linux; arm variant v5
 
 ```console
 $ docker pull debian@sha256:62735fa9d2aa1e76cd2293f893eb6c67f865ef1749698356ee52a8e011515311
@@ -68,33 +64,7 @@ CMD ["bash"]
 		Size: 28.0 MB (27993714 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:unstable-slim` - linux; arm variant v7
-
-```console
-$ docker pull debian@sha256:360ee95e721bd8940eaa982b02582b38ceac743871c376d81a25f3761c3b17f5
-```
-
--	Docker Version: 20.10.17
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.9 MB (25925887 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:93bad82b2216fc9966777846aa90ebcb3538d27639fd92c3c3bd957e387b4325`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Wed, 21 Dec 2022 02:01:02 GMT
-ADD file:f485d05662fb536538f0540a23df36ea42848d27eb5df307aeac48927075a8c7 in / 
-# Wed, 21 Dec 2022 02:01:03 GMT
-CMD ["bash"]
-```
-
--	Layers:
-	-	`sha256:4963066822311ec2096cbaa86f07537825e97fcaf5984db8a913ba9fffbc8940`  
-		Last Modified: Wed, 21 Dec 2022 02:09:26 GMT  
-		Size: 25.9 MB (25925887 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-### `debian:unstable-slim` - linux; arm64 variant v8
+### `debian:unstable-20230109-slim` - linux; arm64 variant v8
 
 ```console
 $ docker pull debian@sha256:027145899438c9b860e6b30de450105fa0c6ba3adb28a69ca6f3be36a1cf7d75
@@ -120,7 +90,7 @@ CMD ["bash"]
 		Size: 29.1 MB (29067453 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:unstable-slim` - linux; 386
+### `debian:unstable-20230109-slim` - linux; 386
 
 ```console
 $ docker pull debian@sha256:2937eb2c2f2b8e2113b4bc55c782bf7113f82e772ce1d9dc79ba699184a431d1
@@ -146,85 +116,7 @@ CMD ["bash"]
 		Size: 30.1 MB (30059438 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:unstable-slim` - linux; mips64le
-
-```console
-$ docker pull debian@sha256:ea7a0763cbc56b6fce57f6be123da23ffca280aaa84aa6e93b1cf95d8071c845
-```
-
--	Docker Version: 20.10.17
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **29.1 MB (29144726 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1cf8b5cd4da66f302754a54a02923bfb63ba428c195a95d4fc5193ce6d89dba8`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Wed, 21 Dec 2022 01:15:04 GMT
-ADD file:7e5fdfa431b357855a7a7a55d2c2d54a3deb9be6d9eb0046d2b7375249edc2fd in / 
-# Wed, 21 Dec 2022 01:15:09 GMT
-CMD ["bash"]
-```
-
--	Layers:
-	-	`sha256:065876a1d6350ff657116cce758863e50d46e0e000b56b57ba410b7e2de95d28`  
-		Last Modified: Wed, 21 Dec 2022 01:23:39 GMT  
-		Size: 29.1 MB (29144726 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-### `debian:unstable-slim` - linux; ppc64le
-
-```console
-$ docker pull debian@sha256:8011416ba9338c68ad48fda3fbaa5af73ffbbd54859e4e6d5f15bf0baeeaccbe
-```
-
--	Docker Version: 20.10.12
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.2 MB (33191930 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:06371e9ffa81365ac9efd8028cf3088257bd19ce3035472cad2599d658e94df1`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Wed, 21 Dec 2022 01:20:00 GMT
-ADD file:c4cb8bb2468d94ca9ab3ee34d9a00503e65328068756319d09ff6998750c9b4d in / 
-# Wed, 21 Dec 2022 01:20:02 GMT
-CMD ["bash"]
-```
-
--	Layers:
-	-	`sha256:033406bc365f72fefa0b274c24c9b61639c0a0e025cc3fdf9405c9dc0db42fb2`  
-		Last Modified: Wed, 21 Dec 2022 01:26:32 GMT  
-		Size: 33.2 MB (33191930 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-### `debian:unstable-slim` - linux; riscv64
-
-```console
-$ docker pull debian@sha256:698868bf852d978cc3f37dc446e9dbef1107770c585e2876cce6304e7da9d262
-```
-
--	Docker Version: 20.10.17
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.3 MB (25347293 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:be630c7e9fb88e9ea8303a9321a4aad9ace7f82d070063a2d436ff94abbc4a8a`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Wed, 21 Dec 2022 01:14:08 GMT
-ADD file:68b77824468d0781713b599f9b1cd56fa4f45f99f7bf83462e1f8aa6aa7545c7 in / 
-# Wed, 21 Dec 2022 01:14:09 GMT
-CMD ["bash"]
-```
-
--	Layers:
-	-	`sha256:314ec791a5df6450632f48d32f9fe95124ab977c806ce49fa0dbf817fe11dc6c`  
-		Last Modified: Wed, 21 Dec 2022 01:32:08 GMT  
-		Size: 25.3 MB (25347293 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-### `debian:unstable-slim` - linux; s390x
+### `debian:unstable-20230109-slim` - linux; s390x
 
 ```console
 $ docker pull debian@sha256:476932a978b16110ebfd90542560f41a42134e7f7cf2b459f9515df67735013c

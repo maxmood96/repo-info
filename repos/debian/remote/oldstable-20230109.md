@@ -1,17 +1,16 @@
-## `debian:oldstable`
+## `debian:oldstable-20230109`
 
 ```console
-$ docker pull debian@sha256:e50b6f6d1697d112363462f3289f216a299bba171e9075a6a144c2791401d86c
+$ docker pull debian@sha256:2769c21ef7da49629154f444ca1bc06a0d853f5a984f19aa1dcedc1cb207185c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 4
+-	Platforms: 3
 	-	linux; amd64
-	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	linux; 386
 
-### `debian:oldstable` - linux; amd64
+### `debian:oldstable-20230109` - linux; amd64
 
 ```console
 $ docker pull debian@sha256:4fd99a1dec058e64eb0970581b8506fdeaac0d85d718ca2fb73649bd12df1ecf
@@ -37,33 +36,7 @@ CMD ["bash"]
 		Size: 50.4 MB (50448890 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:oldstable` - linux; arm variant v7
-
-```console
-$ docker pull debian@sha256:f398f194fe4504046e0d0f724524a8d5893b487b7170f06ec4e5e4d2870291c5
-```
-
--	Docker Version: 20.10.17
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **45.9 MB (45915615 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:65ec5062dd98225bf03d0b80cf806abb4a4bdb6a034e010f44332effd4586b9a`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Wed, 21 Dec 2022 01:59:03 GMT
-ADD file:670ca80d5b8d1c8ab5dbfe37fcfb4cd28df09c9ceaf2179cb29208e4bf101010 in / 
-# Wed, 21 Dec 2022 01:59:04 GMT
-CMD ["bash"]
-```
-
--	Layers:
-	-	`sha256:9033e9146b3cce0177082213ca1e89bdca91ba3e423a9f93907f1b240bb8771e`  
-		Last Modified: Wed, 21 Dec 2022 02:06:27 GMT  
-		Size: 45.9 MB (45915615 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-### `debian:oldstable` - linux; arm64 variant v8
+### `debian:oldstable-20230109` - linux; arm64 variant v8
 
 ```console
 $ docker pull debian@sha256:8823a1b4e77381776be9fdb3b1d8e864c785107a80231ceee02a5d4cf19ee2fb
@@ -89,7 +62,7 @@ CMD ["bash"]
 		Size: 49.2 MB (49233826 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:oldstable` - linux; 386
+### `debian:oldstable-20230109` - linux; 386
 
 ```console
 $ docker pull debian@sha256:a3e81c52cccf0ed358f8e636c98257ccb131fd07a69de28efeaa132278a78844

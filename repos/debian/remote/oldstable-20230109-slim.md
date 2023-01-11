@@ -1,17 +1,16 @@
-## `debian:oldstable-slim`
+## `debian:oldstable-20230109-slim`
 
 ```console
-$ docker pull debian@sha256:578df4f4728a98316f6a266b7a87fc531e3f6cc3206d2957ba83bb6db541d2a1
+$ docker pull debian@sha256:d8773c99e632947c403f1a77f196211f9ff58c2d3033c726ee41c028aa6e3e13
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 4
+-	Platforms: 3
 	-	linux; amd64
-	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	linux; 386
 
-### `debian:oldstable-slim` - linux; amd64
+### `debian:oldstable-20230109-slim` - linux; amd64
 
 ```console
 $ docker pull debian@sha256:268fbb9d49aa31d5b1f7da9aed1464c9c8a76196365030c03342e4cb7bde78b0
@@ -37,33 +36,7 @@ CMD ["bash"]
 		Size: 27.1 MB (27140364 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:oldstable-slim` - linux; arm variant v7
-
-```console
-$ docker pull debian@sha256:99bad0bf7c86feb0a7cdae08feeb77f2d218ea9232d538b7b261f8bad7969e22
-```
-
--	Docker Version: 20.10.17
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **22.7 MB (22748877 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a50d38ceb63803e7cecb9de3e67cdb924ab40d91bed205649daeab08f2bd77a6`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Wed, 21 Dec 2022 01:59:18 GMT
-ADD file:ab78909b05d99936016027bf7f824309a759cd7565fad6aecbb3dbf067d1777f in / 
-# Wed, 21 Dec 2022 01:59:18 GMT
-CMD ["bash"]
-```
-
--	Layers:
-	-	`sha256:445ceee1ae98a273790226f44b0e4bf03fd1542fffcaad07dc7a9eea00e3d642`  
-		Last Modified: Wed, 21 Dec 2022 02:06:49 GMT  
-		Size: 22.7 MB (22748877 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-### `debian:oldstable-slim` - linux; arm64 variant v8
+### `debian:oldstable-20230109-slim` - linux; arm64 variant v8
 
 ```console
 $ docker pull debian@sha256:3b4f33a1098d847a62c82682a7914584374263ff70fa05fd9db8c7c0be9a4815
@@ -89,7 +62,7 @@ CMD ["bash"]
 		Size: 25.9 MB (25914954 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `debian:oldstable-slim` - linux; 386
+### `debian:oldstable-20230109-slim` - linux; 386
 
 ```console
 $ docker pull debian@sha256:2e3e66cb8c5a4bf353ac5f444894347fdd636974897707fa721b7dc41bd42cd0
