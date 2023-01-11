@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:612cf7cf2c84d13a438200cbd8e92896471b39c9cfbdd4f932e203ee2aa35284`
-- Created: `2023-01-06T02:13:12.79875201Z`
-- Virtual Size: ~ 199.58 Mb  
+- Image ID: `sha256:0d81b3714f63e39209a059ad85704328c2591e51a1a0529183297e1d08c3af1e`
+- Created: `2023-01-09T23:05:19.960683428Z`
+- Virtual Size: ~ 192.21 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -217,16 +217,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20220614-r3 description:
+ca-certificates-20220614-r4 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20220614-r3 webpage:
+ca-certificates-20220614-r4 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20220614-r3 installed size:
+ca-certificates-20220614-r4 installed size:
 688 KiB
 
-ca-certificates-20220614-r3 license:
+ca-certificates-20220614-r4 license:
 MPL-2.0 AND MIT
 
 ```
@@ -234,16 +234,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20220614-r3 description:
+ca-certificates-bundle-20220614-r4 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20220614-r3 webpage:
+ca-certificates-bundle-20220614-r4 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20220614-r3 installed size:
+ca-certificates-bundle-20220614-r4 installed size:
 232 KiB
 
-ca-certificates-bundle-20220614-r3 license:
+ca-certificates-bundle-20220614-r4 license:
 MPL-2.0 AND MIT
 
 ```
