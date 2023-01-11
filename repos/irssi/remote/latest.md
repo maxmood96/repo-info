@@ -1,7 +1,7 @@
 ## `irssi:latest`
 
 ```console
-$ docker pull irssi@sha256:4715eb944ebd47c596a40358e54c7d861c35adf7e7c58dedb0de5681bdbd87d5
+$ docker pull irssi@sha256:32c6f123c8ee5a1136d0943c589e70f64b87b899f7a081479a4e707cba7e5361
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -130,57 +130,57 @@ CMD ["irssi"]
 ### `irssi:latest` - linux; arm variant v7
 
 ```console
-$ docker pull irssi@sha256:cce333d53df8aba87475873da7360045c912dbaae06debfe979423677384549e
+$ docker pull irssi@sha256:92ef70c98de8e3b2076e007d7a223f98b340d2baa48166ae6ad77cd564afef4c
 ```
 
 -	Docker Version: 20.10.17
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **45.1 MB (45116230 bytes)**  
+-	Total Size: **45.1 MB (45116281 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ef4513ce7947bac195a0e3e3b9531fe709e15afca46935ef2daa9193c25a74d0`
+-	Image ID: `sha256:7da254797f695c4496a10a5ec532f3186679bdc3678991edfaa206ec5bedad26`
 -	Default Command: `["irssi"]`
 
 ```dockerfile
-# Wed, 21 Dec 2022 01:58:25 GMT
-ADD file:d62015d4eb206b606ae0bc76253de55403ede851d6fae0277e76bdaed196a848 in / 
-# Wed, 21 Dec 2022 01:58:26 GMT
+# Wed, 11 Jan 2023 04:00:36 GMT
+ADD file:3fb94bfd628f3ebd91db74501bd297a817977cc066664f0fa342442b3352e0be in / 
+# Wed, 11 Jan 2023 04:00:37 GMT
 CMD ["bash"]
-# Wed, 21 Dec 2022 02:45:45 GMT
+# Wed, 11 Jan 2023 06:47:22 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		libdatetime-perl 		libwww-perl 		perl 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 21 Dec 2022 02:45:45 GMT
+# Wed, 11 Jan 2023 06:47:23 GMT
 ENV HOME=/home/user
-# Wed, 21 Dec 2022 02:45:45 GMT
+# Wed, 11 Jan 2023 06:47:24 GMT
 RUN set -eux; 	useradd --create-home --home-dir "$HOME" user; 	mkdir "$HOME/.irssi"; 	chown -R user:user "$HOME"
-# Wed, 21 Dec 2022 02:45:46 GMT
+# Wed, 11 Jan 2023 06:47:24 GMT
 ENV LANG=C.UTF-8
-# Wed, 21 Dec 2022 02:45:46 GMT
+# Wed, 11 Jan 2023 06:47:24 GMT
 ENV IRSSI_VERSION=1.4.3
-# Wed, 21 Dec 2022 02:46:23 GMT
+# Wed, 11 Jan 2023 06:48:02 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		dirmngr 		gnupg 		libglib2.0-dev 		libncurses-dev 		libperl-dev 		libssl-dev 		libtool 		lynx 		meson 		ninja-build 		pkg-config 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz" -O /tmp/irssi.tar.xz; 	wget "https://github.com/irssi/irssi/releases/download/${IRSSI_VERSION}/irssi-${IRSSI_VERSION}.tar.xz.asc" -O /tmp/irssi.tar.xz.asc; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7EE65E3082A5FB06AC7C368D00CCB587DDBEF0E1; 	gpg --batch --verify /tmp/irssi.tar.xz.asc /tmp/irssi.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /tmp/irssi.tar.xz.asc; 		mkdir -p /usr/src/irssi; 	tar -xf /tmp/irssi.tar.xz -C /usr/src/irssi --strip-components 1; 	rm /tmp/irssi.tar.xz; 		cd /usr/src/irssi; 	meson 		-Denable-true-color=yes 		-Dwith-bot=yes 		-Dwith-perl=yes 		-Dwith-proxy=yes 		Build 	; 	ninja -C Build -j "$(nproc)"; 	ninja -C Build install; 		cd /; 	rm -rf /usr/src/irssi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		irssi --version
-# Wed, 21 Dec 2022 02:46:23 GMT
+# Wed, 11 Jan 2023 06:48:02 GMT
 WORKDIR /home/user
-# Wed, 21 Dec 2022 02:46:23 GMT
+# Wed, 11 Jan 2023 06:48:02 GMT
 USER user
-# Wed, 21 Dec 2022 02:46:23 GMT
+# Wed, 11 Jan 2023 06:48:02 GMT
 CMD ["irssi"]
 ```
 
 -	Layers:
-	-	`sha256:f8686edc9eb6f431c8c17a5eddc7bd38917d3b2d7835970d4fdb2ad0db464766`  
-		Last Modified: Wed, 21 Dec 2022 02:05:08 GMT  
-		Size: 26.6 MB (26559455 bytes)  
+	-	`sha256:330ad28688ae3fa5f3b241fef3efd076299bec9874e0597b1c16dcf8a165a53d`  
+		Last Modified: Wed, 11 Jan 2023 04:07:49 GMT  
+		Size: 26.6 MB (26559488 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46886260ce8dd8c8c75c1bb0d7d9deee704bc4ab1c30a6b69703a9d61ea9780e`  
-		Last Modified: Wed, 21 Dec 2022 02:47:02 GMT  
-		Size: 14.4 MB (14365121 bytes)  
+	-	`sha256:3bdd57663a878afb560799635f717bcfddb70613060f3b86f5cbc4c64e41cb05`  
+		Last Modified: Wed, 11 Jan 2023 06:48:38 GMT  
+		Size: 14.4 MB (14365153 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90989c6955035e97e5d3a9f4fdef6173679835bb6b873273271e265bcef6d4af`  
-		Last Modified: Wed, 21 Dec 2022 02:46:57 GMT  
+	-	`sha256:cf7f74bd6c15784bb209aa007b6a9ca8c364554c87841c0d90f14716e323550d`  
+		Last Modified: Wed, 11 Jan 2023 06:48:33 GMT  
 		Size: 4.2 KB (4168 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2db923e9ce07910d1578c635d26cdb21ff7514721e1ac68e2a6064ecf83889da`  
-		Last Modified: Wed, 21 Dec 2022 02:46:58 GMT  
-		Size: 4.2 MB (4187486 bytes)  
+	-	`sha256:ec10f4084659f4c15dc6f0c1e6d5e3d8b3c97b1b4a7f134d5b9fd8fb944b893c`  
+		Last Modified: Wed, 11 Jan 2023 06:48:34 GMT  
+		Size: 4.2 MB (4187472 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `irssi:latest` - linux; arm64 variant v8
