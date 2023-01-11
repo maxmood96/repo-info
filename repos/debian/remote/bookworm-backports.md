@@ -1,7 +1,7 @@
 ## `debian:bookworm-backports`
 
 ```console
-$ docker pull debian@sha256:772de74b4637cac410b96e0fba541d558f9d514ba10dbd6e39a26caa74105154
+$ docker pull debian@sha256:9103846258ae7957780553fb501e97460705c41cb1b79bd16022bef038073e4d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -178,33 +178,33 @@ RUN echo 'deb http://deb.debian.org/debian bookworm-backports main' > /etc/apt/s
 ### `debian:bookworm-backports` - linux; mips64le
 
 ```console
-$ docker pull debian@sha256:f91715cf01aa1d7f1628caddaf4db50c48e0be8aea4a531c0173d30add8079d9
+$ docker pull debian@sha256:9ba915d876be8b3a892cf4bd31fc0bceebaa504c67801c002aa9900007585f05
 ```
 
 -	Docker Version: 20.10.17
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.3 MB (50336974 bytes)**  
+-	Total Size: **50.1 MB (50120793 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ed4fabd5e9d86299c96c9ac3091d77a5ecfcc7d65a65ff7fd8b29f045d5ae0b6`
+-	Image ID: `sha256:2a1cf37a8565f09616d2ba53528938f63a0d254f7b4ec6d070690ff94c710c31`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Wed, 21 Dec 2022 01:08:43 GMT
-ADD file:b2458569ae73892acee2eab6d63bd5fac233b8f2939355fc7605c8906c1bbd30 in / 
-# Wed, 21 Dec 2022 01:08:49 GMT
+# Wed, 11 Jan 2023 16:32:17 GMT
+ADD file:aa37d39fc83f9cce3f1f8522cce22a9c3f9734fea6996431d00a2921079da343 in / 
+# Wed, 11 Jan 2023 16:32:22 GMT
 CMD ["bash"]
-# Wed, 21 Dec 2022 01:08:59 GMT
+# Wed, 11 Jan 2023 16:32:37 GMT
 RUN echo 'deb http://deb.debian.org/debian bookworm-backports main' > /etc/apt/sources.list.d/backports.list
 ```
 
 -	Layers:
-	-	`sha256:63a99937a40bd4c10c6b0d4be0826a18d963fdd5ca9c794853e98ca819d68691`  
-		Last Modified: Wed, 21 Dec 2022 01:16:43 GMT  
-		Size: 50.3 MB (50336746 bytes)  
+	-	`sha256:951f9db918ae0d2bc2c008522e4d5801e026653a12e21d76a02a48b96faaaabf`  
+		Last Modified: Wed, 11 Jan 2023 16:41:22 GMT  
+		Size: 50.1 MB (50120566 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1d129eb990c579f00619b717b3bd5a5d11e01e6b1517e507c672a24aa6a64ab9`  
-		Last Modified: Wed, 21 Dec 2022 01:16:52 GMT  
-		Size: 228.0 B  
+	-	`sha256:09c71284ef19f3799e0ef596dda9b75ea15d39c1586ff1acc0fc72c671e212e8`  
+		Last Modified: Wed, 11 Jan 2023 16:41:32 GMT  
+		Size: 227.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `debian:bookworm-backports` - linux; ppc64le
