@@ -1,7 +1,7 @@
 ## `couchdb:latest`
 
 ```console
-$ docker pull couchdb@sha256:2cb4cacb5b2e8b8ee60b692f42c63f02d23cae0ea1a5e324e26737bf328f335e
+$ docker pull couchdb@sha256:3cda8b2faa09e90850d611a3d45afd7c98b05bc7a16d9381c4f8577a2244afee
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -114,14 +114,14 @@ CMD ["/opt/couchdb/bin/couchdb"]
 ### `couchdb:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull couchdb@sha256:f4406d33306fe49a7a2e30f35b5dbd5cbfa273d862a666d4eeade997434ba124
+$ docker pull couchdb@sha256:ed00ba73f951d5f496355f043a50b0c1d28169ff66e1383605c87cd5b26c6144
 ```
 
 -	Docker Version: 20.10.17
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **89.5 MB (89542588 bytes)**  
+-	Total Size: **89.5 MB (89524742 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d525ca39e94698fcf20b7b2375614336e6667fa8df217e74fd18d84aa59ec7b1`
+-	Image ID: `sha256:b855eaae40b75dc29eb937b8f1d1a345f679ef01cbf689fa45b0637fa2e139c9`
 -	Entrypoint: `["tini","--","\/docker-entrypoint.sh"]`
 -	Default Command: `["\/opt\/couchdb\/bin\/couchdb"]`
 
@@ -142,27 +142,27 @@ RUN set -eux;     apt-get update;     apt-get install -y --no-install-recommends
 ENV GPG_COUCH_KEY=390EF70BB1EA12B2773962950EE62FB37A00258D
 # Wed, 11 Jan 2023 03:57:50 GMT
 RUN set -eux;     apt-get update;     apt-get install -y curl;     export GNUPGHOME="$(mktemp -d)";     curl -fL -o keys.asc https://couchdb.apache.org/repo/keys.asc;     gpg --batch --import keys.asc;     gpg --batch --export "${GPG_COUCH_KEY}" > /usr/share/keyrings/couchdb-archive-keyring.gpg;     command -v gpgconf && gpgconf --kill all || :;     rm -rf "$GNUPGHOME";     apt-key list;     apt purge -y --autoremove curl;     rm -rf /var/lib/apt/lists/*
-# Wed, 11 Jan 2023 03:57:50 GMT
-ENV COUCHDB_VERSION=3.3.0
-# Wed, 11 Jan 2023 03:57:50 GMT
+# Wed, 11 Jan 2023 22:08:39 GMT
+ENV COUCHDB_VERSION=3.3.1
+# Wed, 11 Jan 2023 22:08:40 GMT
 RUN . /etc/os-release;     echo "deb [signed-by=/usr/share/keyrings/couchdb-archive-keyring.gpg] https://apache.jfrog.io/artifactory/couchdb-deb/ ${VERSION_CODENAME} main" |         tee /etc/apt/sources.list.d/couchdb.list >/dev/null
-# Wed, 11 Jan 2023 03:58:02 GMT
+# Wed, 11 Jan 2023 22:08:52 GMT
 RUN set -eux;     apt-get update;         echo "couchdb couchdb/mode select none" | debconf-set-selections;     DEBIAN_FRONTEND=noninteractive apt-get install -y --allow-downgrades --allow-remove-essential --allow-change-held-packages             couchdb="$COUCHDB_VERSION"~bullseye     ;     rmdir /var/lib/couchdb /var/log/couchdb;     rm /opt/couchdb/data /opt/couchdb/var/log;     mkdir -p /opt/couchdb/data /opt/couchdb/var/log;     chown couchdb:couchdb /opt/couchdb/data /opt/couchdb/var/log;     chmod 777 /opt/couchdb/data /opt/couchdb/var/log;     rm /opt/couchdb/etc/default.d/10-filelog.ini;     find /opt/couchdb \! \( -user couchdb -group couchdb \) -exec chown -f couchdb:couchdb '{}' +;     find /opt/couchdb/etc -type d ! -perm 0755 -exec chmod -f 0755 '{}' +;     find /opt/couchdb/etc -type f ! -perm 0644 -exec chmod -f 0644 '{}' +;     chmod -f 0777 /opt/couchdb/etc/local.d;     rm -rf /var/lib/apt/lists/*;
-# Wed, 11 Jan 2023 03:58:02 GMT
+# Wed, 11 Jan 2023 22:08:52 GMT
 COPY --chown=couchdb:couchdbfile:459581cb8ff69dbc1cb246db7b488d5b6127e57fcbb0d0df1288722b5cd25111 in /opt/couchdb/etc/default.d/ 
-# Wed, 11 Jan 2023 03:58:02 GMT
-COPY --chown=couchdb:couchdbfile:f98e48e4254cb3ec4a766f3b9bd3260f16676a310eb0356ee9775c62edb3e8f3 in /opt/couchdb/etc/ 
-# Wed, 11 Jan 2023 03:58:02 GMT
+# Wed, 11 Jan 2023 22:08:52 GMT
+COPY --chown=couchdb:couchdbfile:ef998123ee941cb75b9e8f8c244fd9e244aff7d6394013d8db7515f50882f0cd in /opt/couchdb/etc/ 
+# Wed, 11 Jan 2023 22:08:53 GMT
 COPY file:0a26a859e55e89f8409b5ab4022d28cfe05edddfe16a742ba28c73ecdbcff9c1 in /usr/local/bin 
-# Wed, 11 Jan 2023 03:58:03 GMT
+# Wed, 11 Jan 2023 22:08:53 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /docker-entrypoint.sh # backwards compat
-# Wed, 11 Jan 2023 03:58:03 GMT
+# Wed, 11 Jan 2023 22:08:53 GMT
 ENTRYPOINT ["tini" "--" "/docker-entrypoint.sh"]
-# Wed, 11 Jan 2023 03:58:03 GMT
+# Wed, 11 Jan 2023 22:08:53 GMT
 VOLUME [/opt/couchdb/data]
-# Wed, 11 Jan 2023 03:58:03 GMT
+# Wed, 11 Jan 2023 22:08:53 GMT
 EXPOSE 4369 5984 9100
-# Wed, 11 Jan 2023 03:58:03 GMT
+# Wed, 11 Jan 2023 22:08:53 GMT
 CMD ["/opt/couchdb/bin/couchdb"]
 ```
 
@@ -187,28 +187,28 @@ CMD ["/opt/couchdb/bin/couchdb"]
 		Last Modified: Wed, 11 Jan 2023 03:59:32 GMT  
 		Size: 295.5 KB (295517 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30f094d764575f750f083741eef9b006b2b8f38377066123276183970c9f4b9c`  
-		Last Modified: Wed, 11 Jan 2023 03:59:32 GMT  
-		Size: 275.0 B  
+	-	`sha256:df5bcd70f03fefccc3314c5bd804107f5ca7ec891100c2e85d481e9b84f377c3`  
+		Last Modified: Wed, 11 Jan 2023 22:09:15 GMT  
+		Size: 278.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4d18c7d73142c458e120afbad0b523afbea47c5dd64c907c36f3eadbe1ab4f5b`  
-		Last Modified: Wed, 11 Jan 2023 03:59:35 GMT  
-		Size: 52.5 MB (52549696 bytes)  
+	-	`sha256:8a54b1952a30cff448a907d4f82fbbac930beeb1bc452c05e9270fef7a3b056e`  
+		Last Modified: Wed, 11 Jan 2023 22:09:18 GMT  
+		Size: 52.5 MB (52531616 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:812134a97ce41f8f31052309638b75bb6aaa642f97c7651ad4de14d3ae8367c5`  
-		Last Modified: Wed, 11 Jan 2023 03:59:30 GMT  
-		Size: 382.0 B  
+	-	`sha256:0782ea0b803ce74bf6e5d05e1a11776e25001beb73576a0c42faa330c238eda0`  
+		Last Modified: Wed, 11 Jan 2023 22:09:13 GMT  
+		Size: 381.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08c887f3198f5407ad0f3df301a53ecb084eb9ce4b962b72db984d1aea1aa401`  
-		Last Modified: Wed, 11 Jan 2023 03:59:30 GMT  
-		Size: 766.0 B  
+	-	`sha256:d347329aa65d9c4b005d93d848c27e025f14d6cb638099fafbecd04dbd43c4f7`  
+		Last Modified: Wed, 11 Jan 2023 22:09:13 GMT  
+		Size: 998.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:38d3dce85443993cd688868bce0e21e6bbe5e1d91ea7478a3c41fc55d23be5f3`  
-		Last Modified: Wed, 11 Jan 2023 03:59:30 GMT  
+	-	`sha256:0736c691206ce54706b7761f838f3cedd9a8c8f72b933d6ee58c55070659bfb5`  
+		Last Modified: Wed, 11 Jan 2023 22:09:14 GMT  
 		Size: 2.2 KB (2186 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe79279fcda944111b666bef5e8fcd9e17a0ffc5bb460227e37a4e0e6d3f3562`  
-		Last Modified: Wed, 11 Jan 2023 03:59:30 GMT  
+	-	`sha256:9b0d0ee154aca0d4270a4eced51b0e6de35a1d7336bb1dc51549889432ea5afc`  
+		Last Modified: Wed, 11 Jan 2023 22:09:14 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
