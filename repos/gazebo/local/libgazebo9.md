@@ -5503,9 +5503,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris postgresql-10=10.22-0ubuntu0.18.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-10/postgresql-10_10.22-0ubuntu0.18.04.1.dsc' postgresql-10_10.22-0ubuntu0.18.04.1.dsc 3617 SHA512:b936ea4eedce64f347e4dc7278afd27d14ba77aca4b461daa90039de025e50a72318652a775d8fdae6959b77306158f72f6071a8b2145895d61c32178d1eac58
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-10/postgresql-10_10.22.orig.tar.gz' postgresql-10_10.22.orig.tar.gz 25460734 SHA512:8b5af86f02e038f22c08864467df293f62bfd2fb2411fd1ba4d3cf6f7bced0f86ff5488c6ba28636c1eb02c97b6e2ab8200a95afaf5bbdac5d90f87a3fb5464b
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-10/postgresql-10_10.22-0ubuntu0.18.04.1.debian.tar.xz' postgresql-10_10.22-0ubuntu0.18.04.1.debian.tar.xz 36456 SHA512:4f40a29eba3e1b62e443656015f2dd417effea6b8556a7dc8bc56a5e467df8c83892d10e42698d4b99095cf20f3b3d5ac183dcaae6645736ac8824fa505c7eea
+'http://security.ubuntu.com/ubuntu/pool/main/p/postgresql-10/postgresql-10_10.22-0ubuntu0.18.04.1.dsc' postgresql-10_10.22-0ubuntu0.18.04.1.dsc 3617 SHA512:b936ea4eedce64f347e4dc7278afd27d14ba77aca4b461daa90039de025e50a72318652a775d8fdae6959b77306158f72f6071a8b2145895d61c32178d1eac58
+'http://security.ubuntu.com/ubuntu/pool/main/p/postgresql-10/postgresql-10_10.22.orig.tar.gz' postgresql-10_10.22.orig.tar.gz 25460734 SHA512:8b5af86f02e038f22c08864467df293f62bfd2fb2411fd1ba4d3cf6f7bced0f86ff5488c6ba28636c1eb02c97b6e2ab8200a95afaf5bbdac5d90f87a3fb5464b
+'http://security.ubuntu.com/ubuntu/pool/main/p/postgresql-10/postgresql-10_10.22-0ubuntu0.18.04.1.debian.tar.xz' postgresql-10_10.22-0ubuntu0.18.04.1.debian.tar.xz 36456 SHA512:4f40a29eba3e1b62e443656015f2dd417effea6b8556a7dc8bc56a5e467df8c83892d10e42698d4b99095cf20f3b3d5ac183dcaae6645736ac8824fa505c7eea
 ```
 
 ### `dpkg` source package: `procps=2:3.3.12-3ubuntu1.2`
