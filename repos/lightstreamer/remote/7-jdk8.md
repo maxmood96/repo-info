@@ -1,7 +1,7 @@
 ## `lightstreamer:7-jdk8`
 
 ```console
-$ docker pull lightstreamer@sha256:c462d37d78fa07c12a37927cf67e46af05cb97e745a86f11e6023ecdb0622214
+$ docker pull lightstreamer@sha256:7e2c0c247654f9aa35ba8624c62b95aebb8c33d32e3a935de3c8c722e77f820a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,14 +12,14 @@ $ docker pull lightstreamer@sha256:c462d37d78fa07c12a37927cf67e46af05cb97e745a86
 ### `lightstreamer:7-jdk8` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:7f76e92c64b1a2b589ebf6faac1f32a0b938c50bc6695c38911a9e29ba54ef76
+$ docker pull lightstreamer@sha256:9576a6b67b2930e489d5ae27bf99b39b3ecd454a16441f368896f9b886660b1c
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **207.8 MB (207834420 bytes)**  
+-	Total Size: **207.8 MB (207836137 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:03179c84fbbe6d24ba1fcc3f1aead286916ad7679218efad1f360c3ed7c06a8f`
+-	Image ID: `sha256:a61dcc3860bda76a0b68fad5f023196abf368d95d0a3fce72f231014e30c8f19`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
@@ -47,19 +47,19 @@ LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.co
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
 # Fri, 09 Dec 2022 08:49:50 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Mon, 12 Dec 2022 20:46:12 GMT
-ENV LIGHTSTREAMER_VERSION=7.3.2
-# Mon, 12 Dec 2022 20:46:12 GMT
-ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.3.2/Lightstreamer-7.3.2.tar.gz
-# Mon, 12 Dec 2022 20:46:20 GMT
+# Thu, 12 Jan 2023 02:18:38 GMT
+ENV LIGHTSTREAMER_VERSION=7.3.3
+# Thu, 12 Jan 2023 02:18:38 GMT
+ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.3.3/Lightstreamer-7.3.3.tar.gz
+# Thu, 12 Jan 2023 02:18:43 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Mon, 12 Dec 2022 20:46:21 GMT
+# Thu, 12 Jan 2023 02:18:43 GMT
 USER lightstreamer
-# Mon, 12 Dec 2022 20:46:21 GMT
+# Thu, 12 Jan 2023 02:18:43 GMT
 EXPOSE 8080
-# Mon, 12 Dec 2022 20:46:21 GMT
+# Thu, 12 Jan 2023 02:18:44 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Mon, 12 Dec 2022 20:46:21 GMT
+# Thu, 12 Jan 2023 02:18:44 GMT
 CMD ["./LS.sh" "run"]
 ```
 
@@ -88,9 +88,9 @@ CMD ["./LS.sh" "run"]
 		Last Modified: Fri, 09 Dec 2022 08:52:05 GMT  
 		Size: 2.4 KB (2392 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:411676f9c0a90605c5c7c94c1280ea67747b64a22501ebc1c9a121fd9b363e6c`  
-		Last Modified: Mon, 12 Dec 2022 20:47:40 GMT  
-		Size: 57.8 MB (57843615 bytes)  
+	-	`sha256:0e22467b7b52616bd5f40b4e4405845188e29645d3a733b812946de23844f088`  
+		Last Modified: Thu, 12 Jan 2023 02:19:56 GMT  
+		Size: 57.8 MB (57845332 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7-jdk8` - linux; arm64 variant v8
