@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2db77abc4432149210c5f25b1753f567f5a54b113d439df6b6e25930bd38f780`
-- Created: `2022-12-09T05:13:00.349817315Z`
-- Virtual Size: ~ 430.79 Mb  
+- Image ID: `sha256:19b3243e3cf1befd33dea790fab5e8dd3ac26fa1a30e25d6963966caf1142f48`
+- Created: `2023-01-12T23:22:28.72581336Z`
+- Virtual Size: ~ 431.09 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
@@ -352,11 +352,11 @@ $ apt-get source -qq --print-uris cppcheck=1.90-4build1
 'http://archive.ubuntu.com/ubuntu/pool/universe/c/cppcheck/cppcheck_1.90-4build1.debian.tar.xz' cppcheck_1.90-4build1.debian.tar.xz 11404 SHA256:67ebd147f808dc6837c5eddab3d6f707a5cdf09e7ec1750223d29bd961e1b48e
 ```
 
-### `dpkg` source package: `curl=7.68.0-1ubuntu2.14`
+### `dpkg` source package: `curl=7.68.0-1ubuntu2.15`
 
 Binary Packages:
 
-- `libcurl4:amd64=7.68.0-1ubuntu2.14`
+- `libcurl4:amd64=7.68.0-1ubuntu2.15`
 
 Licenses: (parsed from: `/usr/share/doc/libcurl4/copyright`)
 
@@ -367,9 +367,14 @@ Licenses: (parsed from: `/usr/share/doc/libcurl4/copyright`)
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.68.0-1ubuntu2.15
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.15.dsc' curl_7.68.0-1ubuntu2.15.dsc 2737 SHA512:26c41b8eac11f5274527ae5b19f1cbaa529a8688f7196cf4dcc42f96a6bd10e236c205a311d2c14a323e44681a3f4ea6fb0d31dfb94f0ffe7add6f9bfdc2cc9f
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0.orig.tar.gz' curl_7.68.0.orig.tar.gz 4096350 SHA512:58b42c08b1cf4cb6e68f8e469d5b5f6298eebe286ba2677ad29e1a7eefd15b8609af54544f4c5a7dadebbd3b23bd77700830f2f60fbea7ae3f2f306e640010b0
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.15.debian.tar.xz' curl_7.68.0-1ubuntu2.15.debian.tar.xz 58376 SHA512:1f20c6fbcb594e6a79af4578029d840e5f054c1bacbed44cd16f6ed420cb6a55f383c09f2b0caf5b1cb3d82aa4ca6aa5dfbe3c1129c6e7511e7065b3738c6b62
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-2ubuntu0.1`
 
@@ -912,14 +917,9 @@ Licenses: (parsed from: `/usr/share/doc/libasn1-8-heimdal/copyright`, `/usr/shar
 - `custom`
 - `none`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris heimdal=7.7.0+dfsg-1ubuntu1.2
-'http://archive.ubuntu.com/ubuntu/pool/main/h/heimdal/heimdal_7.7.0%2bdfsg-1ubuntu1.2.dsc' heimdal_7.7.0+dfsg-1ubuntu1.2.dsc 3391 SHA512:fb1f48d402dcc3b7e514f6f95c4b086eb00527194c86e1c7acbc5eb250cbba01e5dc28e114995c0b5fcc161281488db1969543e6de81aa48298fe266bf995d95
-'http://archive.ubuntu.com/ubuntu/pool/main/h/heimdal/heimdal_7.7.0%2bdfsg.orig.tar.xz' heimdal_7.7.0+dfsg.orig.tar.xz 5945252 SHA512:14141f3fff264c9516f736bcc51c998df69cfaa7108d2387921299efd7e82d79b918dee4029905dc221c204d3340ffc17da9472baf80029372d7c13de328ec0a
-'http://archive.ubuntu.com/ubuntu/pool/main/h/heimdal/heimdal_7.7.0%2bdfsg-1ubuntu1.2.debian.tar.xz' heimdal_7.7.0+dfsg-1ubuntu1.2.debian.tar.xz 130884 SHA512:72cabaa0c299e821da0290cc4bca35de824a36ab6eb4b07eb536e950065bc984d9c590f573d8562c237af194215d0ef841175583102853ae93dd2eb7126f1b3d
-```
 
 ### `dpkg` source package: `hostname=3.23`
 
@@ -1554,19 +1554,24 @@ $ apt-get source -qq --print-uris libzstd=1.4.4+dfsg-3ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.4%2bdfsg-3ubuntu0.1.debian.tar.xz' libzstd_1.4.4+dfsg-3ubuntu0.1.debian.tar.xz 17300 SHA512:0484891be5603d00bd57b799c708b9395fccbaa8c6c44f535377f6fa2c7ac22c01c8a3c1b45e1c1f3c30f19dc74d510626bf82067fcbfb53c39f1bcc2249affe
 ```
 
-### `dpkg` source package: `linux=5.4.0-135.152`
+### `dpkg` source package: `linux=5.4.0-137.154`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.4.0-135.152`
+- `linux-libc-dev:amd64=5.4.0-137.154`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=5.4.0-137.154
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-137.154.dsc' linux_5.4.0-137.154.dsc 7025 SHA512:e07e85715e2eec50a59003d118bb4eb6b3041d200800f63f83c5bdd621601d3ed857bc28604b7bffc938073c64fa19798afb29146307ed8d8af9963b64a98d84
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA512:62b09a7231fd793973c5f59b16c4f6ffce621188b02a71915874b05e8e3f956fb6146d4a4fb1a4475bebe463949ca5a18da12842c3ce7c52e996e6bc4012a074
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-137.154.diff.gz' linux_5.4.0-137.154.diff.gz 10169804 SHA512:16d92c992e0459b8e95a5927536abce3f234013ec29eebebc69d0b9dd0762f01f79ce09accbe74a67ba12a2385c854bf9de09c11ba709cdbd57c8f5d6d97964b
+```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu2`
 
@@ -2422,14 +2427,9 @@ Licenses: (parsed from: `/usr/share/doc/python3-ifcfg/copyright`)
 
 - `BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-ifcfg=0.18-2osrf~focal
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python-ifcfg/python-ifcfg_0.18-2osrf%7efocal.debian.tar.xz' python-ifcfg_0.18-2osrf~focal.debian.tar.xz 2160 SHA512:69e9d1ac6acdcca08fbd311789c4361e03a5d4c5cc234aca75a955b8972758dc5089bd2f445f07564a1be58c983e704aa2f75efae66ce09513cf61083d67d5bb
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python-ifcfg/python-ifcfg_0.18-2osrf%7efocal.dsc' python-ifcfg_0.18-2osrf~focal.dsc 1090 SHA512:520ae77951868ddbfa37de3d93289645a0aea01f5ce795c7c1a95108bdd6aa56769556fb593f9402057fdb8648941e64fd0ef2f55e2a91eae5132355fc55a4f7
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python-ifcfg/python-ifcfg_0.18.orig.tar.gz' python-ifcfg_0.18.orig.tar.gz 16245 SHA512:910feb3e322863bbbc5fbeed1e16ae2291e887f31d54f432fb6592c4098c66699d99d1087f6e2d731e417f9794ed16b1255a0dfdfb612ef9bfdb784943eca190
-```
 
 ### `dpkg` source package: `python-importlib-metadata=1.5.0-1`
 
@@ -2658,14 +2658,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-catkin-pkg-modules=0.5.2-1
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-catkin-pkg-modules/python3-catkin-pkg-modules_0.5.2-1.debian.tar.xz' python3-catkin-pkg-modules_0.5.2-1.debian.tar.xz 2004 SHA512:3cac65ab1e8334b4ccec07609b28359f561e07cb27bd842b0634d1c24f788866e3c102f629586ff9c55d5663bc19e28384ff03cdbabc7c6674dea2bdaa6310f4
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-catkin-pkg-modules/python3-catkin-pkg-modules_0.5.2-1.dsc' python3-catkin-pkg-modules_0.5.2-1.dsc 1019 SHA512:513f451e379cb105fb01559ede2e9c58734b1e21ed048676fc5544c16d8b9e540c5d2330d1f2c2607bc3e0bf22dae737ae1727fba49924608c5dc6c63cbd3ccf
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-catkin-pkg-modules/python3-catkin-pkg-modules_0.5.2.orig.tar.gz' python3-catkin-pkg-modules_0.5.2.orig.tar.gz 62745 SHA512:cef4a8f79828c221cb07924a7f724a547d7fd60a0a7690b8a5bf7bb663e263e27ef7fbce55ef46f17319d3bfe8d61941eb2fd63d4323f01e35b73a3d0b26fdf5
-```
 
 ### `dpkg` source package: `python3-defaults=3.8.2-0ubuntu2`
 
@@ -2699,14 +2694,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-rosdistro-modules=0.9.0-1
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rosdistro-modules/python3-rosdistro-modules_0.9.0-1.debian.tar.xz' python3-rosdistro-modules_0.9.0-1.debian.tar.xz 2004 SHA512:8312a9e75ed1da0f7da358b6d860e7445253693478651778e0e82d8302941875ffe0ae1c11d6d480299626858d387fd50bbacaab6c686e02d75d8041b1314034
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rosdistro-modules/python3-rosdistro-modules_0.9.0-1.dsc' python3-rosdistro-modules_0.9.0-1.dsc 1038 SHA512:0f8ab8f26b1df89fcec4c12450a76fa18fd94556e08c7a5c4db463031ded956514ff2e7ac7ef8f95fb7d3db58df03186463f763c32455dbbb8bd1176892a750a
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rosdistro-modules/python3-rosdistro-modules_0.9.0.orig.tar.gz' python3-rosdistro-modules_0.9.0.orig.tar.gz 43482 SHA512:7f20ff589fc5343ec39772f51b656022cf3762ed2ee7dddb57b66189e58fdc8408646fbeb488f19e63448448a91215b5869317851a8ccc826cf8e6d87ae92d0b
-```
 
 ### `dpkg` source package: `python3-rospkg-modules=1.4.0-1`
 
@@ -2718,14 +2708,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-rospkg-modules=1.4.0-1
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rospkg-modules/python3-rospkg-modules_1.4.0-1.debian.tar.xz' python3-rospkg-modules_1.4.0-1.debian.tar.xz 1168 SHA512:8a17ebdfedf766ae6043759606e19126f8cfec3d93eb28162a316b0a5d64e98d52acdd47d599e1e3625015caacdc4f0f32c51484d783389919e6f8ce6ca5c18b
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rospkg-modules/python3-rospkg-modules_1.4.0-1.dsc' python3-rospkg-modules_1.4.0-1.dsc 973 SHA512:b309e62c393e33076bc010c275da1c51e4fed2c5531d423b9596e54cf478fffb8abeb501d93f48b0f5e98e8f1b036155ee7495f3f03ebb35b7f57deef6fdcfcc
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rospkg-modules/python3-rospkg-modules_1.4.0.orig.tar.gz' python3-rospkg-modules_1.4.0.orig.tar.gz 41508 SHA512:f8e5fd41d03cfb6d675fcd6a2735a7d38dda6a7b94eec140b9c3b31a6db385c86d35ac13cce39539abc6d41f567de454a9c3304f058edcba66ddb816237e69ba
-```
 
 ### `dpkg` source package: `python3-stdlib-extensions=3.8.10-0ubuntu1~20.04`
 
@@ -2848,11 +2833,11 @@ $ apt-get source -qq --print-uris rhash=1.3.9-1
 'http://archive.ubuntu.com/ubuntu/pool/main/r/rhash/rhash_1.3.9-1.debian.tar.xz' rhash_1.3.9-1.debian.tar.xz 9936 SHA256:64c6405e34a360297e9612564adb4af7fd0e2dc291f25df38252560c7ca1c11e
 ```
 
-### `dpkg` source package: `ros-galactic-action-msgs=1.0.3-2focal.20220825.141118`
+### `dpkg` source package: `ros-galactic-action-msgs=1.0.3-2focal.20221203.094404`
 
 Binary Packages:
 
-- `ros-galactic-action-msgs=1.0.3-2focal.20220825.141118`
+- `ros-galactic-action-msgs=1.0.3-2focal.20221203.094404`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2862,11 +2847,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-actionlib-msgs=2.2.4-1focal.20220825.141704`
+### `dpkg` source package: `ros-galactic-actionlib-msgs=2.2.4-1focal.20221203.095442`
 
 Binary Packages:
 
-- `ros-galactic-actionlib-msgs=2.2.4-1focal.20220825.141704`
+- `ros-galactic-actionlib-msgs=2.2.4-1focal.20221203.095442`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2876,11 +2861,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ament-cmake-auto=1.1.5-1focal.20220124.195758`
+### `dpkg` source package: `ros-galactic-ament-cmake-auto=1.1.6-1focal.20221203.074424`
 
 Binary Packages:
 
-- `ros-galactic-ament-cmake-auto=1.1.5-1focal.20220124.195758`
+- `ros-galactic-ament-cmake-auto=1.1.6-1focal.20221203.074424`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-auto/copyright`)
 
@@ -2890,11 +2875,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-auto/copyright`
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ament-cmake-copyright=0.10.7-1focal.20220430.045202`
+### `dpkg` source package: `ros-galactic-ament-cmake-copyright=0.10.7-1focal.20221203.082151`
 
 Binary Packages:
 
-- `ros-galactic-ament-cmake-copyright=0.10.7-1focal.20220430.045202`
+- `ros-galactic-ament-cmake-copyright=0.10.7-1focal.20221203.082151`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-copyright/copyright`)
 
@@ -2904,11 +2889,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-copyright/copyr
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ament-cmake-core=1.1.5-1focal.20220124.183737`
+### `dpkg` source package: `ros-galactic-ament-cmake-core=1.1.6-1focal.20221203.065802`
 
 Binary Packages:
 
-- `ros-galactic-ament-cmake-core=1.1.5-1focal.20220124.183737`
+- `ros-galactic-ament-cmake-core=1.1.6-1focal.20221203.065802`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-core/copyright`)
 
@@ -2918,11 +2903,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-core/copyright`
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ament-cmake-cppcheck=0.10.7-1focal.20220430.045501`
+### `dpkg` source package: `ros-galactic-ament-cmake-cppcheck=0.10.7-1focal.20221203.082819`
 
 Binary Packages:
 
-- `ros-galactic-ament-cmake-cppcheck=0.10.7-1focal.20220430.045501`
+- `ros-galactic-ament-cmake-cppcheck=0.10.7-1focal.20221203.082819`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-cppcheck/copyright`)
 
@@ -2932,11 +2917,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-cppcheck/copyri
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ament-cmake-cpplint=0.10.7-1focal.20220430.045636`
+### `dpkg` source package: `ros-galactic-ament-cmake-cpplint=0.10.7-1focal.20221203.082822`
 
 Binary Packages:
 
-- `ros-galactic-ament-cmake-cpplint=0.10.7-1focal.20220430.045636`
+- `ros-galactic-ament-cmake-cpplint=0.10.7-1focal.20221203.082822`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-cpplint/copyright`)
 
@@ -2946,11 +2931,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-cpplint/copyrig
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ament-cmake-export-definitions=1.1.5-1focal.20220124.185201`
+### `dpkg` source package: `ros-galactic-ament-cmake-export-definitions=1.1.6-1focal.20221203.073245`
 
 Binary Packages:
 
-- `ros-galactic-ament-cmake-export-definitions=1.1.5-1focal.20220124.185201`
+- `ros-galactic-ament-cmake-export-definitions=1.1.6-1focal.20221203.073245`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-export-definitions/copyright`)
 
@@ -2960,11 +2945,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-export-definiti
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ament-cmake-export-dependencies=1.1.5-1focal.20220124.193920`
+### `dpkg` source package: `ros-galactic-ament-cmake-export-dependencies=1.1.6-1focal.20221203.073353`
 
 Binary Packages:
 
-- `ros-galactic-ament-cmake-export-dependencies=1.1.5-1focal.20220124.193920`
+- `ros-galactic-ament-cmake-export-dependencies=1.1.6-1focal.20221203.073353`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-export-dependencies/copyright`)
 
@@ -2974,11 +2959,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-export-dependen
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ament-cmake-export-include-directories=1.1.5-1focal.20220124.185205`
+### `dpkg` source package: `ros-galactic-ament-cmake-export-include-directories=1.1.6-1focal.20221203.073115`
 
 Binary Packages:
 
-- `ros-galactic-ament-cmake-export-include-directories=1.1.5-1focal.20220124.185205`
+- `ros-galactic-ament-cmake-export-include-directories=1.1.6-1focal.20221203.073115`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-export-include-directories/copyright`)
 
@@ -2988,11 +2973,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-export-include-
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ament-cmake-export-interfaces=1.1.5-1focal.20220124.185135`
+### `dpkg` source package: `ros-galactic-ament-cmake-export-interfaces=1.1.6-1focal.20221203.073440`
 
 Binary Packages:
 
-- `ros-galactic-ament-cmake-export-interfaces=1.1.5-1focal.20220124.185135`
+- `ros-galactic-ament-cmake-export-interfaces=1.1.6-1focal.20221203.073440`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-export-interfaces/copyright`)
 
@@ -3002,11 +2987,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-export-interfac
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ament-cmake-export-libraries=1.1.5-1focal.20220124.185102`
+### `dpkg` source package: `ros-galactic-ament-cmake-export-libraries=1.1.6-1focal.20221203.073237`
 
 Binary Packages:
 
-- `ros-galactic-ament-cmake-export-libraries=1.1.5-1focal.20220124.185102`
+- `ros-galactic-ament-cmake-export-libraries=1.1.6-1focal.20221203.073237`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-export-libraries/copyright`)
 
@@ -3016,11 +3001,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-export-librarie
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ament-cmake-export-link-flags=1.1.5-1focal.20220124.185211`
+### `dpkg` source package: `ros-galactic-ament-cmake-export-link-flags=1.1.6-1focal.20221203.072631`
 
 Binary Packages:
 
-- `ros-galactic-ament-cmake-export-link-flags=1.1.5-1focal.20220124.185211`
+- `ros-galactic-ament-cmake-export-link-flags=1.1.6-1focal.20221203.072631`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-export-link-flags/copyright`)
 
@@ -3030,11 +3015,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-export-link-fla
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ament-cmake-export-targets=1.1.5-1focal.20220124.185158`
+### `dpkg` source package: `ros-galactic-ament-cmake-export-targets=1.1.6-1focal.20221203.073411`
 
 Binary Packages:
 
-- `ros-galactic-ament-cmake-export-targets=1.1.5-1focal.20220124.185158`
+- `ros-galactic-ament-cmake-export-targets=1.1.6-1focal.20221203.073411`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-export-targets/copyright`)
 
@@ -3044,11 +3029,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-export-targets/
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ament-cmake-flake8=0.10.7-1focal.20220430.045636`
+### `dpkg` source package: `ros-galactic-ament-cmake-flake8=0.10.7-1focal.20221203.082823`
 
 Binary Packages:
 
-- `ros-galactic-ament-cmake-flake8=0.10.7-1focal.20220430.045636`
+- `ros-galactic-ament-cmake-flake8=0.10.7-1focal.20221203.082823`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-flake8/copyright`)
 
@@ -3058,11 +3043,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-flake8/copyrigh
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ament-cmake-gmock=1.1.5-1focal.20220124.194204`
+### `dpkg` source package: `ros-galactic-ament-cmake-gmock=1.1.6-1focal.20221203.075558`
 
 Binary Packages:
 
-- `ros-galactic-ament-cmake-gmock=1.1.5-1focal.20220124.194204`
+- `ros-galactic-ament-cmake-gmock=1.1.6-1focal.20221203.075558`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-gmock/copyright`)
 
@@ -3072,11 +3057,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-gmock/copyright
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ament-cmake-gtest=1.1.5-1focal.20220124.193438`
+### `dpkg` source package: `ros-galactic-ament-cmake-gtest=1.1.6-1focal.20221203.075430`
 
 Binary Packages:
 
-- `ros-galactic-ament-cmake-gtest=1.1.5-1focal.20220124.193438`
+- `ros-galactic-ament-cmake-gtest=1.1.6-1focal.20221203.075430`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-gtest/copyright`)
 
@@ -3086,11 +3071,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-gtest/copyright
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ament-cmake-include-directories=1.1.5-1focal.20220124.185125`
+### `dpkg` source package: `ros-galactic-ament-cmake-include-directories=1.1.6-1focal.20221203.073237`
 
 Binary Packages:
 
-- `ros-galactic-ament-cmake-include-directories=1.1.5-1focal.20220124.185125`
+- `ros-galactic-ament-cmake-include-directories=1.1.6-1focal.20221203.073237`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-include-directories/copyright`)
 
@@ -3100,11 +3085,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-include-directo
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ament-cmake-libraries=1.1.5-1focal.20220124.185228`
+### `dpkg` source package: `ros-galactic-ament-cmake-libraries=1.1.6-1focal.20221203.073157`
 
 Binary Packages:
 
-- `ros-galactic-ament-cmake-libraries=1.1.5-1focal.20220124.185228`
+- `ros-galactic-ament-cmake-libraries=1.1.6-1focal.20221203.073157`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-libraries/copyright`)
 
@@ -3114,11 +3099,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-libraries/copyr
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ament-cmake-lint-cmake=0.10.7-1focal.20220430.044848`
+### `dpkg` source package: `ros-galactic-ament-cmake-lint-cmake=0.10.7-1focal.20221203.082035`
 
 Binary Packages:
 
-- `ros-galactic-ament-cmake-lint-cmake=0.10.7-1focal.20220430.044848`
+- `ros-galactic-ament-cmake-lint-cmake=0.10.7-1focal.20221203.082035`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-lint-cmake/copyright`)
 
@@ -3128,11 +3113,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-lint-cmake/copy
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ament-cmake-pep257=0.10.7-1focal.20220430.045747`
+### `dpkg` source package: `ros-galactic-ament-cmake-pep257=0.10.7-1focal.20221203.082826`
 
 Binary Packages:
 
-- `ros-galactic-ament-cmake-pep257=0.10.7-1focal.20220430.045747`
+- `ros-galactic-ament-cmake-pep257=0.10.7-1focal.20221203.082826`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-pep257/copyright`)
 
@@ -3142,11 +3127,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-pep257/copyrigh
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ament-cmake-pytest=1.1.5-1focal.20220124.193515`
+### `dpkg` source package: `ros-galactic-ament-cmake-pytest=1.1.6-1focal.20221203.074214`
 
 Binary Packages:
 
-- `ros-galactic-ament-cmake-pytest=1.1.5-1focal.20220124.193515`
+- `ros-galactic-ament-cmake-pytest=1.1.6-1focal.20221203.074214`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-pytest/copyright`)
 
@@ -3156,11 +3141,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-pytest/copyrigh
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ament-cmake-python=1.1.5-1focal.20220124.185226`
+### `dpkg` source package: `ros-galactic-ament-cmake-python=1.1.6-1focal.20221203.073443`
 
 Binary Packages:
 
-- `ros-galactic-ament-cmake-python=1.1.5-1focal.20220124.185226`
+- `ros-galactic-ament-cmake-python=1.1.6-1focal.20221203.073443`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-python/copyright`)
 
@@ -3170,11 +3155,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-python/copyrigh
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ament-cmake-ros=0.9.2-1focal.20220430.051532`
+### `dpkg` source package: `ros-galactic-ament-cmake-ros=0.9.2-1focal.20221203.084454`
 
 Binary Packages:
 
-- `ros-galactic-ament-cmake-ros=0.9.2-1focal.20220430.051532`
+- `ros-galactic-ament-cmake-ros=0.9.2-1focal.20221203.084454`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3184,11 +3169,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ament-cmake-target-dependencies=1.1.5-1focal.20220124.193153`
+### `dpkg` source package: `ros-galactic-ament-cmake-target-dependencies=1.1.6-1focal.20221203.073428`
 
 Binary Packages:
 
-- `ros-galactic-ament-cmake-target-dependencies=1.1.5-1focal.20220124.193153`
+- `ros-galactic-ament-cmake-target-dependencies=1.1.6-1focal.20221203.073428`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-target-dependencies/copyright`)
 
@@ -3198,11 +3183,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-target-dependen
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ament-cmake-test=1.1.5-1focal.20220124.193151`
+### `dpkg` source package: `ros-galactic-ament-cmake-test=1.1.6-1focal.20221203.074049`
 
 Binary Packages:
 
-- `ros-galactic-ament-cmake-test=1.1.5-1focal.20220124.193151`
+- `ros-galactic-ament-cmake-test=1.1.6-1focal.20221203.074049`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-test/copyright`)
 
@@ -3212,11 +3197,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-test/copyright`
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ament-cmake-uncrustify=0.10.7-1focal.20220430.045925`
+### `dpkg` source package: `ros-galactic-ament-cmake-uncrustify=0.10.7-1focal.20221203.082330`
 
 Binary Packages:
 
-- `ros-galactic-ament-cmake-uncrustify=0.10.7-1focal.20220430.045925`
+- `ros-galactic-ament-cmake-uncrustify=0.10.7-1focal.20221203.082330`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-uncrustify/copyright`)
 
@@ -3226,11 +3211,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-uncrustify/copy
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ament-cmake-version=1.1.5-1focal.20220124.185226`
+### `dpkg` source package: `ros-galactic-ament-cmake-version=1.1.6-1focal.20221203.073246`
 
 Binary Packages:
 
-- `ros-galactic-ament-cmake-version=1.1.5-1focal.20220124.185226`
+- `ros-galactic-ament-cmake-version=1.1.6-1focal.20221203.073246`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-version/copyright`)
 
@@ -3240,11 +3225,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-version/copyrig
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ament-cmake-xmllint=0.10.7-1focal.20220430.045826`
+### `dpkg` source package: `ros-galactic-ament-cmake-xmllint=0.10.7-1focal.20221203.082859`
 
 Binary Packages:
 
-- `ros-galactic-ament-cmake-xmllint=0.10.7-1focal.20220430.045826`
+- `ros-galactic-ament-cmake-xmllint=0.10.7-1focal.20221203.082859`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-xmllint/copyright`)
 
@@ -3254,11 +3239,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake-xmllint/copyrig
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ament-cmake=1.1.5-1focal.20220124.194417`
+### `dpkg` source package: `ros-galactic-ament-cmake=1.1.6-1focal.20221203.074211`
 
 Binary Packages:
 
-- `ros-galactic-ament-cmake=1.1.5-1focal.20220124.194417`
+- `ros-galactic-ament-cmake=1.1.6-1focal.20221203.074211`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake/copyright`)
 
@@ -3268,11 +3253,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cmake/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ament-copyright=0.10.7-1focal.20220430.044238`
+### `dpkg` source package: `ros-galactic-ament-copyright=0.10.7-1focal.20221203.081608`
 
 Binary Packages:
 
-- `ros-galactic-ament-copyright=0.10.7-1focal.20220430.044238`
+- `ros-galactic-ament-copyright=0.10.7-1focal.20221203.081608`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-copyright/copyright`)
 
@@ -3282,11 +3267,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-copyright/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ament-cppcheck=0.10.7-1focal.20220430.004711`
+### `dpkg` source package: `ros-galactic-ament-cppcheck=0.10.7-1focal.20221203.081003`
 
 Binary Packages:
 
-- `ros-galactic-ament-cppcheck=0.10.7-1focal.20220430.004711`
+- `ros-galactic-ament-cppcheck=0.10.7-1focal.20221203.081003`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cppcheck/copyright`)
 
@@ -3296,11 +3281,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cppcheck/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ament-cpplint=0.10.7-1focal.20220430.044508`
+### `dpkg` source package: `ros-galactic-ament-cpplint=0.10.7-1focal.20221203.081947`
 
 Binary Packages:
 
-- `ros-galactic-ament-cpplint=0.10.7-1focal.20220430.044508`
+- `ros-galactic-ament-cpplint=0.10.7-1focal.20221203.081947`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cpplint/copyright`)
 
@@ -3311,11 +3296,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-cpplint/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ament-flake8=0.10.7-1focal.20220430.004954`
+### `dpkg` source package: `ros-galactic-ament-flake8=0.10.7-1focal.20221203.081215`
 
 Binary Packages:
 
-- `ros-galactic-ament-flake8=0.10.7-1focal.20220430.004954`
+- `ros-galactic-ament-flake8=0.10.7-1focal.20221203.081215`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-flake8/copyright`)
 
@@ -3325,11 +3310,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-flake8/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ament-index-cpp=1.2.0-1focal.20220430.052208`
+### `dpkg` source package: `ros-galactic-ament-index-cpp=1.2.0-1focal.20221203.083433`
 
 Binary Packages:
 
-- `ros-galactic-ament-index-cpp=1.2.0-1focal.20220430.052208`
+- `ros-galactic-ament-index-cpp=1.2.0-1focal.20221203.083433`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3339,11 +3324,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ament-index-python=1.2.0-1focal.20220430.044702`
+### `dpkg` source package: `ros-galactic-ament-index-python=1.2.0-1focal.20221203.081950`
 
 Binary Packages:
 
-- `ros-galactic-ament-index-python=1.2.0-1focal.20220430.044702`
+- `ros-galactic-ament-index-python=1.2.0-1focal.20221203.081950`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3353,11 +3338,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ament-lint-auto=0.10.7-1focal.20220430.004724`
+### `dpkg` source package: `ros-galactic-ament-lint-auto=0.10.7-1focal.20221203.075110`
 
 Binary Packages:
 
-- `ros-galactic-ament-lint-auto=0.10.7-1focal.20220430.004724`
+- `ros-galactic-ament-lint-auto=0.10.7-1focal.20221203.075110`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-lint-auto/copyright`)
 
@@ -3367,11 +3352,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-lint-auto/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ament-lint-cmake=0.10.7-1focal.20220430.044546`
+### `dpkg` source package: `ros-galactic-ament-lint-cmake=0.10.7-1focal.20221203.081957`
 
 Binary Packages:
 
-- `ros-galactic-ament-lint-cmake=0.10.7-1focal.20220430.044546`
+- `ros-galactic-ament-lint-cmake=0.10.7-1focal.20221203.081957`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-lint-cmake/copyright`)
 
@@ -3381,11 +3366,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-lint-cmake/copyright`
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ament-lint-common=0.10.7-1focal.20220430.050245`
+### `dpkg` source package: `ros-galactic-ament-lint-common=0.10.7-1focal.20221203.083024`
 
 Binary Packages:
 
-- `ros-galactic-ament-lint-common=0.10.7-1focal.20220430.050245`
+- `ros-galactic-ament-lint-common=0.10.7-1focal.20221203.083024`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-lint-common/copyright`)
 
@@ -3395,11 +3380,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-lint-common/copyright
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ament-lint=0.10.7-1focal.20220430.004724`
+### `dpkg` source package: `ros-galactic-ament-lint=0.10.7-1focal.20221203.081104`
 
 Binary Packages:
 
-- `ros-galactic-ament-lint=0.10.7-1focal.20220430.004724`
+- `ros-galactic-ament-lint=0.10.7-1focal.20221203.081104`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-lint/copyright`)
 
@@ -3423,11 +3408,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ament-pep257=0.10.7-1focal.20220430.005040`
+### `dpkg` source package: `ros-galactic-ament-pep257=0.10.7-1focal.20221203.081440`
 
 Binary Packages:
 
-- `ros-galactic-ament-pep257=0.10.7-1focal.20220430.005040`
+- `ros-galactic-ament-pep257=0.10.7-1focal.20221203.081440`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-pep257/copyright`)
 
@@ -3438,11 +3423,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-pep257/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ament-uncrustify=0.10.7-1focal.20220430.004742`
+### `dpkg` source package: `ros-galactic-ament-uncrustify=0.10.7-1focal.20221203.075647`
 
 Binary Packages:
 
-- `ros-galactic-ament-uncrustify=0.10.7-1focal.20220430.004742`
+- `ros-galactic-ament-uncrustify=0.10.7-1focal.20221203.075647`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-uncrustify/copyright`)
 
@@ -3452,11 +3437,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-uncrustify/copyright`
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ament-xmllint=0.10.7-1focal.20220430.044553`
+### `dpkg` source package: `ros-galactic-ament-xmllint=0.10.7-1focal.20221203.082012`
 
 Binary Packages:
 
-- `ros-galactic-ament-xmllint=0.10.7-1focal.20220430.044553`
+- `ros-galactic-ament-xmllint=0.10.7-1focal.20221203.082012`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-xmllint/copyright`)
 
@@ -3466,11 +3451,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ament-xmllint/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-builtin-interfaces=1.0.3-2focal.20220825.140858`
+### `dpkg` source package: `ros-galactic-builtin-interfaces=1.0.3-2focal.20221203.093800`
 
 Binary Packages:
 
-- `ros-galactic-builtin-interfaces=1.0.3-2focal.20220825.140858`
+- `ros-galactic-builtin-interfaces=1.0.3-2focal.20221203.093800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3480,11 +3465,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-class-loader=2.1.2-2focal.20220726.195730`
+### `dpkg` source package: `ros-galactic-class-loader=2.1.2-2focal.20221203.085459`
 
 Binary Packages:
 
-- `ros-galactic-class-loader=2.1.2-2focal.20220726.195730`
+- `ros-galactic-class-loader=2.1.2-2focal.20221203.085459`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3494,11 +3479,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-common-interfaces=2.2.4-1focal.20220825.145300`
+### `dpkg` source package: `ros-galactic-common-interfaces=2.2.4-1focal.20221203.141005`
 
 Binary Packages:
 
-- `ros-galactic-common-interfaces=2.2.4-1focal.20220825.145300`
+- `ros-galactic-common-interfaces=2.2.4-1focal.20221203.141005`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3508,11 +3493,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-composition-interfaces=1.0.3-2focal.20220825.141508`
+### `dpkg` source package: `ros-galactic-composition-interfaces=1.0.3-2focal.20221203.095000`
 
 Binary Packages:
 
-- `ros-galactic-composition-interfaces=1.0.3-2focal.20220825.141508`
+- `ros-galactic-composition-interfaces=1.0.3-2focal.20221203.095000`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3522,11 +3507,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-console-bridge-vendor=1.3.2-2focal.20220726.193034`
+### `dpkg` source package: `ros-galactic-console-bridge-vendor=1.3.2-2focal.20221203.083606`
 
 Binary Packages:
 
-- `ros-galactic-console-bridge-vendor=1.3.2-2focal.20220726.193034`
+- `ros-galactic-console-bridge-vendor=1.3.2-2focal.20221203.083606`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3536,11 +3521,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-cyclonedds=0.8.0-6focal.20220124.194559`
+### `dpkg` source package: `ros-galactic-cyclonedds=0.8.0-6focal.20221203.084342`
 
 Binary Packages:
 
-- `ros-galactic-cyclonedds=0.8.0-6focal.20220124.194559`
+- `ros-galactic-cyclonedds=0.8.0-6focal.20221203.084342`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3550,11 +3535,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-diagnostic-msgs=2.2.4-1focal.20220825.142802`
+### `dpkg` source package: `ros-galactic-diagnostic-msgs=2.2.4-1focal.20221203.100409`
 
 Binary Packages:
 
-- `ros-galactic-diagnostic-msgs=2.2.4-1focal.20220825.142802`
+- `ros-galactic-diagnostic-msgs=2.2.4-1focal.20221203.100409`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3564,11 +3549,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-domain-coordinator=0.9.2-1focal.20220430.045127`
+### `dpkg` source package: `ros-galactic-domain-coordinator=0.9.2-1focal.20221203.084327`
 
 Binary Packages:
 
-- `ros-galactic-domain-coordinator=0.9.2-1focal.20220430.045127`
+- `ros-galactic-domain-coordinator=0.9.2-1focal.20221203.084327`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3578,11 +3563,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-fastcdr=1.0.20-3focal.20220124.184737`
+### `dpkg` source package: `ros-galactic-fastcdr=1.0.20-3focal.20221203.081119`
 
 Binary Packages:
 
-- `ros-galactic-fastcdr=1.0.20-3focal.20220124.184737`
+- `ros-galactic-fastcdr=1.0.20-3focal.20221203.081119`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3592,11 +3577,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-geometry-msgs=2.2.4-1focal.20220825.142004`
+### `dpkg` source package: `ros-galactic-geometry-msgs=2.2.4-1focal.20221203.095913`
 
 Binary Packages:
 
-- `ros-galactic-geometry-msgs=2.2.4-1focal.20220825.142004`
+- `ros-galactic-geometry-msgs=2.2.4-1focal.20221203.095913`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3606,11 +3591,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-gmock-vendor=1.10.9003-2focal.20220124.184906`
+### `dpkg` source package: `ros-galactic-gmock-vendor=1.10.9003-2focal.20221203.075448`
 
 Binary Packages:
 
-- `ros-galactic-gmock-vendor=1.10.9003-2focal.20220124.184906`
+- `ros-galactic-gmock-vendor=1.10.9003-2focal.20221203.075448`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3620,11 +3605,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-gtest-vendor=1.10.9003-2focal.20220124.184739`
+### `dpkg` source package: `ros-galactic-gtest-vendor=1.10.9003-2focal.20221203.075326`
 
 Binary Packages:
 
-- `ros-galactic-gtest-vendor=1.10.9003-2focal.20220124.184739`
+- `ros-galactic-gtest-vendor=1.10.9003-2focal.20221203.075326`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3634,11 +3619,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-iceoryx-binding-c=1.0.0-2focal.20220124.194125`
+### `dpkg` source package: `ros-galactic-iceoryx-binding-c=1.0.0-2focal.20221203.081717`
 
 Binary Packages:
 
-- `ros-galactic-iceoryx-binding-c=1.0.0-2focal.20220124.194125`
+- `ros-galactic-iceoryx-binding-c=1.0.0-2focal.20221203.081717`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3648,11 +3633,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-iceoryx-posh=1.0.0-2focal.20220124.184928`
+### `dpkg` source package: `ros-galactic-iceoryx-posh=1.0.0-2focal.20221203.081333`
 
 Binary Packages:
 
-- `ros-galactic-iceoryx-posh=1.0.0-2focal.20220124.184928`
+- `ros-galactic-iceoryx-posh=1.0.0-2focal.20221203.081333`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3662,11 +3647,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-iceoryx-utils=1.0.0-2focal.20220124.184741`
+### `dpkg` source package: `ros-galactic-iceoryx-utils=1.0.0-2focal.20221203.081159`
 
 Binary Packages:
 
-- `ros-galactic-iceoryx-utils=1.0.0-2focal.20220124.184741`
+- `ros-galactic-iceoryx-utils=1.0.0-2focal.20221203.081159`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3676,11 +3661,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-launch-ros=0.14.3-1focal.20220825.153804`
+### `dpkg` source package: `ros-galactic-launch-ros=0.14.5-1focal.20221208.064725`
 
 Binary Packages:
 
-- `ros-galactic-launch-ros=0.14.3-1focal.20220825.153804`
+- `ros-galactic-launch-ros=0.14.5-1focal.20221208.064725`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-launch-ros/copyright`)
 
@@ -3690,11 +3675,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-launch-ros/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-launch-testing-ament-cmake=0.17.1-1focal.20220430.110647`
+### `dpkg` source package: `ros-galactic-launch-testing-ament-cmake=0.17.2-1focal.20221203.084036`
 
 Binary Packages:
 
-- `ros-galactic-launch-testing-ament-cmake=0.17.1-1focal.20220430.110647`
+- `ros-galactic-launch-testing-ament-cmake=0.17.2-1focal.20221203.084036`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-launch-testing-ament-cmake/copyright`)
 
@@ -3705,11 +3690,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-launch-testing-ament-cmake/
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-launch-testing-ros=0.14.3-1focal.20220825.154454`
+### `dpkg` source package: `ros-galactic-launch-testing-ros=0.14.5-1focal.20221208.064845`
 
 Binary Packages:
 
-- `ros-galactic-launch-testing-ros=0.14.3-1focal.20220825.154454`
+- `ros-galactic-launch-testing-ros=0.14.5-1focal.20221208.064845`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-launch-testing-ros/copyright`)
 
@@ -3719,11 +3704,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-launch-testing-ros/copyrigh
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-launch-testing=0.17.1-1focal.20220430.045314`
+### `dpkg` source package: `ros-galactic-launch-testing=0.17.2-1focal.20221203.082402`
 
 Binary Packages:
 
-- `ros-galactic-launch-testing=0.17.1-1focal.20220430.045314`
+- `ros-galactic-launch-testing=0.17.2-1focal.20221203.082402`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-launch-testing/copyright`)
 
@@ -3733,11 +3718,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-launch-testing/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-launch-xml=0.17.1-1focal.20220430.045321`
+### `dpkg` source package: `ros-galactic-launch-xml=0.17.2-1focal.20221203.082436`
 
 Binary Packages:
 
-- `ros-galactic-launch-xml=0.17.1-1focal.20220430.045321`
+- `ros-galactic-launch-xml=0.17.2-1focal.20221203.082436`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-launch-xml/copyright`)
 
@@ -3747,11 +3732,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-launch-xml/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-launch-yaml=0.17.1-1focal.20220430.045330`
+### `dpkg` source package: `ros-galactic-launch-yaml=0.17.2-1focal.20221203.082444`
 
 Binary Packages:
 
-- `ros-galactic-launch-yaml=0.17.1-1focal.20220430.045330`
+- `ros-galactic-launch-yaml=0.17.2-1focal.20221203.082444`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-launch-yaml/copyright`)
 
@@ -3761,11 +3746,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-launch-yaml/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-launch=0.17.1-1focal.20220430.044942`
+### `dpkg` source package: `ros-galactic-launch=0.17.2-1focal.20221203.082237`
 
 Binary Packages:
 
-- `ros-galactic-launch=0.17.1-1focal.20220430.044942`
+- `ros-galactic-launch=0.17.2-1focal.20221203.082237`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-launch/copyright`)
 
@@ -3775,11 +3760,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-launch/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-libstatistics-collector=1.1.1-1focal.20220825.151031`
+### `dpkg` source package: `ros-galactic-libstatistics-collector=1.1.1-1focal.20221203.101350`
 
 Binary Packages:
 
-- `ros-galactic-libstatistics-collector=1.1.1-1focal.20220825.151031`
+- `ros-galactic-libstatistics-collector=1.1.1-1focal.20221203.101350`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3789,11 +3774,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-libyaml-vendor=1.2.0-2focal.20220726.195543`
+### `dpkg` source package: `ros-galactic-libyaml-vendor=1.2.0-2focal.20221203.085811`
 
 Binary Packages:
 
-- `ros-galactic-libyaml-vendor=1.2.0-2focal.20220726.195543`
+- `ros-galactic-libyaml-vendor=1.2.0-2focal.20221203.085811`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3803,11 +3788,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-lifecycle-msgs=1.0.3-2focal.20220825.140940`
+### `dpkg` source package: `ros-galactic-lifecycle-msgs=1.0.3-2focal.20221203.095200`
 
 Binary Packages:
 
-- `ros-galactic-lifecycle-msgs=1.0.3-2focal.20220825.140940`
+- `ros-galactic-lifecycle-msgs=1.0.3-2focal.20221203.095200`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3817,11 +3802,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-nav-msgs=2.2.4-1focal.20220825.142753`
+### `dpkg` source package: `ros-galactic-nav-msgs=2.2.4-1focal.20221203.100554`
 
 Binary Packages:
 
-- `ros-galactic-nav-msgs=2.2.4-1focal.20220825.142753`
+- `ros-galactic-nav-msgs=2.2.4-1focal.20221203.100554`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3831,11 +3816,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-osrf-pycommon=2.0.0-1focal.20220202.211502`
+### `dpkg` source package: `ros-galactic-osrf-pycommon=2.0.0-1focal.20221203.081514`
 
 Binary Packages:
 
-- `ros-galactic-osrf-pycommon=2.0.0-1focal.20220202.211502`
+- `ros-galactic-osrf-pycommon=2.0.0-1focal.20221203.081514`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3845,11 +3830,25 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-pluginlib=5.0.0-2focal.20220726.200327`
+### `dpkg` source package: `ros-galactic-pluginlib=5.0.1-1focal.20221203.085746`
 
 Binary Packages:
 
-- `ros-galactic-pluginlib=5.0.0-2focal.20220726.200327`
+- `ros-galactic-pluginlib=5.0.1-1focal.20221203.085746`
+
+Licenses: (parsed from: `/usr/share/doc/ros-galactic-pluginlib/copyright`)
+
+- `BSD`
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `ros-galactic-python-cmake-module=0.8.1-2focal.20221203.083859`
+
+Binary Packages:
+
+- `ros-galactic-python-cmake-module=0.8.1-2focal.20221203.083859`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3859,25 +3858,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-python-cmake-module=0.8.1-2focal.20220430.105304`
+### `dpkg` source package: `ros-galactic-rcl-action=3.1.4-1focal.20221203.101333`
 
 Binary Packages:
 
-- `ros-galactic-python-cmake-module=0.8.1-2focal.20220430.105304`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
-### `dpkg` source package: `ros-galactic-rcl-action=3.1.3-1focal.20220825.151122`
-
-Binary Packages:
-
-- `ros-galactic-rcl-action=3.1.3-1focal.20220825.151122`
+- `ros-galactic-rcl-action=3.1.4-1focal.20221203.101333`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-rcl-action/copyright`)
 
@@ -3887,11 +3872,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-rcl-action/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-rcl-interfaces=1.0.3-2focal.20220825.141125`
+### `dpkg` source package: `ros-galactic-rcl-interfaces=1.0.3-2focal.20221203.094733`
 
 Binary Packages:
 
-- `ros-galactic-rcl-interfaces=1.0.3-2focal.20220825.141125`
+- `ros-galactic-rcl-interfaces=1.0.3-2focal.20221203.094733`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3901,11 +3886,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-rcl-lifecycle=3.1.3-1focal.20220825.151035`
+### `dpkg` source package: `ros-galactic-rcl-lifecycle=3.1.4-1focal.20221203.101335`
 
 Binary Packages:
 
-- `ros-galactic-rcl-lifecycle=3.1.3-1focal.20220825.151035`
+- `ros-galactic-rcl-lifecycle=3.1.4-1focal.20221203.101335`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-rcl-lifecycle/copyright`)
 
@@ -3915,11 +3900,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-rcl-lifecycle/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-rcl-logging-interface=2.1.4-1focal.20220726.195733`
+### `dpkg` source package: `ros-galactic-rcl-logging-interface=2.1.5-1focal.20221203.085447`
 
 Binary Packages:
 
-- `ros-galactic-rcl-logging-interface=2.1.4-1focal.20220726.195733`
+- `ros-galactic-rcl-logging-interface=2.1.5-1focal.20221203.085447`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-rcl-logging-interface/copyright`)
 
@@ -3929,11 +3914,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-rcl-logging-interface/copyr
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-rcl-logging-spdlog=2.1.4-1focal.20220726.200211`
+### `dpkg` source package: `ros-galactic-rcl-logging-spdlog=2.1.5-1focal.20221203.085644`
 
 Binary Packages:
 
-- `ros-galactic-rcl-logging-spdlog=2.1.4-1focal.20220726.200211`
+- `ros-galactic-rcl-logging-spdlog=2.1.5-1focal.20221203.085644`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-rcl-logging-spdlog/copyright`)
 
@@ -3943,11 +3928,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-rcl-logging-spdlog/copyrigh
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-rcl-yaml-param-parser=3.1.3-1focal.20220726.200226`
+### `dpkg` source package: `ros-galactic-rcl-yaml-param-parser=3.1.4-1focal.20221203.090053`
 
 Binary Packages:
 
-- `ros-galactic-rcl-yaml-param-parser=3.1.3-1focal.20220726.200226`
+- `ros-galactic-rcl-yaml-param-parser=3.1.4-1focal.20221203.090053`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-rcl-yaml-param-parser/copyright`)
 
@@ -3957,11 +3942,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-rcl-yaml-param-parser/copyr
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-rcl=3.1.3-1focal.20220825.145943`
+### `dpkg` source package: `ros-galactic-rcl=3.1.4-1focal.20221203.100601`
 
 Binary Packages:
 
-- `ros-galactic-rcl=3.1.3-1focal.20220825.145943`
+- `ros-galactic-rcl=3.1.4-1focal.20221203.100601`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-rcl/copyright`)
 
@@ -3971,11 +3956,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-rcl/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-rclcpp-components=9.2.1-1focal.20220825.160016`
+### `dpkg` source package: `ros-galactic-rclcpp-components=9.2.2-1focal.20221207.070224`
 
 Binary Packages:
 
-- `ros-galactic-rclcpp-components=9.2.1-1focal.20220825.160016`
+- `ros-galactic-rclcpp-components=9.2.2-1focal.20221207.070224`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-rclcpp-components/copyright`)
 
@@ -3985,11 +3970,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-rclcpp-components/copyright
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-rclcpp-lifecycle=9.2.1-1focal.20220825.154747`
+### `dpkg` source package: `ros-galactic-rclcpp-lifecycle=9.2.2-1focal.20221207.070235`
 
 Binary Packages:
 
-- `ros-galactic-rclcpp-lifecycle=9.2.1-1focal.20220825.154747`
+- `ros-galactic-rclcpp-lifecycle=9.2.2-1focal.20221207.070235`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-rclcpp-lifecycle/copyright`)
 
@@ -3999,11 +3984,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-rclcpp-lifecycle/copyright`
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-rclcpp=9.2.1-1focal.20220825.152106`
+### `dpkg` source package: `ros-galactic-rclcpp=9.2.2-1focal.20221207.025109`
 
 Binary Packages:
 
-- `ros-galactic-rclcpp=9.2.1-1focal.20220825.152106`
+- `ros-galactic-rclcpp=9.2.2-1focal.20221207.025109`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-rclcpp/copyright`)
 
@@ -4013,11 +3998,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-rclcpp/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-rclpy=1.9.2-1focal.20220825.152132`
+### `dpkg` source package: `ros-galactic-rclpy=1.9.3-1focal.20221207.025110`
 
 Binary Packages:
 
-- `ros-galactic-rclpy=1.9.2-1focal.20220825.152132`
+- `ros-galactic-rclpy=1.9.3-1focal.20221207.025110`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-rclpy/copyright`)
 
@@ -4027,25 +4012,26 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-rclpy/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-rcpputils=2.2.1-1focal.20220726.194452`
+### `dpkg` source package: `ros-galactic-rcpputils=2.2.2-1focal.20221203.085153`
 
 Binary Packages:
 
-- `ros-galactic-rcpputils=2.2.1-1focal.20220726.194452`
+- `ros-galactic-rcpputils=2.2.2-1focal.20221203.085153`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
+Licenses: (parsed from: `/usr/share/doc/ros-galactic-rcpputils/copyright`)
 
+- `Apache License 2.0`
+- `BSD-3-Clause`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-rcutils=4.0.3-1focal.20220726.193009`
+### `dpkg` source package: `ros-galactic-rcutils=4.0.4-1focal.20221203.084629`
 
 Binary Packages:
 
-- `ros-galactic-rcutils=4.0.3-1focal.20220726.193009`
+- `ros-galactic-rcutils=4.0.4-1focal.20221203.084629`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-rcutils/copyright`)
 
@@ -4055,11 +4041,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-rcutils/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-rmw-cyclonedds-cpp=0.22.5-1focal.20220825.142348`
+### `dpkg` source package: `ros-galactic-rmw-cyclonedds-cpp=0.22.6-1focal.20221203.094230`
 
 Binary Packages:
 
-- `ros-galactic-rmw-cyclonedds-cpp=0.22.5-1focal.20220825.142348`
+- `ros-galactic-rmw-cyclonedds-cpp=0.22.6-1focal.20221203.094230`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-rmw-cyclonedds-cpp/copyright`)
 
@@ -4069,11 +4055,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-rmw-cyclonedds-cpp/copyrigh
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-rmw-dds-common=1.2.1-2focal.20220825.141440`
+### `dpkg` source package: `ros-galactic-rmw-dds-common=1.2.1-2focal.20221203.093526`
 
 Binary Packages:
 
-- `ros-galactic-rmw-dds-common=1.2.1-2focal.20220825.141440`
+- `ros-galactic-rmw-dds-common=1.2.1-2focal.20221203.093526`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4083,11 +4069,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-rmw-implementation-cmake=3.3.1-1focal.20220430.110835`
+### `dpkg` source package: `ros-galactic-rmw-implementation-cmake=3.3.1-1focal.20221203.083916`
 
 Binary Packages:
 
-- `ros-galactic-rmw-implementation-cmake=3.3.1-1focal.20220430.110835`
+- `ros-galactic-rmw-implementation-cmake=3.3.1-1focal.20221203.083916`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4097,11 +4083,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-rmw-implementation=2.4.1-3focal.20220825.145352`
+### `dpkg` source package: `ros-galactic-rmw-implementation=2.4.1-3focal.20221203.100146`
 
 Binary Packages:
 
-- `ros-galactic-rmw-implementation=2.4.1-3focal.20220825.145352`
+- `ros-galactic-rmw-implementation=2.4.1-3focal.20221203.100146`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4111,11 +4097,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-rmw=3.3.1-1focal.20220726.194839`
+### `dpkg` source package: `ros-galactic-rmw=3.3.1-1focal.20221203.085453`
 
 Binary Packages:
 
-- `ros-galactic-rmw=3.3.1-1focal.20220726.194839`
+- `ros-galactic-rmw=3.3.1-1focal.20221203.085453`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4125,11 +4111,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ros-core=0.9.3-2focal.20220825.222738`
+### `dpkg` source package: `ros-galactic-ros-core=0.9.3-2focal.20221208.073338`
 
 Binary Packages:
 
-- `ros-galactic-ros-core=0.9.3-2focal.20220825.222738`
+- `ros-galactic-ros-core=0.9.3-2focal.20221208.073338`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4139,11 +4125,25 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ros-environment=3.1.0-1focal.20220124.185007`
+### `dpkg` source package: `ros-galactic-ros-environment=3.1.1-1focal.20221203.073238`
 
 Binary Packages:
 
-- `ros-galactic-ros-environment=3.1.0-1focal.20220124.185007`
+- `ros-galactic-ros-environment=3.1.1-1focal.20221203.073238`
+
+Licenses: (parsed from: `/usr/share/doc/ros-galactic-ros-environment/copyright`)
+
+- `Apache License 2.0`
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `ros-galactic-ros-workspace=1.0.2-2focal.20221203.070107`
+
+Binary Packages:
+
+- `ros-galactic-ros-workspace=1.0.2-2focal.20221203.070107`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4153,25 +4153,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ros-workspace=1.0.2-2focal.20220124.184535`
+### `dpkg` source package: `ros-galactic-ros2action=0.13.5-1focal.20221208.065727`
 
 Binary Packages:
 
-- `ros-galactic-ros-workspace=1.0.2-2focal.20220124.184535`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
-### `dpkg` source package: `ros-galactic-ros2action=0.13.4-1focal.20220825.175542`
-
-Binary Packages:
-
-- `ros-galactic-ros2action=0.13.4-1focal.20220825.175542`
+- `ros-galactic-ros2action=0.13.5-1focal.20221208.065727`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ros2action/copyright`)
 
@@ -4181,11 +4167,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ros2action/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ros2cli-common-extensions=0.1.1-2focal.20220825.222101`
+### `dpkg` source package: `ros-galactic-ros2cli-common-extensions=0.1.1-2focal.20221208.073244`
 
 Binary Packages:
 
-- `ros-galactic-ros2cli-common-extensions=0.1.1-2focal.20220825.222101`
+- `ros-galactic-ros2cli-common-extensions=0.1.1-2focal.20221208.073244`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4195,11 +4181,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ros2cli=0.13.4-1focal.20220825.154600`
+### `dpkg` source package: `ros-galactic-ros2cli=0.13.5-1focal.20221207.074558`
 
 Binary Packages:
 
-- `ros-galactic-ros2cli=0.13.4-1focal.20220825.154600`
+- `ros-galactic-ros2cli=0.13.5-1focal.20221207.074558`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ros2cli/copyright`)
 
@@ -4209,11 +4195,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ros2cli/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ros2component=0.13.4-1focal.20220825.180347`
+### `dpkg` source package: `ros-galactic-ros2component=0.13.5-1focal.20221208.071144`
 
 Binary Packages:
 
-- `ros-galactic-ros2component=0.13.4-1focal.20220825.180347`
+- `ros-galactic-ros2component=0.13.5-1focal.20221208.071144`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ros2component/copyright`)
 
@@ -4223,11 +4209,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ros2component/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ros2doctor=0.13.4-1focal.20220825.175553`
+### `dpkg` source package: `ros-galactic-ros2doctor=0.13.5-1focal.20221208.065741`
 
 Binary Packages:
 
-- `ros-galactic-ros2doctor=0.13.4-1focal.20220825.175553`
+- `ros-galactic-ros2doctor=0.13.5-1focal.20221208.065741`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ros2doctor/copyright`)
 
@@ -4237,11 +4223,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ros2doctor/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ros2interface=0.13.4-1focal.20220825.175623`
+### `dpkg` source package: `ros-galactic-ros2interface=0.13.5-1focal.20221208.065744`
 
 Binary Packages:
 
-- `ros-galactic-ros2interface=0.13.4-1focal.20220825.175623`
+- `ros-galactic-ros2interface=0.13.5-1focal.20221208.065744`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ros2interface/copyright`)
 
@@ -4251,11 +4237,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ros2interface/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ros2launch=0.14.3-1focal.20220825.180159`
+### `dpkg` source package: `ros-galactic-ros2launch=0.14.5-1focal.20221208.070059`
 
 Binary Packages:
 
-- `ros-galactic-ros2launch=0.14.3-1focal.20220825.180159`
+- `ros-galactic-ros2launch=0.14.5-1focal.20221208.070059`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ros2launch/copyright`)
 
@@ -4265,11 +4251,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ros2launch/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ros2lifecycle=0.13.4-1focal.20220825.221151`
+### `dpkg` source package: `ros-galactic-ros2lifecycle=0.13.5-1focal.20221208.070246`
 
 Binary Packages:
 
-- `ros-galactic-ros2lifecycle=0.13.4-1focal.20220825.221151`
+- `ros-galactic-ros2lifecycle=0.13.5-1focal.20221208.070246`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ros2lifecycle/copyright`)
 
@@ -4279,11 +4265,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ros2lifecycle/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ros2multicast=0.13.4-1focal.20220825.175846`
+### `dpkg` source package: `ros-galactic-ros2multicast=0.13.5-1focal.20221207.111927`
 
 Binary Packages:
 
-- `ros-galactic-ros2multicast=0.13.4-1focal.20220825.175846`
+- `ros-galactic-ros2multicast=0.13.5-1focal.20221207.111927`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ros2multicast/copyright`)
 
@@ -4293,11 +4279,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ros2multicast/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ros2node=0.13.4-1focal.20220825.175632`
+### `dpkg` source package: `ros-galactic-ros2node=0.13.5-1focal.20221208.065801`
 
 Binary Packages:
 
-- `ros-galactic-ros2node=0.13.4-1focal.20220825.175632`
+- `ros-galactic-ros2node=0.13.5-1focal.20221208.065801`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ros2node/copyright`)
 
@@ -4307,11 +4293,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ros2node/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ros2param=0.13.4-1focal.20220825.180056`
+### `dpkg` source package: `ros-galactic-ros2param=0.13.5-1focal.20221208.070243`
 
 Binary Packages:
 
-- `ros-galactic-ros2param=0.13.4-1focal.20220825.180056`
+- `ros-galactic-ros2param=0.13.5-1focal.20221208.070243`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ros2param/copyright`)
 
@@ -4321,11 +4307,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ros2param/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ros2pkg=0.13.4-1focal.20220825.175826`
+### `dpkg` source package: `ros-galactic-ros2pkg=0.13.5-1focal.20221208.065842`
 
 Binary Packages:
 
-- `ros-galactic-ros2pkg=0.13.4-1focal.20220825.175826`
+- `ros-galactic-ros2pkg=0.13.5-1focal.20221208.065842`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ros2pkg/copyright`)
 
@@ -4335,11 +4321,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ros2pkg/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ros2run=0.13.4-1focal.20220825.180157`
+### `dpkg` source package: `ros-galactic-ros2run=0.13.5-1focal.20221208.071140`
 
 Binary Packages:
 
-- `ros-galactic-ros2run=0.13.4-1focal.20220825.180157`
+- `ros-galactic-ros2run=0.13.5-1focal.20221208.071140`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ros2run/copyright`)
 
@@ -4349,11 +4335,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ros2run/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ros2service=0.13.4-1focal.20220825.175714`
+### `dpkg` source package: `ros-galactic-ros2service=0.13.5-1focal.20221208.065901`
 
 Binary Packages:
 
-- `ros-galactic-ros2service=0.13.4-1focal.20220825.175714`
+- `ros-galactic-ros2service=0.13.5-1focal.20221208.065901`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ros2service/copyright`)
 
@@ -4363,11 +4349,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ros2service/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-ros2topic=0.13.4-1focal.20220825.175603`
+### `dpkg` source package: `ros-galactic-ros2topic=0.13.5-1focal.20221208.065926`
 
 Binary Packages:
 
-- `ros-galactic-ros2topic=0.13.4-1focal.20220825.175603`
+- `ros-galactic-ros2topic=0.13.5-1focal.20221208.065926`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-ros2topic/copyright`)
 
@@ -4378,11 +4364,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-ros2topic/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-rosgraph-msgs=1.0.3-2focal.20220825.141309`
+### `dpkg` source package: `ros-galactic-rosgraph-msgs=1.0.3-2focal.20221203.095032`
 
 Binary Packages:
 
-- `ros-galactic-rosgraph-msgs=1.0.3-2focal.20220825.141309`
+- `ros-galactic-rosgraph-msgs=1.0.3-2focal.20221203.095032`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4392,11 +4378,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-rosidl-adapter=2.2.2-1focal.20220430.111214`
+### `dpkg` source package: `ros-galactic-rosidl-adapter=2.2.3-1focal.20221203.083147`
 
 Binary Packages:
 
-- `ros-galactic-rosidl-adapter=2.2.2-1focal.20220430.111214`
+- `ros-galactic-rosidl-adapter=2.2.3-1focal.20221203.083147`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-rosidl-adapter/copyright`)
 
@@ -4406,11 +4392,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-rosidl-adapter/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-rosidl-cli=2.2.2-1focal.20220430.044825`
+### `dpkg` source package: `ros-galactic-rosidl-cli=2.2.3-1focal.20221203.082109`
 
 Binary Packages:
 
-- `ros-galactic-rosidl-cli=2.2.2-1focal.20220430.044825`
+- `ros-galactic-rosidl-cli=2.2.3-1focal.20221203.082109`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-rosidl-cli/copyright`)
 
@@ -4420,11 +4406,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-rosidl-cli/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-rosidl-cmake=2.2.2-1focal.20220430.111503`
+### `dpkg` source package: `ros-galactic-rosidl-cmake=2.2.3-1focal.20221203.083442`
 
 Binary Packages:
 
-- `ros-galactic-rosidl-cmake=2.2.2-1focal.20220430.111503`
+- `ros-galactic-rosidl-cmake=2.2.3-1focal.20221203.083442`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-rosidl-cmake/copyright`)
 
@@ -4434,11 +4420,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-rosidl-cmake/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-rosidl-default-generators=1.1.1-2focal.20220825.140130`
+### `dpkg` source package: `ros-galactic-rosidl-default-generators=1.1.1-2focal.20221203.092033`
 
 Binary Packages:
 
-- `ros-galactic-rosidl-default-generators=1.1.1-2focal.20220825.140130`
+- `ros-galactic-rosidl-default-generators=1.1.1-2focal.20221203.092033`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4448,11 +4434,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-rosidl-default-runtime=1.1.1-2focal.20220825.140021`
+### `dpkg` source package: `ros-galactic-rosidl-default-runtime=1.1.1-2focal.20221203.092034`
 
 Binary Packages:
 
-- `ros-galactic-rosidl-default-runtime=1.1.1-2focal.20220825.140021`
+- `ros-galactic-rosidl-default-runtime=1.1.1-2focal.20221203.092034`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4462,11 +4448,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-rosidl-generator-c=2.2.2-1focal.20220726.195740`
+### `dpkg` source package: `ros-galactic-rosidl-generator-c=2.2.3-1focal.20221203.085449`
 
 Binary Packages:
 
-- `ros-galactic-rosidl-generator-c=2.2.2-1focal.20220726.195740`
+- `ros-galactic-rosidl-generator-c=2.2.3-1focal.20221203.085449`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-rosidl-generator-c/copyright`)
 
@@ -4476,11 +4462,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-rosidl-generator-c/copyrigh
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-rosidl-generator-cpp=2.2.2-1focal.20220726.200242`
+### `dpkg` source package: `ros-galactic-rosidl-generator-cpp=2.2.3-1focal.20221203.085656`
 
 Binary Packages:
 
-- `ros-galactic-rosidl-generator-cpp=2.2.2-1focal.20220726.200242`
+- `ros-galactic-rosidl-generator-cpp=2.2.3-1focal.20221203.085656`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-rosidl-generator-cpp/copyright`)
 
@@ -4490,11 +4476,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-rosidl-generator-cpp/copyri
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-rosidl-generator-py=0.11.3-1focal.20220825.135740`
+### `dpkg` source package: `ros-galactic-rosidl-generator-py=0.11.4-1focal.20221203.091700`
 
 Binary Packages:
 
-- `ros-galactic-rosidl-generator-py=0.11.3-1focal.20220825.135740`
+- `ros-galactic-rosidl-generator-py=0.11.4-1focal.20221203.091700`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-rosidl-generator-py/copyright`)
 
@@ -4504,11 +4490,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-rosidl-generator-py/copyrig
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-rosidl-parser=2.2.2-1focal.20220430.111349`
+### `dpkg` source package: `ros-galactic-rosidl-parser=2.2.3-1focal.20221203.083312`
 
 Binary Packages:
 
-- `ros-galactic-rosidl-parser=2.2.2-1focal.20220430.111349`
+- `ros-galactic-rosidl-parser=2.2.3-1focal.20221203.083312`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-rosidl-parser/copyright`)
 
@@ -4518,11 +4504,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-rosidl-parser/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-rosidl-runtime-c=2.2.2-1focal.20220726.194250`
+### `dpkg` source package: `ros-galactic-rosidl-runtime-c=2.2.3-1focal.20221203.085158`
 
 Binary Packages:
 
-- `ros-galactic-rosidl-runtime-c=2.2.2-1focal.20220726.194250`
+- `ros-galactic-rosidl-runtime-c=2.2.3-1focal.20221203.085158`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-rosidl-runtime-c/copyright`)
 
@@ -4532,11 +4518,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-rosidl-runtime-c/copyright`
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-rosidl-runtime-cpp=2.2.2-1focal.20220726.193036`
+### `dpkg` source package: `ros-galactic-rosidl-runtime-cpp=2.2.3-1focal.20221203.083356`
 
 Binary Packages:
 
-- `ros-galactic-rosidl-runtime-cpp=2.2.2-1focal.20220726.193036`
+- `ros-galactic-rosidl-runtime-cpp=2.2.3-1focal.20221203.083356`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-rosidl-runtime-cpp/copyright`)
 
@@ -4546,11 +4532,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-rosidl-runtime-cpp/copyrigh
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-rosidl-runtime-py=0.9.1-2focal.20220825.142312`
+### `dpkg` source package: `ros-galactic-rosidl-runtime-py=0.9.1-2focal.20221203.095647`
 
 Binary Packages:
 
-- `ros-galactic-rosidl-runtime-py=0.9.1-2focal.20220825.142312`
+- `ros-galactic-rosidl-runtime-py=0.9.1-2focal.20221203.095647`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4560,11 +4546,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-rosidl-typesupport-c=1.2.1-3focal.20220726.200217`
+### `dpkg` source package: `ros-galactic-rosidl-typesupport-c=1.2.1-3focal.20221203.085750`
 
 Binary Packages:
 
-- `ros-galactic-rosidl-typesupport-c=1.2.1-3focal.20220726.200217`
+- `ros-galactic-rosidl-typesupport-c=1.2.1-3focal.20221203.085750`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4574,11 +4560,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-rosidl-typesupport-cpp=1.2.1-3focal.20220727.053705`
+### `dpkg` source package: `ros-galactic-rosidl-typesupport-cpp=1.2.1-3focal.20221203.090049`
 
 Binary Packages:
 
-- `ros-galactic-rosidl-typesupport-cpp=1.2.1-3focal.20220727.053705`
+- `ros-galactic-rosidl-typesupport-cpp=1.2.1-3focal.20221203.090049`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4588,11 +4574,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-rosidl-typesupport-interface=2.2.2-1focal.20220430.111220`
+### `dpkg` source package: `ros-galactic-rosidl-typesupport-interface=2.2.3-1focal.20221203.083157`
 
 Binary Packages:
 
-- `ros-galactic-rosidl-typesupport-interface=2.2.2-1focal.20220430.111220`
+- `ros-galactic-rosidl-typesupport-interface=2.2.3-1focal.20221203.083157`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-rosidl-typesupport-interface/copyright`)
 
@@ -4602,11 +4588,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-rosidl-typesupport-interfac
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-rosidl-typesupport-introspection-c=2.2.2-1focal.20220726.195742`
+### `dpkg` source package: `ros-galactic-rosidl-typesupport-introspection-c=2.2.3-1focal.20221203.085452`
 
 Binary Packages:
 
-- `ros-galactic-rosidl-typesupport-introspection-c=2.2.2-1focal.20220726.195742`
+- `ros-galactic-rosidl-typesupport-introspection-c=2.2.3-1focal.20221203.085452`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-rosidl-typesupport-introspection-c/copyright`)
 
@@ -4616,11 +4602,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-rosidl-typesupport-introspe
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-rosidl-typesupport-introspection-cpp=2.2.2-1focal.20220726.200330`
+### `dpkg` source package: `ros-galactic-rosidl-typesupport-introspection-cpp=2.2.3-1focal.20221203.085704`
 
 Binary Packages:
 
-- `ros-galactic-rosidl-typesupport-introspection-cpp=2.2.2-1focal.20220726.200330`
+- `ros-galactic-rosidl-typesupport-introspection-cpp=2.2.3-1focal.20221203.085704`
 
 Licenses: (parsed from: `/usr/share/doc/ros-galactic-rosidl-typesupport-introspection-cpp/copyright`)
 
@@ -4630,11 +4616,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-galactic-rosidl-typesupport-introspe
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-rpyutils=0.2.0-2focal.20220430.044908`
+### `dpkg` source package: `ros-galactic-rpyutils=0.2.0-2focal.20221203.082906`
 
 Binary Packages:
 
-- `ros-galactic-rpyutils=0.2.0-2focal.20220430.044908`
+- `ros-galactic-rpyutils=0.2.0-2focal.20221203.082906`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4644,11 +4630,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-sensor-msgs=2.2.4-1focal.20220825.142937`
+### `dpkg` source package: `ros-galactic-sensor-msgs=2.2.4-1focal.20221203.100625`
 
 Binary Packages:
 
-- `ros-galactic-sensor-msgs=2.2.4-1focal.20220825.142937`
+- `ros-galactic-sensor-msgs=2.2.4-1focal.20221203.100625`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4658,11 +4644,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-shape-msgs=2.2.4-1focal.20220825.144924`
+### `dpkg` source package: `ros-galactic-shape-msgs=2.2.4-1focal.20221203.101322`
 
 Binary Packages:
 
-- `ros-galactic-shape-msgs=2.2.4-1focal.20220825.144924`
+- `ros-galactic-shape-msgs=2.2.4-1focal.20221203.101322`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4672,11 +4658,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-spdlog-vendor=1.3.0-2focal.20220430.111037`
+### `dpkg` source package: `ros-galactic-spdlog-vendor=1.3.0-2focal.20221203.083932`
 
 Binary Packages:
 
-- `ros-galactic-spdlog-vendor=1.3.0-2focal.20220430.111037`
+- `ros-galactic-spdlog-vendor=1.3.0-2focal.20221203.083932`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4686,11 +4672,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-sros2-cmake=0.10.3-1focal.20220825.180203`
+### `dpkg` source package: `ros-galactic-sros2-cmake=0.10.3-1focal.20221208.071314`
 
 Binary Packages:
 
-- `ros-galactic-sros2-cmake=0.10.3-1focal.20220825.180203`
+- `ros-galactic-sros2-cmake=0.10.3-1focal.20221208.071314`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4700,11 +4686,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-sros2=0.10.3-1focal.20220825.175810`
+### `dpkg` source package: `ros-galactic-sros2=0.10.3-1focal.20221208.065939`
 
 Binary Packages:
 
-- `ros-galactic-sros2=0.10.3-1focal.20220825.175810`
+- `ros-galactic-sros2=0.10.3-1focal.20221208.065939`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4714,11 +4700,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-statistics-msgs=1.0.3-2focal.20220825.141334`
+### `dpkg` source package: `ros-galactic-statistics-msgs=1.0.3-2focal.20221203.095031`
 
 Binary Packages:
 
-- `ros-galactic-statistics-msgs=1.0.3-2focal.20220825.141334`
+- `ros-galactic-statistics-msgs=1.0.3-2focal.20221203.095031`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4728,11 +4714,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-std-msgs=2.2.4-1focal.20220825.141333`
+### `dpkg` source package: `ros-galactic-std-msgs=2.2.4-1focal.20221203.095032`
 
 Binary Packages:
 
-- `ros-galactic-std-msgs=2.2.4-1focal.20220825.141333`
+- `ros-galactic-std-msgs=2.2.4-1focal.20221203.095032`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4742,11 +4728,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-std-srvs=2.2.4-1focal.20220825.140943`
+### `dpkg` source package: `ros-galactic-std-srvs=2.2.4-1focal.20221203.093548`
 
 Binary Packages:
 
-- `ros-galactic-std-srvs=2.2.4-1focal.20220825.140943`
+- `ros-galactic-std-srvs=2.2.4-1focal.20221203.093548`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4756,11 +4742,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-stereo-msgs=2.2.4-1focal.20220825.144846`
+### `dpkg` source package: `ros-galactic-stereo-msgs=2.2.4-1focal.20221203.140350`
 
 Binary Packages:
 
-- `ros-galactic-stereo-msgs=2.2.4-1focal.20220825.144846`
+- `ros-galactic-stereo-msgs=2.2.4-1focal.20221203.140350`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4770,11 +4756,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-tinyxml2-vendor=0.7.4-2focal.20220124.195258`
+### `dpkg` source package: `ros-galactic-tinyxml2-vendor=0.7.4-2focal.20221203.080537`
 
 Binary Packages:
 
-- `ros-galactic-tinyxml2-vendor=0.7.4-2focal.20220124.195258`
+- `ros-galactic-tinyxml2-vendor=0.7.4-2focal.20221203.080537`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4784,11 +4770,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-tracetools=2.3.0-2focal.20220430.052338`
+### `dpkg` source package: `ros-galactic-tracetools=2.3.0-2focal.20221203.084926`
 
 Binary Packages:
 
-- `ros-galactic-tracetools=2.3.0-2focal.20220430.052338`
+- `ros-galactic-tracetools=2.3.0-2focal.20221203.084926`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4798,11 +4784,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-trajectory-msgs=2.2.4-1focal.20220825.144937`
+### `dpkg` source package: `ros-galactic-trajectory-msgs=2.2.4-1focal.20221203.101324`
 
 Binary Packages:
 
-- `ros-galactic-trajectory-msgs=2.2.4-1focal.20220825.144937`
+- `ros-galactic-trajectory-msgs=2.2.4-1focal.20221203.101324`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4812,11 +4798,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-uncrustify-vendor=1.5.3-2focal.20220124.195459`
+### `dpkg` source package: `ros-galactic-uncrustify-vendor=1.5.3-2focal.20221203.075508`
 
 Binary Packages:
 
-- `ros-galactic-uncrustify-vendor=1.5.3-2focal.20220124.195459`
+- `ros-galactic-uncrustify-vendor=1.5.3-2focal.20221203.075508`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4826,11 +4812,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-unique-identifier-msgs=2.2.1-2focal.20220825.140953`
+### `dpkg` source package: `ros-galactic-unique-identifier-msgs=2.2.1-2focal.20221203.093552`
 
 Binary Packages:
 
-- `ros-galactic-unique-identifier-msgs=2.2.1-2focal.20220825.140953`
+- `ros-galactic-unique-identifier-msgs=2.2.1-2focal.20221203.093552`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4840,11 +4826,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `ros-galactic-visualization-msgs=2.2.4-1focal.20220825.145016`
+### `dpkg` source package: `ros-galactic-visualization-msgs=2.2.4-1focal.20221203.100357`
 
 Binary Packages:
 
-- `ros-galactic-visualization-msgs=2.2.4-1focal.20220825.145016`
+- `ros-galactic-visualization-msgs=2.2.4-1focal.20221203.100357`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
