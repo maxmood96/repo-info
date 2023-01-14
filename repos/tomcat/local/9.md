@@ -1,10 +1,10 @@
-# `tomcat:9.0.70-jdk17-temurin-jammy`
+# `tomcat:9.0.71-jdk17-temurin-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:24849d4d07c102f79d8df3cdd611459ea044ceabad81a4d5fded4c8db62c1113`
-- Created: `2022-12-09T07:50:10.005208579Z`
-- Virtual Size: ~ 475.61 Mb  
+- Image ID: `sha256:aa0e5599989e535d9bc0de6f6a7426c0a16998ad468a98a8648e95f2d67561d3`
+- Created: `2023-01-13T21:23:53.44513308Z`
+- Virtual Size: ~ 476.59 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -20,8 +20,8 @@
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.70`
-  - `TOMCAT_SHA512=9b57b332f4cfb2c4b9250b95924314507ebafec44f732e755be96d35e1a50d98ca3ea11a8c62e0c6fde2541d31a981f5ca792ea9931b2551b81b495932474726`
+  - `TOMCAT_VERSION=9.0.71`
+  - `TOMCAT_SHA512=6a747e68eff4b68a8defba111103ef6b1606030c180143de0419d015052a5567fca1a86e3d3e058a10246c02b98e89431e9344f80475189573fa0d5c70bfb4cb`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -330,12 +330,12 @@ $ apt-get source -qq --print-uris coreutils=8.32-4.1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.debian.tar.xz' coreutils_8.32-4.1ubuntu1.debian.tar.xz 41096 SHA512:74adfa2f2a85af8d7024ad6d13942e915217dcb10e29caa9c314e0a15da6ec019e7aa52ac5351c35ccea1bace7a05c6dc7569b7b0487c8fcd46b3ba42d66d89d
 ```
 
-### `dpkg` source package: `curl=7.81.0-1ubuntu1.6`
+### `dpkg` source package: `curl=7.81.0-1ubuntu1.7`
 
 Binary Packages:
 
-- `curl=7.81.0-1ubuntu1.6`
-- `libcurl4:amd64=7.81.0-1ubuntu1.6`
+- `curl=7.81.0-1ubuntu1.7`
+- `libcurl4:amd64=7.81.0-1ubuntu1.7`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -346,9 +346,15 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.7
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.7.dsc' curl_7.81.0-1ubuntu1.7.dsc 3139 SHA512:2b5215cf2f88793479ca97b13e0534c47c8aa6fd80cc12319bd4a870228c5ec686cb8bcc539244340a8e03064de71bb280c09badc42443b3120746131dcb3625
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz' curl_7.81.0.orig.tar.gz 4188040 SHA512:e3084f0fa083f7f93eac923edbfdddb5fd0a372b94673ba9d4427a2b95508898c15ecdf63b99a1c1f6cf3215e27b06cbaa2b7073df038d43b362e586f92495d3
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz.asc' curl_7.81.0.orig.tar.gz.asc 488 SHA512:92bc5ede831551285d67b03abe8400c609ad31c9d33e324ee5c41b92dd5c2a0245a09a396bd76807b3e44bcfef944b1e16ac266264f7b85d27cc1c072a6e82bd
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.7.debian.tar.xz' curl_7.81.0-1ubuntu1.7.debian.tar.xz 54008 SHA512:f80d1d6000d65ed478f2ff7981082141098302fcfc915985133294997d8697cbc1bf882290cd124f665d47eefe79abbf9333e831f3b4e7e669ff4e473b8c3431
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg2-3ubuntu1`
 

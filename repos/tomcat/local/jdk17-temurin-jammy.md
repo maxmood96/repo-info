@@ -1,10 +1,10 @@
-# `tomcat:10.1.4-jdk17-temurin-jammy`
+# `tomcat:10.1.5-jdk17-temurin-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1dad8c5497f9a16cd95b04d48c7e1cf893bd9f3996101d49e6039d3fc09471aa`
-- Created: `2022-12-09T20:42:02.077680119Z`
-- Virtual Size: ~ 473.94 Mb  
+- Image ID: `sha256:ad4994520144f8a69c5e637e4d7e04a93b2972ca9ba5efc1fbbb5ac12827cec6`
+- Created: `2023-01-13T21:22:09.15146565Z`
+- Virtual Size: ~ 474.94 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -20,8 +20,8 @@
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `GPG_KEYS=A9C5DF4D22E99998D9875A5110C01C5A2F6059E7`
   - `TOMCAT_MAJOR=10`
-  - `TOMCAT_VERSION=10.1.4`
-  - `TOMCAT_SHA512=f54f4298e59fb2085bb9720db06479956eb77c354a9210d56361c105814d2cb020edde9eb093077ed9d8c09cc9cda9c686d8f78488affb37c9a14abceeb27534`
+  - `TOMCAT_VERSION=10.1.5`
+  - `TOMCAT_SHA512=7fa381d1344ca51d9425567575a30f6d8ca3279234aa00a59f85cb589f00f35274de873e2ade2030599074e65d39d2ad6b1bd445b01cde0eb59bb19799631c4b`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -330,12 +330,12 @@ $ apt-get source -qq --print-uris coreutils=8.32-4.1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.debian.tar.xz' coreutils_8.32-4.1ubuntu1.debian.tar.xz 41096 SHA512:74adfa2f2a85af8d7024ad6d13942e915217dcb10e29caa9c314e0a15da6ec019e7aa52ac5351c35ccea1bace7a05c6dc7569b7b0487c8fcd46b3ba42d66d89d
 ```
 
-### `dpkg` source package: `curl=7.81.0-1ubuntu1.6`
+### `dpkg` source package: `curl=7.81.0-1ubuntu1.7`
 
 Binary Packages:
 
-- `curl=7.81.0-1ubuntu1.6`
-- `libcurl4:amd64=7.81.0-1ubuntu1.6`
+- `curl=7.81.0-1ubuntu1.7`
+- `libcurl4:amd64=7.81.0-1ubuntu1.7`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -346,9 +346,15 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.7
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.7.dsc' curl_7.81.0-1ubuntu1.7.dsc 3139 SHA512:2b5215cf2f88793479ca97b13e0534c47c8aa6fd80cc12319bd4a870228c5ec686cb8bcc539244340a8e03064de71bb280c09badc42443b3120746131dcb3625
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz' curl_7.81.0.orig.tar.gz 4188040 SHA512:e3084f0fa083f7f93eac923edbfdddb5fd0a372b94673ba9d4427a2b95508898c15ecdf63b99a1c1f6cf3215e27b06cbaa2b7073df038d43b362e586f92495d3
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz.asc' curl_7.81.0.orig.tar.gz.asc 488 SHA512:92bc5ede831551285d67b03abe8400c609ad31c9d33e324ee5c41b92dd5c2a0245a09a396bd76807b3e44bcfef944b1e16ac266264f7b85d27cc1c072a6e82bd
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.7.debian.tar.xz' curl_7.81.0-1ubuntu1.7.debian.tar.xz 54008 SHA512:f80d1d6000d65ed478f2ff7981082141098302fcfc915985133294997d8697cbc1bf882290cd124f665d47eefe79abbf9333e831f3b4e7e669ff4e473b8c3431
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg2-3ubuntu1`
 
