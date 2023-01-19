@@ -1,10 +1,10 @@
-# `mysql:5.7.40-debian`
+# `mysql:5.7.41-debian`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c1fd1ae52e14675cd878f366e75be3144a1ad7c48075e3208d6e8a1df516ea23`
-- Created: `2023-01-11T06:20:57.821583552Z`
-- Virtual Size: ~ 462.29 Mb  
+- Image ID: `sha256:4726a7600c6f5c8b58d26e8a5634a13bdff727ee29eebe5edbf9ebdd00533898`
+- Created: `2023-01-17T21:09:18.143730613Z`
+- Virtual Size: ~ 462.32 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.14`
   - `MYSQL_MAJOR=5.7`
-  - `MYSQL_VERSION=5.7.40-1debian10`
+  - `MYSQL_VERSION=5.7.41-1debian10`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1428,14 +1428,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/mecab/0.996-6/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/mecab/0.996-6/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `mysql-community=5.7.40-1debian10`
+### `dpkg` source package: `mysql-community=5.7.41-1debian10`
 
 Binary Packages:
 
-- `mysql-client=5.7.40-1debian10`
-- `mysql-community-client=5.7.40-1debian10`
-- `mysql-community-server=5.7.40-1debian10`
-- `mysql-server=5.7.40-1debian10`
+- `mysql-client=5.7.41-1debian10`
+- `mysql-community-client=5.7.41-1debian10`
+- `mysql-community-server=5.7.41-1debian10`
+- `mysql-server=5.7.41-1debian10`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1444,10 +1444,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mysql-community=5.7.40-1debian10
-'http://repo.mysql.com/apt/debian/pool/mysql-5.7/m/mysql-community/mysql-community_5.7.40-1debian10.dsc' mysql-community_5.7.40-1debian10.dsc 2818 SHA256:991ccac9cee4ed9a11b7e47c5f1b18167e00cf4c25b6c28a5bd0855410418f25
-'http://repo.mysql.com/apt/debian/pool/mysql-5.7/m/mysql-community/mysql-community_5.7.40.orig.tar.gz' mysql-community_5.7.40.orig.tar.gz 56523688 SHA256:b967898bf360cf21c43f372975ff56970100d560213806e7a0fe74b4930f4b9b
-'http://repo.mysql.com/apt/debian/pool/mysql-5.7/m/mysql-community/mysql-community_5.7.40-1debian10.debian.tar.xz' mysql-community_5.7.40-1debian10.debian.tar.xz 16588 SHA256:552e15c51dfb8d07059b2751691a5766558e75be66b6cfa3157d1da9f892517f
+$ apt-get source -qq --print-uris mysql-community=5.7.41-1debian10
+'http://repo.mysql.com/apt/debian/pool/mysql-5.7/m/mysql-community/mysql-community_5.7.41-1debian10.dsc' mysql-community_5.7.41-1debian10.dsc 2818 SHA256:dd6bc849ee38593aea0a523297a88d30378f393c82d4ed683fba6d797960fcc9
+'http://repo.mysql.com/apt/debian/pool/mysql-5.7/m/mysql-community/mysql-community_5.7.41.orig.tar.gz' mysql-community_5.7.41.orig.tar.gz 56535698 SHA256:4ffaf01240feefce69be94ea539bf40578cc1c0d1a67fdc50e76f00bf94c6a7b
+'http://repo.mysql.com/apt/debian/pool/mysql-5.7/m/mysql-community/mysql-community_5.7.41-1debian10.debian.tar.xz' mysql-community_5.7.41-1debian10.debian.tar.xz 16584 SHA256:b87dbfffabdc6dae9cd48a597a16de1d5f0bc5dd9f45e21e90cecd5158f71e28
 ```
 
 ### `dpkg` source package: `mysql-defaults=1.0.5`

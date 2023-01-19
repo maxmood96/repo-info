@@ -1,10 +1,10 @@
-# `mysql:5.7.40`
+# `mysql:5.7.41`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d410f4167eea912908b2f9bcc24eff870cb3c131dfb755088b79a4188bfeb40f`
-- Created: `2022-12-07T02:24:55.782479152Z`
-- Virtual Size: ~ 494.69 Mb  
+- Image ID: `sha256:e982339a20a53052bd5f2b2e8438b3c95c91013f653ee781a67934cd1f9f9631`
+- Created: `2023-01-17T21:08:43.190102558Z`
+- Virtual Size: ~ 451.54 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,8 +13,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.14`
   - `MYSQL_MAJOR=5.7`
-  - `MYSQL_VERSION=5.7.40-1.el7`
-  - `MYSQL_SHELL_VERSION=8.0.31-1.el7`
+  - `MYSQL_VERSION=5.7.41-1.el7`
+  - `MYSQL_SHELL_VERSION=8.0.32-1.el7`
 
 ## `rpm` (`.rpm`-based packages)
 
@@ -663,6 +663,17 @@ $ dnf --quiet download --source --url libxml2-python-2.9.1-6.0.3.el7_9.6
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/libxml2-2.9.1-6.0.3.el7_9.6.src.rpm
 ```
 
+### `rpm` package: `libyaml-0.1.4-11.el7_0.x86_64`
+
+Licenses (from `rpm --query`): MIT
+
+Source:
+
+```console
+$ dnf --quiet download --source --url libyaml-0.1.4-11.el7_0
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/libyaml-0.1.4-11.el7_0.src.rpm
+```
+
 ### `rpm` package: `lua-5.1.4-15.el7.x86_64`
 
 Licenses (from `rpm --query`): MIT
@@ -685,13 +696,13 @@ $ dnf --quiet download --source --url make-3.82-24.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/make-3.82-24.el7.src.rpm
 ```
 
-### `rpm` package: `mysql-community-server-minimal-5.7.40-1.el7.x86_64`
+### `rpm` package: `mysql-community-server-minimal-5.7.41-1.el7.x86_64`
 
 Licenses (from `rpm --query`): Copyright (c) 2000, 2022, Oracle and/or its affiliates. All rights reserved. Under GPLv2 license as shown in the Description field.
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `mysql-shell-8.0.31-1.el7.x86_64`
+### `rpm` package: `mysql-shell-8.0.32-1.el7.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
