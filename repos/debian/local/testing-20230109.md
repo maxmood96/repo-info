@@ -1642,21 +1642,13 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2022g-1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2022g-1.dsc' tzdata_2022g-1.dsc 2231 SHA256:0c64467b115608f9589007ef9c4fbfc1a57de1878fb80fd39c534565304378c3
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2022g.orig.tar.gz' tzdata_2022g.orig.tar.gz 439731 SHA256:4491db8281ae94a84d939e427bdd83dc389f26764d27d9a5c52d782c16764478
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2022g.orig.tar.gz.asc' tzdata_2022g.orig.tar.gz.asc 833 SHA256:2fe43e895ab050f5909041d1105222f0678d716128b59d39b8a3ac94b4a1bbc0
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2022g-1.debian.tar.xz' tzdata_2022g-1.debian.tar.xz 112624 SHA256:d498649597f65d0d5df228054350a0dafce346f6b995494945183c5cb981e93c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2022g-1/
 
-- https://sources.debian.net/src/tzdata/2022g-1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2022g-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2022g-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `usrmerge=35`
 
