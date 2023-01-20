@@ -1,21 +1,21 @@
-# `elixir:1.14.2-otp-24-alpine`
+# `elixir:1.14.3-otp-24-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7fc1e99a5fffa3dbd85df3357cbc4c792de00e326c7c94de1367a0012df8a347`
-- Created: `2022-12-29T17:25:41.079803447Z`
-- Virtual Size: ~ 82.51 Mb  
+- Image ID: `sha256:21bb855838b6627094d0117577abee9551b42e9fe8bc10dfa073ece9e09c9135`
+- Created: `2023-01-17T21:23:36.764565492Z`
+- Virtual Size: ~ 83.14 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["iex"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=24.3.4.6`
+  - `OTP_VERSION=24.3.4.7`
   - `REBAR3_VERSION=3.19.0`
-  - `ELIXIR_VERSION=v1.14.1`
+  - `ELIXIR_VERSION=v1.14.3`
   - `LANG=C.UTF-8`
 - Labels:
-  - `org.opencontainers.image.version=24.3.4.6`
+  - `org.opencontainers.image.version=24.3.4.7`
 
 ## `apk` (`.apk`-based packages)
 
@@ -260,16 +260,16 @@ GPL-2.0-only AND LGPL-2.1-or-later
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.3-r1 description:
+musl-1.2.3-r2 description:
 the musl c library (libc) implementation
 
-musl-1.2.3-r1 webpage:
+musl-1.2.3-r2 webpage:
 https://musl.libc.org/
 
-musl-1.2.3-r1 installed size:
+musl-1.2.3-r2 installed size:
 608 KiB
 
-musl-1.2.3-r1 license:
+musl-1.2.3-r2 license:
 MIT
 
 ```
