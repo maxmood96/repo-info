@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a0241d96e945783bfb501eae9efcf71ec92f196cf50fd7ae7292425e7856ff31`
-- Created: `2022-12-12T20:32:52.398843824Z`
-- Virtual Size: ~ 830.81 Mb  
+- Image ID: `sha256:8cc693a43d3f04caafd6c54326d22b8223948d253076524b0bbc3371ea05ee69`
+- Created: `2023-01-20T03:40:27.005703133Z`
+- Virtual Size: ~ 831.81 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -21,8 +21,8 @@
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 5C3C5F3E314C866292F359A8F3AD5C94A67F707E 765908099ACF92702C7D949BFA0C35EA8AA299F1 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
   - `TOMCAT_MAJOR=8`
-  - `TOMCAT_VERSION=8.5.84`
-  - `TOMCAT_SHA512=e595e906d62ff16545318108478aa101103181569dc6f4549dd0cdf8744147f7e9ba8a88cab6d33237b22981acb1085de86e7b2a4f1659efdbd4804df1303561`
+  - `TOMCAT_VERSION=8.5.85`
+  - `TOMCAT_SHA512=0fc44133aff9e7e31d6dbb4b6e204d33bd0009b6bd089e5f8c8a1f7dfe7c5feff25d7f6404c4a3c5610e0960b5d0198580171212a2636816a23e21799a4c0467`
   - `GN_FILE=geonetwork.war`
   - `DATA_DIR=/usr/local/tomcat/webapps/geonetwork/WEB-INF/data`
   - `JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -server -Xms512m -Xmx2024m -XX:NewSize=512m -XX:MaxNewSize=1024m -XX:+UseConcMarkSweepGC`
@@ -310,12 +310,12 @@ $ apt-get source -qq --print-uris coreutils=8.32-4.1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.debian.tar.xz' coreutils_8.32-4.1ubuntu1.debian.tar.xz 41096 SHA512:74adfa2f2a85af8d7024ad6d13942e915217dcb10e29caa9c314e0a15da6ec019e7aa52ac5351c35ccea1bace7a05c6dc7569b7b0487c8fcd46b3ba42d66d89d
 ```
 
-### `dpkg` source package: `curl=7.81.0-1ubuntu1.6`
+### `dpkg` source package: `curl=7.81.0-1ubuntu1.7`
 
 Binary Packages:
 
-- `curl=7.81.0-1ubuntu1.6`
-- `libcurl4:amd64=7.81.0-1ubuntu1.6`
+- `curl=7.81.0-1ubuntu1.7`
+- `libcurl4:amd64=7.81.0-1ubuntu1.7`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -326,9 +326,15 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.7
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.7.dsc' curl_7.81.0-1ubuntu1.7.dsc 3139 SHA512:2b5215cf2f88793479ca97b13e0534c47c8aa6fd80cc12319bd4a870228c5ec686cb8bcc539244340a8e03064de71bb280c09badc42443b3120746131dcb3625
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz' curl_7.81.0.orig.tar.gz 4188040 SHA512:e3084f0fa083f7f93eac923edbfdddb5fd0a372b94673ba9d4427a2b95508898c15ecdf63b99a1c1f6cf3215e27b06cbaa2b7073df038d43b362e586f92495d3
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz.asc' curl_7.81.0.orig.tar.gz.asc 488 SHA512:92bc5ede831551285d67b03abe8400c609ad31c9d33e324ee5c41b92dd5c2a0245a09a396bd76807b3e44bcfef944b1e16ac266264f7b85d27cc1c072a6e82bd
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.7.debian.tar.xz' curl_7.81.0-1ubuntu1.7.debian.tar.xz 54008 SHA512:f80d1d6000d65ed478f2ff7981082141098302fcfc915985133294997d8697cbc1bf882290cd124f665d47eefe79abbf9333e831f3b4e7e669ff4e473b8c3431
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg2-3ubuntu1`
 
@@ -1694,12 +1700,12 @@ $ apt-get source -qq --print-uris perl=5.34.0-3ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0-3ubuntu1.1.debian.tar.xz' perl_5.34.0-3ubuntu1.1.debian.tar.xz 192096 SHA512:ba3e8dd687c441121ef68fe6497889e1d4a9f3b65a2fd4ef5558b6625f32238367da92195f0a8d495c5778a44aaf67605ade5fe1846266d69f993d155475189a
 ```
 
-### `dpkg` source package: `postgresql-14=14.5-0ubuntu0.22.04.1`
+### `dpkg` source package: `postgresql-14=14.6-0ubuntu0.22.04.1`
 
 Binary Packages:
 
-- `libpq5:amd64=14.5-0ubuntu0.22.04.1`
-- `postgresql-client-14=14.5-0ubuntu0.22.04.1`
+- `libpq5:amd64=14.6-0ubuntu0.22.04.1`
+- `postgresql-client-14=14.6-0ubuntu0.22.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postgresql-client-14/copyright`)
 
@@ -1722,10 +1728,10 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postg
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-14=14.5-0ubuntu0.22.04.1
-'http://security.ubuntu.com/ubuntu/pool/main/p/postgresql-14/postgresql-14_14.5-0ubuntu0.22.04.1.dsc' postgresql-14_14.5-0ubuntu0.22.04.1.dsc 3857 SHA512:5b3ee25100d4c5869fa367792429db28b133abf32a2c45b06235e0576dfd3a096dd72d62b0d28987be6588ebdd80c6e9a1a726a8c4ff35f67d2ddc3d15c6acb0
-'http://security.ubuntu.com/ubuntu/pool/main/p/postgresql-14/postgresql-14_14.5.orig.tar.gz' postgresql-14_14.5.orig.tar.gz 28988974 SHA512:48cf25613d2069cf8371e9e7934742b431eb94bcd867cc75d6dbd821b51ca582983c7334055984ba0c9778501dfbde5c082209f42c442f50a0d0802306f69fc3
-'http://security.ubuntu.com/ubuntu/pool/main/p/postgresql-14/postgresql-14_14.5-0ubuntu0.22.04.1.debian.tar.xz' postgresql-14_14.5-0ubuntu0.22.04.1.debian.tar.xz 24576 SHA512:372c82a07cac661fdc03b5266dc6f23686f1ccabffb9bd9a33cea62ce38ef65f4efb50f25b65152dcb9ba34d0f89fbd6c1e0de32065250eedefa6f3d5bbdad35
+$ apt-get source -qq --print-uris postgresql-14=14.6-0ubuntu0.22.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-14/postgresql-14_14.6-0ubuntu0.22.04.1.dsc' postgresql-14_14.6-0ubuntu0.22.04.1.dsc 3898 SHA512:8035f3ff4f68fff15bf38b3617b46fcc61360bf04c0946f18c3dc57837ee7f16af4983f388e982106ae7fdf2bdc872dd7cb73b13315ec5c87078783866ba9594
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-14/postgresql-14_14.6.orig.tar.gz' postgresql-14_14.6.orig.tar.gz 29030856 SHA512:4663584270de6c01805c2c654362f012ee5033f0451397d73b6182306f5ed86a933f9d53e6363e9910985c3a9044a91a4bd7f5b0a75df161291dc5cccc4cdecb
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-14/postgresql-14_14.6-0ubuntu0.22.04.1.debian.tar.xz' postgresql-14_14.6-0ubuntu0.22.04.1.debian.tar.xz 24688 SHA512:970502fdc047dda434a1805dc7270f06429517ad70bad8887cc988e312cdf1cb006a22ddca19b908d157f3a94ff49efd3221197707940778ddf6f89254c1128a
 ```
 
 ### `dpkg` source package: `postgresql-common=238`
