@@ -1,10 +1,10 @@
-# `julia:1.9.0-beta2-alpine3.17`
+# `julia:1.9.0-beta3-alpine3.17`
 
 ## Docker Metadata
 
-- Image ID: `sha256:def9f70072dbd65a032e935fc13b77d3437805b5fa7b2ae9f13c806d9cf5e153`
-- Created: `2023-01-09T18:28:49.283373507Z`
-- Virtual Size: ~ 529.35 Mb  
+- Image ID: `sha256:fe8571f2a87517449b37e14efd3403f26f657f8fb9bfeeb172735178ade12604`
+- Created: `2023-01-20T01:56:31.876595367Z`
+- Virtual Size: ~ 530.03 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/julia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JULIA_PATH=/usr/local/julia`
   - `JULIA_GPG=3673DF529D9049477F76B37566E3C7DC03D6E495`
-  - `JULIA_VERSION=1.9.0-beta2`
+  - `JULIA_VERSION=1.9.0-beta3`
 
 ## `apk` (`.apk`-based packages)
 
