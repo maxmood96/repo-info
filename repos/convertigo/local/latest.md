@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5af2144faa6c2f35a81ac6e0368ed82d522f43e7131d8521696c0e29422f56cc`
-- Created: `2023-01-13T22:08:15.986711042Z`
-- Virtual Size: ~ 616.22 Mb  
+- Image ID: `sha256:8eafbdf82fd8d4d0278e6bb5689f34c4fc33e6692c5b928ec47f1de6a805e2b7`
+- Created: `2023-01-25T01:33:49.621228393Z`
+- Virtual Size: ~ 616.18 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","--","/docker-entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-17.0.5+8`
+  - `JAVA_VERSION=jdk-17.0.6+10`
   - `CATALINA_HOME=/usr/local/tomcat`
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
@@ -1844,19 +1844,24 @@ $ apt-get source -qq --print-uris sqlite3=3.31.1-4ubuntu0.5
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1-4ubuntu0.5.debian.tar.xz' sqlite3_3.31.1-4ubuntu0.5.debian.tar.xz 35824 SHA512:9a0a273044c4dd39856ba378c3c70c3bf3796179bb4e8e66e38b1895148cf286eceb1aac8fd8a45a026c4c6c9a311f64e3baee93d82fdb1b844806df1f41c20a
 ```
 
-### `dpkg` source package: `sudo=1.8.31-1ubuntu1.2`
+### `dpkg` source package: `sudo=1.8.31-1ubuntu1.4`
 
 Binary Packages:
 
-- `sudo=1.8.31-1ubuntu1.2`
+- `sudo=1.8.31-1ubuntu1.4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris sudo=1.8.31-1ubuntu1.4
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.8.31-1ubuntu1.4.dsc' sudo_1.8.31-1ubuntu1.4.dsc 2088 SHA512:7442d2143a530d5efb9712d1a6966f12cf59a6f544d16d36ce026a107a2ddb6a06f8bc6fb7fa1d9b7e1c2ccdf12a1dda9c08a0a64827eee9abd7d7c9d55207b3
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.8.31.orig.tar.gz' sudo_1.8.31.orig.tar.gz 3350674 SHA512:b9e408a322938c7a712458e9012d8a5f648fba5b23a5057cf5d8372c7f931262595f1575c32c32b9cb1a04af670ff4611e7df48d197e5c4cc038d6b65439a28a
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.8.31-1ubuntu1.4.debian.tar.xz' sudo_1.8.31-1ubuntu1.4.debian.tar.xz 37888 SHA512:526ac2913a2d6ccb01978d5ebe5f7862a43b76b0820633b17f1f1ca2c8a23a1e91841bf3da4688f1f86da7e21242d495d075d5eebc9374b1a524b326e176a08c
+```
 
 ### `dpkg` source package: `systemd=245.4-4ubuntu3.19`
 
