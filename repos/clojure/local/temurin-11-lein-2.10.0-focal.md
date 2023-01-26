@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0ce26f2f51691fd72c083343a64a2c5f772a8b863450c9c83cc6f41ffd7271c5`
-- Created: `2022-12-09T22:27:57.912328393Z`
-- Virtual Size: ~ 470.89 Mb  
+- Image ID: `sha256:53043b441f5985222596d8242d0e6b6e1fed41d112cde282b34e986d7e6db7d3`
+- Created: `2023-01-25T00:42:28.511205956Z`
+- Virtual Size: ~ 470.94 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["lein","repl"]`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-11.0.17+8`
+  - `JAVA_VERSION=jdk-11.0.18+10`
   - `LEIN_VERSION=2.10.0`
   - `LEIN_INSTALL=/usr/local/bin/`
   - `LEIN_ROOT=1`
@@ -856,14 +856,9 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.17-6ubuntu4.1
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17-6ubuntu4.1.dsc' krb5_1.17-6ubuntu4.1.dsc 3637 SHA512:00e77a202038d971b0cc49d77ea6f1c9eef4052016e839235f0b4b60e1dffd476d18bab1330ea5955e6e319731e5679873cf70d144e4cdabd3659aafd209fd37
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17.orig.tar.gz' krb5_1.17.orig.tar.gz 8761763 SHA512:7462a578b936bd17f155a362dbb5d388e157a80a096549028be6c55400b11361c7f8a28e424fd5674801873651df4e694d536cae66728b7ae5e840e532358c52
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17-6ubuntu4.1.debian.tar.xz' krb5_1.17-6ubuntu4.1.debian.tar.xz 145692 SHA512:8184287813d5dbcbe4c5153ccc0e6afab6dbf9f24a9ae993bf1a7648d029decfb6d8d928b0c365f5f0a861e90d89932a4f30ee96f75f4891d64a0287fab667be
-```
 
 ### `dpkg` source package: `libcap-ng=0.7.9-2.1build1`
 
@@ -1455,14 +1450,9 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.3.1-5ubuntu4.3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.3.1-5ubuntu4.3.dsc' pam_1.3.1-5ubuntu4.3.dsc 2761 SHA512:314394037f6006a11778f96aaac57c1a9997bc1b2b1c67224a46e670ea1707ae5d00e3c2d7ef42890e13f87d4edac16481050ae412b6092061e5fef27f6a80e4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.3.1.orig.tar.xz' pam_1.3.1.orig.tar.xz 912332 SHA512:6bc8e2a5b64686f0a23846221c5228c88418ba485b17c53b3a12f91262b5bb73566d6b6a5daa1f63bbae54310aee918b987e44a72ce809b4e7c668f0fadfe08e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.3.1-5ubuntu4.3.debian.tar.xz' pam_1.3.1-5ubuntu4.3.debian.tar.xz 170884 SHA512:0d10c47ed3aa1a1ef040413a746543c833b9bef971e70586d053d59ac8de2ad480ca69a5ed1c56df5322e793675b2fd8f7e65ddde1b2ee8340bb05f77fea846e
-```
 
 ### `dpkg` source package: `pcre2=10.34-7ubuntu0.1`
 

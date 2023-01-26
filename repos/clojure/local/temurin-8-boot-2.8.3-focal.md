@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a22737b5d4d931e690b6147cd7feb32790c4f71e223a157c21b862d1942b020b`
-- Created: `2022-12-09T06:33:53.11588916Z`
-- Virtual Size: ~ 385.39 Mb  
+- Image ID: `sha256:793744c9069152a22af3fc2272e7c6ed3a64e170c9c134e6475f7f4ef40deb45`
+- Created: `2023-01-25T19:49:50.103001925Z`
+- Virtual Size: ~ 332.80 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["boot","repl"]`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk8u352-b08`
+  - `JAVA_VERSION=jdk8u362-b09`
   - `BOOT_VERSION=2.8.3`
   - `BOOT_INSTALL=/usr/local/bin/`
   - `BOOT_AS_ROOT=yes`
@@ -1435,14 +1435,9 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.3.1-5ubuntu4.3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.3.1-5ubuntu4.3.dsc' pam_1.3.1-5ubuntu4.3.dsc 2761 SHA512:314394037f6006a11778f96aaac57c1a9997bc1b2b1c67224a46e670ea1707ae5d00e3c2d7ef42890e13f87d4edac16481050ae412b6092061e5fef27f6a80e4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.3.1.orig.tar.xz' pam_1.3.1.orig.tar.xz 912332 SHA512:6bc8e2a5b64686f0a23846221c5228c88418ba485b17c53b3a12f91262b5bb73566d6b6a5daa1f63bbae54310aee918b987e44a72ce809b4e7c668f0fadfe08e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.3.1-5ubuntu4.3.debian.tar.xz' pam_1.3.1-5ubuntu4.3.debian.tar.xz 170884 SHA512:0d10c47ed3aa1a1ef040413a746543c833b9bef971e70586d053d59ac8de2ad480ca69a5ed1c56df5322e793675b2fd8f7e65ddde1b2ee8340bb05f77fea846e
-```
 
 ### `dpkg` source package: `pcre2=10.34-7ubuntu0.1`
 

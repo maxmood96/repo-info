@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9deade1f6a11cbc24130a4e45348ddec227834297a7e5596b18277c12a57fc23`
-- Created: `2023-01-04T19:26:20.060921754Z`
-- Virtual Size: ~ 604.09 Mb  
+- Image ID: `sha256:bdd70fa0ac6353110867ded0f5174b9f5e95c28a2fdde60f789350da31121c97`
+- Created: `2023-01-25T00:49:54.363650584Z`
+- Virtual Size: ~ 604.06 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-17.0.5+8`
+  - `JAVA_VERSION=jdk-17.0.6+10`
   - `CLOJURE_VERSION=1.11.1.1208`
 
 ## `dpkg` (`.deb`-based packages)
@@ -310,10 +310,9 @@ $ apt-get source -qq --print-uris coreutils=8.30-3ubuntu2
 Binary Packages:
 
 - `curl=7.68.0-1ubuntu2.14`
-- `libcurl3-gnutls:amd64=7.68.0-1ubuntu2.14`
 - `libcurl4:amd64=7.68.0-1ubuntu2.14`
 
-Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4/copyright`)
+Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
 - `BSD-3-Clause`
 - `BSD-4-Clause`
@@ -325,6 +324,30 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+
+### `dpkg` source package: `curl=7.68.0-1ubuntu2.15`
+
+Binary Packages:
+
+- `libcurl3-gnutls:amd64=7.68.0-1ubuntu2.15`
+
+Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`)
+
+- `BSD-3-Clause`
+- `BSD-4-Clause`
+- `ISC`
+- `curl`
+- `other`
+- `public-domain`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris curl=7.68.0-1ubuntu2.15
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.15.dsc' curl_7.68.0-1ubuntu2.15.dsc 2737 SHA512:26c41b8eac11f5274527ae5b19f1cbaa529a8688f7196cf4dcc42f96a6bd10e236c205a311d2c14a323e44681a3f4ea6fb0d31dfb94f0ffe7add6f9bfdc2cc9f
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0.orig.tar.gz' curl_7.68.0.orig.tar.gz 4096350 SHA512:58b42c08b1cf4cb6e68f8e469d5b5f6298eebe286ba2677ad29e1a7eefd15b8609af54544f4c5a7dadebbd3b23bd77700830f2f60fbea7ae3f2f306e640010b0
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.15.debian.tar.xz' curl_7.68.0-1ubuntu2.15.debian.tar.xz 58376 SHA512:1f20c6fbcb594e6a79af4578029d840e5f054c1bacbed44cd16f6ed420cb6a55f383c09f2b0caf5b1cb3d82aa4ca6aa5dfbe3c1129c6e7511e7065b3738c6b62
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-2ubuntu0.1`
 
@@ -687,12 +710,12 @@ $ apt-get source -qq --print-uris gdbm=1.18.1-5
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.18.1-5.debian.tar.xz' gdbm_1.18.1-5.debian.tar.xz 16348 SHA256:3c1a0e05b40a97ee51ce77c736c72c37738ba31b2720111d3bc99175a2c3a3ed
 ```
 
-### `dpkg` source package: `git=1:2.25.1-1ubuntu3.6`
+### `dpkg` source package: `git=1:2.25.1-1ubuntu3.8`
 
 Binary Packages:
 
-- `git=1:2.25.1-1ubuntu3.6`
-- `git-man=1:2.25.1-1ubuntu3.6`
+- `git=1:2.25.1-1ubuntu3.8`
+- `git-man=1:2.25.1-1ubuntu3.8`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -715,9 +738,14 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris git=1:2.25.1-1ubuntu3.8
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1-1ubuntu3.8.dsc' git_2.25.1-1ubuntu3.8.dsc 2962 SHA512:9de11f42828c52fc6ac10f1feba306b8b21fd5ae320f9a0c6119b08e2bce1ddd6973e26eec9067d8375d8c1c2d5dfd291189a2394a552e0dc9094f69af9b70c5
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1.orig.tar.xz' git_2.25.1.orig.tar.xz 5875548 SHA512:15241143acfd8542d85d2709ac3c80dbd6e8d5234438f70c4f33cc71a2bdec3e32938df7f6351e2746d570b021d3bd0b70474ea4beec0c51d1fc45f9c287b344
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1-1ubuntu3.8.debian.tar.xz' git_2.25.1-1ubuntu3.8.debian.tar.xz 697772 SHA512:089e5eee0f8be77d52725f1862ebe964f45c527b9a392ef67141a75cd79bd802665c30f87a9d4bfdb78e9710d55d970d9036dfdc26990b15b056286530c4a6fe
+```
 
 ### `dpkg` source package: `glibc=2.31-0ubuntu9.9`
 
@@ -965,14 +993,9 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.17-6ubuntu4.1
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17-6ubuntu4.1.dsc' krb5_1.17-6ubuntu4.1.dsc 3637 SHA512:00e77a202038d971b0cc49d77ea6f1c9eef4052016e839235f0b4b60e1dffd476d18bab1330ea5955e6e319731e5679873cf70d144e4cdabd3659aafd209fd37
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17.orig.tar.gz' krb5_1.17.orig.tar.gz 8761763 SHA512:7462a578b936bd17f155a362dbb5d388e157a80a096549028be6c55400b11361c7f8a28e424fd5674801873651df4e694d536cae66728b7ae5e840e532358c52
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17-6ubuntu4.1.debian.tar.xz' krb5_1.17-6ubuntu4.1.debian.tar.xz 145692 SHA512:8184287813d5dbcbe4c5153ccc0e6afab6dbf9f24a9ae993bf1a7648d029decfb6d8d928b0c365f5f0a861e90d89932a4f30ee96f75f4891d64a0287fab667be
-```
 
 ### `dpkg` source package: `less=551-1ubuntu0.1`
 
@@ -1901,14 +1924,9 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.3.1-5ubuntu4.3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.3.1-5ubuntu4.3.dsc' pam_1.3.1-5ubuntu4.3.dsc 2761 SHA512:314394037f6006a11778f96aaac57c1a9997bc1b2b1c67224a46e670ea1707ae5d00e3c2d7ef42890e13f87d4edac16481050ae412b6092061e5fef27f6a80e4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.3.1.orig.tar.xz' pam_1.3.1.orig.tar.xz 912332 SHA512:6bc8e2a5b64686f0a23846221c5228c88418ba485b17c53b3a12f91262b5bb73566d6b6a5daa1f63bbae54310aee918b987e44a72ce809b4e7c668f0fadfe08e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.3.1-5ubuntu4.3.debian.tar.xz' pam_1.3.1-5ubuntu4.3.debian.tar.xz 170884 SHA512:0d10c47ed3aa1a1ef040413a746543c833b9bef971e70586d053d59ac8de2ad480ca69a5ed1c56df5322e793675b2fd8f7e65ddde1b2ee8340bb05f77fea846e
-```
 
 ### `dpkg` source package: `patch=2.7.6-6`
 
