@@ -1,10 +1,10 @@
-# `mongo:6.0.3-focal`
+# `mongo:6.0.4-focal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0850fead9327a6d88722c27116309022d78e9daf526b407a88de09762c32e620`
-- Created: `2022-12-09T02:37:35.107984702Z`
-- Virtual Size: ~ 699.88 Mb  
+- Image ID: `sha256:32c5c1d795d9ccdffaff903dbd83059d11a1941a57ec81ae148e283607f0a8a4`
+- Created: `2023-01-26T01:25:23.905527118Z`
+- Virtual Size: ~ 643.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `MONGO_PACKAGE=mongodb-org`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=6.0`
-  - `MONGO_VERSION=6.0.3`
+  - `MONGO_VERSION=6.0.4`
   - `HOME=/data/db`
 
 ## `dpkg` (`.deb`-based packages)
@@ -280,11 +280,11 @@ $ apt-get source -qq --print-uris coreutils=8.30-3ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.30-3ubuntu2.debian.tar.xz' coreutils_8.30-3ubuntu2.debian.tar.xz 39636 SHA256:98204ef9d94e5c567880cd0245fdb7940eaf7592d6c6830c300ad117628b351f
 ```
 
-### `dpkg` source package: `curl=7.68.0-1ubuntu2.14`
+### `dpkg` source package: `curl=7.68.0-1ubuntu2.15`
 
 Binary Packages:
 
-- `libcurl4:amd64=7.68.0-1ubuntu2.14`
+- `libcurl4:amd64=7.68.0-1ubuntu2.15`
 
 Licenses: (parsed from: `/usr/share/doc/libcurl4/copyright`)
 
@@ -295,9 +295,14 @@ Licenses: (parsed from: `/usr/share/doc/libcurl4/copyright`)
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.68.0-1ubuntu2.15
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.15.dsc' curl_7.68.0-1ubuntu2.15.dsc 2737 SHA512:26c41b8eac11f5274527ae5b19f1cbaa529a8688f7196cf4dcc42f96a6bd10e236c205a311d2c14a323e44681a3f4ea6fb0d31dfb94f0ffe7add6f9bfdc2cc9f
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0.orig.tar.gz' curl_7.68.0.orig.tar.gz 4096350 SHA512:58b42c08b1cf4cb6e68f8e469d5b5f6298eebe286ba2677ad29e1a7eefd15b8609af54544f4c5a7dadebbd3b23bd77700830f2f60fbea7ae3f2f306e640010b0
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.15.debian.tar.xz' curl_7.68.0-1ubuntu2.15.debian.tar.xz 58376 SHA512:1f20c6fbcb594e6a79af4578029d840e5f054c1bacbed44cd16f6ed420cb6a55f383c09f2b0caf5b1cb3d82aa4ca6aa5dfbe3c1129c6e7511e7065b3738c6b62
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-2ubuntu0.1`
 
@@ -775,15 +780,15 @@ $ apt-get source -qq --print-uris keyutils=1.6-6ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/k/keyutils/keyutils_1.6-6ubuntu1.1.debian.tar.xz' keyutils_1.6-6ubuntu1.1.debian.tar.xz 14556 SHA512:300ed4c9626de95616a7c799f14d4f8bf7dc0b765d1751d3c9d60f86b7c60801bfbb97bf26c5d0ab39e5e41d5f3021ca870748f9555433b0e6c4ba261f475c3b
 ```
 
-### `dpkg` source package: `krb5=1.17-6ubuntu4.1`
+### `dpkg` source package: `krb5=1.17-6ubuntu4.2`
 
 Binary Packages:
 
-- `krb5-locales=1.17-6ubuntu4.1`
-- `libgssapi-krb5-2:amd64=1.17-6ubuntu4.1`
-- `libk5crypto3:amd64=1.17-6ubuntu4.1`
-- `libkrb5-3:amd64=1.17-6ubuntu4.1`
-- `libkrb5support0:amd64=1.17-6ubuntu4.1`
+- `krb5-locales=1.17-6ubuntu4.2`
+- `libgssapi-krb5-2:amd64=1.17-6ubuntu4.2`
+- `libk5crypto3:amd64=1.17-6ubuntu4.2`
+- `libkrb5-3:amd64=1.17-6ubuntu4.2`
+- `libkrb5support0:amd64=1.17-6ubuntu4.2`
 
 Licenses: (parsed from: `/usr/share/doc/krb5-locales/copyright`, `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
@@ -792,10 +797,10 @@ Licenses: (parsed from: `/usr/share/doc/krb5-locales/copyright`, `/usr/share/doc
 Source:
 
 ```console
-$ apt-get source -qq --print-uris krb5=1.17-6ubuntu4.1
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17-6ubuntu4.1.dsc' krb5_1.17-6ubuntu4.1.dsc 3637 SHA512:00e77a202038d971b0cc49d77ea6f1c9eef4052016e839235f0b4b60e1dffd476d18bab1330ea5955e6e319731e5679873cf70d144e4cdabd3659aafd209fd37
+$ apt-get source -qq --print-uris krb5=1.17-6ubuntu4.2
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17-6ubuntu4.2.dsc' krb5_1.17-6ubuntu4.2.dsc 3333 SHA512:8d5615ae42239eac937b7c84fedbb73e04a2cf07d7aa49f6c6f741d87fc66778b0e533f020dba1cf9c15f58f55aaba1b342214da007124514cbec130ebf5c706
 'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17.orig.tar.gz' krb5_1.17.orig.tar.gz 8761763 SHA512:7462a578b936bd17f155a362dbb5d388e157a80a096549028be6c55400b11361c7f8a28e424fd5674801873651df4e694d536cae66728b7ae5e840e532358c52
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17-6ubuntu4.1.debian.tar.xz' krb5_1.17-6ubuntu4.1.debian.tar.xz 145692 SHA512:8184287813d5dbcbe4c5153ccc0e6afab6dbf9f24a9ae993bf1a7648d029decfb6d8d928b0c365f5f0a861e90d89932a4f30ee96f75f4891d64a0287fab667be
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17-6ubuntu4.2.debian.tar.xz' krb5_1.17-6ubuntu4.2.debian.tar.xz 146636 SHA512:646106fbcb40a804694110a4c98a265bda3432f82219272d91a65c409ce5222a5840f460166019b7cd18184c4ec58185bce2c23e92702182316831fdd4b9c2f5
 ```
 
 ### `dpkg` source package: `libassuan=2.5.3-7ubuntu2`
@@ -1265,11 +1270,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-mongosh=1.6.1`
+### `dpkg` source package: `mongodb-mongosh=1.6.2`
 
 Binary Packages:
 
-- `mongodb-mongosh=1.6.1`
+- `mongodb-mongosh=1.6.2`
 
 Licenses: (parsed from: `/usr/share/doc/mongodb-mongosh/copyright`)
 
@@ -1280,17 +1285,17 @@ Licenses: (parsed from: `/usr/share/doc/mongodb-mongosh/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-org=6.0.3`
+### `dpkg` source package: `mongodb-org=6.0.4`
 
 Binary Packages:
 
-- `mongodb-org=6.0.3`
-- `mongodb-org-database=6.0.3`
-- `mongodb-org-database-tools-extra=6.0.3`
-- `mongodb-org-mongos=6.0.3`
-- `mongodb-org-server=6.0.3`
-- `mongodb-org-shell=6.0.3`
-- `mongodb-org-tools=6.0.3`
+- `mongodb-org=6.0.4`
+- `mongodb-org-database=6.0.4`
+- `mongodb-org-database-tools-extra=6.0.4`
+- `mongodb-org-mongos=6.0.4`
+- `mongodb-org-server=6.0.4`
+- `mongodb-org-shell=6.0.4`
+- `mongodb-org-tools=6.0.4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1497,14 +1502,9 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.3.1-5ubuntu4.3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.3.1-5ubuntu4.3.dsc' pam_1.3.1-5ubuntu4.3.dsc 2761 SHA512:314394037f6006a11778f96aaac57c1a9997bc1b2b1c67224a46e670ea1707ae5d00e3c2d7ef42890e13f87d4edac16481050ae412b6092061e5fef27f6a80e4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.3.1.orig.tar.xz' pam_1.3.1.orig.tar.xz 912332 SHA512:6bc8e2a5b64686f0a23846221c5228c88418ba485b17c53b3a12f91262b5bb73566d6b6a5daa1f63bbae54310aee918b987e44a72ce809b4e7c668f0fadfe08e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.3.1-5ubuntu4.3.debian.tar.xz' pam_1.3.1-5ubuntu4.3.debian.tar.xz 170884 SHA512:0d10c47ed3aa1a1ef040413a746543c833b9bef971e70586d053d59ac8de2ad480ca69a5ed1c56df5322e793675b2fd8f7e65ddde1b2ee8340bb05f77fea846e
-```
 
 ### `dpkg` source package: `pcre2=10.34-7ubuntu0.1`
 
@@ -1850,19 +1850,25 @@ $ apt-get source -qq --print-uris tar=1.30+dfsg-7ubuntu0.20.04.2
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.30%2bdfsg-7ubuntu0.20.04.2.debian.tar.xz' tar_1.30+dfsg-7ubuntu0.20.04.2.debian.tar.xz 23580 SHA512:2c9999bff0257251eb7d09a702898e42ce45b117d8e3595d68bf0a6ffdeb1d4a1d69202a2674d93a9193576f65dad4de4e094479228bfb4efc4a7931f00d3875
 ```
 
-### `dpkg` source package: `tzdata=2022f-0ubuntu0.20.04.1`
+### `dpkg` source package: `tzdata=2022g-0ubuntu0.20.04.1`
 
 Binary Packages:
 
-- `tzdata=2022f-0ubuntu0.20.04.1`
+- `tzdata=2022g-0ubuntu0.20.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2022g-0ubuntu0.20.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022g-0ubuntu0.20.04.1.dsc' tzdata_2022g-0ubuntu0.20.04.1.dsc 2427 SHA512:d4c80e2ed58b98b18199acb1baa7ec4e686c9a732aef6a004b35c2fd796d5aa5ef31b8984fdee6036ef3a0352d17ef44d500a9d0bb095d03d381cef952a1ece9
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022g.orig.tar.gz' tzdata_2022g.orig.tar.gz 439731 SHA512:7f79394295e00e3a24ebdbf9af3bc454a65f432a93b517e7e96c7f9db9949f6f5fdae9892a9d3789ff44ae0eb1bfe4744d36976b4624659af951d26414f94e65
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022g.orig.tar.gz.asc' tzdata_2022g.orig.tar.gz.asc 833 SHA512:3474a05373ec4397e17133c54708e1f9efd1f1c5e7ee6945f0972809ceda2214cc4962238773818d04ab4f29dcdf0b3e87247ab19795d06a62b8769dd85cf76b
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022g-0ubuntu0.20.04.1.debian.tar.xz' tzdata_2022g-0ubuntu0.20.04.1.debian.tar.xz 166596 SHA512:0897a318912c1327850ebd38b32fc9b253b3f146e61f7eeb0070314c6f0ba51deda4aafdf1ef5db8a63d5dc076cdc1bfdecb54bcb2cf98d3bb18524285ceb914
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2020.02.11.4`
 
