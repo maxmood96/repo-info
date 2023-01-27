@@ -4111,9 +4111,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libinput=1.20.0-1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libinput/libinput_1.20.0-1ubuntu0.1.dsc' libinput_1.20.0-1ubuntu0.1.dsc 2239 SHA512:9f0c7439b9a0b5d3405021425983d7a6a32dc0d70d5269012c0910152909eebe9ea74f560a0824c2a4f90467e5a64ad42dec3cbbec1f2283e8bfb0959d472ef4
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libinput/libinput_1.20.0.orig.tar.gz' libinput_1.20.0.orig.tar.gz 982547 SHA512:b92345809f4e18b2335e3c377d1a8edda523462ff23fba6abcc5f8cf01b80fc4c6e4e06886088788c4b04873d37da210876f201bb81203af2f9f614bc659e6eb
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libinput/libinput_1.20.0-1ubuntu0.1.debian.tar.xz' libinput_1.20.0-1ubuntu0.1.debian.tar.xz 13524 SHA512:454bac39fdfd023b040d30111a86a321c99d1d7c8072978b6d4e2737b161e6a5604389a4f09edf06ede4012ab7e5e15ba0085c7263fe629d669583b6fc6edca6
+'http://security.ubuntu.com/ubuntu/pool/main/libi/libinput/libinput_1.20.0-1ubuntu0.1.dsc' libinput_1.20.0-1ubuntu0.1.dsc 2239 SHA512:9f0c7439b9a0b5d3405021425983d7a6a32dc0d70d5269012c0910152909eebe9ea74f560a0824c2a4f90467e5a64ad42dec3cbbec1f2283e8bfb0959d472ef4
+'http://security.ubuntu.com/ubuntu/pool/main/libi/libinput/libinput_1.20.0.orig.tar.gz' libinput_1.20.0.orig.tar.gz 982547 SHA512:b92345809f4e18b2335e3c377d1a8edda523462ff23fba6abcc5f8cf01b80fc4c6e4e06886088788c4b04873d37da210876f201bb81203af2f9f614bc659e6eb
+'http://security.ubuntu.com/ubuntu/pool/main/libi/libinput/libinput_1.20.0-1ubuntu0.1.debian.tar.xz' libinput_1.20.0-1ubuntu0.1.debian.tar.xz 13524 SHA512:454bac39fdfd023b040d30111a86a321c99d1d7c8072978b6d4e2737b161e6a5604389a4f09edf06ede4012ab7e5e15ba0085c7263fe629d669583b6fc6edca6
 ```
 
 ### `dpkg` source package: `libjpeg-turbo=2.1.2-0ubuntu1`
@@ -6252,14 +6252,9 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mysql-8.0=8.0.31-0ubuntu0.22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.31-0ubuntu0.22.04.1.dsc' mysql-8.0_8.0.31-0ubuntu0.22.04.1.dsc 3568 SHA512:91563abf0681901ac33ad6d439c5ebe35b947e41080c3326ffcf7e160aa87a8329d5936094747102191e519b39ee8ca0eabc484733954167faa6d4bb3a46e7c4
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.31.orig.tar.gz' mysql-8.0_8.0.31.orig.tar.gz 334504577 SHA512:87b1678de8c2fd640fd6f3ae58266ea63fe240578330e3296d0e5fc209bbe9b0c22996214b6ca4cce8c0d9cc2f9897f4e6723d835b33fc4342983c82929c3d96
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.31-0ubuntu0.22.04.1.debian.tar.xz' mysql-8.0_8.0.31-0ubuntu0.22.04.1.debian.tar.xz 160428 SHA512:d3dafb3de3e59a4d7640d5ec903feefc341a037e9c2ad03bd85fabc6fe96283d0964cb90d4580198a1c8e0def2009ed4814ddeeae30dbea1e67c658a7d462bff
-```
 
 ### `dpkg` source package: `mysql-defaults=1.0.8`
 
