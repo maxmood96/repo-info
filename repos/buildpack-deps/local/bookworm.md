@@ -2333,20 +2333,13 @@ Licenses: (parsed from: `/usr/share/doc/libde265-0/copyright`)
 - `public-domain-1`
 - `public-domain-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libde265=1.0.9-1
-'http://deb.debian.org/debian/pool/main/libd/libde265/libde265_1.0.9-1.dsc' libde265_1.0.9-1.dsc 2216 SHA256:4d3431a7e72c7927f38d37f3a37bc973008f7b1bcff0a1544d555550f9e7e355
-'http://deb.debian.org/debian/pool/main/libd/libde265/libde265_1.0.9.orig.tar.gz' libde265_1.0.9.orig.tar.gz 845520 SHA256:29bc6b64bf658d81a4446a3f98e0e4636fd4fd3d971b072d440cef987d5439de
-'http://deb.debian.org/debian/pool/main/libd/libde265/libde265_1.0.9-1.debian.tar.xz' libde265_1.0.9-1.debian.tar.xz 9172 SHA256:8882fbad80a7d511e787455ceada72b30d17b16b8def1ce3e4e660f7e32021a0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libde265/1.0.9-1/
 
-- https://sources.debian.net/src/libde265/1.0.9-1/ (for browsing the source)
-- https://sources.debian.net/src/libde265/1.0.9-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libde265/1.0.9-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libdeflate=1.14-1`
 
@@ -3360,20 +3353,13 @@ Licenses: (parsed from: `/usr/share/doc/libwebp-dev/copyright`, `/usr/share/doc/
 
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libwebp=1.2.2-2
-'http://deb.debian.org/debian/pool/main/libw/libwebp/libwebp_1.2.2-2.dsc' libwebp_1.2.2-2.dsc 2065 SHA256:3fd71b46ebe7abb2a24f8dbec0eb036191087f3d8e1a54b120b23e3ebc61e195
-'http://deb.debian.org/debian/pool/main/libw/libwebp/libwebp_1.2.2.orig.tar.gz' libwebp_1.2.2.orig.tar.gz 4117468 SHA256:7656532f837af5f4cec3ff6bafe552c044dc39bf453587bd5b77450802f4aee6
-'http://deb.debian.org/debian/pool/main/libw/libwebp/libwebp_1.2.2-2.debian.tar.xz' libwebp_1.2.2-2.debian.tar.xz 5688 SHA256:8d04536e71bb86a1be3f26a64c575cc697d68a7d564a5a06a1c91ee4f785f507
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libwebp/1.2.2-2/
 
-- https://sources.debian.net/src/libwebp/1.2.2-2/ (for browsing the source)
-- https://sources.debian.net/src/libwebp/1.2.2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libwebp/1.2.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libwmf=0.2.12-5`
 
@@ -4546,20 +4532,13 @@ Licenses: (parsed from: `/usr/share/doc/libpcre2-16-0/copyright`, `/usr/share/do
 - `X11`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pcre2=10.40-3
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.40-3.dsc' pcre2_10.40-3.dsc 2302 SHA256:5bf89d8451b21377b879c010d297b30593565fa5ad2c6ab10966284b023a56bc
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.40.orig.tar.gz' pcre2_10.40.orig.tar.gz 2359622 SHA256:ded42661cab30ada2e72ebff9e725e745b4b16ce831993635136f2ef86177724
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.40-3.diff.gz' pcre2_10.40-3.diff.gz 7889 SHA256:e73ec04ac1b59b395a67d4248ba1b9e1f21fd414b802e0f997aeca78c4ffb384
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pcre2/10.40-3/
 
-- https://sources.debian.net/src/pcre2/10.40-3/ (for browsing the source)
-- https://sources.debian.net/src/pcre2/10.40-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pcre2/10.40-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `perl=5.36.0-6`
 
@@ -4682,20 +4661,13 @@ Licenses: (parsed from: `/usr/share/doc/libpkgconf3/copyright`, `/usr/share/doc/
 - `ISC`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pkgconf=1.8.0-12
-'http://deb.debian.org/debian/pool/main/p/pkgconf/pkgconf_1.8.0-12.dsc' pkgconf_1.8.0-12.dsc 1575 SHA256:4b107b591860983b5e72ccf3e0d8c57c78dd77a33797f4ff8ba2277361db639a
-'http://deb.debian.org/debian/pool/main/p/pkgconf/pkgconf_1.8.0.orig.tar.xz' pkgconf_1.8.0.orig.tar.xz 296304 SHA256:ef9c7e61822b7cb8356e6e9e1dca58d9556f3200d78acab35e4347e9d4c2bbaf
-'http://deb.debian.org/debian/pool/main/p/pkgconf/pkgconf_1.8.0-12.debian.tar.xz' pkgconf_1.8.0-12.debian.tar.xz 12800 SHA256:5c0e219846d1d86d6cdec0dd503f491e94c89b50eb9c66c83311620ef834b0f0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pkgconf/1.8.0-12/
 
-- https://sources.debian.net/src/pkgconf/1.8.0-12/ (for browsing the source)
-- https://sources.debian.net/src/pkgconf/1.8.0-12/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pkgconf/1.8.0-12/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `postgresql-15=15.1-1`
 
