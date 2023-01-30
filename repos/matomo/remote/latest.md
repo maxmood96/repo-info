@@ -1,7 +1,7 @@
 ## `matomo:latest`
 
 ```console
-$ docker pull matomo@sha256:4d92dd63078eaf03014efb3a662ed50d22031bf930343be9d306e2306ad1263d
+$ docker pull matomo@sha256:9db7d81b6a0bb03f243beb0cc575ef71157d7a37da8b3edc5f9d0cfd1e5ced3f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -18,14 +18,14 @@ $ docker pull matomo@sha256:4d92dd63078eaf03014efb3a662ed50d22031bf930343be9d306
 ### `matomo:latest` - linux; amd64
 
 ```console
-$ docker pull matomo@sha256:f4e90d9239950db6326c24a0708f07afb43ccd4acd5ec1d2fbe94e94da73083c
+$ docker pull matomo@sha256:87c59d189be3550b11c6a6b49299bec3ef25209434b31a552f7648c80f2b5ef3
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **186.1 MB (186112477 bytes)**  
+-	Total Size: **186.1 MB (186119686 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e54f5c28a2e31f819314dad51deb31aa35528bc3935f7a6f562c719de2110b8c`
+-	Image ID: `sha256:1313ff17a6edbce29640f88cc99c7d545de1a3714cbe0259cc3fa2ead75a76b4`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -98,19 +98,19 @@ ENV PHP_MEMORY_LIMIT=256M
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libfreetype6-dev 		libjpeg-dev 		libldap2-dev 		libpng-dev 		libzip-dev 		procps 	; 		debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch"; 	docker-php-ext-install -j "$(nproc)" 		gd 		bcmath 		ldap 		mysqli 		opcache 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.21; 	pecl install redis-5.3.6; 		docker-php-ext-enable 		apcu 		redis 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { print $3 }' 		| sort -u 		| xargs -r dpkg-query -S 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*
 # Wed, 11 Jan 2023 23:47:20 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Tue, 17 Jan 2023 21:36:23 GMT
-ENV MATOMO_VERSION=4.13.1
-# Tue, 17 Jan 2023 21:36:37 GMT
+# Mon, 30 Jan 2023 20:23:33 GMT
+ENV MATOMO_VERSION=4.13.2
+# Mon, 30 Jan 2023 20:23:49 GMT
 RUN set -ex; 	fetchDeps=" 		dirmngr 		gnupg 	"; 	apt-get update; 	apt-get install -y --no-install-recommends 		$fetchDeps 	; 		curl -fsSL -o matomo.tar.gz 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz"; 	curl -fsSL -o matomo.tar.gz.asc 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys F529A27008477483777FC23D63BB30D0E5D2C749; 	gpg --batch --verify matomo.tar.gz.asc matomo.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" matomo.tar.gz.asc; 	tar -xzf matomo.tar.gz -C /usr/src/; 	rm matomo.tar.gz; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	rm -rf /var/lib/apt/lists/*
-# Tue, 17 Jan 2023 21:36:37 GMT
+# Mon, 30 Jan 2023 20:23:50 GMT
 COPY file:f4ea35cff07e183c01b4e508329d1f5c342d9f4d330bda7f28faa530ced0d166 in /usr/local/etc/php/conf.d/php-matomo.ini 
-# Tue, 17 Jan 2023 21:36:38 GMT
+# Mon, 30 Jan 2023 20:23:50 GMT
 COPY file:ccb778224a0e1f6742127aba2860c245adf24b73ca277e7260c4789883751ccb in /entrypoint.sh 
-# Tue, 17 Jan 2023 21:36:38 GMT
+# Mon, 30 Jan 2023 20:23:50 GMT
 VOLUME [/var/www/html]
-# Tue, 17 Jan 2023 21:36:38 GMT
+# Mon, 30 Jan 2023 20:23:50 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 17 Jan 2023 21:36:38 GMT
+# Mon, 30 Jan 2023 20:23:50 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -175,17 +175,17 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 11 Jan 2023 23:49:53 GMT  
 		Size: 329.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f95b8331ee46fa5dd9a70913280771bd35aa0f89f7a14127f53bfd414812866`  
-		Last Modified: Tue, 17 Jan 2023 21:37:37 GMT  
-		Size: 17.5 MB (17473187 bytes)  
+	-	`sha256:cf41147da2ef1f4e8576d9e1d0003c23b38e9c9f836bbe1b85dbc675e6b52ae8`  
+		Last Modified: Mon, 30 Jan 2023 20:24:50 GMT  
+		Size: 17.5 MB (17480397 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2b200feabec658dc48074f29e66871592812f35fd395bea357a37c4017bea865`  
-		Last Modified: Tue, 17 Jan 2023 21:37:34 GMT  
-		Size: 345.0 B  
+	-	`sha256:5fb6ff837de7dd45477f13ddb64f2b0ea422ee9b84ea6de8b1732c08d2afa13a`  
+		Last Modified: Mon, 30 Jan 2023 20:24:46 GMT  
+		Size: 343.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cd10c6877832f3247e4b83b882399e7d33221ed45dd85d009016448f7f9d40b4`  
-		Last Modified: Tue, 17 Jan 2023 21:37:34 GMT  
-		Size: 631.0 B  
+	-	`sha256:3f32dfb9102f9824c12dfce900e9b2089e685d98e597d978a9aca0f7ca0f5075`  
+		Last Modified: Mon, 30 Jan 2023 20:24:46 GMT  
+		Size: 632.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `matomo:latest` - linux; arm variant v5
