@@ -1,10 +1,10 @@
-# `openjdk:20-ea-32-jdk-oraclelinux7`
+# `openjdk:20-ea-33-jdk-oraclelinux7`
 
 ## Docker Metadata
 
-- Image ID: `sha256:76ee534c2ec925deb0f2fca2638e149b9b7064a638b8d9f737822f56de8f3fa7`
-- Created: `2023-01-20T22:22:12.612574058Z`
-- Virtual Size: ~ 515.75 Mb  
+- Image ID: `sha256:c2dfd7fbc96c27d107675a8f12bcd1e65c668d765647cc4e7fe9e37e19867039`
+- Created: `2023-01-30T19:22:20.111893455Z`
+- Virtual Size: ~ 518.75 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/java/openjdk-20/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/java/openjdk-20`
   - `LANG=en_US.UTF-8`
-  - `JAVA_VERSION=20-ea+32`
+  - `JAVA_VERSION=20-ea+33`
 
 ## `rpm` (`.rpm`-based packages)
 
@@ -291,26 +291,26 @@ $ dnf --quiet download --source --url glib2-2.56.1-9.el7_9
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/glib2-2.56.1-9.el7_9.src.rpm
 ```
 
-### `rpm` package: `glibc-2.17-326.0.1.el7_9.x86_64`
+### `rpm` package: `glibc-2.17-326.0.3.el7_9.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-2.17-326.0.1.el7_9
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/glibc-2.17-326.0.1.el7_9.src.rpm
+$ dnf --quiet download --source --url glibc-2.17-326.0.3.el7_9
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/glibc-2.17-326.0.3.el7_9.src.rpm
 ```
 
-### `rpm` package: `glibc-common-2.17-326.0.1.el7_9.x86_64`
+### `rpm` package: `glibc-common-2.17-326.0.3.el7_9.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-common-2.17-326.0.1.el7_9
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/glibc-2.17-326.0.1.el7_9.src.rpm
+$ dnf --quiet download --source --url glibc-common-2.17-326.0.3.el7_9
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/glibc-2.17-326.0.3.el7_9.src.rpm
 ```
 
 ### `rpm` package: `gmp-6.0.0-15.el7.x86_64`
