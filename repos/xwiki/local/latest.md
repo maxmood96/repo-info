@@ -1,10 +1,10 @@
-# `xwiki:14`
+# `xwiki:15`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e92f9007091a4ab78c0c68b2c1dee0c2dca3cae2559ae0c3668eea19648c60a3`
-- Created: `2023-01-11T02:49:47.819671139Z`
-- Virtual Size: ~ 1.16 Gb  
+- Image ID: `sha256:bd630aa0aa5c679e23ea7d52cbbdd6b817eab27a820c25d3c50b54eca83b9744`
+- Created: `2023-01-31T00:21:22.271373552Z`
+- Virtual Size: ~ 1.17 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -23,9 +23,9 @@
   - `TOMCAT_MAJOR=9`
   - `TOMCAT_VERSION=9.0.69`
   - `TOMCAT_SHA512=8c883c54ce9ce43eba37756a6404cdf3477879883a3e6d146dc8a7aa5e0425f487466afe6b6da4a895927cb7cb59177b9379cec18000f2de12785be57408c779`
-  - `XWIKI_VERSION=14.10.3`
-  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/14.10.3`
-  - `XWIKI_DOWNLOAD_SHA256=62e21e356268ac50e16b54614e0c4a4c1ee0fc81f2e34b393464efdbcf1f5b1f`
+  - `XWIKI_VERSION=15.0`
+  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/15.0`
+  - `XWIKI_DOWNLOAD_SHA256=79ba0f479bbc49521c113821adc9d91141075a9470d7f9bbb6994ca59c30d121`
   - `MYSQL_JDBC_VERSION=8.0.31`
   - `MYSQL_JDBC_SHA256=5249e3dc6d6531b37790e3f61845b96db5e41e891d3d8edb0e2e3a1b53ca2f4f`
   - `MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/8.0.31`

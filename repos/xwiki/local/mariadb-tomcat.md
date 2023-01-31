@@ -1,9 +1,9 @@
-# `xwiki:14-mariadb-tomcat`
+# `xwiki:15-mariadb-tomcat`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c0a0c9b8b05df0dbb11a6e7576be4c525ebcd76f541c625fa40ee2a11ef63c5c`
-- Created: `2023-01-11T02:51:21.727089207Z`
+- Image ID: `sha256:0088d72e62c01c9996a75e1b7e2296ba530b2dbd4054be70a006b33295aa4ff9`
+- Created: `2023-01-31T00:22:52.655567882Z`
 - Virtual Size: ~ 1.16 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -23,14 +23,14 @@
   - `TOMCAT_MAJOR=9`
   - `TOMCAT_VERSION=9.0.69`
   - `TOMCAT_SHA512=8c883c54ce9ce43eba37756a6404cdf3477879883a3e6d146dc8a7aa5e0425f487466afe6b6da4a895927cb7cb59177b9379cec18000f2de12785be57408c779`
-  - `XWIKI_VERSION=14.10.3`
-  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/14.10.3`
-  - `XWIKI_DOWNLOAD_SHA256=62e21e356268ac50e16b54614e0c4a4c1ee0fc81f2e34b393464efdbcf1f5b1f`
-  - `MARIADB_JDBC_VERSION=3.1.0`
-  - `MARIADB_JDBC_SHA256=bf78c92310a848b348f8478667f68fd17f8b80963c67474e8199f5abc8acbd50`
-  - `MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.1.0`
-  - `MARIADB_JDBC_ARTIFACT=mariadb-java-client-3.1.0.jar`
-  - `MARIADB_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mariadb-java-client-3.1.0.jar`
+  - `XWIKI_VERSION=15.0`
+  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/15.0`
+  - `XWIKI_DOWNLOAD_SHA256=79ba0f479bbc49521c113821adc9d91141075a9470d7f9bbb6994ca59c30d121`
+  - `MARIADB_JDBC_VERSION=3.1.1`
+  - `MARIADB_JDBC_SHA256=a554541fd88047905fb0c4c10e1d85295f5e38c7bb5fb408b425392a79fc26e3`
+  - `MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.1.1`
+  - `MARIADB_JDBC_ARTIFACT=mariadb-java-client-3.1.1.jar`
+  - `MARIADB_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mariadb-java-client-3.1.1.jar`
 - Labels:
   - `org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>`
   - `org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki`
