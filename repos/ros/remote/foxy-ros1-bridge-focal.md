@@ -1,7 +1,7 @@
 ## `ros:foxy-ros1-bridge-focal`
 
 ```console
-$ docker pull ros@sha256:a2ae48ba0e805548aba576d7da33e5a7eb558af3fe828b1fb1c27732d6545dfd
+$ docker pull ros@sha256:dc5c538fdc8b3e44f5b69624397ea03ad1a1ee124aba57471661d2649144db26
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,73 +12,73 @@ $ docker pull ros@sha256:a2ae48ba0e805548aba576d7da33e5a7eb558af3fe828b1fb1c2773
 ### `ros:foxy-ros1-bridge-focal` - linux; amd64
 
 ```console
-$ docker pull ros@sha256:ad49d5486d4f18c27bbd5a43e9c82eee8c870f15a629315884ee95be61542b62
+$ docker pull ros@sha256:cfc9335331d64eb79d9995454f6f4dbb6a812882ce6f31621b06a3537bc20233
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **349.0 MB (349019600 bytes)**  
+-	Total Size: **349.0 MB (349022665 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:af0fba0f6333ea96c55c3744fd2c72b3688f12d19912764dc502ddb242acde1c`
+-	Image ID: `sha256:aa7dcec79d7a96ec6a3187b2ca0c148ba865355d2049885b82ef8f0377cd7e32`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Thu, 26 Jan 2023 13:19:55 GMT
+# Wed, 01 Feb 2023 11:42:37 GMT
 ARG RELEASE
-# Thu, 26 Jan 2023 13:19:55 GMT
+# Wed, 01 Feb 2023 11:42:37 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 26 Jan 2023 13:19:55 GMT
+# Wed, 01 Feb 2023 11:42:37 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 26 Jan 2023 13:19:55 GMT
+# Wed, 01 Feb 2023 11:42:37 GMT
 LABEL org.opencontainers.image.version=20.04
-# Thu, 26 Jan 2023 13:19:57 GMT
+# Wed, 01 Feb 2023 11:42:39 GMT
 ADD file:8b180a9b4497de0c6e131d6b48cf5c69a885379e63033ab9639d1655991e626c in / 
-# Thu, 26 Jan 2023 13:19:57 GMT
+# Wed, 01 Feb 2023 11:42:39 GMT
 CMD ["/bin/bash"]
-# Tue, 31 Jan 2023 19:29:54 GMT
+# Wed, 01 Feb 2023 18:45:12 GMT
 RUN echo 'Etc/UTC' > /etc/timezone &&     ln -s /usr/share/zoneinfo/Etc/UTC /etc/localtime &&     apt-get update &&     apt-get install -q -y --no-install-recommends tzdata &&     rm -rf /var/lib/apt/lists/*
-# Tue, 31 Jan 2023 19:30:01 GMT
+# Wed, 01 Feb 2023 20:39:48 GMT
 RUN apt-get update && apt-get install -q -y --no-install-recommends     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/*
-# Tue, 31 Jan 2023 19:43:09 GMT
+# Wed, 01 Feb 2023 20:51:44 GMT
 RUN echo "deb http://packages.ros.org/ros2/ubuntu focal main" > /etc/apt/sources.list.d/ros2-latest.list
-# Tue, 31 Jan 2023 19:43:10 GMT
+# Wed, 01 Feb 2023 20:51:46 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
-# Tue, 31 Jan 2023 19:43:10 GMT
+# Wed, 01 Feb 2023 20:51:46 GMT
 ENV LANG=C.UTF-8
-# Tue, 31 Jan 2023 19:43:10 GMT
+# Wed, 01 Feb 2023 20:51:46 GMT
 ENV LC_ALL=C.UTF-8
-# Tue, 31 Jan 2023 19:43:11 GMT
+# Wed, 01 Feb 2023 20:51:46 GMT
 ENV ROS_DISTRO=foxy
-# Tue, 31 Jan 2023 19:44:09 GMT
+# Wed, 01 Feb 2023 20:52:48 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     ros-foxy-ros-core=0.9.2-1*     && rm -rf /var/lib/apt/lists/*
-# Tue, 31 Jan 2023 19:44:11 GMT
+# Wed, 01 Feb 2023 20:52:50 GMT
 COPY file:ec5b16a0e777d7d7d041a72ffc817bf5f7b375662afa0c404f3ca36fad1afb90 in / 
-# Tue, 31 Jan 2023 19:44:11 GMT
+# Wed, 01 Feb 2023 20:52:50 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Tue, 31 Jan 2023 19:44:11 GMT
+# Wed, 01 Feb 2023 20:52:50 GMT
 CMD ["bash"]
-# Tue, 31 Jan 2023 19:44:42 GMT
+# Wed, 01 Feb 2023 20:53:13 GMT
 RUN apt-get update && apt-get install --no-install-recommends -y     build-essential     git     python3-colcon-common-extensions     python3-colcon-mixin     python3-rosdep     python3-vcstool     && rm -rf /var/lib/apt/lists/*
-# Tue, 31 Jan 2023 19:44:48 GMT
+# Wed, 01 Feb 2023 20:53:18 GMT
 RUN rosdep init &&   rosdep update --rosdistro $ROS_DISTRO
-# Tue, 31 Jan 2023 19:44:51 GMT
+# Wed, 01 Feb 2023 20:53:23 GMT
 RUN colcon mixin add default       https://raw.githubusercontent.com/colcon/colcon-mixin-repository/master/index.yaml &&     colcon mixin update &&     colcon metadata add default       https://raw.githubusercontent.com/colcon/colcon-metadata-repository/master/index.yaml &&     colcon metadata update
-# Tue, 31 Jan 2023 19:45:07 GMT
+# Wed, 01 Feb 2023 20:53:40 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     ros-foxy-ros-base=0.9.2-1*     && rm -rf /var/lib/apt/lists/*
-# Tue, 31 Jan 2023 19:45:16 GMT
+# Wed, 01 Feb 2023 20:53:52 GMT
 RUN echo "deb http://packages.ros.org/ros/ubuntu focal main" > /etc/apt/sources.list.d/ros1-latest.list
-# Tue, 31 Jan 2023 19:45:18 GMT
+# Wed, 01 Feb 2023 20:53:53 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
-# Tue, 31 Jan 2023 19:45:18 GMT
+# Wed, 01 Feb 2023 20:53:53 GMT
 ENV ROS1_DISTRO=noetic
-# Tue, 31 Jan 2023 19:45:18 GMT
+# Wed, 01 Feb 2023 20:53:53 GMT
 ENV ROS2_DISTRO=foxy
-# Tue, 31 Jan 2023 19:45:43 GMT
+# Wed, 01 Feb 2023 20:54:19 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     ros-noetic-ros-comm=1.15.15-1*     ros-noetic-roscpp-tutorials=0.10.2-1*     ros-noetic-rospy-tutorials=0.10.2-1*     && rm -rf /var/lib/apt/lists/*
-# Tue, 31 Jan 2023 19:45:57 GMT
+# Wed, 01 Feb 2023 20:54:32 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     ros-foxy-ros1-bridge=0.9.6-1*     ros-foxy-demo-nodes-cpp=0.9.4-1*     ros-foxy-demo-nodes-py=0.9.4-1*     && rm -rf /var/lib/apt/lists/*
-# Tue, 31 Jan 2023 19:45:57 GMT
+# Wed, 01 Feb 2023 20:54:32 GMT
 COPY file:196e0ab4e3b32a1af101eff4dfa0110eb39feb70f4f9f2df3de2e22162513085 in / 
 ```
 
@@ -87,64 +87,64 @@ COPY file:196e0ab4e3b32a1af101eff4dfa0110eb39feb70f4f9f2df3de2e22162513085 in /
 		Last Modified: Thu, 26 Jan 2023 17:04:53 GMT  
 		Size: 28.6 MB (28577884 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c07949706a41bd26517c40195af4c4877c4a94497526c106a6293763dc1765b`  
-		Last Modified: Tue, 31 Jan 2023 20:08:43 GMT  
-		Size: 1.2 MB (1154542 bytes)  
+	-	`sha256:db143da9f5a088b47cfbe87905f9e615f3b537f906257fc11ac7a38ffb0f236c`  
+		Last Modified: Wed, 01 Feb 2023 18:58:42 GMT  
+		Size: 1.2 MB (1154526 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8b2670e9e05f7f793dd7dbe48fba615b13142ad5665135c312378240da79579b`  
-		Last Modified: Tue, 31 Jan 2023 20:08:41 GMT  
-		Size: 5.6 MB (5553673 bytes)  
+	-	`sha256:0f52bb4834a5fa25fa5b39cba579b1676bc6fc585a61819ffad44865e1f80e40`  
+		Last Modified: Wed, 01 Feb 2023 20:55:33 GMT  
+		Size: 5.6 MB (5553686 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ebf152e9a4db74f9930ac09483751214af9a1f226e0fb2a2d70369627cb6ddf8`  
-		Last Modified: Tue, 31 Jan 2023 20:11:16 GMT  
-		Size: 230.0 B  
+	-	`sha256:6f105b35b0dfc6028b74d92fda44d6d2c3af732aca846352b68466fa262457ea`  
+		Last Modified: Wed, 01 Feb 2023 20:58:08 GMT  
+		Size: 227.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f59cc39066911af026fbfacd58275ced54dc5087430530321ace88cd70eb17d4`  
-		Last Modified: Tue, 31 Jan 2023 20:11:16 GMT  
+	-	`sha256:e1da6af1c9709b569597a5ba230c17042bc010f9750727f5c8758e5b1772139b`  
+		Last Modified: Wed, 01 Feb 2023 20:58:08 GMT  
 		Size: 2.0 KB (1990 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b53c5af39e4f0d50dd2e34266f9a2a903ddf6ff3fb23360d78ab392d946b5115`  
-		Last Modified: Tue, 31 Jan 2023 20:11:36 GMT  
-		Size: 120.4 MB (120354163 bytes)  
+	-	`sha256:4390ba395fc8695bc2fa5c6b394cd5d5646325ef60302c849898873530f6d9b1`  
+		Last Modified: Wed, 01 Feb 2023 20:58:29 GMT  
+		Size: 120.4 MB (120357173 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9f77ccef24b2168378b7993b994be148d7ccc81dcc0dd6af02b3498a508ad4a`  
-		Last Modified: Tue, 31 Jan 2023 20:11:16 GMT  
+	-	`sha256:1c508771ef6bc75da73349529405df86553b5351d4963f8b9a0f9b0bd39b568a`  
+		Last Modified: Wed, 01 Feb 2023 20:58:08 GMT  
 		Size: 197.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c587bd24e6d3bd17af2906318935c23cec69372158c04d4c0e2276c45f79a1f8`  
-		Last Modified: Tue, 31 Jan 2023 20:11:55 GMT  
-		Size: 73.3 MB (73334209 bytes)  
+	-	`sha256:04699b3e750a87a1ac026108652f71ed30dbd1658b8992675307ee50b00d13bc`  
+		Last Modified: Wed, 01 Feb 2023 20:58:47 GMT  
+		Size: 73.3 MB (73334255 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9589f9c9bae39b4cbb571d2095fa9e20972d7bedf34f56c71cb377b234aa7207`  
-		Last Modified: Tue, 31 Jan 2023 20:11:45 GMT  
-		Size: 277.8 KB (277778 bytes)  
+	-	`sha256:c60655459143d2e28fcf98e47908a7e7521455039a65dffdcde118686599dc91`  
+		Last Modified: Wed, 01 Feb 2023 20:58:37 GMT  
+		Size: 277.8 KB (277775 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a06edf09eaea7b0d1b06ccd74d1c8af33e67656d5a32341b70f778dfa2fc7e17`  
-		Last Modified: Tue, 31 Jan 2023 20:11:45 GMT  
-		Size: 2.4 KB (2432 bytes)  
+	-	`sha256:06ea369debb9602b8c58eb54bc2ae097a85dca159d27e70505ae0b6dbfb73e22`  
+		Last Modified: Wed, 01 Feb 2023 20:58:37 GMT  
+		Size: 2.4 KB (2426 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:20917058504694a3791959dd4dc87db6cd42cf6c632019971eea5c6474b355c2`  
-		Last Modified: Tue, 31 Jan 2023 20:11:48 GMT  
-		Size: 21.7 MB (21662318 bytes)  
+	-	`sha256:60c16f94d4b42426319c336c992c2ae0a9420d2cda68e8de9c663e7544512d8d`  
+		Last Modified: Wed, 01 Feb 2023 20:58:40 GMT  
+		Size: 21.7 MB (21662340 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ac032e991d1161d607d3070d68fdb31d6002bc5fbc2c7c2d8faca77f92376c56`  
-		Last Modified: Tue, 31 Jan 2023 20:12:07 GMT  
-		Size: 225.0 B  
+	-	`sha256:46476122dd2038ad522fb84e072fba616b953e8bfe5a3fa3f2e323891f03f2bf`  
+		Last Modified: Wed, 01 Feb 2023 20:58:58 GMT  
+		Size: 224.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1ab4f85c71b205725d550cb61dab91e859f5c7d09b9360d91d5cf51267f6facd`  
-		Last Modified: Tue, 31 Jan 2023 20:12:07 GMT  
-		Size: 155.0 B  
+	-	`sha256:fe415d2ec986c55268b230b5b29c45041788ff7ac04826df3945470bf5838547`  
+		Last Modified: Wed, 01 Feb 2023 20:58:58 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d1fd5b2feb27aedbe99d898da57948097f733170938a3b3e78d19cf5c993086`  
-		Last Modified: Tue, 31 Jan 2023 20:12:21 GMT  
-		Size: 76.4 MB (76425495 bytes)  
+	-	`sha256:a74e3379ac16a555e64ef871a2c5651b863633d9cb95ff85d7576ecfd0cc57de`  
+		Last Modified: Wed, 01 Feb 2023 20:59:13 GMT  
+		Size: 76.4 MB (76425373 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:73b22a19e3db8effb381b6add35af1ed189384797e8fbf54248a4ecc847e06f5`  
-		Last Modified: Tue, 31 Jan 2023 20:12:11 GMT  
-		Size: 21.7 MB (21674062 bytes)  
+	-	`sha256:2b5f548ac31300e2ac3f13d7ff94a0a602954b0d370cfecfe4d7ae3dbc80380d`  
+		Last Modified: Wed, 01 Feb 2023 20:59:03 GMT  
+		Size: 21.7 MB (21674188 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1888223ca45436cd56eeea009914eb481039a545fa94fa0765ab08841a5310d4`  
-		Last Modified: Tue, 31 Jan 2023 20:12:07 GMT  
+	-	`sha256:ed68eac63e4eb76c7c609c7830803226e12948e7a9acab40d56e0c6c0fbe4b75`  
+		Last Modified: Wed, 01 Feb 2023 20:58:58 GMT  
 		Size: 247.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
