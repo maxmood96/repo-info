@@ -1,16 +1,15 @@
 ## `buildpack-deps:kinetic-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:85c4f46197e6f0fc47557c714c24c942c5dfac0bb325db31c59d7e68f00e6f48
+$ docker pull buildpack-deps@sha256:23564de567f054c26eda9eaf44dc3976fd8f6f810f52c1349f9096514d278621
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 6
+-	Platforms: 5
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	linux; ppc64le
-	-	linux; riscv64
 	-	linux; s390x
 
 ### `buildpack-deps:kinetic-curl` - linux; amd64
@@ -195,44 +194,6 @@ RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get 
 	-	`sha256:e688b449cdca40b587631310483952ae87bf319f0b7d13251a6a085f60c05db4`  
 		Last Modified: Tue, 31 Jan 2023 18:18:04 GMT  
 		Size: 4.4 MB (4362437 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-### `buildpack-deps:kinetic-curl` - linux; riscv64
-
-```console
-$ docker pull buildpack-deps@sha256:543c2097b5704d8490855afad433a0c554994e09bc3d3aaaadff84054556bc03
-```
-
--	Docker Version: 20.10.17
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **35.4 MB (35449443 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f3513f5a8f64d82bd714ba06db2412ae0b9ac38620ddb6a22ff7685a97e97213`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Fri, 09 Dec 2022 01:14:46 GMT
-ADD file:7e2bfb25c400fe48fedbb3adb245a3bc6b40ec07dae2feeb339c704b967ce658 in / 
-# Fri, 09 Dec 2022 01:14:48 GMT
-CMD ["bash"]
-# Fri, 09 Dec 2022 02:26:58 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 09 Dec 2022 02:27:43 GMT
-RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-```
-
--	Layers:
-	-	`sha256:080423a9398e3d16c0feb2851e7596ddc2d8d33fdfb3bf0b4a881619b9b86c9f`  
-		Last Modified: Fri, 09 Dec 2022 01:37:40 GMT  
-		Size: 25.6 MB (25640259 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:982116c46b9fce2e4125cb4441dc6ea9b142d29299c9688061563ccf1bbdcbb7`  
-		Last Modified: Fri, 09 Dec 2022 03:05:51 GMT  
-		Size: 5.9 MB (5927602 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8fbcc60f8c38f4ecde864a8f7de2346f74cab29bba32ed107631a7787694cdea`  
-		Last Modified: Fri, 09 Dec 2022 03:05:47 GMT  
-		Size: 3.9 MB (3881582 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:kinetic-curl` - linux; s390x

@@ -1,16 +1,15 @@
 ## `buildpack-deps:lunar-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:a5a3c461e1c3a80f7a32f7db8b955bd5964951f48be2f7fb0ae305c771dcd618
+$ docker pull buildpack-deps@sha256:9ace54436cdec9152b0839a7af0cfe9f725755d438359ed1470cba38ed9d02e9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 6
+-	Platforms: 5
 	-	linux; amd64
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	linux; ppc64le
-	-	linux; riscv64
 	-	linux; s390x
 
 ### `buildpack-deps:lunar-curl` - linux; amd64
@@ -195,44 +194,6 @@ RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get 
 	-	`sha256:1579dbb09dc76707e4839919fcec93b48be4479e103cb1aeed1a50194d1724e8`  
 		Last Modified: Wed, 01 Feb 2023 18:22:27 GMT  
 		Size: 4.4 MB (4408979 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-### `buildpack-deps:lunar-curl` - linux; riscv64
-
-```console
-$ docker pull buildpack-deps@sha256:938de68415e6cc78e92fe817118355b3460a9cbb7606bec81eafab61645d712f
-```
-
--	Docker Version: 20.10.17
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **35.7 MB (35736168 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e17f38e1710caf22f06fdaf6fa2662e50be8e3018a2dadaa8985cc817c33dd0e`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Mon, 02 Jan 2023 18:09:01 GMT
-ADD file:512505c2df26db88aeeb5025ff073a2d8e98d995422df61a5cad94d79ef22a42 in / 
-# Mon, 02 Jan 2023 18:09:02 GMT
-CMD ["bash"]
-# Mon, 02 Jan 2023 18:29:30 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 02 Jan 2023 18:30:16 GMT
-RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-```
-
--	Layers:
-	-	`sha256:ada5e428c090bd736690979612e7bece7c31ff1f1701ca35de4d1899e835e69a`  
-		Last Modified: Mon, 02 Jan 2023 18:09:56 GMT  
-		Size: 25.7 MB (25669058 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7e756f227648e5a559b1f2387229c92d1fd4b83589d63631f0d177d76e2c6e34`  
-		Last Modified: Mon, 02 Jan 2023 18:38:32 GMT  
-		Size: 5.9 MB (5925890 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:efb3fe222b3eac428f3f8b9fff7621e4aa631ace7d402b5590058b150e5b19b2`  
-		Last Modified: Mon, 02 Jan 2023 18:38:28 GMT  
-		Size: 4.1 MB (4141220 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:lunar-curl` - linux; s390x
