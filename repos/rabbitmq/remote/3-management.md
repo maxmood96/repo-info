@@ -1,7 +1,7 @@
 ## `rabbitmq:3-management`
 
 ```console
-$ docker pull rabbitmq@sha256:563d3466000ff3b65bbaa663759284f81187e18e216e2955d9c44215f35b5879
+$ docker pull rabbitmq@sha256:8364e73c0258ba569a96cc3ed79e14d86a5c0ac854a98d402e757d86f282ada7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -133,28 +133,28 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:3-management` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:0b41e2e6c7bf67e1c1a2931f9bf95449c4ab2acb6abdcc56de117c5f77b9e8c7
+$ docker pull rabbitmq@sha256:4fe3f0901f698e032a1448c49dd2a68ca015123734177030fa4d357539178a4e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **99.2 MB (99152380 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4b353c2d0619ff38ef1d951ed88f429b19727bc238f01073e07ef187f2e2db3b`
+-	Image ID: `sha256:44151f3d5a8907bca40d2285234d65d6111d953627559335547bc7721e390a35`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
 ```dockerfile
-# Thu, 26 Jan 2023 13:35:44 GMT
+# Wed, 01 Feb 2023 11:28:35 GMT
 ARG RELEASE
-# Thu, 26 Jan 2023 13:35:44 GMT
+# Wed, 01 Feb 2023 11:28:36 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 26 Jan 2023 13:35:44 GMT
+# Wed, 01 Feb 2023 11:28:36 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 26 Jan 2023 13:35:44 GMT
+# Wed, 01 Feb 2023 11:28:36 GMT
 LABEL org.opencontainers.image.version=20.04
-# Thu, 26 Jan 2023 13:35:48 GMT
+# Wed, 01 Feb 2023 11:28:43 GMT
 ADD file:6566d63937dd1808d3a4ea5591d4369b9083772d48fad60626fb91243a9f3f53 in / 
-# Thu, 26 Jan 2023 13:35:49 GMT
+# Wed, 01 Feb 2023 11:28:44 GMT
 CMD ["/bin/bash"]
 # Wed, 01 Feb 2023 01:57:57 GMT
 COPY /usr/local/bin/ /usr/local/bin/ # buildkit
@@ -251,28 +251,28 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:3-management` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:3492026bdf0c654cacdbff3d7797318a7509fe471e69f0625422144672f30445
+$ docker pull rabbitmq@sha256:e5851badedc72073cbca7d508aeeb289d7df973dfb1083673194cc58cf37b23a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **111.9 MB (111865184 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40b051cddbb8e5b9ef4802077d1cf39a9f5ac65c7f3a1a6fdc0e01096a23f72f`
+-	Image ID: `sha256:356021811ae6b67076d89f0b59057208ceeba849e89d9dcfda65c47b909129d5`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
 ```dockerfile
-# Thu, 26 Jan 2023 13:50:26 GMT
+# Wed, 01 Feb 2023 11:27:52 GMT
 ARG RELEASE
-# Thu, 26 Jan 2023 13:50:26 GMT
+# Wed, 01 Feb 2023 11:27:52 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 26 Jan 2023 13:50:26 GMT
+# Wed, 01 Feb 2023 11:27:52 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 26 Jan 2023 13:50:26 GMT
+# Wed, 01 Feb 2023 11:27:52 GMT
 LABEL org.opencontainers.image.version=20.04
-# Thu, 26 Jan 2023 13:50:33 GMT
+# Wed, 01 Feb 2023 11:27:56 GMT
 ADD file:72ca0af0100de6591b59c44bd8856655c8441eb0fcbf7c32e427f6be5108a4a4 in / 
-# Thu, 26 Jan 2023 13:50:33 GMT
+# Wed, 01 Feb 2023 11:27:56 GMT
 CMD ["/bin/bash"]
 # Wed, 01 Feb 2023 01:38:04 GMT
 COPY /usr/local/bin/ /usr/local/bin/ # buildkit
@@ -369,28 +369,28 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:3-management` - linux; ppc64le
 
 ```console
-$ docker pull rabbitmq@sha256:7ba16c5ad4f0e6b37e91cf59037b48c71ee6a535a0fcfd7b3874de1fc7f93e2f
+$ docker pull rabbitmq@sha256:5c719bae628bf21b44ba5fc763c7f5ae7c0a74a9c8daecd81ba22ff1f817da91
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **114.1 MB (114113561 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3edf4c194ce7b780db34598e570fc1d2772e14e88c1126a6bfdc2494ad9a0a43`
+-	Image ID: `sha256:0b3757ff3e844d6e3fc8214ec2156efc5a01c2eed99953e7ede703d301836df7`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
 ```dockerfile
-# Thu, 26 Jan 2023 13:47:16 GMT
+# Wed, 01 Feb 2023 11:27:30 GMT
 ARG RELEASE
-# Thu, 26 Jan 2023 13:47:16 GMT
+# Wed, 01 Feb 2023 11:27:30 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 26 Jan 2023 13:47:17 GMT
+# Wed, 01 Feb 2023 11:27:30 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 26 Jan 2023 13:47:17 GMT
+# Wed, 01 Feb 2023 11:27:31 GMT
 LABEL org.opencontainers.image.version=20.04
-# Thu, 26 Jan 2023 13:47:20 GMT
+# Wed, 01 Feb 2023 11:27:34 GMT
 ADD file:987b941a34ad98533c64e74a3d57b9c1b983ff16c8f36e21d29278a30a2403ee in / 
-# Thu, 26 Jan 2023 13:47:20 GMT
+# Wed, 01 Feb 2023 11:27:34 GMT
 CMD ["/bin/bash"]
 # Wed, 01 Feb 2023 03:53:40 GMT
 COPY /usr/local/bin/ /usr/local/bin/ # buildkit
@@ -487,28 +487,28 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:3-management` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:4ddc208dd4b305ba2eca5eaae5b226356b510da7bc0c7eea8159bdc5fee3352e
+$ docker pull rabbitmq@sha256:255d71714b4f6807d4691f47f9a032e08cb25ff4a0f623e65c83036f504c019c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **103.2 MB (103192920 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3dc446eac9ceb54ae5e32597cc173b863d7804c7ac1cf78b9a81aedbe2d0ee62`
+-	Image ID: `sha256:eb75713e14c416ed0b375a9b380e3c7a80a720580cf7de3563f8292dc5a0cdd2`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
 ```dockerfile
-# Thu, 26 Jan 2023 13:21:27 GMT
+# Wed, 01 Feb 2023 12:00:21 GMT
 ARG RELEASE
-# Thu, 26 Jan 2023 13:21:27 GMT
+# Wed, 01 Feb 2023 12:00:21 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 26 Jan 2023 13:21:27 GMT
+# Wed, 01 Feb 2023 12:00:22 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 26 Jan 2023 13:21:27 GMT
+# Wed, 01 Feb 2023 12:00:22 GMT
 LABEL org.opencontainers.image.version=20.04
-# Thu, 26 Jan 2023 13:21:29 GMT
+# Wed, 01 Feb 2023 12:00:23 GMT
 ADD file:4d5fa9b68af51e9c8cd7b25fb55ddd47256efb0b2eda9432507b72b7c1a17053 in / 
-# Thu, 26 Jan 2023 13:21:30 GMT
+# Wed, 01 Feb 2023 12:00:24 GMT
 CMD ["/bin/bash"]
 # Wed, 01 Feb 2023 00:48:23 GMT
 COPY /usr/local/bin/ /usr/local/bin/ # buildkit
