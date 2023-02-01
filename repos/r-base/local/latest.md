@@ -3287,20 +3287,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-class/copyright`)
 - `GPL-2`
 - `GPL-2 | GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris r-cran-class=7.3-20-1
-'http://deb.debian.org/debian/pool/main/r/r-cran-class/r-cran-class_7.3-20-1.dsc' r-cran-class_7.3-20-1.dsc 1873 SHA256:dbac95f40d16224325935c142e594f5266ba969604d15a5f4a9b64b284814c9d
-'http://deb.debian.org/debian/pool/main/r/r-cran-class/r-cran-class_7.3-20.orig.tar.gz' r-cran-class_7.3-20.orig.tar.gz 20769 SHA256:e65b046bc72b312ff0c5dc7feba4fa3e9bc63387274d44911493782b85f65483
-'http://deb.debian.org/debian/pool/main/r/r-cran-class/r-cran-class_7.3-20-1.debian.tar.xz' r-cran-class_7.3-20-1.debian.tar.xz 3220 SHA256:745027c11ceb5cd7a6fa34bc252bfc6183234bb036ffaecf36c553ca434a1f97
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/r-cran-class/7.3-20-1/
 
-- https://sources.debian.net/src/r-cran-class/7.3-20-1/ (for browsing the source)
-- https://sources.debian.net/src/r-cran-class/7.3-20-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/r-cran-class/7.3-20-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `r-cran-docopt=0.7.1-2`
 
@@ -3338,20 +3331,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-mass/copyright`)
 - `GPL-2`
 - `GPL-2 | GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris r-cran-mass=7.3-58.1-1
-'http://deb.debian.org/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-58.1-1.dsc' r-cran-mass_7.3-58.1-1.dsc 1865 SHA256:f7df15a30d274ab7d5a1e6ec36785ddb8b502d92c0d1ead68e56c9919908ed5e
-'http://deb.debian.org/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-58.1.orig.tar.gz' r-cran-mass_7.3-58.1.orig.tar.gz 514882 SHA256:f704e4e2fb131740d023ae1755c925c2e684886a3061b08e26397135f1231420
-'http://deb.debian.org/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-58.1-1.debian.tar.xz' r-cran-mass_7.3-58.1-1.debian.tar.xz 6440 SHA256:32d3feaddb5a636d53435a54dbdd2b6b33cf9e516aa37a08f4e2491da37a9c1b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/r-cran-mass/7.3-58.1-1/
 
-- https://sources.debian.net/src/r-cran-mass/7.3-58.1-1/ (for browsing the source)
-- https://sources.debian.net/src/r-cran-mass/7.3-58.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/r-cran-mass/7.3-58.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `r-cran-nnet=7.3-18-1`
 
@@ -3390,20 +3376,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-spatial/copyright`)
 - `GPL-2`
 - `GPL-2 | GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris r-cran-spatial=7.3-15-1
-'http://deb.debian.org/debian/pool/main/r/r-cran-spatial/r-cran-spatial_7.3-15-1.dsc' r-cran-spatial_7.3-15-1.dsc 1884 SHA256:1d661b20136cb8c3889b045c4addcb5fbf4128e916eb28b38ba50b272356322a
-'http://deb.debian.org/debian/pool/main/r/r-cran-spatial/r-cran-spatial_7.3-15.orig.tar.gz' r-cran-spatial_7.3-15.orig.tar.gz 44618 SHA256:e5613be94d6f5c1f54813dadc96e4a86b3417dea28106cc90cb24dfd6c3c8cef
-'http://deb.debian.org/debian/pool/main/r/r-cran-spatial/r-cran-spatial_7.3-15-1.debian.tar.xz' r-cran-spatial_7.3-15-1.debian.tar.xz 3184 SHA256:2d1af14fe71a5d721fc42845f2649f6068593a27b2bae2b0273a9818e19a13a2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/r-cran-spatial/7.3-15-1/
 
-- https://sources.debian.net/src/r-cran-spatial/7.3-15-1/ (for browsing the source)
-- https://sources.debian.net/src/r-cran-spatial/7.3-15-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/r-cran-spatial/7.3-15-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=8.2-1`
 
@@ -3969,20 +3948,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris xauth=1:1.1.1-1
-'http://deb.debian.org/debian/pool/main/x/xauth/xauth_1.1.1-1.dsc' xauth_1.1.1-1.dsc 1892 SHA256:eaa2a78cd0079f51105413cda1b983bc7e922e5468998365e3335d5a3bf27bc5
-'http://deb.debian.org/debian/pool/main/x/xauth/xauth_1.1.1.orig.tar.gz' xauth_1.1.1.orig.tar.gz 210117 SHA256:0f558ef33e76843cf16a78cd3910ef8ec0809bea85d14e091c559dcec092c671
-'http://deb.debian.org/debian/pool/main/x/xauth/xauth_1.1.1-1.diff.gz' xauth_1.1.1-1.diff.gz 15637 SHA256:493f79a800a40ecbfcbef25dbda107b3c8bad486b9d49cab42e3f32136ec71ca
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/xauth/1:1.1.1-1/
 
-- https://sources.debian.net/src/xauth/1:1.1.1-1/ (for browsing the source)
-- https://sources.debian.net/src/xauth/1:1.1.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/xauth/1:1.1.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xdg-utils=1.1.3-4.1`
 
