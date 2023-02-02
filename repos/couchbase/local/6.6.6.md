@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:dc671a73b9ef4bce8e5cad8290d4659ed38ac864638d1176a5a25c69f42f3632`
-- Created: `2023-01-24T02:26:20.195631192Z`
+- Image ID: `sha256:3cb9fb9b73bc5e125f3c752235b67f567c89cd23ba831d1f04a463bc7db37233`
+- Created: `2023-02-01T18:30:44.870456532Z`
 - Virtual Size: ~ 1.14 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,6 +13,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/couchbase/bin:/opt/couchbase/bin/tools:/opt/couchbase/bin/install`
 - Labels:
   - `maintainer=docker@couchbase.com`
+  - `org.opencontainers.image.ref.name=ubuntu`
+  - `org.opencontainers.image.version=20.04`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1274,22 +1276,27 @@ $ apt-get source -qq --print-uris p11-kit=0.23.20-1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.20-1ubuntu0.1.debian.tar.xz' p11-kit_0.23.20-1ubuntu0.1.debian.tar.xz 24592 SHA512:b30c6640bb02f0651955447da65911942cd2e302bc5af0ab96787646e776486e317420682dd644079a47ac48d4e2732218545af56da7ec3d3af5fd0c7e55fb21
 ```
 
-### `dpkg` source package: `pam=1.3.1-5ubuntu4.3`
+### `dpkg` source package: `pam=1.3.1-5ubuntu4.4`
 
 Binary Packages:
 
-- `libpam-modules:amd64=1.3.1-5ubuntu4.3`
-- `libpam-modules-bin=1.3.1-5ubuntu4.3`
-- `libpam-runtime=1.3.1-5ubuntu4.3`
-- `libpam0g:amd64=1.3.1-5ubuntu4.3`
+- `libpam-modules:amd64=1.3.1-5ubuntu4.4`
+- `libpam-modules-bin=1.3.1-5ubuntu4.4`
+- `libpam-runtime=1.3.1-5ubuntu4.4`
+- `libpam0g:amd64=1.3.1-5ubuntu4.4`
 
 Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/doc/libpam-modules-bin/copyright`, `/usr/share/doc/libpam-runtime/copyright`, `/usr/share/doc/libpam0g/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris pam=1.3.1-5ubuntu4.4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.3.1-5ubuntu4.4.dsc' pam_1.3.1-5ubuntu4.4.dsc 2594 SHA512:9b3cfd9c1ef7609d9e6a166676bc3e2535c2c824722459c56bfd04b87706677684c8a96f73caa7e4623c10433627d25d8589c6c2fe3415d211f5ccbe870e4800
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.3.1.orig.tar.xz' pam_1.3.1.orig.tar.xz 912332 SHA512:6bc8e2a5b64686f0a23846221c5228c88418ba485b17c53b3a12f91262b5bb73566d6b6a5daa1f63bbae54310aee918b987e44a72ce809b4e7c668f0fadfe08e
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.3.1-5ubuntu4.4.debian.tar.xz' pam_1.3.1-5ubuntu4.4.debian.tar.xz 172340 SHA512:c4fab8883bac4b35cf95a02d4cd3ffa4207d41c32d48ffcc10e03754180fcee923e6d9980e291adc6fae6bd144fd7742b3adcd9456a6f95a3ba5ee85a12499c5
+```
 
 ### `dpkg` source package: `pci.ids=0.0~2020.03.20-1`
 
@@ -1631,19 +1638,25 @@ $ apt-get source -qq --print-uris tar=1.30+dfsg-7ubuntu0.20.04.2
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.30%2bdfsg-7ubuntu0.20.04.2.debian.tar.xz' tar_1.30+dfsg-7ubuntu0.20.04.2.debian.tar.xz 23580 SHA512:2c9999bff0257251eb7d09a702898e42ce45b117d8e3595d68bf0a6ffdeb1d4a1d69202a2674d93a9193576f65dad4de4e094479228bfb4efc4a7931f00d3875
 ```
 
-### `dpkg` source package: `tzdata=2022f-0ubuntu0.20.04.1`
+### `dpkg` source package: `tzdata=2022g-0ubuntu0.20.04.1`
 
 Binary Packages:
 
-- `tzdata=2022f-0ubuntu0.20.04.1`
+- `tzdata=2022g-0ubuntu0.20.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2022g-0ubuntu0.20.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022g-0ubuntu0.20.04.1.dsc' tzdata_2022g-0ubuntu0.20.04.1.dsc 2427 SHA512:d4c80e2ed58b98b18199acb1baa7ec4e686c9a732aef6a004b35c2fd796d5aa5ef31b8984fdee6036ef3a0352d17ef44d500a9d0bb095d03d381cef952a1ece9
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022g.orig.tar.gz' tzdata_2022g.orig.tar.gz 439731 SHA512:7f79394295e00e3a24ebdbf9af3bc454a65f432a93b517e7e96c7f9db9949f6f5fdae9892a9d3789ff44ae0eb1bfe4744d36976b4624659af951d26414f94e65
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022g.orig.tar.gz.asc' tzdata_2022g.orig.tar.gz.asc 833 SHA512:3474a05373ec4397e17133c54708e1f9efd1f1c5e7ee6945f0972809ceda2214cc4962238773818d04ab4f29dcdf0b3e87247ab19795d06a62b8769dd85cf76b
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022g-0ubuntu0.20.04.1.debian.tar.xz' tzdata_2022g-0ubuntu0.20.04.1.debian.tar.xz 166596 SHA512:0897a318912c1327850ebd38b32fc9b253b3f146e61f7eeb0070314c6f0ba51deda4aafdf1ef5db8a63d5dc076cdc1bfdecb54bcb2cf98d3bb18524285ceb914
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2020.02.11.4`
 

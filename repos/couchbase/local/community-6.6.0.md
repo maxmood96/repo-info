@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ee746b929b03bab7d4cd634ad19bcabf99d7d116f51af5f709519476de048991`
-- Created: `2023-01-02T19:21:17.671831973Z`
+- Image ID: `sha256:16a0f064a9d5ce44434a2f66a3032b823f7b7d8e03897f1bee34b05c2c0726b3`
+- Created: `2023-01-31T18:13:32.847850514Z`
 - Virtual Size: ~ 775.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,6 +13,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/couchbase/bin:/opt/couchbase/bin/tools:/opt/couchbase/bin/install`
 - Labels:
   - `maintainer=docker@couchbase.com`
+  - `org.opencontainers.image.ref.name=ubuntu`
+  - `org.opencontainers.image.version=18.04`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1239,22 +1241,26 @@ $ apt-get source -qq --print-uris p11-kit=0.23.9-2ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.9-2ubuntu0.1.debian.tar.xz' p11-kit_0.23.9-2ubuntu0.1.debian.tar.xz 24380 SHA512:460f4179781768a4a4b686955f16f335565d50f7a2d74c298216fe6725ce4e04119f49605752026f65bf56e143e560718969c5983decc906d3246f0a01c46178
 ```
 
-### `dpkg` source package: `pam=1.1.8-3.6ubuntu2.18.04.3`
+### `dpkg` source package: `pam=1.1.8-3.6ubuntu2.18.04.4`
 
 Binary Packages:
 
-- `libpam-modules:amd64=1.1.8-3.6ubuntu2.18.04.3`
-- `libpam-modules-bin=1.1.8-3.6ubuntu2.18.04.3`
-- `libpam-runtime=1.1.8-3.6ubuntu2.18.04.3`
-- `libpam0g:amd64=1.1.8-3.6ubuntu2.18.04.3`
+- `libpam-modules:amd64=1.1.8-3.6ubuntu2.18.04.4`
+- `libpam-modules-bin=1.1.8-3.6ubuntu2.18.04.4`
+- `libpam-runtime=1.1.8-3.6ubuntu2.18.04.4`
+- `libpam0g:amd64=1.1.8-3.6ubuntu2.18.04.4`
 
 Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/doc/libpam-modules-bin/copyright`, `/usr/share/doc/libpam-runtime/copyright`, `/usr/share/doc/libpam0g/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris pam=1.1.8-3.6ubuntu2.18.04.4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.1.8-3.6ubuntu2.18.04.4.dsc' pam_1.1.8-3.6ubuntu2.18.04.4.dsc 2427 SHA512:1c68ecf93dcfa4796c532f4dd3f139322f36403407ef48e26b33b368ba31eb8b9dd8ccb438899ec37634e415f36814a355e4169d595a07cac70bdb4db7d9a7ef
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.1.8-3.6ubuntu2.18.04.4.tar.gz' pam_1.1.8-3.6ubuntu2.18.04.4.tar.gz 2012662 SHA512:c9abf78f4b36d119f2ddeab3df389a4cdf3cd86f7c1c3637f3d552fc800893fee6268c063ec4720c84dfb00f292a4108f3354d6db7925f9f981d6750e0cc379f
+```
 
 ### `dpkg` source package: `pciutils=1:3.5.2-1ubuntu1.1`
 
