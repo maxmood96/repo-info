@@ -1,7 +1,7 @@
 ## `docker:20-dind`
 
 ```console
-$ docker pull docker@sha256:c8bb6fa5388b56304dd770c4bc0478de81ce18540173b1a589178c0d31bfce90
+$ docker pull docker@sha256:5aaa0798ac0403f4af89a9a5403098f3d81218a42e217b6b69064100de52ed18
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -135,14 +135,14 @@ CMD []
 ### `docker:20-dind` - linux; arm64 variant v8
 
 ```console
-$ docker pull docker@sha256:37660314f84150240ebe7ebc5371db0c7093cbef7dd6776294a8471145d0205c
+$ docker pull docker@sha256:6ea0ee20ca8a1a20a10ad982cbb47880287cefe1b40452dfcf1eb4e192a588d8
 ```
 
 -	Docker Version: 20.10.17
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **101.2 MB (101233760 bytes)**  
+-	Total Size: **101.2 MB (101233753 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:39dc6bda9a9d0e65c84bb3057c4e9e4cf51ce7e779c1af9dae82b2595a57f214`
+-	Image ID: `sha256:a23aea93c01238a631db7b2942625d44af9ca36e01c510719571c6068046539e`
 -	Entrypoint: `["dockerd-entrypoint.sh"]`
 -	Default Command: `[]`
 
@@ -189,15 +189,15 @@ RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 	
 ENV DIND_COMMIT=1f32e3c95d72a29b3eaacba156ed675dba976cb5
 # Wed, 01 Feb 2023 00:37:06 GMT
 RUN set -eux; 	wget -O /usr/local/bin/dind "https://raw.githubusercontent.com/docker/docker/${DIND_COMMIT}/hack/dind"; 	chmod +x /usr/local/bin/dind
-# Wed, 01 Feb 2023 00:37:06 GMT
-COPY file:45c7926c5d79023b457ad24274c893b1fc21f241bed46421dc901b8237045f17 in /usr/local/bin/ 
-# Wed, 01 Feb 2023 00:37:06 GMT
+# Fri, 03 Feb 2023 22:39:37 GMT
+COPY file:28536baa0e5b063870353a5185ff0e75dd903c0d705a1ee9a896035a3d42a170 in /usr/local/bin/ 
+# Fri, 03 Feb 2023 22:39:37 GMT
 VOLUME [/var/lib/docker]
-# Wed, 01 Feb 2023 00:37:06 GMT
+# Fri, 03 Feb 2023 22:39:37 GMT
 EXPOSE 2375 2376
-# Wed, 01 Feb 2023 00:37:06 GMT
+# Fri, 03 Feb 2023 22:39:37 GMT
 ENTRYPOINT ["dockerd-entrypoint.sh"]
-# Wed, 01 Feb 2023 00:37:06 GMT
+# Fri, 03 Feb 2023 22:39:37 GMT
 CMD []
 ```
 
@@ -250,7 +250,7 @@ CMD []
 		Last Modified: Wed, 01 Feb 2023 00:39:37 GMT  
 		Size: 1.0 KB (1044 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43e209a5c7ae3588bc38f565bd4526b4abf1bd4f9bd01b52b23e68c4446c3fa7`  
-		Last Modified: Wed, 01 Feb 2023 00:39:38 GMT  
-		Size: 2.7 KB (2746 bytes)  
+	-	`sha256:987a227a6b8fea4e42923048357433b625da77f6c878b6ad67bdcb57b8a24299`  
+		Last Modified: Fri, 03 Feb 2023 22:41:19 GMT  
+		Size: 2.7 KB (2739 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
