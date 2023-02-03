@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3b20abdd313f98273ff3ef461aac353d35ea9540c86841d8d724b742d98f94ff`
-- Created: `2023-01-09T23:41:11.610039592Z`
-- Virtual Size: ~ 160.39 Mb  
+- Image ID: `sha256:2ef3b0a0d7096fbc1027bd21eed3fc8e53a4e495889c4cadcbe98cd6acf4d26c`
+- Created: `2023-02-03T01:39:29.862505401Z`
+- Virtual Size: ~ 160.83 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
-  - `PHP_VERSION=8.2.1`
-  - `PHP_URL=https://www.php.net/distributions/php-8.2.1.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.1.tar.xz.asc`
-  - `PHP_SHA256=650d3bd7a056cabf07f6a0f6f1dd8ba45cd369574bbeaa36de7d1ece212c17af`
+  - `PHP_VERSION=8.2.2`
+  - `PHP_URL=https://www.php.net/distributions/php-8.2.2.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.2.tar.xz.asc`
+  - `PHP_SHA256=bdc4aa38e652bac86039601840bae01c0c3653972eaa6f9f93d5f71953a7ee33`
   - `WORDPRESS_CLI_GPG_KEY=63AF7AA15067C05616FDDD88A3A2E8F226F0BC06`
   - `WORDPRESS_CLI_VERSION=2.7.1`
   - `WORDPRESS_CLI_SHA512=956b5e3e1a076bd5441c082ee754e3ff4517ec965b93c621f455c2bf5719358c36e67d52f676492700b59d42cacb34a50d382535c035f19da7a0b98bc41860de`
@@ -455,16 +455,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.87.0-r0 description:
+libcurl-7.87.0-r1 description:
 The multiprotocol file transfer library
 
-libcurl-7.87.0-r0 webpage:
+libcurl-7.87.0-r1 webpage:
 https://curl.se/
 
-libcurl-7.87.0-r0 installed size:
+libcurl-7.87.0-r1 installed size:
 540 KiB
 
-libcurl-7.87.0-r0 license:
+libcurl-7.87.0-r1 license:
 curl
 
 ```
@@ -659,16 +659,16 @@ BSD-3-Clause
 ### `apk` package: `libx11`
 
 ```console
-libx11-1.8.3-r0 description:
+libx11-1.8.3-r1 description:
 X11 client-side library
 
-libx11-1.8.3-r0 webpage:
+libx11-1.8.3-r1 webpage:
 http://xorg.freedesktop.org/
 
-libx11-1.8.3-r0 installed size:
+libx11-1.8.3-r1 installed size:
 3180 KiB
 
-libx11-1.8.3-r0 license:
+libx11-1.8.3-r1 license:
 custom:XFREE86
 
 ```
