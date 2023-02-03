@@ -2,14 +2,17 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ac7ef0e78967b327ca8422c143a55ee92347b302ec54a7c765584b7cdf7c6440`
-- Created: `2023-01-02T20:40:35.642087535Z`
-- Virtual Size: ~ 75.00 Mb  
+- Image ID: `sha256:873262071297edd49a7d33afe192f7dd416fbcb8f8329bfc9d17b220889f04e1`
+- Created: `2023-01-31T18:58:51.538461413Z`
+- Virtual Size: ~ 75.01 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Command: `["bash"]`
+- Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+- Labels:
+  - `org.opencontainers.image.ref.name=ubuntu`
+  - `org.opencontainers.image.version=18.04`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -585,19 +588,19 @@ $ apt-get source -qq --print-uris gzip=1.6-5ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.6-5ubuntu1.2.debian.tar.xz' gzip_1.6-5ubuntu1.2.debian.tar.xz 20408 SHA512:2253a804bcc3f13696ecef5bb6e5297f3902a471ba7ea239b4309c5fdf377197984f33fbff881f6f8d67540017bbf9f8234519fe332af6397c429454f32d5e13
 ```
 
-### `dpkg` source package: `heimdal=7.5.0+dfsg-1ubuntu0.2`
+### `dpkg` source package: `heimdal=7.5.0+dfsg-1ubuntu0.3`
 
 Binary Packages:
 
-- `libasn1-8-heimdal:amd64=7.5.0+dfsg-1ubuntu0.2`
-- `libgssapi3-heimdal:amd64=7.5.0+dfsg-1ubuntu0.2`
-- `libhcrypto4-heimdal:amd64=7.5.0+dfsg-1ubuntu0.2`
-- `libheimbase1-heimdal:amd64=7.5.0+dfsg-1ubuntu0.2`
-- `libheimntlm0-heimdal:amd64=7.5.0+dfsg-1ubuntu0.2`
-- `libhx509-5-heimdal:amd64=7.5.0+dfsg-1ubuntu0.2`
-- `libkrb5-26-heimdal:amd64=7.5.0+dfsg-1ubuntu0.2`
-- `libroken18-heimdal:amd64=7.5.0+dfsg-1ubuntu0.2`
-- `libwind0-heimdal:amd64=7.5.0+dfsg-1ubuntu0.2`
+- `libasn1-8-heimdal:amd64=7.5.0+dfsg-1ubuntu0.3`
+- `libgssapi3-heimdal:amd64=7.5.0+dfsg-1ubuntu0.3`
+- `libhcrypto4-heimdal:amd64=7.5.0+dfsg-1ubuntu0.3`
+- `libheimbase1-heimdal:amd64=7.5.0+dfsg-1ubuntu0.3`
+- `libheimntlm0-heimdal:amd64=7.5.0+dfsg-1ubuntu0.3`
+- `libhx509-5-heimdal:amd64=7.5.0+dfsg-1ubuntu0.3`
+- `libkrb5-26-heimdal:amd64=7.5.0+dfsg-1ubuntu0.3`
+- `libroken18-heimdal:amd64=7.5.0+dfsg-1ubuntu0.3`
+- `libwind0-heimdal:amd64=7.5.0+dfsg-1ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libasn1-8-heimdal/copyright`, `/usr/share/doc/libgssapi3-heimdal/copyright`, `/usr/share/doc/libhcrypto4-heimdal/copyright`, `/usr/share/doc/libheimbase1-heimdal/copyright`, `/usr/share/doc/libheimntlm0-heimdal/copyright`, `/usr/share/doc/libhx509-5-heimdal/copyright`, `/usr/share/doc/libkrb5-26-heimdal/copyright`, `/usr/share/doc/libroken18-heimdal/copyright`, `/usr/share/doc/libwind0-heimdal/copyright`)
 
@@ -607,9 +610,14 @@ Licenses: (parsed from: `/usr/share/doc/libasn1-8-heimdal/copyright`, `/usr/shar
 - `custom`
 - `none`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris heimdal=7.5.0+dfsg-1ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/h/heimdal/heimdal_7.5.0%2bdfsg-1ubuntu0.3.dsc' heimdal_7.5.0+dfsg-1ubuntu0.3.dsc 3416 SHA512:a0f7654ddeecb4359abbb41a17137be3ba75bb9e100a88b30abaeffb98a9798f5585a618874cd734fb1fbcfd70f19cd9e2b6e00a30ab779b577ca74bd0c876e3
+'http://archive.ubuntu.com/ubuntu/pool/main/h/heimdal/heimdal_7.5.0%2bdfsg.orig.tar.gz' heimdal_7.5.0+dfsg.orig.tar.gz 8955005 SHA512:8ecd3514cb42c746769fb4c83896fc1258cc68ab606894e775e5f99075b6ff87d7024f144a6a369816572270b89e2eb59e8f8dc4384eea25863a90c905cdfa14
+'http://archive.ubuntu.com/ubuntu/pool/main/h/heimdal/heimdal_7.5.0%2bdfsg-1ubuntu0.3.debian.tar.xz' heimdal_7.5.0+dfsg-1ubuntu0.3.debian.tar.xz 331536 SHA512:c2dfc6c44eb1225fbaf18b2fe8a43b4d331779cf2884fe054e1f94e3743eb3e15e9d8c8f22b6929cdaad205a903ba09e4abab9d12709e433c1be09e2f5c2802e
+```
 
 ### `dpkg` source package: `hostname=3.20`
 
@@ -809,19 +817,25 @@ $ apt-get source -qq --print-uris libidn2=2.0.4-1.1ubuntu0.2
 'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn2/libidn2_2.0.4-1.1ubuntu0.2.debian.tar.xz' libidn2_2.0.4-1.1ubuntu0.2.debian.tar.xz 10290460 SHA512:b46d51758767ae8d7cc5e9fe59df28c559baac7677bfbfd6a2e51b84c29211e38a5f85ec27afd9e72ec333ea81d03ae783a03e1d8202a0f6ef52dd7bde47475f
 ```
 
-### `dpkg` source package: `libksba=1.3.5-2ubuntu0.18.04.1`
+### `dpkg` source package: `libksba=1.3.5-2ubuntu0.18.04.2`
 
 Binary Packages:
 
-- `libksba8:amd64=1.3.5-2ubuntu0.18.04.1`
+- `libksba8:amd64=1.3.5-2ubuntu0.18.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/libksba8/copyright`)
 
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libksba=1.3.5-2ubuntu0.18.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/libk/libksba/libksba_1.3.5-2ubuntu0.18.04.2.dsc' libksba_1.3.5-2ubuntu0.18.04.2.dsc 2697 SHA512:5132451e40ac99754e672f01e495b9e7ec46fbc009eb792154eb9ec2f95b1edac44671b66200f6529588f8dd2a03df7d6add3534a4fdaa8a33af88b011475ffe
+'http://archive.ubuntu.com/ubuntu/pool/main/libk/libksba/libksba_1.3.5.orig.tar.bz2' libksba_1.3.5.orig.tar.bz2 620649 SHA512:60179bfd109b7b4fd8d2b30a3216540f03f5a13620d9a5b63f1f95788028708a420911619f172ba57e945a6a2fcd2ef7eaafc5585a0eb2b9652cfadf47bf39a2
+'http://archive.ubuntu.com/ubuntu/pool/main/libk/libksba/libksba_1.3.5.orig.tar.bz2.asc' libksba_1.3.5.orig.tar.bz2.asc 287 SHA512:6b58b1c6ee924230e4f3b040836e85cb3b3f527f667bcb370c28d8ec702c884bcceab374688e02d0356dede81f9fcf975d726c1958d4d87e5c41757a6b2ba39e
+'http://archive.ubuntu.com/ubuntu/pool/main/libk/libksba/libksba_1.3.5-2ubuntu0.18.04.2.debian.tar.xz' libksba_1.3.5-2ubuntu0.18.04.2.debian.tar.xz 15300 SHA512:d0077484c8d52098d80a585d3697c0450f54b502c0abaf0ca196abafd2fb415b07c15af71dbfd79e9fe54d51fd783ca381926386dcd1e9a23ae14bff4d1d32bb
+```
 
 ### `dpkg` source package: `libseccomp=2.5.1-1ubuntu1~18.04.2`
 
@@ -1177,22 +1191,26 @@ $ apt-get source -qq --print-uris p11-kit=0.23.9-2ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.9-2ubuntu0.1.debian.tar.xz' p11-kit_0.23.9-2ubuntu0.1.debian.tar.xz 24380 SHA512:460f4179781768a4a4b686955f16f335565d50f7a2d74c298216fe6725ce4e04119f49605752026f65bf56e143e560718969c5983decc906d3246f0a01c46178
 ```
 
-### `dpkg` source package: `pam=1.1.8-3.6ubuntu2.18.04.3`
+### `dpkg` source package: `pam=1.1.8-3.6ubuntu2.18.04.4`
 
 Binary Packages:
 
-- `libpam-modules:amd64=1.1.8-3.6ubuntu2.18.04.3`
-- `libpam-modules-bin=1.1.8-3.6ubuntu2.18.04.3`
-- `libpam-runtime=1.1.8-3.6ubuntu2.18.04.3`
-- `libpam0g:amd64=1.1.8-3.6ubuntu2.18.04.3`
+- `libpam-modules:amd64=1.1.8-3.6ubuntu2.18.04.4`
+- `libpam-modules-bin=1.1.8-3.6ubuntu2.18.04.4`
+- `libpam-runtime=1.1.8-3.6ubuntu2.18.04.4`
+- `libpam0g:amd64=1.1.8-3.6ubuntu2.18.04.4`
 
 Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/doc/libpam-modules-bin/copyright`, `/usr/share/doc/libpam-runtime/copyright`, `/usr/share/doc/libpam0g/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris pam=1.1.8-3.6ubuntu2.18.04.4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.1.8-3.6ubuntu2.18.04.4.dsc' pam_1.1.8-3.6ubuntu2.18.04.4.dsc 2427 SHA512:1c68ecf93dcfa4796c532f4dd3f139322f36403407ef48e26b33b368ba31eb8b9dd8ccb438899ec37634e415f36814a355e4169d595a07cac70bdb4db7d9a7ef
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.1.8-3.6ubuntu2.18.04.4.tar.gz' pam_1.1.8-3.6ubuntu2.18.04.4.tar.gz 2012662 SHA512:c9abf78f4b36d119f2ddeab3df389a4cdf3cd86f7c1c3637f3d552fc800893fee6268c063ec4720c84dfb00f292a4108f3354d6db7925f9f981d6750e0cc379f
+```
 
 ### `dpkg` source package: `pcre3=2:8.39-9ubuntu0.1`
 
