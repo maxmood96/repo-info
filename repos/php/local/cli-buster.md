@@ -1,10 +1,10 @@
-# `php:8.2.1-cli-buster`
+# `php:8.2.2-cli-buster`
 
 ## Docker Metadata
 
-- Image ID: `sha256:76bdbd0e734ec05a3a190f445af13730468630e6037f873288256833591f9ddc`
-- Created: `2023-01-11T07:37:01.3210047Z`
-- Virtual Size: ~ 430.20 Mb  
+- Image ID: `sha256:e63df091356c8f2e5705be7fa0dcb49a2b530809a1489ef5e17d1f3cb4547af7`
+- Created: `2023-02-03T00:03:14.717188059Z`
+- Virtual Size: ~ 430.97 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
-  - `PHP_VERSION=8.2.1`
-  - `PHP_URL=https://www.php.net/distributions/php-8.2.1.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.1.tar.xz.asc`
-  - `PHP_SHA256=650d3bd7a056cabf07f6a0f6f1dd8ba45cd369574bbeaa36de7d1ece212c17af`
+  - `PHP_VERSION=8.2.2`
+  - `PHP_URL=https://www.php.net/distributions/php-8.2.2.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.2.tar.xz.asc`
+  - `PHP_SHA256=bdc4aa38e652bac86039601840bae01c0c3653972eaa6f9f93d5f71953a7ee33`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -433,12 +433,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/coreutils/8.30-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/coreutils/8.30-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.64.0-4+deb10u3`
+### `dpkg` source package: `curl=7.64.0-4+deb10u4`
 
 Binary Packages:
 
-- `curl=7.64.0-4+deb10u3`
-- `libcurl4:amd64=7.64.0-4+deb10u3`
+- `curl=7.64.0-4+deb10u4`
+- `libcurl4:amd64=7.64.0-4+deb10u4`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -449,13 +449,20 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris curl=7.64.0-4+deb10u4
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.64.0-4%2bdeb10u4.dsc' curl_7.64.0-4+deb10u4.dsc 2694 SHA256:ba385d7f1468f4bf309642218433f4975b9d5606410941bce7382b8cddebc273
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.64.0.orig.tar.gz' curl_7.64.0.orig.tar.gz 4032645 SHA256:cb90d2eb74d4e358c1ed1489f8e3af96b50ea4374ad71f143fa4595e998d81b5
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.64.0-4%2bdeb10u4.debian.tar.xz' curl_7.64.0-4+deb10u4.debian.tar.xz 59080 SHA256:a6a0f1c45359fa262ae1612e9d3d3e185c88b4d87473e44557bcc0441a72f10c
+```
 
-- http://snapshot.debian.org/package/curl/7.64.0-4+deb10u3/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/curl/7.64.0-4+deb10u4/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.64.0-4+deb10u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.64.0-4+deb10u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-1+deb10u2`
 
