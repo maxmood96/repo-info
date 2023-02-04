@@ -1,13 +1,14 @@
 ## `debian:unstable-20230202-slim`
 
 ```console
-$ docker pull debian@sha256:5625ab0de9eca356b84fe0b68ab9b4d62d2d21749b0d56c98d68f75479305f3d
+$ docker pull debian@sha256:3a1a1c6754ac694aafc5a9eeda74564c1ed3ce61a4d0bb1d3ec12cd8a02b4933
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 6
+-	Platforms: 7
 	-	linux; amd64
 	-	linux; arm variant v5
+	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; mips64le
@@ -63,6 +64,32 @@ CMD ["bash"]
 	-	`sha256:bcad278f032ad6eabe925cb6da0a8335936b410fc1586c67da5bebb4389d3920`  
 		Last Modified: Sat, 04 Feb 2023 02:54:29 GMT  
 		Size: 28.0 MB (27959650 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `debian:unstable-20230202-slim` - linux; arm variant v7
+
+```console
+$ docker pull debian@sha256:e0fe73b6c7e650f464a8ea9b61784a1f8a660c6489a6232bdc5279c53250e632
+```
+
+-	Docker Version: 20.10.17
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **25.8 MB (25775122 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:b36be9d43df0dcad32517a6f5a1facd4fd652aa5e6b8c0a4c7eaea851ef697d7`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Sat, 04 Feb 2023 10:02:29 GMT
+ADD file:9981f94f993f17f8279847c4facfd79a0490f787171c73f0b83b9458802dda05 in / 
+# Sat, 04 Feb 2023 10:02:29 GMT
+CMD ["bash"]
+```
+
+-	Layers:
+	-	`sha256:a1965af6c5103325a01a015b55cd17c4b74e9c6294859aef9faeb9d99bc1fb92`  
+		Last Modified: Sat, 04 Feb 2023 10:10:33 GMT  
+		Size: 25.8 MB (25775122 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `debian:unstable-20230202-slim` - linux; arm64 variant v8

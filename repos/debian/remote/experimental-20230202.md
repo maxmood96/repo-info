@@ -1,13 +1,14 @@
 ## `debian:experimental-20230202`
 
 ```console
-$ docker pull debian@sha256:c90e3ba72623c5b8a21c56853ceabf6b302c8194fd938a392142ad6edd404a1d
+$ docker pull debian@sha256:910386320b782d9460fde57a9ab24a1d3856cb79410a0f6554db6175cdd83256
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 6
+-	Platforms: 7
 	-	linux; amd64
 	-	linux; arm variant v5
+	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; mips64le
@@ -75,6 +76,38 @@ RUN echo 'deb http://deb.debian.org/debian experimental main' > /etc/apt/sources
 	-	`sha256:824990dafb7317e617f7cc2aef25fe33a06cdda045d2af1b10c0ae124cd0fa9b`  
 		Last Modified: Sat, 04 Feb 2023 02:54:40 GMT  
 		Size: 221.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `debian:experimental-20230202` - linux; arm variant v7
+
+```console
+$ docker pull debian@sha256:82e501fb5cad4034e9cd142c2e2abd6a62c3112477719415bba7216b3f81e8d8
+```
+
+-	Docker Version: 20.10.17
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **45.8 MB (45796254 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:251b0b94f4c13e140f70e053dd3594f013c9184cd01edfb2499270af7149c14b`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Sat, 04 Feb 2023 10:02:17 GMT
+ADD file:ef9529d6926117547c33ef2a0acaffc1212917225dd628220c9fa1f14a10401e in / 
+# Sat, 04 Feb 2023 10:02:18 GMT
+CMD ["bash"]
+# Sat, 04 Feb 2023 10:02:35 GMT
+RUN echo 'deb http://deb.debian.org/debian experimental main' > /etc/apt/sources.list.d/experimental.list
+```
+
+-	Layers:
+	-	`sha256:161d71555cb85d23241501aad935f14698a4354a80cd92d9ea1a3fdc49040389`  
+		Last Modified: Sat, 04 Feb 2023 10:10:18 GMT  
+		Size: 45.8 MB (45796032 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0bb6cd7a451210fc180874d78f537b4da574e6cbea9d4992d3460845d90d518d`  
+		Last Modified: Sat, 04 Feb 2023 10:10:44 GMT  
+		Size: 222.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `debian:experimental-20230202` - linux; arm64 variant v8
