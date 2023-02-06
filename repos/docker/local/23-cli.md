@@ -1,9 +1,9 @@
-# `docker:23.0.0-rc.4-cli`
+# `docker:23.0.0-cli`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7fc04b1f9f54cbd46ef7a117f0dcd4206774e673e2f78e2927ea0a939560a5cd`
-- Created: `2023-02-02T01:03:03.106616716Z`
+- Image ID: `sha256:cf59de5a6ac54a5ee72ca5a00945eb67e1b1ecb7648c9139366ff633f4ad2718`
+- Created: `2023-02-02T23:19:35.706779248Z`
 - Virtual Size: ~ 141.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Command: `["sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=23.0.0-rc.4`
+  - `DOCKER_VERSION=23.0.0`
   - `DOCKER_BUILDX_VERSION=0.10.2`
   - `DOCKER_COMPOSE_VERSION=2.15.1`
   - `DOCKER_TLS_CERTDIR=/certs`
