@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bc241f6d9ea5863f7dc4fd6368d9216be675f4bc3738ac1ceeab7d5949504172`
-- Created: `2023-01-11T17:27:27.053458181Z`
+- Image ID: `sha256:2976a5289174214e4e337aec77e552998c07efc0fe52979c2c53fff861f2d854`
+- Created: `2023-02-04T13:22:41.769253065Z`
 - Virtual Size: ~ 2.89 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1420,13 +1420,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/cups/2.2.10-6+deb10u6/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/cups/2.2.10-6+deb10u6/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.64.0-4+deb10u3`
+### `dpkg` source package: `curl=7.64.0-4+deb10u4`
 
 Binary Packages:
 
-- `libcurl3-gnutls:amd64=7.64.0-4+deb10u3`
-- `libcurl4:amd64=7.64.0-4+deb10u3`
-- `libcurl4-gnutls-dev:amd64=7.64.0-4+deb10u3`
+- `libcurl3-gnutls:amd64=7.64.0-4+deb10u4`
+- `libcurl4:amd64=7.64.0-4+deb10u4`
+- `libcurl4-gnutls-dev:amd64=7.64.0-4+deb10u4`
 
 Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4/copyright`, `/usr/share/doc/libcurl4-gnutls-dev/copyright`)
 
@@ -1437,13 +1437,20 @@ Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris curl=7.64.0-4+deb10u4
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.64.0-4%2bdeb10u4.dsc' curl_7.64.0-4+deb10u4.dsc 2694 SHA256:ba385d7f1468f4bf309642218433f4975b9d5606410941bce7382b8cddebc273
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.64.0.orig.tar.gz' curl_7.64.0.orig.tar.gz 4032645 SHA256:cb90d2eb74d4e358c1ed1489f8e3af96b50ea4374ad71f143fa4595e998d81b5
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.64.0-4%2bdeb10u4.debian.tar.xz' curl_7.64.0-4+deb10u4.debian.tar.xz 59080 SHA256:a6a0f1c45359fa262ae1612e9d3d3e185c88b4d87473e44557bcc0441a72f10c
+```
 
-- http://snapshot.debian.org/package/curl/7.64.0-4+deb10u3/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/curl/7.64.0-4+deb10u4/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.64.0-4+deb10u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.64.0-4+deb10u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-1+deb10u2`
 
@@ -2591,12 +2598,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/giflib/5.1.4-3+deb10u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/giflib/5.1.4-3+deb10u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `git=1:2.20.1-2+deb10u6`
+### `dpkg` source package: `git=1:2.20.1-2+deb10u7`
 
 Binary Packages:
 
-- `git=1:2.20.1-2+deb10u6`
-- `git-man=1:2.20.1-2+deb10u6`
+- `git=1:2.20.1-2+deb10u7`
+- `git-man=1:2.20.1-2+deb10u7`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -2619,13 +2626,20 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris git=1:2.20.1-2+deb10u7
+'http://deb.debian.org/debian-security/pool/updates/main/g/git/git_2.20.1-2%2bdeb10u7.dsc' git_2.20.1-2+deb10u7.dsc 2894 SHA256:5604b00ffaa0e19fa390c282f1da2adb3a00cc16aab73e55ebe29ce8a69a0c1f
+'http://deb.debian.org/debian-security/pool/updates/main/g/git/git_2.20.1.orig.tar.xz' git_2.20.1.orig.tar.xz 5359872 SHA256:9d2e91e2faa2ea61ba0a70201d023b36f54d846314591a002c610ea2ab81c3e9
+'http://deb.debian.org/debian-security/pool/updates/main/g/git/git_2.20.1-2%2bdeb10u7.debian.tar.xz' git_2.20.1-2+deb10u7.debian.tar.xz 693472 SHA256:a8787e368edcb5518d0d07ad60294d54981eaa890cad16b060fca3220e957d5d
+```
 
-- http://snapshot.debian.org/package/git/1:2.20.1-2+deb10u6/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/git/1:2.20.1-2+deb10u7/ (for browsing the source)
+- https://sources.debian.net/src/git/1:2.20.1-2+deb10u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/git/1:2.20.1-2+deb10u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gl2ps=1.4.0+dfsg1-2`
 
@@ -3975,11 +3989,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libaec/1.0.2-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libaec/1.0.2-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libarchive=3.3.3-4+deb10u2`
+### `dpkg` source package: `libarchive=3.3.3-4+deb10u3`
 
 Binary Packages:
 
-- `libarchive13:amd64=3.3.3-4+deb10u2`
+- `libarchive13:amd64=3.3.3-4+deb10u3`
 
 Licenses: (parsed from: `/usr/share/doc/libarchive13/copyright`)
 
@@ -3992,13 +4006,20 @@ Licenses: (parsed from: `/usr/share/doc/libarchive13/copyright`)
 - `Expat`
 - `PD`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris libarchive=3.3.3-4+deb10u3
+'http://deb.debian.org/debian-security/pool/updates/main/liba/libarchive/libarchive_3.3.3-4%2bdeb10u3.dsc' libarchive_3.3.3-4+deb10u3.dsc 2548 SHA256:89354642e26e1ee08588d5549527968c7615e391304d46c11df9b83903af4956
+'http://deb.debian.org/debian-security/pool/updates/main/liba/libarchive/libarchive_3.3.3.orig.tar.gz' libarchive_3.3.3.orig.tar.gz 6535598 SHA256:ba7eb1781c9fbbae178c4c6bad1c6eb08edab9a1496c64833d1715d022b30e2e
+'http://deb.debian.org/debian-security/pool/updates/main/liba/libarchive/libarchive_3.3.3-4%2bdeb10u3.debian.tar.xz' libarchive_3.3.3-4+deb10u3.debian.tar.xz 24948 SHA256:9a6217ca0d0bc489a8f6f0cbb7465c5d3bb1b54410e82922cfd3423d1082da8f
+```
 
-- http://snapshot.debian.org/package/libarchive/3.3.3-4+deb10u2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/libarchive/3.3.3-4+deb10u3/ (for browsing the source)
+- https://sources.debian.net/src/libarchive/3.3.3-4+deb10u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libarchive/3.3.3-4+deb10u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libassuan=2.5.2-1`
 
@@ -12647,23 +12668,30 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/subversion/1.10.4-1+deb10u3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/subversion/1.10.4-1+deb10u3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `sudo=1.8.27-1+deb10u4`
+### `dpkg` source package: `sudo=1.8.27-1+deb10u5`
 
 Binary Packages:
 
-- `sudo=1.8.27-1+deb10u4`
+- `sudo=1.8.27-1+deb10u5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris sudo=1.8.27-1+deb10u5
+'http://deb.debian.org/debian-security/pool/updates/main/s/sudo/sudo_1.8.27-1%2bdeb10u5.dsc' sudo_1.8.27-1+deb10u5.dsc 2134 SHA256:2410415337867afd6800c1bff813182effba7df2c4c09eeeda6adf557bf2af20
+'http://deb.debian.org/debian-security/pool/updates/main/s/sudo/sudo_1.8.27.orig.tar.gz' sudo_1.8.27.orig.tar.gz 3293178 SHA256:7beb68b94471ef56d8a1036dbcdc09a7b58a949a68ffce48b83f837dd33e2ec0
+'http://deb.debian.org/debian-security/pool/updates/main/s/sudo/sudo_1.8.27-1%2bdeb10u5.debian.tar.xz' sudo_1.8.27-1+deb10u5.debian.tar.xz 33356 SHA256:665a4a34b6edcaa2e281e946d3790814fa53a8595d3234c480bd9c42e1aa3562
+```
 
-- http://snapshot.debian.org/package/sudo/1.8.27-1+deb10u4/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/sudo/1.8.27-1+deb10u5/ (for browsing the source)
+- https://sources.debian.net/src/sudo/1.8.27-1+deb10u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/sudo/1.8.27-1+deb10u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `superlu=5.2.1+dfsg1-4`
 
@@ -12889,13 +12917,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tesseract/4.0.0-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tesseract/4.0.0-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tiff=4.1.0+git191117-2~deb10u4`
+### `dpkg` source package: `tiff=4.1.0+git191117-2~deb10u6`
 
 Binary Packages:
 
-- `libtiff-dev:amd64=4.1.0+git191117-2~deb10u4`
-- `libtiff5:amd64=4.1.0+git191117-2~deb10u4`
-- `libtiffxx5:amd64=4.1.0+git191117-2~deb10u4`
+- `libtiff-dev:amd64=4.1.0+git191117-2~deb10u6`
+- `libtiff5:amd64=4.1.0+git191117-2~deb10u6`
+- `libtiffxx5:amd64=4.1.0+git191117-2~deb10u6`
 
 Licenses: (parsed from: `/usr/share/doc/libtiff-dev/copyright`, `/usr/share/doc/libtiff5/copyright`, `/usr/share/doc/libtiffxx5/copyright`)
 
@@ -12904,17 +12932,17 @@ Licenses: (parsed from: `/usr/share/doc/libtiff-dev/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tiff=4.1.0+git191117-2~deb10u4
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.1.0%2bgit191117-2%7edeb10u4.dsc' tiff_4.1.0+git191117-2~deb10u4.dsc 2274 SHA256:e8e9e834ccf9602fcf5fc941af272332a82b1208a116a1bd2fb0a83288b3f692
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.1.0%2bgit191117.orig.tar.xz' tiff_4.1.0+git191117.orig.tar.xz 1533524 SHA256:67e1d045e994adb7144b0cca228d70dd6d520aaf8c75c342064bc0fd601e6e42
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.1.0%2bgit191117-2%7edeb10u4.debian.tar.xz' tiff_4.1.0+git191117-2~deb10u4.debian.tar.xz 26308 SHA256:1e145d2207b2b998ca88b8adb0bf1c1ef0ab1d433ff9e623a78ad3066d43850b
+$ apt-get source -qq --print-uris tiff=4.1.0+git191117-2~deb10u6
+'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.1.0%2bgit191117-2%7edeb10u6.dsc' tiff_4.1.0+git191117-2~deb10u6.dsc 2303 SHA256:cfae550d5c75a647fa26ecacd9dbe00fd0332353c5fe986f072e1557175ab7f2
+'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.1.0%2bgit191117.orig.tar.xz' tiff_4.1.0+git191117.orig.tar.xz 1533524 SHA256:67e1d045e994adb7144b0cca228d70dd6d520aaf8c75c342064bc0fd601e6e42
+'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.1.0%2bgit191117-2%7edeb10u6.debian.tar.xz' tiff_4.1.0+git191117-2~deb10u6.debian.tar.xz 40408 SHA256:4a763002fe0241f1548f78fe48a11b535fa0131cd4025df7c520bdfb7532f00c
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/tiff/4.1.0+git191117-2~deb10u4/ (for browsing the source)
-- https://sources.debian.net/src/tiff/4.1.0+git191117-2~deb10u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tiff/4.1.0+git191117-2~deb10u4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/tiff/4.1.0+git191117-2~deb10u6/ (for browsing the source)
+- https://sources.debian.net/src/tiff/4.1.0+git191117-2~deb10u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tiff/4.1.0+git191117-2~deb10u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tinyxml2=7.0.0+dfsg-1`
 
