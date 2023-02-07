@@ -218,15 +218,9 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris coreutils=8.32-4.1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.dsc' coreutils_8.32-4.1ubuntu1.dsc 2291 SHA512:891c9ffe7dbdc3603bddd3bd4f89c26f9c348c19a59c36ba4fb4659090bcac02bf72e349c71b64b94fa3f398681956738d67c3c7cc2cc8090eec1287b01b6959
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32.orig.tar.xz' coreutils_8.32.orig.tar.xz 5547836 SHA512:1c8f3584efd61b4b02e7ac5db8e103b63cfb2063432caaf1e64cb2dcc56d8c657d1133bbf10bd41468d6a1f31142e6caa81d16ae68fa3e6e84075c253613a145
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32.orig.tar.xz.asc' coreutils_8.32.orig.tar.xz.asc 833 SHA512:9c73b35c9e8f7c2b8eff317afcb5aa3234c5f41c80d1882f3c2342906f3fdc876ae45d1256dd1b8fd3cb58c50925f3c13f93de5018626634fdca3c72c14a9acb
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.debian.tar.xz' coreutils_8.32-4.1ubuntu1.debian.tar.xz 41096 SHA512:74adfa2f2a85af8d7024ad6d13942e915217dcb10e29caa9c314e0a15da6ec019e7aa52ac5351c35ccea1bace7a05c6dc7569b7b0487c8fcd46b3ba42d66d89d
-```
 
 ### `dpkg` source package: `dash=0.5.11+git20210903+057cd650a4ed-9ubuntu1`
 
@@ -373,13 +367,9 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `GPL-2+`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.21.18ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.21.18ubuntu3.dsc' dpkg_1.21.18ubuntu3.dsc 3167 SHA512:27de15457b9755024641666013d393e2df66fa473770342892d1f2fa344eafc56bbedc9ed0c9dc513b2016322ba28c5bc28fb2599227946e8811b4801f2bedd3
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.21.18ubuntu3.tar.xz' dpkg_1.21.18ubuntu3.tar.xz 5192568 SHA512:c4c1f35db85c12e51e5b398e593ee6374c0f5c0ee6b0e6a39272c8665f35f3d0e1c066080d2c2c4913a1358cba05b6c4b8cb8c21429fda05cd50953437a635d4
-```
 
 ### `dpkg` source package: `e2fsprogs=1.46.6~rc1-1ubuntu1`
 
@@ -573,15 +563,13 @@ Licenses: (parsed from: `/usr/share/doc/grep/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris grep=3.8-3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/grep/grep_3.8-3.dsc' grep_3.8-3.dsc 1608 SHA512:e136d2e8338d8947ed0ac095c2458b0201894ba18c6ba6310951f7d48cee4a6e3682ea1cc26a7147a5c4a76927b51672ff30cbe06ccae4e8e2bb646842d47863
-'http://archive.ubuntu.com/ubuntu/pool/main/g/grep/grep_3.8.orig.tar.xz' grep_3.8.orig.tar.xz 1709536 SHA512:2014519a80c6dcd799837e1bd7d9d5ebe8729ec54b0dc76981dac4755a9a8a9f200470cdcc911e2825bed8162e61da39e3dd60289f7393b48bf67314077d0c79
-'http://archive.ubuntu.com/ubuntu/pool/main/g/grep/grep_3.8.orig.tar.xz.asc' grep_3.8.orig.tar.xz.asc 833 SHA512:8266b58485f225c2189814e3898c72e59d251b729e0c302d31f57abdb7ac2e6e28dde2c5c8095673b6f007b2a3ebc26db1dca910a7771aba80dad4b3c6761ee4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/grep/grep_3.8-3.debian.tar.xz' grep_3.8-3.debian.tar.xz 20332 SHA512:0f37e9e0ca1059dcc72218bc56e6bf93f38d16c5908f1ade49ce331e485d439650b65df04c128956d435f14bcd6f2be3c8768d5da3bdd62312fc143fe59274d7
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/grep/3.8-3/
+
 
 ### `dpkg` source package: `gzip=1.12-1ubuntu1`
 
