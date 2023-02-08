@@ -1,9 +1,9 @@
-# `orientdb:3.2.15`
+# `orientdb:3.2.16`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2d8a2b4c214214d083a971bafa0a21ac43006b386889363db343a67f32e53ec4`
-- Created: `2023-02-01T03:57:41.925236157Z`
+- Image ID: `sha256:48dc0f1cab1c5e3f48b040fadf62e7d6544a4debb8a6ffffa318403b2db508d1`
+- Created: `2023-02-08T19:29:30.618836238Z`
 - Virtual Size: ~ 353.92 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -15,10 +15,10 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk8u362-b09`
-  - `ORIENTDB_VERSION=3.2.15`
-  - `ORIENTDB_DOWNLOAD_MD5=613d81c5c191dcb5903fa6dd78e9cc85`
-  - `ORIENTDB_DOWNLOAD_SHA1=24a0735034ff4bfc0f2b102f1cc0fb6d963e1e74`
-  - `ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-community/3.2.15/orientdb-community-3.2.15.tar.gz`
+  - `ORIENTDB_VERSION=3.2.16`
+  - `ORIENTDB_DOWNLOAD_MD5=d7b76c841158869e4262b7ea4106ced0`
+  - `ORIENTDB_DOWNLOAD_SHA1=a85c6fbae812006ecd60b1e96816e6629ae449b4`
+  - `ORIENTDB_DOWNLOAD_URL=https://repo1.maven.org/maven2/com/orientechnologies/orientdb-community/3.2.16/orientdb-community-3.2.16.tar.gz`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
@@ -1485,15 +1485,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.7
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.7.dsc' openssl_3.0.2-0ubuntu1.7.dsc 2726 SHA512:ccef1474135698d8a1c1c2d399032b45d86ab9f46160a51e688be0fcb3060695919bd78535e8bbcf30f4d7fe1e5cb46e13d48ec849ec54efe9a533b7992f1235
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.7.debian.tar.xz' openssl_3.0.2-0ubuntu1.7.debian.tar.xz 165180 SHA512:e77f2b0a6db63d2c8c38682da646df9c8b8bca3c40ad7a61ffb732e1aa682aa5297858531889bf93637fce84b8ab4479c6a5dbb79b376262048492eef0491f29
-```
 
 ### `dpkg` source package: `p11-kit=0.24.0-6build1`
 
@@ -1535,14 +1529,9 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.4.0-11ubuntu2.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.4.0-11ubuntu2.1.dsc' pam_1.4.0-11ubuntu2.1.dsc 2598 SHA512:98f0f30326494ccc5dffe2398b58bc0f827f5bc0f681ae21fc90beb920439ffca6858f7c551c8332509a1a071668fa3d2c6336f0e2dfc583d6a38c816775b9ba
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.4.0.orig.tar.xz' pam_1.4.0.orig.tar.xz 988908 SHA512:26eda95c45598a500bc142da4d1abf93d03b3bbb0f2390fa87c72dcbffa208dbfa115c0b411095c31ee9955e36422ccf3e2df3bd486818fafffef8c4310798c4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.4.0-11ubuntu2.1.debian.tar.xz' pam_1.4.0-11ubuntu2.1.debian.tar.xz 168868 SHA512:caed640a893b657638dd9887499d300cc3a592016627bc6381fbd2bbdf921ce4c3b7f8e91281dba0f5a3b50bd65b59d391e381360a7ffc817f61d8700a7f061b
-```
 
 ### `dpkg` source package: `pcre2=10.39-3ubuntu0.1`
 
