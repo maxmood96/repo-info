@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:49a5be47030736ce22b7315c1495a1aa9fe76f3f90a41537678de12ab8b8c0a4`
-- Created: `2023-01-17T21:44:06.676503236Z`
-- Virtual Size: ~ 740.95 Mb  
+- Image ID: `sha256:413bfdbb3d1d83b08282d4e299f8eacd250c89717d986246bf3585370b10af65`
+- Created: `2023-02-04T05:52:28.197507929Z`
+- Virtual Size: ~ 740.65 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD`
-  - `PHP_VERSION=8.1.14`
-  - `PHP_URL=https://www.php.net/distributions/php-8.1.14.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.14.tar.xz.asc`
-  - `PHP_SHA256=e16e47a872d58685913ac848ce92ec49f42c1828110c98c65fb6265a08724a1a`
+  - `PHP_VERSION=8.1.15`
+  - `PHP_URL=https://www.php.net/distributions/php-8.1.15.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.15.tar.xz.asc`
+  - `PHP_SHA256=cd450fb4ee50488c5bf5f08851f514e5a1cac18c9512234d9e16c3a1d35781a6`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `NEXTCLOUD_VERSION=25.0.3`
@@ -727,16 +727,16 @@ curl
 ### `apk` package: `libde265`
 
 ```console
-libde265-1.0.8-r2 description:
+libde265-1.0.11-r0 description:
 Open h.265 video codec implementation
 
-libde265-1.0.8-r2 webpage:
+libde265-1.0.11-r0 webpage:
 https://github.com/strukturag/libde265
 
-libde265-1.0.8-r2 installed size:
-788 KiB
+libde265-1.0.11-r0 installed size:
+432 KiB
 
-libde265-1.0.8-r2 license:
+libde265-1.0.11-r0 license:
 LGPL-3.0-or-later
 
 ```
@@ -1492,16 +1492,16 @@ MIT
 ### `apk` package: `pkgconf`
 
 ```console
-pkgconf-1.8.0-r1 description:
+pkgconf-1.8.1-r0 description:
 development framework configuration tools
 
-pkgconf-1.8.0-r1 webpage:
+pkgconf-1.8.1-r0 webpage:
 https://git.sr.ht/~kaniini/pkgconf
 
-pkgconf-1.8.0-r1 installed size:
+pkgconf-1.8.1-r0 installed size:
 140 KiB
 
-pkgconf-1.8.0-r1 license:
+pkgconf-1.8.1-r0 license:
 ISC
 
 ```
@@ -1577,16 +1577,16 @@ GPL-2.0-only
 ### `apk` package: `shared-mime-info`
 
 ```console
-shared-mime-info-2.2-r1 description:
+shared-mime-info-2.2-r2 description:
 Freedesktop.org Shared MIME Info
 
-shared-mime-info-2.2-r1 webpage:
+shared-mime-info-2.2-r2 webpage:
 http://freedesktop.org/Software/shared-mime-info
 
-shared-mime-info-2.2-r1 installed size:
+shared-mime-info-2.2-r2 installed size:
 2452 KiB
 
-shared-mime-info-2.2-r1 license:
+shared-mime-info-2.2-r2 license:
 GPL-2.0-or-later
 
 ```
