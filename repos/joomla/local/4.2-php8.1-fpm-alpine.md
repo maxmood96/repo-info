@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b63b17e812b05dc8ee20d3d0e1a0b484ca99929350f5dae7116b303c58938959`
-- Created: `2023-02-02T20:22:17.511171093Z`
-- Virtual Size: ~ 323.45 Mb  
+- Image ID: `sha256:bb47f4a4f273b187aad4247d09c8a50f38d298d0b65a0387e0fcc24895b5c330`
+- Created: `2023-02-04T05:20:17.317366197Z`
+- Virtual Size: ~ 323.69 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD`
-  - `PHP_VERSION=8.1.14`
-  - `PHP_URL=https://www.php.net/distributions/php-8.1.14.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.14.tar.xz.asc`
-  - `PHP_SHA256=e16e47a872d58685913ac848ce92ec49f42c1828110c98c65fb6265a08724a1a`
+  - `PHP_VERSION=8.1.15`
+  - `PHP_URL=https://www.php.net/distributions/php-8.1.15.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.15.tar.xz.asc`
+  - `PHP_SHA256=cd450fb4ee50488c5bf5f08851f514e5a1cac18c9512234d9e16c3a1d35781a6`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
   - `JOOMLA_VERSION=4.2.7`
   - `JOOMLA_SHA512=500133210fbb033625ea8c6338e25d311ff5734adbf8cbb8ea32ae7d57c3331df93232c84f872b3307ea64232527be629cd6d67e441c2f32aa8dbb7c36edcd1f`
@@ -440,16 +440,16 @@ AGPL-3.0-or-later
 ### `apk` package: `glib`
 
 ```console
-glib-2.74.4-r0 description:
+glib-2.74.5-r0 description:
 Common C routines used by Gtk+ and other libs
 
-glib-2.74.4-r0 webpage:
+glib-2.74.5-r0 webpage:
 https://developer.gnome.org/glib/
 
-glib-2.74.4-r0 installed size:
+glib-2.74.5-r0 installed size:
 3396 KiB
 
-glib-2.74.4-r0 license:
+glib-2.74.5-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -746,16 +746,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.87.0-r0 description:
+libcurl-7.87.0-r1 description:
 The multiprotocol file transfer library
 
-libcurl-7.87.0-r0 webpage:
+libcurl-7.87.0-r1 webpage:
 https://curl.se/
 
-libcurl-7.87.0-r0 installed size:
+libcurl-7.87.0-r1 installed size:
 540 KiB
 
-libcurl-7.87.0-r0 license:
+libcurl-7.87.0-r1 license:
 curl
 
 ```
@@ -763,16 +763,16 @@ curl
 ### `apk` package: `libde265`
 
 ```console
-libde265-1.0.9-r0 description:
+libde265-1.0.11-r0 description:
 Open h.265 video codec implementation
 
-libde265-1.0.9-r0 webpage:
+libde265-1.0.11-r0 webpage:
 https://github.com/strukturag/libde265
 
-libde265-1.0.9-r0 installed size:
-792 KiB
+libde265-1.0.11-r0 installed size:
+444 KiB
 
-libde265-1.0.9-r0 license:
+libde265-1.0.11-r0 license:
 LGPL-3.0-or-later
 
 ```
@@ -1171,16 +1171,16 @@ BSD-3-Clause
 ### `apk` package: `libx11`
 
 ```console
-libx11-1.8.3-r0 description:
+libx11-1.8.3-r1 description:
 X11 client-side library
 
-libx11-1.8.3-r0 webpage:
+libx11-1.8.3-r1 webpage:
 http://xorg.freedesktop.org/
 
-libx11-1.8.3-r0 installed size:
+libx11-1.8.3-r1 installed size:
 3180 KiB
 
-libx11-1.8.3-r0 license:
+libx11-1.8.3-r1 license:
 custom:XFREE86
 
 ```
@@ -1426,16 +1426,16 @@ MIT
 ### `apk` package: `numactl`
 
 ```console
-numactl-2.0.16-r0 description:
+numactl-2.0.16-r1 description:
 Simple NUMA policy support
 
-numactl-2.0.16-r0 webpage:
+numactl-2.0.16-r1 webpage:
 https://github.com/numactl/numactl
 
-numactl-2.0.16-r0 installed size:
+numactl-2.0.16-r1 installed size:
 60 KiB
 
-numactl-2.0.16-r0 license:
+numactl-2.0.16-r1 license:
 LGPL-2.1-only
 
 ```
@@ -1545,16 +1545,16 @@ MIT
 ### `apk` package: `pkgconf`
 
 ```console
-pkgconf-1.9.3-r0 description:
+pkgconf-1.9.4-r0 description:
 development framework configuration tools
 
-pkgconf-1.9.3-r0 webpage:
+pkgconf-1.9.4-r0 webpage:
 https://git.sr.ht/~kaniini/pkgconf
 
-pkgconf-1.9.3-r0 installed size:
+pkgconf-1.9.4-r0 installed size:
 168 KiB
 
-pkgconf-1.9.3-r0 license:
+pkgconf-1.9.4-r0 license:
 ISC
 
 ```
