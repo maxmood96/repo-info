@@ -1,7 +1,7 @@
 ## `caddy:2-builder-alpine`
 
 ```console
-$ docker pull caddy@sha256:bc3fa05e045ff088276afb3fc8a264e29ba1170152a5054a4566eb6593032fae
+$ docker pull caddy@sha256:bab9204c4120dd6d89ef605a3448ea1ac691c409a520ce1ced4ee72d12aa4c22
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16,14 +16,14 @@ $ docker pull caddy@sha256:bc3fa05e045ff088276afb3fc8a264e29ba1170152a5054a4566e
 ### `caddy:2-builder-alpine` - linux; amd64
 
 ```console
-$ docker pull caddy@sha256:234a09de6521d1916bb81c7c4631e9a22f5d9d5ee6db046a79c9cb1c1802c9e0
+$ docker pull caddy@sha256:b86e1de154ca5d11618a408742e2b6f16f99e55cdc0ee97fe0965da9f1b1572f
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **131.3 MB (131334962 bytes)**  
+-	Total Size: **131.4 MB (131390128 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3b4b0a1d2ea950bfda824c94b469659a7a199d1d3e0165c6a6e8f9c36f1dd94e`
+-	Image ID: `sha256:858147920561fe47255b181692d82558dbab931f4393f33ba8697b9c647f690e`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -47,19 +47,21 @@ ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 # Wed, 11 Jan 2023 00:00:02 GMT
 WORKDIR /go
-# Wed, 11 Jan 2023 00:26:43 GMT
-RUN apk add --no-cache     git     ca-certificates
-# Wed, 11 Jan 2023 00:26:43 GMT
-ENV XCADDY_VERSION=v0.3.1
-# Wed, 11 Jan 2023 00:26:43 GMT
-ENV CADDY_VERSION=v2.6.2
-# Wed, 11 Jan 2023 00:26:43 GMT
+# Thu, 09 Feb 2023 03:18:17 GMT
+RUN apk add --no-cache 	ca-certificates 	git 	libcap
+# Thu, 09 Feb 2023 03:18:17 GMT
+ENV XCADDY_VERSION=v0.3.2
+# Thu, 09 Feb 2023 03:18:17 GMT
+ENV CADDY_VERSION=v2.6.3
+# Thu, 09 Feb 2023 03:18:17 GMT
 ENV XCADDY_SKIP_CLEANUP=1
-# Wed, 11 Jan 2023 00:26:45 GMT
-RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='bffe075ac254111ead0238c330a33c7f39f9cc5f7d2b4b3fce48256d79c3f5fb94aec23d816c9ea0e21cd51bda058c05336cfa2849a0d25d821c9280962f9a53' ;; 		armhf)   binArch='armv6'; checksum='6e988c78881bf6463d92e2194a815a243b0b1bb185ff37f321bd74694d55c6ae6490403e99b165fa3548d37340230ef486cba7ff3801d53607d8df4c036baf4c' ;; 		armv7)   binArch='armv7'; checksum='ace94e101d1d1fa368b644043dce5e46a634dd85ecf2a8fcec367281420af48c7609cf451f2930d07fce6238e68dd9848e48aef203dd5c6b4f64c2a67e3010d3' ;; 		aarch64) binArch='arm64'; checksum='97f3d83124846a22080dd1136d066141c0972a31abc4d54aefd9e7c7a4ad0b3deeede5df4e24b190291235c337c06c340bcdc29e302c253a667494c6825d2a0c' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='ae8d994dbd1870efb54fcfa7d10b541a01afee482102a5fa0b5852848d88775a54056ecacd96192116cb205bead6a6e3165192a0d1b91f4fc5ef73c9368bc5d0' ;; 		s390x)   binArch='s390x'; checksum='a7ed957d3b9cda7345ae4444302d53c12cf648ec7c354de93c92fbd7a10d104d90cc2b3b41ff357969baaeadb6dab5c074f735bcc41520b7ba35dada87a4ac8f' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/xcaddy.tar.gz "https://github.com/caddyserver/xcaddy/releases/download/v0.3.1/xcaddy_0.3.1_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/xcaddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/xcaddy.tar.gz -C /usr/bin xcaddy; 	rm -f /tmp/xcaddy.tar.gz; 	chmod +x /usr/bin/xcaddy;
-# Wed, 11 Jan 2023 00:26:45 GMT
+# Thu, 09 Feb 2023 03:18:17 GMT
+ENV XCADDY_SETCAP=1
+# Thu, 09 Feb 2023 03:18:19 GMT
+RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='2538d080f065cf1c5a41c9c14dd6acd55783e004c7ea3fdd6e1bc07c4d846a85b78d5de1111391fda71d48cad9d542a0741593e5b25ea9826faaee74577d8a98' ;; 		armhf)   binArch='armv6'; checksum='5bd99dfc28d867253275c2a6753425a1e8445385449cd5414c8bb14fdf7b513f468c69e0ae8ba431cf4b5e2b5f77666dda2a6811fbe8a1718cae377387319b36' ;; 		armv7)   binArch='armv7'; checksum='e8ea697bcbe029c81ce183b5ec44d095d8919f62a7170a0697dd7531d5a87c980b9aac1442638bf4dee1e60abe0ad698dfa56bed222fe9329ff274f5973f12fe' ;; 		aarch64) binArch='arm64'; checksum='afbf26528c4238a7d6eaa375c1367d213f7d3359e97193b996a896b89fb852531d33581b8cef6432bd866d1488f5f98ed43a198732c45d5b9d008eb9316d36ab' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='519e8d7575507e49ddd7d58d168c6223802b94a8954284956db4b72133bf3027de03f9bfc0dc578373ebcb49d668a140fcd54d90888c17cdbbef6ab182a8b511' ;; 		s390x)   binArch='s390x'; checksum='b95078a4231acd54bd56c70d110709c9e290089200855c9448259621c983fa5ecfa925a1e6ab59459750bc6abb936422433543b6079fa547dea4dc08d5daabf9' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/xcaddy.tar.gz "https://github.com/caddyserver/xcaddy/releases/download/v0.3.2/xcaddy_0.3.2_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/xcaddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/xcaddy.tar.gz -C /usr/bin xcaddy; 	rm -f /tmp/xcaddy.tar.gz; 	chmod +x /usr/bin/xcaddy;
+# Thu, 09 Feb 2023 03:18:19 GMT
 COPY file:3284b89c053fa1b60b278653bdca42a092891284e07e11d2fe66ee30b14e3081 in /usr/bin/caddy-builder 
-# Wed, 11 Jan 2023 00:26:45 GMT
+# Thu, 09 Feb 2023 03:18:19 GMT
 WORKDIR /usr/bin
 ```
 
@@ -80,17 +82,17 @@ WORKDIR /usr/bin
 		Last Modified: Wed, 11 Jan 2023 00:08:22 GMT  
 		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4fceaf86d00ac9af20d17025ce0aa355f94aebacee94bb1a125cfe0f77473790`  
-		Last Modified: Wed, 11 Jan 2023 00:27:00 GMT  
-		Size: 4.1 MB (4135224 bytes)  
+	-	`sha256:807cf12e90d621962959f760ccbca1b77b95c6120884fefcc4385f12614f9e49`  
+		Last Modified: Thu, 09 Feb 2023 03:18:55 GMT  
+		Size: 4.2 MB (4187743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc71f076ea3e37e63f29696e4bfaee266770af3ab3f3ed4f55cf9e1725910bdb`  
-		Last Modified: Wed, 11 Jan 2023 00:27:00 GMT  
-		Size: 1.2 MB (1215184 bytes)  
+	-	`sha256:ca1e21e6198268a646e1f41d15b44931dc2d1ffaf7448588af3237d7443de8df`  
+		Last Modified: Thu, 09 Feb 2023 03:18:54 GMT  
+		Size: 1.2 MB (1217832 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85e1b84b92f492186618ba8e61aaa0e5b95af017fb5f4e41cf8f7e32451c8860`  
-		Last Modified: Wed, 11 Jan 2023 00:26:59 GMT  
-		Size: 405.0 B  
+	-	`sha256:a86c409f0ecb7b6ab12d691c73e32350f6453fc6e477af6fe53ec7946e91ec08`  
+		Last Modified: Thu, 09 Feb 2023 03:18:54 GMT  
+		Size: 404.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `caddy:2-builder-alpine` - linux; arm variant v6
@@ -260,14 +262,14 @@ WORKDIR /usr/bin
 ### `caddy:2-builder-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull caddy@sha256:1039bf31f15747222b5cc7404da33e129194b31fe91e6ccc70ff4e8800404f28
+$ docker pull caddy@sha256:bddc4b456724f377099c6889de30e23e6b434d71153db528d9746fade979f0c8
 ```
 
 -	Docker Version: 20.10.17
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **125.7 MB (125730018 bytes)**  
+-	Total Size: **125.8 MB (125786646 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cbdc9eb40ffefb8d88a2b1e0247fbc395fdcdb92d45fbb917d928484e8fa48b2`
+-	Image ID: `sha256:c4850c9ee7a87ef514c7c4e3c3773db8494849b1ba453095ffe6fc5df07f158b`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -291,19 +293,21 @@ ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 # Tue, 10 Jan 2023 23:59:25 GMT
 WORKDIR /go
-# Wed, 11 Jan 2023 00:25:08 GMT
-RUN apk add --no-cache     git     ca-certificates
-# Wed, 11 Jan 2023 00:25:08 GMT
-ENV XCADDY_VERSION=v0.3.1
-# Wed, 11 Jan 2023 00:25:08 GMT
-ENV CADDY_VERSION=v2.6.2
-# Wed, 11 Jan 2023 00:25:08 GMT
+# Thu, 09 Feb 2023 03:57:02 GMT
+RUN apk add --no-cache 	ca-certificates 	git 	libcap
+# Thu, 09 Feb 2023 03:57:02 GMT
+ENV XCADDY_VERSION=v0.3.2
+# Thu, 09 Feb 2023 03:57:03 GMT
+ENV CADDY_VERSION=v2.6.3
+# Thu, 09 Feb 2023 03:57:03 GMT
 ENV XCADDY_SKIP_CLEANUP=1
-# Wed, 11 Jan 2023 00:25:10 GMT
-RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='bffe075ac254111ead0238c330a33c7f39f9cc5f7d2b4b3fce48256d79c3f5fb94aec23d816c9ea0e21cd51bda058c05336cfa2849a0d25d821c9280962f9a53' ;; 		armhf)   binArch='armv6'; checksum='6e988c78881bf6463d92e2194a815a243b0b1bb185ff37f321bd74694d55c6ae6490403e99b165fa3548d37340230ef486cba7ff3801d53607d8df4c036baf4c' ;; 		armv7)   binArch='armv7'; checksum='ace94e101d1d1fa368b644043dce5e46a634dd85ecf2a8fcec367281420af48c7609cf451f2930d07fce6238e68dd9848e48aef203dd5c6b4f64c2a67e3010d3' ;; 		aarch64) binArch='arm64'; checksum='97f3d83124846a22080dd1136d066141c0972a31abc4d54aefd9e7c7a4ad0b3deeede5df4e24b190291235c337c06c340bcdc29e302c253a667494c6825d2a0c' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='ae8d994dbd1870efb54fcfa7d10b541a01afee482102a5fa0b5852848d88775a54056ecacd96192116cb205bead6a6e3165192a0d1b91f4fc5ef73c9368bc5d0' ;; 		s390x)   binArch='s390x'; checksum='a7ed957d3b9cda7345ae4444302d53c12cf648ec7c354de93c92fbd7a10d104d90cc2b3b41ff357969baaeadb6dab5c074f735bcc41520b7ba35dada87a4ac8f' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/xcaddy.tar.gz "https://github.com/caddyserver/xcaddy/releases/download/v0.3.1/xcaddy_0.3.1_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/xcaddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/xcaddy.tar.gz -C /usr/bin xcaddy; 	rm -f /tmp/xcaddy.tar.gz; 	chmod +x /usr/bin/xcaddy;
-# Wed, 11 Jan 2023 00:25:10 GMT
+# Thu, 09 Feb 2023 03:57:03 GMT
+ENV XCADDY_SETCAP=1
+# Thu, 09 Feb 2023 03:57:04 GMT
+RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64)  binArch='amd64'; checksum='2538d080f065cf1c5a41c9c14dd6acd55783e004c7ea3fdd6e1bc07c4d846a85b78d5de1111391fda71d48cad9d542a0741593e5b25ea9826faaee74577d8a98' ;; 		armhf)   binArch='armv6'; checksum='5bd99dfc28d867253275c2a6753425a1e8445385449cd5414c8bb14fdf7b513f468c69e0ae8ba431cf4b5e2b5f77666dda2a6811fbe8a1718cae377387319b36' ;; 		armv7)   binArch='armv7'; checksum='e8ea697bcbe029c81ce183b5ec44d095d8919f62a7170a0697dd7531d5a87c980b9aac1442638bf4dee1e60abe0ad698dfa56bed222fe9329ff274f5973f12fe' ;; 		aarch64) binArch='arm64'; checksum='afbf26528c4238a7d6eaa375c1367d213f7d3359e97193b996a896b89fb852531d33581b8cef6432bd866d1488f5f98ed43a198732c45d5b9d008eb9316d36ab' ;; 		ppc64el|ppc64le) binArch='ppc64le'; checksum='519e8d7575507e49ddd7d58d168c6223802b94a8954284956db4b72133bf3027de03f9bfc0dc578373ebcb49d668a140fcd54d90888c17cdbbef6ab182a8b511' ;; 		s390x)   binArch='s390x'; checksum='b95078a4231acd54bd56c70d110709c9e290089200855c9448259621c983fa5ecfa925a1e6ab59459750bc6abb936422433543b6079fa547dea4dc08d5daabf9' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 	wget -O /tmp/xcaddy.tar.gz "https://github.com/caddyserver/xcaddy/releases/download/v0.3.2/xcaddy_0.3.2_linux_${binArch}.tar.gz"; 	echo "$checksum  /tmp/xcaddy.tar.gz" | sha512sum -c; 	tar x -z -f /tmp/xcaddy.tar.gz -C /usr/bin xcaddy; 	rm -f /tmp/xcaddy.tar.gz; 	chmod +x /usr/bin/xcaddy;
+# Thu, 09 Feb 2023 03:57:04 GMT
 COPY file:3284b89c053fa1b60b278653bdca42a092891284e07e11d2fe66ee30b14e3081 in /usr/bin/caddy-builder 
-# Wed, 11 Jan 2023 00:25:10 GMT
+# Thu, 09 Feb 2023 03:57:04 GMT
 WORKDIR /usr/bin
 ```
 
@@ -324,17 +328,17 @@ WORKDIR /usr/bin
 		Last Modified: Wed, 11 Jan 2023 00:06:16 GMT  
 		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad083ad0e31b1e0afd42e8080114f0dcabed65af89f84e2a9da90ea069d33d1c`  
-		Last Modified: Wed, 11 Jan 2023 00:25:26 GMT  
-		Size: 4.2 MB (4180630 bytes)  
+	-	`sha256:45c89dffd73dee99c1e6d53d4ea8cc302fa2089ee3edef14dc51585b33986fc9`  
+		Last Modified: Thu, 09 Feb 2023 03:57:40 GMT  
+		Size: 4.2 MB (4234011 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cfcb013b29d9aae564d1055d07c88f348eb88e4a626010dddcb8c8bcf16e5563`  
-		Last Modified: Wed, 11 Jan 2023 00:25:26 GMT  
-		Size: 1.1 MB (1120490 bytes)  
+	-	`sha256:45cfcadb2a14be80b0bad3d94a219fcb7e0889a821a54688bc4ca6f47b905d88`  
+		Last Modified: Thu, 09 Feb 2023 03:57:39 GMT  
+		Size: 1.1 MB (1123736 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4d48f7c9dd6e581bce46ef3a726d8d23bf7dbc7c1e56fcdb0b94af51cca2aea4`  
-		Last Modified: Wed, 11 Jan 2023 00:25:25 GMT  
-		Size: 404.0 B  
+	-	`sha256:c1b4461ab8f854d2e2000cacc11f5ee723a0888222cbd031ae1d1f0ae14c3e94`  
+		Last Modified: Thu, 09 Feb 2023 03:57:39 GMT  
+		Size: 405.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `caddy:2-builder-alpine` - linux; ppc64le
