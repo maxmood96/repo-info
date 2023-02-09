@@ -1,10 +1,10 @@
-# `hylang:0.25.0-pypy3.9-buster`
+# `hylang:0.26.0-pypy3.9-buster`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a254a149d994cc83fa220b03b4761541f2cd5a8da29ad12a82086f4d6eba5628`
-- Created: `2023-02-05T01:44:02.098008582Z`
-- Virtual Size: ~ 233.85 Mb  
+- Image ID: `sha256:f06f80734158cb28eed7bff8ce6cd0cfae8844b35be68b7ad5995b0c74141299`
+- Created: `2023-02-09T02:59:07.237111305Z`
+- Virtual Size: ~ 233.84 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`
@@ -14,8 +14,8 @@
   - `PYPY_VERSION=7.3.11`
   - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/3843bff3a0a61da5b63ea0b7d34794c5c51a2f11/get-pip.py`
   - `PYTHON_GET_PIP_SHA256=95c5ee602b2f3cc50ae053d716c3c89bea62c58568f64d7d25924d399b2d5218`
-  - `HY_VERSION=0.25.0`
-  - `HYRULE_VERSION=0.2.1`
+  - `HY_VERSION=0.26.0`
+  - `HYRULE_VERSION=0.3.0`
 
 ## `dpkg` (`.deb`-based packages)
 
