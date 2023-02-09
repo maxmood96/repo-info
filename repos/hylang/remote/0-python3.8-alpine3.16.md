@@ -1,7 +1,7 @@
 ## `hylang:0-python3.8-alpine3.16`
 
 ```console
-$ docker pull hylang@sha256:870d084c8256f022c9167b567289e8a9501eabb075932179d5b849a3a0e833f5
+$ docker pull hylang@sha256:d5da96586d02e27644bbbe24ff5c29619b4066e8e2b3c87a36ae3cfbc4f41eeb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -257,14 +257,14 @@ CMD ["hy"]
 ### `hylang:0-python3.8-alpine3.16` - linux; arm64 variant v8
 
 ```console
-$ docker pull hylang@sha256:5b1334eff30ff01b050847e9428f3bcebb930d1d06458aa7b6055b92153bdb0a
+$ docker pull hylang@sha256:0d786a0cdd5dc7a90d2565982942a5c970a8d8d5c26d7ccf1930131c1a44ba2e
 ```
 
 -	Docker Version: 20.10.17
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **21.9 MB (21922409 bytes)**  
+-	Total Size: **21.9 MB (21910942 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d199c1ffbe1e0950823e5654c5e1c8b924bd5081320c823b58d6684bd32c837`
+-	Image ID: `sha256:c574bca5f08a826172c597c7e1f7e45e5bc6959f4af7d8c4f07c06513dc6a842`
 -	Default Command: `["hy"]`
 
 ```dockerfile
@@ -298,13 +298,13 @@ ENV PYTHON_GET_PIP_SHA256=d1d09b0f9e745610657a528689ba3ea44a73bd19c60f4c954271b7
 RUN set -eux; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		export PYTHONDONTWRITEBYTECODE=1; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		--no-compile 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	rm -f get-pip.py; 		pip --version
 # Sat, 04 Feb 2023 03:25:33 GMT
 CMD ["python3"]
-# Sat, 04 Feb 2023 06:05:51 GMT
-ENV HY_VERSION=0.25.0
-# Sat, 04 Feb 2023 06:05:51 GMT
-ENV HYRULE_VERSION=0.2.1
-# Sat, 04 Feb 2023 06:06:05 GMT
+# Thu, 09 Feb 2023 03:27:29 GMT
+ENV HY_VERSION=0.26.0
+# Thu, 09 Feb 2023 03:27:29 GMT
+ENV HYRULE_VERSION=0.3.0
+# Thu, 09 Feb 2023 03:27:43 GMT
 RUN pip install --no-cache-dir "hy == $HY_VERSION" "hyrule == $HYRULE_VERSION"
-# Sat, 04 Feb 2023 06:06:05 GMT
+# Thu, 09 Feb 2023 03:27:43 GMT
 CMD ["hy"]
 ```
 
@@ -329,9 +329,9 @@ CMD ["hy"]
 		Last Modified: Sat, 04 Feb 2023 04:11:06 GMT  
 		Size: 2.9 MB (2881819 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5c1e6cdd3549df96560cb6283c44e0f91a16f65f3259f87c77482a4300a493e7`  
-		Last Modified: Sat, 04 Feb 2023 06:14:46 GMT  
-		Size: 3.8 MB (3824041 bytes)  
+	-	`sha256:33d0c6b614b87957223139166a4ef9de707f621f3edcd6d5c3fda4a117b4520f`  
+		Last Modified: Thu, 09 Feb 2023 03:39:18 GMT  
+		Size: 3.8 MB (3812574 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `hylang:0-python3.8-alpine3.16` - linux; 386
