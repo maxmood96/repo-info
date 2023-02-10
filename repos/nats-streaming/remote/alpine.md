@@ -1,7 +1,7 @@
 ## `nats-streaming:alpine`
 
 ```console
-$ docker pull nats-streaming@sha256:f72cdce9bf2a02d0fc29b06825b29cd6fa25c358156d2ddce2dfa99d83a235fc
+$ docker pull nats-streaming@sha256:565f7166ec9013a88f1f8dd5e0d746ef5e11ef017f08cd91271d99fec28644b0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -61,48 +61,48 @@ CMD ["nats-streaming-server" "-m" "8222"]
 ### `nats-streaming:alpine` - linux; arm variant v6
 
 ```console
-$ docker pull nats-streaming@sha256:3e996350dee075f2445e7b567aa875f2662fbd43278ffd9eb4affb4e876c6f03
+$ docker pull nats-streaming@sha256:2c91504332d1ab62e27957ad31b3789a5481c4a443cdfd7b331ea087e3b2867e
 ```
 
 -	Docker Version: 20.10.17
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.7 MB (10722328 bytes)**  
+-	Total Size: **10.7 MB (10725972 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d1c061671b7e00ca5143fc1acb3fa56242c313a8ebcd7ddf6bff53780b6a00aa`
+-	Image ID: `sha256:e3d167fbd361072c9bedbe95d82f63ffbeb50d065e4860a5852a3420db25fc1b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["nats-streaming-server","-m","8222"]`
 
 ```dockerfile
-# Mon, 09 Jan 2023 17:04:54 GMT
-ADD file:b15fd8e9f996815394e25f20c8459bfb4c2a8c4074592d6f4c75f4fe79ce537e in / 
-# Mon, 09 Jan 2023 17:04:55 GMT
+# Fri, 10 Feb 2023 20:49:28 GMT
+ADD file:d825d9aef59df0df23c0140a490998407ee0a62a051699b5c050aef7cb03f042 in / 
+# Fri, 10 Feb 2023 20:49:28 GMT
 CMD ["/bin/sh"]
-# Thu, 12 Jan 2023 18:57:05 GMT
+# Fri, 10 Feb 2023 22:07:24 GMT
 ENV NATS_STREAMING_SERVER=0.25.3
-# Thu, 12 Jan 2023 18:57:08 GMT
+# Fri, 10 Feb 2023 22:07:26 GMT
 RUN set -eux; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		aarch64) natsArch='arm64'; sha256='250dbab0595befb22a54804ec9be48537f22da0b6a5970e984d84c28d19f70d5' ;; 		armhf) natsArch='arm6'; sha256='27c74e261ccd1374da227e8c31184a8e98d0820bdd916e9a681be7fba12f7f09' ;; 		armv7) natsArch='arm7'; sha256='3db62df2019c947b54ea943ecaa5d1e34db6855247e53ec7c8ad46d0c206a6c4' ;; 		x86_64) natsArch='amd64'; sha256='ac5beb0e820af18e422bef12200012d86237b98872e0ed48c985426315b02cbb' ;; 		x86) natsArch='386'; sha256='887527bb48ab6029cbc1583cfd09e608148342e50e71851dbfa4c88aefb3fd39' ;; 		*) echo >&2 "error: $apkArch is not supported!"; exit 1 ;; 	esac; 		wget -O nats-streaming-server.tar.gz "https://github.com/nats-io/nats-streaming-server/releases/download/v${NATS_STREAMING_SERVER}/nats-streaming-server-v${NATS_STREAMING_SERVER}-linux-${natsArch}.tar.gz"; 	echo "${sha256} *nats-streaming-server.tar.gz" | sha256sum -c -; 		apk add --no-cache ca-certificates; 		tar -xf nats-streaming-server.tar.gz; 	rm nats-streaming-server.tar.gz; 	mv "nats-streaming-server-v${NATS_STREAMING_SERVER}-linux-${natsArch}/nats-streaming-server" /usr/local/bin; 	rm -rf "nats-streaming-server-v${NATS_STREAMING_SERVER}-linux-${natsArch}"
-# Thu, 12 Jan 2023 18:57:08 GMT
+# Fri, 10 Feb 2023 22:07:26 GMT
 COPY file:528000310df8681fb95f43d3bcf7c8086cd514c78673b1aadb984b1db3331559 in /usr/local/bin 
-# Thu, 12 Jan 2023 18:57:08 GMT
+# Fri, 10 Feb 2023 22:07:26 GMT
 EXPOSE 4222 8222
-# Thu, 12 Jan 2023 18:57:08 GMT
+# Fri, 10 Feb 2023 22:07:27 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 12 Jan 2023 18:57:09 GMT
+# Fri, 10 Feb 2023 22:07:27 GMT
 CMD ["nats-streaming-server" "-m" "8222"]
 ```
 
 -	Layers:
-	-	`sha256:0269c10e600f3a375f36ddabdbd264ce9503a455f0d0969ce8a00f24eaecc032`  
-		Last Modified: Mon, 09 Jan 2023 17:05:45 GMT  
-		Size: 3.1 MB (3107243 bytes)  
+	-	`sha256:6a6e4ab63e54442e16400f69d37f662d60cbd67565631eff6bf59b4176e482c3`  
+		Last Modified: Fri, 10 Feb 2023 20:50:22 GMT  
+		Size: 3.1 MB (3110885 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a7adc39ea168192d899327c397b0f96390aa58fe49b9c369f222bef3da2390e0`  
-		Last Modified: Thu, 12 Jan 2023 18:58:05 GMT  
-		Size: 7.6 MB (7614664 bytes)  
+	-	`sha256:db43cd432569381460eb7ebdab989de7af3b4152ab572fffee585c8f02da7810`  
+		Last Modified: Fri, 10 Feb 2023 22:08:15 GMT  
+		Size: 7.6 MB (7614667 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2d066baf2e6f26294ced64ff7248b0938ee4c5f3c1655b61749300fa9e811875`  
-		Last Modified: Thu, 12 Jan 2023 18:58:03 GMT  
-		Size: 421.0 B  
+	-	`sha256:b4880d56c4958d95ff0a96f9826517c5957a69f3880e7deb5c532b791fa61194`  
+		Last Modified: Fri, 10 Feb 2023 22:08:14 GMT  
+		Size: 420.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `nats-streaming:alpine` - linux; arm variant v7
