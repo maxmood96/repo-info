@@ -1,7 +1,7 @@
 ## `eggdrop:develop`
 
 ```console
-$ docker pull eggdrop@sha256:898f11f6455717076afb4801175c548068875f876c22e809294c4a830bcded67
+$ docker pull eggdrop@sha256:4c5b8b5635127f5b9bfc67c8c808b1ff2b23f52bc52fdca70526b67a0bd1ad2f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -191,88 +191,88 @@ CMD ["eggdrop.conf"]
 ### `eggdrop:develop` - linux; arm64 variant v8
 
 ```console
-$ docker pull eggdrop@sha256:4d147ef029a5a25cfbc5e6e787d81dba722bddb462892de02943ccb60f25c9a1
+$ docker pull eggdrop@sha256:26af7de37409a702a7bd1048793bcd79b6f4e09009b868fc8416b8f5b56dbf93
 ```
 
 -	Docker Version: 20.10.17
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.9 MB (15903493 bytes)**  
+-	Total Size: **14.6 MB (14550585 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:38f335332312d37927b9a7f33c5f81ca98b7dfc4615e17e71f4d22684bb59ba9`
+-	Image ID: `sha256:f7ba771920e448dac75c2718eefb8f3804c256a950370983d0267c774f31e5b4`
 -	Entrypoint: `["\/home\/eggdrop\/eggdrop\/entrypoint.sh"]`
 -	Default Command: `["eggdrop.conf"]`
 
 ```dockerfile
-# Thu, 10 Nov 2022 20:39:46 GMT
-ADD file:4b51a9d40f20d2beb29d0759b161d2b9403493453beb509de4e86a5d98513f16 in / 
-# Thu, 10 Nov 2022 20:39:46 GMT
+# Fri, 10 Feb 2023 21:24:16 GMT
+ADD file:a73970ac03f28a1d3b9aaee19e859d958867b42fb91f29efb1259fbddc66ffb1 in / 
+# Fri, 10 Feb 2023 21:24:16 GMT
 CMD ["/bin/sh"]
-# Thu, 10 Nov 2022 22:03:31 GMT
+# Fri, 10 Feb 2023 22:10:49 GMT
 MAINTAINER Geo Van O <geo@eggheads.org>
-# Thu, 10 Nov 2022 22:03:31 GMT
+# Fri, 10 Feb 2023 22:10:50 GMT
 RUN adduser -S eggdrop
-# Thu, 10 Nov 2022 22:03:32 GMT
+# Fri, 10 Feb 2023 22:10:51 GMT
 RUN apk add --no-cache 'su-exec>=0.2'
-# Mon, 02 Jan 2023 17:40:37 GMT
+# Fri, 10 Feb 2023 22:10:51 GMT
 ENV EGGDROP_SHA256=caafc1ad001e2e77793dca37998cb94d88efadb4ec9c3de44c1004b04f15aa6e
-# Mon, 02 Jan 2023 17:40:37 GMT
+# Fri, 10 Feb 2023 22:10:51 GMT
 ENV EGGDROP_COMMIT=2a6a36888f5aa2204d84a9e6282d35e5421c2c8a
-# Mon, 02 Jan 2023 17:40:38 GMT
+# Fri, 10 Feb 2023 22:10:52 GMT
 RUN apk --update add --no-cache bash openssl
-# Fri, 13 Jan 2023 00:43:07 GMT
+# Fri, 10 Feb 2023 22:14:41 GMT
 RUN apk --update add --no-cache --virtual egg-deps wget ca-certificates make tar gnupg build-base openssl-dev   && wget "https://prdownloads.sourceforge.net/tcl/tcl8.6.13-src.tar.gz" -O tcl8.6.13-src.tar.gz   && tar -zxf tcl8.6.13-src.tar.gz   && ( cd tcl8.6.13     && sed -i "/define TCL_UTF_MAX/c\#define TCL_UTF_MAX 6" generic/tcl.h     && cd unix     && ./configure     && make     && make install )   && rm -rf tcl8.6.13-src.tar.gz   && rm -rf tcl8.6.13   && wget "https://github.com/eggheads/eggdrop/archive/$EGGDROP_COMMIT.tar.gz" -O develop.tar.gz   && echo "$EGGDROP_SHA256 *develop.tar.gz" | sha256sum -c -   && tar -zxf develop.tar.gz   && rm develop.tar.gz     && ( cd eggdrop-$EGGDROP_COMMIT     && ./configure     && make config     && make     && make install DEST=/home/eggdrop/eggdrop )   && rm -rf eggdrop-$EGGDROP_COMMIT   && mkdir /home/eggdrop/eggdrop/data   && chown -R eggdrop /home/eggdrop/eggdrop   && apk del egg-deps
-# Fri, 13 Jan 2023 00:43:07 GMT
+# Fri, 10 Feb 2023 22:14:41 GMT
 ENV NICK=
-# Fri, 13 Jan 2023 00:43:07 GMT
+# Fri, 10 Feb 2023 22:14:41 GMT
 ENV SERVER=
-# Fri, 13 Jan 2023 00:43:07 GMT
+# Fri, 10 Feb 2023 22:14:41 GMT
 ENV LISTEN=3333
-# Fri, 13 Jan 2023 00:43:07 GMT
+# Fri, 10 Feb 2023 22:14:41 GMT
 ENV OWNER=
-# Fri, 13 Jan 2023 00:43:07 GMT
+# Fri, 10 Feb 2023 22:14:41 GMT
 ENV USERFILE=eggdrop.user
-# Fri, 13 Jan 2023 00:43:07 GMT
+# Fri, 10 Feb 2023 22:14:42 GMT
 ENV CHANFILE=eggdrop.chan
-# Fri, 13 Jan 2023 00:43:07 GMT
+# Fri, 10 Feb 2023 22:14:42 GMT
 WORKDIR /home/eggdrop/eggdrop
-# Fri, 13 Jan 2023 00:43:07 GMT
+# Fri, 10 Feb 2023 22:14:42 GMT
 EXPOSE 3333
-# Fri, 13 Jan 2023 00:43:07 GMT
+# Fri, 10 Feb 2023 22:14:42 GMT
 COPY file:35e05bb72116a1848ec779e3fbc4ea6bbcd95ceb11059751f608c8543e18cde7 in /home/eggdrop/eggdrop 
-# Fri, 13 Jan 2023 00:43:08 GMT
+# Fri, 10 Feb 2023 22:14:42 GMT
 COPY file:f30bcb89ff6df7709069d6cc97353d72cdbbebc6530d8d350cbb3ae4dad79129 in /home/eggdrop/eggdrop/scripts/ 
-# Fri, 13 Jan 2023 00:43:08 GMT
+# Fri, 10 Feb 2023 22:14:42 GMT
 ENTRYPOINT ["/home/eggdrop/eggdrop/entrypoint.sh"]
-# Fri, 13 Jan 2023 00:43:08 GMT
+# Fri, 10 Feb 2023 22:14:42 GMT
 CMD ["eggdrop.conf"]
 ```
 
 -	Layers:
-	-	`sha256:47517142f6ba87eca6b7bdca1e0df160b74671c81e4b9605dad38c1862a43be3`  
-		Last Modified: Tue, 09 Aug 2022 17:40:55 GMT  
-		Size: 2.7 MB (2718439 bytes)  
+	-	`sha256:404f35918b797abb27547df3b530ec55a77c499c4dce88f3b90867115087f9e7`  
+		Last Modified: Fri, 10 Feb 2023 21:25:01 GMT  
+		Size: 2.7 MB (2721556 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c0978db877eba00ad9d43a52f1f6b67ecf10580acd57dcecb0bbf56618c8b6c6`  
-		Last Modified: Thu, 10 Nov 2022 22:08:28 GMT  
-		Size: 1.3 KB (1272 bytes)  
+	-	`sha256:c8186b969b70bfd3a8f8529034203efaf95ad8eddf3c33fb41cf503890b1700b`  
+		Last Modified: Fri, 10 Feb 2023 22:19:00 GMT  
+		Size: 1.3 KB (1271 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:70602ff34b989fc029480804413ff335d293fb78a34841211b726953832e7d3d`  
-		Last Modified: Thu, 10 Nov 2022 22:08:26 GMT  
-		Size: 10.8 KB (10767 bytes)  
+	-	`sha256:212afe5219f2149a8e95b00c1346982e164235c46e289d221ac1897ca9048c2f`  
+		Last Modified: Fri, 10 Feb 2023 22:18:58 GMT  
+		Size: 10.8 KB (10769 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4454707cf8910a8f297397f40a7d87d9ebecc3a998ac68d054804e72b4e0a3ff`  
-		Last Modified: Mon, 02 Jan 2023 17:44:40 GMT  
-		Size: 1.1 MB (1087920 bytes)  
+	-	`sha256:166b6dcf0dd4056b6515bde1969fd9a9008e4ada399c4be2c520075ebedf32c1`  
+		Last Modified: Fri, 10 Feb 2023 22:18:59 GMT  
+		Size: 1.1 MB (1087885 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a01d503baafbf7471b226324a831df5ca2e8390473ce78e236d3dd5c1ab3c62b`  
-		Last Modified: Fri, 13 Jan 2023 00:47:38 GMT  
-		Size: 12.1 MB (12082133 bytes)  
+	-	`sha256:574ab5da52d2e1338b4d9359da1ce06f3ac8e7c13ca6642062bd8c97bb50784a`  
+		Last Modified: Fri, 10 Feb 2023 22:19:00 GMT  
+		Size: 10.7 MB (10726155 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae2628d81f40fa3a0ea7c043efac98f239948216f7aac6c72177c8e4abb9afde`  
-		Last Modified: Fri, 13 Jan 2023 00:47:37 GMT  
-		Size: 1.9 KB (1897 bytes)  
+	-	`sha256:0658130289555357b4bcc32867d0e841e43ac3fd260ec6a79cea1100c2137330`  
+		Last Modified: Fri, 10 Feb 2023 22:18:59 GMT  
+		Size: 1.9 KB (1891 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2a107c14f7aacddd363b279d3586e7776c826935582c1a9cf5bff0327061c7e1`  
-		Last Modified: Fri, 13 Jan 2023 00:47:37 GMT  
-		Size: 1.1 KB (1065 bytes)  
+	-	`sha256:3515ad107ce1fa3f7bc67db346f13973d805d0f9d98ffbe4de99c20385698aa7`  
+		Last Modified: Fri, 10 Feb 2023 22:18:58 GMT  
+		Size: 1.1 KB (1058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
