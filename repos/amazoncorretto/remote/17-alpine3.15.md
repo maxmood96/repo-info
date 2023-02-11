@@ -1,7 +1,7 @@
 ## `amazoncorretto:17-alpine3.15`
 
 ```console
-$ docker pull amazoncorretto@sha256:596d184b1b6760419dc666403ae9d166d713f6e13c9e6702052946c8073df964
+$ docker pull amazoncorretto@sha256:4178a07036a25120d55005c9ab4560880aeb5d357d1792620b146fdda447f7a7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,40 +11,40 @@ $ docker pull amazoncorretto@sha256:596d184b1b6760419dc666403ae9d166d713f6e13c9e
 ### `amazoncorretto:17-alpine3.15` - linux; amd64
 
 ```console
-$ docker pull amazoncorretto@sha256:a8d48b6a537c72ebf1a3e270d68d5508db4947d8e9b0be92e549ef401e9fbb5f
+$ docker pull amazoncorretto@sha256:ab81b2d4c9d715d39b52dd6b831ae843a06ce89a0c12a25275c0a2ffc85981bd
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **196.4 MB (196392944 bytes)**  
+-	Total Size: **196.4 MB (196395565 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b8003b9ba177a277f01b832a8d9024b1de1309974c46cdf3bbb649ac062ee26a`
+-	Image ID: `sha256:140b29a2d74e4fc8580d4ccccfe41f89326987ac22c9acb9fe803e231c235ec8`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Tue, 09 Aug 2022 17:20:00 GMT
-ADD file:f77e3f51f020890d22997e6c2ca98968b75b8bc8c463341a2010ff0655d4c88f in / 
-# Tue, 09 Aug 2022 17:20:01 GMT
+# Sat, 11 Feb 2023 04:46:54 GMT
+ADD file:cdac18271416ac5bf6876b7ea9af1129108d03f9813589dfda113e5f09d6b80b in / 
+# Sat, 11 Feb 2023 04:46:55 GMT
 CMD ["/bin/sh"]
-# Wed, 18 Jan 2023 20:27:25 GMT
+# Sat, 11 Feb 2023 07:00:36 GMT
 ARG version=17.0.6.10.1
-# Wed, 18 Jan 2023 20:27:31 GMT
+# Sat, 11 Feb 2023 07:00:42 GMT
 # ARGS: version=17.0.6.10.1
 RUN wget -O /THIRD-PARTY-LICENSES-20200824.tar.gz https://corretto.aws/downloads/resources/licenses/alpine/THIRD-PARTY-LICENSES-20200824.tar.gz &&     echo "82f3e50e71b2aee21321b2b33de372feed5befad6ef2196ddec92311bc09becb  /THIRD-PARTY-LICENSES-20200824.tar.gz" | sha256sum -c - &&     tar x -ovzf THIRD-PARTY-LICENSES-20200824.tar.gz &&     rm -rf THIRD-PARTY-LICENSES-20200824.tar.gz &&     wget -O /etc/apk/keys/amazoncorretto.rsa.pub https://apk.corretto.aws/amazoncorretto.rsa.pub &&     SHA_SUM="6cfdf08be09f32ca298e2d5bd4a359ee2b275765c09b56d514624bf831eafb91" &&     echo "${SHA_SUM}  /etc/apk/keys/amazoncorretto.rsa.pub" | sha256sum -c - &&     echo "https://apk.corretto.aws" >> /etc/apk/repositories &&     apk add --no-cache amazon-corretto-17=$version-r0
-# Wed, 18 Jan 2023 20:27:32 GMT
+# Sat, 11 Feb 2023 07:00:43 GMT
 ENV LANG=C.UTF-8
-# Wed, 18 Jan 2023 20:27:32 GMT
+# Sat, 11 Feb 2023 07:00:43 GMT
 ENV JAVA_HOME=/usr/lib/jvm/default-jvm
-# Wed, 18 Jan 2023 20:27:32 GMT
+# Sat, 11 Feb 2023 07:00:43 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/default-jvm/bin
 ```
 
 -	Layers:
-	-	`sha256:9621f1afde84053b2f9b6ff34fc7f7460712247c01cbab483c5fa7132cf782ca`  
-		Last Modified: Tue, 09 Aug 2022 17:20:52 GMT  
-		Size: 2.8 MB (2823512 bytes)  
+	-	`sha256:895e193edb5191bf66fb5ccb29f5d3659e05eec5953255180cbdd66520e7c517`  
+		Last Modified: Sat, 11 Feb 2023 04:47:40 GMT  
+		Size: 2.8 MB (2826146 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e41d66cc091e40316049de8a2f6bfa95234317917671299e8b3cae40961b2401`  
-		Last Modified: Wed, 18 Jan 2023 20:40:36 GMT  
-		Size: 193.6 MB (193569432 bytes)  
+	-	`sha256:bf5d5014926c7ac92d88d8eec076a08a95d6a770b6309caef76ff0aee66aff25`  
+		Last Modified: Sat, 11 Feb 2023 07:09:01 GMT  
+		Size: 193.6 MB (193569419 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
