@@ -1,10 +1,10 @@
-# `amazonlinux:2018.03.0.20230124.1-with-sources`
+# `amazonlinux:2018.03.0.20230207.0-with-sources`
 
 ## Docker Metadata
 
-- Image ID: `sha256:10744eddd6741de6ffab97ff9f68b81f59fc7844510c0f57794411f6dd2c655d`
-- Created: `2023-02-01T05:17:29.845280677Z`
-- Virtual Size: ~ 619.95 Mb  
+- Image ID: `sha256:de55c246e0ff336c46024f08fa4c8a76b99da444999c63a7a28e4590eafa6608`
+- Created: `2023-02-10T18:19:59.976470048Z`
+- Virtual Size: ~ 620.06 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -175,7 +175,7 @@ Licenses (from `rpm --query`): GPLv2+ and LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `krb5-libs-1.15.1-46.49.amzn1.x86_64`
+### `rpm` package: `krb5-libs-1.15.1-55.51.amzn1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
@@ -403,7 +403,7 @@ Licenses (from `rpm --query`): OpenLDAP
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `openssl-1.0.2k-16.159.amzn1.x86_64`
+### `rpm` package: `openssl-1.0.2k-16.162.amzn1.x86_64`
 
 Licenses (from `rpm --query`): OpenSSL
 
