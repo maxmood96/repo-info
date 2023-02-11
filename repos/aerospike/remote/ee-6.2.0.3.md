@@ -1,7 +1,7 @@
 ## `aerospike:ee-6.2.0.3`
 
 ```console
-$ docker pull aerospike@sha256:2300a1ede1149fdda8caaf9cf893670a62ca81f57eb0bc511f35a13dfa669d83
+$ docker pull aerospike@sha256:91558e5b48432fd4dc21057ec2e9434f6fc40a0d636cb1f6fac03d98c7fd44ec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,14 +12,14 @@ $ docker pull aerospike@sha256:2300a1ede1149fdda8caaf9cf893670a62ca81f57eb0bc511
 ### `aerospike:ee-6.2.0.3` - linux; amd64
 
 ```console
-$ docker pull aerospike@sha256:8f9abde565eb8381ee108bc173987517f2718b94679d67579d28c742d74b733b
+$ docker pull aerospike@sha256:5c5d0f615b53c8125d8f51ee72db54526aa558239d2729401cd506d337e20812
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.2 MB (81183549 bytes)**  
+-	Total Size: **81.2 MB (81183547 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:afaf8a8e5fb166b39f7533d07eb2579baf700bc306cc44b7ccc7685abee4a880`
+-	Image ID: `sha256:0bb6ab72b238e73ab17cc5f467dbcc43846ffbd1234fd1aec54d56b8c03d2be8`
 -	Entrypoint: `["\/usr\/bin\/as-tini-static","-r","SIGUSR1","-t","SIGTERM","--","\/entrypoint.sh"]`
 -	Default Command: `["asd"]`
 -	`SHELL`: `["\/bin\/bash","-Eeuo","pipefail","-c"]`
@@ -48,11 +48,11 @@ RUN {     export DEBIAN_FRONTEND=noninteractive;     apt-get update -y;     apt-
 COPY file:c76954551192450f2d9e2a428b0b3a3daeba46fccf29d07ceabb675e275a068e in /etc/aerospike/aerospike.template.conf 
 # Thu, 09 Feb 2023 09:07:13 GMT
 EXPOSE 3000 3001 3002
-# Thu, 09 Feb 2023 09:07:13 GMT
-COPY file:d50c4b59c6030f47e41221b7d152a3e0cf299b7e8bf38ea42e3c2e33b1c9cc1f in /entrypoint.sh 
-# Thu, 09 Feb 2023 09:07:13 GMT
+# Sat, 11 Feb 2023 04:45:38 GMT
+COPY file:57ed4c0390f91371a6d5ddbdf0ecf475b40dc8871b369f3100b157df0d753fc5 in /entrypoint.sh 
+# Sat, 11 Feb 2023 04:45:39 GMT
 ENTRYPOINT ["/usr/bin/as-tini-static" "-r" "SIGUSR1" "-t" "SIGTERM" "--" "/entrypoint.sh"]
-# Thu, 09 Feb 2023 09:07:13 GMT
+# Sat, 11 Feb 2023 04:45:39 GMT
 CMD ["asd"]
 ```
 
@@ -69,9 +69,9 @@ CMD ["asd"]
 		Last Modified: Thu, 09 Feb 2023 09:07:51 GMT  
 		Size: 1.1 KB (1092 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f86d874fd9f200c8981d7f2d3fc162742a9799bf8991ac4e9b0f0d5de052bb41`  
-		Last Modified: Thu, 09 Feb 2023 09:07:50 GMT  
-		Size: 1.1 KB (1100 bytes)  
+	-	`sha256:61369f6f6a0fba4fb792989a401611db0c248673da856b37235d990b42773c14`  
+		Last Modified: Sat, 11 Feb 2023 04:45:50 GMT  
+		Size: 1.1 KB (1098 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `aerospike:ee-6.2.0.3` - linux; arm64 variant v8
