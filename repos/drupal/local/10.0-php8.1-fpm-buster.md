@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b8c8b8b2d10bb8c67bcb30d41fddfd463385d91f2118a5e7656baff5112d0042`
-- Created: `2023-02-07T01:45:23.473727942Z`
+- Image ID: `sha256:b68de44960efe048553c5fd01b84a7e4eda349db87057a2230e4316a8aa4bf7f`
+- Created: `2023-02-11T14:22:09.862347034Z`
 - Virtual Size: ~ 478.31 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2435,20 +2435,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-11=11.18-0+deb10u1
-'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-11/postgresql-11_11.18-0%2bdeb10u1.dsc' postgresql-11_11.18-0+deb10u1.dsc 3745 SHA256:483f81ea29e6032eb47d8e50ba0e8bed89f4c5ac630a7829af77471a54308344
-'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-11/postgresql-11_11.18.orig.tar.bz2' postgresql-11_11.18.orig.tar.bz2 20428126 SHA256:d24f20efc52e918acfbcca21e9cea28e0e263b846a0c408fcfac3b3c4a0f7504
-'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-11/postgresql-11_11.18-0%2bdeb10u1.debian.tar.xz' postgresql-11_11.18-0+deb10u1.debian.tar.xz 28456 SHA256:35c3caae0d201bbcd38d508f9a82883891122c20c1e163f95a4348397c87e89d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/postgresql-11/11.18-0+deb10u1/
 
-- https://sources.debian.net/src/postgresql-11/11.18-0+deb10u1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-11/11.18-0+deb10u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-11/11.18-0+deb10u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `re2c=1.1.1-1`
 

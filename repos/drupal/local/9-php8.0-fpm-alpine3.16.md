@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c50f01d6aa471944d957eeb272330b1e8bf31aed9c80a51bdff80d24b7b3824d`
-- Created: `2023-02-07T01:49:40.917200427Z`
-- Virtual Size: ~ 170.56 Mb  
+- Image ID: `sha256:d8f5aa84822e9f684bb82d2d622b24771129b60f7b46acff0567d3307ada69bd`
+- Created: `2023-02-11T14:29:09.343560672Z`
+- Virtual Size: ~ 169.46 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -181,16 +181,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-7.83.1-r4 description:
+curl-7.83.1-r5 description:
 URL retrival utility and library
 
-curl-7.83.1-r4 webpage:
+curl-7.83.1-r5 webpage:
 https://curl.se/
 
-curl-7.83.1-r4 installed size:
+curl-7.83.1-r5 installed size:
 256 KiB
 
-curl-7.83.1-r4 license:
+curl-7.83.1-r5 license:
 curl
 
 ```
@@ -283,16 +283,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1s-r0 description:
+libcrypto1.1-1.1.1t-r0 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1s-r0 webpage:
+libcrypto1.1-1.1.1t-r0 webpage:
 https://www.openssl.org/
 
-libcrypto1.1-1.1.1s-r0 installed size:
-2708 KiB
+libcrypto1.1-1.1.1t-r0 installed size:
+2712 KiB
 
-libcrypto1.1-1.1.1s-r0 license:
+libcrypto1.1-1.1.1t-r0 license:
 OpenSSL
 
 ```
@@ -351,16 +351,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-14.5-r0 description:
+libpq-14.7-r0 description:
 PostgreSQL client library
 
-libpq-14.5-r0 webpage:
+libpq-14.7-r0 webpage:
 https://www.postgresql.org/
 
-libpq-14.5-r0 installed size:
+libpq-14.7-r0 installed size:
 328 KiB
 
-libpq-14.5-r0 license:
+libpq-14.7-r0 license:
 PostgreSQL
 
 ```
@@ -385,16 +385,16 @@ ISC
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1s-r0 description:
+libssl1.1-1.1.1t-r0 description:
 SSL shared libraries
 
-libssl1.1-1.1.1s-r0 webpage:
+libssl1.1-1.1.1t-r0 webpage:
 https://www.openssl.org/
 
-libssl1.1-1.1.1s-r0 installed size:
+libssl1.1-1.1.1t-r0 installed size:
 528 KiB
 
-libssl1.1-1.1.1s-r0 license:
+libssl1.1-1.1.1t-r0 license:
 OpenSSL
 
 ```
@@ -470,16 +470,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.3-r1 description:
+musl-utils-1.2.3-r2 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.3-r1 webpage:
+musl-utils-1.2.3-r2 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.3-r1 installed size:
+musl-utils-1.2.3-r2 installed size:
 132 KiB
 
-musl-utils-1.2.3-r1 license:
+musl-utils-1.2.3-r2 license:
 MIT BSD GPL2+
 
 ```
@@ -555,16 +555,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-1.1.1s-r0 description:
+openssl-1.1.1t-r0 description:
 toolkit for transport layer security (TLS) - version 1.1
 
-openssl-1.1.1s-r0 webpage:
+openssl-1.1.1t-r0 webpage:
 https://www.openssl.org/
 
-openssl-1.1.1s-r0 installed size:
+openssl-1.1.1t-r0 installed size:
 660 KiB
 
-openssl-1.1.1s-r0 license:
+openssl-1.1.1t-r0 license:
 OpenSSL
 
 ```
