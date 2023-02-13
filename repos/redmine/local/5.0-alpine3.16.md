@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:160781fbd83e4adc81cd76514eeea09bdf91e8db2bdb47faf9a0713d354b813c`
-- Created: `2022-12-01T19:49:57.829413239Z`
-- Virtual Size: ~ 472.44 Mb  
+- Image ID: `sha256:496b9f7a0908276841e363f8193fc39bbe86a3d995667c032523a0d9135d2332`
+- Created: `2023-02-11T17:15:56.139298103Z`
+- Virtual Size: ~ 476.65 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -115,16 +115,16 @@ GPL-2.0-only
 ### `apk` package: `apr`
 
 ```console
-apr-1.7.0-r2 description:
+apr-1.7.2-r0 description:
 The Apache Portable Runtime
 
-apr-1.7.0-r2 webpage:
+apr-1.7.2-r0 webpage:
 https://apr.apache.org/
 
-apr-1.7.0-r2 installed size:
+apr-1.7.2-r0 installed size:
 220 KiB
 
-apr-1.7.0-r2 license:
+apr-1.7.2-r0 license:
 Apache-2.0
 
 ```
@@ -132,16 +132,16 @@ Apache-2.0
 ### `apk` package: `apr-util`
 
 ```console
-apr-util-1.6.1-r12 description:
+apr-util-1.6.3-r0 description:
 The Apache Portable Runtime Utility Library
 
-apr-util-1.6.1-r12 webpage:
+apr-util-1.6.3-r0 webpage:
 https://apr.apache.org/
 
-apr-util-1.6.1-r12 installed size:
+apr-util-1.6.3-r0 installed size:
 200 KiB
 
-apr-util-1.6.1-r12 license:
+apr-util-1.6.3-r0 license:
 Apache-2.0
 
 ```
@@ -523,16 +523,16 @@ GPL
 ### `apk` package: `git`
 
 ```console
-git-2.36.3-r0 description:
+git-2.36.4-r0 description:
 Distributed version control system
 
-git-2.36.3-r0 webpage:
+git-2.36.4-r0 webpage:
 https://www.git-scm.com/
 
-git-2.36.3-r0 installed size:
+git-2.36.4-r0 installed size:
 10 MiB
 
-git-2.36.3-r0 license:
+git-2.36.4-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -591,16 +591,16 @@ LGPL-3.0-or-later OR GPL-2.0-or-later
 ### `apk` package: `gnutls`
 
 ```console
-gnutls-3.7.7-r0 description:
+gnutls-3.7.7-r1 description:
 TLS protocol implementation
 
-gnutls-3.7.7-r0 webpage:
+gnutls-3.7.7-r1 webpage:
 https://www.gnutls.org/
 
-gnutls-3.7.7-r0 installed size:
+gnutls-3.7.7-r1 installed size:
 1904 KiB
 
-gnutls-3.7.7-r0 license:
+gnutls-3.7.7-r1 license:
 LGPL-2.1-or-later
 
 ```
@@ -761,16 +761,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1s-r0 description:
+libcrypto1.1-1.1.1t-r0 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1s-r0 webpage:
+libcrypto1.1-1.1.1t-r0 webpage:
 https://www.openssl.org/
 
-libcrypto1.1-1.1.1s-r0 installed size:
-2708 KiB
+libcrypto1.1-1.1.1t-r0 installed size:
+2712 KiB
 
-libcrypto1.1-1.1.1s-r0 license:
+libcrypto1.1-1.1.1t-r0 license:
 OpenSSL
 
 ```
@@ -778,16 +778,16 @@ OpenSSL
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.83.1-r4 description:
+libcurl-7.83.1-r5 description:
 The multiprotocol file transfer library
 
-libcurl-7.83.1-r4 webpage:
+libcurl-7.83.1-r5 webpage:
 https://curl.se/
 
-libcurl-7.83.1-r4 installed size:
+libcurl-7.83.1-r5 installed size:
 512 KiB
 
-libcurl-7.83.1-r4 license:
+libcurl-7.83.1-r5 license:
 curl
 
 ```
@@ -795,16 +795,16 @@ curl
 ### `apk` package: `libde265`
 
 ```console
-libde265-1.0.8-r2 description:
+libde265-1.0.11-r0 description:
 Open h.265 video codec implementation
 
-libde265-1.0.8-r2 webpage:
+libde265-1.0.11-r0 webpage:
 https://github.com/strukturag/libde265
 
-libde265-1.0.8-r2 installed size:
-788 KiB
+libde265-1.0.11-r0 installed size:
+432 KiB
 
-libde265-1.0.8-r2 license:
+libde265-1.0.11-r0 license:
 LGPL-3.0-or-later
 
 ```
@@ -1033,16 +1033,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-14.5-r0 description:
+libpq-14.7-r0 description:
 PostgreSQL client library
 
-libpq-14.5-r0 webpage:
+libpq-14.7-r0 webpage:
 https://www.postgresql.org/
 
-libpq-14.5-r0 installed size:
+libpq-14.7-r0 installed size:
 328 KiB
 
-libpq-14.5-r0 license:
+libpq-14.7-r0 license:
 PostgreSQL
 
 ```
@@ -1101,16 +1101,16 @@ custom
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1s-r0 description:
+libssl1.1-1.1.1t-r0 description:
 SSL shared libraries
 
-libssl1.1-1.1.1s-r0 webpage:
+libssl1.1-1.1.1t-r0 webpage:
 https://www.openssl.org/
 
-libssl1.1-1.1.1s-r0 installed size:
+libssl1.1-1.1.1t-r0 installed size:
 528 KiB
 
-libssl1.1-1.1.1s-r0 license:
+libssl1.1-1.1.1t-r0 license:
 OpenSSL
 
 ```
@@ -1135,16 +1135,16 @@ GPL-2.0-or-later LGPL-2.1-or-later
 ### `apk` package: `libtasn1`
 
 ```console
-libtasn1-4.18.0-r0 description:
+libtasn1-4.18.0-r1 description:
 The ASN.1 library used in GNUTLS
 
-libtasn1-4.18.0-r0 webpage:
+libtasn1-4.18.0-r1 webpage:
 https://www.gnu.org/software/gnutls/
 
-libtasn1-4.18.0-r0 installed size:
+libtasn1-4.18.0-r1 installed size:
 84 KiB
 
-libtasn1-4.18.0-r0 license:
+libtasn1-4.18.0-r1 license:
 LGPL-2.1-or-later
 
 ```
@@ -1441,16 +1441,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.3-r1 description:
+musl-utils-1.2.3-r2 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.3-r1 webpage:
+musl-utils-1.2.3-r2 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.3-r1 installed size:
+musl-utils-1.2.3-r2 installed size:
 132 KiB
 
-musl-utils-1.2.3-r1 license:
+musl-utils-1.2.3-r2 license:
 MIT BSD GPL2+
 
 ```
@@ -1679,16 +1679,16 @@ MIT
 ### `apk` package: `pkgconf`
 
 ```console
-pkgconf-1.8.0-r1 description:
+pkgconf-1.8.1-r0 description:
 development framework configuration tools
 
-pkgconf-1.8.0-r1 webpage:
+pkgconf-1.8.1-r0 webpage:
 https://git.sr.ht/~kaniini/pkgconf
 
-pkgconf-1.8.0-r1 installed size:
+pkgconf-1.8.1-r0 installed size:
 140 KiB
 
-pkgconf-1.8.0-r1 license:
+pkgconf-1.8.1-r0 license:
 ISC
 
 ```
@@ -1815,16 +1815,16 @@ MIT
 ### `apk` package: `python3`
 
 ```console
-python3-3.10.8-r0 description:
+python3-3.10.10-r0 description:
 A high-level scripting language
 
-python3-3.10.8-r0 webpage:
+python3-3.10.10-r0 webpage:
 https://www.python.org/
 
-python3-3.10.8-r0 installed size:
+python3-3.10.10-r0 installed size:
 47 MiB
 
-python3-3.10.8-r0 license:
+python3-3.10.10-r0 license:
 PSF-2.0
 
 ```
@@ -1883,16 +1883,16 @@ Apache-2.0
 ### `apk` package: `shared-mime-info`
 
 ```console
-shared-mime-info-2.2-r1 description:
+shared-mime-info-2.2-r2 description:
 Freedesktop.org Shared MIME Info
 
-shared-mime-info-2.2-r1 webpage:
+shared-mime-info-2.2-r2 webpage:
 http://freedesktop.org/Software/shared-mime-info
 
-shared-mime-info-2.2-r1 installed size:
+shared-mime-info-2.2-r2 installed size:
 2452 KiB
 
-shared-mime-info-2.2-r1 license:
+shared-mime-info-2.2-r2 license:
 GPL-2.0-or-later
 
 ```
