@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:21bb855838b6627094d0117577abee9551b42e9fe8bc10dfa073ece9e09c9135`
-- Created: `2023-01-17T21:23:36.764565492Z`
-- Virtual Size: ~ 83.14 Mb  
+- Image ID: `sha256:447d7fda5d962d46757481e5767746e2223fee36c7251f8aa2ab8cc0c5c8d415`
+- Created: `2023-02-11T15:42:37.882014372Z`
+- Virtual Size: ~ 82.54 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["iex"]`
@@ -158,16 +158,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1s-r0 description:
+libcrypto1.1-1.1.1t-r0 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1s-r0 webpage:
+libcrypto1.1-1.1.1t-r0 webpage:
 https://www.openssl.org/
 
-libcrypto1.1-1.1.1s-r0 installed size:
-2708 KiB
+libcrypto1.1-1.1.1t-r0 installed size:
+2712 KiB
 
-libcrypto1.1-1.1.1s-r0 license:
+libcrypto1.1-1.1.1t-r0 license:
 OpenSSL
 
 ```
@@ -209,16 +209,16 @@ GPL-2.0-only AND LGPL-2.1-or-later
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1s-r0 description:
+libssl1.1-1.1.1t-r0 description:
 SSL shared libraries
 
-libssl1.1-1.1.1s-r0 webpage:
+libssl1.1-1.1.1t-r0 webpage:
 https://www.openssl.org/
 
-libssl1.1-1.1.1s-r0 installed size:
+libssl1.1-1.1.1t-r0 installed size:
 528 KiB
 
-libssl1.1-1.1.1s-r0 license:
+libssl1.1-1.1.1t-r0 license:
 OpenSSL
 
 ```
@@ -277,16 +277,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.3-r1 description:
+musl-utils-1.2.3-r2 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.3-r1 webpage:
+musl-utils-1.2.3-r2 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.3-r1 installed size:
+musl-utils-1.2.3-r2 installed size:
 132 KiB
 
-musl-utils-1.2.3-r1 license:
+musl-utils-1.2.3-r2 license:
 MIT BSD GPL2+
 
 ```
