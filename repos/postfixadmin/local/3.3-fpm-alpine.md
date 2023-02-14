@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f7285e699e44afec981beb4dd637dcb42227546bed3626899eded259628cbfef`
-- Created: `2023-02-04T05:57:52.97253127Z`
-- Virtual Size: ~ 88.02 Mb  
+- Image ID: `sha256:689dee0df367f5df2a11ac172ac776038b699b1a95049d4f5be6bb9a9c3a74eb`
+- Created: `2023-02-11T16:38:22.031002644Z`
+- Virtual Size: ~ 87.49 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-entrypoint.sh"]`
@@ -235,16 +235,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-7.87.0-r0 description:
+curl-7.87.0-r1 description:
 URL retrival utility and library
 
-curl-7.87.0-r0 webpage:
+curl-7.87.0-r1 webpage:
 https://curl.se/
 
-curl-7.87.0-r0 installed size:
+curl-7.87.0-r1 installed size:
 264 KiB
 
-curl-7.87.0-r0 license:
+curl-7.87.0-r1 license:
 curl
 
 ```
@@ -303,16 +303,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.0.7-r2 description:
+libcrypto3-3.0.8-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.0.7-r2 webpage:
+libcrypto3-3.0.8-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.0.7-r2 installed size:
+libcrypto3-3.0.8-r0 installed size:
 4108 KiB
 
-libcrypto3-3.0.7-r2 license:
+libcrypto3-3.0.8-r0 license:
 Apache-2.0
 
 ```
@@ -354,16 +354,16 @@ GPL-2.0-or-later LGPL-2.1-or-later
 ### `apk` package: `libpq`
 
 ```console
-libpq-15.1-r0 description:
+libpq-15.2-r0 description:
 PostgreSQL client library
 
-libpq-15.1-r0 webpage:
+libpq-15.2-r0 webpage:
 https://www.postgresql.org/
 
-libpq-15.1-r0 installed size:
+libpq-15.2-r0 installed size:
 336 KiB
 
-libpq-15.1-r0 license:
+libpq-15.2-r0 license:
 PostgreSQL
 
 ```
@@ -388,16 +388,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.0.7-r2 description:
+libssl3-3.0.8-r0 description:
 SSL shared libraries
 
-libssl3-3.0.7-r2 webpage:
+libssl3-3.0.8-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.0.7-r2 installed size:
+libssl3-3.0.8-r0 installed size:
 608 KiB
 
-libssl3-3.0.7-r2 license:
+libssl3-3.0.8-r0 license:
 Apache-2.0
 
 ```
@@ -524,16 +524,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.0.7-r2 description:
+openssl-3.0.8-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.0.7-r2 webpage:
+openssl-3.0.8-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.0.7-r2 installed size:
+openssl-3.0.8-r0 installed size:
 868 KiB
 
-openssl-3.0.7-r2 license:
+openssl-3.0.8-r0 license:
 Apache-2.0
 
 ```
