@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:522335138ded2fef980819b0d2dbfcba9dcef6d2bd1515b5dd083b4d52667785`
-- Created: `2023-02-09T01:23:41.982620052Z`
-- Virtual Size: ~ 56.65 Mb  
+- Image ID: `sha256:85da6554f50cbe524fe327ade15a9a0abe96f03cca2283238b248d19a1ea9f61`
+- Created: `2023-02-11T12:08:00.983760736Z`
+- Virtual Size: ~ 51.70 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python3"]`
