@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bd7625c9b2bf5dc418fb0cf2029ccf56b0f054e8262ee585afa20d8309be6e2e`
-- Created: `2023-02-07T22:21:56.058429001Z`
-- Virtual Size: ~ 306.04 Mb  
+- Image ID: `sha256:a2f21ee5bb5ce51a88180dd4c7af182b9217b054385b6537ed68b68f748d417c`
+- Created: `2023-02-11T16:42:59.186354761Z`
+- Virtual Size: ~ 305.50 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -299,16 +299,16 @@ GPL-2.0-only
 ### `apk` package: `curl`
 
 ```console
-curl-7.87.0-r0 description:
+curl-7.87.0-r1 description:
 URL retrival utility and library
 
-curl-7.87.0-r0 webpage:
+curl-7.87.0-r1 webpage:
 https://curl.se/
 
-curl-7.87.0-r0 installed size:
+curl-7.87.0-r1 installed size:
 264 KiB
 
-curl-7.87.0-r0 license:
+curl-7.87.0-r1 license:
 curl
 
 ```
@@ -469,16 +469,16 @@ LGPL-2.1-or-later
 ### `apk` package: `gnutls`
 
 ```console
-gnutls-3.7.8-r2 description:
+gnutls-3.7.8-r3 description:
 TLS protocol implementation
 
-gnutls-3.7.8-r2 webpage:
+gnutls-3.7.8-r3 webpage:
 https://www.gnutls.org/
 
-gnutls-3.7.8-r2 installed size:
+gnutls-3.7.8-r3 installed size:
 1936 KiB
 
-gnutls-3.7.8-r2 license:
+gnutls-3.7.8-r3 license:
 LGPL-2.1-or-later
 
 ```
@@ -707,16 +707,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.0.7-r2 description:
+libcrypto3-3.0.8-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.0.7-r2 webpage:
+libcrypto3-3.0.8-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.0.7-r2 installed size:
+libcrypto3-3.0.8-r0 installed size:
 4108 KiB
 
-libcrypto3-3.0.7-r2 license:
+libcrypto3-3.0.8-r0 license:
 Apache-2.0
 
 ```
@@ -894,16 +894,16 @@ Apache-2.0
 ### `apk` package: `libltdl`
 
 ```console
-libltdl-2.4.7-r0 description:
+libltdl-2.4.7-r1 description:
 Runtime libraries for GNU Libtool Dynamic Module Loader
 
-libltdl-2.4.7-r0 webpage:
+libltdl-2.4.7-r1 webpage:
 https://www.gnu.org/software/libtool
 
-libltdl-2.4.7-r0 installed size:
+libltdl-2.4.7-r1 installed size:
 52 KiB
 
-libltdl-2.4.7-r0 license:
+libltdl-2.4.7-r1 license:
 LGPL-2.0-or-later AND GPL-2.0-or-later
 
 ```
@@ -996,16 +996,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.0.7-r2 description:
+libssl3-3.0.8-r0 description:
 SSL shared libraries
 
-libssl3-3.0.7-r2 webpage:
+libssl3-3.0.8-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.0.7-r2 installed size:
+libssl3-3.0.8-r0 installed size:
 608 KiB
 
-libssl3-3.0.7-r2 license:
+libssl3-3.0.8-r0 license:
 Apache-2.0
 
 ```
@@ -1081,16 +1081,16 @@ BSD-3-Clause
 ### `apk` package: `libx11`
 
 ```console
-libx11-1.8.3-r1 description:
+libx11-1.8.4-r0 description:
 X11 client-side library
 
-libx11-1.8.3-r1 webpage:
+libx11-1.8.4-r0 webpage:
 http://xorg.freedesktop.org/
 
-libx11-1.8.3-r1 installed size:
-3180 KiB
+libx11-1.8.4-r0 installed size:
+3172 KiB
 
-libx11-1.8.3-r1 license:
+libx11-1.8.4-r0 license:
 custom:XFREE86
 
 ```
@@ -1370,16 +1370,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.0.7-r2 description:
+openssl-3.0.8-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.0.7-r2 webpage:
+openssl-3.0.8-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.0.7-r2 installed size:
+openssl-3.0.8-r0 installed size:
 868 KiB
 
-openssl-3.0.7-r2 license:
+openssl-3.0.8-r0 license:
 Apache-2.0
 
 ```

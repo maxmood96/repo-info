@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:01db7338a4834064200b496459a7a6fc7ffa37035b2e9995ebeabee0e250e539`
-- Created: `2023-02-04T06:05:04.04752298Z`
-- Virtual Size: ~ 160.39 Mb  
+- Image ID: `sha256:6ed61c395080d3d0bd11e0fe125d83b7e6b8fab54dd8d0ed5761f749a4bc5f55`
+- Created: `2023-02-11T16:45:10.421588088Z`
+- Virtual Size: ~ 159.84 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -217,16 +217,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-7.87.0-r0 description:
+curl-7.87.0-r1 description:
 URL retrival utility and library
 
-curl-7.87.0-r0 webpage:
+curl-7.87.0-r1 webpage:
 https://curl.se/
 
-curl-7.87.0-r0 installed size:
+curl-7.87.0-r1 installed size:
 264 KiB
 
-curl-7.87.0-r0 license:
+curl-7.87.0-r1 license:
 curl
 
 ```
@@ -353,16 +353,16 @@ MIT GPL-3.0-only
 ### `apk` package: `less`
 
 ```console
-less-608-r0 description:
+less-608-r1 description:
 File pager
 
-less-608-r0 webpage:
+less-608-r1 webpage:
 https://www.greenwoodsoftware.com/less/
 
-less-608-r0 installed size:
+less-608-r1 installed size:
 224 KiB
 
-less-608-r0 license:
+less-608-r1 license:
 GPL-3.0-or-later OR BSD-2-Clause
 
 ```
@@ -438,16 +438,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.0.7-r2 description:
+libcrypto3-3.0.8-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.0.7-r2 webpage:
+libcrypto3-3.0.8-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.0.7-r2 installed size:
+libcrypto3-3.0.8-r0 installed size:
 4108 KiB
 
-libcrypto3-3.0.7-r2 license:
+libcrypto3-3.0.8-r0 license:
 Apache-2.0
 
 ```
@@ -540,16 +540,16 @@ BSD-3-Clause AND IJG AND Zlib
 ### `apk` package: `libltdl`
 
 ```console
-libltdl-2.4.7-r0 description:
+libltdl-2.4.7-r1 description:
 Runtime libraries for GNU Libtool Dynamic Module Loader
 
-libltdl-2.4.7-r0 webpage:
+libltdl-2.4.7-r1 webpage:
 https://www.gnu.org/software/libtool
 
-libltdl-2.4.7-r0 installed size:
+libltdl-2.4.7-r1 installed size:
 52 KiB
 
-libltdl-2.4.7-r0 license:
+libltdl-2.4.7-r1 license:
 LGPL-2.0-or-later AND GPL-2.0-or-later
 
 ```
@@ -608,16 +608,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.0.7-r2 description:
+libssl3-3.0.8-r0 description:
 SSL shared libraries
 
-libssl3-3.0.7-r2 webpage:
+libssl3-3.0.8-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.0.7-r2 installed size:
+libssl3-3.0.8-r0 installed size:
 608 KiB
 
-libssl3-3.0.7-r2 license:
+libssl3-3.0.8-r0 license:
 Apache-2.0
 
 ```
@@ -659,16 +659,16 @@ BSD-3-Clause
 ### `apk` package: `libx11`
 
 ```console
-libx11-1.8.3-r1 description:
+libx11-1.8.4-r0 description:
 X11 client-side library
 
-libx11-1.8.3-r1 webpage:
+libx11-1.8.4-r0 webpage:
 http://xorg.freedesktop.org/
 
-libx11-1.8.3-r1 installed size:
-3180 KiB
+libx11-1.8.4-r0 installed size:
+3172 KiB
 
-libx11-1.8.3-r1 license:
+libx11-1.8.4-r0 license:
 custom:XFREE86
 
 ```
@@ -778,16 +778,16 @@ BSD-3-Clause
 ### `apk` package: `mariadb-client`
 
 ```console
-mariadb-client-10.6.11-r0 description:
+mariadb-client-10.6.12-r0 description:
 Client for the MariaDB database
 
-mariadb-client-10.6.11-r0 webpage:
+mariadb-client-10.6.12-r0 webpage:
 https://www.mariadb.org/
 
-mariadb-client-10.6.11-r0 installed size:
+mariadb-client-10.6.12-r0 installed size:
 28 MiB
 
-mariadb-client-10.6.11-r0 license:
+mariadb-client-10.6.12-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -795,16 +795,16 @@ GPL-2.0-or-later
 ### `apk` package: `mariadb-common`
 
 ```console
-mariadb-common-10.6.11-r0 description:
+mariadb-common-10.6.12-r0 description:
 MariaDB common files for both server and client
 
-mariadb-common-10.6.11-r0 webpage:
+mariadb-common-10.6.12-r0 webpage:
 https://www.mariadb.org/
 
-mariadb-common-10.6.11-r0 installed size:
+mariadb-common-10.6.12-r0 installed size:
 2260 KiB
 
-mariadb-common-10.6.11-r0 license:
+mariadb-common-10.6.12-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -846,16 +846,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `mysql-client`
 
 ```console
-mysql-client-10.6.11-r0 description:
+mysql-client-10.6.12-r0 description:
 Dummy package for mysql-client migration
 
-mysql-client-10.6.11-r0 webpage:
+mysql-client-10.6.12-r0 webpage:
 https://www.mariadb.org/
 
-mysql-client-10.6.11-r0 installed size:
+mysql-client-10.6.12-r0 installed size:
 4096 B
 
-mysql-client-10.6.11-r0 license:
+mysql-client-10.6.12-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -931,16 +931,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.0.7-r2 description:
+openssl-3.0.8-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.0.7-r2 webpage:
+openssl-3.0.8-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.0.7-r2 installed size:
+openssl-3.0.8-r0 installed size:
 868 KiB
 
-openssl-3.0.7-r2 license:
+openssl-3.0.8-r0 license:
 Apache-2.0
 
 ```

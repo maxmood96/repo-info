@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e3ebaf9bf1c159bf91525945dbf87ac150e0f306c2fedf64f80d3bc1c0ff8c3a`
-- Created: `2023-01-06T04:50:52.865556268Z`
-- Virtual Size: ~ 151.08 Mb  
+- Image ID: `sha256:b96371aaa9da18bd8a57ab5bbc0d3bbf68da04bb02a5285a251fdcd34421b2cd`
+- Created: `2023-02-11T16:43:59.883882336Z`
+- Virtual Size: ~ 149.97 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -200,16 +200,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-7.83.1-r4 description:
+curl-7.83.1-r5 description:
 URL retrival utility and library
 
-curl-7.83.1-r4 webpage:
+curl-7.83.1-r5 webpage:
 https://curl.se/
 
-curl-7.83.1-r4 installed size:
+curl-7.83.1-r5 installed size:
 256 KiB
 
-curl-7.83.1-r4 license:
+curl-7.83.1-r5 license:
 curl
 
 ```
@@ -353,16 +353,16 @@ MIT GPL-3.0-only
 ### `apk` package: `less`
 
 ```console
-less-590-r0 description:
+less-590-r1 description:
 File pager
 
-less-590-r0 webpage:
+less-590-r1 webpage:
 https://www.greenwoodsoftware.com/less/
 
-less-590-r0 installed size:
+less-590-r1 installed size:
 216 KiB
 
-less-590-r0 license:
+less-590-r1 license:
 GPL-3.0-or-later OR BSD-2-Clause
 
 ```
@@ -421,16 +421,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1s-r0 description:
+libcrypto1.1-1.1.1t-r0 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1s-r0 webpage:
+libcrypto1.1-1.1.1t-r0 webpage:
 https://www.openssl.org/
 
-libcrypto1.1-1.1.1s-r0 installed size:
-2708 KiB
+libcrypto1.1-1.1.1t-r0 installed size:
+2712 KiB
 
-libcrypto1.1-1.1.1s-r0 license:
+libcrypto1.1-1.1.1t-r0 license:
 OpenSSL
 
 ```
@@ -557,16 +557,16 @@ ISC
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1s-r0 description:
+libssl1.1-1.1.1t-r0 description:
 SSL shared libraries
 
-libssl1.1-1.1.1s-r0 webpage:
+libssl1.1-1.1.1t-r0 webpage:
 https://www.openssl.org/
 
-libssl1.1-1.1.1s-r0 installed size:
+libssl1.1-1.1.1t-r0 installed size:
 528 KiB
 
-libssl1.1-1.1.1s-r0 license:
+libssl1.1-1.1.1t-r0 license:
 OpenSSL
 
 ```
@@ -727,16 +727,16 @@ BSD-3-Clause
 ### `apk` package: `mariadb-client`
 
 ```console
-mariadb-client-10.6.10-r0 description:
+mariadb-client-10.6.12-r0 description:
 Client for the MariaDB database
 
-mariadb-client-10.6.10-r0 webpage:
+mariadb-client-10.6.12-r0 webpage:
 https://www.mariadb.org/
 
-mariadb-client-10.6.10-r0 installed size:
+mariadb-client-10.6.12-r0 installed size:
 28 MiB
 
-mariadb-client-10.6.10-r0 license:
+mariadb-client-10.6.12-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -744,16 +744,16 @@ GPL-2.0-or-later
 ### `apk` package: `mariadb-common`
 
 ```console
-mariadb-common-10.6.10-r0 description:
+mariadb-common-10.6.12-r0 description:
 MariaDB common files for both server and client
 
-mariadb-common-10.6.10-r0 webpage:
+mariadb-common-10.6.12-r0 webpage:
 https://www.mariadb.org/
 
-mariadb-common-10.6.10-r0 installed size:
+mariadb-common-10.6.12-r0 installed size:
 2260 KiB
 
-mariadb-common-10.6.10-r0 license:
+mariadb-common-10.6.12-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -778,16 +778,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.3-r1 description:
+musl-utils-1.2.3-r2 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.3-r1 webpage:
+musl-utils-1.2.3-r2 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.3-r1 installed size:
+musl-utils-1.2.3-r2 installed size:
 132 KiB
 
-musl-utils-1.2.3-r1 license:
+musl-utils-1.2.3-r2 license:
 MIT BSD GPL2+
 
 ```
@@ -795,16 +795,16 @@ MIT BSD GPL2+
 ### `apk` package: `mysql-client`
 
 ```console
-mysql-client-10.6.10-r0 description:
+mysql-client-10.6.12-r0 description:
 Dummy package for mysql-client migration
 
-mysql-client-10.6.10-r0 webpage:
+mysql-client-10.6.12-r0 webpage:
 https://www.mariadb.org/
 
-mysql-client-10.6.10-r0 installed size:
+mysql-client-10.6.12-r0 installed size:
 4096 B
 
-mysql-client-10.6.10-r0 license:
+mysql-client-10.6.12-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -880,16 +880,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-1.1.1s-r0 description:
+openssl-1.1.1t-r0 description:
 toolkit for transport layer security (TLS) - version 1.1
 
-openssl-1.1.1s-r0 webpage:
+openssl-1.1.1t-r0 webpage:
 https://www.openssl.org/
 
-openssl-1.1.1s-r0 installed size:
+openssl-1.1.1t-r0 installed size:
 660 KiB
 
-openssl-1.1.1s-r0 license:
+openssl-1.1.1t-r0 license:
 OpenSSL
 
 ```
