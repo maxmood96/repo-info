@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:724c3e30711db1111249e3cd14570aad3f9a0396c3069f578c688c60d8e1acb5`
-- Created: `2023-01-24T22:36:25.761570047Z`
-- Virtual Size: ~ 576.72 Mb  
+- Image ID: `sha256:527d8693b193fd65b1c53bfa4f567c073deb48f539398caa3ae79c7e23bb5f81`
+- Created: `2023-02-11T05:44:33.553115439Z`
+- Virtual Size: ~ 576.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
@@ -91,16 +91,16 @@ GPL-2.0-only
 ### `apk` package: `apr`
 
 ```console
-apr-1.7.0-r2 description:
+apr-1.7.2-r0 description:
 The Apache Portable Runtime
 
-apr-1.7.0-r2 webpage:
+apr-1.7.2-r0 webpage:
 https://apr.apache.org/
 
-apr-1.7.0-r2 installed size:
-220 KiB
+apr-1.7.2-r0 installed size:
+224 KiB
 
-apr-1.7.0-r2 license:
+apr-1.7.2-r0 license:
 Apache-2.0
 
 ```
@@ -108,16 +108,16 @@ Apache-2.0
 ### `apk` package: `apr-util`
 
 ```console
-apr-util-1.6.1-r14 description:
+apr-util-1.6.3-r0 description:
 The Apache Portable Runtime Utility Library
 
-apr-util-1.6.1-r14 webpage:
+apr-util-1.6.3-r0 webpage:
 https://apr.apache.org/
 
-apr-util-1.6.1-r14 installed size:
+apr-util-1.6.3-r0 installed size:
 200 KiB
 
-apr-util-1.6.1-r14 license:
+apr-util-1.6.3-r0 license:
 Apache-2.0
 
 ```
@@ -363,16 +363,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.0.7-r2 description:
+libcrypto3-3.0.8-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.0.7-r2 webpage:
+libcrypto3-3.0.8-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.0.7-r2 installed size:
+libcrypto3-3.0.8-r0 installed size:
 4108 KiB
 
-libcrypto3-3.0.7-r2 license:
+libcrypto3-3.0.8-r0 license:
 Apache-2.0
 
 ```
@@ -516,16 +516,16 @@ custom
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.0.7-r2 description:
+libssl3-3.0.8-r0 description:
 SSL shared libraries
 
-libssl3-3.0.7-r2 webpage:
+libssl3-3.0.8-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.0.7-r2 installed size:
+libssl3-3.0.8-r0 installed size:
 608 KiB
 
-libssl3-3.0.7-r2 license:
+libssl3-3.0.8-r0 license:
 Apache-2.0
 
 ```
@@ -771,16 +771,16 @@ BSD-3-Clause
 ### `apk` package: `python3`
 
 ```console
-python3-3.10.9-r1 description:
+python3-3.10.10-r0 description:
 A high-level scripting language
 
-python3-3.10.9-r1 webpage:
+python3-3.10.10-r0 webpage:
 https://www.python.org/
 
-python3-3.10.9-r1 installed size:
+python3-3.10.10-r0 installed size:
 47 MiB
 
-python3-3.10.9-r1 license:
+python3-3.10.10-r0 license:
 PSF-2.0
 
 ```
