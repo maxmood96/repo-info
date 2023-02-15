@@ -1,10 +1,10 @@
-# `composer:2.2.19`
+# `composer:2.2.20`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d1ba15914c64a8735f5effd4588449205b612e4008fc6f1db449166b04075a64`
-- Created: `2023-02-07T01:25:59.639531572Z`
-- Virtual Size: ~ 192.47 Mb  
+- Image ID: `sha256:c483c6b7f02606bbf497ef78ade6bda19641b7fd8666e06f451381139c782975`
+- Created: `2023-02-11T16:03:42.475197277Z`
+- Virtual Size: ~ 191.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -23,7 +23,7 @@
   - `PHP_SHA256=bdc4aa38e652bac86039601840bae01c0c3653972eaa6f9f93d5f71953a7ee33`
   - `COMPOSER_ALLOW_SUPERUSER=1`
   - `COMPOSER_HOME=/tmp`
-  - `COMPOSER_VERSION=2.2.19`
+  - `COMPOSER_VERSION=2.2.20`
 
 ## `apk` (`.apk`-based packages)
 
@@ -404,16 +404,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.0.7-r2 description:
+libcrypto3-3.0.8-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.0.7-r2 webpage:
+libcrypto3-3.0.8-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.0.7-r2 installed size:
+libcrypto3-3.0.8-r0 installed size:
 4108 KiB
 
-libcrypto3-3.0.7-r2 license:
+libcrypto3-3.0.8-r0 license:
 Apache-2.0
 
 ```
@@ -540,16 +540,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.0.7-r2 description:
+libssl3-3.0.8-r0 description:
 SSL shared libraries
 
-libssl3-3.0.7-r2 webpage:
+libssl3-3.0.8-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.0.7-r2 installed size:
+libssl3-3.0.8-r0 installed size:
 608 KiB
 
-libssl3-3.0.7-r2 license:
+libssl3-3.0.8-r0 license:
 Apache-2.0
 
 ```
@@ -846,16 +846,16 @@ BSD
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.0.7-r2 description:
+openssl-3.0.8-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.0.7-r2 webpage:
+openssl-3.0.8-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.0.7-r2 installed size:
+openssl-3.0.8-r0 installed size:
 868 KiB
 
-openssl-3.0.7-r2 license:
+openssl-3.0.8-r0 license:
 Apache-2.0
 
 ```
@@ -914,16 +914,16 @@ BSD-3-Clause
 ### `apk` package: `python3`
 
 ```console
-python3-3.10.9-r1 description:
+python3-3.10.10-r0 description:
 A high-level scripting language
 
-python3-3.10.9-r1 webpage:
+python3-3.10.10-r0 webpage:
 https://www.python.org/
 
-python3-3.10.9-r1 installed size:
+python3-3.10.10-r0 installed size:
 47 MiB
 
-python3-3.10.9-r1 license:
+python3-3.10.10-r0 license:
 PSF-2.0
 
 ```
