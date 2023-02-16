@@ -1,7 +1,7 @@
 ## `maven:3-eclipse-temurin-17-focal`
 
 ```console
-$ docker pull maven@sha256:ad4b34f02e52164df83182a2a05074b5288d6e6bcc2dfa0ce3d6fa43ec8b557f
+$ docker pull maven@sha256:be0e93ce8dec3f155e21efa41e4cbfed1668a1f25f456f93afc1deb1adfa06c4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -15,14 +15,14 @@ $ docker pull maven@sha256:ad4b34f02e52164df83182a2a05074b5288d6e6bcc2dfa0ce3d6f
 ### `maven:3-eclipse-temurin-17-focal` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:984c69ba4627c1c72eb7e2e1b4e613a08eb238842725a7d55f4785bc08e940ef
+$ docker pull maven@sha256:bde3865f84cb639fc0c415677d8711648116e23d7bf928f477916d23c3bd0d25
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **280.7 MB (280671536 bytes)**  
+-	Total Size: **278.2 MB (278182628 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:896b49b4d0b7079484cf4a8cd3d5a09b9dee63f8a62bfcf997b229b7f93659d3`
+-	Image ID: `sha256:98730bda0d5d18166865e584b23f68cdfbb77b4384465f7374641e6486e004b2`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -55,30 +55,28 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
 # Wed, 01 Feb 2023 18:38:44 GMT
 CMD ["jshell"]
-# Wed, 01 Feb 2023 22:00:44 GMT
-RUN apt-get update     && apt-get install -y git     && rm -rf /var/lib/apt/lists/*
-# Wed, 01 Feb 2023 22:00:44 GMT
-ARG MAVEN_VERSION=3.8.7
-# Wed, 01 Feb 2023 22:00:45 GMT
+# Thu, 16 Feb 2023 00:25:01 GMT
+ARG MAVEN_VERSION=3.9.0
+# Thu, 16 Feb 2023 00:25:01 GMT
 ARG USER_HOME_DIR=/root
-# Wed, 01 Feb 2023 22:00:45 GMT
-ARG SHA=21c2be0a180a326353e8f6d12289f74bc7cd53080305f05358936f3a1b6dd4d91203f4cc799e81761cf5c53c5bbe9dcc13bdb27ec8f57ecf21b2f9ceec3c8d27
-# Wed, 01 Feb 2023 22:00:45 GMT
-ARG BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.7/binaries
-# Wed, 01 Feb 2023 22:00:48 GMT
-# ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.7/binaries MAVEN_VERSION=3.8.7 SHA=21c2be0a180a326353e8f6d12289f74bc7cd53080305f05358936f3a1b6dd4d91203f4cc799e81761cf5c53c5bbe9dcc13bdb27ec8f57ecf21b2f9ceec3c8d27 USER_HOME_DIR=/root
-RUN mkdir -p /usr/share/maven /usr/share/maven/ref   && curl -fsSL -o /tmp/apache-maven.tar.gz ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz   && echo "${SHA}  /tmp/apache-maven.tar.gz" | sha512sum -c -   && tar -xzf /tmp/apache-maven.tar.gz -C /usr/share/maven --strip-components=1   && rm -f /tmp/apache-maven.tar.gz   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Wed, 01 Feb 2023 22:00:48 GMT
+# Thu, 16 Feb 2023 00:25:01 GMT
+ARG SHA=1ea149f4e48bc7b34d554aef86f948eca7df4e7874e30caf449f3708e4f8487c71a5e5c072a05f17c60406176ebeeaf56b5f895090c7346f8238e2da06cf6ecd
+# Thu, 16 Feb 2023 00:25:01 GMT
+ARG BASE_URL=https://downloads.apache.org/maven/maven-3/3.9.0/binaries
+# Thu, 16 Feb 2023 00:25:01 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Wed, 01 Feb 2023 22:00:49 GMT
+# Thu, 16 Feb 2023 00:25:01 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Wed, 01 Feb 2023 22:00:49 GMT
+# Thu, 16 Feb 2023 00:25:18 GMT
+# ARGS: BASE_URL=https://downloads.apache.org/maven/maven-3/3.9.0/binaries MAVEN_VERSION=3.9.0 SHA=1ea149f4e48bc7b34d554aef86f948eca7df4e7874e30caf449f3708e4f8487c71a5e5c072a05f17c60406176ebeeaf56b5f895090c7346f8238e2da06cf6ecd USER_HOME_DIR=/root
+RUN set -x   && apt-get update   && apt-get install -y ca-certificates curl git gnupg dirmngr --no-install-recommends   && rm -rf /var/lib/apt/lists/*   && curl -fsSLO --compressed ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz   && echo "${SHA}  apache-maven-${MAVEN_VERSION}-bin.tar.gz" | sha512sum -c -   && curl -fsSLO --compressed ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz.asc   && export GNUPGHOME="$(mktemp -d)"   && gpg --batch --keyserver hkps://keyserver.ubuntu.com --recv-keys   6A814B1F869C2BBEAB7CB7271A2A1C94BDE89688   29BEA2A645F2D6CED7FB12E02B172E3E156466E8   && gpg --batch --verify apache-maven-${MAVEN_VERSION}-bin.tar.gz.asc apache-maven-${MAVEN_VERSION}-bin.tar.gz   && mkdir -p ${MAVEN_HOME} ${MAVEN_HOME}/ref   && tar -xzf apache-maven-${MAVEN_VERSION}-bin.tar.gz -C ${MAVEN_HOME} --strip-components=1   && (rm -rf "$GNUPGHOME" apache-maven-${MAVEN_VERSION}-bin.tar.gz.asc apache-maven-${MAVEN_VERSION}-bin.tar.gz || true)   && ln -s ${MAVEN_HOME}/bin/mvn /usr/bin/mvn   && apt-get remove --purge --autoremove -y gnupg dirmngr   && mvn --version
+# Thu, 16 Feb 2023 00:25:19 GMT
 COPY file:1b3da5c58894f705e7387946301c0c52edb6271761ea3cd80b86a848847a64cd in /usr/local/bin/mvn-entrypoint.sh 
-# Wed, 01 Feb 2023 22:00:49 GMT
+# Thu, 16 Feb 2023 00:25:19 GMT
 COPY file:2bbb488dd73c55d658b91943cfdf9c26975a320ceafc45dda94c95b03e518ad3 in /usr/share/maven/ref/ 
-# Wed, 01 Feb 2023 22:00:49 GMT
+# Thu, 16 Feb 2023 00:25:19 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Wed, 01 Feb 2023 22:00:49 GMT
+# Thu, 16 Feb 2023 00:25:19 GMT
 CMD ["mvn"]
 ```
 
@@ -99,34 +97,30 @@ CMD ["mvn"]
 		Last Modified: Wed, 01 Feb 2023 18:42:59 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc3ab4515b24e6fe5d66a2833d8584b5dc9919949ca00c62eec1d54162515a60`  
-		Last Modified: Wed, 01 Feb 2023 22:04:53 GMT  
-		Size: 31.2 MB (31202935 bytes)  
+	-	`sha256:a22f4901324f210649ac469358ba5604921142bc832c2f7ccd471ec94ba532e3`  
+		Last Modified: Thu, 16 Feb 2023 00:34:42 GMT  
+		Size: 37.1 MB (37065175 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:495d1ae42cb9c65d3847dab20b6efb39b02451e9f88e64ce2b382f8c38b12335`  
-		Last Modified: Wed, 01 Feb 2023 22:04:49 GMT  
-		Size: 8.4 MB (8351151 bytes)  
+	-	`sha256:8d8e52fe8aaf6ab854877152dbba7b9009da479ff037bfd8f0bbbb2173ef9e4c`  
+		Last Modified: Thu, 16 Feb 2023 00:34:36 GMT  
+		Size: 851.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66b6d86e5b333c03b91c9739ea8e2521b8ef7823cc82bc69f42a7dfa6a4a65b0`  
-		Last Modified: Wed, 01 Feb 2023 22:04:48 GMT  
-		Size: 847.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90062ecd5decc10be8869a1d17bec8f604e20642d2be63232eb317d5291f6ab3`  
-		Last Modified: Wed, 01 Feb 2023 22:04:48 GMT  
-		Size: 360.0 B  
+	-	`sha256:bfbf17d82bd3c1f4030b3ec4ed9ffb319b3d2940160c9ef9acff4e397bfb42ee`  
+		Last Modified: Thu, 16 Feb 2023 00:34:36 GMT  
+		Size: 359.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3-eclipse-temurin-17-focal` - linux; arm variant v7
 
 ```console
-$ docker pull maven@sha256:a0a489d63f98b923b03299e4cc3d7ea08f6ac84056b8afec6320908cda17b4aa
+$ docker pull maven@sha256:f930d5030cb4ca022a6b1f8ddb34acd17b943c81436e1acff6ae20dd9e90918c
 ```
 
 -	Docker Version: 20.10.17
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.2 MB (269177019 bytes)**  
+-	Total Size: **267.1 MB (267059213 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5b48e26508c88f5d5ca7e48078b4e4ed8d2d6e204ad709046bf6f4e75f1f9d39`
+-	Image ID: `sha256:412d5a103f0d60662dc6c9cfa6fe20b88d81e3526f42841adcbb17c2121ea443`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -159,30 +153,28 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
 # Wed, 01 Feb 2023 18:32:43 GMT
 CMD ["jshell"]
-# Wed, 01 Feb 2023 19:47:35 GMT
-RUN apt-get update     && apt-get install -y git     && rm -rf /var/lib/apt/lists/*
-# Wed, 01 Feb 2023 19:47:35 GMT
-ARG MAVEN_VERSION=3.8.7
-# Wed, 01 Feb 2023 19:47:35 GMT
+# Thu, 16 Feb 2023 00:27:31 GMT
+ARG MAVEN_VERSION=3.9.0
+# Thu, 16 Feb 2023 00:27:31 GMT
 ARG USER_HOME_DIR=/root
-# Wed, 01 Feb 2023 19:47:35 GMT
-ARG SHA=21c2be0a180a326353e8f6d12289f74bc7cd53080305f05358936f3a1b6dd4d91203f4cc799e81761cf5c53c5bbe9dcc13bdb27ec8f57ecf21b2f9ceec3c8d27
-# Wed, 01 Feb 2023 19:47:35 GMT
-ARG BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.7/binaries
-# Wed, 01 Feb 2023 19:47:38 GMT
-# ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.7/binaries MAVEN_VERSION=3.8.7 SHA=21c2be0a180a326353e8f6d12289f74bc7cd53080305f05358936f3a1b6dd4d91203f4cc799e81761cf5c53c5bbe9dcc13bdb27ec8f57ecf21b2f9ceec3c8d27 USER_HOME_DIR=/root
-RUN mkdir -p /usr/share/maven /usr/share/maven/ref   && curl -fsSL -o /tmp/apache-maven.tar.gz ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz   && echo "${SHA}  /tmp/apache-maven.tar.gz" | sha512sum -c -   && tar -xzf /tmp/apache-maven.tar.gz -C /usr/share/maven --strip-components=1   && rm -f /tmp/apache-maven.tar.gz   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Wed, 01 Feb 2023 19:47:38 GMT
+# Thu, 16 Feb 2023 00:27:31 GMT
+ARG SHA=1ea149f4e48bc7b34d554aef86f948eca7df4e7874e30caf449f3708e4f8487c71a5e5c072a05f17c60406176ebeeaf56b5f895090c7346f8238e2da06cf6ecd
+# Thu, 16 Feb 2023 00:27:32 GMT
+ARG BASE_URL=https://downloads.apache.org/maven/maven-3/3.9.0/binaries
+# Thu, 16 Feb 2023 00:27:32 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Wed, 01 Feb 2023 19:47:38 GMT
+# Thu, 16 Feb 2023 00:27:32 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Wed, 01 Feb 2023 19:47:38 GMT
+# Thu, 16 Feb 2023 00:27:47 GMT
+# ARGS: BASE_URL=https://downloads.apache.org/maven/maven-3/3.9.0/binaries MAVEN_VERSION=3.9.0 SHA=1ea149f4e48bc7b34d554aef86f948eca7df4e7874e30caf449f3708e4f8487c71a5e5c072a05f17c60406176ebeeaf56b5f895090c7346f8238e2da06cf6ecd USER_HOME_DIR=/root
+RUN set -x   && apt-get update   && apt-get install -y ca-certificates curl git gnupg dirmngr --no-install-recommends   && rm -rf /var/lib/apt/lists/*   && curl -fsSLO --compressed ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz   && echo "${SHA}  apache-maven-${MAVEN_VERSION}-bin.tar.gz" | sha512sum -c -   && curl -fsSLO --compressed ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz.asc   && export GNUPGHOME="$(mktemp -d)"   && gpg --batch --keyserver hkps://keyserver.ubuntu.com --recv-keys   6A814B1F869C2BBEAB7CB7271A2A1C94BDE89688   29BEA2A645F2D6CED7FB12E02B172E3E156466E8   && gpg --batch --verify apache-maven-${MAVEN_VERSION}-bin.tar.gz.asc apache-maven-${MAVEN_VERSION}-bin.tar.gz   && mkdir -p ${MAVEN_HOME} ${MAVEN_HOME}/ref   && tar -xzf apache-maven-${MAVEN_VERSION}-bin.tar.gz -C ${MAVEN_HOME} --strip-components=1   && (rm -rf "$GNUPGHOME" apache-maven-${MAVEN_VERSION}-bin.tar.gz.asc apache-maven-${MAVEN_VERSION}-bin.tar.gz || true)   && ln -s ${MAVEN_HOME}/bin/mvn /usr/bin/mvn   && apt-get remove --purge --autoremove -y gnupg dirmngr   && mvn --version
+# Thu, 16 Feb 2023 00:27:47 GMT
 COPY file:1b3da5c58894f705e7387946301c0c52edb6271761ea3cd80b86a848847a64cd in /usr/local/bin/mvn-entrypoint.sh 
-# Wed, 01 Feb 2023 19:47:38 GMT
+# Thu, 16 Feb 2023 00:27:48 GMT
 COPY file:2bbb488dd73c55d658b91943cfdf9c26975a320ceafc45dda94c95b03e518ad3 in /usr/share/maven/ref/ 
-# Wed, 01 Feb 2023 19:47:38 GMT
+# Thu, 16 Feb 2023 00:27:48 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Wed, 01 Feb 2023 19:47:38 GMT
+# Thu, 16 Feb 2023 00:27:48 GMT
 CMD ["mvn"]
 ```
 
@@ -203,34 +195,30 @@ CMD ["mvn"]
 		Last Modified: Wed, 01 Feb 2023 18:38:05 GMT  
 		Size: 176.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2cf83aabe16a9778da87a3b0024746666b9a96e8b6d8442591c4823f1accac5c`  
-		Last Modified: Wed, 01 Feb 2023 19:50:25 GMT  
-		Size: 27.3 MB (27310067 bytes)  
+	-	`sha256:afd9992b100f2149df86079d68901c564996d453ded2e48e095e789737ed8470`  
+		Last Modified: Thu, 16 Feb 2023 00:32:52 GMT  
+		Size: 33.5 MB (33543389 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c04a36a14b9f703e5a93826f5d4a0d090dffe44f9a2a549fa9b988e584ac0afa`  
-		Last Modified: Wed, 01 Feb 2023 19:50:20 GMT  
-		Size: 8.4 MB (8351130 bytes)  
+	-	`sha256:0074438142b80a4a876ca9c152602a2dc3912abe8e0c669de51e1410f1071686`  
+		Last Modified: Thu, 16 Feb 2023 00:32:46 GMT  
+		Size: 851.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:754be7a3a2da0670e018f3cfcfe54716142239a3193b67508c56d75c957e5823`  
-		Last Modified: Wed, 01 Feb 2023 19:50:19 GMT  
-		Size: 849.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3403be1002e7ca4b8a3bd92269f5940de8b04a362a1a0010cf15c86577ac3996`  
-		Last Modified: Wed, 01 Feb 2023 19:50:19 GMT  
+	-	`sha256:92030a1daf4925c62c5577f8bd0a84d7253a43aebc897f2c5a385315362071b4`  
+		Last Modified: Thu, 16 Feb 2023 00:32:46 GMT  
 		Size: 360.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3-eclipse-temurin-17-focal` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:194e9f263271ce0cb13dd56d52c35f7c7a6a0d89cf0e2af819504d3bd187ae3a
+$ docker pull maven@sha256:8d6c07d4162968bf49be0fc1c8b0593829141a7a06dd13a698a1ce550e7bf066
 ```
 
 -	Docker Version: 20.10.17
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **278.9 MB (278851405 bytes)**  
+-	Total Size: **276.4 MB (276351098 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f1e69d866cab411472f746075106828bc0cd6288caf699c827f6925a0d59335b`
+-	Image ID: `sha256:1a7bdc64499e175e82b0d4e513e90389e929b196f28e4d2a61094bf6c9f739b3`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -263,30 +251,28 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
 # Wed, 01 Feb 2023 18:23:27 GMT
 CMD ["jshell"]
-# Wed, 01 Feb 2023 20:48:32 GMT
-RUN apt-get update     && apt-get install -y git     && rm -rf /var/lib/apt/lists/*
-# Wed, 01 Feb 2023 20:48:32 GMT
-ARG MAVEN_VERSION=3.8.7
-# Wed, 01 Feb 2023 20:48:32 GMT
+# Thu, 16 Feb 2023 00:43:36 GMT
+ARG MAVEN_VERSION=3.9.0
+# Thu, 16 Feb 2023 00:43:36 GMT
 ARG USER_HOME_DIR=/root
-# Wed, 01 Feb 2023 20:48:32 GMT
-ARG SHA=21c2be0a180a326353e8f6d12289f74bc7cd53080305f05358936f3a1b6dd4d91203f4cc799e81761cf5c53c5bbe9dcc13bdb27ec8f57ecf21b2f9ceec3c8d27
-# Wed, 01 Feb 2023 20:48:32 GMT
-ARG BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.7/binaries
-# Wed, 01 Feb 2023 20:48:34 GMT
-# ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.7/binaries MAVEN_VERSION=3.8.7 SHA=21c2be0a180a326353e8f6d12289f74bc7cd53080305f05358936f3a1b6dd4d91203f4cc799e81761cf5c53c5bbe9dcc13bdb27ec8f57ecf21b2f9ceec3c8d27 USER_HOME_DIR=/root
-RUN mkdir -p /usr/share/maven /usr/share/maven/ref   && curl -fsSL -o /tmp/apache-maven.tar.gz ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz   && echo "${SHA}  /tmp/apache-maven.tar.gz" | sha512sum -c -   && tar -xzf /tmp/apache-maven.tar.gz -C /usr/share/maven --strip-components=1   && rm -f /tmp/apache-maven.tar.gz   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Wed, 01 Feb 2023 20:48:34 GMT
+# Thu, 16 Feb 2023 00:43:36 GMT
+ARG SHA=1ea149f4e48bc7b34d554aef86f948eca7df4e7874e30caf449f3708e4f8487c71a5e5c072a05f17c60406176ebeeaf56b5f895090c7346f8238e2da06cf6ecd
+# Thu, 16 Feb 2023 00:43:36 GMT
+ARG BASE_URL=https://downloads.apache.org/maven/maven-3/3.9.0/binaries
+# Thu, 16 Feb 2023 00:43:36 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Wed, 01 Feb 2023 20:48:34 GMT
+# Thu, 16 Feb 2023 00:43:36 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Wed, 01 Feb 2023 20:48:34 GMT
+# Thu, 16 Feb 2023 00:43:50 GMT
+# ARGS: BASE_URL=https://downloads.apache.org/maven/maven-3/3.9.0/binaries MAVEN_VERSION=3.9.0 SHA=1ea149f4e48bc7b34d554aef86f948eca7df4e7874e30caf449f3708e4f8487c71a5e5c072a05f17c60406176ebeeaf56b5f895090c7346f8238e2da06cf6ecd USER_HOME_DIR=/root
+RUN set -x   && apt-get update   && apt-get install -y ca-certificates curl git gnupg dirmngr --no-install-recommends   && rm -rf /var/lib/apt/lists/*   && curl -fsSLO --compressed ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz   && echo "${SHA}  apache-maven-${MAVEN_VERSION}-bin.tar.gz" | sha512sum -c -   && curl -fsSLO --compressed ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz.asc   && export GNUPGHOME="$(mktemp -d)"   && gpg --batch --keyserver hkps://keyserver.ubuntu.com --recv-keys   6A814B1F869C2BBEAB7CB7271A2A1C94BDE89688   29BEA2A645F2D6CED7FB12E02B172E3E156466E8   && gpg --batch --verify apache-maven-${MAVEN_VERSION}-bin.tar.gz.asc apache-maven-${MAVEN_VERSION}-bin.tar.gz   && mkdir -p ${MAVEN_HOME} ${MAVEN_HOME}/ref   && tar -xzf apache-maven-${MAVEN_VERSION}-bin.tar.gz -C ${MAVEN_HOME} --strip-components=1   && (rm -rf "$GNUPGHOME" apache-maven-${MAVEN_VERSION}-bin.tar.gz.asc apache-maven-${MAVEN_VERSION}-bin.tar.gz || true)   && ln -s ${MAVEN_HOME}/bin/mvn /usr/bin/mvn   && apt-get remove --purge --autoremove -y gnupg dirmngr   && mvn --version
+# Thu, 16 Feb 2023 00:43:50 GMT
 COPY file:1b3da5c58894f705e7387946301c0c52edb6271761ea3cd80b86a848847a64cd in /usr/local/bin/mvn-entrypoint.sh 
-# Wed, 01 Feb 2023 20:48:34 GMT
+# Thu, 16 Feb 2023 00:43:50 GMT
 COPY file:2bbb488dd73c55d658b91943cfdf9c26975a320ceafc45dda94c95b03e518ad3 in /usr/share/maven/ref/ 
-# Wed, 01 Feb 2023 20:48:34 GMT
+# Thu, 16 Feb 2023 00:43:50 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Wed, 01 Feb 2023 20:48:34 GMT
+# Thu, 16 Feb 2023 00:43:50 GMT
 CMD ["mvn"]
 ```
 
@@ -307,34 +293,30 @@ CMD ["mvn"]
 		Last Modified: Wed, 01 Feb 2023 18:27:22 GMT  
 		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a9f845586bd5034efea71073b2dd339bceb06ac7c3deaacb6e01ed389cec93b3`  
-		Last Modified: Wed, 01 Feb 2023 20:50:59 GMT  
-		Size: 31.2 MB (31236659 bytes)  
+	-	`sha256:d3ca4c3c35e98ff1585cefee1fdac400244bedf6ec41806160349eac2a1f1d91`  
+		Last Modified: Thu, 16 Feb 2023 00:50:41 GMT  
+		Size: 37.1 MB (37087502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8074a005fc15216348b1c00e941311620be54a5c31e0c8c6932c34eb9d610d8a`  
-		Last Modified: Wed, 01 Feb 2023 20:50:55 GMT  
-		Size: 8.4 MB (8351158 bytes)  
+	-	`sha256:4eac616001eff0246c203e63960e1dd471d456a48db5b1748c8ef65e4f041b78`  
+		Last Modified: Thu, 16 Feb 2023 00:50:37 GMT  
+		Size: 852.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b90f16af90342f489fad6b4cc942bc3827d65f54e148888cab25daf9c686712f`  
-		Last Modified: Wed, 01 Feb 2023 20:50:55 GMT  
-		Size: 850.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3f869c1511984229b63c394ebb111bdcd795ef527097736ef04134935dac3be2`  
-		Last Modified: Wed, 01 Feb 2023 20:50:55 GMT  
-		Size: 358.0 B  
+	-	`sha256:40f50b7beaa70d15e4eeaac0b13ab32ac5b7f4ec902de94c394753c41edd1431`  
+		Last Modified: Thu, 16 Feb 2023 00:50:37 GMT  
+		Size: 364.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3-eclipse-temurin-17-focal` - linux; ppc64le
 
 ```console
-$ docker pull maven@sha256:9e0d5db42512adb29d1a76a4ac99b27230520b23f897b3d9d193e719f292b217
+$ docker pull maven@sha256:7be0acf4ad801a6584a71ba4cf198aaaf621b3c69d237a41cf0f29d07bdc7362
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **293.9 MB (293943500 bytes)**  
+-	Total Size: **290.7 MB (290672857 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:427fee5bb9fa93a4caba9941f1df8e2401475a28f24dff827c1acb1ad2e7cd6c`
+-	Image ID: `sha256:8668a8785c69313ea0950148e6461f18554d066238544d55ba3421095cc0673e`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -367,30 +349,28 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
 # Wed, 01 Feb 2023 18:28:46 GMT
 CMD ["jshell"]
-# Wed, 01 Feb 2023 20:30:32 GMT
-RUN apt-get update     && apt-get install -y git     && rm -rf /var/lib/apt/lists/*
-# Wed, 01 Feb 2023 20:30:34 GMT
-ARG MAVEN_VERSION=3.8.7
-# Wed, 01 Feb 2023 20:30:34 GMT
+# Thu, 16 Feb 2023 00:25:54 GMT
+ARG MAVEN_VERSION=3.9.0
+# Thu, 16 Feb 2023 00:25:54 GMT
 ARG USER_HOME_DIR=/root
-# Wed, 01 Feb 2023 20:30:35 GMT
-ARG SHA=21c2be0a180a326353e8f6d12289f74bc7cd53080305f05358936f3a1b6dd4d91203f4cc799e81761cf5c53c5bbe9dcc13bdb27ec8f57ecf21b2f9ceec3c8d27
-# Wed, 01 Feb 2023 20:30:35 GMT
-ARG BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.7/binaries
-# Wed, 01 Feb 2023 20:30:37 GMT
-# ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.7/binaries MAVEN_VERSION=3.8.7 SHA=21c2be0a180a326353e8f6d12289f74bc7cd53080305f05358936f3a1b6dd4d91203f4cc799e81761cf5c53c5bbe9dcc13bdb27ec8f57ecf21b2f9ceec3c8d27 USER_HOME_DIR=/root
-RUN mkdir -p /usr/share/maven /usr/share/maven/ref   && curl -fsSL -o /tmp/apache-maven.tar.gz ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz   && echo "${SHA}  /tmp/apache-maven.tar.gz" | sha512sum -c -   && tar -xzf /tmp/apache-maven.tar.gz -C /usr/share/maven --strip-components=1   && rm -f /tmp/apache-maven.tar.gz   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Wed, 01 Feb 2023 20:30:37 GMT
+# Thu, 16 Feb 2023 00:25:55 GMT
+ARG SHA=1ea149f4e48bc7b34d554aef86f948eca7df4e7874e30caf449f3708e4f8487c71a5e5c072a05f17c60406176ebeeaf56b5f895090c7346f8238e2da06cf6ecd
+# Thu, 16 Feb 2023 00:25:55 GMT
+ARG BASE_URL=https://downloads.apache.org/maven/maven-3/3.9.0/binaries
+# Thu, 16 Feb 2023 00:25:56 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Wed, 01 Feb 2023 20:30:38 GMT
+# Thu, 16 Feb 2023 00:25:56 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Wed, 01 Feb 2023 20:30:38 GMT
+# Thu, 16 Feb 2023 00:26:35 GMT
+# ARGS: BASE_URL=https://downloads.apache.org/maven/maven-3/3.9.0/binaries MAVEN_VERSION=3.9.0 SHA=1ea149f4e48bc7b34d554aef86f948eca7df4e7874e30caf449f3708e4f8487c71a5e5c072a05f17c60406176ebeeaf56b5f895090c7346f8238e2da06cf6ecd USER_HOME_DIR=/root
+RUN set -x   && apt-get update   && apt-get install -y ca-certificates curl git gnupg dirmngr --no-install-recommends   && rm -rf /var/lib/apt/lists/*   && curl -fsSLO --compressed ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz   && echo "${SHA}  apache-maven-${MAVEN_VERSION}-bin.tar.gz" | sha512sum -c -   && curl -fsSLO --compressed ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz.asc   && export GNUPGHOME="$(mktemp -d)"   && gpg --batch --keyserver hkps://keyserver.ubuntu.com --recv-keys   6A814B1F869C2BBEAB7CB7271A2A1C94BDE89688   29BEA2A645F2D6CED7FB12E02B172E3E156466E8   && gpg --batch --verify apache-maven-${MAVEN_VERSION}-bin.tar.gz.asc apache-maven-${MAVEN_VERSION}-bin.tar.gz   && mkdir -p ${MAVEN_HOME} ${MAVEN_HOME}/ref   && tar -xzf apache-maven-${MAVEN_VERSION}-bin.tar.gz -C ${MAVEN_HOME} --strip-components=1   && (rm -rf "$GNUPGHOME" apache-maven-${MAVEN_VERSION}-bin.tar.gz.asc apache-maven-${MAVEN_VERSION}-bin.tar.gz || true)   && ln -s ${MAVEN_HOME}/bin/mvn /usr/bin/mvn   && apt-get remove --purge --autoremove -y gnupg dirmngr   && mvn --version
+# Thu, 16 Feb 2023 00:26:37 GMT
 COPY file:1b3da5c58894f705e7387946301c0c52edb6271761ea3cd80b86a848847a64cd in /usr/local/bin/mvn-entrypoint.sh 
-# Wed, 01 Feb 2023 20:30:39 GMT
+# Thu, 16 Feb 2023 00:26:38 GMT
 COPY file:2bbb488dd73c55d658b91943cfdf9c26975a320ceafc45dda94c95b03e518ad3 in /usr/share/maven/ref/ 
-# Wed, 01 Feb 2023 20:30:39 GMT
+# Thu, 16 Feb 2023 00:26:39 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Wed, 01 Feb 2023 20:30:39 GMT
+# Thu, 16 Feb 2023 00:26:40 GMT
 CMD ["mvn"]
 ```
 
@@ -411,34 +391,30 @@ CMD ["mvn"]
 		Last Modified: Wed, 01 Feb 2023 18:36:36 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f4e4754cdbf3544d5c21bffae366904cf67b6885dd07c40dda893c37838a1692`  
-		Last Modified: Wed, 01 Feb 2023 20:35:19 GMT  
-		Size: 38.4 MB (38426925 bytes)  
+	-	`sha256:784c83510e0e567200d90dca1cdda640076bbbce7eed749766be85cb23be6598`  
+		Last Modified: Thu, 16 Feb 2023 00:39:14 GMT  
+		Size: 43.5 MB (43507431 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f5d46caf596f252a90a49e8f2b2c174afed706aa6b9002a9c06dd3eb7c7747b6`  
-		Last Modified: Wed, 01 Feb 2023 20:35:09 GMT  
-		Size: 8.4 MB (8351153 bytes)  
+	-	`sha256:5620a502d64fc85d4da17d26d40f5159137ff9ec2e651078e69495b2f404d2dc`  
+		Last Modified: Thu, 16 Feb 2023 00:39:04 GMT  
+		Size: 850.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf4d0408d393b2a785ef88ef425ab9a8c45afe0d1ae99c022d38213635628851`  
-		Last Modified: Wed, 01 Feb 2023 20:35:08 GMT  
-		Size: 851.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7e41e06a4d0cc71d5ffc43462bb345297fd05b845175bdd1da9f6db7901506aa`  
-		Last Modified: Wed, 01 Feb 2023 20:35:08 GMT  
-		Size: 359.0 B  
+	-	`sha256:43c7297fcf80f38a38f042046bd612237b2e1fbb55ba91b0d2a445fd5fb8703f`  
+		Last Modified: Thu, 16 Feb 2023 00:39:04 GMT  
+		Size: 364.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3-eclipse-temurin-17-focal` - linux; s390x
 
 ```console
-$ docker pull maven@sha256:003eff0520f2ac383f55c8a9cc13e748d5427e90c9b0b74315db38b5bc261f32
+$ docker pull maven@sha256:b63748c5f808919a184f1b73b4b62142777110e1056663e37784449d93927cdd
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **265.9 MB (265910553 bytes)**  
+-	Total Size: **263.5 MB (263461304 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:19c78274f1ca7cdcde9b4bb139a72fd8b26ba51dbdf1354dff994e5dd21bdc71`
+-	Image ID: `sha256:24d67c3d74cbe15f9fb716f2b8925ae8c51142d60faa435421080a7a76577593`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -471,30 +447,28 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
 # Wed, 01 Feb 2023 18:04:20 GMT
 CMD ["jshell"]
-# Wed, 01 Feb 2023 19:09:13 GMT
-RUN apt-get update     && apt-get install -y git     && rm -rf /var/lib/apt/lists/*
-# Wed, 01 Feb 2023 19:09:14 GMT
-ARG MAVEN_VERSION=3.8.7
-# Wed, 01 Feb 2023 19:09:14 GMT
+# Thu, 16 Feb 2023 00:46:01 GMT
+ARG MAVEN_VERSION=3.9.0
+# Thu, 16 Feb 2023 00:46:01 GMT
 ARG USER_HOME_DIR=/root
-# Wed, 01 Feb 2023 19:09:14 GMT
-ARG SHA=21c2be0a180a326353e8f6d12289f74bc7cd53080305f05358936f3a1b6dd4d91203f4cc799e81761cf5c53c5bbe9dcc13bdb27ec8f57ecf21b2f9ceec3c8d27
-# Wed, 01 Feb 2023 19:09:14 GMT
-ARG BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.7/binaries
-# Wed, 01 Feb 2023 19:09:24 GMT
-# ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.8.7/binaries MAVEN_VERSION=3.8.7 SHA=21c2be0a180a326353e8f6d12289f74bc7cd53080305f05358936f3a1b6dd4d91203f4cc799e81761cf5c53c5bbe9dcc13bdb27ec8f57ecf21b2f9ceec3c8d27 USER_HOME_DIR=/root
-RUN mkdir -p /usr/share/maven /usr/share/maven/ref   && curl -fsSL -o /tmp/apache-maven.tar.gz ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz   && echo "${SHA}  /tmp/apache-maven.tar.gz" | sha512sum -c -   && tar -xzf /tmp/apache-maven.tar.gz -C /usr/share/maven --strip-components=1   && rm -f /tmp/apache-maven.tar.gz   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Wed, 01 Feb 2023 19:09:24 GMT
+# Thu, 16 Feb 2023 00:46:01 GMT
+ARG SHA=1ea149f4e48bc7b34d554aef86f948eca7df4e7874e30caf449f3708e4f8487c71a5e5c072a05f17c60406176ebeeaf56b5f895090c7346f8238e2da06cf6ecd
+# Thu, 16 Feb 2023 00:46:01 GMT
+ARG BASE_URL=https://downloads.apache.org/maven/maven-3/3.9.0/binaries
+# Thu, 16 Feb 2023 00:46:01 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Wed, 01 Feb 2023 19:09:24 GMT
+# Thu, 16 Feb 2023 00:46:02 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Wed, 01 Feb 2023 19:09:24 GMT
+# Thu, 16 Feb 2023 00:46:24 GMT
+# ARGS: BASE_URL=https://downloads.apache.org/maven/maven-3/3.9.0/binaries MAVEN_VERSION=3.9.0 SHA=1ea149f4e48bc7b34d554aef86f948eca7df4e7874e30caf449f3708e4f8487c71a5e5c072a05f17c60406176ebeeaf56b5f895090c7346f8238e2da06cf6ecd USER_HOME_DIR=/root
+RUN set -x   && apt-get update   && apt-get install -y ca-certificates curl git gnupg dirmngr --no-install-recommends   && rm -rf /var/lib/apt/lists/*   && curl -fsSLO --compressed ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz   && echo "${SHA}  apache-maven-${MAVEN_VERSION}-bin.tar.gz" | sha512sum -c -   && curl -fsSLO --compressed ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz.asc   && export GNUPGHOME="$(mktemp -d)"   && gpg --batch --keyserver hkps://keyserver.ubuntu.com --recv-keys   6A814B1F869C2BBEAB7CB7271A2A1C94BDE89688   29BEA2A645F2D6CED7FB12E02B172E3E156466E8   && gpg --batch --verify apache-maven-${MAVEN_VERSION}-bin.tar.gz.asc apache-maven-${MAVEN_VERSION}-bin.tar.gz   && mkdir -p ${MAVEN_HOME} ${MAVEN_HOME}/ref   && tar -xzf apache-maven-${MAVEN_VERSION}-bin.tar.gz -C ${MAVEN_HOME} --strip-components=1   && (rm -rf "$GNUPGHOME" apache-maven-${MAVEN_VERSION}-bin.tar.gz.asc apache-maven-${MAVEN_VERSION}-bin.tar.gz || true)   && ln -s ${MAVEN_HOME}/bin/mvn /usr/bin/mvn   && apt-get remove --purge --autoremove -y gnupg dirmngr   && mvn --version
+# Thu, 16 Feb 2023 00:46:28 GMT
 COPY file:1b3da5c58894f705e7387946301c0c52edb6271761ea3cd80b86a848847a64cd in /usr/local/bin/mvn-entrypoint.sh 
-# Wed, 01 Feb 2023 19:09:24 GMT
+# Thu, 16 Feb 2023 00:46:28 GMT
 COPY file:2bbb488dd73c55d658b91943cfdf9c26975a320ceafc45dda94c95b03e518ad3 in /usr/share/maven/ref/ 
-# Wed, 01 Feb 2023 19:09:24 GMT
+# Thu, 16 Feb 2023 00:46:29 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Wed, 01 Feb 2023 19:09:25 GMT
+# Thu, 16 Feb 2023 00:46:29 GMT
 CMD ["mvn"]
 ```
 
@@ -515,19 +489,15 @@ CMD ["mvn"]
 		Last Modified: Wed, 01 Feb 2023 18:08:26 GMT  
 		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c182e2bb66424b663c9565305cf60419b77c7ff33b41aeaaad44a3ab87a1f53a`  
-		Last Modified: Wed, 01 Feb 2023 19:12:35 GMT  
-		Size: 30.7 MB (30722032 bytes)  
+	-	`sha256:4154c257fff88d8dc768523d11bacc1d6be46f725548990d868d1b067de4df50`  
+		Last Modified: Thu, 16 Feb 2023 00:52:19 GMT  
+		Size: 36.6 MB (36623945 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:344ad72e2cef5a05d0d5cb076e5460438ec5f099b0bca9c65068cf50e7979170`  
-		Last Modified: Wed, 01 Feb 2023 19:12:31 GMT  
-		Size: 8.4 MB (8351160 bytes)  
+	-	`sha256:d8fcb60d152f796fc9f546355fa3080c25edd2d13ae95cda45de9bbc06d223eb`  
+		Last Modified: Thu, 16 Feb 2023 00:52:15 GMT  
+		Size: 850.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2a451d143e1f1a4c2843ddce10855041ee772603b2d036cad7cda1e713705511`  
-		Last Modified: Wed, 01 Feb 2023 19:12:31 GMT  
-		Size: 851.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:04666cf9ec90444e79bcdc8530e6e9c5431b2c4d919bd99814b778a8e7c07ea6`  
-		Last Modified: Wed, 01 Feb 2023 19:12:31 GMT  
-		Size: 362.0 B  
+	-	`sha256:009690730d5544a85a3f94ad6ebd67c44a111ca9bc36ae4df15f873ea1adadbe`  
+		Last Modified: Thu, 16 Feb 2023 00:52:15 GMT  
+		Size: 361.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
