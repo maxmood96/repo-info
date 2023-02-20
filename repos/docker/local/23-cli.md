@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:06f9fee69b9731e4843f9415f9e087c42ec19a924c144ffe5cc78a7d136a40e0`
-- Created: `2023-02-11T04:50:25.787444141Z`
+- Image ID: `sha256:2c56f59ab776c03c289ca288ce2bf621ada0be521accf1ccc4bc08ba7b884968`
+- Created: `2023-02-17T19:25:54.34351162Z`
 - Virtual Size: ~ 144.03 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,7 +12,7 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `DOCKER_VERSION=23.0.1`
-  - `DOCKER_BUILDX_VERSION=0.10.2`
+  - `DOCKER_BUILDX_VERSION=0.10.3`
   - `DOCKER_COMPOSE_VERSION=2.16.0`
   - `DOCKER_TLS_CERTDIR=/certs`
 

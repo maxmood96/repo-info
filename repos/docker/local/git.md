@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8d1f8df52014ac6195f5afd7ce8a549b9b5d17ac24e4059becda5b55141ebdfb`
-- Created: `2023-02-11T04:50:49.888260847Z`
-- Virtual Size: ~ 152.36 Mb  
+- Image ID: `sha256:98e18e7e6ae8e182e961b297f85ae2814235dafe557cc94d0d3b1843a40cded0`
+- Created: `2023-02-17T19:26:16.975733651Z`
+- Virtual Size: ~ 152.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -12,7 +12,7 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `DOCKER_VERSION=23.0.1`
-  - `DOCKER_BUILDX_VERSION=0.10.2`
+  - `DOCKER_BUILDX_VERSION=0.10.3`
   - `DOCKER_COMPOSE_VERSION=2.16.0`
   - `DOCKER_TLS_CERTDIR=/certs`
 
@@ -174,16 +174,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `git`
 
 ```console
-git-2.38.3-r1 description:
+git-2.38.4-r0 description:
 Distributed version control system
 
-git-2.38.3-r1 webpage:
+git-2.38.4-r0 webpage:
 https://www.git-scm.com/
 
-git-2.38.3-r1 installed size:
+git-2.38.4-r0 installed size:
 6068 KiB
 
-git-2.38.3-r1 license:
+git-2.38.4-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -242,16 +242,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.87.0-r1 description:
+libcurl-7.87.0-r2 description:
 The multiprotocol file transfer library
 
-libcurl-7.87.0-r1 webpage:
+libcurl-7.87.0-r2 webpage:
 https://curl.se/
 
-libcurl-7.87.0-r1 installed size:
+libcurl-7.87.0-r2 installed size:
 540 KiB
 
-libcurl-7.87.0-r1 license:
+libcurl-7.87.0-r2 license:
 curl
 
 ```
