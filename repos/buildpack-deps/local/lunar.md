@@ -1001,14 +1001,9 @@ Licenses: (parsed from: `/usr/share/doc/cpp-12/copyright`, `/usr/share/doc/g++-1
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-12=12.2.0-14ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.2.0-14ubuntu1.dsc' gcc-12_12.2.0-14ubuntu1.dsc 27838 SHA512:ddfd9a162ad9c7a20fb9b2bce04c46c5b965817d7bbbecc3b8e05d99eee284cdeb1a4beb47772327ab7ff2556a0e8df284e382e2a0d1ffab39b1c48b5b7623e2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.2.0.orig.tar.gz' gcc-12_12.2.0.orig.tar.gz 91338630 SHA512:f614d673deaf6d586993be859052930db80dbbb030bc0a14d3e3517788262db8ad1ff3e992a68198195b3b283207d96720e2196d3556cf1f4788ed106f62e48e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.2.0-14ubuntu1.debian.tar.xz' gcc-12_12.2.0-14ubuntu1.debian.tar.xz 1666640 SHA512:0e24364541e11fe557879eafc84fff3d249586a4151e742436731c9f7357bb999d7a39bf03fe4ecf764459f6ffbc3242f08665b0c55a5cb922040fd50f9aab0f
-```
 
 ### `dpkg` source package: `gcc-defaults=1.201ubuntu1`
 
@@ -1022,13 +1017,9 @@ Licenses: (parsed from: `/usr/share/doc/cpp/copyright`, `/usr/share/doc/g++/copy
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-defaults=1.201ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-defaults/gcc-defaults_1.201ubuntu1.dsc' gcc-defaults_1.201ubuntu1.dsc 14346 SHA512:de751951be95203439dd7c28acdc56ca5e47c4d49e15f1edd67c9c43298aa4568f9fc555b07c3f5352bbf2330a0d3f6ed005debc4d64629299089a62df392d2e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-defaults/gcc-defaults_1.201ubuntu1.tar.xz' gcc-defaults_1.201ubuntu1.tar.xz 48144 SHA512:5927c98f60b2d3a72071b33c433951cc4c113e48e0e37ffa2a97544c5c5f7bb03c4bb1108310879edbf886857709e67f812861516578028e20c745ebe132dd06
-```
 
 ### `dpkg` source package: `gdbm=1.23-3`
 
