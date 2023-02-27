@@ -1,10 +1,10 @@
-# `nextcloud:24.0.9-fpm`
+# `nextcloud:24.0.10-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:411b9aec751e573a3d44aff7e0243272149472e6d6e7fc55f38f9029f36af345`
-- Created: `2023-02-15T02:09:52.585599291Z`
-- Virtual Size: ~ 887.00 Mb  
+- Image ID: `sha256:d81de27e80cef82337877ce976a4fe4a0d3af0e5785465358b7d8b201f77c441`
+- Created: `2023-02-24T02:24:23.682383857Z`
+- Virtual Size: ~ 887.54 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -23,7 +23,7 @@
   - `PHP_SHA256=5e07278a1f315a67d36a676c01343ca2d4da5ec5bdb15d018e4248b3012bc0cd`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
-  - `NEXTCLOUD_VERSION=24.0.9`
+  - `NEXTCLOUD_VERSION=24.0.10`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -4109,21 +4109,13 @@ Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.2.0-1+deb11u3
-'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.2.0-1%2bdeb11u3.dsc' tiff_4.2.0-1+deb11u3.dsc 2116 SHA256:75db70950d4b814e5a66ff7ba7869a6925c0c2db9c77f4d0dddc2c3334bb7073
-'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.2.0.orig.tar.gz' tiff_4.2.0.orig.tar.gz 2809373 SHA256:eb0484e568ead8fa23b513e9b0041df7e327f4ee2d22db5a533929dfc19633cb
-'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.2.0.orig.tar.gz.asc' tiff_4.2.0.orig.tar.gz.asc 228 SHA256:119bb62934603ff4d3cd81c739d11904b28812a860773b9b2268cc96a339b14f
-'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.2.0-1%2bdeb11u3.debian.tar.xz' tiff_4.2.0-1+deb11u3.debian.tar.xz 38260 SHA256:249ae64ad51bb7650c0076ba931cbe4b725d542921f270c825b5540ce41966cb
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tiff/4.2.0-1+deb11u3/
 
-- https://sources.debian.net/src/tiff/4.2.0-1+deb11u3/ (for browsing the source)
-- https://sources.debian.net/src/tiff/4.2.0-1+deb11u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tiff/4.2.0-1+deb11u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tzdata=2021a-1+deb11u8`
 
