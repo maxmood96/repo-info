@@ -4,7 +4,7 @@
 
 - Image ID: `sha256:e32ad70784035ddea0808eeb76e7f8a6bc64e2cb867b63c6513f8f4e853f1133`
 - Created: `2023-02-11T14:05:33.519512811Z`
-- Virtual Size: ~ 140.66 Mb  
+- Virtual Size: ~ 140.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
