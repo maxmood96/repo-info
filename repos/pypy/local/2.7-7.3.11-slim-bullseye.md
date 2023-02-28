@@ -4,7 +4,7 @@
 
 - Image ID: `sha256:5f537ada82bc6ac5b01640d52c0ce4a367dbb58287268a68d88dd0df9f9bbbfa`
 - Created: `2023-02-09T15:01:25.467211806Z`
-- Virtual Size: ~ 205.73 Mb  
+- Virtual Size: ~ 205.75 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["pypy"]`
