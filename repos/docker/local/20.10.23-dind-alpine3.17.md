@@ -4,7 +4,7 @@
 
 - Image ID: `sha256:4d52b157278521b647847b1f573d67b6b1858535f04414cd8b5f492fc31ec677`
 - Created: `2023-02-17T19:26:38.026732205Z`
-- Virtual Size: ~ 327.27 Mb  
+- Virtual Size: ~ 327.29 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
