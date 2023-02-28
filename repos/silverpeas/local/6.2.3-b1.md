@@ -7578,14 +7578,9 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-11-jdk/copyright`, `/usr/share/d
 - `LGPL-2`
 - `LGPL-2-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjdk-lts=11.0.17+8-1ubuntu2~20.04
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.17%2b8-1ubuntu2%7e20.04.dsc' openjdk-lts_11.0.17+8-1ubuntu2~20.04.dsc 4717 SHA512:639c014be9994a58aeafeae069a185b436cf819aac8a1624cee09a2c74fc4002f196ab0d2fc8c4e4bf2be91b1e9e614081aab334424bdb3cad5537b450b0f6fe
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.17%2b8.orig.tar.xz' openjdk-lts_11.0.17+8.orig.tar.xz 76196440 SHA512:424ec873e0ff77f7dfd355fc01a19a10ab99435f89f802106300c877d7b90523b83ed2937f0db27c26ee989c6e38e8848ed424815aab2f80a754f8e1acbc7c77
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.17%2b8-1ubuntu2%7e20.04.debian.tar.xz' openjdk-lts_11.0.17+8-1ubuntu2~20.04.debian.tar.xz 170416 SHA512:afab854c99668c7dc3c5f03dab7f051b7b1aa93a5471250d0b726f21304ab97fe736764d08982a6462854d3206f79b57fe053e9f3330ed9042099c663abfdb6d
-```
 
 ### `dpkg` source package: `openjpeg2=2.3.1-1ubuntu4.20.04.1`
 
