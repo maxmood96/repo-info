@@ -4,7 +4,7 @@
 
 - Image ID: `sha256:0965028e3434e3de545e87e7c4a86c993d22f4ad8e424aeaacc3f4a9ffef12f4`
 - Created: `2023-02-11T04:45:41.535796562Z`
-- Virtual Size: ~ 211.51 Mb  
+- Virtual Size: ~ 211.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/bin/as-tini-static","-r","SIGUSR1","-t","SIGTERM","--","/entrypoint.sh"]`
