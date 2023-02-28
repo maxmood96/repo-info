@@ -4,7 +4,7 @@
 
 - Image ID: `sha256:6b6c7eea29cb84d06b014c1c4e1e02c00bc3ab3e457f05931bf7f2528b8101d5`
 - Created: `2023-02-09T12:08:56.664582766Z`
-- Virtual Size: ~ 172.60 Mb  
+- Virtual Size: ~ 172.63 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["perl5.36.0","-de0"]`
