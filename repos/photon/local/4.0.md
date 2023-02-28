@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2031ec414a01c359d8e82bdb30b946ad93874252b8325aca32f6ef5fa221b9c0`
-- Created: `2023-02-21T20:33:34.802135824Z`
+- Image ID: `sha256:8f7dfd6d442d23098f573e13fac84d8e9d4a96174371b2c0170dbedaf8cfc196`
+- Created: `2023-02-28T01:28:49.544488953Z`
 - Virtual Size: ~ 37.09 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 - Labels:
-  - `build-date=20230218`
+  - `build-date=20230227`
   - `name=Photon OS x86_64/4.0 Base Image`
   - `vendor=VMware`
 
@@ -155,7 +155,7 @@ Licenses (from `rpm --query`): MPLv2.0
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `openssl-3.0.7-4.ph4.x86_64`
+### `rpm` package: `openssl-3.0.7-5.ph4.x86_64`
 
 Licenses (from `rpm --query`): OpenSSL
 
@@ -209,7 +209,7 @@ Licenses (from `rpm --query`): LGPLv2.1,GPLv2
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `toybox-0.8.6-3.ph4.x86_64`
+### `rpm` package: `toybox-0.8.6-4.ph4.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
