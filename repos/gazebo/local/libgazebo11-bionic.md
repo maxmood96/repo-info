@@ -729,14 +729,9 @@ Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.58.0-2ubuntu3.22
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0-2ubuntu3.22.dsc' curl_7.58.0-2ubuntu3.22.dsc 2781 SHA512:eba8b82632c96ac7bc3ced335d1c39d413d86b2de9522e19d3bef3d0060cd06142185b18499da943a4615708c0c96981f93f61694109effbf865138971aaa04d
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0.orig.tar.gz' curl_7.58.0.orig.tar.gz 3879728 SHA512:7b12b79107558bb266672d6e128615fe5a8149c37f4ae540197e3298f5d312beb2d78fbb23e3ea84ea7afc41549898a1e5cd38509f0388b11707b48d5efb8ca3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.58.0-2ubuntu3.22.debian.tar.xz' curl_7.58.0-2ubuntu3.22.debian.tar.xz 74080 SHA512:b491fe118af4d8a3b44c1a80bd4a8dd2ccb4b950e4e4413b685a080c3521bfa030d208b8684d429c013fb503dc3f6583bde0f2749ebbb42950c1e8681eb09216
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3ubuntu2.4`
 
@@ -5428,14 +5423,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nss=2:3.35-2ubuntu2.15
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.35-2ubuntu2.15.dsc' nss_3.35-2ubuntu2.15.dsc 2354 SHA512:ee4665a883b43c503c4263d4874577202b12f4a1623ef3b4dce69a691d59eb372f974022f68f750dce41a70719a03b77add06687ad906e9e3b9f06bb50e202b7
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.35.orig.tar.gz' nss_3.35.orig.tar.gz 9620041 SHA512:8d466f4602427d278b6aa28af0e6bdb99326fc40c94ac6d517d1cbe7ce6b9332dadba52ea092762fac2fd6e72f17cb880cf81e1cf86bf6b4f7913a755419626d
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.35-2ubuntu2.15.debian.tar.xz' nss_3.35-2ubuntu2.15.debian.tar.xz 221648 SHA512:a57148832b32d25b2ea5adba76f38253810f0d0c07fc38a1bf233a6f7c1f68a7258a535ae96ce76e1699d94b6013024a9d6e71fce7b62cc1c87f8217e02621f4
-```
 
 ### `dpkg` source package: `numactl=2.0.11-2.1ubuntu0.1`
 
