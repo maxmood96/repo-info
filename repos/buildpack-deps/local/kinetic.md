@@ -4,7 +4,7 @@
 
 - Image ID: `sha256:3c9ffcea5f1bfb263a26234b8ad41d79b047fde2acbf3c33f0f64f7d3e7a27f0`
 - Created: `2023-01-31T17:55:33.466997437Z`
-- Virtual Size: ~ 759.08 Mb  
+- Virtual Size: ~ 759.12 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -493,15 +493,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.85.0-1ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.85.0-1ubuntu0.2.dsc' curl_7.85.0-1ubuntu0.2.dsc 3070 SHA512:38c88e3b57015c76b1cd85ed125e483e6dfbd56b94dbda80e507e34b2f1042147f8994c4a54e55ffdaa452149b084e2f8717863a4b3c00fb564ba04325ff965a
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.85.0.orig.tar.gz' curl_7.85.0.orig.tar.gz 4182153 SHA512:bbad693bcde9c55e5942499950d76011f53ad43d3270eee2c8db486bcf46f5fc92b32dd8752caf4c5976fe493d083e2d34fa299cb96fb8e76d8f5fcc2cc56a36
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.85.0.orig.tar.gz.asc' curl_7.85.0.orig.tar.gz.asc 488 SHA512:2816f15dea2f564baae13e63bcb2881af4297f44b529631f1dc18839f2ada0a085e3033dfc177246a9f8229c7e0e4d28f41c12640544f047ddca6cebe38a63a7
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.85.0-1ubuntu0.2.debian.tar.xz' curl_7.85.0-1ubuntu0.2.debian.tar.xz 41644 SHA512:0117de07c8ee0a6375c61c84c26130704b492e6d8c119a661b2a0f31e47da3ee59c5d67ebbda5ee06354992390f2f0c1709f8a0fd375168b33b04a9cfa8dd619
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg-6ubuntu2`
 
@@ -1535,14 +1529,9 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `TatcherUlrichPublicDomain`
 - `aclocal`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:6.9.11.60+dfsg-1.3ubuntu0.22.10.1
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/imagemagick/imagemagick_6.9.11.60%2bdfsg-1.3ubuntu0.22.10.1.dsc' imagemagick_6.9.11.60+dfsg-1.3ubuntu0.22.10.1.dsc 5083 SHA512:2815d5720d16f7ed7fb4af7379ab9aa05acbe219b10cda10c5ab7d98f127938548d00acef5202abe3f89caddcea3892ca971bedea51921977037863a7faf0fa6
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/imagemagick/imagemagick_6.9.11.60%2bdfsg.orig.tar.xz' imagemagick_6.9.11.60+dfsg.orig.tar.xz 9395144 SHA512:345a23eda96516fc7a213bd4a322bca4c8b690efe40ff7b498a448f8cedd7f0d600fae2cb6fff45bc995779a90d8c04b58288273eee97833ddebb4f9f2a3d14c
-'http://archive.ubuntu.com/ubuntu/pool/universe/i/imagemagick/imagemagick_6.9.11.60%2bdfsg-1.3ubuntu0.22.10.1.debian.tar.xz' imagemagick_6.9.11.60+dfsg-1.3ubuntu0.22.10.1.debian.tar.xz 253468 SHA512:1650dd292af3c670e5832f11fd62cce2afd737263e6394764c5a82e5a1840f7d9521817c418020adfc425144d5d21701de978248165d6727a55c5fa6b7b0291e
-```
 
 ### `dpkg` source package: `imath=3.1.5-1ubuntu2`
 

@@ -4,7 +4,7 @@
 
 - Image ID: `sha256:0a378bfcf3067410dc87bed8f89e0c492ceb4927beca11af10ffc6f972865637`
 - Created: `2023-01-31T17:52:56.987398082Z`
-- Virtual Size: ~ 218.96 Mb  
+- Virtual Size: ~ 218.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -337,15 +337,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.85.0-1ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.85.0-1ubuntu0.2.dsc' curl_7.85.0-1ubuntu0.2.dsc 3070 SHA512:38c88e3b57015c76b1cd85ed125e483e6dfbd56b94dbda80e507e34b2f1042147f8994c4a54e55ffdaa452149b084e2f8717863a4b3c00fb564ba04325ff965a
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.85.0.orig.tar.gz' curl_7.85.0.orig.tar.gz 4182153 SHA512:bbad693bcde9c55e5942499950d76011f53ad43d3270eee2c8db486bcf46f5fc92b32dd8752caf4c5976fe493d083e2d34fa299cb96fb8e76d8f5fcc2cc56a36
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.85.0.orig.tar.gz.asc' curl_7.85.0.orig.tar.gz.asc 488 SHA512:2816f15dea2f564baae13e63bcb2881af4297f44b529631f1dc18839f2ada0a085e3033dfc177246a9f8229c7e0e4d28f41c12640544f047ddca6cebe38a63a7
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.85.0-1ubuntu0.2.debian.tar.xz' curl_7.85.0-1ubuntu0.2.debian.tar.xz 41644 SHA512:0117de07c8ee0a6375c61c84c26130704b492e6d8c119a661b2a0f31e47da3ee59c5d67ebbda5ee06354992390f2f0c1709f8a0fd375168b33b04a9cfa8dd619
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg-6ubuntu2`
 

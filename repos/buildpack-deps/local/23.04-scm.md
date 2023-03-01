@@ -4,7 +4,7 @@
 
 - Image ID: `sha256:90cccf588560d124231ebdcf5f275b4e27dbb214d9bf110989c70b375d2885f9`
 - Created: `2023-02-01T18:13:14.973065425Z`
-- Virtual Size: ~ 221.34 Mb  
+- Virtual Size: ~ 221.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -779,14 +779,9 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.7.8-4ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.8-4ubuntu1.dsc' gnutls28_3.7.8-4ubuntu1.dsc 3302 SHA512:75fcd71e66fac26fcb83d088f1b4bf9645cc50931710a2e3cc95cfd9b427ecfb3bbfe61a4e49300bf5fe6cc7162a115b053bfa3f26ecebb67b8077386a106a55
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.8.orig.tar.xz' gnutls28_3.7.8.orig.tar.xz 6029220 SHA512:4199bcf7c9e3aab2f52266aadceefc563dfe2d938d0ea1f3ec3be95d66f4a8c8e5494d3a800c03dd02ad386dec1738bd63e1fe0d8b394a2ccfc7d6c6a0cc9359
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.8-4ubuntu1.debian.tar.xz' gnutls28_3.7.8-4ubuntu1.debian.tar.xz 87864 SHA512:5aa4280951cfc7dcbd88fece03d7b6a491fbf2c4ecad70401519a6ae65663174469e6b64503e422de8099d6813b19d978fb09be3282b04a6c3aca22adde0ec99
-```
 
 ### `dpkg` source package: `grep=3.8-3`
 
@@ -1009,14 +1004,9 @@ Licenses: (parsed from: `/usr/share/doc/libcap2/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libcap2=1:2.44-1build3
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.44-1build3.dsc' libcap2_2.44-1build3.dsc 2311 SHA512:30fa503d6bffa093ceafc07a26f48b88da855c2957bc0bce99f83461dbf7e656b0460d58752eb60a3699c1c250e6135bb086461af5e3734f1802adbbd5d39be2
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.44.orig.tar.xz' libcap2_2.44.orig.tar.xz 125568 SHA512:1bb323ca362923bd6bd0e2e4639cf8726975165a620a243b31e797056439eb7efb2bfbc8e5521636783a86c7415b2037b1638c98747b79183ca7d3d42a04ff20
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.44-1build3.debian.tar.xz' libcap2_2.44-1build3.debian.tar.xz 21312 SHA512:b1c5c20092fe0cb13318f84e585ea9095dd552332a23c8d3162ca1013f02f3b16f7c5a94d407ef88aee62aadfa1f50e67959a3f5206653a801af878f8d89ce24
-```
 
 ### `dpkg` source package: `libcbor=0.8.0-2ubuntu1`
 
@@ -1327,15 +1317,9 @@ Licenses: (parsed from: `/usr/share/doc/libselinux1/copyright`)
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libselinux=3.4-1build2
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.4-1build2.dsc' libselinux_3.4-1build2.dsc 2908 SHA512:71c0a43cabbc70ab6d82c6e3e888a99c1b7d338c9c9975f12b6d42e979b0f33554f575a846fe1144c4e0f923f38bb452ecf1fa79e0db293b166b7b5f6be81ad1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.4.orig.tar.gz' libselinux_3.4.orig.tar.gz 210061 SHA512:7ffa6d2159d2333d836bde3f75dfc78a278283b66ae1e441c178371adb6f463aa6f2d62439079e2068d1135c39dd2b367b001d917c0bdc6871a73630919ef81e
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.4.orig.tar.gz.asc' libselinux_3.4.orig.tar.gz.asc 833 SHA512:de1e0431cbf8526c4de77e1ebe9fa40111ea4a0e71d6b0e9ec6c975b61f4090ec5df4386af362bbd5cc8faffb24c21febc13356fe081df642bbfa52010a00ba0
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.4-1build2.debian.tar.xz' libselinux_3.4-1build2.debian.tar.xz 29552 SHA512:70da4dc9544bf7ced7d8c8adeca641aab4b67f3413f557c442067cd592e1ac86f0911957d857f4ee7f01158bcf3af6306d43f53c9f8ce5eac148403bd0a938ee
-```
 
 ### `dpkg` source package: `libsemanage=3.4-1build2`
 
@@ -1349,15 +1333,9 @@ Licenses: (parsed from: `/usr/share/doc/libsemanage-common/copyright`, `/usr/sha
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libsemanage=3.4-1build2
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_3.4-1build2.dsc' libsemanage_3.4-1build2.dsc 2944 SHA512:d199df3d41f9e849de642aaf9a1a4afd61e275a3d3a53ec813d2edfefb0d5f4b827195c3b25a8d73b8f30e4f4195d8891fe6aba306f3ccec5390862d03ab171b
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_3.4.orig.tar.gz' libsemanage_3.4.orig.tar.gz 185177 SHA512:831dc789545bb9a0b009bdb4f7fe52f6197ad8325946640f886a960d08e40b8a69eccd5a70cce51466bb5cb7f742feb78d19a9ec63383fbd03aa451508677e73
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_3.4.orig.tar.gz.asc' libsemanage_3.4.orig.tar.gz.asc 833 SHA512:42da56fe008c7b18ea8834f6ae0535e78fb5f94a826a2beef6c8fbde480fd5d0f87a7969e98ded3281f7b76b594e71c466c7630a85536d07a6550d163390fc49
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsemanage/libsemanage_3.4-1build2.debian.tar.xz' libsemanage_3.4-1build2.debian.tar.xz 23376 SHA512:5bd45ac68a420ebc2532d920abbfbbf8eb4fb4a982a3abe9e08c69fdd59dc27c2ea6e0075f1097aa59ec94ffeb1b9cd5d9384d0dd6eaa66de604b8be6e2554f5
-```
 
 ### `dpkg` source package: `libsepol=3.4-2`
 
