@@ -1,7 +1,7 @@
 ## `buildpack-deps:lunar-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:9ace54436cdec9152b0839a7af0cfe9f725755d438359ed1470cba38ed9d02e9
+$ docker pull buildpack-deps@sha256:f1e3051d65bd5ac55c65d52254eba29ff0f754b0e6bced73d7224f3e8ea2e3bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -61,14 +61,14 @@ RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get 
 ### `buildpack-deps:lunar-curl` - linux; arm variant v7
 
 ```console
-$ docker pull buildpack-deps@sha256:2e38147c158f4723d810c94f9c5585da94ed068f17d4d06b4abe8f38874cf5d4
+$ docker pull buildpack-deps@sha256:83263b17a9332b259200af03feb6a20687800485d75e356abdd7e5b2fbb00e5e
 ```
 
--	Docker Version: 20.10.17
+-	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **35.6 MB (35561187 bytes)**  
+-	Total Size: **34.7 MB (34746738 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8bb92e7aab0a27f9435a181a5a388d63eef4086181731fef1a5e4f0a38886a42`
+-	Image ID: `sha256:27f4d40d7a0e65028a158d83cba12d690f50604a982fdde14ea99f2ce6fdf4f3`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -84,24 +84,24 @@ LABEL org.opencontainers.image.version=23.04
 ADD file:c0ac354f01ba9deb72bda06f4368650e0cc3ad5c3425ce0eb452561b56a1734a in / 
 # Sat, 28 Jan 2023 05:11:32 GMT
 CMD ["/bin/bash"]
-# Wed, 01 Feb 2023 18:13:52 GMT
+# Wed, 01 Mar 2023 03:01:08 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 01 Feb 2023 18:14:11 GMT
+# Wed, 01 Mar 2023 03:01:27 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 ```
 
 -	Layers:
-	-	`sha256:d5da433af6033dbafbd06b385628e9516c4e68f26b3e09ac710befdeb3a21c55`  
-		Last Modified: Wed, 01 Feb 2023 18:23:26 GMT  
-		Size: 25.9 MB (25902523 bytes)  
+	-	`sha256:2cf733a376b355703d852c37fb66314a9d27adeb140641f229bd7d5b089c8ef7`  
+		Last Modified: Sat, 28 Jan 2023 05:21:37 GMT  
+		Size: 25.1 MB (25086001 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:72a9288604837433806af8122eb9622790f736bca51e0df5212f0c279fec36b2`  
-		Last Modified: Wed, 01 Feb 2023 18:23:23 GMT  
-		Size: 5.8 MB (5806909 bytes)  
+	-	`sha256:bd8391c317b70a65f7c7d5bf15686f27d06e2c79b286c3a86cb70987de2acdc4`  
+		Last Modified: Wed, 01 Mar 2023 03:16:32 GMT  
+		Size: 5.8 MB (5808831 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e1412fe7711f94b4bf1b4e4ab1cd79a36a470a276f032d9b8aa73b4073673e0`  
-		Last Modified: Wed, 01 Feb 2023 18:23:23 GMT  
-		Size: 3.9 MB (3851755 bytes)  
+	-	`sha256:0cd77c8b93dd4f4c7b1af018a1de3fc89606fac50a049b8ee85bd1ccd0335294`  
+		Last Modified: Wed, 01 Mar 2023 03:16:32 GMT  
+		Size: 3.9 MB (3851906 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:lunar-curl` - linux; arm64 variant v8

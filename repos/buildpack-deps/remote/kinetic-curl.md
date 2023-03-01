@@ -1,7 +1,7 @@
 ## `buildpack-deps:kinetic-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:23564de567f054c26eda9eaf44dc3976fd8f6f810f52c1349f9096514d278621
+$ docker pull buildpack-deps@sha256:d446c39e8b9aa2eb7699b23def524d291bdc0d5c0fc50556d2123633348b658e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -61,14 +61,14 @@ RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get 
 ### `buildpack-deps:kinetic-curl` - linux; arm variant v7
 
 ```console
-$ docker pull buildpack-deps@sha256:a00e7f2caaf7a80d3ff855871cfb9a73dbc6b81ee23f46c7946598e61761415b
+$ docker pull buildpack-deps@sha256:138bf1078343221e08092695ceb35b3b4786103d589ba18af108a037e5f2fb02
 ```
 
--	Docker Version: 20.10.17
+-	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **35.6 MB (35627603 bytes)**  
+-	Total Size: **34.8 MB (34807901 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d06b8b48a09e857ec43c808693fed0bc4a960da257fe2898ddb6e5a123e5e3dc`
+-	Image ID: `sha256:b3a38c11fedc1ac56d6be15d7180635f23c3420b28e4c6174b521908a0083a1b`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -84,24 +84,24 @@ LABEL org.opencontainers.image.version=22.10
 ADD file:d35c57b0dc2840a8b1ef40f7f6cfd826da68611f1ba37a89a382618c8612b52c in / 
 # Thu, 26 Jan 2023 11:52:03 GMT
 CMD ["/bin/bash"]
-# Tue, 31 Jan 2023 18:02:30 GMT
+# Wed, 01 Mar 2023 02:56:14 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 31 Jan 2023 18:02:48 GMT
+# Wed, 01 Mar 2023 02:56:32 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 ```
 
 -	Layers:
-	-	`sha256:3689a8df2bef3da04eb6dd3992a8a12da08076bfc3b502ebfd175c90d3befc1a`  
-		Last Modified: Tue, 31 Jan 2023 18:17:39 GMT  
-		Size: 25.9 MB (25892003 bytes)  
+	-	`sha256:697d38f8dfe625e3e751c0b01ddeaaeeff6e8d6f594dd7da227aea3974a49ce1`  
+		Last Modified: Thu, 26 Jan 2023 12:14:16 GMT  
+		Size: 25.1 MB (25066997 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:75fd827b5dcd49a319ffaf18db83f4d8e6234d1a0a5ca59247e525d46959e950`  
-		Last Modified: Tue, 31 Jan 2023 18:17:35 GMT  
-		Size: 5.9 MB (5935215 bytes)  
+	-	`sha256:0404f4cb6d67c78771ca841794019841127207d81397dddc44c0de7b2a042428`  
+		Last Modified: Wed, 01 Mar 2023 03:15:33 GMT  
+		Size: 5.9 MB (5940499 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d2c4c2c8c1755f8908e4f7f6c8064b5226752b53649ff4a6117d436f2601c4ab`  
-		Last Modified: Tue, 31 Jan 2023 18:17:35 GMT  
-		Size: 3.8 MB (3800385 bytes)  
+	-	`sha256:b1fa0889fdc983e7d5186fd6c7c7d65241a345cd87db62b962cc1ac632edba88`  
+		Last Modified: Wed, 01 Mar 2023 03:15:33 GMT  
+		Size: 3.8 MB (3800405 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:kinetic-curl` - linux; arm64 variant v8
