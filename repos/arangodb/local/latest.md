@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b406ed867db8704973416c7f9abbad168166efe7a43147c2764c5deffd79177a`
-- Created: `2023-02-11T07:14:32.330405615Z`
-- Virtual Size: ~ 476.18 Mb  
+- Image ID: `sha256:4af7cfb02b2a50cfdb4aa8109aac4087d29c986c27c72b55179630952e7a44e7`
+- Created: `2023-02-24T20:20:31.766655299Z`
+- Virtual Size: ~ 477.39 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["arangod"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `ARANGO_VERSION=3.10.3`
+  - `ARANGO_VERSION=3.10.4`
   - `GLIBCXX_FORCE_NEW=1`
 
 ## `apk` (`.apk`-based packages)
@@ -359,16 +359,16 @@ MIT
 ### `apk` package: `nodejs`
 
 ```console
-nodejs-16.17.1-r0 description:
+nodejs-16.19.1-r0 description:
 JavaScript runtime built on V8 engine - LTS version
 
-nodejs-16.17.1-r0 webpage:
+nodejs-16.19.1-r0 webpage:
 https://nodejs.org/
 
-nodejs-16.17.1-r0 installed size:
+nodejs-16.19.1-r0 installed size:
 32 MiB
 
-nodejs-16.17.1-r0 license:
+nodejs-16.19.1-r0 license:
 MIT
 
 ```
