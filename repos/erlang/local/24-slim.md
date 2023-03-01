@@ -4,7 +4,7 @@
 
 - Image ID: `sha256:44213d5535cc25893e5dd0b95208afc4407f83c180ad865216eb5bd06febdc37`
 - Created: `2023-02-09T03:54:09.481077741Z`
-- Virtual Size: ~ 277.92 Mb  
+- Virtual Size: ~ 277.93 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["erl"]`
