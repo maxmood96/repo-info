@@ -1,7 +1,7 @@
 ## `node:fermium-bullseye`
 
 ```console
-$ docker pull node@sha256:0ff72e582f9c01c3f36eb9810bf6142abfba9b173ff3344c6a2c924678fbed85
+$ docker pull node@sha256:b03f76841688d3d4b029fe0ae4af03f9edf45d705048db20202ba5dd93e0b2e2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -15,84 +15,84 @@ $ docker pull node@sha256:0ff72e582f9c01c3f36eb9810bf6142abfba9b173ff3344c6a2c92
 ### `node:fermium-bullseye` - linux; amd64
 
 ```console
-$ docker pull node@sha256:e7c7ac005019f9ee7da96e36dd75cc41a3c639623c2db74f41e3b35ba0f5a2ea
+$ docker pull node@sha256:7fb6a99d02e9440c9c74588399058e563f0de3ce37e68529ce749fc22daa737d
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **360.2 MB (360150185 bytes)**  
+-	Total Size: **360.1 MB (360063642 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:25bb3c710d6f0df5dd2d37e02f34d097e5d3db65b2df1261ebf5c04098b66889`
+-	Image ID: `sha256:e3839f9422c440742785803864d20eb231019b3b236fd5411d6b45754db71cbe`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node"]`
 
 ```dockerfile
-# Thu, 09 Feb 2023 03:20:05 GMT
-ADD file:b03d13d345c29f69557f410c8504e748226756d1f48e5abdb63cd40179b2640c in / 
-# Thu, 09 Feb 2023 03:20:05 GMT
+# Wed, 01 Mar 2023 04:09:45 GMT
+ADD file:513c5d5e501279c21a05c1d8b66e5f0b02ee4b27f0b928706d92fd9ce11c1be6 in / 
+# Wed, 01 Mar 2023 04:09:46 GMT
 CMD ["bash"]
-# Thu, 09 Feb 2023 09:10:43 GMT
+# Wed, 01 Mar 2023 04:42:37 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 09 Feb 2023 09:10:49 GMT
+# Wed, 01 Mar 2023 04:42:43 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 09 Feb 2023 09:11:09 GMT
+# Wed, 01 Mar 2023 04:43:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Feb 2023 09:12:08 GMT
+# Wed, 01 Mar 2023 04:44:06 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Sat, 11 Feb 2023 01:49:22 GMT
+# Wed, 01 Mar 2023 08:23:48 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node
-# Fri, 17 Feb 2023 18:28:45 GMT
+# Wed, 01 Mar 2023 08:30:23 GMT
 ENV NODE_VERSION=14.21.3
-# Fri, 17 Feb 2023 18:28:58 GMT
+# Wed, 01 Mar 2023 08:30:36 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in     amd64) ARCH='x64';;     ppc64el) ARCH='ppc64le';;     s390x) ARCH='s390x';;     arm64) ARCH='arm64';;     armhf) ARCH='armv7l';;     i386) ARCH='x86';;     *) echo "unsupported architecture"; exit 1 ;;   esac   && set -ex   && for key in     4ED778F539E3634C779C87C6D7062848A1AB005C     141F07595B7B3FFE74309A937405533BE57C7D57     74F12602B6F1C4E913FAA37AD3A89613643B6201     61FC681DFB92A079F1685E77973F295594EC4689     8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8     890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4     C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C     108F52B48DB57BB0CC439B2997B01419BD92F80A   ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner   && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt   && ln -s /usr/local/bin/node /usr/local/bin/nodejs   && node --version   && npm --version
-# Fri, 17 Feb 2023 18:28:58 GMT
+# Wed, 01 Mar 2023 08:30:36 GMT
 ENV YARN_VERSION=1.22.19
-# Fri, 17 Feb 2023 18:29:02 GMT
+# Wed, 01 Mar 2023 08:30:39 GMT
 RUN set -ex   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && yarn --version
-# Fri, 17 Feb 2023 18:29:02 GMT
+# Wed, 01 Mar 2023 08:30:40 GMT
 COPY file:4d192565a7220e135cab6c77fbc1c73211b69f3d9fb37e62857b2c6eb9363d51 in /usr/local/bin/ 
-# Fri, 17 Feb 2023 18:29:02 GMT
+# Wed, 01 Mar 2023 08:30:40 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 17 Feb 2023 18:29:02 GMT
+# Wed, 01 Mar 2023 08:30:40 GMT
 CMD ["node"]
 ```
 
 -	Layers:
-	-	`sha256:1e4aec178e0864db93a6f97a20bde3445871a4562c1801185eca1238d3a0e80d`  
-		Last Modified: Thu, 09 Feb 2023 03:24:47 GMT  
-		Size: 55.0 MB (55046771 bytes)  
+	-	`sha256:32fb02163b6bb519a30f909008e852354dae10bdfd6b34190dbdfe8f15403ea0`  
+		Last Modified: Wed, 01 Mar 2023 04:13:58 GMT  
+		Size: 55.0 MB (55045922 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6c1024729feeb2893dad43684fe7679c4d866c3640dfc3912bbd93c5a51f32d2`  
-		Last Modified: Thu, 09 Feb 2023 09:17:56 GMT  
-		Size: 5.2 MB (5165984 bytes)  
+	-	`sha256:167c7feebee855d117e192389484ea8367be1ba84e7ee35f4e5e5663195facbf`  
+		Last Modified: Wed, 01 Mar 2023 04:50:15 GMT  
+		Size: 5.2 MB (5166586 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3aa11fbc85a2a9660c98cfb4d0a2db8cde983ce3c87565c356cfdf1ddf2654c`  
-		Last Modified: Thu, 09 Feb 2023 09:17:56 GMT  
-		Size: 10.9 MB (10876805 bytes)  
+	-	`sha256:d6dfff1f6f3ddd2194ea0775f199572e8b2d75c38713eef0444d6b1fd0ac7604`  
+		Last Modified: Wed, 01 Mar 2023 04:50:15 GMT  
+		Size: 10.9 MB (10876729 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa54add66b3a47555c8b761f60b15f818236cc928109a30032111efc98c6fcd4`  
-		Last Modified: Thu, 09 Feb 2023 09:18:15 GMT  
-		Size: 54.6 MB (54587652 bytes)  
+	-	`sha256:e9cdcd4942ebc7445d8a70117a83ecbc77dcc5ffc72c4b6f8e24c0c76cfee15d`  
+		Last Modified: Wed, 01 Mar 2023 04:50:33 GMT  
+		Size: 54.6 MB (54585443 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9e3a60c2bce7eed21ed40f067f9b3491ae3e0b7a6edbc8ed5d9dc7dd9e4a0f92`  
-		Last Modified: Thu, 09 Feb 2023 09:18:52 GMT  
-		Size: 196.9 MB (196895515 bytes)  
+	-	`sha256:ca3bce705f6c47c25b6e7896b4da514bf271c5827b1d19f51611c4a149dd713c`  
+		Last Modified: Wed, 01 Mar 2023 04:51:08 GMT  
+		Size: 196.8 MB (196811476 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:17901317c11cf8436da67f5f0c6215f821f5b7cc25983d709f526da4d51af298`  
-		Last Modified: Sat, 11 Feb 2023 01:54:55 GMT  
-		Size: 4.2 KB (4203 bytes)  
+	-	`sha256:4f4cf292bc62eeea8a34b4160f3ef1f335b6b7b2bb9d28c605dc4002c8a24bc2`  
+		Last Modified: Wed, 01 Mar 2023 08:34:30 GMT  
+		Size: 4.2 KB (4205 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:04b2bda1268267df282bf30858c7c2c2eaefa10bc6fafebb1ecceb23ebdb87b2`  
-		Last Modified: Fri, 17 Feb 2023 18:41:58 GMT  
-		Size: 35.3 MB (35279514 bytes)  
+	-	`sha256:e05618c0a10d7ccf3ec23eb30b8bd62976ad0a66fc194b33da45be75d0c11f5c`  
+		Last Modified: Wed, 01 Mar 2023 08:40:01 GMT  
+		Size: 35.3 MB (35279511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:06a4292bc42a4f3f0da05ae2f808a7c35c4fa1535652ae1eb598b7b8ba829a37`  
-		Last Modified: Fri, 17 Feb 2023 18:41:53 GMT  
-		Size: 2.3 MB (2293289 bytes)  
+	-	`sha256:9d330affaa5177bc18f4353243c386ad627025bcac4d212419379179c0e8eef3`  
+		Last Modified: Wed, 01 Mar 2023 08:39:57 GMT  
+		Size: 2.3 MB (2293321 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:647f1609fa2ef4fe7710adffa79c386a0484b10aaa026db5cfb8629cfc1d200b`  
-		Last Modified: Fri, 17 Feb 2023 18:41:52 GMT  
-		Size: 452.0 B  
+	-	`sha256:420826909d3c1dccfd7fd142456b8a693b3a2a1466dcc3a8df8284e6446de64b`  
+		Last Modified: Wed, 01 Mar 2023 08:39:56 GMT  
+		Size: 449.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `node:fermium-bullseye` - linux; arm variant v7
