@@ -1,7 +1,7 @@
 ## `eclipse-temurin:8-jdk-ubi9-minimal`
 
 ```console
-$ docker pull eclipse-temurin@sha256:71f01d8d1625e51b2a28d63da810edc5cc3fa3be55bd999513b1ebe5c3c1a609
+$ docker pull eclipse-temurin@sha256:7bcf86fe57bc73959274b2e336e31dd5c0620175d294bfd02b68a0aea2f5b4c1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -201,91 +201,93 @@ RUN echo Verifying install ...     && echo javac -version && javac -version     
 ### `eclipse-temurin:8-jdk-ubi9-minimal` - linux; ppc64le
 
 ```console
-$ docker pull eclipse-temurin@sha256:30921e7103c7199b8bdd731dde2da32eee3ca6101da2f6355563899509d55a61
+$ docker pull eclipse-temurin@sha256:110b002724c56dcf12249cf1be59afb2596c5f45a3f60a54e54b486fb95c1815
 ```
 
--	Docker Version: 20.10.12
+-	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **124.6 MB (124610966 bytes)**  
+-	Total Size: **124.6 MB (124597878 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1622b40d7b5f80333461b96f837fcebcfbd5a547d98a7c28ba8cad217127540d`
+-	Image ID: `sha256:d873cf82888c79bfb02c563e374e2bf4f88d7baeb3229a7e596a7fb033823dae`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 07 Feb 2023 17:12:57 GMT
-ADD file:a4ae30568dcee90136c3634fd94e34722344b5eb6d3fa5ca289e754b3f81eda9 in / 
-# Tue, 07 Feb 2023 17:13:02 GMT
+# Wed, 22 Feb 2023 09:35:59 GMT
+ADD file:8935fa06d65d8716bc53943ac3a6e866ae49cc148df5e8d16a878ee52b6797ef in / 
+# Wed, 22 Feb 2023 09:36:00 GMT
 RUN mv -f /etc/yum.repos.d/ubi.repo /tmp || :
-# Tue, 07 Feb 2023 17:13:02 GMT
+# Wed, 22 Feb 2023 09:36:01 GMT
 ADD file:214c1de395c24e4a86ef9a706069ef30a9e804c63f851c37c35655e16fea3ced in /tmp/tls-ca-bundle.pem 
-# Tue, 07 Feb 2023 17:13:03 GMT
-ADD multi:6893bb0509c7aae7bc271b3e27ee01082fe34bd3f5e8d8e4ad49d547e73ac56f in /etc/yum.repos.d/ 
-# Tue, 07 Feb 2023 17:13:03 GMT
+# Wed, 22 Feb 2023 09:36:01 GMT
+ADD multi:0882c44110b6a64b078cdd328390626e44b18b514d5b9b155c169898325afa84 in /etc/yum.repos.d/ 
+# Wed, 22 Feb 2023 09:36:01 GMT
 LABEL maintainer="Red Hat, Inc."
-# Tue, 07 Feb 2023 17:13:03 GMT
+# Wed, 22 Feb 2023 09:36:01 GMT
 LABEL com.redhat.component="ubi9-minimal-container"       name="ubi9-minimal"       version="9.1.0"
-# Tue, 07 Feb 2023 17:13:03 GMT
+# Wed, 22 Feb 2023 09:36:01 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
-# Tue, 07 Feb 2023 17:13:03 GMT
+# Wed, 22 Feb 2023 09:36:01 GMT
 LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 9."
-# Tue, 07 Feb 2023 17:13:03 GMT
+# Wed, 22 Feb 2023 09:36:01 GMT
 LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Tue, 07 Feb 2023 17:13:03 GMT
+# Wed, 22 Feb 2023 09:36:01 GMT
 LABEL io.k8s.display-name="Red Hat Universal Base Image 9 Minimal"
-# Tue, 07 Feb 2023 17:13:03 GMT
+# Wed, 22 Feb 2023 09:36:01 GMT
 LABEL io.openshift.expose-services=""
-# Tue, 07 Feb 2023 17:13:03 GMT
+# Wed, 22 Feb 2023 09:36:01 GMT
 LABEL io.openshift.tags="minimal rhel9"
-# Tue, 07 Feb 2023 17:13:03 GMT
+# Wed, 22 Feb 2023 09:36:01 GMT
 ENV container oci
-# Tue, 07 Feb 2023 17:13:03 GMT
+# Wed, 22 Feb 2023 09:36:01 GMT
 ENV PATH /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Feb 2023 17:13:03 GMT
+# Wed, 22 Feb 2023 09:36:01 GMT
 CMD ["/bin/bash"]
-# Tue, 07 Feb 2023 17:13:08 GMT
+# Wed, 22 Feb 2023 09:36:03 GMT
 RUN rm -rf /var/log/*
-# Tue, 07 Feb 2023 17:13:10 GMT
-ADD file:c0515ee7277707a9bf1008f70bd623183ce69d84580ea50469a70b5415f05aa4 in /root/buildinfo/content_manifests/ubi9-minimal-container-9.1.0-1760.1675784957.json 
-# Tue, 07 Feb 2023 17:13:10 GMT
-ADD file:a5ae5174997880dbcde1f80706d909a5675d725820996a4d17bbd750f2ec54cc in /root/buildinfo/Dockerfile-ubi9-minimal-9.1.0-1760.1675784957 
-# Tue, 07 Feb 2023 17:13:10 GMT
-LABEL "release"="1760.1675784957" "distribution-scope"="public" "vendor"="Red Hat, Inc." "build-date"="2023-02-07T16:25:34" "architecture"="ppc64le" "vcs-type"="git" "vcs-ref"="befaf1f5ec7b874aef2651ee1384d51828504eb9" "io.k8s.description"="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly." "url"="https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9-minimal/images/9.1.0-1760.1675784957"
-# Tue, 07 Feb 2023 17:13:19 GMT
-RUN rm -f '/etc/yum.repos.d/odcs-1774985-d0e8e.repo' '/etc/yum.repos.d/gitweb-1077d.repo'
-# Tue, 07 Feb 2023 17:13:23 GMT
+# Wed, 22 Feb 2023 09:36:03 GMT
+LABEL release=1793
+# Wed, 22 Feb 2023 09:36:04 GMT
+ADD file:d63a31cf12a5e50647910ea5a5f51f665f02223be7aa3f825874a41f11862464 in /root/buildinfo/content_manifests/ubi9-minimal-container-9.1.0-1793.json 
+# Wed, 22 Feb 2023 09:36:04 GMT
+ADD file:cf92b2b8113b8a4cb17470ab56427ac77f6240d865c26fb0bede45b333ee9473 in /root/buildinfo/Dockerfile-ubi9-minimal-9.1.0-1793 
+# Wed, 22 Feb 2023 09:36:04 GMT
+LABEL "distribution-scope"="public" "vendor"="Red Hat, Inc." "build-date"="2023-02-22T09:23:20" "architecture"="ppc64le" "vcs-type"="git" "vcs-ref"="befaf1f5ec7b874aef2651ee1384d51828504eb9" "io.k8s.description"="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly." "url"="https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9-minimal/images/9.1.0-1793"
+# Wed, 22 Feb 2023 09:36:06 GMT
+RUN rm -f '/etc/yum.repos.d/repo-5af5d.repo' '/etc/yum.repos.d/repo-93eaf.repo'
+# Wed, 22 Feb 2023 09:36:08 GMT
 RUN rm -f /tmp/tls-ca-bundle.pem
-# Tue, 07 Feb 2023 17:13:29 GMT
+# Wed, 22 Feb 2023 09:36:10 GMT
 RUN mv -fZ /tmp/ubi.repo /etc/yum.repos.d/ubi.repo || :
-# Fri, 10 Feb 2023 19:54:44 GMT
+# Wed, 01 Mar 2023 01:17:06 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Fri, 10 Feb 2023 19:54:46 GMT
+# Wed, 01 Mar 2023 01:17:07 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 10 Feb 2023 19:54:48 GMT
+# Wed, 01 Mar 2023 01:17:07 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 10 Feb 2023 19:55:40 GMT
+# Wed, 01 Mar 2023 01:17:37 GMT
 RUN microdnf install -y binutils tzdata openssl wget ca-certificates fontconfig glibc-langpack-en gzip tar     && microdnf clean all
-# Fri, 10 Feb 2023 19:55:44 GMT
+# Wed, 01 Mar 2023 01:17:40 GMT
 ENV JAVA_VERSION=jdk8u362-b09
-# Fri, 10 Feb 2023 19:56:03 GMT
+# Wed, 01 Mar 2023 01:17:53 GMT
 RUN set -eux;     ARCH="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')";     case "${ARCH}" in        aarch64|arm64)          ESUM='9290a8beefd7a94f0eb030f62d402411a852100482b9c5b63714bacc57002c2a';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u362-b09/OpenJDK8U-jdk_aarch64_linux_hotspot_8u362b09.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='69658dd316c6a160915655971573179766e19c6610ea03880c1e578a0e518f74';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u362-b09/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u362b09.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='1486a792fb224611ce0cd0e83d4aacd3503b56698549f8e9a9f0a6ebb83bdba1';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u362-b09/OpenJDK8U-jdk_x64_linux_hotspot_8u362b09.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;
-# Fri, 10 Feb 2023 19:56:07 GMT
+# Wed, 01 Mar 2023 01:17:57 GMT
 RUN echo Verifying install ...     && echo javac -version && javac -version     && echo java -version && java -version     && echo Complete.
 ```
 
 -	Layers:
-	-	`sha256:85e5f0c37394f1c59d7e3270feef7dc13df3628f3afaa453124d6363656d8a73`  
-		Last Modified: Fri, 10 Feb 2023 00:09:59 GMT  
-		Size: 40.8 MB (40836851 bytes)  
+	-	`sha256:afb26f3a2e2addc90e7fe9aa448a7bcb501afb7b8558e36a3ed2ac6de0d71842`  
+		Last Modified: Tue, 28 Feb 2023 12:09:24 GMT  
+		Size: 40.8 MB (40818261 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5644e41b2311e4ce47e609eb31a20930d85ced2b755984e3946fc3857768bba8`  
-		Last Modified: Fri, 10 Feb 2023 20:05:07 GMT  
-		Size: 31.7 MB (31664084 bytes)  
+	-	`sha256:16acb90c4c3d06f2c50b66a984d905d401528514e028f78a9ef301b58e2fc02b`  
+		Last Modified: Wed, 01 Mar 2023 01:25:57 GMT  
+		Size: 31.7 MB (31669606 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a66a3c5643725fb6b3212140aad85a5fdc6efd9f8614bd1df06abb3e69dfd87b`  
-		Last Modified: Fri, 10 Feb 2023 20:05:10 GMT  
-		Size: 52.1 MB (52109871 bytes)  
+	-	`sha256:fcfababbea33f264b99187b280ccd18798b857f83ba9270f889f0aec54fbdc0e`  
+		Last Modified: Wed, 01 Mar 2023 01:26:00 GMT  
+		Size: 52.1 MB (52109852 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:58df486fbfc06c7c327e9c5d3624e4d797e767aaf425620abb9dd7bfee6d3849`  
-		Last Modified: Fri, 10 Feb 2023 20:04:59 GMT  
-		Size: 160.0 B  
+	-	`sha256:75956f771c9c8bd2ef98f4714f9f6d01215fdbbe34074e1e847fd31d27c2c236`  
+		Last Modified: Wed, 01 Mar 2023 01:25:49 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
