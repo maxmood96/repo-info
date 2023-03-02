@@ -1,7 +1,7 @@
 ## `ubuntu:bionic`
 
 ```console
-$ docker pull ubuntu@sha256:fb876748b139b3f9fc9b1de51f2f01b7195fc3ec56bc799a1e702af0bf8b5a2d
+$ docker pull ubuntu@sha256:1e32b9c52e8f22769df41e8f61066c77b2b35b0a423c4161c0e48eca2fd24f75
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -50,35 +50,35 @@ CMD ["/bin/bash"]
 ### `ubuntu:bionic` - linux; arm variant v7
 
 ```console
-$ docker pull ubuntu@sha256:f21972d048d5439834187f47e9e2869e5434a3c5d49f7ef721d3d5f62fe7de60
+$ docker pull ubuntu@sha256:d85f9e8f65828689ef2c9054d751a5842e870835f950d0a406e0b64988130661
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **21.4 MB (21395113 bytes)**  
+-	Total Size: **21.4 MB (21393555 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d17e780dbbcb4f0f3439981b5f09c45d9de103ca383942edbb8842911f2402fc`
+-	Image ID: `sha256:023593b1fda853a972410780b2f6e27925b41ea3cd504f278230c5c4b814eb1c`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 26 Jan 2023 09:56:13 GMT
+# Wed, 01 Mar 2023 03:12:28 GMT
 ARG RELEASE
-# Thu, 26 Jan 2023 09:56:13 GMT
+# Wed, 01 Mar 2023 03:12:28 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 26 Jan 2023 09:56:13 GMT
+# Wed, 01 Mar 2023 03:12:28 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 26 Jan 2023 09:56:13 GMT
+# Wed, 01 Mar 2023 03:12:28 GMT
 LABEL org.opencontainers.image.version=18.04
-# Thu, 26 Jan 2023 09:56:18 GMT
-ADD file:1cc75b54b9c4d0824203532d4bb0eea2aaeafed003e37057b21aa3713b6bb0ea in / 
-# Thu, 26 Jan 2023 09:56:18 GMT
+# Wed, 01 Mar 2023 03:12:32 GMT
+ADD file:69c0e030717df18a709c66c528354d7f774a9ec9299f6492fb8ee79990ae36ff in / 
+# Wed, 01 Mar 2023 03:12:32 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:c138257d410403a2127c08e269ac8467b8f2001b22a102934861b65b2f49bc1a`  
-		Last Modified: Thu, 26 Jan 2023 10:12:17 GMT  
-		Size: 21.4 MB (21395113 bytes)  
+	-	`sha256:103c14aa01473dfa662a8cba7d45692d6fefb30485916950f6d4ec51a4b43fd7`  
+		Last Modified: Wed, 01 Mar 2023 03:48:58 GMT  
+		Size: 21.4 MB (21393555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ubuntu:bionic` - linux; arm64 variant v8
@@ -118,35 +118,35 @@ CMD ["/bin/bash"]
 ### `ubuntu:bionic` - linux; 386
 
 ```console
-$ docker pull ubuntu@sha256:fcebd6734dcbffd0c328771b11a0d00a8045f58ee5d3e083d3afdb54c72dab8b
+$ docker pull ubuntu@sha256:f3868102d5777e59c9b64fedb552b1a5919984e12d81dd43791c1301c947cad9
 ```
 
 -	Docker Version: 20.10.12
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.1 MB (26096513 bytes)**  
+-	Total Size: **26.1 MB (26095322 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:97151d96f64f3b5b7cdb0fadb1c1f8556552cedf32154f23efd48595efabb1e4`
+-	Image ID: `sha256:0e4644b1e2494da2f0c03d28912dee8906d8296c1c5534f887c761aa26f8ead9`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 26 Jan 2023 10:03:01 GMT
+# Wed, 01 Mar 2023 03:14:52 GMT
 ARG RELEASE
-# Thu, 26 Jan 2023 10:03:01 GMT
+# Wed, 01 Mar 2023 03:14:52 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 26 Jan 2023 10:03:01 GMT
+# Wed, 01 Mar 2023 03:14:52 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 26 Jan 2023 10:03:01 GMT
+# Wed, 01 Mar 2023 03:14:52 GMT
 LABEL org.opencontainers.image.version=18.04
-# Thu, 26 Jan 2023 10:03:03 GMT
-ADD file:b9b814a7d1e7611a2c531fac3419a48c733c622470d3f275ce29f9ba8764eaeb in / 
-# Thu, 26 Jan 2023 10:03:04 GMT
+# Wed, 01 Mar 2023 03:14:54 GMT
+ADD file:765a9704b3961cee9523a98bfd0de0f97b6075431287fa7b8acd276145cb28c5 in / 
+# Wed, 01 Mar 2023 03:14:54 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:57a4d5aed2cd4a1f596f693a8fe5e135bd66dbf401ec169b1848d2316bdcfb2c`  
-		Last Modified: Thu, 26 Jan 2023 10:12:23 GMT  
-		Size: 26.1 MB (26096513 bytes)  
+	-	`sha256:a3385078798de93a38ff616a8b809982301aafeebd0483a718563d8068e394ad`  
+		Last Modified: Wed, 01 Mar 2023 03:49:04 GMT  
+		Size: 26.1 MB (26095322 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ubuntu:bionic` - linux; ppc64le
