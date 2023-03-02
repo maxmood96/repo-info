@@ -1,7 +1,7 @@
 ## `couchbase:enterprise-7.0.5`
 
 ```console
-$ docker pull couchbase@sha256:70d1600c289c834e69caaea2c8c981b5a9ebc245e91d6d729bd333e77f95c072
+$ docker pull couchbase@sha256:afe606b26f57fa57e90fb2a2323b6e0939a31b1d7364ccaff4d3f9eaf284751d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,121 +11,121 @@ $ docker pull couchbase@sha256:70d1600c289c834e69caaea2c8c981b5a9ebc245e91d6d729
 ### `couchbase:enterprise-7.0.5` - linux; amd64
 
 ```console
-$ docker pull couchbase@sha256:afa70468149f42aa257d2fdc35c6b4d748dfe077abd7f101a040ec5080b119d6
+$ docker pull couchbase@sha256:126dbf5ab0a0b1b384e526569386c6809968edc4557608ec9905afa7e6db2af9
 ```
 
--	Docker Version: 20.10.12
+-	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **616.6 MB (616628710 bytes)**  
+-	Total Size: **616.6 MB (616633627 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1c670efa3cc51d5c7a1ae1bef657131d726a397c150d225219e0593613b5dc0e`
+-	Image ID: `sha256:d064c71b7cb75a2c46f39e4d421c566cbc02856b133b270397df7ca3a75692a7`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["couchbase-server"]`
 
 ```dockerfile
-# Wed, 01 Feb 2023 11:42:37 GMT
+# Wed, 01 Mar 2023 04:53:01 GMT
 ARG RELEASE
-# Wed, 01 Feb 2023 11:42:37 GMT
+# Wed, 01 Mar 2023 04:53:01 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Wed, 01 Feb 2023 11:42:37 GMT
+# Wed, 01 Mar 2023 04:53:01 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Wed, 01 Feb 2023 11:42:37 GMT
+# Wed, 01 Mar 2023 04:53:02 GMT
 LABEL org.opencontainers.image.version=20.04
-# Wed, 01 Feb 2023 11:42:39 GMT
-ADD file:8b180a9b4497de0c6e131d6b48cf5c69a885379e63033ab9639d1655991e626c in / 
-# Wed, 01 Feb 2023 11:42:39 GMT
+# Wed, 01 Mar 2023 04:53:03 GMT
+ADD file:3478fb5bdcf8ad03d450d48901a6a8452c0ab253f24d21b1e27f99259db2d26b in / 
+# Wed, 01 Mar 2023 04:53:04 GMT
 CMD ["/bin/bash"]
-# Wed, 01 Feb 2023 18:25:04 GMT
+# Thu, 02 Mar 2023 03:47:11 GMT
 LABEL maintainer=docker@couchbase.com
-# Wed, 01 Feb 2023 18:25:04 GMT
+# Thu, 02 Mar 2023 03:47:11 GMT
 ARG UPDATE_COMMAND=apt-get update -y -q
-# Wed, 01 Feb 2023 18:25:04 GMT
+# Thu, 02 Mar 2023 03:47:11 GMT
 ARG CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-# Wed, 01 Feb 2023 18:25:27 GMT
+# Thu, 02 Mar 2023 03:47:29 GMT
 # ARGS: CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* UPDATE_COMMAND=apt-get update -y -q
 RUN set -x     && ${UPDATE_COMMAND}     && apt-get install -y -q wget tzdata       lsof lshw sysstat net-tools numactl bzip2 runit     && ${CLEANUP_COMMAND}
-# Wed, 01 Feb 2023 18:27:30 GMT
+# Thu, 02 Mar 2023 03:49:38 GMT
 ARG CB_RELEASE_URL=https://packages.couchbase.com/releases/7.0.5
-# Wed, 01 Feb 2023 18:27:30 GMT
+# Thu, 02 Mar 2023 03:49:38 GMT
 ARG CB_PACKAGE=couchbase-server-enterprise_7.0.5-ubuntu20.04_amd64.deb
-# Wed, 01 Feb 2023 18:27:31 GMT
+# Thu, 02 Mar 2023 03:49:38 GMT
 ARG CB_SHA256=9a5ea4e5ec6e9af81b39d1e04b135fd5e8ce13a64cd9c8d587fe3e906c17cdea
-# Wed, 01 Feb 2023 18:27:31 GMT
+# Thu, 02 Mar 2023 03:49:38 GMT
 ARG CB_SKIP_CHECKSUM=false
-# Wed, 01 Feb 2023 18:27:31 GMT
+# Thu, 02 Mar 2023 03:49:38 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/couchbase/bin:/opt/couchbase/bin/tools:/opt/couchbase/bin/install
-# Wed, 01 Feb 2023 18:27:32 GMT
+# Thu, 02 Mar 2023 03:49:39 GMT
 # ARGS: CB_PACKAGE=couchbase-server-enterprise_7.0.5-ubuntu20.04_amd64.deb CB_RELEASE_URL=https://packages.couchbase.com/releases/7.0.5 CB_SHA256=9a5ea4e5ec6e9af81b39d1e04b135fd5e8ce13a64cd9c8d587fe3e906c17cdea CB_SKIP_CHECKSUM=false CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* UPDATE_COMMAND=apt-get update -y -q
 RUN groupadd -g 1000 couchbase && useradd couchbase -u 1000 -g couchbase -M
-# Wed, 01 Feb 2023 18:28:26 GMT
+# Thu, 02 Mar 2023 03:50:45 GMT
 # ARGS: CB_PACKAGE=couchbase-server-enterprise_7.0.5-ubuntu20.04_amd64.deb CB_RELEASE_URL=https://packages.couchbase.com/releases/7.0.5 CB_SHA256=9a5ea4e5ec6e9af81b39d1e04b135fd5e8ce13a64cd9c8d587fe3e906c17cdea CB_SKIP_CHECKSUM=false CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* UPDATE_COMMAND=apt-get update -y -q
 RUN set -x     && export INSTALL_DONT_START_SERVER=1     && wget -N --no-verbose $CB_RELEASE_URL/$CB_PACKAGE     && { ${CB_SKIP_CHECKSUM} || echo "$CB_SHA256  $CB_PACKAGE" | sha256sum -c - ; }     && ${UPDATE_COMMAND}     && apt-get install -y ./$CB_PACKAGE     && rm -f ./$CB_PACKAGE     && ${CLEANUP_COMMAND}     && rm -rf /tmp/* /var/tmp/*
-# Wed, 01 Feb 2023 18:28:31 GMT
+# Thu, 02 Mar 2023 03:50:50 GMT
 # ARGS: CB_PACKAGE=couchbase-server-enterprise_7.0.5-ubuntu20.04_amd64.deb CB_RELEASE_URL=https://packages.couchbase.com/releases/7.0.5 CB_SHA256=9a5ea4e5ec6e9af81b39d1e04b135fd5e8ce13a64cd9c8d587fe3e906c17cdea CB_SKIP_CHECKSUM=false CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* UPDATE_COMMAND=apt-get update -y -q
 RUN sed -i -e '1 s/$/\/docker/' /opt/couchbase/VARIANT.txt
-# Wed, 01 Feb 2023 18:28:31 GMT
+# Thu, 02 Mar 2023 03:50:50 GMT
 COPY file:018fa38d92aa0a4679f57c2d43b5c14547b2c603cab6ec7fd3240af5545472b5 in /etc/service/couchbase-server/run 
-# Wed, 01 Feb 2023 18:28:31 GMT
+# Thu, 02 Mar 2023 03:50:50 GMT
 # ARGS: CB_PACKAGE=couchbase-server-enterprise_7.0.5-ubuntu20.04_amd64.deb CB_RELEASE_URL=https://packages.couchbase.com/releases/7.0.5 CB_SHA256=9a5ea4e5ec6e9af81b39d1e04b135fd5e8ce13a64cd9c8d587fe3e906c17cdea CB_SKIP_CHECKSUM=false CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* UPDATE_COMMAND=apt-get update -y -q
 RUN set -x     && mkdir -p /etc/runit/runsvdir/default/couchbase-server/supervise     && chown -R couchbase:couchbase                 /etc/service                 /etc/runit/runsvdir/default/couchbase-server/supervise
-# Wed, 01 Feb 2023 18:28:31 GMT
+# Thu, 02 Mar 2023 03:50:50 GMT
 COPY file:1302333e9e56b11ae357341056dee0080efda9457b1ce3de1a1ecb6023e760ae in /usr/local/bin/ 
-# Wed, 01 Feb 2023 18:28:32 GMT
+# Thu, 02 Mar 2023 03:50:51 GMT
 # ARGS: CB_PACKAGE=couchbase-server-enterprise_7.0.5-ubuntu20.04_amd64.deb CB_RELEASE_URL=https://packages.couchbase.com/releases/7.0.5 CB_SHA256=9a5ea4e5ec6e9af81b39d1e04b135fd5e8ce13a64cd9c8d587fe3e906c17cdea CB_SKIP_CHECKSUM=false CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* UPDATE_COMMAND=apt-get update -y -q
 RUN set -x     && ln -s dummy.sh /usr/local/bin/iptables-save     && ln -s dummy.sh /usr/local/bin/lvdisplay     && ln -s dummy.sh /usr/local/bin/vgdisplay     && ln -s dummy.sh /usr/local/bin/pvdisplay
-# Wed, 01 Feb 2023 18:28:33 GMT
+# Thu, 02 Mar 2023 03:50:51 GMT
 # ARGS: CB_PACKAGE=couchbase-server-enterprise_7.0.5-ubuntu20.04_amd64.deb CB_RELEASE_URL=https://packages.couchbase.com/releases/7.0.5 CB_SHA256=9a5ea4e5ec6e9af81b39d1e04b135fd5e8ce13a64cd9c8d587fe3e906c17cdea CB_SKIP_CHECKSUM=false CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* UPDATE_COMMAND=apt-get update -y -q
 RUN set -ex     &&  if [ ! -e /opt/couchbase/bin/curl.real ]; then             ${UPDATE_COMMAND};             apt-get install -y chrpath;             chrpath -r '$ORIGIN/../lib' /opt/couchbase/bin/curl;             apt-get remove -y chrpath;             apt-get autoremove -y;             ${CLEANUP_COMMAND};         fi
-# Wed, 01 Feb 2023 18:28:33 GMT
+# Thu, 02 Mar 2023 03:50:52 GMT
 COPY file:6e5292e89c7124e038a0d80ea3b942bff1ed578e67a07e764b041ea95b129aa3 in / 
-# Wed, 01 Feb 2023 18:28:33 GMT
+# Thu, 02 Mar 2023 03:50:52 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 01 Feb 2023 18:28:33 GMT
+# Thu, 02 Mar 2023 03:50:52 GMT
 CMD ["couchbase-server"]
-# Wed, 01 Feb 2023 18:28:33 GMT
+# Thu, 02 Mar 2023 03:50:52 GMT
 EXPOSE 11207 11210 11280 18091 18092 18093 18094 18095 18096 18097 8091 8092 8093 8094 8095 8096 8097 9123
-# Wed, 01 Feb 2023 18:28:33 GMT
+# Thu, 02 Mar 2023 03:50:52 GMT
 VOLUME [/opt/couchbase/var]
 ```
 
 -	Layers:
-	-	`sha256:7608715873ec5c02d370e963aa9b19a149023ce218887221d93fe671b3abbf58`  
-		Last Modified: Thu, 26 Jan 2023 17:04:53 GMT  
-		Size: 28.6 MB (28577884 bytes)  
+	-	`sha256:df6635ed1257a768a4cf0fba31ebc5c8a6a03ae7d5b9b079bfd9df9eb89e0f81`  
+		Last Modified: Wed, 01 Mar 2023 09:05:18 GMT  
+		Size: 28.6 MB (28578002 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5b4cf586c4b7a57fc5e73b3aa283d12081f9bd7606b6b60d897f2783e6efa0d`  
-		Last Modified: Wed, 01 Feb 2023 18:31:06 GMT  
-		Size: 6.2 MB (6216449 bytes)  
+	-	`sha256:b068dbade6f8ed813abdcc4e8f6dc04052aec588ddf12d1196a288d098b7b8d7`  
+		Last Modified: Thu, 02 Mar 2023 03:55:01 GMT  
+		Size: 6.2 MB (6219129 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:507b7a7e538510c11f6158504c6a0cc9e16b8dd599ac2f8515b103b246de8e21`  
-		Last Modified: Wed, 01 Feb 2023 18:33:05 GMT  
-		Size: 1.8 KB (1834 bytes)  
+	-	`sha256:1a18d5de62fb58c6fd662a88fa01ec8d85befef5ab51ee6a98c0747c3e356e8d`  
+		Last Modified: Thu, 02 Mar 2023 03:56:55 GMT  
+		Size: 1.8 KB (1838 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2de73b439ff8a91b36710c23edc8ca56c4e921ef41b2e6cb71224ea3b546b3aa`  
-		Last Modified: Wed, 01 Feb 2023 18:34:03 GMT  
-		Size: 581.8 MB (581830013 bytes)  
+	-	`sha256:c1c0438bb90416bbf5d439cf4846930e5c24f21524cfb07026e954acf0258524`  
+		Last Modified: Thu, 02 Mar 2023 03:57:50 GMT  
+		Size: 581.8 MB (581832130 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f0738cfd3ccb6b0abfd4708b88a453af4c05a739ed6058036452db84dd98c54`  
-		Last Modified: Wed, 01 Feb 2023 18:33:05 GMT  
-		Size: 189.0 B  
+	-	`sha256:925fbad721e90951cb684583a1df8d69edc15e6d9c928206460459e85bbcea85`  
+		Last Modified: Thu, 02 Mar 2023 03:56:55 GMT  
+		Size: 191.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:81320e19b263a40ecbae84dfcba6bd77c9d19dcb14dc1b9633db54316234e955`  
-		Last Modified: Wed, 01 Feb 2023 18:33:03 GMT  
-		Size: 741.0 B  
+	-	`sha256:4da84b93e2fec046f92f3c8c0229de69c0a9ae4e5df95506d6d4b0a9eafb2c44`  
+		Last Modified: Thu, 02 Mar 2023 03:56:53 GMT  
+		Size: 740.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a5e61bf65fb7021f8f7fd08cc267e9e3d2bab7e16ead1a46300ae4fa8bd4fe0`  
-		Last Modified: Wed, 01 Feb 2023 18:33:03 GMT  
-		Size: 278.0 B  
+	-	`sha256:0c14f3296dbe27bfe2b53bc30a4f7c344ca0684a59c39ac38bb51c77d68b161e`  
+		Last Modified: Thu, 02 Mar 2023 03:56:53 GMT  
+		Size: 274.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4d065117ea502454506cbd8e4c642c1a45641130b86465e564daa4dade7b495a`  
-		Last Modified: Wed, 01 Feb 2023 18:33:03 GMT  
-		Size: 236.0 B  
+	-	`sha256:2594b1d5d9ecf0b790f600f5109ccf250343e8142f06b4f518931cf00f375c76`  
+		Last Modified: Thu, 02 Mar 2023 03:56:53 GMT  
+		Size: 237.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:06ef5abe6b3270b049506d26a9c2b97d6470bdd23f5004da355c317a9e076005`  
-		Last Modified: Wed, 01 Feb 2023 18:33:03 GMT  
-		Size: 218.0 B  
+	-	`sha256:af7b6310857cd1587521c72ec66ff5324498b2eb3d2dad7f5a691909c2f50388`  
+		Last Modified: Thu, 02 Mar 2023 03:56:53 GMT  
+		Size: 219.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85caa0ee6487d6e3f055aa6ccb1420be7f7e05020ab26456a63a9fe63b655b62`  
-		Last Modified: Wed, 01 Feb 2023 18:33:03 GMT  
-		Size: 868.0 B  
+	-	`sha256:8afff2071f80a72d1517e2ce4b86efdff858f89e1220a136ef647368582dcc23`  
+		Last Modified: Thu, 02 Mar 2023 03:56:53 GMT  
+		Size: 867.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
