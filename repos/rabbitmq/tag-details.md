@@ -22,6 +22,14 @@
 -	[`rabbitmq:3.11.10-alpine`](#rabbitmq31110-alpine)
 -	[`rabbitmq:3.11.10-management`](#rabbitmq31110-management)
 -	[`rabbitmq:3.11.10-management-alpine`](#rabbitmq31110-management-alpine)
+-	[`rabbitmq:3.12-rc`](#rabbitmq312-rc)
+-	[`rabbitmq:3.12-rc-alpine`](#rabbitmq312-rc-alpine)
+-	[`rabbitmq:3.12-rc-management`](#rabbitmq312-rc-management)
+-	[`rabbitmq:3.12-rc-management-alpine`](#rabbitmq312-rc-management-alpine)
+-	[`rabbitmq:3.12.0-beta.1`](#rabbitmq3120-beta1)
+-	[`rabbitmq:3.12.0-beta.1-alpine`](#rabbitmq3120-beta1-alpine)
+-	[`rabbitmq:3.12.0-beta.1-management`](#rabbitmq3120-beta1-management)
+-	[`rabbitmq:3.12.0-beta.1-management-alpine`](#rabbitmq3120-beta1-management-alpine)
 -	[`rabbitmq:3.9`](#rabbitmq39)
 -	[`rabbitmq:3.9-alpine`](#rabbitmq39-alpine)
 -	[`rabbitmq:3.9-management`](#rabbitmq39-management)
@@ -13098,6 +13106,38 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Thu, 02 Mar 2023 23:18:31 GMT  
 		Size: 16.8 MB (16818208 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `rabbitmq:3.12-rc`
+
+**does not exist** (yet?)
+
+## `rabbitmq:3.12-rc-alpine`
+
+**does not exist** (yet?)
+
+## `rabbitmq:3.12-rc-management`
+
+**does not exist** (yet?)
+
+## `rabbitmq:3.12-rc-management-alpine`
+
+**does not exist** (yet?)
+
+## `rabbitmq:3.12.0-beta.1`
+
+**does not exist** (yet?)
+
+## `rabbitmq:3.12.0-beta.1-alpine`
+
+**does not exist** (yet?)
+
+## `rabbitmq:3.12.0-beta.1-management`
+
+**does not exist** (yet?)
+
+## `rabbitmq:3.12.0-beta.1-management-alpine`
+
+**does not exist** (yet?)
 
 ## `rabbitmq:3.9`
 
