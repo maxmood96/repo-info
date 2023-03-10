@@ -915,14 +915,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris fontconfig=2.14.1-3ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/f/fontconfig/fontconfig_2.14.1-3ubuntu1.dsc' fontconfig_2.14.1-3ubuntu1.dsc 2430 SHA512:7b36c0f54fc6b4cc602f32805f40b848fe2663d23ceb6991a467fb57fe4d277dbf5832b45967d5722dcce476543df2eb8fcbf07841d00ca9a1b1b97a2536f687
-'http://archive.ubuntu.com/ubuntu/pool/main/f/fontconfig/fontconfig_2.14.1.orig.tar.xz' fontconfig_2.14.1.orig.tar.xz 1447044 SHA512:ba42e6f90ec92914895d2157c872c373adfc17be791b92253bcc40e85674a84e43c08ab2b37c3ae85b53b2e7bd2a7847abb479043f303b732c08eeac3ee733db
-'http://archive.ubuntu.com/ubuntu/pool/main/f/fontconfig/fontconfig_2.14.1-3ubuntu1.debian.tar.xz' fontconfig_2.14.1-3ubuntu1.debian.tar.xz 27700 SHA512:254a8f7efb425dcdbc6ba83991d1e366d5339a1beadc4e27d77360b650df089f174820c583768e590fe63bbd9cbb1316b131f875074902779b3623ed4350e15a
-```
 
 ### `dpkg` source package: `fonts-dejavu=2.37-4`
 
@@ -1051,14 +1046,9 @@ Licenses: (parsed from: `/usr/share/doc/gcc-13-base/copyright`, `/usr/share/doc/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-13=13-20230215-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-13/gcc-13_13-20230215-1ubuntu2.dsc' gcc-13_13-20230215-1ubuntu2.dsc 27878 SHA512:40420c326666257a75fe583a73e0d1693e9b196ebf1a98b0d33d168fac9a110e544f4ac754197ae19f62fc7af7b3edf285aa4d9e5ffcee2121c8c5c7b62f7035
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-13/gcc-13_13-20230215.orig.tar.gz' gcc-13_13-20230215.orig.tar.gz 87845313 SHA512:5009465ba6b292c8915d8dab8f9c3a9e139e43f0389d187d477a9e2410e761e39697f5723a6a8105882d498ea53ab28407d309f6b30ca0971db29e020ae8bcad
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-13/gcc-13_13-20230215-1ubuntu2.debian.tar.xz' gcc-13_13-20230215-1ubuntu2.debian.tar.xz 530440 SHA512:b4fec4f9b6177e06d9803944206907feac165a4b18be3012e70c5bd5ae6040c9ca171f75180a95dffabe94a11892d4b68a9668a68cabafe5d35acab329f64ffe
-```
 
 ### `dpkg` source package: `gcc-defaults=1.203ubuntu1`
 
@@ -1206,15 +1196,13 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 - `Unicode-DFS-2016`
 - `bzip2-1.0.6`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.74.5-1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.74.5-1.dsc' glib2.0_2.74.5-1.dsc 3667 SHA512:b4419aca3d82de1c6ce25ba809d1202087dfd81d2947e8f826ebc97003fa03b5031bf65ed93db406d08887fcabd852288d32eb8a2059914f0109bd81cb633c01
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.74.5.orig-unicode-data.tar.xz' glib2.0_2.74.5.orig-unicode-data.tar.xz 266184 SHA512:c818eae7b8df69b69abc2c59870eaad7488e3266afb5055b851fcbdd9dd96d9808787881631a8d840487acb3b40c18691b6c58d3df4735fa6eab41a5aa1295ff
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.74.5.orig.tar.xz' glib2.0_2.74.5.orig.tar.xz 5211852 SHA512:2716e0fe984cc5d0714e91fe0de47ee71a8bd0b4c85caee337ddb7e02ac2fb3c8c007ccc1207b29cf901c30a7ec8e3bcca75d69c6fab2a32a8cf14bff974e614
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.74.5-1.debian.tar.xz' glib2.0_2.74.5-1.debian.tar.xz 116508 SHA512:c78b13667a536c4121a34bd249aa01266d4c65b124098ab862cf1b1a1ba978d334379e3016f653fa67effe9dcdd33a5e808a54aa2b2e1964841c09e18bd725bc
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/glib2.0/2.74.5-1/
+
 
 ### `dpkg` source package: `glibc=2.36-0ubuntu4`
 
@@ -1799,14 +1787,13 @@ Licenses: (parsed from: `/usr/share/doc/liblcms2-2/copyright`, `/usr/share/doc/l
 - `IJG`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lcms2=2.14-1
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lcms2/lcms2_2.14-1.dsc' lcms2_2.14-1.dsc 1944 SHA512:406900f900b51e26ed0a0c91ab1222822e5211dc9a13eaf799eaad08f264fa8ab7d42fe8fbc01ecbca29dc2ceb518b3e4f40b33dcee9b4833a4c01b9632c9862
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lcms2/lcms2_2.14.orig.tar.gz' lcms2_2.14.orig.tar.gz 7406694 SHA512:92fba0a457ea81590eba0b8d98b7b621da6a83e3857948585e0b524235954954f9ac1670cf6a19b457c0fce22a87899ea4c5810db1ff2acf7c6b6e0dc4b61a1b
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lcms2/lcms2_2.14-1.debian.tar.xz' lcms2_2.14-1.debian.tar.xz 11208 SHA512:fb4fe2024ccbd87dec75273f299f9bd398d00692b34944fc5b1e439d40a74e219b532b1f3c28f65868d952df2920c89de39e4fc321b61016470f2bf79a73e6c0
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/lcms2/2.14-1/
+
 
 ### `dpkg` source package: `lerc=4.0.0+ds-2ubuntu2`
 
@@ -2598,15 +2585,9 @@ Licenses: (parsed from: `/usr/share/doc/libselinux1/copyright`, `/usr/share/doc/
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libselinux=3.4-1build3
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.4-1build3.dsc' libselinux_3.4-1build3.dsc 2908 SHA512:c5d3bda0e675bc167c785dfabc4b9d676c84fa643e8874eccf635249df60fcc293bc859343b20c387c1a70123099d75904a1781a5aa5a648cf11407328b9061b
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.4.orig.tar.gz' libselinux_3.4.orig.tar.gz 210061 SHA512:7ffa6d2159d2333d836bde3f75dfc78a278283b66ae1e441c178371adb6f463aa6f2d62439079e2068d1135c39dd2b367b001d917c0bdc6871a73630919ef81e
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.4.orig.tar.gz.asc' libselinux_3.4.orig.tar.gz.asc 833 SHA512:de1e0431cbf8526c4de77e1ebe9fa40111ea4a0e71d6b0e9ec6c975b61f4090ec5df4386af362bbd5cc8faffb24c21febc13356fe081df642bbfa52010a00ba0
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.4-1build3.debian.tar.xz' libselinux_3.4-1build3.debian.tar.xz 29572 SHA512:f32f0ce97c712e4a68966383d190cc519d0d1c11d98e45f8c33760dd67e7443bac3c9b9ed6f90156dfd27e24e9078767ca83ebee5db326c24cad763d8c68849d
-```
 
 ### `dpkg` source package: `libsemanage=3.4-1build3`
 
@@ -2831,15 +2812,13 @@ Licenses: (parsed from: `/usr/share/doc/libwebp-dev/copyright`, `/usr/share/doc/
 
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libwebp=1.2.4-0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwebp/libwebp_1.2.4-0.1.dsc' libwebp_1.2.4-0.1.dsc 2401 SHA512:84a4f7b8c06ef0cdb0eae567ddfba7b7fb1359ceefb93716ec04f2c7bdfbfb0c872c1971eaa2deddfd032fa10acb4daa3c8284dcee1db1c3d4683c77a975e9ed
-'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwebp/libwebp_1.2.4.orig.tar.gz' libwebp_1.2.4.orig.tar.gz 4141376 SHA512:01f21e2c3057f5878b33664d0070832d78420de3cb2fe4379b07ae6a27bb569fd1c27a920fe324beccb96ae7bfa8c05fdd9e7b0aeba6de06ab4d8b084bb38803
-'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwebp/libwebp_1.2.4.orig.tar.gz.asc' libwebp_1.2.4.orig.tar.gz.asc 833 SHA512:a9a27c81550a3376f9d6e56f3914ee2ad11c3200fb555a5fcb14d7fcf8d8f32a80d8fa5c9a27908a02059a4e2eeb21b1bceaa2061a7c0e809481e47592ec2fa6
-'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwebp/libwebp_1.2.4-0.1.debian.tar.xz' libwebp_1.2.4-0.1.debian.tar.xz 7156 SHA512:3818912eab7e56f7189f6f9b6559ed74f9cf2cb4fd70cd56660d270f2163de4aa2bde0b5bf4ba1d12a5d5fea865021db1e28ae7cf7d0a06a2bf16266af3e5d37
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libwebp/1.2.4-0.1/
+
 
 ### `dpkg` source package: `libwmf=0.2.12-5ubuntu3`
 
@@ -3647,14 +3626,9 @@ Licenses: (parsed from: `/usr/share/doc/libldap2/copyright`)
 - `UMich`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.6.3+dfsg-1~exp1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.3%2bdfsg-1%7eexp1ubuntu1.dsc' openldap_2.6.3+dfsg-1~exp1ubuntu1.dsc 3461 SHA512:bc00aa6ae1d7f8536dd5e30438d5f12d3ed382c1ea0c6f0a56f0ecdd6870cfe1a3b69f1b6d9aa1275d257986c527eef75a18594d05b6278a4f7d43d04ee3a704
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.3%2bdfsg.orig.tar.xz' openldap_2.6.3+dfsg.orig.tar.xz 3741144 SHA512:951b935aa6a3f9dd1c2b7a4a289b6244d605a2a3de248051c8078b8afd5bfaab5943d5c6adddf9e85eb6813db3ddff18478f2c85625df4095ec037bdc579bdc7
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.3%2bdfsg-1%7eexp1ubuntu1.debian.tar.xz' openldap_2.6.3+dfsg-1~exp1ubuntu1.debian.tar.xz 178740 SHA512:0aff107f8e324195f4c00b367a9c1f29c9bdf71812a59693007532ef457cf924215ee025b911ec9ab1d65c0cf0ccde7c288df507925a5dd54fbcbf6f774dc555
-```
 
 ### `dpkg` source package: `openssh=1:9.0p1-1ubuntu8`
 
@@ -4000,14 +3974,9 @@ Licenses: (parsed from: `/usr/share/doc/libprocps8/copyright`, `/usr/share/doc/p
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris procps=2:3.3.17-7ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.17-7ubuntu1.dsc' procps_3.3.17-7ubuntu1.dsc 2237 SHA512:756be0329040247eadaf884e61164172eb618dee97bed81242b100a53dd219d8b471067c9a7109ac96214256ed1f5f7832883cfd632e1d209bbb730bf6f4ea0a
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.17.orig.tar.xz' procps_3.3.17.orig.tar.xz 1008428 SHA512:59e9a5013430fd9da508c4655d58375dc32e025bb502bb28fb9a92a48e4f2838b3355e92b4648f7384b2050064d17079bf4595d889822ebb5030006bc154a1a7
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.17-7ubuntu1.debian.tar.xz' procps_3.3.17-7ubuntu1.debian.tar.xz 34528 SHA512:77435e34138738e58394c7eab10716d5ad59b4eb92c045114dd0ef374b3e987ceada7e65272e4ead85e6adeaa9980dc81ee5dd6c937a6be1c241c339d35475c1
-```
 
 ### `dpkg` source package: `python3-defaults=3.11.1-3`
 

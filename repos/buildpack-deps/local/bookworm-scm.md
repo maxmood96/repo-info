@@ -103,21 +103,13 @@ Licenses: (parsed from: `/usr/share/doc/libapr1/copyright`)
 
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apr=1.7.2-2
-'http://deb.debian.org/debian/pool/main/a/apr/apr_1.7.2-2.dsc' apr_1.7.2-2.dsc 2262 SHA256:ba56f3f845230f0ae63173d8bc76881bd6df20b20c67ccf099e8541e3432e66b
-'http://deb.debian.org/debian/pool/main/a/apr/apr_1.7.2.orig.tar.bz2' apr_1.7.2.orig.tar.bz2 890218 SHA256:75e77cc86776c030c0a5c408dfbd0bf2a0b75eed5351e52d5439fa1e5509a43e
-'http://deb.debian.org/debian/pool/main/a/apr/apr_1.7.2.orig.tar.bz2.asc' apr_1.7.2.orig.tar.bz2.asc 833 SHA256:3e45e804041cfd112d3710db11424e861a6f96e5b8908fcb73bc558f7d480f37
-'http://deb.debian.org/debian/pool/main/a/apr/apr_1.7.2-2.debian.tar.xz' apr_1.7.2-2.debian.tar.xz 53316 SHA256:f0d9f091966a4e9369fc54dec238a50be15d67c934706d555c358e8cbdf47ac1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apr/1.7.2-2/
 
-- https://sources.debian.net/src/apr/1.7.2-2/ (for browsing the source)
-- https://sources.debian.net/src/apr/1.7.2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apr/1.7.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apt=2.5.6`
 
@@ -691,19 +683,13 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `GPL-2+`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.21.20
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.21.20.dsc' dpkg_1.21.20.dsc 3061 SHA256:c80fe63f48e353916401f11046e39648de9d4e79c353399aa55e91c025a45525
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.21.20.tar.xz' dpkg_1.21.20.tar.xz 5394224 SHA256:5db30ed4af9fd9e933bcfdc6070a30d3d319b345f9348b7349e1f2c1625c1c12
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dpkg/1.21.20/
 
-- https://sources.debian.net/src/dpkg/1.21.20/ (for browsing the source)
-- https://sources.debian.net/src/dpkg/1.21.20/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dpkg/1.21.20/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `e2fsprogs=1.46.6-1`
 
@@ -911,20 +897,13 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.39.2-1
-'http://deb.debian.org/debian/pool/main/g/git/git_2.39.2-1.dsc' git_2.39.2-1.dsc 2825 SHA256:5580d3bc887e643e0c3e0f2508721944f7a6aa76e7500bc3df0667bdbd66f044
-'http://deb.debian.org/debian/pool/main/g/git/git_2.39.2.orig.tar.xz' git_2.39.2.orig.tar.xz 7163224 SHA256:475f75f1373b2cd4e438706185175966d5c11f68c4db1e48c26257c43ddcf2d6
-'http://deb.debian.org/debian/pool/main/g/git/git_2.39.2-1.debian.tar.xz' git_2.39.2-1.debian.tar.xz 740572 SHA256:7b53684272257f7756e0bd216670fb0264ec565133c8d3bba915fbdffe7e80c9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/git/1:2.39.2-1/
 
-- https://sources.debian.net/src/git/1:2.39.2-1/ (for browsing the source)
-- https://sources.debian.net/src/git/1:2.39.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/git/1:2.39.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.36-8`
 

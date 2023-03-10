@@ -622,14 +622,9 @@ Licenses: (parsed from: `/usr/share/doc/gcc-13-base/copyright`, `/usr/share/doc/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-13=13-20230215-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-13/gcc-13_13-20230215-1ubuntu2.dsc' gcc-13_13-20230215-1ubuntu2.dsc 27878 SHA512:40420c326666257a75fe583a73e0d1693e9b196ebf1a98b0d33d168fac9a110e544f4ac754197ae19f62fc7af7b3edf285aa4d9e5ffcee2121c8c5c7b62f7035
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-13/gcc-13_13-20230215.orig.tar.gz' gcc-13_13-20230215.orig.tar.gz 87845313 SHA512:5009465ba6b292c8915d8dab8f9c3a9e139e43f0389d187d477a9e2410e761e39697f5723a6a8105882d498ea53ab28407d309f6b30ca0971db29e020ae8bcad
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-13/gcc-13_13-20230215-1ubuntu2.debian.tar.xz' gcc-13_13-20230215-1ubuntu2.debian.tar.xz 530440 SHA512:b4fec4f9b6177e06d9803944206907feac165a4b18be3012e70c5bd5ae6040c9ca171f75180a95dffabe94a11892d4b68a9668a68cabafe5d35acab329f64ffe
-```
 
 ### `dpkg` source package: `gdbm=1.23-3`
 
@@ -1356,15 +1351,9 @@ Licenses: (parsed from: `/usr/share/doc/libselinux1/copyright`)
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libselinux=3.4-1build3
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.4-1build3.dsc' libselinux_3.4-1build3.dsc 2908 SHA512:c5d3bda0e675bc167c785dfabc4b9d676c84fa643e8874eccf635249df60fcc293bc859343b20c387c1a70123099d75904a1781a5aa5a648cf11407328b9061b
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.4.orig.tar.gz' libselinux_3.4.orig.tar.gz 210061 SHA512:7ffa6d2159d2333d836bde3f75dfc78a278283b66ae1e441c178371adb6f463aa6f2d62439079e2068d1135c39dd2b367b001d917c0bdc6871a73630919ef81e
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.4.orig.tar.gz.asc' libselinux_3.4.orig.tar.gz.asc 833 SHA512:de1e0431cbf8526c4de77e1ebe9fa40111ea4a0e71d6b0e9ec6c975b61f4090ec5df4386af362bbd5cc8faffb24c21febc13356fe081df642bbfa52010a00ba0
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libselinux/libselinux_3.4-1build3.debian.tar.xz' libselinux_3.4-1build3.debian.tar.xz 29572 SHA512:f32f0ce97c712e4a68966383d190cc519d0d1c11d98e45f8c33760dd67e7443bac3c9b9ed6f90156dfd27e24e9078767ca83ebee5db326c24cad763d8c68849d
-```
 
 ### `dpkg` source package: `libsemanage=3.4-1build3`
 
@@ -1825,14 +1814,9 @@ Licenses: (parsed from: `/usr/share/doc/libldap2/copyright`)
 - `UMich`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.6.3+dfsg-1~exp1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.3%2bdfsg-1%7eexp1ubuntu1.dsc' openldap_2.6.3+dfsg-1~exp1ubuntu1.dsc 3461 SHA512:bc00aa6ae1d7f8536dd5e30438d5f12d3ed382c1ea0c6f0a56f0ecdd6870cfe1a3b69f1b6d9aa1275d257986c527eef75a18594d05b6278a4f7d43d04ee3a704
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.3%2bdfsg.orig.tar.xz' openldap_2.6.3+dfsg.orig.tar.xz 3741144 SHA512:951b935aa6a3f9dd1c2b7a4a289b6244d605a2a3de248051c8078b8afd5bfaab5943d5c6adddf9e85eb6813db3ddff18478f2c85625df4095ec037bdc579bdc7
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.3%2bdfsg-1%7eexp1ubuntu1.debian.tar.xz' openldap_2.6.3+dfsg-1~exp1ubuntu1.debian.tar.xz 178740 SHA512:0aff107f8e324195f4c00b367a9c1f29c9bdf71812a59693007532ef457cf924215ee025b911ec9ab1d65c0cf0ccde7c288df507925a5dd54fbcbf6f774dc555
-```
 
 ### `dpkg` source package: `openssh=1:9.0p1-1ubuntu8`
 
@@ -2045,14 +2029,9 @@ Licenses: (parsed from: `/usr/share/doc/libprocps8/copyright`, `/usr/share/doc/p
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris procps=2:3.3.17-7ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.17-7ubuntu1.dsc' procps_3.3.17-7ubuntu1.dsc 2237 SHA512:756be0329040247eadaf884e61164172eb618dee97bed81242b100a53dd219d8b471067c9a7109ac96214256ed1f5f7832883cfd632e1d209bbb730bf6f4ea0a
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.17.orig.tar.xz' procps_3.3.17.orig.tar.xz 1008428 SHA512:59e9a5013430fd9da508c4655d58375dc32e025bb502bb28fb9a92a48e4f2838b3355e92b4648f7384b2050064d17079bf4595d889822ebb5030006bc154a1a7
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.17-7ubuntu1.debian.tar.xz' procps_3.3.17-7ubuntu1.debian.tar.xz 34528 SHA512:77435e34138738e58394c7eab10716d5ad59b4eb92c045114dd0ef374b3e987ceada7e65272e4ead85e6adeaa9980dc81ee5dd6c937a6be1c241c339d35475c1
-```
 
 ### `dpkg` source package: `python3-defaults=3.11.1-3`
 

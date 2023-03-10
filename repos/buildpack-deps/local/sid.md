@@ -623,21 +623,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.88.1-1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.88.1-1.dsc' curl_7.88.1-1.dsc 2955 SHA256:570273973ead3345db93e0fe1928ebc2cd3778410fa96a21dcea7f65a58f3ff7
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.88.1.orig.tar.gz' curl_7.88.1.orig.tar.gz 4343562 SHA256:cdb38b72e36bc5d33d5b8810f8018ece1baa29a8f215b4495e495ded82bbf3c7
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.88.1.orig.tar.gz.asc' curl_7.88.1.orig.tar.gz.asc 488 SHA256:7a5a55d7123149a1b357f298cf895bd0a601e3a2807005ef6c95f3752803485f
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.88.1-1.debian.tar.xz' curl_7.88.1-1.debian.tar.xz 39392 SHA256:8d24c676fcc1f1009706cebf34f52ff1795f783fd385bba3af60211b6d46da95
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/7.88.1-1/
 
-- https://sources.debian.net/src/curl/7.88.1-1/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.88.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.88.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg-11`
 
@@ -1219,20 +1211,13 @@ Licenses: (parsed from: `/usr/share/doc/fonts-dejavu-core/copyright`)
 - `GPL-2+`
 - `bitstream-vera`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris fonts-dejavu=2.37-5
-'http://deb.debian.org/debian/pool/main/f/fonts-dejavu/fonts-dejavu_2.37-5.dsc' fonts-dejavu_2.37-5.dsc 2460 SHA256:ebabef6e1df58c2caf9837c571fd81665941888201d7146a6a2a927f02d820e3
-'http://deb.debian.org/debian/pool/main/f/fonts-dejavu/fonts-dejavu_2.37.orig.tar.bz2' fonts-dejavu_2.37.orig.tar.bz2 12050109 SHA256:4b21c5203f792343d5e90ab1cb0cf07e99887218abe3d83cd9a98cea9085e799
-'http://deb.debian.org/debian/pool/main/f/fonts-dejavu/fonts-dejavu_2.37-5.debian.tar.xz' fonts-dejavu_2.37-5.debian.tar.xz 12776 SHA256:f7af46d24172e1a908116b549b07c0d5dbcebdcb3451fd9837d23d4fa6e829af
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/fonts-dejavu/2.37-5/
 
-- https://sources.debian.net/src/fonts-dejavu/2.37-5/ (for browsing the source)
-- https://sources.debian.net/src/fonts-dejavu/2.37-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/fonts-dejavu/2.37-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `freetype=2.12.1+dfsg-4`
 
@@ -5024,20 +5009,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.11-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.11=3.11.2-4
-'http://deb.debian.org/debian/pool/main/p/python3.11/python3.11_3.11.2-4.dsc' python3.11_3.11.2-4.dsc 3606 SHA256:d455d92b4d453c2ed3e0ce2005b2fe8fb29018f406936970e4bf088d65a2fd06
-'http://deb.debian.org/debian/pool/main/p/python3.11/python3.11_3.11.2.orig.tar.gz' python3.11_3.11.2.orig.tar.gz 26437858 SHA256:2411c74bda5bbcfcddaf4531f66d1adc73f247f529aee981b029513aefdbf849
-'http://deb.debian.org/debian/pool/main/p/python3.11/python3.11_3.11.2-4.debian.tar.xz' python3.11_3.11.2-4.debian.tar.xz 212572 SHA256:a4e4556ce57c793d5e5cb84d81ef7127bd62e5137dc4c36f014fd1b0f92864a7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3.11/3.11.2-4/
 
-- https://sources.debian.net/src/python3.11/3.11.2-4/ (for browsing the source)
-- https://sources.debian.net/src/python3.11/3.11.2-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.11/3.11.2-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=8.2-1.3`
 
