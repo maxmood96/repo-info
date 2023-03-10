@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f5c248fa831f7fa1518c5c36864ae464f8cacedc45b450685a4aaad100155c22`
-- Created: `2023-03-01T18:36:53.487939522Z`
-- Virtual Size: ~ 1.47 Gb  
+- Image ID: `sha256:00341a9eff34354f7585b9e74eff007c2d2b22e99775be08d20097f3d9d2f459`
+- Created: `2023-03-09T22:22:17.818762275Z`
+- Virtual Size: ~ 1.48 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `RUSTUP_HOME=/usr/local/rustup`
   - `CARGO_HOME=/usr/local/cargo`
-  - `RUST_VERSION=1.67.1`
+  - `RUST_VERSION=1.68.0`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -136,21 +136,13 @@ Licenses: (parsed from: `/usr/share/doc/libapr1/copyright`)
 
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apr=1.7.2-2
-'http://deb.debian.org/debian/pool/main/a/apr/apr_1.7.2-2.dsc' apr_1.7.2-2.dsc 2262 SHA256:ba56f3f845230f0ae63173d8bc76881bd6df20b20c67ccf099e8541e3432e66b
-'http://deb.debian.org/debian/pool/main/a/apr/apr_1.7.2.orig.tar.bz2' apr_1.7.2.orig.tar.bz2 890218 SHA256:75e77cc86776c030c0a5c408dfbd0bf2a0b75eed5351e52d5439fa1e5509a43e
-'http://deb.debian.org/debian/pool/main/a/apr/apr_1.7.2.orig.tar.bz2.asc' apr_1.7.2.orig.tar.bz2.asc 833 SHA256:3e45e804041cfd112d3710db11424e861a6f96e5b8908fcb73bc558f7d480f37
-'http://deb.debian.org/debian/pool/main/a/apr/apr_1.7.2-2.debian.tar.xz' apr_1.7.2-2.debian.tar.xz 53316 SHA256:f0d9f091966a4e9369fc54dec238a50be15d67c934706d555c358e8cbdf47ac1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apr/1.7.2-2/
 
-- https://sources.debian.net/src/apr/1.7.2-2/ (for browsing the source)
-- https://sources.debian.net/src/apr/1.7.2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apr/1.7.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apt=2.5.6`
 
@@ -969,19 +961,13 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`, `/usr/share/doc/dpkg-de
 - `GPL-2+`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.21.20
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.21.20.dsc' dpkg_1.21.20.dsc 3061 SHA256:c80fe63f48e353916401f11046e39648de9d4e79c353399aa55e91c025a45525
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.21.20.tar.xz' dpkg_1.21.20.tar.xz 5394224 SHA256:5db30ed4af9fd9e933bcfdc6070a30d3d319b345f9348b7349e1f2c1625c1c12
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dpkg/1.21.20/
 
-- https://sources.debian.net/src/dpkg/1.21.20/ (for browsing the source)
-- https://sources.debian.net/src/dpkg/1.21.20/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dpkg/1.21.20/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `e2fsprogs=1.46.6-1`
 
@@ -1234,20 +1220,13 @@ Licenses: (parsed from: `/usr/share/doc/fonts-dejavu-core/copyright`)
 - `GPL-2+`
 - `bitstream-vera`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris fonts-dejavu=2.37-4
-'http://deb.debian.org/debian/pool/main/f/fonts-dejavu/fonts-dejavu_2.37-4.dsc' fonts-dejavu_2.37-4.dsc 2460 SHA256:7445c551eef7af16238758e7348e2ffaea948a541265528085eb391b451e2ace
-'http://deb.debian.org/debian/pool/main/f/fonts-dejavu/fonts-dejavu_2.37.orig.tar.bz2' fonts-dejavu_2.37.orig.tar.bz2 12050109 SHA256:4b21c5203f792343d5e90ab1cb0cf07e99887218abe3d83cd9a98cea9085e799
-'http://deb.debian.org/debian/pool/main/f/fonts-dejavu/fonts-dejavu_2.37-4.debian.tar.xz' fonts-dejavu_2.37-4.debian.tar.xz 12664 SHA256:415dba0560516845daed0378c6434143508d1215ae568d7243ec08fbc029e989
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/fonts-dejavu/2.37-4/
 
-- https://sources.debian.net/src/fonts-dejavu/2.37-4/ (for browsing the source)
-- https://sources.debian.net/src/fonts-dejavu/2.37-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/fonts-dejavu/2.37-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `freetype=2.12.1+dfsg-4`
 
@@ -1485,20 +1464,13 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.39.2-1
-'http://deb.debian.org/debian/pool/main/g/git/git_2.39.2-1.dsc' git_2.39.2-1.dsc 2825 SHA256:5580d3bc887e643e0c3e0f2508721944f7a6aa76e7500bc3df0667bdbd66f044
-'http://deb.debian.org/debian/pool/main/g/git/git_2.39.2.orig.tar.xz' git_2.39.2.orig.tar.xz 7163224 SHA256:475f75f1373b2cd4e438706185175966d5c11f68c4db1e48c26257c43ddcf2d6
-'http://deb.debian.org/debian/pool/main/g/git/git_2.39.2-1.debian.tar.xz' git_2.39.2-1.debian.tar.xz 740572 SHA256:7b53684272257f7756e0bd216670fb0264ec565133c8d3bba915fbdffe7e80c9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/git/1:2.39.2-1/
 
-- https://sources.debian.net/src/git/1:2.39.2-1/ (for browsing the source)
-- https://sources.debian.net/src/git/1:2.39.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/git/1:2.39.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.74.5-1`
 
@@ -4904,20 +4876,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `double-metaphone`
 - `nagaysau-ishii`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-15=15.2-1
-'http://deb.debian.org/debian/pool/main/p/postgresql-15/postgresql-15_15.2-1.dsc' postgresql-15_15.2-1.dsc 3878 SHA256:20e89ad20ef0b4edc3527926e019024cb9398454f121e3640aad24fbd7e66107
-'http://deb.debian.org/debian/pool/main/p/postgresql-15/postgresql-15_15.2.orig.tar.bz2' postgresql-15_15.2.orig.tar.bz2 22688379 SHA256:99a2171fc3d6b5b5f56b757a7a3cb85d509a38e4273805def23941ed2b8468c7
-'http://deb.debian.org/debian/pool/main/p/postgresql-15/postgresql-15_15.2-1.debian.tar.xz' postgresql-15_15.2-1.debian.tar.xz 22528 SHA256:20ae9286ecbae9d4ffa16e871c6bbfcf644532e95a1ca5c7524315a6278aa3c5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/postgresql-15/15.2-1/
 
-- https://sources.debian.net/src/postgresql-15/15.2-1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-15/15.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-15/15.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:4.0.2-3`
 
