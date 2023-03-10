@@ -2,15 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e4674ac67a52f4d29bc8349e9dcca7db8393d778c97c79d9e2f6e997603a99cd`
-- Created: `2023-02-15T19:19:29.738991731Z`
-- Virtual Size: ~ 365.23 Mb  
+- Image ID: `sha256:78318a9bb40fafc09d509b42e85e31a99ddcdb9c30d7cb9b958e8ac96ff51730`
+- Created: `2023-03-08T00:48:10.652955043Z`
+- Virtual Size: ~ 365.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
 - Environment:
   - `PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GOLANG_VERSION=1.19.6`
+  - `GOLANG_VERSION=1.19.7`
   - `GOPATH=/go`
   - `XCADDY_VERSION=v0.3.2`
   - `CADDY_VERSION=v2.6.4`
@@ -175,16 +175,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `git`
 
 ```console
-git-2.38.4-r0 description:
+git-2.38.4-r1 description:
 Distributed version control system
 
-git-2.38.4-r0 webpage:
+git-2.38.4-r1 webpage:
 https://www.git-scm.com/
 
-git-2.38.4-r0 installed size:
+git-2.38.4-r1 installed size:
 6068 KiB
 
-git-2.38.4-r0 license:
+git-2.38.4-r1 license:
 GPL-2.0-or-later
 
 ```
@@ -277,16 +277,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.87.0-r1 description:
+libcurl-7.88.1-r0 description:
 The multiprotocol file transfer library
 
-libcurl-7.87.0-r1 webpage:
+libcurl-7.88.1-r0 webpage:
 https://curl.se/
 
-libcurl-7.87.0-r1 installed size:
-540 KiB
+libcurl-7.88.1-r0 installed size:
+552 KiB
 
-libcurl-7.87.0-r1 license:
+libcurl-7.88.1-r0 license:
 curl
 
 ```
