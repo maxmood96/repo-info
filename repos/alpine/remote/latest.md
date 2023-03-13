@@ -1,7 +1,7 @@
 ## `alpine:latest`
 
 ```console
-$ docker pull alpine@sha256:69665d02cb32192e52e07644d76bc6f25abeb5410edc1c7a81a10ba3f0efb90a
+$ docker pull alpine@sha256:ff6bdca1701f3a8a67e328815ff2346b0e4067d32ec36b7992c1fdc001dc8517
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -43,20 +43,20 @@ CMD ["/bin/sh"]
 ### `alpine:latest` - linux; arm variant v6
 
 ```console
-$ docker pull alpine@sha256:e8748b26b68a624c7d2622ff045ce32b76ea31b50bba8e74989cd9ec84e33bb0
+$ docker pull alpine@sha256:6b68cf2f9f4ace49bf3ecc4c13436ec62afa5e57eef939d178a9a2750c6e5843
 ```
 
--	Docker Version: 20.10.17
+-	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.1 MB (3110885 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:55ed7e199d105db0e3d248a0cfa6ff1c497c20c5bfaec7cf164130ab805ccbe9`
+-	Image ID: `sha256:05e600ee7f411322d4c4f742facd0e67e2140196ed7ed94e0df5599a0db4601b`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Fri, 10 Feb 2023 20:49:28 GMT
+# Mon, 13 Mar 2023 16:12:44 GMT
 ADD file:d825d9aef59df0df23c0140a490998407ee0a62a051699b5c050aef7cb03f042 in / 
-# Fri, 10 Feb 2023 20:49:28 GMT
+# Mon, 13 Mar 2023 16:12:44 GMT
 CMD ["/bin/sh"]
 ```
 
