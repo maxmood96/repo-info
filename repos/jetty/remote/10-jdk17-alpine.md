@@ -1,7 +1,7 @@
 ## `jetty:10-jdk17-alpine`
 
 ```console
-$ docker pull jetty@sha256:0728cf83605f5e173caee20639c56589af6f6b2592aff1e0b6808451704ed943
+$ docker pull jetty@sha256:bd4c7a5a1a107ff6d01b17b4ec06b394a6731a31accffacf6258dfad89bdbc85
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull jetty@sha256:0728cf83605f5e173caee20639c56589af6f6b2592aff1e0b6808
 ### `jetty:10-jdk17-alpine` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:5b45ec8e267a995a8ebc0b9069546f2d4274df1f17aa53456d2bcaf989d2d6e3
+$ docker pull jetty@sha256:991d1c506884198b2cdfd8bd807a064563a9fd38fe171e1fc194e72c32b6c2b5
 ```
 
--	Docker Version: 20.10.12
+-	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **225.4 MB (225423532 bytes)**  
+-	Total Size: **225.4 MB (225390261 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:25768b8267798c1d6cad0eb8d4902d2fc18f1ef09e89033429b586bdf7de3c78`
+-	Image ID: `sha256:1165a5e5d4cf5b8cfb89913478bc349e66a8806731173ba54a908f8099371fc9`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -43,33 +43,33 @@ RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
 # Sat, 11 Feb 2023 05:25:58 GMT
 CMD ["jshell"]
-# Sat, 11 Feb 2023 05:54:00 GMT
-ENV JETTY_VERSION=10.0.13
-# Sat, 11 Feb 2023 05:54:00 GMT
+# Wed, 15 Mar 2023 22:45:23 GMT
+ENV JETTY_VERSION=10.0.14
+# Wed, 15 Mar 2023 22:45:23 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Sat, 11 Feb 2023 05:54:00 GMT
+# Wed, 15 Mar 2023 22:45:23 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Sat, 11 Feb 2023 05:54:00 GMT
+# Wed, 15 Mar 2023 22:45:23 GMT
 ENV TMPDIR=/tmp/jetty
-# Sat, 11 Feb 2023 05:54:00 GMT
+# Wed, 15 Mar 2023 22:45:23 GMT
 ENV PATH=/usr/local/jetty/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 11 Feb 2023 05:54:00 GMT
-ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/10.0.13/jetty-home-10.0.13.tar.gz
-# Sat, 11 Feb 2023 05:54:00 GMT
-ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	FBA2B18D238AB852DF95745C76157BDF03D0DCD6 	5C9579B3DB2E506429319AAEF33B071B29559E1E 	F254B35617DC255D9344BCFA873A8E86B4372146
-# Sat, 11 Feb 2023 05:54:11 GMT
+# Wed, 15 Mar 2023 22:45:24 GMT
+ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/10.0.14/jetty-home-10.0.14.tar.gz
+# Wed, 15 Mar 2023 22:45:24 GMT
+ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	E22488CC94F63E3FC928536C4241C08270D999C3
+# Wed, 15 Mar 2023 22:45:33 GMT
 RUN set -xe ; 	mkdir -p $TMPDIR ; 	apk add --no-cache gnupg curl ; 	export GNUPGHOME=/jetty-keys ; 	mkdir -p "$GNUPGHOME" ; 	for key in $JETTY_GPG_KEYS; do 		gpg --batch --keyserver "hkps://keyserver.ubuntu.com" --recv-keys "$key"; 	done ; 	mkdir -p "$JETTY_HOME" ; 	cd $JETTY_HOME ; 	curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz ; 	curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc ; 	gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz ; 	tar -xvf jetty.tar.gz --strip-components=1 ; 	sed -i '/jetty-logging/d' etc/jetty.conf ; 	mkdir -p "$JETTY_BASE" ; 	cd $JETTY_BASE ; 	java -jar "$JETTY_HOME/start.jar" --create-startd 		--add-to-start="server,http,deploy,jsp,jstl,ext,resources,websocket" ; 	addgroup -S jetty && adduser -h $JETTY_BASE -S jetty -G jetty; 	chown -R jetty:jetty "$JETTY_HOME" "$JETTY_BASE" "$TMPDIR" ; 	rm -rf /tmp/hsperfdata_root ; 	rm -fr $JETTY_HOME/jetty.tar.gz* ; 	rm -fr /jetty-keys $GNUPGHOME ; 	rm -rf /tmp/hsperfdata_root ; 	java -jar "$JETTY_HOME/start.jar" --list-config ;
-# Sat, 11 Feb 2023 05:54:11 GMT
+# Wed, 15 Mar 2023 22:45:33 GMT
 WORKDIR /var/lib/jetty
-# Sat, 11 Feb 2023 05:54:11 GMT
+# Wed, 15 Mar 2023 22:45:33 GMT
 COPY multi:a6bf79f83e3ff0c7dc5946cd61ca0413cd3191ce9671725a647923d97a115fae in / 
-# Sat, 11 Feb 2023 05:54:11 GMT
+# Wed, 15 Mar 2023 22:45:33 GMT
 USER jetty
-# Sat, 11 Feb 2023 05:54:11 GMT
+# Wed, 15 Mar 2023 22:45:33 GMT
 EXPOSE 8080
-# Sat, 11 Feb 2023 05:54:12 GMT
+# Wed, 15 Mar 2023 22:45:33 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 11 Feb 2023 05:54:12 GMT
+# Wed, 15 Mar 2023 22:45:33 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -90,11 +90,11 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Sat, 11 Feb 2023 05:30:19 GMT  
 		Size: 178.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:97bc52ca29e44e388cb1b7dbbd52ea16245d19fef0348fba04cb67d12651c9a5`  
-		Last Modified: Sat, 11 Feb 2023 06:02:00 GMT  
-		Size: 18.2 MB (18233441 bytes)  
+	-	`sha256:ec3a40f28a5d27b34996dc55b145b21089098f05661e49c43738a9176680456e`  
+		Last Modified: Wed, 15 Mar 2023 23:02:47 GMT  
+		Size: 18.2 MB (18200171 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c55f87befd45e4c95f6c6f243d10854dff78d30e495ce64b8f3aea6d049a1c66`  
-		Last Modified: Sat, 11 Feb 2023 06:01:58 GMT  
-		Size: 1.4 KB (1442 bytes)  
+	-	`sha256:dcab4ac48e9128ca2f63292e172755a732583f20f1f19727fbcb6867d69e3fc0`  
+		Last Modified: Wed, 15 Mar 2023 23:02:46 GMT  
+		Size: 1.4 KB (1441 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
