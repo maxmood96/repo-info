@@ -1,7 +1,7 @@
 ## `storm:latest`
 
 ```console
-$ docker pull storm@sha256:d91fa2e8254f22ddbf0b477f228c690f392fe8d359a6be3b9f9094fb54f6b16c
+$ docker pull storm@sha256:b3d3b2a3d639aec5d96c1854f753750c5be563b589c442aea0dffd4ec3111348
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,14 +12,14 @@ $ docker pull storm@sha256:d91fa2e8254f22ddbf0b477f228c690f392fe8d359a6be3b9f909
 ### `storm:latest` - linux; amd64
 
 ```console
-$ docker pull storm@sha256:3fbb9653747d7e52fe6d208e1989c4ce7943216f432e14632782cc179217aab7
+$ docker pull storm@sha256:9217dd979b42333b6a4e1c431285036362892f0d18b49cd37208941640924fd7
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **423.6 MB (423637628 bytes)**  
+-	Total Size: **433.2 MB (433193523 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:89187738a7f08e292b7b4ce5fc2ffc95ef9155f4a81e6b3cafcbaae219be4993`
+-	Image ID: `sha256:dca7f79e19dc6c6de656282382d5284aadb83d5a565d87e1659b84751d051688`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 
 ```dockerfile
@@ -64,11 +64,14 @@ ARG DISTRO_NAME=apache-storm-2.4.0
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver hkps://keyserver.pgp.com --recv-key "$GPG_KEY" ||     gpg --keyserver hkps://keyserver.ubuntu.com --recv-keys "$GPG_KEY" ||     gpg --keyserver hkps://pgp.mit.edu --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -xzf "$DISTRO_NAME.tar.gz";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R storm:storm "$DISTRO_NAME"
 # Thu, 02 Mar 2023 10:42:52 GMT
 WORKDIR /apache-storm-2.4.0
-# Thu, 02 Mar 2023 10:42:52 GMT
+# Wed, 15 Mar 2023 23:11:14 GMT
+# ARGS: DISTRO_NAME=apache-storm-2.4.0 GPG_KEY=51379DA8A7AE5B02674EF15C134716AF768D9B6E
+RUN set -eux;     apt-get update;     apt-get install -y --no-install-recommends         zip         unzip;     for jar in         lib/storm-client-2.4.0.jar         lib-worker/storm-client-2.4.0.jar     ; do         unzip "$jar" defaults.yaml;         sed -i 's/worker.childopts: "/&-XX:+IgnoreUnrecognizedVMOptions /' defaults.yaml;         zip -u "$jar" defaults.yaml;         rm defaults.yaml;     done;     apt-get purge -y --auto-remove         zip         unzip;     rm -rf /var/lib/apt/lists/*
+# Wed, 15 Mar 2023 23:11:14 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-storm-2.4.0/bin
-# Thu, 02 Mar 2023 10:42:52 GMT
+# Wed, 15 Mar 2023 23:11:14 GMT
 COPY file:c74c732450146abc9cc672380c7829a8d892099ec5aa1f81e3fe02c4e8f97f32 in / 
-# Thu, 02 Mar 2023 10:42:52 GMT
+# Wed, 15 Mar 2023 23:11:14 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
 ```
 
@@ -101,22 +104,26 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 		Last Modified: Thu, 02 Mar 2023 10:43:33 GMT  
 		Size: 322.6 MB (322584232 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:07b15f35eb0734c4693daa2153cedfe169d438019071bfc2fdd3452e986f851a`  
-		Last Modified: Thu, 02 Mar 2023 10:43:19 GMT  
-		Size: 413.0 B  
+	-	`sha256:1e857d2713511a430ea77e11b9992d2546f6a67e2dc10d646d01d03e08a7576a`  
+		Last Modified: Wed, 15 Mar 2023 23:11:27 GMT  
+		Size: 9.6 MB (9555896 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9f4c1f014a5e5623b6b421ec36bf3d2dafe3944c254de71547cbdfea2ca5092d`  
+		Last Modified: Wed, 15 Mar 2023 23:11:26 GMT  
+		Size: 412.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `storm:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull storm@sha256:20412079eb40a94b31928c6b676040d6378c40b661860a7e73b20a3b29a3fa2f
+$ docker pull storm@sha256:c81caf5e82c7018c7d42c36608b8fc67718e26f8fe48ab97cf123faf6f1e0b5e
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **419.8 MB (419828620 bytes)**  
+-	Total Size: **429.4 MB (429385125 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:27bf5b42f312263b6c9761e8e9f77d99148869488951e51beacdcf7f21eb1f85`
+-	Image ID: `sha256:68381ffeb88e0386fdcad514ea22aa3e4eb1dea78205182c85d1361f5a8dfaa5`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 
 ```dockerfile
@@ -161,11 +168,14 @@ ARG DISTRO_NAME=apache-storm-2.4.0
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver hkps://keyserver.pgp.com --recv-key "$GPG_KEY" ||     gpg --keyserver hkps://keyserver.ubuntu.com --recv-keys "$GPG_KEY" ||     gpg --keyserver hkps://pgp.mit.edu --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -xzf "$DISTRO_NAME.tar.gz";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R storm:storm "$DISTRO_NAME"
 # Thu, 02 Mar 2023 07:40:59 GMT
 WORKDIR /apache-storm-2.4.0
-# Thu, 02 Mar 2023 07:40:59 GMT
+# Wed, 15 Mar 2023 23:10:40 GMT
+# ARGS: DISTRO_NAME=apache-storm-2.4.0 GPG_KEY=51379DA8A7AE5B02674EF15C134716AF768D9B6E
+RUN set -eux;     apt-get update;     apt-get install -y --no-install-recommends         zip         unzip;     for jar in         lib/storm-client-2.4.0.jar         lib-worker/storm-client-2.4.0.jar     ; do         unzip "$jar" defaults.yaml;         sed -i 's/worker.childopts: "/&-XX:+IgnoreUnrecognizedVMOptions /' defaults.yaml;         zip -u "$jar" defaults.yaml;         rm defaults.yaml;     done;     apt-get purge -y --auto-remove         zip         unzip;     rm -rf /var/lib/apt/lists/*
+# Wed, 15 Mar 2023 23:10:40 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-storm-2.4.0/bin
-# Thu, 02 Mar 2023 07:40:59 GMT
+# Wed, 15 Mar 2023 23:10:40 GMT
 COPY file:c74c732450146abc9cc672380c7829a8d892099ec5aa1f81e3fe02c4e8f97f32 in / 
-# Thu, 02 Mar 2023 07:40:59 GMT
+# Wed, 15 Mar 2023 23:10:40 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
 ```
 
@@ -198,7 +208,11 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 		Last Modified: Thu, 02 Mar 2023 07:41:40 GMT  
 		Size: 322.6 MB (322584263 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d04a40819eb7e5a52423138a0dedee66ca2ef296626556facec14697b85be3c0`  
-		Last Modified: Thu, 02 Mar 2023 07:41:28 GMT  
+	-	`sha256:c6eaef12f7801cee19bc49b6ca7143c82f7e8756c957399557b4ff88d1ce7977`  
+		Last Modified: Wed, 15 Mar 2023 23:10:54 GMT  
+		Size: 9.6 MB (9556505 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e80e4ead22ac5dd25ec5ec5ae9f37da72bc4cfad188012e09635c0e694fba1f0`  
+		Last Modified: Wed, 15 Mar 2023 23:10:53 GMT  
 		Size: 412.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
