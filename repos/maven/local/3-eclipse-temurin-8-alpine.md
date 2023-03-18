@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:215d15102c4800c749f540368483b1f69f5e9874b69ada46186b55832047233f`
-- Created: `2023-02-16T00:26:49.738951655Z`
-- Virtual Size: ~ 195.24 Mb  
+- Image ID: `sha256:46e373d9ea261749cf2db7916dfd3ef433269039922144ff971a41eb9e348c27`
+- Created: `2023-03-16T19:22:24.361616765Z`
+- Virtual Size: ~ 195.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -194,16 +194,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-7.87.0-r1 description:
+curl-7.88.1-r0 description:
 URL retrival utility and library
 
-curl-7.87.0-r1 webpage:
+curl-7.88.1-r0 webpage:
 https://curl.se/
 
-curl-7.87.0-r1 installed size:
+curl-7.88.1-r0 installed size:
 264 KiB
 
-curl-7.87.0-r1 license:
+curl-7.88.1-r0 license:
 curl
 
 ```
@@ -347,16 +347,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.87.0-r1 description:
+libcurl-7.88.1-r0 description:
 The multiprotocol file transfer library
 
-libcurl-7.87.0-r1 webpage:
+libcurl-7.88.1-r0 webpage:
 https://curl.se/
 
-libcurl-7.87.0-r1 installed size:
-540 KiB
+libcurl-7.88.1-r0 installed size:
+552 KiB
 
-libcurl-7.87.0-r1 license:
+libcurl-7.88.1-r0 license:
 curl
 
 ```
@@ -687,16 +687,16 @@ GPL-2.0-only
 ### `apk` package: `tar`
 
 ```console
-tar-1.34-r1 description:
+tar-1.34-r2 description:
 Utility used to store, backup, and transport files
 
-tar-1.34-r1 webpage:
+tar-1.34-r2 webpage:
 https://www.gnu.org/software/tar/
 
-tar-1.34-r1 installed size:
+tar-1.34-r2 installed size:
 488 KiB
 
-tar-1.34-r1 license:
+tar-1.34-r2 license:
 GPL-3.0-or-later
 
 ```
