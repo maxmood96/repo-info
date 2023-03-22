@@ -1,10 +1,10 @@
-# `joomla:4.2.8-php8.1-fpm-alpine`
+# `joomla:4.2.9-php8.1-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:bbd3c9de247b5d142749d065663884a107d2bfd3efd7e72d00b07ddf72a9e939`
-- Created: `2023-03-04T03:44:33.141468827Z`
-- Virtual Size: ~ 323.16 Mb  
+- Image ID: `sha256:4f120863124c59a89ea898d86e389debec5acda755902d2826ed29936bd32fa0`
+- Created: `2023-03-17T00:03:09.096464095Z`
+- Virtual Size: ~ 323.81 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -17,13 +17,13 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD`
-  - `PHP_VERSION=8.1.16`
-  - `PHP_URL=https://www.php.net/distributions/php-8.1.16.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.16.tar.xz.asc`
-  - `PHP_SHA256=d61f13d96a58b93c39672b58f25e1ee4ce88500f4acb1430cb01a514875c1258`
+  - `PHP_VERSION=8.1.17`
+  - `PHP_URL=https://www.php.net/distributions/php-8.1.17.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.17.tar.xz.asc`
+  - `PHP_SHA256=b5c48f95b8e1d8624dd05fc2eab7be13277f9a203ccba97bdca5a1a0fb4a1460`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
-  - `JOOMLA_VERSION=4.2.8`
-  - `JOOMLA_SHA512=364edac2a152a7c1c15171cad196e18b1b28a726aa66aaa888e203c2f444368f731103a05b705211c7a893d6068aeeb68ddfa1f57c52a5307985d3f4eb8bc4e9`
+  - `JOOMLA_VERSION=4.2.9`
+  - `JOOMLA_SHA512=25805241234753c05f562cf3be599c63cfcfb2e7dcf6b5b76b1cb4b6a4d305497c720eaccdc0939e4fceffa83099db9b3c44963fce86bafc3efc2fc34fecaa20`
 - Labels:
   - `maintainer=Llewellyn van der Merwe <llewellyn.van-der-merwe@community.joomla.org> (@Llewellynvdm), Harald Leithner <harald.leithner@community.joomla.org> (@HLeithner)`
 
@@ -746,16 +746,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.87.0-r1 description:
+libcurl-7.88.1-r0 description:
 The multiprotocol file transfer library
 
-libcurl-7.87.0-r1 webpage:
+libcurl-7.88.1-r0 webpage:
 https://curl.se/
 
-libcurl-7.87.0-r1 installed size:
-540 KiB
+libcurl-7.88.1-r0 installed size:
+552 KiB
 
-libcurl-7.87.0-r1 license:
+libcurl-7.88.1-r0 license:
 curl
 
 ```
