@@ -1,7 +1,7 @@
 ## `wordpress:beta-php8.2-fpm-alpine`
 
 ```console
-$ docker pull wordpress@sha256:b8b47e1637a2666a1250608db890ea4412548ee7c4f173d595361035a3255b03
+$ docker pull wordpress@sha256:8cdf8136fdc34672fd973d9ab52f3ef5ef08801db11c2e5022f296c91ef0c3fd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17,14 +17,14 @@ $ docker pull wordpress@sha256:b8b47e1637a2666a1250608db890ea4412548ee7c4f173d59
 ### `wordpress:beta-php8.2-fpm-alpine` - linux; amd64
 
 ```console
-$ docker pull wordpress@sha256:85ac447bd7e76ad0e6b4ddab0cd91e8c24910263b4f6ec371bbc7f9df30138cb
+$ docker pull wordpress@sha256:53098d010430330eb9270da3366f267fbcd5d14aac5b71a25ed3352118f50d42
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **103.3 MB (103331758 bytes)**  
+-	Total Size: **103.3 MB (103331471 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8c8ccb6bf6a8c5894373b9d71911ae50fb2d48cff614313f37d23df16f653f42`
+-	Image ID: `sha256:9bd055e5c7536c23baf5b1bc1b17c68a773197c876382a994da9bb2d4c3c937a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -87,17 +87,17 @@ RUN set -ex; 		apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		freetyp
 RUN set -eux; 	docker-php-ext-enable opcache; 	{ 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
 # Fri, 17 Mar 2023 01:20:12 GMT
 RUN { 		echo 'error_reporting = E_ERROR | E_WARNING | E_PARSE | E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_COMPILE_WARNING | E_RECOVERABLE_ERROR'; 		echo 'display_errors = Off'; 		echo 'display_startup_errors = Off'; 		echo 'log_errors = On'; 		echo 'error_log = /dev/stderr'; 		echo 'log_errors_max_len = 1024'; 		echo 'ignore_repeated_errors = On'; 		echo 'ignore_repeated_source = Off'; 		echo 'html_errors = Off'; 	} > /usr/local/etc/php/conf.d/error-logging.ini
-# Fri, 17 Mar 2023 01:23:24 GMT
-RUN set -eux; 	version='6.2-RC2'; 	sha1='275008d535aa34e840dd8f6913cdb64b6006a9a5'; 		curl -o wordpress.tar.gz -fL "https://wordpress.org/wordpress-$version.tar.gz"; 	echo "$sha1 *wordpress.tar.gz" | sha1sum -c -; 		tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 		[ ! -e /usr/src/wordpress/.htaccess ]; 	{ 		echo '# BEGIN WordPress'; 		echo ''; 		echo 'RewriteEngine On'; 		echo 'RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]'; 		echo 'RewriteBase /'; 		echo 'RewriteRule ^index\.php$ - [L]'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-f'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-d'; 		echo 'RewriteRule . /index.php [L]'; 		echo ''; 		echo '# END WordPress'; 	} > /usr/src/wordpress/.htaccess; 		chown -R www-data:www-data /usr/src/wordpress; 	mkdir wp-content; 	for dir in /usr/src/wordpress/wp-content/*/ cache; do 		dir="$(basename "${dir%/}")"; 		mkdir "wp-content/$dir"; 	done; 	chown -R www-data:www-data wp-content; 	chmod -R 777 wp-content
-# Fri, 17 Mar 2023 01:23:24 GMT
+# Thu, 23 Mar 2023 01:08:24 GMT
+RUN set -eux; 	version='6.2-RC3'; 	sha1='fbcbc9ec78398affc8c3b67b99257e6128d51284'; 		curl -o wordpress.tar.gz -fL "https://wordpress.org/wordpress-$version.tar.gz"; 	echo "$sha1 *wordpress.tar.gz" | sha1sum -c -; 		tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 		[ ! -e /usr/src/wordpress/.htaccess ]; 	{ 		echo '# BEGIN WordPress'; 		echo ''; 		echo 'RewriteEngine On'; 		echo 'RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]'; 		echo 'RewriteBase /'; 		echo 'RewriteRule ^index\.php$ - [L]'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-f'; 		echo 'RewriteCond %{REQUEST_FILENAME} !-d'; 		echo 'RewriteRule . /index.php [L]'; 		echo ''; 		echo '# END WordPress'; 	} > /usr/src/wordpress/.htaccess; 		chown -R www-data:www-data /usr/src/wordpress; 	mkdir wp-content; 	for dir in /usr/src/wordpress/wp-content/*/ cache; do 		dir="$(basename "${dir%/}")"; 		mkdir "wp-content/$dir"; 	done; 	chown -R www-data:www-data wp-content; 	chmod -R 777 wp-content
+# Thu, 23 Mar 2023 01:08:24 GMT
 VOLUME [/var/www/html]
-# Fri, 17 Mar 2023 01:23:24 GMT
+# Thu, 23 Mar 2023 01:08:24 GMT
 COPY --chown=www-data:www-datafile:d38fd3c0db552e13465e83c5d7bbd85c7c3d036bf1285495988cc4ab2ffaf7f5 in /usr/src/wordpress/ 
-# Fri, 17 Mar 2023 01:23:24 GMT
+# Thu, 23 Mar 2023 01:08:24 GMT
 COPY file:5be6bcc31206cb827f037769d89fd092037ed61a1e10d6cae7939a37055beb4c in /usr/local/bin/ 
-# Fri, 17 Mar 2023 01:23:24 GMT
+# Thu, 23 Mar 2023 01:08:24 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 17 Mar 2023 01:23:25 GMT
+# Thu, 23 Mar 2023 01:08:25 GMT
 CMD ["php-fpm"]
 ```
 
@@ -158,17 +158,17 @@ CMD ["php-fpm"]
 		Last Modified: Fri, 17 Mar 2023 01:27:55 GMT  
 		Size: 393.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14ed81b93b4fb12587d237d25c5b6baa1c86db3b349b90e9373fb97f7f077263`  
-		Last Modified: Fri, 17 Mar 2023 01:31:24 GMT  
-		Size: 22.8 MB (22846245 bytes)  
+	-	`sha256:8a63d3c6c4d96dab7a5d3580de1398379ac6dd219cc39f3cebf487dc580a445b`  
+		Last Modified: Thu, 23 Mar 2023 01:13:27 GMT  
+		Size: 22.8 MB (22845947 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c8ac9ea508b9664cf91e27fa0fb9012f59513410eb2ec692f9b508b4c70cd01d`  
-		Last Modified: Fri, 17 Mar 2023 01:31:21 GMT  
-		Size: 2.3 KB (2346 bytes)  
+	-	`sha256:06654074812bc84cbf624f4ccf120131bcf2b6ccb31b103eab380b67833192f5`  
+		Last Modified: Thu, 23 Mar 2023 01:13:24 GMT  
+		Size: 2.4 KB (2351 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9b791bf71b7005cf3d03c38176055e839b73ab3fe7876a27b9ed55e42f8e7b5a`  
-		Last Modified: Fri, 17 Mar 2023 01:31:21 GMT  
-		Size: 1.7 KB (1729 bytes)  
+	-	`sha256:61ccbcee02f4fa8878e6c807b9c296f2a7383a8508282517af17b78993c9b243`  
+		Last Modified: Thu, 23 Mar 2023 01:13:24 GMT  
+		Size: 1.7 KB (1735 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `wordpress:beta-php8.2-fpm-alpine` - linux; arm variant v6
