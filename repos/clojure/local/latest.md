@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3a70dea4902035f63e9a8b8cb8cd689570b8d1afeeb8acb54fb9f51eef96f117`
-- Created: `2023-03-07T19:20:27.430631211Z`
+- Image ID: `sha256:455c4520522885d0ff1616183a2091cea0a793b543d44aea331a98e5d928c9e1`
+- Created: `2023-03-16T20:20:17.636438265Z`
 - Virtual Size: ~ 658.89 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -22,7 +22,7 @@
   - `LEIN_VERSION=2.10.0`
   - `LEIN_INSTALL=/usr/local/bin/`
   - `LEIN_ROOT=1`
-  - `CLOJURE_VERSION=1.11.1.1252`
+  - `CLOJURE_VERSION=1.11.1.1257`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
@@ -331,15 +331,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.8
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.8.dsc' curl_7.81.0-1ubuntu1.8.dsc 3139 SHA512:b3861b53cea4965e165cb7cf53570c0e7a55e4f8cfc3b34d0ee289e1e759145c188572c3393d9afe91c5939055e5042850cf88ac19137a73f11cbfdc9025bb37
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz' curl_7.81.0.orig.tar.gz 4188040 SHA512:e3084f0fa083f7f93eac923edbfdddb5fd0a372b94673ba9d4427a2b95508898c15ecdf63b99a1c1f6cf3215e27b06cbaa2b7073df038d43b362e586f92495d3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz.asc' curl_7.81.0.orig.tar.gz.asc 488 SHA512:92bc5ede831551285d67b03abe8400c609ad31c9d33e324ee5c41b92dd5c2a0245a09a396bd76807b3e44bcfef944b1e16ac266264f7b85d27cc1c072a6e82bd
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.8.debian.tar.xz' curl_7.81.0-1ubuntu1.8.debian.tar.xz 60296 SHA512:010bc7eebf117a2ca4b7bfb4449cfd6bd76a2847226f0ea93107b9d3090408a9f93200648a51d6144b9345cb3a14ea0836c071b54d9c4666ba9531dc285e6589
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg2-3ubuntu1.2`
 
@@ -1913,14 +1907,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.5.13+dfsg-0ubuntu0.22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.13%2bdfsg-0ubuntu0.22.04.1.dsc' openldap_2.5.13+dfsg-0ubuntu0.22.04.1.dsc 3310 SHA512:8162af449738240c5556873f27aff88da64cb37dbea09bf0b31930ea4be9cdb2e2ed733c33eaa616a85783a6fe60a07603136eeb449927079a45628fed89f456
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.13%2bdfsg.orig.tar.gz' openldap_2.5.13+dfsg.orig.tar.gz 5617769 SHA512:2d781539942d5a497b1c56bdf69ed3fa39e44178716e295e37c2f10ccccb1ba39c8b27c8c3aa69da14bde98f013278e9ed9a4746ef31d96aace3a96f063e5dfe
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.13%2bdfsg-0ubuntu0.22.04.1.debian.tar.xz' openldap_2.5.13+dfsg-0ubuntu0.22.04.1.debian.tar.xz 171328 SHA512:d87cc91a1ea87442fcdec494b59e54daa31804123101e1c378baa310141cc8352ab4b4efa7a5539dde69ad50023058241c73158081916ef5f7e2516996a7c94f
-```
 
 ### `dpkg` source package: `openssh=1:8.9p1-3ubuntu0.1`
 
@@ -2200,14 +2189,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.10=3.10.6-1~22.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.6-1%7e22.04.2.dsc' python3.10_3.10.6-1~22.04.2.dsc 3646 SHA512:251b8d75657cfeac261c5b1d78a63827d2610a2a44fbd95db9072b93a4b1cc81ee723fb8ace323cc395ff837ffa391d03b89ef980f93475e1a1cc63d7e2c2ab5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.6.orig.tar.xz' python3.10_3.10.6.orig.tar.xz 19600672 SHA512:f2bf424bf4f4caa524ee1248b431e8e06d0745c3fc3ba457710d75f3698e653733feb4b059cd124f1de2a9e851c30d847f567aa47abef12898c9dc8a6507b476
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.6-1%7e22.04.2.debian.tar.xz' python3.10_3.10.6-1~22.04.2.debian.tar.xz 222940 SHA512:79fec6ee9082b979fa69bc78a454f155c01928e9a93b0512fd567075faa4f89be9363fc3921fffa4109ddcd9eda56a82de237e5783e58f4100ebc86ec30a255b
-```
 
 ### `dpkg` source package: `readline=8.1.2-1`
 
@@ -2356,12 +2340,12 @@ $ apt-get source -qq --print-uris sqlite3=3.37.2-2ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.37.2-2ubuntu0.1.debian.tar.xz' sqlite3_3.37.2-2ubuntu0.1.debian.tar.xz 29208 SHA512:db22aee842a2bbeae82d43909e357fb8e0985b1410decf82240d1f86939fd5ac10b116512566d87f2250e7a99e36c3736675d23111e851a7c1cb0d0192157955
 ```
 
-### `dpkg` source package: `systemd=249.11-0ubuntu3.6`
+### `dpkg` source package: `systemd=249.11-0ubuntu3.7`
 
 Binary Packages:
 
-- `libsystemd0:amd64=249.11-0ubuntu3.6`
-- `libudev1:amd64=249.11-0ubuntu3.6`
+- `libsystemd0:amd64=249.11-0ubuntu3.7`
+- `libudev1:amd64=249.11-0ubuntu3.7`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -2374,9 +2358,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=249.11-0ubuntu3.7
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.7.dsc' systemd_249.11-0ubuntu3.7.dsc 5773 SHA512:2a69592b5dcf3ae0204bfb0664c1678d7847b68261a4f3dab11f810535414f7c403428b9fd7987a9044822bb21b5380e14050428b0ef54a212daf00c8249294a
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11.orig.tar.gz' systemd_249.11.orig.tar.gz 10622702 SHA512:fed7f81933648945a4bfac9fb12150ecd84d32181f79be0e14e0b3a789343a87569f868670e0b8dfc2801fab39f7490f95ee8c29ba831d7611f78c14ace5ddd8
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.7.debian.tar.xz' systemd_249.11-0ubuntu3.7.debian.tar.xz 240216 SHA512:8760b64af10b8bbd81444aedaca44936852d8e939cfd7111172f391fae011cabe30a6e11613a4ebe1794ac252ca65141082e62f3a76ae75736d080c20e26199a
+```
 
 ### `dpkg` source package: `sysvinit=3.01-1ubuntu1`
 

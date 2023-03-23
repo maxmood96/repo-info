@@ -1,22 +1,21 @@
-# `clojure:temurin-17-alpine`
+# `clojure:temurin-8-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c3b138c16d2b8e4960f6266ad5b52b5bf7bc03679348367b61cbed1930ce3b3f`
-- Created: `2023-03-07T19:25:24.55476012Z`
-- Virtual Size: ~ 393.97 Mb  
+- Image ID: `sha256:943aa2897fef9f66ae970bad67d22d1533f89f453fc9de8c29b997bc1aea0228`
+- Created: `2023-03-16T20:20:45.926865708Z`
+- Virtual Size: ~ 215.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Entrypoint: `["entrypoint"]`
-- Command: `["-M","--repl"]`
+- Command: `["clj"]`
 - Environment:
   - `PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/opt/java/openjdk`
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-17.0.6+10`
-  - `CLOJURE_VERSION=1.11.1.1252`
+  - `JAVA_VERSION=jdk8u362-b09`
+  - `CLOJURE_VERSION=1.11.1.1257`
 
 ## `apk` (`.apk`-based packages)
 
