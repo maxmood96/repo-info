@@ -1053,14 +1053,9 @@ Licenses: (parsed from: `/usr/share/doc/gcc-13-base/copyright`, `/usr/share/doc/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-13=13-20230305-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-13/gcc-13_13-20230305-1ubuntu1.dsc' gcc-13_13-20230305-1ubuntu1.dsc 27878 SHA512:de9e6fea2ad4f57bad663c06d25f1f08fbca6466267718a3c0992b77b1fda53ad8ccfa1baf26032a162f691cdfe15893b1039f9d8afe3f3ba937e2a461b64fa3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-13/gcc-13_13-20230305.orig.tar.gz' gcc-13_13-20230305.orig.tar.gz 88210451 SHA512:f09d55fe761e1186b280c6891eebfef889dfbaf30b7f1ed0f3cdfcb12dc69b63beff5c346d7d2eb7e36087482bf379123ac95ed0a44d0f56e5f6a99861c5294a
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-13/gcc-13_13-20230305-1ubuntu1.debian.tar.xz' gcc-13_13-20230305-1ubuntu1.debian.tar.xz 530640 SHA512:c27c22bdc9a1bbbadfd3226a555dfb84a8d520116898a0263b16b314325d9d777c0e66e76de7819b20c3bd95932b34e42deb88a8e840e271b517cdc1c67dbf58
-```
 
 ### `dpkg` source package: `gcc-defaults=1.203ubuntu1`
 
@@ -2561,14 +2556,9 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-rsvg-2.0/copyright`, `/usr/share/
 - `Unlicense,`
 - `zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris librsvg=2.54.4+dfsg-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/librsvg/librsvg_2.54.4%2bdfsg-1ubuntu1.dsc' librsvg_2.54.4+dfsg-1ubuntu1.dsc 2375 SHA512:9c9229cb7eb4a4cdd670862075256f2afe637f945a54496b48aff59f8bac1e0fe0a58c8bc4f76da544130223fdb750ddf17904363d92d34035b71e64fb9dd604
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/librsvg/librsvg_2.54.4%2bdfsg.orig.tar.xz' librsvg_2.54.4+dfsg.orig.tar.xz 20610076 SHA512:8c893ffcb7e6ab0c0c336d14056233924bacf60270a0a0f953c01f2e0e028c8a99aefc7996d0d1006031918781d967bf5db3bf5bf22b91984ae0f002e06a4133
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/librsvg/librsvg_2.54.4%2bdfsg-1ubuntu1.debian.tar.xz' librsvg_2.54.4+dfsg-1ubuntu1.debian.tar.xz 34460 SHA512:cb86e681e2d032d132bd2fb933ce37568562845c6012d4bdb84b60c090023feaaf7951e27a7d2ee8351bdbfc29810509ce8a883e15515c8714578a94adbcf3e7
-```
 
 ### `dpkg` source package: `libseccomp=2.5.4-1ubuntu2`
 
@@ -3134,14 +3124,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=6.1.0-16.16
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.1.0-16.16.dsc' linux_6.1.0-16.16.dsc 6876 SHA512:7ee9048ffa3021bb984372e12c374ef30817e6596434f68c2003df5f1eac8a3ad1b3f4ab36294f9e41fe98cf15b50387fd9eb173c6d6981f2e55104777f0fc39
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.1.0.orig.tar.gz' linux_6.1.0.orig.tar.gz 216385695 SHA512:9d8a57d9071ffe6bd7e43a52d565e455ac00e64d40137d964c66fe47838b178dddc5c278b18d3486f80966a57a8eac720c45291ea822d64996202dccbeccd4b7
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.1.0-16.16.diff.gz' linux_6.1.0-16.16.diff.gz 4199184 SHA512:14bd54c964f1cedc38034f2b227d96c0d0411372ae74fad470293c4b8ab5ac303a7ddc9b56d8bd04fb0f2cdd056ee91910bc53d9863b52aadf7936d160fc9c60
-```
 
 ### `dpkg` source package: `lto-disabled-list=38`
 
