@@ -1,7 +1,7 @@
 ## `notary:server`
 
 ```console
-$ docker pull notary@sha256:821e7444d55b3fecfa7fb5a733c5cfea488cee230b426600e65d57e0b3d77319
+$ docker pull notary@sha256:fd757de27d86c2f749a7b336de61bd6342c175323ee0412e2a63c27c0e569230
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16,13 +16,13 @@ $ docker pull notary@sha256:821e7444d55b3fecfa7fb5a733c5cfea488cee230b426600e65d
 ### `notary:server` - linux; amd64
 
 ```console
-$ docker pull notary@sha256:604804139526f61006ecaed57b24fd71298759cb029176b7f462e4958b8d2d5c
+$ docker pull notary@sha256:7eaaeb3126723c072de81b2af359de25ec17617ec5bbbc88acc9f6dc2a47e3e1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **8.0 MB (7957067 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:25990f5bee6ca64a8080d14dc3d002e1261a2b6fa5bf0cd6ce37796eda026e9e`
+-	Image ID: `sha256:e9358e3fc227aa684cfa31b63fdf32a8a3a627b7191ea5b2e74dfed5d79f9179`
 -	Entrypoint: `["entrypoint.sh"]`
 -	Default Command: `["notary-server","--version"]`
 
@@ -31,29 +31,29 @@ $ docker pull notary@sha256:604804139526f61006ecaed57b24fd71298759cb029176b7f462
 ADD file:ac5fb7eb0d68040d948989f0a50914d0d4a6b631cfe76b508eecd82eb7d46953 in / 
 # Sat, 11 Feb 2023 04:46:50 GMT
 CMD ["/bin/sh"]
-# Sat, 11 Feb 2023 10:15:51 GMT
+# Wed, 08 Mar 2023 00:28:10 GMT
 RUN adduser -D -H -g "" notary # buildkit
-# Sat, 11 Feb 2023 10:15:51 GMT
+# Wed, 08 Mar 2023 00:28:10 GMT
 EXPOSE map[4443/tcp:{}]
-# Sat, 11 Feb 2023 10:15:51 GMT
+# Wed, 08 Mar 2023 00:28:10 GMT
 ENV INSTALLDIR=/notary/server
-# Sat, 11 Feb 2023 10:15:51 GMT
+# Wed, 08 Mar 2023 00:28:10 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/notary/server
-# Sat, 11 Feb 2023 10:15:51 GMT
+# Wed, 08 Mar 2023 00:28:10 GMT
 WORKDIR /notary/server
-# Wed, 08 Mar 2023 00:49:15 GMT
+# Wed, 08 Mar 2023 00:28:10 GMT
 COPY /notary-server ./ # buildkit
-# Wed, 08 Mar 2023 00:49:15 GMT
+# Wed, 08 Mar 2023 00:28:10 GMT
 RUN ./notary-server --version # buildkit
-# Wed, 08 Mar 2023 00:49:15 GMT
+# Wed, 08 Mar 2023 00:28:10 GMT
 COPY ./server-config.json . # buildkit
-# Wed, 08 Mar 2023 00:49:15 GMT
+# Wed, 08 Mar 2023 00:28:10 GMT
 COPY ./entrypoint.sh . # buildkit
-# Wed, 08 Mar 2023 00:49:15 GMT
+# Wed, 08 Mar 2023 00:28:10 GMT
 USER notary
-# Wed, 08 Mar 2023 00:49:15 GMT
+# Wed, 08 Mar 2023 00:28:10 GMT
 ENTRYPOINT ["entrypoint.sh"]
-# Wed, 08 Mar 2023 00:49:15 GMT
+# Wed, 08 Mar 2023 00:28:10 GMT
 CMD ["notary-server" "--version"]
 ```
 
