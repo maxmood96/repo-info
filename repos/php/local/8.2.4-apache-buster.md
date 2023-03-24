@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1da6e77376326e88efabc4d71ff51abf67d410eb375634148310e2484937db6b`
-- Created: `2023-03-16T21:39:51.847139689Z`
-- Virtual Size: ~ 404.58 Mb  
+- Image ID: `sha256:4cf9d7c13c4c579492b82ecb503371cbdda4769d9adc033a683b5db0f652ced4`
+- Created: `2023-03-23T09:51:38.899364748Z`
+- Virtual Size: ~ 404.59 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -79,14 +79,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/adduser/3.118/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/adduser/3.118/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `apache2=2.4.38-3+deb10u8`
+### `dpkg` source package: `apache2=2.4.38-3+deb10u9`
 
 Binary Packages:
 
-- `apache2=2.4.38-3+deb10u8`
-- `apache2-bin=2.4.38-3+deb10u8`
-- `apache2-data=2.4.38-3+deb10u8`
-- `apache2-utils=2.4.38-3+deb10u8`
+- `apache2=2.4.38-3+deb10u9`
+- `apache2-bin=2.4.38-3+deb10u9`
+- `apache2-data=2.4.38-3+deb10u9`
+- `apache2-utils=2.4.38-3+deb10u9`
 
 Licenses: (parsed from: `/usr/share/doc/apache2/copyright`, `/usr/share/doc/apache2-bin/copyright`, `/usr/share/doc/apache2-data/copyright`, `/usr/share/doc/apache2-utils/copyright`)
 
@@ -109,17 +109,17 @@ Licenses: (parsed from: `/usr/share/doc/apache2/copyright`, `/usr/share/doc/apac
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apache2=2.4.38-3+deb10u8
-'http://deb.debian.org/debian/pool/main/a/apache2/apache2_2.4.38-3%2bdeb10u8.dsc' apache2_2.4.38-3+deb10u8.dsc 3263 SHA256:756d7b64958ab5bbe1f4526518efdb096fda59418eb7d6a84e704557414bddbc
-'http://deb.debian.org/debian/pool/main/a/apache2/apache2_2.4.38.orig.tar.gz' apache2_2.4.38.orig.tar.gz 9187294 SHA256:38d0b73aa313c28065bf58faf64cec12bf7c7d5196146107df2ad07541aa26a6
-'http://deb.debian.org/debian/pool/main/a/apache2/apache2_2.4.38-3%2bdeb10u8.debian.tar.xz' apache2_2.4.38-3+deb10u8.debian.tar.xz 1092444 SHA256:63d2e8fb0b2a148e1ebddc1ef57d90f97c1478e9dc6127fc8a63e52fd90b0d35
+$ apt-get source -qq --print-uris apache2=2.4.38-3+deb10u9
+'http://deb.debian.org/debian-security/pool/updates/main/a/apache2/apache2_2.4.38-3%2bdeb10u9.dsc' apache2_2.4.38-3+deb10u9.dsc 3958 SHA256:449b230e9de3142f203e53f20e1cbe374f455587e6498d7cd4b5f24f5cbfcf72
+'http://deb.debian.org/debian-security/pool/updates/main/a/apache2/apache2_2.4.38.orig.tar.gz' apache2_2.4.38.orig.tar.gz 9187294 SHA256:38d0b73aa313c28065bf58faf64cec12bf7c7d5196146107df2ad07541aa26a6
+'http://deb.debian.org/debian-security/pool/updates/main/a/apache2/apache2_2.4.38-3%2bdeb10u9.debian.tar.xz' apache2_2.4.38-3+deb10u9.debian.tar.xz 1098824 SHA256:513270c229ae6cbb6be6a57bf053a4f8e2792965a56654678a3bf0c618a82cc6
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/apache2/2.4.38-3+deb10u8/ (for browsing the source)
-- https://sources.debian.net/src/apache2/2.4.38-3+deb10u8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apache2/2.4.38-3+deb10u8/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/apache2/2.4.38-3+deb10u9/ (for browsing the source)
+- https://sources.debian.net/src/apache2/2.4.38-3+deb10u9/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/apache2/2.4.38-3+deb10u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apr-util=1.6.1-4+deb10u1`
 
