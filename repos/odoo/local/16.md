@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:12168a286d985abc8766f8baccbf2926da8b61e45006308b8c1d9fc750fe0bde`
-- Created: `2023-03-20T22:45:58.907346537Z`
+- Image ID: `sha256:39383433e0c0a0dffba82fba61154f2de01946245ee29f4474dbcda598d0d766`
+- Created: `2023-03-23T15:31:08.617676003Z`
 - Virtual Size: ~ 1.63 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -8458,12 +8458,12 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postg
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `postgresql-common=247.pgdg110+1`
+### `dpkg` source package: `postgresql-common=248.pgdg110+1`
 
 Binary Packages:
 
-- `postgresql-client=15+247.pgdg110+1`
-- `postgresql-client-common=247.pgdg110+1`
+- `postgresql-client=15+248.pgdg110+1`
+- `postgresql-client-common=248.pgdg110+1`
 
 Licenses: (parsed from: `/usr/share/doc/postgresql-client/copyright`, `/usr/share/doc/postgresql-client-common/copyright`)
 
