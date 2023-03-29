@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d239f11c185781fe9cb0a6dec96ebf092ca52dbe61c4299a149352d616970584`
-- Created: `2023-03-16T08:06:42.944415267Z`
-- Virtual Size: ~ 466.07 Mb  
+- Image ID: `sha256:cb9f79a3dc930917116fc7286eb7114bf3697fd2ce9485ffcf07a7a5316f58ef`
+- Created: `2023-03-28T01:17:20.139199761Z`
+- Virtual Size: ~ 467.06 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -307,12 +307,12 @@ $ apt-get source -qq --print-uris coreutils=8.32-4.1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.debian.tar.xz' coreutils_8.32-4.1ubuntu1.debian.tar.xz 41096 SHA512:74adfa2f2a85af8d7024ad6d13942e915217dcb10e29caa9c314e0a15da6ec019e7aa52ac5351c35ccea1bace7a05c6dc7569b7b0487c8fcd46b3ba42d66d89d
 ```
 
-### `dpkg` source package: `curl=7.81.0-1ubuntu1.8`
+### `dpkg` source package: `curl=7.81.0-1ubuntu1.10`
 
 Binary Packages:
 
-- `curl=7.81.0-1ubuntu1.8`
-- `libcurl4:amd64=7.81.0-1ubuntu1.8`
+- `curl=7.81.0-1ubuntu1.10`
+- `libcurl4:amd64=7.81.0-1ubuntu1.10`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -323,9 +323,15 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.10
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.10.dsc' curl_7.81.0-1ubuntu1.10.dsc 3143 SHA512:e0d97195afd5b541522656a1faaa2f9d0909ad068f10705deace4371bf25f81edbe4a33dd5e36c9c61641977244f0af443fc5e3f2765198b83bbc3bac96c6ec9
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz' curl_7.81.0.orig.tar.gz 4188040 SHA512:e3084f0fa083f7f93eac923edbfdddb5fd0a372b94673ba9d4427a2b95508898c15ecdf63b99a1c1f6cf3215e27b06cbaa2b7073df038d43b362e586f92495d3
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz.asc' curl_7.81.0.orig.tar.gz.asc 488 SHA512:92bc5ede831551285d67b03abe8400c609ad31c9d33e324ee5c41b92dd5c2a0245a09a396bd76807b3e44bcfef944b1e16ac266264f7b85d27cc1c072a6e82bd
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.10.debian.tar.xz' curl_7.81.0-1ubuntu1.10.debian.tar.xz 65220 SHA512:28f86e3e9cb4d7a6380e0901c5d95097d42aa3dbde73856de61b425f16036941ff25b8df13437e0c420e66bc9bc671d9b704403fc1642703a41183de0c40ddf0
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg2-3ubuntu1.2`
 
