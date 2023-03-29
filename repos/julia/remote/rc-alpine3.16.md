@@ -1,7 +1,7 @@
 ## `julia:rc-alpine3.16`
 
 ```console
-$ docker pull julia@sha256:7cfbd4037472c2a99e9632718ef8e6d88e0c1d11bb6291114e8e7aa4e712eeb1
+$ docker pull julia@sha256:7c3e9a286ffa3fd808a4f4d8c9a8fef66e73918bd182af706b93666772dd046e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,50 +11,50 @@ $ docker pull julia@sha256:7cfbd4037472c2a99e9632718ef8e6d88e0c1d11bb6291114e8e7
 ### `julia:rc-alpine3.16` - linux; amd64
 
 ```console
-$ docker pull julia@sha256:296d3d3dac492f2df954f992c46e4c55385805b45b50666cf090102a116548f5
+$ docker pull julia@sha256:090726351da03837dce8ac18d727d80743849b1975d46e626cf5a82e137c9ecf
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **153.0 MB (152982655 bytes)**  
+-	Total Size: **153.0 MB (152982786 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad459f0e30fcbdf60a4dea581efa11f8120cb5984bee2ad2d0e746f727fd7754`
+-	Image ID: `sha256:3cc151561d00525591977ec1adae1f574b973b0232d25b99c717b80a117fee75`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["julia"]`
 
 ```dockerfile
-# Sat, 11 Feb 2023 04:46:50 GMT
-ADD file:ac5fb7eb0d68040d948989f0a50914d0d4a6b631cfe76b508eecd82eb7d46953 in / 
-# Sat, 11 Feb 2023 04:46:50 GMT
+# Wed, 29 Mar 2023 18:19:28 GMT
+ADD file:970e6b2578ef73457ffed1189e8ba128b0211cabd3174b8c7d3afd8fb58ad614 in / 
+# Wed, 29 Mar 2023 18:19:28 GMT
 CMD ["/bin/sh"]
-# Sat, 11 Feb 2023 09:51:23 GMT
+# Wed, 29 Mar 2023 22:05:09 GMT
 ENV JULIA_PATH=/usr/local/julia
-# Sat, 11 Feb 2023 09:51:23 GMT
+# Wed, 29 Mar 2023 22:05:09 GMT
 ENV PATH=/usr/local/julia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 11 Feb 2023 09:51:23 GMT
+# Wed, 29 Mar 2023 22:05:09 GMT
 ENV JULIA_GPG=3673DF529D9049477F76B37566E3C7DC03D6E495
-# Wed, 08 Mar 2023 22:25:51 GMT
+# Wed, 29 Mar 2023 22:05:09 GMT
 ENV JULIA_VERSION=1.9.0-rc1
-# Wed, 08 Mar 2023 22:26:05 GMT
+# Wed, 29 Mar 2023 22:05:22 GMT
 RUN set -eux; 		apk add --no-cache --virtual .fetch-deps gnupg; 		arch="$(apk --print-arch)"; 	case "$arch" in 		'x86_64') 			url='https://julialang-s3.julialang.org/bin/musl/x64/1.9/julia-1.9.0-rc1-musl-x86_64.tar.gz'; 			sha256='5175033c143afa6f211aaf640f58eabe2234ee5a029e2aabac2c8b43d2438e56'; 			;; 		*) 			echo >&2 "error: current architecture ($arch) does not have a corresponding Julia binary release"; 			exit 1; 			;; 	esac; 		wget -O julia.tar.gz.asc "$url.asc"; 	wget -O julia.tar.gz "$url"; 		echo "$sha256 *julia.tar.gz" | sha256sum -w -c -; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$JULIA_GPG"; 	gpg --batch --verify julia.tar.gz.asc julia.tar.gz; 	command -v gpgconf > /dev/null && gpgconf --kill all; 	rm -rf "$GNUPGHOME" julia.tar.gz.asc; 		mkdir "$JULIA_PATH"; 	tar -xzf julia.tar.gz -C "$JULIA_PATH" --strip-components 1; 	rm julia.tar.gz; 		apk del --no-network .fetch-deps; 		julia --version
-# Wed, 08 Mar 2023 22:26:06 GMT
+# Wed, 29 Mar 2023 22:05:23 GMT
 COPY file:92a2f9b3b9de38e57462f85dbe804b0eae9fea8a95aa9bfe9d3c2b95000ae42c in /usr/local/bin/ 
-# Wed, 08 Mar 2023 22:26:06 GMT
+# Wed, 29 Mar 2023 22:05:23 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 08 Mar 2023 22:26:06 GMT
+# Wed, 29 Mar 2023 22:05:23 GMT
 CMD ["julia"]
 ```
 
 -	Layers:
-	-	`sha256:ef5531b6e74e7865f5d142926b572d742ad47c153211de707903b4f5dd8d9e77`  
-		Last Modified: Sat, 11 Feb 2023 04:47:32 GMT  
-		Size: 2.8 MB (2807762 bytes)  
+	-	`sha256:91d30c5bc19582de1415b18f1ec5bcbf52a558b62cf6cc201c9669df9f748c22`  
+		Last Modified: Wed, 29 Mar 2023 18:20:09 GMT  
+		Size: 2.8 MB (2807803 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a169c6bee4c22db0998db634f1421b2b038a5a6616c12e93827f710a4b1f4d8`  
-		Last Modified: Wed, 08 Mar 2023 22:29:29 GMT  
-		Size: 150.2 MB (150174523 bytes)  
+	-	`sha256:8e97d5dad31201fd66b87c56b16bf39fb35ba79388dc02b42bdf2ad21c540fd8`  
+		Last Modified: Wed, 29 Mar 2023 22:08:14 GMT  
+		Size: 150.2 MB (150174610 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:24d3099a7210e6682bab2c6e6d73d5a81ed84033a1119e787b6a99f887e66e5e`  
-		Last Modified: Wed, 08 Mar 2023 22:29:05 GMT  
-		Size: 370.0 B  
+	-	`sha256:c10ea893ca69c19ef20d3a47af003d2689a2bcebedd8728eac19fb9b8db9c89c`  
+		Last Modified: Wed, 29 Mar 2023 22:07:52 GMT  
+		Size: 373.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
