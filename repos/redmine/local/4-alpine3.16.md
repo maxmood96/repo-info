@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9268696744a517aec202329b0fa80a90ac6bf34253822bff010c551e26dc1601`
-- Created: `2023-03-06T23:28:44.429670872Z`
-- Virtual Size: ~ 419.40 Mb  
+- Image ID: `sha256:45f9565ddc1d5d98045ce6e7e587ef03ec2a2caa6c1e7f922dfab8512f46eae1`
+- Created: `2023-03-30T20:39:48.892445616Z`
+- Virtual Size: ~ 419.41 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -13,8 +13,8 @@
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `RUBY_MAJOR=2.7`
-  - `RUBY_VERSION=2.7.7`
-  - `RUBY_DOWNLOAD_SHA256=b38dff2e1f8ce6e5b7d433f8758752987a6b2adfd9bc7571dbc42ea5d04e3e4c`
+  - `RUBY_VERSION=2.7.8`
+  - `RUBY_DOWNLOAD_SHA256=f22f662da504d49ce2080e446e4bea7008cee11d5ec4858fc69000d0e5b1d7fb`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
@@ -523,16 +523,16 @@ GPL
 ### `apk` package: `git`
 
 ```console
-git-2.36.4-r0 description:
+git-2.36.5-r0 description:
 Distributed version control system
 
-git-2.36.4-r0 webpage:
+git-2.36.5-r0 webpage:
 https://www.git-scm.com/
 
-git-2.36.4-r0 installed size:
-10 MiB
+git-2.36.5-r0 installed size:
+11 MiB
 
-git-2.36.4-r0 license:
+git-2.36.5-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -761,16 +761,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1t-r0 description:
+libcrypto1.1-1.1.1t-r2 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1t-r0 webpage:
+libcrypto1.1-1.1.1t-r2 webpage:
 https://www.openssl.org/
 
-libcrypto1.1-1.1.1t-r0 installed size:
+libcrypto1.1-1.1.1t-r2 installed size:
 2712 KiB
 
-libcrypto1.1-1.1.1t-r0 license:
+libcrypto1.1-1.1.1t-r2 license:
 OpenSSL
 
 ```
@@ -778,16 +778,16 @@ OpenSSL
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.83.1-r5 description:
+libcurl-7.83.1-r6 description:
 The multiprotocol file transfer library
 
-libcurl-7.83.1-r5 webpage:
+libcurl-7.83.1-r6 webpage:
 https://curl.se/
 
-libcurl-7.83.1-r5 installed size:
-512 KiB
+libcurl-7.83.1-r6 installed size:
+516 KiB
 
-libcurl-7.83.1-r5 license:
+libcurl-7.83.1-r6 license:
 curl
 
 ```
@@ -795,16 +795,16 @@ curl
 ### `apk` package: `libde265`
 
 ```console
-libde265-1.0.11-r0 description:
+libde265-1.0.11-r1 description:
 Open h.265 video codec implementation
 
-libde265-1.0.11-r0 webpage:
+libde265-1.0.11-r1 webpage:
 https://github.com/strukturag/libde265
 
-libde265-1.0.11-r0 installed size:
+libde265-1.0.11-r1 installed size:
 432 KiB
 
-libde265-1.0.11-r0 license:
+libde265-1.0.11-r1 license:
 LGPL-3.0-or-later
 
 ```
@@ -1101,16 +1101,16 @@ custom
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1t-r0 description:
+libssl1.1-1.1.1t-r2 description:
 SSL shared libraries
 
-libssl1.1-1.1.1t-r0 webpage:
+libssl1.1-1.1.1t-r2 webpage:
 https://www.openssl.org/
 
-libssl1.1-1.1.1t-r0 installed size:
+libssl1.1-1.1.1t-r2 installed size:
 528 KiB
 
-libssl1.1-1.1.1t-r0 license:
+libssl1.1-1.1.1t-r2 license:
 OpenSSL
 
 ```
@@ -1985,16 +1985,16 @@ Apache-2.0 BSD
 ### `apk` package: `tiff`
 
 ```console
-tiff-4.4.0-r0 description:
+tiff-4.4.0-r1 description:
 Provides support for the Tag Image File Format or TIFF
 
-tiff-4.4.0-r0 webpage:
+tiff-4.4.0-r1 webpage:
 https://gitlab.com/libtiff/libtiff
 
-tiff-4.4.0-r0 installed size:
+tiff-4.4.0-r1 installed size:
 480 KiB
 
-tiff-4.4.0-r0 license:
+tiff-4.4.0-r1 license:
 libtiff
 
 ```
@@ -2019,16 +2019,16 @@ MIT
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2022f-r1 description:
+tzdata-2023c-r0 description:
 Timezone data
 
-tzdata-2022f-r1 webpage:
+tzdata-2023c-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2022f-r1 installed size:
+tzdata-2023c-r0 installed size:
 3172 KiB
 
-tzdata-2022f-r1 license:
+tzdata-2023c-r0 license:
 Public-Domain
 
 ```
