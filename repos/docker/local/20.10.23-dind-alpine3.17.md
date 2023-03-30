@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5bf25a203baf1532b67ac015d4dcb7e308d0edbffe9911ce6fe15618e682d144`
-- Created: `2023-03-23T01:38:51.2241774Z`
-- Virtual Size: ~ 333.84 Mb  
+- Image ID: `sha256:efca87bb8a34c0943adb2a99ee00daac9540aaf806a49c60ab90f98bd803e8dd`
+- Created: `2023-03-29T18:19:24Z`
+- Virtual Size: ~ 334.04 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `DOCKER_VERSION=20.10.23`
   - `DOCKER_BUILDX_VERSION=0.10.4`
-  - `DOCKER_COMPOSE_VERSION=2.17.0`
+  - `DOCKER_COMPOSE_VERSION=2.17.2`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=1f32e3c95d72a29b3eaacba156ed675dba976cb5`
 
@@ -412,16 +412,16 @@ GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.0.8-r0 description:
+libcrypto3-3.0.8-r3 description:
 Crypto library from openssl
 
-libcrypto3-3.0.8-r0 webpage:
+libcrypto3-3.0.8-r3 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.0.8-r0 installed size:
+libcrypto3-3.0.8-r3 installed size:
 4108 KiB
 
-libcrypto3-3.0.8-r0 license:
+libcrypto3-3.0.8-r3 license:
 Apache-2.0
 
 ```
@@ -497,16 +497,16 @@ GPL-2.0-or-later
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.0.8-r0 description:
+libssl3-3.0.8-r3 description:
 SSL shared libraries
 
-libssl3-3.0.8-r0 webpage:
+libssl3-3.0.8-r3 webpage:
 https://www.openssl.org/
 
-libssl3-3.0.8-r0 installed size:
+libssl3-3.0.8-r3 installed size:
 608 KiB
 
-libssl3-3.0.8-r0 license:
+libssl3-3.0.8-r3 license:
 Apache-2.0
 
 ```
@@ -735,16 +735,16 @@ BSD
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.0.8-r1 description:
+openssl-3.0.8-r3 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.0.8-r1 webpage:
+openssl-3.0.8-r3 webpage:
 https://www.openssl.org/
 
-openssl-3.0.8-r1 installed size:
+openssl-3.0.8-r3 installed size:
 868 KiB
 
-openssl-3.0.8-r1 license:
+openssl-3.0.8-r3 license:
 Apache-2.0
 
 ```

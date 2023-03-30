@@ -1,18 +1,18 @@
-# `docker:23.0.1-dind-rootless`
+# `docker:23.0.2-dind-rootless`
 
 ## Docker Metadata
 
-- Image ID: `sha256:879a5376b84a38c9d56b0e7566249b87648e74e9867be74bcbb6a93e9522217f`
-- Created: `2023-03-23T01:38:31.749448353Z`
-- Virtual Size: ~ 373.35 Mb  
+- Image ID: `sha256:1ea8a90526ed476da3fa2ffda284e56fd46a4860c013daea8458f4788e4599c2`
+- Created: `2023-03-29T18:19:24Z`
+- Virtual Size: ~ 373.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=23.0.1`
+  - `DOCKER_VERSION=23.0.2`
   - `DOCKER_BUILDX_VERSION=0.10.4`
-  - `DOCKER_COMPOSE_VERSION=2.17.0`
+  - `DOCKER_COMPOSE_VERSION=2.17.2`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=1f32e3c95d72a29b3eaacba156ed675dba976cb5`
 
@@ -565,16 +565,16 @@ GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.0.8-r0 description:
+libcrypto3-3.0.8-r3 description:
 Crypto library from openssl
 
-libcrypto3-3.0.8-r0 webpage:
+libcrypto3-3.0.8-r3 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.0.8-r0 installed size:
+libcrypto3-3.0.8-r3 installed size:
 4108 KiB
 
-libcrypto3-3.0.8-r0 license:
+libcrypto3-3.0.8-r3 license:
 Apache-2.0
 
 ```
@@ -667,16 +667,16 @@ GPL-2.0-or-later
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.0.8-r0 description:
+libssl3-3.0.8-r3 description:
 SSL shared libraries
 
-libssl3-3.0.8-r0 webpage:
+libssl3-3.0.8-r3 webpage:
 https://www.openssl.org/
 
-libssl3-3.0.8-r0 installed size:
+libssl3-3.0.8-r3 installed size:
 608 KiB
 
-libssl3-3.0.8-r0 license:
+libssl3-3.0.8-r3 license:
 Apache-2.0
 
 ```
@@ -922,16 +922,16 @@ BSD
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.0.8-r1 description:
+openssl-3.0.8-r3 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.0.8-r1 webpage:
+openssl-3.0.8-r3 webpage:
 https://www.openssl.org/
 
-openssl-3.0.8-r1 installed size:
+openssl-3.0.8-r3 installed size:
 868 KiB
 
-openssl-3.0.8-r1 license:
+openssl-3.0.8-r3 license:
 Apache-2.0
 
 ```
