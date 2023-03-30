@@ -1,10 +1,10 @@
-# `eclipse-temurin:19.0.2_7-jre-jammy`
+# `eclipse-temurin:20_36-jre-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:141126744eb5930ca1bbde62cf1894ce8e72372124a119b8a188fb2b6a8f66c9`
-- Created: `2023-03-16T02:48:20.549051168Z`
-- Virtual Size: ~ 275.08 Mb  
+- Image ID: `sha256:bd640afeecb759dcb06d80ece5742005cd8b36762125617464cbc03c909427b3`
+- Created: `2023-03-27T20:25:22.767749948Z`
+- Virtual Size: ~ 276.80 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-19.0.2+7`
+  - `JAVA_VERSION=jdk-20+36`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`

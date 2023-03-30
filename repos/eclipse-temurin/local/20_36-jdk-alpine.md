@@ -1,10 +1,10 @@
-# `eclipse-temurin:19.0.2_7-jdk-alpine`
+# `eclipse-temurin:20_36-jdk-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:54d307a87c8cc48414b3167f210875ee6f269add959baaf92ac290eeb68c98db`
-- Created: `2023-02-11T05:26:51.615020557Z`
-- Virtual Size: ~ 375.27 Mb  
+- Image ID: `sha256:4ca8946aaf840bee0ec1a16deaf3a97f85ff4b5c5c933d2e48f087178172a361`
+- Created: `2023-03-29T19:50:57.168938384Z`
+- Virtual Size: ~ 378.00 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-19.0.2+7`
+  - `JAVA_VERSION=jdk-20+36`
 
 ## `apk` (`.apk`-based packages)
 
@@ -259,16 +259,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.0.8-r0 description:
+libcrypto3-3.0.8-r3 description:
 Crypto library from openssl
 
-libcrypto3-3.0.8-r0 webpage:
+libcrypto3-3.0.8-r3 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.0.8-r0 installed size:
+libcrypto3-3.0.8-r3 installed size:
 4108 KiB
 
-libcrypto3-3.0.8-r0 license:
+libcrypto3-3.0.8-r3 license:
 Apache-2.0
 
 ```
@@ -344,16 +344,16 @@ ISC AND ( BSD-3-Clause OR MIT )
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.0.8-r0 description:
+libssl3-3.0.8-r3 description:
 SSL shared libraries
 
-libssl3-3.0.8-r0 webpage:
+libssl3-3.0.8-r3 webpage:
 https://www.openssl.org/
 
-libssl3-3.0.8-r0 installed size:
+libssl3-3.0.8-r3 installed size:
 608 KiB
 
-libssl3-3.0.8-r0 license:
+libssl3-3.0.8-r3 license:
 Apache-2.0
 
 ```
@@ -480,16 +480,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2022f-r1 description:
+tzdata-2023c-r0 description:
 Timezone data
 
-tzdata-2022f-r1 webpage:
+tzdata-2023c-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2022f-r1 installed size:
+tzdata-2023c-r0 installed size:
 3068 KiB
 
-tzdata-2022f-r1 license:
+tzdata-2023c-r0 license:
 Public-Domain
 
 ```

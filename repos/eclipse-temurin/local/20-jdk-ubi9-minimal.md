@@ -1,10 +1,10 @@
-# `eclipse-temurin:19.0.2_7-jdk-ubi9-minimal`
+# `eclipse-temurin:20_36-jdk-ubi9-minimal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e7c6678de9eaad359c46e59e66af6b9b353b3a5c79af0fcce2b8c753bd7c07cf`
-- Created: `2023-03-01T00:16:07.81016496Z`
-- Virtual Size: ~ 520.29 Mb  
+- Image ID: `sha256:0dc0849930939e8347e35aa33c6ae6c299f0cb28202abd3b97e0a3c70738d9b6`
+- Created: `2023-03-27T20:25:05.075183983Z`
+- Virtual Size: ~ 523.21 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-19.0.2+7`
+  - `JAVA_VERSION=jdk-20+36`
 - Labels:
   - `architecture=x86_64`
   - `build-date=2023-02-22T09:23:20`
