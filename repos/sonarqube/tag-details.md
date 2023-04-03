@@ -2,6 +2,21 @@
 
 # Tags of `sonarqube`
 
+-	[`sonarqube:10-community`](#sonarqube10-community)
+-	[`sonarqube:10-datacenter-app`](#sonarqube10-datacenter-app)
+-	[`sonarqube:10-datacenter-search`](#sonarqube10-datacenter-search)
+-	[`sonarqube:10-developer`](#sonarqube10-developer)
+-	[`sonarqube:10-enterprise`](#sonarqube10-enterprise)
+-	[`sonarqube:10.0-community`](#sonarqube100-community)
+-	[`sonarqube:10.0-datacenter-app`](#sonarqube100-datacenter-app)
+-	[`sonarqube:10.0-datacenter-search`](#sonarqube100-datacenter-search)
+-	[`sonarqube:10.0-developer`](#sonarqube100-developer)
+-	[`sonarqube:10.0-enterprise`](#sonarqube100-enterprise)
+-	[`sonarqube:10.0.0-community`](#sonarqube1000-community)
+-	[`sonarqube:10.0.0-datacenter-app`](#sonarqube1000-datacenter-app)
+-	[`sonarqube:10.0.0-datacenter-search`](#sonarqube1000-datacenter-search)
+-	[`sonarqube:10.0.0-developer`](#sonarqube1000-developer)
+-	[`sonarqube:10.0.0-enterprise`](#sonarqube1000-enterprise)
 -	[`sonarqube:9-community`](#sonarqube9-community)
 -	[`sonarqube:9-datacenter-app`](#sonarqube9-datacenter-app)
 -	[`sonarqube:9-datacenter-search`](#sonarqube9-datacenter-search)
@@ -29,6 +44,66 @@
 -	[`sonarqube:lts-datacenter-search`](#sonarqubelts-datacenter-search)
 -	[`sonarqube:lts-developer`](#sonarqubelts-developer)
 -	[`sonarqube:lts-enterprise`](#sonarqubelts-enterprise)
+
+## `sonarqube:10-community`
+
+**does not exist** (yet?)
+
+## `sonarqube:10-datacenter-app`
+
+**does not exist** (yet?)
+
+## `sonarqube:10-datacenter-search`
+
+**does not exist** (yet?)
+
+## `sonarqube:10-developer`
+
+**does not exist** (yet?)
+
+## `sonarqube:10-enterprise`
+
+**does not exist** (yet?)
+
+## `sonarqube:10.0-community`
+
+**does not exist** (yet?)
+
+## `sonarqube:10.0-datacenter-app`
+
+**does not exist** (yet?)
+
+## `sonarqube:10.0-datacenter-search`
+
+**does not exist** (yet?)
+
+## `sonarqube:10.0-developer`
+
+**does not exist** (yet?)
+
+## `sonarqube:10.0-enterprise`
+
+**does not exist** (yet?)
+
+## `sonarqube:10.0.0-community`
+
+**does not exist** (yet?)
+
+## `sonarqube:10.0.0-datacenter-app`
+
+**does not exist** (yet?)
+
+## `sonarqube:10.0.0-datacenter-search`
+
+**does not exist** (yet?)
+
+## `sonarqube:10.0.0-developer`
+
+**does not exist** (yet?)
+
+## `sonarqube:10.0.0-enterprise`
+
+**does not exist** (yet?)
 
 ## `sonarqube:9-community`
 
