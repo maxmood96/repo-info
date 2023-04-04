@@ -1308,12 +1308,7 @@ Licenses (from `rpm --query`): LGPLv2+ and MIT
 
 Licenses (from `rpm --query`): Public Domain
 
-Source:
-
-```console
-$ dnf --quiet download --source --url tzdata-2022g-1.el9_1.noarch
-http://mirror.chpc.utah.edu/pub/rocky/9.1/AppStream/source/tree/Packages/t/tzdata-2022g-1.el9_1.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `util-linux-2.37.4-9.el9.x86_64`
 
