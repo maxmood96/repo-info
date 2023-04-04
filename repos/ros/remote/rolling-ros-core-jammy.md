@@ -1,7 +1,7 @@
 ## `ros:rolling-ros-core-jammy`
 
 ```console
-$ docker pull ros@sha256:683870a2e98b8b9df641958eacaf451ee9c1e28e8c6352141249c5c69931d4fd
+$ docker pull ros@sha256:3281de60f58217372a8821d4373d5c7a0648d4cfb270c36c3eec264d027f2aa8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,14 +12,14 @@ $ docker pull ros@sha256:683870a2e98b8b9df641958eacaf451ee9c1e28e8c6352141249c5c
 ### `ros:rolling-ros-core-jammy` - linux; amd64
 
 ```console
-$ docker pull ros@sha256:558373e2b5244db4638e3c54995bd046b3284139996af4aec9d7ca4544a26b8a
+$ docker pull ros@sha256:c9921f9a67468c9f71bea0ea8bae126f4cf407ab367adcaa37cca8e8cb438c4b
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **155.0 MB (155016955 bytes)**  
+-	Total Size: **155.7 MB (155665688 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5de7e69bd74c6d8cfb89a1495edca85fde2734be737e6e335ef8c23bd076ff3f`
+-	Image ID: `sha256:26eb1d55ea08d3da76bccaf3a8a5ae07b8a8732340dbdc3ec44a22f87ffd7b29`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -50,13 +50,13 @@ ENV LANG=C.UTF-8
 ENV LC_ALL=C.UTF-8
 # Thu, 16 Mar 2023 04:35:49 GMT
 ENV ROS_DISTRO=rolling
-# Thu, 16 Mar 2023 04:36:38 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling-ros-core=0.10.0-1*     && rm -rf /var/lib/apt/lists/*
-# Thu, 16 Mar 2023 04:36:39 GMT
+# Mon, 03 Apr 2023 23:22:11 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling-ros-core=0.10.0-2*     && rm -rf /var/lib/apt/lists/*
+# Mon, 03 Apr 2023 23:22:12 GMT
 COPY file:ec5b16a0e777d7d7d041a72ffc817bf5f7b375662afa0c404f3ca36fad1afb90 in / 
-# Thu, 16 Mar 2023 04:36:40 GMT
+# Mon, 03 Apr 2023 23:22:12 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Thu, 16 Mar 2023 04:36:40 GMT
+# Mon, 03 Apr 2023 23:22:12 GMT
 CMD ["bash"]
 ```
 
@@ -81,26 +81,26 @@ CMD ["bash"]
 		Last Modified: Thu, 16 Mar 2023 04:47:15 GMT  
 		Size: 2.0 KB (1990 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b33c685998d014f12383ef62ffa8b160a5a6997ccb430856c7b808219b5fa8fa`  
-		Last Modified: Thu, 16 Mar 2023 04:50:12 GMT  
-		Size: 119.6 MB (119586566 bytes)  
+	-	`sha256:406973cc1afb21645698bc7cf99d59709094c778a695225530393d37f1efd4ef`  
+		Last Modified: Mon, 03 Apr 2023 23:32:42 GMT  
+		Size: 120.2 MB (120235298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:56b780aba52f36769730a00e20a5165eb3f92cfb1065f4f878e90bad6d915103`  
-		Last Modified: Thu, 16 Mar 2023 04:49:53 GMT  
-		Size: 196.0 B  
+	-	`sha256:287f7cbea03df781b97c2e3b15b36c82aa25f249e4db3d062359ee77adda9aed`  
+		Last Modified: Mon, 03 Apr 2023 23:32:23 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ros:rolling-ros-core-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:c9ed0b678753369c5b29f69d85512ffdf923e5487083d78ab3205477f55a85d2
+$ docker pull ros@sha256:694df8293cd76b62392d84ddd62b5efb851f20d3b8a1f8fc285f97e7543ce54a
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **150.5 MB (150522903 bytes)**  
+-	Total Size: **151.2 MB (151162865 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8ccadb939d5954f5d8a53d23635c31b2125c92107383c5e15ed8ddb0ced606d9`
+-	Image ID: `sha256:2506b0560036090677ea4e8ccf62443ce2301b69892173c7e941a4c51dabec1d`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -131,13 +131,13 @@ ENV LANG=C.UTF-8
 ENV LC_ALL=C.UTF-8
 # Thu, 16 Mar 2023 03:40:17 GMT
 ENV ROS_DISTRO=rolling
-# Thu, 16 Mar 2023 03:40:51 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling-ros-core=0.10.0-1*     && rm -rf /var/lib/apt/lists/*
-# Thu, 16 Mar 2023 03:40:54 GMT
+# Mon, 03 Apr 2023 23:40:10 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling-ros-core=0.10.0-2*     && rm -rf /var/lib/apt/lists/*
+# Mon, 03 Apr 2023 23:40:13 GMT
 COPY file:ec5b16a0e777d7d7d041a72ffc817bf5f7b375662afa0c404f3ca36fad1afb90 in / 
-# Thu, 16 Mar 2023 03:40:54 GMT
+# Mon, 03 Apr 2023 23:40:13 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Thu, 16 Mar 2023 03:40:54 GMT
+# Mon, 03 Apr 2023 23:40:13 GMT
 CMD ["bash"]
 ```
 
@@ -162,11 +162,11 @@ CMD ["bash"]
 		Last Modified: Thu, 16 Mar 2023 03:49:32 GMT  
 		Size: 2.0 KB (1990 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2b101e24838893dd2e2baf251771ada30212d7ad0ff37b148b3c5260d784504`  
-		Last Modified: Thu, 16 Mar 2023 03:52:02 GMT  
-		Size: 117.2 MB (117162841 bytes)  
+	-	`sha256:b81833bae8ba355ae6dab1ea01f0e77406295e21b17bbf496f3afcce7d6fad6f`  
+		Last Modified: Mon, 03 Apr 2023 23:52:30 GMT  
+		Size: 117.8 MB (117802804 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:54bc404c28a4c59d57847451304976e68d2be0f7bec9332bfc3e71d5079bb62b`  
-		Last Modified: Thu, 16 Mar 2023 03:51:48 GMT  
-		Size: 196.0 B  
+	-	`sha256:af6f369ce2b8fdf47bc39a0b484bfd1353585a88e69ecaf4713bb0fdbd6477cd`  
+		Last Modified: Mon, 03 Apr 2023 23:52:16 GMT  
+		Size: 195.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
