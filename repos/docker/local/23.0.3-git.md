@@ -1,9 +1,9 @@
-# `docker:23.0.2-git`
+# `docker:23.0.3-git`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8e197f3796487b34a75ad1f99577407dc4bd98ea855b8d4929846cd2483d6e75`
-- Created: `2023-03-29T18:19:24Z`
+- Image ID: `sha256:02dd7b06cdfe34500d68f0ca1475d3032f2de3e68fcb6da6918d4e59a2d6a2c6`
+- Created: `2023-04-05T00:29:23Z`
 - Virtual Size: ~ 159.17 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Command: `["sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=23.0.2`
+  - `DOCKER_VERSION=23.0.3`
   - `DOCKER_BUILDX_VERSION=0.10.4`
   - `DOCKER_COMPOSE_VERSION=2.17.2`
   - `DOCKER_TLS_CERTDIR=/certs`
