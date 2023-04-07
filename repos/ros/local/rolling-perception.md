@@ -1489,13 +1489,9 @@ Licenses: (parsed from: `/usr/share/doc/distro-info-data/copyright`)
 
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris distro-info-data=0.52ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.52ubuntu0.2.dsc' distro-info-data_0.52ubuntu0.2.dsc 1818 SHA512:f0a3ef9502f823a4846199d6caf293bff9f2cfc34b4d5cfa9d1a1d7c549c5fddd6454cdf0d3d40d648c86ac32abb4e123b12c7dbfe0460c1b8a393ac9f544316
-'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.52ubuntu0.2.tar.xz' distro-info-data_0.52ubuntu0.2.tar.xz 9332 SHA512:6c90ae9c65d5b8d2eb7289257927e4d64ee165c379a705c8d73a912f8688d2d043201a202247be131e80de7e94b460ec329d1122418f4b07e0aef07675225c9d
-```
 
 ### `dpkg` source package: `double-conversion=3.1.7-4`
 
