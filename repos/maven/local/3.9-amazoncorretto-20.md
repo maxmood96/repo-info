@@ -1,10 +1,10 @@
-# `maven:3.9.1-amazoncorretto-8`
+# `maven:3.9.1-amazoncorretto-20`
 
 ## Docker Metadata
 
-- Image ID: `sha256:69f48fcdcd7a7ff2e8b75af1ffb85686df8e4bf967b362e2d8e0aca2ca15753f`
-- Created: `2023-04-02T19:35:52Z`
-- Virtual Size: ~ 690.71 Mb  
+- Image ID: `sha256:22c2bb8dbae20dcc55661fbdb08b1b2c959b843d1cf99b8cea09f0581bfd3129`
+- Created: `2023-04-02T19:42:52Z`
+- Virtual Size: ~ 826.09 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -12,7 +12,7 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto`
+  - `JAVA_HOME=/usr/lib/jvm/java-20-amazon-corretto`
   - `MAVEN_HOME=/usr/share/maven`
   - `MAVEN_CONFIG=/root/.m2`
 
@@ -404,9 +404,9 @@ $ dnf --quiet download --source --url info-5.1-5.amzn2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/b2a940e38a9dc9fb817c16cf37a42866e742622a57bb83c1794fe670037d513b/../../../../../blobstore/968c079ef8a8a2efee76ff59cd99e06dd242b8813960171d0f5c23f4a6eb0bb2/texinfo-5.1-5.amzn2.src.rpm
 ```
 
-### `rpm` package: `java-1.8.0-amazon-corretto-devel-1.8.0_362.b08-1.x86_64`
+### `rpm` package: `java-20-amazon-corretto-devel-20.0.0.36-1.x86_64`
 
-Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib.
+Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA.
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
