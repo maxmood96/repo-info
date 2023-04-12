@@ -456,7 +456,7 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ## `unit:1.29.1-minimal`
 
 ```console
-$ docker pull unit@sha256:fb277cfcf84b386dc5dbc3697627078c55572e899aa4c8be49aee869829c1ef4
+$ docker pull unit@sha256:99e51ebf82941840101e448bae0a0980f3475a023852fcb6eb2858a847b45091
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -467,59 +467,59 @@ $ docker pull unit@sha256:fb277cfcf84b386dc5dbc3697627078c55572e899aa4c8be49aee8
 ### `unit:1.29.1-minimal` - linux; amd64
 
 ```console
-$ docker pull unit@sha256:95faf93aa531c7b46acc82830404c03c8c6eb6bf07ba3d7273c247bbe839e7c0
+$ docker pull unit@sha256:9e5b9e4f7d870ef1950d1a6ae6e437243b68fe8763b1aeecc5bbad9939c4767f
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **42.5 MB (42520811 bytes)**  
+-	Total Size: **42.5 MB (42527885 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d9759cf76d7d01636aaa533438036d091608d96cb7125149d8b97b6baae6aa77`
+-	Image ID: `sha256:405e4be1ce1cac1f169e4df4db12e755727c621a2532c620ab3ef15a8b1a67af`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
 ```dockerfile
-# Thu, 23 Mar 2023 01:30:27 GMT
-ADD file:60911afdacfdc216e44115addb5f3cc07f4166e8a4adf7be94a58aacc327ad63 in / 
-# Thu, 23 Mar 2023 01:30:27 GMT
+# Wed, 12 Apr 2023 00:20:06 GMT
+ADD file:11b1acca3f68b5c5787e292ff8dbdd114964a7272bf3519ab07710cbc01a0838 in / 
+# Wed, 12 Apr 2023 00:20:06 GMT
 CMD ["bash"]
-# Tue, 11 Apr 2023 23:46:52 GMT
+# Wed, 12 Apr 2023 11:05:08 GMT
 LABEL org.opencontainers.image.title=Unit
-# Tue, 11 Apr 2023 23:46:53 GMT
+# Wed, 12 Apr 2023 11:05:08 GMT
 LABEL org.opencontainers.image.description=Official build of Unit for Docker.
-# Tue, 11 Apr 2023 23:46:53 GMT
+# Wed, 12 Apr 2023 11:05:08 GMT
 LABEL org.opencontainers.image.url=https://unit.nginx.org
-# Tue, 11 Apr 2023 23:46:53 GMT
+# Wed, 12 Apr 2023 11:05:08 GMT
 LABEL org.opencontainers.image.source=https://github.com/nginx/unit
-# Tue, 11 Apr 2023 23:46:53 GMT
+# Wed, 12 Apr 2023 11:05:08 GMT
 LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
-# Tue, 11 Apr 2023 23:46:53 GMT
+# Wed, 12 Apr 2023 11:05:08 GMT
 LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 11 Apr 2023 23:46:53 GMT
+# Wed, 12 Apr 2023 11:05:09 GMT
 LABEL org.opencontainers.image.version=1.29.1
-# Tue, 11 Apr 2023 23:47:51 GMT
+# Wed, 12 Apr 2023 11:06:09 GMT
 RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y ca-certificates mercurial build-essential libssl-dev libpcre2-dev     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && hg clone -u 1.29.1-1 https://hg.nginx.org/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS="--prefix=/usr                 --state=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --pid=/var/run/unit.pid                 --log=/var/log/unit.log                 --tmp=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modules=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modules=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/unitd /usr/sbin/unitd     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --modules=/usr/lib/unit/debug-modules --debug     && ./configure      && make -j $NCPU version     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --modules=/usr/lib/unit/modules     && ./configure      && make -j $NCPU version     && cd     && rm -rf unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && /bin/true     && mkdir -p /var/lib/unit/     && mkdir /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stdout /var/log/unit.log
-# Tue, 11 Apr 2023 23:47:52 GMT
+# Wed, 12 Apr 2023 11:06:10 GMT
 COPY file:952dd3fe197ec3c69c75729eed06a3581063d4c1ed92bf889cf007c89efb3ae8 in /usr/local/bin/ 
-# Tue, 11 Apr 2023 23:47:52 GMT
+# Wed, 12 Apr 2023 11:06:10 GMT
 STOPSIGNAL SIGTERM
-# Tue, 11 Apr 2023 23:47:52 GMT
+# Wed, 12 Apr 2023 11:06:10 GMT
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-# Tue, 11 Apr 2023 23:47:52 GMT
+# Wed, 12 Apr 2023 11:06:10 GMT
 CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ```
 
 -	Layers:
-	-	`sha256:f1f26f5702560b7e591bef5c4d840f76a232bf13fd5aefc4e22077a1ae4440c7`  
-		Last Modified: Thu, 23 Mar 2023 01:34:23 GMT  
-		Size: 31.4 MB (31411405 bytes)  
+	-	`sha256:26c5c85e47da3022f1bdb9a112103646c5c29517d757e95426f16e4bd9533405`  
+		Last Modified: Wed, 12 Apr 2023 00:23:43 GMT  
+		Size: 31.4 MB (31418228 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c05fbe427bd9183f8200cdfe49cd4c4e5d6b91f91a9c1ae84a7d711aaff8bef`  
-		Last Modified: Tue, 11 Apr 2023 23:50:13 GMT  
-		Size: 11.1 MB (11108215 bytes)  
+	-	`sha256:373f484015c1697c7d3aa85cf6d02411c03c8b9c6f9a2e9c3d724f645c7f8599`  
+		Last Modified: Wed, 12 Apr 2023 11:07:22 GMT  
+		Size: 11.1 MB (11108466 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:623df6ec9028f72a51cfd2de8c470f17a7d25052abc525a838b63bb9a3c90b3e`  
-		Last Modified: Tue, 11 Apr 2023 23:50:11 GMT  
+	-	`sha256:26e97506461358ad0218ca4214edd2ecc0fdbbe3a3a36ea34b6b2bb722b3d630`  
+		Last Modified: Wed, 12 Apr 2023 11:07:20 GMT  
 		Size: 1.2 KB (1191 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -585,7 +585,7 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ## `unit:1.29.1-node18`
 
 ```console
-$ docker pull unit@sha256:188660080a8d1908147d134171f5678d037c390e071d6b56fd1861467c12d397
+$ docker pull unit@sha256:15dc2fb822699b0a6bd3ac53306ec6453ac9aa86548bcdc647b3e561ffd7a92e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -596,116 +596,116 @@ $ docker pull unit@sha256:188660080a8d1908147d134171f5678d037c390e071d6b56fd1861
 ### `unit:1.29.1-node18` - linux; amd64
 
 ```console
-$ docker pull unit@sha256:38525e5d05432372895cde3be3c43147f3288f3923d2e73f0cc62988be685c06
+$ docker pull unit@sha256:9ff3d7a2b9bb5882e2ae52f3241a47bf1b3cb67ab5234392cbba606f737f7582
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **389.4 MB (389442274 bytes)**  
+-	Total Size: **389.5 MB (389450012 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eda775762433ab7b8e8cb5218adb0052a867b3f60bcee919bb1df30f5d8282b9`
+-	Image ID: `sha256:8e313ea51e72e04053615ce5f109039ce81dc90474d31dd30cbcc437416e0671`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
 ```dockerfile
-# Thu, 23 Mar 2023 01:30:15 GMT
-ADD file:459d1e92eb8c24ff4758f974d289ca8a2abe04cf50b6fe2bd760aa4589478289 in / 
-# Thu, 23 Mar 2023 01:30:15 GMT
+# Wed, 12 Apr 2023 00:19:55 GMT
+ADD file:f2d012660f882f319a5878a3f9ce285f488b8f90fad49ad238541cf72089e035 in / 
+# Wed, 12 Apr 2023 00:19:56 GMT
 CMD ["bash"]
-# Thu, 23 Mar 2023 06:01:27 GMT
+# Wed, 12 Apr 2023 07:50:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 23 Mar 2023 06:01:32 GMT
+# Wed, 12 Apr 2023 07:51:04 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 23 Mar 2023 06:01:49 GMT
+# Wed, 12 Apr 2023 07:51:20 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 23 Mar 2023 06:02:39 GMT
+# Wed, 12 Apr 2023 07:52:18 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 23 Mar 2023 15:40:10 GMT
+# Wed, 12 Apr 2023 09:04:36 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node
-# Thu, 23 Mar 2023 15:42:20 GMT
+# Wed, 12 Apr 2023 09:06:46 GMT
 ENV NODE_VERSION=18.15.0
-# Thu, 23 Mar 2023 15:42:34 GMT
+# Wed, 12 Apr 2023 09:07:00 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in     amd64) ARCH='x64';;     ppc64el) ARCH='ppc64le';;     s390x) ARCH='s390x';;     arm64) ARCH='arm64';;     armhf) ARCH='armv7l';;     i386) ARCH='x86';;     *) echo "unsupported architecture"; exit 1 ;;   esac   && set -ex   && for key in     4ED778F539E3634C779C87C6D7062848A1AB005C     141F07595B7B3FFE74309A937405533BE57C7D57     74F12602B6F1C4E913FAA37AD3A89613643B6201     DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7     61FC681DFB92A079F1685E77973F295594EC4689     8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8     890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4     C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C     108F52B48DB57BB0CC439B2997B01419BD92F80A   ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner   && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt   && ln -s /usr/local/bin/node /usr/local/bin/nodejs   && node --version   && npm --version
-# Thu, 23 Mar 2023 15:42:34 GMT
+# Wed, 12 Apr 2023 09:07:01 GMT
 ENV YARN_VERSION=1.22.19
-# Thu, 23 Mar 2023 15:42:37 GMT
+# Wed, 12 Apr 2023 09:07:04 GMT
 RUN set -ex   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && yarn --version
-# Thu, 23 Mar 2023 15:42:38 GMT
+# Wed, 12 Apr 2023 09:07:04 GMT
 COPY file:4d192565a7220e135cab6c77fbc1c73211b69f3d9fb37e62857b2c6eb9363d51 in /usr/local/bin/ 
-# Thu, 23 Mar 2023 15:42:38 GMT
+# Wed, 12 Apr 2023 09:07:04 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 23 Mar 2023 15:42:38 GMT
+# Wed, 12 Apr 2023 09:07:04 GMT
 CMD ["node"]
-# Tue, 11 Apr 2023 23:42:42 GMT
+# Wed, 12 Apr 2023 11:02:30 GMT
 LABEL org.opencontainers.image.title=Unit
-# Tue, 11 Apr 2023 23:42:42 GMT
+# Wed, 12 Apr 2023 11:02:30 GMT
 LABEL org.opencontainers.image.description=Official build of Unit for Docker.
-# Tue, 11 Apr 2023 23:42:42 GMT
+# Wed, 12 Apr 2023 11:02:30 GMT
 LABEL org.opencontainers.image.url=https://unit.nginx.org
-# Tue, 11 Apr 2023 23:42:42 GMT
+# Wed, 12 Apr 2023 11:02:30 GMT
 LABEL org.opencontainers.image.source=https://github.com/nginx/unit
-# Tue, 11 Apr 2023 23:42:42 GMT
+# Wed, 12 Apr 2023 11:02:31 GMT
 LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
-# Tue, 11 Apr 2023 23:42:42 GMT
+# Wed, 12 Apr 2023 11:02:31 GMT
 LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 11 Apr 2023 23:42:42 GMT
+# Wed, 12 Apr 2023 11:02:31 GMT
 LABEL org.opencontainers.image.version=1.29.1
-# Tue, 11 Apr 2023 23:43:26 GMT
+# Wed, 12 Apr 2023 11:03:15 GMT
 RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y ca-certificates mercurial build-essential libssl-dev libpcre2-dev     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && hg clone -u 1.29.1-1 https://hg.nginx.org/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS="--prefix=/usr                 --state=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --pid=/var/run/unit.pid                 --log=/var/log/unit.log                 --tmp=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modules=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modules=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/unitd /usr/sbin/unitd     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --modules=/usr/lib/unit/debug-modules --debug     && ./configure nodejs --node-gyp=/usr/local/lib/node_modules/npm/bin/node-gyp-bin/node-gyp     && make -j $NCPU node node-install libunit-install     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --modules=/usr/lib/unit/modules     && ./configure nodejs --node-gyp=/usr/local/lib/node_modules/npm/bin/node-gyp-bin/node-gyp     && make -j $NCPU node node-install libunit-install     && cd     && rm -rf unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && /bin/true     && mkdir -p /var/lib/unit/     && mkdir /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stdout /var/log/unit.log
-# Tue, 11 Apr 2023 23:43:27 GMT
+# Wed, 12 Apr 2023 11:03:16 GMT
 COPY file:952dd3fe197ec3c69c75729eed06a3581063d4c1ed92bf889cf007c89efb3ae8 in /usr/local/bin/ 
-# Tue, 11 Apr 2023 23:43:27 GMT
+# Wed, 12 Apr 2023 11:03:16 GMT
 STOPSIGNAL SIGTERM
-# Tue, 11 Apr 2023 23:43:27 GMT
+# Wed, 12 Apr 2023 11:03:16 GMT
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-# Tue, 11 Apr 2023 23:43:27 GMT
+# Wed, 12 Apr 2023 11:03:16 GMT
 CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ```
 
 -	Layers:
-	-	`sha256:3e440a7045683e27f8e2fa04000e0e078d8dfac0c971358ae0f8c65c13321c8e`  
-		Last Modified: Thu, 23 Mar 2023 01:34:00 GMT  
-		Size: 55.0 MB (55045608 bytes)  
+	-	`sha256:b0248cf3e63c73d0e496a67807d056ca41d5e968b61087e8eca2cf4b9b4d7b99`  
+		Last Modified: Wed, 12 Apr 2023 00:23:20 GMT  
+		Size: 55.1 MB (55052736 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68a71c865a2c34678c6dea55e4b0928f751ee3c0ca91cace6e4e0578c534d6cf`  
-		Last Modified: Thu, 23 Mar 2023 06:08:01 GMT  
-		Size: 5.2 MB (5166592 bytes)  
+	-	`sha256:127e97b4daf784e08840a21765f0d4f251192ef2994d0e4a253490f81e63955b`  
+		Last Modified: Wed, 12 Apr 2023 07:57:29 GMT  
+		Size: 5.2 MB (5166696 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:670730c27c2eacf07897a6e94fe55423ea50b884d9c28161a283bbbf064d1124`  
-		Last Modified: Thu, 23 Mar 2023 06:08:02 GMT  
-		Size: 10.9 MB (10876735 bytes)  
+	-	`sha256:0336c50c9f6942b660e433b1086238eec37057c34b14c4e3b28bd7bf05bd84ba`  
+		Last Modified: Wed, 12 Apr 2023 07:57:29 GMT  
+		Size: 10.9 MB (10876749 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a7a2c95f0f8b221d776ccf35911b68eec2cf9414a44d216205a6f03e381d3d7`  
-		Last Modified: Thu, 23 Mar 2023 06:08:19 GMT  
-		Size: 54.6 MB (54583510 bytes)  
+	-	`sha256:1b89f3c7f7da8adf032a33a75d1b659cee33179ecb88ea0ba75e4fc58ebe63a6`  
+		Last Modified: Wed, 12 Apr 2023 07:57:46 GMT  
+		Size: 54.6 MB (54584801 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6d627e120214bb28a729d4b54a0ecba4c4aeaf0295ca2d1f129480145fad2af6`  
-		Last Modified: Thu, 23 Mar 2023 06:08:51 GMT  
-		Size: 196.8 MB (196812279 bytes)  
+	-	`sha256:2d62772179761f8fddfaed03ed2bdf7078b103b193d18d79a9b49364830d56cf`  
+		Last Modified: Wed, 12 Apr 2023 07:58:19 GMT  
+		Size: 196.8 MB (196811503 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1dc4abe482bf348bfe83044caa1621e01a8cb9c0a2d89a77e77bad335fcccaf4`  
-		Last Modified: Thu, 23 Mar 2023 15:49:35 GMT  
-		Size: 4.2 KB (4201 bytes)  
+	-	`sha256:9b293df1e1ca6c5d4ff93529fafef12b0f636ab6a7b739145e9193a6e4af0521`  
+		Last Modified: Wed, 12 Apr 2023 09:13:51 GMT  
+		Size: 4.2 KB (4195 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e4b205f7d691d38d3b25b3972658c116f259e3ba78d854a461bb7528cc2f6061`  
-		Last Modified: Thu, 23 Mar 2023 15:51:29 GMT  
-		Size: 45.6 MB (45576251 bytes)  
+	-	`sha256:a77f034fbdc8a1460c2aeeb39596fbffbd6a0ee9db3f747870201d03c4a4e79f`  
+		Last Modified: Wed, 12 Apr 2023 09:15:44 GMT  
+		Size: 45.6 MB (45576250 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:47ae708a5b38406618b4d3d086b51c4ce4b1171064d5d25823b45528c605b411`  
-		Last Modified: Thu, 23 Mar 2023 15:51:23 GMT  
-		Size: 2.3 MB (2276208 bytes)  
+	-	`sha256:87feaa55d9338bbd8be9813b4f9f0a0f0b967d5d257051c879d06c34a634aaa2`  
+		Last Modified: Wed, 12 Apr 2023 09:15:37 GMT  
+		Size: 2.3 MB (2276226 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c37e138d8eaccd769735e63f882c5e4bb2efbccec267c5216bc6001c9d1d3e91`  
-		Last Modified: Thu, 23 Mar 2023 15:51:22 GMT  
-		Size: 449.0 B  
+	-	`sha256:f86f7547ad3a3f486b6db40601bf09fc1f3def10ab43d5ac6935cc1c39569699`  
+		Last Modified: Wed, 12 Apr 2023 09:15:37 GMT  
+		Size: 451.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0c93cb67aa18bec90da91f59819046174ee3ba5a61d2c48bd265f2986ca042f3`  
-		Last Modified: Tue, 11 Apr 2023 23:48:58 GMT  
-		Size: 19.1 MB (19099241 bytes)  
+	-	`sha256:60a3f6bca26cb8b6b38f07e656ad1608c913692bed5b439e92358969df4e538e`  
+		Last Modified: Wed, 12 Apr 2023 11:06:38 GMT  
+		Size: 19.1 MB (19099208 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bdf49ef6cb5059fb57298acbb9d2a5bb42e75cf574bba955294350833c750860`  
-		Last Modified: Tue, 11 Apr 2023 23:48:55 GMT  
-		Size: 1.2 KB (1200 bytes)  
+	-	`sha256:447ccd914d41f627e14ff18567e0428c5ee5ff99172191d557f074b4e965ea91`  
+		Last Modified: Wed, 12 Apr 2023 11:06:35 GMT  
+		Size: 1.2 KB (1197 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `unit:1.29.1-node18` - linux; arm64 variant v8
@@ -1039,7 +1039,7 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ## `unit:1.29.1-php8.2`
 
 ```console
-$ docker pull unit@sha256:c0c1efe6ee2635daca8ac478e7c42cac3a7d34a264cdd33ae992d99add4dde51
+$ docker pull unit@sha256:4d18010dc92b022d1551b528f570d170e62f7dc3e38e22d4f2c61dbd95f07109
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1050,130 +1050,130 @@ $ docker pull unit@sha256:c0c1efe6ee2635daca8ac478e7c42cac3a7d34a264cdd33ae992d9
 ### `unit:1.29.1-php8.2` - linux; amd64
 
 ```console
-$ docker pull unit@sha256:44677840b6c23423d28fd7a93515577bdbd06ea6c1175c7fb274e278718aeeb4
+$ docker pull unit@sha256:deade2c32edeff53c5340a44f27b2532dea1914c6662730392dcbe101aaf97f9
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **179.9 MB (179915525 bytes)**  
+-	Total Size: **179.9 MB (179922603 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:34d27fc8ffa0a4f1313e75e4c73534d324b5b1c7680d45ceb5b6ace2d6776d2b`
+-	Image ID: `sha256:6d3e91bd965af79a4722d90e15cdcc59831eb7b2d255fab4e395f1423e95615f`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
 ```dockerfile
-# Thu, 23 Mar 2023 01:30:27 GMT
-ADD file:60911afdacfdc216e44115addb5f3cc07f4166e8a4adf7be94a58aacc327ad63 in / 
-# Thu, 23 Mar 2023 01:30:27 GMT
+# Wed, 12 Apr 2023 00:20:06 GMT
+ADD file:11b1acca3f68b5c5787e292ff8dbdd114964a7272bf3519ab07710cbc01a0838 in / 
+# Wed, 12 Apr 2023 00:20:06 GMT
 CMD ["bash"]
-# Thu, 23 Mar 2023 09:31:02 GMT
+# Wed, 12 Apr 2023 03:30:54 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php
-# Thu, 23 Mar 2023 09:31:03 GMT
+# Wed, 12 Apr 2023 03:30:55 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Thu, 23 Mar 2023 09:31:19 GMT
+# Wed, 12 Apr 2023 03:31:11 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 23 Mar 2023 09:31:19 GMT
+# Wed, 12 Apr 2023 03:31:11 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Mon, 27 Mar 2023 22:33:07 GMT
+# Wed, 12 Apr 2023 03:31:12 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html
-# Mon, 27 Mar 2023 22:33:07 GMT
+# Wed, 12 Apr 2023 03:31:12 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Mon, 27 Mar 2023 22:33:07 GMT
+# Wed, 12 Apr 2023 03:31:12 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Mon, 27 Mar 2023 22:33:08 GMT
+# Wed, 12 Apr 2023 03:31:12 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Mon, 27 Mar 2023 22:33:08 GMT
+# Wed, 12 Apr 2023 03:31:12 GMT
 ENV GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC
-# Mon, 27 Mar 2023 22:33:08 GMT
+# Wed, 12 Apr 2023 03:58:08 GMT
 ENV PHP_VERSION=8.2.4
-# Mon, 27 Mar 2023 22:33:08 GMT
+# Wed, 12 Apr 2023 03:58:08 GMT
 ENV PHP_URL=https://www.php.net/distributions/php-8.2.4.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.2.4.tar.xz.asc
-# Mon, 27 Mar 2023 22:33:08 GMT
+# Wed, 12 Apr 2023 03:58:08 GMT
 ENV PHP_SHA256=bc7bf4ca7ed0dd17647e3ea870b6f062fcb56b243bfdef3f59ff7f94e96176a8
-# Mon, 27 Mar 2023 22:33:21 GMT
+# Wed, 12 Apr 2023 03:58:20 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg dirmngr; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
-# Mon, 27 Mar 2023 22:33:21 GMT
+# Wed, 12 Apr 2023 03:58:21 GMT
 COPY file:ce57c04b70896f77cc11eb2766417d8a1240fcffe5bba92179ec78c458844110 in /usr/local/bin/ 
-# Mon, 27 Mar 2023 22:36:18 GMT
+# Wed, 12 Apr 2023 04:01:15 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--enable-phpdbg 		--enable-phpdbg-readline 				--with-pear 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				--enable-embed 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version
-# Mon, 27 Mar 2023 22:36:19 GMT
+# Wed, 12 Apr 2023 04:01:16 GMT
 COPY multi:6edd033b037aa2d7697fc3b9f82c2f162146c1920a0c6d25a165dc56783204db in /usr/local/bin/ 
-# Mon, 27 Mar 2023 22:36:19 GMT
+# Wed, 12 Apr 2023 04:01:16 GMT
 RUN docker-php-ext-enable sodium
-# Mon, 27 Mar 2023 22:36:20 GMT
+# Wed, 12 Apr 2023 04:01:16 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Mon, 27 Mar 2023 22:36:20 GMT
+# Wed, 12 Apr 2023 04:01:16 GMT
 CMD ["php" "-a"]
-# Tue, 11 Apr 2023 23:44:18 GMT
+# Wed, 12 Apr 2023 11:03:20 GMT
 LABEL org.opencontainers.image.title=Unit
-# Tue, 11 Apr 2023 23:44:18 GMT
+# Wed, 12 Apr 2023 11:03:20 GMT
 LABEL org.opencontainers.image.description=Official build of Unit for Docker.
-# Tue, 11 Apr 2023 23:44:18 GMT
+# Wed, 12 Apr 2023 11:03:20 GMT
 LABEL org.opencontainers.image.url=https://unit.nginx.org
-# Tue, 11 Apr 2023 23:44:18 GMT
+# Wed, 12 Apr 2023 11:03:20 GMT
 LABEL org.opencontainers.image.source=https://github.com/nginx/unit
-# Tue, 11 Apr 2023 23:44:18 GMT
+# Wed, 12 Apr 2023 11:03:20 GMT
 LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
-# Tue, 11 Apr 2023 23:44:19 GMT
+# Wed, 12 Apr 2023 11:03:21 GMT
 LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 11 Apr 2023 23:44:19 GMT
+# Wed, 12 Apr 2023 11:03:21 GMT
 LABEL org.opencontainers.image.version=1.29.1
-# Tue, 11 Apr 2023 23:45:07 GMT
+# Wed, 12 Apr 2023 11:04:09 GMT
 RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y ca-certificates mercurial build-essential libssl-dev libpcre2-dev     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && hg clone -u 1.29.1-1 https://hg.nginx.org/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS="--prefix=/usr                 --state=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --pid=/var/run/unit.pid                 --log=/var/log/unit.log                 --tmp=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modules=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modules=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/unitd /usr/sbin/unitd     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --modules=/usr/lib/unit/debug-modules --debug     && ./configure php     && make -j $NCPU php-install     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --modules=/usr/lib/unit/modules     && ./configure php     && make -j $NCPU php-install     && cd     && rm -rf unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && ldconfig     && mkdir -p /var/lib/unit/     && mkdir /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stdout /var/log/unit.log
-# Tue, 11 Apr 2023 23:45:07 GMT
+# Wed, 12 Apr 2023 11:04:09 GMT
 COPY file:952dd3fe197ec3c69c75729eed06a3581063d4c1ed92bf889cf007c89efb3ae8 in /usr/local/bin/ 
-# Tue, 11 Apr 2023 23:45:07 GMT
+# Wed, 12 Apr 2023 11:04:10 GMT
 STOPSIGNAL SIGTERM
-# Tue, 11 Apr 2023 23:45:07 GMT
+# Wed, 12 Apr 2023 11:04:10 GMT
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-# Tue, 11 Apr 2023 23:45:07 GMT
+# Wed, 12 Apr 2023 11:04:10 GMT
 CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ```
 
 -	Layers:
-	-	`sha256:f1f26f5702560b7e591bef5c4d840f76a232bf13fd5aefc4e22077a1ae4440c7`  
-		Last Modified: Thu, 23 Mar 2023 01:34:23 GMT  
-		Size: 31.4 MB (31411405 bytes)  
+	-	`sha256:26c5c85e47da3022f1bdb9a112103646c5c29517d757e95426f16e4bd9533405`  
+		Last Modified: Wed, 12 Apr 2023 00:23:43 GMT  
+		Size: 31.4 MB (31418228 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee0a4e40ccac1c58f6ca3cf6c0cbb0a5897abd33dee49b641509d5627df02b46`  
-		Last Modified: Thu, 23 Mar 2023 10:51:34 GMT  
-		Size: 226.0 B  
+	-	`sha256:39c8021d1258ac2078c39a88a97b3c834df2a1bf40f1b56f88bb237cc837c9cb`  
+		Last Modified: Wed, 12 Apr 2023 05:43:00 GMT  
+		Size: 225.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ca9fb408faadb7bf25d58bd66104b2e93e7ba37e961bb24b245abcc09230187`  
-		Last Modified: Thu, 23 Mar 2023 10:51:46 GMT  
-		Size: 91.6 MB (91636283 bytes)  
+	-	`sha256:dff43c2de6846ddda72bd88d8150e2bb08bca320f1f8ff895a2c09afae223ecb`  
+		Last Modified: Wed, 12 Apr 2023 05:43:13 GMT  
+		Size: 91.6 MB (91636376 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:25862b797d8786d6655c181772787e4fa6c932aafd6853e429409590e9f6d99b`  
-		Last Modified: Tue, 28 Mar 2023 00:51:20 GMT  
-		Size: 270.0 B  
+	-	`sha256:383987c505e89f10b4ef0b1352d7b5e1337ed05746b6e846e0760340080ea1b3`  
+		Last Modified: Wed, 12 Apr 2023 05:43:00 GMT  
+		Size: 267.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86f390fbd202858b1054f09273a7332a540a1ef21a500358d9b38f3b66218500`  
-		Last Modified: Tue, 28 Mar 2023 00:51:19 GMT  
-		Size: 12.3 MB (12310616 bytes)  
+	-	`sha256:ce60ac48fe908b8ca01d2194f7dffed20c8b7734e615a2e32f4aa16b99b71fc0`  
+		Last Modified: Wed, 12 Apr 2023 05:45:29 GMT  
+		Size: 12.3 MB (12310676 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5fb9a2031944f290343556fde7618b9a79e9f61afebbd8bb53ebf958809a91c3`  
-		Last Modified: Tue, 28 Mar 2023 00:51:18 GMT  
-		Size: 491.0 B  
+	-	`sha256:3d543c5d7aa3055ab4ca8c48727edcdac50149b36fa1eed71faf8b02c9dbeb29`  
+		Last Modified: Wed, 12 Apr 2023 05:45:28 GMT  
+		Size: 490.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:602cfa608bb04fc5753dca97d5699205d2ea0f4b3226c628dc2d7d462a588499`  
-		Last Modified: Tue, 28 Mar 2023 00:51:23 GMT  
-		Size: 34.5 MB (34519761 bytes)  
+	-	`sha256:3b6fabf19ce973edc1979657b3610d745c712ac70e74db8178b1423f6dd02fe0`  
+		Last Modified: Wed, 12 Apr 2023 05:45:33 GMT  
+		Size: 34.5 MB (34519810 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec677606e702ac5d0350c52bcb2524c0a5cbf1fa75c268931f4f855964984cf3`  
-		Last Modified: Tue, 28 Mar 2023 00:51:18 GMT  
-		Size: 2.4 KB (2449 bytes)  
+	-	`sha256:02d0ece026472c7bf832d3e9d9728de0a4a8e0d5bb30715d6bc485982278fdff`  
+		Last Modified: Wed, 12 Apr 2023 05:45:28 GMT  
+		Size: 2.5 KB (2450 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:72e00b2bfda42b2c2b8fe4f2f30bba5d864fd1e5fdf1e6174b2b0a9e0d9f164f`  
-		Last Modified: Tue, 28 Mar 2023 00:51:18 GMT  
-		Size: 244.0 B  
+	-	`sha256:07241f1fb7b826ba959767aa981403f8ae7b2b8f6fdc02adad34d57085390819`  
+		Last Modified: Wed, 12 Apr 2023 05:45:28 GMT  
+		Size: 247.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ca9f0b919e6882a67c2cdcd345db5a912596f2d807d2acd179719e44bfdb36f0`  
-		Last Modified: Tue, 11 Apr 2023 23:49:29 GMT  
-		Size: 10.0 MB (10032582 bytes)  
+	-	`sha256:fef15fa578ba8008a9c4c106f7e25a36baa510fdfbc92faeb65da01de31f6895`  
+		Last Modified: Wed, 12 Apr 2023 11:06:52 GMT  
+		Size: 10.0 MB (10032638 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3f31682b73bd0c97e9697cb276ab064adb47a344c890635b3752e4373cf422e7`  
-		Last Modified: Tue, 11 Apr 2023 23:49:27 GMT  
-		Size: 1.2 KB (1198 bytes)  
+	-	`sha256:b5c5df72605d1de9bb6e55628d92b71334d147098fe498c89078c78c91de936a`  
+		Last Modified: Wed, 12 Apr 2023 11:06:50 GMT  
+		Size: 1.2 KB (1196 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `unit:1.29.1-php8.2` - linux; arm64 variant v8
@@ -1569,7 +1569,7 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ## `unit:1.29.1-ruby3.2`
 
 ```console
-$ docker pull unit@sha256:8b0c55ae9d40511ef8ca7420bee74c5d0c6aa8c7ac2d675dd1ecc408a7ef5f34
+$ docker pull unit@sha256:7e2151e200d19aa840b6fb16dccdef9711b510af01a659c50a2886194bcf5d6b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1580,118 +1580,118 @@ $ docker pull unit@sha256:8b0c55ae9d40511ef8ca7420bee74c5d0c6aa8c7ac2d675dd1ecc4
 ### `unit:1.29.1-ruby3.2` - linux; amd64
 
 ```console
-$ docker pull unit@sha256:45040586469620f1307b190cee4e5127d74d3260f0ffc94f11a39f008801dbd8
+$ docker pull unit@sha256:05a4d5732ce36a8604412967e3bb4a6d1e6646ba57fb27154de7ff5391b63b08
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **367.3 MB (367286941 bytes)**  
+-	Total Size: **367.3 MB (367294771 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:88fe4ce74668e4fd1d2ffaa0caddef2023f3c2f13877ee8597b7526810d76b27`
+-	Image ID: `sha256:5e044af00a0e40283c3fd1ca13059a5f061d25f60d19c745daf414f778aaf71e`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
 ```dockerfile
-# Thu, 23 Mar 2023 01:30:15 GMT
-ADD file:459d1e92eb8c24ff4758f974d289ca8a2abe04cf50b6fe2bd760aa4589478289 in / 
-# Thu, 23 Mar 2023 01:30:15 GMT
+# Wed, 12 Apr 2023 00:19:55 GMT
+ADD file:f2d012660f882f319a5878a3f9ce285f488b8f90fad49ad238541cf72089e035 in / 
+# Wed, 12 Apr 2023 00:19:56 GMT
 CMD ["bash"]
-# Thu, 23 Mar 2023 06:01:27 GMT
+# Wed, 12 Apr 2023 07:50:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 23 Mar 2023 06:01:32 GMT
+# Wed, 12 Apr 2023 07:51:04 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 23 Mar 2023 06:01:49 GMT
+# Wed, 12 Apr 2023 07:51:20 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 23 Mar 2023 06:02:39 GMT
+# Wed, 12 Apr 2023 07:52:18 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 23 Mar 2023 16:03:08 GMT
+# Wed, 12 Apr 2023 09:52:50 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	{ 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /usr/local/etc/gemrc
-# Thu, 23 Mar 2023 16:03:08 GMT
+# Wed, 12 Apr 2023 09:52:51 GMT
 ENV LANG=C.UTF-8
-# Thu, 23 Mar 2023 16:03:09 GMT
+# Wed, 12 Apr 2023 09:52:51 GMT
 ENV RUBY_MAJOR=3.2
-# Thu, 30 Mar 2023 19:20:50 GMT
+# Wed, 12 Apr 2023 09:52:51 GMT
 ENV RUBY_VERSION=3.2.2
-# Thu, 30 Mar 2023 19:20:50 GMT
+# Wed, 12 Apr 2023 09:52:51 GMT
 ENV RUBY_DOWNLOAD_SHA256=4b352d0f7ec384e332e3e44cdbfdcd5ff2d594af3c8296b5636c710975149e23
-# Thu, 30 Mar 2023 19:23:05 GMT
+# Wed, 12 Apr 2023 09:55:09 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bison 		dpkg-dev 		libgdbm-dev 		ruby 	; 	rm -rf /var/lib/apt/lists/*; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.25.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='5cc9ffd1026e82e7fb2eec2121ad71f4b0f044e88bca39207b3f6b769aaa799c' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.25.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='e189948e396d47254103a49c987e7fb0e5dd8e34b200aa4481ecc4b8e41fb929' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.66.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		{ 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new; 	mv file.c.new file.c; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| grep -vE '^/usr/local/lib/' 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version
-# Thu, 30 Mar 2023 19:23:06 GMT
+# Wed, 12 Apr 2023 09:55:09 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Thu, 30 Mar 2023 19:23:06 GMT
+# Wed, 12 Apr 2023 09:55:09 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Thu, 30 Mar 2023 19:23:06 GMT
+# Wed, 12 Apr 2023 09:55:09 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 30 Mar 2023 19:23:06 GMT
+# Wed, 12 Apr 2023 09:55:10 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 1777 "$GEM_HOME"
-# Thu, 30 Mar 2023 19:23:06 GMT
+# Wed, 12 Apr 2023 09:55:10 GMT
 CMD ["irb"]
-# Tue, 11 Apr 2023 23:46:04 GMT
+# Wed, 12 Apr 2023 11:04:19 GMT
 LABEL org.opencontainers.image.title=Unit
-# Tue, 11 Apr 2023 23:46:04 GMT
+# Wed, 12 Apr 2023 11:04:20 GMT
 LABEL org.opencontainers.image.description=Official build of Unit for Docker.
-# Tue, 11 Apr 2023 23:46:04 GMT
+# Wed, 12 Apr 2023 11:04:20 GMT
 LABEL org.opencontainers.image.url=https://unit.nginx.org
-# Tue, 11 Apr 2023 23:46:04 GMT
+# Wed, 12 Apr 2023 11:04:20 GMT
 LABEL org.opencontainers.image.source=https://github.com/nginx/unit
-# Tue, 11 Apr 2023 23:46:05 GMT
+# Wed, 12 Apr 2023 11:04:20 GMT
 LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
-# Tue, 11 Apr 2023 23:46:05 GMT
+# Wed, 12 Apr 2023 11:04:20 GMT
 LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 11 Apr 2023 23:46:05 GMT
+# Wed, 12 Apr 2023 11:04:20 GMT
 LABEL org.opencontainers.image.version=1.29.1
-# Tue, 11 Apr 2023 23:46:44 GMT
+# Wed, 12 Apr 2023 11:05:00 GMT
 RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y ca-certificates mercurial build-essential libssl-dev libpcre2-dev     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && hg clone -u 1.29.1-1 https://hg.nginx.org/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS="--prefix=/usr                 --state=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --pid=/var/run/unit.pid                 --log=/var/log/unit.log                 --tmp=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modules=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modules=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/unitd /usr/sbin/unitd     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --modules=/usr/lib/unit/debug-modules --debug     && ./configure ruby     && make -j $NCPU ruby-install     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --modules=/usr/lib/unit/modules     && ./configure ruby     && make -j $NCPU ruby-install     && cd     && rm -rf unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && gem install rack     && mkdir -p /var/lib/unit/     && mkdir /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stdout /var/log/unit.log
-# Tue, 11 Apr 2023 23:46:45 GMT
+# Wed, 12 Apr 2023 11:05:01 GMT
 COPY file:952dd3fe197ec3c69c75729eed06a3581063d4c1ed92bf889cf007c89efb3ae8 in /usr/local/bin/ 
-# Tue, 11 Apr 2023 23:46:45 GMT
+# Wed, 12 Apr 2023 11:05:01 GMT
 STOPSIGNAL SIGTERM
-# Tue, 11 Apr 2023 23:46:45 GMT
+# Wed, 12 Apr 2023 11:05:01 GMT
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-# Tue, 11 Apr 2023 23:46:45 GMT
+# Wed, 12 Apr 2023 11:05:01 GMT
 CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ```
 
 -	Layers:
-	-	`sha256:3e440a7045683e27f8e2fa04000e0e078d8dfac0c971358ae0f8c65c13321c8e`  
-		Last Modified: Thu, 23 Mar 2023 01:34:00 GMT  
-		Size: 55.0 MB (55045608 bytes)  
+	-	`sha256:b0248cf3e63c73d0e496a67807d056ca41d5e968b61087e8eca2cf4b9b4d7b99`  
+		Last Modified: Wed, 12 Apr 2023 00:23:20 GMT  
+		Size: 55.1 MB (55052736 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68a71c865a2c34678c6dea55e4b0928f751ee3c0ca91cace6e4e0578c534d6cf`  
-		Last Modified: Thu, 23 Mar 2023 06:08:01 GMT  
-		Size: 5.2 MB (5166592 bytes)  
+	-	`sha256:127e97b4daf784e08840a21765f0d4f251192ef2994d0e4a253490f81e63955b`  
+		Last Modified: Wed, 12 Apr 2023 07:57:29 GMT  
+		Size: 5.2 MB (5166696 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:670730c27c2eacf07897a6e94fe55423ea50b884d9c28161a283bbbf064d1124`  
-		Last Modified: Thu, 23 Mar 2023 06:08:02 GMT  
-		Size: 10.9 MB (10876735 bytes)  
+	-	`sha256:0336c50c9f6942b660e433b1086238eec37057c34b14c4e3b28bd7bf05bd84ba`  
+		Last Modified: Wed, 12 Apr 2023 07:57:29 GMT  
+		Size: 10.9 MB (10876749 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a7a2c95f0f8b221d776ccf35911b68eec2cf9414a44d216205a6f03e381d3d7`  
-		Last Modified: Thu, 23 Mar 2023 06:08:19 GMT  
-		Size: 54.6 MB (54583510 bytes)  
+	-	`sha256:1b89f3c7f7da8adf032a33a75d1b659cee33179ecb88ea0ba75e4fc58ebe63a6`  
+		Last Modified: Wed, 12 Apr 2023 07:57:46 GMT  
+		Size: 54.6 MB (54584801 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6d627e120214bb28a729d4b54a0ecba4c4aeaf0295ca2d1f129480145fad2af6`  
-		Last Modified: Thu, 23 Mar 2023 06:08:51 GMT  
-		Size: 196.8 MB (196812279 bytes)  
+	-	`sha256:2d62772179761f8fddfaed03ed2bdf7078b103b193d18d79a9b49364830d56cf`  
+		Last Modified: Wed, 12 Apr 2023 07:58:19 GMT  
+		Size: 196.8 MB (196811503 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:adce7d0cf0c9443924156ba59b5cee73e9679ade2301baf4172114bbc7d237a9`  
-		Last Modified: Thu, 23 Mar 2023 16:39:30 GMT  
-		Size: 198.0 B  
+	-	`sha256:4647bcaf3a5f4710eed11d4e71ccbf52d564c9f6f015bafc5bf758f94f8fa6eb`  
+		Last Modified: Wed, 12 Apr 2023 10:28:58 GMT  
+		Size: 199.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d78353cc5d03849fd95660ac078d646aa7c3f2d5afa3e30ebc77d6233a3c43c6`  
-		Last Modified: Thu, 30 Mar 2023 20:11:22 GMT  
-		Size: 34.6 MB (34555172 bytes)  
+	-	`sha256:2a5a565cbb1b0f425b71963e84bc40066938a2cc52bf7709dddf20108276ef8e`  
+		Last Modified: Wed, 12 Apr 2023 10:29:02 GMT  
+		Size: 34.6 MB (34555084 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95a1803b4a35217b06f4a54bfd39c60fddc2608ec7832662cf60f180db3f3d6d`  
-		Last Modified: Thu, 30 Mar 2023 20:11:19 GMT  
-		Size: 176.0 B  
+	-	`sha256:ccb6e9ffbc296e93f887b5a911acd930cd7c8cfa01441c14dfa24c5ca85da777`  
+		Last Modified: Wed, 12 Apr 2023 10:28:58 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1b74bf1590f23878eda4b1c5410eebf2f34fdc45650aef26a02e3a989b42f04`  
-		Last Modified: Tue, 11 Apr 2023 23:49:58 GMT  
-		Size: 10.2 MB (10245470 bytes)  
+	-	`sha256:e11655cfb199f321dd218874ea8015635e2f075f0afdba1ac6c729a5a99eeb5a`  
+		Last Modified: Wed, 12 Apr 2023 11:07:07 GMT  
+		Size: 10.2 MB (10245630 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d47b895b00360506ad35a9e0032314cf87e0055d209cd7d885e4eae8df97b680`  
-		Last Modified: Tue, 11 Apr 2023 23:49:57 GMT  
-		Size: 1.2 KB (1201 bytes)  
+	-	`sha256:060bbfa9dc4fa7d79f2af3aecad0f3e2fff18ab2945e9112588223cb1002da2a`  
+		Last Modified: Wed, 12 Apr 2023 11:07:06 GMT  
+		Size: 1.2 KB (1199 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `unit:1.29.1-ruby3.2` - linux; arm64 variant v8
@@ -2879,7 +2879,7 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ## `unit:minimal`
 
 ```console
-$ docker pull unit@sha256:fb277cfcf84b386dc5dbc3697627078c55572e899aa4c8be49aee869829c1ef4
+$ docker pull unit@sha256:99e51ebf82941840101e448bae0a0980f3475a023852fcb6eb2858a847b45091
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2890,59 +2890,59 @@ $ docker pull unit@sha256:fb277cfcf84b386dc5dbc3697627078c55572e899aa4c8be49aee8
 ### `unit:minimal` - linux; amd64
 
 ```console
-$ docker pull unit@sha256:95faf93aa531c7b46acc82830404c03c8c6eb6bf07ba3d7273c247bbe839e7c0
+$ docker pull unit@sha256:9e5b9e4f7d870ef1950d1a6ae6e437243b68fe8763b1aeecc5bbad9939c4767f
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **42.5 MB (42520811 bytes)**  
+-	Total Size: **42.5 MB (42527885 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d9759cf76d7d01636aaa533438036d091608d96cb7125149d8b97b6baae6aa77`
+-	Image ID: `sha256:405e4be1ce1cac1f169e4df4db12e755727c621a2532c620ab3ef15a8b1a67af`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
 ```dockerfile
-# Thu, 23 Mar 2023 01:30:27 GMT
-ADD file:60911afdacfdc216e44115addb5f3cc07f4166e8a4adf7be94a58aacc327ad63 in / 
-# Thu, 23 Mar 2023 01:30:27 GMT
+# Wed, 12 Apr 2023 00:20:06 GMT
+ADD file:11b1acca3f68b5c5787e292ff8dbdd114964a7272bf3519ab07710cbc01a0838 in / 
+# Wed, 12 Apr 2023 00:20:06 GMT
 CMD ["bash"]
-# Tue, 11 Apr 2023 23:46:52 GMT
+# Wed, 12 Apr 2023 11:05:08 GMT
 LABEL org.opencontainers.image.title=Unit
-# Tue, 11 Apr 2023 23:46:53 GMT
+# Wed, 12 Apr 2023 11:05:08 GMT
 LABEL org.opencontainers.image.description=Official build of Unit for Docker.
-# Tue, 11 Apr 2023 23:46:53 GMT
+# Wed, 12 Apr 2023 11:05:08 GMT
 LABEL org.opencontainers.image.url=https://unit.nginx.org
-# Tue, 11 Apr 2023 23:46:53 GMT
+# Wed, 12 Apr 2023 11:05:08 GMT
 LABEL org.opencontainers.image.source=https://github.com/nginx/unit
-# Tue, 11 Apr 2023 23:46:53 GMT
+# Wed, 12 Apr 2023 11:05:08 GMT
 LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
-# Tue, 11 Apr 2023 23:46:53 GMT
+# Wed, 12 Apr 2023 11:05:08 GMT
 LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 11 Apr 2023 23:46:53 GMT
+# Wed, 12 Apr 2023 11:05:09 GMT
 LABEL org.opencontainers.image.version=1.29.1
-# Tue, 11 Apr 2023 23:47:51 GMT
+# Wed, 12 Apr 2023 11:06:09 GMT
 RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y ca-certificates mercurial build-essential libssl-dev libpcre2-dev     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && hg clone -u 1.29.1-1 https://hg.nginx.org/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS="--prefix=/usr                 --state=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --pid=/var/run/unit.pid                 --log=/var/log/unit.log                 --tmp=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modules=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modules=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/unitd /usr/sbin/unitd     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --modules=/usr/lib/unit/debug-modules --debug     && ./configure      && make -j $NCPU version     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --modules=/usr/lib/unit/modules     && ./configure      && make -j $NCPU version     && cd     && rm -rf unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && /bin/true     && mkdir -p /var/lib/unit/     && mkdir /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stdout /var/log/unit.log
-# Tue, 11 Apr 2023 23:47:52 GMT
+# Wed, 12 Apr 2023 11:06:10 GMT
 COPY file:952dd3fe197ec3c69c75729eed06a3581063d4c1ed92bf889cf007c89efb3ae8 in /usr/local/bin/ 
-# Tue, 11 Apr 2023 23:47:52 GMT
+# Wed, 12 Apr 2023 11:06:10 GMT
 STOPSIGNAL SIGTERM
-# Tue, 11 Apr 2023 23:47:52 GMT
+# Wed, 12 Apr 2023 11:06:10 GMT
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-# Tue, 11 Apr 2023 23:47:52 GMT
+# Wed, 12 Apr 2023 11:06:10 GMT
 CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ```
 
 -	Layers:
-	-	`sha256:f1f26f5702560b7e591bef5c4d840f76a232bf13fd5aefc4e22077a1ae4440c7`  
-		Last Modified: Thu, 23 Mar 2023 01:34:23 GMT  
-		Size: 31.4 MB (31411405 bytes)  
+	-	`sha256:26c5c85e47da3022f1bdb9a112103646c5c29517d757e95426f16e4bd9533405`  
+		Last Modified: Wed, 12 Apr 2023 00:23:43 GMT  
+		Size: 31.4 MB (31418228 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c05fbe427bd9183f8200cdfe49cd4c4e5d6b91f91a9c1ae84a7d711aaff8bef`  
-		Last Modified: Tue, 11 Apr 2023 23:50:13 GMT  
-		Size: 11.1 MB (11108215 bytes)  
+	-	`sha256:373f484015c1697c7d3aa85cf6d02411c03c8b9c6f9a2e9c3d724f645c7f8599`  
+		Last Modified: Wed, 12 Apr 2023 11:07:22 GMT  
+		Size: 11.1 MB (11108466 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:623df6ec9028f72a51cfd2de8c470f17a7d25052abc525a838b63bb9a3c90b3e`  
-		Last Modified: Tue, 11 Apr 2023 23:50:11 GMT  
+	-	`sha256:26e97506461358ad0218ca4214edd2ecc0fdbbe3a3a36ea34b6b2bb722b3d630`  
+		Last Modified: Wed, 12 Apr 2023 11:07:20 GMT  
 		Size: 1.2 KB (1191 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -3008,7 +3008,7 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ## `unit:node`
 
 ```console
-$ docker pull unit@sha256:188660080a8d1908147d134171f5678d037c390e071d6b56fd1861467c12d397
+$ docker pull unit@sha256:15dc2fb822699b0a6bd3ac53306ec6453ac9aa86548bcdc647b3e561ffd7a92e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3019,116 +3019,116 @@ $ docker pull unit@sha256:188660080a8d1908147d134171f5678d037c390e071d6b56fd1861
 ### `unit:node` - linux; amd64
 
 ```console
-$ docker pull unit@sha256:38525e5d05432372895cde3be3c43147f3288f3923d2e73f0cc62988be685c06
+$ docker pull unit@sha256:9ff3d7a2b9bb5882e2ae52f3241a47bf1b3cb67ab5234392cbba606f737f7582
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **389.4 MB (389442274 bytes)**  
+-	Total Size: **389.5 MB (389450012 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eda775762433ab7b8e8cb5218adb0052a867b3f60bcee919bb1df30f5d8282b9`
+-	Image ID: `sha256:8e313ea51e72e04053615ce5f109039ce81dc90474d31dd30cbcc437416e0671`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
 ```dockerfile
-# Thu, 23 Mar 2023 01:30:15 GMT
-ADD file:459d1e92eb8c24ff4758f974d289ca8a2abe04cf50b6fe2bd760aa4589478289 in / 
-# Thu, 23 Mar 2023 01:30:15 GMT
+# Wed, 12 Apr 2023 00:19:55 GMT
+ADD file:f2d012660f882f319a5878a3f9ce285f488b8f90fad49ad238541cf72089e035 in / 
+# Wed, 12 Apr 2023 00:19:56 GMT
 CMD ["bash"]
-# Thu, 23 Mar 2023 06:01:27 GMT
+# Wed, 12 Apr 2023 07:50:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 23 Mar 2023 06:01:32 GMT
+# Wed, 12 Apr 2023 07:51:04 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 23 Mar 2023 06:01:49 GMT
+# Wed, 12 Apr 2023 07:51:20 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 23 Mar 2023 06:02:39 GMT
+# Wed, 12 Apr 2023 07:52:18 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 23 Mar 2023 15:40:10 GMT
+# Wed, 12 Apr 2023 09:04:36 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node
-# Thu, 23 Mar 2023 15:42:20 GMT
+# Wed, 12 Apr 2023 09:06:46 GMT
 ENV NODE_VERSION=18.15.0
-# Thu, 23 Mar 2023 15:42:34 GMT
+# Wed, 12 Apr 2023 09:07:00 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in     amd64) ARCH='x64';;     ppc64el) ARCH='ppc64le';;     s390x) ARCH='s390x';;     arm64) ARCH='arm64';;     armhf) ARCH='armv7l';;     i386) ARCH='x86';;     *) echo "unsupported architecture"; exit 1 ;;   esac   && set -ex   && for key in     4ED778F539E3634C779C87C6D7062848A1AB005C     141F07595B7B3FFE74309A937405533BE57C7D57     74F12602B6F1C4E913FAA37AD3A89613643B6201     DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7     61FC681DFB92A079F1685E77973F295594EC4689     8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8     890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4     C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C     108F52B48DB57BB0CC439B2997B01419BD92F80A   ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner   && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt   && ln -s /usr/local/bin/node /usr/local/bin/nodejs   && node --version   && npm --version
-# Thu, 23 Mar 2023 15:42:34 GMT
+# Wed, 12 Apr 2023 09:07:01 GMT
 ENV YARN_VERSION=1.22.19
-# Thu, 23 Mar 2023 15:42:37 GMT
+# Wed, 12 Apr 2023 09:07:04 GMT
 RUN set -ex   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && yarn --version
-# Thu, 23 Mar 2023 15:42:38 GMT
+# Wed, 12 Apr 2023 09:07:04 GMT
 COPY file:4d192565a7220e135cab6c77fbc1c73211b69f3d9fb37e62857b2c6eb9363d51 in /usr/local/bin/ 
-# Thu, 23 Mar 2023 15:42:38 GMT
+# Wed, 12 Apr 2023 09:07:04 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 23 Mar 2023 15:42:38 GMT
+# Wed, 12 Apr 2023 09:07:04 GMT
 CMD ["node"]
-# Tue, 11 Apr 2023 23:42:42 GMT
+# Wed, 12 Apr 2023 11:02:30 GMT
 LABEL org.opencontainers.image.title=Unit
-# Tue, 11 Apr 2023 23:42:42 GMT
+# Wed, 12 Apr 2023 11:02:30 GMT
 LABEL org.opencontainers.image.description=Official build of Unit for Docker.
-# Tue, 11 Apr 2023 23:42:42 GMT
+# Wed, 12 Apr 2023 11:02:30 GMT
 LABEL org.opencontainers.image.url=https://unit.nginx.org
-# Tue, 11 Apr 2023 23:42:42 GMT
+# Wed, 12 Apr 2023 11:02:30 GMT
 LABEL org.opencontainers.image.source=https://github.com/nginx/unit
-# Tue, 11 Apr 2023 23:42:42 GMT
+# Wed, 12 Apr 2023 11:02:31 GMT
 LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
-# Tue, 11 Apr 2023 23:42:42 GMT
+# Wed, 12 Apr 2023 11:02:31 GMT
 LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 11 Apr 2023 23:42:42 GMT
+# Wed, 12 Apr 2023 11:02:31 GMT
 LABEL org.opencontainers.image.version=1.29.1
-# Tue, 11 Apr 2023 23:43:26 GMT
+# Wed, 12 Apr 2023 11:03:15 GMT
 RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y ca-certificates mercurial build-essential libssl-dev libpcre2-dev     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && hg clone -u 1.29.1-1 https://hg.nginx.org/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS="--prefix=/usr                 --state=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --pid=/var/run/unit.pid                 --log=/var/log/unit.log                 --tmp=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modules=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modules=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/unitd /usr/sbin/unitd     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --modules=/usr/lib/unit/debug-modules --debug     && ./configure nodejs --node-gyp=/usr/local/lib/node_modules/npm/bin/node-gyp-bin/node-gyp     && make -j $NCPU node node-install libunit-install     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --modules=/usr/lib/unit/modules     && ./configure nodejs --node-gyp=/usr/local/lib/node_modules/npm/bin/node-gyp-bin/node-gyp     && make -j $NCPU node node-install libunit-install     && cd     && rm -rf unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && /bin/true     && mkdir -p /var/lib/unit/     && mkdir /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stdout /var/log/unit.log
-# Tue, 11 Apr 2023 23:43:27 GMT
+# Wed, 12 Apr 2023 11:03:16 GMT
 COPY file:952dd3fe197ec3c69c75729eed06a3581063d4c1ed92bf889cf007c89efb3ae8 in /usr/local/bin/ 
-# Tue, 11 Apr 2023 23:43:27 GMT
+# Wed, 12 Apr 2023 11:03:16 GMT
 STOPSIGNAL SIGTERM
-# Tue, 11 Apr 2023 23:43:27 GMT
+# Wed, 12 Apr 2023 11:03:16 GMT
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-# Tue, 11 Apr 2023 23:43:27 GMT
+# Wed, 12 Apr 2023 11:03:16 GMT
 CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ```
 
 -	Layers:
-	-	`sha256:3e440a7045683e27f8e2fa04000e0e078d8dfac0c971358ae0f8c65c13321c8e`  
-		Last Modified: Thu, 23 Mar 2023 01:34:00 GMT  
-		Size: 55.0 MB (55045608 bytes)  
+	-	`sha256:b0248cf3e63c73d0e496a67807d056ca41d5e968b61087e8eca2cf4b9b4d7b99`  
+		Last Modified: Wed, 12 Apr 2023 00:23:20 GMT  
+		Size: 55.1 MB (55052736 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68a71c865a2c34678c6dea55e4b0928f751ee3c0ca91cace6e4e0578c534d6cf`  
-		Last Modified: Thu, 23 Mar 2023 06:08:01 GMT  
-		Size: 5.2 MB (5166592 bytes)  
+	-	`sha256:127e97b4daf784e08840a21765f0d4f251192ef2994d0e4a253490f81e63955b`  
+		Last Modified: Wed, 12 Apr 2023 07:57:29 GMT  
+		Size: 5.2 MB (5166696 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:670730c27c2eacf07897a6e94fe55423ea50b884d9c28161a283bbbf064d1124`  
-		Last Modified: Thu, 23 Mar 2023 06:08:02 GMT  
-		Size: 10.9 MB (10876735 bytes)  
+	-	`sha256:0336c50c9f6942b660e433b1086238eec37057c34b14c4e3b28bd7bf05bd84ba`  
+		Last Modified: Wed, 12 Apr 2023 07:57:29 GMT  
+		Size: 10.9 MB (10876749 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a7a2c95f0f8b221d776ccf35911b68eec2cf9414a44d216205a6f03e381d3d7`  
-		Last Modified: Thu, 23 Mar 2023 06:08:19 GMT  
-		Size: 54.6 MB (54583510 bytes)  
+	-	`sha256:1b89f3c7f7da8adf032a33a75d1b659cee33179ecb88ea0ba75e4fc58ebe63a6`  
+		Last Modified: Wed, 12 Apr 2023 07:57:46 GMT  
+		Size: 54.6 MB (54584801 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6d627e120214bb28a729d4b54a0ecba4c4aeaf0295ca2d1f129480145fad2af6`  
-		Last Modified: Thu, 23 Mar 2023 06:08:51 GMT  
-		Size: 196.8 MB (196812279 bytes)  
+	-	`sha256:2d62772179761f8fddfaed03ed2bdf7078b103b193d18d79a9b49364830d56cf`  
+		Last Modified: Wed, 12 Apr 2023 07:58:19 GMT  
+		Size: 196.8 MB (196811503 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1dc4abe482bf348bfe83044caa1621e01a8cb9c0a2d89a77e77bad335fcccaf4`  
-		Last Modified: Thu, 23 Mar 2023 15:49:35 GMT  
-		Size: 4.2 KB (4201 bytes)  
+	-	`sha256:9b293df1e1ca6c5d4ff93529fafef12b0f636ab6a7b739145e9193a6e4af0521`  
+		Last Modified: Wed, 12 Apr 2023 09:13:51 GMT  
+		Size: 4.2 KB (4195 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e4b205f7d691d38d3b25b3972658c116f259e3ba78d854a461bb7528cc2f6061`  
-		Last Modified: Thu, 23 Mar 2023 15:51:29 GMT  
-		Size: 45.6 MB (45576251 bytes)  
+	-	`sha256:a77f034fbdc8a1460c2aeeb39596fbffbd6a0ee9db3f747870201d03c4a4e79f`  
+		Last Modified: Wed, 12 Apr 2023 09:15:44 GMT  
+		Size: 45.6 MB (45576250 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:47ae708a5b38406618b4d3d086b51c4ce4b1171064d5d25823b45528c605b411`  
-		Last Modified: Thu, 23 Mar 2023 15:51:23 GMT  
-		Size: 2.3 MB (2276208 bytes)  
+	-	`sha256:87feaa55d9338bbd8be9813b4f9f0a0f0b967d5d257051c879d06c34a634aaa2`  
+		Last Modified: Wed, 12 Apr 2023 09:15:37 GMT  
+		Size: 2.3 MB (2276226 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c37e138d8eaccd769735e63f882c5e4bb2efbccec267c5216bc6001c9d1d3e91`  
-		Last Modified: Thu, 23 Mar 2023 15:51:22 GMT  
-		Size: 449.0 B  
+	-	`sha256:f86f7547ad3a3f486b6db40601bf09fc1f3def10ab43d5ac6935cc1c39569699`  
+		Last Modified: Wed, 12 Apr 2023 09:15:37 GMT  
+		Size: 451.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0c93cb67aa18bec90da91f59819046174ee3ba5a61d2c48bd265f2986ca042f3`  
-		Last Modified: Tue, 11 Apr 2023 23:48:58 GMT  
-		Size: 19.1 MB (19099241 bytes)  
+	-	`sha256:60a3f6bca26cb8b6b38f07e656ad1608c913692bed5b439e92358969df4e538e`  
+		Last Modified: Wed, 12 Apr 2023 11:06:38 GMT  
+		Size: 19.1 MB (19099208 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bdf49ef6cb5059fb57298acbb9d2a5bb42e75cf574bba955294350833c750860`  
-		Last Modified: Tue, 11 Apr 2023 23:48:55 GMT  
-		Size: 1.2 KB (1200 bytes)  
+	-	`sha256:447ccd914d41f627e14ff18567e0428c5ee5ff99172191d557f074b4e965ea91`  
+		Last Modified: Wed, 12 Apr 2023 11:06:35 GMT  
+		Size: 1.2 KB (1197 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `unit:node` - linux; arm64 variant v8
@@ -3249,7 +3249,7 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ## `unit:node18`
 
 ```console
-$ docker pull unit@sha256:188660080a8d1908147d134171f5678d037c390e071d6b56fd1861467c12d397
+$ docker pull unit@sha256:15dc2fb822699b0a6bd3ac53306ec6453ac9aa86548bcdc647b3e561ffd7a92e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3260,116 +3260,116 @@ $ docker pull unit@sha256:188660080a8d1908147d134171f5678d037c390e071d6b56fd1861
 ### `unit:node18` - linux; amd64
 
 ```console
-$ docker pull unit@sha256:38525e5d05432372895cde3be3c43147f3288f3923d2e73f0cc62988be685c06
+$ docker pull unit@sha256:9ff3d7a2b9bb5882e2ae52f3241a47bf1b3cb67ab5234392cbba606f737f7582
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **389.4 MB (389442274 bytes)**  
+-	Total Size: **389.5 MB (389450012 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eda775762433ab7b8e8cb5218adb0052a867b3f60bcee919bb1df30f5d8282b9`
+-	Image ID: `sha256:8e313ea51e72e04053615ce5f109039ce81dc90474d31dd30cbcc437416e0671`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
 ```dockerfile
-# Thu, 23 Mar 2023 01:30:15 GMT
-ADD file:459d1e92eb8c24ff4758f974d289ca8a2abe04cf50b6fe2bd760aa4589478289 in / 
-# Thu, 23 Mar 2023 01:30:15 GMT
+# Wed, 12 Apr 2023 00:19:55 GMT
+ADD file:f2d012660f882f319a5878a3f9ce285f488b8f90fad49ad238541cf72089e035 in / 
+# Wed, 12 Apr 2023 00:19:56 GMT
 CMD ["bash"]
-# Thu, 23 Mar 2023 06:01:27 GMT
+# Wed, 12 Apr 2023 07:50:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 23 Mar 2023 06:01:32 GMT
+# Wed, 12 Apr 2023 07:51:04 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 23 Mar 2023 06:01:49 GMT
+# Wed, 12 Apr 2023 07:51:20 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 23 Mar 2023 06:02:39 GMT
+# Wed, 12 Apr 2023 07:52:18 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 23 Mar 2023 15:40:10 GMT
+# Wed, 12 Apr 2023 09:04:36 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node
-# Thu, 23 Mar 2023 15:42:20 GMT
+# Wed, 12 Apr 2023 09:06:46 GMT
 ENV NODE_VERSION=18.15.0
-# Thu, 23 Mar 2023 15:42:34 GMT
+# Wed, 12 Apr 2023 09:07:00 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in     amd64) ARCH='x64';;     ppc64el) ARCH='ppc64le';;     s390x) ARCH='s390x';;     arm64) ARCH='arm64';;     armhf) ARCH='armv7l';;     i386) ARCH='x86';;     *) echo "unsupported architecture"; exit 1 ;;   esac   && set -ex   && for key in     4ED778F539E3634C779C87C6D7062848A1AB005C     141F07595B7B3FFE74309A937405533BE57C7D57     74F12602B6F1C4E913FAA37AD3A89613643B6201     DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7     61FC681DFB92A079F1685E77973F295594EC4689     8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8     890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4     C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C     108F52B48DB57BB0CC439B2997B01419BD92F80A   ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner   && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt   && ln -s /usr/local/bin/node /usr/local/bin/nodejs   && node --version   && npm --version
-# Thu, 23 Mar 2023 15:42:34 GMT
+# Wed, 12 Apr 2023 09:07:01 GMT
 ENV YARN_VERSION=1.22.19
-# Thu, 23 Mar 2023 15:42:37 GMT
+# Wed, 12 Apr 2023 09:07:04 GMT
 RUN set -ex   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && yarn --version
-# Thu, 23 Mar 2023 15:42:38 GMT
+# Wed, 12 Apr 2023 09:07:04 GMT
 COPY file:4d192565a7220e135cab6c77fbc1c73211b69f3d9fb37e62857b2c6eb9363d51 in /usr/local/bin/ 
-# Thu, 23 Mar 2023 15:42:38 GMT
+# Wed, 12 Apr 2023 09:07:04 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 23 Mar 2023 15:42:38 GMT
+# Wed, 12 Apr 2023 09:07:04 GMT
 CMD ["node"]
-# Tue, 11 Apr 2023 23:42:42 GMT
+# Wed, 12 Apr 2023 11:02:30 GMT
 LABEL org.opencontainers.image.title=Unit
-# Tue, 11 Apr 2023 23:42:42 GMT
+# Wed, 12 Apr 2023 11:02:30 GMT
 LABEL org.opencontainers.image.description=Official build of Unit for Docker.
-# Tue, 11 Apr 2023 23:42:42 GMT
+# Wed, 12 Apr 2023 11:02:30 GMT
 LABEL org.opencontainers.image.url=https://unit.nginx.org
-# Tue, 11 Apr 2023 23:42:42 GMT
+# Wed, 12 Apr 2023 11:02:30 GMT
 LABEL org.opencontainers.image.source=https://github.com/nginx/unit
-# Tue, 11 Apr 2023 23:42:42 GMT
+# Wed, 12 Apr 2023 11:02:31 GMT
 LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
-# Tue, 11 Apr 2023 23:42:42 GMT
+# Wed, 12 Apr 2023 11:02:31 GMT
 LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 11 Apr 2023 23:42:42 GMT
+# Wed, 12 Apr 2023 11:02:31 GMT
 LABEL org.opencontainers.image.version=1.29.1
-# Tue, 11 Apr 2023 23:43:26 GMT
+# Wed, 12 Apr 2023 11:03:15 GMT
 RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y ca-certificates mercurial build-essential libssl-dev libpcre2-dev     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && hg clone -u 1.29.1-1 https://hg.nginx.org/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS="--prefix=/usr                 --state=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --pid=/var/run/unit.pid                 --log=/var/log/unit.log                 --tmp=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modules=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modules=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/unitd /usr/sbin/unitd     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --modules=/usr/lib/unit/debug-modules --debug     && ./configure nodejs --node-gyp=/usr/local/lib/node_modules/npm/bin/node-gyp-bin/node-gyp     && make -j $NCPU node node-install libunit-install     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --modules=/usr/lib/unit/modules     && ./configure nodejs --node-gyp=/usr/local/lib/node_modules/npm/bin/node-gyp-bin/node-gyp     && make -j $NCPU node node-install libunit-install     && cd     && rm -rf unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && /bin/true     && mkdir -p /var/lib/unit/     && mkdir /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stdout /var/log/unit.log
-# Tue, 11 Apr 2023 23:43:27 GMT
+# Wed, 12 Apr 2023 11:03:16 GMT
 COPY file:952dd3fe197ec3c69c75729eed06a3581063d4c1ed92bf889cf007c89efb3ae8 in /usr/local/bin/ 
-# Tue, 11 Apr 2023 23:43:27 GMT
+# Wed, 12 Apr 2023 11:03:16 GMT
 STOPSIGNAL SIGTERM
-# Tue, 11 Apr 2023 23:43:27 GMT
+# Wed, 12 Apr 2023 11:03:16 GMT
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-# Tue, 11 Apr 2023 23:43:27 GMT
+# Wed, 12 Apr 2023 11:03:16 GMT
 CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ```
 
 -	Layers:
-	-	`sha256:3e440a7045683e27f8e2fa04000e0e078d8dfac0c971358ae0f8c65c13321c8e`  
-		Last Modified: Thu, 23 Mar 2023 01:34:00 GMT  
-		Size: 55.0 MB (55045608 bytes)  
+	-	`sha256:b0248cf3e63c73d0e496a67807d056ca41d5e968b61087e8eca2cf4b9b4d7b99`  
+		Last Modified: Wed, 12 Apr 2023 00:23:20 GMT  
+		Size: 55.1 MB (55052736 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68a71c865a2c34678c6dea55e4b0928f751ee3c0ca91cace6e4e0578c534d6cf`  
-		Last Modified: Thu, 23 Mar 2023 06:08:01 GMT  
-		Size: 5.2 MB (5166592 bytes)  
+	-	`sha256:127e97b4daf784e08840a21765f0d4f251192ef2994d0e4a253490f81e63955b`  
+		Last Modified: Wed, 12 Apr 2023 07:57:29 GMT  
+		Size: 5.2 MB (5166696 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:670730c27c2eacf07897a6e94fe55423ea50b884d9c28161a283bbbf064d1124`  
-		Last Modified: Thu, 23 Mar 2023 06:08:02 GMT  
-		Size: 10.9 MB (10876735 bytes)  
+	-	`sha256:0336c50c9f6942b660e433b1086238eec37057c34b14c4e3b28bd7bf05bd84ba`  
+		Last Modified: Wed, 12 Apr 2023 07:57:29 GMT  
+		Size: 10.9 MB (10876749 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a7a2c95f0f8b221d776ccf35911b68eec2cf9414a44d216205a6f03e381d3d7`  
-		Last Modified: Thu, 23 Mar 2023 06:08:19 GMT  
-		Size: 54.6 MB (54583510 bytes)  
+	-	`sha256:1b89f3c7f7da8adf032a33a75d1b659cee33179ecb88ea0ba75e4fc58ebe63a6`  
+		Last Modified: Wed, 12 Apr 2023 07:57:46 GMT  
+		Size: 54.6 MB (54584801 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6d627e120214bb28a729d4b54a0ecba4c4aeaf0295ca2d1f129480145fad2af6`  
-		Last Modified: Thu, 23 Mar 2023 06:08:51 GMT  
-		Size: 196.8 MB (196812279 bytes)  
+	-	`sha256:2d62772179761f8fddfaed03ed2bdf7078b103b193d18d79a9b49364830d56cf`  
+		Last Modified: Wed, 12 Apr 2023 07:58:19 GMT  
+		Size: 196.8 MB (196811503 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1dc4abe482bf348bfe83044caa1621e01a8cb9c0a2d89a77e77bad335fcccaf4`  
-		Last Modified: Thu, 23 Mar 2023 15:49:35 GMT  
-		Size: 4.2 KB (4201 bytes)  
+	-	`sha256:9b293df1e1ca6c5d4ff93529fafef12b0f636ab6a7b739145e9193a6e4af0521`  
+		Last Modified: Wed, 12 Apr 2023 09:13:51 GMT  
+		Size: 4.2 KB (4195 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e4b205f7d691d38d3b25b3972658c116f259e3ba78d854a461bb7528cc2f6061`  
-		Last Modified: Thu, 23 Mar 2023 15:51:29 GMT  
-		Size: 45.6 MB (45576251 bytes)  
+	-	`sha256:a77f034fbdc8a1460c2aeeb39596fbffbd6a0ee9db3f747870201d03c4a4e79f`  
+		Last Modified: Wed, 12 Apr 2023 09:15:44 GMT  
+		Size: 45.6 MB (45576250 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:47ae708a5b38406618b4d3d086b51c4ce4b1171064d5d25823b45528c605b411`  
-		Last Modified: Thu, 23 Mar 2023 15:51:23 GMT  
-		Size: 2.3 MB (2276208 bytes)  
+	-	`sha256:87feaa55d9338bbd8be9813b4f9f0a0f0b967d5d257051c879d06c34a634aaa2`  
+		Last Modified: Wed, 12 Apr 2023 09:15:37 GMT  
+		Size: 2.3 MB (2276226 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c37e138d8eaccd769735e63f882c5e4bb2efbccec267c5216bc6001c9d1d3e91`  
-		Last Modified: Thu, 23 Mar 2023 15:51:22 GMT  
-		Size: 449.0 B  
+	-	`sha256:f86f7547ad3a3f486b6db40601bf09fc1f3def10ab43d5ac6935cc1c39569699`  
+		Last Modified: Wed, 12 Apr 2023 09:15:37 GMT  
+		Size: 451.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0c93cb67aa18bec90da91f59819046174ee3ba5a61d2c48bd265f2986ca042f3`  
-		Last Modified: Tue, 11 Apr 2023 23:48:58 GMT  
-		Size: 19.1 MB (19099241 bytes)  
+	-	`sha256:60a3f6bca26cb8b6b38f07e656ad1608c913692bed5b439e92358969df4e538e`  
+		Last Modified: Wed, 12 Apr 2023 11:06:38 GMT  
+		Size: 19.1 MB (19099208 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bdf49ef6cb5059fb57298acbb9d2a5bb42e75cf574bba955294350833c750860`  
-		Last Modified: Tue, 11 Apr 2023 23:48:55 GMT  
-		Size: 1.2 KB (1200 bytes)  
+	-	`sha256:447ccd914d41f627e14ff18567e0428c5ee5ff99172191d557f074b4e965ea91`  
+		Last Modified: Wed, 12 Apr 2023 11:06:35 GMT  
+		Size: 1.2 KB (1197 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `unit:node18` - linux; arm64 variant v8
@@ -4129,7 +4129,7 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ## `unit:php`
 
 ```console
-$ docker pull unit@sha256:c0c1efe6ee2635daca8ac478e7c42cac3a7d34a264cdd33ae992d99add4dde51
+$ docker pull unit@sha256:4d18010dc92b022d1551b528f570d170e62f7dc3e38e22d4f2c61dbd95f07109
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4140,130 +4140,130 @@ $ docker pull unit@sha256:c0c1efe6ee2635daca8ac478e7c42cac3a7d34a264cdd33ae992d9
 ### `unit:php` - linux; amd64
 
 ```console
-$ docker pull unit@sha256:44677840b6c23423d28fd7a93515577bdbd06ea6c1175c7fb274e278718aeeb4
+$ docker pull unit@sha256:deade2c32edeff53c5340a44f27b2532dea1914c6662730392dcbe101aaf97f9
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **179.9 MB (179915525 bytes)**  
+-	Total Size: **179.9 MB (179922603 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:34d27fc8ffa0a4f1313e75e4c73534d324b5b1c7680d45ceb5b6ace2d6776d2b`
+-	Image ID: `sha256:6d3e91bd965af79a4722d90e15cdcc59831eb7b2d255fab4e395f1423e95615f`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
 ```dockerfile
-# Thu, 23 Mar 2023 01:30:27 GMT
-ADD file:60911afdacfdc216e44115addb5f3cc07f4166e8a4adf7be94a58aacc327ad63 in / 
-# Thu, 23 Mar 2023 01:30:27 GMT
+# Wed, 12 Apr 2023 00:20:06 GMT
+ADD file:11b1acca3f68b5c5787e292ff8dbdd114964a7272bf3519ab07710cbc01a0838 in / 
+# Wed, 12 Apr 2023 00:20:06 GMT
 CMD ["bash"]
-# Thu, 23 Mar 2023 09:31:02 GMT
+# Wed, 12 Apr 2023 03:30:54 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php
-# Thu, 23 Mar 2023 09:31:03 GMT
+# Wed, 12 Apr 2023 03:30:55 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Thu, 23 Mar 2023 09:31:19 GMT
+# Wed, 12 Apr 2023 03:31:11 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 23 Mar 2023 09:31:19 GMT
+# Wed, 12 Apr 2023 03:31:11 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Mon, 27 Mar 2023 22:33:07 GMT
+# Wed, 12 Apr 2023 03:31:12 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html
-# Mon, 27 Mar 2023 22:33:07 GMT
+# Wed, 12 Apr 2023 03:31:12 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Mon, 27 Mar 2023 22:33:07 GMT
+# Wed, 12 Apr 2023 03:31:12 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Mon, 27 Mar 2023 22:33:08 GMT
+# Wed, 12 Apr 2023 03:31:12 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Mon, 27 Mar 2023 22:33:08 GMT
+# Wed, 12 Apr 2023 03:31:12 GMT
 ENV GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC
-# Mon, 27 Mar 2023 22:33:08 GMT
+# Wed, 12 Apr 2023 03:58:08 GMT
 ENV PHP_VERSION=8.2.4
-# Mon, 27 Mar 2023 22:33:08 GMT
+# Wed, 12 Apr 2023 03:58:08 GMT
 ENV PHP_URL=https://www.php.net/distributions/php-8.2.4.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.2.4.tar.xz.asc
-# Mon, 27 Mar 2023 22:33:08 GMT
+# Wed, 12 Apr 2023 03:58:08 GMT
 ENV PHP_SHA256=bc7bf4ca7ed0dd17647e3ea870b6f062fcb56b243bfdef3f59ff7f94e96176a8
-# Mon, 27 Mar 2023 22:33:21 GMT
+# Wed, 12 Apr 2023 03:58:20 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg dirmngr; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
-# Mon, 27 Mar 2023 22:33:21 GMT
+# Wed, 12 Apr 2023 03:58:21 GMT
 COPY file:ce57c04b70896f77cc11eb2766417d8a1240fcffe5bba92179ec78c458844110 in /usr/local/bin/ 
-# Mon, 27 Mar 2023 22:36:18 GMT
+# Wed, 12 Apr 2023 04:01:15 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--enable-phpdbg 		--enable-phpdbg-readline 				--with-pear 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				--enable-embed 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version
-# Mon, 27 Mar 2023 22:36:19 GMT
+# Wed, 12 Apr 2023 04:01:16 GMT
 COPY multi:6edd033b037aa2d7697fc3b9f82c2f162146c1920a0c6d25a165dc56783204db in /usr/local/bin/ 
-# Mon, 27 Mar 2023 22:36:19 GMT
+# Wed, 12 Apr 2023 04:01:16 GMT
 RUN docker-php-ext-enable sodium
-# Mon, 27 Mar 2023 22:36:20 GMT
+# Wed, 12 Apr 2023 04:01:16 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Mon, 27 Mar 2023 22:36:20 GMT
+# Wed, 12 Apr 2023 04:01:16 GMT
 CMD ["php" "-a"]
-# Tue, 11 Apr 2023 23:44:18 GMT
+# Wed, 12 Apr 2023 11:03:20 GMT
 LABEL org.opencontainers.image.title=Unit
-# Tue, 11 Apr 2023 23:44:18 GMT
+# Wed, 12 Apr 2023 11:03:20 GMT
 LABEL org.opencontainers.image.description=Official build of Unit for Docker.
-# Tue, 11 Apr 2023 23:44:18 GMT
+# Wed, 12 Apr 2023 11:03:20 GMT
 LABEL org.opencontainers.image.url=https://unit.nginx.org
-# Tue, 11 Apr 2023 23:44:18 GMT
+# Wed, 12 Apr 2023 11:03:20 GMT
 LABEL org.opencontainers.image.source=https://github.com/nginx/unit
-# Tue, 11 Apr 2023 23:44:18 GMT
+# Wed, 12 Apr 2023 11:03:20 GMT
 LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
-# Tue, 11 Apr 2023 23:44:19 GMT
+# Wed, 12 Apr 2023 11:03:21 GMT
 LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 11 Apr 2023 23:44:19 GMT
+# Wed, 12 Apr 2023 11:03:21 GMT
 LABEL org.opencontainers.image.version=1.29.1
-# Tue, 11 Apr 2023 23:45:07 GMT
+# Wed, 12 Apr 2023 11:04:09 GMT
 RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y ca-certificates mercurial build-essential libssl-dev libpcre2-dev     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && hg clone -u 1.29.1-1 https://hg.nginx.org/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS="--prefix=/usr                 --state=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --pid=/var/run/unit.pid                 --log=/var/log/unit.log                 --tmp=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modules=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modules=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/unitd /usr/sbin/unitd     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --modules=/usr/lib/unit/debug-modules --debug     && ./configure php     && make -j $NCPU php-install     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --modules=/usr/lib/unit/modules     && ./configure php     && make -j $NCPU php-install     && cd     && rm -rf unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && ldconfig     && mkdir -p /var/lib/unit/     && mkdir /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stdout /var/log/unit.log
-# Tue, 11 Apr 2023 23:45:07 GMT
+# Wed, 12 Apr 2023 11:04:09 GMT
 COPY file:952dd3fe197ec3c69c75729eed06a3581063d4c1ed92bf889cf007c89efb3ae8 in /usr/local/bin/ 
-# Tue, 11 Apr 2023 23:45:07 GMT
+# Wed, 12 Apr 2023 11:04:10 GMT
 STOPSIGNAL SIGTERM
-# Tue, 11 Apr 2023 23:45:07 GMT
+# Wed, 12 Apr 2023 11:04:10 GMT
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-# Tue, 11 Apr 2023 23:45:07 GMT
+# Wed, 12 Apr 2023 11:04:10 GMT
 CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ```
 
 -	Layers:
-	-	`sha256:f1f26f5702560b7e591bef5c4d840f76a232bf13fd5aefc4e22077a1ae4440c7`  
-		Last Modified: Thu, 23 Mar 2023 01:34:23 GMT  
-		Size: 31.4 MB (31411405 bytes)  
+	-	`sha256:26c5c85e47da3022f1bdb9a112103646c5c29517d757e95426f16e4bd9533405`  
+		Last Modified: Wed, 12 Apr 2023 00:23:43 GMT  
+		Size: 31.4 MB (31418228 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee0a4e40ccac1c58f6ca3cf6c0cbb0a5897abd33dee49b641509d5627df02b46`  
-		Last Modified: Thu, 23 Mar 2023 10:51:34 GMT  
-		Size: 226.0 B  
+	-	`sha256:39c8021d1258ac2078c39a88a97b3c834df2a1bf40f1b56f88bb237cc837c9cb`  
+		Last Modified: Wed, 12 Apr 2023 05:43:00 GMT  
+		Size: 225.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ca9fb408faadb7bf25d58bd66104b2e93e7ba37e961bb24b245abcc09230187`  
-		Last Modified: Thu, 23 Mar 2023 10:51:46 GMT  
-		Size: 91.6 MB (91636283 bytes)  
+	-	`sha256:dff43c2de6846ddda72bd88d8150e2bb08bca320f1f8ff895a2c09afae223ecb`  
+		Last Modified: Wed, 12 Apr 2023 05:43:13 GMT  
+		Size: 91.6 MB (91636376 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:25862b797d8786d6655c181772787e4fa6c932aafd6853e429409590e9f6d99b`  
-		Last Modified: Tue, 28 Mar 2023 00:51:20 GMT  
-		Size: 270.0 B  
+	-	`sha256:383987c505e89f10b4ef0b1352d7b5e1337ed05746b6e846e0760340080ea1b3`  
+		Last Modified: Wed, 12 Apr 2023 05:43:00 GMT  
+		Size: 267.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86f390fbd202858b1054f09273a7332a540a1ef21a500358d9b38f3b66218500`  
-		Last Modified: Tue, 28 Mar 2023 00:51:19 GMT  
-		Size: 12.3 MB (12310616 bytes)  
+	-	`sha256:ce60ac48fe908b8ca01d2194f7dffed20c8b7734e615a2e32f4aa16b99b71fc0`  
+		Last Modified: Wed, 12 Apr 2023 05:45:29 GMT  
+		Size: 12.3 MB (12310676 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5fb9a2031944f290343556fde7618b9a79e9f61afebbd8bb53ebf958809a91c3`  
-		Last Modified: Tue, 28 Mar 2023 00:51:18 GMT  
-		Size: 491.0 B  
+	-	`sha256:3d543c5d7aa3055ab4ca8c48727edcdac50149b36fa1eed71faf8b02c9dbeb29`  
+		Last Modified: Wed, 12 Apr 2023 05:45:28 GMT  
+		Size: 490.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:602cfa608bb04fc5753dca97d5699205d2ea0f4b3226c628dc2d7d462a588499`  
-		Last Modified: Tue, 28 Mar 2023 00:51:23 GMT  
-		Size: 34.5 MB (34519761 bytes)  
+	-	`sha256:3b6fabf19ce973edc1979657b3610d745c712ac70e74db8178b1423f6dd02fe0`  
+		Last Modified: Wed, 12 Apr 2023 05:45:33 GMT  
+		Size: 34.5 MB (34519810 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec677606e702ac5d0350c52bcb2524c0a5cbf1fa75c268931f4f855964984cf3`  
-		Last Modified: Tue, 28 Mar 2023 00:51:18 GMT  
-		Size: 2.4 KB (2449 bytes)  
+	-	`sha256:02d0ece026472c7bf832d3e9d9728de0a4a8e0d5bb30715d6bc485982278fdff`  
+		Last Modified: Wed, 12 Apr 2023 05:45:28 GMT  
+		Size: 2.5 KB (2450 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:72e00b2bfda42b2c2b8fe4f2f30bba5d864fd1e5fdf1e6174b2b0a9e0d9f164f`  
-		Last Modified: Tue, 28 Mar 2023 00:51:18 GMT  
-		Size: 244.0 B  
+	-	`sha256:07241f1fb7b826ba959767aa981403f8ae7b2b8f6fdc02adad34d57085390819`  
+		Last Modified: Wed, 12 Apr 2023 05:45:28 GMT  
+		Size: 247.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ca9f0b919e6882a67c2cdcd345db5a912596f2d807d2acd179719e44bfdb36f0`  
-		Last Modified: Tue, 11 Apr 2023 23:49:29 GMT  
-		Size: 10.0 MB (10032582 bytes)  
+	-	`sha256:fef15fa578ba8008a9c4c106f7e25a36baa510fdfbc92faeb65da01de31f6895`  
+		Last Modified: Wed, 12 Apr 2023 11:06:52 GMT  
+		Size: 10.0 MB (10032638 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3f31682b73bd0c97e9697cb276ab064adb47a344c890635b3752e4373cf422e7`  
-		Last Modified: Tue, 11 Apr 2023 23:49:27 GMT  
-		Size: 1.2 KB (1198 bytes)  
+	-	`sha256:b5c5df72605d1de9bb6e55628d92b71334d147098fe498c89078c78c91de936a`  
+		Last Modified: Wed, 12 Apr 2023 11:06:50 GMT  
+		Size: 1.2 KB (1196 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `unit:php` - linux; arm64 variant v8
@@ -4398,7 +4398,7 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ## `unit:php8`
 
 ```console
-$ docker pull unit@sha256:c0c1efe6ee2635daca8ac478e7c42cac3a7d34a264cdd33ae992d99add4dde51
+$ docker pull unit@sha256:4d18010dc92b022d1551b528f570d170e62f7dc3e38e22d4f2c61dbd95f07109
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4409,130 +4409,130 @@ $ docker pull unit@sha256:c0c1efe6ee2635daca8ac478e7c42cac3a7d34a264cdd33ae992d9
 ### `unit:php8` - linux; amd64
 
 ```console
-$ docker pull unit@sha256:44677840b6c23423d28fd7a93515577bdbd06ea6c1175c7fb274e278718aeeb4
+$ docker pull unit@sha256:deade2c32edeff53c5340a44f27b2532dea1914c6662730392dcbe101aaf97f9
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **179.9 MB (179915525 bytes)**  
+-	Total Size: **179.9 MB (179922603 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:34d27fc8ffa0a4f1313e75e4c73534d324b5b1c7680d45ceb5b6ace2d6776d2b`
+-	Image ID: `sha256:6d3e91bd965af79a4722d90e15cdcc59831eb7b2d255fab4e395f1423e95615f`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
 ```dockerfile
-# Thu, 23 Mar 2023 01:30:27 GMT
-ADD file:60911afdacfdc216e44115addb5f3cc07f4166e8a4adf7be94a58aacc327ad63 in / 
-# Thu, 23 Mar 2023 01:30:27 GMT
+# Wed, 12 Apr 2023 00:20:06 GMT
+ADD file:11b1acca3f68b5c5787e292ff8dbdd114964a7272bf3519ab07710cbc01a0838 in / 
+# Wed, 12 Apr 2023 00:20:06 GMT
 CMD ["bash"]
-# Thu, 23 Mar 2023 09:31:02 GMT
+# Wed, 12 Apr 2023 03:30:54 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php
-# Thu, 23 Mar 2023 09:31:03 GMT
+# Wed, 12 Apr 2023 03:30:55 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Thu, 23 Mar 2023 09:31:19 GMT
+# Wed, 12 Apr 2023 03:31:11 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 23 Mar 2023 09:31:19 GMT
+# Wed, 12 Apr 2023 03:31:11 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Mon, 27 Mar 2023 22:33:07 GMT
+# Wed, 12 Apr 2023 03:31:12 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html
-# Mon, 27 Mar 2023 22:33:07 GMT
+# Wed, 12 Apr 2023 03:31:12 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Mon, 27 Mar 2023 22:33:07 GMT
+# Wed, 12 Apr 2023 03:31:12 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Mon, 27 Mar 2023 22:33:08 GMT
+# Wed, 12 Apr 2023 03:31:12 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Mon, 27 Mar 2023 22:33:08 GMT
+# Wed, 12 Apr 2023 03:31:12 GMT
 ENV GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC
-# Mon, 27 Mar 2023 22:33:08 GMT
+# Wed, 12 Apr 2023 03:58:08 GMT
 ENV PHP_VERSION=8.2.4
-# Mon, 27 Mar 2023 22:33:08 GMT
+# Wed, 12 Apr 2023 03:58:08 GMT
 ENV PHP_URL=https://www.php.net/distributions/php-8.2.4.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.2.4.tar.xz.asc
-# Mon, 27 Mar 2023 22:33:08 GMT
+# Wed, 12 Apr 2023 03:58:08 GMT
 ENV PHP_SHA256=bc7bf4ca7ed0dd17647e3ea870b6f062fcb56b243bfdef3f59ff7f94e96176a8
-# Mon, 27 Mar 2023 22:33:21 GMT
+# Wed, 12 Apr 2023 03:58:20 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg dirmngr; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
-# Mon, 27 Mar 2023 22:33:21 GMT
+# Wed, 12 Apr 2023 03:58:21 GMT
 COPY file:ce57c04b70896f77cc11eb2766417d8a1240fcffe5bba92179ec78c458844110 in /usr/local/bin/ 
-# Mon, 27 Mar 2023 22:36:18 GMT
+# Wed, 12 Apr 2023 04:01:15 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--enable-phpdbg 		--enable-phpdbg-readline 				--with-pear 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				--enable-embed 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version
-# Mon, 27 Mar 2023 22:36:19 GMT
+# Wed, 12 Apr 2023 04:01:16 GMT
 COPY multi:6edd033b037aa2d7697fc3b9f82c2f162146c1920a0c6d25a165dc56783204db in /usr/local/bin/ 
-# Mon, 27 Mar 2023 22:36:19 GMT
+# Wed, 12 Apr 2023 04:01:16 GMT
 RUN docker-php-ext-enable sodium
-# Mon, 27 Mar 2023 22:36:20 GMT
+# Wed, 12 Apr 2023 04:01:16 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Mon, 27 Mar 2023 22:36:20 GMT
+# Wed, 12 Apr 2023 04:01:16 GMT
 CMD ["php" "-a"]
-# Tue, 11 Apr 2023 23:44:18 GMT
+# Wed, 12 Apr 2023 11:03:20 GMT
 LABEL org.opencontainers.image.title=Unit
-# Tue, 11 Apr 2023 23:44:18 GMT
+# Wed, 12 Apr 2023 11:03:20 GMT
 LABEL org.opencontainers.image.description=Official build of Unit for Docker.
-# Tue, 11 Apr 2023 23:44:18 GMT
+# Wed, 12 Apr 2023 11:03:20 GMT
 LABEL org.opencontainers.image.url=https://unit.nginx.org
-# Tue, 11 Apr 2023 23:44:18 GMT
+# Wed, 12 Apr 2023 11:03:20 GMT
 LABEL org.opencontainers.image.source=https://github.com/nginx/unit
-# Tue, 11 Apr 2023 23:44:18 GMT
+# Wed, 12 Apr 2023 11:03:20 GMT
 LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
-# Tue, 11 Apr 2023 23:44:19 GMT
+# Wed, 12 Apr 2023 11:03:21 GMT
 LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 11 Apr 2023 23:44:19 GMT
+# Wed, 12 Apr 2023 11:03:21 GMT
 LABEL org.opencontainers.image.version=1.29.1
-# Tue, 11 Apr 2023 23:45:07 GMT
+# Wed, 12 Apr 2023 11:04:09 GMT
 RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y ca-certificates mercurial build-essential libssl-dev libpcre2-dev     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && hg clone -u 1.29.1-1 https://hg.nginx.org/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS="--prefix=/usr                 --state=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --pid=/var/run/unit.pid                 --log=/var/log/unit.log                 --tmp=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modules=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modules=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/unitd /usr/sbin/unitd     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --modules=/usr/lib/unit/debug-modules --debug     && ./configure php     && make -j $NCPU php-install     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --modules=/usr/lib/unit/modules     && ./configure php     && make -j $NCPU php-install     && cd     && rm -rf unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && ldconfig     && mkdir -p /var/lib/unit/     && mkdir /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stdout /var/log/unit.log
-# Tue, 11 Apr 2023 23:45:07 GMT
+# Wed, 12 Apr 2023 11:04:09 GMT
 COPY file:952dd3fe197ec3c69c75729eed06a3581063d4c1ed92bf889cf007c89efb3ae8 in /usr/local/bin/ 
-# Tue, 11 Apr 2023 23:45:07 GMT
+# Wed, 12 Apr 2023 11:04:10 GMT
 STOPSIGNAL SIGTERM
-# Tue, 11 Apr 2023 23:45:07 GMT
+# Wed, 12 Apr 2023 11:04:10 GMT
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-# Tue, 11 Apr 2023 23:45:07 GMT
+# Wed, 12 Apr 2023 11:04:10 GMT
 CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ```
 
 -	Layers:
-	-	`sha256:f1f26f5702560b7e591bef5c4d840f76a232bf13fd5aefc4e22077a1ae4440c7`  
-		Last Modified: Thu, 23 Mar 2023 01:34:23 GMT  
-		Size: 31.4 MB (31411405 bytes)  
+	-	`sha256:26c5c85e47da3022f1bdb9a112103646c5c29517d757e95426f16e4bd9533405`  
+		Last Modified: Wed, 12 Apr 2023 00:23:43 GMT  
+		Size: 31.4 MB (31418228 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee0a4e40ccac1c58f6ca3cf6c0cbb0a5897abd33dee49b641509d5627df02b46`  
-		Last Modified: Thu, 23 Mar 2023 10:51:34 GMT  
-		Size: 226.0 B  
+	-	`sha256:39c8021d1258ac2078c39a88a97b3c834df2a1bf40f1b56f88bb237cc837c9cb`  
+		Last Modified: Wed, 12 Apr 2023 05:43:00 GMT  
+		Size: 225.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ca9fb408faadb7bf25d58bd66104b2e93e7ba37e961bb24b245abcc09230187`  
-		Last Modified: Thu, 23 Mar 2023 10:51:46 GMT  
-		Size: 91.6 MB (91636283 bytes)  
+	-	`sha256:dff43c2de6846ddda72bd88d8150e2bb08bca320f1f8ff895a2c09afae223ecb`  
+		Last Modified: Wed, 12 Apr 2023 05:43:13 GMT  
+		Size: 91.6 MB (91636376 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:25862b797d8786d6655c181772787e4fa6c932aafd6853e429409590e9f6d99b`  
-		Last Modified: Tue, 28 Mar 2023 00:51:20 GMT  
-		Size: 270.0 B  
+	-	`sha256:383987c505e89f10b4ef0b1352d7b5e1337ed05746b6e846e0760340080ea1b3`  
+		Last Modified: Wed, 12 Apr 2023 05:43:00 GMT  
+		Size: 267.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86f390fbd202858b1054f09273a7332a540a1ef21a500358d9b38f3b66218500`  
-		Last Modified: Tue, 28 Mar 2023 00:51:19 GMT  
-		Size: 12.3 MB (12310616 bytes)  
+	-	`sha256:ce60ac48fe908b8ca01d2194f7dffed20c8b7734e615a2e32f4aa16b99b71fc0`  
+		Last Modified: Wed, 12 Apr 2023 05:45:29 GMT  
+		Size: 12.3 MB (12310676 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5fb9a2031944f290343556fde7618b9a79e9f61afebbd8bb53ebf958809a91c3`  
-		Last Modified: Tue, 28 Mar 2023 00:51:18 GMT  
-		Size: 491.0 B  
+	-	`sha256:3d543c5d7aa3055ab4ca8c48727edcdac50149b36fa1eed71faf8b02c9dbeb29`  
+		Last Modified: Wed, 12 Apr 2023 05:45:28 GMT  
+		Size: 490.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:602cfa608bb04fc5753dca97d5699205d2ea0f4b3226c628dc2d7d462a588499`  
-		Last Modified: Tue, 28 Mar 2023 00:51:23 GMT  
-		Size: 34.5 MB (34519761 bytes)  
+	-	`sha256:3b6fabf19ce973edc1979657b3610d745c712ac70e74db8178b1423f6dd02fe0`  
+		Last Modified: Wed, 12 Apr 2023 05:45:33 GMT  
+		Size: 34.5 MB (34519810 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec677606e702ac5d0350c52bcb2524c0a5cbf1fa75c268931f4f855964984cf3`  
-		Last Modified: Tue, 28 Mar 2023 00:51:18 GMT  
-		Size: 2.4 KB (2449 bytes)  
+	-	`sha256:02d0ece026472c7bf832d3e9d9728de0a4a8e0d5bb30715d6bc485982278fdff`  
+		Last Modified: Wed, 12 Apr 2023 05:45:28 GMT  
+		Size: 2.5 KB (2450 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:72e00b2bfda42b2c2b8fe4f2f30bba5d864fd1e5fdf1e6174b2b0a9e0d9f164f`  
-		Last Modified: Tue, 28 Mar 2023 00:51:18 GMT  
-		Size: 244.0 B  
+	-	`sha256:07241f1fb7b826ba959767aa981403f8ae7b2b8f6fdc02adad34d57085390819`  
+		Last Modified: Wed, 12 Apr 2023 05:45:28 GMT  
+		Size: 247.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ca9f0b919e6882a67c2cdcd345db5a912596f2d807d2acd179719e44bfdb36f0`  
-		Last Modified: Tue, 11 Apr 2023 23:49:29 GMT  
-		Size: 10.0 MB (10032582 bytes)  
+	-	`sha256:fef15fa578ba8008a9c4c106f7e25a36baa510fdfbc92faeb65da01de31f6895`  
+		Last Modified: Wed, 12 Apr 2023 11:06:52 GMT  
+		Size: 10.0 MB (10032638 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3f31682b73bd0c97e9697cb276ab064adb47a344c890635b3752e4373cf422e7`  
-		Last Modified: Tue, 11 Apr 2023 23:49:27 GMT  
-		Size: 1.2 KB (1198 bytes)  
+	-	`sha256:b5c5df72605d1de9bb6e55628d92b71334d147098fe498c89078c78c91de936a`  
+		Last Modified: Wed, 12 Apr 2023 11:06:50 GMT  
+		Size: 1.2 KB (1196 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `unit:php8` - linux; arm64 variant v8
@@ -4667,7 +4667,7 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ## `unit:php8.2`
 
 ```console
-$ docker pull unit@sha256:c0c1efe6ee2635daca8ac478e7c42cac3a7d34a264cdd33ae992d99add4dde51
+$ docker pull unit@sha256:4d18010dc92b022d1551b528f570d170e62f7dc3e38e22d4f2c61dbd95f07109
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4678,130 +4678,130 @@ $ docker pull unit@sha256:c0c1efe6ee2635daca8ac478e7c42cac3a7d34a264cdd33ae992d9
 ### `unit:php8.2` - linux; amd64
 
 ```console
-$ docker pull unit@sha256:44677840b6c23423d28fd7a93515577bdbd06ea6c1175c7fb274e278718aeeb4
+$ docker pull unit@sha256:deade2c32edeff53c5340a44f27b2532dea1914c6662730392dcbe101aaf97f9
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **179.9 MB (179915525 bytes)**  
+-	Total Size: **179.9 MB (179922603 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:34d27fc8ffa0a4f1313e75e4c73534d324b5b1c7680d45ceb5b6ace2d6776d2b`
+-	Image ID: `sha256:6d3e91bd965af79a4722d90e15cdcc59831eb7b2d255fab4e395f1423e95615f`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
 ```dockerfile
-# Thu, 23 Mar 2023 01:30:27 GMT
-ADD file:60911afdacfdc216e44115addb5f3cc07f4166e8a4adf7be94a58aacc327ad63 in / 
-# Thu, 23 Mar 2023 01:30:27 GMT
+# Wed, 12 Apr 2023 00:20:06 GMT
+ADD file:11b1acca3f68b5c5787e292ff8dbdd114964a7272bf3519ab07710cbc01a0838 in / 
+# Wed, 12 Apr 2023 00:20:06 GMT
 CMD ["bash"]
-# Thu, 23 Mar 2023 09:31:02 GMT
+# Wed, 12 Apr 2023 03:30:54 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php
-# Thu, 23 Mar 2023 09:31:03 GMT
+# Wed, 12 Apr 2023 03:30:55 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Thu, 23 Mar 2023 09:31:19 GMT
+# Wed, 12 Apr 2023 03:31:11 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 23 Mar 2023 09:31:19 GMT
+# Wed, 12 Apr 2023 03:31:11 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Mon, 27 Mar 2023 22:33:07 GMT
+# Wed, 12 Apr 2023 03:31:12 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html
-# Mon, 27 Mar 2023 22:33:07 GMT
+# Wed, 12 Apr 2023 03:31:12 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Mon, 27 Mar 2023 22:33:07 GMT
+# Wed, 12 Apr 2023 03:31:12 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Mon, 27 Mar 2023 22:33:08 GMT
+# Wed, 12 Apr 2023 03:31:12 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Mon, 27 Mar 2023 22:33:08 GMT
+# Wed, 12 Apr 2023 03:31:12 GMT
 ENV GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC
-# Mon, 27 Mar 2023 22:33:08 GMT
+# Wed, 12 Apr 2023 03:58:08 GMT
 ENV PHP_VERSION=8.2.4
-# Mon, 27 Mar 2023 22:33:08 GMT
+# Wed, 12 Apr 2023 03:58:08 GMT
 ENV PHP_URL=https://www.php.net/distributions/php-8.2.4.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.2.4.tar.xz.asc
-# Mon, 27 Mar 2023 22:33:08 GMT
+# Wed, 12 Apr 2023 03:58:08 GMT
 ENV PHP_SHA256=bc7bf4ca7ed0dd17647e3ea870b6f062fcb56b243bfdef3f59ff7f94e96176a8
-# Mon, 27 Mar 2023 22:33:21 GMT
+# Wed, 12 Apr 2023 03:58:20 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg dirmngr; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
-# Mon, 27 Mar 2023 22:33:21 GMT
+# Wed, 12 Apr 2023 03:58:21 GMT
 COPY file:ce57c04b70896f77cc11eb2766417d8a1240fcffe5bba92179ec78c458844110 in /usr/local/bin/ 
-# Mon, 27 Mar 2023 22:36:18 GMT
+# Wed, 12 Apr 2023 04:01:15 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--enable-phpdbg 		--enable-phpdbg-readline 				--with-pear 				$(test "$gnuArch" = 's390x-linux-gnu' && echo '--without-pcre-jit') 		--with-libdir="lib/$debMultiarch" 				--enable-embed 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version
-# Mon, 27 Mar 2023 22:36:19 GMT
+# Wed, 12 Apr 2023 04:01:16 GMT
 COPY multi:6edd033b037aa2d7697fc3b9f82c2f162146c1920a0c6d25a165dc56783204db in /usr/local/bin/ 
-# Mon, 27 Mar 2023 22:36:19 GMT
+# Wed, 12 Apr 2023 04:01:16 GMT
 RUN docker-php-ext-enable sodium
-# Mon, 27 Mar 2023 22:36:20 GMT
+# Wed, 12 Apr 2023 04:01:16 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Mon, 27 Mar 2023 22:36:20 GMT
+# Wed, 12 Apr 2023 04:01:16 GMT
 CMD ["php" "-a"]
-# Tue, 11 Apr 2023 23:44:18 GMT
+# Wed, 12 Apr 2023 11:03:20 GMT
 LABEL org.opencontainers.image.title=Unit
-# Tue, 11 Apr 2023 23:44:18 GMT
+# Wed, 12 Apr 2023 11:03:20 GMT
 LABEL org.opencontainers.image.description=Official build of Unit for Docker.
-# Tue, 11 Apr 2023 23:44:18 GMT
+# Wed, 12 Apr 2023 11:03:20 GMT
 LABEL org.opencontainers.image.url=https://unit.nginx.org
-# Tue, 11 Apr 2023 23:44:18 GMT
+# Wed, 12 Apr 2023 11:03:20 GMT
 LABEL org.opencontainers.image.source=https://github.com/nginx/unit
-# Tue, 11 Apr 2023 23:44:18 GMT
+# Wed, 12 Apr 2023 11:03:20 GMT
 LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
-# Tue, 11 Apr 2023 23:44:19 GMT
+# Wed, 12 Apr 2023 11:03:21 GMT
 LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 11 Apr 2023 23:44:19 GMT
+# Wed, 12 Apr 2023 11:03:21 GMT
 LABEL org.opencontainers.image.version=1.29.1
-# Tue, 11 Apr 2023 23:45:07 GMT
+# Wed, 12 Apr 2023 11:04:09 GMT
 RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y ca-certificates mercurial build-essential libssl-dev libpcre2-dev     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && hg clone -u 1.29.1-1 https://hg.nginx.org/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS="--prefix=/usr                 --state=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --pid=/var/run/unit.pid                 --log=/var/log/unit.log                 --tmp=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modules=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modules=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/unitd /usr/sbin/unitd     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --modules=/usr/lib/unit/debug-modules --debug     && ./configure php     && make -j $NCPU php-install     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --modules=/usr/lib/unit/modules     && ./configure php     && make -j $NCPU php-install     && cd     && rm -rf unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && ldconfig     && mkdir -p /var/lib/unit/     && mkdir /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stdout /var/log/unit.log
-# Tue, 11 Apr 2023 23:45:07 GMT
+# Wed, 12 Apr 2023 11:04:09 GMT
 COPY file:952dd3fe197ec3c69c75729eed06a3581063d4c1ed92bf889cf007c89efb3ae8 in /usr/local/bin/ 
-# Tue, 11 Apr 2023 23:45:07 GMT
+# Wed, 12 Apr 2023 11:04:10 GMT
 STOPSIGNAL SIGTERM
-# Tue, 11 Apr 2023 23:45:07 GMT
+# Wed, 12 Apr 2023 11:04:10 GMT
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-# Tue, 11 Apr 2023 23:45:07 GMT
+# Wed, 12 Apr 2023 11:04:10 GMT
 CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ```
 
 -	Layers:
-	-	`sha256:f1f26f5702560b7e591bef5c4d840f76a232bf13fd5aefc4e22077a1ae4440c7`  
-		Last Modified: Thu, 23 Mar 2023 01:34:23 GMT  
-		Size: 31.4 MB (31411405 bytes)  
+	-	`sha256:26c5c85e47da3022f1bdb9a112103646c5c29517d757e95426f16e4bd9533405`  
+		Last Modified: Wed, 12 Apr 2023 00:23:43 GMT  
+		Size: 31.4 MB (31418228 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee0a4e40ccac1c58f6ca3cf6c0cbb0a5897abd33dee49b641509d5627df02b46`  
-		Last Modified: Thu, 23 Mar 2023 10:51:34 GMT  
-		Size: 226.0 B  
+	-	`sha256:39c8021d1258ac2078c39a88a97b3c834df2a1bf40f1b56f88bb237cc837c9cb`  
+		Last Modified: Wed, 12 Apr 2023 05:43:00 GMT  
+		Size: 225.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ca9fb408faadb7bf25d58bd66104b2e93e7ba37e961bb24b245abcc09230187`  
-		Last Modified: Thu, 23 Mar 2023 10:51:46 GMT  
-		Size: 91.6 MB (91636283 bytes)  
+	-	`sha256:dff43c2de6846ddda72bd88d8150e2bb08bca320f1f8ff895a2c09afae223ecb`  
+		Last Modified: Wed, 12 Apr 2023 05:43:13 GMT  
+		Size: 91.6 MB (91636376 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:25862b797d8786d6655c181772787e4fa6c932aafd6853e429409590e9f6d99b`  
-		Last Modified: Tue, 28 Mar 2023 00:51:20 GMT  
-		Size: 270.0 B  
+	-	`sha256:383987c505e89f10b4ef0b1352d7b5e1337ed05746b6e846e0760340080ea1b3`  
+		Last Modified: Wed, 12 Apr 2023 05:43:00 GMT  
+		Size: 267.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86f390fbd202858b1054f09273a7332a540a1ef21a500358d9b38f3b66218500`  
-		Last Modified: Tue, 28 Mar 2023 00:51:19 GMT  
-		Size: 12.3 MB (12310616 bytes)  
+	-	`sha256:ce60ac48fe908b8ca01d2194f7dffed20c8b7734e615a2e32f4aa16b99b71fc0`  
+		Last Modified: Wed, 12 Apr 2023 05:45:29 GMT  
+		Size: 12.3 MB (12310676 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5fb9a2031944f290343556fde7618b9a79e9f61afebbd8bb53ebf958809a91c3`  
-		Last Modified: Tue, 28 Mar 2023 00:51:18 GMT  
-		Size: 491.0 B  
+	-	`sha256:3d543c5d7aa3055ab4ca8c48727edcdac50149b36fa1eed71faf8b02c9dbeb29`  
+		Last Modified: Wed, 12 Apr 2023 05:45:28 GMT  
+		Size: 490.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:602cfa608bb04fc5753dca97d5699205d2ea0f4b3226c628dc2d7d462a588499`  
-		Last Modified: Tue, 28 Mar 2023 00:51:23 GMT  
-		Size: 34.5 MB (34519761 bytes)  
+	-	`sha256:3b6fabf19ce973edc1979657b3610d745c712ac70e74db8178b1423f6dd02fe0`  
+		Last Modified: Wed, 12 Apr 2023 05:45:33 GMT  
+		Size: 34.5 MB (34519810 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec677606e702ac5d0350c52bcb2524c0a5cbf1fa75c268931f4f855964984cf3`  
-		Last Modified: Tue, 28 Mar 2023 00:51:18 GMT  
-		Size: 2.4 KB (2449 bytes)  
+	-	`sha256:02d0ece026472c7bf832d3e9d9728de0a4a8e0d5bb30715d6bc485982278fdff`  
+		Last Modified: Wed, 12 Apr 2023 05:45:28 GMT  
+		Size: 2.5 KB (2450 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:72e00b2bfda42b2c2b8fe4f2f30bba5d864fd1e5fdf1e6174b2b0a9e0d9f164f`  
-		Last Modified: Tue, 28 Mar 2023 00:51:18 GMT  
-		Size: 244.0 B  
+	-	`sha256:07241f1fb7b826ba959767aa981403f8ae7b2b8f6fdc02adad34d57085390819`  
+		Last Modified: Wed, 12 Apr 2023 05:45:28 GMT  
+		Size: 247.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ca9f0b919e6882a67c2cdcd345db5a912596f2d807d2acd179719e44bfdb36f0`  
-		Last Modified: Tue, 11 Apr 2023 23:49:29 GMT  
-		Size: 10.0 MB (10032582 bytes)  
+	-	`sha256:fef15fa578ba8008a9c4c106f7e25a36baa510fdfbc92faeb65da01de31f6895`  
+		Last Modified: Wed, 12 Apr 2023 11:06:52 GMT  
+		Size: 10.0 MB (10032638 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3f31682b73bd0c97e9697cb276ab064adb47a344c890635b3752e4373cf422e7`  
-		Last Modified: Tue, 11 Apr 2023 23:49:27 GMT  
-		Size: 1.2 KB (1198 bytes)  
+	-	`sha256:b5c5df72605d1de9bb6e55628d92b71334d147098fe498c89078c78c91de936a`  
+		Last Modified: Wed, 12 Apr 2023 11:06:50 GMT  
+		Size: 1.2 KB (1196 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `unit:php8.2` - linux; arm64 variant v8
@@ -5719,7 +5719,7 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ## `unit:ruby`
 
 ```console
-$ docker pull unit@sha256:8b0c55ae9d40511ef8ca7420bee74c5d0c6aa8c7ac2d675dd1ecc408a7ef5f34
+$ docker pull unit@sha256:7e2151e200d19aa840b6fb16dccdef9711b510af01a659c50a2886194bcf5d6b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5730,118 +5730,118 @@ $ docker pull unit@sha256:8b0c55ae9d40511ef8ca7420bee74c5d0c6aa8c7ac2d675dd1ecc4
 ### `unit:ruby` - linux; amd64
 
 ```console
-$ docker pull unit@sha256:45040586469620f1307b190cee4e5127d74d3260f0ffc94f11a39f008801dbd8
+$ docker pull unit@sha256:05a4d5732ce36a8604412967e3bb4a6d1e6646ba57fb27154de7ff5391b63b08
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **367.3 MB (367286941 bytes)**  
+-	Total Size: **367.3 MB (367294771 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:88fe4ce74668e4fd1d2ffaa0caddef2023f3c2f13877ee8597b7526810d76b27`
+-	Image ID: `sha256:5e044af00a0e40283c3fd1ca13059a5f061d25f60d19c745daf414f778aaf71e`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
 ```dockerfile
-# Thu, 23 Mar 2023 01:30:15 GMT
-ADD file:459d1e92eb8c24ff4758f974d289ca8a2abe04cf50b6fe2bd760aa4589478289 in / 
-# Thu, 23 Mar 2023 01:30:15 GMT
+# Wed, 12 Apr 2023 00:19:55 GMT
+ADD file:f2d012660f882f319a5878a3f9ce285f488b8f90fad49ad238541cf72089e035 in / 
+# Wed, 12 Apr 2023 00:19:56 GMT
 CMD ["bash"]
-# Thu, 23 Mar 2023 06:01:27 GMT
+# Wed, 12 Apr 2023 07:50:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 23 Mar 2023 06:01:32 GMT
+# Wed, 12 Apr 2023 07:51:04 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 23 Mar 2023 06:01:49 GMT
+# Wed, 12 Apr 2023 07:51:20 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 23 Mar 2023 06:02:39 GMT
+# Wed, 12 Apr 2023 07:52:18 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 23 Mar 2023 16:03:08 GMT
+# Wed, 12 Apr 2023 09:52:50 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	{ 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /usr/local/etc/gemrc
-# Thu, 23 Mar 2023 16:03:08 GMT
+# Wed, 12 Apr 2023 09:52:51 GMT
 ENV LANG=C.UTF-8
-# Thu, 23 Mar 2023 16:03:09 GMT
+# Wed, 12 Apr 2023 09:52:51 GMT
 ENV RUBY_MAJOR=3.2
-# Thu, 30 Mar 2023 19:20:50 GMT
+# Wed, 12 Apr 2023 09:52:51 GMT
 ENV RUBY_VERSION=3.2.2
-# Thu, 30 Mar 2023 19:20:50 GMT
+# Wed, 12 Apr 2023 09:52:51 GMT
 ENV RUBY_DOWNLOAD_SHA256=4b352d0f7ec384e332e3e44cdbfdcd5ff2d594af3c8296b5636c710975149e23
-# Thu, 30 Mar 2023 19:23:05 GMT
+# Wed, 12 Apr 2023 09:55:09 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bison 		dpkg-dev 		libgdbm-dev 		ruby 	; 	rm -rf /var/lib/apt/lists/*; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.25.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='5cc9ffd1026e82e7fb2eec2121ad71f4b0f044e88bca39207b3f6b769aaa799c' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.25.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='e189948e396d47254103a49c987e7fb0e5dd8e34b200aa4481ecc4b8e41fb929' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.66.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		{ 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new; 	mv file.c.new file.c; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| grep -vE '^/usr/local/lib/' 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version
-# Thu, 30 Mar 2023 19:23:06 GMT
+# Wed, 12 Apr 2023 09:55:09 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Thu, 30 Mar 2023 19:23:06 GMT
+# Wed, 12 Apr 2023 09:55:09 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Thu, 30 Mar 2023 19:23:06 GMT
+# Wed, 12 Apr 2023 09:55:09 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 30 Mar 2023 19:23:06 GMT
+# Wed, 12 Apr 2023 09:55:10 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 1777 "$GEM_HOME"
-# Thu, 30 Mar 2023 19:23:06 GMT
+# Wed, 12 Apr 2023 09:55:10 GMT
 CMD ["irb"]
-# Tue, 11 Apr 2023 23:46:04 GMT
+# Wed, 12 Apr 2023 11:04:19 GMT
 LABEL org.opencontainers.image.title=Unit
-# Tue, 11 Apr 2023 23:46:04 GMT
+# Wed, 12 Apr 2023 11:04:20 GMT
 LABEL org.opencontainers.image.description=Official build of Unit for Docker.
-# Tue, 11 Apr 2023 23:46:04 GMT
+# Wed, 12 Apr 2023 11:04:20 GMT
 LABEL org.opencontainers.image.url=https://unit.nginx.org
-# Tue, 11 Apr 2023 23:46:04 GMT
+# Wed, 12 Apr 2023 11:04:20 GMT
 LABEL org.opencontainers.image.source=https://github.com/nginx/unit
-# Tue, 11 Apr 2023 23:46:05 GMT
+# Wed, 12 Apr 2023 11:04:20 GMT
 LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
-# Tue, 11 Apr 2023 23:46:05 GMT
+# Wed, 12 Apr 2023 11:04:20 GMT
 LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 11 Apr 2023 23:46:05 GMT
+# Wed, 12 Apr 2023 11:04:20 GMT
 LABEL org.opencontainers.image.version=1.29.1
-# Tue, 11 Apr 2023 23:46:44 GMT
+# Wed, 12 Apr 2023 11:05:00 GMT
 RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y ca-certificates mercurial build-essential libssl-dev libpcre2-dev     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && hg clone -u 1.29.1-1 https://hg.nginx.org/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS="--prefix=/usr                 --state=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --pid=/var/run/unit.pid                 --log=/var/log/unit.log                 --tmp=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modules=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modules=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/unitd /usr/sbin/unitd     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --modules=/usr/lib/unit/debug-modules --debug     && ./configure ruby     && make -j $NCPU ruby-install     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --modules=/usr/lib/unit/modules     && ./configure ruby     && make -j $NCPU ruby-install     && cd     && rm -rf unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && gem install rack     && mkdir -p /var/lib/unit/     && mkdir /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stdout /var/log/unit.log
-# Tue, 11 Apr 2023 23:46:45 GMT
+# Wed, 12 Apr 2023 11:05:01 GMT
 COPY file:952dd3fe197ec3c69c75729eed06a3581063d4c1ed92bf889cf007c89efb3ae8 in /usr/local/bin/ 
-# Tue, 11 Apr 2023 23:46:45 GMT
+# Wed, 12 Apr 2023 11:05:01 GMT
 STOPSIGNAL SIGTERM
-# Tue, 11 Apr 2023 23:46:45 GMT
+# Wed, 12 Apr 2023 11:05:01 GMT
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-# Tue, 11 Apr 2023 23:46:45 GMT
+# Wed, 12 Apr 2023 11:05:01 GMT
 CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ```
 
 -	Layers:
-	-	`sha256:3e440a7045683e27f8e2fa04000e0e078d8dfac0c971358ae0f8c65c13321c8e`  
-		Last Modified: Thu, 23 Mar 2023 01:34:00 GMT  
-		Size: 55.0 MB (55045608 bytes)  
+	-	`sha256:b0248cf3e63c73d0e496a67807d056ca41d5e968b61087e8eca2cf4b9b4d7b99`  
+		Last Modified: Wed, 12 Apr 2023 00:23:20 GMT  
+		Size: 55.1 MB (55052736 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68a71c865a2c34678c6dea55e4b0928f751ee3c0ca91cace6e4e0578c534d6cf`  
-		Last Modified: Thu, 23 Mar 2023 06:08:01 GMT  
-		Size: 5.2 MB (5166592 bytes)  
+	-	`sha256:127e97b4daf784e08840a21765f0d4f251192ef2994d0e4a253490f81e63955b`  
+		Last Modified: Wed, 12 Apr 2023 07:57:29 GMT  
+		Size: 5.2 MB (5166696 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:670730c27c2eacf07897a6e94fe55423ea50b884d9c28161a283bbbf064d1124`  
-		Last Modified: Thu, 23 Mar 2023 06:08:02 GMT  
-		Size: 10.9 MB (10876735 bytes)  
+	-	`sha256:0336c50c9f6942b660e433b1086238eec37057c34b14c4e3b28bd7bf05bd84ba`  
+		Last Modified: Wed, 12 Apr 2023 07:57:29 GMT  
+		Size: 10.9 MB (10876749 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a7a2c95f0f8b221d776ccf35911b68eec2cf9414a44d216205a6f03e381d3d7`  
-		Last Modified: Thu, 23 Mar 2023 06:08:19 GMT  
-		Size: 54.6 MB (54583510 bytes)  
+	-	`sha256:1b89f3c7f7da8adf032a33a75d1b659cee33179ecb88ea0ba75e4fc58ebe63a6`  
+		Last Modified: Wed, 12 Apr 2023 07:57:46 GMT  
+		Size: 54.6 MB (54584801 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6d627e120214bb28a729d4b54a0ecba4c4aeaf0295ca2d1f129480145fad2af6`  
-		Last Modified: Thu, 23 Mar 2023 06:08:51 GMT  
-		Size: 196.8 MB (196812279 bytes)  
+	-	`sha256:2d62772179761f8fddfaed03ed2bdf7078b103b193d18d79a9b49364830d56cf`  
+		Last Modified: Wed, 12 Apr 2023 07:58:19 GMT  
+		Size: 196.8 MB (196811503 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:adce7d0cf0c9443924156ba59b5cee73e9679ade2301baf4172114bbc7d237a9`  
-		Last Modified: Thu, 23 Mar 2023 16:39:30 GMT  
-		Size: 198.0 B  
+	-	`sha256:4647bcaf3a5f4710eed11d4e71ccbf52d564c9f6f015bafc5bf758f94f8fa6eb`  
+		Last Modified: Wed, 12 Apr 2023 10:28:58 GMT  
+		Size: 199.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d78353cc5d03849fd95660ac078d646aa7c3f2d5afa3e30ebc77d6233a3c43c6`  
-		Last Modified: Thu, 30 Mar 2023 20:11:22 GMT  
-		Size: 34.6 MB (34555172 bytes)  
+	-	`sha256:2a5a565cbb1b0f425b71963e84bc40066938a2cc52bf7709dddf20108276ef8e`  
+		Last Modified: Wed, 12 Apr 2023 10:29:02 GMT  
+		Size: 34.6 MB (34555084 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95a1803b4a35217b06f4a54bfd39c60fddc2608ec7832662cf60f180db3f3d6d`  
-		Last Modified: Thu, 30 Mar 2023 20:11:19 GMT  
-		Size: 176.0 B  
+	-	`sha256:ccb6e9ffbc296e93f887b5a911acd930cd7c8cfa01441c14dfa24c5ca85da777`  
+		Last Modified: Wed, 12 Apr 2023 10:28:58 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1b74bf1590f23878eda4b1c5410eebf2f34fdc45650aef26a02e3a989b42f04`  
-		Last Modified: Tue, 11 Apr 2023 23:49:58 GMT  
-		Size: 10.2 MB (10245470 bytes)  
+	-	`sha256:e11655cfb199f321dd218874ea8015635e2f075f0afdba1ac6c729a5a99eeb5a`  
+		Last Modified: Wed, 12 Apr 2023 11:07:07 GMT  
+		Size: 10.2 MB (10245630 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d47b895b00360506ad35a9e0032314cf87e0055d209cd7d885e4eae8df97b680`  
-		Last Modified: Tue, 11 Apr 2023 23:49:57 GMT  
-		Size: 1.2 KB (1201 bytes)  
+	-	`sha256:060bbfa9dc4fa7d79f2af3aecad0f3e2fff18ab2945e9112588223cb1002da2a`  
+		Last Modified: Wed, 12 Apr 2023 11:07:06 GMT  
+		Size: 1.2 KB (1199 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `unit:ruby` - linux; arm64 variant v8
@@ -5964,7 +5964,7 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ## `unit:ruby3`
 
 ```console
-$ docker pull unit@sha256:8b0c55ae9d40511ef8ca7420bee74c5d0c6aa8c7ac2d675dd1ecc408a7ef5f34
+$ docker pull unit@sha256:7e2151e200d19aa840b6fb16dccdef9711b510af01a659c50a2886194bcf5d6b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5975,118 +5975,118 @@ $ docker pull unit@sha256:8b0c55ae9d40511ef8ca7420bee74c5d0c6aa8c7ac2d675dd1ecc4
 ### `unit:ruby3` - linux; amd64
 
 ```console
-$ docker pull unit@sha256:45040586469620f1307b190cee4e5127d74d3260f0ffc94f11a39f008801dbd8
+$ docker pull unit@sha256:05a4d5732ce36a8604412967e3bb4a6d1e6646ba57fb27154de7ff5391b63b08
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **367.3 MB (367286941 bytes)**  
+-	Total Size: **367.3 MB (367294771 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:88fe4ce74668e4fd1d2ffaa0caddef2023f3c2f13877ee8597b7526810d76b27`
+-	Image ID: `sha256:5e044af00a0e40283c3fd1ca13059a5f061d25f60d19c745daf414f778aaf71e`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
 ```dockerfile
-# Thu, 23 Mar 2023 01:30:15 GMT
-ADD file:459d1e92eb8c24ff4758f974d289ca8a2abe04cf50b6fe2bd760aa4589478289 in / 
-# Thu, 23 Mar 2023 01:30:15 GMT
+# Wed, 12 Apr 2023 00:19:55 GMT
+ADD file:f2d012660f882f319a5878a3f9ce285f488b8f90fad49ad238541cf72089e035 in / 
+# Wed, 12 Apr 2023 00:19:56 GMT
 CMD ["bash"]
-# Thu, 23 Mar 2023 06:01:27 GMT
+# Wed, 12 Apr 2023 07:50:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 23 Mar 2023 06:01:32 GMT
+# Wed, 12 Apr 2023 07:51:04 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 23 Mar 2023 06:01:49 GMT
+# Wed, 12 Apr 2023 07:51:20 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 23 Mar 2023 06:02:39 GMT
+# Wed, 12 Apr 2023 07:52:18 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 23 Mar 2023 16:03:08 GMT
+# Wed, 12 Apr 2023 09:52:50 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	{ 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /usr/local/etc/gemrc
-# Thu, 23 Mar 2023 16:03:08 GMT
+# Wed, 12 Apr 2023 09:52:51 GMT
 ENV LANG=C.UTF-8
-# Thu, 23 Mar 2023 16:03:09 GMT
+# Wed, 12 Apr 2023 09:52:51 GMT
 ENV RUBY_MAJOR=3.2
-# Thu, 30 Mar 2023 19:20:50 GMT
+# Wed, 12 Apr 2023 09:52:51 GMT
 ENV RUBY_VERSION=3.2.2
-# Thu, 30 Mar 2023 19:20:50 GMT
+# Wed, 12 Apr 2023 09:52:51 GMT
 ENV RUBY_DOWNLOAD_SHA256=4b352d0f7ec384e332e3e44cdbfdcd5ff2d594af3c8296b5636c710975149e23
-# Thu, 30 Mar 2023 19:23:05 GMT
+# Wed, 12 Apr 2023 09:55:09 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bison 		dpkg-dev 		libgdbm-dev 		ruby 	; 	rm -rf /var/lib/apt/lists/*; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.25.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='5cc9ffd1026e82e7fb2eec2121ad71f4b0f044e88bca39207b3f6b769aaa799c' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.25.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='e189948e396d47254103a49c987e7fb0e5dd8e34b200aa4481ecc4b8e41fb929' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.66.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		{ 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new; 	mv file.c.new file.c; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| grep -vE '^/usr/local/lib/' 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version
-# Thu, 30 Mar 2023 19:23:06 GMT
+# Wed, 12 Apr 2023 09:55:09 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Thu, 30 Mar 2023 19:23:06 GMT
+# Wed, 12 Apr 2023 09:55:09 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Thu, 30 Mar 2023 19:23:06 GMT
+# Wed, 12 Apr 2023 09:55:09 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 30 Mar 2023 19:23:06 GMT
+# Wed, 12 Apr 2023 09:55:10 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 1777 "$GEM_HOME"
-# Thu, 30 Mar 2023 19:23:06 GMT
+# Wed, 12 Apr 2023 09:55:10 GMT
 CMD ["irb"]
-# Tue, 11 Apr 2023 23:46:04 GMT
+# Wed, 12 Apr 2023 11:04:19 GMT
 LABEL org.opencontainers.image.title=Unit
-# Tue, 11 Apr 2023 23:46:04 GMT
+# Wed, 12 Apr 2023 11:04:20 GMT
 LABEL org.opencontainers.image.description=Official build of Unit for Docker.
-# Tue, 11 Apr 2023 23:46:04 GMT
+# Wed, 12 Apr 2023 11:04:20 GMT
 LABEL org.opencontainers.image.url=https://unit.nginx.org
-# Tue, 11 Apr 2023 23:46:04 GMT
+# Wed, 12 Apr 2023 11:04:20 GMT
 LABEL org.opencontainers.image.source=https://github.com/nginx/unit
-# Tue, 11 Apr 2023 23:46:05 GMT
+# Wed, 12 Apr 2023 11:04:20 GMT
 LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
-# Tue, 11 Apr 2023 23:46:05 GMT
+# Wed, 12 Apr 2023 11:04:20 GMT
 LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 11 Apr 2023 23:46:05 GMT
+# Wed, 12 Apr 2023 11:04:20 GMT
 LABEL org.opencontainers.image.version=1.29.1
-# Tue, 11 Apr 2023 23:46:44 GMT
+# Wed, 12 Apr 2023 11:05:00 GMT
 RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y ca-certificates mercurial build-essential libssl-dev libpcre2-dev     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && hg clone -u 1.29.1-1 https://hg.nginx.org/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS="--prefix=/usr                 --state=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --pid=/var/run/unit.pid                 --log=/var/log/unit.log                 --tmp=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modules=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modules=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/unitd /usr/sbin/unitd     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --modules=/usr/lib/unit/debug-modules --debug     && ./configure ruby     && make -j $NCPU ruby-install     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --modules=/usr/lib/unit/modules     && ./configure ruby     && make -j $NCPU ruby-install     && cd     && rm -rf unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && gem install rack     && mkdir -p /var/lib/unit/     && mkdir /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stdout /var/log/unit.log
-# Tue, 11 Apr 2023 23:46:45 GMT
+# Wed, 12 Apr 2023 11:05:01 GMT
 COPY file:952dd3fe197ec3c69c75729eed06a3581063d4c1ed92bf889cf007c89efb3ae8 in /usr/local/bin/ 
-# Tue, 11 Apr 2023 23:46:45 GMT
+# Wed, 12 Apr 2023 11:05:01 GMT
 STOPSIGNAL SIGTERM
-# Tue, 11 Apr 2023 23:46:45 GMT
+# Wed, 12 Apr 2023 11:05:01 GMT
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-# Tue, 11 Apr 2023 23:46:45 GMT
+# Wed, 12 Apr 2023 11:05:01 GMT
 CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ```
 
 -	Layers:
-	-	`sha256:3e440a7045683e27f8e2fa04000e0e078d8dfac0c971358ae0f8c65c13321c8e`  
-		Last Modified: Thu, 23 Mar 2023 01:34:00 GMT  
-		Size: 55.0 MB (55045608 bytes)  
+	-	`sha256:b0248cf3e63c73d0e496a67807d056ca41d5e968b61087e8eca2cf4b9b4d7b99`  
+		Last Modified: Wed, 12 Apr 2023 00:23:20 GMT  
+		Size: 55.1 MB (55052736 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68a71c865a2c34678c6dea55e4b0928f751ee3c0ca91cace6e4e0578c534d6cf`  
-		Last Modified: Thu, 23 Mar 2023 06:08:01 GMT  
-		Size: 5.2 MB (5166592 bytes)  
+	-	`sha256:127e97b4daf784e08840a21765f0d4f251192ef2994d0e4a253490f81e63955b`  
+		Last Modified: Wed, 12 Apr 2023 07:57:29 GMT  
+		Size: 5.2 MB (5166696 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:670730c27c2eacf07897a6e94fe55423ea50b884d9c28161a283bbbf064d1124`  
-		Last Modified: Thu, 23 Mar 2023 06:08:02 GMT  
-		Size: 10.9 MB (10876735 bytes)  
+	-	`sha256:0336c50c9f6942b660e433b1086238eec37057c34b14c4e3b28bd7bf05bd84ba`  
+		Last Modified: Wed, 12 Apr 2023 07:57:29 GMT  
+		Size: 10.9 MB (10876749 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a7a2c95f0f8b221d776ccf35911b68eec2cf9414a44d216205a6f03e381d3d7`  
-		Last Modified: Thu, 23 Mar 2023 06:08:19 GMT  
-		Size: 54.6 MB (54583510 bytes)  
+	-	`sha256:1b89f3c7f7da8adf032a33a75d1b659cee33179ecb88ea0ba75e4fc58ebe63a6`  
+		Last Modified: Wed, 12 Apr 2023 07:57:46 GMT  
+		Size: 54.6 MB (54584801 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6d627e120214bb28a729d4b54a0ecba4c4aeaf0295ca2d1f129480145fad2af6`  
-		Last Modified: Thu, 23 Mar 2023 06:08:51 GMT  
-		Size: 196.8 MB (196812279 bytes)  
+	-	`sha256:2d62772179761f8fddfaed03ed2bdf7078b103b193d18d79a9b49364830d56cf`  
+		Last Modified: Wed, 12 Apr 2023 07:58:19 GMT  
+		Size: 196.8 MB (196811503 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:adce7d0cf0c9443924156ba59b5cee73e9679ade2301baf4172114bbc7d237a9`  
-		Last Modified: Thu, 23 Mar 2023 16:39:30 GMT  
-		Size: 198.0 B  
+	-	`sha256:4647bcaf3a5f4710eed11d4e71ccbf52d564c9f6f015bafc5bf758f94f8fa6eb`  
+		Last Modified: Wed, 12 Apr 2023 10:28:58 GMT  
+		Size: 199.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d78353cc5d03849fd95660ac078d646aa7c3f2d5afa3e30ebc77d6233a3c43c6`  
-		Last Modified: Thu, 30 Mar 2023 20:11:22 GMT  
-		Size: 34.6 MB (34555172 bytes)  
+	-	`sha256:2a5a565cbb1b0f425b71963e84bc40066938a2cc52bf7709dddf20108276ef8e`  
+		Last Modified: Wed, 12 Apr 2023 10:29:02 GMT  
+		Size: 34.6 MB (34555084 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95a1803b4a35217b06f4a54bfd39c60fddc2608ec7832662cf60f180db3f3d6d`  
-		Last Modified: Thu, 30 Mar 2023 20:11:19 GMT  
-		Size: 176.0 B  
+	-	`sha256:ccb6e9ffbc296e93f887b5a911acd930cd7c8cfa01441c14dfa24c5ca85da777`  
+		Last Modified: Wed, 12 Apr 2023 10:28:58 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1b74bf1590f23878eda4b1c5410eebf2f34fdc45650aef26a02e3a989b42f04`  
-		Last Modified: Tue, 11 Apr 2023 23:49:58 GMT  
-		Size: 10.2 MB (10245470 bytes)  
+	-	`sha256:e11655cfb199f321dd218874ea8015635e2f075f0afdba1ac6c729a5a99eeb5a`  
+		Last Modified: Wed, 12 Apr 2023 11:07:07 GMT  
+		Size: 10.2 MB (10245630 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d47b895b00360506ad35a9e0032314cf87e0055d209cd7d885e4eae8df97b680`  
-		Last Modified: Tue, 11 Apr 2023 23:49:57 GMT  
-		Size: 1.2 KB (1201 bytes)  
+	-	`sha256:060bbfa9dc4fa7d79f2af3aecad0f3e2fff18ab2945e9112588223cb1002da2a`  
+		Last Modified: Wed, 12 Apr 2023 11:07:06 GMT  
+		Size: 1.2 KB (1199 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `unit:ruby3` - linux; arm64 variant v8
@@ -6209,7 +6209,7 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ## `unit:ruby3.2`
 
 ```console
-$ docker pull unit@sha256:8b0c55ae9d40511ef8ca7420bee74c5d0c6aa8c7ac2d675dd1ecc408a7ef5f34
+$ docker pull unit@sha256:7e2151e200d19aa840b6fb16dccdef9711b510af01a659c50a2886194bcf5d6b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6220,118 +6220,118 @@ $ docker pull unit@sha256:8b0c55ae9d40511ef8ca7420bee74c5d0c6aa8c7ac2d675dd1ecc4
 ### `unit:ruby3.2` - linux; amd64
 
 ```console
-$ docker pull unit@sha256:45040586469620f1307b190cee4e5127d74d3260f0ffc94f11a39f008801dbd8
+$ docker pull unit@sha256:05a4d5732ce36a8604412967e3bb4a6d1e6646ba57fb27154de7ff5391b63b08
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **367.3 MB (367286941 bytes)**  
+-	Total Size: **367.3 MB (367294771 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:88fe4ce74668e4fd1d2ffaa0caddef2023f3c2f13877ee8597b7526810d76b27`
+-	Image ID: `sha256:5e044af00a0e40283c3fd1ca13059a5f061d25f60d19c745daf414f778aaf71e`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
 ```dockerfile
-# Thu, 23 Mar 2023 01:30:15 GMT
-ADD file:459d1e92eb8c24ff4758f974d289ca8a2abe04cf50b6fe2bd760aa4589478289 in / 
-# Thu, 23 Mar 2023 01:30:15 GMT
+# Wed, 12 Apr 2023 00:19:55 GMT
+ADD file:f2d012660f882f319a5878a3f9ce285f488b8f90fad49ad238541cf72089e035 in / 
+# Wed, 12 Apr 2023 00:19:56 GMT
 CMD ["bash"]
-# Thu, 23 Mar 2023 06:01:27 GMT
+# Wed, 12 Apr 2023 07:50:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 23 Mar 2023 06:01:32 GMT
+# Wed, 12 Apr 2023 07:51:04 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 23 Mar 2023 06:01:49 GMT
+# Wed, 12 Apr 2023 07:51:20 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 23 Mar 2023 06:02:39 GMT
+# Wed, 12 Apr 2023 07:52:18 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 23 Mar 2023 16:03:08 GMT
+# Wed, 12 Apr 2023 09:52:50 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	{ 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /usr/local/etc/gemrc
-# Thu, 23 Mar 2023 16:03:08 GMT
+# Wed, 12 Apr 2023 09:52:51 GMT
 ENV LANG=C.UTF-8
-# Thu, 23 Mar 2023 16:03:09 GMT
+# Wed, 12 Apr 2023 09:52:51 GMT
 ENV RUBY_MAJOR=3.2
-# Thu, 30 Mar 2023 19:20:50 GMT
+# Wed, 12 Apr 2023 09:52:51 GMT
 ENV RUBY_VERSION=3.2.2
-# Thu, 30 Mar 2023 19:20:50 GMT
+# Wed, 12 Apr 2023 09:52:51 GMT
 ENV RUBY_DOWNLOAD_SHA256=4b352d0f7ec384e332e3e44cdbfdcd5ff2d594af3c8296b5636c710975149e23
-# Thu, 30 Mar 2023 19:23:05 GMT
+# Wed, 12 Apr 2023 09:55:09 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bison 		dpkg-dev 		libgdbm-dev 		ruby 	; 	rm -rf /var/lib/apt/lists/*; 		rustArch=; 	dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		'amd64') rustArch='x86_64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.25.1/x86_64-unknown-linux-gnu/rustup-init'; rustupSha256='5cc9ffd1026e82e7fb2eec2121ad71f4b0f044e88bca39207b3f6b769aaa799c' ;; 		'arm64') rustArch='aarch64-unknown-linux-gnu'; rustupUrl='https://static.rust-lang.org/rustup/archive/1.25.1/aarch64-unknown-linux-gnu/rustup-init'; rustupSha256='e189948e396d47254103a49c987e7fb0e5dd8e34b200aa4481ecc4b8e41fb929' ;; 	esac; 		if [ -n "$rustArch" ]; then 		mkdir -p /tmp/rust; 				wget -O /tmp/rust/rustup-init "$rustupUrl"; 		echo "$rustupSha256 */tmp/rust/rustup-init" | sha256sum --check --strict; 		chmod +x /tmp/rust/rustup-init; 				export RUSTUP_HOME='/tmp/rust/rustup' CARGO_HOME='/tmp/rust/cargo'; 		export PATH="$CARGO_HOME/bin:$PATH"; 		/tmp/rust/rustup-init -y --no-modify-path --profile minimal --default-toolchain '1.66.0' --default-host "$rustArch"; 				rustc --version; 		cargo --version; 	fi; 		wget -O ruby.tar.xz "https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		{ 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new; 	mv file.c.new file.c; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 		${rustArch:+--enable-yjit} 	; 	make -j "$(nproc)"; 	make install; 		rm -rf /tmp/rust; 	apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| grep -vE '^/usr/local/lib/' 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version
-# Thu, 30 Mar 2023 19:23:06 GMT
+# Wed, 12 Apr 2023 09:55:09 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Thu, 30 Mar 2023 19:23:06 GMT
+# Wed, 12 Apr 2023 09:55:09 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Thu, 30 Mar 2023 19:23:06 GMT
+# Wed, 12 Apr 2023 09:55:09 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 30 Mar 2023 19:23:06 GMT
+# Wed, 12 Apr 2023 09:55:10 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 1777 "$GEM_HOME"
-# Thu, 30 Mar 2023 19:23:06 GMT
+# Wed, 12 Apr 2023 09:55:10 GMT
 CMD ["irb"]
-# Tue, 11 Apr 2023 23:46:04 GMT
+# Wed, 12 Apr 2023 11:04:19 GMT
 LABEL org.opencontainers.image.title=Unit
-# Tue, 11 Apr 2023 23:46:04 GMT
+# Wed, 12 Apr 2023 11:04:20 GMT
 LABEL org.opencontainers.image.description=Official build of Unit for Docker.
-# Tue, 11 Apr 2023 23:46:04 GMT
+# Wed, 12 Apr 2023 11:04:20 GMT
 LABEL org.opencontainers.image.url=https://unit.nginx.org
-# Tue, 11 Apr 2023 23:46:04 GMT
+# Wed, 12 Apr 2023 11:04:20 GMT
 LABEL org.opencontainers.image.source=https://github.com/nginx/unit
-# Tue, 11 Apr 2023 23:46:05 GMT
+# Wed, 12 Apr 2023 11:04:20 GMT
 LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
-# Tue, 11 Apr 2023 23:46:05 GMT
+# Wed, 12 Apr 2023 11:04:20 GMT
 LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 11 Apr 2023 23:46:05 GMT
+# Wed, 12 Apr 2023 11:04:20 GMT
 LABEL org.opencontainers.image.version=1.29.1
-# Tue, 11 Apr 2023 23:46:44 GMT
+# Wed, 12 Apr 2023 11:05:00 GMT
 RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y ca-certificates mercurial build-essential libssl-dev libpcre2-dev     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && hg clone -u 1.29.1-1 https://hg.nginx.org/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS="--prefix=/usr                 --state=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --pid=/var/run/unit.pid                 --log=/var/log/unit.log                 --tmp=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modules=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modules=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/unitd /usr/sbin/unitd     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --modules=/usr/lib/unit/debug-modules --debug     && ./configure ruby     && make -j $NCPU ruby-install     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --modules=/usr/lib/unit/modules     && ./configure ruby     && make -j $NCPU ruby-install     && cd     && rm -rf unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && gem install rack     && mkdir -p /var/lib/unit/     && mkdir /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stdout /var/log/unit.log
-# Tue, 11 Apr 2023 23:46:45 GMT
+# Wed, 12 Apr 2023 11:05:01 GMT
 COPY file:952dd3fe197ec3c69c75729eed06a3581063d4c1ed92bf889cf007c89efb3ae8 in /usr/local/bin/ 
-# Tue, 11 Apr 2023 23:46:45 GMT
+# Wed, 12 Apr 2023 11:05:01 GMT
 STOPSIGNAL SIGTERM
-# Tue, 11 Apr 2023 23:46:45 GMT
+# Wed, 12 Apr 2023 11:05:01 GMT
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-# Tue, 11 Apr 2023 23:46:45 GMT
+# Wed, 12 Apr 2023 11:05:01 GMT
 CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ```
 
 -	Layers:
-	-	`sha256:3e440a7045683e27f8e2fa04000e0e078d8dfac0c971358ae0f8c65c13321c8e`  
-		Last Modified: Thu, 23 Mar 2023 01:34:00 GMT  
-		Size: 55.0 MB (55045608 bytes)  
+	-	`sha256:b0248cf3e63c73d0e496a67807d056ca41d5e968b61087e8eca2cf4b9b4d7b99`  
+		Last Modified: Wed, 12 Apr 2023 00:23:20 GMT  
+		Size: 55.1 MB (55052736 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68a71c865a2c34678c6dea55e4b0928f751ee3c0ca91cace6e4e0578c534d6cf`  
-		Last Modified: Thu, 23 Mar 2023 06:08:01 GMT  
-		Size: 5.2 MB (5166592 bytes)  
+	-	`sha256:127e97b4daf784e08840a21765f0d4f251192ef2994d0e4a253490f81e63955b`  
+		Last Modified: Wed, 12 Apr 2023 07:57:29 GMT  
+		Size: 5.2 MB (5166696 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:670730c27c2eacf07897a6e94fe55423ea50b884d9c28161a283bbbf064d1124`  
-		Last Modified: Thu, 23 Mar 2023 06:08:02 GMT  
-		Size: 10.9 MB (10876735 bytes)  
+	-	`sha256:0336c50c9f6942b660e433b1086238eec37057c34b14c4e3b28bd7bf05bd84ba`  
+		Last Modified: Wed, 12 Apr 2023 07:57:29 GMT  
+		Size: 10.9 MB (10876749 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a7a2c95f0f8b221d776ccf35911b68eec2cf9414a44d216205a6f03e381d3d7`  
-		Last Modified: Thu, 23 Mar 2023 06:08:19 GMT  
-		Size: 54.6 MB (54583510 bytes)  
+	-	`sha256:1b89f3c7f7da8adf032a33a75d1b659cee33179ecb88ea0ba75e4fc58ebe63a6`  
+		Last Modified: Wed, 12 Apr 2023 07:57:46 GMT  
+		Size: 54.6 MB (54584801 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6d627e120214bb28a729d4b54a0ecba4c4aeaf0295ca2d1f129480145fad2af6`  
-		Last Modified: Thu, 23 Mar 2023 06:08:51 GMT  
-		Size: 196.8 MB (196812279 bytes)  
+	-	`sha256:2d62772179761f8fddfaed03ed2bdf7078b103b193d18d79a9b49364830d56cf`  
+		Last Modified: Wed, 12 Apr 2023 07:58:19 GMT  
+		Size: 196.8 MB (196811503 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:adce7d0cf0c9443924156ba59b5cee73e9679ade2301baf4172114bbc7d237a9`  
-		Last Modified: Thu, 23 Mar 2023 16:39:30 GMT  
-		Size: 198.0 B  
+	-	`sha256:4647bcaf3a5f4710eed11d4e71ccbf52d564c9f6f015bafc5bf758f94f8fa6eb`  
+		Last Modified: Wed, 12 Apr 2023 10:28:58 GMT  
+		Size: 199.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d78353cc5d03849fd95660ac078d646aa7c3f2d5afa3e30ebc77d6233a3c43c6`  
-		Last Modified: Thu, 30 Mar 2023 20:11:22 GMT  
-		Size: 34.6 MB (34555172 bytes)  
+	-	`sha256:2a5a565cbb1b0f425b71963e84bc40066938a2cc52bf7709dddf20108276ef8e`  
+		Last Modified: Wed, 12 Apr 2023 10:29:02 GMT  
+		Size: 34.6 MB (34555084 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95a1803b4a35217b06f4a54bfd39c60fddc2608ec7832662cf60f180db3f3d6d`  
-		Last Modified: Thu, 30 Mar 2023 20:11:19 GMT  
-		Size: 176.0 B  
+	-	`sha256:ccb6e9ffbc296e93f887b5a911acd930cd7c8cfa01441c14dfa24c5ca85da777`  
+		Last Modified: Wed, 12 Apr 2023 10:28:58 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1b74bf1590f23878eda4b1c5410eebf2f34fdc45650aef26a02e3a989b42f04`  
-		Last Modified: Tue, 11 Apr 2023 23:49:58 GMT  
-		Size: 10.2 MB (10245470 bytes)  
+	-	`sha256:e11655cfb199f321dd218874ea8015635e2f075f0afdba1ac6c729a5a99eeb5a`  
+		Last Modified: Wed, 12 Apr 2023 11:07:07 GMT  
+		Size: 10.2 MB (10245630 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d47b895b00360506ad35a9e0032314cf87e0055d209cd7d885e4eae8df97b680`  
-		Last Modified: Tue, 11 Apr 2023 23:49:57 GMT  
-		Size: 1.2 KB (1201 bytes)  
+	-	`sha256:060bbfa9dc4fa7d79f2af3aecad0f3e2fff18ab2945e9112588223cb1002da2a`  
+		Last Modified: Wed, 12 Apr 2023 11:07:06 GMT  
+		Size: 1.2 KB (1199 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `unit:ruby3.2` - linux; arm64 variant v8
