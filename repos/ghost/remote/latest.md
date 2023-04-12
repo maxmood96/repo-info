@@ -1,7 +1,7 @@
 ## `ghost:latest`
 
 ```console
-$ docker pull ghost@sha256:dc99f0177db935819462ebf56c87ba4d22a7a8abf014a888bbc03f0d0c4f842f
+$ docker pull ghost@sha256:e55e3a0629ba3dc790ca91d11e05647134ddff92ba3a424ed0d53e74d5d0ab79
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -120,106 +120,106 @@ CMD ["node" "current/index.js"]
 ### `ghost:latest` - linux; arm variant v7
 
 ```console
-$ docker pull ghost@sha256:a789edf8adb7de0dabbe2e046f9cc611e009a3cfff87db5c0ed8fee81d8a0d33
+$ docker pull ghost@sha256:fdf36b00018c243ea4ffa69fd651619caa9d7566061233c45442356df5a9d0c2
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **159.8 MB (159814374 bytes)**  
+-	Total Size: **159.8 MB (159817825 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3d1cd48c17e1169d4c8b2add9e1fcba15485a4ac6e014a2dfa75bc4318a3ce53`
+-	Image ID: `sha256:cb12e7dae155f5bb8b513f9ba8b9ca2503531deeab7f595eb1c532ebeb1b1886`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","current\/index.js"]`
 
 ```dockerfile
-# Thu, 23 Mar 2023 01:16:59 GMT
-ADD file:1c83b99ee21091150a1c9ee8ef7c40bec3d6cb0d64b8bc0ef40fb97e6233aa5b in / 
-# Thu, 23 Mar 2023 01:17:00 GMT
+# Tue, 11 Apr 2023 23:59:44 GMT
+ADD file:e5f4777456ed4424053e9aa1f3d783f57da094c7a6c6d9d7a2fd315e00b5bbb0 in / 
+# Tue, 11 Apr 2023 23:59:44 GMT
 CMD ["bash"]
-# Thu, 23 Mar 2023 08:06:17 GMT
+# Wed, 12 Apr 2023 00:44:31 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node
-# Thu, 30 Mar 2023 08:47:37 GMT
+# Wed, 12 Apr 2023 00:48:10 GMT
 ENV NODE_VERSION=16.20.0
-# Thu, 30 Mar 2023 08:48:04 GMT
+# Wed, 12 Apr 2023 00:48:37 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64';;       ppc64el) ARCH='ppc64le';;       s390x) ARCH='s390x';;       arm64) ARCH='arm64';;       armhf) ARCH='armv7l';;       i386) ARCH='x86';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && for key in       4ED778F539E3634C779C87C6D7062848A1AB005C       141F07595B7B3FFE74309A937405533BE57C7D57       74F12602B6F1C4E913FAA37AD3A89613643B6201       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       61FC681DFB92A079F1685E77973F295594EC4689       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A     ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { print $(NF-1) }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version
-# Thu, 30 Mar 2023 08:48:04 GMT
+# Wed, 12 Apr 2023 00:48:37 GMT
 ENV YARN_VERSION=1.22.19
-# Thu, 30 Mar 2023 08:48:15 GMT
+# Wed, 12 Apr 2023 00:48:49 GMT
 RUN set -ex   && savedAptMark="$(apt-mark showmanual)"   && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr --no-install-recommends   && rm -rf /var/lib/apt/lists/*   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apt-mark auto '.*' > /dev/null   && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; }   && find /usr/local -type f -executable -exec ldd '{}' ';'     | awk '/=>/ { print $(NF-1) }'     | sort -u     | xargs -r dpkg-query --search     | cut -d: -f1     | sort -u     | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && yarn --version
-# Thu, 30 Mar 2023 08:48:15 GMT
+# Wed, 12 Apr 2023 00:48:49 GMT
 COPY file:4d192565a7220e135cab6c77fbc1c73211b69f3d9fb37e62857b2c6eb9363d51 in /usr/local/bin/ 
-# Thu, 30 Mar 2023 08:48:16 GMT
+# Wed, 12 Apr 2023 00:48:49 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 30 Mar 2023 08:48:16 GMT
+# Wed, 12 Apr 2023 00:48:50 GMT
 CMD ["node"]
-# Thu, 30 Mar 2023 09:40:23 GMT
+# Wed, 12 Apr 2023 10:25:06 GMT
 ENV GOSU_VERSION=1.16
-# Thu, 30 Mar 2023 09:40:34 GMT
+# Wed, 12 Apr 2023 10:25:18 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates dirmngr gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Thu, 30 Mar 2023 09:40:34 GMT
+# Wed, 12 Apr 2023 10:25:18 GMT
 ENV NODE_ENV=production
-# Thu, 30 Mar 2023 09:40:34 GMT
+# Wed, 12 Apr 2023 10:25:18 GMT
 ENV GHOST_CLI_VERSION=1.24.0
-# Thu, 30 Mar 2023 09:40:48 GMT
+# Wed, 12 Apr 2023 10:25:32 GMT
 RUN set -eux; 	npm install -g "ghost-cli@$GHOST_CLI_VERSION"; 	npm cache clean --force
-# Thu, 30 Mar 2023 09:40:48 GMT
+# Wed, 12 Apr 2023 10:25:33 GMT
 ENV GHOST_INSTALL=/var/lib/ghost
-# Thu, 30 Mar 2023 09:40:48 GMT
+# Wed, 12 Apr 2023 10:25:33 GMT
 ENV GHOST_CONTENT=/var/lib/ghost/content
-# Wed, 12 Apr 2023 00:06:52 GMT
+# Wed, 12 Apr 2023 10:25:33 GMT
 ENV GHOST_VERSION=5.42.2
-# Wed, 12 Apr 2023 00:11:17 GMT
+# Wed, 12 Apr 2023 10:29:57 GMT
 RUN set -eux; 	mkdir -p "$GHOST_INSTALL"; 	chown node:node "$GHOST_INSTALL"; 		savedAptMark="$(apt-mark showmanual)"; 	aptPurge=; 		installCmd='gosu node ghost install "$GHOST_VERSION" --db mysql --dbhost mysql --no-prompt --no-stack --no-setup --dir "$GHOST_INSTALL"'; 	if ! eval "$installCmd"; then 		aptPurge=1; 		apt-get update; 		apt-get install -y --no-install-recommends g++ make python3; 		eval "$installCmd"; 	fi; 		cd "$GHOST_INSTALL"; 	gosu node ghost config --no-prompt --ip '::' --port 2368 --url 'http://localhost:2368'; 	gosu node ghost config paths.contentPath "$GHOST_CONTENT"; 		gosu node ln -s config.production.json "$GHOST_INSTALL/config.development.json"; 	readlink -f "$GHOST_INSTALL/config.development.json"; 		mv "$GHOST_CONTENT" "$GHOST_INSTALL/content.orig"; 	mkdir -p "$GHOST_CONTENT"; 	chown node:node "$GHOST_CONTENT"; 	chmod 1777 "$GHOST_CONTENT"; 		cd "$GHOST_INSTALL/current"; 	packages="$(node -p ' 		var ghost = require("./package.json"); 		var transform = require("./node_modules/@tryghost/image-transform/package.json"); 		[ 			"sharp@" + transform.optionalDependencies["sharp"], 			"sqlite3@" + ghost.optionalDependencies["sqlite3"], 		].join(" ") 	')"; 	if echo "$packages" | grep 'undefined'; then exit 1; fi; 	for package in $packages; do 		installCmd='gosu node yarn add "$package" --force'; 		if ! eval "$installCmd"; then 			aptPurge=1; 			apt-get update; 			apt-get install -y --no-install-recommends g++ make python3; 			case "$package" in 				sharp@*) echo >&2 "sorry: libvips 8.10 in Debian bullseye is not new enough (8.12.2+) for sharp 0.30 😞"; continue ;; 			esac; 						eval "$installCmd --build-from-source"; 		fi; 	done; 		if [ -n "$aptPurge" ]; then 		apt-mark showmanual | xargs apt-mark auto > /dev/null; 		[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 		apt-get purge -y --auto-remove; 		rm -rf /var/lib/apt/lists/*; 	fi; 		gosu node yarn cache clean; 	gosu node npm cache clean --force; 	npm cache clean --force; 	rm -rv /tmp/yarn* /tmp/v8*
-# Wed, 12 Apr 2023 00:11:20 GMT
+# Wed, 12 Apr 2023 10:30:01 GMT
 WORKDIR /var/lib/ghost
-# Wed, 12 Apr 2023 00:11:21 GMT
+# Wed, 12 Apr 2023 10:30:01 GMT
 VOLUME [/var/lib/ghost/content]
-# Wed, 12 Apr 2023 00:11:21 GMT
+# Wed, 12 Apr 2023 10:30:01 GMT
 COPY file:303989b132b5193e832753e2c7236a4050fdc0fe60a54dc1f0c4a44422a2d1ca in /usr/local/bin 
-# Wed, 12 Apr 2023 00:11:21 GMT
+# Wed, 12 Apr 2023 10:30:01 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 12 Apr 2023 00:11:21 GMT
+# Wed, 12 Apr 2023 10:30:01 GMT
 EXPOSE 2368
-# Wed, 12 Apr 2023 00:11:21 GMT
+# Wed, 12 Apr 2023 10:30:01 GMT
 CMD ["node" "current/index.js"]
 ```
 
 -	Layers:
-	-	`sha256:2bc24e24d213c286ca4011c8b5cb7a3cf2a51f3bbedee8eeced46382bb5507bc`  
-		Last Modified: Thu, 23 Mar 2023 01:33:18 GMT  
-		Size: 26.6 MB (26577330 bytes)  
+	-	`sha256:99c2a28b4a43ce341eb611e82106b886315f30a250473617f2293828e10d8fff`  
+		Last Modified: Wed, 12 Apr 2023 00:03:19 GMT  
+		Size: 26.6 MB (26579772 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4b084c7285fa3413e3645d1748ea41f119eafb1ac402db60eb5e2b879c1d5a39`  
-		Last Modified: Thu, 23 Mar 2023 08:13:11 GMT  
-		Size: 4.2 KB (4167 bytes)  
+	-	`sha256:b606bf1a0d1204bed7a554e1f9bdbafc63c6eccdb377b241c2bf372b452dfd25`  
+		Last Modified: Wed, 12 Apr 2023 00:52:39 GMT  
+		Size: 4.2 KB (4166 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1ed977d059987ad2ef7d3814e029bc3019a64832523b64e524a7187ef7180cbc`  
-		Last Modified: Thu, 30 Mar 2023 09:06:23 GMT  
-		Size: 32.5 MB (32500386 bytes)  
+	-	`sha256:f2b0a819941ca3e06612fcd1d2a2739d4370c8bed0a321758d519c8231cb7adf`  
+		Last Modified: Wed, 12 Apr 2023 00:54:47 GMT  
+		Size: 32.5 MB (32500525 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d111c019c74f1f6c5cce85259a840a0cb263378de78715c03fb31e814879b4b7`  
-		Last Modified: Thu, 30 Mar 2023 09:06:18 GMT  
-		Size: 2.8 MB (2751687 bytes)  
+	-	`sha256:b85eda854952e0fbbe14e78838939f2f5990404b5128786c7da158232aa1a997`  
+		Last Modified: Wed, 12 Apr 2023 00:54:42 GMT  
+		Size: 2.8 MB (2751879 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5092950fdb2a18ccb068dbe0c47db792cd6957743fb1520f3e8d9086ff1f5c39`  
-		Last Modified: Thu, 30 Mar 2023 09:06:17 GMT  
+	-	`sha256:8a939311977cc1bbd18c8ccf39b403f738ed61ab4cb85173f630d4b17a8566aa`  
+		Last Modified: Wed, 12 Apr 2023 00:54:41 GMT  
 		Size: 449.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:55a5f08c24786e7e4b0d39dc83f34281c75dc38c848e0b411a8187ec3f1420da`  
-		Last Modified: Thu, 30 Mar 2023 09:58:56 GMT  
-		Size: 1.4 MB (1436898 bytes)  
+	-	`sha256:026ae07a1207b7e843df48ce80eafe07536d9fe3cbe9930de235a024f14fbba2`  
+		Last Modified: Wed, 12 Apr 2023 10:35:17 GMT  
+		Size: 1.4 MB (1437005 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f5f530d747a293dd6069c8df45eff91cb13001dc6c3b75822a8959f5c97bea4`  
-		Last Modified: Thu, 30 Mar 2023 09:58:59 GMT  
-		Size: 10.3 MB (10250895 bytes)  
+	-	`sha256:637396e63ff4d18623c5bf949fc5b17df35905fa954f74f26721919d0c326de8`  
+		Last Modified: Wed, 12 Apr 2023 10:35:20 GMT  
+		Size: 10.3 MB (10251355 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:828a63501ecb47d1d2e2404480f4f59378892885026895a6a41f2e39c2176b9d`  
-		Last Modified: Wed, 12 Apr 2023 00:19:08 GMT  
-		Size: 86.3 MB (86292016 bytes)  
+	-	`sha256:9fe4325dc506436d72331c70feb94d0e05c185f45b4e81be6429dfabaab3ac93`  
+		Last Modified: Wed, 12 Apr 2023 10:35:36 GMT  
+		Size: 86.3 MB (86292129 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a646270c46a9710b332bc96446f17e4fc25a33a24ea05a40503b788790bcf79`  
-		Last Modified: Wed, 12 Apr 2023 00:18:49 GMT  
-		Size: 546.0 B  
+	-	`sha256:a216e467fc780385982c8b02de4874c31811cb11b47484a8ed2ccf9425fea07c`  
+		Last Modified: Wed, 12 Apr 2023 10:35:16 GMT  
+		Size: 545.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ghost:latest` - linux; arm64 variant v8
