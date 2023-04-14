@@ -1,10 +1,10 @@
-# `gradle:8.0.2-jdk17-alpine`
+# `gradle:8.1.0-jdk17-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c3957172b0920f916c192321361d0db9242a0d0ca36440c415d47b49144b80f6`
-- Created: `2023-03-30T03:11:02.795073287Z`
-- Virtual Size: ~ 585.82 Mb  
+- Image ID: `sha256:916dc8d081f8a85e7d1213c72013d797d3bf10fa7982b4853039f9392622b190`
+- Created: `2023-04-13T21:20:40.174669711Z`
+- Virtual Size: ~ 586.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
@@ -16,7 +16,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-17.0.6+10`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=8.0.2`
+  - `GRADLE_VERSION=8.1`
 
 ## `apk` (`.apk`-based packages)
 
