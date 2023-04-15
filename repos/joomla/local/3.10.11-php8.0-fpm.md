@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8524541087f2a38194e7a475bd4725a24787ee8063f9cfc2266e33e3011c8d9c`
-- Created: `2023-03-28T03:27:17.60906417Z`
-- Virtual Size: ~ 583.15 Mb  
+- Image ID: `sha256:a05ac6c738a91c010c3fcdb39482839661b6bd0d21a4beba77b82b89c5cfa3ed`
+- Created: `2023-04-12T12:22:13.708585258Z`
+- Virtual Size: ~ 583.17 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -1236,13 +1236,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gdbm/1.19-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gdbm/1.19-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ghostscript=9.53.3~dfsg-7+deb11u2`
+### `dpkg` source package: `ghostscript=9.53.3~dfsg-7+deb11u4`
 
 Binary Packages:
 
-- `ghostscript=9.53.3~dfsg-7+deb11u2`
-- `libgs9:amd64=9.53.3~dfsg-7+deb11u2`
-- `libgs9-common=9.53.3~dfsg-7+deb11u2`
+- `ghostscript=9.53.3~dfsg-7+deb11u4`
+- `libgs9:amd64=9.53.3~dfsg-7+deb11u4`
+- `libgs9-common=9.53.3~dfsg-7+deb11u4`
 
 Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/libgs9/copyright`, `/usr/share/doc/libgs9-common/copyright`)
 
@@ -1278,17 +1278,17 @@ Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ghostscript=9.53.3~dfsg-7+deb11u2
-'http://deb.debian.org/debian/pool/main/g/ghostscript/ghostscript_9.53.3%7edfsg-7%2bdeb11u2.dsc' ghostscript_9.53.3~dfsg-7+deb11u2.dsc 2864 SHA256:dae98d9060d5b5346c6f46dfaf835dd2ab691e8c76f354a007537142117a6cfe
-'http://deb.debian.org/debian/pool/main/g/ghostscript/ghostscript_9.53.3%7edfsg.orig.tar.xz' ghostscript_9.53.3~dfsg.orig.tar.xz 23948068 SHA256:678f99fc6cca9a224f49891b8db5d9a325b8b3fbbffa9f29d44bac9f54603f3d
-'http://deb.debian.org/debian/pool/main/g/ghostscript/ghostscript_9.53.3%7edfsg-7%2bdeb11u2.debian.tar.xz' ghostscript_9.53.3~dfsg-7+deb11u2.debian.tar.xz 121500 SHA256:f3631e24888aefee0d16a8828c6e5c376ce4bdc154c476e5a03a46196d8b3a7b
+$ apt-get source -qq --print-uris ghostscript=9.53.3~dfsg-7+deb11u4
+'http://deb.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_9.53.3%7edfsg-7%2bdeb11u4.dsc' ghostscript_9.53.3~dfsg-7+deb11u4.dsc 2864 SHA256:487feab3cb8e067e9a25701d8cf0445754370d255beabd94207f15edeb5ef7dd
+'http://deb.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_9.53.3%7edfsg.orig.tar.xz' ghostscript_9.53.3~dfsg.orig.tar.xz 23948068 SHA256:678f99fc6cca9a224f49891b8db5d9a325b8b3fbbffa9f29d44bac9f54603f3d
+'http://deb.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_9.53.3%7edfsg-7%2bdeb11u4.debian.tar.xz' ghostscript_9.53.3~dfsg-7+deb11u4.debian.tar.xz 122660 SHA256:c70cabc526556648f1443327b5e498baef5fd853a39641396dddd167331c978b
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/ghostscript/9.53.3~dfsg-7+deb11u2/ (for browsing the source)
-- https://sources.debian.net/src/ghostscript/9.53.3~dfsg-7+deb11u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ghostscript/9.53.3~dfsg-7+deb11u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/ghostscript/9.53.3~dfsg-7+deb11u4/ (for browsing the source)
+- https://sources.debian.net/src/ghostscript/9.53.3~dfsg-7+deb11u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ghostscript/9.53.3~dfsg-7+deb11u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.66.8-1`
 
@@ -3995,11 +3995,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tiff/4.2.0-1+deb11u4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tiff/4.2.0-1+deb11u4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2021a-1+deb11u8`
+### `dpkg` source package: `tzdata=2021a-1+deb11u9`
 
 Binary Packages:
 
-- `tzdata=2021a-1+deb11u8`
+- `tzdata=2021a-1+deb11u9`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4008,18 +4008,18 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2021a-1+deb11u8
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2021a-1%2bdeb11u8.dsc' tzdata_2021a-1+deb11u8.dsc 2269 SHA256:14db9f37ed6c5d294081edc708f262a4dcd627d22e08789362c88d4a3988f63d
+$ apt-get source -qq --print-uris tzdata=2021a-1+deb11u9
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2021a-1%2bdeb11u9.dsc' tzdata_2021a-1+deb11u9.dsc 2269 SHA256:979b0e163b9b577042c6da617f044dbf4d200d96d20c7f90a8c1b380c60a86b1
 'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2021a.orig.tar.gz' tzdata_2021a.orig.tar.gz 411892 SHA256:39e7d2ba08c68cbaefc8de3227aab0dec2521be8042cf56855f7dc3a9fb14e08
 'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2021a.orig.tar.gz.asc' tzdata_2021a.orig.tar.gz.asc 833 SHA256:9dc5f54674166f4ffbc2d4485e656227430ab5f39c9006e6ed9986281117f058
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2021a-1%2bdeb11u8.debian.tar.xz' tzdata_2021a-1+deb11u8.debian.tar.xz 116136 SHA256:36ec850e434ba28da2a525f3a068c8b17fdddec05c65fd3093505750d0890c8d
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2021a-1%2bdeb11u9.debian.tar.xz' tzdata_2021a-1+deb11u9.debian.tar.xz 123220 SHA256:b38cd78b9cd18d02ea84b8229976fda0d174333ea28133b995d6be61ad3f7c03
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/tzdata/2021a-1+deb11u8/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2021a-1+deb11u8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2021a-1+deb11u8/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/tzdata/2021a-1+deb11u9/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2021a-1+deb11u9/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2021a-1+deb11u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0043`
 
