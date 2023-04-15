@@ -1896,14 +1896,9 @@ Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ghostscript=9.50~dfsg-5ubuntu4.6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.50%7edfsg-5ubuntu4.6.dsc' ghostscript_9.50~dfsg-5ubuntu4.6.dsc 2914 SHA512:0d1a3d9bf236866cd1d6f435da5c7038db8b6df0b3662129a5f4d159d4dd03a424b44bb07696bf2716fc0ab1deeb750e7928af7942d9a7b984b7642b8bc6f6f8
-'http://archive.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.50%7edfsg.orig.tar.xz' ghostscript_9.50~dfsg.orig.tar.xz 19139148 SHA512:75730872b02fe7341bf6c84fc4b53002f88d2c4c538dee62f749816a4963740f2a369e3a3760175e0f5b73547d5df805a152f5f0120db79ffecc871f5f14be86
-'http://archive.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.50%7edfsg-5ubuntu4.6.debian.tar.xz' ghostscript_9.50~dfsg-5ubuntu4.6.debian.tar.xz 132968 SHA512:e3b8cf4b47cd9c3c938dc0ef70c4bdd137747ed13369f1481515069cad9c8292dbe2f1e2374070944ef0aed01f9b249641166758cfbda87af11578d76d85bc55
-```
 
 ### `dpkg` source package: `giflib=5.1.9-1`
 
@@ -8804,15 +8799,9 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2022g-0ubuntu0.20.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022g-0ubuntu0.20.04.1.dsc' tzdata_2022g-0ubuntu0.20.04.1.dsc 2427 SHA512:d4c80e2ed58b98b18199acb1baa7ec4e686c9a732aef6a004b35c2fd796d5aa5ef31b8984fdee6036ef3a0352d17ef44d500a9d0bb095d03d381cef952a1ece9
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022g.orig.tar.gz' tzdata_2022g.orig.tar.gz 439731 SHA512:7f79394295e00e3a24ebdbf9af3bc454a65f432a93b517e7e96c7f9db9949f6f5fdae9892a9d3789ff44ae0eb1bfe4744d36976b4624659af951d26414f94e65
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022g.orig.tar.gz.asc' tzdata_2022g.orig.tar.gz.asc 833 SHA512:3474a05373ec4397e17133c54708e1f9efd1f1c5e7ee6945f0972809ceda2214cc4962238773818d04ab4f29dcdf0b3e87247ab19795d06a62b8769dd85cf76b
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2022g-0ubuntu0.20.04.1.debian.tar.xz' tzdata_2022g-0ubuntu0.20.04.1.debian.tar.xz 166596 SHA512:0897a318912c1327850ebd38b32fc9b253b3f146e61f7eeb0070314c6f0ba51deda4aafdf1ef5db8a63d5dc076cdc1bfdecb54bcb2cf98d3bb18524285ceb914
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2020.02.11.4`
 
