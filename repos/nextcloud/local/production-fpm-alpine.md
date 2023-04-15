@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4cb06348d3d47be5c4cfee09963cd98746d8f1e05aeef508c8ced690dfb286df`
-- Created: `2023-04-03T23:49:44.555856003Z`
-- Virtual Size: ~ 710.25 Mb  
+- Image ID: `sha256:0464b2a46c7ad2064bd15d9095816166051c110e26e7d70645d9dcd059a911f5`
+- Created: `2023-04-14T20:36:56.74517524Z`
+- Virtual Size: ~ 710.76 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD`
-  - `PHP_VERSION=8.1.17`
-  - `PHP_URL=https://www.php.net/distributions/php-8.1.17.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.17.tar.xz.asc`
-  - `PHP_SHA256=b5c48f95b8e1d8624dd05fc2eab7be13277f9a203ccba97bdca5a1a0fb4a1460`
+  - `PHP_VERSION=8.1.18`
+  - `PHP_URL=https://www.php.net/distributions/php-8.1.18.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.18.tar.xz.asc`
+  - `PHP_SHA256=f3553370f8ba42729a9ce75eed17a2111d32433a43b615694f6a571b8bad0e39`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `NEXTCLOUD_VERSION=25.0.5`
@@ -404,16 +404,16 @@ LGPL-2.0-or-later
 ### `apk` package: `ghostscript`
 
 ```console
-ghostscript-9.56.1-r0 description:
+ghostscript-9.56.1-r1 description:
 An interpreter for the PostScript language and for PDF
 
-ghostscript-9.56.1-r0 webpage:
+ghostscript-9.56.1-r1 webpage:
 https://ghostscript.com/
 
-ghostscript-9.56.1-r0 installed size:
+ghostscript-9.56.1-r1 installed size:
 69 MiB
 
-ghostscript-9.56.1-r0 license:
+ghostscript-9.56.1-r1 license:
 AGPL-3.0-or-later
 
 ```
@@ -710,16 +710,16 @@ OpenSSL
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.83.1-r6 description:
+libcurl-8.0.1-r0 description:
 The multiprotocol file transfer library
 
-libcurl-7.83.1-r6 webpage:
+libcurl-8.0.1-r0 webpage:
 https://curl.se/
 
-libcurl-7.83.1-r6 installed size:
-516 KiB
+libcurl-8.0.1-r0 installed size:
+548 KiB
 
-libcurl-7.83.1-r6 license:
+libcurl-8.0.1-r0 license:
 curl
 
 ```
