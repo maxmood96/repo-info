@@ -1335,7 +1335,7 @@ CMD ["kong" "docker-start"]
 ## `kong:3.0-ubuntu`
 
 ```console
-$ docker pull kong@sha256:b1315b4930a17790a731bf39dbaf753158ff81f5d682ed176ca1b10da37aeb1e
+$ docker pull kong@sha256:711035df3b7a9fd76bf697109556b92854ced222226df61bd27b14594466a563
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1346,83 +1346,83 @@ $ docker pull kong@sha256:b1315b4930a17790a731bf39dbaf753158ff81f5d682ed176ca1b1
 ### `kong:3.0-ubuntu` - linux; amd64
 
 ```console
-$ docker pull kong@sha256:cf36c2ce52780db49268cfb74e4e3a3c46250d6bccba79d4faa5ee62399eab38
+$ docker pull kong@sha256:e9d5dda1bd4f39e7fa0e6bcf12718bfd1e1f4057db65fa53fd48096e4aa0fbe6
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **101.7 MB (101695556 bytes)**  
+-	Total Size: **101.7 MB (101694617 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0d7ede3ebd282e831d3adc64358caeb4d0f90972ef2b6159aff6a8bea41f4990`
+-	Image ID: `sha256:36c7abb2de81c0557d2da44bf4acd75ec4ff518d832005295e87e3b132e0b032`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["kong","docker-start"]`
 
 ```dockerfile
-# Wed, 08 Mar 2023 04:41:24 GMT
+# Thu, 13 Apr 2023 13:05:13 GMT
 ARG RELEASE
-# Wed, 08 Mar 2023 04:41:24 GMT
+# Thu, 13 Apr 2023 13:05:13 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Wed, 08 Mar 2023 04:41:24 GMT
+# Thu, 13 Apr 2023 13:05:13 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Wed, 08 Mar 2023 04:41:24 GMT
+# Thu, 13 Apr 2023 13:05:13 GMT
 LABEL org.opencontainers.image.version=20.04
-# Wed, 08 Mar 2023 04:41:26 GMT
-ADD file:20f2ff22b9a8ca9bec5178036c9ebc525a12cd4312daf5d14a9a631a30be20e1 in / 
-# Wed, 08 Mar 2023 04:41:27 GMT
+# Thu, 13 Apr 2023 13:05:15 GMT
+ADD file:d05d1c0936b046937bd5755876db2f8da3ed8ccbcf464bb56c312fbc7ed78589 in / 
+# Thu, 13 Apr 2023 13:05:15 GMT
 CMD ["/bin/bash"]
-# Thu, 16 Mar 2023 04:52:49 GMT
+# Tue, 18 Apr 2023 00:48:57 GMT
 LABEL maintainer=Kong Docker Maintainers <docker@konghq.com> (@team-gateway-bot)
-# Thu, 16 Mar 2023 04:52:49 GMT
+# Tue, 18 Apr 2023 00:48:57 GMT
 ARG ASSET=ce
-# Thu, 16 Mar 2023 04:52:49 GMT
+# Tue, 18 Apr 2023 00:48:57 GMT
 ENV ASSET=ce
-# Thu, 16 Mar 2023 04:52:49 GMT
+# Tue, 18 Apr 2023 00:48:57 GMT
 ARG EE_PORTS
-# Thu, 16 Mar 2023 04:52:49 GMT
+# Tue, 18 Apr 2023 00:48:57 GMT
 COPY file:c24b3b9739a4614fa0679c1a90bac51eb61f9f84b2b02c5c24925e0c84878649 in /tmp/kong.deb 
-# Thu, 16 Mar 2023 04:54:01 GMT
+# Tue, 18 Apr 2023 00:49:32 GMT
 ARG KONG_VERSION=3.0.2
-# Thu, 16 Mar 2023 04:54:01 GMT
+# Tue, 18 Apr 2023 00:49:32 GMT
 ENV KONG_VERSION=3.0.2
-# Thu, 16 Mar 2023 04:54:01 GMT
+# Tue, 18 Apr 2023 00:49:32 GMT
 ARG KONG_AMD64_SHA=ad9b0b97b48e2a939d2aefa1ae2e4f2924a4cda5382e99524589ccbb90f7c396
-# Thu, 16 Mar 2023 04:54:01 GMT
+# Tue, 18 Apr 2023 00:49:32 GMT
 ARG KONG_ARM64_SHA=8e10e6693ece4166c9acf3eb0745c119468d6902e7c27b2841f900644b3e2c53
-# Thu, 16 Mar 2023 04:54:23 GMT
+# Tue, 18 Apr 2023 00:49:52 GMT
 # ARGS: KONG_AMD64_SHA=ad9b0b97b48e2a939d2aefa1ae2e4f2924a4cda5382e99524589ccbb90f7c396 KONG_ARM64_SHA=8e10e6693ece4166c9acf3eb0745c119468d6902e7c27b2841f900644b3e2c53
 RUN set -ex;     arch=$(dpkg --print-architecture);     case "${arch}" in       amd64) KONG_SHA256=$KONG_AMD64_SHA ;;       arm64) KONG_SHA256=$KONG_ARM64_SHA ;;     esac;     apt-get update     && if [ "$ASSET" = "ce" ] ; then       apt-get install -y curl       && UBUNTU_CODENAME=$(cat /etc/os-release | grep UBUNTU_CODENAME | cut -d = -f 2)       && curl -fL https://download.konghq.com/gateway-${KONG_VERSION%%.*}.x-ubuntu-${UBUNTU_CODENAME}/pool/all/k/kong/kong_${KONG_VERSION}_$arch.deb -o /tmp/kong.deb       && apt-get purge -y curl       && echo "$KONG_SHA256  /tmp/kong.deb" | sha256sum -c -       || exit 1;     else       apt-get upgrade -y ;     fi;     apt-get install -y --no-install-recommends unzip git     && apt install --yes /tmp/kong.deb     && rm -rf /var/lib/apt/lists/*     && rm -rf /tmp/kong.deb     && chown kong:0 /usr/local/bin/kong     && chown -R kong:0 /usr/local/kong     && ln -s /usr/local/openresty/bin/resty /usr/local/bin/resty     && ln -s /usr/local/openresty/luajit/bin/luajit /usr/local/bin/luajit     && ln -s /usr/local/openresty/luajit/bin/luajit /usr/local/bin/lua     && ln -s /usr/local/openresty/nginx/sbin/nginx /usr/local/bin/nginx     && if [ "$ASSET" = "ce" ] ; then       kong version ;     fi
-# Thu, 16 Mar 2023 04:54:24 GMT
+# Tue, 18 Apr 2023 00:49:53 GMT
 COPY file:df7f26941e26fd034e43646906785ecba3877cf078fa891fd1d304925f70408e in /docker-entrypoint.sh 
-# Thu, 16 Mar 2023 04:54:24 GMT
+# Tue, 18 Apr 2023 00:49:53 GMT
 USER kong
-# Thu, 16 Mar 2023 04:54:24 GMT
+# Tue, 18 Apr 2023 00:49:53 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 16 Mar 2023 04:54:24 GMT
+# Tue, 18 Apr 2023 00:49:53 GMT
 EXPOSE 8000 8001 8443 8444
-# Thu, 16 Mar 2023 04:54:24 GMT
+# Tue, 18 Apr 2023 00:49:53 GMT
 STOPSIGNAL SIGQUIT
-# Thu, 16 Mar 2023 04:54:24 GMT
+# Tue, 18 Apr 2023 00:49:53 GMT
 HEALTHCHECK &{["CMD-SHELL" "kong health"] "10s" "10s" "0s" '\n'}
-# Thu, 16 Mar 2023 04:54:24 GMT
+# Tue, 18 Apr 2023 00:49:54 GMT
 CMD ["kong" "docker-start"]
 ```
 
 -	Layers:
-	-	`sha256:5544ebdc0c7b82aa6901eae124b1d220914d2629a9bde25396d7ee9cfd273a8f`  
-		Last Modified: Wed, 08 Mar 2023 09:02:58 GMT  
-		Size: 28.6 MB (28578068 bytes)  
+	-	`sha256:99803d4b97f3db529ae9ca4174b0951afac6b309e7deaa8ec3214c584e02b3a8`  
+		Last Modified: Thu, 13 Apr 2023 03:03:13 GMT  
+		Size: 28.6 MB (28578563 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c0310ac76a75b3413c8efa68949fbf815db82ac8624b9d1ca500280c0722969f`  
-		Last Modified: Thu, 16 Mar 2023 04:56:02 GMT  
-		Size: 126.0 B  
+	-	`sha256:1270117cfa3f1bf43891c96ffc5e3f48c9b1b960b8f1c17ad7d5cbb6971f0fbd`  
+		Last Modified: Tue, 18 Apr 2023 00:50:16 GMT  
+		Size: 129.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7c081dda2d728a2bcb14aa145bc47b32465be7ac4386c1eab0d9038e88f017fa`  
-		Last Modified: Thu, 16 Mar 2023 04:56:37 GMT  
-		Size: 73.1 MB (73116481 bytes)  
+	-	`sha256:9e3e94b7778f468bc9687113229b1550d32f2d19632c324489f5d87c564f2749`  
+		Last Modified: Tue, 18 Apr 2023 00:50:49 GMT  
+		Size: 73.1 MB (73115045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8b5daa755535d2d64c240f9c2c483544fa058c572eca788ecf128771dc70bf27`  
-		Last Modified: Thu, 16 Mar 2023 04:56:25 GMT  
-		Size: 881.0 B  
+	-	`sha256:35c3709def9dda22e3f52d5000041dd3ba80e64c58ca7e5ff6738b29dd2cedbf`  
+		Last Modified: Tue, 18 Apr 2023 00:50:38 GMT  
+		Size: 880.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `kong:3.0-ubuntu` - linux; arm64 variant v8
@@ -1820,7 +1820,7 @@ CMD ["kong" "docker-start"]
 ## `kong:3.0.2-ubuntu`
 
 ```console
-$ docker pull kong@sha256:b1315b4930a17790a731bf39dbaf753158ff81f5d682ed176ca1b10da37aeb1e
+$ docker pull kong@sha256:711035df3b7a9fd76bf697109556b92854ced222226df61bd27b14594466a563
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1831,83 +1831,83 @@ $ docker pull kong@sha256:b1315b4930a17790a731bf39dbaf753158ff81f5d682ed176ca1b1
 ### `kong:3.0.2-ubuntu` - linux; amd64
 
 ```console
-$ docker pull kong@sha256:cf36c2ce52780db49268cfb74e4e3a3c46250d6bccba79d4faa5ee62399eab38
+$ docker pull kong@sha256:e9d5dda1bd4f39e7fa0e6bcf12718bfd1e1f4057db65fa53fd48096e4aa0fbe6
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **101.7 MB (101695556 bytes)**  
+-	Total Size: **101.7 MB (101694617 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0d7ede3ebd282e831d3adc64358caeb4d0f90972ef2b6159aff6a8bea41f4990`
+-	Image ID: `sha256:36c7abb2de81c0557d2da44bf4acd75ec4ff518d832005295e87e3b132e0b032`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["kong","docker-start"]`
 
 ```dockerfile
-# Wed, 08 Mar 2023 04:41:24 GMT
+# Thu, 13 Apr 2023 13:05:13 GMT
 ARG RELEASE
-# Wed, 08 Mar 2023 04:41:24 GMT
+# Thu, 13 Apr 2023 13:05:13 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Wed, 08 Mar 2023 04:41:24 GMT
+# Thu, 13 Apr 2023 13:05:13 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Wed, 08 Mar 2023 04:41:24 GMT
+# Thu, 13 Apr 2023 13:05:13 GMT
 LABEL org.opencontainers.image.version=20.04
-# Wed, 08 Mar 2023 04:41:26 GMT
-ADD file:20f2ff22b9a8ca9bec5178036c9ebc525a12cd4312daf5d14a9a631a30be20e1 in / 
-# Wed, 08 Mar 2023 04:41:27 GMT
+# Thu, 13 Apr 2023 13:05:15 GMT
+ADD file:d05d1c0936b046937bd5755876db2f8da3ed8ccbcf464bb56c312fbc7ed78589 in / 
+# Thu, 13 Apr 2023 13:05:15 GMT
 CMD ["/bin/bash"]
-# Thu, 16 Mar 2023 04:52:49 GMT
+# Tue, 18 Apr 2023 00:48:57 GMT
 LABEL maintainer=Kong Docker Maintainers <docker@konghq.com> (@team-gateway-bot)
-# Thu, 16 Mar 2023 04:52:49 GMT
+# Tue, 18 Apr 2023 00:48:57 GMT
 ARG ASSET=ce
-# Thu, 16 Mar 2023 04:52:49 GMT
+# Tue, 18 Apr 2023 00:48:57 GMT
 ENV ASSET=ce
-# Thu, 16 Mar 2023 04:52:49 GMT
+# Tue, 18 Apr 2023 00:48:57 GMT
 ARG EE_PORTS
-# Thu, 16 Mar 2023 04:52:49 GMT
+# Tue, 18 Apr 2023 00:48:57 GMT
 COPY file:c24b3b9739a4614fa0679c1a90bac51eb61f9f84b2b02c5c24925e0c84878649 in /tmp/kong.deb 
-# Thu, 16 Mar 2023 04:54:01 GMT
+# Tue, 18 Apr 2023 00:49:32 GMT
 ARG KONG_VERSION=3.0.2
-# Thu, 16 Mar 2023 04:54:01 GMT
+# Tue, 18 Apr 2023 00:49:32 GMT
 ENV KONG_VERSION=3.0.2
-# Thu, 16 Mar 2023 04:54:01 GMT
+# Tue, 18 Apr 2023 00:49:32 GMT
 ARG KONG_AMD64_SHA=ad9b0b97b48e2a939d2aefa1ae2e4f2924a4cda5382e99524589ccbb90f7c396
-# Thu, 16 Mar 2023 04:54:01 GMT
+# Tue, 18 Apr 2023 00:49:32 GMT
 ARG KONG_ARM64_SHA=8e10e6693ece4166c9acf3eb0745c119468d6902e7c27b2841f900644b3e2c53
-# Thu, 16 Mar 2023 04:54:23 GMT
+# Tue, 18 Apr 2023 00:49:52 GMT
 # ARGS: KONG_AMD64_SHA=ad9b0b97b48e2a939d2aefa1ae2e4f2924a4cda5382e99524589ccbb90f7c396 KONG_ARM64_SHA=8e10e6693ece4166c9acf3eb0745c119468d6902e7c27b2841f900644b3e2c53
 RUN set -ex;     arch=$(dpkg --print-architecture);     case "${arch}" in       amd64) KONG_SHA256=$KONG_AMD64_SHA ;;       arm64) KONG_SHA256=$KONG_ARM64_SHA ;;     esac;     apt-get update     && if [ "$ASSET" = "ce" ] ; then       apt-get install -y curl       && UBUNTU_CODENAME=$(cat /etc/os-release | grep UBUNTU_CODENAME | cut -d = -f 2)       && curl -fL https://download.konghq.com/gateway-${KONG_VERSION%%.*}.x-ubuntu-${UBUNTU_CODENAME}/pool/all/k/kong/kong_${KONG_VERSION}_$arch.deb -o /tmp/kong.deb       && apt-get purge -y curl       && echo "$KONG_SHA256  /tmp/kong.deb" | sha256sum -c -       || exit 1;     else       apt-get upgrade -y ;     fi;     apt-get install -y --no-install-recommends unzip git     && apt install --yes /tmp/kong.deb     && rm -rf /var/lib/apt/lists/*     && rm -rf /tmp/kong.deb     && chown kong:0 /usr/local/bin/kong     && chown -R kong:0 /usr/local/kong     && ln -s /usr/local/openresty/bin/resty /usr/local/bin/resty     && ln -s /usr/local/openresty/luajit/bin/luajit /usr/local/bin/luajit     && ln -s /usr/local/openresty/luajit/bin/luajit /usr/local/bin/lua     && ln -s /usr/local/openresty/nginx/sbin/nginx /usr/local/bin/nginx     && if [ "$ASSET" = "ce" ] ; then       kong version ;     fi
-# Thu, 16 Mar 2023 04:54:24 GMT
+# Tue, 18 Apr 2023 00:49:53 GMT
 COPY file:df7f26941e26fd034e43646906785ecba3877cf078fa891fd1d304925f70408e in /docker-entrypoint.sh 
-# Thu, 16 Mar 2023 04:54:24 GMT
+# Tue, 18 Apr 2023 00:49:53 GMT
 USER kong
-# Thu, 16 Mar 2023 04:54:24 GMT
+# Tue, 18 Apr 2023 00:49:53 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 16 Mar 2023 04:54:24 GMT
+# Tue, 18 Apr 2023 00:49:53 GMT
 EXPOSE 8000 8001 8443 8444
-# Thu, 16 Mar 2023 04:54:24 GMT
+# Tue, 18 Apr 2023 00:49:53 GMT
 STOPSIGNAL SIGQUIT
-# Thu, 16 Mar 2023 04:54:24 GMT
+# Tue, 18 Apr 2023 00:49:53 GMT
 HEALTHCHECK &{["CMD-SHELL" "kong health"] "10s" "10s" "0s" '\n'}
-# Thu, 16 Mar 2023 04:54:24 GMT
+# Tue, 18 Apr 2023 00:49:54 GMT
 CMD ["kong" "docker-start"]
 ```
 
 -	Layers:
-	-	`sha256:5544ebdc0c7b82aa6901eae124b1d220914d2629a9bde25396d7ee9cfd273a8f`  
-		Last Modified: Wed, 08 Mar 2023 09:02:58 GMT  
-		Size: 28.6 MB (28578068 bytes)  
+	-	`sha256:99803d4b97f3db529ae9ca4174b0951afac6b309e7deaa8ec3214c584e02b3a8`  
+		Last Modified: Thu, 13 Apr 2023 03:03:13 GMT  
+		Size: 28.6 MB (28578563 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c0310ac76a75b3413c8efa68949fbf815db82ac8624b9d1ca500280c0722969f`  
-		Last Modified: Thu, 16 Mar 2023 04:56:02 GMT  
-		Size: 126.0 B  
+	-	`sha256:1270117cfa3f1bf43891c96ffc5e3f48c9b1b960b8f1c17ad7d5cbb6971f0fbd`  
+		Last Modified: Tue, 18 Apr 2023 00:50:16 GMT  
+		Size: 129.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7c081dda2d728a2bcb14aa145bc47b32465be7ac4386c1eab0d9038e88f017fa`  
-		Last Modified: Thu, 16 Mar 2023 04:56:37 GMT  
-		Size: 73.1 MB (73116481 bytes)  
+	-	`sha256:9e3e94b7778f468bc9687113229b1550d32f2d19632c324489f5d87c564f2749`  
+		Last Modified: Tue, 18 Apr 2023 00:50:49 GMT  
+		Size: 73.1 MB (73115045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8b5daa755535d2d64c240f9c2c483544fa058c572eca788ecf128771dc70bf27`  
-		Last Modified: Thu, 16 Mar 2023 04:56:25 GMT  
-		Size: 881.0 B  
+	-	`sha256:35c3709def9dda22e3f52d5000041dd3ba80e64c58ca7e5ff6738b29dd2cedbf`  
+		Last Modified: Tue, 18 Apr 2023 00:50:38 GMT  
+		Size: 880.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `kong:3.0.2-ubuntu` - linux; arm64 variant v8
@@ -2150,7 +2150,7 @@ CMD ["kong" "docker-start"]
 ## `kong:3.1-ubuntu`
 
 ```console
-$ docker pull kong@sha256:975961b67d0fbc8c196a6b5793a6dd37c31bc178ab6203f1c6f904b9607e8e8b
+$ docker pull kong@sha256:cd55f71b2ecf97b054c14476df702f901f2c349972d5eb3ededce3a1c1363d88
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2161,83 +2161,83 @@ $ docker pull kong@sha256:975961b67d0fbc8c196a6b5793a6dd37c31bc178ab6203f1c6f904
 ### `kong:3.1-ubuntu` - linux; amd64
 
 ```console
-$ docker pull kong@sha256:8ed9bd110f3da4288bdbeea1e304bad5871743e77bb8c64c47a3e61672777ee0
+$ docker pull kong@sha256:fb7def9d63b24dc4c240b345e7e9355337786d632661945e06a15ef20e4779a1
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **101.7 MB (101726780 bytes)**  
+-	Total Size: **101.7 MB (101731018 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:33890cc7473f3e37ff7fca779b2a0f56eeba8c5dc3fe6f0262e000b3c57eb911`
+-	Image ID: `sha256:5498f3ffdb5118b22860bb4093d18caa5b3149307152c58abc431e05d8685579`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["kong","docker-start"]`
 
 ```dockerfile
-# Wed, 08 Mar 2023 04:41:24 GMT
+# Thu, 13 Apr 2023 13:05:13 GMT
 ARG RELEASE
-# Wed, 08 Mar 2023 04:41:24 GMT
+# Thu, 13 Apr 2023 13:05:13 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Wed, 08 Mar 2023 04:41:24 GMT
+# Thu, 13 Apr 2023 13:05:13 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Wed, 08 Mar 2023 04:41:24 GMT
+# Thu, 13 Apr 2023 13:05:13 GMT
 LABEL org.opencontainers.image.version=20.04
-# Wed, 08 Mar 2023 04:41:26 GMT
-ADD file:20f2ff22b9a8ca9bec5178036c9ebc525a12cd4312daf5d14a9a631a30be20e1 in / 
-# Wed, 08 Mar 2023 04:41:27 GMT
+# Thu, 13 Apr 2023 13:05:15 GMT
+ADD file:d05d1c0936b046937bd5755876db2f8da3ed8ccbcf464bb56c312fbc7ed78589 in / 
+# Thu, 13 Apr 2023 13:05:15 GMT
 CMD ["/bin/bash"]
-# Thu, 16 Mar 2023 04:52:49 GMT
+# Tue, 18 Apr 2023 00:48:57 GMT
 LABEL maintainer=Kong Docker Maintainers <docker@konghq.com> (@team-gateway-bot)
-# Thu, 16 Mar 2023 04:52:49 GMT
+# Tue, 18 Apr 2023 00:48:57 GMT
 ARG ASSET=ce
-# Thu, 16 Mar 2023 04:52:49 GMT
+# Tue, 18 Apr 2023 00:48:57 GMT
 ENV ASSET=ce
-# Thu, 16 Mar 2023 04:52:49 GMT
+# Tue, 18 Apr 2023 00:48:57 GMT
 ARG EE_PORTS
-# Thu, 16 Mar 2023 04:52:49 GMT
+# Tue, 18 Apr 2023 00:48:57 GMT
 COPY file:c24b3b9739a4614fa0679c1a90bac51eb61f9f84b2b02c5c24925e0c84878649 in /tmp/kong.deb 
-# Thu, 16 Mar 2023 04:52:49 GMT
+# Tue, 18 Apr 2023 00:48:57 GMT
 ARG KONG_VERSION=3.1.1
-# Thu, 16 Mar 2023 04:52:50 GMT
+# Tue, 18 Apr 2023 00:48:57 GMT
 ENV KONG_VERSION=3.1.1
-# Thu, 16 Mar 2023 04:52:50 GMT
+# Tue, 18 Apr 2023 00:48:57 GMT
 ARG KONG_AMD64_SHA=39bbefa14d348dedf7734c742da46acf7777ff0018f2cad7961799ba4663277b
-# Thu, 16 Mar 2023 04:52:50 GMT
+# Tue, 18 Apr 2023 00:48:57 GMT
 ARG KONG_ARM64_SHA=66c88430fb641ace356af55db4377a697a5ee5a63fbb243bcc8a4a90e3874f9f
-# Thu, 16 Mar 2023 04:53:44 GMT
+# Tue, 18 Apr 2023 00:49:26 GMT
 # ARGS: KONG_AMD64_SHA=39bbefa14d348dedf7734c742da46acf7777ff0018f2cad7961799ba4663277b KONG_ARM64_SHA=66c88430fb641ace356af55db4377a697a5ee5a63fbb243bcc8a4a90e3874f9f
 RUN set -ex;     arch=$(dpkg --print-architecture);     case "${arch}" in       amd64) KONG_SHA256=$KONG_AMD64_SHA ;;       arm64) KONG_SHA256=$KONG_ARM64_SHA ;;     esac;     apt-get update     && if [ "$ASSET" = "ce" ] ; then       apt-get install -y curl       && UBUNTU_CODENAME=$(cat /etc/os-release | grep UBUNTU_CODENAME | cut -d = -f 2)       && curl -fL https://download.konghq.com/gateway-${KONG_VERSION%%.*}.x-ubuntu-${UBUNTU_CODENAME}/pool/all/k/kong/kong_${KONG_VERSION}_$arch.deb -o /tmp/kong.deb       && apt-get purge -y curl       && echo "$KONG_SHA256  /tmp/kong.deb" | sha256sum -c -       || exit 1;     else       apt-get upgrade -y ;     fi;     apt-get install -y --no-install-recommends unzip git     && apt install --yes /tmp/kong.deb     && rm -rf /var/lib/apt/lists/*     && rm -rf /tmp/kong.deb     && chown kong:0 /usr/local/bin/kong     && chown -R kong:0 /usr/local/kong     && ln -s /usr/local/openresty/bin/resty /usr/local/bin/resty     && ln -s /usr/local/openresty/luajit/bin/luajit /usr/local/bin/luajit     && ln -s /usr/local/openresty/luajit/bin/luajit /usr/local/bin/lua     && ln -s /usr/local/openresty/nginx/sbin/nginx /usr/local/bin/nginx     && if [ "$ASSET" = "ce" ] ; then       kong version ;     fi
-# Thu, 16 Mar 2023 04:53:45 GMT
+# Tue, 18 Apr 2023 00:49:26 GMT
 COPY file:df7f26941e26fd034e43646906785ecba3877cf078fa891fd1d304925f70408e in /docker-entrypoint.sh 
-# Thu, 16 Mar 2023 04:53:45 GMT
+# Tue, 18 Apr 2023 00:49:26 GMT
 USER kong
-# Thu, 16 Mar 2023 04:53:45 GMT
+# Tue, 18 Apr 2023 00:49:26 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 16 Mar 2023 04:53:45 GMT
+# Tue, 18 Apr 2023 00:49:26 GMT
 EXPOSE 8000 8001 8443 8444
-# Thu, 16 Mar 2023 04:53:45 GMT
+# Tue, 18 Apr 2023 00:49:27 GMT
 STOPSIGNAL SIGQUIT
-# Thu, 16 Mar 2023 04:53:45 GMT
+# Tue, 18 Apr 2023 00:49:27 GMT
 HEALTHCHECK &{["CMD-SHELL" "kong health"] "10s" "10s" "0s" '\n'}
-# Thu, 16 Mar 2023 04:53:45 GMT
+# Tue, 18 Apr 2023 00:49:27 GMT
 CMD ["kong" "docker-start"]
 ```
 
 -	Layers:
-	-	`sha256:5544ebdc0c7b82aa6901eae124b1d220914d2629a9bde25396d7ee9cfd273a8f`  
-		Last Modified: Wed, 08 Mar 2023 09:02:58 GMT  
-		Size: 28.6 MB (28578068 bytes)  
+	-	`sha256:99803d4b97f3db529ae9ca4174b0951afac6b309e7deaa8ec3214c584e02b3a8`  
+		Last Modified: Thu, 13 Apr 2023 03:03:13 GMT  
+		Size: 28.6 MB (28578563 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c0310ac76a75b3413c8efa68949fbf815db82ac8624b9d1ca500280c0722969f`  
-		Last Modified: Thu, 16 Mar 2023 04:56:02 GMT  
-		Size: 126.0 B  
+	-	`sha256:1270117cfa3f1bf43891c96ffc5e3f48c9b1b960b8f1c17ad7d5cbb6971f0fbd`  
+		Last Modified: Tue, 18 Apr 2023 00:50:16 GMT  
+		Size: 129.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2a7f03c733975322bd977f20abb1e6abb79a4c3d9b211be3afa32f6e14d522ac`  
-		Last Modified: Thu, 16 Mar 2023 04:56:13 GMT  
-		Size: 73.1 MB (73147706 bytes)  
+	-	`sha256:bccee49244e3687399c9c24cc0ce516b0905e7442ed02f0fe26a5a84f5538a7b`  
+		Last Modified: Tue, 18 Apr 2023 00:50:28 GMT  
+		Size: 73.2 MB (73151444 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31059c935546737773cd25b29801a0113c45428a34a09cc5676aa03f11aeff8f`  
-		Last Modified: Thu, 16 Mar 2023 04:56:02 GMT  
-		Size: 880.0 B  
+	-	`sha256:53853e3583dd41f1e3da5406c276e344418ddaae1e4dbe056f2e4e205734273e`  
+		Last Modified: Tue, 18 Apr 2023 00:50:16 GMT  
+		Size: 882.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `kong:3.1-ubuntu` - linux; arm64 variant v8
@@ -2635,7 +2635,7 @@ CMD ["kong" "docker-start"]
 ## `kong:3.1.1-ubuntu`
 
 ```console
-$ docker pull kong@sha256:975961b67d0fbc8c196a6b5793a6dd37c31bc178ab6203f1c6f904b9607e8e8b
+$ docker pull kong@sha256:cd55f71b2ecf97b054c14476df702f901f2c349972d5eb3ededce3a1c1363d88
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2646,83 +2646,83 @@ $ docker pull kong@sha256:975961b67d0fbc8c196a6b5793a6dd37c31bc178ab6203f1c6f904
 ### `kong:3.1.1-ubuntu` - linux; amd64
 
 ```console
-$ docker pull kong@sha256:8ed9bd110f3da4288bdbeea1e304bad5871743e77bb8c64c47a3e61672777ee0
+$ docker pull kong@sha256:fb7def9d63b24dc4c240b345e7e9355337786d632661945e06a15ef20e4779a1
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **101.7 MB (101726780 bytes)**  
+-	Total Size: **101.7 MB (101731018 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:33890cc7473f3e37ff7fca779b2a0f56eeba8c5dc3fe6f0262e000b3c57eb911`
+-	Image ID: `sha256:5498f3ffdb5118b22860bb4093d18caa5b3149307152c58abc431e05d8685579`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["kong","docker-start"]`
 
 ```dockerfile
-# Wed, 08 Mar 2023 04:41:24 GMT
+# Thu, 13 Apr 2023 13:05:13 GMT
 ARG RELEASE
-# Wed, 08 Mar 2023 04:41:24 GMT
+# Thu, 13 Apr 2023 13:05:13 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Wed, 08 Mar 2023 04:41:24 GMT
+# Thu, 13 Apr 2023 13:05:13 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Wed, 08 Mar 2023 04:41:24 GMT
+# Thu, 13 Apr 2023 13:05:13 GMT
 LABEL org.opencontainers.image.version=20.04
-# Wed, 08 Mar 2023 04:41:26 GMT
-ADD file:20f2ff22b9a8ca9bec5178036c9ebc525a12cd4312daf5d14a9a631a30be20e1 in / 
-# Wed, 08 Mar 2023 04:41:27 GMT
+# Thu, 13 Apr 2023 13:05:15 GMT
+ADD file:d05d1c0936b046937bd5755876db2f8da3ed8ccbcf464bb56c312fbc7ed78589 in / 
+# Thu, 13 Apr 2023 13:05:15 GMT
 CMD ["/bin/bash"]
-# Thu, 16 Mar 2023 04:52:49 GMT
+# Tue, 18 Apr 2023 00:48:57 GMT
 LABEL maintainer=Kong Docker Maintainers <docker@konghq.com> (@team-gateway-bot)
-# Thu, 16 Mar 2023 04:52:49 GMT
+# Tue, 18 Apr 2023 00:48:57 GMT
 ARG ASSET=ce
-# Thu, 16 Mar 2023 04:52:49 GMT
+# Tue, 18 Apr 2023 00:48:57 GMT
 ENV ASSET=ce
-# Thu, 16 Mar 2023 04:52:49 GMT
+# Tue, 18 Apr 2023 00:48:57 GMT
 ARG EE_PORTS
-# Thu, 16 Mar 2023 04:52:49 GMT
+# Tue, 18 Apr 2023 00:48:57 GMT
 COPY file:c24b3b9739a4614fa0679c1a90bac51eb61f9f84b2b02c5c24925e0c84878649 in /tmp/kong.deb 
-# Thu, 16 Mar 2023 04:52:49 GMT
+# Tue, 18 Apr 2023 00:48:57 GMT
 ARG KONG_VERSION=3.1.1
-# Thu, 16 Mar 2023 04:52:50 GMT
+# Tue, 18 Apr 2023 00:48:57 GMT
 ENV KONG_VERSION=3.1.1
-# Thu, 16 Mar 2023 04:52:50 GMT
+# Tue, 18 Apr 2023 00:48:57 GMT
 ARG KONG_AMD64_SHA=39bbefa14d348dedf7734c742da46acf7777ff0018f2cad7961799ba4663277b
-# Thu, 16 Mar 2023 04:52:50 GMT
+# Tue, 18 Apr 2023 00:48:57 GMT
 ARG KONG_ARM64_SHA=66c88430fb641ace356af55db4377a697a5ee5a63fbb243bcc8a4a90e3874f9f
-# Thu, 16 Mar 2023 04:53:44 GMT
+# Tue, 18 Apr 2023 00:49:26 GMT
 # ARGS: KONG_AMD64_SHA=39bbefa14d348dedf7734c742da46acf7777ff0018f2cad7961799ba4663277b KONG_ARM64_SHA=66c88430fb641ace356af55db4377a697a5ee5a63fbb243bcc8a4a90e3874f9f
 RUN set -ex;     arch=$(dpkg --print-architecture);     case "${arch}" in       amd64) KONG_SHA256=$KONG_AMD64_SHA ;;       arm64) KONG_SHA256=$KONG_ARM64_SHA ;;     esac;     apt-get update     && if [ "$ASSET" = "ce" ] ; then       apt-get install -y curl       && UBUNTU_CODENAME=$(cat /etc/os-release | grep UBUNTU_CODENAME | cut -d = -f 2)       && curl -fL https://download.konghq.com/gateway-${KONG_VERSION%%.*}.x-ubuntu-${UBUNTU_CODENAME}/pool/all/k/kong/kong_${KONG_VERSION}_$arch.deb -o /tmp/kong.deb       && apt-get purge -y curl       && echo "$KONG_SHA256  /tmp/kong.deb" | sha256sum -c -       || exit 1;     else       apt-get upgrade -y ;     fi;     apt-get install -y --no-install-recommends unzip git     && apt install --yes /tmp/kong.deb     && rm -rf /var/lib/apt/lists/*     && rm -rf /tmp/kong.deb     && chown kong:0 /usr/local/bin/kong     && chown -R kong:0 /usr/local/kong     && ln -s /usr/local/openresty/bin/resty /usr/local/bin/resty     && ln -s /usr/local/openresty/luajit/bin/luajit /usr/local/bin/luajit     && ln -s /usr/local/openresty/luajit/bin/luajit /usr/local/bin/lua     && ln -s /usr/local/openresty/nginx/sbin/nginx /usr/local/bin/nginx     && if [ "$ASSET" = "ce" ] ; then       kong version ;     fi
-# Thu, 16 Mar 2023 04:53:45 GMT
+# Tue, 18 Apr 2023 00:49:26 GMT
 COPY file:df7f26941e26fd034e43646906785ecba3877cf078fa891fd1d304925f70408e in /docker-entrypoint.sh 
-# Thu, 16 Mar 2023 04:53:45 GMT
+# Tue, 18 Apr 2023 00:49:26 GMT
 USER kong
-# Thu, 16 Mar 2023 04:53:45 GMT
+# Tue, 18 Apr 2023 00:49:26 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 16 Mar 2023 04:53:45 GMT
+# Tue, 18 Apr 2023 00:49:26 GMT
 EXPOSE 8000 8001 8443 8444
-# Thu, 16 Mar 2023 04:53:45 GMT
+# Tue, 18 Apr 2023 00:49:27 GMT
 STOPSIGNAL SIGQUIT
-# Thu, 16 Mar 2023 04:53:45 GMT
+# Tue, 18 Apr 2023 00:49:27 GMT
 HEALTHCHECK &{["CMD-SHELL" "kong health"] "10s" "10s" "0s" '\n'}
-# Thu, 16 Mar 2023 04:53:45 GMT
+# Tue, 18 Apr 2023 00:49:27 GMT
 CMD ["kong" "docker-start"]
 ```
 
 -	Layers:
-	-	`sha256:5544ebdc0c7b82aa6901eae124b1d220914d2629a9bde25396d7ee9cfd273a8f`  
-		Last Modified: Wed, 08 Mar 2023 09:02:58 GMT  
-		Size: 28.6 MB (28578068 bytes)  
+	-	`sha256:99803d4b97f3db529ae9ca4174b0951afac6b309e7deaa8ec3214c584e02b3a8`  
+		Last Modified: Thu, 13 Apr 2023 03:03:13 GMT  
+		Size: 28.6 MB (28578563 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c0310ac76a75b3413c8efa68949fbf815db82ac8624b9d1ca500280c0722969f`  
-		Last Modified: Thu, 16 Mar 2023 04:56:02 GMT  
-		Size: 126.0 B  
+	-	`sha256:1270117cfa3f1bf43891c96ffc5e3f48c9b1b960b8f1c17ad7d5cbb6971f0fbd`  
+		Last Modified: Tue, 18 Apr 2023 00:50:16 GMT  
+		Size: 129.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2a7f03c733975322bd977f20abb1e6abb79a4c3d9b211be3afa32f6e14d522ac`  
-		Last Modified: Thu, 16 Mar 2023 04:56:13 GMT  
-		Size: 73.1 MB (73147706 bytes)  
+	-	`sha256:bccee49244e3687399c9c24cc0ce516b0905e7442ed02f0fe26a5a84f5538a7b`  
+		Last Modified: Tue, 18 Apr 2023 00:50:28 GMT  
+		Size: 73.2 MB (73151444 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31059c935546737773cd25b29801a0113c45428a34a09cc5676aa03f11aeff8f`  
-		Last Modified: Thu, 16 Mar 2023 04:56:02 GMT  
-		Size: 880.0 B  
+	-	`sha256:53853e3583dd41f1e3da5406c276e344418ddaae1e4dbe056f2e4e205734273e`  
+		Last Modified: Tue, 18 Apr 2023 00:50:16 GMT  
+		Size: 882.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `kong:3.1.1-ubuntu` - linux; arm64 variant v8
