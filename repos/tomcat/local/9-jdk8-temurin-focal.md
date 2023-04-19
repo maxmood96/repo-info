@@ -1,10 +1,10 @@
-# `tomcat:9.0.73-jdk8-temurin-focal`
+# `tomcat:9.0.74-jdk8-temurin-focal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:36d2f64a2fa9cac8c7bbd527781c69d7056108bd3afb68facd9295fcc4113fe5`
-- Created: `2023-03-28T01:23:41.11117793Z`
-- Virtual Size: ~ 289.94 Mb  
+- Image ID: `sha256:b360f20ff14d4d08210c10e8e335889aeb09e6fd91ede6d3afe43cff7e3bfdfc`
+- Created: `2023-04-18T18:34:24.417056889Z`
+- Virtual Size: ~ 289.10 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -20,8 +20,8 @@
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.73`
-  - `TOMCAT_SHA512=d43fbd6c5ae00bc0ffc2559743f91abd3547c827426cb0acdc8428e060e8659b6bb41b3877deb061ab6202980de39b9558525a4256725b647d5bff93e47a5664`
+  - `TOMCAT_VERSION=9.0.74`
+  - `TOMCAT_SHA512=0e173fc2a76404c41c571c50a1956a2b867870d767200bd30f48d89bf04a4b6337f12e6577415da932cd2dfef9b4e9e9fdd52bd873afb06c6258b0e64244a44e`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=20.04`
@@ -154,19 +154,23 @@ $ apt-get source -qq --print-uris audit=1:2.8.5-2ubuntu6
 'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_2.8.5-2ubuntu6.debian.tar.xz' audit_2.8.5-2ubuntu6.debian.tar.xz 18712 SHA256:d85ecf206bfe256a86e6d39602cd2744beda264a28e413f31c4da227e6542ea7
 ```
 
-### `dpkg` source package: `base-files=11ubuntu5.6`
+### `dpkg` source package: `base-files=11ubuntu5.7`
 
 Binary Packages:
 
-- `base-files=11ubuntu5.6`
+- `base-files=11ubuntu5.7`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris base-files=11ubuntu5.7
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_11ubuntu5.7.dsc' base-files_11ubuntu5.7.dsc 1331 SHA512:ddb511efb81fe616e8c80f819ebfc2b357fe433025e1e2a058a61fa9abd4b5896a515096e1f176ceac5c580492a330a67ded699a866f67345a9e709ff5ebf2dd
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_11ubuntu5.7.tar.xz' base-files_11ubuntu5.7.tar.xz 80664 SHA512:5f82672a58475b8e288a718b4fa23d6fc2764b3d0f7043b7723339abfe6023a9d9b8a0879915469aa4f8b85898d79e874eaaeeec020fa8502912d87c1c07023a
+```
 
 ### `dpkg` source package: `base-passwd=3.5.47`
 
@@ -876,22 +880,27 @@ $ apt-get source -qq --print-uris keyutils=1.6-6ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/k/keyutils/keyutils_1.6-6ubuntu1.1.debian.tar.xz' keyutils_1.6-6ubuntu1.1.debian.tar.xz 14556 SHA512:300ed4c9626de95616a7c799f14d4f8bf7dc0b765d1751d3c9d60f86b7c60801bfbb97bf26c5d0ab39e5e41d5f3021ca870748f9555433b0e6c4ba261f475c3b
 ```
 
-### `dpkg` source package: `krb5=1.17-6ubuntu4.2`
+### `dpkg` source package: `krb5=1.17-6ubuntu4.3`
 
 Binary Packages:
 
-- `libgssapi-krb5-2:amd64=1.17-6ubuntu4.2`
-- `libk5crypto3:amd64=1.17-6ubuntu4.2`
-- `libkrb5-3:amd64=1.17-6ubuntu4.2`
-- `libkrb5support0:amd64=1.17-6ubuntu4.2`
+- `libgssapi-krb5-2:amd64=1.17-6ubuntu4.3`
+- `libk5crypto3:amd64=1.17-6ubuntu4.3`
+- `libkrb5-3:amd64=1.17-6ubuntu4.3`
+- `libkrb5support0:amd64=1.17-6ubuntu4.3`
 
 Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris krb5=1.17-6ubuntu4.3
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17-6ubuntu4.3.dsc' krb5_1.17-6ubuntu4.3.dsc 3507 SHA512:c9c103545c03c78fb37a468af6fc2ecef18829f3e042e60a9aade190113cd6ba18c8f37b454d13ececcb91b7bf4ff0d9a1f121ff6eb2153a05418f9b45b42f5f
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17.orig.tar.gz' krb5_1.17.orig.tar.gz 8761763 SHA512:7462a578b936bd17f155a362dbb5d388e157a80a096549028be6c55400b11361c7f8a28e424fd5674801873651df4e694d536cae66728b7ae5e840e532358c52
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17-6ubuntu4.3.debian.tar.xz' krb5_1.17-6ubuntu4.3.debian.tar.xz 148388 SHA512:a354f473adf021e26dc47d4ca7994d4ba110ee8510aa610ec6a43ed80410803882a33aef2c2484b60e233a7392d76ba6b46f9557afe17e44036c2c197eef48a3
+```
 
 ### `dpkg` source package: `libcap-ng=0.7.9-2.1build1`
 
@@ -1684,12 +1693,12 @@ $ apt-get source -qq --print-uris sqlite3=3.31.1-4ubuntu0.5
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1-4ubuntu0.5.debian.tar.xz' sqlite3_3.31.1-4ubuntu0.5.debian.tar.xz 35824 SHA512:9a0a273044c4dd39856ba378c3c70c3bf3796179bb4e8e66e38b1895148cf286eceb1aac8fd8a45a026c4c6c9a311f64e3baee93d82fdb1b844806df1f41c20a
 ```
 
-### `dpkg` source package: `systemd=245.4-4ubuntu3.20`
+### `dpkg` source package: `systemd=245.4-4ubuntu3.21`
 
 Binary Packages:
 
-- `libsystemd0:amd64=245.4-4ubuntu3.20`
-- `libudev1:amd64=245.4-4ubuntu3.20`
+- `libsystemd0:amd64=245.4-4ubuntu3.21`
+- `libudev1:amd64=245.4-4ubuntu3.21`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1705,10 +1714,10 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris systemd=245.4-4ubuntu3.20
-'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.20.dsc' systemd_245.4-4ubuntu3.20.dsc 5132 SHA512:c2abc0869d8e4200d5a3989a1c27a90f39d1c24eb00abfa6471d891f8de190f755e80990614699917893fa9f94028c42f0b939ed31a46c05066ed970928fde5f
-'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4.orig.tar.gz' systemd_245.4.orig.tar.gz 9000780 SHA512:02036bb1ab05301a9d0dfdd4b9c9376e90134474482531e6e292122380be2f24f99177493dd3af6f8af1a8ed2599ee0996da91a3b1b7872bbfaf26a1c3e61b4c
-'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.20.debian.tar.xz' systemd_245.4-4ubuntu3.20.debian.tar.xz 286732 SHA512:604967de8b405dd9a7597640967d29f3dd9fc57f1e7d78cbaf09c5bf010851ef3c826bcf5a3a7e5f1903c2c622d1bdb0f7f48a9bcb3f7d340c0fb221b79dfa75
+$ apt-get source -qq --print-uris systemd=245.4-4ubuntu3.21
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.21.dsc' systemd_245.4-4ubuntu3.21.dsc 5262 SHA512:60e443b8b437e8f07d56d2c559dcc390551fd31a693c3af33a0ea78801f72496eda655a2a9944fde15e830a9f811fb25c5bcc93a9b362a95d14e4cc6a3661d56
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4.orig.tar.gz' systemd_245.4.orig.tar.gz 9000780 SHA512:02036bb1ab05301a9d0dfdd4b9c9376e90134474482531e6e292122380be2f24f99177493dd3af6f8af1a8ed2599ee0996da91a3b1b7872bbfaf26a1c3e61b4c
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.21.debian.tar.xz' systemd_245.4-4ubuntu3.21.debian.tar.xz 288904 SHA512:351a6c5c1c6ae5bcfd9cebbea476ebb1fd5927d4a582783549bfeeff415c6c228df9f5f76a5558a49e7792925a97e7e7fdb4f4d7d7a15c7088464898acc07ad8
 ```
 
 ### `dpkg` source package: `sysvinit=2.96-2.1ubuntu1`
@@ -1752,19 +1761,25 @@ $ apt-get source -qq --print-uris tar=1.30+dfsg-7ubuntu0.20.04.3
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.30%2bdfsg-7ubuntu0.20.04.3.debian.tar.xz' tar_1.30+dfsg-7ubuntu0.20.04.3.debian.tar.xz 23940 SHA512:c554d5f405ba5f7d5ddd84d0753bcf9bc3ef944f4cb12ae5371d2a51c461ddf0768ef25b11aefd4d9f77f7e6c354b8afc9788e93dc0c34fd914e8604a24a747b
 ```
 
-### `dpkg` source package: `tzdata=2022g-0ubuntu0.20.04.1`
+### `dpkg` source package: `tzdata=2023c-0ubuntu0.20.04.0`
 
 Binary Packages:
 
-- `tzdata=2022g-0ubuntu0.20.04.1`
+- `tzdata=2023c-0ubuntu0.20.04.0`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2023c-0ubuntu0.20.04.0
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2023c-0ubuntu0.20.04.0.dsc' tzdata_2023c-0ubuntu0.20.04.0.dsc 2524 SHA512:d57e78161341181f751b4a384701c0baa7d1e36ec02c8e017be251b5e4f502f040bbff631f5f56b98b6263d0ef07efbe7acb97b8690aa75b422f6e012edccbaa
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2023c.orig.tar.gz' tzdata_2023c.orig.tar.gz 443902 SHA512:608bd286ebcbd0004cfdc1da183273f08aff61f90c8867661154453d77a05d421e4c46ad6d066a1fe2e87d5c82ec0f1c0224667a3b35f3180a3eb7f6ff84cbf5
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2023c.orig.tar.gz.asc' tzdata_2023c.orig.tar.gz.asc 833 SHA512:15da6e01a12a0390f736fe5bacf27595c8f7080a4b27eccfae7f244bc38d5839e7d25622e325f874db17f9e723777e9cfe0f460fbd595b66772f1642dd603b6b
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2023c-0ubuntu0.20.04.0.debian.tar.xz' tzdata_2023c-0ubuntu0.20.04.0.debian.tar.xz 169620 SHA512:c388c49077f507dfda13c7511b4bae43f962ee016f81693fbd4c6b42584b80180b1b36f7f0e8b04f04fb86a5d1cdca1e4a7959d75755f7aaa708ea9bf44d85c2
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2020.02.11.4`
 

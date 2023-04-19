@@ -1,10 +1,10 @@
-# `tomcat:9.0.73-jdk11-temurin-jammy`
+# `tomcat:9.0.74-jdk11-temurin-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b2937efa57f553592ecced26f4e7b60a9f46634f4aa0b78e4a8da00c0af56d6e`
-- Created: `2023-03-28T01:20:46.615510968Z`
-- Virtual Size: ~ 468.71 Mb  
+- Image ID: `sha256:7688f94ce361ea59ba4fab075c2afc5d165a2ad24c4dc261d1d1a8406b06384e`
+- Created: `2023-04-18T18:31:27.35101955Z`
+- Virtual Size: ~ 468.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -20,8 +20,8 @@
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.73`
-  - `TOMCAT_SHA512=d43fbd6c5ae00bc0ffc2559743f91abd3547c827426cb0acdc8428e060e8659b6bb41b3877deb061ab6202980de39b9558525a4256725b647d5bff93e47a5664`
+  - `TOMCAT_VERSION=9.0.74`
+  - `TOMCAT_SHA512=0e173fc2a76404c41c571c50a1956a2b867870d767200bd30f48d89bf04a4b6337f12e6577415da932cd2dfef9b4e9e9fdd52bd873afb06c6258b0e64244a44e`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
@@ -101,13 +101,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.4.8
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.4.8.dsc' apt_2.4.8.dsc 2805 SHA512:c8abaefa3aa3c43ecfbfeb76be4df92cb036e44ee33d1fc06b9e77ee092436124fbee4a827a691d13881849f7f4d22b49394a67fc6aa318444b1e4104d52afea
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.4.8.tar.xz' apt_2.4.8.tar.xz 2317680 SHA512:e79afc0912235522c2a25b360ced63e13797660eb3004d0deec73c8610327495092c77069044a1b4be6a749ab733c5fdbae4eaca9a26a43517ebb09fe8a3ea43
-```
 
 ### `dpkg` source package: `attr=1:2.5.1-1build1`
 
