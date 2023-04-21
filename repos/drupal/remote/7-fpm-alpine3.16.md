@@ -1,7 +1,7 @@
 ## `drupal:7-fpm-alpine3.16`
 
 ```console
-$ docker pull drupal@sha256:e54034f0b39491acba600cf724f2058d0ebbf4ecf5b78a231870ad0718f75305
+$ docker pull drupal@sha256:8a7deb63e453b70efb644c49a5159653693664ce1eed58dd01aad5e1806e285b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -279,14 +279,14 @@ RUN set -eux; 	curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_
 ### `drupal:7-fpm-alpine3.16` - linux; arm variant v7
 
 ```console
-$ docker pull drupal@sha256:e7cda41ca377174de75161e139a607bc8939d22ba99ffb969716249c94cd7b06
+$ docker pull drupal@sha256:e071154c3daac44a8a79f99df08115bb1a7b41f24055d5edbc827923b9491777
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **30.3 MB (30256748 bytes)**  
+-	Total Size: **30.3 MB (30257948 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d632604c8ab0beac21ac3dc6507d5c2e583c4e0da904b3a4269ef95519dc2097`
+-	Image ID: `sha256:20f80a56d5ba7a4e0a79b3a5c54e377015836f069f862100ebf0b52ae1ca77e4`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -345,11 +345,11 @@ CMD ["php-fpm"]
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		coreutils 		freetype-dev 		libjpeg-turbo-dev 		libpng-dev 		libwebp-dev 		libzip-dev 		postgresql-dev 	; 		docker-php-ext-configure gd 		--with-freetype 		--with-jpeg=/usr/include 		--with-webp 	; 		docker-php-ext-install -j "$(nproc)" 		gd 		opcache 		pdo_mysql 		pdo_pgsql 		zip 	; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .drupal-phpexts-rundeps $runDeps; 	apk del --no-network .build-deps
 # Fri, 31 Mar 2023 23:36:29 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Fri, 31 Mar 2023 23:38:00 GMT
-ENV DRUPAL_VERSION=7.95
-# Fri, 31 Mar 2023 23:38:00 GMT
-ENV DRUPAL_MD5=ebd3b1ef8605585d703c13552f841731
-# Fri, 31 Mar 2023 23:38:01 GMT
+# Thu, 20 Apr 2023 23:39:23 GMT
+ENV DRUPAL_VERSION=7.96
+# Thu, 20 Apr 2023 23:39:23 GMT
+ENV DRUPAL_MD5=4aa685e8eca141505867f8cbab48b72b
+# Thu, 20 Apr 2023 23:39:25 GMT
 RUN set -eux; 	curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c -; 	tar -xz --strip-components=1 -f drupal.tar.gz; 	rm drupal.tar.gz; 	chown -R www-data:www-data sites modules themes
 ```
 
@@ -402,22 +402,22 @@ RUN set -eux; 	curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_
 		Last Modified: Fri, 31 Mar 2023 23:43:04 GMT  
 		Size: 308.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdfda9575d5b19a5ca1be60d972f9e2219323cd9a3a58fe84e53b2a52a486b96`  
-		Last Modified: Fri, 31 Mar 2023 23:44:46 GMT  
-		Size: 3.4 MB (3402994 bytes)  
+	-	`sha256:f21cbbcfb2cbb002f942b6cd2daff2ccbf9a2cd1c7627687a4262c1e417f55e4`  
+		Last Modified: Thu, 20 Apr 2023 23:59:08 GMT  
+		Size: 3.4 MB (3404194 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `drupal:7-fpm-alpine3.16` - linux; arm64 variant v8
 
 ```console
-$ docker pull drupal@sha256:32fbe7049c94e811c5768b603112f77ef43a120e9f98154a83cc88b787c44280
+$ docker pull drupal@sha256:212c6ec04b238f31553275d1c3216fc14160becb2179cc71cf4fc5ee495467dc
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.2 MB (32195314 bytes)**  
+-	Total Size: **32.2 MB (32196483 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2f84caa72f3ea55f8492b114c96e4782bb63ce9addd54a9b7b83f94ed0aaf7ce`
+-	Image ID: `sha256:cd01f2ec1a284550d7a7580a48d3487289e5ba7fa7035a8eaacc2a797c4ef635`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -476,11 +476,11 @@ CMD ["php-fpm"]
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		coreutils 		freetype-dev 		libjpeg-turbo-dev 		libpng-dev 		libwebp-dev 		libzip-dev 		postgresql-dev 	; 		docker-php-ext-configure gd 		--with-freetype 		--with-jpeg=/usr/include 		--with-webp 	; 		docker-php-ext-install -j "$(nproc)" 		gd 		opcache 		pdo_mysql 		pdo_pgsql 		zip 	; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .drupal-phpexts-rundeps $runDeps; 	apk del --no-network .build-deps
 # Thu, 30 Mar 2023 06:32:23 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Thu, 30 Mar 2023 06:33:36 GMT
-ENV DRUPAL_VERSION=7.95
-# Thu, 30 Mar 2023 06:33:37 GMT
-ENV DRUPAL_MD5=ebd3b1ef8605585d703c13552f841731
-# Thu, 30 Mar 2023 06:33:37 GMT
+# Thu, 20 Apr 2023 22:48:06 GMT
+ENV DRUPAL_VERSION=7.96
+# Thu, 20 Apr 2023 22:48:06 GMT
+ENV DRUPAL_MD5=4aa685e8eca141505867f8cbab48b72b
+# Thu, 20 Apr 2023 22:48:07 GMT
 RUN set -eux; 	curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c -; 	tar -xz --strip-components=1 -f drupal.tar.gz; 	rm drupal.tar.gz; 	chown -R www-data:www-data sites modules themes
 ```
 
@@ -533,22 +533,22 @@ RUN set -eux; 	curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_
 		Last Modified: Thu, 30 Mar 2023 06:38:18 GMT  
 		Size: 314.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb98e6d878317d0ae4efdca3129903f65d63a5730b998f16f9d2807f47719d26`  
-		Last Modified: Thu, 30 Mar 2023 06:39:43 GMT  
-		Size: 3.4 MB (3402996 bytes)  
+	-	`sha256:c734d82435e802d10b9c9f3e96790ca9ae9395f289e6955657340219239d5bac`  
+		Last Modified: Thu, 20 Apr 2023 23:06:20 GMT  
+		Size: 3.4 MB (3404165 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `drupal:7-fpm-alpine3.16` - linux; 386
 
 ```console
-$ docker pull drupal@sha256:e65065f61a1dbddcffc19d7d01e1d058a54a30af8beef1eb82a9e3e28417e140
+$ docker pull drupal@sha256:24206754e0b8047fe3c5ed1de411fb883dbfcf3abec5d8aebb89466b562264a4
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.6 MB (33644779 bytes)**  
+-	Total Size: **33.6 MB (33645979 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bc6ce91a1b6601e6af24f3dd683425dbcd920fb7c8adc438fc782b42768330b5`
+-	Image ID: `sha256:883e618ce80e62b20385f831e2e7d22b0baa069ac431d2fa63fdc9a0f3899356`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -607,11 +607,11 @@ CMD ["php-fpm"]
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		coreutils 		freetype-dev 		libjpeg-turbo-dev 		libpng-dev 		libwebp-dev 		libzip-dev 		postgresql-dev 	; 		docker-php-ext-configure gd 		--with-freetype 		--with-jpeg=/usr/include 		--with-webp 	; 		docker-php-ext-install -j "$(nproc)" 		gd 		opcache 		pdo_mysql 		pdo_pgsql 		zip 	; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .drupal-phpexts-rundeps $runDeps; 	apk del --no-network .build-deps
 # Thu, 30 Mar 2023 02:34:15 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Thu, 30 Mar 2023 02:35:56 GMT
-ENV DRUPAL_VERSION=7.95
-# Thu, 30 Mar 2023 02:35:56 GMT
-ENV DRUPAL_MD5=ebd3b1ef8605585d703c13552f841731
-# Thu, 30 Mar 2023 02:35:57 GMT
+# Thu, 20 Apr 2023 22:47:45 GMT
+ENV DRUPAL_VERSION=7.96
+# Thu, 20 Apr 2023 22:47:45 GMT
+ENV DRUPAL_MD5=4aa685e8eca141505867f8cbab48b72b
+# Thu, 20 Apr 2023 22:47:46 GMT
 RUN set -eux; 	curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c -; 	tar -xz --strip-components=1 -f drupal.tar.gz; 	rm drupal.tar.gz; 	chown -R www-data:www-data sites modules themes
 ```
 
@@ -664,9 +664,9 @@ RUN set -eux; 	curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_
 		Last Modified: Thu, 30 Mar 2023 02:41:07 GMT  
 		Size: 312.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:827b46a96c51df22b2a37849ef6518e2441c93f2f71e98f23d06de21534c2411`  
-		Last Modified: Thu, 30 Mar 2023 02:42:50 GMT  
-		Size: 3.4 MB (3402985 bytes)  
+	-	`sha256:cf16a3c39be28e4080dedc762107ec5fc4ec2c1bd6fa406e14a89d91803c75bb`  
+		Last Modified: Thu, 20 Apr 2023 23:09:00 GMT  
+		Size: 3.4 MB (3404185 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `drupal:7-fpm-alpine3.16` - linux; ppc64le
