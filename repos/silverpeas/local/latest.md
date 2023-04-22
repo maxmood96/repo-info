@@ -5254,12 +5254,12 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libreoffice=1:6.4.7-0ubuntu0.20.04.7
-'http://security.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_6.4.7-0ubuntu0.20.04.7.dsc' libreoffice_6.4.7-0ubuntu0.20.04.7.dsc 30509 SHA512:a69141e85aa3a6117204944adc9e8ddee142d1889265bc7ad63ac24556250b57d68e82a30e049fc6de6b0723d33fd96d9162fbaecb4ef4474c3e68708bb0e866
-'http://security.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_6.4.7.orig-helpcontent2.tar.xz' libreoffice_6.4.7.orig-helpcontent2.tar.xz 88073752 SHA512:3d6459cd4eab764d1fc15eb6edd6c1b16272f51869de1e9379328e81e03adb146d73c2acaf147d13b8ccc9a99721e023d404a0cf2f99a05264cc5536604828da
-'http://security.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_6.4.7.orig-tarballs.tar.xz' libreoffice_6.4.7.orig-tarballs.tar.xz 200916520 SHA512:10dc6e7b0521dff9aea57859312bb9802e1671f52d97f0f3fb7e030e779f778842088160ee14f446a8cc457d67b21b683c90c94bf0aa797ff890b2dea344f5ab
-'http://security.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_6.4.7.orig-translations.tar.xz' libreoffice_6.4.7.orig-translations.tar.xz 179847328 SHA512:6496ce816b136504c9511aeac5e881f329360e144ea48f28e9b56720ed727719339703431e0e0cee931d721c0e2b308366f0a3af771ebc980952c410f400c1cd
-'http://security.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_6.4.7.orig.tar.xz' libreoffice_6.4.7.orig.tar.xz 211530416 SHA512:a0ee0c0e617b33655dce0fbb14e2af12c3d810a3a9631d4b2204a75c8ac64c8797ab52735b799d078e1fff5a14d188ee850c239dab7bce4035a7ca704d6caa97
-'http://security.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_6.4.7-0ubuntu0.20.04.7.debian.tar.xz' libreoffice_6.4.7-0ubuntu0.20.04.7.debian.tar.xz 2418304 SHA512:2e20f432de06446f1b32ea52a412a6e0229383c89e617a9417d8a5905eb31c03e88d91b083f410d295cf957f7351995d6c746d34f7c67dfdb1e0ba85cfd853a7
+'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_6.4.7-0ubuntu0.20.04.7.dsc' libreoffice_6.4.7-0ubuntu0.20.04.7.dsc 30509 SHA512:a69141e85aa3a6117204944adc9e8ddee142d1889265bc7ad63ac24556250b57d68e82a30e049fc6de6b0723d33fd96d9162fbaecb4ef4474c3e68708bb0e866
+'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_6.4.7.orig-helpcontent2.tar.xz' libreoffice_6.4.7.orig-helpcontent2.tar.xz 88073752 SHA512:3d6459cd4eab764d1fc15eb6edd6c1b16272f51869de1e9379328e81e03adb146d73c2acaf147d13b8ccc9a99721e023d404a0cf2f99a05264cc5536604828da
+'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_6.4.7.orig-tarballs.tar.xz' libreoffice_6.4.7.orig-tarballs.tar.xz 200916520 SHA512:10dc6e7b0521dff9aea57859312bb9802e1671f52d97f0f3fb7e030e779f778842088160ee14f446a8cc457d67b21b683c90c94bf0aa797ff890b2dea344f5ab
+'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_6.4.7.orig-translations.tar.xz' libreoffice_6.4.7.orig-translations.tar.xz 179847328 SHA512:6496ce816b136504c9511aeac5e881f329360e144ea48f28e9b56720ed727719339703431e0e0cee931d721c0e2b308366f0a3af771ebc980952c410f400c1cd
+'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_6.4.7.orig.tar.xz' libreoffice_6.4.7.orig.tar.xz 211530416 SHA512:a0ee0c0e617b33655dce0fbb14e2af12c3d810a3a9631d4b2204a75c8ac64c8797ab52735b799d078e1fff5a14d188ee850c239dab7bce4035a7ca704d6caa97
+'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_6.4.7-0ubuntu0.20.04.7.debian.tar.xz' libreoffice_6.4.7-0ubuntu0.20.04.7.debian.tar.xz 2418304 SHA512:2e20f432de06446f1b32ea52a412a6e0229383c89e617a9417d8a5905eb31c03e88d91b083f410d295cf957f7351995d6c746d34f7c67dfdb1e0ba85cfd853a7
 ```
 
 ### `dpkg` source package: `librest=0.8.1-1`
@@ -6570,14 +6570,9 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.10+dfsg-5ubuntu0.20.04.5
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.10%2bdfsg-5ubuntu0.20.04.5.dsc' libxml2_2.9.10+dfsg-5ubuntu0.20.04.5.dsc 3121 SHA512:e70102efeef6c467d2ea5004c72e9ede42b26e635852527d21a32b7cb29265e7f97bbf5966c9266c2470057844512f4ae6b42c939954b2ae05c0a225e72f9f9b
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.10%2bdfsg.orig.tar.xz' libxml2_2.9.10+dfsg.orig.tar.xz 2503560 SHA512:605c6c0f8bf2c53208d0a036ff09a4025843f45139b711c90dc83066feda2f285a5578d55d4a58d33eedbe7485a5c1ec5608ba6c6beed1fb55649f87dca0cec3
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.10%2bdfsg-5ubuntu0.20.04.5.debian.tar.xz' libxml2_2.9.10+dfsg-5ubuntu0.20.04.5.debian.tar.xz 40152 SHA512:a9d5f29ff27f2fee3f26909b67b17240109b7ef8431052236fa205fd5c1db8bf48ce1e2160c15a82ac8a29d4d942effe89f56751d13491427df2267b1c1c0f66
-```
 
 ### `dpkg` source package: `libxmu=2:1.1.3-0ubuntu1`
 
@@ -8995,14 +8990,9 @@ Licenses: (parsed from: `/usr/share/doc/vim/copyright`, `/usr/share/doc/vim-comm
 - `XPM`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris vim=2:8.1.2269-1ubuntu5.13
-'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_8.1.2269-1ubuntu5.13.dsc' vim_8.1.2269-1ubuntu5.13.dsc 2773 SHA512:9a8edba9cea14448f1aa7d0c5743a8f458e0106908e617dee664bc9a835d6210e21cfb889bfda2d3173e69a79d0c98f982be9a10bd0eb149d0093a6e2cb471ac
-'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_8.1.2269.orig.tar.gz' vim_8.1.2269.orig.tar.gz 14590233 SHA512:5194817a5665e08816e87e3b10219e19510ca87c5c377ddc0a50aa84ffd4d7391badad3e993f83802d6da5e9da8834635c1acbdd4a909e75b4947f99f13c1746
-'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_8.1.2269-1ubuntu5.13.debian.tar.xz' vim_8.1.2269-1ubuntu5.13.debian.tar.xz 233744 SHA512:ec9244383408cffafbd7f3472639bd8146121e52a30f9b3648ba9f6a0997601cbc0ad40d1b910dd0aba063b91d1249a7932d9f482716e4fb42f1ba0ee81ee2a8
-```
 
 ### `dpkg` source package: `vulkan-loader=1.2.131.2-1`
 
