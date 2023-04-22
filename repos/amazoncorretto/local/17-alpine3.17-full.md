@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:158df40ae0fd0505f0c4c4a6a1bd6686899858d64e4b5d4d841fbb0be9a73b5f`
-- Created: `2023-03-29T19:19:08.548097269Z`
-- Virtual Size: ~ 339.93 Mb  
+- Image ID: `sha256:6b1af5064b77dfbd7f79cba3b2f47000bd2430c2d5d89303a6d30f0ef46055f9`
+- Created: `2023-04-20T18:25:23.241857418Z`
+- Virtual Size: ~ 340.01 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
@@ -69,16 +69,16 @@ MIT
 ### `apk` package: `amazon-corretto-17`
 
 ```console
-amazon-corretto-17-17.0.6.10.1-r0 description:
+amazon-corretto-17-17.0.7.7.1-r0 description:
 Corretto17
 
-amazon-corretto-17-17.0.6.10.1-r0 webpage:
+amazon-corretto-17-17.0.7.7.1-r0 webpage:
 https://github.com/corretto/corretto-jdk
 
-amazon-corretto-17-17.0.6.10.1-r0 installed size:
+amazon-corretto-17-17.0.7.7.1-r0 installed size:
 318 MiB
 
-amazon-corretto-17-17.0.6.10.1-r0 license:
+amazon-corretto-17-17.0.7.7.1-r0 license:
 https://github.com/corretto/corretto-jdk/blob/develop/LICENSE
 
 ```
