@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9da7821f2fc03b804f9d30dd47ec3607201b01d25c0284cad6fbe980d61c73dc`
-- Created: `2023-03-30T02:49:53.763532892Z`
-- Virtual Size: ~ 365.39 Mb  
+- Image ID: `sha256:5ae9d056755b0aa4409a1f45bf42b6b5b16ba037596335f5165379929003be37`
+- Created: `2023-04-20T18:58:54.379307468Z`
+- Virtual Size: ~ 365.49 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -76,16 +76,16 @@ MIT
 ### `apk` package: `amazon-corretto-11`
 
 ```console
-amazon-corretto-11-11.0.18.10.1-r0 description:
+amazon-corretto-11-11.0.19.7.1-r0 description:
 Corretto11
 
-amazon-corretto-11-11.0.18.10.1-r0 webpage:
+amazon-corretto-11-11.0.19.7.1-r0 webpage:
 https://github.com/corretto/corretto-11
 
-amazon-corretto-11-11.0.18.10.1-r0 installed size:
+amazon-corretto-11-11.0.19.7.1-r0 installed size:
 311 MiB
 
-amazon-corretto-11-11.0.18.10.1-r0 license:
+amazon-corretto-11-11.0.19.7.1-r0 license:
 https://github.com/corretto/corretto-11/blob/develop/LICENSE
 
 ```
@@ -195,16 +195,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-7.88.1-r1 description:
+curl-8.0.1-r0 description:
 URL retrival utility and library
 
-curl-7.88.1-r1 webpage:
+curl-8.0.1-r0 webpage:
 https://curl.se/
 
-curl-7.88.1-r1 installed size:
+curl-8.0.1-r0 installed size:
 264 KiB
 
-curl-7.88.1-r1 license:
+curl-8.0.1-r0 license:
 curl
 
 ```
@@ -518,16 +518,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.88.1-r1 description:
+libcurl-8.0.1-r0 description:
 The multiprotocol file transfer library
 
-libcurl-7.88.1-r1 webpage:
+libcurl-8.0.1-r0 webpage:
 https://curl.se/
 
-libcurl-7.88.1-r1 installed size:
-552 KiB
+libcurl-8.0.1-r0 installed size:
+556 KiB
 
-libcurl-7.88.1-r1 license:
+libcurl-8.0.1-r0 license:
 curl
 
 ```

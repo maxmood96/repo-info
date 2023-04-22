@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:32ea58fcc6205abb9fa6ff01d24b481cd4e65fc5cc7afb3ec6ec3d2bd856885c`
-- Created: `2023-03-30T02:48:51.890555258Z`
-- Virtual Size: ~ 234.40 Mb  
+- Image ID: `sha256:c5ff78b45b0c1f983bef89f0dfc8ceda2ff06f92102e1e32b78302e87dd1e707`
+- Created: `2023-04-20T18:56:23.648812957Z`
+- Virtual Size: ~ 234.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -76,16 +76,16 @@ MIT
 ### `apk` package: `amazon-corretto-8`
 
 ```console
-amazon-corretto-8-8.362.08.1-r0 description:
+amazon-corretto-8-8.372.07.1-r0 description:
 Corretto-8
 
-amazon-corretto-8-8.362.08.1-r0 webpage:
+amazon-corretto-8-8.372.07.1-r0 webpage:
 https://github.com/corretto/corretto-8
 
-amazon-corretto-8-8.362.08.1-r0 installed size:
+amazon-corretto-8-8.372.07.1-r0 installed size:
 88 MiB
 
-amazon-corretto-8-8.362.08.1-r0 license:
+amazon-corretto-8-8.372.07.1-r0 license:
 https://github.com/corretto/corretto-8/blob/develop/LICENSE
 
 ```
@@ -93,16 +93,16 @@ https://github.com/corretto/corretto-8/blob/develop/LICENSE
 ### `apk` package: `amazon-corretto-8-jre`
 
 ```console
-amazon-corretto-8-jre-8.362.08.1-r0 description:
+amazon-corretto-8-jre-8.372.07.1-r0 description:
 Amazon Corretto 8 Java Runtime
 
-amazon-corretto-8-jre-8.362.08.1-r0 webpage:
+amazon-corretto-8-jre-8.372.07.1-r0 webpage:
 https://github.com/corretto/corretto-8
 
-amazon-corretto-8-jre-8.362.08.1-r0 installed size:
+amazon-corretto-8-jre-8.372.07.1-r0 installed size:
 103 MiB
 
-amazon-corretto-8-jre-8.362.08.1-r0 license:
+amazon-corretto-8-jre-8.372.07.1-r0 license:
 https://github.com/corretto/corretto-8/blob/develop/LICENSE
 
 ```
@@ -212,16 +212,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-7.88.1-r1 description:
+curl-8.0.1-r0 description:
 URL retrival utility and library
 
-curl-7.88.1-r1 webpage:
+curl-8.0.1-r0 webpage:
 https://curl.se/
 
-curl-7.88.1-r1 installed size:
+curl-8.0.1-r0 installed size:
 264 KiB
 
-curl-7.88.1-r1 license:
+curl-8.0.1-r0 license:
 curl
 
 ```
@@ -535,16 +535,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.88.1-r1 description:
+libcurl-8.0.1-r0 description:
 The multiprotocol file transfer library
 
-libcurl-7.88.1-r1 webpage:
+libcurl-8.0.1-r0 webpage:
 https://curl.se/
 
-libcurl-7.88.1-r1 installed size:
-552 KiB
+libcurl-8.0.1-r0 installed size:
+556 KiB
 
-libcurl-7.88.1-r1 license:
+libcurl-8.0.1-r0 license:
 curl
 
 ```
