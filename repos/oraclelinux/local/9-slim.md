@@ -1101,8 +1101,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url rpm-4.16.1.3-19.0.1.el9_1
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/rpm-4.16.1.3-19.0.1.el9_1.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/rpm-4.16.1.3-19.0.1.el9_1.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/rpm-4.16.1.3-19.0.1.el9_1.src.rpm
 ```
 
 ### `rpm` package: `rpm-libs-4.16.1.3-19.0.1.el9_1.x86_64`
@@ -1113,8 +1113,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url rpm-libs-4.16.1.3-19.0.1.el9_1
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/rpm-4.16.1.3-19.0.1.el9_1.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/rpm-4.16.1.3-19.0.1.el9_1.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/rpm-4.16.1.3-19.0.1.el9_1.src.rpm
 ```
 
 ### `rpm` package: `sed-4.8-9.el9.x86_64`
@@ -1205,6 +1205,6 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url zlib-1.2.11-35.el9_1
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/zlib-1.2.11-35.el9_1.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/zlib-1.2.11-35.el9_1.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/zlib-1.2.11-35.el9_1.src.rpm
 ```
