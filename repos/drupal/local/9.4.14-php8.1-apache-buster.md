@@ -107,20 +107,13 @@ Licenses: (parsed from: `/usr/share/doc/apache2/copyright`, `/usr/share/doc/apac
 - `PCRE`
 - `Zeus`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apache2=2.4.38-3+deb10u9
-'http://deb.debian.org/debian-security/pool/updates/main/a/apache2/apache2_2.4.38-3%2bdeb10u9.dsc' apache2_2.4.38-3+deb10u9.dsc 3958 SHA256:449b230e9de3142f203e53f20e1cbe374f455587e6498d7cd4b5f24f5cbfcf72
-'http://deb.debian.org/debian-security/pool/updates/main/a/apache2/apache2_2.4.38.orig.tar.gz' apache2_2.4.38.orig.tar.gz 9187294 SHA256:38d0b73aa313c28065bf58faf64cec12bf7c7d5196146107df2ad07541aa26a6
-'http://deb.debian.org/debian-security/pool/updates/main/a/apache2/apache2_2.4.38-3%2bdeb10u9.debian.tar.xz' apache2_2.4.38-3+deb10u9.debian.tar.xz 1098824 SHA256:513270c229ae6cbb6be6a57bf053a4f8e2792965a56654678a3bf0c618a82cc6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apache2/2.4.38-3+deb10u9/
 
-- https://sources.debian.net/src/apache2/2.4.38-3+deb10u9/ (for browsing the source)
-- https://sources.debian.net/src/apache2/2.4.38-3+deb10u9/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apache2/2.4.38-3+deb10u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apr-util=1.6.1-4+deb10u1`
 
