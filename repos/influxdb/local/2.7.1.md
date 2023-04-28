@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7de0f3140b356698d7c7ca47cfbefb1aae55a35a70c3b2d8daaa3f7f0cd20bfe`
-- Created: `2023-04-12T01:49:31.830163437Z`
-- Virtual Size: ~ 264.29 Mb  
+- Image ID: `sha256:fcd3879810b002d6a8591da91da1e8d6f19aa68d93daba3b75bb97b4e25f44be`
+- Created: `2023-04-28T21:20:29.534725197Z`
+- Virtual Size: ~ 265.92 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -12,8 +12,8 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VER=1.12`
-  - `INFLUXDB_VERSION=2.7.0`
-  - `INFLUX_CLI_VERSION=2.7.1`
+  - `INFLUXDB_VERSION=2.7.1`
+  - `INFLUX_CLI_VERSION=2.7.3`
   - `INFLUX_CONFIGS_PATH=/etc/influxdb2/influx-configs`
   - `INFLUXD_INIT_PORT=9999`
   - `INFLUXD_INIT_PING_ATTEMPTS=600`

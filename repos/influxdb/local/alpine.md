@@ -2,17 +2,17 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d81b58390e922e93331b46f3e5278c5ebf76030453daa19d53ad57c05962dc32`
-- Created: `2023-04-05T21:20:35.843856603Z`
-- Virtual Size: ~ 189.68 Mb  
+- Image ID: `sha256:8db7e93350a803792acdc854e88e8d32904b7c888ae022daaaf03de056bf0f48`
+- Created: `2023-04-28T21:20:44.207871179Z`
+- Virtual Size: ~ 194.48 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["influxd"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `INFLUXDB_VERSION=2.7.0`
-  - `INFLUX_CLI_VERSION=2.7.1`
+  - `INFLUXDB_VERSION=2.7.1`
+  - `INFLUX_CLI_VERSION=2.7.3`
   - `INFLUX_CONFIGS_PATH=/etc/influxdb2/influx-configs`
   - `INFLUXD_INIT_PORT=9999`
   - `INFLUXD_INIT_PING_ATTEMPTS=600`
@@ -193,16 +193,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-7.88.1-r1 description:
+curl-8.0.1-r0 description:
 URL retrival utility and library
 
-curl-7.88.1-r1 webpage:
+curl-8.0.1-r0 webpage:
 https://curl.se/
 
-curl-7.88.1-r1 installed size:
+curl-8.0.1-r0 installed size:
 264 KiB
 
-curl-7.88.1-r1 license:
+curl-8.0.1-r0 license:
 curl
 
 ```
@@ -499,16 +499,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.88.1-r1 description:
+libcurl-8.0.1-r0 description:
 The multiprotocol file transfer library
 
-libcurl-7.88.1-r1 webpage:
+libcurl-8.0.1-r0 webpage:
 https://curl.se/
 
-libcurl-7.88.1-r1 installed size:
-552 KiB
+libcurl-8.0.1-r0 installed size:
+556 KiB
 
-libcurl-7.88.1-r1 license:
+libcurl-8.0.1-r0 license:
 curl
 
 ```
@@ -935,23 +935,6 @@ tzdata-2023c-r0 installed size:
 
 tzdata-2023c-r0 license:
 Public-Domain
-
-```
-
-### `apk` package: `yq`
-
-```console
-yq-4.30.4-r2 description:
-Portable command-line YAML processor written in Go
-
-yq-4.30.4-r2 webpage:
-https://github.com/mikefarah/yq
-
-yq-4.30.4-r2 installed size:
-9360 KiB
-
-yq-4.30.4-r2 license:
-MIT
 
 ```
 
