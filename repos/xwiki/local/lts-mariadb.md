@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:662db41533822820606d3377e3f44aa767a733736167775921522fd5db546880`
-- Created: `2023-04-18T19:04:22.748044285Z`
-- Virtual Size: ~ 1.16 Gb  
+- Image ID: `sha256:e41da5ca32326a2393a21beb7dda84aac691b6e709f48166a61990c140770ea6`
+- Created: `2023-04-26T23:32:59.038013458Z`
+- Virtual Size: ~ 1.17 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-11.0.18+10`
+  - `JAVA_VERSION=jdk-11.0.19+7`
   - `CATALINA_HOME=/usr/local/tomcat`
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
@@ -23,9 +23,9 @@
   - `TOMCAT_MAJOR=9`
   - `TOMCAT_VERSION=9.0.74`
   - `TOMCAT_SHA512=0e173fc2a76404c41c571c50a1956a2b867870d767200bd30f48d89bf04a4b6337f12e6577415da932cd2dfef9b4e9e9fdd52bd873afb06c6258b0e64244a44e`
-  - `XWIKI_VERSION=14.10.8`
-  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/14.10.8`
-  - `XWIKI_DOWNLOAD_SHA256=dec61a1f0f5edf6c414aaa16d41821da25c6508dafcaa25d624a97ae55966b1d`
+  - `XWIKI_VERSION=14.10.9`
+  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/14.10.9`
+  - `XWIKI_DOWNLOAD_SHA256=81594962a2101d54866bccf768ea5b1637f836c57c5b212e221d043e96f5f35d`
   - `MARIADB_JDBC_VERSION=3.1.3`
   - `MARIADB_JDBC_SHA256=11297ee6562426c49c81387c860153cbc131c4c3d042492d4f6d2d97ab3a1ca5`
   - `MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.1.3`
@@ -902,14 +902,9 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`)
 - `GPL-2+`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.72.4-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4-0ubuntu1.dsc' glib2.0_2.72.4-0ubuntu1.dsc 3662 SHA512:b742d664c9062fbb9930c195a75729c6ed0eb1aa255b6027b622e58b76fd7eb2944a0cb32c0cfe30a1f963e975fd4302fc624eaf5db151f6a32aaab89253ee2a
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4.orig.tar.xz' glib2.0_2.72.4.orig.tar.xz 4884256 SHA512:b4e2e0985e2184ee9656c4f1b4e15d8d1264f3d23d31349bc43d92e8432cffa48e1685c40517efb08dc5b57b8285acf65f2747deeb50e50d9cacec7160e7edf8
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4-0ubuntu1.debian.tar.xz' glib2.0_2.72.4-0ubuntu1.debian.tar.xz 104184 SHA512:795e64de1194554bfdfe5eaaf121acda9448950bb52b064adcd70d5f26d4233e8b5dca52089042f31be370c8c33b687d36c5bcb2aa3a7b3aa04a525624c065f0
-```
 
 ### `dpkg` source package: `glibc=2.35-0ubuntu3.1`
 
@@ -2687,20 +2682,25 @@ $ apt-get source -qq --print-uris libxinerama=2:1.1.4-3
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxinerama/libxinerama_1.1.4-3.diff.gz' libxinerama_1.1.4-3.diff.gz 8436 SHA512:614e9deb0cee3578f57315bd06d27bd6df3f5e29b4aaaeaf677b75a136f53f1598451964a59261e430f5ec2dab3177fa9b27e3055801812fce29d2e32ce7ff22
 ```
 
-### `dpkg` source package: `libxml2=2.9.13+dfsg-1ubuntu0.2`
+### `dpkg` source package: `libxml2=2.9.13+dfsg-1ubuntu0.3`
 
 Binary Packages:
 
-- `libxml2:amd64=2.9.13+dfsg-1ubuntu0.2`
+- `libxml2:amd64=2.9.13+dfsg-1ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 
 - `ISC`
 - `MIT-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libxml2=2.9.13+dfsg-1ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg-1ubuntu0.3.dsc' libxml2_2.9.13+dfsg-1ubuntu0.3.dsc 3030 SHA512:db5ebffb5ef705a96bbbc6e6144bf337257acd63f4054884b36d1d78d0e7a69f3cbdd0f26c7af8bb4eba5fc39a091afc904730b72d2176dd58dcd1e997df9847
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg.orig.tar.xz' libxml2_2.9.13+dfsg.orig.tar.xz 2351356 SHA512:6283071de4934c856c7ff5202ac1a2ed5892d7fcde82a364d40c8bc2bf3d3201fbcbb5f6983d8bf6b962026bc216b8182d71efe280f1dcef2931b277314e6e89
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg-1ubuntu0.3.debian.tar.xz' libxml2_2.9.13+dfsg-1ubuntu0.3.debian.tar.xz 36996 SHA512:92f78e32fee091a0f6cbfa9a69addba9aa4e927721f5e7670ac9fd56332050055e6b17fb54d7470e628309866e3a3db993fe70977174d3b05bc4c9e6459ce290
+```
 
 ### `dpkg` source package: `libxrandr=2:1.5.2-1build1`
 
@@ -3128,10 +3128,26 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `libssl3:amd64=3.0.2-0ubuntu1.8`
 - `openssl=3.0.2-0ubuntu1.8`
 
-Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
+Licenses: (parsed from: `/usr/share/doc/openssl/copyright`)
+
+- `Apache-2.0`
+- `Artistic`
+- `GPL-1`
+- `GPL-1+`
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `openssl=3.0.2-0ubuntu1.9`
+
+Binary Packages:
+
+- `libssl3:amd64=3.0.2-0ubuntu1.9`
+
+Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`)
 
 - `Apache-2.0`
 - `Artistic`
@@ -3141,11 +3157,11 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.8
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.8.dsc' openssl_3.0.2-0ubuntu1.8.dsc 2726 SHA512:c875bf656e21afc53474955a51b05d15fc46f8379547e63651e1839bf5265d24983e2270f00910a02735eb5a9d8cebe90800aec55ac9673fc8ce8755e1793dc6
+$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.9
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.9.dsc' openssl_3.0.2-0ubuntu1.9.dsc 2430 SHA512:6dfb33bfa50ad6f04fcd439322715c3675f52931f4c903bf70d5b794e7586c47530c5278a69e7d933723ddfde1bdfe4668fe6e4fab69efed1d1b86cb024e8a01
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.8.debian.tar.xz' openssl_3.0.2-0ubuntu1.8.debian.tar.xz 184100 SHA512:1d5813a8a99c35280a51bc8be36ccdb256824e61e85a3d6c318869415533eb3ea11f6f4770ba33ddcc1b1c3fc7a6217c05bc5a4b74a2bad03a001ef9cfd59568
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.9.debian.tar.xz' openssl_3.0.2-0ubuntu1.9.debian.tar.xz 202260 SHA512:62206338021dc94dd76802a67a52d8efa81044474b8c83acca2f1020778540d86d021700e46f9ebb989337c3c7664964d1015389160dae2ebdb2548434ab2063
 ```
 
 ### `dpkg` source package: `orc=1:0.4.32-2`
