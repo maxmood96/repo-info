@@ -1537,21 +1537,13 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 - `Unicode-DFS-2016`
 - `bzip2-1.0.6`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.74.6-1
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.74.6-1.dsc' glib2.0_2.74.6-1.dsc 3553 SHA256:e552ce968d75fce3a228b48e1b5b402b877910170d7f4d80c3b84491fdcce0b8
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.74.6.orig-unicode-data.tar.xz' glib2.0_2.74.6.orig-unicode-data.tar.xz 267596 SHA256:dabcaff9298aa111a94e580561d2f29371f3e61b356c925ec5e0792df2b11ff2
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.74.6.orig.tar.xz' glib2.0_2.74.6.orig.tar.xz 5217312 SHA256:069cf7e51cd261eb163aaf06c8d1754c6835f31252180aff5814e5afc7757fbc
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.74.6-1.debian.tar.xz' glib2.0_2.74.6-1.debian.tar.xz 116580 SHA256:10d40b6d69ec5aedd2c22544136bc932c7089aa5aeefe9c979a023009cb72bf4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glib2.0/2.74.6-1/
 
-- https://sources.debian.net/src/glib2.0/2.74.6-1/ (for browsing the source)
-- https://sources.debian.net/src/glib2.0/2.74.6-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glib2.0/2.74.6-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.36-8`
 
@@ -3898,20 +3890,13 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=6.1.20-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.20-1.dsc' linux_6.1.20-1.dsc 276923 SHA256:edc6a70de33480241e345bddf89b7e186e2edd7c29a7f9a143780ff5447f5e84
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.20.orig.tar.xz' linux_6.1.20.orig.tar.xz 137291340 SHA256:18dca37b48f4643a62a8bd0adee0888d7b815f75229f90833992b28b6a651427
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.20-1.debian.tar.xz' linux_6.1.20-1.debian.tar.xz 1443728 SHA256:8b0cb71208c0a59a237c573739dc87db07399e9fd3eeefde0a9e4a8bee11e063
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/linux/6.1.20-1/
 
-- https://sources.debian.net/src/linux/6.1.20-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.1.20-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.1.20-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.9.4-1`
 
