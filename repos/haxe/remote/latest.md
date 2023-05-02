@@ -1,7 +1,7 @@
 ## `haxe:latest`
 
 ```console
-$ docker pull haxe@sha256:c51c7235680384b343130f46128fd0a65091f7da7de35918e5fb2f6ee93e4fe8
+$ docker pull haxe@sha256:1be702077e7c412f5b45ed0ba705655102542da8f00f61f3b02835b042f9d79d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -87,14 +87,14 @@ CMD ["haxe"]
 ### `haxe:latest` - linux; arm variant v7
 
 ```console
-$ docker pull haxe@sha256:d6efef4d45c99f79dd24ffb19bac5f8b42fdb5c70deb536cbeb2bb8a380708e5
+$ docker pull haxe@sha256:e556000bfad70e181361814a6d88b95309146a69efeffe1d005f205c250088ed
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **129.8 MB (129759377 bytes)**  
+-	Total Size: **134.7 MB (134699294 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:140df23fcc71f7f9a938692ce4265a66dc131e8e057e92e8ebc6cc8b626128d1`
+-	Image ID: `sha256:a72c279c01e330d107ae732c0b50264c9db27bdb6af968d557783d6cafbad9bb`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
@@ -116,13 +116,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib
 ENV NEKO_VERSION=2.3.0
 # Wed, 12 Apr 2023 16:06:48 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre3-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk2.0-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-3-0/neko-2.3.0.tar.gz" 	&& echo "850e7e317bdaf24ed652efeff89c1cb21380ca19f20e68a296c84f6bad4ee995 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache
-# Wed, 12 Apr 2023 16:06:48 GMT
-ENV HAXE_VERSION=4.3.0
-# Wed, 12 Apr 2023 16:06:48 GMT
+# Tue, 02 May 2023 20:28:53 GMT
+ENV HAXE_VERSION=4.3.1
+# Tue, 02 May 2023 20:28:53 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Wed, 12 Apr 2023 16:09:23 GMT
-RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 				opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 			' 	&& git clone --recursive --depth 1 --branch 4.3.0 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 			&& opam init --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 		&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 			&& eval `opam env --revert` 	&& rm -rf ~/.opam 		&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
-# Wed, 12 Apr 2023 16:09:23 GMT
+# Tue, 02 May 2023 20:31:54 GMT
+RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 				opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 			' 	&& git clone --recursive --depth 1 --branch 4.3.1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 			&& opam init --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 		&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 			&& eval `opam env --revert` 	&& rm -rf ~/.opam 		&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
+# Tue, 02 May 2023 20:31:54 GMT
 CMD ["haxe"]
 ```
 
@@ -151,22 +151,22 @@ CMD ["haxe"]
 		Last Modified: Wed, 12 Apr 2023 16:39:14 GMT  
 		Size: 1.4 MB (1387733 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc8c0f917923bfc4eebbba7306585b3344319ccd21d8a4a757ed0babcee4f360`  
-		Last Modified: Wed, 12 Apr 2023 16:39:16 GMT  
-		Size: 11.4 MB (11363810 bytes)  
+	-	`sha256:2f2a74e2947ac7db245e82f8528024c158fbe05d4dcba8b12e1dd20e17c402d1`  
+		Last Modified: Tue, 02 May 2023 21:00:49 GMT  
+		Size: 16.3 MB (16303727 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `haxe:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:e784c182dcb8864ac69d9d2c2756e42b658706d8456e0220357b365b9711e103
+$ docker pull haxe@sha256:b6f7c6875a73c84f2e92aff1abaaf7f0bc60fe4eede1ac3200bce12d0cd38213
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **140.7 MB (140676155 bytes)**  
+-	Total Size: **146.1 MB (146053206 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b90ff6a5ae550cae51bcdbd672792d110c63ef2812357731ce6a47db655d801a`
+-	Image ID: `sha256:94b6f81a7bf89335373aba423c14064b774ab934400bb2017ed4c4b61897b1cd`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
@@ -188,13 +188,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib
 ENV NEKO_VERSION=2.3.0
 # Wed, 12 Apr 2023 19:52:46 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre3-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk2.0-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-3-0/neko-2.3.0.tar.gz" 	&& echo "850e7e317bdaf24ed652efeff89c1cb21380ca19f20e68a296c84f6bad4ee995 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache
-# Wed, 12 Apr 2023 19:52:46 GMT
-ENV HAXE_VERSION=4.3.0
-# Wed, 12 Apr 2023 19:52:46 GMT
+# Tue, 02 May 2023 20:21:26 GMT
+ENV HAXE_VERSION=4.3.1
+# Tue, 02 May 2023 20:21:26 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Wed, 12 Apr 2023 19:55:12 GMT
-RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 				opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 			' 	&& git clone --recursive --depth 1 --branch 4.3.0 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 			&& opam init --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 		&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 			&& eval `opam env --revert` 	&& rm -rf ~/.opam 		&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
-# Wed, 12 Apr 2023 19:55:13 GMT
+# Tue, 02 May 2023 20:24:13 GMT
+RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 				opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 			' 	&& git clone --recursive --depth 1 --branch 4.3.1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 			&& opam init --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes || make opam_install ) 		&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 			&& eval `opam env --revert` 	&& rm -rf ~/.opam 		&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
+# Tue, 02 May 2023 20:24:13 GMT
 CMD ["haxe"]
 ```
 
@@ -223,9 +223,9 @@ CMD ["haxe"]
 		Last Modified: Wed, 12 Apr 2023 20:46:40 GMT  
 		Size: 1.4 MB (1438422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a62429071ec21946264703da2c6a207f11e3acf629dd7bfef0d006324955462`  
-		Last Modified: Wed, 12 Apr 2023 20:46:42 GMT  
-		Size: 13.5 MB (13469632 bytes)  
+	-	`sha256:1605f8bc7b239992923d89e1d1faa2fcd3c1798e288fd978264944ee4d3cfdf2`  
+		Last Modified: Tue, 02 May 2023 21:05:38 GMT  
+		Size: 18.8 MB (18846683 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `haxe:latest` - windows version 10.0.20348.1668; amd64
