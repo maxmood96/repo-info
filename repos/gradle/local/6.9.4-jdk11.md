@@ -808,14 +808,9 @@ Licenses: (parsed from: `/usr/share/doc/git-lfs/copyright`)
 
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git-lfs=3.0.2-1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/universe/g/git-lfs/git-lfs_3.0.2-1ubuntu0.1.dsc' git-lfs_3.0.2-1ubuntu0.1.dsc 2741 SHA512:bf6b29f383baeb8af223dbedf1b3f2ae4a10ab7866384962d70e28ad581ea26a6cd2fed6cf07cafb15b7b3771f5c3158a62f8df1471a65c379d8b47518ec2946
-'http://archive.ubuntu.com/ubuntu/pool/universe/g/git-lfs/git-lfs_3.0.2.orig.tar.xz' git-lfs_3.0.2.orig.tar.xz 478588 SHA512:5026a08285cd9e8737a27dce836d53e2d14e1c8d8dc5f6664d0f6dbe696a2fdd8f461908fb184b70cf5817bfa86f94c5097d81db7736536e3d5f8661c4ed787b
-'http://archive.ubuntu.com/ubuntu/pool/universe/g/git-lfs/git-lfs_3.0.2-1ubuntu0.1.debian.tar.xz' git-lfs_3.0.2-1ubuntu0.1.debian.tar.xz 4348 SHA512:df84a834c7f89bb0a01433390075d9aed89cc249e6e968564778a9f1fe72b125d7c1653180ef4d0e202265803dd29b0aa518c0066989fcf0720ac6f244ab9ac3
-```
 
 ### `dpkg` source package: `git=1:2.34.1-1ubuntu1.8`
 
@@ -844,14 +839,9 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.34.1-1ubuntu1.8
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.34.1-1ubuntu1.8.dsc' git_2.34.1-1ubuntu1.8.dsc 2927 SHA512:5cb5f16c3158021e6aaabb3370f0f41afaff42d08acbd176c142875a6b00e9985f22f193d9d8da3898731de85f9f7ed5fa17fc7dd180a2170d5bd820061c4407
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.34.1.orig.tar.xz' git_2.34.1.orig.tar.xz 6623760 SHA512:a1a8e9e6f64b1da25508fbd2f783564dcdbe181fb5ff1ebab3bdac6db6094e18acc334479a1abf22ac17ce4f733cc3e10a664db9ab234cd523735a3f027b42db
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.34.1-1ubuntu1.8.debian.tar.xz' git_2.34.1-1ubuntu1.8.debian.tar.xz 753396 SHA512:0e88c6cba4c8d557b47734b979b96090f9dcfa4f35e5234db17a8fe4e24385e5c9b4a4c96d2d4df7afa01beaba88b86e38a6596a69b5cb4706a37961554f5360
-```
 
 ### `dpkg` source package: `glibc=2.35-0ubuntu3.1`
 
