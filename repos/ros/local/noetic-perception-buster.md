@@ -1769,19 +1769,13 @@ Licenses: (parsed from: `/usr/share/doc/distro-info-data/copyright`)
 
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris distro-info-data=0.41+deb10u6
-'http://deb.debian.org/debian-security/pool/updates/main/d/distro-info-data/distro-info-data_0.41%2bdeb10u6.dsc' distro-info-data_0.41+deb10u6.dsc 1070 SHA256:7acbe10651418f0881adbf6348532b7e0b23d5efd01691633d0a4925d5ba3251
-'http://deb.debian.org/debian-security/pool/updates/main/d/distro-info-data/distro-info-data_0.41%2bdeb10u6.tar.xz' distro-info-data_0.41+deb10u6.tar.xz 7516 SHA256:02fd149a39c8fe8da341a02885bd154ae28e92814ddce3cb3f813b9fb37a5275
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/distro-info-data/0.41+deb10u6/
 
-- https://sources.debian.net/src/distro-info-data/0.41+deb10u6/ (for browsing the source)
-- https://sources.debian.net/src/distro-info-data/0.41+deb10u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/distro-info-data/0.41+deb10u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `double-conversion=3.1.0-3`
 
@@ -6572,20 +6566,13 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`, `/usr/share/doc/libx
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.4+dfsg1-7+deb10u5
-'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.4%2bdfsg1-7%2bdeb10u5.dsc' libxml2_2.9.4+dfsg1-7+deb10u5.dsc 3159 SHA256:6303e2cd44297bc4217a383ee9689d21405fe76a55e3ca1117777aa459a890e3
-'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.4%2bdfsg1.orig.tar.xz' libxml2_2.9.4+dfsg1.orig.tar.xz 2446412 SHA256:a74ad55e346aa0b2b41903e66d21f8f3d2a736b3f41e32496376861ab484184e
-'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.4%2bdfsg1-7%2bdeb10u5.debian.tar.xz' libxml2_2.9.4+dfsg1-7+deb10u5.debian.tar.xz 48120 SHA256:4fe41d5913d7c93847d34a575489eccc56cffdb927b2128e26f297885a8f7528
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libxml2/2.9.4+dfsg1-7+deb10u5/
 
-- https://sources.debian.net/src/libxml2/2.9.4+dfsg1-7+deb10u5/ (for browsing the source)
-- https://sources.debian.net/src/libxml2/2.9.4+dfsg1-7+deb10u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxml2/2.9.4+dfsg1-7+deb10u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxmu=2:1.1.2-2`
 
