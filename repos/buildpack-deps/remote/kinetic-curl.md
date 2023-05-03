@@ -1,7 +1,7 @@
 ## `buildpack-deps:kinetic-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:070458606dbc997307494bb256f2e0b9f5e9ceed956f38d8ad1951239e6e7015
+$ docker pull buildpack-deps@sha256:2b22e8275494c15f5e570059d6e2af32e8df31b7f59c40a914aa7950ee14d83b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -15,14 +15,14 @@ $ docker pull buildpack-deps@sha256:070458606dbc997307494bb256f2e0b9f5e9ceed956f
 ### `buildpack-deps:kinetic-curl` - linux; amd64
 
 ```console
-$ docker pull buildpack-deps@sha256:e2baef48d968cfb8eaa239e989fe2f8fa6dc82e8cdb6992d928a7af7e7b97698
+$ docker pull buildpack-deps@sha256:f140e1bca21188a15222c6d0b4f97749b9d8673e42c0409d9b1f1013ab148b2f
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.9 MB (37891873 bytes)**  
+-	Total Size: **37.7 MB (37672729 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0b717cacdac4c1a10af86a1162d9c8fd0db43b12a5aa661a257dad5328881196`
+-	Image ID: `sha256:2817be03fccdc1b5159deb073cda1c678a46d11880c3acc0553d04ade510398a`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -38,10 +38,8 @@ LABEL org.opencontainers.image.version=22.10
 ADD file:ba742ddbebcc8282f5094275969bfb2ff4b2973e385c198b6897bea2a9cb4b85 in / 
 # Thu, 13 Apr 2023 13:03:39 GMT
 CMD ["/bin/bash"]
-# Tue, 18 Apr 2023 01:26:33 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 18 Apr 2023 01:26:47 GMT
-RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
+# Tue, 02 May 2023 23:30:37 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -49,26 +47,22 @@ RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get 
 		Last Modified: Fri, 14 Apr 2023 09:51:30 GMT  
 		Size: 27.5 MB (27482065 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1a21382eec6e41b44d6c1e3ab5faaf936e33dfa42e25ce3b71ba5bee3dc3352`  
-		Last Modified: Tue, 18 Apr 2023 01:35:37 GMT  
-		Size: 6.8 MB (6774413 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:72965a2f51dc0d93d80a13692ed731534afdf361dfbabdd2da5b4ff69faeab0b`  
-		Last Modified: Tue, 18 Apr 2023 01:35:36 GMT  
-		Size: 3.6 MB (3635395 bytes)  
+	-	`sha256:27f1668d3645729ae45f8050cfcb2a85fa59293b2179fee5ecc56693f1ffdc90`  
+		Last Modified: Tue, 02 May 2023 23:44:26 GMT  
+		Size: 10.2 MB (10190664 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:kinetic-curl` - linux; arm variant v7
 
 ```console
-$ docker pull buildpack-deps@sha256:c855f3091d5cd8f298812ef20659893606ad3decf412e045c3baf00844f4c0f1
+$ docker pull buildpack-deps@sha256:dfe2cb51267bca20f5f9e0132bcec7faf309651dd623c63011e5a1b2ee4adef1
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **35.6 MB (35640324 bytes)**  
+-	Total Size: **35.4 MB (35415473 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:93ceadf349fadae92f8b50df62219bf931bb7754516e96a10c2fb6c7d6c89221`
+-	Image ID: `sha256:2073db234c0b66d4f52fd4b7608602ac6f46b52bcde4c9e2c2fd0f00935c6059`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -84,10 +78,8 @@ LABEL org.opencontainers.image.version=22.10
 ADD file:7c943de57b75e515f072a13706b12ee97f17d22a120991f8effbc0615c544253 in / 
 # Thu, 13 Apr 2023 13:10:02 GMT
 CMD ["/bin/bash"]
-# Tue, 18 Apr 2023 01:39:41 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		netbase 		wget 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 18 Apr 2023 01:39:59 GMT
-RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
+# Tue, 02 May 2023 23:24:05 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -95,13 +87,9 @@ RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get 
 		Last Modified: Fri, 14 Apr 2023 09:55:43 GMT  
 		Size: 25.9 MB (25891251 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d51b5e66e30d2da337764807887bf782dbee472da4c68d5d639f11675c2b227`  
-		Last Modified: Tue, 18 Apr 2023 01:50:18 GMT  
-		Size: 5.9 MB (5947326 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:69ebf5377710c036b1bad928498ea4e024c30e8f182174cd7a1a5a982218e210`  
-		Last Modified: Tue, 18 Apr 2023 01:50:17 GMT  
-		Size: 3.8 MB (3801747 bytes)  
+	-	`sha256:7e55f5249b8525f144077fbb31a4099933acecd00e0a8d0080df9d62254b716e`  
+		Last Modified: Tue, 02 May 2023 23:42:50 GMT  
+		Size: 9.5 MB (9524222 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:kinetic-curl` - linux; arm64 variant v8
