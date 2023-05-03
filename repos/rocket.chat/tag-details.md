@@ -17,7 +17,7 @@
 ## `rocket.chat:5`
 
 ```console
-$ docker pull rocket.chat@sha256:f3da6aeee4a3ab8be97a631469843af566de0defb4031c034ae66ca4d47caec3
+$ docker pull rocket.chat@sha256:a243759b48f4edc5a247285795b39c869934f956558ed3bc42bec7709b3d0b2e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -27,71 +27,71 @@ $ docker pull rocket.chat@sha256:f3da6aeee4a3ab8be97a631469843af566de0defb4031c0
 ### `rocket.chat:5` - linux; amd64
 
 ```console
-$ docker pull rocket.chat@sha256:f94799e9f4f027bc261e2d00c4ab534d09138d4cc3e9eb347ef3cffc834fb493
+$ docker pull rocket.chat@sha256:941c8bed8316b09340885e75cb40eed9cdb972babd0114cfdacb295540fcdb66
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **301.7 MB (301721181 bytes)**  
+-	Total Size: **301.7 MB (301721004 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b5bb4a77a3ef75f0a7fd65ebb70c4d21ab5b40106eb28120226fda9accad7400`
+-	Image ID: `sha256:f8bc65e1ff646b6bd1ad6d847d3a7e1be2ec316167a8f6568ff7414e6d0e040b`
 -	Default Command: `["node","main.js"]`
 
 ```dockerfile
-# Wed, 12 Apr 2023 00:20:25 GMT
-ADD file:e614539607055bdbde0cc1a94ef9783fe3627c8553ef1b21071ecb5c27ea27e4 in / 
-# Wed, 12 Apr 2023 00:20:26 GMT
+# Tue, 02 May 2023 23:47:16 GMT
+ADD file:00bc0eda6d2eb0f8ad4abc654f762ffb9ec7e8d1c95d0cc0e7d0cba176d33e27 in / 
+# Tue, 02 May 2023 23:47:17 GMT
 CMD ["bash"]
-# Wed, 12 Apr 2023 09:20:15 GMT
+# Wed, 03 May 2023 21:28:11 GMT
 ENV NODE_ENV=production
-# Wed, 12 Apr 2023 09:24:09 GMT
+# Wed, 03 May 2023 21:29:49 GMT
 ENV NODE_VERSION=14.19.3
-# Wed, 12 Apr 2023 09:31:01 GMT
+# Wed, 03 May 2023 21:30:50 GMT
 RUN ARCH="x64"   && set -eux   && apt-get update && apt-get install -y --no-install-recommends ca-certificates curl wget gnupg dirmngr xz-utils   && rm -rf /var/lib/apt/lists/*   && for key in   4ED778F539E3634C779C87C6D7062848A1AB005C   94AE36675C464D64BAFA68DD7434390BDBE9B9C5   74F12602B6F1C4E913FAA37AD3A89613643B6201   71DCFD284A79C3B38668286BC97EC7A07EDE3FC1   8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600   C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8   C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C   DD8F2338BAE7501E3DD5AC78C273792F7D83545D   A48C2BEE680E841632CD4E44F07496B3EB3C1762   108F52B48DB57BB0CC439B2997B01419BD92F80A   B9E2F5981AA6E0CD28160D9FF13993A75599653C   ; do   gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||   gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner   && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt   && apt-mark auto '.*' > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
-# Wed, 12 Apr 2023 09:31:02 GMT
+# Wed, 03 May 2023 21:30:50 GMT
 RUN groupadd -r rocketchat   && useradd -r -g rocketchat rocketchat   && mkdir -p /app/uploads   && chown rocketchat:rocketchat /app/uploads
-# Wed, 12 Apr 2023 09:31:02 GMT
+# Wed, 03 May 2023 21:30:51 GMT
 VOLUME [/app/uploads]
-# Wed, 12 Apr 2023 09:31:03 GMT
+# Wed, 03 May 2023 21:30:51 GMT
 ENV RC_VERSION=5.4.4
-# Wed, 12 Apr 2023 09:31:03 GMT
+# Wed, 03 May 2023 21:30:51 GMT
 WORKDIR /app
-# Wed, 12 Apr 2023 09:32:05 GMT
+# Wed, 03 May 2023 21:31:52 GMT
 RUN set -eux   && apt-get update   && apt-get install -y --no-install-recommends fontconfig   && aptMark="$(apt-mark showmanual)"   && apt-get install -y --no-install-recommends g++ make python ca-certificates curl gnupg   && rm -rf /var/lib/apt/lists/*   && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 0E163286C20D07B9787EBE9FD7F9D0414FD08104   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/download" -o rocket.chat.tgz   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/asc" -o rocket.chat.tgz.asc   && gpg --batch --verify rocket.chat.tgz.asc rocket.chat.tgz   && tar zxf rocket.chat.tgz   && rm rocket.chat.tgz rocket.chat.tgz.asc   && cd bundle/programs/server   && npm install   && apt-mark auto '.*' > /dev/null   && apt-mark manual $aptMark > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && npm cache clear --force   && chown -R rocketchat:rocketchat /app
-# Wed, 12 Apr 2023 09:32:10 GMT
+# Wed, 03 May 2023 21:31:56 GMT
 USER rocketchat
-# Wed, 12 Apr 2023 09:32:10 GMT
+# Wed, 03 May 2023 21:31:56 GMT
 WORKDIR /app/bundle
-# Wed, 12 Apr 2023 09:32:10 GMT
+# Wed, 03 May 2023 21:31:56 GMT
 ENV DEPLOY_METHOD=docker-official MONGO_URL=mongodb://db:27017/meteor HOME=/tmp PORT=3000 ROOT_URL=http://localhost:3000 Accounts_AvatarStorePath=/app/uploads
-# Wed, 12 Apr 2023 09:32:10 GMT
+# Wed, 03 May 2023 21:31:56 GMT
 EXPOSE 3000
-# Wed, 12 Apr 2023 09:32:10 GMT
+# Wed, 03 May 2023 21:31:56 GMT
 CMD ["node" "main.js"]
 ```
 
 -	Layers:
-	-	`sha256:9fbefa3370776b7ec7633cf07efc14cc24e0c0cd53893ad0e7e3f44ffdc1bedb`  
-		Last Modified: Wed, 12 Apr 2023 00:24:22 GMT  
-		Size: 27.1 MB (27138920 bytes)  
+	-	`sha256:25ff99d195814e98b7ef4708519299d9f177def504f9b718c61eb82c7f0b34be`  
+		Last Modified: Tue, 02 May 2023 23:51:01 GMT  
+		Size: 27.1 MB (27138959 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3c78b9daa83b6c52b159e9ed474546ee7afbf020a0e69618680a9f794030ba2`  
-		Last Modified: Wed, 12 Apr 2023 09:35:01 GMT  
-		Size: 36.0 MB (36024898 bytes)  
+	-	`sha256:1574ecfa49b56ab1e593682145bd89d0e941331828505dc27ca39f1970f50d2c`  
+		Last Modified: Wed, 03 May 2023 21:35:42 GMT  
+		Size: 36.0 MB (36024903 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44134bec7730a0370eec9c26b579c5c522de83ad4c3cdb99b75da2574f9a7f04`  
-		Last Modified: Wed, 12 Apr 2023 09:34:55 GMT  
-		Size: 1.8 KB (1809 bytes)  
+	-	`sha256:4fc8248bdba08eabe07d4f039a1eaa9e4bb8e56f29f863be8a3f72c04555b1e4`  
+		Last Modified: Wed, 03 May 2023 21:35:37 GMT  
+		Size: 1.8 KB (1807 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:339bc22b5e1c771a9963e68d02419ca148a03cc5cb86fba6ba1d4c4507879d54`  
-		Last Modified: Wed, 12 Apr 2023 09:35:38 GMT  
-		Size: 238.6 MB (238555554 bytes)  
+	-	`sha256:70a24670081ccbec7a8c03243b7cbfe17d380946f6d42ca4468388413e181852`  
+		Last Modified: Wed, 03 May 2023 21:36:18 GMT  
+		Size: 238.6 MB (238555335 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rocket.chat:5.2`
 
 ```console
-$ docker pull rocket.chat@sha256:fc734c3e62084d01b7ad7dc2bd48e841c798200060526caecad42c6b04cd61b8
+$ docker pull rocket.chat@sha256:5c989e74560bf68b4810672fbb8bddd51d0b71bca24a172ff3b3256357d1f575
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -101,71 +101,71 @@ $ docker pull rocket.chat@sha256:fc734c3e62084d01b7ad7dc2bd48e841c798200060526ca
 ### `rocket.chat:5.2` - linux; amd64
 
 ```console
-$ docker pull rocket.chat@sha256:0eb5891db81b6bc9892c9a5b3b363ca2e17c284977dc43a44150cf5a77a629fa
+$ docker pull rocket.chat@sha256:46d1535a759da395bfbd4266b335e66647313e16bed222e00905e7f20b79edf3
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **291.1 MB (291097018 bytes)**  
+-	Total Size: **291.1 MB (291096721 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7c4a77536432cb9e90cc6865acb26078ac3acc213479ed96cb6a9d878f6cda9c`
+-	Image ID: `sha256:6ea5e101dbe6640d6b71de389b0b7a16a40decf7b22a467e38039a127121af62`
 -	Default Command: `["node","main.js"]`
 
 ```dockerfile
-# Wed, 12 Apr 2023 00:20:25 GMT
-ADD file:e614539607055bdbde0cc1a94ef9783fe3627c8553ef1b21071ecb5c27ea27e4 in / 
-# Wed, 12 Apr 2023 00:20:26 GMT
+# Tue, 02 May 2023 23:47:16 GMT
+ADD file:00bc0eda6d2eb0f8ad4abc654f762ffb9ec7e8d1c95d0cc0e7d0cba176d33e27 in / 
+# Tue, 02 May 2023 23:47:17 GMT
 CMD ["bash"]
-# Wed, 12 Apr 2023 09:20:15 GMT
+# Wed, 03 May 2023 21:28:11 GMT
 ENV NODE_ENV=production
-# Wed, 12 Apr 2023 09:24:09 GMT
+# Wed, 03 May 2023 21:29:49 GMT
 ENV NODE_VERSION=14.19.3
-# Wed, 12 Apr 2023 09:31:01 GMT
+# Wed, 03 May 2023 21:30:50 GMT
 RUN ARCH="x64"   && set -eux   && apt-get update && apt-get install -y --no-install-recommends ca-certificates curl wget gnupg dirmngr xz-utils   && rm -rf /var/lib/apt/lists/*   && for key in   4ED778F539E3634C779C87C6D7062848A1AB005C   94AE36675C464D64BAFA68DD7434390BDBE9B9C5   74F12602B6F1C4E913FAA37AD3A89613643B6201   71DCFD284A79C3B38668286BC97EC7A07EDE3FC1   8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600   C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8   C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C   DD8F2338BAE7501E3DD5AC78C273792F7D83545D   A48C2BEE680E841632CD4E44F07496B3EB3C1762   108F52B48DB57BB0CC439B2997B01419BD92F80A   B9E2F5981AA6E0CD28160D9FF13993A75599653C   ; do   gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||   gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner   && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt   && apt-mark auto '.*' > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
-# Wed, 12 Apr 2023 09:31:02 GMT
+# Wed, 03 May 2023 21:30:50 GMT
 RUN groupadd -r rocketchat   && useradd -r -g rocketchat rocketchat   && mkdir -p /app/uploads   && chown rocketchat:rocketchat /app/uploads
-# Wed, 12 Apr 2023 09:31:02 GMT
+# Wed, 03 May 2023 21:30:51 GMT
 VOLUME [/app/uploads]
-# Wed, 12 Apr 2023 09:33:40 GMT
+# Wed, 03 May 2023 21:33:21 GMT
 ENV RC_VERSION=5.2.2
-# Wed, 12 Apr 2023 09:33:40 GMT
+# Wed, 03 May 2023 21:33:21 GMT
 WORKDIR /app
-# Wed, 12 Apr 2023 09:34:35 GMT
+# Wed, 03 May 2023 21:34:20 GMT
 RUN set -eux   && apt-get update   && apt-get install -y --no-install-recommends fontconfig   && aptMark="$(apt-mark showmanual)"   && apt-get install -y --no-install-recommends g++ make python ca-certificates curl gnupg   && rm -rf /var/lib/apt/lists/*   && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 0E163286C20D07B9787EBE9FD7F9D0414FD08104   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/download" -o rocket.chat.tgz   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/asc" -o rocket.chat.tgz.asc   && gpg --batch --verify rocket.chat.tgz.asc rocket.chat.tgz   && tar zxf rocket.chat.tgz   && rm rocket.chat.tgz rocket.chat.tgz.asc   && cd bundle/programs/server   && npm install   && apt-mark auto '.*' > /dev/null   && apt-mark manual $aptMark > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && npm cache clear --force   && chown -R rocketchat:rocketchat /app
-# Wed, 12 Apr 2023 09:34:39 GMT
+# Wed, 03 May 2023 21:34:24 GMT
 USER rocketchat
-# Wed, 12 Apr 2023 09:34:39 GMT
+# Wed, 03 May 2023 21:34:24 GMT
 WORKDIR /app/bundle
-# Wed, 12 Apr 2023 09:34:39 GMT
+# Wed, 03 May 2023 21:34:24 GMT
 ENV DEPLOY_METHOD=docker-official MONGO_URL=mongodb://db:27017/meteor HOME=/tmp PORT=3000 ROOT_URL=http://localhost:3000 Accounts_AvatarStorePath=/app/uploads
-# Wed, 12 Apr 2023 09:34:39 GMT
+# Wed, 03 May 2023 21:34:24 GMT
 EXPOSE 3000
-# Wed, 12 Apr 2023 09:34:39 GMT
+# Wed, 03 May 2023 21:34:24 GMT
 CMD ["node" "main.js"]
 ```
 
 -	Layers:
-	-	`sha256:9fbefa3370776b7ec7633cf07efc14cc24e0c0cd53893ad0e7e3f44ffdc1bedb`  
-		Last Modified: Wed, 12 Apr 2023 00:24:22 GMT  
-		Size: 27.1 MB (27138920 bytes)  
+	-	`sha256:25ff99d195814e98b7ef4708519299d9f177def504f9b718c61eb82c7f0b34be`  
+		Last Modified: Tue, 02 May 2023 23:51:01 GMT  
+		Size: 27.1 MB (27138959 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3c78b9daa83b6c52b159e9ed474546ee7afbf020a0e69618680a9f794030ba2`  
-		Last Modified: Wed, 12 Apr 2023 09:35:01 GMT  
-		Size: 36.0 MB (36024898 bytes)  
+	-	`sha256:1574ecfa49b56ab1e593682145bd89d0e941331828505dc27ca39f1970f50d2c`  
+		Last Modified: Wed, 03 May 2023 21:35:42 GMT  
+		Size: 36.0 MB (36024903 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44134bec7730a0370eec9c26b579c5c522de83ad4c3cdb99b75da2574f9a7f04`  
-		Last Modified: Wed, 12 Apr 2023 09:34:55 GMT  
-		Size: 1.8 KB (1809 bytes)  
+	-	`sha256:4fc8248bdba08eabe07d4f039a1eaa9e4bb8e56f29f863be8a3f72c04555b1e4`  
+		Last Modified: Wed, 03 May 2023 21:35:37 GMT  
+		Size: 1.8 KB (1807 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba0f3f65fc15c47f2bf3b1f9a27a0dc201046254e750d9611056c82e053c0b44`  
-		Last Modified: Wed, 12 Apr 2023 09:37:18 GMT  
-		Size: 227.9 MB (227931391 bytes)  
+	-	`sha256:49b046b434a9086a792172373e599ae5e0dc25bb59120b4cee976eac5e54a146`  
+		Last Modified: Wed, 03 May 2023 21:37:56 GMT  
+		Size: 227.9 MB (227931052 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rocket.chat:5.2.2`
 
 ```console
-$ docker pull rocket.chat@sha256:fc734c3e62084d01b7ad7dc2bd48e841c798200060526caecad42c6b04cd61b8
+$ docker pull rocket.chat@sha256:5c989e74560bf68b4810672fbb8bddd51d0b71bca24a172ff3b3256357d1f575
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -175,71 +175,71 @@ $ docker pull rocket.chat@sha256:fc734c3e62084d01b7ad7dc2bd48e841c798200060526ca
 ### `rocket.chat:5.2.2` - linux; amd64
 
 ```console
-$ docker pull rocket.chat@sha256:0eb5891db81b6bc9892c9a5b3b363ca2e17c284977dc43a44150cf5a77a629fa
+$ docker pull rocket.chat@sha256:46d1535a759da395bfbd4266b335e66647313e16bed222e00905e7f20b79edf3
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **291.1 MB (291097018 bytes)**  
+-	Total Size: **291.1 MB (291096721 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7c4a77536432cb9e90cc6865acb26078ac3acc213479ed96cb6a9d878f6cda9c`
+-	Image ID: `sha256:6ea5e101dbe6640d6b71de389b0b7a16a40decf7b22a467e38039a127121af62`
 -	Default Command: `["node","main.js"]`
 
 ```dockerfile
-# Wed, 12 Apr 2023 00:20:25 GMT
-ADD file:e614539607055bdbde0cc1a94ef9783fe3627c8553ef1b21071ecb5c27ea27e4 in / 
-# Wed, 12 Apr 2023 00:20:26 GMT
+# Tue, 02 May 2023 23:47:16 GMT
+ADD file:00bc0eda6d2eb0f8ad4abc654f762ffb9ec7e8d1c95d0cc0e7d0cba176d33e27 in / 
+# Tue, 02 May 2023 23:47:17 GMT
 CMD ["bash"]
-# Wed, 12 Apr 2023 09:20:15 GMT
+# Wed, 03 May 2023 21:28:11 GMT
 ENV NODE_ENV=production
-# Wed, 12 Apr 2023 09:24:09 GMT
+# Wed, 03 May 2023 21:29:49 GMT
 ENV NODE_VERSION=14.19.3
-# Wed, 12 Apr 2023 09:31:01 GMT
+# Wed, 03 May 2023 21:30:50 GMT
 RUN ARCH="x64"   && set -eux   && apt-get update && apt-get install -y --no-install-recommends ca-certificates curl wget gnupg dirmngr xz-utils   && rm -rf /var/lib/apt/lists/*   && for key in   4ED778F539E3634C779C87C6D7062848A1AB005C   94AE36675C464D64BAFA68DD7434390BDBE9B9C5   74F12602B6F1C4E913FAA37AD3A89613643B6201   71DCFD284A79C3B38668286BC97EC7A07EDE3FC1   8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600   C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8   C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C   DD8F2338BAE7501E3DD5AC78C273792F7D83545D   A48C2BEE680E841632CD4E44F07496B3EB3C1762   108F52B48DB57BB0CC439B2997B01419BD92F80A   B9E2F5981AA6E0CD28160D9FF13993A75599653C   ; do   gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||   gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner   && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt   && apt-mark auto '.*' > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
-# Wed, 12 Apr 2023 09:31:02 GMT
+# Wed, 03 May 2023 21:30:50 GMT
 RUN groupadd -r rocketchat   && useradd -r -g rocketchat rocketchat   && mkdir -p /app/uploads   && chown rocketchat:rocketchat /app/uploads
-# Wed, 12 Apr 2023 09:31:02 GMT
+# Wed, 03 May 2023 21:30:51 GMT
 VOLUME [/app/uploads]
-# Wed, 12 Apr 2023 09:33:40 GMT
+# Wed, 03 May 2023 21:33:21 GMT
 ENV RC_VERSION=5.2.2
-# Wed, 12 Apr 2023 09:33:40 GMT
+# Wed, 03 May 2023 21:33:21 GMT
 WORKDIR /app
-# Wed, 12 Apr 2023 09:34:35 GMT
+# Wed, 03 May 2023 21:34:20 GMT
 RUN set -eux   && apt-get update   && apt-get install -y --no-install-recommends fontconfig   && aptMark="$(apt-mark showmanual)"   && apt-get install -y --no-install-recommends g++ make python ca-certificates curl gnupg   && rm -rf /var/lib/apt/lists/*   && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 0E163286C20D07B9787EBE9FD7F9D0414FD08104   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/download" -o rocket.chat.tgz   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/asc" -o rocket.chat.tgz.asc   && gpg --batch --verify rocket.chat.tgz.asc rocket.chat.tgz   && tar zxf rocket.chat.tgz   && rm rocket.chat.tgz rocket.chat.tgz.asc   && cd bundle/programs/server   && npm install   && apt-mark auto '.*' > /dev/null   && apt-mark manual $aptMark > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && npm cache clear --force   && chown -R rocketchat:rocketchat /app
-# Wed, 12 Apr 2023 09:34:39 GMT
+# Wed, 03 May 2023 21:34:24 GMT
 USER rocketchat
-# Wed, 12 Apr 2023 09:34:39 GMT
+# Wed, 03 May 2023 21:34:24 GMT
 WORKDIR /app/bundle
-# Wed, 12 Apr 2023 09:34:39 GMT
+# Wed, 03 May 2023 21:34:24 GMT
 ENV DEPLOY_METHOD=docker-official MONGO_URL=mongodb://db:27017/meteor HOME=/tmp PORT=3000 ROOT_URL=http://localhost:3000 Accounts_AvatarStorePath=/app/uploads
-# Wed, 12 Apr 2023 09:34:39 GMT
+# Wed, 03 May 2023 21:34:24 GMT
 EXPOSE 3000
-# Wed, 12 Apr 2023 09:34:39 GMT
+# Wed, 03 May 2023 21:34:24 GMT
 CMD ["node" "main.js"]
 ```
 
 -	Layers:
-	-	`sha256:9fbefa3370776b7ec7633cf07efc14cc24e0c0cd53893ad0e7e3f44ffdc1bedb`  
-		Last Modified: Wed, 12 Apr 2023 00:24:22 GMT  
-		Size: 27.1 MB (27138920 bytes)  
+	-	`sha256:25ff99d195814e98b7ef4708519299d9f177def504f9b718c61eb82c7f0b34be`  
+		Last Modified: Tue, 02 May 2023 23:51:01 GMT  
+		Size: 27.1 MB (27138959 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3c78b9daa83b6c52b159e9ed474546ee7afbf020a0e69618680a9f794030ba2`  
-		Last Modified: Wed, 12 Apr 2023 09:35:01 GMT  
-		Size: 36.0 MB (36024898 bytes)  
+	-	`sha256:1574ecfa49b56ab1e593682145bd89d0e941331828505dc27ca39f1970f50d2c`  
+		Last Modified: Wed, 03 May 2023 21:35:42 GMT  
+		Size: 36.0 MB (36024903 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44134bec7730a0370eec9c26b579c5c522de83ad4c3cdb99b75da2574f9a7f04`  
-		Last Modified: Wed, 12 Apr 2023 09:34:55 GMT  
-		Size: 1.8 KB (1809 bytes)  
+	-	`sha256:4fc8248bdba08eabe07d4f039a1eaa9e4bb8e56f29f863be8a3f72c04555b1e4`  
+		Last Modified: Wed, 03 May 2023 21:35:37 GMT  
+		Size: 1.8 KB (1807 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba0f3f65fc15c47f2bf3b1f9a27a0dc201046254e750d9611056c82e053c0b44`  
-		Last Modified: Wed, 12 Apr 2023 09:37:18 GMT  
-		Size: 227.9 MB (227931391 bytes)  
+	-	`sha256:49b046b434a9086a792172373e599ae5e0dc25bb59120b4cee976eac5e54a146`  
+		Last Modified: Wed, 03 May 2023 21:37:56 GMT  
+		Size: 227.9 MB (227931052 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rocket.chat:5.3`
 
 ```console
-$ docker pull rocket.chat@sha256:fde5fa276cc56976a3afb5d651e7cf84e2ec5379f8291c8a048e134c084cc68b
+$ docker pull rocket.chat@sha256:3a1bb4194c3ab9d445390d01b841c7f28b51f7f7398d2633aded845a1b276e86
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -249,71 +249,71 @@ $ docker pull rocket.chat@sha256:fde5fa276cc56976a3afb5d651e7cf84e2ec5379f8291c8
 ### `rocket.chat:5.3` - linux; amd64
 
 ```console
-$ docker pull rocket.chat@sha256:5c634610acd3374c9e800253e59084d24f9c1b5611f1a274c0be0a613660192d
+$ docker pull rocket.chat@sha256:56ec8be18c2c55f067697c3463233733e2991907fc98c889a262386fbfbed1be
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **292.5 MB (292520663 bytes)**  
+-	Total Size: **292.5 MB (292520412 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:af130823bd27381ead1c79093ccf0d58e767859f7e1e5ffd02d4b389c9083b53`
+-	Image ID: `sha256:bb5d12af873b5c943506894970ed8a391225c64aa131f998876cad60f6a708d6`
 -	Default Command: `["node","main.js"]`
 
 ```dockerfile
-# Wed, 12 Apr 2023 00:20:25 GMT
-ADD file:e614539607055bdbde0cc1a94ef9783fe3627c8553ef1b21071ecb5c27ea27e4 in / 
-# Wed, 12 Apr 2023 00:20:26 GMT
+# Tue, 02 May 2023 23:47:16 GMT
+ADD file:00bc0eda6d2eb0f8ad4abc654f762ffb9ec7e8d1c95d0cc0e7d0cba176d33e27 in / 
+# Tue, 02 May 2023 23:47:17 GMT
 CMD ["bash"]
-# Wed, 12 Apr 2023 09:20:15 GMT
+# Wed, 03 May 2023 21:28:11 GMT
 ENV NODE_ENV=production
-# Wed, 12 Apr 2023 09:24:09 GMT
+# Wed, 03 May 2023 21:29:49 GMT
 ENV NODE_VERSION=14.19.3
-# Wed, 12 Apr 2023 09:31:01 GMT
+# Wed, 03 May 2023 21:30:50 GMT
 RUN ARCH="x64"   && set -eux   && apt-get update && apt-get install -y --no-install-recommends ca-certificates curl wget gnupg dirmngr xz-utils   && rm -rf /var/lib/apt/lists/*   && for key in   4ED778F539E3634C779C87C6D7062848A1AB005C   94AE36675C464D64BAFA68DD7434390BDBE9B9C5   74F12602B6F1C4E913FAA37AD3A89613643B6201   71DCFD284A79C3B38668286BC97EC7A07EDE3FC1   8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600   C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8   C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C   DD8F2338BAE7501E3DD5AC78C273792F7D83545D   A48C2BEE680E841632CD4E44F07496B3EB3C1762   108F52B48DB57BB0CC439B2997B01419BD92F80A   B9E2F5981AA6E0CD28160D9FF13993A75599653C   ; do   gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||   gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner   && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt   && apt-mark auto '.*' > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
-# Wed, 12 Apr 2023 09:31:02 GMT
+# Wed, 03 May 2023 21:30:50 GMT
 RUN groupadd -r rocketchat   && useradd -r -g rocketchat rocketchat   && mkdir -p /app/uploads   && chown rocketchat:rocketchat /app/uploads
-# Wed, 12 Apr 2023 09:31:02 GMT
+# Wed, 03 May 2023 21:30:51 GMT
 VOLUME [/app/uploads]
-# Wed, 12 Apr 2023 09:32:17 GMT
+# Wed, 03 May 2023 21:32:12 GMT
 ENV RC_VERSION=5.3.6
-# Wed, 12 Apr 2023 09:32:17 GMT
+# Wed, 03 May 2023 21:32:12 GMT
 WORKDIR /app
-# Wed, 12 Apr 2023 09:33:22 GMT
+# Wed, 03 May 2023 21:33:12 GMT
 RUN set -eux   && apt-get update   && apt-get install -y --no-install-recommends fontconfig   && aptMark="$(apt-mark showmanual)"   && apt-get install -y --no-install-recommends g++ make python ca-certificates curl gnupg   && rm -rf /var/lib/apt/lists/*   && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 0E163286C20D07B9787EBE9FD7F9D0414FD08104   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/download" -o rocket.chat.tgz   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/asc" -o rocket.chat.tgz.asc   && gpg --batch --verify rocket.chat.tgz.asc rocket.chat.tgz   && tar zxf rocket.chat.tgz   && rm rocket.chat.tgz rocket.chat.tgz.asc   && cd bundle/programs/server   && npm install   && apt-mark auto '.*' > /dev/null   && apt-mark manual $aptMark > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && npm cache clear --force   && chown -R rocketchat:rocketchat /app
-# Wed, 12 Apr 2023 09:33:26 GMT
+# Wed, 03 May 2023 21:33:14 GMT
 USER rocketchat
-# Wed, 12 Apr 2023 09:33:26 GMT
+# Wed, 03 May 2023 21:33:14 GMT
 WORKDIR /app/bundle
-# Wed, 12 Apr 2023 09:33:26 GMT
+# Wed, 03 May 2023 21:33:15 GMT
 ENV DEPLOY_METHOD=docker-official MONGO_URL=mongodb://db:27017/meteor HOME=/tmp PORT=3000 ROOT_URL=http://localhost:3000 Accounts_AvatarStorePath=/app/uploads
-# Wed, 12 Apr 2023 09:33:26 GMT
+# Wed, 03 May 2023 21:33:15 GMT
 EXPOSE 3000
-# Wed, 12 Apr 2023 09:33:26 GMT
+# Wed, 03 May 2023 21:33:15 GMT
 CMD ["node" "main.js"]
 ```
 
 -	Layers:
-	-	`sha256:9fbefa3370776b7ec7633cf07efc14cc24e0c0cd53893ad0e7e3f44ffdc1bedb`  
-		Last Modified: Wed, 12 Apr 2023 00:24:22 GMT  
-		Size: 27.1 MB (27138920 bytes)  
+	-	`sha256:25ff99d195814e98b7ef4708519299d9f177def504f9b718c61eb82c7f0b34be`  
+		Last Modified: Tue, 02 May 2023 23:51:01 GMT  
+		Size: 27.1 MB (27138959 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3c78b9daa83b6c52b159e9ed474546ee7afbf020a0e69618680a9f794030ba2`  
-		Last Modified: Wed, 12 Apr 2023 09:35:01 GMT  
-		Size: 36.0 MB (36024898 bytes)  
+	-	`sha256:1574ecfa49b56ab1e593682145bd89d0e941331828505dc27ca39f1970f50d2c`  
+		Last Modified: Wed, 03 May 2023 21:35:42 GMT  
+		Size: 36.0 MB (36024903 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44134bec7730a0370eec9c26b579c5c522de83ad4c3cdb99b75da2574f9a7f04`  
-		Last Modified: Wed, 12 Apr 2023 09:34:55 GMT  
-		Size: 1.8 KB (1809 bytes)  
+	-	`sha256:4fc8248bdba08eabe07d4f039a1eaa9e4bb8e56f29f863be8a3f72c04555b1e4`  
+		Last Modified: Wed, 03 May 2023 21:35:37 GMT  
+		Size: 1.8 KB (1807 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d1b4fd1acf0b97e3f62e6a6372eccb4d6f3f297db3e9ba8bf8acc2e1286d2b4a`  
-		Last Modified: Wed, 12 Apr 2023 09:36:29 GMT  
-		Size: 229.4 MB (229355036 bytes)  
+	-	`sha256:3d9862e98ede92a51324fa63e1b1af96e022bd71f0bfa126e91dba753e237c58`  
+		Last Modified: Wed, 03 May 2023 21:37:08 GMT  
+		Size: 229.4 MB (229354743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rocket.chat:5.3.6`
 
 ```console
-$ docker pull rocket.chat@sha256:fde5fa276cc56976a3afb5d651e7cf84e2ec5379f8291c8a048e134c084cc68b
+$ docker pull rocket.chat@sha256:3a1bb4194c3ab9d445390d01b841c7f28b51f7f7398d2633aded845a1b276e86
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -323,71 +323,71 @@ $ docker pull rocket.chat@sha256:fde5fa276cc56976a3afb5d651e7cf84e2ec5379f8291c8
 ### `rocket.chat:5.3.6` - linux; amd64
 
 ```console
-$ docker pull rocket.chat@sha256:5c634610acd3374c9e800253e59084d24f9c1b5611f1a274c0be0a613660192d
+$ docker pull rocket.chat@sha256:56ec8be18c2c55f067697c3463233733e2991907fc98c889a262386fbfbed1be
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **292.5 MB (292520663 bytes)**  
+-	Total Size: **292.5 MB (292520412 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:af130823bd27381ead1c79093ccf0d58e767859f7e1e5ffd02d4b389c9083b53`
+-	Image ID: `sha256:bb5d12af873b5c943506894970ed8a391225c64aa131f998876cad60f6a708d6`
 -	Default Command: `["node","main.js"]`
 
 ```dockerfile
-# Wed, 12 Apr 2023 00:20:25 GMT
-ADD file:e614539607055bdbde0cc1a94ef9783fe3627c8553ef1b21071ecb5c27ea27e4 in / 
-# Wed, 12 Apr 2023 00:20:26 GMT
+# Tue, 02 May 2023 23:47:16 GMT
+ADD file:00bc0eda6d2eb0f8ad4abc654f762ffb9ec7e8d1c95d0cc0e7d0cba176d33e27 in / 
+# Tue, 02 May 2023 23:47:17 GMT
 CMD ["bash"]
-# Wed, 12 Apr 2023 09:20:15 GMT
+# Wed, 03 May 2023 21:28:11 GMT
 ENV NODE_ENV=production
-# Wed, 12 Apr 2023 09:24:09 GMT
+# Wed, 03 May 2023 21:29:49 GMT
 ENV NODE_VERSION=14.19.3
-# Wed, 12 Apr 2023 09:31:01 GMT
+# Wed, 03 May 2023 21:30:50 GMT
 RUN ARCH="x64"   && set -eux   && apt-get update && apt-get install -y --no-install-recommends ca-certificates curl wget gnupg dirmngr xz-utils   && rm -rf /var/lib/apt/lists/*   && for key in   4ED778F539E3634C779C87C6D7062848A1AB005C   94AE36675C464D64BAFA68DD7434390BDBE9B9C5   74F12602B6F1C4E913FAA37AD3A89613643B6201   71DCFD284A79C3B38668286BC97EC7A07EDE3FC1   8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600   C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8   C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C   DD8F2338BAE7501E3DD5AC78C273792F7D83545D   A48C2BEE680E841632CD4E44F07496B3EB3C1762   108F52B48DB57BB0CC439B2997B01419BD92F80A   B9E2F5981AA6E0CD28160D9FF13993A75599653C   ; do   gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||   gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner   && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt   && apt-mark auto '.*' > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
-# Wed, 12 Apr 2023 09:31:02 GMT
+# Wed, 03 May 2023 21:30:50 GMT
 RUN groupadd -r rocketchat   && useradd -r -g rocketchat rocketchat   && mkdir -p /app/uploads   && chown rocketchat:rocketchat /app/uploads
-# Wed, 12 Apr 2023 09:31:02 GMT
+# Wed, 03 May 2023 21:30:51 GMT
 VOLUME [/app/uploads]
-# Wed, 12 Apr 2023 09:32:17 GMT
+# Wed, 03 May 2023 21:32:12 GMT
 ENV RC_VERSION=5.3.6
-# Wed, 12 Apr 2023 09:32:17 GMT
+# Wed, 03 May 2023 21:32:12 GMT
 WORKDIR /app
-# Wed, 12 Apr 2023 09:33:22 GMT
+# Wed, 03 May 2023 21:33:12 GMT
 RUN set -eux   && apt-get update   && apt-get install -y --no-install-recommends fontconfig   && aptMark="$(apt-mark showmanual)"   && apt-get install -y --no-install-recommends g++ make python ca-certificates curl gnupg   && rm -rf /var/lib/apt/lists/*   && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 0E163286C20D07B9787EBE9FD7F9D0414FD08104   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/download" -o rocket.chat.tgz   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/asc" -o rocket.chat.tgz.asc   && gpg --batch --verify rocket.chat.tgz.asc rocket.chat.tgz   && tar zxf rocket.chat.tgz   && rm rocket.chat.tgz rocket.chat.tgz.asc   && cd bundle/programs/server   && npm install   && apt-mark auto '.*' > /dev/null   && apt-mark manual $aptMark > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && npm cache clear --force   && chown -R rocketchat:rocketchat /app
-# Wed, 12 Apr 2023 09:33:26 GMT
+# Wed, 03 May 2023 21:33:14 GMT
 USER rocketchat
-# Wed, 12 Apr 2023 09:33:26 GMT
+# Wed, 03 May 2023 21:33:14 GMT
 WORKDIR /app/bundle
-# Wed, 12 Apr 2023 09:33:26 GMT
+# Wed, 03 May 2023 21:33:15 GMT
 ENV DEPLOY_METHOD=docker-official MONGO_URL=mongodb://db:27017/meteor HOME=/tmp PORT=3000 ROOT_URL=http://localhost:3000 Accounts_AvatarStorePath=/app/uploads
-# Wed, 12 Apr 2023 09:33:26 GMT
+# Wed, 03 May 2023 21:33:15 GMT
 EXPOSE 3000
-# Wed, 12 Apr 2023 09:33:26 GMT
+# Wed, 03 May 2023 21:33:15 GMT
 CMD ["node" "main.js"]
 ```
 
 -	Layers:
-	-	`sha256:9fbefa3370776b7ec7633cf07efc14cc24e0c0cd53893ad0e7e3f44ffdc1bedb`  
-		Last Modified: Wed, 12 Apr 2023 00:24:22 GMT  
-		Size: 27.1 MB (27138920 bytes)  
+	-	`sha256:25ff99d195814e98b7ef4708519299d9f177def504f9b718c61eb82c7f0b34be`  
+		Last Modified: Tue, 02 May 2023 23:51:01 GMT  
+		Size: 27.1 MB (27138959 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3c78b9daa83b6c52b159e9ed474546ee7afbf020a0e69618680a9f794030ba2`  
-		Last Modified: Wed, 12 Apr 2023 09:35:01 GMT  
-		Size: 36.0 MB (36024898 bytes)  
+	-	`sha256:1574ecfa49b56ab1e593682145bd89d0e941331828505dc27ca39f1970f50d2c`  
+		Last Modified: Wed, 03 May 2023 21:35:42 GMT  
+		Size: 36.0 MB (36024903 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44134bec7730a0370eec9c26b579c5c522de83ad4c3cdb99b75da2574f9a7f04`  
-		Last Modified: Wed, 12 Apr 2023 09:34:55 GMT  
-		Size: 1.8 KB (1809 bytes)  
+	-	`sha256:4fc8248bdba08eabe07d4f039a1eaa9e4bb8e56f29f863be8a3f72c04555b1e4`  
+		Last Modified: Wed, 03 May 2023 21:35:37 GMT  
+		Size: 1.8 KB (1807 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d1b4fd1acf0b97e3f62e6a6372eccb4d6f3f297db3e9ba8bf8acc2e1286d2b4a`  
-		Last Modified: Wed, 12 Apr 2023 09:36:29 GMT  
-		Size: 229.4 MB (229355036 bytes)  
+	-	`sha256:3d9862e98ede92a51324fa63e1b1af96e022bd71f0bfa126e91dba753e237c58`  
+		Last Modified: Wed, 03 May 2023 21:37:08 GMT  
+		Size: 229.4 MB (229354743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rocket.chat:5.4`
 
 ```console
-$ docker pull rocket.chat@sha256:f3da6aeee4a3ab8be97a631469843af566de0defb4031c034ae66ca4d47caec3
+$ docker pull rocket.chat@sha256:a243759b48f4edc5a247285795b39c869934f956558ed3bc42bec7709b3d0b2e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -397,71 +397,71 @@ $ docker pull rocket.chat@sha256:f3da6aeee4a3ab8be97a631469843af566de0defb4031c0
 ### `rocket.chat:5.4` - linux; amd64
 
 ```console
-$ docker pull rocket.chat@sha256:f94799e9f4f027bc261e2d00c4ab534d09138d4cc3e9eb347ef3cffc834fb493
+$ docker pull rocket.chat@sha256:941c8bed8316b09340885e75cb40eed9cdb972babd0114cfdacb295540fcdb66
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **301.7 MB (301721181 bytes)**  
+-	Total Size: **301.7 MB (301721004 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b5bb4a77a3ef75f0a7fd65ebb70c4d21ab5b40106eb28120226fda9accad7400`
+-	Image ID: `sha256:f8bc65e1ff646b6bd1ad6d847d3a7e1be2ec316167a8f6568ff7414e6d0e040b`
 -	Default Command: `["node","main.js"]`
 
 ```dockerfile
-# Wed, 12 Apr 2023 00:20:25 GMT
-ADD file:e614539607055bdbde0cc1a94ef9783fe3627c8553ef1b21071ecb5c27ea27e4 in / 
-# Wed, 12 Apr 2023 00:20:26 GMT
+# Tue, 02 May 2023 23:47:16 GMT
+ADD file:00bc0eda6d2eb0f8ad4abc654f762ffb9ec7e8d1c95d0cc0e7d0cba176d33e27 in / 
+# Tue, 02 May 2023 23:47:17 GMT
 CMD ["bash"]
-# Wed, 12 Apr 2023 09:20:15 GMT
+# Wed, 03 May 2023 21:28:11 GMT
 ENV NODE_ENV=production
-# Wed, 12 Apr 2023 09:24:09 GMT
+# Wed, 03 May 2023 21:29:49 GMT
 ENV NODE_VERSION=14.19.3
-# Wed, 12 Apr 2023 09:31:01 GMT
+# Wed, 03 May 2023 21:30:50 GMT
 RUN ARCH="x64"   && set -eux   && apt-get update && apt-get install -y --no-install-recommends ca-certificates curl wget gnupg dirmngr xz-utils   && rm -rf /var/lib/apt/lists/*   && for key in   4ED778F539E3634C779C87C6D7062848A1AB005C   94AE36675C464D64BAFA68DD7434390BDBE9B9C5   74F12602B6F1C4E913FAA37AD3A89613643B6201   71DCFD284A79C3B38668286BC97EC7A07EDE3FC1   8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600   C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8   C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C   DD8F2338BAE7501E3DD5AC78C273792F7D83545D   A48C2BEE680E841632CD4E44F07496B3EB3C1762   108F52B48DB57BB0CC439B2997B01419BD92F80A   B9E2F5981AA6E0CD28160D9FF13993A75599653C   ; do   gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||   gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner   && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt   && apt-mark auto '.*' > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
-# Wed, 12 Apr 2023 09:31:02 GMT
+# Wed, 03 May 2023 21:30:50 GMT
 RUN groupadd -r rocketchat   && useradd -r -g rocketchat rocketchat   && mkdir -p /app/uploads   && chown rocketchat:rocketchat /app/uploads
-# Wed, 12 Apr 2023 09:31:02 GMT
+# Wed, 03 May 2023 21:30:51 GMT
 VOLUME [/app/uploads]
-# Wed, 12 Apr 2023 09:31:03 GMT
+# Wed, 03 May 2023 21:30:51 GMT
 ENV RC_VERSION=5.4.4
-# Wed, 12 Apr 2023 09:31:03 GMT
+# Wed, 03 May 2023 21:30:51 GMT
 WORKDIR /app
-# Wed, 12 Apr 2023 09:32:05 GMT
+# Wed, 03 May 2023 21:31:52 GMT
 RUN set -eux   && apt-get update   && apt-get install -y --no-install-recommends fontconfig   && aptMark="$(apt-mark showmanual)"   && apt-get install -y --no-install-recommends g++ make python ca-certificates curl gnupg   && rm -rf /var/lib/apt/lists/*   && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 0E163286C20D07B9787EBE9FD7F9D0414FD08104   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/download" -o rocket.chat.tgz   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/asc" -o rocket.chat.tgz.asc   && gpg --batch --verify rocket.chat.tgz.asc rocket.chat.tgz   && tar zxf rocket.chat.tgz   && rm rocket.chat.tgz rocket.chat.tgz.asc   && cd bundle/programs/server   && npm install   && apt-mark auto '.*' > /dev/null   && apt-mark manual $aptMark > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && npm cache clear --force   && chown -R rocketchat:rocketchat /app
-# Wed, 12 Apr 2023 09:32:10 GMT
+# Wed, 03 May 2023 21:31:56 GMT
 USER rocketchat
-# Wed, 12 Apr 2023 09:32:10 GMT
+# Wed, 03 May 2023 21:31:56 GMT
 WORKDIR /app/bundle
-# Wed, 12 Apr 2023 09:32:10 GMT
+# Wed, 03 May 2023 21:31:56 GMT
 ENV DEPLOY_METHOD=docker-official MONGO_URL=mongodb://db:27017/meteor HOME=/tmp PORT=3000 ROOT_URL=http://localhost:3000 Accounts_AvatarStorePath=/app/uploads
-# Wed, 12 Apr 2023 09:32:10 GMT
+# Wed, 03 May 2023 21:31:56 GMT
 EXPOSE 3000
-# Wed, 12 Apr 2023 09:32:10 GMT
+# Wed, 03 May 2023 21:31:56 GMT
 CMD ["node" "main.js"]
 ```
 
 -	Layers:
-	-	`sha256:9fbefa3370776b7ec7633cf07efc14cc24e0c0cd53893ad0e7e3f44ffdc1bedb`  
-		Last Modified: Wed, 12 Apr 2023 00:24:22 GMT  
-		Size: 27.1 MB (27138920 bytes)  
+	-	`sha256:25ff99d195814e98b7ef4708519299d9f177def504f9b718c61eb82c7f0b34be`  
+		Last Modified: Tue, 02 May 2023 23:51:01 GMT  
+		Size: 27.1 MB (27138959 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3c78b9daa83b6c52b159e9ed474546ee7afbf020a0e69618680a9f794030ba2`  
-		Last Modified: Wed, 12 Apr 2023 09:35:01 GMT  
-		Size: 36.0 MB (36024898 bytes)  
+	-	`sha256:1574ecfa49b56ab1e593682145bd89d0e941331828505dc27ca39f1970f50d2c`  
+		Last Modified: Wed, 03 May 2023 21:35:42 GMT  
+		Size: 36.0 MB (36024903 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44134bec7730a0370eec9c26b579c5c522de83ad4c3cdb99b75da2574f9a7f04`  
-		Last Modified: Wed, 12 Apr 2023 09:34:55 GMT  
-		Size: 1.8 KB (1809 bytes)  
+	-	`sha256:4fc8248bdba08eabe07d4f039a1eaa9e4bb8e56f29f863be8a3f72c04555b1e4`  
+		Last Modified: Wed, 03 May 2023 21:35:37 GMT  
+		Size: 1.8 KB (1807 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:339bc22b5e1c771a9963e68d02419ca148a03cc5cb86fba6ba1d4c4507879d54`  
-		Last Modified: Wed, 12 Apr 2023 09:35:38 GMT  
-		Size: 238.6 MB (238555554 bytes)  
+	-	`sha256:70a24670081ccbec7a8c03243b7cbfe17d380946f6d42ca4468388413e181852`  
+		Last Modified: Wed, 03 May 2023 21:36:18 GMT  
+		Size: 238.6 MB (238555335 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rocket.chat:5.4.4`
 
 ```console
-$ docker pull rocket.chat@sha256:f3da6aeee4a3ab8be97a631469843af566de0defb4031c034ae66ca4d47caec3
+$ docker pull rocket.chat@sha256:a243759b48f4edc5a247285795b39c869934f956558ed3bc42bec7709b3d0b2e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -471,71 +471,71 @@ $ docker pull rocket.chat@sha256:f3da6aeee4a3ab8be97a631469843af566de0defb4031c0
 ### `rocket.chat:5.4.4` - linux; amd64
 
 ```console
-$ docker pull rocket.chat@sha256:f94799e9f4f027bc261e2d00c4ab534d09138d4cc3e9eb347ef3cffc834fb493
+$ docker pull rocket.chat@sha256:941c8bed8316b09340885e75cb40eed9cdb972babd0114cfdacb295540fcdb66
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **301.7 MB (301721181 bytes)**  
+-	Total Size: **301.7 MB (301721004 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b5bb4a77a3ef75f0a7fd65ebb70c4d21ab5b40106eb28120226fda9accad7400`
+-	Image ID: `sha256:f8bc65e1ff646b6bd1ad6d847d3a7e1be2ec316167a8f6568ff7414e6d0e040b`
 -	Default Command: `["node","main.js"]`
 
 ```dockerfile
-# Wed, 12 Apr 2023 00:20:25 GMT
-ADD file:e614539607055bdbde0cc1a94ef9783fe3627c8553ef1b21071ecb5c27ea27e4 in / 
-# Wed, 12 Apr 2023 00:20:26 GMT
+# Tue, 02 May 2023 23:47:16 GMT
+ADD file:00bc0eda6d2eb0f8ad4abc654f762ffb9ec7e8d1c95d0cc0e7d0cba176d33e27 in / 
+# Tue, 02 May 2023 23:47:17 GMT
 CMD ["bash"]
-# Wed, 12 Apr 2023 09:20:15 GMT
+# Wed, 03 May 2023 21:28:11 GMT
 ENV NODE_ENV=production
-# Wed, 12 Apr 2023 09:24:09 GMT
+# Wed, 03 May 2023 21:29:49 GMT
 ENV NODE_VERSION=14.19.3
-# Wed, 12 Apr 2023 09:31:01 GMT
+# Wed, 03 May 2023 21:30:50 GMT
 RUN ARCH="x64"   && set -eux   && apt-get update && apt-get install -y --no-install-recommends ca-certificates curl wget gnupg dirmngr xz-utils   && rm -rf /var/lib/apt/lists/*   && for key in   4ED778F539E3634C779C87C6D7062848A1AB005C   94AE36675C464D64BAFA68DD7434390BDBE9B9C5   74F12602B6F1C4E913FAA37AD3A89613643B6201   71DCFD284A79C3B38668286BC97EC7A07EDE3FC1   8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600   C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8   C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C   DD8F2338BAE7501E3DD5AC78C273792F7D83545D   A48C2BEE680E841632CD4E44F07496B3EB3C1762   108F52B48DB57BB0CC439B2997B01419BD92F80A   B9E2F5981AA6E0CD28160D9FF13993A75599653C   ; do   gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||   gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner   && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt   && apt-mark auto '.*' > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
-# Wed, 12 Apr 2023 09:31:02 GMT
+# Wed, 03 May 2023 21:30:50 GMT
 RUN groupadd -r rocketchat   && useradd -r -g rocketchat rocketchat   && mkdir -p /app/uploads   && chown rocketchat:rocketchat /app/uploads
-# Wed, 12 Apr 2023 09:31:02 GMT
+# Wed, 03 May 2023 21:30:51 GMT
 VOLUME [/app/uploads]
-# Wed, 12 Apr 2023 09:31:03 GMT
+# Wed, 03 May 2023 21:30:51 GMT
 ENV RC_VERSION=5.4.4
-# Wed, 12 Apr 2023 09:31:03 GMT
+# Wed, 03 May 2023 21:30:51 GMT
 WORKDIR /app
-# Wed, 12 Apr 2023 09:32:05 GMT
+# Wed, 03 May 2023 21:31:52 GMT
 RUN set -eux   && apt-get update   && apt-get install -y --no-install-recommends fontconfig   && aptMark="$(apt-mark showmanual)"   && apt-get install -y --no-install-recommends g++ make python ca-certificates curl gnupg   && rm -rf /var/lib/apt/lists/*   && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 0E163286C20D07B9787EBE9FD7F9D0414FD08104   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/download" -o rocket.chat.tgz   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/asc" -o rocket.chat.tgz.asc   && gpg --batch --verify rocket.chat.tgz.asc rocket.chat.tgz   && tar zxf rocket.chat.tgz   && rm rocket.chat.tgz rocket.chat.tgz.asc   && cd bundle/programs/server   && npm install   && apt-mark auto '.*' > /dev/null   && apt-mark manual $aptMark > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && npm cache clear --force   && chown -R rocketchat:rocketchat /app
-# Wed, 12 Apr 2023 09:32:10 GMT
+# Wed, 03 May 2023 21:31:56 GMT
 USER rocketchat
-# Wed, 12 Apr 2023 09:32:10 GMT
+# Wed, 03 May 2023 21:31:56 GMT
 WORKDIR /app/bundle
-# Wed, 12 Apr 2023 09:32:10 GMT
+# Wed, 03 May 2023 21:31:56 GMT
 ENV DEPLOY_METHOD=docker-official MONGO_URL=mongodb://db:27017/meteor HOME=/tmp PORT=3000 ROOT_URL=http://localhost:3000 Accounts_AvatarStorePath=/app/uploads
-# Wed, 12 Apr 2023 09:32:10 GMT
+# Wed, 03 May 2023 21:31:56 GMT
 EXPOSE 3000
-# Wed, 12 Apr 2023 09:32:10 GMT
+# Wed, 03 May 2023 21:31:56 GMT
 CMD ["node" "main.js"]
 ```
 
 -	Layers:
-	-	`sha256:9fbefa3370776b7ec7633cf07efc14cc24e0c0cd53893ad0e7e3f44ffdc1bedb`  
-		Last Modified: Wed, 12 Apr 2023 00:24:22 GMT  
-		Size: 27.1 MB (27138920 bytes)  
+	-	`sha256:25ff99d195814e98b7ef4708519299d9f177def504f9b718c61eb82c7f0b34be`  
+		Last Modified: Tue, 02 May 2023 23:51:01 GMT  
+		Size: 27.1 MB (27138959 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3c78b9daa83b6c52b159e9ed474546ee7afbf020a0e69618680a9f794030ba2`  
-		Last Modified: Wed, 12 Apr 2023 09:35:01 GMT  
-		Size: 36.0 MB (36024898 bytes)  
+	-	`sha256:1574ecfa49b56ab1e593682145bd89d0e941331828505dc27ca39f1970f50d2c`  
+		Last Modified: Wed, 03 May 2023 21:35:42 GMT  
+		Size: 36.0 MB (36024903 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44134bec7730a0370eec9c26b579c5c522de83ad4c3cdb99b75da2574f9a7f04`  
-		Last Modified: Wed, 12 Apr 2023 09:34:55 GMT  
-		Size: 1.8 KB (1809 bytes)  
+	-	`sha256:4fc8248bdba08eabe07d4f039a1eaa9e4bb8e56f29f863be8a3f72c04555b1e4`  
+		Last Modified: Wed, 03 May 2023 21:35:37 GMT  
+		Size: 1.8 KB (1807 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:339bc22b5e1c771a9963e68d02419ca148a03cc5cb86fba6ba1d4c4507879d54`  
-		Last Modified: Wed, 12 Apr 2023 09:35:38 GMT  
-		Size: 238.6 MB (238555554 bytes)  
+	-	`sha256:70a24670081ccbec7a8c03243b7cbfe17d380946f6d42ca4468388413e181852`  
+		Last Modified: Wed, 03 May 2023 21:36:18 GMT  
+		Size: 238.6 MB (238555335 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rocket.chat:6`
 
 ```console
-$ docker pull rocket.chat@sha256:6bd1b5b2560ef97e950b55a7b25a5f9bda71e69bdf5336c19736de3693d613ae
+$ docker pull rocket.chat@sha256:45be3914c428ad41f10770e94231d18afccca3b54e1e8d9e6c22fc78c1d4e319
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -545,71 +545,71 @@ $ docker pull rocket.chat@sha256:6bd1b5b2560ef97e950b55a7b25a5f9bda71e69bdf5336c
 ### `rocket.chat:6` - linux; amd64
 
 ```console
-$ docker pull rocket.chat@sha256:72ac8f55b28b1127240631d1b65345c5bc0982f60343253b1c2cead0d32f44ce
+$ docker pull rocket.chat@sha256:829529e26f74c06971436768ee4288ba2f862640495523003a99a92ae568c3f6
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **328.6 MB (328588655 bytes)**  
+-	Total Size: **328.6 MB (328585313 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:60e0827c80370a2dec42dd139bc79657057d8a42c905bc36f12cab6b5b3e2b9a`
+-	Image ID: `sha256:94f15d7758e20f842c7610cc37b55d8560ea9543473f8be5bccf2c0487f183cc`
 -	Default Command: `["node","main.js"]`
 
 ```dockerfile
-# Thu, 23 Mar 2023 01:30:50 GMT
-ADD file:52316aa7d631242cd16337be337e57187ef07d3965e6284321fbdcd5b4f92b64 in / 
-# Thu, 23 Mar 2023 01:30:51 GMT
+# Tue, 02 May 2023 23:47:16 GMT
+ADD file:00bc0eda6d2eb0f8ad4abc654f762ffb9ec7e8d1c95d0cc0e7d0cba176d33e27 in / 
+# Tue, 02 May 2023 23:47:17 GMT
 CMD ["bash"]
-# Thu, 23 Mar 2023 14:26:05 GMT
+# Wed, 03 May 2023 21:28:11 GMT
 ENV NODE_ENV=production
-# Thu, 23 Mar 2023 14:26:05 GMT
+# Wed, 03 May 2023 21:28:11 GMT
 ENV NODE_VERSION=14.21.2
-# Thu, 23 Mar 2023 14:26:32 GMT
+# Wed, 03 May 2023 21:28:35 GMT
 RUN ARCH="x64"   && set -eux   && apt-get update && apt-get install -y --no-install-recommends ca-certificates curl wget gnupg dirmngr xz-utils   && rm -rf /var/lib/apt/lists/*   && for key in   4ED778F539E3634C779C87C6D7062848A1AB005C   94AE36675C464D64BAFA68DD7434390BDBE9B9C5   74F12602B6F1C4E913FAA37AD3A89613643B6201   71DCFD284A79C3B38668286BC97EC7A07EDE3FC1   8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600   C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8   C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C   DD8F2338BAE7501E3DD5AC78C273792F7D83545D   A48C2BEE680E841632CD4E44F07496B3EB3C1762   108F52B48DB57BB0CC439B2997B01419BD92F80A   B9E2F5981AA6E0CD28160D9FF13993A75599653C   ; do   gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||   gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner   && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt   && apt-mark auto '.*' > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
-# Thu, 23 Mar 2023 14:26:33 GMT
+# Wed, 03 May 2023 21:28:36 GMT
 RUN groupadd -r rocketchat   && useradd -r -g rocketchat rocketchat   && mkdir -p /app/uploads   && chown rocketchat:rocketchat /app/uploads
-# Thu, 23 Mar 2023 14:26:33 GMT
+# Wed, 03 May 2023 21:28:36 GMT
 VOLUME [/app/uploads]
-# Thu, 23 Mar 2023 14:26:33 GMT
+# Wed, 03 May 2023 21:28:36 GMT
 ENV RC_VERSION=6.0.0
-# Thu, 23 Mar 2023 14:26:33 GMT
+# Wed, 03 May 2023 21:28:37 GMT
 WORKDIR /app
-# Thu, 23 Mar 2023 14:27:37 GMT
+# Wed, 03 May 2023 21:29:40 GMT
 RUN set -eux   && apt-get update   && apt-get install -y --no-install-recommends fontconfig   && aptMark="$(apt-mark showmanual)"   && apt-get install -y --no-install-recommends g++ make python ca-certificates curl gnupg   && rm -rf /var/lib/apt/lists/*   && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 0E163286C20D07B9787EBE9FD7F9D0414FD08104   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/download" -o rocket.chat.tgz   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/asc" -o rocket.chat.tgz.asc   && gpg --batch --verify rocket.chat.tgz.asc rocket.chat.tgz   && tar zxf rocket.chat.tgz   && rm rocket.chat.tgz rocket.chat.tgz.asc   && cd bundle/programs/server   && npm install   && apt-mark auto '.*' > /dev/null   && apt-mark manual $aptMark > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && npm cache clear --force   && chown -R rocketchat:rocketchat /app
-# Thu, 23 Mar 2023 14:27:42 GMT
+# Wed, 03 May 2023 21:29:45 GMT
 USER rocketchat
-# Thu, 23 Mar 2023 14:27:42 GMT
+# Wed, 03 May 2023 21:29:45 GMT
 WORKDIR /app/bundle
-# Thu, 23 Mar 2023 14:27:42 GMT
+# Wed, 03 May 2023 21:29:45 GMT
 ENV DEPLOY_METHOD=docker-official MONGO_URL=mongodb://db:27017/meteor HOME=/tmp PORT=3000 ROOT_URL=http://localhost:3000 Accounts_AvatarStorePath=/app/uploads
-# Thu, 23 Mar 2023 14:27:42 GMT
+# Wed, 03 May 2023 21:29:45 GMT
 EXPOSE 3000
-# Thu, 23 Mar 2023 14:27:43 GMT
+# Wed, 03 May 2023 21:29:45 GMT
 CMD ["node" "main.js"]
 ```
 
 -	Layers:
-	-	`sha256:3689b8de819b48387712c6d4d62d26a52a04c9e88afc68fb9d1dbe48bfa9e21d`  
-		Last Modified: Thu, 23 Mar 2023 01:35:01 GMT  
-		Size: 27.1 MB (27139869 bytes)  
+	-	`sha256:25ff99d195814e98b7ef4708519299d9f177def504f9b718c61eb82c7f0b34be`  
+		Last Modified: Tue, 02 May 2023 23:51:01 GMT  
+		Size: 27.1 MB (27138959 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3d5d6107d13f4d3fa311be3fd8b4c84d87d0d4e12db98ed9f69090ea4695103`  
-		Last Modified: Thu, 23 Mar 2023 14:32:24 GMT  
-		Size: 36.5 MB (36530320 bytes)  
+	-	`sha256:ecec545e08243c793623b2a17ed743348ed8a21e369c54c6e6c26b72e5356bc4`  
+		Last Modified: Wed, 03 May 2023 21:34:44 GMT  
+		Size: 36.5 MB (36530293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7952477fc62bfa28f202f397d037524d9759b29fb0b74373348043e417bb190e`  
-		Last Modified: Thu, 23 Mar 2023 14:32:18 GMT  
-		Size: 1.8 KB (1808 bytes)  
+	-	`sha256:b20c1bb3996637d86b1edefe5f83e13bed32c1ec76722fd9aafc66a3cb297fa2`  
+		Last Modified: Wed, 03 May 2023 21:34:38 GMT  
+		Size: 1.8 KB (1811 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8fa82ea067a1dd1490d447f883916348e1ae8b37f81cca72a9da0dce12764197`  
-		Last Modified: Thu, 23 Mar 2023 14:33:06 GMT  
-		Size: 264.9 MB (264916658 bytes)  
+	-	`sha256:ed7406f10807e0eb602ffd374d027f306901ed1506bb20625eacdbda29c1cb5f`  
+		Last Modified: Wed, 03 May 2023 21:35:25 GMT  
+		Size: 264.9 MB (264914250 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rocket.chat:6.0`
 
 ```console
-$ docker pull rocket.chat@sha256:6bd1b5b2560ef97e950b55a7b25a5f9bda71e69bdf5336c19736de3693d613ae
+$ docker pull rocket.chat@sha256:45be3914c428ad41f10770e94231d18afccca3b54e1e8d9e6c22fc78c1d4e319
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -619,71 +619,71 @@ $ docker pull rocket.chat@sha256:6bd1b5b2560ef97e950b55a7b25a5f9bda71e69bdf5336c
 ### `rocket.chat:6.0` - linux; amd64
 
 ```console
-$ docker pull rocket.chat@sha256:72ac8f55b28b1127240631d1b65345c5bc0982f60343253b1c2cead0d32f44ce
+$ docker pull rocket.chat@sha256:829529e26f74c06971436768ee4288ba2f862640495523003a99a92ae568c3f6
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **328.6 MB (328588655 bytes)**  
+-	Total Size: **328.6 MB (328585313 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:60e0827c80370a2dec42dd139bc79657057d8a42c905bc36f12cab6b5b3e2b9a`
+-	Image ID: `sha256:94f15d7758e20f842c7610cc37b55d8560ea9543473f8be5bccf2c0487f183cc`
 -	Default Command: `["node","main.js"]`
 
 ```dockerfile
-# Thu, 23 Mar 2023 01:30:50 GMT
-ADD file:52316aa7d631242cd16337be337e57187ef07d3965e6284321fbdcd5b4f92b64 in / 
-# Thu, 23 Mar 2023 01:30:51 GMT
+# Tue, 02 May 2023 23:47:16 GMT
+ADD file:00bc0eda6d2eb0f8ad4abc654f762ffb9ec7e8d1c95d0cc0e7d0cba176d33e27 in / 
+# Tue, 02 May 2023 23:47:17 GMT
 CMD ["bash"]
-# Thu, 23 Mar 2023 14:26:05 GMT
+# Wed, 03 May 2023 21:28:11 GMT
 ENV NODE_ENV=production
-# Thu, 23 Mar 2023 14:26:05 GMT
+# Wed, 03 May 2023 21:28:11 GMT
 ENV NODE_VERSION=14.21.2
-# Thu, 23 Mar 2023 14:26:32 GMT
+# Wed, 03 May 2023 21:28:35 GMT
 RUN ARCH="x64"   && set -eux   && apt-get update && apt-get install -y --no-install-recommends ca-certificates curl wget gnupg dirmngr xz-utils   && rm -rf /var/lib/apt/lists/*   && for key in   4ED778F539E3634C779C87C6D7062848A1AB005C   94AE36675C464D64BAFA68DD7434390BDBE9B9C5   74F12602B6F1C4E913FAA37AD3A89613643B6201   71DCFD284A79C3B38668286BC97EC7A07EDE3FC1   8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600   C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8   C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C   DD8F2338BAE7501E3DD5AC78C273792F7D83545D   A48C2BEE680E841632CD4E44F07496B3EB3C1762   108F52B48DB57BB0CC439B2997B01419BD92F80A   B9E2F5981AA6E0CD28160D9FF13993A75599653C   ; do   gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||   gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner   && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt   && apt-mark auto '.*' > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
-# Thu, 23 Mar 2023 14:26:33 GMT
+# Wed, 03 May 2023 21:28:36 GMT
 RUN groupadd -r rocketchat   && useradd -r -g rocketchat rocketchat   && mkdir -p /app/uploads   && chown rocketchat:rocketchat /app/uploads
-# Thu, 23 Mar 2023 14:26:33 GMT
+# Wed, 03 May 2023 21:28:36 GMT
 VOLUME [/app/uploads]
-# Thu, 23 Mar 2023 14:26:33 GMT
+# Wed, 03 May 2023 21:28:36 GMT
 ENV RC_VERSION=6.0.0
-# Thu, 23 Mar 2023 14:26:33 GMT
+# Wed, 03 May 2023 21:28:37 GMT
 WORKDIR /app
-# Thu, 23 Mar 2023 14:27:37 GMT
+# Wed, 03 May 2023 21:29:40 GMT
 RUN set -eux   && apt-get update   && apt-get install -y --no-install-recommends fontconfig   && aptMark="$(apt-mark showmanual)"   && apt-get install -y --no-install-recommends g++ make python ca-certificates curl gnupg   && rm -rf /var/lib/apt/lists/*   && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 0E163286C20D07B9787EBE9FD7F9D0414FD08104   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/download" -o rocket.chat.tgz   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/asc" -o rocket.chat.tgz.asc   && gpg --batch --verify rocket.chat.tgz.asc rocket.chat.tgz   && tar zxf rocket.chat.tgz   && rm rocket.chat.tgz rocket.chat.tgz.asc   && cd bundle/programs/server   && npm install   && apt-mark auto '.*' > /dev/null   && apt-mark manual $aptMark > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && npm cache clear --force   && chown -R rocketchat:rocketchat /app
-# Thu, 23 Mar 2023 14:27:42 GMT
+# Wed, 03 May 2023 21:29:45 GMT
 USER rocketchat
-# Thu, 23 Mar 2023 14:27:42 GMT
+# Wed, 03 May 2023 21:29:45 GMT
 WORKDIR /app/bundle
-# Thu, 23 Mar 2023 14:27:42 GMT
+# Wed, 03 May 2023 21:29:45 GMT
 ENV DEPLOY_METHOD=docker-official MONGO_URL=mongodb://db:27017/meteor HOME=/tmp PORT=3000 ROOT_URL=http://localhost:3000 Accounts_AvatarStorePath=/app/uploads
-# Thu, 23 Mar 2023 14:27:42 GMT
+# Wed, 03 May 2023 21:29:45 GMT
 EXPOSE 3000
-# Thu, 23 Mar 2023 14:27:43 GMT
+# Wed, 03 May 2023 21:29:45 GMT
 CMD ["node" "main.js"]
 ```
 
 -	Layers:
-	-	`sha256:3689b8de819b48387712c6d4d62d26a52a04c9e88afc68fb9d1dbe48bfa9e21d`  
-		Last Modified: Thu, 23 Mar 2023 01:35:01 GMT  
-		Size: 27.1 MB (27139869 bytes)  
+	-	`sha256:25ff99d195814e98b7ef4708519299d9f177def504f9b718c61eb82c7f0b34be`  
+		Last Modified: Tue, 02 May 2023 23:51:01 GMT  
+		Size: 27.1 MB (27138959 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3d5d6107d13f4d3fa311be3fd8b4c84d87d0d4e12db98ed9f69090ea4695103`  
-		Last Modified: Thu, 23 Mar 2023 14:32:24 GMT  
-		Size: 36.5 MB (36530320 bytes)  
+	-	`sha256:ecec545e08243c793623b2a17ed743348ed8a21e369c54c6e6c26b72e5356bc4`  
+		Last Modified: Wed, 03 May 2023 21:34:44 GMT  
+		Size: 36.5 MB (36530293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7952477fc62bfa28f202f397d037524d9759b29fb0b74373348043e417bb190e`  
-		Last Modified: Thu, 23 Mar 2023 14:32:18 GMT  
-		Size: 1.8 KB (1808 bytes)  
+	-	`sha256:b20c1bb3996637d86b1edefe5f83e13bed32c1ec76722fd9aafc66a3cb297fa2`  
+		Last Modified: Wed, 03 May 2023 21:34:38 GMT  
+		Size: 1.8 KB (1811 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8fa82ea067a1dd1490d447f883916348e1ae8b37f81cca72a9da0dce12764197`  
-		Last Modified: Thu, 23 Mar 2023 14:33:06 GMT  
-		Size: 264.9 MB (264916658 bytes)  
+	-	`sha256:ed7406f10807e0eb602ffd374d027f306901ed1506bb20625eacdbda29c1cb5f`  
+		Last Modified: Wed, 03 May 2023 21:35:25 GMT  
+		Size: 264.9 MB (264914250 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rocket.chat:6.0.0`
 
 ```console
-$ docker pull rocket.chat@sha256:6bd1b5b2560ef97e950b55a7b25a5f9bda71e69bdf5336c19736de3693d613ae
+$ docker pull rocket.chat@sha256:45be3914c428ad41f10770e94231d18afccca3b54e1e8d9e6c22fc78c1d4e319
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -693,71 +693,71 @@ $ docker pull rocket.chat@sha256:6bd1b5b2560ef97e950b55a7b25a5f9bda71e69bdf5336c
 ### `rocket.chat:6.0.0` - linux; amd64
 
 ```console
-$ docker pull rocket.chat@sha256:72ac8f55b28b1127240631d1b65345c5bc0982f60343253b1c2cead0d32f44ce
+$ docker pull rocket.chat@sha256:829529e26f74c06971436768ee4288ba2f862640495523003a99a92ae568c3f6
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **328.6 MB (328588655 bytes)**  
+-	Total Size: **328.6 MB (328585313 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:60e0827c80370a2dec42dd139bc79657057d8a42c905bc36f12cab6b5b3e2b9a`
+-	Image ID: `sha256:94f15d7758e20f842c7610cc37b55d8560ea9543473f8be5bccf2c0487f183cc`
 -	Default Command: `["node","main.js"]`
 
 ```dockerfile
-# Thu, 23 Mar 2023 01:30:50 GMT
-ADD file:52316aa7d631242cd16337be337e57187ef07d3965e6284321fbdcd5b4f92b64 in / 
-# Thu, 23 Mar 2023 01:30:51 GMT
+# Tue, 02 May 2023 23:47:16 GMT
+ADD file:00bc0eda6d2eb0f8ad4abc654f762ffb9ec7e8d1c95d0cc0e7d0cba176d33e27 in / 
+# Tue, 02 May 2023 23:47:17 GMT
 CMD ["bash"]
-# Thu, 23 Mar 2023 14:26:05 GMT
+# Wed, 03 May 2023 21:28:11 GMT
 ENV NODE_ENV=production
-# Thu, 23 Mar 2023 14:26:05 GMT
+# Wed, 03 May 2023 21:28:11 GMT
 ENV NODE_VERSION=14.21.2
-# Thu, 23 Mar 2023 14:26:32 GMT
+# Wed, 03 May 2023 21:28:35 GMT
 RUN ARCH="x64"   && set -eux   && apt-get update && apt-get install -y --no-install-recommends ca-certificates curl wget gnupg dirmngr xz-utils   && rm -rf /var/lib/apt/lists/*   && for key in   4ED778F539E3634C779C87C6D7062848A1AB005C   94AE36675C464D64BAFA68DD7434390BDBE9B9C5   74F12602B6F1C4E913FAA37AD3A89613643B6201   71DCFD284A79C3B38668286BC97EC7A07EDE3FC1   8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600   C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8   C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C   DD8F2338BAE7501E3DD5AC78C273792F7D83545D   A48C2BEE680E841632CD4E44F07496B3EB3C1762   108F52B48DB57BB0CC439B2997B01419BD92F80A   B9E2F5981AA6E0CD28160D9FF13993A75599653C   ; do   gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||   gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner   && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt   && apt-mark auto '.*' > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
-# Thu, 23 Mar 2023 14:26:33 GMT
+# Wed, 03 May 2023 21:28:36 GMT
 RUN groupadd -r rocketchat   && useradd -r -g rocketchat rocketchat   && mkdir -p /app/uploads   && chown rocketchat:rocketchat /app/uploads
-# Thu, 23 Mar 2023 14:26:33 GMT
+# Wed, 03 May 2023 21:28:36 GMT
 VOLUME [/app/uploads]
-# Thu, 23 Mar 2023 14:26:33 GMT
+# Wed, 03 May 2023 21:28:36 GMT
 ENV RC_VERSION=6.0.0
-# Thu, 23 Mar 2023 14:26:33 GMT
+# Wed, 03 May 2023 21:28:37 GMT
 WORKDIR /app
-# Thu, 23 Mar 2023 14:27:37 GMT
+# Wed, 03 May 2023 21:29:40 GMT
 RUN set -eux   && apt-get update   && apt-get install -y --no-install-recommends fontconfig   && aptMark="$(apt-mark showmanual)"   && apt-get install -y --no-install-recommends g++ make python ca-certificates curl gnupg   && rm -rf /var/lib/apt/lists/*   && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 0E163286C20D07B9787EBE9FD7F9D0414FD08104   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/download" -o rocket.chat.tgz   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/asc" -o rocket.chat.tgz.asc   && gpg --batch --verify rocket.chat.tgz.asc rocket.chat.tgz   && tar zxf rocket.chat.tgz   && rm rocket.chat.tgz rocket.chat.tgz.asc   && cd bundle/programs/server   && npm install   && apt-mark auto '.*' > /dev/null   && apt-mark manual $aptMark > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && npm cache clear --force   && chown -R rocketchat:rocketchat /app
-# Thu, 23 Mar 2023 14:27:42 GMT
+# Wed, 03 May 2023 21:29:45 GMT
 USER rocketchat
-# Thu, 23 Mar 2023 14:27:42 GMT
+# Wed, 03 May 2023 21:29:45 GMT
 WORKDIR /app/bundle
-# Thu, 23 Mar 2023 14:27:42 GMT
+# Wed, 03 May 2023 21:29:45 GMT
 ENV DEPLOY_METHOD=docker-official MONGO_URL=mongodb://db:27017/meteor HOME=/tmp PORT=3000 ROOT_URL=http://localhost:3000 Accounts_AvatarStorePath=/app/uploads
-# Thu, 23 Mar 2023 14:27:42 GMT
+# Wed, 03 May 2023 21:29:45 GMT
 EXPOSE 3000
-# Thu, 23 Mar 2023 14:27:43 GMT
+# Wed, 03 May 2023 21:29:45 GMT
 CMD ["node" "main.js"]
 ```
 
 -	Layers:
-	-	`sha256:3689b8de819b48387712c6d4d62d26a52a04c9e88afc68fb9d1dbe48bfa9e21d`  
-		Last Modified: Thu, 23 Mar 2023 01:35:01 GMT  
-		Size: 27.1 MB (27139869 bytes)  
+	-	`sha256:25ff99d195814e98b7ef4708519299d9f177def504f9b718c61eb82c7f0b34be`  
+		Last Modified: Tue, 02 May 2023 23:51:01 GMT  
+		Size: 27.1 MB (27138959 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3d5d6107d13f4d3fa311be3fd8b4c84d87d0d4e12db98ed9f69090ea4695103`  
-		Last Modified: Thu, 23 Mar 2023 14:32:24 GMT  
-		Size: 36.5 MB (36530320 bytes)  
+	-	`sha256:ecec545e08243c793623b2a17ed743348ed8a21e369c54c6e6c26b72e5356bc4`  
+		Last Modified: Wed, 03 May 2023 21:34:44 GMT  
+		Size: 36.5 MB (36530293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7952477fc62bfa28f202f397d037524d9759b29fb0b74373348043e417bb190e`  
-		Last Modified: Thu, 23 Mar 2023 14:32:18 GMT  
-		Size: 1.8 KB (1808 bytes)  
+	-	`sha256:b20c1bb3996637d86b1edefe5f83e13bed32c1ec76722fd9aafc66a3cb297fa2`  
+		Last Modified: Wed, 03 May 2023 21:34:38 GMT  
+		Size: 1.8 KB (1811 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8fa82ea067a1dd1490d447f883916348e1ae8b37f81cca72a9da0dce12764197`  
-		Last Modified: Thu, 23 Mar 2023 14:33:06 GMT  
-		Size: 264.9 MB (264916658 bytes)  
+	-	`sha256:ed7406f10807e0eb602ffd374d027f306901ed1506bb20625eacdbda29c1cb5f`  
+		Last Modified: Wed, 03 May 2023 21:35:25 GMT  
+		Size: 264.9 MB (264914250 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rocket.chat:latest`
 
 ```console
-$ docker pull rocket.chat@sha256:6bd1b5b2560ef97e950b55a7b25a5f9bda71e69bdf5336c19736de3693d613ae
+$ docker pull rocket.chat@sha256:45be3914c428ad41f10770e94231d18afccca3b54e1e8d9e6c22fc78c1d4e319
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -767,63 +767,63 @@ $ docker pull rocket.chat@sha256:6bd1b5b2560ef97e950b55a7b25a5f9bda71e69bdf5336c
 ### `rocket.chat:latest` - linux; amd64
 
 ```console
-$ docker pull rocket.chat@sha256:72ac8f55b28b1127240631d1b65345c5bc0982f60343253b1c2cead0d32f44ce
+$ docker pull rocket.chat@sha256:829529e26f74c06971436768ee4288ba2f862640495523003a99a92ae568c3f6
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **328.6 MB (328588655 bytes)**  
+-	Total Size: **328.6 MB (328585313 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:60e0827c80370a2dec42dd139bc79657057d8a42c905bc36f12cab6b5b3e2b9a`
+-	Image ID: `sha256:94f15d7758e20f842c7610cc37b55d8560ea9543473f8be5bccf2c0487f183cc`
 -	Default Command: `["node","main.js"]`
 
 ```dockerfile
-# Thu, 23 Mar 2023 01:30:50 GMT
-ADD file:52316aa7d631242cd16337be337e57187ef07d3965e6284321fbdcd5b4f92b64 in / 
-# Thu, 23 Mar 2023 01:30:51 GMT
+# Tue, 02 May 2023 23:47:16 GMT
+ADD file:00bc0eda6d2eb0f8ad4abc654f762ffb9ec7e8d1c95d0cc0e7d0cba176d33e27 in / 
+# Tue, 02 May 2023 23:47:17 GMT
 CMD ["bash"]
-# Thu, 23 Mar 2023 14:26:05 GMT
+# Wed, 03 May 2023 21:28:11 GMT
 ENV NODE_ENV=production
-# Thu, 23 Mar 2023 14:26:05 GMT
+# Wed, 03 May 2023 21:28:11 GMT
 ENV NODE_VERSION=14.21.2
-# Thu, 23 Mar 2023 14:26:32 GMT
+# Wed, 03 May 2023 21:28:35 GMT
 RUN ARCH="x64"   && set -eux   && apt-get update && apt-get install -y --no-install-recommends ca-certificates curl wget gnupg dirmngr xz-utils   && rm -rf /var/lib/apt/lists/*   && for key in   4ED778F539E3634C779C87C6D7062848A1AB005C   94AE36675C464D64BAFA68DD7434390BDBE9B9C5   74F12602B6F1C4E913FAA37AD3A89613643B6201   71DCFD284A79C3B38668286BC97EC7A07EDE3FC1   8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600   C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8   C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C   DD8F2338BAE7501E3DD5AC78C273792F7D83545D   A48C2BEE680E841632CD4E44F07496B3EB3C1762   108F52B48DB57BB0CC439B2997B01419BD92F80A   B9E2F5981AA6E0CD28160D9FF13993A75599653C   ; do   gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||   gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner   && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt   && apt-mark auto '.*' > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false
-# Thu, 23 Mar 2023 14:26:33 GMT
+# Wed, 03 May 2023 21:28:36 GMT
 RUN groupadd -r rocketchat   && useradd -r -g rocketchat rocketchat   && mkdir -p /app/uploads   && chown rocketchat:rocketchat /app/uploads
-# Thu, 23 Mar 2023 14:26:33 GMT
+# Wed, 03 May 2023 21:28:36 GMT
 VOLUME [/app/uploads]
-# Thu, 23 Mar 2023 14:26:33 GMT
+# Wed, 03 May 2023 21:28:36 GMT
 ENV RC_VERSION=6.0.0
-# Thu, 23 Mar 2023 14:26:33 GMT
+# Wed, 03 May 2023 21:28:37 GMT
 WORKDIR /app
-# Thu, 23 Mar 2023 14:27:37 GMT
+# Wed, 03 May 2023 21:29:40 GMT
 RUN set -eux   && apt-get update   && apt-get install -y --no-install-recommends fontconfig   && aptMark="$(apt-mark showmanual)"   && apt-get install -y --no-install-recommends g++ make python ca-certificates curl gnupg   && rm -rf /var/lib/apt/lists/*   && gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 0E163286C20D07B9787EBE9FD7F9D0414FD08104   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/download" -o rocket.chat.tgz   && curl -fSL "https://releases.rocket.chat/${RC_VERSION}/asc" -o rocket.chat.tgz.asc   && gpg --batch --verify rocket.chat.tgz.asc rocket.chat.tgz   && tar zxf rocket.chat.tgz   && rm rocket.chat.tgz rocket.chat.tgz.asc   && cd bundle/programs/server   && npm install   && apt-mark auto '.*' > /dev/null   && apt-mark manual $aptMark > /dev/null   && find /usr/local -type f -executable -exec ldd '{}' ';'   | awk '/=>/ { print $(NF-1) }'   | sort -u   | xargs -r dpkg-query --search   | cut -d: -f1   | sort -u   | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && npm cache clear --force   && chown -R rocketchat:rocketchat /app
-# Thu, 23 Mar 2023 14:27:42 GMT
+# Wed, 03 May 2023 21:29:45 GMT
 USER rocketchat
-# Thu, 23 Mar 2023 14:27:42 GMT
+# Wed, 03 May 2023 21:29:45 GMT
 WORKDIR /app/bundle
-# Thu, 23 Mar 2023 14:27:42 GMT
+# Wed, 03 May 2023 21:29:45 GMT
 ENV DEPLOY_METHOD=docker-official MONGO_URL=mongodb://db:27017/meteor HOME=/tmp PORT=3000 ROOT_URL=http://localhost:3000 Accounts_AvatarStorePath=/app/uploads
-# Thu, 23 Mar 2023 14:27:42 GMT
+# Wed, 03 May 2023 21:29:45 GMT
 EXPOSE 3000
-# Thu, 23 Mar 2023 14:27:43 GMT
+# Wed, 03 May 2023 21:29:45 GMT
 CMD ["node" "main.js"]
 ```
 
 -	Layers:
-	-	`sha256:3689b8de819b48387712c6d4d62d26a52a04c9e88afc68fb9d1dbe48bfa9e21d`  
-		Last Modified: Thu, 23 Mar 2023 01:35:01 GMT  
-		Size: 27.1 MB (27139869 bytes)  
+	-	`sha256:25ff99d195814e98b7ef4708519299d9f177def504f9b718c61eb82c7f0b34be`  
+		Last Modified: Tue, 02 May 2023 23:51:01 GMT  
+		Size: 27.1 MB (27138959 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3d5d6107d13f4d3fa311be3fd8b4c84d87d0d4e12db98ed9f69090ea4695103`  
-		Last Modified: Thu, 23 Mar 2023 14:32:24 GMT  
-		Size: 36.5 MB (36530320 bytes)  
+	-	`sha256:ecec545e08243c793623b2a17ed743348ed8a21e369c54c6e6c26b72e5356bc4`  
+		Last Modified: Wed, 03 May 2023 21:34:44 GMT  
+		Size: 36.5 MB (36530293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7952477fc62bfa28f202f397d037524d9759b29fb0b74373348043e417bb190e`  
-		Last Modified: Thu, 23 Mar 2023 14:32:18 GMT  
-		Size: 1.8 KB (1808 bytes)  
+	-	`sha256:b20c1bb3996637d86b1edefe5f83e13bed32c1ec76722fd9aafc66a3cb297fa2`  
+		Last Modified: Wed, 03 May 2023 21:34:38 GMT  
+		Size: 1.8 KB (1811 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8fa82ea067a1dd1490d447f883916348e1ae8b37f81cca72a9da0dce12764197`  
-		Last Modified: Thu, 23 Mar 2023 14:33:06 GMT  
-		Size: 264.9 MB (264916658 bytes)  
+	-	`sha256:ed7406f10807e0eb602ffd374d027f306901ed1506bb20625eacdbda29c1cb5f`  
+		Last Modified: Wed, 03 May 2023 21:35:25 GMT  
+		Size: 264.9 MB (264914250 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
