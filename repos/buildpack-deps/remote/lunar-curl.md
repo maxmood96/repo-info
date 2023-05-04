@@ -1,7 +1,7 @@
 ## `buildpack-deps:lunar-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:9098d2fcfc0190c6f339badd34efbddfbddbbab9743cb73a606c24f8f8c36c67
+$ docker pull buildpack-deps@sha256:b468cf6f843bd04640817286cd3aa294c539af3156749a2153d6bd3f231c1640
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -135,41 +135,41 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-
 ### `buildpack-deps:lunar-curl` - linux; ppc64le
 
 ```console
-$ docker pull buildpack-deps@sha256:a2f07ecd401365ae3625a2906e96f1caa63110f22a8d2bdb5a9339ae411085e7
+$ docker pull buildpack-deps@sha256:e76dcadfdeb9b98ee7072469aaa84536c437260178a78c90cbcdd871aff9810c
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **43.5 MB (43486124 bytes)**  
+-	Total Size: **43.5 MB (43486077 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f6c8670693e5d4a00afaf94ff678168617be8e2615069b070cdaddc024ee343c`
+-	Image ID: `sha256:9b26d2356e57edb99f2e31fe9962648fca0b7fe10f7c3b15effb6ac2cb1f570d`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Sat, 15 Apr 2023 04:51:08 GMT
+# Thu, 20 Apr 2023 18:20:26 GMT
 ARG RELEASE
-# Sat, 15 Apr 2023 04:51:08 GMT
+# Thu, 20 Apr 2023 18:20:26 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Sat, 15 Apr 2023 04:51:09 GMT
+# Thu, 20 Apr 2023 18:20:26 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Sat, 15 Apr 2023 04:51:09 GMT
+# Thu, 20 Apr 2023 18:20:26 GMT
 LABEL org.opencontainers.image.version=23.04
-# Sat, 15 Apr 2023 04:51:11 GMT
-ADD file:57838c4589ddbfb3bfb239d9d6749a36f0d7201d8788fa4293dfe9ad93308e40 in / 
-# Sat, 15 Apr 2023 04:51:12 GMT
+# Thu, 20 Apr 2023 18:20:29 GMT
+ADD file:8d28b8fff20cf3ef8af5805d942e8aa5d19026e5ee01beb77e5863eb33637893 in / 
+# Thu, 20 Apr 2023 18:20:30 GMT
 CMD ["/bin/bash"]
-# Wed, 03 May 2023 00:04:23 GMT
+# Wed, 03 May 2023 23:27:49 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:fcabd7528fca87cc5a63f487865487cc2f6832df71a8c871f40b369f4f0f945d`  
-		Last Modified: Tue, 18 Apr 2023 01:04:41 GMT  
-		Size: 32.0 MB (31996733 bytes)  
+	-	`sha256:cff954998e64505d58ea7cf2bf1a248c9fdc2287c6f6c0f41d3268aa8df574bb`  
+		Last Modified: Wed, 03 May 2023 23:42:18 GMT  
+		Size: 32.0 MB (31996798 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f5246a498088fdea38dd591708a487dd16b5d2f571e44944585476b1383b4a22`  
-		Last Modified: Wed, 03 May 2023 00:22:02 GMT  
-		Size: 11.5 MB (11489391 bytes)  
+	-	`sha256:e392eac2e54d3ce287c6ad52608235e58697dd34630b471eb3e306bf35c2a09e`  
+		Last Modified: Wed, 03 May 2023 23:42:09 GMT  
+		Size: 11.5 MB (11489279 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:lunar-curl` - linux; s390x
