@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2be0a49f8a3d0ecf4a8fca09049b7f84c7226906946f8a71a014bd73e4c104fc`
-- Created: `2023-04-26T21:59:31.601435069Z`
-- Virtual Size: ~ 305.15 Mb  
+- Image ID: `sha256:c62356a560176f75e9550660b8fe9a87794376f4a1fcda2744ffed1e4b164421`
+- Created: `2023-05-04T15:40:21.819172029Z`
+- Virtual Size: ~ 302.11 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -666,18 +666,12 @@ $ apt-get source -qq --print-uris gmp=2:6.2.0+dfsg-4ubuntu0.1
 Binary Packages:
 
 - `dirmngr=2.2.19-3ubuntu2.2`
-- `gnupg=2.2.19-3ubuntu2.2`
-- `gnupg-l10n=2.2.19-3ubuntu2.2`
-- `gnupg-utils=2.2.19-3ubuntu2.2`
 - `gpg=2.2.19-3ubuntu2.2`
 - `gpg-agent=2.2.19-3ubuntu2.2`
-- `gpg-wks-client=2.2.19-3ubuntu2.2`
-- `gpg-wks-server=2.2.19-3ubuntu2.2`
 - `gpgconf=2.2.19-3ubuntu2.2`
-- `gpgsm=2.2.19-3ubuntu2.2`
 - `gpgv=2.2.19-3ubuntu2.2`
 
-Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gnupg-l10n/copyright`, `/usr/share/doc/gnupg-utils/copyright`, `/usr/share/doc/gpg/copyright`, `/usr/share/doc/gpg-agent/copyright`, `/usr/share/doc/gpg-wks-client/copyright`, `/usr/share/doc/gpg-wks-server/copyright`, `/usr/share/doc/gpgconf/copyright`, `/usr/share/doc/gpgsm/copyright`, `/usr/share/doc/gpgv/copyright`)
+Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gpg/copyright`, `/usr/share/doc/gpg-agent/copyright`, `/usr/share/doc/gpgconf/copyright`, `/usr/share/doc/gpgv/copyright`)
 
 - `BSD-3-clause`
 - `CC0-1.0`
