@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ba075d897f5e029a7aca18b815d2b01d1c74b1ba28a99b4f2956c3f74e46aed6`
-- Created: `2023-04-18T01:27:26.678536315Z`
-- Virtual Size: ~ 219.03 Mb  
+- Image ID: `sha256:a2d7ab602eaae747a1f031cbfe90ce88c013d501794705d98a8257df656992f6`
+- Created: `2023-05-02T23:31:14.795005974Z`
+- Virtual Size: ~ 218.29 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -636,12 +636,12 @@ $ apt-get source -qq --print-uris gdbm=1.23-1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.23-1.debian.tar.xz' gdbm_1.23-1.debian.tar.xz 18484 SHA512:e7ca0a608da94e5b5bc5949e27b794c87e032202eb09359ad55f6c1a7a6e895f01126781a4e0fbfdb8fef3de7c4a312b9d5a653aaf55ce8c5afbceb945945253
 ```
 
-### `dpkg` source package: `git=1:2.37.2-1ubuntu1.4`
+### `dpkg` source package: `git=1:2.37.2-1ubuntu1.5`
 
 Binary Packages:
 
-- `git=1:2.37.2-1ubuntu1.4`
-- `git-man=1:2.37.2-1ubuntu1.4`
+- `git=1:2.37.2-1ubuntu1.5`
+- `git-man=1:2.37.2-1ubuntu1.5`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -665,9 +665,14 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris git=1:2.37.2-1ubuntu1.5
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.37.2-1ubuntu1.5.dsc' git_2.37.2-1ubuntu1.5.dsc 2927 SHA512:61352bd11f6f29f0bc78a2eb93fec376b1e3a61210032959d69fbc3cd7a2e38feb1a3d006e45fbf15c7a82e242768294812513e1b506a151035c44bf554bd0a5
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.37.2.orig.tar.xz' git_2.37.2.orig.tar.xz 6985408 SHA512:a26d83f4eeb71d49c427ced9509861f7677e13e806da729f369ca39b795f8417b789a0adec859f44716f7fbc1190f7d1e6e518e774ad95c89e88442ac125b9c2
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.37.2-1ubuntu1.5.debian.tar.xz' git_2.37.2-1ubuntu1.5.debian.tar.xz 770380 SHA512:079a1112633843d8fa2b3547f8271c994d0d2f6d75bb09c49fed05798eb7f3e025e866390ecbdba0630dd5576eae5127d4ef353386e4dbca8cb533a1c8e75c80
+```
 
 ### `dpkg` source package: `glibc=2.36-0ubuntu4`
 
@@ -1844,12 +1849,12 @@ $ apt-get source -qq --print-uris openssh=1:9.0p1-1ubuntu7.1
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.0p1-1ubuntu7.1.debian.tar.xz' openssh_9.0p1-1ubuntu7.1.debian.tar.xz 179820 SHA512:80657aa6f8744ca769529e72ff235e96e2f564f5c58f5b3fed9b4e477b954088047f6318fd59c51fda719c9596402ce38cc869893f395d534e5cc38b490d83a4
 ```
 
-### `dpkg` source package: `openssl=3.0.5-2ubuntu2.1`
+### `dpkg` source package: `openssl=3.0.5-2ubuntu2.2`
 
 Binary Packages:
 
-- `libssl3:amd64=3.0.5-2ubuntu2.1`
-- `openssl=3.0.5-2ubuntu2.1`
+- `libssl3:amd64=3.0.5-2ubuntu2.2`
+- `openssl=3.0.5-2ubuntu2.2`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
 
@@ -1858,9 +1863,15 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 - `GPL-1`
 - `GPL-1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=3.0.5-2ubuntu2.2
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.5-2ubuntu2.2.dsc' openssl_3.0.5-2ubuntu2.2.dsc 2430 SHA512:83c21fd2b9eee644da3c48b8d461817078d265fb3ce25592f7ef05d11c36198b681c3104fe7430834e42a5637580d7c11397e54e5967ed5620d8bd32ee90b7ab
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.5.orig.tar.gz' openssl_3.0.5.orig.tar.gz 15074407 SHA512:782b0df3d0252468aa696bd74a3b661810499819c0df849aa9698ba0e06a845820dc856aac650fced4be234f1271e576d4317ac3ab1406cf0ffe087d695d20fe
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.5.orig.tar.gz.asc' openssl_3.0.5.orig.tar.gz.asc 862 SHA512:516da9ef291601400576adaba7271854af3caa23dc1d70116004360f580e4c28fe61d51e86477d341e4c5bf0ca5f98db8264581ed6cc2c8df124da83ad3e40be
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.5-2ubuntu2.2.debian.tar.xz' openssl_3.0.5-2ubuntu2.2.debian.tar.xz 196216 SHA512:504d33a83d59fbb3a356e21d225ac7bbcddf35e9c24dc49f8b1ecc893e45699af5094f412bc756718ed44482c1a55de125a520b86788627ddd8a7b5b5e2e3ac9
+```
 
 ### `dpkg` source package: `p11-kit=0.24.1-1ubuntu2`
 
@@ -2373,11 +2384,11 @@ $ apt-get source -qq --print-uris tar=1.34+dfsg-1ubuntu0.1.22.10.1
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.34%2bdfsg-1ubuntu0.1.22.10.1.debian.tar.xz' tar_1.34+dfsg-1ubuntu0.1.22.10.1.debian.tar.xz 19904 SHA512:208e07dcf7344535e6e0ae550d833d6608565a54159d5403bd01ae27a24003e4e0398089ad262f5d131e01c7f5655ff3851a41a8642fe94a26c4e5ff056314b6
 ```
 
-### `dpkg` source package: `tzdata=2023c-0ubuntu0.22.10.0`
+### `dpkg` source package: `tzdata=2023c-0ubuntu0.22.10.1`
 
 Binary Packages:
 
-- `tzdata=2023c-0ubuntu0.22.10.0`
+- `tzdata=2023c-0ubuntu0.22.10.1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
@@ -2386,11 +2397,11 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2023c-0ubuntu0.22.10.0
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2023c-0ubuntu0.22.10.0.dsc' tzdata_2023c-0ubuntu0.22.10.0.dsc 2511 SHA512:9af29d4cdc0e93fd6f6dc628572eaa995a79232744a2b7159e96a6365e0650dc9a653bc3dbc0bc13ea5630053d29383e016f92c8042155bca6f15dfc60dc7491
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2023c.orig.tar.gz' tzdata_2023c.orig.tar.gz 443902 SHA512:608bd286ebcbd0004cfdc1da183273f08aff61f90c8867661154453d77a05d421e4c46ad6d066a1fe2e87d5c82ec0f1c0224667a3b35f3180a3eb7f6ff84cbf5
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2023c.orig.tar.gz.asc' tzdata_2023c.orig.tar.gz.asc 833 SHA512:15da6e01a12a0390f736fe5bacf27595c8f7080a4b27eccfae7f244bc38d5839e7d25622e325f874db17f9e723777e9cfe0f460fbd595b66772f1642dd603b6b
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2023c-0ubuntu0.22.10.0.debian.tar.xz' tzdata_2023c-0ubuntu0.22.10.0.debian.tar.xz 174408 SHA512:de1ce56b8ab23c97e94d289852ad5e84c42b54883e8dfde32daa28418114420e90f1a1f571c86d151df1a552ad0be8242a933f1eb2bd059cebe9374b7a4509d8
+$ apt-get source -qq --print-uris tzdata=2023c-0ubuntu0.22.10.1
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2023c-0ubuntu0.22.10.1.dsc' tzdata_2023c-0ubuntu0.22.10.1.dsc 2511 SHA512:b437e884b4c9b33b0c9b0a024e47a3ec150f37ab3d4db604eff8021c78cbb92b9b5eb184c3ee7fc8557a00d2816b012fda2fc213fc1f9a802c2dcbd0748ce5ec
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2023c.orig.tar.gz' tzdata_2023c.orig.tar.gz 443902 SHA512:608bd286ebcbd0004cfdc1da183273f08aff61f90c8867661154453d77a05d421e4c46ad6d066a1fe2e87d5c82ec0f1c0224667a3b35f3180a3eb7f6ff84cbf5
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2023c.orig.tar.gz.asc' tzdata_2023c.orig.tar.gz.asc 833 SHA512:15da6e01a12a0390f736fe5bacf27595c8f7080a4b27eccfae7f244bc38d5839e7d25622e325f874db17f9e723777e9cfe0f460fbd595b66772f1642dd603b6b
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2023c-0ubuntu0.22.10.1.debian.tar.xz' tzdata_2023c-0ubuntu0.22.10.1.debian.tar.xz 174668 SHA512:75c30d2f319e57bb8e70e141ebaea1e8882b4b0876118669b3e74ccd83ba281a5d74cab5350bf89041dc0f49d8e24a3b5ce5732c6458bd5fe138378f64b550b4
 ```
 
 ### `dpkg` source package: `ubuntu-keyring=2021.03.26`

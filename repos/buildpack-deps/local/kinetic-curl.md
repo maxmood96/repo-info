@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0b717cacdac4c1a10af86a1162d9c8fd0db43b12a5aa661a257dad5328881196`
-- Created: `2023-04-18T01:26:47.403629538Z`
-- Virtual Size: ~ 95.89 Mb  
+- Image ID: `sha256:2817be03fccdc1b5159deb073cda1c678a46d11880c3acc0553d04ade510398a`
+- Created: `2023-05-02T23:30:37.950744415Z`
+- Virtual Size: ~ 95.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -1433,12 +1433,12 @@ $ apt-get source -qq --print-uris openldap=2.5.14+dfsg-0ubuntu0.22.10.2
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.14%2bdfsg-0ubuntu0.22.10.2.debian.tar.xz' openldap_2.5.14+dfsg-0ubuntu0.22.10.2.debian.tar.xz 178164 SHA512:298eadab83173201cb7ef63146faff8040b52e44b3947aed48dd2748ac930856dfe815a474091a747f8e8b1aa5206b5df47dfb4cd84673eaa45fdf1cc1d6d244
 ```
 
-### `dpkg` source package: `openssl=3.0.5-2ubuntu2.1`
+### `dpkg` source package: `openssl=3.0.5-2ubuntu2.2`
 
 Binary Packages:
 
-- `libssl3:amd64=3.0.5-2ubuntu2.1`
-- `openssl=3.0.5-2ubuntu2.1`
+- `libssl3:amd64=3.0.5-2ubuntu2.2`
+- `openssl=3.0.5-2ubuntu2.2`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
 
@@ -1447,9 +1447,15 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 - `GPL-1`
 - `GPL-1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=3.0.5-2ubuntu2.2
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.5-2ubuntu2.2.dsc' openssl_3.0.5-2ubuntu2.2.dsc 2430 SHA512:83c21fd2b9eee644da3c48b8d461817078d265fb3ce25592f7ef05d11c36198b681c3104fe7430834e42a5637580d7c11397e54e5967ed5620d8bd32ee90b7ab
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.5.orig.tar.gz' openssl_3.0.5.orig.tar.gz 15074407 SHA512:782b0df3d0252468aa696bd74a3b661810499819c0df849aa9698ba0e06a845820dc856aac650fced4be234f1271e576d4317ac3ab1406cf0ffe087d695d20fe
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.5.orig.tar.gz.asc' openssl_3.0.5.orig.tar.gz.asc 862 SHA512:516da9ef291601400576adaba7271854af3caa23dc1d70116004360f580e4c28fe61d51e86477d341e4c5bf0ca5f98db8264581ed6cc2c8df124da83ad3e40be
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.5-2ubuntu2.2.debian.tar.xz' openssl_3.0.5-2ubuntu2.2.debian.tar.xz 196216 SHA512:504d33a83d59fbb3a356e21d225ac7bbcddf35e9c24dc49f8b1ecc893e45699af5094f412bc756718ed44482c1a55de125a520b86788627ddd8a7b5b5e2e3ac9
+```
 
 ### `dpkg` source package: `p11-kit=0.24.1-1ubuntu2`
 
@@ -1848,11 +1854,11 @@ $ apt-get source -qq --print-uris tar=1.34+dfsg-1ubuntu0.1.22.10.1
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.34%2bdfsg-1ubuntu0.1.22.10.1.debian.tar.xz' tar_1.34+dfsg-1ubuntu0.1.22.10.1.debian.tar.xz 19904 SHA512:208e07dcf7344535e6e0ae550d833d6608565a54159d5403bd01ae27a24003e4e0398089ad262f5d131e01c7f5655ff3851a41a8642fe94a26c4e5ff056314b6
 ```
 
-### `dpkg` source package: `tzdata=2023c-0ubuntu0.22.10.0`
+### `dpkg` source package: `tzdata=2023c-0ubuntu0.22.10.1`
 
 Binary Packages:
 
-- `tzdata=2023c-0ubuntu0.22.10.0`
+- `tzdata=2023c-0ubuntu0.22.10.1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
@@ -1861,11 +1867,11 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2023c-0ubuntu0.22.10.0
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2023c-0ubuntu0.22.10.0.dsc' tzdata_2023c-0ubuntu0.22.10.0.dsc 2511 SHA512:9af29d4cdc0e93fd6f6dc628572eaa995a79232744a2b7159e96a6365e0650dc9a653bc3dbc0bc13ea5630053d29383e016f92c8042155bca6f15dfc60dc7491
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2023c.orig.tar.gz' tzdata_2023c.orig.tar.gz 443902 SHA512:608bd286ebcbd0004cfdc1da183273f08aff61f90c8867661154453d77a05d421e4c46ad6d066a1fe2e87d5c82ec0f1c0224667a3b35f3180a3eb7f6ff84cbf5
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2023c.orig.tar.gz.asc' tzdata_2023c.orig.tar.gz.asc 833 SHA512:15da6e01a12a0390f736fe5bacf27595c8f7080a4b27eccfae7f244bc38d5839e7d25622e325f874db17f9e723777e9cfe0f460fbd595b66772f1642dd603b6b
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2023c-0ubuntu0.22.10.0.debian.tar.xz' tzdata_2023c-0ubuntu0.22.10.0.debian.tar.xz 174408 SHA512:de1ce56b8ab23c97e94d289852ad5e84c42b54883e8dfde32daa28418114420e90f1a1f571c86d151df1a552ad0be8242a933f1eb2bd059cebe9374b7a4509d8
+$ apt-get source -qq --print-uris tzdata=2023c-0ubuntu0.22.10.1
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2023c-0ubuntu0.22.10.1.dsc' tzdata_2023c-0ubuntu0.22.10.1.dsc 2511 SHA512:b437e884b4c9b33b0c9b0a024e47a3ec150f37ab3d4db604eff8021c78cbb92b9b5eb184c3ee7fc8557a00d2816b012fda2fc213fc1f9a802c2dcbd0748ce5ec
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2023c.orig.tar.gz' tzdata_2023c.orig.tar.gz 443902 SHA512:608bd286ebcbd0004cfdc1da183273f08aff61f90c8867661154453d77a05d421e4c46ad6d066a1fe2e87d5c82ec0f1c0224667a3b35f3180a3eb7f6ff84cbf5
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2023c.orig.tar.gz.asc' tzdata_2023c.orig.tar.gz.asc 833 SHA512:15da6e01a12a0390f736fe5bacf27595c8f7080a4b27eccfae7f244bc38d5839e7d25622e325f874db17f9e723777e9cfe0f460fbd595b66772f1642dd603b6b
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2023c-0ubuntu0.22.10.1.debian.tar.xz' tzdata_2023c-0ubuntu0.22.10.1.debian.tar.xz 174668 SHA512:75c30d2f319e57bb8e70e141ebaea1e8882b4b0876118669b3e74ccd83ba281a5d74cab5350bf89041dc0f49d8e24a3b5ce5732c6458bd5fe138378f64b550b4
 ```
 
 ### `dpkg` source package: `ubuntu-keyring=2021.03.26`

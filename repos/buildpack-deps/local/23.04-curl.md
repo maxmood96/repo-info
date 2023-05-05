@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:220173d47bb64c458e18cdfea3dafd604370b15d4b684bcdc8d12c24f3e20246`
-- Created: `2023-04-18T01:31:00.029729286Z`
-- Virtual Size: ~ 94.66 Mb  
+- Image ID: `sha256:bbdcbb8265fa17290a0e39d1999be4f3c53065a3dca27556cd2865e4c914e7be`
+- Created: `2023-05-03T20:07:57.261047023Z`
+- Virtual Size: ~ 93.46 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -1494,12 +1494,12 @@ $ apt-get source -qq --print-uris openldap=2.6.3+dfsg-1~exp1ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.3%2bdfsg-1%7eexp1ubuntu2.debian.tar.xz' openldap_2.6.3+dfsg-1~exp1ubuntu2.debian.tar.xz 179412 SHA512:f305e04594b0153dd68a139736468b1a5eabf94ec39e82a162ce1ff69ec1aa0b7edfce609a6f4cf154a141d7771a85d4b0043aa5e76665281029ee98f74a7f98
 ```
 
-### `dpkg` source package: `openssl=3.0.8-1ubuntu1`
+### `dpkg` source package: `openssl=3.0.8-1ubuntu1.1`
 
 Binary Packages:
 
-- `libssl3:amd64=3.0.8-1ubuntu1`
-- `openssl=3.0.8-1ubuntu1`
+- `libssl3:amd64=3.0.8-1ubuntu1.1`
+- `openssl=3.0.8-1ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
 
@@ -1511,10 +1511,10 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=3.0.8-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.8-1ubuntu1.dsc' openssl_3.0.8-1ubuntu1.dsc 2300 SHA512:6a7420b908ad9ce3ae35dc6d9d0d976c56729be66f967ba319cceaf10c976acde8fa57d935e58811a32941ae9533703868280faeeea42ada2626886de59a205f
+$ apt-get source -qq --print-uris openssl=3.0.8-1ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.8-1ubuntu1.1.dsc' openssl_3.0.8-1ubuntu1.1.dsc 2186 SHA512:81a1d09e6ce74e8148332bc18648265dbc327963b9b6bcd84ae98219d80f1cf7a797e861c7bbdc1fe2a8bd950b5fd3cb33249e7a36d36819599ba4812d6067ed
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.8.orig.tar.gz' openssl_3.0.8.orig.tar.gz 15151328 SHA512:8ce10be000d7d4092c8efc5b96b1d2f7da04c1c3a624d3a7923899c6b1de06f369016be957e36e8ab6d4c9102eaeec5d1973295d547f7893a7f11f132ae42b0d
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.8-1ubuntu1.debian.tar.xz' openssl_3.0.8-1ubuntu1.debian.tar.xz 106024 SHA512:fe5e67c53eee3875354aa66bd3e46dfc5ef9496c7af9c57ae87d35f882240f2409a3fd56c4938786afef5c25a115115cf372d088b50ae35f1396f47848697ec7
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.8-1ubuntu1.1.debian.tar.xz' openssl_3.0.8-1ubuntu1.1.debian.tar.xz 120836 SHA512:d1fe7b0bff8c62cc9da36796c1c00a28af07469b08c3d411cb87596f6fa361ad0f3da6c7dd6dfd8acd9a13b9a7e4dbd7d4a5f1fdb8597701dbf385e84674b08f
 ```
 
 ### `dpkg` source package: `p11-kit=0.24.1-2ubuntu1`
