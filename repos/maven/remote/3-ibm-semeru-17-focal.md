@@ -1,7 +1,7 @@
 ## `maven:3-ibm-semeru-17-focal`
 
 ```console
-$ docker pull maven@sha256:c62c1f53b4725b666c6f8f907fdb2a1d19ef91907afdcecb3056f476e8ae4010
+$ docker pull maven@sha256:568825aee7f108f7d04d2d49cb5bd49b65a986fb40b46edb99d81281682d312f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -326,13 +326,13 @@ CMD ["mvn"]
 ### `maven:3-ibm-semeru-17-focal` - linux; s390x
 
 ```console
-$ docker pull maven@sha256:ff8921a1128c6b6879611f3919a242edf13fa6ca4ae626a7d0270caa2daa38e3
+$ docker pull maven@sha256:edbd2e93940499b9052b35eebeff44f2c7e414fed01fdd26c7078c26f3d723e9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **292.2 MB (292249368 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:14919380bc1e23558e766c9fcd0ab6e84ca59c9b1b68e2c83988c97797071dbb`
+-	Image ID: `sha256:516c99b70ed846945cdf6d3c38d88fed95cb6973437bc7256d49713631462c13`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -365,27 +365,27 @@ ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache 
 RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="0db27185d9fc3174f2c670f814df3dda8a008b89d1a38a5d96cbbe119767ebfb1cf0bce956b27954aee9be19c4a7b91f2579d967932207976322033a86075f98";     TOMCAT_DWNLD_URL="https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.35/bin/apache-tomcat-9.0.35.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed";
 # Tue, 18 Apr 2023 01:25:32 GMT
 CMD ["jshell"]
-# Wed, 26 Apr 2023 19:42:27 GMT
+# Fri, 05 May 2023 00:05:35 GMT
 RUN apt-get update   && apt-get install -y git --no-install-recommends   && rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 26 Apr 2023 19:42:27 GMT
+# Fri, 05 May 2023 00:05:35 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Wed, 26 Apr 2023 19:42:27 GMT
+# Fri, 05 May 2023 00:05:35 GMT
 COPY /usr/share/maven /usr/share/maven # buildkit
-# Wed, 26 Apr 2023 19:42:27 GMT
+# Fri, 05 May 2023 00:05:35 GMT
 COPY /usr/local/bin/mvn-entrypoint.sh /usr/local/bin/mvn-entrypoint.sh # buildkit
-# Wed, 26 Apr 2023 19:42:27 GMT
+# Fri, 05 May 2023 00:05:35 GMT
 COPY /usr/share/maven/ref/settings-docker.xml /usr/share/maven/ref/settings-docker.xml # buildkit
-# Wed, 26 Apr 2023 19:42:27 GMT
+# Fri, 05 May 2023 00:05:35 GMT
 RUN ln -s ${MAVEN_HOME}/bin/mvn /usr/bin/mvn # buildkit
-# Wed, 26 Apr 2023 19:42:27 GMT
+# Fri, 05 May 2023 00:05:35 GMT
 ARG MAVEN_VERSION=3.9.1
-# Wed, 26 Apr 2023 19:42:27 GMT
+# Fri, 05 May 2023 00:05:35 GMT
 ARG USER_HOME_DIR=/root
-# Wed, 26 Apr 2023 19:42:27 GMT
+# Fri, 05 May 2023 00:05:35 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Wed, 26 Apr 2023 19:42:27 GMT
+# Fri, 05 May 2023 00:05:35 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Wed, 26 Apr 2023 19:42:27 GMT
+# Fri, 05 May 2023 00:05:35 GMT
 CMD ["mvn"]
 ```
 
