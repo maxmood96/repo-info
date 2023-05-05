@@ -1,7 +1,7 @@
 ## `fedora:latest`
 
 ```console
-$ docker pull fedora@sha256:a4440bb33dfe6f7d1f0e8b44ae1a220e899ae64c3407d868eeb04c18cbb04a74
+$ docker pull fedora@sha256:55d9baa1639f5bf923b5d2d20c4d728a090c0b522f00e8ecb0d067e1e44f467d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -74,14 +74,14 @@ CMD ["/bin/bash"]
 ### `fedora:latest` - linux; ppc64le
 
 ```console
-$ docker pull fedora@sha256:2ffaab82e30e8e9ae4209a8c6e5ed7a23c90b91eba10310bddac95543c292e0f
+$ docker pull fedora@sha256:17ffd3463bf1f56702ee04028adac4d8fa1692e399c08c8aa20957b2bf4f8d35
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **75.0 MB (75038339 bytes)**  
+-	Total Size: **75.0 MB (75015597 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac34036f3ae65b053b86fcf1ed2d312ef65a912335da924f34e4acca8ef30126`
+-	Image ID: `sha256:e3ef0364c04e4c1f8e76a7f43c0fffbed42335317a21b494bc9897b412e5faf0`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -89,16 +89,16 @@ $ docker pull fedora@sha256:2ffaab82e30e8e9ae4209a8c6e5ed7a23c90b91eba10310bddac
 LABEL maintainer=Clement Verna <cverna@fedoraproject.org>
 # Thu, 03 Nov 2022 21:19:02 GMT
 ENV DISTTAG=f38container FGC=f38 FBR=f38
-# Thu, 20 Apr 2023 18:18:43 GMT
-ADD file:2d54de703db3d34daad49bdb2bbda91722286a4b30076ba8da8e9e423aa50356 in / 
-# Thu, 20 Apr 2023 18:18:49 GMT
+# Fri, 05 May 2023 00:12:33 GMT
+ADD file:2a1c3b02e0d0d025b2e644c1bc59c08e103dd0193dace609bdaa88c002c1b6ed in / 
+# Fri, 05 May 2023 00:12:38 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:59c608c489375cef75e386fae0eef2be903a38b805c97bce08597ae0bfd770ba`  
-		Last Modified: Thu, 20 Apr 2023 18:20:45 GMT  
-		Size: 75.0 MB (75038339 bytes)  
+	-	`sha256:fe50bd4e05100e8ba644244ad8c3b0b45396b8d4defbce300ff7ef9a336d73f1`  
+		Last Modified: Fri, 05 May 2023 00:14:24 GMT  
+		Size: 75.0 MB (75015597 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `fedora:latest` - linux; s390x
