@@ -1,7 +1,7 @@
 ## `eclipse-temurin:17-jdk`
 
 ```console
-$ docker pull eclipse-temurin@sha256:77a154d87d19e7c5862799416c4a41d4cbb0064c39dac33c519aae6dab6fe02c
+$ docker pull eclipse-temurin@sha256:6c7bcd7847da25c442666a8fcff43a736370776ce5cd5f8f42bd402ea1b15c6a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -265,63 +265,63 @@ CMD ["jshell"]
 ### `eclipse-temurin:17-jdk` - linux; s390x
 
 ```console
-$ docker pull eclipse-temurin@sha256:c617e652328b18ba7f26f50851747790b62386673802adccf856707341b852f7
+$ docker pull eclipse-temurin@sha256:1ba4423e0c221d81294b45e2d23730db94eb5c196350b19662d0fffc8e0c5cf4
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **225.8 MB (225762865 bytes)**  
+-	Total Size: **225.8 MB (225832886 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8697a154938096b691ba1490d27b7b8656f57b08375cf356d6887b745d5dd484`
+-	Image ID: `sha256:83d8f67f98f858888a6a3b557d57ea963b79d92043a895a66dd56aa228c2684b`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Wed, 08 Mar 2023 04:39:24 GMT
+# Tue, 25 Apr 2023 17:44:52 GMT
 ARG RELEASE
-# Wed, 08 Mar 2023 04:39:24 GMT
+# Tue, 25 Apr 2023 17:44:52 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Wed, 08 Mar 2023 04:39:24 GMT
+# Tue, 25 Apr 2023 17:44:52 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Wed, 08 Mar 2023 04:39:24 GMT
+# Tue, 25 Apr 2023 17:44:52 GMT
 LABEL org.opencontainers.image.version=22.04
-# Wed, 08 Mar 2023 04:39:26 GMT
-ADD file:630f9865d3d4fd4294d45cac7cbaea83fb549c2e563de454348da964d19fbbba in / 
-# Wed, 08 Mar 2023 04:39:26 GMT
+# Tue, 25 Apr 2023 17:44:54 GMT
+ADD file:bbc65a9f059dc165e33f9a25ffaa40aab1a1f65164198a44394ec3065c82ae21 in / 
+# Tue, 25 Apr 2023 17:44:54 GMT
 CMD ["/bin/bash"]
-# Thu, 16 Mar 2023 02:06:17 GMT
+# Fri, 05 May 2023 00:05:04 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 16 Mar 2023 02:06:17 GMT
+# Fri, 05 May 2023 00:05:04 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 16 Mar 2023 02:06:17 GMT
+# Fri, 05 May 2023 00:05:04 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 16 Mar 2023 02:07:58 GMT
+# Fri, 05 May 2023 00:06:16 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl wget ca-certificates fontconfig locales binutils     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Wed, 26 Apr 2023 19:43:50 GMT
+# Fri, 05 May 2023 00:06:17 GMT
 ENV JAVA_VERSION=jdk-17.0.7+7
-# Wed, 26 Apr 2023 19:44:00 GMT
+# Fri, 05 May 2023 00:06:27 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0084272404b89442871e0a1f112779844090532978ad4d4191b8d03fc6adfade';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.7%2B7/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.7_7.tar.gz';          ;;        armhf|arm)          ESUM='e7a84c3e59704588510d7e6cce1f732f397b54a3b558c521912a18a1b4d0abdc';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.7%2B7/OpenJDK17U-jdk_arm_linux_hotspot_17.0.7_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='8f4366ff1eddb548b1744cd82a1a56ceee60abebbcbad446bfb3ead7ac0f0f85';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.7%2B7/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.7_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='2d75540ae922d0c4162729267a8c741e2414881a468fd2ce4140b4069ba47ca9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.7%2B7/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.7_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='e9458b38e97358850902c2936a1bb5f35f6cffc59da9fcd28c63eab8dbbfbc3b';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.7%2B7/OpenJDK17U-jdk_x64_linux_hotspot_17.0.7_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
-# Wed, 26 Apr 2023 19:44:06 GMT
+# Fri, 05 May 2023 00:06:35 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Wed, 26 Apr 2023 19:44:06 GMT
+# Fri, 05 May 2023 00:06:35 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:2c7366af510b72cc0b3456fb93cfa0bfc76f7d383db5cb315967e7b1ce2e0c42`  
-		Last Modified: Thu, 16 Mar 2023 02:02:40 GMT  
-		Size: 28.6 MB (28647599 bytes)  
+	-	`sha256:78722793f0008ff8422830a0106f21e8bc168fb9aac12cc99fb223799951759e`  
+		Last Modified: Wed, 03 May 2023 22:33:36 GMT  
+		Size: 28.6 MB (28647905 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:83d28ae42a862e9773a02317b5a0eeb71ddfe3a887bb001c8f23a2786c926287`  
-		Last Modified: Thu, 16 Mar 2023 02:13:35 GMT  
-		Size: 16.8 MB (16753284 bytes)  
+	-	`sha256:e49b1e85674749d49983d988affa30d35c216175c7425eb7e04b0db0a28be408`  
+		Last Modified: Fri, 05 May 2023 00:08:09 GMT  
+		Size: 16.8 MB (16823080 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:617ace51a6bf03cc2406652ff2955ad2c4c419862512e2db6e1d3f5e8b708d19`  
-		Last Modified: Wed, 26 Apr 2023 19:47:30 GMT  
-		Size: 180.4 MB (180361807 bytes)  
+	-	`sha256:2ce8ba2585974badfb159f3db2ae56db026b7e23f8b21079d1d53563695937b8`  
+		Last Modified: Fri, 05 May 2023 00:08:19 GMT  
+		Size: 180.4 MB (180361728 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4d029f3a6d5a81c56a691ac6c9c02eaa9548c386786e9b7185efd5102979d891`  
-		Last Modified: Wed, 26 Apr 2023 19:47:18 GMT  
-		Size: 175.0 B  
+	-	`sha256:d209fd957ebf7d15f0c4c51cca1e06d8a71734f46758285fcb580842a5e8c356`  
+		Last Modified: Fri, 05 May 2023 00:08:07 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:17-jdk` - windows version 10.0.20348.1668; amd64
