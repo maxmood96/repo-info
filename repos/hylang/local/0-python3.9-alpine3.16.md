@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0e1aab21537146f5dc784dd56f5e6e45ba035a87407ff97b7c00bf568c4ff00c`
-- Created: `2023-03-30T05:21:36.803107453Z`
-- Virtual Size: ~ 56.04 Mb  
+- Image ID: `sha256:3ba3ed742baec88bcec649effe3ef9ba0f3e124ca267435265abeaa4733dc28e`
+- Created: `2023-05-04T06:44:13.245708244Z`
+- Virtual Size: ~ 56.06 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`
@@ -15,8 +15,8 @@
   - `PYTHON_VERSION=3.9.16`
   - `PYTHON_PIP_VERSION=22.0.4`
   - `PYTHON_SETUPTOOLS_VERSION=58.1.0`
-  - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/d5cb0afaf23b8520f1bbcfed521017b4a95f5c01/public/get-pip.py`
-  - `PYTHON_GET_PIP_SHA256=394be00f13fa1b9aaa47e911bdb59a09c3b2986472130f30aa0bfaf7f3980637`
+  - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/0d8570dc44796f4369b652222cf176b3db6ac70e/public/get-pip.py`
+  - `PYTHON_GET_PIP_SHA256=96461deced5c2a487ddc65207ec5a9cffeca0d34e7af7ea1afc470ff0d746207`
   - `HY_VERSION=0.26.0`
   - `HYRULE_VERSION=0.3.0`
 
@@ -535,16 +535,16 @@ GPL-2.0-only
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.38.5-r0 description:
+sqlite-libs-3.40.1-r0 description:
 Sqlite3 library
 
-sqlite-libs-3.38.5-r0 webpage:
+sqlite-libs-3.40.1-r0 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.38.5-r0 installed size:
-992 KiB
+sqlite-libs-3.40.1-r0 installed size:
+1008 KiB
 
-sqlite-libs-3.38.5-r0 license:
+sqlite-libs-3.40.1-r0 license:
 blessing
 
 ```
