@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:22aa284e6417ece6e6c60103a8b3cd03d4b2aef8987a04847668c7572359467d`
-- Created: `2023-04-26T20:03:10.622424846Z`
-- Virtual Size: ~ 413.63 Mb  
+- Image ID: `sha256:d24688de986e12190aa4e8771efe3c130f62ce98c8dfbe4b3873876b4b51b2df`
+- Created: `2023-05-04T14:54:34.880088305Z`
+- Virtual Size: ~ 413.89 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["clj"]`
@@ -668,12 +668,12 @@ $ apt-get source -qq --print-uris gdbm=1.18.1-5
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.18.1-5.debian.tar.xz' gdbm_1.18.1-5.debian.tar.xz 16348 SHA256:3c1a0e05b40a97ee51ce77c736c72c37738ba31b2720111d3bc99175a2c3a3ed
 ```
 
-### `dpkg` source package: `git=1:2.25.1-1ubuntu3.10`
+### `dpkg` source package: `git=1:2.25.1-1ubuntu3.11`
 
 Binary Packages:
 
-- `git=1:2.25.1-1ubuntu3.10`
-- `git-man=1:2.25.1-1ubuntu3.10`
+- `git=1:2.25.1-1ubuntu3.11`
+- `git-man=1:2.25.1-1ubuntu3.11`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -696,9 +696,14 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris git=1:2.25.1-1ubuntu3.11
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1-1ubuntu3.11.dsc' git_2.25.1-1ubuntu3.11.dsc 2966 SHA512:7d3c3378a2417cf4e32133786a654abdd7a2dfeaf6bbe1533b15aee6446960c8f04752b8458c93f1638ce85156194b952c0c9e6b233f163a4e3d10490f7975b1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1.orig.tar.xz' git_2.25.1.orig.tar.xz 5875548 SHA512:15241143acfd8542d85d2709ac3c80dbd6e8d5234438f70c4f33cc71a2bdec3e32938df7f6351e2746d570b021d3bd0b70474ea4beec0c51d1fc45f9c287b344
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1-1ubuntu3.11.debian.tar.xz' git_2.25.1-1ubuntu3.11.debian.tar.xz 708608 SHA512:f761df90be2d25b8bbdcbec0fa781bf2b20e954350eb15a1a210408876ac7e90ca4b7643b00c074cd4ce7b286494b0bfb71f4586024e01c026737cb290165ba9
+```
 
 ### `dpkg` source package: `glibc=2.31-0ubuntu9.9`
 
