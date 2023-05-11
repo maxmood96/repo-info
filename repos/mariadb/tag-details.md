@@ -1747,11 +1747,21 @@ CMD ["mariadbd"]
 
 ## `mariadb:10.10.4`
 
-**does not exist** (yet?)
+```console
+$ docker pull mariadb@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `mariadb:10.10.4-jammy`
 
-**does not exist** (yet?)
+```console
+$ docker pull mariadb@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `mariadb:10.11`
 
@@ -2605,11 +2615,21 @@ CMD ["mariadbd"]
 
 ## `mariadb:10.11.3`
 
-**does not exist** (yet?)
+```console
+$ docker pull mariadb@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `mariadb:10.11.3-jammy`
 
-**does not exist** (yet?)
+```console
+$ docker pull mariadb@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `mariadb:10.3`
 
@@ -3321,11 +3341,21 @@ CMD ["mysqld"]
 
 ## `mariadb:10.3.39`
 
-**does not exist** (yet?)
+```console
+$ docker pull mariadb@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `mariadb:10.3.39-focal`
 
-**does not exist** (yet?)
+```console
+$ docker pull mariadb@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `mariadb:10.4`
 
@@ -4037,11 +4067,21 @@ CMD ["mysqld"]
 
 ## `mariadb:10.4.29`
 
-**does not exist** (yet?)
+```console
+$ docker pull mariadb@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `mariadb:10.4.29-focal`
 
-**does not exist** (yet?)
+```console
+$ docker pull mariadb@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `mariadb:10.5`
 
@@ -4927,11 +4967,21 @@ CMD ["mysqld"]
 
 ## `mariadb:10.5.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull mariadb@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `mariadb:10.5.20-focal`
 
-**does not exist** (yet?)
+```console
+$ docker pull mariadb@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `mariadb:10.6`
 
@@ -5817,11 +5867,21 @@ CMD ["mariadbd"]
 
 ## `mariadb:10.6.13`
 
-**does not exist** (yet?)
+```console
+$ docker pull mariadb@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `mariadb:10.6.13-focal`
 
-**does not exist** (yet?)
+```console
+$ docker pull mariadb@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `mariadb:10.8`
 
@@ -6707,11 +6767,21 @@ CMD ["mariadbd"]
 
 ## `mariadb:10.8.8`
 
-**does not exist** (yet?)
+```console
+$ docker pull mariadb@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `mariadb:10.8.8-jammy`
 
-**does not exist** (yet?)
+```console
+$ docker pull mariadb@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `mariadb:10.9`
 
@@ -7565,11 +7635,21 @@ CMD ["mariadbd"]
 
 ## `mariadb:10.9.6`
 
-**does not exist** (yet?)
+```console
+$ docker pull mariadb@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `mariadb:10.9.6-jammy`
 
-**does not exist** (yet?)
+```console
+$ docker pull mariadb@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `mariadb:11.0-rc`
 
@@ -9707,8 +9787,18 @@ CMD ["mariadbd"]
 
 ## `mariadb:lts`
 
-**does not exist** (yet?)
+```console
+$ docker pull mariadb@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `mariadb:lts-jammy`
 
-**does not exist** (yet?)
+```console
+$ docker pull mariadb@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
