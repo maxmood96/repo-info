@@ -1,10 +1,10 @@
-# `openjdk:21-ea-21-jdk-slim-buster`
+# `openjdk:21-ea-22-jdk-slim-buster`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0c931a9ffe1821c903d61c2b46151e1402a6527248c48435a9394ee6f2973dea`
-- Created: `2023-05-04T23:38:00.783646858Z`
-- Virtual Size: ~ 427.37 Mb  
+- Image ID: `sha256:54dd4780b659e19fdf74558fa7f256bb1f7687fbdc9ac4b3b0cf060d3366c949`
+- Created: `2023-05-11T23:03:31.79988368Z`
+- Virtual Size: ~ 427.97 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/openjdk-21/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/local/openjdk-21`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=21-ea+21`
+  - `JAVA_VERSION=21-ea+22`
 
 ## `dpkg` (`.deb`-based packages)
 
