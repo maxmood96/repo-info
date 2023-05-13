@@ -3638,20 +3638,13 @@ Licenses: (parsed from: `/usr/share/doc/vim-common/copyright`, `/usr/share/doc/v
 - `XPM`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris vim=2:9.0.1378-1
-'http://deb.debian.org/debian/pool/main/v/vim/vim_9.0.1378-1.dsc' vim_9.0.1378-1.dsc 3177 SHA256:22f5912861dfb5beac051494576d01a4ef08b6be6413f122710a9172d91f308c
-'http://deb.debian.org/debian/pool/main/v/vim/vim_9.0.1378.orig.tar.xz' vim_9.0.1378.orig.tar.xz 11109404 SHA256:6f20c108c0fe5dbcb00a00080b3607feb024a499de2c4d004de9c3bd74516523
-'http://deb.debian.org/debian/pool/main/v/vim/vim_9.0.1378-1.debian.tar.xz' vim_9.0.1378-1.debian.tar.xz 180200 SHA256:81cd659c6e2a960a068cea189d1242fb7155fdd318ea79de3aca4ce45e41ca8e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/vim/2:9.0.1378-1/
 
-- https://sources.debian.net/src/vim/2:9.0.1378-1/ (for browsing the source)
-- https://sources.debian.net/src/vim/2:9.0.1378-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/vim/2:9.0.1378-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.21.3-1`
 
