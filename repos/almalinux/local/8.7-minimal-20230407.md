@@ -1,4 +1,4 @@
-# `almalinux:minimal`
+# `almalinux:8-minimal`
 
 ## Docker Metadata
 
