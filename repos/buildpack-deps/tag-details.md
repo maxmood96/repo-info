@@ -17,6 +17,9 @@
 -	[`buildpack-deps:23.04`](#buildpack-deps2304)
 -	[`buildpack-deps:23.04-curl`](#buildpack-deps2304-curl)
 -	[`buildpack-deps:23.04-scm`](#buildpack-deps2304-scm)
+-	[`buildpack-deps:23.10`](#buildpack-deps2310)
+-	[`buildpack-deps:23.10-curl`](#buildpack-deps2310-curl)
+-	[`buildpack-deps:23.10-scm`](#buildpack-deps2310-scm)
 -	[`buildpack-deps:bionic`](#buildpack-depsbionic)
 -	[`buildpack-deps:bionic-curl`](#buildpack-depsbionic-curl)
 -	[`buildpack-deps:bionic-scm`](#buildpack-depsbionic-scm)
@@ -43,6 +46,9 @@
 -	[`buildpack-deps:lunar`](#buildpack-depslunar)
 -	[`buildpack-deps:lunar-curl`](#buildpack-depslunar-curl)
 -	[`buildpack-deps:lunar-scm`](#buildpack-depslunar-scm)
+-	[`buildpack-deps:mantic`](#buildpack-depsmantic)
+-	[`buildpack-deps:mantic-curl`](#buildpack-depsmantic-curl)
+-	[`buildpack-deps:mantic-scm`](#buildpack-depsmantic-scm)
 -	[`buildpack-deps:oldstable`](#buildpack-depsoldstable)
 -	[`buildpack-deps:oldstable-curl`](#buildpack-depsoldstable-curl)
 -	[`buildpack-deps:oldstable-scm`](#buildpack-depsoldstable-scm)
@@ -3860,6 +3866,18 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercuri
 		Last Modified: Wed, 03 May 2023 22:34:37 GMT  
 		Size: 44.2 MB (44218928 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `buildpack-deps:23.10`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:23.10-curl`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:23.10-scm`
+
+**does not exist** (yet?)
 
 ## `buildpack-deps:bionic`
 
@@ -10724,6 +10742,18 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercuri
 		Last Modified: Wed, 03 May 2023 22:34:37 GMT  
 		Size: 44.2 MB (44218928 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `buildpack-deps:mantic`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:mantic-curl`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:mantic-scm`
+
+**does not exist** (yet?)
 
 ## `buildpack-deps:oldstable`
 
