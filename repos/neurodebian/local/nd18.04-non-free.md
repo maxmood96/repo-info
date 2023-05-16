@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:97bb7a8f0e8135403e8e485b1e329938addf81ddadf3098c440a8e59666b9b66`
-- Created: `2023-03-16T05:56:25.93757196Z`
-- Virtual Size: ~ 75.01 Mb  
+- Image ID: `sha256:940ae3002ffa7baadfa10c87d888bb9be5fe56c1d95565f40821ed9ff2b94bea`
+- Created: `2023-05-16T01:02:42.539019833Z`
+- Virtual Size: ~ 75.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -54,21 +54,25 @@ $ apt-get source -qq --print-uris adduser=3.116ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.116ubuntu1.tar.xz' adduser_3.116ubuntu1.tar.xz 216868 SHA256:f34f1d95e96ecae3b068a3dd666848f82f06cbb26152c56a6b72bd71555a8f18
 ```
 
-### `dpkg` source package: `apt=1.6.14`
+### `dpkg` source package: `apt=1.6.17`
 
 Binary Packages:
 
-- `apt=1.6.14`
-- `libapt-pkg5.0:amd64=1.6.14`
+- `apt=1.6.17`
+- `libapt-pkg5.0:amd64=1.6.17`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
 
 - `GPL-2`
 - `GPLv2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris apt=1.6.17
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.17.dsc' apt_1.6.17.dsc 2854 SHA512:2c23243565567a10870afff4e015048892661c900a218aabb63229bc555854d0ca3b45781ecebb97bb7a87a5ccf61b984893c4d1a7e4f057a95111b70f75df04
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.17.tar.xz' apt_1.6.17.tar.xz 2179956 SHA512:fe3b75a21845a9c1c5b19379effabfa5484b550b4f4c27e4a289e1071b0a2683a28907290cfd163d54bc6410e6f79ed565c7bb184dc6191b531a9f10cafbddcf
+```
 
 ### `dpkg` source package: `attr=1:2.4.47-2build1`
 
