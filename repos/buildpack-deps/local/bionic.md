@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bf89ebf6b3e4e5459d571621e6cc571da469550353d01b76bb4a0abf0742e68e`
-- Created: `2023-05-02T23:21:33.783488059Z`
-- Virtual Size: ~ 621.13 Mb  
+- Image ID: `sha256:3f42bc7df6657dc913fc31fa9adcae52cdab00164ff368ee8a46351357b4b855`
+- Created: `2023-05-16T01:36:09.167087607Z`
+- Virtual Size: ~ 621.14 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -94,21 +94,25 @@ $ apt-get source -qq --print-uris apr=1.6.3-2
 'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.6.3-2.debian.tar.xz' apr_1.6.3-2.debian.tar.xz 213068 SHA256:ac515f888f7157586631e3de9792ee01d239f9cbf1e768be31ee6daac61f2597
 ```
 
-### `dpkg` source package: `apt=1.6.14`
+### `dpkg` source package: `apt=1.6.17`
 
 Binary Packages:
 
-- `apt=1.6.14`
-- `libapt-pkg5.0:amd64=1.6.14`
+- `apt=1.6.17`
+- `libapt-pkg5.0:amd64=1.6.17`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
 
 - `GPL-2`
 - `GPLv2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris apt=1.6.17
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.17.dsc' apt_1.6.17.dsc 2854 SHA512:2c23243565567a10870afff4e015048892661c900a218aabb63229bc555854d0ca3b45781ecebb97bb7a87a5ccf61b984893c4d1a7e4f057a95111b70f75df04
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.6.17.tar.xz' apt_1.6.17.tar.xz 2179956 SHA512:fe3b75a21845a9c1c5b19379effabfa5484b550b4f4c27e4a289e1071b0a2683a28907290cfd163d54bc6410e6f79ed565c7bb184dc6191b531a9f10cafbddcf
+```
 
 ### `dpkg` source package: `attr=1:2.4.47-2build1`
 
@@ -2370,14 +2374,9 @@ Licenses: (parsed from: `/usr/share/doc/libwebp-dev/copyright`, `/usr/share/doc/
 
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libwebp=0.6.1-2ubuntu0.18.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwebp/libwebp_0.6.1-2ubuntu0.18.04.1.dsc' libwebp_0.6.1-2ubuntu0.18.04.1.dsc 2185 SHA512:a7389414d1a4d1dae5e3ac794342e3034ff59255e379f5229077a481dda9497332b58668996a81da51ac3a55b303ce2c5254d11731c95795ea7525ba47a76150
-'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwebp/libwebp_0.6.1.orig.tar.gz' libwebp_0.6.1.orig.tar.gz 3554290 SHA512:313b345a01c91eb07c2e4d46b93fcda9c50dca9e05e39f757238a679355514a2e9bc9bc220f3d3eb6d6a55148957cb2be14dac330203953337759841af1a32bf
-'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwebp/libwebp_0.6.1-2ubuntu0.18.04.1.debian.tar.xz' libwebp_0.6.1-2ubuntu0.18.04.1.debian.tar.xz 16772 SHA512:b0c8ee7243e7ace81d0b4143566a1f5e2a62bc84ffdba54975d08432eb2bff93c1e7ee181b4a1e5e7ab5a6274545fcd58143d3d141dbd9a23441cb54e36a0e61
-```
 
 ### `dpkg` source package: `libwmf=0.2.8.4-12`
 
@@ -2629,11 +2628,11 @@ $ apt-get source -qq --print-uris libzstd=1.3.3+dfsg-2ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.3.3%2bdfsg-2ubuntu1.2.debian.tar.xz' libzstd_1.3.3+dfsg-2ubuntu1.2.debian.tar.xz 13764 SHA512:f14aa9e453c7041a79dd90a52b5955b86fa86886b89ef26d4d257aa017a50d97410e8b875593992ad7d4b7e8e8d55743b8c66706be62cd4234f81e49c8bfc05d
 ```
 
-### `dpkg` source package: `linux=4.15.0-210.221`
+### `dpkg` source package: `linux=4.15.0-211.222`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.15.0-210.221`
+- `linux-libc-dev:amd64=4.15.0-211.222`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2642,10 +2641,10 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=4.15.0-210.221
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-210.221.dsc' linux_4.15.0-210.221.dsc 7102 SHA512:f5a8ebfc8f43bb2bf93c4e09e09c9aafe6c41b45beff6f074eb39156af3971f14a73cf6fd022b8875f11bbb64fdfcd3304eb4692b415ff068d25f869297385e2
+$ apt-get source -qq --print-uris linux=4.15.0-211.222
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-211.222.dsc' linux_4.15.0-211.222.dsc 7468 SHA512:b4c5953dcc51c37105d3bea4bbd852b466b7e1a6ea020996a2ed14d4a7e7d3196c33082b861d62703a19b4282315dfac8a83652de07b4428c29c8563672e3bfe
 'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0.orig.tar.gz' linux_4.15.0.orig.tar.gz 157656459 SHA512:0fab606a295e0857f774f8adaa9d56bf2cb227fbab2daed374415da216391b156f49e606ba37ac402987c5796d408807da5d1a42c0d85a8552f109a3e279443d
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-210.221.diff.gz' linux_4.15.0-210.221.diff.gz 13689411 SHA512:891e9f53cdd511529d715e533482957fe487381d0e99603803b4c554779e1f12d6943ae475865e302d2540fc1516238d79b7179e37bb448ff6be523cf3853acc
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.15.0-211.222.diff.gz' linux_4.15.0-211.222.diff.gz 13702936 SHA512:aeb1296fdb15a61b8ca4fa9ef6e641d82341d735eca2f6f18f577579fa5c6ad056af34bdd4c0dae57cae0c84064ae74b96bad9671d4797d92049703ddd02f945
 ```
 
 ### `dpkg` source package: `lsb=9.20170808ubuntu1`
@@ -2867,12 +2866,12 @@ $ apt-get source -qq --print-uris mpfr4=4.0.1-1
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mpfr4/mpfr4_4.0.1-1.debian.tar.xz' mpfr4_4.0.1-1.debian.tar.xz 10460 SHA256:9e0d582dea7e88958b8bc1f3782ada59b9c7175f01b4e06e8487fc6cbfc5a2d7
 ```
 
-### `dpkg` source package: `mysql-5.7=5.7.41-0ubuntu0.18.04.1`
+### `dpkg` source package: `mysql-5.7=5.7.42-0ubuntu0.18.04.1`
 
 Binary Packages:
 
-- `libmysqlclient-dev=5.7.41-0ubuntu0.18.04.1`
-- `libmysqlclient20:amd64=5.7.41-0ubuntu0.18.04.1`
+- `libmysqlclient-dev=5.7.42-0ubuntu0.18.04.1`
+- `libmysqlclient20:amd64=5.7.42-0ubuntu0.18.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/share/doc/libmysqlclient20/copyright`)
 
@@ -2890,9 +2889,14 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris mysql-5.7=5.7.42-0ubuntu0.18.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.42-0ubuntu0.18.04.1.dsc' mysql-5.7_5.7.42-0ubuntu0.18.04.1.dsc 3446 SHA512:2d12b9c39d78926787facb9a900051ff2f50f2d47eb56ca65324592973cbb62b34fd6edbea69cf408f9934b403942453a1f994c92328838a48ed765bc7e07773
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.42.orig.tar.gz' mysql-5.7_5.7.42.orig.tar.gz 53288125 SHA512:c17cc29f99b9944edf27cb5fa9064ba7a0b4ed8a28f10a3d0bc6b3d45f69bc804efc7fc3a20faece6fe341f5ce8f965f914925e8d55a2f2c8c5fa337ada94df9
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.42-0ubuntu0.18.04.1.debian.tar.xz' mysql-5.7_5.7.42-0ubuntu0.18.04.1.debian.tar.xz 157000 SHA512:a823b1c4ff968b57d7b5f73cdf7a5afd179a61af97176bddb12c472364a4fe45554a89906bd5a2674488e9f9f16d4af69f7436dcc599b1ab5fc3f5c2984d189a
+```
 
 ### `dpkg` source package: `mysql-defaults=1.0.4`
 
