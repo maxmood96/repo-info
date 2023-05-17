@@ -6028,14 +6028,9 @@ Licenses: (parsed from: `/usr/share/doc/libwebp6/copyright`, `/usr/share/doc/lib
 
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libwebp=0.6.1-2ubuntu0.20.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwebp/libwebp_0.6.1-2ubuntu0.20.04.1.dsc' libwebp_0.6.1-2ubuntu0.20.04.1.dsc 2185 SHA512:00c898e9ee8682a702751e255921821ac73a095404c3dfc9d47f69517de4a2bf74a62b4f3f0a9325370266c7bb951fee5bea830c8ab2c3a4b91652e9caa8ade6
-'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwebp/libwebp_0.6.1.orig.tar.gz' libwebp_0.6.1.orig.tar.gz 3554290 SHA512:313b345a01c91eb07c2e4d46b93fcda9c50dca9e05e39f757238a679355514a2e9bc9bc220f3d3eb6d6a55148957cb2be14dac330203953337759841af1a32bf
-'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwebp/libwebp_0.6.1-2ubuntu0.20.04.1.debian.tar.xz' libwebp_0.6.1-2ubuntu0.20.04.1.debian.tar.xz 16748 SHA512:46fe77068114343821bd4a74c9654a91048e5ebf7f6b397acdc8853482668fe170f3c7552be32293e26b965826f8d0f2c69da2418284b2851f3d89e64f7f62c1
-```
 
 ### `dpkg` source package: `libwmf=0.2.8.4-17ubuntu1`
 
@@ -7573,14 +7568,9 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-11-jdk/copyright`, `/usr/share/d
 - `LGPL-2`
 - `LGPL-2-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjdk-lts=11.0.18+10-0ubuntu1~20.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.18%2b10-0ubuntu1%7e20.04.1.dsc' openjdk-lts_11.0.18+10-0ubuntu1~20.04.1.dsc 4576 SHA512:bb47e0603d8584953b6c6db6661c25fc5da23dc9f58668d2011d7133eada6d4a78efdfc654a798b169597c3ecb39bb836323e4f0dc4bb4eb8f686541f75a8e73
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.18%2b10.orig.tar.gz' openjdk-lts_11.0.18+10.orig.tar.gz 125314904 SHA512:96c500bd2f7c1c5ef2abfc1eb24c930d95e4234cb8dea25151eb57b35d3c99e11761b454f07c532f58d39d5ddb6ef41bc54287940f0a4b8cd7cc570f8e4857a1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.18%2b10-0ubuntu1%7e20.04.1.debian.tar.xz' openjdk-lts_11.0.18+10-0ubuntu1~20.04.1.debian.tar.xz 157576 SHA512:c282d82b46134fa2bfaa9404e20ac9e42141caa2b8019d975c7f5fb951449b467f1d2241dee08879c8c2a588c48128a10b5482ad46f6d390fd6042f9352a3e57
-```
 
 ### `dpkg` source package: `openjpeg2=2.3.1-1ubuntu4.20.04.1`
 
