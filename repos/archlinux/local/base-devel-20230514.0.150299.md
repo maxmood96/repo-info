@@ -1,10 +1,10 @@
-# `archlinux:latest`
+# `archlinux:base-devel`
 
 ## Docker Metadata
 
-- Image ID: `sha256:510e0fdeb1f4d5772de5d496def012a7bc129c899637fdaf8ce14173f24d39ba`
-- Created: `2023-05-08T19:20:16.588769216Z`
-- Virtual Size: ~ 426.56 Mb  
+- Image ID: `sha256:38ada122f6f0952bf55e7f2d83885775b9f96bd207e87958feb7acd4c5cdc806`
+- Created: `2023-05-15T18:21:22.702963799Z`
+- Virtual Size: ~ 781.63 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/usr/bin/bash"]`
