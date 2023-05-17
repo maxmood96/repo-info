@@ -1407,11 +1407,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris krb5=1.20.1-1
-'http://http.debian.net/debian/pool/main/k/krb5/krb5_1.20.1-1.dsc' krb5_1.20.1-1.dsc 3168 SHA256:dca082e1aac1ae5f7622b524942a305ad7c93e584f3a67db02f48542eb5b415a
-'http://http.debian.net/debian/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz' krb5_1.20.1.orig.tar.gz 8661660 SHA256:704aed49b19eb5a7178b34b2873620ec299db08752d6a8574f95d41879ab8851
-'http://http.debian.net/debian/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz.asc' krb5_1.20.1.orig.tar.gz.asc 833 SHA256:2afeec5dbc586cc40b7975645e02b4c41c4d719dd02213e828c72d8239d55666
-'http://http.debian.net/debian/pool/main/k/krb5/krb5_1.20.1-1.debian.tar.xz' krb5_1.20.1-1.debian.tar.xz 99428 SHA256:19c5f3e66ee1c22f05d86e1ec521e08f885105db4d42403593db6e6db38fad13
+'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.20.1-1.dsc' krb5_1.20.1-1.dsc 3168 SHA256:dca082e1aac1ae5f7622b524942a305ad7c93e584f3a67db02f48542eb5b415a
+'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz' krb5_1.20.1.orig.tar.gz 8661660 SHA256:704aed49b19eb5a7178b34b2873620ec299db08752d6a8574f95d41879ab8851
+'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz.asc' krb5_1.20.1.orig.tar.gz.asc 833 SHA256:2afeec5dbc586cc40b7975645e02b4c41c4d719dd02213e828c72d8239d55666
+'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.20.1-1.debian.tar.xz' krb5_1.20.1-1.debian.tar.xz 99428 SHA256:19c5f3e66ee1c22f05d86e1ec521e08f885105db4d42403593db6e6db38fad13
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/krb5/1.20.1-1/ (for browsing the source)
+- https://sources.debian.net/src/krb5/1.20.1-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/krb5/1.20.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lapack=3.11.0-2`
 
@@ -2382,10 +2388,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=6.1.20-2
-'http://http.debian.net/debian/pool/main/l/linux/linux_6.1.20-2.dsc' linux_6.1.20-2.dsc 276943 SHA256:0770faca88ec9da5711fc0d5abdd150d188c56bf8dd19ae0120aa22f5fe69a3e
-'http://http.debian.net/debian/pool/main/l/linux/linux_6.1.20.orig.tar.xz' linux_6.1.20.orig.tar.xz 137291340 SHA256:18dca37b48f4643a62a8bd0adee0888d7b815f75229f90833992b28b6a651427
-'http://http.debian.net/debian/pool/main/l/linux/linux_6.1.20-2.debian.tar.xz' linux_6.1.20-2.debian.tar.xz 4585780 SHA256:8fc1b579ed50f458975aa1d65ae3d513e64a8fd207d192ea8767a58e72dd09b6
+'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.20-2.dsc' linux_6.1.20-2.dsc 276943 SHA256:0770faca88ec9da5711fc0d5abdd150d188c56bf8dd19ae0120aa22f5fe69a3e
+'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.20.orig.tar.xz' linux_6.1.20.orig.tar.xz 137291340 SHA256:18dca37b48f4643a62a8bd0adee0888d7b815f75229f90833992b28b6a651427
+'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.20-2.debian.tar.xz' linux_6.1.20-2.debian.tar.xz 4585780 SHA256:8fc1b579ed50f458975aa1d65ae3d513e64a8fd207d192ea8767a58e72dd09b6
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/linux/6.1.20-2/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.1.20-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.1.20-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `littler=0.3.17-1`
 
