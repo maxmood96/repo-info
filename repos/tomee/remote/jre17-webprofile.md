@@ -1,7 +1,7 @@
 ## `tomee:jre17-webprofile`
 
 ```console
-$ docker pull tomee@sha256:9992b960f91fdb74b338235ed99f1bd61c540a8e70fa82fb9d9131791840c6ec
+$ docker pull tomee@sha256:462fe857122c879e16e432c0e17921d3fea56cf71c34a1ee889d41eb48f8f2ef
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,14 +12,14 @@ $ docker pull tomee@sha256:9992b960f91fdb74b338235ed99f1bd61c540a8e70fa82fb9d913
 ### `tomee:jre17-webprofile` - linux; amd64
 
 ```console
-$ docker pull tomee@sha256:1e8c79bfcd94239dfd860175a90725c4795479d4bebf40d787bbd58d8bcc7f6f
+$ docker pull tomee@sha256:bcdc0bd5bf3698725d411f56f2ae59a5fa87cf2b9ca6a9334f5aad84eb150716
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **145.4 MB (145428366 bytes)**  
+-	Total Size: **146.9 MB (146897967 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5f2be16b0a58a41cb6243c712b1c83424ad5185e4dd7d6e53b10f98cc2b76279`
+-	Image ID: `sha256:1503c800fcb33d91cd9e5914df06c5868b0c1493d1b34afbe35dd87d2910be29`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -59,15 +59,15 @@ WORKDIR /usr/local/tomee
 RUN apt-get update   && apt-get install -y --no-install-recommends gpg dirmngr gpg-agent   && rm -rf /var/lib/apt/lists/*
 # Tue, 02 May 2023 19:00:17 GMT
 RUN set -xe;   for key in   9056B710F1E332780DE7AF34CBAEBE39A46C4CA1   F067B8140F5DD80E1D3B5D92318242FE9A0B1183   223D3A74B068ECA354DC385CE126833F9CF64915   DBCCD103B8B24F86FFAAB025C8BB472CD297D428   7A2744A8A9AAF063C23EB7868EBE7DBE8D050EEF   B8B301E6105DF628076BD92C5483E55897ABD9B9   FAA603D58B1BA4EDF65896D0ED340E0E6D545F97   A57DAF81C1B69921F4BA8723A8DE0A4DB863A7C1   82D8419BA697F0E7FB85916EE91287822FDB81B1   B7574789F5018690043E6DD9C212662E12F3E1DD   C23A3F6F595EBD0F960270CC997C8F1A5BE6E4C1   678F2D98F1FD9643811639FB622B8F2D043F71D8   BDD0BBEB753192957EFC5F896A62FC8EF17D8FEF   D11DF12CC2CA4894BDE638B967C1227A2678363C   C92604B0DEC5C62CFF5801E73D4683C24EDC64D1   626C542EDA7C113814B77AF09C04914D63645D20   3948829384B269D333CC5B98358807C52B4B0E23   B83D15E72253ED1104EB4FBBDAB472F0E5B8A431   ; do     gpg --batch --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys "$key" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done
-# Tue, 02 May 2023 19:00:17 GMT
-ENV TOMEE_VER=8.0.14
-# Tue, 02 May 2023 19:00:17 GMT
+# Thu, 18 May 2023 17:22:30 GMT
+ENV TOMEE_VER=8.0.15
+# Thu, 18 May 2023 17:22:30 GMT
 ENV TOMEE_BUILD=webprofile
-# Tue, 02 May 2023 19:00:22 GMT
+# Thu, 18 May 2023 17:22:35 GMT
 RUN set -x   && curl -fSL https://dist.apache.org/repos/dist/release/tomee/tomee-${TOMEE_VER}/apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz.asc -o tomee.tar.gz.asc   && curl -fSL https://dist.apache.org/repos/dist/release/tomee/tomee-${TOMEE_VER}/apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz.sha512 -o tomee.tar.gz.sha512   && curl -fSL https://dist.apache.org/repos/dist/release/tomee/tomee-${TOMEE_VER}/apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz -o apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && gpg --batch --verify tomee.tar.gz.asc apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && echo `cat tomee.tar.gz.sha512` | sha512sum -c -   && tar -zxf apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && mv apache-tomee-${TOMEE_BUILD}-${TOMEE_VER}/* /usr/local/tomee   && rm apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && rm -Rf apache-tomee-${TOMEE_BUILD}-${TOMEE_VER}   && rm bin/*.bat   && rm bin/*.exe   && rm bin/*.tar.gz*   && rm tomee.tar.gz.asc   && rm tomee.tar.gz*
-# Tue, 02 May 2023 19:00:23 GMT
+# Thu, 18 May 2023 17:22:36 GMT
 EXPOSE 8080
-# Tue, 02 May 2023 19:00:23 GMT
+# Thu, 18 May 2023 17:22:36 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -100,22 +100,22 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Tue, 02 May 2023 19:15:24 GMT  
 		Size: 62.9 KB (62923 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b48c8e8dc0e269d2b564765f1605cdde85a88b606d55f198d2c05ee48a123eaf`  
-		Last Modified: Tue, 02 May 2023 19:15:27 GMT  
-		Size: 47.5 MB (47483939 bytes)  
+	-	`sha256:68aa9f32f95f010eca2037027c3716230c3dd11951c108b255611d5101682b2a`  
+		Last Modified: Thu, 18 May 2023 17:34:08 GMT  
+		Size: 49.0 MB (48953540 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `tomee:jre17-webprofile` - linux; arm64 variant v8
 
 ```console
-$ docker pull tomee@sha256:a3e78758869f359322004bec467a241478283c9fbc36fb17586040205e0473c8
+$ docker pull tomee@sha256:08edfe358e72a7d967e6e8bea110a240eb6ca04406d6aaea0c0b317bd003543d
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **144.2 MB (144239463 bytes)**  
+-	Total Size: **145.7 MB (145709096 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad4dc920d29ebc6e1eb85ae7e2325bedcf26484d7e10dc83e7882c644c8d16ce`
+-	Image ID: `sha256:29902bfefd8769ca1582c3f3f379cf02584e6b051bc8433100f86a4eeec99cab`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -155,15 +155,15 @@ WORKDIR /usr/local/tomee
 RUN apt-get update   && apt-get install -y --no-install-recommends gpg dirmngr gpg-agent   && rm -rf /var/lib/apt/lists/*
 # Tue, 02 May 2023 19:21:30 GMT
 RUN set -xe;   for key in   9056B710F1E332780DE7AF34CBAEBE39A46C4CA1   F067B8140F5DD80E1D3B5D92318242FE9A0B1183   223D3A74B068ECA354DC385CE126833F9CF64915   DBCCD103B8B24F86FFAAB025C8BB472CD297D428   7A2744A8A9AAF063C23EB7868EBE7DBE8D050EEF   B8B301E6105DF628076BD92C5483E55897ABD9B9   FAA603D58B1BA4EDF65896D0ED340E0E6D545F97   A57DAF81C1B69921F4BA8723A8DE0A4DB863A7C1   82D8419BA697F0E7FB85916EE91287822FDB81B1   B7574789F5018690043E6DD9C212662E12F3E1DD   C23A3F6F595EBD0F960270CC997C8F1A5BE6E4C1   678F2D98F1FD9643811639FB622B8F2D043F71D8   BDD0BBEB753192957EFC5F896A62FC8EF17D8FEF   D11DF12CC2CA4894BDE638B967C1227A2678363C   C92604B0DEC5C62CFF5801E73D4683C24EDC64D1   626C542EDA7C113814B77AF09C04914D63645D20   3948829384B269D333CC5B98358807C52B4B0E23   B83D15E72253ED1104EB4FBBDAB472F0E5B8A431   ; do     gpg --batch --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys "$key" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done
-# Tue, 02 May 2023 19:21:30 GMT
-ENV TOMEE_VER=8.0.14
-# Tue, 02 May 2023 19:21:30 GMT
+# Thu, 18 May 2023 17:46:56 GMT
+ENV TOMEE_VER=8.0.15
+# Thu, 18 May 2023 17:46:56 GMT
 ENV TOMEE_BUILD=webprofile
-# Tue, 02 May 2023 19:21:36 GMT
+# Thu, 18 May 2023 17:47:01 GMT
 RUN set -x   && curl -fSL https://dist.apache.org/repos/dist/release/tomee/tomee-${TOMEE_VER}/apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz.asc -o tomee.tar.gz.asc   && curl -fSL https://dist.apache.org/repos/dist/release/tomee/tomee-${TOMEE_VER}/apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz.sha512 -o tomee.tar.gz.sha512   && curl -fSL https://dist.apache.org/repos/dist/release/tomee/tomee-${TOMEE_VER}/apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz -o apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && gpg --batch --verify tomee.tar.gz.asc apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && echo `cat tomee.tar.gz.sha512` | sha512sum -c -   && tar -zxf apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && mv apache-tomee-${TOMEE_BUILD}-${TOMEE_VER}/* /usr/local/tomee   && rm apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && rm -Rf apache-tomee-${TOMEE_BUILD}-${TOMEE_VER}   && rm bin/*.bat   && rm bin/*.exe   && rm bin/*.tar.gz*   && rm tomee.tar.gz.asc   && rm tomee.tar.gz*
-# Tue, 02 May 2023 19:21:36 GMT
+# Thu, 18 May 2023 17:47:02 GMT
 EXPOSE 8080
-# Tue, 02 May 2023 19:21:36 GMT
+# Thu, 18 May 2023 17:47:02 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -196,7 +196,7 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Tue, 02 May 2023 19:33:13 GMT  
 		Size: 62.9 KB (62878 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7cc7d6d85c96a400b1f2307fe0160634083f2d6485b6ad92fad77264d263492e`  
-		Last Modified: Tue, 02 May 2023 19:33:16 GMT  
-		Size: 47.5 MB (47483871 bytes)  
+	-	`sha256:87b728b5b946eca50fb5033c67adf5e03a26d49e7b399dc437d1129882eee5d8`  
+		Last Modified: Thu, 18 May 2023 17:54:07 GMT  
+		Size: 49.0 MB (48953504 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
