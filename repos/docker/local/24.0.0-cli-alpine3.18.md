@@ -1,19 +1,19 @@
-# `docker:20.10.24-git`
+# `docker:24.0.0-cli`
 
 ## Docker Metadata
 
-- Image ID: `sha256:069a25642df9ea2629f2a184218663c3443322005f85c35bd60eadaad07e482a`
-- Created: `2023-05-10T10:04:23Z`
-- Virtual Size: ~ 174.58 Mb  
+- Image ID: `sha256:74351ab338fd4cbbf00c22dd6858e70699511d59539d85f6427d7ed4c6d6cce2`
+- Created: `2023-05-16T17:59:38Z`
+- Virtual Size: ~ 151.31 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=20.10.24`
+  - `DOCKER_VERSION=24.0.0`
   - `DOCKER_BUILDX_VERSION=0.10.4`
-  - `DOCKER_COMPOSE_VERSION=2.17.3`
+  - `DOCKER_COMPOSE_VERSION=2.18.0`
   - `DOCKER_TLS_CERTDIR=/certs`
 
 ## `apk` (`.apk`-based packages)
@@ -86,23 +86,6 @@ GPL-2.0-only
 
 ```
 
-### `apk` package: `brotli-libs`
-
-```console
-brotli-libs-1.0.9-r14 description:
-Generic lossless compressor (libraries)
-
-brotli-libs-1.0.9-r14 webpage:
-https://github.com/google/brotli
-
-brotli-libs-1.0.9-r14 installed size:
-788 KiB
-
-brotli-libs-1.0.9-r14 license:
-MIT
-
-```
-
 ### `apk` package: `busybox`
 
 ```console
@@ -171,23 +154,6 @@ MPL-2.0 AND MIT
 
 ```
 
-### `apk` package: `git`
-
-```console
-git-2.40.1-r0 description:
-Distributed version control system
-
-git-2.40.1-r0 webpage:
-https://www.git-scm.com/
-
-git-2.40.1-r0 installed size:
-5948 KiB
-
-git-2.40.1-r0 license:
-GPL-2.0-only
-
-```
-
 ### `apk` package: `libc-utils`
 
 ```console
@@ -202,23 +168,6 @@ libc-utils-0.7.2-r5 installed size:
 
 libc-utils-0.7.2-r5 license:
 BSD-2-Clause AND BSD-3-Clause
-
-```
-
-### `apk` package: `libc6-compat`
-
-```console
-libc6-compat-1.2.4-r0 description:
-compatibility libraries for glibc
-
-libc6-compat-1.2.4-r0 webpage:
-https://musl.libc.org/
-
-libc6-compat-1.2.4-r0 installed size:
-12 KiB
-
-libc6-compat-1.2.4-r0 license:
-MIT
 
 ```
 
@@ -239,23 +188,6 @@ Apache-2.0
 
 ```
 
-### `apk` package: `libcurl`
-
-```console
-libcurl-8.0.1-r2 description:
-The multiprotocol file transfer library
-
-libcurl-8.0.1-r2 webpage:
-https://curl.se/
-
-libcurl-8.0.1-r2 installed size:
-532 KiB
-
-libcurl-8.0.1-r2 license:
-curl
-
-```
-
 ### `apk` package: `libedit`
 
 ```console
@@ -270,40 +202,6 @@ libedit-20221030.3.1-r1 installed size:
 
 libedit-20221030.3.1-r1 license:
 BSD-3-Clause
-
-```
-
-### `apk` package: `libexpat`
-
-```console
-libexpat-2.5.0-r1 description:
-XML Parser library written in C (libraries)
-
-libexpat-2.5.0-r1 webpage:
-https://libexpat.github.io/
-
-libexpat-2.5.0-r1 installed size:
-144 KiB
-
-libexpat-2.5.0-r1 license:
-MIT
-
-```
-
-### `apk` package: `libidn2`
-
-```console
-libidn2-2.3.4-r1 description:
-Encode/Decode library for internationalized domain names
-
-libidn2-2.3.4-r1 webpage:
-https://www.gnu.org/software/libidn#libidn2
-
-libidn2-2.3.4-r1 installed size:
-208 KiB
-
-libidn2-2.3.4-r1 license:
-GPL-2.0-or-later AND LGPL-3.0-or-later
 
 ```
 
@@ -338,23 +236,6 @@ libssl3-3.1.0-r4 installed size:
 
 libssl3-3.1.0-r4 license:
 Apache-2.0
-
-```
-
-### `apk` package: `libunistring`
-
-```console
-libunistring-1.1-r1 description:
-Library for manipulating Unicode strings and C strings
-
-libunistring-1.1-r1 webpage:
-https://www.gnu.org/software/libunistring/
-
-libunistring-1.1-r1 installed size:
-1696 KiB
-
-libunistring-1.1-r1 license:
-GPL-2.0-or-later OR LGPL-3.0-or-later
 
 ```
 
@@ -409,23 +290,6 @@ X11
 
 ```
 
-### `apk` package: `nghttp2-libs`
-
-```console
-nghttp2-libs-1.53.0-r0 description:
-Experimental HTTP/2 client, server and proxy (libraries)
-
-nghttp2-libs-1.53.0-r0 webpage:
-https://nghttp2.org
-
-nghttp2-libs-1.53.0-r0 installed size:
-152 KiB
-
-nghttp2-libs-1.53.0-r0 license:
-MIT
-
-```
-
 ### `apk` package: `openssh-client-common`
 
 ```console
@@ -474,23 +338,6 @@ openssh-keygen-9.3_p1-r3 installed size:
 
 openssh-keygen-9.3_p1-r3 license:
 BSD
-
-```
-
-### `apk` package: `pcre2`
-
-```console
-pcre2-10.42-r1 description:
-Perl-compatible regular expression library
-
-pcre2-10.42-r1 webpage:
-https://pcre.org/
-
-pcre2-10.42-r1 installed size:
-676 KiB
-
-pcre2-10.42-r1 license:
-BSD-3-Clause
 
 ```
 

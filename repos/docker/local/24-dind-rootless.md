@@ -1,18 +1,18 @@
-# `docker:24.0.0-rc.4-git`
+# `docker:24.0.0-dind-rootless`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0727642d0a7a5fd58bc43278182f3eb0f5b177e1f2df762ce86d7d4ad3a721e7`
-- Created: `2023-05-12T22:34:53Z`
-- Virtual Size: ~ 333.10 Mb  
+- Image ID: `sha256:d807ce95f584fdd7b6317628f994bb169e87421eeeab4cb227a172822a4da47f`
+- Created: `2023-05-16T17:59:38Z`
+- Virtual Size: ~ 379.76 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=24.0.0-rc.4`
+  - `DOCKER_VERSION=24.0.0`
   - `DOCKER_BUILDX_VERSION=0.10.4`
-  - `DOCKER_COMPOSE_VERSION=2.17.3`
+  - `DOCKER_COMPOSE_VERSION=2.18.0`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=1f32e3c95d72a29b3eaacba156ed675dba976cb5`
 
@@ -83,23 +83,6 @@ apk-tools-2.14.0-r0 installed size:
 
 apk-tools-2.14.0-r0 license:
 GPL-2.0-only
-
-```
-
-### `apk` package: `brotli-libs`
-
-```console
-brotli-libs-1.0.9-r14 description:
-Generic lossless compressor (libraries)
-
-brotli-libs-1.0.9-r14 webpage:
-https://github.com/google/brotli
-
-brotli-libs-1.0.9-r14 installed size:
-788 KiB
-
-brotli-libs-1.0.9-r14 license:
-MIT
 
 ```
 
@@ -256,20 +239,71 @@ GPL-2.0-or-later
 
 ```
 
-### `apk` package: `git`
+### `apk` package: `fuse-common`
 
 ```console
-git-2.40.1-r0 description:
-Distributed version control system
+fuse-common-3.14.1-r2 description:
+Common files for fuse2 and fuse3
 
-git-2.40.1-r0 webpage:
-https://www.git-scm.com/
+fuse-common-3.14.1-r2 webpage:
+https://github.com/libfuse/libfuse
 
-git-2.40.1-r0 installed size:
-5948 KiB
+fuse-common-3.14.1-r2 installed size:
+12 KiB
 
-git-2.40.1-r0 license:
-GPL-2.0-only
+fuse-common-3.14.1-r2 license:
+GPL-2.0-only AND LGPL-2.1-only
+
+```
+
+### `apk` package: `fuse-overlayfs`
+
+```console
+fuse-overlayfs-1.11-r1 description:
+FUSE implementation for overlayfs
+
+fuse-overlayfs-1.11-r1 webpage:
+https://github.com/containers/fuse-overlayfs
+
+fuse-overlayfs-1.11-r1 installed size:
+108 KiB
+
+fuse-overlayfs-1.11-r1 license:
+GPL-3.0-or-later
+
+```
+
+### `apk` package: `fuse3`
+
+```console
+fuse3-3.14.1-r2 description:
+The reference implementation of the Linux FUSE (Filesystem in Userspace) interface
+
+fuse3-3.14.1-r2 webpage:
+https://github.com/libfuse/libfuse
+
+fuse3-3.14.1-r2 installed size:
+92 KiB
+
+fuse3-3.14.1-r2 license:
+GPL-2.0-only AND LGPL-2.1-only
+
+```
+
+### `apk` package: `fuse3-libs`
+
+```console
+fuse3-libs-3.14.1-r2 description:
+The reference implementation of the Linux FUSE (Filesystem in Userspace) interface (libraries)
+
+fuse3-libs-3.14.1-r2 webpage:
+https://github.com/libfuse/libfuse
+
+fuse3-libs-3.14.1-r2 installed size:
+236 KiB
+
+fuse3-libs-3.14.1-r2 license:
+GPL-2.0-only AND LGPL-2.1-only
 
 ```
 
@@ -303,6 +337,74 @@ ip6tables-1.8.9-r2 installed size:
 292 KiB
 
 ip6tables-1.8.9-r2 license:
+GPL-2.0-or-later
+
+```
+
+### `apk` package: `iproute2`
+
+```console
+iproute2-6.3.0-r0 description:
+IP Routing Utilities
+
+iproute2-6.3.0-r0 webpage:
+https://wiki.linuxfoundation.org/networking/iproute2
+
+iproute2-6.3.0-r0 installed size:
+644 KiB
+
+iproute2-6.3.0-r0 license:
+GPL-2.0-or-later
+
+```
+
+### `apk` package: `iproute2-minimal`
+
+```console
+iproute2-minimal-6.3.0-r0 description:
+IP Routing Utilities (/sbin/ip only)
+
+iproute2-minimal-6.3.0-r0 webpage:
+https://wiki.linuxfoundation.org/networking/iproute2
+
+iproute2-minimal-6.3.0-r0 installed size:
+640 KiB
+
+iproute2-minimal-6.3.0-r0 license:
+GPL-2.0-or-later
+
+```
+
+### `apk` package: `iproute2-ss`
+
+```console
+iproute2-ss-6.3.0-r0 description:
+IP Routing Utilities (socket statistics tool)
+
+iproute2-ss-6.3.0-r0 webpage:
+https://wiki.linuxfoundation.org/networking/iproute2
+
+iproute2-ss-6.3.0-r0 installed size:
+168 KiB
+
+iproute2-ss-6.3.0-r0 license:
+GPL-2.0-or-later
+
+```
+
+### `apk` package: `iproute2-tc`
+
+```console
+iproute2-tc-6.3.0-r0 description:
+IP Routing Utilities (traffic control and XDP support)
+
+iproute2-tc-6.3.0-r0 webpage:
+https://wiki.linuxfoundation.org/networking/iproute2
+
+iproute2-tc-6.3.0-r0 installed size:
+616 KiB
+
+iproute2-tc-6.3.0-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -392,6 +494,23 @@ LGPL-2.1-or-later
 
 ```
 
+### `apk` package: `libbz2`
+
+```console
+libbz2-1.0.8-r5 description:
+Shared library for bz2
+
+libbz2-1.0.8-r5 webpage:
+https://sourceware.org/bzip2/
+
+libbz2-1.0.8-r5 installed size:
+88 KiB
+
+libbz2-1.0.8-r5 license:
+bzip2-1.0.6
+
+```
+
 ### `apk` package: `libc-utils`
 
 ```console
@@ -406,6 +525,23 @@ libc-utils-0.7.2-r5 installed size:
 
 libc-utils-0.7.2-r5 license:
 BSD-2-Clause AND BSD-3-Clause
+
+```
+
+### `apk` package: `libcap2`
+
+```console
+libcap2-2.69-r0 description:
+POSIX 1003.1e capabilities (libraries)
+
+libcap2-2.69-r0 webpage:
+https://sites.google.com/site/fullycapable/
+
+libcap2-2.69-r0 installed size:
+72 KiB
+
+libcap2-2.69-r0 license:
+BSD-3-Clause OR GPL-2.0-only
 
 ```
 
@@ -443,23 +579,6 @@ Apache-2.0
 
 ```
 
-### `apk` package: `libcurl`
-
-```console
-libcurl-8.0.1-r2 description:
-The multiprotocol file transfer library
-
-libcurl-8.0.1-r2 webpage:
-https://curl.se/
-
-libcurl-8.0.1-r2 installed size:
-532 KiB
-
-libcurl-8.0.1-r2 license:
-curl
-
-```
-
 ### `apk` package: `libedit`
 
 ```console
@@ -477,53 +596,36 @@ BSD-3-Clause
 
 ```
 
-### `apk` package: `libexpat`
+### `apk` package: `libelf`
 
 ```console
-libexpat-2.5.0-r1 description:
-XML Parser library written in C (libraries)
+libelf-0.189-r1 description:
+Utilities and DSOs to handle ELF files and DWARF data - runtime libraries
 
-libexpat-2.5.0-r1 webpage:
-https://libexpat.github.io/
+libelf-0.189-r1 webpage:
+http://elfutils.org/
 
-libexpat-2.5.0-r1 installed size:
-144 KiB
+libelf-0.189-r1 installed size:
+636 KiB
 
-libexpat-2.5.0-r1 license:
-MIT
-
-```
-
-### `apk` package: `libidn2`
-
-```console
-libidn2-2.3.4-r1 description:
-Encode/Decode library for internationalized domain names
-
-libidn2-2.3.4-r1 webpage:
-https://www.gnu.org/software/libidn#libidn2
-
-libidn2-2.3.4-r1 installed size:
-208 KiB
-
-libidn2-2.3.4-r1 license:
-GPL-2.0-or-later AND LGPL-3.0-or-later
+libelf-0.189-r1 license:
+GPL-3.0-or-later AND ( GPL-2.0-or-later OR LGPL-3.0-or-later )
 
 ```
 
 ### `apk` package: `libintl`
 
 ```console
-libintl-0.21.1-r5 description:
+libintl-0.21.1-r7 description:
 GNU gettext runtime library
 
-libintl-0.21.1-r5 webpage:
+libintl-0.21.1-r7 webpage:
 https://www.gnu.org/software/gettext/gettext.html
 
-libintl-0.21.1-r5 installed size:
+libintl-0.21.1-r7 installed size:
 56 KiB
 
-libintl-0.21.1-r5 license:
+libintl-0.21.1-r7 license:
 LGPL-2.1-or-later
 
 ```
@@ -630,23 +732,6 @@ BSD-3-Clause
 
 ```
 
-### `apk` package: `libunistring`
-
-```console
-libunistring-1.1-r1 description:
-Library for manipulating Unicode strings and C strings
-
-libunistring-1.1-r1 webpage:
-https://www.gnu.org/software/libunistring/
-
-libunistring-1.1-r1 installed size:
-1696 KiB
-
-libunistring-1.1-r1 license:
-GPL-2.0-or-later OR LGPL-3.0-or-later
-
-```
-
 ### `apk` package: `libuuid`
 
 ```console
@@ -732,6 +817,23 @@ MIT
 
 ```
 
+### `apk` package: `musl-fts`
+
+```console
+musl-fts-1.2.7-r5 description:
+Provides the fts(3) functions, which are missing in musl libc
+
+musl-fts-1.2.7-r5 webpage:
+https://github.com/void-linux/musl-fts/
+
+musl-fts-1.2.7-r5 installed size:
+32 KiB
+
+musl-fts-1.2.7-r5 license:
+BSD-3-Clause
+
+```
+
 ### `apk` package: `musl-utils`
 
 ```console
@@ -763,23 +865,6 @@ ncurses-terminfo-base-6.4_p20230506-r0 installed size:
 
 ncurses-terminfo-base-6.4_p20230506-r0 license:
 X11
-
-```
-
-### `apk` package: `nghttp2-libs`
-
-```console
-nghttp2-libs-1.53.0-r0 description:
-Experimental HTTP/2 client, server and proxy (libraries)
-
-nghttp2-libs-1.53.0-r0 webpage:
-https://nghttp2.org
-
-nghttp2-libs-1.53.0-r0 installed size:
-152 KiB
-
-nghttp2-libs-1.53.0-r0 license:
-MIT
 
 ```
 
@@ -848,23 +933,6 @@ openssl-3.1.0-r4 installed size:
 
 openssl-3.1.0-r4 license:
 Apache-2.0
-
-```
-
-### `apk` package: `pcre2`
-
-```console
-pcre2-10.42-r1 description:
-Perl-compatible regular expression library
-
-pcre2-10.42-r1 webpage:
-https://pcre.org/
-
-pcre2-10.42-r1 installed size:
-676 KiB
-
-pcre2-10.42-r1 license:
-BSD-3-Clause
 
 ```
 

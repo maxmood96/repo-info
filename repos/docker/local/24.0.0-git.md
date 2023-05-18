@@ -1,18 +1,18 @@
-# `docker:20.10.24-dind`
+# `docker:24.0.0-git`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c0e053541b0eec2ee002f3862daedf169d40ff5e65d2a11206ebb1dd883acc13`
-- Created: `2023-05-10T10:04:23Z`
-- Virtual Size: ~ 335.98 Mb  
+- Image ID: `sha256:ab66b54c73f5aa4cc5deba87639cf958a8f8923f550643957a77bc775e87aca1`
+- Created: `2023-05-16T17:59:38Z`
+- Virtual Size: ~ 333.64 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=20.10.24`
+  - `DOCKER_VERSION=24.0.0`
   - `DOCKER_BUILDX_VERSION=0.10.4`
-  - `DOCKER_COMPOSE_VERSION=2.17.3`
+  - `DOCKER_COMPOSE_VERSION=2.18.0`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=1f32e3c95d72a29b3eaacba156ed675dba976cb5`
 
@@ -83,6 +83,23 @@ apk-tools-2.14.0-r0 installed size:
 
 apk-tools-2.14.0-r0 license:
 GPL-2.0-only
+
+```
+
+### `apk` package: `brotli-libs`
+
+```console
+brotli-libs-1.0.9-r14 description:
+Generic lossless compressor (libraries)
+
+brotli-libs-1.0.9-r14 webpage:
+https://github.com/google/brotli
+
+brotli-libs-1.0.9-r14 installed size:
+788 KiB
+
+brotli-libs-1.0.9-r14 license:
+MIT
 
 ```
 
@@ -239,6 +256,23 @@ GPL-2.0-or-later
 
 ```
 
+### `apk` package: `git`
+
+```console
+git-2.40.1-r0 description:
+Distributed version control system
+
+git-2.40.1-r0 webpage:
+https://www.git-scm.com/
+
+git-2.40.1-r0 installed size:
+5948 KiB
+
+git-2.40.1-r0 license:
+GPL-2.0-only
+
+```
+
 ### `apk` package: `inih`
 
 ```console
@@ -375,23 +409,6 @@ BSD-2-Clause AND BSD-3-Clause
 
 ```
 
-### `apk` package: `libc6-compat`
-
-```console
-libc6-compat-1.2.4-r0 description:
-compatibility libraries for glibc
-
-libc6-compat-1.2.4-r0 webpage:
-https://musl.libc.org/
-
-libc6-compat-1.2.4-r0 installed size:
-12 KiB
-
-libc6-compat-1.2.4-r0 license:
-MIT
-
-```
-
 ### `apk` package: `libcom_err`
 
 ```console
@@ -426,6 +443,23 @@ Apache-2.0
 
 ```
 
+### `apk` package: `libcurl`
+
+```console
+libcurl-8.0.1-r2 description:
+The multiprotocol file transfer library
+
+libcurl-8.0.1-r2 webpage:
+https://curl.se/
+
+libcurl-8.0.1-r2 installed size:
+532 KiB
+
+libcurl-8.0.1-r2 license:
+curl
+
+```
+
 ### `apk` package: `libedit`
 
 ```console
@@ -443,19 +477,53 @@ BSD-3-Clause
 
 ```
 
+### `apk` package: `libexpat`
+
+```console
+libexpat-2.5.0-r1 description:
+XML Parser library written in C (libraries)
+
+libexpat-2.5.0-r1 webpage:
+https://libexpat.github.io/
+
+libexpat-2.5.0-r1 installed size:
+144 KiB
+
+libexpat-2.5.0-r1 license:
+MIT
+
+```
+
+### `apk` package: `libidn2`
+
+```console
+libidn2-2.3.4-r1 description:
+Encode/Decode library for internationalized domain names
+
+libidn2-2.3.4-r1 webpage:
+https://www.gnu.org/software/libidn#libidn2
+
+libidn2-2.3.4-r1 installed size:
+208 KiB
+
+libidn2-2.3.4-r1 license:
+GPL-2.0-or-later AND LGPL-3.0-or-later
+
+```
+
 ### `apk` package: `libintl`
 
 ```console
-libintl-0.21.1-r5 description:
+libintl-0.21.1-r7 description:
 GNU gettext runtime library
 
-libintl-0.21.1-r5 webpage:
+libintl-0.21.1-r7 webpage:
 https://www.gnu.org/software/gettext/gettext.html
 
-libintl-0.21.1-r5 installed size:
+libintl-0.21.1-r7 installed size:
 56 KiB
 
-libintl-0.21.1-r5 license:
+libintl-0.21.1-r7 license:
 LGPL-2.1-or-later
 
 ```
@@ -559,6 +627,23 @@ libtirpc-conf-1.3.3-r2 installed size:
 
 libtirpc-conf-1.3.3-r2 license:
 BSD-3-Clause
+
+```
+
+### `apk` package: `libunistring`
+
+```console
+libunistring-1.1-r1 description:
+Library for manipulating Unicode strings and C strings
+
+libunistring-1.1-r1 webpage:
+https://www.gnu.org/software/libunistring/
+
+libunistring-1.1-r1 installed size:
+1696 KiB
+
+libunistring-1.1-r1 license:
+GPL-2.0-or-later OR LGPL-3.0-or-later
 
 ```
 
@@ -681,6 +766,23 @@ X11
 
 ```
 
+### `apk` package: `nghttp2-libs`
+
+```console
+nghttp2-libs-1.53.0-r0 description:
+Experimental HTTP/2 client, server and proxy (libraries)
+
+nghttp2-libs-1.53.0-r0 webpage:
+https://nghttp2.org
+
+nghttp2-libs-1.53.0-r0 installed size:
+152 KiB
+
+nghttp2-libs-1.53.0-r0 license:
+MIT
+
+```
+
 ### `apk` package: `openssh-client-common`
 
 ```console
@@ -746,6 +848,23 @@ openssl-3.1.0-r4 installed size:
 
 openssl-3.1.0-r4 license:
 Apache-2.0
+
+```
+
+### `apk` package: `pcre2`
+
+```console
+pcre2-10.42-r1 description:
+Perl-compatible regular expression library
+
+pcre2-10.42-r1 webpage:
+https://pcre.org/
+
+pcre2-10.42-r1 installed size:
+676 KiB
+
+pcre2-10.42-r1 license:
+BSD-3-Clause
 
 ```
 

@@ -1,18 +1,18 @@
-# `docker:23.0.6-dind`
+# `docker:24.0.0-dind`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0dc94d855a0e5b8e80d62fc044cc71add50564821f7c11103ebbef662e1111b0`
-- Created: `2023-05-10T10:04:23Z`
-- Virtual Size: ~ 318.24 Mb  
+- Image ID: `sha256:3186aca26385a1e1f62ac07ae16cc047097d4fdb4f05d6fd23feb205273db242`
+- Created: `2023-05-16T17:59:38Z`
+- Virtual Size: ~ 323.48 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=23.0.6`
+  - `DOCKER_VERSION=24.0.0`
   - `DOCKER_BUILDX_VERSION=0.10.4`
-  - `DOCKER_COMPOSE_VERSION=2.17.3`
+  - `DOCKER_COMPOSE_VERSION=2.18.0`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=1f32e3c95d72a29b3eaacba156ed675dba976cb5`
 
@@ -429,16 +429,16 @@ BSD-3-Clause
 ### `apk` package: `libintl`
 
 ```console
-libintl-0.21.1-r5 description:
+libintl-0.21.1-r7 description:
 GNU gettext runtime library
 
-libintl-0.21.1-r5 webpage:
+libintl-0.21.1-r7 webpage:
 https://www.gnu.org/software/gettext/gettext.html
 
-libintl-0.21.1-r5 installed size:
+libintl-0.21.1-r7 installed size:
 56 KiB
 
-libintl-0.21.1-r5 license:
+libintl-0.21.1-r7 license:
 LGPL-2.1-or-later
 
 ```
