@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d6a05f335b2c7938baec6d88af1218f33e5e1f6ee8d05860a1876c0b8cb60264`
-- Created: `2023-05-04T14:52:13.970372352Z`
+- Image ID: `sha256:42cabd10a765f5217641e77bd134d413f5a56365d088bde307e967e6e5e3d3ab`
+- Created: `2023-05-19T20:22:38.071510609Z`
 - Virtual Size: ~ 595.04 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -19,7 +19,7 @@
   - `LEIN_VERSION=2.10.0`
   - `LEIN_INSTALL=/usr/local/bin/`
   - `LEIN_ROOT=1`
-  - `CLOJURE_VERSION=1.11.1.1273`
+  - `CLOJURE_VERSION=1.11.1.1323`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`

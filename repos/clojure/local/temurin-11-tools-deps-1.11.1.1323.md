@@ -1,10 +1,10 @@
-# `clojure:temurin-8-jammy`
+# `clojure:temurin-11-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0dbcba28a698483d8aaa5b86fb9bbdf65ead9f32d43dfcba564b53d2f9275007`
-- Created: `2023-05-04T14:54:50.610913061Z`
-- Virtual Size: ~ 389.02 Mb  
+- Image ID: `sha256:0e53069c48f1023752a23cba0aae19a1462a293f5556e24cbcbb6d64a1e9d78f`
+- Created: `2023-05-19T20:29:51.219180367Z`
+- Virtual Size: ~ 572.64 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["clj"]`
@@ -14,8 +14,8 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk8u372-b07`
-  - `CLOJURE_VERSION=1.11.1.1273`
+  - `JAVA_VERSION=jdk-11.0.19+7`
+  - `CLOJURE_VERSION=1.11.1.1323`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`

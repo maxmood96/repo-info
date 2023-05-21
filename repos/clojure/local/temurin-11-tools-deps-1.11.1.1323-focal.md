@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9659546117587d1c10c1f577db778ac831be1f3e5759aa714e0ccad527e11930`
-- Created: `2023-04-26T20:08:15.250420374Z`
-- Virtual Size: ~ 597.26 Mb  
+- Image ID: `sha256:e7f0b0583a7fe7693d92174832e0d99ef7a74094fa3f046ac7eb24aa2d17fce2`
+- Created: `2023-05-19T20:29:33.568635041Z`
+- Virtual Size: ~ 597.51 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["clj"]`
@@ -15,7 +15,7 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-11.0.19+7`
-  - `CLOJURE_VERSION=1.11.1.1273`
+  - `CLOJURE_VERSION=1.11.1.1323`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=20.04`
@@ -658,12 +658,12 @@ $ apt-get source -qq --print-uris gdbm=1.18.1-5
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.18.1-5.debian.tar.xz' gdbm_1.18.1-5.debian.tar.xz 16348 SHA256:3c1a0e05b40a97ee51ce77c736c72c37738ba31b2720111d3bc99175a2c3a3ed
 ```
 
-### `dpkg` source package: `git=1:2.25.1-1ubuntu3.10`
+### `dpkg` source package: `git=1:2.25.1-1ubuntu3.11`
 
 Binary Packages:
 
-- `git=1:2.25.1-1ubuntu3.10`
-- `git-man=1:2.25.1-1ubuntu3.10`
+- `git=1:2.25.1-1ubuntu3.11`
+- `git-man=1:2.25.1-1ubuntu3.11`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -686,9 +686,14 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris git=1:2.25.1-1ubuntu3.11
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1-1ubuntu3.11.dsc' git_2.25.1-1ubuntu3.11.dsc 2966 SHA512:7d3c3378a2417cf4e32133786a654abdd7a2dfeaf6bbe1533b15aee6446960c8f04752b8458c93f1638ce85156194b952c0c9e6b233f163a4e3d10490f7975b1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1.orig.tar.xz' git_2.25.1.orig.tar.xz 5875548 SHA512:15241143acfd8542d85d2709ac3c80dbd6e8d5234438f70c4f33cc71a2bdec3e32938df7f6351e2746d570b021d3bd0b70474ea4beec0c51d1fc45f9c287b344
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1-1ubuntu3.11.debian.tar.xz' git_2.25.1-1ubuntu3.11.debian.tar.xz 708608 SHA512:f761df90be2d25b8bbdcbec0fa781bf2b20e954350eb15a1a210408876ac7e90ca4b7643b00c074cd4ce7b286494b0bfb71f4586024e01c026737cb290165ba9
+```
 
 ### `dpkg` source package: `glibc=2.31-0ubuntu9.9`
 
@@ -1794,11 +1799,11 @@ $ apt-get source -qq --print-uris openldap=2.4.49+dfsg-2ubuntu1.9
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.49%2bdfsg-2ubuntu1.9.debian.tar.xz' openldap_2.4.49+dfsg-2ubuntu1.9.debian.tar.xz 189676 SHA512:bf7e4ff9f710404704526a912932d7445fab4c6ce30a099dd890adc78b8afe740ac773596cb4fe409d495406e5bd103d186bd0b2993265cdafd3eb9a71d6a3b5
 ```
 
-### `dpkg` source package: `openssh=1:8.2p1-4ubuntu0.5`
+### `dpkg` source package: `openssh=1:8.2p1-4ubuntu0.7`
 
 Binary Packages:
 
-- `openssh-client=1:8.2p1-4ubuntu0.5`
+- `openssh-client=1:8.2p1-4ubuntu0.7`
 
 Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
@@ -1811,9 +1816,14 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssh=1:8.2p1-4ubuntu0.7
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.2p1-4ubuntu0.7.dsc' openssh_8.2p1-4ubuntu0.7.dsc 3098 SHA512:dc99606beb93298a6b63c0700756af20231d23268e6e542bf09929e096c9b5a1d7470dab5e84370fce59756418006650a05465bfd5f81144081c7718402fc14f
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.2p1.orig.tar.gz' openssh_8.2p1.orig.tar.gz 1701197 SHA512:c4db64e52a3a4c410de9de49f9cb104dd493b10250af3599b92457dd986277b3fd99a6f51cec94892fd1be5bd0369c5757262ea7805f0de464b245c3d34c120a
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.2p1-4ubuntu0.7.debian.tar.xz' openssh_8.2p1-4ubuntu0.7.debian.tar.xz 177848 SHA512:9826b2f0c5262349d22cabdbb0745821fb0e44e85a50638f017749cdd9cc247edda3f48dc2214bde265ff3a4e5e273f5fc057073232408425f5d722ab4caf355
+```
 
 ### `dpkg` source package: `openssl=1.1.1f-1ubuntu2.17`
 

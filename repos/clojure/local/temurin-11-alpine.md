@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f1e8f6285f3e0290030a207565edf3a14a60c4f2bcc3674717198c438e965570`
-- Created: `2023-04-26T20:07:17.865146723Z`
-- Virtual Size: ~ 387.35 Mb  
+- Image ID: `sha256:fd55fc4a1a02b73bec8c4975a26884f5cf715ee99452de8be3bcb343176cf9dd`
+- Created: `2023-05-19T20:28:36.17168588Z`
+- Virtual Size: ~ 387.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["clj"]`
@@ -15,7 +15,7 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-11.0.19+7`
-  - `CLOJURE_VERSION=1.11.1.1273`
+  - `CLOJURE_VERSION=1.11.1.1323`
 
 ## `apk` (`.apk`-based packages)
 
@@ -158,16 +158,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20220614-r4 description:
+ca-certificates-20230506-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20220614-r4 webpage:
+ca-certificates-20230506-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20220614-r4 installed size:
-688 KiB
+ca-certificates-20230506-r0 installed size:
+692 KiB
 
-ca-certificates-20220614-r4 license:
+ca-certificates-20230506-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -328,16 +328,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.0.1-r0 description:
+libcurl-8.1.0-r1 description:
 The multiprotocol file transfer library
 
-libcurl-8.0.1-r0 webpage:
+libcurl-8.1.0-r1 webpage:
 https://curl.se/
 
-libcurl-8.0.1-r0 installed size:
-556 KiB
+libcurl-8.1.0-r1 installed size:
+576 KiB
 
-libcurl-8.0.1-r0 license:
+libcurl-8.1.0-r1 license:
 curl
 
 ```
