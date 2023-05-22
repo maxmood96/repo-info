@@ -1238,14 +1238,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.4.0-148.165
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-148.165.dsc' linux_5.4.0-148.165.dsc 7067 SHA512:0779e46d5bd0c5e72474f660941efaee091d9d4be9e4e9e0e46342db4cfaccb36575f5607a047529ab832c8a82208ae520bc813e3528012decdc1ef3b0cff93b
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA512:62b09a7231fd793973c5f59b16c4f6ffce621188b02a71915874b05e8e3f956fb6146d4a4fb1a4475bebe463949ca5a18da12842c3ce7c52e996e6bc4012a074
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-148.165.diff.gz' linux_5.4.0-148.165.diff.gz 10599074 SHA512:279dc9d27090afef8694d8abe37344fc94117da9830302754e63c674f79a11ad05fa705139b3fc5960ac85ffa0dea5bce47db54e6071b97e8afa3ac10f69185e
-```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu2`
 
