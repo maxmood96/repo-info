@@ -22,7 +22,7 @@
 ## `memcached:1`
 
 ```console
-$ docker pull memcached@sha256:6ea7a08375fec9439ec9ba63dc87249d4ba1b41e585d840022c0fac5426f5f9c
+$ docker pull memcached@sha256:b2109109a25c506b4c7e718aec212440edbbc8fa2b7a4caf9b3c5402be667d6b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -39,69 +39,69 @@ $ docker pull memcached@sha256:6ea7a08375fec9439ec9ba63dc87249d4ba1b41e585d84002
 ### `memcached:1` - linux; amd64
 
 ```console
-$ docker pull memcached@sha256:3a453689b8b1843bd509a32aaa7aeb0d8bb4260b87f9f67343d25f90981d09d1
+$ docker pull memcached@sha256:ca633f743f7ffe76281d119891271f072e4bdb471b4cf2447be145a9afd97d2c
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.0 MB (32997950 bytes)**  
+-	Total Size: **33.0 MB (32997994 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3b5602dee2853e39caaf270ca75fec2970d30968076f19e6a2bd053e3f2132fa`
+-	Image ID: `sha256:a78754495cd58c1fd188f1147b890bd9de6c8a3bf9cbea69c917e578a7fa6842`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["memcached"]`
 
 ```dockerfile
-# Tue, 02 May 2023 23:46:59 GMT
-ADD file:a2378c1b12e95db69e24b9d347441678c6f23239292cce3c822b1524992b6ec4 in / 
-# Tue, 02 May 2023 23:47:00 GMT
+# Tue, 23 May 2023 01:20:14 GMT
+ADD file:88252a7f118b4d6f55dd5baf49dbcaa053c9d6172c652963c1151fa76f625e44 in / 
+# Tue, 23 May 2023 01:20:14 GMT
 CMD ["bash"]
-# Wed, 03 May 2023 21:20:08 GMT
+# Tue, 23 May 2023 04:02:50 GMT
 RUN groupadd --system --gid 11211 memcache && useradd --system --gid memcache --uid 11211 memcache
-# Wed, 03 May 2023 21:20:12 GMT
+# Tue, 23 May 2023 04:02:54 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libsasl2-modules 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 15 May 2023 21:19:48 GMT
+# Tue, 23 May 2023 04:02:54 GMT
 ENV MEMCACHED_VERSION=1.6.20
-# Mon, 15 May 2023 21:19:48 GMT
+# Tue, 23 May 2023 04:02:54 GMT
 ENV MEMCACHED_SHA1=face85ed6fad41432ad818445b24eca55bccdd78
-# Mon, 15 May 2023 21:22:03 GMT
+# Tue, 23 May 2023 04:05:05 GMT
 RUN set -x 		&& savedAptMark="$(apt-mark showmanual)" 	&& apt-get update 	&& apt-get install -y --no-install-recommends 		ca-certificates 		dpkg-dev 		gcc 		libc6-dev 		libevent-dev 		libio-socket-ssl-perl 		libsasl2-dev 		libssl-dev 		make 		perl 		wget 	&& rm -rf /var/lib/apt/lists/* 		&& wget -O memcached.tar.gz "https://memcached.org/files/memcached-$MEMCACHED_VERSION.tar.gz" 	&& echo "$MEMCACHED_SHA1  memcached.tar.gz" | sha1sum -c - 	&& mkdir -p /usr/src/memcached 	&& tar -xzf memcached.tar.gz -C /usr/src/memcached --strip-components=1 	&& rm memcached.tar.gz 		&& cd /usr/src/memcached 		&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& enableExtstore="$( 		case "$gnuArch" in 			s390x-*) ;; 			*) echo '--enable-extstore' ;; 		esac 	)" 	&& ./configure 		--build="$gnuArch" 		--enable-sasl 		--enable-sasl-pwdb 		--enable-tls 		$enableExtstore 	&& nproc="$(nproc)" 	&& make -j "$nproc" 		&& sed -i.bak 's/SECLEVEL=2/SECLEVEL=1/g' /etc/ssl/openssl.cnf 	&& make test PARALLEL="$nproc" 	&& mv /etc/ssl/openssl.cnf.bak /etc/ssl/openssl.cnf 		&& make install 		&& cd / && rm -rf /usr/src/memcached 		&& apt-mark auto '.*' > /dev/null 	&& apt-mark manual $savedAptMark > /dev/null 	&& find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false 		&& memcached -V
-# Mon, 15 May 2023 21:22:03 GMT
+# Tue, 23 May 2023 04:05:05 GMT
 COPY file:bf641b13ea5b37f5830b299ebe9d72f194ee5d897db14faf8b133dc7a66a48ad in /usr/local/bin/ 
-# Mon, 15 May 2023 21:22:04 GMT
+# Tue, 23 May 2023 04:05:06 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
-# Mon, 15 May 2023 21:22:04 GMT
+# Tue, 23 May 2023 04:05:06 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 15 May 2023 21:22:04 GMT
+# Tue, 23 May 2023 04:05:06 GMT
 USER memcache
-# Mon, 15 May 2023 21:22:04 GMT
+# Tue, 23 May 2023 04:05:06 GMT
 EXPOSE 11211
-# Mon, 15 May 2023 21:22:04 GMT
+# Tue, 23 May 2023 04:05:06 GMT
 CMD ["memcached"]
 ```
 
 -	Layers:
-	-	`sha256:9e3ea8720c6de96cc9ad544dddc695a3ab73f5581c5d954e0504cc4f80fb5e5c`  
-		Last Modified: Tue, 02 May 2023 23:50:22 GMT  
-		Size: 31.4 MB (31403516 bytes)  
+	-	`sha256:f03b40093957615593f2ed142961afb6b540507e0b47e3f7626ba5e02efbbbf1`  
+		Last Modified: Tue, 23 May 2023 01:24:08 GMT  
+		Size: 31.4 MB (31403586 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:431e8f69bfa62eee3335305e13623298b12323290993d59b62804b2c9d004847`  
-		Last Modified: Wed, 03 May 2023 21:23:12 GMT  
-		Size: 5.0 KB (4983 bytes)  
+	-	`sha256:42850af464e5357c0c0ef63860ee73ed7775c9aef90ca1740dd84ddd5ee0f335`  
+		Last Modified: Tue, 23 May 2023 04:05:24 GMT  
+		Size: 5.0 KB (4985 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3ccde0e3c0d3a452603ea01b54330a53f6de732f14c4082bb1796181b2c30cc`  
-		Last Modified: Wed, 03 May 2023 21:23:12 GMT  
-		Size: 328.2 KB (328214 bytes)  
+	-	`sha256:66835158f1e39645e904689d36678623f36b00a888fc225a06013a2fed77d655`  
+		Last Modified: Tue, 23 May 2023 04:05:25 GMT  
+		Size: 328.2 KB (328211 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d42bc7f08cc702283bacfdc813a93805c69be9572da3562ef71ccdb7c9ffb5cb`  
-		Last Modified: Mon, 15 May 2023 21:24:30 GMT  
-		Size: 1.3 MB (1260828 bytes)  
+	-	`sha256:4027e4df9c701a98771edfdd41af6ab6b8f6b9fd653d71e05461cb4f02293c92`  
+		Last Modified: Tue, 23 May 2023 04:05:25 GMT  
+		Size: 1.3 MB (1260804 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bcf49f915c5409a9ddb26881c6f67b94255b0b570bb216d0f83f98c766c85f85`  
-		Last Modified: Mon, 15 May 2023 21:24:30 GMT  
-		Size: 288.0 B  
+	-	`sha256:e874830b2907232a137b7908511711e2e6a06330862f1add300c590a317ee84f`  
+		Last Modified: Tue, 23 May 2023 04:05:24 GMT  
+		Size: 287.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cff656a1e0a745dcbc081e72107e5a0432c41ca497d3da5d940c057066e023d1`  
-		Last Modified: Mon, 15 May 2023 21:24:30 GMT  
+	-	`sha256:26b333375d5837211965b1039e5bb045858f570932d51f28a9dc35ca00ca4f9e`  
+		Last Modified: Tue, 23 May 2023 04:05:25 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -1379,7 +1379,7 @@ CMD ["memcached"]
 ## `memcached:1-bullseye`
 
 ```console
-$ docker pull memcached@sha256:6ea7a08375fec9439ec9ba63dc87249d4ba1b41e585d840022c0fac5426f5f9c
+$ docker pull memcached@sha256:b2109109a25c506b4c7e718aec212440edbbc8fa2b7a4caf9b3c5402be667d6b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1396,69 +1396,69 @@ $ docker pull memcached@sha256:6ea7a08375fec9439ec9ba63dc87249d4ba1b41e585d84002
 ### `memcached:1-bullseye` - linux; amd64
 
 ```console
-$ docker pull memcached@sha256:3a453689b8b1843bd509a32aaa7aeb0d8bb4260b87f9f67343d25f90981d09d1
+$ docker pull memcached@sha256:ca633f743f7ffe76281d119891271f072e4bdb471b4cf2447be145a9afd97d2c
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.0 MB (32997950 bytes)**  
+-	Total Size: **33.0 MB (32997994 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3b5602dee2853e39caaf270ca75fec2970d30968076f19e6a2bd053e3f2132fa`
+-	Image ID: `sha256:a78754495cd58c1fd188f1147b890bd9de6c8a3bf9cbea69c917e578a7fa6842`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["memcached"]`
 
 ```dockerfile
-# Tue, 02 May 2023 23:46:59 GMT
-ADD file:a2378c1b12e95db69e24b9d347441678c6f23239292cce3c822b1524992b6ec4 in / 
-# Tue, 02 May 2023 23:47:00 GMT
+# Tue, 23 May 2023 01:20:14 GMT
+ADD file:88252a7f118b4d6f55dd5baf49dbcaa053c9d6172c652963c1151fa76f625e44 in / 
+# Tue, 23 May 2023 01:20:14 GMT
 CMD ["bash"]
-# Wed, 03 May 2023 21:20:08 GMT
+# Tue, 23 May 2023 04:02:50 GMT
 RUN groupadd --system --gid 11211 memcache && useradd --system --gid memcache --uid 11211 memcache
-# Wed, 03 May 2023 21:20:12 GMT
+# Tue, 23 May 2023 04:02:54 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libsasl2-modules 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 15 May 2023 21:19:48 GMT
+# Tue, 23 May 2023 04:02:54 GMT
 ENV MEMCACHED_VERSION=1.6.20
-# Mon, 15 May 2023 21:19:48 GMT
+# Tue, 23 May 2023 04:02:54 GMT
 ENV MEMCACHED_SHA1=face85ed6fad41432ad818445b24eca55bccdd78
-# Mon, 15 May 2023 21:22:03 GMT
+# Tue, 23 May 2023 04:05:05 GMT
 RUN set -x 		&& savedAptMark="$(apt-mark showmanual)" 	&& apt-get update 	&& apt-get install -y --no-install-recommends 		ca-certificates 		dpkg-dev 		gcc 		libc6-dev 		libevent-dev 		libio-socket-ssl-perl 		libsasl2-dev 		libssl-dev 		make 		perl 		wget 	&& rm -rf /var/lib/apt/lists/* 		&& wget -O memcached.tar.gz "https://memcached.org/files/memcached-$MEMCACHED_VERSION.tar.gz" 	&& echo "$MEMCACHED_SHA1  memcached.tar.gz" | sha1sum -c - 	&& mkdir -p /usr/src/memcached 	&& tar -xzf memcached.tar.gz -C /usr/src/memcached --strip-components=1 	&& rm memcached.tar.gz 		&& cd /usr/src/memcached 		&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& enableExtstore="$( 		case "$gnuArch" in 			s390x-*) ;; 			*) echo '--enable-extstore' ;; 		esac 	)" 	&& ./configure 		--build="$gnuArch" 		--enable-sasl 		--enable-sasl-pwdb 		--enable-tls 		$enableExtstore 	&& nproc="$(nproc)" 	&& make -j "$nproc" 		&& sed -i.bak 's/SECLEVEL=2/SECLEVEL=1/g' /etc/ssl/openssl.cnf 	&& make test PARALLEL="$nproc" 	&& mv /etc/ssl/openssl.cnf.bak /etc/ssl/openssl.cnf 		&& make install 		&& cd / && rm -rf /usr/src/memcached 		&& apt-mark auto '.*' > /dev/null 	&& apt-mark manual $savedAptMark > /dev/null 	&& find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false 		&& memcached -V
-# Mon, 15 May 2023 21:22:03 GMT
+# Tue, 23 May 2023 04:05:05 GMT
 COPY file:bf641b13ea5b37f5830b299ebe9d72f194ee5d897db14faf8b133dc7a66a48ad in /usr/local/bin/ 
-# Mon, 15 May 2023 21:22:04 GMT
+# Tue, 23 May 2023 04:05:06 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
-# Mon, 15 May 2023 21:22:04 GMT
+# Tue, 23 May 2023 04:05:06 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 15 May 2023 21:22:04 GMT
+# Tue, 23 May 2023 04:05:06 GMT
 USER memcache
-# Mon, 15 May 2023 21:22:04 GMT
+# Tue, 23 May 2023 04:05:06 GMT
 EXPOSE 11211
-# Mon, 15 May 2023 21:22:04 GMT
+# Tue, 23 May 2023 04:05:06 GMT
 CMD ["memcached"]
 ```
 
 -	Layers:
-	-	`sha256:9e3ea8720c6de96cc9ad544dddc695a3ab73f5581c5d954e0504cc4f80fb5e5c`  
-		Last Modified: Tue, 02 May 2023 23:50:22 GMT  
-		Size: 31.4 MB (31403516 bytes)  
+	-	`sha256:f03b40093957615593f2ed142961afb6b540507e0b47e3f7626ba5e02efbbbf1`  
+		Last Modified: Tue, 23 May 2023 01:24:08 GMT  
+		Size: 31.4 MB (31403586 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:431e8f69bfa62eee3335305e13623298b12323290993d59b62804b2c9d004847`  
-		Last Modified: Wed, 03 May 2023 21:23:12 GMT  
-		Size: 5.0 KB (4983 bytes)  
+	-	`sha256:42850af464e5357c0c0ef63860ee73ed7775c9aef90ca1740dd84ddd5ee0f335`  
+		Last Modified: Tue, 23 May 2023 04:05:24 GMT  
+		Size: 5.0 KB (4985 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3ccde0e3c0d3a452603ea01b54330a53f6de732f14c4082bb1796181b2c30cc`  
-		Last Modified: Wed, 03 May 2023 21:23:12 GMT  
-		Size: 328.2 KB (328214 bytes)  
+	-	`sha256:66835158f1e39645e904689d36678623f36b00a888fc225a06013a2fed77d655`  
+		Last Modified: Tue, 23 May 2023 04:05:25 GMT  
+		Size: 328.2 KB (328211 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d42bc7f08cc702283bacfdc813a93805c69be9572da3562ef71ccdb7c9ffb5cb`  
-		Last Modified: Mon, 15 May 2023 21:24:30 GMT  
-		Size: 1.3 MB (1260828 bytes)  
+	-	`sha256:4027e4df9c701a98771edfdd41af6ab6b8f6b9fd653d71e05461cb4f02293c92`  
+		Last Modified: Tue, 23 May 2023 04:05:25 GMT  
+		Size: 1.3 MB (1260804 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bcf49f915c5409a9ddb26881c6f67b94255b0b570bb216d0f83f98c766c85f85`  
-		Last Modified: Mon, 15 May 2023 21:24:30 GMT  
-		Size: 288.0 B  
+	-	`sha256:e874830b2907232a137b7908511711e2e6a06330862f1add300c590a317ee84f`  
+		Last Modified: Tue, 23 May 2023 04:05:24 GMT  
+		Size: 287.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cff656a1e0a745dcbc081e72107e5a0432c41ca497d3da5d940c057066e023d1`  
-		Last Modified: Mon, 15 May 2023 21:24:30 GMT  
+	-	`sha256:26b333375d5837211965b1039e5bb045858f570932d51f28a9dc35ca00ca4f9e`  
+		Last Modified: Tue, 23 May 2023 04:05:25 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -1948,7 +1948,7 @@ CMD ["memcached"]
 ## `memcached:1.6`
 
 ```console
-$ docker pull memcached@sha256:6ea7a08375fec9439ec9ba63dc87249d4ba1b41e585d840022c0fac5426f5f9c
+$ docker pull memcached@sha256:b2109109a25c506b4c7e718aec212440edbbc8fa2b7a4caf9b3c5402be667d6b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1965,69 +1965,69 @@ $ docker pull memcached@sha256:6ea7a08375fec9439ec9ba63dc87249d4ba1b41e585d84002
 ### `memcached:1.6` - linux; amd64
 
 ```console
-$ docker pull memcached@sha256:3a453689b8b1843bd509a32aaa7aeb0d8bb4260b87f9f67343d25f90981d09d1
+$ docker pull memcached@sha256:ca633f743f7ffe76281d119891271f072e4bdb471b4cf2447be145a9afd97d2c
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.0 MB (32997950 bytes)**  
+-	Total Size: **33.0 MB (32997994 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3b5602dee2853e39caaf270ca75fec2970d30968076f19e6a2bd053e3f2132fa`
+-	Image ID: `sha256:a78754495cd58c1fd188f1147b890bd9de6c8a3bf9cbea69c917e578a7fa6842`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["memcached"]`
 
 ```dockerfile
-# Tue, 02 May 2023 23:46:59 GMT
-ADD file:a2378c1b12e95db69e24b9d347441678c6f23239292cce3c822b1524992b6ec4 in / 
-# Tue, 02 May 2023 23:47:00 GMT
+# Tue, 23 May 2023 01:20:14 GMT
+ADD file:88252a7f118b4d6f55dd5baf49dbcaa053c9d6172c652963c1151fa76f625e44 in / 
+# Tue, 23 May 2023 01:20:14 GMT
 CMD ["bash"]
-# Wed, 03 May 2023 21:20:08 GMT
+# Tue, 23 May 2023 04:02:50 GMT
 RUN groupadd --system --gid 11211 memcache && useradd --system --gid memcache --uid 11211 memcache
-# Wed, 03 May 2023 21:20:12 GMT
+# Tue, 23 May 2023 04:02:54 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libsasl2-modules 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 15 May 2023 21:19:48 GMT
+# Tue, 23 May 2023 04:02:54 GMT
 ENV MEMCACHED_VERSION=1.6.20
-# Mon, 15 May 2023 21:19:48 GMT
+# Tue, 23 May 2023 04:02:54 GMT
 ENV MEMCACHED_SHA1=face85ed6fad41432ad818445b24eca55bccdd78
-# Mon, 15 May 2023 21:22:03 GMT
+# Tue, 23 May 2023 04:05:05 GMT
 RUN set -x 		&& savedAptMark="$(apt-mark showmanual)" 	&& apt-get update 	&& apt-get install -y --no-install-recommends 		ca-certificates 		dpkg-dev 		gcc 		libc6-dev 		libevent-dev 		libio-socket-ssl-perl 		libsasl2-dev 		libssl-dev 		make 		perl 		wget 	&& rm -rf /var/lib/apt/lists/* 		&& wget -O memcached.tar.gz "https://memcached.org/files/memcached-$MEMCACHED_VERSION.tar.gz" 	&& echo "$MEMCACHED_SHA1  memcached.tar.gz" | sha1sum -c - 	&& mkdir -p /usr/src/memcached 	&& tar -xzf memcached.tar.gz -C /usr/src/memcached --strip-components=1 	&& rm memcached.tar.gz 		&& cd /usr/src/memcached 		&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& enableExtstore="$( 		case "$gnuArch" in 			s390x-*) ;; 			*) echo '--enable-extstore' ;; 		esac 	)" 	&& ./configure 		--build="$gnuArch" 		--enable-sasl 		--enable-sasl-pwdb 		--enable-tls 		$enableExtstore 	&& nproc="$(nproc)" 	&& make -j "$nproc" 		&& sed -i.bak 's/SECLEVEL=2/SECLEVEL=1/g' /etc/ssl/openssl.cnf 	&& make test PARALLEL="$nproc" 	&& mv /etc/ssl/openssl.cnf.bak /etc/ssl/openssl.cnf 		&& make install 		&& cd / && rm -rf /usr/src/memcached 		&& apt-mark auto '.*' > /dev/null 	&& apt-mark manual $savedAptMark > /dev/null 	&& find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false 		&& memcached -V
-# Mon, 15 May 2023 21:22:03 GMT
+# Tue, 23 May 2023 04:05:05 GMT
 COPY file:bf641b13ea5b37f5830b299ebe9d72f194ee5d897db14faf8b133dc7a66a48ad in /usr/local/bin/ 
-# Mon, 15 May 2023 21:22:04 GMT
+# Tue, 23 May 2023 04:05:06 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
-# Mon, 15 May 2023 21:22:04 GMT
+# Tue, 23 May 2023 04:05:06 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 15 May 2023 21:22:04 GMT
+# Tue, 23 May 2023 04:05:06 GMT
 USER memcache
-# Mon, 15 May 2023 21:22:04 GMT
+# Tue, 23 May 2023 04:05:06 GMT
 EXPOSE 11211
-# Mon, 15 May 2023 21:22:04 GMT
+# Tue, 23 May 2023 04:05:06 GMT
 CMD ["memcached"]
 ```
 
 -	Layers:
-	-	`sha256:9e3ea8720c6de96cc9ad544dddc695a3ab73f5581c5d954e0504cc4f80fb5e5c`  
-		Last Modified: Tue, 02 May 2023 23:50:22 GMT  
-		Size: 31.4 MB (31403516 bytes)  
+	-	`sha256:f03b40093957615593f2ed142961afb6b540507e0b47e3f7626ba5e02efbbbf1`  
+		Last Modified: Tue, 23 May 2023 01:24:08 GMT  
+		Size: 31.4 MB (31403586 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:431e8f69bfa62eee3335305e13623298b12323290993d59b62804b2c9d004847`  
-		Last Modified: Wed, 03 May 2023 21:23:12 GMT  
-		Size: 5.0 KB (4983 bytes)  
+	-	`sha256:42850af464e5357c0c0ef63860ee73ed7775c9aef90ca1740dd84ddd5ee0f335`  
+		Last Modified: Tue, 23 May 2023 04:05:24 GMT  
+		Size: 5.0 KB (4985 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3ccde0e3c0d3a452603ea01b54330a53f6de732f14c4082bb1796181b2c30cc`  
-		Last Modified: Wed, 03 May 2023 21:23:12 GMT  
-		Size: 328.2 KB (328214 bytes)  
+	-	`sha256:66835158f1e39645e904689d36678623f36b00a888fc225a06013a2fed77d655`  
+		Last Modified: Tue, 23 May 2023 04:05:25 GMT  
+		Size: 328.2 KB (328211 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d42bc7f08cc702283bacfdc813a93805c69be9572da3562ef71ccdb7c9ffb5cb`  
-		Last Modified: Mon, 15 May 2023 21:24:30 GMT  
-		Size: 1.3 MB (1260828 bytes)  
+	-	`sha256:4027e4df9c701a98771edfdd41af6ab6b8f6b9fd653d71e05461cb4f02293c92`  
+		Last Modified: Tue, 23 May 2023 04:05:25 GMT  
+		Size: 1.3 MB (1260804 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bcf49f915c5409a9ddb26881c6f67b94255b0b570bb216d0f83f98c766c85f85`  
-		Last Modified: Mon, 15 May 2023 21:24:30 GMT  
-		Size: 288.0 B  
+	-	`sha256:e874830b2907232a137b7908511711e2e6a06330862f1add300c590a317ee84f`  
+		Last Modified: Tue, 23 May 2023 04:05:24 GMT  
+		Size: 287.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cff656a1e0a745dcbc081e72107e5a0432c41ca497d3da5d940c057066e023d1`  
-		Last Modified: Mon, 15 May 2023 21:24:30 GMT  
+	-	`sha256:26b333375d5837211965b1039e5bb045858f570932d51f28a9dc35ca00ca4f9e`  
+		Last Modified: Tue, 23 May 2023 04:05:25 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -3305,7 +3305,7 @@ CMD ["memcached"]
 ## `memcached:1.6-bullseye`
 
 ```console
-$ docker pull memcached@sha256:6ea7a08375fec9439ec9ba63dc87249d4ba1b41e585d840022c0fac5426f5f9c
+$ docker pull memcached@sha256:b2109109a25c506b4c7e718aec212440edbbc8fa2b7a4caf9b3c5402be667d6b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3322,69 +3322,69 @@ $ docker pull memcached@sha256:6ea7a08375fec9439ec9ba63dc87249d4ba1b41e585d84002
 ### `memcached:1.6-bullseye` - linux; amd64
 
 ```console
-$ docker pull memcached@sha256:3a453689b8b1843bd509a32aaa7aeb0d8bb4260b87f9f67343d25f90981d09d1
+$ docker pull memcached@sha256:ca633f743f7ffe76281d119891271f072e4bdb471b4cf2447be145a9afd97d2c
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.0 MB (32997950 bytes)**  
+-	Total Size: **33.0 MB (32997994 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3b5602dee2853e39caaf270ca75fec2970d30968076f19e6a2bd053e3f2132fa`
+-	Image ID: `sha256:a78754495cd58c1fd188f1147b890bd9de6c8a3bf9cbea69c917e578a7fa6842`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["memcached"]`
 
 ```dockerfile
-# Tue, 02 May 2023 23:46:59 GMT
-ADD file:a2378c1b12e95db69e24b9d347441678c6f23239292cce3c822b1524992b6ec4 in / 
-# Tue, 02 May 2023 23:47:00 GMT
+# Tue, 23 May 2023 01:20:14 GMT
+ADD file:88252a7f118b4d6f55dd5baf49dbcaa053c9d6172c652963c1151fa76f625e44 in / 
+# Tue, 23 May 2023 01:20:14 GMT
 CMD ["bash"]
-# Wed, 03 May 2023 21:20:08 GMT
+# Tue, 23 May 2023 04:02:50 GMT
 RUN groupadd --system --gid 11211 memcache && useradd --system --gid memcache --uid 11211 memcache
-# Wed, 03 May 2023 21:20:12 GMT
+# Tue, 23 May 2023 04:02:54 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libsasl2-modules 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 15 May 2023 21:19:48 GMT
+# Tue, 23 May 2023 04:02:54 GMT
 ENV MEMCACHED_VERSION=1.6.20
-# Mon, 15 May 2023 21:19:48 GMT
+# Tue, 23 May 2023 04:02:54 GMT
 ENV MEMCACHED_SHA1=face85ed6fad41432ad818445b24eca55bccdd78
-# Mon, 15 May 2023 21:22:03 GMT
+# Tue, 23 May 2023 04:05:05 GMT
 RUN set -x 		&& savedAptMark="$(apt-mark showmanual)" 	&& apt-get update 	&& apt-get install -y --no-install-recommends 		ca-certificates 		dpkg-dev 		gcc 		libc6-dev 		libevent-dev 		libio-socket-ssl-perl 		libsasl2-dev 		libssl-dev 		make 		perl 		wget 	&& rm -rf /var/lib/apt/lists/* 		&& wget -O memcached.tar.gz "https://memcached.org/files/memcached-$MEMCACHED_VERSION.tar.gz" 	&& echo "$MEMCACHED_SHA1  memcached.tar.gz" | sha1sum -c - 	&& mkdir -p /usr/src/memcached 	&& tar -xzf memcached.tar.gz -C /usr/src/memcached --strip-components=1 	&& rm memcached.tar.gz 		&& cd /usr/src/memcached 		&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& enableExtstore="$( 		case "$gnuArch" in 			s390x-*) ;; 			*) echo '--enable-extstore' ;; 		esac 	)" 	&& ./configure 		--build="$gnuArch" 		--enable-sasl 		--enable-sasl-pwdb 		--enable-tls 		$enableExtstore 	&& nproc="$(nproc)" 	&& make -j "$nproc" 		&& sed -i.bak 's/SECLEVEL=2/SECLEVEL=1/g' /etc/ssl/openssl.cnf 	&& make test PARALLEL="$nproc" 	&& mv /etc/ssl/openssl.cnf.bak /etc/ssl/openssl.cnf 		&& make install 		&& cd / && rm -rf /usr/src/memcached 		&& apt-mark auto '.*' > /dev/null 	&& apt-mark manual $savedAptMark > /dev/null 	&& find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false 		&& memcached -V
-# Mon, 15 May 2023 21:22:03 GMT
+# Tue, 23 May 2023 04:05:05 GMT
 COPY file:bf641b13ea5b37f5830b299ebe9d72f194ee5d897db14faf8b133dc7a66a48ad in /usr/local/bin/ 
-# Mon, 15 May 2023 21:22:04 GMT
+# Tue, 23 May 2023 04:05:06 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
-# Mon, 15 May 2023 21:22:04 GMT
+# Tue, 23 May 2023 04:05:06 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 15 May 2023 21:22:04 GMT
+# Tue, 23 May 2023 04:05:06 GMT
 USER memcache
-# Mon, 15 May 2023 21:22:04 GMT
+# Tue, 23 May 2023 04:05:06 GMT
 EXPOSE 11211
-# Mon, 15 May 2023 21:22:04 GMT
+# Tue, 23 May 2023 04:05:06 GMT
 CMD ["memcached"]
 ```
 
 -	Layers:
-	-	`sha256:9e3ea8720c6de96cc9ad544dddc695a3ab73f5581c5d954e0504cc4f80fb5e5c`  
-		Last Modified: Tue, 02 May 2023 23:50:22 GMT  
-		Size: 31.4 MB (31403516 bytes)  
+	-	`sha256:f03b40093957615593f2ed142961afb6b540507e0b47e3f7626ba5e02efbbbf1`  
+		Last Modified: Tue, 23 May 2023 01:24:08 GMT  
+		Size: 31.4 MB (31403586 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:431e8f69bfa62eee3335305e13623298b12323290993d59b62804b2c9d004847`  
-		Last Modified: Wed, 03 May 2023 21:23:12 GMT  
-		Size: 5.0 KB (4983 bytes)  
+	-	`sha256:42850af464e5357c0c0ef63860ee73ed7775c9aef90ca1740dd84ddd5ee0f335`  
+		Last Modified: Tue, 23 May 2023 04:05:24 GMT  
+		Size: 5.0 KB (4985 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3ccde0e3c0d3a452603ea01b54330a53f6de732f14c4082bb1796181b2c30cc`  
-		Last Modified: Wed, 03 May 2023 21:23:12 GMT  
-		Size: 328.2 KB (328214 bytes)  
+	-	`sha256:66835158f1e39645e904689d36678623f36b00a888fc225a06013a2fed77d655`  
+		Last Modified: Tue, 23 May 2023 04:05:25 GMT  
+		Size: 328.2 KB (328211 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d42bc7f08cc702283bacfdc813a93805c69be9572da3562ef71ccdb7c9ffb5cb`  
-		Last Modified: Mon, 15 May 2023 21:24:30 GMT  
-		Size: 1.3 MB (1260828 bytes)  
+	-	`sha256:4027e4df9c701a98771edfdd41af6ab6b8f6b9fd653d71e05461cb4f02293c92`  
+		Last Modified: Tue, 23 May 2023 04:05:25 GMT  
+		Size: 1.3 MB (1260804 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bcf49f915c5409a9ddb26881c6f67b94255b0b570bb216d0f83f98c766c85f85`  
-		Last Modified: Mon, 15 May 2023 21:24:30 GMT  
-		Size: 288.0 B  
+	-	`sha256:e874830b2907232a137b7908511711e2e6a06330862f1add300c590a317ee84f`  
+		Last Modified: Tue, 23 May 2023 04:05:24 GMT  
+		Size: 287.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cff656a1e0a745dcbc081e72107e5a0432c41ca497d3da5d940c057066e023d1`  
-		Last Modified: Mon, 15 May 2023 21:24:30 GMT  
+	-	`sha256:26b333375d5837211965b1039e5bb045858f570932d51f28a9dc35ca00ca4f9e`  
+		Last Modified: Tue, 23 May 2023 04:05:25 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -3874,7 +3874,7 @@ CMD ["memcached"]
 ## `memcached:1.6.20`
 
 ```console
-$ docker pull memcached@sha256:2ff909af555d984333c3ea64fcd83bdefb2f7e424f47e93092682079a68b64bc
+$ docker pull memcached@sha256:b7474b5a3e44d687d41570db244ef83c89265fdc70fa1cb3db9934e4e2eb3d7d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3890,69 +3890,69 @@ $ docker pull memcached@sha256:2ff909af555d984333c3ea64fcd83bdefb2f7e424f47e9309
 ### `memcached:1.6.20` - linux; amd64
 
 ```console
-$ docker pull memcached@sha256:3a453689b8b1843bd509a32aaa7aeb0d8bb4260b87f9f67343d25f90981d09d1
+$ docker pull memcached@sha256:ca633f743f7ffe76281d119891271f072e4bdb471b4cf2447be145a9afd97d2c
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.0 MB (32997950 bytes)**  
+-	Total Size: **33.0 MB (32997994 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3b5602dee2853e39caaf270ca75fec2970d30968076f19e6a2bd053e3f2132fa`
+-	Image ID: `sha256:a78754495cd58c1fd188f1147b890bd9de6c8a3bf9cbea69c917e578a7fa6842`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["memcached"]`
 
 ```dockerfile
-# Tue, 02 May 2023 23:46:59 GMT
-ADD file:a2378c1b12e95db69e24b9d347441678c6f23239292cce3c822b1524992b6ec4 in / 
-# Tue, 02 May 2023 23:47:00 GMT
+# Tue, 23 May 2023 01:20:14 GMT
+ADD file:88252a7f118b4d6f55dd5baf49dbcaa053c9d6172c652963c1151fa76f625e44 in / 
+# Tue, 23 May 2023 01:20:14 GMT
 CMD ["bash"]
-# Wed, 03 May 2023 21:20:08 GMT
+# Tue, 23 May 2023 04:02:50 GMT
 RUN groupadd --system --gid 11211 memcache && useradd --system --gid memcache --uid 11211 memcache
-# Wed, 03 May 2023 21:20:12 GMT
+# Tue, 23 May 2023 04:02:54 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libsasl2-modules 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 15 May 2023 21:19:48 GMT
+# Tue, 23 May 2023 04:02:54 GMT
 ENV MEMCACHED_VERSION=1.6.20
-# Mon, 15 May 2023 21:19:48 GMT
+# Tue, 23 May 2023 04:02:54 GMT
 ENV MEMCACHED_SHA1=face85ed6fad41432ad818445b24eca55bccdd78
-# Mon, 15 May 2023 21:22:03 GMT
+# Tue, 23 May 2023 04:05:05 GMT
 RUN set -x 		&& savedAptMark="$(apt-mark showmanual)" 	&& apt-get update 	&& apt-get install -y --no-install-recommends 		ca-certificates 		dpkg-dev 		gcc 		libc6-dev 		libevent-dev 		libio-socket-ssl-perl 		libsasl2-dev 		libssl-dev 		make 		perl 		wget 	&& rm -rf /var/lib/apt/lists/* 		&& wget -O memcached.tar.gz "https://memcached.org/files/memcached-$MEMCACHED_VERSION.tar.gz" 	&& echo "$MEMCACHED_SHA1  memcached.tar.gz" | sha1sum -c - 	&& mkdir -p /usr/src/memcached 	&& tar -xzf memcached.tar.gz -C /usr/src/memcached --strip-components=1 	&& rm memcached.tar.gz 		&& cd /usr/src/memcached 		&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& enableExtstore="$( 		case "$gnuArch" in 			s390x-*) ;; 			*) echo '--enable-extstore' ;; 		esac 	)" 	&& ./configure 		--build="$gnuArch" 		--enable-sasl 		--enable-sasl-pwdb 		--enable-tls 		$enableExtstore 	&& nproc="$(nproc)" 	&& make -j "$nproc" 		&& sed -i.bak 's/SECLEVEL=2/SECLEVEL=1/g' /etc/ssl/openssl.cnf 	&& make test PARALLEL="$nproc" 	&& mv /etc/ssl/openssl.cnf.bak /etc/ssl/openssl.cnf 		&& make install 		&& cd / && rm -rf /usr/src/memcached 		&& apt-mark auto '.*' > /dev/null 	&& apt-mark manual $savedAptMark > /dev/null 	&& find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false 		&& memcached -V
-# Mon, 15 May 2023 21:22:03 GMT
+# Tue, 23 May 2023 04:05:05 GMT
 COPY file:bf641b13ea5b37f5830b299ebe9d72f194ee5d897db14faf8b133dc7a66a48ad in /usr/local/bin/ 
-# Mon, 15 May 2023 21:22:04 GMT
+# Tue, 23 May 2023 04:05:06 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
-# Mon, 15 May 2023 21:22:04 GMT
+# Tue, 23 May 2023 04:05:06 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 15 May 2023 21:22:04 GMT
+# Tue, 23 May 2023 04:05:06 GMT
 USER memcache
-# Mon, 15 May 2023 21:22:04 GMT
+# Tue, 23 May 2023 04:05:06 GMT
 EXPOSE 11211
-# Mon, 15 May 2023 21:22:04 GMT
+# Tue, 23 May 2023 04:05:06 GMT
 CMD ["memcached"]
 ```
 
 -	Layers:
-	-	`sha256:9e3ea8720c6de96cc9ad544dddc695a3ab73f5581c5d954e0504cc4f80fb5e5c`  
-		Last Modified: Tue, 02 May 2023 23:50:22 GMT  
-		Size: 31.4 MB (31403516 bytes)  
+	-	`sha256:f03b40093957615593f2ed142961afb6b540507e0b47e3f7626ba5e02efbbbf1`  
+		Last Modified: Tue, 23 May 2023 01:24:08 GMT  
+		Size: 31.4 MB (31403586 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:431e8f69bfa62eee3335305e13623298b12323290993d59b62804b2c9d004847`  
-		Last Modified: Wed, 03 May 2023 21:23:12 GMT  
-		Size: 5.0 KB (4983 bytes)  
+	-	`sha256:42850af464e5357c0c0ef63860ee73ed7775c9aef90ca1740dd84ddd5ee0f335`  
+		Last Modified: Tue, 23 May 2023 04:05:24 GMT  
+		Size: 5.0 KB (4985 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3ccde0e3c0d3a452603ea01b54330a53f6de732f14c4082bb1796181b2c30cc`  
-		Last Modified: Wed, 03 May 2023 21:23:12 GMT  
-		Size: 328.2 KB (328214 bytes)  
+	-	`sha256:66835158f1e39645e904689d36678623f36b00a888fc225a06013a2fed77d655`  
+		Last Modified: Tue, 23 May 2023 04:05:25 GMT  
+		Size: 328.2 KB (328211 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d42bc7f08cc702283bacfdc813a93805c69be9572da3562ef71ccdb7c9ffb5cb`  
-		Last Modified: Mon, 15 May 2023 21:24:30 GMT  
-		Size: 1.3 MB (1260828 bytes)  
+	-	`sha256:4027e4df9c701a98771edfdd41af6ab6b8f6b9fd653d71e05461cb4f02293c92`  
+		Last Modified: Tue, 23 May 2023 04:05:25 GMT  
+		Size: 1.3 MB (1260804 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bcf49f915c5409a9ddb26881c6f67b94255b0b570bb216d0f83f98c766c85f85`  
-		Last Modified: Mon, 15 May 2023 21:24:30 GMT  
-		Size: 288.0 B  
+	-	`sha256:e874830b2907232a137b7908511711e2e6a06330862f1add300c590a317ee84f`  
+		Last Modified: Tue, 23 May 2023 04:05:24 GMT  
+		Size: 287.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cff656a1e0a745dcbc081e72107e5a0432c41ca497d3da5d940c057066e023d1`  
-		Last Modified: Mon, 15 May 2023 21:24:30 GMT  
+	-	`sha256:26b333375d5837211965b1039e5bb045858f570932d51f28a9dc35ca00ca4f9e`  
+		Last Modified: Tue, 23 May 2023 04:05:25 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -5091,7 +5091,7 @@ CMD ["memcached"]
 ## `memcached:1.6.20-bullseye`
 
 ```console
-$ docker pull memcached@sha256:2ff909af555d984333c3ea64fcd83bdefb2f7e424f47e93092682079a68b64bc
+$ docker pull memcached@sha256:b7474b5a3e44d687d41570db244ef83c89265fdc70fa1cb3db9934e4e2eb3d7d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5107,69 +5107,69 @@ $ docker pull memcached@sha256:2ff909af555d984333c3ea64fcd83bdefb2f7e424f47e9309
 ### `memcached:1.6.20-bullseye` - linux; amd64
 
 ```console
-$ docker pull memcached@sha256:3a453689b8b1843bd509a32aaa7aeb0d8bb4260b87f9f67343d25f90981d09d1
+$ docker pull memcached@sha256:ca633f743f7ffe76281d119891271f072e4bdb471b4cf2447be145a9afd97d2c
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.0 MB (32997950 bytes)**  
+-	Total Size: **33.0 MB (32997994 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3b5602dee2853e39caaf270ca75fec2970d30968076f19e6a2bd053e3f2132fa`
+-	Image ID: `sha256:a78754495cd58c1fd188f1147b890bd9de6c8a3bf9cbea69c917e578a7fa6842`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["memcached"]`
 
 ```dockerfile
-# Tue, 02 May 2023 23:46:59 GMT
-ADD file:a2378c1b12e95db69e24b9d347441678c6f23239292cce3c822b1524992b6ec4 in / 
-# Tue, 02 May 2023 23:47:00 GMT
+# Tue, 23 May 2023 01:20:14 GMT
+ADD file:88252a7f118b4d6f55dd5baf49dbcaa053c9d6172c652963c1151fa76f625e44 in / 
+# Tue, 23 May 2023 01:20:14 GMT
 CMD ["bash"]
-# Wed, 03 May 2023 21:20:08 GMT
+# Tue, 23 May 2023 04:02:50 GMT
 RUN groupadd --system --gid 11211 memcache && useradd --system --gid memcache --uid 11211 memcache
-# Wed, 03 May 2023 21:20:12 GMT
+# Tue, 23 May 2023 04:02:54 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libsasl2-modules 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 15 May 2023 21:19:48 GMT
+# Tue, 23 May 2023 04:02:54 GMT
 ENV MEMCACHED_VERSION=1.6.20
-# Mon, 15 May 2023 21:19:48 GMT
+# Tue, 23 May 2023 04:02:54 GMT
 ENV MEMCACHED_SHA1=face85ed6fad41432ad818445b24eca55bccdd78
-# Mon, 15 May 2023 21:22:03 GMT
+# Tue, 23 May 2023 04:05:05 GMT
 RUN set -x 		&& savedAptMark="$(apt-mark showmanual)" 	&& apt-get update 	&& apt-get install -y --no-install-recommends 		ca-certificates 		dpkg-dev 		gcc 		libc6-dev 		libevent-dev 		libio-socket-ssl-perl 		libsasl2-dev 		libssl-dev 		make 		perl 		wget 	&& rm -rf /var/lib/apt/lists/* 		&& wget -O memcached.tar.gz "https://memcached.org/files/memcached-$MEMCACHED_VERSION.tar.gz" 	&& echo "$MEMCACHED_SHA1  memcached.tar.gz" | sha1sum -c - 	&& mkdir -p /usr/src/memcached 	&& tar -xzf memcached.tar.gz -C /usr/src/memcached --strip-components=1 	&& rm memcached.tar.gz 		&& cd /usr/src/memcached 		&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& enableExtstore="$( 		case "$gnuArch" in 			s390x-*) ;; 			*) echo '--enable-extstore' ;; 		esac 	)" 	&& ./configure 		--build="$gnuArch" 		--enable-sasl 		--enable-sasl-pwdb 		--enable-tls 		$enableExtstore 	&& nproc="$(nproc)" 	&& make -j "$nproc" 		&& sed -i.bak 's/SECLEVEL=2/SECLEVEL=1/g' /etc/ssl/openssl.cnf 	&& make test PARALLEL="$nproc" 	&& mv /etc/ssl/openssl.cnf.bak /etc/ssl/openssl.cnf 		&& make install 		&& cd / && rm -rf /usr/src/memcached 		&& apt-mark auto '.*' > /dev/null 	&& apt-mark manual $savedAptMark > /dev/null 	&& find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false 		&& memcached -V
-# Mon, 15 May 2023 21:22:03 GMT
+# Tue, 23 May 2023 04:05:05 GMT
 COPY file:bf641b13ea5b37f5830b299ebe9d72f194ee5d897db14faf8b133dc7a66a48ad in /usr/local/bin/ 
-# Mon, 15 May 2023 21:22:04 GMT
+# Tue, 23 May 2023 04:05:06 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
-# Mon, 15 May 2023 21:22:04 GMT
+# Tue, 23 May 2023 04:05:06 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 15 May 2023 21:22:04 GMT
+# Tue, 23 May 2023 04:05:06 GMT
 USER memcache
-# Mon, 15 May 2023 21:22:04 GMT
+# Tue, 23 May 2023 04:05:06 GMT
 EXPOSE 11211
-# Mon, 15 May 2023 21:22:04 GMT
+# Tue, 23 May 2023 04:05:06 GMT
 CMD ["memcached"]
 ```
 
 -	Layers:
-	-	`sha256:9e3ea8720c6de96cc9ad544dddc695a3ab73f5581c5d954e0504cc4f80fb5e5c`  
-		Last Modified: Tue, 02 May 2023 23:50:22 GMT  
-		Size: 31.4 MB (31403516 bytes)  
+	-	`sha256:f03b40093957615593f2ed142961afb6b540507e0b47e3f7626ba5e02efbbbf1`  
+		Last Modified: Tue, 23 May 2023 01:24:08 GMT  
+		Size: 31.4 MB (31403586 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:431e8f69bfa62eee3335305e13623298b12323290993d59b62804b2c9d004847`  
-		Last Modified: Wed, 03 May 2023 21:23:12 GMT  
-		Size: 5.0 KB (4983 bytes)  
+	-	`sha256:42850af464e5357c0c0ef63860ee73ed7775c9aef90ca1740dd84ddd5ee0f335`  
+		Last Modified: Tue, 23 May 2023 04:05:24 GMT  
+		Size: 5.0 KB (4985 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3ccde0e3c0d3a452603ea01b54330a53f6de732f14c4082bb1796181b2c30cc`  
-		Last Modified: Wed, 03 May 2023 21:23:12 GMT  
-		Size: 328.2 KB (328214 bytes)  
+	-	`sha256:66835158f1e39645e904689d36678623f36b00a888fc225a06013a2fed77d655`  
+		Last Modified: Tue, 23 May 2023 04:05:25 GMT  
+		Size: 328.2 KB (328211 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d42bc7f08cc702283bacfdc813a93805c69be9572da3562ef71ccdb7c9ffb5cb`  
-		Last Modified: Mon, 15 May 2023 21:24:30 GMT  
-		Size: 1.3 MB (1260828 bytes)  
+	-	`sha256:4027e4df9c701a98771edfdd41af6ab6b8f6b9fd653d71e05461cb4f02293c92`  
+		Last Modified: Tue, 23 May 2023 04:05:25 GMT  
+		Size: 1.3 MB (1260804 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bcf49f915c5409a9ddb26881c6f67b94255b0b570bb216d0f83f98c766c85f85`  
-		Last Modified: Mon, 15 May 2023 21:24:30 GMT  
-		Size: 288.0 B  
+	-	`sha256:e874830b2907232a137b7908511711e2e6a06330862f1add300c590a317ee84f`  
+		Last Modified: Tue, 23 May 2023 04:05:24 GMT  
+		Size: 287.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cff656a1e0a745dcbc081e72107e5a0432c41ca497d3da5d940c057066e023d1`  
-		Last Modified: Mon, 15 May 2023 21:24:30 GMT  
+	-	`sha256:26b333375d5837211965b1039e5bb045858f570932d51f28a9dc35ca00ca4f9e`  
+		Last Modified: Tue, 23 May 2023 04:05:25 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -6378,7 +6378,7 @@ CMD ["memcached"]
 ## `memcached:bullseye`
 
 ```console
-$ docker pull memcached@sha256:6ea7a08375fec9439ec9ba63dc87249d4ba1b41e585d840022c0fac5426f5f9c
+$ docker pull memcached@sha256:b2109109a25c506b4c7e718aec212440edbbc8fa2b7a4caf9b3c5402be667d6b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6395,69 +6395,69 @@ $ docker pull memcached@sha256:6ea7a08375fec9439ec9ba63dc87249d4ba1b41e585d84002
 ### `memcached:bullseye` - linux; amd64
 
 ```console
-$ docker pull memcached@sha256:3a453689b8b1843bd509a32aaa7aeb0d8bb4260b87f9f67343d25f90981d09d1
+$ docker pull memcached@sha256:ca633f743f7ffe76281d119891271f072e4bdb471b4cf2447be145a9afd97d2c
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.0 MB (32997950 bytes)**  
+-	Total Size: **33.0 MB (32997994 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3b5602dee2853e39caaf270ca75fec2970d30968076f19e6a2bd053e3f2132fa`
+-	Image ID: `sha256:a78754495cd58c1fd188f1147b890bd9de6c8a3bf9cbea69c917e578a7fa6842`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["memcached"]`
 
 ```dockerfile
-# Tue, 02 May 2023 23:46:59 GMT
-ADD file:a2378c1b12e95db69e24b9d347441678c6f23239292cce3c822b1524992b6ec4 in / 
-# Tue, 02 May 2023 23:47:00 GMT
+# Tue, 23 May 2023 01:20:14 GMT
+ADD file:88252a7f118b4d6f55dd5baf49dbcaa053c9d6172c652963c1151fa76f625e44 in / 
+# Tue, 23 May 2023 01:20:14 GMT
 CMD ["bash"]
-# Wed, 03 May 2023 21:20:08 GMT
+# Tue, 23 May 2023 04:02:50 GMT
 RUN groupadd --system --gid 11211 memcache && useradd --system --gid memcache --uid 11211 memcache
-# Wed, 03 May 2023 21:20:12 GMT
+# Tue, 23 May 2023 04:02:54 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libsasl2-modules 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 15 May 2023 21:19:48 GMT
+# Tue, 23 May 2023 04:02:54 GMT
 ENV MEMCACHED_VERSION=1.6.20
-# Mon, 15 May 2023 21:19:48 GMT
+# Tue, 23 May 2023 04:02:54 GMT
 ENV MEMCACHED_SHA1=face85ed6fad41432ad818445b24eca55bccdd78
-# Mon, 15 May 2023 21:22:03 GMT
+# Tue, 23 May 2023 04:05:05 GMT
 RUN set -x 		&& savedAptMark="$(apt-mark showmanual)" 	&& apt-get update 	&& apt-get install -y --no-install-recommends 		ca-certificates 		dpkg-dev 		gcc 		libc6-dev 		libevent-dev 		libio-socket-ssl-perl 		libsasl2-dev 		libssl-dev 		make 		perl 		wget 	&& rm -rf /var/lib/apt/lists/* 		&& wget -O memcached.tar.gz "https://memcached.org/files/memcached-$MEMCACHED_VERSION.tar.gz" 	&& echo "$MEMCACHED_SHA1  memcached.tar.gz" | sha1sum -c - 	&& mkdir -p /usr/src/memcached 	&& tar -xzf memcached.tar.gz -C /usr/src/memcached --strip-components=1 	&& rm memcached.tar.gz 		&& cd /usr/src/memcached 		&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& enableExtstore="$( 		case "$gnuArch" in 			s390x-*) ;; 			*) echo '--enable-extstore' ;; 		esac 	)" 	&& ./configure 		--build="$gnuArch" 		--enable-sasl 		--enable-sasl-pwdb 		--enable-tls 		$enableExtstore 	&& nproc="$(nproc)" 	&& make -j "$nproc" 		&& sed -i.bak 's/SECLEVEL=2/SECLEVEL=1/g' /etc/ssl/openssl.cnf 	&& make test PARALLEL="$nproc" 	&& mv /etc/ssl/openssl.cnf.bak /etc/ssl/openssl.cnf 		&& make install 		&& cd / && rm -rf /usr/src/memcached 		&& apt-mark auto '.*' > /dev/null 	&& apt-mark manual $savedAptMark > /dev/null 	&& find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false 		&& memcached -V
-# Mon, 15 May 2023 21:22:03 GMT
+# Tue, 23 May 2023 04:05:05 GMT
 COPY file:bf641b13ea5b37f5830b299ebe9d72f194ee5d897db14faf8b133dc7a66a48ad in /usr/local/bin/ 
-# Mon, 15 May 2023 21:22:04 GMT
+# Tue, 23 May 2023 04:05:06 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
-# Mon, 15 May 2023 21:22:04 GMT
+# Tue, 23 May 2023 04:05:06 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 15 May 2023 21:22:04 GMT
+# Tue, 23 May 2023 04:05:06 GMT
 USER memcache
-# Mon, 15 May 2023 21:22:04 GMT
+# Tue, 23 May 2023 04:05:06 GMT
 EXPOSE 11211
-# Mon, 15 May 2023 21:22:04 GMT
+# Tue, 23 May 2023 04:05:06 GMT
 CMD ["memcached"]
 ```
 
 -	Layers:
-	-	`sha256:9e3ea8720c6de96cc9ad544dddc695a3ab73f5581c5d954e0504cc4f80fb5e5c`  
-		Last Modified: Tue, 02 May 2023 23:50:22 GMT  
-		Size: 31.4 MB (31403516 bytes)  
+	-	`sha256:f03b40093957615593f2ed142961afb6b540507e0b47e3f7626ba5e02efbbbf1`  
+		Last Modified: Tue, 23 May 2023 01:24:08 GMT  
+		Size: 31.4 MB (31403586 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:431e8f69bfa62eee3335305e13623298b12323290993d59b62804b2c9d004847`  
-		Last Modified: Wed, 03 May 2023 21:23:12 GMT  
-		Size: 5.0 KB (4983 bytes)  
+	-	`sha256:42850af464e5357c0c0ef63860ee73ed7775c9aef90ca1740dd84ddd5ee0f335`  
+		Last Modified: Tue, 23 May 2023 04:05:24 GMT  
+		Size: 5.0 KB (4985 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3ccde0e3c0d3a452603ea01b54330a53f6de732f14c4082bb1796181b2c30cc`  
-		Last Modified: Wed, 03 May 2023 21:23:12 GMT  
-		Size: 328.2 KB (328214 bytes)  
+	-	`sha256:66835158f1e39645e904689d36678623f36b00a888fc225a06013a2fed77d655`  
+		Last Modified: Tue, 23 May 2023 04:05:25 GMT  
+		Size: 328.2 KB (328211 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d42bc7f08cc702283bacfdc813a93805c69be9572da3562ef71ccdb7c9ffb5cb`  
-		Last Modified: Mon, 15 May 2023 21:24:30 GMT  
-		Size: 1.3 MB (1260828 bytes)  
+	-	`sha256:4027e4df9c701a98771edfdd41af6ab6b8f6b9fd653d71e05461cb4f02293c92`  
+		Last Modified: Tue, 23 May 2023 04:05:25 GMT  
+		Size: 1.3 MB (1260804 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bcf49f915c5409a9ddb26881c6f67b94255b0b570bb216d0f83f98c766c85f85`  
-		Last Modified: Mon, 15 May 2023 21:24:30 GMT  
-		Size: 288.0 B  
+	-	`sha256:e874830b2907232a137b7908511711e2e6a06330862f1add300c590a317ee84f`  
+		Last Modified: Tue, 23 May 2023 04:05:24 GMT  
+		Size: 287.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cff656a1e0a745dcbc081e72107e5a0432c41ca497d3da5d940c057066e023d1`  
-		Last Modified: Mon, 15 May 2023 21:24:30 GMT  
+	-	`sha256:26b333375d5837211965b1039e5bb045858f570932d51f28a9dc35ca00ca4f9e`  
+		Last Modified: Tue, 23 May 2023 04:05:25 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -6947,7 +6947,7 @@ CMD ["memcached"]
 ## `memcached:latest`
 
 ```console
-$ docker pull memcached@sha256:6ea7a08375fec9439ec9ba63dc87249d4ba1b41e585d840022c0fac5426f5f9c
+$ docker pull memcached@sha256:b2109109a25c506b4c7e718aec212440edbbc8fa2b7a4caf9b3c5402be667d6b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6964,69 +6964,69 @@ $ docker pull memcached@sha256:6ea7a08375fec9439ec9ba63dc87249d4ba1b41e585d84002
 ### `memcached:latest` - linux; amd64
 
 ```console
-$ docker pull memcached@sha256:3a453689b8b1843bd509a32aaa7aeb0d8bb4260b87f9f67343d25f90981d09d1
+$ docker pull memcached@sha256:ca633f743f7ffe76281d119891271f072e4bdb471b4cf2447be145a9afd97d2c
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.0 MB (32997950 bytes)**  
+-	Total Size: **33.0 MB (32997994 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3b5602dee2853e39caaf270ca75fec2970d30968076f19e6a2bd053e3f2132fa`
+-	Image ID: `sha256:a78754495cd58c1fd188f1147b890bd9de6c8a3bf9cbea69c917e578a7fa6842`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["memcached"]`
 
 ```dockerfile
-# Tue, 02 May 2023 23:46:59 GMT
-ADD file:a2378c1b12e95db69e24b9d347441678c6f23239292cce3c822b1524992b6ec4 in / 
-# Tue, 02 May 2023 23:47:00 GMT
+# Tue, 23 May 2023 01:20:14 GMT
+ADD file:88252a7f118b4d6f55dd5baf49dbcaa053c9d6172c652963c1151fa76f625e44 in / 
+# Tue, 23 May 2023 01:20:14 GMT
 CMD ["bash"]
-# Wed, 03 May 2023 21:20:08 GMT
+# Tue, 23 May 2023 04:02:50 GMT
 RUN groupadd --system --gid 11211 memcache && useradd --system --gid memcache --uid 11211 memcache
-# Wed, 03 May 2023 21:20:12 GMT
+# Tue, 23 May 2023 04:02:54 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libsasl2-modules 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 15 May 2023 21:19:48 GMT
+# Tue, 23 May 2023 04:02:54 GMT
 ENV MEMCACHED_VERSION=1.6.20
-# Mon, 15 May 2023 21:19:48 GMT
+# Tue, 23 May 2023 04:02:54 GMT
 ENV MEMCACHED_SHA1=face85ed6fad41432ad818445b24eca55bccdd78
-# Mon, 15 May 2023 21:22:03 GMT
+# Tue, 23 May 2023 04:05:05 GMT
 RUN set -x 		&& savedAptMark="$(apt-mark showmanual)" 	&& apt-get update 	&& apt-get install -y --no-install-recommends 		ca-certificates 		dpkg-dev 		gcc 		libc6-dev 		libevent-dev 		libio-socket-ssl-perl 		libsasl2-dev 		libssl-dev 		make 		perl 		wget 	&& rm -rf /var/lib/apt/lists/* 		&& wget -O memcached.tar.gz "https://memcached.org/files/memcached-$MEMCACHED_VERSION.tar.gz" 	&& echo "$MEMCACHED_SHA1  memcached.tar.gz" | sha1sum -c - 	&& mkdir -p /usr/src/memcached 	&& tar -xzf memcached.tar.gz -C /usr/src/memcached --strip-components=1 	&& rm memcached.tar.gz 		&& cd /usr/src/memcached 		&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& enableExtstore="$( 		case "$gnuArch" in 			s390x-*) ;; 			*) echo '--enable-extstore' ;; 		esac 	)" 	&& ./configure 		--build="$gnuArch" 		--enable-sasl 		--enable-sasl-pwdb 		--enable-tls 		$enableExtstore 	&& nproc="$(nproc)" 	&& make -j "$nproc" 		&& sed -i.bak 's/SECLEVEL=2/SECLEVEL=1/g' /etc/ssl/openssl.cnf 	&& make test PARALLEL="$nproc" 	&& mv /etc/ssl/openssl.cnf.bak /etc/ssl/openssl.cnf 		&& make install 		&& cd / && rm -rf /usr/src/memcached 		&& apt-mark auto '.*' > /dev/null 	&& apt-mark manual $savedAptMark > /dev/null 	&& find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false 		&& memcached -V
-# Mon, 15 May 2023 21:22:03 GMT
+# Tue, 23 May 2023 04:05:05 GMT
 COPY file:bf641b13ea5b37f5830b299ebe9d72f194ee5d897db14faf8b133dc7a66a48ad in /usr/local/bin/ 
-# Mon, 15 May 2023 21:22:04 GMT
+# Tue, 23 May 2023 04:05:06 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
-# Mon, 15 May 2023 21:22:04 GMT
+# Tue, 23 May 2023 04:05:06 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 15 May 2023 21:22:04 GMT
+# Tue, 23 May 2023 04:05:06 GMT
 USER memcache
-# Mon, 15 May 2023 21:22:04 GMT
+# Tue, 23 May 2023 04:05:06 GMT
 EXPOSE 11211
-# Mon, 15 May 2023 21:22:04 GMT
+# Tue, 23 May 2023 04:05:06 GMT
 CMD ["memcached"]
 ```
 
 -	Layers:
-	-	`sha256:9e3ea8720c6de96cc9ad544dddc695a3ab73f5581c5d954e0504cc4f80fb5e5c`  
-		Last Modified: Tue, 02 May 2023 23:50:22 GMT  
-		Size: 31.4 MB (31403516 bytes)  
+	-	`sha256:f03b40093957615593f2ed142961afb6b540507e0b47e3f7626ba5e02efbbbf1`  
+		Last Modified: Tue, 23 May 2023 01:24:08 GMT  
+		Size: 31.4 MB (31403586 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:431e8f69bfa62eee3335305e13623298b12323290993d59b62804b2c9d004847`  
-		Last Modified: Wed, 03 May 2023 21:23:12 GMT  
-		Size: 5.0 KB (4983 bytes)  
+	-	`sha256:42850af464e5357c0c0ef63860ee73ed7775c9aef90ca1740dd84ddd5ee0f335`  
+		Last Modified: Tue, 23 May 2023 04:05:24 GMT  
+		Size: 5.0 KB (4985 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3ccde0e3c0d3a452603ea01b54330a53f6de732f14c4082bb1796181b2c30cc`  
-		Last Modified: Wed, 03 May 2023 21:23:12 GMT  
-		Size: 328.2 KB (328214 bytes)  
+	-	`sha256:66835158f1e39645e904689d36678623f36b00a888fc225a06013a2fed77d655`  
+		Last Modified: Tue, 23 May 2023 04:05:25 GMT  
+		Size: 328.2 KB (328211 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d42bc7f08cc702283bacfdc813a93805c69be9572da3562ef71ccdb7c9ffb5cb`  
-		Last Modified: Mon, 15 May 2023 21:24:30 GMT  
-		Size: 1.3 MB (1260828 bytes)  
+	-	`sha256:4027e4df9c701a98771edfdd41af6ab6b8f6b9fd653d71e05461cb4f02293c92`  
+		Last Modified: Tue, 23 May 2023 04:05:25 GMT  
+		Size: 1.3 MB (1260804 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bcf49f915c5409a9ddb26881c6f67b94255b0b570bb216d0f83f98c766c85f85`  
-		Last Modified: Mon, 15 May 2023 21:24:30 GMT  
-		Size: 288.0 B  
+	-	`sha256:e874830b2907232a137b7908511711e2e6a06330862f1add300c590a317ee84f`  
+		Last Modified: Tue, 23 May 2023 04:05:24 GMT  
+		Size: 287.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cff656a1e0a745dcbc081e72107e5a0432c41ca497d3da5d940c057066e023d1`  
-		Last Modified: Mon, 15 May 2023 21:24:30 GMT  
+	-	`sha256:26b333375d5837211965b1039e5bb045858f570932d51f28a9dc35ca00ca4f9e`  
+		Last Modified: Tue, 23 May 2023 04:05:25 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
