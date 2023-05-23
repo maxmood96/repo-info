@@ -1,10 +1,10 @@
-# `debian:unstable`
+# `debian:bookworm-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ae7b021bc79110476fed48be1397f6290a18f08cb43f813e152594ab67309186`
-- Created: `2023-05-02T23:48:33.988644477Z`
-- Virtual Size: ~ 115.95 Mb  
+- Image ID: `sha256:3a1364bc419d1282eac41c5b04cb4a2ea35d9d32eb5773f7154bc491b78a9e09`
+- Created: `2023-05-23T01:19:49.682853463Z`
+- Virtual Size: ~ 74.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -491,13 +491,19 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `GPL-2+`
 - `public-domain-s-s-d`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris dpkg=1.21.21
+'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.21.21.dsc' dpkg_1.21.21.dsc 3061 SHA256:9b8e9bd7bef0be5214f5ef8358b21c53e4ddfa949d399563de865b22d8d6b00c
+'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.21.21.tar.xz' dpkg_1.21.21.tar.xz 5395164 SHA256:985073817aa0512122f1a7e77598a6b0be168d6c71ac56a3383927eb0813e089
+```
 
-- http://snapshot.debian.org/package/dpkg/1.21.21/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/dpkg/1.21.21/ (for browsing the source)
+- https://sources.debian.net/src/dpkg/1.21.21/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/dpkg/1.21.21/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `e2fsprogs=1.47.0-2`
 
@@ -1353,13 +1359,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/mawk/1.3.4.20200120-3.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/mawk/1.3.4.20200120-3.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ncurses=6.4-2`
+### `dpkg` source package: `ncurses=6.4-4`
 
 Binary Packages:
 
-- `libtinfo6:amd64=6.4-2`
-- `ncurses-base=6.4-2`
-- `ncurses-bin=6.4-2`
+- `libtinfo6:amd64=6.4-4`
+- `ncurses-base=6.4-4`
+- `ncurses-bin=6.4-4`
 
 Licenses: (parsed from: `/usr/share/doc/libtinfo6/copyright`, `/usr/share/doc/ncurses-base/copyright`, `/usr/share/doc/ncurses-bin/copyright`)
 
@@ -1367,13 +1373,21 @@ Licenses: (parsed from: `/usr/share/doc/libtinfo6/copyright`, `/usr/share/doc/nc
 - `MIT/X11`
 - `X11`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris ncurses=6.4-4
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.4-4.dsc' ncurses_6.4-4.dsc 4110 SHA256:a35710b02a3de6ab8f9da7fa2e3726a609cc26c936ad85b2094ef91aa996fc94
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.4.orig.tar.gz' ncurses_6.4.orig.tar.gz 3612591 SHA256:6931283d9ac87c5073f30b6290c4c75f21632bb4fc3603ac8100812bed248159
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.4.orig.tar.gz.asc' ncurses_6.4.orig.tar.gz.asc 729 SHA256:f9096c5311eab61908c142e77e58f503f9228e13d351365b3c331ca5ad5a67db
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.4-4.debian.tar.xz' ncurses_6.4-4.debian.tar.xz 56556 SHA256:97218f48c32e375121d33ebc8a0f53afadb776ddace9003f032970749a33677d
+```
 
-- http://snapshot.debian.org/package/ncurses/6.4-2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/ncurses/6.4-4/ (for browsing the source)
+- https://sources.debian.net/src/ncurses/6.4-4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ncurses/6.4-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nettle=3.8.1-2`
 
@@ -1732,13 +1746,21 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris tzdata=2023c-3
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2023c-3.dsc' tzdata_2023c-3.dsc 2347 SHA256:488ce0fee08c5f08962c387f10ec0fbb8e61619684260fed94e922e9deaac621
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2023c.orig.tar.gz' tzdata_2023c.orig.tar.gz 443902 SHA256:3f510b5d1b4ae9bb38e485aa302a776b317fb3637bdb6404c4adf7b6cadd965c
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2023c.orig.tar.gz.asc' tzdata_2023c.orig.tar.gz.asc 833 SHA256:d5ec7b6ceddc46aa137c0ef85fa5c87445509d7997c067ee0fd2e2a23f833557
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2023c-3.debian.tar.xz' tzdata_2023c-3.debian.tar.xz 119368 SHA256:2e4a19704e3fd01f44bb8ccac7d163e670fc2983ac52b6d1a0634a0c50aff0f4
+```
 
-- http://snapshot.debian.org/package/tzdata/2023c-3/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/tzdata/2023c-3/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2023c-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2023c-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `usrmerge=35`
 
