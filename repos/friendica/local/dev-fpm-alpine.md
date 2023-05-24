@@ -1,9 +1,9 @@
-# `friendica:2023.06-dev-fpm-alpine`
+# `friendica:2023.09-dev-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8a253a3e1ca1ca889f6a04f21ff5ead07d0e3242879dab2965bee91d68d76ad2`
-- Created: `2023-05-19T19:20:14.846311118Z`
+- Image ID: `sha256:dd704966642c61afd5dc7ccd298149ae51dca1fa03d587fb9ee813a20a407814`
+- Created: `2023-05-24T01:37:29.656768339Z`
 - Virtual Size: ~ 248.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -25,8 +25,8 @@
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `FRIENDICA_SYSLOG_FLAGS=39`
-  - `FRIENDICA_VERSION=2023.06-dev`
-  - `FRIENDICA_ADDONS=2023.06-dev`
+  - `FRIENDICA_VERSION=2023.09-dev`
+  - `FRIENDICA_ADDONS=2023.09-dev`
 
 ## `apk` (`.apk`-based packages)
 
@@ -849,16 +849,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcap`
 
 ```console
-libcap-2.64-r0 description:
+libcap-2.64-r1 description:
 POSIX 1003.1e capabilities
 
-libcap-2.64-r0 webpage:
+libcap-2.64-r1 webpage:
 https://sites.google.com/site/fullycapable/
 
-libcap-2.64-r0 installed size:
+libcap-2.64-r1 installed size:
 184 KiB
 
-libcap-2.64-r0 license:
+libcap-2.64-r1 license:
 BSD-3-Clause OR GPL-2.0-only
 
 ```

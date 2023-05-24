@@ -1,10 +1,10 @@
-# `friendica:2023.04-apache`
+# `friendica:2023.05-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4370ee958cc15ffb95dc688bc8a7904b73e5383c0cb841f6c5bf6f5c3ea7d053`
-- Created: `2023-05-19T19:19:36.647747103Z`
-- Virtual Size: ~ 654.99 Mb  
+- Image ID: `sha256:9d7ba98cd502241b6ea0bc19d002be97e91aec490159cfe0192072982c12db2c`
+- Created: `2023-05-24T01:36:19.126479721Z`
+- Virtual Size: ~ 655.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -27,10 +27,10 @@
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `FRIENDICA_SYSLOG_FLAGS=39`
-  - `FRIENDICA_VERSION=2023.04-1`
-  - `FRIENDICA_ADDONS=2023.04-1`
-  - `FRIENDICA_DOWNLOAD_SHA256=10871f5bf48b637222e16d06bd65da8708532b3c92a99ef07545624ce2cf5e05`
-  - `FRIENDICA_DOWNLOAD_ADDONS_SHA256=9209781ca51489cb6c7cd8aae5a62aa82cfbb94198353840e668ee885045a2e9`
+  - `FRIENDICA_VERSION=2023.05`
+  - `FRIENDICA_ADDONS=2023.05`
+  - `FRIENDICA_DOWNLOAD_SHA256=333e63c0aaea24a072c21393de3a1ac5b66e6cb25158db668417b842bedcdee7`
+  - `FRIENDICA_DOWNLOAD_ADDONS_SHA256=6b6f486532a995f67bf6bc0d459ee371a2bfd2ba9b95c84dac49193cdfe76ea8`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2709,13 +2709,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libunistring/0.9.10-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libunistring/0.9.10-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libwebp=0.6.1-2.1`
+### `dpkg` source package: `libwebp=0.6.1-2.1+deb11u1`
 
 Binary Packages:
 
-- `libwebp6:amd64=0.6.1-2.1`
-- `libwebpdemux2:amd64=0.6.1-2.1`
-- `libwebpmux3:amd64=0.6.1-2.1`
+- `libwebp6:amd64=0.6.1-2.1+deb11u1`
+- `libwebpdemux2:amd64=0.6.1-2.1+deb11u1`
+- `libwebpmux3:amd64=0.6.1-2.1+deb11u1`
 
 Licenses: (parsed from: `/usr/share/doc/libwebp6/copyright`, `/usr/share/doc/libwebpdemux2/copyright`, `/usr/share/doc/libwebpmux3/copyright`)
 
@@ -2724,17 +2724,17 @@ Licenses: (parsed from: `/usr/share/doc/libwebp6/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libwebp=0.6.1-2.1
-'http://deb.debian.org/debian/pool/main/libw/libwebp/libwebp_0.6.1-2.1.dsc' libwebp_0.6.1-2.1.dsc 2054 SHA256:b1045ce17d7f16666347813a6b7da16cba304ec33b28e12bda6e83c40243d46f
-'http://deb.debian.org/debian/pool/main/libw/libwebp/libwebp_0.6.1.orig.tar.gz' libwebp_0.6.1.orig.tar.gz 3554290 SHA256:a86045e3ec24704bddbaa369ca30980d6bf4f2625f4cdca03715e91f9c08bbb4
-'http://deb.debian.org/debian/pool/main/libw/libwebp/libwebp_0.6.1-2.1.debian.tar.xz' libwebp_0.6.1-2.1.debian.tar.xz 13616 SHA256:239203fd35a0b26b9e627a509b91a27efa10d996ebc068779bff024af9570ad8
+$ apt-get source -qq --print-uris libwebp=0.6.1-2.1+deb11u1
+'http://deb.debian.org/debian-security/pool/updates/main/libw/libwebp/libwebp_0.6.1-2.1%2bdeb11u1.dsc' libwebp_0.6.1-2.1+deb11u1.dsc 2086 SHA256:be17e41375907dec4a6b059edb6d019faa5f750573f1f8dba7e00b6f3c2d8974
+'http://deb.debian.org/debian-security/pool/updates/main/libw/libwebp/libwebp_0.6.1.orig.tar.gz' libwebp_0.6.1.orig.tar.gz 3554290 SHA256:a86045e3ec24704bddbaa369ca30980d6bf4f2625f4cdca03715e91f9c08bbb4
+'http://deb.debian.org/debian-security/pool/updates/main/libw/libwebp/libwebp_0.6.1-2.1%2bdeb11u1.debian.tar.xz' libwebp_0.6.1-2.1+deb11u1.debian.tar.xz 14032 SHA256:07284af84e47c6656a6904eb88ca725ffdd984397ea3636cf83641db93353701
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libwebp/0.6.1-2.1/ (for browsing the source)
-- https://sources.debian.net/src/libwebp/0.6.1-2.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libwebp/0.6.1-2.1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libwebp/0.6.1-2.1+deb11u1/ (for browsing the source)
+- https://sources.debian.net/src/libwebp/0.6.1-2.1+deb11u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libwebp/0.6.1-2.1+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libx11=2:1.7.2-1`
 
@@ -2969,11 +2969,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.4.8+dfsg-2.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.4.8+dfsg-2.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=5.10.178-3`
+### `dpkg` source package: `linux=5.10.179-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.10.178-3`
+- `linux-libc-dev:amd64=5.10.179-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2989,17 +2989,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=5.10.178-3
-'http://deb.debian.org/debian/pool/main/l/linux/linux_5.10.178-3.dsc' linux_5.10.178-3.dsc 197238 SHA256:8137c4ab5f56e7a998cbcdd807b92c7fc9fb2f6b2bf28f2bbb855c441f8db147
-'http://deb.debian.org/debian/pool/main/l/linux/linux_5.10.178.orig.tar.xz' linux_5.10.178.orig.tar.xz 121884100 SHA256:fbe0da13d8833aff65017c9ce6e8cced3149a30a57bd75ec3dc623fb1caa63c4
-'http://deb.debian.org/debian/pool/main/l/linux/linux_5.10.178-3.debian.tar.xz' linux_5.10.178-3.debian.tar.xz 1593060 SHA256:a59d73b37a027d470ad333ffc289c8211d266f7665fddd45006cba89e82a06bf
+$ apt-get source -qq --print-uris linux=5.10.179-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.179-1.dsc' linux_5.10.179-1.dsc 197238 SHA256:9d20731cb830b436682307108e5d6f2778ca033480cb4cc7a45f7630f933bf8d
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.179.orig.tar.xz' linux_5.10.179.orig.tar.xz 121881852 SHA256:254d0375733a423efd8b364b9c33c88034dec85a76e2cba1093c54a667a74dbd
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.179-1.debian.tar.xz' linux_5.10.179-1.debian.tar.xz 1594496 SHA256:00ed06d6564c8df03c40493c091bfd1cdb76df6cca22a56ac39db6cde46df8bc
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/5.10.178-3/ (for browsing the source)
-- https://sources.debian.net/src/linux/5.10.178-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/5.10.178-3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/5.10.179-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/5.10.179-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/5.10.179-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=11.1.0`
 
