@@ -53,19 +53,13 @@ Licenses: (parsed from: `/usr/share/doc/adduser/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris adduser=3.132
-'http://deb.debian.org/debian/pool/main/a/adduser/adduser_3.132.dsc' adduser_3.132.dsc 1671 SHA256:084a73cbd6af5bf41e6b8d25737d153757d53a57db156fa6e478b45a3fef36ef
-'http://deb.debian.org/debian/pool/main/a/adduser/adduser_3.132.tar.xz' adduser_3.132.tar.xz 271984 SHA256:71fe7061b1d766b79a26afc13ccb45c2fe9ca8fabcac62f46d6578f5fbdce9a8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/adduser/3.132/
 
-- https://sources.debian.net/src/adduser/3.132/ (for browsing the source)
-- https://sources.debian.net/src/adduser/3.132/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/adduser/3.132/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apt=2.6.0`
 
@@ -648,19 +642,13 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `GPL-2+`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.21.21
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.21.21.dsc' dpkg_1.21.21.dsc 3061 SHA256:9b8e9bd7bef0be5214f5ef8358b21c53e4ddfa949d399563de865b22d8d6b00c
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.21.21.tar.xz' dpkg_1.21.21.tar.xz 5395164 SHA256:985073817aa0512122f1a7e77598a6b0be168d6c71ac56a3383927eb0813e089
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dpkg/1.21.21/
 
-- https://sources.debian.net/src/dpkg/1.21.21/ (for browsing the source)
-- https://sources.debian.net/src/dpkg/1.21.21/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dpkg/1.21.21/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `e2fsprogs=1.47.0-2`
 
@@ -1074,21 +1062,13 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.20.1-1
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.20.1-1.dsc' krb5_1.20.1-1.dsc 3168 SHA256:dca082e1aac1ae5f7622b524942a305ad7c93e584f3a67db02f48542eb5b415a
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz' krb5_1.20.1.orig.tar.gz 8661660 SHA256:704aed49b19eb5a7178b34b2873620ec299db08752d6a8574f95d41879ab8851
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz.asc' krb5_1.20.1.orig.tar.gz.asc 833 SHA256:2afeec5dbc586cc40b7975645e02b4c41c4d719dd02213e828c72d8239d55666
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.20.1-1.debian.tar.xz' krb5_1.20.1-1.debian.tar.xz 99428 SHA256:19c5f3e66ee1c22f05d86e1ec521e08f885105db4d42403593db6e6db38fad13
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/krb5/1.20.1-1/
 
-- https://sources.debian.net/src/krb5/1.20.1-1/ (for browsing the source)
-- https://sources.debian.net/src/krb5/1.20.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/krb5/1.20.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libassuan=2.5.5-5`
 

@@ -339,14 +339,9 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.39-3ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.39-3ubuntu1.1.dsc' binutils_2.39-3ubuntu1.1.dsc 8977 SHA512:4e97357a29568c9e40c538768be4526cb05da0f5128d106875ba7dbec8afd8d31d04626609cc864d31915a47c4ba8f55036eb3efe54439f40014096124c4b51d
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.39.orig.tar.xz' binutils_2.39.orig.tar.xz 25167756 SHA512:68e038f339a8c21faa19a57bbc447a51c817f47c2e06d740847c6e9cc3396c025d35d5369fa8c3f8b70414757c89f0e577939ddc0d70f283182504920f53b0a3
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.39-3ubuntu1.1.debian.tar.xz' binutils_2.39-3ubuntu1.1.debian.tar.xz 121780 SHA512:546f1a86e99ecad9a2a03adbf6c1070877bfe35df25293ed2f136f90b36dcc5f08d602831d112288ef3a1bb8712698681a077f4624499fd8d6366f50a429c9ab
-```
 
 ### `dpkg` source package: `brotli=1.0.9-2build6`
 
@@ -402,13 +397,9 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ca-certificates=20211016ubuntu0.22.10.1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20211016ubuntu0.22.10.1.dsc' ca-certificates_20211016ubuntu0.22.10.1.dsc 1878 SHA512:2e17a66089242556f8312cb57eb084cd4fca3c9af25d41f6537fa7cd598660a9408d76fcc0c1b15176267f7931cf7035aa40c8390eeeb750921e09ce716ce7c7
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20211016ubuntu0.22.10.1.tar.xz' ca-certificates_20211016ubuntu0.22.10.1.tar.xz 239808 SHA512:d8afa7f2bbf5319e5c1679b1779e55a25fd275200203e2a2c5c7df89fd775c0cb81aacb06d09201f111dedc23db096068f4f1c9e5cba90a396c3300ce2d4ad42
-```
 
 ### `dpkg` source package: `cairo=1.16.0-5ubuntu2`
 
@@ -3926,14 +3917,9 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-14=14.7-0ubuntu0.22.10.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-14/postgresql-14_14.7-0ubuntu0.22.10.1.dsc' postgresql-14_14.7-0ubuntu0.22.10.1.dsc 3863 SHA512:3115e8c915cf0044c4f5bdd01757a5bf12eaf4ed0b76763126d6a3b32513d1c381963b795d6b55aa3a37975a6a12ff45d8506980462cd732a90129016d2561a4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-14/postgresql-14_14.7.orig.tar.gz' postgresql-14_14.7.orig.tar.gz 29070900 SHA512:64e3faed5dd8c996043fc3e71823074e4a5a637be8c8a2d8001b6ff1a4dffd90b445dca434defe660cee378609e52edd1561c68df015e973d889f0db75186bb9
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-14/postgresql-14_14.7-0ubuntu0.22.10.1.debian.tar.xz' postgresql-14_14.7-0ubuntu0.22.10.1.debian.tar.xz 25336 SHA512:cd072f83e06f7312478c8cf1e006f227a3d7b6787a9d79691d79995a27c7bcda3557cbb6952bb3ba4fbb0a5a1c8800b9c3c1eb63d21fb583982ef29081d2a6c7
-```
 
 ### `dpkg` source package: `procps=2:3.3.17-7ubuntu1`
 

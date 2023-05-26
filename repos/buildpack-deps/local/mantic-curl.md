@@ -317,15 +317,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.88.1-9ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.88.1-9ubuntu1.dsc' curl_7.88.1-9ubuntu1.dsc 3274 SHA512:9e191a2fb75b28e623f87acb5426c24824ce6d2c1635ca0ee8ae7a9bace70c827fd547282d10cc91fdc63838554fb469f324432075375685d6a33dbbb5725457
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.88.1.orig.tar.gz' curl_7.88.1.orig.tar.gz 4343562 SHA512:67701d458548712bbfaa55f2ebefbf87cdbba01b7b1200f608b1c3af67e8dd8e243fa89f256446d217d658a5a1242331d8b0168ab600351e74ee0e2511e79dae
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.88.1.orig.tar.gz.asc' curl_7.88.1.orig.tar.gz.asc 488 SHA512:90029e6304d7ece487594d9192101084e3b0419c9e4296a76b9d32f44d2fb98753ddc6b0b50c2ffc16ab3b04222af607ca4c813d2c01bf1fd1b670d4d7e39404
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.88.1-9ubuntu1.debian.tar.xz' curl_7.88.1-9ubuntu1.debian.tar.xz 48656 SHA512:62fe2af50edd0dc3376fd13eb8ba636f38a78dbe0110d07d5efffdb3a61908353b13e9740856e0b7e9575e0bf890fd4f02804079e573d62c0594aadd4f2283e6
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg-10`
 
@@ -1855,14 +1849,9 @@ Licenses: (parsed from: `/usr/share/doc/sysvinit-utils/copyright`)
 - `GPL-3`
 - `GPL-3.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sysvinit=3.06-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sysvinit/sysvinit_3.06-2ubuntu1.dsc' sysvinit_3.06-2ubuntu1.dsc 2466 SHA512:c3e41d7c0886979e98020ea24a51c67569a7718f03362adc7d2f736fda34063624a54c2daf2bb8e7c8538f73c2dc32841871bd07e95dd8a2e797e47a3ad261bd
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sysvinit/sysvinit_3.06.orig.tar.gz' sysvinit_3.06.orig.tar.gz 466092 SHA512:9f1111ea05cbb405e3fe2423ee2d281832f3d15a69e39c5c6896e1ee7c0d56369046d39d7a2203f66db05304836dd33f1664652726cadf8a29cb0eea27ce822f
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sysvinit/sysvinit_3.06-2ubuntu1.debian.tar.xz' sysvinit_3.06-2ubuntu1.debian.tar.xz 134616 SHA512:549cf7034c550113c0f1056ccae9e0487b944c6dcba69b6452794617090b20ed839c3b51eab734cf77b9a9a9cf073977fa894ca3346c025b20f3b22edfda6fc2
-```
 
 ### `dpkg` source package: `tar=1.34+dfsg-1.2`
 
@@ -1976,14 +1965,9 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.38.1-4ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.38.1-4ubuntu1.dsc' util-linux_2.38.1-4ubuntu1.dsc 4632 SHA512:30666c73e0f03eba2dbb3f7d6a2cecda628743ca5066df079ec1ba08480c1462789b1c8f3d577a66dd0f15d2e9648c295bfc2fd99602a82da26d1d7d8f5b6eeb
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.38.1.orig.tar.xz' util-linux_2.38.1.orig.tar.xz 7495904 SHA512:07f11147f67dfc6c8bc766dfc83266054e6ede776feada0566b447d13276b6882ee85c6fe53e8d94a17c03332106fc0549deca3cf5f2e92dda554e9bc0551957
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.38.1-4ubuntu1.debian.tar.xz' util-linux_2.38.1-4ubuntu1.debian.tar.xz 117468 SHA512:32819d2d07bf2b84ebe3a3e5b32cb36b6b48e742f775ce909c192c4efb0b4208b2bc2559343cc4e0414d667e0268f0838e5010abbdb9c178d98fa284745c56d7
-```
 
 ### `dpkg` source package: `wget=1.21.3-1ubuntu1`
 
