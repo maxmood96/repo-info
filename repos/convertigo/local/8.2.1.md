@@ -1,10 +1,10 @@
-# `convertigo:8.2.0`
+# `convertigo:8.2.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4bcc403f3eb175a1f8364539cf4ecffef552f6bcb542fefc9983a2f602ecc5d9`
-- Created: `2023-05-10T18:36:12.19918131Z`
-- Virtual Size: ~ 621.46 Mb  
+- Image ID: `sha256:68588943c1cacaf4141c9705422513133c0bcfd998c564dff77b31e23bb1d094`
+- Created: `2023-05-26T22:49:58.911541375Z`
+- Virtual Size: ~ 620.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","--","/docker-entrypoint.sh"]`
@@ -24,12 +24,8 @@
   - `TOMCAT_VERSION=9.0.75`
   - `TOMCAT_SHA512=e29905e693598b64d958dd22b8d866590163917bdc6e1cfd363a8a06f97ecc89284b863b3ab2448f43903623564c3fd952c7a9bd33df8476d57f6873c2d463c7`
   - `SWT_GTK3=0`
-  - `GOSU_VERSION=1.14`
-  - `GOSU_GPG_KEYS=B42F6819007F00F88E364FD4036A9C25BF357DD4`
-  - `TINI_VERSION=0.19.0`
-  - `TINI_GPG_KEYS=6380DC428747F6C393FEACA59A84159D7001A4E5`
-  - `CONVERTIGO_VERSION=8.2.0`
-  - `CONVERTIGO_WAR_URL=https://github.com/convertigo/convertigo/releases/download/8.2.0/convertigo-8.2.0.war`
+  - `CONVERTIGO_VERSION=8.2.1`
+  - `CONVERTIGO_WAR_URL=https://github.com/convertigo/convertigo/releases/download/8.2.1/convertigo-8.2.1.war`
   - `CONVERTIGO_GPG_KEYS=6A7779BB78FE368DF74B708FD4DA8FBEB64BF75F`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
@@ -236,14 +232,9 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.34-6ubuntu1.4
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.34-6ubuntu1.4.dsc' binutils_2.34-6ubuntu1.4.dsc 8829 SHA512:1ed37da1c4ad5a929c1ed196bc8f7a23123af6b82bbe4570ae24a6c99d5f547421f08681acdb86a18783a72db2735e7a4a647e06619886fc7928403f43894a08
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.34.orig.tar.xz' binutils_2.34.orig.tar.xz 21637796 SHA512:2c7976939dcf5e8c5b7374cccd39bfe803b1bec73c6abfa0eb17c24e1942574c6bdb874c66a092a82adc443182eacd8a5a8001c19a76101f0c7ba40c27de0bbd
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.34-6ubuntu1.4.debian.tar.xz' binutils_2.34-6ubuntu1.4.debian.tar.xz 158616 SHA512:7473147a9351d00a2abbe565560d013ed6f433ebedb65174dc8be7d795ad8595648297310f28385caa69ee5b2e345f2cda24f6cb239c4a461adbaa90f1c8b46c
-```
 
 ### `dpkg` source package: `brotli=1.0.7-6ubuntu0.1`
 
@@ -285,11 +276,11 @@ $ apt-get source -qq --print-uris bzip2=1.0.8-2
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.8-2.debian.tar.bz2' bzip2_1.0.8-2.debian.tar.bz2 26032 SHA256:237c8619bc9bc16f357b1077064a3e58aa1a230dadb4b9bb3bd8dc8f454afc0b
 ```
 
-### `dpkg` source package: `ca-certificates=20211016ubuntu0.20.04.1`
+### `dpkg` source package: `ca-certificates=20230311ubuntu0.20.04.1`
 
 Binary Packages:
 
-- `ca-certificates=20211016ubuntu0.20.04.1`
+- `ca-certificates=20230311ubuntu0.20.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -300,9 +291,9 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ca-certificates=20211016ubuntu0.20.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20211016ubuntu0.20.04.1.dsc' ca-certificates_20211016ubuntu0.20.04.1.dsc 1945 SHA512:0b5042d12f3bae34aacf5a7818825d0a7599004a46c7259d92523ccacfbd9d5198322fe0eeaf6326e20cf7a4ce921ee78b31810be23f236d6b3934662097dfd2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20211016ubuntu0.20.04.1.tar.xz' ca-certificates_20211016ubuntu0.20.04.1.tar.xz 239136 SHA512:4c277cc5d56f1b1bb7c715db8a0040e9fb87dba66c584c466c6960dd152c07da7810df06fee2d8247665668d81cb258ffb7f5bd91da77742a348a080b18740a1
+$ apt-get source -qq --print-uris ca-certificates=20230311ubuntu0.20.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20230311ubuntu0.20.04.1.dsc' ca-certificates_20230311ubuntu0.20.04.1.dsc 1878 SHA512:c7467aa631350d55392202ac5bdb5e563aac876f9227cef4f27f67b3141ff3cb1dd57622fb289c93615f7128afa83c69cde021e666da3d1a0983b40547726abc
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20230311ubuntu0.20.04.1.tar.xz' ca-certificates_20230311ubuntu0.20.04.1.tar.xz 258156 SHA512:20019eab231507f708befea65d68cd0a1ad2143dd2cb2328be53f341d5c82c1c6b717188c83b147a6193be2c82ffc8003d627c655dcd756d5f5c76b9772a714e
 ```
 
 ### `dpkg` source package: `cdebconf=0.251ubuntu1`
@@ -530,25 +521,6 @@ $ apt-get source -qq --print-uris e2fsprogs=1.45.5-2ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.45.5-2ubuntu1.1.debian.tar.xz' e2fsprogs_1.45.5-2ubuntu1.1.debian.tar.xz 82324 SHA512:239e485a95be88f9021d02504ef61972df631febf3e66d4ec2f8b759fe14592fc0c661d815b8b7dc3f0c69f5f15823e97aecbb928459683139063ee9d10ea61d
 ```
 
-### `dpkg` source package: `expat=2.2.9-1ubuntu0.6`
-
-Binary Packages:
-
-- `libexpat1:amd64=2.2.9-1ubuntu0.6`
-
-Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
-
-- `MIT`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris expat=2.2.9-1ubuntu0.6
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.9-1ubuntu0.6.dsc' expat_2.2.9-1ubuntu0.6.dsc 2117 SHA512:fa2daa0a6238b526802d0ef095754d337eda1ac5b4ceb438598ee38754f1431a84d0fe5e612b44e1b1860e2b7a6f9775581b5f25bdb8d17da7c9fc0f288c9808
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.9.orig.tar.gz' expat_2.2.9.orig.tar.gz 8273174 SHA512:e274fa7f30630450cb3ca681b266d765dbb7f5d00d1275ff9d9b2e2f6e1095893b8af4e3f4172ae6297c7a8a831a0a6becd484fe4bcdca09c37922f630780ef0
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.9-1ubuntu0.6.debian.tar.xz' expat_2.2.9-1ubuntu0.6.debian.tar.xz 27688 SHA512:b0c9f81d332ce468197e76caccab298cbe5621f12631fca9a00516a42624a899210829398f01345fded1825bfe5f705c5b9a8d770bd5aec6b89142c19f702ea6
-```
-
 ### `dpkg` source package: `findutils=4.7.0-1ubuntu1`
 
 Binary Packages:
@@ -569,77 +541,6 @@ $ apt-get source -qq --print-uris findutils=4.7.0-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.7.0.orig.tar.xz.asc' findutils_4.7.0.orig.tar.xz.asc 488 SHA256:2f620e6d941e241fac52344a89149ab1ffeefb0fb9e42174e17a508d59a31d0f
 'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.7.0-1ubuntu1.debian.tar.xz' findutils_4.7.0-1ubuntu1.debian.tar.xz 27700 SHA256:dfb2329fd141384c2d76409c2e99f164cc25954115529245d80d5d41e3167731
 ```
-
-### `dpkg` source package: `fontconfig=2.13.1-2ubuntu3`
-
-Binary Packages:
-
-- `fontconfig=2.13.1-2ubuntu3`
-- `fontconfig-config=2.13.1-2ubuntu3`
-- `libfontconfig1:amd64=2.13.1-2ubuntu3`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris fontconfig=2.13.1-2ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/f/fontconfig/fontconfig_2.13.1-2ubuntu3.dsc' fontconfig_2.13.1-2ubuntu3.dsc 1959 SHA256:a9eebf6e6e88aa64d33fb3852c97718c212579f9714afd67cb6a9b8b116dd7aa
-'http://archive.ubuntu.com/ubuntu/pool/main/f/fontconfig/fontconfig_2.13.1.orig.tar.bz2' fontconfig_2.13.1.orig.tar.bz2 1723639 SHA256:f655dd2a986d7aa97e052261b36aa67b0a64989496361eca8d604e6414006741
-'http://archive.ubuntu.com/ubuntu/pool/main/f/fontconfig/fontconfig_2.13.1-2ubuntu3.debian.tar.xz' fontconfig_2.13.1-2ubuntu3.debian.tar.xz 26344 SHA256:342671f6a1e6d392958a6eec27541c6bdffc6498b469dcc46eca66c9d23a863a
-```
-
-### `dpkg` source package: `fonts-dejavu=2.37-1`
-
-Binary Packages:
-
-- `fonts-dejavu-core=2.37-1`
-
-Licenses: (parsed from: `/usr/share/doc/fonts-dejavu-core/copyright`)
-
-- `GPL-2`
-- `GPL-2+`
-- `bitstream-vera`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris fonts-dejavu=2.37-1
-'http://archive.ubuntu.com/ubuntu/pool/main/f/fonts-dejavu/fonts-dejavu_2.37-1.dsc' fonts-dejavu_2.37-1.dsc 2575 SHA256:f35ff7b2c8dbfda6564c9dedf088ba06cc6d279fdd8e7cccbd1ae08ded1bb71c
-'http://archive.ubuntu.com/ubuntu/pool/main/f/fonts-dejavu/fonts-dejavu_2.37.orig.tar.bz2' fonts-dejavu_2.37.orig.tar.bz2 12050109 SHA256:4b21c5203f792343d5e90ab1cb0cf07e99887218abe3d83cd9a98cea9085e799
-'http://archive.ubuntu.com/ubuntu/pool/main/f/fonts-dejavu/fonts-dejavu_2.37-1.debian.tar.xz' fonts-dejavu_2.37-1.debian.tar.xz 10424 SHA256:5105cdbfc086f4a83ab6871eb39cc904bf02aa52762402b7cacf33d0938122f7
-```
-
-### `dpkg` source package: `freetype=2.10.1-2ubuntu0.2`
-
-Binary Packages:
-
-- `libfreetype6:amd64=2.10.1-2ubuntu0.2`
-
-Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`)
-
-- `Apache-2.0`
-- `BSD-3-Clause`
-- `FSFUL`
-- `FSFULLR`
-- `FTL`
-- `GPL-2`
-- `GPL-2+`
-- `GPL-3`
-- `GPL-3+`
-- `MIT`
-- `MPL-1.1`
-- `OFL-1.1`
-- `OpenGroup-BSD-like`
-- `Permissive`
-- `Public-Domain`
-- `Zlib`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
 
 ### `dpkg` source package: `gcc-10=10.3.0-1ubuntu1~20.04`
 
@@ -782,6 +683,26 @@ $ apt-get source -qq --print-uris gnutls28=3.6.13-2ubuntu1.8
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13.orig.tar.xz' gnutls28_3.6.13.orig.tar.xz 5958956 SHA512:23581952cb72c9a34f378c002bb62413d5a1243b74b48ad8dc49eaea4020d33c550f8dc1dd374cf7fbfa4187b0ca1c5698c8a0430398268a8b8a863f8633305c
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13.orig.tar.xz.asc' gnutls28_3.6.13.orig.tar.xz.asc 667 SHA512:b343a8ace6a5c81c0c44b2cb65d8e83dfe5963c9bab04d9131fa8fd03cdf0c6f990d720af8767084e01bf5f7a7dbd0f048aefe68c3b6f1dc1ea1899d567a72f7
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.6.13-2ubuntu1.8.debian.tar.xz' gnutls28_3.6.13-2ubuntu1.8.debian.tar.xz 74332 SHA512:266fdcf67a9b4240cfd4063389d8517fb4928ec8a5bb500ebcf92e90868fa483eec901e4eee89cda7baaa873f3894d866bbdd860c28e178659eedeced8498e09
+```
+
+### `dpkg` source package: `gosu=1.10-1ubuntu0.20.04.2`
+
+Binary Packages:
+
+- `gosu=1.10-1ubuntu0.20.04.2`
+
+Licenses: (parsed from: `/usr/share/doc/gosu/copyright`)
+
+- `GPL-3`
+- `GPL-3+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris gosu=1.10-1ubuntu0.20.04.2
+'http://archive.ubuntu.com/ubuntu/pool/universe/g/gosu/gosu_1.10-1ubuntu0.20.04.2.dsc' gosu_1.10-1ubuntu0.20.04.2.dsc 2167 SHA512:a6c5169ac40bf64ce1b0289da2c21025e8715f7949e38c966c188a35d6aa18036d7246d954753ba9d003eec3cc25d1943dfc427c3518b6c6dfed8f58a23c699a
+'http://archive.ubuntu.com/ubuntu/pool/universe/g/gosu/gosu_1.10.orig.tar.gz' gosu_1.10.orig.tar.gz 17683 SHA512:435a76e8c0dcdbeb5b11fcfb8246676031f3c2e6e085b65552c58e71a81acfbd8a9db9ae24c6943ae90062792aacf9c71586b7a0bf62179b2e046f50951c130a
+'http://archive.ubuntu.com/ubuntu/pool/universe/g/gosu/gosu_1.10-1ubuntu0.20.04.2.debian.tar.xz' gosu_1.10-1ubuntu0.20.04.2.debian.tar.xz 3068 SHA512:18bc4156d50abc63adf5df116834fca35e9074afeb7738cb05a411eb3bb29a2dcf1b7c0d5a0228554fa5b0df808426cc84933c7400ce3bf26fe40510da097ba4
 ```
 
 ### `dpkg` source package: `grep=3.4-1`
@@ -1096,32 +1017,6 @@ $ apt-get source -qq --print-uris libksba=1.3.5-2ubuntu0.20.04.2
 'http://archive.ubuntu.com/ubuntu/pool/main/libk/libksba/libksba_1.3.5.orig.tar.bz2' libksba_1.3.5.orig.tar.bz2 620649 SHA512:60179bfd109b7b4fd8d2b30a3216540f03f5a13620d9a5b63f1f95788028708a420911619f172ba57e945a6a2fcd2ef7eaafc5585a0eb2b9652cfadf47bf39a2
 'http://archive.ubuntu.com/ubuntu/pool/main/libk/libksba/libksba_1.3.5.orig.tar.bz2.asc' libksba_1.3.5.orig.tar.bz2.asc 287 SHA512:6b58b1c6ee924230e4f3b040836e85cb3b3f527f667bcb370c28d8ec702c884bcceab374688e02d0356dede81f9fcf975d726c1958d4d87e5c41757a6b2ba39e
 'http://archive.ubuntu.com/ubuntu/pool/main/libk/libksba/libksba_1.3.5-2ubuntu0.20.04.2.debian.tar.xz' libksba_1.3.5-2ubuntu0.20.04.2.debian.tar.xz 15308 SHA512:a2289eb5c73dcef41bf8b66c70ddb216ebabf1912b81ad79af6db32c3b6c351a5c5dab703cabdbbc11026c6f7cc4433ca6a3ff6a031ee500cab625ba7ea30fc9
-```
-
-### `dpkg` source package: `libpng1.6=1.6.37-2`
-
-Binary Packages:
-
-- `libpng16-16:amd64=1.6.37-2`
-
-Licenses: (parsed from: `/usr/share/doc/libpng16-16/copyright`)
-
-- `Apache-2.0`
-- `BSD-3-clause`
-- `BSD-like-with-advertising-clause`
-- `GPL-2`
-- `GPL-2+`
-- `expat`
-- `libpng`
-- `libpng OR Apache-2.0 OR BSD-3-clause`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.37-2
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.37-2.dsc' libpng1.6_1.6.37-2.dsc 2225 SHA256:4567a54b5804e068e61477e9cd78346557b85b72add10ef10f130a5be169662e
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.37.orig.tar.gz' libpng1.6_1.6.37.orig.tar.gz 1508805 SHA256:ca74a0dace179a8422187671aee97dd3892b53e168627145271cad5b5ac81307
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.37-2.debian.tar.xz' libpng1.6_1.6.37-2.debian.tar.xz 31844 SHA256:097cee0f0da4013d0231d37e090204ab3fa592b4fecdaaed3fca8d13affcaae8
 ```
 
 ### `dpkg` source package: `libpsl=0.21.0-1ubuntu1`
@@ -1942,6 +1837,25 @@ $ apt-get source -qq --print-uris tar=1.30+dfsg-7ubuntu0.20.04.3
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.30%2bdfsg-7ubuntu0.20.04.3.debian.tar.xz' tar_1.30+dfsg-7ubuntu0.20.04.3.debian.tar.xz 23940 SHA512:c554d5f405ba5f7d5ddd84d0753bcf9bc3ef944f4cb12ae5371d2a51c461ddf0768ef25b11aefd4d9f77f7e6c354b8afc9788e93dc0c34fd914e8604a24a747b
 ```
 
+### `dpkg` source package: `tini=0.18.0-1`
+
+Binary Packages:
+
+- `tini=0.18.0-1`
+
+Licenses: (parsed from: `/usr/share/doc/tini/copyright`)
+
+- `Expat`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris tini=0.18.0-1
+'http://archive.ubuntu.com/ubuntu/pool/universe/t/tini/tini_0.18.0-1.dsc' tini_0.18.0-1.dsc 1804 SHA256:e4d749a5dba0bacb22f57182163766733e3a318bd745b38db112614626bc46f0
+'http://archive.ubuntu.com/ubuntu/pool/universe/t/tini/tini_0.18.0.orig.tar.gz' tini_0.18.0.orig.tar.gz 32152 SHA256:1097675352d6317b547e73f9dc7c6839fd0bb0d96dafc2e5c95506bb324049a2
+'http://archive.ubuntu.com/ubuntu/pool/universe/t/tini/tini_0.18.0-1.debian.tar.xz' tini_0.18.0-1.debian.tar.xz 1804 SHA256:fd17df866484221af45d0be8cdb7be38b3764d4382253a5b4bdf3f2c3442b0db
+```
+
 ### `dpkg` source package: `tzdata=2023c-0ubuntu0.20.04.0`
 
 Binary Packages:
@@ -1978,24 +1892,6 @@ Source:
 $ apt-get source -qq --print-uris ubuntu-keyring=2020.02.11.4
 'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-keyring/ubuntu-keyring_2020.02.11.4.dsc' ubuntu-keyring_2020.02.11.4.dsc 1863 SHA512:1232fc109f9afe7f4245f841cb992aeb7329ec1c3d310a174b837c0584005a7c46ce73f6d49a52a3e6c0eea03369ea5f308093c1a849e8f6597f6df792a87fb1
 'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-keyring/ubuntu-keyring_2020.02.11.4.tar.gz' ubuntu-keyring_2020.02.11.4.tar.gz 39250 SHA512:318562b6892dad995e334ec44f08f065b4c6abed2d29c1f96f6ee0fa4d91a5cedc9b62a152c56cdf26a30c3ea97a58c1d037e892d155af5593a4e26b9a25a1ae
-```
-
-### `dpkg` source package: `ucf=3.0038+nmu1`
-
-Binary Packages:
-
-- `ucf=3.0038+nmu1`
-
-Licenses: (parsed from: `/usr/share/doc/ucf/copyright`)
-
-- `GPL-2`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris ucf=3.0038+nmu1
-'http://archive.ubuntu.com/ubuntu/pool/main/u/ucf/ucf_3.0038%2bnmu1.dsc' ucf_3.0038+nmu1.dsc 1420 SHA256:89b6f921a30e04a946f62e6996be7c16f2f7c383d20783cd4704b502c6d5b125
-'http://archive.ubuntu.com/ubuntu/pool/main/u/ucf/ucf_3.0038%2bnmu1.tar.xz' ucf_3.0038+nmu1.tar.xz 65860 SHA256:d00bc3dd8d2f91317f52b5352fe129023c72babad55bc0dd4ece7b34183c7436
 ```
 
 ### `dpkg` source package: `unzip=6.0-25ubuntu1.1`
@@ -2057,27 +1953,6 @@ $ apt-get source -qq --print-uris util-linux=2.34-0.1ubuntu9.3
 'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.34-0.1ubuntu9.3.dsc' util-linux_2.34-0.1ubuntu9.3.dsc 4042 SHA512:e65684c641d175110008f865369c35adb734f8a80626c0eb3b3f3f47e05c1a6277c9f92b4032e30bb69711d67c2a5ad651adb3ec9ac4ef67d45a2858ce48cc6a
 'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.34.orig.tar.xz' util-linux_2.34.orig.tar.xz 4974812 SHA512:2d0b76f63d32e7afb7acf61a83fabbfd58baa34ab78b3a331ce87f9c676a5fd71c56a493ded95039540d2c46b6048caaa38d7fb4491eb3d52d7b09dc54655cd7
 'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.34-0.1ubuntu9.3.debian.tar.xz' util-linux_2.34-0.1ubuntu9.3.debian.tar.xz 94976 SHA512:b6e55588aea32de6481dad01f194e6f71b8a859019e5c8d6d816c65f32c8b31821d1ab73f13ec34c5d3551311c43b7e24ac01c2af5878a85df72326293c3a71a
-```
-
-### `dpkg` source package: `wget=1.20.3-1ubuntu2`
-
-Binary Packages:
-
-- `wget=1.20.3-1ubuntu2`
-
-Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
-
-- `GFDL-1.2`
-- `GPL-3`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris wget=1.20.3-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.20.3-1ubuntu2.dsc' wget_1.20.3-1ubuntu2.dsc 2272 SHA512:acf0dc7618adda63d4579b6bb110bcad5ade7e4ed9474695a37397aeebf0d882c279c5318c15581630ddf7b2c2d7b665c241853e5922d39cf469d7439d4bc9aa
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.20.3.orig.tar.gz' wget_1.20.3.orig.tar.gz 4489249 SHA512:e8b82b40e270296228094a78d47f81580bdbdea9e6b93fd61b37dccb39430aeb9bda5397dc53a31c952a61629383c7e2a8c8abf414c8a4dd369af6ecf2717e6c
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.20.3.orig.tar.gz.asc' wget_1.20.3.orig.tar.gz.asc 833 SHA512:40e1bb87dba49e9b8a1e3a6e9ffb95e97933508cd8fef4aac9545b74073800e2945b80bab749e57d4ddc8260a612d784160bec45a6c9c057954d22960c8dd170
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.20.3-1ubuntu2.debian.tar.xz' wget_1.20.3-1ubuntu2.debian.tar.xz 64192 SHA512:39bcd9010374f8f99778e12cee5df9af16c734c14229b96c4d74de222207966c99448ff539257f8a642d92b67e7656618bd1b29a29ed1ac2c58df68ce1496af4
 ```
 
 ### `dpkg` source package: `xz-utils=5.2.4-1ubuntu1.1`
