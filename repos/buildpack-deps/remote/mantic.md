@@ -1,7 +1,7 @@
 ## `buildpack-deps:mantic`
 
 ```console
-$ docker pull buildpack-deps@sha256:0171fb3f01df5e4267ddf828c6bc9ad16eceb1c50b31f56f5a133f57a51281dd
+$ docker pull buildpack-deps@sha256:d5fde19f5c513bf57f75ef2e898b195ae2403e7ba07b671026041ec01216b4eb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -67,105 +67,105 @@ RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		auto
 ### `buildpack-deps:mantic` - linux; arm variant v7
 
 ```console
-$ docker pull buildpack-deps@sha256:ce332d8a6108c13c9fdf3b3c475b592bd4067dfecb4167cf23773d5b7df4e6c7
+$ docker pull buildpack-deps@sha256:9d19820e589347044a245bab4852dca05abcf6907308e46109c5b409f52f43ac
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **232.6 MB (232615220 bytes)**  
+-	Total Size: **234.7 MB (234728780 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d944875077070045606812f302929b3feba0e0241f1d8c55e5d79386c8e72008`
+-	Image ID: `sha256:04ca466e15863cd3ab5a186daa120ebbffcd895d22cd0cd43fff794a018d9ceb`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 09 May 2023 12:44:03 GMT
+# Sat, 20 May 2023 16:58:22 GMT
 ARG RELEASE
-# Tue, 09 May 2023 12:44:03 GMT
+# Sat, 20 May 2023 16:58:22 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 09 May 2023 12:44:04 GMT
+# Sat, 20 May 2023 16:58:22 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 09 May 2023 12:44:04 GMT
+# Sat, 20 May 2023 16:58:22 GMT
 LABEL org.opencontainers.image.version=23.10
-# Tue, 09 May 2023 12:44:06 GMT
-ADD file:db8559cdcf696ac1fdef17e2d7eabaef48d874580294f6af72e95bae947fe358 in / 
-# Tue, 09 May 2023 12:44:06 GMT
+# Sat, 20 May 2023 16:58:25 GMT
+ADD file:c7522b8ff46586b3057c8eae94d6cfc77299a4f2ccc3762e6263780ccc7c82c0 in / 
+# Sat, 20 May 2023 16:58:25 GMT
 CMD ["/bin/bash"]
-# Wed, 17 May 2023 00:20:03 GMT
+# Thu, 01 Jun 2023 23:51:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 17 May 2023 00:20:40 GMT
+# Thu, 01 Jun 2023 23:51:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 17 May 2023 00:22:30 GMT
+# Thu, 01 Jun 2023 23:53:45 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:40a8bf5385e89692116e9cb0b4825cde587032e63bda722363b1e26492f6612e`  
-		Last Modified: Wed, 17 May 2023 00:27:52 GMT  
-		Size: 25.4 MB (25445595 bytes)  
+	-	`sha256:562137b754651e3134bc25cd5345aa8ee488e4018a6b98dca99da8c6a698516c`  
+		Last Modified: Thu, 01 Jun 2023 23:57:12 GMT  
+		Size: 25.4 MB (25360044 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01204a82cb455443751eaf82e1bc6909d3c718919dfdc9835bf83e8e8279d5ef`  
-		Last Modified: Wed, 17 May 2023 00:27:48 GMT  
-		Size: 12.7 MB (12675867 bytes)  
+	-	`sha256:d7e14e8697677cc5b120d6102abcd07fc40bbe1f33ce15bf65b69c87877e6721`  
+		Last Modified: Thu, 01 Jun 2023 23:57:10 GMT  
+		Size: 12.7 MB (12675035 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea226e2025d1b7a7f538848d7902f6c862eae0e2146095743300de693a05d8b0`  
-		Last Modified: Wed, 17 May 2023 00:28:12 GMT  
-		Size: 48.3 MB (48289124 bytes)  
+	-	`sha256:a38306dc25634af4f237ffb8f2dbbab5c0aeb30a2801455a0289a5f7a16b35d1`  
+		Last Modified: Thu, 01 Jun 2023 23:57:28 GMT  
+		Size: 48.7 MB (48697792 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:77956ec8f7c47a9ffb1c57e2e8ed7ba308a4ad44e5b5d4da5818c1bdbc7b4cad`  
-		Last Modified: Wed, 17 May 2023 00:28:45 GMT  
-		Size: 146.2 MB (146204634 bytes)  
+	-	`sha256:d99b7f19af3d48bfc6e27c3789b7482ab8cdb77cce124e3590b998628faea086`  
+		Last Modified: Thu, 01 Jun 2023 23:57:55 GMT  
+		Size: 148.0 MB (147995909 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:mantic` - linux; arm64 variant v8
 
 ```console
-$ docker pull buildpack-deps@sha256:1a1b6f22043a14e5f21097ada8ee77da7fd1720a5f6b87756bee7ccd8ac4f66d
+$ docker pull buildpack-deps@sha256:da7c21bbbcd3127d6c97083d2f2daf34d83c2e98d898aec84f1b9db5e79f5b4e
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **258.6 MB (258634583 bytes)**  
+-	Total Size: **260.0 MB (259969893 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fa51fd3f0a301908b5809ed494b4a3076113c32b878d35c67de912958a12ea89`
+-	Image ID: `sha256:c31d4006ad5ebe1b5c5d3663a95305e5c7c1319babc98a2654a8bca75bcef97e`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 09 May 2023 12:45:45 GMT
+# Sat, 20 May 2023 16:59:34 GMT
 ARG RELEASE
-# Tue, 09 May 2023 12:45:45 GMT
+# Sat, 20 May 2023 16:59:35 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 09 May 2023 12:45:45 GMT
+# Sat, 20 May 2023 16:59:35 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 09 May 2023 12:45:45 GMT
+# Sat, 20 May 2023 16:59:35 GMT
 LABEL org.opencontainers.image.version=23.10
-# Tue, 09 May 2023 12:45:53 GMT
-ADD file:87293581d53f522106a37eee2d3056cd4d9bdbb4a58077389c817bd655a4e0c7 in / 
-# Tue, 09 May 2023 12:45:53 GMT
+# Sat, 20 May 2023 16:59:36 GMT
+ADD file:39dff3364ce4bb79539ed5e58493be16a66d424e605cb774559830ba8452bc4d in / 
+# Sat, 20 May 2023 16:59:37 GMT
 CMD ["/bin/bash"]
-# Tue, 16 May 2023 23:53:47 GMT
+# Fri, 02 Jun 2023 00:01:04 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 16 May 2023 23:54:06 GMT
+# Fri, 02 Jun 2023 00:01:27 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 16 May 2023 23:55:38 GMT
+# Fri, 02 Jun 2023 00:03:20 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:e685e76ac424b804c8b8208c603584b34300a955516eaff83d30f060189f522b`  
-		Last Modified: Tue, 16 May 2023 23:59:49 GMT  
-		Size: 27.0 MB (27026748 bytes)  
+	-	`sha256:59e1b7a20de65cc40ff963f40b4d97f1bea4a466e8941c9538a13270a948c2a7`  
+		Last Modified: Fri, 02 Jun 2023 00:06:42 GMT  
+		Size: 27.0 MB (27042242 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cccd2979a9c21a4b382153460cb77e2f6d383b4c4cb5cdeb37baa35c84e174a1`  
-		Last Modified: Tue, 16 May 2023 23:59:46 GMT  
-		Size: 13.4 MB (13350711 bytes)  
+	-	`sha256:2739609605be7ce435def151c1c15562a7fbd66a303de8403e883c503df71c5c`  
+		Last Modified: Fri, 02 Jun 2023 00:06:40 GMT  
+		Size: 13.3 MB (13348666 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:342807f1db024cabeca1aa775473201ce240f01d11faabb59c89f443a7bc8cad`  
-		Last Modified: Wed, 17 May 2023 00:00:03 GMT  
-		Size: 44.1 MB (44062441 bytes)  
+	-	`sha256:2ebe7a7f701ec267f2de61e65f122b1d0a90d288f30c4f4ab023ea558d7e042b`  
+		Last Modified: Fri, 02 Jun 2023 00:06:55 GMT  
+		Size: 44.2 MB (44204286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe8ab9040116d37ac8333ad2979c65a7a380f118dc8791bbcb3ffe9f8f677b7d`  
-		Last Modified: Wed, 17 May 2023 00:00:38 GMT  
-		Size: 174.2 MB (174194683 bytes)  
+	-	`sha256:8a463dd153418a10946eaaf3afedf560b36d06c88194c00b1f2b71cf0887c4f9`  
+		Last Modified: Fri, 02 Jun 2023 00:07:32 GMT  
+		Size: 175.4 MB (175374699 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:mantic` - linux; ppc64le
@@ -223,51 +223,51 @@ RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		auto
 ### `buildpack-deps:mantic` - linux; s390x
 
 ```console
-$ docker pull buildpack-deps@sha256:33da28bdfcdfeb866b1146d4bec75d304684df0c7ec98a9cdd4bac2bf21b7ee0
+$ docker pull buildpack-deps@sha256:e808273a49cd04aea0361ee5f0557eedd4b20a8def9b1cd6ce25893be1d825f8
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **240.7 MB (240687349 bytes)**  
+-	Total Size: **241.9 MB (241903336 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:687e96e9d8cbcc53d6485ce2b68fb535571160c69b06ab7029e1f70d86850a0f`
+-	Image ID: `sha256:a7c5d6a3a64c6a90649933face3a07b2a0a46c4d5c19e403ad0570dcf14b5cff`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 09 May 2023 13:09:19 GMT
+# Sat, 20 May 2023 16:59:20 GMT
 ARG RELEASE
-# Tue, 09 May 2023 13:09:19 GMT
+# Sat, 20 May 2023 16:59:20 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 09 May 2023 13:09:19 GMT
+# Sat, 20 May 2023 16:59:20 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 09 May 2023 13:09:19 GMT
+# Sat, 20 May 2023 16:59:20 GMT
 LABEL org.opencontainers.image.version=23.10
-# Tue, 09 May 2023 13:09:21 GMT
-ADD file:a5ed2ab846477e26003abb09795ef405e1d96bec9be1a3cb0b258dd5aa83f075 in / 
-# Tue, 09 May 2023 13:09:21 GMT
+# Sat, 20 May 2023 16:59:22 GMT
+ADD file:fb602b3f6c251d8267de1cf0525d0b38aab5966c848182d037bb2890557f0a6e in / 
+# Sat, 20 May 2023 16:59:22 GMT
 CMD ["/bin/bash"]
-# Tue, 16 May 2023 23:52:27 GMT
+# Thu, 01 Jun 2023 23:15:18 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 16 May 2023 23:52:50 GMT
+# Thu, 01 Jun 2023 23:15:46 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 16 May 2023 23:53:59 GMT
+# Thu, 01 Jun 2023 23:17:05 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:e21501268ba0e8cdc7e0134b231643691b6d4648511a6bbed295eeca807810d8`  
-		Last Modified: Tue, 16 May 2023 23:58:10 GMT  
-		Size: 26.2 MB (26239447 bytes)  
+	-	`sha256:e6197ead7faf6fa2f836b159dd66c603a28c581c4e273f6b664c86588a78ec95`  
+		Last Modified: Thu, 01 Jun 2023 23:20:39 GMT  
+		Size: 26.2 MB (26231487 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c8b45801daded85936f7c762c0148a3d71e35c237bfe96ba49811f0964c16cb9`  
-		Last Modified: Tue, 16 May 2023 23:58:08 GMT  
-		Size: 14.0 MB (14018228 bytes)  
+	-	`sha256:98abbd746ec759f3d8e8b447407b1e0248bc8e38e037360bdcebb69899e8cd07`  
+		Last Modified: Thu, 01 Jun 2023 23:20:38 GMT  
+		Size: 14.0 MB (14018998 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a1711be48a0a429b31d94131f11f34c0b5f5eb3de15640bbda8ad0c25bba80a0`  
-		Last Modified: Tue, 16 May 2023 23:58:21 GMT  
-		Size: 44.1 MB (44093858 bytes)  
+	-	`sha256:6fc44de0957139a61045543f4801b3145fa3f06e69b887ac90673e1c3da52f0f`  
+		Last Modified: Thu, 01 Jun 2023 23:20:51 GMT  
+		Size: 44.3 MB (44252551 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9d1c2fdf64d346bbad12a5200032f3bb6be537c79a83306d908f008867fc106c`  
-		Last Modified: Tue, 16 May 2023 23:58:45 GMT  
-		Size: 156.3 MB (156335816 bytes)  
+	-	`sha256:a181bc5faaeffba7958cf6a6c7522c36f39e831f6af3377bca7f48a3ffd18b40`  
+		Last Modified: Thu, 01 Jun 2023 23:21:16 GMT  
+		Size: 157.4 MB (157400300 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
