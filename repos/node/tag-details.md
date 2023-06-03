@@ -1068,7 +1068,12 @@ CMD ["node"]
 
 ## `node:16-alpine3.18`
 
-**does not exist** (yet?)
+```console
+$ docker pull node@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `node:16-bullseye`
 
@@ -3310,7 +3315,12 @@ CMD ["node"]
 
 ## `node:16.20-alpine3.18`
 
-**does not exist** (yet?)
+```console
+$ docker pull node@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `node:16.20-bullseye`
 
@@ -5552,7 +5562,12 @@ CMD ["node"]
 
 ## `node:16.20.0-alpine3.18`
 
-**does not exist** (yet?)
+```console
+$ docker pull node@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `node:16.20.0-bullseye`
 
@@ -7950,7 +7965,12 @@ CMD ["node"]
 
 ## `node:18-alpine3.18`
 
-**does not exist** (yet?)
+```console
+$ docker pull node@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `node:18-bullseye`
 
@@ -10468,7 +10488,12 @@ CMD ["node"]
 
 ## `node:18.16-alpine3.18`
 
-**does not exist** (yet?)
+```console
+$ docker pull node@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `node:18.16-bullseye`
 
@@ -12986,7 +13011,12 @@ CMD ["node"]
 
 ## `node:18.16.0-alpine3.18`
 
-**does not exist** (yet?)
+```console
+$ docker pull node@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `node:18.16.0-bullseye`
 
@@ -15504,7 +15534,12 @@ CMD ["node"]
 
 ## `node:19-alpine3.18`
 
-**does not exist** (yet?)
+```console
+$ docker pull node@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `node:19-bullseye`
 
@@ -18022,7 +18057,12 @@ CMD ["node"]
 
 ## `node:19.9-alpine3.18`
 
-**does not exist** (yet?)
+```console
+$ docker pull node@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `node:19.9-bullseye`
 
@@ -20540,7 +20580,12 @@ CMD ["node"]
 
 ## `node:19.9.0-alpine3.18`
 
-**does not exist** (yet?)
+```console
+$ docker pull node@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `node:19.9.0-bullseye`
 
@@ -23058,7 +23103,12 @@ CMD ["node"]
 
 ## `node:20-alpine3.18`
 
-**does not exist** (yet?)
+```console
+$ docker pull node@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `node:20-bullseye`
 
@@ -25438,7 +25488,12 @@ CMD ["node"]
 
 ## `node:20.2-alpine3.18`
 
-**does not exist** (yet?)
+```console
+$ docker pull node@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `node:20.2-bullseye`
 
@@ -27818,7 +27873,12 @@ CMD ["node"]
 
 ## `node:20.2.0-alpine3.18`
 
-**does not exist** (yet?)
+```console
+$ docker pull node@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `node:20.2.0-bullseye`
 
@@ -29799,7 +29859,12 @@ CMD ["node"]
 
 ## `node:alpine3.18`
 
-**does not exist** (yet?)
+```console
+$ docker pull node@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `node:bullseye`
 
@@ -32014,7 +32079,12 @@ CMD ["node"]
 
 ## `node:current-alpine3.18`
 
-**does not exist** (yet?)
+```console
+$ docker pull node@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `node:current-bullseye`
 
@@ -34382,7 +34452,12 @@ CMD ["node"]
 
 ## `node:gallium-alpine3.18`
 
-**does not exist** (yet?)
+```console
+$ docker pull node@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `node:gallium-bullseye`
 
@@ -36780,7 +36855,12 @@ CMD ["node"]
 
 ## `node:hydrogen-alpine3.18`
 
-**does not exist** (yet?)
+```console
+$ docker pull node@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `node:hydrogen-bullseye`
 
@@ -39697,7 +39777,12 @@ CMD ["node"]
 
 ## `node:lts-alpine3.18`
 
-**does not exist** (yet?)
+```console
+$ docker pull node@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `node:lts-bullseye`
 
