@@ -1,10 +1,10 @@
-# `nextcloud:25.0.6-fpm-alpine`
+# `nextcloud:25.0.7-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:157ae222801bd23b7f5d292d78769e629f3d6b0318173b7c67981d36f634364d`
-- Created: `2023-04-20T20:36:49.820384521Z`
-- Virtual Size: ~ 711.77 Mb  
+- Image ID: `sha256:a78c23b7fb0b771b43bcf690af5d321591c80781f13da90f86ca8e915a784e72`
+- Created: `2023-05-31T19:04:53.372921531Z`
+- Virtual Size: ~ 716.33 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -17,13 +17,13 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD`
-  - `PHP_VERSION=8.1.18`
-  - `PHP_URL=https://www.php.net/distributions/php-8.1.18.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.18.tar.xz.asc`
-  - `PHP_SHA256=f3553370f8ba42729a9ce75eed17a2111d32433a43b615694f6a571b8bad0e39`
+  - `PHP_VERSION=8.1.19`
+  - `PHP_URL=https://www.php.net/distributions/php-8.1.19.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.19.tar.xz.asc`
+  - `PHP_SHA256=f42f0e93467415b2d30aa5b7ac825f0079a74207e0033010383cdc1e13657379`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
-  - `NEXTCLOUD_VERSION=25.0.6`
+  - `NEXTCLOUD_VERSION=25.0.7`
 
 ## `apk` (`.apk`-based packages)
 
@@ -421,16 +421,16 @@ AGPL-3.0-or-later
 ### `apk` package: `glib`
 
 ```console
-glib-2.72.1-r0 description:
+glib-2.72.4-r0 description:
 Common C routines used by Gtk+ and other libs
 
-glib-2.72.1-r0 webpage:
+glib-2.72.4-r0 webpage:
 https://developer.gnome.org/glib/
 
-glib-2.72.1-r0 installed size:
+glib-2.72.4-r0 installed size:
 3420 KiB
 
-glib-2.72.1-r0 license:
+glib-2.72.4-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -693,16 +693,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1t-r2 description:
+libcrypto1.1-1.1.1u-r1 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1t-r2 webpage:
+libcrypto1.1-1.1.1u-r1 webpage:
 https://www.openssl.org/
 
-libcrypto1.1-1.1.1t-r2 installed size:
-2712 KiB
+libcrypto1.1-1.1.1u-r1 installed size:
+2708 KiB
 
-libcrypto1.1-1.1.1t-r2 license:
+libcrypto1.1-1.1.1u-r1 license:
 OpenSSL
 
 ```
@@ -710,16 +710,16 @@ OpenSSL
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.0.1-r0 description:
+libcurl-8.1.2-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.0.1-r0 webpage:
+libcurl-8.1.2-r0 webpage:
 https://curl.se/
 
-libcurl-8.0.1-r0 installed size:
-548 KiB
+libcurl-8.1.2-r0 installed size:
+564 KiB
 
-libcurl-8.0.1-r0 license:
+libcurl-8.1.2-r0 license:
 curl
 
 ```
@@ -948,16 +948,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-14.7-r0 description:
+libpq-14.8-r0 description:
 PostgreSQL client library
 
-libpq-14.7-r0 webpage:
+libpq-14.8-r0 webpage:
 https://www.postgresql.org/
 
-libpq-14.7-r0 installed size:
+libpq-14.8-r0 installed size:
 328 KiB
 
-libpq-14.7-r0 license:
+libpq-14.8-r0 license:
 PostgreSQL
 
 ```
@@ -1016,16 +1016,16 @@ ISC
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1t-r2 description:
+libssl1.1-1.1.1u-r1 description:
 SSL shared libraries
 
-libssl1.1-1.1.1t-r2 webpage:
+libssl1.1-1.1.1u-r1 webpage:
 https://www.openssl.org/
 
-libssl1.1-1.1.1t-r2 installed size:
+libssl1.1-1.1.1u-r1 installed size:
 528 KiB
 
-libssl1.1-1.1.1t-r2 license:
+libssl1.1-1.1.1u-r1 license:
 OpenSSL
 
 ```
@@ -1084,16 +1084,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `libwebp`
 
 ```console
-libwebp-1.2.3-r0 description:
+libwebp-1.2.3-r1 description:
 Libraries for working with WebP images
 
-libwebp-1.2.3-r0 webpage:
+libwebp-1.2.3-r1 webpage:
 https://developers.google.com/speed/webp
 
-libwebp-1.2.3-r0 installed size:
+libwebp-1.2.3-r1 installed size:
 584 KiB
 
-libwebp-1.2.3-r0 license:
+libwebp-1.2.3-r1 license:
 BSD-3-Clause
 
 ```
@@ -1271,16 +1271,16 @@ BSD-2-Clause GPL-2.0-only
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.3-r2 description:
+musl-1.2.3-r3 description:
 the musl c library (libc) implementation
 
-musl-1.2.3-r2 webpage:
+musl-1.2.3-r3 webpage:
 https://musl.libc.org/
 
-musl-1.2.3-r2 installed size:
+musl-1.2.3-r3 installed size:
 608 KiB
 
-musl-1.2.3-r2 license:
+musl-1.2.3-r3 license:
 MIT
 
 ```
@@ -1305,16 +1305,16 @@ MIT BSD GPL2+
 ### `apk` package: `ncurses-libs`
 
 ```console
-ncurses-libs-6.3_p20220521-r0 description:
+ncurses-libs-6.3_p20220521-r1 description:
 Ncurses libraries
 
-ncurses-libs-6.3_p20220521-r0 webpage:
+ncurses-libs-6.3_p20220521-r1 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-libs-6.3_p20220521-r0 installed size:
+ncurses-libs-6.3_p20220521-r1 installed size:
 500 KiB
 
-ncurses-libs-6.3_p20220521-r0 license:
+ncurses-libs-6.3_p20220521-r1 license:
 MIT
 
 ```
@@ -1322,16 +1322,16 @@ MIT
 ### `apk` package: `ncurses-terminfo-base`
 
 ```console
-ncurses-terminfo-base-6.3_p20220521-r0 description:
+ncurses-terminfo-base-6.3_p20220521-r1 description:
 Descriptions of common terminals
 
-ncurses-terminfo-base-6.3_p20220521-r0 webpage:
+ncurses-terminfo-base-6.3_p20220521-r1 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-terminfo-base-6.3_p20220521-r0 installed size:
+ncurses-terminfo-base-6.3_p20220521-r1 installed size:
 216 KiB
 
-ncurses-terminfo-base-6.3_p20220521-r0 license:
+ncurses-terminfo-base-6.3_p20220521-r1 license:
 MIT
 
 ```
@@ -1594,16 +1594,16 @@ GPL-2.0-or-later
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.38.5-r0 description:
+sqlite-libs-3.40.1-r0 description:
 Sqlite3 library
 
-sqlite-libs-3.38.5-r0 webpage:
+sqlite-libs-3.40.1-r0 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.38.5-r0 installed size:
-992 KiB
+sqlite-libs-3.40.1-r0 installed size:
+1008 KiB
 
-sqlite-libs-3.38.5-r0 license:
+sqlite-libs-3.40.1-r0 license:
 blessing
 
 ```
