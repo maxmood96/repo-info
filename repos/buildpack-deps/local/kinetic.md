@@ -3808,15 +3808,9 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.34/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.34.0-5ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0-5ubuntu1.1.dsc' perl_5.34.0-5ubuntu1.1.dsc 2976 SHA512:c8f84ee752f27e991daa60efe9b1bf396d7e21d021853a436519afc4135e8af6376b4e4894e9f3b7b03f4ef668f9d933da9981c7a5e374774cfc72f6c10844a4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0.orig-regen-configure.tar.xz' perl_5.34.0.orig-regen-configure.tar.xz 415412 SHA512:2581152e0747105314c4fa4167f1f97d286436b996341b9b75e4099ba18f15eb0d2b42888622fbe9b5499d3fe304bc8aa9ad207a945f590135beccfb68ea28b0
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0.orig.tar.xz' perl_5.34.0.orig.tar.xz 12881416 SHA512:691b4b31eacec357191fba777612b4e3eae59e946a22998a50766697c0d61db1d42a9b3bc1e41abf0d1ca1893e4a7c06d7bf3290480cf03d7f79befd7a8a3267
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0-5ubuntu1.1.debian.tar.xz' perl_5.34.0-5ubuntu1.1.debian.tar.xz 192872 SHA512:bed146297942b9102accbe1eec384f138d1852f9a8a1b894d4a5c8c81bb68ec78dcc150981a391960287f48fec1bc1f653983de4621bea51afdf2b61a38117b1
-```
 
 ### `dpkg` source package: `pinentry=1.2.0-2ubuntu1`
 
@@ -4004,14 +3998,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.10=3.10.7-1ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.7-1ubuntu0.3.dsc' python3.10_3.10.7-1ubuntu0.3.dsc 3734 SHA512:48ec34ab330d96eb47ee02d7e6b8cab86f85985f289863561db73c748bacdba95f526b8afb7b7b84f3817b44f3de4c16721620bc546dc5316c3a93e517236dc5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.7.orig.tar.xz' python3.10_3.10.7.orig.tar.xz 19618696 SHA512:dc3432d72ee7382617318c9645204876d13bb61d4caf3fbbb65e6b14897261123c743049657c95e159e5566daf4dcde613d2e393f025de758f610b44eb958313
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.7-1ubuntu0.3.debian.tar.xz' python3.10_3.10.7-1ubuntu0.3.debian.tar.xz 224048 SHA512:89cff2ff175ad40653989b1df79f336d500f38cb21b2fcc9911aa1a6ffb7c9b0c2b3b55fc9dda6298325a7d12b850b15dafa92af519938fe370433da2950682c
-```
 
 ### `dpkg` source package: `readline=8.2-1`
 

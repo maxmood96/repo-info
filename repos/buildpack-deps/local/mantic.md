@@ -136,13 +136,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.7.0
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.7.0.dsc' apt_2.7.0.dsc 2933 SHA512:37f4990c3a28aeed50b8aedcf3591b6e390df7f6eadbe6058fa850d896333b6402e3747f72d38fee04ae5a4b045a09cd362b7aeea1d02013b9e317b192e3729c
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.7.0.tar.xz' apt_2.7.0.tar.xz 2332512 SHA512:793ace218d1c0bd3f0a4903bbb041ecd84e856fe4be3514abfee6cc6cfd8a02889201b587754c508d67828015cc2925672ab1417e50e30ace532a5179dcd7ed2
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/apt/2.7.0/
+
 
 ### `dpkg` source package: `attr=1:2.5.1-4`
 
@@ -553,14 +553,13 @@ Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/l
 - `RSA-MD`
 - `SSLeay`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cyrus-sasl2=2.1.28+dfsg-11
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg-11.dsc' cyrus-sasl2_2.1.28+dfsg-11.dsc 3324 SHA512:9c8c3271476cd65de54146ad3c53fd6f52ff5af93d21eb70fe1b70a631549fc2dad5877351f125aaabda63c59b060d17504fd9f444a0c0be54a08686ba955dbf
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg.orig.tar.xz' cyrus-sasl2_2.1.28+dfsg.orig.tar.xz 797472 SHA512:70cccbac70e71828f1345beba5c78c14332e425b75c84a66393cf62ecf6848741c5912697fc0197516f1d4c41ec8c9644506a6241588b8f6bf5bba79edd8b15a
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg-11.debian.tar.xz' cyrus-sasl2_2.1.28+dfsg-11.debian.tar.xz 98092 SHA512:059b2b29f17d1904eeb60a9a3a7a5e14dc65016d94d12cc842a1fe5e2cfca3e203ee171eb7f8d9459e2cbd15fef2645034fcdcba04e223046e8ad67d7e627e01
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/cyrus-sasl2/2.1.28+dfsg-11/
+
 
 ### `dpkg` source package: `dash=0.5.12-2ubuntu1`
 
@@ -1237,15 +1236,9 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 - `Unicode-DFS-2016`
 - `bzip2-1.0.6`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.76.2-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.76.2-1ubuntu1.dsc' glib2.0_2.76.2-1ubuntu1.dsc 3766 SHA512:8872e943ab05e959cd7d4958d4d6b588973853b2b93893ec64805b9b32f49ac2224271423b1271d922284fbebad196cf6031509470e75b016ee3fb2a5e1102d6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.76.2.orig-unicode-data.tar.xz' glib2.0_2.76.2.orig-unicode-data.tar.xz 267596 SHA512:60ea55718ac4d36b469b23324cfa54c68fdd7ac30a5bfe7513017f10b789e849379d212080e8da855854cd1a60f422dbf6967986e3439a543fc7d16f5b309179
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.76.2.orig.tar.xz' glib2.0_2.76.2.orig.tar.xz 5273836 SHA512:5a99723d72ae987999bdf3eac4f3cabe2e014616038f2006e84060b97d6d290b7d44a20d700e9c0f4572a6defed56169f624bcd21b0337f32832b311aa2737e6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.76.2-1ubuntu1.debian.tar.xz' glib2.0_2.76.2-1ubuntu1.debian.tar.xz 117764 SHA512:c705fcc8ed51094779a869e8dc62a7277806509436c778ef0cc67954e12208dd9a7afa8aa8e90ef400a4aa8c6338ab095f8ed76ff0cd72f52708fb4556ea346f
-```
 
 ### `dpkg` source package: `glibc=2.37-0ubuntu2`
 
@@ -1943,14 +1936,9 @@ Licenses: (parsed from: `/usr/share/doc/libcap2/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libcap2=1:2.66-3ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.66-3ubuntu2.dsc' libcap2_2.66-3ubuntu2.dsc 2311 SHA512:e3f662805aeba4846e21fe980a60fe237f12a5ce35f6d6e0639d090643367f2c77b016508cef1a843cd31d3564c0352ada74ab4045174b23bc4aeea8375135b7
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.66.orig.tar.xz' libcap2_2.66.orig.tar.xz 181592 SHA512:ac005b622f6e065f30ce282a5c87240e7b9da75366ee537aa4835bc501b44bc242c10a4ba4dc070e2415fc7f635d1c3c4e45fbeeaf962cf7973dda82bf6377f0
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.66-3ubuntu2.debian.tar.xz' libcap2_2.66-3ubuntu2.debian.tar.xz 20612 SHA512:2af5d8c5cc20d192d95646728eb0ffc383c980f63f5e8565046b3ff53351c7d7e07a25dd89e3795d2d41f5a271cc97f2e9d778aa880e4a1c15c00f16137eb735
-```
 
 ### `dpkg` source package: `libcbor=0.8.0-2ubuntu1`
 
@@ -3688,15 +3676,9 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:9.0p1-1ubuntu8.1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.0p1-1ubuntu8.1.dsc' openssh_9.0p1-1ubuntu8.1.dsc 3381 SHA512:bdb5c7fd97277ca281847fbd0c236bb82b5f94fb207a6cb08bad4bd7a78b99a3766f4527e2511c47660d5608420d16501cd00045dea264a101d94a60883e1245
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.0p1.orig.tar.gz' openssh_9.0p1.orig.tar.gz 1822183 SHA512:613ae95317e734868c6a60d9cc5af47a889baa3124bbdd2b31bb51dd6b57b136f4cfcb5604cca78a03bd500baab9b9b45eaf77e038b1ed776c86dce0437449a9
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.0p1.orig.tar.gz.asc' openssh_9.0p1.orig.tar.gz.asc 833 SHA512:7b1445764058435d2fa8a9c7553643983650d4232036c088e46e44beeb538d32cba88f775b1be9da5f21a01d6caea59b3dc4714507781e9cb946546fa54f169f
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.0p1-1ubuntu8.1.debian.tar.xz' openssh_9.0p1-1ubuntu8.1.debian.tar.xz 181392 SHA512:9bd7297e77a11224b652e7019d1cbf7f108f716678c44acfee8675587e185065e9c1c38f66fdea716cba36a01f464700959cd46bc9257b7f907b4c91c7870122
-```
 
 ### `dpkg` source package: `openssl=3.0.8-1ubuntu2`
 
@@ -4443,14 +4425,13 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tar=1.34+dfsg-1.2
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.34%2bdfsg-1.2.dsc' tar_1.34+dfsg-1.2.dsc 1768 SHA512:b756ae887f4b53845204062b37e2a5d3f78e178f75709eb0cc6955cf640fc9d9cb0f035510dba549f370121457c7df069799c77f0bc35b95f53e088eda450af1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.34%2bdfsg.orig.tar.xz' tar_1.34+dfsg.orig.tar.xz 1981736 SHA512:ec5553c53c4a5f523f872a8095f699c17bf41400fbe2f0f8b45291ccbaf9ac51dea8445c81bd95697f8853c95dcad3250071d23dbbcab857a428ee92e647bde9
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.34%2bdfsg-1.2.debian.tar.xz' tar_1.34+dfsg-1.2.debian.tar.xz 20336 SHA512:b67ed52e03813f3fa497cb9efbe3ca5e6486b59e0bc88b838aa4e7748bd86a69e2aad93dfe7e814f1b6f47291486819e657eef1ac1b91f754e65d39c2facd1c6
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/tar/1.34+dfsg-1.2/
+
 
 ### `dpkg` source package: `tiff=4.5.0-6ubuntu1`
 
@@ -4620,14 +4601,9 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.38.1-5ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.38.1-5ubuntu1.dsc' util-linux_2.38.1-5ubuntu1.dsc 4632 SHA512:079092345dc52308e48b72ff2a55ae952577de8ce090929196fdb2cb811a30d3f6c59ffc47c5c252cddc905b192ecda57ff3b7f04b30b143a1dedc0fe884c299
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.38.1.orig.tar.xz' util-linux_2.38.1.orig.tar.xz 7495904 SHA512:07f11147f67dfc6c8bc766dfc83266054e6ede776feada0566b447d13276b6882ee85c6fe53e8d94a17c03332106fc0549deca3cf5f2e92dda554e9bc0551957
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.38.1-5ubuntu1.debian.tar.xz' util-linux_2.38.1-5ubuntu1.debian.tar.xz 118396 SHA512:4583c23acd1489a59c27cabcb4f1c5628ac01003b5441b493c620e0c85624be9d1a56298e8c7c1998826e3e6c7aabdd07e47caeb11c54df23642f4dd39eb0f50
-```
 
 ### `dpkg` source package: `wget=1.21.3-1ubuntu1`
 

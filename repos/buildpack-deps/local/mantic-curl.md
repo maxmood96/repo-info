@@ -72,13 +72,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.7.0
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.7.0.dsc' apt_2.7.0.dsc 2933 SHA512:37f4990c3a28aeed50b8aedcf3591b6e390df7f6eadbe6058fa850d896333b6402e3747f72d38fee04ae5a4b045a09cd362b7aeea1d02013b9e317b192e3729c
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.7.0.tar.xz' apt_2.7.0.tar.xz 2332512 SHA512:793ace218d1c0bd3f0a4903bbb041ecd84e856fe4be3514abfee6cc6cfd8a02889201b587754c508d67828015cc2925672ab1417e50e30ace532a5179dcd7ed2
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/apt/2.7.0/
+
 
 ### `dpkg` source package: `attr=1:2.5.1-4`
 
@@ -356,14 +356,13 @@ Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/l
 - `RSA-MD`
 - `SSLeay`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cyrus-sasl2=2.1.28+dfsg-11
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg-11.dsc' cyrus-sasl2_2.1.28+dfsg-11.dsc 3324 SHA512:9c8c3271476cd65de54146ad3c53fd6f52ff5af93d21eb70fe1b70a631549fc2dad5877351f125aaabda63c59b060d17504fd9f444a0c0be54a08686ba955dbf
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg.orig.tar.xz' cyrus-sasl2_2.1.28+dfsg.orig.tar.xz 797472 SHA512:70cccbac70e71828f1345beba5c78c14332e425b75c84a66393cf62ecf6848741c5912697fc0197516f1d4c41ec8c9644506a6241588b8f6bf5bba79edd8b15a
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg-11.debian.tar.xz' cyrus-sasl2_2.1.28+dfsg-11.debian.tar.xz 98092 SHA512:059b2b29f17d1904eeb60a9a3a7a5e14dc65016d94d12cc842a1fe5e2cfca3e203ee171eb7f8d9459e2cbd15fef2645034fcdcba04e223046e8ad67d7e627e01
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/cyrus-sasl2/2.1.28+dfsg-11/
+
 
 ### `dpkg` source package: `dash=0.5.12-2ubuntu1`
 
@@ -904,14 +903,9 @@ Licenses: (parsed from: `/usr/share/doc/libcap2/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libcap2=1:2.66-3ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.66-3ubuntu2.dsc' libcap2_2.66-3ubuntu2.dsc 2311 SHA512:e3f662805aeba4846e21fe980a60fe237f12a5ce35f6d6e0639d090643367f2c77b016508cef1a843cd31d3564c0352ada74ab4045174b23bc4aeea8375135b7
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.66.orig.tar.xz' libcap2_2.66.orig.tar.xz 181592 SHA512:ac005b622f6e065f30ce282a5c87240e7b9da75366ee537aa4835bc501b44bc242c10a4ba4dc070e2415fc7f635d1c3c4e45fbeeaf962cf7973dda82bf6377f0
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.66-3ubuntu2.debian.tar.xz' libcap2_2.66-3ubuntu2.debian.tar.xz 20612 SHA512:2af5d8c5cc20d192d95646728eb0ffc383c980f63f5e8565046b3ff53351c7d7e07a25dd89e3795d2d41f5a271cc97f2e9d778aa880e4a1c15c00f16137eb735
-```
 
 ### `dpkg` source package: `libffi=3.4.4-1`
 
@@ -1909,14 +1903,13 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tar=1.34+dfsg-1.2
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.34%2bdfsg-1.2.dsc' tar_1.34+dfsg-1.2.dsc 1768 SHA512:b756ae887f4b53845204062b37e2a5d3f78e178f75709eb0cc6955cf640fc9d9cb0f035510dba549f370121457c7df069799c77f0bc35b95f53e088eda450af1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.34%2bdfsg.orig.tar.xz' tar_1.34+dfsg.orig.tar.xz 1981736 SHA512:ec5553c53c4a5f523f872a8095f699c17bf41400fbe2f0f8b45291ccbaf9ac51dea8445c81bd95697f8853c95dcad3250071d23dbbcab857a428ee92e647bde9
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.34%2bdfsg-1.2.debian.tar.xz' tar_1.34+dfsg-1.2.debian.tar.xz 20336 SHA512:b67ed52e03813f3fa497cb9efbe3ca5e6486b59e0bc88b838aa4e7748bd86a69e2aad93dfe7e814f1b6f47291486819e657eef1ac1b91f754e65d39c2facd1c6
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/tar/1.34+dfsg-1.2/
+
 
 ### `dpkg` source package: `tzdata=2023c-4exp1ubuntu1`
 
