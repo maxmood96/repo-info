@@ -1,7 +1,7 @@
 ## `fedora:latest`
 
 ```console
-$ docker pull fedora@sha256:314825630f4143072e18b2bb081248e2227ed1d79218d99e2f3934f3f9c40c75
+$ docker pull fedora@sha256:a29e3f593f5eb60a0a52d34bdc0147da22c97381d3667c5588dbe02ca35e1514
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14,14 +14,14 @@ $ docker pull fedora@sha256:314825630f4143072e18b2bb081248e2227ed1d79218d99e2f39
 ### `fedora:latest` - linux; amd64
 
 ```console
-$ docker pull fedora@sha256:8fc788917621a01ec8ff836af6e1d30a5ccca8be61e282547b66da2329ff66b1
+$ docker pull fedora@sha256:c23aeb3dd1b629e34b49bad4e6295bb5d6e9cb1413d95b2e113254d5ffaaa1eb
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **68.3 MB (68308786 bytes)**  
+-	Total Size: **68.3 MB (68307864 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0b5e8d6146c164cef5fbc1cfd25b6b33e60eaa4ac1e3cf4e5996af2f6111bab2`
+-	Image ID: `sha256:795c8dbbab2db9f5858998d948189e2b646caa6f92b35b87a4b80d7634e88201`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -29,16 +29,16 @@ $ docker pull fedora@sha256:8fc788917621a01ec8ff836af6e1d30a5ccca8be61e282547b66
 LABEL maintainer=Clement Verna <cverna@fedoraproject.org>
 # Thu, 03 Nov 2022 20:41:02 GMT
 ENV DISTTAG=f38container FGC=f38 FBR=f38
-# Wed, 31 May 2023 17:23:47 GMT
-ADD file:e78f5348ec5dce9f28bb42101a81def43cf45aa3a76937edba5bf344e00370f4 in / 
-# Wed, 31 May 2023 17:23:48 GMT
+# Tue, 06 Jun 2023 20:20:05 GMT
+ADD file:0f119e7993d70c8fa0b6eee79fccf645273ec8be97931d56c36e757c615f3e9f in / 
+# Tue, 06 Jun 2023 20:20:06 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:a65ab96afbb00c25c25c1e3aff23029859a7bb9494abb1614e55dfbcf3591a10`  
-		Last Modified: Wed, 31 May 2023 17:24:35 GMT  
-		Size: 68.3 MB (68308786 bytes)  
+	-	`sha256:be3ff91c5bee04b7d595eaaa1c798741cc8d27d3945cda381130972a22e2eeb8`  
+		Last Modified: Tue, 06 Jun 2023 20:20:51 GMT  
+		Size: 68.3 MB (68307864 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `fedora:latest` - linux; arm64 variant v8
@@ -74,14 +74,14 @@ CMD ["/bin/bash"]
 ### `fedora:latest` - linux; ppc64le
 
 ```console
-$ docker pull fedora@sha256:4d4044a5fb54cc1133a72f7a245cbea081ced51d5a9721ffb9f63ad80472febb
+$ docker pull fedora@sha256:7fc8668a24d48d783da0785f22953f515e704011be60a34db027cdf9f590b7a0
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **75.0 MB (75016193 bytes)**  
+-	Total Size: **75.0 MB (75013876 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6e0efd5ece8008a7afa8e544101b105ff3aaffc7087b1dc04668665227a20c8b`
+-	Image ID: `sha256:0a0b3305f34ebdf0bb09acf248f864948cb6205f762a4bfff52996413c9e57b7`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -89,16 +89,16 @@ $ docker pull fedora@sha256:4d4044a5fb54cc1133a72f7a245cbea081ced51d5a9721ffb9f6
 LABEL maintainer=Clement Verna <cverna@fedoraproject.org>
 # Thu, 03 Nov 2022 21:19:02 GMT
 ENV DISTTAG=f38container FGC=f38 FBR=f38
-# Wed, 31 May 2023 17:17:24 GMT
-ADD file:4a2e34c8e62d53b7be0ce053d54835f0928f31cb681a897a2e6116b6d9837f60 in / 
-# Wed, 31 May 2023 17:17:28 GMT
+# Tue, 06 Jun 2023 20:17:41 GMT
+ADD file:929405ee3c8d4219a5fdf3808bbc8adab3b7afe6b27a55369e1701ddd935eff6 in / 
+# Tue, 06 Jun 2023 20:17:45 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:a8c6284e088c4757ce2c70ddb6a1b99c62a6eeda555e11847893602891eb6be2`  
-		Last Modified: Wed, 31 May 2023 17:18:48 GMT  
-		Size: 75.0 MB (75016193 bytes)  
+	-	`sha256:8d48c09810ab6be544595e74ca2b5a1101d17ca0e95a320e75019689da3a8ece`  
+		Last Modified: Tue, 06 Jun 2023 20:19:04 GMT  
+		Size: 75.0 MB (75013876 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `fedora:latest` - linux; s390x
