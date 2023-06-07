@@ -1,10 +1,10 @@
-# `consul:1.15.2`
+# `consul:1.15.3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c90b65cf94569cb74e2385cf536270955f34035cbef796424dba86d1c2597cc9`
-- Created: `2023-04-06T00:42:24.02149385Z`
-- Virtual Size: ~ 152.68 Mb  
+- Image ID: `sha256:a99d8a688dd368dfc01d7c582a58cce6499b05073367a431a0f1923ae1e75a37`
+- Created: `2023-06-04T17:40:05.230835706Z`
+- Virtual Size: ~ 159.20 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -20,7 +20,7 @@
   - `org.opencontainers.image.title=consul`
   - `org.opencontainers.image.url=https://www.consul.io/`
   - `org.opencontainers.image.vendor=HashiCorp`
-  - `org.opencontainers.image.version=1.15.2`
+  - `org.opencontainers.image.version=1.15.3`
 
 ## `apk` (`.apk`-based packages)
 
@@ -112,16 +112,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20220614-r0 description:
+ca-certificates-20230506-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20220614-r0 webpage:
+ca-certificates-20230506-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20220614-r0 installed size:
-688 KiB
+ca-certificates-20230506-r0 installed size:
+692 KiB
 
-ca-certificates-20220614-r0 license:
+ca-certificates-20230506-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -146,16 +146,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-7.80.0-r6 description:
+curl-8.1.2-r0 description:
 URL retrival utility and library
 
-curl-7.80.0-r6 webpage:
+curl-8.1.2-r0 webpage:
 https://curl.se/
 
-curl-7.80.0-r6 installed size:
-248 KiB
+curl-8.1.2-r0 installed size:
+268 KiB
 
-curl-7.80.0-r6 license:
+curl-8.1.2-r0 license:
 MIT
 
 ```
@@ -248,16 +248,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libc6-compat`
 
 ```console
-libc6-compat-1.2.2-r8 description:
+libc6-compat-1.2.2-r9 description:
 compatibility libraries for glibc
 
-libc6-compat-1.2.2-r8 webpage:
+libc6-compat-1.2.2-r9 webpage:
 https://musl.libc.org/
 
-libc6-compat-1.2.2-r8 installed size:
+libc6-compat-1.2.2-r9 installed size:
 12 KiB
 
-libc6-compat-1.2.2-r8 license:
+libc6-compat-1.2.2-r9 license:
 MIT
 
 ```
@@ -265,16 +265,16 @@ MIT
 ### `apk` package: `libcap`
 
 ```console
-libcap-2.61-r0 description:
+libcap-2.61-r1 description:
 POSIX 1003.1e capabilities
 
-libcap-2.61-r0 webpage:
+libcap-2.61-r1 webpage:
 https://sites.google.com/site/fullycapable/
 
-libcap-2.61-r0 installed size:
+libcap-2.61-r1 installed size:
 180 KiB
 
-libcap-2.61-r0 license:
+libcap-2.61-r1 license:
 BSD-3-Clause OR GPL-2.0-only
 
 ```
@@ -282,16 +282,16 @@ BSD-3-Clause OR GPL-2.0-only
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1t-r3 description:
+libcrypto1.1-1.1.1u-r1 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1t-r3 webpage:
+libcrypto1.1-1.1.1u-r1 webpage:
 https://www.openssl.org/
 
-libcrypto1.1-1.1.1t-r3 installed size:
-2684 KiB
+libcrypto1.1-1.1.1u-r1 installed size:
+2680 KiB
 
-libcrypto1.1-1.1.1t-r3 license:
+libcrypto1.1-1.1.1u-r1 license:
 OpenSSL
 
 ```
@@ -299,16 +299,16 @@ OpenSSL
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-7.80.0-r6 description:
+libcurl-8.1.2-r0 description:
 The multiprotocol file transfer library
 
-libcurl-7.80.0-r6 webpage:
+libcurl-8.1.2-r0 webpage:
 https://curl.se/
 
-libcurl-7.80.0-r6 installed size:
-504 KiB
+libcurl-8.1.2-r0 installed size:
+564 KiB
 
-libcurl-7.80.0-r6 license:
+libcurl-8.1.2-r0 license:
 MIT
 
 ```
@@ -367,16 +367,16 @@ ISC AND (BSD-3-Clause OR MIT)
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1t-r3 description:
+libssl1.1-1.1.1u-r1 description:
 SSL shared libraries
 
-libssl1.1-1.1.1t-r3 webpage:
+libssl1.1-1.1.1u-r1 webpage:
 https://www.openssl.org/
 
-libssl1.1-1.1.1t-r3 installed size:
+libssl1.1-1.1.1u-r1 installed size:
 528 KiB
 
-libssl1.1-1.1.1t-r3 license:
+libssl1.1-1.1.1u-r1 license:
 OpenSSL
 
 ```
@@ -384,16 +384,16 @@ OpenSSL
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.2-r8 description:
+musl-1.2.2-r9 description:
 the musl c library (libc) implementation
 
-musl-1.2.2-r8 webpage:
+musl-1.2.2-r9 webpage:
 https://musl.libc.org/
 
-musl-1.2.2-r8 installed size:
+musl-1.2.2-r9 installed size:
 608 KiB
 
-musl-1.2.2-r8 license:
+musl-1.2.2-r9 license:
 MIT
 
 ```
