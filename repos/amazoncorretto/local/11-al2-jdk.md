@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:884f49128e993028e24877c72a76750bea6364fcf63dfc666a6343dc3b1efe6c`
-- Created: `2023-05-13T01:34:03.163205217Z`
+- Image ID: `sha256:1e5a37374bd7493079f514e2497f274119e1febe3c3206ce4d6af386eb110bd0`
+- Created: `2023-06-05T19:39:09.623394236Z`
 - Virtual Size: ~ 449.12 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -268,15 +268,15 @@ $ dnf --quiet download --source --url gdbm-1.13-6.amzn2.0.2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/e5756b881dd10f379f337f77c404dbc4c557dcbacab9b1b8a3aea0fb859ea0fb/../../../../../blobstore/e2866f1817e24bcd350768bf85c8bbddde135513ced29ce315df75f311cf77cf/gdbm-1.13-6.amzn2.0.2.src.rpm
 ```
 
-### `rpm` package: `glib2-2.56.1-9.amzn2.0.2.x86_64`
+### `rpm` package: `glib2-2.56.1-9.amzn2.0.3.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glib2-2.56.1-9.amzn2.0.2
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/e5756b881dd10f379f337f77c404dbc4c557dcbacab9b1b8a3aea0fb859ea0fb/../../../../../blobstore/537aafe4cf68cea22ab5412acfe3a1febc5525de48f0bd82d10ea71e7e916899/glib2-2.56.1-9.amzn2.0.2.src.rpm
+$ dnf --quiet download --source --url glib2-2.56.1-9.amzn2.0.3
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/e5756b881dd10f379f337f77c404dbc4c557dcbacab9b1b8a3aea0fb859ea0fb/../../../../../blobstore/c302d4bd2ff6eaf7795a641d115ed5bde0107ac022ce486ae22ab5cbe5e9798e/glib2-2.56.1-9.amzn2.0.3.src.rpm
 ```
 
 ### `rpm` package: `glibc-2.26-63.amzn2.x86_64`
@@ -649,15 +649,15 @@ $ dnf --quiet download --source --url libsepol-2.5-8.1.amzn2.0.2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/e5756b881dd10f379f337f77c404dbc4c557dcbacab9b1b8a3aea0fb859ea0fb/../../../../../blobstore/c5597168fd76decdd14b8c307ea2ab87a22f7e2236cf9c2ff4cf438c0e6d4120/libsepol-2.5-8.1.amzn2.0.2.src.rpm
 ```
 
-### `rpm` package: `libssh2-1.4.3-12.amzn2.2.3.x86_64`
+### `rpm` package: `libssh2-1.4.3-12.amzn2.2.4.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libssh2-1.4.3-12.amzn2.2.3
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/e5756b881dd10f379f337f77c404dbc4c557dcbacab9b1b8a3aea0fb859ea0fb/../../../../../blobstore/ef9036126023044ebfb64786bbf29621695f9fd357830ccf39bebb19932fdde0/libssh2-1.4.3-12.amzn2.2.3.src.rpm
+$ dnf --quiet download --source --url libssh2-1.4.3-12.amzn2.2.4
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/e5756b881dd10f379f337f77c404dbc4c557dcbacab9b1b8a3aea0fb859ea0fb/../../../../../blobstore/3435fd82101df268400855a9be4eb676bbc3ad4f06c94baf50009949e28de491/libssh2-1.4.3-12.amzn2.2.4.src.rpm
 ```
 
 ### `rpm` package: `libstdc++-7.3.1-15.amzn2.x86_64`
