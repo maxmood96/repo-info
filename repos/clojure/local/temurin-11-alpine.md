@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7f273c614765ccfb2133212659f5e023c5503ab0bc7ffeba917d71b2b5c81d18`
-- Created: `2023-05-24T23:57:41.468055395Z`
+- Image ID: `sha256:96ba93c6b9b994cb08d9661018c968b2b0551e0d704dc46b4094dfc07bef6407`
+- Created: `2023-06-05T21:01:12.457347944Z`
 - Virtual Size: ~ 380.84 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -15,7 +15,7 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-11.0.19+7`
-  - `CLOJURE_VERSION=1.11.1.1323`
+  - `CLOJURE_VERSION=1.11.1.1347`
 
 ## `apk` (`.apk`-based packages)
 
@@ -90,16 +90,16 @@ GPL-2.0-only
 ### `apk` package: `bash`
 
 ```console
-bash-5.2.15-r4 description:
+bash-5.2.15-r5 description:
 The GNU Bourne Again shell
 
-bash-5.2.15-r4 webpage:
+bash-5.2.15-r5 webpage:
 https://www.gnu.org/software/bash/bash.html
 
-bash-5.2.15-r4 installed size:
+bash-5.2.15-r5 installed size:
 1360 KiB
 
-bash-5.2.15-r4 license:
+bash-5.2.15-r5 license:
 GPL-3.0-or-later
 
 ```
@@ -328,16 +328,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.1.1-r0 description:
+libcurl-8.1.2-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.1.1-r0 webpage:
+libcurl-8.1.2-r0 webpage:
 https://curl.se/
 
-libcurl-8.1.1-r0 installed size:
-552 KiB
+libcurl-8.1.2-r0 installed size:
+548 KiB
 
-libcurl-8.1.1-r0 license:
+libcurl-8.1.2-r0 license:
 curl
 
 ```

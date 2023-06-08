@@ -1,21 +1,22 @@
-# `clojure:temurin-11-jammy`
+# `clojure:temurin-17-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b56476a223b5f01cefbdecb9371d5ef9bc239711e3c83c4c7f1dc180583724da`
-- Created: `2023-06-04T15:57:32.537884419Z`
-- Virtual Size: ~ 572.57 Mb  
+- Image ID: `sha256:36d456c287872cc7cb91a62d6f6f04e0ed37399a50000328d073929c4dcfe133`
+- Created: `2023-06-05T21:04:29.441493431Z`
+- Virtual Size: ~ 588.16 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Command: `["clj"]`
+- Entrypoint: `["entrypoint"]`
+- Command: `["-M","--repl"]`
 - Environment:
   - `PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/opt/java/openjdk`
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-11.0.19+7`
-  - `CLOJURE_VERSION=1.11.1.1323`
+  - `JAVA_VERSION=jdk-17.0.7+7`
+  - `CLOJURE_VERSION=1.11.1.1347`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
@@ -182,6 +183,32 @@ $ apt-get source -qq --print-uris bash=5.1-6ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.1-6ubuntu1.dsc' bash_5.1-6ubuntu1.dsc 2426 SHA512:9c808b5b8a281e01c5a4a503eca84fca8b21a2153dc4e7abbedda21346ae4005c806ffe7afd689b7ff66af8d431b9b4bebf2f1324745c01ed5f3ee219a515a88
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.1.orig.tar.xz' bash_5.1.orig.tar.xz 5802740 SHA512:95d3acc542231cb893e1347c7d9dd66687f68cd347a0e9e126fde2d14e68c5b5530d1a5866eafa781e88aa013fcf72b4ad56d2e484c2ac7a69bd90bb149a9b86
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.1-6ubuntu1.debian.tar.xz' bash_5.1-6ubuntu1.debian.tar.xz 99652 SHA512:da77655882d0977656b75c750589307c54c7d5dd28b1cfc357d4a474ebf26399a91cfa19c4ba381e0a59a8f115f8381d432e82f2e659cb9bcbebf3fa0cd77bc1
+```
+
+### `dpkg` source package: `binutils=2.38-4ubuntu2.2`
+
+Binary Packages:
+
+- `binutils=2.38-4ubuntu2.2`
+- `binutils-common:amd64=2.38-4ubuntu2.2`
+- `binutils-x86-64-linux-gnu=2.38-4ubuntu2.2`
+- `libbinutils:amd64=2.38-4ubuntu2.2`
+- `libctf-nobfd0:amd64=2.38-4ubuntu2.2`
+- `libctf0:amd64=2.38-4ubuntu2.2`
+
+Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/binutils-common/copyright`, `/usr/share/doc/binutils-x86-64-linux-gnu/copyright`, `/usr/share/doc/libbinutils/copyright`, `/usr/share/doc/libctf-nobfd0/copyright`, `/usr/share/doc/libctf0/copyright`)
+
+- `GFDL`
+- `GPL`
+- `LGPL`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris binutils=2.38-4ubuntu2.2
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38-4ubuntu2.2.dsc' binutils_2.38-4ubuntu2.2.dsc 8731 SHA512:b7bcb61a7c293a261b2ee3f8be7b4f648c3585f375b54c9ef275aaa634b752c3bc15cf3d32de16fa582c4397fc58aeef2a4192cfbb1697e5b579f5fce9eaa117
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38.orig.tar.xz' binutils_2.38.orig.tar.xz 23651408 SHA512:8bf0b0d193c9c010e0518ee2b2e5a830898af206510992483b427477ed178396cd210235e85fd7bd99a96fc6d5eedbeccbd48317a10f752b7336ada8b2bb826d
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38-4ubuntu2.2.debian.tar.xz' binutils_2.38-4ubuntu2.2.debian.tar.xz 293072 SHA512:9654da7ccefe2bec54c60f56a06b9a9fa381388992a7dd43fc6b1dd522bf9280d9675043ad2b8237a2c349e0a6fad7cb01e116fec822fa4c01203de8cc5fc574
 ```
 
 ### `dpkg` source package: `brotli=1.0.9-2build6`
@@ -2059,14 +2086,14 @@ $ apt-get source -qq --print-uris pcre3=2:8.39-13ubuntu0.22.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39-13ubuntu0.22.04.1.debian.tar.gz' pcre3_8.39-13ubuntu0.22.04.1.debian.tar.gz 28251 SHA512:50aa437187fd45632213fe7b09a69dfbe2a58ad568a7f71c47ddab204db49850b732f17c8295788afd0c58d8134620a11aaa9fa259a980a0ab85ce043098a659
 ```
 
-### `dpkg` source package: `perl=5.34.0-3ubuntu1.1`
+### `dpkg` source package: `perl=5.34.0-3ubuntu1.2`
 
 Binary Packages:
 
-- `libperl5.34:amd64=5.34.0-3ubuntu1.1`
-- `perl=5.34.0-3ubuntu1.1`
-- `perl-base=5.34.0-3ubuntu1.1`
-- `perl-modules-5.34=5.34.0-3ubuntu1.1`
+- `libperl5.34:amd64=5.34.0-3ubuntu1.2`
+- `perl=5.34.0-3ubuntu1.2`
+- `perl-base=5.34.0-3ubuntu1.2`
+- `perl-modules-5.34=5.34.0-3ubuntu1.2`
 
 Licenses: (parsed from: `/usr/share/doc/libperl5.34/copyright`, `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-base/copyright`, `/usr/share/doc/perl-modules-5.34/copyright`)
 
@@ -2101,11 +2128,11 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.34/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris perl=5.34.0-3ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0-3ubuntu1.1.dsc' perl_5.34.0-3ubuntu1.1.dsc 2976 SHA512:46121062c161c4cb9a66d2ea7dff2ac943c67b92fc0bf6b9460dee63041fb53d4b9024e245a84f1b1c3bd971515d7d62ae396abb6bde919763ee0686e561572e
+$ apt-get source -qq --print-uris perl=5.34.0-3ubuntu1.2
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0-3ubuntu1.2.dsc' perl_5.34.0-3ubuntu1.2.dsc 2680 SHA512:131b69ef0a8a3135a801330858876af2de664d8565491f09246c362258f786d8720c815a95cb7333567ff8d7f911f822b0e3b3045b99008de0625981f5cf15e4
 'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0.orig-regen-configure.tar.xz' perl_5.34.0.orig-regen-configure.tar.xz 415412 SHA512:2581152e0747105314c4fa4167f1f97d286436b996341b9b75e4099ba18f15eb0d2b42888622fbe9b5499d3fe304bc8aa9ad207a945f590135beccfb68ea28b0
 'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0.orig.tar.xz' perl_5.34.0.orig.tar.xz 12881416 SHA512:691b4b31eacec357191fba777612b4e3eae59e946a22998a50766697c0d61db1d42a9b3bc1e41abf0d1ca1893e4a7c06d7bf3290480cf03d7f79befd7a8a3267
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0-3ubuntu1.1.debian.tar.xz' perl_5.34.0-3ubuntu1.1.debian.tar.xz 192096 SHA512:ba3e8dd687c441121ef68fe6497889e1d4a9f3b65a2fd4ef5558b6625f32238367da92195f0a8d495c5778a44aaf67605ade5fe1846266d69f993d155475189a
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0-3ubuntu1.2.debian.tar.xz' perl_5.34.0-3ubuntu1.2.debian.tar.xz 192372 SHA512:bbe3da1c08d92640bb3877babc77ca0a012614acba47cb9bff1e4bd3d439f571848a655789ac157944e90b5b0df1c2a3b78c41480e2e796ea0c7b14647edcf5b
 ```
 
 ### `dpkg` source package: `procps=2:3.3.17-6ubuntu2`
@@ -2153,14 +2180,14 @@ $ apt-get source -qq --print-uris python3-defaults=3.10.6-1~22.04
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.10.6-1%7e22.04.tar.gz' python3-defaults_3.10.6-1~22.04.tar.gz 145325 SHA512:4dce1fcadb47a3fbd72e489e78c6543aa4b35a0480eb4e10617b3afd223cdd244e97f79db55f2abf28367848658ae46a3cda895d3d9dcf21c530149207f080dd
 ```
 
-### `dpkg` source package: `python3.10=3.10.6-1~22.04.2ubuntu1`
+### `dpkg` source package: `python3.10=3.10.6-1~22.04.2ubuntu1.1`
 
 Binary Packages:
 
-- `libpython3.10-minimal:amd64=3.10.6-1~22.04.2ubuntu1`
-- `libpython3.10-stdlib:amd64=3.10.6-1~22.04.2ubuntu1`
-- `python3.10=3.10.6-1~22.04.2ubuntu1`
-- `python3.10-minimal=3.10.6-1~22.04.2ubuntu1`
+- `libpython3.10-minimal:amd64=3.10.6-1~22.04.2ubuntu1.1`
+- `libpython3.10-stdlib:amd64=3.10.6-1~22.04.2ubuntu1.1`
+- `python3.10=3.10.6-1~22.04.2ubuntu1.1`
+- `python3.10-minimal=3.10.6-1~22.04.2ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/share/doc/libpython3.10-stdlib/copyright`, `/usr/share/doc/python3.10/copyright`, `/usr/share/doc/python3.10-minimal/copyright`)
 
@@ -2185,10 +2212,10 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python3.10=3.10.6-1~22.04.2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.6-1%7e22.04.2ubuntu1.dsc' python3.10_3.10.6-1~22.04.2ubuntu1.dsc 3758 SHA512:fb03b25d78c6d9b4e483750f1d2be2970b10c65fe64efd2c850668e8fb47268fda1d3ad5da3a9f96a332121406166b7f982911c74ffec560a40151e9296b2fc9
+$ apt-get source -qq --print-uris python3.10=3.10.6-1~22.04.2ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.6-1%7e22.04.2ubuntu1.1.dsc' python3.10_3.10.6-1~22.04.2ubuntu1.1.dsc 3766 SHA512:192e30c1a1759d22255d24d3fe1fa32e3ec8dd52eba0441778273c6d9a47a1be2f27d732c6f50518fe9dfadaad40fc038b50439f1008a4a1263c6cea3461a156
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.6.orig.tar.xz' python3.10_3.10.6.orig.tar.xz 19600672 SHA512:f2bf424bf4f4caa524ee1248b431e8e06d0745c3fc3ba457710d75f3698e653733feb4b059cd124f1de2a9e851c30d847f567aa47abef12898c9dc8a6507b476
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.6-1%7e22.04.2ubuntu1.debian.tar.xz' python3.10_3.10.6-1~22.04.2ubuntu1.debian.tar.xz 224020 SHA512:6ccb06369cf7c3bfe0f9ed2f28970d2b77974c5df37dc0d0f0023e37de867ef55e91d3acf2cb92cb11240ee813bdd54fc622d0a2c1e4bdb1e24d38bf50c341a5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.6-1%7e22.04.2ubuntu1.1.debian.tar.xz' python3.10_3.10.6-1~22.04.2ubuntu1.1.debian.tar.xz 226728 SHA512:48a192563ab28665dfd78deb509ce488f9d16606f5df8aa5df0a3396dda9da534f6c18406dfccb5078f48ec919a5cd5a95b22ad576f71d07695ce8f8127dfe8a
 ```
 
 ### `dpkg` source package: `readline=8.1.2-1`
