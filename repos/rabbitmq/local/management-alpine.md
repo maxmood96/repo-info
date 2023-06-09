@@ -1,10 +1,10 @@
-# `rabbitmq:3.11.16-management-alpine`
+# `rabbitmq:3.12.0-management-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6dee980bdab517ecd6dc8c657cbcc6715f267f825f074b2598a2e21240e578ee`
-- Created: `2023-05-13T17:05:18Z`
-- Virtual Size: ~ 165.60 Mb  
+- Image ID: `sha256:5dce0acf1c1695e32288da42e076599498eac70f880cd16ee00cd67540778809`
+- Created: `2023-06-02T21:59:28Z`
+- Virtual Size: ~ 179.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -12,7 +12,7 @@
 - Environment:
   - `PATH=/opt/rabbitmq/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `RABBITMQ_DATA_DIR=/var/lib/rabbitmq`
-  - `RABBITMQ_VERSION=3.11.16`
+  - `RABBITMQ_VERSION=3.12.0`
   - `RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA`
   - `RABBITMQ_HOME=/opt/rabbitmq`
   - `HOME=/var/lib/rabbitmq`
@@ -93,16 +93,16 @@ GPL-2.0-only
 ### `apk` package: `bash`
 
 ```console
-bash-5.2.15-r3 description:
+bash-5.2.15-r5 description:
 The GNU Bourne Again shell
 
-bash-5.2.15-r3 webpage:
+bash-5.2.15-r5 webpage:
 https://www.gnu.org/software/bash/bash.html
 
-bash-5.2.15-r3 installed size:
+bash-5.2.15-r5 installed size:
 1360 KiB
 
-bash-5.2.15-r3 license:
+bash-5.2.15-r5 license:
 GPL-3.0-or-later
 
 ```
@@ -280,16 +280,16 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 ### `apk` package: `libintl`
 
 ```console
-libintl-0.21.1-r5 description:
+libintl-0.21.1-r7 description:
 GNU gettext runtime library
 
-libintl-0.21.1-r5 webpage:
+libintl-0.21.1-r7 webpage:
 https://www.gnu.org/software/gettext/gettext.html
 
-libintl-0.21.1-r5 installed size:
+libintl-0.21.1-r7 installed size:
 56 KiB
 
-libintl-0.21.1-r5 license:
+libintl-0.21.1-r7 license:
 LGPL-2.1-or-later
 
 ```
