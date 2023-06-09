@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:702f07362f1055a02f92f2e97c614729f430e3fbd749fee9a4d312435653c077`
-- Created: `2023-05-23T22:50:22.092041691Z`
-- Virtual Size: ~ 603.26 Mb  
+- Image ID: `sha256:92c4860eea64831e5959d446c99f300dceb3b28425db23ac1ed8092683e81c3a`
+- Created: `2023-06-09T05:48:35.928556484Z`
+- Virtual Size: ~ 607.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/entrypoint.sh"]`
@@ -19,10 +19,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD`
-  - `PHP_VERSION=8.1.19`
-  - `PHP_URL=https://www.php.net/distributions/php-8.1.19.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.19.tar.xz.asc`
-  - `PHP_SHA256=f42f0e93467415b2d30aa5b7ac825f0079a74207e0033010383cdc1e13657379`
+  - `PHP_VERSION=8.1.20`
+  - `PHP_URL=https://www.php.net/distributions/php-8.1.20.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.20.tar.xz.asc`
+  - `PHP_SHA256=4c9973f599e93ed5e8ce2b45ce1d41bb8fb54ce642824fd23e56b52fd75029a6`
   - `PHP_OPCACHE_VALIDATE_TIMESTAMPS=0`
   - `PHP_OPCACHE_MAX_ACCELERATED_FILES=20000`
   - `PHP_OPCACHE_MEMORY_CONSUMPTION=192`
@@ -2722,7 +2722,6 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libssl1.1:amd64=1.1.1n-0+deb11u4`
 - `openssl=1.1.1n-0+deb11u4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
@@ -2744,6 +2743,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openssl/1.1.1n-0+deb11u4/ (for browsing the source)
 - https://sources.debian.net/src/openssl/1.1.1n-0+deb11u4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openssl/1.1.1n-0+deb11u4/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `openssl=1.1.1n-0+deb11u5`
+
+Binary Packages:
+
+- `libssl1.1:amd64=1.1.1n-0+deb11u5`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris openssl=1.1.1n-0+deb11u5
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1n-0%2bdeb11u5.dsc' openssl_1.1.1n-0+deb11u5.dsc 2481 SHA256:412c88207a7108507f015cd0ac5ee38fa99e5919f2704d4422f9a21a3760667b
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1n.orig.tar.gz' openssl_1.1.1n.orig.tar.gz 9850712 SHA256:40dceb51a4f6a5275bde0e6bf20ef4b91bfc32ed57c0552e2e8e15463372b17a
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1n.orig.tar.gz.asc' openssl_1.1.1n.orig.tar.gz.asc 488 SHA256:e0e89e9467102880ee6f2ee8c1413933eb1268969afb97b9bec61e2190a62fd0
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1n-0%2bdeb11u5.debian.tar.xz' openssl_1.1.1n-0+deb11u5.debian.tar.xz 141712 SHA256:b9e6eb5bd11c2bafb63a6df6f786cc72f9d94b16b66ceadaf3a2971127a31836
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/openssl/1.1.1n-0+deb11u5/ (for browsing the source)
+- https://sources.debian.net/src/openssl/1.1.1n-0+deb11u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/1.1.1n-0+deb11u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.23.22-1`
 
