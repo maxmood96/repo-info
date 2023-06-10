@@ -1,10 +1,10 @@
-# `backdrop:1.24.2`
+# `backdrop:1.25.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:bb8e9d5e6d36ad22f8ca0f76d078c71f0f67011f644ae805db393e5ba8f15f0c`
-- Created: `2023-05-23T21:28:36.438358892Z`
-- Virtual Size: ~ 499.47 Mb  
+- Image ID: `sha256:e4c0dfa005ef865b942609a61979b941221e8c6298abe144ae871b33dfdfeaff`
+- Created: `2023-06-09T04:00:19.938890015Z`
+- Virtual Size: ~ 503.40 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -19,12 +19,12 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD`
-  - `PHP_VERSION=8.1.19`
-  - `PHP_URL=https://www.php.net/distributions/php-8.1.19.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.19.tar.xz.asc`
-  - `PHP_SHA256=f42f0e93467415b2d30aa5b7ac825f0079a74207e0033010383cdc1e13657379`
-  - `BACKDROP_VERSION=1.24.2`
-  - `BACKDROP_MD5=d1a7eb1cfaf45a7d676e7d35e74292be`
+  - `PHP_VERSION=8.1.20`
+  - `PHP_URL=https://www.php.net/distributions/php-8.1.20.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.20.tar.xz.asc`
+  - `PHP_SHA256=4c9973f599e93ed5e8ce2b45ce1d41bb8fb54ce642824fd23e56b52fd75029a6`
+  - `BACKDROP_VERSION=1.25.1`
+  - `BACKDROP_MD5=9c2bbcb4ddd52cbd85e1e31ee4fc8a17`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1700,10 +1700,9 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libpng-dev:amd64=1.6.37-3`
-- `libpng-tools=1.6.37-3`
 - `libpng16-16:amd64=1.6.37-3`
 
-Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/libpng-tools/copyright`, `/usr/share/doc/libpng16-16/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/libpng16-16/copyright`)
 
 - `Apache-2.0`
 - `BSD-3-clause`
@@ -2592,7 +2591,6 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libssl1.1:amd64=1.1.1n-0+deb11u4`
 - `openssl=1.1.1n-0+deb11u4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
@@ -2614,6 +2612,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openssl/1.1.1n-0+deb11u4/ (for browsing the source)
 - https://sources.debian.net/src/openssl/1.1.1n-0+deb11u4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openssl/1.1.1n-0+deb11u4/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `openssl=1.1.1n-0+deb11u5`
+
+Binary Packages:
+
+- `libssl1.1:amd64=1.1.1n-0+deb11u5`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris openssl=1.1.1n-0+deb11u5
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1n-0%2bdeb11u5.dsc' openssl_1.1.1n-0+deb11u5.dsc 2481 SHA256:412c88207a7108507f015cd0ac5ee38fa99e5919f2704d4422f9a21a3760667b
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1n.orig.tar.gz' openssl_1.1.1n.orig.tar.gz 9850712 SHA256:40dceb51a4f6a5275bde0e6bf20ef4b91bfc32ed57c0552e2e8e15463372b17a
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1n.orig.tar.gz.asc' openssl_1.1.1n.orig.tar.gz.asc 488 SHA256:e0e89e9467102880ee6f2ee8c1413933eb1268969afb97b9bec61e2190a62fd0
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1n-0%2bdeb11u5.debian.tar.xz' openssl_1.1.1n-0+deb11u5.debian.tar.xz 141712 SHA256:b9e6eb5bd11c2bafb63a6df6f786cc72f9d94b16b66ceadaf3a2971127a31836
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/openssl/1.1.1n-0+deb11u5/ (for browsing the source)
+- https://sources.debian.net/src/openssl/1.1.1n-0+deb11u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/1.1.1n-0+deb11u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.23.22-1`
 
