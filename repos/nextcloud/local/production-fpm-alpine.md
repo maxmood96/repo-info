@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a78c23b7fb0b771b43bcf690af5d321591c80781f13da90f86ca8e915a784e72`
-- Created: `2023-05-31T19:04:53.372921531Z`
-- Virtual Size: ~ 716.33 Mb  
+- Image ID: `sha256:cf0b5a9aae3f23035dabd02a15d1f7d3cbb150869141428fbb22b9227f2e416f`
+- Created: `2023-06-09T05:26:33.34056939Z`
+- Virtual Size: ~ 716.28 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD`
-  - `PHP_VERSION=8.1.19`
-  - `PHP_URL=https://www.php.net/distributions/php-8.1.19.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.19.tar.xz.asc`
-  - `PHP_SHA256=f42f0e93467415b2d30aa5b7ac825f0079a74207e0033010383cdc1e13657379`
+  - `PHP_VERSION=8.1.20`
+  - `PHP_URL=https://www.php.net/distributions/php-8.1.20.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.20.tar.xz.asc`
+  - `PHP_SHA256=4c9973f599e93ed5e8ce2b45ce1d41bb8fb54ce642824fd23e56b52fd75029a6`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `NEXTCLOUD_VERSION=25.0.7`
@@ -251,16 +251,16 @@ LGPL-2.0-or-later MPL-1.1
 ### `apk` package: `cups-libs`
 
 ```console
-cups-libs-2.4.2-r0 description:
+cups-libs-2.4.2-r1 description:
 CUPS libraries
 
-cups-libs-2.4.2-r0 webpage:
+cups-libs-2.4.2-r1 webpage:
 https://github.com/OpenPrinting/cups/
 
-cups-libs-2.4.2-r0 installed size:
+cups-libs-2.4.2-r1 installed size:
 572 KiB
 
-cups-libs-2.4.2-r0 license:
+cups-libs-2.4.2-r1 license:
 GPL-2.0-only
 
 ```
@@ -285,16 +285,16 @@ curl
 ### `apk` package: `dbus-libs`
 
 ```console
-dbus-libs-1.14.4-r0 description:
+dbus-libs-1.14.8-r0 description:
 D-BUS access libraries
 
-dbus-libs-1.14.4-r0 webpage:
+dbus-libs-1.14.8-r0 webpage:
 https://www.freedesktop.org/Software/dbus
 
-dbus-libs-1.14.4-r0 installed size:
+dbus-libs-1.14.8-r0 installed size:
 308 KiB
 
-dbus-libs-1.14.4-r0 license:
+dbus-libs-1.14.8-r0 license:
 AFL-2.1 OR GPL-2.0-or-later
 
 ```
@@ -1645,16 +1645,16 @@ GPL-3.0-or-later
 ### `apk` package: `tiff`
 
 ```console
-tiff-4.4.0-r1 description:
+tiff-4.4.0-r3 description:
 Provides support for the Tag Image File Format or TIFF
 
-tiff-4.4.0-r1 webpage:
+tiff-4.4.0-r3 webpage:
 https://gitlab.com/libtiff/libtiff
 
-tiff-4.4.0-r1 installed size:
+tiff-4.4.0-r3 installed size:
 480 KiB
 
-tiff-4.4.0-r1 license:
+tiff-4.4.0-r3 license:
 libtiff
 
 ```

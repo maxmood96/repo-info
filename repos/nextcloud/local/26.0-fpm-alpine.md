@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5d530003caedeb6eab9826e808d8f4c4b274783533d11268d232730643baf96b`
-- Created: `2023-05-31T19:16:49.059026607Z`
-- Virtual Size: ~ 719.22 Mb  
+- Image ID: `sha256:6b950c8cee64b0894109124616c43fd5c07c5c287840bb1965258e310c17bde4`
+- Created: `2023-06-09T05:37:20.796738585Z`
+- Virtual Size: ~ 718.57 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
-  - `PHP_VERSION=8.2.6`
-  - `PHP_URL=https://www.php.net/distributions/php-8.2.6.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.6.tar.xz.asc`
-  - `PHP_SHA256=10b796f0ed45574229851212b30a596a76e70ae365322bcaaaf9c00fa7d58cca`
+  - `PHP_VERSION=8.2.7`
+  - `PHP_URL=https://www.php.net/distributions/php-8.2.7.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.7.tar.xz.asc`
+  - `PHP_SHA256=4b9fb3dcd7184fe7582d7e44544ec7c5153852a2528de3b6754791258ffbdfa0`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `NEXTCLOUD_VERSION=26.0.2`
@@ -268,16 +268,16 @@ LGPL-2.1-or-later OR MPL-1.1
 ### `apk` package: `cups-libs`
 
 ```console
-cups-libs-2.4.2-r6 description:
+cups-libs-2.4.4-r0 description:
 CUPS libraries
 
-cups-libs-2.4.2-r6 webpage:
+cups-libs-2.4.4-r0 webpage:
 https://github.com/OpenPrinting/cups/
 
-cups-libs-2.4.2-r6 installed size:
-572 KiB
+cups-libs-2.4.4-r0 installed size:
+576 KiB
 
-cups-libs-2.4.2-r6 license:
+cups-libs-2.4.4-r0 license:
 Apache-2.0
 
 ```
@@ -285,16 +285,16 @@ Apache-2.0
 ### `apk` package: `curl`
 
 ```console
-curl-8.0.1-r2 description:
+curl-8.1.2-r0 description:
 URL retrival utility and library
 
-curl-8.0.1-r2 webpage:
+curl-8.1.2-r0 webpage:
 https://curl.se/
 
-curl-8.0.1-r2 installed size:
-232 KiB
+curl-8.1.2-r0 installed size:
+236 KiB
 
-curl-8.0.1-r2 license:
+curl-8.1.2-r0 license:
 curl
 
 ```
@@ -302,16 +302,16 @@ curl
 ### `apk` package: `dbus-libs`
 
 ```console
-dbus-libs-1.14.6-r3 description:
+dbus-libs-1.14.8-r0 description:
 D-BUS access libraries
 
-dbus-libs-1.14.6-r3 webpage:
+dbus-libs-1.14.8-r0 webpage:
 https://www.freedesktop.org/Software/dbus
 
-dbus-libs-1.14.6-r3 installed size:
+dbus-libs-1.14.8-r0 installed size:
 292 KiB
 
-dbus-libs-1.14.6-r3 license:
+dbus-libs-1.14.8-r0 license:
 AFL-2.1 OR GPL-2.0-or-later
 
 ```
@@ -642,16 +642,16 @@ LGPL-2.1-or-later AND GPL-2.0-or-later
 ### `apk` package: `libblkid`
 
 ```console
-libblkid-2.38.1-r7 description:
+libblkid-2.38.1-r8 description:
 Block device identification library from util-linux
 
-libblkid-2.38.1-r7 webpage:
+libblkid-2.38.1-r8 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libblkid-2.38.1-r7 installed size:
+libblkid-2.38.1-r8 installed size:
 300 KiB
 
-libblkid-2.38.1-r7 license:
+libblkid-2.38.1-r8 license:
 LGPL-2.1-or-later
 
 ```
@@ -727,16 +727,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.0.1-r2 description:
+libcurl-8.1.2-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.0.1-r2 webpage:
+libcurl-8.1.2-r0 webpage:
 https://curl.se/
 
-libcurl-8.0.1-r2 installed size:
-532 KiB
+libcurl-8.1.2-r0 installed size:
+548 KiB
 
-libcurl-8.0.1-r2 license:
+libcurl-8.1.2-r0 license:
 curl
 
 ```
@@ -999,16 +999,16 @@ BSD-3-Clause
 ### `apk` package: `libmount`
 
 ```console
-libmount-2.38.1-r7 description:
+libmount-2.38.1-r8 description:
 Block device identification library from util-linux
 
-libmount-2.38.1-r7 webpage:
+libmount-2.38.1-r8 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libmount-2.38.1-r7 installed size:
+libmount-2.38.1-r8 installed size:
 336 KiB
 
-libmount-2.38.1-r7 license:
+libmount-2.38.1-r8 license:
 LGPL-2.1-or-later
 
 ```
@@ -1084,16 +1084,16 @@ CDDL-1.0 OR LGPL-2.1-only
 ### `apk` package: `librsvg`
 
 ```console
-librsvg-2.56.0-r5 description:
+librsvg-2.56.1-r0 description:
 SAX-based renderer for SVG files into a GdkPixbuf
 
-librsvg-2.56.0-r5 webpage:
+librsvg-2.56.1-r0 webpage:
 https://wiki.gnome.org/Projects/LibRsvg
 
-librsvg-2.56.0-r5 installed size:
-3464 KiB
+librsvg-2.56.1-r0 installed size:
+3164 KiB
 
-librsvg-2.56.0-r5 license:
+librsvg-2.56.1-r0 license:
 LGPL-2.1-or-later
 
 ```
