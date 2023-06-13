@@ -1158,15 +1158,13 @@ Licenses: (parsed from: `/usr/share/doc/libfido2-1/copyright`)
 - `ISC`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libfido2=1.12.0-2
-'http://archive.ubuntu.com/ubuntu/pool/main/libf/libfido2/libfido2_1.12.0-2.dsc' libfido2_1.12.0-2.dsc 2588 SHA512:11584b3ff7cdb899cb35791af50f5dbae87fb3932f5a24d00d9b05550415071edb75f3de820bbc5b2802f58e3d35eb1312fada97ff2ebef49d4c7f5b76117651
-'http://archive.ubuntu.com/ubuntu/pool/main/libf/libfido2/libfido2_1.12.0.orig.tar.gz' libfido2_1.12.0.orig.tar.gz 652326 SHA512:ae8c716fe9b2fa52f191c4b3fe61442ba0b7a364a23c6c3a29afdba4f47c5eff89cb1d6c9fcacaefd7d4ebce641d35600527ee33934786c2096ac97f78e9418f
-'http://archive.ubuntu.com/ubuntu/pool/main/libf/libfido2/libfido2_1.12.0.orig.tar.gz.asc' libfido2_1.12.0.orig.tar.gz.asc 228 SHA512:1d603d26fd78534ae0a5cb624ebb8c714bc3d358822f41efdbf3e7ef5056480cc04d649d7a8d821f1109511b1ac5873d5b3307a2c4e666912ca5a8a16df5a011
-'http://archive.ubuntu.com/ubuntu/pool/main/libf/libfido2/libfido2_1.12.0-2.debian.tar.xz' libfido2_1.12.0-2.debian.tar.xz 52808 SHA512:74a1594e9f3a9d3ad05389de3d66f1bcaf0e04ec9164b5807f77cc5caaee74f046941b1c65122fb534133d0b4ca3ea1ab71d0c94df55f0963256b98801874067
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libfido2/1.12.0-2/
+
 
 ### `dpkg` source package: `libgcrypt20=1.10.1-3ubuntu1`
 

@@ -352,14 +352,9 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.40-2ubuntu6
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.40-2ubuntu6.dsc' binutils_2.40-2ubuntu6.dsc 9237 SHA512:12932c949eaa47855f9768ed4710ede7438bf7f7a2801a23307c6775b1d9d570e1bdbc6ba5ce875ac0306182839f338702cf797876c8b2bb4044357bea888033
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.40.orig.tar.xz' binutils_2.40.orig.tar.xz 25241484 SHA512:a37e042523bc46494d99d5637c3f3d8f9956d9477b748b3b1f6d7dfbb8d968ed52c932e88a4e946c6f77b8f48f1e1b360ca54c3d298f17193f3b4963472f6925
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.40-2ubuntu6.debian.tar.xz' binutils_2.40-2ubuntu6.debian.tar.xz 365448 SHA512:c42f3ec10516a8acecbfff5f1e548df5c72a8b2ca0cd6cde9e216f713782ae7b15c1ba80b75a2661957f3bf57f8b3e9417508d253c7d4d67fb3c9a7e8bfbd5f1
-```
 
 ### `dpkg` source package: `brotli=1.0.9-2build8`
 
@@ -1686,14 +1681,13 @@ Licenses: (parsed from: `/usr/share/doc/libisl23/copyright`)
 - `LGPL-2.1+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris isl=0.25-1
-'http://archive.ubuntu.com/ubuntu/pool/main/i/isl/isl_0.25-1.dsc' isl_0.25-1.dsc 1832 SHA512:78192f3e921eb2f8a716c3cb877a4156c14f10d242c3c717d44ba2ff032040a47544359018dcda58c6c5c2dbf87f3ac9864bc79c53d235b6ea2eb0fcf567e73c
-'http://archive.ubuntu.com/ubuntu/pool/main/i/isl/isl_0.25.orig.tar.xz' isl_0.25.orig.tar.xz 1977048 SHA512:81ac6b404a71e146bb705efe647ecf3bee19c3254f534cb44228cec13ffc7a33d7d58b980106dbb120ffdc557403d966619e219328edd0a4b3cbc4ac66acb255
-'http://archive.ubuntu.com/ubuntu/pool/main/i/isl/isl_0.25-1.debian.tar.xz' isl_0.25-1.debian.tar.xz 24344 SHA512:0d25fb0fd63208a70d2ff55a801f628e7b12566987ea8db0a168b423872d596824dbab608e97ed6010f87d29c9464f422b0ba91cabc7f20b9047e3171c58a6d3
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/isl/0.25-1/
+
 
 ### `dpkg` source package: `jansson=2.14-2`
 
@@ -2164,15 +2158,13 @@ Licenses: (parsed from: `/usr/share/doc/libfido2-1/copyright`)
 - `ISC`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libfido2=1.12.0-2
-'http://archive.ubuntu.com/ubuntu/pool/main/libf/libfido2/libfido2_1.12.0-2.dsc' libfido2_1.12.0-2.dsc 2588 SHA512:11584b3ff7cdb899cb35791af50f5dbae87fb3932f5a24d00d9b05550415071edb75f3de820bbc5b2802f58e3d35eb1312fada97ff2ebef49d4c7f5b76117651
-'http://archive.ubuntu.com/ubuntu/pool/main/libf/libfido2/libfido2_1.12.0.orig.tar.gz' libfido2_1.12.0.orig.tar.gz 652326 SHA512:ae8c716fe9b2fa52f191c4b3fe61442ba0b7a364a23c6c3a29afdba4f47c5eff89cb1d6c9fcacaefd7d4ebce641d35600527ee33934786c2096ac97f78e9418f
-'http://archive.ubuntu.com/ubuntu/pool/main/libf/libfido2/libfido2_1.12.0.orig.tar.gz.asc' libfido2_1.12.0.orig.tar.gz.asc 228 SHA512:1d603d26fd78534ae0a5cb624ebb8c714bc3d358822f41efdbf3e7ef5056480cc04d649d7a8d821f1109511b1ac5873d5b3307a2c4e666912ca5a8a16df5a011
-'http://archive.ubuntu.com/ubuntu/pool/main/libf/libfido2/libfido2_1.12.0-2.debian.tar.xz' libfido2_1.12.0-2.debian.tar.xz 52808 SHA512:74a1594e9f3a9d3ad05389de3d66f1bcaf0e04ec9164b5807f77cc5caaee74f046941b1c65122fb534133d0b4ca3ea1ab71d0c94df55f0963256b98801874067
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libfido2/1.12.0-2/
+
 
 ### `dpkg` source package: `libgcrypt20=1.10.1-3ubuntu1`
 
