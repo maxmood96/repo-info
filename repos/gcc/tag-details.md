@@ -496,7 +496,12 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 
 ## `gcc:10-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull gcc@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `gcc:10.4`
 
@@ -959,7 +964,12 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 
 ## `gcc:10.4-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull gcc@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `gcc:10.4.0`
 
@@ -1422,7 +1432,12 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 
 ## `gcc:10.4.0-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull gcc@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `gcc:11`
 
@@ -1885,7 +1900,12 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 
 ## `gcc:11-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull gcc@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `gcc:11.4`
 
@@ -2348,7 +2368,12 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 
 ## `gcc:11.4-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull gcc@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `gcc:11.4.0`
 
@@ -2811,7 +2836,12 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 
 ## `gcc:11.4.0-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull gcc@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `gcc:12`
 
@@ -3274,7 +3304,12 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 
 ## `gcc:12-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull gcc@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `gcc:12.3`
 
@@ -3737,7 +3772,12 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 
 ## `gcc:12.3-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull gcc@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `gcc:12.3.0`
 
@@ -4200,7 +4240,12 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 
 ## `gcc:12.3.0-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull gcc@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `gcc:13`
 
@@ -7417,7 +7462,12 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 
 ## `gcc:9-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull gcc@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `gcc:9.5`
 
@@ -7880,7 +7930,12 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 
 ## `gcc:9.5-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull gcc@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `gcc:9.5.0`
 
@@ -8343,7 +8398,12 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 
 ## `gcc:9.5.0-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull gcc@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `gcc:bookworm`
 
