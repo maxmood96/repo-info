@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:af74114218fc053bde0ce50c965b33db437978f2e96865b7419021dcf4f01597`
-- Created: `2023-06-04T17:33:06.790213757Z`
+- Image ID: `sha256:7f0c9c60f412ac9ed102569cb725d0fac5f2eab785815f02f7682f56010d22f9`
+- Created: `2023-06-10T01:09:00.219516383Z`
 - Virtual Size: ~ 1.17 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -21,8 +21,8 @@
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.75`
-  - `TOMCAT_SHA512=e29905e693598b64d958dd22b8d866590163917bdc6e1cfd363a8a06f97ecc89284b863b3ab2448f43903623564c3fd952c7a9bd33df8476d57f6873c2d463c7`
+  - `TOMCAT_VERSION=9.0.76`
+  - `TOMCAT_SHA512=028163cbe15367f0ab60e086b0ebc8d774e62d126d82ae9152f863d4680e280b11c9503e3b51ee7089ca9bea1bfa5b535b244a727a3021e5fa72dd7e9569af9a`
   - `XWIKI_VERSION=15.4`
   - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/15.4`
   - `XWIKI_DOWNLOAD_SHA256=f24def5b4e3f97c56ed03d5983766028676d6ce205bd60d3798352be5a050505`
@@ -2139,32 +2139,32 @@ $ apt-get source -qq --print-uris libpsl=0.21.0-1.2build2
 'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpsl/libpsl_0.21.0-1.2build2.debian.tar.xz' libpsl_0.21.0-1.2build2.debian.tar.xz 12896 SHA512:9d8c7130bee8c521e4f1ab1e13edfe2ed2fec538bda9133662d4120e8f5303595e6f27f466f30b07e61b94e138dd2787e17af91b8cc29275b5b4d2e098133eee
 ```
 
-### `dpkg` source package: `libreoffice=1:7.3.7-0ubuntu0.22.04.2`
+### `dpkg` source package: `libreoffice=1:7.3.7-0ubuntu0.22.04.3`
 
 Binary Packages:
 
-- `fonts-opensymbol=2:102.12+LibO7.3.7-0ubuntu0.22.04.2`
-- `libreoffice=1:7.3.7-0ubuntu0.22.04.2`
-- `libreoffice-base=1:7.3.7-0ubuntu0.22.04.2`
-- `libreoffice-base-core=1:7.3.7-0ubuntu0.22.04.2`
-- `libreoffice-base-drivers=1:7.3.7-0ubuntu0.22.04.2`
-- `libreoffice-calc=1:7.3.7-0ubuntu0.22.04.2`
-- `libreoffice-common=1:7.3.7-0ubuntu0.22.04.2`
-- `libreoffice-core=1:7.3.7-0ubuntu0.22.04.2`
-- `libreoffice-draw=1:7.3.7-0ubuntu0.22.04.2`
-- `libreoffice-impress=1:7.3.7-0ubuntu0.22.04.2`
-- `libreoffice-math=1:7.3.7-0ubuntu0.22.04.2`
-- `libreoffice-report-builder-bin=1:7.3.7-0ubuntu0.22.04.2`
-- `libreoffice-style-colibre=1:7.3.7-0ubuntu0.22.04.2`
-- `libreoffice-writer=1:7.3.7-0ubuntu0.22.04.2`
-- `libuno-cppu3=1:7.3.7-0ubuntu0.22.04.2`
-- `libuno-cppuhelpergcc3-3=1:7.3.7-0ubuntu0.22.04.2`
-- `libuno-purpenvhelpergcc3-3=1:7.3.7-0ubuntu0.22.04.2`
-- `libuno-sal3=1:7.3.7-0ubuntu0.22.04.2`
-- `libuno-salhelpergcc3-3=1:7.3.7-0ubuntu0.22.04.2`
-- `python3-uno=1:7.3.7-0ubuntu0.22.04.2`
-- `uno-libs-private=1:7.3.7-0ubuntu0.22.04.2`
-- `ure=1:7.3.7-0ubuntu0.22.04.2`
+- `fonts-opensymbol=2:102.12+LibO7.3.7-0ubuntu0.22.04.3`
+- `libreoffice=1:7.3.7-0ubuntu0.22.04.3`
+- `libreoffice-base=1:7.3.7-0ubuntu0.22.04.3`
+- `libreoffice-base-core=1:7.3.7-0ubuntu0.22.04.3`
+- `libreoffice-base-drivers=1:7.3.7-0ubuntu0.22.04.3`
+- `libreoffice-calc=1:7.3.7-0ubuntu0.22.04.3`
+- `libreoffice-common=1:7.3.7-0ubuntu0.22.04.3`
+- `libreoffice-core=1:7.3.7-0ubuntu0.22.04.3`
+- `libreoffice-draw=1:7.3.7-0ubuntu0.22.04.3`
+- `libreoffice-impress=1:7.3.7-0ubuntu0.22.04.3`
+- `libreoffice-math=1:7.3.7-0ubuntu0.22.04.3`
+- `libreoffice-report-builder-bin=1:7.3.7-0ubuntu0.22.04.3`
+- `libreoffice-style-colibre=1:7.3.7-0ubuntu0.22.04.3`
+- `libreoffice-writer=1:7.3.7-0ubuntu0.22.04.3`
+- `libuno-cppu3=1:7.3.7-0ubuntu0.22.04.3`
+- `libuno-cppuhelpergcc3-3=1:7.3.7-0ubuntu0.22.04.3`
+- `libuno-purpenvhelpergcc3-3=1:7.3.7-0ubuntu0.22.04.3`
+- `libuno-sal3=1:7.3.7-0ubuntu0.22.04.3`
+- `libuno-salhelpergcc3-3=1:7.3.7-0ubuntu0.22.04.3`
+- `python3-uno=1:7.3.7-0ubuntu0.22.04.3`
+- `uno-libs-private=1:7.3.7-0ubuntu0.22.04.3`
+- `ure=1:7.3.7-0ubuntu0.22.04.3`
 
 Licenses: (parsed from: `/usr/share/doc/fonts-opensymbol/copyright`, `/usr/share/doc/libreoffice/copyright`, `/usr/share/doc/libreoffice-base/copyright`, `/usr/share/doc/libreoffice-base-core/copyright`, `/usr/share/doc/libreoffice-base-drivers/copyright`, `/usr/share/doc/libreoffice-calc/copyright`, `/usr/share/doc/libreoffice-common/copyright`, `/usr/share/doc/libreoffice-core/copyright`, `/usr/share/doc/libreoffice-draw/copyright`, `/usr/share/doc/libreoffice-impress/copyright`, `/usr/share/doc/libreoffice-math/copyright`, `/usr/share/doc/libreoffice-report-builder-bin/copyright`, `/usr/share/doc/libreoffice-style-colibre/copyright`, `/usr/share/doc/libreoffice-writer/copyright`, `/usr/share/doc/libuno-cppu3/copyright`, `/usr/share/doc/libuno-cppuhelpergcc3-3/copyright`, `/usr/share/doc/libuno-purpenvhelpergcc3-3/copyright`, `/usr/share/doc/libuno-sal3/copyright`, `/usr/share/doc/libuno-salhelpergcc3-3/copyright`, `/usr/share/doc/python3-uno/copyright`, `/usr/share/doc/uno-libs-private/copyright`, `/usr/share/doc/ure/copyright`)
 
@@ -2185,9 +2185,18 @@ Licenses: (parsed from: `/usr/share/doc/fonts-opensymbol/copyright`, `/usr/share
 - `MPL_2.0`
 - `other`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libreoffice=1:7.3.7-0ubuntu0.22.04.3
+'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_7.3.7-0ubuntu0.22.04.3.dsc' libreoffice_7.3.7-0ubuntu0.22.04.3.dsc 25396 SHA512:89de87fa83c4803310fe1e3d1e515e29eda810b815224aa7866eebf2e3a2be401228ff0bc330bb6c7438d8e4eb5002cc7dba494ebe68d50ad17713d9c522179e
+'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_7.3.7.orig-helpcontent2.tar.xz' libreoffice_7.3.7.orig-helpcontent2.tar.xz 112067652 SHA512:5f29783b6483824a61c700ad7516a97e69373498ca7dcbe0e24229246d2bd0fb24a2c9e555107af21b9eed35c504f0b65c4e5b5a2aadb79de1a4fa8b21e2bc98
+'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_7.3.7.orig-tarballs.tar.xz' libreoffice_7.3.7.orig-tarballs.tar.xz 324661956 SHA512:d13cc4817a4fb298049f0306599cf25dee5906a920871c5ef58cdea9019e49580587b51c8af29946eea2d9720ca5f66ee9e2bc8a67ff7d2b1b8377bc02930521
+'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_7.3.7.orig-translations.tar.xz' libreoffice_7.3.7.orig-translations.tar.xz 208926792 SHA512:d9895f425c7d5928915858af4d560db0b6380477b87add69c103789b4eff3b169360164609c480b9b5591a69f4130b4c77a0741b00b839126d7ce03cbcd4a6f9
+'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_7.3.7.orig-yaru.tar.xz' libreoffice_7.3.7.orig-yaru.tar.xz 19257660 SHA512:a3bb9e04992224dba3f0a1a2edcf59a06b1c6dfaf71ef8de1fff87f7f6ade96a4557f171f374bc29e661765ef56d2f72e41c574b983d0fa9c3e3acf84439ba03
+'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_7.3.7.orig.tar.xz' libreoffice_7.3.7.orig.tar.xz 256653492 SHA512:f7b6279f5ef9f5ad8290d2bdf4fd54f8df7775a21094ba762dbd9299effab31d4f2c6dff9f4b3d9c5673596931df1d16b195474b547007bfc9a396c47e5e181c
+'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_7.3.7-0ubuntu0.22.04.3.debian.tar.xz' libreoffice_7.3.7-0ubuntu0.22.04.3.debian.tar.xz 2401284 SHA512:9804c66e47a45cf74b4942f6897030b8b572d7b4b0110da111c8f2643b697166285c2138525c3da81524248cf7b1dc595d87c880b2582feac57e96983791016a
+```
 
 ### `dpkg` source package: `librevenge=0.0.4-6ubuntu7`
 
@@ -3421,15 +3430,15 @@ $ apt-get source -qq --print-uris python3-defaults=3.10.6-1~22.04
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.10.6-1%7e22.04.tar.gz' python3-defaults_3.10.6-1~22.04.tar.gz 145325 SHA512:4dce1fcadb47a3fbd72e489e78c6543aa4b35a0480eb4e10617b3afd223cdd244e97f79db55f2abf28367848658ae46a3cda895d3d9dcf21c530149207f080dd
 ```
 
-### `dpkg` source package: `python3.10=3.10.6-1~22.04.2ubuntu1`
+### `dpkg` source package: `python3.10=3.10.6-1~22.04.2ubuntu1.1`
 
 Binary Packages:
 
-- `libpython3.10:amd64=3.10.6-1~22.04.2ubuntu1`
-- `libpython3.10-minimal:amd64=3.10.6-1~22.04.2ubuntu1`
-- `libpython3.10-stdlib:amd64=3.10.6-1~22.04.2ubuntu1`
-- `python3.10=3.10.6-1~22.04.2ubuntu1`
-- `python3.10-minimal=3.10.6-1~22.04.2ubuntu1`
+- `libpython3.10:amd64=3.10.6-1~22.04.2ubuntu1.1`
+- `libpython3.10-minimal:amd64=3.10.6-1~22.04.2ubuntu1.1`
+- `libpython3.10-stdlib:amd64=3.10.6-1~22.04.2ubuntu1.1`
+- `python3.10=3.10.6-1~22.04.2ubuntu1.1`
+- `python3.10-minimal=3.10.6-1~22.04.2ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.10/copyright`, `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/share/doc/libpython3.10-stdlib/copyright`, `/usr/share/doc/python3.10/copyright`, `/usr/share/doc/python3.10-minimal/copyright`)
 
@@ -3451,9 +3460,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10/copyright`, `/usr/share/do
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.10=3.10.6-1~22.04.2ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.6-1%7e22.04.2ubuntu1.1.dsc' python3.10_3.10.6-1~22.04.2ubuntu1.1.dsc 3766 SHA512:192e30c1a1759d22255d24d3fe1fa32e3ec8dd52eba0441778273c6d9a47a1be2f27d732c6f50518fe9dfadaad40fc038b50439f1008a4a1263c6cea3461a156
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.6.orig.tar.xz' python3.10_3.10.6.orig.tar.xz 19600672 SHA512:f2bf424bf4f4caa524ee1248b431e8e06d0745c3fc3ba457710d75f3698e653733feb4b059cd124f1de2a9e851c30d847f567aa47abef12898c9dc8a6507b476
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.6-1%7e22.04.2ubuntu1.1.debian.tar.xz' python3.10_3.10.6-1~22.04.2ubuntu1.1.debian.tar.xz 226728 SHA512:48a192563ab28665dfd78deb509ce488f9d16606f5df8aa5df0a3396dda9da534f6c18406dfccb5078f48ec919a5cd5a95b22ad576f71d07695ce8f8127dfe8a
+```
 
 ### `dpkg` source package: `raptor2=2.0.15-0ubuntu4`
 
