@@ -1,7 +1,7 @@
 ## `hylang:0-python3.7`
 
 ```console
-$ docker pull hylang@sha256:c9eade2af0aaf931f635d3efaea28a398c6aa7119917ee1eba08be1930e00af3
+$ docker pull hylang@sha256:7c93368b026ce032527a1c0a363d7dc9272414777ffe97dd7af8cd4b5c75a77b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -418,14 +418,14 @@ CMD ["hy"]
 ### `hylang:0-python3.7` - linux; mips64le
 
 ```console
-$ docker pull hylang@sha256:acf1de440801f7f49868881660843a579a4988efe5bcb8c3e3f04b55e72755e7
+$ docker pull hylang@sha256:49b5121e2194d93388cc70fba23acf4741e192f71aef486fb0f1ac34c09dcfb6
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **47.6 MB (47624912 bytes)**  
+-	Total Size: **47.6 MB (47624989 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c6b49c29faaa102dd0aa25cc6e4884189ec25b81dd647950f86a783955a08051`
+-	Image ID: `sha256:ed2609224deeb481723848072cd1e96593fc5c204c875ea5eb6a4b73326455a4`
 -	Default Command: `["hy"]`
 
 ```dockerfile
@@ -433,39 +433,39 @@ $ docker pull hylang@sha256:acf1de440801f7f49868881660843a579a4988efe5bcb8c3e3f0
 ADD file:4d5c7737e954f157e3d7ea47cc1814c46ec5c753a3d5d828ad9614969b572253 in / 
 # Tue, 13 Jun 2023 00:10:38 GMT
 CMD ["bash"]
-# Tue, 06 Jun 2023 23:32:36 GMT
+# Tue, 13 Jun 2023 17:45:16 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 06 Jun 2023 23:32:36 GMT
+# Tue, 13 Jun 2023 17:45:16 GMT
 ENV LANG=C.UTF-8
-# Tue, 06 Jun 2023 23:32:36 GMT
+# Tue, 13 Jun 2023 17:45:16 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		netbase 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 06 Jun 2023 23:32:36 GMT
+# Tue, 13 Jun 2023 17:45:16 GMT
 ENV GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D
-# Tue, 06 Jun 2023 23:32:36 GMT
+# Tue, 13 Jun 2023 17:45:16 GMT
 ENV PYTHON_VERSION=3.7.17
-# Tue, 06 Jun 2023 23:32:36 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		gnupg 		libbluetooth-dev 		libbz2-dev 		libc6-dev 		libdb-dev 		libexpat1-dev 		libffi-dev 		libgdbm-dev 		liblzma-dev 		libncursesw5-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tk-dev 		uuid-dev 		wget 		xz-utils 		zlib1g-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPG_KEY"; 	gpg --batch --verify python.tar.xz.asc python.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" python.tar.xz.asc; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-optimizations 		--enable-option-checking=fatal 		--enable-shared 		--with-system-expat 		--without-ensurepip 	; 	nproc="$(nproc)"; 	EXTRA_CFLAGS="$(dpkg-buildflags --get CFLAGS)"; 	LDFLAGS="$(dpkg-buildflags --get LDFLAGS)"; 	LDFLAGS="${LDFLAGS:--Wl},--strip-all"; 	PROFILE_TASK='-m test.regrtest --pgo 		test_array 		test_base64 		test_binascii 		test_binhex 		test_binop 		test_bytes 		test_c_locale_coercion 		test_class 		test_cmath 		test_codecs 		test_compile 		test_complex 		test_csv 		test_decimal 		test_dict 		test_float 		test_fstring 		test_hashlib 		test_io 		test_iter 		test_json 		test_long 		test_math 		test_memoryview 		test_pickle 		test_re 		test_set 		test_slice 		test_struct 		test_threading 		test_time 		test_traceback 		test_unicode 	'; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:-}" 		"PROFILE_TASK=${PROFILE_TASK:-}" 	; 	rm python; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:--Wl},-rpath='\$\$ORIGIN/../lib'" 		"PROFILE_TASK=${PROFILE_TASK:-}" 		python 	; 	make install; 		cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name 'libpython*.a' \) \) 			-o \( -type f -a -name 'wininst-*.exe' \) 		\) -exec rm -rf '{}' + 	; 		ldconfig; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python3 --version # buildkit
-# Tue, 06 Jun 2023 23:32:36 GMT
+# Tue, 13 Jun 2023 17:45:16 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		gnupg 		libbluetooth-dev 		libbz2-dev 		libc6-dev 		libdb-dev 		libexpat1-dev 		libffi-dev 		libgdbm-dev 		liblzma-dev 		libncursesw5-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tk-dev 		uuid-dev 		wget 		xz-utils 		zlib1g-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPG_KEY"; 	gpg --batch --verify python.tar.xz.asc python.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" python.tar.xz.asc; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-optimizations 		--enable-option-checking=fatal 		--enable-shared 		--with-system-expat 		--without-ensurepip 	; 	nproc="$(nproc)"; 	EXTRA_CFLAGS="$(dpkg-buildflags --get CFLAGS)"; 	LDFLAGS="$(dpkg-buildflags --get LDFLAGS)"; 	LDFLAGS="${LDFLAGS:--Wl},--strip-all"; 	PROFILE_TASK='-m test.regrtest --pgo 		test_array 		test_base64 		test_binascii 		test_binhex 		test_binop 		test_bytes 		test_c_locale_coercion 		test_class 		test_cmath 		test_codecs 		test_compile 		test_complex 		test_csv 		test_decimal 		test_dict 		test_float 		test_fstring 		test_hashlib 		test_io 		test_iter 		test_json 		test_long 		test_math 		test_memoryview 		test_pickle 		test_re 		test_set 		test_slice 		test_struct 		test_threading 		test_time 		test_traceback 		test_unicode 	'; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:-}" 		"PROFILE_TASK=${PROFILE_TASK:-}" 	; 	rm python; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:--Wl},-rpath='\$\$ORIGIN/../lib'" 		"PROFILE_TASK=${PROFILE_TASK:-}" 		python 	; 	make install; 		cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name 'libpython*.a' \) \) 			-o \( -type f -a -name 'wininst-*.exe' \) 		\) -exec rm -rf '{}' + 	; 		ldconfig; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python3 --version # buildkit
+# Tue, 13 Jun 2023 17:45:16 GMT
 RUN set -eux; 	for src in idle3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "$src" "/usr/local/bin/$dst"; 	done # buildkit
-# Tue, 06 Jun 2023 23:32:36 GMT
+# Tue, 13 Jun 2023 17:45:16 GMT
 ENV PYTHON_PIP_VERSION=23.0.1
-# Tue, 06 Jun 2023 23:32:36 GMT
+# Tue, 13 Jun 2023 17:45:16 GMT
 ENV PYTHON_SETUPTOOLS_VERSION=57.5.0
-# Tue, 06 Jun 2023 23:32:36 GMT
+# Tue, 13 Jun 2023 17:45:16 GMT
 ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/0d8570dc44796f4369b652222cf176b3db6ac70e/public/get-pip.py
-# Tue, 06 Jun 2023 23:32:36 GMT
+# Tue, 13 Jun 2023 17:45:16 GMT
 ENV PYTHON_GET_PIP_SHA256=96461deced5c2a487ddc65207ec5a9cffeca0d34e7af7ea1afc470ff0d746207
-# Tue, 06 Jun 2023 23:32:36 GMT
+# Tue, 13 Jun 2023 17:45:16 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		export PYTHONDONTWRITEBYTECODE=1; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		--no-compile 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	rm -f get-pip.py; 		pip --version # buildkit
-# Tue, 06 Jun 2023 23:32:36 GMT
+# Tue, 13 Jun 2023 17:45:16 GMT
 CMD ["python3"]
-# Wed, 14 Jun 2023 07:46:24 GMT
+# Thu, 15 Jun 2023 00:58:50 GMT
 ENV HY_VERSION=0.26.0
-# Wed, 14 Jun 2023 07:46:28 GMT
+# Thu, 15 Jun 2023 00:58:53 GMT
 ENV HYRULE_VERSION=0.3.0
-# Wed, 14 Jun 2023 07:47:44 GMT
+# Thu, 15 Jun 2023 01:00:09 GMT
 RUN pip install --no-cache-dir "hy == $HY_VERSION" "hyrule == $HYRULE_VERSION"
-# Wed, 14 Jun 2023 07:47:47 GMT
+# Thu, 15 Jun 2023 01:00:12 GMT
 CMD ["hy"]
 ```
 
@@ -478,34 +478,34 @@ CMD ["hy"]
 		Last Modified: Tue, 13 Jun 2023 14:55:07 GMT  
 		Size: 845.0 KB (844957 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95804fdea4a3338d33546ce773e8104b4e70562f604fa2a957b268af388a2936`  
-		Last Modified: Tue, 13 Jun 2023 14:56:38 GMT  
-		Size: 10.5 MB (10530530 bytes)  
+	-	`sha256:6a0902d8cc0510074f8837622cf4d60f3bc38154f5dd0bfad2c7942890f7195a`  
+		Last Modified: Wed, 14 Jun 2023 21:53:57 GMT  
+		Size: 10.5 MB (10530700 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1e6a06fd08529d02c6a2d7f8a100f01903c3f28262ea02dd9c2a3fa885c2ee7c`  
-		Last Modified: Tue, 13 Jun 2023 14:56:32 GMT  
-		Size: 232.0 B  
+	-	`sha256:ffaf7cdc7608bb2382aa34cecb76e697cda490b18bcb72b209737af36d09afd6`  
+		Last Modified: Wed, 14 Jun 2023 21:53:51 GMT  
+		Size: 231.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:59d3a427fa982658ddc63ba2ded5993056f1a2adf8515d0eb76ad9103d8d9756`  
-		Last Modified: Tue, 13 Jun 2023 14:56:34 GMT  
-		Size: 2.9 MB (2923704 bytes)  
+	-	`sha256:650152811306a7c66eef1f95d8dfedde044df9b1fbb1e9ef29693bc1ae8f8bc2`  
+		Last Modified: Wed, 14 Jun 2023 21:53:53 GMT  
+		Size: 2.9 MB (2923618 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9e00fa63e173eaf934bd06c593eb8b616f6f535eac1c8605cba8c3e1ada1527`  
-		Last Modified: Wed, 14 Jun 2023 07:49:09 GMT  
-		Size: 3.7 MB (3691067 bytes)  
+	-	`sha256:bfe214eb87ec4acde29ef15453e82ae8f152ca20cca7da49a95c810dd9c2a388`  
+		Last Modified: Thu, 15 Jun 2023 01:01:27 GMT  
+		Size: 3.7 MB (3691061 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `hylang:0-python3.7` - linux; ppc64le
 
 ```console
-$ docker pull hylang@sha256:41206e0bd7eeb187cc303d7c6f4ebc393344a3e3473bb8aff7b9d04444f81955
+$ docker pull hylang@sha256:bcadead20a8611d7b4df01d95fd8f7903a8a4566c2ccf6c2474d5546cf9b9b0a
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.2 MB (54159148 bytes)**  
+-	Total Size: **54.2 MB (54157965 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:75539db8b6243c436cb0ee9cd3ae8972cd924122e25b10f81f8631d52928db65`
+-	Image ID: `sha256:00b565d32c5db6aa38eeea49af9d43301916edcac0a9d2a72192a3075ad04190`
 -	Default Command: `["hy"]`
 
 ```dockerfile
@@ -513,39 +513,39 @@ $ docker pull hylang@sha256:41206e0bd7eeb187cc303d7c6f4ebc393344a3e3473bb8aff7b9
 ADD file:b17eabe509462fa1a2e4c5421e877e3e4149085e3da07a421a66c7b06566c457 in / 
 # Mon, 12 Jun 2023 23:18:22 GMT
 CMD ["bash"]
-# Tue, 06 Jun 2023 23:32:36 GMT
+# Tue, 13 Jun 2023 17:45:16 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 06 Jun 2023 23:32:36 GMT
+# Tue, 13 Jun 2023 17:45:16 GMT
 ENV LANG=C.UTF-8
-# Tue, 06 Jun 2023 23:32:36 GMT
+# Tue, 13 Jun 2023 17:45:16 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		netbase 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 06 Jun 2023 23:32:36 GMT
+# Tue, 13 Jun 2023 17:45:16 GMT
 ENV GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D
-# Tue, 06 Jun 2023 23:32:36 GMT
+# Tue, 13 Jun 2023 17:45:16 GMT
 ENV PYTHON_VERSION=3.7.17
-# Tue, 06 Jun 2023 23:32:36 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		gnupg 		libbluetooth-dev 		libbz2-dev 		libc6-dev 		libdb-dev 		libexpat1-dev 		libffi-dev 		libgdbm-dev 		liblzma-dev 		libncursesw5-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tk-dev 		uuid-dev 		wget 		xz-utils 		zlib1g-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPG_KEY"; 	gpg --batch --verify python.tar.xz.asc python.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" python.tar.xz.asc; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-optimizations 		--enable-option-checking=fatal 		--enable-shared 		--with-system-expat 		--without-ensurepip 	; 	nproc="$(nproc)"; 	EXTRA_CFLAGS="$(dpkg-buildflags --get CFLAGS)"; 	LDFLAGS="$(dpkg-buildflags --get LDFLAGS)"; 	LDFLAGS="${LDFLAGS:--Wl},--strip-all"; 	PROFILE_TASK='-m test.regrtest --pgo 		test_array 		test_base64 		test_binascii 		test_binhex 		test_binop 		test_bytes 		test_c_locale_coercion 		test_class 		test_cmath 		test_codecs 		test_compile 		test_complex 		test_csv 		test_decimal 		test_dict 		test_float 		test_fstring 		test_hashlib 		test_io 		test_iter 		test_json 		test_long 		test_math 		test_memoryview 		test_pickle 		test_re 		test_set 		test_slice 		test_struct 		test_threading 		test_time 		test_traceback 		test_unicode 	'; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:-}" 		"PROFILE_TASK=${PROFILE_TASK:-}" 	; 	rm python; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:--Wl},-rpath='\$\$ORIGIN/../lib'" 		"PROFILE_TASK=${PROFILE_TASK:-}" 		python 	; 	make install; 		cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name 'libpython*.a' \) \) 			-o \( -type f -a -name 'wininst-*.exe' \) 		\) -exec rm -rf '{}' + 	; 		ldconfig; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python3 --version # buildkit
-# Tue, 06 Jun 2023 23:32:36 GMT
+# Tue, 13 Jun 2023 17:45:16 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		gnupg 		libbluetooth-dev 		libbz2-dev 		libc6-dev 		libdb-dev 		libexpat1-dev 		libffi-dev 		libgdbm-dev 		liblzma-dev 		libncursesw5-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tk-dev 		uuid-dev 		wget 		xz-utils 		zlib1g-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPG_KEY"; 	gpg --batch --verify python.tar.xz.asc python.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" python.tar.xz.asc; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-optimizations 		--enable-option-checking=fatal 		--enable-shared 		--with-system-expat 		--without-ensurepip 	; 	nproc="$(nproc)"; 	EXTRA_CFLAGS="$(dpkg-buildflags --get CFLAGS)"; 	LDFLAGS="$(dpkg-buildflags --get LDFLAGS)"; 	LDFLAGS="${LDFLAGS:--Wl},--strip-all"; 	PROFILE_TASK='-m test.regrtest --pgo 		test_array 		test_base64 		test_binascii 		test_binhex 		test_binop 		test_bytes 		test_c_locale_coercion 		test_class 		test_cmath 		test_codecs 		test_compile 		test_complex 		test_csv 		test_decimal 		test_dict 		test_float 		test_fstring 		test_hashlib 		test_io 		test_iter 		test_json 		test_long 		test_math 		test_memoryview 		test_pickle 		test_re 		test_set 		test_slice 		test_struct 		test_threading 		test_time 		test_traceback 		test_unicode 	'; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:-}" 		"PROFILE_TASK=${PROFILE_TASK:-}" 	; 	rm python; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:--Wl},-rpath='\$\$ORIGIN/../lib'" 		"PROFILE_TASK=${PROFILE_TASK:-}" 		python 	; 	make install; 		cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name 'libpython*.a' \) \) 			-o \( -type f -a -name 'wininst-*.exe' \) 		\) -exec rm -rf '{}' + 	; 		ldconfig; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python3 --version # buildkit
+# Tue, 13 Jun 2023 17:45:16 GMT
 RUN set -eux; 	for src in idle3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "$src" "/usr/local/bin/$dst"; 	done # buildkit
-# Tue, 06 Jun 2023 23:32:36 GMT
+# Tue, 13 Jun 2023 17:45:16 GMT
 ENV PYTHON_PIP_VERSION=23.0.1
-# Tue, 06 Jun 2023 23:32:36 GMT
+# Tue, 13 Jun 2023 17:45:16 GMT
 ENV PYTHON_SETUPTOOLS_VERSION=57.5.0
-# Tue, 06 Jun 2023 23:32:36 GMT
+# Tue, 13 Jun 2023 17:45:16 GMT
 ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/0d8570dc44796f4369b652222cf176b3db6ac70e/public/get-pip.py
-# Tue, 06 Jun 2023 23:32:36 GMT
+# Tue, 13 Jun 2023 17:45:16 GMT
 ENV PYTHON_GET_PIP_SHA256=96461deced5c2a487ddc65207ec5a9cffeca0d34e7af7ea1afc470ff0d746207
-# Tue, 06 Jun 2023 23:32:36 GMT
+# Tue, 13 Jun 2023 17:45:16 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum -c -; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		export PYTHONDONTWRITEBYTECODE=1; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		--no-compile 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 	; 	rm -f get-pip.py; 		pip --version # buildkit
-# Tue, 06 Jun 2023 23:32:36 GMT
+# Tue, 13 Jun 2023 17:45:16 GMT
 CMD ["python3"]
-# Tue, 13 Jun 2023 14:25:11 GMT
+# Thu, 15 Jun 2023 00:15:55 GMT
 ENV HY_VERSION=0.26.0
-# Tue, 13 Jun 2023 14:25:12 GMT
+# Thu, 15 Jun 2023 00:15:55 GMT
 ENV HYRULE_VERSION=0.3.0
-# Tue, 13 Jun 2023 14:25:52 GMT
+# Thu, 15 Jun 2023 00:16:35 GMT
 RUN pip install --no-cache-dir "hy == $HY_VERSION" "hyrule == $HYRULE_VERSION"
-# Tue, 13 Jun 2023 14:25:52 GMT
+# Thu, 15 Jun 2023 00:16:36 GMT
 CMD ["hy"]
 ```
 
@@ -558,21 +558,21 @@ CMD ["hy"]
 		Last Modified: Tue, 13 Jun 2023 06:59:22 GMT  
 		Size: 1.1 MB (1094898 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2a623c923f7ecf2fe50ad1036483c6c1592da3954983cbf939016de86ccdd1d9`  
-		Last Modified: Tue, 13 Jun 2023 07:01:00 GMT  
-		Size: 10.9 MB (10938655 bytes)  
+	-	`sha256:765c4eb3538e3e15ddfbe215b125e642b3ac49e70bea3ea56dfe2d9a984e3149`  
+		Last Modified: Wed, 14 Jun 2023 22:41:15 GMT  
+		Size: 10.9 MB (10938116 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:426574521b22c79bf29e98aab6b71f91ed3aa14835a57d8da12671301210afb4`  
-		Last Modified: Tue, 13 Jun 2023 07:00:58 GMT  
-		Size: 244.0 B  
+	-	`sha256:332243fe38e67527a76bf05a014a5bd05c4d90fbb80de1750629834226ffd991`  
+		Last Modified: Wed, 14 Jun 2023 22:41:12 GMT  
+		Size: 243.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:48080be0421d2c3c509d6ff944d13f1ef424be16e07e42303338f1a2b2d797a1`  
-		Last Modified: Tue, 13 Jun 2023 07:00:59 GMT  
-		Size: 3.1 MB (3141692 bytes)  
+	-	`sha256:f0431b972efdeb74ab39a3cd88f80a588cdd282b2d5c1ed1267c1bfdf925ee86`  
+		Last Modified: Wed, 14 Jun 2023 22:41:13 GMT  
+		Size: 3.1 MB (3141066 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:94ef11b68b330ec301d10ccb7d6b296a82584c875eda348cf0dac0cc3044b57b`  
-		Last Modified: Tue, 13 Jun 2023 14:28:29 GMT  
-		Size: 3.7 MB (3692869 bytes)  
+	-	`sha256:a19395ef771e00facae079eafca969b6317fb0bb63a3949d42d950013e867e89`  
+		Last Modified: Thu, 15 Jun 2023 00:18:59 GMT  
+		Size: 3.7 MB (3692852 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `hylang:0-python3.7` - linux; s390x
