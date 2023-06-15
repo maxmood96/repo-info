@@ -20,7 +20,7 @@
 ## `dart:3`
 
 ```console
-$ docker pull dart@sha256:bdd787ebc1650c908a461faf692a3df7a9ffa7a77b34a38918bb2c6fc8ed6cf6
+$ docker pull dart@sha256:4d193f4ba30111ff870009a5ad82436d39c28bd1490097b5724384645e1159ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -82,14 +82,14 @@ RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)         
 ### `dart:3` - linux; arm variant v7
 
 ```console
-$ docker pull dart@sha256:47b127487a9e148090855a526357d18d487c04add18971bef89fde96ccf04caa
+$ docker pull dart@sha256:95168117ee7e207c2d9b4255609699a2ffc982ebd7813bf950734a8e3282dc1b
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **191.3 MB (191284715 bytes)**  
+-	Total Size: **191.3 MB (191284400 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fa0214de35cb3e9b415f47d7a37be5ed8e0fe0c54ca0324199e67c7d739095c6`
+-	Image ID: `sha256:7ddc25da3e7c1899be3fb8fed4c8a21787681cdbd8964041d9d93b9a1cd8e55a`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -107,8 +107,8 @@ ENV DART_SDK=/usr/lib/dart
 ENV PATH=/usr/lib/dart/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 13 Jun 2023 17:14:43 GMT
 WORKDIR /root
-# Tue, 13 Jun 2023 17:14:55 GMT
-RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)             DART_SHA256=fed758732d742df884d39770756eb9bd9fdb24665c24c96502a09e03a745fca5;             SDK_ARCH="x64";;         armhf)             DART_SHA256=36aebf7bf6d43574dc3f66872e1926e184dd2ef8641212240e57ab895403a967;             SDK_ARCH="arm";;         arm64)             DART_SHA256=d04dee8e097cdfe02f7aa2d51620104ac680291f9d3b772a7c788694e0934fc1;             SDK_ARCH="arm64";;     esac;     SDK="dartsdk-linux-${SDK_ARCH}-release.zip";     BASEURL="https://storage.googleapis.com/dart-archive/channels";     URL="$BASEURL/stable/release/3.0.4/sdk/$SDK";     echo "SDK: $URL" >> dart_setup.log ;     curl -fLO "$URL";     echo "$DART_SHA256 *$SDK"         | sha256sum --check --status --strict -;     unzip "$SDK" && mv dart-sdk "$DART_SDK" && rm "$SDK"         && chmod 755 "$DART_SDK" && chmod 755 "$DART_SDK/bin";
+# Thu, 15 Jun 2023 21:57:30 GMT
+RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)             DART_SHA256=05fba372d64932dffce90bbd45116b76806bf9adc6203967b56faf5c64b2b66c;             SDK_ARCH="x64";;         armhf)             DART_SHA256=ed151fd396522c09c41820e627eea8a72da973f7e0aeef8e8099c914b7fde2c1;             SDK_ARCH="arm";;         arm64)             DART_SHA256=667b79593444cbe222a33c137ca943dced7a21ff2d61b8862f3b49e648c20533;             SDK_ARCH="arm64";;     esac;     SDK="dartsdk-linux-${SDK_ARCH}-release.zip";     BASEURL="https://storage.googleapis.com/dart-archive/channels";     URL="$BASEURL/stable/release/3.0.5/sdk/$SDK";     echo "SDK: $URL" >> dart_setup.log ;     curl -fLO "$URL";     echo "$DART_SHA256 *$SDK"         | sha256sum --check --status --strict -;     unzip "$SDK" && mv dart-sdk "$DART_SDK" && rm "$SDK"         && chmod 755 "$DART_SDK" && chmod 755 "$DART_SDK/bin";
 ```
 
 -	Layers:
@@ -124,22 +124,22 @@ RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)         
 		Last Modified: Tue, 13 Jun 2023 17:15:24 GMT  
 		Size: 1.3 MB (1287728 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3b942aa285cdd6c4625c42f49c140220c3120db2e023dd4c3a28dc115d6496e`  
-		Last Modified: Tue, 13 Jun 2023 17:15:43 GMT  
-		Size: 122.4 MB (122430059 bytes)  
+	-	`sha256:32371b2b503273c06ffddfadf8dbf2ed342e7245cd374f7fa921ad477156bf10`  
+		Last Modified: Thu, 15 Jun 2023 21:58:05 GMT  
+		Size: 122.4 MB (122429744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `dart:3` - linux; arm64 variant v8
 
 ```console
-$ docker pull dart@sha256:60cbdf783a0a374071c9ce1dee419fa972d9aa28a08e6560152946243431ad78
+$ docker pull dart@sha256:69f90d6d578636a82a6ec5522baed64a0a37706c5c3e7ec878eceec2e2327f9a
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **200.5 MB (200466719 bytes)**  
+-	Total Size: **200.5 MB (200466804 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:52c84ac79afa83a0586669dd01a0256ee0bb40a7d08b1603fc55e3c1a9bd77f5`
+-	Image ID: `sha256:049e1d371a19d37c241310726d5d11e0dbdf6467d5591b65b40cf3698a8b2620`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -157,8 +157,8 @@ ENV DART_SDK=/usr/lib/dart
 ENV PATH=/usr/lib/dart/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 13 Jun 2023 05:30:00 GMT
 WORKDIR /root
-# Tue, 13 Jun 2023 05:30:09 GMT
-RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)             DART_SHA256=fed758732d742df884d39770756eb9bd9fdb24665c24c96502a09e03a745fca5;             SDK_ARCH="x64";;         armhf)             DART_SHA256=36aebf7bf6d43574dc3f66872e1926e184dd2ef8641212240e57ab895403a967;             SDK_ARCH="arm";;         arm64)             DART_SHA256=d04dee8e097cdfe02f7aa2d51620104ac680291f9d3b772a7c788694e0934fc1;             SDK_ARCH="arm64";;     esac;     SDK="dartsdk-linux-${SDK_ARCH}-release.zip";     BASEURL="https://storage.googleapis.com/dart-archive/channels";     URL="$BASEURL/stable/release/3.0.4/sdk/$SDK";     echo "SDK: $URL" >> dart_setup.log ;     curl -fLO "$URL";     echo "$DART_SHA256 *$SDK"         | sha256sum --check --status --strict -;     unzip "$SDK" && mv dart-sdk "$DART_SDK" && rm "$SDK"         && chmod 755 "$DART_SDK" && chmod 755 "$DART_SDK/bin";
+# Thu, 15 Jun 2023 21:39:28 GMT
+RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)             DART_SHA256=05fba372d64932dffce90bbd45116b76806bf9adc6203967b56faf5c64b2b66c;             SDK_ARCH="x64";;         armhf)             DART_SHA256=ed151fd396522c09c41820e627eea8a72da973f7e0aeef8e8099c914b7fde2c1;             SDK_ARCH="arm";;         arm64)             DART_SHA256=667b79593444cbe222a33c137ca943dced7a21ff2d61b8862f3b49e648c20533;             SDK_ARCH="arm64";;     esac;     SDK="dartsdk-linux-${SDK_ARCH}-release.zip";     BASEURL="https://storage.googleapis.com/dart-archive/channels";     URL="$BASEURL/stable/release/3.0.5/sdk/$SDK";     echo "SDK: $URL" >> dart_setup.log ;     curl -fLO "$URL";     echo "$DART_SHA256 *$SDK"         | sha256sum --check --status --strict -;     unzip "$SDK" && mv dart-sdk "$DART_SDK" && rm "$SDK"         && chmod 755 "$DART_SDK" && chmod 755 "$DART_SDK/bin";
 ```
 
 -	Layers:
@@ -174,15 +174,15 @@ RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)         
 		Last Modified: Tue, 13 Jun 2023 05:30:36 GMT  
 		Size: 1.6 MB (1560875 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:02ee818e2587b5743fce22a8393dd333ff63a216f9a078b66556057f90f7f205`  
-		Last Modified: Tue, 13 Jun 2023 05:30:49 GMT  
-		Size: 123.8 MB (123831776 bytes)  
+	-	`sha256:eef8cd334139de8ca9860c73638d05fe9d2d0193da10ea5aab9d3024aaba98a5`  
+		Last Modified: Thu, 15 Jun 2023 21:39:58 GMT  
+		Size: 123.8 MB (123831861 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `dart:3-sdk`
 
 ```console
-$ docker pull dart@sha256:bdd787ebc1650c908a461faf692a3df7a9ffa7a77b34a38918bb2c6fc8ed6cf6
+$ docker pull dart@sha256:4d193f4ba30111ff870009a5ad82436d39c28bd1490097b5724384645e1159ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -244,14 +244,14 @@ RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)         
 ### `dart:3-sdk` - linux; arm variant v7
 
 ```console
-$ docker pull dart@sha256:47b127487a9e148090855a526357d18d487c04add18971bef89fde96ccf04caa
+$ docker pull dart@sha256:95168117ee7e207c2d9b4255609699a2ffc982ebd7813bf950734a8e3282dc1b
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **191.3 MB (191284715 bytes)**  
+-	Total Size: **191.3 MB (191284400 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fa0214de35cb3e9b415f47d7a37be5ed8e0fe0c54ca0324199e67c7d739095c6`
+-	Image ID: `sha256:7ddc25da3e7c1899be3fb8fed4c8a21787681cdbd8964041d9d93b9a1cd8e55a`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -269,8 +269,8 @@ ENV DART_SDK=/usr/lib/dart
 ENV PATH=/usr/lib/dart/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 13 Jun 2023 17:14:43 GMT
 WORKDIR /root
-# Tue, 13 Jun 2023 17:14:55 GMT
-RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)             DART_SHA256=fed758732d742df884d39770756eb9bd9fdb24665c24c96502a09e03a745fca5;             SDK_ARCH="x64";;         armhf)             DART_SHA256=36aebf7bf6d43574dc3f66872e1926e184dd2ef8641212240e57ab895403a967;             SDK_ARCH="arm";;         arm64)             DART_SHA256=d04dee8e097cdfe02f7aa2d51620104ac680291f9d3b772a7c788694e0934fc1;             SDK_ARCH="arm64";;     esac;     SDK="dartsdk-linux-${SDK_ARCH}-release.zip";     BASEURL="https://storage.googleapis.com/dart-archive/channels";     URL="$BASEURL/stable/release/3.0.4/sdk/$SDK";     echo "SDK: $URL" >> dart_setup.log ;     curl -fLO "$URL";     echo "$DART_SHA256 *$SDK"         | sha256sum --check --status --strict -;     unzip "$SDK" && mv dart-sdk "$DART_SDK" && rm "$SDK"         && chmod 755 "$DART_SDK" && chmod 755 "$DART_SDK/bin";
+# Thu, 15 Jun 2023 21:57:30 GMT
+RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)             DART_SHA256=05fba372d64932dffce90bbd45116b76806bf9adc6203967b56faf5c64b2b66c;             SDK_ARCH="x64";;         armhf)             DART_SHA256=ed151fd396522c09c41820e627eea8a72da973f7e0aeef8e8099c914b7fde2c1;             SDK_ARCH="arm";;         arm64)             DART_SHA256=667b79593444cbe222a33c137ca943dced7a21ff2d61b8862f3b49e648c20533;             SDK_ARCH="arm64";;     esac;     SDK="dartsdk-linux-${SDK_ARCH}-release.zip";     BASEURL="https://storage.googleapis.com/dart-archive/channels";     URL="$BASEURL/stable/release/3.0.5/sdk/$SDK";     echo "SDK: $URL" >> dart_setup.log ;     curl -fLO "$URL";     echo "$DART_SHA256 *$SDK"         | sha256sum --check --status --strict -;     unzip "$SDK" && mv dart-sdk "$DART_SDK" && rm "$SDK"         && chmod 755 "$DART_SDK" && chmod 755 "$DART_SDK/bin";
 ```
 
 -	Layers:
@@ -286,22 +286,22 @@ RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)         
 		Last Modified: Tue, 13 Jun 2023 17:15:24 GMT  
 		Size: 1.3 MB (1287728 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3b942aa285cdd6c4625c42f49c140220c3120db2e023dd4c3a28dc115d6496e`  
-		Last Modified: Tue, 13 Jun 2023 17:15:43 GMT  
-		Size: 122.4 MB (122430059 bytes)  
+	-	`sha256:32371b2b503273c06ffddfadf8dbf2ed342e7245cd374f7fa921ad477156bf10`  
+		Last Modified: Thu, 15 Jun 2023 21:58:05 GMT  
+		Size: 122.4 MB (122429744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `dart:3-sdk` - linux; arm64 variant v8
 
 ```console
-$ docker pull dart@sha256:60cbdf783a0a374071c9ce1dee419fa972d9aa28a08e6560152946243431ad78
+$ docker pull dart@sha256:69f90d6d578636a82a6ec5522baed64a0a37706c5c3e7ec878eceec2e2327f9a
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **200.5 MB (200466719 bytes)**  
+-	Total Size: **200.5 MB (200466804 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:52c84ac79afa83a0586669dd01a0256ee0bb40a7d08b1603fc55e3c1a9bd77f5`
+-	Image ID: `sha256:049e1d371a19d37c241310726d5d11e0dbdf6467d5591b65b40cf3698a8b2620`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -319,8 +319,8 @@ ENV DART_SDK=/usr/lib/dart
 ENV PATH=/usr/lib/dart/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 13 Jun 2023 05:30:00 GMT
 WORKDIR /root
-# Tue, 13 Jun 2023 05:30:09 GMT
-RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)             DART_SHA256=fed758732d742df884d39770756eb9bd9fdb24665c24c96502a09e03a745fca5;             SDK_ARCH="x64";;         armhf)             DART_SHA256=36aebf7bf6d43574dc3f66872e1926e184dd2ef8641212240e57ab895403a967;             SDK_ARCH="arm";;         arm64)             DART_SHA256=d04dee8e097cdfe02f7aa2d51620104ac680291f9d3b772a7c788694e0934fc1;             SDK_ARCH="arm64";;     esac;     SDK="dartsdk-linux-${SDK_ARCH}-release.zip";     BASEURL="https://storage.googleapis.com/dart-archive/channels";     URL="$BASEURL/stable/release/3.0.4/sdk/$SDK";     echo "SDK: $URL" >> dart_setup.log ;     curl -fLO "$URL";     echo "$DART_SHA256 *$SDK"         | sha256sum --check --status --strict -;     unzip "$SDK" && mv dart-sdk "$DART_SDK" && rm "$SDK"         && chmod 755 "$DART_SDK" && chmod 755 "$DART_SDK/bin";
+# Thu, 15 Jun 2023 21:39:28 GMT
+RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)             DART_SHA256=05fba372d64932dffce90bbd45116b76806bf9adc6203967b56faf5c64b2b66c;             SDK_ARCH="x64";;         armhf)             DART_SHA256=ed151fd396522c09c41820e627eea8a72da973f7e0aeef8e8099c914b7fde2c1;             SDK_ARCH="arm";;         arm64)             DART_SHA256=667b79593444cbe222a33c137ca943dced7a21ff2d61b8862f3b49e648c20533;             SDK_ARCH="arm64";;     esac;     SDK="dartsdk-linux-${SDK_ARCH}-release.zip";     BASEURL="https://storage.googleapis.com/dart-archive/channels";     URL="$BASEURL/stable/release/3.0.5/sdk/$SDK";     echo "SDK: $URL" >> dart_setup.log ;     curl -fLO "$URL";     echo "$DART_SHA256 *$SDK"         | sha256sum --check --status --strict -;     unzip "$SDK" && mv dart-sdk "$DART_SDK" && rm "$SDK"         && chmod 755 "$DART_SDK" && chmod 755 "$DART_SDK/bin";
 ```
 
 -	Layers:
@@ -336,15 +336,15 @@ RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)         
 		Last Modified: Tue, 13 Jun 2023 05:30:36 GMT  
 		Size: 1.6 MB (1560875 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:02ee818e2587b5743fce22a8393dd333ff63a216f9a078b66556057f90f7f205`  
-		Last Modified: Tue, 13 Jun 2023 05:30:49 GMT  
-		Size: 123.8 MB (123831776 bytes)  
+	-	`sha256:eef8cd334139de8ca9860c73638d05fe9d2d0193da10ea5aab9d3024aaba98a5`  
+		Last Modified: Thu, 15 Jun 2023 21:39:58 GMT  
+		Size: 123.8 MB (123831861 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `dart:3.0`
 
 ```console
-$ docker pull dart@sha256:bdd787ebc1650c908a461faf692a3df7a9ffa7a77b34a38918bb2c6fc8ed6cf6
+$ docker pull dart@sha256:4d193f4ba30111ff870009a5ad82436d39c28bd1490097b5724384645e1159ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -406,14 +406,14 @@ RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)         
 ### `dart:3.0` - linux; arm variant v7
 
 ```console
-$ docker pull dart@sha256:47b127487a9e148090855a526357d18d487c04add18971bef89fde96ccf04caa
+$ docker pull dart@sha256:95168117ee7e207c2d9b4255609699a2ffc982ebd7813bf950734a8e3282dc1b
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **191.3 MB (191284715 bytes)**  
+-	Total Size: **191.3 MB (191284400 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fa0214de35cb3e9b415f47d7a37be5ed8e0fe0c54ca0324199e67c7d739095c6`
+-	Image ID: `sha256:7ddc25da3e7c1899be3fb8fed4c8a21787681cdbd8964041d9d93b9a1cd8e55a`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -431,8 +431,8 @@ ENV DART_SDK=/usr/lib/dart
 ENV PATH=/usr/lib/dart/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 13 Jun 2023 17:14:43 GMT
 WORKDIR /root
-# Tue, 13 Jun 2023 17:14:55 GMT
-RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)             DART_SHA256=fed758732d742df884d39770756eb9bd9fdb24665c24c96502a09e03a745fca5;             SDK_ARCH="x64";;         armhf)             DART_SHA256=36aebf7bf6d43574dc3f66872e1926e184dd2ef8641212240e57ab895403a967;             SDK_ARCH="arm";;         arm64)             DART_SHA256=d04dee8e097cdfe02f7aa2d51620104ac680291f9d3b772a7c788694e0934fc1;             SDK_ARCH="arm64";;     esac;     SDK="dartsdk-linux-${SDK_ARCH}-release.zip";     BASEURL="https://storage.googleapis.com/dart-archive/channels";     URL="$BASEURL/stable/release/3.0.4/sdk/$SDK";     echo "SDK: $URL" >> dart_setup.log ;     curl -fLO "$URL";     echo "$DART_SHA256 *$SDK"         | sha256sum --check --status --strict -;     unzip "$SDK" && mv dart-sdk "$DART_SDK" && rm "$SDK"         && chmod 755 "$DART_SDK" && chmod 755 "$DART_SDK/bin";
+# Thu, 15 Jun 2023 21:57:30 GMT
+RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)             DART_SHA256=05fba372d64932dffce90bbd45116b76806bf9adc6203967b56faf5c64b2b66c;             SDK_ARCH="x64";;         armhf)             DART_SHA256=ed151fd396522c09c41820e627eea8a72da973f7e0aeef8e8099c914b7fde2c1;             SDK_ARCH="arm";;         arm64)             DART_SHA256=667b79593444cbe222a33c137ca943dced7a21ff2d61b8862f3b49e648c20533;             SDK_ARCH="arm64";;     esac;     SDK="dartsdk-linux-${SDK_ARCH}-release.zip";     BASEURL="https://storage.googleapis.com/dart-archive/channels";     URL="$BASEURL/stable/release/3.0.5/sdk/$SDK";     echo "SDK: $URL" >> dart_setup.log ;     curl -fLO "$URL";     echo "$DART_SHA256 *$SDK"         | sha256sum --check --status --strict -;     unzip "$SDK" && mv dart-sdk "$DART_SDK" && rm "$SDK"         && chmod 755 "$DART_SDK" && chmod 755 "$DART_SDK/bin";
 ```
 
 -	Layers:
@@ -448,22 +448,22 @@ RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)         
 		Last Modified: Tue, 13 Jun 2023 17:15:24 GMT  
 		Size: 1.3 MB (1287728 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3b942aa285cdd6c4625c42f49c140220c3120db2e023dd4c3a28dc115d6496e`  
-		Last Modified: Tue, 13 Jun 2023 17:15:43 GMT  
-		Size: 122.4 MB (122430059 bytes)  
+	-	`sha256:32371b2b503273c06ffddfadf8dbf2ed342e7245cd374f7fa921ad477156bf10`  
+		Last Modified: Thu, 15 Jun 2023 21:58:05 GMT  
+		Size: 122.4 MB (122429744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `dart:3.0` - linux; arm64 variant v8
 
 ```console
-$ docker pull dart@sha256:60cbdf783a0a374071c9ce1dee419fa972d9aa28a08e6560152946243431ad78
+$ docker pull dart@sha256:69f90d6d578636a82a6ec5522baed64a0a37706c5c3e7ec878eceec2e2327f9a
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **200.5 MB (200466719 bytes)**  
+-	Total Size: **200.5 MB (200466804 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:52c84ac79afa83a0586669dd01a0256ee0bb40a7d08b1603fc55e3c1a9bd77f5`
+-	Image ID: `sha256:049e1d371a19d37c241310726d5d11e0dbdf6467d5591b65b40cf3698a8b2620`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -481,8 +481,8 @@ ENV DART_SDK=/usr/lib/dart
 ENV PATH=/usr/lib/dart/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 13 Jun 2023 05:30:00 GMT
 WORKDIR /root
-# Tue, 13 Jun 2023 05:30:09 GMT
-RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)             DART_SHA256=fed758732d742df884d39770756eb9bd9fdb24665c24c96502a09e03a745fca5;             SDK_ARCH="x64";;         armhf)             DART_SHA256=36aebf7bf6d43574dc3f66872e1926e184dd2ef8641212240e57ab895403a967;             SDK_ARCH="arm";;         arm64)             DART_SHA256=d04dee8e097cdfe02f7aa2d51620104ac680291f9d3b772a7c788694e0934fc1;             SDK_ARCH="arm64";;     esac;     SDK="dartsdk-linux-${SDK_ARCH}-release.zip";     BASEURL="https://storage.googleapis.com/dart-archive/channels";     URL="$BASEURL/stable/release/3.0.4/sdk/$SDK";     echo "SDK: $URL" >> dart_setup.log ;     curl -fLO "$URL";     echo "$DART_SHA256 *$SDK"         | sha256sum --check --status --strict -;     unzip "$SDK" && mv dart-sdk "$DART_SDK" && rm "$SDK"         && chmod 755 "$DART_SDK" && chmod 755 "$DART_SDK/bin";
+# Thu, 15 Jun 2023 21:39:28 GMT
+RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)             DART_SHA256=05fba372d64932dffce90bbd45116b76806bf9adc6203967b56faf5c64b2b66c;             SDK_ARCH="x64";;         armhf)             DART_SHA256=ed151fd396522c09c41820e627eea8a72da973f7e0aeef8e8099c914b7fde2c1;             SDK_ARCH="arm";;         arm64)             DART_SHA256=667b79593444cbe222a33c137ca943dced7a21ff2d61b8862f3b49e648c20533;             SDK_ARCH="arm64";;     esac;     SDK="dartsdk-linux-${SDK_ARCH}-release.zip";     BASEURL="https://storage.googleapis.com/dart-archive/channels";     URL="$BASEURL/stable/release/3.0.5/sdk/$SDK";     echo "SDK: $URL" >> dart_setup.log ;     curl -fLO "$URL";     echo "$DART_SHA256 *$SDK"         | sha256sum --check --status --strict -;     unzip "$SDK" && mv dart-sdk "$DART_SDK" && rm "$SDK"         && chmod 755 "$DART_SDK" && chmod 755 "$DART_SDK/bin";
 ```
 
 -	Layers:
@@ -498,15 +498,15 @@ RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)         
 		Last Modified: Tue, 13 Jun 2023 05:30:36 GMT  
 		Size: 1.6 MB (1560875 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:02ee818e2587b5743fce22a8393dd333ff63a216f9a078b66556057f90f7f205`  
-		Last Modified: Tue, 13 Jun 2023 05:30:49 GMT  
-		Size: 123.8 MB (123831776 bytes)  
+	-	`sha256:eef8cd334139de8ca9860c73638d05fe9d2d0193da10ea5aab9d3024aaba98a5`  
+		Last Modified: Thu, 15 Jun 2023 21:39:58 GMT  
+		Size: 123.8 MB (123831861 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `dart:3.0-sdk`
 
 ```console
-$ docker pull dart@sha256:bdd787ebc1650c908a461faf692a3df7a9ffa7a77b34a38918bb2c6fc8ed6cf6
+$ docker pull dart@sha256:4d193f4ba30111ff870009a5ad82436d39c28bd1490097b5724384645e1159ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -568,14 +568,14 @@ RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)         
 ### `dart:3.0-sdk` - linux; arm variant v7
 
 ```console
-$ docker pull dart@sha256:47b127487a9e148090855a526357d18d487c04add18971bef89fde96ccf04caa
+$ docker pull dart@sha256:95168117ee7e207c2d9b4255609699a2ffc982ebd7813bf950734a8e3282dc1b
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **191.3 MB (191284715 bytes)**  
+-	Total Size: **191.3 MB (191284400 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fa0214de35cb3e9b415f47d7a37be5ed8e0fe0c54ca0324199e67c7d739095c6`
+-	Image ID: `sha256:7ddc25da3e7c1899be3fb8fed4c8a21787681cdbd8964041d9d93b9a1cd8e55a`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -593,8 +593,8 @@ ENV DART_SDK=/usr/lib/dart
 ENV PATH=/usr/lib/dart/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 13 Jun 2023 17:14:43 GMT
 WORKDIR /root
-# Tue, 13 Jun 2023 17:14:55 GMT
-RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)             DART_SHA256=fed758732d742df884d39770756eb9bd9fdb24665c24c96502a09e03a745fca5;             SDK_ARCH="x64";;         armhf)             DART_SHA256=36aebf7bf6d43574dc3f66872e1926e184dd2ef8641212240e57ab895403a967;             SDK_ARCH="arm";;         arm64)             DART_SHA256=d04dee8e097cdfe02f7aa2d51620104ac680291f9d3b772a7c788694e0934fc1;             SDK_ARCH="arm64";;     esac;     SDK="dartsdk-linux-${SDK_ARCH}-release.zip";     BASEURL="https://storage.googleapis.com/dart-archive/channels";     URL="$BASEURL/stable/release/3.0.4/sdk/$SDK";     echo "SDK: $URL" >> dart_setup.log ;     curl -fLO "$URL";     echo "$DART_SHA256 *$SDK"         | sha256sum --check --status --strict -;     unzip "$SDK" && mv dart-sdk "$DART_SDK" && rm "$SDK"         && chmod 755 "$DART_SDK" && chmod 755 "$DART_SDK/bin";
+# Thu, 15 Jun 2023 21:57:30 GMT
+RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)             DART_SHA256=05fba372d64932dffce90bbd45116b76806bf9adc6203967b56faf5c64b2b66c;             SDK_ARCH="x64";;         armhf)             DART_SHA256=ed151fd396522c09c41820e627eea8a72da973f7e0aeef8e8099c914b7fde2c1;             SDK_ARCH="arm";;         arm64)             DART_SHA256=667b79593444cbe222a33c137ca943dced7a21ff2d61b8862f3b49e648c20533;             SDK_ARCH="arm64";;     esac;     SDK="dartsdk-linux-${SDK_ARCH}-release.zip";     BASEURL="https://storage.googleapis.com/dart-archive/channels";     URL="$BASEURL/stable/release/3.0.5/sdk/$SDK";     echo "SDK: $URL" >> dart_setup.log ;     curl -fLO "$URL";     echo "$DART_SHA256 *$SDK"         | sha256sum --check --status --strict -;     unzip "$SDK" && mv dart-sdk "$DART_SDK" && rm "$SDK"         && chmod 755 "$DART_SDK" && chmod 755 "$DART_SDK/bin";
 ```
 
 -	Layers:
@@ -610,22 +610,22 @@ RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)         
 		Last Modified: Tue, 13 Jun 2023 17:15:24 GMT  
 		Size: 1.3 MB (1287728 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3b942aa285cdd6c4625c42f49c140220c3120db2e023dd4c3a28dc115d6496e`  
-		Last Modified: Tue, 13 Jun 2023 17:15:43 GMT  
-		Size: 122.4 MB (122430059 bytes)  
+	-	`sha256:32371b2b503273c06ffddfadf8dbf2ed342e7245cd374f7fa921ad477156bf10`  
+		Last Modified: Thu, 15 Jun 2023 21:58:05 GMT  
+		Size: 122.4 MB (122429744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `dart:3.0-sdk` - linux; arm64 variant v8
 
 ```console
-$ docker pull dart@sha256:60cbdf783a0a374071c9ce1dee419fa972d9aa28a08e6560152946243431ad78
+$ docker pull dart@sha256:69f90d6d578636a82a6ec5522baed64a0a37706c5c3e7ec878eceec2e2327f9a
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **200.5 MB (200466719 bytes)**  
+-	Total Size: **200.5 MB (200466804 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:52c84ac79afa83a0586669dd01a0256ee0bb40a7d08b1603fc55e3c1a9bd77f5`
+-	Image ID: `sha256:049e1d371a19d37c241310726d5d11e0dbdf6467d5591b65b40cf3698a8b2620`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -643,8 +643,8 @@ ENV DART_SDK=/usr/lib/dart
 ENV PATH=/usr/lib/dart/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 13 Jun 2023 05:30:00 GMT
 WORKDIR /root
-# Tue, 13 Jun 2023 05:30:09 GMT
-RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)             DART_SHA256=fed758732d742df884d39770756eb9bd9fdb24665c24c96502a09e03a745fca5;             SDK_ARCH="x64";;         armhf)             DART_SHA256=36aebf7bf6d43574dc3f66872e1926e184dd2ef8641212240e57ab895403a967;             SDK_ARCH="arm";;         arm64)             DART_SHA256=d04dee8e097cdfe02f7aa2d51620104ac680291f9d3b772a7c788694e0934fc1;             SDK_ARCH="arm64";;     esac;     SDK="dartsdk-linux-${SDK_ARCH}-release.zip";     BASEURL="https://storage.googleapis.com/dart-archive/channels";     URL="$BASEURL/stable/release/3.0.4/sdk/$SDK";     echo "SDK: $URL" >> dart_setup.log ;     curl -fLO "$URL";     echo "$DART_SHA256 *$SDK"         | sha256sum --check --status --strict -;     unzip "$SDK" && mv dart-sdk "$DART_SDK" && rm "$SDK"         && chmod 755 "$DART_SDK" && chmod 755 "$DART_SDK/bin";
+# Thu, 15 Jun 2023 21:39:28 GMT
+RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)             DART_SHA256=05fba372d64932dffce90bbd45116b76806bf9adc6203967b56faf5c64b2b66c;             SDK_ARCH="x64";;         armhf)             DART_SHA256=ed151fd396522c09c41820e627eea8a72da973f7e0aeef8e8099c914b7fde2c1;             SDK_ARCH="arm";;         arm64)             DART_SHA256=667b79593444cbe222a33c137ca943dced7a21ff2d61b8862f3b49e648c20533;             SDK_ARCH="arm64";;     esac;     SDK="dartsdk-linux-${SDK_ARCH}-release.zip";     BASEURL="https://storage.googleapis.com/dart-archive/channels";     URL="$BASEURL/stable/release/3.0.5/sdk/$SDK";     echo "SDK: $URL" >> dart_setup.log ;     curl -fLO "$URL";     echo "$DART_SHA256 *$SDK"         | sha256sum --check --status --strict -;     unzip "$SDK" && mv dart-sdk "$DART_SDK" && rm "$SDK"         && chmod 755 "$DART_SDK" && chmod 755 "$DART_SDK/bin";
 ```
 
 -	Layers:
@@ -660,18 +660,232 @@ RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)         
 		Last Modified: Tue, 13 Jun 2023 05:30:36 GMT  
 		Size: 1.6 MB (1560875 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:02ee818e2587b5743fce22a8393dd333ff63a216f9a078b66556057f90f7f205`  
-		Last Modified: Tue, 13 Jun 2023 05:30:49 GMT  
-		Size: 123.8 MB (123831776 bytes)  
+	-	`sha256:eef8cd334139de8ca9860c73638d05fe9d2d0193da10ea5aab9d3024aaba98a5`  
+		Last Modified: Thu, 15 Jun 2023 21:39:58 GMT  
+		Size: 123.8 MB (123831861 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `dart:3.0.5`
 
-**does not exist** (yet?)
+```console
+$ docker pull dart@sha256:7531e272c1a1d2ef0419a0e991eaf3e66f19d98ea10fa302b5358b84ae678dcf
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 2
+	-	linux; arm variant v7
+	-	linux; arm64 variant v8
+
+### `dart:3.0.5` - linux; arm variant v7
+
+```console
+$ docker pull dart@sha256:95168117ee7e207c2d9b4255609699a2ffc982ebd7813bf950734a8e3282dc1b
+```
+
+-	Docker Version: 20.10.23
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **191.3 MB (191284400 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:7ddc25da3e7c1899be3fb8fed4c8a21787681cdbd8964041d9d93b9a1cd8e55a`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Mon, 12 Jun 2023 23:58:47 GMT
+ADD file:319a24b7e30fc548f9dcf48ad6cee469e8bf7e89c67901cf3851e41e75693489 in / 
+# Mon, 12 Jun 2023 23:58:47 GMT
+CMD ["bash"]
+# Tue, 13 Jun 2023 17:14:42 GMT
+RUN set -eux;     apt-get update;     apt-get install -y --no-install-recommends         ca-certificates         curl         dnsutils         git         openssh-client         unzip     ;     rm -rf /var/lib/apt/lists/*
+# Tue, 13 Jun 2023 17:14:43 GMT
+RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)             TRIPLET="x86_64-linux-gnu" ;             FILES="/lib64/ld-linux-x86-64.so.2" ;;         armhf)             TRIPLET="arm-linux-gnueabihf" ;             FILES="/lib/ld-linux-armhf.so.3                 /lib/arm-linux-gnueabihf/ld-linux-armhf.so.3";;         arm64)             TRIPLET="aarch64-linux-gnu" ;             FILES="/lib/ld-linux-aarch64.so.1                 /lib/aarch64-linux-gnu/ld-linux-aarch64.so.1" ;;         *)             echo "Unsupported architecture" ;             exit 5;;     esac;     FILES="$FILES         /etc/nsswitch.conf         /etc/ssl/certs         /usr/share/ca-certificates         /lib/$TRIPLET/libc.so.6         /lib/$TRIPLET/libdl.so.2         /lib/$TRIPLET/libm.so.6         /lib/$TRIPLET/libnss_dns.so.2         /lib/$TRIPLET/libpthread.so.0         /lib/$TRIPLET/libresolv.so.2         /lib/$TRIPLET/librt.so.1";     for f in $FILES; do         dir=$(dirname "$f");         mkdir -p "/runtime$dir";         cp --archive --link --dereference --no-target-directory "$f" "/runtime$f";     done
+# Tue, 13 Jun 2023 17:14:43 GMT
+ENV DART_SDK=/usr/lib/dart
+# Tue, 13 Jun 2023 17:14:43 GMT
+ENV PATH=/usr/lib/dart/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 13 Jun 2023 17:14:43 GMT
+WORKDIR /root
+# Thu, 15 Jun 2023 21:57:30 GMT
+RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)             DART_SHA256=05fba372d64932dffce90bbd45116b76806bf9adc6203967b56faf5c64b2b66c;             SDK_ARCH="x64";;         armhf)             DART_SHA256=ed151fd396522c09c41820e627eea8a72da973f7e0aeef8e8099c914b7fde2c1;             SDK_ARCH="arm";;         arm64)             DART_SHA256=667b79593444cbe222a33c137ca943dced7a21ff2d61b8862f3b49e648c20533;             SDK_ARCH="arm64";;     esac;     SDK="dartsdk-linux-${SDK_ARCH}-release.zip";     BASEURL="https://storage.googleapis.com/dart-archive/channels";     URL="$BASEURL/stable/release/3.0.5/sdk/$SDK";     echo "SDK: $URL" >> dart_setup.log ;     curl -fLO "$URL";     echo "$DART_SHA256 *$SDK"         | sha256sum --check --status --strict -;     unzip "$SDK" && mv dart-sdk "$DART_SDK" && rm "$SDK"         && chmod 755 "$DART_SDK" && chmod 755 "$DART_SDK/bin";
+```
+
+-	Layers:
+	-	`sha256:b7c295cb849275e211d18b720d2349cc84c0038be1a362aca4765ceb3342043c`  
+		Last Modified: Tue, 13 Jun 2023 00:04:24 GMT  
+		Size: 26.6 MB (26578690 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9ede1c8042537f06a8eb323db8c1c90f46560fa30481410c52f734b072861f8c`  
+		Last Modified: Tue, 13 Jun 2023 17:15:30 GMT  
+		Size: 41.0 MB (40988238 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7208d562f337083bb0b59f8cd502b83dc4c3f2ce5f5ea7355c6b72c28c6c43c7`  
+		Last Modified: Tue, 13 Jun 2023 17:15:24 GMT  
+		Size: 1.3 MB (1287728 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:32371b2b503273c06ffddfadf8dbf2ed342e7245cd374f7fa921ad477156bf10`  
+		Last Modified: Thu, 15 Jun 2023 21:58:05 GMT  
+		Size: 122.4 MB (122429744 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `dart:3.0.5` - linux; arm64 variant v8
+
+```console
+$ docker pull dart@sha256:69f90d6d578636a82a6ec5522baed64a0a37706c5c3e7ec878eceec2e2327f9a
+```
+
+-	Docker Version: 20.10.23
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **200.5 MB (200466804 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:049e1d371a19d37c241310726d5d11e0dbdf6467d5591b65b40cf3698a8b2620`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Mon, 12 Jun 2023 23:40:33 GMT
+ADD file:10af42ddb9f028c5418d370fe2b841aa61e81f37de1ffe76900a783ba3926646 in / 
+# Mon, 12 Jun 2023 23:40:33 GMT
+CMD ["bash"]
+# Tue, 13 Jun 2023 05:29:59 GMT
+RUN set -eux;     apt-get update;     apt-get install -y --no-install-recommends         ca-certificates         curl         dnsutils         git         openssh-client         unzip     ;     rm -rf /var/lib/apt/lists/*
+# Tue, 13 Jun 2023 05:30:00 GMT
+RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)             TRIPLET="x86_64-linux-gnu" ;             FILES="/lib64/ld-linux-x86-64.so.2" ;;         armhf)             TRIPLET="arm-linux-gnueabihf" ;             FILES="/lib/ld-linux-armhf.so.3                 /lib/arm-linux-gnueabihf/ld-linux-armhf.so.3";;         arm64)             TRIPLET="aarch64-linux-gnu" ;             FILES="/lib/ld-linux-aarch64.so.1                 /lib/aarch64-linux-gnu/ld-linux-aarch64.so.1" ;;         *)             echo "Unsupported architecture" ;             exit 5;;     esac;     FILES="$FILES         /etc/nsswitch.conf         /etc/ssl/certs         /usr/share/ca-certificates         /lib/$TRIPLET/libc.so.6         /lib/$TRIPLET/libdl.so.2         /lib/$TRIPLET/libm.so.6         /lib/$TRIPLET/libnss_dns.so.2         /lib/$TRIPLET/libpthread.so.0         /lib/$TRIPLET/libresolv.so.2         /lib/$TRIPLET/librt.so.1";     for f in $FILES; do         dir=$(dirname "$f");         mkdir -p "/runtime$dir";         cp --archive --link --dereference --no-target-directory "$f" "/runtime$f";     done
+# Tue, 13 Jun 2023 05:30:00 GMT
+ENV DART_SDK=/usr/lib/dart
+# Tue, 13 Jun 2023 05:30:00 GMT
+ENV PATH=/usr/lib/dart/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 13 Jun 2023 05:30:00 GMT
+WORKDIR /root
+# Thu, 15 Jun 2023 21:39:28 GMT
+RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)             DART_SHA256=05fba372d64932dffce90bbd45116b76806bf9adc6203967b56faf5c64b2b66c;             SDK_ARCH="x64";;         armhf)             DART_SHA256=ed151fd396522c09c41820e627eea8a72da973f7e0aeef8e8099c914b7fde2c1;             SDK_ARCH="arm";;         arm64)             DART_SHA256=667b79593444cbe222a33c137ca943dced7a21ff2d61b8862f3b49e648c20533;             SDK_ARCH="arm64";;     esac;     SDK="dartsdk-linux-${SDK_ARCH}-release.zip";     BASEURL="https://storage.googleapis.com/dart-archive/channels";     URL="$BASEURL/stable/release/3.0.5/sdk/$SDK";     echo "SDK: $URL" >> dart_setup.log ;     curl -fLO "$URL";     echo "$DART_SHA256 *$SDK"         | sha256sum --check --status --strict -;     unzip "$SDK" && mv dart-sdk "$DART_SDK" && rm "$SDK"         && chmod 755 "$DART_SDK" && chmod 755 "$DART_SDK/bin";
+```
+
+-	Layers:
+	-	`sha256:92ad4775570054c645678402c8b75eb489b8e05313c9ccd7867bb591266db4d8`  
+		Last Modified: Mon, 12 Jun 2023 23:44:45 GMT  
+		Size: 30.1 MB (30062834 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:171a146bde7cf65ec5671588bf160d4ecd4717777c92efb188fe310b02d51f29`  
+		Last Modified: Tue, 13 Jun 2023 05:30:41 GMT  
+		Size: 45.0 MB (45011234 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d53e0d9b46fabee49930e4019ec81e22dc3905e29d9182a451285ed29ddba2d1`  
+		Last Modified: Tue, 13 Jun 2023 05:30:36 GMT  
+		Size: 1.6 MB (1560875 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:eef8cd334139de8ca9860c73638d05fe9d2d0193da10ea5aab9d3024aaba98a5`  
+		Last Modified: Thu, 15 Jun 2023 21:39:58 GMT  
+		Size: 123.8 MB (123831861 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `dart:3.0.5-sdk`
 
-**does not exist** (yet?)
+```console
+$ docker pull dart@sha256:7531e272c1a1d2ef0419a0e991eaf3e66f19d98ea10fa302b5358b84ae678dcf
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 2
+	-	linux; arm variant v7
+	-	linux; arm64 variant v8
+
+### `dart:3.0.5-sdk` - linux; arm variant v7
+
+```console
+$ docker pull dart@sha256:95168117ee7e207c2d9b4255609699a2ffc982ebd7813bf950734a8e3282dc1b
+```
+
+-	Docker Version: 20.10.23
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **191.3 MB (191284400 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:7ddc25da3e7c1899be3fb8fed4c8a21787681cdbd8964041d9d93b9a1cd8e55a`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Mon, 12 Jun 2023 23:58:47 GMT
+ADD file:319a24b7e30fc548f9dcf48ad6cee469e8bf7e89c67901cf3851e41e75693489 in / 
+# Mon, 12 Jun 2023 23:58:47 GMT
+CMD ["bash"]
+# Tue, 13 Jun 2023 17:14:42 GMT
+RUN set -eux;     apt-get update;     apt-get install -y --no-install-recommends         ca-certificates         curl         dnsutils         git         openssh-client         unzip     ;     rm -rf /var/lib/apt/lists/*
+# Tue, 13 Jun 2023 17:14:43 GMT
+RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)             TRIPLET="x86_64-linux-gnu" ;             FILES="/lib64/ld-linux-x86-64.so.2" ;;         armhf)             TRIPLET="arm-linux-gnueabihf" ;             FILES="/lib/ld-linux-armhf.so.3                 /lib/arm-linux-gnueabihf/ld-linux-armhf.so.3";;         arm64)             TRIPLET="aarch64-linux-gnu" ;             FILES="/lib/ld-linux-aarch64.so.1                 /lib/aarch64-linux-gnu/ld-linux-aarch64.so.1" ;;         *)             echo "Unsupported architecture" ;             exit 5;;     esac;     FILES="$FILES         /etc/nsswitch.conf         /etc/ssl/certs         /usr/share/ca-certificates         /lib/$TRIPLET/libc.so.6         /lib/$TRIPLET/libdl.so.2         /lib/$TRIPLET/libm.so.6         /lib/$TRIPLET/libnss_dns.so.2         /lib/$TRIPLET/libpthread.so.0         /lib/$TRIPLET/libresolv.so.2         /lib/$TRIPLET/librt.so.1";     for f in $FILES; do         dir=$(dirname "$f");         mkdir -p "/runtime$dir";         cp --archive --link --dereference --no-target-directory "$f" "/runtime$f";     done
+# Tue, 13 Jun 2023 17:14:43 GMT
+ENV DART_SDK=/usr/lib/dart
+# Tue, 13 Jun 2023 17:14:43 GMT
+ENV PATH=/usr/lib/dart/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 13 Jun 2023 17:14:43 GMT
+WORKDIR /root
+# Thu, 15 Jun 2023 21:57:30 GMT
+RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)             DART_SHA256=05fba372d64932dffce90bbd45116b76806bf9adc6203967b56faf5c64b2b66c;             SDK_ARCH="x64";;         armhf)             DART_SHA256=ed151fd396522c09c41820e627eea8a72da973f7e0aeef8e8099c914b7fde2c1;             SDK_ARCH="arm";;         arm64)             DART_SHA256=667b79593444cbe222a33c137ca943dced7a21ff2d61b8862f3b49e648c20533;             SDK_ARCH="arm64";;     esac;     SDK="dartsdk-linux-${SDK_ARCH}-release.zip";     BASEURL="https://storage.googleapis.com/dart-archive/channels";     URL="$BASEURL/stable/release/3.0.5/sdk/$SDK";     echo "SDK: $URL" >> dart_setup.log ;     curl -fLO "$URL";     echo "$DART_SHA256 *$SDK"         | sha256sum --check --status --strict -;     unzip "$SDK" && mv dart-sdk "$DART_SDK" && rm "$SDK"         && chmod 755 "$DART_SDK" && chmod 755 "$DART_SDK/bin";
+```
+
+-	Layers:
+	-	`sha256:b7c295cb849275e211d18b720d2349cc84c0038be1a362aca4765ceb3342043c`  
+		Last Modified: Tue, 13 Jun 2023 00:04:24 GMT  
+		Size: 26.6 MB (26578690 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9ede1c8042537f06a8eb323db8c1c90f46560fa30481410c52f734b072861f8c`  
+		Last Modified: Tue, 13 Jun 2023 17:15:30 GMT  
+		Size: 41.0 MB (40988238 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7208d562f337083bb0b59f8cd502b83dc4c3f2ce5f5ea7355c6b72c28c6c43c7`  
+		Last Modified: Tue, 13 Jun 2023 17:15:24 GMT  
+		Size: 1.3 MB (1287728 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:32371b2b503273c06ffddfadf8dbf2ed342e7245cd374f7fa921ad477156bf10`  
+		Last Modified: Thu, 15 Jun 2023 21:58:05 GMT  
+		Size: 122.4 MB (122429744 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `dart:3.0.5-sdk` - linux; arm64 variant v8
+
+```console
+$ docker pull dart@sha256:69f90d6d578636a82a6ec5522baed64a0a37706c5c3e7ec878eceec2e2327f9a
+```
+
+-	Docker Version: 20.10.23
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **200.5 MB (200466804 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:049e1d371a19d37c241310726d5d11e0dbdf6467d5591b65b40cf3698a8b2620`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Mon, 12 Jun 2023 23:40:33 GMT
+ADD file:10af42ddb9f028c5418d370fe2b841aa61e81f37de1ffe76900a783ba3926646 in / 
+# Mon, 12 Jun 2023 23:40:33 GMT
+CMD ["bash"]
+# Tue, 13 Jun 2023 05:29:59 GMT
+RUN set -eux;     apt-get update;     apt-get install -y --no-install-recommends         ca-certificates         curl         dnsutils         git         openssh-client         unzip     ;     rm -rf /var/lib/apt/lists/*
+# Tue, 13 Jun 2023 05:30:00 GMT
+RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)             TRIPLET="x86_64-linux-gnu" ;             FILES="/lib64/ld-linux-x86-64.so.2" ;;         armhf)             TRIPLET="arm-linux-gnueabihf" ;             FILES="/lib/ld-linux-armhf.so.3                 /lib/arm-linux-gnueabihf/ld-linux-armhf.so.3";;         arm64)             TRIPLET="aarch64-linux-gnu" ;             FILES="/lib/ld-linux-aarch64.so.1                 /lib/aarch64-linux-gnu/ld-linux-aarch64.so.1" ;;         *)             echo "Unsupported architecture" ;             exit 5;;     esac;     FILES="$FILES         /etc/nsswitch.conf         /etc/ssl/certs         /usr/share/ca-certificates         /lib/$TRIPLET/libc.so.6         /lib/$TRIPLET/libdl.so.2         /lib/$TRIPLET/libm.so.6         /lib/$TRIPLET/libnss_dns.so.2         /lib/$TRIPLET/libpthread.so.0         /lib/$TRIPLET/libresolv.so.2         /lib/$TRIPLET/librt.so.1";     for f in $FILES; do         dir=$(dirname "$f");         mkdir -p "/runtime$dir";         cp --archive --link --dereference --no-target-directory "$f" "/runtime$f";     done
+# Tue, 13 Jun 2023 05:30:00 GMT
+ENV DART_SDK=/usr/lib/dart
+# Tue, 13 Jun 2023 05:30:00 GMT
+ENV PATH=/usr/lib/dart/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 13 Jun 2023 05:30:00 GMT
+WORKDIR /root
+# Thu, 15 Jun 2023 21:39:28 GMT
+RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)             DART_SHA256=05fba372d64932dffce90bbd45116b76806bf9adc6203967b56faf5c64b2b66c;             SDK_ARCH="x64";;         armhf)             DART_SHA256=ed151fd396522c09c41820e627eea8a72da973f7e0aeef8e8099c914b7fde2c1;             SDK_ARCH="arm";;         arm64)             DART_SHA256=667b79593444cbe222a33c137ca943dced7a21ff2d61b8862f3b49e648c20533;             SDK_ARCH="arm64";;     esac;     SDK="dartsdk-linux-${SDK_ARCH}-release.zip";     BASEURL="https://storage.googleapis.com/dart-archive/channels";     URL="$BASEURL/stable/release/3.0.5/sdk/$SDK";     echo "SDK: $URL" >> dart_setup.log ;     curl -fLO "$URL";     echo "$DART_SHA256 *$SDK"         | sha256sum --check --status --strict -;     unzip "$SDK" && mv dart-sdk "$DART_SDK" && rm "$SDK"         && chmod 755 "$DART_SDK" && chmod 755 "$DART_SDK/bin";
+```
+
+-	Layers:
+	-	`sha256:92ad4775570054c645678402c8b75eb489b8e05313c9ccd7867bb591266db4d8`  
+		Last Modified: Mon, 12 Jun 2023 23:44:45 GMT  
+		Size: 30.1 MB (30062834 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:171a146bde7cf65ec5671588bf160d4ecd4717777c92efb188fe310b02d51f29`  
+		Last Modified: Tue, 13 Jun 2023 05:30:41 GMT  
+		Size: 45.0 MB (45011234 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d53e0d9b46fabee49930e4019ec81e22dc3905e29d9182a451285ed29ddba2d1`  
+		Last Modified: Tue, 13 Jun 2023 05:30:36 GMT  
+		Size: 1.6 MB (1560875 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:eef8cd334139de8ca9860c73638d05fe9d2d0193da10ea5aab9d3024aaba98a5`  
+		Last Modified: Thu, 15 Jun 2023 21:39:58 GMT  
+		Size: 123.8 MB (123831861 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `dart:3.1.0-163.1.beta`
 
@@ -1324,7 +1538,7 @@ RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)         
 ## `dart:latest`
 
 ```console
-$ docker pull dart@sha256:bdd787ebc1650c908a461faf692a3df7a9ffa7a77b34a38918bb2c6fc8ed6cf6
+$ docker pull dart@sha256:4d193f4ba30111ff870009a5ad82436d39c28bd1490097b5724384645e1159ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1386,14 +1600,14 @@ RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)         
 ### `dart:latest` - linux; arm variant v7
 
 ```console
-$ docker pull dart@sha256:47b127487a9e148090855a526357d18d487c04add18971bef89fde96ccf04caa
+$ docker pull dart@sha256:95168117ee7e207c2d9b4255609699a2ffc982ebd7813bf950734a8e3282dc1b
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **191.3 MB (191284715 bytes)**  
+-	Total Size: **191.3 MB (191284400 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fa0214de35cb3e9b415f47d7a37be5ed8e0fe0c54ca0324199e67c7d739095c6`
+-	Image ID: `sha256:7ddc25da3e7c1899be3fb8fed4c8a21787681cdbd8964041d9d93b9a1cd8e55a`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -1411,8 +1625,8 @@ ENV DART_SDK=/usr/lib/dart
 ENV PATH=/usr/lib/dart/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 13 Jun 2023 17:14:43 GMT
 WORKDIR /root
-# Tue, 13 Jun 2023 17:14:55 GMT
-RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)             DART_SHA256=fed758732d742df884d39770756eb9bd9fdb24665c24c96502a09e03a745fca5;             SDK_ARCH="x64";;         armhf)             DART_SHA256=36aebf7bf6d43574dc3f66872e1926e184dd2ef8641212240e57ab895403a967;             SDK_ARCH="arm";;         arm64)             DART_SHA256=d04dee8e097cdfe02f7aa2d51620104ac680291f9d3b772a7c788694e0934fc1;             SDK_ARCH="arm64";;     esac;     SDK="dartsdk-linux-${SDK_ARCH}-release.zip";     BASEURL="https://storage.googleapis.com/dart-archive/channels";     URL="$BASEURL/stable/release/3.0.4/sdk/$SDK";     echo "SDK: $URL" >> dart_setup.log ;     curl -fLO "$URL";     echo "$DART_SHA256 *$SDK"         | sha256sum --check --status --strict -;     unzip "$SDK" && mv dart-sdk "$DART_SDK" && rm "$SDK"         && chmod 755 "$DART_SDK" && chmod 755 "$DART_SDK/bin";
+# Thu, 15 Jun 2023 21:57:30 GMT
+RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)             DART_SHA256=05fba372d64932dffce90bbd45116b76806bf9adc6203967b56faf5c64b2b66c;             SDK_ARCH="x64";;         armhf)             DART_SHA256=ed151fd396522c09c41820e627eea8a72da973f7e0aeef8e8099c914b7fde2c1;             SDK_ARCH="arm";;         arm64)             DART_SHA256=667b79593444cbe222a33c137ca943dced7a21ff2d61b8862f3b49e648c20533;             SDK_ARCH="arm64";;     esac;     SDK="dartsdk-linux-${SDK_ARCH}-release.zip";     BASEURL="https://storage.googleapis.com/dart-archive/channels";     URL="$BASEURL/stable/release/3.0.5/sdk/$SDK";     echo "SDK: $URL" >> dart_setup.log ;     curl -fLO "$URL";     echo "$DART_SHA256 *$SDK"         | sha256sum --check --status --strict -;     unzip "$SDK" && mv dart-sdk "$DART_SDK" && rm "$SDK"         && chmod 755 "$DART_SDK" && chmod 755 "$DART_SDK/bin";
 ```
 
 -	Layers:
@@ -1428,22 +1642,22 @@ RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)         
 		Last Modified: Tue, 13 Jun 2023 17:15:24 GMT  
 		Size: 1.3 MB (1287728 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3b942aa285cdd6c4625c42f49c140220c3120db2e023dd4c3a28dc115d6496e`  
-		Last Modified: Tue, 13 Jun 2023 17:15:43 GMT  
-		Size: 122.4 MB (122430059 bytes)  
+	-	`sha256:32371b2b503273c06ffddfadf8dbf2ed342e7245cd374f7fa921ad477156bf10`  
+		Last Modified: Thu, 15 Jun 2023 21:58:05 GMT  
+		Size: 122.4 MB (122429744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `dart:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull dart@sha256:60cbdf783a0a374071c9ce1dee419fa972d9aa28a08e6560152946243431ad78
+$ docker pull dart@sha256:69f90d6d578636a82a6ec5522baed64a0a37706c5c3e7ec878eceec2e2327f9a
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **200.5 MB (200466719 bytes)**  
+-	Total Size: **200.5 MB (200466804 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:52c84ac79afa83a0586669dd01a0256ee0bb40a7d08b1603fc55e3c1a9bd77f5`
+-	Image ID: `sha256:049e1d371a19d37c241310726d5d11e0dbdf6467d5591b65b40cf3698a8b2620`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -1461,8 +1675,8 @@ ENV DART_SDK=/usr/lib/dart
 ENV PATH=/usr/lib/dart/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 13 Jun 2023 05:30:00 GMT
 WORKDIR /root
-# Tue, 13 Jun 2023 05:30:09 GMT
-RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)             DART_SHA256=fed758732d742df884d39770756eb9bd9fdb24665c24c96502a09e03a745fca5;             SDK_ARCH="x64";;         armhf)             DART_SHA256=36aebf7bf6d43574dc3f66872e1926e184dd2ef8641212240e57ab895403a967;             SDK_ARCH="arm";;         arm64)             DART_SHA256=d04dee8e097cdfe02f7aa2d51620104ac680291f9d3b772a7c788694e0934fc1;             SDK_ARCH="arm64";;     esac;     SDK="dartsdk-linux-${SDK_ARCH}-release.zip";     BASEURL="https://storage.googleapis.com/dart-archive/channels";     URL="$BASEURL/stable/release/3.0.4/sdk/$SDK";     echo "SDK: $URL" >> dart_setup.log ;     curl -fLO "$URL";     echo "$DART_SHA256 *$SDK"         | sha256sum --check --status --strict -;     unzip "$SDK" && mv dart-sdk "$DART_SDK" && rm "$SDK"         && chmod 755 "$DART_SDK" && chmod 755 "$DART_SDK/bin";
+# Thu, 15 Jun 2023 21:39:28 GMT
+RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)             DART_SHA256=05fba372d64932dffce90bbd45116b76806bf9adc6203967b56faf5c64b2b66c;             SDK_ARCH="x64";;         armhf)             DART_SHA256=ed151fd396522c09c41820e627eea8a72da973f7e0aeef8e8099c914b7fde2c1;             SDK_ARCH="arm";;         arm64)             DART_SHA256=667b79593444cbe222a33c137ca943dced7a21ff2d61b8862f3b49e648c20533;             SDK_ARCH="arm64";;     esac;     SDK="dartsdk-linux-${SDK_ARCH}-release.zip";     BASEURL="https://storage.googleapis.com/dart-archive/channels";     URL="$BASEURL/stable/release/3.0.5/sdk/$SDK";     echo "SDK: $URL" >> dart_setup.log ;     curl -fLO "$URL";     echo "$DART_SHA256 *$SDK"         | sha256sum --check --status --strict -;     unzip "$SDK" && mv dart-sdk "$DART_SDK" && rm "$SDK"         && chmod 755 "$DART_SDK" && chmod 755 "$DART_SDK/bin";
 ```
 
 -	Layers:
@@ -1478,15 +1692,15 @@ RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)         
 		Last Modified: Tue, 13 Jun 2023 05:30:36 GMT  
 		Size: 1.6 MB (1560875 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:02ee818e2587b5743fce22a8393dd333ff63a216f9a078b66556057f90f7f205`  
-		Last Modified: Tue, 13 Jun 2023 05:30:49 GMT  
-		Size: 123.8 MB (123831776 bytes)  
+	-	`sha256:eef8cd334139de8ca9860c73638d05fe9d2d0193da10ea5aab9d3024aaba98a5`  
+		Last Modified: Thu, 15 Jun 2023 21:39:58 GMT  
+		Size: 123.8 MB (123831861 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `dart:sdk`
 
 ```console
-$ docker pull dart@sha256:bdd787ebc1650c908a461faf692a3df7a9ffa7a77b34a38918bb2c6fc8ed6cf6
+$ docker pull dart@sha256:4d193f4ba30111ff870009a5ad82436d39c28bd1490097b5724384645e1159ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1548,14 +1762,14 @@ RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)         
 ### `dart:sdk` - linux; arm variant v7
 
 ```console
-$ docker pull dart@sha256:47b127487a9e148090855a526357d18d487c04add18971bef89fde96ccf04caa
+$ docker pull dart@sha256:95168117ee7e207c2d9b4255609699a2ffc982ebd7813bf950734a8e3282dc1b
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **191.3 MB (191284715 bytes)**  
+-	Total Size: **191.3 MB (191284400 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fa0214de35cb3e9b415f47d7a37be5ed8e0fe0c54ca0324199e67c7d739095c6`
+-	Image ID: `sha256:7ddc25da3e7c1899be3fb8fed4c8a21787681cdbd8964041d9d93b9a1cd8e55a`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -1573,8 +1787,8 @@ ENV DART_SDK=/usr/lib/dart
 ENV PATH=/usr/lib/dart/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 13 Jun 2023 17:14:43 GMT
 WORKDIR /root
-# Tue, 13 Jun 2023 17:14:55 GMT
-RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)             DART_SHA256=fed758732d742df884d39770756eb9bd9fdb24665c24c96502a09e03a745fca5;             SDK_ARCH="x64";;         armhf)             DART_SHA256=36aebf7bf6d43574dc3f66872e1926e184dd2ef8641212240e57ab895403a967;             SDK_ARCH="arm";;         arm64)             DART_SHA256=d04dee8e097cdfe02f7aa2d51620104ac680291f9d3b772a7c788694e0934fc1;             SDK_ARCH="arm64";;     esac;     SDK="dartsdk-linux-${SDK_ARCH}-release.zip";     BASEURL="https://storage.googleapis.com/dart-archive/channels";     URL="$BASEURL/stable/release/3.0.4/sdk/$SDK";     echo "SDK: $URL" >> dart_setup.log ;     curl -fLO "$URL";     echo "$DART_SHA256 *$SDK"         | sha256sum --check --status --strict -;     unzip "$SDK" && mv dart-sdk "$DART_SDK" && rm "$SDK"         && chmod 755 "$DART_SDK" && chmod 755 "$DART_SDK/bin";
+# Thu, 15 Jun 2023 21:57:30 GMT
+RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)             DART_SHA256=05fba372d64932dffce90bbd45116b76806bf9adc6203967b56faf5c64b2b66c;             SDK_ARCH="x64";;         armhf)             DART_SHA256=ed151fd396522c09c41820e627eea8a72da973f7e0aeef8e8099c914b7fde2c1;             SDK_ARCH="arm";;         arm64)             DART_SHA256=667b79593444cbe222a33c137ca943dced7a21ff2d61b8862f3b49e648c20533;             SDK_ARCH="arm64";;     esac;     SDK="dartsdk-linux-${SDK_ARCH}-release.zip";     BASEURL="https://storage.googleapis.com/dart-archive/channels";     URL="$BASEURL/stable/release/3.0.5/sdk/$SDK";     echo "SDK: $URL" >> dart_setup.log ;     curl -fLO "$URL";     echo "$DART_SHA256 *$SDK"         | sha256sum --check --status --strict -;     unzip "$SDK" && mv dart-sdk "$DART_SDK" && rm "$SDK"         && chmod 755 "$DART_SDK" && chmod 755 "$DART_SDK/bin";
 ```
 
 -	Layers:
@@ -1590,22 +1804,22 @@ RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)         
 		Last Modified: Tue, 13 Jun 2023 17:15:24 GMT  
 		Size: 1.3 MB (1287728 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3b942aa285cdd6c4625c42f49c140220c3120db2e023dd4c3a28dc115d6496e`  
-		Last Modified: Tue, 13 Jun 2023 17:15:43 GMT  
-		Size: 122.4 MB (122430059 bytes)  
+	-	`sha256:32371b2b503273c06ffddfadf8dbf2ed342e7245cd374f7fa921ad477156bf10`  
+		Last Modified: Thu, 15 Jun 2023 21:58:05 GMT  
+		Size: 122.4 MB (122429744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `dart:sdk` - linux; arm64 variant v8
 
 ```console
-$ docker pull dart@sha256:60cbdf783a0a374071c9ce1dee419fa972d9aa28a08e6560152946243431ad78
+$ docker pull dart@sha256:69f90d6d578636a82a6ec5522baed64a0a37706c5c3e7ec878eceec2e2327f9a
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **200.5 MB (200466719 bytes)**  
+-	Total Size: **200.5 MB (200466804 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:52c84ac79afa83a0586669dd01a0256ee0bb40a7d08b1603fc55e3c1a9bd77f5`
+-	Image ID: `sha256:049e1d371a19d37c241310726d5d11e0dbdf6467d5591b65b40cf3698a8b2620`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -1623,8 +1837,8 @@ ENV DART_SDK=/usr/lib/dart
 ENV PATH=/usr/lib/dart/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 13 Jun 2023 05:30:00 GMT
 WORKDIR /root
-# Tue, 13 Jun 2023 05:30:09 GMT
-RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)             DART_SHA256=fed758732d742df884d39770756eb9bd9fdb24665c24c96502a09e03a745fca5;             SDK_ARCH="x64";;         armhf)             DART_SHA256=36aebf7bf6d43574dc3f66872e1926e184dd2ef8641212240e57ab895403a967;             SDK_ARCH="arm";;         arm64)             DART_SHA256=d04dee8e097cdfe02f7aa2d51620104ac680291f9d3b772a7c788694e0934fc1;             SDK_ARCH="arm64";;     esac;     SDK="dartsdk-linux-${SDK_ARCH}-release.zip";     BASEURL="https://storage.googleapis.com/dart-archive/channels";     URL="$BASEURL/stable/release/3.0.4/sdk/$SDK";     echo "SDK: $URL" >> dart_setup.log ;     curl -fLO "$URL";     echo "$DART_SHA256 *$SDK"         | sha256sum --check --status --strict -;     unzip "$SDK" && mv dart-sdk "$DART_SDK" && rm "$SDK"         && chmod 755 "$DART_SDK" && chmod 755 "$DART_SDK/bin";
+# Thu, 15 Jun 2023 21:39:28 GMT
+RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)             DART_SHA256=05fba372d64932dffce90bbd45116b76806bf9adc6203967b56faf5c64b2b66c;             SDK_ARCH="x64";;         armhf)             DART_SHA256=ed151fd396522c09c41820e627eea8a72da973f7e0aeef8e8099c914b7fde2c1;             SDK_ARCH="arm";;         arm64)             DART_SHA256=667b79593444cbe222a33c137ca943dced7a21ff2d61b8862f3b49e648c20533;             SDK_ARCH="arm64";;     esac;     SDK="dartsdk-linux-${SDK_ARCH}-release.zip";     BASEURL="https://storage.googleapis.com/dart-archive/channels";     URL="$BASEURL/stable/release/3.0.5/sdk/$SDK";     echo "SDK: $URL" >> dart_setup.log ;     curl -fLO "$URL";     echo "$DART_SHA256 *$SDK"         | sha256sum --check --status --strict -;     unzip "$SDK" && mv dart-sdk "$DART_SDK" && rm "$SDK"         && chmod 755 "$DART_SDK" && chmod 755 "$DART_SDK/bin";
 ```
 
 -	Layers:
@@ -1640,15 +1854,15 @@ RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)         
 		Last Modified: Tue, 13 Jun 2023 05:30:36 GMT  
 		Size: 1.6 MB (1560875 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:02ee818e2587b5743fce22a8393dd333ff63a216f9a078b66556057f90f7f205`  
-		Last Modified: Tue, 13 Jun 2023 05:30:49 GMT  
-		Size: 123.8 MB (123831776 bytes)  
+	-	`sha256:eef8cd334139de8ca9860c73638d05fe9d2d0193da10ea5aab9d3024aaba98a5`  
+		Last Modified: Thu, 15 Jun 2023 21:39:58 GMT  
+		Size: 123.8 MB (123831861 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `dart:stable`
 
 ```console
-$ docker pull dart@sha256:bdd787ebc1650c908a461faf692a3df7a9ffa7a77b34a38918bb2c6fc8ed6cf6
+$ docker pull dart@sha256:4d193f4ba30111ff870009a5ad82436d39c28bd1490097b5724384645e1159ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1710,14 +1924,14 @@ RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)         
 ### `dart:stable` - linux; arm variant v7
 
 ```console
-$ docker pull dart@sha256:47b127487a9e148090855a526357d18d487c04add18971bef89fde96ccf04caa
+$ docker pull dart@sha256:95168117ee7e207c2d9b4255609699a2ffc982ebd7813bf950734a8e3282dc1b
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **191.3 MB (191284715 bytes)**  
+-	Total Size: **191.3 MB (191284400 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fa0214de35cb3e9b415f47d7a37be5ed8e0fe0c54ca0324199e67c7d739095c6`
+-	Image ID: `sha256:7ddc25da3e7c1899be3fb8fed4c8a21787681cdbd8964041d9d93b9a1cd8e55a`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -1735,8 +1949,8 @@ ENV DART_SDK=/usr/lib/dart
 ENV PATH=/usr/lib/dart/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 13 Jun 2023 17:14:43 GMT
 WORKDIR /root
-# Tue, 13 Jun 2023 17:14:55 GMT
-RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)             DART_SHA256=fed758732d742df884d39770756eb9bd9fdb24665c24c96502a09e03a745fca5;             SDK_ARCH="x64";;         armhf)             DART_SHA256=36aebf7bf6d43574dc3f66872e1926e184dd2ef8641212240e57ab895403a967;             SDK_ARCH="arm";;         arm64)             DART_SHA256=d04dee8e097cdfe02f7aa2d51620104ac680291f9d3b772a7c788694e0934fc1;             SDK_ARCH="arm64";;     esac;     SDK="dartsdk-linux-${SDK_ARCH}-release.zip";     BASEURL="https://storage.googleapis.com/dart-archive/channels";     URL="$BASEURL/stable/release/3.0.4/sdk/$SDK";     echo "SDK: $URL" >> dart_setup.log ;     curl -fLO "$URL";     echo "$DART_SHA256 *$SDK"         | sha256sum --check --status --strict -;     unzip "$SDK" && mv dart-sdk "$DART_SDK" && rm "$SDK"         && chmod 755 "$DART_SDK" && chmod 755 "$DART_SDK/bin";
+# Thu, 15 Jun 2023 21:57:30 GMT
+RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)             DART_SHA256=05fba372d64932dffce90bbd45116b76806bf9adc6203967b56faf5c64b2b66c;             SDK_ARCH="x64";;         armhf)             DART_SHA256=ed151fd396522c09c41820e627eea8a72da973f7e0aeef8e8099c914b7fde2c1;             SDK_ARCH="arm";;         arm64)             DART_SHA256=667b79593444cbe222a33c137ca943dced7a21ff2d61b8862f3b49e648c20533;             SDK_ARCH="arm64";;     esac;     SDK="dartsdk-linux-${SDK_ARCH}-release.zip";     BASEURL="https://storage.googleapis.com/dart-archive/channels";     URL="$BASEURL/stable/release/3.0.5/sdk/$SDK";     echo "SDK: $URL" >> dart_setup.log ;     curl -fLO "$URL";     echo "$DART_SHA256 *$SDK"         | sha256sum --check --status --strict -;     unzip "$SDK" && mv dart-sdk "$DART_SDK" && rm "$SDK"         && chmod 755 "$DART_SDK" && chmod 755 "$DART_SDK/bin";
 ```
 
 -	Layers:
@@ -1752,22 +1966,22 @@ RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)         
 		Last Modified: Tue, 13 Jun 2023 17:15:24 GMT  
 		Size: 1.3 MB (1287728 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3b942aa285cdd6c4625c42f49c140220c3120db2e023dd4c3a28dc115d6496e`  
-		Last Modified: Tue, 13 Jun 2023 17:15:43 GMT  
-		Size: 122.4 MB (122430059 bytes)  
+	-	`sha256:32371b2b503273c06ffddfadf8dbf2ed342e7245cd374f7fa921ad477156bf10`  
+		Last Modified: Thu, 15 Jun 2023 21:58:05 GMT  
+		Size: 122.4 MB (122429744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `dart:stable` - linux; arm64 variant v8
 
 ```console
-$ docker pull dart@sha256:60cbdf783a0a374071c9ce1dee419fa972d9aa28a08e6560152946243431ad78
+$ docker pull dart@sha256:69f90d6d578636a82a6ec5522baed64a0a37706c5c3e7ec878eceec2e2327f9a
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **200.5 MB (200466719 bytes)**  
+-	Total Size: **200.5 MB (200466804 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:52c84ac79afa83a0586669dd01a0256ee0bb40a7d08b1603fc55e3c1a9bd77f5`
+-	Image ID: `sha256:049e1d371a19d37c241310726d5d11e0dbdf6467d5591b65b40cf3698a8b2620`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -1785,8 +1999,8 @@ ENV DART_SDK=/usr/lib/dart
 ENV PATH=/usr/lib/dart/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 13 Jun 2023 05:30:00 GMT
 WORKDIR /root
-# Tue, 13 Jun 2023 05:30:09 GMT
-RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)             DART_SHA256=fed758732d742df884d39770756eb9bd9fdb24665c24c96502a09e03a745fca5;             SDK_ARCH="x64";;         armhf)             DART_SHA256=36aebf7bf6d43574dc3f66872e1926e184dd2ef8641212240e57ab895403a967;             SDK_ARCH="arm";;         arm64)             DART_SHA256=d04dee8e097cdfe02f7aa2d51620104ac680291f9d3b772a7c788694e0934fc1;             SDK_ARCH="arm64";;     esac;     SDK="dartsdk-linux-${SDK_ARCH}-release.zip";     BASEURL="https://storage.googleapis.com/dart-archive/channels";     URL="$BASEURL/stable/release/3.0.4/sdk/$SDK";     echo "SDK: $URL" >> dart_setup.log ;     curl -fLO "$URL";     echo "$DART_SHA256 *$SDK"         | sha256sum --check --status --strict -;     unzip "$SDK" && mv dart-sdk "$DART_SDK" && rm "$SDK"         && chmod 755 "$DART_SDK" && chmod 755 "$DART_SDK/bin";
+# Thu, 15 Jun 2023 21:39:28 GMT
+RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)             DART_SHA256=05fba372d64932dffce90bbd45116b76806bf9adc6203967b56faf5c64b2b66c;             SDK_ARCH="x64";;         armhf)             DART_SHA256=ed151fd396522c09c41820e627eea8a72da973f7e0aeef8e8099c914b7fde2c1;             SDK_ARCH="arm";;         arm64)             DART_SHA256=667b79593444cbe222a33c137ca943dced7a21ff2d61b8862f3b49e648c20533;             SDK_ARCH="arm64";;     esac;     SDK="dartsdk-linux-${SDK_ARCH}-release.zip";     BASEURL="https://storage.googleapis.com/dart-archive/channels";     URL="$BASEURL/stable/release/3.0.5/sdk/$SDK";     echo "SDK: $URL" >> dart_setup.log ;     curl -fLO "$URL";     echo "$DART_SHA256 *$SDK"         | sha256sum --check --status --strict -;     unzip "$SDK" && mv dart-sdk "$DART_SDK" && rm "$SDK"         && chmod 755 "$DART_SDK" && chmod 755 "$DART_SDK/bin";
 ```
 
 -	Layers:
@@ -1802,15 +2016,15 @@ RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)         
 		Last Modified: Tue, 13 Jun 2023 05:30:36 GMT  
 		Size: 1.6 MB (1560875 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:02ee818e2587b5743fce22a8393dd333ff63a216f9a078b66556057f90f7f205`  
-		Last Modified: Tue, 13 Jun 2023 05:30:49 GMT  
-		Size: 123.8 MB (123831776 bytes)  
+	-	`sha256:eef8cd334139de8ca9860c73638d05fe9d2d0193da10ea5aab9d3024aaba98a5`  
+		Last Modified: Thu, 15 Jun 2023 21:39:58 GMT  
+		Size: 123.8 MB (123831861 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `dart:stable-sdk`
 
 ```console
-$ docker pull dart@sha256:bdd787ebc1650c908a461faf692a3df7a9ffa7a77b34a38918bb2c6fc8ed6cf6
+$ docker pull dart@sha256:4d193f4ba30111ff870009a5ad82436d39c28bd1490097b5724384645e1159ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1872,14 +2086,14 @@ RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)         
 ### `dart:stable-sdk` - linux; arm variant v7
 
 ```console
-$ docker pull dart@sha256:47b127487a9e148090855a526357d18d487c04add18971bef89fde96ccf04caa
+$ docker pull dart@sha256:95168117ee7e207c2d9b4255609699a2ffc982ebd7813bf950734a8e3282dc1b
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **191.3 MB (191284715 bytes)**  
+-	Total Size: **191.3 MB (191284400 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fa0214de35cb3e9b415f47d7a37be5ed8e0fe0c54ca0324199e67c7d739095c6`
+-	Image ID: `sha256:7ddc25da3e7c1899be3fb8fed4c8a21787681cdbd8964041d9d93b9a1cd8e55a`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -1897,8 +2111,8 @@ ENV DART_SDK=/usr/lib/dart
 ENV PATH=/usr/lib/dart/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 13 Jun 2023 17:14:43 GMT
 WORKDIR /root
-# Tue, 13 Jun 2023 17:14:55 GMT
-RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)             DART_SHA256=fed758732d742df884d39770756eb9bd9fdb24665c24c96502a09e03a745fca5;             SDK_ARCH="x64";;         armhf)             DART_SHA256=36aebf7bf6d43574dc3f66872e1926e184dd2ef8641212240e57ab895403a967;             SDK_ARCH="arm";;         arm64)             DART_SHA256=d04dee8e097cdfe02f7aa2d51620104ac680291f9d3b772a7c788694e0934fc1;             SDK_ARCH="arm64";;     esac;     SDK="dartsdk-linux-${SDK_ARCH}-release.zip";     BASEURL="https://storage.googleapis.com/dart-archive/channels";     URL="$BASEURL/stable/release/3.0.4/sdk/$SDK";     echo "SDK: $URL" >> dart_setup.log ;     curl -fLO "$URL";     echo "$DART_SHA256 *$SDK"         | sha256sum --check --status --strict -;     unzip "$SDK" && mv dart-sdk "$DART_SDK" && rm "$SDK"         && chmod 755 "$DART_SDK" && chmod 755 "$DART_SDK/bin";
+# Thu, 15 Jun 2023 21:57:30 GMT
+RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)             DART_SHA256=05fba372d64932dffce90bbd45116b76806bf9adc6203967b56faf5c64b2b66c;             SDK_ARCH="x64";;         armhf)             DART_SHA256=ed151fd396522c09c41820e627eea8a72da973f7e0aeef8e8099c914b7fde2c1;             SDK_ARCH="arm";;         arm64)             DART_SHA256=667b79593444cbe222a33c137ca943dced7a21ff2d61b8862f3b49e648c20533;             SDK_ARCH="arm64";;     esac;     SDK="dartsdk-linux-${SDK_ARCH}-release.zip";     BASEURL="https://storage.googleapis.com/dart-archive/channels";     URL="$BASEURL/stable/release/3.0.5/sdk/$SDK";     echo "SDK: $URL" >> dart_setup.log ;     curl -fLO "$URL";     echo "$DART_SHA256 *$SDK"         | sha256sum --check --status --strict -;     unzip "$SDK" && mv dart-sdk "$DART_SDK" && rm "$SDK"         && chmod 755 "$DART_SDK" && chmod 755 "$DART_SDK/bin";
 ```
 
 -	Layers:
@@ -1914,22 +2128,22 @@ RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)         
 		Last Modified: Tue, 13 Jun 2023 17:15:24 GMT  
 		Size: 1.3 MB (1287728 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3b942aa285cdd6c4625c42f49c140220c3120db2e023dd4c3a28dc115d6496e`  
-		Last Modified: Tue, 13 Jun 2023 17:15:43 GMT  
-		Size: 122.4 MB (122430059 bytes)  
+	-	`sha256:32371b2b503273c06ffddfadf8dbf2ed342e7245cd374f7fa921ad477156bf10`  
+		Last Modified: Thu, 15 Jun 2023 21:58:05 GMT  
+		Size: 122.4 MB (122429744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `dart:stable-sdk` - linux; arm64 variant v8
 
 ```console
-$ docker pull dart@sha256:60cbdf783a0a374071c9ce1dee419fa972d9aa28a08e6560152946243431ad78
+$ docker pull dart@sha256:69f90d6d578636a82a6ec5522baed64a0a37706c5c3e7ec878eceec2e2327f9a
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **200.5 MB (200466719 bytes)**  
+-	Total Size: **200.5 MB (200466804 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:52c84ac79afa83a0586669dd01a0256ee0bb40a7d08b1603fc55e3c1a9bd77f5`
+-	Image ID: `sha256:049e1d371a19d37c241310726d5d11e0dbdf6467d5591b65b40cf3698a8b2620`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -1947,8 +2161,8 @@ ENV DART_SDK=/usr/lib/dart
 ENV PATH=/usr/lib/dart/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 13 Jun 2023 05:30:00 GMT
 WORKDIR /root
-# Tue, 13 Jun 2023 05:30:09 GMT
-RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)             DART_SHA256=fed758732d742df884d39770756eb9bd9fdb24665c24c96502a09e03a745fca5;             SDK_ARCH="x64";;         armhf)             DART_SHA256=36aebf7bf6d43574dc3f66872e1926e184dd2ef8641212240e57ab895403a967;             SDK_ARCH="arm";;         arm64)             DART_SHA256=d04dee8e097cdfe02f7aa2d51620104ac680291f9d3b772a7c788694e0934fc1;             SDK_ARCH="arm64";;     esac;     SDK="dartsdk-linux-${SDK_ARCH}-release.zip";     BASEURL="https://storage.googleapis.com/dart-archive/channels";     URL="$BASEURL/stable/release/3.0.4/sdk/$SDK";     echo "SDK: $URL" >> dart_setup.log ;     curl -fLO "$URL";     echo "$DART_SHA256 *$SDK"         | sha256sum --check --status --strict -;     unzip "$SDK" && mv dart-sdk "$DART_SDK" && rm "$SDK"         && chmod 755 "$DART_SDK" && chmod 755 "$DART_SDK/bin";
+# Thu, 15 Jun 2023 21:39:28 GMT
+RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)             DART_SHA256=05fba372d64932dffce90bbd45116b76806bf9adc6203967b56faf5c64b2b66c;             SDK_ARCH="x64";;         armhf)             DART_SHA256=ed151fd396522c09c41820e627eea8a72da973f7e0aeef8e8099c914b7fde2c1;             SDK_ARCH="arm";;         arm64)             DART_SHA256=667b79593444cbe222a33c137ca943dced7a21ff2d61b8862f3b49e648c20533;             SDK_ARCH="arm64";;     esac;     SDK="dartsdk-linux-${SDK_ARCH}-release.zip";     BASEURL="https://storage.googleapis.com/dart-archive/channels";     URL="$BASEURL/stable/release/3.0.5/sdk/$SDK";     echo "SDK: $URL" >> dart_setup.log ;     curl -fLO "$URL";     echo "$DART_SHA256 *$SDK"         | sha256sum --check --status --strict -;     unzip "$SDK" && mv dart-sdk "$DART_SDK" && rm "$SDK"         && chmod 755 "$DART_SDK" && chmod 755 "$DART_SDK/bin";
 ```
 
 -	Layers:
@@ -1964,7 +2178,7 @@ RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)         
 		Last Modified: Tue, 13 Jun 2023 05:30:36 GMT  
 		Size: 1.6 MB (1560875 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:02ee818e2587b5743fce22a8393dd333ff63a216f9a078b66556057f90f7f205`  
-		Last Modified: Tue, 13 Jun 2023 05:30:49 GMT  
-		Size: 123.8 MB (123831776 bytes)  
+	-	`sha256:eef8cd334139de8ca9860c73638d05fe9d2d0193da10ea5aab9d3024aaba98a5`  
+		Last Modified: Thu, 15 Jun 2023 21:39:58 GMT  
+		Size: 123.8 MB (123831861 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
