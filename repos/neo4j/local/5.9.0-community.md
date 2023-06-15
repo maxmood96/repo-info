@@ -1,10 +1,10 @@
-# `neo4j:5.8.0`
+# `neo4j:5.9.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b829fca46b401da6536094ffccfbb4606cadea80b57239d8cdde029ba41f3e40`
-- Created: `2023-06-04T15:46:29.280913043Z`
-- Virtual Size: ~ 541.82 Mb  
+- Image ID: `sha256:3f4cb264cf2f0b19a75730c0cdb278f4137b62d194d04b27dad9362801942830`
+- Created: `2023-06-15T22:21:12.390691487Z`
+- Virtual Size: ~ 544.04 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","-g","--","/startup/docker-entrypoint.sh"]`
@@ -12,8 +12,8 @@
 - Environment:
   - `PATH=/var/lib/neo4j/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/opt/java/openjdk`
-  - `NEO4J_SHA256=96d728c337804a255151c23ced29994a890ee4d4015fa3916e34a358f0d1cbd6`
-  - `NEO4J_TARBALL=neo4j-community-5.8.0-unix.tar.gz`
+  - `NEO4J_SHA256=5c8774afac24e8a43d1de94d7b200ed6ad27f51b6ab7802bc325f5d27992930a`
+  - `NEO4J_TARBALL=neo4j-community-5.9.0-unix.tar.gz`
   - `NEO4J_EDITION=community`
   - `NEO4J_HOME=/var/lib/neo4j`
 
@@ -792,6 +792,34 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gosu/1.12-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gosu/1.12-1/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `gpm=1.20.7-8`
+
+Binary Packages:
+
+- `libgpm2:amd64=1.20.7-8`
+
+Licenses: (parsed from: `/usr/share/doc/libgpm2/copyright`)
+
+- `GPL-2`
+- `GPL-2.0+`
+- `GPL-3`
+- `GPL-3.0+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris gpm=1.20.7-8
+'http://deb.debian.org/debian/pool/main/g/gpm/gpm_1.20.7-8.dsc' gpm_1.20.7-8.dsc 1991 SHA256:ad44b73b1f30d071361d3dd0b45f4c910f21582922980066b88f2b32b6b2c054
+'http://deb.debian.org/debian/pool/main/g/gpm/gpm_1.20.7.orig.tar.gz' gpm_1.20.7.orig.tar.gz 855027 SHA256:c7e4661c24e05ae13547176b649bac8e3a0db2575f7dd57559f9e0b509f90f49
+'http://deb.debian.org/debian/pool/main/g/gpm/gpm_1.20.7-8.debian.tar.xz' gpm_1.20.7-8.debian.tar.xz 84016 SHA256:69d4913f543233ad97dd3c6c9def5b0f9ee046075df64cca9bbb8e33574f2062
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/gpm/1.20.7-8/ (for browsing the source)
+- https://sources.debian.net/src/gpm/1.20.7-8/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gpm/1.20.7-8/ (for access to the source package after it no longer exists in the archive)
+
 ### `dpkg` source package: `grep=3.6-1+deb11u1`
 
 Binary Packages:
@@ -1554,11 +1582,13 @@ Other potentially useful URLs:
 
 Binary Packages:
 
+- `libncurses6:amd64=6.2+20201114-2+deb11u1`
+- `libncursesw6:amd64=6.2+20201114-2+deb11u1`
 - `libtinfo6:amd64=6.2+20201114-2+deb11u1`
 - `ncurses-base=6.2+20201114-2+deb11u1`
 - `ncurses-bin=6.2+20201114-2+deb11u1`
 
-Licenses: (parsed from: `/usr/share/doc/libtinfo6/copyright`, `/usr/share/doc/ncurses-base/copyright`, `/usr/share/doc/ncurses-bin/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libncurses6/copyright`, `/usr/share/doc/libncursesw6/copyright`, `/usr/share/doc/libtinfo6/copyright`, `/usr/share/doc/ncurses-base/copyright`, `/usr/share/doc/ncurses-bin/copyright`)
 
 - `BSD-3-clause`
 - `MIT/X11`
@@ -1617,36 +1647,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nettle/3.7.3-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nettle/3.7.3-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=1.1.1n-0+deb11u4`
-
-Binary Packages:
-
-- `libssl1.1:amd64=1.1.1n-0+deb11u4`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris openssl=1.1.1n-0+deb11u4
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1n-0%2bdeb11u4.dsc' openssl_1.1.1n-0+deb11u4.dsc 2655 SHA256:f89bc0e8d63e61b2abedcfb9a0888dfb4054c7ad602c3b076f4cd5f31013eb33
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1n.orig.tar.gz' openssl_1.1.1n.orig.tar.gz 9850712 SHA256:40dceb51a4f6a5275bde0e6bf20ef4b91bfc32ed57c0552e2e8e15463372b17a
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1n.orig.tar.gz.asc' openssl_1.1.1n.orig.tar.gz.asc 488 SHA256:e0e89e9467102880ee6f2ee8c1413933eb1268969afb97b9bec61e2190a62fd0
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.1n-0%2bdeb11u4.debian.tar.xz' openssl_1.1.1n-0+deb11u4.debian.tar.xz 131388 SHA256:c8c5ba101d3d048782f09beaf7e5a56833ffafb5506211bbb2fc726fba9d7d73
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/openssl/1.1.1n-0+deb11u4/ (for browsing the source)
-- https://sources.debian.net/src/openssl/1.1.1n-0+deb11u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/1.1.1n-0+deb11u4/ (for access to the source package after it no longer exists in the archive)
-
 ### `dpkg` source package: `openssl=1.1.1n-0+deb11u5`
 
 Binary Packages:
 
+- `libssl1.1:amd64=1.1.1n-0+deb11u5`
 - `openssl=1.1.1n-0+deb11u5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
@@ -1828,6 +1833,63 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/perl/5.32.1-4+deb11u2/ (for browsing the source)
 - https://sources.debian.net/src/perl/5.32.1-4+deb11u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/perl/5.32.1-4+deb11u2/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `procps=2:3.3.17-5`
+
+Binary Packages:
+
+- `libprocps8:amd64=2:3.3.17-5`
+- `procps=2:3.3.17-5`
+
+Licenses: (parsed from: `/usr/share/doc/libprocps8/copyright`, `/usr/share/doc/procps/copyright`)
+
+- `GPL-2`
+- `GPL-2.0+`
+- `LGPL-2`
+- `LGPL-2.0+`
+- `LGPL-2.1`
+- `LGPL-2.1+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris procps=2:3.3.17-5
+'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.17-5.dsc' procps_3.3.17-5.dsc 2136 SHA256:3b1d9a3d3bc9ec24360ed20721d4235fcd4b4dbb9a86c1eba6c42899a50ecff8
+'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.17.orig.tar.xz' procps_3.3.17.orig.tar.xz 1008428 SHA256:4518b3e7aafd34ec07d0063d250fd474999b20b200218c3ae56f5d2113f141b4
+'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.17-5.debian.tar.xz' procps_3.3.17-5.debian.tar.xz 28608 SHA256:e6b5f9ef22eca9f03f79dc79b4c389249368216df8702a8cc380e10f29eda8c9
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/procps/2:3.3.17-5/ (for browsing the source)
+- https://sources.debian.net/src/procps/2:3.3.17-5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/procps/2:3.3.17-5/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `psmisc=23.4-2`
+
+Binary Packages:
+
+- `psmisc=23.4-2`
+
+Licenses: (parsed from: `/usr/share/doc/psmisc/copyright`)
+
+- `GPL-2`
+- `GPL-2+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris psmisc=23.4-2
+'http://deb.debian.org/debian/pool/main/p/psmisc/psmisc_23.4-2.dsc' psmisc_23.4-2.dsc 1832 SHA256:3bf19d6c3f65e8d3b466d38b043eb24207a0337b7f262b98dd223092c92abf4e
+'http://deb.debian.org/debian/pool/main/p/psmisc/psmisc_23.4.orig.tar.xz' psmisc_23.4.orig.tar.xz 365480 SHA256:cde09e491b8beda2dec11bdfa9ed8de6ccfde6394cd1c280f6a0fbff52b84d37
+'http://deb.debian.org/debian/pool/main/p/psmisc/psmisc_23.4-2.debian.tar.xz' psmisc_23.4-2.debian.tar.xz 7228 SHA256:a19d2943b04e0dc1f2dc94ebc8ada91ef3034c08347167cabd686b2001a95317
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/psmisc/23.4-2/ (for browsing the source)
+- https://sources.debian.net/src/psmisc/23.4-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/psmisc/23.4-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `publicsuffix=20220811.1734-0+deb11u1`
 
