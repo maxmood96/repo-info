@@ -1,7 +1,7 @@
 ## `traefik:beaufort`
 
 ```console
-$ docker pull traefik@sha256:ed47de5df8e31883b51a0b8d7add5a4732195d49f416065049d552a8c089dff1
+$ docker pull traefik@sha256:80466afd6c9510fe39948e88a5da7a0878e4db29039ed40c93c517adc245c13b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -120,54 +120,54 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 ### `traefik:beaufort` - linux; arm64 variant v8
 
 ```console
-$ docker pull traefik@sha256:529410986a68c6e7989a5a08afa53d087795a2f1406977d5d6b183bfdfab65dd
+$ docker pull traefik@sha256:70a1b62539b384a09d98e22bea5212f0120150377a85a599839d35897a55ef3b
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.4 MB (37408212 bytes)**  
+-	Total Size: **37.4 MB (37406948 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6e4bfdbd12bed1c2e46296bb16021a1eea4269055e03fdf9e30c035e5f9e8dc4`
+-	Image ID: `sha256:ebe5414a44cb1b3f5ada2c4d4477d9bb6c73103354707edb71a0adfb2138efb4`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["traefik"]`
 
 ```dockerfile
-# Wed, 29 Mar 2023 17:39:22 GMT
-ADD file:4acfda16c71abce07068ed23839e9de60c1d1145ab8002b3a92c15b1e80d4356 in / 
-# Wed, 29 Mar 2023 17:39:23 GMT
+# Wed, 14 Jun 2023 20:49:10 GMT
+ADD file:2b463f242cb7bf946452bb4781838348ecbe80da144fbab09f51d7e050dc68f3 in / 
+# Wed, 14 Jun 2023 20:49:11 GMT
 CMD ["/bin/sh"]
-# Thu, 30 Mar 2023 03:26:31 GMT
+# Thu, 15 Jun 2023 07:10:02 GMT
 RUN apk --no-cache add ca-certificates tzdata
-# Thu, 30 Mar 2023 03:26:34 GMT
+# Thu, 15 Jun 2023 07:10:05 GMT
 RUN set -ex; 	apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		armhf) arch='armv6' ;; 		aarch64) arch='arm64' ;; 		x86_64) arch='amd64' ;; 		s390x) arch='s390x' ;; 		*) echo >&2 "error: unsupported architecture: $apkArch"; exit 1 ;; 	esac; 	wget --quiet -O /tmp/traefik.tar.gz "https://github.com/traefik/traefik/releases/download/v3.0.0-beta2/traefik_v3.0.0-beta2_linux_$arch.tar.gz"; 	tar xzvf /tmp/traefik.tar.gz -C /usr/local/bin traefik; 	rm -f /tmp/traefik.tar.gz; 	chmod +x /usr/local/bin/traefik
-# Thu, 30 Mar 2023 03:26:35 GMT
+# Thu, 15 Jun 2023 07:10:05 GMT
 COPY file:59a219a1fb7a9dc894a7a9a4718fa97fd24adb0a4a6455240ec2ab0183da796e in / 
-# Thu, 30 Mar 2023 03:26:35 GMT
+# Thu, 15 Jun 2023 07:10:05 GMT
 EXPOSE 80
-# Thu, 30 Mar 2023 03:26:35 GMT
+# Thu, 15 Jun 2023 07:10:05 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 30 Mar 2023 03:26:35 GMT
+# Thu, 15 Jun 2023 07:10:06 GMT
 CMD ["traefik"]
-# Thu, 30 Mar 2023 03:26:35 GMT
+# Thu, 15 Jun 2023 07:10:06 GMT
 LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=https://traefik.io org.opencontainers.image.source=https://github.com/traefik/traefik org.opencontainers.image.title=Traefik org.opencontainers.image.description=A modern reverse-proxy org.opencontainers.image.version=v3.0.0-beta2 org.opencontainers.image.documentation=https://docs.traefik.io
 ```
 
 -	Layers:
-	-	`sha256:60a00c11adf5202a365ec8215b889c3390d67fa295ab79940e1c5dc4cbed9db1`  
-		Last Modified: Wed, 29 Mar 2023 17:40:04 GMT  
-		Size: 2.7 MB (2722002 bytes)  
+	-	`sha256:a147224bf413aeffbbfcdcb5104d35c647256a5c32083f4d8134f09a4e74ddeb`  
+		Last Modified: Wed, 14 Jun 2023 20:49:52 GMT  
+		Size: 2.7 MB (2720801 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d019fab0470c352dfa2ff6c01be8f1d0344d43e9431a28656e78c5cabd03e67f`  
-		Last Modified: Thu, 30 Mar 2023 03:27:17 GMT  
-		Size: 662.3 KB (662323 bytes)  
+	-	`sha256:d273c78104fe60b8d6b0a1d68c0b259293bd972e3ff515bc403a8bfbff6d88a9`  
+		Last Modified: Thu, 15 Jun 2023 07:10:24 GMT  
+		Size: 662.3 KB (662262 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d82ed46bb3966bf021d56f3bfda66ada1ddde7199ee9d3446ebcbeffec692004`  
-		Last Modified: Thu, 30 Mar 2023 03:27:20 GMT  
-		Size: 34.0 MB (34023520 bytes)  
+	-	`sha256:2be3d50287a2f7fba1e120466ee42285469a74914da1378df40803a29c6245f3`  
+		Last Modified: Thu, 15 Jun 2023 07:10:28 GMT  
+		Size: 34.0 MB (34023516 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:07a93ddfbde23c1aa20ccac6b7cd3dcbda52d11c2b1627d41dc7fa169bd46430`  
-		Last Modified: Thu, 30 Mar 2023 03:27:16 GMT  
-		Size: 367.0 B  
+	-	`sha256:452eba291077ce9af0d14edf868a5522679b04016d43f8a2e05b194d2618d210`  
+		Last Modified: Thu, 15 Jun 2023 07:10:24 GMT  
+		Size: 369.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `traefik:beaufort` - linux; s390x
