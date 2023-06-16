@@ -1,7 +1,7 @@
 ## `ubuntu:kinetic`
 
 ```console
-$ docker pull ubuntu@sha256:4d7fc1e73eb0d7405df92ccfb028e380f3c5d1a7efa17f302308c8e69fb09f0a
+$ docker pull ubuntu@sha256:a8c0aec3712a0562dc0ecfeeeae4e3de05fefb555b02c06778f69858d30c3bac
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -83,35 +83,35 @@ CMD ["/bin/bash"]
 ### `ubuntu:kinetic` - linux; arm64 variant v8
 
 ```console
-$ docker pull ubuntu@sha256:9ff03c2930fce7e915f3b321c6c601380ffb845140bd36715c44ec31d7ae551e
+$ docker pull ubuntu@sha256:dde2a31e58d07b2ed8be842eafae55b9a46b3629a0915dd6438fb3e484e46d65
 ```
 
 -	Docker Version: 20.10.21
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.8 MB (25759013 bytes)**  
+-	Total Size: **25.8 MB (25770482 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:490b20d4c90f834abcf386620a8906d21821aaa4db91c4665016883f043a10e4`
+-	Image ID: `sha256:172adc9ce1cab441186106c04f9663f7b81edc9d3e8908b8dca58180df27ea16`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 13 Apr 2023 13:20:37 GMT
+# Mon, 05 Jun 2023 17:02:45 GMT
 ARG RELEASE
-# Thu, 13 Apr 2023 13:20:37 GMT
+# Mon, 05 Jun 2023 17:02:45 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 13 Apr 2023 13:20:37 GMT
+# Mon, 05 Jun 2023 17:02:45 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 13 Apr 2023 13:20:37 GMT
+# Mon, 05 Jun 2023 17:02:46 GMT
 LABEL org.opencontainers.image.version=22.10
-# Thu, 13 Apr 2023 13:20:38 GMT
-ADD file:8b5c9a166ff42d52b423d188428558ea2bf225c42aeb3de339514e6ad9fdd504 in / 
-# Thu, 13 Apr 2023 13:20:39 GMT
+# Mon, 05 Jun 2023 17:02:50 GMT
+ADD file:b85182b4593c262faef116755e01baa608e8090e1cb697d735485ff0bd5b353e in / 
+# Mon, 05 Jun 2023 17:02:50 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:4bb7992c0b6c454d95752fadeb8ec30f02376e386e2dbcde466ab9e74283ed78`  
-		Last Modified: Fri, 14 Apr 2023 11:09:21 GMT  
-		Size: 25.8 MB (25759013 bytes)  
+	-	`sha256:bb573a4d6d791b5d50f1118d01e4c9b2acc927522cec8740ac9957e37eeac29c`  
+		Last Modified: Mon, 05 Jun 2023 17:21:35 GMT  
+		Size: 25.8 MB (25770482 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ubuntu:kinetic` - linux; ppc64le
