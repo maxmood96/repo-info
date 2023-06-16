@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5ac69f98593208b777583a91fc791a45388c3c0060ff66c2d06480b3521f7c7c`
-- Created: `2023-06-09T21:23:49.713158208Z`
-- Virtual Size: ~ 73.86 Mb  
+- Image ID: `sha256:08a7f251526a6de98369f23385c2f1620df0c8efd0ccd095c11d7aa5813a0bd1`
+- Created: `2023-06-14T22:24:09.952447342Z`
+- Virtual Size: ~ 70.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["erl"]`
@@ -122,16 +122,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20220614-r0 description:
+ca-certificates-bundle-20230506-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20220614-r0 webpage:
+ca-certificates-bundle-20230506-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20220614-r0 installed size:
+ca-certificates-bundle-20230506-r0 installed size:
 228 KiB
 
-ca-certificates-bundle-20220614-r0 license:
+ca-certificates-bundle-20230506-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -241,16 +241,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.3-r2 description:
+musl-utils-1.2.3-r3 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.3-r2 webpage:
+musl-utils-1.2.3-r3 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.3-r2 installed size:
+musl-utils-1.2.3-r3 installed size:
 132 KiB
 
-musl-utils-1.2.3-r2 license:
+musl-utils-1.2.3-r3 license:
 MIT BSD GPL2+
 
 ```
