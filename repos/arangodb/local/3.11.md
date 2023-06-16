@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:90184ccfdeb2eabf0e0e6019b7745574b4ae36380a9f8e13e9bfeb5618fa426c`
-- Created: `2023-05-26T22:48:32.870718216Z`
-- Virtual Size: ~ 504.79 Mb  
+- Image ID: `sha256:b1cac5e714df7b1923942a77c2834c5724bb7800ec267c4e16eff5b348cb05a2`
+- Created: `2023-06-15T04:32:48.133655507Z`
+- Virtual Size: ~ 504.82 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -172,16 +172,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20220614-r0 description:
+ca-certificates-bundle-20230506-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20220614-r0 webpage:
+ca-certificates-bundle-20230506-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20220614-r0 installed size:
+ca-certificates-bundle-20230506-r0 installed size:
 228 KiB
 
-ca-certificates-bundle-20220614-r0 license:
+ca-certificates-bundle-20230506-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -240,16 +240,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1t-r2 description:
+libcrypto1.1-1.1.1u-r1 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1t-r2 webpage:
+libcrypto1.1-1.1.1u-r1 webpage:
 https://www.openssl.org/
 
-libcrypto1.1-1.1.1t-r2 installed size:
-2712 KiB
+libcrypto1.1-1.1.1u-r1 installed size:
+2708 KiB
 
-libcrypto1.1-1.1.1t-r2 license:
+libcrypto1.1-1.1.1u-r1 license:
 OpenSSL
 
 ```
@@ -274,16 +274,16 @@ GPL-2.0-or-later LGPL-2.1-or-later
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1t-r2 description:
+libssl1.1-1.1.1u-r1 description:
 SSL shared libraries
 
-libssl1.1-1.1.1t-r2 webpage:
+libssl1.1-1.1.1u-r1 webpage:
 https://www.openssl.org/
 
-libssl1.1-1.1.1t-r2 installed size:
+libssl1.1-1.1.1u-r1 installed size:
 528 KiB
 
-libssl1.1-1.1.1t-r2 license:
+libssl1.1-1.1.1u-r1 license:
 OpenSSL
 
 ```
@@ -308,16 +308,16 @@ GPL-2.0-or-later LGPL-2.1-or-later
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.3-r2 description:
+musl-1.2.3-r3 description:
 the musl c library (libc) implementation
 
-musl-1.2.3-r2 webpage:
+musl-1.2.3-r3 webpage:
 https://musl.libc.org/
 
-musl-1.2.3-r2 installed size:
+musl-1.2.3-r3 installed size:
 608 KiB
 
-musl-1.2.3-r2 license:
+musl-1.2.3-r3 license:
 MIT
 
 ```
@@ -325,16 +325,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.3-r2 description:
+musl-utils-1.2.3-r3 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.3-r2 webpage:
+musl-utils-1.2.3-r3 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.3-r2 installed size:
+musl-utils-1.2.3-r3 installed size:
 132 KiB
 
-musl-utils-1.2.3-r2 license:
+musl-utils-1.2.3-r3 license:
 MIT BSD GPL2+
 
 ```
