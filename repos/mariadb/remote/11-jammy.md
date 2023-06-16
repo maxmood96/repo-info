@@ -1,7 +1,7 @@
 ## `mariadb:11-jammy`
 
 ```console
-$ docker pull mariadb@sha256:212f24e652594f68a4549052b06396cb89f77b50ae29b99b30e679b0f285131d
+$ docker pull mariadb@sha256:f29286dd409ab50c8a0721973ecd6107f711e403a0c0eee778c01754f9c1552e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13,104 +13,104 @@ $ docker pull mariadb@sha256:212f24e652594f68a4549052b06396cb89f77b50ae29b99b30e
 ### `mariadb:11-jammy` - linux; amd64
 
 ```console
-$ docker pull mariadb@sha256:63f4ae82d147dddf4e8f206c71cd58ae0c035f2a9e213206f87320e4a1832b49
+$ docker pull mariadb@sha256:401c0aa614ae923656f3d84bfb87821d2c4c01f38e394a3651a865cb8706d93e
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **125.4 MB (125411497 bytes)**  
+-	Total Size: **123.1 MB (123082670 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b54e74c9be392b0cfa2c5c5eb4e14be88ab4c11565e220927c7bc0f2536e79f0`
+-	Image ID: `sha256:99833200524a889a34d71b5e42bb65ea80c8134f943f385f2beaba07747fc567`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mariadbd"]`
 
 ```dockerfile
-# Mon, 22 May 2023 17:45:50 GMT
+# Mon, 05 Jun 2023 17:00:37 GMT
 ARG RELEASE
-# Mon, 22 May 2023 17:45:50 GMT
+# Mon, 05 Jun 2023 17:00:37 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 22 May 2023 17:45:50 GMT
+# Mon, 05 Jun 2023 17:00:37 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 22 May 2023 17:45:50 GMT
+# Mon, 05 Jun 2023 17:00:37 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 22 May 2023 17:45:52 GMT
-ADD file:2fd2684e989d275c95e18b6f6e9ccf57ca1382ecd8faf4a66961ede28102dedf in / 
-# Mon, 22 May 2023 17:45:52 GMT
+# Mon, 05 Jun 2023 17:00:39 GMT
+ADD file:0ad2ee2cfb186802f49c9bf4148674d1c6fc201f83478ec01ffaa7086d491323 in / 
+# Mon, 05 Jun 2023 17:00:39 GMT
 CMD ["/bin/bash"]
-# Fri, 02 Jun 2023 01:21:14 GMT
+# Fri, 16 Jun 2023 03:06:33 GMT
 RUN groupadd -r mysql && useradd -r -g mysql mysql
-# Fri, 02 Jun 2023 01:21:14 GMT
+# Fri, 16 Jun 2023 03:06:33 GMT
 ENV GOSU_VERSION=1.14
-# Fri, 02 Jun 2023 01:21:14 GMT
+# Fri, 16 Jun 2023 03:06:33 GMT
 ARG GPG_KEYS=177F4010FE56CA3336300305F1656F24C74CD1D8
-# Fri, 02 Jun 2023 01:21:34 GMT
+# Fri, 16 Jun 2023 03:06:54 GMT
 # ARGS: GPG_KEYS=177F4010FE56CA3336300305F1656F24C74CD1D8
 RUN set -eux; 	apt-get update; 	DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends 		ca-certificates 		gpg 		gpgv 		libjemalloc2 		pwgen 		tzdata 		xz-utils 		zstd ; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get install -y --no-install-recommends 		dirmngr 		gpg-agent 		wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -q -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -q -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	GNUPGHOME="$(mktemp -d)"; 	export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --export "$GPG_KEYS" > /etc/apt/trusted.gpg.d/mariadb.gpg; 	if command -v gpgconf >/dev/null; then 		gpgconf --kill all; 	fi; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] ||	apt-mark manual $savedAptMark >/dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Fri, 02 Jun 2023 01:21:35 GMT
+# Fri, 16 Jun 2023 03:06:55 GMT
 # ARGS: GPG_KEYS=177F4010FE56CA3336300305F1656F24C74CD1D8
 RUN mkdir /docker-entrypoint-initdb.d
-# Fri, 02 Jun 2023 01:21:35 GMT
+# Fri, 16 Jun 2023 03:06:55 GMT
 ENV LANG=C.UTF-8
-# Fri, 09 Jun 2023 21:29:52 GMT
+# Fri, 16 Jun 2023 03:07:21 GMT
 LABEL org.opencontainers.image.authors=MariaDB Community org.opencontainers.image.title=MariaDB Database org.opencontainers.image.description=MariaDB Database for relational SQL org.opencontainers.image.documentation=https://hub.docker.com/_/mariadb/ org.opencontainers.image.base.name=docker.io/library/ubuntu:jammy org.opencontainers.image.licenses=GPL-2.0 org.opencontainers.image.source=https://github.com/MariaDB/mariadb-docker org.opencontainers.image.vendor=MariaDB Community org.opencontainers.image.version=11.0.2 org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker
-# Fri, 09 Jun 2023 21:29:52 GMT
+# Fri, 16 Jun 2023 03:07:22 GMT
 ARG MARIADB_VERSION=1:11.0.2+maria~ubu2204
-# Fri, 09 Jun 2023 21:29:52 GMT
+# Fri, 16 Jun 2023 03:07:22 GMT
 ENV MARIADB_VERSION=1:11.0.2+maria~ubu2204
-# Fri, 09 Jun 2023 21:29:52 GMT
+# Fri, 16 Jun 2023 03:07:22 GMT
 ARG REPOSITORY=http://archive.mariadb.org/mariadb-11.0.2/repo/ubuntu/ jammy main
-# Fri, 09 Jun 2023 21:29:53 GMT
+# Fri, 16 Jun 2023 03:07:22 GMT
 # ARGS: GPG_KEYS=177F4010FE56CA3336300305F1656F24C74CD1D8 REPOSITORY=http://archive.mariadb.org/mariadb-11.0.2/repo/ubuntu/ jammy main
 RUN set -e;	echo "deb ${REPOSITORY}" > /etc/apt/sources.list.d/mariadb.list; 	{ 		echo 'Package: *'; 		echo 'Pin: release o=MariaDB'; 		echo 'Pin-Priority: 999'; 	} > /etc/apt/preferences.d/mariadb
-# Fri, 09 Jun 2023 21:30:15 GMT
+# Fri, 16 Jun 2023 03:07:40 GMT
 # ARGS: GPG_KEYS=177F4010FE56CA3336300305F1656F24C74CD1D8 REPOSITORY=http://archive.mariadb.org/mariadb-11.0.2/repo/ubuntu/ jammy main
 RUN set -ex; 	{ 		echo "mariadb-server" mysql-server/root_password password 'unused'; 		echo "mariadb-server" mysql-server/root_password_again password 'unused'; 	} | debconf-set-selections; 	apt-get update; 	apt-get install -y --no-install-recommends mariadb-server="$MARIADB_VERSION" mariadb-backup socat 	; 	rm -rf /var/lib/apt/lists/*; 	rm -rf /var/lib/mysql; 	mkdir -p /var/lib/mysql /var/run/mysqld; 	chown -R mysql:mysql /var/lib/mysql /var/run/mysqld; 	chmod 777 /var/run/mysqld; 	find /etc/mysql/ -name '*.cnf' -print0 		| xargs -0 grep -lZE '^(bind-address|log|user\s)' 		| xargs -rt -0 sed -Ei 's/^(bind-address|log|user\s)/#&/'; 	printf "[mariadb]\nhost-cache-size=0\nskip-name-resolve\n" > /etc/mysql/mariadb.conf.d/05-skipcache.cnf; 	if [ -L /etc/mysql/my.cnf ]; then 		sed -i -e '/includedir/ {N;s/\(.*\)\n\(.*\)/\n\2\n\1/}' /etc/mysql/mariadb.cnf; 	fi
-# Fri, 09 Jun 2023 21:30:15 GMT
+# Fri, 16 Jun 2023 03:07:41 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 09 Jun 2023 21:30:15 GMT
+# Fri, 16 Jun 2023 03:07:41 GMT
 COPY file:835b387376a8b7e7292ae71352abf1c02fc75f579bcc76af370b0497b20be068 in /usr/local/bin/healthcheck.sh 
-# Fri, 09 Jun 2023 21:30:16 GMT
+# Fri, 16 Jun 2023 03:07:41 GMT
 COPY file:8a4258a11da28308d0b9b254da95e930f850bcec67d37cfb12bc00f5a37939bd in /usr/local/bin/ 
-# Fri, 09 Jun 2023 21:30:16 GMT
+# Fri, 16 Jun 2023 03:07:41 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 09 Jun 2023 21:30:16 GMT
+# Fri, 16 Jun 2023 03:07:41 GMT
 EXPOSE 3306
-# Fri, 09 Jun 2023 21:30:16 GMT
+# Fri, 16 Jun 2023 03:07:41 GMT
 CMD ["mariadbd"]
 ```
 
 -	Layers:
-	-	`sha256:d1669123f28121211977ed38e663dca1a397c0c001e5386598b96c89b1b1cd51`  
-		Last Modified: Mon, 22 May 2023 20:49:59 GMT  
-		Size: 30.4 MB (30430275 bytes)  
+	-	`sha256:3f94e4e483ea634d7ab0b63649b8f72f8b721d4c626297fd0edae0abea1df9e9`  
+		Last Modified: Tue, 06 Jun 2023 11:46:33 GMT  
+		Size: 30.4 MB (30431039 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7942299fe584ae926671d6e010bc59c3ea5e651742cfc7af2488c50fa2daa05f`  
-		Last Modified: Fri, 02 Jun 2023 01:24:14 GMT  
-		Size: 1.7 KB (1748 bytes)  
+	-	`sha256:302c1621580e19854b06603807eaa8c8a41dbf662e3b700c5d13304a7a04a0a7`  
+		Last Modified: Fri, 16 Jun 2023 03:11:09 GMT  
+		Size: 1.7 KB (1742 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ca116927bbe123aec204718cb63664b2dc19d357b1b6dd7958a354c4b5b3879c`  
-		Last Modified: Fri, 02 Jun 2023 01:24:15 GMT  
-		Size: 5.6 MB (5592249 bytes)  
+	-	`sha256:e9ebb34cbdd06fb95713e4ea56452cdc40b779d51e634dc8a48e2caa7af17b64`  
+		Last Modified: Fri, 16 Jun 2023 03:11:10 GMT  
+		Size: 5.6 MB (5592601 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c0f0b5293ed6194c5d04bf423e3222e39553df6db49e7f775ff6af7c44b92e6`  
-		Last Modified: Fri, 02 Jun 2023 01:24:12 GMT  
+	-	`sha256:58c98f01d4c3c8a4524ea4b0478504e2041caddcd5fa0c323b6c27b9ec6418d6`  
+		Last Modified: Fri, 16 Jun 2023 03:11:07 GMT  
 		Size: 149.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61a3772c1823cfea4e158667284bd95f66c2299b54a0a8898ebb14068a9e294c`  
-		Last Modified: Fri, 09 Jun 2023 21:34:21 GMT  
-		Size: 329.0 B  
+	-	`sha256:a41d8a26ca52b516108407e1617d9b0780a15af506a4a6776a97e01dabb2413c`  
+		Last Modified: Fri, 16 Jun 2023 03:11:33 GMT  
+		Size: 327.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:65ed9178c2cd530336ec2a27ba5e8ec6662acf75bf6f842b27e30597ee6d6c14`  
-		Last Modified: Fri, 09 Jun 2023 21:34:35 GMT  
-		Size: 89.4 MB (89375914 bytes)  
+	-	`sha256:4ee4c2e16e988237049d7debe30545b1cffc33a728ae05f375e3286ad558fc1d`  
+		Last Modified: Fri, 16 Jun 2023 03:11:45 GMT  
+		Size: 87.0 MB (87045975 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1917f5a0ac83237c041775808c325c158b848a4abf37ddd44ba501d1108978d`  
-		Last Modified: Fri, 09 Jun 2023 21:34:21 GMT  
+	-	`sha256:074151eed57f51cea9f14c6248432980217d249c4149b0ce32aa550367bcc8c4`  
+		Last Modified: Fri, 16 Jun 2023 03:11:33 GMT  
 		Size: 3.5 KB (3526 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2003d5da743c6ffb3cb20fdb454e867bbbe910b962a0344223112db40e1880cb`  
-		Last Modified: Fri, 09 Jun 2023 21:34:21 GMT  
-		Size: 7.3 KB (7307 bytes)  
+	-	`sha256:7eee5368bfd3d4141ead8867da9b86de382d80660c3c91d2071515ee408384cc`  
+		Last Modified: Fri, 16 Jun 2023 03:11:33 GMT  
+		Size: 7.3 KB (7311 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mariadb:11-jammy` - linux; arm64 variant v8
