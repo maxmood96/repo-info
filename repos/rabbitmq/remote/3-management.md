@@ -1,7 +1,7 @@
 ## `rabbitmq:3-management`
 
 ```console
-$ docker pull rabbitmq@sha256:893581cd84be07cf68568519787434b87d98a965f76077b66fe1395f00c9e681
+$ docker pull rabbitmq@sha256:8ac6cd0f7f8dfe351e8870777065a9947039a003104c45ed6df43e87488fcf09
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -369,28 +369,28 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:3-management` - linux; ppc64le
 
 ```console
-$ docker pull rabbitmq@sha256:5b623f7a16f77c0643aadb786b0b08f955a8bf1c8ddfca5d4e7745d9feef8a4a
+$ docker pull rabbitmq@sha256:115ec0834d3c68b6f9ad7205b55030a10015bbb2b807432b69f449a5aee048ed
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **114.4 MB (114417503 bytes)**  
+-	Total Size: **114.4 MB (114426479 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:13834a40b71b450a55f7a00749aecf02403c3d905d213a3080a710aa48edff61`
+-	Image ID: `sha256:8d424a9a45256090cebb371c15ac6fba658c73afe9b6fd1d46755f20db0d3a94`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
 ```dockerfile
-# Thu, 13 Apr 2023 13:09:36 GMT
+# Mon, 05 Jun 2023 17:08:24 GMT
 ARG RELEASE
-# Thu, 13 Apr 2023 13:09:37 GMT
+# Mon, 05 Jun 2023 17:08:24 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 13 Apr 2023 13:09:37 GMT
+# Mon, 05 Jun 2023 17:08:24 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 13 Apr 2023 13:09:37 GMT
+# Mon, 05 Jun 2023 17:08:25 GMT
 LABEL org.opencontainers.image.version=20.04
-# Thu, 13 Apr 2023 13:09:40 GMT
-ADD file:faba3891f58656ec753ba6ca4b63e7c1f27bcd236b665634b05d5bc1b1ceee0a in / 
-# Thu, 13 Apr 2023 13:09:40 GMT
+# Mon, 05 Jun 2023 17:08:28 GMT
+ADD file:0a2372ac4d43f0f4ada2b55dd0a359df73a828a9aa9426bfdd05a02b9c4b2bd9 in / 
+# Mon, 05 Jun 2023 17:08:28 GMT
 CMD ["/bin/bash"]
 # Wed, 07 Jun 2023 11:43:59 GMT
 COPY /usr/local/bin/ /usr/local/bin/ # buildkit
@@ -439,49 +439,49 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
 -	Layers:
-	-	`sha256:d276072145993a42aed3e2b3e8cd26b6e08aab266d9c9d792ee89b26150681da`  
-		Last Modified: Fri, 14 Apr 2023 09:36:00 GMT  
-		Size: 33.3 MB (33300980 bytes)  
+	-	`sha256:1fbda4a01aa9e184a223c30ab58441354cde30fe3083bc1d8ca9f7823ab4fe68`  
+		Last Modified: Fri, 16 Jun 2023 01:24:20 GMT  
+		Size: 33.3 MB (33309776 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99daebcf5452b64054b2b26c8728a148ee1096920c1ba8a49e981f4182e8b6ce`  
-		Last Modified: Sat, 03 Jun 2023 03:01:49 GMT  
-		Size: 452.6 KB (452643 bytes)  
+	-	`sha256:ff505b568ce1296408624212a02fb10b753bc6cb3f93832211a85857d5a5d564`  
+		Last Modified: Fri, 16 Jun 2023 02:15:06 GMT  
+		Size: 452.6 KB (452645 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:69d3e48fd9fa6e1c00780a32c8397274b7489db01bd05c6ca3ba1ee1fd114a22`  
-		Last Modified: Sat, 03 Jun 2023 03:01:48 GMT  
-		Size: 10.2 KB (10153 bytes)  
+	-	`sha256:3f8cc96210a5e575c0c37540941d8c5e41c2925755cb6d3eadbbdc348ccf8fb3`  
+		Last Modified: Fri, 16 Jun 2023 02:15:06 GMT  
+		Size: 10.2 KB (10152 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae0dc8de17edcf7cbac09b06756f23d6e60e6c7fcbc17cbc8d822a661e57fbd3`  
-		Last Modified: Wed, 07 Jun 2023 23:54:31 GMT  
-		Size: 48.0 MB (48046485 bytes)  
+	-	`sha256:60b033c8cab808ce6b665da56ff348e2c0bb8fe7c88a09f82f05aaafbf1b47d3`  
+		Last Modified: Fri, 16 Jun 2023 02:15:16 GMT  
+		Size: 48.0 MB (48046269 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66bd75a522ee421a26b626d75e564f9d478bb7e94587717cc6637024bd436324`  
-		Last Modified: Wed, 07 Jun 2023 23:54:20 GMT  
-		Size: 10.9 KB (10859 bytes)  
+	-	`sha256:5f44eafc868b3f25246e6abd4e435ca25e2ede2c3d5ebe9277f62ef4e3527ea9`  
+		Last Modified: Fri, 16 Jun 2023 02:15:05 GMT  
+		Size: 10.8 KB (10828 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c48c2c865fc88c5e18c27de90e50f56e04f8faca9105d78923348ee1656f52c7`  
-		Last Modified: Wed, 07 Jun 2023 23:54:23 GMT  
-		Size: 21.9 MB (21914503 bytes)  
+	-	`sha256:4ac43791be09d6b02cd78d1bfd7ceb26242a52770af3f457b1e9ecd8a59a2c60`  
+		Last Modified: Fri, 16 Jun 2023 02:15:06 GMT  
+		Size: 21.9 MB (21914764 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da07d2421d550fa69cc43be6e0d63a9c06da5d88f19aeddb09a0a37f42d1c3d4`  
-		Last Modified: Wed, 07 Jun 2023 23:54:18 GMT  
-		Size: 191.0 B  
+	-	`sha256:57f3641a3f2b7e2601ca3f1a162745ea5e0c97b0a3532d32ec1a690adfe6ff89`  
+		Last Modified: Fri, 16 Jun 2023 02:15:02 GMT  
+		Size: 190.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:acb7acb3c3c1085f06cb7219d72f5f4205865ba9e5f9f23ce4128b954be532cd`  
-		Last Modified: Wed, 07 Jun 2023 23:54:18 GMT  
+	-	`sha256:6445d132f0a7bcdf7e2085be2d89e457c7ec92cc980f0c88292410742023ead5`  
+		Last Modified: Fri, 16 Jun 2023 02:15:02 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:723a1e77382c1b6a34bb4fe5219ca05eaf80994d712c3df9d51c244f19261439`  
-		Last Modified: Wed, 07 Jun 2023 23:54:18 GMT  
-		Size: 624.0 B  
+	-	`sha256:48546a73b7a62b20d4850e55f5fd3e9b2a266e188b9e1a6f76e1e5188358795b`  
+		Last Modified: Fri, 16 Jun 2023 02:15:02 GMT  
+		Size: 622.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8e7f389ce529231d2efe44b6a2639d3891443cec75ab2ece207d2fc70fb1bd69`  
-		Last Modified: Wed, 07 Jun 2023 23:54:18 GMT  
-		Size: 835.0 B  
+	-	`sha256:1a6e2f597e3980d141bef7acc2d0a671b78f03788783e7918e538cd6c3ac8510`  
+		Last Modified: Fri, 16 Jun 2023 02:15:02 GMT  
+		Size: 836.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:92dbc4dd974bfa767c9cee3a63b86581b5ffd20e987bce13fecf746c44d5c0e4`  
-		Last Modified: Wed, 07 Jun 2023 23:54:49 GMT  
-		Size: 10.7 MB (10680123 bytes)  
+	-	`sha256:1a6cf97ededaef07bb0aa2b698e3b2495ed28f9cfed6974f326b13ea72cc5e9a`  
+		Last Modified: Fri, 16 Jun 2023 02:15:36 GMT  
+		Size: 10.7 MB (10680290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `rabbitmq:3-management` - linux; s390x
