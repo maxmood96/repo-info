@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d7544b312621a56eaf69bd71a8495d2a74293be2b892834bad22c85b0a6c4a82`
-- Created: `2023-05-11T19:39:27.013086065Z`
-- Virtual Size: ~ 59.11 Mb  
+- Image ID: `sha256:352fdc2b5b266123d131562c40f495795c6745bbcffc843adc23f1336e183f85`
+- Created: `2023-06-14T20:47:06.582579258Z`
+- Virtual Size: ~ 59.13 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["httpd-foreground"]`
@@ -71,16 +71,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-2.14.0-r0 description:
+apk-tools-2.14.0-r2 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-2.14.0-r0 webpage:
+apk-tools-2.14.0-r2 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-2.14.0-r0 installed size:
+apk-tools-2.14.0-r2 installed size:
 304 KiB
 
-apk-tools-2.14.0-r0 license:
+apk-tools-2.14.0-r2 license:
 GPL-2.0-only
 
 ```
@@ -156,16 +156,16 @@ MIT
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.36.0-r9 description:
+busybox-1.36.1-r0 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.36.0-r9 webpage:
+busybox-1.36.1-r0 webpage:
 https://busybox.net/
 
-busybox-1.36.0-r9 installed size:
+busybox-1.36.1-r0 installed size:
 924 KiB
 
-busybox-1.36.0-r9 license:
+busybox-1.36.1-r0 license:
 GPL-2.0-only
 
 ```
@@ -173,16 +173,16 @@ GPL-2.0-only
 ### `apk` package: `busybox-binsh`
 
 ```console
-busybox-binsh-1.36.0-r9 description:
+busybox-binsh-1.36.1-r0 description:
 busybox ash /bin/sh
 
-busybox-binsh-1.36.0-r9 webpage:
+busybox-binsh-1.36.1-r0 webpage:
 https://busybox.net/
 
-busybox-binsh-1.36.0-r9 installed size:
+busybox-binsh-1.36.1-r0 installed size:
 8192 B
 
-busybox-binsh-1.36.0-r9 license:
+busybox-binsh-1.36.1-r0 license:
 GPL-2.0-only
 
 ```
@@ -241,16 +241,16 @@ GPL-3.0-or-later
 ### `apk` package: `jansson`
 
 ```console
-jansson-2.14-r1 description:
+jansson-2.14-r3 description:
 lightweight JSON library
 
-jansson-2.14-r1 webpage:
+jansson-2.14-r3 webpage:
 http://www.digip.org/jansson/
 
-jansson-2.14-r1 installed size:
+jansson-2.14-r3 installed size:
 64 KiB
 
-jansson-2.14-r1 license:
+jansson-2.14-r3 license:
 MIT
 
 ```
@@ -292,16 +292,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.0-r4 description:
+libcrypto3-3.1.1-r1 description:
 Crypto library from openssl
 
-libcrypto3-3.1.0-r4 webpage:
+libcrypto3-3.1.1-r1 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.0-r4 installed size:
-4460 KiB
+libcrypto3-3.1.1-r1 installed size:
+4464 KiB
 
-libcrypto3-3.1.0-r4 license:
+libcrypto3-3.1.1-r1 license:
 Apache-2.0
 
 ```
@@ -309,16 +309,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.0.1-r2 description:
+libcurl-8.1.2-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.0.1-r2 webpage:
+libcurl-8.1.2-r0 webpage:
 https://curl.se/
 
-libcurl-8.0.1-r2 installed size:
-532 KiB
+libcurl-8.1.2-r0 installed size:
+548 KiB
 
-libcurl-8.0.1-r2 license:
+libcurl-8.1.2-r0 license:
 curl
 
 ```
@@ -394,16 +394,16 @@ custom
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.0-r4 description:
+libssl3-3.1.1-r1 description:
 SSL shared libraries
 
-libssl3-3.1.0-r4 webpage:
+libssl3-3.1.1-r1 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.0-r4 installed size:
+libssl3-3.1.1-r1 installed size:
 552 KiB
 
-libssl3-3.1.0-r4 license:
+libssl3-3.1.1-r1 license:
 Apache-2.0
 
 ```
@@ -428,16 +428,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `libuuid`
 
 ```console
-libuuid-2.38.1-r7 description:
+libuuid-2.38.1-r8 description:
 DCE compatible Universally Unique Identifier library
 
-libuuid-2.38.1-r7 webpage:
+libuuid-2.38.1-r8 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libuuid-2.38.1-r7 installed size:
+libuuid-2.38.1-r8 installed size:
 40 KiB
 
-libuuid-2.38.1-r7 license:
+libuuid-2.38.1-r8 license:
 BSD-3-Clause
 
 ```
@@ -445,16 +445,16 @@ BSD-3-Clause
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.11.2-r0 description:
+libxml2-2.11.4-r0 description:
 XML parsing library, version 2
 
-libxml2-2.11.2-r0 webpage:
+libxml2-2.11.4-r0 webpage:
 http://www.xmlsoft.org/
 
-libxml2-2.11.2-r0 installed size:
-1104 KiB
+libxml2-2.11.4-r0 installed size:
+1108 KiB
 
-libxml2-2.11.2-r0 license:
+libxml2-2.11.4-r0 license:
 MIT
 
 ```
@@ -547,16 +547,16 @@ BSD-3-Clause
 ### `apk` package: `perl`
 
 ```console
-perl-5.36.1-r1 description:
+perl-5.36.1-r2 description:
 Larry Wall's Practical Extraction and Report Language
 
-perl-5.36.1-r1 webpage:
+perl-5.36.1-r2 webpage:
 https://www.perl.org/
 
-perl-5.36.1-r1 installed size:
+perl-5.36.1-r2 installed size:
 38 MiB
 
-perl-5.36.1-r1 license:
+perl-5.36.1-r2 license:
 Artistic-Perl OR GPL-1.0-or-later
 
 ```
@@ -581,16 +581,16 @@ GPL-2.0-only
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.36.0-r9 description:
+ssl_client-1.36.1-r0 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.36.0-r9 webpage:
+ssl_client-1.36.1-r0 webpage:
 https://busybox.net/
 
-ssl_client-1.36.0-r9 installed size:
+ssl_client-1.36.1-r0 installed size:
 28 KiB
 
-ssl_client-1.36.0-r9 license:
+ssl_client-1.36.1-r0 license:
 GPL-2.0-only
 
 ```
