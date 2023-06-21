@@ -4,11 +4,19 @@
 
 -	[`irssi:1`](#irssi1)
 -	[`irssi:1-alpine`](#irssi1-alpine)
+-	[`irssi:1-alpine3.17`](#irssi1-alpine317)
+-	[`irssi:1-bullseye`](#irssi1-bullseye)
 -	[`irssi:1.4`](#irssi14)
 -	[`irssi:1.4-alpine`](#irssi14-alpine)
+-	[`irssi:1.4-alpine3.17`](#irssi14-alpine317)
+-	[`irssi:1.4-bullseye`](#irssi14-bullseye)
 -	[`irssi:1.4.4`](#irssi144)
 -	[`irssi:1.4.4-alpine`](#irssi144-alpine)
+-	[`irssi:1.4.4-alpine3.17`](#irssi144-alpine317)
+-	[`irssi:1.4.4-bullseye`](#irssi144-bullseye)
 -	[`irssi:alpine`](#irssialpine)
+-	[`irssi:alpine3.17`](#irssialpine317)
+-	[`irssi:bullseye`](#irssibullseye)
 -	[`irssi:latest`](#irssilatest)
 
 ## `irssi:1`
@@ -884,6 +892,14 @@ CMD ["irssi"]
 		Size: 5.1 MB (5125449 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `irssi:1-alpine3.17`
+
+**does not exist** (yet?)
+
+## `irssi:1-bullseye`
+
+**does not exist** (yet?)
+
 ## `irssi:1.4`
 
 ```console
@@ -1756,6 +1772,14 @@ CMD ["irssi"]
 		Last Modified: Fri, 16 Jun 2023 07:33:41 GMT  
 		Size: 5.1 MB (5125449 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `irssi:1.4-alpine3.17`
+
+**does not exist** (yet?)
+
+## `irssi:1.4-bullseye`
+
+**does not exist** (yet?)
 
 ## `irssi:1.4.4`
 
@@ -2630,6 +2654,14 @@ CMD ["irssi"]
 		Size: 5.1 MB (5125449 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `irssi:1.4.4-alpine3.17`
+
+**does not exist** (yet?)
+
+## `irssi:1.4.4-bullseye`
+
+**does not exist** (yet?)
+
 ## `irssi:alpine`
 
 ```console
@@ -3037,6 +3069,14 @@ CMD ["irssi"]
 		Last Modified: Fri, 16 Jun 2023 07:33:41 GMT  
 		Size: 5.1 MB (5125449 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `irssi:alpine3.17`
+
+**does not exist** (yet?)
+
+## `irssi:bullseye`
+
+**does not exist** (yet?)
 
 ## `irssi:latest`
 
