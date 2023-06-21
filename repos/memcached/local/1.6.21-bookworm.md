@@ -1,9 +1,9 @@
-# `memcached:1.6.20`
+# `memcached:1.6.21`
 
 ## Docker Metadata
 
-- Image ID: `sha256:cbcfa8d0003c80b0bba4004f4b15b4a5600b9dd481ac2d887bc31e794f067464`
-- Created: `2023-06-14T20:50:41.423391086Z`
+- Image ID: `sha256:a4d0c1490511995c15a4c1ca7c8413337bed068ea95507aae882010b051ca37e`
+- Created: `2023-06-21T01:07:05.248007528Z`
 - Virtual Size: ~ 106.78 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,8 +11,8 @@
 - Command: `["memcached"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `MEMCACHED_VERSION=1.6.20`
-  - `MEMCACHED_SHA1=face85ed6fad41432ad818445b24eca55bccdd78`
+  - `MEMCACHED_VERSION=1.6.21`
+  - `MEMCACHED_SHA1=6d899680b4ba4b76b6c92120143cf87630ee984a`
 
 ## `dpkg` (`.deb`-based packages)
 
