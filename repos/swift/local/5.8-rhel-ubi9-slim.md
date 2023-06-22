@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:146b5c075792cdc85539b508d01009aaebbb805f95a9f8a619bc27fcceefa9db`
-- Created: `2023-06-04T18:33:35.485741736Z`
-- Virtual Size: ~ 467.76 Mb  
+- Image ID: `sha256:4de71b3757effb411f465f19b82f1324a3cdb4d05d792ec3124cb0ae6ba704dd`
+- Created: `2023-06-22T01:17:03.587856077Z`
+- Virtual Size: ~ 467.89 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -18,21 +18,21 @@
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2023-05-03T08:55:49`
+  - `build-date=2023-06-15T01:42:06`
   - `com.redhat.component=ubi9-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=Docker Container for the Swift programming language`
   - `distribution-scope=public`
-  - `io.buildah.version=1.27.3`
+  - `io.buildah.version=1.29.0`
   - `io.k8s.description=The Universal Base Image is designed and engineered to be the base layer for all of your containerized applications, middleware and utilities. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
   - `io.k8s.display-name=Red Hat Universal Base Image 9`
   - `io.openshift.expose-services=`
   - `io.openshift.tags=base rhel9`
   - `maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>`
   - `name=ubi9`
-  - `release=489`
+  - `release=696`
   - `summary=Provides the latest release of Red Hat Universal Base Image 9.`
-  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9/images/9.2-489`
+  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9/images/9.2-696`
   - `vcs-ref=6b5892a11894993e819f9a93ee1d7aaa80dc3a17`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
@@ -346,7 +346,7 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `krb5-libs-1.20.1-8.el9.x86_64`
+### `rpm` package: `krb5-libs-1.20.1-9.el9_2.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
@@ -718,13 +718,13 @@ Licenses (from `rpm --query`): OpenLDAP
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `openssl-3.0.7-6.el9_2.x86_64`
+### `rpm` package: `openssl-3.0.7-16.el9_2.x86_64`
 
 Licenses (from `rpm --query`): ASL 2.0
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `openssl-libs-3.0.7-6.el9_2.x86_64`
+### `rpm` package: `openssl-libs-3.0.7-16.el9_2.x86_64`
 
 Licenses (from `rpm --query`): ASL 2.0
 
@@ -778,7 +778,7 @@ Licenses (from `rpm --query`): MIT
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `python3-3.9.16-1.el9.x86_64`
+### `rpm` package: `python3-3.9.16-1.el9_2.1.x86_64`
 
 Licenses (from `rpm --query`): Python
 
@@ -892,7 +892,7 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `python3-libs-3.9.16-1.el9.x86_64`
+### `rpm` package: `python3-libs-3.9.16-1.el9_2.1.x86_64`
 
 Licenses (from `rpm --query`): Python
 
@@ -1036,25 +1036,25 @@ Licenses (from `rpm --query`): GPLv2
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `systemd-252-13.el9_2.x86_64`
+### `rpm` package: `systemd-252-14.el9_2.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `systemd-libs-252-13.el9_2.x86_64`
+### `rpm` package: `systemd-libs-252-14.el9_2.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `systemd-pam-252-13.el9_2.x86_64`
+### `rpm` package: `systemd-pam-252-14.el9_2.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `systemd-rpm-macros-252-13.el9_2.noarch`
+### `rpm` package: `systemd-rpm-macros-252-14.el9_2.1.noarch`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
