@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5f1af4d2f8b92472032db235e289cb9962144969514aff20659771cbd821edea`
-- Created: `2023-06-15T05:44:42.915632572Z`
-- Virtual Size: ~ 57.22 Mb  
+- Image ID: `sha256:6be6e0e30722062f7d0e647c925e5239badb1739c57c83238d83b8a422b169fe`
+- Created: `2023-06-22T01:28:26.992717504Z`
+- Virtual Size: ~ 57.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["irssi"]`
@@ -19,16 +19,16 @@
 ### `apk` package: `alpine-baselayout`
 
 ```console
-alpine-baselayout-3.4.0-r0 description:
+alpine-baselayout-3.4.3-r1 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-3.4.0-r0 webpage:
+alpine-baselayout-3.4.3-r1 webpage:
 https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
-alpine-baselayout-3.4.0-r0 installed size:
+alpine-baselayout-3.4.3-r1 installed size:
 324 KiB
 
-alpine-baselayout-3.4.0-r0 license:
+alpine-baselayout-3.4.3-r1 license:
 GPL-2.0-only
 
 ```
@@ -36,16 +36,16 @@ GPL-2.0-only
 ### `apk` package: `alpine-baselayout-data`
 
 ```console
-alpine-baselayout-data-3.4.0-r0 description:
+alpine-baselayout-data-3.4.3-r1 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-data-3.4.0-r0 webpage:
+alpine-baselayout-data-3.4.3-r1 webpage:
 https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
-alpine-baselayout-data-3.4.0-r0 installed size:
+alpine-baselayout-data-3.4.3-r1 installed size:
 76 KiB
 
-alpine-baselayout-data-3.4.0-r0 license:
+alpine-baselayout-data-3.4.3-r1 license:
 GPL-2.0-only
 
 ```
@@ -70,16 +70,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-2.12.10-r1 description:
+apk-tools-2.14.0-r2 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-2.12.10-r1 webpage:
+apk-tools-2.14.0-r2 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-2.12.10-r1 installed size:
-300 KiB
+apk-tools-2.14.0-r2 installed size:
+304 KiB
 
-apk-tools-2.12.10-r1 license:
+apk-tools-2.14.0-r2 license:
 GPL-2.0-only
 
 ```
@@ -87,16 +87,16 @@ GPL-2.0-only
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.35.0-r29 description:
+busybox-1.36.1-r0 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.35.0-r29 webpage:
+busybox-1.36.1-r0 webpage:
 https://busybox.net/
 
-busybox-1.35.0-r29 installed size:
-940 KiB
+busybox-1.36.1-r0 installed size:
+924 KiB
 
-busybox-1.35.0-r29 license:
+busybox-1.36.1-r0 license:
 GPL-2.0-only
 
 ```
@@ -104,16 +104,16 @@ GPL-2.0-only
 ### `apk` package: `busybox-binsh`
 
 ```console
-busybox-binsh-1.35.0-r29 description:
+busybox-binsh-1.36.1-r0 description:
 busybox ash /bin/sh
 
-busybox-binsh-1.35.0-r29 webpage:
+busybox-binsh-1.36.1-r0 webpage:
 https://busybox.net/
 
-busybox-binsh-1.35.0-r29 installed size:
+busybox-binsh-1.36.1-r0 installed size:
 8192 B
 
-busybox-binsh-1.35.0-r29 license:
+busybox-binsh-1.36.1-r0 license:
 GPL-2.0-only
 
 ```
@@ -128,7 +128,7 @@ ca-certificates-20230506-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
 ca-certificates-20230506-r0 installed size:
-692 KiB
+688 KiB
 
 ca-certificates-20230506-r0 license:
 MPL-2.0 AND MIT
@@ -155,16 +155,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `glib`
 
 ```console
-glib-2.74.7-r0 description:
+glib-2.76.3-r0 description:
 Common C routines used by Gtk+ and other libs
 
-glib-2.74.7-r0 webpage:
+glib-2.76.3-r0 webpage:
 https://developer.gnome.org/glib/
 
-glib-2.74.7-r0 installed size:
-3396 KiB
+glib-2.76.3-r0 installed size:
+3824 KiB
 
-glib-2.74.7-r0 license:
+glib-2.76.3-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -172,16 +172,16 @@ LGPL-2.1-or-later
 ### `apk` package: `libblkid`
 
 ```console
-libblkid-2.38.1-r1 description:
+libblkid-2.38.1-r8 description:
 Block device identification library from util-linux
 
-libblkid-2.38.1-r1 webpage:
+libblkid-2.38.1-r8 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libblkid-2.38.1-r1 installed size:
-312 KiB
+libblkid-2.38.1-r8 installed size:
+300 KiB
 
-libblkid-2.38.1-r1 license:
+libblkid-2.38.1-r8 license:
 LGPL-2.1-or-later
 
 ```
@@ -189,16 +189,16 @@ LGPL-2.1-or-later
 ### `apk` package: `libbz2`
 
 ```console
-libbz2-1.0.8-r4 description:
+libbz2-1.0.8-r5 description:
 Shared library for bz2
 
-libbz2-1.0.8-r4 webpage:
+libbz2-1.0.8-r5 webpage:
 https://sourceware.org/bzip2/
 
-libbz2-1.0.8-r4 installed size:
+libbz2-1.0.8-r5 installed size:
 88 KiB
 
-libbz2-1.0.8-r4 license:
+libbz2-1.0.8-r5 license:
 bzip2-1.0.6
 
 ```
@@ -206,16 +206,16 @@ bzip2-1.0.6
 ### `apk` package: `libc-utils`
 
 ```console
-libc-utils-0.7.2-r3 description:
+libc-utils-0.7.2-r5 description:
 Meta package to pull in correct libc
 
-libc-utils-0.7.2-r3 webpage:
+libc-utils-0.7.2-r5 webpage:
 https://alpinelinux.org
 
-libc-utils-0.7.2-r3 installed size:
+libc-utils-0.7.2-r5 installed size:
 4096 B
 
-libc-utils-0.7.2-r3 license:
+libc-utils-0.7.2-r5 license:
 BSD-2-Clause AND BSD-3-Clause
 
 ```
@@ -223,16 +223,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.0.9-r1 description:
+libcrypto3-3.1.1-r1 description:
 Crypto library from openssl
 
-libcrypto3-3.0.9-r1 webpage:
+libcrypto3-3.1.1-r1 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.0.9-r1 installed size:
-4108 KiB
+libcrypto3-3.1.1-r1 installed size:
+4464 KiB
 
-libcrypto3-3.0.9-r1 license:
+libcrypto3-3.1.1-r1 license:
 Apache-2.0
 
 ```
@@ -240,16 +240,16 @@ Apache-2.0
 ### `apk` package: `libffi`
 
 ```console
-libffi-3.4.4-r0 description:
+libffi-3.4.4-r2 description:
 portable, high level programming interface to various calling conventions.
 
-libffi-3.4.4-r0 webpage:
+libffi-3.4.4-r2 webpage:
 https://sourceware.org/libffi/
 
-libffi-3.4.4-r0 installed size:
+libffi-3.4.4-r2 installed size:
 52 KiB
 
-libffi-3.4.4-r0 license:
+libffi-3.4.4-r2 license:
 MIT
 
 ```
@@ -257,16 +257,16 @@ MIT
 ### `apk` package: `libintl`
 
 ```console
-libintl-0.21.1-r1 description:
+libintl-0.21.1-r7 description:
 GNU gettext runtime library
 
-libintl-0.21.1-r1 webpage:
+libintl-0.21.1-r7 webpage:
 https://www.gnu.org/software/gettext/gettext.html
 
-libintl-0.21.1-r1 installed size:
+libintl-0.21.1-r7 installed size:
 56 KiB
 
-libintl-0.21.1-r1 license:
+libintl-0.21.1-r7 license:
 LGPL-2.1-or-later
 
 ```
@@ -274,33 +274,50 @@ LGPL-2.1-or-later
 ### `apk` package: `libmount`
 
 ```console
-libmount-2.38.1-r1 description:
+libmount-2.38.1-r8 description:
 Block device identification library from util-linux
 
-libmount-2.38.1-r1 webpage:
+libmount-2.38.1-r8 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libmount-2.38.1-r1 installed size:
+libmount-2.38.1-r8 installed size:
+336 KiB
+
+libmount-2.38.1-r8 license:
+LGPL-2.1-or-later
+
+```
+
+### `apk` package: `libncursesw`
+
+```console
+libncursesw-6.4_p20230506-r0 description:
+Console display library (libncursesw)
+
+libncursesw-6.4_p20230506-r0 webpage:
+https://invisible-island.net/ncurses/
+
+libncursesw-6.4_p20230506-r0 installed size:
 344 KiB
 
-libmount-2.38.1-r1 license:
-LGPL-2.1-or-later
+libncursesw-6.4_p20230506-r0 license:
+X11
 
 ```
 
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.0.9-r1 description:
+libssl3-3.1.1-r1 description:
 SSL shared libraries
 
-libssl3-3.0.9-r1 webpage:
+libssl3-3.1.1-r1 webpage:
 https://www.openssl.org/
 
-libssl3-3.0.9-r1 installed size:
-608 KiB
+libssl3-3.1.1-r1 installed size:
+552 KiB
 
-libssl3-3.0.9-r1 license:
+libssl3-3.1.1-r1 license:
 Apache-2.0
 
 ```
@@ -308,16 +325,16 @@ Apache-2.0
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.3-r5 description:
+musl-1.2.4-r0 description:
 the musl c library (libc) implementation
 
-musl-1.2.3-r5 webpage:
+musl-1.2.4-r0 webpage:
 https://musl.libc.org/
 
-musl-1.2.3-r5 installed size:
+musl-1.2.4-r0 installed size:
 620 KiB
 
-musl-1.2.3-r5 license:
+musl-1.2.4-r0 license:
 MIT
 
 ```
@@ -325,67 +342,50 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.3-r5 description:
+musl-utils-1.2.4-r0 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.3-r5 webpage:
+musl-utils-1.2.4-r0 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.3-r5 installed size:
+musl-utils-1.2.4-r0 installed size:
 132 KiB
 
-musl-utils-1.2.3-r5 license:
+musl-utils-1.2.4-r0 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
-
-```
-
-### `apk` package: `ncurses-libs`
-
-```console
-ncurses-libs-6.3_p20221119-r1 description:
-Ncurses libraries
-
-ncurses-libs-6.3_p20221119-r1 webpage:
-https://invisible-island.net/ncurses/
-
-ncurses-libs-6.3_p20221119-r1 installed size:
-500 KiB
-
-ncurses-libs-6.3_p20221119-r1 license:
-MIT
 
 ```
 
 ### `apk` package: `ncurses-terminfo-base`
 
 ```console
-ncurses-terminfo-base-6.3_p20221119-r1 description:
+ncurses-terminfo-base-6.4_p20230506-r0 description:
 Descriptions of common terminals
 
-ncurses-terminfo-base-6.3_p20221119-r1 webpage:
+ncurses-terminfo-base-6.4_p20230506-r0 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-terminfo-base-6.3_p20221119-r1 installed size:
+ncurses-terminfo-base-6.4_p20230506-r0 installed size:
 216 KiB
 
-ncurses-terminfo-base-6.3_p20221119-r1 license:
-MIT
+ncurses-terminfo-base-6.4_p20230506-r0 license:
+X11
 
 ```
 
 ### `apk` package: `pcre2`
 
 ```console
-pcre2-10.42-r0 description:
+pcre2-10.42-r1 description:
 Perl-compatible regular expression library
 
-pcre2-10.42-r0 webpage:
+pcre2-10.42-r1 webpage:
 https://pcre.org/
 
-pcre2-10.42-r0 installed size:
-672 KiB
+pcre2-10.42-r1 installed size:
+676 KiB
 
-pcre2-10.42-r0 license:
+pcre2-10.42-r1 license:
 BSD-3-Clause
 
 ```
@@ -393,67 +393,33 @@ BSD-3-Clause
 ### `apk` package: `perl`
 
 ```console
-perl-5.36.0-r2 description:
+perl-5.36.1-r2 description:
 Larry Wall's Practical Extraction and Report Language
 
-perl-5.36.0-r2 webpage:
+perl-5.36.1-r2 webpage:
 https://www.perl.org/
 
-perl-5.36.0-r2 installed size:
-37 MiB
+perl-5.36.1-r2 installed size:
+38 MiB
 
-perl-5.36.0-r2 license:
+perl-5.36.1-r2 license:
 Artistic-Perl OR GPL-1.0-or-later
-
-```
-
-### `apk` package: `perl-capture-tiny`
-
-```console
-perl-capture-tiny-0.48-r2 description:
-Capture STDOUT and STDERR from Perl, XS or external programs
-
-perl-capture-tiny-0.48-r2 webpage:
-https://metacpan.org/release/Capture-Tiny/
-
-perl-capture-tiny-0.48-r2 installed size:
-84 KiB
-
-perl-capture-tiny-0.48-r2 license:
-Apache-2.0
 
 ```
 
 ### `apk` package: `perl-clone`
 
 ```console
-perl-clone-0.46-r0 description:
+perl-clone-0.46-r1 description:
 Clone perl module
 
-perl-clone-0.46-r0 webpage:
+perl-clone-0.46-r1 webpage:
 https://metacpan.org/release/Clone
 
-perl-clone-0.46-r0 installed size:
+perl-clone-0.46-r1 installed size:
 60 KiB
 
-perl-clone-0.46-r0 license:
-GPL-1.0-or-later OR Artistic-1.0-Perl
-
-```
-
-### `apk` package: `perl-devel-symdump`
-
-```console
-perl-devel-symdump-2.18-r2 description:
-dump symbol names or the symbol table
-
-perl-devel-symdump-2.18-r2 webpage:
-https://metacpan.org/release/Devel-Symdump/
-
-perl-devel-symdump-2.18-r2 installed size:
-76 KiB
-
-perl-devel-symdump-2.18-r2 license:
+perl-clone-0.46-r1 license:
 GPL-1.0-or-later OR Artistic-1.0-Perl
 
 ```
@@ -461,16 +427,16 @@ GPL-1.0-or-later OR Artistic-1.0-Perl
 ### `apk` package: `perl-encode-locale`
 
 ```console
-perl-encode-locale-1.05-r3 description:
+perl-encode-locale-1.05-r4 description:
 Perl module - Determine the locale encoding
 
-perl-encode-locale-1.05-r3 webpage:
-http://search.cpan.org/~gaas
+perl-encode-locale-1.05-r4 webpage:
+https://metacpan.org/dist/Encode-Locale
 
-perl-encode-locale-1.05-r3 installed size:
+perl-encode-locale-1.05-r4 installed size:
 72 KiB
 
-perl-encode-locale-1.05-r3 license:
+perl-encode-locale-1.05-r4 license:
 GPL-1.0-or-later OR Artistic-1.0-Perl
 
 ```
@@ -495,16 +461,16 @@ GPL-1.0-or-later OR Artistic-1.0-Perl
 ### `apk` package: `perl-html-parser`
 
 ```console
-perl-html-parser-3.80-r0 description:
+perl-html-parser-3.81-r1 description:
 HTML parser class
 
-perl-html-parser-3.80-r0 webpage:
+perl-html-parser-3.81-r1 webpage:
 https://metacpan.org/release/HTML-Parser/
 
-perl-html-parser-3.80-r0 installed size:
+perl-html-parser-3.81-r1 installed size:
 184 KiB
 
-perl-html-parser-3.80-r0 license:
+perl-html-parser-3.81-r1 license:
 GPL-1.0-or-later OR Artistic-1.0-Perl
 
 ```
@@ -512,16 +478,16 @@ GPL-1.0-or-later OR Artistic-1.0-Perl
 ### `apk` package: `perl-html-tagset`
 
 ```console
-perl-html-tagset-3.20-r3 description:
+perl-html-tagset-3.20-r4 description:
 data tables useful in parsing HTML
 
-perl-html-tagset-3.20-r3 webpage:
+perl-html-tagset-3.20-r4 webpage:
 https://metacpan.org/release/HTML-Tagset/
 
-perl-html-tagset-3.20-r3 installed size:
+perl-html-tagset-3.20-r4 installed size:
 68 KiB
 
-perl-html-tagset-3.20-r3 license:
+perl-html-tagset-3.20-r4 license:
 GPL-1.0-or-later OR Artistic-1.0-Perl
 
 ```
@@ -539,23 +505,6 @@ perl-http-cookies-6.10-r0 installed size:
 96 KiB
 
 perl-http-cookies-6.10-r0 license:
-GPL-1.0-or-later OR Artistic-1.0-Perl
-
-```
-
-### `apk` package: `perl-http-daemon`
-
-```console
-perl-http-daemon-6.14-r0 description:
-HTTP::Daemon perl module
-
-perl-http-daemon-6.14-r0 webpage:
-https://metacpan.org/release/HTTP-Daemon
-
-perl-http-daemon-6.14-r0 installed size:
-84 KiB
-
-perl-http-daemon-6.14-r0 license:
 GPL-1.0-or-later OR Artistic-1.0-Perl
 
 ```
@@ -631,16 +580,16 @@ GPL-1.0-or-later OR Artistic-1.0-Perl
 ### `apk` package: `perl-libwww`
 
 ```console
-perl-libwww-6.67-r0 description:
-Perl module - World Wide Web library
+perl-libwww-6.68-r1 description:
+The World-Wide Web library for Perl
 
-perl-libwww-6.67-r0 webpage:
-https://metacpan.org/pod/LWP
+perl-libwww-6.68-r1 webpage:
+https://metacpan.org/release/libwww-perl/
 
-perl-libwww-6.67-r0 installed size:
+perl-libwww-6.68-r1 installed size:
 388 KiB
 
-perl-libwww-6.67-r0 license:
+perl-libwww-6.68-r1 license:
 GPL-1.0-or-later OR Artistic-1.0-Perl
 
 ```
@@ -648,16 +597,16 @@ GPL-1.0-or-later OR Artistic-1.0-Perl
 ### `apk` package: `perl-lwp-mediatypes`
 
 ```console
-perl-lwp-mediatypes-6.04-r1 description:
+perl-lwp-mediatypes-6.04-r2 description:
 Perl module - guess media type for a file or a URL
 
-perl-lwp-mediatypes-6.04-r1 webpage:
-http://search.cpan.org/~gaas
+perl-lwp-mediatypes-6.04-r2 webpage:
+https://metacpan.org/dist/LWP-MediaTypes
 
-perl-lwp-mediatypes-6.04-r1 installed size:
+perl-lwp-mediatypes-6.04-r2 installed size:
 112 KiB
 
-perl-lwp-mediatypes-6.04-r1 license:
+perl-lwp-mediatypes-6.04-r2 license:
 GPL-1.0-or-later OR Artistic-1.0-Perl
 
 ```
@@ -679,70 +628,19 @@ GPL-1.0-or-later OR Artistic-1.0-Perl
 
 ```
 
-### `apk` package: `perl-pod-coverage`
-
-```console
-perl-pod-coverage-0.23-r3 description:
-Perl - Checks if the documentation of a module is comprehensive
-
-perl-pod-coverage-0.23-r3 webpage:
-http://search.cpan.org/~rclamp/Pod-Coverage-0.23
-
-perl-pod-coverage-0.23-r3 installed size:
-128 KiB
-
-perl-pod-coverage-0.23-r3 license:
-Artistic-1.0-Perl or GPL-1.0-or-later
-
-```
-
-### `apk` package: `perl-pod-parser`
-
-```console
-perl-pod-parser-1.65-r0 description:
-Modules for parsing/translating POD format documents
-
-perl-pod-parser-1.65-r0 webpage:
-https://metacpan.org/release/Pod-Parser/
-
-perl-pod-parser-1.65-r0 installed size:
-248 KiB
-
-perl-pod-parser-1.65-r0 license:
-GPL-1.0-or-later OR Artistic-1.0-Perl
-
-```
-
-### `apk` package: `perl-test-pod`
-
-```console
-perl-test-pod-1.52-r2 description:
-check for POD errors in files
-
-perl-test-pod-1.52-r2 webpage:
-https://metacpan.org/release/Test-Pod/
-
-perl-test-pod-1.52-r2 installed size:
-60 KiB
-
-perl-test-pod-1.52-r2 license:
-GPL-1.0-or-later OR Artistic-1.0-Perl
-
-```
-
 ### `apk` package: `perl-try-tiny`
 
 ```console
-perl-try-tiny-0.31-r0 description:
-minimal try/catch with proper preservation of $@
+perl-try-tiny-0.31-r1 description:
+Minimal try/catch with proper preservation of $@
 
-perl-try-tiny-0.31-r0 webpage:
-https://search.cpan.org/dist/Try-Tiny/
+perl-try-tiny-0.31-r1 webpage:
+https://metacpan.org/release/Try-Tiny/
 
-perl-try-tiny-0.31-r0 installed size:
+perl-try-tiny-0.31-r1 installed size:
 76 KiB
 
-perl-try-tiny-0.31-r0 license:
+perl-try-tiny-0.31-r1 license:
 MIT
 
 ```
@@ -750,16 +648,16 @@ MIT
 ### `apk` package: `perl-uri`
 
 ```console
-perl-uri-5.17-r0 description:
+perl-uri-5.19-r0 description:
 Uniform Resource Identifiers (absolute and relative)
 
-perl-uri-5.17-r0 webpage:
+perl-uri-5.19-r0 webpage:
 https://metacpan.org/release/URI/
 
-perl-uri-5.17-r0 installed size:
+perl-uri-5.19-r0 installed size:
 340 KiB
 
-perl-uri-5.17-r0 license:
+perl-uri-5.19-r0 license:
 GPL-1.0-or-later OR Artistic-1.0-Perl
 
 ```
@@ -784,16 +682,16 @@ GPL-2.0 or Artistic
 ### `apk` package: `scanelf`
 
 ```console
-scanelf-1.3.5-r1 description:
+scanelf-1.3.7-r1 description:
 Scan ELF binaries for stuff
 
-scanelf-1.3.5-r1 webpage:
+scanelf-1.3.7-r1 webpage:
 https://wiki.gentoo.org/wiki/Hardened/PaX_Utilities
 
-scanelf-1.3.5-r1 installed size:
-96 KiB
+scanelf-1.3.7-r1 installed size:
+88 KiB
 
-scanelf-1.3.5-r1 license:
+scanelf-1.3.7-r1 license:
 GPL-2.0-only
 
 ```
@@ -801,16 +699,16 @@ GPL-2.0-only
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.35.0-r29 description:
+ssl_client-1.36.1-r0 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.35.0-r29 webpage:
+ssl_client-1.36.1-r0 webpage:
 https://busybox.net/
 
-ssl_client-1.35.0-r29 installed size:
+ssl_client-1.36.1-r0 installed size:
 28 KiB
 
-ssl_client-1.35.0-r29 license:
+ssl_client-1.36.1-r0 license:
 GPL-2.0-only
 
 ```
@@ -818,16 +716,16 @@ GPL-2.0-only
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.2.13-r0 description:
+zlib-1.2.13-r1 description:
 A compression/decompression Library
 
-zlib-1.2.13-r0 webpage:
+zlib-1.2.13-r1 webpage:
 https://zlib.net/
 
-zlib-1.2.13-r0 installed size:
+zlib-1.2.13-r1 installed size:
 108 KiB
 
-zlib-1.2.13-r0 license:
+zlib-1.2.13-r1 license:
 Zlib
 
 ```
