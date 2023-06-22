@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:07e80309a912f246bffb2919befd88427500d9c40a29c0dead9a36f3aab00998`
-- Created: `2023-06-12T20:21:46.580343604Z`
-- Virtual Size: ~ 165.37 Mb  
+- Image ID: `sha256:018a44c32cfb5b73ed4a86d20f57a1e04e5b390719d51a3219297dae3f85f68c`
+- Created: `2023-06-15T07:29:03.099011723Z`
+- Virtual Size: ~ 159.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -164,16 +164,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20220614-r4 description:
+ca-certificates-20230506-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20220614-r4 webpage:
+ca-certificates-20230506-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20220614-r4 installed size:
-688 KiB
+ca-certificates-20230506-r0 installed size:
+692 KiB
 
-ca-certificates-20220614-r4 license:
+ca-certificates-20230506-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -181,16 +181,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20220614-r4 description:
+ca-certificates-bundle-20230506-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20220614-r4 webpage:
+ca-certificates-bundle-20230506-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20220614-r4 installed size:
+ca-certificates-bundle-20230506-r0 installed size:
 232 KiB
 
-ca-certificates-bundle-20220614-r4 license:
+ca-certificates-bundle-20230506-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -198,16 +198,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-7.88.1-r1 description:
+curl-8.1.2-r0 description:
 URL retrival utility and library
 
-curl-7.88.1-r1 webpage:
+curl-8.1.2-r0 webpage:
 https://curl.se/
 
-curl-7.88.1-r1 installed size:
-264 KiB
+curl-8.1.2-r0 installed size:
+268 KiB
 
-curl-7.88.1-r1 license:
+curl-8.1.2-r0 license:
 curl
 
 ```
@@ -504,16 +504,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.3-r4 description:
+musl-utils-1.2.3-r5 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.3-r4 webpage:
+musl-utils-1.2.3-r5 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.3-r4 installed size:
+musl-utils-1.2.3-r5 installed size:
 132 KiB
 
-musl-utils-1.2.3-r4 license:
+musl-utils-1.2.3-r5 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```
@@ -589,16 +589,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.0.8-r3 description:
+openssl-3.0.9-r1 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.0.8-r3 webpage:
+openssl-3.0.9-r1 webpage:
 https://www.openssl.org/
 
-openssl-3.0.8-r3 installed size:
-868 KiB
+openssl-3.0.9-r1 installed size:
+872 KiB
 
-openssl-3.0.8-r3 license:
+openssl-3.0.9-r1 license:
 Apache-2.0
 
 ```
