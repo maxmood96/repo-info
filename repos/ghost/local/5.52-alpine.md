@@ -1,23 +1,23 @@
-# `ghost:5.51.1-alpine`
+# `ghost:5.52.3-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:81b87a80b5279dfd4934b63a4395dc857f0ee76aa8690e551e6645b503c70147`
-- Created: `2023-06-13T23:53:17.574509679Z`
-- Virtual Size: ~ 465.34 Mb  
+- Image ID: `sha256:6b8415b8b080bc851f10006088ad02d0640ebd79fb6a0bca45485b5b92b13562`
+- Created: `2023-06-22T00:26:58.244830588Z`
+- Virtual Size: ~ 465.38 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["node","current/index.js"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=16.20.0`
+  - `NODE_VERSION=16.20.1`
   - `YARN_VERSION=1.22.19`
   - `NODE_ENV=production`
   - `GHOST_CLI_VERSION=1.24.0`
   - `GHOST_INSTALL=/var/lib/ghost`
   - `GHOST_CONTENT=/var/lib/ghost/content`
-  - `GHOST_VERSION=5.51.1`
+  - `GHOST_VERSION=5.52.3`
 
 ## `apk` (`.apk`-based packages)
 
@@ -143,16 +143,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20220614-r4 description:
+ca-certificates-bundle-20230506-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20220614-r4 webpage:
+ca-certificates-bundle-20230506-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20220614-r4 installed size:
+ca-certificates-bundle-20230506-r0 installed size:
 232 KiB
 
-ca-certificates-bundle-20220614-r4 license:
+ca-certificates-bundle-20230506-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -177,16 +177,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.0.8-r3 description:
+libcrypto3-3.0.9-r1 description:
 Crypto library from openssl
 
-libcrypto3-3.0.8-r3 webpage:
+libcrypto3-3.0.9-r1 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.0.8-r3 installed size:
+libcrypto3-3.0.9-r1 installed size:
 4108 KiB
 
-libcrypto3-3.0.8-r3 license:
+libcrypto3-3.0.9-r1 license:
 Apache-2.0
 
 ```
@@ -211,16 +211,16 @@ GPL-2.0-or-later LGPL-2.1-or-later
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.0.8-r3 description:
+libssl3-3.0.9-r1 description:
 SSL shared libraries
 
-libssl3-3.0.8-r3 webpage:
+libssl3-3.0.9-r1 webpage:
 https://www.openssl.org/
 
-libssl3-3.0.8-r3 installed size:
+libssl3-3.0.9-r1 installed size:
 608 KiB
 
-libssl3-3.0.8-r3 license:
+libssl3-3.0.9-r1 license:
 Apache-2.0
 
 ```
@@ -245,16 +245,16 @@ GPL-2.0-or-later LGPL-2.1-or-later
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.3-r4 description:
+musl-1.2.3-r5 description:
 the musl c library (libc) implementation
 
-musl-1.2.3-r4 webpage:
+musl-1.2.3-r5 webpage:
 https://musl.libc.org/
 
-musl-1.2.3-r4 installed size:
+musl-1.2.3-r5 installed size:
 620 KiB
 
-musl-1.2.3-r4 license:
+musl-1.2.3-r5 license:
 MIT
 
 ```
@@ -262,16 +262,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.3-r4 description:
+musl-utils-1.2.3-r5 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.3-r4 webpage:
+musl-utils-1.2.3-r5 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.3-r4 installed size:
+musl-utils-1.2.3-r5 installed size:
 132 KiB
 
-musl-utils-1.2.3-r4 license:
+musl-utils-1.2.3-r5 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```
