@@ -1,12 +1,13 @@
 ## `openjdk:22-ea-3-oracle`
 
 ```console
-$ docker pull openjdk@sha256:b9ba0122278c41155de4c85b8a22b5146f70a6a8c59cf59f94ae2c08648ef61f
+$ docker pull openjdk@sha256:e00df45ed7380c32f5bdc3d4df717e8e04f332e50760611be705db84355d9262
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 1
+-	Platforms: 2
 	-	linux; amd64
+	-	linux; arm64 variant v8
 
 ### `openjdk:22-ea-3-oracle` - linux; amd64
 
@@ -54,4 +55,52 @@ CMD ["jshell"]
 	-	`sha256:56f32827efd0a6d03e1fcef00dd1a7d33cf09726994fd9cb2ab124c8c7efa16a`  
 		Last Modified: Fri, 23 Jun 2023 00:30:06 GMT  
 		Size: 204.6 MB (204634428 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `openjdk:22-ea-3-oracle` - linux; arm64 variant v8
+
+```console
+$ docker pull openjdk@sha256:14d4e82cfa7e7cb33f9ee8029722dda92b05b11920f34498f31b188ef5ab5633
+```
+
+-	Docker Version: 20.10.23
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **262.3 MB (262250100 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:88fec1196517785b2b20f57a08816bfffb1723eaaf85a2719f469194aa5e9036`
+-	Default Command: `["jshell"]`
+
+```dockerfile
+# Thu, 15 Jun 2023 23:40:30 GMT
+ADD file:37cef5fcd08f57d005adb8f14f69ecc78a9c669280f45f7d81b1c899489e93ba in / 
+# Thu, 15 Jun 2023 23:40:31 GMT
+CMD ["/bin/bash"]
+# Thu, 15 Jun 2023 23:59:49 GMT
+RUN set -eux; 	microdnf install 		gzip 		tar 				binutils 		freetype fontconfig 	; 	microdnf clean all
+# Thu, 15 Jun 2023 23:59:49 GMT
+ENV JAVA_HOME=/usr/java/openjdk-22
+# Thu, 15 Jun 2023 23:59:49 GMT
+ENV PATH=/usr/java/openjdk-22/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Thu, 15 Jun 2023 23:59:49 GMT
+ENV LANG=C.UTF-8
+# Fri, 23 Jun 2023 01:04:17 GMT
+ENV JAVA_VERSION=22-ea+3
+# Fri, 23 Jun 2023 01:04:32 GMT
+RUN set -eux; 		arch="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')"; 	case "$arch" in 		'i386:x86-64') 			downloadUrl='https://download.java.net/java/early_access/jdk22/3/GPL/openjdk-22-ea+3_linux-x64_bin.tar.gz'; 			downloadSha256='6541c5f5f08ec100af327c36768e302185851f548f6c33d1fe26250133998d5a'; 			;; 		'aarch64') 			downloadUrl='https://download.java.net/java/early_access/jdk22/3/GPL/openjdk-22-ea+3_linux-aarch64_bin.tar.gz'; 			downloadSha256='e94529988d1c61d552981cc44896e13a1c49f3720567b2a92ad103f24291a167'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		curl -fL -o openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		rm -rf "$JAVA_HOME/lib/security/cacerts"; 	ln -sT /etc/pki/ca-trust/extracted/java/cacerts "$JAVA_HOME/lib/security/cacerts"; 		ln -sfT "$JAVA_HOME" /usr/java/default; 	ln -sfT "$JAVA_HOME" /usr/java/latest; 	for bin in "$JAVA_HOME/bin/"*; do 		base="$(basename "$bin")"; 		[ ! -e "/usr/bin/$base" ]; 		alternatives --install "/usr/bin/$base" "$base" "$bin" 20000; 	done; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Fri, 23 Jun 2023 01:04:34 GMT
+CMD ["jshell"]
+```
+
+-	Layers:
+	-	`sha256:029ab4a5f8e75aadbbba1505624cf10a4c35a0fd897cc85b9e7536785b8ba37c`  
+		Last Modified: Thu, 15 Jun 2023 23:41:45 GMT  
+		Size: 43.6 MB (43601336 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9cca9ab147b9b93cf01a583c33e8ade844f6d31bfb69334e1614ef5dd4d6a973`  
+		Last Modified: Fri, 16 Jun 2023 00:01:25 GMT  
+		Size: 15.7 MB (15673775 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:686fb36ae49bfcbeec88f883c092350ddd349a2a7a1e2a366a07b20be3cbb7c2`  
+		Last Modified: Fri, 23 Jun 2023 01:08:31 GMT  
+		Size: 203.0 MB (202974989 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
