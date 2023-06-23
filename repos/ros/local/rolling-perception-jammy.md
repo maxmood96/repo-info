@@ -1166,14 +1166,9 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `FSFUL`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cups=2.4.1op1-1ubuntu4.2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.1op1-1ubuntu4.2.dsc' cups_2.4.1op1-1ubuntu4.2.dsc 3135 SHA512:c5fa1db5a3838f40a8c3447b55625dac4160762d7052b84e293a11bf3e62b1d011aee5af304f4f4d94c91de20f9543d16668e3145c11be31e126261bb4fca6f6
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.1op1.orig.tar.gz' cups_2.4.1op1.orig.tar.gz 8113914 SHA512:74e83728fcc3baf709176442b26711250fd4d4ede1e81e35b02a5607711067e28cd5a05d5bc3337953f6b2236c5a429b13f3a7f1218a08a2d3c30a8c9b0d96fd
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.1op1-1ubuntu4.2.debian.tar.xz' cups_2.4.1op1-1ubuntu4.2.debian.tar.xz 355892 SHA512:93c8bcbfb745b93d5dbf9dd328d08020da0cbcd022b78f1f2e0316869435748d1df7e44ed949364e086c5cc82e239876d3a3047b6c0314fcc1f389743e16b8a3
-```
 
 ### `dpkg` source package: `curl=7.81.0-1ubuntu1.10`
 
@@ -6151,14 +6146,9 @@ Licenses: (parsed from: `/usr/share/doc/libegl-mesa0/copyright`, `/usr/share/doc
 - `MLAA`
 - `SGI`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mesa=22.2.5-0ubuntu0.1~22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_22.2.5-0ubuntu0.1%7e22.04.1.dsc' mesa_22.2.5-0ubuntu0.1~22.04.1.dsc 5511 SHA512:20b9daed82b436e073e81f130610a59beaced5403ccc62ac06ebadf99b088ef14bfe899e1ea05058f9e4921d9f1db8b786164015c6b753ac5321bbb5c5c6cdd6
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_22.2.5.orig.tar.gz' mesa_22.2.5.orig.tar.gz 26307331 SHA512:87f8d2e712a7529ac4a9d7be6798cf68b915ae9b0ce517ceaf4f31562e4dc40bef453d7804467df794a9455d78c75b2a9b35e4065242414ae03ef86920e65301
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_22.2.5-0ubuntu0.1%7e22.04.1.diff.gz' mesa_22.2.5-0ubuntu0.1~22.04.1.diff.gz 115036 SHA512:ed4321e4fac4ecfbdd75d104a24bea2688ae40069bc1438fc3defa2b85aab505df9c58f801734cf3755e50208f6dd25b750d0b5fe8fd71262c2be3d626af7408
-```
 
 ### `dpkg` source package: `minizip=1.1-8build1`
 

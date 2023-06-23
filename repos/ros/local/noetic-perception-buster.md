@@ -626,20 +626,13 @@ Licenses: (parsed from: `/usr/share/doc/libavahi-client3/copyright`, `/usr/share
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris avahi=0.7-4+deb10u2
-'http://deb.debian.org/debian-security/pool/updates/main/a/avahi/avahi_0.7-4%2bdeb10u2.dsc' avahi_0.7-4+deb10u2.dsc 3920 SHA256:42ef397c9c0bdffb954270057b002648d33c5b4f68d0f701b6699704b253190a
-'http://deb.debian.org/debian-security/pool/updates/main/a/avahi/avahi_0.7.orig.tar.gz' avahi_0.7.orig.tar.gz 1333400 SHA256:57a99b5dfe7fdae794e3d1ee7a62973a368e91e414bd0dfa5d84434de5b14804
-'http://deb.debian.org/debian-security/pool/updates/main/a/avahi/avahi_0.7-4%2bdeb10u2.debian.tar.xz' avahi_0.7-4+deb10u2.debian.tar.xz 31252 SHA256:785ba45c2b8ea78118edec35260ff8b1097a5d46ddd41ccf1bb069d3e86f640a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/avahi/0.7-4+deb10u2/
 
-- https://sources.debian.net/src/avahi/0.7-4+deb10u2/ (for browsing the source)
-- https://sources.debian.net/src/avahi/0.7-4+deb10u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/avahi/0.7-4+deb10u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-files=10.3+deb10u13`
 
