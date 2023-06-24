@@ -1,10 +1,10 @@
-# `pypy:3.9-7.3.12-slim-bookworm`
+# `pypy:3.10-7.3.12-slim-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b220d84c9aef3f809e96c8f1b64cdc2ef07e6797524c7c7d248a9f609345c79c`
-- Created: `2023-06-21T01:25:36.179217092Z`
-- Virtual Size: ~ 227.07 Mb  
+- Image ID: `sha256:3eed23dce562a1518923d07679df07304fe8bdd9503ca5efb09354d70d2111c9`
+- Created: `2023-06-24T03:39:33.070889838Z`
+- Virtual Size: ~ 227.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["pypy3"]`

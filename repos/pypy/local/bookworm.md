@@ -1,9 +1,9 @@
-# `pypy:3.9-7.3.12-bookworm`
+# `pypy:3.10-7.3.12-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1d596f168d59d51225c8f893d928ac195889053409ca5c2f06cb30d9abc0b21b`
-- Created: `2023-06-21T01:24:48.270968955Z`
+- Image ID: `sha256:05a38780b6fbb9e5483e79a30dea350c18051261d844f8a56309fe0dd0742d4a`
+- Created: `2023-06-24T03:38:40.465898781Z`
 - Virtual Size: ~ 1.06 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`

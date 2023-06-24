@@ -1,10 +1,10 @@
-# `pypy:3.9-7.3.12-slim`
+# `pypy:3.10-7.3.12-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:21ed40142d68ed097c3b8f18d9a636f44513d885d93e36c97d667d44fbd3c6a8`
-- Created: `2023-06-21T01:27:08.612166069Z`
-- Virtual Size: ~ 226.10 Mb  
+- Image ID: `sha256:c584eac468df42bf43afa98ce957f5595910e058b99ff8cdeb3b01a1a963133a`
+- Created: `2023-06-24T03:41:05.444745139Z`
+- Virtual Size: ~ 226.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["pypy3"]`
