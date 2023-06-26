@@ -1,7 +1,7 @@
 ## `maven:3-sapmachine-17`
 
 ```console
-$ docker pull maven@sha256:af73b53a8ae1debb757e790851c962ae088a7aac7b0bf2ad35253376ef4f5c7c
+$ docker pull maven@sha256:998c74d9a2366405f58fdc35fcc5acdafb9d0973f7e2f255f830192c77f466cd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -105,13 +105,13 @@ CMD ["mvn"]
 ### `maven:3-sapmachine-17` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:027273bda0cf62b960da00e48174288f7fde5ac814c4713692151b85dde53800
+$ docker pull maven@sha256:e817b9d7758c311d1f59eaf4b2ef3282d0759c3e507533ff1368f1939432b55d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **259.2 MB (259208270 bytes)**  
+-	Total Size: **259.2 MB (259221424 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fd5b20aba81984c620d9b73e6f4e3854e2b9462e0ce842de172f4af5f4539585`
+-	Image ID: `sha256:a585778a3b33b3206ad07de503b3c62986422c1169fdf5caa62d2d3f1e265703`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -136,27 +136,27 @@ RUN export GNUPGHOME="$(mktemp -d)"     && gpg --batch --keyserver hkps://keys.o
 ENV JAVA_HOME=/usr/lib/jvm/sapmachine-17
 # Fri, 16 Jun 2023 03:27:02 GMT
 CMD ["jshell"]
-# Tue, 16 May 2023 11:35:55 GMT
+# Mon, 26 Jun 2023 13:48:06 GMT
 RUN apt-get update   && apt-get install -y ca-certificates curl git --no-install-recommends   && rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 16 May 2023 11:35:55 GMT
+# Mon, 26 Jun 2023 13:48:06 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Tue, 16 May 2023 11:35:55 GMT
+# Mon, 26 Jun 2023 13:48:06 GMT
 COPY /usr/share/maven /usr/share/maven # buildkit
-# Tue, 16 May 2023 11:35:55 GMT
+# Mon, 26 Jun 2023 13:48:06 GMT
 COPY /usr/local/bin/mvn-entrypoint.sh /usr/local/bin/mvn-entrypoint.sh # buildkit
-# Tue, 16 May 2023 11:35:55 GMT
+# Mon, 26 Jun 2023 13:48:06 GMT
 COPY /usr/share/maven/ref/settings-docker.xml /usr/share/maven/ref/settings-docker.xml # buildkit
-# Tue, 16 May 2023 11:35:55 GMT
+# Mon, 26 Jun 2023 13:48:06 GMT
 RUN ln -s ${MAVEN_HOME}/bin/mvn /usr/bin/mvn # buildkit
-# Tue, 16 May 2023 11:35:55 GMT
-ARG MAVEN_VERSION=3.9.2
-# Tue, 16 May 2023 11:35:55 GMT
+# Mon, 26 Jun 2023 13:48:06 GMT
+ARG MAVEN_VERSION=3.9.3
+# Mon, 26 Jun 2023 13:48:06 GMT
 ARG USER_HOME_DIR=/root
-# Tue, 16 May 2023 11:35:55 GMT
+# Mon, 26 Jun 2023 13:48:06 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Tue, 16 May 2023 11:35:55 GMT
+# Mon, 26 Jun 2023 13:48:06 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Tue, 16 May 2023 11:35:55 GMT
+# Mon, 26 Jun 2023 13:48:06 GMT
 CMD ["mvn"]
 ```
 
@@ -177,21 +177,21 @@ CMD ["mvn"]
 		Last Modified: Fri, 16 Jun 2023 05:43:40 GMT  
 		Size: 19.8 MB (19804871 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:994aa64a633062de018e2e936eac377b0cc7427c0fbc241f9c671c7ce0053684`  
-		Last Modified: Fri, 16 Jun 2023 05:43:37 GMT  
-		Size: 9.3 MB (9314415 bytes)  
+	-	`sha256:0451fc0e33a9b97be4989af4b3743a7474d77c476e31fa478bf19ef575f1da76`  
+		Last Modified: Mon, 26 Jun 2023 21:52:53 GMT  
+		Size: 9.3 MB (9327570 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c792bfa0c8fa17a21192461c047cd148657f89543ff43740ae1b586db9485d79`  
-		Last Modified: Fri, 16 Jun 2023 05:43:37 GMT  
+	-	`sha256:13080be3f311bd5f089690dd5ecefa7bb23b122e218768e71684e48212cdfc37`  
+		Last Modified: Mon, 26 Jun 2023 21:52:52 GMT  
 		Size: 852.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e61c4f035decbc4bbf67f09350d3779f81c42ca713895e1d97083f35e3228bfd`  
-		Last Modified: Fri, 16 Jun 2023 05:43:37 GMT  
+	-	`sha256:4d8378c95044370e151d73011052503b8a42a99f2221f915b8b586674f57d69d`  
+		Last Modified: Mon, 26 Jun 2023 21:52:52 GMT  
 		Size: 358.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:809fed2ebcaff2a069e617637f1b0a977e1b00bf26a87464c88fe46f8597a854`  
-		Last Modified: Fri, 16 Jun 2023 05:43:37 GMT  
-		Size: 156.0 B  
+	-	`sha256:f9120fd36d77ff1f90ee190b391a5f97275c1624be988c55a2db4ae7390dff1a`  
+		Last Modified: Mon, 26 Jun 2023 21:52:52 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3-sapmachine-17` - linux; ppc64le

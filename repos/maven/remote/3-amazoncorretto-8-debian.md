@@ -1,7 +1,7 @@
 ## `maven:3-amazoncorretto-8-debian`
 
 ```console
-$ docker pull maven@sha256:1e557ae053409f4d5035b733b7380b4617754586c205491e3e4dfec37d286d0b
+$ docker pull maven@sha256:d50e7ba744f675839fe8a510864938e8efcc1d99670e79f9a90c0fb1cc52c2ac
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -80,13 +80,13 @@ CMD ["mvn"]
 ### `maven:3-amazoncorretto-8-debian` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:efaa86bd43ec99663ae9b0bcabd910c12e4fe0aaabe0e31a1f7667e6cb9eef9c
+$ docker pull maven@sha256:95a5e3e65eb1d35c7ad860893f30e252c9404e2f14afd71a0caf29039acd962a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **144.2 MB (144174517 bytes)**  
+-	Total Size: **144.2 MB (144187660 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8879a6552d420e5b6fd60fcbead547d1ba958542ecae396d0dfd4323e8066e3a`
+-	Image ID: `sha256:0bb1e1996bc933ff9dc2c156a346680042de0633422d256338eae4858505d98c`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -95,27 +95,27 @@ $ docker pull maven@sha256:efaa86bd43ec99663ae9b0bcabd910c12e4fe0aaabe0e31a1f766
 ADD file:f75c3fe22fec548b35a86a9a5802fdc97497f5d253cf630d65f13282169d3f3f in / 
 # Mon, 12 Jun 2023 23:40:14 GMT
 CMD ["bash"]
-# Sat, 17 Jun 2023 08:38:16 GMT
+# Mon, 26 Jun 2023 13:48:06 GMT
 RUN apt-get update   && apt-get install -y curl gnupg   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key | gpg --batch --import   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && rm -r "$GNUPGHOME"   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-1.8.0-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
-# Sat, 17 Jun 2023 08:38:16 GMT
+# Mon, 26 Jun 2023 13:48:06 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Sat, 17 Jun 2023 08:38:16 GMT
+# Mon, 26 Jun 2023 13:48:06 GMT
 COPY /usr/share/maven /usr/share/maven # buildkit
-# Sat, 17 Jun 2023 08:38:16 GMT
+# Mon, 26 Jun 2023 13:48:06 GMT
 COPY /usr/local/bin/mvn-entrypoint.sh /usr/local/bin/mvn-entrypoint.sh # buildkit
-# Sat, 17 Jun 2023 08:38:16 GMT
+# Mon, 26 Jun 2023 13:48:06 GMT
 COPY /usr/share/maven/ref/settings-docker.xml /usr/share/maven/ref/settings-docker.xml # buildkit
-# Sat, 17 Jun 2023 08:38:16 GMT
+# Mon, 26 Jun 2023 13:48:06 GMT
 RUN ln -s ${MAVEN_HOME}/bin/mvn /usr/bin/mvn # buildkit
-# Sat, 17 Jun 2023 08:38:16 GMT
-ARG MAVEN_VERSION=3.9.2
-# Sat, 17 Jun 2023 08:38:16 GMT
+# Mon, 26 Jun 2023 13:48:06 GMT
+ARG MAVEN_VERSION=3.9.3
+# Mon, 26 Jun 2023 13:48:06 GMT
 ARG USER_HOME_DIR=/root
-# Sat, 17 Jun 2023 08:38:16 GMT
+# Mon, 26 Jun 2023 13:48:06 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Sat, 17 Jun 2023 08:38:16 GMT
+# Mon, 26 Jun 2023 13:48:06 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Sat, 17 Jun 2023 08:38:16 GMT
+# Mon, 26 Jun 2023 13:48:06 GMT
 CMD ["mvn"]
 ```
 
@@ -128,19 +128,19 @@ CMD ["mvn"]
 		Last Modified: Tue, 20 Jun 2023 23:03:40 GMT  
 		Size: 105.7 MB (105706194 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11c16f298ea2b9db7cb85b0aa7af40d41bec0d025ff7209d5697f1f9073fcbad`  
-		Last Modified: Tue, 20 Jun 2023 23:03:33 GMT  
-		Size: 9.3 MB (9314414 bytes)  
+	-	`sha256:41623305cd35d5c59f051a85c906a07fddf91290f67a89657d89ef593b069b07`  
+		Last Modified: Mon, 26 Jun 2023 21:52:24 GMT  
+		Size: 9.3 MB (9327566 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08f877a67a48f1d4e1c436c0be96ff17b47d576b09ab58d30eb06a2622d27ede`  
-		Last Modified: Tue, 20 Jun 2023 23:03:32 GMT  
-		Size: 854.0 B  
+	-	`sha256:3da0334239a5fb12a32112e93e0c0e543df2f146be6646889624144cb61a53d2`  
+		Last Modified: Mon, 26 Jun 2023 21:52:23 GMT  
+		Size: 847.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:836186f2aa07281ee69e43f66e254ca47bb7e67ae4ba47af48e88acd2175a5fd`  
-		Last Modified: Tue, 20 Jun 2023 23:03:33 GMT  
-		Size: 357.0 B  
+	-	`sha256:240b03f657258aa608d5d8c9d2b579cf7e862bdb5e666710cd8fe5e3642c17c7`  
+		Last Modified: Mon, 26 Jun 2023 21:52:23 GMT  
+		Size: 353.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d47f15fed6fdf442a440befdd51051b2961f3888b05631eb62f551854d2280b`  
-		Last Modified: Tue, 20 Jun 2023 23:03:32 GMT  
-		Size: 164.0 B  
+	-	`sha256:74225965d986ae86cf737d5c9fc1f2f809848e42dce8d00bdac6ee1d4a00b1bc`  
+		Last Modified: Mon, 26 Jun 2023 21:52:24 GMT  
+		Size: 166.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
