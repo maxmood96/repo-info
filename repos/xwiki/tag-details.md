@@ -4512,7 +4512,7 @@ CMD ["xwiki"]
 ## `xwiki:15`
 
 ```console
-$ docker pull xwiki@sha256:0ba5122a74827254d45fbc2ddc668d66400ea3187aa86ab9620d11bbdea30f2a
+$ docker pull xwiki@sha256:979fa595c7b0a568ebcbedd5b01e26ada35e59cf519384da14ff2921201c38c9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4523,14 +4523,14 @@ $ docker pull xwiki@sha256:0ba5122a74827254d45fbc2ddc668d66400ea3187aa86ab9620d1
 ### `xwiki:15` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:208c0828b77fcf874840ddded8b37b9cb329127f8ea196499e316ffd86559b05
+$ docker pull xwiki@sha256:02e0bfc9c454eee3dfcc098574e45be313bc01a9d3998c34a15aec08e4707ea9
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **589.8 MB (589788392 bytes)**  
+-	Total Size: **587.2 MB (587245368 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c2ac4aa71841cc195c6d929b61363f55d5754b96fa946a7f6e2f05af6498e16d`
+-	Image ID: `sha256:0545a35ad07387c7efa5c0daa658f17963357b33d28aee6ddf932afccce08a4a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -4605,39 +4605,39 @@ LABEL org.opencontainers.image.vendor=xwiki.org
 LABEL org.opencontainers.image.licenses=LGPL-2.1
 # Fri, 16 Jun 2023 10:11:16 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/*
-# Fri, 16 Jun 2023 10:11:17 GMT
-ENV XWIKI_VERSION=15.4
-# Fri, 16 Jun 2023 10:11:17 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/15.4
-# Fri, 16 Jun 2023 10:11:17 GMT
-ENV XWIKI_DOWNLOAD_SHA256=f24def5b4e3f97c56ed03d5983766028676d6ce205bd60d3798352be5a050505
-# Fri, 16 Jun 2023 10:11:57 GMT
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_VERSION=15.5
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/15.5
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_DOWNLOAD_SHA256=e552586d371da33b012cfbd974b3ba80d1b147a5c892ad6cf989960212cdaa02
+# Tue, 27 Jun 2023 01:41:10 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Fri, 16 Jun 2023 10:11:58 GMT
+# Tue, 27 Jun 2023 01:41:11 GMT
 ENV MYSQL_JDBC_VERSION=8.0.33
-# Fri, 16 Jun 2023 10:11:58 GMT
+# Tue, 27 Jun 2023 01:41:11 GMT
 ENV MYSQL_JDBC_SHA256=e2a3b2fc726a1ac64e998585db86b30fa8bf3f706195b78bb77c5f99bf877bd9
-# Fri, 16 Jun 2023 10:11:58 GMT
+# Tue, 27 Jun 2023 01:41:11 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/8.0.33
-# Fri, 16 Jun 2023 10:11:58 GMT
+# Tue, 27 Jun 2023 01:41:11 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-8.0.33.jar
-# Fri, 16 Jun 2023 10:11:58 GMT
+# Tue, 27 Jun 2023 01:41:11 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-8.0.33.jar
-# Fri, 16 Jun 2023 10:11:59 GMT
+# Tue, 27 Jun 2023 01:41:12 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c -
-# Fri, 16 Jun 2023 10:11:59 GMT
+# Tue, 27 Jun 2023 01:41:12 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Fri, 16 Jun 2023 10:11:59 GMT
+# Tue, 27 Jun 2023 01:41:12 GMT
 COPY file:1b8409986f3e4eb79a7a0b18472cb2692a61d504fb5ef34292bc997b79fd760d in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Fri, 16 Jun 2023 10:12:00 GMT
+# Tue, 27 Jun 2023 01:41:13 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Fri, 16 Jun 2023 10:12:00 GMT
+# Tue, 27 Jun 2023 01:41:13 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Fri, 16 Jun 2023 10:12:00 GMT
+# Tue, 27 Jun 2023 01:41:13 GMT
 VOLUME [/usr/local/xwiki]
-# Fri, 16 Jun 2023 10:12:00 GMT
+# Tue, 27 Jun 2023 01:41:13 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jun 2023 10:12:00 GMT
+# Tue, 27 Jun 2023 01:41:13 GMT
 CMD ["xwiki"]
 ```
 
@@ -4678,29 +4678,29 @@ CMD ["xwiki"]
 		Last Modified: Fri, 16 Jun 2023 10:16:06 GMT  
 		Size: 178.3 MB (178335543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0c80f9e73d670c33d5fe706e60a513004a81d3035decf77bfd10f09b12761b37`  
-		Last Modified: Fri, 16 Jun 2023 10:15:59 GMT  
-		Size: 306.8 MB (306779726 bytes)  
+	-	`sha256:9bd47dc719a99e43b69ba9a140ab83a542a83a650994b217dc718f91105cd69e`  
+		Last Modified: Tue, 27 Jun 2023 01:42:57 GMT  
+		Size: 304.2 MB (304236713 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5333a1ead54427a95f33fd77ee949aa6966efa6efd11205d29a8df8b5ae52c33`  
-		Last Modified: Fri, 16 Jun 2023 10:15:42 GMT  
-		Size: 2.3 MB (2343673 bytes)  
+	-	`sha256:74b97a6d523b6dba73f270d7299e1dbbc54de2f4ed56e0c3f33a291fc4ad7ba2`  
+		Last Modified: Tue, 27 Jun 2023 01:42:41 GMT  
+		Size: 2.3 MB (2343669 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9b0ce21bb11b3ddeb486346aa6bd569fa77192263a6fde9a24436b9bf08e558`  
-		Last Modified: Fri, 16 Jun 2023 10:15:42 GMT  
-		Size: 1.3 KB (1347 bytes)  
+	-	`sha256:e4e4a42e9034c83f3a1f1dfcb4dacb8e5a1b25aebe119dcc62c023dad6823607`  
+		Last Modified: Tue, 27 Jun 2023 01:42:40 GMT  
+		Size: 1.3 KB (1344 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0566d4a68b2c970bf5b1b8cf63f8aad2e34518653598b044f4299aab39e755b4`  
-		Last Modified: Fri, 16 Jun 2023 10:15:41 GMT  
-		Size: 2.3 KB (2309 bytes)  
+	-	`sha256:a20f48998f9362e0d8d6102527c0b50c39435b96ccdcdc513a3ca26e75f48a83`  
+		Last Modified: Tue, 27 Jun 2023 01:42:40 GMT  
+		Size: 2.3 KB (2304 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f7d02bec5189fff55e5175a3877a1968f61de5fce3b84a36717548ec872c9ef8`  
-		Last Modified: Fri, 16 Jun 2023 10:15:41 GMT  
-		Size: 6.0 KB (5995 bytes)  
+	-	`sha256:3f18b2c8b019f176759c24b717806bfb051615f9004adf3b11ce54433b43f946`  
+		Last Modified: Tue, 27 Jun 2023 01:42:40 GMT  
+		Size: 6.0 KB (6003 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:119ece74ae38252f80d763200cc375e912968676ba890805d2dcd674e74f95b0`  
-		Last Modified: Fri, 16 Jun 2023 10:15:41 GMT  
-		Size: 2.5 KB (2507 bytes)  
+	-	`sha256:0ae3dd734e9952f4e1b2cfc1a5e844079689414fea35c00f4debc02d70f6e447`  
+		Last Modified: Tue, 27 Jun 2023 01:42:40 GMT  
+		Size: 2.5 KB (2500 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `xwiki:15` - linux; arm64 variant v8
@@ -4889,7 +4889,7 @@ CMD ["xwiki"]
 ## `xwiki:15-mariadb-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:445b2b68c785d6435663f4a74cf616fd5033f0c91e98b558c02c43e17a2b52ef
+$ docker pull xwiki@sha256:b5eb1881a08541e70d1a5cbcfe2d2da0099bdac35a396d5edc28d1de015b3b80
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4900,14 +4900,14 @@ $ docker pull xwiki@sha256:445b2b68c785d6435663f4a74cf616fd5033f0c91e98b558c02c4
 ### `xwiki:15-mariadb-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:7d5b0b15ea0e96030027b7cac69aff7a51b79d4f83d6bed8e4417857da81a89f
+$ docker pull xwiki@sha256:08060683af9af5d94bd94d1a9b3574524a130e4364ef4911c9f27c7b4160b163
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **588.0 MB (588039272 bytes)**  
+-	Total Size: **585.5 MB (585496266 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:03c5ba73085068a0d5fb034f7bb324bbcc1fea7441c2b397eea26a09737d5091`
+-	Image ID: `sha256:0003e3176b872fe97a7b7f697235a4d8414ddfe1181b2c300e41691fc1c45bf9`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -4982,39 +4982,39 @@ LABEL org.opencontainers.image.vendor=xwiki.org
 LABEL org.opencontainers.image.licenses=LGPL-2.1
 # Fri, 16 Jun 2023 10:11:16 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/*
-# Fri, 16 Jun 2023 10:11:17 GMT
-ENV XWIKI_VERSION=15.4
-# Fri, 16 Jun 2023 10:11:17 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/15.4
-# Fri, 16 Jun 2023 10:11:17 GMT
-ENV XWIKI_DOWNLOAD_SHA256=f24def5b4e3f97c56ed03d5983766028676d6ce205bd60d3798352be5a050505
-# Fri, 16 Jun 2023 10:11:57 GMT
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_VERSION=15.5
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/15.5
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_DOWNLOAD_SHA256=e552586d371da33b012cfbd974b3ba80d1b147a5c892ad6cf989960212cdaa02
+# Tue, 27 Jun 2023 01:41:10 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Fri, 16 Jun 2023 10:13:31 GMT
+# Tue, 27 Jun 2023 01:42:09 GMT
 ENV MARIADB_JDBC_VERSION=3.1.4
-# Fri, 16 Jun 2023 10:13:31 GMT
+# Tue, 27 Jun 2023 01:42:09 GMT
 ENV MARIADB_JDBC_SHA256=eb88b5d727d82e25117e2b6fabcec1daf734633b0a576456c73215884c189ad4
-# Fri, 16 Jun 2023 10:13:31 GMT
+# Tue, 27 Jun 2023 01:42:09 GMT
 ENV MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.1.4
-# Fri, 16 Jun 2023 10:13:32 GMT
+# Tue, 27 Jun 2023 01:42:09 GMT
 ENV MARIADB_JDBC_ARTIFACT=mariadb-java-client-3.1.4.jar
-# Fri, 16 Jun 2023 10:13:32 GMT
+# Tue, 27 Jun 2023 01:42:09 GMT
 ENV MARIADB_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mariadb-java-client-3.1.4.jar
-# Fri, 16 Jun 2023 10:13:32 GMT
+# Tue, 27 Jun 2023 01:42:10 GMT
 RUN curl -fSL "${MARIADB_JDBC_PREFIX}/${MARIADB_JDBC_ARTIFACT}" -o $MARIADB_JDBC_TARGET &&   echo "$MARIADB_JDBC_SHA256 $MARIADB_JDBC_TARGET" | sha256sum -c -
-# Fri, 16 Jun 2023 10:13:32 GMT
+# Tue, 27 Jun 2023 01:42:10 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Fri, 16 Jun 2023 10:13:33 GMT
+# Tue, 27 Jun 2023 01:42:10 GMT
 COPY file:0e237c3876eeb3b5f3473a064d3e507da2df6c228ca714687930b34e3b687601 in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Fri, 16 Jun 2023 10:13:33 GMT
+# Tue, 27 Jun 2023 01:42:10 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Fri, 16 Jun 2023 10:13:33 GMT
+# Tue, 27 Jun 2023 01:42:10 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Fri, 16 Jun 2023 10:13:33 GMT
+# Tue, 27 Jun 2023 01:42:11 GMT
 VOLUME [/usr/local/xwiki]
-# Fri, 16 Jun 2023 10:13:33 GMT
+# Tue, 27 Jun 2023 01:42:11 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jun 2023 10:13:33 GMT
+# Tue, 27 Jun 2023 01:42:11 GMT
 CMD ["xwiki"]
 ```
 
@@ -5055,28 +5055,28 @@ CMD ["xwiki"]
 		Last Modified: Fri, 16 Jun 2023 10:16:06 GMT  
 		Size: 178.3 MB (178335543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0c80f9e73d670c33d5fe706e60a513004a81d3035decf77bfd10f09b12761b37`  
-		Last Modified: Fri, 16 Jun 2023 10:15:59 GMT  
-		Size: 306.8 MB (306779726 bytes)  
+	-	`sha256:9bd47dc719a99e43b69ba9a140ab83a542a83a650994b217dc718f91105cd69e`  
+		Last Modified: Tue, 27 Jun 2023 01:42:57 GMT  
+		Size: 304.2 MB (304236713 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa9c74e14b2d260215b88a8f5b38dbaf60ca75436dd31fa55767a3661e5f0593`  
-		Last Modified: Fri, 16 Jun 2023 10:17:26 GMT  
-		Size: 594.6 KB (594551 bytes)  
+	-	`sha256:45c1c29a5f690ee19b152bf94d2287c58e834f4d1ba28711278dd168a7626fd7`  
+		Last Modified: Tue, 27 Jun 2023 01:44:04 GMT  
+		Size: 594.5 KB (594550 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7233cd593a469ab22cdbb0b96a1923c224edb5c7c5afb93cb2805e4ddecb5086`  
-		Last Modified: Fri, 16 Jun 2023 10:17:26 GMT  
+	-	`sha256:af370251f108dd2614340b7304ce4e265907ad3a3dfa4f9f39783fca4b7bd59d`  
+		Last Modified: Tue, 27 Jun 2023 01:44:04 GMT  
 		Size: 1.3 KB (1345 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:146d8e31efe996e04f601eaf2174fede6f20fa2722872e7e29c9ca4635598eb5`  
-		Last Modified: Fri, 16 Jun 2023 10:17:26 GMT  
+	-	`sha256:6e59b2a6e23c5cfc1dd938bebcb9805b9d35db311ef8295d8b7d5c6617a66159`  
+		Last Modified: Tue, 27 Jun 2023 01:44:05 GMT  
 		Size: 2.3 KB (2312 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:40922519664f9afd9c5f1fd4453b8535a543a86bdb79a1d897f324c13acf0a45`  
-		Last Modified: Fri, 16 Jun 2023 10:17:26 GMT  
-		Size: 6.0 KB (5997 bytes)  
+	-	`sha256:e308247bd0d6fa7044aaf78e32bf162f3dec037acbdad61718918fc6bcca05eb`  
+		Last Modified: Tue, 27 Jun 2023 01:44:04 GMT  
+		Size: 6.0 KB (6005 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:034a808158393b89616b1f1a027a4ece7db042538d3def080a8987141bcccdfa`  
-		Last Modified: Fri, 16 Jun 2023 10:17:26 GMT  
+	-	`sha256:e7f43672cefc65f8633377a0b78db21c0e618ffb86a3e92c6dbd63c6564a6924`  
+		Last Modified: Tue, 27 Jun 2023 01:44:04 GMT  
 		Size: 2.5 KB (2506 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -5266,7 +5266,7 @@ CMD ["xwiki"]
 ## `xwiki:15-mysql-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:0ba5122a74827254d45fbc2ddc668d66400ea3187aa86ab9620d11bbdea30f2a
+$ docker pull xwiki@sha256:979fa595c7b0a568ebcbedd5b01e26ada35e59cf519384da14ff2921201c38c9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5277,14 +5277,14 @@ $ docker pull xwiki@sha256:0ba5122a74827254d45fbc2ddc668d66400ea3187aa86ab9620d1
 ### `xwiki:15-mysql-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:208c0828b77fcf874840ddded8b37b9cb329127f8ea196499e316ffd86559b05
+$ docker pull xwiki@sha256:02e0bfc9c454eee3dfcc098574e45be313bc01a9d3998c34a15aec08e4707ea9
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **589.8 MB (589788392 bytes)**  
+-	Total Size: **587.2 MB (587245368 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c2ac4aa71841cc195c6d929b61363f55d5754b96fa946a7f6e2f05af6498e16d`
+-	Image ID: `sha256:0545a35ad07387c7efa5c0daa658f17963357b33d28aee6ddf932afccce08a4a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -5359,39 +5359,39 @@ LABEL org.opencontainers.image.vendor=xwiki.org
 LABEL org.opencontainers.image.licenses=LGPL-2.1
 # Fri, 16 Jun 2023 10:11:16 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/*
-# Fri, 16 Jun 2023 10:11:17 GMT
-ENV XWIKI_VERSION=15.4
-# Fri, 16 Jun 2023 10:11:17 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/15.4
-# Fri, 16 Jun 2023 10:11:17 GMT
-ENV XWIKI_DOWNLOAD_SHA256=f24def5b4e3f97c56ed03d5983766028676d6ce205bd60d3798352be5a050505
-# Fri, 16 Jun 2023 10:11:57 GMT
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_VERSION=15.5
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/15.5
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_DOWNLOAD_SHA256=e552586d371da33b012cfbd974b3ba80d1b147a5c892ad6cf989960212cdaa02
+# Tue, 27 Jun 2023 01:41:10 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Fri, 16 Jun 2023 10:11:58 GMT
+# Tue, 27 Jun 2023 01:41:11 GMT
 ENV MYSQL_JDBC_VERSION=8.0.33
-# Fri, 16 Jun 2023 10:11:58 GMT
+# Tue, 27 Jun 2023 01:41:11 GMT
 ENV MYSQL_JDBC_SHA256=e2a3b2fc726a1ac64e998585db86b30fa8bf3f706195b78bb77c5f99bf877bd9
-# Fri, 16 Jun 2023 10:11:58 GMT
+# Tue, 27 Jun 2023 01:41:11 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/8.0.33
-# Fri, 16 Jun 2023 10:11:58 GMT
+# Tue, 27 Jun 2023 01:41:11 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-8.0.33.jar
-# Fri, 16 Jun 2023 10:11:58 GMT
+# Tue, 27 Jun 2023 01:41:11 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-8.0.33.jar
-# Fri, 16 Jun 2023 10:11:59 GMT
+# Tue, 27 Jun 2023 01:41:12 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c -
-# Fri, 16 Jun 2023 10:11:59 GMT
+# Tue, 27 Jun 2023 01:41:12 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Fri, 16 Jun 2023 10:11:59 GMT
+# Tue, 27 Jun 2023 01:41:12 GMT
 COPY file:1b8409986f3e4eb79a7a0b18472cb2692a61d504fb5ef34292bc997b79fd760d in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Fri, 16 Jun 2023 10:12:00 GMT
+# Tue, 27 Jun 2023 01:41:13 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Fri, 16 Jun 2023 10:12:00 GMT
+# Tue, 27 Jun 2023 01:41:13 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Fri, 16 Jun 2023 10:12:00 GMT
+# Tue, 27 Jun 2023 01:41:13 GMT
 VOLUME [/usr/local/xwiki]
-# Fri, 16 Jun 2023 10:12:00 GMT
+# Tue, 27 Jun 2023 01:41:13 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jun 2023 10:12:00 GMT
+# Tue, 27 Jun 2023 01:41:13 GMT
 CMD ["xwiki"]
 ```
 
@@ -5432,29 +5432,29 @@ CMD ["xwiki"]
 		Last Modified: Fri, 16 Jun 2023 10:16:06 GMT  
 		Size: 178.3 MB (178335543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0c80f9e73d670c33d5fe706e60a513004a81d3035decf77bfd10f09b12761b37`  
-		Last Modified: Fri, 16 Jun 2023 10:15:59 GMT  
-		Size: 306.8 MB (306779726 bytes)  
+	-	`sha256:9bd47dc719a99e43b69ba9a140ab83a542a83a650994b217dc718f91105cd69e`  
+		Last Modified: Tue, 27 Jun 2023 01:42:57 GMT  
+		Size: 304.2 MB (304236713 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5333a1ead54427a95f33fd77ee949aa6966efa6efd11205d29a8df8b5ae52c33`  
-		Last Modified: Fri, 16 Jun 2023 10:15:42 GMT  
-		Size: 2.3 MB (2343673 bytes)  
+	-	`sha256:74b97a6d523b6dba73f270d7299e1dbbc54de2f4ed56e0c3f33a291fc4ad7ba2`  
+		Last Modified: Tue, 27 Jun 2023 01:42:41 GMT  
+		Size: 2.3 MB (2343669 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9b0ce21bb11b3ddeb486346aa6bd569fa77192263a6fde9a24436b9bf08e558`  
-		Last Modified: Fri, 16 Jun 2023 10:15:42 GMT  
-		Size: 1.3 KB (1347 bytes)  
+	-	`sha256:e4e4a42e9034c83f3a1f1dfcb4dacb8e5a1b25aebe119dcc62c023dad6823607`  
+		Last Modified: Tue, 27 Jun 2023 01:42:40 GMT  
+		Size: 1.3 KB (1344 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0566d4a68b2c970bf5b1b8cf63f8aad2e34518653598b044f4299aab39e755b4`  
-		Last Modified: Fri, 16 Jun 2023 10:15:41 GMT  
-		Size: 2.3 KB (2309 bytes)  
+	-	`sha256:a20f48998f9362e0d8d6102527c0b50c39435b96ccdcdc513a3ca26e75f48a83`  
+		Last Modified: Tue, 27 Jun 2023 01:42:40 GMT  
+		Size: 2.3 KB (2304 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f7d02bec5189fff55e5175a3877a1968f61de5fce3b84a36717548ec872c9ef8`  
-		Last Modified: Fri, 16 Jun 2023 10:15:41 GMT  
-		Size: 6.0 KB (5995 bytes)  
+	-	`sha256:3f18b2c8b019f176759c24b717806bfb051615f9004adf3b11ce54433b43f946`  
+		Last Modified: Tue, 27 Jun 2023 01:42:40 GMT  
+		Size: 6.0 KB (6003 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:119ece74ae38252f80d763200cc375e912968676ba890805d2dcd674e74f95b0`  
-		Last Modified: Fri, 16 Jun 2023 10:15:41 GMT  
-		Size: 2.5 KB (2507 bytes)  
+	-	`sha256:0ae3dd734e9952f4e1b2cfc1a5e844079689414fea35c00f4debc02d70f6e447`  
+		Last Modified: Tue, 27 Jun 2023 01:42:40 GMT  
+		Size: 2.5 KB (2500 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `xwiki:15-mysql-tomcat` - linux; arm64 variant v8
@@ -5643,7 +5643,7 @@ CMD ["xwiki"]
 ## `xwiki:15-postgres-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:086f57ed24ab4e23b92d3fb93ca2efe56b26246a247256643a8700c02e22e781
+$ docker pull xwiki@sha256:a85547de3dc08a8183b0927dfe1025b44d4a4ddeaf3ea6a99bd5d0cdd0396731
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5654,14 +5654,14 @@ $ docker pull xwiki@sha256:086f57ed24ab4e23b92d3fb93ca2efe56b26246a247256643a870
 ### `xwiki:15-postgres-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:9fd1bb01b70897c8a5ee7785752f57dd162272367e8224765513f3a7a23342b8
+$ docker pull xwiki@sha256:9db8828614bb0b2e6cf23a98a635768400cc84f6c1e91277661daf56906a95c4
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **589.3 MB (589322198 bytes)**  
+-	Total Size: **586.8 MB (586779249 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:39d37c86533746392db16c7f81a1a92ef04cef3cc063fac2b9dec33f73d9f7f7`
+-	Image ID: `sha256:44a3c2a08180c4bde30aae21b9884e9125edb33c6cda58103cfbbe409478244f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -5736,29 +5736,29 @@ LABEL org.opencontainers.image.vendor=xwiki.org
 LABEL org.opencontainers.image.licenses=LGPL-2.1
 # Fri, 16 Jun 2023 10:12:34 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps     libpostgresql-jdbc-java &&   rm -rf /var/lib/apt/lists/*
-# Fri, 16 Jun 2023 10:12:35 GMT
-ENV XWIKI_VERSION=15.4
-# Fri, 16 Jun 2023 10:12:35 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/15.4
-# Fri, 16 Jun 2023 10:12:35 GMT
-ENV XWIKI_DOWNLOAD_SHA256=f24def5b4e3f97c56ed03d5983766028676d6ce205bd60d3798352be5a050505
-# Fri, 16 Jun 2023 10:13:14 GMT
+# Tue, 27 Jun 2023 01:41:20 GMT
+ENV XWIKI_VERSION=15.5
+# Tue, 27 Jun 2023 01:41:20 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/15.5
+# Tue, 27 Jun 2023 01:41:20 GMT
+ENV XWIKI_DOWNLOAD_SHA256=e552586d371da33b012cfbd974b3ba80d1b147a5c892ad6cf989960212cdaa02
+# Tue, 27 Jun 2023 01:41:59 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Fri, 16 Jun 2023 10:13:15 GMT
+# Tue, 27 Jun 2023 01:42:00 GMT
 RUN cp /usr/share/java/postgresql-jdbc4.jar /usr/local/tomcat/webapps/ROOT/WEB-INF/lib/
-# Fri, 16 Jun 2023 10:13:15 GMT
+# Tue, 27 Jun 2023 01:42:00 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Fri, 16 Jun 2023 10:13:15 GMT
+# Tue, 27 Jun 2023 01:42:00 GMT
 COPY file:4a923f484bb29a26630c19e1d617d3bf6aa6ae7c6c4a5561e97b037bcde0847c in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Fri, 16 Jun 2023 10:13:16 GMT
+# Tue, 27 Jun 2023 01:42:01 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Fri, 16 Jun 2023 10:13:16 GMT
+# Tue, 27 Jun 2023 01:42:01 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Fri, 16 Jun 2023 10:13:16 GMT
+# Tue, 27 Jun 2023 01:42:01 GMT
 VOLUME [/usr/local/xwiki]
-# Fri, 16 Jun 2023 10:13:16 GMT
+# Tue, 27 Jun 2023 01:42:01 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jun 2023 10:13:16 GMT
+# Tue, 27 Jun 2023 01:42:01 GMT
 CMD ["xwiki"]
 ```
 
@@ -5799,29 +5799,29 @@ CMD ["xwiki"]
 		Last Modified: Fri, 16 Jun 2023 10:17:07 GMT  
 		Size: 179.3 MB (179276103 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9fbb12961b9eef76c3d3d09ed4aa5859c6b748e7dad2db34f34eedea15ecb80c`  
-		Last Modified: Fri, 16 Jun 2023 10:16:59 GMT  
-		Size: 306.8 MB (306779658 bytes)  
+	-	`sha256:60a6eb965a43844f6f0974dfa2e92506452c8992b4c06e699e11c753b0022644`  
+		Last Modified: Tue, 27 Jun 2023 01:43:45 GMT  
+		Size: 304.2 MB (304236722 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:935bbb7cee936ba189fbc9c5fc736329ec06e89d12cd58445d4764d9757be29e`  
-		Last Modified: Fri, 16 Jun 2023 10:16:43 GMT  
-		Size: 936.8 KB (936847 bytes)  
+	-	`sha256:9f3670e551a89ef20601ac60cc69e45c26001dd894a6216e9155337347fa5f02`  
+		Last Modified: Tue, 27 Jun 2023 01:43:28 GMT  
+		Size: 936.8 KB (936844 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:876fb49bd12f8580f10c23b1220b60980fa5d36bc4be344baa0ef5671ccc9a7c`  
-		Last Modified: Fri, 16 Jun 2023 10:16:42 GMT  
-		Size: 1.3 KB (1344 bytes)  
+	-	`sha256:a582e1c87042ed028e6460a31881a2ca95a173f0bed180c51569bd3d9dc2b7c8`  
+		Last Modified: Tue, 27 Jun 2023 01:43:28 GMT  
+		Size: 1.3 KB (1341 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d2228fdbed6da9346a01298109fb3058cec45e7fde15233130c32bf2aafbc0fd`  
-		Last Modified: Fri, 16 Jun 2023 10:16:43 GMT  
-		Size: 2.5 KB (2451 bytes)  
+	-	`sha256:e280630f67e4fed4d120df4731c85155afbcb625afd4e25cf4ce7c62a978bfa7`  
+		Last Modified: Tue, 27 Jun 2023 01:43:28 GMT  
+		Size: 2.4 KB (2448 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad63cd92588c184eb096389f28c5f382f3bf1dfa54e6fc91f87d8c0f7fbc781a`  
-		Last Modified: Fri, 16 Jun 2023 10:16:42 GMT  
-		Size: 6.0 KB (5995 bytes)  
+	-	`sha256:272b5d2c3df5b2c0c128a5c845a54b0361c9c2009ba22b7ccd102c1c574d9c65`  
+		Last Modified: Tue, 27 Jun 2023 01:43:28 GMT  
+		Size: 6.0 KB (6000 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99e1f34a23275fc16a9c9c9706755be113d2d48c9cb6187ef1c2677fe508bd2a`  
-		Last Modified: Fri, 16 Jun 2023 10:16:42 GMT  
-		Size: 2.5 KB (2508 bytes)  
+	-	`sha256:ab704aefe2e11d01d6f67c799b5058e7a6bfbc2c7c6ac2a789a8db6d33cc3983`  
+		Last Modified: Tue, 27 Jun 2023 01:43:28 GMT  
+		Size: 2.5 KB (2499 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `xwiki:15-postgres-tomcat` - linux; arm64 variant v8
@@ -6000,12 +6000,196 @@ CMD ["xwiki"]
 ## `xwiki:15.5`
 
 ```console
-$ docker pull xwiki@sha256:d652464fd5fff4abec4b87ee56c17efa703d1cf262651de92f6e409fdc9f13c8
+$ docker pull xwiki@sha256:979fa595c7b0a568ebcbedd5b01e26ada35e59cf519384da14ff2921201c38c9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 1
+-	Platforms: 2
+	-	linux; amd64
 	-	linux; arm64 variant v8
+
+### `xwiki:15.5` - linux; amd64
+
+```console
+$ docker pull xwiki@sha256:02e0bfc9c454eee3dfcc098574e45be313bc01a9d3998c34a15aec08e4707ea9
+```
+
+-	Docker Version: 20.10.23
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **587.2 MB (587245368 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0545a35ad07387c7efa5c0daa658f17963357b33d28aee6ddf932afccce08a4a`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["xwiki"]`
+
+```dockerfile
+# Mon, 05 Jun 2023 17:00:37 GMT
+ARG RELEASE
+# Mon, 05 Jun 2023 17:00:37 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Mon, 05 Jun 2023 17:00:37 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Mon, 05 Jun 2023 17:00:37 GMT
+LABEL org.opencontainers.image.version=22.04
+# Mon, 05 Jun 2023 17:00:39 GMT
+ADD file:0ad2ee2cfb186802f49c9bf4148674d1c6fc201f83478ec01ffaa7086d491323 in / 
+# Mon, 05 Jun 2023 17:00:39 GMT
+CMD ["/bin/bash"]
+# Fri, 16 Jun 2023 02:15:56 GMT
+ENV JAVA_HOME=/opt/java/openjdk
+# Fri, 16 Jun 2023 02:15:56 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Fri, 16 Jun 2023 02:15:56 GMT
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+# Fri, 16 Jun 2023 02:16:14 GMT
+RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl wget ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 16 Jun 2023 02:17:05 GMT
+ENV JAVA_VERSION=jdk-11.0.19+7
+# Fri, 16 Jun 2023 02:17:37 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='1fe4b20d808f393422610818711c728331992a4455eeeb061d3d05b45412771d';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.19_7.tar.gz';          ;;        armhf|arm)          ESUM='cb754b055177381f9f6852b7e5469904a15edddd7f8e136043c28b1e33aee47c';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jre_arm_linux_hotspot_11.0.19_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='8019d938e5525938ec8e68e2989c4413263b0d9b7b3f20fe0c45f6d967919cfb';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.19_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='058419435fe6212d1bc305a14f578c314f9ff9a2d96d523c178120e84231c733';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jre_s390x_linux_hotspot_11.0.19_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='32dcf760664f93531594b72ce9226e9216567de5705a23c9ff5a77c797948054';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jre_x64_linux_hotspot_11.0.19_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
+# Fri, 16 Jun 2023 02:17:38 GMT
+RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo java --version && java --version     && echo Complete.
+# Fri, 16 Jun 2023 04:34:54 GMT
+ENV CATALINA_HOME=/usr/local/tomcat
+# Fri, 16 Jun 2023 04:34:54 GMT
+ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Fri, 16 Jun 2023 04:34:55 GMT
+RUN mkdir -p "$CATALINA_HOME"
+# Fri, 16 Jun 2023 04:34:55 GMT
+WORKDIR /usr/local/tomcat
+# Fri, 16 Jun 2023 04:34:55 GMT
+ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
+# Fri, 16 Jun 2023 04:34:55 GMT
+ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
+# Fri, 16 Jun 2023 04:37:42 GMT
+ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
+# Fri, 16 Jun 2023 04:37:42 GMT
+ENV TOMCAT_MAJOR=9
+# Fri, 16 Jun 2023 04:37:42 GMT
+ENV TOMCAT_VERSION=9.0.76
+# Fri, 16 Jun 2023 04:37:42 GMT
+ENV TOMCAT_SHA512=028163cbe15367f0ab60e086b0ebc8d774e62d126d82ae9152f863d4680e280b11c9503e3b51ee7089ca9bea1bfa5b535b244a727a3021e5fa72dd7e9569af9a
+# Fri, 16 Jun 2023 04:37:42 GMT
+COPY dir:d68ada5df83c00e64f2bc5fad7f7e78285704dda3af250e863e1e0a3a7acaa1f in /usr/local/tomcat 
+# Fri, 16 Jun 2023 04:37:46 GMT
+RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/*
+# Fri, 16 Jun 2023 04:37:47 GMT
+RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
+# Fri, 16 Jun 2023 04:37:47 GMT
+EXPOSE 8080
+# Fri, 16 Jun 2023 04:37:47 GMT
+CMD ["catalina.sh" "run"]
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.vendor=xwiki.org
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.licenses=LGPL-2.1
+# Fri, 16 Jun 2023 10:11:16 GMT
+RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/*
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_VERSION=15.5
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/15.5
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_DOWNLOAD_SHA256=e552586d371da33b012cfbd974b3ba80d1b147a5c892ad6cf989960212cdaa02
+# Tue, 27 Jun 2023 01:41:10 GMT
+RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
+# Tue, 27 Jun 2023 01:41:11 GMT
+ENV MYSQL_JDBC_VERSION=8.0.33
+# Tue, 27 Jun 2023 01:41:11 GMT
+ENV MYSQL_JDBC_SHA256=e2a3b2fc726a1ac64e998585db86b30fa8bf3f706195b78bb77c5f99bf877bd9
+# Tue, 27 Jun 2023 01:41:11 GMT
+ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/8.0.33
+# Tue, 27 Jun 2023 01:41:11 GMT
+ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-8.0.33.jar
+# Tue, 27 Jun 2023 01:41:11 GMT
+ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-8.0.33.jar
+# Tue, 27 Jun 2023 01:41:12 GMT
+RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c -
+# Tue, 27 Jun 2023 01:41:12 GMT
+COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
+# Tue, 27 Jun 2023 01:41:12 GMT
+COPY file:1b8409986f3e4eb79a7a0b18472cb2692a61d504fb5ef34292bc997b79fd760d in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
+# Tue, 27 Jun 2023 01:41:13 GMT
+RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
+# Tue, 27 Jun 2023 01:41:13 GMT
+COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
+# Tue, 27 Jun 2023 01:41:13 GMT
+VOLUME [/usr/local/xwiki]
+# Tue, 27 Jun 2023 01:41:13 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Tue, 27 Jun 2023 01:41:13 GMT
+CMD ["xwiki"]
+```
+
+-	Layers:
+	-	`sha256:3f94e4e483ea634d7ab0b63649b8f72f8b721d4c626297fd0edae0abea1df9e9`  
+		Last Modified: Tue, 06 Jun 2023 11:46:33 GMT  
+		Size: 30.4 MB (30431039 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fa3b6b86b9b9ec784135c9a4adac0cdf59f8b0812134b00402f67714b92e13d6`  
+		Last Modified: Fri, 16 Jun 2023 02:20:59 GMT  
+		Size: 12.5 MB (12495197 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:906feab3d1ffe6f8d194544b36d7e399e813e77a2df6678380a6b4c5a18aec2f`  
+		Last Modified: Fri, 16 Jun 2023 02:22:53 GMT  
+		Size: 46.7 MB (46666394 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9358731a04ce4ffb43ea1162e0684391b355b508420d45ae7921eb8cab9c10db`  
+		Last Modified: Fri, 16 Jun 2023 02:22:47 GMT  
+		Size: 160.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8227a7bb3d2b11b0faf224f49fb0d8fc994b6a8d902d8bc6eb3478490aea1816`  
+		Last Modified: Fri, 16 Jun 2023 04:49:05 GMT  
+		Size: 173.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:091107a5723c6be4efbe464ce52499163a7f46616c82788b102b12a7163dd8e4`  
+		Last Modified: Fri, 16 Jun 2023 04:51:23 GMT  
+		Size: 12.3 MB (12269602 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5d295a6de01da4fb5525c7f30018b23d903a9c05f3e14b3258053900c0696c0c`  
+		Last Modified: Fri, 16 Jun 2023 04:51:22 GMT  
+		Size: 454.6 KB (454597 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ac31a8386f6ec9e8c4c67f00eae10e5bdbef376212ce7c553f3f27636884a5f0`  
+		Last Modified: Fri, 16 Jun 2023 04:51:22 GMT  
+		Size: 130.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b2b0f77c508c593bc448e39233cdd117797ff0ef9d90cbda04c0f019d256f970`  
+		Last Modified: Fri, 16 Jun 2023 10:16:06 GMT  
+		Size: 178.3 MB (178335543 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9bd47dc719a99e43b69ba9a140ab83a542a83a650994b217dc718f91105cd69e`  
+		Last Modified: Tue, 27 Jun 2023 01:42:57 GMT  
+		Size: 304.2 MB (304236713 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:74b97a6d523b6dba73f270d7299e1dbbc54de2f4ed56e0c3f33a291fc4ad7ba2`  
+		Last Modified: Tue, 27 Jun 2023 01:42:41 GMT  
+		Size: 2.3 MB (2343669 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e4e4a42e9034c83f3a1f1dfcb4dacb8e5a1b25aebe119dcc62c023dad6823607`  
+		Last Modified: Tue, 27 Jun 2023 01:42:40 GMT  
+		Size: 1.3 KB (1344 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a20f48998f9362e0d8d6102527c0b50c39435b96ccdcdc513a3ca26e75f48a83`  
+		Last Modified: Tue, 27 Jun 2023 01:42:40 GMT  
+		Size: 2.3 KB (2304 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3f18b2c8b019f176759c24b717806bfb051615f9004adf3b11ce54433b43f946`  
+		Last Modified: Tue, 27 Jun 2023 01:42:40 GMT  
+		Size: 6.0 KB (6003 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0ae3dd734e9952f4e1b2cfc1a5e844079689414fea35c00f4debc02d70f6e447`  
+		Last Modified: Tue, 27 Jun 2023 01:42:40 GMT  
+		Size: 2.5 KB (2500 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `xwiki:15.5` - linux; arm64 variant v8
 
@@ -6193,12 +6377,196 @@ CMD ["xwiki"]
 ## `xwiki:15.5-mariadb-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:0f3df67db0efd872d1faf52145c9e277107cb3c136639771b9367d4c35c45773
+$ docker pull xwiki@sha256:b5eb1881a08541e70d1a5cbcfe2d2da0099bdac35a396d5edc28d1de015b3b80
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 1
+-	Platforms: 2
+	-	linux; amd64
 	-	linux; arm64 variant v8
+
+### `xwiki:15.5-mariadb-tomcat` - linux; amd64
+
+```console
+$ docker pull xwiki@sha256:08060683af9af5d94bd94d1a9b3574524a130e4364ef4911c9f27c7b4160b163
+```
+
+-	Docker Version: 20.10.23
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **585.5 MB (585496266 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0003e3176b872fe97a7b7f697235a4d8414ddfe1181b2c300e41691fc1c45bf9`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["xwiki"]`
+
+```dockerfile
+# Mon, 05 Jun 2023 17:00:37 GMT
+ARG RELEASE
+# Mon, 05 Jun 2023 17:00:37 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Mon, 05 Jun 2023 17:00:37 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Mon, 05 Jun 2023 17:00:37 GMT
+LABEL org.opencontainers.image.version=22.04
+# Mon, 05 Jun 2023 17:00:39 GMT
+ADD file:0ad2ee2cfb186802f49c9bf4148674d1c6fc201f83478ec01ffaa7086d491323 in / 
+# Mon, 05 Jun 2023 17:00:39 GMT
+CMD ["/bin/bash"]
+# Fri, 16 Jun 2023 02:15:56 GMT
+ENV JAVA_HOME=/opt/java/openjdk
+# Fri, 16 Jun 2023 02:15:56 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Fri, 16 Jun 2023 02:15:56 GMT
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+# Fri, 16 Jun 2023 02:16:14 GMT
+RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl wget ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 16 Jun 2023 02:17:05 GMT
+ENV JAVA_VERSION=jdk-11.0.19+7
+# Fri, 16 Jun 2023 02:17:37 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='1fe4b20d808f393422610818711c728331992a4455eeeb061d3d05b45412771d';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.19_7.tar.gz';          ;;        armhf|arm)          ESUM='cb754b055177381f9f6852b7e5469904a15edddd7f8e136043c28b1e33aee47c';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jre_arm_linux_hotspot_11.0.19_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='8019d938e5525938ec8e68e2989c4413263b0d9b7b3f20fe0c45f6d967919cfb';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.19_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='058419435fe6212d1bc305a14f578c314f9ff9a2d96d523c178120e84231c733';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jre_s390x_linux_hotspot_11.0.19_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='32dcf760664f93531594b72ce9226e9216567de5705a23c9ff5a77c797948054';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jre_x64_linux_hotspot_11.0.19_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
+# Fri, 16 Jun 2023 02:17:38 GMT
+RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo java --version && java --version     && echo Complete.
+# Fri, 16 Jun 2023 04:34:54 GMT
+ENV CATALINA_HOME=/usr/local/tomcat
+# Fri, 16 Jun 2023 04:34:54 GMT
+ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Fri, 16 Jun 2023 04:34:55 GMT
+RUN mkdir -p "$CATALINA_HOME"
+# Fri, 16 Jun 2023 04:34:55 GMT
+WORKDIR /usr/local/tomcat
+# Fri, 16 Jun 2023 04:34:55 GMT
+ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
+# Fri, 16 Jun 2023 04:34:55 GMT
+ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
+# Fri, 16 Jun 2023 04:37:42 GMT
+ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
+# Fri, 16 Jun 2023 04:37:42 GMT
+ENV TOMCAT_MAJOR=9
+# Fri, 16 Jun 2023 04:37:42 GMT
+ENV TOMCAT_VERSION=9.0.76
+# Fri, 16 Jun 2023 04:37:42 GMT
+ENV TOMCAT_SHA512=028163cbe15367f0ab60e086b0ebc8d774e62d126d82ae9152f863d4680e280b11c9503e3b51ee7089ca9bea1bfa5b535b244a727a3021e5fa72dd7e9569af9a
+# Fri, 16 Jun 2023 04:37:42 GMT
+COPY dir:d68ada5df83c00e64f2bc5fad7f7e78285704dda3af250e863e1e0a3a7acaa1f in /usr/local/tomcat 
+# Fri, 16 Jun 2023 04:37:46 GMT
+RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/*
+# Fri, 16 Jun 2023 04:37:47 GMT
+RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
+# Fri, 16 Jun 2023 04:37:47 GMT
+EXPOSE 8080
+# Fri, 16 Jun 2023 04:37:47 GMT
+CMD ["catalina.sh" "run"]
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.vendor=xwiki.org
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.licenses=LGPL-2.1
+# Fri, 16 Jun 2023 10:11:16 GMT
+RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/*
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_VERSION=15.5
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/15.5
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_DOWNLOAD_SHA256=e552586d371da33b012cfbd974b3ba80d1b147a5c892ad6cf989960212cdaa02
+# Tue, 27 Jun 2023 01:41:10 GMT
+RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
+# Tue, 27 Jun 2023 01:42:09 GMT
+ENV MARIADB_JDBC_VERSION=3.1.4
+# Tue, 27 Jun 2023 01:42:09 GMT
+ENV MARIADB_JDBC_SHA256=eb88b5d727d82e25117e2b6fabcec1daf734633b0a576456c73215884c189ad4
+# Tue, 27 Jun 2023 01:42:09 GMT
+ENV MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.1.4
+# Tue, 27 Jun 2023 01:42:09 GMT
+ENV MARIADB_JDBC_ARTIFACT=mariadb-java-client-3.1.4.jar
+# Tue, 27 Jun 2023 01:42:09 GMT
+ENV MARIADB_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mariadb-java-client-3.1.4.jar
+# Tue, 27 Jun 2023 01:42:10 GMT
+RUN curl -fSL "${MARIADB_JDBC_PREFIX}/${MARIADB_JDBC_ARTIFACT}" -o $MARIADB_JDBC_TARGET &&   echo "$MARIADB_JDBC_SHA256 $MARIADB_JDBC_TARGET" | sha256sum -c -
+# Tue, 27 Jun 2023 01:42:10 GMT
+COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
+# Tue, 27 Jun 2023 01:42:10 GMT
+COPY file:0e237c3876eeb3b5f3473a064d3e507da2df6c228ca714687930b34e3b687601 in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
+# Tue, 27 Jun 2023 01:42:10 GMT
+RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
+# Tue, 27 Jun 2023 01:42:10 GMT
+COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
+# Tue, 27 Jun 2023 01:42:11 GMT
+VOLUME [/usr/local/xwiki]
+# Tue, 27 Jun 2023 01:42:11 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Tue, 27 Jun 2023 01:42:11 GMT
+CMD ["xwiki"]
+```
+
+-	Layers:
+	-	`sha256:3f94e4e483ea634d7ab0b63649b8f72f8b721d4c626297fd0edae0abea1df9e9`  
+		Last Modified: Tue, 06 Jun 2023 11:46:33 GMT  
+		Size: 30.4 MB (30431039 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fa3b6b86b9b9ec784135c9a4adac0cdf59f8b0812134b00402f67714b92e13d6`  
+		Last Modified: Fri, 16 Jun 2023 02:20:59 GMT  
+		Size: 12.5 MB (12495197 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:906feab3d1ffe6f8d194544b36d7e399e813e77a2df6678380a6b4c5a18aec2f`  
+		Last Modified: Fri, 16 Jun 2023 02:22:53 GMT  
+		Size: 46.7 MB (46666394 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9358731a04ce4ffb43ea1162e0684391b355b508420d45ae7921eb8cab9c10db`  
+		Last Modified: Fri, 16 Jun 2023 02:22:47 GMT  
+		Size: 160.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8227a7bb3d2b11b0faf224f49fb0d8fc994b6a8d902d8bc6eb3478490aea1816`  
+		Last Modified: Fri, 16 Jun 2023 04:49:05 GMT  
+		Size: 173.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:091107a5723c6be4efbe464ce52499163a7f46616c82788b102b12a7163dd8e4`  
+		Last Modified: Fri, 16 Jun 2023 04:51:23 GMT  
+		Size: 12.3 MB (12269602 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5d295a6de01da4fb5525c7f30018b23d903a9c05f3e14b3258053900c0696c0c`  
+		Last Modified: Fri, 16 Jun 2023 04:51:22 GMT  
+		Size: 454.6 KB (454597 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ac31a8386f6ec9e8c4c67f00eae10e5bdbef376212ce7c553f3f27636884a5f0`  
+		Last Modified: Fri, 16 Jun 2023 04:51:22 GMT  
+		Size: 130.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b2b0f77c508c593bc448e39233cdd117797ff0ef9d90cbda04c0f019d256f970`  
+		Last Modified: Fri, 16 Jun 2023 10:16:06 GMT  
+		Size: 178.3 MB (178335543 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9bd47dc719a99e43b69ba9a140ab83a542a83a650994b217dc718f91105cd69e`  
+		Last Modified: Tue, 27 Jun 2023 01:42:57 GMT  
+		Size: 304.2 MB (304236713 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:45c1c29a5f690ee19b152bf94d2287c58e834f4d1ba28711278dd168a7626fd7`  
+		Last Modified: Tue, 27 Jun 2023 01:44:04 GMT  
+		Size: 594.5 KB (594550 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:af370251f108dd2614340b7304ce4e265907ad3a3dfa4f9f39783fca4b7bd59d`  
+		Last Modified: Tue, 27 Jun 2023 01:44:04 GMT  
+		Size: 1.3 KB (1345 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6e59b2a6e23c5cfc1dd938bebcb9805b9d35db311ef8295d8b7d5c6617a66159`  
+		Last Modified: Tue, 27 Jun 2023 01:44:05 GMT  
+		Size: 2.3 KB (2312 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e308247bd0d6fa7044aaf78e32bf162f3dec037acbdad61718918fc6bcca05eb`  
+		Last Modified: Tue, 27 Jun 2023 01:44:04 GMT  
+		Size: 6.0 KB (6005 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e7f43672cefc65f8633377a0b78db21c0e618ffb86a3e92c6dbd63c6564a6924`  
+		Last Modified: Tue, 27 Jun 2023 01:44:04 GMT  
+		Size: 2.5 KB (2506 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `xwiki:15.5-mariadb-tomcat` - linux; arm64 variant v8
 
@@ -6386,12 +6754,196 @@ CMD ["xwiki"]
 ## `xwiki:15.5-mysql-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:d652464fd5fff4abec4b87ee56c17efa703d1cf262651de92f6e409fdc9f13c8
+$ docker pull xwiki@sha256:979fa595c7b0a568ebcbedd5b01e26ada35e59cf519384da14ff2921201c38c9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 1
+-	Platforms: 2
+	-	linux; amd64
 	-	linux; arm64 variant v8
+
+### `xwiki:15.5-mysql-tomcat` - linux; amd64
+
+```console
+$ docker pull xwiki@sha256:02e0bfc9c454eee3dfcc098574e45be313bc01a9d3998c34a15aec08e4707ea9
+```
+
+-	Docker Version: 20.10.23
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **587.2 MB (587245368 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0545a35ad07387c7efa5c0daa658f17963357b33d28aee6ddf932afccce08a4a`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["xwiki"]`
+
+```dockerfile
+# Mon, 05 Jun 2023 17:00:37 GMT
+ARG RELEASE
+# Mon, 05 Jun 2023 17:00:37 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Mon, 05 Jun 2023 17:00:37 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Mon, 05 Jun 2023 17:00:37 GMT
+LABEL org.opencontainers.image.version=22.04
+# Mon, 05 Jun 2023 17:00:39 GMT
+ADD file:0ad2ee2cfb186802f49c9bf4148674d1c6fc201f83478ec01ffaa7086d491323 in / 
+# Mon, 05 Jun 2023 17:00:39 GMT
+CMD ["/bin/bash"]
+# Fri, 16 Jun 2023 02:15:56 GMT
+ENV JAVA_HOME=/opt/java/openjdk
+# Fri, 16 Jun 2023 02:15:56 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Fri, 16 Jun 2023 02:15:56 GMT
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+# Fri, 16 Jun 2023 02:16:14 GMT
+RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl wget ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 16 Jun 2023 02:17:05 GMT
+ENV JAVA_VERSION=jdk-11.0.19+7
+# Fri, 16 Jun 2023 02:17:37 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='1fe4b20d808f393422610818711c728331992a4455eeeb061d3d05b45412771d';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.19_7.tar.gz';          ;;        armhf|arm)          ESUM='cb754b055177381f9f6852b7e5469904a15edddd7f8e136043c28b1e33aee47c';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jre_arm_linux_hotspot_11.0.19_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='8019d938e5525938ec8e68e2989c4413263b0d9b7b3f20fe0c45f6d967919cfb';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.19_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='058419435fe6212d1bc305a14f578c314f9ff9a2d96d523c178120e84231c733';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jre_s390x_linux_hotspot_11.0.19_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='32dcf760664f93531594b72ce9226e9216567de5705a23c9ff5a77c797948054';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jre_x64_linux_hotspot_11.0.19_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
+# Fri, 16 Jun 2023 02:17:38 GMT
+RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo java --version && java --version     && echo Complete.
+# Fri, 16 Jun 2023 04:34:54 GMT
+ENV CATALINA_HOME=/usr/local/tomcat
+# Fri, 16 Jun 2023 04:34:54 GMT
+ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Fri, 16 Jun 2023 04:34:55 GMT
+RUN mkdir -p "$CATALINA_HOME"
+# Fri, 16 Jun 2023 04:34:55 GMT
+WORKDIR /usr/local/tomcat
+# Fri, 16 Jun 2023 04:34:55 GMT
+ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
+# Fri, 16 Jun 2023 04:34:55 GMT
+ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
+# Fri, 16 Jun 2023 04:37:42 GMT
+ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
+# Fri, 16 Jun 2023 04:37:42 GMT
+ENV TOMCAT_MAJOR=9
+# Fri, 16 Jun 2023 04:37:42 GMT
+ENV TOMCAT_VERSION=9.0.76
+# Fri, 16 Jun 2023 04:37:42 GMT
+ENV TOMCAT_SHA512=028163cbe15367f0ab60e086b0ebc8d774e62d126d82ae9152f863d4680e280b11c9503e3b51ee7089ca9bea1bfa5b535b244a727a3021e5fa72dd7e9569af9a
+# Fri, 16 Jun 2023 04:37:42 GMT
+COPY dir:d68ada5df83c00e64f2bc5fad7f7e78285704dda3af250e863e1e0a3a7acaa1f in /usr/local/tomcat 
+# Fri, 16 Jun 2023 04:37:46 GMT
+RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/*
+# Fri, 16 Jun 2023 04:37:47 GMT
+RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
+# Fri, 16 Jun 2023 04:37:47 GMT
+EXPOSE 8080
+# Fri, 16 Jun 2023 04:37:47 GMT
+CMD ["catalina.sh" "run"]
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.vendor=xwiki.org
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.licenses=LGPL-2.1
+# Fri, 16 Jun 2023 10:11:16 GMT
+RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/*
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_VERSION=15.5
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/15.5
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_DOWNLOAD_SHA256=e552586d371da33b012cfbd974b3ba80d1b147a5c892ad6cf989960212cdaa02
+# Tue, 27 Jun 2023 01:41:10 GMT
+RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
+# Tue, 27 Jun 2023 01:41:11 GMT
+ENV MYSQL_JDBC_VERSION=8.0.33
+# Tue, 27 Jun 2023 01:41:11 GMT
+ENV MYSQL_JDBC_SHA256=e2a3b2fc726a1ac64e998585db86b30fa8bf3f706195b78bb77c5f99bf877bd9
+# Tue, 27 Jun 2023 01:41:11 GMT
+ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/8.0.33
+# Tue, 27 Jun 2023 01:41:11 GMT
+ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-8.0.33.jar
+# Tue, 27 Jun 2023 01:41:11 GMT
+ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-8.0.33.jar
+# Tue, 27 Jun 2023 01:41:12 GMT
+RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c -
+# Tue, 27 Jun 2023 01:41:12 GMT
+COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
+# Tue, 27 Jun 2023 01:41:12 GMT
+COPY file:1b8409986f3e4eb79a7a0b18472cb2692a61d504fb5ef34292bc997b79fd760d in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
+# Tue, 27 Jun 2023 01:41:13 GMT
+RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
+# Tue, 27 Jun 2023 01:41:13 GMT
+COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
+# Tue, 27 Jun 2023 01:41:13 GMT
+VOLUME [/usr/local/xwiki]
+# Tue, 27 Jun 2023 01:41:13 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Tue, 27 Jun 2023 01:41:13 GMT
+CMD ["xwiki"]
+```
+
+-	Layers:
+	-	`sha256:3f94e4e483ea634d7ab0b63649b8f72f8b721d4c626297fd0edae0abea1df9e9`  
+		Last Modified: Tue, 06 Jun 2023 11:46:33 GMT  
+		Size: 30.4 MB (30431039 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fa3b6b86b9b9ec784135c9a4adac0cdf59f8b0812134b00402f67714b92e13d6`  
+		Last Modified: Fri, 16 Jun 2023 02:20:59 GMT  
+		Size: 12.5 MB (12495197 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:906feab3d1ffe6f8d194544b36d7e399e813e77a2df6678380a6b4c5a18aec2f`  
+		Last Modified: Fri, 16 Jun 2023 02:22:53 GMT  
+		Size: 46.7 MB (46666394 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9358731a04ce4ffb43ea1162e0684391b355b508420d45ae7921eb8cab9c10db`  
+		Last Modified: Fri, 16 Jun 2023 02:22:47 GMT  
+		Size: 160.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8227a7bb3d2b11b0faf224f49fb0d8fc994b6a8d902d8bc6eb3478490aea1816`  
+		Last Modified: Fri, 16 Jun 2023 04:49:05 GMT  
+		Size: 173.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:091107a5723c6be4efbe464ce52499163a7f46616c82788b102b12a7163dd8e4`  
+		Last Modified: Fri, 16 Jun 2023 04:51:23 GMT  
+		Size: 12.3 MB (12269602 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5d295a6de01da4fb5525c7f30018b23d903a9c05f3e14b3258053900c0696c0c`  
+		Last Modified: Fri, 16 Jun 2023 04:51:22 GMT  
+		Size: 454.6 KB (454597 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ac31a8386f6ec9e8c4c67f00eae10e5bdbef376212ce7c553f3f27636884a5f0`  
+		Last Modified: Fri, 16 Jun 2023 04:51:22 GMT  
+		Size: 130.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b2b0f77c508c593bc448e39233cdd117797ff0ef9d90cbda04c0f019d256f970`  
+		Last Modified: Fri, 16 Jun 2023 10:16:06 GMT  
+		Size: 178.3 MB (178335543 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9bd47dc719a99e43b69ba9a140ab83a542a83a650994b217dc718f91105cd69e`  
+		Last Modified: Tue, 27 Jun 2023 01:42:57 GMT  
+		Size: 304.2 MB (304236713 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:74b97a6d523b6dba73f270d7299e1dbbc54de2f4ed56e0c3f33a291fc4ad7ba2`  
+		Last Modified: Tue, 27 Jun 2023 01:42:41 GMT  
+		Size: 2.3 MB (2343669 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e4e4a42e9034c83f3a1f1dfcb4dacb8e5a1b25aebe119dcc62c023dad6823607`  
+		Last Modified: Tue, 27 Jun 2023 01:42:40 GMT  
+		Size: 1.3 KB (1344 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a20f48998f9362e0d8d6102527c0b50c39435b96ccdcdc513a3ca26e75f48a83`  
+		Last Modified: Tue, 27 Jun 2023 01:42:40 GMT  
+		Size: 2.3 KB (2304 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3f18b2c8b019f176759c24b717806bfb051615f9004adf3b11ce54433b43f946`  
+		Last Modified: Tue, 27 Jun 2023 01:42:40 GMT  
+		Size: 6.0 KB (6003 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0ae3dd734e9952f4e1b2cfc1a5e844079689414fea35c00f4debc02d70f6e447`  
+		Last Modified: Tue, 27 Jun 2023 01:42:40 GMT  
+		Size: 2.5 KB (2500 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `xwiki:15.5-mysql-tomcat` - linux; arm64 variant v8
 
@@ -6579,12 +7131,186 @@ CMD ["xwiki"]
 ## `xwiki:15.5-postgres-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:c1a607190da0c919a56aaecdcc12b72a672fafa3e4acfb9bfb6969358dfa3fd6
+$ docker pull xwiki@sha256:a85547de3dc08a8183b0927dfe1025b44d4a4ddeaf3ea6a99bd5d0cdd0396731
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 1
+-	Platforms: 2
+	-	linux; amd64
 	-	linux; arm64 variant v8
+
+### `xwiki:15.5-postgres-tomcat` - linux; amd64
+
+```console
+$ docker pull xwiki@sha256:9db8828614bb0b2e6cf23a98a635768400cc84f6c1e91277661daf56906a95c4
+```
+
+-	Docker Version: 20.10.23
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **586.8 MB (586779249 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:44a3c2a08180c4bde30aae21b9884e9125edb33c6cda58103cfbbe409478244f`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["xwiki"]`
+
+```dockerfile
+# Mon, 05 Jun 2023 17:00:37 GMT
+ARG RELEASE
+# Mon, 05 Jun 2023 17:00:37 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Mon, 05 Jun 2023 17:00:37 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Mon, 05 Jun 2023 17:00:37 GMT
+LABEL org.opencontainers.image.version=22.04
+# Mon, 05 Jun 2023 17:00:39 GMT
+ADD file:0ad2ee2cfb186802f49c9bf4148674d1c6fc201f83478ec01ffaa7086d491323 in / 
+# Mon, 05 Jun 2023 17:00:39 GMT
+CMD ["/bin/bash"]
+# Fri, 16 Jun 2023 02:15:56 GMT
+ENV JAVA_HOME=/opt/java/openjdk
+# Fri, 16 Jun 2023 02:15:56 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Fri, 16 Jun 2023 02:15:56 GMT
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+# Fri, 16 Jun 2023 02:16:14 GMT
+RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl wget ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 16 Jun 2023 02:17:05 GMT
+ENV JAVA_VERSION=jdk-11.0.19+7
+# Fri, 16 Jun 2023 02:17:37 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='1fe4b20d808f393422610818711c728331992a4455eeeb061d3d05b45412771d';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.19_7.tar.gz';          ;;        armhf|arm)          ESUM='cb754b055177381f9f6852b7e5469904a15edddd7f8e136043c28b1e33aee47c';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jre_arm_linux_hotspot_11.0.19_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='8019d938e5525938ec8e68e2989c4413263b0d9b7b3f20fe0c45f6d967919cfb';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.19_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='058419435fe6212d1bc305a14f578c314f9ff9a2d96d523c178120e84231c733';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jre_s390x_linux_hotspot_11.0.19_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='32dcf760664f93531594b72ce9226e9216567de5705a23c9ff5a77c797948054';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jre_x64_linux_hotspot_11.0.19_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
+# Fri, 16 Jun 2023 02:17:38 GMT
+RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo java --version && java --version     && echo Complete.
+# Fri, 16 Jun 2023 04:34:54 GMT
+ENV CATALINA_HOME=/usr/local/tomcat
+# Fri, 16 Jun 2023 04:34:54 GMT
+ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Fri, 16 Jun 2023 04:34:55 GMT
+RUN mkdir -p "$CATALINA_HOME"
+# Fri, 16 Jun 2023 04:34:55 GMT
+WORKDIR /usr/local/tomcat
+# Fri, 16 Jun 2023 04:34:55 GMT
+ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
+# Fri, 16 Jun 2023 04:34:55 GMT
+ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
+# Fri, 16 Jun 2023 04:37:42 GMT
+ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
+# Fri, 16 Jun 2023 04:37:42 GMT
+ENV TOMCAT_MAJOR=9
+# Fri, 16 Jun 2023 04:37:42 GMT
+ENV TOMCAT_VERSION=9.0.76
+# Fri, 16 Jun 2023 04:37:42 GMT
+ENV TOMCAT_SHA512=028163cbe15367f0ab60e086b0ebc8d774e62d126d82ae9152f863d4680e280b11c9503e3b51ee7089ca9bea1bfa5b535b244a727a3021e5fa72dd7e9569af9a
+# Fri, 16 Jun 2023 04:37:42 GMT
+COPY dir:d68ada5df83c00e64f2bc5fad7f7e78285704dda3af250e863e1e0a3a7acaa1f in /usr/local/tomcat 
+# Fri, 16 Jun 2023 04:37:46 GMT
+RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/*
+# Fri, 16 Jun 2023 04:37:47 GMT
+RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
+# Fri, 16 Jun 2023 04:37:47 GMT
+EXPOSE 8080
+# Fri, 16 Jun 2023 04:37:47 GMT
+CMD ["catalina.sh" "run"]
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.vendor=xwiki.org
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.licenses=LGPL-2.1
+# Fri, 16 Jun 2023 10:12:34 GMT
+RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps     libpostgresql-jdbc-java &&   rm -rf /var/lib/apt/lists/*
+# Tue, 27 Jun 2023 01:41:20 GMT
+ENV XWIKI_VERSION=15.5
+# Tue, 27 Jun 2023 01:41:20 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/15.5
+# Tue, 27 Jun 2023 01:41:20 GMT
+ENV XWIKI_DOWNLOAD_SHA256=e552586d371da33b012cfbd974b3ba80d1b147a5c892ad6cf989960212cdaa02
+# Tue, 27 Jun 2023 01:41:59 GMT
+RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
+# Tue, 27 Jun 2023 01:42:00 GMT
+RUN cp /usr/share/java/postgresql-jdbc4.jar /usr/local/tomcat/webapps/ROOT/WEB-INF/lib/
+# Tue, 27 Jun 2023 01:42:00 GMT
+COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
+# Tue, 27 Jun 2023 01:42:00 GMT
+COPY file:4a923f484bb29a26630c19e1d617d3bf6aa6ae7c6c4a5561e97b037bcde0847c in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
+# Tue, 27 Jun 2023 01:42:01 GMT
+RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
+# Tue, 27 Jun 2023 01:42:01 GMT
+COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
+# Tue, 27 Jun 2023 01:42:01 GMT
+VOLUME [/usr/local/xwiki]
+# Tue, 27 Jun 2023 01:42:01 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Tue, 27 Jun 2023 01:42:01 GMT
+CMD ["xwiki"]
+```
+
+-	Layers:
+	-	`sha256:3f94e4e483ea634d7ab0b63649b8f72f8b721d4c626297fd0edae0abea1df9e9`  
+		Last Modified: Tue, 06 Jun 2023 11:46:33 GMT  
+		Size: 30.4 MB (30431039 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fa3b6b86b9b9ec784135c9a4adac0cdf59f8b0812134b00402f67714b92e13d6`  
+		Last Modified: Fri, 16 Jun 2023 02:20:59 GMT  
+		Size: 12.5 MB (12495197 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:906feab3d1ffe6f8d194544b36d7e399e813e77a2df6678380a6b4c5a18aec2f`  
+		Last Modified: Fri, 16 Jun 2023 02:22:53 GMT  
+		Size: 46.7 MB (46666394 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9358731a04ce4ffb43ea1162e0684391b355b508420d45ae7921eb8cab9c10db`  
+		Last Modified: Fri, 16 Jun 2023 02:22:47 GMT  
+		Size: 160.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8227a7bb3d2b11b0faf224f49fb0d8fc994b6a8d902d8bc6eb3478490aea1816`  
+		Last Modified: Fri, 16 Jun 2023 04:49:05 GMT  
+		Size: 173.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:091107a5723c6be4efbe464ce52499163a7f46616c82788b102b12a7163dd8e4`  
+		Last Modified: Fri, 16 Jun 2023 04:51:23 GMT  
+		Size: 12.3 MB (12269602 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5d295a6de01da4fb5525c7f30018b23d903a9c05f3e14b3258053900c0696c0c`  
+		Last Modified: Fri, 16 Jun 2023 04:51:22 GMT  
+		Size: 454.6 KB (454597 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ac31a8386f6ec9e8c4c67f00eae10e5bdbef376212ce7c553f3f27636884a5f0`  
+		Last Modified: Fri, 16 Jun 2023 04:51:22 GMT  
+		Size: 130.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d50f5284f0323896270a5d0729ddc66273e395ed952cd4948a6427a0e7c8f4ad`  
+		Last Modified: Fri, 16 Jun 2023 10:17:07 GMT  
+		Size: 179.3 MB (179276103 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:60a6eb965a43844f6f0974dfa2e92506452c8992b4c06e699e11c753b0022644`  
+		Last Modified: Tue, 27 Jun 2023 01:43:45 GMT  
+		Size: 304.2 MB (304236722 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9f3670e551a89ef20601ac60cc69e45c26001dd894a6216e9155337347fa5f02`  
+		Last Modified: Tue, 27 Jun 2023 01:43:28 GMT  
+		Size: 936.8 KB (936844 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a582e1c87042ed028e6460a31881a2ca95a173f0bed180c51569bd3d9dc2b7c8`  
+		Last Modified: Tue, 27 Jun 2023 01:43:28 GMT  
+		Size: 1.3 KB (1341 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e280630f67e4fed4d120df4731c85155afbcb625afd4e25cf4ce7c62a978bfa7`  
+		Last Modified: Tue, 27 Jun 2023 01:43:28 GMT  
+		Size: 2.4 KB (2448 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:272b5d2c3df5b2c0c128a5c845a54b0361c9c2009ba22b7ccd102c1c574d9c65`  
+		Last Modified: Tue, 27 Jun 2023 01:43:28 GMT  
+		Size: 6.0 KB (6000 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ab704aefe2e11d01d6f67c799b5058e7a6bfbc2c7c6ac2a789a8db6d33cc3983`  
+		Last Modified: Tue, 27 Jun 2023 01:43:28 GMT  
+		Size: 2.5 KB (2499 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `xwiki:15.5-postgres-tomcat` - linux; arm64 variant v8
 
@@ -6762,12 +7488,196 @@ CMD ["xwiki"]
 ## `xwiki:15.5.0`
 
 ```console
-$ docker pull xwiki@sha256:d652464fd5fff4abec4b87ee56c17efa703d1cf262651de92f6e409fdc9f13c8
+$ docker pull xwiki@sha256:979fa595c7b0a568ebcbedd5b01e26ada35e59cf519384da14ff2921201c38c9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 1
+-	Platforms: 2
+	-	linux; amd64
 	-	linux; arm64 variant v8
+
+### `xwiki:15.5.0` - linux; amd64
+
+```console
+$ docker pull xwiki@sha256:02e0bfc9c454eee3dfcc098574e45be313bc01a9d3998c34a15aec08e4707ea9
+```
+
+-	Docker Version: 20.10.23
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **587.2 MB (587245368 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0545a35ad07387c7efa5c0daa658f17963357b33d28aee6ddf932afccce08a4a`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["xwiki"]`
+
+```dockerfile
+# Mon, 05 Jun 2023 17:00:37 GMT
+ARG RELEASE
+# Mon, 05 Jun 2023 17:00:37 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Mon, 05 Jun 2023 17:00:37 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Mon, 05 Jun 2023 17:00:37 GMT
+LABEL org.opencontainers.image.version=22.04
+# Mon, 05 Jun 2023 17:00:39 GMT
+ADD file:0ad2ee2cfb186802f49c9bf4148674d1c6fc201f83478ec01ffaa7086d491323 in / 
+# Mon, 05 Jun 2023 17:00:39 GMT
+CMD ["/bin/bash"]
+# Fri, 16 Jun 2023 02:15:56 GMT
+ENV JAVA_HOME=/opt/java/openjdk
+# Fri, 16 Jun 2023 02:15:56 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Fri, 16 Jun 2023 02:15:56 GMT
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+# Fri, 16 Jun 2023 02:16:14 GMT
+RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl wget ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 16 Jun 2023 02:17:05 GMT
+ENV JAVA_VERSION=jdk-11.0.19+7
+# Fri, 16 Jun 2023 02:17:37 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='1fe4b20d808f393422610818711c728331992a4455eeeb061d3d05b45412771d';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.19_7.tar.gz';          ;;        armhf|arm)          ESUM='cb754b055177381f9f6852b7e5469904a15edddd7f8e136043c28b1e33aee47c';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jre_arm_linux_hotspot_11.0.19_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='8019d938e5525938ec8e68e2989c4413263b0d9b7b3f20fe0c45f6d967919cfb';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.19_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='058419435fe6212d1bc305a14f578c314f9ff9a2d96d523c178120e84231c733';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jre_s390x_linux_hotspot_11.0.19_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='32dcf760664f93531594b72ce9226e9216567de5705a23c9ff5a77c797948054';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jre_x64_linux_hotspot_11.0.19_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
+# Fri, 16 Jun 2023 02:17:38 GMT
+RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo java --version && java --version     && echo Complete.
+# Fri, 16 Jun 2023 04:34:54 GMT
+ENV CATALINA_HOME=/usr/local/tomcat
+# Fri, 16 Jun 2023 04:34:54 GMT
+ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Fri, 16 Jun 2023 04:34:55 GMT
+RUN mkdir -p "$CATALINA_HOME"
+# Fri, 16 Jun 2023 04:34:55 GMT
+WORKDIR /usr/local/tomcat
+# Fri, 16 Jun 2023 04:34:55 GMT
+ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
+# Fri, 16 Jun 2023 04:34:55 GMT
+ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
+# Fri, 16 Jun 2023 04:37:42 GMT
+ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
+# Fri, 16 Jun 2023 04:37:42 GMT
+ENV TOMCAT_MAJOR=9
+# Fri, 16 Jun 2023 04:37:42 GMT
+ENV TOMCAT_VERSION=9.0.76
+# Fri, 16 Jun 2023 04:37:42 GMT
+ENV TOMCAT_SHA512=028163cbe15367f0ab60e086b0ebc8d774e62d126d82ae9152f863d4680e280b11c9503e3b51ee7089ca9bea1bfa5b535b244a727a3021e5fa72dd7e9569af9a
+# Fri, 16 Jun 2023 04:37:42 GMT
+COPY dir:d68ada5df83c00e64f2bc5fad7f7e78285704dda3af250e863e1e0a3a7acaa1f in /usr/local/tomcat 
+# Fri, 16 Jun 2023 04:37:46 GMT
+RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/*
+# Fri, 16 Jun 2023 04:37:47 GMT
+RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
+# Fri, 16 Jun 2023 04:37:47 GMT
+EXPOSE 8080
+# Fri, 16 Jun 2023 04:37:47 GMT
+CMD ["catalina.sh" "run"]
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.vendor=xwiki.org
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.licenses=LGPL-2.1
+# Fri, 16 Jun 2023 10:11:16 GMT
+RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/*
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_VERSION=15.5
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/15.5
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_DOWNLOAD_SHA256=e552586d371da33b012cfbd974b3ba80d1b147a5c892ad6cf989960212cdaa02
+# Tue, 27 Jun 2023 01:41:10 GMT
+RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
+# Tue, 27 Jun 2023 01:41:11 GMT
+ENV MYSQL_JDBC_VERSION=8.0.33
+# Tue, 27 Jun 2023 01:41:11 GMT
+ENV MYSQL_JDBC_SHA256=e2a3b2fc726a1ac64e998585db86b30fa8bf3f706195b78bb77c5f99bf877bd9
+# Tue, 27 Jun 2023 01:41:11 GMT
+ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/8.0.33
+# Tue, 27 Jun 2023 01:41:11 GMT
+ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-8.0.33.jar
+# Tue, 27 Jun 2023 01:41:11 GMT
+ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-8.0.33.jar
+# Tue, 27 Jun 2023 01:41:12 GMT
+RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c -
+# Tue, 27 Jun 2023 01:41:12 GMT
+COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
+# Tue, 27 Jun 2023 01:41:12 GMT
+COPY file:1b8409986f3e4eb79a7a0b18472cb2692a61d504fb5ef34292bc997b79fd760d in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
+# Tue, 27 Jun 2023 01:41:13 GMT
+RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
+# Tue, 27 Jun 2023 01:41:13 GMT
+COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
+# Tue, 27 Jun 2023 01:41:13 GMT
+VOLUME [/usr/local/xwiki]
+# Tue, 27 Jun 2023 01:41:13 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Tue, 27 Jun 2023 01:41:13 GMT
+CMD ["xwiki"]
+```
+
+-	Layers:
+	-	`sha256:3f94e4e483ea634d7ab0b63649b8f72f8b721d4c626297fd0edae0abea1df9e9`  
+		Last Modified: Tue, 06 Jun 2023 11:46:33 GMT  
+		Size: 30.4 MB (30431039 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fa3b6b86b9b9ec784135c9a4adac0cdf59f8b0812134b00402f67714b92e13d6`  
+		Last Modified: Fri, 16 Jun 2023 02:20:59 GMT  
+		Size: 12.5 MB (12495197 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:906feab3d1ffe6f8d194544b36d7e399e813e77a2df6678380a6b4c5a18aec2f`  
+		Last Modified: Fri, 16 Jun 2023 02:22:53 GMT  
+		Size: 46.7 MB (46666394 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9358731a04ce4ffb43ea1162e0684391b355b508420d45ae7921eb8cab9c10db`  
+		Last Modified: Fri, 16 Jun 2023 02:22:47 GMT  
+		Size: 160.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8227a7bb3d2b11b0faf224f49fb0d8fc994b6a8d902d8bc6eb3478490aea1816`  
+		Last Modified: Fri, 16 Jun 2023 04:49:05 GMT  
+		Size: 173.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:091107a5723c6be4efbe464ce52499163a7f46616c82788b102b12a7163dd8e4`  
+		Last Modified: Fri, 16 Jun 2023 04:51:23 GMT  
+		Size: 12.3 MB (12269602 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5d295a6de01da4fb5525c7f30018b23d903a9c05f3e14b3258053900c0696c0c`  
+		Last Modified: Fri, 16 Jun 2023 04:51:22 GMT  
+		Size: 454.6 KB (454597 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ac31a8386f6ec9e8c4c67f00eae10e5bdbef376212ce7c553f3f27636884a5f0`  
+		Last Modified: Fri, 16 Jun 2023 04:51:22 GMT  
+		Size: 130.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b2b0f77c508c593bc448e39233cdd117797ff0ef9d90cbda04c0f019d256f970`  
+		Last Modified: Fri, 16 Jun 2023 10:16:06 GMT  
+		Size: 178.3 MB (178335543 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9bd47dc719a99e43b69ba9a140ab83a542a83a650994b217dc718f91105cd69e`  
+		Last Modified: Tue, 27 Jun 2023 01:42:57 GMT  
+		Size: 304.2 MB (304236713 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:74b97a6d523b6dba73f270d7299e1dbbc54de2f4ed56e0c3f33a291fc4ad7ba2`  
+		Last Modified: Tue, 27 Jun 2023 01:42:41 GMT  
+		Size: 2.3 MB (2343669 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e4e4a42e9034c83f3a1f1dfcb4dacb8e5a1b25aebe119dcc62c023dad6823607`  
+		Last Modified: Tue, 27 Jun 2023 01:42:40 GMT  
+		Size: 1.3 KB (1344 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a20f48998f9362e0d8d6102527c0b50c39435b96ccdcdc513a3ca26e75f48a83`  
+		Last Modified: Tue, 27 Jun 2023 01:42:40 GMT  
+		Size: 2.3 KB (2304 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3f18b2c8b019f176759c24b717806bfb051615f9004adf3b11ce54433b43f946`  
+		Last Modified: Tue, 27 Jun 2023 01:42:40 GMT  
+		Size: 6.0 KB (6003 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0ae3dd734e9952f4e1b2cfc1a5e844079689414fea35c00f4debc02d70f6e447`  
+		Last Modified: Tue, 27 Jun 2023 01:42:40 GMT  
+		Size: 2.5 KB (2500 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `xwiki:15.5.0` - linux; arm64 variant v8
 
@@ -6955,12 +7865,196 @@ CMD ["xwiki"]
 ## `xwiki:15.5.0-mariadb-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:0f3df67db0efd872d1faf52145c9e277107cb3c136639771b9367d4c35c45773
+$ docker pull xwiki@sha256:b5eb1881a08541e70d1a5cbcfe2d2da0099bdac35a396d5edc28d1de015b3b80
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 1
+-	Platforms: 2
+	-	linux; amd64
 	-	linux; arm64 variant v8
+
+### `xwiki:15.5.0-mariadb-tomcat` - linux; amd64
+
+```console
+$ docker pull xwiki@sha256:08060683af9af5d94bd94d1a9b3574524a130e4364ef4911c9f27c7b4160b163
+```
+
+-	Docker Version: 20.10.23
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **585.5 MB (585496266 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0003e3176b872fe97a7b7f697235a4d8414ddfe1181b2c300e41691fc1c45bf9`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["xwiki"]`
+
+```dockerfile
+# Mon, 05 Jun 2023 17:00:37 GMT
+ARG RELEASE
+# Mon, 05 Jun 2023 17:00:37 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Mon, 05 Jun 2023 17:00:37 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Mon, 05 Jun 2023 17:00:37 GMT
+LABEL org.opencontainers.image.version=22.04
+# Mon, 05 Jun 2023 17:00:39 GMT
+ADD file:0ad2ee2cfb186802f49c9bf4148674d1c6fc201f83478ec01ffaa7086d491323 in / 
+# Mon, 05 Jun 2023 17:00:39 GMT
+CMD ["/bin/bash"]
+# Fri, 16 Jun 2023 02:15:56 GMT
+ENV JAVA_HOME=/opt/java/openjdk
+# Fri, 16 Jun 2023 02:15:56 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Fri, 16 Jun 2023 02:15:56 GMT
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+# Fri, 16 Jun 2023 02:16:14 GMT
+RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl wget ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 16 Jun 2023 02:17:05 GMT
+ENV JAVA_VERSION=jdk-11.0.19+7
+# Fri, 16 Jun 2023 02:17:37 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='1fe4b20d808f393422610818711c728331992a4455eeeb061d3d05b45412771d';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.19_7.tar.gz';          ;;        armhf|arm)          ESUM='cb754b055177381f9f6852b7e5469904a15edddd7f8e136043c28b1e33aee47c';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jre_arm_linux_hotspot_11.0.19_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='8019d938e5525938ec8e68e2989c4413263b0d9b7b3f20fe0c45f6d967919cfb';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.19_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='058419435fe6212d1bc305a14f578c314f9ff9a2d96d523c178120e84231c733';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jre_s390x_linux_hotspot_11.0.19_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='32dcf760664f93531594b72ce9226e9216567de5705a23c9ff5a77c797948054';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jre_x64_linux_hotspot_11.0.19_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
+# Fri, 16 Jun 2023 02:17:38 GMT
+RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo java --version && java --version     && echo Complete.
+# Fri, 16 Jun 2023 04:34:54 GMT
+ENV CATALINA_HOME=/usr/local/tomcat
+# Fri, 16 Jun 2023 04:34:54 GMT
+ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Fri, 16 Jun 2023 04:34:55 GMT
+RUN mkdir -p "$CATALINA_HOME"
+# Fri, 16 Jun 2023 04:34:55 GMT
+WORKDIR /usr/local/tomcat
+# Fri, 16 Jun 2023 04:34:55 GMT
+ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
+# Fri, 16 Jun 2023 04:34:55 GMT
+ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
+# Fri, 16 Jun 2023 04:37:42 GMT
+ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
+# Fri, 16 Jun 2023 04:37:42 GMT
+ENV TOMCAT_MAJOR=9
+# Fri, 16 Jun 2023 04:37:42 GMT
+ENV TOMCAT_VERSION=9.0.76
+# Fri, 16 Jun 2023 04:37:42 GMT
+ENV TOMCAT_SHA512=028163cbe15367f0ab60e086b0ebc8d774e62d126d82ae9152f863d4680e280b11c9503e3b51ee7089ca9bea1bfa5b535b244a727a3021e5fa72dd7e9569af9a
+# Fri, 16 Jun 2023 04:37:42 GMT
+COPY dir:d68ada5df83c00e64f2bc5fad7f7e78285704dda3af250e863e1e0a3a7acaa1f in /usr/local/tomcat 
+# Fri, 16 Jun 2023 04:37:46 GMT
+RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/*
+# Fri, 16 Jun 2023 04:37:47 GMT
+RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
+# Fri, 16 Jun 2023 04:37:47 GMT
+EXPOSE 8080
+# Fri, 16 Jun 2023 04:37:47 GMT
+CMD ["catalina.sh" "run"]
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.vendor=xwiki.org
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.licenses=LGPL-2.1
+# Fri, 16 Jun 2023 10:11:16 GMT
+RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/*
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_VERSION=15.5
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/15.5
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_DOWNLOAD_SHA256=e552586d371da33b012cfbd974b3ba80d1b147a5c892ad6cf989960212cdaa02
+# Tue, 27 Jun 2023 01:41:10 GMT
+RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
+# Tue, 27 Jun 2023 01:42:09 GMT
+ENV MARIADB_JDBC_VERSION=3.1.4
+# Tue, 27 Jun 2023 01:42:09 GMT
+ENV MARIADB_JDBC_SHA256=eb88b5d727d82e25117e2b6fabcec1daf734633b0a576456c73215884c189ad4
+# Tue, 27 Jun 2023 01:42:09 GMT
+ENV MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.1.4
+# Tue, 27 Jun 2023 01:42:09 GMT
+ENV MARIADB_JDBC_ARTIFACT=mariadb-java-client-3.1.4.jar
+# Tue, 27 Jun 2023 01:42:09 GMT
+ENV MARIADB_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mariadb-java-client-3.1.4.jar
+# Tue, 27 Jun 2023 01:42:10 GMT
+RUN curl -fSL "${MARIADB_JDBC_PREFIX}/${MARIADB_JDBC_ARTIFACT}" -o $MARIADB_JDBC_TARGET &&   echo "$MARIADB_JDBC_SHA256 $MARIADB_JDBC_TARGET" | sha256sum -c -
+# Tue, 27 Jun 2023 01:42:10 GMT
+COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
+# Tue, 27 Jun 2023 01:42:10 GMT
+COPY file:0e237c3876eeb3b5f3473a064d3e507da2df6c228ca714687930b34e3b687601 in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
+# Tue, 27 Jun 2023 01:42:10 GMT
+RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
+# Tue, 27 Jun 2023 01:42:10 GMT
+COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
+# Tue, 27 Jun 2023 01:42:11 GMT
+VOLUME [/usr/local/xwiki]
+# Tue, 27 Jun 2023 01:42:11 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Tue, 27 Jun 2023 01:42:11 GMT
+CMD ["xwiki"]
+```
+
+-	Layers:
+	-	`sha256:3f94e4e483ea634d7ab0b63649b8f72f8b721d4c626297fd0edae0abea1df9e9`  
+		Last Modified: Tue, 06 Jun 2023 11:46:33 GMT  
+		Size: 30.4 MB (30431039 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fa3b6b86b9b9ec784135c9a4adac0cdf59f8b0812134b00402f67714b92e13d6`  
+		Last Modified: Fri, 16 Jun 2023 02:20:59 GMT  
+		Size: 12.5 MB (12495197 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:906feab3d1ffe6f8d194544b36d7e399e813e77a2df6678380a6b4c5a18aec2f`  
+		Last Modified: Fri, 16 Jun 2023 02:22:53 GMT  
+		Size: 46.7 MB (46666394 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9358731a04ce4ffb43ea1162e0684391b355b508420d45ae7921eb8cab9c10db`  
+		Last Modified: Fri, 16 Jun 2023 02:22:47 GMT  
+		Size: 160.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8227a7bb3d2b11b0faf224f49fb0d8fc994b6a8d902d8bc6eb3478490aea1816`  
+		Last Modified: Fri, 16 Jun 2023 04:49:05 GMT  
+		Size: 173.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:091107a5723c6be4efbe464ce52499163a7f46616c82788b102b12a7163dd8e4`  
+		Last Modified: Fri, 16 Jun 2023 04:51:23 GMT  
+		Size: 12.3 MB (12269602 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5d295a6de01da4fb5525c7f30018b23d903a9c05f3e14b3258053900c0696c0c`  
+		Last Modified: Fri, 16 Jun 2023 04:51:22 GMT  
+		Size: 454.6 KB (454597 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ac31a8386f6ec9e8c4c67f00eae10e5bdbef376212ce7c553f3f27636884a5f0`  
+		Last Modified: Fri, 16 Jun 2023 04:51:22 GMT  
+		Size: 130.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b2b0f77c508c593bc448e39233cdd117797ff0ef9d90cbda04c0f019d256f970`  
+		Last Modified: Fri, 16 Jun 2023 10:16:06 GMT  
+		Size: 178.3 MB (178335543 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9bd47dc719a99e43b69ba9a140ab83a542a83a650994b217dc718f91105cd69e`  
+		Last Modified: Tue, 27 Jun 2023 01:42:57 GMT  
+		Size: 304.2 MB (304236713 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:45c1c29a5f690ee19b152bf94d2287c58e834f4d1ba28711278dd168a7626fd7`  
+		Last Modified: Tue, 27 Jun 2023 01:44:04 GMT  
+		Size: 594.5 KB (594550 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:af370251f108dd2614340b7304ce4e265907ad3a3dfa4f9f39783fca4b7bd59d`  
+		Last Modified: Tue, 27 Jun 2023 01:44:04 GMT  
+		Size: 1.3 KB (1345 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6e59b2a6e23c5cfc1dd938bebcb9805b9d35db311ef8295d8b7d5c6617a66159`  
+		Last Modified: Tue, 27 Jun 2023 01:44:05 GMT  
+		Size: 2.3 KB (2312 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e308247bd0d6fa7044aaf78e32bf162f3dec037acbdad61718918fc6bcca05eb`  
+		Last Modified: Tue, 27 Jun 2023 01:44:04 GMT  
+		Size: 6.0 KB (6005 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e7f43672cefc65f8633377a0b78db21c0e618ffb86a3e92c6dbd63c6564a6924`  
+		Last Modified: Tue, 27 Jun 2023 01:44:04 GMT  
+		Size: 2.5 KB (2506 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `xwiki:15.5.0-mariadb-tomcat` - linux; arm64 variant v8
 
@@ -7148,12 +8242,196 @@ CMD ["xwiki"]
 ## `xwiki:15.5.0-mysql-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:d652464fd5fff4abec4b87ee56c17efa703d1cf262651de92f6e409fdc9f13c8
+$ docker pull xwiki@sha256:979fa595c7b0a568ebcbedd5b01e26ada35e59cf519384da14ff2921201c38c9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 1
+-	Platforms: 2
+	-	linux; amd64
 	-	linux; arm64 variant v8
+
+### `xwiki:15.5.0-mysql-tomcat` - linux; amd64
+
+```console
+$ docker pull xwiki@sha256:02e0bfc9c454eee3dfcc098574e45be313bc01a9d3998c34a15aec08e4707ea9
+```
+
+-	Docker Version: 20.10.23
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **587.2 MB (587245368 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0545a35ad07387c7efa5c0daa658f17963357b33d28aee6ddf932afccce08a4a`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["xwiki"]`
+
+```dockerfile
+# Mon, 05 Jun 2023 17:00:37 GMT
+ARG RELEASE
+# Mon, 05 Jun 2023 17:00:37 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Mon, 05 Jun 2023 17:00:37 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Mon, 05 Jun 2023 17:00:37 GMT
+LABEL org.opencontainers.image.version=22.04
+# Mon, 05 Jun 2023 17:00:39 GMT
+ADD file:0ad2ee2cfb186802f49c9bf4148674d1c6fc201f83478ec01ffaa7086d491323 in / 
+# Mon, 05 Jun 2023 17:00:39 GMT
+CMD ["/bin/bash"]
+# Fri, 16 Jun 2023 02:15:56 GMT
+ENV JAVA_HOME=/opt/java/openjdk
+# Fri, 16 Jun 2023 02:15:56 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Fri, 16 Jun 2023 02:15:56 GMT
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+# Fri, 16 Jun 2023 02:16:14 GMT
+RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl wget ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 16 Jun 2023 02:17:05 GMT
+ENV JAVA_VERSION=jdk-11.0.19+7
+# Fri, 16 Jun 2023 02:17:37 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='1fe4b20d808f393422610818711c728331992a4455eeeb061d3d05b45412771d';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.19_7.tar.gz';          ;;        armhf|arm)          ESUM='cb754b055177381f9f6852b7e5469904a15edddd7f8e136043c28b1e33aee47c';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jre_arm_linux_hotspot_11.0.19_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='8019d938e5525938ec8e68e2989c4413263b0d9b7b3f20fe0c45f6d967919cfb';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.19_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='058419435fe6212d1bc305a14f578c314f9ff9a2d96d523c178120e84231c733';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jre_s390x_linux_hotspot_11.0.19_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='32dcf760664f93531594b72ce9226e9216567de5705a23c9ff5a77c797948054';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jre_x64_linux_hotspot_11.0.19_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
+# Fri, 16 Jun 2023 02:17:38 GMT
+RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo java --version && java --version     && echo Complete.
+# Fri, 16 Jun 2023 04:34:54 GMT
+ENV CATALINA_HOME=/usr/local/tomcat
+# Fri, 16 Jun 2023 04:34:54 GMT
+ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Fri, 16 Jun 2023 04:34:55 GMT
+RUN mkdir -p "$CATALINA_HOME"
+# Fri, 16 Jun 2023 04:34:55 GMT
+WORKDIR /usr/local/tomcat
+# Fri, 16 Jun 2023 04:34:55 GMT
+ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
+# Fri, 16 Jun 2023 04:34:55 GMT
+ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
+# Fri, 16 Jun 2023 04:37:42 GMT
+ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
+# Fri, 16 Jun 2023 04:37:42 GMT
+ENV TOMCAT_MAJOR=9
+# Fri, 16 Jun 2023 04:37:42 GMT
+ENV TOMCAT_VERSION=9.0.76
+# Fri, 16 Jun 2023 04:37:42 GMT
+ENV TOMCAT_SHA512=028163cbe15367f0ab60e086b0ebc8d774e62d126d82ae9152f863d4680e280b11c9503e3b51ee7089ca9bea1bfa5b535b244a727a3021e5fa72dd7e9569af9a
+# Fri, 16 Jun 2023 04:37:42 GMT
+COPY dir:d68ada5df83c00e64f2bc5fad7f7e78285704dda3af250e863e1e0a3a7acaa1f in /usr/local/tomcat 
+# Fri, 16 Jun 2023 04:37:46 GMT
+RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/*
+# Fri, 16 Jun 2023 04:37:47 GMT
+RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
+# Fri, 16 Jun 2023 04:37:47 GMT
+EXPOSE 8080
+# Fri, 16 Jun 2023 04:37:47 GMT
+CMD ["catalina.sh" "run"]
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.vendor=xwiki.org
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.licenses=LGPL-2.1
+# Fri, 16 Jun 2023 10:11:16 GMT
+RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/*
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_VERSION=15.5
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/15.5
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_DOWNLOAD_SHA256=e552586d371da33b012cfbd974b3ba80d1b147a5c892ad6cf989960212cdaa02
+# Tue, 27 Jun 2023 01:41:10 GMT
+RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
+# Tue, 27 Jun 2023 01:41:11 GMT
+ENV MYSQL_JDBC_VERSION=8.0.33
+# Tue, 27 Jun 2023 01:41:11 GMT
+ENV MYSQL_JDBC_SHA256=e2a3b2fc726a1ac64e998585db86b30fa8bf3f706195b78bb77c5f99bf877bd9
+# Tue, 27 Jun 2023 01:41:11 GMT
+ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/8.0.33
+# Tue, 27 Jun 2023 01:41:11 GMT
+ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-8.0.33.jar
+# Tue, 27 Jun 2023 01:41:11 GMT
+ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-8.0.33.jar
+# Tue, 27 Jun 2023 01:41:12 GMT
+RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c -
+# Tue, 27 Jun 2023 01:41:12 GMT
+COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
+# Tue, 27 Jun 2023 01:41:12 GMT
+COPY file:1b8409986f3e4eb79a7a0b18472cb2692a61d504fb5ef34292bc997b79fd760d in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
+# Tue, 27 Jun 2023 01:41:13 GMT
+RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
+# Tue, 27 Jun 2023 01:41:13 GMT
+COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
+# Tue, 27 Jun 2023 01:41:13 GMT
+VOLUME [/usr/local/xwiki]
+# Tue, 27 Jun 2023 01:41:13 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Tue, 27 Jun 2023 01:41:13 GMT
+CMD ["xwiki"]
+```
+
+-	Layers:
+	-	`sha256:3f94e4e483ea634d7ab0b63649b8f72f8b721d4c626297fd0edae0abea1df9e9`  
+		Last Modified: Tue, 06 Jun 2023 11:46:33 GMT  
+		Size: 30.4 MB (30431039 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fa3b6b86b9b9ec784135c9a4adac0cdf59f8b0812134b00402f67714b92e13d6`  
+		Last Modified: Fri, 16 Jun 2023 02:20:59 GMT  
+		Size: 12.5 MB (12495197 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:906feab3d1ffe6f8d194544b36d7e399e813e77a2df6678380a6b4c5a18aec2f`  
+		Last Modified: Fri, 16 Jun 2023 02:22:53 GMT  
+		Size: 46.7 MB (46666394 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9358731a04ce4ffb43ea1162e0684391b355b508420d45ae7921eb8cab9c10db`  
+		Last Modified: Fri, 16 Jun 2023 02:22:47 GMT  
+		Size: 160.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8227a7bb3d2b11b0faf224f49fb0d8fc994b6a8d902d8bc6eb3478490aea1816`  
+		Last Modified: Fri, 16 Jun 2023 04:49:05 GMT  
+		Size: 173.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:091107a5723c6be4efbe464ce52499163a7f46616c82788b102b12a7163dd8e4`  
+		Last Modified: Fri, 16 Jun 2023 04:51:23 GMT  
+		Size: 12.3 MB (12269602 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5d295a6de01da4fb5525c7f30018b23d903a9c05f3e14b3258053900c0696c0c`  
+		Last Modified: Fri, 16 Jun 2023 04:51:22 GMT  
+		Size: 454.6 KB (454597 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ac31a8386f6ec9e8c4c67f00eae10e5bdbef376212ce7c553f3f27636884a5f0`  
+		Last Modified: Fri, 16 Jun 2023 04:51:22 GMT  
+		Size: 130.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b2b0f77c508c593bc448e39233cdd117797ff0ef9d90cbda04c0f019d256f970`  
+		Last Modified: Fri, 16 Jun 2023 10:16:06 GMT  
+		Size: 178.3 MB (178335543 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9bd47dc719a99e43b69ba9a140ab83a542a83a650994b217dc718f91105cd69e`  
+		Last Modified: Tue, 27 Jun 2023 01:42:57 GMT  
+		Size: 304.2 MB (304236713 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:74b97a6d523b6dba73f270d7299e1dbbc54de2f4ed56e0c3f33a291fc4ad7ba2`  
+		Last Modified: Tue, 27 Jun 2023 01:42:41 GMT  
+		Size: 2.3 MB (2343669 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e4e4a42e9034c83f3a1f1dfcb4dacb8e5a1b25aebe119dcc62c023dad6823607`  
+		Last Modified: Tue, 27 Jun 2023 01:42:40 GMT  
+		Size: 1.3 KB (1344 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a20f48998f9362e0d8d6102527c0b50c39435b96ccdcdc513a3ca26e75f48a83`  
+		Last Modified: Tue, 27 Jun 2023 01:42:40 GMT  
+		Size: 2.3 KB (2304 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3f18b2c8b019f176759c24b717806bfb051615f9004adf3b11ce54433b43f946`  
+		Last Modified: Tue, 27 Jun 2023 01:42:40 GMT  
+		Size: 6.0 KB (6003 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0ae3dd734e9952f4e1b2cfc1a5e844079689414fea35c00f4debc02d70f6e447`  
+		Last Modified: Tue, 27 Jun 2023 01:42:40 GMT  
+		Size: 2.5 KB (2500 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `xwiki:15.5.0-mysql-tomcat` - linux; arm64 variant v8
 
@@ -7341,12 +8619,186 @@ CMD ["xwiki"]
 ## `xwiki:15.5.0-postgres-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:c1a607190da0c919a56aaecdcc12b72a672fafa3e4acfb9bfb6969358dfa3fd6
+$ docker pull xwiki@sha256:a85547de3dc08a8183b0927dfe1025b44d4a4ddeaf3ea6a99bd5d0cdd0396731
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 1
+-	Platforms: 2
+	-	linux; amd64
 	-	linux; arm64 variant v8
+
+### `xwiki:15.5.0-postgres-tomcat` - linux; amd64
+
+```console
+$ docker pull xwiki@sha256:9db8828614bb0b2e6cf23a98a635768400cc84f6c1e91277661daf56906a95c4
+```
+
+-	Docker Version: 20.10.23
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **586.8 MB (586779249 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:44a3c2a08180c4bde30aae21b9884e9125edb33c6cda58103cfbbe409478244f`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["xwiki"]`
+
+```dockerfile
+# Mon, 05 Jun 2023 17:00:37 GMT
+ARG RELEASE
+# Mon, 05 Jun 2023 17:00:37 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Mon, 05 Jun 2023 17:00:37 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Mon, 05 Jun 2023 17:00:37 GMT
+LABEL org.opencontainers.image.version=22.04
+# Mon, 05 Jun 2023 17:00:39 GMT
+ADD file:0ad2ee2cfb186802f49c9bf4148674d1c6fc201f83478ec01ffaa7086d491323 in / 
+# Mon, 05 Jun 2023 17:00:39 GMT
+CMD ["/bin/bash"]
+# Fri, 16 Jun 2023 02:15:56 GMT
+ENV JAVA_HOME=/opt/java/openjdk
+# Fri, 16 Jun 2023 02:15:56 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Fri, 16 Jun 2023 02:15:56 GMT
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+# Fri, 16 Jun 2023 02:16:14 GMT
+RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl wget ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
+# Fri, 16 Jun 2023 02:17:05 GMT
+ENV JAVA_VERSION=jdk-11.0.19+7
+# Fri, 16 Jun 2023 02:17:37 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='1fe4b20d808f393422610818711c728331992a4455eeeb061d3d05b45412771d';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.19_7.tar.gz';          ;;        armhf|arm)          ESUM='cb754b055177381f9f6852b7e5469904a15edddd7f8e136043c28b1e33aee47c';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jre_arm_linux_hotspot_11.0.19_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='8019d938e5525938ec8e68e2989c4413263b0d9b7b3f20fe0c45f6d967919cfb';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.19_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='058419435fe6212d1bc305a14f578c314f9ff9a2d96d523c178120e84231c733';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jre_s390x_linux_hotspot_11.0.19_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='32dcf760664f93531594b72ce9226e9216567de5705a23c9ff5a77c797948054';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jre_x64_linux_hotspot_11.0.19_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
+# Fri, 16 Jun 2023 02:17:38 GMT
+RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo java --version && java --version     && echo Complete.
+# Fri, 16 Jun 2023 04:34:54 GMT
+ENV CATALINA_HOME=/usr/local/tomcat
+# Fri, 16 Jun 2023 04:34:54 GMT
+ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Fri, 16 Jun 2023 04:34:55 GMT
+RUN mkdir -p "$CATALINA_HOME"
+# Fri, 16 Jun 2023 04:34:55 GMT
+WORKDIR /usr/local/tomcat
+# Fri, 16 Jun 2023 04:34:55 GMT
+ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
+# Fri, 16 Jun 2023 04:34:55 GMT
+ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
+# Fri, 16 Jun 2023 04:37:42 GMT
+ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
+# Fri, 16 Jun 2023 04:37:42 GMT
+ENV TOMCAT_MAJOR=9
+# Fri, 16 Jun 2023 04:37:42 GMT
+ENV TOMCAT_VERSION=9.0.76
+# Fri, 16 Jun 2023 04:37:42 GMT
+ENV TOMCAT_SHA512=028163cbe15367f0ab60e086b0ebc8d774e62d126d82ae9152f863d4680e280b11c9503e3b51ee7089ca9bea1bfa5b535b244a727a3021e5fa72dd7e9569af9a
+# Fri, 16 Jun 2023 04:37:42 GMT
+COPY dir:d68ada5df83c00e64f2bc5fad7f7e78285704dda3af250e863e1e0a3a7acaa1f in /usr/local/tomcat 
+# Fri, 16 Jun 2023 04:37:46 GMT
+RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/*
+# Fri, 16 Jun 2023 04:37:47 GMT
+RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
+# Fri, 16 Jun 2023 04:37:47 GMT
+EXPOSE 8080
+# Fri, 16 Jun 2023 04:37:47 GMT
+CMD ["catalina.sh" "run"]
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.vendor=xwiki.org
+# Fri, 16 Jun 2023 10:07:29 GMT
+LABEL org.opencontainers.image.licenses=LGPL-2.1
+# Fri, 16 Jun 2023 10:12:34 GMT
+RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps     libpostgresql-jdbc-java &&   rm -rf /var/lib/apt/lists/*
+# Tue, 27 Jun 2023 01:41:20 GMT
+ENV XWIKI_VERSION=15.5
+# Tue, 27 Jun 2023 01:41:20 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/15.5
+# Tue, 27 Jun 2023 01:41:20 GMT
+ENV XWIKI_DOWNLOAD_SHA256=e552586d371da33b012cfbd974b3ba80d1b147a5c892ad6cf989960212cdaa02
+# Tue, 27 Jun 2023 01:41:59 GMT
+RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
+# Tue, 27 Jun 2023 01:42:00 GMT
+RUN cp /usr/share/java/postgresql-jdbc4.jar /usr/local/tomcat/webapps/ROOT/WEB-INF/lib/
+# Tue, 27 Jun 2023 01:42:00 GMT
+COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
+# Tue, 27 Jun 2023 01:42:00 GMT
+COPY file:4a923f484bb29a26630c19e1d617d3bf6aa6ae7c6c4a5561e97b037bcde0847c in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
+# Tue, 27 Jun 2023 01:42:01 GMT
+RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
+# Tue, 27 Jun 2023 01:42:01 GMT
+COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
+# Tue, 27 Jun 2023 01:42:01 GMT
+VOLUME [/usr/local/xwiki]
+# Tue, 27 Jun 2023 01:42:01 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Tue, 27 Jun 2023 01:42:01 GMT
+CMD ["xwiki"]
+```
+
+-	Layers:
+	-	`sha256:3f94e4e483ea634d7ab0b63649b8f72f8b721d4c626297fd0edae0abea1df9e9`  
+		Last Modified: Tue, 06 Jun 2023 11:46:33 GMT  
+		Size: 30.4 MB (30431039 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fa3b6b86b9b9ec784135c9a4adac0cdf59f8b0812134b00402f67714b92e13d6`  
+		Last Modified: Fri, 16 Jun 2023 02:20:59 GMT  
+		Size: 12.5 MB (12495197 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:906feab3d1ffe6f8d194544b36d7e399e813e77a2df6678380a6b4c5a18aec2f`  
+		Last Modified: Fri, 16 Jun 2023 02:22:53 GMT  
+		Size: 46.7 MB (46666394 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9358731a04ce4ffb43ea1162e0684391b355b508420d45ae7921eb8cab9c10db`  
+		Last Modified: Fri, 16 Jun 2023 02:22:47 GMT  
+		Size: 160.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8227a7bb3d2b11b0faf224f49fb0d8fc994b6a8d902d8bc6eb3478490aea1816`  
+		Last Modified: Fri, 16 Jun 2023 04:49:05 GMT  
+		Size: 173.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:091107a5723c6be4efbe464ce52499163a7f46616c82788b102b12a7163dd8e4`  
+		Last Modified: Fri, 16 Jun 2023 04:51:23 GMT  
+		Size: 12.3 MB (12269602 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5d295a6de01da4fb5525c7f30018b23d903a9c05f3e14b3258053900c0696c0c`  
+		Last Modified: Fri, 16 Jun 2023 04:51:22 GMT  
+		Size: 454.6 KB (454597 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ac31a8386f6ec9e8c4c67f00eae10e5bdbef376212ce7c553f3f27636884a5f0`  
+		Last Modified: Fri, 16 Jun 2023 04:51:22 GMT  
+		Size: 130.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d50f5284f0323896270a5d0729ddc66273e395ed952cd4948a6427a0e7c8f4ad`  
+		Last Modified: Fri, 16 Jun 2023 10:17:07 GMT  
+		Size: 179.3 MB (179276103 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:60a6eb965a43844f6f0974dfa2e92506452c8992b4c06e699e11c753b0022644`  
+		Last Modified: Tue, 27 Jun 2023 01:43:45 GMT  
+		Size: 304.2 MB (304236722 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9f3670e551a89ef20601ac60cc69e45c26001dd894a6216e9155337347fa5f02`  
+		Last Modified: Tue, 27 Jun 2023 01:43:28 GMT  
+		Size: 936.8 KB (936844 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a582e1c87042ed028e6460a31881a2ca95a173f0bed180c51569bd3d9dc2b7c8`  
+		Last Modified: Tue, 27 Jun 2023 01:43:28 GMT  
+		Size: 1.3 KB (1341 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e280630f67e4fed4d120df4731c85155afbcb625afd4e25cf4ce7c62a978bfa7`  
+		Last Modified: Tue, 27 Jun 2023 01:43:28 GMT  
+		Size: 2.4 KB (2448 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:272b5d2c3df5b2c0c128a5c845a54b0361c9c2009ba22b7ccd102c1c574d9c65`  
+		Last Modified: Tue, 27 Jun 2023 01:43:28 GMT  
+		Size: 6.0 KB (6000 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ab704aefe2e11d01d6f67c799b5058e7a6bfbc2c7c6ac2a789a8db6d33cc3983`  
+		Last Modified: Tue, 27 Jun 2023 01:43:28 GMT  
+		Size: 2.5 KB (2499 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `xwiki:15.5.0-postgres-tomcat` - linux; arm64 variant v8
 
@@ -7524,7 +8976,7 @@ CMD ["xwiki"]
 ## `xwiki:latest`
 
 ```console
-$ docker pull xwiki@sha256:0ba5122a74827254d45fbc2ddc668d66400ea3187aa86ab9620d11bbdea30f2a
+$ docker pull xwiki@sha256:979fa595c7b0a568ebcbedd5b01e26ada35e59cf519384da14ff2921201c38c9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7535,14 +8987,14 @@ $ docker pull xwiki@sha256:0ba5122a74827254d45fbc2ddc668d66400ea3187aa86ab9620d1
 ### `xwiki:latest` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:208c0828b77fcf874840ddded8b37b9cb329127f8ea196499e316ffd86559b05
+$ docker pull xwiki@sha256:02e0bfc9c454eee3dfcc098574e45be313bc01a9d3998c34a15aec08e4707ea9
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **589.8 MB (589788392 bytes)**  
+-	Total Size: **587.2 MB (587245368 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c2ac4aa71841cc195c6d929b61363f55d5754b96fa946a7f6e2f05af6498e16d`
+-	Image ID: `sha256:0545a35ad07387c7efa5c0daa658f17963357b33d28aee6ddf932afccce08a4a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -7617,39 +9069,39 @@ LABEL org.opencontainers.image.vendor=xwiki.org
 LABEL org.opencontainers.image.licenses=LGPL-2.1
 # Fri, 16 Jun 2023 10:11:16 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/*
-# Fri, 16 Jun 2023 10:11:17 GMT
-ENV XWIKI_VERSION=15.4
-# Fri, 16 Jun 2023 10:11:17 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/15.4
-# Fri, 16 Jun 2023 10:11:17 GMT
-ENV XWIKI_DOWNLOAD_SHA256=f24def5b4e3f97c56ed03d5983766028676d6ce205bd60d3798352be5a050505
-# Fri, 16 Jun 2023 10:11:57 GMT
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_VERSION=15.5
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/15.5
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_DOWNLOAD_SHA256=e552586d371da33b012cfbd974b3ba80d1b147a5c892ad6cf989960212cdaa02
+# Tue, 27 Jun 2023 01:41:10 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Fri, 16 Jun 2023 10:11:58 GMT
+# Tue, 27 Jun 2023 01:41:11 GMT
 ENV MYSQL_JDBC_VERSION=8.0.33
-# Fri, 16 Jun 2023 10:11:58 GMT
+# Tue, 27 Jun 2023 01:41:11 GMT
 ENV MYSQL_JDBC_SHA256=e2a3b2fc726a1ac64e998585db86b30fa8bf3f706195b78bb77c5f99bf877bd9
-# Fri, 16 Jun 2023 10:11:58 GMT
+# Tue, 27 Jun 2023 01:41:11 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/8.0.33
-# Fri, 16 Jun 2023 10:11:58 GMT
+# Tue, 27 Jun 2023 01:41:11 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-8.0.33.jar
-# Fri, 16 Jun 2023 10:11:58 GMT
+# Tue, 27 Jun 2023 01:41:11 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-8.0.33.jar
-# Fri, 16 Jun 2023 10:11:59 GMT
+# Tue, 27 Jun 2023 01:41:12 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c -
-# Fri, 16 Jun 2023 10:11:59 GMT
+# Tue, 27 Jun 2023 01:41:12 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Fri, 16 Jun 2023 10:11:59 GMT
+# Tue, 27 Jun 2023 01:41:12 GMT
 COPY file:1b8409986f3e4eb79a7a0b18472cb2692a61d504fb5ef34292bc997b79fd760d in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Fri, 16 Jun 2023 10:12:00 GMT
+# Tue, 27 Jun 2023 01:41:13 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Fri, 16 Jun 2023 10:12:00 GMT
+# Tue, 27 Jun 2023 01:41:13 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Fri, 16 Jun 2023 10:12:00 GMT
+# Tue, 27 Jun 2023 01:41:13 GMT
 VOLUME [/usr/local/xwiki]
-# Fri, 16 Jun 2023 10:12:00 GMT
+# Tue, 27 Jun 2023 01:41:13 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jun 2023 10:12:00 GMT
+# Tue, 27 Jun 2023 01:41:13 GMT
 CMD ["xwiki"]
 ```
 
@@ -7690,29 +9142,29 @@ CMD ["xwiki"]
 		Last Modified: Fri, 16 Jun 2023 10:16:06 GMT  
 		Size: 178.3 MB (178335543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0c80f9e73d670c33d5fe706e60a513004a81d3035decf77bfd10f09b12761b37`  
-		Last Modified: Fri, 16 Jun 2023 10:15:59 GMT  
-		Size: 306.8 MB (306779726 bytes)  
+	-	`sha256:9bd47dc719a99e43b69ba9a140ab83a542a83a650994b217dc718f91105cd69e`  
+		Last Modified: Tue, 27 Jun 2023 01:42:57 GMT  
+		Size: 304.2 MB (304236713 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5333a1ead54427a95f33fd77ee949aa6966efa6efd11205d29a8df8b5ae52c33`  
-		Last Modified: Fri, 16 Jun 2023 10:15:42 GMT  
-		Size: 2.3 MB (2343673 bytes)  
+	-	`sha256:74b97a6d523b6dba73f270d7299e1dbbc54de2f4ed56e0c3f33a291fc4ad7ba2`  
+		Last Modified: Tue, 27 Jun 2023 01:42:41 GMT  
+		Size: 2.3 MB (2343669 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9b0ce21bb11b3ddeb486346aa6bd569fa77192263a6fde9a24436b9bf08e558`  
-		Last Modified: Fri, 16 Jun 2023 10:15:42 GMT  
-		Size: 1.3 KB (1347 bytes)  
+	-	`sha256:e4e4a42e9034c83f3a1f1dfcb4dacb8e5a1b25aebe119dcc62c023dad6823607`  
+		Last Modified: Tue, 27 Jun 2023 01:42:40 GMT  
+		Size: 1.3 KB (1344 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0566d4a68b2c970bf5b1b8cf63f8aad2e34518653598b044f4299aab39e755b4`  
-		Last Modified: Fri, 16 Jun 2023 10:15:41 GMT  
-		Size: 2.3 KB (2309 bytes)  
+	-	`sha256:a20f48998f9362e0d8d6102527c0b50c39435b96ccdcdc513a3ca26e75f48a83`  
+		Last Modified: Tue, 27 Jun 2023 01:42:40 GMT  
+		Size: 2.3 KB (2304 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f7d02bec5189fff55e5175a3877a1968f61de5fce3b84a36717548ec872c9ef8`  
-		Last Modified: Fri, 16 Jun 2023 10:15:41 GMT  
-		Size: 6.0 KB (5995 bytes)  
+	-	`sha256:3f18b2c8b019f176759c24b717806bfb051615f9004adf3b11ce54433b43f946`  
+		Last Modified: Tue, 27 Jun 2023 01:42:40 GMT  
+		Size: 6.0 KB (6003 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:119ece74ae38252f80d763200cc375e912968676ba890805d2dcd674e74f95b0`  
-		Last Modified: Fri, 16 Jun 2023 10:15:41 GMT  
-		Size: 2.5 KB (2507 bytes)  
+	-	`sha256:0ae3dd734e9952f4e1b2cfc1a5e844079689414fea35c00f4debc02d70f6e447`  
+		Last Modified: Tue, 27 Jun 2023 01:42:40 GMT  
+		Size: 2.5 KB (2500 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `xwiki:latest` - linux; arm64 variant v8
@@ -10500,7 +11952,7 @@ CMD ["xwiki"]
 ## `xwiki:mariadb-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:445b2b68c785d6435663f4a74cf616fd5033f0c91e98b558c02c43e17a2b52ef
+$ docker pull xwiki@sha256:b5eb1881a08541e70d1a5cbcfe2d2da0099bdac35a396d5edc28d1de015b3b80
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10511,14 +11963,14 @@ $ docker pull xwiki@sha256:445b2b68c785d6435663f4a74cf616fd5033f0c91e98b558c02c4
 ### `xwiki:mariadb-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:7d5b0b15ea0e96030027b7cac69aff7a51b79d4f83d6bed8e4417857da81a89f
+$ docker pull xwiki@sha256:08060683af9af5d94bd94d1a9b3574524a130e4364ef4911c9f27c7b4160b163
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **588.0 MB (588039272 bytes)**  
+-	Total Size: **585.5 MB (585496266 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:03c5ba73085068a0d5fb034f7bb324bbcc1fea7441c2b397eea26a09737d5091`
+-	Image ID: `sha256:0003e3176b872fe97a7b7f697235a4d8414ddfe1181b2c300e41691fc1c45bf9`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -10593,39 +12045,39 @@ LABEL org.opencontainers.image.vendor=xwiki.org
 LABEL org.opencontainers.image.licenses=LGPL-2.1
 # Fri, 16 Jun 2023 10:11:16 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/*
-# Fri, 16 Jun 2023 10:11:17 GMT
-ENV XWIKI_VERSION=15.4
-# Fri, 16 Jun 2023 10:11:17 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/15.4
-# Fri, 16 Jun 2023 10:11:17 GMT
-ENV XWIKI_DOWNLOAD_SHA256=f24def5b4e3f97c56ed03d5983766028676d6ce205bd60d3798352be5a050505
-# Fri, 16 Jun 2023 10:11:57 GMT
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_VERSION=15.5
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/15.5
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_DOWNLOAD_SHA256=e552586d371da33b012cfbd974b3ba80d1b147a5c892ad6cf989960212cdaa02
+# Tue, 27 Jun 2023 01:41:10 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Fri, 16 Jun 2023 10:13:31 GMT
+# Tue, 27 Jun 2023 01:42:09 GMT
 ENV MARIADB_JDBC_VERSION=3.1.4
-# Fri, 16 Jun 2023 10:13:31 GMT
+# Tue, 27 Jun 2023 01:42:09 GMT
 ENV MARIADB_JDBC_SHA256=eb88b5d727d82e25117e2b6fabcec1daf734633b0a576456c73215884c189ad4
-# Fri, 16 Jun 2023 10:13:31 GMT
+# Tue, 27 Jun 2023 01:42:09 GMT
 ENV MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.1.4
-# Fri, 16 Jun 2023 10:13:32 GMT
+# Tue, 27 Jun 2023 01:42:09 GMT
 ENV MARIADB_JDBC_ARTIFACT=mariadb-java-client-3.1.4.jar
-# Fri, 16 Jun 2023 10:13:32 GMT
+# Tue, 27 Jun 2023 01:42:09 GMT
 ENV MARIADB_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mariadb-java-client-3.1.4.jar
-# Fri, 16 Jun 2023 10:13:32 GMT
+# Tue, 27 Jun 2023 01:42:10 GMT
 RUN curl -fSL "${MARIADB_JDBC_PREFIX}/${MARIADB_JDBC_ARTIFACT}" -o $MARIADB_JDBC_TARGET &&   echo "$MARIADB_JDBC_SHA256 $MARIADB_JDBC_TARGET" | sha256sum -c -
-# Fri, 16 Jun 2023 10:13:32 GMT
+# Tue, 27 Jun 2023 01:42:10 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Fri, 16 Jun 2023 10:13:33 GMT
+# Tue, 27 Jun 2023 01:42:10 GMT
 COPY file:0e237c3876eeb3b5f3473a064d3e507da2df6c228ca714687930b34e3b687601 in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Fri, 16 Jun 2023 10:13:33 GMT
+# Tue, 27 Jun 2023 01:42:10 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Fri, 16 Jun 2023 10:13:33 GMT
+# Tue, 27 Jun 2023 01:42:10 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Fri, 16 Jun 2023 10:13:33 GMT
+# Tue, 27 Jun 2023 01:42:11 GMT
 VOLUME [/usr/local/xwiki]
-# Fri, 16 Jun 2023 10:13:33 GMT
+# Tue, 27 Jun 2023 01:42:11 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jun 2023 10:13:33 GMT
+# Tue, 27 Jun 2023 01:42:11 GMT
 CMD ["xwiki"]
 ```
 
@@ -10666,28 +12118,28 @@ CMD ["xwiki"]
 		Last Modified: Fri, 16 Jun 2023 10:16:06 GMT  
 		Size: 178.3 MB (178335543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0c80f9e73d670c33d5fe706e60a513004a81d3035decf77bfd10f09b12761b37`  
-		Last Modified: Fri, 16 Jun 2023 10:15:59 GMT  
-		Size: 306.8 MB (306779726 bytes)  
+	-	`sha256:9bd47dc719a99e43b69ba9a140ab83a542a83a650994b217dc718f91105cd69e`  
+		Last Modified: Tue, 27 Jun 2023 01:42:57 GMT  
+		Size: 304.2 MB (304236713 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa9c74e14b2d260215b88a8f5b38dbaf60ca75436dd31fa55767a3661e5f0593`  
-		Last Modified: Fri, 16 Jun 2023 10:17:26 GMT  
-		Size: 594.6 KB (594551 bytes)  
+	-	`sha256:45c1c29a5f690ee19b152bf94d2287c58e834f4d1ba28711278dd168a7626fd7`  
+		Last Modified: Tue, 27 Jun 2023 01:44:04 GMT  
+		Size: 594.5 KB (594550 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7233cd593a469ab22cdbb0b96a1923c224edb5c7c5afb93cb2805e4ddecb5086`  
-		Last Modified: Fri, 16 Jun 2023 10:17:26 GMT  
+	-	`sha256:af370251f108dd2614340b7304ce4e265907ad3a3dfa4f9f39783fca4b7bd59d`  
+		Last Modified: Tue, 27 Jun 2023 01:44:04 GMT  
 		Size: 1.3 KB (1345 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:146d8e31efe996e04f601eaf2174fede6f20fa2722872e7e29c9ca4635598eb5`  
-		Last Modified: Fri, 16 Jun 2023 10:17:26 GMT  
+	-	`sha256:6e59b2a6e23c5cfc1dd938bebcb9805b9d35db311ef8295d8b7d5c6617a66159`  
+		Last Modified: Tue, 27 Jun 2023 01:44:05 GMT  
 		Size: 2.3 KB (2312 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:40922519664f9afd9c5f1fd4453b8535a543a86bdb79a1d897f324c13acf0a45`  
-		Last Modified: Fri, 16 Jun 2023 10:17:26 GMT  
-		Size: 6.0 KB (5997 bytes)  
+	-	`sha256:e308247bd0d6fa7044aaf78e32bf162f3dec037acbdad61718918fc6bcca05eb`  
+		Last Modified: Tue, 27 Jun 2023 01:44:04 GMT  
+		Size: 6.0 KB (6005 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:034a808158393b89616b1f1a027a4ece7db042538d3def080a8987141bcccdfa`  
-		Last Modified: Fri, 16 Jun 2023 10:17:26 GMT  
+	-	`sha256:e7f43672cefc65f8633377a0b78db21c0e618ffb86a3e92c6dbd63c6564a6924`  
+		Last Modified: Tue, 27 Jun 2023 01:44:04 GMT  
 		Size: 2.5 KB (2506 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -10877,7 +12329,7 @@ CMD ["xwiki"]
 ## `xwiki:mysql-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:0ba5122a74827254d45fbc2ddc668d66400ea3187aa86ab9620d11bbdea30f2a
+$ docker pull xwiki@sha256:979fa595c7b0a568ebcbedd5b01e26ada35e59cf519384da14ff2921201c38c9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10888,14 +12340,14 @@ $ docker pull xwiki@sha256:0ba5122a74827254d45fbc2ddc668d66400ea3187aa86ab9620d1
 ### `xwiki:mysql-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:208c0828b77fcf874840ddded8b37b9cb329127f8ea196499e316ffd86559b05
+$ docker pull xwiki@sha256:02e0bfc9c454eee3dfcc098574e45be313bc01a9d3998c34a15aec08e4707ea9
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **589.8 MB (589788392 bytes)**  
+-	Total Size: **587.2 MB (587245368 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c2ac4aa71841cc195c6d929b61363f55d5754b96fa946a7f6e2f05af6498e16d`
+-	Image ID: `sha256:0545a35ad07387c7efa5c0daa658f17963357b33d28aee6ddf932afccce08a4a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -10970,39 +12422,39 @@ LABEL org.opencontainers.image.vendor=xwiki.org
 LABEL org.opencontainers.image.licenses=LGPL-2.1
 # Fri, 16 Jun 2023 10:11:16 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/*
-# Fri, 16 Jun 2023 10:11:17 GMT
-ENV XWIKI_VERSION=15.4
-# Fri, 16 Jun 2023 10:11:17 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/15.4
-# Fri, 16 Jun 2023 10:11:17 GMT
-ENV XWIKI_DOWNLOAD_SHA256=f24def5b4e3f97c56ed03d5983766028676d6ce205bd60d3798352be5a050505
-# Fri, 16 Jun 2023 10:11:57 GMT
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_VERSION=15.5
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/15.5
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_DOWNLOAD_SHA256=e552586d371da33b012cfbd974b3ba80d1b147a5c892ad6cf989960212cdaa02
+# Tue, 27 Jun 2023 01:41:10 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Fri, 16 Jun 2023 10:11:58 GMT
+# Tue, 27 Jun 2023 01:41:11 GMT
 ENV MYSQL_JDBC_VERSION=8.0.33
-# Fri, 16 Jun 2023 10:11:58 GMT
+# Tue, 27 Jun 2023 01:41:11 GMT
 ENV MYSQL_JDBC_SHA256=e2a3b2fc726a1ac64e998585db86b30fa8bf3f706195b78bb77c5f99bf877bd9
-# Fri, 16 Jun 2023 10:11:58 GMT
+# Tue, 27 Jun 2023 01:41:11 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/8.0.33
-# Fri, 16 Jun 2023 10:11:58 GMT
+# Tue, 27 Jun 2023 01:41:11 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-8.0.33.jar
-# Fri, 16 Jun 2023 10:11:58 GMT
+# Tue, 27 Jun 2023 01:41:11 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-8.0.33.jar
-# Fri, 16 Jun 2023 10:11:59 GMT
+# Tue, 27 Jun 2023 01:41:12 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c -
-# Fri, 16 Jun 2023 10:11:59 GMT
+# Tue, 27 Jun 2023 01:41:12 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Fri, 16 Jun 2023 10:11:59 GMT
+# Tue, 27 Jun 2023 01:41:12 GMT
 COPY file:1b8409986f3e4eb79a7a0b18472cb2692a61d504fb5ef34292bc997b79fd760d in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Fri, 16 Jun 2023 10:12:00 GMT
+# Tue, 27 Jun 2023 01:41:13 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Fri, 16 Jun 2023 10:12:00 GMT
+# Tue, 27 Jun 2023 01:41:13 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Fri, 16 Jun 2023 10:12:00 GMT
+# Tue, 27 Jun 2023 01:41:13 GMT
 VOLUME [/usr/local/xwiki]
-# Fri, 16 Jun 2023 10:12:00 GMT
+# Tue, 27 Jun 2023 01:41:13 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jun 2023 10:12:00 GMT
+# Tue, 27 Jun 2023 01:41:13 GMT
 CMD ["xwiki"]
 ```
 
@@ -11043,29 +12495,29 @@ CMD ["xwiki"]
 		Last Modified: Fri, 16 Jun 2023 10:16:06 GMT  
 		Size: 178.3 MB (178335543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0c80f9e73d670c33d5fe706e60a513004a81d3035decf77bfd10f09b12761b37`  
-		Last Modified: Fri, 16 Jun 2023 10:15:59 GMT  
-		Size: 306.8 MB (306779726 bytes)  
+	-	`sha256:9bd47dc719a99e43b69ba9a140ab83a542a83a650994b217dc718f91105cd69e`  
+		Last Modified: Tue, 27 Jun 2023 01:42:57 GMT  
+		Size: 304.2 MB (304236713 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5333a1ead54427a95f33fd77ee949aa6966efa6efd11205d29a8df8b5ae52c33`  
-		Last Modified: Fri, 16 Jun 2023 10:15:42 GMT  
-		Size: 2.3 MB (2343673 bytes)  
+	-	`sha256:74b97a6d523b6dba73f270d7299e1dbbc54de2f4ed56e0c3f33a291fc4ad7ba2`  
+		Last Modified: Tue, 27 Jun 2023 01:42:41 GMT  
+		Size: 2.3 MB (2343669 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9b0ce21bb11b3ddeb486346aa6bd569fa77192263a6fde9a24436b9bf08e558`  
-		Last Modified: Fri, 16 Jun 2023 10:15:42 GMT  
-		Size: 1.3 KB (1347 bytes)  
+	-	`sha256:e4e4a42e9034c83f3a1f1dfcb4dacb8e5a1b25aebe119dcc62c023dad6823607`  
+		Last Modified: Tue, 27 Jun 2023 01:42:40 GMT  
+		Size: 1.3 KB (1344 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0566d4a68b2c970bf5b1b8cf63f8aad2e34518653598b044f4299aab39e755b4`  
-		Last Modified: Fri, 16 Jun 2023 10:15:41 GMT  
-		Size: 2.3 KB (2309 bytes)  
+	-	`sha256:a20f48998f9362e0d8d6102527c0b50c39435b96ccdcdc513a3ca26e75f48a83`  
+		Last Modified: Tue, 27 Jun 2023 01:42:40 GMT  
+		Size: 2.3 KB (2304 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f7d02bec5189fff55e5175a3877a1968f61de5fce3b84a36717548ec872c9ef8`  
-		Last Modified: Fri, 16 Jun 2023 10:15:41 GMT  
-		Size: 6.0 KB (5995 bytes)  
+	-	`sha256:3f18b2c8b019f176759c24b717806bfb051615f9004adf3b11ce54433b43f946`  
+		Last Modified: Tue, 27 Jun 2023 01:42:40 GMT  
+		Size: 6.0 KB (6003 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:119ece74ae38252f80d763200cc375e912968676ba890805d2dcd674e74f95b0`  
-		Last Modified: Fri, 16 Jun 2023 10:15:41 GMT  
-		Size: 2.5 KB (2507 bytes)  
+	-	`sha256:0ae3dd734e9952f4e1b2cfc1a5e844079689414fea35c00f4debc02d70f6e447`  
+		Last Modified: Tue, 27 Jun 2023 01:42:40 GMT  
+		Size: 2.5 KB (2500 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `xwiki:mysql-tomcat` - linux; arm64 variant v8
@@ -11254,7 +12706,7 @@ CMD ["xwiki"]
 ## `xwiki:postgres-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:086f57ed24ab4e23b92d3fb93ca2efe56b26246a247256643a8700c02e22e781
+$ docker pull xwiki@sha256:a85547de3dc08a8183b0927dfe1025b44d4a4ddeaf3ea6a99bd5d0cdd0396731
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11265,14 +12717,14 @@ $ docker pull xwiki@sha256:086f57ed24ab4e23b92d3fb93ca2efe56b26246a247256643a870
 ### `xwiki:postgres-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:9fd1bb01b70897c8a5ee7785752f57dd162272367e8224765513f3a7a23342b8
+$ docker pull xwiki@sha256:9db8828614bb0b2e6cf23a98a635768400cc84f6c1e91277661daf56906a95c4
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **589.3 MB (589322198 bytes)**  
+-	Total Size: **586.8 MB (586779249 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:39d37c86533746392db16c7f81a1a92ef04cef3cc063fac2b9dec33f73d9f7f7`
+-	Image ID: `sha256:44a3c2a08180c4bde30aae21b9884e9125edb33c6cda58103cfbbe409478244f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -11347,29 +12799,29 @@ LABEL org.opencontainers.image.vendor=xwiki.org
 LABEL org.opencontainers.image.licenses=LGPL-2.1
 # Fri, 16 Jun 2023 10:12:34 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps     libpostgresql-jdbc-java &&   rm -rf /var/lib/apt/lists/*
-# Fri, 16 Jun 2023 10:12:35 GMT
-ENV XWIKI_VERSION=15.4
-# Fri, 16 Jun 2023 10:12:35 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/15.4
-# Fri, 16 Jun 2023 10:12:35 GMT
-ENV XWIKI_DOWNLOAD_SHA256=f24def5b4e3f97c56ed03d5983766028676d6ce205bd60d3798352be5a050505
-# Fri, 16 Jun 2023 10:13:14 GMT
+# Tue, 27 Jun 2023 01:41:20 GMT
+ENV XWIKI_VERSION=15.5
+# Tue, 27 Jun 2023 01:41:20 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/15.5
+# Tue, 27 Jun 2023 01:41:20 GMT
+ENV XWIKI_DOWNLOAD_SHA256=e552586d371da33b012cfbd974b3ba80d1b147a5c892ad6cf989960212cdaa02
+# Tue, 27 Jun 2023 01:41:59 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Fri, 16 Jun 2023 10:13:15 GMT
+# Tue, 27 Jun 2023 01:42:00 GMT
 RUN cp /usr/share/java/postgresql-jdbc4.jar /usr/local/tomcat/webapps/ROOT/WEB-INF/lib/
-# Fri, 16 Jun 2023 10:13:15 GMT
+# Tue, 27 Jun 2023 01:42:00 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Fri, 16 Jun 2023 10:13:15 GMT
+# Tue, 27 Jun 2023 01:42:00 GMT
 COPY file:4a923f484bb29a26630c19e1d617d3bf6aa6ae7c6c4a5561e97b037bcde0847c in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Fri, 16 Jun 2023 10:13:16 GMT
+# Tue, 27 Jun 2023 01:42:01 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Fri, 16 Jun 2023 10:13:16 GMT
+# Tue, 27 Jun 2023 01:42:01 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Fri, 16 Jun 2023 10:13:16 GMT
+# Tue, 27 Jun 2023 01:42:01 GMT
 VOLUME [/usr/local/xwiki]
-# Fri, 16 Jun 2023 10:13:16 GMT
+# Tue, 27 Jun 2023 01:42:01 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jun 2023 10:13:16 GMT
+# Tue, 27 Jun 2023 01:42:01 GMT
 CMD ["xwiki"]
 ```
 
@@ -11410,29 +12862,29 @@ CMD ["xwiki"]
 		Last Modified: Fri, 16 Jun 2023 10:17:07 GMT  
 		Size: 179.3 MB (179276103 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9fbb12961b9eef76c3d3d09ed4aa5859c6b748e7dad2db34f34eedea15ecb80c`  
-		Last Modified: Fri, 16 Jun 2023 10:16:59 GMT  
-		Size: 306.8 MB (306779658 bytes)  
+	-	`sha256:60a6eb965a43844f6f0974dfa2e92506452c8992b4c06e699e11c753b0022644`  
+		Last Modified: Tue, 27 Jun 2023 01:43:45 GMT  
+		Size: 304.2 MB (304236722 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:935bbb7cee936ba189fbc9c5fc736329ec06e89d12cd58445d4764d9757be29e`  
-		Last Modified: Fri, 16 Jun 2023 10:16:43 GMT  
-		Size: 936.8 KB (936847 bytes)  
+	-	`sha256:9f3670e551a89ef20601ac60cc69e45c26001dd894a6216e9155337347fa5f02`  
+		Last Modified: Tue, 27 Jun 2023 01:43:28 GMT  
+		Size: 936.8 KB (936844 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:876fb49bd12f8580f10c23b1220b60980fa5d36bc4be344baa0ef5671ccc9a7c`  
-		Last Modified: Fri, 16 Jun 2023 10:16:42 GMT  
-		Size: 1.3 KB (1344 bytes)  
+	-	`sha256:a582e1c87042ed028e6460a31881a2ca95a173f0bed180c51569bd3d9dc2b7c8`  
+		Last Modified: Tue, 27 Jun 2023 01:43:28 GMT  
+		Size: 1.3 KB (1341 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d2228fdbed6da9346a01298109fb3058cec45e7fde15233130c32bf2aafbc0fd`  
-		Last Modified: Fri, 16 Jun 2023 10:16:43 GMT  
-		Size: 2.5 KB (2451 bytes)  
+	-	`sha256:e280630f67e4fed4d120df4731c85155afbcb625afd4e25cf4ce7c62a978bfa7`  
+		Last Modified: Tue, 27 Jun 2023 01:43:28 GMT  
+		Size: 2.4 KB (2448 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad63cd92588c184eb096389f28c5f382f3bf1dfa54e6fc91f87d8c0f7fbc781a`  
-		Last Modified: Fri, 16 Jun 2023 10:16:42 GMT  
-		Size: 6.0 KB (5995 bytes)  
+	-	`sha256:272b5d2c3df5b2c0c128a5c845a54b0361c9c2009ba22b7ccd102c1c574d9c65`  
+		Last Modified: Tue, 27 Jun 2023 01:43:28 GMT  
+		Size: 6.0 KB (6000 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99e1f34a23275fc16a9c9c9706755be113d2d48c9cb6187ef1c2677fe508bd2a`  
-		Last Modified: Fri, 16 Jun 2023 10:16:42 GMT  
-		Size: 2.5 KB (2508 bytes)  
+	-	`sha256:ab704aefe2e11d01d6f67c799b5058e7a6bfbc2c7c6ac2a789a8db6d33cc3983`  
+		Last Modified: Tue, 27 Jun 2023 01:43:28 GMT  
+		Size: 2.5 KB (2499 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `xwiki:postgres-tomcat` - linux; arm64 variant v8
@@ -11611,7 +13063,7 @@ CMD ["xwiki"]
 ## `xwiki:stable`
 
 ```console
-$ docker pull xwiki@sha256:0ba5122a74827254d45fbc2ddc668d66400ea3187aa86ab9620d11bbdea30f2a
+$ docker pull xwiki@sha256:979fa595c7b0a568ebcbedd5b01e26ada35e59cf519384da14ff2921201c38c9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11622,14 +13074,14 @@ $ docker pull xwiki@sha256:0ba5122a74827254d45fbc2ddc668d66400ea3187aa86ab9620d1
 ### `xwiki:stable` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:208c0828b77fcf874840ddded8b37b9cb329127f8ea196499e316ffd86559b05
+$ docker pull xwiki@sha256:02e0bfc9c454eee3dfcc098574e45be313bc01a9d3998c34a15aec08e4707ea9
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **589.8 MB (589788392 bytes)**  
+-	Total Size: **587.2 MB (587245368 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c2ac4aa71841cc195c6d929b61363f55d5754b96fa946a7f6e2f05af6498e16d`
+-	Image ID: `sha256:0545a35ad07387c7efa5c0daa658f17963357b33d28aee6ddf932afccce08a4a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -11704,39 +13156,39 @@ LABEL org.opencontainers.image.vendor=xwiki.org
 LABEL org.opencontainers.image.licenses=LGPL-2.1
 # Fri, 16 Jun 2023 10:11:16 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/*
-# Fri, 16 Jun 2023 10:11:17 GMT
-ENV XWIKI_VERSION=15.4
-# Fri, 16 Jun 2023 10:11:17 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/15.4
-# Fri, 16 Jun 2023 10:11:17 GMT
-ENV XWIKI_DOWNLOAD_SHA256=f24def5b4e3f97c56ed03d5983766028676d6ce205bd60d3798352be5a050505
-# Fri, 16 Jun 2023 10:11:57 GMT
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_VERSION=15.5
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/15.5
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_DOWNLOAD_SHA256=e552586d371da33b012cfbd974b3ba80d1b147a5c892ad6cf989960212cdaa02
+# Tue, 27 Jun 2023 01:41:10 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Fri, 16 Jun 2023 10:11:58 GMT
+# Tue, 27 Jun 2023 01:41:11 GMT
 ENV MYSQL_JDBC_VERSION=8.0.33
-# Fri, 16 Jun 2023 10:11:58 GMT
+# Tue, 27 Jun 2023 01:41:11 GMT
 ENV MYSQL_JDBC_SHA256=e2a3b2fc726a1ac64e998585db86b30fa8bf3f706195b78bb77c5f99bf877bd9
-# Fri, 16 Jun 2023 10:11:58 GMT
+# Tue, 27 Jun 2023 01:41:11 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/8.0.33
-# Fri, 16 Jun 2023 10:11:58 GMT
+# Tue, 27 Jun 2023 01:41:11 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-8.0.33.jar
-# Fri, 16 Jun 2023 10:11:58 GMT
+# Tue, 27 Jun 2023 01:41:11 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-8.0.33.jar
-# Fri, 16 Jun 2023 10:11:59 GMT
+# Tue, 27 Jun 2023 01:41:12 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c -
-# Fri, 16 Jun 2023 10:11:59 GMT
+# Tue, 27 Jun 2023 01:41:12 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Fri, 16 Jun 2023 10:11:59 GMT
+# Tue, 27 Jun 2023 01:41:12 GMT
 COPY file:1b8409986f3e4eb79a7a0b18472cb2692a61d504fb5ef34292bc997b79fd760d in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Fri, 16 Jun 2023 10:12:00 GMT
+# Tue, 27 Jun 2023 01:41:13 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Fri, 16 Jun 2023 10:12:00 GMT
+# Tue, 27 Jun 2023 01:41:13 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Fri, 16 Jun 2023 10:12:00 GMT
+# Tue, 27 Jun 2023 01:41:13 GMT
 VOLUME [/usr/local/xwiki]
-# Fri, 16 Jun 2023 10:12:00 GMT
+# Tue, 27 Jun 2023 01:41:13 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jun 2023 10:12:00 GMT
+# Tue, 27 Jun 2023 01:41:13 GMT
 CMD ["xwiki"]
 ```
 
@@ -11777,29 +13229,29 @@ CMD ["xwiki"]
 		Last Modified: Fri, 16 Jun 2023 10:16:06 GMT  
 		Size: 178.3 MB (178335543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0c80f9e73d670c33d5fe706e60a513004a81d3035decf77bfd10f09b12761b37`  
-		Last Modified: Fri, 16 Jun 2023 10:15:59 GMT  
-		Size: 306.8 MB (306779726 bytes)  
+	-	`sha256:9bd47dc719a99e43b69ba9a140ab83a542a83a650994b217dc718f91105cd69e`  
+		Last Modified: Tue, 27 Jun 2023 01:42:57 GMT  
+		Size: 304.2 MB (304236713 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5333a1ead54427a95f33fd77ee949aa6966efa6efd11205d29a8df8b5ae52c33`  
-		Last Modified: Fri, 16 Jun 2023 10:15:42 GMT  
-		Size: 2.3 MB (2343673 bytes)  
+	-	`sha256:74b97a6d523b6dba73f270d7299e1dbbc54de2f4ed56e0c3f33a291fc4ad7ba2`  
+		Last Modified: Tue, 27 Jun 2023 01:42:41 GMT  
+		Size: 2.3 MB (2343669 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9b0ce21bb11b3ddeb486346aa6bd569fa77192263a6fde9a24436b9bf08e558`  
-		Last Modified: Fri, 16 Jun 2023 10:15:42 GMT  
-		Size: 1.3 KB (1347 bytes)  
+	-	`sha256:e4e4a42e9034c83f3a1f1dfcb4dacb8e5a1b25aebe119dcc62c023dad6823607`  
+		Last Modified: Tue, 27 Jun 2023 01:42:40 GMT  
+		Size: 1.3 KB (1344 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0566d4a68b2c970bf5b1b8cf63f8aad2e34518653598b044f4299aab39e755b4`  
-		Last Modified: Fri, 16 Jun 2023 10:15:41 GMT  
-		Size: 2.3 KB (2309 bytes)  
+	-	`sha256:a20f48998f9362e0d8d6102527c0b50c39435b96ccdcdc513a3ca26e75f48a83`  
+		Last Modified: Tue, 27 Jun 2023 01:42:40 GMT  
+		Size: 2.3 KB (2304 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f7d02bec5189fff55e5175a3877a1968f61de5fce3b84a36717548ec872c9ef8`  
-		Last Modified: Fri, 16 Jun 2023 10:15:41 GMT  
-		Size: 6.0 KB (5995 bytes)  
+	-	`sha256:3f18b2c8b019f176759c24b717806bfb051615f9004adf3b11ce54433b43f946`  
+		Last Modified: Tue, 27 Jun 2023 01:42:40 GMT  
+		Size: 6.0 KB (6003 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:119ece74ae38252f80d763200cc375e912968676ba890805d2dcd674e74f95b0`  
-		Last Modified: Fri, 16 Jun 2023 10:15:41 GMT  
-		Size: 2.5 KB (2507 bytes)  
+	-	`sha256:0ae3dd734e9952f4e1b2cfc1a5e844079689414fea35c00f4debc02d70f6e447`  
+		Last Modified: Tue, 27 Jun 2023 01:42:40 GMT  
+		Size: 2.5 KB (2500 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `xwiki:stable` - linux; arm64 variant v8
@@ -11988,7 +13440,7 @@ CMD ["xwiki"]
 ## `xwiki:stable-mariadb`
 
 ```console
-$ docker pull xwiki@sha256:445b2b68c785d6435663f4a74cf616fd5033f0c91e98b558c02c43e17a2b52ef
+$ docker pull xwiki@sha256:b5eb1881a08541e70d1a5cbcfe2d2da0099bdac35a396d5edc28d1de015b3b80
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11999,14 +13451,14 @@ $ docker pull xwiki@sha256:445b2b68c785d6435663f4a74cf616fd5033f0c91e98b558c02c4
 ### `xwiki:stable-mariadb` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:7d5b0b15ea0e96030027b7cac69aff7a51b79d4f83d6bed8e4417857da81a89f
+$ docker pull xwiki@sha256:08060683af9af5d94bd94d1a9b3574524a130e4364ef4911c9f27c7b4160b163
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **588.0 MB (588039272 bytes)**  
+-	Total Size: **585.5 MB (585496266 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:03c5ba73085068a0d5fb034f7bb324bbcc1fea7441c2b397eea26a09737d5091`
+-	Image ID: `sha256:0003e3176b872fe97a7b7f697235a4d8414ddfe1181b2c300e41691fc1c45bf9`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -12081,39 +13533,39 @@ LABEL org.opencontainers.image.vendor=xwiki.org
 LABEL org.opencontainers.image.licenses=LGPL-2.1
 # Fri, 16 Jun 2023 10:11:16 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/*
-# Fri, 16 Jun 2023 10:11:17 GMT
-ENV XWIKI_VERSION=15.4
-# Fri, 16 Jun 2023 10:11:17 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/15.4
-# Fri, 16 Jun 2023 10:11:17 GMT
-ENV XWIKI_DOWNLOAD_SHA256=f24def5b4e3f97c56ed03d5983766028676d6ce205bd60d3798352be5a050505
-# Fri, 16 Jun 2023 10:11:57 GMT
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_VERSION=15.5
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/15.5
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_DOWNLOAD_SHA256=e552586d371da33b012cfbd974b3ba80d1b147a5c892ad6cf989960212cdaa02
+# Tue, 27 Jun 2023 01:41:10 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Fri, 16 Jun 2023 10:13:31 GMT
+# Tue, 27 Jun 2023 01:42:09 GMT
 ENV MARIADB_JDBC_VERSION=3.1.4
-# Fri, 16 Jun 2023 10:13:31 GMT
+# Tue, 27 Jun 2023 01:42:09 GMT
 ENV MARIADB_JDBC_SHA256=eb88b5d727d82e25117e2b6fabcec1daf734633b0a576456c73215884c189ad4
-# Fri, 16 Jun 2023 10:13:31 GMT
+# Tue, 27 Jun 2023 01:42:09 GMT
 ENV MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.1.4
-# Fri, 16 Jun 2023 10:13:32 GMT
+# Tue, 27 Jun 2023 01:42:09 GMT
 ENV MARIADB_JDBC_ARTIFACT=mariadb-java-client-3.1.4.jar
-# Fri, 16 Jun 2023 10:13:32 GMT
+# Tue, 27 Jun 2023 01:42:09 GMT
 ENV MARIADB_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mariadb-java-client-3.1.4.jar
-# Fri, 16 Jun 2023 10:13:32 GMT
+# Tue, 27 Jun 2023 01:42:10 GMT
 RUN curl -fSL "${MARIADB_JDBC_PREFIX}/${MARIADB_JDBC_ARTIFACT}" -o $MARIADB_JDBC_TARGET &&   echo "$MARIADB_JDBC_SHA256 $MARIADB_JDBC_TARGET" | sha256sum -c -
-# Fri, 16 Jun 2023 10:13:32 GMT
+# Tue, 27 Jun 2023 01:42:10 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Fri, 16 Jun 2023 10:13:33 GMT
+# Tue, 27 Jun 2023 01:42:10 GMT
 COPY file:0e237c3876eeb3b5f3473a064d3e507da2df6c228ca714687930b34e3b687601 in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Fri, 16 Jun 2023 10:13:33 GMT
+# Tue, 27 Jun 2023 01:42:10 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Fri, 16 Jun 2023 10:13:33 GMT
+# Tue, 27 Jun 2023 01:42:10 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Fri, 16 Jun 2023 10:13:33 GMT
+# Tue, 27 Jun 2023 01:42:11 GMT
 VOLUME [/usr/local/xwiki]
-# Fri, 16 Jun 2023 10:13:33 GMT
+# Tue, 27 Jun 2023 01:42:11 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jun 2023 10:13:33 GMT
+# Tue, 27 Jun 2023 01:42:11 GMT
 CMD ["xwiki"]
 ```
 
@@ -12154,28 +13606,28 @@ CMD ["xwiki"]
 		Last Modified: Fri, 16 Jun 2023 10:16:06 GMT  
 		Size: 178.3 MB (178335543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0c80f9e73d670c33d5fe706e60a513004a81d3035decf77bfd10f09b12761b37`  
-		Last Modified: Fri, 16 Jun 2023 10:15:59 GMT  
-		Size: 306.8 MB (306779726 bytes)  
+	-	`sha256:9bd47dc719a99e43b69ba9a140ab83a542a83a650994b217dc718f91105cd69e`  
+		Last Modified: Tue, 27 Jun 2023 01:42:57 GMT  
+		Size: 304.2 MB (304236713 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa9c74e14b2d260215b88a8f5b38dbaf60ca75436dd31fa55767a3661e5f0593`  
-		Last Modified: Fri, 16 Jun 2023 10:17:26 GMT  
-		Size: 594.6 KB (594551 bytes)  
+	-	`sha256:45c1c29a5f690ee19b152bf94d2287c58e834f4d1ba28711278dd168a7626fd7`  
+		Last Modified: Tue, 27 Jun 2023 01:44:04 GMT  
+		Size: 594.5 KB (594550 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7233cd593a469ab22cdbb0b96a1923c224edb5c7c5afb93cb2805e4ddecb5086`  
-		Last Modified: Fri, 16 Jun 2023 10:17:26 GMT  
+	-	`sha256:af370251f108dd2614340b7304ce4e265907ad3a3dfa4f9f39783fca4b7bd59d`  
+		Last Modified: Tue, 27 Jun 2023 01:44:04 GMT  
 		Size: 1.3 KB (1345 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:146d8e31efe996e04f601eaf2174fede6f20fa2722872e7e29c9ca4635598eb5`  
-		Last Modified: Fri, 16 Jun 2023 10:17:26 GMT  
+	-	`sha256:6e59b2a6e23c5cfc1dd938bebcb9805b9d35db311ef8295d8b7d5c6617a66159`  
+		Last Modified: Tue, 27 Jun 2023 01:44:05 GMT  
 		Size: 2.3 KB (2312 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:40922519664f9afd9c5f1fd4453b8535a543a86bdb79a1d897f324c13acf0a45`  
-		Last Modified: Fri, 16 Jun 2023 10:17:26 GMT  
-		Size: 6.0 KB (5997 bytes)  
+	-	`sha256:e308247bd0d6fa7044aaf78e32bf162f3dec037acbdad61718918fc6bcca05eb`  
+		Last Modified: Tue, 27 Jun 2023 01:44:04 GMT  
+		Size: 6.0 KB (6005 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:034a808158393b89616b1f1a027a4ece7db042538d3def080a8987141bcccdfa`  
-		Last Modified: Fri, 16 Jun 2023 10:17:26 GMT  
+	-	`sha256:e7f43672cefc65f8633377a0b78db21c0e618ffb86a3e92c6dbd63c6564a6924`  
+		Last Modified: Tue, 27 Jun 2023 01:44:04 GMT  
 		Size: 2.5 KB (2506 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -12365,7 +13817,7 @@ CMD ["xwiki"]
 ## `xwiki:stable-mariadb-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:445b2b68c785d6435663f4a74cf616fd5033f0c91e98b558c02c43e17a2b52ef
+$ docker pull xwiki@sha256:b5eb1881a08541e70d1a5cbcfe2d2da0099bdac35a396d5edc28d1de015b3b80
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12376,14 +13828,14 @@ $ docker pull xwiki@sha256:445b2b68c785d6435663f4a74cf616fd5033f0c91e98b558c02c4
 ### `xwiki:stable-mariadb-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:7d5b0b15ea0e96030027b7cac69aff7a51b79d4f83d6bed8e4417857da81a89f
+$ docker pull xwiki@sha256:08060683af9af5d94bd94d1a9b3574524a130e4364ef4911c9f27c7b4160b163
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **588.0 MB (588039272 bytes)**  
+-	Total Size: **585.5 MB (585496266 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:03c5ba73085068a0d5fb034f7bb324bbcc1fea7441c2b397eea26a09737d5091`
+-	Image ID: `sha256:0003e3176b872fe97a7b7f697235a4d8414ddfe1181b2c300e41691fc1c45bf9`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -12458,39 +13910,39 @@ LABEL org.opencontainers.image.vendor=xwiki.org
 LABEL org.opencontainers.image.licenses=LGPL-2.1
 # Fri, 16 Jun 2023 10:11:16 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/*
-# Fri, 16 Jun 2023 10:11:17 GMT
-ENV XWIKI_VERSION=15.4
-# Fri, 16 Jun 2023 10:11:17 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/15.4
-# Fri, 16 Jun 2023 10:11:17 GMT
-ENV XWIKI_DOWNLOAD_SHA256=f24def5b4e3f97c56ed03d5983766028676d6ce205bd60d3798352be5a050505
-# Fri, 16 Jun 2023 10:11:57 GMT
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_VERSION=15.5
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/15.5
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_DOWNLOAD_SHA256=e552586d371da33b012cfbd974b3ba80d1b147a5c892ad6cf989960212cdaa02
+# Tue, 27 Jun 2023 01:41:10 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Fri, 16 Jun 2023 10:13:31 GMT
+# Tue, 27 Jun 2023 01:42:09 GMT
 ENV MARIADB_JDBC_VERSION=3.1.4
-# Fri, 16 Jun 2023 10:13:31 GMT
+# Tue, 27 Jun 2023 01:42:09 GMT
 ENV MARIADB_JDBC_SHA256=eb88b5d727d82e25117e2b6fabcec1daf734633b0a576456c73215884c189ad4
-# Fri, 16 Jun 2023 10:13:31 GMT
+# Tue, 27 Jun 2023 01:42:09 GMT
 ENV MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.1.4
-# Fri, 16 Jun 2023 10:13:32 GMT
+# Tue, 27 Jun 2023 01:42:09 GMT
 ENV MARIADB_JDBC_ARTIFACT=mariadb-java-client-3.1.4.jar
-# Fri, 16 Jun 2023 10:13:32 GMT
+# Tue, 27 Jun 2023 01:42:09 GMT
 ENV MARIADB_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mariadb-java-client-3.1.4.jar
-# Fri, 16 Jun 2023 10:13:32 GMT
+# Tue, 27 Jun 2023 01:42:10 GMT
 RUN curl -fSL "${MARIADB_JDBC_PREFIX}/${MARIADB_JDBC_ARTIFACT}" -o $MARIADB_JDBC_TARGET &&   echo "$MARIADB_JDBC_SHA256 $MARIADB_JDBC_TARGET" | sha256sum -c -
-# Fri, 16 Jun 2023 10:13:32 GMT
+# Tue, 27 Jun 2023 01:42:10 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Fri, 16 Jun 2023 10:13:33 GMT
+# Tue, 27 Jun 2023 01:42:10 GMT
 COPY file:0e237c3876eeb3b5f3473a064d3e507da2df6c228ca714687930b34e3b687601 in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Fri, 16 Jun 2023 10:13:33 GMT
+# Tue, 27 Jun 2023 01:42:10 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Fri, 16 Jun 2023 10:13:33 GMT
+# Tue, 27 Jun 2023 01:42:10 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Fri, 16 Jun 2023 10:13:33 GMT
+# Tue, 27 Jun 2023 01:42:11 GMT
 VOLUME [/usr/local/xwiki]
-# Fri, 16 Jun 2023 10:13:33 GMT
+# Tue, 27 Jun 2023 01:42:11 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jun 2023 10:13:33 GMT
+# Tue, 27 Jun 2023 01:42:11 GMT
 CMD ["xwiki"]
 ```
 
@@ -12531,28 +13983,28 @@ CMD ["xwiki"]
 		Last Modified: Fri, 16 Jun 2023 10:16:06 GMT  
 		Size: 178.3 MB (178335543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0c80f9e73d670c33d5fe706e60a513004a81d3035decf77bfd10f09b12761b37`  
-		Last Modified: Fri, 16 Jun 2023 10:15:59 GMT  
-		Size: 306.8 MB (306779726 bytes)  
+	-	`sha256:9bd47dc719a99e43b69ba9a140ab83a542a83a650994b217dc718f91105cd69e`  
+		Last Modified: Tue, 27 Jun 2023 01:42:57 GMT  
+		Size: 304.2 MB (304236713 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa9c74e14b2d260215b88a8f5b38dbaf60ca75436dd31fa55767a3661e5f0593`  
-		Last Modified: Fri, 16 Jun 2023 10:17:26 GMT  
-		Size: 594.6 KB (594551 bytes)  
+	-	`sha256:45c1c29a5f690ee19b152bf94d2287c58e834f4d1ba28711278dd168a7626fd7`  
+		Last Modified: Tue, 27 Jun 2023 01:44:04 GMT  
+		Size: 594.5 KB (594550 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7233cd593a469ab22cdbb0b96a1923c224edb5c7c5afb93cb2805e4ddecb5086`  
-		Last Modified: Fri, 16 Jun 2023 10:17:26 GMT  
+	-	`sha256:af370251f108dd2614340b7304ce4e265907ad3a3dfa4f9f39783fca4b7bd59d`  
+		Last Modified: Tue, 27 Jun 2023 01:44:04 GMT  
 		Size: 1.3 KB (1345 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:146d8e31efe996e04f601eaf2174fede6f20fa2722872e7e29c9ca4635598eb5`  
-		Last Modified: Fri, 16 Jun 2023 10:17:26 GMT  
+	-	`sha256:6e59b2a6e23c5cfc1dd938bebcb9805b9d35db311ef8295d8b7d5c6617a66159`  
+		Last Modified: Tue, 27 Jun 2023 01:44:05 GMT  
 		Size: 2.3 KB (2312 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:40922519664f9afd9c5f1fd4453b8535a543a86bdb79a1d897f324c13acf0a45`  
-		Last Modified: Fri, 16 Jun 2023 10:17:26 GMT  
-		Size: 6.0 KB (5997 bytes)  
+	-	`sha256:e308247bd0d6fa7044aaf78e32bf162f3dec037acbdad61718918fc6bcca05eb`  
+		Last Modified: Tue, 27 Jun 2023 01:44:04 GMT  
+		Size: 6.0 KB (6005 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:034a808158393b89616b1f1a027a4ece7db042538d3def080a8987141bcccdfa`  
-		Last Modified: Fri, 16 Jun 2023 10:17:26 GMT  
+	-	`sha256:e7f43672cefc65f8633377a0b78db21c0e618ffb86a3e92c6dbd63c6564a6924`  
+		Last Modified: Tue, 27 Jun 2023 01:44:04 GMT  
 		Size: 2.5 KB (2506 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -12742,7 +14194,7 @@ CMD ["xwiki"]
 ## `xwiki:stable-mysql`
 
 ```console
-$ docker pull xwiki@sha256:0ba5122a74827254d45fbc2ddc668d66400ea3187aa86ab9620d11bbdea30f2a
+$ docker pull xwiki@sha256:979fa595c7b0a568ebcbedd5b01e26ada35e59cf519384da14ff2921201c38c9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12753,14 +14205,14 @@ $ docker pull xwiki@sha256:0ba5122a74827254d45fbc2ddc668d66400ea3187aa86ab9620d1
 ### `xwiki:stable-mysql` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:208c0828b77fcf874840ddded8b37b9cb329127f8ea196499e316ffd86559b05
+$ docker pull xwiki@sha256:02e0bfc9c454eee3dfcc098574e45be313bc01a9d3998c34a15aec08e4707ea9
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **589.8 MB (589788392 bytes)**  
+-	Total Size: **587.2 MB (587245368 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c2ac4aa71841cc195c6d929b61363f55d5754b96fa946a7f6e2f05af6498e16d`
+-	Image ID: `sha256:0545a35ad07387c7efa5c0daa658f17963357b33d28aee6ddf932afccce08a4a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -12835,39 +14287,39 @@ LABEL org.opencontainers.image.vendor=xwiki.org
 LABEL org.opencontainers.image.licenses=LGPL-2.1
 # Fri, 16 Jun 2023 10:11:16 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/*
-# Fri, 16 Jun 2023 10:11:17 GMT
-ENV XWIKI_VERSION=15.4
-# Fri, 16 Jun 2023 10:11:17 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/15.4
-# Fri, 16 Jun 2023 10:11:17 GMT
-ENV XWIKI_DOWNLOAD_SHA256=f24def5b4e3f97c56ed03d5983766028676d6ce205bd60d3798352be5a050505
-# Fri, 16 Jun 2023 10:11:57 GMT
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_VERSION=15.5
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/15.5
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_DOWNLOAD_SHA256=e552586d371da33b012cfbd974b3ba80d1b147a5c892ad6cf989960212cdaa02
+# Tue, 27 Jun 2023 01:41:10 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Fri, 16 Jun 2023 10:11:58 GMT
+# Tue, 27 Jun 2023 01:41:11 GMT
 ENV MYSQL_JDBC_VERSION=8.0.33
-# Fri, 16 Jun 2023 10:11:58 GMT
+# Tue, 27 Jun 2023 01:41:11 GMT
 ENV MYSQL_JDBC_SHA256=e2a3b2fc726a1ac64e998585db86b30fa8bf3f706195b78bb77c5f99bf877bd9
-# Fri, 16 Jun 2023 10:11:58 GMT
+# Tue, 27 Jun 2023 01:41:11 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/8.0.33
-# Fri, 16 Jun 2023 10:11:58 GMT
+# Tue, 27 Jun 2023 01:41:11 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-8.0.33.jar
-# Fri, 16 Jun 2023 10:11:58 GMT
+# Tue, 27 Jun 2023 01:41:11 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-8.0.33.jar
-# Fri, 16 Jun 2023 10:11:59 GMT
+# Tue, 27 Jun 2023 01:41:12 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c -
-# Fri, 16 Jun 2023 10:11:59 GMT
+# Tue, 27 Jun 2023 01:41:12 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Fri, 16 Jun 2023 10:11:59 GMT
+# Tue, 27 Jun 2023 01:41:12 GMT
 COPY file:1b8409986f3e4eb79a7a0b18472cb2692a61d504fb5ef34292bc997b79fd760d in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Fri, 16 Jun 2023 10:12:00 GMT
+# Tue, 27 Jun 2023 01:41:13 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Fri, 16 Jun 2023 10:12:00 GMT
+# Tue, 27 Jun 2023 01:41:13 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Fri, 16 Jun 2023 10:12:00 GMT
+# Tue, 27 Jun 2023 01:41:13 GMT
 VOLUME [/usr/local/xwiki]
-# Fri, 16 Jun 2023 10:12:00 GMT
+# Tue, 27 Jun 2023 01:41:13 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jun 2023 10:12:00 GMT
+# Tue, 27 Jun 2023 01:41:13 GMT
 CMD ["xwiki"]
 ```
 
@@ -12908,29 +14360,29 @@ CMD ["xwiki"]
 		Last Modified: Fri, 16 Jun 2023 10:16:06 GMT  
 		Size: 178.3 MB (178335543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0c80f9e73d670c33d5fe706e60a513004a81d3035decf77bfd10f09b12761b37`  
-		Last Modified: Fri, 16 Jun 2023 10:15:59 GMT  
-		Size: 306.8 MB (306779726 bytes)  
+	-	`sha256:9bd47dc719a99e43b69ba9a140ab83a542a83a650994b217dc718f91105cd69e`  
+		Last Modified: Tue, 27 Jun 2023 01:42:57 GMT  
+		Size: 304.2 MB (304236713 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5333a1ead54427a95f33fd77ee949aa6966efa6efd11205d29a8df8b5ae52c33`  
-		Last Modified: Fri, 16 Jun 2023 10:15:42 GMT  
-		Size: 2.3 MB (2343673 bytes)  
+	-	`sha256:74b97a6d523b6dba73f270d7299e1dbbc54de2f4ed56e0c3f33a291fc4ad7ba2`  
+		Last Modified: Tue, 27 Jun 2023 01:42:41 GMT  
+		Size: 2.3 MB (2343669 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9b0ce21bb11b3ddeb486346aa6bd569fa77192263a6fde9a24436b9bf08e558`  
-		Last Modified: Fri, 16 Jun 2023 10:15:42 GMT  
-		Size: 1.3 KB (1347 bytes)  
+	-	`sha256:e4e4a42e9034c83f3a1f1dfcb4dacb8e5a1b25aebe119dcc62c023dad6823607`  
+		Last Modified: Tue, 27 Jun 2023 01:42:40 GMT  
+		Size: 1.3 KB (1344 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0566d4a68b2c970bf5b1b8cf63f8aad2e34518653598b044f4299aab39e755b4`  
-		Last Modified: Fri, 16 Jun 2023 10:15:41 GMT  
-		Size: 2.3 KB (2309 bytes)  
+	-	`sha256:a20f48998f9362e0d8d6102527c0b50c39435b96ccdcdc513a3ca26e75f48a83`  
+		Last Modified: Tue, 27 Jun 2023 01:42:40 GMT  
+		Size: 2.3 KB (2304 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f7d02bec5189fff55e5175a3877a1968f61de5fce3b84a36717548ec872c9ef8`  
-		Last Modified: Fri, 16 Jun 2023 10:15:41 GMT  
-		Size: 6.0 KB (5995 bytes)  
+	-	`sha256:3f18b2c8b019f176759c24b717806bfb051615f9004adf3b11ce54433b43f946`  
+		Last Modified: Tue, 27 Jun 2023 01:42:40 GMT  
+		Size: 6.0 KB (6003 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:119ece74ae38252f80d763200cc375e912968676ba890805d2dcd674e74f95b0`  
-		Last Modified: Fri, 16 Jun 2023 10:15:41 GMT  
-		Size: 2.5 KB (2507 bytes)  
+	-	`sha256:0ae3dd734e9952f4e1b2cfc1a5e844079689414fea35c00f4debc02d70f6e447`  
+		Last Modified: Tue, 27 Jun 2023 01:42:40 GMT  
+		Size: 2.5 KB (2500 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `xwiki:stable-mysql` - linux; arm64 variant v8
@@ -13119,7 +14571,7 @@ CMD ["xwiki"]
 ## `xwiki:stable-mysql-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:0ba5122a74827254d45fbc2ddc668d66400ea3187aa86ab9620d11bbdea30f2a
+$ docker pull xwiki@sha256:979fa595c7b0a568ebcbedd5b01e26ada35e59cf519384da14ff2921201c38c9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13130,14 +14582,14 @@ $ docker pull xwiki@sha256:0ba5122a74827254d45fbc2ddc668d66400ea3187aa86ab9620d1
 ### `xwiki:stable-mysql-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:208c0828b77fcf874840ddded8b37b9cb329127f8ea196499e316ffd86559b05
+$ docker pull xwiki@sha256:02e0bfc9c454eee3dfcc098574e45be313bc01a9d3998c34a15aec08e4707ea9
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **589.8 MB (589788392 bytes)**  
+-	Total Size: **587.2 MB (587245368 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c2ac4aa71841cc195c6d929b61363f55d5754b96fa946a7f6e2f05af6498e16d`
+-	Image ID: `sha256:0545a35ad07387c7efa5c0daa658f17963357b33d28aee6ddf932afccce08a4a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -13212,39 +14664,39 @@ LABEL org.opencontainers.image.vendor=xwiki.org
 LABEL org.opencontainers.image.licenses=LGPL-2.1
 # Fri, 16 Jun 2023 10:11:16 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/*
-# Fri, 16 Jun 2023 10:11:17 GMT
-ENV XWIKI_VERSION=15.4
-# Fri, 16 Jun 2023 10:11:17 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/15.4
-# Fri, 16 Jun 2023 10:11:17 GMT
-ENV XWIKI_DOWNLOAD_SHA256=f24def5b4e3f97c56ed03d5983766028676d6ce205bd60d3798352be5a050505
-# Fri, 16 Jun 2023 10:11:57 GMT
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_VERSION=15.5
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/15.5
+# Tue, 27 Jun 2023 01:40:31 GMT
+ENV XWIKI_DOWNLOAD_SHA256=e552586d371da33b012cfbd974b3ba80d1b147a5c892ad6cf989960212cdaa02
+# Tue, 27 Jun 2023 01:41:10 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Fri, 16 Jun 2023 10:11:58 GMT
+# Tue, 27 Jun 2023 01:41:11 GMT
 ENV MYSQL_JDBC_VERSION=8.0.33
-# Fri, 16 Jun 2023 10:11:58 GMT
+# Tue, 27 Jun 2023 01:41:11 GMT
 ENV MYSQL_JDBC_SHA256=e2a3b2fc726a1ac64e998585db86b30fa8bf3f706195b78bb77c5f99bf877bd9
-# Fri, 16 Jun 2023 10:11:58 GMT
+# Tue, 27 Jun 2023 01:41:11 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/8.0.33
-# Fri, 16 Jun 2023 10:11:58 GMT
+# Tue, 27 Jun 2023 01:41:11 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-8.0.33.jar
-# Fri, 16 Jun 2023 10:11:58 GMT
+# Tue, 27 Jun 2023 01:41:11 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-8.0.33.jar
-# Fri, 16 Jun 2023 10:11:59 GMT
+# Tue, 27 Jun 2023 01:41:12 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c -
-# Fri, 16 Jun 2023 10:11:59 GMT
+# Tue, 27 Jun 2023 01:41:12 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Fri, 16 Jun 2023 10:11:59 GMT
+# Tue, 27 Jun 2023 01:41:12 GMT
 COPY file:1b8409986f3e4eb79a7a0b18472cb2692a61d504fb5ef34292bc997b79fd760d in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Fri, 16 Jun 2023 10:12:00 GMT
+# Tue, 27 Jun 2023 01:41:13 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Fri, 16 Jun 2023 10:12:00 GMT
+# Tue, 27 Jun 2023 01:41:13 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Fri, 16 Jun 2023 10:12:00 GMT
+# Tue, 27 Jun 2023 01:41:13 GMT
 VOLUME [/usr/local/xwiki]
-# Fri, 16 Jun 2023 10:12:00 GMT
+# Tue, 27 Jun 2023 01:41:13 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jun 2023 10:12:00 GMT
+# Tue, 27 Jun 2023 01:41:13 GMT
 CMD ["xwiki"]
 ```
 
@@ -13285,29 +14737,29 @@ CMD ["xwiki"]
 		Last Modified: Fri, 16 Jun 2023 10:16:06 GMT  
 		Size: 178.3 MB (178335543 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0c80f9e73d670c33d5fe706e60a513004a81d3035decf77bfd10f09b12761b37`  
-		Last Modified: Fri, 16 Jun 2023 10:15:59 GMT  
-		Size: 306.8 MB (306779726 bytes)  
+	-	`sha256:9bd47dc719a99e43b69ba9a140ab83a542a83a650994b217dc718f91105cd69e`  
+		Last Modified: Tue, 27 Jun 2023 01:42:57 GMT  
+		Size: 304.2 MB (304236713 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5333a1ead54427a95f33fd77ee949aa6966efa6efd11205d29a8df8b5ae52c33`  
-		Last Modified: Fri, 16 Jun 2023 10:15:42 GMT  
-		Size: 2.3 MB (2343673 bytes)  
+	-	`sha256:74b97a6d523b6dba73f270d7299e1dbbc54de2f4ed56e0c3f33a291fc4ad7ba2`  
+		Last Modified: Tue, 27 Jun 2023 01:42:41 GMT  
+		Size: 2.3 MB (2343669 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c9b0ce21bb11b3ddeb486346aa6bd569fa77192263a6fde9a24436b9bf08e558`  
-		Last Modified: Fri, 16 Jun 2023 10:15:42 GMT  
-		Size: 1.3 KB (1347 bytes)  
+	-	`sha256:e4e4a42e9034c83f3a1f1dfcb4dacb8e5a1b25aebe119dcc62c023dad6823607`  
+		Last Modified: Tue, 27 Jun 2023 01:42:40 GMT  
+		Size: 1.3 KB (1344 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0566d4a68b2c970bf5b1b8cf63f8aad2e34518653598b044f4299aab39e755b4`  
-		Last Modified: Fri, 16 Jun 2023 10:15:41 GMT  
-		Size: 2.3 KB (2309 bytes)  
+	-	`sha256:a20f48998f9362e0d8d6102527c0b50c39435b96ccdcdc513a3ca26e75f48a83`  
+		Last Modified: Tue, 27 Jun 2023 01:42:40 GMT  
+		Size: 2.3 KB (2304 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f7d02bec5189fff55e5175a3877a1968f61de5fce3b84a36717548ec872c9ef8`  
-		Last Modified: Fri, 16 Jun 2023 10:15:41 GMT  
-		Size: 6.0 KB (5995 bytes)  
+	-	`sha256:3f18b2c8b019f176759c24b717806bfb051615f9004adf3b11ce54433b43f946`  
+		Last Modified: Tue, 27 Jun 2023 01:42:40 GMT  
+		Size: 6.0 KB (6003 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:119ece74ae38252f80d763200cc375e912968676ba890805d2dcd674e74f95b0`  
-		Last Modified: Fri, 16 Jun 2023 10:15:41 GMT  
-		Size: 2.5 KB (2507 bytes)  
+	-	`sha256:0ae3dd734e9952f4e1b2cfc1a5e844079689414fea35c00f4debc02d70f6e447`  
+		Last Modified: Tue, 27 Jun 2023 01:42:40 GMT  
+		Size: 2.5 KB (2500 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `xwiki:stable-mysql-tomcat` - linux; arm64 variant v8
@@ -13496,7 +14948,7 @@ CMD ["xwiki"]
 ## `xwiki:stable-postgres`
 
 ```console
-$ docker pull xwiki@sha256:086f57ed24ab4e23b92d3fb93ca2efe56b26246a247256643a8700c02e22e781
+$ docker pull xwiki@sha256:a85547de3dc08a8183b0927dfe1025b44d4a4ddeaf3ea6a99bd5d0cdd0396731
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13507,14 +14959,14 @@ $ docker pull xwiki@sha256:086f57ed24ab4e23b92d3fb93ca2efe56b26246a247256643a870
 ### `xwiki:stable-postgres` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:9fd1bb01b70897c8a5ee7785752f57dd162272367e8224765513f3a7a23342b8
+$ docker pull xwiki@sha256:9db8828614bb0b2e6cf23a98a635768400cc84f6c1e91277661daf56906a95c4
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **589.3 MB (589322198 bytes)**  
+-	Total Size: **586.8 MB (586779249 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:39d37c86533746392db16c7f81a1a92ef04cef3cc063fac2b9dec33f73d9f7f7`
+-	Image ID: `sha256:44a3c2a08180c4bde30aae21b9884e9125edb33c6cda58103cfbbe409478244f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -13589,29 +15041,29 @@ LABEL org.opencontainers.image.vendor=xwiki.org
 LABEL org.opencontainers.image.licenses=LGPL-2.1
 # Fri, 16 Jun 2023 10:12:34 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps     libpostgresql-jdbc-java &&   rm -rf /var/lib/apt/lists/*
-# Fri, 16 Jun 2023 10:12:35 GMT
-ENV XWIKI_VERSION=15.4
-# Fri, 16 Jun 2023 10:12:35 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/15.4
-# Fri, 16 Jun 2023 10:12:35 GMT
-ENV XWIKI_DOWNLOAD_SHA256=f24def5b4e3f97c56ed03d5983766028676d6ce205bd60d3798352be5a050505
-# Fri, 16 Jun 2023 10:13:14 GMT
+# Tue, 27 Jun 2023 01:41:20 GMT
+ENV XWIKI_VERSION=15.5
+# Tue, 27 Jun 2023 01:41:20 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/15.5
+# Tue, 27 Jun 2023 01:41:20 GMT
+ENV XWIKI_DOWNLOAD_SHA256=e552586d371da33b012cfbd974b3ba80d1b147a5c892ad6cf989960212cdaa02
+# Tue, 27 Jun 2023 01:41:59 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Fri, 16 Jun 2023 10:13:15 GMT
+# Tue, 27 Jun 2023 01:42:00 GMT
 RUN cp /usr/share/java/postgresql-jdbc4.jar /usr/local/tomcat/webapps/ROOT/WEB-INF/lib/
-# Fri, 16 Jun 2023 10:13:15 GMT
+# Tue, 27 Jun 2023 01:42:00 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Fri, 16 Jun 2023 10:13:15 GMT
+# Tue, 27 Jun 2023 01:42:00 GMT
 COPY file:4a923f484bb29a26630c19e1d617d3bf6aa6ae7c6c4a5561e97b037bcde0847c in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Fri, 16 Jun 2023 10:13:16 GMT
+# Tue, 27 Jun 2023 01:42:01 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Fri, 16 Jun 2023 10:13:16 GMT
+# Tue, 27 Jun 2023 01:42:01 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Fri, 16 Jun 2023 10:13:16 GMT
+# Tue, 27 Jun 2023 01:42:01 GMT
 VOLUME [/usr/local/xwiki]
-# Fri, 16 Jun 2023 10:13:16 GMT
+# Tue, 27 Jun 2023 01:42:01 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jun 2023 10:13:16 GMT
+# Tue, 27 Jun 2023 01:42:01 GMT
 CMD ["xwiki"]
 ```
 
@@ -13652,29 +15104,29 @@ CMD ["xwiki"]
 		Last Modified: Fri, 16 Jun 2023 10:17:07 GMT  
 		Size: 179.3 MB (179276103 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9fbb12961b9eef76c3d3d09ed4aa5859c6b748e7dad2db34f34eedea15ecb80c`  
-		Last Modified: Fri, 16 Jun 2023 10:16:59 GMT  
-		Size: 306.8 MB (306779658 bytes)  
+	-	`sha256:60a6eb965a43844f6f0974dfa2e92506452c8992b4c06e699e11c753b0022644`  
+		Last Modified: Tue, 27 Jun 2023 01:43:45 GMT  
+		Size: 304.2 MB (304236722 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:935bbb7cee936ba189fbc9c5fc736329ec06e89d12cd58445d4764d9757be29e`  
-		Last Modified: Fri, 16 Jun 2023 10:16:43 GMT  
-		Size: 936.8 KB (936847 bytes)  
+	-	`sha256:9f3670e551a89ef20601ac60cc69e45c26001dd894a6216e9155337347fa5f02`  
+		Last Modified: Tue, 27 Jun 2023 01:43:28 GMT  
+		Size: 936.8 KB (936844 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:876fb49bd12f8580f10c23b1220b60980fa5d36bc4be344baa0ef5671ccc9a7c`  
-		Last Modified: Fri, 16 Jun 2023 10:16:42 GMT  
-		Size: 1.3 KB (1344 bytes)  
+	-	`sha256:a582e1c87042ed028e6460a31881a2ca95a173f0bed180c51569bd3d9dc2b7c8`  
+		Last Modified: Tue, 27 Jun 2023 01:43:28 GMT  
+		Size: 1.3 KB (1341 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d2228fdbed6da9346a01298109fb3058cec45e7fde15233130c32bf2aafbc0fd`  
-		Last Modified: Fri, 16 Jun 2023 10:16:43 GMT  
-		Size: 2.5 KB (2451 bytes)  
+	-	`sha256:e280630f67e4fed4d120df4731c85155afbcb625afd4e25cf4ce7c62a978bfa7`  
+		Last Modified: Tue, 27 Jun 2023 01:43:28 GMT  
+		Size: 2.4 KB (2448 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad63cd92588c184eb096389f28c5f382f3bf1dfa54e6fc91f87d8c0f7fbc781a`  
-		Last Modified: Fri, 16 Jun 2023 10:16:42 GMT  
-		Size: 6.0 KB (5995 bytes)  
+	-	`sha256:272b5d2c3df5b2c0c128a5c845a54b0361c9c2009ba22b7ccd102c1c574d9c65`  
+		Last Modified: Tue, 27 Jun 2023 01:43:28 GMT  
+		Size: 6.0 KB (6000 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99e1f34a23275fc16a9c9c9706755be113d2d48c9cb6187ef1c2677fe508bd2a`  
-		Last Modified: Fri, 16 Jun 2023 10:16:42 GMT  
-		Size: 2.5 KB (2508 bytes)  
+	-	`sha256:ab704aefe2e11d01d6f67c799b5058e7a6bfbc2c7c6ac2a789a8db6d33cc3983`  
+		Last Modified: Tue, 27 Jun 2023 01:43:28 GMT  
+		Size: 2.5 KB (2499 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `xwiki:stable-postgres` - linux; arm64 variant v8
@@ -13853,7 +15305,7 @@ CMD ["xwiki"]
 ## `xwiki:stable-postgres-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:086f57ed24ab4e23b92d3fb93ca2efe56b26246a247256643a8700c02e22e781
+$ docker pull xwiki@sha256:a85547de3dc08a8183b0927dfe1025b44d4a4ddeaf3ea6a99bd5d0cdd0396731
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13864,14 +15316,14 @@ $ docker pull xwiki@sha256:086f57ed24ab4e23b92d3fb93ca2efe56b26246a247256643a870
 ### `xwiki:stable-postgres-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:9fd1bb01b70897c8a5ee7785752f57dd162272367e8224765513f3a7a23342b8
+$ docker pull xwiki@sha256:9db8828614bb0b2e6cf23a98a635768400cc84f6c1e91277661daf56906a95c4
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **589.3 MB (589322198 bytes)**  
+-	Total Size: **586.8 MB (586779249 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:39d37c86533746392db16c7f81a1a92ef04cef3cc063fac2b9dec33f73d9f7f7`
+-	Image ID: `sha256:44a3c2a08180c4bde30aae21b9884e9125edb33c6cda58103cfbbe409478244f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -13946,29 +15398,29 @@ LABEL org.opencontainers.image.vendor=xwiki.org
 LABEL org.opencontainers.image.licenses=LGPL-2.1
 # Fri, 16 Jun 2023 10:12:34 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps     libpostgresql-jdbc-java &&   rm -rf /var/lib/apt/lists/*
-# Fri, 16 Jun 2023 10:12:35 GMT
-ENV XWIKI_VERSION=15.4
-# Fri, 16 Jun 2023 10:12:35 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/15.4
-# Fri, 16 Jun 2023 10:12:35 GMT
-ENV XWIKI_DOWNLOAD_SHA256=f24def5b4e3f97c56ed03d5983766028676d6ce205bd60d3798352be5a050505
-# Fri, 16 Jun 2023 10:13:14 GMT
+# Tue, 27 Jun 2023 01:41:20 GMT
+ENV XWIKI_VERSION=15.5
+# Tue, 27 Jun 2023 01:41:20 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/15.5
+# Tue, 27 Jun 2023 01:41:20 GMT
+ENV XWIKI_DOWNLOAD_SHA256=e552586d371da33b012cfbd974b3ba80d1b147a5c892ad6cf989960212cdaa02
+# Tue, 27 Jun 2023 01:41:59 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Fri, 16 Jun 2023 10:13:15 GMT
+# Tue, 27 Jun 2023 01:42:00 GMT
 RUN cp /usr/share/java/postgresql-jdbc4.jar /usr/local/tomcat/webapps/ROOT/WEB-INF/lib/
-# Fri, 16 Jun 2023 10:13:15 GMT
+# Tue, 27 Jun 2023 01:42:00 GMT
 COPY file:0a1be11e2eb610a1dbcd415404e3a592641110b93090030cb831e3a19a163017 in /usr/local/tomcat/bin/ 
-# Fri, 16 Jun 2023 10:13:15 GMT
+# Tue, 27 Jun 2023 01:42:00 GMT
 COPY file:4a923f484bb29a26630c19e1d617d3bf6aa6ae7c6c4a5561e97b037bcde0847c in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Fri, 16 Jun 2023 10:13:16 GMT
+# Tue, 27 Jun 2023 01:42:01 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Fri, 16 Jun 2023 10:13:16 GMT
+# Tue, 27 Jun 2023 01:42:01 GMT
 COPY file:a47c4dcd87c9dad97aff38c49188357e6193bcad50757e516cfb08a60d4de611 in /usr/local/bin/docker-entrypoint.sh 
-# Fri, 16 Jun 2023 10:13:16 GMT
+# Tue, 27 Jun 2023 01:42:01 GMT
 VOLUME [/usr/local/xwiki]
-# Fri, 16 Jun 2023 10:13:16 GMT
+# Tue, 27 Jun 2023 01:42:01 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Jun 2023 10:13:16 GMT
+# Tue, 27 Jun 2023 01:42:01 GMT
 CMD ["xwiki"]
 ```
 
@@ -14009,29 +15461,29 @@ CMD ["xwiki"]
 		Last Modified: Fri, 16 Jun 2023 10:17:07 GMT  
 		Size: 179.3 MB (179276103 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9fbb12961b9eef76c3d3d09ed4aa5859c6b748e7dad2db34f34eedea15ecb80c`  
-		Last Modified: Fri, 16 Jun 2023 10:16:59 GMT  
-		Size: 306.8 MB (306779658 bytes)  
+	-	`sha256:60a6eb965a43844f6f0974dfa2e92506452c8992b4c06e699e11c753b0022644`  
+		Last Modified: Tue, 27 Jun 2023 01:43:45 GMT  
+		Size: 304.2 MB (304236722 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:935bbb7cee936ba189fbc9c5fc736329ec06e89d12cd58445d4764d9757be29e`  
-		Last Modified: Fri, 16 Jun 2023 10:16:43 GMT  
-		Size: 936.8 KB (936847 bytes)  
+	-	`sha256:9f3670e551a89ef20601ac60cc69e45c26001dd894a6216e9155337347fa5f02`  
+		Last Modified: Tue, 27 Jun 2023 01:43:28 GMT  
+		Size: 936.8 KB (936844 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:876fb49bd12f8580f10c23b1220b60980fa5d36bc4be344baa0ef5671ccc9a7c`  
-		Last Modified: Fri, 16 Jun 2023 10:16:42 GMT  
-		Size: 1.3 KB (1344 bytes)  
+	-	`sha256:a582e1c87042ed028e6460a31881a2ca95a173f0bed180c51569bd3d9dc2b7c8`  
+		Last Modified: Tue, 27 Jun 2023 01:43:28 GMT  
+		Size: 1.3 KB (1341 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d2228fdbed6da9346a01298109fb3058cec45e7fde15233130c32bf2aafbc0fd`  
-		Last Modified: Fri, 16 Jun 2023 10:16:43 GMT  
-		Size: 2.5 KB (2451 bytes)  
+	-	`sha256:e280630f67e4fed4d120df4731c85155afbcb625afd4e25cf4ce7c62a978bfa7`  
+		Last Modified: Tue, 27 Jun 2023 01:43:28 GMT  
+		Size: 2.4 KB (2448 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad63cd92588c184eb096389f28c5f382f3bf1dfa54e6fc91f87d8c0f7fbc781a`  
-		Last Modified: Fri, 16 Jun 2023 10:16:42 GMT  
-		Size: 6.0 KB (5995 bytes)  
+	-	`sha256:272b5d2c3df5b2c0c128a5c845a54b0361c9c2009ba22b7ccd102c1c574d9c65`  
+		Last Modified: Tue, 27 Jun 2023 01:43:28 GMT  
+		Size: 6.0 KB (6000 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99e1f34a23275fc16a9c9c9706755be113d2d48c9cb6187ef1c2677fe508bd2a`  
-		Last Modified: Fri, 16 Jun 2023 10:16:42 GMT  
-		Size: 2.5 KB (2508 bytes)  
+	-	`sha256:ab704aefe2e11d01d6f67c799b5058e7a6bfbc2c7c6ac2a789a8db6d33cc3983`  
+		Last Modified: Tue, 27 Jun 2023 01:43:28 GMT  
+		Size: 2.5 KB (2499 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `xwiki:stable-postgres-tomcat` - linux; arm64 variant v8
