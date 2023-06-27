@@ -1,7 +1,7 @@
 ## `maven:3-eclipse-temurin-17`
 
 ```console
-$ docker pull maven@sha256:8b6100a91b08f1da32ef9eb632f878b8f24cf824ccca8b8efd6083ce741a2c8c
+$ docker pull maven@sha256:e3cf37bd9aeb244d26d7058ba1d38c4ee93eb5469222cf0adcf62ed4d6f7ac89
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -15,13 +15,13 @@ $ docker pull maven@sha256:8b6100a91b08f1da32ef9eb632f878b8f24cf824ccca8b8efd608
 ### `maven:3-eclipse-temurin-17` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:6f9c378c85353fde5c44e2166f8295660b1848c82da36ee275cd1ed627361801
+$ docker pull maven@sha256:6608458bcb7dbe1d53d90c0bd513a3888159d111adae2dbdffc31239bd9d3039
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **268.4 MB (268369016 bytes)**  
+-	Total Size: **268.4 MB (268382146 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:41008cef92fcca98907bd90e7a223c40fd4100ce709e813de9434c8910c6de11`
+-	Image ID: `sha256:a455f12e38655c47d2dbe809f0fbc9ec75f08a784a2de2c17a6f58a228fde34f`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -54,27 +54,27 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
 # Fri, 16 Jun 2023 02:18:40 GMT
 CMD ["jshell"]
-# Tue, 16 May 2023 11:35:55 GMT
+# Mon, 26 Jun 2023 13:48:06 GMT
 RUN apt-get update   && apt-get install -y ca-certificates curl git --no-install-recommends   && rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 16 May 2023 11:35:55 GMT
+# Mon, 26 Jun 2023 13:48:06 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Tue, 16 May 2023 11:35:55 GMT
+# Mon, 26 Jun 2023 13:48:06 GMT
 COPY /usr/share/maven /usr/share/maven # buildkit
-# Tue, 16 May 2023 11:35:55 GMT
+# Mon, 26 Jun 2023 13:48:06 GMT
 COPY /usr/local/bin/mvn-entrypoint.sh /usr/local/bin/mvn-entrypoint.sh # buildkit
-# Tue, 16 May 2023 11:35:55 GMT
+# Mon, 26 Jun 2023 13:48:06 GMT
 COPY /usr/share/maven/ref/settings-docker.xml /usr/share/maven/ref/settings-docker.xml # buildkit
-# Tue, 16 May 2023 11:35:55 GMT
+# Mon, 26 Jun 2023 13:48:06 GMT
 RUN ln -s ${MAVEN_HOME}/bin/mvn /usr/bin/mvn # buildkit
-# Tue, 16 May 2023 11:35:55 GMT
-ARG MAVEN_VERSION=3.9.2
-# Tue, 16 May 2023 11:35:55 GMT
+# Mon, 26 Jun 2023 13:48:06 GMT
+ARG MAVEN_VERSION=3.9.3
+# Mon, 26 Jun 2023 13:48:06 GMT
 ARG USER_HOME_DIR=/root
-# Tue, 16 May 2023 11:35:55 GMT
+# Mon, 26 Jun 2023 13:48:06 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Tue, 16 May 2023 11:35:55 GMT
+# Mon, 26 Jun 2023 13:48:06 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Tue, 16 May 2023 11:35:55 GMT
+# Mon, 26 Jun 2023 13:48:06 GMT
 CMD ["mvn"]
 ```
 
@@ -99,20 +99,20 @@ CMD ["mvn"]
 		Last Modified: Fri, 16 Jun 2023 07:28:18 GMT  
 		Size: 19.0 MB (18993259 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4399d95feea95529b66b0750072c949852edbb04132892acc888ce55c6ee4db4`  
-		Last Modified: Fri, 16 Jun 2023 07:28:16 GMT  
-		Size: 9.3 MB (9314427 bytes)  
+	-	`sha256:1c15552d744d61d452b7206669f1bcc3d18128df72b9e28f3dbb3444132865d7`  
+		Last Modified: Tue, 27 Jun 2023 01:15:03 GMT  
+		Size: 9.3 MB (9327556 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c40b1eaf664624cd8674fde2af49b2347a6ccddd73bbefb4b451a53516529009`  
-		Last Modified: Fri, 16 Jun 2023 07:28:15 GMT  
+	-	`sha256:d28e3b923f852f365f8a2a3375aaea62210dbd2d1c3f170fc3c62315152b061d`  
+		Last Modified: Tue, 27 Jun 2023 01:15:02 GMT  
 		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4941b0b5ad01c67ea2b581b9d70659c583b5c7d71652c42a951c6daebb930fa5`  
-		Last Modified: Fri, 16 Jun 2023 07:28:15 GMT  
-		Size: 358.0 B  
+	-	`sha256:fc9b216abccbed1d841ff3dcd52d189b79b91f96db01ca98123bb80bbfc2bcfa`  
+		Last Modified: Tue, 27 Jun 2023 01:15:02 GMT  
+		Size: 359.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:529c79270d9bee4600b076e750333d6bc8768ede781054ca6daca9fcdafb371b`  
-		Last Modified: Fri, 16 Jun 2023 07:28:15 GMT  
+	-	`sha256:fc3b83e71fb102012e6acf912195d16b03495bda96c92643720787cba585bf29`  
+		Last Modified: Tue, 27 Jun 2023 01:15:02 GMT  
 		Size: 156.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -327,13 +327,13 @@ CMD ["mvn"]
 ### `maven:3-eclipse-temurin-17` - linux; ppc64le
 
 ```console
-$ docker pull maven@sha256:083403180bc3d699760f0cbde90e4ce44c27f51182c31166d64d8555b2df699f
+$ docker pull maven@sha256:2a529882d0b2b6df4e790d1a1d25b71137b7114fc27014c2b3e05c6dcbeec10e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **277.5 MB (277523264 bytes)**  
+-	Total Size: **277.5 MB (277536425 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a906e88e0bfdb63a99e28248a1392f004779696825265a77557781abb0606633`
+-	Image ID: `sha256:ccb9f755d932526fee3c576a3f63119136030786dc90aa6b7c562a72d2718505`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -366,27 +366,27 @@ RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in    
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
 # Fri, 16 Jun 2023 02:25:10 GMT
 CMD ["jshell"]
-# Tue, 16 May 2023 11:35:55 GMT
+# Mon, 26 Jun 2023 13:48:06 GMT
 RUN apt-get update   && apt-get install -y ca-certificates curl git --no-install-recommends   && rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 16 May 2023 11:35:55 GMT
+# Mon, 26 Jun 2023 13:48:06 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Tue, 16 May 2023 11:35:55 GMT
+# Mon, 26 Jun 2023 13:48:06 GMT
 COPY /usr/share/maven /usr/share/maven # buildkit
-# Tue, 16 May 2023 11:35:55 GMT
+# Mon, 26 Jun 2023 13:48:06 GMT
 COPY /usr/local/bin/mvn-entrypoint.sh /usr/local/bin/mvn-entrypoint.sh # buildkit
-# Tue, 16 May 2023 11:35:55 GMT
+# Mon, 26 Jun 2023 13:48:06 GMT
 COPY /usr/share/maven/ref/settings-docker.xml /usr/share/maven/ref/settings-docker.xml # buildkit
-# Tue, 16 May 2023 11:35:55 GMT
+# Mon, 26 Jun 2023 13:48:06 GMT
 RUN ln -s ${MAVEN_HOME}/bin/mvn /usr/bin/mvn # buildkit
-# Tue, 16 May 2023 11:35:55 GMT
-ARG MAVEN_VERSION=3.9.2
-# Tue, 16 May 2023 11:35:55 GMT
+# Mon, 26 Jun 2023 13:48:06 GMT
+ARG MAVEN_VERSION=3.9.3
+# Mon, 26 Jun 2023 13:48:06 GMT
 ARG USER_HOME_DIR=/root
-# Tue, 16 May 2023 11:35:55 GMT
+# Mon, 26 Jun 2023 13:48:06 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Tue, 16 May 2023 11:35:55 GMT
+# Mon, 26 Jun 2023 13:48:06 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Tue, 16 May 2023 11:35:55 GMT
+# Mon, 26 Jun 2023 13:48:06 GMT
 CMD ["mvn"]
 ```
 
@@ -411,21 +411,21 @@ CMD ["mvn"]
 		Last Modified: Fri, 16 Jun 2023 02:54:11 GMT  
 		Size: 22.2 MB (22208139 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cdc0736973ee20f68ce6abc3741f0ea0f5cd9ee77d982fb55badcd3531d98ba2`  
-		Last Modified: Fri, 16 Jun 2023 02:54:04 GMT  
-		Size: 9.3 MB (9314408 bytes)  
+	-	`sha256:41cf7d15ac3dafa19484b743d671a1675986f7af8dbd1e0b9b6534c6cde97833`  
+		Last Modified: Tue, 27 Jun 2023 02:16:28 GMT  
+		Size: 9.3 MB (9327568 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f3d682d9f968693cea85cfa026acd9886479547c39054f061b98086fe9389b34`  
-		Last Modified: Fri, 16 Jun 2023 02:54:03 GMT  
-		Size: 853.0 B  
+	-	`sha256:bfccf4be2e72cbc1d1fe64a6fac610249c24cc81790eff9c2f3abfeb7d364876`  
+		Last Modified: Tue, 27 Jun 2023 02:16:27 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1ff70fd7c0da78691d1782b30c8aebab5569e15b658d2841ec1ccceaa69e3139`  
-		Last Modified: Fri, 16 Jun 2023 02:54:03 GMT  
-		Size: 359.0 B  
+	-	`sha256:b4f7e68d9d7337ac9ec53a1b67e3640ce4c2d4486e62e653206ee96ebee2ef28`  
+		Last Modified: Tue, 27 Jun 2023 02:16:27 GMT  
+		Size: 360.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:351363c93d903245264ca7dd1add8b7f357eae4bc9ab9da971dca5f558f1ea91`  
-		Last Modified: Fri, 16 Jun 2023 02:54:03 GMT  
-		Size: 158.0 B  
+	-	`sha256:7e8b4f24c58fc5c44ea829084a01acbacfbdeec9f3276dac508994e6cc075661`  
+		Last Modified: Tue, 27 Jun 2023 02:16:27 GMT  
+		Size: 157.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3-eclipse-temurin-17` - linux; s390x
