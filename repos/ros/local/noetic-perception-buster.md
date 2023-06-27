@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cd145224d3c8d30ebeb7650719a9f02291b3c603d878da5572f3d8f9547d9b28`
-- Created: `2023-06-13T17:16:14.725645348Z`
+- Image ID: `sha256:e6ebb58c8cc98cba9d40c3000417b6235bbae686cc636edc8d59b0cb332d3013`
+- Created: `2023-06-27T01:29:10.366054384Z`
 - Virtual Size: ~ 2.89 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -612,13 +612,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/autotools-dev/20180224.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/autotools-dev/20180224.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `avahi=0.7-4+deb10u2`
+### `dpkg` source package: `avahi=0.7-4+deb10u3`
 
 Binary Packages:
 
-- `libavahi-client3:amd64=0.7-4+deb10u2`
-- `libavahi-common-data:amd64=0.7-4+deb10u2`
-- `libavahi-common3:amd64=0.7-4+deb10u2`
+- `libavahi-client3:amd64=0.7-4+deb10u3`
+- `libavahi-common-data:amd64=0.7-4+deb10u3`
+- `libavahi-common3:amd64=0.7-4+deb10u3`
 
 Licenses: (parsed from: `/usr/share/doc/libavahi-client3/copyright`, `/usr/share/doc/libavahi-common-data/copyright`, `/usr/share/doc/libavahi-common3/copyright`)
 
@@ -626,13 +626,20 @@ Licenses: (parsed from: `/usr/share/doc/libavahi-client3/copyright`, `/usr/share
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris avahi=0.7-4+deb10u3
+'http://deb.debian.org/debian-security/pool/updates/main/a/avahi/avahi_0.7-4%2bdeb10u3.dsc' avahi_0.7-4+deb10u3.dsc 3945 SHA256:95f583758743975445f70fab8bd23bfa3c77f07d633f1bb0c959550b0eb7578f
+'http://deb.debian.org/debian-security/pool/updates/main/a/avahi/avahi_0.7.orig.tar.gz' avahi_0.7.orig.tar.gz 1333400 SHA256:57a99b5dfe7fdae794e3d1ee7a62973a368e91e414bd0dfa5d84434de5b14804
+'http://deb.debian.org/debian-security/pool/updates/main/a/avahi/avahi_0.7-4%2bdeb10u3.debian.tar.xz' avahi_0.7-4+deb10u3.debian.tar.xz 31768 SHA256:f3721995f1bee80a8bb6346b1588f80149def6f2e199b289ee66aff2fe8d9c28
+```
 
-- http://snapshot.debian.org/package/avahi/0.7-4+deb10u2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/avahi/0.7-4+deb10u3/ (for browsing the source)
+- https://sources.debian.net/src/avahi/0.7-4+deb10u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/avahi/0.7-4+deb10u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-files=10.3+deb10u13`
 
@@ -6203,15 +6210,15 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libwebp/0.6.1-2+deb10u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libwebp/0.6.1-2+deb10u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libx11=2:1.6.7-1+deb10u2`
+### `dpkg` source package: `libx11=2:1.6.7-1+deb10u3`
 
 Binary Packages:
 
-- `libx11-6:amd64=2:1.6.7-1+deb10u2`
-- `libx11-data=2:1.6.7-1+deb10u2`
-- `libx11-dev:amd64=2:1.6.7-1+deb10u2`
-- `libx11-xcb-dev:amd64=2:1.6.7-1+deb10u2`
-- `libx11-xcb1:amd64=2:1.6.7-1+deb10u2`
+- `libx11-6:amd64=2:1.6.7-1+deb10u3`
+- `libx11-data=2:1.6.7-1+deb10u3`
+- `libx11-dev:amd64=2:1.6.7-1+deb10u3`
+- `libx11-xcb-dev:amd64=2:1.6.7-1+deb10u3`
+- `libx11-xcb1:amd64=2:1.6.7-1+deb10u3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6220,18 +6227,18 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libx11=2:1.6.7-1+deb10u2
-'http://deb.debian.org/debian/pool/main/libx/libx11/libx11_1.6.7-1%2bdeb10u2.dsc' libx11_1.6.7-1+deb10u2.dsc 2680 SHA256:49e4b4ea6c4f4c4d6dcb31e09450dd285a9dc6f232ee5aa727b8a5b7fc4f42c1
-'http://deb.debian.org/debian/pool/main/libx/libx11/libx11_1.6.7.orig.tar.gz' libx11_1.6.7.orig.tar.gz 2972354 SHA256:f62ab88c2a87b55e1dc338726a55bb6ed8048084fe6a3294a7ae324ca45159d1
-'http://deb.debian.org/debian/pool/main/libx/libx11/libx11_1.6.7.orig.tar.gz.asc' libx11_1.6.7.orig.tar.gz.asc 404 SHA256:01a06afbe0574a30721d98f1c80b668ebc46410a9e8b2eb81e69b4bd8667c386
-'http://deb.debian.org/debian/pool/main/libx/libx11/libx11_1.6.7-1%2bdeb10u2.diff.gz' libx11_1.6.7-1+deb10u2.diff.gz 53354 SHA256:a2ba03e672aab422b356352406c827eaeecd3e3ffbdf39022556a6a459d08b16
+$ apt-get source -qq --print-uris libx11=2:1.6.7-1+deb10u3
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libx11/libx11_1.6.7-1%2bdeb10u3.dsc' libx11_1.6.7-1+deb10u3.dsc 2651 SHA256:905952f62ab103f2f695929429199ad3fb6d9a576dc2b7d60270d9d64795de75
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libx11/libx11_1.6.7.orig.tar.gz' libx11_1.6.7.orig.tar.gz 2972354 SHA256:f62ab88c2a87b55e1dc338726a55bb6ed8048084fe6a3294a7ae324ca45159d1
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libx11/libx11_1.6.7.orig.tar.gz.asc' libx11_1.6.7.orig.tar.gz.asc 404 SHA256:01a06afbe0574a30721d98f1c80b668ebc46410a9e8b2eb81e69b4bd8667c386
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libx11/libx11_1.6.7-1%2bdeb10u3.diff.gz' libx11_1.6.7-1+deb10u3.diff.gz 54595 SHA256:a4eea30cb49f6ab0fb302a50d9eae2b8ec33ec01cae6bd4a4e6a6f409f2cb92f
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libx11/2:1.6.7-1+deb10u2/ (for browsing the source)
-- https://sources.debian.net/src/libx11/2:1.6.7-1+deb10u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libx11/2:1.6.7-1+deb10u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libx11/2:1.6.7-1+deb10u3/ (for browsing the source)
+- https://sources.debian.net/src/libx11/2:1.6.7-1+deb10u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libx11/2:1.6.7-1+deb10u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxau=1:1.0.8-1`
 
@@ -6612,11 +6619,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libxmu/2:1.1.2-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libxmu/2:1.1.2-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libxpm=1:3.5.12-1`
+### `dpkg` source package: `libxpm=1:3.5.12-1+deb10u1`
 
 Binary Packages:
 
-- `libxpm4:amd64=1:3.5.12-1`
+- `libxpm4:amd64=1:3.5.12-1+deb10u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6625,17 +6632,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libxpm=1:3.5.12-1
-'http://deb.debian.org/debian/pool/main/libx/libxpm/libxpm_3.5.12-1.dsc' libxpm_3.5.12-1.dsc 2061 SHA256:1b5d07d820d656030d0f79a15a0652f258c9d2be0cd6064ec37c40853906f7e8
-'http://deb.debian.org/debian/pool/main/libx/libxpm/libxpm_3.5.12.orig.tar.gz' libxpm_3.5.12.orig.tar.gz 529302 SHA256:2523acc780eac01db5163267b36f5b94374bfb0de26fc0b5a7bee76649fd8501
-'http://deb.debian.org/debian/pool/main/libx/libxpm/libxpm_3.5.12-1.diff.gz' libxpm_3.5.12-1.diff.gz 9458 SHA256:4103400f8d73d0ec567f87e8aa9824c4a07d068e81da6efe54fb535ec897e326
+$ apt-get source -qq --print-uris libxpm=1:3.5.12-1+deb10u1
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxpm/libxpm_3.5.12-1%2bdeb10u1.dsc' libxpm_3.5.12-1+deb10u1.dsc 2147 SHA256:1680c3d9450181a0972dae12382d905964886122b355b0d97a8391d7fbe5e7de
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxpm/libxpm_3.5.12.orig.tar.gz' libxpm_3.5.12.orig.tar.gz 529302 SHA256:2523acc780eac01db5163267b36f5b94374bfb0de26fc0b5a7bee76649fd8501
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxpm/libxpm_3.5.12-1%2bdeb10u1.debian.tar.xz' libxpm_3.5.12-1+deb10u1.debian.tar.xz 14652 SHA256:b6e7d84a9db00a9c8832a22c113eabaa717263ee62bc7fe4c15ff12521a351fd
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libxpm/1:3.5.12-1/ (for browsing the source)
-- https://sources.debian.net/src/libxpm/1:3.5.12-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxpm/1:3.5.12-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libxpm/1:3.5.12-1+deb10u1/ (for browsing the source)
+- https://sources.debian.net/src/libxpm/1:3.5.12-1+deb10u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libxpm/1:3.5.12-1+deb10u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxrandr=2:1.5.1-1`
 
@@ -9742,14 +9749,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-catkin-pkg-modules=0.5.2-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python3-catkin-pkg-modules/python3-catkin-pkg-modules_0.5.2-1.debian.tar.xz' python3-catkin-pkg-modules_0.5.2-1.debian.tar.xz 2004 SHA512:3cac65ab1e8334b4ccec07609b28359f561e07cb27bd842b0634d1c24f788866e3c102f629586ff9c55d5663bc19e28384ff03cdbabc7c6674dea2bdaa6310f4
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python3-catkin-pkg-modules/python3-catkin-pkg-modules_0.5.2-1.dsc' python3-catkin-pkg-modules_0.5.2-1.dsc 1019 SHA512:513f451e379cb105fb01559ede2e9c58734b1e21ed048676fc5544c16d8b9e540c5d2330d1f2c2607bc3e0bf22dae737ae1727fba49924608c5dc6c63cbd3ccf
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python3-catkin-pkg-modules/python3-catkin-pkg-modules_0.5.2.orig.tar.gz' python3-catkin-pkg-modules_0.5.2.orig.tar.gz 62745 SHA512:cef4a8f79828c221cb07924a7f724a547d7fd60a0a7690b8a5bf7bb663e263e27ef7fbce55ef46f17319d3bfe8d61941eb2fd63d4323f01e35b73a3d0b26fdf5
-```
 
 ### `dpkg` source package: `python3-catkin-pkg=0.5.2-100`
 
@@ -9761,14 +9763,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-catkin-pkg=0.5.2-100
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python3-catkin-pkg/python3-catkin-pkg_0.5.2-100.debian.tar.xz' python3-catkin-pkg_0.5.2-100.debian.tar.xz 1996 SHA512:87e947e9cb996f820f3e7133457a2bd516a0303dfa5534d2c79ef8e366c5441feafe8c2672aa8d022e7c406fc97d1b83fa95115864ad1ea342281b14eff7ece6
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python3-catkin-pkg/python3-catkin-pkg_0.5.2-100.dsc' python3-catkin-pkg_0.5.2-100.dsc 955 SHA512:a28d0439bb9d5613d5a001560e6ca004dc3dedf5b54b5e4decd6862e7e0c269b1597da63f90d324ceefefdd7ff16f708e31c8805523a395e30b8acaa10e8ed9b
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python3-catkin-pkg/python3-catkin-pkg_0.5.2.orig.tar.gz' python3-catkin-pkg_0.5.2.orig.tar.gz 15512 SHA512:2c1958d19538dd9afed9819464d452db401b32f50e8f83c75e8512906c2adfceb1ef03781b1cb4b2579118cdca7ee727f9ab36ca09b48424206f1c8128004ef9
-```
 
 ### `dpkg` source package: `python3-defaults=3.7.3-1`
 
@@ -9808,14 +9805,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-rosdep-modules=0.22.2-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python3-rosdep-modules/python3-rosdep-modules_0.22.2-1.debian.tar.xz' python3-rosdep-modules_0.22.2-1.debian.tar.xz 2044 SHA512:db26ddd28debdad91fd4ce669a04f823bc00fe23f132e67b83152fce6036b6cc816806fd04a8d0322ff1b4e8dc7a3d12d3df7cc63ceef28fd164bd8b37e529d5
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python3-rosdep-modules/python3-rosdep-modules_0.22.2-1.dsc' python3-rosdep-modules_0.22.2-1.dsc 997 SHA512:a329b3321ee73d9adea5e9a2ae2eb106597c3115efc51481f4d6922eb9c7cf89b89a86a6e57a95ea09164b5b5c4c5bfb91942b796bd93194b905e8518db19f20
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python3-rosdep-modules/python3-rosdep-modules_0.22.2.orig.tar.gz' python3-rosdep-modules_0.22.2.orig.tar.gz 94239 SHA512:187da0d65986bb71e2c31b75b3fe4b5db1811456cb5239744603281fb2156bc74b184d0d0be6e1e8bdbd4b83594c7edbd8c57b0e0035a8a9c1fd47a8ca19f1a1
-```
 
 ### `dpkg` source package: `python3-rosdep=0.22.2-1`
 
@@ -9827,14 +9819,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-rosdep=0.22.2-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python3-rosdep/python3-rosdep_0.22.2-1.debian.tar.xz' python3-rosdep_0.22.2-1.debian.tar.xz 1980 SHA512:90a21c40873e5279791b95c9169c3e518c8df5560240b148bf492978d8cd83d8153906f32d400ca9611c06715c664aba73cdfa54d06d4a54e146643cd17ad5cc
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python3-rosdep/python3-rosdep_0.22.2-1.dsc' python3-rosdep_0.22.2-1.dsc 925 SHA512:5d8de296f02ad9701eea86b1ddeeeabaa55104b1595f792b99024967bbbf244bc531e81512f85f124e5b73504e8fb568ef99a7859c52b7c21d91a81c6efb66c0
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python3-rosdep/python3-rosdep_0.22.2.orig.tar.gz' python3-rosdep_0.22.2.orig.tar.gz 34468 SHA512:2cfad71fa413f428afb8c0ddfdf2e4e5610421379c01a1e48f14817ff8e203cb0accae54661827d95bbe797ee9d3b01811efc413c733e0e9600efdd69c5cb3c6
-```
 
 ### `dpkg` source package: `python3-rosdistro-modules=0.9.0-1`
 
@@ -9846,14 +9833,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-rosdistro-modules=0.9.0-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python3-rosdistro-modules/python3-rosdistro-modules_0.9.0-1.debian.tar.xz' python3-rosdistro-modules_0.9.0-1.debian.tar.xz 2004 SHA512:8312a9e75ed1da0f7da358b6d860e7445253693478651778e0e82d8302941875ffe0ae1c11d6d480299626858d387fd50bbacaab6c686e02d75d8041b1314034
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python3-rosdistro-modules/python3-rosdistro-modules_0.9.0-1.dsc' python3-rosdistro-modules_0.9.0-1.dsc 1038 SHA512:0f8ab8f26b1df89fcec4c12450a76fa18fd94556e08c7a5c4db463031ded956514ff2e7ac7ef8f95fb7d3db58df03186463f763c32455dbbb8bd1176892a750a
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python3-rosdistro-modules/python3-rosdistro-modules_0.9.0.orig.tar.gz' python3-rosdistro-modules_0.9.0.orig.tar.gz 43482 SHA512:7f20ff589fc5343ec39772f51b656022cf3762ed2ee7dddb57b66189e58fdc8408646fbeb488f19e63448448a91215b5869317851a8ccc826cf8e6d87ae92d0b
-```
 
 ### `dpkg` source package: `python3-rosdistro=0.9.0-100`
 
@@ -9865,14 +9847,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-rosdistro=0.9.0-100
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python3-rosdistro/python3-rosdistro_0.9.0-100.debian.tar.xz' python3-rosdistro_0.9.0-100.debian.tar.xz 1976 SHA512:3a00a99d5e6b8a88e507c2c5dd67f978c9c56bd03f2e60a1860114a844f44109387a029c57fa51ee95b6c471d4f5c9d0db2997c98cd530fce57162bf99e28ba1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python3-rosdistro/python3-rosdistro_0.9.0-100.dsc' python3-rosdistro_0.9.0-100.dsc 974 SHA512:4288ad1f0a576ece5c48b33481ede30ea5a6074971fadce90e906af7e82e251866723ed7022acefec1ff67f681dcd1f42fc148fe4fab47719fec24ecafd0d9ce
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python3-rosdistro/python3-rosdistro_0.9.0.orig.tar.gz' python3-rosdistro_0.9.0.orig.tar.gz 11272 SHA512:5f24479a1a0a10b1706758111f5839b1fc4621a5bb1f69f2c3cc3e33c81a9adb181a748a7a7ddc005ec1e29c80d41907cbc29548cac7abf7bf672840c3747114
-```
 
 ### `dpkg` source package: `python3-rospkg-modules=1.5.0-1`
 
@@ -9884,14 +9861,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-rospkg-modules=1.5.0-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python3-rospkg-modules/python3-rospkg-modules_1.5.0-1.debian.tar.xz' python3-rospkg-modules_1.5.0-1.debian.tar.xz 1172 SHA512:616143923f96549f3fddd511c38d7f347e73abb0c3073f92c10231df9d94b32df195137b49f221c2cbca029ce413985fbe866b4872eab95c7991655685aa8221
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python3-rospkg-modules/python3-rospkg-modules_1.5.0-1.dsc' python3-rospkg-modules_1.5.0-1.dsc 973 SHA512:e277f90ed7d173cf29eb1c26e49597b565b0a3d9b89df16169146ed23a57ab08a5bb10bd505e4326ff4d697edbf118a87d07a699162548cdb761c0bc7782841e
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python3-rospkg-modules/python3-rospkg-modules_1.5.0.orig.tar.gz' python3-rospkg-modules_1.5.0.orig.tar.gz 42501 SHA512:144334c4c568f59e356f4cc858825c5f3c49ae9dc50b4bfe83925c6a432c98d7f061971bc273b83efef92645eb716972f24d2cd02c8cdbd9ca6d818d5cd5a462
-```
 
 ### `dpkg` source package: `python3-rospkg=1.5.0-100`
 
@@ -9903,14 +9875,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-rospkg=1.5.0-100
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python3-rospkg/python3-rospkg_1.5.0-100.debian.tar.xz' python3-rospkg_1.5.0-100.debian.tar.xz 1116 SHA512:ef925e58c0b7cb9caa434424e3a44ec1fc4701c8f4782432f7e48880624f35aa9d15a45f6cbab51b8fe3c3048e6764ed360391ba905119c8ceb6b30a735681cf
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python3-rospkg/python3-rospkg_1.5.0-100.dsc' python3-rospkg_1.5.0-100.dsc 909 SHA512:754dd6e8e8ae40aed99b88bfe87b9f43520dee787b1f4c8332e1147be6f15602f34c31dab87e61f47b4518b616d3c9923ffac988a0e69387516174cb438c1ba6
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python3-rospkg/python3-rospkg_1.5.0.orig.tar.gz' python3-rospkg_1.5.0.orig.tar.gz 17824 SHA512:54746d681da69f6aa21187e77348d3ae57c4d484b01fc74ebf4ab013c733346383c60f542220dadf79b8674019a2c402aab478eb2117fee2326462ba9133d0c1
-```
 
 ### `dpkg` source package: `python3-stdlib-extensions=3.7.3-1`
 
@@ -9948,14 +9915,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-vcstools=0.1.42-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python3-vcstools/python3-vcstools_0.1.42-1.debian.tar.xz' python3-vcstools_0.1.42-1.debian.tar.xz 1256 SHA512:b13a070e36a85f669409d5108d6e57fe2d7d817497c8e149b47b8175d4f41a85e0c8c69912fcdff005394a0120673d656ad4f48e31d536b3369150ff70acf597
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python3-vcstools/python3-vcstools_0.1.42-1.dsc' python3-vcstools_0.1.42-1.dsc 922 SHA512:8e0c85cea8df2d953e7045dbf64b71a29e86d8e0d1a027b69042106caa4b2118b5d0ad0620c320a66871ccf2c1868e7bfd79075f02887704763bd5dd9232cb1d
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python3-vcstools/python3-vcstools_0.1.42.orig.tar.gz' python3-vcstools_0.1.42.orig.tar.gz 54467 SHA512:c6474f12fbf9167d7f34e148b609be5b54e1cf3e98932bb568a921c2b500e4079baa921664b27ae5ddd660e54f8888eba583603a031276a408466abf07c31632
-```
 
 ### `dpkg` source package: `python3.7=3.7.3-2+deb10u4`
 
