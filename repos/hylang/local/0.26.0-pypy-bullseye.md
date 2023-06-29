@@ -1,10 +1,10 @@
-# `hylang:0.26.0-pypy3.9-bullseye`
+# `hylang:0.26.0-pypy3.10-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3ac7c58923d95fe268b7d96e35b605e81d39a90e4603a914df0ffc8da535ed6f`
-- Created: `2023-06-21T01:56:04.270556275Z`
-- Virtual Size: ~ 237.12 Mb  
+- Image ID: `sha256:8d18944af488b258d70ae71f3bfd5181f8451bfe5a273295c3a0e9b52bf44251`
+- Created: `2023-06-27T23:36:47.843896454Z`
+- Virtual Size: ~ 241.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`

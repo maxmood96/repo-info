@@ -1,17 +1,17 @@
-# `hylang:0.26.0-pypy3.8-bullseye`
+# `hylang:0.26.0-pypy3.10-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:86facd2fa64dd64482511bdcd3c661880eb4e14232e8aec8e7755c69e65aadce`
-- Created: `2023-06-15T06:34:23.135652725Z`
-- Virtual Size: ~ 237.98 Mb  
+- Image ID: `sha256:8d18944af488b258d70ae71f3bfd5181f8451bfe5a273295c3a0e9b52bf44251`
+- Created: `2023-06-27T23:36:47.843896454Z`
+- Virtual Size: ~ 241.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`
 - Environment:
   - `PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `PYPY_VERSION=7.3.11`
+  - `PYPY_VERSION=7.3.12`
   - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/3843bff3a0a61da5b63ea0b7d34794c5c51a2f11/get-pip.py`
   - `PYTHON_GET_PIP_SHA256=95c5ee602b2f3cc50ae053d716c3c89bea62c58568f64d7d25924d399b2d5218`
   - `HY_VERSION=0.26.0`
