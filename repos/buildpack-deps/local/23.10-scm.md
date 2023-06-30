@@ -50,13 +50,9 @@ Licenses: (parsed from: `/usr/share/doc/adduser/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris adduser=3.129ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.129ubuntu1.dsc' adduser_3.129ubuntu1.dsc 1794 SHA512:f61cb4ccb94bdcb1c36eeb455af9ec6b0aed3772668e16b7316291a432036702098f6652e66d1337a563870c8786bb5636ef7e900b4a369fc58c7c80f86e6ec9
-'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.129ubuntu1.tar.xz' adduser_3.129ubuntu1.tar.xz 236628 SHA512:04ff19eb83e37b293744e16c1fa7af988906e387c56ca6c2dcc23c7d0270c7483ca5437631b7a946d463b89dc3f9754e74aa80bd0e7a3bef933ed13aaedcc6f6
-```
 
 ### `dpkg` source package: `apr-util=1.6.3-1ubuntu1`
 
@@ -1832,14 +1828,9 @@ Licenses: (parsed from: `/usr/share/doc/libldap2/copyright`)
 - `UMich`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.6.3+dfsg-1~exp1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.3%2bdfsg-1%7eexp1ubuntu2.dsc' openldap_2.6.3+dfsg-1~exp1ubuntu2.dsc 3470 SHA512:f838bd08aaac86b0584ff260b4de496263c28c20f664ff46a2675d507206a6851b64d7f3ffa05615dd1efdfb03462f7b7d17dc616832d301b5b3846fcb0e38aa
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.3%2bdfsg.orig.tar.xz' openldap_2.6.3+dfsg.orig.tar.xz 3741144 SHA512:951b935aa6a3f9dd1c2b7a4a289b6244d605a2a3de248051c8078b8afd5bfaab5943d5c6adddf9e85eb6813db3ddff18478f2c85625df4095ec037bdc579bdc7
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.3%2bdfsg-1%7eexp1ubuntu2.debian.tar.xz' openldap_2.6.3+dfsg-1~exp1ubuntu2.debian.tar.xz 179412 SHA512:f305e04594b0153dd68a139736468b1a5eabf94ec39e82a162ce1ff69ec1aa0b7edfce609a6f4cf154a141d7771a85d4b0043aa5e76665281029ee98f74a7f98
-```
 
 ### `dpkg` source package: `openssh=1:9.2p1-2ubuntu3`
 
