@@ -1,10 +1,10 @@
-# `gradle:7.6.1-jdk17-focal`
+# `gradle:7.6.2-jdk17-focal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:25f05a9d3316011a660c18de072b49d410d3cf62ba335285746c9062ce2c62bc`
-- Created: `2023-06-16T06:51:24.273648358Z`
-- Virtual Size: ~ 786.87 Mb  
+- Image ID: `sha256:9f3c850f5b999e8561bdd7d355a0067d39b45b58ecb4621744340f9552e14f15`
+- Created: `2023-07-03T22:21:48.579160274Z`
+- Virtual Size: ~ 787.18 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
@@ -16,7 +16,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-17.0.7+7`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=7.6.1`
+  - `GRADLE_VERSION=7.6.2`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=20.04`
