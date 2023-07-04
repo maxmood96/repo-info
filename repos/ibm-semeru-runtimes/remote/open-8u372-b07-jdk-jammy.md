@@ -1,7 +1,7 @@
 ## `ibm-semeru-runtimes:open-8u372-b07-jdk-jammy`
 
 ```console
-$ docker pull ibm-semeru-runtimes@sha256:efb076387bab9a20e56361149c94888948ac6c3f1328ed5ca43cf8d02c416f0e
+$ docker pull ibm-semeru-runtimes@sha256:ce6544d64f4feae1649a51b7d07b00229f4ee94ad4caeb3099c3433b3fd54653
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13,61 +13,61 @@ $ docker pull ibm-semeru-runtimes@sha256:efb076387bab9a20e56361149c94888948ac6c3
 ### `ibm-semeru-runtimes:open-8u372-b07-jdk-jammy` - linux; amd64
 
 ```console
-$ docker pull ibm-semeru-runtimes@sha256:7adfc5df1bc3be5f1abdd918dd7af825620f7462050286da9519c51850c85101
+$ docker pull ibm-semeru-runtimes@sha256:af8f7e58100abbcc5b792612f0051a50d08b3f2cb1811788d9ba8807c6bede11
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **163.8 MB (163792131 bytes)**  
+-	Total Size: **163.7 MB (163748254 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fa75fb24a17ee56e6d46c1617e6e6fb1605dd1a1ba104afa554d43d8815aacc3`
+-	Image ID: `sha256:9f75e81fc36cd10b0b6835ddc7e2198edfa3c78e4517cd089898ddffbc5e6c1b`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 05 Jun 2023 17:00:37 GMT
+# Wed, 28 Jun 2023 08:37:40 GMT
 ARG RELEASE
-# Mon, 05 Jun 2023 17:00:37 GMT
+# Wed, 28 Jun 2023 08:37:40 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 05 Jun 2023 17:00:37 GMT
+# Wed, 28 Jun 2023 08:37:40 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 05 Jun 2023 17:00:37 GMT
+# Wed, 28 Jun 2023 08:37:40 GMT
 LABEL org.opencontainers.image.version=22.04
-# Mon, 05 Jun 2023 17:00:39 GMT
-ADD file:0ad2ee2cfb186802f49c9bf4148674d1c6fc201f83478ec01ffaa7086d491323 in / 
-# Mon, 05 Jun 2023 17:00:39 GMT
+# Wed, 28 Jun 2023 08:37:42 GMT
+ADD file:140fb5108b4a2861b5718ad03b4a5174bba03589ea8d4c053e6a0b282f439ff3 in / 
+# Wed, 28 Jun 2023 08:37:42 GMT
 CMD ["/bin/bash"]
-# Fri, 16 Jun 2023 02:38:04 GMT
+# Tue, 04 Jul 2023 19:18:26 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 16 Jun 2023 02:38:17 GMT
+# Tue, 04 Jul 2023 19:18:42 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 16 Jun 2023 02:38:17 GMT
+# Tue, 04 Jul 2023 19:18:42 GMT
 ENV JAVA_VERSION=jdk8u372-b07_openj9-0.38.0
-# Fri, 16 Jun 2023 02:38:24 GMT
+# Tue, 04 Jul 2023 19:18:48 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7b9225c7a968242210effe261ee12f01c03259ab8403147b43ac35697fa5c2f4';          BINARY_URL='https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u372-b07_openj9-0.38.0/ibm-semeru-open-jdk_aarch64_linux_8u372b07_openj9-0.38.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='23924d0e8f50a87f2e51c77ee0c19364e97cb68df47baf9352c100387feff172';          BINARY_URL='https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u372-b07_openj9-0.38.0/ibm-semeru-open-jdk_ppc64le_linux_8u372b07_openj9-0.38.0.tar.gz';          ;;        amd64|x86_64)          ESUM='dd1edee0a50ac6766268feeaac2a4e95eca83d30d1e0dea7c1e199dc9048f1c0';          BINARY_URL='https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u372-b07_openj9-0.38.0/ibm-semeru-open-jdk_x64_linux_8u372b07_openj9-0.38.0.tar.gz';          ;;        s390x)          ESUM='c0b354b2f4823cb542843214a153c93e2ee5ac09893fd0a594074766f68d70d7';          BINARY_URL='https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u372-b07_openj9-0.38.0/ibm-semeru-open-jdk_s390x_linux_8u372b07_openj9-0.38.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 16 Jun 2023 02:38:25 GMT
+# Tue, 04 Jul 2023 19:18:48 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 16 Jun 2023 02:38:25 GMT
+# Tue, 04 Jul 2023 19:18:48 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
-# Fri, 16 Jun 2023 02:39:00 GMT
+# Tue, 04 Jul 2023 19:19:23 GMT
 RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="0db27185d9fc3174f2c670f814df3dda8a008b89d1a38a5d96cbbe119767ebfb1cf0bce956b27954aee9be19c4a7b91f2579d967932207976322033a86075f98";     TOMCAT_DWNLD_URL="https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.35/bin/apache-tomcat-9.0.35.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed";
 ```
 
 -	Layers:
-	-	`sha256:3f94e4e483ea634d7ab0b63649b8f72f8b721d4c626297fd0edae0abea1df9e9`  
-		Last Modified: Tue, 06 Jun 2023 11:46:33 GMT  
-		Size: 30.4 MB (30431039 bytes)  
+	-	`sha256:9d19ee268e0d7bcf6716e6658ee1b0384a71d6f2f9aa1ae2085610cf7c7b316f`  
+		Last Modified: Wed, 28 Jun 2023 11:50:41 GMT  
+		Size: 30.4 MB (30431229 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5d5ee5bc7b322f06b8383500bdfc2c8a835a9f778bf4ffd567f4220795efc7d`  
-		Last Modified: Fri, 16 Jun 2023 02:51:52 GMT  
-		Size: 12.2 MB (12155965 bytes)  
+	-	`sha256:ca0c4917a2ccb14efc65bd0b9fcf7cdc9995459e20d251cb1992d93fbf4f32b6`  
+		Last Modified: Tue, 04 Jul 2023 19:32:46 GMT  
+		Size: 12.2 MB (12155992 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ccbeb68483282ef717f42a0c33a0dbc56fbc1890849b1b40b492373fcfddf23`  
-		Last Modified: Fri, 16 Jun 2023 02:52:00 GMT  
-		Size: 116.9 MB (116933522 bytes)  
+	-	`sha256:15d1e3169149f219be3008f0d92bfa11baaf3b8d913c0255097ecd33a02f24ed`  
+		Last Modified: Tue, 04 Jul 2023 19:32:53 GMT  
+		Size: 116.9 MB (116933508 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa47f1da883ee2db13e86d470384745e21526e5fb62aa06d529571d82a986d55`  
-		Last Modified: Fri, 16 Jun 2023 02:51:51 GMT  
-		Size: 4.3 MB (4271605 bytes)  
+	-	`sha256:69ac386dbfb9f251d0582a65070c50c0cfe2408d0cc61e1623fe26eae4d28320`  
+		Last Modified: Tue, 04 Jul 2023 19:32:45 GMT  
+		Size: 4.2 MB (4227525 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ibm-semeru-runtimes:open-8u372-b07-jdk-jammy` - linux; arm64 variant v8
