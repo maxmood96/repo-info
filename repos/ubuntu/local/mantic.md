@@ -408,15 +408,9 @@ Licenses: (parsed from: `/usr/share/doc/e2fsprogs/copyright`, `/usr/share/doc/li
 - `Latex2e`
 - `MIT-US-export`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris e2fsprogs=1.47.0-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.47.0-1ubuntu1.dsc' e2fsprogs_1.47.0-1ubuntu1.dsc 3211 SHA512:ce5de759916f58a9e301aaef0157980e6b71b03ce7aac5a62e01827b6b9a683ee48cd6f32a3d8f5ca98f757678b8537441c28bdcf83d5c09809a08f1d583eee5
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.47.0.orig.tar.gz' e2fsprogs_1.47.0.orig.tar.gz 9637717 SHA512:4f03a469d03cb0f0656bd17c64d944606fb25e68002e3e42c278f3775fee6bf776cc2061ae378b5df4f167a5c33444490111fdcbb140e0320445706f9d048dd0
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.47.0.orig.tar.gz.asc' e2fsprogs_1.47.0.orig.tar.gz.asc 488 SHA512:cd3652ec12f694f1c1f5bd4af4964bb32ad832ba8a06a48864d12a998dc514e9a950ebdb475707a3abb8360852a3469794f2327f097328c99233beef575df144
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.47.0-1ubuntu1.debian.tar.xz' e2fsprogs_1.47.0-1ubuntu1.debian.tar.xz 88484 SHA512:3bdeed4a9921204475efb738b8255cf829f8421db406113cf80e42ba8b51ece09cd3af6afdeff4c747425a9c302c7af2dbb8985fd4b77f56050527d9fd188a34
-```
 
 ### `dpkg` source package: `findutils=4.9.0-4ubuntu1`
 
@@ -943,15 +937,13 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 - `LGPL`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libtasn1-6=4.19.0-2
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.19.0-2.dsc' libtasn1-6_4.19.0-2.dsc 2662 SHA512:86405d615a659eba8e60b01f293b442564b2438c00c81241c5683bd52165e10398d9d1016051abcfdef4e4fb7f7cebb703b82d950bf68e9906ae9893dfdb2624
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.19.0.orig.tar.gz' libtasn1-6_4.19.0.orig.tar.gz 1786576 SHA512:287f5eddfb5e21762d9f14d11997e56b953b980b2b03a97ed4cd6d37909bda1ed7d2cdff9da5d270a21d863ab7e54be6b85c05f1075ac5d8f0198997cf335ef4
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.19.0.orig.tar.gz.asc' libtasn1-6_4.19.0.orig.tar.gz.asc 228 SHA512:e0417625f8df22c6421914bf2d4f19d7f27260c24c04f50e59669681f326debe06ddef9dc5a2e20fda50feb30bbbf3f41597e64961257304ec2c407aa76d107e
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.19.0-2.debian.tar.xz' libtasn1-6_4.19.0-2.debian.tar.xz 22012 SHA512:970b94efd8f52de08852d6c16b43c180ce498c2e929188f5b908bf6fb3cd6078dede768551d9329e33d6af201e6d3c2036128affa9c78ecc0045c13db886fa88
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libtasn1-6/4.19.0-2/
+
 
 ### `dpkg` source package: `libunistring=1.0-2`
 
@@ -1014,15 +1006,13 @@ Licenses: (parsed from: `/usr/share/doc/libzstd1/copyright`)
 - `GPL-2`
 - `zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libzstd=1.5.4+dfsg2-5
-'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.5.4%2bdfsg2-5.dsc' libzstd_1.5.4+dfsg2-5.dsc 2589 SHA512:364956611809134699df8369e67268b56670a5db4a7309051ffd15ac915aac2c26cd440cfcdc2b274a88d064d767f7d9a73722abd0b6435d834732ff5191d69a
-'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.5.4%2bdfsg2.orig.tar.xz' libzstd_1.5.4+dfsg2.orig.tar.xz 1582660 SHA512:2a082e90acf1e7166c817e51d03cf0f40ff241aaa923b13a84362482d67483a8f1a39381e2506bb6ca0a9550ff24889583e614696139f4e7e6be0e05162711cf
-'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.5.4%2bdfsg2.orig.tar.xz.asc' libzstd_1.5.4+dfsg2.orig.tar.xz.asc 833 SHA512:9ae890b55f4df9ebb9ff374f14d195aa72406325d805a86afa8e6ef2eafc7a6fd665574acd4587d012f6a878dddee8bdc64d3be858fbed11a173c714bca51fd6
-'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.5.4%2bdfsg2-5.debian.tar.xz' libzstd_1.5.4+dfsg2-5.debian.tar.xz 216092 SHA512:9dbdcbfd852cdc55915a8f9e1320dd23c70eb9486ee1d728c0f25d568587a9d30d05f920e5ae375026e2f35d939947888b7b0be54bf1381c55e65875a932b676
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libzstd/1.5.4+dfsg2-5/
+
 
 ### `dpkg` source package: `lz4=1.9.4-1`
 
