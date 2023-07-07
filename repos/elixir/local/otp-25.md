@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f06b08e72b7dad75c17782d7c2561b44b0c1745d40c258100028ef31af62ec88`
-- Created: `2023-07-03T18:54:30.172213376Z`
-- Virtual Size: ~ 1.48 Gb  
+- Image ID: `sha256:dc95d9fc72316982e437618ecfb5df5da1664b1785f17c73520a9e9ea4cdb8ca`
+- Created: `2023-07-05T04:50:47.283500421Z`
+- Virtual Size: ~ 1.47 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["iex"]`
@@ -5345,37 +5345,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libwpe/1.10.0-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libwpe/1.10.0-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libx11=2:1.7.2-1`
-
-Binary Packages:
-
-- `libx11-data=2:1.7.2-1`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris libx11=2:1.7.2-1
-'http://deb.debian.org/debian/pool/main/libx/libx11/libx11_1.7.2-1.dsc' libx11_1.7.2-1.dsc 2539 SHA256:8db8a34ebf9782d4ef47cb28cfeae0b1bc737864a315a182871eeb29f7de7d90
-'http://deb.debian.org/debian/pool/main/libx/libx11/libx11_1.7.2.orig.tar.gz' libx11_1.7.2.orig.tar.gz 3181228 SHA256:2c26ccd08f43a6214de89110554fbe97c71692eeb7e7d4829f3004ae6fafd2c0
-'http://deb.debian.org/debian/pool/main/libx/libx11/libx11_1.7.2.orig.tar.gz.asc' libx11_1.7.2.orig.tar.gz.asc 833 SHA256:509d0ed983ff3aed0dbfb070dabfce82b5787e626f2fd0bfb2a5887918fcd967
-'http://deb.debian.org/debian/pool/main/libx/libx11/libx11_1.7.2-1.diff.gz' libx11_1.7.2-1.diff.gz 76026 SHA256:7babff68e071a9e3f7bc6241a1a135e3a19c74314240764722a41b31f1e213c8
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/libx11/2:1.7.2-1/ (for browsing the source)
-- https://sources.debian.net/src/libx11/2:1.7.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libx11/2:1.7.2-1/ (for access to the source package after it no longer exists in the archive)
-
 ### `dpkg` source package: `libx11=2:1.7.2-1+deb11u1`
 
 Binary Packages:
 
 - `libx11-6:amd64=2:1.7.2-1+deb11u1`
+- `libx11-data=2:1.7.2-1+deb11u1`
 - `libx11-dev:amd64=2:1.7.2-1+deb11u1`
 - `libx11-xcb1:amd64=2:1.7.2-1+deb11u1`
 
