@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8364a5acc9c5af9287720c71beac1df19bed2c306661cd86c3998f4e8d9269db`
-- Created: `2023-07-04T02:30:03.920192106Z`
-- Virtual Size: ~ 304.24 Mb  
+- Image ID: `sha256:029c4d3ca75284f127b3c5a2e1a1d49550cd90b8083d36131efe5409f0013932`
+- Created: `2023-07-11T03:57:26.342826372Z`
+- Virtual Size: ~ 304.31 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD`
-  - `PHP_VERSION=8.1.20`
-  - `PHP_URL=https://www.php.net/distributions/php-8.1.20.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.20.tar.xz.asc`
-  - `PHP_SHA256=4c9973f599e93ed5e8ce2b45ce1d41bb8fb54ce642824fd23e56b52fd75029a6`
+  - `PHP_VERSION=8.1.21`
+  - `PHP_URL=https://www.php.net/distributions/php-8.1.21.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.21.tar.xz.asc`
+  - `PHP_SHA256=e634a00b0c6a8cd39e840e9fb30b5227b820b7a9ace95b7b001053c1411c4821`
 
 ## `apk` (`.apk`-based packages)
 
@@ -282,16 +282,16 @@ LGPL-2.1-or-later OR MPL-1.1
 ### `apk` package: `cups-libs`
 
 ```console
-cups-libs-2.4.5-r0 description:
+cups-libs-2.4.6-r0 description:
 CUPS libraries
 
-cups-libs-2.4.5-r0 webpage:
+cups-libs-2.4.6-r0 webpage:
 https://github.com/OpenPrinting/cups/
 
-cups-libs-2.4.5-r0 installed size:
+cups-libs-2.4.6-r0 installed size:
 576 KiB
 
-cups-libs-2.4.5-r0 license:
+cups-libs-2.4.6-r0 license:
 Apache-2.0
 
 ```
@@ -401,16 +401,16 @@ LGPL-2.1-or-later
 ### `apk` package: `ghostscript`
 
 ```console
-ghostscript-10.01.1-r1 description:
+ghostscript-10.01.2-r0 description:
 An interpreter for the PostScript language and for PDF
 
-ghostscript-10.01.1-r1 webpage:
+ghostscript-10.01.2-r0 webpage:
 https://ghostscript.com/
 
-ghostscript-10.01.1-r1 installed size:
+ghostscript-10.01.2-r0 installed size:
 68 MiB
 
-ghostscript-10.01.1-r1 license:
+ghostscript-10.01.2-r0 license:
 AGPL-3.0-or-later
 
 ```
@@ -418,16 +418,16 @@ AGPL-3.0-or-later
 ### `apk` package: `glib`
 
 ```console
-glib-2.76.3-r0 description:
+glib-2.76.4-r0 description:
 Common C routines used by Gtk+ and other libs
 
-glib-2.76.3-r0 webpage:
+glib-2.76.4-r0 webpage:
 https://developer.gnome.org/glib/
 
-glib-2.76.3-r0 installed size:
+glib-2.76.4-r0 installed size:
 3824 KiB
 
-glib-2.76.3-r0 license:
+glib-2.76.4-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -520,16 +520,16 @@ MIT
 ### `apk` package: `icu-data-en`
 
 ```console
-icu-data-en-73.2-r0 description:
+icu-data-en-73.2-r1 description:
 Stripped down ICU data with only en_US/GB locale and no legacy charset converters
 
-icu-data-en-73.2-r0 webpage:
+icu-data-en-73.2-r1 webpage:
 https://icu.unicode.org/
 
-icu-data-en-73.2-r0 installed size:
+icu-data-en-73.2-r1 installed size:
 3016 KiB
 
-icu-data-en-73.2-r0 license:
+icu-data-en-73.2-r1 license:
 ICU
 
 ```
@@ -537,16 +537,16 @@ ICU
 ### `apk` package: `icu-libs`
 
 ```console
-icu-libs-73.2-r0 description:
+icu-libs-73.2-r1 description:
 International Components for Unicode library (libraries)
 
-icu-libs-73.2-r0 webpage:
+icu-libs-73.2-r1 webpage:
 https://icu.unicode.org/
 
-icu-libs-73.2-r0 installed size:
+icu-libs-73.2-r1 installed size:
 4328 KiB
 
-icu-libs-73.2-r0 license:
+icu-libs-73.2-r1 license:
 ICU
 
 ```
@@ -1030,16 +1030,16 @@ CDDL-1.0 OR LGPL-2.1-only
 ### `apk` package: `librsvg`
 
 ```console
-librsvg-2.56.1-r0 description:
+librsvg-2.56.2-r0 description:
 SAX-based renderer for SVG files into a GdkPixbuf
 
-librsvg-2.56.1-r0 webpage:
+librsvg-2.56.2-r0 webpage:
 https://wiki.gnome.org/Projects/LibRsvg
 
-librsvg-2.56.1-r0 installed size:
+librsvg-2.56.2-r0 installed size:
 3164 KiB
 
-librsvg-2.56.1-r0 license:
+librsvg-2.56.2-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -1132,16 +1132,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `libwebp`
 
 ```console
-libwebp-1.3.0-r2 description:
+libwebp-1.3.1-r0 description:
 Libraries for working with WebP images
 
-libwebp-1.3.0-r2 webpage:
+libwebp-1.3.1-r0 webpage:
 https://developers.google.com/speed/webp
 
-libwebp-1.3.0-r2 installed size:
+libwebp-1.3.1-r0 installed size:
 596 KiB
 
-libwebp-1.3.0-r2 license:
+libwebp-1.3.1-r0 license:
 BSD-3-Clause
 
 ```
@@ -1149,16 +1149,16 @@ BSD-3-Clause
 ### `apk` package: `libx11`
 
 ```console
-libx11-1.8.4-r3 description:
+libx11-1.8.4-r4 description:
 X11 client-side library
 
-libx11-1.8.4-r3 webpage:
+libx11-1.8.4-r4 webpage:
 https://xorg.freedesktop.org/
 
-libx11-1.8.4-r3 installed size:
+libx11-1.8.4-r4 installed size:
 3152 KiB
 
-libx11-1.8.4-r3 license:
+libx11-1.8.4-r4 license:
 X11
 
 ```

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9928985a5302a5c745aa21678025e6cf4f8175d98dabadead7855ae741c0d17b`
-- Created: `2023-06-15T08:21:07.079402391Z`
-- Virtual Size: ~ 204.75 Mb  
+- Image ID: `sha256:a3e413cabb3f0822c0922b4ccd4c4c9648af0abf4ec595041b87b4a0fdb7355f`
+- Created: `2023-07-11T03:56:53.792491028Z`
+- Virtual Size: ~ 204.77 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
-  - `PHP_VERSION=8.2.7`
-  - `PHP_URL=https://www.php.net/distributions/php-8.2.7.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.7.tar.xz.asc`
-  - `PHP_SHA256=4b9fb3dcd7184fe7582d7e44544ec7c5153852a2528de3b6754791258ffbdfa0`
+  - `PHP_VERSION=8.2.8`
+  - `PHP_URL=https://www.php.net/distributions/php-8.2.8.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.8.tar.xz.asc`
+  - `PHP_SHA256=cfe1055fbcd486de7d3312da6146949aae577365808790af6018205567609801`
   - `WORDPRESS_CLI_GPG_KEY=63AF7AA15067C05616FDDD88A3A2E8F226F0BC06`
   - `WORDPRESS_CLI_VERSION=2.8.1`
   - `WORDPRESS_CLI_SHA512=c1d40ee90b330ca1f8ddbed14b938b41ec5d9ff723c7c1cf3f41a2d9a1b271079a51a37ea3d1c9aa9c628fdd43449dba3995a8de150a68abbd505b06b91d9d2b`
@@ -285,16 +285,16 @@ LGPL-2.1-or-later
 ### `apk` package: `icu-data-en`
 
 ```console
-icu-data-en-73.2-r0 description:
+icu-data-en-73.2-r1 description:
 Stripped down ICU data with only en_US/GB locale and no legacy charset converters
 
-icu-data-en-73.2-r0 webpage:
+icu-data-en-73.2-r1 webpage:
 https://icu.unicode.org/
 
-icu-data-en-73.2-r0 installed size:
+icu-data-en-73.2-r1 installed size:
 3016 KiB
 
-icu-data-en-73.2-r0 license:
+icu-data-en-73.2-r1 license:
 ICU
 
 ```
@@ -302,16 +302,16 @@ ICU
 ### `apk` package: `icu-libs`
 
 ```console
-icu-libs-73.2-r0 description:
+icu-libs-73.2-r1 description:
 International Components for Unicode library (libraries)
 
-icu-libs-73.2-r0 webpage:
+icu-libs-73.2-r1 webpage:
 https://icu.unicode.org/
 
-icu-libs-73.2-r0 installed size:
+icu-libs-73.2-r1 installed size:
 4328 KiB
 
-icu-libs-73.2-r0 license:
+icu-libs-73.2-r1 license:
 ICU
 
 ```
@@ -693,16 +693,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `libwebp`
 
 ```console
-libwebp-1.3.0-r2 description:
+libwebp-1.3.1-r0 description:
 Libraries for working with WebP images
 
-libwebp-1.3.0-r2 webpage:
+libwebp-1.3.1-r0 webpage:
 https://developers.google.com/speed/webp
 
-libwebp-1.3.0-r2 installed size:
+libwebp-1.3.1-r0 installed size:
 596 KiB
 
-libwebp-1.3.0-r2 license:
+libwebp-1.3.1-r0 license:
 BSD-3-Clause
 
 ```
@@ -710,16 +710,16 @@ BSD-3-Clause
 ### `apk` package: `libx11`
 
 ```console
-libx11-1.8.4-r3 description:
+libx11-1.8.4-r4 description:
 X11 client-side library
 
-libx11-1.8.4-r3 webpage:
+libx11-1.8.4-r4 webpage:
 https://xorg.freedesktop.org/
 
-libx11-1.8.4-r3 installed size:
+libx11-1.8.4-r4 installed size:
 3152 KiB
 
-libx11-1.8.4-r3 license:
+libx11-1.8.4-r4 license:
 X11
 
 ```
