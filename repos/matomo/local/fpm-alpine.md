@@ -1,10 +1,10 @@
-# `matomo:4.14.2-fpm-alpine`
+# `matomo:4.15.0-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8fe43a50567edc7a0bebf284269f8b22247a3c141392e68233db71b0850cfc4f`
-- Created: `2023-06-22T22:48:46.836544758Z`
-- Virtual Size: ~ 145.37 Mb  
+- Image ID: `sha256:ff551f5832266ab3f9d867eaad86b90bad25444d321ce626efbf62d20ee07338`
+- Created: `2023-07-10T20:23:53.779578636Z`
+- Virtual Size: ~ 145.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -22,7 +22,7 @@
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.20.tar.xz.asc`
   - `PHP_SHA256=4c9973f599e93ed5e8ce2b45ce1d41bb8fb54ce642824fd23e56b52fd75029a6`
   - `PHP_MEMORY_LIMIT=256M`
-  - `MATOMO_VERSION=4.14.2`
+  - `MATOMO_VERSION=4.15.0`
 
 ## `apk` (`.apk`-based packages)
 
