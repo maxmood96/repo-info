@@ -321,14 +321,13 @@ Licenses: (parsed from: `/usr/share/doc/debianutils/copyright`)
 - `SMAIL-GPL`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debianutils=5.7-0.4
-'http://archive.ubuntu.com/ubuntu/pool/main/d/debianutils/debianutils_5.7-0.4.dsc' debianutils_5.7-0.4.dsc 1737 SHA512:91f750cac588110e2790b886a5408152411fa0a1df78f6e6544fedc19200a5efc7e9da417ee152b077ddb5a87c68bd8130314f628879acb30724fe240fc4293e
-'http://archive.ubuntu.com/ubuntu/pool/main/d/debianutils/debianutils_5.7.orig.tar.gz' debianutils_5.7.orig.tar.gz 257231 SHA512:79acd8885abca93842d696167171a359011c49a40f38deeb25bc94d62905f95afa3a7b2540d3bd4b0ffd363c5c48a439a1a68139a29d6c033980b019cea75d92
-'http://archive.ubuntu.com/ubuntu/pool/main/d/debianutils/debianutils_5.7-0.4.debian.tar.xz' debianutils_5.7-0.4.debian.tar.xz 22412 SHA512:dff3affac8165446b05a911fcc54c4d0db0491f0bdba3f0e1464f2f6bc3020f607a4df324edbc59b72a02df5cd3351804763bb7a2b20785f0453fd30c0fec25f
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/debianutils/5.7-0.4/
+
 
 ### `dpkg` source package: `diffutils=1:3.8-4`
 
@@ -470,14 +469,9 @@ Licenses: (parsed from: `/usr/share/doc/gcc-13-base/copyright`, `/usr/share/doc/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-13=13.1.0-6ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-13/gcc-13_13.1.0-6ubuntu1.dsc' gcc-13_13.1.0-6ubuntu1.dsc 27910 SHA512:0a32cdf878d6b754f9342e8425f30a5335e04e3d8c8d9d4b2a3400aae4e1dfdffa5dd4cbd702167916bf79c3b343613870b6bdf1f276e339c36bf65bb66e805d
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-13/gcc-13_13.1.0.orig.tar.gz' gcc-13_13.1.0.orig.tar.gz 92188593 SHA512:81da5b2e1447652f895cc90ae6b7f106d0bb8e7d4741396ddea0e23fe06a13208469fcbefa6affe7b17271af9efb64464cbd5c76bba283b8f3710843a739b687
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-13/gcc-13_13.1.0-6ubuntu1.debian.tar.xz' gcc-13_13.1.0-6ubuntu1.debian.tar.xz 1277788 SHA512:309dfd7e6ae80a36ec6e95ed667e03d8a1323b4c40d66cd36c3d18dccbdbe78f5bd5af3b390fe585d079b77dc639ac3af1a3d5be8014fcaa9731ecaf78be1770
-```
 
 ### `dpkg` source package: `glibc=2.37-0ubuntu2`
 
@@ -1079,15 +1073,13 @@ Licenses: (parsed from: `/usr/share/doc/libncursesw6/copyright`, `/usr/share/doc
 - `MIT/X11`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ncurses=6.4-4
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.4-4.dsc' ncurses_6.4-4.dsc 4110 SHA512:fc0e44799b742b5d06136793e69cc714fc2f9b7470ad82d91876e6c6a02664a86185d6336ecbe58284cdbbf444650389c2bb493958a1b64558e2e500811b2771
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.4.orig.tar.gz' ncurses_6.4.orig.tar.gz 3612591 SHA512:1c2efff87a82a57e57b0c60023c87bae93f6718114c8f9dc010d4c21119a2f7576d0225dab5f0a227c2cfc6fb6bdbd62728e407f35fce5bf351bb50cf9e0fd34
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.4.orig.tar.gz.asc' ncurses_6.4.orig.tar.gz.asc 729 SHA512:8ee8b4b1ff3f804085a4f09aa8be1cf93d8633f7a6c7bcb079556c0a3fb2f4be8886c18c22dbc4f01fa03f88dc682ebce27459f9110909f72133f3685df2eb41
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.4-4.debian.tar.xz' ncurses_6.4-4.debian.tar.xz 56556 SHA512:54b8ba2b89d77e1f2b09b90663f0bbde3b95d00ef89d0f6e7a9b5ce0ccc874e057adb4bcc5ddc66f3cbe58de37ae4a842bd32dd159ec77bf99e82a15c17e8292
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/ncurses/6.4-4/
+
 
 ### `dpkg` source package: `nettle=3.8.1-2`
 
