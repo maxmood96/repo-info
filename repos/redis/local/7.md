@@ -1,9 +1,9 @@
-# `redis:7.0.11`
+# `redis:7.0.12`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4695a05c473aa2db2dff0384abb06c2174832183ca0783d0a2720a922792add6`
-- Created: `2023-07-04T09:01:52.970885968Z`
+- Image ID: `sha256:7e89539dd8bd73be0667d8bacf39e91bc14f0e106d0f50f778da05e903726e29`
+- Created: `2023-07-11T04:19:16.998920279Z`
 - Virtual Size: ~ 129.93 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,9 +12,9 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.16`
-  - `REDIS_VERSION=7.0.11`
-  - `REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-7.0.11.tar.gz`
-  - `REDIS_DOWNLOAD_SHA=ce250d1fba042c613de38a15d40889b78f7cb6d5461a27e35017ba39b07221e3`
+  - `REDIS_VERSION=7.0.12`
+  - `REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-7.0.12.tar.gz`
+  - `REDIS_DOWNLOAD_SHA=9dd83d5b278bb2bf0e39bfeb75c3e8170024edbaf11ba13b7037b2945cf48ab7`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1471,11 +1471,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.4+dfsg2-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.4+dfsg2-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.1.27-1`
+### `dpkg` source package: `linux=6.1.37-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.1.27-1`
+- `linux-libc-dev:amd64=6.1.37-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1490,17 +1490,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.1.27-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.27-1.dsc' linux_6.1.27-1.dsc 287311 SHA256:a7387da34728c5f8bd43f67acdabed9b91beee24603316e73f8328203081a460
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.27.orig.tar.xz' linux_6.1.27.orig.tar.xz 137313692 SHA256:6f7629a19e2689ba8223e0af177ba488e127d1311149c35de8e2112fc627b2a8
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.27-1.debian.tar.xz' linux_6.1.27-1.debian.tar.xz 1458556 SHA256:1c6c6212cc071a67b023d87addc86b7f87f08460bc9accd60aeeeb901bbfb167
+$ apt-get source -qq --print-uris linux=6.1.37-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.37-1.dsc' linux_6.1.37-1.dsc 290924 SHA256:ad35f62009cc2798c71fe4788d8ed250576f8a56d3e2d00a8349226c5b5a982a
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.37.orig.tar.xz' linux_6.1.37.orig.tar.xz 137331348 SHA256:5d98b9130b60e980eda129287210c9a994eb0dbbafdc2269959c77b698f21c70
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.37-1.debian.tar.xz' linux_6.1.37-1.debian.tar.xz 1481740 SHA256:646132760e8aa77b6e0029df6312a834a309d914002c5fbb940086f58892a88f
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.1.27-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.1.27-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.1.27-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.1.37-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.1.37-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.1.37-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.9.4-1`
 
