@@ -1,7 +1,7 @@
 ## `tomcat:9-jdk21-openjdk-bullseye`
 
 ```console
-$ docker pull tomcat@sha256:491e7a8e5bb58fc8af3b975099da5f2161c481d4c5031f67f13ae14b2ccd0c19
+$ docker pull tomcat@sha256:f3b09602a639facb2c1a184a64464385d030f4a99d4c03da2190f8acf8f250cf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,14 +12,14 @@ $ docker pull tomcat@sha256:491e7a8e5bb58fc8af3b975099da5f2161c481d4c5031f67f13a
 ### `tomcat:9-jdk21-openjdk-bullseye` - linux; amd64
 
 ```console
-$ docker pull tomcat@sha256:0d54a0d0cf4737f00b43940a90a3bde9bfbc388e6250b9e2380c7b28f1712f8c
+$ docker pull tomcat@sha256:9496793e9a4d831a4674927820883d6507d89f4e6ad7c1d4c355f7d52a1b792e
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **356.1 MB (356069508 bytes)**  
+-	Total Size: **356.1 MB (356061700 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:520de11e83fe5fdb7ce322328516ec2ddd6caa75897e9cad34e979e3827d9be8`
+-	Image ID: `sha256:b66284d78b93d09c859a5587eee818e34f95b0348cca3a3adad5ff39c0740e93`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -39,39 +39,39 @@ ENV JAVA_HOME=/usr/local/openjdk-21
 ENV PATH=/usr/local/openjdk-21/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 04 Jul 2023 17:49:10 GMT
 ENV LANG=C.UTF-8
-# Mon, 10 Jul 2023 20:49:16 GMT
-ENV JAVA_VERSION=21-ea+30
-# Mon, 10 Jul 2023 20:49:26 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk21/30/GPL/openjdk-21-ea+30_linux-x64_bin.tar.gz'; 			downloadSha256='c35a1f2906d502e9f75a975165f4c86e29167ca8cc2d9d25b5351b46d90d4ab7'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk21/30/GPL/openjdk-21-ea+30_linux-aarch64_bin.tar.gz'; 			downloadSha256='ae690af5ffa639feba3bc04fc804480cdbc40b4099890c9d28dceac8f58f0426'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 10 Jul 2023 20:49:27 GMT
+# Fri, 14 Jul 2023 00:35:44 GMT
+ENV JAVA_VERSION=21-ea+31
+# Fri, 14 Jul 2023 00:35:55 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk21/31/GPL/openjdk-21-ea+31_linux-x64_bin.tar.gz'; 			downloadSha256='e2f42a80cedd4a2e59f7bd479fd308aa71a53b785012b79efa570bfc7ec21a12'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk21/31/GPL/openjdk-21-ea+31_linux-aarch64_bin.tar.gz'; 			downloadSha256='4ea543bd3c33a75f02b74f6a838e577c43e8e150cac353e22c70898b3ba119c8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Fri, 14 Jul 2023 00:35:56 GMT
 CMD ["jshell"]
-# Tue, 11 Jul 2023 00:11:20 GMT
+# Fri, 14 Jul 2023 01:02:59 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Tue, 11 Jul 2023 00:11:20 GMT
+# Fri, 14 Jul 2023 01:02:59 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-21/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 11 Jul 2023 00:11:20 GMT
+# Fri, 14 Jul 2023 01:03:00 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Tue, 11 Jul 2023 00:11:20 GMT
+# Fri, 14 Jul 2023 01:03:00 GMT
 WORKDIR /usr/local/tomcat
-# Tue, 11 Jul 2023 00:11:20 GMT
+# Fri, 14 Jul 2023 01:03:00 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Tue, 11 Jul 2023 00:11:20 GMT
+# Fri, 14 Jul 2023 01:03:00 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Tue, 11 Jul 2023 00:11:21 GMT
+# Fri, 14 Jul 2023 01:03:00 GMT
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
-# Tue, 11 Jul 2023 00:11:21 GMT
+# Fri, 14 Jul 2023 01:03:00 GMT
 ENV TOMCAT_MAJOR=9
-# Tue, 11 Jul 2023 00:11:21 GMT
+# Fri, 14 Jul 2023 01:03:00 GMT
 ENV TOMCAT_VERSION=9.0.78
-# Tue, 11 Jul 2023 00:11:21 GMT
+# Fri, 14 Jul 2023 01:03:00 GMT
 ENV TOMCAT_SHA512=c9f2e60489d07f25b53f715918f4b082c5bb69dbc497e0a9d3d5e3a0d351ff2e0ec8dfc5657de840ee5b3dea6174b27630033b38e36fa4c06b08664e70dec8df
-# Tue, 11 Jul 2023 00:11:45 GMT
+# Fri, 14 Jul 2023 01:03:25 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 1777 logs temp work; 		catalina.sh version
-# Tue, 11 Jul 2023 00:11:46 GMT
+# Fri, 14 Jul 2023 01:03:27 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Tue, 11 Jul 2023 00:11:46 GMT
+# Fri, 14 Jul 2023 01:03:27 GMT
 EXPOSE 8080
-# Tue, 11 Jul 2023 00:11:46 GMT
+# Fri, 14 Jul 2023 01:03:27 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -92,34 +92,34 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Tue, 04 Jul 2023 17:51:32 GMT  
 		Size: 14.1 MB (14071924 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c6dddf2ef59a4f8b91f261186292c1b4753ea42975bb5cf69561c6a10e82742`  
-		Last Modified: Mon, 10 Jul 2023 20:57:05 GMT  
-		Size: 204.0 MB (203977776 bytes)  
+	-	`sha256:12c776f58cc5775280d94c5e369814c2e08b5b9f293c1ebf5b24b512c8c0dd3f`  
+		Last Modified: Fri, 14 Jul 2023 00:43:25 GMT  
+		Size: 204.0 MB (203969931 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc103a61062a46696c66a9d4a1827f5def2607f329c9bb0eb9dd8f80218bc799`  
-		Last Modified: Tue, 11 Jul 2023 00:36:02 GMT  
+	-	`sha256:8fc3e06fb87d5ecd60597cadbeb153e385175a2137571a2dffa1a70e16a3fe3b`  
+		Last Modified: Fri, 14 Jul 2023 01:13:02 GMT  
 		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:149dd475e14371293785ae4fab70b0745cda64ab222b8156b5eb6214b4ab2601`  
-		Last Modified: Tue, 11 Jul 2023 00:36:03 GMT  
-		Size: 12.6 MB (12618833 bytes)  
+	-	`sha256:98e909a4b84dbc092145b49a011ece16924ac300e8cdcf36a105df7a30f4c428`  
+		Last Modified: Fri, 14 Jul 2023 01:13:04 GMT  
+		Size: 12.6 MB (12618871 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01685b10e603add267dafef419f04a5739ca47a0af37fa77ee209fbb3e9173ff`  
-		Last Modified: Tue, 11 Jul 2023 00:36:02 GMT  
-		Size: 131.0 B  
+	-	`sha256:36a4eec523ed056c66e07bb94a6d23143268d68cf1371407caa60c610335fae1`  
+		Last Modified: Fri, 14 Jul 2023 01:13:02 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `tomcat:9-jdk21-openjdk-bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull tomcat@sha256:10da96e57fb7da1a3d08cfc47a72ccd762c8870ee2a2240de1ef7f1e46fc0b18
+$ docker pull tomcat@sha256:a2b6e7b3b8b263dcf0886c580f60b82e9ddde64be7c096f22dd6179a67be1d10
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **354.6 MB (354611792 bytes)**  
+-	Total Size: **354.6 MB (354606819 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e74c70d946016f9838537effee7a1f59da543af53a681114a610c1a825bfc263`
+-	Image ID: `sha256:4859e3409a07f137f9898c239cfe74a45335c1583f572c9830a1fc4795a88a6f`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -139,39 +139,39 @@ ENV JAVA_HOME=/usr/local/openjdk-21
 ENV PATH=/usr/local/openjdk-21/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 04 Jul 2023 13:28:50 GMT
 ENV LANG=C.UTF-8
-# Mon, 10 Jul 2023 21:35:42 GMT
-ENV JAVA_VERSION=21-ea+30
-# Mon, 10 Jul 2023 21:35:50 GMT
-RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk21/30/GPL/openjdk-21-ea+30_linux-x64_bin.tar.gz'; 			downloadSha256='c35a1f2906d502e9f75a975165f4c86e29167ca8cc2d9d25b5351b46d90d4ab7'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk21/30/GPL/openjdk-21-ea+30_linux-aarch64_bin.tar.gz'; 			downloadSha256='ae690af5ffa639feba3bc04fc804480cdbc40b4099890c9d28dceac8f58f0426'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Mon, 10 Jul 2023 21:35:52 GMT
+# Fri, 14 Jul 2023 00:47:15 GMT
+ENV JAVA_VERSION=21-ea+31
+# Fri, 14 Jul 2023 00:47:23 GMT
+RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk21/31/GPL/openjdk-21-ea+31_linux-x64_bin.tar.gz'; 			downloadSha256='e2f42a80cedd4a2e59f7bd479fd308aa71a53b785012b79efa570bfc7ec21a12'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk21/31/GPL/openjdk-21-ea+31_linux-aarch64_bin.tar.gz'; 			downloadSha256='4ea543bd3c33a75f02b74f6a838e577c43e8e150cac353e22c70898b3ba119c8'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
+# Fri, 14 Jul 2023 00:47:25 GMT
 CMD ["jshell"]
-# Tue, 11 Jul 2023 01:14:14 GMT
+# Fri, 14 Jul 2023 01:21:29 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Tue, 11 Jul 2023 01:14:14 GMT
+# Fri, 14 Jul 2023 01:21:29 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/openjdk-21/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 11 Jul 2023 01:14:15 GMT
+# Fri, 14 Jul 2023 01:21:29 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Tue, 11 Jul 2023 01:14:15 GMT
+# Fri, 14 Jul 2023 01:21:29 GMT
 WORKDIR /usr/local/tomcat
-# Tue, 11 Jul 2023 01:14:15 GMT
+# Fri, 14 Jul 2023 01:21:30 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Tue, 11 Jul 2023 01:14:15 GMT
+# Fri, 14 Jul 2023 01:21:30 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Tue, 11 Jul 2023 01:14:15 GMT
+# Fri, 14 Jul 2023 01:21:30 GMT
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
-# Tue, 11 Jul 2023 01:14:15 GMT
+# Fri, 14 Jul 2023 01:21:30 GMT
 ENV TOMCAT_MAJOR=9
-# Tue, 11 Jul 2023 01:14:15 GMT
+# Fri, 14 Jul 2023 01:21:30 GMT
 ENV TOMCAT_VERSION=9.0.78
-# Tue, 11 Jul 2023 01:14:15 GMT
+# Fri, 14 Jul 2023 01:21:30 GMT
 ENV TOMCAT_SHA512=c9f2e60489d07f25b53f715918f4b082c5bb69dbc497e0a9d3d5e3a0d351ff2e0ec8dfc5657de840ee5b3dea6174b27630033b38e36fa4c06b08664e70dec8df
-# Tue, 11 Jul 2023 01:14:33 GMT
+# Fri, 14 Jul 2023 01:21:48 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 	; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local mvnFile="${1:-}"; 		local success=; 		local distUrl=; 		for distUrl in 			"https://www.apache.org/dyn/closer.cgi?action=download&filename=$distFile" 			"https://downloads.apache.org/$distFile" 			"https://www-us.apache.org/dist/$distFile" 			"https://www.apache.org/dist/$distFile" 			"https://archive.apache.org/dist/$distFile" 			${mvnFile:+"https://repo1.maven.org/maven2/org/apache/tomcat/tomcat/$mvnFile"} 		; do 			if curl -fL -o "$f" "$distUrl" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'tomcat.tar.gz' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz"; 	echo "$TOMCAT_SHA512 *tomcat.tar.gz" | sha512sum --strict --check -; 	ddist 'tomcat.tar.gz.asc' "tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz.asc" "$TOMCAT_VERSION/tomcat-$TOMCAT_VERSION.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz; 	tar -xf tomcat.tar.gz --strip-components=1; 	rm bin/*.bat; 	rm tomcat.tar.gz*; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mv webapps webapps.dist; 	mkdir webapps; 		nativeBuildDir="$(mktemp -d)"; 	tar -xf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 	; 	( 		export CATALINA_HOME="$PWD"; 		cd "$nativeBuildDir/native"; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 		aprConfig="$(command -v apr-1-config)"; 		./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$aprConfig" 			--with-java-home="$JAVA_HOME" 			--with-ssl 		; 		nproc="$(nproc)"; 		make -j "$nproc"; 		make install; 	); 	rm -rf "$nativeBuildDir"; 	rm bin/tomcat-native.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find "$TOMCAT_NATIVE_LIBDIR" -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { print $(NF-1) }' 		| xargs -rt readlink -e 		| sort -u 		| xargs -rt dpkg-query --search 		| cut -d: -f1 		| sort -u 		| tee "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt" 		| xargs -r apt-mark manual 	; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +; 		chmod -R +rX .; 	chmod 1777 logs temp work; 		catalina.sh version
-# Tue, 11 Jul 2023 01:14:34 GMT
+# Fri, 14 Jul 2023 01:21:49 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Tue, 11 Jul 2023 01:14:34 GMT
+# Fri, 14 Jul 2023 01:21:49 GMT
 EXPOSE 8080
-# Tue, 11 Jul 2023 01:14:34 GMT
+# Fri, 14 Jul 2023 01:21:49 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -192,19 +192,19 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Tue, 04 Jul 2023 13:31:33 GMT  
 		Size: 15.5 MB (15528800 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:17dcb831cef7eade5efea7d5f771b0a8a6d33719c751e0441a48d17e17f9c4c6`  
-		Last Modified: Mon, 10 Jul 2023 21:42:42 GMT  
-		Size: 202.3 MB (202323750 bytes)  
+	-	`sha256:0b20f02689642fefa9d22a769bd7fc4930de2498bcbd32dd777f7308563a5dc1`  
+		Last Modified: Fri, 14 Jul 2023 00:54:26 GMT  
+		Size: 202.3 MB (202318770 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e9d936a52b1e7e8dbfa1e908724c0e94135c598a327d13a4fac84e1e7a1f4d6f`  
-		Last Modified: Tue, 11 Jul 2023 01:36:40 GMT  
-		Size: 173.0 B  
+	-	`sha256:3702d78b685ffa12a8e6ea8e1a7304a00bcbdc2c289d87ded4093043520d2a04`  
+		Last Modified: Fri, 14 Jul 2023 01:29:54 GMT  
+		Size: 171.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d6eef1af0d45a0a97421f5bdc4cb7d076e46168a7f0ece98d72db10d9c6e9c47`  
-		Last Modified: Tue, 11 Jul 2023 01:36:41 GMT  
-		Size: 12.6 MB (12632137 bytes)  
+	-	`sha256:f72b7c5f12c12251a94efd297b67f4d481a3d9cff395e077020351ca6557a914`  
+		Last Modified: Fri, 14 Jul 2023 01:29:56 GMT  
+		Size: 12.6 MB (12632148 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:93bc942b9dec349e7a69888b3a72c37a496e899c12491e39df5f55e82a372f17`  
-		Last Modified: Tue, 11 Jul 2023 01:36:40 GMT  
-		Size: 131.0 B  
+	-	`sha256:ebfa5ef58b85bed98cf368dbeada4224bcbe4b3c7fac95e5eb33a0af6d4a0ca4`  
+		Last Modified: Fri, 14 Jul 2023 01:29:54 GMT  
+		Size: 129.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
