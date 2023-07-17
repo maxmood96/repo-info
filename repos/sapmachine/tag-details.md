@@ -8,6 +8,28 @@
 -	[`sapmachine:17.0.7`](#sapmachine1707)
 -	[`sapmachine:20`](#sapmachine20)
 -	[`sapmachine:20.0.1`](#sapmachine2001)
+-	[`sapmachine:jdk-headless-ubuntu`](#sapmachinejdk-headless-ubuntu)
+-	[`sapmachine:jdk-headless-ubuntu-11`](#sapmachinejdk-headless-ubuntu-11)
+-	[`sapmachine:jdk-headless-ubuntu-11.0.19`](#sapmachinejdk-headless-ubuntu-11019)
+-	[`sapmachine:jdk-headless-ubuntu-17`](#sapmachinejdk-headless-ubuntu-17)
+-	[`sapmachine:jdk-headless-ubuntu-17.0.7`](#sapmachinejdk-headless-ubuntu-1707)
+-	[`sapmachine:jdk-headless-ubuntu-20`](#sapmachinejdk-headless-ubuntu-20)
+-	[`sapmachine:jdk-headless-ubuntu-20.0.1`](#sapmachinejdk-headless-ubuntu-2001)
+-	[`sapmachine:jdk-headless-ubuntu-lts`](#sapmachinejdk-headless-ubuntu-lts)
+-	[`sapmachine:jdk-ubuntu`](#sapmachinejdk-ubuntu)
+-	[`sapmachine:jdk-ubuntu-11`](#sapmachinejdk-ubuntu-11)
+-	[`sapmachine:jdk-ubuntu-11.0.19`](#sapmachinejdk-ubuntu-11019)
+-	[`sapmachine:jdk-ubuntu-17`](#sapmachinejdk-ubuntu-17)
+-	[`sapmachine:jdk-ubuntu-17.0.7`](#sapmachinejdk-ubuntu-1707)
+-	[`sapmachine:jdk-ubuntu-20`](#sapmachinejdk-ubuntu-20)
+-	[`sapmachine:jdk-ubuntu-20.0.1`](#sapmachinejdk-ubuntu-2001)
+-	[`sapmachine:jdk-ubuntu-lts`](#sapmachinejdk-ubuntu-lts)
+-	[`sapmachine:jre-headless-ubuntu`](#sapmachinejre-headless-ubuntu)
+-	[`sapmachine:jre-headless-ubuntu-20`](#sapmachinejre-headless-ubuntu-20)
+-	[`sapmachine:jre-headless-ubuntu-20.0.1`](#sapmachinejre-headless-ubuntu-2001)
+-	[`sapmachine:jre-ubuntu`](#sapmachinejre-ubuntu)
+-	[`sapmachine:jre-ubuntu-20`](#sapmachinejre-ubuntu-20)
+-	[`sapmachine:jre-ubuntu-20.0.1`](#sapmachinejre-ubuntu-2001)
 -	[`sapmachine:latest`](#sapmachinelatest)
 -	[`sapmachine:lts`](#sapmachinelts)
 
@@ -982,6 +1004,94 @@ CMD ["jshell"]
 		Last Modified: Wed, 05 Jul 2023 01:34:01 GMT  
 		Size: 209.4 MB (209367400 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `sapmachine:jdk-headless-ubuntu`
+
+**does not exist** (yet?)
+
+## `sapmachine:jdk-headless-ubuntu-11`
+
+**does not exist** (yet?)
+
+## `sapmachine:jdk-headless-ubuntu-11.0.19`
+
+**does not exist** (yet?)
+
+## `sapmachine:jdk-headless-ubuntu-17`
+
+**does not exist** (yet?)
+
+## `sapmachine:jdk-headless-ubuntu-17.0.7`
+
+**does not exist** (yet?)
+
+## `sapmachine:jdk-headless-ubuntu-20`
+
+**does not exist** (yet?)
+
+## `sapmachine:jdk-headless-ubuntu-20.0.1`
+
+**does not exist** (yet?)
+
+## `sapmachine:jdk-headless-ubuntu-lts`
+
+**does not exist** (yet?)
+
+## `sapmachine:jdk-ubuntu`
+
+**does not exist** (yet?)
+
+## `sapmachine:jdk-ubuntu-11`
+
+**does not exist** (yet?)
+
+## `sapmachine:jdk-ubuntu-11.0.19`
+
+**does not exist** (yet?)
+
+## `sapmachine:jdk-ubuntu-17`
+
+**does not exist** (yet?)
+
+## `sapmachine:jdk-ubuntu-17.0.7`
+
+**does not exist** (yet?)
+
+## `sapmachine:jdk-ubuntu-20`
+
+**does not exist** (yet?)
+
+## `sapmachine:jdk-ubuntu-20.0.1`
+
+**does not exist** (yet?)
+
+## `sapmachine:jdk-ubuntu-lts`
+
+**does not exist** (yet?)
+
+## `sapmachine:jre-headless-ubuntu`
+
+**does not exist** (yet?)
+
+## `sapmachine:jre-headless-ubuntu-20`
+
+**does not exist** (yet?)
+
+## `sapmachine:jre-headless-ubuntu-20.0.1`
+
+**does not exist** (yet?)
+
+## `sapmachine:jre-ubuntu`
+
+**does not exist** (yet?)
+
+## `sapmachine:jre-ubuntu-20`
+
+**does not exist** (yet?)
+
+## `sapmachine:jre-ubuntu-20.0.1`
+
+**does not exist** (yet?)
 
 ## `sapmachine:latest`
 
