@@ -2,15 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:98c73c8c31a354f17fcaff78c917e63e381d5ecc843d4bf45dfd27adf465db8b`
-- Created: `2023-07-03T18:33:49.513817383Z`
-- Virtual Size: ~ 39.49 Mb  
+- Image ID: `sha256:033497a760a557711ca15f99c04abc7d5effec5f4804abc638d2f98ad32bb333`
+- Created: `2023-07-17T19:26:05.165905344Z`
+- Virtual Size: ~ 39.50 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 - Labels:
-  - `build-date=20230701`
+  - `build-date=20230715`
   - `name=Photon OS x86_64/5.0 Base Image`
   - `vendor=VMware`
