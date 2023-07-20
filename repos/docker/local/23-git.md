@@ -2,17 +2,17 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cea53f17c321e2faa8466a306ac1ec7a4319573a3974d8b3f51cc3c94d7e3614`
+- Image ID: `sha256:f43441258516220b7d44ec07dee4ce15599f94a2be333fa81b3c5a057e7267b9`
 - Created: `2023-05-16T17:59:38Z`
-- Virtual Size: ~ 339.70 Mb  
+- Virtual Size: ~ 345.01 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `DOCKER_VERSION=23.0.6`
-  - `DOCKER_BUILDX_VERSION=0.11.1`
-  - `DOCKER_COMPOSE_VERSION=2.20.0`
+  - `DOCKER_BUILDX_VERSION=0.11.2`
+  - `DOCKER_COMPOSE_VERSION=2.20.2`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=d58df1fc6c866447ce2cd129af10e5b507705624`
 
@@ -429,16 +429,16 @@ GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.1-r1 description:
+libcrypto3-3.1.1-r3 description:
 Crypto library from openssl
 
-libcrypto3-3.1.1-r1 webpage:
+libcrypto3-3.1.1-r3 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.1-r1 installed size:
+libcrypto3-3.1.1-r3 installed size:
 4464 KiB
 
-libcrypto3-3.1.1-r1 license:
+libcrypto3-3.1.1-r3 license:
 Apache-2.0
 
 ```
@@ -446,16 +446,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.1.2-r0 description:
+libcurl-8.2.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.1.2-r0 webpage:
+libcurl-8.2.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.1.2-r0 installed size:
-548 KiB
+libcurl-8.2.0-r0 installed size:
+552 KiB
 
-libcurl-8.1.2-r0 license:
+libcurl-8.2.0-r0 license:
 curl
 
 ```
@@ -582,16 +582,16 @@ GPL-2.0-or-later
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.1-r1 description:
+libssl3-3.1.1-r3 description:
 SSL shared libraries
 
-libssl3-3.1.1-r1 webpage:
+libssl3-3.1.1-r3 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.1-r1 installed size:
+libssl3-3.1.1-r3 installed size:
 552 KiB
 
-libssl3-3.1.1-r1 license:
+libssl3-3.1.1-r3 license:
 Apache-2.0
 
 ```
@@ -837,16 +837,16 @@ BSD
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.1.1-r1 description:
+openssl-3.1.1-r3 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.1.1-r1 webpage:
+openssl-3.1.1-r3 webpage:
 https://www.openssl.org/
 
-openssl-3.1.1-r1 installed size:
+openssl-3.1.1-r3 installed size:
 748 KiB
 
-openssl-3.1.1-r1 license:
+openssl-3.1.1-r3 license:
 Apache-2.0
 
 ```
