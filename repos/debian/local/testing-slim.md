@@ -53,19 +53,13 @@ Licenses: (parsed from: `/usr/share/doc/adduser/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris adduser=3.134
-'http://deb.debian.org/debian/pool/main/a/adduser/adduser_3.134.dsc' adduser_3.134.dsc 1671 SHA256:608ed02073381a8af28f29c3a2e390ddff7caee6b013a533fffc16b660fa80a4
-'http://deb.debian.org/debian/pool/main/a/adduser/adduser_3.134.tar.xz' adduser_3.134.tar.xz 272044 SHA256:ddfc63b55664381d326d98e7afcf5859a8f60d6d78d5d6941e491479a008b172
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/adduser/3.134/
 
-- https://sources.debian.net/src/adduser/3.134/ (for browsing the source)
-- https://sources.debian.net/src/adduser/3.134/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/adduser/3.134/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apt=2.6.1`
 
@@ -1146,21 +1140,13 @@ Licenses: (parsed from: `/usr/share/doc/libsemanage-common/copyright`, `/usr/sha
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libsemanage=3.4-1
-'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_3.4-1.dsc' libsemanage_3.4-1.dsc 2570 SHA256:be300e01bbd08706fb6f0ecd349b3585a535d9ff0957265a7c634545ac3515c8
-'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_3.4.orig.tar.gz' libsemanage_3.4.orig.tar.gz 185177 SHA256:93b423a21600b8e3fb59bb925d4583d1258f45bebf63c29bde304dfd3d52efd6
-'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_3.4.orig.tar.gz.asc' libsemanage_3.4.orig.tar.gz.asc 833 SHA256:58da87dd662c135b70c065a0b1ca800cd4b075b365f3d71e0ff02d71c7457883
-'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_3.4-1.debian.tar.xz' libsemanage_3.4-1.debian.tar.xz 23248 SHA256:531c5294d5ec881ef4bc4396a9e1f38895558cd88c4fd6d3f6a673a4b2297a5c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libsemanage/3.4-1/
 
-- https://sources.debian.net/src/libsemanage/3.4-1/ (for browsing the source)
-- https://sources.debian.net/src/libsemanage/3.4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libsemanage/3.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libsepol=3.4-2.1`
 
@@ -1176,21 +1162,13 @@ Licenses: (parsed from: `/usr/share/doc/libsepol2/copyright`)
 - `LGPL-2.1+`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libsepol=3.4-2.1
-'http://deb.debian.org/debian/pool/main/libs/libsepol/libsepol_3.4-2.1.dsc' libsepol_3.4-2.1.dsc 2334 SHA256:465877b26b9f0a3d71999691686a08bdd656ce354889e2cde9eba463306ce4ed
-'http://deb.debian.org/debian/pool/main/libs/libsepol/libsepol_3.4.orig.tar.gz' libsepol_3.4.orig.tar.gz 490628 SHA256:fc277ac5b52d59d2cd81eec8b1cccd450301d8b54d9dd48a993aea0577cf0336
-'http://deb.debian.org/debian/pool/main/libs/libsepol/libsepol_3.4.orig.tar.gz.asc' libsepol_3.4.orig.tar.gz.asc 833 SHA256:ed127c08353dbc2c442d47d77e323e79e5bd47791a0a5bd4dfd077868f4346bc
-'http://deb.debian.org/debian/pool/main/libs/libsepol/libsepol_3.4-2.1.debian.tar.xz' libsepol_3.4-2.1.debian.tar.xz 22040 SHA256:98829ceaf6d497a7e9ff7750c261fdc48cdb41ee5258c437eb3b6a271bc3aeba
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libsepol/3.4-2.1/
 
-- https://sources.debian.net/src/libsepol/3.4-2.1/ (for browsing the source)
-- https://sources.debian.net/src/libsepol/3.4-2.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libsepol/3.4-2.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libtasn1-6=4.19.0-2`
 
@@ -1442,21 +1420,13 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 - `permissive-like-automake-output`
 - `same-as-rest-of-p11kit`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris p11-kit=0.24.1-2
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.24.1-2.dsc' p11-kit_0.24.1-2.dsc 2501 SHA256:b88a483cb9afd5556ea4ac64d5df4543123a53bf0e50d1c01454887220259a89
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.24.1.orig.tar.xz' p11-kit_0.24.1.orig.tar.xz 838304 SHA256:d8be783efd5cd4ae534cee4132338e3f40f182c3205d23b200094ec85faaaef8
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.24.1.orig.tar.xz.asc' p11-kit_0.24.1.orig.tar.xz.asc 833 SHA256:48041a234bac05f70519b0d4727e78a129ea80a51baf92c7d419f80b7cbdf0ab
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.24.1-2.debian.tar.xz' p11-kit_0.24.1-2.debian.tar.xz 23332 SHA256:9a14085b12cfd90e76008c2809e6557224243e1daeae4fbd7fad97e4396f730f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/p11-kit/0.24.1-2/
 
-- https://sources.debian.net/src/p11-kit/0.24.1-2/ (for browsing the source)
-- https://sources.debian.net/src/p11-kit/0.24.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/p11-kit/0.24.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pam=1.5.2-6`
 
