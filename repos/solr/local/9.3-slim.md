@@ -1,10 +1,10 @@
-# `solr:9.3.0`
+# `solr:9.3.0-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a9aa493385ba1f7ce5d3d50d989c10c53e45ff3f74a991de3ac8dec5d3003a35`
-- Created: `2023-07-22T01:23:00.9834249Z`
-- Virtual Size: ~ 588.54 Mb  
+- Image ID: `sha256:e0773239a5c402b9329d3333eb86d4dd49ad1c6cf4206178762df7230f671deb`
+- Created: `2023-07-22T01:23:25.983129751Z`
+- Virtual Size: ~ 352.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
