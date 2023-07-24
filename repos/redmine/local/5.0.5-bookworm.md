@@ -286,19 +286,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=12.4
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_12.4.dsc' base-files_12.4.dsc 1101 SHA256:7aa2991f4996279d574cbfc001caf6693cab13ed5c94786fd85e9eff8bc65ff4
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_12.4.tar.xz' base-files_12.4.tar.xz 66024 SHA256:01d677e63939218e4115a1407b8807f1f6975757b19454b593b5857afc941104
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/12.4/
 
-- https://sources.debian.net/src/base-files/12.4/ (for browsing the source)
-- https://sources.debian.net/src/base-files/12.4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/12.4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.6.1`
 
@@ -593,9 +587,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris cups=2.4.2-3
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.4.2-3.dsc' cups_2.4.2-3.dsc 3122 SHA256:68691e76033d5673c50a5804df031281dba8349cc2e97dc8de77bf5493f206ec
+'http://deb.debian.org/debian/pool/main/c/cups/cups_2.4.2-3%2bdeb12u1.dsc' cups_2.4.2-3+deb12u1.dsc 3154 SHA256:ab51565316df30eac4c8da08b4878bc3c176f31e26fba1c8649e984ec0211348
 'http://deb.debian.org/debian/pool/main/c/cups/cups_2.4.2.orig.tar.gz' cups_2.4.2.orig.tar.gz 8128785 SHA256:f03ccb40b087d1e30940a40e0141dcbba263f39974c20eb9f2521066c9c6c908
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.4.2-3.debian.tar.xz' cups_2.4.2-3.debian.tar.xz 381988 SHA256:185686f5413c6951f7f0064cf548cff85385c1b037cca8127df1a0dc3ecf431f
+'http://deb.debian.org/debian/pool/main/c/cups/cups_2.4.2-3%2bdeb12u1.debian.tar.xz' cups_2.4.2-3+deb12u1.debian.tar.xz 382676 SHA256:a01103a924b52ffb96693cc6417bca6c1193d2cc035647bf1f2c2b8703333c51
 ```
 
 Other potentially useful URLs:
@@ -801,21 +795,13 @@ Licenses: (parsed from: `/usr/share/doc/libdbus-1-3/copyright`)
 - `autoconf-archive-permissive`
 - `g10-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dbus=1.14.6-1
-'http://deb.debian.org/debian/pool/main/d/dbus/dbus_1.14.6-1.dsc' dbus_1.14.6-1.dsc 3744 SHA256:370ec282133f75f056feeeb678737e8c5795b290a452b249bbe38e824fa92719
-'http://deb.debian.org/debian/pool/main/d/dbus/dbus_1.14.6.orig.tar.xz' dbus_1.14.6.orig.tar.xz 1370540 SHA256:fd2bdf1bb89dc365a46531bff631536f22b0d1c6d5ce2c5c5e59b55265b3d66b
-'http://deb.debian.org/debian/pool/main/d/dbus/dbus_1.14.6.orig.tar.xz.asc' dbus_1.14.6.orig.tar.xz.asc 833 SHA256:965f5c4f59eeb8a0ea2074271ad17a91ab445a6a652f1adab6dbf2f01f39599e
-'http://deb.debian.org/debian/pool/main/d/dbus/dbus_1.14.6-1.debian.tar.xz' dbus_1.14.6-1.debian.tar.xz 62496 SHA256:067ce0c44a366a8be3eb60e8cc2a2871c4e773692b82d05d01555f89b2969e04
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dbus/1.14.6-1/
 
-- https://sources.debian.net/src/dbus/1.14.6-1/ (for browsing the source)
-- https://sources.debian.net/src/dbus/1.14.6-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dbus/1.14.6-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debconf=1.5.82`
 
@@ -1371,9 +1357,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris ghostscript=10.0.0~dfsg-11+deb12u1
-'http://deb.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_10.0.0%7edfsg-11%2bdeb12u1.dsc' ghostscript_10.0.0~dfsg-11+deb12u1.dsc 3019 SHA256:fb2553f22cb746028b7b695fca5fd165df945cbc71fccbd9550975fbf83b9d5f
-'http://deb.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_10.0.0%7edfsg.orig.tar.xz' ghostscript_10.0.0~dfsg.orig.tar.xz 26688456 SHA256:67a288151fd88f0d44e165429c48cc85d69b3e4d3765c95e60839a094bfb8df3
-'http://deb.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_10.0.0%7edfsg-11%2bdeb12u1.debian.tar.xz' ghostscript_10.0.0~dfsg-11+deb12u1.debian.tar.xz 86840 SHA256:250b67a674434027fe32c08895e24b6fe0a281d3794e579a862efb6645b3824a
+'http://deb.debian.org/debian/pool/main/g/ghostscript/ghostscript_10.0.0%7edfsg-11%2bdeb12u1.dsc' ghostscript_10.0.0~dfsg-11+deb12u1.dsc 3019 SHA256:fb2553f22cb746028b7b695fca5fd165df945cbc71fccbd9550975fbf83b9d5f
+'http://deb.debian.org/debian/pool/main/g/ghostscript/ghostscript_10.0.0%7edfsg.orig.tar.xz' ghostscript_10.0.0~dfsg.orig.tar.xz 26688456 SHA256:67a288151fd88f0d44e165429c48cc85d69b3e4d3765c95e60839a094bfb8df3
+'http://deb.debian.org/debian/pool/main/g/ghostscript/ghostscript_10.0.0%7edfsg-11%2bdeb12u1.debian.tar.xz' ghostscript_10.0.0~dfsg-11+deb12u1.debian.tar.xz 86840 SHA256:250b67a674434027fe32c08895e24b6fe0a281d3794e579a862efb6645b3824a
 ```
 
 Other potentially useful URLs:
@@ -3100,10 +3086,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libx11=2:1.8.4-2+deb12u1
-'http://deb.debian.org/debian-security/pool/updates/main/libx/libx11/libx11_1.8.4-2%2bdeb12u1.dsc' libx11_1.8.4-2+deb12u1.dsc 2670 SHA256:52f4dbdadc4426c49052758b8019dda5ce2f8d90ef14ab63c7541009c4d21e45
-'http://deb.debian.org/debian-security/pool/updates/main/libx/libx11/libx11_1.8.4.orig.tar.gz' libx11_1.8.4.orig.tar.gz 3168573 SHA256:efd3a3a43c1f177edc2c205bedb0719b6648203595e54c0b83a32576aeaca7cd
-'http://deb.debian.org/debian-security/pool/updates/main/libx/libx11/libx11_1.8.4.orig.tar.gz.asc' libx11_1.8.4.orig.tar.gz.asc 801 SHA256:9d9a6bcdd81a40ed377b2981a4d40a0db1315d095e9ccc35a0ba78e692df8591
-'http://deb.debian.org/debian-security/pool/updates/main/libx/libx11/libx11_1.8.4-2%2bdeb12u1.diff.gz' libx11_1.8.4-2+deb12u1.diff.gz 112336 SHA256:a76755e21b268222e8e5f02cc6032655c83d180c8df6a201b08e3ea71cc6a4c4
+'http://deb.debian.org/debian/pool/main/libx/libx11/libx11_1.8.4-2%2bdeb12u1.dsc' libx11_1.8.4-2+deb12u1.dsc 2670 SHA256:52f4dbdadc4426c49052758b8019dda5ce2f8d90ef14ab63c7541009c4d21e45
+'http://deb.debian.org/debian/pool/main/libx/libx11/libx11_1.8.4.orig.tar.gz' libx11_1.8.4.orig.tar.gz 3168573 SHA256:efd3a3a43c1f177edc2c205bedb0719b6648203595e54c0b83a32576aeaca7cd
+'http://deb.debian.org/debian/pool/main/libx/libx11/libx11_1.8.4.orig.tar.gz.asc' libx11_1.8.4.orig.tar.gz.asc 801 SHA256:9d9a6bcdd81a40ed377b2981a4d40a0db1315d095e9ccc35a0ba78e692df8591
+'http://deb.debian.org/debian/pool/main/libx/libx11/libx11_1.8.4-2%2bdeb12u1.diff.gz' libx11_1.8.4-2+deb12u1.diff.gz 112336 SHA256:a76755e21b268222e8e5f02cc6032655c83d180c8df6a201b08e3ea71cc6a4c4
 ```
 
 Other potentially useful URLs:
@@ -3250,20 +3236,13 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.14+dfsg-1.2
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.2.dsc' libxml2_2.9.14+dfsg-1.2.dsc 3078 SHA256:16b9eb6eaa09a0499340847490ee29bbea2ffdc182107d9d1ee7b7714a6b1750
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg.orig.tar.xz' libxml2_2.9.14+dfsg.orig.tar.xz 2351200 SHA256:4fe913dec8b1ab89d13b489b419a8203176ea39e931eaa0d25b17eafb9c279e9
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.2.debian.tar.xz' libxml2_2.9.14+dfsg-1.2.debian.tar.xz 34708 SHA256:9e40f185aa28abe94d16a8c10b9b934b063c5b2a13ac77eb10518ac26c6c594d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libxml2/2.9.14+dfsg-1.2/
 
-- https://sources.debian.net/src/libxml2/2.9.14+dfsg-1.2/ (for browsing the source)
-- https://sources.debian.net/src/libxml2/2.9.14+dfsg-1.2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxml2/2.9.14+dfsg-1.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxt=1:1.2.1-1.1`
 
@@ -4590,20 +4569,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=252.6-1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_252.6-1.dsc' systemd_252.6-1.dsc 6571 SHA256:16872c4ce37094d38eea11322084d4e852261879d6d605fe6b69bbc219d25b5a
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_252.6.orig.tar.gz' systemd_252.6.orig.tar.gz 11823064 SHA256:5f0b391f7e481f9ce0798515f34e85963990d42a27f9f80fc9e7321610b69784
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_252.6-1.debian.tar.xz' systemd_252.6-1.debian.tar.xz 170404 SHA256:c5bb237f47188e433e6f7e157a2365f2be539e695619a668172e26bf108090c3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/252.6-1/
 
-- https://sources.debian.net/src/systemd/252.6-1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/252.6-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/252.6-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.06-4`
 
