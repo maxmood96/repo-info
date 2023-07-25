@@ -372,14 +372,9 @@ Licenses: (parsed from: `/usr/share/doc/dash/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dash=0.5.12-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dash/dash_0.5.12-2ubuntu1.dsc' dash_0.5.12-2ubuntu1.dsc 2116 SHA512:dc5d7fcb5214df2cde5a0decc4f4ca69c688aefc4873a5b61e1943dcdd5527dda09376a118cd52ec21a4250a3e53bf067bbb3b51099d685b3f0663df07729a1e
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dash/dash_0.5.12.orig.tar.gz' dash_0.5.12.orig.tar.gz 246054 SHA512:13bd262be0089260cbd13530a9cf34690c0abeb2f1920eb5e61be7951b716f9f335b86279d425dbfae56cbd49231a8fdffdff70601a5177da3d543be6fc5eb17
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dash/dash_0.5.12-2ubuntu1.debian.tar.xz' dash_0.5.12-2ubuntu1.debian.tar.xz 38724 SHA512:14f001c8b0d2f9018551fc1899c7f0602ae2e2bfa52d1bb276e09ecb70450c917e550db27fe80cf0041976c96a24c368e6c5711ceae245486346442def3e6bed
-```
 
 ### `dpkg` source package: `db5.3=5.3.28+dfsg2-1`
 
@@ -1403,14 +1398,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `MIT`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.54.0-1
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.54.0-1.dsc' nghttp2_1.54.0-1.dsc 2534 SHA512:376a1cc0eb61c2a3d2ce773fbb95da6a15125d0fd2f573c96de7a1173ad9832c3f274f39c26a30692acbe993d86020a3177e28d79dcff9afd97a0ac5a2553693
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.54.0.orig.tar.gz' nghttp2_1.54.0.orig.tar.gz 1069605 SHA512:0ec50178068276cde624c47a634beda0b96ef1529970fddb20cf7a9b4b30d792827ffe16f16f5b7e210d0b7913be5d25e6c6704f6f7fb9a1b5a85f63aeaba6bc
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.54.0-1.debian.tar.xz' nghttp2_1.54.0-1.debian.tar.xz 11684 SHA512:b857d34974b1887fc470754afb166d977e7cbaf2e6bbddd6379738a13cb9958f113917ee7011f6a346ff2871acf2e395f6f32e59bcf656e72d6eb0393c87e878
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/nghttp2/1.54.0-1/
+
 
 ### `dpkg` source package: `npth=1.6-3build2`
 
@@ -1855,14 +1849,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=252.5-2ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_252.5-2ubuntu3.dsc' systemd_252.5-2ubuntu3.dsc 6750 SHA512:8b95149167ae826674dc151231fe4e2a06374552e96778f5629e2888378c29fb9e973e6ca88988b7ea19001a0ee5ae6f248967dd2741db860e2aa4cd79d73db7
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_252.5.orig.tar.gz' systemd_252.5.orig.tar.gz 11762414 SHA512:f3359e0496b673033d6c8da5c117890e0dc26c9db51003b28f629ac751d9bae117be32d9f54c377eb2d5a7c2d36ac0dbdc2116498698e993550fbdd9aae535b9
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_252.5-2ubuntu3.debian.tar.xz' systemd_252.5-2ubuntu3.debian.tar.xz 230516 SHA512:0e2e33dc91f091ad9881c51585bfb49980580160d892a89162f58b5bf0aa52390cb6f2c04805be8075a99a5cc876c477d4a081c931a4ad6aaff508a41c945602
-```
 
 ### `dpkg` source package: `sysvinit=3.06-4ubuntu1`
 

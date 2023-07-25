@@ -3404,9 +3404,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris mysql-8.0=8.0.33-0ubuntu0.23.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.33-0ubuntu0.23.04.2.dsc' mysql-8.0_8.0.33-0ubuntu0.23.04.2.dsc 3568 SHA512:62f327dc3b9670e33b78f4d252702a1eb1f40b53fec7d8a8f90073dc7a5edf7ed0b3cd2fbef028610a47177e92e06b6b0398673bf7f9bf8f4fb50d3be6c57a39
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.33.orig.tar.gz' mysql-8.0_8.0.33.orig.tar.gz 438065679 SHA512:47f76819004c7c545d1b0b6b6646d8816899976f92d35c5564b1255b144b597ff7d3e674c721a45bcbb13cc0da3f4474fb29221c0e21d2ff91a1892cd42c636c
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.33-0ubuntu0.23.04.2.debian.tar.xz' mysql-8.0_8.0.33-0ubuntu0.23.04.2.debian.tar.xz 164984 SHA512:c0172990be58a7a086bfc37452d5014001108c18e08fd03dccb9b64e7670000d2d33e37532b1ef760127a49c9a1f86de260bc786f0e0b0379c5bf0f0c12da0ec
+'http://security.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.33-0ubuntu0.23.04.2.dsc' mysql-8.0_8.0.33-0ubuntu0.23.04.2.dsc 3568 SHA512:62f327dc3b9670e33b78f4d252702a1eb1f40b53fec7d8a8f90073dc7a5edf7ed0b3cd2fbef028610a47177e92e06b6b0398673bf7f9bf8f4fb50d3be6c57a39
+'http://security.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.33.orig.tar.gz' mysql-8.0_8.0.33.orig.tar.gz 438065679 SHA512:47f76819004c7c545d1b0b6b6646d8816899976f92d35c5564b1255b144b597ff7d3e674c721a45bcbb13cc0da3f4474fb29221c0e21d2ff91a1892cd42c636c
+'http://security.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-8.0_8.0.33-0ubuntu0.23.04.2.debian.tar.xz' mysql-8.0_8.0.33-0ubuntu0.23.04.2.debian.tar.xz 164984 SHA512:c0172990be58a7a086bfc37452d5014001108c18e08fd03dccb9b64e7670000d2d33e37532b1ef760127a49c9a1f86de260bc786f0e0b0379c5bf0f0c12da0ec
 ```
 
 ### `dpkg` source package: `mysql-defaults=1.1.0`
@@ -3680,15 +3680,9 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:9.0p1-1ubuntu8.2
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.0p1-1ubuntu8.2.dsc' openssh_9.0p1-1ubuntu8.2.dsc 3381 SHA512:588876b46853c3292212977da6b76d5b989d3ae30c133cc7a8455d046c3044434ee8a3291ba2d541c412d32e55f645d61ad5ff6f1ecc99456dc9d21481af4cbb
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.0p1.orig.tar.gz' openssh_9.0p1.orig.tar.gz 1822183 SHA512:613ae95317e734868c6a60d9cc5af47a889baa3124bbdd2b31bb51dd6b57b136f4cfcb5604cca78a03bd500baab9b9b45eaf77e038b1ed776c86dce0437449a9
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.0p1.orig.tar.gz.asc' openssh_9.0p1.orig.tar.gz.asc 833 SHA512:7b1445764058435d2fa8a9c7553643983650d4232036c088e46e44beeb538d32cba88f775b1be9da5f21a01d6caea59b3dc4714507781e9cb946546fa54f169f
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.0p1-1ubuntu8.2.debian.tar.xz' openssh_9.0p1-1ubuntu8.2.debian.tar.xz 181092 SHA512:e737802524240cf654280eb89315083b0fd045acee20ab0b9ebefc573197925ce87d3dd505cc69cc4d044cece06b5f7d7138bc45bee80b067725f6ab5be142fb
-```
 
 ### `dpkg` source package: `openssl=3.0.8-1ubuntu1.2`
 

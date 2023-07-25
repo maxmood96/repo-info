@@ -546,14 +546,9 @@ Licenses: (parsed from: `/usr/share/doc/dash/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dash=0.5.12-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dash/dash_0.5.12-2ubuntu1.dsc' dash_0.5.12-2ubuntu1.dsc 2116 SHA512:dc5d7fcb5214df2cde5a0decc4f4ca69c688aefc4873a5b61e1943dcdd5527dda09376a118cd52ec21a4250a3e53bf067bbb3b51099d685b3f0663df07729a1e
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dash/dash_0.5.12.orig.tar.gz' dash_0.5.12.orig.tar.gz 246054 SHA512:13bd262be0089260cbd13530a9cf34690c0abeb2f1920eb5e61be7951b716f9f335b86279d425dbfae56cbd49231a8fdffdff70601a5177da3d543be6fc5eb17
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dash/dash_0.5.12-2ubuntu1.debian.tar.xz' dash_0.5.12-2ubuntu1.debian.tar.xz 38724 SHA512:14f001c8b0d2f9018551fc1899c7f0602ae2e2bfa52d1bb276e09ecb70450c917e550db27fe80cf0041976c96a24c368e6c5711ceae245486346442def3e6bed
-```
 
 ### `dpkg` source package: `db-defaults=1:5.3.21~exp1ubuntu4`
 
@@ -964,18 +959,13 @@ Licenses: (parsed from: `/usr/share/doc/libfreetype-dev/copyright`, `/usr/share/
 - `Public-Domain`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris freetype=2.12.1+dfsg-5
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.12.1%2bdfsg-5.dsc' freetype_2.12.1+dfsg-5.dsc 3767 SHA512:1e0619d58ec53879be5d59b3c6ad0c5f5d4064a6c5942aedf6c904edd2a2f3b30c239e9f8d73b4b05da706e541d937bf8dc3be44ca83e3a85f0704f8d4a0b3d3
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.12.1%2bdfsg.orig-ft2demos.tar.xz' freetype_2.12.1+dfsg.orig-ft2demos.tar.xz 263656 SHA512:cd9356152a64d807c75b797d005ca1dd0bde69cc2fadedec101d125cb54b2aaff1f7afa2f20839caba7db66325df7c11ed4883b7e906110356b28d9900caaae7
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.12.1%2bdfsg.orig-ft2demos.tar.xz.asc' freetype_2.12.1+dfsg.orig-ft2demos.tar.xz.asc 833 SHA512:7e21a0136aef896f400099c80ce40ae61f226cdd1c807915bf4d856707b79ef0a1ea15a66539a4aeb55d2d1f12ba0706bd2f205d6f7545d8abb0c5c1298e9310
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.12.1%2bdfsg.orig-ft2docs.tar.xz' freetype_2.12.1+dfsg.orig-ft2docs.tar.xz 2038632 SHA512:276b91b93e375096bc0f9fa76408a6ea9fa89d4d06e9c9179f88d27d41df3f3bc0ce6939ea7a3fd7c93cb694e78fd6bfb154e969188279e2bca82dcc3afd108d
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.12.1%2bdfsg.orig-ft2docs.tar.xz.asc' freetype_2.12.1+dfsg.orig-ft2docs.tar.xz.asc 833 SHA512:39ccd90fde04074f30029a1a92b09c0d5a1bae7e2fbd965d02591e2cccda80c11588679fb0a9541a6307f120f5c8e386ba50375dc27fbd9e5c5cc3cdee5f2d82
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.12.1%2bdfsg.orig.tar.xz' freetype_2.12.1+dfsg.orig.tar.xz 2188492 SHA512:0f7e7522508c716d90e0051d255904039fc548378489bc20531268d738e2deb196b81f521e31552de42fde3c955c22745585f3c5324b6968c7de6b029ce4bc92
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.12.1%2bdfsg-5.debian.tar.xz' freetype_2.12.1+dfsg-5.debian.tar.xz 43620 SHA512:827dcb744096ec29eef9c6c1a2059df3a38a52307c2d9112af9e67d0fa4b88b629772119c4d97a9224b499f2f9c05f84cef1899fc6c608ddee41e16509b58cbd
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/freetype/2.12.1+dfsg-5/
+
 
 ### `dpkg` source package: `fribidi=1.0.13-3`
 
@@ -3218,13 +3208,13 @@ Licenses: (parsed from: `/usr/share/doc/media-types/copyright`)
 
 - `ad-hoc`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris media-types=10.0.0
-'http://archive.ubuntu.com/ubuntu/pool/main/m/media-types/media-types_10.0.0.dsc' media-types_10.0.0.dsc 1624 SHA512:c7de78d6604f2ea1cd1abeed0f7396f9972af4ea9332fb5f281c1c4b5f4af9df9f6f67a6ab36679095e7f64451e2d36fe82f45690babce13fc61066d55e541ca
-'http://archive.ubuntu.com/ubuntu/pool/main/m/media-types/media-types_10.0.0.tar.xz' media-types_10.0.0.tar.xz 57912 SHA512:c8c74ea620b71c6608d2d56f1cd9bc07baa7a2646d81ce4032572613d6e44119747adedc15243dfe2444b1b0fc0caa1b03499252a9c36c2514def4783e3de8d5
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/media-types/10.0.0/
+
 
 ### `dpkg` source package: `mercurial=6.4.4-1`
 
@@ -3430,14 +3420,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `MIT`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.54.0-1
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.54.0-1.dsc' nghttp2_1.54.0-1.dsc 2534 SHA512:376a1cc0eb61c2a3d2ce773fbb95da6a15125d0fd2f573c96de7a1173ad9832c3f274f39c26a30692acbe993d86020a3177e28d79dcff9afd97a0ac5a2553693
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.54.0.orig.tar.gz' nghttp2_1.54.0.orig.tar.gz 1069605 SHA512:0ec50178068276cde624c47a634beda0b96ef1529970fddb20cf7a9b4b30d792827ffe16f16f5b7e210d0b7913be5d25e6c6704f6f7fb9a1b5a85f63aeaba6bc
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.54.0-1.debian.tar.xz' nghttp2_1.54.0-1.debian.tar.xz 11684 SHA512:b857d34974b1887fc470754afb166d977e7cbaf2e6bbddd6379738a13cb9958f113917ee7011f6a346ff2871acf2e395f6f32e59bcf656e72d6eb0393c87e878
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/nghttp2/1.54.0-1/
+
 
 ### `dpkg` source package: `npth=1.6-3build2`
 
@@ -4280,14 +4269,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=252.5-2ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_252.5-2ubuntu3.dsc' systemd_252.5-2ubuntu3.dsc 6750 SHA512:8b95149167ae826674dc151231fe4e2a06374552e96778f5629e2888378c29fb9e973e6ca88988b7ea19001a0ee5ae6f248967dd2741db860e2aa4cd79d73db7
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_252.5.orig.tar.gz' systemd_252.5.orig.tar.gz 11762414 SHA512:f3359e0496b673033d6c8da5c117890e0dc26c9db51003b28f629ac751d9bae117be32d9f54c377eb2d5a7c2d36ac0dbdc2116498698e993550fbdd9aae535b9
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_252.5-2ubuntu3.debian.tar.xz' systemd_252.5-2ubuntu3.debian.tar.xz 230516 SHA512:0e2e33dc91f091ad9881c51585bfb49980580160d892a89162f58b5bf0aa52390cb6f2c04805be8075a99a5cc876c477d4a081c931a4ad6aaff508a41c945602
-```
 
 ### `dpkg` source package: `sysvinit=3.06-4ubuntu1`
 
