@@ -53,13 +53,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.7.1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.7.1.dsc' apt_2.7.1.dsc 2933 SHA512:6fe05c4302ee250d4fdfe30d23ac9e82537b6e219cf72383e9ea5ec3d77208e24af0b03e633e358363370b2d1e53b0376d77d5e9f6577f73fcbc05adacfd966c
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.7.1.tar.xz' apt_2.7.1.tar.xz 2334088 SHA512:d1af8afac11204e43ded2d108554ba57dc96441f908e9ad5f58d6a708acac391997ee12cd3d36bc06069578bd333aa417ee378b1e83a4dbc6383f8114dd179ad
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/apt/2.7.1/
+
 
 ### `dpkg` source package: `attr=1:2.5.1-4`
 
@@ -252,14 +252,9 @@ Licenses: (parsed from: `/usr/share/doc/dash/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dash=0.5.12-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dash/dash_0.5.12-2ubuntu1.dsc' dash_0.5.12-2ubuntu1.dsc 2116 SHA512:dc5d7fcb5214df2cde5a0decc4f4ca69c688aefc4873a5b61e1943dcdd5527dda09376a118cd52ec21a4250a3e53bf067bbb3b51099d685b3f0663df07729a1e
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dash/dash_0.5.12.orig.tar.gz' dash_0.5.12.orig.tar.gz 246054 SHA512:13bd262be0089260cbd13530a9cf34690c0abeb2f1920eb5e61be7951b716f9f335b86279d425dbfae56cbd49231a8fdffdff70601a5177da3d543be6fc5eb17
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dash/dash_0.5.12-2ubuntu1.debian.tar.xz' dash_0.5.12-2ubuntu1.debian.tar.xz 38724 SHA512:14f001c8b0d2f9018551fc1899c7f0602ae2e2bfa52d1bb276e09ecb70450c917e550db27fe80cf0041976c96a24c368e6c5711ceae245486346442def3e6bed
-```
 
 ### `dpkg` source package: `db5.3=5.3.28+dfsg2-1`
 
