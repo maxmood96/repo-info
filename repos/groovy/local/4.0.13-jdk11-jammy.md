@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c7e668d6bb8132bd50cb917019db8798af1991862bcc6248bba22abc96dcf6df`
-- Created: `2023-07-05T11:55:27.845938672Z`
-- Virtual Size: ~ 489.58 Mb  
+- Image ID: `sha256:b3a7dfdc99ec72e52adb32f016689f10608f60a377037fecdcc982ccaa5477ad`
+- Created: `2023-07-26T01:59:14.048443855Z`
+- Virtual Size: ~ 431.87 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["groovysh"]`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-11.0.19+7`
+  - `JAVA_VERSION=jdk-11.0.20+8`
   - `GROOVY_HOME=/opt/groovy`
   - `GROOVY_VERSION=4.0.13`
 - Labels:
