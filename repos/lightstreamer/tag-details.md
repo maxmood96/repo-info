@@ -1271,7 +1271,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7-jdk11`
 
 ```console
-$ docker pull lightstreamer@sha256:68ae386aec407bd12fd28012d31b0abf06e1bfe360acf5587a915ebf2c17a0af
+$ docker pull lightstreamer@sha256:9f1486e006570033357dabdde8b13f301eff651912184e96899641860a8a55dd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1282,14 +1282,14 @@ $ docker pull lightstreamer@sha256:68ae386aec407bd12fd28012d31b0abf06e1bfe360acf
 ### `lightstreamer:7-jdk11` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:9b7fdb1a98cb66f31103ff87c61c54521527562b16eba2cfc3de5de245a0d4cc
+$ docker pull lightstreamer@sha256:7d487b92b7b95e5a3209f29bb16be5a9578f484468ef6c74d26e327ac9c30f25
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **304.3 MB (304259953 bytes)**  
+-	Total Size: **250.5 MB (250543543 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a0ce30f83f570d4b3939c444f6d9afd28a8b9c971f9c64f6c2c33d46dfa2dbdd`
+-	Image ID: `sha256:174889280ba13c2fd93dc05a2f0281198443c2b6dd4d66c4820500175696f31c`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
@@ -1313,33 +1313,33 @@ ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Tue, 04 Jul 2023 20:34:07 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl wget ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 04 Jul 2023 20:35:02 GMT
-ENV JAVA_VERSION=jdk-11.0.19+7
-# Tue, 04 Jul 2023 20:35:10 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0c7763a19b4af4ef5fbae831781b5184e988d6f131d264482399eeaf51b6e254';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.19_7.tar.gz';          ;;        armhf|arm)          ESUM='be07af349f0d2e1ffb7e01e1e8bac8bffd76e22f6cc1354e5b627222e3395f41';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_arm_linux_hotspot_11.0.19_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1e3704c8e155f8f894953c2a6708a52e6f449bbf5a85450be6fbb2ec76581700';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.19_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='a21e2c30e48df0b7238691833316c008167cbedd4e2f1e677bcb81638420d273';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.19_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='5f19fb28aea3e28fcc402b73ce72f62b602992d48769502effe81c52ca39a581';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.19_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:27 GMT
+ENV JAVA_VERSION=jdk-11.0.20+8
+# Wed, 26 Jul 2023 00:53:35 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='eb821c049c2d2f7c3fbf8ddcce2d608d3aa7d488700e76bfbbebabba93021748';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.20_8.tar.gz';          ;;        armhf|arm)          ESUM='fdf98d94ac3fd49a73a534fd88cf60e757e885c04791d15f76ccfcecb43a25e0';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_arm_linux_hotspot_11.0.20_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1125931b3a38e6e305a1932fc6cfd0b023a0fbec2cab10e835a2ee2c50848b42';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.20_8.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='688c83d9edf2204220df94ce5bab4a6d19f3d91bc0e500f31dda41e16d9a383f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.20_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='7a99258af2e3ee9047e90f1c0c1775fd6285085759501295358d934d662e01f9';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_x64_linux_hotspot_11.0.20_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
+# Wed, 26 Jul 2023 00:53:38 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:38 GMT
 CMD ["jshell"]
-# Wed, 05 Jul 2023 12:05:11 GMT
+# Wed, 26 Jul 2023 02:26:44 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Wed, 05 Jul 2023 12:05:16 GMT
+# Wed, 26 Jul 2023 02:26:49 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Wed, 05 Jul 2023 12:05:17 GMT
+# Wed, 26 Jul 2023 02:26:50 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Mon, 10 Jul 2023 20:26:26 GMT
+# Wed, 26 Jul 2023 02:27:27 GMT
 ENV LIGHTSTREAMER_VERSION=7.4.0
-# Mon, 10 Jul 2023 20:26:26 GMT
+# Wed, 26 Jul 2023 02:27:27 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.4.0/Lightstreamer-7.4.0.tar.gz
-# Mon, 10 Jul 2023 20:26:29 GMT
+# Wed, 26 Jul 2023 02:27:30 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Mon, 10 Jul 2023 20:26:29 GMT
+# Wed, 26 Jul 2023 02:27:31 GMT
 USER lightstreamer
-# Mon, 10 Jul 2023 20:26:29 GMT
+# Wed, 26 Jul 2023 02:27:31 GMT
 EXPOSE 8080
-# Mon, 10 Jul 2023 20:26:30 GMT
+# Wed, 26 Jul 2023 02:27:31 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Mon, 10 Jul 2023 20:26:30 GMT
+# Wed, 26 Jul 2023 02:27:31 GMT
 CMD ["./LS.sh" "run"]
 ```
 
@@ -1352,25 +1352,25 @@ CMD ["./LS.sh" "run"]
 		Last Modified: Tue, 04 Jul 2023 20:39:05 GMT  
 		Size: 12.5 MB (12495341 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1acd9f0b851bbe1a40c9208d7652c706c94432c0ae0e38d03432f5e8dc0f6959`  
-		Last Modified: Tue, 04 Jul 2023 20:40:28 GMT  
-		Size: 198.6 MB (198553571 bytes)  
+	-	`sha256:16a4bc31f2e63b66f31fdde78e788603ef9924f136ca0084609767db86164dd6`  
+		Last Modified: Wed, 26 Jul 2023 00:58:03 GMT  
+		Size: 144.8 MB (144837137 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:715f805aa7a77fd5cc323e76c291037ce343bc2378976256f12d080d0b1ef699`  
-		Last Modified: Tue, 04 Jul 2023 20:40:14 GMT  
-		Size: 175.0 B  
+	-	`sha256:32a06e4034344f551455951aa1e409bd23c69e90744b826dd11d00ae40689395`  
+		Last Modified: Wed, 26 Jul 2023 00:57:52 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d10d2832989d948fe55ab4b5491625737580fed626a8fb65f0fb18e02153381`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 3.6 MB (3598029 bytes)  
+	-	`sha256:7e454b7dec612df961c94e2aeff6c8709da23d364a27b8c1b657f6cc428f16bb`  
+		Last Modified: Wed, 26 Jul 2023 02:28:12 GMT  
+		Size: 3.6 MB (3598087 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6bb3d53aa3f4c4914eaf132e19e11060179f17c950283450bb8307965eace22`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 2.4 KB (2394 bytes)  
+	-	`sha256:61c470fddf77d9b871d41d7a834f7b818b1f43fae0b1fa4c3c25a5fe52897965`  
+		Last Modified: Wed, 26 Jul 2023 02:28:11 GMT  
+		Size: 2.4 KB (2390 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c9aa1b4eb0a5a9f5751b29ea413bde31def5f713b8517a1d86d5bef9422afce`  
-		Last Modified: Mon, 10 Jul 2023 20:28:26 GMT  
-		Size: 59.2 MB (59179214 bytes)  
+	-	`sha256:f995c61e148752dc5ac8a1138c4333819e9288d6eb5e74002a78260a544cbe05`  
+		Last Modified: Wed, 26 Jul 2023 02:29:45 GMT  
+		Size: 59.2 MB (59179187 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7-jdk11` - linux; arm64 variant v8
@@ -1470,7 +1470,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7-jdk11-temurin`
 
 ```console
-$ docker pull lightstreamer@sha256:68ae386aec407bd12fd28012d31b0abf06e1bfe360acf5587a915ebf2c17a0af
+$ docker pull lightstreamer@sha256:9f1486e006570033357dabdde8b13f301eff651912184e96899641860a8a55dd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1481,14 +1481,14 @@ $ docker pull lightstreamer@sha256:68ae386aec407bd12fd28012d31b0abf06e1bfe360acf
 ### `lightstreamer:7-jdk11-temurin` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:9b7fdb1a98cb66f31103ff87c61c54521527562b16eba2cfc3de5de245a0d4cc
+$ docker pull lightstreamer@sha256:7d487b92b7b95e5a3209f29bb16be5a9578f484468ef6c74d26e327ac9c30f25
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **304.3 MB (304259953 bytes)**  
+-	Total Size: **250.5 MB (250543543 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a0ce30f83f570d4b3939c444f6d9afd28a8b9c971f9c64f6c2c33d46dfa2dbdd`
+-	Image ID: `sha256:174889280ba13c2fd93dc05a2f0281198443c2b6dd4d66c4820500175696f31c`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
@@ -1512,33 +1512,33 @@ ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Tue, 04 Jul 2023 20:34:07 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl wget ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 04 Jul 2023 20:35:02 GMT
-ENV JAVA_VERSION=jdk-11.0.19+7
-# Tue, 04 Jul 2023 20:35:10 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0c7763a19b4af4ef5fbae831781b5184e988d6f131d264482399eeaf51b6e254';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.19_7.tar.gz';          ;;        armhf|arm)          ESUM='be07af349f0d2e1ffb7e01e1e8bac8bffd76e22f6cc1354e5b627222e3395f41';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_arm_linux_hotspot_11.0.19_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1e3704c8e155f8f894953c2a6708a52e6f449bbf5a85450be6fbb2ec76581700';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.19_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='a21e2c30e48df0b7238691833316c008167cbedd4e2f1e677bcb81638420d273';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.19_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='5f19fb28aea3e28fcc402b73ce72f62b602992d48769502effe81c52ca39a581';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.19_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:27 GMT
+ENV JAVA_VERSION=jdk-11.0.20+8
+# Wed, 26 Jul 2023 00:53:35 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='eb821c049c2d2f7c3fbf8ddcce2d608d3aa7d488700e76bfbbebabba93021748';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.20_8.tar.gz';          ;;        armhf|arm)          ESUM='fdf98d94ac3fd49a73a534fd88cf60e757e885c04791d15f76ccfcecb43a25e0';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_arm_linux_hotspot_11.0.20_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1125931b3a38e6e305a1932fc6cfd0b023a0fbec2cab10e835a2ee2c50848b42';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.20_8.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='688c83d9edf2204220df94ce5bab4a6d19f3d91bc0e500f31dda41e16d9a383f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.20_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='7a99258af2e3ee9047e90f1c0c1775fd6285085759501295358d934d662e01f9';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_x64_linux_hotspot_11.0.20_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
+# Wed, 26 Jul 2023 00:53:38 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:38 GMT
 CMD ["jshell"]
-# Wed, 05 Jul 2023 12:05:11 GMT
+# Wed, 26 Jul 2023 02:26:44 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Wed, 05 Jul 2023 12:05:16 GMT
+# Wed, 26 Jul 2023 02:26:49 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Wed, 05 Jul 2023 12:05:17 GMT
+# Wed, 26 Jul 2023 02:26:50 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Mon, 10 Jul 2023 20:26:26 GMT
+# Wed, 26 Jul 2023 02:27:27 GMT
 ENV LIGHTSTREAMER_VERSION=7.4.0
-# Mon, 10 Jul 2023 20:26:26 GMT
+# Wed, 26 Jul 2023 02:27:27 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.4.0/Lightstreamer-7.4.0.tar.gz
-# Mon, 10 Jul 2023 20:26:29 GMT
+# Wed, 26 Jul 2023 02:27:30 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Mon, 10 Jul 2023 20:26:29 GMT
+# Wed, 26 Jul 2023 02:27:31 GMT
 USER lightstreamer
-# Mon, 10 Jul 2023 20:26:29 GMT
+# Wed, 26 Jul 2023 02:27:31 GMT
 EXPOSE 8080
-# Mon, 10 Jul 2023 20:26:30 GMT
+# Wed, 26 Jul 2023 02:27:31 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Mon, 10 Jul 2023 20:26:30 GMT
+# Wed, 26 Jul 2023 02:27:31 GMT
 CMD ["./LS.sh" "run"]
 ```
 
@@ -1551,25 +1551,25 @@ CMD ["./LS.sh" "run"]
 		Last Modified: Tue, 04 Jul 2023 20:39:05 GMT  
 		Size: 12.5 MB (12495341 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1acd9f0b851bbe1a40c9208d7652c706c94432c0ae0e38d03432f5e8dc0f6959`  
-		Last Modified: Tue, 04 Jul 2023 20:40:28 GMT  
-		Size: 198.6 MB (198553571 bytes)  
+	-	`sha256:16a4bc31f2e63b66f31fdde78e788603ef9924f136ca0084609767db86164dd6`  
+		Last Modified: Wed, 26 Jul 2023 00:58:03 GMT  
+		Size: 144.8 MB (144837137 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:715f805aa7a77fd5cc323e76c291037ce343bc2378976256f12d080d0b1ef699`  
-		Last Modified: Tue, 04 Jul 2023 20:40:14 GMT  
-		Size: 175.0 B  
+	-	`sha256:32a06e4034344f551455951aa1e409bd23c69e90744b826dd11d00ae40689395`  
+		Last Modified: Wed, 26 Jul 2023 00:57:52 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d10d2832989d948fe55ab4b5491625737580fed626a8fb65f0fb18e02153381`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 3.6 MB (3598029 bytes)  
+	-	`sha256:7e454b7dec612df961c94e2aeff6c8709da23d364a27b8c1b657f6cc428f16bb`  
+		Last Modified: Wed, 26 Jul 2023 02:28:12 GMT  
+		Size: 3.6 MB (3598087 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6bb3d53aa3f4c4914eaf132e19e11060179f17c950283450bb8307965eace22`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 2.4 KB (2394 bytes)  
+	-	`sha256:61c470fddf77d9b871d41d7a834f7b818b1f43fae0b1fa4c3c25a5fe52897965`  
+		Last Modified: Wed, 26 Jul 2023 02:28:11 GMT  
+		Size: 2.4 KB (2390 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c9aa1b4eb0a5a9f5751b29ea413bde31def5f713b8517a1d86d5bef9422afce`  
-		Last Modified: Mon, 10 Jul 2023 20:28:26 GMT  
-		Size: 59.2 MB (59179214 bytes)  
+	-	`sha256:f995c61e148752dc5ac8a1138c4333819e9288d6eb5e74002a78260a544cbe05`  
+		Last Modified: Wed, 26 Jul 2023 02:29:45 GMT  
+		Size: 59.2 MB (59179187 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7-jdk11-temurin` - linux; arm64 variant v8
@@ -2457,7 +2457,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7.0`
 
 ```console
-$ docker pull lightstreamer@sha256:152766faed8f255d4ebfee30f504ebe93a0fa9e7a82aec4b0671fee744306053
+$ docker pull lightstreamer@sha256:22036f9bdaa917592ebdf4ba18c40a5d8446923c7f266ba3d62584f6f0934a53
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2468,14 +2468,14 @@ $ docker pull lightstreamer@sha256:152766faed8f255d4ebfee30f504ebe93a0fa9e7a82ae
 ### `lightstreamer:7.0` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:2420e208d47eefecd685e0cbc27e26e0aba472fca8706a1ee47ec6344cec6fe0
+$ docker pull lightstreamer@sha256:db0fa4a157b57e0f87e877270e55e00d3b0ca31b4ed78e09352ebc830c6950e0
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **278.5 MB (278543328 bytes)**  
+-	Total Size: **224.8 MB (224826961 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4f1348c491a212a32c325409bce6d45840c30b700cd19353c6c3cf123c4854c2`
+-	Image ID: `sha256:4c7003f7f0c6285ebcb802608dc7f7e96394cdc530e77b15bf98c905ef07f199`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
@@ -2499,31 +2499,31 @@ ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Tue, 04 Jul 2023 20:34:07 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl wget ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 04 Jul 2023 20:35:02 GMT
-ENV JAVA_VERSION=jdk-11.0.19+7
-# Tue, 04 Jul 2023 20:35:10 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0c7763a19b4af4ef5fbae831781b5184e988d6f131d264482399eeaf51b6e254';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.19_7.tar.gz';          ;;        armhf|arm)          ESUM='be07af349f0d2e1ffb7e01e1e8bac8bffd76e22f6cc1354e5b627222e3395f41';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_arm_linux_hotspot_11.0.19_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1e3704c8e155f8f894953c2a6708a52e6f449bbf5a85450be6fbb2ec76581700';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.19_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='a21e2c30e48df0b7238691833316c008167cbedd4e2f1e677bcb81638420d273';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.19_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='5f19fb28aea3e28fcc402b73ce72f62b602992d48769502effe81c52ca39a581';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.19_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:27 GMT
+ENV JAVA_VERSION=jdk-11.0.20+8
+# Wed, 26 Jul 2023 00:53:35 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='eb821c049c2d2f7c3fbf8ddcce2d608d3aa7d488700e76bfbbebabba93021748';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.20_8.tar.gz';          ;;        armhf|arm)          ESUM='fdf98d94ac3fd49a73a534fd88cf60e757e885c04791d15f76ccfcecb43a25e0';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_arm_linux_hotspot_11.0.20_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1125931b3a38e6e305a1932fc6cfd0b023a0fbec2cab10e835a2ee2c50848b42';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.20_8.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='688c83d9edf2204220df94ce5bab4a6d19f3d91bc0e500f31dda41e16d9a383f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.20_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='7a99258af2e3ee9047e90f1c0c1775fd6285085759501295358d934d662e01f9';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_x64_linux_hotspot_11.0.20_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
+# Wed, 26 Jul 2023 00:53:38 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:38 GMT
 CMD ["jshell"]
-# Wed, 05 Jul 2023 12:05:11 GMT
+# Wed, 26 Jul 2023 02:26:44 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Wed, 05 Jul 2023 12:05:16 GMT
+# Wed, 26 Jul 2023 02:26:49 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Wed, 05 Jul 2023 12:05:17 GMT
+# Wed, 26 Jul 2023 02:26:50 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Wed, 05 Jul 2023 12:05:17 GMT
+# Wed, 26 Jul 2023 02:26:50 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.0.3/Lightstreamer_7_0_3_20190315.tar.gz
-# Wed, 05 Jul 2023 12:05:20 GMT
+# Wed, 26 Jul 2023 02:26:53 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -- 's/\/usr\/jdk1.8.0/$JAVA_HOME/' bin/unix-like/LS.sh         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && rm -fr /lightstreamer/DOCS-SDKs         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Wed, 05 Jul 2023 12:05:20 GMT
+# Wed, 26 Jul 2023 02:26:53 GMT
 USER lightstreamer
-# Wed, 05 Jul 2023 12:05:20 GMT
+# Wed, 26 Jul 2023 02:26:53 GMT
 EXPOSE 8080
-# Wed, 05 Jul 2023 12:05:20 GMT
+# Wed, 26 Jul 2023 02:26:53 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Wed, 05 Jul 2023 12:05:20 GMT
+# Wed, 26 Jul 2023 02:26:53 GMT
 CMD ["./LS.sh" "run"]
 ```
 
@@ -2536,25 +2536,25 @@ CMD ["./LS.sh" "run"]
 		Last Modified: Tue, 04 Jul 2023 20:39:05 GMT  
 		Size: 12.5 MB (12495341 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1acd9f0b851bbe1a40c9208d7652c706c94432c0ae0e38d03432f5e8dc0f6959`  
-		Last Modified: Tue, 04 Jul 2023 20:40:28 GMT  
-		Size: 198.6 MB (198553571 bytes)  
+	-	`sha256:16a4bc31f2e63b66f31fdde78e788603ef9924f136ca0084609767db86164dd6`  
+		Last Modified: Wed, 26 Jul 2023 00:58:03 GMT  
+		Size: 144.8 MB (144837137 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:715f805aa7a77fd5cc323e76c291037ce343bc2378976256f12d080d0b1ef699`  
-		Last Modified: Tue, 04 Jul 2023 20:40:14 GMT  
-		Size: 175.0 B  
+	-	`sha256:32a06e4034344f551455951aa1e409bd23c69e90744b826dd11d00ae40689395`  
+		Last Modified: Wed, 26 Jul 2023 00:57:52 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d10d2832989d948fe55ab4b5491625737580fed626a8fb65f0fb18e02153381`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 3.6 MB (3598029 bytes)  
+	-	`sha256:7e454b7dec612df961c94e2aeff6c8709da23d364a27b8c1b657f6cc428f16bb`  
+		Last Modified: Wed, 26 Jul 2023 02:28:12 GMT  
+		Size: 3.6 MB (3598087 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6bb3d53aa3f4c4914eaf132e19e11060179f17c950283450bb8307965eace22`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 2.4 KB (2394 bytes)  
+	-	`sha256:61c470fddf77d9b871d41d7a834f7b818b1f43fae0b1fa4c3c25a5fe52897965`  
+		Last Modified: Wed, 26 Jul 2023 02:28:11 GMT  
+		Size: 2.4 KB (2390 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:17cfa2aa9b1256199f3a04c26a9ba546e27824543102034d9b162e3aea8ee8cf`  
-		Last Modified: Wed, 05 Jul 2023 12:07:15 GMT  
-		Size: 33.5 MB (33462589 bytes)  
+	-	`sha256:ae39cf5918f0128ec683efcef4245936609fb3df8767ee5ae0e41606b608f5bc`  
+		Last Modified: Wed, 26 Jul 2023 02:28:13 GMT  
+		Size: 33.5 MB (33462605 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7.0` - linux; arm64 variant v8
@@ -2652,7 +2652,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7.0-jdk11`
 
 ```console
-$ docker pull lightstreamer@sha256:152766faed8f255d4ebfee30f504ebe93a0fa9e7a82aec4b0671fee744306053
+$ docker pull lightstreamer@sha256:22036f9bdaa917592ebdf4ba18c40a5d8446923c7f266ba3d62584f6f0934a53
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2663,14 +2663,14 @@ $ docker pull lightstreamer@sha256:152766faed8f255d4ebfee30f504ebe93a0fa9e7a82ae
 ### `lightstreamer:7.0-jdk11` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:2420e208d47eefecd685e0cbc27e26e0aba472fca8706a1ee47ec6344cec6fe0
+$ docker pull lightstreamer@sha256:db0fa4a157b57e0f87e877270e55e00d3b0ca31b4ed78e09352ebc830c6950e0
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **278.5 MB (278543328 bytes)**  
+-	Total Size: **224.8 MB (224826961 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4f1348c491a212a32c325409bce6d45840c30b700cd19353c6c3cf123c4854c2`
+-	Image ID: `sha256:4c7003f7f0c6285ebcb802608dc7f7e96394cdc530e77b15bf98c905ef07f199`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
@@ -2694,31 +2694,31 @@ ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Tue, 04 Jul 2023 20:34:07 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl wget ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 04 Jul 2023 20:35:02 GMT
-ENV JAVA_VERSION=jdk-11.0.19+7
-# Tue, 04 Jul 2023 20:35:10 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0c7763a19b4af4ef5fbae831781b5184e988d6f131d264482399eeaf51b6e254';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.19_7.tar.gz';          ;;        armhf|arm)          ESUM='be07af349f0d2e1ffb7e01e1e8bac8bffd76e22f6cc1354e5b627222e3395f41';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_arm_linux_hotspot_11.0.19_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1e3704c8e155f8f894953c2a6708a52e6f449bbf5a85450be6fbb2ec76581700';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.19_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='a21e2c30e48df0b7238691833316c008167cbedd4e2f1e677bcb81638420d273';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.19_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='5f19fb28aea3e28fcc402b73ce72f62b602992d48769502effe81c52ca39a581';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.19_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:27 GMT
+ENV JAVA_VERSION=jdk-11.0.20+8
+# Wed, 26 Jul 2023 00:53:35 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='eb821c049c2d2f7c3fbf8ddcce2d608d3aa7d488700e76bfbbebabba93021748';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.20_8.tar.gz';          ;;        armhf|arm)          ESUM='fdf98d94ac3fd49a73a534fd88cf60e757e885c04791d15f76ccfcecb43a25e0';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_arm_linux_hotspot_11.0.20_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1125931b3a38e6e305a1932fc6cfd0b023a0fbec2cab10e835a2ee2c50848b42';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.20_8.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='688c83d9edf2204220df94ce5bab4a6d19f3d91bc0e500f31dda41e16d9a383f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.20_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='7a99258af2e3ee9047e90f1c0c1775fd6285085759501295358d934d662e01f9';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_x64_linux_hotspot_11.0.20_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
+# Wed, 26 Jul 2023 00:53:38 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:38 GMT
 CMD ["jshell"]
-# Wed, 05 Jul 2023 12:05:11 GMT
+# Wed, 26 Jul 2023 02:26:44 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Wed, 05 Jul 2023 12:05:16 GMT
+# Wed, 26 Jul 2023 02:26:49 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Wed, 05 Jul 2023 12:05:17 GMT
+# Wed, 26 Jul 2023 02:26:50 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Wed, 05 Jul 2023 12:05:17 GMT
+# Wed, 26 Jul 2023 02:26:50 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.0.3/Lightstreamer_7_0_3_20190315.tar.gz
-# Wed, 05 Jul 2023 12:05:20 GMT
+# Wed, 26 Jul 2023 02:26:53 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -- 's/\/usr\/jdk1.8.0/$JAVA_HOME/' bin/unix-like/LS.sh         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && rm -fr /lightstreamer/DOCS-SDKs         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Wed, 05 Jul 2023 12:05:20 GMT
+# Wed, 26 Jul 2023 02:26:53 GMT
 USER lightstreamer
-# Wed, 05 Jul 2023 12:05:20 GMT
+# Wed, 26 Jul 2023 02:26:53 GMT
 EXPOSE 8080
-# Wed, 05 Jul 2023 12:05:20 GMT
+# Wed, 26 Jul 2023 02:26:53 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Wed, 05 Jul 2023 12:05:20 GMT
+# Wed, 26 Jul 2023 02:26:53 GMT
 CMD ["./LS.sh" "run"]
 ```
 
@@ -2731,25 +2731,25 @@ CMD ["./LS.sh" "run"]
 		Last Modified: Tue, 04 Jul 2023 20:39:05 GMT  
 		Size: 12.5 MB (12495341 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1acd9f0b851bbe1a40c9208d7652c706c94432c0ae0e38d03432f5e8dc0f6959`  
-		Last Modified: Tue, 04 Jul 2023 20:40:28 GMT  
-		Size: 198.6 MB (198553571 bytes)  
+	-	`sha256:16a4bc31f2e63b66f31fdde78e788603ef9924f136ca0084609767db86164dd6`  
+		Last Modified: Wed, 26 Jul 2023 00:58:03 GMT  
+		Size: 144.8 MB (144837137 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:715f805aa7a77fd5cc323e76c291037ce343bc2378976256f12d080d0b1ef699`  
-		Last Modified: Tue, 04 Jul 2023 20:40:14 GMT  
-		Size: 175.0 B  
+	-	`sha256:32a06e4034344f551455951aa1e409bd23c69e90744b826dd11d00ae40689395`  
+		Last Modified: Wed, 26 Jul 2023 00:57:52 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d10d2832989d948fe55ab4b5491625737580fed626a8fb65f0fb18e02153381`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 3.6 MB (3598029 bytes)  
+	-	`sha256:7e454b7dec612df961c94e2aeff6c8709da23d364a27b8c1b657f6cc428f16bb`  
+		Last Modified: Wed, 26 Jul 2023 02:28:12 GMT  
+		Size: 3.6 MB (3598087 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6bb3d53aa3f4c4914eaf132e19e11060179f17c950283450bb8307965eace22`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 2.4 KB (2394 bytes)  
+	-	`sha256:61c470fddf77d9b871d41d7a834f7b818b1f43fae0b1fa4c3c25a5fe52897965`  
+		Last Modified: Wed, 26 Jul 2023 02:28:11 GMT  
+		Size: 2.4 KB (2390 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:17cfa2aa9b1256199f3a04c26a9ba546e27824543102034d9b162e3aea8ee8cf`  
-		Last Modified: Wed, 05 Jul 2023 12:07:15 GMT  
-		Size: 33.5 MB (33462589 bytes)  
+	-	`sha256:ae39cf5918f0128ec683efcef4245936609fb3df8767ee5ae0e41606b608f5bc`  
+		Last Modified: Wed, 26 Jul 2023 02:28:13 GMT  
+		Size: 33.5 MB (33462605 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7.0-jdk11` - linux; arm64 variant v8
@@ -2847,7 +2847,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7.0-jdk11-temurin`
 
 ```console
-$ docker pull lightstreamer@sha256:152766faed8f255d4ebfee30f504ebe93a0fa9e7a82aec4b0671fee744306053
+$ docker pull lightstreamer@sha256:22036f9bdaa917592ebdf4ba18c40a5d8446923c7f266ba3d62584f6f0934a53
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2858,14 +2858,14 @@ $ docker pull lightstreamer@sha256:152766faed8f255d4ebfee30f504ebe93a0fa9e7a82ae
 ### `lightstreamer:7.0-jdk11-temurin` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:2420e208d47eefecd685e0cbc27e26e0aba472fca8706a1ee47ec6344cec6fe0
+$ docker pull lightstreamer@sha256:db0fa4a157b57e0f87e877270e55e00d3b0ca31b4ed78e09352ebc830c6950e0
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **278.5 MB (278543328 bytes)**  
+-	Total Size: **224.8 MB (224826961 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4f1348c491a212a32c325409bce6d45840c30b700cd19353c6c3cf123c4854c2`
+-	Image ID: `sha256:4c7003f7f0c6285ebcb802608dc7f7e96394cdc530e77b15bf98c905ef07f199`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
@@ -2889,31 +2889,31 @@ ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Tue, 04 Jul 2023 20:34:07 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl wget ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 04 Jul 2023 20:35:02 GMT
-ENV JAVA_VERSION=jdk-11.0.19+7
-# Tue, 04 Jul 2023 20:35:10 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0c7763a19b4af4ef5fbae831781b5184e988d6f131d264482399eeaf51b6e254';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.19_7.tar.gz';          ;;        armhf|arm)          ESUM='be07af349f0d2e1ffb7e01e1e8bac8bffd76e22f6cc1354e5b627222e3395f41';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_arm_linux_hotspot_11.0.19_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1e3704c8e155f8f894953c2a6708a52e6f449bbf5a85450be6fbb2ec76581700';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.19_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='a21e2c30e48df0b7238691833316c008167cbedd4e2f1e677bcb81638420d273';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.19_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='5f19fb28aea3e28fcc402b73ce72f62b602992d48769502effe81c52ca39a581';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.19_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:27 GMT
+ENV JAVA_VERSION=jdk-11.0.20+8
+# Wed, 26 Jul 2023 00:53:35 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='eb821c049c2d2f7c3fbf8ddcce2d608d3aa7d488700e76bfbbebabba93021748';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.20_8.tar.gz';          ;;        armhf|arm)          ESUM='fdf98d94ac3fd49a73a534fd88cf60e757e885c04791d15f76ccfcecb43a25e0';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_arm_linux_hotspot_11.0.20_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1125931b3a38e6e305a1932fc6cfd0b023a0fbec2cab10e835a2ee2c50848b42';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.20_8.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='688c83d9edf2204220df94ce5bab4a6d19f3d91bc0e500f31dda41e16d9a383f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.20_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='7a99258af2e3ee9047e90f1c0c1775fd6285085759501295358d934d662e01f9';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_x64_linux_hotspot_11.0.20_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
+# Wed, 26 Jul 2023 00:53:38 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:38 GMT
 CMD ["jshell"]
-# Wed, 05 Jul 2023 12:05:11 GMT
+# Wed, 26 Jul 2023 02:26:44 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Wed, 05 Jul 2023 12:05:16 GMT
+# Wed, 26 Jul 2023 02:26:49 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Wed, 05 Jul 2023 12:05:17 GMT
+# Wed, 26 Jul 2023 02:26:50 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Wed, 05 Jul 2023 12:05:17 GMT
+# Wed, 26 Jul 2023 02:26:50 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.0.3/Lightstreamer_7_0_3_20190315.tar.gz
-# Wed, 05 Jul 2023 12:05:20 GMT
+# Wed, 26 Jul 2023 02:26:53 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -- 's/\/usr\/jdk1.8.0/$JAVA_HOME/' bin/unix-like/LS.sh         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && rm -fr /lightstreamer/DOCS-SDKs         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Wed, 05 Jul 2023 12:05:20 GMT
+# Wed, 26 Jul 2023 02:26:53 GMT
 USER lightstreamer
-# Wed, 05 Jul 2023 12:05:20 GMT
+# Wed, 26 Jul 2023 02:26:53 GMT
 EXPOSE 8080
-# Wed, 05 Jul 2023 12:05:20 GMT
+# Wed, 26 Jul 2023 02:26:53 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Wed, 05 Jul 2023 12:05:20 GMT
+# Wed, 26 Jul 2023 02:26:53 GMT
 CMD ["./LS.sh" "run"]
 ```
 
@@ -2926,25 +2926,25 @@ CMD ["./LS.sh" "run"]
 		Last Modified: Tue, 04 Jul 2023 20:39:05 GMT  
 		Size: 12.5 MB (12495341 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1acd9f0b851bbe1a40c9208d7652c706c94432c0ae0e38d03432f5e8dc0f6959`  
-		Last Modified: Tue, 04 Jul 2023 20:40:28 GMT  
-		Size: 198.6 MB (198553571 bytes)  
+	-	`sha256:16a4bc31f2e63b66f31fdde78e788603ef9924f136ca0084609767db86164dd6`  
+		Last Modified: Wed, 26 Jul 2023 00:58:03 GMT  
+		Size: 144.8 MB (144837137 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:715f805aa7a77fd5cc323e76c291037ce343bc2378976256f12d080d0b1ef699`  
-		Last Modified: Tue, 04 Jul 2023 20:40:14 GMT  
-		Size: 175.0 B  
+	-	`sha256:32a06e4034344f551455951aa1e409bd23c69e90744b826dd11d00ae40689395`  
+		Last Modified: Wed, 26 Jul 2023 00:57:52 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d10d2832989d948fe55ab4b5491625737580fed626a8fb65f0fb18e02153381`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 3.6 MB (3598029 bytes)  
+	-	`sha256:7e454b7dec612df961c94e2aeff6c8709da23d364a27b8c1b657f6cc428f16bb`  
+		Last Modified: Wed, 26 Jul 2023 02:28:12 GMT  
+		Size: 3.6 MB (3598087 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6bb3d53aa3f4c4914eaf132e19e11060179f17c950283450bb8307965eace22`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 2.4 KB (2394 bytes)  
+	-	`sha256:61c470fddf77d9b871d41d7a834f7b818b1f43fae0b1fa4c3c25a5fe52897965`  
+		Last Modified: Wed, 26 Jul 2023 02:28:11 GMT  
+		Size: 2.4 KB (2390 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:17cfa2aa9b1256199f3a04c26a9ba546e27824543102034d9b162e3aea8ee8cf`  
-		Last Modified: Wed, 05 Jul 2023 12:07:15 GMT  
-		Size: 33.5 MB (33462589 bytes)  
+	-	`sha256:ae39cf5918f0128ec683efcef4245936609fb3df8767ee5ae0e41606b608f5bc`  
+		Last Modified: Wed, 26 Jul 2023 02:28:13 GMT  
+		Size: 33.5 MB (33462605 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7.0-jdk11-temurin` - linux; arm64 variant v8
@@ -3424,7 +3424,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7.0.3`
 
 ```console
-$ docker pull lightstreamer@sha256:152766faed8f255d4ebfee30f504ebe93a0fa9e7a82aec4b0671fee744306053
+$ docker pull lightstreamer@sha256:22036f9bdaa917592ebdf4ba18c40a5d8446923c7f266ba3d62584f6f0934a53
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3435,14 +3435,14 @@ $ docker pull lightstreamer@sha256:152766faed8f255d4ebfee30f504ebe93a0fa9e7a82ae
 ### `lightstreamer:7.0.3` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:2420e208d47eefecd685e0cbc27e26e0aba472fca8706a1ee47ec6344cec6fe0
+$ docker pull lightstreamer@sha256:db0fa4a157b57e0f87e877270e55e00d3b0ca31b4ed78e09352ebc830c6950e0
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **278.5 MB (278543328 bytes)**  
+-	Total Size: **224.8 MB (224826961 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4f1348c491a212a32c325409bce6d45840c30b700cd19353c6c3cf123c4854c2`
+-	Image ID: `sha256:4c7003f7f0c6285ebcb802608dc7f7e96394cdc530e77b15bf98c905ef07f199`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
@@ -3466,31 +3466,31 @@ ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Tue, 04 Jul 2023 20:34:07 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl wget ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 04 Jul 2023 20:35:02 GMT
-ENV JAVA_VERSION=jdk-11.0.19+7
-# Tue, 04 Jul 2023 20:35:10 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0c7763a19b4af4ef5fbae831781b5184e988d6f131d264482399eeaf51b6e254';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.19_7.tar.gz';          ;;        armhf|arm)          ESUM='be07af349f0d2e1ffb7e01e1e8bac8bffd76e22f6cc1354e5b627222e3395f41';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_arm_linux_hotspot_11.0.19_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1e3704c8e155f8f894953c2a6708a52e6f449bbf5a85450be6fbb2ec76581700';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.19_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='a21e2c30e48df0b7238691833316c008167cbedd4e2f1e677bcb81638420d273';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.19_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='5f19fb28aea3e28fcc402b73ce72f62b602992d48769502effe81c52ca39a581';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.19_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:27 GMT
+ENV JAVA_VERSION=jdk-11.0.20+8
+# Wed, 26 Jul 2023 00:53:35 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='eb821c049c2d2f7c3fbf8ddcce2d608d3aa7d488700e76bfbbebabba93021748';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.20_8.tar.gz';          ;;        armhf|arm)          ESUM='fdf98d94ac3fd49a73a534fd88cf60e757e885c04791d15f76ccfcecb43a25e0';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_arm_linux_hotspot_11.0.20_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1125931b3a38e6e305a1932fc6cfd0b023a0fbec2cab10e835a2ee2c50848b42';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.20_8.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='688c83d9edf2204220df94ce5bab4a6d19f3d91bc0e500f31dda41e16d9a383f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.20_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='7a99258af2e3ee9047e90f1c0c1775fd6285085759501295358d934d662e01f9';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_x64_linux_hotspot_11.0.20_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
+# Wed, 26 Jul 2023 00:53:38 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:38 GMT
 CMD ["jshell"]
-# Wed, 05 Jul 2023 12:05:11 GMT
+# Wed, 26 Jul 2023 02:26:44 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Wed, 05 Jul 2023 12:05:16 GMT
+# Wed, 26 Jul 2023 02:26:49 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Wed, 05 Jul 2023 12:05:17 GMT
+# Wed, 26 Jul 2023 02:26:50 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Wed, 05 Jul 2023 12:05:17 GMT
+# Wed, 26 Jul 2023 02:26:50 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.0.3/Lightstreamer_7_0_3_20190315.tar.gz
-# Wed, 05 Jul 2023 12:05:20 GMT
+# Wed, 26 Jul 2023 02:26:53 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -- 's/\/usr\/jdk1.8.0/$JAVA_HOME/' bin/unix-like/LS.sh         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && rm -fr /lightstreamer/DOCS-SDKs         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Wed, 05 Jul 2023 12:05:20 GMT
+# Wed, 26 Jul 2023 02:26:53 GMT
 USER lightstreamer
-# Wed, 05 Jul 2023 12:05:20 GMT
+# Wed, 26 Jul 2023 02:26:53 GMT
 EXPOSE 8080
-# Wed, 05 Jul 2023 12:05:20 GMT
+# Wed, 26 Jul 2023 02:26:53 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Wed, 05 Jul 2023 12:05:20 GMT
+# Wed, 26 Jul 2023 02:26:53 GMT
 CMD ["./LS.sh" "run"]
 ```
 
@@ -3503,25 +3503,25 @@ CMD ["./LS.sh" "run"]
 		Last Modified: Tue, 04 Jul 2023 20:39:05 GMT  
 		Size: 12.5 MB (12495341 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1acd9f0b851bbe1a40c9208d7652c706c94432c0ae0e38d03432f5e8dc0f6959`  
-		Last Modified: Tue, 04 Jul 2023 20:40:28 GMT  
-		Size: 198.6 MB (198553571 bytes)  
+	-	`sha256:16a4bc31f2e63b66f31fdde78e788603ef9924f136ca0084609767db86164dd6`  
+		Last Modified: Wed, 26 Jul 2023 00:58:03 GMT  
+		Size: 144.8 MB (144837137 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:715f805aa7a77fd5cc323e76c291037ce343bc2378976256f12d080d0b1ef699`  
-		Last Modified: Tue, 04 Jul 2023 20:40:14 GMT  
-		Size: 175.0 B  
+	-	`sha256:32a06e4034344f551455951aa1e409bd23c69e90744b826dd11d00ae40689395`  
+		Last Modified: Wed, 26 Jul 2023 00:57:52 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d10d2832989d948fe55ab4b5491625737580fed626a8fb65f0fb18e02153381`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 3.6 MB (3598029 bytes)  
+	-	`sha256:7e454b7dec612df961c94e2aeff6c8709da23d364a27b8c1b657f6cc428f16bb`  
+		Last Modified: Wed, 26 Jul 2023 02:28:12 GMT  
+		Size: 3.6 MB (3598087 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6bb3d53aa3f4c4914eaf132e19e11060179f17c950283450bb8307965eace22`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 2.4 KB (2394 bytes)  
+	-	`sha256:61c470fddf77d9b871d41d7a834f7b818b1f43fae0b1fa4c3c25a5fe52897965`  
+		Last Modified: Wed, 26 Jul 2023 02:28:11 GMT  
+		Size: 2.4 KB (2390 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:17cfa2aa9b1256199f3a04c26a9ba546e27824543102034d9b162e3aea8ee8cf`  
-		Last Modified: Wed, 05 Jul 2023 12:07:15 GMT  
-		Size: 33.5 MB (33462589 bytes)  
+	-	`sha256:ae39cf5918f0128ec683efcef4245936609fb3df8767ee5ae0e41606b608f5bc`  
+		Last Modified: Wed, 26 Jul 2023 02:28:13 GMT  
+		Size: 33.5 MB (33462605 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7.0.3` - linux; arm64 variant v8
@@ -3619,7 +3619,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7.0.3-jdk11`
 
 ```console
-$ docker pull lightstreamer@sha256:152766faed8f255d4ebfee30f504ebe93a0fa9e7a82aec4b0671fee744306053
+$ docker pull lightstreamer@sha256:22036f9bdaa917592ebdf4ba18c40a5d8446923c7f266ba3d62584f6f0934a53
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3630,14 +3630,14 @@ $ docker pull lightstreamer@sha256:152766faed8f255d4ebfee30f504ebe93a0fa9e7a82ae
 ### `lightstreamer:7.0.3-jdk11` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:2420e208d47eefecd685e0cbc27e26e0aba472fca8706a1ee47ec6344cec6fe0
+$ docker pull lightstreamer@sha256:db0fa4a157b57e0f87e877270e55e00d3b0ca31b4ed78e09352ebc830c6950e0
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **278.5 MB (278543328 bytes)**  
+-	Total Size: **224.8 MB (224826961 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4f1348c491a212a32c325409bce6d45840c30b700cd19353c6c3cf123c4854c2`
+-	Image ID: `sha256:4c7003f7f0c6285ebcb802608dc7f7e96394cdc530e77b15bf98c905ef07f199`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
@@ -3661,31 +3661,31 @@ ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Tue, 04 Jul 2023 20:34:07 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl wget ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 04 Jul 2023 20:35:02 GMT
-ENV JAVA_VERSION=jdk-11.0.19+7
-# Tue, 04 Jul 2023 20:35:10 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0c7763a19b4af4ef5fbae831781b5184e988d6f131d264482399eeaf51b6e254';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.19_7.tar.gz';          ;;        armhf|arm)          ESUM='be07af349f0d2e1ffb7e01e1e8bac8bffd76e22f6cc1354e5b627222e3395f41';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_arm_linux_hotspot_11.0.19_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1e3704c8e155f8f894953c2a6708a52e6f449bbf5a85450be6fbb2ec76581700';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.19_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='a21e2c30e48df0b7238691833316c008167cbedd4e2f1e677bcb81638420d273';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.19_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='5f19fb28aea3e28fcc402b73ce72f62b602992d48769502effe81c52ca39a581';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.19_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:27 GMT
+ENV JAVA_VERSION=jdk-11.0.20+8
+# Wed, 26 Jul 2023 00:53:35 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='eb821c049c2d2f7c3fbf8ddcce2d608d3aa7d488700e76bfbbebabba93021748';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.20_8.tar.gz';          ;;        armhf|arm)          ESUM='fdf98d94ac3fd49a73a534fd88cf60e757e885c04791d15f76ccfcecb43a25e0';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_arm_linux_hotspot_11.0.20_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1125931b3a38e6e305a1932fc6cfd0b023a0fbec2cab10e835a2ee2c50848b42';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.20_8.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='688c83d9edf2204220df94ce5bab4a6d19f3d91bc0e500f31dda41e16d9a383f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.20_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='7a99258af2e3ee9047e90f1c0c1775fd6285085759501295358d934d662e01f9';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_x64_linux_hotspot_11.0.20_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
+# Wed, 26 Jul 2023 00:53:38 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:38 GMT
 CMD ["jshell"]
-# Wed, 05 Jul 2023 12:05:11 GMT
+# Wed, 26 Jul 2023 02:26:44 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Wed, 05 Jul 2023 12:05:16 GMT
+# Wed, 26 Jul 2023 02:26:49 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Wed, 05 Jul 2023 12:05:17 GMT
+# Wed, 26 Jul 2023 02:26:50 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Wed, 05 Jul 2023 12:05:17 GMT
+# Wed, 26 Jul 2023 02:26:50 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.0.3/Lightstreamer_7_0_3_20190315.tar.gz
-# Wed, 05 Jul 2023 12:05:20 GMT
+# Wed, 26 Jul 2023 02:26:53 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -- 's/\/usr\/jdk1.8.0/$JAVA_HOME/' bin/unix-like/LS.sh         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && rm -fr /lightstreamer/DOCS-SDKs         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Wed, 05 Jul 2023 12:05:20 GMT
+# Wed, 26 Jul 2023 02:26:53 GMT
 USER lightstreamer
-# Wed, 05 Jul 2023 12:05:20 GMT
+# Wed, 26 Jul 2023 02:26:53 GMT
 EXPOSE 8080
-# Wed, 05 Jul 2023 12:05:20 GMT
+# Wed, 26 Jul 2023 02:26:53 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Wed, 05 Jul 2023 12:05:20 GMT
+# Wed, 26 Jul 2023 02:26:53 GMT
 CMD ["./LS.sh" "run"]
 ```
 
@@ -3698,25 +3698,25 @@ CMD ["./LS.sh" "run"]
 		Last Modified: Tue, 04 Jul 2023 20:39:05 GMT  
 		Size: 12.5 MB (12495341 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1acd9f0b851bbe1a40c9208d7652c706c94432c0ae0e38d03432f5e8dc0f6959`  
-		Last Modified: Tue, 04 Jul 2023 20:40:28 GMT  
-		Size: 198.6 MB (198553571 bytes)  
+	-	`sha256:16a4bc31f2e63b66f31fdde78e788603ef9924f136ca0084609767db86164dd6`  
+		Last Modified: Wed, 26 Jul 2023 00:58:03 GMT  
+		Size: 144.8 MB (144837137 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:715f805aa7a77fd5cc323e76c291037ce343bc2378976256f12d080d0b1ef699`  
-		Last Modified: Tue, 04 Jul 2023 20:40:14 GMT  
-		Size: 175.0 B  
+	-	`sha256:32a06e4034344f551455951aa1e409bd23c69e90744b826dd11d00ae40689395`  
+		Last Modified: Wed, 26 Jul 2023 00:57:52 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d10d2832989d948fe55ab4b5491625737580fed626a8fb65f0fb18e02153381`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 3.6 MB (3598029 bytes)  
+	-	`sha256:7e454b7dec612df961c94e2aeff6c8709da23d364a27b8c1b657f6cc428f16bb`  
+		Last Modified: Wed, 26 Jul 2023 02:28:12 GMT  
+		Size: 3.6 MB (3598087 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6bb3d53aa3f4c4914eaf132e19e11060179f17c950283450bb8307965eace22`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 2.4 KB (2394 bytes)  
+	-	`sha256:61c470fddf77d9b871d41d7a834f7b818b1f43fae0b1fa4c3c25a5fe52897965`  
+		Last Modified: Wed, 26 Jul 2023 02:28:11 GMT  
+		Size: 2.4 KB (2390 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:17cfa2aa9b1256199f3a04c26a9ba546e27824543102034d9b162e3aea8ee8cf`  
-		Last Modified: Wed, 05 Jul 2023 12:07:15 GMT  
-		Size: 33.5 MB (33462589 bytes)  
+	-	`sha256:ae39cf5918f0128ec683efcef4245936609fb3df8767ee5ae0e41606b608f5bc`  
+		Last Modified: Wed, 26 Jul 2023 02:28:13 GMT  
+		Size: 33.5 MB (33462605 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7.0.3-jdk11` - linux; arm64 variant v8
@@ -3814,7 +3814,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7.0.3-jdk11-temurin`
 
 ```console
-$ docker pull lightstreamer@sha256:152766faed8f255d4ebfee30f504ebe93a0fa9e7a82aec4b0671fee744306053
+$ docker pull lightstreamer@sha256:22036f9bdaa917592ebdf4ba18c40a5d8446923c7f266ba3d62584f6f0934a53
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -3825,14 +3825,14 @@ $ docker pull lightstreamer@sha256:152766faed8f255d4ebfee30f504ebe93a0fa9e7a82ae
 ### `lightstreamer:7.0.3-jdk11-temurin` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:2420e208d47eefecd685e0cbc27e26e0aba472fca8706a1ee47ec6344cec6fe0
+$ docker pull lightstreamer@sha256:db0fa4a157b57e0f87e877270e55e00d3b0ca31b4ed78e09352ebc830c6950e0
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **278.5 MB (278543328 bytes)**  
+-	Total Size: **224.8 MB (224826961 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4f1348c491a212a32c325409bce6d45840c30b700cd19353c6c3cf123c4854c2`
+-	Image ID: `sha256:4c7003f7f0c6285ebcb802608dc7f7e96394cdc530e77b15bf98c905ef07f199`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
@@ -3856,31 +3856,31 @@ ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Tue, 04 Jul 2023 20:34:07 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl wget ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 04 Jul 2023 20:35:02 GMT
-ENV JAVA_VERSION=jdk-11.0.19+7
-# Tue, 04 Jul 2023 20:35:10 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0c7763a19b4af4ef5fbae831781b5184e988d6f131d264482399eeaf51b6e254';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.19_7.tar.gz';          ;;        armhf|arm)          ESUM='be07af349f0d2e1ffb7e01e1e8bac8bffd76e22f6cc1354e5b627222e3395f41';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_arm_linux_hotspot_11.0.19_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1e3704c8e155f8f894953c2a6708a52e6f449bbf5a85450be6fbb2ec76581700';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.19_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='a21e2c30e48df0b7238691833316c008167cbedd4e2f1e677bcb81638420d273';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.19_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='5f19fb28aea3e28fcc402b73ce72f62b602992d48769502effe81c52ca39a581';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.19_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:27 GMT
+ENV JAVA_VERSION=jdk-11.0.20+8
+# Wed, 26 Jul 2023 00:53:35 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='eb821c049c2d2f7c3fbf8ddcce2d608d3aa7d488700e76bfbbebabba93021748';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.20_8.tar.gz';          ;;        armhf|arm)          ESUM='fdf98d94ac3fd49a73a534fd88cf60e757e885c04791d15f76ccfcecb43a25e0';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_arm_linux_hotspot_11.0.20_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1125931b3a38e6e305a1932fc6cfd0b023a0fbec2cab10e835a2ee2c50848b42';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.20_8.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='688c83d9edf2204220df94ce5bab4a6d19f3d91bc0e500f31dda41e16d9a383f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.20_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='7a99258af2e3ee9047e90f1c0c1775fd6285085759501295358d934d662e01f9';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_x64_linux_hotspot_11.0.20_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
+# Wed, 26 Jul 2023 00:53:38 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:38 GMT
 CMD ["jshell"]
-# Wed, 05 Jul 2023 12:05:11 GMT
+# Wed, 26 Jul 2023 02:26:44 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Wed, 05 Jul 2023 12:05:16 GMT
+# Wed, 26 Jul 2023 02:26:49 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Wed, 05 Jul 2023 12:05:17 GMT
+# Wed, 26 Jul 2023 02:26:50 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Wed, 05 Jul 2023 12:05:17 GMT
+# Wed, 26 Jul 2023 02:26:50 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.0.3/Lightstreamer_7_0_3_20190315.tar.gz
-# Wed, 05 Jul 2023 12:05:20 GMT
+# Wed, 26 Jul 2023 02:26:53 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -- 's/\/usr\/jdk1.8.0/$JAVA_HOME/' bin/unix-like/LS.sh         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && rm -fr /lightstreamer/DOCS-SDKs         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Wed, 05 Jul 2023 12:05:20 GMT
+# Wed, 26 Jul 2023 02:26:53 GMT
 USER lightstreamer
-# Wed, 05 Jul 2023 12:05:20 GMT
+# Wed, 26 Jul 2023 02:26:53 GMT
 EXPOSE 8080
-# Wed, 05 Jul 2023 12:05:20 GMT
+# Wed, 26 Jul 2023 02:26:53 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Wed, 05 Jul 2023 12:05:20 GMT
+# Wed, 26 Jul 2023 02:26:53 GMT
 CMD ["./LS.sh" "run"]
 ```
 
@@ -3893,25 +3893,25 @@ CMD ["./LS.sh" "run"]
 		Last Modified: Tue, 04 Jul 2023 20:39:05 GMT  
 		Size: 12.5 MB (12495341 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1acd9f0b851bbe1a40c9208d7652c706c94432c0ae0e38d03432f5e8dc0f6959`  
-		Last Modified: Tue, 04 Jul 2023 20:40:28 GMT  
-		Size: 198.6 MB (198553571 bytes)  
+	-	`sha256:16a4bc31f2e63b66f31fdde78e788603ef9924f136ca0084609767db86164dd6`  
+		Last Modified: Wed, 26 Jul 2023 00:58:03 GMT  
+		Size: 144.8 MB (144837137 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:715f805aa7a77fd5cc323e76c291037ce343bc2378976256f12d080d0b1ef699`  
-		Last Modified: Tue, 04 Jul 2023 20:40:14 GMT  
-		Size: 175.0 B  
+	-	`sha256:32a06e4034344f551455951aa1e409bd23c69e90744b826dd11d00ae40689395`  
+		Last Modified: Wed, 26 Jul 2023 00:57:52 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d10d2832989d948fe55ab4b5491625737580fed626a8fb65f0fb18e02153381`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 3.6 MB (3598029 bytes)  
+	-	`sha256:7e454b7dec612df961c94e2aeff6c8709da23d364a27b8c1b657f6cc428f16bb`  
+		Last Modified: Wed, 26 Jul 2023 02:28:12 GMT  
+		Size: 3.6 MB (3598087 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6bb3d53aa3f4c4914eaf132e19e11060179f17c950283450bb8307965eace22`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 2.4 KB (2394 bytes)  
+	-	`sha256:61c470fddf77d9b871d41d7a834f7b818b1f43fae0b1fa4c3c25a5fe52897965`  
+		Last Modified: Wed, 26 Jul 2023 02:28:11 GMT  
+		Size: 2.4 KB (2390 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:17cfa2aa9b1256199f3a04c26a9ba546e27824543102034d9b162e3aea8ee8cf`  
-		Last Modified: Wed, 05 Jul 2023 12:07:15 GMT  
-		Size: 33.5 MB (33462589 bytes)  
+	-	`sha256:ae39cf5918f0128ec683efcef4245936609fb3df8767ee5ae0e41606b608f5bc`  
+		Last Modified: Wed, 26 Jul 2023 02:28:13 GMT  
+		Size: 33.5 MB (33462605 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7.0.3-jdk11-temurin` - linux; arm64 variant v8
@@ -4391,7 +4391,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7.1`
 
 ```console
-$ docker pull lightstreamer@sha256:a04e1605dcc516de9409caa8bb7d9e38b74b2065eceefd3c85d94193fc0a06ad
+$ docker pull lightstreamer@sha256:22bd462fda6a9e874c179467c9eb4879ffceb33009151bb6a51e611430de956f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4402,14 +4402,14 @@ $ docker pull lightstreamer@sha256:a04e1605dcc516de9409caa8bb7d9e38b74b2065eceef
 ### `lightstreamer:7.1` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:05704b273537f8098837f214274a4eb8a3b60de2e17b97eaf3fcf8814597dbcd
+$ docker pull lightstreamer@sha256:2996f41f550008e0f43e270636ac2fa4d8b1371e92bf0c318ce59cedd2f26aae
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **295.2 MB (295153261 bytes)**  
+-	Total Size: **241.4 MB (241436901 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:96014989a6953b9f9e3a48ab4218d41b0dbcdbff7961980bafb9fb58cdc86425`
+-	Image ID: `sha256:ad1a191498abbeddff9a9fc7990a7a526dccb300f24eefa0f3219048eb12041a`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
@@ -4433,31 +4433,31 @@ ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Tue, 04 Jul 2023 20:34:07 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl wget ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 04 Jul 2023 20:35:02 GMT
-ENV JAVA_VERSION=jdk-11.0.19+7
-# Tue, 04 Jul 2023 20:35:10 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0c7763a19b4af4ef5fbae831781b5184e988d6f131d264482399eeaf51b6e254';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.19_7.tar.gz';          ;;        armhf|arm)          ESUM='be07af349f0d2e1ffb7e01e1e8bac8bffd76e22f6cc1354e5b627222e3395f41';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_arm_linux_hotspot_11.0.19_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1e3704c8e155f8f894953c2a6708a52e6f449bbf5a85450be6fbb2ec76581700';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.19_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='a21e2c30e48df0b7238691833316c008167cbedd4e2f1e677bcb81638420d273';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.19_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='5f19fb28aea3e28fcc402b73ce72f62b602992d48769502effe81c52ca39a581';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.19_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:27 GMT
+ENV JAVA_VERSION=jdk-11.0.20+8
+# Wed, 26 Jul 2023 00:53:35 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='eb821c049c2d2f7c3fbf8ddcce2d608d3aa7d488700e76bfbbebabba93021748';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.20_8.tar.gz';          ;;        armhf|arm)          ESUM='fdf98d94ac3fd49a73a534fd88cf60e757e885c04791d15f76ccfcecb43a25e0';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_arm_linux_hotspot_11.0.20_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1125931b3a38e6e305a1932fc6cfd0b023a0fbec2cab10e835a2ee2c50848b42';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.20_8.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='688c83d9edf2204220df94ce5bab4a6d19f3d91bc0e500f31dda41e16d9a383f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.20_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='7a99258af2e3ee9047e90f1c0c1775fd6285085759501295358d934d662e01f9';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_x64_linux_hotspot_11.0.20_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
+# Wed, 26 Jul 2023 00:53:38 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:38 GMT
 CMD ["jshell"]
-# Wed, 05 Jul 2023 12:05:11 GMT
+# Wed, 26 Jul 2023 02:26:44 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Wed, 05 Jul 2023 12:05:16 GMT
+# Wed, 26 Jul 2023 02:26:49 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Wed, 05 Jul 2023 12:05:17 GMT
+# Wed, 26 Jul 2023 02:26:50 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Wed, 05 Jul 2023 12:05:31 GMT
+# Wed, 26 Jul 2023 02:26:58 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.1.3/Lightstreamer_7_1_3.tar.gz
-# Wed, 05 Jul 2023 12:05:33 GMT
+# Wed, 26 Jul 2023 02:27:01 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -- 's/\/usr\/jdk1.8.0/$JAVA_HOME/' bin/unix-like/LS.sh         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Wed, 05 Jul 2023 12:05:33 GMT
+# Wed, 26 Jul 2023 02:27:01 GMT
 USER lightstreamer
-# Wed, 05 Jul 2023 12:05:33 GMT
+# Wed, 26 Jul 2023 02:27:01 GMT
 EXPOSE 8080
-# Wed, 05 Jul 2023 12:05:34 GMT
+# Wed, 26 Jul 2023 02:27:01 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Wed, 05 Jul 2023 12:05:34 GMT
+# Wed, 26 Jul 2023 02:27:01 GMT
 CMD ["./LS.sh" "run"]
 ```
 
@@ -4470,25 +4470,25 @@ CMD ["./LS.sh" "run"]
 		Last Modified: Tue, 04 Jul 2023 20:39:05 GMT  
 		Size: 12.5 MB (12495341 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1acd9f0b851bbe1a40c9208d7652c706c94432c0ae0e38d03432f5e8dc0f6959`  
-		Last Modified: Tue, 04 Jul 2023 20:40:28 GMT  
-		Size: 198.6 MB (198553571 bytes)  
+	-	`sha256:16a4bc31f2e63b66f31fdde78e788603ef9924f136ca0084609767db86164dd6`  
+		Last Modified: Wed, 26 Jul 2023 00:58:03 GMT  
+		Size: 144.8 MB (144837137 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:715f805aa7a77fd5cc323e76c291037ce343bc2378976256f12d080d0b1ef699`  
-		Last Modified: Tue, 04 Jul 2023 20:40:14 GMT  
-		Size: 175.0 B  
+	-	`sha256:32a06e4034344f551455951aa1e409bd23c69e90744b826dd11d00ae40689395`  
+		Last Modified: Wed, 26 Jul 2023 00:57:52 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d10d2832989d948fe55ab4b5491625737580fed626a8fb65f0fb18e02153381`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 3.6 MB (3598029 bytes)  
+	-	`sha256:7e454b7dec612df961c94e2aeff6c8709da23d364a27b8c1b657f6cc428f16bb`  
+		Last Modified: Wed, 26 Jul 2023 02:28:12 GMT  
+		Size: 3.6 MB (3598087 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6bb3d53aa3f4c4914eaf132e19e11060179f17c950283450bb8307965eace22`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 2.4 KB (2394 bytes)  
+	-	`sha256:61c470fddf77d9b871d41d7a834f7b818b1f43fae0b1fa4c3c25a5fe52897965`  
+		Last Modified: Wed, 26 Jul 2023 02:28:11 GMT  
+		Size: 2.4 KB (2390 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9202050135c9334880ba014360aecd6214820ee77c9febf44fea086bbb257ac1`  
-		Last Modified: Wed, 05 Jul 2023 12:07:51 GMT  
-		Size: 50.1 MB (50072522 bytes)  
+	-	`sha256:9a53fb43ae343ab516838e931008667dd82bc5cc82c8c803aeca5c694244ed42`  
+		Last Modified: Wed, 26 Jul 2023 02:28:36 GMT  
+		Size: 50.1 MB (50072545 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7.1` - linux; arm64 variant v8
@@ -4586,7 +4586,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7.1-jdk11`
 
 ```console
-$ docker pull lightstreamer@sha256:a04e1605dcc516de9409caa8bb7d9e38b74b2065eceefd3c85d94193fc0a06ad
+$ docker pull lightstreamer@sha256:22bd462fda6a9e874c179467c9eb4879ffceb33009151bb6a51e611430de956f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4597,14 +4597,14 @@ $ docker pull lightstreamer@sha256:a04e1605dcc516de9409caa8bb7d9e38b74b2065eceef
 ### `lightstreamer:7.1-jdk11` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:05704b273537f8098837f214274a4eb8a3b60de2e17b97eaf3fcf8814597dbcd
+$ docker pull lightstreamer@sha256:2996f41f550008e0f43e270636ac2fa4d8b1371e92bf0c318ce59cedd2f26aae
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **295.2 MB (295153261 bytes)**  
+-	Total Size: **241.4 MB (241436901 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:96014989a6953b9f9e3a48ab4218d41b0dbcdbff7961980bafb9fb58cdc86425`
+-	Image ID: `sha256:ad1a191498abbeddff9a9fc7990a7a526dccb300f24eefa0f3219048eb12041a`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
@@ -4628,31 +4628,31 @@ ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Tue, 04 Jul 2023 20:34:07 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl wget ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 04 Jul 2023 20:35:02 GMT
-ENV JAVA_VERSION=jdk-11.0.19+7
-# Tue, 04 Jul 2023 20:35:10 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0c7763a19b4af4ef5fbae831781b5184e988d6f131d264482399eeaf51b6e254';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.19_7.tar.gz';          ;;        armhf|arm)          ESUM='be07af349f0d2e1ffb7e01e1e8bac8bffd76e22f6cc1354e5b627222e3395f41';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_arm_linux_hotspot_11.0.19_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1e3704c8e155f8f894953c2a6708a52e6f449bbf5a85450be6fbb2ec76581700';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.19_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='a21e2c30e48df0b7238691833316c008167cbedd4e2f1e677bcb81638420d273';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.19_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='5f19fb28aea3e28fcc402b73ce72f62b602992d48769502effe81c52ca39a581';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.19_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:27 GMT
+ENV JAVA_VERSION=jdk-11.0.20+8
+# Wed, 26 Jul 2023 00:53:35 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='eb821c049c2d2f7c3fbf8ddcce2d608d3aa7d488700e76bfbbebabba93021748';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.20_8.tar.gz';          ;;        armhf|arm)          ESUM='fdf98d94ac3fd49a73a534fd88cf60e757e885c04791d15f76ccfcecb43a25e0';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_arm_linux_hotspot_11.0.20_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1125931b3a38e6e305a1932fc6cfd0b023a0fbec2cab10e835a2ee2c50848b42';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.20_8.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='688c83d9edf2204220df94ce5bab4a6d19f3d91bc0e500f31dda41e16d9a383f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.20_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='7a99258af2e3ee9047e90f1c0c1775fd6285085759501295358d934d662e01f9';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_x64_linux_hotspot_11.0.20_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
+# Wed, 26 Jul 2023 00:53:38 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:38 GMT
 CMD ["jshell"]
-# Wed, 05 Jul 2023 12:05:11 GMT
+# Wed, 26 Jul 2023 02:26:44 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Wed, 05 Jul 2023 12:05:16 GMT
+# Wed, 26 Jul 2023 02:26:49 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Wed, 05 Jul 2023 12:05:17 GMT
+# Wed, 26 Jul 2023 02:26:50 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Wed, 05 Jul 2023 12:05:31 GMT
+# Wed, 26 Jul 2023 02:26:58 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.1.3/Lightstreamer_7_1_3.tar.gz
-# Wed, 05 Jul 2023 12:05:33 GMT
+# Wed, 26 Jul 2023 02:27:01 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -- 's/\/usr\/jdk1.8.0/$JAVA_HOME/' bin/unix-like/LS.sh         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Wed, 05 Jul 2023 12:05:33 GMT
+# Wed, 26 Jul 2023 02:27:01 GMT
 USER lightstreamer
-# Wed, 05 Jul 2023 12:05:33 GMT
+# Wed, 26 Jul 2023 02:27:01 GMT
 EXPOSE 8080
-# Wed, 05 Jul 2023 12:05:34 GMT
+# Wed, 26 Jul 2023 02:27:01 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Wed, 05 Jul 2023 12:05:34 GMT
+# Wed, 26 Jul 2023 02:27:01 GMT
 CMD ["./LS.sh" "run"]
 ```
 
@@ -4665,25 +4665,25 @@ CMD ["./LS.sh" "run"]
 		Last Modified: Tue, 04 Jul 2023 20:39:05 GMT  
 		Size: 12.5 MB (12495341 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1acd9f0b851bbe1a40c9208d7652c706c94432c0ae0e38d03432f5e8dc0f6959`  
-		Last Modified: Tue, 04 Jul 2023 20:40:28 GMT  
-		Size: 198.6 MB (198553571 bytes)  
+	-	`sha256:16a4bc31f2e63b66f31fdde78e788603ef9924f136ca0084609767db86164dd6`  
+		Last Modified: Wed, 26 Jul 2023 00:58:03 GMT  
+		Size: 144.8 MB (144837137 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:715f805aa7a77fd5cc323e76c291037ce343bc2378976256f12d080d0b1ef699`  
-		Last Modified: Tue, 04 Jul 2023 20:40:14 GMT  
-		Size: 175.0 B  
+	-	`sha256:32a06e4034344f551455951aa1e409bd23c69e90744b826dd11d00ae40689395`  
+		Last Modified: Wed, 26 Jul 2023 00:57:52 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d10d2832989d948fe55ab4b5491625737580fed626a8fb65f0fb18e02153381`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 3.6 MB (3598029 bytes)  
+	-	`sha256:7e454b7dec612df961c94e2aeff6c8709da23d364a27b8c1b657f6cc428f16bb`  
+		Last Modified: Wed, 26 Jul 2023 02:28:12 GMT  
+		Size: 3.6 MB (3598087 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6bb3d53aa3f4c4914eaf132e19e11060179f17c950283450bb8307965eace22`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 2.4 KB (2394 bytes)  
+	-	`sha256:61c470fddf77d9b871d41d7a834f7b818b1f43fae0b1fa4c3c25a5fe52897965`  
+		Last Modified: Wed, 26 Jul 2023 02:28:11 GMT  
+		Size: 2.4 KB (2390 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9202050135c9334880ba014360aecd6214820ee77c9febf44fea086bbb257ac1`  
-		Last Modified: Wed, 05 Jul 2023 12:07:51 GMT  
-		Size: 50.1 MB (50072522 bytes)  
+	-	`sha256:9a53fb43ae343ab516838e931008667dd82bc5cc82c8c803aeca5c694244ed42`  
+		Last Modified: Wed, 26 Jul 2023 02:28:36 GMT  
+		Size: 50.1 MB (50072545 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7.1-jdk11` - linux; arm64 variant v8
@@ -4781,7 +4781,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7.1-jdk11-temurin`
 
 ```console
-$ docker pull lightstreamer@sha256:a04e1605dcc516de9409caa8bb7d9e38b74b2065eceefd3c85d94193fc0a06ad
+$ docker pull lightstreamer@sha256:22bd462fda6a9e874c179467c9eb4879ffceb33009151bb6a51e611430de956f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4792,14 +4792,14 @@ $ docker pull lightstreamer@sha256:a04e1605dcc516de9409caa8bb7d9e38b74b2065eceef
 ### `lightstreamer:7.1-jdk11-temurin` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:05704b273537f8098837f214274a4eb8a3b60de2e17b97eaf3fcf8814597dbcd
+$ docker pull lightstreamer@sha256:2996f41f550008e0f43e270636ac2fa4d8b1371e92bf0c318ce59cedd2f26aae
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **295.2 MB (295153261 bytes)**  
+-	Total Size: **241.4 MB (241436901 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:96014989a6953b9f9e3a48ab4218d41b0dbcdbff7961980bafb9fb58cdc86425`
+-	Image ID: `sha256:ad1a191498abbeddff9a9fc7990a7a526dccb300f24eefa0f3219048eb12041a`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
@@ -4823,31 +4823,31 @@ ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Tue, 04 Jul 2023 20:34:07 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl wget ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 04 Jul 2023 20:35:02 GMT
-ENV JAVA_VERSION=jdk-11.0.19+7
-# Tue, 04 Jul 2023 20:35:10 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0c7763a19b4af4ef5fbae831781b5184e988d6f131d264482399eeaf51b6e254';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.19_7.tar.gz';          ;;        armhf|arm)          ESUM='be07af349f0d2e1ffb7e01e1e8bac8bffd76e22f6cc1354e5b627222e3395f41';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_arm_linux_hotspot_11.0.19_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1e3704c8e155f8f894953c2a6708a52e6f449bbf5a85450be6fbb2ec76581700';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.19_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='a21e2c30e48df0b7238691833316c008167cbedd4e2f1e677bcb81638420d273';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.19_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='5f19fb28aea3e28fcc402b73ce72f62b602992d48769502effe81c52ca39a581';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.19_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:27 GMT
+ENV JAVA_VERSION=jdk-11.0.20+8
+# Wed, 26 Jul 2023 00:53:35 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='eb821c049c2d2f7c3fbf8ddcce2d608d3aa7d488700e76bfbbebabba93021748';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.20_8.tar.gz';          ;;        armhf|arm)          ESUM='fdf98d94ac3fd49a73a534fd88cf60e757e885c04791d15f76ccfcecb43a25e0';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_arm_linux_hotspot_11.0.20_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1125931b3a38e6e305a1932fc6cfd0b023a0fbec2cab10e835a2ee2c50848b42';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.20_8.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='688c83d9edf2204220df94ce5bab4a6d19f3d91bc0e500f31dda41e16d9a383f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.20_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='7a99258af2e3ee9047e90f1c0c1775fd6285085759501295358d934d662e01f9';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_x64_linux_hotspot_11.0.20_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
+# Wed, 26 Jul 2023 00:53:38 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:38 GMT
 CMD ["jshell"]
-# Wed, 05 Jul 2023 12:05:11 GMT
+# Wed, 26 Jul 2023 02:26:44 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Wed, 05 Jul 2023 12:05:16 GMT
+# Wed, 26 Jul 2023 02:26:49 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Wed, 05 Jul 2023 12:05:17 GMT
+# Wed, 26 Jul 2023 02:26:50 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Wed, 05 Jul 2023 12:05:31 GMT
+# Wed, 26 Jul 2023 02:26:58 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.1.3/Lightstreamer_7_1_3.tar.gz
-# Wed, 05 Jul 2023 12:05:33 GMT
+# Wed, 26 Jul 2023 02:27:01 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -- 's/\/usr\/jdk1.8.0/$JAVA_HOME/' bin/unix-like/LS.sh         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Wed, 05 Jul 2023 12:05:33 GMT
+# Wed, 26 Jul 2023 02:27:01 GMT
 USER lightstreamer
-# Wed, 05 Jul 2023 12:05:33 GMT
+# Wed, 26 Jul 2023 02:27:01 GMT
 EXPOSE 8080
-# Wed, 05 Jul 2023 12:05:34 GMT
+# Wed, 26 Jul 2023 02:27:01 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Wed, 05 Jul 2023 12:05:34 GMT
+# Wed, 26 Jul 2023 02:27:01 GMT
 CMD ["./LS.sh" "run"]
 ```
 
@@ -4860,25 +4860,25 @@ CMD ["./LS.sh" "run"]
 		Last Modified: Tue, 04 Jul 2023 20:39:05 GMT  
 		Size: 12.5 MB (12495341 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1acd9f0b851bbe1a40c9208d7652c706c94432c0ae0e38d03432f5e8dc0f6959`  
-		Last Modified: Tue, 04 Jul 2023 20:40:28 GMT  
-		Size: 198.6 MB (198553571 bytes)  
+	-	`sha256:16a4bc31f2e63b66f31fdde78e788603ef9924f136ca0084609767db86164dd6`  
+		Last Modified: Wed, 26 Jul 2023 00:58:03 GMT  
+		Size: 144.8 MB (144837137 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:715f805aa7a77fd5cc323e76c291037ce343bc2378976256f12d080d0b1ef699`  
-		Last Modified: Tue, 04 Jul 2023 20:40:14 GMT  
-		Size: 175.0 B  
+	-	`sha256:32a06e4034344f551455951aa1e409bd23c69e90744b826dd11d00ae40689395`  
+		Last Modified: Wed, 26 Jul 2023 00:57:52 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d10d2832989d948fe55ab4b5491625737580fed626a8fb65f0fb18e02153381`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 3.6 MB (3598029 bytes)  
+	-	`sha256:7e454b7dec612df961c94e2aeff6c8709da23d364a27b8c1b657f6cc428f16bb`  
+		Last Modified: Wed, 26 Jul 2023 02:28:12 GMT  
+		Size: 3.6 MB (3598087 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6bb3d53aa3f4c4914eaf132e19e11060179f17c950283450bb8307965eace22`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 2.4 KB (2394 bytes)  
+	-	`sha256:61c470fddf77d9b871d41d7a834f7b818b1f43fae0b1fa4c3c25a5fe52897965`  
+		Last Modified: Wed, 26 Jul 2023 02:28:11 GMT  
+		Size: 2.4 KB (2390 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9202050135c9334880ba014360aecd6214820ee77c9febf44fea086bbb257ac1`  
-		Last Modified: Wed, 05 Jul 2023 12:07:51 GMT  
-		Size: 50.1 MB (50072522 bytes)  
+	-	`sha256:9a53fb43ae343ab516838e931008667dd82bc5cc82c8c803aeca5c694244ed42`  
+		Last Modified: Wed, 26 Jul 2023 02:28:36 GMT  
+		Size: 50.1 MB (50072545 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7.1-jdk11-temurin` - linux; arm64 variant v8
@@ -5358,7 +5358,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7.1.3`
 
 ```console
-$ docker pull lightstreamer@sha256:a04e1605dcc516de9409caa8bb7d9e38b74b2065eceefd3c85d94193fc0a06ad
+$ docker pull lightstreamer@sha256:22bd462fda6a9e874c179467c9eb4879ffceb33009151bb6a51e611430de956f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5369,14 +5369,14 @@ $ docker pull lightstreamer@sha256:a04e1605dcc516de9409caa8bb7d9e38b74b2065eceef
 ### `lightstreamer:7.1.3` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:05704b273537f8098837f214274a4eb8a3b60de2e17b97eaf3fcf8814597dbcd
+$ docker pull lightstreamer@sha256:2996f41f550008e0f43e270636ac2fa4d8b1371e92bf0c318ce59cedd2f26aae
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **295.2 MB (295153261 bytes)**  
+-	Total Size: **241.4 MB (241436901 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:96014989a6953b9f9e3a48ab4218d41b0dbcdbff7961980bafb9fb58cdc86425`
+-	Image ID: `sha256:ad1a191498abbeddff9a9fc7990a7a526dccb300f24eefa0f3219048eb12041a`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
@@ -5400,31 +5400,31 @@ ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Tue, 04 Jul 2023 20:34:07 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl wget ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 04 Jul 2023 20:35:02 GMT
-ENV JAVA_VERSION=jdk-11.0.19+7
-# Tue, 04 Jul 2023 20:35:10 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0c7763a19b4af4ef5fbae831781b5184e988d6f131d264482399eeaf51b6e254';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.19_7.tar.gz';          ;;        armhf|arm)          ESUM='be07af349f0d2e1ffb7e01e1e8bac8bffd76e22f6cc1354e5b627222e3395f41';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_arm_linux_hotspot_11.0.19_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1e3704c8e155f8f894953c2a6708a52e6f449bbf5a85450be6fbb2ec76581700';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.19_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='a21e2c30e48df0b7238691833316c008167cbedd4e2f1e677bcb81638420d273';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.19_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='5f19fb28aea3e28fcc402b73ce72f62b602992d48769502effe81c52ca39a581';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.19_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:27 GMT
+ENV JAVA_VERSION=jdk-11.0.20+8
+# Wed, 26 Jul 2023 00:53:35 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='eb821c049c2d2f7c3fbf8ddcce2d608d3aa7d488700e76bfbbebabba93021748';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.20_8.tar.gz';          ;;        armhf|arm)          ESUM='fdf98d94ac3fd49a73a534fd88cf60e757e885c04791d15f76ccfcecb43a25e0';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_arm_linux_hotspot_11.0.20_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1125931b3a38e6e305a1932fc6cfd0b023a0fbec2cab10e835a2ee2c50848b42';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.20_8.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='688c83d9edf2204220df94ce5bab4a6d19f3d91bc0e500f31dda41e16d9a383f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.20_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='7a99258af2e3ee9047e90f1c0c1775fd6285085759501295358d934d662e01f9';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_x64_linux_hotspot_11.0.20_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
+# Wed, 26 Jul 2023 00:53:38 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:38 GMT
 CMD ["jshell"]
-# Wed, 05 Jul 2023 12:05:11 GMT
+# Wed, 26 Jul 2023 02:26:44 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Wed, 05 Jul 2023 12:05:16 GMT
+# Wed, 26 Jul 2023 02:26:49 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Wed, 05 Jul 2023 12:05:17 GMT
+# Wed, 26 Jul 2023 02:26:50 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Wed, 05 Jul 2023 12:05:31 GMT
+# Wed, 26 Jul 2023 02:26:58 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.1.3/Lightstreamer_7_1_3.tar.gz
-# Wed, 05 Jul 2023 12:05:33 GMT
+# Wed, 26 Jul 2023 02:27:01 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -- 's/\/usr\/jdk1.8.0/$JAVA_HOME/' bin/unix-like/LS.sh         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Wed, 05 Jul 2023 12:05:33 GMT
+# Wed, 26 Jul 2023 02:27:01 GMT
 USER lightstreamer
-# Wed, 05 Jul 2023 12:05:33 GMT
+# Wed, 26 Jul 2023 02:27:01 GMT
 EXPOSE 8080
-# Wed, 05 Jul 2023 12:05:34 GMT
+# Wed, 26 Jul 2023 02:27:01 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Wed, 05 Jul 2023 12:05:34 GMT
+# Wed, 26 Jul 2023 02:27:01 GMT
 CMD ["./LS.sh" "run"]
 ```
 
@@ -5437,25 +5437,25 @@ CMD ["./LS.sh" "run"]
 		Last Modified: Tue, 04 Jul 2023 20:39:05 GMT  
 		Size: 12.5 MB (12495341 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1acd9f0b851bbe1a40c9208d7652c706c94432c0ae0e38d03432f5e8dc0f6959`  
-		Last Modified: Tue, 04 Jul 2023 20:40:28 GMT  
-		Size: 198.6 MB (198553571 bytes)  
+	-	`sha256:16a4bc31f2e63b66f31fdde78e788603ef9924f136ca0084609767db86164dd6`  
+		Last Modified: Wed, 26 Jul 2023 00:58:03 GMT  
+		Size: 144.8 MB (144837137 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:715f805aa7a77fd5cc323e76c291037ce343bc2378976256f12d080d0b1ef699`  
-		Last Modified: Tue, 04 Jul 2023 20:40:14 GMT  
-		Size: 175.0 B  
+	-	`sha256:32a06e4034344f551455951aa1e409bd23c69e90744b826dd11d00ae40689395`  
+		Last Modified: Wed, 26 Jul 2023 00:57:52 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d10d2832989d948fe55ab4b5491625737580fed626a8fb65f0fb18e02153381`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 3.6 MB (3598029 bytes)  
+	-	`sha256:7e454b7dec612df961c94e2aeff6c8709da23d364a27b8c1b657f6cc428f16bb`  
+		Last Modified: Wed, 26 Jul 2023 02:28:12 GMT  
+		Size: 3.6 MB (3598087 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6bb3d53aa3f4c4914eaf132e19e11060179f17c950283450bb8307965eace22`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 2.4 KB (2394 bytes)  
+	-	`sha256:61c470fddf77d9b871d41d7a834f7b818b1f43fae0b1fa4c3c25a5fe52897965`  
+		Last Modified: Wed, 26 Jul 2023 02:28:11 GMT  
+		Size: 2.4 KB (2390 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9202050135c9334880ba014360aecd6214820ee77c9febf44fea086bbb257ac1`  
-		Last Modified: Wed, 05 Jul 2023 12:07:51 GMT  
-		Size: 50.1 MB (50072522 bytes)  
+	-	`sha256:9a53fb43ae343ab516838e931008667dd82bc5cc82c8c803aeca5c694244ed42`  
+		Last Modified: Wed, 26 Jul 2023 02:28:36 GMT  
+		Size: 50.1 MB (50072545 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7.1.3` - linux; arm64 variant v8
@@ -5553,7 +5553,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7.1.3-jdk11`
 
 ```console
-$ docker pull lightstreamer@sha256:a04e1605dcc516de9409caa8bb7d9e38b74b2065eceefd3c85d94193fc0a06ad
+$ docker pull lightstreamer@sha256:22bd462fda6a9e874c179467c9eb4879ffceb33009151bb6a51e611430de956f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5564,14 +5564,14 @@ $ docker pull lightstreamer@sha256:a04e1605dcc516de9409caa8bb7d9e38b74b2065eceef
 ### `lightstreamer:7.1.3-jdk11` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:05704b273537f8098837f214274a4eb8a3b60de2e17b97eaf3fcf8814597dbcd
+$ docker pull lightstreamer@sha256:2996f41f550008e0f43e270636ac2fa4d8b1371e92bf0c318ce59cedd2f26aae
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **295.2 MB (295153261 bytes)**  
+-	Total Size: **241.4 MB (241436901 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:96014989a6953b9f9e3a48ab4218d41b0dbcdbff7961980bafb9fb58cdc86425`
+-	Image ID: `sha256:ad1a191498abbeddff9a9fc7990a7a526dccb300f24eefa0f3219048eb12041a`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
@@ -5595,31 +5595,31 @@ ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Tue, 04 Jul 2023 20:34:07 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl wget ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 04 Jul 2023 20:35:02 GMT
-ENV JAVA_VERSION=jdk-11.0.19+7
-# Tue, 04 Jul 2023 20:35:10 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0c7763a19b4af4ef5fbae831781b5184e988d6f131d264482399eeaf51b6e254';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.19_7.tar.gz';          ;;        armhf|arm)          ESUM='be07af349f0d2e1ffb7e01e1e8bac8bffd76e22f6cc1354e5b627222e3395f41';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_arm_linux_hotspot_11.0.19_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1e3704c8e155f8f894953c2a6708a52e6f449bbf5a85450be6fbb2ec76581700';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.19_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='a21e2c30e48df0b7238691833316c008167cbedd4e2f1e677bcb81638420d273';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.19_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='5f19fb28aea3e28fcc402b73ce72f62b602992d48769502effe81c52ca39a581';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.19_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:27 GMT
+ENV JAVA_VERSION=jdk-11.0.20+8
+# Wed, 26 Jul 2023 00:53:35 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='eb821c049c2d2f7c3fbf8ddcce2d608d3aa7d488700e76bfbbebabba93021748';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.20_8.tar.gz';          ;;        armhf|arm)          ESUM='fdf98d94ac3fd49a73a534fd88cf60e757e885c04791d15f76ccfcecb43a25e0';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_arm_linux_hotspot_11.0.20_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1125931b3a38e6e305a1932fc6cfd0b023a0fbec2cab10e835a2ee2c50848b42';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.20_8.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='688c83d9edf2204220df94ce5bab4a6d19f3d91bc0e500f31dda41e16d9a383f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.20_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='7a99258af2e3ee9047e90f1c0c1775fd6285085759501295358d934d662e01f9';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_x64_linux_hotspot_11.0.20_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
+# Wed, 26 Jul 2023 00:53:38 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:38 GMT
 CMD ["jshell"]
-# Wed, 05 Jul 2023 12:05:11 GMT
+# Wed, 26 Jul 2023 02:26:44 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Wed, 05 Jul 2023 12:05:16 GMT
+# Wed, 26 Jul 2023 02:26:49 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Wed, 05 Jul 2023 12:05:17 GMT
+# Wed, 26 Jul 2023 02:26:50 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Wed, 05 Jul 2023 12:05:31 GMT
+# Wed, 26 Jul 2023 02:26:58 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.1.3/Lightstreamer_7_1_3.tar.gz
-# Wed, 05 Jul 2023 12:05:33 GMT
+# Wed, 26 Jul 2023 02:27:01 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -- 's/\/usr\/jdk1.8.0/$JAVA_HOME/' bin/unix-like/LS.sh         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Wed, 05 Jul 2023 12:05:33 GMT
+# Wed, 26 Jul 2023 02:27:01 GMT
 USER lightstreamer
-# Wed, 05 Jul 2023 12:05:33 GMT
+# Wed, 26 Jul 2023 02:27:01 GMT
 EXPOSE 8080
-# Wed, 05 Jul 2023 12:05:34 GMT
+# Wed, 26 Jul 2023 02:27:01 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Wed, 05 Jul 2023 12:05:34 GMT
+# Wed, 26 Jul 2023 02:27:01 GMT
 CMD ["./LS.sh" "run"]
 ```
 
@@ -5632,25 +5632,25 @@ CMD ["./LS.sh" "run"]
 		Last Modified: Tue, 04 Jul 2023 20:39:05 GMT  
 		Size: 12.5 MB (12495341 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1acd9f0b851bbe1a40c9208d7652c706c94432c0ae0e38d03432f5e8dc0f6959`  
-		Last Modified: Tue, 04 Jul 2023 20:40:28 GMT  
-		Size: 198.6 MB (198553571 bytes)  
+	-	`sha256:16a4bc31f2e63b66f31fdde78e788603ef9924f136ca0084609767db86164dd6`  
+		Last Modified: Wed, 26 Jul 2023 00:58:03 GMT  
+		Size: 144.8 MB (144837137 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:715f805aa7a77fd5cc323e76c291037ce343bc2378976256f12d080d0b1ef699`  
-		Last Modified: Tue, 04 Jul 2023 20:40:14 GMT  
-		Size: 175.0 B  
+	-	`sha256:32a06e4034344f551455951aa1e409bd23c69e90744b826dd11d00ae40689395`  
+		Last Modified: Wed, 26 Jul 2023 00:57:52 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d10d2832989d948fe55ab4b5491625737580fed626a8fb65f0fb18e02153381`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 3.6 MB (3598029 bytes)  
+	-	`sha256:7e454b7dec612df961c94e2aeff6c8709da23d364a27b8c1b657f6cc428f16bb`  
+		Last Modified: Wed, 26 Jul 2023 02:28:12 GMT  
+		Size: 3.6 MB (3598087 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6bb3d53aa3f4c4914eaf132e19e11060179f17c950283450bb8307965eace22`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 2.4 KB (2394 bytes)  
+	-	`sha256:61c470fddf77d9b871d41d7a834f7b818b1f43fae0b1fa4c3c25a5fe52897965`  
+		Last Modified: Wed, 26 Jul 2023 02:28:11 GMT  
+		Size: 2.4 KB (2390 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9202050135c9334880ba014360aecd6214820ee77c9febf44fea086bbb257ac1`  
-		Last Modified: Wed, 05 Jul 2023 12:07:51 GMT  
-		Size: 50.1 MB (50072522 bytes)  
+	-	`sha256:9a53fb43ae343ab516838e931008667dd82bc5cc82c8c803aeca5c694244ed42`  
+		Last Modified: Wed, 26 Jul 2023 02:28:36 GMT  
+		Size: 50.1 MB (50072545 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7.1.3-jdk11` - linux; arm64 variant v8
@@ -5748,7 +5748,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7.1.3-jdk11-temurin`
 
 ```console
-$ docker pull lightstreamer@sha256:a04e1605dcc516de9409caa8bb7d9e38b74b2065eceefd3c85d94193fc0a06ad
+$ docker pull lightstreamer@sha256:22bd462fda6a9e874c179467c9eb4879ffceb33009151bb6a51e611430de956f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5759,14 +5759,14 @@ $ docker pull lightstreamer@sha256:a04e1605dcc516de9409caa8bb7d9e38b74b2065eceef
 ### `lightstreamer:7.1.3-jdk11-temurin` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:05704b273537f8098837f214274a4eb8a3b60de2e17b97eaf3fcf8814597dbcd
+$ docker pull lightstreamer@sha256:2996f41f550008e0f43e270636ac2fa4d8b1371e92bf0c318ce59cedd2f26aae
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **295.2 MB (295153261 bytes)**  
+-	Total Size: **241.4 MB (241436901 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:96014989a6953b9f9e3a48ab4218d41b0dbcdbff7961980bafb9fb58cdc86425`
+-	Image ID: `sha256:ad1a191498abbeddff9a9fc7990a7a526dccb300f24eefa0f3219048eb12041a`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
@@ -5790,31 +5790,31 @@ ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Tue, 04 Jul 2023 20:34:07 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl wget ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 04 Jul 2023 20:35:02 GMT
-ENV JAVA_VERSION=jdk-11.0.19+7
-# Tue, 04 Jul 2023 20:35:10 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0c7763a19b4af4ef5fbae831781b5184e988d6f131d264482399eeaf51b6e254';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.19_7.tar.gz';          ;;        armhf|arm)          ESUM='be07af349f0d2e1ffb7e01e1e8bac8bffd76e22f6cc1354e5b627222e3395f41';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_arm_linux_hotspot_11.0.19_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1e3704c8e155f8f894953c2a6708a52e6f449bbf5a85450be6fbb2ec76581700';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.19_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='a21e2c30e48df0b7238691833316c008167cbedd4e2f1e677bcb81638420d273';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.19_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='5f19fb28aea3e28fcc402b73ce72f62b602992d48769502effe81c52ca39a581';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.19_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:27 GMT
+ENV JAVA_VERSION=jdk-11.0.20+8
+# Wed, 26 Jul 2023 00:53:35 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='eb821c049c2d2f7c3fbf8ddcce2d608d3aa7d488700e76bfbbebabba93021748';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.20_8.tar.gz';          ;;        armhf|arm)          ESUM='fdf98d94ac3fd49a73a534fd88cf60e757e885c04791d15f76ccfcecb43a25e0';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_arm_linux_hotspot_11.0.20_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1125931b3a38e6e305a1932fc6cfd0b023a0fbec2cab10e835a2ee2c50848b42';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.20_8.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='688c83d9edf2204220df94ce5bab4a6d19f3d91bc0e500f31dda41e16d9a383f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.20_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='7a99258af2e3ee9047e90f1c0c1775fd6285085759501295358d934d662e01f9';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_x64_linux_hotspot_11.0.20_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
+# Wed, 26 Jul 2023 00:53:38 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:38 GMT
 CMD ["jshell"]
-# Wed, 05 Jul 2023 12:05:11 GMT
+# Wed, 26 Jul 2023 02:26:44 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Wed, 05 Jul 2023 12:05:16 GMT
+# Wed, 26 Jul 2023 02:26:49 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Wed, 05 Jul 2023 12:05:17 GMT
+# Wed, 26 Jul 2023 02:26:50 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Wed, 05 Jul 2023 12:05:31 GMT
+# Wed, 26 Jul 2023 02:26:58 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.1.3/Lightstreamer_7_1_3.tar.gz
-# Wed, 05 Jul 2023 12:05:33 GMT
+# Wed, 26 Jul 2023 02:27:01 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -- 's/\/usr\/jdk1.8.0/$JAVA_HOME/' bin/unix-like/LS.sh         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Wed, 05 Jul 2023 12:05:33 GMT
+# Wed, 26 Jul 2023 02:27:01 GMT
 USER lightstreamer
-# Wed, 05 Jul 2023 12:05:33 GMT
+# Wed, 26 Jul 2023 02:27:01 GMT
 EXPOSE 8080
-# Wed, 05 Jul 2023 12:05:34 GMT
+# Wed, 26 Jul 2023 02:27:01 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Wed, 05 Jul 2023 12:05:34 GMT
+# Wed, 26 Jul 2023 02:27:01 GMT
 CMD ["./LS.sh" "run"]
 ```
 
@@ -5827,25 +5827,25 @@ CMD ["./LS.sh" "run"]
 		Last Modified: Tue, 04 Jul 2023 20:39:05 GMT  
 		Size: 12.5 MB (12495341 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1acd9f0b851bbe1a40c9208d7652c706c94432c0ae0e38d03432f5e8dc0f6959`  
-		Last Modified: Tue, 04 Jul 2023 20:40:28 GMT  
-		Size: 198.6 MB (198553571 bytes)  
+	-	`sha256:16a4bc31f2e63b66f31fdde78e788603ef9924f136ca0084609767db86164dd6`  
+		Last Modified: Wed, 26 Jul 2023 00:58:03 GMT  
+		Size: 144.8 MB (144837137 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:715f805aa7a77fd5cc323e76c291037ce343bc2378976256f12d080d0b1ef699`  
-		Last Modified: Tue, 04 Jul 2023 20:40:14 GMT  
-		Size: 175.0 B  
+	-	`sha256:32a06e4034344f551455951aa1e409bd23c69e90744b826dd11d00ae40689395`  
+		Last Modified: Wed, 26 Jul 2023 00:57:52 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d10d2832989d948fe55ab4b5491625737580fed626a8fb65f0fb18e02153381`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 3.6 MB (3598029 bytes)  
+	-	`sha256:7e454b7dec612df961c94e2aeff6c8709da23d364a27b8c1b657f6cc428f16bb`  
+		Last Modified: Wed, 26 Jul 2023 02:28:12 GMT  
+		Size: 3.6 MB (3598087 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6bb3d53aa3f4c4914eaf132e19e11060179f17c950283450bb8307965eace22`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 2.4 KB (2394 bytes)  
+	-	`sha256:61c470fddf77d9b871d41d7a834f7b818b1f43fae0b1fa4c3c25a5fe52897965`  
+		Last Modified: Wed, 26 Jul 2023 02:28:11 GMT  
+		Size: 2.4 KB (2390 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9202050135c9334880ba014360aecd6214820ee77c9febf44fea086bbb257ac1`  
-		Last Modified: Wed, 05 Jul 2023 12:07:51 GMT  
-		Size: 50.1 MB (50072522 bytes)  
+	-	`sha256:9a53fb43ae343ab516838e931008667dd82bc5cc82c8c803aeca5c694244ed42`  
+		Last Modified: Wed, 26 Jul 2023 02:28:36 GMT  
+		Size: 50.1 MB (50072545 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7.1.3-jdk11-temurin` - linux; arm64 variant v8
@@ -6325,7 +6325,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7.2`
 
 ```console
-$ docker pull lightstreamer@sha256:ed560fc8a782270609fe43d7ed81a072c975807791efe9af71a0dca6bc316889
+$ docker pull lightstreamer@sha256:74a3b2c50dac47c255b8f6b13bc0c22336a91557ac1d8c97ed5c108f149989ec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6336,14 +6336,14 @@ $ docker pull lightstreamer@sha256:ed560fc8a782270609fe43d7ed81a072c975807791efe
 ### `lightstreamer:7.2` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:e056917636778e19d897282477391362666840b9d4e53b6b184abda4ea69f87c
+$ docker pull lightstreamer@sha256:f9a0f916d3976b3bbcb02cc6d1e2a299e478fc6efa69dc75bd070229cd9ba309
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **294.9 MB (294931926 bytes)**  
+-	Total Size: **241.2 MB (241215546 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d215f24b2479f054573937863d3372e1f7a38396d8647ec2ce20573f8b6b147b`
+-	Image ID: `sha256:cf396f28ab52f37a12e2fd86b03addb4eaa7edf95b717c694c65edcfeafc08f8`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
@@ -6367,33 +6367,33 @@ ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Tue, 04 Jul 2023 20:34:07 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl wget ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 04 Jul 2023 20:35:02 GMT
-ENV JAVA_VERSION=jdk-11.0.19+7
-# Tue, 04 Jul 2023 20:35:10 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0c7763a19b4af4ef5fbae831781b5184e988d6f131d264482399eeaf51b6e254';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.19_7.tar.gz';          ;;        armhf|arm)          ESUM='be07af349f0d2e1ffb7e01e1e8bac8bffd76e22f6cc1354e5b627222e3395f41';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_arm_linux_hotspot_11.0.19_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1e3704c8e155f8f894953c2a6708a52e6f449bbf5a85450be6fbb2ec76581700';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.19_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='a21e2c30e48df0b7238691833316c008167cbedd4e2f1e677bcb81638420d273';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.19_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='5f19fb28aea3e28fcc402b73ce72f62b602992d48769502effe81c52ca39a581';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.19_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:27 GMT
+ENV JAVA_VERSION=jdk-11.0.20+8
+# Wed, 26 Jul 2023 00:53:35 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='eb821c049c2d2f7c3fbf8ddcce2d608d3aa7d488700e76bfbbebabba93021748';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.20_8.tar.gz';          ;;        armhf|arm)          ESUM='fdf98d94ac3fd49a73a534fd88cf60e757e885c04791d15f76ccfcecb43a25e0';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_arm_linux_hotspot_11.0.20_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1125931b3a38e6e305a1932fc6cfd0b023a0fbec2cab10e835a2ee2c50848b42';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.20_8.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='688c83d9edf2204220df94ce5bab4a6d19f3d91bc0e500f31dda41e16d9a383f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.20_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='7a99258af2e3ee9047e90f1c0c1775fd6285085759501295358d934d662e01f9';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_x64_linux_hotspot_11.0.20_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
+# Wed, 26 Jul 2023 00:53:38 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:38 GMT
 CMD ["jshell"]
-# Wed, 05 Jul 2023 12:05:11 GMT
+# Wed, 26 Jul 2023 02:26:44 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Wed, 05 Jul 2023 12:05:16 GMT
+# Wed, 26 Jul 2023 02:26:49 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Wed, 05 Jul 2023 12:05:17 GMT
+# Wed, 26 Jul 2023 02:26:50 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Wed, 05 Jul 2023 12:05:44 GMT
+# Wed, 26 Jul 2023 02:27:07 GMT
 ENV LIGHTSTREAMER_VERSION=7.2.2
-# Wed, 05 Jul 2023 12:05:44 GMT
+# Wed, 26 Jul 2023 02:27:07 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.2.2/Lightstreamer-7.2.2.tar.gz
-# Wed, 05 Jul 2023 12:05:46 GMT
+# Wed, 26 Jul 2023 02:27:10 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Wed, 05 Jul 2023 12:05:46 GMT
+# Wed, 26 Jul 2023 02:27:10 GMT
 USER lightstreamer
-# Wed, 05 Jul 2023 12:05:47 GMT
+# Wed, 26 Jul 2023 02:27:10 GMT
 EXPOSE 8080
-# Wed, 05 Jul 2023 12:05:47 GMT
+# Wed, 26 Jul 2023 02:27:10 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Wed, 05 Jul 2023 12:05:47 GMT
+# Wed, 26 Jul 2023 02:27:10 GMT
 CMD ["./LS.sh" "run"]
 ```
 
@@ -6406,25 +6406,25 @@ CMD ["./LS.sh" "run"]
 		Last Modified: Tue, 04 Jul 2023 20:39:05 GMT  
 		Size: 12.5 MB (12495341 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1acd9f0b851bbe1a40c9208d7652c706c94432c0ae0e38d03432f5e8dc0f6959`  
-		Last Modified: Tue, 04 Jul 2023 20:40:28 GMT  
-		Size: 198.6 MB (198553571 bytes)  
+	-	`sha256:16a4bc31f2e63b66f31fdde78e788603ef9924f136ca0084609767db86164dd6`  
+		Last Modified: Wed, 26 Jul 2023 00:58:03 GMT  
+		Size: 144.8 MB (144837137 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:715f805aa7a77fd5cc323e76c291037ce343bc2378976256f12d080d0b1ef699`  
-		Last Modified: Tue, 04 Jul 2023 20:40:14 GMT  
-		Size: 175.0 B  
+	-	`sha256:32a06e4034344f551455951aa1e409bd23c69e90744b826dd11d00ae40689395`  
+		Last Modified: Wed, 26 Jul 2023 00:57:52 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d10d2832989d948fe55ab4b5491625737580fed626a8fb65f0fb18e02153381`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 3.6 MB (3598029 bytes)  
+	-	`sha256:7e454b7dec612df961c94e2aeff6c8709da23d364a27b8c1b657f6cc428f16bb`  
+		Last Modified: Wed, 26 Jul 2023 02:28:12 GMT  
+		Size: 3.6 MB (3598087 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6bb3d53aa3f4c4914eaf132e19e11060179f17c950283450bb8307965eace22`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 2.4 KB (2394 bytes)  
+	-	`sha256:61c470fddf77d9b871d41d7a834f7b818b1f43fae0b1fa4c3c25a5fe52897965`  
+		Last Modified: Wed, 26 Jul 2023 02:28:11 GMT  
+		Size: 2.4 KB (2390 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8b3938f8cd0585c6f35b2ea14feb7fa60df06aa8c1d50f3888510e687ff06f4`  
-		Last Modified: Wed, 05 Jul 2023 12:08:27 GMT  
-		Size: 49.9 MB (49851187 bytes)  
+	-	`sha256:55b8b1a037a2ac3358f67f84307780c90dcbd612d1db3fa581d6888667602c8a`  
+		Last Modified: Wed, 26 Jul 2023 02:28:59 GMT  
+		Size: 49.9 MB (49851190 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7.2` - linux; arm64 variant v8
@@ -6524,7 +6524,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7.2-jdk11`
 
 ```console
-$ docker pull lightstreamer@sha256:ed560fc8a782270609fe43d7ed81a072c975807791efe9af71a0dca6bc316889
+$ docker pull lightstreamer@sha256:74a3b2c50dac47c255b8f6b13bc0c22336a91557ac1d8c97ed5c108f149989ec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6535,14 +6535,14 @@ $ docker pull lightstreamer@sha256:ed560fc8a782270609fe43d7ed81a072c975807791efe
 ### `lightstreamer:7.2-jdk11` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:e056917636778e19d897282477391362666840b9d4e53b6b184abda4ea69f87c
+$ docker pull lightstreamer@sha256:f9a0f916d3976b3bbcb02cc6d1e2a299e478fc6efa69dc75bd070229cd9ba309
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **294.9 MB (294931926 bytes)**  
+-	Total Size: **241.2 MB (241215546 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d215f24b2479f054573937863d3372e1f7a38396d8647ec2ce20573f8b6b147b`
+-	Image ID: `sha256:cf396f28ab52f37a12e2fd86b03addb4eaa7edf95b717c694c65edcfeafc08f8`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
@@ -6566,33 +6566,33 @@ ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Tue, 04 Jul 2023 20:34:07 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl wget ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 04 Jul 2023 20:35:02 GMT
-ENV JAVA_VERSION=jdk-11.0.19+7
-# Tue, 04 Jul 2023 20:35:10 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0c7763a19b4af4ef5fbae831781b5184e988d6f131d264482399eeaf51b6e254';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.19_7.tar.gz';          ;;        armhf|arm)          ESUM='be07af349f0d2e1ffb7e01e1e8bac8bffd76e22f6cc1354e5b627222e3395f41';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_arm_linux_hotspot_11.0.19_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1e3704c8e155f8f894953c2a6708a52e6f449bbf5a85450be6fbb2ec76581700';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.19_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='a21e2c30e48df0b7238691833316c008167cbedd4e2f1e677bcb81638420d273';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.19_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='5f19fb28aea3e28fcc402b73ce72f62b602992d48769502effe81c52ca39a581';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.19_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:27 GMT
+ENV JAVA_VERSION=jdk-11.0.20+8
+# Wed, 26 Jul 2023 00:53:35 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='eb821c049c2d2f7c3fbf8ddcce2d608d3aa7d488700e76bfbbebabba93021748';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.20_8.tar.gz';          ;;        armhf|arm)          ESUM='fdf98d94ac3fd49a73a534fd88cf60e757e885c04791d15f76ccfcecb43a25e0';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_arm_linux_hotspot_11.0.20_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1125931b3a38e6e305a1932fc6cfd0b023a0fbec2cab10e835a2ee2c50848b42';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.20_8.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='688c83d9edf2204220df94ce5bab4a6d19f3d91bc0e500f31dda41e16d9a383f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.20_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='7a99258af2e3ee9047e90f1c0c1775fd6285085759501295358d934d662e01f9';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_x64_linux_hotspot_11.0.20_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
+# Wed, 26 Jul 2023 00:53:38 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:38 GMT
 CMD ["jshell"]
-# Wed, 05 Jul 2023 12:05:11 GMT
+# Wed, 26 Jul 2023 02:26:44 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Wed, 05 Jul 2023 12:05:16 GMT
+# Wed, 26 Jul 2023 02:26:49 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Wed, 05 Jul 2023 12:05:17 GMT
+# Wed, 26 Jul 2023 02:26:50 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Wed, 05 Jul 2023 12:05:44 GMT
+# Wed, 26 Jul 2023 02:27:07 GMT
 ENV LIGHTSTREAMER_VERSION=7.2.2
-# Wed, 05 Jul 2023 12:05:44 GMT
+# Wed, 26 Jul 2023 02:27:07 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.2.2/Lightstreamer-7.2.2.tar.gz
-# Wed, 05 Jul 2023 12:05:46 GMT
+# Wed, 26 Jul 2023 02:27:10 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Wed, 05 Jul 2023 12:05:46 GMT
+# Wed, 26 Jul 2023 02:27:10 GMT
 USER lightstreamer
-# Wed, 05 Jul 2023 12:05:47 GMT
+# Wed, 26 Jul 2023 02:27:10 GMT
 EXPOSE 8080
-# Wed, 05 Jul 2023 12:05:47 GMT
+# Wed, 26 Jul 2023 02:27:10 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Wed, 05 Jul 2023 12:05:47 GMT
+# Wed, 26 Jul 2023 02:27:10 GMT
 CMD ["./LS.sh" "run"]
 ```
 
@@ -6605,25 +6605,25 @@ CMD ["./LS.sh" "run"]
 		Last Modified: Tue, 04 Jul 2023 20:39:05 GMT  
 		Size: 12.5 MB (12495341 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1acd9f0b851bbe1a40c9208d7652c706c94432c0ae0e38d03432f5e8dc0f6959`  
-		Last Modified: Tue, 04 Jul 2023 20:40:28 GMT  
-		Size: 198.6 MB (198553571 bytes)  
+	-	`sha256:16a4bc31f2e63b66f31fdde78e788603ef9924f136ca0084609767db86164dd6`  
+		Last Modified: Wed, 26 Jul 2023 00:58:03 GMT  
+		Size: 144.8 MB (144837137 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:715f805aa7a77fd5cc323e76c291037ce343bc2378976256f12d080d0b1ef699`  
-		Last Modified: Tue, 04 Jul 2023 20:40:14 GMT  
-		Size: 175.0 B  
+	-	`sha256:32a06e4034344f551455951aa1e409bd23c69e90744b826dd11d00ae40689395`  
+		Last Modified: Wed, 26 Jul 2023 00:57:52 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d10d2832989d948fe55ab4b5491625737580fed626a8fb65f0fb18e02153381`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 3.6 MB (3598029 bytes)  
+	-	`sha256:7e454b7dec612df961c94e2aeff6c8709da23d364a27b8c1b657f6cc428f16bb`  
+		Last Modified: Wed, 26 Jul 2023 02:28:12 GMT  
+		Size: 3.6 MB (3598087 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6bb3d53aa3f4c4914eaf132e19e11060179f17c950283450bb8307965eace22`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 2.4 KB (2394 bytes)  
+	-	`sha256:61c470fddf77d9b871d41d7a834f7b818b1f43fae0b1fa4c3c25a5fe52897965`  
+		Last Modified: Wed, 26 Jul 2023 02:28:11 GMT  
+		Size: 2.4 KB (2390 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8b3938f8cd0585c6f35b2ea14feb7fa60df06aa8c1d50f3888510e687ff06f4`  
-		Last Modified: Wed, 05 Jul 2023 12:08:27 GMT  
-		Size: 49.9 MB (49851187 bytes)  
+	-	`sha256:55b8b1a037a2ac3358f67f84307780c90dcbd612d1db3fa581d6888667602c8a`  
+		Last Modified: Wed, 26 Jul 2023 02:28:59 GMT  
+		Size: 49.9 MB (49851190 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7.2-jdk11` - linux; arm64 variant v8
@@ -6723,7 +6723,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7.2-jdk11-temurin`
 
 ```console
-$ docker pull lightstreamer@sha256:ed560fc8a782270609fe43d7ed81a072c975807791efe9af71a0dca6bc316889
+$ docker pull lightstreamer@sha256:74a3b2c50dac47c255b8f6b13bc0c22336a91557ac1d8c97ed5c108f149989ec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -6734,14 +6734,14 @@ $ docker pull lightstreamer@sha256:ed560fc8a782270609fe43d7ed81a072c975807791efe
 ### `lightstreamer:7.2-jdk11-temurin` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:e056917636778e19d897282477391362666840b9d4e53b6b184abda4ea69f87c
+$ docker pull lightstreamer@sha256:f9a0f916d3976b3bbcb02cc6d1e2a299e478fc6efa69dc75bd070229cd9ba309
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **294.9 MB (294931926 bytes)**  
+-	Total Size: **241.2 MB (241215546 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d215f24b2479f054573937863d3372e1f7a38396d8647ec2ce20573f8b6b147b`
+-	Image ID: `sha256:cf396f28ab52f37a12e2fd86b03addb4eaa7edf95b717c694c65edcfeafc08f8`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
@@ -6765,33 +6765,33 @@ ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Tue, 04 Jul 2023 20:34:07 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl wget ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 04 Jul 2023 20:35:02 GMT
-ENV JAVA_VERSION=jdk-11.0.19+7
-# Tue, 04 Jul 2023 20:35:10 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0c7763a19b4af4ef5fbae831781b5184e988d6f131d264482399eeaf51b6e254';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.19_7.tar.gz';          ;;        armhf|arm)          ESUM='be07af349f0d2e1ffb7e01e1e8bac8bffd76e22f6cc1354e5b627222e3395f41';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_arm_linux_hotspot_11.0.19_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1e3704c8e155f8f894953c2a6708a52e6f449bbf5a85450be6fbb2ec76581700';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.19_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='a21e2c30e48df0b7238691833316c008167cbedd4e2f1e677bcb81638420d273';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.19_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='5f19fb28aea3e28fcc402b73ce72f62b602992d48769502effe81c52ca39a581';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.19_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:27 GMT
+ENV JAVA_VERSION=jdk-11.0.20+8
+# Wed, 26 Jul 2023 00:53:35 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='eb821c049c2d2f7c3fbf8ddcce2d608d3aa7d488700e76bfbbebabba93021748';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.20_8.tar.gz';          ;;        armhf|arm)          ESUM='fdf98d94ac3fd49a73a534fd88cf60e757e885c04791d15f76ccfcecb43a25e0';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_arm_linux_hotspot_11.0.20_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1125931b3a38e6e305a1932fc6cfd0b023a0fbec2cab10e835a2ee2c50848b42';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.20_8.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='688c83d9edf2204220df94ce5bab4a6d19f3d91bc0e500f31dda41e16d9a383f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.20_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='7a99258af2e3ee9047e90f1c0c1775fd6285085759501295358d934d662e01f9';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_x64_linux_hotspot_11.0.20_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
+# Wed, 26 Jul 2023 00:53:38 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:38 GMT
 CMD ["jshell"]
-# Wed, 05 Jul 2023 12:05:11 GMT
+# Wed, 26 Jul 2023 02:26:44 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Wed, 05 Jul 2023 12:05:16 GMT
+# Wed, 26 Jul 2023 02:26:49 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Wed, 05 Jul 2023 12:05:17 GMT
+# Wed, 26 Jul 2023 02:26:50 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Wed, 05 Jul 2023 12:05:44 GMT
+# Wed, 26 Jul 2023 02:27:07 GMT
 ENV LIGHTSTREAMER_VERSION=7.2.2
-# Wed, 05 Jul 2023 12:05:44 GMT
+# Wed, 26 Jul 2023 02:27:07 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.2.2/Lightstreamer-7.2.2.tar.gz
-# Wed, 05 Jul 2023 12:05:46 GMT
+# Wed, 26 Jul 2023 02:27:10 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Wed, 05 Jul 2023 12:05:46 GMT
+# Wed, 26 Jul 2023 02:27:10 GMT
 USER lightstreamer
-# Wed, 05 Jul 2023 12:05:47 GMT
+# Wed, 26 Jul 2023 02:27:10 GMT
 EXPOSE 8080
-# Wed, 05 Jul 2023 12:05:47 GMT
+# Wed, 26 Jul 2023 02:27:10 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Wed, 05 Jul 2023 12:05:47 GMT
+# Wed, 26 Jul 2023 02:27:10 GMT
 CMD ["./LS.sh" "run"]
 ```
 
@@ -6804,25 +6804,25 @@ CMD ["./LS.sh" "run"]
 		Last Modified: Tue, 04 Jul 2023 20:39:05 GMT  
 		Size: 12.5 MB (12495341 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1acd9f0b851bbe1a40c9208d7652c706c94432c0ae0e38d03432f5e8dc0f6959`  
-		Last Modified: Tue, 04 Jul 2023 20:40:28 GMT  
-		Size: 198.6 MB (198553571 bytes)  
+	-	`sha256:16a4bc31f2e63b66f31fdde78e788603ef9924f136ca0084609767db86164dd6`  
+		Last Modified: Wed, 26 Jul 2023 00:58:03 GMT  
+		Size: 144.8 MB (144837137 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:715f805aa7a77fd5cc323e76c291037ce343bc2378976256f12d080d0b1ef699`  
-		Last Modified: Tue, 04 Jul 2023 20:40:14 GMT  
-		Size: 175.0 B  
+	-	`sha256:32a06e4034344f551455951aa1e409bd23c69e90744b826dd11d00ae40689395`  
+		Last Modified: Wed, 26 Jul 2023 00:57:52 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d10d2832989d948fe55ab4b5491625737580fed626a8fb65f0fb18e02153381`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 3.6 MB (3598029 bytes)  
+	-	`sha256:7e454b7dec612df961c94e2aeff6c8709da23d364a27b8c1b657f6cc428f16bb`  
+		Last Modified: Wed, 26 Jul 2023 02:28:12 GMT  
+		Size: 3.6 MB (3598087 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6bb3d53aa3f4c4914eaf132e19e11060179f17c950283450bb8307965eace22`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 2.4 KB (2394 bytes)  
+	-	`sha256:61c470fddf77d9b871d41d7a834f7b818b1f43fae0b1fa4c3c25a5fe52897965`  
+		Last Modified: Wed, 26 Jul 2023 02:28:11 GMT  
+		Size: 2.4 KB (2390 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8b3938f8cd0585c6f35b2ea14feb7fa60df06aa8c1d50f3888510e687ff06f4`  
-		Last Modified: Wed, 05 Jul 2023 12:08:27 GMT  
-		Size: 49.9 MB (49851187 bytes)  
+	-	`sha256:55b8b1a037a2ac3358f67f84307780c90dcbd612d1db3fa581d6888667602c8a`  
+		Last Modified: Wed, 26 Jul 2023 02:28:59 GMT  
+		Size: 49.9 MB (49851190 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7.2-jdk11-temurin` - linux; arm64 variant v8
@@ -7312,7 +7312,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7.2.2`
 
 ```console
-$ docker pull lightstreamer@sha256:ed560fc8a782270609fe43d7ed81a072c975807791efe9af71a0dca6bc316889
+$ docker pull lightstreamer@sha256:74a3b2c50dac47c255b8f6b13bc0c22336a91557ac1d8c97ed5c108f149989ec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7323,14 +7323,14 @@ $ docker pull lightstreamer@sha256:ed560fc8a782270609fe43d7ed81a072c975807791efe
 ### `lightstreamer:7.2.2` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:e056917636778e19d897282477391362666840b9d4e53b6b184abda4ea69f87c
+$ docker pull lightstreamer@sha256:f9a0f916d3976b3bbcb02cc6d1e2a299e478fc6efa69dc75bd070229cd9ba309
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **294.9 MB (294931926 bytes)**  
+-	Total Size: **241.2 MB (241215546 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d215f24b2479f054573937863d3372e1f7a38396d8647ec2ce20573f8b6b147b`
+-	Image ID: `sha256:cf396f28ab52f37a12e2fd86b03addb4eaa7edf95b717c694c65edcfeafc08f8`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
@@ -7354,33 +7354,33 @@ ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Tue, 04 Jul 2023 20:34:07 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl wget ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 04 Jul 2023 20:35:02 GMT
-ENV JAVA_VERSION=jdk-11.0.19+7
-# Tue, 04 Jul 2023 20:35:10 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0c7763a19b4af4ef5fbae831781b5184e988d6f131d264482399eeaf51b6e254';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.19_7.tar.gz';          ;;        armhf|arm)          ESUM='be07af349f0d2e1ffb7e01e1e8bac8bffd76e22f6cc1354e5b627222e3395f41';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_arm_linux_hotspot_11.0.19_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1e3704c8e155f8f894953c2a6708a52e6f449bbf5a85450be6fbb2ec76581700';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.19_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='a21e2c30e48df0b7238691833316c008167cbedd4e2f1e677bcb81638420d273';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.19_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='5f19fb28aea3e28fcc402b73ce72f62b602992d48769502effe81c52ca39a581';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.19_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:27 GMT
+ENV JAVA_VERSION=jdk-11.0.20+8
+# Wed, 26 Jul 2023 00:53:35 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='eb821c049c2d2f7c3fbf8ddcce2d608d3aa7d488700e76bfbbebabba93021748';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.20_8.tar.gz';          ;;        armhf|arm)          ESUM='fdf98d94ac3fd49a73a534fd88cf60e757e885c04791d15f76ccfcecb43a25e0';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_arm_linux_hotspot_11.0.20_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1125931b3a38e6e305a1932fc6cfd0b023a0fbec2cab10e835a2ee2c50848b42';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.20_8.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='688c83d9edf2204220df94ce5bab4a6d19f3d91bc0e500f31dda41e16d9a383f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.20_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='7a99258af2e3ee9047e90f1c0c1775fd6285085759501295358d934d662e01f9';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_x64_linux_hotspot_11.0.20_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
+# Wed, 26 Jul 2023 00:53:38 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:38 GMT
 CMD ["jshell"]
-# Wed, 05 Jul 2023 12:05:11 GMT
+# Wed, 26 Jul 2023 02:26:44 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Wed, 05 Jul 2023 12:05:16 GMT
+# Wed, 26 Jul 2023 02:26:49 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Wed, 05 Jul 2023 12:05:17 GMT
+# Wed, 26 Jul 2023 02:26:50 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Wed, 05 Jul 2023 12:05:44 GMT
+# Wed, 26 Jul 2023 02:27:07 GMT
 ENV LIGHTSTREAMER_VERSION=7.2.2
-# Wed, 05 Jul 2023 12:05:44 GMT
+# Wed, 26 Jul 2023 02:27:07 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.2.2/Lightstreamer-7.2.2.tar.gz
-# Wed, 05 Jul 2023 12:05:46 GMT
+# Wed, 26 Jul 2023 02:27:10 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Wed, 05 Jul 2023 12:05:46 GMT
+# Wed, 26 Jul 2023 02:27:10 GMT
 USER lightstreamer
-# Wed, 05 Jul 2023 12:05:47 GMT
+# Wed, 26 Jul 2023 02:27:10 GMT
 EXPOSE 8080
-# Wed, 05 Jul 2023 12:05:47 GMT
+# Wed, 26 Jul 2023 02:27:10 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Wed, 05 Jul 2023 12:05:47 GMT
+# Wed, 26 Jul 2023 02:27:10 GMT
 CMD ["./LS.sh" "run"]
 ```
 
@@ -7393,25 +7393,25 @@ CMD ["./LS.sh" "run"]
 		Last Modified: Tue, 04 Jul 2023 20:39:05 GMT  
 		Size: 12.5 MB (12495341 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1acd9f0b851bbe1a40c9208d7652c706c94432c0ae0e38d03432f5e8dc0f6959`  
-		Last Modified: Tue, 04 Jul 2023 20:40:28 GMT  
-		Size: 198.6 MB (198553571 bytes)  
+	-	`sha256:16a4bc31f2e63b66f31fdde78e788603ef9924f136ca0084609767db86164dd6`  
+		Last Modified: Wed, 26 Jul 2023 00:58:03 GMT  
+		Size: 144.8 MB (144837137 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:715f805aa7a77fd5cc323e76c291037ce343bc2378976256f12d080d0b1ef699`  
-		Last Modified: Tue, 04 Jul 2023 20:40:14 GMT  
-		Size: 175.0 B  
+	-	`sha256:32a06e4034344f551455951aa1e409bd23c69e90744b826dd11d00ae40689395`  
+		Last Modified: Wed, 26 Jul 2023 00:57:52 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d10d2832989d948fe55ab4b5491625737580fed626a8fb65f0fb18e02153381`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 3.6 MB (3598029 bytes)  
+	-	`sha256:7e454b7dec612df961c94e2aeff6c8709da23d364a27b8c1b657f6cc428f16bb`  
+		Last Modified: Wed, 26 Jul 2023 02:28:12 GMT  
+		Size: 3.6 MB (3598087 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6bb3d53aa3f4c4914eaf132e19e11060179f17c950283450bb8307965eace22`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 2.4 KB (2394 bytes)  
+	-	`sha256:61c470fddf77d9b871d41d7a834f7b818b1f43fae0b1fa4c3c25a5fe52897965`  
+		Last Modified: Wed, 26 Jul 2023 02:28:11 GMT  
+		Size: 2.4 KB (2390 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8b3938f8cd0585c6f35b2ea14feb7fa60df06aa8c1d50f3888510e687ff06f4`  
-		Last Modified: Wed, 05 Jul 2023 12:08:27 GMT  
-		Size: 49.9 MB (49851187 bytes)  
+	-	`sha256:55b8b1a037a2ac3358f67f84307780c90dcbd612d1db3fa581d6888667602c8a`  
+		Last Modified: Wed, 26 Jul 2023 02:28:59 GMT  
+		Size: 49.9 MB (49851190 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7.2.2` - linux; arm64 variant v8
@@ -7511,7 +7511,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7.2.2-jdk11`
 
 ```console
-$ docker pull lightstreamer@sha256:ed560fc8a782270609fe43d7ed81a072c975807791efe9af71a0dca6bc316889
+$ docker pull lightstreamer@sha256:74a3b2c50dac47c255b8f6b13bc0c22336a91557ac1d8c97ed5c108f149989ec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7522,14 +7522,14 @@ $ docker pull lightstreamer@sha256:ed560fc8a782270609fe43d7ed81a072c975807791efe
 ### `lightstreamer:7.2.2-jdk11` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:e056917636778e19d897282477391362666840b9d4e53b6b184abda4ea69f87c
+$ docker pull lightstreamer@sha256:f9a0f916d3976b3bbcb02cc6d1e2a299e478fc6efa69dc75bd070229cd9ba309
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **294.9 MB (294931926 bytes)**  
+-	Total Size: **241.2 MB (241215546 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d215f24b2479f054573937863d3372e1f7a38396d8647ec2ce20573f8b6b147b`
+-	Image ID: `sha256:cf396f28ab52f37a12e2fd86b03addb4eaa7edf95b717c694c65edcfeafc08f8`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
@@ -7553,33 +7553,33 @@ ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Tue, 04 Jul 2023 20:34:07 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl wget ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 04 Jul 2023 20:35:02 GMT
-ENV JAVA_VERSION=jdk-11.0.19+7
-# Tue, 04 Jul 2023 20:35:10 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0c7763a19b4af4ef5fbae831781b5184e988d6f131d264482399eeaf51b6e254';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.19_7.tar.gz';          ;;        armhf|arm)          ESUM='be07af349f0d2e1ffb7e01e1e8bac8bffd76e22f6cc1354e5b627222e3395f41';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_arm_linux_hotspot_11.0.19_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1e3704c8e155f8f894953c2a6708a52e6f449bbf5a85450be6fbb2ec76581700';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.19_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='a21e2c30e48df0b7238691833316c008167cbedd4e2f1e677bcb81638420d273';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.19_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='5f19fb28aea3e28fcc402b73ce72f62b602992d48769502effe81c52ca39a581';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.19_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:27 GMT
+ENV JAVA_VERSION=jdk-11.0.20+8
+# Wed, 26 Jul 2023 00:53:35 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='eb821c049c2d2f7c3fbf8ddcce2d608d3aa7d488700e76bfbbebabba93021748';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.20_8.tar.gz';          ;;        armhf|arm)          ESUM='fdf98d94ac3fd49a73a534fd88cf60e757e885c04791d15f76ccfcecb43a25e0';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_arm_linux_hotspot_11.0.20_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1125931b3a38e6e305a1932fc6cfd0b023a0fbec2cab10e835a2ee2c50848b42';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.20_8.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='688c83d9edf2204220df94ce5bab4a6d19f3d91bc0e500f31dda41e16d9a383f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.20_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='7a99258af2e3ee9047e90f1c0c1775fd6285085759501295358d934d662e01f9';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_x64_linux_hotspot_11.0.20_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
+# Wed, 26 Jul 2023 00:53:38 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:38 GMT
 CMD ["jshell"]
-# Wed, 05 Jul 2023 12:05:11 GMT
+# Wed, 26 Jul 2023 02:26:44 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Wed, 05 Jul 2023 12:05:16 GMT
+# Wed, 26 Jul 2023 02:26:49 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Wed, 05 Jul 2023 12:05:17 GMT
+# Wed, 26 Jul 2023 02:26:50 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Wed, 05 Jul 2023 12:05:44 GMT
+# Wed, 26 Jul 2023 02:27:07 GMT
 ENV LIGHTSTREAMER_VERSION=7.2.2
-# Wed, 05 Jul 2023 12:05:44 GMT
+# Wed, 26 Jul 2023 02:27:07 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.2.2/Lightstreamer-7.2.2.tar.gz
-# Wed, 05 Jul 2023 12:05:46 GMT
+# Wed, 26 Jul 2023 02:27:10 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Wed, 05 Jul 2023 12:05:46 GMT
+# Wed, 26 Jul 2023 02:27:10 GMT
 USER lightstreamer
-# Wed, 05 Jul 2023 12:05:47 GMT
+# Wed, 26 Jul 2023 02:27:10 GMT
 EXPOSE 8080
-# Wed, 05 Jul 2023 12:05:47 GMT
+# Wed, 26 Jul 2023 02:27:10 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Wed, 05 Jul 2023 12:05:47 GMT
+# Wed, 26 Jul 2023 02:27:10 GMT
 CMD ["./LS.sh" "run"]
 ```
 
@@ -7592,25 +7592,25 @@ CMD ["./LS.sh" "run"]
 		Last Modified: Tue, 04 Jul 2023 20:39:05 GMT  
 		Size: 12.5 MB (12495341 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1acd9f0b851bbe1a40c9208d7652c706c94432c0ae0e38d03432f5e8dc0f6959`  
-		Last Modified: Tue, 04 Jul 2023 20:40:28 GMT  
-		Size: 198.6 MB (198553571 bytes)  
+	-	`sha256:16a4bc31f2e63b66f31fdde78e788603ef9924f136ca0084609767db86164dd6`  
+		Last Modified: Wed, 26 Jul 2023 00:58:03 GMT  
+		Size: 144.8 MB (144837137 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:715f805aa7a77fd5cc323e76c291037ce343bc2378976256f12d080d0b1ef699`  
-		Last Modified: Tue, 04 Jul 2023 20:40:14 GMT  
-		Size: 175.0 B  
+	-	`sha256:32a06e4034344f551455951aa1e409bd23c69e90744b826dd11d00ae40689395`  
+		Last Modified: Wed, 26 Jul 2023 00:57:52 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d10d2832989d948fe55ab4b5491625737580fed626a8fb65f0fb18e02153381`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 3.6 MB (3598029 bytes)  
+	-	`sha256:7e454b7dec612df961c94e2aeff6c8709da23d364a27b8c1b657f6cc428f16bb`  
+		Last Modified: Wed, 26 Jul 2023 02:28:12 GMT  
+		Size: 3.6 MB (3598087 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6bb3d53aa3f4c4914eaf132e19e11060179f17c950283450bb8307965eace22`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 2.4 KB (2394 bytes)  
+	-	`sha256:61c470fddf77d9b871d41d7a834f7b818b1f43fae0b1fa4c3c25a5fe52897965`  
+		Last Modified: Wed, 26 Jul 2023 02:28:11 GMT  
+		Size: 2.4 KB (2390 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8b3938f8cd0585c6f35b2ea14feb7fa60df06aa8c1d50f3888510e687ff06f4`  
-		Last Modified: Wed, 05 Jul 2023 12:08:27 GMT  
-		Size: 49.9 MB (49851187 bytes)  
+	-	`sha256:55b8b1a037a2ac3358f67f84307780c90dcbd612d1db3fa581d6888667602c8a`  
+		Last Modified: Wed, 26 Jul 2023 02:28:59 GMT  
+		Size: 49.9 MB (49851190 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7.2.2-jdk11` - linux; arm64 variant v8
@@ -7710,7 +7710,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7.2.2-jdk11-temurin`
 
 ```console
-$ docker pull lightstreamer@sha256:ed560fc8a782270609fe43d7ed81a072c975807791efe9af71a0dca6bc316889
+$ docker pull lightstreamer@sha256:74a3b2c50dac47c255b8f6b13bc0c22336a91557ac1d8c97ed5c108f149989ec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7721,14 +7721,14 @@ $ docker pull lightstreamer@sha256:ed560fc8a782270609fe43d7ed81a072c975807791efe
 ### `lightstreamer:7.2.2-jdk11-temurin` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:e056917636778e19d897282477391362666840b9d4e53b6b184abda4ea69f87c
+$ docker pull lightstreamer@sha256:f9a0f916d3976b3bbcb02cc6d1e2a299e478fc6efa69dc75bd070229cd9ba309
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **294.9 MB (294931926 bytes)**  
+-	Total Size: **241.2 MB (241215546 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d215f24b2479f054573937863d3372e1f7a38396d8647ec2ce20573f8b6b147b`
+-	Image ID: `sha256:cf396f28ab52f37a12e2fd86b03addb4eaa7edf95b717c694c65edcfeafc08f8`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
@@ -7752,33 +7752,33 @@ ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Tue, 04 Jul 2023 20:34:07 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl wget ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 04 Jul 2023 20:35:02 GMT
-ENV JAVA_VERSION=jdk-11.0.19+7
-# Tue, 04 Jul 2023 20:35:10 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0c7763a19b4af4ef5fbae831781b5184e988d6f131d264482399eeaf51b6e254';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.19_7.tar.gz';          ;;        armhf|arm)          ESUM='be07af349f0d2e1ffb7e01e1e8bac8bffd76e22f6cc1354e5b627222e3395f41';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_arm_linux_hotspot_11.0.19_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1e3704c8e155f8f894953c2a6708a52e6f449bbf5a85450be6fbb2ec76581700';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.19_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='a21e2c30e48df0b7238691833316c008167cbedd4e2f1e677bcb81638420d273';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.19_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='5f19fb28aea3e28fcc402b73ce72f62b602992d48769502effe81c52ca39a581';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.19_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:27 GMT
+ENV JAVA_VERSION=jdk-11.0.20+8
+# Wed, 26 Jul 2023 00:53:35 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='eb821c049c2d2f7c3fbf8ddcce2d608d3aa7d488700e76bfbbebabba93021748';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.20_8.tar.gz';          ;;        armhf|arm)          ESUM='fdf98d94ac3fd49a73a534fd88cf60e757e885c04791d15f76ccfcecb43a25e0';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_arm_linux_hotspot_11.0.20_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1125931b3a38e6e305a1932fc6cfd0b023a0fbec2cab10e835a2ee2c50848b42';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.20_8.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='688c83d9edf2204220df94ce5bab4a6d19f3d91bc0e500f31dda41e16d9a383f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.20_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='7a99258af2e3ee9047e90f1c0c1775fd6285085759501295358d934d662e01f9';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_x64_linux_hotspot_11.0.20_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
+# Wed, 26 Jul 2023 00:53:38 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:38 GMT
 CMD ["jshell"]
-# Wed, 05 Jul 2023 12:05:11 GMT
+# Wed, 26 Jul 2023 02:26:44 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Wed, 05 Jul 2023 12:05:16 GMT
+# Wed, 26 Jul 2023 02:26:49 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Wed, 05 Jul 2023 12:05:17 GMT
+# Wed, 26 Jul 2023 02:26:50 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Wed, 05 Jul 2023 12:05:44 GMT
+# Wed, 26 Jul 2023 02:27:07 GMT
 ENV LIGHTSTREAMER_VERSION=7.2.2
-# Wed, 05 Jul 2023 12:05:44 GMT
+# Wed, 26 Jul 2023 02:27:07 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.2.2/Lightstreamer-7.2.2.tar.gz
-# Wed, 05 Jul 2023 12:05:46 GMT
+# Wed, 26 Jul 2023 02:27:10 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Wed, 05 Jul 2023 12:05:46 GMT
+# Wed, 26 Jul 2023 02:27:10 GMT
 USER lightstreamer
-# Wed, 05 Jul 2023 12:05:47 GMT
+# Wed, 26 Jul 2023 02:27:10 GMT
 EXPOSE 8080
-# Wed, 05 Jul 2023 12:05:47 GMT
+# Wed, 26 Jul 2023 02:27:10 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Wed, 05 Jul 2023 12:05:47 GMT
+# Wed, 26 Jul 2023 02:27:10 GMT
 CMD ["./LS.sh" "run"]
 ```
 
@@ -7791,25 +7791,25 @@ CMD ["./LS.sh" "run"]
 		Last Modified: Tue, 04 Jul 2023 20:39:05 GMT  
 		Size: 12.5 MB (12495341 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1acd9f0b851bbe1a40c9208d7652c706c94432c0ae0e38d03432f5e8dc0f6959`  
-		Last Modified: Tue, 04 Jul 2023 20:40:28 GMT  
-		Size: 198.6 MB (198553571 bytes)  
+	-	`sha256:16a4bc31f2e63b66f31fdde78e788603ef9924f136ca0084609767db86164dd6`  
+		Last Modified: Wed, 26 Jul 2023 00:58:03 GMT  
+		Size: 144.8 MB (144837137 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:715f805aa7a77fd5cc323e76c291037ce343bc2378976256f12d080d0b1ef699`  
-		Last Modified: Tue, 04 Jul 2023 20:40:14 GMT  
-		Size: 175.0 B  
+	-	`sha256:32a06e4034344f551455951aa1e409bd23c69e90744b826dd11d00ae40689395`  
+		Last Modified: Wed, 26 Jul 2023 00:57:52 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d10d2832989d948fe55ab4b5491625737580fed626a8fb65f0fb18e02153381`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 3.6 MB (3598029 bytes)  
+	-	`sha256:7e454b7dec612df961c94e2aeff6c8709da23d364a27b8c1b657f6cc428f16bb`  
+		Last Modified: Wed, 26 Jul 2023 02:28:12 GMT  
+		Size: 3.6 MB (3598087 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6bb3d53aa3f4c4914eaf132e19e11060179f17c950283450bb8307965eace22`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 2.4 KB (2394 bytes)  
+	-	`sha256:61c470fddf77d9b871d41d7a834f7b818b1f43fae0b1fa4c3c25a5fe52897965`  
+		Last Modified: Wed, 26 Jul 2023 02:28:11 GMT  
+		Size: 2.4 KB (2390 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8b3938f8cd0585c6f35b2ea14feb7fa60df06aa8c1d50f3888510e687ff06f4`  
-		Last Modified: Wed, 05 Jul 2023 12:08:27 GMT  
-		Size: 49.9 MB (49851187 bytes)  
+	-	`sha256:55b8b1a037a2ac3358f67f84307780c90dcbd612d1db3fa581d6888667602c8a`  
+		Last Modified: Wed, 26 Jul 2023 02:28:59 GMT  
+		Size: 49.9 MB (49851190 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7.2.2-jdk11-temurin` - linux; arm64 variant v8
@@ -8498,7 +8498,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7.3-jdk11`
 
 ```console
-$ docker pull lightstreamer@sha256:68c115c5cb2cf00ae09371a6f8e0aa0cd36e52f87d651e00b7258912672e5350
+$ docker pull lightstreamer@sha256:cc6c932304d52c82addc825913fcc406396641122cf74cb01632a1f055a28f00
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8509,14 +8509,14 @@ $ docker pull lightstreamer@sha256:68c115c5cb2cf00ae09371a6f8e0aa0cd36e52f87d651
 ### `lightstreamer:7.3-jdk11` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:7451af7717c34c185d38e30e56deadc23e06d72941b6e0bcaebae188ab371e12
+$ docker pull lightstreamer@sha256:b7267a77bd77982db437be6f539d95e28a01e967f910924cafb9e05a7a9f76fd
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **302.9 MB (302926045 bytes)**  
+-	Total Size: **249.2 MB (249209672 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ace0dc800fe6e0e9ecb8d3a32642a02137e0fef4945a93c716e83caaae0a616b`
+-	Image ID: `sha256:8a8e3e1e72d801e704888ec8adeb982ef664296ed36f3a209bee976b209687f0`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
@@ -8540,33 +8540,33 @@ ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Tue, 04 Jul 2023 20:34:07 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl wget ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 04 Jul 2023 20:35:02 GMT
-ENV JAVA_VERSION=jdk-11.0.19+7
-# Tue, 04 Jul 2023 20:35:10 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0c7763a19b4af4ef5fbae831781b5184e988d6f131d264482399eeaf51b6e254';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.19_7.tar.gz';          ;;        armhf|arm)          ESUM='be07af349f0d2e1ffb7e01e1e8bac8bffd76e22f6cc1354e5b627222e3395f41';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_arm_linux_hotspot_11.0.19_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1e3704c8e155f8f894953c2a6708a52e6f449bbf5a85450be6fbb2ec76581700';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.19_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='a21e2c30e48df0b7238691833316c008167cbedd4e2f1e677bcb81638420d273';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.19_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='5f19fb28aea3e28fcc402b73ce72f62b602992d48769502effe81c52ca39a581';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.19_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:27 GMT
+ENV JAVA_VERSION=jdk-11.0.20+8
+# Wed, 26 Jul 2023 00:53:35 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='eb821c049c2d2f7c3fbf8ddcce2d608d3aa7d488700e76bfbbebabba93021748';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.20_8.tar.gz';          ;;        armhf|arm)          ESUM='fdf98d94ac3fd49a73a534fd88cf60e757e885c04791d15f76ccfcecb43a25e0';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_arm_linux_hotspot_11.0.20_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1125931b3a38e6e305a1932fc6cfd0b023a0fbec2cab10e835a2ee2c50848b42';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.20_8.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='688c83d9edf2204220df94ce5bab4a6d19f3d91bc0e500f31dda41e16d9a383f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.20_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='7a99258af2e3ee9047e90f1c0c1775fd6285085759501295358d934d662e01f9';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_x64_linux_hotspot_11.0.20_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
+# Wed, 26 Jul 2023 00:53:38 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:38 GMT
 CMD ["jshell"]
-# Wed, 05 Jul 2023 12:05:11 GMT
+# Wed, 26 Jul 2023 02:26:44 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Wed, 05 Jul 2023 12:05:16 GMT
+# Wed, 26 Jul 2023 02:26:49 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Wed, 05 Jul 2023 12:05:17 GMT
+# Wed, 26 Jul 2023 02:26:50 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Wed, 05 Jul 2023 12:05:56 GMT
+# Wed, 26 Jul 2023 02:27:16 GMT
 ENV LIGHTSTREAMER_VERSION=7.3.3
-# Wed, 05 Jul 2023 12:05:57 GMT
+# Wed, 26 Jul 2023 02:27:16 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.3.3/Lightstreamer-7.3.3.tar.gz
-# Wed, 05 Jul 2023 12:05:59 GMT
+# Wed, 26 Jul 2023 02:27:19 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Wed, 05 Jul 2023 12:06:00 GMT
+# Wed, 26 Jul 2023 02:27:19 GMT
 USER lightstreamer
-# Wed, 05 Jul 2023 12:06:00 GMT
+# Wed, 26 Jul 2023 02:27:19 GMT
 EXPOSE 8080
-# Wed, 05 Jul 2023 12:06:00 GMT
+# Wed, 26 Jul 2023 02:27:19 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Wed, 05 Jul 2023 12:06:00 GMT
+# Wed, 26 Jul 2023 02:27:20 GMT
 CMD ["./LS.sh" "run"]
 ```
 
@@ -8579,25 +8579,25 @@ CMD ["./LS.sh" "run"]
 		Last Modified: Tue, 04 Jul 2023 20:39:05 GMT  
 		Size: 12.5 MB (12495341 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1acd9f0b851bbe1a40c9208d7652c706c94432c0ae0e38d03432f5e8dc0f6959`  
-		Last Modified: Tue, 04 Jul 2023 20:40:28 GMT  
-		Size: 198.6 MB (198553571 bytes)  
+	-	`sha256:16a4bc31f2e63b66f31fdde78e788603ef9924f136ca0084609767db86164dd6`  
+		Last Modified: Wed, 26 Jul 2023 00:58:03 GMT  
+		Size: 144.8 MB (144837137 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:715f805aa7a77fd5cc323e76c291037ce343bc2378976256f12d080d0b1ef699`  
-		Last Modified: Tue, 04 Jul 2023 20:40:14 GMT  
-		Size: 175.0 B  
+	-	`sha256:32a06e4034344f551455951aa1e409bd23c69e90744b826dd11d00ae40689395`  
+		Last Modified: Wed, 26 Jul 2023 00:57:52 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d10d2832989d948fe55ab4b5491625737580fed626a8fb65f0fb18e02153381`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 3.6 MB (3598029 bytes)  
+	-	`sha256:7e454b7dec612df961c94e2aeff6c8709da23d364a27b8c1b657f6cc428f16bb`  
+		Last Modified: Wed, 26 Jul 2023 02:28:12 GMT  
+		Size: 3.6 MB (3598087 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6bb3d53aa3f4c4914eaf132e19e11060179f17c950283450bb8307965eace22`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 2.4 KB (2394 bytes)  
+	-	`sha256:61c470fddf77d9b871d41d7a834f7b818b1f43fae0b1fa4c3c25a5fe52897965`  
+		Last Modified: Wed, 26 Jul 2023 02:28:11 GMT  
+		Size: 2.4 KB (2390 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6bb92ebed0a1eea9bbe94619a02cce3e5f01a19a4c3d0fb2fbdc211d12f202b`  
-		Last Modified: Wed, 05 Jul 2023 12:09:05 GMT  
-		Size: 57.8 MB (57845306 bytes)  
+	-	`sha256:e1f21d6e013d4618247b7e5af8eb727904a25568e405e59438b280e4133763ad`  
+		Last Modified: Wed, 26 Jul 2023 02:29:21 GMT  
+		Size: 57.8 MB (57845316 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7.3-jdk11` - linux; arm64 variant v8
@@ -8697,7 +8697,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7.3-jdk11-temurin`
 
 ```console
-$ docker pull lightstreamer@sha256:68c115c5cb2cf00ae09371a6f8e0aa0cd36e52f87d651e00b7258912672e5350
+$ docker pull lightstreamer@sha256:cc6c932304d52c82addc825913fcc406396641122cf74cb01632a1f055a28f00
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -8708,14 +8708,14 @@ $ docker pull lightstreamer@sha256:68c115c5cb2cf00ae09371a6f8e0aa0cd36e52f87d651
 ### `lightstreamer:7.3-jdk11-temurin` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:7451af7717c34c185d38e30e56deadc23e06d72941b6e0bcaebae188ab371e12
+$ docker pull lightstreamer@sha256:b7267a77bd77982db437be6f539d95e28a01e967f910924cafb9e05a7a9f76fd
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **302.9 MB (302926045 bytes)**  
+-	Total Size: **249.2 MB (249209672 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ace0dc800fe6e0e9ecb8d3a32642a02137e0fef4945a93c716e83caaae0a616b`
+-	Image ID: `sha256:8a8e3e1e72d801e704888ec8adeb982ef664296ed36f3a209bee976b209687f0`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
@@ -8739,33 +8739,33 @@ ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Tue, 04 Jul 2023 20:34:07 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl wget ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 04 Jul 2023 20:35:02 GMT
-ENV JAVA_VERSION=jdk-11.0.19+7
-# Tue, 04 Jul 2023 20:35:10 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0c7763a19b4af4ef5fbae831781b5184e988d6f131d264482399eeaf51b6e254';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.19_7.tar.gz';          ;;        armhf|arm)          ESUM='be07af349f0d2e1ffb7e01e1e8bac8bffd76e22f6cc1354e5b627222e3395f41';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_arm_linux_hotspot_11.0.19_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1e3704c8e155f8f894953c2a6708a52e6f449bbf5a85450be6fbb2ec76581700';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.19_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='a21e2c30e48df0b7238691833316c008167cbedd4e2f1e677bcb81638420d273';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.19_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='5f19fb28aea3e28fcc402b73ce72f62b602992d48769502effe81c52ca39a581';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.19_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:27 GMT
+ENV JAVA_VERSION=jdk-11.0.20+8
+# Wed, 26 Jul 2023 00:53:35 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='eb821c049c2d2f7c3fbf8ddcce2d608d3aa7d488700e76bfbbebabba93021748';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.20_8.tar.gz';          ;;        armhf|arm)          ESUM='fdf98d94ac3fd49a73a534fd88cf60e757e885c04791d15f76ccfcecb43a25e0';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_arm_linux_hotspot_11.0.20_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1125931b3a38e6e305a1932fc6cfd0b023a0fbec2cab10e835a2ee2c50848b42';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.20_8.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='688c83d9edf2204220df94ce5bab4a6d19f3d91bc0e500f31dda41e16d9a383f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.20_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='7a99258af2e3ee9047e90f1c0c1775fd6285085759501295358d934d662e01f9';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_x64_linux_hotspot_11.0.20_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
+# Wed, 26 Jul 2023 00:53:38 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:38 GMT
 CMD ["jshell"]
-# Wed, 05 Jul 2023 12:05:11 GMT
+# Wed, 26 Jul 2023 02:26:44 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Wed, 05 Jul 2023 12:05:16 GMT
+# Wed, 26 Jul 2023 02:26:49 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Wed, 05 Jul 2023 12:05:17 GMT
+# Wed, 26 Jul 2023 02:26:50 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Wed, 05 Jul 2023 12:05:56 GMT
+# Wed, 26 Jul 2023 02:27:16 GMT
 ENV LIGHTSTREAMER_VERSION=7.3.3
-# Wed, 05 Jul 2023 12:05:57 GMT
+# Wed, 26 Jul 2023 02:27:16 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.3.3/Lightstreamer-7.3.3.tar.gz
-# Wed, 05 Jul 2023 12:05:59 GMT
+# Wed, 26 Jul 2023 02:27:19 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Wed, 05 Jul 2023 12:06:00 GMT
+# Wed, 26 Jul 2023 02:27:19 GMT
 USER lightstreamer
-# Wed, 05 Jul 2023 12:06:00 GMT
+# Wed, 26 Jul 2023 02:27:19 GMT
 EXPOSE 8080
-# Wed, 05 Jul 2023 12:06:00 GMT
+# Wed, 26 Jul 2023 02:27:19 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Wed, 05 Jul 2023 12:06:00 GMT
+# Wed, 26 Jul 2023 02:27:20 GMT
 CMD ["./LS.sh" "run"]
 ```
 
@@ -8778,25 +8778,25 @@ CMD ["./LS.sh" "run"]
 		Last Modified: Tue, 04 Jul 2023 20:39:05 GMT  
 		Size: 12.5 MB (12495341 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1acd9f0b851bbe1a40c9208d7652c706c94432c0ae0e38d03432f5e8dc0f6959`  
-		Last Modified: Tue, 04 Jul 2023 20:40:28 GMT  
-		Size: 198.6 MB (198553571 bytes)  
+	-	`sha256:16a4bc31f2e63b66f31fdde78e788603ef9924f136ca0084609767db86164dd6`  
+		Last Modified: Wed, 26 Jul 2023 00:58:03 GMT  
+		Size: 144.8 MB (144837137 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:715f805aa7a77fd5cc323e76c291037ce343bc2378976256f12d080d0b1ef699`  
-		Last Modified: Tue, 04 Jul 2023 20:40:14 GMT  
-		Size: 175.0 B  
+	-	`sha256:32a06e4034344f551455951aa1e409bd23c69e90744b826dd11d00ae40689395`  
+		Last Modified: Wed, 26 Jul 2023 00:57:52 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d10d2832989d948fe55ab4b5491625737580fed626a8fb65f0fb18e02153381`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 3.6 MB (3598029 bytes)  
+	-	`sha256:7e454b7dec612df961c94e2aeff6c8709da23d364a27b8c1b657f6cc428f16bb`  
+		Last Modified: Wed, 26 Jul 2023 02:28:12 GMT  
+		Size: 3.6 MB (3598087 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6bb3d53aa3f4c4914eaf132e19e11060179f17c950283450bb8307965eace22`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 2.4 KB (2394 bytes)  
+	-	`sha256:61c470fddf77d9b871d41d7a834f7b818b1f43fae0b1fa4c3c25a5fe52897965`  
+		Last Modified: Wed, 26 Jul 2023 02:28:11 GMT  
+		Size: 2.4 KB (2390 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6bb92ebed0a1eea9bbe94619a02cce3e5f01a19a4c3d0fb2fbdc211d12f202b`  
-		Last Modified: Wed, 05 Jul 2023 12:09:05 GMT  
-		Size: 57.8 MB (57845306 bytes)  
+	-	`sha256:e1f21d6e013d4618247b7e5af8eb727904a25568e405e59438b280e4133763ad`  
+		Last Modified: Wed, 26 Jul 2023 02:29:21 GMT  
+		Size: 57.8 MB (57845316 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7.3-jdk11-temurin` - linux; arm64 variant v8
@@ -9883,7 +9883,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7.3.3-jdk11`
 
 ```console
-$ docker pull lightstreamer@sha256:68c115c5cb2cf00ae09371a6f8e0aa0cd36e52f87d651e00b7258912672e5350
+$ docker pull lightstreamer@sha256:cc6c932304d52c82addc825913fcc406396641122cf74cb01632a1f055a28f00
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -9894,14 +9894,14 @@ $ docker pull lightstreamer@sha256:68c115c5cb2cf00ae09371a6f8e0aa0cd36e52f87d651
 ### `lightstreamer:7.3.3-jdk11` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:7451af7717c34c185d38e30e56deadc23e06d72941b6e0bcaebae188ab371e12
+$ docker pull lightstreamer@sha256:b7267a77bd77982db437be6f539d95e28a01e967f910924cafb9e05a7a9f76fd
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **302.9 MB (302926045 bytes)**  
+-	Total Size: **249.2 MB (249209672 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ace0dc800fe6e0e9ecb8d3a32642a02137e0fef4945a93c716e83caaae0a616b`
+-	Image ID: `sha256:8a8e3e1e72d801e704888ec8adeb982ef664296ed36f3a209bee976b209687f0`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
@@ -9925,33 +9925,33 @@ ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Tue, 04 Jul 2023 20:34:07 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl wget ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 04 Jul 2023 20:35:02 GMT
-ENV JAVA_VERSION=jdk-11.0.19+7
-# Tue, 04 Jul 2023 20:35:10 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0c7763a19b4af4ef5fbae831781b5184e988d6f131d264482399eeaf51b6e254';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.19_7.tar.gz';          ;;        armhf|arm)          ESUM='be07af349f0d2e1ffb7e01e1e8bac8bffd76e22f6cc1354e5b627222e3395f41';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_arm_linux_hotspot_11.0.19_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1e3704c8e155f8f894953c2a6708a52e6f449bbf5a85450be6fbb2ec76581700';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.19_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='a21e2c30e48df0b7238691833316c008167cbedd4e2f1e677bcb81638420d273';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.19_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='5f19fb28aea3e28fcc402b73ce72f62b602992d48769502effe81c52ca39a581';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.19_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:27 GMT
+ENV JAVA_VERSION=jdk-11.0.20+8
+# Wed, 26 Jul 2023 00:53:35 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='eb821c049c2d2f7c3fbf8ddcce2d608d3aa7d488700e76bfbbebabba93021748';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.20_8.tar.gz';          ;;        armhf|arm)          ESUM='fdf98d94ac3fd49a73a534fd88cf60e757e885c04791d15f76ccfcecb43a25e0';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_arm_linux_hotspot_11.0.20_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1125931b3a38e6e305a1932fc6cfd0b023a0fbec2cab10e835a2ee2c50848b42';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.20_8.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='688c83d9edf2204220df94ce5bab4a6d19f3d91bc0e500f31dda41e16d9a383f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.20_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='7a99258af2e3ee9047e90f1c0c1775fd6285085759501295358d934d662e01f9';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_x64_linux_hotspot_11.0.20_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
+# Wed, 26 Jul 2023 00:53:38 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:38 GMT
 CMD ["jshell"]
-# Wed, 05 Jul 2023 12:05:11 GMT
+# Wed, 26 Jul 2023 02:26:44 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Wed, 05 Jul 2023 12:05:16 GMT
+# Wed, 26 Jul 2023 02:26:49 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Wed, 05 Jul 2023 12:05:17 GMT
+# Wed, 26 Jul 2023 02:26:50 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Wed, 05 Jul 2023 12:05:56 GMT
+# Wed, 26 Jul 2023 02:27:16 GMT
 ENV LIGHTSTREAMER_VERSION=7.3.3
-# Wed, 05 Jul 2023 12:05:57 GMT
+# Wed, 26 Jul 2023 02:27:16 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.3.3/Lightstreamer-7.3.3.tar.gz
-# Wed, 05 Jul 2023 12:05:59 GMT
+# Wed, 26 Jul 2023 02:27:19 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Wed, 05 Jul 2023 12:06:00 GMT
+# Wed, 26 Jul 2023 02:27:19 GMT
 USER lightstreamer
-# Wed, 05 Jul 2023 12:06:00 GMT
+# Wed, 26 Jul 2023 02:27:19 GMT
 EXPOSE 8080
-# Wed, 05 Jul 2023 12:06:00 GMT
+# Wed, 26 Jul 2023 02:27:19 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Wed, 05 Jul 2023 12:06:00 GMT
+# Wed, 26 Jul 2023 02:27:20 GMT
 CMD ["./LS.sh" "run"]
 ```
 
@@ -9964,25 +9964,25 @@ CMD ["./LS.sh" "run"]
 		Last Modified: Tue, 04 Jul 2023 20:39:05 GMT  
 		Size: 12.5 MB (12495341 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1acd9f0b851bbe1a40c9208d7652c706c94432c0ae0e38d03432f5e8dc0f6959`  
-		Last Modified: Tue, 04 Jul 2023 20:40:28 GMT  
-		Size: 198.6 MB (198553571 bytes)  
+	-	`sha256:16a4bc31f2e63b66f31fdde78e788603ef9924f136ca0084609767db86164dd6`  
+		Last Modified: Wed, 26 Jul 2023 00:58:03 GMT  
+		Size: 144.8 MB (144837137 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:715f805aa7a77fd5cc323e76c291037ce343bc2378976256f12d080d0b1ef699`  
-		Last Modified: Tue, 04 Jul 2023 20:40:14 GMT  
-		Size: 175.0 B  
+	-	`sha256:32a06e4034344f551455951aa1e409bd23c69e90744b826dd11d00ae40689395`  
+		Last Modified: Wed, 26 Jul 2023 00:57:52 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d10d2832989d948fe55ab4b5491625737580fed626a8fb65f0fb18e02153381`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 3.6 MB (3598029 bytes)  
+	-	`sha256:7e454b7dec612df961c94e2aeff6c8709da23d364a27b8c1b657f6cc428f16bb`  
+		Last Modified: Wed, 26 Jul 2023 02:28:12 GMT  
+		Size: 3.6 MB (3598087 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6bb3d53aa3f4c4914eaf132e19e11060179f17c950283450bb8307965eace22`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 2.4 KB (2394 bytes)  
+	-	`sha256:61c470fddf77d9b871d41d7a834f7b818b1f43fae0b1fa4c3c25a5fe52897965`  
+		Last Modified: Wed, 26 Jul 2023 02:28:11 GMT  
+		Size: 2.4 KB (2390 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6bb92ebed0a1eea9bbe94619a02cce3e5f01a19a4c3d0fb2fbdc211d12f202b`  
-		Last Modified: Wed, 05 Jul 2023 12:09:05 GMT  
-		Size: 57.8 MB (57845306 bytes)  
+	-	`sha256:e1f21d6e013d4618247b7e5af8eb727904a25568e405e59438b280e4133763ad`  
+		Last Modified: Wed, 26 Jul 2023 02:29:21 GMT  
+		Size: 57.8 MB (57845316 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7.3.3-jdk11` - linux; arm64 variant v8
@@ -10082,7 +10082,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7.3.3-jdk11-temurin`
 
 ```console
-$ docker pull lightstreamer@sha256:68c115c5cb2cf00ae09371a6f8e0aa0cd36e52f87d651e00b7258912672e5350
+$ docker pull lightstreamer@sha256:cc6c932304d52c82addc825913fcc406396641122cf74cb01632a1f055a28f00
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -10093,14 +10093,14 @@ $ docker pull lightstreamer@sha256:68c115c5cb2cf00ae09371a6f8e0aa0cd36e52f87d651
 ### `lightstreamer:7.3.3-jdk11-temurin` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:7451af7717c34c185d38e30e56deadc23e06d72941b6e0bcaebae188ab371e12
+$ docker pull lightstreamer@sha256:b7267a77bd77982db437be6f539d95e28a01e967f910924cafb9e05a7a9f76fd
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **302.9 MB (302926045 bytes)**  
+-	Total Size: **249.2 MB (249209672 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ace0dc800fe6e0e9ecb8d3a32642a02137e0fef4945a93c716e83caaae0a616b`
+-	Image ID: `sha256:8a8e3e1e72d801e704888ec8adeb982ef664296ed36f3a209bee976b209687f0`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
@@ -10124,33 +10124,33 @@ ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Tue, 04 Jul 2023 20:34:07 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl wget ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 04 Jul 2023 20:35:02 GMT
-ENV JAVA_VERSION=jdk-11.0.19+7
-# Tue, 04 Jul 2023 20:35:10 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0c7763a19b4af4ef5fbae831781b5184e988d6f131d264482399eeaf51b6e254';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.19_7.tar.gz';          ;;        armhf|arm)          ESUM='be07af349f0d2e1ffb7e01e1e8bac8bffd76e22f6cc1354e5b627222e3395f41';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_arm_linux_hotspot_11.0.19_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1e3704c8e155f8f894953c2a6708a52e6f449bbf5a85450be6fbb2ec76581700';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.19_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='a21e2c30e48df0b7238691833316c008167cbedd4e2f1e677bcb81638420d273';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.19_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='5f19fb28aea3e28fcc402b73ce72f62b602992d48769502effe81c52ca39a581';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.19_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:27 GMT
+ENV JAVA_VERSION=jdk-11.0.20+8
+# Wed, 26 Jul 2023 00:53:35 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='eb821c049c2d2f7c3fbf8ddcce2d608d3aa7d488700e76bfbbebabba93021748';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.20_8.tar.gz';          ;;        armhf|arm)          ESUM='fdf98d94ac3fd49a73a534fd88cf60e757e885c04791d15f76ccfcecb43a25e0';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_arm_linux_hotspot_11.0.20_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1125931b3a38e6e305a1932fc6cfd0b023a0fbec2cab10e835a2ee2c50848b42';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.20_8.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='688c83d9edf2204220df94ce5bab4a6d19f3d91bc0e500f31dda41e16d9a383f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.20_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='7a99258af2e3ee9047e90f1c0c1775fd6285085759501295358d934d662e01f9';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_x64_linux_hotspot_11.0.20_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
+# Wed, 26 Jul 2023 00:53:38 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:38 GMT
 CMD ["jshell"]
-# Wed, 05 Jul 2023 12:05:11 GMT
+# Wed, 26 Jul 2023 02:26:44 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Wed, 05 Jul 2023 12:05:16 GMT
+# Wed, 26 Jul 2023 02:26:49 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Wed, 05 Jul 2023 12:05:17 GMT
+# Wed, 26 Jul 2023 02:26:50 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Wed, 05 Jul 2023 12:05:56 GMT
+# Wed, 26 Jul 2023 02:27:16 GMT
 ENV LIGHTSTREAMER_VERSION=7.3.3
-# Wed, 05 Jul 2023 12:05:57 GMT
+# Wed, 26 Jul 2023 02:27:16 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.3.3/Lightstreamer-7.3.3.tar.gz
-# Wed, 05 Jul 2023 12:05:59 GMT
+# Wed, 26 Jul 2023 02:27:19 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Wed, 05 Jul 2023 12:06:00 GMT
+# Wed, 26 Jul 2023 02:27:19 GMT
 USER lightstreamer
-# Wed, 05 Jul 2023 12:06:00 GMT
+# Wed, 26 Jul 2023 02:27:19 GMT
 EXPOSE 8080
-# Wed, 05 Jul 2023 12:06:00 GMT
+# Wed, 26 Jul 2023 02:27:19 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Wed, 05 Jul 2023 12:06:00 GMT
+# Wed, 26 Jul 2023 02:27:20 GMT
 CMD ["./LS.sh" "run"]
 ```
 
@@ -10163,25 +10163,25 @@ CMD ["./LS.sh" "run"]
 		Last Modified: Tue, 04 Jul 2023 20:39:05 GMT  
 		Size: 12.5 MB (12495341 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1acd9f0b851bbe1a40c9208d7652c706c94432c0ae0e38d03432f5e8dc0f6959`  
-		Last Modified: Tue, 04 Jul 2023 20:40:28 GMT  
-		Size: 198.6 MB (198553571 bytes)  
+	-	`sha256:16a4bc31f2e63b66f31fdde78e788603ef9924f136ca0084609767db86164dd6`  
+		Last Modified: Wed, 26 Jul 2023 00:58:03 GMT  
+		Size: 144.8 MB (144837137 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:715f805aa7a77fd5cc323e76c291037ce343bc2378976256f12d080d0b1ef699`  
-		Last Modified: Tue, 04 Jul 2023 20:40:14 GMT  
-		Size: 175.0 B  
+	-	`sha256:32a06e4034344f551455951aa1e409bd23c69e90744b826dd11d00ae40689395`  
+		Last Modified: Wed, 26 Jul 2023 00:57:52 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d10d2832989d948fe55ab4b5491625737580fed626a8fb65f0fb18e02153381`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 3.6 MB (3598029 bytes)  
+	-	`sha256:7e454b7dec612df961c94e2aeff6c8709da23d364a27b8c1b657f6cc428f16bb`  
+		Last Modified: Wed, 26 Jul 2023 02:28:12 GMT  
+		Size: 3.6 MB (3598087 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6bb3d53aa3f4c4914eaf132e19e11060179f17c950283450bb8307965eace22`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 2.4 KB (2394 bytes)  
+	-	`sha256:61c470fddf77d9b871d41d7a834f7b818b1f43fae0b1fa4c3c25a5fe52897965`  
+		Last Modified: Wed, 26 Jul 2023 02:28:11 GMT  
+		Size: 2.4 KB (2390 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6bb92ebed0a1eea9bbe94619a02cce3e5f01a19a4c3d0fb2fbdc211d12f202b`  
-		Last Modified: Wed, 05 Jul 2023 12:09:05 GMT  
-		Size: 57.8 MB (57845306 bytes)  
+	-	`sha256:e1f21d6e013d4618247b7e5af8eb727904a25568e405e59438b280e4133763ad`  
+		Last Modified: Wed, 26 Jul 2023 02:29:21 GMT  
+		Size: 57.8 MB (57845316 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7.3.3-jdk11-temurin` - linux; arm64 variant v8
@@ -11268,7 +11268,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7.4-jdk11`
 
 ```console
-$ docker pull lightstreamer@sha256:68ae386aec407bd12fd28012d31b0abf06e1bfe360acf5587a915ebf2c17a0af
+$ docker pull lightstreamer@sha256:9f1486e006570033357dabdde8b13f301eff651912184e96899641860a8a55dd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11279,14 +11279,14 @@ $ docker pull lightstreamer@sha256:68ae386aec407bd12fd28012d31b0abf06e1bfe360acf
 ### `lightstreamer:7.4-jdk11` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:9b7fdb1a98cb66f31103ff87c61c54521527562b16eba2cfc3de5de245a0d4cc
+$ docker pull lightstreamer@sha256:7d487b92b7b95e5a3209f29bb16be5a9578f484468ef6c74d26e327ac9c30f25
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **304.3 MB (304259953 bytes)**  
+-	Total Size: **250.5 MB (250543543 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a0ce30f83f570d4b3939c444f6d9afd28a8b9c971f9c64f6c2c33d46dfa2dbdd`
+-	Image ID: `sha256:174889280ba13c2fd93dc05a2f0281198443c2b6dd4d66c4820500175696f31c`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
@@ -11310,33 +11310,33 @@ ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Tue, 04 Jul 2023 20:34:07 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl wget ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 04 Jul 2023 20:35:02 GMT
-ENV JAVA_VERSION=jdk-11.0.19+7
-# Tue, 04 Jul 2023 20:35:10 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0c7763a19b4af4ef5fbae831781b5184e988d6f131d264482399eeaf51b6e254';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.19_7.tar.gz';          ;;        armhf|arm)          ESUM='be07af349f0d2e1ffb7e01e1e8bac8bffd76e22f6cc1354e5b627222e3395f41';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_arm_linux_hotspot_11.0.19_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1e3704c8e155f8f894953c2a6708a52e6f449bbf5a85450be6fbb2ec76581700';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.19_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='a21e2c30e48df0b7238691833316c008167cbedd4e2f1e677bcb81638420d273';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.19_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='5f19fb28aea3e28fcc402b73ce72f62b602992d48769502effe81c52ca39a581';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.19_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:27 GMT
+ENV JAVA_VERSION=jdk-11.0.20+8
+# Wed, 26 Jul 2023 00:53:35 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='eb821c049c2d2f7c3fbf8ddcce2d608d3aa7d488700e76bfbbebabba93021748';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.20_8.tar.gz';          ;;        armhf|arm)          ESUM='fdf98d94ac3fd49a73a534fd88cf60e757e885c04791d15f76ccfcecb43a25e0';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_arm_linux_hotspot_11.0.20_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1125931b3a38e6e305a1932fc6cfd0b023a0fbec2cab10e835a2ee2c50848b42';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.20_8.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='688c83d9edf2204220df94ce5bab4a6d19f3d91bc0e500f31dda41e16d9a383f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.20_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='7a99258af2e3ee9047e90f1c0c1775fd6285085759501295358d934d662e01f9';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_x64_linux_hotspot_11.0.20_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
+# Wed, 26 Jul 2023 00:53:38 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:38 GMT
 CMD ["jshell"]
-# Wed, 05 Jul 2023 12:05:11 GMT
+# Wed, 26 Jul 2023 02:26:44 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Wed, 05 Jul 2023 12:05:16 GMT
+# Wed, 26 Jul 2023 02:26:49 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Wed, 05 Jul 2023 12:05:17 GMT
+# Wed, 26 Jul 2023 02:26:50 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Mon, 10 Jul 2023 20:26:26 GMT
+# Wed, 26 Jul 2023 02:27:27 GMT
 ENV LIGHTSTREAMER_VERSION=7.4.0
-# Mon, 10 Jul 2023 20:26:26 GMT
+# Wed, 26 Jul 2023 02:27:27 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.4.0/Lightstreamer-7.4.0.tar.gz
-# Mon, 10 Jul 2023 20:26:29 GMT
+# Wed, 26 Jul 2023 02:27:30 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Mon, 10 Jul 2023 20:26:29 GMT
+# Wed, 26 Jul 2023 02:27:31 GMT
 USER lightstreamer
-# Mon, 10 Jul 2023 20:26:29 GMT
+# Wed, 26 Jul 2023 02:27:31 GMT
 EXPOSE 8080
-# Mon, 10 Jul 2023 20:26:30 GMT
+# Wed, 26 Jul 2023 02:27:31 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Mon, 10 Jul 2023 20:26:30 GMT
+# Wed, 26 Jul 2023 02:27:31 GMT
 CMD ["./LS.sh" "run"]
 ```
 
@@ -11349,25 +11349,25 @@ CMD ["./LS.sh" "run"]
 		Last Modified: Tue, 04 Jul 2023 20:39:05 GMT  
 		Size: 12.5 MB (12495341 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1acd9f0b851bbe1a40c9208d7652c706c94432c0ae0e38d03432f5e8dc0f6959`  
-		Last Modified: Tue, 04 Jul 2023 20:40:28 GMT  
-		Size: 198.6 MB (198553571 bytes)  
+	-	`sha256:16a4bc31f2e63b66f31fdde78e788603ef9924f136ca0084609767db86164dd6`  
+		Last Modified: Wed, 26 Jul 2023 00:58:03 GMT  
+		Size: 144.8 MB (144837137 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:715f805aa7a77fd5cc323e76c291037ce343bc2378976256f12d080d0b1ef699`  
-		Last Modified: Tue, 04 Jul 2023 20:40:14 GMT  
-		Size: 175.0 B  
+	-	`sha256:32a06e4034344f551455951aa1e409bd23c69e90744b826dd11d00ae40689395`  
+		Last Modified: Wed, 26 Jul 2023 00:57:52 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d10d2832989d948fe55ab4b5491625737580fed626a8fb65f0fb18e02153381`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 3.6 MB (3598029 bytes)  
+	-	`sha256:7e454b7dec612df961c94e2aeff6c8709da23d364a27b8c1b657f6cc428f16bb`  
+		Last Modified: Wed, 26 Jul 2023 02:28:12 GMT  
+		Size: 3.6 MB (3598087 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6bb3d53aa3f4c4914eaf132e19e11060179f17c950283450bb8307965eace22`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 2.4 KB (2394 bytes)  
+	-	`sha256:61c470fddf77d9b871d41d7a834f7b818b1f43fae0b1fa4c3c25a5fe52897965`  
+		Last Modified: Wed, 26 Jul 2023 02:28:11 GMT  
+		Size: 2.4 KB (2390 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c9aa1b4eb0a5a9f5751b29ea413bde31def5f713b8517a1d86d5bef9422afce`  
-		Last Modified: Mon, 10 Jul 2023 20:28:26 GMT  
-		Size: 59.2 MB (59179214 bytes)  
+	-	`sha256:f995c61e148752dc5ac8a1138c4333819e9288d6eb5e74002a78260a544cbe05`  
+		Last Modified: Wed, 26 Jul 2023 02:29:45 GMT  
+		Size: 59.2 MB (59179187 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7.4-jdk11` - linux; arm64 variant v8
@@ -11467,7 +11467,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7.4-jdk11-temurin`
 
 ```console
-$ docker pull lightstreamer@sha256:68ae386aec407bd12fd28012d31b0abf06e1bfe360acf5587a915ebf2c17a0af
+$ docker pull lightstreamer@sha256:9f1486e006570033357dabdde8b13f301eff651912184e96899641860a8a55dd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11478,14 +11478,14 @@ $ docker pull lightstreamer@sha256:68ae386aec407bd12fd28012d31b0abf06e1bfe360acf
 ### `lightstreamer:7.4-jdk11-temurin` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:9b7fdb1a98cb66f31103ff87c61c54521527562b16eba2cfc3de5de245a0d4cc
+$ docker pull lightstreamer@sha256:7d487b92b7b95e5a3209f29bb16be5a9578f484468ef6c74d26e327ac9c30f25
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **304.3 MB (304259953 bytes)**  
+-	Total Size: **250.5 MB (250543543 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a0ce30f83f570d4b3939c444f6d9afd28a8b9c971f9c64f6c2c33d46dfa2dbdd`
+-	Image ID: `sha256:174889280ba13c2fd93dc05a2f0281198443c2b6dd4d66c4820500175696f31c`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
@@ -11509,33 +11509,33 @@ ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Tue, 04 Jul 2023 20:34:07 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl wget ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 04 Jul 2023 20:35:02 GMT
-ENV JAVA_VERSION=jdk-11.0.19+7
-# Tue, 04 Jul 2023 20:35:10 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0c7763a19b4af4ef5fbae831781b5184e988d6f131d264482399eeaf51b6e254';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.19_7.tar.gz';          ;;        armhf|arm)          ESUM='be07af349f0d2e1ffb7e01e1e8bac8bffd76e22f6cc1354e5b627222e3395f41';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_arm_linux_hotspot_11.0.19_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1e3704c8e155f8f894953c2a6708a52e6f449bbf5a85450be6fbb2ec76581700';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.19_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='a21e2c30e48df0b7238691833316c008167cbedd4e2f1e677bcb81638420d273';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.19_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='5f19fb28aea3e28fcc402b73ce72f62b602992d48769502effe81c52ca39a581';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.19_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:27 GMT
+ENV JAVA_VERSION=jdk-11.0.20+8
+# Wed, 26 Jul 2023 00:53:35 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='eb821c049c2d2f7c3fbf8ddcce2d608d3aa7d488700e76bfbbebabba93021748';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.20_8.tar.gz';          ;;        armhf|arm)          ESUM='fdf98d94ac3fd49a73a534fd88cf60e757e885c04791d15f76ccfcecb43a25e0';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_arm_linux_hotspot_11.0.20_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1125931b3a38e6e305a1932fc6cfd0b023a0fbec2cab10e835a2ee2c50848b42';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.20_8.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='688c83d9edf2204220df94ce5bab4a6d19f3d91bc0e500f31dda41e16d9a383f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.20_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='7a99258af2e3ee9047e90f1c0c1775fd6285085759501295358d934d662e01f9';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_x64_linux_hotspot_11.0.20_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
+# Wed, 26 Jul 2023 00:53:38 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:38 GMT
 CMD ["jshell"]
-# Wed, 05 Jul 2023 12:05:11 GMT
+# Wed, 26 Jul 2023 02:26:44 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Wed, 05 Jul 2023 12:05:16 GMT
+# Wed, 26 Jul 2023 02:26:49 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Wed, 05 Jul 2023 12:05:17 GMT
+# Wed, 26 Jul 2023 02:26:50 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Mon, 10 Jul 2023 20:26:26 GMT
+# Wed, 26 Jul 2023 02:27:27 GMT
 ENV LIGHTSTREAMER_VERSION=7.4.0
-# Mon, 10 Jul 2023 20:26:26 GMT
+# Wed, 26 Jul 2023 02:27:27 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.4.0/Lightstreamer-7.4.0.tar.gz
-# Mon, 10 Jul 2023 20:26:29 GMT
+# Wed, 26 Jul 2023 02:27:30 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Mon, 10 Jul 2023 20:26:29 GMT
+# Wed, 26 Jul 2023 02:27:31 GMT
 USER lightstreamer
-# Mon, 10 Jul 2023 20:26:29 GMT
+# Wed, 26 Jul 2023 02:27:31 GMT
 EXPOSE 8080
-# Mon, 10 Jul 2023 20:26:30 GMT
+# Wed, 26 Jul 2023 02:27:31 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Mon, 10 Jul 2023 20:26:30 GMT
+# Wed, 26 Jul 2023 02:27:31 GMT
 CMD ["./LS.sh" "run"]
 ```
 
@@ -11548,25 +11548,25 @@ CMD ["./LS.sh" "run"]
 		Last Modified: Tue, 04 Jul 2023 20:39:05 GMT  
 		Size: 12.5 MB (12495341 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1acd9f0b851bbe1a40c9208d7652c706c94432c0ae0e38d03432f5e8dc0f6959`  
-		Last Modified: Tue, 04 Jul 2023 20:40:28 GMT  
-		Size: 198.6 MB (198553571 bytes)  
+	-	`sha256:16a4bc31f2e63b66f31fdde78e788603ef9924f136ca0084609767db86164dd6`  
+		Last Modified: Wed, 26 Jul 2023 00:58:03 GMT  
+		Size: 144.8 MB (144837137 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:715f805aa7a77fd5cc323e76c291037ce343bc2378976256f12d080d0b1ef699`  
-		Last Modified: Tue, 04 Jul 2023 20:40:14 GMT  
-		Size: 175.0 B  
+	-	`sha256:32a06e4034344f551455951aa1e409bd23c69e90744b826dd11d00ae40689395`  
+		Last Modified: Wed, 26 Jul 2023 00:57:52 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d10d2832989d948fe55ab4b5491625737580fed626a8fb65f0fb18e02153381`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 3.6 MB (3598029 bytes)  
+	-	`sha256:7e454b7dec612df961c94e2aeff6c8709da23d364a27b8c1b657f6cc428f16bb`  
+		Last Modified: Wed, 26 Jul 2023 02:28:12 GMT  
+		Size: 3.6 MB (3598087 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6bb3d53aa3f4c4914eaf132e19e11060179f17c950283450bb8307965eace22`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 2.4 KB (2394 bytes)  
+	-	`sha256:61c470fddf77d9b871d41d7a834f7b818b1f43fae0b1fa4c3c25a5fe52897965`  
+		Last Modified: Wed, 26 Jul 2023 02:28:11 GMT  
+		Size: 2.4 KB (2390 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c9aa1b4eb0a5a9f5751b29ea413bde31def5f713b8517a1d86d5bef9422afce`  
-		Last Modified: Mon, 10 Jul 2023 20:28:26 GMT  
-		Size: 59.2 MB (59179214 bytes)  
+	-	`sha256:f995c61e148752dc5ac8a1138c4333819e9288d6eb5e74002a78260a544cbe05`  
+		Last Modified: Wed, 26 Jul 2023 02:29:45 GMT  
+		Size: 59.2 MB (59179187 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7.4-jdk11-temurin` - linux; arm64 variant v8
@@ -12653,7 +12653,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7.4.0-jdk11`
 
 ```console
-$ docker pull lightstreamer@sha256:68ae386aec407bd12fd28012d31b0abf06e1bfe360acf5587a915ebf2c17a0af
+$ docker pull lightstreamer@sha256:9f1486e006570033357dabdde8b13f301eff651912184e96899641860a8a55dd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12664,14 +12664,14 @@ $ docker pull lightstreamer@sha256:68ae386aec407bd12fd28012d31b0abf06e1bfe360acf
 ### `lightstreamer:7.4.0-jdk11` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:9b7fdb1a98cb66f31103ff87c61c54521527562b16eba2cfc3de5de245a0d4cc
+$ docker pull lightstreamer@sha256:7d487b92b7b95e5a3209f29bb16be5a9578f484468ef6c74d26e327ac9c30f25
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **304.3 MB (304259953 bytes)**  
+-	Total Size: **250.5 MB (250543543 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a0ce30f83f570d4b3939c444f6d9afd28a8b9c971f9c64f6c2c33d46dfa2dbdd`
+-	Image ID: `sha256:174889280ba13c2fd93dc05a2f0281198443c2b6dd4d66c4820500175696f31c`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
@@ -12695,33 +12695,33 @@ ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Tue, 04 Jul 2023 20:34:07 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl wget ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 04 Jul 2023 20:35:02 GMT
-ENV JAVA_VERSION=jdk-11.0.19+7
-# Tue, 04 Jul 2023 20:35:10 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0c7763a19b4af4ef5fbae831781b5184e988d6f131d264482399eeaf51b6e254';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.19_7.tar.gz';          ;;        armhf|arm)          ESUM='be07af349f0d2e1ffb7e01e1e8bac8bffd76e22f6cc1354e5b627222e3395f41';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_arm_linux_hotspot_11.0.19_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1e3704c8e155f8f894953c2a6708a52e6f449bbf5a85450be6fbb2ec76581700';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.19_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='a21e2c30e48df0b7238691833316c008167cbedd4e2f1e677bcb81638420d273';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.19_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='5f19fb28aea3e28fcc402b73ce72f62b602992d48769502effe81c52ca39a581';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.19_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:27 GMT
+ENV JAVA_VERSION=jdk-11.0.20+8
+# Wed, 26 Jul 2023 00:53:35 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='eb821c049c2d2f7c3fbf8ddcce2d608d3aa7d488700e76bfbbebabba93021748';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.20_8.tar.gz';          ;;        armhf|arm)          ESUM='fdf98d94ac3fd49a73a534fd88cf60e757e885c04791d15f76ccfcecb43a25e0';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_arm_linux_hotspot_11.0.20_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1125931b3a38e6e305a1932fc6cfd0b023a0fbec2cab10e835a2ee2c50848b42';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.20_8.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='688c83d9edf2204220df94ce5bab4a6d19f3d91bc0e500f31dda41e16d9a383f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.20_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='7a99258af2e3ee9047e90f1c0c1775fd6285085759501295358d934d662e01f9';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_x64_linux_hotspot_11.0.20_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
+# Wed, 26 Jul 2023 00:53:38 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:38 GMT
 CMD ["jshell"]
-# Wed, 05 Jul 2023 12:05:11 GMT
+# Wed, 26 Jul 2023 02:26:44 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Wed, 05 Jul 2023 12:05:16 GMT
+# Wed, 26 Jul 2023 02:26:49 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Wed, 05 Jul 2023 12:05:17 GMT
+# Wed, 26 Jul 2023 02:26:50 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Mon, 10 Jul 2023 20:26:26 GMT
+# Wed, 26 Jul 2023 02:27:27 GMT
 ENV LIGHTSTREAMER_VERSION=7.4.0
-# Mon, 10 Jul 2023 20:26:26 GMT
+# Wed, 26 Jul 2023 02:27:27 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.4.0/Lightstreamer-7.4.0.tar.gz
-# Mon, 10 Jul 2023 20:26:29 GMT
+# Wed, 26 Jul 2023 02:27:30 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Mon, 10 Jul 2023 20:26:29 GMT
+# Wed, 26 Jul 2023 02:27:31 GMT
 USER lightstreamer
-# Mon, 10 Jul 2023 20:26:29 GMT
+# Wed, 26 Jul 2023 02:27:31 GMT
 EXPOSE 8080
-# Mon, 10 Jul 2023 20:26:30 GMT
+# Wed, 26 Jul 2023 02:27:31 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Mon, 10 Jul 2023 20:26:30 GMT
+# Wed, 26 Jul 2023 02:27:31 GMT
 CMD ["./LS.sh" "run"]
 ```
 
@@ -12734,25 +12734,25 @@ CMD ["./LS.sh" "run"]
 		Last Modified: Tue, 04 Jul 2023 20:39:05 GMT  
 		Size: 12.5 MB (12495341 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1acd9f0b851bbe1a40c9208d7652c706c94432c0ae0e38d03432f5e8dc0f6959`  
-		Last Modified: Tue, 04 Jul 2023 20:40:28 GMT  
-		Size: 198.6 MB (198553571 bytes)  
+	-	`sha256:16a4bc31f2e63b66f31fdde78e788603ef9924f136ca0084609767db86164dd6`  
+		Last Modified: Wed, 26 Jul 2023 00:58:03 GMT  
+		Size: 144.8 MB (144837137 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:715f805aa7a77fd5cc323e76c291037ce343bc2378976256f12d080d0b1ef699`  
-		Last Modified: Tue, 04 Jul 2023 20:40:14 GMT  
-		Size: 175.0 B  
+	-	`sha256:32a06e4034344f551455951aa1e409bd23c69e90744b826dd11d00ae40689395`  
+		Last Modified: Wed, 26 Jul 2023 00:57:52 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d10d2832989d948fe55ab4b5491625737580fed626a8fb65f0fb18e02153381`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 3.6 MB (3598029 bytes)  
+	-	`sha256:7e454b7dec612df961c94e2aeff6c8709da23d364a27b8c1b657f6cc428f16bb`  
+		Last Modified: Wed, 26 Jul 2023 02:28:12 GMT  
+		Size: 3.6 MB (3598087 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6bb3d53aa3f4c4914eaf132e19e11060179f17c950283450bb8307965eace22`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 2.4 KB (2394 bytes)  
+	-	`sha256:61c470fddf77d9b871d41d7a834f7b818b1f43fae0b1fa4c3c25a5fe52897965`  
+		Last Modified: Wed, 26 Jul 2023 02:28:11 GMT  
+		Size: 2.4 KB (2390 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c9aa1b4eb0a5a9f5751b29ea413bde31def5f713b8517a1d86d5bef9422afce`  
-		Last Modified: Mon, 10 Jul 2023 20:28:26 GMT  
-		Size: 59.2 MB (59179214 bytes)  
+	-	`sha256:f995c61e148752dc5ac8a1138c4333819e9288d6eb5e74002a78260a544cbe05`  
+		Last Modified: Wed, 26 Jul 2023 02:29:45 GMT  
+		Size: 59.2 MB (59179187 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7.4.0-jdk11` - linux; arm64 variant v8
@@ -12852,7 +12852,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:7.4.0-jdk11-temurin`
 
 ```console
-$ docker pull lightstreamer@sha256:68ae386aec407bd12fd28012d31b0abf06e1bfe360acf5587a915ebf2c17a0af
+$ docker pull lightstreamer@sha256:9f1486e006570033357dabdde8b13f301eff651912184e96899641860a8a55dd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12863,14 +12863,14 @@ $ docker pull lightstreamer@sha256:68ae386aec407bd12fd28012d31b0abf06e1bfe360acf
 ### `lightstreamer:7.4.0-jdk11-temurin` - linux; amd64
 
 ```console
-$ docker pull lightstreamer@sha256:9b7fdb1a98cb66f31103ff87c61c54521527562b16eba2cfc3de5de245a0d4cc
+$ docker pull lightstreamer@sha256:7d487b92b7b95e5a3209f29bb16be5a9578f484468ef6c74d26e327ac9c30f25
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **304.3 MB (304259953 bytes)**  
+-	Total Size: **250.5 MB (250543543 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a0ce30f83f570d4b3939c444f6d9afd28a8b9c971f9c64f6c2c33d46dfa2dbdd`
+-	Image ID: `sha256:174889280ba13c2fd93dc05a2f0281198443c2b6dd4d66c4820500175696f31c`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
@@ -12894,33 +12894,33 @@ ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Tue, 04 Jul 2023 20:34:07 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl wget ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 04 Jul 2023 20:35:02 GMT
-ENV JAVA_VERSION=jdk-11.0.19+7
-# Tue, 04 Jul 2023 20:35:10 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0c7763a19b4af4ef5fbae831781b5184e988d6f131d264482399eeaf51b6e254';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.19_7.tar.gz';          ;;        armhf|arm)          ESUM='be07af349f0d2e1ffb7e01e1e8bac8bffd76e22f6cc1354e5b627222e3395f41';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_arm_linux_hotspot_11.0.19_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1e3704c8e155f8f894953c2a6708a52e6f449bbf5a85450be6fbb2ec76581700';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.19_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='a21e2c30e48df0b7238691833316c008167cbedd4e2f1e677bcb81638420d273';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.19_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='5f19fb28aea3e28fcc402b73ce72f62b602992d48769502effe81c52ca39a581';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.19_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:27 GMT
+ENV JAVA_VERSION=jdk-11.0.20+8
+# Wed, 26 Jul 2023 00:53:35 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='eb821c049c2d2f7c3fbf8ddcce2d608d3aa7d488700e76bfbbebabba93021748';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.20_8.tar.gz';          ;;        armhf|arm)          ESUM='fdf98d94ac3fd49a73a534fd88cf60e757e885c04791d15f76ccfcecb43a25e0';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_arm_linux_hotspot_11.0.20_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1125931b3a38e6e305a1932fc6cfd0b023a0fbec2cab10e835a2ee2c50848b42';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.20_8.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='688c83d9edf2204220df94ce5bab4a6d19f3d91bc0e500f31dda41e16d9a383f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.20_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='7a99258af2e3ee9047e90f1c0c1775fd6285085759501295358d934d662e01f9';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_x64_linux_hotspot_11.0.20_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
+# Wed, 26 Jul 2023 00:53:38 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Tue, 04 Jul 2023 20:35:13 GMT
+# Wed, 26 Jul 2023 00:53:38 GMT
 CMD ["jshell"]
-# Wed, 05 Jul 2023 12:05:11 GMT
+# Wed, 26 Jul 2023 02:26:44 GMT
 LABEL maintainer=Lightstreamer Server Development Team <support@lightstreamer.com>
-# Wed, 05 Jul 2023 12:05:16 GMT
+# Wed, 26 Jul 2023 02:26:49 GMT
 RUN apt-get -y update         && apt-get -y install gnupg         && rm -rf /var/lib/apt/lists/*
-# Wed, 05 Jul 2023 12:05:17 GMT
+# Wed, 26 Jul 2023 02:26:50 GMT
 RUN gpg --batch --keyserver hkp://keyserver.ubuntu.com --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
-# Mon, 10 Jul 2023 20:26:26 GMT
+# Wed, 26 Jul 2023 02:27:27 GMT
 ENV LIGHTSTREAMER_VERSION=7.4.0
-# Mon, 10 Jul 2023 20:26:26 GMT
+# Wed, 26 Jul 2023 02:27:27 GMT
 ENV LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distr/ls-server/7.4.0/Lightstreamer-7.4.0.tar.gz
-# Mon, 10 Jul 2023 20:26:29 GMT
+# Wed, 26 Jul 2023 02:27:30 GMT
 RUN set -ex;         mkdir /lightstreamer && cd /lightstreamer         && curl -fSL -o Lightstreamer.tar.gz ${LIGHTSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHTSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && sed -i -e 's/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<logger name="LightstreamerLogger.init/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerLogger.license/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   -e '/<logger name="LightstreamerProxyAdapters/,+2s/<appender-ref ref="LSConsole" \/>/<!-- <appender-ref ref="LSConsole" \/> -->/'                   conf/lightstreamer_log_conf.xml         && groupadd -r -g 10000 lightstreamer         && useradd --no-log-init -r -g lightstreamer -u 10000 lightstreamer         && chown -R lightstreamer:lightstreamer ../lightstreamer         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc
-# Mon, 10 Jul 2023 20:26:29 GMT
+# Wed, 26 Jul 2023 02:27:31 GMT
 USER lightstreamer
-# Mon, 10 Jul 2023 20:26:29 GMT
+# Wed, 26 Jul 2023 02:27:31 GMT
 EXPOSE 8080
-# Mon, 10 Jul 2023 20:26:30 GMT
+# Wed, 26 Jul 2023 02:27:31 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Mon, 10 Jul 2023 20:26:30 GMT
+# Wed, 26 Jul 2023 02:27:31 GMT
 CMD ["./LS.sh" "run"]
 ```
 
@@ -12933,25 +12933,25 @@ CMD ["./LS.sh" "run"]
 		Last Modified: Tue, 04 Jul 2023 20:39:05 GMT  
 		Size: 12.5 MB (12495341 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1acd9f0b851bbe1a40c9208d7652c706c94432c0ae0e38d03432f5e8dc0f6959`  
-		Last Modified: Tue, 04 Jul 2023 20:40:28 GMT  
-		Size: 198.6 MB (198553571 bytes)  
+	-	`sha256:16a4bc31f2e63b66f31fdde78e788603ef9924f136ca0084609767db86164dd6`  
+		Last Modified: Wed, 26 Jul 2023 00:58:03 GMT  
+		Size: 144.8 MB (144837137 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:715f805aa7a77fd5cc323e76c291037ce343bc2378976256f12d080d0b1ef699`  
-		Last Modified: Tue, 04 Jul 2023 20:40:14 GMT  
-		Size: 175.0 B  
+	-	`sha256:32a06e4034344f551455951aa1e409bd23c69e90744b826dd11d00ae40689395`  
+		Last Modified: Wed, 26 Jul 2023 00:57:52 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d10d2832989d948fe55ab4b5491625737580fed626a8fb65f0fb18e02153381`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 3.6 MB (3598029 bytes)  
+	-	`sha256:7e454b7dec612df961c94e2aeff6c8709da23d364a27b8c1b657f6cc428f16bb`  
+		Last Modified: Wed, 26 Jul 2023 02:28:12 GMT  
+		Size: 3.6 MB (3598087 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6bb3d53aa3f4c4914eaf132e19e11060179f17c950283450bb8307965eace22`  
-		Last Modified: Wed, 05 Jul 2023 12:07:13 GMT  
-		Size: 2.4 KB (2394 bytes)  
+	-	`sha256:61c470fddf77d9b871d41d7a834f7b818b1f43fae0b1fa4c3c25a5fe52897965`  
+		Last Modified: Wed, 26 Jul 2023 02:28:11 GMT  
+		Size: 2.4 KB (2390 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c9aa1b4eb0a5a9f5751b29ea413bde31def5f713b8517a1d86d5bef9422afce`  
-		Last Modified: Mon, 10 Jul 2023 20:28:26 GMT  
-		Size: 59.2 MB (59179214 bytes)  
+	-	`sha256:f995c61e148752dc5ac8a1138c4333819e9288d6eb5e74002a78260a544cbe05`  
+		Last Modified: Wed, 26 Jul 2023 02:29:45 GMT  
+		Size: 59.2 MB (59179187 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `lightstreamer:7.4.0-jdk11-temurin` - linux; arm64 variant v8
