@@ -1,7 +1,7 @@
 ## `ibm-semeru-runtimes:open-8-jdk`
 
 ```console
-$ docker pull ibm-semeru-runtimes@sha256:bf23e569e82f42c873bf5fc2afc6731b9251c33b4be63053956ffcdace38bdf9
+$ docker pull ibm-semeru-runtimes@sha256:16fa5c9ca3a8e90dd6261e656fb86e6a5fce7f50c201fad2ecd998f9d0d350ed
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -134,53 +134,61 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 ### `ibm-semeru-runtimes:open-8-jdk` - linux; ppc64le
 
 ```console
-$ docker pull ibm-semeru-runtimes@sha256:2cf434ca1239d4bc1d928844870c332e439a36c5eb8fb40d4dbc23658183ac1e
+$ docker pull ibm-semeru-runtimes@sha256:916619c51fa0c8e652cb3cd738e63f6b76c2917a6a2e627c51cfe192b10abf01
 ```
 
--	Docker Version: 20.10.12
+-	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **168.9 MB (168897784 bytes)**  
+-	Total Size: **169.2 MB (169213752 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9713f63d053c111c97ff640f15cfac8ca2c8413d44a2176ad50bfb37d3a52c07`
--	Default Command: `["bash"]`
+-	Image ID: `sha256:5683baa1cbb85f531c7fbbe75fe05f14799ebbe667ea4995cd9d4cad02aaffe3`
+-	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 01 Sep 2022 23:50:09 GMT
-ADD file:39b6fa94f6e1300a6fc4b6094e8250c22ecaa6e7c9f934841765d45b919402c5 in / 
-# Thu, 01 Sep 2022 23:50:11 GMT
-CMD ["bash"]
-# Fri, 02 Sep 2022 20:17:06 GMT
+# Wed, 28 Jun 2023 08:45:53 GMT
+ARG RELEASE
+# Wed, 28 Jun 2023 08:45:53 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Wed, 28 Jun 2023 08:45:53 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Wed, 28 Jun 2023 08:45:54 GMT
+LABEL org.opencontainers.image.version=22.04
+# Wed, 28 Jun 2023 08:45:56 GMT
+ADD file:8c2fc380378944326d602742fde0e30458cd3e82012847b0f7e09c7184bfd135 in / 
+# Wed, 28 Jun 2023 08:45:57 GMT
+CMD ["/bin/bash"]
+# Thu, 27 Jul 2023 22:00:37 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Fri, 02 Sep 2022 20:17:36 GMT
+# Thu, 27 Jul 2023 22:01:36 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Fri, 02 Sep 2022 20:17:37 GMT
-ENV JAVA_VERSION=jdk8u345-b01_openj9-0.33.1
-# Fri, 02 Sep 2022 20:17:51 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='55eb440eedc331081012664e18b4640988a210d6443289410662ff03c0b2bf05';          BINARY_URL='https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u345-b01_openj9-0.33.1/ibm-semeru-open-jdk_aarch64_linux_8u345b01_openj9-0.33.1.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='7b9da287bd3c77142a1b3e42e0ff3aa3ce5ad9aeb9ae81e4894a742fe08c057f';          BINARY_URL='https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u345-b01_openj9-0.33.1/ibm-semeru-open-jdk_ppc64le_linux_8u345b01_openj9-0.33.1.tar.gz';          ;;        amd64|x86_64)          ESUM='b748ef07a800b4f12ade9337e4f3e42ee5207e57e688367ab0dd978ebd1876ea';          BINARY_URL='https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u345-b01_openj9-0.33.1/ibm-semeru-open-jdk_x64_linux_8u345b01_openj9-0.33.1.tar.gz';          ;;        s390x)          ESUM='a87652c8150390777aa98bbe6452788522d01fd0a68ab3133663191a9cd32555';          BINARY_URL='https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u345-b01_openj9-0.33.1/ibm-semeru-open-jdk_s390x_linux_8u345b01_openj9-0.33.1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
-# Fri, 02 Sep 2022 20:17:54 GMT
+# Thu, 27 Jul 2023 22:01:38 GMT
+ENV JAVA_VERSION=jdk8u372-b07_openj9-0.38.0
+# Thu, 27 Jul 2023 22:01:56 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='7b9225c7a968242210effe261ee12f01c03259ab8403147b43ac35697fa5c2f4';          BINARY_URL='https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u372-b07_openj9-0.38.0/ibm-semeru-open-jdk_aarch64_linux_8u372b07_openj9-0.38.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='23924d0e8f50a87f2e51c77ee0c19364e97cb68df47baf9352c100387feff172';          BINARY_URL='https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u372-b07_openj9-0.38.0/ibm-semeru-open-jdk_ppc64le_linux_8u372b07_openj9-0.38.0.tar.gz';          ;;        amd64|x86_64)          ESUM='dd1edee0a50ac6766268feeaac2a4e95eca83d30d1e0dea7c1e199dc9048f1c0';          BINARY_URL='https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u372-b07_openj9-0.38.0/ibm-semeru-open-jdk_x64_linux_8u372b07_openj9-0.38.0.tar.gz';          ;;        s390x)          ESUM='c0b354b2f4823cb542843214a153c93e2ee5ac09893fd0a594074766f68d70d7';          BINARY_URL='https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u372-b07_openj9-0.38.0/ibm-semeru-open-jdk_s390x_linux_8u372b07_openj9-0.38.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz;
+# Thu, 27 Jul 2023 22:02:00 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 02 Sep 2022 20:17:54 GMT
+# Thu, 27 Jul 2023 22:02:01 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
-# Fri, 02 Sep 2022 20:18:31 GMT
+# Thu, 27 Jul 2023 22:02:39 GMT
 RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="0db27185d9fc3174f2c670f814df3dda8a008b89d1a38a5d96cbbe119767ebfb1cf0bce956b27954aee9be19c4a7b91f2579d967932207976322033a86075f98";     TOMCAT_DWNLD_URL="https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.35/bin/apache-tomcat-9.0.35.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed";
 ```
 
 -	Layers:
-	-	`sha256:9ef77d5e46df05bf9f34e5871097fd038295a2aa5e29f1806ac3a96aa2545b5f`  
-		Last Modified: Thu, 01 Sep 2022 23:52:34 GMT  
-		Size: 35.7 MB (35721187 bytes)  
+	-	`sha256:7faa46ce6b6f5c34485980029504c3995e38149d0bca67d8b976c5dbb3673644`  
+		Last Modified: Tue, 04 Jul 2023 04:42:31 GMT  
+		Size: 35.7 MB (35711469 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:83db3884c4771176ee04b652834bd627050eb111f27c75598776ec386e104df4`  
-		Last Modified: Fri, 02 Sep 2022 20:30:22 GMT  
-		Size: 12.8 MB (12843880 bytes)  
+	-	`sha256:83f7d78cc0ad5cb61c300b15ac5450a3e09bae8c790cfad3e3a6ea8bf221e7cd`  
+		Last Modified: Thu, 27 Jul 2023 22:13:25 GMT  
+		Size: 12.9 MB (12895204 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:349ccb10478bde4a6e0f8df6a72f0301c8200304c22b9b9ee1898cab33afbe4c`  
-		Last Modified: Fri, 02 Sep 2022 20:30:36 GMT  
-		Size: 116.8 MB (116775567 bytes)  
+	-	`sha256:3bcc6cda3ee6e20e22b8e83d2c7318d7f96fa42f2f4c1fabfc86c59344452a51`  
+		Last Modified: Thu, 27 Jul 2023 22:13:37 GMT  
+		Size: 117.0 MB (117047529 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e1760f0b2088dcc99694ddba58fb6e18f87230bf9d6ca82b2d06b895bb2b174`  
-		Last Modified: Fri, 02 Sep 2022 20:30:20 GMT  
-		Size: 3.6 MB (3557150 bytes)  
+	-	`sha256:17dc1ee48a6be43cb1ce0abfe19f56ac478124e5b4a5b12b3a0da582e129d3ad`  
+		Last Modified: Thu, 27 Jul 2023 22:13:22 GMT  
+		Size: 3.6 MB (3559550 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `ibm-semeru-runtimes:open-8-jdk` - linux; s390x
