@@ -1,7 +1,7 @@
 ## `openjdk:21-ea-jdk-bookworm`
 
 ```console
-$ docker pull openjdk@sha256:e067e4acfbb07ddefa4620a39b0af80249ba3336322bb531a0b7fed7a0fead6a
+$ docker pull openjdk@sha256:9442848e9ecc66c2618cb7f8d49418e0500ab5056f0063e15253b87563fc1490
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,61 +12,61 @@ $ docker pull openjdk@sha256:e067e4acfbb07ddefa4620a39b0af80249ba3336322bb531a0b
 ### `openjdk:21-ea-jdk-bookworm` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:996fc547f6d02a2046a5fa2cfce310886b6204bd43b6501b004c3eb871e9da5a
+$ docker pull openjdk@sha256:3af81ac6ecccc10fb2c6662fe0c76e665097bdd7b7e6aaa0e9b8ab74d55c5d25
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **358.7 MB (358688730 bytes)**  
+-	Total Size: **358.7 MB (358695625 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:231dd2bb3e166f0b2767abb7c737c86e14f0ffd15c9143acab65cb7f2e2029fa`
+-	Image ID: `sha256:9985bcaca7dc6618f6c68e22d82e2bff858a33f667970fbcf620d6fddc34b9ef`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Tue, 04 Jul 2023 01:19:44 GMT
-ADD file:5d17ca085473e890bd6eca4abf6d324c3181f80692523b83ef25d1c42576b99f in / 
-# Tue, 04 Jul 2023 01:19:44 GMT
+# Thu, 27 Jul 2023 23:24:29 GMT
+ADD file:cc1376ecb3d9e93e4160573c110da753ffeb2efe2223351f1fbf483d89f1a756 in / 
+# Thu, 27 Jul 2023 23:24:30 GMT
 CMD ["bash"]
-# Tue, 04 Jul 2023 03:27:59 GMT
+# Fri, 28 Jul 2023 03:00:41 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 04 Jul 2023 03:28:22 GMT
+# Fri, 28 Jul 2023 03:01:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 04 Jul 2023 17:47:54 GMT
+# Fri, 28 Jul 2023 04:08:29 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 				binutils 				fontconfig libfreetype6 				ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 04 Jul 2023 17:48:54 GMT
+# Fri, 28 Jul 2023 04:10:03 GMT
 ENV JAVA_HOME=/usr/local/openjdk-21
-# Tue, 04 Jul 2023 17:48:54 GMT
+# Fri, 28 Jul 2023 04:10:03 GMT
 ENV PATH=/usr/local/openjdk-21/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 04 Jul 2023 17:48:54 GMT
+# Fri, 28 Jul 2023 04:10:03 GMT
 ENV LANG=C.UTF-8
-# Thu, 20 Jul 2023 20:25:23 GMT
+# Fri, 28 Jul 2023 04:10:03 GMT
 ENV JAVA_VERSION=21-ea+32
-# Thu, 20 Jul 2023 20:25:56 GMT
+# Fri, 28 Jul 2023 04:10:15 GMT
 RUN set -eux; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			downloadUrl='https://download.java.net/java/early_access/jdk21/32/GPL/openjdk-21-ea+32_linux-x64_bin.tar.gz'; 			downloadSha256='465d289c104ada32ecbfaf3e2f820a7f48ac26f32f3b574bf6d6a6521c567c15'; 			;; 		'arm64') 			downloadUrl='https://download.java.net/java/early_access/jdk21/32/GPL/openjdk-21-ea+32_linux-aarch64_bin.tar.gz'; 			downloadSha256='49275ab32b5c08efa4b6ec1e8900107fb3acc940ede2dad04328ce591b996a2c'; 			;; 		*) echo >&2 "error: unsupported architecture: '$arch'"; exit 1 ;; 	esac; 		wget --progress=dot:giga -O openjdk.tgz "$downloadUrl"; 	echo "$downloadSha256 *openjdk.tgz" | sha256sum --strict --check -; 		mkdir -p "$JAVA_HOME"; 	tar --extract 		--file openjdk.tgz 		--directory "$JAVA_HOME" 		--strip-components 1 		--no-same-owner 	; 	rm openjdk.tgz*; 		{ 		echo '#!/usr/bin/env bash'; 		echo 'set -Eeuo pipefail'; 		echo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth "$JAVA_HOME/lib/security/cacerts"'; 	} > /etc/ca-certificates/update.d/docker-openjdk; 	chmod +x /etc/ca-certificates/update.d/docker-openjdk; 	/etc/ca-certificates/update.d/docker-openjdk; 		find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; 	ldconfig; 		java -Xshare:dump; 		fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java; 	javac --version; 	java --version
-# Thu, 20 Jul 2023 20:25:56 GMT
+# Fri, 28 Jul 2023 04:10:15 GMT
 CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:d52e4f012db158bb7c0fe215b98af1facaddcbaee530efd69b1bae07d597b711`  
-		Last Modified: Tue, 04 Jul 2023 01:24:39 GMT  
-		Size: 49.6 MB (49551432 bytes)  
+	-	`sha256:785ef8b9b236a5f027f33cae77513051704c0538bff455ff5548105c954c3b1c`  
+		Last Modified: Thu, 27 Jul 2023 23:29:02 GMT  
+		Size: 49.6 MB (49557354 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7dd206bea61ff3e3b54be1c20b58d8475ddd6f89df176146ddb7a2fd2c747ea2`  
-		Last Modified: Tue, 04 Jul 2023 03:51:23 GMT  
-		Size: 24.0 MB (24030593 bytes)  
+	-	`sha256:5a6dad8f55ae6c733e986316bd08205c8b2c41640bf8d08ff6e9bbcb6884304f`  
+		Last Modified: Fri, 28 Jul 2023 03:07:18 GMT  
+		Size: 24.0 MB (24030539 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2320f9be4a9c605d1ac847cf67cec42b91484a7cf7c94996417a0c7c316deadc`  
-		Last Modified: Tue, 04 Jul 2023 03:51:42 GMT  
-		Size: 64.1 MB (64111613 bytes)  
+	-	`sha256:bd36c7bfe5f4bdffcc0bbb74b0fb38feb35c286ea58b5992617fb38b0c933603`  
+		Last Modified: Fri, 28 Jul 2023 03:07:36 GMT  
+		Size: 64.1 MB (64112293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:efe2eadbbcddf082c22d3a63d0dabdea67e8dca87688709258efc404506be95b`  
-		Last Modified: Tue, 04 Jul 2023 17:50:58 GMT  
-		Size: 16.9 MB (16947014 bytes)  
+	-	`sha256:23081abc6d37ce8cde709fa970343e4a97f93dc71c081510386ac63a6804ae7f`  
+		Last Modified: Fri, 28 Jul 2023 04:12:13 GMT  
+		Size: 16.9 MB (16947358 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:640530d0b8940ac2423f6fdd558379cdd467e31768efb8529f6ae8756c616537`  
-		Last Modified: Thu, 20 Jul 2023 20:33:22 GMT  
-		Size: 204.0 MB (204048078 bytes)  
+	-	`sha256:e8f504008fceb57024e1a17e921d4415509713b1ea9c853a12da87a875fa9cbd`  
+		Last Modified: Fri, 28 Jul 2023 04:14:51 GMT  
+		Size: 204.0 MB (204048081 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `openjdk:21-ea-jdk-bookworm` - linux; arm64 variant v8
