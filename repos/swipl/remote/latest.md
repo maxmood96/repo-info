@@ -1,7 +1,7 @@
 ## `swipl:latest`
 
 ```console
-$ docker pull swipl@sha256:3978753ba6ff8202a14f2baec9733ad53a9c9ed84a43ed24765c16776017dce3
+$ docker pull swipl@sha256:9315b40750d35d591209a0e59d03483f51343a9be60ce6e8c5ccf3eecd13c6e5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -13,45 +13,45 @@ $ docker pull swipl@sha256:3978753ba6ff8202a14f2baec9733ad53a9c9ed84a43ed24765c1
 ### `swipl:latest` - linux; amd64
 
 ```console
-$ docker pull swipl@sha256:1ac8cda0b3da46aa3c8ca554974ef76803ab0257c29300cace3b80e374aa6c65
+$ docker pull swipl@sha256:7179296acd678cb7bf488ead437d7ab99355152706576673f857ea1a3e5bbb22
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **78.9 MB (78946361 bytes)**  
+-	Total Size: **78.9 MB (78945818 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:14b54157fde3bb7d7fe041810ec56cc5adbd73a0f768cc623f98a7a4fe3316bb`
+-	Image ID: `sha256:ccec66bf9b9ccb123630cc6d49525b8ef3c2f450af1c09be09987732021e9033`
 -	Default Command: `["swipl"]`
 
 ```dockerfile
-# Tue, 04 Jul 2023 01:20:23 GMT
-ADD file:4a063d4e089ef10c6806d7042a0040078674ac2db61df02df8bbb8fa4894910a in / 
-# Tue, 04 Jul 2023 01:20:23 GMT
+# Thu, 27 Jul 2023 23:25:07 GMT
+ADD file:3d726bf0abbc08d6dda026cc406cdfb529deb60071641d164de28fcd62d1c1c0 in / 
+# Thu, 27 Jul 2023 23:25:07 GMT
 CMD ["bash"]
-# Tue, 04 Jul 2023 12:26:15 GMT
+# Fri, 28 Jul 2023 15:31:32 GMT
 LABEL maintainer=Dave Curylo <dave@curylo.org>, Michael Hendricks <michael@ndrix.org>
-# Tue, 04 Jul 2023 12:26:34 GMT
+# Fri, 28 Jul 2023 15:31:45 GMT
 RUN apt-get update &&     apt-get install -y --no-install-recommends     libtcmalloc-minimal4     libarchive13     libyaml-dev     libgmp10     libossp-uuid16     libssl1.1     ca-certificates     libdb5.3     libpcre2-8-0     libedit2     libgeos-3.9.0     libspatialindex6     unixodbc     odbc-postgresql     tdsodbc     libmariadbclient-dev-compat     libsqlite3-0     libserd-0-0     libraptor2-0 &&     dpkgArch="$(dpkg --print-architecture)" &&     rm -rf /var/lib/apt/lists/*
-# Tue, 04 Jul 2023 12:26:35 GMT
+# Fri, 28 Jul 2023 15:31:46 GMT
 ENV LANG=C.UTF-8
-# Tue, 04 Jul 2023 12:34:19 GMT
+# Fri, 28 Jul 2023 15:39:25 GMT
 RUN set -eux;     SWIPL_VER=9.1.11;     SWIPL_CHECKSUM=2a668333faebc19431989bd08f5d0f9716af29eb914a092a795bf3705925a289;     BUILD_DEPS='make cmake ninja-build gcc g++ wget git autoconf libarchive-dev libgmp-dev libossp-uuid-dev libpcre2-dev libreadline-dev libedit-dev libssl-dev zlib1g-dev libdb-dev unixodbc-dev libsqlite3-dev libserd-dev libraptor2-dev libgeos++-dev libspatialindex-dev libgoogle-perftools-dev libgeos-dev libspatialindex-dev';     dpkgArch="$(dpkg --print-architecture)";     apt-get update; apt-get install -y --no-install-recommends $BUILD_DEPS; rm -rf /var/lib/apt/lists/*;     mkdir /tmp/src;     cd /tmp/src;     wget -q https://www.swi-prolog.org/download/devel/src/swipl-$SWIPL_VER.tar.gz;     echo "$SWIPL_CHECKSUM  swipl-$SWIPL_VER.tar.gz" >> swipl-$SWIPL_VER.tar.gz-CHECKSUM;     sha256sum -c swipl-$SWIPL_VER.tar.gz-CHECKSUM;     tar -xzf swipl-$SWIPL_VER.tar.gz;     mkdir swipl-$SWIPL_VER/build;     cd swipl-$SWIPL_VER/build;     cmake -DCMAKE_BUILD_TYPE=PGO           -DSWIPL_PACKAGES_X=OFF 	  -DSWIPL_PACKAGES_JAVA=OFF 	  -DCMAKE_INSTALL_PREFIX=/usr 	  -G Ninja           ..;     ninja;     ninja install;     rm -rf /tmp/src;     mkdir -p /usr/share/swi-prolog/pack;     cd /usr/share/swi-prolog/pack;     install_addin () {         git clone "$2" "$1";         git -C "$1" checkout -q "$3";         if [ "$1" = 'prosqlite' ]; then rm -rf "$1/lib"; fi;         swipl -g "pack_rebuild($1)" -t halt;         find "$1" -mindepth 1 -maxdepth 1 ! -name lib ! -name prolog ! -name pack.pl -exec rm -rf {} +;         find "$1" -name .git -exec rm -rf {} +;         find "$1" -name '*.so' -exec strip {} +;     };     dpkgArch="$(dpkg --print-architecture)";     install_addin prosqlite https://github.com/nicos-angelopoulos/prosqlite.git 95aba2a5c156b831cf2bcfd387f65a9b470280e4;     [ "$dpkgArch" = 'armhf' ] || [ "$dpkgArch" = 'armel' ] || install_addin space https://github.com/JanWielemaker/space.git 8ab230a67e2babb3e81fac043512a7de7f4593bf;     [ "$dpkgArch" = 'armhf' ] || [ "$dpkgArch" = 'armel' ] || install_addin rocksdb https://github.com/JanWielemaker/rocksdb.git 634c31e928e2a5100fbcfd26c21cd32eeb6bf369;     [ "$dpkgArch" = 'armhf' ] || [ "$dpkgArch" = 'armel' ] || install_addin hdt https://github.com/JanWielemaker/hdt.git e0a0eff87fc3318434cb493690c570e1255ed30e;     [ "$dpkgArch" = 'armhf' ] || [ "$dpkgArch" = 'armel' ] || install_addin rserve_client https://github.com/JanWielemaker/rserve_client.git 48a46160bc2768182be757ab179c26935db41de7;     apt-get purge -y --auto-remove $BUILD_DEPS
-# Tue, 04 Jul 2023 12:34:19 GMT
+# Fri, 28 Jul 2023 15:39:26 GMT
 CMD ["swipl"]
 ```
 
 -	Layers:
-	-	`sha256:9d21b12d5fab9ab82969054d72411ce627c209257df64b6057016c981e163c30`  
-		Last Modified: Tue, 04 Jul 2023 01:25:43 GMT  
-		Size: 31.4 MB (31417388 bytes)  
+	-	`sha256:1d5252f66ea9b661aceca1027b3d7ca259a50608261a25b51148119ecf086932`  
+		Last Modified: Thu, 27 Jul 2023 23:30:08 GMT  
+		Size: 31.4 MB (31417602 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ac528fb4b9660b081f5d56988fdcfd64e9372464989dccf3f23a46457571715`  
-		Last Modified: Tue, 04 Jul 2023 12:42:14 GMT  
-		Size: 30.0 MB (29997545 bytes)  
+	-	`sha256:1d839ddbafb318d302a6e18661cf350ff6f718ff16454d0f42a3766988587013`  
+		Last Modified: Fri, 28 Jul 2023 15:47:16 GMT  
+		Size: 30.0 MB (29997671 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae185debeb61f52f6905f7298de2c8fc0e6375935ec41afeaac635dbbc24e08a`  
-		Last Modified: Tue, 04 Jul 2023 12:42:12 GMT  
-		Size: 17.5 MB (17531428 bytes)  
+	-	`sha256:100650b7d588d82d9f5ef8a2169bb91672005104186044e7e8d8666caefd6ed4`  
+		Last Modified: Fri, 28 Jul 2023 15:47:15 GMT  
+		Size: 17.5 MB (17530545 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `swipl:latest` - linux; arm variant v7
