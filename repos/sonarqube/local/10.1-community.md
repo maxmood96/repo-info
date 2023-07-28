@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:907b1b7b82bee77ada1c7170a6f72b871c806fc1a0e97d8e77490b7121c989e4`
-- Created: `2023-07-05T12:22:00.904742328Z`
-- Virtual Size: ~ 700.43 Mb  
+- Image ID: `sha256:aea2e7f7845362fac4a046fc4fe5d16d6f864e0735ded7c3d9b6670dd2709848`
+- Created: `2023-07-26T00:28:49.960661075Z`
+- Virtual Size: ~ 701.55 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/sonarqube/docker/entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-17.0.7+7`
+  - `JAVA_VERSION=jdk-17.0.8+7`
   - `DOCKER_RUNNING=true`
   - `SONARQUBE_HOME=/opt/sonarqube`
   - `SONAR_VERSION=10.1.0.73491`
@@ -314,11 +314,11 @@ $ apt-get source -qq --print-uris coreutils=8.32-4.1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.debian.tar.xz' coreutils_8.32-4.1ubuntu1.debian.tar.xz 41096 SHA512:74adfa2f2a85af8d7024ad6d13942e915217dcb10e29caa9c314e0a15da6ec019e7aa52ac5351c35ccea1bace7a05c6dc7569b7b0487c8fcd46b3ba42d66d89d
 ```
 
-### `dpkg` source package: `curl=7.81.0-1ubuntu1.10`
+### `dpkg` source package: `curl=7.81.0-1ubuntu1.13`
 
 Binary Packages:
 
-- `libcurl4:amd64=7.81.0-1ubuntu1.10`
+- `libcurl4:amd64=7.81.0-1ubuntu1.13`
 
 Licenses: (parsed from: `/usr/share/doc/libcurl4/copyright`)
 
@@ -329,9 +329,15 @@ Licenses: (parsed from: `/usr/share/doc/libcurl4/copyright`)
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.13
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.13.dsc' curl_7.81.0-1ubuntu1.13.dsc 3143 SHA512:e2bde02f21c21c31a5d4d9d724b33e99da0578869ce8bf49f84fa33b57a4f2909d2f5bebf97e43f0d39cb7fba230d486e79f448864f445f7dddef4f454802d90
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz' curl_7.81.0.orig.tar.gz 4188040 SHA512:e3084f0fa083f7f93eac923edbfdddb5fd0a372b94673ba9d4427a2b95508898c15ecdf63b99a1c1f6cf3215e27b06cbaa2b7073df038d43b362e586f92495d3
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz.asc' curl_7.81.0.orig.tar.gz.asc 488 SHA512:92bc5ede831551285d67b03abe8400c609ad31c9d33e324ee5c41b92dd5c2a0245a09a396bd76807b3e44bcfef944b1e16ac266264f7b85d27cc1c072a6e82bd
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.13.debian.tar.xz' curl_7.81.0-1ubuntu1.13.debian.tar.xz 70616 SHA512:28538b2792ccbf575b95775e9544d045960f99098f61bc43f6cd8744a84179d7205f362bd13839c122c1791f9901b07790923f602ceb9a5d90710bbed89d63ae
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg2-3ubuntu1.2`
 
@@ -1567,14 +1573,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.5.14+dfsg-0ubuntu0.22.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.14%2bdfsg-0ubuntu0.22.04.2.dsc' openldap_2.5.14+dfsg-0ubuntu0.22.04.2.dsc 3319 SHA512:fabc88df8932e495a3401b2d34f142b0faf4f0c2004ea4c4af8a72088737dd803bd1586c6bd4a9cf02e2a88e724193750c6f011807f201bb069354f7f84b3306
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.14%2bdfsg.orig.tar.gz' openldap_2.5.14+dfsg.orig.tar.gz 5622405 SHA512:9dd020503317ec291a9a32ca4333dd6b31f3253d01e18485a02efe5ac02a778003565db751294df414a381cb4dab269572958ea092ea5ddd5c7570764b735bd7
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.14%2bdfsg-0ubuntu0.22.04.2.debian.tar.xz' openldap_2.5.14+dfsg-0ubuntu0.22.04.2.debian.tar.xz 171824 SHA512:5a1b0ebc09d91c5a0cd8e851bf57522d1528d2cecdf5882dc8cb3b8b82181b52e02dc34e0c52cdaf2468e00716e6994a1d41c5561a9871fc37a5db68d5d5d84b
-```
 
 ### `dpkg` source package: `openssl=3.0.2-0ubuntu1.10`
 
