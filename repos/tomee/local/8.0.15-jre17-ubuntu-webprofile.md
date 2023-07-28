@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2e24ab854f88b381981aa0ca401bb166a60e67158bdc43e052336d89a88dee80`
-- Created: `2023-07-05T10:31:21.202874284Z`
-- Virtual Size: ~ 332.78 Mb  
+- Image ID: `sha256:6ffb4ef7495a7250e3643b4664e3224e2f9cbbe9b0f36ef6f25231a438e4a49b`
+- Created: `2023-07-25T22:53:20.94168628Z`
+- Virtual Size: ~ 333.21 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-17.0.7+7`
+  - `JAVA_VERSION=jdk-17.0.8+7`
   - `TOMEE_VER=8.0.15`
   - `TOMEE_BUILD=webprofile`
 - Labels:

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e76431aed21f1139d3139c68d5fdc84d2c0aebfc55a059a0d2ce688a277c3f23`
-- Created: `2023-06-15T08:38:38.180242742Z`
-- Virtual Size: ~ 253.46 Mb  
+- Image ID: `sha256:461358d01627ce5b4054a9288186765918410e4de49da1ef8469c1e4aa39f69c`
+- Created: `2023-07-26T01:34:56.201488807Z`
+- Virtual Size: ~ 253.80 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-11.0.19+7`
+  - `JAVA_VERSION=jdk-11.0.20+8`
   - `TOMEE_VER=8.0.15`
   - `TOMEE_BUILD=plume`
 
@@ -176,16 +176,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.1.2-r0 description:
+curl-8.2.0-r1 description:
 URL retrival utility and library
 
-curl-8.1.2-r0 webpage:
+curl-8.2.0-r1 webpage:
 https://curl.se/
 
-curl-8.1.2-r0 installed size:
-236 KiB
+curl-8.2.0-r1 installed size:
+240 KiB
 
-curl-8.1.2-r0 license:
+curl-8.2.0-r1 license:
 curl
 
 ```
@@ -295,16 +295,16 @@ LGPL-3.0-or-later OR GPL-2.0-or-later
 ### `apk` package: `gnupg-dirmngr`
 
 ```console
-gnupg-dirmngr-2.4.1-r1 description:
+gnupg-dirmngr-2.4.3-r0 description:
 GNU Privacy Guard 2 - network certificate management service
 
-gnupg-dirmngr-2.4.1-r1 webpage:
+gnupg-dirmngr-2.4.3-r0 webpage:
 https://www.gnupg.org/
 
-gnupg-dirmngr-2.4.1-r1 installed size:
-656 KiB
+gnupg-dirmngr-2.4.3-r0 installed size:
+660 KiB
 
-gnupg-dirmngr-2.4.1-r1 license:
+gnupg-dirmngr-2.4.3-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -312,16 +312,16 @@ GPL-3.0-or-later
 ### `apk` package: `gnupg-gpgconf`
 
 ```console
-gnupg-gpgconf-2.4.1-r1 description:
+gnupg-gpgconf-2.4.3-r0 description:
 GNU Privacy Guard 2 - core configuration utilities
 
-gnupg-gpgconf-2.4.1-r1 webpage:
+gnupg-gpgconf-2.4.3-r0 webpage:
 https://www.gnupg.org/
 
-gnupg-gpgconf-2.4.1-r1 installed size:
+gnupg-gpgconf-2.4.3-r0 installed size:
 252 KiB
 
-gnupg-gpgconf-2.4.1-r1 license:
+gnupg-gpgconf-2.4.3-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -329,16 +329,16 @@ GPL-3.0-or-later
 ### `apk` package: `gnupg-keyboxd`
 
 ```console
-gnupg-keyboxd-2.4.1-r1 description:
+gnupg-keyboxd-2.4.3-r0 description:
 GNU Privacy Guard 2 - keyboxd manager
 
-gnupg-keyboxd-2.4.1-r1 webpage:
+gnupg-keyboxd-2.4.3-r0 webpage:
 https://www.gnupg.org/
 
-gnupg-keyboxd-2.4.1-r1 installed size:
+gnupg-keyboxd-2.4.3-r0 installed size:
 236 KiB
 
-gnupg-keyboxd-2.4.1-r1 license:
+gnupg-keyboxd-2.4.3-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -363,16 +363,16 @@ LGPL-2.1-or-later
 ### `apk` package: `gpg`
 
 ```console
-gpg-2.4.1-r1 description:
+gpg-2.4.3-r0 description:
 GNU Privacy Guard 2 - public key operations only
 
-gpg-2.4.1-r1 webpage:
+gpg-2.4.3-r0 webpage:
 https://www.gnupg.org/
 
-gpg-2.4.1-r1 installed size:
+gpg-2.4.3-r0 installed size:
 932 KiB
 
-gpg-2.4.1-r1 license:
+gpg-2.4.3-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -380,16 +380,16 @@ GPL-3.0-or-later
 ### `apk` package: `gpg-agent`
 
 ```console
-gpg-agent-2.4.1-r1 description:
+gpg-agent-2.4.3-r0 description:
 GNU Privacy Guard 2 - cryptographic agent
 
-gpg-agent-2.4.1-r1 webpage:
+gpg-agent-2.4.3-r0 webpage:
 https://www.gnupg.org/
 
-gpg-agent-2.4.1-r1 installed size:
+gpg-agent-2.4.3-r0 installed size:
 676 KiB
 
-gpg-agent-2.4.1-r1 license:
+gpg-agent-2.4.3-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -397,16 +397,16 @@ GPL-3.0-or-later
 ### `apk` package: `libassuan`
 
 ```console
-libassuan-2.5.5-r2 description:
+libassuan-2.5.6-r0 description:
 IPC library used by some GnuPG related software
 
-libassuan-2.5.5-r2 webpage:
+libassuan-2.5.6-r0 webpage:
 https://www.gnupg.org/software/libassuan/index.html
 
-libassuan-2.5.5-r2 installed size:
+libassuan-2.5.6-r0 installed size:
 84 KiB
 
-libassuan-2.5.5-r2 license:
+libassuan-2.5.6-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -465,16 +465,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.1.2-r0 description:
+libcurl-8.2.0-r1 description:
 The multiprotocol file transfer library
 
-libcurl-8.1.2-r0 webpage:
+libcurl-8.2.0-r1 webpage:
 https://curl.se/
 
-libcurl-8.1.2-r0 installed size:
-548 KiB
+libcurl-8.2.0-r1 installed size:
+552 KiB
 
-libcurl-8.1.2-r0 license:
+libcurl-8.2.0-r1 license:
 curl
 
 ```
@@ -601,16 +601,16 @@ LGPL-2.1-or-later
 ### `apk` package: `libksba`
 
 ```console
-libksba-1.6.3-r2 description:
+libksba-1.6.4-r0 description:
 Libksba is a CMS and X.509 access library
 
-libksba-1.6.3-r2 webpage:
+libksba-1.6.4-r0 webpage:
 https://www.gnupg.org/software/libksba/index.html
 
-libksba-1.6.3-r2 installed size:
+libksba-1.6.4-r0 installed size:
 216 KiB
 
-libksba-1.6.3-r2 license:
+libksba-1.6.4-r0 license:
 LGPL-3.0-only AND GPL-2.0-only AND GPL-3.0-only
 
 ```
@@ -618,16 +618,16 @@ LGPL-3.0-only AND GPL-2.0-only AND GPL-3.0-only
 ### `apk` package: `libldap`
 
 ```console
-libldap-2.6.4-r3 description:
+libldap-2.6.5-r0 description:
 OpenLDAP libraries
 
-libldap-2.6.4-r3 webpage:
+libldap-2.6.5-r0 webpage:
 https://www.openldap.org/
 
-libldap-2.6.4-r3 installed size:
+libldap-2.6.5-r0 installed size:
 400 KiB
 
-libldap-2.6.4-r3 license:
+libldap-2.6.5-r0 license:
 OLDAP-2.8
 
 ```
@@ -873,16 +873,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `nghttp2-libs`
 
 ```console
-nghttp2-libs-1.53.0-r0 description:
+nghttp2-libs-1.55.1-r0 description:
 Experimental HTTP/2 client, server and proxy (libraries)
 
-nghttp2-libs-1.53.0-r0 webpage:
+nghttp2-libs-1.55.1-r0 webpage:
 https://nghttp2.org
 
-nghttp2-libs-1.53.0-r0 installed size:
+nghttp2-libs-1.55.1-r0 installed size:
 152 KiB
 
-nghttp2-libs-1.53.0-r0 license:
+nghttp2-libs-1.55.1-r0 license:
 MIT
 
 ```
