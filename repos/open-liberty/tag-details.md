@@ -14,6 +14,12 @@
 -	[`open-liberty:23.0.0.6-kernel-slim-java11-openj9`](#open-liberty23006-kernel-slim-java11-openj9)
 -	[`open-liberty:23.0.0.6-kernel-slim-java17-openj9`](#open-liberty23006-kernel-slim-java17-openj9)
 -	[`open-liberty:23.0.0.6-kernel-slim-java8-openj9`](#open-liberty23006-kernel-slim-java8-openj9)
+-	[`open-liberty:23.0.0.7-full-java11-openj9`](#open-liberty23007-full-java11-openj9)
+-	[`open-liberty:23.0.0.7-full-java17-openj9`](#open-liberty23007-full-java17-openj9)
+-	[`open-liberty:23.0.0.7-full-java8-openj9`](#open-liberty23007-full-java8-openj9)
+-	[`open-liberty:23.0.0.7-kernel-slim-java11-openj9`](#open-liberty23007-kernel-slim-java11-openj9)
+-	[`open-liberty:23.0.0.7-kernel-slim-java17-openj9`](#open-liberty23007-kernel-slim-java17-openj9)
+-	[`open-liberty:23.0.0.7-kernel-slim-java8-openj9`](#open-liberty23007-kernel-slim-java8-openj9)
 -	[`open-liberty:beta`](#open-libertybeta)
 -	[`open-liberty:beta-java11`](#open-libertybeta-java11)
 -	[`open-liberty:beta-java17`](#open-libertybeta-java17)
@@ -6686,6 +6692,30 @@ CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 		Last Modified: Thu, 27 Jul 2023 18:55:53 GMT  
 		Size: 2.6 MB (2639608 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `open-liberty:23.0.0.7-full-java11-openj9`
+
+**does not exist** (yet?)
+
+## `open-liberty:23.0.0.7-full-java17-openj9`
+
+**does not exist** (yet?)
+
+## `open-liberty:23.0.0.7-full-java8-openj9`
+
+**does not exist** (yet?)
+
+## `open-liberty:23.0.0.7-kernel-slim-java11-openj9`
+
+**does not exist** (yet?)
+
+## `open-liberty:23.0.0.7-kernel-slim-java17-openj9`
+
+**does not exist** (yet?)
+
+## `open-liberty:23.0.0.7-kernel-slim-java8-openj9`
+
+**does not exist** (yet?)
 
 ## `open-liberty:beta`
 
