@@ -1823,15 +1823,9 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:9.3p1-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.3p1-1ubuntu1.dsc' openssh_9.3p1-1ubuntu1.dsc 3139 SHA512:17dcb9dff6e17d182267ad5be5ea5577a15bf3dafae6e0cf9a4a8719b2a37d3a8b6b454f322a1cec668040edf2925e6245edaea4a9f0275068105cda1e94c3c5
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.3p1.orig.tar.gz' openssh_9.3p1.orig.tar.gz 1856839 SHA512:087ff6fe5f6caab4c6c3001d906399e02beffad7277280f11187420c2939fd4befdcb14643862a657ce4cad2f115b82a0a1a2c99df6ee54dcd76b53647637c19
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.3p1.orig.tar.gz.asc' openssh_9.3p1.orig.tar.gz.asc 833 SHA512:6222378eb24a445c6c1db255392b405f5369b1af0e92f558d4ba05b0d83ab0d084cb8f4b91d7ae8636f333d970638a6635e2bc7af885135dd34992d87f2ef1f4
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.3p1-1ubuntu1.debian.tar.xz' openssh_9.3p1-1ubuntu1.debian.tar.xz 189108 SHA512:afca917da29930c73a5d887155933552a048150d3d72e37e1e5e3e848c81a16c061e0efd3257349029853c85ffd3ce31cf3368914c8967089f49cea8b4cd5fc5
-```
 
 ### `dpkg` source package: `openssl=3.0.9-1ubuntu1`
 
@@ -1930,14 +1924,13 @@ Licenses: (parsed from: `/usr/share/doc/libpcre2-8-0/copyright`)
 - `X11`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pcre2=10.42-1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.42-1.dsc' pcre2_10.42-1.dsc 2302 SHA512:885d8d2a345d3c4a1ac95f0b5aed856392d35a4823ea3404536f17f8a7077bbaee943554d9ce40ba565b5262e577ed0649cd4f0b8add8873bed7211cc36b0454
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.42.orig.tar.gz' pcre2_10.42.orig.tar.gz 2397194 SHA512:a3db6c5c620775838819be616652e73ce00f5ef5c1f49f559ff3efb51a119d02f01254c5901c1f7d0c47c0ddfcf4313e38d6ca32c35381b8f87f36896d10e6f7
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.42-1.diff.gz' pcre2_10.42-1.diff.gz 7895 SHA512:381b28be73dbaceba13d6bc3498ae10155d6c614add038a306481ad86a9033586e3873822cdfadd037b155bb9ae9c2fa6bcfd66001dad653fb09b238caa11eb2
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/pcre2/10.42-1/
+
 
 ### `dpkg` source package: `perl=5.36.0-7ubuntu1`
 
