@@ -1,13 +1,13 @@
-# `perl:5.37.11-threaded`
+# `perl:5.39.1-threaded-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:77952d9f6a47947a77e628ef9a57abc4a31649d5f72fa5ff05db99a831b28e63`
-- Created: `2023-07-04T11:57:11.041459836Z`
-- Virtual Size: ~ 895.64 Mb  
+- Image ID: `sha256:c5000077e58302f3545cf9f48fa2862d09a00f83bf5fb9e1a72004938740740d`
+- Created: `2023-08-01T02:59:08.492884121Z`
+- Virtual Size: ~ 895.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Command: `["perl5.37.11","-de0"]`
+- Command: `["perl5.39.1","-de0"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 - Labels:
@@ -3683,11 +3683,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.4.8+dfsg-2.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.4.8+dfsg-2.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=5.10.179-1`
+### `dpkg` source package: `linux=5.10.179-2`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.10.179-1`
+- `linux-libc-dev:amd64=5.10.179-2`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -3705,7 +3705,7 @@ This is *usually* due to a new package version being released and the old versio
 
 The source package *may* still be available for download from:
 
-- http://snapshot.debian.org/package/linux/5.10.179-1/
+- http://snapshot.debian.org/package/linux/5.10.179-2/
 
 
 ### `dpkg` source package: `lsb=11.1.0`
