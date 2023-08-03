@@ -1,7 +1,7 @@
 ## `caddy:builder-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull caddy@sha256:52c38c8373f27a366c68033cbcf38908183bcbfb1d15c77f0a6184de5297ca81
+$ docker pull caddy@sha256:329e2efa989a3cb432f738204062491c82b28c56e691c829af2603cfb6eb0cd9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull caddy@sha256:52c38c8373f27a366c68033cbcf38908183bcbfb1d15c77f0a618
 ### `caddy:builder-windowsservercore-ltsc2022` - windows version 10.0.20348.1850; amd64
 
 ```console
-$ docker pull caddy@sha256:87c2a0e1e436b5923868300dbaff15ff3fcaf238585c26dfc3ddae194dd3e091
+$ docker pull caddy@sha256:0579eb7f3179f7d150137143815043ee557fc2b07d4e5ca152e319dde2c2109e
 ```
 
 -	Docker Version: 20.10.21
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.9 GB (1873786914 bytes)**  
+-	Total Size: **1.9 GB (1873786008 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c148ed76f4ea520961157a29cf0a754ffe1c3dc3429a81c99129988b92f4e2c4`
+-	Image ID: `sha256:4aff77daaef4b36f2a690bbcfc6827fcbb894a13690becd0fb6fa12866afb1e3`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -53,13 +53,13 @@ WORKDIR C:\go
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
 # Tue, 01 Aug 2023 22:23:56 GMT
 ENV XCADDY_VERSION=v0.3.4
-# Tue, 01 Aug 2023 22:23:56 GMT
-ENV CADDY_VERSION=v2.6.4
-# Tue, 01 Aug 2023 22:23:57 GMT
+# Thu, 03 Aug 2023 21:21:46 GMT
+ENV CADDY_VERSION=v2.7.2
+# Thu, 03 Aug 2023 21:21:46 GMT
 ENV XCADDY_SKIP_CLEANUP=1
-# Tue, 01 Aug 2023 22:24:20 GMT
+# Thu, 03 Aug 2023 21:22:11 GMT
 RUN Invoke-WebRequest         -Uri "https://github.com/caddyserver/xcaddy/releases/download/v0.3.4/xcaddy_0.3.4_windows_amd64.zip"         -OutFile "/xcaddy.zip";     if (!(Get-FileHash -Path /xcaddy.zip -Algorithm SHA512).Hash.ToLower().Equals('542b4c083852d41081186c79757b66ff3c26248f72ed461dbc038b51687d0a8a8ce8eee69e3b5a1d43360c48b3405b611b940fa378debe98aaa0b3c5aebfa218')) { exit 1; };     Expand-Archive -Path "/xcaddy.zip" -DestinationPath "/" -Force;     Remove-Item "/xcaddy.zip" -Force
-# Tue, 01 Aug 2023 22:24:21 GMT
+# Thu, 03 Aug 2023 21:22:12 GMT
 WORKDIR C:\
 ```
 
@@ -124,19 +124,19 @@ WORKDIR C:\
 		Last Modified: Tue, 01 Aug 2023 22:27:22 GMT  
 		Size: 1.4 KB (1395 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:145f07830bda851ba97c81f04bc775e9b211348968b542f358329f1c4ec091ee`  
-		Last Modified: Tue, 01 Aug 2023 22:27:22 GMT  
-		Size: 1.4 KB (1418 bytes)  
+	-	`sha256:ea7b329cf8e6f71e001707c905a224dddbfc7e212d9dfdc5affe5e726b42105a`  
+		Last Modified: Thu, 03 Aug 2023 21:24:13 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7f77e84a5fa1eb345ea688b6a087df7739622ab35627ea13e8fb5eb3c8afad5b`  
-		Last Modified: Tue, 01 Aug 2023 22:27:22 GMT  
-		Size: 1.4 KB (1401 bytes)  
+	-	`sha256:953253adc4c47239882fe05fb76de9675143c1761f9d335529289844e8144883`  
+		Last Modified: Thu, 03 Aug 2023 21:24:13 GMT  
+		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9d3a54610a48ab0ca6469abdeb79462f9b5ac292bdec8e5468fd140a0ea7b028`  
-		Last Modified: Tue, 01 Aug 2023 22:27:23 GMT  
-		Size: 1.7 MB (1674036 bytes)  
+	-	`sha256:cc1c4182a1c240bf14615401b967317c6addda7ab05a8c13d578d77b8dc9b223`  
+		Last Modified: Thu, 03 Aug 2023 21:24:14 GMT  
+		Size: 1.7 MB (1673366 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:946a17eec28aeb0e9cd83868d49e966ff0881b0121ca3ddce4ef21d505b5dbcd`  
-		Last Modified: Tue, 01 Aug 2023 22:27:22 GMT  
-		Size: 1.4 KB (1418 bytes)  
+	-	`sha256:5d309f11ffeb748344161ab34db709bf09e5741e6d7f62486f392f3cd4e839c1`  
+		Last Modified: Thu, 03 Aug 2023 21:24:13 GMT  
+		Size: 1.3 KB (1281 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
