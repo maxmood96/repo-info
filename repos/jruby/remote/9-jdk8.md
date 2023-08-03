@@ -1,7 +1,7 @@
 ## `jruby:9-jdk8`
 
 ```console
-$ docker pull jruby@sha256:0956fefaa738255b3af83c20a283950cc080778943e04f28b984ee49329bd0fc
+$ docker pull jruby@sha256:93b7f5afde9c81853cb26f7d8880394b7b2f609c98709bbd7428d3e180755a9d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,105 +12,105 @@ $ docker pull jruby@sha256:0956fefaa738255b3af83c20a283950cc080778943e04f28b984e
 ### `jruby:9-jdk8` - linux; amd64
 
 ```console
-$ docker pull jruby@sha256:644319d9380cc4b61d7615a4fdaf69456722d3af67dd246e8a3ceb6303b8efeb
+$ docker pull jruby@sha256:a347ad8e4b2500e2a22a8cf45317ab4eaed2921a40f3549aed3fc56e69fcf848
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **186.3 MB (186254755 bytes)**  
+-	Total Size: **186.3 MB (186256361 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9fc73a9c53cdc526287a0411248e0166b112278aeb5e418eefd231c1d5ebde67`
+-	Image ID: `sha256:ddfb4d2047bf42e037f9b1e2b3f50428fed7cdeb7b4484556baae17d342a441a`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Wed, 28 Jun 2023 09:59:08 GMT
+# Tue, 01 Aug 2023 06:16:43 GMT
 ARG RELEASE
-# Wed, 28 Jun 2023 09:59:08 GMT
+# Tue, 01 Aug 2023 06:16:44 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Wed, 28 Jun 2023 09:59:08 GMT
+# Tue, 01 Aug 2023 06:16:44 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Wed, 28 Jun 2023 09:59:08 GMT
+# Tue, 01 Aug 2023 06:16:44 GMT
 LABEL org.opencontainers.image.version=20.04
-# Wed, 28 Jun 2023 09:59:10 GMT
-ADD file:12f97b7b044d0d1166dd59408c67f5610a764127aa8a01bc57db23bee48911af in / 
-# Wed, 28 Jun 2023 09:59:10 GMT
+# Tue, 01 Aug 2023 06:16:45 GMT
+ADD file:233702cd816c07bc9fed02881b11fb3bdcaee41f3ce3ec1c9f0c4a060b155d5b in / 
+# Tue, 01 Aug 2023 06:16:46 GMT
 CMD ["/bin/bash"]
-# Tue, 04 Jul 2023 20:33:00 GMT
+# Thu, 03 Aug 2023 02:34:40 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 04 Jul 2023 20:33:00 GMT
+# Thu, 03 Aug 2023 02:34:40 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 04 Jul 2023 20:33:00 GMT
+# Thu, 03 Aug 2023 02:34:40 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 04 Jul 2023 20:33:34 GMT
+# Thu, 03 Aug 2023 02:35:46 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl wget ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Tue, 01 Aug 2023 21:20:02 GMT
+# Thu, 03 Aug 2023 02:35:46 GMT
 ENV JAVA_VERSION=jdk8u382-b05
-# Tue, 01 Aug 2023 21:20:08 GMT
+# Thu, 03 Aug 2023 02:35:52 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0951398197b7bef39ab987b59c22852812ee2c2da6549953eed7fced4c08e13d';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u382-b05/OpenJDK8U-jdk_aarch64_linux_hotspot_8u382b05.tar.gz';          ;;        armhf|arm)          ESUM='5d805ff157f272acf0f7d192f21af4a3b68c840333ca95568e4e07142efc369d';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u382-b05/OpenJDK8U-jdk_arm_linux_hotspot_8u382b05.tar.gz';          apt-get update          && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1          && rm -rf /var/lib/apt/lists/*          ;;        ppc64el|powerpc:common64)          ESUM='509c923c308d1f4f28fd0068831a59250a05b8ca173ca92fb2be2e2e1f9ff3f9';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u382-b05/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u382b05.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='789ad24dc0d9618294e3ba564c9bfda9d3f3a218604350e0ce0381bbc8f28db3';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u382-b05/OpenJDK8U-jdk_x64_linux_hotspot_8u382b05.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;
-# Tue, 01 Aug 2023 21:20:09 GMT
+# Thu, 03 Aug 2023 02:35:53 GMT
 RUN echo Verifying install ...     && echo javac -version && javac -version     && echo java -version && java -version     && echo Complete.
-# Tue, 01 Aug 2023 22:27:28 GMT
+# Thu, 03 Aug 2023 04:45:50 GMT
 RUN apt-get update && apt-get install -y libc6-dev make --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Tue, 01 Aug 2023 22:27:28 GMT
+# Thu, 03 Aug 2023 04:45:50 GMT
 ENV JRUBY_VERSION=9.4.3.0
-# Tue, 01 Aug 2023 22:27:28 GMT
+# Thu, 03 Aug 2023 04:45:50 GMT
 ENV JRUBY_SHA256=b097e08c5669e8a188288e113911d12b4ad2bd67a2c209d6dfa8445d63a4d8c9
-# Tue, 01 Aug 2023 22:27:31 GMT
+# Thu, 03 Aug 2023 04:45:52 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1
-# Tue, 01 Aug 2023 22:27:31 GMT
+# Thu, 03 Aug 2023 04:45:53 GMT
 ENV PATH=/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Aug 2023 22:27:31 GMT
+# Thu, 03 Aug 2023 04:45:53 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc
-# Tue, 01 Aug 2023 22:27:38 GMT
+# Thu, 03 Aug 2023 04:46:01 GMT
 RUN gem install bundler rake net-telnet xmlrpc
-# Tue, 01 Aug 2023 22:27:38 GMT
+# Thu, 03 Aug 2023 04:46:01 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Tue, 01 Aug 2023 22:27:38 GMT
+# Thu, 03 Aug 2023 04:46:01 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Tue, 01 Aug 2023 22:27:38 GMT
+# Thu, 03 Aug 2023 04:46:01 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Aug 2023 22:27:39 GMT
+# Thu, 03 Aug 2023 04:46:02 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME"
-# Tue, 01 Aug 2023 22:27:39 GMT
+# Thu, 03 Aug 2023 04:46:02 GMT
 CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:0fb668748fc8bb961f4580895692ae741be788857ac2e8220adc2265ffb38e10`  
-		Last Modified: Wed, 28 Jun 2023 18:43:28 GMT  
-		Size: 28.6 MB (28580012 bytes)  
+	-	`sha256:7007490126efaae58924972668256aaeb4858e6c4537eb4257e1978719b958c7`  
+		Last Modified: Tue, 01 Aug 2023 08:35:40 GMT  
+		Size: 28.6 MB (28580671 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e0c6314534fa2a3b454bddc0f12350fdd16cce9b09f979ce4c7fafd5ec679a69`  
-		Last Modified: Tue, 04 Jul 2023 20:38:50 GMT  
-		Size: 16.4 MB (16413467 bytes)  
+	-	`sha256:80386a9626c5ee35081325cf50aa5eb65bc1931df6941c0b98c39f5b6b565044`  
+		Last Modified: Thu, 03 Aug 2023 02:40:22 GMT  
+		Size: 16.4 MB (16413423 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:24841dfb612046bc99e019f8e111a4e6e213ee863092a9c29be743c3284e19f4`  
-		Last Modified: Tue, 01 Aug 2023 21:24:35 GMT  
-		Size: 103.6 MB (103589049 bytes)  
+	-	`sha256:6cc247a75c73e9e94fa02d84a4ac81a513c5d851ae748c092762f71b1be555f4`  
+		Last Modified: Thu, 03 Aug 2023 02:40:29 GMT  
+		Size: 103.6 MB (103589038 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5337e871aa0682916358ded49c4dcc9a77ab62247692cf79870b3d9768400940`  
-		Last Modified: Tue, 01 Aug 2023 21:24:26 GMT  
-		Size: 160.0 B  
+	-	`sha256:ec077a775ae20e0eb88e175be2108d050d0a0faf705bbbd18d51e7cec3cbeacd`  
+		Last Modified: Thu, 03 Aug 2023 02:40:20 GMT  
+		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cb594657e1608d02ea90026f2c418bcab630ddb2c724b8eb23df1837b98920bf`  
-		Last Modified: Tue, 01 Aug 2023 22:29:21 GMT  
-		Size: 7.0 MB (7031649 bytes)  
+	-	`sha256:60a3074efe1468f384deac9fc75704ca7f4acc723bdde98cd38999be317e3e70`  
+		Last Modified: Thu, 03 Aug 2023 04:49:18 GMT  
+		Size: 7.0 MB (7031566 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8e73c9028d936ebb05c70b5a3e59d9c4fe6542f7930ee87010fb915abbaaebe7`  
-		Last Modified: Tue, 01 Aug 2023 22:29:21 GMT  
-		Size: 29.5 MB (29539907 bytes)  
+	-	`sha256:5e4c10577058dbcd1d06cb845c760e7066a13a7e79542cfeecf977570eb1cc2e`  
+		Last Modified: Thu, 03 Aug 2023 04:49:20 GMT  
+		Size: 29.5 MB (29539871 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:234d3cd3c1ae8383cdb867cacf6bf9d00901d578197718d72a18807cf896463d`  
-		Last Modified: Tue, 01 Aug 2023 22:29:19 GMT  
+	-	`sha256:2834a0bdce61063ce1927532b2a5bcd22da2314ca53644b4c22d98fcff95ec1b`  
+		Last Modified: Thu, 03 Aug 2023 04:49:17 GMT  
 		Size: 226.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d6953926e2b38e8be0d5680330e7f4b7ba3f90d7f37af2dda1e34054074499a0`  
-		Last Modified: Tue, 01 Aug 2023 22:29:19 GMT  
-		Size: 1.1 MB (1100109 bytes)  
+	-	`sha256:2be9ece5c79face8f90ea48b598b6ef0f271a3aa32d89dbb7a4ce822bd5ad890`  
+		Last Modified: Thu, 03 Aug 2023 04:49:17 GMT  
+		Size: 1.1 MB (1101229 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f158b5a6c38e95a0f9809ccb46098fbb8d09162ecad886d522cfa8d7602aa25`  
-		Last Modified: Tue, 01 Aug 2023 22:29:19 GMT  
-		Size: 176.0 B  
+	-	`sha256:a369c273ce8e32148bfb682ec5f87f8af76761597f48386e5ce8604d7c406e0d`  
+		Last Modified: Thu, 03 Aug 2023 04:49:17 GMT  
+		Size: 174.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `jruby:9-jdk8` - linux; arm64 variant v8
