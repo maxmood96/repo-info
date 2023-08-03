@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:dfcd1471af674557f62c5b456ef63fb662dca11fac8aadc37b62584df877e3d3`
-- Created: `2023-07-26T00:54:45.802672728Z`
-- Virtual Size: ~ 300.82 Mb  
+- Image ID: `sha256:e579b73e30c8f346da8a0a743a908d2f925220b4878b56bdd1be128a2ff2408c`
+- Created: `2023-08-01T23:27:57.821789656Z`
+- Virtual Size: ~ 300.81 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -18,7 +18,7 @@
   - `JAVA_VERSION=jdk-11.0.20+8`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2023-06-15T01:42:07`
+  - `build-date=2023-07-26T14:47:44`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
@@ -30,9 +30,9 @@
   - `io.openshift.tags=minimal rhel9`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9-minimal`
-  - `release=691`
+  - `release=717`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
-  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9-minimal/images/9.2-691`
+  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9-minimal/images/9.2-717`
   - `vcs-ref=7ef59505f75bf0c11c8d3addefebee5ceaaf4c41`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
@@ -118,7 +118,7 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `curl-minimal-7.76.1-23.el9_2.1.x86_64`
+### `rpm` package: `curl-minimal-7.76.1-23.el9_2.2.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
@@ -190,7 +190,7 @@ Licenses (from `rpm --query`): MIT
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `file-libs-5.39-12.el9.x86_64`
+### `rpm` package: `file-libs-5.39-12.1.el9_2.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
@@ -430,7 +430,7 @@ Licenses (from `rpm --query`): MIT
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libcurl-minimal-7.76.1-23.el9_2.1.x86_64`
+### `rpm` package: `libcurl-minimal-7.76.1-23.el9_2.2.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
@@ -448,7 +448,7 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libeconf-0.4.1-2.el9.x86_64`
+### `rpm` package: `libeconf-0.4.1-3.el9_2.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
@@ -652,7 +652,7 @@ Licenses (from `rpm --query`): LGPLv2+ and BSD and Public Domain
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libxml2-2.9.13-3.el9_1.x86_64`
+### `rpm` package: `libxml2-2.9.13-3.el9_2.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
@@ -730,13 +730,13 @@ Licenses (from `rpm --query`): OpenLDAP
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `openssl-3.0.7-16.el9_2.x86_64`
+### `rpm` package: `openssl-3.0.7-17.el9_2.x86_64`
 
 Licenses (from `rpm --query`): ASL 2.0
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `openssl-libs-3.0.7-16.el9_2.x86_64`
+### `rpm` package: `openssl-libs-3.0.7-17.el9_2.x86_64`
 
 Licenses (from `rpm --query`): ASL 2.0
 
@@ -844,25 +844,25 @@ Licenses (from `rpm --query`): Public Domain
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `systemd-252-14.el9_2.1.x86_64`
+### `rpm` package: `systemd-252-14.el9_2.3.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `systemd-libs-252-14.el9_2.1.x86_64`
+### `rpm` package: `systemd-libs-252-14.el9_2.3.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `systemd-pam-252-14.el9_2.1.x86_64`
+### `rpm` package: `systemd-pam-252-14.el9_2.3.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `systemd-rpm-macros-252-14.el9_2.1.noarch`
+### `rpm` package: `systemd-rpm-macros-252-14.el9_2.3.noarch`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
