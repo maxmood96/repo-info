@@ -2290,14 +2290,9 @@ Licenses: (parsed from: `/usr/share/doc/gstreamer1.0-gl/copyright`, `/usr/share/
 - `LGPL-2+`
 - `MIT/X11 (BSD like) LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gst-plugins-base1.0=1.16.3-0ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.16.3-0ubuntu1.1.dsc' gst-plugins-base1.0_1.16.3-0ubuntu1.1.dsc 4152 SHA512:81f0a292e8ab699e984a0e239f5591e6718fa10f6c2576362ecce8805d43f3920e13d5b6c5ac4d23329b17a362a8d059dd9ca9f3c916967ac09a1e13df7983f4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.16.3.orig.tar.xz' gst-plugins-base1.0_1.16.3.orig.tar.xz 3953616 SHA512:d44d4da9cb27a6b8e59cb3f0714cc71809c0f14b42ef8d4a2dddbb940efbcb9634a40596d3cdc7391016f6e758005c14aabe1f8f30bb597a57d85c2d94045e75
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.16.3-0ubuntu1.1.debian.tar.xz' gst-plugins-base1.0_1.16.3-0ubuntu1.1.debian.tar.xz 46540 SHA512:4828f237c6285e4a0486a84e91c98d43299aad6e4557286aafacb65ee1a6c5fe0eff33391521579851d10958a1c10545ac2a7cb7c54446058ef150f93e87b1a8
-```
 
 ### `dpkg` source package: `gst-plugins-good1.0=1.16.3-0ubuntu1.1`
 
@@ -2316,14 +2311,9 @@ Licenses: (parsed from: `/usr/share/doc/gstreamer1.0-gtk3/copyright`)
 - `LGPL-2.1+`
 - `MIT/X11 (BSD like) LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gst-plugins-good1.0=1.16.3-0ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-good1.0/gst-plugins-good1.0_1.16.3-0ubuntu1.1.dsc' gst-plugins-good1.0_1.16.3-0ubuntu1.1.dsc 4133 SHA512:de800b69e45d11ae482d526938a6aee8135e6efdec8e080568fb0425c0062dfef5028937b44d2a1103c289ee1551b54061e52c78fe7ff5c870bf6044e87a26d2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-good1.0/gst-plugins-good1.0_1.16.3.orig.tar.xz' gst-plugins-good1.0_1.16.3.orig.tar.xz 3914676 SHA512:3e0da4a4defc0ddea1c26dfc767fed732548654f4155452649777109a17d5b65b2fde895483a3e35dc1646de5a16e913cd2408f826251d46a99b7751b88dcb65
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-good1.0/gst-plugins-good1.0_1.16.3-0ubuntu1.1.debian.tar.xz' gst-plugins-good1.0_1.16.3-0ubuntu1.1.debian.tar.xz 130480 SHA512:c6031b3eed2f54cfed0e0e65933cc481daad6011a4eca493c40131977924a9b07556e8750e285535bdb5d4b531068a0c21ba15d2475cca980a2e21e6a7a02901
-```
 
 ### `dpkg` source package: `gstreamer1.0=1.16.3-0ubuntu1.1`
 
@@ -7962,14 +7952,9 @@ Licenses: (parsed from: `/usr/share/doc/libpoppler97/copyright`)
 - `Apache-2.0`
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris poppler=0.86.1-0ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.86.1-0ubuntu1.1.dsc' poppler_0.86.1-0ubuntu1.1.dsc 3320 SHA512:32be68069d284c5bf372574de05bbcc98efe27b018cdc85bde89346c3868a82174e05cac7a2a32027024a364d8b5d6b870871d599a202c315dfeaeeb33705df5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.86.1.orig.tar.xz' poppler_0.86.1.orig.tar.xz 1593856 SHA512:435fc1e7f3e8123e0adde9aa60c0d7dc17db367cde8908932abfef913cee6f27efeb1c4f2d6f316019a69a87f1fa5251be4216d0a81a681a24f24a70ac571670
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.86.1-0ubuntu1.1.debian.tar.xz' poppler_0.86.1-0ubuntu1.1.debian.tar.xz 35408 SHA512:b2e9660f0dd0f3c46043ba638177d8b62e523fedc58da320018e84fab967edddb55ab3b4dab08a7fb5750eddc7c478ed5139724b9714318920e276a049f5d903
-```
 
 ### `dpkg` source package: `postgresql-12=12.15-0ubuntu0.20.04.1`
 
@@ -8970,14 +8955,9 @@ Licenses: (parsed from: `/usr/share/doc/vim/copyright`, `/usr/share/doc/vim-comm
 - `XPM`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris vim=2:8.1.2269-1ubuntu5.15
-'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_8.1.2269-1ubuntu5.15.dsc' vim_8.1.2269-1ubuntu5.15.dsc 2607 SHA512:4138cf9271ecc2b115a42305b4d30e1eb8df6f948f7e5aa741a367948379c5c6cb8a7a484d0309d5601f8132c73dce2d6ad19814fb66bcbb38f6c9f4fd98a4f8
-'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_8.1.2269.orig.tar.gz' vim_8.1.2269.orig.tar.gz 14590233 SHA512:5194817a5665e08816e87e3b10219e19510ca87c5c377ddc0a50aa84ffd4d7391badad3e993f83802d6da5e9da8834635c1acbdd4a909e75b4947f99f13c1746
-'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_8.1.2269-1ubuntu5.15.debian.tar.xz' vim_8.1.2269-1ubuntu5.15.debian.tar.xz 243804 SHA512:d329cbf3e7053302ed1bb7d84d8a3ed63c8e0e2829a4b611f1d74b4d131fae66ebc4e779bd8aaf70b9294551b46aec06e8539d2e14fb0e9b4bda013038a79c02
-```
 
 ### `dpkg` source package: `vulkan-loader=1.2.131.2-1`
 
