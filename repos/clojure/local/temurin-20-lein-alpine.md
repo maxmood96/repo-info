@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:82c7ea35d1e24f45a93e7eaed12a925bf1f6fd2471845bc95cb811c83a2a0e81`
-- Created: `2023-07-26T02:47:02.973330828Z`
-- Virtual Size: ~ 343.18 Mb  
+- Image ID: `sha256:5a56d9886e3cdc8dff132648b9290449a71fb08404412e043377b2d3cd62b267`
+- Created: `2023-08-03T05:05:13.98527252Z`
+- Virtual Size: ~ 345.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint"]`
@@ -158,6 +158,23 @@ GPL-2.0-only
 
 ```
 
+### `apk` package: `ca-certificates`
+
+```console
+ca-certificates-20230506-r0 description:
+Common CA certificates PEM files from Mozilla
+
+ca-certificates-20230506-r0 webpage:
+https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
+
+ca-certificates-20230506-r0 installed size:
+688 KiB
+
+ca-certificates-20230506-r0 license:
+MPL-2.0 AND MIT
+
+```
+
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
@@ -243,6 +260,23 @@ FTL OR GPL-2.0-or-later
 
 ```
 
+### `apk` package: `java-cacerts`
+
+```console
+java-cacerts-1.0-r1 description:
+Script to update java cacerts store
+
+java-cacerts-1.0-r1 webpage:
+https://git.alpinelinux.org/aports/tree/community/java-cacerts
+
+java-cacerts-1.0-r1 installed size:
+32 KiB
+
+java-cacerts-1.0-r1 license:
+MIT
+
+```
+
 ### `apk` package: `libbz2`
 
 ```console
@@ -307,6 +341,23 @@ libexpat-2.5.0-r1 installed size:
 144 KiB
 
 libexpat-2.5.0-r1 license:
+MIT
+
+```
+
+### `apk` package: `libffi`
+
+```console
+libffi-3.4.4-r2 description:
+portable, high level programming interface to various calling conventions.
+
+libffi-3.4.4-r2 webpage:
+https://sourceware.org/libffi/
+
+libffi-3.4.4-r2 installed size:
+52 KiB
+
+libffi-3.4.4-r2 license:
 MIT
 
 ```
@@ -413,6 +464,23 @@ Apache-2.0
 
 ```
 
+### `apk` package: `libtasn1`
+
+```console
+libtasn1-4.19.0-r1 description:
+The ASN.1 library used in GNUTLS
+
+libtasn1-4.19.0-r1 webpage:
+https://www.gnu.org/software/gnutls/
+
+libtasn1-4.19.0-r1 installed size:
+80 KiB
+
+libtasn1-4.19.0-r1 license:
+LGPL-2.1-or-later
+
+```
+
 ### `apk` package: `mkfontscale`
 
 ```console
@@ -512,6 +580,40 @@ ncurses-terminfo-base-6.4_p20230506-r0 installed size:
 
 ncurses-terminfo-base-6.4_p20230506-r0 license:
 X11
+
+```
+
+### `apk` package: `p11-kit`
+
+```console
+p11-kit-0.24.1-r2 description:
+Library for loading and sharing PKCS#11 modules
+
+p11-kit-0.24.1-r2 webpage:
+https://p11-glue.freedesktop.org/
+
+p11-kit-0.24.1-r2 installed size:
+1012 KiB
+
+p11-kit-0.24.1-r2 license:
+BSD-3-Clause
+
+```
+
+### `apk` package: `p11-kit-trust`
+
+```console
+p11-kit-trust-0.24.1-r2 description:
+System trust module from p11-kit
+
+p11-kit-trust-0.24.1-r2 webpage:
+https://p11-glue.freedesktop.org/
+
+p11-kit-trust-0.24.1-r2 installed size:
+356 KiB
+
+p11-kit-trust-0.24.1-r2 license:
+BSD-3-Clause
 
 ```
 
