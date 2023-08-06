@@ -1,10 +1,10 @@
-# `couchbase:7.1.4`
+# `couchbase:7.1.5`
 
 ## Docker Metadata
 
-- Image ID: `sha256:80e9d0bd50b97ec2213a515557a7bb7cd0e8e77da5c54fe58b6aae96a895edaf`
-- Created: `2023-08-03T02:58:47.378248253Z`
-- Virtual Size: ~ 1.34 Gb  
+- Image ID: `sha256:acfb11ee5affaa83a7b8bcf7419bd3312f9f9692e62e38296de777413b526be8`
+- Created: `2023-08-04T00:26:03.749817534Z`
+- Virtual Size: ~ 1.36 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -258,11 +258,11 @@ $ apt-get source -qq --print-uris coreutils=8.30-3ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.30-3ubuntu2.debian.tar.xz' coreutils_8.30-3ubuntu2.debian.tar.xz 39636 SHA256:98204ef9d94e5c567880cd0245fdb7940eaf7592d6c6830c300ad117628b351f
 ```
 
-### `dpkg` source package: `couchbase-server=7.1.4-3601-1`
+### `dpkg` source package: `couchbase-server=7.1.5-3878-1`
 
 Binary Packages:
 
-- `couchbase-server=7.1.4-3601-1`
+- `couchbase-server=7.1.5-3878-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1143,7 +1143,6 @@ Binary Packages:
 
 - `libncurses6:amd64=6.2-0ubuntu2.1`
 - `libncursesw6:amd64=6.2-0ubuntu2.1`
-- `libtinfo5:amd64=6.2-0ubuntu2.1`
 - `libtinfo6:amd64=6.2-0ubuntu2.1`
 - `ncurses-base=6.2-0ubuntu2.1`
 - `ncurses-bin=6.2-0ubuntu2.1`
