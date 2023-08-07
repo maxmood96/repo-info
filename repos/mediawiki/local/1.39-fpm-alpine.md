@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:56fd008e7a8adaac05bceff69183332deb7e2c98b5d203d01a602e97b368c640`
-- Created: `2023-07-14T00:28:33.855055291Z`
-- Virtual Size: ~ 513.77 Mb  
+- Image ID: `sha256:c62a63dc67a7f757e3b3bc25ddf52907417ada916dc8822e14fa8308a9f9d64c`
+- Created: `2023-08-05T01:12:06.663361051Z`
+- Virtual Size: ~ 521.60 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD`
-  - `PHP_VERSION=8.1.21`
-  - `PHP_URL=https://www.php.net/distributions/php-8.1.21.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.21.tar.xz.asc`
-  - `PHP_SHA256=e634a00b0c6a8cd39e840e9fb30b5227b820b7a9ace95b7b001053c1411c4821`
+  - `PHP_VERSION=8.1.22`
+  - `PHP_URL=https://www.php.net/distributions/php-8.1.22.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.22.tar.xz.asc`
+  - `PHP_SHA256=9ea4f4cfe775cb5866c057323d6b320f3a6e0adb1be41a068ff7bfec6f83e71d`
   - `MEDIAWIKI_MAJOR_VERSION=1.39`
   - `MEDIAWIKI_VERSION=1.39.4`
 
@@ -284,16 +284,16 @@ Apache-2.0
 ### `apk` package: `curl`
 
 ```console
-curl-8.1.2-r0 description:
+curl-8.2.1-r0 description:
 URL retrival utility and library
 
-curl-8.1.2-r0 webpage:
+curl-8.2.1-r0 webpage:
 https://curl.se/
 
-curl-8.1.2-r0 installed size:
+curl-8.2.1-r0 installed size:
 236 KiB
 
-curl-8.1.2-r0 license:
+curl-8.2.1-r0 license:
 curl
 
 ```
@@ -573,16 +573,16 @@ ICU
 ### `apk` package: `imagemagick`
 
 ```console
-imagemagick-7.1.1.10-r0 description:
+imagemagick-7.1.1.13-r0 description:
 Collection of tools and libraries for many image formats
 
-imagemagick-7.1.1.10-r0 webpage:
+imagemagick-7.1.1.13-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-7.1.1.10-r0 installed size:
+imagemagick-7.1.1.13-r0 installed size:
 4600 KiB
 
-imagemagick-7.1.1.10-r0 license:
+imagemagick-7.1.1.13-r0 license:
 ImageMagick
 
 ```
@@ -590,16 +590,16 @@ ImageMagick
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.1.10-r0 description:
+imagemagick-libs-7.1.1.13-r0 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.1.10-r0 webpage:
+imagemagick-libs-7.1.1.13-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.1.10-r0 installed size:
+imagemagick-libs-7.1.1.13-r0 installed size:
 3248 KiB
 
-imagemagick-libs-7.1.1.10-r0 license:
+imagemagick-libs-7.1.1.13-r0 license:
 ImageMagick
 
 ```
@@ -726,16 +726,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.1-r1 description:
+libcrypto3-3.1.2-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.1.1-r1 webpage:
+libcrypto3-3.1.2-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.1-r1 installed size:
-4464 KiB
+libcrypto3-3.1.2-r0 installed size:
+4468 KiB
 
-libcrypto3-3.1.1-r1 license:
+libcrypto3-3.1.2-r0 license:
 Apache-2.0
 
 ```
@@ -743,16 +743,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.1.2-r0 description:
+libcurl-8.2.1-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.1.2-r0 webpage:
+libcurl-8.2.1-r0 webpage:
 https://curl.se/
 
-libcurl-8.1.2-r0 installed size:
-548 KiB
+libcurl-8.2.1-r0 installed size:
+552 KiB
 
-libcurl-8.1.2-r0 license:
+libcurl-8.2.1-r0 license:
 curl
 
 ```
@@ -1049,16 +1049,16 @@ Libpng
 ### `apk` package: `libraw`
 
 ```console
-libraw-0.21.1-r0 description:
+libraw-0.21.1-r1 description:
 Library for reading RAW files obtained from digital photo cameras
 
-libraw-0.21.1-r0 webpage:
+libraw-0.21.1-r1 webpage:
 https://www.libraw.org/
 
-libraw-0.21.1-r0 installed size:
+libraw-0.21.1-r1 installed size:
 2400 KiB
 
-libraw-0.21.1-r0 license:
+libraw-0.21.1-r1 license:
 CDDL-1.0 OR LGPL-2.1-only
 
 ```
@@ -1066,16 +1066,16 @@ CDDL-1.0 OR LGPL-2.1-only
 ### `apk` package: `librsvg`
 
 ```console
-librsvg-2.56.2-r0 description:
+librsvg-2.56.3-r0 description:
 SAX-based renderer for SVG files into a GdkPixbuf
 
-librsvg-2.56.2-r0 webpage:
+librsvg-2.56.3-r0 webpage:
 https://wiki.gnome.org/Projects/LibRsvg
 
-librsvg-2.56.2-r0 installed size:
-3164 KiB
+librsvg-2.56.3-r0 installed size:
+3488 KiB
 
-librsvg-2.56.2-r0 license:
+librsvg-2.56.3-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -1100,16 +1100,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.1-r1 description:
+libssl3-3.1.2-r0 description:
 SSL shared libraries
 
-libssl3-3.1.1-r1 webpage:
+libssl3-3.1.2-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.1-r1 installed size:
+libssl3-3.1.2-r0 installed size:
 552 KiB
 
-libssl3-3.1.1-r1 license:
+libssl3-3.1.2-r0 license:
 Apache-2.0
 
 ```
@@ -1338,16 +1338,16 @@ BSD-2-Clause
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.4-r0 description:
+musl-1.2.4-r1 description:
 the musl c library (libc) implementation
 
-musl-1.2.4-r0 webpage:
+musl-1.2.4-r1 webpage:
 https://musl.libc.org/
 
-musl-1.2.4-r0 installed size:
+musl-1.2.4-r1 installed size:
 620 KiB
 
-musl-1.2.4-r0 license:
+musl-1.2.4-r1 license:
 MIT
 
 ```
@@ -1406,16 +1406,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `nghttp2-libs`
 
 ```console
-nghttp2-libs-1.53.0-r0 description:
+nghttp2-libs-1.55.1-r0 description:
 Experimental HTTP/2 client, server and proxy (libraries)
 
-nghttp2-libs-1.53.0-r0 webpage:
+nghttp2-libs-1.55.1-r0 webpage:
 https://nghttp2.org
 
-nghttp2-libs-1.53.0-r0 installed size:
+nghttp2-libs-1.55.1-r0 installed size:
 152 KiB
 
-nghttp2-libs-1.53.0-r0 license:
+nghttp2-libs-1.55.1-r0 license:
 MIT
 
 ```
@@ -1457,16 +1457,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.1.1-r1 description:
+openssl-3.1.2-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.1.1-r1 webpage:
+openssl-3.1.2-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.1.1-r1 installed size:
-748 KiB
+openssl-3.1.2-r0 installed size:
+752 KiB
 
-openssl-3.1.1-r1 license:
+openssl-3.1.2-r0 license:
 Apache-2.0
 
 ```
