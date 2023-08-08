@@ -1,7 +1,7 @@
 ## `eclipse-temurin:11-jdk-centos7`
 
 ```console
-$ docker pull eclipse-temurin@sha256:afe21da0d559844cb15e73a441f65593499b2c22f21e1d1d133dfccd32d58c34
+$ docker pull eclipse-temurin@sha256:f2b4a475937ae0c3caa73837619810d3e1959cf737fc03ff5afefbe6d75f5528
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -78,14 +78,15 @@ CMD ["jshell"]
 ### `eclipse-temurin:11-jdk-centos7` - linux; arm64 variant v8
 
 ```console
-$ docker pull eclipse-temurin@sha256:4d1fb101cb918b23e809827576fc9921cc231e6029e77f2cc92a3ae0bcf377ea
+$ docker pull eclipse-temurin@sha256:b5924319fe8fa7c3c5cdfc0103cddfec02b95d27440ee2e9c7a38a5a23bcfec2
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **260.8 MB (260788423 bytes)**  
+-	Total Size: **260.8 MB (260789066 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8b3a2ea0b69a0b60ec9c53d1c85d1b646adcaef28e8400d59936858b1039ac4e`
+-	Image ID: `sha256:33d294030c3f4434a7ff016627ab266edf63314ef2f9f8f52e5fb7fbadc71c5c`
+-	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -109,7 +110,11 @@ ENV JAVA_VERSION=jdk-11.0.20+8
 RUN set -eux;     ARCH="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')";     case "${ARCH}" in        aarch64|arm64)          ESUM='eb821c049c2d2f7c3fbf8ddcce2d608d3aa7d488700e76bfbbebabba93021748';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.20_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1125931b3a38e6e305a1932fc6cfd0b023a0fbec2cab10e835a2ee2c50848b42';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.20_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='7a99258af2e3ee9047e90f1c0c1775fd6285085759501295358d934d662e01f9';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_x64_linux_hotspot_11.0.20_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;
 # Wed, 26 Jul 2023 00:37:46 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Wed, 26 Jul 2023 00:37:46 GMT
+# Tue, 08 Aug 2023 19:41:37 GMT
+COPY file:75f7304d9612805714414928c48b4214e91025809590e620cda7db6b2b5d0176 in / 
+# Tue, 08 Aug 2023 19:41:37 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+# Tue, 08 Aug 2023 19:41:37 GMT
 CMD ["jshell"]
 ```
 
@@ -130,18 +135,23 @@ CMD ["jshell"]
 		Last Modified: Wed, 26 Jul 2023 00:40:16 GMT  
 		Size: 177.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:821c2cbad539936dd49137d22bd94a3815b7cf3645e05fd864aad29b86ed4cfc`  
+		Last Modified: Tue, 08 Aug 2023 19:46:19 GMT  
+		Size: 643.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:11-jdk-centos7` - linux; ppc64le
 
 ```console
-$ docker pull eclipse-temurin@sha256:dc5327b841c69d5b66df7bf3a5ff43ca8bc4904ad676e26da60e82f2bc61e7e1
+$ docker pull eclipse-temurin@sha256:218b2809f1a661cf50771db17b4e7f706008ee4cbbebcdd0fb4bc4505cf076d2
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **222.7 MB (222735852 bytes)**  
+-	Total Size: **222.7 MB (222736496 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:29017ff037e6b0690086b1e4150d7991ded8268171bf33b3da7905a3a11cdc68`
+-	Image ID: `sha256:f6504d6165724903534eeb7b450914afc2fe64aeb14880dc48c9409af5e380e7`
+-	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
@@ -165,7 +175,11 @@ ENV JAVA_VERSION=jdk-11.0.20+8
 RUN set -eux;     ARCH="$(objdump="$(command -v objdump)" && objdump --file-headers "$objdump" | awk -F '[:,]+[[:space:]]+' '$1 == "architecture" { print $2 }')";     case "${ARCH}" in        aarch64|arm64)          ESUM='eb821c049c2d2f7c3fbf8ddcce2d608d3aa7d488700e76bfbbebabba93021748';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.20_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1125931b3a38e6e305a1932fc6cfd0b023a0fbec2cab10e835a2ee2c50848b42';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.20_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='7a99258af2e3ee9047e90f1c0c1775fd6285085759501295358d934d662e01f9';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_x64_linux_hotspot_11.0.20_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;
 # Wed, 26 Jul 2023 00:18:19 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Wed, 26 Jul 2023 00:18:20 GMT
+# Tue, 08 Aug 2023 19:21:59 GMT
+COPY file:75f7304d9612805714414928c48b4214e91025809590e620cda7db6b2b5d0176 in / 
+# Tue, 08 Aug 2023 19:22:00 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+# Tue, 08 Aug 2023 19:22:01 GMT
 CMD ["jshell"]
 ```
 
@@ -185,4 +199,8 @@ CMD ["jshell"]
 	-	`sha256:29c1775a0785e5b3e6e0badc0d280e568ab088198ed1da89fb6d6625991a77be`  
 		Last Modified: Wed, 26 Jul 2023 00:23:10 GMT  
 		Size: 175.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:90e54dfe5ce2da95e673fe4dd7b74ef0016be361dccb8390e1a1f7cbe7cba811`  
+		Last Modified: Tue, 08 Aug 2023 19:32:08 GMT  
+		Size: 644.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
