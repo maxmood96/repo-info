@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:fdfbdbe719d6a2b4269c6f7133f4eac5742af36193d0df491ba9d9e49c9dd908`
-- Created: `2023-08-03T04:36:09.612196029Z`
-- Virtual Size: ~ 421.99 Mb  
+- Image ID: `sha256:f45a62f42f018f80eba5c041cd9864465d483fe17c87d2a09de27118e437a7b3`
+- Created: `2023-08-08T19:57:52.580754111Z`
+- Virtual Size: ~ 423.80 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -1446,8 +1446,10 @@ $ apt-get source -qq --print-uris openssl=1.1.1f-1ubuntu2.19
 Binary Packages:
 
 - `libp11-kit0:amd64=0.23.20-1ubuntu0.1`
+- `p11-kit=0.23.20-1ubuntu0.1`
+- `p11-kit-modules:amd64=0.23.20-1ubuntu0.1`
 
-Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`, `/usr/share/doc/p11-kit/copyright`, `/usr/share/doc/p11-kit-modules/copyright`)
 
 - `BSD-3-Clause`
 - `ISC`
