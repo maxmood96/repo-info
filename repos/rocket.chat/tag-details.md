@@ -162,7 +162,12 @@ CMD ["node" "main.js"]
 
 ## `rocket.chat:5.4.10`
 
-**does not exist** (yet?)
+```console
+$ docker pull rocket.chat@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `rocket.chat:6`
 
@@ -314,15 +319,30 @@ CMD ["node" "main.js"]
 
 ## `rocket.chat:6.2.11`
 
-**does not exist** (yet?)
+```console
+$ docker pull rocket.chat@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `rocket.chat:6.3`
 
-**does not exist** (yet?)
+```console
+$ docker pull rocket.chat@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `rocket.chat:6.3.0`
 
-**does not exist** (yet?)
+```console
+$ docker pull rocket.chat@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `rocket.chat:latest`
 
