@@ -1,17 +1,17 @@
-# `nats:2.9.20-alpine3.18`
+# `nats:2.9.21-alpine3.18`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8c5f3a7141f662bd0bab1c885fe0237733c81118613c3e2a1f041bf7d1cab81d`
-- Created: `2023-07-13T22:29:18.899366892Z`
-- Virtual Size: ~ 20.77 Mb  
+- Image ID: `sha256:f4997d3c6db9cae525d31602ba338a453ba4facd93e802fa29b3ba534475bd9f`
+- Created: `2023-08-07T19:26:05.616274078Z`
+- Virtual Size: ~ 22.04 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["nats-server","--config","/etc/nats/nats-server.conf"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NATS_SERVER=2.9.20`
+  - `NATS_SERVER=2.9.21`
 
 ## `apk` (`.apk`-based packages)
 
@@ -86,16 +86,16 @@ GPL-2.0-only
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.36.1-r0 description:
+busybox-1.36.1-r2 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.36.1-r0 webpage:
+busybox-1.36.1-r2 webpage:
 https://busybox.net/
 
-busybox-1.36.1-r0 installed size:
+busybox-1.36.1-r2 installed size:
 924 KiB
 
-busybox-1.36.1-r0 license:
+busybox-1.36.1-r2 license:
 GPL-2.0-only
 
 ```
@@ -103,16 +103,16 @@ GPL-2.0-only
 ### `apk` package: `busybox-binsh`
 
 ```console
-busybox-binsh-1.36.1-r0 description:
+busybox-binsh-1.36.1-r2 description:
 busybox ash /bin/sh
 
-busybox-binsh-1.36.1-r0 webpage:
+busybox-binsh-1.36.1-r2 webpage:
 https://busybox.net/
 
-busybox-binsh-1.36.1-r0 installed size:
+busybox-binsh-1.36.1-r2 installed size:
 8192 B
 
-busybox-binsh-1.36.1-r0 license:
+busybox-binsh-1.36.1-r2 license:
 GPL-2.0-only
 
 ```
@@ -171,16 +171,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.1-r1 description:
+libcrypto3-3.1.2-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.1.1-r1 webpage:
+libcrypto3-3.1.2-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.1-r1 installed size:
-4464 KiB
+libcrypto3-3.1.2-r0 installed size:
+4468 KiB
 
-libcrypto3-3.1.1-r1 license:
+libcrypto3-3.1.2-r0 license:
 Apache-2.0
 
 ```
@@ -188,16 +188,16 @@ Apache-2.0
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.1-r1 description:
+libssl3-3.1.2-r0 description:
 SSL shared libraries
 
-libssl3-3.1.1-r1 webpage:
+libssl3-3.1.2-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.1-r1 installed size:
+libssl3-3.1.2-r0 installed size:
 552 KiB
 
-libssl3-3.1.1-r1 license:
+libssl3-3.1.2-r0 license:
 Apache-2.0
 
 ```
@@ -205,16 +205,16 @@ Apache-2.0
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.4-r0 description:
+musl-1.2.4-r1 description:
 the musl c library (libc) implementation
 
-musl-1.2.4-r0 webpage:
+musl-1.2.4-r1 webpage:
 https://musl.libc.org/
 
-musl-1.2.4-r0 installed size:
+musl-1.2.4-r1 installed size:
 620 KiB
 
-musl-1.2.4-r0 license:
+musl-1.2.4-r1 license:
 MIT
 
 ```
@@ -222,16 +222,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.4-r0 description:
+musl-utils-1.2.4-r1 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.4-r0 webpage:
+musl-utils-1.2.4-r1 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.4-r0 installed size:
+musl-utils-1.2.4-r1 installed size:
 132 KiB
 
-musl-utils-1.2.4-r0 license:
+musl-utils-1.2.4-r1 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```
@@ -256,17 +256,34 @@ GPL-2.0-only
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.36.1-r0 description:
+ssl_client-1.36.1-r2 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.36.1-r0 webpage:
+ssl_client-1.36.1-r2 webpage:
 https://busybox.net/
 
-ssl_client-1.36.1-r0 installed size:
+ssl_client-1.36.1-r2 installed size:
 28 KiB
 
-ssl_client-1.36.1-r0 license:
+ssl_client-1.36.1-r2 license:
 GPL-2.0-only
+
+```
+
+### `apk` package: `tzdata`
+
+```console
+tzdata-2023c-r1 description:
+Timezone data
+
+tzdata-2023c-r1 webpage:
+https://www.iana.org/time-zones
+
+tzdata-2023c-r1 installed size:
+3068 KiB
+
+tzdata-2023c-r1 license:
+Public-Domain
 
 ```
 
