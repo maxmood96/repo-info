@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f30fd7f4d64b33ee058ea6e402fca484d11d069d32b9ca52490b503a29139569`
-- Created: `2023-07-06T21:30:50.562968085Z`
-- Virtual Size: ~ 169.77 Mb  
+- Image ID: `sha256:8e932c03a4bbfd8a5d0f2af70b92dac6e30fc21e0986ee66d4826d5e7000366d`
+- Created: `2023-08-09T10:52:09.161437121Z`
+- Virtual Size: ~ 169.80 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -16,11 +16,11 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
-  - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F 2C16C765DBE54A088130F1BC4B9B5F600B55F3B4`
-  - `PHP_VERSION=8.0.29`
-  - `PHP_URL=https://www.php.net/distributions/php-8.0.29.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.0.29.tar.xz.asc`
-  - `PHP_SHA256=14db2fbf26c07d0eb2c9fab25dbde7e27726a3e88452cca671f0896bbb683ca9`
+  - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 BFDDD28642824F8118EF77909B67A5C12229118F 2C16C765DBE54A088130F1BC4B9B5F600B55F3B4 39B641343D8C104B2B146DC3F9C39DC0B9698544`
+  - `PHP_VERSION=8.0.30`
+  - `PHP_URL=https://www.php.net/distributions/php-8.0.30.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.0.30.tar.xz.asc`
+  - `PHP_SHA256=216ab305737a5d392107112d618a755dc5df42058226f1670e9db90e77d777d9`
   - `DRUPAL_VERSION=9.5.10`
 
 ## `apk` (`.apk`-based packages)
@@ -181,16 +181,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.1.2-r0 description:
+curl-8.2.1-r0 description:
 URL retrival utility and library
 
-curl-8.1.2-r0 webpage:
+curl-8.2.1-r0 webpage:
 https://curl.se/
 
-curl-8.1.2-r0 installed size:
+curl-8.2.1-r0 installed size:
 268 KiB
 
-curl-8.1.2-r0 license:
+curl-8.2.1-r0 license:
 curl
 
 ```
@@ -283,16 +283,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1u-r1 description:
+libcrypto1.1-1.1.1v-r0 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1u-r1 webpage:
+libcrypto1.1-1.1.1v-r0 webpage:
 https://www.openssl.org/
 
-libcrypto1.1-1.1.1u-r1 installed size:
+libcrypto1.1-1.1.1v-r0 installed size:
 2708 KiB
 
-libcrypto1.1-1.1.1u-r1 license:
+libcrypto1.1-1.1.1v-r0 license:
 OpenSSL
 
 ```
@@ -300,16 +300,16 @@ OpenSSL
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.1.2-r0 description:
+libcurl-8.2.1-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.1.2-r0 webpage:
+libcurl-8.2.1-r0 webpage:
 https://curl.se/
 
-libcurl-8.1.2-r0 installed size:
+libcurl-8.2.1-r0 installed size:
 564 KiB
 
-libcurl-8.1.2-r0 license:
+libcurl-8.2.1-r0 license:
 curl
 
 ```
@@ -385,16 +385,16 @@ ISC
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1u-r1 description:
+libssl1.1-1.1.1v-r0 description:
 SSL shared libraries
 
-libssl1.1-1.1.1u-r1 webpage:
+libssl1.1-1.1.1v-r0 webpage:
 https://www.openssl.org/
 
-libssl1.1-1.1.1u-r1 installed size:
+libssl1.1-1.1.1v-r0 installed size:
 528 KiB
 
-libssl1.1-1.1.1u-r1 license:
+libssl1.1-1.1.1v-r0 license:
 OpenSSL
 
 ```
@@ -521,16 +521,16 @@ MIT
 ### `apk` package: `nghttp2-libs`
 
 ```console
-nghttp2-libs-1.47.0-r0 description:
+nghttp2-libs-1.47.0-r1 description:
 Experimental HTTP/2 client, server and proxy (libraries)
 
-nghttp2-libs-1.47.0-r0 webpage:
+nghttp2-libs-1.47.0-r1 webpage:
 https://nghttp2.org
 
-nghttp2-libs-1.47.0-r0 installed size:
+nghttp2-libs-1.47.0-r1 installed size:
 156 KiB
 
-nghttp2-libs-1.47.0-r0 license:
+nghttp2-libs-1.47.0-r1 license:
 MIT
 
 ```
@@ -555,16 +555,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-1.1.1u-r1 description:
+openssl-1.1.1v-r0 description:
 toolkit for transport layer security (TLS) - version 1.1
 
-openssl-1.1.1u-r1 webpage:
+openssl-1.1.1v-r0 webpage:
 https://www.openssl.org/
 
-openssl-1.1.1u-r1 installed size:
+openssl-1.1.1v-r0 installed size:
 660 KiB
 
-openssl-1.1.1u-r1 license:
+openssl-1.1.1v-r0 license:
 OpenSSL
 
 ```

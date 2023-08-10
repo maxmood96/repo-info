@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:de011b0b64ccfc1a930994173b45109ad2b70b8dd03436d66ec360ec38ff8921`
-- Created: `2023-07-11T01:24:13.638332825Z`
-- Virtual Size: ~ 94.49 Mb  
+- Image ID: `sha256:6c1b77b56c2638516795f6988cfcc8f5d23080bc5a6c9dc95b5f428a3a969f22`
+- Created: `2023-08-09T10:52:32.209733111Z`
+- Virtual Size: ~ 94.51 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -199,16 +199,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.1.2-r0 description:
+curl-8.2.1-r0 description:
 URL retrival utility and library
 
-curl-8.1.2-r0 webpage:
+curl-8.2.1-r0 webpage:
 https://curl.se/
 
-curl-8.1.2-r0 installed size:
+curl-8.2.1-r0 installed size:
 268 KiB
 
-curl-8.1.2-r0 license:
+curl-8.2.1-r0 license:
 curl
 
 ```
@@ -301,16 +301,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.0.9-r1 description:
+libcrypto3-3.0.10-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.0.9-r1 webpage:
+libcrypto3-3.0.10-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.0.9-r1 installed size:
-4108 KiB
+libcrypto3-3.0.10-r0 installed size:
+4116 KiB
 
-libcrypto3-3.0.9-r1 license:
+libcrypto3-3.0.10-r0 license:
 Apache-2.0
 
 ```
@@ -318,16 +318,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.1.2-r0 description:
+libcurl-8.2.1-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.1.2-r0 webpage:
+libcurl-8.2.1-r0 webpage:
 https://curl.se/
 
-libcurl-8.1.2-r0 installed size:
-572 KiB
+libcurl-8.2.1-r0 installed size:
+576 KiB
 
-libcurl-8.1.2-r0 license:
+libcurl-8.2.1-r0 license:
 curl
 
 ```
@@ -369,16 +369,16 @@ BSD-3-Clause AND IJG AND Zlib
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.38-r0 description:
+libpng-1.6.39-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.38-r0 webpage:
+libpng-1.6.39-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.38-r0 installed size:
+libpng-1.6.39-r0 installed size:
 204 KiB
 
-libpng-1.6.38-r0 license:
+libpng-1.6.39-r0 license:
 Libpng
 
 ```
@@ -420,16 +420,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.0.9-r1 description:
+libssl3-3.0.10-r0 description:
 SSL shared libraries
 
-libssl3-3.0.9-r1 webpage:
+libssl3-3.0.10-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.0.9-r1 installed size:
+libssl3-3.0.10-r0 installed size:
 608 KiB
 
-libssl3-3.0.9-r1 license:
+libssl3-3.0.10-r0 license:
 Apache-2.0
 
 ```
@@ -556,16 +556,16 @@ MIT
 ### `apk` package: `nghttp2-libs`
 
 ```console
-nghttp2-libs-1.51.0-r0 description:
+nghttp2-libs-1.51.0-r1 description:
 Experimental HTTP/2 client, server and proxy (libraries)
 
-nghttp2-libs-1.51.0-r0 webpage:
+nghttp2-libs-1.51.0-r1 webpage:
 https://nghttp2.org
 
-nghttp2-libs-1.51.0-r0 installed size:
+nghttp2-libs-1.51.0-r1 installed size:
 172 KiB
 
-nghttp2-libs-1.51.0-r0 license:
+nghttp2-libs-1.51.0-r1 license:
 MIT
 
 ```
@@ -590,16 +590,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.0.9-r1 description:
+openssl-3.0.10-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.0.9-r1 webpage:
+openssl-3.0.10-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.0.9-r1 installed size:
+openssl-3.0.10-r0 installed size:
 872 KiB
 
-openssl-3.0.9-r1 license:
+openssl-3.0.10-r0 license:
 Apache-2.0
 
 ```

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:40eaa67300541146a35eec22f3bdd5f19431d2e609bdba590883c8c8f6e5273a`
-- Created: `2023-08-04T23:55:22.874659904Z`
-- Virtual Size: ~ 183.17 Mb  
+- Image ID: `sha256:cd00bd9d00cd14cdbac0fe384737f6b87644f274ebd3b7c5b15f52ec3e78a6a1`
+- Created: `2023-08-09T10:46:10.556216542Z`
+- Virtual Size: ~ 176.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -198,16 +198,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.1.2-r0 description:
+curl-8.2.1-r0 description:
 URL retrival utility and library
 
-curl-8.1.2-r0 webpage:
+curl-8.2.1-r0 webpage:
 https://curl.se/
 
-curl-8.1.2-r0 installed size:
+curl-8.2.1-r0 installed size:
 268 KiB
 
-curl-8.1.2-r0 license:
+curl-8.2.1-r0 license:
 curl
 
 ```
@@ -368,16 +368,16 @@ BSD-3-Clause AND IJG AND Zlib
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.38-r0 description:
+libpng-1.6.39-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.38-r0 webpage:
+libpng-1.6.39-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.38-r0 installed size:
+libpng-1.6.39-r0 installed size:
 204 KiB
 
-libpng-1.6.38-r0 license:
+libpng-1.6.39-r0 license:
 Libpng
 
 ```
