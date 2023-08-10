@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ee2490ffb4789dbbfe0e3b9ae1650ff943ae987678e761973ec124e3b127f00e`
-- Created: `2023-07-28T02:48:53.700882746Z`
-- Virtual Size: ~ 1.68 Gb  
+- Image ID: `sha256:8e6e60447c01c9b2fde724f63001f97f5a40528f33eb10c0f2e125e11a749f77`
+- Created: `2023-08-07T19:28:57.888651525Z`
+- Virtual Size: ~ 1.69 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -8056,11 +8056,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/npth/1.6-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/npth/1.6-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `odoo=16.0.20230720`
+### `dpkg` source package: `odoo=16.0.20230807`
 
 Binary Packages:
 
-- `odoo=16.0.20230720`
+- `odoo=16.0.20230807`
 
 Licenses: (parsed from: `/usr/share/doc/odoo/copyright`)
 
@@ -9566,11 +9566,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/python-watchdog/1.0.2-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/python-watchdog/1.0.2-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `python-werkzeug=1.0.1+dfsg1-2`
+### `dpkg` source package: `python-werkzeug=1.0.1+dfsg1-2+deb11u1`
 
 Binary Packages:
 
-- `python3-werkzeug=1.0.1+dfsg1-2`
+- `python3-werkzeug=1.0.1+dfsg1-2+deb11u1`
 
 Licenses: (parsed from: `/usr/share/doc/python3-werkzeug/copyright`)
 
@@ -9580,17 +9580,17 @@ Licenses: (parsed from: `/usr/share/doc/python3-werkzeug/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python-werkzeug=1.0.1+dfsg1-2
-'http://deb.debian.org/debian/pool/main/p/python-werkzeug/python-werkzeug_1.0.1%2bdfsg1-2.dsc' python-werkzeug_1.0.1+dfsg1-2.dsc 2442 SHA256:c95c92390fe0984c6d02b1b22252675c98102f82ac11b7f6f0849aab5e055586
-'http://deb.debian.org/debian/pool/main/p/python-werkzeug/python-werkzeug_1.0.1%2bdfsg1.orig.tar.xz' python-werkzeug_1.0.1+dfsg1.orig.tar.xz 730032 SHA256:12432f3bd8abf78aa8d8f144d3088acdf6612c6984ad8ae812b34c2391f9bffa
-'http://deb.debian.org/debian/pool/main/p/python-werkzeug/python-werkzeug_1.0.1%2bdfsg1-2.debian.tar.xz' python-werkzeug_1.0.1+dfsg1-2.debian.tar.xz 7396 SHA256:e60d4a68b483ce7cf039ff59fab0459834578b2e4669d53f822f51d534a654aa
+$ apt-get source -qq --print-uris python-werkzeug=1.0.1+dfsg1-2+deb11u1
+'http://deb.debian.org/debian-security/pool/updates/main/p/python-werkzeug/python-werkzeug_1.0.1%2bdfsg1-2%2bdeb11u1.dsc' python-werkzeug_1.0.1+dfsg1-2+deb11u1.dsc 2632 SHA256:f37c7dceab0b6505e103cf57ce1b04539db4ede1f35484e0ad5d5bff7a699d09
+'http://deb.debian.org/debian-security/pool/updates/main/p/python-werkzeug/python-werkzeug_1.0.1%2bdfsg1.orig.tar.xz' python-werkzeug_1.0.1+dfsg1.orig.tar.xz 730032 SHA256:12432f3bd8abf78aa8d8f144d3088acdf6612c6984ad8ae812b34c2391f9bffa
+'http://deb.debian.org/debian-security/pool/updates/main/p/python-werkzeug/python-werkzeug_1.0.1%2bdfsg1-2%2bdeb11u1.debian.tar.xz' python-werkzeug_1.0.1+dfsg1-2+deb11u1.debian.tar.xz 10296 SHA256:e3e7e4c1b8eccc1c0da5381f2f9eeb5d978478220ae68a640b99d39c11b5c4c9
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/python-werkzeug/1.0.1+dfsg1-2/ (for browsing the source)
-- https://sources.debian.net/src/python-werkzeug/1.0.1+dfsg1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python-werkzeug/1.0.1+dfsg1-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/python-werkzeug/1.0.1+dfsg1-2+deb11u1/ (for browsing the source)
+- https://sources.debian.net/src/python-werkzeug/1.0.1+dfsg1-2+deb11u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/python-werkzeug/1.0.1+dfsg1-2+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python-xlrd=1.2.0-2`
 
