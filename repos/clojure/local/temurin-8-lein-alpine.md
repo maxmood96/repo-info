@@ -2,11 +2,12 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:75b58b848355e4e5bcb600cf29fdc3239b1075b8e92ce0d1ef2dd5008087f08d`
-- Created: `2023-08-01T22:06:43.753205823Z`
-- Virtual Size: ~ 249.41 Mb  
+- Image ID: `sha256:2ee84f7e633c1f4952e28d5d85eb3103e67847b5203f28738ea9ab734b9d1e77`
+- Created: `2023-08-08T22:27:47.18564318Z`
+- Virtual Size: ~ 246.24 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
+- Entrypoint: `["/entrypoint.sh"]`
 - Command: `["lein","repl"]`
 - Environment:
   - `PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/`
@@ -126,16 +127,16 @@ MIT
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.36.1-r0 description:
+busybox-1.36.1-r2 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.36.1-r0 webpage:
+busybox-1.36.1-r2 webpage:
 https://busybox.net/
 
-busybox-1.36.1-r0 installed size:
+busybox-1.36.1-r2 installed size:
 924 KiB
 
-busybox-1.36.1-r0 license:
+busybox-1.36.1-r2 license:
 GPL-2.0-only
 
 ```
@@ -143,17 +144,34 @@ GPL-2.0-only
 ### `apk` package: `busybox-binsh`
 
 ```console
-busybox-binsh-1.36.1-r0 description:
+busybox-binsh-1.36.1-r2 description:
 busybox ash /bin/sh
 
-busybox-binsh-1.36.1-r0 webpage:
+busybox-binsh-1.36.1-r2 webpage:
 https://busybox.net/
 
-busybox-binsh-1.36.1-r0 installed size:
+busybox-binsh-1.36.1-r2 installed size:
 8192 B
 
-busybox-binsh-1.36.1-r0 license:
+busybox-binsh-1.36.1-r2 license:
 GPL-2.0-only
+
+```
+
+### `apk` package: `ca-certificates`
+
+```console
+ca-certificates-20230506-r0 description:
+Common CA certificates PEM files from Mozilla
+
+ca-certificates-20230506-r0 webpage:
+https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
+
+ca-certificates-20230506-r0 installed size:
+688 KiB
+
+ca-certificates-20230506-r0 license:
+MPL-2.0 AND MIT
 
 ```
 
@@ -242,6 +260,23 @@ FTL OR GPL-2.0-or-later
 
 ```
 
+### `apk` package: `java-cacerts`
+
+```console
+java-cacerts-1.0-r1 description:
+Script to update java cacerts store
+
+java-cacerts-1.0-r1 webpage:
+https://git.alpinelinux.org/aports/tree/community/java-cacerts
+
+java-cacerts-1.0-r1 installed size:
+32 KiB
+
+java-cacerts-1.0-r1 license:
+MIT
+
+```
+
 ### `apk` package: `libbz2`
 
 ```console
@@ -279,16 +314,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.1-r3 description:
+libcrypto3-3.1.2-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.1.1-r3 webpage:
+libcrypto3-3.1.2-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.1-r3 installed size:
-4464 KiB
+libcrypto3-3.1.2-r0 installed size:
+4468 KiB
 
-libcrypto3-3.1.1-r3 license:
+libcrypto3-3.1.2-r0 license:
 Apache-2.0
 
 ```
@@ -306,6 +341,23 @@ libexpat-2.5.0-r1 installed size:
 144 KiB
 
 libexpat-2.5.0-r1 license:
+MIT
+
+```
+
+### `apk` package: `libffi`
+
+```console
+libffi-3.4.4-r2 description:
+portable, high level programming interface to various calling conventions.
+
+libffi-3.4.4-r2 webpage:
+https://sourceware.org/libffi/
+
+libffi-3.4.4-r2 installed size:
+52 KiB
+
+libffi-3.4.4-r2 license:
 MIT
 
 ```
@@ -398,17 +450,34 @@ ISC AND ( BSD-3-Clause OR MIT )
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.1-r3 description:
+libssl3-3.1.2-r0 description:
 SSL shared libraries
 
-libssl3-3.1.1-r3 webpage:
+libssl3-3.1.2-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.1-r3 installed size:
+libssl3-3.1.2-r0 installed size:
 552 KiB
 
-libssl3-3.1.1-r3 license:
+libssl3-3.1.2-r0 license:
 Apache-2.0
+
+```
+
+### `apk` package: `libtasn1`
+
+```console
+libtasn1-4.19.0-r1 description:
+The ASN.1 library used in GNUTLS
+
+libtasn1-4.19.0-r1 webpage:
+https://www.gnu.org/software/gnutls/
+
+libtasn1-4.19.0-r1 installed size:
+80 KiB
+
+libtasn1-4.19.0-r1 license:
+LGPL-2.1-or-later
 
 ```
 
@@ -432,16 +501,16 @@ MIT
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.4-r0 description:
+musl-1.2.4-r1 description:
 the musl c library (libc) implementation
 
-musl-1.2.4-r0 webpage:
+musl-1.2.4-r1 webpage:
 https://musl.libc.org/
 
-musl-1.2.4-r0 installed size:
+musl-1.2.4-r1 installed size:
 620 KiB
 
-musl-1.2.4-r0 license:
+musl-1.2.4-r1 license:
 MIT
 
 ```
@@ -483,16 +552,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.4-r0 description:
+musl-utils-1.2.4-r1 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.4-r0 webpage:
+musl-utils-1.2.4-r1 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.4-r0 installed size:
+musl-utils-1.2.4-r1 installed size:
 132 KiB
 
-musl-utils-1.2.4-r0 license:
+musl-utils-1.2.4-r1 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```
@@ -511,6 +580,40 @@ ncurses-terminfo-base-6.4_p20230506-r0 installed size:
 
 ncurses-terminfo-base-6.4_p20230506-r0 license:
 X11
+
+```
+
+### `apk` package: `p11-kit`
+
+```console
+p11-kit-0.24.1-r2 description:
+Library for loading and sharing PKCS#11 modules
+
+p11-kit-0.24.1-r2 webpage:
+https://p11-glue.freedesktop.org/
+
+p11-kit-0.24.1-r2 installed size:
+1012 KiB
+
+p11-kit-0.24.1-r2 license:
+BSD-3-Clause
+
+```
+
+### `apk` package: `p11-kit-trust`
+
+```console
+p11-kit-trust-0.24.1-r2 description:
+System trust module from p11-kit
+
+p11-kit-trust-0.24.1-r2 webpage:
+https://p11-glue.freedesktop.org/
+
+p11-kit-trust-0.24.1-r2 installed size:
+356 KiB
+
+p11-kit-trust-0.24.1-r2 license:
+BSD-3-Clause
 
 ```
 
@@ -551,16 +654,16 @@ GPL-2.0-only
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.36.1-r0 description:
+ssl_client-1.36.1-r2 description:
 EXternal ssl_client for busybox wget
 
-ssl_client-1.36.1-r0 webpage:
+ssl_client-1.36.1-r2 webpage:
 https://busybox.net/
 
-ssl_client-1.36.1-r0 installed size:
+ssl_client-1.36.1-r2 installed size:
 28 KiB
 
-ssl_client-1.36.1-r0 license:
+ssl_client-1.36.1-r2 license:
 GPL-2.0-only
 
 ```

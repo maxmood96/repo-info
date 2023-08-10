@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:416c7a306699d1dda66063abbc0cf5c79bd8930677e47c6a55ab7a813ea29bcc`
-- Created: `2023-07-25T23:30:49.812514992Z`
-- Virtual Size: ~ 544.42 Mb  
+- Image ID: `sha256:c703b2b4429168dfe23d99f609e67436a70e2f6a26af4684a52c786b420af625`
+- Created: `2023-08-08T22:26:19.132221965Z`
+- Virtual Size: ~ 546.06 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint"]`
@@ -184,16 +184,16 @@ $ apt-get source -qq --print-uris bash=5.1-6ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.1-6ubuntu1.debian.tar.xz' bash_5.1-6ubuntu1.debian.tar.xz 99652 SHA512:da77655882d0977656b75c750589307c54c7d5dd28b1cfc357d4a474ebf26399a91cfa19c4ba381e0a59a8f115f8381d432e82f2e659cb9bcbebf3fa0cd77bc1
 ```
 
-### `dpkg` source package: `binutils=2.38-4ubuntu2.2`
+### `dpkg` source package: `binutils=2.38-4ubuntu2.3`
 
 Binary Packages:
 
-- `binutils=2.38-4ubuntu2.2`
-- `binutils-common:amd64=2.38-4ubuntu2.2`
-- `binutils-x86-64-linux-gnu=2.38-4ubuntu2.2`
-- `libbinutils:amd64=2.38-4ubuntu2.2`
-- `libctf-nobfd0:amd64=2.38-4ubuntu2.2`
-- `libctf0:amd64=2.38-4ubuntu2.2`
+- `binutils=2.38-4ubuntu2.3`
+- `binutils-common:amd64=2.38-4ubuntu2.3`
+- `binutils-x86-64-linux-gnu=2.38-4ubuntu2.3`
+- `libbinutils:amd64=2.38-4ubuntu2.3`
+- `libctf-nobfd0:amd64=2.38-4ubuntu2.3`
+- `libctf0:amd64=2.38-4ubuntu2.3`
 
 Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/binutils-common/copyright`, `/usr/share/doc/binutils-x86-64-linux-gnu/copyright`, `/usr/share/doc/libbinutils/copyright`, `/usr/share/doc/libctf-nobfd0/copyright`, `/usr/share/doc/libctf0/copyright`)
 
@@ -201,9 +201,14 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris binutils=2.38-4ubuntu2.3
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38-4ubuntu2.3.dsc' binutils_2.38-4ubuntu2.3.dsc 8886 SHA512:1905b4fa0a2aa3797d1b201647aae26b3223d57213fb31baadbe247e88ecfbcd85c70611b79656147f465bd1781927d37be839439e8b473f89ab67af13a3868c
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38.orig.tar.xz' binutils_2.38.orig.tar.xz 23651408 SHA512:8bf0b0d193c9c010e0518ee2b2e5a830898af206510992483b427477ed178396cd210235e85fd7bd99a96fc6d5eedbeccbd48317a10f752b7336ada8b2bb826d
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38-4ubuntu2.3.debian.tar.xz' binutils_2.38-4ubuntu2.3.debian.tar.xz 295236 SHA512:166dca02762ff3d196eb41d6bbeed9655390291c44464e425a4db5082cc5c29bafa51c47f7e010d89a699614101f3e27784a4f4dea3c0848b6c177be8c266e84
+```
 
 ### `dpkg` source package: `brotli=1.0.9-2build6`
 
@@ -302,33 +307,15 @@ $ apt-get source -qq --print-uris coreutils=8.32-4.1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.debian.tar.xz' coreutils_8.32-4.1ubuntu1.debian.tar.xz 41096 SHA512:74adfa2f2a85af8d7024ad6d13942e915217dcb10e29caa9c314e0a15da6ec019e7aa52ac5351c35ccea1bace7a05c6dc7569b7b0487c8fcd46b3ba42d66d89d
 ```
 
-### `dpkg` source package: `curl=7.81.0-1ubuntu1.10`
-
-Binary Packages:
-
-- `curl=7.81.0-1ubuntu1.10`
-- `libcurl4:amd64=7.81.0-1ubuntu1.10`
-
-Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4/copyright`)
-
-- `BSD-3-Clause`
-- `BSD-4-Clause`
-- `ISC`
-- `curl`
-- `other`
-- `public-domain`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
 ### `dpkg` source package: `curl=7.81.0-1ubuntu1.13`
 
 Binary Packages:
 
+- `curl=7.81.0-1ubuntu1.13`
 - `libcurl3-gnutls:amd64=7.81.0-1ubuntu1.13`
+- `libcurl4:amd64=7.81.0-1ubuntu1.13`
 
-Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`)
+Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
 - `BSD-3-Clause`
 - `BSD-4-Clause`
@@ -1903,19 +1890,24 @@ $ apt-get source -qq --print-uris nghttp2=1.43.0-1build3
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.43.0-1build3.debian.tar.xz' nghttp2_1.43.0-1build3.debian.tar.xz 16528 SHA512:a3c7be43142e4976a395052ff4eba22e4f610c31659eed2b03987c58d0b0ae83335f0593ceeea0f05f5d7db8f56c3c3b3651bd92fae3a8353b95595179926bd1
 ```
 
-### `dpkg` source package: `openldap=2.5.14+dfsg-0ubuntu0.22.04.2`
+### `dpkg` source package: `openldap=2.5.15+dfsg-0ubuntu0.22.04.1`
 
 Binary Packages:
 
-- `libldap-2.5-0:amd64=2.5.14+dfsg-0ubuntu0.22.04.2`
+- `libldap-2.5-0:amd64=2.5.15+dfsg-0ubuntu0.22.04.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openldap=2.5.15+dfsg-0ubuntu0.22.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.15%2bdfsg-0ubuntu0.22.04.1.dsc' openldap_2.5.15+dfsg-0ubuntu0.22.04.1.dsc 3319 SHA512:b872106b4d944d1050a70c5db89a51eeef8826d49ef723a1e24951f962108dd7af083a9f4d9e17e627c10f3f3e94844d6c4b90250af2947d69d839313a0e4b95
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.15%2bdfsg.orig.tar.gz' openldap_2.5.15+dfsg.orig.tar.gz 5616689 SHA512:e461b6c7f25bb666a72df84e83d0813d6b64e997b8de842b7ec6eac987287fcf08348be6c0b8bd6b7b663e2a03fc672d2eb5a38c570608404861633070fb613d
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.15%2bdfsg-0ubuntu0.22.04.1.debian.tar.xz' openldap_2.5.15+dfsg-0ubuntu0.22.04.1.debian.tar.xz 171804 SHA512:7aaba43df6cb6ed437dbad0881e9165f91de0375f3da89f4e5b7cb135e3d5fae123cf50d3c5c9a409a7be38f7c14bc95b38f7e2782455c6706ee50e70f9a5074
+```
 
 ### `dpkg` source package: `openssh=1:8.9p1-3ubuntu0.3`
 
@@ -1971,8 +1963,10 @@ $ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.10
 Binary Packages:
 
 - `libp11-kit0:amd64=0.24.0-6build1`
+- `p11-kit=0.24.0-6build1`
+- `p11-kit-modules:amd64=0.24.0-6build1`
 
-Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`, `/usr/share/doc/p11-kit/copyright`, `/usr/share/doc/p11-kit-modules/copyright`)
 
 - `Apache-2.0`
 - `BSD-3-Clause`
@@ -2166,14 +2160,14 @@ $ apt-get source -qq --print-uris python3-defaults=3.10.6-1~22.04
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.10.6-1%7e22.04.tar.gz' python3-defaults_3.10.6-1~22.04.tar.gz 145325 SHA512:4dce1fcadb47a3fbd72e489e78c6543aa4b35a0480eb4e10617b3afd223cdd244e97f79db55f2abf28367848658ae46a3cda895d3d9dcf21c530149207f080dd
 ```
 
-### `dpkg` source package: `python3.10=3.10.6-1~22.04.2ubuntu1.1`
+### `dpkg` source package: `python3.10=3.10.12-1~22.04.2`
 
 Binary Packages:
 
-- `libpython3.10-minimal:amd64=3.10.6-1~22.04.2ubuntu1.1`
-- `libpython3.10-stdlib:amd64=3.10.6-1~22.04.2ubuntu1.1`
-- `python3.10=3.10.6-1~22.04.2ubuntu1.1`
-- `python3.10-minimal=3.10.6-1~22.04.2ubuntu1.1`
+- `libpython3.10-minimal:amd64=3.10.12-1~22.04.2`
+- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.2`
+- `python3.10=3.10.12-1~22.04.2`
+- `python3.10-minimal=3.10.12-1~22.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/share/doc/libpython3.10-stdlib/copyright`, `/usr/share/doc/python3.10/copyright`, `/usr/share/doc/python3.10-minimal/copyright`)
 
@@ -2195,9 +2189,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.10=3.10.12-1~22.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.2.dsc' python3.10_3.10.12-1~22.04.2.dsc 3699 SHA512:acb3b74adaa110d5614ba50d6c8001f7eae6778a5800f0d0cedbd4f29d3f574d04b81276d7bcc4d3fa3044609f40cac8080e28eef04cf04898cefa8ec17b5b49
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12.orig.tar.xz' python3.10_3.10.12.orig.tar.xz 19654836 SHA512:5ea018e71bfe7872e02eaf8aef56d5583c0880e4ce5fbbdf8ea76da20c2e94ac6a3ba8badb4b7d1bc21853402a3b63541b04181737417b1626e786b696595cf5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.2.debian.tar.xz' python3.10_3.10.12-1~22.04.2.debian.tar.xz 218484 SHA512:c8ad86bf51977ed890905b4688396e77f8310f08a48eccc5272b976ffb2b60a815bac6cb37f90967df9c39a73bf15ac0bedbddf007c97a59312779df95e86ea6
+```
 
 ### `dpkg` source package: `readline=8.1.2-1`
 
