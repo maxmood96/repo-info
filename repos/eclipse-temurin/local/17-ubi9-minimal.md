@@ -2,11 +2,12 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f637ebfb7d823a199868cae512822c4055aad02e5207793c348d1b2114f458f8`
-- Created: `2023-08-01T23:28:20.142042211Z`
+- Image ID: `sha256:57516cb1ae07b34de35523d8bfd73aeedf379e80efa0874d4b4a3ff1b00f4134`
+- Created: `2023-08-08T19:24:11.890000608Z`
 - Virtual Size: ~ 450.08 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
+- Entrypoint: `["/entrypoint.sh"]`
 - Command: `["jshell"]`
 - Environment:
   - `PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`

@@ -2,11 +2,12 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bf019d64f84ef5e474b1a483987af5cc29267ef057186b28742eafb473f70519`
-- Created: `2023-07-25T22:21:42.026989437Z`
+- Image ID: `sha256:678c5c48e9df84cad59578cb2fa21c3246e05b2f9973a190fa9ecad6f69a6168`
+- Created: `2023-08-08T19:24:08.973487233Z`
 - Virtual Size: ~ 537.66 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
+- Entrypoint: `["/entrypoint.sh"]`
 - Command: `["jshell"]`
 - Environment:
   - `PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
@@ -691,8 +692,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url krb5-libs-1.15.1-50.el7
-http://vault.centos.org/centos/7/updates/Source/SPackages/krb5-1.15.1-50.el7.src.rpm
 http://vault.centos.org/centos/7/os/Source/SPackages/krb5-1.15.1-50.el7.src.rpm
+http://vault.centos.org/centos/7/updates/Source/SPackages/krb5-1.15.1-50.el7.src.rpm
 ```
 
 ### `rpm` package: `libacl-2.2.51-15.el7.x86_64`

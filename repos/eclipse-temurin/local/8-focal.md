@@ -2,12 +2,12 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:95cb2e6164053e06a3530c4d9bfcb33639d413bd1904d8aeb977819f2e9c1001`
-- Created: `2023-08-03T02:35:53.319704126Z`
-- Virtual Size: ~ 321.22 Mb  
+- Image ID: `sha256:55c71a4f7ac2856f70dddd3f6cf9de958491c99dfe9ca3f9338db38ec8fbd9ff`
+- Created: `2023-08-08T19:20:31.609203431Z`
+- Virtual Size: ~ 323.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Command: `["/bin/bash"]`
+- Entrypoint: `["/entrypoint.sh"]`
 - Environment:
   - `PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/opt/java/openjdk`
@@ -1413,8 +1413,10 @@ $ apt-get source -qq --print-uris openssl=1.1.1f-1ubuntu2.19
 Binary Packages:
 
 - `libp11-kit0:amd64=0.23.20-1ubuntu0.1`
+- `p11-kit=0.23.20-1ubuntu0.1`
+- `p11-kit-modules:amd64=0.23.20-1ubuntu0.1`
 
-Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`, `/usr/share/doc/p11-kit/copyright`, `/usr/share/doc/p11-kit-modules/copyright`)
 
 - `BSD-3-Clause`
 - `ISC`
