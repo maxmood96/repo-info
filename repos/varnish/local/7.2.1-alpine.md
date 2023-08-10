@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d9398eece73dfdd97a58ada671878125c11ac3c55f398deaa6e0a5647952721c`
-- Created: `2023-07-11T18:28:15.718628842Z`
+- Image ID: `sha256:253bb555c3874375ee8c359ce620b5e19ffa5978e7526d2a2292384b5ee117c6`
+- Created: `2023-08-09T04:10:24.326903203Z`
 - Virtual Size: ~ 148.66 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -222,16 +222,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1u-r1 description:
+libcrypto1.1-1.1.1v-r0 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1u-r1 webpage:
+libcrypto1.1-1.1.1v-r0 webpage:
 https://www.openssl.org/
 
-libcrypto1.1-1.1.1u-r1 installed size:
+libcrypto1.1-1.1.1v-r0 installed size:
 2680 KiB
 
-libcrypto1.1-1.1.1u-r1 license:
+libcrypto1.1-1.1.1v-r0 license:
 OpenSSL
 
 ```
@@ -324,16 +324,16 @@ ISC AND (BSD-3-Clause OR MIT)
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1u-r1 description:
+libssl1.1-1.1.1v-r0 description:
 SSL shared libraries
 
-libssl1.1-1.1.1u-r1 webpage:
+libssl1.1-1.1.1v-r0 webpage:
 https://www.openssl.org/
 
-libssl1.1-1.1.1u-r1 installed size:
+libssl1.1-1.1.1v-r0 installed size:
 528 KiB
 
-libssl1.1-1.1.1u-r1 license:
+libssl1.1-1.1.1v-r0 license:
 OpenSSL
 
 ```
@@ -494,16 +494,16 @@ MIT
 ### `apk` package: `pcre2`
 
 ```console
-pcre2-10.40-r0 description:
+pcre2-10.42-r0 description:
 Perl-compatible regular expression library
 
-pcre2-10.40-r0 webpage:
+pcre2-10.42-r0 webpage:
 https://pcre.org/
 
-pcre2-10.40-r0 installed size:
-664 KiB
+pcre2-10.42-r0 installed size:
+668 KiB
 
-pcre2-10.40-r0 license:
+pcre2-10.42-r0 license:
 BSD-3-Clause
 
 ```
