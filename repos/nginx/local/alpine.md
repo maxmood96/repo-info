@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4937520ae206c8969734d9a659fc1e6594d9b22b9340bf0796defbea0c92dd02`
-- Created: `2023-06-15T00:20:26.759487675Z`
-- Virtual Size: ~ 41.39 Mb  
+- Image ID: `sha256:414132ff3b076936528928c823b4f3d1e1178b2692ae04defc8f8fdfd0a83a03`
+- Created: `2023-08-09T02:15:48.864288331Z`
+- Virtual Size: ~ 41.40 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -192,16 +192,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.1.2-r0 description:
+curl-8.2.1-r0 description:
 URL retrival utility and library
 
-curl-8.1.2-r0 webpage:
+curl-8.2.1-r0 webpage:
 https://curl.se/
 
-curl-8.1.2-r0 installed size:
+curl-8.2.1-r0 installed size:
 268 KiB
 
-curl-8.1.2-r0 license:
+curl-8.2.1-r0 license:
 curl
 
 ```
@@ -328,16 +328,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.0.9-r1 description:
+libcrypto3-3.0.10-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.0.9-r1 webpage:
+libcrypto3-3.0.10-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.0.9-r1 installed size:
-4108 KiB
+libcrypto3-3.0.10-r0 installed size:
+4116 KiB
 
-libcrypto3-3.0.9-r1 license:
+libcrypto3-3.0.10-r0 license:
 Apache-2.0
 
 ```
@@ -345,16 +345,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.1.2-r0 description:
+libcurl-8.2.1-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.1.2-r0 webpage:
+libcurl-8.2.1-r0 webpage:
 https://curl.se/
 
-libcurl-8.1.2-r0 installed size:
-572 KiB
+libcurl-8.2.1-r0 installed size:
+576 KiB
 
-libcurl-8.1.2-r0 license:
+libcurl-8.2.1-r0 license:
 curl
 
 ```
@@ -532,16 +532,16 @@ Public Domain
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.38-r0 description:
+libpng-1.6.39-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.38-r0 webpage:
+libpng-1.6.39-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.38-r0 installed size:
+libpng-1.6.39-r0 installed size:
 204 KiB
 
-libpng-1.6.38-r0 license:
+libpng-1.6.39-r0 license:
 Libpng
 
 ```
@@ -566,16 +566,16 @@ MIT
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.0.9-r1 description:
+libssl3-3.0.10-r0 description:
 SSL shared libraries
 
-libssl3-3.0.9-r1 webpage:
+libssl3-3.0.10-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.0.9-r1 installed size:
+libssl3-3.0.10-r0 installed size:
 608 KiB
 
-libssl3-3.0.9-r1 license:
+libssl3-3.0.10-r0 license:
 Apache-2.0
 
 ```
@@ -617,16 +617,16 @@ BSD-3-Clause
 ### `apk` package: `libx11`
 
 ```console
-libx11-1.8.4-r0 description:
+libx11-1.8.4-r1 description:
 X11 client-side library
 
-libx11-1.8.4-r0 webpage:
+libx11-1.8.4-r1 webpage:
 http://xorg.freedesktop.org/
 
-libx11-1.8.4-r0 installed size:
+libx11-1.8.4-r1 installed size:
 3172 KiB
 
-libx11-1.8.4-r0 license:
+libx11-1.8.4-r1 license:
 custom:XFREE86
 
 ```
@@ -838,16 +838,16 @@ MIT
 ### `apk` package: `nghttp2-libs`
 
 ```console
-nghttp2-libs-1.51.0-r0 description:
+nghttp2-libs-1.51.0-r1 description:
 Experimental HTTP/2 client, server and proxy (libraries)
 
-nghttp2-libs-1.51.0-r0 webpage:
+nghttp2-libs-1.51.0-r1 webpage:
 https://nghttp2.org
 
-nghttp2-libs-1.51.0-r0 installed size:
+nghttp2-libs-1.51.0-r1 installed size:
 172 KiB
 
-nghttp2-libs-1.51.0-r0 license:
+nghttp2-libs-1.51.0-r1 license:
 MIT
 
 ```
@@ -991,16 +991,16 @@ GPL-2.0-only
 ### `apk` package: `tiff`
 
 ```console
-tiff-4.4.0-r3 description:
+tiff-4.4.0-r4 description:
 Provides support for the Tag Image File Format or TIFF
 
-tiff-4.4.0-r3 webpage:
+tiff-4.4.0-r4 webpage:
 https://gitlab.com/libtiff/libtiff
 
-tiff-4.4.0-r3 installed size:
+tiff-4.4.0-r4 installed size:
 476 KiB
 
-tiff-4.4.0-r3 license:
+tiff-4.4.0-r4 license:
 libtiff
 
 ```
