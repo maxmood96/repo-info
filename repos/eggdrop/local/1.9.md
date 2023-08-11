@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:fb5a2e0d5610d91f6e6b5b086fbc0a0e1f8413c9c9c52d6b8b4818b903ea7b42`
-- Created: `2023-06-15T04:46:23.873835757Z`
+- Image ID: `sha256:bf7869f72da560a9be174f98cf0682f54ae7aec597d597e57ca55596f73c1668`
+- Created: `2023-08-08T23:45:03.42741919Z`
 - Virtual Size: ~ 33.23 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -159,16 +159,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto1.1`
 
 ```console
-libcrypto1.1-1.1.1u-r1 description:
+libcrypto1.1-1.1.1v-r0 description:
 Crypto library from openssl
 
-libcrypto1.1-1.1.1u-r1 webpage:
+libcrypto1.1-1.1.1v-r0 webpage:
 https://www.openssl.org/
 
-libcrypto1.1-1.1.1u-r1 installed size:
+libcrypto1.1-1.1.1v-r0 installed size:
 2708 KiB
 
-libcrypto1.1-1.1.1u-r1 license:
+libcrypto1.1-1.1.1v-r0 license:
 OpenSSL
 
 ```
@@ -176,16 +176,16 @@ OpenSSL
 ### `apk` package: `libssl1.1`
 
 ```console
-libssl1.1-1.1.1u-r1 description:
+libssl1.1-1.1.1v-r0 description:
 SSL shared libraries
 
-libssl1.1-1.1.1u-r1 webpage:
+libssl1.1-1.1.1v-r0 webpage:
 https://www.openssl.org/
 
-libssl1.1-1.1.1u-r1 installed size:
+libssl1.1-1.1.1v-r0 installed size:
 528 KiB
 
-libssl1.1-1.1.1u-r1 license:
+libssl1.1-1.1.1v-r0 license:
 OpenSSL
 
 ```
@@ -261,16 +261,16 @@ MIT
 ### `apk` package: `openssl`
 
 ```console
-openssl-1.1.1u-r1 description:
+openssl-1.1.1v-r0 description:
 toolkit for transport layer security (TLS) - version 1.1
 
-openssl-1.1.1u-r1 webpage:
+openssl-1.1.1v-r0 webpage:
 https://www.openssl.org/
 
-openssl-1.1.1u-r1 installed size:
+openssl-1.1.1v-r0 installed size:
 660 KiB
 
-openssl-1.1.1u-r1 license:
+openssl-1.1.1v-r0 license:
 OpenSSL
 
 ```
