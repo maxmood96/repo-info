@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4808042f406e38ab3050da7c12b3002e7b452c7e3468adabce6c37cbe882f32c`
-- Created: `2023-07-26T03:11:20.828600998Z`
+- Image ID: `sha256:efc348c901b1956baa2ac522754f145b5e024f68b509b49e1f0d0f295f8000cd`
+- Created: `2023-08-09T04:27:55.66269743Z`
 - Virtual Size: ~ 1.17 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1019,12 +1019,12 @@ $ apt-get source -qq --print-uris gnutls28=3.7.3-4ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.3-4ubuntu1.2.debian.tar.xz' gnutls28_3.7.3-4ubuntu1.2.debian.tar.xz 75936 SHA512:b4c58bb306be5bfef362f1c37e0ecdacf02ea4bfb69c77b684fc3cf09f32c0dfae3535ccda273401ac0cdcb8312fe328f2ace1789ffb95f710de512fa27cee3c
 ```
 
-### `dpkg` source package: `gpgme1.0=1.16.0-1.2ubuntu4`
+### `dpkg` source package: `gpgme1.0=1.16.0-1.2ubuntu4.1`
 
 Binary Packages:
 
-- `libgpgme11:amd64=1.16.0-1.2ubuntu4`
-- `libgpgmepp6:amd64=1.16.0-1.2ubuntu4`
+- `libgpgme11:amd64=1.16.0-1.2ubuntu4.1`
+- `libgpgmepp6:amd64=1.16.0-1.2ubuntu4.1`
 
 Licenses: (parsed from: `/usr/share/doc/libgpgme11/copyright`, `/usr/share/doc/libgpgmepp6/copyright`)
 
@@ -1042,11 +1042,11 @@ Licenses: (parsed from: `/usr/share/doc/libgpgme11/copyright`, `/usr/share/doc/l
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gpgme1.0=1.16.0-1.2ubuntu4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gpgme1.0/gpgme1.0_1.16.0-1.2ubuntu4.dsc' gpgme1.0_1.16.0-1.2ubuntu4.dsc 3049 SHA512:0e94b7f512c9206b9fd3d04ac5c1054097a199667656b32c04180cfd1ea96ab905801ffeed3bffe684f2e40c3d5906c8f047ac39b57e19f92f63efe3af03a8a0
+$ apt-get source -qq --print-uris gpgme1.0=1.16.0-1.2ubuntu4.1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gpgme1.0/gpgme1.0_1.16.0-1.2ubuntu4.1.dsc' gpgme1.0_1.16.0-1.2ubuntu4.1.dsc 3057 SHA512:8d04bce37266ac546b2b184f03429298019368c75f5ead35f269c5231249df9ed1ca35a994cf1eacf1806ef6b3f18c6ffb1671fc2db3689db17e7141d6e32bbe
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gpgme1.0/gpgme1.0_1.16.0.orig.tar.bz2' gpgme1.0_1.16.0.orig.tar.bz2 1718913 SHA512:69487be69612e9bf0221ff56ae687248bd13635db1b7087130e93c1670e38f3c810bbca17723555c04fe207976c35871bbc3da005179ce099504321cf33636e4
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gpgme1.0/gpgme1.0_1.16.0.orig.tar.bz2.asc' gpgme1.0_1.16.0.orig.tar.bz2.asc 228 SHA512:fbafd1dbe1fd96ed6457ffbda6b7de603cf66b5325e233c08a33b2b5b977ec116abf938608260a85ad007e08b54a474ebbf8732c75ad682de535e5b563591f19
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gpgme1.0/gpgme1.0_1.16.0-1.2ubuntu4.debian.tar.xz' gpgme1.0_1.16.0-1.2ubuntu4.debian.tar.xz 23784 SHA512:b9c302d6f714bad043cc9162da7e8adcb3e2d798a933f324d31033cdb5736f5304d756927c76470dfb8dcb10a6db9666a3b6c2bec0723923f7592977cbf1caaa
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gpgme1.0/gpgme1.0_1.16.0-1.2ubuntu4.1.debian.tar.xz' gpgme1.0_1.16.0-1.2ubuntu4.1.debian.tar.xz 24796 SHA512:4dcff01898ff1a746d59b6ca304f58e0e2c9220555ef2cc9fbaa403dd06e2ee4f704decce06e3c22965fc051e80089db1ec2f5c604cd9465760b4516159b6c23
 ```
 
 ### `dpkg` source package: `graphite2=1.3.14-1build2`
@@ -1098,11 +1098,11 @@ $ apt-get source -qq --print-uris grep=3.7-1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/grep/grep_3.7-1build1.debian.tar.xz' grep_3.7-1build1.debian.tar.xz 18184 SHA512:cbefc3635a0b0acc33d8a052d3ca7d583adbd1bcfc384559076b5e4f5508b4a8301b0dd54a029aecbab925a6f916c99a2d5bebe0a6936fe5ffeb5a07a0d9a917
 ```
 
-### `dpkg` source package: `gst-plugins-base1.0=1.20.1-1`
+### `dpkg` source package: `gst-plugins-base1.0=1.20.1-1ubuntu0.1`
 
 Binary Packages:
 
-- `libgstreamer-plugins-base1.0-0:amd64=1.20.1-1`
+- `libgstreamer-plugins-base1.0-0:amd64=1.20.1-1ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libgstreamer-plugins-base1.0-0/copyright`)
 
@@ -1116,10 +1116,10 @@ Licenses: (parsed from: `/usr/share/doc/libgstreamer-plugins-base1.0-0/copyright
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gst-plugins-base1.0=1.20.1-1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.20.1-1.dsc' gst-plugins-base1.0_1.20.1-1.dsc 3836 SHA512:e70fe59a4d2a8844a1fb2900d9cd8105286849aa04508533e548fe6d3a20af6d163ba6854f3af22b58bd9cf25069e409d9be53903af15f63fc39ff4d56b79089
+$ apt-get source -qq --print-uris gst-plugins-base1.0=1.20.1-1ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.20.1-1ubuntu0.1.dsc' gst-plugins-base1.0_1.20.1-1ubuntu0.1.dsc 3796 SHA512:b67c9e2cf9526fb9996dac3055231000489be357a149bcb8b38af31b73d824c2ec3c9d322b547ede41346f0c9b5f02a88a1f04cdd7fec252f14528fa3cf8bc23
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.20.1.orig.tar.xz' gst-plugins-base1.0_1.20.1.orig.tar.xz 3290068 SHA512:679a0eee1973fa9612e2e24978e2c2d9d8fdc5732e1699b4a87712881f1549d0811719a13ff4fe77b91322ca4425c39623b371703f6b3a36fb7238b977d3e541
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.20.1-1.debian.tar.xz' gst-plugins-base1.0_1.20.1-1.debian.tar.xz 43628 SHA512:f84d37d58ccf72923e6432c4334b4c55daa0c5dfd12a78d1dc0b7fad6ce3bff831a572e43498211d15d4949bb6a12db6c2b5b2832c0db8786807a0cf7e168817
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.20.1-1ubuntu0.1.debian.tar.xz' gst-plugins-base1.0_1.20.1-1ubuntu0.1.debian.tar.xz 45172 SHA512:754834b15184253386be4e8638994f10c34035a0af6a02bc61222a412301dc5c75dffeccc242d267129d2aa1b88281855395e1b578f18d7bb80f145aea47f547
 ```
 
 ### `dpkg` source package: `gstreamer1.0=1.20.3-0ubuntu1`
@@ -2434,11 +2434,11 @@ $ apt-get source -qq --print-uris libunistring=1.0-1
 'http://archive.ubuntu.com/ubuntu/pool/main/libu/libunistring/libunistring_1.0-1.debian.tar.xz' libunistring_1.0-1.debian.tar.xz 42004 SHA512:f9208e7ab38cc742bb46dc1a871ddb03847b99b6169e20e8d8660dd9cdf22bffb27f9b329dcbd025ad9b26aee5a2aab01337f36d8ab3020d2e752f9c2d4368ce
 ```
 
-### `dpkg` source package: `libunwind=1.3.2-2build2`
+### `dpkg` source package: `libunwind=1.3.2-2build2.1`
 
 Binary Packages:
 
-- `libunwind8:amd64=1.3.2-2build2`
+- `libunwind8:amd64=1.3.2-2build2.1`
 
 Licenses: (parsed from: `/usr/share/doc/libunwind8/copyright`)
 
@@ -2449,11 +2449,11 @@ Licenses: (parsed from: `/usr/share/doc/libunwind8/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libunwind=1.3.2-2build2
-'http://archive.ubuntu.com/ubuntu/pool/main/libu/libunwind/libunwind_1.3.2-2build2.dsc' libunwind_1.3.2-2build2.dsc 2925 SHA512:b800b8948c5b2832fb5af4bf4e600938c6164460d5125783452f91a2af50f1e506d4780d0e28dcbf496a0dd175c6e87668591e50b2c9dbf3215cdae894f17ac7
+$ apt-get source -qq --print-uris libunwind=1.3.2-2build2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/libu/libunwind/libunwind_1.3.2-2build2.1.dsc' libunwind_1.3.2-2build2.1.dsc 2929 SHA512:2c7543dbb427b461b2f0f106a42e97e18ad6477e7d73a4ef094e7013d450823503e2f9164477932b8d44aa727fea020968de8e09498057c04749ee8277f93d07
 'http://archive.ubuntu.com/ubuntu/pool/main/libu/libunwind/libunwind_1.3.2.orig.tar.gz' libunwind_1.3.2.orig.tar.gz 854114 SHA512:221864eae6bf0fde281d9551662af1e539ce919fbb7050947e60dbcc09efed4f5d34574dbce11792513e63151e0af72f02801b7bcd37a6a519e6d868abb8b509
 'http://archive.ubuntu.com/ubuntu/pool/main/libu/libunwind/libunwind_1.3.2.orig.tar.gz.asc' libunwind_1.3.2.orig.tar.gz.asc 659 SHA512:3ee5c16592a8c1c1ea62070d764ed09816e4441c724c2ea188fb368f2413e29f3a20e7cd241ab65753b28c77f589c92de4f7afbae058d4384e4dbbb441ef007d
-'http://archive.ubuntu.com/ubuntu/pool/main/libu/libunwind/libunwind_1.3.2-2build2.debian.tar.xz' libunwind_1.3.2-2build2.debian.tar.xz 20100 SHA512:f253b271f8a4f8b152d3127f4a8eb78b4adf7099c95f3d20dd58dd02acab63d7d40f34cef6d4f968be02f22b06145c6cd94179766bc596c983e07a8b921bcc83
+'http://archive.ubuntu.com/ubuntu/pool/main/libu/libunwind/libunwind_1.3.2-2build2.1.debian.tar.xz' libunwind_1.3.2-2build2.1.debian.tar.xz 20156 SHA512:1296e9f4659bf9f345498f869f481b0f42c6cdf64249c4b0161b246e72994072290aada8ec9a4df86d4c9afaa61358620c6b4022585efa21d977ca09cc26de35
 ```
 
 ### `dpkg` source package: `libvisio=0.1.7-1build5`
@@ -3123,11 +3123,11 @@ $ apt-get source -qq --print-uris openjpeg2=2.4.0-6
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openjpeg2/openjpeg2_2.4.0-6.debian.tar.xz' openjpeg2_2.4.0-6.debian.tar.xz 21124 SHA512:cdd8a1d29388d02c37612183fef2ff679133630871323894f46e7f4a56480118e1e03573b2eea2179ce0f92d6aca6a15ee8e9f382e036d7ff0cb0f1744f2df3e
 ```
 
-### `dpkg` source package: `openldap=2.5.14+dfsg-0ubuntu0.22.04.2`
+### `dpkg` source package: `openldap=2.5.15+dfsg-0ubuntu0.22.04.1`
 
 Binary Packages:
 
-- `libldap-2.5-0:amd64=2.5.14+dfsg-0ubuntu0.22.04.2`
+- `libldap-2.5-0:amd64=2.5.15+dfsg-0ubuntu0.22.04.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3185,8 +3185,10 @@ $ apt-get source -qq --print-uris orc=1:0.4.32-2
 Binary Packages:
 
 - `libp11-kit0:amd64=0.24.0-6build1`
+- `p11-kit=0.24.0-6build1`
+- `p11-kit-modules:amd64=0.24.0-6build1`
 
-Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`, `/usr/share/doc/p11-kit/copyright`, `/usr/share/doc/p11-kit-modules/copyright`)
 
 - `Apache-2.0`
 - `BSD-3-Clause`
@@ -3356,11 +3358,11 @@ $ apt-get source -qq --print-uris pixman=0.40.0-1ubuntu0.22.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pixman/pixman_0.40.0-1ubuntu0.22.04.1.diff.gz' pixman_0.40.0-1ubuntu0.22.04.1.diff.gz 327740 SHA512:68949ad2589a7ae9fbe217a3d7fc58894d5a1b4bc6e219840b8620141fa2240b44e6a393bf847bfd18f5fcab2c6c6f143273936b076c29e1f979052b1275cb8e
 ```
 
-### `dpkg` source package: `poppler=22.02.0-2ubuntu0.1`
+### `dpkg` source package: `poppler=22.02.0-2ubuntu0.2`
 
 Binary Packages:
 
-- `libpoppler118:amd64=22.02.0-2ubuntu0.1`
+- `libpoppler118:amd64=22.02.0-2ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/libpoppler118/copyright`)
 
@@ -3368,9 +3370,14 @@ Licenses: (parsed from: `/usr/share/doc/libpoppler118/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris poppler=22.02.0-2ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0-2ubuntu0.2.dsc' poppler_22.02.0-2ubuntu0.2.dsc 3360 SHA512:ccb9300b0cc07e13775bd94f84c9ab0b27f3f170ca504dad4f96f3a94697189369e37d271b3fea3105fbd03f09550aa98cd6049057f1d7f6a70a083f21051027
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0.orig.tar.xz' poppler_22.02.0.orig.tar.xz 1807024 SHA512:61867241d6d076dae554d654a8ad3b1a073079bad31f45170516b886fabb4c238ff2d49705924da219e128eb4052ac6337121967347600e54f61790dd0eed487
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_22.02.0-2ubuntu0.2.debian.tar.xz' poppler_22.02.0-2ubuntu0.2.debian.tar.xz 38540 SHA512:12b6e426a2c71bf56eebbcf27c8a497a3821797d96e7ada9b0d6f794e98741d89562ff8e829827521b4c331646babf6b1cfd7684c83913f16e8ab452bccd2251
+```
 
 ### `dpkg` source package: `procps=2:3.3.17-6ubuntu2`
 
@@ -3417,15 +3424,15 @@ $ apt-get source -qq --print-uris python3-defaults=3.10.6-1~22.04
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.10.6-1%7e22.04.tar.gz' python3-defaults_3.10.6-1~22.04.tar.gz 145325 SHA512:4dce1fcadb47a3fbd72e489e78c6543aa4b35a0480eb4e10617b3afd223cdd244e97f79db55f2abf28367848658ae46a3cda895d3d9dcf21c530149207f080dd
 ```
 
-### `dpkg` source package: `python3.10=3.10.6-1~22.04.2ubuntu1.1`
+### `dpkg` source package: `python3.10=3.10.12-1~22.04.2`
 
 Binary Packages:
 
-- `libpython3.10:amd64=3.10.6-1~22.04.2ubuntu1.1`
-- `libpython3.10-minimal:amd64=3.10.6-1~22.04.2ubuntu1.1`
-- `libpython3.10-stdlib:amd64=3.10.6-1~22.04.2ubuntu1.1`
-- `python3.10=3.10.6-1~22.04.2ubuntu1.1`
-- `python3.10-minimal=3.10.6-1~22.04.2ubuntu1.1`
+- `libpython3.10:amd64=3.10.12-1~22.04.2`
+- `libpython3.10-minimal:amd64=3.10.12-1~22.04.2`
+- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.2`
+- `python3.10=3.10.12-1~22.04.2`
+- `python3.10-minimal=3.10.12-1~22.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.10/copyright`, `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/share/doc/libpython3.10-stdlib/copyright`, `/usr/share/doc/python3.10/copyright`, `/usr/share/doc/python3.10-minimal/copyright`)
 
@@ -3447,9 +3454,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10/copyright`, `/usr/share/do
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.10=3.10.12-1~22.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.2.dsc' python3.10_3.10.12-1~22.04.2.dsc 3699 SHA512:acb3b74adaa110d5614ba50d6c8001f7eae6778a5800f0d0cedbd4f29d3f574d04b81276d7bcc4d3fa3044609f40cac8080e28eef04cf04898cefa8ec17b5b49
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12.orig.tar.xz' python3.10_3.10.12.orig.tar.xz 19654836 SHA512:5ea018e71bfe7872e02eaf8aef56d5583c0880e4ce5fbbdf8ea76da20c2e94ac6a3ba8badb4b7d1bc21853402a3b63541b04181737417b1626e786b696595cf5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.2.debian.tar.xz' python3.10_3.10.12-1~22.04.2.debian.tar.xz 218484 SHA512:c8ad86bf51977ed890905b4688396e77f8310f08a48eccc5272b976ffb2b60a815bac6cb37f90967df9c39a73bf15ac0bedbddf007c97a59312779df95e86ea6
+```
 
 ### `dpkg` source package: `raptor2=2.0.15-0ubuntu4`
 
