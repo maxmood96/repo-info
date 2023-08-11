@@ -1708,21 +1708,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-freedesktop/copyright`, `/usr/sha
 - `Unicode-DFS-2016`
 - `bzip2-1.0.6`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gobject-introspection=1.76.1-4
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.76.1-4.dsc' gobject-introspection_1.76.1-4.dsc 3520 SHA256:6b7be6574caeb4b05609e7f911fcad742b9d09020c842b5acc2ab8fd337ac335
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.76.1.orig-glib.tar.xz' gobject-introspection_1.76.1.orig-glib.tar.xz 5270936 SHA256:43dc0f6a126958f5b454136c4398eab420249c16171a769784486e25f2fda19f
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.76.1.orig.tar.xz' gobject-introspection_1.76.1.orig.tar.xz 1055416 SHA256:196178bf64345501dcdc4d8469b36aa6fe80489354efe71cb7cb8ab82a3738bf
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.76.1-4.debian.tar.xz' gobject-introspection_1.76.1-4.debian.tar.xz 49304 SHA256:e9449916558cb64ffbcbf5b904c6e0cd838658329de053ad8ffe0ee6207cefe7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gobject-introspection/1.76.1-4/
 
-- https://sources.debian.net/src/gobject-introspection/1.76.1-4/ (for browsing the source)
-- https://sources.debian.net/src/gobject-introspection/1.76.1-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gobject-introspection/1.76.1-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `graphite2=1.3.14-1`
 
@@ -2480,20 +2472,13 @@ Licenses: (parsed from: `/usr/share/doc/libdeflate-dev/copyright`, `/usr/share/d
 
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libdeflate=1.14-1
-'http://deb.debian.org/debian/pool/main/libd/libdeflate/libdeflate_1.14-1.dsc' libdeflate_1.14-1.dsc 2214 SHA256:1f82791c5ac5623ed110e09cc991471deebfe4c419414392d1242e122c6f4c19
-'http://deb.debian.org/debian/pool/main/libd/libdeflate/libdeflate_1.14.orig.tar.gz' libdeflate_1.14.orig.tar.gz 180182 SHA256:89e7df898c37c3427b0f39aadcf733731321a278771d20fc553f92da8d4808ac
-'http://deb.debian.org/debian/pool/main/libd/libdeflate/libdeflate_1.14-1.debian.tar.xz' libdeflate_1.14-1.debian.tar.xz 4784 SHA256:4794c379cc4e77eaeb283620bd80a7ce57b858af508f80ba6d5efbc4bcb10434
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libdeflate/1.14-1/
 
-- https://sources.debian.net/src/libdeflate/1.14-1/ (for browsing the source)
-- https://sources.debian.net/src/libdeflate/1.14-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libdeflate/1.14-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libedit=3.1-20221030-2`
 

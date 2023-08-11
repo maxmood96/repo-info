@@ -946,14 +946,13 @@ Licenses: (parsed from: `/usr/share/doc/fonts-dejavu-core/copyright`)
 - `GPL-2+`
 - `bitstream-vera`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris fonts-dejavu=2.37-6
-'http://archive.ubuntu.com/ubuntu/pool/main/f/fonts-dejavu/fonts-dejavu_2.37-6.dsc' fonts-dejavu_2.37-6.dsc 2460 SHA512:c079ae8e72fda87e1a6605e7b2ec29c0d160440a74dadf5f9b9f370772d05ce45403df230febb5a77e97fd0d760a0319dd346f23e43cec8e9bd342e0a728dbe5
-'http://archive.ubuntu.com/ubuntu/pool/main/f/fonts-dejavu/fonts-dejavu_2.37.orig.tar.bz2' fonts-dejavu_2.37.orig.tar.bz2 12050109 SHA512:e61fc8c675ef76edb49dd9a8caee62087280929bb8144b52aca2f8def30025c56246589ad8a6a806b9574e6876eedd16d57c70a6ce9c86817a2dfe39d8a2bb2b
-'http://archive.ubuntu.com/ubuntu/pool/main/f/fonts-dejavu/fonts-dejavu_2.37-6.debian.tar.xz' fonts-dejavu_2.37-6.debian.tar.xz 12904 SHA512:9efa4065ffd7bcdf6cf7dfb27a8e1d1c3102f28a992de5e6c460f02e2ebed15ae1e90ac486cc5d01f41bf0ebd06186d15fc35a97f7879c99452d80140102a1aa
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/fonts-dejavu/2.37-6/
+
 
 ### `dpkg` source package: `freetype=2.13.0+dfsg-1`
 
@@ -1364,15 +1363,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-freedesktop/copyright`, `/usr/sha
 - `Unicode-DFS-2016`
 - `bzip2-1.0.6`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gobject-introspection=1.76.1-4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gobject-introspection/gobject-introspection_1.76.1-4.dsc' gobject-introspection_1.76.1-4.dsc 3520 SHA512:a0bb8324080ffc359b7e4af015b42f8ab972524fa8cd39ba51c47f719010841a1411d97b9199c903c048e2f5e08371658d31a6f0f1c6e311324c70458b8ef00f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gobject-introspection/gobject-introspection_1.76.1.orig-glib.tar.xz' gobject-introspection_1.76.1.orig-glib.tar.xz 5270936 SHA512:7ab8740925fa4ed2d860a35544c475ae905df5fa7fc0cc64ffa8c543df6073794e44c8ff39e3e1de1d677016ef9d27e9bc709d2505d13090faa8d6c47cd64bd0
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gobject-introspection/gobject-introspection_1.76.1.orig.tar.xz' gobject-introspection_1.76.1.orig.tar.xz 1055416 SHA512:84331a30f8854d2259609650c21aadd6363ea1417a75828bd395f8f4346da1c6d6550cff5f2c9f5f6fd6fbf2a9d27b5880c2ee1616fa905c5f362384d481a916
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gobject-introspection/gobject-introspection_1.76.1-4.debian.tar.xz' gobject-introspection_1.76.1-4.debian.tar.xz 49304 SHA512:440bbcb6796a964ca4741bf63c893d73d89129f25b97099114335b0d8277bb3cc53b7d860e699c7d02d653aa03bc4d83ccd430af176c64233034f1d9cdbd7c99
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/gobject-introspection/1.76.1-4/
+
 
 ### `dpkg` source package: `graphite2=1.3.14-1build2`
 
@@ -1986,14 +1983,13 @@ Licenses: (parsed from: `/usr/share/doc/libdeflate-dev/copyright`, `/usr/share/d
 
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libdeflate=1.15-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdeflate/libdeflate_1.15-1.dsc' libdeflate_1.15-1.dsc 2221 SHA512:2e78e6e2a62f6b95f6b37a9d995ea708c9dae084e00e4b910141bf3c0eb871f7c8fec26e36ed2c8e293a90eba53eb4b135daa78f0deb615df884b49a2e59b463
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdeflate/libdeflate_1.15.orig.tar.gz' libdeflate_1.15.orig.tar.gz 180818 SHA512:6503844eb113518610294c64fc0b24cbd93f58f654568f6f287c4a6549540c1044ea2123a453166ef78621ee20ef7bb8a3891a398eac1b950fdfef70236121fd
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdeflate/libdeflate_1.15-1.debian.tar.xz' libdeflate_1.15-1.debian.tar.xz 4816 SHA512:bd3801ab80af23d468637abad0b445fc89bf50bdd5220c192fc55e1badb622f62366dd2d0975f0a3207be11cc54a0295cb04d5cdcec4b8d1f5f49961098e871b
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libdeflate/1.15-1/
+
 
 ### `dpkg` source package: `libedit=3.1-20221030-2`
 
@@ -3151,13 +3147,9 @@ Licenses: (parsed from: `/usr/share/doc/lto-disabled-list/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lto-disabled-list=41
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lto-disabled-list/lto-disabled-list_41.dsc' lto-disabled-list_41.dsc 1435 SHA512:f955b52e6149756dda19a9d16f30a4be6a661ceed723307ea5528c68145d37e4d00b1c4234a45f9d5601a8c08062505e65adbbc2bc2aa791adfa5502beba9fc6
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lto-disabled-list/lto-disabled-list_41.tar.xz' lto-disabled-list_41.tar.xz 13236 SHA512:6f0bd5aeb7bc4961bfb03454024490cc83cbaf327bde4135828c1278299e2b6d899d59eb10b62f788a9e8c37a91cd2de0080a066072ee1a014a832316cbb536e
-```
 
 ### `dpkg` source package: `lz4=1.9.4-1`
 
@@ -4716,11 +4708,6 @@ Licenses: (parsed from: `/usr/share/doc/zlib1g/copyright`, `/usr/share/doc/zlib1
 
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris zlib=1:1.2.13.dfsg-1ubuntu4
-'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.13.dfsg-1ubuntu4.dsc' zlib_1.2.13.dfsg-1ubuntu4.dsc 2972 SHA512:0ef70f7a1ee27e9d414001d67497f14014e188b90a4615fb2a955c96f7997bc36d6a5931c63e733d5ebefa87bbfdcdd6810a1278c210a39a7c1fc43df6ca4edc
-'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.13.dfsg.orig.tar.bz2' zlib_1.2.13.dfsg.orig.tar.bz2 1239825 SHA512:266ea72465ad1f0b63e42f8275c650615829929f2ff19064144c5bb942acd31cd8581ce45781c438fce949c6d9f3fa385efa59f754761441107ca1144fb56802
-'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.13.dfsg-1ubuntu4.debian.tar.xz' zlib_1.2.13.dfsg-1ubuntu4.debian.tar.xz 57960 SHA512:312357388a757db8f3588f637a3d016f28fbff89fed2bb882a4972f5f838e39129fcb01d77cbd0ba9ec3e65fbc993e9f0c4e11acb298894dc6350fb9b1e2d7ca
-```
