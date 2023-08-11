@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:12954efec8a4b994c034a8b7afeeba86e5f8e9cdbcdea64a103b3377e13bd7be`
-- Created: `2023-07-26T00:27:34.964032399Z`
-- Virtual Size: ~ 732.95 Mb  
+- Image ID: `sha256:4a794593f8467d0ceb407d9d8a3e81140888672a041005216087dd2e28c56428`
+- Created: `2023-08-08T20:46:03.341006074Z`
+- Virtual Size: ~ 733.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/sonarqube/docker/entrypoint.sh"]`
@@ -186,16 +186,16 @@ $ apt-get source -qq --print-uris bash=5.1-6ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.1-6ubuntu1.debian.tar.xz' bash_5.1-6ubuntu1.debian.tar.xz 99652 SHA512:da77655882d0977656b75c750589307c54c7d5dd28b1cfc357d4a474ebf26399a91cfa19c4ba381e0a59a8f115f8381d432e82f2e659cb9bcbebf3fa0cd77bc1
 ```
 
-### `dpkg` source package: `binutils=2.38-4ubuntu2.2`
+### `dpkg` source package: `binutils=2.38-4ubuntu2.3`
 
 Binary Packages:
 
-- `binutils=2.38-4ubuntu2.2`
-- `binutils-common:amd64=2.38-4ubuntu2.2`
-- `binutils-x86-64-linux-gnu=2.38-4ubuntu2.2`
-- `libbinutils:amd64=2.38-4ubuntu2.2`
-- `libctf-nobfd0:amd64=2.38-4ubuntu2.2`
-- `libctf0:amd64=2.38-4ubuntu2.2`
+- `binutils=2.38-4ubuntu2.3`
+- `binutils-common:amd64=2.38-4ubuntu2.3`
+- `binutils-x86-64-linux-gnu=2.38-4ubuntu2.3`
+- `libbinutils:amd64=2.38-4ubuntu2.3`
+- `libctf-nobfd0:amd64=2.38-4ubuntu2.3`
+- `libctf0:amd64=2.38-4ubuntu2.3`
 
 Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/binutils-common/copyright`, `/usr/share/doc/binutils-x86-64-linux-gnu/copyright`, `/usr/share/doc/libbinutils/copyright`, `/usr/share/doc/libctf-nobfd0/copyright`, `/usr/share/doc/libctf0/copyright`)
 
@@ -203,9 +203,14 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris binutils=2.38-4ubuntu2.3
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38-4ubuntu2.3.dsc' binutils_2.38-4ubuntu2.3.dsc 8886 SHA512:1905b4fa0a2aa3797d1b201647aae26b3223d57213fb31baadbe247e88ecfbcd85c70611b79656147f465bd1781927d37be839439e8b473f89ab67af13a3868c
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38.orig.tar.xz' binutils_2.38.orig.tar.xz 23651408 SHA512:8bf0b0d193c9c010e0518ee2b2e5a830898af206510992483b427477ed178396cd210235e85fd7bd99a96fc6d5eedbeccbd48317a10f752b7336ada8b2bb826d
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38-4ubuntu2.3.debian.tar.xz' binutils_2.38-4ubuntu2.3.debian.tar.xz 295236 SHA512:166dca02762ff3d196eb41d6bbeed9655390291c44464e425a4db5082cc5c29bafa51c47f7e010d89a699614101f3e27784a4f4dea3c0848b6c177be8c266e84
+```
 
 ### `dpkg` source package: `brotli=1.0.9-2build6`
 
@@ -1548,11 +1553,11 @@ $ apt-get source -qq --print-uris npth=1.6-3build2
 'http://archive.ubuntu.com/ubuntu/pool/main/n/npth/npth_1.6-3build2.debian.tar.xz' npth_1.6-3build2.debian.tar.xz 10904 SHA512:426ab3ab9e27b3701d67cde0a4c4040aa9ccac22a0266321824487fe80a118ccd6860b6fa0fb5ca3c46dfa3c20053889fbb51a2e74618065b3aff059a0216c4c
 ```
 
-### `dpkg` source package: `openldap=2.5.14+dfsg-0ubuntu0.22.04.2`
+### `dpkg` source package: `openldap=2.5.15+dfsg-0ubuntu0.22.04.1`
 
 Binary Packages:
 
-- `libldap-2.5-0:amd64=2.5.14+dfsg-0ubuntu0.22.04.2`
+- `libldap-2.5-0:amd64=2.5.15+dfsg-0ubuntu0.22.04.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1591,8 +1596,10 @@ $ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.10
 Binary Packages:
 
 - `libp11-kit0:amd64=0.24.0-6build1`
+- `p11-kit=0.24.0-6build1`
+- `p11-kit-modules:amd64=0.24.0-6build1`
 
-Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`, `/usr/share/doc/p11-kit/copyright`, `/usr/share/doc/p11-kit-modules/copyright`)
 
 - `Apache-2.0`
 - `BSD-3-Clause`
