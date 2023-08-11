@@ -1,7 +1,7 @@
 ## `postgres:11-bookworm`
 
 ```console
-$ docker pull postgres@sha256:d33e1f753228c9032009e9d6b048b75d936cca8a6494689ab3543dae3a9bd2dd
+$ docker pull postgres@sha256:2bbad4a534d74011be5e9202168a607f8920ef07e65815a9e46bf7f20e4fbd2b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -139,14 +139,14 @@ CMD ["postgres"]
 ### `postgres:11-bookworm` - linux; arm variant v5
 
 ```console
-$ docker pull postgres@sha256:a231e653e34e33930bc16c0bc82497ecdb123ab6c7e415e80932852108f9f3e4
+$ docker pull postgres@sha256:528ed8e5034669789997fdaca74542b8a65a8200f7e98ea580e9565c9d325d45
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **138.2 MB (138242350 bytes)**  
+-	Total Size: **138.3 MB (138254405 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3fcd41d43637164ea8f44067c5418376d8576aa7d24c995a494b4ad3e890a0e6`
+-	Image ID: `sha256:1fcd0b41b929ced878b4f43843a0aa060b89655514471553c9f32f7280fee431`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
@@ -177,29 +177,29 @@ RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME=
 ENV PG_MAJOR=11
 # Fri, 28 Jul 2023 03:37:57 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/11/bin
-# Fri, 28 Jul 2023 03:37:57 GMT
-ENV PG_VERSION=11.20-1.pgdg120+1
-# Fri, 28 Jul 2023 03:50:34 GMT
+# Fri, 11 Aug 2023 21:12:31 GMT
+ENV PG_VERSION=11.21-1.pgdg120+1
+# Fri, 11 Aug 2023 21:25:32 GMT
 RUN set -ex; 		export PYTHONDONTWRITEBYTECODE=1; 		dpkgArch="$(dpkg --print-architecture)"; 	aptRepo="[ signed-by=/usr/local/share/keyrings/postgres.gpg.asc ] http://apt.postgresql.org/pub/repos/apt/ bookworm-pgdg main $PG_MAJOR"; 	case "$dpkgArch" in 		amd64 | arm64 | ppc64el | s390x) 			echo "deb $aptRepo" > /etc/apt/sources.list.d/pgdg.list; 			apt-get update; 			;; 		*) 			echo "deb-src $aptRepo" > /etc/apt/sources.list.d/pgdg.list; 						savedAptMark="$(apt-mark showmanual)"; 						tempDir="$(mktemp -d)"; 			cd "$tempDir"; 						apt-get update; 			apt-get install -y --no-install-recommends dpkg-dev; 			echo "deb [ trusted=yes ] file://$tempDir ./" > /etc/apt/sources.list.d/temp.list; 			_update_repo() { 				dpkg-scanpackages . > Packages; 				apt-get -o Acquire::GzipIndexes=false update; 			}; 			_update_repo; 						nproc="$(nproc)"; 			export DEB_BUILD_OPTIONS="nocheck parallel=$nproc"; 			apt-get build-dep -y postgresql-common pgdg-keyring; 			apt-get source --compile postgresql-common pgdg-keyring; 			_update_repo; 			apt-get build-dep -y "postgresql-$PG_MAJOR=$PG_VERSION"; 			apt-get source --compile "postgresql-$PG_MAJOR=$PG_VERSION"; 									apt-mark showmanual | xargs apt-mark auto > /dev/null; 			apt-mark manual $savedAptMark; 						ls -lAFh; 			_update_repo; 			grep '^Package: ' Packages; 			cd /; 			;; 	esac; 		apt-get install -y --no-install-recommends postgresql-common; 	sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf; 	apt-get install -y --no-install-recommends 		"postgresql-$PG_MAJOR=$PG_VERSION" 	; 		rm -rf /var/lib/apt/lists/*; 		if [ -n "$tempDir" ]; then 		apt-get purge -y --auto-remove; 		rm -rf "$tempDir" /etc/apt/sources.list.d/temp.list; 	fi; 		find /usr -name '*.pyc' -type f -exec bash -c 'for pyc; do dpkg -S "$pyc" &> /dev/null || rm -vf "$pyc"; done' -- '{}' +; 		postgres --version
-# Fri, 28 Jul 2023 03:50:35 GMT
+# Fri, 11 Aug 2023 21:25:35 GMT
 RUN set -eux; 	dpkg-divert --add --rename --divert "/usr/share/postgresql/postgresql.conf.sample.dpkg" "/usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample"; 	cp -v /usr/share/postgresql/postgresql.conf.sample.dpkg /usr/share/postgresql/postgresql.conf.sample; 	ln -sv ../postgresql.conf.sample "/usr/share/postgresql/$PG_MAJOR/"; 	sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample; 	grep -F "listen_addresses = '*'" /usr/share/postgresql/postgresql.conf.sample
-# Fri, 28 Jul 2023 03:50:36 GMT
+# Fri, 11 Aug 2023 21:25:37 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod 2777 /var/run/postgresql
-# Fri, 28 Jul 2023 03:50:36 GMT
+# Fri, 11 Aug 2023 21:25:37 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Fri, 28 Jul 2023 03:50:37 GMT
+# Fri, 11 Aug 2023 21:25:37 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA"
-# Fri, 28 Jul 2023 03:50:37 GMT
+# Fri, 11 Aug 2023 21:25:37 GMT
 VOLUME [/var/lib/postgresql/data]
-# Fri, 28 Jul 2023 03:50:37 GMT
+# Fri, 11 Aug 2023 21:25:38 GMT
 COPY file:512acb0aab31f9e5d908f16e2f4478f65cddd5d4e555a02a1551074bb16f54d7 in /usr/local/bin/ 
-# Fri, 28 Jul 2023 03:50:37 GMT
+# Fri, 11 Aug 2023 21:25:38 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 28 Jul 2023 03:50:37 GMT
+# Fri, 11 Aug 2023 21:25:38 GMT
 STOPSIGNAL SIGINT
-# Fri, 28 Jul 2023 03:50:37 GMT
+# Fri, 11 Aug 2023 21:25:38 GMT
 EXPOSE 5432
-# Fri, 28 Jul 2023 03:50:37 GMT
+# Fri, 11 Aug 2023 21:25:38 GMT
 CMD ["postgres"]
 ```
 
@@ -236,25 +236,25 @@ CMD ["postgres"]
 		Last Modified: Fri, 28 Jul 2023 04:03:29 GMT  
 		Size: 3.2 KB (3202 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b361cc3ff2bd99598566d9e3f2dda95c7da53444864181267d4635f0277b94e`  
-		Last Modified: Fri, 28 Jul 2023 04:08:18 GMT  
-		Size: 96.1 MB (96112240 bytes)  
+	-	`sha256:91e7ca5f56f6d7f931888ccf708a6e3781fef594fe99a40ecb84f88d6f5ea3eb`  
+		Last Modified: Fri, 11 Aug 2023 21:43:15 GMT  
+		Size: 96.1 MB (96124300 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb00a93e3c3db2fd0dae469c39ed39dbba296d826e7cd016cba74f4f746eb00a`  
-		Last Modified: Fri, 28 Jul 2023 04:08:04 GMT  
-		Size: 8.3 KB (8335 bytes)  
+	-	`sha256:ac3404e878dc2faeafc1f5c82a9031c1b1e9e6ec560a274374db2dcfbeeceb77`  
+		Last Modified: Fri, 11 Aug 2023 21:43:00 GMT  
+		Size: 8.3 KB (8332 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44506822a57a2e1c5c5601144b44f786a5d6f0c9421709719ccf2fce0bbcfc2e`  
-		Last Modified: Fri, 28 Jul 2023 04:08:04 GMT  
-		Size: 130.0 B  
+	-	`sha256:6ff1640f43edbcffe18721988c4fbf1be0c1662ad35526ef5dc3a7afb2de8637`  
+		Last Modified: Fri, 11 Aug 2023 21:43:00 GMT  
+		Size: 129.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:077300f2aea4b5710b04f734eb95e6e5459b72f9867c870b46be6d261ea3fc0f`  
-		Last Modified: Fri, 28 Jul 2023 04:08:04 GMT  
+	-	`sha256:58c5f98f631b6d68b49a9c6bbcc7e56b391a36edf776a5995814a8bb5a399116`  
+		Last Modified: Fri, 11 Aug 2023 21:43:00 GMT  
 		Size: 202.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2441c948b5e479a13d9ffc3900d151071a8b6b6013fb5e9cf756b48bf959f399`  
-		Last Modified: Fri, 28 Jul 2023 04:08:04 GMT  
-		Size: 4.8 KB (4788 bytes)  
+	-	`sha256:4ec285612ee727f8554e9ef205d424f88b3f0a8c92c390dd92f40fe56e942e28`  
+		Last Modified: Fri, 11 Aug 2023 21:43:00 GMT  
+		Size: 4.8 KB (4787 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `postgres:11-bookworm` - linux; arm variant v7
