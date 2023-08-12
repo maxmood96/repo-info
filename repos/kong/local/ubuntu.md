@@ -1,10 +1,10 @@
-# `kong:3.3.1-ubuntu`
+# `kong:3.4.0-ubuntu`
 
 ## Docker Metadata
 
-- Image ID: `sha256:43e05bc78243dbb39affc720b41c1b6dc97c47b68399d685654f8564ba5083a3`
-- Created: `2023-08-02T23:20:56.204876046Z`
-- Virtual Size: ~ 231.55 Mb  
+- Image ID: `sha256:9af41bd1970c551ebdff2aa1d21f9ec5bcae595cae26f673d22a5ec791f85b46`
+- Created: `2023-08-11T18:21:51.895565326Z`
+- Virtual Size: ~ 279.17 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -12,7 +12,7 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `ASSET=ce`
-  - `KONG_VERSION=3.3.1`
+  - `KONG_VERSION=3.4.0`
 - Labels:
   - `maintainer=Kong Docker Maintainers <docker@konghq.com> (@team-gateway-bot)`
   - `org.opencontainers.image.ref.name=ubuntu`
@@ -921,11 +921,11 @@ $ apt-get source -qq --print-uris keyutils=1.6.1-2ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/k/keyutils/keyutils_1.6.1-2ubuntu3.debian.tar.xz' keyutils_1.6.1-2ubuntu3.debian.tar.xz 18936 SHA512:16f390f0fc3154a77c8ca3666d44881a6ca2f0d11cfe0398cd82b57b6f552af85c156de358d0b87e39f301331897d72de058050e3cb53720a76b5b5ebf07aa3d
 ```
 
-### `dpkg` source package: `kong=3.3.1`
+### `dpkg` source package: `kong=3.4.0`
 
 Binary Packages:
 
-- `kong=3.3.1`
+- `kong=3.4.0`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1893,12 +1893,12 @@ $ apt-get source -qq --print-uris nghttp2=1.43.0-1build3
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.43.0-1build3.debian.tar.xz' nghttp2_1.43.0-1build3.debian.tar.xz 16528 SHA512:a3c7be43142e4976a395052ff4eba22e4f610c31659eed2b03987c58d0b0ae83335f0593ceeea0f05f5d7db8f56c3c3b3651bd92fae3a8353b95595179926bd1
 ```
 
-### `dpkg` source package: `openldap=2.5.15+dfsg-0ubuntu0.22.04.1`
+### `dpkg` source package: `openldap=2.5.16+dfsg-0ubuntu0.22.04.1`
 
 Binary Packages:
 
-- `libldap-2.5-0:amd64=2.5.15+dfsg-0ubuntu0.22.04.1`
-- `libldap-common=2.5.15+dfsg-0ubuntu0.22.04.1`
+- `libldap-2.5-0:amd64=2.5.16+dfsg-0ubuntu0.22.04.1`
+- `libldap-common=2.5.16+dfsg-0ubuntu0.22.04.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1907,10 +1907,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openldap=2.5.15+dfsg-0ubuntu0.22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.15%2bdfsg-0ubuntu0.22.04.1.dsc' openldap_2.5.15+dfsg-0ubuntu0.22.04.1.dsc 3319 SHA512:b872106b4d944d1050a70c5db89a51eeef8826d49ef723a1e24951f962108dd7af083a9f4d9e17e627c10f3f3e94844d6c4b90250af2947d69d839313a0e4b95
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.15%2bdfsg.orig.tar.gz' openldap_2.5.15+dfsg.orig.tar.gz 5616689 SHA512:e461b6c7f25bb666a72df84e83d0813d6b64e997b8de842b7ec6eac987287fcf08348be6c0b8bd6b7b663e2a03fc672d2eb5a38c570608404861633070fb613d
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.15%2bdfsg-0ubuntu0.22.04.1.debian.tar.xz' openldap_2.5.15+dfsg-0ubuntu0.22.04.1.debian.tar.xz 171804 SHA512:7aaba43df6cb6ed437dbad0881e9165f91de0375f3da89f4e5b7cb135e3d5fae123cf50d3c5c9a409a7be38f7c14bc95b38f7e2782455c6706ee50e70f9a5074
+$ apt-get source -qq --print-uris openldap=2.5.16+dfsg-0ubuntu0.22.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.16%2bdfsg-0ubuntu0.22.04.1.dsc' openldap_2.5.16+dfsg-0ubuntu0.22.04.1.dsc 3319 SHA512:d1041b2c938fca2cf6ed0518057d2f724b3e24bf0f3e29c5b4420f1925b80eb3f4aa8393b3aa0eae275d1990c53fb718b88e982721aacda361c2517fdfd7f0e6
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.16%2bdfsg.orig.tar.gz' openldap_2.5.16+dfsg.orig.tar.gz 5608943 SHA512:0e3a208773e1ee1bd307594e55c3d4fdc6a9dddd517f6d433e89c4064a9d796a37ad49e106de803217fdac58221d56fa568dc269c185fb40650647e4024fcc98
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.16%2bdfsg-0ubuntu0.22.04.1.debian.tar.xz' openldap_2.5.16+dfsg-0ubuntu0.22.04.1.debian.tar.xz 171800 SHA512:18b60cf943512a8e2d726c9cd1114a3637d46efc928f4a1f241da11eeaf6c859d5f7402c0888a81da425386543d9a2eaac8a9e8c768cfa24b2c605aa88fb01db
 ```
 
 ### `dpkg` source package: `openssl=3.0.2-0ubuntu1.10`
