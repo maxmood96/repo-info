@@ -1,7 +1,7 @@
 ## `eclipse-temurin:20-jre`
 
 ```console
-$ docker pull eclipse-temurin@sha256:3c51a36d6a09402a4334190f007388d0804982d959d570453a26ca62d9fba239
+$ docker pull eclipse-temurin@sha256:4afae03cc996efc662c79fc3efc6fc69518c6a9e6c055791c98faabab56c62d7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14,15 +14,15 @@ $ docker pull eclipse-temurin@sha256:3c51a36d6a09402a4334190f007388d0804982d959d
 ### `eclipse-temurin:20-jre` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:1851428bacef01779c7dd4d6984d35d33ce584d43dcda0fbcd683329716e402a
+$ docker pull eclipse-temurin@sha256:212375802c5b88b8b34f7a2afd5e795d8217e061d0600341b7e46326476d14d1
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **98.2 MB (98189852 bytes)**  
+-	Total Size: **98.2 MB (98189919 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2eb8ab02b40f356688f449f1b921341a4d973e6d89c7abb7a62d2a0f9af6bc5b`
--	Entrypoint: `["\/entrypoint.sh"]`
+-	Image ID: `sha256:86c0cc8c898be06c6c0e7eddfa65e574a73d7eb5e2918e8f8d278f0121321a3a`
+-	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 
 ```dockerfile
 # Wed, 28 Jun 2023 08:37:40 GMT
@@ -51,10 +51,10 @@ ENV JAVA_VERSION=jdk-20.0.2+9
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='63a730d5a3b6d21d31f7cba15dc44b019a8a4d8652e13acec45040f98584112c';          BINARY_URL='https://github.com/adoptium/temurin20-binaries/releases/download/jdk-20.0.2%2B9/OpenJDK20U-jre_aarch64_linux_hotspot_20.0.2_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='e3592e86290c192804d9c6b5035d42cc32cf04141d1c0b9d1ecb67739826c8c5';          BINARY_URL='https://github.com/adoptium/temurin20-binaries/releases/download/jdk-20.0.2%2B9/OpenJDK20U-jre_x64_linux_hotspot_20.0.2_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
 # Thu, 03 Aug 2023 02:39:19 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo java --version && java --version     && echo Complete.
-# Thu, 03 Aug 2023 02:39:19 GMT
-COPY file:0673fe0a4a716089bcd96321c8de60149aea8a94ae7c4ba827ecc4a74a9789a3 in / 
-# Thu, 03 Aug 2023 02:39:19 GMT
-ENTRYPOINT ["/entrypoint.sh"]
+# Mon, 14 Aug 2023 18:11:53 GMT
+COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
+# Mon, 14 Aug 2023 18:11:53 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 ```
 
 -	Layers:
@@ -74,23 +74,23 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Last Modified: Thu, 03 Aug 2023 02:43:28 GMT  
 		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e33bba574b373b5ab86838ee16833d779b49c3c8e2fd5dbfb4776695bc720ec1`  
-		Last Modified: Thu, 03 Aug 2023 02:43:28 GMT  
-		Size: 666.0 B  
+	-	`sha256:2dec2ea0480190fa223b74132df977ad3b77573b12331e6bb85b8e688d5a7f7c`  
+		Last Modified: Mon, 14 Aug 2023 18:19:17 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:20-jre` - linux; arm64 variant v8
 
 ```console
-$ docker pull eclipse-temurin@sha256:af1f810b57ecabb62b2cd9c132c2b42c2b9051ed0adb562d62234b7335ce1a77
+$ docker pull eclipse-temurin@sha256:c4aeab158bb87143696161daed27f72d3520a46a4de48847825b31d8967e358e
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **96.8 MB (96763335 bytes)**  
+-	Total Size: **96.8 MB (96763404 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:02d00281882fb71199f8205451cccac52c506ccf524de51fb68b40797ceb6543`
--	Entrypoint: `["\/entrypoint.sh"]`
+-	Image ID: `sha256:5adcd2e3f9003523e57cb5dabcb80162db2cdcc1be1e46bd92cdef452e53c5e3`
+-	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 
 ```dockerfile
 # Wed, 28 Jun 2023 08:42:48 GMT
@@ -119,10 +119,10 @@ ENV JAVA_VERSION=jdk-20.0.2+9
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='63a730d5a3b6d21d31f7cba15dc44b019a8a4d8652e13acec45040f98584112c';          BINARY_URL='https://github.com/adoptium/temurin20-binaries/releases/download/jdk-20.0.2%2B9/OpenJDK20U-jre_aarch64_linux_hotspot_20.0.2_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='e3592e86290c192804d9c6b5035d42cc32cf04141d1c0b9d1ecb67739826c8c5';          BINARY_URL='https://github.com/adoptium/temurin20-binaries/releases/download/jdk-20.0.2%2B9/OpenJDK20U-jre_x64_linux_hotspot_20.0.2_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
 # Thu, 03 Aug 2023 01:09:24 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo java --version && java --version     && echo Complete.
-# Thu, 03 Aug 2023 01:09:24 GMT
-COPY file:0673fe0a4a716089bcd96321c8de60149aea8a94ae7c4ba827ecc4a74a9789a3 in / 
-# Thu, 03 Aug 2023 01:09:24 GMT
-ENTRYPOINT ["/entrypoint.sh"]
+# Mon, 14 Aug 2023 18:09:41 GMT
+COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
+# Mon, 14 Aug 2023 18:09:41 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
 ```
 
 -	Layers:
@@ -142,9 +142,9 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Last Modified: Thu, 03 Aug 2023 01:12:59 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e4ee80211624fbc2cfb4adbbe59f0f3811e6e703c82ef613a4ba990492a1178`  
-		Last Modified: Thu, 03 Aug 2023 01:12:59 GMT  
-		Size: 665.0 B  
+	-	`sha256:8d9d4013242c9260910ba7dab1e82b91413849eed4679db25eea050d374c7381`  
+		Last Modified: Mon, 14 Aug 2023 18:11:00 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:20-jre` - windows version 10.0.20348.1906; amd64
