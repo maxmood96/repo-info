@@ -260,7 +260,7 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ## `unit:1.30.0-jsc11`
 
 ```console
-$ docker pull unit@sha256:a6347b827f29166a59a7e961b66dae9e48c4121de0d1ca4a968e794d706e82fc
+$ docker pull unit@sha256:75df14b8bc2f500c87cfe1e9bdcc9e9c1daf0c9a70d7a730e59097917aa4a2a6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -271,14 +271,14 @@ $ docker pull unit@sha256:a6347b827f29166a59a7e961b66dae9e48c4121de0d1ca4a968e79
 ### `unit:1.30.0-jsc11` - linux; amd64
 
 ```console
-$ docker pull unit@sha256:bb30f322661bd557937f5e27704f91ba9ba38646474684b4a32b4a64f6b30461
+$ docker pull unit@sha256:ea8a9f83809f0aa90766db906b3ed0b05a8f796945b5310f3f5584bcd1083ad4
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **230.6 MB (230634489 bytes)**  
+-	Total Size: **230.6 MB (230640057 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:83c027cc9e8ee0e12e9451d84f93ebc01ca114bf6e3bcf87c84bca7c5b07756a`
+-	Image ID: `sha256:a0d133a32016f719bcd5762e5055d44ef3f0f7bf65c6f4ff791c7b2a9509c922`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
@@ -309,39 +309,39 @@ ENV JAVA_VERSION=jdk-11.0.20+8
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='eb821c049c2d2f7c3fbf8ddcce2d608d3aa7d488700e76bfbbebabba93021748';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.20_8.tar.gz';          ;;        armhf|arm)          ESUM='fdf98d94ac3fd49a73a534fd88cf60e757e885c04791d15f76ccfcecb43a25e0';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_arm_linux_hotspot_11.0.20_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1125931b3a38e6e305a1932fc6cfd0b023a0fbec2cab10e835a2ee2c50848b42';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.20_8.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='688c83d9edf2204220df94ce5bab4a6d19f3d91bc0e500f31dda41e16d9a383f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.20_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='7a99258af2e3ee9047e90f1c0c1775fd6285085759501295358d934d662e01f9';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_x64_linux_hotspot_11.0.20_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
 # Tue, 08 Aug 2023 19:22:25 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Tue, 08 Aug 2023 19:22:25 GMT
-COPY file:0673fe0a4a716089bcd96321c8de60149aea8a94ae7c4ba827ecc4a74a9789a3 in / 
-# Tue, 08 Aug 2023 19:22:25 GMT
-ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 08 Aug 2023 19:22:25 GMT
+# Mon, 14 Aug 2023 18:10:08 GMT
+COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
+# Mon, 14 Aug 2023 18:10:08 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
+# Mon, 14 Aug 2023 18:10:08 GMT
 CMD ["jshell"]
-# Tue, 08 Aug 2023 21:42:33 GMT
+# Mon, 14 Aug 2023 20:34:29 GMT
 LABEL org.opencontainers.image.title=Unit
-# Tue, 08 Aug 2023 21:42:33 GMT
+# Mon, 14 Aug 2023 20:34:29 GMT
 LABEL org.opencontainers.image.description=Official build of Unit for Docker.
-# Tue, 08 Aug 2023 21:42:33 GMT
+# Mon, 14 Aug 2023 20:34:29 GMT
 LABEL org.opencontainers.image.url=https://unit.nginx.org
-# Tue, 08 Aug 2023 21:42:33 GMT
+# Mon, 14 Aug 2023 20:34:30 GMT
 LABEL org.opencontainers.image.source=https://github.com/nginx/unit
-# Tue, 08 Aug 2023 21:42:33 GMT
+# Mon, 14 Aug 2023 20:34:30 GMT
 LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
-# Tue, 08 Aug 2023 21:42:33 GMT
+# Mon, 14 Aug 2023 20:34:30 GMT
 LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 08 Aug 2023 21:42:33 GMT
+# Mon, 14 Aug 2023 20:34:30 GMT
 LABEL org.opencontainers.image.version=1.30.0
-# Tue, 08 Aug 2023 21:44:08 GMT
+# Mon, 14 Aug 2023 20:36:30 GMT
 RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y ca-certificates mercurial build-essential libssl-dev libpcre2-dev curl pkg-config     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && hg clone -u 1.30.0-1 https://hg.nginx.org/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --pid=/var/run/unit.pid                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure java --jars=/usr/share/unit-jsc-common/     && make -j $NCPU java-shared-install java-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure java --jars=/usr/share/unit-jsc-common/     && make -j $NCPU java-shared-install java-install     && cd     && rm -rf unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && /bin/true     && mkdir -p /var/lib/unit/     && mkdir /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stdout /var/log/unit.log
-# Tue, 08 Aug 2023 21:44:09 GMT
+# Mon, 14 Aug 2023 20:36:31 GMT
 COPY file:8b65557c2137d1a3946148e09ddd45af0b855e40210dabb5a9bd6c36fac22006 in /usr/local/bin/ 
-# Tue, 08 Aug 2023 21:44:09 GMT
+# Mon, 14 Aug 2023 20:36:31 GMT
 COPY multi:0ef77957b92a7e8997661453cf7256a81db39d0e9f975a137d7e664007d8fcf4 in /usr/share/unit/welcome/ 
-# Tue, 08 Aug 2023 21:44:09 GMT
+# Mon, 14 Aug 2023 20:36:31 GMT
 STOPSIGNAL SIGTERM
-# Tue, 08 Aug 2023 21:44:09 GMT
+# Mon, 14 Aug 2023 20:36:31 GMT
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-# Tue, 08 Aug 2023 21:44:09 GMT
+# Mon, 14 Aug 2023 20:36:31 GMT
 EXPOSE 80
-# Tue, 08 Aug 2023 21:44:09 GMT
+# Mon, 14 Aug 2023 20:36:31 GMT
 CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ```
 
@@ -362,34 +362,34 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Last Modified: Tue, 08 Aug 2023 19:29:30 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:384839be4478f745fa600353a810f9d08142dc85162919e4a98d389fbd662423`  
-		Last Modified: Tue, 08 Aug 2023 19:29:30 GMT  
-		Size: 666.0 B  
+	-	`sha256:9c4c0dcd86397ab87ba72a5a8352df19ef77c1eff48e1a7ca68811ef786c5816`  
+		Last Modified: Mon, 14 Aug 2023 18:15:18 GMT  
+		Size: 731.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4512dcef47bad23b57f9d7b61341ceddd844fbdc816420097ac95267e581927`  
-		Last Modified: Tue, 08 Aug 2023 21:44:50 GMT  
-		Size: 42.5 MB (42458209 bytes)  
+	-	`sha256:0a46c95431de337e08173e27dc06cf2a941835b3585931397f3ecfeba6195e48`  
+		Last Modified: Mon, 14 Aug 2023 20:37:16 GMT  
+		Size: 42.5 MB (42463707 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f9190829afdd97f3fe2f29a418e6ac6c64ba3c6ee1e2e997ce6cd13c5d34bab3`  
-		Last Modified: Tue, 08 Aug 2023 21:44:45 GMT  
-		Size: 1.3 KB (1266 bytes)  
+	-	`sha256:c7e02cbcb8d26348d37d426d653a5944c6965a7f1cc41de5c3c877ce5ea4378d`  
+		Last Modified: Mon, 14 Aug 2023 20:37:11 GMT  
+		Size: 1.3 KB (1267 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:adb5cc8ab2ee3d5e2a7d5c36530465d6a5976db791efd9f732851aec411bd06a`  
-		Last Modified: Tue, 08 Aug 2023 21:44:45 GMT  
-		Size: 1.5 KB (1471 bytes)  
+	-	`sha256:2850491d7c5d17419d0565fc4682ec82735a7aef64abbc980cc8bd0e0d408e93`  
+		Last Modified: Mon, 14 Aug 2023 20:37:12 GMT  
+		Size: 1.5 KB (1475 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `unit:1.30.0-jsc11` - linux; arm64 variant v8
 
 ```console
-$ docker pull unit@sha256:3db46ab3262254580e66ffbf1dee747f39715f05d1c39627b340d8e2109adfb4
+$ docker pull unit@sha256:ad119b587d6e754b1f7d90357dee87fbd3cd46dbe77b4d97d781ae575054fe06
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **225.2 MB (225150745 bytes)**  
+-	Total Size: **225.2 MB (225166002 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c3d781b7f69bf29dec6ba39b8033048e7e0bc91044131b5455e111227fd62769`
+-	Image ID: `sha256:09a5b427b7e005c12743db1dd6ef6fd2adbf6e170af3f8fd87749b498c91a860`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
@@ -420,39 +420,39 @@ ENV JAVA_VERSION=jdk-11.0.20+8
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='eb821c049c2d2f7c3fbf8ddcce2d608d3aa7d488700e76bfbbebabba93021748';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.20_8.tar.gz';          ;;        armhf|arm)          ESUM='fdf98d94ac3fd49a73a534fd88cf60e757e885c04791d15f76ccfcecb43a25e0';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_arm_linux_hotspot_11.0.20_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1125931b3a38e6e305a1932fc6cfd0b023a0fbec2cab10e835a2ee2c50848b42';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.20_8.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='688c83d9edf2204220df94ce5bab4a6d19f3d91bc0e500f31dda41e16d9a383f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.20_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='7a99258af2e3ee9047e90f1c0c1775fd6285085759501295358d934d662e01f9';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_x64_linux_hotspot_11.0.20_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
 # Tue, 08 Aug 2023 19:41:35 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Tue, 08 Aug 2023 19:41:35 GMT
-COPY file:0673fe0a4a716089bcd96321c8de60149aea8a94ae7c4ba827ecc4a74a9789a3 in / 
-# Tue, 08 Aug 2023 19:41:35 GMT
-ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 08 Aug 2023 19:41:35 GMT
+# Mon, 14 Aug 2023 18:09:09 GMT
+COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
+# Mon, 14 Aug 2023 18:09:09 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
+# Mon, 14 Aug 2023 18:09:09 GMT
 CMD ["jshell"]
-# Tue, 08 Aug 2023 22:31:27 GMT
+# Mon, 14 Aug 2023 20:29:16 GMT
 LABEL org.opencontainers.image.title=Unit
-# Tue, 08 Aug 2023 22:31:27 GMT
+# Mon, 14 Aug 2023 20:29:16 GMT
 LABEL org.opencontainers.image.description=Official build of Unit for Docker.
-# Tue, 08 Aug 2023 22:31:27 GMT
+# Mon, 14 Aug 2023 20:29:16 GMT
 LABEL org.opencontainers.image.url=https://unit.nginx.org
-# Tue, 08 Aug 2023 22:31:27 GMT
+# Mon, 14 Aug 2023 20:29:16 GMT
 LABEL org.opencontainers.image.source=https://github.com/nginx/unit
-# Tue, 08 Aug 2023 22:31:27 GMT
+# Mon, 14 Aug 2023 20:29:16 GMT
 LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
-# Tue, 08 Aug 2023 22:31:28 GMT
+# Mon, 14 Aug 2023 20:29:16 GMT
 LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 08 Aug 2023 22:31:28 GMT
+# Mon, 14 Aug 2023 20:29:16 GMT
 LABEL org.opencontainers.image.version=1.30.0
-# Tue, 08 Aug 2023 22:33:27 GMT
+# Mon, 14 Aug 2023 20:30:40 GMT
 RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y ca-certificates mercurial build-essential libssl-dev libpcre2-dev curl pkg-config     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && hg clone -u 1.30.0-1 https://hg.nginx.org/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --pid=/var/run/unit.pid                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure java --jars=/usr/share/unit-jsc-common/     && make -j $NCPU java-shared-install java-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure java --jars=/usr/share/unit-jsc-common/     && make -j $NCPU java-shared-install java-install     && cd     && rm -rf unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && /bin/true     && mkdir -p /var/lib/unit/     && mkdir /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stdout /var/log/unit.log
-# Tue, 08 Aug 2023 22:33:28 GMT
+# Mon, 14 Aug 2023 20:30:41 GMT
 COPY file:8b65557c2137d1a3946148e09ddd45af0b855e40210dabb5a9bd6c36fac22006 in /usr/local/bin/ 
-# Tue, 08 Aug 2023 22:33:28 GMT
+# Mon, 14 Aug 2023 20:30:41 GMT
 COPY multi:0ef77957b92a7e8997661453cf7256a81db39d0e9f975a137d7e664007d8fcf4 in /usr/share/unit/welcome/ 
-# Tue, 08 Aug 2023 22:33:28 GMT
+# Mon, 14 Aug 2023 20:30:41 GMT
 STOPSIGNAL SIGTERM
-# Tue, 08 Aug 2023 22:33:28 GMT
+# Mon, 14 Aug 2023 20:30:41 GMT
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-# Tue, 08 Aug 2023 22:33:28 GMT
+# Mon, 14 Aug 2023 20:30:41 GMT
 EXPOSE 80
-# Tue, 08 Aug 2023 22:33:28 GMT
+# Mon, 14 Aug 2023 20:30:41 GMT
 CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ```
 
@@ -473,21 +473,21 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Last Modified: Tue, 08 Aug 2023 19:46:00 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:008aa63c543c009b748c7adf54cdb5838ecb88b142bb1d2a845db7acdc792a9a`  
-		Last Modified: Tue, 08 Aug 2023 19:46:00 GMT  
-		Size: 666.0 B  
+	-	`sha256:fa2be1922be7f8780e45b2440f4f348bacc86451519f391ea385d6df04bcf1c8`  
+		Last Modified: Mon, 14 Aug 2023 18:12:08 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c3e265b7f51c824bd38111b977204d3db0f089168be269d9c1336fec9094301`  
-		Last Modified: Tue, 08 Aug 2023 22:34:08 GMT  
-		Size: 42.3 MB (42342108 bytes)  
+	-	`sha256:38d36fdaec9440657aea4c9ffb98d0ebb68ca7e46a518aa21280f935b625c0c0`  
+		Last Modified: Mon, 14 Aug 2023 20:31:25 GMT  
+		Size: 42.4 MB (42357302 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:edc5ad02c350b21b42dd960b068dc13189d3971b024e1d669279f837e8aedef9`  
-		Last Modified: Tue, 08 Aug 2023 22:34:05 GMT  
-		Size: 1.3 KB (1266 bytes)  
+	-	`sha256:c860b390d8200c415dbc95261b6cec17d797ae81d6bb7e1e9157df2659cc4819`  
+		Last Modified: Mon, 14 Aug 2023 20:31:21 GMT  
+		Size: 1.3 KB (1265 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:485b3086c01f4e031bb403cabc417ef78b50dfbe88061e4fd8325de9abbc66cd`  
-		Last Modified: Tue, 08 Aug 2023 22:34:05 GMT  
-		Size: 1.5 KB (1471 bytes)  
+	-	`sha256:e0e29436d7b9e1481572eaa02d791f3448e3f60781f931f725ea132dcb6286fb`  
+		Last Modified: Mon, 14 Aug 2023 20:31:21 GMT  
+		Size: 1.5 KB (1468 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `unit:1.30.0-minimal`
@@ -2582,7 +2582,7 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ## `unit:jsc`
 
 ```console
-$ docker pull unit@sha256:a6347b827f29166a59a7e961b66dae9e48c4121de0d1ca4a968e794d706e82fc
+$ docker pull unit@sha256:75df14b8bc2f500c87cfe1e9bdcc9e9c1daf0c9a70d7a730e59097917aa4a2a6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2593,14 +2593,14 @@ $ docker pull unit@sha256:a6347b827f29166a59a7e961b66dae9e48c4121de0d1ca4a968e79
 ### `unit:jsc` - linux; amd64
 
 ```console
-$ docker pull unit@sha256:bb30f322661bd557937f5e27704f91ba9ba38646474684b4a32b4a64f6b30461
+$ docker pull unit@sha256:ea8a9f83809f0aa90766db906b3ed0b05a8f796945b5310f3f5584bcd1083ad4
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **230.6 MB (230634489 bytes)**  
+-	Total Size: **230.6 MB (230640057 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:83c027cc9e8ee0e12e9451d84f93ebc01ca114bf6e3bcf87c84bca7c5b07756a`
+-	Image ID: `sha256:a0d133a32016f719bcd5762e5055d44ef3f0f7bf65c6f4ff791c7b2a9509c922`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
@@ -2631,39 +2631,39 @@ ENV JAVA_VERSION=jdk-11.0.20+8
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='eb821c049c2d2f7c3fbf8ddcce2d608d3aa7d488700e76bfbbebabba93021748';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.20_8.tar.gz';          ;;        armhf|arm)          ESUM='fdf98d94ac3fd49a73a534fd88cf60e757e885c04791d15f76ccfcecb43a25e0';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_arm_linux_hotspot_11.0.20_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1125931b3a38e6e305a1932fc6cfd0b023a0fbec2cab10e835a2ee2c50848b42';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.20_8.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='688c83d9edf2204220df94ce5bab4a6d19f3d91bc0e500f31dda41e16d9a383f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.20_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='7a99258af2e3ee9047e90f1c0c1775fd6285085759501295358d934d662e01f9';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_x64_linux_hotspot_11.0.20_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
 # Tue, 08 Aug 2023 19:22:25 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Tue, 08 Aug 2023 19:22:25 GMT
-COPY file:0673fe0a4a716089bcd96321c8de60149aea8a94ae7c4ba827ecc4a74a9789a3 in / 
-# Tue, 08 Aug 2023 19:22:25 GMT
-ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 08 Aug 2023 19:22:25 GMT
+# Mon, 14 Aug 2023 18:10:08 GMT
+COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
+# Mon, 14 Aug 2023 18:10:08 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
+# Mon, 14 Aug 2023 18:10:08 GMT
 CMD ["jshell"]
-# Tue, 08 Aug 2023 21:42:33 GMT
+# Mon, 14 Aug 2023 20:34:29 GMT
 LABEL org.opencontainers.image.title=Unit
-# Tue, 08 Aug 2023 21:42:33 GMT
+# Mon, 14 Aug 2023 20:34:29 GMT
 LABEL org.opencontainers.image.description=Official build of Unit for Docker.
-# Tue, 08 Aug 2023 21:42:33 GMT
+# Mon, 14 Aug 2023 20:34:29 GMT
 LABEL org.opencontainers.image.url=https://unit.nginx.org
-# Tue, 08 Aug 2023 21:42:33 GMT
+# Mon, 14 Aug 2023 20:34:30 GMT
 LABEL org.opencontainers.image.source=https://github.com/nginx/unit
-# Tue, 08 Aug 2023 21:42:33 GMT
+# Mon, 14 Aug 2023 20:34:30 GMT
 LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
-# Tue, 08 Aug 2023 21:42:33 GMT
+# Mon, 14 Aug 2023 20:34:30 GMT
 LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 08 Aug 2023 21:42:33 GMT
+# Mon, 14 Aug 2023 20:34:30 GMT
 LABEL org.opencontainers.image.version=1.30.0
-# Tue, 08 Aug 2023 21:44:08 GMT
+# Mon, 14 Aug 2023 20:36:30 GMT
 RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y ca-certificates mercurial build-essential libssl-dev libpcre2-dev curl pkg-config     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && hg clone -u 1.30.0-1 https://hg.nginx.org/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --pid=/var/run/unit.pid                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure java --jars=/usr/share/unit-jsc-common/     && make -j $NCPU java-shared-install java-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure java --jars=/usr/share/unit-jsc-common/     && make -j $NCPU java-shared-install java-install     && cd     && rm -rf unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && /bin/true     && mkdir -p /var/lib/unit/     && mkdir /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stdout /var/log/unit.log
-# Tue, 08 Aug 2023 21:44:09 GMT
+# Mon, 14 Aug 2023 20:36:31 GMT
 COPY file:8b65557c2137d1a3946148e09ddd45af0b855e40210dabb5a9bd6c36fac22006 in /usr/local/bin/ 
-# Tue, 08 Aug 2023 21:44:09 GMT
+# Mon, 14 Aug 2023 20:36:31 GMT
 COPY multi:0ef77957b92a7e8997661453cf7256a81db39d0e9f975a137d7e664007d8fcf4 in /usr/share/unit/welcome/ 
-# Tue, 08 Aug 2023 21:44:09 GMT
+# Mon, 14 Aug 2023 20:36:31 GMT
 STOPSIGNAL SIGTERM
-# Tue, 08 Aug 2023 21:44:09 GMT
+# Mon, 14 Aug 2023 20:36:31 GMT
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-# Tue, 08 Aug 2023 21:44:09 GMT
+# Mon, 14 Aug 2023 20:36:31 GMT
 EXPOSE 80
-# Tue, 08 Aug 2023 21:44:09 GMT
+# Mon, 14 Aug 2023 20:36:31 GMT
 CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ```
 
@@ -2684,34 +2684,34 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Last Modified: Tue, 08 Aug 2023 19:29:30 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:384839be4478f745fa600353a810f9d08142dc85162919e4a98d389fbd662423`  
-		Last Modified: Tue, 08 Aug 2023 19:29:30 GMT  
-		Size: 666.0 B  
+	-	`sha256:9c4c0dcd86397ab87ba72a5a8352df19ef77c1eff48e1a7ca68811ef786c5816`  
+		Last Modified: Mon, 14 Aug 2023 18:15:18 GMT  
+		Size: 731.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4512dcef47bad23b57f9d7b61341ceddd844fbdc816420097ac95267e581927`  
-		Last Modified: Tue, 08 Aug 2023 21:44:50 GMT  
-		Size: 42.5 MB (42458209 bytes)  
+	-	`sha256:0a46c95431de337e08173e27dc06cf2a941835b3585931397f3ecfeba6195e48`  
+		Last Modified: Mon, 14 Aug 2023 20:37:16 GMT  
+		Size: 42.5 MB (42463707 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f9190829afdd97f3fe2f29a418e6ac6c64ba3c6ee1e2e997ce6cd13c5d34bab3`  
-		Last Modified: Tue, 08 Aug 2023 21:44:45 GMT  
-		Size: 1.3 KB (1266 bytes)  
+	-	`sha256:c7e02cbcb8d26348d37d426d653a5944c6965a7f1cc41de5c3c877ce5ea4378d`  
+		Last Modified: Mon, 14 Aug 2023 20:37:11 GMT  
+		Size: 1.3 KB (1267 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:adb5cc8ab2ee3d5e2a7d5c36530465d6a5976db791efd9f732851aec411bd06a`  
-		Last Modified: Tue, 08 Aug 2023 21:44:45 GMT  
-		Size: 1.5 KB (1471 bytes)  
+	-	`sha256:2850491d7c5d17419d0565fc4682ec82735a7aef64abbc980cc8bd0e0d408e93`  
+		Last Modified: Mon, 14 Aug 2023 20:37:12 GMT  
+		Size: 1.5 KB (1475 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `unit:jsc` - linux; arm64 variant v8
 
 ```console
-$ docker pull unit@sha256:3db46ab3262254580e66ffbf1dee747f39715f05d1c39627b340d8e2109adfb4
+$ docker pull unit@sha256:ad119b587d6e754b1f7d90357dee87fbd3cd46dbe77b4d97d781ae575054fe06
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **225.2 MB (225150745 bytes)**  
+-	Total Size: **225.2 MB (225166002 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c3d781b7f69bf29dec6ba39b8033048e7e0bc91044131b5455e111227fd62769`
+-	Image ID: `sha256:09a5b427b7e005c12743db1dd6ef6fd2adbf6e170af3f8fd87749b498c91a860`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
@@ -2742,39 +2742,39 @@ ENV JAVA_VERSION=jdk-11.0.20+8
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='eb821c049c2d2f7c3fbf8ddcce2d608d3aa7d488700e76bfbbebabba93021748';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.20_8.tar.gz';          ;;        armhf|arm)          ESUM='fdf98d94ac3fd49a73a534fd88cf60e757e885c04791d15f76ccfcecb43a25e0';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_arm_linux_hotspot_11.0.20_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1125931b3a38e6e305a1932fc6cfd0b023a0fbec2cab10e835a2ee2c50848b42';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.20_8.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='688c83d9edf2204220df94ce5bab4a6d19f3d91bc0e500f31dda41e16d9a383f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.20_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='7a99258af2e3ee9047e90f1c0c1775fd6285085759501295358d934d662e01f9';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_x64_linux_hotspot_11.0.20_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
 # Tue, 08 Aug 2023 19:41:35 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Tue, 08 Aug 2023 19:41:35 GMT
-COPY file:0673fe0a4a716089bcd96321c8de60149aea8a94ae7c4ba827ecc4a74a9789a3 in / 
-# Tue, 08 Aug 2023 19:41:35 GMT
-ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 08 Aug 2023 19:41:35 GMT
+# Mon, 14 Aug 2023 18:09:09 GMT
+COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
+# Mon, 14 Aug 2023 18:09:09 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
+# Mon, 14 Aug 2023 18:09:09 GMT
 CMD ["jshell"]
-# Tue, 08 Aug 2023 22:31:27 GMT
+# Mon, 14 Aug 2023 20:29:16 GMT
 LABEL org.opencontainers.image.title=Unit
-# Tue, 08 Aug 2023 22:31:27 GMT
+# Mon, 14 Aug 2023 20:29:16 GMT
 LABEL org.opencontainers.image.description=Official build of Unit for Docker.
-# Tue, 08 Aug 2023 22:31:27 GMT
+# Mon, 14 Aug 2023 20:29:16 GMT
 LABEL org.opencontainers.image.url=https://unit.nginx.org
-# Tue, 08 Aug 2023 22:31:27 GMT
+# Mon, 14 Aug 2023 20:29:16 GMT
 LABEL org.opencontainers.image.source=https://github.com/nginx/unit
-# Tue, 08 Aug 2023 22:31:27 GMT
+# Mon, 14 Aug 2023 20:29:16 GMT
 LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
-# Tue, 08 Aug 2023 22:31:28 GMT
+# Mon, 14 Aug 2023 20:29:16 GMT
 LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 08 Aug 2023 22:31:28 GMT
+# Mon, 14 Aug 2023 20:29:16 GMT
 LABEL org.opencontainers.image.version=1.30.0
-# Tue, 08 Aug 2023 22:33:27 GMT
+# Mon, 14 Aug 2023 20:30:40 GMT
 RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y ca-certificates mercurial build-essential libssl-dev libpcre2-dev curl pkg-config     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && hg clone -u 1.30.0-1 https://hg.nginx.org/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --pid=/var/run/unit.pid                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure java --jars=/usr/share/unit-jsc-common/     && make -j $NCPU java-shared-install java-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure java --jars=/usr/share/unit-jsc-common/     && make -j $NCPU java-shared-install java-install     && cd     && rm -rf unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && /bin/true     && mkdir -p /var/lib/unit/     && mkdir /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stdout /var/log/unit.log
-# Tue, 08 Aug 2023 22:33:28 GMT
+# Mon, 14 Aug 2023 20:30:41 GMT
 COPY file:8b65557c2137d1a3946148e09ddd45af0b855e40210dabb5a9bd6c36fac22006 in /usr/local/bin/ 
-# Tue, 08 Aug 2023 22:33:28 GMT
+# Mon, 14 Aug 2023 20:30:41 GMT
 COPY multi:0ef77957b92a7e8997661453cf7256a81db39d0e9f975a137d7e664007d8fcf4 in /usr/share/unit/welcome/ 
-# Tue, 08 Aug 2023 22:33:28 GMT
+# Mon, 14 Aug 2023 20:30:41 GMT
 STOPSIGNAL SIGTERM
-# Tue, 08 Aug 2023 22:33:28 GMT
+# Mon, 14 Aug 2023 20:30:41 GMT
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-# Tue, 08 Aug 2023 22:33:28 GMT
+# Mon, 14 Aug 2023 20:30:41 GMT
 EXPOSE 80
-# Tue, 08 Aug 2023 22:33:28 GMT
+# Mon, 14 Aug 2023 20:30:41 GMT
 CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ```
 
@@ -2795,27 +2795,27 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Last Modified: Tue, 08 Aug 2023 19:46:00 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:008aa63c543c009b748c7adf54cdb5838ecb88b142bb1d2a845db7acdc792a9a`  
-		Last Modified: Tue, 08 Aug 2023 19:46:00 GMT  
-		Size: 666.0 B  
+	-	`sha256:fa2be1922be7f8780e45b2440f4f348bacc86451519f391ea385d6df04bcf1c8`  
+		Last Modified: Mon, 14 Aug 2023 18:12:08 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c3e265b7f51c824bd38111b977204d3db0f089168be269d9c1336fec9094301`  
-		Last Modified: Tue, 08 Aug 2023 22:34:08 GMT  
-		Size: 42.3 MB (42342108 bytes)  
+	-	`sha256:38d36fdaec9440657aea4c9ffb98d0ebb68ca7e46a518aa21280f935b625c0c0`  
+		Last Modified: Mon, 14 Aug 2023 20:31:25 GMT  
+		Size: 42.4 MB (42357302 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:edc5ad02c350b21b42dd960b068dc13189d3971b024e1d669279f837e8aedef9`  
-		Last Modified: Tue, 08 Aug 2023 22:34:05 GMT  
-		Size: 1.3 KB (1266 bytes)  
+	-	`sha256:c860b390d8200c415dbc95261b6cec17d797ae81d6bb7e1e9157df2659cc4819`  
+		Last Modified: Mon, 14 Aug 2023 20:31:21 GMT  
+		Size: 1.3 KB (1265 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:485b3086c01f4e031bb403cabc417ef78b50dfbe88061e4fd8325de9abbc66cd`  
-		Last Modified: Tue, 08 Aug 2023 22:34:05 GMT  
-		Size: 1.5 KB (1471 bytes)  
+	-	`sha256:e0e29436d7b9e1481572eaa02d791f3448e3f60781f931f725ea132dcb6286fb`  
+		Last Modified: Mon, 14 Aug 2023 20:31:21 GMT  
+		Size: 1.5 KB (1468 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `unit:jsc11`
 
 ```console
-$ docker pull unit@sha256:a6347b827f29166a59a7e961b66dae9e48c4121de0d1ca4a968e794d706e82fc
+$ docker pull unit@sha256:75df14b8bc2f500c87cfe1e9bdcc9e9c1daf0c9a70d7a730e59097917aa4a2a6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2826,14 +2826,14 @@ $ docker pull unit@sha256:a6347b827f29166a59a7e961b66dae9e48c4121de0d1ca4a968e79
 ### `unit:jsc11` - linux; amd64
 
 ```console
-$ docker pull unit@sha256:bb30f322661bd557937f5e27704f91ba9ba38646474684b4a32b4a64f6b30461
+$ docker pull unit@sha256:ea8a9f83809f0aa90766db906b3ed0b05a8f796945b5310f3f5584bcd1083ad4
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **230.6 MB (230634489 bytes)**  
+-	Total Size: **230.6 MB (230640057 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:83c027cc9e8ee0e12e9451d84f93ebc01ca114bf6e3bcf87c84bca7c5b07756a`
+-	Image ID: `sha256:a0d133a32016f719bcd5762e5055d44ef3f0f7bf65c6f4ff791c7b2a9509c922`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
@@ -2864,39 +2864,39 @@ ENV JAVA_VERSION=jdk-11.0.20+8
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='eb821c049c2d2f7c3fbf8ddcce2d608d3aa7d488700e76bfbbebabba93021748';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.20_8.tar.gz';          ;;        armhf|arm)          ESUM='fdf98d94ac3fd49a73a534fd88cf60e757e885c04791d15f76ccfcecb43a25e0';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_arm_linux_hotspot_11.0.20_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1125931b3a38e6e305a1932fc6cfd0b023a0fbec2cab10e835a2ee2c50848b42';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.20_8.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='688c83d9edf2204220df94ce5bab4a6d19f3d91bc0e500f31dda41e16d9a383f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.20_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='7a99258af2e3ee9047e90f1c0c1775fd6285085759501295358d934d662e01f9';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_x64_linux_hotspot_11.0.20_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
 # Tue, 08 Aug 2023 19:22:25 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Tue, 08 Aug 2023 19:22:25 GMT
-COPY file:0673fe0a4a716089bcd96321c8de60149aea8a94ae7c4ba827ecc4a74a9789a3 in / 
-# Tue, 08 Aug 2023 19:22:25 GMT
-ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 08 Aug 2023 19:22:25 GMT
+# Mon, 14 Aug 2023 18:10:08 GMT
+COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
+# Mon, 14 Aug 2023 18:10:08 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
+# Mon, 14 Aug 2023 18:10:08 GMT
 CMD ["jshell"]
-# Tue, 08 Aug 2023 21:42:33 GMT
+# Mon, 14 Aug 2023 20:34:29 GMT
 LABEL org.opencontainers.image.title=Unit
-# Tue, 08 Aug 2023 21:42:33 GMT
+# Mon, 14 Aug 2023 20:34:29 GMT
 LABEL org.opencontainers.image.description=Official build of Unit for Docker.
-# Tue, 08 Aug 2023 21:42:33 GMT
+# Mon, 14 Aug 2023 20:34:29 GMT
 LABEL org.opencontainers.image.url=https://unit.nginx.org
-# Tue, 08 Aug 2023 21:42:33 GMT
+# Mon, 14 Aug 2023 20:34:30 GMT
 LABEL org.opencontainers.image.source=https://github.com/nginx/unit
-# Tue, 08 Aug 2023 21:42:33 GMT
+# Mon, 14 Aug 2023 20:34:30 GMT
 LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
-# Tue, 08 Aug 2023 21:42:33 GMT
+# Mon, 14 Aug 2023 20:34:30 GMT
 LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 08 Aug 2023 21:42:33 GMT
+# Mon, 14 Aug 2023 20:34:30 GMT
 LABEL org.opencontainers.image.version=1.30.0
-# Tue, 08 Aug 2023 21:44:08 GMT
+# Mon, 14 Aug 2023 20:36:30 GMT
 RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y ca-certificates mercurial build-essential libssl-dev libpcre2-dev curl pkg-config     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && hg clone -u 1.30.0-1 https://hg.nginx.org/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --pid=/var/run/unit.pid                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure java --jars=/usr/share/unit-jsc-common/     && make -j $NCPU java-shared-install java-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure java --jars=/usr/share/unit-jsc-common/     && make -j $NCPU java-shared-install java-install     && cd     && rm -rf unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && /bin/true     && mkdir -p /var/lib/unit/     && mkdir /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stdout /var/log/unit.log
-# Tue, 08 Aug 2023 21:44:09 GMT
+# Mon, 14 Aug 2023 20:36:31 GMT
 COPY file:8b65557c2137d1a3946148e09ddd45af0b855e40210dabb5a9bd6c36fac22006 in /usr/local/bin/ 
-# Tue, 08 Aug 2023 21:44:09 GMT
+# Mon, 14 Aug 2023 20:36:31 GMT
 COPY multi:0ef77957b92a7e8997661453cf7256a81db39d0e9f975a137d7e664007d8fcf4 in /usr/share/unit/welcome/ 
-# Tue, 08 Aug 2023 21:44:09 GMT
+# Mon, 14 Aug 2023 20:36:31 GMT
 STOPSIGNAL SIGTERM
-# Tue, 08 Aug 2023 21:44:09 GMT
+# Mon, 14 Aug 2023 20:36:31 GMT
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-# Tue, 08 Aug 2023 21:44:09 GMT
+# Mon, 14 Aug 2023 20:36:31 GMT
 EXPOSE 80
-# Tue, 08 Aug 2023 21:44:09 GMT
+# Mon, 14 Aug 2023 20:36:31 GMT
 CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ```
 
@@ -2917,34 +2917,34 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Last Modified: Tue, 08 Aug 2023 19:29:30 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:384839be4478f745fa600353a810f9d08142dc85162919e4a98d389fbd662423`  
-		Last Modified: Tue, 08 Aug 2023 19:29:30 GMT  
-		Size: 666.0 B  
+	-	`sha256:9c4c0dcd86397ab87ba72a5a8352df19ef77c1eff48e1a7ca68811ef786c5816`  
+		Last Modified: Mon, 14 Aug 2023 18:15:18 GMT  
+		Size: 731.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4512dcef47bad23b57f9d7b61341ceddd844fbdc816420097ac95267e581927`  
-		Last Modified: Tue, 08 Aug 2023 21:44:50 GMT  
-		Size: 42.5 MB (42458209 bytes)  
+	-	`sha256:0a46c95431de337e08173e27dc06cf2a941835b3585931397f3ecfeba6195e48`  
+		Last Modified: Mon, 14 Aug 2023 20:37:16 GMT  
+		Size: 42.5 MB (42463707 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f9190829afdd97f3fe2f29a418e6ac6c64ba3c6ee1e2e997ce6cd13c5d34bab3`  
-		Last Modified: Tue, 08 Aug 2023 21:44:45 GMT  
-		Size: 1.3 KB (1266 bytes)  
+	-	`sha256:c7e02cbcb8d26348d37d426d653a5944c6965a7f1cc41de5c3c877ce5ea4378d`  
+		Last Modified: Mon, 14 Aug 2023 20:37:11 GMT  
+		Size: 1.3 KB (1267 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:adb5cc8ab2ee3d5e2a7d5c36530465d6a5976db791efd9f732851aec411bd06a`  
-		Last Modified: Tue, 08 Aug 2023 21:44:45 GMT  
-		Size: 1.5 KB (1471 bytes)  
+	-	`sha256:2850491d7c5d17419d0565fc4682ec82735a7aef64abbc980cc8bd0e0d408e93`  
+		Last Modified: Mon, 14 Aug 2023 20:37:12 GMT  
+		Size: 1.5 KB (1475 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `unit:jsc11` - linux; arm64 variant v8
 
 ```console
-$ docker pull unit@sha256:3db46ab3262254580e66ffbf1dee747f39715f05d1c39627b340d8e2109adfb4
+$ docker pull unit@sha256:ad119b587d6e754b1f7d90357dee87fbd3cd46dbe77b4d97d781ae575054fe06
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **225.2 MB (225150745 bytes)**  
+-	Total Size: **225.2 MB (225166002 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c3d781b7f69bf29dec6ba39b8033048e7e0bc91044131b5455e111227fd62769`
+-	Image ID: `sha256:09a5b427b7e005c12743db1dd6ef6fd2adbf6e170af3f8fd87749b498c91a860`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
@@ -2975,39 +2975,39 @@ ENV JAVA_VERSION=jdk-11.0.20+8
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='eb821c049c2d2f7c3fbf8ddcce2d608d3aa7d488700e76bfbbebabba93021748';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.20_8.tar.gz';          ;;        armhf|arm)          ESUM='fdf98d94ac3fd49a73a534fd88cf60e757e885c04791d15f76ccfcecb43a25e0';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_arm_linux_hotspot_11.0.20_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1125931b3a38e6e305a1932fc6cfd0b023a0fbec2cab10e835a2ee2c50848b42';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.20_8.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='688c83d9edf2204220df94ce5bab4a6d19f3d91bc0e500f31dda41e16d9a383f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.20_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='7a99258af2e3ee9047e90f1c0c1775fd6285085759501295358d934d662e01f9';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_x64_linux_hotspot_11.0.20_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
 # Tue, 08 Aug 2023 19:41:35 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Tue, 08 Aug 2023 19:41:35 GMT
-COPY file:0673fe0a4a716089bcd96321c8de60149aea8a94ae7c4ba827ecc4a74a9789a3 in / 
-# Tue, 08 Aug 2023 19:41:35 GMT
-ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 08 Aug 2023 19:41:35 GMT
+# Mon, 14 Aug 2023 18:09:09 GMT
+COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
+# Mon, 14 Aug 2023 18:09:09 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
+# Mon, 14 Aug 2023 18:09:09 GMT
 CMD ["jshell"]
-# Tue, 08 Aug 2023 22:31:27 GMT
+# Mon, 14 Aug 2023 20:29:16 GMT
 LABEL org.opencontainers.image.title=Unit
-# Tue, 08 Aug 2023 22:31:27 GMT
+# Mon, 14 Aug 2023 20:29:16 GMT
 LABEL org.opencontainers.image.description=Official build of Unit for Docker.
-# Tue, 08 Aug 2023 22:31:27 GMT
+# Mon, 14 Aug 2023 20:29:16 GMT
 LABEL org.opencontainers.image.url=https://unit.nginx.org
-# Tue, 08 Aug 2023 22:31:27 GMT
+# Mon, 14 Aug 2023 20:29:16 GMT
 LABEL org.opencontainers.image.source=https://github.com/nginx/unit
-# Tue, 08 Aug 2023 22:31:27 GMT
+# Mon, 14 Aug 2023 20:29:16 GMT
 LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
-# Tue, 08 Aug 2023 22:31:28 GMT
+# Mon, 14 Aug 2023 20:29:16 GMT
 LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 08 Aug 2023 22:31:28 GMT
+# Mon, 14 Aug 2023 20:29:16 GMT
 LABEL org.opencontainers.image.version=1.30.0
-# Tue, 08 Aug 2023 22:33:27 GMT
+# Mon, 14 Aug 2023 20:30:40 GMT
 RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y ca-certificates mercurial build-essential libssl-dev libpcre2-dev curl pkg-config     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && hg clone -u 1.30.0-1 https://hg.nginx.org/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --pid=/var/run/unit.pid                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure java --jars=/usr/share/unit-jsc-common/     && make -j $NCPU java-shared-install java-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure java --jars=/usr/share/unit-jsc-common/     && make -j $NCPU java-shared-install java-install     && cd     && rm -rf unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && /bin/true     && mkdir -p /var/lib/unit/     && mkdir /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stdout /var/log/unit.log
-# Tue, 08 Aug 2023 22:33:28 GMT
+# Mon, 14 Aug 2023 20:30:41 GMT
 COPY file:8b65557c2137d1a3946148e09ddd45af0b855e40210dabb5a9bd6c36fac22006 in /usr/local/bin/ 
-# Tue, 08 Aug 2023 22:33:28 GMT
+# Mon, 14 Aug 2023 20:30:41 GMT
 COPY multi:0ef77957b92a7e8997661453cf7256a81db39d0e9f975a137d7e664007d8fcf4 in /usr/share/unit/welcome/ 
-# Tue, 08 Aug 2023 22:33:28 GMT
+# Mon, 14 Aug 2023 20:30:41 GMT
 STOPSIGNAL SIGTERM
-# Tue, 08 Aug 2023 22:33:28 GMT
+# Mon, 14 Aug 2023 20:30:41 GMT
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-# Tue, 08 Aug 2023 22:33:28 GMT
+# Mon, 14 Aug 2023 20:30:41 GMT
 EXPOSE 80
-# Tue, 08 Aug 2023 22:33:28 GMT
+# Mon, 14 Aug 2023 20:30:41 GMT
 CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ```
 
@@ -3028,21 +3028,21 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Last Modified: Tue, 08 Aug 2023 19:46:00 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:008aa63c543c009b748c7adf54cdb5838ecb88b142bb1d2a845db7acdc792a9a`  
-		Last Modified: Tue, 08 Aug 2023 19:46:00 GMT  
-		Size: 666.0 B  
+	-	`sha256:fa2be1922be7f8780e45b2440f4f348bacc86451519f391ea385d6df04bcf1c8`  
+		Last Modified: Mon, 14 Aug 2023 18:12:08 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c3e265b7f51c824bd38111b977204d3db0f089168be269d9c1336fec9094301`  
-		Last Modified: Tue, 08 Aug 2023 22:34:08 GMT  
-		Size: 42.3 MB (42342108 bytes)  
+	-	`sha256:38d36fdaec9440657aea4c9ffb98d0ebb68ca7e46a518aa21280f935b625c0c0`  
+		Last Modified: Mon, 14 Aug 2023 20:31:25 GMT  
+		Size: 42.4 MB (42357302 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:edc5ad02c350b21b42dd960b068dc13189d3971b024e1d669279f837e8aedef9`  
-		Last Modified: Tue, 08 Aug 2023 22:34:05 GMT  
-		Size: 1.3 KB (1266 bytes)  
+	-	`sha256:c860b390d8200c415dbc95261b6cec17d797ae81d6bb7e1e9157df2659cc4819`  
+		Last Modified: Mon, 14 Aug 2023 20:31:21 GMT  
+		Size: 1.3 KB (1265 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:485b3086c01f4e031bb403cabc417ef78b50dfbe88061e4fd8325de9abbc66cd`  
-		Last Modified: Tue, 08 Aug 2023 22:34:05 GMT  
-		Size: 1.5 KB (1471 bytes)  
+	-	`sha256:e0e29436d7b9e1481572eaa02d791f3448e3f60781f931f725ea132dcb6286fb`  
+		Last Modified: Mon, 14 Aug 2023 20:31:21 GMT  
+		Size: 1.5 KB (1468 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `unit:latest`
