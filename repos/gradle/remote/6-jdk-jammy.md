@@ -1,7 +1,7 @@
 ## `gradle:6-jdk-jammy`
 
 ```console
-$ docker pull gradle@sha256:35876eb29236996b4f2c5d829575a23b3e1aee8a7a32a14259b40e3246fddfd9
+$ docker pull gradle@sha256:4af44c6ca46620c05667f8ab0b0e5842ebd68e4e3743e07095508ce9be2bf099
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -15,15 +15,15 @@ $ docker pull gradle@sha256:35876eb29236996b4f2c5d829575a23b3e1aee8a7a32a14259b4
 ### `gradle:6-jdk-jammy` - linux; amd64
 
 ```console
-$ docker pull gradle@sha256:998563dc48833af3c739e39812a891594c3ddb39c645d062aacf2ddeb253d828
+$ docker pull gradle@sha256:a765b279ddaf5c47dcdec90563efc81c885991cb47b94ec291aecfdcc036c945
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **351.9 MB (351929266 bytes)**  
+-	Total Size: **351.9 MB (351928971 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:584cbe8178784686ce01c4b231e72e39af2f482c492b2534bd619c1fd97bda7c`
--	Entrypoint: `["\/entrypoint.sh"]`
+-	Image ID: `sha256:8509afad455d58b253d2cad0ed450547a850b4dc6bde8b76ea82ee203013a666`
+-	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -53,29 +53,29 @@ ENV JAVA_VERSION=jdk-17.0.8+7
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='c43688163cfdcb1a6e6fe202cc06a51891df746b954c55dbd01430e7d7326d00';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.8%2B7/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.8_7.tar.gz';          ;;        armhf|arm)          ESUM='33d972efd78b70a07aed793a6ebcb52a5129707e8c62268e478d1c2df15898e1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.8%2B7/OpenJDK17U-jdk_arm_linux_hotspot_17.0.8_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='88f5d14cc84a4bcfe50aa275092ae97a0edf7205269ed12c1972bf613bc52b1e';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.8%2B7/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.8_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='055d8bd0eebf137cf3506fb84817ce2d858597f21067d9a1268f08916738b435';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.8%2B7/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.8_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='aa5fc7d388fe544e5d85902e68399d5299e931f9b280d358a3cbee218d6017b0';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.8%2B7/OpenJDK17U-jdk_x64_linux_hotspot_17.0.8_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
 # Tue, 08 Aug 2023 19:24:04 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Tue, 08 Aug 2023 19:24:04 GMT
-COPY file:0673fe0a4a716089bcd96321c8de60149aea8a94ae7c4ba827ecc4a74a9789a3 in / 
-# Tue, 08 Aug 2023 19:24:04 GMT
-ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 08 Aug 2023 19:24:04 GMT
+# Mon, 14 Aug 2023 18:10:54 GMT
+COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
+# Mon, 14 Aug 2023 18:10:54 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
+# Mon, 14 Aug 2023 18:10:54 GMT
 CMD ["jshell"]
-# Tue, 08 Aug 2023 21:00:05 GMT
+# Mon, 14 Aug 2023 19:14:58 GMT
 CMD ["gradle"]
-# Tue, 08 Aug 2023 21:00:05 GMT
+# Mon, 14 Aug 2023 19:14:58 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Tue, 08 Aug 2023 21:00:05 GMT
+# Mon, 14 Aug 2023 19:14:59 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln --symbolic /home/gradle/.gradle /root/.gradle
-# Tue, 08 Aug 2023 21:00:06 GMT
+# Mon, 14 Aug 2023 19:14:59 GMT
 VOLUME [/home/gradle/.gradle]
-# Tue, 08 Aug 2023 21:00:06 GMT
+# Mon, 14 Aug 2023 19:14:59 GMT
 WORKDIR /home/gradle
-# Tue, 08 Aug 2023 21:00:20 GMT
+# Mon, 14 Aug 2023 19:15:14 GMT
 RUN set -o errexit -o nounset     && apt-get update     && apt-get install --yes --no-install-recommends         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm --recursive --force /var/lib/apt/lists/*         && echo "Testing VCSes"     && which bzr     && which git     && which git-lfs     && which hg     && which svn
-# Tue, 08 Aug 2023 21:02:51 GMT
+# Mon, 14 Aug 2023 19:17:44 GMT
 ENV GRADLE_VERSION=6.9.4
-# Tue, 08 Aug 2023 21:02:51 GMT
+# Mon, 14 Aug 2023 19:17:44 GMT
 ARG GRADLE_DOWNLOAD_SHA256=3e240228538de9f18772a574e99a0ba959e83d6ef351014381acd9631781389a
-# Tue, 08 Aug 2023 21:02:55 GMT
+# Mon, 14 Aug 2023 19:17:48 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=3e240228538de9f18772a574e99a0ba959e83d6ef351014381acd9631781389a
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -97,21 +97,21 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Tue, 08 Aug 2023 19:32:03 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ab3262e9d6b3aab0326b651a5b37c850bee90d9fb2b4b3262166daa5e8ab4d34`  
-		Last Modified: Tue, 08 Aug 2023 19:32:03 GMT  
-		Size: 666.0 B  
+	-	`sha256:594307c077a3f81d1c6864ceb2f739658221e530dfcc096cdc08556226a6ea2c`  
+		Last Modified: Mon, 14 Aug 2023 18:17:08 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:774a2b8a43f7943521b7032d18303b263f673001622ce496d226f4c902233153`  
-		Last Modified: Tue, 08 Aug 2023 21:07:10 GMT  
-		Size: 4.4 KB (4365 bytes)  
+	-	`sha256:c2bae5b0e57ca35ab16cf7bc17da63c6a2fd2cc5e42cba8b3b6b63ca19a133da`  
+		Last Modified: Mon, 14 Aug 2023 19:21:50 GMT  
+		Size: 4.4 KB (4368 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c4c10eacee9b1fd121ec4f074ca423d568182f7a04b902da44d7f9d5400d7f2`  
-		Last Modified: Tue, 08 Aug 2023 21:07:18 GMT  
-		Size: 51.6 MB (51559855 bytes)  
+	-	`sha256:5540210bb45db2e0abf390ecb2a362ce3e18504e4b81768667e6e6cd7c5040f3`  
+		Last Modified: Mon, 14 Aug 2023 19:21:58 GMT  
+		Size: 51.6 MB (51559495 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8120e3c5c080be5898348e480b073cdbf5c38e7b392e0e6815cc899aae2e68b`  
-		Last Modified: Tue, 08 Aug 2023 21:15:14 GMT  
-		Size: 107.7 MB (107696633 bytes)  
+	-	`sha256:c50a416af07559f8a65d343da84f848dcd7a9a05e02396b4437d2ca2c21c651c`  
+		Last Modified: Mon, 14 Aug 2023 19:29:24 GMT  
+		Size: 107.7 MB (107696628 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:6-jdk-jammy` - linux; arm variant v7
@@ -321,15 +321,15 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 ### `gradle:6-jdk-jammy` - linux; ppc64le
 
 ```console
-$ docker pull gradle@sha256:30b4aebced03be078cb11fc88121712e2d317742c8cba50f4eaff960a8a076c0
+$ docker pull gradle@sha256:3207b88969c89bf1055765aab35ed2b431a8718ffcc51dc67a12b096535d19d0
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **362.4 MB (362444103 bytes)**  
+-	Total Size: **362.4 MB (362444721 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9bb7f2941e1f992274d94c6c9ac8756322c5bf373dd4465a42390147643e0779`
--	Entrypoint: `["\/entrypoint.sh"]`
+-	Image ID: `sha256:f6559f382d9f6997c00168711913e5251312e7658ce24757f237167e820c0d32`
+-	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -359,29 +359,29 @@ ENV JAVA_VERSION=jdk-17.0.8+7
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='c43688163cfdcb1a6e6fe202cc06a51891df746b954c55dbd01430e7d7326d00';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.8%2B7/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.8_7.tar.gz';          ;;        armhf|arm)          ESUM='33d972efd78b70a07aed793a6ebcb52a5129707e8c62268e478d1c2df15898e1';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.8%2B7/OpenJDK17U-jdk_arm_linux_hotspot_17.0.8_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='88f5d14cc84a4bcfe50aa275092ae97a0edf7205269ed12c1972bf613bc52b1e';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.8%2B7/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.8_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='055d8bd0eebf137cf3506fb84817ce2d858597f21067d9a1268f08916738b435';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.8%2B7/OpenJDK17U-jdk_s390x_linux_hotspot_17.0.8_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='aa5fc7d388fe544e5d85902e68399d5299e931f9b280d358a3cbee218d6017b0';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.8%2B7/OpenJDK17U-jdk_x64_linux_hotspot_17.0.8_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
 # Tue, 08 Aug 2023 19:25:44 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Tue, 08 Aug 2023 19:25:44 GMT
-COPY file:0673fe0a4a716089bcd96321c8de60149aea8a94ae7c4ba827ecc4a74a9789a3 in / 
-# Tue, 08 Aug 2023 19:25:45 GMT
-ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 08 Aug 2023 19:25:45 GMT
+# Mon, 14 Aug 2023 18:10:10 GMT
+COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
+# Mon, 14 Aug 2023 18:10:10 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
+# Mon, 14 Aug 2023 18:10:10 GMT
 CMD ["jshell"]
-# Tue, 08 Aug 2023 20:05:42 GMT
+# Mon, 14 Aug 2023 19:11:59 GMT
 CMD ["gradle"]
-# Tue, 08 Aug 2023 20:05:43 GMT
+# Mon, 14 Aug 2023 19:11:59 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Tue, 08 Aug 2023 20:05:45 GMT
+# Mon, 14 Aug 2023 19:12:01 GMT
 RUN set -o errexit -o nounset     && echo "Adding gradle user and group"     && groupadd --system --gid 1000 gradle     && useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle     && mkdir /home/gradle/.gradle     && chown --recursive gradle:gradle /home/gradle         && echo "Symlinking root Gradle cache to gradle Gradle cache"     && ln --symbolic /home/gradle/.gradle /root/.gradle
-# Tue, 08 Aug 2023 20:05:45 GMT
+# Mon, 14 Aug 2023 19:12:01 GMT
 VOLUME [/home/gradle/.gradle]
-# Tue, 08 Aug 2023 20:05:46 GMT
+# Mon, 14 Aug 2023 19:12:02 GMT
 WORKDIR /home/gradle
-# Tue, 08 Aug 2023 20:06:36 GMT
+# Mon, 14 Aug 2023 19:12:52 GMT
 RUN set -o errexit -o nounset     && apt-get update     && apt-get install --yes --no-install-recommends         unzip         wget                 bzr         git         git-lfs         mercurial         openssh-client         subversion     && rm --recursive --force /var/lib/apt/lists/*         && echo "Testing VCSes"     && which bzr     && which git     && which git-lfs     && which hg     && which svn
-# Tue, 08 Aug 2023 20:12:44 GMT
+# Mon, 14 Aug 2023 19:18:28 GMT
 ENV GRADLE_VERSION=6.9.4
-# Tue, 08 Aug 2023 20:12:45 GMT
+# Mon, 14 Aug 2023 19:18:28 GMT
 ARG GRADLE_DOWNLOAD_SHA256=3e240228538de9f18772a574e99a0ba959e83d6ef351014381acd9631781389a
-# Tue, 08 Aug 2023 20:13:02 GMT
+# Mon, 14 Aug 2023 19:18:41 GMT
 # ARGS: GRADLE_DOWNLOAD_SHA256=3e240228538de9f18772a574e99a0ba959e83d6ef351014381acd9631781389a
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle         && echo "Testing Gradle installation"     && gradle --version
 ```
@@ -403,21 +403,21 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Last Modified: Tue, 08 Aug 2023 19:34:19 GMT  
 		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2a17eb7d15d936134be780fa02e1f0b096ab5ef59b28d1ee0931193d95446f3b`  
-		Last Modified: Tue, 08 Aug 2023 19:34:19 GMT  
-		Size: 666.0 B  
+	-	`sha256:7f9dab7fc9c6d2642c2ab4ac959ab5a7ac8dc93b0b2ad6ec93a2736f690c19b6`  
+		Last Modified: Mon, 14 Aug 2023 18:15:40 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d45244f8cf5dae8e4c8bcfad367c9f0487a1d120087053601a0fc64303048f5`  
-		Last Modified: Tue, 08 Aug 2023 20:18:48 GMT  
-		Size: 4.4 KB (4367 bytes)  
+	-	`sha256:6346af6bd58905e6c75c1686141525684e9f7e7f94b80755abe6afca25785d71`  
+		Last Modified: Mon, 14 Aug 2023 19:24:22 GMT  
+		Size: 4.4 KB (4365 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:69d3d4f1631f450caf071fd222d678fc06a67a63ba105fd7b773081ff14c046f`  
-		Last Modified: Tue, 08 Aug 2023 20:19:04 GMT  
-		Size: 55.8 MB (55806013 bytes)  
+	-	`sha256:c7276e78f0d140175c7971d32357278d585cc91b27c3ca1f5df91c24cb10e4b4`  
+		Last Modified: Mon, 14 Aug 2023 19:24:41 GMT  
+		Size: 55.8 MB (55806552 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a25febf7b2c5475ba6465d85a55b496c7cd34869429a4b820a7475ac60fab488`  
-		Last Modified: Tue, 08 Aug 2023 20:28:16 GMT  
-		Size: 107.7 MB (107696625 bytes)  
+	-	`sha256:b73e1c76ab94ba63945b6a9f3856fcdba3dbac3f841883681563a84cca5ab311`  
+		Last Modified: Mon, 14 Aug 2023 19:33:53 GMT  
+		Size: 107.7 MB (107696638 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `gradle:6-jdk-jammy` - linux; s390x
