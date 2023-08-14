@@ -1,7 +1,7 @@
 ## `sonarqube:10-datacenter-search`
 
 ```console
-$ docker pull sonarqube@sha256:b818b96a2692cb474a0b744ac8c94a24ef3a5c8a1878b28fbb88e79d558c8c98
+$ docker pull sonarqube@sha256:6ed3f3539d78ca290ff6a924f81face5d640d68ae9137ec50adca3bf4d81f817
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,14 +12,14 @@ $ docker pull sonarqube@sha256:b818b96a2692cb474a0b744ac8c94a24ef3a5c8a1878b28fb
 ### `sonarqube:10-datacenter-search` - linux; amd64
 
 ```console
-$ docker pull sonarqube@sha256:e14353c296b228c02717a91ec84f3278be4384129fd32c8c9859b16c69f6217e
+$ docker pull sonarqube@sha256:e3ae29904be655dbbcb113efc307733e6add074d3ccfe4301ff523b657c2ecfc
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **585.0 MB (584991429 bytes)**  
+-	Total Size: **585.0 MB (584991723 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6b46463fdd178d4418e6ddc3770696ed1eda60921a4c4cce095309444bdff1e1`
+-	Image ID: `sha256:0cc2eeea504b1661ce6666c14a1b962bfed7a0b697d16a8bf4ea043de04581a0`
 -	Entrypoint: `["\/opt\/sonarqube\/docker\/run.sh"]`
 -	Default Command: `["\/opt\/sonarqube\/docker\/sonar.sh"]`
 
@@ -50,36 +50,36 @@ ENV JAVA_VERSION=jdk-17.0.8+7
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='42525ae2951a669803c75ba5987dc8333c664dae50c3e12174f736a506b4aa15';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.8%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.8_7.tar.gz';          ;;        armhf|arm)          ESUM='20fa06a86e1647f5997c511dd19e4d1c9839d2500f835973fc9b3c86b87030a0';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.8%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.8_7.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='1cf2cf7dca98c74860799b162b9f2eeaaf1ad1e78f5cb7479fe7bd1ccfea3227';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.8%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.8_7.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='4df17b19510864651c1d620baaf13766a448d43ee7848ea9ff69db10d26467b6';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.8%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.8_7.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='dddbb5f817a77445711528a414678806b00b83c92701fe595c50cdb207758ae9';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.8%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.8_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
 # Tue, 08 Aug 2023 19:24:35 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo java --version && java --version     && echo Complete.
-# Tue, 08 Aug 2023 19:24:35 GMT
-COPY file:0673fe0a4a716089bcd96321c8de60149aea8a94ae7c4ba827ecc4a74a9789a3 in / 
-# Tue, 08 Aug 2023 19:24:35 GMT
-ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 08 Aug 2023 20:44:38 GMT
+# Mon, 14 Aug 2023 18:11:13 GMT
+COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
+# Mon, 14 Aug 2023 18:11:13 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
+# Mon, 14 Aug 2023 20:37:42 GMT
 LABEL org.opencontainers.image.url=https://github.com/SonarSource/docker-sonarqube
-# Tue, 08 Aug 2023 20:44:38 GMT
+# Mon, 14 Aug 2023 20:37:42 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 08 Aug 2023 20:47:21 GMT
+# Mon, 14 Aug 2023 20:39:49 GMT
 ARG SONARQUBE_VERSION=10.1.0.73491
-# Tue, 08 Aug 2023 20:48:59 GMT
+# Mon, 14 Aug 2023 20:41:06 GMT
 ARG SONARQUBE_ZIP_URL=https://binaries.sonarsource.com/CommercialDistribution/sonarqube-datacenter/sonarqube-datacenter-10.1.0.73491.zip
-# Tue, 08 Aug 2023 20:49:48 GMT
+# Mon, 14 Aug 2023 20:41:35 GMT
 ENV DOCKER_RUNNING=true JAVA_HOME=/opt/java/openjdk SONARQUBE_HOME=/opt/sonarqube SONAR_VERSION=10.1.0.73491 SQ_DATA_DIR=/opt/sonarqube/data SQ_EXTENSIONS_DIR=/opt/sonarqube/extensions SQ_LOGS_DIR=/opt/sonarqube/logs SQ_TEMP_DIR=/opt/sonarqube/temp SONAR_CLUSTER_NODE_TYPE=search SONAR_CLUSTER_ENABLED=true
-# Tue, 08 Aug 2023 20:50:09 GMT
+# Mon, 14 Aug 2023 20:41:56 GMT
 # ARGS: SONARQUBE_VERSION=10.1.0.73491 SONARQUBE_ZIP_URL=https://binaries.sonarsource.com/CommercialDistribution/sonarqube-datacenter/sonarqube-datacenter-10.1.0.73491.zip
 RUN set -eux;     groupadd --system --gid 1000 sonarqube;     useradd --system --uid 1000 --gid sonarqube sonarqube;     apt-get update;     apt-get install -y gnupg unzip curl bash fonts-dejavu iproute2;     echo "networkaddress.cache.ttl=5" >> "${JAVA_HOME}/conf/security/java.security";     sed --in-place --expression="s?securerandom.source=file:/dev/random?securerandom.source=file:/dev/urandom?g" "${JAVA_HOME}/conf/security/java.security";     for server in $(shuf -e hkps://keys.openpgp.org                             hkps://keyserver.ubuntu.com) ; do         gpg --batch --keyserver "${server}" --recv-keys 679F1EE92B19609DE816FDE81DB198F93525EC1A && break || : ;     done;     mkdir --parents /opt;     cd /opt;     curl --fail --location --output sonarqube.zip --silent --show-error "${SONARQUBE_ZIP_URL}";     curl --fail --location --output sonarqube.zip.asc --silent --show-error "${SONARQUBE_ZIP_URL}.asc";     gpg --batch --verify sonarqube.zip.asc sonarqube.zip;     unzip -q sonarqube.zip;     mv "sonarqube-${SONARQUBE_VERSION}" sonarqube;     rm sonarqube.zip*;     rm -rf ${SONARQUBE_HOME}/bin/*;     ln -s "${SONARQUBE_HOME}/lib/sonar-application-${SONARQUBE_VERSION}.jar" "${SONARQUBE_HOME}/lib/sonarqube.jar";     chmod -R 555 ${SONARQUBE_HOME};     chmod -R ugo+wrX "${SQ_DATA_DIR}" "${SQ_EXTENSIONS_DIR}" "${SQ_LOGS_DIR}" "${SQ_TEMP_DIR}";     apt-get remove -y gnupg unzip curl;     rm -rf /var/lib/apt/lists/*;
-# Tue, 08 Aug 2023 20:50:10 GMT
+# Mon, 14 Aug 2023 20:41:57 GMT
 COPY multi:89fb11c026d59f7ff1da134f38f8b83061dfa7ae0312554196386d5f7168240c in /opt/sonarqube/docker/ 
-# Tue, 08 Aug 2023 20:50:10 GMT
+# Mon, 14 Aug 2023 20:41:57 GMT
 WORKDIR /opt/sonarqube
-# Tue, 08 Aug 2023 20:50:10 GMT
+# Mon, 14 Aug 2023 20:41:57 GMT
 EXPOSE 9000
-# Tue, 08 Aug 2023 20:50:10 GMT
+# Mon, 14 Aug 2023 20:41:57 GMT
 USER sonarqube
-# Tue, 08 Aug 2023 20:50:10 GMT
+# Mon, 14 Aug 2023 20:41:58 GMT
 STOPSIGNAL SIGINT
-# Tue, 08 Aug 2023 20:50:10 GMT
+# Mon, 14 Aug 2023 20:41:58 GMT
 ENTRYPOINT ["/opt/sonarqube/docker/run.sh"]
-# Tue, 08 Aug 2023 20:50:10 GMT
+# Mon, 14 Aug 2023 20:41:58 GMT
 CMD ["/opt/sonarqube/docker/sonar.sh"]
 ```
 
@@ -100,17 +100,17 @@ CMD ["/opt/sonarqube/docker/sonar.sh"]
 		Last Modified: Tue, 08 Aug 2023 19:33:17 GMT  
 		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:77a5ebc0e652dba949dc337249e9181f2a0103841f91c7cacf3225966748ca45`  
-		Last Modified: Tue, 08 Aug 2023 19:33:18 GMT  
-		Size: 667.0 B  
+	-	`sha256:ce989c1050e4625915fa5039565012152a04f93ae575d3a18acf170ba736f6ab`  
+		Last Modified: Mon, 14 Aug 2023 18:17:59 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb013a4c7608f3b298de0431c07a10a52bb43364f5f45857a96f3aad0082bbe6`  
-		Last Modified: Tue, 08 Aug 2023 20:56:48 GMT  
-		Size: 489.9 MB (489892826 bytes)  
+	-	`sha256:bd01420bade4dacd68a77cdf3b882ea19c0ab493bde13ac1a7558555fa0bdf63`  
+		Last Modified: Mon, 14 Aug 2023 20:48:13 GMT  
+		Size: 489.9 MB (489893052 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1749b397094a09f3073451d5acc4f0cd3f0b58e8c686dc87a51cc3abfa431f1e`  
-		Last Modified: Tue, 08 Aug 2023 20:56:19 GMT  
-		Size: 856.0 B  
+	-	`sha256:c32342165397bfd77dd63464abbaaf2cbfeae6f92f27919856727d4fbc6040dd`  
+		Last Modified: Mon, 14 Aug 2023 20:47:51 GMT  
+		Size: 857.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `sonarqube:10-datacenter-search` - linux; arm64 variant v8
