@@ -1,10 +1,10 @@
-# `openjdk:21-ea-34-jdk-slim-bookworm`
+# `openjdk:21-rc-jdk-slim-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:43e562f63aa5e9780121439b67d18ea7323094c46c006272dafc0a75b368088c`
-- Created: `2023-08-04T00:30:49.362323902Z`
-- Virtual Size: ~ 438.88 Mb  
+- Image ID: `sha256:d370f73694f27b3ea90f68b4e1cd888c8ef27e807ed394c756d6cf22611d1250`
+- Created: `2023-08-12T00:04:59.847297461Z`
+- Virtual Size: ~ 438.89 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/openjdk-21/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/local/openjdk-21`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=21-ea+34`
+  - `JAVA_VERSION=21`
 
 ## `dpkg` (`.deb`-based packages)
 
