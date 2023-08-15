@@ -2855,14 +2855,13 @@ Licenses: (parsed from: `/usr/share/doc/libwmf-0.2-7/copyright`, `/usr/share/doc
 - `LGPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libwmf=0.2.12-5.2
-'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwmf/libwmf_0.2.12-5.2.dsc' libwmf_0.2.12-5.2.dsc 2533 SHA512:a96c10fe40db0d4600c2e70eedb8ad6589a470bff43be48c4c1ba6df22d3c528c33427d1dd02296c86b869ef2b3e126d9f997983e17d62ac5b958f54f1b975d7
-'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwmf/libwmf_0.2.12.orig.tar.gz' libwmf_0.2.12.orig.tar.gz 3043572 SHA512:9280851e560becc91546906b911e0c59a1abd690e10680f6d94a335d66aeaec5eb12ccf2214ee7af2a15729a7b5f8b906022822399b4e2bc12c75a2d75748cab
-'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwmf/libwmf_0.2.12-5.2.debian.tar.xz' libwmf_0.2.12-5.2.debian.tar.xz 26132 SHA512:c30b0997e79702909eb365f218245f8bafdaaa936d7fd3c97264f23889a6de5984c59b9accbcdd0aa1d346ac25255c5a279c7d2d57fe5aff037f5cf78b4428ce
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libwmf/0.2.12-5.2/
+
 
 ### `dpkg` source package: `libx11=2:1.8.6-1`
 
