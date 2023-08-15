@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8e9c20abe667bc0deb4c9407269e5d70811b2bdfd7c552ca6d583cd2497cd70d`
-- Created: `2023-08-08T20:40:45.825907306Z`
-- Virtual Size: ~ 973.29 Mb  
+- Image ID: `sha256:4099569c2082598e3f70e9fe2dea3c58d73f520159feb7cc0421788ad018f68d`
+- Created: `2023-08-14T18:45:46.525289482Z`
+- Virtual Size: ~ 973.30 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/entrypoint.sh"]`
@@ -1779,19 +1779,24 @@ $ apt-get source -qq --print-uris libzstd=1.4.4+dfsg-3ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.4%2bdfsg-3ubuntu0.1.debian.tar.xz' libzstd_1.4.4+dfsg-3ubuntu0.1.debian.tar.xz 17300 SHA512:0484891be5603d00bd57b799c708b9395fccbaa8c6c44f535377f6fa2c7ac22c01c8a3c1b45e1c1f3c30f19dc74d510626bf82067fcbfb53c39f1bcc2249affe
 ```
 
-### `dpkg` source package: `linux=5.4.0-155.172`
+### `dpkg` source package: `linux=5.4.0-156.173`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.4.0-155.172`
+- `linux-libc-dev:amd64=5.4.0-156.173`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=5.4.0-156.173
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-156.173.dsc' linux_5.4.0-156.173.dsc 7425 SHA512:8c960ac0172ef2d7a2beb66c96700e8bd4968428e9467a9389f734d23a9c71b7ba88eb3e9f52a8351f9d7d2fef0525f59a01a7b67af9d35dc54836022f1b52da
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA512:62b09a7231fd793973c5f59b16c4f6ffce621188b02a71915874b05e8e3f956fb6146d4a4fb1a4475bebe463949ca5a18da12842c3ce7c52e996e6bc4012a074
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-156.173.diff.gz' linux_5.4.0-156.173.diff.gz 10852584 SHA512:ef155f31db128de18f39103805799f2d2c8ea3d88f377a802fdb409a8def1593b68d2a7119114e8e01664f56b1f8c9374aa2d2e6f085c9aedfd60415fcfc321d
+```
 
 ### `dpkg` source package: `lmdb=0.9.24-1`
 
