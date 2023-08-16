@@ -1,7 +1,7 @@
 ## `clojure:temurin-20-lein`
 
 ```console
-$ docker pull clojure@sha256:57d6a3fe044d2492c9cd0b729ffe31d2bc24b882ac40128784e438fe3009dcc4
+$ docker pull clojure@sha256:c1d76edbb976b7dd7d83d7ed4953d8b6411e6b6432d87be2618cb511461e56cf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,104 +12,104 @@ $ docker pull clojure@sha256:57d6a3fe044d2492c9cd0b729ffe31d2bc24b882ac40128784e
 ### `clojure:temurin-20-lein` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:162607a609578ecb5e789933ac0daf599a216f08bb363d2091e302108ef23361
+$ docker pull clojure@sha256:8b6e0ec9d3f6311e906beeced67b8609df53b66cd564314410b1f2eb3e2894d4
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **218.1 MB (218062473 bytes)**  
+-	Total Size: **218.1 MB (218069107 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fd906cfaf1d789a7ddddb3c9f10e13205d78210bdbe13c32a8e9053eda4faffa`
+-	Image ID: `sha256:480b952e24a645b249f8addbb666ec1d314846a12d97844a53b0f353a0b4c8f6`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["repl"]`
 
 ```dockerfile
-# Wed, 28 Jun 2023 08:37:40 GMT
+# Fri, 04 Aug 2023 04:52:57 GMT
 ARG RELEASE
-# Wed, 28 Jun 2023 08:37:40 GMT
+# Fri, 04 Aug 2023 04:52:57 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Wed, 28 Jun 2023 08:37:40 GMT
+# Fri, 04 Aug 2023 04:52:58 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Wed, 28 Jun 2023 08:37:40 GMT
+# Fri, 04 Aug 2023 04:52:58 GMT
 LABEL org.opencontainers.image.version=22.04
-# Wed, 28 Jun 2023 08:37:42 GMT
-ADD file:140fb5108b4a2861b5718ad03b4a5174bba03589ea8d4c053e6a0b282f439ff3 in / 
-# Wed, 28 Jun 2023 08:37:42 GMT
+# Fri, 04 Aug 2023 04:52:59 GMT
+ADD file:bb1fa1d9d012ae826908afdce8c9fa2feebf221b2ab032e1535255905144411a in / 
+# Fri, 04 Aug 2023 04:53:00 GMT
 CMD ["/bin/bash"]
-# Tue, 04 Jul 2023 20:33:49 GMT
+# Wed, 16 Aug 2023 15:39:01 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 04 Jul 2023 20:33:49 GMT
+# Wed, 16 Aug 2023 15:39:01 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 04 Jul 2023 20:33:49 GMT
+# Wed, 16 Aug 2023 15:39:01 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 03 Aug 2023 02:38:42 GMT
+# Wed, 16 Aug 2023 15:40:42 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl wget ca-certificates fontconfig locales p11-kit binutils     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Thu, 03 Aug 2023 02:38:42 GMT
+# Wed, 16 Aug 2023 15:41:25 GMT
 ENV JAVA_VERSION=jdk-20.0.2+9
-# Thu, 03 Aug 2023 02:38:53 GMT
+# Wed, 16 Aug 2023 15:41:35 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='b475bcc23db0bd618c815bb8f11d8e084dc58288ea3bcdf4e7f389ed41c89f56';          BINARY_URL='https://github.com/adoptium/temurin20-binaries/releases/download/jdk-20.0.2%2B9/OpenJDK20U-jdk_aarch64_linux_hotspot_20.0.2_9.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='3d91842e9c172967ac397076523249d05a82ead51b0006838f5f0315ad52222c';          BINARY_URL='https://github.com/adoptium/temurin20-binaries/releases/download/jdk-20.0.2%2B9/OpenJDK20U-jdk_x64_linux_hotspot_20.0.2_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
-# Thu, 03 Aug 2023 02:38:55 GMT
+# Wed, 16 Aug 2023 15:41:38 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo javac --version && javac --version     && echo java --version && java --version     && echo Complete.
-# Mon, 14 Aug 2023 18:11:38 GMT
+# Wed, 16 Aug 2023 15:41:38 GMT
 COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
-# Mon, 14 Aug 2023 18:11:38 GMT
+# Wed, 16 Aug 2023 15:41:38 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Mon, 14 Aug 2023 18:11:38 GMT
+# Wed, 16 Aug 2023 15:41:38 GMT
 CMD ["jshell"]
-# Mon, 14 Aug 2023 20:12:16 GMT
+# Wed, 16 Aug 2023 18:11:57 GMT
 ENV LEIN_VERSION=2.10.0
-# Mon, 14 Aug 2023 20:12:17 GMT
+# Wed, 16 Aug 2023 18:11:57 GMT
 ENV LEIN_INSTALL=/usr/local/bin/
-# Mon, 14 Aug 2023 20:12:17 GMT
+# Wed, 16 Aug 2023 18:11:58 GMT
 WORKDIR /tmp
-# Mon, 14 Aug 2023 20:12:28 GMT
+# Wed, 16 Aug 2023 18:12:11 GMT
 RUN set -eux; apt-get update && apt-get install -y make gnupg wget && rm -rf /var/lib/apt/lists/* && mkdir -p $LEIN_INSTALL && wget -q https://codeberg.org/leiningen/leiningen/raw/tag/$LEIN_VERSION/bin/lein-pkg && echo "Comparing lein-pkg checksum ..." && sha256sum lein-pkg && echo "b1757ce941e4cbf15cbf649b7b4f413365e612da892d22841ec1728391bb66af *lein-pkg" | sha256sum -c - && mv lein-pkg $LEIN_INSTALL/lein && chmod 0755 $LEIN_INSTALL/lein && export GNUPGHOME="$(mktemp -d)" && export FILENAME_EXT=jar && gpg --batch --keyserver hkps://keyserver.ubuntu.com --recv-keys 6A2D483DB59437EBB97D09B1040193357D0606ED && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && echo "Verifying file PGP signature..." && gpg --batch --verify leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && gpgconf --kill all && rm -rf "$GNUPGHOME" leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && mkdir -p /usr/share/java && mv leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar && apt-get purge -y --auto-remove gnupg wget
-# Mon, 14 Aug 2023 20:12:28 GMT
+# Wed, 16 Aug 2023 18:12:11 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Mon, 14 Aug 2023 20:12:29 GMT
+# Wed, 16 Aug 2023 18:12:11 GMT
 ENV LEIN_ROOT=1
-# Mon, 14 Aug 2023 20:12:31 GMT
+# Wed, 16 Aug 2023 18:12:14 GMT
 RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.11.1"]])' > project.clj   && lein deps && rm project.clj
-# Mon, 14 Aug 2023 20:12:31 GMT
+# Wed, 16 Aug 2023 18:12:14 GMT
 COPY file:cf90f595e38d932dff3bdcd4221efe7c65fb3432787490053b55b6917f06e4cd in /usr/local/bin/entrypoint 
-# Mon, 14 Aug 2023 20:12:31 GMT
+# Wed, 16 Aug 2023 18:12:14 GMT
 ENTRYPOINT ["entrypoint"]
-# Mon, 14 Aug 2023 20:12:31 GMT
+# Wed, 16 Aug 2023 18:12:14 GMT
 CMD ["repl"]
 ```
 
 -	Layers:
-	-	`sha256:9d19ee268e0d7bcf6716e6658ee1b0384a71d6f2f9aa1ae2085610cf7c7b316f`  
-		Last Modified: Wed, 28 Jun 2023 11:50:41 GMT  
-		Size: 30.4 MB (30431229 bytes)  
+	-	`sha256:99de9192b4afd13ed65aeae58d55b38e5231eb97a743921357b7d5b4c0c903c4`  
+		Last Modified: Fri, 04 Aug 2023 09:25:19 GMT  
+		Size: 30.4 MB (30437960 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1ccd2d5dafe8ee2e15a3fbe193041c068fdadeda1797014f93048fa9a300e06e`  
-		Last Modified: Thu, 03 Aug 2023 02:42:45 GMT  
-		Size: 17.5 MB (17456332 bytes)  
+	-	`sha256:c5980221a1ce1b53ecf2261f165c9bf6a24b845a2418dcf3c7aaf2f3f9e43f2a`  
+		Last Modified: Wed, 16 Aug 2023 15:44:40 GMT  
+		Size: 17.5 MB (17456341 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:882a885952130009e514bc8ce435706f9469b8cf60c1f2ed11ac80ab5c9263ed`  
-		Last Modified: Thu, 03 Aug 2023 02:42:54 GMT  
-		Size: 153.8 MB (153798614 bytes)  
+	-	`sha256:b374d45030b6b986633ade41a535a4b01afe18c9fd2e0e410195d38514f95010`  
+		Last Modified: Wed, 16 Aug 2023 15:45:35 GMT  
+		Size: 153.8 MB (153798593 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2697671742c1d76c47a61ba4e42f450ad67490c669cc8e9de45e876dc7c3e3eb`  
-		Last Modified: Thu, 03 Aug 2023 02:42:42 GMT  
-		Size: 176.0 B  
+	-	`sha256:4ebb3995102b07bc04f0484e66c9d8c2bb56050df970aa4ca2fffc2b80bb90ff`  
+		Last Modified: Wed, 16 Aug 2023 15:45:23 GMT  
+		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2796e791ee63e94483b16400c805bdcfda1eec9dd5642e25bf67656fb592f681`  
-		Last Modified: Mon, 14 Aug 2023 18:18:43 GMT  
+	-	`sha256:85f7cfc7ea2088b59b1917148caf409a46964acf2235419a8b9accbcb11b1f92`  
+		Last Modified: Wed, 16 Aug 2023 15:45:23 GMT  
 		Size: 734.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:545154d167fe2543a9f53c04905c2bdbe6cda08a7106eb95d9408b66c518731c`  
-		Last Modified: Mon, 14 Aug 2023 20:22:07 GMT  
-		Size: 12.0 MB (11975727 bytes)  
+	-	`sha256:8f9e6024e23f87abb481fb4bf0136b535a36fa2aef0ff8e2ff91396163065063`  
+		Last Modified: Wed, 16 Aug 2023 18:20:38 GMT  
+		Size: 12.0 MB (11975716 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:17418e78592d9e4465a8c8c576652c0831811b443211f5b3271388f4cb61ea10`  
-		Last Modified: Mon, 14 Aug 2023 20:22:06 GMT  
-		Size: 4.4 MB (4399259 bytes)  
+	-	`sha256:79dcba17d8c4a16a579f359410bf59e10cdb3398ac84d3e03b2d942169acdb1c`  
+		Last Modified: Wed, 16 Aug 2023 18:20:38 GMT  
+		Size: 4.4 MB (4399187 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99a04954c59083df242f1b7a4084d6cae899aa4eb7e92aa3b082795768267b05`  
-		Last Modified: Mon, 14 Aug 2023 20:22:06 GMT  
-		Size: 402.0 B  
+	-	`sha256:3d4f51f965914a6a163bab2815834ac5e99294b88a08aa3f0f686139394d0979`  
+		Last Modified: Wed, 16 Aug 2023 18:20:37 GMT  
+		Size: 401.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `clojure:temurin-20-lein` - linux; arm64 variant v8
