@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:83c027cc9e8ee0e12e9451d84f93ebc01ca114bf6e3bcf87c84bca7c5b07756a`
-- Created: `2023-08-08T21:44:09.55896259Z`
-- Virtual Size: ~ 469.88 Mb  
+- Image ID: `sha256:a0d133a32016f719bcd5762e5055d44ef3f0f7bf65c6f4ff791c7b2a9509c922`
+- Created: `2023-08-14T20:36:31.659220087Z`
+- Virtual Size: ~ 469.89 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-entrypoint.sh"]`
@@ -81,13 +81,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.4.9
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.4.9.dsc' apt_2.4.9.dsc 2805 SHA512:f94b979fce0293f0db741bba3fa9736c594f4369969a5b2568a1ed14b7288184064b61234bf3afc2f545ba32d91e2dac0fc7fa3346d80413c23d16ad92f31038
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.4.9.tar.xz' apt_2.4.9.tar.xz 2317652 SHA512:68972b488ee992cc7bf7eb0350cd3d4cb2d054e6f4ff1062bc2c3e68cc032c0d901cf874911db3d9d7c18d356f6c9a078668f44525007fb85af58568e5487b92
-```
 
 ### `dpkg` source package: `attr=1:2.5.1-1build1`
 
