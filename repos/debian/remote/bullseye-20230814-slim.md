@@ -1,17 +1,45 @@
 ## `debian:bullseye-20230814-slim`
 
 ```console
-$ docker pull debian@sha256:b9f265f9af141d7517f2874d8b27273c062939d3195ba28847c6b66ebf342e1c
+$ docker pull debian@sha256:61386e11b5256efa33823cbfafd668dd651dbce810b24a8fb7b2e32fa7f65a85
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 6
+-	Platforms: 8
+	-	linux; amd64
 	-	linux; arm variant v5
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; mips64le
+	-	linux; ppc64le
 	-	linux; s390x
+
+### `debian:bullseye-20230814-slim` - linux; amd64
+
+```console
+$ docker pull debian@sha256:5e8651093bdb71901c1c60bb95c1d35e0975e0a1a0c6207ca2662b675e2ec323
+```
+
+-	Docker Version: 20.10.23
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **31.4 MB (31417678 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:fb4ec5ceea2f457a6a4ef48df037626f53a9cb4da84eda1478dba93237cc3723`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Wed, 16 Aug 2023 01:00:09 GMT
+ADD file:2d91c2e03d02bfa16fe4f766d851b351d93d33f84751ad96c985e64ea024ec28 in / 
+# Wed, 16 Aug 2023 01:00:09 GMT
+CMD ["bash"]
+```
+
+-	Layers:
+	-	`sha256:14726c8f78342865030f97a8d3492e2d1a68fbd22778f9a31dc6be4b4f12a9bc`  
+		Last Modified: Wed, 16 Aug 2023 01:05:12 GMT  
+		Size: 31.4 MB (31417678 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `debian:bullseye-20230814-slim` - linux; arm variant v5
 
@@ -141,6 +169,32 @@ CMD ["bash"]
 	-	`sha256:7ef62af8109683ee92b199cf210a6e6134ce588b610d2a6b93fc467d34648300`  
 		Last Modified: Wed, 16 Aug 2023 00:20:59 GMT  
 		Size: 29.6 MB (29634580 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `debian:bullseye-20230814-slim` - linux; ppc64le
+
+```console
+$ docker pull debian@sha256:d72d75a7b502c343f173a640e136467b9bc82b2ef21d790abc968bfac6286924
+```
+
+-	Docker Version: 20.10.23
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **35.3 MB (35291067 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:9140c3347bd88ba4d4c8a2d6d57b0387a377c9f701ae57d3a48d155406f2cb71`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Wed, 16 Aug 2023 01:10:12 GMT
+ADD file:eeb766a3bb0461f0baa2425cfd43628994c064bd728f51f1b8df659a4bd2f489 in / 
+# Wed, 16 Aug 2023 01:10:14 GMT
+CMD ["bash"]
+```
+
+-	Layers:
+	-	`sha256:dacf4195c8a0403fd11459739bf9dc9be427261bf5e0bedb49e18d1498cf7c2e`  
+		Last Modified: Wed, 16 Aug 2023 01:17:04 GMT  
+		Size: 35.3 MB (35291067 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `debian:bullseye-20230814-slim` - linux; s390x
