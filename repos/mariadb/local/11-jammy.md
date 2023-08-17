@@ -1,10 +1,10 @@
-# `mariadb:11.0.2-jammy`
+# `mariadb:11.0.3-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:011343cf3ec310ee1d70da41536b2ae61e93633dafdba600d865beeb93db6ff8`
-- Created: `2023-07-04T18:28:33.531386548Z`
-- Virtual Size: ~ 403.26 Mb  
+- Image ID: `sha256:cf4c9273e72aefb3e8a15fb7e3de3aa20db6c4932217384864271b2c88cfdf00`
+- Created: `2023-08-16T16:04:25.787383392Z`
+- Virtual Size: ~ 403.39 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.14`
   - `LANG=C.UTF-8`
-  - `MARIADB_VERSION=1:11.0.2+maria~ubu2204`
+  - `MARIADB_VERSION=1:11.0.3+maria~ubu2204`
 - Labels:
   - `org.opencontainers.image.authors=MariaDB Community`
   - `org.opencontainers.image.base.name=docker.io/library/ubuntu:jammy`
@@ -25,7 +25,7 @@
   - `org.opencontainers.image.title=MariaDB Database`
   - `org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.vendor=MariaDB Community`
-  - `org.opencontainers.image.version=11.0.2`
+  - `org.opencontainers.image.version=11.0.3`
 
 ## `dpkg` (`.deb`-based packages)
 
