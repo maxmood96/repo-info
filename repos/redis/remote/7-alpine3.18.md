@@ -1,7 +1,7 @@
 ## `redis:7-alpine3.18`
 
 ```console
-$ docker pull redis@sha256:96fe64db9f7119d0ca0ebfa86bde1441e3a80a89ead6abaac82654c29735c7a8
+$ docker pull redis@sha256:543053deb493895fc995759de72a9847abde02e6448d726b6ed9a9725e8597f1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17,14 +17,14 @@ $ docker pull redis@sha256:96fe64db9f7119d0ca0ebfa86bde1441e3a80a89ead6abaac8265
 ### `redis:7-alpine3.18` - linux; amd64
 
 ```console
-$ docker pull redis@sha256:336ff85d67e89689913130cd7334d5eb67783d0e94362c6ce76314161aa1f0fd
+$ docker pull redis@sha256:5ddcd6e1a1ee0d3a2e9fe1abb427be987ab082e4756bdc513cd4293dacf05d27
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **12.4 MB (12432323 bytes)**  
+-	Total Size: **15.6 MB (15623565 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6c09b0364aa894b3f107b077db815da21e9a96d4fed7b517899e7c3b29c036bd`
+-	Image ID: `sha256:3a8d46c63628f568039abf84f17c558cdaf4912d0c54a904e105f93f37f25775`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -37,27 +37,27 @@ CMD ["/bin/sh"]
 RUN addgroup -S -g 1000 redis && adduser -S -G redis -u 999 redis
 # Wed, 09 Aug 2023 03:31:41 GMT
 RUN apk add --no-cache 		'su-exec>=0.2' 		tzdata
-# Wed, 09 Aug 2023 03:32:40 GMT
-ENV REDIS_VERSION=7.0.12
-# Wed, 09 Aug 2023 03:32:40 GMT
-ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-7.0.12.tar.gz
-# Wed, 09 Aug 2023 03:32:40 GMT
-ENV REDIS_DOWNLOAD_SHA=9dd83d5b278bb2bf0e39bfeb75c3e8170024edbaf11ba13b7037b2945cf48ab7
-# Wed, 09 Aug 2023 03:33:19 GMT
+# Thu, 17 Aug 2023 10:21:41 GMT
+ENV REDIS_VERSION=7.2.0
+# Thu, 17 Aug 2023 10:21:41 GMT
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-7.2.0.tar.gz
+# Thu, 17 Aug 2023 10:21:41 GMT
+ENV REDIS_DOWNLOAD_SHA=8b12e242647635b419a0e1833eda02b65bf64e39eb9e509d9db4888fb3124943
+# Thu, 17 Aug 2023 10:22:34 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		coreutils 		dpkg-dev dpkg 		gcc 		linux-headers 		make 		musl-dev 		openssl-dev 		wget 	; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .redis-rundeps $runDeps; 	apk del --no-network .build-deps; 		redis-cli --version; 	redis-server --version
-# Wed, 09 Aug 2023 03:33:20 GMT
+# Thu, 17 Aug 2023 10:22:35 GMT
 RUN mkdir /data && chown redis:redis /data
-# Wed, 09 Aug 2023 03:33:20 GMT
+# Thu, 17 Aug 2023 10:22:35 GMT
 VOLUME [/data]
-# Wed, 09 Aug 2023 03:33:20 GMT
+# Thu, 17 Aug 2023 10:22:35 GMT
 WORKDIR /data
-# Wed, 09 Aug 2023 03:33:20 GMT
+# Thu, 17 Aug 2023 10:22:35 GMT
 COPY file:a9e7249f657e2eec627bb4be492ad18aae3e5e1f0e47d22644eaf1ef2138c0ce in /usr/local/bin/ 
-# Wed, 09 Aug 2023 03:33:20 GMT
+# Thu, 17 Aug 2023 10:22:35 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 09 Aug 2023 03:33:20 GMT
+# Thu, 17 Aug 2023 10:22:35 GMT
 EXPOSE 6379
-# Wed, 09 Aug 2023 03:33:20 GMT
+# Thu, 17 Aug 2023 10:22:35 GMT
 CMD ["redis-server"]
 ```
 
@@ -74,16 +74,16 @@ CMD ["redis-server"]
 		Last Modified: Wed, 09 Aug 2023 03:35:24 GMT  
 		Size: 347.2 KB (347162 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:81efa230a080986de141495fb7dd135310b0343a6d2d8c5a8282750547cecc1b`  
-		Last Modified: Wed, 09 Aug 2023 03:35:42 GMT  
-		Size: 8.7 MB (8681565 bytes)  
+	-	`sha256:f54d1871dea608d523da2c7ca9b2b810618060ce3a6928f267169ccd3be8054e`  
+		Last Modified: Thu, 17 Aug 2023 10:23:46 GMT  
+		Size: 11.9 MB (11872806 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a325b46fd79589c9e8cc490314a2a644081c9b530f049597762e003b471861e2`  
-		Last Modified: Wed, 09 Aug 2023 03:35:41 GMT  
-		Size: 135.0 B  
+	-	`sha256:4d190b4b6472e745e6fe64256e8949918b026829a3ae8314e7ed636207270b88`  
+		Last Modified: Thu, 17 Aug 2023 10:23:44 GMT  
+		Size: 136.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed7e435438caabd43efafa261ac0b46867b35ad4bfed4b3e915f5b97a3ddb87a`  
-		Last Modified: Wed, 09 Aug 2023 03:35:41 GMT  
+	-	`sha256:33fcc95c965f799c9236eac4f604643c31194daeb7c1962bed8e1b33e5567e10`  
+		Last Modified: Thu, 17 Aug 2023 10:23:44 GMT  
 		Size: 578.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
