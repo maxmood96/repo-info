@@ -90,6 +90,30 @@
 -	[`mongo:6.0.9-windowsservercore`](#mongo609-windowsservercore)
 -	[`mongo:6.0.9-windowsservercore-1809`](#mongo609-windowsservercore-1809)
 -	[`mongo:6.0.9-windowsservercore-ltsc2022`](#mongo609-windowsservercore-ltsc2022)
+-	[`mongo:7`](#mongo7)
+-	[`mongo:7-jammy`](#mongo7-jammy)
+-	[`mongo:7-nanoserver`](#mongo7-nanoserver)
+-	[`mongo:7-nanoserver-1809`](#mongo7-nanoserver-1809)
+-	[`mongo:7-nanoserver-ltsc2022`](#mongo7-nanoserver-ltsc2022)
+-	[`mongo:7-windowsservercore`](#mongo7-windowsservercore)
+-	[`mongo:7-windowsservercore-1809`](#mongo7-windowsservercore-1809)
+-	[`mongo:7-windowsservercore-ltsc2022`](#mongo7-windowsservercore-ltsc2022)
+-	[`mongo:7.0`](#mongo70)
+-	[`mongo:7.0-jammy`](#mongo70-jammy)
+-	[`mongo:7.0-nanoserver`](#mongo70-nanoserver)
+-	[`mongo:7.0-nanoserver-1809`](#mongo70-nanoserver-1809)
+-	[`mongo:7.0-nanoserver-ltsc2022`](#mongo70-nanoserver-ltsc2022)
+-	[`mongo:7.0-windowsservercore`](#mongo70-windowsservercore)
+-	[`mongo:7.0-windowsservercore-1809`](#mongo70-windowsservercore-1809)
+-	[`mongo:7.0-windowsservercore-ltsc2022`](#mongo70-windowsservercore-ltsc2022)
+-	[`mongo:7.0.0`](#mongo700)
+-	[`mongo:7.0.0-jammy`](#mongo700-jammy)
+-	[`mongo:7.0.0-nanoserver`](#mongo700-nanoserver)
+-	[`mongo:7.0.0-nanoserver-1809`](#mongo700-nanoserver-1809)
+-	[`mongo:7.0.0-nanoserver-ltsc2022`](#mongo700-nanoserver-ltsc2022)
+-	[`mongo:7.0.0-windowsservercore`](#mongo700-windowsservercore)
+-	[`mongo:7.0.0-windowsservercore-1809`](#mongo700-windowsservercore-1809)
+-	[`mongo:7.0.0-windowsservercore-ltsc2022`](#mongo700-windowsservercore-ltsc2022)
 -	[`mongo:jammy`](#mongojammy)
 -	[`mongo:latest`](#mongolatest)
 -	[`mongo:nanoserver`](#mongonanoserver)
@@ -14970,6 +14994,102 @@ CMD ["mongod" "--bind_ip_all"]
 		Last Modified: Tue, 15 Aug 2023 23:29:58 GMT  
 		Size: 1.4 KB (1394 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `mongo:7`
+
+**does not exist** (yet?)
+
+## `mongo:7-jammy`
+
+**does not exist** (yet?)
+
+## `mongo:7-nanoserver`
+
+**does not exist** (yet?)
+
+## `mongo:7-nanoserver-1809`
+
+**does not exist** (yet?)
+
+## `mongo:7-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
+## `mongo:7-windowsservercore`
+
+**does not exist** (yet?)
+
+## `mongo:7-windowsservercore-1809`
+
+**does not exist** (yet?)
+
+## `mongo:7-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
+
+## `mongo:7.0`
+
+**does not exist** (yet?)
+
+## `mongo:7.0-jammy`
+
+**does not exist** (yet?)
+
+## `mongo:7.0-nanoserver`
+
+**does not exist** (yet?)
+
+## `mongo:7.0-nanoserver-1809`
+
+**does not exist** (yet?)
+
+## `mongo:7.0-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
+## `mongo:7.0-windowsservercore`
+
+**does not exist** (yet?)
+
+## `mongo:7.0-windowsservercore-1809`
+
+**does not exist** (yet?)
+
+## `mongo:7.0-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
+
+## `mongo:7.0.0`
+
+**does not exist** (yet?)
+
+## `mongo:7.0.0-jammy`
+
+**does not exist** (yet?)
+
+## `mongo:7.0.0-nanoserver`
+
+**does not exist** (yet?)
+
+## `mongo:7.0.0-nanoserver-1809`
+
+**does not exist** (yet?)
+
+## `mongo:7.0.0-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
+## `mongo:7.0.0-windowsservercore`
+
+**does not exist** (yet?)
+
+## `mongo:7.0.0-windowsservercore-1809`
+
+**does not exist** (yet?)
+
+## `mongo:7.0.0-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
 
 ## `mongo:jammy`
 
