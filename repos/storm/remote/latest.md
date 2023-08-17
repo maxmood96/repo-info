@@ -1,7 +1,7 @@
 ## `storm:latest`
 
 ```console
-$ docker pull storm@sha256:a16e9d01c30e49234f86e3a1f2da5df72d4be7b5e64afde097e6875291a9c9a4
+$ docker pull storm@sha256:7c1b5e1df35aebf75de669e86ae45187cf1b3837f1acb2ae17162132dd244cfe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,14 +12,14 @@ $ docker pull storm@sha256:a16e9d01c30e49234f86e3a1f2da5df72d4be7b5e64afde097e68
 ### `storm:latest` - linux; amd64
 
 ```console
-$ docker pull storm@sha256:ee657d128c31789ee08b1a259ac64625b689022fdfc79bae727105db70fde8d6
+$ docker pull storm@sha256:bca2bd619c3bb399f647fb76a38a48c24715854300db0042f55108927cbe7a4e
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **433.9 MB (433904773 bytes)**  
+-	Total Size: **479.7 MB (479669618 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3dc2be7dcfe2b0712c1a9fcbb58a9fc2501c4d1376f794a5cc110085ce445eae`
+-	Image ID: `sha256:262833d6d57862b1de3681ee807ca2c66e407f00401d2e6e4e33c7aaba9c015a`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 
 ```dockerfile
@@ -57,25 +57,22 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 ENV STORM_CONF_DIR=/conf STORM_DATA_DIR=/data STORM_LOG_DIR=/logs
 # Wed, 16 Aug 2023 16:18:01 GMT
 RUN set -eux;     groupadd -r storm --gid=1000;     useradd -r -g storm --uid=1000 storm;     mkdir -p "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR";     chown -R storm:storm "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR"``
-# Wed, 16 Aug 2023 16:18:09 GMT
-RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         bash         ca-certificates         dirmngr         gosu         gnupg         python2         procps         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true;     update-alternatives --install /usr/bin/python python /usr/bin/python2 0
-# Wed, 16 Aug 2023 16:18:10 GMT
+# Thu, 17 Aug 2023 10:24:45 GMT
+RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive     apt-get install -y --no-install-recommends         bash         ca-certificates         dirmngr         gosu         gnupg         python3         procps         wget;     rm -rf /var/lib/apt/lists/*;     gosu nobody true
+# Thu, 17 Aug 2023 10:24:45 GMT
 ARG GPG_KEY=51379DA8A7AE5B02674EF15C134716AF768D9B6E
-# Wed, 16 Aug 2023 16:18:10 GMT
-ARG DISTRO_NAME=apache-storm-2.4.0
-# Wed, 16 Aug 2023 16:18:21 GMT
-# ARGS: DISTRO_NAME=apache-storm-2.4.0 GPG_KEY=51379DA8A7AE5B02674EF15C134716AF768D9B6E
+# Thu, 17 Aug 2023 10:24:46 GMT
+ARG DISTRO_NAME=apache-storm-2.5.0
+# Thu, 17 Aug 2023 10:25:13 GMT
+# ARGS: DISTRO_NAME=apache-storm-2.5.0 GPG_KEY=51379DA8A7AE5B02674EF15C134716AF768D9B6E
 RUN set -eux;     ddist() {         local f="$1"; shift;         local distFile="$1"; shift;         local success=;         local distUrl=;         for distUrl in             'https://www.apache.org/dyn/closer.cgi?action=download&filename='             https://www-us.apache.org/dist/             https://www.apache.org/dist/             https://archive.apache.org/dist/         ; do             if wget -q -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then                 success=1;                 break;             fi;         done;         [ -n "$success" ];     };     ddist "$DISTRO_NAME.tar.gz" "storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz";     ddist "$DISTRO_NAME.tar.gz.asc" "storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --keyserver hkps://keyserver.pgp.com --recv-key "$GPG_KEY" ||     gpg --keyserver hkps://keyserver.ubuntu.com --recv-keys "$GPG_KEY" ||     gpg --keyserver hkps://pgp.mit.edu --recv-keys "$GPG_KEY";     gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz";     tar -xzf "$DISTRO_NAME.tar.gz";     rm -rf "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc";     chown -R storm:storm "$DISTRO_NAME"
-# Wed, 16 Aug 2023 16:18:22 GMT
-WORKDIR /apache-storm-2.4.0
-# Wed, 16 Aug 2023 16:18:28 GMT
-# ARGS: DISTRO_NAME=apache-storm-2.4.0 GPG_KEY=51379DA8A7AE5B02674EF15C134716AF768D9B6E
-RUN set -eux;     apt-get update;     apt-get install -y --no-install-recommends         zip         unzip;     for jar in         lib/storm-client-2.4.0.jar         lib-worker/storm-client-2.4.0.jar     ; do         unzip "$jar" defaults.yaml;         sed -i 's/worker.childopts: "/&-XX:+IgnoreUnrecognizedVMOptions /' defaults.yaml;         zip -u "$jar" defaults.yaml;         rm defaults.yaml;     done;     apt-get purge -y --auto-remove         zip         unzip;     rm -rf /var/lib/apt/lists/*
-# Wed, 16 Aug 2023 16:18:28 GMT
-ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-storm-2.4.0/bin
-# Wed, 16 Aug 2023 16:18:28 GMT
+# Thu, 17 Aug 2023 10:25:14 GMT
+WORKDIR /apache-storm-2.5.0
+# Thu, 17 Aug 2023 10:25:14 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apache-storm-2.5.0/bin
+# Thu, 17 Aug 2023 10:25:14 GMT
 COPY file:c74c732450146abc9cc672380c7829a8d892099ec5aa1f81e3fe02c4e8f97f32 in / 
-# Wed, 16 Aug 2023 16:18:28 GMT
+# Thu, 17 Aug 2023 10:25:14 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
 ```
 
@@ -104,20 +101,16 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 		Last Modified: Wed, 16 Aug 2023 16:19:02 GMT  
 		Size: 1.8 KB (1849 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e3cfcc394a1b3d065a1862d7c33d5cc0743ea9d42d9cfba9ccba63aa24b16ac4`  
-		Last Modified: Wed, 16 Aug 2023 16:19:04 GMT  
-		Size: 11.6 MB (11554549 bytes)  
+	-	`sha256:5e883c34cf2f822a4f6faa18eb294f8b0bd850a2ec45edb0071d825419282a89`  
+		Last Modified: Thu, 17 Aug 2023 10:25:31 GMT  
+		Size: 13.7 MB (13654355 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d9ecf12180949938ed7a7b29dd6921ac4d55c9ef835d77b3308fbcd3743587bc`  
-		Last Modified: Wed, 16 Aug 2023 16:19:18 GMT  
-		Size: 322.6 MB (322584253 bytes)  
+	-	`sha256:25a60810aa64f95540bd76c43e98ae4f41ebf3b760634a713705da9ba7f56b36`  
+		Last Modified: Thu, 17 Aug 2023 10:25:53 GMT  
+		Size: 375.8 MB (375806491 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6e439aa37132558f6ce8e9330bc2d3137895fe9fb6b20176018c262f8369c890`  
-		Last Modified: Wed, 16 Aug 2023 16:19:03 GMT  
-		Size: 9.6 MB (9557199 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d06f7cf7f7ec07114c74683d9700e623e4de3967b769d8394046fa26e361f71f`  
-		Last Modified: Wed, 16 Aug 2023 16:19:02 GMT  
+	-	`sha256:abeaead4e268d9eba8d50c5ca44f737db6538f92ef9a7ca6bd2753948ab77513`  
+		Last Modified: Thu, 17 Aug 2023 10:25:30 GMT  
 		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
