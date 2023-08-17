@@ -1,7 +1,7 @@
 ## `gradle:8-jdk11-alpine`
 
 ```console
-$ docker pull gradle@sha256:638a83ad52a536be6f13a1fa5cc138248ab9e9d6bcdfec39b62ace925b7cd47a
+$ docker pull gradle@sha256:8b1c4d4230c5cadd73448d2c03c4a40937b308c929b10e9eeff0d0ef90abbc0c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull gradle@sha256:638a83ad52a536be6f13a1fa5cc138248ab9e9d6bcdfec39b62a
 ### `gradle:8-jdk11-alpine` - linux; amd64
 
 ```console
-$ docker pull gradle@sha256:fc7e9dbc77cc4e5bef295bc7cb0964d19cbcaed09a624251ed89c13c2c15c21b
+$ docker pull gradle@sha256:ca585bee5e8a48e955f2b194aa69b57e37eb46223fbdab58079216c8d8ca19e8
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **316.6 MB (316558911 bytes)**  
+-	Total Size: **318.5 MB (318498639 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ed2631a3292ef83922d9c29b2ce481ba2a3608f8a736a15fb094aecf9edd7aef`
+-	Image ID: `sha256:d7ddbd513a003b6bcb1a264377cfc7c4f538a608a23f1306bd61cb3b2d157e3b`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["gradle"]`
 
@@ -59,19 +59,19 @@ VOLUME [/home/gradle/.gradle]
 WORKDIR /home/gradle
 # Mon, 14 Aug 2023 19:14:50 GMT
 RUN set -o errexit -o nounset     && echo "Installing VCSes"     && apk add --no-cache       git       git-lfs       mercurial       subversion         && echo "Testing VCSes"     && which git     && which git-lfs     && which hg     && which svn
-# Mon, 14 Aug 2023 19:14:50 GMT
-ENV GRADLE_VERSION=8.2.1
-# Mon, 14 Aug 2023 19:14:50 GMT
-ARG GRADLE_DOWNLOAD_SHA256=03ec176d388f2aa99defcadc3ac6adf8dd2bce5145a129659537c0874dea5ad1
-# Thu, 17 Aug 2023 09:48:32 GMT
-# ARGS: GRADLE_DOWNLOAD_SHA256=03ec176d388f2aa99defcadc3ac6adf8dd2bce5145a129659537c0874dea5ad1
+# Thu, 17 Aug 2023 20:20:30 GMT
+ENV GRADLE_VERSION=8.3
+# Thu, 17 Aug 2023 20:20:30 GMT
+ARG GRADLE_DOWNLOAD_SHA256=591855b517fc635b9e04de1d05d5e76ada3f89f5fc76f87978d1b245b4f69225
+# Thu, 17 Aug 2023 20:20:35 GMT
+# ARGS: GRADLE_DOWNLOAD_SHA256=591855b517fc635b9e04de1d05d5e76ada3f89f5fc76f87978d1b245b4f69225
 RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip"         && echo "Checking Gradle download hash"     && echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum -c -         && echo "Installing Gradle"     && unzip gradle.zip     && rm gradle.zip     && mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/"     && ln -s "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle
-# Thu, 17 Aug 2023 09:48:32 GMT
+# Thu, 17 Aug 2023 20:20:35 GMT
 USER gradle
-# Thu, 17 Aug 2023 09:48:34 GMT
-# ARGS: GRADLE_DOWNLOAD_SHA256=03ec176d388f2aa99defcadc3ac6adf8dd2bce5145a129659537c0874dea5ad1
+# Thu, 17 Aug 2023 20:20:36 GMT
+# ARGS: GRADLE_DOWNLOAD_SHA256=591855b517fc635b9e04de1d05d5e76ada3f89f5fc76f87978d1b245b4f69225
 RUN set -o errexit -o nounset     && echo "Testing Gradle installation"     && gradle --version
-# Thu, 17 Aug 2023 09:48:34 GMT
+# Thu, 17 Aug 2023 20:20:37 GMT
 USER root
 ```
 
@@ -104,11 +104,11 @@ USER root
 		Last Modified: Mon, 14 Aug 2023 19:21:35 GMT  
 		Size: 35.0 MB (34993335 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6d58c58d08697eaa1ecef5401ca7a84713f2cfd9744dcda44d31d291cee31930`  
-		Last Modified: Thu, 17 Aug 2023 09:56:27 GMT  
-		Size: 128.7 MB (128727175 bytes)  
+	-	`sha256:7493d74e19210f0eb297a68e401d4bf5aedbd62d339996ffba2ef1856eeea85f`  
+		Last Modified: Thu, 17 Aug 2023 20:27:14 GMT  
+		Size: 130.7 MB (130666903 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fdf2fa5c6d3bb59ea27567dcf9c9d4d1c342eb74787b71d0d57df1a48de63b12`  
-		Last Modified: Thu, 17 Aug 2023 09:56:21 GMT  
+	-	`sha256:497163b74ea8831364f4c43f95b0ebac2e92f34732c5bc143a55b9c82ee198c3`  
+		Last Modified: Thu, 17 Aug 2023 20:27:06 GMT  
 		Size: 168.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
