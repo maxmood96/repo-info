@@ -1,7 +1,7 @@
 ## `redis:bookworm`
 
 ```console
-$ docker pull redis@sha256:cc941bfa36e05af460ef07c0430a7194259a468845a8bceea650d8707c6102be
+$ docker pull redis@sha256:14ce3b6e7455005955dbff19829bc9c258eeaf6c825f4837bb087592c2719ab1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -168,14 +168,14 @@ CMD ["redis-server"]
 ### `redis:bookworm` - linux; arm variant v7
 
 ```console
-$ docker pull redis@sha256:0a10b4ace757f615fe74c4172e79df11c7478d516eea90fe7ebf143c49db5596
+$ docker pull redis@sha256:11c6187efa9d3ac1731c749c869e50dfba1b65509e0c6919ba37564d0cd51b78
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **41.5 MB (41526579 bytes)**  
+-	Total Size: **44.8 MB (44806473 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:74a52dfe2e298b59095a394a5c32437fdda6aad8b6487e1a132b75b73cc9b409`
+-	Image ID: `sha256:54726e7e41f10ddfdc1a2277ebcdb194df51133e0034cdd03720eddd130a3104`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
@@ -190,27 +190,27 @@ RUN groupadd -r -g 999 redis && useradd -r -g redis -u 999 redis
 ENV GOSU_VERSION=1.16
 # Wed, 16 Aug 2023 15:35:39 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Wed, 16 Aug 2023 15:37:04 GMT
-ENV REDIS_VERSION=7.0.12
-# Wed, 16 Aug 2023 15:37:04 GMT
-ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-7.0.12.tar.gz
-# Wed, 16 Aug 2023 15:37:05 GMT
-ENV REDIS_DOWNLOAD_SHA=9dd83d5b278bb2bf0e39bfeb75c3e8170024edbaf11ba13b7037b2945cf48ab7
-# Wed, 16 Aug 2023 15:37:54 GMT
+# Thu, 17 Aug 2023 04:19:27 GMT
+ENV REDIS_VERSION=7.2.0
+# Thu, 17 Aug 2023 04:19:27 GMT
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-7.2.0.tar.gz
+# Thu, 17 Aug 2023 04:19:28 GMT
+ENV REDIS_DOWNLOAD_SHA=8b12e242647635b419a0e1833eda02b65bf64e39eb9e509d9db4888fb3124943
+# Thu, 17 Aug 2023 04:20:15 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				dpkg-dev 		gcc 		libc6-dev 		libssl-dev 		make 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		redis-cli --version; 	redis-server --version
-# Wed, 16 Aug 2023 15:37:55 GMT
+# Thu, 17 Aug 2023 04:20:15 GMT
 RUN mkdir /data && chown redis:redis /data
-# Wed, 16 Aug 2023 15:37:55 GMT
+# Thu, 17 Aug 2023 04:20:15 GMT
 VOLUME [/data]
-# Wed, 16 Aug 2023 15:37:55 GMT
+# Thu, 17 Aug 2023 04:20:16 GMT
 WORKDIR /data
-# Wed, 16 Aug 2023 15:37:55 GMT
+# Thu, 17 Aug 2023 04:20:16 GMT
 COPY file:e873a0e3c13001b5e1c63f9dbe60cc65722af522671787f68b8e8cbcae7d02ac in /usr/local/bin/ 
-# Wed, 16 Aug 2023 15:37:55 GMT
+# Thu, 17 Aug 2023 04:20:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 16 Aug 2023 15:37:56 GMT
+# Thu, 17 Aug 2023 04:20:16 GMT
 EXPOSE 6379
-# Wed, 16 Aug 2023 15:37:56 GMT
+# Thu, 17 Aug 2023 04:20:16 GMT
 CMD ["redis-server"]
 ```
 
@@ -227,17 +227,17 @@ CMD ["redis-server"]
 		Last Modified: Wed, 16 Aug 2023 15:40:08 GMT  
 		Size: 1.4 MB (1404702 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eba673d37b8118079a619abd6deaf1d72c687470ea6344837e901a554f7b4c67`  
-		Last Modified: Wed, 16 Aug 2023 15:40:28 GMT  
-		Size: 15.3 MB (15314624 bytes)  
+	-	`sha256:7eabf1f96c73b68118b623e97bbce1ec55ce9fbb96cc9a0158ad0e011e6085b3`  
+		Last Modified: Thu, 17 Aug 2023 04:21:49 GMT  
+		Size: 18.6 MB (18594522 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a7d1a6182742caafd168bcf15789639057d081cf50d992b2190af0759f049740`  
-		Last Modified: Wed, 16 Aug 2023 15:40:25 GMT  
-		Size: 134.0 B  
+	-	`sha256:60b51cabed2ee450973cb061a425512d33cc95950a6ccd867744dc0f68659d52`  
+		Last Modified: Thu, 17 Aug 2023 04:21:46 GMT  
+		Size: 133.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:51a03039708fe4cef982c96260b6ab6752087b339aa7275af65d5c18eb65ea54`  
-		Last Modified: Wed, 16 Aug 2023 15:40:25 GMT  
-		Size: 575.0 B  
+	-	`sha256:4a9978e54e7cc9b43bfa3db14af45be94d1bf3ccf78c27d68f5c7dca9df4646e`  
+		Last Modified: Thu, 17 Aug 2023 04:21:46 GMT  
+		Size: 572.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:bookworm` - linux; arm64 variant v8
@@ -393,76 +393,76 @@ CMD ["redis-server"]
 ### `redis:bookworm` - linux; mips64le
 
 ```console
-$ docker pull redis@sha256:626e04bd6f85f963181a6537e3d746f8dc2e1cb6607c97c0b6734784ff27cb3c
+$ docker pull redis@sha256:1c4f8a9ef4ee8715e9be8fe24e1ca6bac18b6e00fa40433e8dd956d3d6b3a5d4
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **47.2 MB (47165896 bytes)**  
+-	Total Size: **50.7 MB (50658647 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d1c6c62dda1940e367f9ab60c8a21d8739891448521e3857fd5c82538e329a38`
+-	Image ID: `sha256:cf1f1fcff755338f0e0d86b6c5b7afb31de949f30911a8dc697f5280be72cf15`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
-# Thu, 27 Jul 2023 23:11:23 GMT
-ADD file:90cbcf9a2aaf48a433b00118dd0821eeb291092da7b7f67ce6a525ce2cba1e3f in / 
-# Thu, 27 Jul 2023 23:11:27 GMT
+# Wed, 16 Aug 2023 00:08:43 GMT
+ADD file:6122efd66f4e010b48e48eeb243d900439ef783f5a10df76043546a288d35d38 in / 
+# Wed, 16 Aug 2023 00:08:47 GMT
 CMD ["bash"]
-# Sat, 29 Jul 2023 05:35:59 GMT
+# Thu, 17 Aug 2023 03:29:40 GMT
 RUN groupadd -r -g 999 redis && useradd -r -g redis -u 999 redis
-# Sat, 29 Jul 2023 05:36:01 GMT
+# Thu, 17 Aug 2023 03:29:42 GMT
 ENV GOSU_VERSION=1.16
-# Sat, 29 Jul 2023 05:37:13 GMT
+# Thu, 17 Aug 2023 03:30:44 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true
-# Sat, 29 Jul 2023 05:43:12 GMT
-ENV REDIS_VERSION=7.0.12
-# Sat, 29 Jul 2023 05:43:15 GMT
-ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-7.0.12.tar.gz
-# Sat, 29 Jul 2023 05:43:17 GMT
-ENV REDIS_DOWNLOAD_SHA=9dd83d5b278bb2bf0e39bfeb75c3e8170024edbaf11ba13b7037b2945cf48ab7
-# Sat, 29 Jul 2023 05:47:49 GMT
+# Thu, 17 Aug 2023 03:30:47 GMT
+ENV REDIS_VERSION=7.2.0
+# Thu, 17 Aug 2023 03:30:49 GMT
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-7.2.0.tar.gz
+# Thu, 17 Aug 2023 03:30:51 GMT
+ENV REDIS_DOWNLOAD_SHA=8b12e242647635b419a0e1833eda02b65bf64e39eb9e509d9db4888fb3124943
+# Thu, 17 Aug 2023 03:36:03 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				dpkg-dev 		gcc 		libc6-dev 		libssl-dev 		make 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		redis-cli --version; 	redis-server --version
-# Sat, 29 Jul 2023 05:47:55 GMT
+# Thu, 17 Aug 2023 03:36:08 GMT
 RUN mkdir /data && chown redis:redis /data
-# Sat, 29 Jul 2023 05:47:58 GMT
+# Thu, 17 Aug 2023 03:36:11 GMT
 VOLUME [/data]
-# Sat, 29 Jul 2023 05:48:00 GMT
+# Thu, 17 Aug 2023 03:36:14 GMT
 WORKDIR /data
-# Sat, 29 Jul 2023 05:48:03 GMT
+# Thu, 17 Aug 2023 03:36:16 GMT
 COPY file:e873a0e3c13001b5e1c63f9dbe60cc65722af522671787f68b8e8cbcae7d02ac in /usr/local/bin/ 
-# Sat, 29 Jul 2023 05:48:05 GMT
+# Thu, 17 Aug 2023 03:36:19 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 29 Jul 2023 05:48:08 GMT
+# Thu, 17 Aug 2023 03:36:21 GMT
 EXPOSE 6379
-# Sat, 29 Jul 2023 05:48:11 GMT
+# Thu, 17 Aug 2023 03:36:24 GMT
 CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:3252778e08fa8eb67ab052ad63281284b5ef1afdc40a36021228133487ab5d52`  
-		Last Modified: Thu, 27 Jul 2023 23:22:26 GMT  
-		Size: 29.1 MB (29121405 bytes)  
+	-	`sha256:52390931db742e6fb36945aff79b92fea76dcfe0964f8a5cf7e5b5faaa40b80f`  
+		Last Modified: Wed, 16 Aug 2023 00:19:34 GMT  
+		Size: 29.1 MB (29121481 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5667a3cc1d69ff1d9a23b241dd9cb5a9484e2cb3d722159fb87b5e8c957aeef`  
-		Last Modified: Sat, 29 Jul 2023 05:58:27 GMT  
-		Size: 1.1 KB (1074 bytes)  
+	-	`sha256:80ecb382cedf4d2c01704dd4461f02f8b60f404df4265a472ca6101474d69b85`  
+		Last Modified: Thu, 17 Aug 2023 03:51:41 GMT  
+		Size: 1.1 KB (1071 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:329a299b85f1c0d388dcf6c491af6f3171f25385fdfa8cad0dec87adc3ee7cc4`  
-		Last Modified: Sat, 29 Jul 2023 05:58:28 GMT  
-		Size: 1.3 MB (1324121 bytes)  
+	-	`sha256:de224047f411ab02946cb6c7b6c4a3cd24ef30391d43dace0b65872f26bd8914`  
+		Last Modified: Thu, 17 Aug 2023 03:51:41 GMT  
+		Size: 1.3 MB (1324134 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dcccb7daf8a07949476b8f04b7917503fae40e5862f2a598a2a567f31d0ada97`  
-		Last Modified: Sat, 29 Jul 2023 05:59:06 GMT  
-		Size: 16.7 MB (16718622 bytes)  
+	-	`sha256:69377a65948bc438004541e8f12abb53ea85ae62e3b1a8a9edc663c818f7c643`  
+		Last Modified: Thu, 17 Aug 2023 03:51:54 GMT  
+		Size: 20.2 MB (20211288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2d5f4c04f9e11c04691cb07fc867e9c2dbe03d07c88a4765c631595de27d1346`  
-		Last Modified: Sat, 29 Jul 2023 05:58:54 GMT  
-		Size: 97.0 B  
+	-	`sha256:80ffaf7c7dc5adb6eb1218c0590066d5278535e7f6cd1489f0117ea47d1d6f10`  
+		Last Modified: Thu, 17 Aug 2023 03:51:41 GMT  
+		Size: 98.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:673141f44cce5e862da45da3edc48c6c12f674d01e70595ee51f2006c8f9eea5`  
-		Last Modified: Sat, 29 Jul 2023 05:58:54 GMT  
-		Size: 577.0 B  
+	-	`sha256:3554fbfd7afcf48e2f5fc1ba8cc90731d34f7197af1b4b75abdabe5094d31767`  
+		Last Modified: Thu, 17 Aug 2023 03:51:41 GMT  
+		Size: 575.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `redis:bookworm` - linux; ppc64le
