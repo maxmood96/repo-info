@@ -1,9 +1,9 @@
-# `php:8.2.8-zts-bullseye`
+# `php:8.2.9-zts-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ea34fcc7132d4b28d115d4d7d85256e0742fa036c3ca0b92d235e42f6de9408f`
-- Created: `2023-07-28T12:21:00.28871873Z`
+- Image ID: `sha256:2c6f6c14165f062b7e94880b65c32a4a8f11b3a8b4a0d40898e0047c7eed76b9`
+- Created: `2023-08-17T23:18:58.574010168Z`
 - Virtual Size: ~ 447.20 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
-  - `PHP_VERSION=8.2.8`
-  - `PHP_URL=https://www.php.net/distributions/php-8.2.8.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.8.tar.xz.asc`
-  - `PHP_SHA256=cfe1055fbcd486de7d3312da6146949aae577365808790af6018205567609801`
+  - `PHP_VERSION=8.2.9`
+  - `PHP_URL=https://www.php.net/distributions/php-8.2.9.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.9.tar.xz.asc`
+  - `PHP_SHA256=1e6cb77f997613864ab3127fbfc6a8c7fdaa89a95e8ed6167617b913b4de4765`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1910,11 +1910,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.4.8+dfsg-2.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.4.8+dfsg-2.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=5.10.179-2`
+### `dpkg` source package: `linux=5.10.179-5`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.10.179-2`
+- `linux-libc-dev:amd64=5.10.179-5`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1927,13 +1927,20 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `X11`
 - `Xen-interface`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris linux=5.10.179-5
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.179-5.dsc' linux_5.10.179-5.dsc 197238 SHA256:00928ac3b5249c5612d7853cccda46aa0445938bc09ebb6127a402acc6dd08ee
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.179.orig.tar.xz' linux_5.10.179.orig.tar.xz 121881852 SHA256:254d0375733a423efd8b364b9c33c88034dec85a76e2cba1093c54a667a74dbd
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.179-5.debian.tar.xz' linux_5.10.179-5.debian.tar.xz 1637144 SHA256:24d847d6505e92ab8f7b07637522fce033e71730f8eafc2dcf42f4a0dff5b3f7
+```
 
-- http://snapshot.debian.org/package/linux/5.10.179-2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/linux/5.10.179-5/ (for browsing the source)
+- https://sources.debian.net/src/linux/5.10.179-5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/5.10.179-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=11.1.0`
 
@@ -2640,12 +2647,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/sqlite3/3.34.1-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/sqlite3/3.34.1-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `systemd=247.3-7+deb11u2`
+### `dpkg` source package: `systemd=247.3-7+deb11u4`
 
 Binary Packages:
 
-- `libsystemd0:amd64=247.3-7+deb11u2`
-- `libudev1:amd64=247.3-7+deb11u2`
+- `libsystemd0:amd64=247.3-7+deb11u4`
+- `libudev1:amd64=247.3-7+deb11u4`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -2661,17 +2668,17 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris systemd=247.3-7+deb11u2
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_247.3-7%2bdeb11u2.dsc' systemd_247.3-7+deb11u2.dsc 5224 SHA256:d71f8653855b919efdf86269100384a47dd532d2cb39ffcbe5458805303beeec
+$ apt-get source -qq --print-uris systemd=247.3-7+deb11u4
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_247.3-7%2bdeb11u4.dsc' systemd_247.3-7+deb11u4.dsc 5224 SHA256:7d1b87217b355b62b454728be911c7a9ecf9f9c8e33155e8c0a499b57a86f649
 'http://deb.debian.org/debian/pool/main/s/systemd/systemd_247.3.orig.tar.gz' systemd_247.3.orig.tar.gz 9895385 SHA256:2869986e219a8dfc96cc0dffac66e0c13bb70a89e16b85a3948876c146cfa3e0
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_247.3-7%2bdeb11u2.debian.tar.xz' systemd_247.3-7+deb11u2.debian.tar.xz 192860 SHA256:27842e6f36805b6147b6c91bf31e51e2353cdeb3f7c5076fa8ba4b43e7ce582f
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_247.3-7%2bdeb11u4.debian.tar.xz' systemd_247.3-7+deb11u4.debian.tar.xz 196116 SHA256:d1641185f547643cc2788606f209c57a9d66bd9f646564959a2680a7da1e2234
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/systemd/247.3-7+deb11u2/ (for browsing the source)
-- https://sources.debian.net/src/systemd/247.3-7+deb11u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/247.3-7+deb11u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/systemd/247.3-7+deb11u4/ (for browsing the source)
+- https://sources.debian.net/src/systemd/247.3-7+deb11u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/systemd/247.3-7+deb11u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.96-7+deb11u1`
 
