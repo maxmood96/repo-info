@@ -708,9 +708,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris git=1:2.34.1-1ubuntu1.9
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.34.1-1ubuntu1.9.dsc' git_2.34.1-1ubuntu1.9.dsc 2927 SHA512:7af902f1d57f6c62c8314ce2f3846490d0c16c4a39b626bc6226cfcd1ba1aebe2f01d075b9287237ceeb861b3ba0d8bc8dd3c638f663e3806489e04f989c2efc
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.34.1.orig.tar.xz' git_2.34.1.orig.tar.xz 6623760 SHA512:a1a8e9e6f64b1da25508fbd2f783564dcdbe181fb5ff1ebab3bdac6db6094e18acc334479a1abf22ac17ce4f733cc3e10a664db9ab234cd523735a3f027b42db
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.34.1-1ubuntu1.9.debian.tar.xz' git_2.34.1-1ubuntu1.9.debian.tar.xz 757920 SHA512:3505621b8bd34a69bd4a3f9c1dce8d7621cb27909899635c20b5eed68397fa7f1df7cfc5a84e481242355e96d2d4d1d5e00eed5e74b21e3861f558f4772c0e30
+'http://security.ubuntu.com/ubuntu/pool/main/g/git/git_2.34.1-1ubuntu1.9.dsc' git_2.34.1-1ubuntu1.9.dsc 2927 SHA512:7af902f1d57f6c62c8314ce2f3846490d0c16c4a39b626bc6226cfcd1ba1aebe2f01d075b9287237ceeb861b3ba0d8bc8dd3c638f663e3806489e04f989c2efc
+'http://security.ubuntu.com/ubuntu/pool/main/g/git/git_2.34.1.orig.tar.xz' git_2.34.1.orig.tar.xz 6623760 SHA512:a1a8e9e6f64b1da25508fbd2f783564dcdbe181fb5ff1ebab3bdac6db6094e18acc334479a1abf22ac17ce4f733cc3e10a664db9ab234cd523735a3f027b42db
+'http://security.ubuntu.com/ubuntu/pool/main/g/git/git_2.34.1-1ubuntu1.9.debian.tar.xz' git_2.34.1-1ubuntu1.9.debian.tar.xz 757920 SHA512:3505621b8bd34a69bd4a3f9c1dce8d7621cb27909899635c20b5eed68397fa7f1df7cfc5a84e481242355e96d2d4d1d5e00eed5e74b21e3861f558f4772c0e30
 ```
 
 ### `dpkg` source package: `glibc=2.35-0ubuntu3.1`
