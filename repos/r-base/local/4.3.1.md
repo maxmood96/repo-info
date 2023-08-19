@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7ee8552166539ae84dd37f31ba9e3771adbc4bf929ee41f346cfc21bdc66d367`
-- Created: `2023-07-28T14:18:11.363840402Z`
+- Image ID: `sha256:c8129b09ef1177467dc985850c63c18334090a6e318c4a9e2386261ec8da2261`
+- Created: `2023-08-16T10:29:18.642130402Z`
 - Virtual Size: ~ 1.43 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -44,31 +44,12 @@ $ apt-get source -qq --print-uris acl=2.3.1-3
 'http://http.debian.net/debian/pool/main/a/acl/acl_2.3.1-3.debian.tar.xz' acl_2.3.1-3.debian.tar.xz 30968 SHA256:2eb052bba784a4b873e951b1f91af2abef62e4bf4b83c93f9821eea26f66c8e2
 ```
 
-### `dpkg` source package: `adduser=3.137`
+### `dpkg` source package: `apt=2.7.3`
 
 Binary Packages:
 
-- `adduser=3.137`
-
-Licenses: (parsed from: `/usr/share/doc/adduser/copyright`)
-
-- `GPL-2`
-- `GPL-2+`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris adduser=3.137
-'http://http.debian.net/debian/pool/main/a/adduser/adduser_3.137.dsc' adduser_3.137.dsc 1671 SHA256:e4be6fbfa9db7ca7054a1c31dd2f1503340187b547112c960f2482ce3642f837
-'http://http.debian.net/debian/pool/main/a/adduser/adduser_3.137.tar.xz' adduser_3.137.tar.xz 279192 SHA256:229a61803664c2850f7d8d93e6650cd0b340ea3bbd1b954271719679ea3b0dd0
-```
-
-### `dpkg` source package: `apt=2.6.1`
-
-Binary Packages:
-
-- `apt=2.6.1`
-- `libapt-pkg6.0:amd64=2.6.1`
+- `apt=2.7.3`
+- `libapt-pkg6.0:amd64=2.7.3`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg6.0/copyright`)
 
@@ -77,13 +58,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPL-2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/apt/2.6.1/
-
+```console
+$ apt-get source -qq --print-uris apt=2.7.3
+'http://http.debian.net/debian/pool/main/a/apt/apt_2.7.3.dsc' apt_2.7.3.dsc 2945 SHA256:6927412c35484426113eebfa6cca50c54180d877c5daa899703e8029dfe1b9b6
+'http://http.debian.net/debian/pool/main/a/apt/apt_2.7.3.tar.xz' apt_2.7.3.tar.xz 2343000 SHA256:9ad2eb2c4f25ce3535d9a5d8056e1fe932d6dbb58c2647cd5fc8df8c9f8def53
+```
 
 ### `dpkg` source package: `attr=1:2.5.1-4`
 
@@ -171,7 +152,7 @@ $ apt-get source -qq --print-uris base-passwd=3.6.1
 
 Binary Packages:
 
-- `bash=5.2.15-2+b3`
+- `bash=5.2.15-2+b4`
 
 Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 
@@ -196,18 +177,18 @@ $ apt-get source -qq --print-uris bash=5.2.15-2
 'http://http.debian.net/debian/pool/main/b/bash/bash_5.2.15-2.debian.tar.xz' bash_5.2.15-2.debian.tar.xz 97380 SHA256:998f8ea5b754a734ae7d8306e149c43d713ddfcf49623a036004b729237dbcca
 ```
 
-### `dpkg` source package: `binutils=2.40.90.20230720-1`
+### `dpkg` source package: `binutils=2.41-4`
 
 Binary Packages:
 
-- `binutils=2.40.90.20230720-1`
-- `binutils-common:amd64=2.40.90.20230720-1`
-- `binutils-x86-64-linux-gnu=2.40.90.20230720-1`
-- `libbinutils:amd64=2.40.90.20230720-1`
-- `libctf-nobfd0:amd64=2.40.90.20230720-1`
-- `libctf0:amd64=2.40.90.20230720-1`
-- `libgprofng0:amd64=2.40.90.20230720-1`
-- `libsframe1:amd64=2.40.90.20230720-1`
+- `binutils=2.41-4`
+- `binutils-common:amd64=2.41-4`
+- `binutils-x86-64-linux-gnu=2.41-4`
+- `libbinutils:amd64=2.41-4`
+- `libctf-nobfd0:amd64=2.41-4`
+- `libctf0:amd64=2.41-4`
+- `libgprofng0:amd64=2.41-4`
+- `libsframe1:amd64=2.41-4`
 
 Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/binutils-common/copyright`, `/usr/share/doc/binutils-x86-64-linux-gnu/copyright`, `/usr/share/doc/libbinutils/copyright`, `/usr/share/doc/libctf-nobfd0/copyright`, `/usr/share/doc/libctf0/copyright`, `/usr/share/doc/libgprofng0/copyright`, `/usr/share/doc/libsframe1/copyright`)
 
@@ -218,10 +199,10 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 Source:
 
 ```console
-$ apt-get source -qq --print-uris binutils=2.40.90.20230720-1
-'http://http.debian.net/debian/pool/main/b/binutils/binutils_2.40.90.20230720-1.dsc' binutils_2.40.90.20230720-1.dsc 12133 SHA256:2d14a9b16e2db68ec33540f6240e907b05b8f10b20f8225726fc616944b7af94
-'http://http.debian.net/debian/pool/main/b/binutils/binutils_2.40.90.20230720.orig.tar.xz' binutils_2.40.90.20230720.orig.tar.xz 23339024 SHA256:f779cde1f8e5f6f393478d6ebbf35f8498fcd4f217106df110ee8309071c0682
-'http://http.debian.net/debian/pool/main/b/binutils/binutils_2.40.90.20230720-1.debian.tar.xz' binutils_2.40.90.20230720-1.debian.tar.xz 101424 SHA256:d9378a3f61015bc9b3fb661b2165d00eca2135d59b7dff5979db1a20d59f289b
+$ apt-get source -qq --print-uris binutils=2.41-4
+'http://http.debian.net/debian/pool/main/b/binutils/binutils_2.41-4.dsc' binutils_2.41-4.dsc 12164 SHA256:b0b7972183fca6572fe5cf9e7380ce430998e47c068ecac56bd55b6c37d82a2f
+'http://http.debian.net/debian/pool/main/b/binutils/binutils_2.41.orig.tar.xz' binutils_2.41.orig.tar.xz 26902888 SHA256:f87777e6b11c92081692fa6a5239271961eab8354c91ca52f916b9e875cf79dc
+'http://http.debian.net/debian/pool/main/b/binutils/binutils_2.41-4.debian.tar.xz' binutils_2.41-4.debian.tar.xz 131844 SHA256:296ddbebe90e515ecf2c164f2760f6b3dd39cf35f2bbfa7e32a3c2a7044c59a2
 ```
 
 ### `dpkg` source package: `boot=1.3-28.1-1`
@@ -426,11 +407,11 @@ $ apt-get source -qq --print-uris coreutils=9.1-1
 'http://http.debian.net/debian/pool/main/c/coreutils/coreutils_9.1-1.debian.tar.xz' coreutils_9.1-1.debian.tar.xz 30624 SHA256:45d4ae88d933a7d713ef038943e818a2488e759b6196a409788744cbc6df1832
 ```
 
-### `dpkg` source package: `curl=7.88.1-10`
+### `dpkg` source package: `curl=8.2.1-1`
 
 Binary Packages:
 
-- `libcurl4:amd64=7.88.1-10`
+- `libcurl4:amd64=8.2.1-1`
 
 Licenses: (parsed from: `/usr/share/doc/libcurl4/copyright`)
 
@@ -443,23 +424,26 @@ Licenses: (parsed from: `/usr/share/doc/libcurl4/copyright`)
 - `GPL-2+ with Libtool exception`
 - `GPL-3+ with Autoconf-data exception`
 - `ISC`
+- `OLDAP-2.8`
 - `X11`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris curl=8.2.1-1
+'http://http.debian.net/debian/pool/main/c/curl/curl_8.2.1-1.dsc' curl_8.2.1-1.dsc 3235 SHA256:5420d64d937ba0e2591234f26c8eddf1525a64fb8fde412730072a10f1db056b
+'http://http.debian.net/debian/pool/main/c/curl/curl_8.2.1.orig.tar.gz' curl_8.2.1.orig.tar.gz 4394020 SHA256:f98bdb06c0f52bdd19e63c4a77b5eb19b243bcbbd0f5b002b9f3cba7295a3a42
+'http://http.debian.net/debian/pool/main/c/curl/curl_8.2.1.orig.tar.gz.asc' curl_8.2.1.orig.tar.gz.asc 488 SHA256:b3d8b2576891427ca038a83581372ebc18f648952f6693db5cb3a89f5bf7f4d3
+'http://http.debian.net/debian/pool/main/c/curl/curl_8.2.1-1.debian.tar.xz' curl_8.2.1-1.debian.tar.xz 46184 SHA256:68ee623f50dfd5fba6b29ce6a3b3c13423d38b14d9ccfa71c5b557f58b915664
+```
 
-- http://snapshot.debian.org/package/curl/7.88.1-10/
-
-
-### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-1`
+### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-3`
 
 Binary Packages:
 
-- `libsasl2-2:amd64=2.1.28+dfsg1-1`
-- `libsasl2-modules-db:amd64=2.1.28+dfsg1-1`
+- `libsasl2-2:amd64=2.1.28+dfsg1-3`
+- `libsasl2-modules-db:amd64=2.1.28+dfsg1-3`
 
 Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/libsasl2-modules-db/copyright`)
 
@@ -480,13 +464,14 @@ Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/l
 - `OpenLDAP`
 - `RSA-MD`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/cyrus-sasl2/2.1.28+dfsg1-1/
-
+```console
+$ apt-get source -qq --print-uris cyrus-sasl2=2.1.28+dfsg1-3
+'http://http.debian.net/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg1-3.dsc' cyrus-sasl2_2.1.28+dfsg1-3.dsc 3330 SHA256:a43831934f49088f8a018913e3ed7fc48ffc2e5c48a8eafbba25ccabdaf80341
+'http://http.debian.net/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg1.orig.tar.xz' cyrus-sasl2_2.1.28+dfsg1.orig.tar.xz 794540 SHA256:e796a5d85d1a85e1b433d43504e467f9075c7ebc0b45730a3996cf11b1deada4
+'http://http.debian.net/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg1-3.debian.tar.xz' cyrus-sasl2_2.1.28+dfsg1-3.debian.tar.xz 106568 SHA256:7e2bc5df64d3959cd190cf24b9a0d89be48708ff167b0d7556b2f6818b1de397
+```
 
 ### `dpkg` source package: `dash=0.5.12-6`
 
@@ -511,11 +496,11 @@ $ apt-get source -qq --print-uris dash=0.5.12-6
 'http://http.debian.net/debian/pool/main/d/dash/dash_0.5.12-6.debian.tar.xz' dash_0.5.12-6.debian.tar.xz 39116 SHA256:155173292d95943d2c737c0f7f4733bb6b39244522f810ee4a64f7be0f4865ab
 ```
 
-### `dpkg` source package: `db5.3=5.3.28+dfsg2-1`
+### `dpkg` source package: `db5.3=5.3.28+dfsg2-2`
 
 Binary Packages:
 
-- `libdb5.3:amd64=5.3.28+dfsg2-1`
+- `libdb5.3:amd64=5.3.28+dfsg2-2`
 
 Licenses: (parsed from: `/usr/share/doc/libdb5.3/copyright`)
 
@@ -534,10 +519,10 @@ Licenses: (parsed from: `/usr/share/doc/libdb5.3/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris db5.3=5.3.28+dfsg2-1
-'http://http.debian.net/debian/pool/main/d/db5.3/db5.3_5.3.28%2bdfsg2-1.dsc' db5.3_5.3.28+dfsg2-1.dsc 2887 SHA256:fe84d3cd7cde381f1c5a18f223377cf84ea7627ced8063ef33ef8fd93f6e09f4
+$ apt-get source -qq --print-uris db5.3=5.3.28+dfsg2-2
+'http://http.debian.net/debian/pool/main/d/db5.3/db5.3_5.3.28%2bdfsg2-2.dsc' db5.3_5.3.28+dfsg2-2.dsc 2183 SHA256:763a77002e906ab9c0db8ba81cef1639818b45285c4109d5622ba5d5daf11f44
 'http://http.debian.net/debian/pool/main/d/db5.3/db5.3_5.3.28%2bdfsg2.orig.tar.xz' db5.3_5.3.28+dfsg2.orig.tar.xz 21287688 SHA256:ad41b507415dec8316e828b2230242af2251d2c86eefa3c7aa9ef47c5239ef33
-'http://http.debian.net/debian/pool/main/d/db5.3/db5.3_5.3.28%2bdfsg2-1.debian.tar.xz' db5.3_5.3.28+dfsg2-1.debian.tar.xz 34660 SHA256:52cb792fe53138c79a0328ffd1d771e3112791f546fd00e0dcd4b0e3efc5d916
+'http://http.debian.net/debian/pool/main/d/db5.3/db5.3_5.3.28%2bdfsg2-2.debian.tar.xz' db5.3_5.3.28+dfsg2-2.debian.tar.xz 33560 SHA256:1292292f486d6529815d199291428f3fc770025ab562c4d1d370b8d3df74fa3d
 ```
 
 ### `dpkg` source package: `debconf=1.5.82`
@@ -558,11 +543,11 @@ $ apt-get source -qq --print-uris debconf=1.5.82
 'http://http.debian.net/debian/pool/main/d/debconf/debconf_1.5.82.tar.xz' debconf_1.5.82.tar.xz 571540 SHA256:2d0550c4e2fb98d12055b245907978b28ee2d2b07b62e46be7523384d2ce985e
 ```
 
-### `dpkg` source package: `debian-archive-keyring=2023.3`
+### `dpkg` source package: `debian-archive-keyring=2023.4`
 
 Binary Packages:
 
-- `debian-archive-keyring=2023.3`
+- `debian-archive-keyring=2023.4`
 
 Licenses: (parsed from: `/usr/share/doc/debian-archive-keyring/copyright`)
 
@@ -571,9 +556,9 @@ Licenses: (parsed from: `/usr/share/doc/debian-archive-keyring/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris debian-archive-keyring=2023.3
-'http://http.debian.net/debian/pool/main/d/debian-archive-keyring/debian-archive-keyring_2023.3.dsc' debian-archive-keyring_2023.3.dsc 1261 SHA256:31c1ef4aaa73e1b4b3a85a88993a7f5180d9f697a8784f58471d9d39047409f9
-'http://http.debian.net/debian/pool/main/d/debian-archive-keyring/debian-archive-keyring_2023.3.tar.xz' debian-archive-keyring_2023.3.tar.xz 177472 SHA256:0b9af95add8f2f7834d90f95ce6fde065319148c9363f140077b03684a71eea8
+$ apt-get source -qq --print-uris debian-archive-keyring=2023.4
+'http://http.debian.net/debian/pool/main/d/debian-archive-keyring/debian-archive-keyring_2023.4.dsc' debian-archive-keyring_2023.4.dsc 1261 SHA256:c97d048486078fcc6866a477df83b19270ae872102f4ed64b5a5e9995ff79afa
+'http://http.debian.net/debian/pool/main/d/debian-archive-keyring/debian-archive-keyring_2023.4.tar.xz' debian-archive-keyring_2023.4.tar.xz 177568 SHA256:7f9b64d7c5e748b0cb99fd0674d872111c219e119f296912c59fc61ab49bb78a
 ```
 
 ### `dpkg` source package: `debianutils=5.8-1`
@@ -782,13 +767,13 @@ $ apt-get source -qq --print-uris findutils=4.9.0-5
 'http://http.debian.net/debian/pool/main/f/findutils/findutils_4.9.0-5.debian.tar.xz' findutils_4.9.0-5.debian.tar.xz 32744 SHA256:456831869d49d8906a98beb2bcbb61e5911d9c44082c4b716615bc23f26c4f20
 ```
 
-### `dpkg` source package: `fontconfig=2.14.1-4`
+### `dpkg` source package: `fontconfig=2.14.2-3`
 
 Binary Packages:
 
-- `fontconfig=2.14.1-4`
-- `fontconfig-config=2.14.1-4`
-- `libfontconfig1:amd64=2.14.1-4`
+- `fontconfig=2.14.2-3`
+- `fontconfig-config=2.14.2-3`
+- `libfontconfig1:amd64=2.14.2-3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -797,10 +782,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris fontconfig=2.14.1-4
-'http://http.debian.net/debian/pool/main/f/fontconfig/fontconfig_2.14.1-4.dsc' fontconfig_2.14.1-4.dsc 2693 SHA256:8bb59d9c96ff8ef77df06dc65273fa398bf248f7e2448a8314989ec01ce74a58
-'http://http.debian.net/debian/pool/main/f/fontconfig/fontconfig_2.14.1.orig.tar.xz' fontconfig_2.14.1.orig.tar.xz 1447044 SHA256:298e883f6e11d2c5e6d53c8a8394de58d563902cfab934e6be12fb5a5f361ef0
-'http://http.debian.net/debian/pool/main/f/fontconfig/fontconfig_2.14.1-4.debian.tar.xz' fontconfig_2.14.1-4.debian.tar.xz 55972 SHA256:9c2421c04c8d26a006166ad39e0be10de5f2e8149f508b6dbd87f1403275f4a5
+$ apt-get source -qq --print-uris fontconfig=2.14.2-3
+'http://http.debian.net/debian/pool/main/f/fontconfig/fontconfig_2.14.2-3.dsc' fontconfig_2.14.2-3.dsc 2323 SHA256:8aea2b810e1f4e879c2ed1f3c3afdd27b03fff1ccc28280b2a64af44863719e8
+'http://http.debian.net/debian/pool/main/f/fontconfig/fontconfig_2.14.2.orig.tar.xz' fontconfig_2.14.2.orig.tar.xz 1440844 SHA256:dba695b57bce15023d2ceedef82062c2b925e51f5d4cc4aef736cf13f60a468b
+'http://http.debian.net/debian/pool/main/f/fontconfig/fontconfig_2.14.2-3.debian.tar.xz' fontconfig_2.14.2-3.debian.tar.xz 56144 SHA256:b52eab97a07fe5d8731e7b95b5db6f0a65812894076297ceb24776b0ed42c088
 ```
 
 ### `dpkg` source package: `foreign=0.8.84-1`
@@ -879,31 +864,31 @@ $ apt-get source -qq --print-uris fribidi=1.0.13-3
 'http://http.debian.net/debian/pool/main/f/fribidi/fribidi_1.0.13-3.debian.tar.xz' fribidi_1.0.13-3.debian.tar.xz 8848 SHA256:6e1e94396207a0acfbaa4dcbbb06ccc110fd9f285fd39ca313b5a8a3da9936fa
 ```
 
-### `dpkg` source package: `gcc-13=13.1.0-9`
+### `dpkg` source package: `gcc-13=13.2.0-1`
 
 Binary Packages:
 
-- `cpp-13=13.1.0-9`
-- `g++-13=13.1.0-9`
-- `gcc-13=13.1.0-9`
-- `gcc-13-base:amd64=13.1.0-9`
-- `gfortran-13=13.1.0-9`
-- `libasan8:amd64=13.1.0-9`
-- `libatomic1:amd64=13.1.0-9`
-- `libcc1-0:amd64=13.1.0-9`
-- `libgcc-13-dev:amd64=13.1.0-9`
-- `libgcc-s1:amd64=13.1.0-9`
-- `libgfortran-13-dev:amd64=13.1.0-9`
-- `libgfortran5:amd64=13.1.0-9`
-- `libgomp1:amd64=13.1.0-9`
-- `libhwasan0:amd64=13.1.0-9`
-- `libitm1:amd64=13.1.0-9`
-- `liblsan0:amd64=13.1.0-9`
-- `libquadmath0:amd64=13.1.0-9`
-- `libstdc++-13-dev:amd64=13.1.0-9`
-- `libstdc++6:amd64=13.1.0-9`
-- `libtsan2:amd64=13.1.0-9`
-- `libubsan1:amd64=13.1.0-9`
+- `cpp-13=13.2.0-1`
+- `g++-13=13.2.0-1`
+- `gcc-13=13.2.0-1`
+- `gcc-13-base:amd64=13.2.0-1`
+- `gfortran-13=13.2.0-1`
+- `libasan8:amd64=13.2.0-1`
+- `libatomic1:amd64=13.2.0-1`
+- `libcc1-0:amd64=13.2.0-1`
+- `libgcc-13-dev:amd64=13.2.0-1`
+- `libgcc-s1:amd64=13.2.0-1`
+- `libgfortran-13-dev:amd64=13.2.0-1`
+- `libgfortran5:amd64=13.2.0-1`
+- `libgomp1:amd64=13.2.0-1`
+- `libhwasan0:amd64=13.2.0-1`
+- `libitm1:amd64=13.2.0-1`
+- `liblsan0:amd64=13.2.0-1`
+- `libquadmath0:amd64=13.2.0-1`
+- `libstdc++-13-dev:amd64=13.2.0-1`
+- `libstdc++6:amd64=13.2.0-1`
+- `libtsan2:amd64=13.2.0-1`
+- `libubsan1:amd64=13.2.0-1`
 
 Licenses: (parsed from: `/usr/share/doc/cpp-13/copyright`, `/usr/share/doc/g++-13/copyright`, `/usr/share/doc/gcc-13/copyright`, `/usr/share/doc/gcc-13-base/copyright`, `/usr/share/doc/gfortran-13/copyright`, `/usr/share/doc/libasan8/copyright`, `/usr/share/doc/libatomic1/copyright`, `/usr/share/doc/libcc1-0/copyright`, `/usr/share/doc/libgcc-13-dev/copyright`, `/usr/share/doc/libgcc-s1/copyright`, `/usr/share/doc/libgfortran-13-dev/copyright`, `/usr/share/doc/libgfortran5/copyright`, `/usr/share/doc/libgomp1/copyright`, `/usr/share/doc/libhwasan0/copyright`, `/usr/share/doc/libitm1/copyright`, `/usr/share/doc/liblsan0/copyright`, `/usr/share/doc/libquadmath0/copyright`, `/usr/share/doc/libstdc++-13-dev/copyright`, `/usr/share/doc/libstdc++6/copyright`, `/usr/share/doc/libtsan2/copyright`, `/usr/share/doc/libubsan1/copyright`)
 
@@ -917,10 +902,10 @@ Licenses: (parsed from: `/usr/share/doc/cpp-13/copyright`, `/usr/share/doc/g++-1
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gcc-13=13.1.0-9
-'http://http.debian.net/debian/pool/main/g/gcc-13/gcc-13_13.1.0-9.dsc' gcc-13_13.1.0-9.dsc 27472 SHA256:ed1bae9415e2af1914eb7374df08aa0401ec0773aa7d3fe169a4af7b3a298aab
-'http://http.debian.net/debian/pool/main/g/gcc-13/gcc-13_13.1.0.orig.tar.gz' gcc-13_13.1.0.orig.tar.gz 89274824 SHA256:885e4a54319e74321cca4c412aad11a2be0df81d816a3c1856e1430a03b6f4b0
-'http://http.debian.net/debian/pool/main/g/gcc-13/gcc-13_13.1.0-9.debian.tar.xz' gcc-13_13.1.0-9.debian.tar.xz 1351804 SHA256:f9e723fdaa6c03cf498ca3abe03cc9cd592fc4f287de9c0db29fffb5ec438aa4
+$ apt-get source -qq --print-uris gcc-13=13.2.0-1
+'http://http.debian.net/debian/pool/main/g/gcc-13/gcc-13_13.2.0-1.dsc' gcc-13_13.2.0-1.dsc 27424 SHA256:589128e42123008ca832702d0d41199b892a358a713299b8dbeeb88e8e0698f2
+'http://http.debian.net/debian/pool/main/g/gcc-13/gcc-13_13.2.0.orig.tar.gz' gcc-13_13.2.0.orig.tar.gz 89714914 SHA256:eb19e797d4277a1ad26b1992bbf22dc66d11cce0c238491e746e50a7599aa064
+'http://http.debian.net/debian/pool/main/g/gcc-13/gcc-13_13.2.0-1.debian.tar.xz' gcc-13_13.2.0-1.debian.tar.xz 1495988 SHA256:54180c0f68ac6ca39d9865398f70a6efcef6537167784cd824135efcaffb4062
 ```
 
 ### `dpkg` source package: `gcc-defaults=1.207`
@@ -969,11 +954,11 @@ $ apt-get source -qq --print-uris gdbm=1.23-3
 'http://http.debian.net/debian/pool/main/g/gdbm/gdbm_1.23-3.debian.tar.xz' gdbm_1.23-3.debian.tar.xz 18552 SHA256:a0ff17befcbd7c4b361cfe0d821a7a71334102a9c423537bd57f60f18f6802ea
 ```
 
-### `dpkg` source package: `glib2.0=2.76.4-3`
+### `dpkg` source package: `glib2.0=2.77.1-2`
 
 Binary Packages:
 
-- `libglib2.0-0:amd64=2.76.4-3`
+- `libglib2.0-0:amd64=2.77.1-2`
 
 Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`)
 
@@ -1003,24 +988,26 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`)
 - `Unicode-DFS-2016`
 - `bzip2-1.0.6`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris glib2.0=2.77.1-2
+'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.77.1-2.dsc' glib2.0_2.77.1-2.dsc 3600 SHA256:41dd402fa81b0044d87bd7e75e13ce42fe0eee97b1f072f4a28e61b1a29bbe15
+'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.77.1.orig-unicode-data.tar.xz' glib2.0_2.77.1.orig-unicode-data.tar.xz 268012 SHA256:e8a592b792225e270a0e6b86b4b735a592ad49eefe4bdd7214f9f9eb6a0065c6
+'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.77.1.orig.tar.xz' glib2.0_2.77.1.orig.tar.xz 5305568 SHA256:dce8d0c9e916d8c81a64436bd4ee4d6515a52dd3d157c994e1cdb9b3d6300a03
+'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.77.1-2.debian.tar.xz' glib2.0_2.77.1-2.debian.tar.xz 118024 SHA256:731e491dee6c6558fd5cd01e8a17abded6ad6efcc16d1e205dfb06ad4ed5b5bd
+```
 
-- http://snapshot.debian.org/package/glib2.0/2.76.4-3/
-
-
-### `dpkg` source package: `glibc=2.37-6`
+### `dpkg` source package: `glibc=2.37-7`
 
 Binary Packages:
 
-- `libc-bin=2.37-6`
-- `libc-dev-bin=2.37-6`
-- `libc-l10n=2.37-6`
-- `libc6:amd64=2.37-6`
-- `libc6-dev:amd64=2.37-6`
-- `locales=2.37-6`
+- `libc-bin=2.37-7`
+- `libc-dev-bin=2.37-7`
+- `libc-l10n=2.37-7`
+- `libc6:amd64=2.37-7`
+- `libc6-dev:amd64=2.37-7`
+- `locales=2.37-7`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc-l10n/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`, `/usr/share/doc/locales/copyright`)
 
@@ -1030,17 +1017,17 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glibc=2.37-6
-'http://http.debian.net/debian/pool/main/g/glibc/glibc_2.37-6.dsc' glibc_2.37-6.dsc 8959 SHA256:c7ec029f9e81c052270170e126883bf8472d27925034c15df0cae7116cae4533
+$ apt-get source -qq --print-uris glibc=2.37-7
+'http://http.debian.net/debian/pool/main/g/glibc/glibc_2.37-7.dsc' glibc_2.37-7.dsc 8959 SHA256:74d01dd2db638b1179d819da526fb165984982f314054a359213431327602412
 'http://http.debian.net/debian/pool/main/g/glibc/glibc_2.37.orig.tar.xz' glibc_2.37.orig.tar.xz 19503016 SHA256:d05f010158c16cef110fa1ab560c31477249ee2105360101858a5146aa6fe7d0
-'http://http.debian.net/debian/pool/main/g/glibc/glibc_2.37-6.debian.tar.xz' glibc_2.37-6.debian.tar.xz 394036 SHA256:c88b4fad0dcad3351f0471551440b578d7e2ad346d36aed1b5779ca4b89d066b
+'http://http.debian.net/debian/pool/main/g/glibc/glibc_2.37-7.debian.tar.xz' glibc_2.37-7.debian.tar.xz 394036 SHA256:6ded10ff9f6e4ee41c4b1e4ade6aa2a808872f95ef527244074d8a92d2eb7e95
 ```
 
-### `dpkg` source package: `gmp=2:6.2.1+dfsg1-1.1`
+### `dpkg` source package: `gmp=2:6.3.0+dfsg-2`
 
 Binary Packages:
 
-- `libgmp10:amd64=2:6.2.1+dfsg1-1.1`
+- `libgmp10:amd64=2:6.3.0+dfsg-2`
 
 Licenses: (parsed from: `/usr/share/doc/libgmp10/copyright`)
 
@@ -1052,13 +1039,14 @@ Licenses: (parsed from: `/usr/share/doc/libgmp10/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/gmp/2:6.2.1+dfsg1-1.1/
-
+```console
+$ apt-get source -qq --print-uris gmp=2:6.3.0+dfsg-2
+'http://http.debian.net/debian/pool/main/g/gmp/gmp_6.3.0%2bdfsg-2.dsc' gmp_6.3.0+dfsg-2.dsc 2251 SHA256:31bf88a2899f7a6eb2dc0db438ba2b27f87562dfe73815a3bbc8b65675ba1a51
+'http://http.debian.net/debian/pool/main/g/gmp/gmp_6.3.0%2bdfsg.orig.tar.xz' gmp_6.3.0+dfsg.orig.tar.xz 1870556 SHA256:bd2966e6d277f79328e894a5a9f3ba3fbf2ed2be81def5f48623e30c23fb1572
+'http://http.debian.net/debian/pool/main/g/gmp/gmp_6.3.0%2bdfsg-2.debian.tar.xz' gmp_6.3.0+dfsg-2.debian.tar.xz 19156 SHA256:07fbc1f67c1c076575f8196f3b5a2d2be0268be10940ca59293d7f1669365f4e
+```
 
 ### `dpkg` source package: `gnupg2=2.2.40-1.1`
 
@@ -1113,21 +1101,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.7.9-2
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.9-2.dsc' gnutls28_3.7.9-2.dsc 3386 SHA256:65a8fe5a079115b9f2381d3071cbe4f5f00c2dc2a8ef04aab47523ae66f636e4
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.9.orig.tar.xz' gnutls28_3.7.9.orig.tar.xz 6377212 SHA256:aaa03416cdbd54eb155187b359e3ec3ed52ec73df4df35a0edd49429ff64d844
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.9.orig.tar.xz.asc' gnutls28_3.7.9.orig.tar.xz.asc 996 SHA256:da4a96b14edd3cd44971a36ba1e976af1057e57a2d6c21b0cc7025c983ee84cc
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.9-2.debian.tar.xz' gnutls28_3.7.9-2.debian.tar.xz 85892 SHA256:1f5f0a73e1f0b25e481785398f7e213237810841ee3860475acbbcc9b0dd16bf
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnutls28/3.7.9-2/
 
-- https://sources.debian.net/src/gnutls28/3.7.9-2/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.7.9-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.7.9-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `graphite2=1.3.14-1`
 
@@ -1157,24 +1137,26 @@ $ apt-get source -qq --print-uris graphite2=1.3.14-1
 'http://http.debian.net/debian/pool/main/g/graphite2/graphite2_1.3.14-1.debian.tar.xz' graphite2_1.3.14-1.debian.tar.xz 12068 SHA256:94d584e6c748fa7e2f851c3bb39cb2cdb437b4f91d1d636f3d842357724cd9bd
 ```
 
-### `dpkg` source package: `grep=3.8-5`
+### `dpkg` source package: `grep=3.11-2`
 
 Binary Packages:
 
-- `grep=3.8-5`
+- `grep=3.11-2`
 
 Licenses: (parsed from: `/usr/share/doc/grep/copyright`)
 
 - `GPL-3`
 - `GPL-3+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/grep/3.8-5/
-
+```console
+$ apt-get source -qq --print-uris grep=3.11-2
+'http://http.debian.net/debian/pool/main/g/grep/grep_3.11-2.dsc' grep_3.11-2.dsc 1618 SHA256:1242a5ba53e6c508aa472ad8de1a20de029b109b345af64c56f949ec40cd5bdb
+'http://http.debian.net/debian/pool/main/g/grep/grep_3.11.orig.tar.xz' grep_3.11.orig.tar.xz 1703776 SHA256:1db2aedde89d0dea42b16d9528f894c8d15dae4e190b59aecc78f5a951276eab
+'http://http.debian.net/debian/pool/main/g/grep/grep_3.11.orig.tar.xz.asc' grep_3.11.orig.tar.xz.asc 833 SHA256:89ec23ffd59b68822732dc8204fc89883c3af30a90ae390feb94346d9d09a589
+'http://http.debian.net/debian/pool/main/g/grep/grep_3.11-2.debian.tar.xz' grep_3.11-2.debian.tar.xz 20388 SHA256:39b98a7fea70c900a0ece8c317a1fc9ceed21326bddda715a2bb9fea60746a82
+```
 
 ### `dpkg` source package: `gzip=1.12-1`
 
@@ -1612,23 +1594,24 @@ $ apt-get source -qq --print-uris libdatrie=0.2.13-2
 'http://http.debian.net/debian/pool/main/libd/libdatrie/libdatrie_0.2.13-2.debian.tar.xz' libdatrie_0.2.13-2.debian.tar.xz 9604 SHA256:3f341eb067c5365345e0a416a3c835a8e785c3220aca27c8fb2a01499d0214e9
 ```
 
-### `dpkg` source package: `libdeflate=1.14-1`
+### `dpkg` source package: `libdeflate=1.18-1`
 
 Binary Packages:
 
-- `libdeflate0:amd64=1.14-1`
+- `libdeflate0:amd64=1.18-1`
 
 Licenses: (parsed from: `/usr/share/doc/libdeflate0/copyright`)
 
 - `Expat`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/libdeflate/1.14-1/
-
+```console
+$ apt-get source -qq --print-uris libdeflate=1.18-1
+'http://http.debian.net/debian/pool/main/libd/libdeflate/libdeflate_1.18-1.dsc' libdeflate_1.18-1.dsc 2196 SHA256:a5c2eb47274cb08515906097b8e8bac5db6bef9046741669a635efdedc3998f4
+'http://http.debian.net/debian/pool/main/libd/libdeflate/libdeflate_1.18.orig.tar.gz' libdeflate_1.18.orig.tar.gz 184924 SHA256:225d982bcaf553221c76726358d2ea139bb34913180b20823c782cede060affd
+'http://http.debian.net/debian/pool/main/libd/libdeflate/libdeflate_1.18-1.debian.tar.xz' libdeflate_1.18-1.debian.tar.xz 4756 SHA256:0a570e79b9fe0377fcf26888b1e5160779dfcfe6cf069892796016c2958eac0f
+```
 
 ### `dpkg` source package: `libffi=3.4.4-1`
 
@@ -2213,24 +2196,25 @@ $ apt-get source -qq --print-uris libxcb=1.15-1
 'http://http.debian.net/debian/pool/main/libx/libxcb/libxcb_1.15-1.diff.gz' libxcb_1.15-1.diff.gz 26267 SHA256:639c719ed06ffc397b200a209abd1a049e21e9e19431fb14c9ca870de01a6eac
 ```
 
-### `dpkg` source package: `libxcrypt=1:4.4.36-1`
+### `dpkg` source package: `libxcrypt=1:4.4.36-2`
 
 Binary Packages:
 
-- `libcrypt-dev:amd64=1:4.4.36-1`
-- `libcrypt1:amd64=1:4.4.36-1`
+- `libcrypt-dev:amd64=1:4.4.36-2`
+- `libcrypt1:amd64=1:4.4.36-2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/libxcrypt/1:4.4.36-1/
-
+```console
+$ apt-get source -qq --print-uris libxcrypt=1:4.4.36-2
+'http://http.debian.net/debian/pool/main/libx/libxcrypt/libxcrypt_4.4.36-2.dsc' libxcrypt_4.4.36-2.dsc 1563 SHA256:7a1c78fcd9029f5828f22d5697ec02aacaec276c23ab06af82f13e1a77026ea2
+'http://http.debian.net/debian/pool/main/libx/libxcrypt/libxcrypt_4.4.36.orig.tar.xz' libxcrypt_4.4.36.orig.tar.xz 392732 SHA256:7b7abbc89f13f5194211aa6861ed954e4fa3a210a4cb64f7e13dc8cf413e7f2a
+'http://http.debian.net/debian/pool/main/libx/libxcrypt/libxcrypt_4.4.36-2.debian.tar.xz' libxcrypt_4.4.36-2.debian.tar.xz 8284 SHA256:c91f86abf83fc71f69fe80d38f92354042436b6eca8a3ef666ffc86e319dd267
+```
 
 ### `dpkg` source package: `libxdmcp=1:1.1.2-3`
 
@@ -2370,11 +2354,11 @@ $ apt-get source -qq --print-uris libzstd=1.5.5+dfsg2-1
 'http://http.debian.net/debian/pool/main/libz/libzstd/libzstd_1.5.5%2bdfsg2-1.debian.tar.xz' libzstd_1.5.5+dfsg2-1.debian.tar.xz 21144 SHA256:1c5070fa2228e1ae1cca4798e2388a58bb4160c14714d518baa9ef595e80f864
 ```
 
-### `dpkg` source package: `linux=6.3.7-1`
+### `dpkg` source package: `linux=6.4.4-3`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.3.7-1`
+- `linux-libc-dev:amd64=6.4.4-3`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2389,10 +2373,10 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.3.7-1
-'http://http.debian.net/debian/pool/main/l/linux/linux_6.3.7-1.dsc' linux_6.3.7-1.dsc 287823 SHA256:394434267d258c3f73fe6c469346084332c45393f6e8dfb03c1490972f99fea9
-'http://http.debian.net/debian/pool/main/l/linux/linux_6.3.7.orig.tar.xz' linux_6.3.7.orig.tar.xz 139406656 SHA256:ba0d5d38b48c27061b5d4e2b542a2d243ccc74c6ed973a19930ed14fd9a5d346
-'http://http.debian.net/debian/pool/main/l/linux/linux_6.3.7-1.debian.tar.xz' linux_6.3.7-1.debian.tar.xz 1462828 SHA256:714c3f4b93bbe6f91c95ae5a6f7441312d9fb672924db13bea34c4cc5270f712
+$ apt-get source -qq --print-uris linux=6.4.4-3
+'http://http.debian.net/debian/pool/main/l/linux/linux_6.4.4-3.dsc' linux_6.4.4-3.dsc 288845 SHA256:d126d5a8bff09024d9f3e98cf135a98de4f00f52c5d3f91ea7735363f0259456
+'http://http.debian.net/debian/pool/main/l/linux/linux_6.4.4.orig.tar.xz' linux_6.4.4.orig.tar.xz 140401048 SHA256:bb9d8f1574646f53599d669f3b9610dc9cd0a77f57a49972c03964f5a21d67b1
+'http://http.debian.net/debian/pool/main/l/linux/linux_6.4.4-3.debian.tar.xz' linux_6.4.4-3.debian.tar.xz 1500912 SHA256:85093c80bdfbda628965a7e5602079259c0f8fc405136d12f5a9e5c900110d0c
 ```
 
 ### `dpkg` source package: `littler=0.3.18-2`
@@ -2456,11 +2440,11 @@ $ apt-get source -qq --print-uris make-dfsg=4.3-4.1
 'http://http.debian.net/debian/pool/main/m/make-dfsg/make-dfsg_4.3-4.1.diff.gz' make-dfsg_4.3-4.1.diff.gz 50940 SHA256:753c254ecaba425ebe2e0a0fb4d299847701e1c3eeb43df563e39975cae56b4c
 ```
 
-### `dpkg` source package: `mawk=1.3.4.20230525-1`
+### `dpkg` source package: `mawk=1.3.4.20230730-1`
 
 Binary Packages:
 
-- `mawk=1.3.4.20230525-1`
+- `mawk=1.3.4.20230730-1`
 
 Licenses: (parsed from: `/usr/share/doc/mawk/copyright`)
 
@@ -2469,13 +2453,15 @@ Licenses: (parsed from: `/usr/share/doc/mawk/copyright`)
 - `GPL-2.0-only`
 - `X11`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/mawk/1.3.4.20230525-1/
-
+```console
+$ apt-get source -qq --print-uris mawk=1.3.4.20230730-1
+'http://http.debian.net/debian/pool/main/m/mawk/mawk_1.3.4.20230730-1.dsc' mawk_1.3.4.20230730-1.dsc 2180 SHA256:b9afdadfc9ad2fed4e1cdf8edd87c0aacbb9b56bda74590e025ea846d1390b1c
+'http://http.debian.net/debian/pool/main/m/mawk/mawk_1.3.4.20230730.orig.tar.gz' mawk_1.3.4.20230730.orig.tar.gz 410248 SHA256:810b7cc0aa2bff5ff215f237e275b327b21ba49a0d7b36930e3ddc80f4ce5618
+'http://http.debian.net/debian/pool/main/m/mawk/mawk_1.3.4.20230730.orig.tar.gz.asc' mawk_1.3.4.20230730.orig.tar.gz.asc 729 SHA256:2beb152af3893b4870448642a932cde20194c0aaf7eaa002e27ffa06975c1af0
+'http://http.debian.net/debian/pool/main/m/mawk/mawk_1.3.4.20230730-1.debian.tar.xz' mawk_1.3.4.20230730-1.debian.tar.xz 15492 SHA256:e35b496d22c685f0a05c278fcbc90d6f0bc31783f263d2de412d268964bf35f1
+```
 
 ### `dpkg` source package: `mgcv=1.9-0-1`
 
@@ -2535,16 +2521,16 @@ $ apt-get source -qq --print-uris mpfr4=4.2.0-1
 'http://http.debian.net/debian/pool/main/m/mpfr4/mpfr4_4.2.0-1.debian.tar.xz' mpfr4_4.2.0-1.debian.tar.xz 12488 SHA256:05faf305be60659d8db47e1925fa4062be8fb89e5fcd70fb0e5444554b1625a8
 ```
 
-### `dpkg` source package: `ncurses=6.4+20230625-1`
+### `dpkg` source package: `ncurses=6.4+20230625-2`
 
 Binary Packages:
 
-- `libncurses-dev:amd64=6.4+20230625-1`
-- `libncurses6:amd64=6.4+20230625-1`
-- `libncursesw6:amd64=6.4+20230625-1`
-- `libtinfo6:amd64=6.4+20230625-1`
-- `ncurses-base=6.4+20230625-1`
-- `ncurses-bin=6.4+20230625-1`
+- `libncurses-dev:amd64=6.4+20230625-2`
+- `libncurses6:amd64=6.4+20230625-2`
+- `libncursesw6:amd64=6.4+20230625-2`
+- `libtinfo6:amd64=6.4+20230625-2`
+- `ncurses-base=6.4+20230625-2`
+- `ncurses-bin=6.4+20230625-2`
 
 Licenses: (parsed from: `/usr/share/doc/libncurses-dev/copyright`, `/usr/share/doc/libncurses6/copyright`, `/usr/share/doc/libncursesw6/copyright`, `/usr/share/doc/libtinfo6/copyright`, `/usr/share/doc/ncurses-base/copyright`, `/usr/share/doc/ncurses-bin/copyright`)
 
@@ -2552,20 +2538,22 @@ Licenses: (parsed from: `/usr/share/doc/libncurses-dev/copyright`, `/usr/share/d
 - `MIT/X11`
 - `X11`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris ncurses=6.4+20230625-2
+'http://http.debian.net/debian/pool/main/n/ncurses/ncurses_6.4%2b20230625-2.dsc' ncurses_6.4+20230625-2.dsc 3807 SHA256:c6cfa5801708eec68672aa9ff449b510810f11c413028c6afec29b2477f4f43d
+'http://http.debian.net/debian/pool/main/n/ncurses/ncurses_6.4%2b20230625.orig.tar.gz' ncurses_6.4+20230625.orig.tar.gz 3649551 SHA256:54d25c0215c1b7f6f17d64c7f8f229fb34af007d663c0fcd54d9557a1cacc3ee
+'http://http.debian.net/debian/pool/main/n/ncurses/ncurses_6.4%2b20230625.orig.tar.gz.asc' ncurses_6.4+20230625.orig.tar.gz.asc 729 SHA256:d20a0166bdf9f8eccc6df015a49fd60a168f00f8430431810fc49963b44c0965
+'http://http.debian.net/debian/pool/main/n/ncurses/ncurses_6.4%2b20230625-2.debian.tar.xz' ncurses_6.4+20230625-2.debian.tar.xz 48584 SHA256:c062930f677e4a4e0a9777517c3fbf46a41b959fc2609e85bd1a2334c994b95b
+```
 
-- http://snapshot.debian.org/package/ncurses/6.4+20230625-1/
-
-
-### `dpkg` source package: `nettle=3.8.1-2`
+### `dpkg` source package: `nettle=3.9.1-2`
 
 Binary Packages:
 
-- `libhogweed6:amd64=3.8.1-2`
-- `libnettle8:amd64=3.8.1-2`
+- `libhogweed6:amd64=3.9.1-2`
+- `libnettle8:amd64=3.9.1-2`
 
 Licenses: (parsed from: `/usr/share/doc/libhogweed6/copyright`, `/usr/share/doc/libnettle8/copyright`)
 
@@ -2574,7 +2562,6 @@ Licenses: (parsed from: `/usr/share/doc/libhogweed6/copyright`, `/usr/share/doc/
 - `GPL`
 - `GPL-2`
 - `GPL-2+`
-- `GPL-3+`
 - `GPL-3+ with Autoconf exception`
 - `LGPL`
 - `LGPL-2`
@@ -2582,13 +2569,15 @@ Licenses: (parsed from: `/usr/share/doc/libhogweed6/copyright`, `/usr/share/doc/
 - `LGPL-3+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/nettle/3.8.1-2/
-
+```console
+$ apt-get source -qq --print-uris nettle=3.9.1-2
+'http://http.debian.net/debian/pool/main/n/nettle/nettle_3.9.1-2.dsc' nettle_3.9.1-2.dsc 2274 SHA256:8ba0494afc18b086ef61d61c3b14a27f1c999ee89fbc55288b7a81eff395e521
+'http://http.debian.net/debian/pool/main/n/nettle/nettle_3.9.1.orig.tar.gz' nettle_3.9.1.orig.tar.gz 2396741 SHA256:ccfeff981b0ca71bbd6fbcb054f407c60ffb644389a5be80d6716d5b550c6ce3
+'http://http.debian.net/debian/pool/main/n/nettle/nettle_3.9.1.orig.tar.gz.asc' nettle_3.9.1.orig.tar.gz.asc 573 SHA256:9746017a1a7fe60aad4b929ea592bc6ac51e12ea7179f289944eb44828d958af
+'http://http.debian.net/debian/pool/main/n/nettle/nettle_3.9.1-2.debian.tar.xz' nettle_3.9.1-2.debian.tar.xz 24440 SHA256:75e4612ae51801a674c1697bd189811606e81e72e7ac25ef6c056b7a2a9b2986
+```
 
 ### `dpkg` source package: `nghttp2=1.55.1-1`
 
@@ -2625,26 +2614,19 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-nlme/copyright`)
 - `GPL`
 - `GPL `
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nlme=3.1.162-1
-'http://deb.debian.org/debian/pool/main/n/nlme/nlme_3.1.162-1.dsc' nlme_3.1.162-1.dsc 1840 SHA256:049a9ae92e930c9e397f4d69c260f1f4842d37d72a0c2d10d6dccc08841ca35b
-'http://deb.debian.org/debian/pool/main/n/nlme/nlme_3.1.162.orig.tar.gz' nlme_3.1.162.orig.tar.gz 848546 SHA256:ba6da2575554afa2614c4cba9971f8a9f8a07622d201284cb78899f3d6a2dc67
-'http://deb.debian.org/debian/pool/main/n/nlme/nlme_3.1.162-1.debian.tar.xz' nlme_3.1.162-1.debian.tar.xz 7312 SHA256:f1c45b43c07e3344cfa08a57e3b3427eaf447ad0ea1b04c903edcf4c5969de8e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nlme/3.1.162-1/
 
-- https://sources.debian.net/src/nlme/3.1.162-1/ (for browsing the source)
-- https://sources.debian.net/src/nlme/3.1.162-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nlme/3.1.162-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openblas=0.3.23+ds-2`
+### `dpkg` source package: `openblas=0.3.23+ds-3`
 
 Binary Packages:
 
-- `libopenblas0-pthread:amd64=0.3.23+ds-2`
+- `libopenblas0-pthread:amd64=0.3.23+ds-3`
 
 Licenses: (parsed from: `/usr/share/doc/libopenblas0-pthread/copyright`)
 
@@ -2654,13 +2636,14 @@ Licenses: (parsed from: `/usr/share/doc/libopenblas0-pthread/copyright`)
 - `BSD-3-clause`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/openblas/0.3.23+ds-2/
-
+```console
+$ apt-get source -qq --print-uris openblas=0.3.23+ds-3
+'http://http.debian.net/debian/pool/main/o/openblas/openblas_0.3.23%2bds-3.dsc' openblas_0.3.23+ds-3.dsc 4419 SHA256:70bfdbe0cdf6452c218145b81c92512e60dd6b36de8b4a22096e41dfc1a3a005
+'http://http.debian.net/debian/pool/main/o/openblas/openblas_0.3.23%2bds.orig.tar.xz' openblas_0.3.23+ds.orig.tar.xz 1874384 SHA256:84863ced908986a0aa5dd5983a58fc10dd9e995733e29aafdcaec9d1c642ffbf
+'http://http.debian.net/debian/pool/main/o/openblas/openblas_0.3.23%2bds-3.debian.tar.xz' openblas_0.3.23+ds-3.debian.tar.xz 24372 SHA256:386c2ef24b62da25ecae28fe3842aaea02d288bc8795156a6bbee20b12808086
+```
 
 ### `dpkg` source package: `openldap=2.5.13+dfsg-5`
 
@@ -2704,12 +2687,12 @@ $ apt-get source -qq --print-uris openldap=2.5.13+dfsg-5
 'http://http.debian.net/debian/pool/main/o/openldap/openldap_2.5.13%2bdfsg-5.debian.tar.xz' openldap_2.5.13+dfsg-5.debian.tar.xz 164516 SHA256:161e22c1c79e2f7c6013cfc2bbf0265d6bbb78d91a0fcfa9ca866837f2c31d88
 ```
 
-### `dpkg` source package: `openssl=3.0.9-1`
+### `dpkg` source package: `openssl=3.0.10-1`
 
 Binary Packages:
 
-- `libssl3:amd64=3.0.9-1`
-- `openssl=3.0.9-1`
+- `libssl3:amd64=3.0.10-1`
+- `openssl=3.0.10-1`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
 
@@ -2721,18 +2704,18 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=3.0.9-1
-'http://http.debian.net/debian/pool/main/o/openssl/openssl_3.0.9-1.dsc' openssl_3.0.9-1.dsc 2459 SHA256:e1349619b782e9a7ef5e838f9d3ef3b669454ddcd4be740a1183d8cf12153e91
-'http://http.debian.net/debian/pool/main/o/openssl/openssl_3.0.9.orig.tar.gz' openssl_3.0.9.orig.tar.gz 15181285 SHA256:eb1ab04781474360f77c318ab89d8c5a03abc38e63d65a603cabbf1b00a1dc90
-'http://http.debian.net/debian/pool/main/o/openssl/openssl_3.0.9.orig.tar.gz.asc' openssl_3.0.9.orig.tar.gz.asc 833 SHA256:75f46c27c14fbe84c16d41ed95b1af347641c06a53533d3926c4fc05f59ef87a
-'http://http.debian.net/debian/pool/main/o/openssl/openssl_3.0.9-1.debian.tar.xz' openssl_3.0.9-1.debian.tar.xz 75600 SHA256:e2d357313d50b244727c37aceae3c1e69b0d03a6e911d73de5382515a27647f1
+$ apt-get source -qq --print-uris openssl=3.0.10-1
+'http://http.debian.net/debian/pool/main/o/openssl/openssl_3.0.10-1.dsc' openssl_3.0.10-1.dsc 2461 SHA256:c264f03731d2b2258c6875494a8a8980306758244808d22758b1d8c4ffcb7c2e
+'http://http.debian.net/debian/pool/main/o/openssl/openssl_3.0.10.orig.tar.gz' openssl_3.0.10.orig.tar.gz 15194904 SHA256:1761d4f5b13a1028b9b6f3d4b8e17feb0cedc9370f6afe61d7193d2cdce83323
+'http://http.debian.net/debian/pool/main/o/openssl/openssl_3.0.10.orig.tar.gz.asc' openssl_3.0.10.orig.tar.gz.asc 833 SHA256:f6f2e5f62e74a7f87d37e0d1de70b3612b01a9afcfdc00bc05fde82611f26e3d
+'http://http.debian.net/debian/pool/main/o/openssl/openssl_3.0.10-1.debian.tar.xz' openssl_3.0.10-1.debian.tar.xz 69012 SHA256:38ee9bd198c5f49fa4315cfb3884fe0fb78818d9caed2f9c7a428889cfd4a825
 ```
 
-### `dpkg` source package: `p11-kit=0.25.0-3`
+### `dpkg` source package: `p11-kit=0.25.0-4`
 
 Binary Packages:
 
-- `libp11-kit0:amd64=0.25.0-3`
+- `libp11-kit0:amd64=0.25.0-4`
 
 Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 
@@ -2745,13 +2728,15 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 - `permissive-like-automake-output`
 - `same-as-rest-of-p11kit`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/p11-kit/0.25.0-3/
-
+```console
+$ apt-get source -qq --print-uris p11-kit=0.25.0-4
+'http://http.debian.net/debian/pool/main/p/p11-kit/p11-kit_0.25.0-4.dsc' p11-kit_0.25.0-4.dsc 2501 SHA256:9dad05f58a3044ae8bc34833e1ade1be3977cb724a30980a66eb67405801cc1c
+'http://http.debian.net/debian/pool/main/p/p11-kit/p11-kit_0.25.0.orig.tar.xz' p11-kit_0.25.0.orig.tar.xz 958940 SHA256:d55583bcdde83d86579cabe3a8f7f2638675fef01d23cace733ff748fc354706
+'http://http.debian.net/debian/pool/main/p/p11-kit/p11-kit_0.25.0.orig.tar.xz.asc' p11-kit_0.25.0.orig.tar.xz.asc 228 SHA256:ee893a62a368fb807abc678a29279b1c04808ab626b68d5d7085b8b4ab4174c9
+'http://http.debian.net/debian/pool/main/p/p11-kit/p11-kit_0.25.0-4.debian.tar.xz' p11-kit_0.25.0-4.debian.tar.xz 25880 SHA256:9cd4e6d187a4852ec0d5e167be2b9240192c4f91da5b8a5991013d8de7f27286
+```
 
 ### `dpkg` source package: `pam=1.5.2-6`
 
@@ -2962,14 +2947,14 @@ $ apt-get source -qq --print-uris pkgconf=1.8.1-1
 'http://http.debian.net/debian/pool/main/p/pkgconf/pkgconf_1.8.1-1.debian.tar.xz' pkgconf_1.8.1-1.debian.tar.xz 15060 SHA256:bd9330105d17bf4b9a9d2aaba4a150b35da21b7ba4b45d4bf7e034fa6e53ba2f
 ```
 
-### `dpkg` source package: `r-base=4.3.1-3`
+### `dpkg` source package: `r-base=4.3.1-4`
 
 Binary Packages:
 
-- `r-base=4.3.1-3`
-- `r-base-core=4.3.1-3`
-- `r-base-dev=4.3.1-3`
-- `r-recommended=4.3.1-3`
+- `r-base=4.3.1-4`
+- `r-base-core=4.3.1-4`
+- `r-base-dev=4.3.1-4`
+- `r-recommended=4.3.1-4`
 
 Licenses: (parsed from: `/usr/share/doc/r-base/copyright`, `/usr/share/doc/r-base-core/copyright`, `/usr/share/doc/r-base-dev/copyright`, `/usr/share/doc/r-recommended/copyright`)
 
@@ -2980,13 +2965,14 @@ Licenses: (parsed from: `/usr/share/doc/r-base/copyright`, `/usr/share/doc/r-bas
 - `LGPL-2.1`
 - `LGPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/r-base/4.3.1-3/
-
+```console
+$ apt-get source -qq --print-uris r-base=4.3.1-4
+'http://http.debian.net/debian/pool/main/r/r-base/r-base_4.3.1-4.dsc' r-base_4.3.1-4.dsc 2925 SHA256:a67731319b5b1a8ccc5fab1036990d71ab239bd58327fb1029c86e80da08cca0
+'http://http.debian.net/debian/pool/main/r/r-base/r-base_4.3.1.orig.tar.gz' r-base_4.3.1.orig.tar.gz 34899964 SHA256:8dd0bf24f1023c6f618c3b317383d291b4a494f40d73b983ac22ffea99e4ba99
+'http://http.debian.net/debian/pool/main/r/r-base/r-base_4.3.1-4.debian.tar.xz' r-base_4.3.1-4.debian.tar.xz 99580 SHA256:08f44d6b333c1f60299bc6ac0e94a4bf293237be0be14340c430205803a825fc
+```
 
 ### `dpkg` source package: `r-cran-class=7.3-22-2`
 
@@ -3067,24 +3053,25 @@ $ apt-get source -qq --print-uris r-cran-nnet=7.3-19-2
 'http://http.debian.net/debian/pool/main/r/r-cran-nnet/r-cran-nnet_7.3-19-2.debian.tar.xz' r-cran-nnet_7.3-19-2.debian.tar.xz 3332 SHA256:49aaccdda8d36b3f195ba69de26066b2e1245803a9ab4dafa536589fa85977b7
 ```
 
-### `dpkg` source package: `r-cran-spatial=7.3-16-1`
+### `dpkg` source package: `r-cran-spatial=7.3-17-1`
 
 Binary Packages:
 
-- `r-cran-spatial=7.3-16-1`
+- `r-cran-spatial=7.3-17-1`
 
 Licenses: (parsed from: `/usr/share/doc/r-cran-spatial/copyright`)
 
 - `GPL-2`
 - `GPL-2 | GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/r-cran-spatial/7.3-16-1/
-
+```console
+$ apt-get source -qq --print-uris r-cran-spatial=7.3-17-1
+'http://http.debian.net/debian/pool/main/r/r-cran-spatial/r-cran-spatial_7.3-17-1.dsc' r-cran-spatial_7.3-17-1.dsc 1884 SHA256:2b53f753efcdc641ef16e58e1bed93ee4a9d7bf52864e95359422d6c5ad4b5c0
+'http://http.debian.net/debian/pool/main/r/r-cran-spatial/r-cran-spatial_7.3-17.orig.tar.gz' r-cran-spatial_7.3-17.orig.tar.gz 44661 SHA256:f1003ed8cff2a47169a4787c8be46e8c2c501cc06c8b1e5f97bf62507e5f5dd7
+'http://http.debian.net/debian/pool/main/r/r-cran-spatial/r-cran-spatial_7.3-17-1.debian.tar.xz' r-cran-spatial_7.3-17-1.debian.tar.xz 3224 SHA256:1299d2624d2cd604237e97116659b15f60eb6bb6179c5265cee1b89a6b708fe8
+```
 
 ### `dpkg` source package: `readline=8.2-1.3`
 
@@ -3113,11 +3100,11 @@ $ apt-get source -qq --print-uris readline=8.2-1.3
 'http://http.debian.net/debian/pool/main/r/readline/readline_8.2-1.3.debian.tar.xz' readline_8.2-1.3.debian.tar.xz 30016 SHA256:8cd3c02d6c07b4cf57da607de168a9e347ee05c31857f0f6236fe3df4fc207d9
 ```
 
-### `dpkg` source package: `rmatrix=1.5-3-1`
+### `dpkg` source package: `rmatrix=1.6-0-1`
 
 Binary Packages:
 
-- `r-cran-matrix=1.5-3-1`
+- `r-cran-matrix=1.6-0-1`
 
 Licenses: (parsed from: `/usr/share/doc/r-cran-matrix/copyright`)
 
@@ -3125,13 +3112,14 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-matrix/copyright`)
 - `GPL-2+`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/rmatrix/1.5-3-1/
-
+```console
+$ apt-get source -qq --print-uris rmatrix=1.6-0-1
+'http://http.debian.net/debian/pool/main/r/rmatrix/rmatrix_1.6-0-1.dsc' rmatrix_1.6-0-1.dsc 1860 SHA256:92afab80a44c91e14f2381bbb6415053310de48282208e8b0942ad28e7052cea
+'http://http.debian.net/debian/pool/main/r/rmatrix/rmatrix_1.6-0.orig.tar.gz' rmatrix_1.6-0.orig.tar.gz 2058479 SHA256:ebebe680f79f7147ccc5f8eb243f3b685fb37996d9884d246db421933d76b79d
+'http://http.debian.net/debian/pool/main/r/rmatrix/rmatrix_1.6-0-1.debian.tar.xz' rmatrix_1.6-0-1.debian.tar.xz 5868 SHA256:8da1824efd64188e7ef4ff2a895fc1bcf488549022b382a213137cf03ca74d05
+```
 
 ### `dpkg` source package: `rpart=4.1.19-1`
 
@@ -3295,12 +3283,12 @@ $ apt-get source -qq --print-uris survival=3.5-5-2
 'http://http.debian.net/debian/pool/main/s/survival/survival_3.5-5-2.debian.tar.xz' survival_3.5-5-2.debian.tar.xz 6316 SHA256:69d3fa58438e1ac397a6f3f4ae1c736c00c766f388ff6aaf79711eebf4b1b964
 ```
 
-### `dpkg` source package: `systemd=253.5-1`
+### `dpkg` source package: `systemd=254-1`
 
 Binary Packages:
 
-- `libsystemd0:amd64=253.5-1`
-- `libudev1:amd64=253.5-1`
+- `libsystemd0:amd64=254-1`
+- `libudev1:amd64=254-1`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -3318,7 +3306,7 @@ This is *usually* due to a new package version being released and the old versio
 
 The source package *may* still be available for download from:
 
-- http://snapshot.debian.org/package/systemd/253.5-1/
+- http://snapshot.debian.org/package/systemd/254-1/
 
 
 ### `dpkg` source package: `sysvinit=3.07-1`
@@ -3410,23 +3398,24 @@ $ apt-get source -qq --print-uris tex-gyre=20180621-6
 'http://http.debian.net/debian/pool/main/t/tex-gyre/tex-gyre_20180621-6.debian.tar.xz' tex-gyre_20180621-6.debian.tar.xz 11632 SHA256:731e04abb52038a7de626e4679d6b823b2d692be029bb88399951fb69b286f67
 ```
 
-### `dpkg` source package: `tiff=4.5.1-1`
+### `dpkg` source package: `tiff=4.5.1+git230720-1`
 
 Binary Packages:
 
-- `libtiff6:amd64=4.5.1-1`
+- `libtiff6:amd64=4.5.1+git230720-1`
 
 Licenses: (parsed from: `/usr/share/doc/libtiff6/copyright`)
 
 - `Hylafax`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/tiff/4.5.1-1/
-
+```console
+$ apt-get source -qq --print-uris tiff=4.5.1+git230720-1
+'http://http.debian.net/debian/pool/main/t/tiff/tiff_4.5.1%2bgit230720-1.dsc' tiff_4.5.1+git230720-1.dsc 2322 SHA256:4c19ac8cd08472e55ed12ad449d883cd2cabb7d7c0845234847e24817a9e0511
+'http://http.debian.net/debian/pool/main/t/tiff/tiff_4.5.1%2bgit230720.orig.tar.xz' tiff_4.5.1+git230720.orig.tar.xz 1781896 SHA256:0e51bcf3a3ffa5fc76ea6aeb74a797f95c84544fcc8b6a1ec5def967a78e9e12
+'http://http.debian.net/debian/pool/main/t/tiff/tiff_4.5.1%2bgit230720-1.debian.tar.xz' tiff_4.5.1+git230720-1.debian.tar.xz 21964 SHA256:eb3299ba003f5a6ac414ef10bc2e4fb6607ef7366a4c8dc6127a82fa916e3c73
+```
 
 ### `dpkg` source package: `tk8.6=8.6.13-2`
 
@@ -3529,20 +3518,19 @@ $ apt-get source -qq --print-uris usrmerge=35
 'http://http.debian.net/debian/pool/main/u/usrmerge/usrmerge_35.tar.xz' usrmerge_35.tar.xz 14416 SHA256:ec52fa22f174204f24ebb45caf579275f5a2b2404be5d4b3fe29ad60ad566829
 ```
 
-### `dpkg` source package: `util-linux=2.38.1-6`
+### `dpkg` source package: `util-linux=2.39.1-3`
 
 Binary Packages:
 
-- `bsdutils=1:2.38.1-6`
-- `libblkid1:amd64=2.38.1-6`
-- `libmount1:amd64=2.38.1-6`
-- `libsmartcols1:amd64=2.38.1-6`
-- `libuuid1:amd64=2.38.1-6`
-- `mount=2.38.1-6`
-- `util-linux=2.38.1-6`
-- `util-linux-extra=2.38.1-6`
+- `bsdutils=1:2.39.1-3`
+- `libblkid1:amd64=2.39.1-3`
+- `libmount1:amd64=2.39.1-3`
+- `libsmartcols1:amd64=2.39.1-3`
+- `libuuid1:amd64=2.39.1-3`
+- `mount=2.39.1-3`
+- `util-linux=2.39.1-3`
 
-Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`, `/usr/share/doc/util-linux-extra/copyright`)
+Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
 - `BSD-3-clause`
 - `BSD-4-clause`
@@ -3566,7 +3554,7 @@ This is *usually* due to a new package version being released and the old versio
 
 The source package *may* still be available for download from:
 
-- http://snapshot.debian.org/package/util-linux/2.38.1-6/
+- http://snapshot.debian.org/package/util-linux/2.39.1-3/
 
 
 ### `dpkg` source package: `vim=2:9.0.1672-1`
