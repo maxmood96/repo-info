@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:64fde46965f17f47729ce96fb75442dd2c4aaf09747ebdff77118d9310a522ef`
-- Created: `2023-08-16T16:09:27.909092648Z`
+- Image ID: `sha256:f8f1433dfa1b4b0cf422c5fc6559d8fb1729911e2406d5c057ca1f3cd84a094a`
+- Created: `2023-08-17T20:34:25.164899977Z`
 - Virtual Size: ~ 653.47 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1348,11 +1348,11 @@ $ apt-get source -qq --print-uris mawk=1.3.4.20200120-3
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.4.20200120-3.debian.tar.xz' mawk_1.3.4.20200120-3.debian.tar.xz 7520 SHA512:bc4f5401de313108595ba91b17f44b5c67d7650b5557eef8a6c63c75e2ccee5dfd8900576d7e81f0ab1ac2e570f64fa75f38f56f6d4535437c803029216501af
 ```
 
-### `dpkg` source package: `mongodb-database-tools=100.7.5`
+### `dpkg` source package: `mongodb-database-tools=100.8.0`
 
 Binary Packages:
 
-- `mongodb-database-tools=100.7.5`
+- `mongodb-database-tools=100.8.0`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
