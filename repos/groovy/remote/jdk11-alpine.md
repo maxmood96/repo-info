@@ -1,7 +1,7 @@
 ## `groovy:jdk11-alpine`
 
 ```console
-$ docker pull groovy@sha256:2decfaf8ca481cf4bcbd69f6b721b5f6a0c3fcbd70406d22e782bbd03c3c0db3
+$ docker pull groovy@sha256:0a1d7bce3a72c57686303072528e0f118fb5ed609eaccdb7dcf9cd81c056dfd6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull groovy@sha256:2decfaf8ca481cf4bcbd69f6b721b5f6a0c3fcbd70406d22e782
 ### `groovy:jdk11-alpine` - linux; amd64
 
 ```console
-$ docker pull groovy@sha256:7a0e4f28c253221a9f303d791a81a39b8b34df7727542324a6a45e73ca927ae7
+$ docker pull groovy@sha256:122fcba35857cb8d7bc1628f2872f8239a1c3030e8d55d450048201193dacc8b
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **182.5 MB (182509816 bytes)**  
+-	Total Size: **182.6 MB (182556448 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3b4bfe18b36fed888e4163be60cd1b90af20aba743c3f82b6374e0c48db3225a`
+-	Image ID: `sha256:dd324c6162e441f343204507d43af6ac274b85828f75347e8f6f273b389a13f2`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
@@ -57,13 +57,13 @@ RUN set -o errexit -o nounset     && echo "Adding groovy user and group"     && 
 VOLUME [/home/groovy/.groovy/grapes]
 # Mon, 14 Aug 2023 19:58:26 GMT
 WORKDIR /home/groovy
-# Mon, 14 Aug 2023 19:58:26 GMT
-ENV GROOVY_VERSION=4.0.13
-# Mon, 14 Aug 2023 19:58:36 GMT
+# Tue, 22 Aug 2023 20:22:07 GMT
+ENV GROOVY_VERSION=4.0.14
+# Tue, 22 Aug 2023 20:22:22 GMT
 RUN set -o errexit -o nounset     && echo "Installing build dependencies"     && apk add --no-cache --virtual .build-deps         gnupg         && echo "Downloading Groovy"     && wget --no-verbose --output-document=groovy.zip "https://archive.apache.org/dist/groovy/${GROOVY_VERSION}/distribution/apache-groovy-binary-${GROOVY_VERSION}.zip"         && echo "Importing keys listed in http://www.apache.org/dist/groovy/KEYS from key server"     && export GNUPGHOME="$(mktemp -d)"     && gpg --batch --no-tty --keyserver keyserver.ubuntu.com --recv-keys         7FAA0F2206DE228F0DB01AD741321490758AAD6F         331224E1D7BE883D16E8A685825C06C827AF6B66         34441E504A937F43EB0DAEF96A65176A0FB1CD0B         9A810E3B766E089FFB27C70F11B595CEDC4AEBB5         81CABC23EECA0790E8989B361FF96E10F0E13706         && echo "Checking download signature"     && wget --no-verbose --output-document=groovy.zip.asc "https://archive.apache.org/dist/groovy/${GROOVY_VERSION}/distribution/apache-groovy-binary-${GROOVY_VERSION}.zip.asc"     && gpg --batch --no-tty --verify groovy.zip.asc groovy.zip     && rm -rf "${GNUPGHOME}"     && rm groovy.zip.asc         && echo "Cleaning up build dependencies"     && apk del .build-deps         && echo "Installing Groovy"     && unzip groovy.zip     && rm groovy.zip     && mv "groovy-${GROOVY_VERSION}" "${GROOVY_HOME}/"     && ln -s "${GROOVY_HOME}/bin/grape" /usr/bin/grape     && ln -s "${GROOVY_HOME}/bin/groovy" /usr/bin/groovy     && ln -s "${GROOVY_HOME}/bin/groovyc" /usr/bin/groovyc     && ln -s "${GROOVY_HOME}/bin/groovyConsole" /usr/bin/groovyConsole     && ln -s "${GROOVY_HOME}/bin/groovydoc" /usr/bin/groovydoc     && ln -s "${GROOVY_HOME}/bin/groovysh" /usr/bin/groovysh     && ln -s "${GROOVY_HOME}/bin/java2groovy" /usr/bin/java2groovy         && echo "Editing startGroovy to include java.xml.bind module"     && sed --in-place 's|startGroovy ( ) {|startGroovy ( ) {\n    JAVA_OPTS="$JAVA_OPTS --add-modules=ALL-SYSTEM"|' "${GROOVY_HOME}/bin/startGroovy"
-# Mon, 14 Aug 2023 19:58:36 GMT
+# Tue, 22 Aug 2023 20:22:22 GMT
 USER 1000:1000
-# Mon, 14 Aug 2023 19:58:37 GMT
+# Tue, 22 Aug 2023 20:22:23 GMT
 RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && groovy --version
 ```
 
@@ -92,11 +92,11 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 		Last Modified: Mon, 14 Aug 2023 20:00:25 GMT  
 		Size: 1.4 KB (1354 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2736c28b7e0c6a603b7152196a68cab343b7f4bc77886f2a87a4c5e18d8de57b`  
-		Last Modified: Mon, 14 Aug 2023 20:00:27 GMT  
-		Size: 29.7 MB (29671390 bytes)  
+	-	`sha256:0e5dca3b0d0ecf5d5f8059f3ba92a1c8cfc39e6550c52640f0d39432b02a064d`  
+		Last Modified: Tue, 22 Aug 2023 20:24:45 GMT  
+		Size: 29.7 MB (29718021 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46dd7457fb213c5a279beb261a7993e83b30d20ffff6885a0877950234b9518f`  
-		Last Modified: Mon, 14 Aug 2023 20:00:25 GMT  
-		Size: 172.0 B  
+	-	`sha256:ce6993c1581309efe96826c735e63a0f28ffb76f35ea971757f383a0eeab29d4`  
+		Last Modified: Tue, 22 Aug 2023 20:24:43 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
