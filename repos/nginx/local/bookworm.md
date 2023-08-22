@@ -1,18 +1,18 @@
-# `nginx:1.25.1`
+# `nginx:1.25.2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:89da1fb6dcb964dd35c3f41b7b93ffc35eaf20bc61f2e1335fea710a18424287`
-- Created: `2023-07-28T02:30:07.215160457Z`
-- Virtual Size: ~ 186.86 Mb  
+- Image ID: `sha256:eea7b3dcba7ee47c0d16a60cc85d2b977d166be3960541991f3e6294d795ed24`
+- Created: `2023-08-16T09:50:55.765544033Z`
+- Virtual Size: ~ 186.64 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.25.1`
-  - `NJS_VERSION=0.7.12`
+  - `NGINX_VERSION=1.25.2`
+  - `NJS_VERSION=0.8.0`
   - `PKG_RELEASE=1~bookworm`
 - Labels:
   - `maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>`
@@ -1601,6 +1601,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libdeflate/1.14-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libdeflate/1.14-1/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `libedit=3.1-20221030-2`
+
+Binary Packages:
+
+- `libedit2:amd64=3.1-20221030-2`
+
+Licenses: (parsed from: `/usr/share/doc/libedit2/copyright`)
+
+- `BSD-3-clause`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libedit=3.1-20221030-2
+'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20221030-2.dsc' libedit_3.1-20221030-2.dsc 2281 SHA256:6e701f5e0bcd81f80fe3686d84861e9d9247e247ed08fb96ffc3746102aedd21
+'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20221030.orig.tar.gz' libedit_3.1-20221030.orig.tar.gz 533261 SHA256:f0925a5adf4b1bf116ee19766b7daa766917aec198747943b1c4edf67a4be2bb
+'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20221030-2.debian.tar.xz' libedit_3.1-20221030-2.debian.tar.xz 16488 SHA256:ab1ec0e03ae5122831a02d9a0be2afa4b91d739cd459ee1e168c917bae66b622
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libedit/3.1-20221030-2/ (for browsing the source)
+- https://sources.debian.net/src/libedit/3.1-20221030-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libedit/3.1-20221030-2/ (for access to the source package after it no longer exists in the archive)
+
 ### `dpkg` source package: `libffi=3.4.4-1`
 
 Binary Packages:
@@ -2577,11 +2602,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nghttp2/1.52.0-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nghttp2/1.52.0-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nginx-module-geoip=1.25.1-1~bookworm`
+### `dpkg` source package: `nginx-module-geoip=1.25.2-1~bookworm`
 
 Binary Packages:
 
-- `nginx-module-geoip=1.25.1-1~bookworm`
+- `nginx-module-geoip=1.25.2-1~bookworm`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2591,11 +2616,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-image-filter=1.25.1-1~bookworm`
+### `dpkg` source package: `nginx-module-image-filter=1.25.2-1~bookworm`
 
 Binary Packages:
 
-- `nginx-module-image-filter=1.25.1-1~bookworm`
+- `nginx-module-image-filter=1.25.2-1~bookworm`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2605,11 +2630,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-njs=1.25.1+0.7.12-1~bookworm`
+### `dpkg` source package: `nginx-module-njs=1.25.2+0.8.0-1~bookworm`
 
 Binary Packages:
 
-- `nginx-module-njs=1.25.1+0.7.12-1~bookworm`
+- `nginx-module-njs=1.25.2+0.8.0-1~bookworm`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2619,11 +2644,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-xslt=1.25.1-1~bookworm`
+### `dpkg` source package: `nginx-module-xslt=1.25.2-1~bookworm`
 
 Binary Packages:
 
-- `nginx-module-xslt=1.25.1-1~bookworm`
+- `nginx-module-xslt=1.25.2-1~bookworm`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2633,11 +2658,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx=1.25.1-1~bookworm`
+### `dpkg` source package: `nginx=1.25.2-1~bookworm`
 
 Binary Packages:
 
-- `nginx=1.25.1-1~bookworm`
+- `nginx=1.25.2-1~bookworm`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2902,38 +2927,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/perl/5.36.0-7/ (for browsing the source)
 - https://sources.debian.net/src/perl/5.36.0-7/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/perl/5.36.0-7/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `readline=8.2-1.3`
-
-Binary Packages:
-
-- `libreadline8:amd64=8.2-1.3`
-- `readline-common=8.2-1.3`
-
-Licenses: (parsed from: `/usr/share/doc/libreadline8/copyright`, `/usr/share/doc/readline-common/copyright`)
-
-- `GFDL`
-- `GFDL-NIV-1.3+`
-- `GPL-2`
-- `GPL-2+`
-- `GPL-3`
-- `GPL-3+`
-- `ISC-no-attribution`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris readline=8.2-1.3
-'http://deb.debian.org/debian/pool/main/r/readline/readline_8.2-1.3.dsc' readline_8.2-1.3.dsc 2553 SHA256:05497ea99bef3f14b8d502cbe3f84fe7bbc0bce1c4f139ca32f0fd60dcac977e
-'http://deb.debian.org/debian/pool/main/r/readline/readline_8.2.orig.tar.gz' readline_8.2.orig.tar.gz 3043952 SHA256:3feb7171f16a84ee82ca18a36d7b9be109a52c04f492a053331d7d1095007c35
-'http://deb.debian.org/debian/pool/main/r/readline/readline_8.2-1.3.debian.tar.xz' readline_8.2-1.3.debian.tar.xz 30016 SHA256:8cd3c02d6c07b4cf57da607de168a9e347ee05c31857f0f6236fe3df4fc207d9
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/readline/8.2-1.3/ (for browsing the source)
-- https://sources.debian.net/src/readline/8.2-1.3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/readline/8.2-1.3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rtmpdump=2.4+20151223.gitfa8646d.1-2`
 
