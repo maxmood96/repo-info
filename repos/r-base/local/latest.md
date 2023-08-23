@@ -783,10 +783,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris fontconfig=2.14.2-3
-'http://http.debian.net/debian/pool/main/f/fontconfig/fontconfig_2.14.2-3.dsc' fontconfig_2.14.2-3.dsc 2323 SHA256:8aea2b810e1f4e879c2ed1f3c3afdd27b03fff1ccc28280b2a64af44863719e8
-'http://http.debian.net/debian/pool/main/f/fontconfig/fontconfig_2.14.2.orig.tar.xz' fontconfig_2.14.2.orig.tar.xz 1440844 SHA256:dba695b57bce15023d2ceedef82062c2b925e51f5d4cc4aef736cf13f60a468b
-'http://http.debian.net/debian/pool/main/f/fontconfig/fontconfig_2.14.2-3.debian.tar.xz' fontconfig_2.14.2-3.debian.tar.xz 56144 SHA256:b52eab97a07fe5d8731e7b95b5db6f0a65812894076297ceb24776b0ed42c088
+'http://deb.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.14.2-3.dsc' fontconfig_2.14.2-3.dsc 2323 SHA256:8aea2b810e1f4e879c2ed1f3c3afdd27b03fff1ccc28280b2a64af44863719e8
+'http://deb.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.14.2.orig.tar.xz' fontconfig_2.14.2.orig.tar.xz 1440844 SHA256:dba695b57bce15023d2ceedef82062c2b925e51f5d4cc4aef736cf13f60a468b
+'http://deb.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.14.2-3.debian.tar.xz' fontconfig_2.14.2-3.debian.tar.xz 56144 SHA256:b52eab97a07fe5d8731e7b95b5db6f0a65812894076297ceb24776b0ed42c088
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/fontconfig/2.14.2-3/ (for browsing the source)
+- https://sources.debian.net/src/fontconfig/2.14.2-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/fontconfig/2.14.2-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `foreign=0.8.84-1`
 
@@ -921,13 +927,13 @@ Licenses: (parsed from: `/usr/share/doc/cpp/copyright`, `/usr/share/doc/g++/copy
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-defaults=1.207
-'http://http.debian.net/debian/pool/main/g/gcc-defaults/gcc-defaults_1.207.dsc' gcc-defaults_1.207.dsc 12592 SHA256:64b7ef40c326cdd9b84ad90bfebfb447f584b2905834fde79866435c252a01cf
-'http://http.debian.net/debian/pool/main/g/gcc-defaults/gcc-defaults_1.207.tar.xz' gcc-defaults_1.207.tar.xz 45240 SHA256:c1769eadd5e06e6e644968a203ee4aa621f5e1636bd86c2a6acde28fc5f7bcb3
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/gcc-defaults/1.207/
+
 
 ### `dpkg` source package: `gdbm=1.23-3`
 
@@ -1397,15 +1403,13 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.20.1-2
-'http://http.debian.net/debian/pool/main/k/krb5/krb5_1.20.1-2.dsc' krb5_1.20.1-2.dsc 3168 SHA256:708ce2f57cd69f1489f7eb97a6191548770d7dd5af02dfc770aa02e328f8f861
-'http://http.debian.net/debian/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz' krb5_1.20.1.orig.tar.gz 8661660 SHA256:704aed49b19eb5a7178b34b2873620ec299db08752d6a8574f95d41879ab8851
-'http://http.debian.net/debian/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz.asc' krb5_1.20.1.orig.tar.gz.asc 833 SHA256:2afeec5dbc586cc40b7975645e02b4c41c4d719dd02213e828c72d8239d55666
-'http://http.debian.net/debian/pool/main/k/krb5/krb5_1.20.1-2.debian.tar.xz' krb5_1.20.1-2.debian.tar.xz 99520 SHA256:ef231e13219fe578217c1efdc3a88436e189af111f13c68f7280d77b16d7411e
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/krb5/1.20.1-2/
+
 
 ### `dpkg` source package: `lapack=3.11.0-2`
 
@@ -2761,14 +2765,13 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 - `LGPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.5.2-6
-'http://http.debian.net/debian/pool/main/p/pam/pam_1.5.2-6.dsc' pam_1.5.2-6.dsc 1998 SHA256:2dbff29f5fc189c95b863ffd690795a7313515619ddadc470eab8a50b7555903
-'http://http.debian.net/debian/pool/main/p/pam/pam_1.5.2.orig.tar.xz' pam_1.5.2.orig.tar.xz 988784 SHA256:e4ec7131a91da44512574268f493c6d8ca105c87091691b8e9b56ca685d4f94d
-'http://http.debian.net/debian/pool/main/p/pam/pam_1.5.2-6.debian.tar.xz' pam_1.5.2-6.debian.tar.xz 122320 SHA256:97adad0df930ba5ed52b88bef6d494a1b303ca2eb5be9e347479a23e4d9254fc
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/pam/1.5.2-6/
+
 
 ### `dpkg` source package: `pango1.0=1.50.14+ds-1`
 
@@ -2801,10 +2804,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris pango1.0=1.50.14+ds-1
-'http://http.debian.net/debian/pool/main/p/pango1.0/pango1.0_1.50.14%2bds-1.dsc' pango1.0_1.50.14+ds-1.dsc 3547 SHA256:32d61c4cee4b5a0ae83a7eb4a538b411e8f266123429f62a7b42369b6542b2e7
-'http://http.debian.net/debian/pool/main/p/pango1.0/pango1.0_1.50.14%2bds.orig.tar.xz' pango1.0_1.50.14+ds.orig.tar.xz 1730428 SHA256:8ba2ece3fc630dd14b20d133beec8542dc23cfc84caeebffd75e9bf288b45ffe
-'http://http.debian.net/debian/pool/main/p/pango1.0/pango1.0_1.50.14%2bds-1.debian.tar.xz' pango1.0_1.50.14+ds-1.debian.tar.xz 41128 SHA256:b59d882378f74745c1ed4ff8f0b1c106b238d4ca9d6ed36387e530b64abf92ce
+'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.50.14%2bds-1.dsc' pango1.0_1.50.14+ds-1.dsc 3547 SHA256:32d61c4cee4b5a0ae83a7eb4a538b411e8f266123429f62a7b42369b6542b2e7
+'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.50.14%2bds.orig.tar.xz' pango1.0_1.50.14+ds.orig.tar.xz 1730428 SHA256:8ba2ece3fc630dd14b20d133beec8542dc23cfc84caeebffd75e9bf288b45ffe
+'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.50.14%2bds-1.debian.tar.xz' pango1.0_1.50.14+ds-1.debian.tar.xz 41128 SHA256:b59d882378f74745c1ed4ff8f0b1c106b238d4ca9d6ed36387e530b64abf92ce
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/pango1.0/1.50.14+ds-1/ (for browsing the source)
+- https://sources.debian.net/src/pango1.0/1.50.14+ds-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/pango1.0/1.50.14+ds-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `patch=2.7.6-7`
 
@@ -3112,14 +3121,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-matrix/copyright`)
 - `GPL-2+`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rmatrix=1.6-0-1
-'http://http.debian.net/debian/pool/main/r/rmatrix/rmatrix_1.6-0-1.dsc' rmatrix_1.6-0-1.dsc 1860 SHA256:92afab80a44c91e14f2381bbb6415053310de48282208e8b0942ad28e7052cea
-'http://http.debian.net/debian/pool/main/r/rmatrix/rmatrix_1.6-0.orig.tar.gz' rmatrix_1.6-0.orig.tar.gz 2058479 SHA256:ebebe680f79f7147ccc5f8eb243f3b685fb37996d9884d246db421933d76b79d
-'http://http.debian.net/debian/pool/main/r/rmatrix/rmatrix_1.6-0-1.debian.tar.xz' rmatrix_1.6-0-1.debian.tar.xz 5868 SHA256:8da1824efd64188e7ef4ff2a895fc1bcf488549022b382a213137cf03ca74d05
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/rmatrix/1.6-0-1/
+
 
 ### `dpkg` source package: `rpart=4.1.19-1`
 
@@ -3274,14 +3282,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-survival/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris survival=3.5-5-2
-'http://http.debian.net/debian/pool/main/s/survival/survival_3.5-5-2.dsc' survival_3.5-5-2.dsc 1861 SHA256:1ffec1c8df7b125f0d0574dba6de9f5d655175353e0c8a7299c119d933fd6446
-'http://http.debian.net/debian/pool/main/s/survival/survival_3.5-5.orig.tar.gz' survival_3.5-5.orig.tar.gz 6303615 SHA256:1375a509554b0258e04e27baca2e073e179406e2a9a71e6d3e0c777072568476
-'http://http.debian.net/debian/pool/main/s/survival/survival_3.5-5-2.debian.tar.xz' survival_3.5-5-2.debian.tar.xz 6316 SHA256:69d3fa58438e1ac397a6f3f4ae1c736c00c766f388ff6aaf79711eebf4b1b964
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/survival/3.5-5-2/
+
 
 ### `dpkg` source package: `systemd=254-1`
 
