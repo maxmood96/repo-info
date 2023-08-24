@@ -1,10 +1,10 @@
-# `mongo:4.4.23-focal`
+# `mongo:4.4.24-focal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f561f2b9a0ab1e4676938108b0a20d90661612dc9905264c3077de3ac3685492`
-- Created: `2023-08-03T03:45:50.292067288Z`
-- Virtual Size: ~ 432.24 Mb  
+- Image ID: `sha256:a701426e0e6101a07c40e729ffe471527d9fd43135139bce3fbd6205148172d8`
+- Created: `2023-08-23T23:39:48.505904438Z`
+- Virtual Size: ~ 432.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `MONGO_PACKAGE=mongodb-org`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=4.4`
-  - `MONGO_VERSION=4.4.23`
+  - `MONGO_VERSION=4.4.24`
   - `HOME=/data/db`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
@@ -1270,11 +1270,11 @@ $ apt-get source -qq --print-uris mawk=1.3.4.20200120-2
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.4.20200120-2.debian.tar.xz' mawk_1.3.4.20200120-2.debian.tar.xz 7504 SHA256:b772ed2f016b0286980c46cbc1f1f4ae62887ef2aa3dff6ef10cae638f923f26
 ```
 
-### `dpkg` source package: `mongodb-database-tools=100.7.4`
+### `dpkg` source package: `mongodb-database-tools=100.8.0`
 
 Binary Packages:
 
-- `mongodb-database-tools=100.7.4`
+- `mongodb-database-tools=100.8.0`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1284,16 +1284,16 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-org=4.4.23`
+### `dpkg` source package: `mongodb-org=4.4.24`
 
 Binary Packages:
 
-- `mongodb-org=4.4.23`
-- `mongodb-org-database-tools-extra=4.4.23`
-- `mongodb-org-mongos=4.4.23`
-- `mongodb-org-server=4.4.23`
-- `mongodb-org-shell=4.4.23`
-- `mongodb-org-tools=4.4.23`
+- `mongodb-org=4.4.24`
+- `mongodb-org-database-tools-extra=4.4.24`
+- `mongodb-org-mongos=4.4.24`
+- `mongodb-org-server=4.4.24`
+- `mongodb-org-shell=4.4.24`
+- `mongodb-org-tools=4.4.24`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
