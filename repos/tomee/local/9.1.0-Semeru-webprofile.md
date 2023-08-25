@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:88254c86678984a19613bfa8b2539e8b67e1a4a1e5f644bad525a1a4e6e9eed9`
-- Created: `2023-08-16T16:24:22.007510159Z`
-- Virtual Size: ~ 350.93 Mb  
+- Image ID: `sha256:78f41fe0d353eb9290e603d5a9c66e0b2e41f694066dfc7cf7d7f761dfa38ae8`
+- Created: `2023-08-23T22:35:59.787455751Z`
+- Virtual Size: ~ 351.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -13,7 +13,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-17.0.7+7_openj9-0.38.0`
+  - `JAVA_VERSION=jdk-17.0.8+7_openj9-0.40.0`
   - `JAVA_HOME=/opt/java/openjdk`
   - `JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal`
   - `TOMEE_VER=9.1.0`
