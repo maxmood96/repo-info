@@ -1656,21 +1656,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.8.1-3
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.1-3.dsc' gnutls28_3.8.1-3.dsc 3231 SHA256:3abf451feda9d3f26a71e293fcc2b48bccb1c743139a18152b93149088f0f886
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.1.orig.tar.xz' gnutls28_3.8.1.orig.tar.xz 6447056 SHA256:ba8b9e15ae20aba88f44661978f5b5863494316fe7e722ede9d069fe6294829c
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.1.orig.tar.xz.asc' gnutls28_3.8.1.orig.tar.xz.asc 996 SHA256:3b6357c19431736099929e13ff8340e9ed4b36e4e22b34ae7b46e1f85a1d2884
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.1-3.debian.tar.xz' gnutls28_3.8.1-3.debian.tar.xz 69004 SHA256:8dc10f22502ad6c68877f2c03199dea804465ae08c1e46cd01092af87fc15f66
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnutls28/3.8.1-3/
 
-- https://sources.debian.net/src/gnutls28/3.8.1-3/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.8.1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.8.1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gobject-introspection=1.76.1-5`
 
@@ -1768,21 +1760,13 @@ Licenses: (parsed from: `/usr/share/doc/grep/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris grep=3.11-2
-'http://deb.debian.org/debian/pool/main/g/grep/grep_3.11-2.dsc' grep_3.11-2.dsc 1618 SHA256:1242a5ba53e6c508aa472ad8de1a20de029b109b345af64c56f949ec40cd5bdb
-'http://deb.debian.org/debian/pool/main/g/grep/grep_3.11.orig.tar.xz' grep_3.11.orig.tar.xz 1703776 SHA256:1db2aedde89d0dea42b16d9528f894c8d15dae4e190b59aecc78f5a951276eab
-'http://deb.debian.org/debian/pool/main/g/grep/grep_3.11.orig.tar.xz.asc' grep_3.11.orig.tar.xz.asc 833 SHA256:89ec23ffd59b68822732dc8204fc89883c3af30a90ae390feb94346d9d09a589
-'http://deb.debian.org/debian/pool/main/g/grep/grep_3.11-2.debian.tar.xz' grep_3.11-2.debian.tar.xz 20388 SHA256:39b98a7fea70c900a0ece8c317a1fc9ceed21326bddda715a2bb9fea60746a82
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/grep/3.11-2/
 
-- https://sources.debian.net/src/grep/3.11-2/ (for browsing the source)
-- https://sources.debian.net/src/grep/3.11-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/grep/3.11-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gzip=1.12-1`
 
@@ -2011,21 +1995,13 @@ Licenses: (parsed from: `/usr/share/doc/libimath-3-1-29/copyright`, `/usr/share/
 
 - `imath`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris imath=3.1.6-1
-'http://deb.debian.org/debian/pool/main/i/imath/imath_3.1.6-1.dsc' imath_3.1.6-1.dsc 2612 SHA256:ed86343202eb9673710ddc50d3ee946e00275e23212e65154775db1f2aa3fe60
-'http://deb.debian.org/debian/pool/main/i/imath/imath_3.1.6.orig.tar.gz' imath_3.1.6.orig.tar.gz 573255 SHA256:ea5592230f5ab917bea3ceab266cf38eb4aa4a523078d46eac0f5a89c52304db
-'http://deb.debian.org/debian/pool/main/i/imath/imath_3.1.6.orig.tar.gz.asc' imath_3.1.6.orig.tar.gz.asc 287 SHA256:a2c4ac5151789903ca8ab3093a2798491463ccf2abfd003a20f96453e505dd5f
-'http://deb.debian.org/debian/pool/main/i/imath/imath_3.1.6-1.debian.tar.xz' imath_3.1.6-1.debian.tar.xz 8892 SHA256:415b2d4612ac17d2afc1d29614b826e1c1c4c118087f198dd11571920cd7f64b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/imath/3.1.6-1/
 
-- https://sources.debian.net/src/imath/3.1.6-1/ (for browsing the source)
-- https://sources.debian.net/src/imath/3.1.6-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/imath/3.1.6-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `init-system-helpers=1.65.2`
 
@@ -3889,20 +3865,13 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=6.4.4-3
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.4.4-3.dsc' linux_6.4.4-3.dsc 288845 SHA256:d126d5a8bff09024d9f3e98cf135a98de4f00f52c5d3f91ea7735363f0259456
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.4.4.orig.tar.xz' linux_6.4.4.orig.tar.xz 140401048 SHA256:bb9d8f1574646f53599d669f3b9610dc9cd0a77f57a49972c03964f5a21d67b1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.4.4-3.debian.tar.xz' linux_6.4.4-3.debian.tar.xz 1500912 SHA256:85093c80bdfbda628965a7e5602079259c0f8fc405136d12f5a9e5c900110d0c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/linux/6.4.4-3/
 
-- https://sources.debian.net/src/linux/6.4.4-3/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.4.4-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.4.4-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.9.4-1`
 
@@ -4067,21 +4036,13 @@ Licenses: (parsed from: `/usr/share/doc/mawk/copyright`)
 - `GPL-2.0-only`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mawk=1.3.4.20230730-1
-'http://deb.debian.org/debian/pool/main/m/mawk/mawk_1.3.4.20230730-1.dsc' mawk_1.3.4.20230730-1.dsc 2180 SHA256:b9afdadfc9ad2fed4e1cdf8edd87c0aacbb9b56bda74590e025ea846d1390b1c
-'http://deb.debian.org/debian/pool/main/m/mawk/mawk_1.3.4.20230730.orig.tar.gz' mawk_1.3.4.20230730.orig.tar.gz 410248 SHA256:810b7cc0aa2bff5ff215f237e275b327b21ba49a0d7b36930e3ddc80f4ce5618
-'http://deb.debian.org/debian/pool/main/m/mawk/mawk_1.3.4.20230730.orig.tar.gz.asc' mawk_1.3.4.20230730.orig.tar.gz.asc 729 SHA256:2beb152af3893b4870448642a932cde20194c0aaf7eaa002e27ffa06975c1af0
-'http://deb.debian.org/debian/pool/main/m/mawk/mawk_1.3.4.20230730-1.debian.tar.xz' mawk_1.3.4.20230730-1.debian.tar.xz 15492 SHA256:e35b496d22c685f0a05c278fcbc90d6f0bc31783f263d2de412d268964bf35f1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mawk/1.3.4.20230730-1/
 
-- https://sources.debian.net/src/mawk/1.3.4.20230730-1/ (for browsing the source)
-- https://sources.debian.net/src/mawk/1.3.4.20230730-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mawk/1.3.4.20230730-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `media-types=10.1.0`
 
@@ -4678,20 +4639,13 @@ Licenses: (parsed from: `/usr/share/doc/libpcre2-16-0/copyright`, `/usr/share/do
 - `X11`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pcre2=10.42-2
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.42-2.dsc' pcre2_10.42-2.dsc 2302 SHA256:fbdb6cf6c96c8d7d49e7668690af9c30ece36710cc0be38d66bbb5af75206f78
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.42.orig.tar.gz' pcre2_10.42.orig.tar.gz 2397194 SHA256:c33b418e3b936ee3153de2c61cc638e7e4fe3156022a5c77d0711bcbb9d64f1f
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.42-2.diff.gz' pcre2_10.42-2.diff.gz 7994 SHA256:4136268be35215872d4ef387e4c9cf17914051a02839fcc24fb2af0c51fd2ba8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pcre2/10.42-2/
 
-- https://sources.debian.net/src/pcre2/10.42-2/ (for browsing the source)
-- https://sources.debian.net/src/pcre2/10.42-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pcre2/10.42-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `perl=5.36.0-7`
 
@@ -4732,21 +4686,13 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.36/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.36.0-7
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.36.0-7.dsc' perl_5.36.0-7.dsc 2886 SHA256:d9992947bb5c254e1bf96c56f12ac0bc962a2ff1e700834f871fb412526b4a8b
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.36.0.orig-regen-configure.tar.xz' perl_5.36.0.orig-regen-configure.tar.xz 417784 SHA256:10ac353bc5a933403afe60ed1817e7a456f99bdbcaf80c1cdb0eb3a08ea56d4e
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.36.0.orig.tar.xz' perl_5.36.0.orig.tar.xz 13051500 SHA256:0f386dccbee8e26286404b2cca144e1005be65477979beb9b1ba272d4819bcf0
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.36.0-7.debian.tar.xz' perl_5.36.0-7.debian.tar.xz 169288 SHA256:c8a46245b7102d60539cc4c550977f35cbb8409643abc0d00c7a8b78d0271bea
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/perl/5.36.0-7/
 
-- https://sources.debian.net/src/perl/5.36.0-7/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.36.0-7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.36.0-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pinentry=1.2.1-1`
 
@@ -5606,20 +5552,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.39.1-4
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.39.1-4.dsc' util-linux_2.39.1-4.dsc 4555 SHA256:9f315ddfa32f34f76e917d105bfd4d4034de05d5a09ba922af0badb1e119774f
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.39.1.orig.tar.xz' util-linux_2.39.1.orig.tar.xz 8351164 SHA256:890ae8ff810247bd19e274df76e8371d202cda01ad277681b0ea88eeaa00286b
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.39.1-4.debian.tar.xz' util-linux_2.39.1-4.debian.tar.xz 97680 SHA256:90d99c5ae45081eb4f1a08f0a4fc25fba11bcce23d9e9d4a683832a38af598a1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.39.1-4/
 
-- https://sources.debian.net/src/util-linux/2.39.1-4/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.39.1-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.39.1-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.21.3-1`
 
