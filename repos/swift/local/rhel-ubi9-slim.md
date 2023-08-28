@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c1bda52a5e39e05a2806793b9e4b8885f5fc7f502e7061aaf37b16c5628a88a8`
-- Created: `2023-08-01T23:35:49.388709933Z`
-- Virtual Size: ~ 467.91 Mb  
+- Image ID: `sha256:730b498ad17247d096f2555422316ff25ba155159cd19d3bec4bbd0562eeae24`
+- Created: `2023-08-26T03:43:23.088879959Z`
+- Virtual Size: ~ 467.36 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -18,7 +18,7 @@
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2023-07-26T14:47:43`
+  - `build-date=2023-08-23T05:46:27`
   - `com.redhat.component=ubi9-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=Docker Container for the Swift programming language`
@@ -30,9 +30,9 @@
   - `io.openshift.tags=base rhel9`
   - `maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>`
   - `name=ubi9`
-  - `release=722`
+  - `release=722.1692769367`
   - `summary=Provides the latest release of Red Hat Universal Base Image 9.`
-  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9/images/9.2-722`
+  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9/images/9.2-722.1692769367`
   - `vcs-ref=6b5892a11894993e819f9a93ee1d7aaa80dc3a17`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
@@ -124,7 +124,7 @@ Licenses (from `rpm --query`): BSD with advertising
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `dbus-1.12.20-7.el9_1.x86_64`
+### `rpm` package: `dbus-1.12.20-7.el9_2.1.x86_64`
 
 Licenses (from `rpm --query`): (GPLv2+ or AFL) and GPLv2+
 
@@ -136,13 +136,13 @@ Licenses (from `rpm --query`): ASL 2.0
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `dbus-common-1.12.20-7.el9_1.noarch`
+### `rpm` package: `dbus-common-1.12.20-7.el9_2.1.noarch`
 
 Licenses (from `rpm --query`): (GPLv2+ or AFL) and GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `dbus-libs-1.12.20-7.el9_1.x86_64`
+### `rpm` package: `dbus-libs-1.12.20-7.el9_2.1.x86_64`
 
 Licenses (from `rpm --query`): (GPLv2+ or AFL) and GPLv2+
 
@@ -442,7 +442,7 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libdnf-plugin-subscription-manager-1.29.33.1-1.el9_2.x86_64`
+### `rpm` package: `libdnf-plugin-subscription-manager-1.29.33.1-2.el9_2.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
@@ -790,7 +790,7 @@ Licenses (from `rpm --query`): LGPLv2
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `python3-cloud-what-1.29.33.1-1.el9_2.x86_64`
+### `rpm` package: `python3-cloud-what-1.29.33.1-2.el9_2.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
@@ -940,7 +940,7 @@ Licenses (from `rpm --query`): MIT
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `python3-subscription-manager-rhsm-1.29.33.1-1.el9_2.x86_64`
+### `rpm` package: `python3-subscription-manager-rhsm-1.29.33.1-2.el9_2.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
@@ -1024,7 +1024,7 @@ Licenses (from `rpm --query`): Public Domain
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `subscription-manager-1.29.33.1-1.el9_2.x86_64`
+### `rpm` package: `subscription-manager-1.29.33.1-2.el9_2.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
