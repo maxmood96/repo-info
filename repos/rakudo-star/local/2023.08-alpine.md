@@ -2,15 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0c54be38b75e89a2cf3528a366e71f0b9edf57a94159f470e641dadb47e7a91c`
-- Created: `2023-08-09T03:31:01.623222043Z`
-- Virtual Size: ~ 173.15 Mb  
+- Image ID: `sha256:367ee6cadfb0a141cc9a3c774d04906bf8d6f5e409f1b5b48131bbce693d5ce1`
+- Created: `2023-08-25T22:03:49.241119977Z`
+- Virtual Size: ~ 173.30 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["raku"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share/perl6/core/bin:/usr/share/perl6/site/bin:/usr/share/perl6/vendor/bin`
-  - `rakudo_version=2023.06-01`
+  - `rakudo_version=2023.08-01`
 
 ## `apk` (`.apk`-based packages)
 
