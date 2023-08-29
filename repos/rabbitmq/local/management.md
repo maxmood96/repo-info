@@ -1,8 +1,8 @@
-# `rabbitmq:3.12.3-management`
+# `rabbitmq:3.12.4-management`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e6e0e1fb6531a29eb2eb7537943710658959acfb2cf01c4a4a20bc374ef5793a`
+- Image ID: `sha256:395224d3ef9e035ac74acad1b2327ad39ede2a0047e28fd51f74580f71a07a04`
 - Created: `2023-06-02T21:59:28Z`
 - Virtual Size: ~ 255.28 Mb  
   (total size of all layers on-disk)
@@ -12,7 +12,7 @@
 - Environment:
   - `PATH=/opt/rabbitmq/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `RABBITMQ_DATA_DIR=/var/lib/rabbitmq`
-  - `RABBITMQ_VERSION=3.12.3`
+  - `RABBITMQ_VERSION=3.12.4`
   - `RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA`
   - `RABBITMQ_HOME=/opt/rabbitmq`
   - `HOME=/var/lib/rabbitmq`
