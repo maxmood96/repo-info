@@ -2,8 +2,20 @@
 
 # Tags of `kibana`
 
+-	[`kibana:7.17.11`](#kibana71711)
 -	[`kibana:7.17.12`](#kibana71712)
+-	[`kibana:8.8.2`](#kibana882)
+-	[`kibana:8.9.0`](#kibana890)
 -	[`kibana:8.9.1`](#kibana891)
+
+## `kibana:7.17.11`
+
+```console
+$ docker pull kibana@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `kibana:7.17.12`
 
@@ -279,6 +291,24 @@ USER kibana
 		Last Modified: Wed, 23 Aug 2023 23:51:33 GMT  
 		Size: 1.8 KB (1828 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `kibana:8.8.2`
+
+```console
+$ docker pull kibana@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `kibana:8.9.0`
+
+```console
+$ docker pull kibana@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `kibana:8.9.1`
 
