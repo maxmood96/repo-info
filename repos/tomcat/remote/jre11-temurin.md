@@ -1,7 +1,7 @@
 ## `tomcat:jre11-temurin`
 
 ```console
-$ docker pull tomcat@sha256:325d64fb1ab7b64f8c5ad313b96f6c5f34d248f30fc8c2ca83c25680f3d84901
+$ docker pull tomcat@sha256:471a3067d27b98fa636f17f3b9e347e044d0da7594b536e66fbd8fe346f99d08
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -131,14 +131,14 @@ CMD ["catalina.sh" "run"]
 ### `tomcat:jre11-temurin` - linux; arm variant v7
 
 ```console
-$ docker pull tomcat@sha256:774614f5b3de8cf09493d782304b1755a952b87d886bbfc8e318b10f27fd0f67
+$ docker pull tomcat@sha256:5fbaece410b34be6d36ac627fd01156a0d3a06368a631792455e945682e624fd
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **97.1 MB (97147481 bytes)**  
+-	Total Size: **97.1 MB (97147049 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b1b8929f83d1dadfd852be05c8bbaf6e9e2f4100aac1c1ecc73187fcf591a90a`
+-	Image ID: `sha256:0702b299f86ddf960e259b70eaf87c5c5b4b47cfaff8d1f859e4800cb385b21d`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -162,47 +162,47 @@ ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Wed, 16 Aug 2023 16:01:41 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl wget ca-certificates fontconfig locales p11-kit     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Wed, 16 Aug 2023 16:02:19 GMT
-ENV JAVA_VERSION=jdk-11.0.20+8
-# Wed, 16 Aug 2023 16:02:42 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='45e190920fb3ec61ee5213a7bd98553abf2ae7692eb9daa504fcdc9d59a7cfc4';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.20_8.tar.gz';          ;;        armhf|arm)          ESUM='1e2a02364084b2d054e88a871f3efaa4450ae4f087b8f806fd95c15d5affcc7b';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jre_arm_linux_hotspot_11.0.20_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='61034834b61bf080392218b25dcac2d9e3505b5e4f53539704d496be4181aadf';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.20_8.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='0c7050976914e0613179446de62bb20d2845ae809f6d31bc0ed8d136f8fd3d9b';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jre_s390x_linux_hotspot_11.0.20_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='ffb070c26ea22771f78769c569c9db3412e6486434dc6df1fd3c3438285766e7';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jre_x64_linux_hotspot_11.0.20_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
-# Wed, 16 Aug 2023 16:02:43 GMT
+# Thu, 31 Aug 2023 19:57:40 GMT
+ENV JAVA_VERSION=jdk-11.0.20.1+1
+# Thu, 31 Aug 2023 19:58:09 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0f69f5c05cb7fb2804be3735ed31ce92acff1a51ef29be544b89f83c90d2ea2a';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20.1%2B1/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.20.1_1.tar.gz';          ;;        armhf|arm)          ESUM='2fc1cc935897312c0bc2515b2e7ea1fa3b267e77305a1b51a8c3917d92af380f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20.1%2B1/OpenJDK11U-jre_arm_linux_hotspot_11.0.20.1_1.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='7963580e5c3abe55e6b9d2297f2e2cde7b227d28204497bec5f17bb37762c7b7';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20.1%2B1/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.20.1_1.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='cf7fa0f0291687ebcb5f87f5db3a8d94525fd65832adc636c4c6e1f3174d9997';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20.1%2B1/OpenJDK11U-jre_s390x_linux_hotspot_11.0.20.1_1.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='bc6ed047e50b09611b419c878e4ea3ea36594bd79f64001a5b53decf72669d33';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20.1%2B1/OpenJDK11U-jre_x64_linux_hotspot_11.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
+# Thu, 31 Aug 2023 19:58:09 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo java --version && java --version     && echo Complete.
-# Wed, 16 Aug 2023 16:02:44 GMT
+# Thu, 31 Aug 2023 19:58:09 GMT
 COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
-# Wed, 16 Aug 2023 16:02:44 GMT
+# Thu, 31 Aug 2023 19:58:10 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 17 Aug 2023 03:14:32 GMT
+# Thu, 31 Aug 2023 20:48:32 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Thu, 17 Aug 2023 03:14:32 GMT
+# Thu, 31 Aug 2023 20:48:32 GMT
 ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 17 Aug 2023 03:14:32 GMT
+# Thu, 31 Aug 2023 20:48:33 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Thu, 17 Aug 2023 03:14:33 GMT
+# Thu, 31 Aug 2023 20:48:33 GMT
 WORKDIR /usr/local/tomcat
-# Thu, 17 Aug 2023 03:14:33 GMT
+# Thu, 31 Aug 2023 20:48:33 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Thu, 17 Aug 2023 03:14:33 GMT
+# Thu, 31 Aug 2023 20:48:33 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Thu, 17 Aug 2023 03:14:33 GMT
+# Thu, 31 Aug 2023 20:48:33 GMT
 ENV GPG_KEYS=5C3C5F3E314C866292F359A8F3AD5C94A67F707E A9C5DF4D22E99998D9875A5110C01C5A2F6059E7
-# Thu, 17 Aug 2023 03:14:33 GMT
+# Thu, 31 Aug 2023 20:48:33 GMT
 ENV TOMCAT_MAJOR=10
-# Sat, 26 Aug 2023 04:00:57 GMT
+# Thu, 31 Aug 2023 20:48:33 GMT
 ENV TOMCAT_VERSION=10.1.13
-# Sat, 26 Aug 2023 04:00:58 GMT
+# Thu, 31 Aug 2023 20:48:34 GMT
 ENV TOMCAT_SHA512=406c0c367ac6ad95bb724ecc3a3c340ad7ded8c62287d657811eeec496eaaca1f5add52d2f46111da1426ae67090c543f6deccfeb5fdf4bdae32f9b39e773265
-# Sat, 26 Aug 2023 04:00:58 GMT
-COPY dir:9d3ca9838326b1dba8c09b829ce30d16b7727b40e5d64c36dbeee27d89bc629a in /usr/local/tomcat 
-# Sat, 26 Aug 2023 04:01:02 GMT
+# Thu, 31 Aug 2023 20:48:34 GMT
+COPY dir:25e8b86c42b368e63dc6b002f7d70623dcdb530aae0293074936b0679a3cd464 in /usr/local/tomcat 
+# Thu, 31 Aug 2023 20:48:38 GMT
 RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/*
-# Sat, 26 Aug 2023 04:01:04 GMT
+# Thu, 31 Aug 2023 20:48:40 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Sat, 26 Aug 2023 04:01:04 GMT
+# Thu, 31 Aug 2023 20:48:40 GMT
 EXPOSE 8080
-# Sat, 26 Aug 2023 04:01:04 GMT
+# Thu, 31 Aug 2023 20:48:40 GMT
 ENTRYPOINT []
-# Sat, 26 Aug 2023 04:01:04 GMT
+# Thu, 31 Aug 2023 20:48:40 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -215,32 +215,32 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Wed, 16 Aug 2023 16:04:10 GMT  
 		Size: 12.5 MB (12491781 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4eab4dfa656d9e31230f5e71a78819b01833203f14e4cc47ae47fc38a43168d5`  
-		Last Modified: Wed, 16 Aug 2023 16:05:22 GMT  
-		Size: 45.0 MB (45013007 bytes)  
+	-	`sha256:255b733b02f243fcb6d2555f240d5b186551d5023cd590bc330d2b031bd49de8`  
+		Last Modified: Thu, 31 Aug 2023 20:00:45 GMT  
+		Size: 45.0 MB (45012619 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45bcd15ffcebdd510a357ec3c4eaebb67f87df8c1ab10378a799637f4aab593b`  
-		Last Modified: Wed, 16 Aug 2023 16:05:14 GMT  
+	-	`sha256:b697fda8de8e801a46b992697fce883fda052c5dd4914c7e235c568031ae8d1a`  
+		Last Modified: Thu, 31 Aug 2023 20:00:38 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7f136defbf49b196ea5363b2481722c9b5809eadcec775ead4a4ed3856b3f4c6`  
-		Last Modified: Wed, 16 Aug 2023 16:05:13 GMT  
-		Size: 734.0 B  
+	-	`sha256:bb7856bf58284fe4bd810f057acd70aae423a0aa921c7937abe61bb8bace27f1`  
+		Last Modified: Thu, 31 Aug 2023 20:00:38 GMT  
+		Size: 733.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a38d51504dfbd454dd4e6c0a5068c38285265166d1ea260813705945baffd96`  
-		Last Modified: Thu, 17 Aug 2023 03:22:51 GMT  
+	-	`sha256:67e4a8bb2a389f81a5cacc895af0a095e2582535b36cbadc215cea94cbdd8596`  
+		Last Modified: Thu, 31 Aug 2023 20:57:50 GMT  
 		Size: 173.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e789a8c503bc4064a469e15d72c93860684775ff6c19b6c04e0b44075f9569fa`  
-		Last Modified: Sat, 26 Aug 2023 04:13:40 GMT  
-		Size: 12.2 MB (12182584 bytes)  
+	-	`sha256:d9f65abc24b4a22f113f3633204a0c46338dc598e4121a47019f0b113ca516eb`  
+		Last Modified: Thu, 31 Aug 2023 20:57:51 GMT  
+		Size: 12.2 MB (12182572 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8742e4d239d40a070cc9da3e1559427ac2d2ec028c59b170bf49a40955c1e92c`  
-		Last Modified: Sat, 26 Aug 2023 04:13:39 GMT  
-		Size: 429.7 KB (429718 bytes)  
+	-	`sha256:0ab7618526884803cb61ccd11114f2e43c48cebda7ef2c86618876da41b6ff09`  
+		Last Modified: Thu, 31 Aug 2023 20:57:50 GMT  
+		Size: 429.7 KB (429687 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99204e8fbafcd35fc45d11536f6b3ebd7eff488605c029e07c2dfa162eee955a`  
-		Last Modified: Sat, 26 Aug 2023 04:13:39 GMT  
+	-	`sha256:0c1c89abfc5e834c1ac91634c3dd860cd638538e1e29597374bafc8f741a2589`  
+		Last Modified: Thu, 31 Aug 2023 20:57:50 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -479,14 +479,14 @@ CMD ["catalina.sh" "run"]
 ### `tomcat:jre11-temurin` - linux; s390x
 
 ```console
-$ docker pull tomcat@sha256:a0b17e74fe3eeac47192dcef5ed2d13222b440c724e996b8804e3381c0409b7e
+$ docker pull tomcat@sha256:000e3d08a07de69cd93430a33c63289db1670dfe79d5e0594814ce95ab805066
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **94.9 MB (94925223 bytes)**  
+-	Total Size: **94.9 MB (94925490 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:48a4f128402ead51c46d94ab84a04bfab25290f33f65d6c10bc683783c095eb9`
+-	Image ID: `sha256:9a80bf29feb381bc55a76a096ea179d82bc4a0427f1ae093b8db36f8072788fe`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -510,47 +510,47 @@ ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Wed, 16 Aug 2023 09:42:37 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl wget ca-certificates fontconfig locales p11-kit     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/*
-# Wed, 16 Aug 2023 09:42:38 GMT
-ENV JAVA_VERSION=jdk-11.0.20+8
-# Wed, 16 Aug 2023 09:43:16 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='45e190920fb3ec61ee5213a7bd98553abf2ae7692eb9daa504fcdc9d59a7cfc4';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.20_8.tar.gz';          ;;        armhf|arm)          ESUM='1e2a02364084b2d054e88a871f3efaa4450ae4f087b8f806fd95c15d5affcc7b';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jre_arm_linux_hotspot_11.0.20_8.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='61034834b61bf080392218b25dcac2d9e3505b5e4f53539704d496be4181aadf';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.20_8.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='0c7050976914e0613179446de62bb20d2845ae809f6d31bc0ed8d136f8fd3d9b';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jre_s390x_linux_hotspot_11.0.20_8.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='ffb070c26ea22771f78769c569c9db3412e6486434dc6df1fd3c3438285766e7';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jre_x64_linux_hotspot_11.0.20_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
-# Wed, 16 Aug 2023 09:43:19 GMT
+# Thu, 31 Aug 2023 19:42:11 GMT
+ENV JAVA_VERSION=jdk-11.0.20.1+1
+# Thu, 31 Aug 2023 19:43:05 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='0f69f5c05cb7fb2804be3735ed31ce92acff1a51ef29be544b89f83c90d2ea2a';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20.1%2B1/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.20.1_1.tar.gz';          ;;        armhf|arm)          ESUM='2fc1cc935897312c0bc2515b2e7ea1fa3b267e77305a1b51a8c3917d92af380f';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20.1%2B1/OpenJDK11U-jre_arm_linux_hotspot_11.0.20.1_1.tar.gz';          ;;        ppc64el|powerpc:common64)          ESUM='7963580e5c3abe55e6b9d2297f2e2cde7b227d28204497bec5f17bb37762c7b7';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20.1%2B1/OpenJDK11U-jre_ppc64le_linux_hotspot_11.0.20.1_1.tar.gz';          ;;        s390x|s390:64-bit)          ESUM='cf7fa0f0291687ebcb5f87f5db3a8d94525fd65832adc636c4c6e1f3174d9997';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20.1%2B1/OpenJDK11U-jre_s390x_linux_hotspot_11.0.20.1_1.tar.gz';          ;;        amd64|i386:x86-64)          ESUM='bc6ed047e50b09611b419c878e4ea3ea36594bd79f64001a5b53decf72669d33';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20.1%2B1/OpenJDK11U-jre_x64_linux_hotspot_11.0.20.1_1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac; 	  wget -O /tmp/openjdk.tar.gz ${BINARY_URL}; 	  echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -; 	  mkdir -p "$JAVA_HOME"; 	  tar --extract 	      --file /tmp/openjdk.tar.gz 	      --directory "$JAVA_HOME" 	      --strip-components 1 	      --no-same-owner 	  ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump;
+# Thu, 31 Aug 2023 19:43:07 GMT
 RUN echo Verifying install ...     && fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java     && echo java --version && java --version     && echo Complete.
-# Wed, 16 Aug 2023 09:43:19 GMT
+# Thu, 31 Aug 2023 19:43:07 GMT
 COPY file:8b8864b3e02a33a579dc216fd51b28a6047bc8eeaa03045b258980fe0cf7fcb3 in /__cacert_entrypoint.sh 
-# Wed, 16 Aug 2023 09:43:19 GMT
+# Thu, 31 Aug 2023 19:43:07 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 16 Aug 2023 17:21:09 GMT
+# Thu, 31 Aug 2023 20:30:04 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Wed, 16 Aug 2023 17:21:09 GMT
+# Thu, 31 Aug 2023 20:30:04 GMT
 ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 16 Aug 2023 17:21:10 GMT
+# Thu, 31 Aug 2023 20:30:04 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Wed, 16 Aug 2023 17:21:10 GMT
+# Thu, 31 Aug 2023 20:30:04 GMT
 WORKDIR /usr/local/tomcat
-# Wed, 16 Aug 2023 17:21:10 GMT
+# Thu, 31 Aug 2023 20:30:04 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Wed, 16 Aug 2023 17:21:10 GMT
+# Thu, 31 Aug 2023 20:30:04 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Wed, 16 Aug 2023 17:21:10 GMT
+# Thu, 31 Aug 2023 20:30:05 GMT
 ENV GPG_KEYS=5C3C5F3E314C866292F359A8F3AD5C94A67F707E A9C5DF4D22E99998D9875A5110C01C5A2F6059E7
-# Wed, 16 Aug 2023 17:21:10 GMT
+# Thu, 31 Aug 2023 20:30:05 GMT
 ENV TOMCAT_MAJOR=10
-# Sat, 26 Aug 2023 03:07:43 GMT
+# Thu, 31 Aug 2023 20:30:05 GMT
 ENV TOMCAT_VERSION=10.1.13
-# Sat, 26 Aug 2023 03:07:44 GMT
+# Thu, 31 Aug 2023 20:30:05 GMT
 ENV TOMCAT_SHA512=406c0c367ac6ad95bb724ecc3a3c340ad7ded8c62287d657811eeec496eaaca1f5add52d2f46111da1426ae67090c543f6deccfeb5fdf4bdae32f9b39e773265
-# Sat, 26 Aug 2023 03:07:44 GMT
-COPY dir:096c0ad921356884280474307f7b928b50f7a8c759fb2ed62d0f6c72dac44c9f in /usr/local/tomcat 
-# Sat, 26 Aug 2023 03:07:47 GMT
+# Thu, 31 Aug 2023 20:30:05 GMT
+COPY dir:c3bcd49e8b8f3065434c13f6981cf1d46dee84bb862e51c3181e97304568acd1 in /usr/local/tomcat 
+# Thu, 31 Aug 2023 20:30:09 GMT
 RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/*
-# Sat, 26 Aug 2023 03:07:49 GMT
+# Thu, 31 Aug 2023 20:30:10 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Sat, 26 Aug 2023 03:07:49 GMT
+# Thu, 31 Aug 2023 20:30:10 GMT
 EXPOSE 8080
-# Sat, 26 Aug 2023 03:07:49 GMT
+# Thu, 31 Aug 2023 20:30:10 GMT
 ENTRYPOINT []
-# Sat, 26 Aug 2023 03:07:49 GMT
+# Thu, 31 Aug 2023 20:30:10 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -563,31 +563,31 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Wed, 16 Aug 2023 09:45:28 GMT  
 		Size: 13.0 MB (12981961 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9da050f62588e50f1e0baad2d58f33fa3c221c494a9fece06b267b9ad2d3b658`  
-		Last Modified: Wed, 16 Aug 2023 09:45:54 GMT  
-		Size: 40.6 MB (40631838 bytes)  
+	-	`sha256:ccde82d553b887bb8b93ea074d9eda86b7886b0d7bad25aed5029c34717b60cc`  
+		Last Modified: Thu, 31 Aug 2023 19:46:41 GMT  
+		Size: 40.6 MB (40632197 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd033968475f20a26ab1befe8bd0ea3ef2e5365c6d1477dbb9ba761706e2475b`  
-		Last Modified: Wed, 16 Aug 2023 09:45:49 GMT  
-		Size: 158.0 B  
+	-	`sha256:d9d5cd0789aded439a9373565d968d330d4076ded4785322566d0a1a1653ff0b`  
+		Last Modified: Thu, 31 Aug 2023 19:46:36 GMT  
+		Size: 160.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df26ff07ff42e9b71c51248421ee5a15f5ef16b936355dab2527561b6fbf8550`  
-		Last Modified: Wed, 16 Aug 2023 09:45:49 GMT  
-		Size: 733.0 B  
+	-	`sha256:7ffee04c2933f1c018a8498fd633aad894c0b621b2ee824d469972ca06b17b83`  
+		Last Modified: Thu, 31 Aug 2023 19:46:36 GMT  
+		Size: 734.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ac080cbc73646ec635d6094f21f2243a719435679878794ce9d83d054350b3b9`  
-		Last Modified: Wed, 16 Aug 2023 17:27:30 GMT  
-		Size: 171.0 B  
+	-	`sha256:a7d8f50d1dc4d2be2a455f01655245df6a153777f3acaa6ec49515d4e3c1aa81`  
+		Last Modified: Thu, 31 Aug 2023 20:38:37 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1ded7e73cff75826ec2be4d2da27c8d0fcff1048cab2bdf006e7fca5fb48a042`  
-		Last Modified: Sat, 26 Aug 2023 03:17:12 GMT  
-		Size: 12.2 MB (12208591 bytes)  
+	-	`sha256:7af606c438c8650499d045468b3b82af04f605a19710792d42f5589f9a3c7681`  
+		Last Modified: Thu, 31 Aug 2023 20:38:38 GMT  
+		Size: 12.2 MB (12208490 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0198abaed7439f191cdf9e2f1b7891422a557340bc70e069af196ea21a2cbca1`  
-		Last Modified: Sat, 26 Aug 2023 03:17:11 GMT  
-		Size: 457.3 KB (457268 bytes)  
+	-	`sha256:8a2077d635d3edef95322d8a41c6015629c8de67cadb05e2806ce6d03b7a9679`  
+		Last Modified: Thu, 31 Aug 2023 20:38:38 GMT  
+		Size: 457.3 KB (457275 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:004e0ad1b11a370efd7c1a795e884b66efefe245de2522b41eff6e7d0c290ba1`  
-		Last Modified: Sat, 26 Aug 2023 03:17:11 GMT  
-		Size: 130.0 B  
+	-	`sha256:185877a03c117bf72c36d265c8ad6e3c3a3a7f78470c1b404862ee62d6797344`  
+		Last Modified: Thu, 31 Aug 2023 20:38:37 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
