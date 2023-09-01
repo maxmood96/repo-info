@@ -1,4 +1,4 @@
-## `unit:perl5`
+## `unit:perl5.38`
 
 ```console
 $ docker pull unit@sha256:3709f7decb89d1d0065e2a6a4afceb5080f89da9167a6a965648a5b472b7aa5d
@@ -9,7 +9,7 @@ $ docker pull unit@sha256:3709f7decb89d1d0065e2a6a4afceb5080f89da9167a6a965648a5
 	-	linux; amd64
 	-	linux; arm64 variant v8
 
-### `unit:perl5` - linux; amd64
+### `unit:perl5.38` - linux; amd64
 
 ```console
 $ docker pull unit@sha256:d53d1ab9c387c223b1c658c965f584abfb12a29933c702dc8498207b3e04a835
@@ -116,7 +116,7 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Size: 1.5 KB (1468 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `unit:perl5` - linux; arm64 variant v8
+### `unit:perl5.38` - linux; arm64 variant v8
 
 ```console
 $ docker pull unit@sha256:21dfd036c68043db83dd7b8878caf30c7f8febbbee085ffb8b4732bed6a79717
