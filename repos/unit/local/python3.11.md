@@ -1,10 +1,10 @@
-# `unit:1.30.0-python3.11`
+# `unit:1.31.0-python3.11`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f1ed550753bf121ce06c224cca57c1a5e6a2eb5b2d88b815568ebd4968b79ced`
-- Created: `2023-08-26T03:26:11.852707033Z`
-- Virtual Size: ~ 976.93 Mb  
+- Image ID: `sha256:60a7c5a7c606059525903306cbb40093a12799244f043c8ecc83aee7f73586c1`
+- Created: `2023-09-01T00:15:37.527726781Z`
+- Virtual Size: ~ 941.32 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-entrypoint.sh"]`
@@ -22,10 +22,10 @@
   - `org.opencontainers.image.description=Official build of Unit for Docker.`
   - `org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images`
   - `org.opencontainers.image.source=https://github.com/nginx/unit`
-  - `org.opencontainers.image.title=Unit`
+  - `org.opencontainers.image.title=Unit (python3.11)`
   - `org.opencontainers.image.url=https://unit.nginx.org`
   - `org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>`
-  - `org.opencontainers.image.version=1.30.0`
+  - `org.opencontainers.image.version=1.31.0`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -505,30 +505,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/brotli/1.0.9-2/ (for browsing the source)
 - https://sources.debian.net/src/brotli/1.0.9-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/brotli/1.0.9-2/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `build-essential=12.9`
-
-Binary Packages:
-
-- `build-essential=12.9`
-
-Licenses: (parsed from: `/usr/share/doc/build-essential/copyright`)
-
-- `GPL`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris build-essential=12.9
-'http://deb.debian.org/debian/pool/main/b/build-essential/build-essential_12.9.dsc' build-essential_12.9.dsc 2220 SHA256:1e4ad67c69001a162b2eb3a2019f037e53c8a1e312073ba1a2110d1e21971555
-'http://deb.debian.org/debian/pool/main/b/build-essential/build-essential_12.9.tar.xz' build-essential_12.9.tar.xz 51532 SHA256:938da370b4ef883687d141723d1b7470ad76bec7a54158d3d6b9b38f9c9eedb2
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/build-essential/12.9/ (for browsing the source)
-- https://sources.debian.net/src/build-essential/12.9/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/build-essential/12.9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `bzip2=1.0.8-4`
 

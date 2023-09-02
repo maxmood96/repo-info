@@ -1,26 +1,26 @@
-# `unit:1.30.0-node18`
+# `unit:1.31.0-node20`
 
 ## Docker Metadata
 
-- Image ID: `sha256:40a5af9a200b7bebf020ba55e3495c29cbcdff70e6507d1a72904a5d05d0e016`
-- Created: `2023-08-17T02:49:24.126854105Z`
-- Virtual Size: ~ 1.11 Gb  
+- Image ID: `sha256:b1c6a743ad1eb1e57855435c1499fafd9b94f9b6e48238ce97df985692ebfe39`
+- Created: `2023-09-01T00:10:19.199872927Z`
+- Virtual Size: ~ 1.03 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-entrypoint.sh"]`
 - Command: `["unitd","--no-daemon","--control","unix:/var/run/control.unit.sock"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=18.17.1`
+  - `NODE_VERSION=20.5.1`
   - `YARN_VERSION=1.22.19`
 - Labels:
   - `org.opencontainers.image.description=Official build of Unit for Docker.`
   - `org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images`
   - `org.opencontainers.image.source=https://github.com/nginx/unit`
-  - `org.opencontainers.image.title=Unit`
+  - `org.opencontainers.image.title=Unit (node20)`
   - `org.opencontainers.image.url=https://unit.nginx.org`
   - `org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>`
-  - `org.opencontainers.image.version=1.30.0`
+  - `org.opencontainers.image.version=1.31.0`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -468,30 +468,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/brotli/1.0.9-2/ (for browsing the source)
 - https://sources.debian.net/src/brotli/1.0.9-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/brotli/1.0.9-2/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `build-essential=12.9`
-
-Binary Packages:
-
-- `build-essential=12.9`
-
-Licenses: (parsed from: `/usr/share/doc/build-essential/copyright`)
-
-- `GPL`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris build-essential=12.9
-'http://deb.debian.org/debian/pool/main/b/build-essential/build-essential_12.9.dsc' build-essential_12.9.dsc 2220 SHA256:1e4ad67c69001a162b2eb3a2019f037e53c8a1e312073ba1a2110d1e21971555
-'http://deb.debian.org/debian/pool/main/b/build-essential/build-essential_12.9.tar.xz' build-essential_12.9.tar.xz 51532 SHA256:938da370b4ef883687d141723d1b7470ad76bec7a54158d3d6b9b38f9c9eedb2
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/build-essential/12.9/ (for browsing the source)
-- https://sources.debian.net/src/build-essential/12.9/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/build-essential/12.9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `bzip2=1.0.8-4`
 
