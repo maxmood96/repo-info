@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f7eb94a6a175f3ffc40b2b8437f4230e7784887cf1c21e29309fadc0a6db6051`
-- Created: `2023-08-26T04:29:49.906743421Z`
+- Image ID: `sha256:7d649f85f15f3ff29fedf538573708542d102e37a5a51e5def1641966decd013`
+- Created: `2023-09-02T03:47:05.922000537Z`
 - Virtual Size: ~ 287.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-17.0.8+7`
+  - `JAVA_VERSION=jdk-17.0.8.1+1`
   - `CATALINA_HOME=/usr/local/tomcat`
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
@@ -89,21 +89,25 @@ $ apt-get source -qq --print-uris apr=1.7.0-8ubuntu0.22.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.7.0-8ubuntu0.22.04.1.debian.tar.xz' apr_1.7.0-8ubuntu0.22.04.1.debian.tar.xz 223956 SHA512:15e521cd85aec08044a4c7302e50808e0d0e52b4c388872c87b84e4a646a9dfc409f0ce625eec986643ed9dff248edd25c69aa44d3904a59faea55c495f485bf
 ```
 
-### `dpkg` source package: `apt=2.4.9`
+### `dpkg` source package: `apt=2.4.10`
 
 Binary Packages:
 
-- `apt=2.4.9`
-- `libapt-pkg6.0:amd64=2.4.9`
+- `apt=2.4.10`
+- `libapt-pkg6.0:amd64=2.4.10`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg6.0/copyright`)
 
 - `GPL-2`
 - `GPLv2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris apt=2.4.10
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.4.10.dsc' apt_2.4.10.dsc 2801 SHA512:5c28184020dbb9b8ff959120768c0c2616acd5923fa6be8a87c1025345e3e2beb982a6256849061e043c9a74522c40937e3c7477115ce8dbc79f715bf6f3ea17
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.4.10.tar.xz' apt_2.4.10.tar.xz 2318732 SHA512:1b9c12a44c205013c2d56af163c219a5c945f7a4c15373a2a07ec5d2d4130ef3bbd964f6986e22b55016b5481897356b968da9fdf84e538f8d81d7bcd70bd11d
+```
 
 ### `dpkg` source package: `attr=1:2.5.1-1build1`
 
