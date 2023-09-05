@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c5dfde17e78a04a3451555e7cca500b04f565ef2d1eca93229c3e813224a2355`
-- Created: `2023-08-17T09:51:37.673809165Z`
-- Virtual Size: ~ 529.34 Mb  
+- Image ID: `sha256:08de222e5760106296d7e1a925bfbfd90b9101dc62c070cdb9fb182ecdd78aa8`
+- Created: `2023-08-31T23:53:00.338894817Z`
+- Virtual Size: ~ 529.38 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-17.0.8+7`
+  - `JAVA_VERSION=jdk-17.0.8.1+1`
   - `GRADLE_HOME=/opt/gradle`
   - `GRADLE_VERSION=7.6.2`
 
@@ -959,16 +959,16 @@ MIT
 ### `apk` package: `python3`
 
 ```console
-python3-3.11.4-r0 description:
+python3-3.11.5-r0 description:
 High-level scripting language
 
-python3-3.11.4-r0 webpage:
+python3-3.11.5-r0 webpage:
 https://www.python.org/
 
-python3-3.11.4-r0 installed size:
+python3-3.11.5-r0 installed size:
 24 MiB
 
-python3-3.11.4-r0 license:
+python3-3.11.5-r0 license:
 PSF-2.0
 
 ```
@@ -976,16 +976,16 @@ PSF-2.0
 ### `apk` package: `python3-pyc`
 
 ```console
-python3-pyc-3.11.4-r0 description:
+python3-pyc-3.11.5-r0 description:
 High-level scripting language (install .pyc cache files)
 
-python3-pyc-3.11.4-r0 webpage:
+python3-pyc-3.11.5-r0 webpage:
 https://www.python.org/
 
-python3-pyc-3.11.4-r0 installed size:
+python3-pyc-3.11.5-r0 installed size:
 4096 B
 
-python3-pyc-3.11.4-r0 license:
+python3-pyc-3.11.5-r0 license:
 PSF-2.0
 
 ```
@@ -993,16 +993,16 @@ PSF-2.0
 ### `apk` package: `python3-pycache-pyc0`
 
 ```console
-python3-pycache-pyc0-3.11.4-r0 description:
+python3-pycache-pyc0-3.11.5-r0 description:
 High-level scripting language (.pyc pycache files)
 
-python3-pycache-pyc0-3.11.4-r0 webpage:
+python3-pycache-pyc0-3.11.5-r0 webpage:
 https://www.python.org/
 
-python3-pycache-pyc0-3.11.4-r0 installed size:
+python3-pycache-pyc0-3.11.5-r0 installed size:
 13 MiB
 
-python3-pycache-pyc0-3.11.4-r0 license:
+python3-pycache-pyc0-3.11.5-r0 license:
 PSF-2.0
 
 ```

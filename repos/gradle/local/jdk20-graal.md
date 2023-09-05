@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c65b24c78f5640986ffb8c954c39924aaecf5ad7a52fabf3c291c54faecb356d`
-- Created: `2023-08-17T20:22:41.270647504Z`
+- Image ID: `sha256:287ce03ff5367f100cd215d36e9637da2568d66f51c43318ce1d6afb1fe01c90`
+- Created: `2023-09-02T00:32:29.927131987Z`
 - Virtual Size: ~ 1.17 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -70,14 +70,9 @@ Licenses: (parsed from: `/usr/share/doc/libaprutil1/copyright`)
 
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apr-util=1.6.1-5ubuntu4.22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apr-util/apr-util_1.6.1-5ubuntu4.22.04.1.dsc' apr-util_1.6.1-5ubuntu4.22.04.1.dsc 2339 SHA512:38097a93c0533e0d76a9ff4325f6c689e4661c93a8a35f2e3bbc66775188e778790974fd7aad9e03a00b296cd69f7e27691a5ee3f37f0572f86bd8e75c67eea1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apr-util/apr-util_1.6.1.orig.tar.bz2' apr-util_1.6.1.orig.tar.bz2 428595 SHA512:40eff8a37c0634f7fdddd6ca5e596b38de15fd10767a34c30bbe49c632816e8f3e1e230678034f578dd5816a94f246fb5dfdf48d644829af13bf28de3225205d
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apr-util/apr-util_1.6.1-5ubuntu4.22.04.1.debian.tar.xz' apr-util_1.6.1-5ubuntu4.22.04.1.debian.tar.xz 344520 SHA512:00e5698194f0e8dce93f096fd51362a3de2c3eb5353f185f1dc5dbafbb68d8e7cfed1efa1705dfa3eea39399c263cbc0bd55d3128405d996492bd348d2f2e2fd
-```
 
 ### `dpkg` source package: `apr=1.7.0-8ubuntu0.22.04.1`
 
@@ -99,21 +94,25 @@ $ apt-get source -qq --print-uris apr=1.7.0-8ubuntu0.22.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.7.0-8ubuntu0.22.04.1.debian.tar.xz' apr_1.7.0-8ubuntu0.22.04.1.debian.tar.xz 223956 SHA512:15e521cd85aec08044a4c7302e50808e0d0e52b4c388872c87b84e4a646a9dfc409f0ce625eec986643ed9dff248edd25c69aa44d3904a59faea55c495f485bf
 ```
 
-### `dpkg` source package: `apt=2.4.9`
+### `dpkg` source package: `apt=2.4.10`
 
 Binary Packages:
 
-- `apt=2.4.9`
-- `libapt-pkg6.0:amd64=2.4.9`
+- `apt=2.4.10`
+- `libapt-pkg6.0:amd64=2.4.10`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg6.0/copyright`)
 
 - `GPL-2`
 - `GPLv2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris apt=2.4.10
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.4.10.dsc' apt_2.4.10.dsc 2801 SHA512:5c28184020dbb9b8ff959120768c0c2616acd5923fa6be8a87c1025345e3e2beb982a6256849061e043c9a74522c40937e3c7477115ce8dbc79f715bf6f3ea17
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.4.10.tar.xz' apt_2.4.10.tar.xz 2318732 SHA512:1b9c12a44c205013c2d56af163c219a5c945f7a4c15373a2a07ec5d2d4130ef3bbd964f6986e22b55016b5481897356b968da9fdf84e538f8d81d7bcd70bd11d
+```
 
 ### `dpkg` source package: `attr=1:2.5.1-1build1`
 
@@ -1756,11 +1755,11 @@ $ apt-get source -qq --print-uris libzstd=1.4.8+dfsg-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.8%2bdfsg-3build1.debian.tar.xz' libzstd_1.4.8+dfsg-3build1.debian.tar.xz 12316 SHA512:8123965a6e73c5ddd8d535e78ed1074e2eabd7f8ed090d215a89feedffae9391cf472d2395242d3cb0351cbf76603448dae93ad70d0989806b42b03c65b22db0
 ```
 
-### `dpkg` source package: `linux=5.15.0-79.86`
+### `dpkg` source package: `linux=5.15.0-82.91`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.15.0-79.86`
+- `linux-libc-dev:amd64=5.15.0-82.91`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
