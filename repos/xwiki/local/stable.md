@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4f5acc4924a5f61014156d0fe9978810366356a62d9937736381db2f15f7adcf`
-- Created: `2023-09-01T00:30:53.291809165Z`
+- Image ID: `sha256:a84d11e28d465cf1e84d2039efc2a7a83e2cd1aa775089034c484a0bb01b5175`
+- Created: `2023-09-02T08:52:25.966526291Z`
 - Virtual Size: ~ 1.17 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -123,21 +123,25 @@ $ apt-get source -qq --print-uris apr=1.7.0-8ubuntu0.22.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.7.0-8ubuntu0.22.04.1.debian.tar.xz' apr_1.7.0-8ubuntu0.22.04.1.debian.tar.xz 223956 SHA512:15e521cd85aec08044a4c7302e50808e0d0e52b4c388872c87b84e4a646a9dfc409f0ce625eec986643ed9dff248edd25c69aa44d3904a59faea55c495f485bf
 ```
 
-### `dpkg` source package: `apt=2.4.9`
+### `dpkg` source package: `apt=2.4.10`
 
 Binary Packages:
 
-- `apt=2.4.9`
-- `libapt-pkg6.0:amd64=2.4.9`
+- `apt=2.4.10`
+- `libapt-pkg6.0:amd64=2.4.10`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg6.0/copyright`)
 
 - `GPL-2`
 - `GPLv2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris apt=2.4.10
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.4.10.dsc' apt_2.4.10.dsc 2801 SHA512:5c28184020dbb9b8ff959120768c0c2616acd5923fa6be8a87c1025345e3e2beb982a6256849061e043c9a74522c40937e3c7477115ce8dbc79f715bf6f3ea17
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.4.10.tar.xz' apt_2.4.10.tar.xz 2318732 SHA512:1b9c12a44c205013c2d56af163c219a5c945f7a4c15373a2a07ec5d2d4130ef3bbd964f6986e22b55016b5481897356b968da9fdf84e538f8d81d7bcd70bd11d
+```
 
 ### `dpkg` source package: `attr=1:2.5.1-1build1`
 
