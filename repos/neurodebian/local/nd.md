@@ -486,20 +486,13 @@ Licenses: (parsed from: `/usr/share/doc/debianutils/copyright`)
 - `SMAIL-GPL`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debianutils=5.8-1
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_5.8-1.dsc' debianutils_5.8-1.dsc 1647 SHA256:6492272a6f7db256102b32182f279c1e5e4844b59e001c32111cec0e33f2efa1
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_5.8.orig.tar.gz' debianutils_5.8.orig.tar.gz 260865 SHA256:5b086d27eb9063de4d746760d0faeb40d9464fb855fc8a8e7fb93b03efcec622
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_5.8-1.debian.tar.xz' debianutils_5.8-1.debian.tar.xz 22044 SHA256:7278b28beb14ebe3c5ae4f52b8c748ceebea655e392b3ef701c9473f5f4763cd
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debianutils/5.8-1/
 
-- https://sources.debian.net/src/debianutils/5.8-1/ (for browsing the source)
-- https://sources.debian.net/src/debianutils/5.8-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debianutils/5.8-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `diffutils=1:3.8-4`
 
@@ -1030,21 +1023,13 @@ Licenses: (parsed from: `/usr/share/doc/eatmydata/copyright`, `/usr/share/doc/li
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libeatmydata=130-2
-'http://deb.debian.org/debian/pool/main/libe/libeatmydata/libeatmydata_130-2.dsc' libeatmydata_130-2.dsc 2439 SHA256:684157c21533d3bfd15eca6481835180dfec175d6d8d355d108fba605202a0b5
-'http://deb.debian.org/debian/pool/main/libe/libeatmydata/libeatmydata_130.orig.tar.gz' libeatmydata_130.orig.tar.gz 375627 SHA256:48731cd7e612ff73fd6339378fbbff38dd3bcf6c243593b0d9773ca0051541c0
-'http://deb.debian.org/debian/pool/main/libe/libeatmydata/libeatmydata_130.orig.tar.gz.asc' libeatmydata_130.orig.tar.gz.asc 833 SHA256:9296d99f3f289b353c2134a065a7231aada7cea24d699d196283ce761a62c058
-'http://deb.debian.org/debian/pool/main/libe/libeatmydata/libeatmydata_130-2.debian.tar.xz' libeatmydata_130-2.debian.tar.xz 15576 SHA256:bc242a47408c91714f25461d23fb9ad70e53b4252f8ef17ff589f2b16d78e9e9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libeatmydata/130-2/
 
-- https://sources.debian.net/src/libeatmydata/130-2/ (for browsing the source)
-- https://sources.debian.net/src/libeatmydata/130-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libeatmydata/130-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libffi=3.4.4-1`
 
@@ -1968,21 +1953,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.42.0-1
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.42.0-1.dsc' sqlite3_3.42.0-1.dsc 2486 SHA256:bcd93bf08d021d1ed6850af2ab3d174a23e5453e81ed7a92b64623c4e1b572d1
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.42.0.orig-www.tar.xz' sqlite3_3.42.0.orig-www.tar.xz 5708628 SHA256:a3f1f24fcf1e33a6a24b5e02dbcc8e547b3386632ff202dd404ec417603c2e71
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.42.0.orig.tar.xz' sqlite3_3.42.0.orig.tar.xz 8129004 SHA256:92d296f6ae47e468e39390f32dba820662c295563285a33c5aae1dc555363043
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.42.0-1.debian.tar.xz' sqlite3_3.42.0-1.debian.tar.xz 29996 SHA256:27903236332024070a9dfa8f8f4679504e6679ef825731ac3bef98b210bf436d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sqlite3/3.42.0-1/
 
-- https://sources.debian.net/src/sqlite3/3.42.0-1/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.42.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.42.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=254.1-2`
 

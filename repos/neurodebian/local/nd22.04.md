@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:175e748d1c9c4c6954f6a97f8dd3abd3f25e0c7fcd0b80d51c808cae443d25b3`
-- Created: `2023-08-16T10:13:03.420094468Z`
-- Virtual Size: ~ 87.25 Mb  
+- Image ID: `sha256:82459abc98ed3482c86b6a5d476fa37916587ac7f18313213de9323e328cd028`
+- Created: `2023-09-02T01:05:42.857287326Z`
+- Virtual Size: ~ 87.24 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -57,21 +57,25 @@ $ apt-get source -qq --print-uris adduser=3.118ubuntu5
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.118ubuntu5.tar.xz' adduser_3.118ubuntu5.tar.xz 222904 SHA512:ded568a5a3f5a5ac1acc2098e37160194f8c4622e90c7044d599286a321fe8fd701c8554a4517e4d72a6089b8e3b5592b92d46668032bda81de64cc736bf0a75
 ```
 
-### `dpkg` source package: `apt=2.4.9`
+### `dpkg` source package: `apt=2.4.10`
 
 Binary Packages:
 
-- `apt=2.4.9`
-- `libapt-pkg6.0:amd64=2.4.9`
+- `apt=2.4.10`
+- `libapt-pkg6.0:amd64=2.4.10`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg6.0/copyright`)
 
 - `GPL-2`
 - `GPLv2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris apt=2.4.10
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.4.10.dsc' apt_2.4.10.dsc 2801 SHA512:5c28184020dbb9b8ff959120768c0c2616acd5923fa6be8a87c1025345e3e2beb982a6256849061e043c9a74522c40937e3c7477115ce8dbc79f715bf6f3ea17
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.4.10.tar.xz' apt_2.4.10.tar.xz 2318732 SHA512:1b9c12a44c205013c2d56af163c219a5c945f7a4c15373a2a07ec5d2d4130ef3bbd964f6986e22b55016b5481897356b968da9fdf84e538f8d81d7bcd70bd11d
+```
 
 ### `dpkg` source package: `attr=1:2.5.1-1build1`
 
@@ -1266,11 +1270,11 @@ $ apt-get source -qq --print-uris nettle=3.7.3-1build2
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.7.3-1build2.debian.tar.xz' nettle_3.7.3-1build2.debian.tar.xz 22100 SHA512:c1935d35e9f04798273053ab92c7405ec225a5d72ba6c2869b0f2bf54b459ac428e113bc149796e91834a8b56082f8bbfbb906a6cd6787142b8932bd1dd83cec
 ```
 
-### `dpkg` source package: `neurodebian=0.41.2~nd22.04+1`
+### `dpkg` source package: `neurodebian=0.42.0~nd22.04+1`
 
 Binary Packages:
 
-- `neurodebian-freeze=0.41.2~nd22.04+1`
+- `neurodebian-freeze=0.42.0~nd22.04+1`
 
 Licenses: (parsed from: `/usr/share/doc/neurodebian-freeze/copyright`)
 
@@ -1279,9 +1283,13 @@ Licenses: (parsed from: `/usr/share/doc/neurodebian-freeze/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris neurodebian=0.42.0~nd22.04+1
+'http://neuro.debian.net/debian/pool/main/n/neurodebian/neurodebian_0.42.0%7end22.04%2b1.dsc' neurodebian_0.42.0~nd22.04+1.dsc 1543 SHA256:9807963b097d3092031333293f91483db5e70a57d4eaf2db9efd19b0e6d858b8
+'http://neuro.debian.net/debian/pool/main/n/neurodebian/neurodebian_0.42.0%7end22.04%2b1.tar.xz' neurodebian_0.42.0~nd22.04+1.tar.xz 8319916 SHA256:5df696e7e1fab8086315f43455c2691a3a1447e3478622cd593aebad617b0148
+```
 
 ### `dpkg` source package: `npth=1.6-3build2`
 
