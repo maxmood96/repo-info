@@ -845,7 +845,7 @@ CMD ["fluentd"]
 ## `fluentd:v1.16-debian-1`
 
 ```console
-$ docker pull fluentd@sha256:491b2a6a5c942c3b8da9c899ef0867dc55758c2c099cbdf2423bab2dbe2fae50
+$ docker pull fluentd@sha256:cd80e37f01867c7ddabdd587567c3361dba2cdd63ea822eb97a9b4215e785629
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -970,110 +970,110 @@ CMD ["fluentd"]
 ### `fluentd:v1.16-debian-1` - linux; arm variant v5
 
 ```console
-$ docker pull fluentd@sha256:663e5cd8161c63f48d05ab2b8915bc87d04d3f18a80e836b473cf23b473f4e02
+$ docker pull fluentd@sha256:3136747cc69ee757392c12346ca3703d0b33d371e33125944e6db40ccad0cc46
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **95.3 MB (95274308 bytes)**  
+-	Total Size: **95.3 MB (95273257 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a1a5260515decb6f0cf67aeb4f206178699c2e282cacfa205d5a3eaf84b00b6d`
+-	Image ID: `sha256:c3297bed04235239387612537b5bc4c8d042b6689b411716b9c849983fd05f09`
 -	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
 -	Default Command: `["fluentd"]`
 
 ```dockerfile
-# Tue, 15 Aug 2023 23:48:48 GMT
-ADD file:3b3acc24aa6c4e5b8cfc525e3f293f633aace75304eaf7d1615d63233866cd66 in / 
-# Tue, 15 Aug 2023 23:48:48 GMT
+# Thu, 07 Sep 2023 00:48:46 GMT
+ADD file:fb0679e6b5c5114176b186c73a97748a7712d856da24ce6f6aad2cd210825755 in / 
+# Thu, 07 Sep 2023 00:48:47 GMT
 CMD ["bash"]
-# Wed, 16 Aug 2023 11:18:59 GMT
+# Thu, 07 Sep 2023 12:24:18 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		ca-certificates 		libffi-dev 		libgmp-dev 		libssl-dev 		libyaml-dev 		procps 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 16 Aug 2023 11:19:00 GMT
+# Thu, 07 Sep 2023 12:24:19 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	{ 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /usr/local/etc/gemrc
-# Wed, 16 Aug 2023 11:19:00 GMT
+# Thu, 07 Sep 2023 12:24:19 GMT
 ENV LANG=C.UTF-8
-# Wed, 16 Aug 2023 11:38:08 GMT
+# Thu, 07 Sep 2023 12:43:28 GMT
 ENV RUBY_MAJOR=3.1
-# Wed, 16 Aug 2023 11:38:08 GMT
+# Thu, 07 Sep 2023 12:43:28 GMT
 ENV RUBY_VERSION=3.1.4
-# Wed, 16 Aug 2023 11:38:09 GMT
+# Thu, 07 Sep 2023 12:43:28 GMT
 ENV RUBY_DOWNLOAD_SHA256=1b6d6010e76036c937b9671f4752f065aeca800a6c664f71f6c9a699453af94f
-# Wed, 16 Aug 2023 11:40:20 GMT
+# Thu, 07 Sep 2023 12:45:39 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bison 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		g++ 		gcc 		libbz2-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libncurses-dev 		libreadline-dev 		libxml2-dev 		libxslt-dev 		make 		wget 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O ruby.tar.xz "https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		{ 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new; 	mv file.c.new file.c; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 	; 	make -j "$(nproc)"; 	make install; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version
-# Wed, 16 Aug 2023 11:40:20 GMT
+# Thu, 07 Sep 2023 12:45:39 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Wed, 16 Aug 2023 11:40:20 GMT
+# Thu, 07 Sep 2023 12:45:39 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Wed, 16 Aug 2023 11:40:20 GMT
+# Thu, 07 Sep 2023 12:45:40 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 16 Aug 2023 11:40:21 GMT
+# Thu, 07 Sep 2023 12:45:40 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 1777 "$GEM_HOME"
-# Wed, 16 Aug 2023 11:40:21 GMT
+# Thu, 07 Sep 2023 12:45:40 GMT
 CMD ["irb"]
-# Wed, 16 Aug 2023 16:13:25 GMT
+# Thu, 07 Sep 2023 20:38:25 GMT
 LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
-# Wed, 16 Aug 2023 16:13:25 GMT
+# Thu, 07 Sep 2023 20:38:25 GMT
 LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.16.0
-# Wed, 16 Aug 2023 16:13:25 GMT
+# Thu, 07 Sep 2023 20:38:25 GMT
 ENV TINI_VERSION=0.18.0
-# Wed, 16 Aug 2023 16:16:26 GMT
+# Thu, 07 Sep 2023 20:41:21 GMT
 RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && gem install oj -v 3.14.2  && gem install json -v 2.6.3  && gem install rexml -v 3.2.5  && gem install async -v 1.30.3  && gem install async-http -v 0.56.6  && gem install fluentd -v 1.16.0  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/v$TINI_VERSION/tini-$dpkgArch"  && wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/v$TINI_VERSION/tini-$dpkgArch.asc"  && export GNUPGHOME="$(mktemp -d)"  && gpg --batch --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5  && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini  && rm -r /usr/local/bin/tini.asc  && chmod +x /usr/local/bin/tini  && tini -h  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* /usr/lib/ruby/gems/*/cache/*.gem /usr/lib/ruby/gems/3.*/gems/fluentd-*/test
-# Wed, 16 Aug 2023 16:16:26 GMT
+# Thu, 07 Sep 2023 20:41:21 GMT
 RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd
-# Wed, 16 Aug 2023 16:16:26 GMT
+# Thu, 07 Sep 2023 20:41:22 GMT
 COPY file:06d9a84b9b428b4e0ef5a9e3699798758dc9716908d82091239fb9f85dd30d70 in /fluentd/etc/ 
-# Wed, 16 Aug 2023 16:16:26 GMT
+# Thu, 07 Sep 2023 20:41:22 GMT
 COPY file:977670d9d298d60208db6e5110a5919bfde19ee7da9c19df693163ecd07caea6 in /bin/ 
-# Wed, 16 Aug 2023 16:16:27 GMT
+# Thu, 07 Sep 2023 20:41:22 GMT
 ENV FLUENTD_CONF=fluent.conf
-# Wed, 16 Aug 2023 16:16:27 GMT
+# Thu, 07 Sep 2023 20:41:22 GMT
 ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
-# Wed, 16 Aug 2023 16:16:27 GMT
+# Thu, 07 Sep 2023 20:41:22 GMT
 EXPOSE 24224 5140
-# Wed, 16 Aug 2023 16:16:27 GMT
+# Thu, 07 Sep 2023 20:41:22 GMT
 USER fluent
-# Wed, 16 Aug 2023 16:16:27 GMT
+# Thu, 07 Sep 2023 20:41:22 GMT
 ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
-# Wed, 16 Aug 2023 16:16:27 GMT
+# Thu, 07 Sep 2023 20:41:22 GMT
 CMD ["fluentd"]
 ```
 
 -	Layers:
-	-	`sha256:a1de04ebd80600d150cca674fb676a51a44730027c798fad7415210924b7fed2`  
-		Last Modified: Tue, 15 Aug 2023 23:52:15 GMT  
-		Size: 28.9 MB (28919119 bytes)  
+	-	`sha256:3c087ebb90b5f9b89ab4e03487d68bd9805afd41a68507381ba597291c3083d6`  
+		Last Modified: Thu, 07 Sep 2023 00:52:19 GMT  
+		Size: 28.9 MB (28919010 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05a0531f0b9849ec537e87b8da5ec745afe6a3f7d846a042da80c297128b7b1a`  
-		Last Modified: Wed, 16 Aug 2023 11:46:19 GMT  
-		Size: 8.6 MB (8632295 bytes)  
+	-	`sha256:ade30b75c47a14b69887cf5cc38afa1503ae49e1a615fa5662b1100ca8cfee92`  
+		Last Modified: Thu, 07 Sep 2023 12:51:35 GMT  
+		Size: 8.6 MB (8631321 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4cb4c94dc4330426e831b65c10b3c4e438afbc520626b863b45013a532c20519`  
-		Last Modified: Wed, 16 Aug 2023 11:46:17 GMT  
-		Size: 200.0 B  
+	-	`sha256:57d8d91a80834c51012139f89326abf487a7e4aaa26f17e02aaa168b9235fb85`  
+		Last Modified: Thu, 07 Sep 2023 12:51:33 GMT  
+		Size: 199.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:49ffc4e15f16519c1781b6c6327b113b6279316e1bf639cd7b5a5637971e02b8`  
-		Last Modified: Wed, 16 Aug 2023 11:48:33 GMT  
-		Size: 31.2 MB (31165985 bytes)  
+	-	`sha256:d1face2f9a6568c0fa1abde24fb129766de7e717e01ec24bac0449133d7cd3d4`  
+		Last Modified: Thu, 07 Sep 2023 12:53:58 GMT  
+		Size: 31.2 MB (31166045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b515fa6049c2c5de19ac23569b7ba47a1dc53f5e87132192764abdf1df8a8b9`  
-		Last Modified: Wed, 16 Aug 2023 11:48:29 GMT  
-		Size: 177.0 B  
+	-	`sha256:9005c5622f6fd2c57ce5c2924a71d5a86ecc12fdbb83e26654a53bfea0ecaae7`  
+		Last Modified: Thu, 07 Sep 2023 12:53:55 GMT  
+		Size: 176.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:171f8d076f330c3e528910c75b8251b7cd0e4d4d8e2161f3036f5284c73f5dda`  
-		Last Modified: Wed, 16 Aug 2023 16:16:50 GMT  
-		Size: 26.6 MB (26553833 bytes)  
+	-	`sha256:c832643a2ad8e8c7b078f32392cbdca55f2bfe901fe94161200b51661a41be06`  
+		Last Modified: Thu, 07 Sep 2023 20:41:45 GMT  
+		Size: 26.6 MB (26553806 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed531e385d43f49a8d5fb5ad78172e34bc386494f12fa5baa812197516455a5b`  
-		Last Modified: Wed, 16 Aug 2023 16:16:46 GMT  
-		Size: 1.8 KB (1833 bytes)  
+	-	`sha256:23dd2cd4dd2de9f38ae9175452483d46a17a93fd952f1a65f1991c66216220ad`  
+		Last Modified: Thu, 07 Sep 2023 20:41:39 GMT  
+		Size: 1.8 KB (1832 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3e7bc7767e4a90a3c6f657939f4eea393400fb987badf73a4e3d59794b8138de`  
-		Last Modified: Wed, 16 Aug 2023 16:16:46 GMT  
-		Size: 405.0 B  
+	-	`sha256:520810c24c84d466eb9b7e6e29a526ef49a98b60dd73d3840c00ac6e9be5894a`  
+		Last Modified: Thu, 07 Sep 2023 20:41:39 GMT  
+		Size: 408.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4d36547bb5715ea8eca32b1cfa407b9b3f51c1194563c525420bf4f24a6b1a2`  
-		Last Modified: Wed, 16 Aug 2023 16:16:46 GMT  
-		Size: 461.0 B  
+	-	`sha256:304f414b1c1f41131994ca2c471a0a0f323f02a5575538e60696e1d3a81bbd05`  
+		Last Modified: Thu, 07 Sep 2023 20:41:39 GMT  
+		Size: 460.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `fluentd:v1.16-debian-1` - linux; arm variant v7
@@ -2041,7 +2041,7 @@ CMD ["fluentd"]
 ## `fluentd:v1.16.0-debian-1.0`
 
 ```console
-$ docker pull fluentd@sha256:491b2a6a5c942c3b8da9c899ef0867dc55758c2c099cbdf2423bab2dbe2fae50
+$ docker pull fluentd@sha256:cd80e37f01867c7ddabdd587567c3361dba2cdd63ea822eb97a9b4215e785629
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -2166,110 +2166,110 @@ CMD ["fluentd"]
 ### `fluentd:v1.16.0-debian-1.0` - linux; arm variant v5
 
 ```console
-$ docker pull fluentd@sha256:663e5cd8161c63f48d05ab2b8915bc87d04d3f18a80e836b473cf23b473f4e02
+$ docker pull fluentd@sha256:3136747cc69ee757392c12346ca3703d0b33d371e33125944e6db40ccad0cc46
 ```
 
 -	Docker Version: 20.10.23
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **95.3 MB (95274308 bytes)**  
+-	Total Size: **95.3 MB (95273257 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a1a5260515decb6f0cf67aeb4f206178699c2e282cacfa205d5a3eaf84b00b6d`
+-	Image ID: `sha256:c3297bed04235239387612537b5bc4c8d042b6689b411716b9c849983fd05f09`
 -	Entrypoint: `["tini","--","\/bin\/entrypoint.sh"]`
 -	Default Command: `["fluentd"]`
 
 ```dockerfile
-# Tue, 15 Aug 2023 23:48:48 GMT
-ADD file:3b3acc24aa6c4e5b8cfc525e3f293f633aace75304eaf7d1615d63233866cd66 in / 
-# Tue, 15 Aug 2023 23:48:48 GMT
+# Thu, 07 Sep 2023 00:48:46 GMT
+ADD file:fb0679e6b5c5114176b186c73a97748a7712d856da24ce6f6aad2cd210825755 in / 
+# Thu, 07 Sep 2023 00:48:47 GMT
 CMD ["bash"]
-# Wed, 16 Aug 2023 11:18:59 GMT
+# Thu, 07 Sep 2023 12:24:18 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzip2 		ca-certificates 		libffi-dev 		libgmp-dev 		libssl-dev 		libyaml-dev 		procps 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/*
-# Wed, 16 Aug 2023 11:19:00 GMT
+# Thu, 07 Sep 2023 12:24:19 GMT
 RUN set -eux; 	mkdir -p /usr/local/etc; 	{ 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /usr/local/etc/gemrc
-# Wed, 16 Aug 2023 11:19:00 GMT
+# Thu, 07 Sep 2023 12:24:19 GMT
 ENV LANG=C.UTF-8
-# Wed, 16 Aug 2023 11:38:08 GMT
+# Thu, 07 Sep 2023 12:43:28 GMT
 ENV RUBY_MAJOR=3.1
-# Wed, 16 Aug 2023 11:38:08 GMT
+# Thu, 07 Sep 2023 12:43:28 GMT
 ENV RUBY_VERSION=3.1.4
-# Wed, 16 Aug 2023 11:38:09 GMT
+# Thu, 07 Sep 2023 12:43:28 GMT
 ENV RUBY_DOWNLOAD_SHA256=1b6d6010e76036c937b9671f4752f065aeca800a6c664f71f6c9a699453af94f
-# Wed, 16 Aug 2023 11:40:20 GMT
+# Thu, 07 Sep 2023 12:45:39 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		bison 		dpkg-dev 		libgdbm-dev 		ruby 		autoconf 		g++ 		gcc 		libbz2-dev 		libgdbm-compat-dev 		libglib2.0-dev 		libncurses-dev 		libreadline-dev 		libxml2-dev 		libxslt-dev 		make 		wget 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O ruby.tar.xz "https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz"; 	echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; 		mkdir -p /usr/src/ruby; 	tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; 	rm ruby.tar.xz; 		cd /usr/src/ruby; 		{ 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new; 	mv file.c.new file.c; 		autoconf; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--disable-install-doc 		--enable-shared 	; 	make -j "$(nproc)"; 	make install; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		cd /; 	rm -r /usr/src/ruby; 	if dpkg -l | grep -i ruby; then exit 1; fi; 	[ "$(command -v ruby)" = '/usr/local/bin/ruby' ]; 	ruby --version; 	gem --version; 	bundle --version
-# Wed, 16 Aug 2023 11:40:20 GMT
+# Thu, 07 Sep 2023 12:45:39 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Wed, 16 Aug 2023 11:40:20 GMT
+# Thu, 07 Sep 2023 12:45:39 GMT
 ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Wed, 16 Aug 2023 11:40:20 GMT
+# Thu, 07 Sep 2023 12:45:40 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 16 Aug 2023 11:40:21 GMT
+# Thu, 07 Sep 2023 12:45:40 GMT
 RUN mkdir -p "$GEM_HOME" && chmod 1777 "$GEM_HOME"
-# Wed, 16 Aug 2023 11:40:21 GMT
+# Thu, 07 Sep 2023 12:45:40 GMT
 CMD ["irb"]
-# Wed, 16 Aug 2023 16:13:25 GMT
+# Thu, 07 Sep 2023 20:38:25 GMT
 LABEL maintainer=Fluentd developers <fluentd@googlegroups.com>
-# Wed, 16 Aug 2023 16:13:25 GMT
+# Thu, 07 Sep 2023 20:38:25 GMT
 LABEL Description=Fluentd docker image Vendor=Fluent Organization Version=1.16.0
-# Wed, 16 Aug 2023 16:13:25 GMT
+# Thu, 07 Sep 2023 20:38:25 GMT
 ENV TINI_VERSION=0.18.0
-# Wed, 16 Aug 2023 16:16:26 GMT
+# Thu, 07 Sep 2023 20:41:21 GMT
 RUN apt-get update  && apt-get install -y --no-install-recommends             ca-certificates  && buildDeps="       make gcc g++ libc-dev       wget bzip2 gnupg dirmngr     "  && apt-get install -y --no-install-recommends $buildDeps  && echo 'gem: --no-document' >> /etc/gemrc  && gem install oj -v 3.14.2  && gem install json -v 2.6.3  && gem install rexml -v 3.2.5  && gem install async -v 1.30.3  && gem install async-http -v 0.56.6  && gem install fluentd -v 1.16.0  && dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"  && wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/v$TINI_VERSION/tini-$dpkgArch"  && wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/v$TINI_VERSION/tini-$dpkgArch.asc"  && export GNUPGHOME="$(mktemp -d)"  && gpg --batch --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5  && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini  && rm -r /usr/local/bin/tini.asc  && chmod +x /usr/local/bin/tini  && tini -h  && wget -O /tmp/jemalloc-5.3.0.tar.bz2 https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2  && cd /tmp && tar -xjf jemalloc-5.3.0.tar.bz2 && cd jemalloc-5.3.0/  && (echo "je_cv_madv_free=no" > config.cache) && ./configure -C && make  && mv lib/libjemalloc.so.2 /usr/lib  && apt-get purge -y --auto-remove                   -o APT::AutoRemove::RecommendsImportant=false                   $buildDeps  && rm -rf /var/lib/apt/lists/*  && rm -rf /tmp/* /var/tmp/* /usr/lib/ruby/gems/*/cache/*.gem /usr/lib/ruby/gems/3.*/gems/fluentd-*/test
-# Wed, 16 Aug 2023 16:16:26 GMT
+# Thu, 07 Sep 2023 20:41:21 GMT
 RUN groupadd -r fluent && useradd -r -g fluent fluent     && mkdir -p /fluentd/log     && mkdir -p /fluentd/etc /fluentd/plugins     && chown -R fluent /fluentd && chgrp -R fluent /fluentd
-# Wed, 16 Aug 2023 16:16:26 GMT
+# Thu, 07 Sep 2023 20:41:22 GMT
 COPY file:06d9a84b9b428b4e0ef5a9e3699798758dc9716908d82091239fb9f85dd30d70 in /fluentd/etc/ 
-# Wed, 16 Aug 2023 16:16:26 GMT
+# Thu, 07 Sep 2023 20:41:22 GMT
 COPY file:977670d9d298d60208db6e5110a5919bfde19ee7da9c19df693163ecd07caea6 in /bin/ 
-# Wed, 16 Aug 2023 16:16:27 GMT
+# Thu, 07 Sep 2023 20:41:22 GMT
 ENV FLUENTD_CONF=fluent.conf
-# Wed, 16 Aug 2023 16:16:27 GMT
+# Thu, 07 Sep 2023 20:41:22 GMT
 ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
-# Wed, 16 Aug 2023 16:16:27 GMT
+# Thu, 07 Sep 2023 20:41:22 GMT
 EXPOSE 24224 5140
-# Wed, 16 Aug 2023 16:16:27 GMT
+# Thu, 07 Sep 2023 20:41:22 GMT
 USER fluent
-# Wed, 16 Aug 2023 16:16:27 GMT
+# Thu, 07 Sep 2023 20:41:22 GMT
 ENTRYPOINT ["tini" "--" "/bin/entrypoint.sh"]
-# Wed, 16 Aug 2023 16:16:27 GMT
+# Thu, 07 Sep 2023 20:41:22 GMT
 CMD ["fluentd"]
 ```
 
 -	Layers:
-	-	`sha256:a1de04ebd80600d150cca674fb676a51a44730027c798fad7415210924b7fed2`  
-		Last Modified: Tue, 15 Aug 2023 23:52:15 GMT  
-		Size: 28.9 MB (28919119 bytes)  
+	-	`sha256:3c087ebb90b5f9b89ab4e03487d68bd9805afd41a68507381ba597291c3083d6`  
+		Last Modified: Thu, 07 Sep 2023 00:52:19 GMT  
+		Size: 28.9 MB (28919010 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05a0531f0b9849ec537e87b8da5ec745afe6a3f7d846a042da80c297128b7b1a`  
-		Last Modified: Wed, 16 Aug 2023 11:46:19 GMT  
-		Size: 8.6 MB (8632295 bytes)  
+	-	`sha256:ade30b75c47a14b69887cf5cc38afa1503ae49e1a615fa5662b1100ca8cfee92`  
+		Last Modified: Thu, 07 Sep 2023 12:51:35 GMT  
+		Size: 8.6 MB (8631321 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4cb4c94dc4330426e831b65c10b3c4e438afbc520626b863b45013a532c20519`  
-		Last Modified: Wed, 16 Aug 2023 11:46:17 GMT  
-		Size: 200.0 B  
+	-	`sha256:57d8d91a80834c51012139f89326abf487a7e4aaa26f17e02aaa168b9235fb85`  
+		Last Modified: Thu, 07 Sep 2023 12:51:33 GMT  
+		Size: 199.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:49ffc4e15f16519c1781b6c6327b113b6279316e1bf639cd7b5a5637971e02b8`  
-		Last Modified: Wed, 16 Aug 2023 11:48:33 GMT  
-		Size: 31.2 MB (31165985 bytes)  
+	-	`sha256:d1face2f9a6568c0fa1abde24fb129766de7e717e01ec24bac0449133d7cd3d4`  
+		Last Modified: Thu, 07 Sep 2023 12:53:58 GMT  
+		Size: 31.2 MB (31166045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3b515fa6049c2c5de19ac23569b7ba47a1dc53f5e87132192764abdf1df8a8b9`  
-		Last Modified: Wed, 16 Aug 2023 11:48:29 GMT  
-		Size: 177.0 B  
+	-	`sha256:9005c5622f6fd2c57ce5c2924a71d5a86ecc12fdbb83e26654a53bfea0ecaae7`  
+		Last Modified: Thu, 07 Sep 2023 12:53:55 GMT  
+		Size: 176.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:171f8d076f330c3e528910c75b8251b7cd0e4d4d8e2161f3036f5284c73f5dda`  
-		Last Modified: Wed, 16 Aug 2023 16:16:50 GMT  
-		Size: 26.6 MB (26553833 bytes)  
+	-	`sha256:c832643a2ad8e8c7b078f32392cbdca55f2bfe901fe94161200b51661a41be06`  
+		Last Modified: Thu, 07 Sep 2023 20:41:45 GMT  
+		Size: 26.6 MB (26553806 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed531e385d43f49a8d5fb5ad78172e34bc386494f12fa5baa812197516455a5b`  
-		Last Modified: Wed, 16 Aug 2023 16:16:46 GMT  
-		Size: 1.8 KB (1833 bytes)  
+	-	`sha256:23dd2cd4dd2de9f38ae9175452483d46a17a93fd952f1a65f1991c66216220ad`  
+		Last Modified: Thu, 07 Sep 2023 20:41:39 GMT  
+		Size: 1.8 KB (1832 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3e7bc7767e4a90a3c6f657939f4eea393400fb987badf73a4e3d59794b8138de`  
-		Last Modified: Wed, 16 Aug 2023 16:16:46 GMT  
-		Size: 405.0 B  
+	-	`sha256:520810c24c84d466eb9b7e6e29a526ef49a98b60dd73d3840c00ac6e9be5894a`  
+		Last Modified: Thu, 07 Sep 2023 20:41:39 GMT  
+		Size: 408.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4d36547bb5715ea8eca32b1cfa407b9b3f51c1194563c525420bf4f24a6b1a2`  
-		Last Modified: Wed, 16 Aug 2023 16:16:46 GMT  
-		Size: 461.0 B  
+	-	`sha256:304f414b1c1f41131994ca2c471a0a0f323f02a5575538e60696e1d3a81bbd05`  
+		Last Modified: Thu, 07 Sep 2023 20:41:39 GMT  
+		Size: 460.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `fluentd:v1.16.0-debian-1.0` - linux; arm variant v7
