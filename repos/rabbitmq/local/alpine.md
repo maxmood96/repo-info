@@ -2,15 +2,17 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:26d21a1e42fcaf5b4e374f6f91331dd4e96e560ac691d72a6c76de64cb896171`
-- Created: `2023-08-24T23:29:02Z`
-- Virtual Size: ~ 145.11 Mb  
+- Image ID: `sha256:7e12f307d9fe52dcec67b1ffcdc6263a038e2f610e79406fc9b57354912719e0`
+- Created: `2023-09-07T23:42:57Z`
+- Virtual Size: ~ 136.11 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["rabbitmq-server"]`
 - Environment:
-  - `PATH=/opt/rabbitmq/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `PATH=/opt/rabbitmq/sbin:/opt/erlang/bin:/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `ERLANG_INSTALL_PATH_PREFIX=/opt/erlang`
+  - `OPENSSL_INSTALL_PATH_PREFIX=/opt/openssl`
   - `RABBITMQ_DATA_DIR=/var/lib/rabbitmq`
   - `RABBITMQ_VERSION=3.12.4`
   - `RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA`
@@ -246,16 +248,16 @@ X11
 ### `apk` package: `libproc2`
 
 ```console
-libproc2-4.0.3-r1 description:
+libproc2-4.0.4-r0 description:
 Library for monitoring system and processes
 
-libproc2-4.0.3-r1 webpage:
+libproc2-4.0.4-r0 webpage:
 https://gitlab.com/procps-ng/procps
 
-libproc2-4.0.3-r1 installed size:
+libproc2-4.0.4-r0 installed size:
 152 KiB
 
-libproc2-4.0.3-r1 license:
+libproc2-4.0.4-r0 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
@@ -348,16 +350,16 @@ X11
 ### `apk` package: `procps-ng`
 
 ```console
-procps-ng-4.0.3-r1 description:
+procps-ng-4.0.4-r0 description:
 Utilities for monitoring your system and processes on your system
 
-procps-ng-4.0.3-r1 webpage:
+procps-ng-4.0.4-r0 webpage:
 https://gitlab.com/procps-ng/procps
 
-procps-ng-4.0.3-r1 installed size:
+procps-ng-4.0.4-r0 installed size:
 580 KiB
 
-procps-ng-4.0.3-r1 license:
+procps-ng-4.0.4-r0 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```

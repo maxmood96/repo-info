@@ -2,15 +2,17 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:98c15b59a941299e95ab51bbd5e728acb181f0ffb8da0d59be30ca2589dd28d5`
+- Image ID: `sha256:d3a1151704fff01129f1b4e4f24655ea18546190afb810bb5435c6ba68da56c5`
 - Created: `2023-06-02T21:59:28Z`
-- Virtual Size: ~ 183.44 Mb  
+- Virtual Size: ~ 174.47 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["rabbitmq-server"]`
 - Environment:
-  - `PATH=/opt/rabbitmq/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `PATH=/opt/rabbitmq/sbin:/opt/erlang/bin:/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `ERLANG_INSTALL_PATH_PREFIX=/opt/erlang`
+  - `OPENSSL_INSTALL_PATH_PREFIX=/opt/openssl`
   - `RABBITMQ_DATA_DIR=/var/lib/rabbitmq`
   - `RABBITMQ_VERSION=3.12.4`
   - `RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA`
@@ -331,16 +333,16 @@ X11
 ### `apk` package: `libproc2`
 
 ```console
-libproc2-4.0.3-r1 description:
+libproc2-4.0.4-r0 description:
 Library for monitoring system and processes
 
-libproc2-4.0.3-r1 webpage:
+libproc2-4.0.4-r0 webpage:
 https://gitlab.com/procps-ng/procps
 
-libproc2-4.0.3-r1 installed size:
+libproc2-4.0.4-r0 installed size:
 152 KiB
 
-libproc2-4.0.3-r1 license:
+libproc2-4.0.4-r0 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
@@ -450,16 +452,16 @@ X11
 ### `apk` package: `procps-ng`
 
 ```console
-procps-ng-4.0.3-r1 description:
+procps-ng-4.0.4-r0 description:
 Utilities for monitoring your system and processes on your system
 
-procps-ng-4.0.3-r1 webpage:
+procps-ng-4.0.4-r0 webpage:
 https://gitlab.com/procps-ng/procps
 
-procps-ng-4.0.3-r1 installed size:
+procps-ng-4.0.4-r0 installed size:
 580 KiB
 
-procps-ng-4.0.3-r1 license:
+procps-ng-4.0.4-r0 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
@@ -484,16 +486,16 @@ MIT
 ### `apk` package: `python3`
 
 ```console
-python3-3.11.4-r0 description:
+python3-3.11.5-r0 description:
 High-level scripting language
 
-python3-3.11.4-r0 webpage:
+python3-3.11.5-r0 webpage:
 https://www.python.org/
 
-python3-3.11.4-r0 installed size:
+python3-3.11.5-r0 installed size:
 24 MiB
 
-python3-3.11.4-r0 license:
+python3-3.11.5-r0 license:
 PSF-2.0
 
 ```
@@ -501,16 +503,16 @@ PSF-2.0
 ### `apk` package: `python3-pyc`
 
 ```console
-python3-pyc-3.11.4-r0 description:
+python3-pyc-3.11.5-r0 description:
 High-level scripting language (install .pyc cache files)
 
-python3-pyc-3.11.4-r0 webpage:
+python3-pyc-3.11.5-r0 webpage:
 https://www.python.org/
 
-python3-pyc-3.11.4-r0 installed size:
+python3-pyc-3.11.5-r0 installed size:
 4096 B
 
-python3-pyc-3.11.4-r0 license:
+python3-pyc-3.11.5-r0 license:
 PSF-2.0
 
 ```
@@ -518,16 +520,16 @@ PSF-2.0
 ### `apk` package: `python3-pycache-pyc0`
 
 ```console
-python3-pycache-pyc0-3.11.4-r0 description:
+python3-pycache-pyc0-3.11.5-r0 description:
 High-level scripting language (.pyc pycache files)
 
-python3-pycache-pyc0-3.11.4-r0 webpage:
+python3-pycache-pyc0-3.11.5-r0 webpage:
 https://www.python.org/
 
-python3-pycache-pyc0-3.11.4-r0 installed size:
+python3-pycache-pyc0-3.11.5-r0 installed size:
 13 MiB
 
-python3-pycache-pyc0-3.11.4-r0 license:
+python3-pycache-pyc0-3.11.5-r0 license:
 PSF-2.0
 
 ```
