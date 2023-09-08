@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6172b4009d06e533acd67e84f4542e78aae2f19fad619f3ac124985e2b6f68fc`
-- Created: `2023-08-16T10:13:56.887079843Z`
+- Image ID: `sha256:fde17daffaae6dea23ab6cbbe6f756053d7aff5e0ff06d6364042aa661451449`
+- Created: `2023-09-07T14:37:59.361774195Z`
 - Virtual Size: ~ 137.63 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1602,11 +1602,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nettle/3.8.1-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nettle/3.8.1-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `neurodebian=0.41.2+nmu1`
+### `dpkg` source package: `neurodebian=0.42.0~nd120+1`
 
 Binary Packages:
 
-- `neurodebian-freeze=0.41.2+nmu1`
+- `neurodebian-freeze=0.42.0~nd120+1`
 
 Licenses: (parsed from: `/usr/share/doc/neurodebian-freeze/copyright`)
 
@@ -1615,19 +1615,9 @@ Licenses: (parsed from: `/usr/share/doc/neurodebian-freeze/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris neurodebian=0.41.2+nmu1
-'http://deb.debian.org/debian/pool/main/n/neurodebian/neurodebian_0.41.2%2bnmu1.dsc' neurodebian_0.41.2+nmu1.dsc 2156 SHA256:9aa0a1cf2750dd93ea22999b06ce11223ecba25ce546559ff35c4cf7b351ba5c
-'http://deb.debian.org/debian/pool/main/n/neurodebian/neurodebian_0.41.2%2bnmu1.tar.xz' neurodebian_0.41.2+nmu1.tar.xz 8320356 SHA256:aec6de4c163671951bb1e151040c79600b9a73f2918be1f1e49b5f16dec528d9
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/neurodebian/0.41.2+nmu1/ (for browsing the source)
-- https://sources.debian.net/src/neurodebian/0.41.2+nmu1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/neurodebian/0.41.2+nmu1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `npth=1.6-3`
 

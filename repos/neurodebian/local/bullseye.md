@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1dfaf8983cbc172d7a70de973c76fbdc94ac97fa240ec66a4d59d647e09d071a`
-- Created: `2023-08-16T10:13:38.418146381Z`
-- Virtual Size: ~ 144.96 Mb  
+- Image ID: `sha256:d5aee4d9f4871fc2d320d52cfc10d0ded2a0e8fcb33d546bc4425cfbfb824ccd`
+- Created: `2023-09-07T14:37:40.866304528Z`
+- Virtual Size: ~ 144.95 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -1606,11 +1606,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nettle/3.7.3-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nettle/3.7.3-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `neurodebian=0.41.2~nd110+1`
+### `dpkg` source package: `neurodebian=0.42.0~nd110+1`
 
 Binary Packages:
 
-- `neurodebian-freeze=0.41.2~nd110+1`
+- `neurodebian-freeze=0.42.0~nd110+1`
 
 Licenses: (parsed from: `/usr/share/doc/neurodebian-freeze/copyright`)
 
