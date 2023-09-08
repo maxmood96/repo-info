@@ -2911,9 +2911,14 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3-catkin-pkg-modules=0.5.2-1
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-catkin-pkg-modules/python3-catkin-pkg-modules_0.5.2-1.debian.tar.xz' python3-catkin-pkg-modules_0.5.2-1.debian.tar.xz 2004 SHA512:3cac65ab1e8334b4ccec07609b28359f561e07cb27bd842b0634d1c24f788866e3c102f629586ff9c55d5663bc19e28384ff03cdbabc7c6674dea2bdaa6310f4
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-catkin-pkg-modules/python3-catkin-pkg-modules_0.5.2-1.dsc' python3-catkin-pkg-modules_0.5.2-1.dsc 1019 SHA512:513f451e379cb105fb01559ede2e9c58734b1e21ed048676fc5544c16d8b9e540c5d2330d1f2c2607bc3e0bf22dae737ae1727fba49924608c5dc6c63cbd3ccf
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-catkin-pkg-modules/python3-catkin-pkg-modules_0.5.2.orig.tar.gz' python3-catkin-pkg-modules_0.5.2.orig.tar.gz 62745 SHA512:cef4a8f79828c221cb07924a7f724a547d7fd60a0a7690b8a5bf7bb663e263e27ef7fbce55ef46f17319d3bfe8d61941eb2fd63d4323f01e35b73a3d0b26fdf5
+```
 
 ### `dpkg` source package: `python3-defaults=3.10.6-1~22.04`
 
@@ -2947,9 +2952,14 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3-rosdistro-modules=0.9.0-1
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rosdistro-modules/python3-rosdistro-modules_0.9.0-1.debian.tar.xz' python3-rosdistro-modules_0.9.0-1.debian.tar.xz 2004 SHA512:8312a9e75ed1da0f7da358b6d860e7445253693478651778e0e82d8302941875ffe0ae1c11d6d480299626858d387fd50bbacaab6c686e02d75d8041b1314034
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rosdistro-modules/python3-rosdistro-modules_0.9.0-1.dsc' python3-rosdistro-modules_0.9.0-1.dsc 1038 SHA512:0f8ab8f26b1df89fcec4c12450a76fa18fd94556e08c7a5c4db463031ded956514ff2e7ac7ef8f95fb7d3db58df03186463f763c32455dbbb8bd1176892a750a
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rosdistro-modules/python3-rosdistro-modules_0.9.0.orig.tar.gz' python3-rosdistro-modules_0.9.0.orig.tar.gz 43482 SHA512:7f20ff589fc5343ec39772f51b656022cf3762ed2ee7dddb57b66189e58fdc8408646fbeb488f19e63448448a91215b5869317851a8ccc826cf8e6d87ae92d0b
+```
 
 ### `dpkg` source package: `python3-rospkg-modules=1.5.0-1`
 
@@ -2961,9 +2971,14 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3-rospkg-modules=1.5.0-1
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rospkg-modules/python3-rospkg-modules_1.5.0-1.debian.tar.xz' python3-rospkg-modules_1.5.0-1.debian.tar.xz 1172 SHA512:616143923f96549f3fddd511c38d7f347e73abb0c3073f92c10231df9d94b32df195137b49f221c2cbca029ce413985fbe866b4872eab95c7991655685aa8221
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rospkg-modules/python3-rospkg-modules_1.5.0-1.dsc' python3-rospkg-modules_1.5.0-1.dsc 973 SHA512:e277f90ed7d173cf29eb1c26e49597b565b0a3d9b89df16169146ed23a57ab08a5bb10bd505e4326ff4d697edbf118a87d07a699162548cdb761c0bc7782841e
+'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-rospkg-modules/python3-rospkg-modules_1.5.0.orig.tar.gz' python3-rospkg-modules_1.5.0.orig.tar.gz 42501 SHA512:144334c4c568f59e356f4cc858825c5f3c49ae9dc50b4bfe83925c6a432c98d7f061971bc273b83efef92645eb716972f24d2cd02c8cdbd9ca6d818d5cd5a462
+```
 
 ### `dpkg` source package: `python3-stdlib-extensions=3.10.8-1~22.04`
 
