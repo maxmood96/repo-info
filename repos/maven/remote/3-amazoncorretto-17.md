@@ -1,7 +1,7 @@
 ## `maven:3-amazoncorretto-17`
 
 ```console
-$ docker pull maven@sha256:1e97d1c1fcc18e3e6d08e5465cce93f189f14fd29e581a9f3453ca1176bbce43
+$ docker pull maven@sha256:89fb48a2c8eb68085188119971fc28bc51eb37df4636c05d778edae60eb4cbb1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12,13 +12,13 @@ $ docker pull maven@sha256:1e97d1c1fcc18e3e6d08e5465cce93f189f14fd29e581a9f3453c
 ### `maven:3-amazoncorretto-17` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:94bf2119a183e19258ac337bdbff3442b32e2c78488e71b3d6b7006f5acb6311
+$ docker pull maven@sha256:1a636f187a7425bc89a51ebfc424e8f4586f4639a6c664f952761941eb6a64bd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **384.8 MB (384836119 bytes)**  
+-	Total Size: **386.2 MB (386247252 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f9a508a653f301ce440356abc1b67051d49e8475c178d04635015e0552a9d754`
+-	Image ID: `sha256:aa46fb6465f75a1d8317fdeb718bb1283a60290d2ed080b03e9967db9ecb6a10`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -27,14 +27,14 @@ $ docker pull maven@sha256:94bf2119a183e19258ac337bdbff3442b32e2c78488e71b3d6b70
 COPY dir:591ada5c2fb65633b614a3ff732e6d83dcd91fe9ae925844fe9ba3323311bf74 in / 
 # Tue, 29 Aug 2023 18:29:23 GMT
 CMD ["/bin/bash"]
-# Tue, 29 Aug 2023 19:45:23 GMT
-ARG version=17.0.8.7-1
-# Tue, 29 Aug 2023 19:45:50 GMT
-# ARGS: version=17.0.8.7-1
+# Fri, 08 Sep 2023 22:27:01 GMT
+ARG version=17.0.8.8-1
+# Fri, 08 Sep 2023 22:27:26 GMT
+# ARGS: version=17.0.8.8-1
 RUN set -eux     && export GNUPGHOME="$(mktemp -d)"     && curl -fL -o corretto.key https://yum.corretto.aws/corretto.key     && gpg --batch --import corretto.key     && gpg --batch --export --armor '6DC3636DAE534049C8B94623A122542AB04F24E3' > corretto.key     && rpm --import corretto.key     && rm -r "$GNUPGHOME" corretto.key     && curl -fL -o /etc/yum.repos.d/corretto.repo https://yum.corretto.aws/corretto.repo     && grep -q '^gpgcheck=1' /etc/yum.repos.d/corretto.repo     && echo "priority=9" >> /etc/yum.repos.d/corretto.repo     && yum install -y java-17-amazon-corretto-devel-$version     && (find /usr/lib/jvm/java-17-amazon-corretto -name src.zip -delete || true)     && yum install -y fontconfig     && yum clean all
-# Tue, 29 Aug 2023 19:45:50 GMT
+# Fri, 08 Sep 2023 22:27:27 GMT
 ENV LANG=C.UTF-8
-# Tue, 29 Aug 2023 19:45:51 GMT
+# Fri, 08 Sep 2023 22:27:27 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-17-amazon-corretto
 # Fri, 18 Aug 2023 15:26:34 GMT
 RUN yum install -y tar which gzip # TODO remove # buildkit
@@ -65,29 +65,29 @@ CMD ["mvn"]
 		Last Modified: Fri, 25 Aug 2023 08:53:43 GMT  
 		Size: 62.5 MB (62477278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf577b444ef591d0124f2a5bce176bb15a4d2d53dfe2a924554daf91396e0e8d`  
-		Last Modified: Tue, 29 Aug 2023 19:56:24 GMT  
-		Size: 152.1 MB (152135545 bytes)  
+	-	`sha256:05200b11ae6e193e6d8e1774f6ee056634bdc648d83b06b24ab212bba41142dc`  
+		Last Modified: Fri, 08 Sep 2023 22:38:44 GMT  
+		Size: 152.1 MB (152141808 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:656b6640c5e18feb109c1ccc804f6c224567ae28748e5e94d111ddb122810ac2`  
-		Last Modified: Tue, 29 Aug 2023 20:19:58 GMT  
-		Size: 160.8 MB (160815496 bytes)  
+	-	`sha256:5b4f37578458cb008696b036cda30c014891c070ccad2746b99f6f2475ac595d`  
+		Last Modified: Fri, 08 Sep 2023 23:16:03 GMT  
+		Size: 162.2 MB (162220366 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:24932f68ddf45094108f690a70c20ee9c3a95b9d34fac1b00730087c60f74691`  
-		Last Modified: Tue, 29 Aug 2023 20:19:43 GMT  
+	-	`sha256:8e524286349f182112a2d3bd5dfaae51371a3711bc4042bfcf1235ee219e44a8`  
+		Last Modified: Fri, 08 Sep 2023 23:15:49 GMT  
 		Size: 9.4 MB (9406418 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21694a464b27e1db1508c7ba75db18d7528d8adae4b0aa95d0b78f571e68e904`  
-		Last Modified: Tue, 29 Aug 2023 20:19:43 GMT  
+	-	`sha256:61e64022a35a75d99b22df0c1d8fcb782a62cd35a0b662e7755ac68af22478aa`  
+		Last Modified: Fri, 08 Sep 2023 23:15:48 GMT  
 		Size: 855.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5317d083f6a0af8df791b16fc9b40bdccdc2486a8fc1ce5f729df75a8dde96c9`  
-		Last Modified: Tue, 29 Aug 2023 20:19:42 GMT  
-		Size: 360.0 B  
+	-	`sha256:56dd817b3ffe15994bd418d7e2bf84c4e1b0eac61b5079e78e663826e0c9c724`  
+		Last Modified: Fri, 08 Sep 2023 23:15:48 GMT  
+		Size: 359.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3a15e4c83c791b27162e54ad66df7227236b1c5758c53f63309c1cb8b71cda1`  
-		Last Modified: Tue, 29 Aug 2023 20:19:42 GMT  
-		Size: 167.0 B  
+	-	`sha256:58372e9fc1fca2df34f35f755a21b2acaaf4775ea5263b1e8ef8b076f99caffd`  
+		Last Modified: Fri, 08 Sep 2023 23:15:48 GMT  
+		Size: 168.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `maven:3-amazoncorretto-17` - linux; arm64 variant v8
