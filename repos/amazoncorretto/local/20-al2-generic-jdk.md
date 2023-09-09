@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:791830e495034c8e2e973e77c5bcd1bf59b3756d4db489eb516a5b8096fd8545`
-- Created: `2023-08-29T19:50:05.073125508Z`
-- Virtual Size: ~ 481.91 Mb  
+- Image ID: `sha256:971c424ca0e36ad95ce868bbd62cfd325a3f19f09ec1d25dfdaf8e8702195419`
+- Created: `2023-09-08T22:31:43.660336527Z`
+- Virtual Size: ~ 481.92 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -390,7 +390,7 @@ $ dnf --quiet download --source --url info-5.1-5.amzn2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ff0389d51da763072c840387a475b853fcdd44d67257a7ef1612b7010c24244c/../../../../../blobstore/968c079ef8a8a2efee76ff59cd99e06dd242b8813960171d0f5c23f4a6eb0bb2/texinfo-5.1-5.amzn2.src.rpm
 ```
 
-### `rpm` package: `java-20-amazon-corretto-devel-20.0.2.9-1.x86_64`
+### `rpm` package: `java-20-amazon-corretto-devel-20.0.2.10-1.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA.
 
@@ -616,15 +616,15 @@ $ dnf --quiet download --source --url libnghttp2-1.41.0-1.amzn2.0.1
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ff0389d51da763072c840387a475b853fcdd44d67257a7ef1612b7010c24244c/../../../../../blobstore/adc7d65a5276647e32680c280d821b9068ca023f4d423bb23c17a491a650fe1b/nghttp2-1.41.0-1.amzn2.0.1.src.rpm
 ```
 
-### `rpm` package: `libpng-1.5.13-8.amzn2.0.1.x86_64`
+### `rpm` package: `libpng-1.5.13-8.amzn2.0.3.x86_64`
 
 Licenses (from `rpm --query`): zlib
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libpng-1.5.13-8.amzn2.0.1
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ff0389d51da763072c840387a475b853fcdd44d67257a7ef1612b7010c24244c/../../../../../blobstore/278ad67e58ff425d644beb87f2a8fb6a5e5b7ec72ac614377b4b6c984ce1423f/libpng-1.5.13-8.amzn2.0.1.src.rpm
+$ dnf --quiet download --source --url libpng-1.5.13-8.amzn2.0.3
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ff0389d51da763072c840387a475b853fcdd44d67257a7ef1612b7010c24244c/../../../../../blobstore/3645c9d34ff4d9f3902507aaaeaf43248350b205c2440c1149ddf456db8ad3fd/libpng-1.5.13-8.amzn2.0.3.src.rpm
 ```
 
 ### `rpm` package: `libselinux-2.5-12.amzn2.0.2.x86_64`

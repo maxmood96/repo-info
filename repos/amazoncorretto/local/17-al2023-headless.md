@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3554f9c4e12e60ceef6e0e1c252de06e9ff2ecb9fee403b23b76cb2c19894625`
-- Created: `2023-08-29T19:46:41.607104888Z`
-- Virtual Size: ~ 370.92 Mb  
+- Image ID: `sha256:b2261c3d5eb1aa910816cfcec147558ab4324e17ff30b8c0d4941755d95185af`
+- Created: `2023-09-08T22:28:10.151027589Z`
+- Virtual Size: ~ 370.93 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -472,16 +472,11 @@ $ dnf --quiet download --source --url harfbuzz-7.0.0-2.amzn2023.0.1
 https://cdn.amazonlinux.com/al2023/core/guids/fec32d36f4a495126a3d16a11e02a35de33fda9070e1750d48aec484cf22e921/SRPMS/../../../../blobstore/d70feb6e7549ac8924e67a88f2fbdf3020857ac13bf8c72e9c5ac6161381f302/harfbuzz-7.0.0-2.amzn2023.0.1.src.rpm
 ```
 
-### `rpm` package: `java-17-amazon-corretto-headless-17.0.8+7-1.amzn2023.1.x86_64`
+### `rpm` package: `java-17-amazon-corretto-headless-17.0.8+8-1.amzn2023.1.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA.
 
-Source:
-
-```console
-$ dnf --quiet download --source --url java-17-amazon-corretto-headless-17.0.8+7-1.amzn2023.1
-https://cdn.amazonlinux.com/al2023/core/guids/fec32d36f4a495126a3d16a11e02a35de33fda9070e1750d48aec484cf22e921/SRPMS/../../../../blobstore/5b8d0a8353140391a3fe7fa37eb7c538934f044c1344edb58727391f5fa7891d/java-17-amazon-corretto-17.0.8+7-1.amzn2023.1.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `javapackages-filesystem-6.0.0-7.amzn2023.0.5.noarch`
 

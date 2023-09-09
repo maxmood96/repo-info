@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:59038b6533d546b33f48704bc2d0387bbe91c42a95ff7a923d9091b5c08205e4`
-- Created: `2023-08-29T19:47:40.362519906Z`
-- Virtual Size: ~ 406.57 Mb  
+- Image ID: `sha256:3110417df276132c3a8aff6692fe68446a47f2afbdd472ff6fb09c06020c8abc`
+- Created: `2023-09-08T22:29:07.494009958Z`
+- Virtual Size: ~ 408.17 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -92,15 +92,15 @@ $ dnf --quiet download --source --url bzip2-libs-1.0.6-13.amzn2.0.3
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ff0389d51da763072c840387a475b853fcdd44d67257a7ef1612b7010c24244c/../../../../../blobstore/5eb7c8b4ed1b326f5e640d655f92f498451c8013b223ad5702abb108358ef0dc/bzip2-1.0.6-13.amzn2.0.3.src.rpm
 ```
 
-### `rpm` package: `ca-certificates-2021.2.50-72.amzn2.0.7.noarch`
+### `rpm` package: `ca-certificates-2021.2.50-72.amzn2.0.8.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url ca-certificates-2021.2.50-72.amzn2.0.7.noarch
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ff0389d51da763072c840387a475b853fcdd44d67257a7ef1612b7010c24244c/../../../../../blobstore/7cb95b5eefec58306a0d1b189fe42c1faf92cb36a56c6796d34b88b10c12f7d7/ca-certificates-2021.2.50-72.amzn2.0.7.src.rpm
+$ dnf --quiet download --source --url ca-certificates-2021.2.50-72.amzn2.0.8.noarch
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ff0389d51da763072c840387a475b853fcdd44d67257a7ef1612b7010c24244c/../../../../../blobstore/507771e87c0e736fea017a4424f441fcf0396ba908d8479fc993116dce35cfd8/ca-certificates-2021.2.50-72.amzn2.0.8.src.rpm
 ```
 
 ### `rpm` package: `chkconfig-1.7.4-1.amzn2.0.2.x86_64`
@@ -483,15 +483,15 @@ $ dnf --quiet download --source --url info-5.1-5.amzn2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ff0389d51da763072c840387a475b853fcdd44d67257a7ef1612b7010c24244c/../../../../../blobstore/968c079ef8a8a2efee76ff59cd99e06dd242b8813960171d0f5c23f4a6eb0bb2/texinfo-5.1-5.amzn2.src.rpm
 ```
 
-### `rpm` package: `java-17-amazon-corretto-headless-17.0.8+7-1.amzn2.1.x86_64`
+### `rpm` package: `java-17-amazon-corretto-headless-17.0.8+8-1.amzn2.1.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA.
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url java-17-amazon-corretto-headless-17.0.8+7-1.amzn2.1
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ff0389d51da763072c840387a475b853fcdd44d67257a7ef1612b7010c24244c/../../../../../blobstore/5ab22261c50574012a725c6b36e0d331f98c0df898b83926081d55fc6300fffa/java-17-amazon-corretto-17.0.8+7-1.amzn2.1.src.rpm
+$ dnf --quiet download --source --url java-17-amazon-corretto-headless-17.0.8+8-1.amzn2.1
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ff0389d51da763072c840387a475b853fcdd44d67257a7ef1612b7010c24244c/../../../../../blobstore/070dbec96c838c4d8ad6aedc217fbac65a910d0721c648b3fe267e6313ddc13a/java-17-amazon-corretto-17.0.8+8-1.amzn2.1.src.rpm
 ```
 
 ### `rpm` package: `javapackages-tools-3.4.1-11.amzn2.noarch`
@@ -692,26 +692,26 @@ $ dnf --quiet download --source --url libidn2-2.3.0-1.amzn2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ff0389d51da763072c840387a475b853fcdd44d67257a7ef1612b7010c24244c/../../../../../blobstore/12635dd70a57fde4e0cf0238f4cbe5918a7f305f5f15edb0daaf07f35428fde1/libidn2-2.3.0-1.amzn2.src.rpm
 ```
 
-### `rpm` package: `libjpeg-turbo-2.0.90-2.amzn2.0.2.i686`
+### `rpm` package: `libjpeg-turbo-2.0.90-2.amzn2.0.4.i686`
 
 Licenses (from `rpm --query`): IJG
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libjpeg-turbo-2.0.90-2.amzn2.0.2
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ff0389d51da763072c840387a475b853fcdd44d67257a7ef1612b7010c24244c/../../../../../blobstore/1812f9dbcfb0433eeb320d07f7c2a7d6df07f13febfbba559df73b2fa35ef3eb/libjpeg-turbo-2.0.90-2.amzn2.0.2.src.rpm
+$ dnf --quiet download --source --url libjpeg-turbo-2.0.90-2.amzn2.0.4
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ff0389d51da763072c840387a475b853fcdd44d67257a7ef1612b7010c24244c/../../../../../blobstore/84f71e7685fc21feb3812a651b7d8b7e3d586c375da3b4d33d9da3b9ddea9c4d/libjpeg-turbo-2.0.90-2.amzn2.0.4.src.rpm
 ```
 
-### `rpm` package: `libjpeg-turbo-2.0.90-2.amzn2.0.2.x86_64`
+### `rpm` package: `libjpeg-turbo-2.0.90-2.amzn2.0.4.x86_64`
 
 Licenses (from `rpm --query`): IJG
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libjpeg-turbo-2.0.90-2.amzn2.0.2
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ff0389d51da763072c840387a475b853fcdd44d67257a7ef1612b7010c24244c/../../../../../blobstore/1812f9dbcfb0433eeb320d07f7c2a7d6df07f13febfbba559df73b2fa35ef3eb/libjpeg-turbo-2.0.90-2.amzn2.0.2.src.rpm
+$ dnf --quiet download --source --url libjpeg-turbo-2.0.90-2.amzn2.0.4
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ff0389d51da763072c840387a475b853fcdd44d67257a7ef1612b7010c24244c/../../../../../blobstore/84f71e7685fc21feb3812a651b7d8b7e3d586c375da3b4d33d9da3b9ddea9c4d/libjpeg-turbo-2.0.90-2.amzn2.0.4.src.rpm
 ```
 
 ### `rpm` package: `libmetalink-0.1.3-13.amzn2.x86_64`
@@ -747,26 +747,26 @@ $ dnf --quiet download --source --url libnghttp2-1.41.0-1.amzn2.0.1
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ff0389d51da763072c840387a475b853fcdd44d67257a7ef1612b7010c24244c/../../../../../blobstore/adc7d65a5276647e32680c280d821b9068ca023f4d423bb23c17a491a650fe1b/nghttp2-1.41.0-1.amzn2.0.1.src.rpm
 ```
 
-### `rpm` package: `libpng-1.5.13-8.amzn2.0.1.i686`
+### `rpm` package: `libpng-1.5.13-8.amzn2.0.3.i686`
 
 Licenses (from `rpm --query`): zlib
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libpng-1.5.13-8.amzn2.0.1
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ff0389d51da763072c840387a475b853fcdd44d67257a7ef1612b7010c24244c/../../../../../blobstore/278ad67e58ff425d644beb87f2a8fb6a5e5b7ec72ac614377b4b6c984ce1423f/libpng-1.5.13-8.amzn2.0.1.src.rpm
+$ dnf --quiet download --source --url libpng-1.5.13-8.amzn2.0.3
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ff0389d51da763072c840387a475b853fcdd44d67257a7ef1612b7010c24244c/../../../../../blobstore/3645c9d34ff4d9f3902507aaaeaf43248350b205c2440c1149ddf456db8ad3fd/libpng-1.5.13-8.amzn2.0.3.src.rpm
 ```
 
-### `rpm` package: `libpng-1.5.13-8.amzn2.0.1.x86_64`
+### `rpm` package: `libpng-1.5.13-8.amzn2.0.3.x86_64`
 
 Licenses (from `rpm --query`): zlib
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libpng-1.5.13-8.amzn2.0.1
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ff0389d51da763072c840387a475b853fcdd44d67257a7ef1612b7010c24244c/../../../../../blobstore/278ad67e58ff425d644beb87f2a8fb6a5e5b7ec72ac614377b4b6c984ce1423f/libpng-1.5.13-8.amzn2.0.1.src.rpm
+$ dnf --quiet download --source --url libpng-1.5.13-8.amzn2.0.3
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/ff0389d51da763072c840387a475b853fcdd44d67257a7ef1612b7010c24244c/../../../../../blobstore/3645c9d34ff4d9f3902507aaaeaf43248350b205c2440c1149ddf456db8ad3fd/libpng-1.5.13-8.amzn2.0.3.src.rpm
 ```
 
 ### `rpm` package: `libselinux-2.5-12.amzn2.0.2.x86_64`
