@@ -609,21 +609,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.2.1-1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.2.1-1.dsc' curl_8.2.1-1.dsc 3235 SHA256:5420d64d937ba0e2591234f26c8eddf1525a64fb8fde412730072a10f1db056b
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.2.1.orig.tar.gz' curl_8.2.1.orig.tar.gz 4394020 SHA256:f98bdb06c0f52bdd19e63c4a77b5eb19b243bcbbd0f5b002b9f3cba7295a3a42
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.2.1.orig.tar.gz.asc' curl_8.2.1.orig.tar.gz.asc 488 SHA256:b3d8b2576891427ca038a83581372ebc18f648952f6693db5cb3a89f5bf7f4d3
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.2.1-1.debian.tar.xz' curl_8.2.1-1.debian.tar.xz 46184 SHA256:68ee623f50dfd5fba6b29ce6a3b3c13423d38b14d9ccfa71c5b557f58b915664
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/8.2.1-1/
 
-- https://sources.debian.net/src/curl/8.2.1-1/ (for browsing the source)
-- https://sources.debian.net/src/curl/8.2.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/8.2.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-3`
 
@@ -845,19 +837,13 @@ Licenses: (parsed from: `/usr/share/doc/debianutils/copyright`)
 - `SMAIL-GPL`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debianutils=5.11
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_5.11.dsc' debianutils_5.11.dsc 1421 SHA256:9909fdd4417857d84d10135cc9ef83a9693cdbcfdfcd9186b237e16b61a4e40f
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_5.11.tar.xz' debianutils_5.11.tar.xz 79484 SHA256:dc0340ab025d2daf7ac059229448a06cc5bf0570fc2b581d7f4984e8ae971abe
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debianutils/5.11/
 
-- https://sources.debian.net/src/debianutils/5.11/ (for browsing the source)
-- https://sources.debian.net/src/debianutils/5.11/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debianutils/5.11/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `diffutils=1:3.8-4`
 
@@ -1172,20 +1158,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris fontconfig=2.14.2-4
-'http://deb.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.14.2-4.dsc' fontconfig_2.14.2-4.dsc 2323 SHA256:2a025a6043b3c2a473802adcfc26b4695659e1804dad8f3a08c26a004713b8a5
-'http://deb.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.14.2.orig.tar.xz' fontconfig_2.14.2.orig.tar.xz 1440844 SHA256:dba695b57bce15023d2ceedef82062c2b925e51f5d4cc4aef736cf13f60a468b
-'http://deb.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.14.2-4.debian.tar.xz' fontconfig_2.14.2-4.debian.tar.xz 56524 SHA256:876bfad38848f073f3813df02265972e75c1287f576c51ce8bb5402eb0d55b3b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/fontconfig/2.14.2-4/
 
-- https://sources.debian.net/src/fontconfig/2.14.2-4/ (for browsing the source)
-- https://sources.debian.net/src/fontconfig/2.14.2-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/fontconfig/2.14.2-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `fonts-noto=20201225-2`
 
@@ -1704,21 +1683,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-freedesktop/copyright`, `/usr/sha
 - `Unicode-DFS-2016`
 - `bzip2-1.0.6`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gobject-introspection=1.76.1-5
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.76.1-5.dsc' gobject-introspection_1.76.1-5.dsc 3520 SHA256:1b26e264dbddf7f7d56e5864e1ee86776f44f3c7f6ca9b64fe2100ed80610d17
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.76.1.orig-glib.tar.xz' gobject-introspection_1.76.1.orig-glib.tar.xz 5270936 SHA256:43dc0f6a126958f5b454136c4398eab420249c16171a769784486e25f2fda19f
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.76.1.orig.tar.xz' gobject-introspection_1.76.1.orig.tar.xz 1055416 SHA256:196178bf64345501dcdc4d8469b36aa6fe80489354efe71cb7cb8ab82a3738bf
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.76.1-5.debian.tar.xz' gobject-introspection_1.76.1-5.debian.tar.xz 49656 SHA256:3170ec6ea7696c9bf9024f09a920a97f632de47db25e4668bd3ef38da47a3f36
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gobject-introspection/1.76.1-5/
 
-- https://sources.debian.net/src/gobject-introspection/1.76.1-5/ (for browsing the source)
-- https://sources.debian.net/src/gobject-introspection/1.76.1-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gobject-introspection/1.76.1-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `graphite2=1.3.14-1`
 
@@ -2008,21 +1979,13 @@ Licenses: (parsed from: `/usr/share/doc/libimath-3-1-29/copyright`, `/usr/share/
 
 - `imath`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris imath=3.1.9-2
-'http://deb.debian.org/debian/pool/main/i/imath/imath_3.1.9-2.dsc' imath_3.1.9-2.dsc 2640 SHA256:aea421661b137ab30274f1431fab5d01a65112edeb921e915ebe71ddbcd6f107
-'http://deb.debian.org/debian/pool/main/i/imath/imath_3.1.9.orig.tar.gz' imath_3.1.9.orig.tar.gz 598497 SHA256:f1d8aacd46afed958babfced3190d2d3c8209b66da451f556abd6da94c165cf3
-'http://deb.debian.org/debian/pool/main/i/imath/imath_3.1.9.orig.tar.gz.asc' imath_3.1.9.orig.tar.gz.asc 287 SHA256:a2c4ac5151789903ca8ab3093a2798491463ccf2abfd003a20f96453e505dd5f
-'http://deb.debian.org/debian/pool/main/i/imath/imath_3.1.9-2.debian.tar.xz' imath_3.1.9-2.debian.tar.xz 8860 SHA256:e6c76a655b9a8d24eb8b0cc33a06b088ba8132dd1a9326a9aad4a783c82f8a83
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/imath/3.1.9-2/
 
-- https://sources.debian.net/src/imath/3.1.9-2/ (for browsing the source)
-- https://sources.debian.net/src/imath/3.1.9-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/imath/3.1.9-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `init-system-helpers=1.65.2`
 
@@ -2234,20 +2197,13 @@ Licenses: (parsed from: `/usr/share/doc/liblerc-dev/copyright`, `/usr/share/doc/
 
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lerc=4.0.0+ds-2
-'http://deb.debian.org/debian/pool/main/l/lerc/lerc_4.0.0%2bds-2.dsc' lerc_4.0.0+ds-2.dsc 2224 SHA256:61c32adc1590f930af4b94b151e6a0a8569ace7d7a4f1961eb049f209b47a417
-'http://deb.debian.org/debian/pool/main/l/lerc/lerc_4.0.0%2bds.orig.tar.xz' lerc_4.0.0+ds.orig.tar.xz 348140 SHA256:acf855502fd3b950ee78f0b67bc9e9b39316b3526fbf6d8b8b1a9482fb756723
-'http://deb.debian.org/debian/pool/main/l/lerc/lerc_4.0.0%2bds-2.debian.tar.xz' lerc_4.0.0+ds-2.debian.tar.xz 7780 SHA256:b5676df41934c3c95447a66f766ac8f536cf9fa88063c93b0201e6b4fd25aff6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/lerc/4.0.0+ds-2/
 
-- https://sources.debian.net/src/lerc/4.0.0+ds-2/ (for browsing the source)
-- https://sources.debian.net/src/lerc/4.0.0+ds-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lerc/4.0.0+ds-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libassuan=2.5.6-1`
 
@@ -3965,21 +3921,13 @@ Licenses: (parsed from: `/usr/share/doc/m4/copyright`)
 - `GFDL`
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris m4=1.4.19-3
-'http://deb.debian.org/debian/pool/main/m/m4/m4_1.4.19-3.dsc' m4_1.4.19-3.dsc 1637 SHA256:ef1d34ebe63e0bd58bb8ce503330224ed71f6c8919d7af38c451a9a2a10ce1c3
-'http://deb.debian.org/debian/pool/main/m/m4/m4_1.4.19.orig.tar.xz' m4_1.4.19.orig.tar.xz 1654908 SHA256:63aede5c6d33b6d9b13511cd0be2cac046f2e70fd0a07aa9573a04a82783af96
-'http://deb.debian.org/debian/pool/main/m/m4/m4_1.4.19.orig.tar.xz.asc' m4_1.4.19.orig.tar.xz.asc 488 SHA256:9700ba4dca539b06e033b4e3ab37fa5b983becb6c14569a8b8aa02dee6ab666c
-'http://deb.debian.org/debian/pool/main/m/m4/m4_1.4.19-3.debian.tar.xz' m4_1.4.19-3.debian.tar.xz 17184 SHA256:b25312f36c3577bb4a0d2e8f6c022836d68ff061c56c533632de8557d598a0ea
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/m4/1.4.19-3/
 
-- https://sources.debian.net/src/m4/1.4.19-3/ (for browsing the source)
-- https://sources.debian.net/src/m4/1.4.19-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/m4/1.4.19-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `make-dfsg=4.3-4.1`
 
@@ -4870,20 +4818,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `double-metaphone`
 - `nagaysau-ishii`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-15=15.4-1
-'http://deb.debian.org/debian/pool/main/p/postgresql-15/postgresql-15_15.4-1.dsc' postgresql-15_15.4-1.dsc 3965 SHA256:2b4efdfd5d2a90af878b034cb3a7dbd198465759a0f4826e285f54b99f6f5e5d
-'http://deb.debian.org/debian/pool/main/p/postgresql-15/postgresql-15_15.4.orig.tar.bz2' postgresql-15_15.4.orig.tar.bz2 22850355 SHA256:baec5a4bdc4437336653b6cb5d9ed89be5bd5c0c58b94e0becee0a999e63c8f9
-'http://deb.debian.org/debian/pool/main/p/postgresql-15/postgresql-15_15.4-1.debian.tar.xz' postgresql-15_15.4-1.debian.tar.xz 25160 SHA256:a70d90764e75f6df949ef834aef7af294881ef996d9a7e47a4fe61a464f0c732
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/postgresql-15/15.4-1/
 
-- https://sources.debian.net/src/postgresql-15/15.4-1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-15/15.4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-15/15.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:4.0.3-1`
 
@@ -5256,21 +5197,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.42.0-1
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.42.0-1.dsc' sqlite3_3.42.0-1.dsc 2486 SHA256:bcd93bf08d021d1ed6850af2ab3d174a23e5453e81ed7a92b64623c4e1b572d1
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.42.0.orig-www.tar.xz' sqlite3_3.42.0.orig-www.tar.xz 5708628 SHA256:a3f1f24fcf1e33a6a24b5e02dbcc8e547b3386632ff202dd404ec417603c2e71
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.42.0.orig.tar.xz' sqlite3_3.42.0.orig.tar.xz 8129004 SHA256:92d296f6ae47e468e39390f32dba820662c295563285a33c5aae1dc555363043
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.42.0-1.debian.tar.xz' sqlite3_3.42.0-1.debian.tar.xz 29996 SHA256:27903236332024070a9dfa8f8f4679504e6679ef825731ac3bef98b210bf436d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sqlite3/3.42.0-1/
 
-- https://sources.debian.net/src/sqlite3/3.42.0-1/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.42.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.42.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `subversion=1.14.2-4`
 
@@ -5329,20 +5262,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=254.1-2
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_254.1-2.dsc' systemd_254.1-2.dsc 6865 SHA256:b49045b5896ce4a29f8247206e02e896b4e41a98434da0ca829e7b90bd5bcac5
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_254.1.orig.tar.gz' systemd_254.1.orig.tar.gz 14324840 SHA256:d1e372a6ff817e639cdf58cc3888f72d37a380c0027d42bc875e5ab4b628a580
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_254.1-2.debian.tar.xz' systemd_254.1-2.debian.tar.xz 164036 SHA256:4e16a77c04cd00493e5af13e4aca01df3ace7a1d10c2092f325aabbda055d38e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/254.1-2/
 
-- https://sources.debian.net/src/systemd/254.1-2/ (for browsing the source)
-- https://sources.debian.net/src/systemd/254.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/254.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.07-1`
 

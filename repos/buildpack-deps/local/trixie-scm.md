@@ -446,21 +446,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.2.1-1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.2.1-1.dsc' curl_8.2.1-1.dsc 3235 SHA256:5420d64d937ba0e2591234f26c8eddf1525a64fb8fde412730072a10f1db056b
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.2.1.orig.tar.gz' curl_8.2.1.orig.tar.gz 4394020 SHA256:f98bdb06c0f52bdd19e63c4a77b5eb19b243bcbbd0f5b002b9f3cba7295a3a42
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.2.1.orig.tar.gz.asc' curl_8.2.1.orig.tar.gz.asc 488 SHA256:b3d8b2576891427ca038a83581372ebc18f648952f6693db5cb3a89f5bf7f4d3
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.2.1-1.debian.tar.xz' curl_8.2.1-1.debian.tar.xz 46184 SHA256:68ee623f50dfd5fba6b29ce6a3b3c13423d38b14d9ccfa71c5b557f58b915664
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/8.2.1-1/
 
-- https://sources.debian.net/src/curl/8.2.1-1/ (for browsing the source)
-- https://sources.debian.net/src/curl/8.2.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/8.2.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-3`
 
@@ -628,19 +620,13 @@ Licenses: (parsed from: `/usr/share/doc/debianutils/copyright`)
 - `SMAIL-GPL`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debianutils=5.11
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_5.11.dsc' debianutils_5.11.dsc 1421 SHA256:9909fdd4417857d84d10135cc9ef83a9693cdbcfdfcd9186b237e16b61a4e40f
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_5.11.tar.xz' debianutils_5.11.tar.xz 79484 SHA256:dc0340ab025d2daf7ac059229448a06cc5bf0570fc2b581d7f4984e8ae971abe
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debianutils/5.11/
 
-- https://sources.debian.net/src/debianutils/5.11/ (for browsing the source)
-- https://sources.debian.net/src/debianutils/5.11/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debianutils/5.11/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `diffutils=1:3.8-4`
 
@@ -2843,21 +2829,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.42.0-1
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.42.0-1.dsc' sqlite3_3.42.0-1.dsc 2486 SHA256:bcd93bf08d021d1ed6850af2ab3d174a23e5453e81ed7a92b64623c4e1b572d1
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.42.0.orig-www.tar.xz' sqlite3_3.42.0.orig-www.tar.xz 5708628 SHA256:a3f1f24fcf1e33a6a24b5e02dbcc8e547b3386632ff202dd404ec417603c2e71
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.42.0.orig.tar.xz' sqlite3_3.42.0.orig.tar.xz 8129004 SHA256:92d296f6ae47e468e39390f32dba820662c295563285a33c5aae1dc555363043
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.42.0-1.debian.tar.xz' sqlite3_3.42.0-1.debian.tar.xz 29996 SHA256:27903236332024070a9dfa8f8f4679504e6679ef825731ac3bef98b210bf436d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sqlite3/3.42.0-1/
 
-- https://sources.debian.net/src/sqlite3/3.42.0-1/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.42.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.42.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `subversion=1.14.2-4`
 
@@ -2916,20 +2894,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=254.1-2
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_254.1-2.dsc' systemd_254.1-2.dsc 6865 SHA256:b49045b5896ce4a29f8247206e02e896b4e41a98434da0ca829e7b90bd5bcac5
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_254.1.orig.tar.gz' systemd_254.1.orig.tar.gz 14324840 SHA256:d1e372a6ff817e639cdf58cc3888f72d37a380c0027d42bc875e5ab4b628a580
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_254.1-2.debian.tar.xz' systemd_254.1-2.debian.tar.xz 164036 SHA256:4e16a77c04cd00493e5af13e4aca01df3ace7a1d10c2092f325aabbda055d38e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/254.1-2/
 
-- https://sources.debian.net/src/systemd/254.1-2/ (for browsing the source)
-- https://sources.debian.net/src/systemd/254.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/254.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.07-1`
 
