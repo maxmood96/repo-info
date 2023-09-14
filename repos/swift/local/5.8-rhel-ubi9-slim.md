@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:730b498ad17247d096f2555422316ff25ba155159cd19d3bec4bbd0562eeae24`
-- Created: `2023-08-26T03:43:23.088879959Z`
-- Virtual Size: ~ 467.36 Mb  
+- Image ID: `sha256:7a64f86913d86dadf01357e8f16ac3c3880693a2f52a010356a65cef01dc67b8`
+- Created: `2023-09-13T00:21:50.541789777Z`
+- Virtual Size: ~ 467.38 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -18,7 +18,7 @@
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2023-08-23T05:46:27`
+  - `build-date=2023-09-05T09:00:57`
   - `com.redhat.component=ubi9-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=Docker Container for the Swift programming language`
@@ -30,9 +30,9 @@
   - `io.openshift.tags=base rhel9`
   - `maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>`
   - `name=ubi9`
-  - `release=722.1692769367`
+  - `release=755`
   - `summary=Provides the latest release of Red Hat Universal Base Image 9.`
-  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9/images/9.2-722.1692769367`
+  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9/images/9.2-755`
   - `vcs-ref=6b5892a11894993e819f9a93ee1d7aaa80dc3a17`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
@@ -76,7 +76,7 @@ Licenses (from `rpm --query`): BSD
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `ca-certificates-2022.2.54-90.2.el9_0.noarch`
+### `rpm` package: `ca-certificates-2023.2.60_v7.0.306-90.1.el9_2.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
@@ -100,13 +100,13 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `crypto-policies-20221215-1.git9a18988.el9.noarch`
+### `rpm` package: `crypto-policies-20221215-1.git9a18988.el9_2.1.noarch`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `crypto-policies-scripts-20221215-1.git9a18988.el9.noarch`
+### `rpm` package: `crypto-policies-scripts-20221215-1.git9a18988.el9_2.1.noarch`
 
 Licenses (from `rpm --query`): LGPLv2+
 
@@ -154,7 +154,7 @@ Licenses (from `rpm --query`): Bitstream Vera and Public Domain
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `dmidecode-3.3-7.el9.x86_64`
+### `rpm` package: `dmidecode-3.3-7.el9_2.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+
 
@@ -274,7 +274,7 @@ Licenses (from `rpm --query`): GPLv3+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `gnutls-3.7.6-20.el9_2.x86_64`
+### `rpm` package: `gnutls-3.7.6-21.el9_2.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and LGPLv2+
 
@@ -400,7 +400,7 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `libcap-2.48-8.el9.x86_64`
+### `rpm` package: `libcap-2.48-9.el9_2.x86_64`
 
 Licenses (from `rpm --query`): BSD or GPLv2
 
