@@ -455,14 +455,9 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `FSFUL`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cups=2.4.1op1-1ubuntu4.4
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.1op1-1ubuntu4.4.dsc' cups_2.4.1op1-1ubuntu4.4.dsc 3135 SHA512:2cc6fe541c9007813f95a6d058f0943b7369f5fabc2040851dde668dd4f4e186730a2f9ba790143af94b09a3d3f1025563b7c26daeabced2802ce46c738df03b
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.1op1.orig.tar.gz' cups_2.4.1op1.orig.tar.gz 8113914 SHA512:74e83728fcc3baf709176442b26711250fd4d4ede1e81e35b02a5607711067e28cd5a05d5bc3337953f6b2236c5a429b13f3a7f1218a08a2d3c30a8c9b0d96fd
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.1op1-1ubuntu4.4.debian.tar.xz' cups_2.4.1op1-1ubuntu4.4.debian.tar.xz 356540 SHA512:ec8f881168bffeae9e079ee2830c9ebdde06c26191aba9f4c30d91afc588521e7e9f3270f57536d056dee8698e97c76e08a4e6bb22beb1c33df2b1fe6e4fd3bc
-```
 
 ### `dpkg` source package: `curl=7.81.0-1ubuntu1.13`
 
@@ -924,15 +919,9 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.35-0ubuntu3.1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.1.dsc' glibc_2.35-0ubuntu3.1.dsc 8884 SHA512:1940e4cc6176c7b54dcd0c350cfc8867e48915d4f6de4464991e3330d58aa194b32f4dd7fa1b6294b56a7017b09a1270c1a4febf9a359bb97f535d965511a017
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz' glibc_2.35.orig.tar.xz 18165952 SHA512:e7336ce27561be5d7c217832a1136fb327e057bd8d3f92925b35c97e3e9f9e486948b5a1e03e5e4090772ef06437a074d10b82e68f17f1ad8f22077ee39e1b66
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz.asc' glibc_2.35.orig.tar.xz.asc 833 SHA512:2a1c152511dac05f9b4e48f7e7a6b59dbf2d8b71fea54f128173113357be26e86216e13c9865f617049e6858396a221a5abc704f65a786b22453945fd80265e9
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.1.debian.tar.xz' glibc_2.35-0ubuntu3.1.debian.tar.xz 897680 SHA512:184df29a265e01165316a45c564baf2a0bc0e1cbd2897837a3eaf372f11aca815961cb26c9f6b1e37c1d0a6da5de88cb064d620c17aad40cca650ca5600e74d4
-```
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-3ubuntu1`
 
@@ -2495,14 +2484,9 @@ Licenses: (parsed from: `/usr/share/doc/libwebp7/copyright`)
 
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libwebp=1.2.2-2ubuntu0.22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwebp/libwebp_1.2.2-2ubuntu0.22.04.1.dsc' libwebp_1.2.2-2ubuntu0.22.04.1.dsc 2183 SHA512:84c28ca36fca36bc0e12253f70b5cd3d6cf67004710e5f3b6bf2968253860aee6b2e0491528dbc4fca82d0df6cc956020b1abac6d19ad27f3049d2ee5308e5ca
-'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwebp/libwebp_1.2.2.orig.tar.gz' libwebp_1.2.2.orig.tar.gz 4117468 SHA512:0dd0a721352b513a218d55383bcd0cc45b786df8089f70f87257b5dcc0c4e2f1798e20f1ca98b8fe51710abb667f9c4c14f20f980a11c484c8832f0dc66e3bff
-'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwebp/libwebp_1.2.2-2ubuntu0.22.04.1.debian.tar.xz' libwebp_1.2.2-2ubuntu0.22.04.1.debian.tar.xz 6644 SHA512:29e40bc14456e13609f5270ffc3e8aaa484e687cc06fce81fd58f70a669114b86db41944b65b920c82e4b41d4ac1923e2c552c2cd41f2fd989f8608d6caeda94
-```
 
 ### `dpkg` source package: `libwpd=0.10.3-2build1`
 
@@ -3719,14 +3703,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=249.11-0ubuntu3.9
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.9.dsc' systemd_249.11-0ubuntu3.9.dsc 5903 SHA512:79db128274cf988d004b1553fc173703494e426805e5514927cb20076b69edbf832207b310fe94764c835ea14992243d6c3b95fc21f715e1c8bf62e0fa55b34c
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11.orig.tar.gz' systemd_249.11.orig.tar.gz 10622702 SHA512:fed7f81933648945a4bfac9fb12150ecd84d32181f79be0e14e0b3a789343a87569f868670e0b8dfc2801fab39f7490f95ee8c29ba831d7611f78c14ace5ddd8
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.9.debian.tar.xz' systemd_249.11-0ubuntu3.9.debian.tar.xz 245864 SHA512:7d7a0dd2e005026c8ba92592608117431fcaf1a1d4f88cf0a6c88ff81bc8cdedddefa21a1dde3d4cd7ae1f2641d24d5761c6d447c9370705ed13e30de86480c7
-```
 
 ### `dpkg` source package: `sysvinit=3.01-1ubuntu1`
 
