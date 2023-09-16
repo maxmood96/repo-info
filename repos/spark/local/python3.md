@@ -1,10 +1,10 @@
-# `spark:3.4.1-scala2.12-java11-python3-ubuntu`
+# `spark:3.5.0-scala2.12-java11-python3-ubuntu`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ea25f803d638591abcc6f87fea837293fcf58dfb0fd166e024114226c8d7c19a`
-- Created: `2023-08-31T21:08:05.558884105Z`
-- Virtual Size: ~ 973.30 Mb  
+- Image ID: `sha256:828da84ed02a1a5dfb272b057b37ebc2477d0deba4a4ebbc778097f17e9828d6`
+- Created: `2023-09-14T21:29:41.745786231Z`
+- Virtual Size: ~ 981.49 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/entrypoint.sh"]`
@@ -15,9 +15,9 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-11.0.20.1+1`
-  - `SPARK_TGZ_URL=https://archive.apache.org/dist/spark/spark-3.4.1/spark-3.4.1-bin-hadoop3.tgz`
-  - `SPARK_TGZ_ASC_URL=https://archive.apache.org/dist/spark/spark-3.4.1/spark-3.4.1-bin-hadoop3.tgz.asc`
-  - `GPG_KEY=F28C9C925C188C35E345614DEDA00CE834F0FC5C`
+  - `SPARK_TGZ_URL=https://archive.apache.org/dist/spark/spark-3.5.0/spark-3.5.0-bin-hadoop3.tgz`
+  - `SPARK_TGZ_ASC_URL=https://archive.apache.org/dist/spark/spark-3.5.0/spark-3.5.0-bin-hadoop3.tgz.asc`
+  - `GPG_KEY=FC3AE3A7EAA1BAC98770840E7E1ABCC53AAA2216`
   - `SPARK_HOME=/opt/spark`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
@@ -1779,19 +1779,24 @@ $ apt-get source -qq --print-uris libzstd=1.4.4+dfsg-3ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.4%2bdfsg-3ubuntu0.1.debian.tar.xz' libzstd_1.4.4+dfsg-3ubuntu0.1.debian.tar.xz 17300 SHA512:0484891be5603d00bd57b799c708b9395fccbaa8c6c44f535377f6fa2c7ac22c01c8a3c1b45e1c1f3c30f19dc74d510626bf82067fcbfb53c39f1bcc2249affe
 ```
 
-### `dpkg` source package: `linux=5.4.0-159.176`
+### `dpkg` source package: `linux=5.4.0-162.179`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.4.0-159.176`
+- `linux-libc-dev:amd64=5.4.0-162.179`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=5.4.0-162.179
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-162.179.dsc' linux_5.4.0-162.179.dsc 7425 SHA512:8d3c129dff3dfcf62e74f7a098a074f1613ad30bdd7c5232aa76095d347b524b90a747fdbe2192ccc40ca1d5225c7cc08f41dbf1c00e80c177cc20d262f29540
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA512:62b09a7231fd793973c5f59b16c4f6ffce621188b02a71915874b05e8e3f956fb6146d4a4fb1a4475bebe463949ca5a18da12842c3ce7c52e996e6bc4012a074
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-162.179.diff.gz' linux_5.4.0-162.179.diff.gz 11059400 SHA512:5010114e115a9d216d2b4bc6546c0e4108f7d9f3d6fe057d929f14809b8707a46a9924b6b6bd5de85a495d61725b2c6f467f30e7dbb5f0ff5e022043aca4f34e
+```
 
 ### `dpkg` source package: `lmdb=0.9.24-1`
 
